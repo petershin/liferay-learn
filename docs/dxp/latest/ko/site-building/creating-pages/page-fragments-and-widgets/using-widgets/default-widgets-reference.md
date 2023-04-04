@@ -1,33 +1,33 @@
 
 # 기본 위젯 참조
 
-Liferay는 즉시 사용 가능한 다양한 위젯을 제공하므로 솔루션 구축을 바로 시작할 수 있습니다. 위젯은 콘텐츠 페이지, 위젯 페이지 및 페이지 템플릿에 배치할 수 있습니다. 콘텐츠 페이지에서 사용 가능한 위젯을 보려면 페이지 편집을 시작하고 편집 사이드바 메뉴에서 **조각 및 위젯**(![Fragments and Widgets](../../../../images/icon-plus.png))을 선택한 다음 **위젯** 탭을 선택합니다. 위젯 페이지에서 사용 가능한 위젯을 보려면 **추가**(![add](../../../../images/icon-plus.png))을 클릭하십시오.
+Liferay는 즉시 사용 가능한 다양한 위젯을 제공하므로 솔루션 구축을 바로 시작할 수 있습니다. 위젯은 콘텐츠 페이지, 위젯 페이지 및 페이지 템플릿에 배치할 수 있습니다. 콘텐츠 페이지에서 사용 가능한 위젯을 보려면 페이지 편집을 시작하고 편집 사이드바 메뉴에서 *조각 및 위젯* (![Fragments and Widgets](../../../../images/icon-plus.png))을 선택한 다음 *위젯* 탭을 선택합니다. 위젯 페이지에서 사용 가능한 위젯을 보려면 *추가* (![add](../../../../images/icon-plus.png))을 클릭하십시오.
 
 위젯은 다음 섹션으로 구성됩니다.
 
 * [하이라이트됨](#highlighted)
 * [계정](#accounts)
 * [공동작업](#collaboration)
-* [커머스](#commerce)
+* [커머스 ](#commerce)
 * [지역 사회](#community)
 * [만족한 관리](#content-management)
 * [뉴스](#news)
 * [예제](#sample)
-* [검색](#search)
+* [수색](#search)
 * [사회](#social)
 * [공구](#tools)
-* [위키](#wiki)
+* [Wiki](#wiki)
 
 ## 하이라이트됨
 
 여기서 위젯은 페이지를 만들 때 일반적으로 사용되는 위젯입니다.
 
-| 위젯       | 묘사                                                                                                                                                                                                     |
-|:-------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 콘텐츠 퍼블리셔 | 자산을 표시하도록 구성할 수 있는 [자산 게시자 위젯](../../../displaying-content/using-the-asset-publisher-widget.md) 추가합니다.                                                                                                 |
-| 문서 및 미디어 | 문서 및 미디어 유형을 표시하도록 구성할 수 있는 [문서 및 미디어 위젯](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-documents-and-media-widget) 추가합니다. |
-| 메뉴 표시    | 사이트의 페이지 계층 구조를 표시할 수 있는 [메뉴 표시 위젯](../../../site-navigation/configuring-menu-displays.md#configuring-the-menu-display-widget) 추가합니다.                                                                  |
-| 웹 내용 전시  | 웹 콘텐츠 기사를 표시하는 [웹 콘텐츠 표시 위젯](../../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md) 추가합니다.                                           |
+| 위젯       | 묘사                                                                                                                                                                                                       |
+|:-------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 콘텐츠 퍼블리셔 | 자산을 표시하도록 구성할 수 있는 [자산 게시자 위젯](../../../displaying-content/using-the-asset-publisher-widget.md) 추가합니다.                                                                                                   |
+| 문서 및 미디어 | 문서 및 미디어 유형을 표시하도록 구성할 수 있는 [문서 및 미디어 위젯](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-documents-and-media-widget) 을 추가합니다. |
+| 메뉴 표시    | 사이트의 페이지 계층 구조를 표시할 수 있는 [메뉴 표시 위젯](../../../site-navigation/configuring-menu-displays.md#configuring-the-menu-display-widget) 추가합니다.                                                                    |
+| 웹 내용 전시  | 웹 콘텐츠 기사를 표시하는 [웹 콘텐츠 표시 위젯](../../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md) 추가합니다.                                             |
 
 ## 계정
 
@@ -100,8 +100,8 @@ Liferay는 즉시 사용 가능한 다양한 위젯을 제공하므로 솔루션
 
 | 위젯         | 묘사                                                                                                                                                                                  |
 |:---------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 알림         | 빨간색 **중요** 태그로 우선 순위가 높은 정보를 표시하는 [경고 위젯](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) 추가합니다. |
-| 공지         | 빨간색 **중요** 태그 없이 정보를 표시하는 [공지 위젯](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) 추가합니다.         |
+| 알림         | 빨간색 *중요* 태그로 우선 순위가 높은 정보를 표시하는 [경고 위젯](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) 추가합니다. |
+| 공지         | 빨간색 *중요* 태그 없이 정보를 표시하는 [공지 위젯](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) 추가합니다.         |
 | 내용을 선정하십시요 | 가장 최근에 생성된 자산을 나열하는 최근 콘텐츠 위젯을 추가합니다.                                                                                                                                               |
 | RSS 게시자    | RSS 피드의 게시물을 나열하는 RSS 게시자 위젯을 추가합니다.                                                                                                                                                |
 
@@ -116,31 +116,31 @@ Liferay는 즉시 사용 가능한 다양한 위젯을 제공하므로 솔루션
 | 방언 테마 스타일 가이드 샘플 | Dialect 테마의 스타일 가이드를 표시하는 Dialect 테마 스타일 가이드 샘플 위젯을 추가합니다.                                                                                                       |
 | 아이프레임            | 웹 페이지를 포함하고 표시할 수 있는 iframe을 생성하는 [iframe 위젯](../../../../site-building/displaying-content/additional-content-display-options/using-the-iframe-widget.md) 추가합니다. |
 
-## 검색
+## 수색
 
 검색 위젯은 귀하와 사용자가 사용자 정의할 수 있는 맞춤형 검색 경험을 제공합니다.
 
-| 위젯                 | 묘사                                                                                                                                                                                        |
-|:------------------ |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 블루프린트 옵션           | 검색 청사진을 적용할 수 있는 [청사진 옵션 위젯](../../../../using-search/liferay-enterprise-search/search-experiences/using-a-search-blueprint-on-a-search-page.md) 추가합니다.                                   |
-| 분류 페이셋             | 카테고리별로 검색 결과를 필터링하는 [카테고리 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/category-facet.md) 추가합니다.                                                                |
-| 커스텀 페이셋            | 검색 결과를 그룹화할 필드를 선택할 수 있는 [Custom Facet 위젯](../../../../using-search/search-pages-and-widgets/search-facets/custom-facet.md) 추가합니다.                                                        |
-| 커스텀 필터             | 사용자 지정 코드를 배포하지 않고 검색 엔진으로 전송되는 쿼리를 제어할 수 있는 [사용자 지정 필터 위젯](../../../../using-search/search-pages-and-widgets/search-results/filtering-search-results.md.md) 추가합니다.                       |
-| Elasticsearch 모니터링 | Elasticsearch를 모니터링할 수 있는 [Elasticsearch 모니터링 위젯](../../../../using-search/liferay-enterprise-search/monitoring-elasticsearch.md) 추가합니다.                                                  |
-| 폴더 페이셋             | 자산 폴더별로 검색 결과를 필터링할 수 있는 [폴더 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/folder-facet.md) 추가합니다.                                                               |
-| 저수준 검색 옵션          | 낮은 수준의 검색을 사용할 수 있는 [낮은 수준의 검색 옵션 위젯](../../../../using-search/search-pages-and-widgets/search-results/understanding-low-level-search-options.md) 추가합니다.                                  |
-| 수정 페이셋             | 자산이 생성되거나 수정된 시간을 기준으로 검색 결과를 필터링할 수 있는 [Modified Faced 위젯](../../../../using-search/search-pages-and-widgets/search-facets/modified-facet.md) 추가합니다.                                     |
-| 검색 바               | 사용자가 검색할 수 있는 검색창 위젯을 추가합니다. 기본적으로 검색창 위젯은 사용자를 기본 [검색 페이지](../../../../using-search/search-pages-and-widgets/working-with-search-pages.md)로 보냅니다.                                        |
-| 검색 인사이트            | 키보드를 입력하고 검색 엔진에서 응답 문자열이 반환될 때 백엔드 검색 코드로 구성된 쿼리 문자열을 검사할 수 있는 [검색 인사이트 위젯](../../../../using-search/search-pages-and-widgets/search-insights.md) 을 추가합니다. 이는 테스트 및 개발 중에만 사용하기 위한 것입니다. |
-| 검색 옵션              | 검색 옵션 위젯을 추가하여 페이지에서 추가 검색 옵션을 구성할 수 있습니다.                                                                                                                                                |
-| 수입 카테고리 탐색         | 검색 쿼리 결과를 표시하는 [검색 결과 위젯](../../../../using-search/search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) 추가합니다.                                               |
-| 유사 결과              | 페이지에서 선택한 기본 자산과 유사한 검색 결과를 표시하는 [유사한 결과 위젯](../../../../using-search/search-pages-and-widgets/similar-results.md) 추가합니다.                                                                 |
-| 사이트 페이셋            | 사이트별로 검색 결과를 필터링할 수 있는 [사이트 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/site-facet.md) 추가합니다.                                                                  |
-| 정렬                 | 검색 결과의 순서를 제어할 수 있는 [정렬 위젯](../../../../using-search/search-pages-and-widgets/search-results/sorting-search-results.md) 추가합니다.                                                            |
-| 제안                 | 초기 쿼리에 대한 개선 사항을 제안할 수 있는 [제안 위젯](../../../../using-search/search-pages-and-widgets/search-results/enabling-search-suggestions.md) 추가합니다.                                                 |
-| 태그 페이셋             | 태그별로 검색 결과를 필터링할 수 있는  [태그 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/tag-facet.md) 추가합니다.                                                                    |
-| 유형 페이셋             | 자산 유형별로 검색 결과를 필터링할 수 있는 [유형 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/type-facet.md) 추가합니다.                                                                 |
-| 사용자 패싯             | 사용자별로 검색 결과를 필터링할 수 있는 [사용자 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/user-facet.md) 추가합니다.                                                                  |
+| 위젯                       | 묘사                                                                                                                                                                                        |
+|:------------------------ |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 블루프린트 옵션                 | 검색 청사진을 적용할 수 있는 [청사진 옵션 위젯](../../../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/using-a-search-blueprint-on-a-search-page.md) 추가합니다.                 |
+| 분류 페이셋                   | 카테고리별로 검색 결과를 필터링하는 [카테고리 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/category-facet.md) 추가합니다.                                                                |
+| 커스텀 페이셋                  | 검색 결과를 그룹화할 필드를 선택할 수 있는 [Custom Facet 위젯](../../../../using-search/search-pages-and-widgets/search-facets/custom-facet.md) 을 추가합니다.                                                      |
+| 커스텀 필터                   | 사용자 지정 코드를 배포하지 않고 검색 엔진으로 전송되는 쿼리를 제어할 수 있는 [사용자 지정 필터 위젯](../../../../using-search/search-pages-and-widgets/search-results/filtering-search-results.md) 추가합니다.                          |
+| Elasticsearch Monitoring | Elasticsearch를 모니터링할 수 있는 [Elasticsearch 모니터링 위젯](../../../../using-search/liferay-enterprise-search/monitoring-elasticsearch.md) 추가합니다.                                                  |
+| 폴더 페이셋                   | 자산 폴더별로 검색 결과를 필터링할 수 있는 [폴더 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/folder-facet.md) 추가합니다.                                                               |
+| 저수준 검색 옵션                | 낮은 수준의 검색을 사용할 수 있는 [낮은 수준의 검색 옵션 위젯](../../../../using-search/search-pages-and-widgets/search-results/understanding-low-level-search-options.md) 추가합니다.                                  |
+| 수정 페이셋                   | 자산이 생성되거나 수정된 시간을 기준으로 검색 결과를 필터링할 수 있는 [Modified Faced 위젯](../../../../using-search/search-pages-and-widgets/search-facets/modified-facet.md) 추가합니다.                                     |
+| 검색 바                     | 사용자가 검색할 수 있는 검색창 위젯을 추가합니다. 기본적으로 검색창 위젯은 사용자를 기본 [검색 페이지](../../../../using-search/search-pages-and-widgets/working-with-search-pages.md)로 보냅니다.                                        |
+| 검색 인사이트                  | 키보드를 입력하고 검색 엔진에서 응답 문자열이 반환될 때 백엔드 검색 코드로 구성된 쿼리 문자열을 검사할 수 있는 [검색 인사이트 위젯](../../../../using-search/search-pages-and-widgets/search-insights.md) 을 추가합니다. 이는 테스트 및 개발 중에만 사용하기 위한 것입니다. |
+| 검색 옵션                    | 검색 옵션 위젯을 추가하여 페이지에서 추가 검색 옵션을 구성할 수 있습니다.                                                                                                                                                |
+| 수입 카테고리 탐색               | 검색 쿼리 결과를 표시하는 [검색 결과 위젯](../../../../using-search/search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) 추가합니다.                                               |
+| 유사 결과                    | 페이지에서 선택한 기본 자산과 유사한 검색 결과를 표시하는 [유사한 결과 위젯](../../../../using-search/search-pages-and-widgets/similar-results.md) 추가합니다.                                                                 |
+| 사이트 페이셋                  | 사이트별로 검색 결과를 필터링할 수 있는 [사이트 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/site-facet.md) 추가합니다.                                                                  |
+| 정렬                       | 검색 결과의 순서를 제어할 수 있는 [정렬 위젯](../../../../using-search/search-pages-and-widgets/search-results/sorting-search-results.md) 추가합니다.                                                            |
+| 제안                       | 초기 쿼리에 대한 개선 사항을 제안할 수 있는 [제안 위젯](../../../../using-search/search-pages-and-widgets/search-results/enabling-search-suggestions.md) 추가합니다.                                                 |
+| 태그 페이셋                   | 태그별로 검색 결과를 필터링할 수 있는  [태그 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/tag-facet.md) 추가합니다.                                                                    |
+| 유형 페이셋                   | 자산 유형별로 검색 결과를 필터링할 수 있는 [유형 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/type-facet.md) 추가합니다.                                                                 |
+| 사용자 패싯                   | 사용자별로 검색 결과를 필터링할 수 있는 [사용자 패싯 위젯](../../../../using-search/search-pages-and-widgets/search-facets/user-facet.md) 추가합니다.                                                                  |
 
 ## 사회
 
@@ -165,7 +165,7 @@ Liferay는 즉시 사용 가능한 다양한 위젯을 제공하므로 솔루션
 | 언어 선택기     | 표시되는 언어를 설정할 수 있는 언어 선택기 위젯을 추가합니다.              |
 | 수색         | 쿼리를 맞춤화하기 위한 구성을 제공하는 검색 위젯을 추가합니다.              |
 
-## 위키
+## Wiki
 
 Wiki 위젯은 Wiki 응용 프로그램을 표시하고 Wiki 페이지를 표시합니다.
 
@@ -173,7 +173,7 @@ Wiki 위젯은 Wiki 응용 프로그램을 표시하고 Wiki 페이지를 표시
 |:------ |:----------------------------------------------------------------------------------------------------------------------------------------------- |
 | 페이지 메뉴 | Wiki 페이지, 사이트 페이지 및 외부 웹사이트와 같은 다른 리소스에 대한 링크를 표시하는 [페이지 메뉴 위젯](../../../../collaboration-and-social/wiki/using-the-page-menu-widget.md) 추가합니다. |
 | 트리 메뉴  | 위키 노드에서 위키 페이지와 하위 페이지를 나열하는 [트리 메뉴 위젯](../../../../collaboration-and-social/wiki/using-the-tree-menu-widget.md) 추가합니다.                         |
-| 위키     | Wiki 응용 프로그램을 표시하는 [Wiki 위젯](../../../../collaboration-and-social/wiki/wiki-widget-ui-reference.md) 추가합니다.                                      |
+| Wiki   | Wiki 응용 프로그램을 표시하는 [Wiki 위젯](../../../../collaboration-and-social/wiki/wiki-widget-ui-reference.md) 추가합니다.                                      |
 | Wiki전시 | 특정 위키 페이지를 강조 표시하는 [위키 표시 위젯](../../../../collaboration-and-social/wiki/using-the-wiki-display-widget.md) 추가합니다.                                |
 
 ## 추가 정보

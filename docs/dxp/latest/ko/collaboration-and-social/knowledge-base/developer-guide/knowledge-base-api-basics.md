@@ -1,6 +1,10 @@
+---
+uuid: 7120df4a-f22d-42fd-b574-db3dae8faa2b
+---
+
 # 기술 자료 API 기본 사항
 
-[기술 자료 문서 생성](../creating-knowledge-base-articles.md) 및 [](../managing-the-knowledge-base.md) 의 기술 자료 앱으로 기술 자료를 관리할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 기술 자료에 대한 콘텐츠를 만들고 관리하려면 이러한 서비스를 호출하십시오.
+[기술 자료 문서 생성](../creating-knowledge-base-articles.md) 및 [Liferay의 기술 자료 앱으로 기술 자료를 관리](../managing-the-knowledge-base.md) 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 기술 자료에 대한 콘텐츠를 만들고 관리하려면 이러한 서비스를 호출하십시오.
 
 ## 기술 자료 문서 추가
 
@@ -9,7 +13,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Knowledge Base API 기본 사항](./liferay-t3x7.zip) 을 다운로드하고 압축을 풉니다.
+1. [Knowledge Base API 기본 사항](./liferay-t3x7.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/knowledge-base/developer-guide/liferay-t3x7.zip -O
@@ -19,7 +23,7 @@
    unzip liferay-t3x7.zip
    ```
 
-1. 로그인하면 [사이트의 ID를 검색합니다](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 여러 서비스 호출에서 이 ID를 사용합니다.
+1. 로그인하면 [사이트의 ID를 검색합니다](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 여러 서비스 호출에서 이 ID를 사용합니다.
 
 1. cURL 스크립트를 사용하여 사이트에 새로운 기술 자료 문서를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `KnowledgeBaseArticle_POST_ToSite.sh` 스크립트를 실행합니다. 예를 들어,
 
@@ -59,7 +63,7 @@
 
    ```
 
-1. **메뉴** 아이콘(![Menu icon](../../../images/icon-menu.png))을 클릭하고 **콘텐츠 및 데이터** &rarr; **지식 베이스** 로 이동합니다. 새로운 기술 자료 문서가 추가되었는지 확인하십시오.
+1. *메뉴* 아이콘(![Menu icon](../../../images/icon-menu.png))을 클릭하고 *콘텐츠 및 데이터* &rarr; *지식 베이스*로 이동합니다. 새로운 기술 자료 문서가 추가되었는지 확인하십시오.
 
    ![새로운 기술 자료 문서가 추가되었는지 확인하십시오.](./knowledge-base-api-basics/images/01.png)
 
@@ -115,7 +119,7 @@
 
 | 라인(약칭)                                                                                                        | 묘사                                                                                     |
 |:------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------- |
-| `KnowledgeBaseArticleResource.Builder builder = ...`                                                          | `KnowledgeBaseArticleResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.                         |
+| `KnowledgeBaseArticleResource.Builder builder = ...`                                                          | `KnowledgeBaseArticleResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.                           |
 | `KnowledgeBaseArticleGroupResource knowledgeBaseArticleGroupResource = builder.authentication(...).build();`  | 기본 인증을 지정하고 `KnowledgeBaseArticleResource` 서비스 인스턴스를 생성합니다.                            |
 | `KnowledgeBaseArticle knowledgeBaseArticle = knowledgeBaseArticleResource.postSiteKnowledgeBaseArticle(...);` | `knowledgeBaseArticleResource.postSiteKnowledgeBaseArticle` 메서드를 호출하고 데이터를 게시물에 전달합니다. |
 
@@ -135,7 +139,7 @@
 
 ## 사이트에서 기술 자료 문서 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 모든 사이트에서 기술 자료 문서를 검색할 수 있습니다. `1234` 을 사이트 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 모든 사이트에서 기술 자료 문서를 검색할 수 있습니다. `1234` 사이트 ID로 바꿉니다.
 
 ### KnowledgeBaseArticles_GET_FromSite.sh
 
@@ -211,7 +215,7 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_GET_ById
 
 ## 기술 자료 문서 패치
 
-다음 cURL 및 Java 명령을 사용하여 기존 기술 자료 문서를 부분적으로 편집합니다. `1234` 을 기술 자료 문서의 ID로 바꿉니다. 수정할 필드와 새 값을 지정합니다.
+다음 cURL 및 Java 명령을 사용하여 기존 기술 자료 문서를 부분적으로 편집합니다. `1234` 기술 자료 문서의 ID로 바꿉니다. 수정할 필드와 새 값을 지정합니다.
 
 ### KnowledgeBaseArticle_PATCH_ById.sh
 
@@ -245,7 +249,7 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_PATCH_ByI
 
 ## 기술 자료 문서 넣기
 
-다음 cURL 및 Java 명령으로 기존 기술 자료 문서를 완전히 덮어씁니다. `1234` 을 기술 자료 문서의 ID로 바꿉니다.
+다음 cURL 및 Java 명령으로 기존 기술 자료 문서를 완전히 덮어씁니다. `1234` 기술 자료 문서의 ID로 바꿉니다.
 
 ### KnowledgeBaseArticle_PUT_ById.sh
 
@@ -279,7 +283,7 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_PUT_ById
 
 ## 기술 자료 문서 삭제
 
-다음 cURL 및 Java 명령을 사용하여 기존 기술 자료 문서를 삭제합니다. `1234` 을 기술 자료 문서의 ID로 바꿉니다.
+다음 cURL 및 Java 명령을 사용하여 기존 기술 자료 문서를 삭제합니다. `1234` 기술 자료 문서의 ID로 바꿉니다.
 
 ### KnowledgeBaseArticle_DELETE_ById.sh
 
@@ -324,4 +328,4 @@ java -classpath .:* -DknowledgeBaseArticleId=1234 KnowledgeBaseArticle_DELETE_By
 | `KnowledgeBaseFolder_PUT_ToSite.[java\|sh]`    | Knowledge Base 폴더를 ID별로 넣습니다. |
 | `KnowledgeBaseFolders_GET_FromSite.[java\|sh]` | 사이트에서 기술 자료 폴더 목록을 가져옵니다.     |
 
-[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) 은 `KnowledgeBaseArticle` 및 `KnowledgeBaseFolder` 서비스 및 스키마를 모두 표시하고 각 서비스를 시험해 볼 수 있는 인터페이스가 있습니다.
+[API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 은 `KnowledgeBaseArticle` 및 `KnowledgeBaseFolder` 서비스 및 스키마를 모두 보여주고 각 서비스를 시험해 볼 수 있는 인터페이스가 있습니다.

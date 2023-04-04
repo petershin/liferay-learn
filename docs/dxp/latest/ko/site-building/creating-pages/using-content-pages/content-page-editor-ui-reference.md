@@ -3,7 +3,7 @@
 
 {bdg-secondary}`라이프레이 7.4 U37+/GA37+`
 
-콘텐츠 페이지 편집기를 사용하여 콘텐츠 페이지에서 요소를 [추가하고](./adding-elements-to-content-pages.md) 구성할 수 있습니다. 콘텐츠 페이지 편집기를 열려면 콘텐츠 페이지로 이동하여 **편집**(![Edit icon](../../../images/icon-edit.png) )을 클릭합니다. 이렇게 하면 콘텐츠 페이지 작성을 위한 도구와 구성 요소가 포함된 편집 도구 모음과 사이드바가 나타납니다.
+콘텐츠 페이지 편집기를 사용하여 콘텐츠 페이지에서 요소를 [추가하고](./adding-elements-to-content-pages.md) 구성할 수 있습니다. 콘텐츠 페이지 편집기를 열려면 콘텐츠 페이지로 이동하여 *편집* (![Edit icon](../../../images/icon-edit.png) )을 클릭합니다. 이렇게 하면 콘텐츠 페이지 작성을 위한 도구와 구성 요소가 포함된 편집 도구 모음과 사이드바가 나타납니다.
 
 - [편집 도구 모음](#editing-toolbar)
 - [사이드바 편집](#editing-sidebar)
@@ -36,7 +36,7 @@ Liferay의 반응형 레이아웃 편집기에 액세스하려면 장치 아이�
 
 ### 기록 편집
 
-**기록** 버튼(![History Button](./../../../images/icon-time.png) )을 클릭하여 현재 편집 세션 동안 변경된 사항을 확인합니다. 이 기록을 사용하여 변경 사항을 예약하거나 복원할 수 있습니다. 또는 실행 취소 및 다시 실행 버튼을 클릭할 수 있습니다.
+*기록* 버튼(![History Button](./../../../images/icon-time.png) )을 클릭하여 현재 편집 세션 동안 변경된 사항을 확인합니다. 이 기록을 사용하여 변경 사항을 예약하거나 복원할 수 있습니다. 또는 실행 취소 및 다시 실행 버튼을 클릭할 수 있습니다.
 
 ![실행 취소, 다시 실행 및 기록 버튼을 사용하여 변경 사항을 되돌립니다.](./content-page-editor-ui-reference/images/03.png)
 
@@ -46,14 +46,14 @@ Liferay의 반응형 레이아웃 편집기에 액세스하려면 장치 아이�
 
 | 수정 모드   | 묘사                                                      | 사용 가능한 옵션                 |
 |:------- |:------------------------------------------------------- |:------------------------- |
-| 페이지 디자인 | 페이지 및 페이지 콘텐츠를 업데이트할 수 있는 권한이 있으면 페이지를 디자인할 수 있습니다.     | <ul><li> [Browser](#브라우저) </li><li> [페이지 콘텐츠](#page-content) </li><li> [Comments](#댓글) </li></ul> |
-| 콘텐츠 편집  | 페이지를 업데이트할 수 있는 권한이 있지만 페이지 콘텐츠가 아닌 경우 콘텐츠를 편집할 수 있습니다. | <ul><li> [단편 및 위젯](#fragments-and-widgets) </li><li> [Browser](#브라우저) </li><li> [페이지 디자인 옵션](#page-design-options) </li><li> [페이지 콘텐츠](#page-content) </li><li> [Comments](#댓글) </li></ul> |
+| 페이지 디자인 | 페이지 및 페이지 콘텐츠를 업데이트할 수 있는 권한이 있으면 페이지를 디자인할 수 있습니다.     | <ul><li>[Browser](#브라우저)</li><li>[페이지 콘텐츠](#page-content)</li><li>[Comments](#댓글)</li></ul> |
+| 콘텐츠 편집  | 페이지를 업데이트할 수 있는 권한이 있지만 페이지 콘텐츠가 아닌 경우 콘텐츠를 편집할 수 있습니다. | <ul><li>[단편 및 위젯](#fragments-and-widgets)</li><li>[Browser](#브라우저)</li><li>[페이지 디자인 옵션](#page-design-options)</li><li>[페이지 콘텐츠](#page-content)</li><li>[Comments](#댓글)</li></ul> |
 
 ![페이지 디자인 또는 콘텐츠 편집 편집 모드 중에서 선택합니다.](content-page-editor-ui-reference/images/04.png)
 
 ### 사이드바 전환
 
-편집 사이드바를 숨기고 페이지를 미리 보려면 사이드바 전환 버튼( ![Toggle Sidebars](../../../images/icon-view.png) )을 클릭하십시오. 애플리케이션 표시줄에서 작업 버튼( ![Actions Button](../../../images/icon-actions.png) )을 클릭하고 **새 탭에서 미리보기** 선택하여 새 탭에서 현재 페이지 경험과 언어를 확인합니다.
+편집 사이드바를 숨기고 페이지를 미리 보려면 사이드바 전환 버튼( ![Toggle Sidebars](../../../images/icon-view.png) )을 클릭하십시오. 애플리케이션 표시줄에서 작업 버튼( ![Actions Button](../../../images/icon-actions.png) )을 클릭하고 *새 탭에서 미리보기* 선택하여 새 탭에서 현재 페이지 경험과 언어를 확인합니다.
 
 ### 페이지 템플릿 생성
 
@@ -68,9 +68,9 @@ Liferay의 반응형 레이아웃 편집기에 액세스하려면 장치 아이�
 선택한 편집 모드에 따라 편집 사이드바에서 다음 패널에 액세스할 수 있습니다.
 
 - ![프래그먼트 및 위젯](../../../images/icon-plus.png) - [조각 및 위젯](#fragments-and-widgets)
-- ![브라우저](../../../images/icon-hierarchy.png) - [브라우저](#browser) (이전에는 **선택**)
+- ![브라우저](../../../images/icon-hierarchy.png) - [브라우저](#browser) (이전에는 *선택*)
 - ![페이지 디자인 옵션](../../../images/icon-format.png) - [페이지 디자인 옵션](#page-design-options)
-- ![페이지 컨텐츠](../../../images/icon-paperclip.png) - [페이지 내용](#page-content) (이전에는 **내용**)
+- ![페이지 컨텐츠](../../../images/icon-paperclip.png) - [페이지 내용](#page-content) (이전에는 *내용*)
 - ![댓글](../../../images/icon-message.png) - [댓글](#comments)
 
 ![편집 사이드바에는 이러한 패널이 포함되어 있습니다.](content-page-editor-ui-reference/images/05.png)
@@ -79,9 +79,9 @@ Liferay의 반응형 레이아웃 편집기에 액세스하려면 장치 아이�
 
 Fragments and Widgets 패널( ![Fragments and Widgets icon](../../../images/icon-plus.png) )에서 기본 및 사용자 지정 페이지 요소에 모두 액세스할 수 있습니다.
 
-**조각** : 조각은 콘텐츠 페이지의 기본 구성 요소 역할을 하는 확장 가능하고 재사용 가능한 끌어서 놓기 요소입니다. 예를 들어 텍스트 오버레이가 있는 레이아웃 요소, 비디오 및 배너 이미지가 있습니다. 기본 프래그먼트에 대해 자세히 알아보려면 [프래그먼트 사용](../page-fragments-and-widgets/using-fragments.md) 참조하고 자신만의 프래그먼트를 만드는 방법을 알아보려면 [프래그먼트 개발](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) 참조하십시오.
+**조각**: 조각은 콘텐츠 페이지의 기본 구성 요소 역할을 하는 확장 가능하고 재사용 가능한 끌어서 놓기 요소입니다. 예를 들어 텍스트 오버레이가 있는 레이아웃 요소, 비디오 및 배너 이미지가 있습니다. 기본 프래그먼트에 대해 자세히 알아보려면 [프래그먼트 사용](../page-fragments-and-widgets/using-fragments.md) 참조하고, 자신만의 프래그먼트를 만드는 방법을 알아보려면 [프래그먼트 개발](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) 참조하십시오.
 
-**위젯** : 위젯은 페이지에 동적 기능을 추가하는 [애플리케이션](../../../building-applications.md) 입니다. 예를 들면 블로그, 게시판, 캘린더 등이 있습니다. 자세한 내용은 [콘텐츠 페이지에서 위젯 사용](./using-widgets-on-a-content-page.md) 참조하십시오.
+**위젯**: 위젯은 페이지에 동적 기능을 추가하는 [애플리케이션](../../../building-applications.md) 입니다. 예를 들면 블로그, 게시판, 캘린더 등이 있습니다. 자세한 내용은 [콘텐츠 페이지에서 위젯 사용](./using-widgets-on-a-content-page.md) 참조하십시오.
 
 ```{tip}
 Liferay 7.4 U37/GA37부터 주문 버튼(![주문 버튼](../../../images/icon-order.png))을 클릭하여 조각 및 위젯 세트를 재정렬합니다. 즐겨찾는 요소 목록에 조각이나 위젯을 추가하려면 별표 버튼(![별표 버튼](../../../images/icon-star.png))을 클릭하세요.
@@ -105,7 +105,7 @@ Liferay 7.4 U37/GA37부터 주문 버튼(![주문 버튼](../../../images/icon-o
 
 ### 페이지 디자인 옵션
 
-페이지 디자인 옵션 패널( ![Page Design Options](../../../images/icon-format.png) )을 열어 페이지의 [마스터 페이지 템플릿](../defining-headers-and-footers/managing-master-page-templates.md) 또는 [스타일 북](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)를 변경합니다. 톱니바퀴 버튼( ![Cog Button](../../../images/icon-cog3.png) )을 클릭하여 [브라우저 기반 클라이언트 확장](../../../building-applications/client-extensions/browser-based-client-extensions.md)포함한 추가 모양과 느낌 옵션에 액세스합니다.
+페이지 디자인 옵션 패널( ![Page Design Options](../../../images/icon-format.png) )을 열어 페이지의 [마스터 페이지 템플릿](../defining-headers-and-footers/managing-master-page-templates.md) 또는 [스타일 북](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)를 변경합니다. Cog 버튼( ![Cog Button](../../../images/icon-cog3.png) )을 클릭하여 [프런트 엔드 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md)포함한 추가 모양 및 느낌 옵션에 액세스합니다.
 
 ### 댓글
 

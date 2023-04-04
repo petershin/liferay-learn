@@ -1,3 +1,7 @@
+---
+uuid: ba3f3663-f72e-4f18-b220-d9b2e127ef5e
+---
+
 # 단편별 태그 및 속성 참조
 
 표준 HTML, CSS 및 JavaScript와 함께 Liferay 전용 태그를 사용할 수 있으며 Liferay Portal 7.3 GA3 및 Liferay DXP 7.3부터 속성을 사용하여 조각에 편집 가능한 섹션을 만들거나 위젯을 포함할 수 있습니다. 편집 가능한 요소는 게시 전에 수정할 수 있습니다. 즉, 서식이 동일하지만 특정 컨텍스트에 적용할 수 있는 요소를 포함하는 단순하고 재사용 가능한 조각을 만들 수 있습니다.
@@ -16,7 +20,7 @@
 - [현지화 가능한 조각 필드](#localizing-fragment-configurations)
 
 ```{tip}
-태그 이름 입력을 시작하면 [HTML 편집기](../../developing-page-fragments/using-the-fragments-editor.md)가 편집 가능한 요소와 같은 `lfr` 태그에 대한 자동 완성 기능을 제공합니다. 포함 가능한 위젯.
+태그 이름 입력을 시작하면 [HTML 편집기](../../developing-page-fragments/using-the-fragments-editor.md)가 편집 가능한 요소와 같은 `lfr` 태그에 대한 자동 완성 기능을 제공합니다. 삽입 가능한 위젯.
 ```
 
 여기에 제공하는 텍스트 또는 이미지는 필드의 기본값입니다. 페이지의 최종 버전에 표시하거나 페이지를 게시하기 전에 교체해야 하는 필러 텍스트를 원할 수 있습니다.
@@ -31,7 +35,7 @@
 
 ![프래그먼트 편집기는 프래그먼트별 태그에 대한 자동 완성 기능을 제공합니다.](./fragment-specific-tags-reference/images/01.png)
 
-이 참조는 프래그먼트에서 사용하는 방법의 예와 함께 사용 가능한 편집 가능한 태그 및 속성을 나열합니다.
+이 참조에는 조각에서 사용하는 방법에 대한 예제와 함께 사용 가능한 편집 가능한 태그 및 속성이 나열되어 있습니다.
 
 ```{note}
 Liferay Portal 7.3 GA3 및 Liferay DXP 7.3부터 편집 가능한 요소를 `lfr-editable` 태그로 래핑하는 대신 `data-lfr-editable*` 속성을 사용하여 요소를 편집 가능한 것으로 정의할 수 있습니다. 이전 태그는 이전 버전과의 호환성을 위해 여전히 작동하지만 Portal 7.3 GA3+ 또는 Liferay DXP 7.3을 실행 중인 경우 쓰기가 더 쉽기 때문에 최신 데이터 속성을 사용하는 것이 좋습니다.
@@ -104,7 +108,7 @@ Liferay Portal 7.3 GA2 이하의 경우 다음 구문을 사용하십시오.
 </lfr-editable>
 ```
 
-유형 `이미지` 이 포함된 `lfr-editable` 태그를 조각에 추가한 후 해당 조각을 페이지에 추가하면 편집 가능한 이미지를 클릭하고 콘텐츠 페이지 편집기에서 이미지 소스 및 기타 속성을 구성할 수 있습니다. 사이드바.
+유형 `이미지` 포함된 `lfr-editable` 태그를 조각에 추가한 후 해당 조각을 페이지에 추가하면 편집 가능한 이미지를 클릭하고 콘텐츠 페이지 편집기에서 이미지 소스 및 기타 속성을 구성할 수 있습니다. 사이드바.
 
 ![콘텐츠 페이지에서 이미지를 정의하기 위한 몇 가지 옵션이 있습니다.](./fragment-specific-tags-reference/images/02.png)
 
@@ -118,7 +122,7 @@ Liferay Portal 7.3 GA2 이하의 경우 다음 구문을 사용하십시오.
 </div>
 ```
 
-콘텐츠 매핑은 프래그먼트의 편집 가능한 필드를 웹 콘텐츠 또는 블로그와 같은 자산 유형의 필드와 연결합니다. 예를 들어 이미지 필드를 매핑하여 웹 콘텐츠 기사의 미리보기 이미지를 표시할 수 있습니다. 매핑 필드에 대한 자세한 내용은 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) 을 참조하십시오.
+콘텐츠 매핑은 프래그먼트의 편집 가능한 필드를 웹 콘텐츠 또는 블로그와 같은 자산 유형의 필드와 연결합니다. 예를 들어 이미지 필드를 매핑하여 웹 콘텐츠 기사의 미리보기 이미지를 표시할 수 있습니다. 매핑 필드에 대한 자세한 내용은 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)을 참조하십시오.
 
 ## 편집 가능한 링크 만들기
 
@@ -147,7 +151,7 @@ Liferay Portal 7.3 GA2 이하의 경우 다음 구문을 사용하십시오.
 
 ![링크의 모양과 동작을 정의하기 위한 몇 가지 옵션이 있습니다.](./fragment-specific-tags-reference/images/03.png)
 
-편집 가능한 링크에 대한 자세한 내용은 [편집 가능한 링크](../../../creating-pages/page-fragments-and-widgets/configuring-fragments/fragment-sub-elements-reference.md#link-settings) 을 참조하십시오.
+편집 가능한 링크에 대한 자세한 내용은 [편집 가능한 링크](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings)을 참조하십시오.
 
 ## 편집 가능한 HTML 만들기
 

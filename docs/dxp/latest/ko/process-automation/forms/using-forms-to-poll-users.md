@@ -1,8 +1,7 @@
 
 # 양식을 사용하여 사용자 설문 조사
 
-이전 버전의 Liferay에서 사이트 관리자는 사이트 관리 &rarr; 콘텐츠 및 데이터 메뉴. 이 애플리케이션은 [Liferay 7.3에서 사용되지 않음](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in- 7-3) 및 [Liferay 7.4에서 제거됨](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated- 에서-7-4) .
-
+이전 버전의 Liferay에서 사이트 관리자는 사이트 관리 &rarr; 콘텐츠 및 데이터 메뉴에서 전용 설문조사 애플리케이션에 액세스할 수 있었습니다. 이 애플리케이션은 [Liferay 7.3에서 더 이상 사용되지 않음](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-3) 및 [Liferay 7.4에서 제거됨](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-4) 이었습니다.
 Liferay Forms는 이전 Liferay 버전에서 Polls 애플리케이션이 처리한 사용 사례를 충족하도록 개선되었습니다. 새 투표를 만들려면 여기에 설명된 기능과 함께 Liferay Forms를 사용하십시오.
 
 Liferay 7.2 &rarr; 7.3 &rarr; 7.4의 경로를 따라 업그레이드하는 경우 설문 조사가 Forms를 사용하도록 자동으로 업그레이드됩니다.
@@ -39,7 +38,7 @@ Liferay 7.2 &rarr; 7.3 &rarr; 7.4의 경로를 따라 업그레이드하는 경�
 
 ### 응답자에게 부분 결과 표시
 
-응답자가 현재 제출된 양식 레코드에서 집계된 데이터를 볼 수 있습니다. 응답자는 양식에 대한 현재 [양식 보고서](../sharing-forms-and-managing-submissions/form-reports.md#show-partial-results-to-form-respondents) 데이터를 볼 수 있습니다. 이 기능을 활성화하면 민감한 정보를 제출하지 않도록 사용자에게 경고합니다.
+응답자가 현재 제출된 양식 레코드에서 집계된 데이터를 볼 수 있습니다. 응답자는 양식에 대한 현재 [양식 보고서](./sharing-forms-and-managing-submissions/form-reports.md#show-partial-results-to-form-respondents) 데이터를 볼 수 있습니다. 이 기능을 활성화하면 민감한 정보를 제출하지 않도록 사용자에게 경고합니다.
 
 ![민감한 정보를 공유하지 않도록 사용자에게 경고합니다.](./using-forms-to-poll-users/images/02.png)
 
@@ -47,25 +46,25 @@ Liferay 7.2 &rarr; 7.3 &rarr; 7.4의 경로를 따라 업그레이드하는 경�
 
 양식 기반 투표를 사용하여 사이트 방문자가 사이트 콘텐츠에 계속 참여하도록 하십시오.
 
-두 개의 애플리케이션이 투표를 만들고 표시합니다. 사이트 메뉴의 **Forms** 애플리케이션과 페이지에 추가하는 **Form** 위젯입니다.
+두 개의 애플리케이션이 투표를 만들고 표시합니다. 사이트 메뉴의 *Forms* 애플리케이션과 페이지에 추가하는 *Form* 위젯입니다.
 
-1. 사이트 메뉴에서 **Content** &rarr; **Polls** 로 이동합니다. 
+1. 사이트 메뉴에서 *Content* &rarr; *Polls*로 이동합니다. 
 
 1. ![Add](../../images/icon-add.png) 버튼을 클릭하고 제목과 설명을 입력합니다.
 
 1. 투표처럼 작동하도록 양식을 구성합니다. 양식 설정 창을 열고 제출 섹션으로 이동한 다음 
 
-   - **응답자에게 부분 결과 표시** : 사용
-   - **사용자당 하나의 제출로 제한** : 사용함
-   - **만료되지 않음** : 원하는 경우 선택하지 않음(만료일 설정)
+   - **응답자에게 부분 결과 표시**: 사용
+   - **사용자당 하나의 제출로 제한**: 사용함
+   - **만료되지 않음**: 원하는 경우 선택하지 않음(만료일 설정)
 
 1. 이제 설문 조사 질문을 구성하십시오. 필요한 여러 줄 텍스트 필드를 양식에 추가합니다.
 
-   - **레이블:** 방문은 어땠습니까?
-   - **필드 유형:** 여러 줄
-   - **필수 필드:** 활성화됨
+   -  **레이블:** 방문은 어땠습니까?
+   -  **필드 유형:** 여러 줄
+   -  **필수 필드:** 활성화됨
 
-1. **게시** 클릭하여 사용자가 양식을 사용할 수 있도록 합니다.
+1. *게시* 클릭하여 사용자가 양식을 사용할 수 있도록 합니다.
    
    양식은 직접 링크를 통해 액세스하거나 Liferay 페이지에 양식을 표시하여 액세스할 수 있습니다. 자세한 내용은 [양식](creating-and-managing-forms/creating-forms.md#publishing-a-form) 게시를 참조하십시오. 
 

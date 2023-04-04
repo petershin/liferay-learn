@@ -79,7 +79,7 @@ Liferay가 실행되면,
 
 명령의 인수는 다음과 같습니다.
 
-| 인수                                                                                                   | 묘사                            |
+| 인수                                                                                                   | 설명                            |
 |:---------------------------------------------------------------------------------------------------- |:----------------------------- |
 | `-H "Content-Type: application/json"`                                                                | 요청 본문 형식을 JSON으로 설정합니다.       |
 | `-X POST`                                                                                            | 지정된 끝점에서 호출할 HTTP 메서드를 설정합니다. |
@@ -88,7 +88,7 @@ Liferay가 실행되면,
 | `-u "test@liferay.com:learn"`                                                                        | 기본 인증 자격 증명을 입력합니다.           |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 사용합니다.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html)을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html)를 참조하세요. OAuth2를 사용합니다.
 ```
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
@@ -105,7 +105,7 @@ Liferay가 실행되면,
 
 이 클래스는 세 줄의 코드만 사용하여 REST 서비스를 호출합니다.
 
-| 라인(약칭)                                                                   | 묘사                                                      |
+| 라인(약칭)                                                                   | 설명                                                      |
 |:------------------------------------------------------------------------ |:------------------------------------------------------- |
 | `CatalogResource.Builder builder = ...`                                  | `CatalogResource` 서비스 인스턴스를 생성하기 위해 `Builder` 가져옵니다.    |
 | `CatalogResource catalogResource = builder.authentication(...).build();` | 기본 인증을 사용하고 `CatalogResource` 서비스 인스턴스를 생성합니다.          |
@@ -137,7 +137,7 @@ cURL 또는 Java 명령을 사용하여 Liferay 인스턴스의 모든 카탈로
 ./Catalogs_GET_FromInstance.sh
 ```
 
-부호:
+암호:
 
 ```{literalinclude} ./catalog-api-basics/resources/liferay-q2v8.zip/curl/Catalogs_GET_FromInstance.sh
    :language: bash
@@ -151,7 +151,7 @@ cURL 또는 Java 명령을 사용하여 Liferay 인스턴스의 모든 카탈로
 java -classpath .:* Catalogs_GET_FromInstance
 ```
 
-부호:
+암호:
 
 ```{literalinclude} ./catalog-api-basics/resources/liferay-q2v8.zip/java/Catalogs_GET_FromInstance.java
    :dedent: 1
@@ -165,16 +165,16 @@ java -classpath .:* Catalogs_GET_FromInstance
 
 이 API는 카탈로그를 필터링, 페이지 매기기, 검색 및 정렬하기 위한 매개변수도 허용합니다. 자세한 내용은 [`getCatalogsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/CatalogResource.java#L93-#L96) 메서드를 참조하십시오. `이름` 필드를 사용하여 결과를 필터링, 검색 및 정렬할 수 있습니다.
 
-| 필터 쿼리            | 묘사                      |
+| 필터 쿼리            | 설명                      |
 |:---------------- |:----------------------- |
 | `name eq 'Able'` | 카탈로그 이름은 Able과 같아야 합니다. |
 |                  |                         |
 
-| 쿼리 정렬       | 묘사                 |
+| 쿼리 정렬       | 설명                 |
 |:----------- |:------------------ |
 | `name:desc` | 내림차순으로 이름별로 정렬합니다. |
 
-자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
+자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
 
 ## 카탈로그 받기
 
@@ -192,7 +192,7 @@ cURL 또는 Java `get` 명령을 사용하여 특정 카탈로그를 가져옵�
 ./Catalog_GET_ById.sh 1234
 ```
 
-부호:
+암호:
 
 ```{literalinclude} ./catalog-api-basics/resources/liferay-q2v8.zip/curl/Catalog_GET_ById.sh
    :language: bash
@@ -206,7 +206,7 @@ cURL 또는 Java `get` 명령을 사용하여 특정 카탈로그를 가져옵�
 java -classpath .:* -DcatalogId=1234 Catalog_GET_ById
 ```
 
-부호:
+암호:
 
 ```{literalinclude} ./catalog-api-basics/resources/liferay-q2v8.zip/java/Catalog_GET_ById.java
    :dedent: 1
@@ -228,7 +228,7 @@ cURL 및 Java `패치` 명령으로 기존 카탈로그를 업데이트합니다
 ./Catalog_PATCH_ById.sh 1234
 ```
 
-부호:
+암호:
 
 ```{literalinclude} ./catalog-api-basics/resources/liferay-q2v8.zip/curl/Catalog_PATCH_ById.sh
    :language: bash
@@ -242,7 +242,7 @@ cURL 및 Java `패치` 명령으로 기존 카탈로그를 업데이트합니다
 java -classpath .:* -DcatalogId=1234 Catalog_PATCH_ById
 ```
 
-부호:
+암호:
 
 ```{literalinclude} ./catalog-api-basics/resources/liferay-q2v8.zip/java/Catalog_PATCH_ById.java
    :dedent: 1
@@ -262,7 +262,7 @@ cURL 및 Java `delete` 명령을 사용하여 기존 카탈로그를 삭제합�
 ./Catalog_DELETE_ById.sh 1234
 ```
 
-부호:
+암호:
 
 ```{literalinclude} ./catalog-api-basics/resources/liferay-q2v8.zip/curl/Catalog_DELETE_ById.sh
    :language: bash
@@ -276,7 +276,7 @@ cURL 및 Java `delete` 명령을 사용하여 기존 카탈로그를 삭제합�
 java -classpath .:* -DcatalogId=1234 Catalog_DELETE_ById
 ```
 
-부호:
+암호:
 
 ```{literalinclude} ./catalog-api-basics/resources/liferay-q2v8.zip/java/Catalog_DELETE_ById.java
    :dedent: 1
@@ -284,4 +284,4 @@ java -classpath .:* -DcatalogId=1234 Catalog_DELETE_ById
    :lines: 8-17
 ```
 
-[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `Catalog` 서비스 및 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.
+[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `Catalog` 서비스 및 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.

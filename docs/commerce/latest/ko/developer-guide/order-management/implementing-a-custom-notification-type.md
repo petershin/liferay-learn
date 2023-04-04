@@ -1,8 +1,12 @@
+---
+uuid: 147dfb06-9bea-43fd-a872-10039ca73c04
+---
+
 # 사용자 지정 알림 유형 구현
 
 상점의 다양한 이벤트 트리거에 대한 이메일 알림을 보내도록 Liferay Commerce를 구성할 수 있습니다. 필요에 맞는 즉시 사용 가능한 알림 트리거가 없는 경우 직접 구현할 수 있습니다.
 
-새 알림 유형을 추가하려면 `CommerceNotificationType` 인터페이스를 구현해야 합니다. 알림 템플릿을 설정하고 사용 가능한 OOTB 유형을 보는 방법을 알아보려면 [Store Emails](../../store-management/sending-emails/store-emails.md) 을 참조하십시오.
+새 알림 유형을 추가하려면 `CommerceNotificationType` 인터페이스를 구현해야 합니다. 알림 템플릿을 설정하고 사용 가능한 OOTB 유형을 보는 방법을 알아보려면 [이메일 보내기](../../store-management/sending-emails.md) 을 참조하십시오.
 
 ## 알림 유형 개요
 
@@ -10,14 +14,14 @@
 
 ![알림 템플릿은 이벤트 흐름을 정의합니다.](./implementing-a-custom-notification-type/images/01.png)
 
-위의 다이어그램은 유형 **G2F3 Shipment Created** 의 알림 템플릿을 보여줍니다. 이것은 새로운 선적 생성을 위해 트리거됩니다. 배송을 생성하는 동안 알림 템플릿에 언급된 대로 수취인에게 알림이 전송됩니다. 템플릿의 받는 사람, 제목 및 본문 필드에 와일드카드를 사용할 수 있으며 보내기 전에 해결됩니다.
+위의 다이어그램은 유형 *G2F3 Shipment Created*의 알림 템플릿을 보여줍니다. 이것은 새로운 선적 생성을 위해 트리거됩니다. 배송을 생성하는 동안 알림 템플릿에 언급된 대로 수취인에게 알림이 전송됩니다. 템플릿의 받는 사람, 제목 및 본문 필드에 와일드카드를 사용할 수 있으며 보내기 전에 해결됩니다.
 
 ## 알림 유형 배포 및 언어 키 추가
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. Acme Commerce 알림 유형을 다운로드하고 압축을 풉니다.
 
@@ -43,19 +47,19 @@
     STARTED com.acme.g2f3.impl_1.0.0
     ```
 
-2. 관리자로 로그인하고 **전역 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 연 다음 **제어판** &rarr; **언어 재정의** 을 클릭합니다. **추가** 버튼(![Add icon](../../images/icon-add.png))을 클릭하고 다음 키를 추가합니다.
+2. 관리자로 로그인하고 *전역 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 연 다음 *제어판* &rarr; *언어 재정의*클릭합니다. *추가* 버튼(![Add icon](../../images/icon-add.png))을 클릭하고 다음 키를 추가합니다.
 
-    | 언어 키                                       | 가치               |
+    | 언어 키                                       | 값                |
     |:------------------------------------------ |:---------------- |
     | g2f3-배송-생성                                 | G2F3 배송 생성됨      |
     | g2f3-shipment-creator-name-definition-term | 주문을 생성한 계정의 이름   |
-    | g2f3-주문-배송-주소-정의-기간                        | 발송 주소            |
+    | g2f3-주문-배송-주소-정의-기간                        | 배송 주소            |
     | g2f3-선적-id-정의-기간                           | 배송 ID            |
     | g2f3-배송-작성자-이메일-정의-기간                      | 배송을 생성한 사용자의 이메일 |
 
     ```{important}
     Liferay DXP 7.4 U4+ 또는 Liferay Portal 7.4 GA8+용 언어 재정의 도구에서 언어 키를 추가할 수 있습니다. 이전 버전의 경우 빌드 및 배포하기 전에 `/src/main/resources/content/` 아래에 `Language.properties` 파일을 키와 함께 추가해야 합니다.
-    ``
+    ```
 
 3. *글로벌 메뉴*(![응용 프로그램 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 *상거래* &rarr; *채널*을 클릭한 다음 *알림 템플릿*을 선택합니다.
 
@@ -63,7 +67,7 @@
 
     **이름:** 생성된 G2F3 배송 테스트
 
-    **유형:* * G2F3 배송 생성됨
+    **유형:** G2F3 배송 생성됨
 
     **받는 사람:** [%SHIPMENT_CREATOR_EMAIL%]
 
@@ -106,18 +110,18 @@ MockMock(https://github.com/tweakers/MockMock)과 같은 가짜 SMTP 서버를 �
 
 이 예제는 7개의 주요 단계로 구성됩니다. 먼저 OSGi 등록을 위해 클래스에 주석을 달아야 합니다. 다음으로 [CommerceNotificationType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-notification-api/src/main/java/com/liferay/commerce/notification/type/CommerceNotificationType.java) 인터페이스를 검토하십시오. 그런 다음 사용자 정의 `CommerceNotificationType`구현을 완료하십시오.
 
-그런 다음 `CommerceShipment` 클래스에 대해 `ModelListener` 을 생성합니다. 다음으로 `CommerceDefinitionTermContributor` 인터페이스를 검토합니다. 마지막으로 용어 기여자를 구현하여 새 알림에 대한 와일드카드를 확인합니다.
+그런 다음 `CommerceShipment` 클래스에 대해 `ModelListener` 생성합니다. 다음으로 `CommerceDefinitionTermContributor` 인터페이스를 검토합니다. 마지막으로 용어 기여자를 구현하여 새 알림에 대한 와일드카드를 확인합니다.
 
 * [OSGi 등록을 위해 클래스에 주석 달기](#annotate-the-class-for-osgi-registration)
 * [CommerceNotificationType 인터페이스 검토](#review-the-commercenotificationtype-interface)
 * [통지 유형을 작성하십시오](#complete-the-notification-type)
 * [CommerceShipment용 ModelListener 생성](#create-a-modellistener-for-commerceshipment)
 * [CommerceDefinitionTermContributor 인터페이스 검토](#review-the-commercedefinitiontermcontributor-interface)
-* [기여자 용어를 완성하십시오.](#complete-the-term-contributors)
+* [기고자 기간을 완료하십시오.](#complete-the-term-contributors)
 
 ### OSGi 등록을 위해 클래스에 주석 달기
 
-Liferay Commerce가 알림 상태 레지스트리에서 다른 알림 유형과 구분할 수 있도록 알림 유형에 대한 고유 키를 제공해야 합니다. 이미 사용 중인 키를 지정하면 기존 연결된 유형이 재정의됩니다. 순서는 드롭다운에서 정렬 순서를 결정합니다. 이 경우 *개의 배송 대기 중인 주문* 알림 유형은 주문이 50개이고 *주문 부분 배송* 알림 유형은 주문이 60개입니다. 둘 사이에 상태를 표시하려면 주문이 두 숫자 사이에 있어야 합니다(이 경우 51).
+Liferay Commerce가 알림 상태 레지스트리에서 다른 알림 유형과 구분할 수 있도록 알림 유형에 대한 고유 키를 제공해야 합니다. 이미 사용 중인 키를 지정하면 기존 연결된 유형이 재정의됩니다. 순서는 드롭다운에서 정렬 순서를 결정합니다. 이 경우 *배송 대기 중인 주문* 알림 유형은 주문이 50개이고 *개의 주문 부분 배송* 알림 유형은 주문이 60개입니다. 둘 사이에 상태를 표시하려면 주문이 두 숫자 사이에 있어야 합니다(이 경우 51).
 
 ### CommerceNotificationType 인터페이스 검토
 
@@ -232,4 +236,4 @@ public List<String> getTerms();
 
 ## 결론
 
-축하합니다! 이제 `CommerceNotificationType` 인터페이스를 구현하기 위한 기본 사항을 알게 되었습니다. 또한 알림 작동 방식의 기본 사항과 `MessageListener` 을 사용하여 고유한 알림 유형을 보내는 방법도 알고 있습니다.
+축하해요! 이제 `CommerceNotificationType` 인터페이스를 구현하기 위한 기본 사항을 알게 되었습니다. 또한 알림 작동 방식의 기본 사항과 `MessageListener` 사용하여 고유한 알림 유형을 보내는 방법도 알고 있습니다.

@@ -1,0 +1,180 @@
+---
+toc:
+  - ./front-end-client-extensions/tutorials.md
+  - ./front-end-client-extensions/javascript-yaml-configuration-reference.md
+  - ./front-end-client-extensions/theme-js-yaml-configuration-reference.md
+  - ./front-end-client-extensions/css-yaml-configuration-reference.md
+  - ./front-end-client-extensions/theme-css-yaml-configuration-reference.md
+  - ./front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
+  - ./front-end-client-extensions/theme-sprite-map-yaml-configuration-reference.md
+  - ./front-end-client-extensions/custom-element-yaml-configuration-reference.md
+  - ./front-end-client-extensions/iframe-yaml-configuration-reference.md
+  - ./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
+  - ./front-end-client-extensions/remote-applications-ui-reference.md
+uuid: fcdeefe5-64f7-451c-8981-41e1a04290d6
+---
+
+# 프런트 엔드 클라이언트 확장
+
+```{toctree}
+:maxdepth: 3
+
+front-end-client-extensions/tutorials.md
+front-end-client-extensions/javascript-yaml-configuration-reference.md
+front-end-client-extensions/theme-js-yaml-configuration-reference.md
+front-end-client-extensions/css-yaml-configuration-reference.md
+front-end-client-extensions/theme-css-yaml-configuration-reference.md
+front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
+front-end-client-extensions/theme-sprite-map-yaml-configuration-reference.md
+front-end-client-extensions/custom-element-yaml-configuration-reference.md
+front-end-client-extensions/iframe-yaml-configuration-reference.md
+front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
+front-end-client-extensions/remote-applications-ui-reference.md
+```
+
+{bdg-secondary}`사용 가능한 Liferay 7.4 U45+/GA45+`
+
+프런트 엔드 클라이언트 확장은 페이지를 보강하고 새로운 기능을 통합합니다. 사용 가능한 유형에는 CSS, JavaScript, Theme CSS, Theme JS, Theme Favicon, Custom Element 및 IFrame이 있습니다.
+
+[Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md)에서 이러한 확장을 만들고 배포할 수 있습니다.
+
+[사용자 정의 요소](#custom-element-client-extensions) 및 [IFrame](#iframe-client-extensions) 클라이언트 확장 생성에 대한 자세한 내용은 [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 참조하십시오.
+
+```{note}
+레이아웃 세트(예: 페이지 세트), 마스터 템플릿, 페이지 템플릿 및 개별 콘텐츠 페이지에 JavaScript, CSS 또는 테마 CSS 클라이언트 확장을 추가할 수 있습니다. 확장을 추가하는 수준에 따라 확장의 코드를 상속하는 엔터티가 결정됩니다. 예를 들어 마스터 템플릿에 확장을 추가하면 마스터 템플릿을 사용하는 모든 페이지 템플릿과 콘텐츠 페이지가 해당 확장을 상속합니다.
+```
+
+## JavaScript 클라이언트 확장
+
+{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+
+JavaScript 클라이언트 확장은 Liferay 인스턴스 전체에서 전역 JavaScript 라이브러리 및 논리를 제공합니다. JavaScript 클라이언트 확장을 배포하고 이를 사용하도록 페이지를 구성하면 해당 JavaScript는 페이지를 방문할 때마다 자동으로 실행됩니다(페이지 머리글 또는 바닥글에서).
+
+`client-extension.yaml` 파일에서 JavaScript 클라이언트 확장을 지정합니다.
+
+```yaml
+type: globalJS
+```
+
+시작하려면 [JavaScript 클라이언트 확장 사용](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md) 을 참조하십시오.
+
+## CSS 클라이언트 확장
+
+{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+
+CSS 클라이언트 확장은 페이지에 새로운 CSS 스타일을 도입합니다. 페이지에 배포된 CSS 클라이언트 확장은 테마 및 스타일 북 설정을 포함하여 페이지의 기존 스타일에 추가됩니다.
+
+`client-extension.yaml` 파일에서 CSS 클라이언트 확장을 지정하십시오.
+
+```yaml
+type: globalCSS
+```
+
+시작하려면 [CSS 클라이언트 확장 사용](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) 참조하십시오.
+
+## 테마 JavaScript 클라이언트 확장
+
+{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+
+[JavaScript 클라이언트 확장](#javascript-client-extensions)과 마찬가지로 JavaScript 라이브러리 및 로직을 추가하여 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)에서 제공하는 것을 대체할 수 있습니다.
+
+`client-extension.yaml` 파일에서 테마 JavaScript 클라이언트 확장을 지정합니다.
+
+```yaml
+type: themeJS
+```
+
+## 테마 CSS 클라이언트 확장
+
+{bdg-secondary`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+
+[CSS 클라이언트 확장](#css-client-extensions) 이 페이지에 스타일을 추가하는 동안 테마 CSS 클라이언트 확장은 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)을 포함하여 페이지의 스타일을 재정의합니다. . 클라이언트 확장은 `clay.css` 파일과 `main.css` 파일을 사용하여 사이트 테마에서 일반적으로 사용되는 동일한 이름의 파일을 대체합니다.
+
+이 유형의 클라이언트 확장은 Liferay 애플리케이션 메뉴의 *클라이언트 확장* 에서 옵션으로 추가할 수 있습니다.
+
+![Add a theme CSS client extension to replace CSS provided by your site's theme.](./front-end-client-extensions/images/01.png)
+
+```{note}
+이 유형의 클라이언트 확장을 사용하려면 `clay.css` 및 `main.css` 파일을 원격으로 호스트해야 합니다.
+```
+
+`client-extension.yaml` 파일에서 테마 CSS 클라이언트 확장을 지정합니다.
+
+```yaml
+type: themeCSS
+```
+
+## 테마 Favicon 클라이언트 확장
+
+{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+
+Liferay에서 페이지의 파비콘을 재정의합니다. 배포되면 제공된 아이콘 파일을 Liferay의 모든 페이지에서 사용할 수 있습니다. 페이지 디자인 옵션 메뉴에서 페이지에 대한 파비콘을 구성할 때 별도의 *클라이언트 확장* 탭에서 액세스할 수 있습니다.
+
+![페이지에 대한 파비콘을 구성할 때 특수 클라이언트 확장 탭에서 클라이언트 확장의 파비콘에 액세스하십시오.](./front-end-client-extensions/images/02.png)
+
+## 테마 스프라이트 맵 클라이언트 확장
+
+{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+
+테마 스프라이트 맵 클라이언트 확장은 사이트 페이지의 스프라이트 맵을 재정의합니다. 스프라이트 맵을 `.svg` 이미지로 정의하면 사이트의 현재 테마에서 사용하는 이미지를 대체합니다.
+
+`client-extension.yaml` 파일에서 테마 스프라이트 맵 클라이언트 확장을 지정합니다.
+
+```yaml
+type: themeSpritemap
+```
+
+## 사용자 정의 요소 클라이언트 확장
+
+{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+
+> 이전에 명명된 Custom Element Remote App
+
+사용자 정의 요소 클라이언트 확장은 Liferay의 프런트 엔드 인프라를 사용하여 외부 애플리케이션을 플랫폼과 통합하고 이를 페이지 위젯으로 렌더링합니다. Liferay 외부에서 액세스할 수 있는 모든 도메인의 애플리케이션을 통합할 수 있습니다.
+
+사용자 정의 요소 클라이언트 확장을 사용하려면 필요한 URL 및 세부 정보를 사용하여 회사 수준에서 항목을 생성하여 Liferay에 등록합니다. 그런 다음 Liferay는 각 항목에 대해 고유한 위젯을 생성하고 애플리케이션을 [사용자 정의 HTML 요소](https://web.dev/custom-elements-v1/)로 렌더링합니다.
+
+`client-extension.yaml` 파일에서 사용자 정의 요소 클라이언트 확장을 지정하십시오.
+
+```yaml
+type: customElement
+```
+
+자세한 내용은 [맞춤 요소 및 IFrame 클라이언트 확장 이해](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 참조하세요.
+
+## IFrame 클라이언트 확장
+
+{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+
+> 이전 이름은 IFrame 원격 앱
+
+IFrame 클라이언트 확장은 [맞춤 요소 클라이언트 확장](#custom-element-client-extensions)처럼 작동합니다. 그러나 외부 응용 프로그램을 `<iframe>` HTML 요소로 렌더링하여 호스트 페이지에서 제한된 상호 작용을 허용합니다. 다른 프런트 엔드 클라이언트 확장과 달리 이러한 *정적 리소스*을 제공하지 않습니다.
+
+`client-extension.yaml` 파일에서 IFrame 클라이언트 확장을 지정합니다.
+
+```yaml
+type: iframe
+```
+
+자세한 내용은 [맞춤 요소 및 IFrame 클라이언트 확장 이해](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 참조하세요.
+
+## 프런트 엔드 클라이언트 확장 속성
+
+프런트 엔드 클라이언트 확장의 `client-extension.yaml` 파일에서 다음 속성을 설정합니다.
+
+| 이름              | 데이터 유형 | 기정값                     | 묘사                                                                                                 |
+|:--------------- |:------ |:----------------------- |:-------------------------------------------------------------------------------------------------- |
+| `baseURL`       | 끈      | *사이트 URL에서 파생됨*         | 모든 클라이언트 확장의 정의된 리소스가 제공되는 기본 경로입니다.                                                               |
+| `description`   | 끈      |                         | 클라이언트 확장 프로그램의 설명입니다.                                                                              |
+| `name`          | 끈      |                         | 클라이언트 확장 프로그램의 이름(UI에 표시됨). 프런트 엔드 클라이언트 확장에는 이름이 필요합니다.                                           |
+| `sourceCodeURL` | URL    | https://www.liferay.com | 클라이언트 확장의 소스 리포지토리에 대한 주소입니다.                                                                      |
+| `typeSettings`  | 끈[]    | []                      | Liferay의 `UnicodeProperties` 구문으로 처리되는 문자열 목록입니다. 유형별 클라이언트 확장 속성은 클라이언트 확장이 빌드될 때 여기에 자동으로 복사됩니다. |
+
+자세한 내용은 [클라이언트 확장 구성 `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) 을 참조하십시오.
+
+## 추가 정보
+
+* [클라이언트 확장 소개](../client-extensions.md)
+* [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)
+* [JavaScript 클라이언트 확장 사용](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)
+* [CSS 클라이언트 확장 사용](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)

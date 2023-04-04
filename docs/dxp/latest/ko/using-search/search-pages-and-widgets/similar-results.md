@@ -3,35 +3,35 @@
 
 {bdg-primary}`구독`
 
-{bdg-link-secondary}` [DXP 7.3 및 7.4와 함께 제공됨; DXP 7.2 SP2+/FP5+용 Liferay 마켓플레이스](https://web.liferay.com/marketplace/-/mp/application/172465398) `
+{bdg-link-secondary}`[DXP 7.3 및 7.4와 함께 제공됨; DXP 7.2 SP2+/FP5+용 Liferay 마켓플레이스](https://web.liferay.com/marketplace/-/mp/application/172465398)`
 
 ```{note}
 이 기능은 [Elasticsearch에서만](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md) 작동합니다.
 ```
 
-유사한 결과 위젯은 페이지에서 선택한 **주요 자산** 과 유사한 검색 결과를 표시합니다.
+유사한 결과 위젯은 페이지에서 선택한 _주요 자산_ 과 유사한 검색 결과를 표시합니다.
 
-주요 자산의 개념이 중요합니다. DXP의 특정 위젯은 Asset Publisher, Blogs, Wiki 등의 자산 목록을 표시합니다. 사용자가 표시된 자산 중 하나를 클릭하고 위젯이 페이지에 전체 콘텐츠를 표시하면 이제 페이지의 **주요 자산** 입니다. 유사한 결과 위젯은 동일한 페이지에 있는 경우 [**유사한 항목** 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html) 에서 반환될 정도로 유사한 자산 목록을 표시합니다. 주요 자산의 개념은 Elasticsearch의 [**입력 문서**](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_how_it_works) 과 동의어입니다.
+주요 자산의 개념이 중요합니다. DXP의 특정 위젯은 Asset Publisher, Blogs, Wiki 등의 자산 목록을 표시합니다. 사용자가 표시된 자산 중 하나를 클릭하고 위젯이 페이지에 전체 콘텐츠를 표시하면 이제 페이지의 _주요 자산_입니다. 유사한 결과 위젯이 동일한 페이지에 있는 경우 [_유사한 항목_ 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html)에서 반환될 정도로 유사한 자산 목록을 표시합니다. 주요 자산의 개념은 Elasticsearch의 [_입력 문서_](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_how_it_works)과 동의어입니다.
 
-유사한 결과는 입력 문서/메인 자산을 사용하여 자신을 쿼리에 가장 일치하는 것으로 반환하는 쿼리를 구성한 다음 이 분리 쿼리(또는 `OR`)를 검색 엔진에 보내 일치하는 결과 문서를 반환합니다. 이 프로세스는 구성 가능합니다: 입력 문서를 처리하는 방법, 처리된 콘텐츠에서 용어를 선택하는 방법 및 쿼리 자체를 구성하는 방법. [세부 정보](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_parameters_2) 에 대해서는 Elasticsearch 설명서를 참조하십시오.
+유사한 결과는 입력 문서/메인 자산을 사용하여 자신을 쿼리에 가장 일치하는 것으로 반환하는 쿼리를 구성한 다음 이 분리 쿼리(또는 `OR`)를 검색 엔진에 보내 일치하는 결과 문서를 반환합니다. 이 프로세스는 구성 가능합니다: 입력 문서를 처리하는 방법, 처리된 콘텐츠에서 용어를 선택하는 방법 및 쿼리 자체를 구성하는 방법. [세부 정보](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_parameters_2)은 Elasticsearch 설명서를 참조하십시오.
 
 ## 유사한 결과 위젯 구성
 
 1. 추가 메뉴(![Add](../../images/icon-add-widget.png)) &rarr; 위젯 &rarr; 검색을 클릭하고 유사한 결과 위젯을 페이지로 드래그합니다.
 
-1. 구성하려면 위젯 옵션 메뉴(![Options](../../images/icon-app-options.png))를 열고 **구성** 클릭합니다.
+1. 구성하려면 위젯 옵션 메뉴(![Options](../../images/icon-app-options.png))를 열고 _구성_클릭합니다.
 
     ![유사한 결과 위젯의 표시 설정을 구성합니다.](./similar-results/images/01.png)
 
-사용 가능한 속성의 전체 목록은 [아래](#similar-results-configurations) 에서 찾을 수 있습니다.
+사용 가능한 속성의 전체 목록은 [아래](#similar-results-configurations)에서 찾을 수 있습니다.
 
 ## 유사한 결과 위젯 사용
 
 유사한 결과 위젯이 페이지에 배치될 때 발생하는 상황은 현재 페이지에 표시된 자산 및 컨텍스트에 따라 다릅니다. 페이지에서 기본 자산을 선택하지 않으면 유사한 결과에 아무 것도 표시되지 않습니다. 페이지의 해당 공간은 공백으로 남습니다. 사이트 관리자에게는 다음 정보 메시지가 표시됩니다.
 
-**유사한 결과가 없습니다.**
+_유사한 결과가 없습니다._
 
-기본 자산의 문서가 감지되면 위젯은 구성된 [위젯 템플릿](#similar-results-widget-templates) 에 지정된 형식으로 표시되는 동일한 자산 유형의 유사한 결과를 표시합니다.
+기본 자산의 문서가 감지되면 위젯은 구성된 [위젯 템플릿](#similar-results-widget-templates)에 지정된 형식으로 표시되는 동일한 자산 유형의 유사한 결과를 표시합니다.
 
 두 가지 사용 사례를 고려하여 자세히 알아보십시오.
 
@@ -45,13 +45,13 @@ Asset Publisher에서 자산을 선택하면 동일한 자산 유형의 유사�
 
     ![자산 게시자 위젯 및 유사한 결과 위젯이 있는 페이지.](similar-results/images/02.png)
 
-1. Asset Publisher의 구성 디스플레이 설정으로 이동하여 Asset Link Behavior를 **Show Full Content** 로 설정합니다.
+1. Asset Publisher의 구성 디스플레이 설정으로 이동하여 Asset Link Behavior를 _Show Full Content_로 설정합니다.
 
-    이렇게 하면 선택한 자산이 자산 게시자 내에서 전체 콘텐츠를 표시합니다. **컨텍스트** 에서 보기 를 선택하면 자산이 기본적으로 존재하는 페이지로 리디렉션되어 유사 결과 위젯이 쓸모 없게 됩니다.
+    이렇게 하면 선택한 자산이 자산 게시자 내에서 전체 콘텐츠를 표시합니다. _컨텍스트_에서 보기 를 선택하면 자산이 기본적으로 존재하는 페이지로 리디렉션되어 유사 결과 위젯이 쓸모 없게 됩니다.
 
 1. 아래 나열된 유형의 유사한 자산을 여러 개 만듭니다. 유사한 결과 위젯이 결과를 채울 수 있을 만큼 유사해야 합니다.
 
-    More Like This 쿼리에서 반환할 자산을 생성하려면 생성하는 자산의 내용과 [유사한 결과 위젯 구성](#similar-results-configurations) 에 주의하십시오.  테스트를 위해 **최소 기간 빈도** 및 **최소 문서 빈도** 값을 모두 `1`로 설정하는 것이 좋습니다.
+    More Like This 쿼리에서 반환할 자산을 생성하려면 생성하는 자산의 내용과 [유사한 결과 위젯 구성](#similar-results-configurations)에 주의하십시오.  테스트를 위해 _최소 기간 빈도_ 및 _최소 문서 빈도_ 값을 모두 `1`로 설정하는 것이 좋습니다.
 
     * 블로그 항목
     * 문서 및 미디어 파일
@@ -73,20 +73,20 @@ Asset Publisher에서 자산을 선택하면 동일한 자산 유형의 유사�
 
 이러한 위젯과 관련 자산은 자산 목록을 표시하고 유사한 결과 위젯의 기본 자산으로 사용할 자산을 선택할 수 있습니다.
 
-| 위젯 이름    | 자산 유형             |
-| -------- | ----------------- |
-| 블로그      | 블로그 항목            |
-| 문서 및 미디어 | 문서 및 미디어 파일, 폴더   |
-| 위키       | Wiki 페이지          |
-| 게시판      | 게시판 스레드, 메시지 및 범주 |
+| 위젯 이름    | 자산 유형               |
+| -------- | ------------------- |
+| 블로그      | 블로그 항목              |
+| 문서 및 미디어 | 문서 및 미디어 파일, 폴더     |
+| Wiki     | Wiki 페이지            |
+| 게시판      | 게시판 스레드, 메시지 및 카테고리 |
 
 유사한 결과를 블로그와 함께 사용하는 예를 구성하려면
 
-1. 위젯 페이지를 만듭니다. 블로그 위젯 및 유사한 결과 위젯을 추가합니다.
+1. 위젯 페이지를 만듭니다. 블로그 위젯과 유사한 결과 위젯을 추가합니다.
 
 1. 유사한 블로그 항목을 여러 개 만듭니다. 유사한 결과 위젯이 결과로 반환할 만큼 유사해야 합니다.
 
-    More Like This 쿼리에서 반환할 자산을 생성하려면 생성하는 자산의 내용과 [유사한 결과 위젯 구성](#similar-results-configurations) 에 주의하십시오.  테스트를 위해 **최소 기간 빈도** 및 **최소 문서 빈도** 값을 모두 `1`로 설정하는 것이 좋습니다.
+    More Like This 쿼리에서 반환할 자산을 생성하려면 생성하는 자산의 내용과 [유사한 결과 위젯 구성](#similar-results-configurations)에 주의하십시오.  테스트를 위해 _최소 기간 빈도_ 및 _최소 문서 빈도_ 값을 모두 `1`로 설정하는 것이 좋습니다.
 
 1. 블로그 위젯에서 블로그 게시물을 클릭합니다. 블로그 항목이 표시되고 유사한 결과 위젯에 유사한 항목에 대한 링크가 표시됩니다.
 
@@ -96,9 +96,9 @@ Asset Publisher에서 자산을 선택하면 동일한 자산 유형의 유사�
 
 ## 유사한 결과 위젯 템플릿
 
-기본적으로 유사한 결과는 **Compact Layout**[위젯 템플릿](https://help.liferay.com/hc/ko/articles/360029132571-Styling-Widgets-with-Widget-Templates) 사용하여 렌더링되며 하이퍼링크 제목 목록을 표시합니다.
+기본적으로 유사한 결과는 _Compact Layout_ [위젯 템플릿](https://help.liferay.com/hc/en-us/articles/360029132571-Styling-Widgets-with-Widget-Templates)사용하여 렌더링되며 하이퍼링크 제목 목록을 표시합니다.
 
-두 가지 추가 위젯 템플릿을 즉시 사용할 수 있습니다. **List Layout** 및 **Card Layout** .
+두 가지 추가 위젯 템플릿을 즉시 사용할 수 있습니다. _List Layout_ 및 _Card Layout_.
 
 목록 레이아웃:
 
@@ -112,21 +112,21 @@ Asset Publisher에서 자산을 선택하면 동일한 자산 유형의 유사�
 
 유사한 결과 표시를 위한 고유한 위젯 템플릿을 작성하려면
 
-1. 유사한 결과 위젯 옵션 메뉴(![Options](../../images/icon-app-options.png))를 열고 **구성** 클릭합니다.
+1. 유사한 결과 위젯 옵션 메뉴(![Options](../../images/icon-app-options.png))를 열고 _구성_클릭합니다.
 
-1. **템플릿 관리** 클릭하면 위젯 템플릿 화면이 나타납니다.
+1. _템플릿 관리_ 클릭하면 위젯 템플릿 화면이 나타납니다.
 
 1. 추가 버튼(![Add](../../images/icon-add.png))을 클릭하여 템플릿 생성기 팔레트를 엽니다.
 
-    표준 [위젯 템플릿](https://help.liferay.com/hc/ko/articles/360029132571-Styling-Widgets-with-Widget-Templates) 변수 외에도 템플릿 편집기에서 제공되는 검색 관련 변수를 활용합니다.
+    표준 [위젯 템플릿](https://help.liferay.com/hc/en-us/articles/360029132571-Styling-Widgets-with-Widget-Templates) 변수 외에도 템플릿 편집기에서 제공되는 검색 관련 변수를 활용합니다.
 
-1. 원하는대로 템플릿을 디자인하십시오. 자세한 내용은 [위젯 템플릿](https://help.liferay.com/hc/ko/articles/360029132571-Styling-Widgets-with-Widget-Templates) 문서를 참조하세요.
+1. 원하는대로 템플릿을 디자인하십시오. 자세한 내용은 [위젯 템플릿](https://help.liferay.com/hc/en-us/articles/360029132571-Styling-Widgets-with-Widget-Templates) 문서를 참조하세요.
 
-사이트 메뉴의 **사이트 빌더** 섹션에 있는 위젯 템플릿 항목에서 동일한 템플릿 편집기에 액세스할 수 있습니다.
+사이트 메뉴의 _사이트 빌더_ 섹션에 있는 위젯 템플릿 항목에서 동일한 템플릿 편집기에 액세스할 수 있습니다.
 
 ## 유사한 결과 구성
 
-첫 번째 구성 옵션은 **디스플레이 설정** 섹션에 나타납니다.
+첫 번째 구성 옵션은 _디스플레이 설정_섹션에 나타납니다.
 
 ![유사한 결과 구성에서 다른 옵션을 구성합니다.](similar-results/images/01.png)
 
@@ -134,12 +134,12 @@ Asset Publisher에서 자산을 선택하면 동일한 자산 유형의 유사�
 
 **최대 항목 표시:** 위젯에 표시할 최대 결과 수를 설정합니다.
 
-**고급 구성** 섹션은 위젯의 동작을 조정하기 위한 설정을 수집합니다. 이러한 설정의 대부분은 [More Like this Query for Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html) 를 구성하는 데 사용됩니다.
+_고급 구성_ 섹션은 위젯의 동작을 조정하기 위한 설정을 수집합니다. 이러한 설정의 대부분은 [More Like this Query for Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html)를 구성하는 데 사용됩니다.
 
 | 고급 설정                                            | 정의                                                                                                                                                                                                                              |
 |:------------------------------------------------ |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| {bdg-secondary}`사용 가능 7.4 U17+`<br />범위    | 이 사이트(기본값)와 모든 것 중에서 선택하여 현재 사이트에서만 유사한 결과를 표시하거나(**이 사이트**) 검색 범위를 모든 사이트로 확장합니다(**모든 것**).                                                                                                                                        |
-| {bdg-secondary}`사용 가능 7.4 U18+`<br />링크 동작 | 콘텐츠 표시(기본값)와 컨텍스트에서 보기 중에서 선택하여 클릭한 결과를 동일한 표시 페이지(**콘텐츠 표시**)에 표시하거나 컨텍스트(**컨텍스트에서 보기** ; 예: 다른 페이지의 디스플레이 위젯)에 표시합니다. ).                                                                                                           |
+| 범위<br />{bdg-secondary}`사용 가능 7.4 U17+`    | 이 사이트(기본값)와 모든 것 중에서 선택하여 현재 사이트에서만 유사한 결과를 표시하거나(*이 사이트*) 검색 범위를 모든 사이트로 확장합니다(*모든 것*).                                                                                                                                        |
+| 링크 동작<br />{bdg-secondary}`사용 가능 7.4 U18+` | 콘텐츠 표시(기본값)와 컨텍스트에서 보기 중에서 선택하여 클릭한 결과를 동일한 표시 페이지(*콘텐츠 표시*)에 표시하거나 컨텍스트(*컨텍스트에서 보기*; 예: 다른 페이지의 디스플레이 위젯)에 표시합니다. ).                                                                                                           |
 | 분야                                               | 쉼표로 구분된 목록을 사용하여 다른 자산이 기본 자산과 일치하는지 여부를 결정하는 데 사용되는 콘텐츠가 있는 키워드 또는 텍스트 필드를 지정합니다.                                                                                                                                              |
 | 최대 검색어                                           | 메인 자산에서 추출할 최대 검색어 수를 설정합니다. 검색 결과를 기본 자산과 일치시키는 데 사용되는 용어입니다. 이 값을 늘리면 반환된 결과의 관련성이 향상되지만 실행 속도는 저하됩니다. 비워두면 기본값은 `25`입니다.                                                                                                     |
 | 최소 항 빈도                                          | 유사한 결과를 일치시키는 데 사용되는 용어가 인덱스에 나타나야 하는 시간에 대한 최소 임계값을 설정합니다. 비워두면 기본값은 `2`입니다.                                                                                                                                                   |
@@ -149,6 +149,6 @@ Asset Publisher에서 자산을 선택하면 동일한 자산 유형의 유사�
 | 최대 단어 길이                                         | 최대 단어 길이를 설정합니다. 그 이상의 용어는 유사 항목 쿼리에서 생략됩니다. 비워두면 상한선이 설정되지 않습니다.                                                                                                                                                               |
 | 단어 중단                                            | 유사한 결과를 찾기 위해 무시해야 하는 흥미롭지 않은 중지 단어의 배열(쉼표로 구분된 목록)입니다. 구성된 분석기가 중지 단어를 허용하는 경우 이러한 단어는 유사 항목 쿼리로 보내는 것을 완전히 피할 수 있는 단어입니다.                                                                                                     |
 | 애널라이저                                            | 입력 문서의 필드에서 사용할 분석기를 지정합니다. 비워 두면 필드 구성의 첫 번째 항목과 연결된 분석기로 기본 설정됩니다.                                                                                                                                                            |
-| 일치해야 하는 최소값                                      | 이접 쿼리가 형성된 후 이 매개변수는 일치해야 하는 용어의 수를 제어합니다(기본값은 `30%`). 허용되는 구문은 [Elasticsearch 문서](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-minimum-should-match.html#query-dsl-minimum-should-match) 을 참조하십시오. |
+| 일치해야 하는 최소값                                      | 분리 쿼리가 형성된 후 이 매개변수는 일치해야 하는 용어의 수를 제어합니다(기본값은 `30%`). 허용되는 구문은 [Elasticsearch 문서](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-minimum-should-match.html#query-dsl-minimum-should-match)을 참조하십시오. |
 | 용어 부스트                                           | [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) 점수로 용어를 부스팅하려는 경우 사용할 부스트 계수를 설정합니다. 비워 두면 기본적으로 비활성화됩니다(`0`). 다른 양수 값은 주어진 부스트 계수로 부스팅하는 용어를 활성화합니다.                                                                    |
 | 연합 검색 키                                          | 이 위젯이 참여하는 대체 검색의 키를 입력하십시오.                                                                                                                                                                                                    |

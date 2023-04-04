@@ -1,12 +1,16 @@
+---
+uuid: 7096601d-1346-4385-847b-eebba5fa3d2a
+---
+
 # JBoss EAP에 설치
 
 JBoss EAP에 설치하려면 DXP WAR 설치, 종속성 설치, JBoss 구성 및 JBoss에 DXP 배포가 필요합니다. 데이터베이스와 메일 서버 연결도 구성해야 합니다.
 
 ## 전제 조건
 
-Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. 자세한 내용은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오.
+Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. 자세한 내용은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.
 
-[도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community) 에서 이 파일을 다운로드하십시오.
+[도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community)에서 이 파일을 다운로드하십시오.
 
 * DXP 전쟁 파일
 * OSGi 종속성 ZIP 파일
@@ -32,7 +36,7 @@ WAR 파일 이름을 변경하여 기본 Liferay Portal 웹 컨텍스트를 변�
 1. OSGi 종속성 ZIP 파일을 `[Liferay Home]/osgi` 폴더에 압축 해제합니다(이 폴더가 없으면 생성). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
 1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 데이터베이스 공급업체의 JDBC JAR 파일을 다운로드하여 `$JBOSS_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container에 배치합니다. -lib` 폴더.
 
-    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오.
+    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.
 
 ```{note}
 DXP에는 테스트 목적으로 유용한 Hypersonic 데이터베이스가 포함되어 있습니다. 프로덕션 인스턴스에 HSQL을 사용하지 마세요.
@@ -64,7 +68,7 @@ DXP 7.3 및 이전 버전의 경우 다음 추가 단계를 따르십시오.
     </module>
     ```
 
-    `[여기에 데이터베이스 공급업체의 JAR 파일 이름 입력]` 을 데이터베이스용 드라이버 JAR로 바꿉니다.
+    `[여기에 데이터베이스 공급업체의 JAR 파일 이름 입력]` 데이터베이스용 드라이버 JAR로 바꿉니다.
 
     Liferay 종속성 ZIP의 각 JAR에 대해 `경로` 속성이 JAR 이름으로 설정된 `리소스 루트` 요소를 추가합니다. 예를 들어 `com.liferay.petra.concurrent.jar` 파일에 대해 다음과 같이 `resource-root` 요소를 추가합니다.
 
@@ -74,7 +78,7 @@ DXP 7.3 및 이전 버전의 경우 다음 추가 단계를 따르십시오.
 
 ## 독립 실행형 모드와 도메인 모드에서 JBoss EAP에서 DXP 실행
 
-JBoss EAP는 **독립형** 모드 또는 **도메인** 모드에서 시작할 수 있습니다. 도메인 모드를 사용하면 단일 제어 지점에서 여러 애플리케이션 서버 인스턴스를 관리할 수 있습니다. 이러한 애플리케이션 서버의 콜렉션을 **도메인** 이라고 합니다. 독립 실행형 모드와 도메인 모드에 대한 자세한 내용은 [JBoss EAP 제품 설명서](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes) 에서 이 항목에 대한 섹션을 참조하십시오.
+JBoss EAP는 *독립형* 모드 또는 *도메인* 모드에서 시작할 수 있습니다. 도메인 모드를 사용하면 단일 제어 지점에서 여러 애플리케이션 서버 인스턴스를 관리할 수 있습니다. 이러한 애플리케이션 서버의 콜렉션을 *도메인*이라고 합니다. 독립 실행형 모드와 도메인 모드에 대한 자세한 내용은 [JBoss EAP 제품 설명서](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes)에서 이 항목에 대한 섹션을 참조하십시오.
 
 DXP는 독립형 모드에서 실행될 때 JBoss EAP를 지원하지만 도메인 모드에서 실행될 때는 지원하지 않습니다. DXP의 자동 배포는 관리형 배포에서 작동하지 않습니다. JBoss가 파일(분할 또는 비분할)을 복사하여 관리형 배포의 콘텐츠를 관리하기 때문입니다. 이렇게 하면 JSP 후크 및 Ext 플러그인이 의도한 대로 작동하지 않습니다. 예를 들어 JSP 후크는 관리 도메인 모드에서 실행되는 JBoss EAP에서 작동하지 않습니다. DXP의 JSP 재정의 메커니즘이 애플리케이션 서버에 의존하기 때문입니다. 그러나 JSP 후크 및 Ext 플러그인은 더 이상 사용되지 않으므로 사용하지 않을 수 있습니다.
 
@@ -151,7 +155,7 @@ DXP는 독립형 모드에서 실행될 때 JBoss EAP를 지원하지만 도메�
 
 1. 새로운 `<system-property>` 가 추가됩니다.
 1. 새로운 `<filter-spec>` 가 추가됩니다.
-1. `<deployment-timeout>` 는 `600`로 설정됩니다.
+1. `<deployment-timeout>` `600`로 설정됩니다.
 1. 새로운 `<security-domain>` 가 생성됩니다.
 1. 시작 콘텐츠가 비활성화되었습니다.
 
@@ -192,13 +196,13 @@ Java 옵션 및 메모리 인수는 아래에 설명되어 있습니다.
 
 **JVM 옵션 설명**
 
-| 옵션                                        | 설명                                                                                                     |
-|:----------------------------------------- |:------------------------------------------------------------------------------------------------------ |
-| `-Dfile.encoding=UTF-8`                   | DXP에는 UTF-8 파일 인코딩이 필요합니다.                                                                             |
-| `-Djava.locale.providers=JRE,COMPAT,CLDR` | 이것은 JDK 11에서 4자리 날짜를 표시하는 데 필요합니다.                                                                     |
-| `-Djava.net.preferIPv4Stack=true`         | IPv6보다 IPv4 스택을 선호합니다.                                                                                 |
-| `-Dlog4j2.formatMsgNoLookups=true`        | RCE(원격 코드 실행) 취약성을 해결합니다. 자세한 내용은 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) 을 참조하십시오. |
-| `-Duser.timezone=GMT`                     | DXP는 GMT 시간대를 사용하기 위해 애플리케이션 서버 JVM이 필요합니다.                                                            |
+| 옵션                                        | 설명                                                                                                   |
+|:----------------------------------------- |:---------------------------------------------------------------------------------------------------- |
+| `-Dfile.encoding=UTF-8`                   | DXP에는 UTF-8 파일 인코딩이 필요합니다.                                                                           |
+| `-Djava.locale.providers=JRE,COMPAT,CLDR` | 이것은 JDK 11에서 4자리 날짜를 표시하는 데 필요합니다.                                                                   |
+| `-Djava.net.preferIPv4Stack=true`         | IPv6보다 IPv4 스택을 선호합니다.                                                                               |
+| `-Dlog4j2.formatMsgNoLookups=true`        | RCE(원격 코드 실행) 취약성을 해결합니다. 자세한 내용은 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) 참조하십시오. |
+| `-Duser.timezone=GMT`                     | DXP는 GMT 시간대를 사용하기 위해 애플리케이션 서버 JVM이 필요합니다.                                                          |
 
 **메모리 인수 설명**
 
@@ -213,7 +217,7 @@ Java 옵션 및 메모리 인수는 아래에 설명되어 있습니다.
 | `-XX:SurvivorRatio`    | 서바이벌 공간에 대한 새 공간의 비율입니다. 생존자 공간은 구세대 공간으로 승격되기 전에 젊은 세대 개체를 보유합니다.       |
 
 ```{note}
-DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Liferay 튜닝](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
+DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Tuning Liferay](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
 ```
 
 ### IBM JDK 사용
@@ -238,7 +242,7 @@ JBoss 서버와 함께 IBM JDK를 사용하는 경우 다음 추가 단계를 �
 
 ## Liferay의 데이터 소스 구성
 
-DXP에는 시연용으로 좋은 Hypersonic 데이터베이스가 내장되어 있지만 생산 **에서는 사용** 안 됩니다. 프로덕션의 경우 완전한 기능을 갖춘 지원되는 RDBMS를 사용하십시오. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md) 을 참조하십시오.
+DXP에는 시연용으로 적합하지만 **생산에 사용하면 안 되는** 내장 Hypersonic 데이터베이스가 포함되어 있습니다. 프로덕션의 경우 완전한 기능을 갖춘 지원되는 RDBMS를 사용하십시오. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md)을 참조하세요.
 
 Liferay DXP는 DXP의 내장 데이터 소스(권장)를 사용하거나 앱 서버에서 생성한 데이터 소스를 사용하여 데이터베이스에 연결할 수 있습니다.
 
@@ -361,7 +365,7 @@ JBoss에서 메일 세션을 구성하려면 다음 단계를 따르십시오.
 
 ## DXP 배포
 
-1. 배포 `ROOT.war`을 트리거하려면 `$JBOSS_HOME/standalone/deployments/` 폴더에 `ROOT.war.dodeploy` 이라는 빈 파일을 만듭니다.
+1. 배포 `ROOT.war`트리거하려면 `$JBOSS_HOME/standalone/deployments/` 폴더에 `ROOT.war.dodeploy` 이라는 빈 파일을 만듭니다.
 1. `$JBOSS_HOME/bin` 로 이동하고 `standalone.sh`를 실행하여 JBoss 애플리케이션 서버를 시작합니다. JBoss는 `ROOT.war.dodeploy` 파일을 감지하고 파일 접두사(즉, `ROOT.war`)와 일치하는 웹 애플리케이션을 배포합니다.
 
 DXP를 배포한 후 `PhaseOptimizer`과 관련된 아래와 같은 과도한 경고 및 로그 메시지가 표시될 수 있습니다. 이들은 양성이며 무시할 수 있습니다. 앱 서버의 로깅 수준 또는 로그 필터를 조정하여 이러한 메시지를 끌 수 있습니다.
@@ -378,13 +382,13 @@ current AST contains: [ES3 keywords as identifiers, getters, reserved words as p
 
 Liferay DXP Enterprise 구독이 있는 경우 DXP는 활성화 키를 요청합니다. 자세한 내용은 [Liferay DXP](../../setting-up-liferay/activating-liferay-dxp.md) 활성화를 참조하십시오.
 
-축하합니다! JBoss EAP에서 DXP를 실행하고 있습니다.
+축하해요! JBoss EAP에서 DXP를 실행하고 있습니다.
 
 ## 다음 단계
 
-[관리자 사용자로 로그인하고](../../../getting-started/introduction-to-the-admin-account.md) \[DXP에서 솔루션 구축\](../../../building **solutions** on_dxp.html. 또는 [개의 추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
+[관리자 사용자](../../../getting-started/introduction-to-the-admin-account.md) 로 로그인하고 DXP에서 솔루션 구축을 시작할 수 있습니다. 또는 [추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
 
-* [마켓플레이스 플러그인 설치](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
+* [마켓플레이스 플러그인 설치](../../../system-administration/installing-and-managing-apps/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [평가판 기간 동안 플러그인 액세스](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
 * [검색 엔진 설치](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 * [Liferay DXP 보안](../../securing-liferay.md)

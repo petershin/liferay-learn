@@ -7,11 +7,12 @@ toc:
   - store-management/guest-checkout.md
   - store-management/sending-emails.md
   - store-management/liferay-commerce-configuration-overview.md
-  - store-management/adding-regions.md
   - store-management/locale-options.md
-  - store-management/deactivating-a-country-for-billing-or-shipping.md
+  - store-management/configuring-countries-and-regions.md
+uuid: 6cb314a2-f471-4faa-9ed5-844a673ec6ec
 ---
-# 상점 관리
+
+# 매장 관리
 
 ```{toctree}
 :maxdepth: 2
@@ -22,9 +23,8 @@ store-management/configuring-shipping-methods.md
 store-management/guest-checkout.md
 store-management/sending-emails.md
 store-management/liferay-commerce-configuration-overview.md
-store-management/adding-regions.md
 store-management/locale-options.md
-store-management/deactivating-a-country-for-billing-or-shipping.md
+store-management/configuring-countries-and-regions.md
 
 ```
 

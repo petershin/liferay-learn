@@ -1,18 +1,22 @@
+---
+uuid: 14f37389-738c-415b-840c-e405e65fe58a
+---
+
 # 톰캣에 설치하기
 
 ```{important}
-[Liferay-Tomcat 번들 사용](../installing-a-liferay-tomcat-bundle.md) 또는 [Docker 이미지](../../../getting-started/starting-with-a-docker -image.md)는 Liferay DXP 사용을 시작하는 가장 빠른 방법입니다. 이 문서는 Tomcat 애플리케이션 서버의 구성을 완전히 제어하려는 사용자를 위한 것입니다.
+[Liferay-Tomcat 번들 사용](../installing-a-liferay-tomcat-bundle.md) 또는 [Docker 이미지](../../../getting-started/starting-with-a-docker-image.md)는 Liferay DXP 사용을 시작하는 가장 빠른 방법입니다. 이 문서는 Tomcat 애플리케이션 서버의 구성을 완전히 제어하려는 사용자를 위한 것입니다.
 
 계속하기 전에 [Liferay-Tomcat 번들 설치](../installing-a-liferay-tomcat-bundle.md) 및 [데이터베이스 구성](../configuring-a-database.md) 문서를 검토하세요.
 ```
 
-Tomcat에 설치하려면 DXP WAR 설치, 종속성 설치, Tomcat 구성 및 DXP 배포가 필요합니다. 데이터베이스 및 메일 서버 연결도 구성해야 합니다.
+Tomcat에 설치하려면 DXP WAR 설치, 종속성 설치, Tomcat 구성 및 DXP 배포가 필요합니다. 데이터베이스와 메일 서버 연결도 구성해야 합니다.
 
-이를 수행하는 가장 간단하고 쉬운 방법은 [Liferay Liferay-Tomcat](../installing-a-liferay-tomcat-bundle.md) 번들을 다운로드하고 여기에서 종속성, 스크립트 및 `ROOT.xml`을 복사하는 것입니다. 아래에 설명된 사이트로. 그렇지 않으면 종속성을 다운로드하고 수동으로 Tomcat을 구성할 수 있습니다.
+이를 수행하는 가장 [하고 쉬운 방법은 Liferay Liferay-Tomcat](../installing-a-liferay-tomcat-bundle.md) 번들을 다운로드하고 여기에서 종속성, 스크립트 및 `ROOT.xml` 아래 설명된 위치로 복사하는 것입니다. 그렇지 않으면 종속성을 다운로드하고 Tomcat을 수동으로 구성할 수 있습니다.
 
 ## 전제 조건
 
-Tomcat을 어떻게 구성하든 [도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www .liferay.com/downloads-community) :
+Tomcat을 구성하는 방법에 관계없이 [도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community)에서 이러한 파일을 다운로드하여 설치해야 합니다.
 
 * DXP 전쟁 파일
 * OSGi 종속성 ZIP 파일
@@ -21,10 +25,10 @@ Tomcat을 어떻게 구성하든 [도움말 센터](https://customer.liferay.com
 Java JDK 8 또는 11이 필요합니다.
 
 ```{note}
-지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 를 참조하십시오. 권장 JVM 설정은 [JVM 구성](../../reference/jvm-configuration.md)을 참조하십시오.
+지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)를 참조하십시오.  권장 JVM 설정은 [JVM 구성](../../reference/jvm-configuration.md)을 참조하십시오.
 ```
 
-Tomcat 서버 상위 폴더는 [**Liferay Home**](../../reference/liferay-home.md)입니다. `$TOMCAT_HOME` 는 Tomcat 서버 폴더를 나타냅니다. 일반적으로 이름은 `tomcat-[version]` 또는 `apache-tomcat-[version]`입니다.
+Tomcat 서버 상위 폴더는 [*Liferay Home*](../../reference/liferay-home.md)입니다. `$TOMCAT_HOME` Tomcat 서버 폴더를 나타냅니다. 일반적으로 이름은 `tomcat-[version]` 또는 `apache-tomcat-[version]`입니다.
 
 ## DXP WAR 설치
 
@@ -33,12 +37,12 @@ Tomcat 서버 상위 폴더는 [**Liferay Home**](../../reference/liferay-home.m
 
 ## 종속성 설치
 
-DXP는 Liferay-Tomcat 번들에 포함된 많은 JAR에 의존합니다. 번들의 일부 JAR은 반드시 필요한 것은 아니지만 여전히 유용할 수 있습니다. Tomcat 번들을 사용하지 않는 경우 아래 설명된 대로 다운로드한 **OSGi 종속성** 아카이브와 타사 JAR 종속성을 사용합니다.
+DXP는 Liferay-Tomcat 번들에 포함된 많은 JAR에 의존합니다. 번들의 일부 JAR은 반드시 필요한 것은 아니지만 여전히 유용할 수 있습니다. Tomcat 번들을 사용하지 않는 경우 아래 설명된 대로 다운로드한 *OSGi 종속성* 아카이브와 타사 JAR 종속성을 사용합니다.
 
 1. `[Liferay Home]/osgi` 폴더에 OSGi Dependencies ZIP 파일 내용의 압축을 풉니다(이 폴더가 없으면 생성). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
 1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 데이터베이스 공급업체의 JDBC JAR 파일을 다운로드하여 `$CATALINA_BASE/webapps/ROOT/WEB-INF/shielded-container-lib` 폴더에 넣습니다. .
 
-    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오.
+    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.
 
 ```{note}
 Hypersonic 데이터베이스는 DXP와 함께 번들로 제공되며 테스트 목적으로 유용합니다. 프로덕션 인스턴스에 HSQL을 사용하지 마세요.
@@ -58,7 +62,7 @@ DXP를 실행하도록 Tomcat을 구성하는 작업에는 다음 작업이 포�
 
 1. `setenv.bat`, `setenv.sh`,  `startup.bat`, `startup.sh`, `shutdown.bat`및 `shutdown.sh` 파일을 DXP 번들에서 `$CATALINA_BASE/bin` 로 복사합니다. 폴더. 그렇지 않으면  `setenv.bat` 및 `setenv.sh` 스크립트를 작성하십시오.
 
-1. `setenv.sh` 스크립트는 Tomcat의 서블릿 컨테이너인 Catalina에 대한 JVM 옵션을 설정합니다. 이러한 옵션 중에는 Java 런타임 환경의 사이트가 있습니다. 서버에서 이 환경을 전역적으로 사용할 수 없는 경우 Tomcat이 실행될 수 있도록 `setenv.sh` 스크립트에서 해당 사이트를 설정합니다. `JAVA_HOME` 환경 변수를 DXP 지원 JRE로 지정하여 이를 수행하십시오.
+1. `setenv.sh` 스크립트는 Tomcat의 서블릿 컨테이너인 Catalina에 대한 JVM 옵션을 설정합니다. 이러한 옵션 중에는 Java 런타임 환경의 위치가 있습니다. 서버에서 이 환경을 전역적으로 사용할 수 없는 경우 Tomcat이 실행될 수 있도록 `setenv.sh` 스크립트에서 해당 위치를 설정합니다. `JAVA_HOME` 환경 변수를 DXP 지원 JRE로 지정하여 이를 수행하십시오.
 
     ```bash
     export JAVA_HOME=/usr/lib/jvm/java-8-jdk
@@ -73,13 +77,13 @@ DXP를 실행하도록 Tomcat을 구성하는 작업에는 다음 작업이 포�
 
 **JVM 옵션 설명**
 
-| 옵션                                        | 설명                                                                                                     |
-|:----------------------------------------- |:------------------------------------------------------------------------------------------------------ |
-| `-Dfile.encoding=UTF-8`                   | DXP에는 UTF-8 파일 인코딩이 필요합니다.                                                                             |
-| `-Djava.locale.providers=JRE,COMPAT,CLDR` | 이것은 JDK 11에서 4자리 날짜를 표시하는 데 필요합니다.                                                                     |
-| `-Djava.net.preferIPv4Stack=true`         | IPv6보다 IPv4 스택을 선호합니다.                                                                                 |
-| `-Dlog4j2.formatMsgNoLookups=true`        | RCE(원격 코드 실행) 취약성을 해결합니다. 자세한 내용은 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) 을 참조하십시오. |
-| `-Duser.timezone=GMT`                     | DXP는 GMT 시간대를 사용하기 위해 애플리케이션 서버 JVM이 필요합니다.                                                            |
+| 옵션                                        | 설명                                                                                                   |
+|:----------------------------------------- |:---------------------------------------------------------------------------------------------------- |
+| `-Dfile.encoding=UTF-8`                   | DXP에는 UTF-8 파일 인코딩이 필요합니다.                                                                           |
+| `-Djava.locale.providers=JRE,COMPAT,CLDR` | 이것은 JDK 11에서 4자리 날짜를 표시하는 데 필요합니다.                                                                   |
+| `-Djava.net.preferIPv4Stack=true`         | IPv6보다 IPv4 스택을 선호합니다.                                                                               |
+| `-Dlog4j2.formatMsgNoLookups=true`        | RCE(원격 코드 실행) 취약성을 해결합니다. 자세한 내용은 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) 참조하십시오. |
+| `-Duser.timezone=GMT`                     | DXP는 GMT 시간대를 사용하기 위해 애플리케이션 서버 JVM이 필요합니다.                                                          |
 
 **메모리 인수 설명**
 
@@ -92,12 +96,12 @@ DXP를 실행하도록 Tomcat을 구성하는 작업에는 다음 작업이 포�
 | `-XX:SurvivorRatio` | 서바이벌 공간에 대한 새 공간의 비율입니다. 생존자 공간은 구세대 공간으로 승격되기 전에 젊은 세대 개체를 보유합니다.       |
 
 ```{note}
-DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Liferay 튜닝](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
+DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Tuning Liferay](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
 ```
 
 Tomcat 구성을 계속하십시오.
 
-1. Liferay-Tomcat 번들이 있는 경우 `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 파일을 애플리케이션 서버의 해당 사이트에 복사합니다. 파일 경로가 없으면 생성하고 `ROOT.xml` 파일을 생성합니다.
+1. Liferay-Tomcat 번들이 있는 경우 `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 파일을 애플리케이션 서버의 해당 위치에 복사합니다. 파일 경로가 없으면 생성하고 `ROOT.xml` 파일을 생성합니다.
 
     `ROOT.xml` 파일은 DXP에 대한 웹 애플리케이션 컨텍스트를 지정합니다. 예를 들어,
 
@@ -116,15 +120,15 @@ Tomcat 구성을 계속하십시오.
     </Context>
     ```
 
-     `crossContext="true"` 로 설정하면 여러 웹 애플리케이션이 동일한 클래스 로더를 사용할 수 있습니다. 이 구성에는 JAAS 영역을 구성하기 위한 주석 처리된 지침 및 태그가 포함됩니다.
+     `crossContext="true"` 로 설정하면 여러 웹 애플리케이션이 동일한 클래스 로더를 사용할 수 있습니다. 이 구성에는 JAAS 영역 구성을 위한 주석 처리된 지침 및 태그가 포함됩니다.
 
 ```{important}
 XML 파일 이름을 변경하여 기본 Liferay Portal 웹 컨텍스트를 변경할 수 있지만(예: `localhost:8080/`에서 `localhost:8080/myportal`로) 이는 권장되지 않습니다.
 ```
 
-2. UTF-8 URI 인코딩을 일관되게 사용해야 합니다. `$CATALINA_BASE/conf/server.xml` 파일을 Tomcat 번들에서 서버로 복사합니다. 그렇지 않으면 `$CATALINA_BASE/conf/server.xml` 파일을 열고 `redirectPort=8443`을 사용하는 HTTP 및 AJP 커넥터에 `URIEncoding="UTF-8"` 속성을 추가하십시오. 다음은 예입니다.
+2. UTF-8 URI 인코딩을 일관되게 사용해야 합니다. `$CATALINA_BASE/conf/server.xml` 파일을 Tomcat 번들에서 서버로 복사합니다. 그렇지 않으면 `$CATALINA_BASE/conf/server.xml` 파일을 열고 `redirectPort=8443`사용하는 HTTP 및 AJP 커넥터에 `URIEncoding="UTF-8"` 속성을 추가하십시오. 다음은 예입니다.
 
-    낡은:
+    오래된:
 
     ```xml
     <Connector port="8080" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8443" />
@@ -136,7 +140,7 @@ XML 파일 이름을 변경하여 기본 Liferay Portal 웹 컨텍스트를 변�
     <Connector port="8080" protocol="HTTP/1.1" connectionTimeout="20000" redirectPort="8443" URIEncoding="UTF-8" />
     ```
 
-    낡은:
+    오래된:
 
     ```xml
     <Connector port="8009" protocol="AJP/1.3" redirectPort="8443" />
@@ -183,7 +187,7 @@ XML 파일 이름을 변경하여 기본 Liferay Portal 웹 컨텍스트를 변�
     </init-param>
     ```
 
-6. `$CATALINA_HOME/conf/web.xml`에서 응용 프로그램 서버가 응용 프로그램의 JAR 및 클래스에 있는 주석과 같은 추가 메타데이터를 찾아야 하는지 여부를 지정합니다. `web-app` 요소의 속성 `metadata-complete="true"`를 설정하면 응용 프로그램 서버에 추가 메타데이터가 없음을 알립니다. 애플리케이션 서버는 이 설정으로 더 빠르게 시작됩니다. 기본값은 추가 메타데이터를 확인하는 것입니다.
+6. `$CATALINA_HOME/conf/web.xml`에서 애플리케이션 서버가 애플리케이션의 JAR 및 클래스에 있는 주석과 같은 추가 메타데이터를 찾아야 하는지 여부를 지정합니다. web-app</code> 요소의 속성 `<code>설정하면 metadata-complete="true"` 으로 애플리케이션 서버에 추가 메타데이터가 없음을 알립니다. 애플리케이션 서버는 이 설정으로 더 빠르게 시작됩니다. 기본값은 추가 메타데이터를 확인하는 것입니다.
 
 7. Unix, Linux 또는 Mac OS를 사용하는 경우 각 폴더에서 다음 명령을 실행하여 `$CATALINA_HOME/bin` 및 `$CATALINA_BASE/bin` 폴더의 셸 스크립트를 실행 가능하게 만듭니다.
 
@@ -209,10 +213,10 @@ DXP 7.3 및 이전 버전의 경우 다음 값을 `common.loader` 속성의 값 
 1. 사용 가능한 기본 메모리 및 메타스페이스 제한이 설정됩니다.
 1. `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 웹 애플리케이션 컨텍스트를 선언합니다.
 1. `$CATALINA_BASE/conf/server.xml` UTF-8 인코딩을 설정합니다.
-1. `$CATALINA_BASE/conf/server.xml` 는 호스트 액세스 로그를 쓰기 위한 값을 선언하지 않습니다. (**선택사항**)
+1. `$CATALINA_BASE/conf/server.xml` 호스트 액세스 로그를 쓰기 위한 값을 선언하지 않습니다. *(선택사항)*
 1. `$CATALINA_HOME/conf/logging.properties` 원하는 로그 수준을 설정합니다.
 1. `$CATALINA_HOME/conf/web.xml` 태그 핸들러 풀을 설정하고 Java 8을 JSP 컴파일러로 설정합니다.
-1. `$CATALINA_HOME/conf/web.xml` 는 애플리케이션 서버가 추가 메타데이터를 찾지 않도록 지정합니다. (**선택사항**)
+1. `$CATALINA_HOME/conf/web.xml` 애플리케이션 서버가 추가 메타데이터를 찾지 않도록 지정합니다. *(선택사항)*
 1. Tomcat의 `bin` 폴더에 있는 스크립트는 실행 가능합니다.
 1. `$CATALINA_BASE/conf/catalina.properties`의 `common.loader` 속성은 필수 JAR에 대한 Catalina 액세스 권한을 부여합니다.
 
@@ -220,7 +224,7 @@ DXP 7.3 및 이전 버전의 경우 다음 값을 `common.loader` 속성의 값 
 
 ## 데이터베이스 구성
 
-DXP에는 시연용으로 좋은 Hypersonic 데이터베이스가 내장되어 있지만 생산 **에서는 사용** 안 됩니다. 프로덕션의 경우 완전한 기능을 갖춘 지원되는 RDBMS를 사용하십시오. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md) 을 참조하십시오.
+DXP에는 시연용으로 적합하지만 **생산에 사용하면 안 되는** 내장 Hypersonic 데이터베이스가 포함되어 있습니다. 프로덕션의 경우 완전한 기능을 갖춘 지원되는 RDBMS를 사용하십시오. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md)을 참조하세요.
 
 Liferay DXP는 DXP의 내장 데이터 소스(권장)를 사용하거나 앱 서버에서 생성한 데이터 소스를 사용하여 데이터베이스에 연결할 수 있습니다.
 
@@ -234,7 +238,7 @@ Liferay DXP는 DXP의 내장 데이터 소스(권장)를 사용하거나 앱 서
 
 1. DXP WAR(7.4+) 또는 데이터베이스 공급업체에서 JDBC JAR을 가져와 `$TOMCAT_HOME/lib/ext` 폴더에 복사합니다.
 
-1. `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 를 열고 웹 애플리케이션 `컨텍스트`에서 데이터 소스를 `리소스` 로 추가합니다.
+1. `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 열고 웹 애플리케이션 `컨텍스트`에서 데이터 소스를 `리소스` 로 추가합니다.
 
     ```xml
     <Context...>
@@ -257,7 +261,7 @@ Liferay DXP는 DXP의 내장 데이터 소스(권장)를 사용하거나 앱 서
 
     데이터베이스 URL, 사용자 이름 및 암호를 적절한 값으로 바꾸십시오. Liferay는 기본적으로 데이터베이스 연결 풀에 [Hikari CP](https://liferay.dev/blogs/-/blogs/tomcat-hikaricp) 을 사용합니다.
 
-1. [**Liferay_Home**] 의 `portal-ext.properties` 파일에서 데이터 소스를 지정하십시오. 예를 들어,
+1. **[Liferay_Home]**의 `portal-ext.properties` 파일에서 데이터 소스를 지정하십시오. 예를 들어,
 
     ```properties
     jdbc.default.jndi.name=jdbc/LiferayPool
@@ -273,7 +277,7 @@ JNDI 연결을 사용하는 경우 [Tomcat에서 JNDI 설정을 참조하십시�
 
 Tomcat을 사용하여 메일 세션을 관리하려면 다음 단계를 따르십시오.
 
-1. `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 을 열고 웹 애플리케이션 `컨텍스트`에서 메일 세션을 `리소스` 로 정의합니다. 예제 메일 세션 값을 자신의 값으로 바꿉니다.
+1. `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 열고 웹 애플리케이션 `컨텍스트`에서 메일 세션을 `리소스` 로 정의합니다. 예제 메일 세션 값을 자신의 값으로 바꿉니다.
 
     ```xml
     <Context...>
@@ -309,17 +313,17 @@ Tomcat을 사용하여 메일 세션을 관리하려면 다음 단계를 따르�
 
 ## DXP 배포
 
-`$CATALINA_HOME/bin` 로 이동하고 `./startup.sh`를 실행하여 Tomcat을 시작합니다. 또는 `./catalina.sh run` 을 실행하여 DXP의 로그 파일을 추적합니다. 로그는 시작 활동을 감사하고 배포 디버깅에 유용합니다.
+`$CATALINA_HOME/bin` 로 이동하고 `./startup.sh`실행하여 Tomcat을 시작합니다. 또는 `./catalina.sh run` 을 실행하여 DXP의 로그 파일을 추적합니다. 로그는 시작 활동을 감사하고 배포 디버깅에 유용합니다.
 
 Liferay DXP Enterprise 구독이 있는 경우 DXP는 활성화 키를 요청합니다. 자세한 내용은 [Liferay DXP](../../setting-up-liferay/activating-liferay-dxp.md) 활성화를 참조하십시오.
 
-축하합니다! Tomcat에서 DXP를 실행하고 있습니다.
+축하해요! Tomcat에서 DXP를 실행하고 있습니다.
 
 ## 다음 단계
 
-관리자 사용자로 [로그인하고](../../../getting-started/introduction-to-the-admin-account.md) 에서 솔루션 구축을 시작할 수 있습니다. 또는 [개의 추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
+관리자 사용자로 [로그인](../../../getting-started/introduction-to-the-admin-account.md) DXP에서 솔루션 구축을 시작할 수 있습니다. 또는 [추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
 
-* [마켓플레이스 플러그인 설치](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
+* [마켓플레이스 플러그인 설치](../../../system-administration/installing-and-managing-apps/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [평가판 기간 동안 플러그인 액세스](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
 * [검색 엔진 설치](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 * [Liferay DXP 보안](../../securing-liferay.md)

@@ -15,7 +15,7 @@
 ## 스토어 설정
 
 ```{note}
-[Accelerator](../starting-a-store/accelerators.md)을 사용하여 매장 사이트를 만들 수 있습니다. 액셀러레이터를 사용하여 상점 사이트를 생성하면 이 섹션에서 언급된 많은 설정을 구성합니다. [Minium Accelerator를 사용하여 B2B 스토어 바로 시작](../starting-a-store/using-the-minium-accelerator- to-jump-start-your-b2b-store.md)를 참조하십시오.
+[Accelerator](../starting-a-store/accelerators.md)을 사용하여 매장 사이트를 만들 수 있습니다. 액셀러레이터를 사용하여 상점 사이트를 생성하면 이 섹션에서 언급된 많은 설정을 구성합니다. [Minium Accelerator를 사용하여 B2B 스토어 바로 시작](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)를 참조하십시오.
 ```
 
 초기 상점 설정은 [Admin 계정](./introduction-to-the-admin-account.md)로 수행됩니다. [Liferay Commerce 구성 개요](../store-management/liferay-commerce-configuration-overview.md) 을 읽고 Liferay Commerce 구성 레이아웃과 사용 가능한 옵션에 대해 더 잘 알아보십시오.
@@ -24,8 +24,8 @@
 
 Liferay Commerce의 글로벌 구성에는 상점 시간대 설정, 사용 가능한 언어, 지역 추가 및 지역별 측정 단위 등이 포함됩니다. 다음 문서에서 자세히 알아보세요.
 
-* [로캘 옵션 설정](../store-management/locale-options.md)
-* [지역 추가](../store-management/adding-regions.md)
+* [로케일 옵션 설정](../store-management/locale-options.md)
+* [지역 추가](../store-management/configuring-countries-and-regions.md#adding-regions)
 * [창고 설정](../inventory-management/warehouse-reference-guide.md)
 * [채널 생성](../store-management/channels/introduction-to-channels.md)
 
@@ -33,7 +33,7 @@ Liferay Commerce의 글로벌 구성에는 상점 시간대 설정, 사용 가�
 
 Liferay Commerce는 B2B, B2C 및 B2C-B2B 상점을 지원합니다. [사이트 유형](../starting-a-store/sites-and-site-types.md) 매장의 비즈니스 모델을 지정하고 매장이 계정과 함께 작동하는 방식을 결정합니다.
 
-Liferay Commerce는 Liferay DXP를 기반으로 합니다. Liferay DXP 사이트의 작동 방식에 대한 자세한 내용은 [사이트 구축](https://learn.liferay.com/dxp/latest/en/site-building/building-sites/adding-a-site.html) 참조하십시오.
+Liferay Commerce는 Liferay DXP를 기반으로 합니다. Liferay DXP 사이트의 작동 방식에 대한 자세한 내용은 [사이트 구축](https://learn.liferay.com/dxp/latest/en/site-building/building-sites/adding-a-site.html)참조하십시오.
 
 ### 상점 사이트 상거래 설정 구성
 
@@ -46,8 +46,8 @@ Liferay Commerce는 여러 제3자 결제 프로세서에 대한 지원을 제�
 * [결제](../store-management/configuring-payment-methods.md)
 * [결제 수단 관리](../store-management/configuring-payment-methods/managing-payment-methods.md)
 * [Authorize.net](../store-management/configuring-payment-methods/authorize-net.md)
-* [PayPal](../store-management/configuring-payment-methods/mercanet.md)
-* [Mercanet](../store-management/configuring-payment-methods/mercanet.md)
+* [페이팔](../store-management/configuring-payment-methods/mercanet.md)
+* [메르카넷](../store-management/configuring-payment-methods/mercanet.md)
 * [우편환](../store-management/configuring-payment-methods/mercanet.md)
 
 #### 해당 세금 징수
@@ -63,7 +63,7 @@ Liferay Commerce는 여러 제3자 결제 프로세서에 대한 지원을 제�
 Liferay Commerce에는 배송료를 계산하는 몇 가지 옵션이 있습니다. Commerce Enterprise 가입자는 즉시 FedEx 운송업체 통합을 받습니다.
 
 * [배송 방법](../store-management/configuring-shipping-methods.md)
-* [변동 환율](../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
+* [변동금리](../store-management/configuring-shipping-methods/using-the-variable-rate-shipping-method.md)
 * [고정 요금](../store-management/configuring-shipping-methods/using-the-flat-rate-shipping-method.md)
 * [FedEx를 운송업체로 사용](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md)
 
@@ -73,18 +73,18 @@ Liferay Commerce에는 배송료를 계산하는 몇 가지 옵션이 있습니�
 
 ### 카탈로그에 제품 추가
 
-제품을 추가할 때 **Simple** , **Grouped** , **Virtual** 의 세 가지 제품 유형이 있습니다. 자세한 내용은 [제품 유형 소개](../product-management/creating-and-managing-products/product-types.md) 참조하십시오.
+제품을 추가할 때 **Simple**, **Grouped**, **Virtual**의 세 가지 제품 유형이 있습니다. 자세한 내용은 [제품 유형 소개](../product-management/creating-and-managing-products/product-types.md) 참조하십시오.
 
 #### 제품 정보 추가
 
 Liferay Commerce Catalog는 다양한 제품 정보의 저장 및 관리를 지원합니다. 다음 문서에서는 사용 가능한 옵션 중 일부를 다룹니다.
 
-* [상품 옵션](../product-management/creating-and-managing-products/products/using-product-options.md)
-* [상품 상세](../product-management/creating-and-managing-products/products/specifications.md)
+* [제품 옵션](../product-management/creating-and-managing-products/products/using-product-options.md)
+* [제품 사양](../product-management/creating-and-managing-products/products/specifications.md)
 * [제품 이미지](../product-management/creating-and-managing-products/products/product-images.md)
-* [상품 관계](../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)
+* [제품 관계](../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)
 * [제품 분류](../product-management/creating-and-managing-products/products/organizing-your-catalog-with-product-categories.md)
-* [가용성 추정치](../inventory-management/availability-estimates.md)
+* [가용성 추정](../inventory-management/availability-estimates.md)
 * [재고 부족 조치](../inventory-management/low-stock-action.md)
 
 #### 제품 가격
@@ -92,7 +92,7 @@ Liferay Commerce Catalog는 다양한 제품 정보의 저장 및 관리를 지�
 제품 가격을 책정하는 방법에는 여러 가지가 있으며 이러한 방법은 기본 가격, 가격표, 계층 가격, 판촉 가격 및 할인과 같은 가격 책정 계층 구조에서 서로 관련되어 있습니다. 가격은 SKU별로 관리됩니다.
 
 * [가격](../pricing/introduction-to-pricing.md)
-* [가격 리스트](../pricing/creating-a-price-list.md)
+* [가격표](../pricing/creating-a-price-list.md)
 * [할인](../pricing/promoting-products/introduction-to-discounts.md)
 
 #### 재고 관리

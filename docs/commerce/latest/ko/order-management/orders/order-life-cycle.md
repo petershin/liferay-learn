@@ -1,3 +1,7 @@
+---
+uuid: 6802182a-3eaa-4f2a-b077-6a938299f497
+---
+
 # 주문 수명 주기
 
 주문은 잠재적 또는 과거 거래에 관한 데이터를 저장합니다. 이 문서에서는 열린 장바구니에서 [주문 처리](../shipments/introduction-to-shipments.md)까지의 주문 수명 주기에 대한 개요를 제공합니다.
@@ -16,7 +20,7 @@
 
 ### 2단계: 주문 완료
 
-판매자에게 정보를 제공하고 주문 요약을 본 후 구매자는 주문을 합니다. 주문 워크플로가 활성화된 경우 제출하기 전에 주문을 검토합니다. 주문이 처리되는 동안 구매자는 주문 상태를 추적하는 알림 [](../../store-management/sending-emails/store-emails.md) 를 받을 수 있습니다.
+판매자에게 정보를 제공하고 주문 요약을 본 후 구매자는 주문을 합니다. 주문 워크플로가 활성화된 경우 제출하기 전에 주문을 검토합니다. 주문이 처리되는 동안 구매자는 주문 상태를 추적하는 알림 [개](../../store-management/sending-emails.md) 를 받을 수 있습니다.
 
 ### 3단계: 주문 전송
 
@@ -32,4 +36,4 @@
 * [주문 처리](./processing-an-order.md)
 * [주문 메뉴](./orders-menu-reference-guide.md)
 * [선적 소개](../shipments/introduction-to-shipments.md)
-* [이메일 저장](../../store-management/sending-emails/store-emails.md)
+* [이메일 보내기](../../store-management/sending-emails.md)

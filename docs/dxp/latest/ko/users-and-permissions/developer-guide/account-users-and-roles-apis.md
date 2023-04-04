@@ -1,15 +1,18 @@
+---
+uuid: 108e2423-cc6f-4442-9797-f6ce5bcfdbd9
+---
+
 # 계정 사용자 및 역할 API
 
-애플리케이션 메뉴에서 [계정 사용자](../accounts/account-users.md) 및 [계정 역할](../accounts/account-roles.md) 을 관리할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 이러한 서비스를 호출하여 계정 사용자 및 역할을 만들고 관리합니다.
+애플리케이션 메뉴에서 [계정 사용자](../accounts/account-users.md) 및 [계정 역할](../accounts/account-roles.md) 관리할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 이러한 서비스를 호출하여 계정 사용자 및 역할을 만들고 관리합니다.
 
 ## 계정 사용자 추가
-
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+Then, follow these steps:
 
-1. [계정 API 기본 사항](./liferay-t5p9.zip) 을 다운로드하고 압축을 풉니다.
+1. Download and unzip [Accounts API Basics](./liferay-t5p9.zip).
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -78,7 +81,7 @@
         }     
     ```
 
-1. **글로벌 메뉴** &rarr; **애플리케이션** &rarr; **계정** 으로 이동합니다. 사용자를 만든 계정을 클릭합니다. **사용자** 탭을 클릭하고 생성된 새 사용자를 확인합니다.
+1. *글로벌 메뉴* &rarr; *애플리케이션* &rarr; *계정*으로 이동합니다. 사용자를 만든 계정을 클릭합니다. *사용자* 탭을 클릭하고 생성된 새 사용자를 확인합니다.
 
   ![새 계정 사용자가 추가되었는지 확인합니다.](./account-users-and-roles-apis/images/01.png)
 
@@ -88,7 +91,7 @@
     javac -classpath .:* *.java
     ```
 
-2. 다음 명령을 사용하여 `AccountUser_POST_ToAccount.java` 클래스를 실행합니다. `1234` 을 계정의 ID로 바꿉니다.
+2. 다음 명령을 사용하여 `AccountUser_POST_ToAccount.java` 클래스를 실행합니다. `1234` 계정의 ID로 바꿉니다.
 
    ```bash
    java -classpath .:* -DaccountId=1234 AccountUser_POST_ToAccount
@@ -132,7 +135,7 @@
 
 | 라인(약칭)                                                                           | 묘사                                                                      |
 |:-------------------------------------------------------------------------------- |:----------------------------------------------------------------------- |
-| `UserAccountResource.Builder builder = ...`                                      | `UserAccountResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.                   |
+| `UserAccountResource.Builder builder = ...`                                      | `UserAccountResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.                     |
 | `UserAccountResource userAccountResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `UserAccountResource` 서비스 인스턴스를 생성합니다.                      |
 | `UserAccount userAccount = userAccountResource.postAccountUserAccount(...);`     | `userAccountResource.postAccountUserAccount` 메서드를 호출하고 데이터를 게시물에 전달합니다. |
 
@@ -152,7 +155,7 @@
 
 ## 계정에서 계정 사용자 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 계정의 사용자를 나열할 수 있습니다. 위와 같이 `1234` 을 계정 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 계정의 사용자를 나열할 수 있습니다. 위와 같이 `1234` 계정 ID로 바꿉니다.
 
 ### AccountUsers_GET_FromAccount.sh
 
@@ -188,7 +191,7 @@ java -classpath .:* -DaccountId=1234 AccountUsers_GET_FromAccount
 
 ## 계정 역할 게시
 
-특정 계정에 대한 새 계정 역할을 생성합니다. `1234` 을 계정 ID로 바꾸십시오.
+특정 계정에 대한 새 계정 역할을 생성합니다. `1234` 계정 ID로 바꾸십시오.
 
 ### AccountRole_POST_ToAccount.sh
 
@@ -222,7 +225,7 @@ java -classpath .:* -DaccountId=1234 AccountRole_POST_ToAccount
 
 ## 사용자를 계정 역할에 연결
 
-사용자를 특정 계정 역할과 연결할 수 있습니다. `1234` 을 계정 ID로 바꿉니다. `5678` 을 계정 역할의 ID로 바꿉니다. `9012` 을 계정 사용자 ID로 바꿉니다.
+사용자를 특정 계정 역할과 연결할 수 있습니다. `1234` 계정 ID로 바꿉니다. `5678` 계정 역할의 ID로 바꿉니다. `9012` 계정 사용자 ID로 바꿉니다.
 
 ### AccountRole_POST_UserAssociation.sh
 
@@ -256,7 +259,7 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
 
 ## 계정에서 계정 역할 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 계정의 계정 역할을 나열할 수 있습니다. `1234` 을 계정 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 계정의 계정 역할을 나열할 수 있습니다. `1234` 계정 ID로 바꿉니다.
 
 ### AccountRoles_GET_FromAccount.sh
 
@@ -292,7 +295,7 @@ java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
 
 ## 계정 역할 사용자 연결 제거
 
-특정 계정 사용자에서 계정 역할 연결을 제거합니다. `1234` 을 계정 ID로 바꿉니다. `5678` 을 계정 역할의 ID로 바꿉니다. `9012` 을 계정 사용자 ID로 바꿉니다.
+특정 계정 사용자에서 계정 역할 연결을 제거합니다. `1234` 계정 ID로 바꿉니다. `5678` 계정 역할의 ID로 바꿉니다. `9012` 계정 사용자 ID로 바꿉니다.
 
 ### AccountRole_DELETE_UserAssociation.sh
 
@@ -324,4 +327,4 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
    :lines: 8-19
 ```
 
-[API 탐색기](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 은 `계정` 서비스 및 스키마를 모두 표시하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
+[API 탐색기](../../headless-delivery/consuming-apis/consuming-rest-services.md) `계정` 서비스 및 스키마를 모두 표시하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.

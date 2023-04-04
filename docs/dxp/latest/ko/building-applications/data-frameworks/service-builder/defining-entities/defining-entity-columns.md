@@ -1,6 +1,10 @@
+---
+uuid: 60e756cb-8c09-4781-9ed4-34720ab6c046
+---
+
 # 엔티티 열 정의
 
-엔터티의 열은 속성을 나타냅니다. 이러한 속성은 테이블 필드를 Java 개체 필드에 매핑합니다.
+엔터티의 열은 속성을 나타냅니다. 이러한 속성은 테이블 필드를 Java 객체 필드에 매핑합니다.
 
 여기에서는 열에 대한 자세한 내용을 알아보기 위해 [서비스 빌더 생성 클래스 이해](../service-builder-basics/understanding-service-builder-generated-classes.md) 의 샘플 프로젝트를 검토합니다.
 
@@ -29,7 +33,7 @@
 Service Builder가 실행될 때 개체 관계형 매핑을 처리하는 Hibernate 구성을 생성합니다. Service Builder는 `service.xml` 파일에 추가하는 각 열에 대한 데이터베이스 필드를 생성합니다. 각 열에 대해 지정된 Java 유형에 적합한 데이터베이스 필드 유형을 매핑하고 Liferay가 지원하는 모든 데이터베이스에서 이 작업을 수행합니다.  Service Builder는 또한 이러한 특성에 대한 모델 클래스에서 getter/setter 메서드를 생성합니다. 열의 `기본` (즉, 기본 키) 속성이 `true`으로 설정되면 해당 열이 엔티티의 기본 키가 됩니다. 이것은 [생성 클래스 이해 및 확장](../service-builder-basics/understanding-service-builder-generated-classes.md)에 있는 W9B7 애플리케이션의 경우입니다. `기본` 속성이 true로 설정된 여러 열을 정의하는 경우 열 조합이 엔터티에 대한 복합 기본 키를 구성합니다.
 
 ```{note}
-[추가 메서드 구현](../service-builder-basics/understanding-service-builder-generated-classes.md#adding-a-local-service-method) 은 엔터티 인스턴스에 대해 고유한 기본 키를 생성하는 방법을 보여줍니다.
+[추가 메서드 구현](../service-builder-basics/understanding-service-builder-generated-classes.md#adding-a-local-service-method)은 엔터티 인스턴스에 대해 고유한 기본 키를 생성하는 방법을 보여줍니다.
 ```
 
 ## 엔터티 열 만들기
@@ -62,7 +66,7 @@ Service Builder가 실행될 때 개체 관계형 매핑을 처리하는 Hiberna
 
 ## 워크플로우 필드
 
-엔티티의 진행 상황을 추적하는 데 필요한 필드를 추가하여 Liferay의 [워크플로우 시스템](https://learn.liferay.com/dxp/latest/en/process-automation/workflow/introduction-to-workflow.md) 을 지원할 수 있습니다.
+엔티티의 진행 상황을 추적하는 데 필요한 필드를 추가하여 Liferay의 [워크플로우 시스템](../../../../process-automation/workflow/introduction-to-workflow.md) 지원할 수 있습니다.
 
 ```xml
 <!-- Status fields -->
@@ -73,7 +77,7 @@ Service Builder가 실행될 때 개체 관계형 매핑을 처리하는 Hiberna
 <column name="statusDate" type="Date" />
 ```
 
-## 감사 엔티티
+## 엔티티 감사
 
 마지막으로 항목을 감사하는 데 도움이 되는 열을 추가할 수 있습니다. 각 엔터티 인스턴스의 소유자를 추적하려면 `long`유형의 `userId` 이라는 열을 추가합니다. 엔터티 인스턴스의 생성 날짜를 기록하기 위해 유형 `날짜` 의 `createDate` 이라는 열을 만듭니다. 엔터티 인스턴스가 마지막으로 수정된 시간을 추적하려면 유형 `날짜` 의 `modifiedDate` 이라는 열을 추가합니다.
 

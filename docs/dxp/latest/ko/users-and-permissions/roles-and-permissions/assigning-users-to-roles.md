@@ -1,10 +1,14 @@
+---
+uuid: 02aa1e2d-bde7-4e9f-b412-3fcc362928a8
+---
+
 # 역할에 사용자 할당
 
-Role의 할당 UI 사이트는 [Role의 범위](./understanding-roles-and-permissions.md#roles-and-scope) 에 해당합니다.
+Role의 할당 UI 위치는 [Role의 범위](./understanding-roles-and-permissions.md#roles-and-scope)에 해당합니다.
 
 ## 일정한 역할
 
-전역 범위의 일반 역할은 DXP [제어판](../../getting-started/navigating-dxp.md#control-panel) 에서 구성할 수 있습니다.
+전역 범위의 일반 역할은 DXP [제어판](../../getting-started/navigating-dxp.md#control-panel)에서 구성할 수 있습니다.
 
 | 권한 범위          | 사용 가능한 과제                                                                 |
 |:-------------- |:------------------------------------------------------------------------- |
@@ -18,7 +22,7 @@ Role의 할당 UI 사이트는 [Role의 범위](./understanding-roles-and-permis
 
 1. 추가 버튼 ![Add](../../images/icon-add.png)을 클릭합니다.
 
-1. 양수인을 선택하고 **추가** 을 클릭합니다.
+1. 양수인을 선택하고 *추가*클릭합니다.
 
    그룹을 할당하면 해당 그룹에 할당된 모든 사용자가 역할을 상속합니다.
 
@@ -38,14 +42,14 @@ Role의 할당 UI 사이트는 [Role의 범위](./understanding-roles-and-permis
 
 1. 작업 버튼 ![Add](../../images/icon-actions.png) &rarr; 역할 할당을 클릭합니다.
 
-1. 할당할 역할을 선택하고 **완료** 을 클릭합니다.
+1. 할당할 역할을 선택하고 *완료*클릭합니다.
 
    그룹을 할당하면 해당 그룹에 할당된 모든 사용자가 역할을 상속합니다.
 
 ![사이트 메뉴의 People &rarr; Memberships 섹션 내에서 사이트 역할을 할당합니다.](./assigning-users-to-roles/images/01.png)
 
 ```{note}
-Liferay CE 7.3.1 GA2 및 Liferay DXP 7.2 SP3+부터 사이트 역할을 [사용자 세그먼트](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md). 자세한 내용은 [사용자 세그먼트에 역할 할당](./assigning-roles-to-user-segments.md)을 참조하십시오.
+Liferay CE 7.3.1 GA2 및 Liferay DXP 7.2 SP3+부터 사이트 역할을 [사용자 세그먼트](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user -세그먼트.md). 자세한 내용은 [사용자 세그먼트에 역할 할당](./assigning-roles-to-user-segments.md)을 참조하십시오.
 ```
 
 ## 조직 역할
@@ -56,15 +60,15 @@ Liferay CE 7.3.1 GA2 및 Liferay DXP 7.2 SP3+부터 사이트 역할을 [사용�
 |:----- |:--------- |
 | 단일 조직 | 개인 사용자    |
 
-1. 제어판 &rarr; 사용자 &rarr; 사용자 및 조직으로 이동하여 **조직** 탭을 클릭합니다.
+1. 제어판 &rarr; 사용자 &rarr; 사용자 및 조직으로 이동하여 _조직_ 탭을 클릭합니다.
 
-1. 조직에 대한 작업 버튼 ![Add](../../images/icon-actions.png) 을 클릭하고 **조직 역할 할당** 을 선택합니다.
+1. 조직에 대한 작업 버튼 ![Add](../../images/icon-actions.png) 클릭하고 _조직 역할 할당_선택합니다.
 
 1. 할당할 역할을 선택하면 현재 담당자 목록이 표시됩니다.
 
-1. 새 할당자를 추가하려면 **사용 가능** 탭을 클릭하여 역할에 할당할 수 있는 조직 구성원을 확인합니다.
+1. 새 할당자를 추가하려면 _사용 가능_ 탭을 클릭하여 역할에 할당할 수 있는 조직 구성원을 확인합니다.
 
-1. 양수인을 선택한 다음 **Update Associations** 을 클릭합니다.
+1. 양수인을 선택한 다음 _Update Associations_클릭합니다.
 
 ![제어판의 조직 섹션에서 조직 역할을 할당합니다.](./assigning-users-to-roles/images/02.png)
 
@@ -82,7 +86,7 @@ Liferay CE 7.3.1 GA2 및 Liferay DXP 7.2 SP3+부터 사이트 역할을 [사용�
 
 1. 작업 버튼 ![Add](../../images/icon-actions.png) &rarr; 역할 할당을 클릭합니다.
 
-1. 할당할 역할을 선택하고 **완료** 을 클릭합니다.
+1. 할당할 역할을 선택하고 *완료*클릭합니다.
 
    그룹을 할당하면 해당 그룹에 할당된 모든 사용자가 역할을 상속합니다.
 
@@ -123,11 +127,11 @@ You can assign Users to an Account Role in the Accounts Control Panel section.
 
 1. PLATFORM 섹션에서 사용자 범주를 선택합니다.
 
-1. 왼쪽 메뉴에서 **기본 사용자 연결** 을 클릭합니다.
+1. 왼쪽 메뉴에서 _기본 사용자 연결_ 클릭합니다.
 
 1. 일반 역할 구성 필드를 사용하여 모든 새 사용자가 상속해야 하는 일반 역할 목록을 쉼표로 구분하여 입력합니다.
 
-자세한 내용은 [기본 사용자 연결](../../system-administration/virtual-instances/users.md#default-user-associations) 설명서를 참조하십시오.
+자세한 내용은 [기본 사용자 연결](../../system-administration/configuring-liferay/virtual-instances/users.md#default-user-associations) 설명서를 참조하십시오.
 
 ![인스턴스 설정을 사용하여 모든 새 사용자에 대한 기본 일반 역할을 설정합니다.](./assigning-users-to-roles/images/06.png)
 

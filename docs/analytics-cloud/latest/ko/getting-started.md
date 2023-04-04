@@ -1,16 +1,16 @@
 ---
 toc:
-- ./getting-started/connecting-liferay-dxp-to-analytics-cloud.md
-- ./getting-started/syncing-sites-and-contacts.md
-- ./getting-started/viewing-the-analytics-dashboard.md
+  - ./getting-started/connecting-liferay-dxp-to-analytics-cloud.md
+  - ./getting-started/viewing-the-analytics-dashboard.md
+uuid: 04d50515-b7e9-43d4-83d7-fff078917d16
 ---
+
 # 시작하기
 
 ```{toctree}
 :maxdepth: 3
 
 getting-started/connecting-liferay-dxp-to-analytics-cloud.md
-getting-started/syncing-sites-and-contacts.md
 getting-started/viewing-the-analytics-dashboard.md
 ```
 
@@ -22,11 +22,11 @@ Liferay Analytics Cloud를 사용하여 누가 귀하의 사이트를 방문하�
 
 다음은 Liferay DXP와 함께 Analytics Cloud를 사용하는 몇 가지 사용 사례입니다.
 
-| Liferay DXP 사용 사례 | Analytics Cloud 예제 애플리케이션                                                    |
-|:----------------- |:---------------------------------------------------------------------------- |
-| 고객 포털 구축          | 고객이 어떤 유형의 고객 지원 또는 기술 자료 콘텐츠를 제공해야 하는지 알아보기 위해 고객이 검색하는 기사 및 문서에 대해 알아보십시오. |
-| 상거래 사이트 구축        | 향후 프로모션 또는 교차 판매를 위해 고객이 보고 있는 제품 보기                                         |
-| 직원을 위한 회사 인트라넷 구축 | 개별 직원 및 부서에 중요한 콘텐츠를 식별하고 제공하여 인트라넷을 셀프 서비스 포털로 변환                           |
+| Liferay DXP 사용 사례 | Analytics Cloud 예제 애플리케이션                                          |
+|:----------------- |:------------------------------------------------------------------ |
+| 고객 포털 구축          | 가장 많이 검색된 기사 및 문서를 알아보고 어떤 유형의 고객 지원 또는 기술 자료 콘텐츠를 제공해야 하는지 파악하세요. |
+| 상거래 사이트 구축        | 향후 판촉 또는 교차 판매를 위해 가장 인기 있는 제품 보기                                  |
+| 직원을 위한 회사 인트라넷 구축 | 인트라넷을 셀프 서비스 포털로 변환하기 위해 가장 중요한 직원 및 부서 콘텐츠를 식별하고 제공합니다.           |
 
 데이터의 조감도 또는 기본 수준 보기를 원하든 관계없이 Analytics Cloud가 지원해 드립니다.
 
@@ -36,24 +36,24 @@ Liferay Analytics Cloud를 사용하여 누가 귀하의 사이트를 방문하�
 
 ![사이트 전체 보고서는 사이트 분석에 대한 조감도를 제공합니다.](./getting-started/images/01.png)
 
-Analytics Cloud는 다음과 같은 사이트 전체 항목을 보여줍니다.
+Analytics Cloud는 다음과 같은 사이트 전체 통계를 보여줍니다.
 
 * 시간 경과에 따라 사이트를 방문하는 개인 수
 * 가장 많이 본 페이지 목록
-* 트래픽이 발생하는 사이트에 대한 요약
+* 트래픽이 발생하는 위치에 대한 요약
 * 인기 검색어 및 인기 관심 주제
-* 방문자 사이트 및 기기/브라우저 유형
+* 방문자 위치 및 기기/브라우저 유형
 * 코호트 분석(전날 방문자의 몇 퍼센트가 재방문했는지 보여주는 표)
 
-기본 수준 보기를 위해 Analytics Cloud는 사이트의 다양한 부분에 대한 자세한 통계를 제공합니다. 물론 페이지를 방문하는 개인의 수와 페이지를 보는 데 소요되는 시간을 확인할 수 있지만 Analytics Cloud는 그 이상입니다. 사람들이 웹 검색, 광고, 이메일 링크 등을 통해 귀하의 페이지를 찾는 방법을 알아보세요. 이는 광고를 구매했으며 마케팅 활동이 효과가 있는지 알고 싶은 경우에 특히 유용합니다.
+기본 수준 보기에서 Analytics Cloud는 사이트의 다양한 부분에 대한 자세한 통계를 제공합니다. 물론 얼마나 많은 개인이 귀하의 페이지를 방문하고 얼마나 오래 머무는지 알 수 있지만 Analytics Cloud는 그 이상입니다. 사람들이 웹 검색, 광고, 이메일 링크 등을 통해 귀하의 페이지를 찾는 방법을 알아보세요. 이는 광고를 구매하고 마케팅 활동이 효과가 있는지 알고 싶은 경우에 특히 유용합니다.
 
 ![페이지 보고서는 특정 페이지에 대한 통계를 제공합니다.](./getting-started/images/02.png)
 
-Analytics Cloud는 다음 세부 정보를 보여줍니다.
+Analytics Cloud는 다음 세부 정보를 표시합니다.
 
 * 시간 경과에 따라 페이지를 방문하는 개인의 수
 * 알려진 방문자의 비율(예: 연락처 정보 동기화) 및 세그먼트에 속하는 경우
-* 방문자 사이트 및 기기/브라우저 유형
+* 방문자 위치 및 기기/브라우저 유형
 
 기본 수준 보기에는 블로그 항목, 문서 또는 양식과 같은 콘텐츠에 대한 자세한 분석도 포함됩니다.
 

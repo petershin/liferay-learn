@@ -1,18 +1,20 @@
 ---
 toc:
-- ./clay-tag-library/clay-alerts.md
-- ./clay-tag-library/clay-badges.md
-- ./clay-tag-library/clay-buttons.md
-- ./clay-tag-library/clay-cards.md
-- ./clay-tag-library/clay-dropdown-and-action-menus.md
-- ./clay-tag-library/clay-form-elements.md
-- ./clay-tag-library/clay-icons.md
-- ./clay-tag-library/clay-links-and-labels.md
-- ./clay-tag-library/clay-management-toolbar.md
-- ./clay-tag-library/clay-navigation-bars.md
-- ./clay-tag-library/clay-progress-bars.md
-- ./clay-tag-library/clay-stickers.md
+  - ./clay-tag-library/clay-alerts.md
+  - ./clay-tag-library/clay-badges.md
+  - ./clay-tag-library/clay-buttons.md
+  - ./clay-tag-library/clay-cards.md
+  - ./clay-tag-library/clay-dropdown-and-action-menus.md
+  - ./clay-tag-library/clay-form-elements.md
+  - ./clay-tag-library/clay-icons.md
+  - ./clay-tag-library/clay-links-and-labels.md
+  - ./clay-tag-library/clay-management-toolbar.md
+  - ./clay-tag-library/clay-navigation-bars.md
+  - ./clay-tag-library/clay-progress-bars.md
+  - ./clay-tag-library/clay-stickers.md
+uuid: 86e12690-c1b4-4cc9-963f-121244fa81a1
 ---
+
 # 클레이 태그 라이브러리
 
 ```{toctree}
@@ -49,7 +51,7 @@ Liferay Clay taglib는 FreeMarker 테마 템플릿 및 웹 콘텐츠 템플릿�
 <@clay["tag-name"] attribute="string value" attribute=10 />
 ```
 
-Clay taglibs는 앱에 다음과 같은 UI 구성요소를 제공합니다.
+Clay taglibs는 앱에 다음과 같은 UI 구성 요소를 제공합니다.
 
 * [알림](clay-tag-library/clay-alerts.md)
 * [배지](clay-tag-library/clay-badges.md)

@@ -1,12 +1,16 @@
+---
+uuid: b9b38050-9b86-42e1-862b-11ddbeae8c04
+---
+
 # WildFly에 설치
 
-WildFly에 설치하려면 DXP WAR 설치, 종속성 설치, WildFly 구성 및 WildFly에 DXP 배포가 필요합니다. 데이터베이스와 메일 서버 연결도 구성해야 합니다.
+WildFly에 설치하려면 DXP WAR 설치, 종속성 설치, WildFly 구성 및 WildFly에 DXP 배포가 필요합니다. 데이터베이스 및 메일 서버 연결도 구성해야 합니다.
 
 ## 전제 조건
 
-Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. 자세한 내용은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오.
+Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. 자세한 내용은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.
 
-[도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community) 에서 이 파일을 다운로드하십시오. 관리자는 다음을 다운로드해야 합니다.
+[도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community)에서 이 파일을 다운로드하십시오. 관리자는 다음을 다운로드해야 합니다.
 
 * DXP 전쟁 파일
 * OSGi 종속성 ZIP 파일
@@ -20,15 +24,15 @@ Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. 자세한 내용은 [
 
 ## DXP WAR 설치
 
-1. 깨끗한 Wildfly 설치로 시작하고 `$WILDFLY_HOME/standalone/deployments/ROOT.war` 폴더가 있는 경우 해당 하위 폴더와 파일을 모두 삭제합니다.
+1. 깨끗한 Wildfly 설치로 시작하고 `$WILDFLY_HOME/standalone/deployments/ROOT.war` 폴더가 존재하는 경우 해당 하위 폴더와 파일을 모두 삭제합니다.
 1. DXP WAR 파일을 `$WILDFLY_HOME/standalone/deployments/ROOT.war` 폴더에 압축 해제합니다(폴더가 없으면 생성).
 
 ## 종속성 설치
 
 1. OSGi 종속성 ZIP 파일을 `[Liferay Home]/osgi` 폴더에 압축 해제합니다(이 폴더가 없으면 생성). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
-1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 데이터베이스 공급업체의 JDBC JAR 파일을 다운로드하여 `$WILDFLY_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container에 배치합니다. -lib` 폴더.
+1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 WAR에는 해당 드라이버가 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스에 대한 드라이버가 없는 경우 데이터베이스 공급업체의 JDBC JAR 파일을 다운로드하여 `$WILDFLY_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib` 폴더에 넣으세요.
 
-    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 을 참조하십시오.
+    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.
 
 ```{note}
 Hypersonic 데이터베이스는 DXP와 함께 번들로 제공되며 테스트 목적으로 유용합니다. 프로덕션 DXP 인스턴스에 HSQL을 사용하지 마십시오.
@@ -60,7 +64,7 @@ DXP 7.3 및 이전 버전의 경우 다음 추가 단계를 따르십시오.
     </module>
     ```
 
-    `[여기에 데이터베이스 공급업체의 JAR 파일 이름 입력]` 을 데이터베이스용 드라이버 JAR로 바꿉니다.
+    `[여기에 데이터베이스 공급업체의 JAR 파일 이름 입력]` 데이터베이스용 드라이버 JAR로 바꿉니다.
 
     종속성 ZIP의 각 JAR에 대해 `경로` 특성이 JAR 이름으로 설정된 `리소스 루트` 요소를 추가합니다. 예를 들어 `com.liferay.petra.concurrent.jar` 파일에 대해 다음과 같이 `resource-root` 요소를 추가합니다.
 
@@ -72,13 +76,13 @@ DXP 7.3 및 이전 버전의 경우 다음 추가 단계를 따르십시오.
 
 1. OSGi 종속성은 `[Liferay Home]/osgi` 폴더에 압축 해제되었습니다.
 1. 데이터베이스 공급업체의 JDBC 드라이버가 설치되어 있습니다.
-1. `module.xml` 은 `<resource-root>` 요소의 모든 JAR을 나열했습니다.
+1. `module.xml` `<resource-root>` 요소의 모든 JAR을 나열했습니다.
 
 ## 독립 실행형 모드와 도메인 모드의 WildFly에서 DXP 실행
 
-WildFly는 **독립형** 모드 또는 **도메인** 모드에서 시작할 수 있습니다. 도메인 모드를 사용하면 단일 제어 지점에서 여러 애플리케이션 서버 인스턴스를 관리할 수 있습니다. 이러한 애플리케이션 서버의 콜렉션을 **도메인** 이라고 합니다. 독립 실행형 모드와 도메인 모드에 대한 자세한 내용은 [WildFly 관리 가이드](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes) 에서 이 주제에 대한 섹션을 참조하십시오. DXP는 독립 실행형 모드에서 WildFly를 완벽하게 지원하지만 도메인 모드에서는 지원하지 않습니다.
+WildFly는 *독립형* 모드 또는 *도메인* 모드에서 시작할 수 있습니다. 도메인 모드를 사용하면 단일 제어 지점에서 여러 애플리케이션 서버 인스턴스를 관리할 수 있습니다. 이러한 애플리케이션 서버의 콜렉션을 *도메인*이라고 합니다. 독립 실행형 모드와 도메인 모드에 대한 자세한 내용은 [WildFly 관리 가이드](https://docs.wildfly.org/23/Admin_Guide.html)에서 이 주제에 대한 섹션을 참조하십시오. DXP는 독립 실행형 모드에서 WildFly를 완벽하게 지원하지만 도메인 모드에서는 지원하지 않습니다.
 
-DXP는 독립형 모드에서 실행될 때 WildFly를 지원하지만 도메인 모드에서 실행될 때는 지원하지 않습니다. DXP의 자동 배포는 관리형 배포에서 작동하지 않습니다. WildFly가 파일(폭발 또는 비폭발)을 복사하여 관리형 배포의 콘텐츠를 관리하기 때문입니다. 이렇게 하면 JSP 후크 및 Ext 플러그인이 의도한 대로 작동하지 않습니다. 예를 들어 JSP 후크는 DXP의 JSP 재정의 메커니즘이 애플리케이션 서버에 의존하기 때문에 관리되는 도메인 모드에서 실행되는 WildFly에서 작동하지 않습니다. 그러나 JSP 후크 및 Ext 플러그인은 더 이상 사용되지 않으므로 사용하지 않을 수 있습니다.
+DXP는 WildFly가 독립 실행형 모드에서 실행될 때 지원하지만 도메인 모드에서 실행될 때는 지원하지 않습니다. DXP의 자동 배포는 관리형 배포에서 작동하지 않습니다. WildFly가 파일(폭발 또는 비폭발)을 복사하여 관리형 배포의 콘텐츠를 관리하기 때문입니다. 이렇게 하면 JSP 후크 및 Ext 플러그인이 의도한 대로 작동하지 않습니다. 예를 들어 JSP 후크는 DXP의 JSP 재정의 메커니즘이 애플리케이션 서버에 의존하기 때문에 관리되는 도메인 모드에서 실행되는 WildFly에서 작동하지 않습니다. 그러나 JSP 후크 및 Ext 플러그인은 더 이상 사용되지 않으므로 사용하지 않을 수 있습니다.
 
 도메인 모드 배포를 사용하는 경우 명령줄 인터페이스를 사용합니다.
 
@@ -153,7 +157,7 @@ DXP를 실행하도록 WildFly를 구성하면 다음이 포함됩니다.
 
 1. 새로운 `<system-property>` 가 추가됩니다.
 1. 새로운 `<filter-spec>` 가 추가됩니다.
-1. `<deployment-timeout>` 는 `600`로 설정됩니다.
+1. `<deployment-timeout>` `600`로 설정됩니다.
 1. 새로운 `<security-domain>` 가 생성됩니다.
 1. 시작 콘텐츠가 비활성화되었습니다.
 
@@ -167,7 +171,7 @@ DXP를 실행하도록 WildFly를 구성하면 다음이 포함됩니다.
 * 사용 가능한 기본 메모리 양을 늘립니다.
 
 ```{important}
-DXP는 애플리케이션 서버 JVM이 'GMT' 표준 시간대와 'UTF-8' 파일 인코딩을 사용하도록 요구합니다.
+DXP는 애플리케이션 서버 JVM이 'GMT' 시간대와 'UTF-8' 파일 인코딩을 사용하도록 요구합니다.
 ```
 
 `standalone.conf` 스크립트를 다음과 같이 편집합니다.
@@ -194,13 +198,13 @@ Java 옵션 및 메모리 인수는 아래에 설명되어 있습니다.
 
 **JVM 옵션 설명**
 
-| 옵션                                        | 설명                                                                                                     |
-|:----------------------------------------- |:------------------------------------------------------------------------------------------------------ |
-| `-Dfile.encoding=UTF-8`                   | DXP에는 UTF-8 파일 인코딩이 필요합니다.                                                                             |
-| `-Djava.locale.providers=JRE,COMPAT,CLDR` | 이것은 JDK 11에서 4자리 날짜를 표시하는 데 필요합니다.                                                                     |
-| `-Djava.net.preferIPv4Stack=true`         | IPv6보다 IPv4 스택을 선호합니다.                                                                                 |
-| `-Dlog4j2.formatMsgNoLookups=true`        | RCE(원격 코드 실행) 취약성을 해결합니다. 자세한 내용은 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) 을 참조하십시오. |
-| `-Duser.timezone=GMT`                     | DXP는 GMT 시간대를 사용하기 위해 애플리케이션 서버 JVM이 필요합니다.                                                            |
+| 옵션                                        | 설명                                                                                                   |
+|:----------------------------------------- |:---------------------------------------------------------------------------------------------------- |
+| `-Dfile.encoding=UTF-8`                   | DXP에는 UTF-8 파일 인코딩이 필요합니다.                                                                           |
+| `-Djava.locale.providers=JRE,COMPAT,CLDR` | 이것은 JDK 11에서 4자리 날짜를 표시하는 데 필요합니다.                                                                   |
+| `-Djava.net.preferIPv4Stack=true`         | IPv6보다 IPv4 스택을 선호합니다.                                                                               |
+| `-Dlog4j2.formatMsgNoLookups=true`        | RCE(원격 코드 실행) 취약성을 해결합니다. 자세한 내용은 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) 참조하십시오. |
+| `-Duser.timezone=GMT`                     | DXP는 GMT 시간대를 사용하기 위해 애플리케이션 서버 JVM이 필요합니다.                                                          |
 
 **메모리 인수 설명**
 
@@ -215,7 +219,7 @@ Java 옵션 및 메모리 인수는 아래에 설명되어 있습니다.
 | `-XX:SurvivorRatio`    | 서바이벌 공간에 대한 새 공간의 비율입니다. 생존자 공간은 구세대 공간으로 승격되기 전에 젊은 세대 개체를 보유합니다.       |
 
 ```{note}
-DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Liferay 튜닝](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
+DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Tuning Liferay](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
 ```
 
 **검문소:**
@@ -247,7 +251,7 @@ WildFly 서버와 함께 IBM JDK를 사용하는 경우 다음 추가 단계를 
 
 ## Liferay의 데이터 소스 구성
 
-DXP에는 시연용으로 좋은 Hypersonic 데이터베이스가 내장되어 있지만 생산 **에서는 사용** 안 됩니다. 프로덕션의 경우 완전한 기능을 갖춘 지원되는 RDBMS를 사용하십시오. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md) 을 참조하십시오.
+DXP에는 데모 용도로는 좋지만 **프로덕션 환경에서는 사용해서는 안 되는** Hypersonic 데이터베이스가 내장되어 있습니다. 프로덕션 환경에서는 모든 기능이 지원되는 RDBMS를 사용하세요. 데이터베이스를 설정하려면 [데이터베이스 구성](../configuring-a-database.md)을 참조하세요.
 
 Liferay DXP는 DXP의 내장 데이터 소스(권장)를 사용하거나 앱 서버에서 생성한 데이터 소스를 사용하여 데이터베이스에 연결할 수 있습니다.
 
@@ -339,11 +343,11 @@ WildFly를 사용하여 데이터 소스를 관리하는 경우 다음 단계를
 
 ## 메일 서버에 연결
 
-데이터베이스 구성과 마찬가지로 메일을 구성하는 가장 쉬운 방법은 DXP가 메일 세션을 처리하도록 하는 것입니다. DXP의 내장 메일 세션을 사용하려면 이 섹션을 건너뛰고 [제어판에서 메일 세션을 구성](../../setting-up-liferay/configuring-mail.md).
+데이터베이스 구성과 마찬가지로 메일을 구성하는 가장 쉬운 방법은 DXP가 메일 세션을 처리하도록 하는 것입니다. DXP의 내장 메일 세션을 사용하려면 이 섹션을 건너뛰고 제어판에서 [메일 세션을 구성](../../setting-up-liferay/configuring-mail.md)하십시오.
 
 WildFly로 메일 세션을 관리하려면 다음 단계를 따르세요.
 
-1. 다음과 같이 `$WILDFLY_HOME/standalone/configuration/standalone.xml` 파일에서 메일 하위 시스템을 지정합니다.
+1. 다음과 같이 `$WILDFLY_HOME/standalone/configuration/standalone.xml` 파일에서 메일 하위 시스템을 지정합니다. 
 
     ```xml
     <subsystem xmlns="urn:jboss:domain:mail:3.0">
@@ -360,7 +364,8 @@ WildFly로 메일 세션을 관리하려면 다음 단계를 따르세요.
     </socket-binding-group>
     ```
 
-1. Liferay Home의 [`portal-ext.properties`](../../reference/portal-properties.md) 파일에서 메일 세션을 참조하십시오. 예를 들어,
+
+1. Liferay Home의 [`portal-ext.properties`](../../reference/portal-properties.md) 파일에서 메일 세션을 참조하십시오. 예를 들어, 
 
     ```properties
     mail.session.jndi.name=java:jboss/mail/MailSession
@@ -385,13 +390,13 @@ current AST contains: [ES3 keywords as identifiers, getters, reserved words as p
 
 Liferay DXP Enterprise 구독이 있는 경우 DXP는 활성화 키를 요청합니다. 자세한 내용은 [Liferay DXP](../../setting-up-liferay/activating-liferay-dxp.md) 활성화를 참조하십시오.
 
-축하합니다! WildFly에서 DXP를 실행하고 있습니다.
+축하해요! WildFly에서 DXP를 실행하고 있습니다.
 
 ## 다음 단계
 
-[관리자 사용자로 로그인하고](../../../getting-started/introduction-to-the-admin-account.md) \[DXP에서 솔루션 구축\](../../../building_solutions_on_dxp.html. 또는 [개의 추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
+[관리자 사용자](../../../getting-started/introduction-to-the-admin-account.md) 로 로그인하고 DXP에서 솔루션 구축을 시작할 수 있습니다. 또는 [추가 Liferay DXP 설정](../../setting-up-liferay.md) 항목을 탐색할 수 있습니다.
 
-* [마켓플레이스 플러그인 설치](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
+* [마켓플레이스 플러그인 설치](../../../system-administration/installing-and-managing-apps/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [평가판 기간 동안 플러그인 액세스](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
 * [검색 엔진 설치](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 * [Liferay DXP 보안](../../securing-liferay.md)

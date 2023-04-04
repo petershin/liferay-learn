@@ -1,7 +1,7 @@
 
 # 워크플로 정의 노드 참조
 
-**노드** 요소와 해당 하위 요소는 워크플로 정의를 구성하는 기본 빌딩 블록입니다. 노드는 종종 검토 프로세스의 실제 단계를 반영합니다. 다양한 유형의 노드와 사용 방법을 설명하는 가이드입니다.
+_노드_ 요소와 해당 하위 요소는 워크플로 정의를 구성하는 기본 빌딩 블록입니다. 노드는 종종 검토 프로세스의 실제 단계를 반영합니다. 다양한 유형의 노드와 사용 방법을 설명하는 가이드입니다.
 
 * [상태 노드](#state-nodes)
 * [조건 노드](#conditions)
@@ -46,7 +46,7 @@
 
 ## 조건
 
-**조건 노드** 은 조건이 충족되는지 여부를 결정하고 충족되면 워크플로를 적절한 노드로 전환합니다. 예를 들어, 제출된 문서가 계약서인 경우 법무팀으로 보내야 합니다. 그렇지 않으면 마케팅 팀으로 이동합니다.
+_조건 노드_ 은 조건이 충족되는지 여부를 결정하고 충족되면 워크플로를 적절한 노드로 전환합니다. 예를 들어, 제출된 문서가 계약서인 경우 법무팀으로 보내야 합니다. 그렇지 않으면 마케팅 팀으로 이동합니다.
 
 다음은 [범주별 승인](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/category-specific-workflow-definition.xml) 워크플로우 정의의 `결정 분기` 조건입니다.
 
@@ -110,9 +110,9 @@
 </condition>
 ```
 
-이 예에서는 자산 범주를 확인하여 **Legal Review** 작업 또는 **Content Review** 작업으로 전환할지 여부를 선택합니다.
+이 예에서는 자산 범주를 확인하여 _Legal Review_ 작업 또는 _Content Review_ 작업으로 전환할지 여부를 선택합니다.
 
-`returnValue` 변수는 조건에서 전환을 가리키며 해당 값은 유효한 전환 이름[^1]와 일치해야 합니다. 이 스크립트는 문제의 자산을 조회하고 자산 범주를 검색하며 초기 `returnValue`설정합니다. 그런 다음 자산이 **법적** 범주로 표시되었는지 확인합니다. 그렇지 않은 경우 **콘텐츠 검토**(워크플로의 콘텐츠 검토 작업)을 거치고, 있는 경우 **법적 검토**(워크플로의 법적 검토 작업)을 거칩니다.
+`returnValue` 변수는 조건에서 전환을 가리키며 해당 값은 유효한 전환 이름[^1]와 일치해야 합니다. 이 스크립트는 문제의 자산을 조회하고 자산 범주를 검색하며 초기 `returnValue`설정합니다. 그런 다음 자산이 _법적_ 범주로 표시되었는지 확인합니다. 그렇지 않은 경우 _콘텐츠 검토_ (워크플로의 콘텐츠 검토 작업)을 거치고, 있는 경우 _법적 검토_ (워크플로의 법적 검토 작업)을 거칩니다.
 
 
 ## 분기 및 조인
@@ -164,7 +164,7 @@
 </join-xor>
 ```
 
-## 작업 노드
+## 태스크 노드
 
 [작업 노드](./workflow-task-node-reference.md) 은 워크플로 정의의 핵심입니다. 누군가가 어떤 식으로든 자산과 상호 작용하는 부분입니다. 작업에는 알림, 할당 및 작업 타이머를 비롯한 하위 요소도 있을 수 있습니다.
 
@@ -229,6 +229,6 @@
 
 * [XML 워크플로 정의 만들기](./crafting-xml-workflow-definitions.md)
 * [워크플로 작업 노드 참조](./workflow-task-node-reference.md)
-* [워크플로 알림 템플릿 변수](../../developer-guide/workflow-notification-template-variables.md)
+* [워크플로 알림 템플릿 변수](./workflow-notification-template-variables.md)
 
 [^1]: Liferay Portal의 경우 유효한 전환 이름은 XML 파일 또는 Process Builder의 소스 보기에 입력된 전환의 `<name>` 요소 값입니다. Liferay DXP의 경우 Process Builder에서 정의 소스를 볼 때 전환의 `<id>` 요소에 지정된 전환 ID 값을 대신 사용해야 합니다.

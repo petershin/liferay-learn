@@ -5,7 +5,7 @@
 
 ![위젯의 구성 메뉴에 있는 공유 탭은 다양한 방법으로 위젯을 공유할 수 있습니다.](./sharing-widgets-with-other-sites/images/01.png)
 
-1. 위젯의 **옵션** 아이콘(![Options](../../../../images/icon-app-options.png)) &rarr; **구성** &rarr; **공유** 클릭합니다.
+1. 위젯의 *옵션* 아이콘(![Options](../../../../images/icon-app-options.png)) &rarr; *구성* &rarr; *공유*클릭합니다.
 
 1. 공유 아래에는 Facebook, OpenSocial Gadget 및 Netvibes의 세 가지 하위 탭이 있습니다. 선택한 컨텍스트에 따라 진행합니다.
 
@@ -19,15 +19,15 @@
 
 1. 공유에서 Facebook 탭으로 이동합니다.
 
-1. **API 키 검색** <!--\[ include link -\]()--> 및 **캔버스 페이지 URL** <!--\[ include link -\]()--> 페이스북에서. 공유 탭에 복사하여 붙여넣으십시오.
+1. *API 키 검색*<!--\[ include link -\]()-->및 *캔버스 페이지 URL*<!--\[ include link -\]()-->페이스북에서. 공유 탭에 복사하여 붙여넣으십시오.
 
     ![위젯의 구성 메뉴에 있는 공유 탭은 다양한 방법으로 위젯을 공유할 수 있습니다.](./sharing-widgets-with-other-sites/images/02.png)
 
-1. **저장** 클릭하고 Liferay DXP의 Facebook 탭으로 돌아갑니다. **콜백 URL** 이 제공되며 Facebook에 복사하여 붙여넣을 수 있습니다. Facebook에서 앱을 열 때 애플리케이션을 렌더링하는 데 올바른 콜백 URL이 사용됩니다.
+1. *저장* 클릭하고 Liferay DXP의 Facebook 탭으로 돌아갑니다. *콜백 URL*이 제공되며 Facebook에 복사하여 붙여넣을 수 있습니다. Facebook에서 앱을 열 때 애플리케이션을 렌더링하는 데 올바른 콜백 URL이 사용됩니다.
 
-1. 선택적으로 **Allow users to add [application-name] to Facebook** 활성화합니다. 그런 다음 앱의 옵션 메뉴로 이동하여 **Facebook에 추가** 선택할 수 있습니다.
+1. 선택적으로 *Allow users to add [application-name] to Facebook*활성화합니다. 그런 다음 앱의 옵션 메뉴로 이동하여 *Facebook에 추가*선택할 수 있습니다.
 
-## 오픈소셜 가젯
+## OpenSocial Gadget
 
 OpenSocial은 소셜 네트워킹 및 기타 웹 애플리케이션을 위한 컨테이너와 일련의 API로 구성됩니다. Liferay DXP는 모든 OpenSocial 호환 페이지에서 OpenSocial 가젯으로 사용할 애플리케이션을 제공할 수 있습니다.
 
@@ -35,15 +35,15 @@ OpenSocial은 소셜 네트워킹 및 기타 웹 애플리케이션을 위한 �
 
     제공된 URL은 위젯의 특정 인스턴스에 대해 고유하므로 동일한 위젯의 여러 인스턴스를 다른 OpenSocial 가젯으로 제공할 수 있습니다.
 
-1. 공유 탭에서 **오픈소셜 가젯** 로 이동하고 선택기를 활성화합니다 **사용자가 오픈소셜 플랫폼에 [application-name] 추가할 수 있도록 허용합니다** .
+1. 공유 탭에서 *오픈소셜 가젯* 로 이동하고 선택기를 활성화합니다 *사용자가 오픈소셜 플랫폼에 [application-name] 추가할 수 있도록 허용합니다*.
 
-1. **저장** 클릭하고 위젯의 **옵션** 버튼을 다시 방문합니다. **OpenSocial 플랫폼에 추가** 이라는 이름의 새 버튼이 나타납니다. 이 새 버튼을 선택하면 OpenSocial 플랫폼에 위젯을 공유하기 위한 URL이 제공됩니다.
+1. *저장* 클릭하고 위젯의 *옵션* 버튼을 다시 방문합니다. *OpenSocial 플랫폼에 추가*이라는 새 버튼이 나타납니다. 이 새 버튼을 선택하면 OpenSocial 플랫폼에 위젯을 공유하기 위한 URL이 제공됩니다.
 
 ## Netvibes
 
 Netvibes는 사용자가 로그인하여 자신만의 개인 대시보드를 만들고 사용자 지정 가능한 위젯을 추가할 수 있는 유사한 환경을 제공합니다.
 
-공유 탭에서 **Netvibes** 로 이동하여 **사용자가 Netvibes 페이지에 [application-name] 추가하도록 허용** 선택기를 활성화합니다. 그런 다음 제공된 URL을 사용하여 사용 중인 Liferay 위젯의 인스턴스를 기반으로 사용자 정의 Netvibes 위젯을 만들 수 있습니다.
+공유 탭에서 *Netvibes* 로 이동하여 *사용자가 Netvibes 페이지에 [application-name] 추가하도록 허용* 선택기를 활성화합니다. 그런 다음 제공된 URL을 사용하여 사용 중인 Liferay 위젯의 인스턴스를 기반으로 사용자 정의 Netvibes 위젯을 만들 수 있습니다.
 
 ## 추가 정보
 

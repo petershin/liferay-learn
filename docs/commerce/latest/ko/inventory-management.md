@@ -9,6 +9,7 @@ toc:
 - ./inventory-management/inventory-management-reference-guide.md
 - ./inventory-management/warehouse-reference-guide.md
 - ./inventory-management/product-inventory-configuration-reference-guide.md
+- ./inventory-management/developer-guide.md
 ---
 
 # 재고 관리
@@ -25,6 +26,7 @@ inventory-management/using-the-inventory-management-system.md
 inventory-management/inventory-management-reference-guide.md
 inventory-management/warehouse-reference-guide.md
 inventory-management/product-inventory-configuration-reference-guide.md
+inventory-management/developer-guide.md
 ```
 
 {bdg-secondary}`사용 가능한 커머스 2.1+`
@@ -42,11 +44,11 @@ Liferay의 재고 관리 기능은 다음과 같습니다.
 
 ## 창고
 
-창고는 제품 재고를 관리하고 주문 이행을 위해 소싱할 수 있는 물리적 사이트를 나타냅니다. 단일 SKU는 둘 이상의 창고에서 사용할 수 있으며 재고는 창고별로 관리됩니다.
+창고는 제품 재고를 관리하고 주문 이행을 위해 소싱할 수 있는 물리적 위치를 나타냅니다. 단일 SKU는 둘 이상의 창고에서 사용할 수 있으며 재고는 창고별로 관리됩니다.
 
 창고 관리에 대한 자세한 내용은 [상업 창고 설정](./inventory-management/setting-up-warehouses.md) 및 [창고 참조 안내서](./inventory-management/warehouse-reference-guide.md) 참조하십시오.
 
-상점이 주문을 수락하려면 관련 채널에 연결된 창고가 있어야 합니다. 채널 작동 방식을 이해하려면 [채널 소개](../store-management/channels/introduction-to-channels.md) 을 읽으십시오.
+상점이 주문을 수락하려면 관련 채널에 연결된 창고가 있어야 합니다. 채널 작동 방식을 이해하려면 [채널 소개](./store-management/channels/introduction-to-channels.md) 을 읽으십시오.
 
 ## 창고별 재고 설정
 
@@ -60,9 +62,9 @@ Liferay에서 재고는 SKU별로 관리됩니다. 자세한 내용은 [창고](
 
 재고 부족 조치는 사용 가능한 제품 재고가 특정 임계값에 도달하면 조치를 수행합니다. 재고가 최소 임계값에 도달할 때 실행되는 작업을 구성하는 방법을 알아보려면 [재고 부족 작업](./inventory-management/low-stock-action.md) 읽으십시오.
 
-자신만의 사용자 지정 재고 부족 작업을 만드는 데 관심이 있는 개발자는 [사용자 지정 재고 부족 활동 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)읽을 수 있습니다.
+자신만의 사용자 지정 재고 부족 작업을 만드는 데 관심이 있는 개발자는 [사용자 지정 재고 부족 활동 구현](./developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)읽을 수 있습니다.
 
-## 가용성 추정치
+## 가용성 예측
 
 재고가 없는 제품에 대한 예상 가용성을 구성할 수 있습니다. 이것은 다시 사용할 수 있을 때 고객에게 알립니다. 자세한 내용은 [가용성 예측](./inventory-management/availability-estimates.md) 읽으십시오.
 
@@ -103,5 +105,9 @@ Liferay에서 재고는 SKU별로 관리됩니다. 자세한 내용은 [창고](
 
 :::{grid-item-card}  제품 인벤토리 구성 참조 가이드
 :link: ./inventory-management/product-inventory-configuration-reference-guide.md
+:::
+
+:::{grid-item-card}  개발자 가이드
+:link: ./inventory-management/developer-guide.md
 :::
 ::::

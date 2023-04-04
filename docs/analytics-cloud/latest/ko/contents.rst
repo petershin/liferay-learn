@@ -8,7 +8,7 @@
 
    getting-started
    touchpoints
-   일원
+   people
    optimization
    apis
    workspace-data

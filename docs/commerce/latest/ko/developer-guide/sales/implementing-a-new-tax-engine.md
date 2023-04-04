@@ -1,3 +1,7 @@
+---
+uuid: 389a9113-3e8c-48a5-8f8a-892f83858f3a
+---
+
 # 새 세금 엔진 구현
 
 이 자습서에서는 [CommerceTaxEngine](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxEngine.java) 인터페이스를 구현하여 새 세금 엔진을 추가하는 방법을 보여줍니다.
@@ -19,9 +23,9 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [Acme Commerce Tax Engine](./liferay-q4b9.zip) 을 다운로드하고 압축을 풉니다.
+1. [Acme Commerce Tax Engine](./liferay-q4b9.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/commerce/latest/en/developer-guide/sales/liferay-q4b9.zip -O
@@ -47,7 +51,7 @@
     STARTED com.acme.q4b9.impl_1.0.0
     ```
 
-1. 예제 세금 엔진이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 **상거래** → **채널** 로 이동합니다. 채널을 편집합니다. 새 세금 엔진("Q4B9 Commerce Tax Engine")이 표시된 목록에 표시됩니다.
+1. 예제 세금 엔진이 추가되었는지 확인합니다. 브라우저에서 `https://localhost:8080`로 엽니다. 그런 다음 애플리케이션 메뉴(![Applications Menu](../../images/icon-applications-menu.png))를 클릭하고 _상거래_ → _채널_로 이동합니다. 채널을 편집합니다. 새 세금 엔진("Q4B9 Commerce Tax Engine")이 표시된 목록에 표시됩니다.
 
 ```{note}
 Commerce 2.1 및 이전 버전에서는 *사이트 관리* → *상거래* → *설정* → *세금* → *세금 계산*으로 이동하여 세금 엔진을 찾습니다.
@@ -71,7 +75,7 @@ Commerce 2.1 및 이전 버전에서는 *사이트 관리* → *상거래* → *
 )
 ```
 
-> Liferay Commerce가 [세금 엔진 레지스트리](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceTaxEngineRegistryImpl.java) 에서 새 엔진을 다른 엔진과 구별할 수 있도록 세금 엔진에 고유한 키를 제공하는 것이 중요합니다. 이미 사용 중인 키를 재사용하면 기존 관련 세금 엔진이 재정의됩니다.
+> Liferay Commerce가 [세금 엔진 레지스트리](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceTaxEngineRegistryImpl.java)에서 새 엔진을 다른 엔진과 구별할 수 있도록 세금 엔진에 고유한 키를 제공하는 것이 중요합니다. 이미 사용 중인 키를 재사용하면 기존 관련 세금 엔진이 재정의됩니다.
 
 ### `CommerceTaxEngine` 인터페이스 검토
 
@@ -83,7 +87,7 @@ public CommerceTaxValue getCommerceTaxValue(
     throws CommerceTaxEngineException;
 ```
 
-> 이 메서드는 세금 엔진에 대한 비즈니스 논리가 구현되는 사이트입니다. 자세한 내용은 [CommerceTaxValue](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxValue.java) 을 참조하십시오.
+> 이 메서드는 세금 엔진에 대한 비즈니스 논리가 구현되는 위치입니다. 자세한 내용은 [CommerceTaxValue](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxValue.java) 참조하십시오.
 
 ```java
 public String getDescription(Locale locale);
@@ -129,7 +133,7 @@ private static final BigDecimal _ONE_POINT_FIVE_ZERO = new BigDecimal(
     "1.50");
 ```
 
-> `CommerceTaxCalculateRequest` 매개변수에는 계산에 필요한 정보가 포함되어 있습니다. 이 예에서는 `CommerceTaxCalculateRequest`의 가격과 요율을 백분율로 적용할지 여부를 나타내는 값을 사용합니다. [CommerceTaxCalculateRequest.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxCalculateRequest.java) 을 참조하여 `CommerceTaxCalculateRequest`과 함께 사용할 수 있는 더 많은 방법을 찾으십시오.
+> `CommerceTaxCalculateRequest` 매개변수에는 계산에 필요한 정보가 포함되어 있습니다. 이 예에서는 `CommerceTaxCalculateRequest`의 가격과 요율을 백분율로 적용할지 여부를 나타내는 값을 사용합니다. [CommerceTaxCalculateRequest.java](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxCalculateRequest.java) 참조하여 `CommerceTaxCalculateRequest`과 함께 사용할 수 있는 더 많은 방법을 찾으십시오.
 
 #### `Language.properties`에 언어 키 추가
 
@@ -140,13 +144,13 @@ q4b9-commerce-tax-engine=Q4B9 Commerce Tax Engine
 this-tax-engine-serves-a-fixed-x-percent-flat-tax-rate=This tax engine serves a fixed {0} percent flat tax rate.
 ```
 
-> 자세한 내용은 [응용 프로그램 지역화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application) 을 참조하십시오.
+> 자세한 내용은 [응용 프로그램 지역화](https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.html) 참조하십시오.
 
 ## 결론
 
-축하합니다! 이제 `CommerceTaxEngine` 인터페이스를 구현하기 위한 기본 사항을 알고 있으며 Liferay Commerce에 새 세금 엔진을 추가했습니다.
+축하해요! 이제 `CommerceTaxEngine` 인터페이스를 구현하기 위한 기본 사항을 알고 있으며 Liferay Commerce에 새 세금 엔진을 추가했습니다.
 
 ## 추가 정보
 
-* [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)
-* [세금 계산을 위한 세율 설정](../../store-management/configuring-taxes/setting-rates-for-tax-calculations.md)
+* [애플리케이션 현지화](https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.html)
+* [세금 계산을 위한 세율 설정](../../pricing/configuring-taxes/setting-rates-for-tax-calculations.md)

@@ -1,3 +1,7 @@
+---
+uuid: 8d057d63-5edc-481f-b55d-ccfa3cb388fa
+---
+
 # 데이터베이스 업그레이드 도구 참조
 
 다음은 Liferay의 업그레이드 도구에 대한 개요입니다.
@@ -19,13 +23,13 @@ db_upgrade.sh --help
 
 다음은 모든 업그레이드 도구 명령줄 옵션입니다.
 
-**--help** 또는 **-h** : 도구의 도움말 메시지를 인쇄합니다.
+**--help** 또는 **-h**: 도구의 도움말 메시지를 인쇄합니다.
 
-**--jvm-opts** 또는 **-j** + [**arg**] : 업그레이드 프로세스에 대한 JVM 옵션을 설정합니다.
+**--jvm-opts** 또는 **-j** + **[arg]**: 업그레이드 프로세스에 대한 JVM 옵션을 설정합니다.
 
-**--log-file** 또는 **-l** + [**arg**] : 도구의 로그 파일 이름을 지정합니다.---기본 이름은 `upgrade.log`입니다.
+**--log-file** 또는 **-l** + **[arg]**: 도구의 로그 파일 이름을 지정합니다.---기본 이름은 `upgrade.log`입니다.
 
-**--shell** 또는 **-s** : 업그레이드 프로세스를 마친 후 [Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) 에 자동으로 연결합니다.
+**--shell** 또는 **-s**: 업그레이드 프로세스를 마친 후 [Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) 에 자동으로 연결합니다.
 
 ### 로깅 출력
 
@@ -86,9 +90,9 @@ Please enter your database host (localhost):
 
 도구가 생성하는 것보다 더 많은 값을 설정하도록 업그레이드 도구를 미리 구성할 수도 있습니다. `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client/` 에서 다음 파일을 사용하여 코어 업그레이드를 수동으로 구성합니다.
 
-* `app-server.properties`: 서버 사이트 및 라이브러리를 지정합니다.
+* `app-server.properties`: 서버 위치 및 라이브러리를 지정합니다.
 * `portal-upgrade-database.properties`: 데이터베이스 연결을 구성합니다.
-* `portal-upgrade-ext.properties`: 업그레이드에 필요한 나머지 포털 속성을 설정합니다. 현재 DXP 서버를 복제하기 위해 현재 포털 속성(데이터베이스 속성 제외)을 이 파일에 복사할 수 있습니다. 현재 속성을 사용하기 전에 현재 DXP 버전 [에 맞게 업데이트해야](./preparing-a-new-application-server.md#migrate-your-portal-properties) .
+* `portal-upgrade-ext.properties`: 업그레이드에 필요한 나머지 포털 속성을 설정합니다. 현재 DXP 서버를 복제하려면 현재 포털 속성(데이터베이스 속성 제외)을 이 파일에 복사할 수 있습니다. 현재 속성을 사용하기 전에 [현재 DXP 버전에 맞게 업데이트](../migrating-configurations-and-properties.md#migrating-portal-properties)해야 합니다.
 
 #### app-server.properties 구성
 
@@ -101,6 +105,7 @@ DXP의 애플리케이션 서버를 구성하려면 다음 정보를 지정하�
 | `global.lib.dir`            | 애플리케이션 서버의 글로벌 라이브러리 디렉토리.                           | `dir`에 상대적인 경로를 사용하십시오.                                                          |
 | `portal.dir`                | 애플리케이션 서버에서 포털이 설치된 디렉토리입니다.                         | `dir`에 상대적인 경로를 사용하십시오.                                                          |
 | `server.detector.server.id` | 지원되는 애플리케이션 서버의 ID입니다.                               | 지원되는 ID: `jboss`, `jonas`, `resin`, `tomcat`, `weblogic`, `websphere`, `wildfly` |
+
 
 상대 경로는 Unix 스타일 형식(슬래시)을 사용해야 하며 `/`로 시작해야 합니다. 예를 들어 다음 속성은 Windows용입니다.
 
@@ -135,11 +140,11 @@ server.detector.server.id=tomcat
 
 #### Portal-upgrade-ext.properties 구성
 
-[백업](../../maintaining-a-liferay-installation/backing-up.md)에서 `portal-ext.properties` 파일 속성과 같은 [포털 속성](../../reference/portal-properties.md)을 모두 추가합니다. 다음 속성은 업그레이드를 구성하는 데 특히 중요합니다.
+[백업](../../maintaining-a-liferay-installation/backing-up.md)에서 `portal-ext.properties` 파일 속성과 같은 [포털 속성](../../reference/portal-properties.md)모두 추가합니다. 다음 속성은 업그레이드를 구성하는 데 특히 중요합니다.
 
 * `liferay.home`: [LIFERAY_HOME 폴더](../../reference/liferay-home.md).
 
-* `dl.store.impl`: 문서를 문서 라이브러리 저장소에 유지하기 위한 구현입니다. 이 속성은 `*FileSystemStore` 구현을 사용하는 경우에만 필수입니다. `portal-ext.properties`에서 이 특성을 업데이트한 경우 여기에 새 값을 복사하십시오. 그렇지 않으면 다음 방법 중 하나로 속성을 설정합니다.
+* `dl.store.impl`: 문서를 문서 라이브러리 저장소에 유지하기 위한 구현입니다. 이 속성은 `*FileSystemStore` 구현을 사용하는 경우에만 필수입니다. `portal-ext.properties`에서 이 특성을 업데이트한 경우 여기에 새 값을 복사하십시오. 그렇지 않으면 다음 방법 중 하나로 속성을 설정합니다. 
 
     ```properties
     dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
@@ -148,13 +153,13 @@ server.detector.server.id=tomcat
     dl.store.impl=com.liferay.portal.store.s3.S3Store
     ```
 
-* `hibernate.jdbc.batch_size`: 성능 향상을 위해 사용되는 JDBC 배치 크기(기본값은 **250** 으로 설정됨). **이 속성은 업그레이드 성능을 향상시킬 수 있지만 필수는 아닙니다.**
+* `hibernate.jdbc.batch_size`: 성능 향상을 위해 사용되는 JDBC 배치 크기(기본값은 _250_ 으로 설정됨). _이 속성은 업그레이드 성능을 향상시킬 수 있지만 필수는 아닙니다._
 
 * `upgrade.log.context.enabled`: 식별자로 태그가 지정된 업그레이드 관련 로그 줄을 보려면 `true` 으로 설정합니다.
 
 * `upgrade.log.context.name`: `upgrade.log.context.enabled`사용 시 식별자 이름을 설정한다. 예: `upgrade.log.context.name=foo`.
 
-`upgrade.log.context.enabled` 은 업그레이드 도구와 시작 시 업그레이드 모두에 대해 작동합니다. 이 기능을 사용하려면 [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) 파일을 `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` 에 복사해야 합니다. 파일 이름을 `portal-log4j-ext.xml`로 바꿉니다. 그런 다음 appender 정의를 찾습니다.
+`upgrade.log.context.enabled` 업그레이드 도구와 시작 시 업그레이드 모두에 대해 작동합니다. 이 기능을 사용하려면 [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) 파일을 `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` 에 복사해야 합니다. 파일 이름을 `portal-log4j-ext.xml`로 바꿉니다. 그런 다음 appender 정의를 찾습니다.
 
 ```
 <Appender name="CONSOLE" type="Console">
@@ -162,7 +167,7 @@ server.detector.server.id=tomcat
 </Appender>
 ```
 
-`%X`를 포함하도록 정의를 변경하여 Log4j에 스레드 컨텍스트 정보를 인쇄하도록 지시합니다.
+`%X`포함하도록 정의를 변경하여 Log4j에 스레드 컨텍스트 정보를 인쇄하도록 지시합니다.
 
 ```
 <Appender name="CONSOLE" type="Console">
@@ -185,9 +190,9 @@ server.detector.server.id=tomcat
 
 #### 업그레이드 구성 예
 
-다음은 사용자 지정하고 `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client/`에 복사할 수 있는 예제 업그레이드 구성 파일입니다.
+다음은 사용자 정의하고 `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client/`에 복사할 수 있는 예제 업그레이드 구성 파일입니다.
 
-* `앱-서버.속성`:
+* `앱-서버.속성`: 
 
     ```properties
     dir=../../tomcat-9.0.17
@@ -197,7 +202,7 @@ server.detector.server.id=tomcat
     extra.lib.dirs=bin
     ```
 
-* `포털-업그레이드-데이터베이스.속성`:
+* `포털-업그레이드-데이터베이스.속성`: 
 
     ```properties
     jdbc.default.url=jdbc:mysql://lportal62?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
@@ -206,7 +211,7 @@ server.detector.server.id=tomcat
     jdbc.default.password=
     ```
 
-* `포털-업그레이드-ext.properties`:
+* `포털-업그레이드-ext.properties`: 
 
     ```properties
     liferay.home=/home/user/servers/liferay7

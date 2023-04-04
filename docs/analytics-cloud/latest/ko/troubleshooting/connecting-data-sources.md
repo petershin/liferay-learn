@@ -1,3 +1,7 @@
+---
+uuid: 83679f16-fcde-44fb-8f26-138e6743f4fe
+---
+
 # 데이터 소스 연결
 
 잘못 구성된 환경 또는 데이터 소스는 Liferay DXP 데이터 소스에 대한 액세스를 방해하거나 방해할 수 있습니다. 다음은 DXP 데이터 소스 문제를 해결하는 방법입니다.
@@ -12,7 +16,7 @@
 * `https://analytics-js-cdn.liferay.com`
 
 ```{note}
-{regionKey} 은 작업 공간 설정 중 초기 선택을 기반으로 합니다(예: ac-southamericaeast1, ac-europewest2, ac-europewest3 또는 ac-uswest1).
+{regionKey} 은 작업 공간 설정 중 초기 선택을 기반으로 합니다(즉, ac-southamericaeast1, ac-europewest2, ac-europewest3 또는 ac-uswest1).
 ```
 
 ```{important}
@@ -35,7 +39,7 @@
 
     ![Analytics Cloud에 대한 연결을 검증합니다.](connecting-data-sources/images/01.png)
 
-    이 요청을 볼 수 있다면 웹 사이트에서 분석 데이터를 Analytics Cloud 작업 영역으로 보내고 있음을 의미합니다. 요청 페이로드를 확인하고 `channelId`이라는 변수가 있는지 확인합니다.
+    이 요청을 볼 수 있다면 웹사이트에서 분석 데이터를 Analytics Cloud 작업 영역으로 보내고 있음을 의미합니다. 요청 페이로드를 확인하고 `channelId`이라는 변수가 있는지 확인합니다.
 
 ### 연락처 데이터
 
@@ -91,4 +95,4 @@ Liferay DXP 설치는 다음 수정 팩 최소 요구 사항을 충족해야 합
 
 ## 로그인한 사용자가 익명으로 표시됨
 
-[연락처 동기화](../getting-started/syncing-sites-and-contacts.md#syncing-contacts) 일 때 Analytics Cloud는 Liferay DXP 내에 존재하는 사용자 레코드에 의존합니다. 따라서 [싱글 사인온 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/securing-liferay/configuring-sso.html) 또는 [LDAP 디렉토리에 연결](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) 을 사용하는 경우 연락처를 Analytics Cloud와 동기화하기 전에 모든 사용자를 Liferay DXP로 가져오거나 매핑해야 합니다.
+[연락처 동기화](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)일 때 Analytics Cloud는 Liferay DXP 내에 존재하는 사용자 레코드에 의존합니다. 따라서 [싱글 사인온 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/securing-liferay/configuring-sso.html) 또는 [LDAP 디렉토리에 연결](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) 사용하는 경우 연락처를 Analytics Cloud와 동기화하기 전에 모든 사용자를 Liferay DXP로 가져오거나 매핑해야 합니다.

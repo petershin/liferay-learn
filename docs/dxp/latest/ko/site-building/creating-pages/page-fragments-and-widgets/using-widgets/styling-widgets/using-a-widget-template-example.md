@@ -9,15 +9,15 @@
 
 ## 미디어 갤러리 위젯 구성
 
-1. 문서 및 미디어에 이미지가 아직 없는 경우 문서 및 미디어에 일부 이미지를 추가합니다. 제품 메뉴를 열고 Site Builder &rarr; 페이지로 이동합니다. 그런 다음 **콘텐츠 및 데이터** 로 이동하여 [**문서 및 미디어**](../../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md) &rarr; **추가**(![Add](../../../../images/icon-add.png))을 클릭하여 업로드할 파일을 선택합니다.
+1. 문서 및 미디어에 이미지가 아직 없는 경우 문서 및 미디어에 일부 이미지를 추가합니다. 제품 메뉴를 열고 Site Builder &rarr; 페이지로 이동합니다. 그런 다음 *콘텐츠 및 데이터*로 이동하여 [*문서 및 미디어*](../../../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md) &rarr; *추가* (![Add](../../../../images/icon-add.png))을 클릭하여 업로드할 파일을 선택합니다.
 
     ![문서 및 미디어에 표시할 파일을 선택합니다.](./using-a-widget-template-example/images/01.png)
 
-1. 사이트의 기존 페이지에 미디어 갤러리 위젯을 추가합니다. 클릭 **추가**(![Add](../../../../images/icon-plus.png)) &rarr; **위젯** &rarr; **콘텐츠 관리** &rarr; **미디어 갤러리** &rarr; **게시** .
+1. 사이트의 기존 페이지에 미디어 갤러리 위젯을 추가합니다. 클릭 *추가* (![Add](../../../../images/icon-plus.png)) &rarr; *위젯* &rarr; *콘텐츠 관리* &rarr; *미디어 갤러리* &rarr; *게시*.
 
     ![미디어 갤러리를 추가하려면 위젯 섹션의 콘텐츠 및 관리로 이동하세요.](./using-a-widget-template-example/images/02.png)
 
-1. 위젯 메뉴로 이동합니다(![Actions](../../../../images/icon-actions.png)) &rarr; **구성** &rarr; **디스플레이 템플릿** . 표시 템플릿을 **Carousel** 로 변경합니다.
+1. 위젯 메뉴로 이동합니다(![Actions](../../../../images/icon-actions.png)) &rarr; *구성* &rarr; *디스플레이 템플릿*. 표시 템플릿을 *Carousel*로 변경합니다.
 
     ![미디어 갤러리 구성 화면.](./using-a-widget-template-example/images/03.png)
 
@@ -27,5 +27,5 @@
 
 ## 추가 정보
 
-- [템플릿에 위젯 포함](../../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md)
-- [위젯 템플릿으로 위젯 스타일 지정](../../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)
+- [템플릿에 위젯 포함](../../../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md)
+- [위젯 템플릿으로 위젯 스타일 지정](../../../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)

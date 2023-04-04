@@ -1,6 +1,10 @@
+---
+uuid: 7b3a2c98-4dcc-4e82-814d-d50ba40070c5
+---
+
 # API 쿼리 매개변수
 
-[개의 REST API](./consuming-rest-services.md) 또는 [GraphQL API](./consuming-graphql-apis.md)을 사용하든 응답을 필터링하는 데 도움이 되는 다양한 쿼리 매개변수를 사용할 수 있습니다.
+[REST API](./consuming-rest-services.md) 또는 [GraphQL API](./consuming-graphql-apis.md)사용하든 응답을 필터링하는 데 도움이 되는 다양한 쿼리 매개변수를 사용할 수 있습니다.
 
 ## 필드 매개변수
 
@@ -23,7 +27,7 @@ GraphQL 요청:
 ```graphql
 query {
     countries {
-       actions
+      actions
         items {
            a2
            name
@@ -109,6 +113,110 @@ JSON 응답:
   "totalCount" : 247
 }%             
 ```
+
+## 필터 매개변수
+
+`필터` 매개변수를 사용하여 API 엔드포인트에 대한 응답을 필터링할 수 있습니다. 예를 들어 블로그 게시물을 제목별로 필터링할 수 있습니다(예: `headline eq 'Able'`).
+
+[API Explorer](./consuming-rest-services.md) 을 사용하여 API의 매개변수를 검색합니다.
+
+```{note}
+키워드로 인덱싱된 필드만 필터링을 지원합니다. 텍스트 필드로 콘텐츠를 찾으려면 [search](#search-parameter) 매개변수를 대신 사용하세요.
+```
+
+### REST API 예제
+
+cURL 요청:
+
+```bash
+curl \
+    "http://localhost:8080/o/headless-delivery/v1.0/sites/20121/blog-postings?fields=articleBody,headline&filter=headline%20eq%20%27Able%27" \
+    -u "test@liferay.com:learn"
+```
+
+### GraphQL API 예제
+
+GraphQL 요청:
+
+```graphql
+query {
+  blogPostings(filter:"headline eq 'Able'",siteKey:"20121")
+    {page
+     items {
+        articleBody
+        headline
+  }
+  }
+}
+```
+
+JSON 응답:
+
+```json
+"data": {
+  "blogPostings": {
+    "page": 1,
+    "items": [
+      {
+        "articleBody": "<p>Able able able</p>",
+        "headline": "Able"
+      }
+    ]
+  }
+}
+```
+
+다양한 연산자를 필터링에 사용할 수 있습니다.
+
+**비교 연산자**
+
+| 운영자  | 묘사        | 예                                     |
+|:---- |:--------- |:------------------------------------- |
+| `eq` | 동일한       | `addressLocality eq 'Redmond'`        |
+|      | 같음 null   | `addressLocality eq null`             |
+| `ne` | 같지 않음     | `addressLocality ne 'London'`         |
+|      | 같음 null   | `addressLocality ne null`             |
+| `gt` | 보다 큰      | `price gt 20`                         |
+| `ge` | 크거나 같음    | `price ge 10`                         |
+| `lt` | 미만        | `dateCreated lt 2018-02-13T12:33:12Z` |
+| `le` | 보다 작거나 같음 | `dateCreated le 2012-05-29T09:13:28Z` |
+
+**논리 연산자**
+
+| 운영자   | 묘사       | 예                               |
+|:----- |:-------- |:------------------------------- |
+| `and` | 논리적이고    | `price le 200 and price gt 3.5` |
+| `or`  | 논리적 또는   | `price le 3.5 or price gt 200`  |
+| `not` | 논리적이지 않음 | `not (price le 3.5)`            |
+
+`not` 연산자 뒤에는 공백 문자가 필요합니다.
+
+**그룹화 연산자**
+
+| 운영자   | 묘사        | 예                                               |
+|:----- |:--------- |:----------------------------------------------- |
+| `( )` | 우선 순위 그룹화 | `(price eq 5) or (addressLocality eq 'London')` |
+
+**문자열 함수**
+
+| 기능           | 묘사   | 예                                     |
+|:------------ |:---- |:------------------------------------- |
+| `contains`   | 포함한다 | `contains(title,'edmon')`             |
+| `startswith` | 시작   | `startswith(addressLocality, 'Lond')` |
+
+**람다 연산자**
+
+람다 연산자는 컬렉션 필드(예: 리소스의 `키워드`)에서 부울 식을 평가합니다. 컬렉션을 식별하는 탐색 경로가 앞에 추가되어야 합니다.
+
+| 람다 연산자 | 묘사   | 예                                    |
+|:------ |:---- |:------------------------------------ |
+| `any`  | 무엇이든 | `keywords/any(k:contains(k,'news'))` |
+
+`임의` 연산자는 부울 식을 각 컬렉션 요소에 적용하고 식이 모든 요소에 대해 참인 경우 `참` 으로 평가합니다.
+
+**연산자 조합 및 OData 구문**
+
+구문 예제 및 기타 연산자 조합은 [OData 표준 참조](https://docs.oasis-open.org/odata/odata/v4.01/csprd06/part1-protocol/odata-v4.01-csprd06-part1-protocol.html#sec_BuiltinFilterOperations)에서 다룹니다.
 
 ## 편평화 매개변수
 
@@ -318,7 +426,13 @@ JSON 응답:
 
 ## 매개변수 정렬
 
-이 매개변수를 사용하여 반환된 항목을 정렬하는 방법을 지정합니다(예: `asc` 오름차순 또는 `desc` 내림차순). 예를 들어 국가 API를 이름별로 내림차순으로 정렬합니다.
+`정렬` 매개변수를 사용하여 API 엔드포인트에 대한 응답을 오름차순(`asc`) 또는 내림차순(`desc`)으로 정렬할 수 있습니다. [API Explorer](./consuming-rest-services.md) 을 사용하여 API의 매개변수를 검색합니다.
+
+둘 이상의 매개변수를 기준으로 정렬하려면 매개변수 이름을 쉼표로 구분하고 우선순위에 따라 정렬하십시오. 예를 들어 먼저 제목별로 정렬한 다음 생성 날짜별로 정렬하려면 요청에 `sort=title,dataCreated` 추가합니다.
+
+하나의 매개변수에 대해서만 내림차순을 지정하려면 다른 매개변수에 대해 오름차순 정렬 순서(`:asc`)를 명시적으로 지정해야 합니다. 예: `sort=headline:desc,dateCreated:asc`.
+
+아래 예시는 국가 API 응답을 이름별로 내림차순으로 정렬합니다.
 
 ### REST API 예제
 
@@ -423,3 +537,4 @@ JSON 응답:
   "totalCount" : 247
 }%      
 ```
+

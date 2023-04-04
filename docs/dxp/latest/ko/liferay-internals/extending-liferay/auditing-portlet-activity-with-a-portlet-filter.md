@@ -1,6 +1,10 @@
+---
+uuid: a8dd9eb8-f44a-4cc3-8425-1685472c0119
+---
+
 # 포틀릿 필터로 포틀릿 활동 감사
 
-포틀릿 필터는 각 [포틀릿 요청 처리 단계](../../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) 이 시작될 때 요청과 응답을 가로채므로 거기에 기능을 추가할 수 있습니다. 따라서 렌더링, 작업, 이벤트 및 리소스 제공 단계 동안 포틀릿 활동을 감사하는 데 유용합니다.
+포틀릿 필터는 각 [포틀릿 요청 처리 단계](../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) 이 시작될 때 요청과 응답을 가로채므로 거기에 기능을 추가할 수 있습니다. 따라서 렌더링, 작업, 이벤트 및 리소스 제공 단계 동안 포틀릿 활동을 감사하는 데 유용합니다.
 
 포틀릿 활동 감사를 위한 포틀릿 필터를 생성하려면 다음 단계를 따르십시오.
 
@@ -13,12 +17,12 @@
    * 렌더링 단계 - [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html)
    * 리소스 제공 단계 - [`ResourceFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/ResourceFilter.html)
 
-   각 포틀릿 단계에 대한 자세한 내용은 [포틀릿](../../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) 을 참조하십시오.
+   각 포틀릿 단계에 대한 자세한 내용은 [포틀릿](../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) 참조하십시오.
 
 1. `@Component` 주석을 사용하여 포틀릿 필터를 OSGi 프레임워크 내의 구성 요소로 선언하고 이를 `PortletFilter.class` 서비스로 식별합니다.
 
    ```{note}
-   포틀릿 필터는 [OSGi 선언적 서비스(DS) 구성 요소](https://enroute.osgi.org/FAQ/300-declarative-services.html) 입니다. 필터는 `portlet.xml` 설명자 또는 `@PortletLifecycleFilter` 주석을 사용하여 포틀릿에 적용할 수도 있습니다. 자세한 내용은 Portlet 3.0 사양을 참조하십시오.
+   포틀릿 필터는 [OSGi 선언적 서비스(DS) 구성 요소](https://enroute.osgi.org/FAQ/300-declarative-services.html)입니다. 필터는 `portlet.xml` 설명자 또는 `@PortletLifecycleFilter` 주석을 사용하여 포틀릿에 적용할 수도 있습니다. 자세한 내용은 Portlet 3.0 사양을 참조하십시오.
    ```
 
 1. `@Component` 선언에 다음 속성을 입력합니다.
@@ -28,15 +32,16 @@
 
 1. 필터의 `doFilter` 메소드를 재정의하여 포틀릿 단계의 원하는 측면을 감사합니다.
 
-다음 예제에서는 `RenderFilter` 을 사용하여 블로그 포틀릿의 렌더링 단계를 감사합니다.
+다음 예제에서는 `RenderFilter` 사용하여 블로그 포틀릿의 렌더링 단계를 감사합니다.
 
 ## 샘플 포틀릿 필터 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these step to download, build, and deploy the sample Portlet Filter to the new docker container:
+그런 다음 다음 단계에 따라 샘플 포틀릿 필터를 다운로드, 빌드 및 새 Docker 컨테이너에 배포합니다.
 
-1. Download and unzip the example module.
+1. 예제 모듈을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-b4k8.zip -O
@@ -133,7 +138,7 @@ public class B4K8PortletFilter implements RenderFilter {
 }
 ```
 
-이 코드에서 필터는 먼저 OSGi DS 구성 요소로 선언되고 `PortletFilter.class` 서비스로 식별됩니다. 이 선언의 일부로 두 가지 속성도 설정합니다. 첫 번째 속성은 `BlogsPortlet`을 대상으로 하고 두 번째 속성은 우선 순위를 `100`으로 설정합니다.
+이 코드에서 필터는 먼저 OSGi DS 구성 요소로 선언되고 `PortletFilter.class` 서비스로 식별됩니다. 이 선언의 일부로 두 가지 속성도 설정합니다. 첫 번째 속성은 `BlogsPortlet`대상으로 하고 두 번째 속성은 우선 순위를 `100`으로 설정합니다.
 
 포틀릿 필터는 [`PortletFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/PortletFilter.html) 인터페이스를 확장하는 [`RenderFilter`](http://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/filter/RenderFilter.html) 인터페이스 구현을 진행합니다. 이 인터페이스에는 세 가지 메소드(예: `init`, `destroy`, `doFilter`)가 포함되어 있으며 Blogs 포틀릿에 대한 렌더링 요청과 해당 응답 모두에서 필터링 작업을 수행합니다.
 
@@ -143,7 +148,7 @@ public class B4K8PortletFilter implements RenderFilter {
 
 * `doFilter`: 렌더링 요청/응답 쌍이 클라이언트 요청으로 인해 체인을 통해 전달될 때마다 포틀릿 컨테이너에 의해 호출됩니다.
 
-   이 예에서 `doFilter` 은 다음과 같은 방법으로 블로그 포틀릿을 감사합니다.
+   이 예에서 `doFilter` 다음과 같은 방법으로 블로그 포틀릿을 감사합니다.
 
    1. 렌더링 단계 시작 시간을 기록합니다.
 
@@ -151,7 +156,7 @@ public class B4K8PortletFilter implements RenderFilter {
       long startTime = System.currentTimeMillis();
       ```
 
-   1. `FilterChain` 에 대해 `doFilter` 메서드를 실행하여 체인에서 모든 `RenderFilter` 를 호출합니다.
+   1. `FilterChain` 에 대해 `doFilter` 메서드를 실행하여 체인에서 모든 `RenderFilter` 호출합니다.
 
       ```java
       filterChain.doFilter(renderRequest, renderResponse);
@@ -194,5 +199,5 @@ public class B4K8PortletFilter implements RenderFilter {
 
 ## 추가 정보
 
-* [포틀릿](../../../building-applications/developing-a-java-web-application/reference/portlets.md)
+* [포틀릿](../../building-applications/developing-a-java-web-application/reference/portlets.md)
 <!--TASK: Add link to Using Portlet Filters article when finished -->

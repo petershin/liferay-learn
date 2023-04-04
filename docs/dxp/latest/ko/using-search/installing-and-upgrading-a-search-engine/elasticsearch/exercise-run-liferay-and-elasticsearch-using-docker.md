@@ -1,10 +1,14 @@
+---
+uuid: ff808648-0541-424c-b35b-dab20e241790
+---
+
 # 연습: Docker를 사용하여 Liferay 및 Elasticsearch 실행
 
 > 적용 대상: Liferay DXP 7.3+
 
 여기에서 로컬 컴퓨터의 최소 Liferay-Elasticsearch 설정을 살펴보고 Elasticsearch와 Liferay DXP 7.3+ 간의 [REST 클라이언트](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-high.html) 연결이 어떻게 구성되었는지 확인할 수 있습니다. 이 예에서는 두 개의 Docker 컨테이너(Elasticsearch 컨테이너 하나와 Liferay DXP 컨테이너 하나)를 사용합니다. 보다 개념적이고 프로덕션과 유사한 정보는 [Elasticsearch 설치](./getting-started-with-elasticsearch.md)을 참조하십시오.
 
-Elasticsearch 연결에서 인증 및 암호화를 활성화하려면 [Elasticsearch 보안](./securing-elasticsearch.md) 을 읽으십시오.
+Elasticsearch 연결에서 인증 및 암호화를 활성화하려면 [Securing Elasticsearch](./securing-elasticsearch.md) 읽으십시오.
 
 ## Docker 컨테이너에 바인드 마운트를 위한 로컬 폴더 생성
 
@@ -19,13 +23,13 @@ mkdir -p test-es-install/dxp/files/osgi/configs && mkdir -p test-es-install/elas
 ```
 ## Elasticsearch 설치
 
-1. `elasticsearch717`이라는 Elasticsearch `7.17.4` 컨테이너를 구성하고 시작합니다.
+1. `elasticsearch717`이라는 Elasticsearch `7.17.9` 컨테이너를 구성하고 시작합니다.
 
    ```bash
-   docker run -it --name elasticsearch717 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "node.name=es-node1" -v $(pwd)/elasticsearch:/usr/share/elasticsearch/data docker.elastic.co/elasticsearch/elasticsearch:7.17.4
+   docker run -it --name elasticsearch717 -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e "node.name=es-node1" -v $(pwd)/elasticsearch:/usr/share/elasticsearch/data docker.elastic.co/elasticsearch/elasticsearch:7.17.9
    ```
 
-1. 필요한 Elasticsearch 플러그인을 설치합니다. `docker exec -it` 을 사용하여 대화형 bash 셸에 액세스합니다.
+1. 필요한 Elasticsearch 플러그인을 설치합니다. `docker exec -it` 사용하여 대화형 bash 셸에 액세스합니다.
 
    ```bash
    docker exec -it elasticsearch717 bash -c '/usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-kuromoji && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-smartcn && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-stempel'
@@ -80,14 +84,14 @@ Liferay DXP가 Elasticsearch와 연결하는 데 필요한 속성을 지정한 �
 
 1. **체크포인트:** 제어판 &rarr; 구성 &rarr; 검색에서 Elasticsearch 연결이 활성화되어 있는지 확인합니다.
 
-   ![검색 관리 패널에 활성 연결이 표시됩니다.](./exercise-run-liferay-and-elasticsearch-using-docker/images/01.png)
+   ![검색 관리 패널에 활성 연결이 표시됩니다.](./getting-started-with-elasticsearch/images/01.png)
 
 검색 및 맞춤법 검사 색인을 다시 색인화합니다. 색인 재지정 작업은 모두 제어판 &rarr; 구성 &rarr; 검색의 색인 작업 탭에서 수행됩니다.
 
 ## 추가 정보
 
 * [Elasticsearch 보안](./securing-elasticsearch.md)
-* [라이프레이 엔터프라이즈 검색](../../liferay-enterprise-search.md)
+* [Liferay Enterprise Search](../../liferay-enterprise-search.md)
 * [수색 페이지](../../search-pages-and-widgets/working-with-search-pages/search-pages.md)
 * [검색 관리 및 조정](../../search-administration-and-tuning.md)
 * [Elasticsearch 커넥터 설정](./elasticsearch-connector-configuration-reference.md)

@@ -1,8 +1,11 @@
 ---
 toc:
-- ./actions/defining-object-actions.md
-- ./actions/understanding-action-types.md
+  - ./actions/defining-object-actions.md
+  - ./actions/understanding-action-types.md
+  - ./action/using-manual-actions.md
+uuid: 22678165-9c15-45ec-9f59-73eb9e2769b8
 ---
+
 # 액션
 
 ```{toctree}
@@ -10,20 +13,31 @@ toc:
 
 actions/defining-object-actions.md
 actions/understanding-action-types.md
+actions/using-manual-actions.md
 ```
 
-작업은 개체 항목 이벤트에 의해 트리거되는 작업을 정의합니다. Liferay는 이벤트(추가, 삭제 또는 업데이트)를 수신하고 작업을 실행합니다.
+개체 작업은 개체 항목 이벤트에 대해 수동 또는 자동으로 실행할 수 있는 사용자 지정 비즈니스 로직을 정의합니다. 예를 들어 webhook URL에 항목 이벤트 데이터 전달, 항목 업데이트 후 이메일 알림 보내기, 항목 생성 후 사용자 정의 Groovy 스크립트 실행 등이 있습니다.
+
+자동 트리거를 사용할 때 Liferay는 이벤트를 수신하고 미리 정의된 조건에 따라 자동으로 작업을 실행합니다. 독립 실행형 트리거를 사용할 때 Liferay는 개체 항목에 대한 작업 메뉴(![Actions Button](../../../images/icon-actions.png))에 작업을 추가하고 이를 트리거하기 위한 헤드리스 API를 생성합니다. 작업은 수동으로 실행해야 합니다.
 
 ![개체 정의에 작업을 추가합니다.](./actions/images/01.png)
 
-Liferay는 다음 작업 유형을 제공합니다.
+Liferay Objects는 다음 작업 유형을 제공합니다.
 
-| 작업 유형                                                                           | 묘사                                              |
-|:------------------------------------------------------------------------------- |:----------------------------------------------- |
-| [Webhook](./actions/understanding-action-types.md#webhook-actions)              | URL에 페이로드를 전달합니다.                               |
-| [Groovy 스크립트](./actions/understanding-action-types.md#groovy-script-actions)    | [Groovy](https://groovy-lang.org/) 스크립트를 실행합니다. |
-| [알림](./actions/understanding-action-types.md#notification-actions)              | 미리 정의된 템플릿을 사용하여 이메일 알림을 보냅니다.                  |
-| [객체 항목 추가](./actions/understanding-action-types.md#add-an-object-entry-actions) | 활성 개체에 항목을 만듭니다.                                |
+| 유형          | 묘사                                              |
+|:----------- |:----------------------------------------------- |
+| 알림          | 미리 정의된 템플릿을 사용하여 이메일 또는 사용자 알림을 보냅니다.           |
+| 객체 항목 추가    | 활성 개체에 항목을 만듭니다.                                |
+| 개체 항목 업데이트  | 현재 개체 항목의 필드를 업데이트합니다.                          |
+| Webhook     | URL에 페이로드를 전달합니다.                               |
+| Groovy 스크립트 | [Groovy](https://groovy-lang.org/) 스크립트를 실행합니다. |
+
+```{important}
+Groovy 스크립트 작업은 Liferay Experience Cloud Self-Managed 및 Liferay DXP Self-Hosted에서만 사용할 수 있습니다.
+```
+
+<!--TASK: When client extensions docs are ready, mention being able to add Action Types and Notification Types.-->
+
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -32,7 +46,11 @@ Liferay는 다음 작업 유형을 제공합니다.
 :link: ./actions/defining-object-actions.md
 :::
 
-:::{grid-item-card} 동작 유형 이해
+:::{grid-item-card} 액션 유형 이해
 :link: ./actions/understanding-action-types.md
+:::
+
+:::{grid-item-card} 수동 작업 사용
+:link: ./actions/using-manual-actions.md
 :::
 ::::

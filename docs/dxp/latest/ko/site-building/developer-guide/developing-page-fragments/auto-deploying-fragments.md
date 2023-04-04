@@ -1,8 +1,12 @@
+---
+uuid: f3bb512e-5954-47b2-bf3d-bccaee642919
+---
+
 # 조각 자동 배포
 
 {bdg-secondary}`사용 가능한 Liferay Portal 7.3 GA1+ 또는 Liferay DXP 7.3+`
 
-자체 도구로 페이지 조각을 개발하는 경우 [](./using-the-fragments-toolkit.md#fragment-set-structure) UI를 통해 가져오기 위해 ZIP 파일로 패키징하여 배포할 수 있습니다. 그러나 UI 사용에만 국한되지는 않습니다. 명령줄에서도 조각 ZIP 파일을 배포할 수 있습니다. 여기서는 조각 프로젝트로 작업하고 Liferay의 자동 배포 메커니즘을 사용하여 명령줄에서 원하는 사이트로 조각을 가져오는 방법을 배웁니다.
+[도구로 페이지 조각을 개발하는 경우](./using-the-fragments-toolkit.md#fragment-set-structure)Liferay UI를 통해 가져오기 위해 ZIP 파일로 패키징하여 배포할 수 있습니다. 그러나 UI 사용에만 국한되지는 않습니다. 명령줄에서도 조각 ZIP 파일을 배포할 수 있습니다. 여기서는 조각 프로젝트로 작업하고 Liferay의 자동 배포 메커니즘을 사용하여 명령줄에서 원하는 사이트로 조각을 가져오는 방법을 배웁니다.
 
 ```{note}
 Liferay DXP 7.4+의 경우 조각 컬렉션을 Liferay UI에서 조각 세트라고 합니다.
@@ -15,7 +19,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션을 Liferay UI에서 조각 세트라
 
 그런 다음 다음 단계에 따라 예제 프래그먼트 세트를 자동 배포합니다.
 
-1. [예제 자동 배포 가능 프래그먼트 세트](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip) 를 다운로드하고 압축을 풉니다. ):
+1. [예제 자동 배포 가능 프래그먼트 세트](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip)를 다운로드하고 압축을 풉니다. ):
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O
@@ -47,7 +51,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션을 Liferay UI에서 조각 세트라
     INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:263] Processing a2f8-fragments.zip
     ```
 
-1. 조각 세트를 사용할 수 있는지 확인합니다. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png))을 열고 **디자인** &rarr; **조각** 로 이동합니다. 세트가 목록에 나타나야 합니다.
+1. 조각 세트를 사용할 수 있는지 확인합니다. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png))을 열고 *디자인* &rarr; *조각*로 이동합니다. 세트가 목록에 나타나야 합니다.
 
 ```{note}
 가져온 조각에 잘못된 규칙이 있으면 자동으로 초안으로 저장됩니다.
@@ -92,7 +96,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션을 Liferay UI에서 조각 세트라
 ```
 
 ```{warning}
-[리소스 포함](./include-default-resources-in-fragments.md) 프래그먼트 가져오기는 시스템 수준에서 프래그먼트를 사용할 수 있도록 하는 경우 지원되지 않습니다.
+[리소스 포함](./include-default-resources-with-fragments.md) 프래그먼트 가져오기는 시스템 수준에서 프래그먼트를 사용할 수 있도록 하는 경우 지원되지 않습니다.
 ```
 
 ```{note}
@@ -117,7 +121,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션을 Liferay UI에서 조각 세트라
    docker cp a2f8-fragments.zip $(docker ps -lq):/opt/liferay/deploy
    ```
 
-1. 새 조각을 확인하십시오. **Site Menu**(![Site Menu](../../../images/icon-product-menu.png))을 열고 **Design** &rarr; **Fragments** 로 이동한 다음 **A2F8 Set** 를 클릭합니다. A2F8 Jumbotron 조각을 포함해야 합니다.
+1. 새 조각을 확인하십시오. *Site Menu* (![Site Menu](../../../images/icon-product-menu.png))을 열고 *Design* &rarr; *Fragments*로 이동한 다음 *A2F8 Set*클릭합니다. A2F8 Jumbotron 조각을 포함해야 합니다.
 
     ![새 프래그먼트는 자동 배포된 세트에 포함됩니다.](./auto-deploying-fragments/images/02.png)
 

@@ -1,8 +1,12 @@
+---
+uuid: 3520c731-c420-4e54-8f98-1a3869176676
+---
+
 # 디비스토어
 
 DBStore는 파일을 Blob으로 DXP 데이터베이스에 저장합니다. DBStore에는 파일 기반 저장소 유형(Simple, Advanced, S3)에 있는 트랜잭션 롤백 취약점이 없습니다.
 
-DBStore의 파일 크기 제한은 1GB입니다. 1기가바이트보다 큰 파일을 저장하려면 [단순 파일 시스템 저장소](./simple-file-system-store.md) 또는 [고급 파일 시스템 저장소](../file-storage.md#configuring-advanced-file-system-store) 을 사용하십시오.
+DBStore의 파일 크기 제한은 1GB입니다. 1기가바이트보다 큰 파일을 저장하려면 [단순 파일 시스템 저장소](./simple-file-system-store.md) 또는 [고급 파일 시스템 저장소](../../file-storage.md#configuring-advanced-file-system-store)사용하십시오.
 
 ## 상점 구성
 

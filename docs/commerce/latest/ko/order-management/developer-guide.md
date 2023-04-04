@@ -1,6 +1,7 @@
 ---
 toc:
 - ./developer-guide/order-api-basics.md
+- ./developer-guide/term-api-basics.md
 ---
 
 # 개발자 가이드
@@ -8,6 +9,7 @@ toc:
 ```{toctree}
 :maxdepth: 1
 developer-guide/order-api-basics.md
+developer-guide/term-api-basics.md
 ```
 
 ::::{grid} 2
@@ -15,5 +17,9 @@ developer-guide/order-api-basics.md
 
 :::{grid-item-card} 주문 API 기본 사항
 :link: ./developer-guide/order-api-basics.md
+:::
+
+:::{grid-item-card} 용어 API 기초
+:link: ./developer-guide/term-api-basics.md
 :::
 ::::

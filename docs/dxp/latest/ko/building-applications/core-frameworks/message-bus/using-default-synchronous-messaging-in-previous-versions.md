@@ -17,8 +17,15 @@
 
 예제 프로젝트는 기본 모드에서 `SynchronousMessageSender` 사용하여 메시지를 보내고 응답을 기다립니다.
 
-```{include} /_snippets/run-liferay-portal.md
+예제 프로젝트에서는 `SynchronousMessageSender` 사용하여 두 수신기에 직접 메시지를 보냅니다.
+
+다음을 실행하여 새 Liferay 인스턴스를 시작하십시오.
+
+```bash
+docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 ```
+
+<http://localhost:8080>에서 Liferay에 로그인합니다. 이메일 주소 _test@liferay.com_ 및 암호 _test_사용하십시오. 프롬프트가 표시되면 비밀번호를 _learn_로 변경하십시오.
 
 그런 다음 다음 단계를 따르십시오.
 
@@ -119,7 +126,7 @@
 
 두 구성자는 모두 [`구성 요소`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 클래스입니다. 그들은 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 사용하여 `DestinationFactory` 인스턴스를 주입합니다.
 
-`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 **직렬** 대상을 생성합니다. 마지막으로 `_activate(BundleContext)` 메소드는 BundleContext ``사용하여 OSGi 서비스에 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 등록합니다.
+`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 *직렬* 대상을 생성합니다.  마지막으로 `_activate(BundleContext)` 메서드는 `BundleContext`를 사용하여 [`대상`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)을 OSGi 서비스에 등록합니다.
 
 ```{warning}
 기본 동기식 메시징과 함께 직렬 또는 병렬 대상만 사용하십시오. `DestinationConfiguration`의 `createSerialDestinationConfiguration(String)` 및 `createParallelDestinationConfiguration(String)` 메서드를 호출하여 만들 수 있습니다.
@@ -131,7 +138,7 @@
 
 ## 리스너 검사
 
-`m4q7-charlie-impl` 모듈의 `M4Q7CharlieMessageListener` 클래스는 `acme/m4q7_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 로 전송된 메시지를 수신합니다. [메시지 듣기](./listening-for-messages.md) 이 보여주는 것과 같은 방식으로 등록됩니다.
+`m4q7-charlie-impl` 모듈의 `M4Q7CharlieMessageListener` 클래스는 `acme/m4q7_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)로 전송된 메시지를 수신합니다. [Listening for Messages](./listening-for-messages.md) 이 보여주는 것과 같은 방식으로 등록됩니다.
 
 `M4Q7CharlieMessageListener` 클래스:
 
@@ -143,7 +150,7 @@
 `M4Q7CharlieMessageListener` 메시지를 수신하면 `receive(Message)` 메서드는 메시지 페이로드를 기록하고 원래 메시지의 응답 대상으로 응답 메시지를 보냅니다. 메서드는 응답 메시지 페이로드를 수신기 클래스 이름으로 설정하고 응답 메시지 ID를 원본 메시지의 응답 ID로 설정합니다.
 
 ```{important}
-기본 동기식 메시징에서 응답 메시지는 원래 메시지의 응답 ID를 사용해야 *하고* 응답 대상으로 전송되어야 합니다.
+기본 동기 메시징에서 응답 메시지는 원본 메시지의 응답 ID를 사용해야 *하고* 응답 대상으로 전송되어야 합니다.
 ```
 
 `m4q7-baker-impl` 모듈의 `M4Q7BakerMessageListener` 클래스는 `M4Q7BakerOSGiCommands`메시지의 응답 대상인 `acme/m4q7_baker`로 전송된 메시지를 수신합니다.
@@ -166,20 +173,20 @@
    :lines: 12-38
 ```
 
-`M4Q7BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 **기본** 모드(주석의 `target = "(mode=DEFAULT)"` 속성으로 지정됨)로 설정된 `SynchronousMessageSender` 을 삽입합니다.
+`M4Q7BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 *기본* 모드(주석의 `target = "(mode=DEFAULT)"` 속성으로 지정됨)로 설정된 `SynchronousMessageSender` 을 삽입합니다.
 
 ```{note}
 *기본* 모드에서 `SynchronousMessageSender`의 `send` 메서드는 응답 메시지가 수신되거나 발신자가 시간 초과될 때까지 호출 클래스를 차단합니다.
 ```
 
-`M4Q7BakerOSGiCommands`의 `@Component` 속성은 `m4q7` 범위에서 `sendMessage` 라는 Gogo 셸 명령 함수를 정의합니다. 명령은 입력 `문자열` 사용하고 `M4Q7BakerOSGiCommands`의 `sendMessage(String)` 메서드에 매핑합니다.
+`M4Q7BakerOSGiCommands`의 `@Component` 속성은 `m4q7` 범위에서 `sendMessage` 라고 하는 Gogo 셸 명령 함수를 정의합니다. 명령은 입력 `문자열` 사용하고 `M4Q7BakerOSGiCommands`의 `sendMessage(String)` 메서드에 매핑합니다.
 
 `sendMessage(String)` 메서드는 Gogo 셸 명령의 `String` 페이로드로, `"acme/m4q7_baker"` 응답 대상으로 사용하여 [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) 를 생성합니다.
 
-`sendMessage(String)` 메서드는 `SynchronousMessageSender`의 `send(String, Message, long)` 메서드를 호출하고 `"acme/m4q7_able"` 대상 이름, 메시지 인스턴스 및 ` 10000`밀리초 시간 초과. 기본 모드에서 `SynchronousMessageSender`는 메시지 수신기에 메시지를 전달하기 위해 메시지 버스 스레드를 사용합니다. 원래 메시지의 응답 ID가 있는 메시지가 `"acme/m4q7_baker"` 응답 대상에서 수신될 때까지 `M4Q7BakerOSGiCommands` 클래스에서 실행이 차단됩니다. 응답이 수신되면 `M4Q7BakerOSGiCommands` `sendMessage(String)` 메서드에서 실행이 계속되어 메시지 응답을 기록합니다. 일치하는 응답 메시지가 수신되기 전에 시간 초과가 만료되면 `SynchronousMessageSender`의 `send(String, Message, long)` 메서드는 `MessageBusException`을 발생시킵니다.
+`sendMessage(String)` 메서드는 `SynchronousMessageSender`의 `send(String, Message, long)` 메서드를 호출하여 `"acme/m4q7_able"` 대상 이름, 메시지 인스턴스, `10000` 밀리초 타임아웃을 전달하여 메시지를 전송합니다. 기본 모드에서 `SynchronousMessageSender`는 메시지 버스 스레드를 사용하여 메시지 리스너에게 메시지를 전달합니다. 원본 메시지의 응답 ID를 가진 메시지가 `"acme/m4q7_baker"` 응답 대상에 수신될 때까지 `M4Q7BakerOSGiCommands` 클래스에서 실행이 차단됩니다. 응답이 수신되면 `M4Q7BakerOSGiCommands` `sendMessage(String)` 메서드에서 실행이 계속되며, 여기서 메시지 응답을 기록합니다. 일치하는 응답 메시지가 수신되기 전에 시간 제한이 만료되면 `SynchronousMessageSender`의 `send(String, Message, long)` 메서드는 `MessageBusException`을 던집니다.
 
 ```{important}
-기본 동기식 메시징에서 응답 메시지는 원래 메시지의 응답 ID를 사용해야 *하고* 응답 대상으로 전송되어야 합니다.
+기본 동기 메시징에서 응답 메시지는 원본 메시지의 응답 ID를 사용해야 *하고* 응답 대상으로 전송되어야 합니다.
 ```
 
 이제 메시지 리스너가 응답 메시지로 회신하는 것을 보았으므로 응답 제한 시간을 테스트할 수 있습니다.
@@ -236,9 +243,9 @@
 
 시간 초과와 동시에 메시지를 보내는 것을 축하합니다.
 
-## 무다음
+## 무엇 향후 계획
 
-직접 **모드** 사용하여 동기식 메시징을 탐색하려면 [이전 버전에서 직접 동기식 메시징 사용](./using-direct-synchronous-messaging-in-previous-versions.md)참조하십시오.
+직접 *모드* 사용하여 동기식 메시징을 탐색하려면 [이전 버전에서 직접 동기식 메시징 사용](./using-direct-synchronous-messaging-in-previous-versions.md)참조하십시오.
 
 메시지를 보낸 후 즉시 처리를 계속하려면 [비동기 메시징 사용](./using-asynchronous-messaging.md)참조하십시오.
 

@@ -1,3 +1,7 @@
+---
+uuid: c9510a79-6e06-424a-86dc-99df9fdda568
+---
+
 # Batch Engine API 기본 사항 - 데이터 가져오기
 
 Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 REST API를 제공합니다. Liferay로 데이터를 가져오려면 이러한 서비스를 호출하십시오.
@@ -11,7 +15,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Batch Engine API 기본 사항](./liferay-g4j2.zip) 을 다운로드하고 압축을 풉니다.
+1. [Batch Engine API 기본 사항](./liferay-g4j2.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
@@ -21,9 +25,9 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
    unzip liferay-g4j2.zip
    ```
 
-1. 데이터를 가져오려면 가져오는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. **Schemas** 섹션까지 아래로 스크롤하고 가져오려는 엔터티의 `x-class-name` 필드를 기록해 둡니다.
+1. 데이터를 가져오려면 가져오는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. *Schemas* 섹션까지 아래로 스크롤하고 가져오려는 엔터티의 `x-class-name` 필드를 기록해 둡니다.
 
-1. 다음 cURL 스크립트를 사용하여 계정을 Liferay 인스턴스로 가져옵니다. 명령줄에서 `curl` 폴더로 이동합니다. **계정** 의 정규화된 클래스 이름을 매개변수로 사용하여 `ImportTask_POST_ToInstance.sh` 스크립트를 실행합니다.
+1. 다음 cURL 스크립트를 사용하여 계정을 Liferay 인스턴스로 가져옵니다. 명령줄에서 `curl` 폴더로 이동합니다. *계정* 의 정규화된 클래스 이름을 매개변수로 사용하여 `ImportTask_POST_ToInstance.sh` 스크립트를 실행합니다.
 
    ```bash
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
@@ -48,7 +52,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
    }
    ```
 
-1. 현재 `인 executeStatus` 은 `INITIAL`입니다. 배치 엔진에 대한 작업 제출을 나타냅니다. 데이터를 확인하려면 이것이 `COMPLETED` 이 될 때까지 기다려야 합니다. 명령줄에서 `ImportTask_GET_ById.sh` 스크립트를 실행하고 `1234` 을 가져오기 작업의 ID로 바꿉니다.
+1. 현재 `인 executeStatus` `INITIAL`입니다. 배치 엔진에 대한 작업 제출을 나타냅니다. 데이터를 확인하려면 이것이 `COMPLETED` 이 될 때까지 기다려야 합니다. 명령줄에서 `ImportTask_GET_ById.sh` 스크립트를 실행하고 `1234` 가져오기 작업의 ID로 바꿉니다.
 
    ```bash
    ./ImportTask_GET_ById.sh 1234
@@ -72,9 +76,9 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
    }
    ```
 
-   `executeStatus` 이 `COMPLETED`이면 가져온 데이터를 확인할 수 있습니다. 그렇지 않은 경우 명령을 다시 실행하여 태스크 실행이 완료되었는지 확인하십시오. `executeStatus` 에 `FAILED`이 표시되면 `errorMessage` 필드를 확인하여 무엇이 잘못되었는지 확인하십시오.
+   `executeStatus` `COMPLETED`이면 가져온 데이터를 확인할 수 있습니다. 그렇지 않은 경우 명령을 다시 실행하여 태스크 실행이 완료되었는지 확인하십시오. `executeStatus` `FAILED`표시되면 `errorMessage` 필드를 확인하여 무엇이 잘못되었는지 확인하십시오.
 
-1. **전역 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **계정** 으로 이동하여 가져온 데이터를 확인합니다. 두 개의 새 계정이 추가되었는지 확인합니다.
+1. *전역 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *계정*으로 이동하여 가져온 데이터를 확인합니다. 두 개의 새 계정이 추가되었는지 확인합니다.
 
    ![두 개의 새 계정이 추가되었는지 확인합니다.](./batch-engine-api-basics/images/01.png)
 
@@ -84,7 +88,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
    javac -classpath .:* *.java
    ```
 
-1. `ImportTask_POST_ToInstance` 클래스를 실행합니다. `가능` 을 클래스의 정규화된 이름으로 바꾸고 `베이커` 을 가져오려는 JSON 데이터로 바꿉니다.
+1. `ImportTask_POST_ToInstance` 클래스를 실행합니다. `가능` 클래스의 정규화된 이름으로 바꾸고 `베이커` 가져오려는 JSON 데이터로 바꿉니다.
 
    ```bash
    java -classpath .:* -DclassName=able -Ddata=baker ImportTask_POST_ToInstance
@@ -98,7 +102,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
    JSON 응답에서 가져오기 작업의 `id` 에 유의하십시오.
 
-1. `ImportTask_GET_ById` 클래스를 실행합니다. `1234` 을 가져오기 작업의 ID로 바꿉니다. `executeStatus` 에 `COMPLETED`이 표시되면 위 단계에 표시된 대로 데이터를 확인할 수 있습니다.
+1. `ImportTask_GET_ById` 클래스를 실행합니다. `1234` 가져오기 작업의 ID로 바꿉니다. `executeStatus` `COMPLETED`표시되면 위 단계에 표시된 대로 데이터를 확인할 수 있습니다.
 
    ```bash
    java -cp .:* -DimportTaskId=1234 ImportTask_GET_ById
@@ -123,7 +127,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 | `-u "test@liferay.com:learn"`                                                                                     | 기본 인증 자격 증명             |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2로 앱 보호](../using-oauth2/securing-your-app-with-oauth2.md)를 참조하세요.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html)을 통해 사용자를 인증해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](../using-oauth2/using-oauth2-to-authorize-users.md)을 참조하세요.
 ```
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
@@ -142,7 +146,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
 | 라인(약칭)                                                                         | 묘사                                                            |
 |:------------------------------------------------------------------------------ |:------------------------------------------------------------- |
-| `ImportTaskResource.Builder builder = ...`                                     | `ImportTaskResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.          |
+| `ImportTaskResource.Builder builder = ...`                                     | `ImportTaskResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.            |
 | `ImportTaskResource importTaskResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `ImportTaskResource` 서비스 인스턴스를 생성합니다.             |
 | `importTaskResource.postImportTask(...);`                                      | `importTaskResource.postImportTask` 메서드를 호출하고 데이터를 게시에 전달합니다. |
 
@@ -162,7 +166,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
 ## ImportTask 상태 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 가져오기 작업의 상태를 가져올 수 있습니다. `1234` 을 가져오기 작업의 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 가져오기 작업의 상태를 가져올 수 있습니다. `1234` 가져오기 작업의 ID로 바꿉니다.
 
 ### ImportTask_GET_ById.sh
 
@@ -180,7 +184,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
 ### ImportTask_GET_ById.java
 
-`ImportTask_GET_ById` 클래스를 실행합니다. `1234` 을 가져오기 작업의 ID로 바꿉니다.
+`ImportTask_GET_ById` 클래스를 실행합니다. `1234` 가져오기 작업의 ID로 바꿉니다.
 
 명령:
 
@@ -216,7 +220,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ### ImportTask_POST_ToSite.java
 
-'ImportTask_POST_ToSite' 클래스를 실행합니다. `1234`를 사이트의 ID로, `able`을 클래스의 정규화된 이름으로, `baker`를 가져오려는 JSON 데이터로 바꿉니다.
+`ImportTask_POST_ToSite` 클래스를 실행합니다. `1234` 사이트의 ID로 바꾸고, `` 클래스의 정규화된 이름으로, `가져올 JSON 데이터로 베이커` 바꿉니다.
 
 명령:
 
@@ -260,7 +264,7 @@ JSON 응답은 새로 생성된 가져오기 작업의 정보를 표시합니다
 
 ### ImportTask_PUT_ById.java
 
-`ImportTask_PUT_ById` 클래스를 실행합니다. `가능` 을 클래스의 정규화된 이름으로 바꾸고 `베이커` 을 JSON 데이터로 대체하여 거기에 있는 내용을 덮어씁니다. 데이터에는 덮어쓰려는 엔터티의 ID가 포함되어야 합니다.
+`ImportTask_PUT_ById` 클래스를 실행합니다. `가능` 클래스의 정규화된 이름으로 바꾸고 `베이커` JSON 데이터로 대체하여 거기에 있는 내용을 덮어씁니다. 데이터에는 덮어쓰려는 엔터티의 ID가 포함되어야 합니다.
 
 명령:
 
@@ -268,7 +272,7 @@ JSON 응답은 새로 생성된 가져오기 작업의 정보를 표시합니다
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_PUT_ById
 ```
 
-예를 들어 기존 `계정` 데이터를 덮어쓰려면 `1234` 및 `5678` 를 기존 계정의 ID로 바꿉니다.
+예를 들어 기존 `계정` 데이터를 덮어쓰려면 `1234` 및 `5678` 기존 계정의 ID로 바꿉니다.
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\" :1234, \"name\": \"Bar\", \"type\": \"business\"}, {\"id\": 5678, \"name\": \"Goo\", \"type\": \"guest\"}]" ImportTask_PUT_ById
@@ -302,7 +306,7 @@ java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account
 
 ### ImportTask_DELETE_ById.java
 
-`ImportTask_DELETE_ById` 클래스를 실행합니다. `가능` 을 클래스의 정규화된 이름으로 바꾸고 `베이커` 을 JSON 데이터로 대체하여 거기에 있는 내용을 덮어씁니다. 데이터에는 삭제할 항목의 ID가 포함되어야 합니다.
+`ImportTask_DELETE_ById` 클래스를 실행합니다. `가능` 클래스의 정규화된 이름으로 바꾸고 `베이커` JSON 데이터로 대체하여 거기에 있는 내용을 덮어씁니다. 데이터에는 삭제할 항목의 ID가 포함되어야 합니다.
 
 명령:
 
@@ -326,7 +330,7 @@ java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account
 
 ## 가져온 데이터의 내용 가져오기
 
-다음 cURL 및 Java 명령을 사용하여 가져온 데이터를 검색할 수 있습니다. `1234` 을 가져오기 작업의 ID로 바꿉니다. 그런 다음 현재 디렉터리에 `.zip` 파일로 다운로드됩니다.
+다음 cURL 및 Java 명령을 사용하여 가져온 데이터를 검색할 수 있습니다. `1234` 가져오기 작업의 ID로 바꿉니다. 그런 다음 현재 디렉터리에 `.zip` 파일로 다운로드됩니다.
 
 ### ImportTaskContent_GET_ById.sh
 
@@ -358,7 +362,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 모든 헤드리스 배치 엔진 서비스 및 스키마를 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
+[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) 은 모든 헤드리스 배치 엔진 서비스 및 스키마를 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
 
 ## 추가 정보
 

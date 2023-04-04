@@ -34,16 +34,16 @@ Elasticsearch 서버는 다음 URL에서 액세스할 수 있습니다.
 
 ```{note}
 지원되는 프로덕션 구성은 아니지만 번들 Elasticsearch 서버를 모니터링하기 위해 Kibana를 설치하면 개발 및 테스트 중에 유용합니다. 
-- Liferay 7.3에서 [OSS 전용 Kibana 빌드](https://www.elastic.co/downloads/kibana-oss) 를 설치합니다.
-- Liferay DXP 7.4 U17+ 및 Liferay Portal 7.4 GA17+에서 무료 버전 [Kibana](https://www.elastic.co/downloads/past-releases#kibana) 을 설치합니다.
+- Liferay 7.3에서 [OSS 전용 Kibana 빌드](https://www.elastic.co/downloads/kibana-oss)를 설치합니다.
+- Liferay DXP 7.4 U17+ 및 Liferay Portal 7.4 GA17+에서 무료 버전 [Kibana](https://www.elastic.co/downloads/past-releases#kibana)을 설치합니다.
 
-[설정 시 오류가 발생하는 경우 문제 해결 섹션](#error-connecting-to-the-sidecar-elasticsearch-from-kibana) 을 참조하세요.
+[설정 시 오류가 발생하는 경우 문제 해결 섹션](#error-connecting-to-the-sidecar-elasticsearch-from-kibana)을 참조하세요.
 ```
 
 프로덕션 환경에서 HSQL과 같은 임베디드 데이터베이스를 실행하지 않을 것이며 번들로 제공되는 Elasticsearch 서버도 프로덕션 환경에서 실행해서는 안 됩니다. 대신 원격 모드에서 독립 실행형 서버 또는 서버 노드의 클러스터로 Elasticsearch를 실행하십시오.
 
 ```{important}
-검색 튜닝 앱 [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md) 및 [Result Rankings](../../search-administration-and-tuning/result-rankings.md) 는 Liferay 7.2 및 7.3에서 기본 데이터 저장을 위해 검색 인덱스를 사용했습니다. 이러한 앱에 대한 데이터는 Liferay 데이터베이스에 저장되지 않았습니다. 따라서 Liferay 7.2 및 7.3에서 사이드카 또는 내장된 Elasticsearch를 사용하는 동안 구성된 동의어 집합 또는 결과 순위가 있는 경우 원격 Elasticsearch 서버로 전환하고 재인덱싱해도 해당 구성이 복원되지 _않습니다_. 대신 수동으로 동의어 집합 및 결과 순위를 원격 Elasticsearch 클러스터로 가져와야 합니다. 이러한 인덱스를 보존하기 위해 Elastic의 [스냅샷 및 복원](../elasticsearch/upgrading-elasticsearch.md) 기능을 사용하는 방법에 대한 자세한 내용은 [업그레이드 가이드]https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html)를 참조하세요.
+검색 튜닝 앱 [동의어 집합](../../search-administration-and-tuning/synonym-sets.md) 및 [결과 순위](../../search-administration-and-tuning/result-rankings.md)는 Liferay 7.2 및 7.3에서 기본 데이터 저장을 위한 검색 색인을 사용했습니다. 이러한 앱에 대한 데이터는 Liferay 데이터베이스에 저장되지 않았습니다. 따라서 Liferay 7.2 및 7.3에서 사이드카 또는 내장된 Elasticsearch를 사용하는 동안 구성된 동의어 집합 또는 결과 순위가 있는 경우 원격 Elasticsearch 서버로 전환하고 재인덱싱해도 해당 구성이 복원되지 _않습니다_. 대신 수동으로 동의어 집합 및 결과 순위를 원격 Elasticsearch 클러스터로 가져와야 합니다. 이러한 인덱스를 보존하기 위해 Elastic의 [스냅샷 및 복원](../elasticsearch/upgrading-elasticsearch.md) 기능을 사용하는 방법에 대한 자세한 내용은 [업그레이드 가이드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html)를 참조하세요.
 ```
 
 ## 번들로 제공되는 Elasticsearch Server 사용 사례
@@ -72,7 +72,7 @@ Elasticsearch 사이드카 서버는 Liferay 7.4(DXP 및 Portal), Liferay DXP 7.
 | 야생화: 7.3+            | Sidecar          | &#10008; | &#10008; (자동 다운로드) |
 | 웹스피어: 7.3+           | Sidecar          | &#10008; | &#10004;           |
 | 웹로직: 7.3+            | Sidecar          | &#10008; | &#10004;           |
-| **모든 맛: 7.2/7.3 GA3-** | **끼워넣는** | &#10004; | &#10008;           |
+| _모든 맛: 7.2/7.3 GA3-_ | _Embedded_       | &#10004; | &#10008;           |
 
 Tomcat 이외의 애플리케이션 서버용 번들을 다운로드한 경우 서버를 시작하면 Elasticsearch 배포가 즉시 다운로드되고 사이드카 서버로 시작됩니다.
 
@@ -96,7 +96,6 @@ Tomcat 이외의 애플리케이션 서버용 번들을 다운로드한 경우 �
 | 모든 앱 서버에 특별한 단계가 필요하지 않습니다.                          | [일부 앱 서버](#app-server-differences) 에는 추가 단계가 필요합니다.                                                                                        |
 
 ## 사이드카/임베디드 Elasticsearch 문제 해결
-./elasticsearch시작됨
 
 이러한 오류는 시작 시 Elasticsearch 사이드카 설치 문제를 나타냅니다.
 
@@ -151,5 +150,5 @@ Caused by: org.elasticsearch.bootstrap.StartupException: java.lang.IllegalArgume
 
 1. 라이프레이를 다시 시작합니다.
 
-1. 포털은 시작 시 [일부 앱 서버에서](./using-the-sidecar-or-embedded-elasticsearch.md#embedded-versus-sidecar) (예: Tomcat) Elasticsearch 런타임을 다운로드하고 추출합니다.
+1. 포털은 시작 시 [일부 앱 서버에서](./using-the-sidecar-or-embedded-elasticsearch.md#embedded-versus-sidecar)(예: Tomcat) Elasticsearch 런타임을 다운로드하고 추출합니다.
 

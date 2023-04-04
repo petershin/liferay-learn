@@ -1,3 +1,6 @@
+---
+uuid: 523a720c-5398-4c85-a57d-7916f83d1365
+---
 # Setting Up Automatic Deployment
 
 Kyle is able to begin developing and testing with Liferay Cloud, but it's easier if he can test his changes immediately after deployment. 

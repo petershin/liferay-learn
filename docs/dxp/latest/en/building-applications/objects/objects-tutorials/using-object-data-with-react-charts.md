@@ -115,7 +115,7 @@ Follow these steps to download and build the React application:
 1. Navigate to the React application's folder and start the React server.
 
    ```bash
-   cd x3j8-remote-app
+   cd x3j8-custom-element
    ```
    
    ```bash
@@ -178,9 +178,9 @@ Once the code is compiled, you can host the application's `.js` file in the Life
 
    | Field | Value |
    | :--- | :--- |
-   | Name | X3J8-Remote-App |
+   | Name | X3J8-Custom-Element |
    | Type | Custom Element |
-   | HTML Element Name | `x3j8-remote-app` |
+   | HTML Element Name | `x3j8-custom-element` |
    | URL | WebDAV URL for the `.js` file |
    | Portlet Category Name | Remote Apps |
 

@@ -112,7 +112,7 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
 1. React 애플리케이션의 폴더로 이동하여 React 서버를 시작합니다.
 
    ```bash
-   cd x3j8-remote-app
+   cd x3j8-custom-element
    ```
 
    ```bash
@@ -175,9 +175,9 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
 
    | 분야         | 가치                   |
    |:---------- |:-------------------- |
-   | 이름         | X3J8-원격 앱            |
+   | 이름         | X3J8-Custom-Element           |
    | 유형         | 커스텀 엘레멘트             |
-   | HTML 요소 이름 | `x3j8-remote-app`    |
+   | HTML 요소 이름 | `x3j8-custom-element`    |
    | URL        | `.js` 파일의 WebDAV URL |
    | 포틀릿 분류 이름  | 원격 앱                 |
 

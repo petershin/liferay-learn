@@ -112,7 +112,7 @@
 1. Reactアプリケーションのフォルダに移動し、Reactサーバーを起動します。
 
    ```bash
-   cd x3j8-remote-app
+   cd x3j8-custom-element
    ```
 
    ```bash
@@ -175,9 +175,9 @@
 
    | 項目           | 値                    |
    |:------------ |:-------------------- |
-   | 名前           | X3J8-Remote-App      |
+   | 名前           | X3J8-Custom-Element      |
    | 種類           | カスタム要素               |
-   | HTML 要素名     | `x3j8-remote-app`    |
+   | HTML 要素名     | `x3j8-custom-element`    |
    | URL          | `.js`ファイルのWebDAV URL |
    | ポートレットのカテゴリ名 | リモートアプリケーション         |
 

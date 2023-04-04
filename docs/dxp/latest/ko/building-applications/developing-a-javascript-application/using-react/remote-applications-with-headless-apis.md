@@ -69,7 +69,7 @@
 1. CRUD 애플리케이션의 폴더로 이동하여 React 서버를 시작합니다.
 
    ```bash
-   cd j4x7-remote-app
+   cd j4x7-custom-element
    ```
 
    ```bash

@@ -67,7 +67,7 @@
 1. CRUDアプリケーションのフォルダに移動し、Reactサーバーを起動します。
 
    ```bash
-   cd j4x7-remote-app
+   cd j4x7-custom-element
    ```
 
    ```bash

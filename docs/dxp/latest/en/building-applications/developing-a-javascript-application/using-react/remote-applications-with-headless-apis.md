@@ -72,7 +72,7 @@ Then, follow these steps to add the `/o/c/*` URL pattern to the *Default Portal 
 1. Navigate to the CRUD application's folder and start the React server.
 
    ```bash
-   cd j4x7-remote-app
+   cd j4x7-custom-element
    ```
 
    ```bash

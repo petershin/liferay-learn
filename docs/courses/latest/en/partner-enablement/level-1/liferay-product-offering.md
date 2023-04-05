@@ -2,7 +2,7 @@
 
 **At a Glance**
 
-* Liferay develops a single Product - Liferay DXP 7.4
+* Liferay develops a single Product - Liferay DXP
 * There are three Product Deployment Offerings:
   * Liferay Experience Cloud (LXC) [SaSS]
   * Liferay Experience Cloud - Self Managed [PaaS]

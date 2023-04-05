@@ -7,6 +7,8 @@ An LDAP server can be configured at the system level or instance level in Lifera
 
 Delectable Bonsai must import user data from a company they just acquired. In real life, you'd already have an LDAP server to use. Here, you'll simulate one.
 
+## Start and Populate an LDAP Directory
+
 1. Start a new OpenLDAP container.
 
    ```bash
@@ -26,7 +28,7 @@ Delectable Bonsai must import user data from a company they just acquired. In re
    docker network inspect bridge
    ```
 
-1. Generate an LDIF file that will be used to seed the LDAP with a user and a user group.
+1. Generate an LDIF file that to seed LDAP with a user and a user group.
 
    ```bash
    cat <<EOT >> sarah.ldif
@@ -62,7 +64,7 @@ Delectable Bonsai must import user data from a company they just acquired. In re
    docker exec almightysyrupldap ldapadd -x -D "cn=admin,dc=almightysyrup,dc=com" -w admin -f /container/service/slapd/assets/test/sarah.ldif -H ldap://localhost
    ```
 
-Now in Liferay, connect to the company's LDAP server with the steps below. 
+## Connect Liferay to the LDAP Directory
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
 
@@ -72,7 +74,7 @@ Now in Liferay, connect to the company's LDAP server with the steps below.
 
 1. Click _Add_.
 
-1. In the new page, fill in the LDAP connection information.
+1. In the new page, enter the LDAP connection information.
 
    * Server Name: `Almighty Syrup`
    * Base Provider URL: `ldap://[IP address]:389`
@@ -82,19 +84,19 @@ Now in Liferay, connect to the company's LDAP server with the steps below.
 
    ![Fill in the connection information.](./connecting-to-ldap/images/01.png)
 
-   Click _Test LDAP Connection_. A new popup window shows that Liferay has successfully connected to the LDAP server. Click the _X_ and close the window.
+   Click _Test LDAP Connection_. A popup window shows that Liferay has successfully connected to the LDAP server. Click the _X_ and close the window.
 
-1. Next, fill in the LDAP user information section. Make sure that required fields such as name and email are mapped correctly. Click _Test LDAP Users_ to preview the mapping of user fields.
+1. Next, enter the LDAP user information section. Make sure that required fields such as name and email are mapped correctly. Click _Test LDAP Users_ to preview the mapping of user fields.
 
    ![Fill in the user fields information.](./connecting-to-ldap/images/02.png)
 
-   Note, change the default value for the `UUID` field to be `uid`. This is necessary for the export step in the next article.
+   Note, change the default value for the `UUID` field to be `uid`. This is necessary to export data to LDAP.
 
-1. Next, fill out the LDAP groups information. Click _Test LDAP Groups_ to verify that the `almightysyrup` user group is visible.
+1. Next, enter the LDAP groups information. Click _Test LDAP Groups_ to verify that the `almightysyrup` user group is visible.
 
-1. Finally, fill out the LDAP export information. Click _Save_.
+1. Finally, enter the LDAP export information. Click _Save_.
 
-The next step is [importing and exporting users](./importing-and-exporting-users.md).
+Next: [Importing and Exporting users](./importing-and-exporting-users.md).
 
 ## Relevant Concepts
 

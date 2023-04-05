@@ -3,7 +3,7 @@ uuid: e2f145ad-3da7-43cf-9ecb-cd5c6f8131ed
 ---
 # Platform Limitations
 
-Liferay Cloud and its services have some notable limitations. Many of these limitations may vary due to your specific level of subscription. Other limitations may change over time as changes are made to Liferay Cloud's infrastructure.
+Liferay Cloud and its services have some notable limitations, depending on your subscription level. Limitations may change over time as changes are made to Liferay Cloud's infrastructure.
 
 ## Overview
 
@@ -38,27 +38,27 @@ See the further sections below for more details.
 
 These limitations apply to every service in a Liferay Cloud environment:
 
-* **Access to Old Logs**: By default, logs are only available from the last 30 days for each service via the console. [Submit a Support request](https://help.liferay.com/) to access older *application logs* (up to a year old). Status and build logs cannot be retrieved after 30 days.
+**Access to old logs**: By default, logs from the last 30 days for each service are available via the console. [Submit a Support request](https://help.liferay.com/) to access older application logs (up to a year old). Status and build logs cannot be retrieved after 30 days.
 
-* **Additional Instances per Service**: Your subscription plan determines the allowed [`scale` setting](../manage-and-optimize/auto-scaling.md) for your services. By default, all services have only one additional instance (except the Search service must use an odd number of additional instances). The `scale` setting begins already configured to use the purchased number of instances for your subscription plan.
+**Additional instances per service**: The [`scale` setting](../manage-and-optimize/auto-scaling.md) initially uses the purchased number of instances for your subscription plan.By default, services can add one additional instance, with the exception of Search. The Search service must use an odd number of instances.
 
-* **Downtime**: Services running with a single instance may experience restarts when the Liferay Cloud infrastructure is updated for scheduled maintenance. Use high availability settings (two instances each of the Web server and Liferay services, and three instances of the Search service) for production-type environments to avoid disruptions. You can view the schedule for planned maintenance [here](https://help.liferay.com/hc/en-us/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule).
+**Downtime**: Services running with a single instance may experience restarts when the Liferay Cloud infrastructure is updated for scheduled maintenance. Use high availability settings (two instances each of the Web server and Liferay services, and three instances of the Search service) for production-type environments to avoid disruptions. You can view the schedule for planned maintenance [here](https://help.liferay.com/hc/en-us/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule).
 
-* **Memory per Service Instance**: Services can have up to a possible 200 GB of RAM, and this is determined by your subscription plan. The default plan has 16 GB per service.
+**Memory per service instance**: Services can have up to a possible 200 GB of RAM, and this is determined by your subscription plan. The default plan has 16 GB per service.
 
-* **Virtual CPUs per Service Instance**: Services can have up to a possible 32 vCPUs, and this is determined by your subscription plan.
+**Virtual CPUs per service instance**: Services can have up to a possible 32 vCPUs, and this is determined by your subscription plan.
 
 ## Liferay Service
 
 These limitations apply to the [Liferay service](../using-the-liferay-dxp-service.md) in each Liferay Cloud environment:
 
-* **Remote Staging**: [Remote Staging](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) is not available with Liferay Cloud. Local Staging is still available and supported.
+**Remote Staging**: [Remote Staging](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) is not available with Liferay Cloud. Local Staging is still available and supported.
 
-* **Autoscaling**: When enabled, autoscaling may only add new instances up to a default maximum of 10. You can configure a different maximum number of instances, up to 100 instances.
+**Autoscaling**: When enabled, autoscaling may only add new instances up to a default maximum of 10. You can configure a different maximum number of instances, up to 100 instances.
 
-* **Document Library Storage**: Your subscription plan determines the size of the `data` volume for the Liferay service; this includes storage used for Liferay's Document Library. The default volume size is 100 GB, but it can be increased as long as the size is below 4 TB. A private cluster is required if a project needs more than 4 TB of storage.
+**Document Library Storage**: Your subscription plan determines the size of the `data` volume for the Liferay service; this includes storage used for Liferay's Document Library. The default volume size is 100 GB, but it can be increased as long as the size is below 4 TB. A private cluster is required if a project needs more than 4 TB of storage.
 
-* **Session Replication**: Replicating sessions between multiple Liferay instances in Liferay Cloud may impact your instances' performance, and is not supported. <!-- Instead, use sticky sessions, or avoid using session storage entirely in your custom applications. -->
+**Session Replication**: Replicating sessions between multiple Liferay instances in Liferay Cloud may impact your instances' performance, and is not supported. <!-- Instead, use sticky sessions, or avoid using session storage entirely in your custom applications. -->
 
 ### Dynatrace
 
@@ -66,129 +66,129 @@ These limitations apply to the [Liferay service](../using-the-liferay-dxp-servic
 
 These limitations apply to Dynatrace:
 
-* **Dynatrace Metrics Discrepancy**: Dynatrace metrics do not match the metrics shown in the Liferay Cloud Console. This is because Dynatrace displays metrics for the JVM process, while the console metrics measure the entire container hosting the JVM.
+**Dynatrace Metrics Discrepancy**: Dynatrace metrics do not match the metrics shown in the Liferay Cloud Console. This is because Dynatrace displays metrics for the JVM process, while the console metrics measure the entire container hosting the JVM.
 
-* **Streaming Liferay Logs**: Liferay logs cannot be streamed to Dynatrace logs.
+**Streaming Liferay Logs**: Liferay logs cannot be streamed to Dynatrace logs.
 
-* **Session Replay**: The Dynatrace Session Replay feature is not available with Liferay Cloud.
+**Session Replay**: The Dynatrace Session Replay feature is not available with Liferay Cloud.
 
 ## Database Service
 
 These limitations apply to the [Database service](../platform-services/database-service/database-service.md) in each Liferay Cloud environment:
 
-* **Database Metrics**: The metrics displayed in the Liferay Cloud console reflect the data for the service container, not individual service metrics.
+**Database Metrics**: The metrics displayed in the Liferay Cloud console reflect the data for the service container, not individual service metrics.
 
-* **Database Size**: The maximum size for a database is normally 100 GB. [Submit a Support request](https://help.liferay.com/) to increase this limit.
+**Database Size**: The maximum size for a database is normally 100 GB. [Submit a Support request](https://help.liferay.com/) to increase this limit.
 
-* **Downtime**: Database maintenance may cause downtime every few months. This downtime usually lasts about two minutes. This may not come with a notification in advance. You can set a [preferred maintenance window](../platform-services/database-service/database-service.md#database-maintenance-window-variables) to mitigate the impact of downtime.
+**Downtime**: Database maintenance may cause downtime every few months. This downtime usually lasts about two minutes. This may not come with a notification in advance. You can set a [preferred maintenance window](../platform-services/database-service/database-service.md#database-maintenance-window-variables) to mitigate the impact of downtime.
 
-* **Read/write splits**: Configuring a read/write split in your database service is not supported in Liferay Cloud.
+**Read/write splits**: Configuring a read/write split in your database service is not supported in Liferay Cloud.
 
 ## Search Service
 
 These limitations apply to the [Search service](../platform-services/search-service.md) in each Liferay Cloud environment:
 
-* **Configuration**: Elasticsearch must be configured through the Liferay Cloud workspace, and **not** the Liferay UI. The configuration file in the project workspace is used on each deployment and overwrites the previous configuration.
+**Configuration**: Elasticsearch must be configured through the Liferay Cloud workspace, and **not** the Liferay UI. The configuration file in the project workspace is used on each deployment and overwrites the previous configuration.
 
-* **Memory Settings**: The default (and maximum) JVM heap size for the Elasticsearch server is 4 GB. The maximum allocation is determined by your subscription plan.
+**Memory Settings**: The default (and maximum) JVM heap size for the Elasticsearch server is 4 GB. The maximum allocation is determined by your subscription plan.
 
-* **OS Packages**: Installing additional OS packages for the Search service is not supported.
+**OS Packages**: Installing additional OS packages for the Search service is not supported.
 
-* **Pod Management Policy**: Elasticsearch nodes in a cluster must connect to each other in order to start successfully. For search services with multiple instances, the `podManagementPolicy` value in the service's `LCP.json` file must be set to `parallel` to avoid issues with the service starting up.
+**Pod Management Policy**: Elasticsearch nodes in a cluster must connect to each other in order to start successfully. For search services with multiple instances, the `podManagementPolicy` value in the service's `LCP.json` file must be set to `parallel` to avoid issues with the service starting up.
 
 ## Backup Service
 
 These limitations apply to the [Backup service](../platform-services/backup-service/backup-service-overview.md) in each Liferay Cloud environment:
 
-* **Backup Consistency**: As with any process copying from a database with changing data, consistency between data in the database and document library cannot be guaranteed if a backup is created while updates are occurring. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a [manual backup](../platform-services/backup-service/backup-service-overview.md#creating-a-manual-backup).
+**Backup Consistency**: As with any process copying from a database with changing data, consistency between data in the database and document library cannot be guaranteed if a backup is created while updates are occurring. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a [manual backup](../platform-services/backup-service/backup-service-overview.md#creating-a-manual-backup).
 
-* **Backup Size**: Before Liferay Cloud version 4.2.0, backups used [ephemeral storage](#file-storage). The size of backups in these versions is limited to the remaining space on a shared ephemeral disk, which may vary.
+**Backup Size**: Before Liferay Cloud version 4.2.0, backups used [ephemeral storage](#file-storage). The size of backups in these versions is limited to the remaining space on a shared ephemeral disk, which may vary.
 
-* **Backup Uploads**: Only one backup may be uploaded per minute.
+**Backup Uploads**: Only one backup may be uploaded per minute.
 
-* **Concurrent Operations**: Concurrent backup creation, restores, or uploads or not supported. However, concurrent downloads are supported.
+**Concurrent Operations**: Concurrent backup creation, restores, or uploads or not supported. However, concurrent downloads are supported.
 
-* **Resource Allocation**: The RAM and number of vCPUs allocated to the Backup service are determined by your subscription plan. The default allocation is 2 vCPUs and 1 GB of RAM for the service.
+**Resource Allocation**: The RAM and number of vCPUs allocated to the Backup service are determined by your subscription plan. The default allocation is 2 vCPUs and 1 GB of RAM for the service.
 
-* **Upload/Download Speed**: The speed of backup uploads or downloads is limited by your internet connection speed and the size of the backup. It may take up to several hours to download a backup with a very slow connection.
+**Upload/Download Speed**: The speed of backup uploads or downloads is limited by your internet connection speed and the size of the backup. It may take up to several hours to download a backup with a very slow connection.
 
 ## Web Server Service
 
 These limitations apply to the [Web server service](../platform-services/web-server-service.md) in each Liferay Cloud environment:
 
-* **Plugins**: Installing additional plugins for the web server is not supported.
+**Plugins**: Installing additional plugins for the web server is not supported.
 
-* **Resource Allocation**: The web server has 2 vCPUs and 512 MB of memory by default. This may result in slower response times for large uploads or downloads. Your subscription plan determines the specific resource allocation for the service.
+**Resource Allocation**: The web server has 2 vCPUs and 512 MB of memory by default. This may result in slower response times for large uploads or downloads. Your subscription plan determines the specific resource allocation for the service.
 
 ## Continuous Integration Service
 
 These limitations apply to the [CI service](../platform-services/continuous-integration.md) in each Liferay Cloud environment:
 
-* **Administrative access**: Admin-level access is not allowed on the Jenkins server. Instead, use the [Jenkins pipeline hooks](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) to extend the CI pipeline. Existing DevOps processes may need to be adjusted to conform to this pipeline.
+**Administrative access**: Admin-level access is not allowed on the Jenkins server. Instead, use the [Jenkins pipeline hooks](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) to extend the CI pipeline. Existing DevOps processes may need to be adjusted to conform to this pipeline.
 
-* **Concurrent API Calls**: Projects cannot perform concurrent calls to Liferay Cloud APIs. This includes tasks such as deploying a build to an environment through the [CLI tool](./command-line-tool.md).
+**Concurrent API Calls**: Projects cannot perform concurrent calls to Liferay Cloud APIs. This includes tasks such as deploying a build to an environment through the [CLI tool](./command-line-tool.md).
 
-* **Resource Allocation**: The RAM and number of vCPUs allocated to the CI service are determined by your subscription plan. The default allocation is 4 vCPUs and 8 GB of RAM for the service.
+**Resource Allocation**: The RAM and number of vCPUs allocated to the CI service are determined by your subscription plan. The default allocation is 4 vCPUs and 8 GB of RAM for the service.
 
-* **Server capacity**: Your subscription plan determines the size of the data volume for the CI server.  The default size is 100 GB.
+**Server capacity**: Your subscription plan determines the size of the data volume for the CI server.  The default size is 100 GB.
 
 ### Builds
 
 These limitations apply to any builds created within a project:
 
-* **Build Size**: Individual builds are limited to 2 GB each. You must ensure that the total size of the project in your repository is less than this limit.
+**Build Size**: Individual builds are limited to 2 GB each. You must ensure that the total size of the project in your repository is less than this limit.
 
-* **Concurrent Builds**: A maximum of two concurrent builds may run on Jenkins because two executor threads are used.
+**Concurrent Builds**: A maximum of two concurrent builds may run on Jenkins because two executor threads are used.
 
-* **Maximum Builds per Day**: Builds are limited to 300 per day. [Submit a Support request](https://help.liferay.com/) to increase this limit.
+**Maximum Builds per Day**: Builds are limited to 300 per day. [Submit a Support request](https://help.liferay.com/) to increase this limit.
 
-* **Private GitHub Servers**: Integration with private GitHub servers is not supported.
+**Private GitHub Servers**: Integration with private GitHub servers is not supported.
 
 ## Custom Services
 
 These limitations apply to any [custom services](../platform-services/using-a-custom-service.md) in a Liferay Cloud environment:
 
-* **Host OS Access**: Privileged access to the host Operating System kernel is limited to subscriptions that include a private cluster.
+**Host OS Access**: Privileged access to the host Operating System kernel is limited to subscriptions that include a private cluster.
 
 ## Security
 
 These limitations apply to the security features available within Liferay Cloud:
 
-* **Antivirus**: The default Liferay DXP feature for scanning viruses on file upload cannot be used. Liferay Cloud's [Antivirus solution](./liferay-cloud-infrastructure.md#antivirus) is used instead. Uploaded content is scanned on a schedule, and thus risks may not be detected immediately when a file is uploaded.
+**Antivirus**: The default Liferay DXP feature for scanning viruses on file upload cannot be used. Liferay Cloud's [Antivirus solution](./liferay-cloud-infrastructure.md#antivirus) is used instead. Uploaded content is scanned on a schedule, and thus risks may not be detected immediately when a file is uploaded.
 
-* **Authentications per Minute**: A maximum of 8400 authentications are allowed per minute.
+**Authentications per Minute**: A maximum of 8400 authentications are allowed per minute.
 
-* **Firewall Rules**: You must purchase a subscription with a private cluster and coordinate with Liferay Cloud Support to set custom firewall rules. Custom firewall rules cannot be used with a shared cluster subscription. Any custom firewall rules created for a private cluster apply to all environments in the project.
+**Firewall Rules**: You must purchase a subscription with a private cluster and coordinate with Liferay Cloud Support to set custom firewall rules. Custom firewall rules cannot be used with a shared cluster subscription. Any custom firewall rules created for a private cluster apply to all environments in the project.
 
-* **IP Address Filtering**: IP address filtering can only be applied on the web server service.
+**IP Address Filtering**: IP address filtering can only be applied on the web server service.
 
 ## File Storage
 
 These limitations apply to file storage for multiple services:
 
-* **Ephemeral Storage**: Ephemeral Storage is used for all files not stored in volumes. Ephemeral Storage is located on the host node's internal storage, and it is shared between all containers running on that node. If a container requests more space than the host node has available, then the container is moved to another node. The hosts disks have a capacity of 250 GB.
+**Ephemeral Storage**: Ephemeral Storage is used for all files not stored in volumes. Ephemeral Storage is located on the host node's internal storage, and it is shared between all containers running on that node. If a container requests more space than the host node has available, then the container is moved to another node. The hosts disks have a capacity of 250 GB.
 
-* **Sharing Data Between Services**: Services with the StatefulSet [Deployment Type](../build-and-deploy/understanding-deployment-types.md) cannot share data with other services.
+**Sharing Data Between Services**: Services with the StatefulSet [Deployment Type](../build-and-deploy/understanding-deployment-types.md) cannot share data with other services.
 
-* **StatefulSet Storage Size**: You must make a Support ticket to add storage for services with the StatefulSet [Deployment Type](../build-and-deploy/understanding-deployment-types.md). The storage size of StatefulSet services cannot be reduced once it is increased.
+**StatefulSet Storage Size**: You must make a Support ticket to add storage for services with the StatefulSet [Deployment Type](../build-and-deploy/understanding-deployment-types.md). The storage size of StatefulSet services cannot be reduced once it is increased.
 
 ## Network Configuration
 
 These limitations apply to the network configuration of your services in a Liferay Cloud environment:
 
-* **Changes to Custom Domains**: There may be a delay (up to 60 minutes) for changes or additions to custom domains to propagate.
+**Changes to Custom Domains**: There may be a delay (up to 60 minutes) for changes or additions to custom domains to propagate.
 
-* **Maximum Custom Domains**: There is a limit of 50 [custom domains](../infrastructure-and-operations/networking/custom-domains.md) if you have multiple services exposed outside of the environment (in addition to the default web server). However, the web server can use a limit of 1500 custom domains if it is the only point of entry. You must [open a Support ticket](https://help.liferay.com/) if you change your web server service to increase the usage beyond this limit.
+**Maximum Custom Domains**: There is a limit of 50 [custom domains](../infrastructure-and-operations/networking/custom-domains.md) if you have multiple services exposed outside of the environment (in addition to the default web server). However, the web server can use a limit of 1500 custom domains if it is the only point of entry. You must [open a Support ticket](https://help.liferay.com/) if you change your web server service to increase the usage beyond this limit.
 
-* **Maximum SSL Certificates**: A maximum of 14 custom SSL certificates are allowed. The provider issuing the certificates may also impose its own limitations to make this less.
+**Maximum SSL Certificates**: A maximum of 14 custom SSL certificates are allowed. The provider issuing the certificates may also impose its own limitations to make this less.
 
-* **Outbound Connections**: Connections from the project environment to external endpoints use a NAT solution with a 120-second timeout per connection. New connections created successively in a short period of time can lead to port exhaustion and dropped outbound traffic. Connection pooling can prevent this problem.
+**Outbound Connections**: Connections from the project environment to external endpoints use a NAT solution with a 120-second timeout per connection. New connections created successively in a short period of time can lead to port exhaustion and dropped outbound traffic. Connection pooling can prevent this problem.
 
-* **Public IP Addresses**: By default, every environment has one public IP address, and services within the environment have internal IP addresses. However, you can configure a service's ports to be external, assigning a public IP address to the service. Exposing a service's endpoints to the internet is *not recommended*, because it bypasses DDoS protection from the [HTTPS load balancer](../infrastructure-and-operations/networking/load-balancer.md).
+**Public IP Addresses**: By default, every environment has one public IP address, and services within the environment have internal IP addresses. However, you can configure a service's ports to be external, assigning a public IP address to the service. Exposing a service's endpoints to the internet is *not recommended*, because it bypasses DDoS protection from the [HTTPS load balancer](../infrastructure-and-operations/networking/load-balancer.md).
 
-* **Wildcard SSL Certificates**: Wildcard certificates are not supported for Liferay's auto-generated SSL certificates. However, you may configure your instance with custom Wildcard SSL certificates.
+**Wildcard SSL Certificates**: Wildcard certificates are not supported for Liferay's auto-generated SSL certificates. However, you may configure your instance with custom Wildcard SSL certificates.
 
-* **TCP Port Status**: Some TCP ports may show as open, even if no external traffic can reach the customer environment using it. These ports are open for other projects sharing the same disk on the server, and do not pose a security risk for your environment.
+**TCP Port Status**: Some TCP ports may show as open, even if no external traffic can reach the customer environment using it. These ports are open for other projects sharing the same disk on the server, and do not pose a security risk for your environment.
 
 ## VPN Servers
 

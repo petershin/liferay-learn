@@ -5,11 +5,6 @@ uuid: def885ec-59c7-4b4d-a194-f9eaff64a82e
 ---
 # Partner Enablement
 
-```{toctree}
-:maxdepth: 3
-partner-enablement/level-1.md
-```
-
 Check out all Liferay’s technical resources designed to provide you with the background and understanding you need to build your story around Liferay.
 
 ::::{grid} 2

@@ -3,26 +3,31 @@ uuid: eac9c112-377f-4106-8800-041f96c3de1f
 ---
 # Logging into Your Liferay Cloud Services
 
-By default, login is required to directly access the web interfaces for the Liferay and Infrastructure services. Login credentials for these services are typically provided in an initial onboarding email - but may be located in the Liferay Cloud Console if needed.
+By default, login is required to directly access the web interfaces for the Liferay and Infrastructure services on any non-production environment (e.g., uat). Login credentials for these services are typically provided in an initial onboarding email, but they are also located in the Liferay Cloud Console.
 
 ## Locating Login Credentials
 
 1. Navigate to the _infra_ environment.
-1. Click _Services_ in the left menu.
-1. Select the _ci_ service.
-1. Click the _Environment Variables_ tab.
-1. Click _show_ icon next to `JENKINS_CUSTOMER_PASSWWORD` to retrieve the password.
-1. Click _show_ icon next to `JENKINS_CUSTOMER_USER_NAME` to retrieve the user name.
 
-![webserver](./logging-into-your-liferay-cloud-services/images/01.png)
+1. Click _Settings_ in the left menu.
+
+1. Click the _Secrets_ tab.
+
+1. Click the `lcp-secret-ci-customer-user` and `lcp-secret-ci-customer-password` secrets to access them.
+
+    ![Click the lcp-secret-ci-customer-user and lcp-secret-ci-customer-password secret to find your login credentials.](./logging-into-your-liferay-cloud-services/images/01.png)
+
+1. For each secret, click *View* on the secret's page to reveal the value. You can click on the value once it's revealed to copy it to your clipboard.
+
+    ![CLick View to reveal the secret value.](./logging-into-your-liferay-cloud-services/images/02.png)
 
 ## Logging In
 
-1. Navigate to your chosen environment (_dev_, _prd_, etc.).
+1. Navigate to your chosen environment (_dev_, _uat_, etc.).
 
 1. Click the *Visit Site* dropdown menu at the top of the page.
 
-    ![The Visit Site dropdown lists all available endpoints for your Liferay instances in the environment.](./logging-into-your-liferay-cloud-services/images/02.png)
+    ![The Visit Site dropdown lists all available endpoints for your Liferay instances in the environment.](./logging-into-your-liferay-cloud-services/images/03.png)
 
     The dropdown menu lists all of the available endpoints to your `liferay` service you can access, including the default `webserver` service endpoint and any custom domains you have added to the environment.
 
@@ -30,23 +35,23 @@ By default, login is required to directly access the web interfaces for the Life
 
 1. Enter the Liferay Cloud [Jenkins user name and password](#locating-login-credentials) when prompted.
 
-    ![authentication](./logging-into-your-liferay-cloud-services/images/03.png)
+    ![Authenticate in the popup that appears with the credentials you retrieved.](./logging-into-your-liferay-cloud-services/images/04.png)
 
-1. This will redirect the user to the Liferay DXP 7.x instance (in this example, Liferay DXP 7.2 GA1).
+This redirects the user to the Liferay DXP 7.x instance (in this example, Liferay DXP 7.2 GA1).
 
-    ![Liferay DXP 7.2 GA1 Sign In](./logging-into-your-liferay-cloud-services/images/04.png)
+![After logging in, you are taken to the environment's Liferay DXP instance.](./logging-into-your-liferay-cloud-services/images/05.png)
 
 ### Finding Default Service URLs
 
 You can also find the default `webserver` endpoint's URL by navigating to the service's page and clicking on the `webserver` logo at the top of the page (which expands into a URL):
 
-![The service name's logo expands into a clickable URL if one is applicable for the service.](./logging-into-your-liferay-cloud-services/images/05.png)
+![The service name's logo expands into a clickable URL if one is applicable for the service.](./logging-into-your-liferay-cloud-services/images/06.png)
 
 Your [Jenkins login credentials](#locating-login-credentials) are still required when accessing Liferay through this method.
 
 You can follow similar steps to access the Jenkins CI web interface. Navigate to the `ci` service in the `infra` environment to find the Jenkins URL:
 
-![The CI service also has a URL available for the Jenkins CI web interface.](./logging-into-your-liferay-cloud-services/images/06.png)
+![The CI service also has a URL available for the Jenkins CI web interface.](./logging-into-your-liferay-cloud-services/images/07.png)
 
 ## Additional Information
 

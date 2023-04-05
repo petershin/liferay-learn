@@ -37,7 +37,7 @@ To access to your new project repository, follow the instructions in the Liferay
 
 After accepting the invitation, locate your provisioned project repository:
 
-1. Log in to GitHub
+1. Log into GitHub.
 
 1. Search `dxpcloud` in the _Your teams_ search box.
 
@@ -57,9 +57,9 @@ Using an alternative hosting service? See how to configure your [Bitbucket](./co
 
 ## Log in to Your CI and Liferay Services
 
-Log in to Jenkins (CI) and Liferay to directly access their web interfaces.
+Log into Jenkins (CI) its web interface. You must also log in to access your Liferay DXP instance for any non-production environment (such as *dev* or *uat*).
 
-Both login credentials are provided in the initial onboarding email, but they are also listed under *Environment Variables* in the *ci* service page of the *infra* environment.
+Both login credentials are provided in the initial onboarding email, but they are also listed as [secrets](../infrastructure-and-operations/managing-secure-environment-variables-with-secrets.md) in your *infra* environment.
 
 See [Logging into Your Liferay Cloud Services](./logging-into-your-liferay-cloud-services.md) for detailed instructions.
 

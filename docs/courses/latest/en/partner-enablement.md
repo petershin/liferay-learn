@@ -10,8 +10,7 @@ uuid: def885ec-59c7-4b4d-a194-f9eaff64a82e
 partner-enablement/level-1.md
 ```
 
-Placeholder introductory text to contextualize this content for users.
-
+Check out all Liferay’s technical resources designed to provide you with the background and understanding you need to build your story around Liferay.
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -19,6 +18,6 @@ Placeholder introductory text to contextualize this content for users.
 :::{grid-item-card} Level 1
 :link: ./partner-enablement/level-1.md
 
-Placeholder text introducing the purpose of the Level 1 Partner Enablement modules. 
+Level 1 introduces you to Liferay: the Company, Product, and the value Liferay's offerings provide.
 :::
 ::::

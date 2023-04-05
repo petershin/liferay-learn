@@ -40,8 +40,7 @@ On each file is an *Options* (![Options icon](../../../images/icon-options.png))
  * Download
  * Edit
  * Permissions
- * Move to Recycle Bin
- * Edit With Image Editor (for image files)
+ * Delete
 
 ## Using the Documents and Media Widget 
 
@@ -101,7 +100,7 @@ Selecting a file reveals several options:
 
 **Edit Tags:** Click on the *Edit Tags* icon (![Edit icon](../../../images/icon-edit.png)) to edit the existing tags of a file.
 
-**Move to Recycle Bin:** Click on the *Recycle Bin* icon (![Recycle icon](../../../images/icon-trash.png)) to delete a file.
+**Delete:** Click on the *Trash* icon (![Trash icon](../../../images/icon-trash.png)) to delete a file.
 
 **Actions:** The *Actions* icon (![Actions icon](../../../images/icon-actions.png)) has options, including *Checkin* and *Checkout*. See [Google Drive Integration](../devops/google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md), [Office 365 Integration](../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md), and [LibreOffice Integration](../devops/enabling-openoffice-libreoffice-integration.md). 
 

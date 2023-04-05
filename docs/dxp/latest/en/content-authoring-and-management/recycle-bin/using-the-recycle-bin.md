@@ -21,7 +21,7 @@ Attachments added to Wiki and Message Board entries do not go to the Recycle Bin
 
 1. Open the *Site Menu* (![Product Menu](../../images/icon-product-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
-1. Use the checkboxes to select the folders and assets you want to recycle, and then click the *Recycle Bin* button (![Recycle](../../images/icon-app-trash.png)).
+1. Use the checkboxes to select the folders and assets you want to delete, and then click the *Delete* button (![Delete](../../images/icon-app-trash.png)).
 
    Alternatively, you can click the *Actions* button (![Actions](../../images/icon-actions.png)) for individual folders or assets and select *Move to the Recycle Bin*.
 

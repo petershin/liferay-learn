@@ -21,7 +21,7 @@ Follow these steps to create files in your Document Library that link to files i
 
     ![You can select files from Google Drive&trade; or your photos.](./linking-to-files-on-google-drive/images/02.png)
 
-A new file entry appears for the Google document you linked to. You can view the file entry as you would any file entry. The Google document's contents show in the file entry's preview pane. As with any file entry, the _Options_ button (![Options](../../../images/icon-options.png)) gives you access to the Download, Edit, Move, Permissions, Move to Recycle Bin, and Checkin/Checkout/Cancel Checkout options.
+A new file entry appears for the Google document you linked to. You can view the file entry as you would any file entry. The Google document's contents show in the file entry's preview pane. As with any file entry, the _Options_ button (![Options](../../../images/icon-options.png)) gives you access to the Download, Edit, Move, Permissions, Delete, and Checkin/Checkout/Cancel Checkout options.
 
 ```{tip}
 You can also use Google Docs&trade; for online file creation and editing. See [Creating and Editing Documents with Google Drive](./creating-documents/creating-and-editing-documents-with-google-drive.md).

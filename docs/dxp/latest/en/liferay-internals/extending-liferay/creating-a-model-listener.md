@@ -9,12 +9,16 @@ To add a model listener, you implement the [`ModelListener`](https://github.com/
 
 Here, you'll learn how to create model listeners:
 
-1. [Examine a Running Model Listener](#examine-a-running-model-listener)
-1. [Identify a Model Class and Event](#identify-a-model-class-and-event)
-1. [Declare the Model](#declare-the-model)
-1. [Declare the Event](#declare-the-event)
-1. [Implement Your Business Logic](#implement-your-business-logic)
-1. [Deploy and Test](#deploy-and-test)
+- [Creating a Model Listener](#creating-a-model-listener)
+  - [Examine a Running Model Listener](#examine-a-running-model-listener)
+  - [Identify a Model Class and Event](#identify-a-model-class-and-event)
+  - [Model Listener Behavior](#model-listener-behavior)
+  - [Declare the Model](#declare-the-model)
+  - [Declare the Event](#declare-the-event)
+  - [Implement Your Business Logic](#implement-your-business-logic)
+  - [Deploy and Test](#deploy-and-test)
+  - [Conclusion](#conclusion)
+  - [Related Topics](#related-topics)
 
 ## Examine a Running Model Listener
 
@@ -154,7 +158,7 @@ Test your listener by adding and then deleting a message boards message:
 
 1. Click the add ![Add](../../images/icon-add.png) button, type a Subject and a Body, and click *Publish*.
 
-1. Click *Message Boards* from the menu again to see your message. Click the Action ![Action](../../images/icon-actions.png) button and choose *Move to Recycle Bin*. Notice that you don't see your message in the logs yet because the message has only been recycled.
+1. Click *Message Boards* from the menu again to see your message. Click the Action ![Action](../../images/icon-actions.png) button and choose *Delete*. Notice that you don't see your message in the logs yet because the message has only been recycled.
 
 1. Click *Recycle Bin* from the Product Menu, and you'll see your message.
 

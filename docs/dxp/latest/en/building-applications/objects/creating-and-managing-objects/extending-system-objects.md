@@ -34,7 +34,7 @@ Liferay's [Custom Fields](../../../system-administration/configuring-liferay/add
 
 ## Adding Relationships
 
-You can add relationships between system and custom objects to link their entities.System objects support both one-to-many and many-to-many relationships. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information.
+You can add relationships between system and custom objects to link their entities. System objects support both one-to-many and many-to-many relationships. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information.
 
 ```{important}
 Since system objects don't support custom [layouts](./layouts/designing-object-layouts.md) and [views](./views/designing-object-views.md), you cannot add relationships to the UI for system objects. You can only interact with them via headless APIs. 
@@ -52,7 +52,7 @@ See [Using Relationships REST APIs](../objects-tutorials/using-apis/using-relati
 
 ## Adding Actions
 
-You can add actions to system objects, to be triggered when entries are added, updated, or removed. The table below shows actions supported by system objects: 
+You can add actions to system objects, triggered on events like adding, updating, or removing entries. The table below shows actions supported by system objects: 
 
 | Action Type | Supported in System Objects? |
 | :---------- | :--------------------------- |

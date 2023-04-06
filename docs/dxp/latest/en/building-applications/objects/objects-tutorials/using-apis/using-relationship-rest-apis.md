@@ -126,7 +126,7 @@ Use the REST APIs to add object entries and manage their relationships:
 
    This relates the able entry with the baker entries and prints the response.
 
-   ```bash
+   ```json
    {
      ...
      "externalReferenceCode" : "baker-one",
@@ -172,7 +172,7 @@ Use the REST APIs to add object entries and manage their relationships:
    ./Able_GET_AbleToBaker_ById.sh {able-entry-id}
    ```
 
-   ```bash
+   ```json
    {
      ...
      "externalReferenceCode" : "baker-two",
@@ -201,7 +201,7 @@ Use the REST APIs to add object entries and manage their relationships:
 
    This relates the able entry with the charlie entries and prints the response.
 
-   ```bash
+   ```json
    {
      ...
      "externalReferenceCode" : "charlie-one",
@@ -233,7 +233,7 @@ Use the REST APIs to add object entries and manage their relationships:
 
    This returns a list of all able entries related to the specified charlie entry.
 
-   ```bash
+   ```json
    {
      ...
      "items" : [ {
@@ -258,7 +258,7 @@ Use the REST APIs to add object entries and manage their relationships:
 
    This relates the charlie entry to another able entry.
 
-   ```bash
+   ```json
    {
      ...
      "externalReferenceCode" : "able-two",
@@ -274,7 +274,7 @@ Use the REST APIs to add object entries and manage their relationships:
    ./Charlie_GET_AbleToCharlie_ById.sh {charlie-entry-id}
    ```
 
-   ```bash
+   ```json
    {
      ...
      "items" : [ {
@@ -305,7 +305,7 @@ Use the REST APIs to add object entries and manage their relationships:
 
    This command uses the `nestedFields` parameter to return all related baker and charlie entries.
 
-   ```bash
+   ```json
    {
      "externalReferenceCode" : "able-one",
      "id" : 42421,

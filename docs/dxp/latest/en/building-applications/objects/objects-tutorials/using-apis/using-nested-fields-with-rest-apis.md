@@ -8,7 +8,7 @@ uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related objects in a single GET request. The `nestedFieldsDepth` parameter determines the depth of object entries included in the query: `0-5`.
 
 ```{tip}
-The `nestedFields` parameter is a convenient way to retrieve information that would usually require multiple requests. With it, you can retrieve an entry's information along with the information of its related entries. To return only the related entries, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introductory tutorial.
+The `nestedFields` parameter is a convenient way to retrieve information that would usually require multiple requests. With it, you can retrieve an entry along with its related entries. To return only the related entries, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introduction.
 ```
 
 To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create related entries and query them using the `nestedFields` parameter.
@@ -74,7 +74,7 @@ Once published, you can access each object via Headless APIs.
 
 ## Preparing the Sample Code
 
-Run the following commands to download and unzip the provided sample code:
+Run the commands below to download and unzip the provided sample code:
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
@@ -108,7 +108,7 @@ Follow these steps to add and query related object entries:
 
    Copy the first entry's ID for use with the following POST command.
 
-   ```bash
+   ```json
    {
      "id" : 41969,
      ...
@@ -136,7 +136,7 @@ Follow these steps to add and query related object entries:
 
    This creates `Baker` entries related to the specified `Able` entry. Copy the first `Baker` entry ID for use with the following POST command.
 
-   ```bash
+   ```json
    {
      "id" : 41975,
      ...
@@ -167,7 +167,7 @@ Follow these steps to add and query related object entries:
 
    This creates `Charlie` entries related to the preceding `Baker` entry. Copy the first entry's ID for use with the following GET command.
 
-   ```bash
+   ```json
    {
      "id" : 41981,
      ...
@@ -193,12 +193,12 @@ Follow these steps to add and query related object entries:
 1. Execute `Charlie_GET_ById` using the `Charlie` entry ID as a parameter.
 
    ```bash
-   ./Charlie_GET_ById.sh {charlie-entry-id}
+   ./Charlie_GET_ById.sh [charlie-entry-id]
    ```
 
    This queries the entry using nested fields and returns the schema for all three levels of the related objects.
 
-   ```bash
+   ```json
    {
      "r_bakerToCharlie_c_baker" : {
        ...

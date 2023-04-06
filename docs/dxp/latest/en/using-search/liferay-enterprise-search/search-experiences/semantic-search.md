@@ -7,7 +7,7 @@ uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 
 # Semantic Search
 {bdg-secondary}`7.4 U70+`
-{bdg-link-primary}`[Beta Feature](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md)`
 
 ```{toctree}
 :maxdepth: 1

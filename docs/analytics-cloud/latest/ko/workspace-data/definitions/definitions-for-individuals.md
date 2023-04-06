@@ -1,7 +1,3 @@
----
-uuid: 901ea460-7e47-437e-ad83-17b6d94ae3b0
----
-
 # 개인에 대한 정의
 
 개인에 대한 데이터 모델은 연락처 데이터가 [DXP에서 동기화](../../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)될 때 매핑되는 다양한 속성에 의해 정의됩니다.

@@ -1,4 +1,3 @@
-
 # 창고 참조 가이드
 
 창고를 관리하려면 **글로벌 메뉴**(![Global Menu](../images/icon-applications-menu.png))을 열고 **상거래** &rarr; **창고** 로 이동합니다.

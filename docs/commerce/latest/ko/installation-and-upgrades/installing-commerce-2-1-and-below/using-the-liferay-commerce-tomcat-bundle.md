@@ -1,4 +1,3 @@
-
 # Liferay Commerce Tomcat 번들 사용
 
 Liferay Commerce 번들은 [Liferay Commerce 커뮤니티 다운로드](https://commerce.liferay.dev/download) 페이지에서 다운로드할 수 있습니다. 번들에는 Apache Tomcat에 사전 배포된 최신 버전의 Liferay Commerce 및 Liferay Portal이 포함되어 있습니다.

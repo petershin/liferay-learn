@@ -1,7 +1,3 @@
----
-uuid: 582a56fe-6b89-4942-bdfd-614a668ae9e4
----
-
 # 가상 제품 참조
 
 ![가상 하위 탭에서 고유한 가상 제품 설정을 구성합니다.](./virtual-product-reference/images/01.png)

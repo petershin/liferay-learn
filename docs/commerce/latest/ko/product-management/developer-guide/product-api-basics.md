@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [제품 API 기본 사항](./liferay-z8v2.zip)을 다운로드하고 압축을 풉니다.
+1. [제품 API 기본 사항](./liferay-z8v2.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-z8v2.zip -O

@@ -1,4 +1,3 @@
-
 # MuleSoft 커넥터 구성
 
 MuleSoft에 대한 Liferay의 커넥터는 Liferay의 API를 설명하는 OpenAPI 3.0 문서를 사용합니다. 각 OpenAPI 문서는 다음 스키마에 따라 Liferay 인스턴스에 동적으로 배포됩니다.

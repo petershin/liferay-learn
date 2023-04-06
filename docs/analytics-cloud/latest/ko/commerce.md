@@ -1,7 +1,6 @@
 ---
 toc:
   - ./commerce/commerce-dashboard.md
-uuid: e63b3d0f-cbc6-46dd-878f-3e50be270d14
 ---
 
 # 커머스

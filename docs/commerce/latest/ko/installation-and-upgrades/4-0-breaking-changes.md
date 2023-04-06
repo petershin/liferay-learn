@@ -24,7 +24,7 @@
 
 * **날짜:** 2020-9-10
 
-* **JIRA 티켓:**[COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
+* **JIRA 티켓:** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
 
 ### 무엇이 바뀌었나요?
 
@@ -56,7 +56,7 @@
 
 * **날짜: 2021년 2월** 일-2월 22일
 
-* **JIRA 티켓:**[COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-5788)
+* **JIRA 티켓:** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-5788)
 
 ### 무엇이 바뀌었나요?
 
@@ -152,7 +152,7 @@
 
 * **날짜: 2021년 2월** 일-12일
 
-* **JIRA 티켓:**[COMMERCE-4974](https://issues.liferay.com/browse/COMMERCE-4974)
+* **JIRA 티켓:** [COMMERCE-4974](https://issues.liferay.com/browse/COMMERCE-4974)
 
 ### 무엇이 바뀌었나요?
 
@@ -176,7 +176,7 @@
 
 * **날짜:** 2021-Mar-02
 
-* **JIRA 티켓:**[LPS-125991](https://issues.liferay.com/browse/LPS-125991)
+* **JIRA 티켓:** [LPS-125991](https://issues.liferay.com/browse/LPS-125991)
 
 ### 무엇이 바뀌었나요?
 
@@ -224,7 +224,7 @@
 
 * **날짜:** 2021-Mar-26
 
-* **JIRA 티켓:**[COMMERCE-2909](https://issues.liferay.com/browse/COMMERCE-2909)
+* **JIRA 티켓:** [COMMERCE-2909](https://issues.liferay.com/browse/COMMERCE-2909)
 
 ### 무엇이 바뀌었나요?
 
@@ -250,7 +250,7 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **날짜: 2021년 4월** 일-27일
 
-* **JIRA 티켓:**[COMMERCE-5888](https://issues.liferay.com/browse/COMMERCE-6315)
+* **JIRA 티켓:** [COMMERCE-5888](https://issues.liferay.com/browse/COMMERCE-6315)
 
 ### 무엇이 바뀌었나요?
 
@@ -272,7 +272,7 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **날짜:** 2021-Apr-27
 
-* **JIRA 티켓:**[COMMERCE-5889](https://issues.liferay.com/browse/COMMERCE-5889)
+* **JIRA 티켓:** [COMMERCE-5889](https://issues.liferay.com/browse/COMMERCE-5889)
 
 ### 무엇이 바뀌었나요?
 
@@ -322,7 +322,7 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **날짜: 2021년 6월** 일-4일
 
-* **JIRA 티켓:**[COMMERCE-6095](https://issues.liferay.com/browse/COMMERCE-6095)
+* **JIRA 티켓:** [COMMERCE-6095](https://issues.liferay.com/browse/COMMERCE-6095)
 
 ### 무엇이 바뀌었나요?
 
@@ -340,7 +340,7 @@ MiniCompare 구성 요소/위젯의 이전 구현을 의존하거나 확장하�
 
 * **날짜: 2021년** 월 14일
 
-* **JIRA 티켓:**[COMMERCE-3030](https://issues.liferay.com/browse/COMMERCE-3030)
+* **JIRA 티켓:** [COMMERCE-3030](https://issues.liferay.com/browse/COMMERCE-3030)
 
 ### 무엇이 바뀌었나요?
 
@@ -358,7 +358,7 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **날짜:** 2021-11-21
 
-* **JIRA 티켓:**[COMMERCE-7288](https://issues.liferay.com/browse/COMMERCE-7288)
+* **JIRA 티켓:** [COMMERCE-7288](https://issues.liferay.com/browse/COMMERCE-7288)
 
 ### 무엇이 바뀌었나요?
 
@@ -378,7 +378,7 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **날짜:** 2022-2-16
 
-* **JIRA 티켓:**[COMMERCE-8440](https://issues.liferay.com/browse/COMMERCE-8440)
+* **JIRA 티켓:** [COMMERCE-8440](https://issues.liferay.com/browse/COMMERCE-8440)
 
 ### 무엇이 바뀌었나요?
 
@@ -416,7 +416,7 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **날짜:** 2022년 4월 13일
 
-* **JIRA 티켓:**[COMMERCE-8408](https://issues.liferay.com/browse/COMMERCE-8408)
+* **JIRA 티켓:** [COMMERCE-8408](https://issues.liferay.com/browse/COMMERCE-8408)
 
 ### 무엇이 바뀌었나요?
 
@@ -450,7 +450,7 @@ Shop by Diagram은 BOM 기능을 대체합니다. 이는 폴더 및 BOM 항목 �
 
 * **날짜: 2021년 12월 16일**
 
-* **JIRA 티켓:**[COMMERCE-7830](https://issues.liferay.com/browse/COMMERCE-7830)
+* **JIRA 티켓:** [COMMERCE-7830](https://issues.liferay.com/browse/COMMERCE-7830)
 
 ### 무엇이 바뀌었나요?
 

@@ -1,4 +1,3 @@
-
 # 카탈로그 API 기본 사항
 
 애플리케이션 메뉴 또는 REST API에서 카탈로그를 관리할 수 있습니다. [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) 서비스를 호출하여 카탈로그를 만들고 관리합니다.
@@ -10,7 +9,7 @@
 
 Liferay가 실행되면,
 
-1. [Catalog API 기본 사항](./liferay-q2v8.zip)을 다운로드하고 압축을 풉니다.
+1. [Catalog API 기본 사항](./liferay-q2v8.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-q2v8.zip -O
@@ -53,7 +52,7 @@ Liferay가 실행되면,
    }
    ```
 
-1. 카탈로그 추가를 확인하려면 *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *상거래* &rarr; *카탈로그*로 이동합니다. 새 카탈로그가 나타납니다.
+1. 카탈로그 추가를 확인하려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **상거래** &rarr; **카탈로그** 로 이동합니다. 새 카탈로그가 나타납니다.
 
    ![카탈로그가 추가되었는지 확인합니다.](./catalog-api-basics/images/01.png)
 
@@ -88,7 +87,7 @@ Liferay가 실행되면,
 | `-u "test@liferay.com:learn"`                                                                        | 기본 인증 자격 증명을 입력합니다.           |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html)을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html)를 참조하세요. OAuth2를 사용합니다.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 사용합니다.
 ```
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
@@ -174,7 +173,7 @@ java -classpath .:* Catalogs_GET_FromInstance
 |:----------- |:------------------ |
 | `name:desc` | 내림차순으로 이름별로 정렬합니다. |
 
-자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
+자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
 
 ## 카탈로그 받기
 
@@ -284,4 +283,4 @@ java -classpath .:* -DcatalogId=1234 Catalog_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `Catalog` 서비스 및 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `Catalog` 서비스 및 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.

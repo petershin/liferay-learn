@@ -1,7 +1,3 @@
----
-uuid: 9f85d668-8ec3-40a3-b704-57a1ed65304b
----
-
 # 용어 API 기본 사항
 
 애플리케이션 메뉴 또는 REST API를 사용하여 이용약관을 관리할 수 있습니다. [headless-admin-commerce-order](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-order/v1.0/openapi.json) 의 `/terms` 엔드포인트를 사용하여 이용 약관을 만들고 관리합니다.
@@ -13,7 +9,7 @@ uuid: 9f85d668-8ec3-40a3-b704-57a1ed65304b
 
 Liferay가 실행되면,
 
-1. [Term API 기본 사항](./liferay-a9v8.zip)을 다운로드하고 압축을 풉니다.
+1. [Term API 기본 사항](./liferay-a9v8.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/order-management/developer-guide/liferay-a9v8.zip -O
@@ -83,7 +79,7 @@ Liferay가 실행되면,
    }
    ```
 
-1. *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; *상거래* &rarr; *이용 약관*으로 이동 합니다 . 새로 추가된 이용약관이 나타납니다.
+1. **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; **상거래** &rarr; **이용 약관** 으로 이동 합니다 . 새로 추가된 이용약관이 나타납니다.
 
    ![이용약관 추가를 확인합니다.](./term-api-basics/images/01.png)
 
@@ -118,7 +114,7 @@ Liferay가 실행되면,
 | `-u "test@liferay.com:learn"`                                                                                             | 기본 인증 자격 증명을 입력합니다.           |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html)을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html)를 참조하세요. OAuth2를 사용합니다.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 사용합니다.
 ```
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
@@ -159,7 +155,7 @@ Liferay가 실행되면,
 
 cURL 또는 Java 명령을 사용하여 Liferay 인스턴스의 모든 이용 약관을 나열할 수 있습니다.
 
-### Terms_GET_FromInstance.sh
+### Terms **GET** FromInstance.sh
 
 명령:
 
@@ -173,7 +169,7 @@ cURL 또는 Java 명령을 사용하여 Liferay 인스턴스의 모든 이용 �
    :language: bash
 ```
 
-### Terms_GET_FromInstance.java
+### Terms **GET** FromInstance.java
 
 명령:
 
@@ -205,7 +201,7 @@ java -classpath .:* Terms_GET_FromInstance
 | `priority:desc`           | 내림차순으로 `우선 순위` 로 정렬합니다.                       |
 | `priority:desc,type:desc` | `우선 순위` 내림차순으로 먼저 정렬한 다음 `기준으로 내림차순으로` 입력합니다. |
 
-자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
+자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
 
 ## 기간을 얻을
 
@@ -215,7 +211,7 @@ cURL 및 Java `get` 명령을 사용하여 특정 이용 약관을 가져옵니�
 `Terms_GET_FromInstance.[java|sh]`를 사용하여 모든 이용약관 목록을 가져오고 구체적으로 원하는 이용약관의 `id`를 기록해 둡니다.
 ```
 
-### Term_GET_ById.sh
+### Term **GET** ById.sh
 
 명령:
 
@@ -229,7 +225,7 @@ cURL 및 Java `get` 명령을 사용하여 특정 이용 약관을 가져옵니�
    :language: bash
 ```
 
-### Term_GET_ById.java
+### Term **GET** ById.java
 
 명령:
 
@@ -251,7 +247,7 @@ java -classpath .:* -DtermId=1234 Term_GET_ById
 
 cURL 및 Java `패치` 명령으로 기존 이용 약관을 업데이트합니다. `1234` 이용 약관의 ID로 바꿉니다.
 
-### Term_PATCH_ById.sh
+### Term **PATCH** ById.sh
 
 명령:
 
@@ -265,7 +261,7 @@ cURL 및 Java `패치` 명령으로 기존 이용 약관을 업데이트합니�
    :language: bash
 ```
 
-### Term_PATCH_ById.java
+### Term **PATCH** ById.java
 
 명령:
 
@@ -285,7 +281,7 @@ java -classpath .:* -DtermId=1234 Term_PATCH_ById
 
 cURL 및 Java `delete` 명령을 사용하여 기존 이용 약관을 삭제합니다. `1234` 이용 약관의 ID로 바꿉니다.
 
-### Term_DELETE_ById.sh
+### Term **DELETE** ById.sh
 
 명령:
 
@@ -299,7 +295,7 @@ cURL 및 Java `delete` 명령을 사용하여 기존 이용 약관을 삭제합�
    :language: bash
 ```
 
-### Term_DELETE_ById.java
+### Term **DELETE** ById.java
 
 명령
 
@@ -315,4 +311,4 @@ java -classpath .:* -DtermId=1234 Term_DELETE_ById
    :lines: 8-16
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `Term` 서비스 및 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `Term` 서비스 및 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.

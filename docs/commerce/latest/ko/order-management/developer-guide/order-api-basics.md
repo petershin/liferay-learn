@@ -1,4 +1,3 @@
-
 # 주문 API 기본 사항
 
 애플리케이션 메뉴 또는 REST API를 사용하여 주문을 관리할 수 있습니다. [headless-admin-commerce-order](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-order/v1.0/openapi.json) 서비스를 호출하여 주문을 생성하고 관리합니다.

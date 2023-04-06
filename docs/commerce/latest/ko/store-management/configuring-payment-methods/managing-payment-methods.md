@@ -1,4 +1,3 @@
-
 # 결제 수단 관리
 
 [채널](../../store-management/channels/introduction-to-channels.md) 및 상점 [사이트](../../starting-a-store/sites-and-site-types.md)으로 범위가 지정된 Liferay Commerce의 결제 방법. Liferay Commerce 인스턴스에 동일한 인스턴스에서 호스팅되는 상점이 두 개 이상 있는 경우 관리자는 각 사이트에서 서로 다른 결제 방법을 사용할 수 있습니다.

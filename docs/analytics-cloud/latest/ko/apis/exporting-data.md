@@ -1,4 +1,3 @@
-
 # 데이터 내보내기
 
 [사이트 대시보드](../touchpoints/sites-dashboard.md) 및 [개인 대시보드](../people/individuals/individuals-dashboard.md)을 통해 다양한 분석 데이터에 액세스할 수 있습니다. Analytics Cloud의 API를 사용하여 Analytics 데이터를 가져오고 내보낼 수도 있습니다. 특히 개별 데이터, 세그먼트 데이터 또는 페이지 데이터를 가져올 수 있습니다.

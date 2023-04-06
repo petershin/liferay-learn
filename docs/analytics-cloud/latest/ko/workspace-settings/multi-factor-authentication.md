@@ -1,7 +1,3 @@
----
-uuid: 451a029f-4b51-4f0b-ad9f-5cc5b61b1321
----
-
 # 다단계 인증
 
 MFA(Multi-Factor Authentication)는 모든 Analytics Cloud 사용자에게 필요합니다. 이 추가 보안 계층은 피싱 및 중간자(MITM) 공격과 같은 사이버 공격으로부터 사용자를 보호하는 데 도움이 됩니다.

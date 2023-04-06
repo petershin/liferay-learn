@@ -1,7 +1,3 @@
----
-uuid: 744fedf5-0e07-4276-a770-d1ad2e098128
----
-
 # 상거래 대시보드
 
 [Commerce](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)활성화 후 Analytics Cloud 대시보드를 통해 Commerce 데이터를 검토할 수 있습니다. 이 대시보드는 데이터를 4개의 카드로 구성합니다.

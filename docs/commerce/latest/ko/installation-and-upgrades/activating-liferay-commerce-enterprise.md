@@ -1,4 +1,3 @@
-
 # Liferay Commerce Enterprise 활성화
 
 Liferay DXP/Portal 7.3부터 Commerce는 모든 Liferay 번들 및 Docker 컨테이너와 함께 제공되며 별도의 설치가 필요하지 않습니다. 그러나 Commerce의 엔터프라이즈 기능에 액세스하고 사용하는 프로세스는 실행 중인 DXP 버전에 따라 다릅니다. Liferay DXP 7.4 GA1+의 경우 모든 상거래 모듈이 기본적으로 활성화되어 있으며 사용할 준비가 되어 있습니다. DXP 7.3 FP3/SP2+의 경우 Commerce는 [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 사용하여 활성화되는 반면 이전 버전은 Commerce 라이선스 파일을 사용합니다. 이 속성은 엔터프라이즈 기능을 포함하지 않기 때문에 Liferay Portal 번들/이미지에 영향을 주지 않습니다.

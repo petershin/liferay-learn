@@ -1,7 +1,3 @@
----
-uuid: bd2dad66-a3dc-47c2-b5d7-91a0c7fcadce
----
-
 # 데이터 쿼리
 
 Liferay 분석 클라우드의 루트 엔드포인트는 <https://analytics.liferay.com/api/reports>입니다. 위의 URL로 GET을 요청하여 모든 데이터 유형 엔드포인트의 목록을 가져올 수 있습니다. 컬로 시도

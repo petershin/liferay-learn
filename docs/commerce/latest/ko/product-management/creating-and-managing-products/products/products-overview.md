@@ -1,4 +1,3 @@
-
 # 제품 개요
 
 Liferay Commerce는 [단순](../product-types/creating-a-simple-product.md), [그룹화](../product-types/creating-a-simple-product.md)및 [가상](../product-types/creating-a-simple-product.md)의 세 가지 즉시 사용 가능한 제품 유형을 제공합니다. 각 제품 유형은 [카탈로그](../../catalogs/creating-a-new-catalog.md) 에 저장되며 생성 시 기본 SKU가 할당됩니다. 기본적으로 모든 제품은 카탈로그와 모든 채널에서 볼 수 있습니다. 그러나 제품을 볼 수 있는 채널 또는 계정을 결정하여 제품 가시성을 제어할 수 있습니다. 생성 후 각 제품은 제품 변형을 나타내기 위해 여러 개의 [SKU](./creating-skus-for-product-variants.md) 을 할당할 수도 있습니다.

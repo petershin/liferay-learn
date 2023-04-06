@@ -1,4 +1,3 @@
-
 # 가격표 API 기본 사항
 
 애플리케이션 메뉴 또는 REST API를 사용하여 가격표를 관리할 수 있습니다. [headless-admin-commerce-pricing](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-pricing/v2.0/openapi.json) 서비스를 호출하여 가격 목록을 만들고 관리합니다.

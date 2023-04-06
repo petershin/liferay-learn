@@ -1,7 +1,3 @@
----
-uuid: 1f7b693c-0b64-4c16-965b-4cb85875e0f4
----
-
 # 분석 대시보드 보기
 
 [데이터 동기화](./connecting-liferay-dxp-to-analytics-cloud.md)후 Analytics Cloud는 자동으로 사이트 방문자 및 그들이 콘텐츠와 상호 작용하는 방식을 추적하기 시작합니다. 분석 데이터를 검토하는 데 사용할 수 있는 도구는 다음과 같습니다.

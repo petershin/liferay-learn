@@ -1,4 +1,3 @@
-
 # 재고 관리 참조 안내서
 
 재고 설정에 액세스하려면 **전역 메뉴**(![Global Menu](../images/icon-applications-menu.png))을 열고 **Commerce** &rarr; **Inventory** 로 이동합니다.

@@ -1,4 +1,3 @@
-
 # Salesforce에 대한 Liferay 커넥터
 
 {bdg-primary}`구독`

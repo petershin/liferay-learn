@@ -1,4 +1,3 @@
-
 # 재고 부족 조치
 
 SKU 재고가 특정 임계값 아래로 떨어지면 낮은 재고 조치가 트리거됩니다. 기본적으로 Liferay에는 재고가 임계값 아래로 떨어지면 매장에서 제품을 제거하는 게시되지 않은 재고 부족으로 설정 작업이 포함됩니다. 사용자 지정 재고 부족 조치를 생성할 수도 있습니다. 자세한 내용은 [맞춤형 재고 부족 활동 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) 참조하십시오.

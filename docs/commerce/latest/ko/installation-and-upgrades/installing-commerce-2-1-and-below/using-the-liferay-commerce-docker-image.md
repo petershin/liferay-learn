@@ -1,4 +1,3 @@
-
 # Liferay Commerce Docker 이미지 사용
 
 최신 버전의 Liferay Commerce는 도커 이미지로 제공됩니다. Liferay Commerce의 최신 Docker 이미지 릴리스를 다운로드하고 시작하려면 다음 단계를 따르십시오.

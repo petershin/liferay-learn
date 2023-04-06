@@ -1,4 +1,3 @@
-
 # 기존 Liferay 설치에 Liferay Commerce 배포
 
 이 문서에서는 Liferay Commerce를 기존 Liferay DXP 인스턴스에 배포하는 방법을 설명합니다. Liferay Commerce는 Liferay DXP를 기반으로 구축되었기 때문에 기존 DXP 7.1 또는 7.2 인스턴스를 실행해야 합니다. 이 가이드를 따르기 전에 시스템 요구 사항을 검토하십시오.

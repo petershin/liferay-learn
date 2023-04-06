@@ -1,4 +1,3 @@
-
 # 노새 흐름 설계
 
 [Liferay Connector를 MuleSoft](./configuring-the-mulesoft-connector.md)로 구성한 후 Mule 흐름 구축을 시작할 수 있습니다. 이러한 작업은 Liferay의 OpenAPI 끝점에서 사용할 수 있습니다.

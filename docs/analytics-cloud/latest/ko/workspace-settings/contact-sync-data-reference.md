@@ -1,7 +1,3 @@
----
-uuid: d8c3adfd-711a-486b-b4c6-7d1a27a569d2
----
-
 # 연락처 동기화 데이터 참조
 
 Liferay 인스턴스에서 연락처 [연락처 동기화](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) 동기화하면 연락처 테이블과 사용자 테이블에서 다른 필드를 선택할 수 있습니다.

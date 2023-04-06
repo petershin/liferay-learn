@@ -1,4 +1,3 @@
-
 # 매장 설정 개요
 
 ## 소개
@@ -33,7 +32,7 @@ Liferay Commerce의 글로벌 구성에는 상점 시간대 설정, 사용 가�
 
 Liferay Commerce는 B2B, B2C 및 B2C-B2B 상점을 지원합니다. [사이트 유형](../starting-a-store/sites-and-site-types.md) 매장의 비즈니스 모델을 지정하고 매장이 계정과 함께 작동하는 방식을 결정합니다.
 
-Liferay Commerce는 Liferay DXP를 기반으로 합니다. Liferay DXP 사이트의 작동 방식에 대한 자세한 내용은 [사이트 구축](https://learn.liferay.com/dxp/latest/en/site-building/building-sites/adding-a-site.html)참조하십시오.
+Liferay Commerce는 Liferay DXP를 기반으로 합니다. Liferay DXP 사이트의 작동 방식에 대한 자세한 내용은 [사이트 구축](https://learn.liferay.com/dxp/latest/en/site-building/building-sites/adding-a-site.html) 참조하십시오.
 
 ### 상점 사이트 상거래 설정 구성
 
@@ -73,7 +72,7 @@ Liferay Commerce에는 배송료를 계산하는 몇 가지 옵션이 있습니�
 
 ### 카탈로그에 제품 추가
 
-제품을 추가할 때 **Simple**, **Grouped**, **Virtual**의 세 가지 제품 유형이 있습니다. 자세한 내용은 [제품 유형 소개](../product-management/creating-and-managing-products/product-types.md) 참조하십시오.
+제품을 추가할 때 **Simple** , **Grouped** , **Virtual** 의 세 가지 제품 유형이 있습니다. 자세한 내용은 [제품 유형 소개](../product-management/creating-and-managing-products/product-types.md) 참조하십시오.
 
 #### 제품 정보 추가
 

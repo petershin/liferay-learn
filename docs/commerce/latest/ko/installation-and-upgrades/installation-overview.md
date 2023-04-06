@@ -1,4 +1,3 @@
-
 # 설치 개요
 
 Liferay Commerce는 Liferay DXP에 구축된 디지털 상거래 플랫폼입니다. 이 문서에서는 Liferay Commerce를 설치, 배포 및 유지 관리하기 위한 전제 조건 및 사용 가능한 옵션에 대해 설명합니다.

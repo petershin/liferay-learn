@@ -1,4 +1,3 @@
-
 # Authorize.net
 
 이 문서에서는 Authorize.Net을 결제 방법으로 활성화하는 방법에 대해 자세히 설명합니다. [Authorize.Net](https://www.authorize.net/about-us/) 은 Visa의 자회사이자 가맹점 고객을 대신하여 처리 네트워크에 대한 수십억 건의 거래 제출을 관리하는 결제 게이트웨이 서비스 제공업체입니다.

@@ -24,7 +24,7 @@
 
 * **날짜: 2020년 9월** 일 3일
 
-* **JIRA 티켓:**[COMMERCE-4565](https://issues.liferay.com/browse/COMMERCE-4565)
+* **JIRA 티켓:** [COMMERCE-4565](https://issues.liferay.com/browse/COMMERCE-4565)
 
 ### 무엇이 바뀌었나요?
 
@@ -46,7 +46,7 @@ DXP 7.3 표준을 준수하면서 헤더 표시줄에 탐색 범위를 유지하
 
 * **날짜: 2020년 8월 20일**
 
-* **JIRA 티켓:**[COMMERCE-4052](https://issues.liferay.com/browse/COMMERCE-4052)
+* **JIRA 티켓:** [COMMERCE-4052](https://issues.liferay.com/browse/COMMERCE-4052)
 
 ### 무엇이 바뀌었나요?
 
@@ -78,7 +78,7 @@ DXP 7.3 표준을 준수하면서 헤더 표시줄에 탐색 범위를 유지하
 
 * **날짜: 2020년 9월 10일**
 
-* **JIRA 티켓:**[COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
+* **JIRA 티켓:** [COMMERCE-4762](https://issues.liferay.com/browse/COMMERCE-4762)
 
 ### 무엇이 바뀌었나요?
 

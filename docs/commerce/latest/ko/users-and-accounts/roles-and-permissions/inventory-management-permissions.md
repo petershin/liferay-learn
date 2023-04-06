@@ -1,4 +1,3 @@
-
 # 인벤토리 관리 권한
 
 Liferay Commerce를 사용하면 권한을 사용하여 전역 메뉴(![Global Menu](../../images/icon-applications-menu.png))의 상거래 탭에서 재고 관리 응용 프로그램 및 리소스에 대한 액세스를 제어할 수 있습니다.

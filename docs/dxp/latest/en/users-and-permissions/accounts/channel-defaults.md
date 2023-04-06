@@ -46,6 +46,6 @@ By setting these defaults, you can reduce the time taken to create orders and im
 :gutter: 3 3 3 3
 
 :::{grid-item-card}  Setting Channel Defaults
-:link: ./account-channel-defaults/setting-channel-defaults.md
+:link: ./channel-defaults/setting-channel-defaults.md
 :::
 ::::

@@ -1,6 +1,3 @@
----
-uuid: 3de2268a-455a-4b8f-be7b-284ea1c1d267
----
 # オブジェクトの作成
 
 {bdg-secondary}`Liferay 7.4以降で利用可能`

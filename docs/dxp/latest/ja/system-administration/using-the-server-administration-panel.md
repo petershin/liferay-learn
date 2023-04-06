@@ -4,7 +4,6 @@ toc:
   - using-the-server-administration-panel/configuring-logging.md
   - using-the-server-administration-panel/configuring-external-services.md
   - using-the-server-administration-panel/configuring-a-shutdown-event.md
-uuid: f98d58cc-cea1-4265-87c9-0f5a8df2ce51
 ---
 # サーバー管理パネルの使用
 

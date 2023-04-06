@@ -1,6 +1,3 @@
----
-uuid: b88a58c3-84bd-4d35-bcf5-ce7bb202cdf2
----
 
 # 가격표 API 기본 사항
 

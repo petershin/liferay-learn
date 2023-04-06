@@ -1,6 +1,3 @@
----
-uuid: 744fedf5-0e07-4276-a770-d1ad2e098128
----
 # コマースダッシュボード
 
 [Commerceを有効にした後、](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)、Analytics CloudのダッシュボードからCommerceのデータを確認することができます。 このダッシュボードは、データを4つのカードに整理しています。

@@ -1,6 +1,3 @@
----
-uuid: 002ecd02-b586-483f-bd07-a378f27d14fd
----
 
 # Liferay DXP 서비스 구성
 

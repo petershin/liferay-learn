@@ -1,6 +1,3 @@
----
-uuid: 5db29a70-07cb-44a5-be7d-a8c06ae94401
----
 # フラグメント設定タイプのリファレンス
 
 このリファレンスでは、フラグメントで利用可能な設定タイプをリストアップしています。 フラグメントを設定可能にする方法については、 [フラグメントに設定オプションを追加する](../../developing-page-fragments/adding-configuration-options-to-fragments.md) を参照してください。

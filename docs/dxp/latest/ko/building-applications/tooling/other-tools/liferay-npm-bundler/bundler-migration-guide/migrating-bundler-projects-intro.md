@@ -1,6 +1,3 @@
----
-uuid: 24616d87-1004-4c15-a8f6-2a5b2f25c1c4
----
 
 # liferay-npm-bundler 프로젝트를 1.x에서 2.x로 마이그레이션
 

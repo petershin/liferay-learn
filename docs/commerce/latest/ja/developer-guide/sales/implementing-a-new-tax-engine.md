@@ -1,6 +1,3 @@
----
-uuid: 389a9113-3e8c-48a5-8f8a-892f83858f3a
----
 # 新しい税エンジンの実装
 
 このチュートリアルでは、 [CommerceTaxEngine](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxEngine.java) インターフェイスを実装して、新しい税エンジンを追加する方法を示します。

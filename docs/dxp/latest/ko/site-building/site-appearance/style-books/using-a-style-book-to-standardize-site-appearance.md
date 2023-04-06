@@ -1,6 +1,3 @@
----
-uuid: 88364ec4-ce77-4e8b-aa8d-fb5b6bd526c3
----
 
 # Style Book을 사용하여 사이트 모양 표준화
 

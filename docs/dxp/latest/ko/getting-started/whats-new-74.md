@@ -1,6 +1,3 @@
----
-uuid: 76553d79-d3f4-43e1-bc3c-2bd87108b6ab
----
 
 # Liferay DXP 7.4의 새로운 기능
 

@@ -12,7 +12,6 @@ toc:
   - ' [Liferay University](https://university.liferay.com) '
   - ' [Join the Community](https://liferay.dev/) '
   - ' [Open a Ticket](https://liferay-support.zendesk.com/agent/) '
-uuid: 2b768856-67e1-4f03-aed8-164035966544
 ---
 
 # 도움 받기

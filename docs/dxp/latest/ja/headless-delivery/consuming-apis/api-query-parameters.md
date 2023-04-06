@@ -1,6 +1,3 @@
----
-uuid: 7b3a2c98-4dcc-4e82-814d-d50ba40070c5
----
 # APIクエリパラメータ
 
 [REST API](./consuming-rest-services.md) または [GraphQL API](./consuming-graphql-apis.md)のいずれを利用する場合でも、レスポンスをフィルタリングするのに役立つさまざまなクエリパラメータが利用できます。

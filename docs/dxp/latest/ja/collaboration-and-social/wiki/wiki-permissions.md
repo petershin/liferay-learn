@@ -1,6 +1,3 @@
----
-uuid: e7e2cf39-dda0-4ccc-868e-aad6b0878b3d
----
 # Wiki権限リファレンス
 
 この記事では、 ［**Wiki**］ ウィジェットでの権限について説明し、ユーザーおよびロールに権限を割り当てる際のリファレンスとして機能します。 DXPのロールと権限の詳細は、 [ロールと権限](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) をご覧ください 。

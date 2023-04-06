@@ -1,6 +1,3 @@
----
-uuid: c9510a79-6e06-424a-86dc-99df9fdda568
----
 # Batch Engine API の基本 - データのインポート
 
 LiferayのHeadless Batch Engineは、データのインポートやエクスポートを行うためのREST APIを提供しています。 これらのサービスを呼び出して、Liferayにデータをインポートします。

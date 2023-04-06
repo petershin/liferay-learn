@@ -1,6 +1,3 @@
----
-uuid: 8b949a1f-5f7c-40f7-a041-a06c6a799055
----
 # 新しい割引ルールタイプの追加
 
 2つのインターフェースを実装することで、新しい割引ルールタイプを追加することができます。2つのインターフェイスは、 [CommerceDiscountRuleType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-discount-api/src/main/java/com/liferay/commerce/discount/rule/type/CommerceDiscountRuleType.java) と [CommerceDiscountRuleTypeJSPContributor](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-discount-api/src/main/java/com/liferay/commerce/discount/rule/type/CommerceDiscountRuleTypeJSPContributor.java) です。

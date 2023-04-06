@@ -1,6 +1,3 @@
----
-uuid: 6582b43b-bf32-44d5-84dc-d06d677bd5a3
----
 # テストの実行
 
 1. `poshi-ext.properties` ファイルを `poshi-standalone` ディレクトリで開き、以下の行を追加します。TestCaseFileName#TestCaseNameは、[テストケースファイルの作成](./creating-a-testcase-file.md)で作成したものに置き換えてください。 提供されたテストケースとテスト名に従えば、 `LiferayLearnSearch#CannotSearchForMyName`となるはずです。

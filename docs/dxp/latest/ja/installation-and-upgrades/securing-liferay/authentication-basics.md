@@ -1,6 +1,3 @@
----
-uuid: f5ccd64e-f615-4141-bbb5-eff00cdcf1ca
----
 # 認証の基本
 
 デフォルトでは、Liferay DXPは ［**Sign In**］ ウィジェットを使用してユーザーを認証します。

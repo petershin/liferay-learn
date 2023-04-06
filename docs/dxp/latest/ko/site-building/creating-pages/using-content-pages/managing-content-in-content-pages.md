@@ -1,6 +1,3 @@
----
-uuid: 26a907e5-c7ed-4110-813f-779eacd72917
----
 
 # 콘텐츠 페이지에서 콘텐츠 관리
 <!-- Alt: Managing Content in Pages and Templates... If renamed, relocate to Displaying Content.-->

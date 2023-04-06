@@ -1,6 +1,3 @@
----
-uuid: e1ce4744-5752-45b8-821c-a43bddfd2e48
----
 # アカウントAPIの基本
 
 > 対応可能：Liferay DXP/Portal 7.4以降

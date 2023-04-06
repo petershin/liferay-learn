@@ -1,6 +1,3 @@
----
-uuid: 63c82b65-7cd8-4808-9b79-2b34df0cb94d
----
 
 # Liferay DXP 7.3의 새로운 기능
 

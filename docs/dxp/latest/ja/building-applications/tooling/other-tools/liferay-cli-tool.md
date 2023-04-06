@@ -1,6 +1,3 @@
----
-uuid: fcbb7849-0fc9-472f-98f9-b2d1d416b299
----
 # Liferay CLI ツール
 
 Liferay CLIツールは、LiferayのRESTおよびGraphQLサービスとインターフェイスで接続するために、 [Angular](https://angular.io/) 、 JavaScript、 [React](https://reactjs.org/) 、共有されるバンドル、または [Vue.js](https://vuejs.org/) プロジェクトを簡単に作成できるようにします。 `liferay`コマンドを使用すると、プロジェクトの生成、ビルド、デプロイを行うことができます。

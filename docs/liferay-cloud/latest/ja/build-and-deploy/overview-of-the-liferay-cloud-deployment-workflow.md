@@ -1,6 +1,3 @@
----
-uuid: dc78712a-aba2-48cd-9566-a6f9182726c7
----
 # Liferay Cloud 導入ワークフローの概要
 
 Liferay Cloudは、高効率なCI/CD戦略を実現するための堅牢なフレームワークを提供します。 GitとJenkinsの統合により、CIビルドを自動的にトリガーして、プロジェクト環境にデプロイすることができます。 また、CIサービスのビルドプロセスを完全に省略し、 [Command Line Interface](../reference/command-line-tool.md) (CLI)ツールを使用して、プロジェクト環境にローカルの変更を直接デプロイすることもできます。

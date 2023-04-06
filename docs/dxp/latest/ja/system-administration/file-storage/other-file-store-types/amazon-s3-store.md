@@ -1,6 +1,3 @@
----
-uuid: 6abef168-1381-46ae-b190-a9ff7c096d2d
----
 # Amazon Simple Storage Service
 
 AmazonのS3（simple storage service）は、DXPのS3ストアが利用しているクラウドベースのストレージソリューションで、ファイルをシームレスにクラウドに保存できます。 AWSアカウントを取得し、S3 **バケット** を作成したら、S3ストアを設定できます。

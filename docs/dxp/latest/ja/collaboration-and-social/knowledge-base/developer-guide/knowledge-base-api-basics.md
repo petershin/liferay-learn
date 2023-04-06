@@ -1,6 +1,3 @@
----
-uuid: 7120df4a-f22d-42fd-b574-db3dae8faa2b
----
 # ナレッジベースAPIの基本
 
 [ナレッジベース記事の作成](../creating-knowledge-base-articles.md)と[ナレッジベースの管理](../managing-the-knowledge-base.md)はLiferayのナレッジベースアプリでできますが、Liferay のREST APIを使うことも可能です。 ナレッジベースのコンテンツを作成・管理するために、これらのサービスを呼び出します。

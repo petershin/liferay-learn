@@ -1,6 +1,3 @@
----
-uuid: 53090036-2e9b-4bae-b15e-81f05d63c611
----
 
 # Liferay Commerce Tomcat 번들 사용
 

@@ -1,6 +1,3 @@
----
-uuid: b0ba6d6d-3621-4074-8fe5-2d5e7067679a
----
 
 # Dynamic Include로 JSP 사용자 정의
 

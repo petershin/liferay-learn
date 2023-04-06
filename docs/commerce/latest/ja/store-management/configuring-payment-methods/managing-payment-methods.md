@@ -1,6 +1,3 @@
----
-uuid: ece95c64-ba3c-46ad-8343-5ebdeee906db
----
 # 支払方法の管理
 
 Liferay Commerceの支払い方法は、[チャネル](../../store-management/channels/introduction-to-channels.md)およびストア[サイト](../../starting-a-store/sites-and-site-types.md)に限定されます。 Liferay Commerceインスタンスの同じインスタンスで複数のストアフロントがホストされている場合、管理者は各サイトで異なる支払い方法を使用できます。

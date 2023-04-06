@@ -1,6 +1,3 @@
----
-uuid: 0f7ea016-9380-4326-b8b7-c1a297d56d0a
----
 # Authorize.net
 
 この記事では、Authorize.Netを支払方法として有効にする方法について詳しく説明します。 [ Authorize.Net ](https://www.authorize.net/about-us/) はVisaの子会社であり、加盟店顧客に代わって処理ネットワークへの数十億件の取引の送信を管理する決済ゲートウェイサービスのプロバイダーです。

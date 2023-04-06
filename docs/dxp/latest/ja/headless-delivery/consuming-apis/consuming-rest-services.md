@@ -1,6 +1,3 @@
----
-uuid: c6a4ba2a-1514-4f03-968f-5ac275b48d74
----
 # RESTサービスの使用
 
 Liferay DXPには、ほとんどのアプリケーションでRESTサービスが含まれています。 これらのサービスは、 [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery) に完全に準拠しています。 ここでは、それらを使用する方法を紹介します。 必要なステップはわずか3つです。

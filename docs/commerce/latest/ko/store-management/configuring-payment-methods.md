@@ -5,7 +5,6 @@ toc:
 - ./configuring-payment-methods/mercanet.md
 - ./configuring-payment-methods/money-orders.md
 - ./configuring-payment-methods/paypal.md
-uuid: aa6382a0-494f-44f7-b444-5f01acd39f7e
 ---
 
 # 결제 수단 구성

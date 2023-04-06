@@ -6,7 +6,6 @@ toc:
 - ./documents-and-media/developer-guide.md
 - ./documents-and-media/devops.md
 - ./documents-and-media/documents-and-media-ui-reference.md
-uuid: 908f0e78-1508-4322-85b0-1deb26a4ef4d
 ---
 
 # 문서 및 미디어

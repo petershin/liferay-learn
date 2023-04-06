@@ -1,6 +1,3 @@
----
-uuid: c41d47fa-26bc-460b-b688-d1e3b7bcd123
----
 # オブジェクトへのフィールドの追加
 
 {bdg-secondary}`Liferay 7.4以降で利用可能`

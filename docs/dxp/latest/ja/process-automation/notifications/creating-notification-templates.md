@@ -1,6 +1,3 @@
----
-uuid: 23945a81-3dac-4a80-a0e3-a05b113bba7e
----
 # 通知テンプレートの作成
 
 {bdg-secondary}`利用可能 Liferay 7.4 U60+/GA60+`

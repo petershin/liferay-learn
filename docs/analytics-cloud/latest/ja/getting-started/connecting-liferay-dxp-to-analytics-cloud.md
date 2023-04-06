@@ -1,6 +1,3 @@
----
-uuid: c44fbb5a-5155-4b25-b97e-b574fb16f3d6
----
 # Liferay DXPをAnalytics Cloudに接続する
 
 {bdg-secondary}`利用可能 Liferay DXP 7.4 U67+`

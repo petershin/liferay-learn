@@ -8,7 +8,6 @@ toc:
 - ./search-experiences/search-blueprints-configuration-reference.md
 - ./search-experiences/creating-and-managing-elements.md
 - ./search-experiences/sorting-results-in-a-search-blueprint.md
-uuid: 4955593b-f8dd-4b87-bffa-6cb10c97e9e2
 ---
 # Search Experiences
 

@@ -1,6 +1,3 @@
----
-uuid: 0f7ea016-9380-4326-b8b7-c1a297d56d0a
----
 
 # Authorize.net
 

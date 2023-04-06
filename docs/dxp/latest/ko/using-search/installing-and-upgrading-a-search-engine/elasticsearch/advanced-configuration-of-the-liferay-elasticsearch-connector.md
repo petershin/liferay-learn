@@ -1,6 +1,3 @@
----
-uuid: 46d35c26-a3bd-4862-bd28-a72a2caea135
----
 
 # Liferay Elasticsearch 커넥터의 고급 구성
 

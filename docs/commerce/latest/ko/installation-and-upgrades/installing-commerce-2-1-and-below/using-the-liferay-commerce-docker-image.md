@@ -1,6 +1,3 @@
----
-uuid: 4a7a87dc-3a2f-400b-86da-01f120be5b60
----
 
 # Liferay Commerce Docker 이미지 사용
 

@@ -1,6 +1,3 @@
----
-uuid: c88847e2-c5cc-4afb-a888-b7cbcfb36f7b
----
 # Option API の基本
 
 [オプションテンプレート](../../product-management/creating-and-managing-products/products/using-product-options.md)は、アプリケーションメニューやREST APIで管理できます。 [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) サービスを呼び出して、オプションを作成・管理します。

@@ -1,6 +1,3 @@
----
-uuid: 1f2bb9d9-cace-4b58-9ba5-2b5c48762c92
----
 # フォームを利用したユーザーへのアンケート
 
 Liferayの以前のバージョンでは、サイト管理者はサイト管理 &rarr; コンテンツとデータメニューにある専用のPollsアプリケーションにアクセスすることができました。このアプリケーションはLiferay 7.3では [非推奨](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-3) 、Liferay 7.4 では [remove](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md#features-deprecated-in-7-4 ) となりました。

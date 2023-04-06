@@ -5,7 +5,6 @@ toc:
 - ./using-display-page-templates/publishing-content-with-display-pages.md
 - ./using-display-page-templates/displaying-categories-using-display-pages.md
 - ./using-display-page-templates/configuring-seo-and-open-graph.md
-uuid: 978aa7cb-c3e3-4895-91bd-ff8a779cc230
 ---
 # 表示ページテンプレートの使用
 

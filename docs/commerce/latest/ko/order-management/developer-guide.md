@@ -1,7 +1,6 @@
 ---
 toc:
 - ./developer-guide/order-api-basics.md
-uuid: 54fc2a6e-cdbc-4ffc-a87b-661ec0383858
 ---
 
 # 개발자 가이드

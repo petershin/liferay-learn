@@ -6,7 +6,6 @@ toc:
 - ./message-bus/using-direct-synchronous-messaging-in-previous-versions.md
 - ./message-bus/listening-for-registration-events.md
 - ./message-bus/tuning-messaging-performance.md
-uuid: 057c9607-a1e7-4f8c-8442-e22eef0138a5
 ---
 
 # 메시지 버스

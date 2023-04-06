@@ -1,6 +1,3 @@
----
-uuid: e5148e0b-fc9a-4587-b71c-9bfe09c383cf
----
 # カスタムの在庫数低下アクティビティの実装
 
 このチュートリアルでは、 [CommerceLowStockActivity](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivity.java) インターフェイスを実装して、カスタムの在庫数低下アクティビティを追加する方法を示します。

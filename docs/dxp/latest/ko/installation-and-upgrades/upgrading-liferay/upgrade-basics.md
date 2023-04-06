@@ -3,7 +3,6 @@ toc:
 - ./upgrade-basics/upgrading-via-docker.md
 - ./upgrade-basics/using-the-database-upgrade-tool.md
 - ./upgrade-basics/post-upgrade-considerations.md
-uuid: 67e60fbe-5272-44a6-b65e-a0a22e034bef
 ---
 
 # 업그레이드 기본 사항

@@ -1,6 +1,3 @@
----
-uuid: 420db092-43be-4642-a9d5-7fda6fa8ff9b
----
 # 注文情報
 
 管理者は [**注文** メニュー](./orders-menu-reference-guide.md)注文をクリックして、注文情報を表示および編集できます。

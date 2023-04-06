@@ -1,6 +1,3 @@
----
-uuid: 891409db-2dab-4236-b174-b8576e6a21c0
----
 # サンプルのCCRインストールの構成：データセンター間での複製
 
 > **Liferay Enterprise Search（LES）サブスクライバー**

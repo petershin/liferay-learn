@@ -1,6 +1,3 @@
----
-uuid: e26e34b4-ca1b-490b-b911-4ef92ad123ea
----
 # 初めてのJavaScriptクライアントエクステンションの作成
 
 {bdg-secondary}`利用可能 Liferay 7.4 U45+/GA45+`

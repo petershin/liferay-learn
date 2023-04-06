@@ -1,6 +1,3 @@
----
-uuid: af832712-a9a1-46aa-ac8d-754cbd7656af
----
 # OpenID Connectの使用
 
 OpenID Connectは、ユーザーが他のシステムにあるアカウントを使用して認証できるようにする軽量の認証レイヤーです。 これは[OAuth 2.0承認](../../../headless-delivery/using-oauth2.md)プロトコルの上に構築されています。 OpenID Connectを使用することで、ユーザー認証を他のプロバイダーに **委任** し、既存のアカウントを持つユーザがLiferayのインストールで簡単に認証できるようにします。

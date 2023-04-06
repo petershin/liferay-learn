@@ -1,6 +1,3 @@
----
-uuid: 002ecd02-b586-483f-bd07-a378f27d14fd
----
 # Liferay DXPサービスの設定
 
 Liferay DXPを設定するには、 [DXPシステム設定](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html)や、 [config](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html)と[propertyファイル](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)を使用するなど、いくつかの方法があります。 Liferay CloudのLiferay DXPインスタンスのDXPプロパティと設定ファイルは、リポジトリ内のLiferay DXP サービスディレクトリの`configs/`フォルダーのいずれかに配置されることでデプロイされます。

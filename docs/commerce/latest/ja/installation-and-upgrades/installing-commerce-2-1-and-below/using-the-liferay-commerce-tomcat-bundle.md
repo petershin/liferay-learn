@@ -1,6 +1,3 @@
----
-uuid: 53090036-2e9b-4bae-b15e-81f05d63c611
----
 # Liferay Commerce Tomcatバンドルの使用
 
 Liferay Commerceバンドルは、 [Liferay Commerceのコミュニティダウンロード](https://commerce.liferay.dev/download) ページからダウンロードできます。 バンドルには、Apache Tomcatに事前デプロイされたLiferay CommerceおよびLiferay Portalの最新バージョンが含まれています。

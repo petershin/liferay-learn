@@ -1,6 +1,3 @@
----
-uuid: 901ea460-7e47-437e-ad83-17b6d94ae3b0
----
 # 個人の定義
 
 個人のデータモデルは、[DXPから連絡先データを同期する](../../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)際にマッピングされる様々な属性で定義されます。

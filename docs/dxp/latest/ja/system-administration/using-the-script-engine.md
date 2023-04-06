@@ -3,7 +3,6 @@ toc:
 - ./using-the-script-engine/invoking-liferay-services-from-scripts.md
 - ./using-the-script-engine/running-scripts-from-the-script-console.md
 - ./using-the-script-engine/script-examples.md
-uuid: 756d2941-d124-4471-b89c-a4ff6d38a5ff
 ---
 # スクリプトエンジンの使用
 

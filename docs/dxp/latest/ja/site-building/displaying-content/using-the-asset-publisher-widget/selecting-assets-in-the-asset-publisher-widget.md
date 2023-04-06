@@ -1,6 +1,3 @@
----
-uuid: 8aba958f-0074-4664-bacd-fb45d164632e
----
 # アセットパブリッシャーウィジェットでのアセットの選択
 
 特定の基準に基づいてアセットを動的に選択するようにアセットパブリッシャーウィジェットを構成するか、手動で表示するアセットを正確に指定することができます。 また、[コレクション](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)のアセットを表示することもできます。

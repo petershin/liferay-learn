@@ -1,6 +1,3 @@
----
-uuid: 2ea1982c-6ad1-4c7e-b3fa-5d35df475d84
----
 
 # Salesforce에 대한 Liferay 커넥터
 

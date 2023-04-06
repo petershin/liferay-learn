@@ -1,6 +1,3 @@
----
-uuid: afb54da1-3e54-4d7b-9461-76b1d9e9aea0
----
 
 <!--- # Accounts
 

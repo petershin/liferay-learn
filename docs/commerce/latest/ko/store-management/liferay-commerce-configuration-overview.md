@@ -1,6 +1,3 @@
----
-uuid: 61b2ba84-d187-4813-8c11-9ec579fd42ec
----
 
 # Liferay Commerce 구성 개요
 

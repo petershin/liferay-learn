@@ -1,6 +1,3 @@
----
-uuid: 468e4ed9-1296-40e1-a69b-8f04b1148a11
----
 
 # 기존 Liferay 설치에 Liferay Commerce 배포
 

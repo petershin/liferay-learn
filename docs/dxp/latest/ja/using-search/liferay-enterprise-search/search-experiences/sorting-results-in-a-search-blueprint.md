@@ -1,6 +1,3 @@
----
-uuid: b6d54fc8-344a-4595-954b-10be35f1ce47
----
 # 検索ブループリントで結果をソートする
 
 検索ブループリントに [ソート設定](./search-blueprints-configuration-reference.md#sort-configuration) を追加して、検索結果の順序を制御します。

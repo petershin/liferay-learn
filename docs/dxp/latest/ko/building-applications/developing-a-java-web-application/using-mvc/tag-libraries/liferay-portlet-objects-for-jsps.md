@@ -1,6 +1,3 @@
----
-uuid: a40a0ce9-6ae0-4caf-a30d-484d79bffccb
----
 
 # JSP용 Liferay 포틀릿 객체
 

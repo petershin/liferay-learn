@@ -1,6 +1,3 @@
----
-uuid: 4eea6cd8-f95c-428d-9b9f-ee2292b0e675
----
 # アクションの種類について
 
 {bdg-secondary}`利用可能 Liferay 7.4 U60+/GA60+`

@@ -6,7 +6,6 @@ toc:
 - ./configuring-widgets/sharing-widgets-with-other-sites.md
 - ./configuring-widgets/setting-widget-permissions.md
 - ./configuring-widgets/setting-widget-scopes.md
-uuid: 58aff007-6de2-4db3-8996-883682c4bf5f
 ---
 # ウィジェットの構成
 

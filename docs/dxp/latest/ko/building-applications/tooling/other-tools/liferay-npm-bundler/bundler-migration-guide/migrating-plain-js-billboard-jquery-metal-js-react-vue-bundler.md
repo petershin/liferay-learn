@@ -1,6 +1,3 @@
----
-uuid: 93d457e7-711c-48dd-bf1b-cb4b07c3a84a
----
 
 # Liferay npm Bundler 2.x를 사용하기 위해 일반 JavaScript, Billboard JS, JQuery, Metal JS, React 또는 Vue JS 프로젝트 마이그레이션
 

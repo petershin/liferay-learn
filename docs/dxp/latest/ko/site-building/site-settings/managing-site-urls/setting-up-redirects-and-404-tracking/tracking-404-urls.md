@@ -1,6 +1,3 @@
----
-uuid: e2a9ffa0-7bbb-4457-b2ab-73c520c79bc9
----
 
 # 404 URL 추적
 

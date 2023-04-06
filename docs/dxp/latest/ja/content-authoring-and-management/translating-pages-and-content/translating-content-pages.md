@@ -1,6 +1,3 @@
----
-uuid: f2b9e469-c8cc-44ca-a7e6-cff4d6dbe2b4
----
 # コンテンツページの翻訳
 
 {bdg-secondary}`Liferay 7.4 U15以降およびGA15以降で利用可能`

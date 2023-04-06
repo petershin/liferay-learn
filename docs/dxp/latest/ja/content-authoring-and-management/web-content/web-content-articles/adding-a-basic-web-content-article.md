@@ -1,6 +1,3 @@
----
-uuid: 89efcf46-c68b-42f1-b33e-f41ba46002f2
----
 # 基本的なWebコンテンツの記事の追加
 
 Webコンテンツは、サイトコンテンツを作成するための最も実用的で不可欠な方法の1つです。 Webコンテンツの記事は、[ウィジェット](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md)、[フラグメント](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)または[表示ページ](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)を介して表示できます。

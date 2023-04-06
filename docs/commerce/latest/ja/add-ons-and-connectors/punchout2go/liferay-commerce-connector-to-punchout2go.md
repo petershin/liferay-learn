@@ -1,6 +1,3 @@
----
-uuid: 7c93ef53-24bd-4b70-a5c2-a1c23dc46f5e
----
 # Liferay Commerce Connector to PunchOut2Go
 
 > サブスクリプションが必要です。

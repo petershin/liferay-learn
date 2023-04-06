@@ -1,6 +1,3 @@
----
-uuid: 6d30909a-5198-437c-b3b5-1fc61cc705fc
----
 # 検索設定のリファレンス
 
 Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](../system-administration/configuring-liferay/understanding-configuration-scope.md)の概念を理解すれば、ある設定画面がどこにあるのかがわかるようになります。

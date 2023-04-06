@@ -1,6 +1,3 @@
----
-uuid: 200d8582-24d6-4c35-a50b-ddb0b4b7c8b1
----
 
 # Elasticsearch 모니터링
 

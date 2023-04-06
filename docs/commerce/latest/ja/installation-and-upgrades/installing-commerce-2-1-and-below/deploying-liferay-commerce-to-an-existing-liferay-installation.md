@@ -1,6 +1,3 @@
----
-uuid: 468e4ed9-1296-40e1-a69b-8f04b1148a11
----
 # Liferay Commerceを既存のLiferayインストールにデプロイする
 
 この記事では、Liferay Commerceを既存のLiferay DXPインスタンスにデプロイする方法について説明します。 Liferay CommerceはLiferay DXP上に構築されているため、既存のDXP 7.1または7.2インスタンスを実行している必要があります。 このガイドに従う前に、システム要件を確認してください。

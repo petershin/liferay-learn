@@ -1,6 +1,3 @@
----
-uuid: fd689e2a-cd82-4749-ac09-9df12cee519a
----
 
 # 사이드카 또는 임베디드 Elasticsearch 사용
 

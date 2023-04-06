@@ -1,6 +1,3 @@
----
-uuid: 13fbac2c-d863-4d3b-b480-e0e09bb7cfe5
----
 # 倉庫の設定
 
 倉庫は、商品の在庫が保管されている物理的な場所を表します。 倉庫を有効にするには、位置情報を設定する必要があります。 Fedexの配送方法では、この位置情報を使用して送料を計算します。 詳しくは、[FedEx配送方法の使用](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md)を参照してください。

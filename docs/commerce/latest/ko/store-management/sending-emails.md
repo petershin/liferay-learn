@@ -3,7 +3,6 @@ toc:
 - ./sending-emails/using-notification-templates.md
 - ./sending-emails/configuring-the-commerce-notification-queue.md
 - ./sending-emails/notification-template-variables-reference-guide.md
-uuid: 2c082931-7301-4909-937c-6deeaeed9367
 ---
 
 # 이메일 보내기

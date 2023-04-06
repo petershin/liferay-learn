@@ -5,7 +5,6 @@ toc:
 - ./product-types/creating-a-virtual-product.md
 - ./product-types/virtual-product-reference.md
 - ./product-types/shop-by-diagram.md
-uuid: 02b25421-bafd-4e8c-8682-da6db42965a3
 ---
 
 # 제품 유형

@@ -1,6 +1,3 @@
----
-uuid: 9f85d668-8ec3-40a3-b704-57a1ed65304b
----
 # Term API の基礎知識
 
 アプリケーションメニューやREST APIで規約を管理することができます。 [headless-admin-commerce-order](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-order/v1.0/openapi.json) から `/terms` のエンドポイントを使用して、利用規約を作成・管理します。

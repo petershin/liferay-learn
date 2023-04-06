@@ -3,7 +3,6 @@ toc:
 - ./setting-up-redirects-and-404-tracking/using-alias-redirects.md
 - ./setting-up-redirects-and-404-tracking/using-pattern-redirects.md
 - ./setting-up-redirects-and-404-tracking/tracking-404-urls.md
-uuid: 19c713cc-87be-41e6-ba6d-fc23ee75ad82
 ---
 
 # 리디렉션 및 404 추적 설정

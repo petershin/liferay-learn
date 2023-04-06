@@ -1,6 +1,3 @@
----
-uuid: f1374d8a-9899-47a2-bd09-7465685f057b
----
 
 # Elasticsearch에 연결
 

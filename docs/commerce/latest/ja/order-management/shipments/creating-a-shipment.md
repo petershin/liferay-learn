@@ -1,6 +1,3 @@
----
-uuid: e2f67a34-9bb4-43d5-8b66-9adb75caaa52
----
 # 出荷の作成
 
 出荷の作成は[［**注文**］ メニュー](../orders/orders-menu-reference-guide.md)と統合されています。 注文が[**処理** 段階](../orders/processing-an-order.md)になったら、 ［**出荷**］ メニューで[すべての出荷を管理](./introduction-to-shipments.md)することもできます。

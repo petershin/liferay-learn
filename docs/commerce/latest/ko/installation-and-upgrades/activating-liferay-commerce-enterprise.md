@@ -1,6 +1,3 @@
----
-uuid: 292bac86-29c0-4fbc-9f11-908a0ecc011c
----
 
 # Liferay Commerce Enterprise 활성화
 

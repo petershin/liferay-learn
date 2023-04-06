@@ -1,6 +1,3 @@
----
-uuid: 95c867f0-ab22-4c29-b83e-5223033de597
----
 # ディスカウントAPIの基本
 
 アプリケーションメニューから、またはREST APIを使用して割引を管理できます。 [headless-admin-commerce-pricing](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-pricing/v2.0/openapi.json) サービスを呼び出して、割引を作成・管理します。

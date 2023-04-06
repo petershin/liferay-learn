@@ -1,6 +1,3 @@
----
-uuid: d8c3adfd-711a-486b-b4c6-7d1a27a569d2
----
 # コンタクトシンクのデータ参照
 
 Liferay Instance から [Sync Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) を選択すると、Contacts テーブルと User テーブルから異なるフィールドを選択することができます。

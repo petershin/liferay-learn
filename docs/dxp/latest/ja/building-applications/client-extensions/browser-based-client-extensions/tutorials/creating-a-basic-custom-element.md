@@ -1,6 +1,3 @@
----
-uuid: fdced878-aea0-40b8-9959-828e9787d373
----
 # 基本的なカスタム要素の作成
 
 {bdg-secondary}`Liferay 7.4以降で利用可能`

@@ -1,6 +1,3 @@
----
-uuid: fd689e2a-cd82-4749-ac09-9df12cee519a
----
 # サイドカーまたはEmbedded モードのElasticsearchの使用
 
 ZIPファイルまたはDockerイメージを介してインストールされたLiferay Tomcatバンドルには、Liferayで始まるElasticsearchノードが含まれています。 Liferay 7.3+ と 7.4+ のノードはサイドカーサーバーとして別のJVMで動作し、Liferay 7.2 のノードはLiferayサーバーに埋め込まれています。

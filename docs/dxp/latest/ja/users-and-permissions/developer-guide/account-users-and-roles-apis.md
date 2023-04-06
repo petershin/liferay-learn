@@ -1,6 +1,3 @@
----
-uuid: 108e2423-cc6f-4442-9797-f6ce5bcfdbd9
----
 # アカウントユーザーとロールのAPI
 
 アプリケーションメニューから [アカウントユーザー](../accounts/account-users.md) と [アカウントロール](../accounts/account-roles.md) を管理することができますが、LiferayのREST APIを利用することもできます。 これらのサービスを呼び出して、アカウントユーザーとロールの作成と管理を行います。

@@ -10,7 +10,6 @@ toc:
 - ./pricing/promoting-products.md
 - ./pricing/configuring-taxes.md
 - ./pricing/developer-guide.md
-uuid: 5db48935-57e8-437b-b655-486f0aecbdea
 ---
 
 # 가격

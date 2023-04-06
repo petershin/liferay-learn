@@ -1,6 +1,3 @@
----
-uuid: af832712-a9a1-46aa-ac8d-754cbd7656af
----
 
 # OpenID 연결 사용
 

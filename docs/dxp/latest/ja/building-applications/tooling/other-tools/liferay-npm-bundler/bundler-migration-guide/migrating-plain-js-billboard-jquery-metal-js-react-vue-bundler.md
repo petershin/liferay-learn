@@ -1,6 +1,3 @@
----
-uuid: 93d457e7-711c-48dd-bf1b-cb4b07c3a84a
----
 # プレーンJavaScript、Billboard JS、JQuery、Metal JS、React、またはVue JSプロジェクトを移行してLiferay npm Bundler 2.xを使用する
 
 以下に示すフレームワークプロジェクトを移行してliferay-npm-bundler 2.xを使用するには、次の手順に従います。

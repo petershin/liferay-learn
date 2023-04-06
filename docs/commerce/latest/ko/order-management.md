@@ -9,7 +9,6 @@ toc:
 - ./order-management/terms-and-conditions.md
 - ./order-management/order-importer.md
 - ./order-management/developer-guide.md
-uuid: a6a173d9-fe69-45c7-8a07-3f28abcfe41a
 ---
 
 # 주문 관리

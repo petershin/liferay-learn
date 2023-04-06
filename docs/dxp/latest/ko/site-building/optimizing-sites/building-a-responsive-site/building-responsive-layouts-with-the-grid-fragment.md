@@ -1,6 +1,3 @@
----
-uuid: 7ff35121-6281-42cc-873d-c0a1c94d4eae
----
 
 # 그리드 조각으로 반응형 레이아웃 구축
 <!--TASK: Reconsider article.-->

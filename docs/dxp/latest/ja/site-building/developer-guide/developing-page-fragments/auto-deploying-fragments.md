@@ -1,6 +1,3 @@
----
-uuid: f3bb512e-5954-47b2-bf3d-bccaee642919
----
 # フラグメントの自動デプロイ
 
 {bdg-secondary}`利用可能 Liferay Portal 7.3 GA1+ または Liferay DXP 7.3+`

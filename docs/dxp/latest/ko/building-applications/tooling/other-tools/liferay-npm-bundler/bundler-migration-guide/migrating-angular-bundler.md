@@ -1,6 +1,3 @@
----
-uuid: b9ffc0aa-aaf4-4019-92dc-e573a01af389
----
 
 # Liferay npm Bundler 2.x를 사용하도록 Angular 프로젝트 마이그레이션
 

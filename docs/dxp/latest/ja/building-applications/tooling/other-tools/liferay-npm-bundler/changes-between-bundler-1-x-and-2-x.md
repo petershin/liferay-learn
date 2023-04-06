@@ -1,6 +1,3 @@
----
-uuid: d3f64d45-b095-4f4d-84c5-098dbb8e2e5b
----
 # Bundler 1.xと2.xの間の変更点
 
 この記事では、liferay-npm-bundlerバージョン1.xと2.xの主な変更点について概説します。

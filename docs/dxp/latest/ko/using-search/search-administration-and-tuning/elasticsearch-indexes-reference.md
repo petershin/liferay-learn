@@ -1,6 +1,3 @@
----
-uuid: 1d5da6cd-cdeb-4c72-836e-63462e4a86ad
----
 
 # Elasticsearch 인덱스 참조
 

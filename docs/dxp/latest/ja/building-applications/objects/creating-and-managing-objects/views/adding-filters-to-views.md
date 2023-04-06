@@ -1,6 +1,3 @@
----
-uuid: a86d41a7-27d7-48a2-8ef2-5969338ddb94
----
 # ビューにフィルターを追加する
 
 {bdg-secondary}`利用可能 Liferay 7.4 U49+/GA49+`

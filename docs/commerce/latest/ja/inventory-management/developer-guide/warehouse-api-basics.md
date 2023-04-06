@@ -1,6 +1,3 @@
----
-uuid: 021147ab-4848-499b-9ce7-d9930846c1c8
----
 # Warehouse API の基礎知識
 
 アプリケーションメニューやREST APIから倉庫を管理することができます。 [headless-commerce-admin-inventory](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-inventory/v1.0/openapi.json) サービスを呼び出して、倉庫を作成・管理します。

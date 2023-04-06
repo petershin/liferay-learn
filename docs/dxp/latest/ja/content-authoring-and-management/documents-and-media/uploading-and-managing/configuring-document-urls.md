@@ -1,6 +1,3 @@
----
-uuid: a266c23a-5c23-4de6-a818-21e83f79cb1e
----
 # ドキュメントURLの設定
 
 {bdg-secondary}`Liferay 7.4 U27以降／GA27以降で利用可能`

@@ -1,6 +1,3 @@
----
-uuid: f502b0b3-6d73-4def-811a-8d8a5e1677f3
----
 
 # Miniium Accelerator를 사용하여 B2B Store를 빠르게 시작하십시오.
 

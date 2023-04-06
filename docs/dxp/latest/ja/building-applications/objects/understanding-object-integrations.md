@@ -3,7 +3,6 @@ toc:
 - ./understanding-object-integrations/permissions-framework-integration.md
 - ./understanding-object-integrations/headless-framework-integration.md
 - ./understanding-object-integrations/assets-framework-integration.md
-uuid: d5bab8bf-972f-49d9-98f1-f77e13ca3428
 ---
 # オブジェクト統合を理解する
 

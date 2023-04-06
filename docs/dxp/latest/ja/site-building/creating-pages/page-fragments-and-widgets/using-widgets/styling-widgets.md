@@ -4,7 +4,6 @@ toc:
 - ./styling-widgets/creating-a-widget-template.md
 - ./styling-widgets/using-a-widget-template-example.md
 - ./styling-widgets/setting-a-default-widget-template.md
-uuid: 5a869953-3bff-4195-b84b-a5785cecca33
 ---
 # ウィジェットのスタイリング
 

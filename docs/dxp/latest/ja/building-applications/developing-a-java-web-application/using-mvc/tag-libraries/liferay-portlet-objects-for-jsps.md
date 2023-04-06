@@ -1,6 +1,3 @@
----
-uuid: a40a0ce9-6ae0-4caf-a30d-484d79bffccb
----
 # JSP用Liferayポートレットオブジェクト
 
 JSPの中に `<liferay-portlet:defineObjects>` というタグがあることにお気づきでしょうか？  [theme:defineObjects](./liferay-theme-objects-for-jsps.md)タグと同様に、このタグをJSPに含めると、いくつかの変数にアクセスできるようになり、この場合、ポートレットに関する有用な情報を返すことができます。 なお、JSR-286仕様では、ポートレットのライフサイクルとして、processAction、processEvent、render、serveResourceの4つのメソッドを定義しています。 `<portlet:defineObjects/>` タグで定義される変数のいくつかは、ポートレットのライフサイクルの適切なフェーズにJSPが含まれていた場合にのみ、JSPから利用可能になります。 これらのオブジェクトは、以下の表で説明されています。

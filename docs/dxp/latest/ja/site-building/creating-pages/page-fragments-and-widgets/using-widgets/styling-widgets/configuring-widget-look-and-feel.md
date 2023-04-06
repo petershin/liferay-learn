@@ -1,6 +1,3 @@
----
-uuid: 87abd88b-e917-4702-9da3-b517bdbffcad
----
 # ウィジェットのルック＆フィールの設定
 
 1.  ウィジェットの右上にある **オプション**(![Actions Button](../../../../images/icon-actions.png)) をクリックします。

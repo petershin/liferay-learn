@@ -1,6 +1,3 @@
----
-uuid: ffbbefb9-eab8-46b8-80c6-4589698e76e8
----
 # Solrのインストール
 
 {bdg-secondary}`7.2-7.3 (ce, dxp); 7.4 dxp u60+`

@@ -1,6 +1,3 @@
----
-uuid: ff808648-0541-424c-b35b-dab20e241790
----
 # 演習：Dockerを使用してLiferay とElasticsearchを実行する
 
 > 適用先：Liferay DXP 7.3以降

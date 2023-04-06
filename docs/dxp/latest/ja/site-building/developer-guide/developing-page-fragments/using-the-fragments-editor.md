@@ -1,6 +1,3 @@
----
-uuid: 394bfac1-4f63-4799-bb0e-46e9c988512f
----
 # フラグメントエディターの使用
 
 Liferay DXP には、コンテンツページフラグメントを作成するための組み込み[エディター](../reference/fragments/page-fragment-editor-interface-reference.md)が含まれています。 エディターにアクセスするには、 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 ここから、フラグメントおよびフラグメントセットを表示、管理、および作成できます。

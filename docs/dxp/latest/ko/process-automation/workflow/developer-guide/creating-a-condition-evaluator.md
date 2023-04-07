@@ -58,7 +58,7 @@ Acme R6J9 조건 평가기를 사용하려면 블로그 항목과 함께 사용�
 
 5. 추가 버튼(![Add](../../../images/icon-add.png))을 클릭합니다.
 
-6. Title 및 Content 필드에 내용을 입력한 다음 **Submit for Publication** 을 클릭합니다.
+6. Title 및 Content 필드에 내용을 입력한 다음 **Submit for Workflow** 을 클릭합니다.
 
 7. 기본 블로그 보기로 돌아가 항목이 표시되고 상태가 **Approved** 로 표시되는지 확인합니다.
 

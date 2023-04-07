@@ -40,7 +40,7 @@ These limitations apply to every service in a Liferay Cloud environment:
 
 **Access to old logs**: By default, logs from the last 30 days for each service are available via the console. [Submit a Support request](https://help.liferay.com/) to access older application logs (up to a year old). Status and build logs cannot be retrieved after 30 days.
 
-**Additional instances per service**: The [`scale` setting](../manage-and-optimize/auto-scaling.md) initially uses the purchased number of instances for your subscription plan.By default, services can add one additional instance, with the exception of Search. The Search service must use an odd number of instances.
+**Additional instances per service**: The [`scale` setting](../manage-and-optimize/auto-scaling.md) initially uses the purchased number of instances for your subscription plan. By default, services can add one additional instance, with the exception of Search. The Search service must use an odd number of instances.
 
 **Downtime**: Services running with a single instance may experience restarts when the Liferay Cloud infrastructure is updated for scheduled maintenance. Use high availability settings (two instances each of the Web server and Liferay services, and three instances of the Search service) for production-type environments to avoid disruptions. You can view the schedule for planned maintenance [here](https://help.liferay.com/hc/en-us/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule).
 
@@ -54,7 +54,7 @@ These limitations apply to the [Liferay service](../using-the-liferay-dxp-servic
 
 **Remote Staging**: [Remote Staging](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) is not available with Liferay Cloud. Local Staging is still available and supported.
 
-**Autoscaling**: When enabled, autoscaling may only add new instances up to a default maximum of 10. You can configure a different maximum number of instances, up to 100 instances.
+**Auto-scaling**: When enabled, auto-scaling may only add new instances up to a default maximum of 10. You can configure a different maximum number of instances, up to 100 instances.
 
 **Document Library Storage**: Your subscription plan determines the size of the `data` volume for the Liferay service; this includes storage used for Liferay's Document Library. The default volume size is 100 GB, but it can be increased as long as the size is below 4 TB. A private cluster is required if a project needs more than 4 TB of storage.
 
@@ -88,7 +88,7 @@ These limitations apply to the [Database service](../platform-services/database-
 
 These limitations apply to the [Search service](../platform-services/search-service.md) in each Liferay Cloud environment:
 
-**Configuration**: Elasticsearch must be configured through the Liferay Cloud workspace, and **not** the Liferay UI. The configuration file in the project workspace is used on each deployment and overwrites the previous configuration.
+**Configuration**: Elasticsearch must be configured through the Liferay Cloud workspace, and *not* the Liferay UI. The configuration file in the project workspace is used on each deployment and overwrites the previous configuration.
 
 **Memory Settings**: The default (and maximum) JVM heap size for the Elasticsearch server is 4 GB. The maximum allocation is determined by your subscription plan.
 

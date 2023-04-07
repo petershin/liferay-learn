@@ -8,7 +8,7 @@ Getting started with Liferay Cloud involves ensuring all accounts, environments,
 - [Check Setup Emails](#check-setup-emails)
 - [Access the Liferay Cloud Console](#access-the-liferay-cloud-console)
 - [Access the Provisioned Project Source Code](#access-the-provisioned-project-source-code)
-- [Log in to Your CI and Liferay Services](#log-in-to-your-ci-and-liferay-services)
+- [Log into Your CI and Liferay Services](#log-in-to-your-ci-and-liferay-services)
 - [Verify Setup](#verifying-setup)
 
 ## Check Setup Emails
@@ -21,7 +21,7 @@ Each environment invitation grants access to a single purchased Liferay Cloud en
 
 ## Access the Liferay Cloud Console
 
-Returning users can [log in to the Liferay Cloud Console](https://console.liferay.cloud/login) using their existing accounts. New users must [create an account](https://console.liferay.cloud/signup?undefined) using the email account associated with the Liferay Cloud subscription.
+Returning users can [log into the Liferay Cloud Console](https://console.liferay.cloud/login) using their existing accounts. New users must [create an account](https://console.liferay.cloud/signup?undefined) using the email account associated with the Liferay Cloud subscription.
 
 After logging in, users are directed to the Liferay Cloud Console [home page](https://console.liferay.cloud/projects).
 
@@ -55,11 +55,11 @@ See [Configuring Your GitHub Repository](./configuring-your-github-repository.md
 Using an alternative hosting service? See how to configure your [Bitbucket](./configuring-your-bitbucket-repository.md) or [GitLab](./configuring-your-gitlab-repository.md) repositories.
 ```
 
-## Log in to Your CI and Liferay Services
+## Log into Your CI and Liferay Services
 
-Log into Jenkins (CI) its web interface. You must also log in to access your Liferay DXP instance for any non-production environment (such as *dev* or *uat*).
+Log into the Jenkins (CI) web interface, then log into your Liferay DXP instance's non-production environments (e.g., *dev* and *uat*) so you can access them.
 
-Both login credentials are provided in the initial onboarding email, but they are also listed as [secrets](../infrastructure-and-operations/managing-secure-environment-variables-with-secrets.md) in your *infra* environment.
+Login credentials are provided in the initial onboarding email, and listed as [secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) in your *infra* environment.
 
 See [Logging into Your Liferay Cloud Services](./logging-into-your-liferay-cloud-services.md) for detailed instructions.
 

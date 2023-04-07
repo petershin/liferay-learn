@@ -71,6 +71,8 @@ The `dependencies` section includes the `sassy-inputs` library. This is not used
 
 <!-- What if the styled theme is not the theme currently configured (and thus being overridden?) What happens if this Client Extension is installed/enabled and then somebody changes the theme? -Rich --> 
 
+<!-- What if the styled theme is not the theme currently configured (and thus being overridden?) What happens if this Client Extension is installed/enabled and then somebody changes the theme? -Rich --> 
+
 The `src/css/_custom.scss` file contains this SCSS:
 
 ```css

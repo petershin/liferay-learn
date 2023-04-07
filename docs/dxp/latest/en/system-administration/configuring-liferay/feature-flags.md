@@ -5,13 +5,15 @@ uuid: ad6474da-2b03-4a47-ac04-d8be427ed0f3
 
 {bdg-secondary}`DXP 7.4 U69+/GA69+`
 
-Some features in Liferay are hidden behind *feature flags*. Using feature flags, you have control over the functionality introduced into your Liferay instance. New and experimental features can be adopted and validated more effectively with feature flags.
+Some features in Liferay are hidden behind *feature flags*. Using feature flags, you have control over new functionality introduced into your Liferay instance. New and experimental features can be adopted and validated more effectively with feature flags.
 
-To access and manage feature flags, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Instance Settings*. Click *Feature Flags* under *Platform*. There are two types of feature flags available here: 
+To access and manage feature flags, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Instance Settings*. Click *Feature Flags* under *Platform*. There are three types of feature flags available: 
 
-* [Beta feature flags](#beta-feature-flags)
-* [Release feature flags](#release-feature-flags)
-* [Dev feature flags](#dev-feature-flags).
+1. [Beta feature flags](#beta-feature-flags)
+
+1. [Release feature flags](#release-feature-flags)
+
+1. [Dev feature flags](#dev-feature-flags).
 
 ![You can use feature flags to control the visibility of features.](./feature-flags/images/01.png)
 
@@ -32,7 +34,7 @@ To enable a beta feature,
 
 1. Click *Feature Flags* under Platform, then click *Beta*. 
 
-1. All beta features are listed. Toggle to enable or disable a feature. 
+1. All beta features appear. Toggle to enable or disable a feature. 
 
 You can also use the search bar to find beta features, sort them using the Sort (![Sort](../../images/icon-sort2.png)) button, or filter them based on their status. 
 
@@ -40,7 +42,7 @@ You can also use the search bar to find beta features, sort them using the Sort 
 
 ## Release Feature Flags
 
-Release features are fully functional, but remain hidden behind a flag for a limited time period. The flag allows you to control the visibility of a new feature and enable it when ready. 
+Release features are fully functional, but remain hidden behind a flag for a limited time. The flag allows you to control the visibility of a new feature and enable it when ready. 
 
 To enable a release feature, 
 
@@ -50,13 +52,13 @@ To enable a release feature,
 
 1. All release features are listed. Toggle to enable or disable a feature. 
 
-You can also use the search bar to find release features, sort them using the Sort (![Sort](../../images/icon-sort2.png)) button, or filter them based on their status. The flag for release features will be removed after a period of time, so monitor the release notes for your Liferay update.
+You can also use the search bar to find release features, sort them using the Sort (![Sort](../../images/icon-sort2.png)) button, or filter them based on their status. The flag for release features is removed after a period of time, so monitor the release notes for your Liferay update.
 
 ![You can search, sort, or filter release features.](./feature-flags/images/04.png)
 
 ## Dev Feature Flags
 
-Dev feature flags are used for features and capabilities in active development, and you must not enable them in production. Only enable dev features for testing. 
+Dev feature flags are for features and capabilities in active development, and you must not enable them in production. Only enable dev features for testing. 
 
 To enable a theoretical dev feature flag with the code `XXX-000000` using a portal property, add this to `portal-ext.properties`: 
 
@@ -71,7 +73,7 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEX__UPPERCASEX__UPPERCASEX__MINUS__N
 ```
 
 ```{warning}
-Using dev features is not recommended. Instabilities in Liferay are expected side effects of enabling dev feature flags. 
+Never use dev features in production. Instabilities in Liferay are expected side effects of enabling dev feature flags. 
 ```
 
 ## Additional Information

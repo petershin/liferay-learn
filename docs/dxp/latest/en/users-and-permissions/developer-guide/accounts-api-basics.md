@@ -26,25 +26,26 @@ Then, follow these steps:
 
 1. Use the cURL script to add a new Account to your instance. On the command line, navigate to the `curl` folder. Execute the `Account_POST_ToInstance.sh` script.
 
-    ```bash
-    ./Account_POST_ToInstance.sh
-    ```
+   ```bash
+   ./Account_POST_ToInstance.sh
+   ```
 
-    The JSON response shows a new Account has been added:
+   The JSON response shows a new Account has been added:
 
-    ```bash
-    "description" : "Foo",
-    "domains" : [ ],
-    "externalReferenceCode" : "",
-    "id" : 39302,
-    "name" : "Able",
-    "numberOfUsers" : 0,
-    "organizationIds" : [ ],
-    "parentAccountId" : 0,
-    "status" : 0,
-    "type" : "business"
-
-    ```
+   ```json
+   {
+     "description" : "Foo",
+     "domains" : [ ],
+     "externalReferenceCode" : "",
+     "id" : 39302,
+     "name" : "Able",
+     "numberOfUsers" : 0,
+     "organizationIds" : [ ],
+     "parentAccountId" : 0,
+     "status" : 0,
+     "type" : "business"
+   }
+   ```
 
 1. Navigate to *Global Menu* &rarr; *Applications* &rarr; *Accounts*. See that a new Account has been added.
 

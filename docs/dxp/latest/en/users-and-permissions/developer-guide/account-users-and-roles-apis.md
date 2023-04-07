@@ -32,54 +32,61 @@ Then, follow these steps:
 
    The JSON response shows a new account has been added:
 
-   ```bash
-        {
-        "accountBriefs" : [ {
-            "id" : 38935,
-            "name" : "Able",
-            "roleBriefs" : [ ]
-        } ],
-        "additionalName" : "",
-        "alternateName" : "dog",
-        "birthDate" : "1977-01-01T00:00:00Z",
-        "customFields" : [ ],
-        "dashboardURL" : "",
-        "dateCreated" : "2021-10-12T21:00:59Z",
-        "dateModified" : "2021-10-12T21:01:01Z",
-        "emailAddress" : "dog@liferay.com",
-        "externalReferenceCode" : "",
-        "familyName" : "Easy",
-        "givenName" : "Dog",
-        "id" : 39005,
-        "jobTitle" : "",
-        "keywords" : [ ],
-        "name" : "Dog Easy",
-        "organizationBriefs" : [ ],
-        "profileURL" : "",
-        "roleBriefs" : [ {
-            "id" : 20111,
-            "name" : "User"
-        } ],
-        "siteBriefs" : [ {
-            "id" : 20125,
-            "name" : "Global"
-        }, {
-            "id" : 20123,
-            "name" : "Guest"
-        } ],
-        "userAccountContactInformation" : {
-            "emailAddresses" : [ ],
-            "facebook" : "",
-            "jabber" : "",
-            "postalAddresses" : [ ],
-            "skype" : "",
-            "sms" : "",
-            "telephones" : [ ],
-            "twitter" : "",
-            "webUrls" : [ ]
-        }
-        }     
-    ```
+   ```json
+   {
+     "accountBriefs": [
+       {
+         "id": 38935,
+         "name": "Able",
+         "roleBriefs": []
+       }
+     ],
+     "additionalName": "",
+     "alternateName": "dog",
+     "birthDate": "1977-01-01T00:00:00Z",
+     "customFields": [],
+     "dashboardURL": "",
+     "dateCreated": "2021-10-12T21:00:59Z",
+     "dateModified": "2021-10-12T21:01:01Z",
+     "emailAddress": "dog@liferay.com",
+     "externalReferenceCode": "",
+     "familyName": "Easy",
+     "givenName": "Dog",
+     "id": 39005,
+     "jobTitle": "",
+     "keywords": [],
+     "name": "Dog Easy",
+     "organizationBriefs": [],
+     "profileURL": "",
+     "roleBriefs": [
+       {
+         "id": 20111,
+         "name": "User"
+       }
+     ],
+     "siteBriefs": [
+       {
+         "id": 20125,
+         "name": "Global"
+       },
+       {
+         "id": 20123,
+         "name": "Guest"
+       }
+     ],
+     "userAccountContactInformation": {
+       "emailAddresses": [],
+       "facebook": "",
+       "jabber": "",
+       "postalAddresses": [],
+       "skype": "",
+       "sms": "",
+       "telephones": [],
+       "twitter": "",
+       "webUrls": []
+     }
+   }    
+   ```
 
 1. Navigate to *Global Menu* &rarr; *Applications* &rarr; *Accounts*. Click the account you created a User for. Click the *Users* tab and see the new User that was created.
 

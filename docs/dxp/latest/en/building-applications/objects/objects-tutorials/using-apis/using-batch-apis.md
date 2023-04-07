@@ -82,7 +82,7 @@ The GET method is included for demonstration purposes. This returns a complete l
 
    The terminal shows a similar output.
 
-   ```bash
+   ```json
    {
      "className" : "com.liferay.object.rest.dto.v1_0.ObjectEntry",
      "contentType" : "JSON",
@@ -107,7 +107,7 @@ The GET method is included for demonstration purposes. This returns a complete l
 
    Copy each entry's ID for use with the following PUT and DELETE methods.
 
-   ```bash
+   ```json
    {
      ...
      "items" : [ {
@@ -139,7 +139,7 @@ The GET method is included for demonstration purposes. This returns a complete l
    ./Ables_PUT_Batch.sh {first-entry-id} {second-entry-id} {third-entry-id}
    ```
 
-   ```bash
+   ```json
    {
      "className" : "com.liferay.object.rest.dto.v1_0.ObjectEntry",
      "contentType" : "JSON",
@@ -162,7 +162,7 @@ The GET method is included for demonstration purposes. This returns a complete l
    ./Ables_GET_FromCompany.sh
    ```
 
-   ```bash
+   ```json
    {
      ...
      "items" : [ {

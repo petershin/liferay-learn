@@ -61,13 +61,13 @@ Then, follow these steps:
 
     The query returns a corresponding product's ID, name, and description wrapped in a JSON object:
 
-    ```json
+   ```json
    {
      "description": "Universal truth must be transcendental.",
      "id": 1,
      "name": "Truth"
    }
-    ```
+   ```
 
 Congratulations, you've successfully deployed and used a new REST API.
 

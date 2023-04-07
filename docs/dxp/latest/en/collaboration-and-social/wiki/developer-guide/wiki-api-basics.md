@@ -86,7 +86,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
 
 1. Copy the node's ID for use with the following GET, PUT, and DELETE methods.
 
-   ```bash
+   ```json
    {
      ...
      "description" : "Foo",
@@ -129,7 +129,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
    java -classpath .:* -DwikiNodeId={wiki-node-id} WikiNode_PUT_ById
    ```
 
-   ```bash
+   ```json
    {
      ...
      "description" : "Bar",
@@ -170,7 +170,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
 
    Since you deleted the node in the preceding step, it returns the following message.
 
-   ```bash
+   ```json
    {
      "status" : "NOT_FOUND",
      "title" : "No WikiNode exists with the primary key 38405"
@@ -215,7 +215,7 @@ You can use either the cURL commands or Java classes to call the `WikiPage` APIs
 
 1. Copy the node's ID from the output for use with the `WikiPage_POST_ToNode` call.
 
-   ```bash
+   ```json
    {
      ...
      "description" : "Foo",
@@ -242,7 +242,7 @@ You can use either the cURL commands or Java classes to call the `WikiPage` APIs
 
 1. Copy the page's ID for use with the `WikiPage_POST_ToParent` call.
 
-   ```bash
+   ```json
    {
      ...
      "content" : "Foo",
@@ -270,7 +270,7 @@ You can use either the cURL commands or Java classes to call the `WikiPage` APIs
    java -classpath .:* -DparentWikiPageId={wiki-page-id} WikiPage_POST_ToParent
    ```
 
-   ```bash
+   ```json
    {
       ...
       "content" : "Foo",
@@ -326,7 +326,7 @@ You can use either the cURL commands or Java classes to call the `WikiPage` APIs
    java -classpath .:* -DwikiPageId={wiki-page-id} WikiPage_PUT_ById
    ```
 
-   ```bash
+   ```json
    {
      "content" : "Bar",
      ...
@@ -368,7 +368,7 @@ You can use either the cURL commands or Java classes to call the `WikiPage` APIs
 
    Since the page was deleted in the preceding step, you see the following message.
 
-   ```bash
+   ```json
    {
      "status" : "NOT_FOUND",
      "title" : "No WikiNode exists with the primary key 38515"
@@ -454,5 +454,3 @@ The following are representative examples of the tutorial's Java commands.
 
 * [Using Liferay as a Headless Platform](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
 * [Consuming Rest Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-### `WikiNode_POST_ToSite.sh`
-

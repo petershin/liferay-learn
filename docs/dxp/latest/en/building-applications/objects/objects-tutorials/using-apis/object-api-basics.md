@@ -80,7 +80,7 @@ These scripts include the following APIs:
 
    The terminal displays the complete schema for the newly created entries. Copy the first entry's ID for use with the following methods.
 
-   ```bash
+   ```json
    {
      "id" : 41969,
      ...
@@ -112,7 +112,7 @@ These scripts include the following APIs:
    ./Able_PUT_ById.sh {entry-id}
    ```
 
-   ```bash
+   ```json
    {
      "id" : 41969,
      ...
@@ -134,7 +134,7 @@ These scripts include the following APIs:
 
    Since you deleted the entry in the preceding step, it returns the following message.
 
-   ```bash
+   ```json
    {
      "status" : "NOT_FOUND",
      "title" : "No ObjectEntry exists with the primary key 41969"

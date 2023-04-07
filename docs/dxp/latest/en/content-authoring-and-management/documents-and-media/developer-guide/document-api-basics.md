@@ -50,14 +50,14 @@ The script uploads itself to your site's Documents and Media.
 
 The command response describes the new Documents and Media file in JSON, like this:
 
-```bash 
+```json
 {
-	...
-	"description" : "",
-	...
-	"id" : 38301,
-	...
-	"title" : "Document_POST_ToSite.sh"
+  ...
+  "description": "",
+  ...
+  "id": 38301,
+  ...
+  "title": "Document_POST_ToSite.sh"
 }
 ```
 
@@ -245,7 +245,7 @@ Code:
 
 The first argument line specifies the service endpoint and authentication credentials, respectively. The URL's `/o/headless-delivery/v1.0/documents/${1}` part is the REST service endpoint to get the `Document` by its ID. This URL is the same as the `Document_GET_ById.sh` script's URL. The `?nestedFields=contentValue` part requests the `contentValue` embedded in the `Document`'s `nestedFields`. Lastly the `&fields=contentValue` part filters on the `contentValue` field, so that the content field alone is returned. Invoking only the service, however, returns Base64-endocded content wrapped in JSON, like this: 
 
-```bash
+```json
 {
   "contentValue" : "Y3VybCBcCgktRiAiZmlsZT1ARG9jdW1lbnRfUE9TVF9Ub1NpdGUuc2giIFwKCS1IICJDb250ZW50LVR5cGU6IG11bHRpcGFydC9mb3JtLWRhdGEiIFwKCS1YIFBPU1QgXAoJImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9vL2hlYWRsZXNzLWRlbGl2ZXJ5L3YxLjAvc2l0ZXMvJHsxfS9kb2N1bWVudHMiIFwKCS11ICJ0ZXN0QGxpZmVyYXkuY29tOnRlc3Qi"
 }

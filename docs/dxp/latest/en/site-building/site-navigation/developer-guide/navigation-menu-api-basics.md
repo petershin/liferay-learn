@@ -26,29 +26,30 @@ Then, follow these steps:
 
 3. Use the cURL script to add a new navigation menu to your Site. On the command line, navigate to the `curl` folder. Execute the `NavigationMenu_POST_ToSite.sh` script with your site ID as a parameter.
 
-    ```bash
-    ./NavigationMenu_POST_ToSite.sh 1234
-    ```
+   ```bash
+   ./NavigationMenu_POST_ToSite.sh 1234
+   ```
 
-    The JSON response shows a new navigation menu has been added:
+   The JSON response shows a new navigation menu has been added:
 
-    ```bash
-    "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20129,
-    "name" : "Test Test"
-    },
-    "dateCreated" : "2021-09-09T21:41:31Z",
-    "dateModified" : "2021-09-09T21:41:31Z",
-    "id" : 40131,
-    "name" : "Foo",
-    "navigationMenuItems" : [ ],
-    "siteId" : 20125
-
-    ```
+   ```json
+   {
+     "creator" : {
+       "additionalName" : "",
+       "contentType" : "UserAccount",
+       "familyName" : "Test",
+       "givenName" : "Test",
+       "id" : 20129,
+       "name" : "Test Test"
+     },
+     "dateCreated" : "2021-09-09T21:41:31Z",
+     "dateModified" : "2021-09-09T21:41:31Z",
+     "id" : 40131,
+     "name" : "Foo",
+     "navigationMenuItems" : [ ],
+     "siteId" : 20125
+   }
+   ```
 
 4. Go to the Navigation Menus application by navigating to *Administration Menu* &rarr; *Site Builder* &rarr; *Navigation Menus*. See that a new navigation menu has been added.
 

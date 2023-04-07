@@ -26,47 +26,49 @@ Then, follow these steps:
 
 1. Use the cURL script to add a new vocabulary to your Site. On the command line, navigate to the `curl` folder. Execute the `TaxonomyVocabulary_POST_ToSite.sh` script with your Site ID as a parameter.
 
-    ```bash
-    ./TaxonomyVocabulary_POST_ToSite.sh 1234
-    ```
+   ```bash
+   ./TaxonomyVocabulary_POST_ToSite.sh 1234
+   ```
 
-    The JSON response shows a new vocabulary has been added:
+   The JSON response shows a new vocabulary has been added:
 
-    ```bash
-    "availableLanguages" : [ "en-US" ],
-    "creator" : {
-      "additionalName" : "",
-      "contentType" : "UserAccount",
-      "familyName" : "Test",
-      "givenName" : "Test",
-      "id" : 20129,
-      "name" : "Test Test",
-      "profileURL" : "/web/test"
-    },
-    "dateCreated" : "2021-09-09T21:03:15Z",
-    "dateModified" : "2021-09-09T21:03:15Z",
-    "description" : "Foo",
-    "id" : 40126,
-    "name" : "Able",
-    "numberOfTaxonomyCategories" : 0,
-    "siteId" : 20125
-    ```
+   ```json
+   {
+     "availableLanguages" : [ "en-US" ],
+     "creator" : {
+       "additionalName" : "",
+       "contentType" : "UserAccount",
+       "familyName" : "Test",
+       "givenName" : "Test",
+       "id" : 20129,
+       "name" : "Test Test",
+       "profileURL" : "/web/test"
+     },
+     "dateCreated" : "2021-09-09T21:03:15Z",
+     "dateModified" : "2021-09-09T21:03:15Z",
+     "description" : "Foo",
+     "id" : 40126,
+     "name" : "Able",
+     "numberOfTaxonomyCategories" : 0,
+     "siteId" : 20125
+   }
+   ```
 
 1. Go to the Categories application by navigating to *Administration Menu* &rarr; *Categorization* &rarr; *Categories*. See that a new vocabulary has been added.
 
-    ![A new vocabulary has been added.](./categories-and-vocabulary-api-basics/images/01.png)
+   ![A new vocabulary has been added.](./categories-and-vocabulary-api-basics/images/01.png)
 
 1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 1. Run the `TaxonomyVocabulary_POST_ToSite` class with the following command. Replace the `siteId` value with your Site's ID:
 
-    ```bash
-    java -classpath .:* -DsiteId=1234 TaxonomyVocabulary_POST_ToSite
-    ```
+   ```bash
+   java -classpath .:* -DsiteId=1234 TaxonomyVocabulary_POST_ToSite
+   ```
 
 ## Examine the cURL Command
 

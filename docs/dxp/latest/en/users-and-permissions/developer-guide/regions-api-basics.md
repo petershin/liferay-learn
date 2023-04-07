@@ -34,15 +34,16 @@ Then, follow these steps:
 
    The JSON response shows a new Region has been added:
 
-   ```bash
-   "active" : true,
-   "countryId" : 43501,
-   "id" : 43503,
-   "name" : "Foo",
-   "position" : 0.0,
-   "regionCode" : "ABL",
-   "title_i18n" : { }
-
+   ```json
+   {
+     "active" : true,
+     "countryId" : 43501,
+     "id" : 43503,
+     "name" : "Foo",
+     "position" : 0.0,
+     "regionCode" : "ABL",
+     "title_i18n" : { }
+   }
    ```
 
 1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:

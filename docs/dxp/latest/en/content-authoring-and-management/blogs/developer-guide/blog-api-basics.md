@@ -24,9 +24,9 @@ Then, follow these steps:
    unzip liferay-r3g4.zip
    ```
 
-2. [Find your Site's ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). You'll use this in different service calls below.
+1. [Find your Site's ID](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). You'll use this in different service calls below.
 
-3. Use the cURL script to add a new blog post to your Site. On the command line, navigate to the `curl` folder. Execute the `BlogPosting_POST_ToSite.sh` script with your Site ID as a parameter.
+1. Use the cURL script to add a new blog post to your Site. On the command line, navigate to the `curl` folder. Execute the `BlogPosting_POST_ToSite.sh` script with your Site ID as a parameter.
 
     ```bash
     ./BlogPosting_POST_ToSite.sh 1234
@@ -34,31 +34,33 @@ Then, follow these steps:
 
     The JSON response shows a new blog post has been added:
 
-    ```bash
-    "alternativeHeadline" : "",
-    "articleBody" : "Foo",
-    "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20125,
-    "name" : "Test Test"
-    },
-    "customFields" : [ ],
-    "dateCreated" : "2021-07-21T21:26:55Z",
-    "dateModified" : "2021-07-21T21:26:55Z",
-    "datePublished" : "2021-07-21T21:26:00Z",
-    "description" : "",
-    "encodingFormat" : "text/html",
-    "friendlyUrlPath" : "able",
-    "headline" : "Able",
-    "id" : 38511,
-    "keywords" : [ ],
-    "numberOfComments" : 0,
-    "relatedContents" : [ ],
-    "siteId" : 20121,
-    "taxonomyCategoryBriefs" : [ ]
+    ```json
+    {
+      "alternativeHeadline": "",
+      "articleBody": "Foo",
+      "creator": {
+        "additionalName": "",
+        "contentType": "UserAccount",
+        "familyName": "Test",
+        "givenName": "Test",
+        "id": 20125,
+        "name": "Test Test"
+      },
+      "customFields": [],
+      "dateCreated": "2021-07-21T21:26:55Z",
+      "dateModified": "2021-07-21T21:26:55Z",
+      "datePublished": "2021-07-21T21:26:00Z",
+      "description": "",
+      "encodingFormat": "text/html",
+      "friendlyUrlPath": "able",
+      "headline": "Able",
+      "id": 38511,
+      "keywords": [],
+      "numberOfComments": 0,
+      "relatedContents": [],
+      "siteId": 20121,
+      "taxonomyCategoryBriefs": []
+    }
     ```
 
 1. Go to the Blogs application by navigating to *Administration Menu* &rarr; *Content & Data* &rarr; *Blogs*. See that a new blog post has been added.

@@ -309,7 +309,7 @@ Below is the JSON output from the script. Notice this information:
 - `templateScript` includes the script in the language specified in `programmingLanguage`. In this example, FreeMarker is the language.
 - The `templateScript` field in the `Foo` Template includes the image field, referenced in `<#if (ImageReference.getData())></#if>`. The `templateScript` field in the `Goo` Template doesn't include this reference.
 
-```bash
+```json
 {
   "actions" : {
     "get" : {
@@ -426,7 +426,7 @@ Below is the JSON output from the script. The script posts
   - Date information in `DateReference`.
   - Radio button control in `SingleSelectionReference`.
 
-```bash
+```json
 {
   "actions" : {
     ...

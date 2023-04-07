@@ -30,25 +30,27 @@ Then, follow these steps:
 
    The JSON response shows a new Organization has been added:
 
-   ```bash
-   "comment" : "",
-   "customFields" : [ ],
-   "dateCreated" : "2022-05-19T17:38:19Z",
-   "dateModified" : "2022-05-19T17:38:19Z",
-   "externalReferenceCode" : "",
-   "id" : "40922",
-   "keywords" : [ ],
-   "location" : { },
-   "name" : "Able",
-   "numberOfAccounts" : 0,
-   "numberOfOrganizations" : 0,
-   "numberOfUsers" : 0,
-   "organizationContactInformation" : {
-      "emailAddresses" : [ ],
-      "postalAddresses" : [ ],
-      "telephones" : [ ],
-      "webUrls" : [ ]
-
+   ```json
+   {
+     "comment": "",
+     "customFields": [],
+     "dateCreated": "2022-05-19T17:38:19Z",
+     "dateModified": "2022-05-19T17:38:19Z",
+     "externalReferenceCode": "",
+     "id": "40922",
+     "keywords": [],
+     "location": {},
+     "name": "Able",
+     "numberOfAccounts": 0,
+     "numberOfOrganizations": 0,
+     "numberOfUsers": 0,
+     "organizationContactInformation": {
+       "emailAddresses": [],
+       "postalAddresses": [],
+       "telephones": [],
+       "webUrls": []
+     }
+   }
    ```
 
 1. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *User and Organizations*. Click the *Organizations* tab. See that a new Organization has been added.

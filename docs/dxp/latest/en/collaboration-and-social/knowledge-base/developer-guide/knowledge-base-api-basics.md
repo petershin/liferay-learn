@@ -32,34 +32,35 @@ Then follow these steps:
 
    The JSON response shows a new Knowledge Base article has been added:
 
-   ```bash
-   "articleBody" : "Foo",
-   "creator" : {
-     "additionalName" : "",
-     "contentType" : "UserAccount",
-     "familyName" : "Test",
-     "givenName" : "Test",
-     "id" : 20125,
-     "name" : "Test Test"
-   },
-   "customFields" : [ ],
-   "dateCreated" : "2022-07-28T21:25:57Z",
-   "dateModified" : "2022-07-28T21:25:57Z",
-   "description" : "",
-   "encodingFormat" : "text/html",
-   "externalReferenceCode" : "0bace9ad-39ea-79b5-902e-c873806b8bd7",
-   "friendlyUrlPath" : "able",
-   "id" : 42447,
-   "keywords" : [ ],
-   "numberOfAttachments" : 0,
-   "numberOfKnowledgeBaseArticles" : 0,
-   "parentKnowledgeBaseArticleId" : 0,
-   "relatedContents" : [ ],
-   "siteId" : 20121,
-   "subscribed" : false,
-   "taxonomyCategoryBriefs" : [ ],
-   "title" : "Able"
-
+   ```json
+   {
+     "articleBody" : "Foo",
+     "creator" : {
+       "additionalName" : "",
+       "contentType" : "UserAccount",
+       "familyName" : "Test",
+       "givenName" : "Test",
+       "id" : 20125,
+       "name" : "Test Test"
+     },
+     "customFields" : [ ],
+     "dateCreated" : "2022-07-28T21:25:57Z",
+     "dateModified" : "2022-07-28T21:25:57Z",
+     "description" : "",
+     "encodingFormat" : "text/html",
+     "externalReferenceCode" : "0bace9ad-39ea-79b5-902e-c873806b8bd7",
+     "friendlyUrlPath" : "able",
+     "id" : 42447,
+     "keywords" : [ ],
+     "numberOfAttachments" : 0,
+     "numberOfKnowledgeBaseArticles" : 0,
+     "parentKnowledgeBaseArticleId" : 0,
+     "relatedContents" : [ ],
+     "siteId" : 20121,
+     "subscribed" : false,
+     "taxonomyCategoryBriefs" : [ ],
+     "title" : "Able"
+   }
    ```
 
 1. Click the *Menu* icon (![Menu icon](../../../images/icon-menu.png)) and navigate to *Content and Data* &rarr; *Knowledge Base*. See that a new Knowledge Base article has been added.

@@ -113,7 +113,7 @@ You can use the schema browser to learn how to post a blog entry.
     * `articleBody`
     * `headline`
 
-2. Construct a simple JSON document to post a blog entry:
+1. Construct a simple JSON document to post a blog entry:
 
     ```json
     {
@@ -122,7 +122,7 @@ You can use the schema browser to learn how to post a blog entry.
     }
     ```
 
-3. Make the request:
+1. Make the request:
 
     ```bash
     curl --header "Content-Type: application/json" --request POST --data '{ "headline": "Test Blog Entry from REST Services", "articleBody": "This article was posted via REST services provided by Liferay DXP." }' http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings -u test@liferay.com:learn

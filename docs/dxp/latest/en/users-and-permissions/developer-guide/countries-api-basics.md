@@ -32,22 +32,23 @@ Then, follow these steps:
 
    The JSON response shows a new country has been added:
 
-   ```bash
-   "a2" : "AB",
-   "a3" : "ABL",
-   "active" : true,
-   "billingAllowed" : true,
-   "groupFilterEnabled" : false,
-   "id" : 43501,
-   "name" : "Foo",
-   "number" : 1234,
-   "position" : 0.0,
-   "regions" : [ ],
-   "shippingAllowed" : true,
-   "subjectToVAT" : false,
-   "title_i18n" : { },
-   "zipRequired" : true
-
+   ```json
+   {
+     "a2" : "AB",
+     "a3" : "ABL",
+     "active" : true,
+     "billingAllowed" : true,
+     "groupFilterEnabled" : false,
+     "id" : 43501,
+     "name" : "Foo",
+     "number" : 1234,
+     "position" : 0.0,
+     "regions" : [ ],
+     "shippingAllowed" : true,
+     "subjectToVAT" : false,
+     "title_i18n" : { },
+     "zipRequired" : true
+   }
    ```
 
 1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files like this:

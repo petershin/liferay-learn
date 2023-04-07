@@ -34,20 +34,20 @@ Then follow these steps:
 
    The JSON response shows the creation of a new import task. Note the `id` of the task:
 
-   ```bash
+   ```json
    {
-   "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-   "contentType" : "JSON",
-   "errorMessage" : "",
-   "executeStatus" : "INITIAL",
-   "externalReferenceCode" : "4a6ab4b0-12cc-e8e3-fc1a-4726ebc09df2",
-   "failedItems" : [ ],
-   "id" : 1234,
-   "importStrategy" : "ON_ERROR_FAIL",
-   "operation" : "CREATE",
-   "processedItemsCount" : 0,
-   "startTime" : "2022-10-19T14:19:43Z",
-   "totalItemsCount" : 0
+     "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+     "contentType" : "JSON",
+     "errorMessage" : "",
+     "executeStatus" : "INITIAL",
+     "externalReferenceCode" : "4a6ab4b0-12cc-e8e3-fc1a-4726ebc09df2",
+     "failedItems" : [ ],
+     "id" : 1234,
+     "importStrategy" : "ON_ERROR_FAIL",
+     "operation" : "CREATE",
+     "processedItemsCount" : 0,
+     "startTime" : "2022-10-19T14:19:43Z",
+     "totalItemsCount" : 0
    }
    ```
 
@@ -57,21 +57,21 @@ Then follow these steps:
    ./ImportTask_GET_ById.sh 1234
    ```
 
-   ```bash
+   ```json
    {
-   "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-   "contentType" : "JSON",
-   "endTime" : "2022-10-19T12:18:59Z",
-   "errorMessage" : "",
-   "executeStatus" : "COMPLETED",
-   "externalReferenceCode" : "7d256faa-9b7e-9589-e85c-3a72f68b8f08",
-   "failedItems" : [ ],
-   "id" : 1234,
-   "importStrategy" : "ON_ERROR_FAIL",
-   "operation" : "CREATE",
-   "processedItemsCount" : 2,
-   "startTime" : "2022-10-19T12:18:58Z",
-   "totalItemsCount" : 2
+     "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+     "contentType" : "JSON",
+     "endTime" : "2022-10-19T12:18:59Z",
+     "errorMessage" : "",
+     "executeStatus" : "COMPLETED",
+     "externalReferenceCode" : "7d256faa-9b7e-9589-e85c-3a72f68b8f08",
+     "failedItems" : [ ],
+     "id" : 1234,
+     "importStrategy" : "ON_ERROR_FAIL",
+     "operation" : "CREATE",
+     "processedItemsCount" : 2,
+     "startTime" : "2022-10-19T12:18:58Z",
+     "totalItemsCount" : 2
    }
    ```
 

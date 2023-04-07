@@ -26,29 +26,31 @@ Then, follow these steps:
 
 1. Use the cURL script to add a new tag to your Site. On the command line, navigate to the `curl` folder. Execute the `Keyword_POST_ToSite.sh` script with your site ID as a parameter.
 
-    ```bash
-    ./Keyword_POST_ToSite.sh 1234
-    ```
+   ```bash
+   ./Keyword_POST_ToSite.sh 1234
+   ```
 
-    The JSON response shows a new tag has been added:
+   The JSON response shows a new tag has been added:
 
-    ```bash
-   "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20129,
-    "name" : "Test Test",
-    "profileURL" : "/web/test"
-   },
-   "dateCreated" : "2021-09-09T21:15:46Z",
-   "dateModified" : "2021-09-09T21:15:46Z",
-   "id" : 40130,
-   "keywordUsageCount" : 0,
-   "name" : "foo",
-   "siteId" : 20125
-    ```
+   ```json
+   {
+     "creator" : {
+       "additionalName" : "",
+       "contentType" : "UserAccount",
+       "familyName" : "Test",
+       "givenName" : "Test",
+       "id" : 20129,
+       "name" : "Test Test",
+       "profileURL" : "/web/test"
+     },
+     "dateCreated" : "2021-09-09T21:15:46Z",
+     "dateModified" : "2021-09-09T21:15:46Z",
+     "id" : 40130,
+     "keywordUsageCount" : 0,
+     "name" : "foo",
+     "siteId" : 20125
+   }
+   ```
 
 1. Go to the Tags application by navigating to *Administration Menu* &rarr; *Categorization* &rarr; *Tags*. See that a new tag has been added.
 

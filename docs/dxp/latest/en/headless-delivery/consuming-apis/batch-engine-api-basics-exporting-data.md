@@ -34,16 +34,16 @@ Then, follow these steps:
 
    The JSON response shows the creation of a new export task. Note the `id` of the task:
 
-   ```bash
+   ```json
    {
-   "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-   "contentType" : "JSON",
-   "errorMessage" : "",
-   "executeStatus" : "INITIAL",
-   "externalReferenceCode" : "6c5286a2-aa28-175b-041e-eacca4a54d3b",
-   "id" : 1234,
-   "processedItemsCount" : 0,
-   "totalItemsCount" : 0
+     "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+     "contentType" : "JSON",
+     "errorMessage" : "",
+     "executeStatus" : "INITIAL",
+     "externalReferenceCode" : "6c5286a2-aa28-175b-041e-eacca4a54d3b",
+     "id" : 1234,
+     "processedItemsCount" : 0,
+     "totalItemsCount" : 0
    }
    ```
 
@@ -57,18 +57,18 @@ Then, follow these steps:
    ./ExportTask_GET_ById.sh 1234
    ```
 
-   ```bash
+   ```json
    {
-   "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
-   "contentType" : "JSON",
-   "endTime" : "2022-10-19T14:13:58Z",
-   "errorMessage" : "",
-   "executeStatus" : "COMPLETED",
-   "externalReferenceCode" : "6c5286a2-aa28-175b-041e-eacca4a54d3b",
-   "id" : 1234,
-   "processedItemsCount" : 8,
-   "startTime" : "2022-10-19T14:13:58Z",
-   "totalItemsCount" : 8
+     "className" : "com.liferay.headless.admin.user.dto.v1_0.Account",
+     "contentType" : "JSON",
+     "endTime" : "2022-10-19T14:13:58Z",
+     "errorMessage" : "",
+     "executeStatus" : "COMPLETED",
+     "externalReferenceCode" : "6c5286a2-aa28-175b-041e-eacca4a54d3b",
+     "id" : 1234,
+     "processedItemsCount" : 8,
+     "startTime" : "2022-10-19T14:13:58Z",
+     "totalItemsCount" : 8
    }
    ```
 

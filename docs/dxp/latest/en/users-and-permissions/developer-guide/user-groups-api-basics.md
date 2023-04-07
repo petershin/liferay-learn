@@ -30,26 +30,27 @@ Then follow these steps:
 
    The JSON response shows a new user group has been added:
 
-   ```bash
-   "description" : "",
-   "externalReferenceCode" : "72c5739f-a6e9-d4b8-5481-7cf1a427ea79",
-   "id" : 43099,
-   "name" : "Able",
-   "usersCount" : 0
-
+   ```json
+   {
+     "description" : "",
+     "externalReferenceCode" : "72c5739f-a6e9-d4b8-5481-7cf1a427ea79",
+     "id" : 43099,
+     "name" : "Able",
+     "usersCount" : 0
+   }
    ```
 
-2. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *User Groups*. See that a new user group has been added.
+1. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *User Groups*. See that a new user group has been added.
 
    ![See that a new user group has been added.](./user-groups-api-basics/images/01.png)
 
-3. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-4. Run the `UserGroup_POST_ToInstance.java` class with the following command.
+1. Run the `UserGroup_POST_ToInstance.java` class with the following command.
 
    ```bash
    java -classpath .:* UserGroup_POST_ToInstance

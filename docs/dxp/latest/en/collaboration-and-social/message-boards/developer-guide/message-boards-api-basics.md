@@ -90,7 +90,7 @@ In this exercise, you can use either the cURL commands or Java classes to call t
 
 1. Copy the section's ID for use with the following GET, PATCH, PUT, and DELETE methods.
 
-   ```bash
+   ```json
    {
      ...
      "description" : "Foo",

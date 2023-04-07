@@ -26,74 +26,79 @@ Then, follow these steps:
 
 1. Use the cURL script to add a new User to your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `User_POST_ToInstance.sh` script.
 
-    ```bash
-    ./User_POST_ToInstance.sh
-    ```
+   ```bash
+   ./User_POST_ToInstance.sh
+   ```
 
-    The JSON response shows a new User has been added:
+   The JSON response shows a new User has been added:
 
-    ```bash
-    {
-        "additionalName" : "",
-        "alternateName" : "able",
-        "birthDate" : "1977-01-01T00:00:00Z",
-        "customFields" : [ ],
-        "dashboardURL" : "",
-        "dateCreated" : "2021-05-19T16:04:46Z",
-        "dateModified" : "2021-05-19T16:04:46Z",
-        "emailAddress" : "able@liferay.com",
-        "familyName" : "Foo",
-        "givenName" : "Able",
-        "id" : 39321,
-        "jobTitle" : "",
-        "keywords" : [ ],
-        "name" : "Able Foo",
-        "organizationBriefs" : [ ],
-        "profileURL" : "",
-        "roleBriefs" : [ {
-            "id" : 20113,
-            "name" : "User"
-        } ],
-        "siteBriefs" : [ {
-            "id" : 20127,
-            "name" : "Global"
-        }, {
-            "id" : 20125,
-            "name" : "Guest"
-        } ],
-        "userAccountContactInformation" : {
-            "emailAddresses" : [ ],
-            "facebook" : "",
-            "jabber" : "",
-            "postalAddresses" : [ ],
-            "skype" : "",
-            "sms" : "",
-            "telephones" : [ ],
-            "twitter" : "",
-            "webUrls" : [ ]
-        }
-    }%   
-    ```
+   ```json
+   {
+     "additionalName": "",
+     "alternateName": "able",
+     "birthDate": "1977-01-01T00:00:00Z",
+     "customFields": [],
+     "dashboardURL": "",
+     "dateCreated": "2021-05-19T16:04:46Z",
+     "dateModified": "2021-05-19T16:04:46Z",
+     "emailAddress": "able@liferay.com",
+     "familyName": "Foo",
+     "givenName": "Able",
+     "id": 39321,
+     "jobTitle": "",
+     "keywords": [],
+     "name": "Able Foo",
+     "organizationBriefs": [],
+     "profileURL": "",
+     "roleBriefs": [
+       {
+         "id": 20113,
+         "name": "User"
+       }
+     ],
+     "siteBriefs": [
+       {
+         "id": 20127,
+         "name": "Global"
+       },
+       {
+         "id": 20125,
+         "name": "Guest"
+       }
+     ],
+     "userAccountContactInformation": {
+       "emailAddresses": [],
+       "facebook": "",
+       "jabber": "",
+       "postalAddresses": [],
+       "skype": "",
+       "sms": "",
+       "telephones": [],
+       "twitter": "",
+       "webUrls": []
+     }
+   }%
+   ```
 
-    In Control Panel, verify the newly added User. Note the User's `id` number for later commands.
+   In Control Panel, verify the newly added User. Note the User's `id` number for later commands.
 
-    ![See the added User in Control Panel.](./user-account-api-basics/images/01.png)
+   ![See the added User in Control Panel.](./user-account-api-basics/images/01.png)
 
 1. The REST service can also be called with a Java class. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 1. Run the `User_POST_ToInstance` class with the following command:
 
-    ```bash
-    java -classpath .:* User_POST_ToInstance
-    ```
+   ```bash
+   java -classpath .:* User_POST_ToInstance
+   ```
 
-    Verify in Control Panel that another User has been added.
+   Verify in Control Panel that another User has been added.
 
-    ![In Control Panel, another User has been added.](user-account-api-basics/images/02.png)
+   ![In Control Panel, another User has been added.](user-account-api-basics/images/02.png)
 
 Read on to see how the cURL command and Java class work. 
 

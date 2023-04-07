@@ -3,7 +3,7 @@ uuid: eac9c112-377f-4106-8800-041f96c3de1f
 ---
 # Logging into Your Liferay Cloud Services
 
-By default, you must log in to access the web interfaces for the Liferay and Infrastructure services on any non-production environment (e.g., uat). Typically, login credentials provided in the initial onboarding email, but they are also located in the Liferay Cloud Console.
+By default, you must log in to access the web interfaces for the Liferay and Infrastructure services on any non-production environment (e.g., uat). Typically, login credentials appear in the initial onboarding email, but they are also located in the Liferay Cloud Console.
 
 ## Locating Login Credentials
 
@@ -15,11 +15,11 @@ By default, you must log in to access the web interfaces for the Liferay and Inf
 
 1. Click the _lcp-secret-ci-customer-user_ and _lcp-secret-ci-customer-password_ secrets to access them.
 
-    ![The lcp-secret-ci-customer-user and lcp-secret-ci-customer-password secrets contain your login credentials.](./logging-into-your-liferay-cloud-services/images/01.png)
+   ![The lcp-secret-ci-customer-user and lcp-secret-ci-customer-password secrets contain your login credentials.](./logging-into-your-liferay-cloud-services/images/01.png)
 
-1. Click *View* on each secret's page to reveal the value. Click on the revealed value  to copy it to your clipboard.
+1. Click *View* on each secret's page to reveal the value. Click on the revealed value to copy it to your clipboard.
 
-    ![CLick View to reveal the secret value.](./logging-into-your-liferay-cloud-services/images/02.png)
+   ![CLick View to reveal the secret value.](./logging-into-your-liferay-cloud-services/images/02.png)
 
 ## Logging In
 
@@ -27,15 +27,15 @@ By default, you must log in to access the web interfaces for the Liferay and Inf
 
 1. Click *Visit Site* at the top of the page.
 
-    ![The Visit Site drop-down lists all available endpoints for your Liferay instances in the environment.](./logging-into-your-liferay-cloud-services/images/03.png)
+   ![The Visit Site drop-down lists all available endpoints for your Liferay instances in the environment.](./logging-into-your-liferay-cloud-services/images/03.png)
 
-    The drop-down menu lists all available endpoints to your `liferay` service, including the default `webserver` service endpoint and any custom domains you added to the environment.
+   The drop-down menu lists all available endpoints to your `liferay` service, including the default `webserver` service endpoint and any custom domains you added to the environment.
 
 1. Click on the desired endpoint to access your Liferay instance with the corresponding URL.
 
 1. Enter the Liferay Cloud [Jenkins user name and password](#locating-login-credentials) when prompted.
 
-    ![Authenticate in the pop-up that appears.](./logging-into-your-liferay-cloud-services/images/04.png)
+   ![Authenticate in the pop-up that appears.](./logging-into-your-liferay-cloud-services/images/04.png)
 
 Once logged in, the user is redirected to the Liferay DXP 7.x instance (in this example, Liferay DXP 7.2 GA1).
 

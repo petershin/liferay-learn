@@ -23,9 +23,9 @@ Each environment invitation grants access to a single purchased Liferay Cloud en
 
 Returning users can [log into the Liferay Cloud Console](https://console.liferay.cloud/login) using their existing accounts. New users must [create an account](https://console.liferay.cloud/signup?undefined) using the email account associated with the Liferay Cloud subscription.
 
-After logging in, users are directed to the Liferay Cloud Console [home page](https://console.liferay.cloud/projects).
+After logging in, the Liferay Cloud Console [home page](https://console.liferay.cloud/projects) appears.
 
-![Figure 1: Liferay Cloud Console home page.](./initial-setup-overview/images/01.png)
+![Liferay Cloud Console home page.](./initial-setup-overview/images/01.png)
 
 From here, you can access and manage environments and deployments, as well as invite other team members.
 
@@ -41,7 +41,7 @@ After accepting the invitation, locate your provisioned project repository:
 
 1. Search `dxpcloud` in the _Your teams_ search box.
 
-![Figure 2: Search dxpcloud in the 'Your teams' search box.](./initial-setup-overview/images/02.png)
+![Search dxpcloud in the 'Your teams' search box.](./initial-setup-overview/images/02.png)
 
 Once you have found your provisioned repository, you must:
 

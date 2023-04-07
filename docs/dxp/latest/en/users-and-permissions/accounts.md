@@ -101,7 +101,7 @@ See [Account Roles](./accounts/account-roles.md) to learn more.
 
 ## Making Changes to an Account
 
-1. Click the *Options* icon (![Options icon](../images/icon-actions.png)) of the account you want to edit.
+1. Click the *Actions* icon (![Actions icon](../images/icon-actions.png)) of the account you want to edit.
 
 1. Make one of the following selections:
 

@@ -7,19 +7,6 @@ Model listeners listen for persistence method calls that signal changes to a spe
 
 To add a model listener, you implement the [`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java) interface.
 
-Here, you'll learn how to create model listeners:
-
-- [Creating a Model Listener](#creating-a-model-listener)
-  - [Examine a Running Model Listener](#examine-a-running-model-listener)
-  - [Identify a Model Class and Event](#identify-a-model-class-and-event)
-  - [Model Listener Behavior](#model-listener-behavior)
-  - [Declare the Model](#declare-the-model)
-  - [Declare the Event](#declare-the-event)
-  - [Implement Your Business Logic](#implement-your-business-logic)
-  - [Deploy and Test](#deploy-and-test)
-  - [Conclusion](#conclusion)
-  - [Related Topics](#related-topics)
-
 ## Examine a Running Model Listener
 
 ```{include} /_snippets/run-liferay-portal.md

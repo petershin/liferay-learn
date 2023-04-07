@@ -98,9 +98,9 @@ Selecting a file reveals several options:
 
 **Move:** Click the *Move* icon (![Move icon](../../../images/icon-move.png)) to move the file to a different folder.
 
-**Edit Tags:** Click on the *Edit Tags* icon (![Edit icon](../../../images/icon-edit.png)) to edit the existing tags of a file.
+**Edit Tags:** Click the *Edit Tags* icon (![Edit icon](../../../images/icon-edit.png)) to edit the existing tags of a file.
 
-**Delete:** Click on the *Trash* icon (![Trash icon](../../../images/icon-trash.png)) to delete a file.
+**Delete:** Click the *Trash* icon (![Trash icon](../../../images/icon-trash.png)) to delete a file.
 
 **Actions:** The *Actions* icon (![Actions icon](../../../images/icon-actions.png)) has options, including *Checkin* and *Checkout*. See [Google Drive Integration](../devops/google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md), [Office 365 Integration](../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md), and [LibreOffice Integration](../devops/enabling-openoffice-libreoffice-integration.md). 
 

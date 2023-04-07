@@ -1,4 +1,3 @@
-
 # 개체 정의 이벤트 감사
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U47+/GA47+`

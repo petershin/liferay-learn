@@ -4,7 +4,6 @@ toc:
 - ./../client-extensions/front-end-client-extensions/tutorials/using-routes-with-custom-elements.md
 - ./using-react/remote-applications-with-headless-apis.md
 - ./using-react/react-component-utilities-reference.md
-uuid: 572b3a78-1921-410e-9ae2-d16b20d23632
 ---
 
 # 반응 사용

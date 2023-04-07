@@ -1,10 +1,6 @@
----
-uuid: fcbb7849-0fc9-472f-98f9-b2d1d416b299
----
-
 # Liferay CLI 도구
 
-Liferay CLI 도구를 사용하면 [Angular](https://angular.io/), JavaScript, [React](https://reactjs.org/), 공유 번들 또는 [Vue.js](https://vuejs.org/) 프로젝트를 쉽게 생성하여 Liferay의 REST 및 GraphQL 서비스와 인터페이스할 수 있습니다. `liferay` 명령을 사용하여 프로젝트를 생성, 빌드 및 배포할 수 있습니다.
+Liferay CLI 도구를 사용하면 [Angular](https://angular.io/) , JavaScript, [React](https://reactjs.org/) , 공유 번들 또는 [Vue.js](https://vuejs.org/) 프로젝트를 쉽게 생성하여 Liferay의 REST 및 GraphQL 서비스와 인터페이스할 수 있습니다. `liferay` 명령을 사용하여 프로젝트를 생성, 빌드 및 배포할 수 있습니다.
 
 ```{note}
 Liferay CLI 도구는 Liferay DXP 7.4+용 JavaScript 애플리케이션 프로젝트를 만드는 데 사용되는 이전 Yeoman 생성기를 대체합니다. 이전 버전의 경우 두 방법 중 하나를 사용할 수 있지만 7.4+의 경우 Yeoman 생성기 대신 CLI 도구를 사용해야 합니다.
@@ -19,7 +15,7 @@ npm install -g @liferay/cli
 ```
 
 ```{note}
-CLI 도구를 전체적으로 설치하지 않으려면 `npx`를 사용하여 설치하지 않고 도구의 명령을 실행할 수도 있습니다. 예를 들어 `npx @liferay/cli new [project-name]을 실행하여 [새 프로젝트를 생성](#generating-a-project)할 수 있습니다.
+CLI 도구를 전체적으로 설치하지 않으려면 `npx`를 사용하여 설치하지 않고 도구의 명령을 실행할 수도 있습니다. 예를 들어 `npx @liferay/cli new [project-name]을 실행하여 [새 프로젝트를 생성](#generating-a-project) 할 수 있습니다.
 ```
 
 ## 프로젝트 생성
@@ -62,7 +58,7 @@ CLI 도구를 전체적으로 설치하지 않으려면 `npx`를 사용하여 �
 
 1. **Liferay 플랫폼 프로젝트를 생성하도록 선택한 경우:** 위젯의 범주를 선택합니다. 범주는 페이지를 편집할 때 위젯 목록에서 정렬되는 방식을 결정합니다. 기본값은 `category.sample` ("Sample" 위젯 범주의 경우)이지만 임의의 사용자 지정 값으로 변경할 수 있습니다.
 
-    **대신 원격 앱 프로젝트를 생성하도록 선택한 경우**: 사용자 정의 요소에 대한 HTML 태그 이름을 선택합니다. 이름은 하나 이상의 하이픈(`-`)을 포함하고 문자로 시작해야 합니다. 그런 다음 Shadow DOM을 사용하여 렌더링할지 여부에 대한 프롬프트(`y` 또는 `n`)에 응답합니다.
+    **대신 원격 앱 프로젝트를 생성하도록 선택한 경우** : 사용자 정의 요소에 대한 HTML 태그 이름을 선택합니다. 이름은 하나 이상의 하이픈(`-`)을 포함하고 문자로 시작해야 합니다. 그런 다음 Shadow DOM을 사용하여 렌더링할지 여부에 대한 프롬프트(`y` 또는 `n`)에 응답합니다.
 
 CLI 도구는 프로젝트에 대해 선택한 이름으로 새 폴더에 프로젝트를 생성합니다.
 
@@ -82,7 +78,7 @@ CLI 도구로 생성된 프로젝트 내에서 `liferay build`에 대한 별칭�
 
 ## 프로젝트 배포
 
-이 명령을 사용하여 프로젝트의 `dist/` 디렉토리에 저장된 JAR 파일을 로컬 Liferay 설치에 배포합니다( [`liferay 빌드`](#building-a-project)실행 후).
+이 명령을 사용하여 프로젝트의 `dist/` 디렉토리에 저장된 JAR 파일을 로컬 Liferay 설치에 배포합니다( [`liferay 빌드`](#building-a-project) 실행 후).
 
 ```bash
 liferay deploy
@@ -118,11 +114,11 @@ liferay upgrade-project
 
 Liferay CLI 도구로 배포할 수 있도록 다른 도구로 만든 프로젝트를 조정할 수도 있습니다. 다음 도구로 만든 프로젝트를 조정할 수 있습니다.
 
-* [**React**](https://reactjs.org/)의 경우: [create-react-app](https://reactjs.org/) 프로젝트 생성기
+* [**React**](https://reactjs.org/) 의 경우: [create-react-app](https://reactjs.org/) 프로젝트 생성기
 
-* [**Angular**](https://angular.io/)의 경우: [Angular CLI](https://cli.angular.io/) 프로젝트 생성기
+* [**Angular**](https://angular.io/) 의 경우: [Angular CLI](https://cli.angular.io/) 프로젝트 생성기
 
-* [**Vue.js**](https://vuejs.org/): [Vue CLI](https://cli.vuejs.org/) 프로젝트 생성기
+* [**Vue.js**](https://vuejs.org/) : [Vue CLI](https://cli.vuejs.org/) 프로젝트 생성기
 
 프로젝트 디렉터리에서 이 명령을 실행하여 다른 생성기로 만든 프로젝트를 조정합니다.
 
@@ -132,8 +128,8 @@ liferay adapt
 
 CLI 도구는 프로젝트의 종속성에서 감지한 프레임워크를 기반으로 프로젝트를 조정합니다. 프로젝트의 `package.json` 파일에서 이러한 특정 종속성( `종속성` 또는 `devDependency`으로 나열됨)을 찾습니다.
 
-* **반응**: `반응 스크립트`
+* **반응** : `반응 스크립트`
 
-* 각도가 **인 경우**: `@angular/cli`
+* 각도가 **인 경우** : `@angular/cli`
 
-* **Vue.js**의 경우: `@vue/cli-service`
+* **Vue.js** 의 경우: `@vue/cli-service`

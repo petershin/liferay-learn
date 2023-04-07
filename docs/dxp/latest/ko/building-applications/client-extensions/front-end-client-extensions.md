@@ -11,7 +11,6 @@ toc:
   - ./front-end-client-extensions/iframe-yaml-configuration-reference.md
   - ./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
   - ./front-end-client-extensions/remote-applications-ui-reference.md
-uuid: fcdeefe5-64f7-451c-8981-41e1a04290d6
 ---
 
 # 프런트 엔드 클라이언트 확장
@@ -76,7 +75,7 @@ type: globalCSS
 
 {bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
-[JavaScript 클라이언트 확장](#javascript-client-extensions)과 마찬가지로 JavaScript 라이브러리 및 로직을 추가하여 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)에서 제공하는 것을 대체할 수 있습니다.
+[JavaScript 클라이언트 확장](#javascript-client-extensions) 과 마찬가지로 JavaScript 라이브러리 및 로직을 추가하여 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)에서 제공하는 것을 대체할 수 있습니다.
 
 `client-extension.yaml` 파일에서 테마 JavaScript 클라이언트 확장을 지정합니다.
 
@@ -90,7 +89,7 @@ type: themeJS
 
 [CSS 클라이언트 확장](#css-client-extensions) 이 페이지에 스타일을 추가하는 동안 테마 CSS 클라이언트 확장은 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)을 포함하여 페이지의 스타일을 재정의합니다. . 클라이언트 확장은 `clay.css` 파일과 `main.css` 파일을 사용하여 사이트 테마에서 일반적으로 사용되는 동일한 이름의 파일을 대체합니다.
 
-이 유형의 클라이언트 확장은 Liferay 애플리케이션 메뉴의 *클라이언트 확장* 에서 옵션으로 추가할 수 있습니다.
+이 유형의 클라이언트 확장은 Liferay 애플리케이션 메뉴의 **클라이언트 확장** 에서 옵션으로 추가할 수 있습니다.
 
 ![Add a theme CSS client extension to replace CSS provided by your site's theme.](./front-end-client-extensions/images/01.png)
 
@@ -108,7 +107,7 @@ type: themeCSS
 
 {bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
-Liferay에서 페이지의 파비콘을 재정의합니다. 배포되면 제공된 아이콘 파일을 Liferay의 모든 페이지에서 사용할 수 있습니다. 페이지 디자인 옵션 메뉴에서 페이지에 대한 파비콘을 구성할 때 별도의 *클라이언트 확장* 탭에서 액세스할 수 있습니다.
+Liferay에서 페이지의 파비콘을 재정의합니다. 배포되면 제공된 아이콘 파일을 Liferay의 모든 페이지에서 사용할 수 있습니다. 페이지 디자인 옵션 메뉴에서 페이지에 대한 파비콘을 구성할 때 별도의 **클라이언트 확장** 탭에서 액세스할 수 있습니다.
 
 ![페이지에 대한 파비콘을 구성할 때 특수 클라이언트 확장 탭에서 클라이언트 확장의 파비콘에 액세스하십시오.](./front-end-client-extensions/images/02.png)
 
@@ -132,7 +131,7 @@ type: themeSpritemap
 
 사용자 정의 요소 클라이언트 확장은 Liferay의 프런트 엔드 인프라를 사용하여 외부 애플리케이션을 플랫폼과 통합하고 이를 페이지 위젯으로 렌더링합니다. Liferay 외부에서 액세스할 수 있는 모든 도메인의 애플리케이션을 통합할 수 있습니다.
 
-사용자 정의 요소 클라이언트 확장을 사용하려면 필요한 URL 및 세부 정보를 사용하여 회사 수준에서 항목을 생성하여 Liferay에 등록합니다. 그런 다음 Liferay는 각 항목에 대해 고유한 위젯을 생성하고 애플리케이션을 [사용자 정의 HTML 요소](https://web.dev/custom-elements-v1/)로 렌더링합니다.
+사용자 정의 요소 클라이언트 확장을 사용하려면 필요한 URL 및 세부 정보를 사용하여 회사 수준에서 항목을 생성하여 Liferay에 등록합니다. 그런 다음 Liferay는 각 항목에 대해 고유한 위젯을 생성하고 애플리케이션을 [사용자 정의 HTML 요소](https://web.dev/custom-elements-v1/) 로 렌더링합니다.
 
 `client-extension.yaml` 파일에서 사용자 정의 요소 클라이언트 확장을 지정하십시오.
 
@@ -148,7 +147,7 @@ type: customElement
 
 > 이전 이름은 IFrame 원격 앱
 
-IFrame 클라이언트 확장은 [맞춤 요소 클라이언트 확장](#custom-element-client-extensions)처럼 작동합니다. 그러나 외부 응용 프로그램을 `<iframe>` HTML 요소로 렌더링하여 호스트 페이지에서 제한된 상호 작용을 허용합니다. 다른 프런트 엔드 클라이언트 확장과 달리 이러한 *정적 리소스*을 제공하지 않습니다.
+IFrame 클라이언트 확장은 [맞춤 요소 클라이언트 확장](#custom-element-client-extensions) 처럼 작동합니다. 그러나 외부 응용 프로그램을 `<iframe>` HTML 요소로 렌더링하여 호스트 페이지에서 제한된 상호 작용을 허용합니다. 다른 프런트 엔드 클라이언트 확장과 달리 이러한 **정적 리소스** 을 제공하지 않습니다.
 
 `client-extension.yaml` 파일에서 IFrame 클라이언트 확장을 지정합니다.
 
@@ -164,7 +163,7 @@ type: iframe
 
 | 이름              | 데이터 유형 | 기정값                     | 묘사                                                                                                 |
 |:--------------- |:------ |:----------------------- |:-------------------------------------------------------------------------------------------------- |
-| `baseURL`       | 끈      | *사이트 URL에서 파생됨*         | 모든 클라이언트 확장의 정의된 리소스가 제공되는 기본 경로입니다.                                                               |
+| `baseURL`       | 끈      | **사이트 URL에서 파생됨** | 모든 클라이언트 확장의 정의된 리소스가 제공되는 기본 경로입니다.                                                               |
 | `description`   | 끈      |                         | 클라이언트 확장 프로그램의 설명입니다.                                                                              |
 | `name`          | 끈      |                         | 클라이언트 확장 프로그램의 이름(UI에 표시됨). 프런트 엔드 클라이언트 확장에는 이름이 필요합니다.                                           |
 | `sourceCodeURL` | URL    | https://www.liferay.com | 클라이언트 확장의 소스 리포지토리에 대한 주소입니다.                                                                      |

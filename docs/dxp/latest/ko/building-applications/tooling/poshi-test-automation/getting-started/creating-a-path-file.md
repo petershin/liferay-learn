@@ -1,7 +1,3 @@
----
-uuid: 7674a634-411c-4e00-99ea-0eaa927bc2cc
----
-
 # 경로 파일 생성
 
 ## 테스트 시나리오
@@ -10,7 +6,7 @@ uuid: 7674a634-411c-4e00-99ea-0eaa927bc2cc
 
   귀하의 이름이 learn.liferay.com 기사에 나타나지 않는지 테스트하고 싶습니다. 취할 조치는 다음과 같습니다. 단계를 테스트하려면 별도의 브라우저에서 수동으로 수행하십시오.
 
-  1. [Liferay Learn 사이트](http://learn.liferay.com)로 이동합니다.
+  1. [Liferay Learn 사이트](http://learn.liferay.com) 로 이동합니다.
 
   1. 검색 입력 필드를 클릭합니다.
 

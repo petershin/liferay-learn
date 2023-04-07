@@ -1,4 +1,3 @@
-
 # 선택 목록 사용
 
 {bdg-secondary}`사용 가능한 Liferay 7.4+`

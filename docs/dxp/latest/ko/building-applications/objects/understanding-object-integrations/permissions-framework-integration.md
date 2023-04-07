@@ -1,4 +1,3 @@
-
 # 권한 프레임워크 통합
 
 {bdg-secondary}`사용 가능한 Liferay 7.4+`

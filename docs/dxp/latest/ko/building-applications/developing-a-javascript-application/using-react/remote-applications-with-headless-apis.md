@@ -1,7 +1,3 @@
----
-uuid: 522fc1b1-ab1d-4126-b828-98e1e1e805bd
----
-
 # 헤드리스 API를 사용하는 원격 애플리케이션
 
 {bdg-secondary}`가능 7.4+`
@@ -13,21 +9,21 @@ uuid: 522fc1b1-ab1d-4126-b828-98e1e1e805bd
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 *기본 포털 CORS 구성*에 추가합니다:
+그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 **기본 포털 CORS 구성** 에 추가합니다:
 
-1. 글로벌 메뉴*(![글로벌 메뉴](../../../이미지/아이콘-응용프로그램-메뉴.png)를 열고 *제어판* 탭을 클릭한 후 *시스템 설정* &rarr; *보안 도구*로 이동합니다.
+1. 글로벌 메뉴 (**![글로벌 메뉴](../../../이미지/아이콘-응용프로그램-메뉴.png)를 열고** 제어판 **탭을 클릭한 후** 시스템 설정 **&rarr;** 보안 도구*로 이동합니다.
 
-1. 포털 교차 출처 리소스 공유(CORS)* 탭으로 이동하여 *기본 포털 CORS 구성*을 클릭합니다.
+1. 포털 교차 출처 리소스 공유(CORS)**탭으로 이동하여** 기본 포털 CORS 구성*을 클릭합니다.
 
-1. `o/c/*` 값으로 *URL 패턴*을 추가하고 *저장*을 클릭합니다. 그러면 모든 Object API에 CORS가 활성화됩니다.
+1. `o/c/*` 값으로 **URL 패턴** 을 추가하고 **저장** 을 클릭합니다. 그러면 모든 Object API에 CORS가 활성화됩니다.
 
    ![오브젝트 API에 //o/c/* URL 패턴 추가](./remote-applications-with-headless-apis/images/01.png)
 
 ## CRUD 애플리케이션용 오브젝트 생성하기
 
-1. 글로벌 메뉴*(![글로벌 메뉴](../../../이미지/아이콘-애플리케이션-메뉴.png))를 열고 *제어판* 탭을 클릭한 후 *개체*로 이동합니다.
+1. 글로벌 메뉴 (**![글로벌 메뉴](../../../이미지/아이콘-애플리케이션-메뉴.png))를 열고** 제어판 **탭을 클릭한 후** 개체*로 이동합니다.
 
-1. 1. *추가* 버튼(![추가 버튼](../../../이미지/아이콘 추가.png))을 클릭하고 다음 값을 입력합니다:
+1. 1. **추가** 버튼(![추가 버튼](../../../이미지/아이콘 추가.png))을 클릭하고 다음 값을 입력합니다:
 
    | 필드 | 값 |
    | :--- | :--- |
@@ -39,18 +35,18 @@ uuid: 522fc1b1-ab1d-4126-b828-98e1e1e805bd
    제공된 React 애플리케이션은 이 값을 사용합니다.
    ```
 
-1. 새 *개체* 초안을 선택하고 *필드* 탭을 클릭한 다음 다음 *필드*추가합니다.
+1. 새 **개체** 초안을 선택하고 **필드** 탭을 클릭한 다음 다음 **필드** 추가합니다.
 
    | 라벨 | 필드 이름 | 유형 |
    |:-- |:----- |:-- |
    | 이름 | 이름    | 원본 |
    | 묘사 | 묘사    | 원본 |
 
-1. *세부 정보* 탭을 클릭하고 *게시*클릭합니다.
+1. **세부 정보** 탭을 클릭하고 **게시** 클릭합니다.
 
 ## CRUD 애플리케이션 설정
 
-1. [CRUD 애플리케이션](./liferay-j4x7.zip)을 다운로드하고 압축을 풉니다.
+1. [CRUD 애플리케이션](./liferay-j4x7.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-javascript-application/using-react/liferay-j4x7.zip -O
@@ -82,13 +78,13 @@ uuid: 522fc1b1-ab1d-4126-b828-98e1e1e805bd
 
    시작되면 `localhost:3000` 로 이동하여 CRUD 애플리케이션을 봅니다.
 
-1. 이름과 설명을 입력하고 *추가* 클릭하여 J4X7 개체를 추가합니다. 새로운 아이템이 추가되었습니다.
+1. 이름과 설명을 입력하고 **추가** 클릭하여 J4X7 개체를 추가합니다. 새로운 아이템이 추가되었습니다.
 
    ![이름과 설명을 입력하고 추가를 클릭합니다.](./remote-applications-with-headless-apis/images/02.png)
 
-1. 방금 생성한 J4X7 개체의 ID 번호를 기록해 둡니다. ID 번호와 새 이름 및 설명을 입력합니다. *패치*을 클릭합니다. 항목이 새 이름과 설명으로 업데이트되었습니다.
+1. 방금 생성한 J4X7 개체의 ID 번호를 기록해 둡니다. ID 번호와 새 이름 및 설명을 입력합니다. **패치** 을 클릭합니다. 항목이 새 이름과 설명으로 업데이트되었습니다.
 
-1. ID 번호를 입력하고 *삭제*클릭합니다. 이제 항목이 삭제되었습니다.
+1. ID 번호를 입력하고 **삭제** 클릭합니다. 이제 항목이 삭제되었습니다.
 
 ## 코드 검토
 
@@ -134,11 +130,11 @@ uuid: 522fc1b1-ab1d-4126-b828-98e1e1e805bd
 
 [`GetForm.js`](./remote-applications-with-headless-apis/resources/liferay-j4x7-overlay/src/components/GetForm.js) `getObjects` 메서드를 호출하고 응답을 JSON으로 구문 분석합니다. 각 J4X7 항목은 양식별로 나열됩니다.
 
-[`AddForm.js`](./remote-applications-with-headless-apis/resources/liferay-j4x7-overlay/src/components/AddForm.js) 사용자가 클릭하면 입력을 받고 `addObject` 메서드를 호출합니다 *추가*.
+[`AddForm.js`](./remote-applications-with-headless-apis/resources/liferay-j4x7-overlay/src/components/AddForm.js) 사용자가 클릭하면 입력을 받고 `addObject` 메서드를 호출합니다 **추가** .
 
-[`PatchForm.js`](./remote-applications-with-headless-apis/resources/liferay-j4x7-overlay/src/components/PatchForm.js) 사용자가 *Patch*을 클릭하면 입력을 받고 `patchObject` 메서드를 호출합니다.
+[`PatchForm.js`](./remote-applications-with-headless-apis/resources/liferay-j4x7-overlay/src/components/PatchForm.js) 사용자가 **Patch** 을 클릭하면 입력을 받고 `patchObject` 메서드를 호출합니다.
 
-[`DeleteForm.js`](./remote-applications-with-headless-apis/resources/liferay-j4x7-overlay/src/components/DeleteForm.js) 사용자가 *삭제*클릭하면 입력을 받고 `deleteObject` 메서드를 호출합니다.
+[`DeleteForm.js`](./remote-applications-with-headless-apis/resources/liferay-j4x7-overlay/src/components/DeleteForm.js) 사용자가 **삭제** 클릭하면 입력을 받고 `deleteObject` 메서드를 호출합니다.
 
 양식은 함께 모여 [`App.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/App.js) 파일과 함께 한 페이지에 표시됩니다.
 

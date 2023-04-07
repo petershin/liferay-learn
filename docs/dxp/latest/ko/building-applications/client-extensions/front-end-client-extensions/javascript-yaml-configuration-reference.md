@@ -1,7 +1,3 @@
----
-uuid: c79386c9-9344-49e3-bfd4-626b4f8750ed
----
-
 # JavaScript YAML 구성 참조
 
 `client-extension.yaml` 파일로 JavaScript 클라이언트 확장을 정의할 수 있습니다.

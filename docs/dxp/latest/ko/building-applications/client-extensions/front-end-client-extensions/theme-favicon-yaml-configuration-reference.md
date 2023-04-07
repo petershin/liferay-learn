@@ -1,7 +1,3 @@
----
-uuid: 147a9736-cb25-486e-8aa2-86547cf5852b
----
-
 # 테마 Favicon YAML 구성 참조
 
 `client-extension.yaml` 파일을 사용하여 테마 favicon 클라이언트 확장을 정의할 수 있습니다.

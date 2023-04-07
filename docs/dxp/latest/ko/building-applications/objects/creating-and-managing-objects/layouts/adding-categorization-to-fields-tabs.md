@@ -1,4 +1,3 @@
-
 # 필드 탭에 분류 추가
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U31+ 및 GA31+`

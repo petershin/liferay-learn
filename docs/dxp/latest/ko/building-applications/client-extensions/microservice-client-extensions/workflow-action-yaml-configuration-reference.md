@@ -1,7 +1,3 @@
----
-uuid: d20aeabb-1523-486a-9848-f72f8b25d9cb
----
-
 # 워크플로 작업 YAML 구성 참조
 
 `client-extension.yaml` 파일을 사용하여 워크플로 작업 클라이언트 확장을 정의할 수 있습니다.

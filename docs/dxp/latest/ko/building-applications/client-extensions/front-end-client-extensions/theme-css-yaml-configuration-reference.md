@@ -1,7 +1,3 @@
----
-uuid: 51abbad2-5447-4e53-accb-e62dbe327762
----
-
 # 테마 CSS YAML 구성 참조
 
 `client-extension.yaml` 파일로 테마 CSS 클라이언트 확장을 정의할 수 있습니다.

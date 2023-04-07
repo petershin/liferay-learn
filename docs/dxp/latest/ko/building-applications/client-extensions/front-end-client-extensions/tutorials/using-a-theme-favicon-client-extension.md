@@ -1,7 +1,3 @@
----
-uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
----
-
 # 테마 Favicon 클라이언트 확장 사용
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U45+/GA45+`
@@ -15,7 +11,7 @@ uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
     ```{note}
-    지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오.
+    지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오.
     ```
 
 1. 샘플 작업 공간을 다운로드하고 압축을 풉니다.
@@ -66,7 +62,7 @@ Once Liferay starts, run this command from the client extension's folder in the 
 이렇게 하면 클라이언트 확장이 빌드되고 zip이 Liferay의 `deploy/` 폴더에 배포됩니다.
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)를 사용하여 [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
+클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 를 사용하여 [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) .
 ```
 
 ```{tip}
@@ -84,17 +80,17 @@ STARTED liferay-sample-theme-favicon_1.0.0
 <!-- Should we suggest doing this to the pages of a Site Template? -->
 배포된 클라이언트 확장을 사용하도록 Liferay에서 페이지를 구성합니다.
 
-1. 페이지에서 상단의 _편집_ (![Edit icon](../../../../images/icon-edit-pencil.png))을 클릭합니다.
+1. 페이지에서 상단의 **편집**(![Edit icon](../../../../images/icon-edit-pencil.png))을 클릭합니다.
 
-1. 사이드바에서 페이지 디자인 옵션 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하고 메뉴 상단에서 _구성_ (![Configuration icon](../../../../images/icon-cog3.png))를 클릭합니다.
+1. 사이드바에서 페이지 디자인 옵션 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하고 메뉴 상단에서 **구성**(![Configuration icon](../../../../images/icon-cog3.png))를 클릭합니다.
 
-1. _Look and Feel_ 탭 아래의 _Favicon_ 섹션에서 _Change Favicon_클릭합니다.
+1. **Look and Feel** 탭 아래의 **Favicon** 섹션에서 **Change Favicon** 클릭합니다.
 
-1. _Client Extensions_ 클릭하고 새로 배치된 favicon인 _Sample Theme Favicon_을 선택합니다.
+1. **Client Extensions** 클릭하고 새로 배치된 favicon인 **Sample Theme Favicon** 을 선택합니다.
 
    ![샘플 테마 Favicon 클라이언트 확장을 선택하고 저장을 클릭합니다.](./using-a-theme-favicon-client-extension/images/01.gif)
 
-1. 아래로 스크롤하여 _저장_클릭합니다.
+1. 아래로 스크롤하여 **저장** 클릭합니다.
 
 1. 페이지로 돌아갑니다. 새 파비콘이 브라우저 탭에 나타납니다.
 

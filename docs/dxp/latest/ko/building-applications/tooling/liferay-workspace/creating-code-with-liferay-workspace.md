@@ -84,9 +84,9 @@ Workspace는 코드에 대한 런타임 다운로드 및 설정을 자동화합�
 
 1. 목표로 삼고 있는 Liferay 릴리스를 찾으십시오.
 
-   **DXP:**[Liferay Workspace 대상 버전](https://help.liferay.com/hc/ko/articles/360041818312) 페이지로 이동하여 번들 URL을 클립보드에 복사합니다.
+   **DXP:** [Liferay Workspace 대상 버전](https://help.liferay.com/hc/ko/articles/360041818312) 페이지로 이동하여 번들 URL을 클립보드에 복사합니다.
 
-   **CE:**[releases-cdn.liferay.com/portal](https://releases-cdn.liferay.com/portal) 을 찾아보고 필요한 번들을 찾은 다음 URL을 클립보드에 복사합니다.
+   **CE:** [releases-cdn.liferay.com/portal](https://releases-cdn.liferay.com/portal) 을 찾아보고 필요한 번들을 찾은 다음 URL을 클립보드에 복사합니다.
 
 1. 작업 공간의 루트 폴더에서 `gradle.properties` 을 열고 번들 URL 속성을 설정합니다.
 

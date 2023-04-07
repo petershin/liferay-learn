@@ -1,4 +1,3 @@
-
 # 이전 버전에서 기본 동기 메시징 사용
 
 ```{important}
@@ -25,7 +24,7 @@
 docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 ```
 
-<http://localhost:8080>에서 Liferay에 로그인합니다. 이메일 주소 _test@liferay.com_ 및 암호 _test_사용하십시오. 프롬프트가 표시되면 비밀번호를 _learn_로 변경하십시오.
+<http://localhost:8080>에서 Liferay에 로그인합니다. 이메일 주소 **test@liferay.com** 및 암호 **test** 사용하십시오. 프롬프트가 표시되면 비밀번호를 **learn** 로 변경하십시오.
 
 그런 다음 다음 단계를 따르십시오.
 
@@ -126,7 +125,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 두 구성자는 모두 [`구성 요소`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 클래스입니다. 그들은 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 사용하여 `DestinationFactory` 인스턴스를 주입합니다.
 
-`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 *직렬* 대상을 생성합니다.  마지막으로 `_activate(BundleContext)` 메서드는 `BundleContext`를 사용하여 [`대상`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)을 OSGi 서비스에 등록합니다.
+`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 **직렬** 대상을 생성합니다.  마지막으로 `_activate(BundleContext)` 메서드는 `BundleContext`를 사용하여 [`대상`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 을 OSGi 서비스에 등록합니다.
 
 ```{warning}
 기본 동기식 메시징과 함께 직렬 또는 병렬 대상만 사용하십시오. `DestinationConfiguration`의 `createSerialDestinationConfiguration(String)` 및 `createParallelDestinationConfiguration(String)` 메서드를 호출하여 만들 수 있습니다.
@@ -138,7 +137,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 ## 리스너 검사
 
-`m4q7-charlie-impl` 모듈의 `M4Q7CharlieMessageListener` 클래스는 `acme/m4q7_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)로 전송된 메시지를 수신합니다. [Listening for Messages](./listening-for-messages.md) 이 보여주는 것과 같은 방식으로 등록됩니다.
+`m4q7-charlie-impl` 모듈의 `M4Q7CharlieMessageListener` 클래스는 `acme/m4q7_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 로 전송된 메시지를 수신합니다. [메시지 듣기](./listening-for-messages.md) 이 보여주는 것과 같은 방식으로 등록됩니다.
 
 `M4Q7CharlieMessageListener` 클래스:
 
@@ -173,7 +172,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
    :lines: 12-38
 ```
 
-`M4Q7BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 *기본* 모드(주석의 `target = "(mode=DEFAULT)"` 속성으로 지정됨)로 설정된 `SynchronousMessageSender` 을 삽입합니다.
+`M4Q7BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 **기본** 모드(주석의 `target = "(mode=DEFAULT)"` 속성으로 지정됨)로 설정된 `SynchronousMessageSender` 을 삽입합니다.
 
 ```{note}
 *기본* 모드에서 `SynchronousMessageSender`의 `send` 메서드는 응답 메시지가 수신되거나 발신자가 시간 초과될 때까지 호출 클래스를 차단합니다.
@@ -245,7 +244,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 ## 무엇 향후 계획
 
-직접 *모드* 사용하여 동기식 메시징을 탐색하려면 [이전 버전에서 직접 동기식 메시징 사용](./using-direct-synchronous-messaging-in-previous-versions.md)참조하십시오.
+직접 **모드** 사용하여 동기식 메시징을 탐색하려면 [이전 버전에서 직접 동기식 메시징 사용](./using-direct-synchronous-messaging-in-previous-versions.md)참조하십시오.
 
 메시지를 보낸 후 즉시 처리를 계속하려면 [비동기 메시징 사용](./using-asynchronous-messaging.md)참조하십시오.
 

@@ -1,7 +1,3 @@
----
-uuid: 52556bc8-a31b-4331-bcd7-317428006384
----
-
 # 시스템 개체 확장
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U46+/GA46+`
@@ -14,7 +10,7 @@ Liferay 개체를 사용하면 지원되는 시스템 서비스를 확장할 수
 
 ![Objects Framework와 통합된 시스템 서비스를 확장합니다.](./extending-system-objects/images/01.png)
 
-시스템 개체를 확장할 때 [필드](#adding-fields), [관계](#adding-relationships), [작업](#adding-actions)및 [유효성 검사](#adding-validations) 추가할 수 있습니다.
+시스템 개체를 확장할 때 [필드](#adding-fields) , [관계](#adding-relationships) , [작업](#adding-actions) 및 [유효성 검사](#adding-validations) 추가할 수 있습니다.
 
 | 특징 | 시스템 객체   | 사용자 지정 개체 |
 |:-- |:-------- |:--------- |
@@ -30,7 +26,7 @@ Liferay 개체를 사용하면 지원되는 시스템 서비스를 확장할 수
 시스템 개체에 필드를 추가할 수 있습니다. 추가 데이터베이스 열은 서비스의 원래 테이블 이름에 `_x` 추가된(예: `AccountEntry_x`) 사용하는 별도의 데이터베이스 테이블에 추가됩니다. 시스템 객체는 사용 가능한 모든 [필드 유형을 지원합니다](./fields.md). 시스템 개체는 사용자 지정 레이아웃 또는 보기를 지원하지 않으므로 Headless API를 통해서만 이러한 사용자 지정 필드에 액세스할 수 있습니다. 자세한 내용은 [개체에 필드 추가](./fields/adding-fields-to-objects.md) 참조하십시오.
 
 ```{note}
-Liferay의 [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) 애플리케이션은 [Expando](../.. /data-frameworks/expando-framework/accessing-custom-fields-with-expando.md) 프레임워크. Objects는 Expando 기반 사용자 정의 필드를 지원하지 않으므로 Objects 기능(예: [relationships](#adding-relationships), [actions](#adding-actions) 및 [validations](#adding-validations))과 함께 사용할 수 없습니다.
+Liferay의 [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) 애플리케이션은 [Expando](../.. /data-frameworks/expando-framework/accessing-custom-fields-with-expando.md) 프레임워크. Objects는 Expando 기반 사용자 정의 필드를 지원하지 않으므로 Objects 기능(예: [relationships](#adding-relationships) , [actions](#adding-actions) 및 [validations](#adding-validations) )과 함께 사용할 수 없습니다.
 ```
 
 ## 관계 추가
@@ -38,7 +34,7 @@ Liferay의 [Custom Fields](../../../system-administration/configuring-liferay/ad
 시스템 개체와 사용자 지정 개체 간의 관계를 생성하여 해당 엔터티를 연결할 수 있습니다. System Object는 일대다 및 다대다 관계를 모두 지원합니다. 자세한 내용은 [객체 관계 정의](./relationships/defining-object-relationships.md) 참조하십시오.
 
 ```{important}
-시스템 개체는 [사용자 정의 레이아웃](./layouts/designing-object-layouts.md)을 지원하지 않으므로 [레이아웃 탭](./layouts/designing-object-layouts.md#adding-layout-tabs)을 추가할 수 없습니다. )을 다대다 관계 또는 일대다 관계의 상위 측에 표시하기 위한 객체로.
+시스템 개체는 [사용자 정의 레이아웃](./layouts/designing-object-layouts.md)을 지원하지 않으므로 [레이아웃 탭](./layouts/designing-object-layouts.md#adding-layout-tabs) 을 추가할 수 없습니다. )을 다대다 관계 또는 일대다 관계의 상위 측에 표시하기 위한 객체로.
 ```
 
 ## 작업 추가

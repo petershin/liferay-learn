@@ -1,7 +1,3 @@
----
-uuid: 4801c0d5-123d-471e-a8c6-d080342488c8
----
-
 # OAuth 사용자 에이전트 YAML 구성 참조
 
 `client-extension.yaml` 파일로 OAuth 사용자 에이전트 클라이언트 확장을 정의할 수 있습니다.

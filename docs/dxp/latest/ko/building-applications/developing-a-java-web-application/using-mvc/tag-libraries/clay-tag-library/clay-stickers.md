@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> LRDOCS-11761 Fix dxp building-applications ko translations' formats
 # 점토 스티커
 
 배지는 숫자를 표시하고 레이블은 짧은 정보를 표시하는 반면 스티커는 콘텐츠(일반적으로 콘텐츠 유형)의 작은 시각적 지표입니다. 작은 레이블이나 Liferay 아이콘을 포함할 수 있으며 원형과 사각형의 두 가지 모양으로 제공됩니다.

@@ -1,7 +1,3 @@
----
-uuid: d5930388-d026-4c77-bcc1-dd9d4b985869
----
-
 # IFrame YAML 구성 참조
 
 `client-extension.yaml` 파일로 IFrame 클라이언트 확장을 정의할 수 있습니다.

@@ -1,4 +1,3 @@
-
 # Liferay npm Bundler 2.x를 사용하기 위해 일반 JavaScript, Billboard JS, JQuery, Metal JS, React 또는 Vue JS 프로젝트 마이그레이션
 
 liferay-npm-bundler 2.x를 사용하기 위해 아래 표시된 프레임워크 프로젝트를 마이그레이션하려면 다음 단계를 따르십시오.

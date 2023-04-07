@@ -1,4 +1,3 @@
-
 # 번들러가 npm 패키지를 게시하는 방법
 
 지정된 [구조](./the-structure-of-osgi-bundles-containing-npm-packages.md)을 사용하여 OSGi 번들을 배포하면 표준 URL을 통해 해당 모듈을 사용할 수 있습니다. 해결된 모듈을 더 잘 설명하기 위해 아래 예제 구조는 liferay-npm-bundler 1.x가 생성하는 표준 구조입니다. 2.x 버전이 생성하는 네임스페이스 패키지가 없습니다. liferay-npm-bundler 2.0은 아래 설명된 대로 이 중복 제거 메커니즘을 재정의하여 격리된 종속성과 가져오기를 구현합니다.

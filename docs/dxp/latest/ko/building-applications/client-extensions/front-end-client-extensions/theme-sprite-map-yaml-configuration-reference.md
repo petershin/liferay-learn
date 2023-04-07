@@ -1,7 +1,3 @@
----
-uuid: 03821b5e-c0a1-4dc8-a900-eb1e36c1ead5
----
-
 # 테마 스프라이트 맵 YAML 구성 참조
 
 `client-extension.yaml` 파일을 사용하여 테마 스프라이트 맵 클라이언트 확장을 정의할 수 있습니다.

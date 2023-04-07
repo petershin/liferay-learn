@@ -1,12 +1,8 @@
----
-uuid: a8159380-3119-46c5-be6e-d9e24e60c325
----
-
 # CSS 클라이언트 확장 사용
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U45+/GA45+`
 
-CSS 클라이언트 확장을 사용하면 Liferay 코드에 대한 테마 또는 종속성 없이 페이지 스타일을 재정의할 수 있습니다. 클라이언트 확장으로 시작하십시오( [샘플 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace)에서).
+CSS 클라이언트 확장을 사용하면 Liferay 코드에 대한 테마 또는 종속성 없이 페이지 스타일을 재정의할 수 있습니다. 클라이언트 확장으로 시작하십시오( [샘플 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace) 에서).
 
 ## 전제 조건
 
@@ -15,7 +11,7 @@ CSS 클라이언트 확장을 사용하면 Liferay 코드에 대한 테마 또�
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
    ```{note}
-   지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오.
+   지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오.
    ```
 
 1. 샘플 작업 공간을 다운로드하고 압축을 풉니다.
@@ -87,7 +83,7 @@ Once Liferay starts, run this command from the client extension's folder in the 
 이렇게 하면 클라이언트 확장이 빌드되고 zip이 Liferay의 `deploy/` 폴더에 배포됩니다.
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)를 사용하여 [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
+클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 를 사용하여 [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) .
 ```
 
 ```{tip}
@@ -106,19 +102,19 @@ STARTED sample-global-css_1.0.0
 
 배포된 클라이언트 확장을 사용하도록 Liferay에서 페이지를 구성합니다.
 
-1. 버튼이 하나 이상 있는 페이지에서 상단의 _편집_ 아이콘 ![Edit icon](../../../../images/icon-edit-pencil.png) 을 클릭합니다.
+1. 버튼이 하나 이상 있는 페이지에서 상단의 **편집** 아이콘 ![Edit icon](../../../../images/icon-edit-pencil.png) 을 클릭합니다.
 
 1. 사이드바에서 페이지 디자인 옵션 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하고 메뉴 상단에 있는 구성 아이콘(![Configuration icon](../../../../images/icon-cog3.png))을 클릭합니다.
 
    ![이 클라이언트 확장의 구성에 액세스하려면 페이지 디자인 옵션 메뉴에서 톱니바퀴 아이콘을 클릭하십시오.](./using-a-css-client-extension/images/01.png)
 
-1. 페이지 하단의 *CSS 클라이언트 확장* 섹션에서 *CSS 클라이언트 확장 추가*을 클릭합니다.
+1. 페이지 하단의 **CSS 클라이언트 확장** 섹션에서 **CSS 클라이언트 확장 추가** 을 클릭합니다.
 
    ![목록에서 CSS 클라이언트 확장을 추가합니다.](./using-a-css-client-extension/images/02.png)
 
-1. 팝업 모달에서 CSS 클라이언트 확장을 선택하고 *추가*클릭합니다.
+1. 팝업 모달에서 CSS 클라이언트 확장을 선택하고 **추가** 클릭합니다.
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 이제 클라이언트 확장이 구성되었습니다. 페이지 편집기에서 버튼의 배경색은 이제 CSS에서 지정하는 색상입니다. 편집 모드 외부에서 페이지에 적용된 CSS를 보려면 페이지를 게시해야 합니다.
 

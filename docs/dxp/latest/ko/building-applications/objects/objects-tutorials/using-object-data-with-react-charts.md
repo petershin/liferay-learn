@@ -1,7 +1,3 @@
----
-uuid: 47e8890e-1dde-4c95-bb3a-56eb09f18b1a
----
-
 # React 차트에서 개체 데이터 사용
 
 여기에서 [개 개체](../../objects.md), [헤드리스 API](../understanding-object-integrations/headless-framework-integration.md)및 [사용자 지정 요소 원격 애플리케이션](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) 를 사용하여 데이터 대시보드용 동적 차트를 생성합니다. 먼저 개체 API 호출에 대해 [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) 활성화된 새 DXP 인스턴스를 설정합니다. 그런 다음 데이터를 수신하고 저장하기 위한 개체를 만듭니다. REST API를 사용하여 개체에 데이터를 추가한 후 제공된 React [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) 애플리케이션을 다운로드하고 빌드합니다. 코드가 컴파일되면 생성된 `.js` 파일을 Liferay 문서 라이브러리에 호스팅하고 해당 WebDAV URL을 복사합니다. 마지막으로 이 URL을 사용하여 React 차트용 원격 앱을 만들고 이를 페이지 위젯으로 배포합니다.
@@ -15,23 +11,23 @@ uuid: 47e8890e-1dde-4c95-bb3a-56eb09f18b1a
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 *기본 포털 CORS 구성*에 추가합니다.
+그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 **기본 포털 CORS 구성** 에 추가합니다.
 
-1. *전역 메뉴*(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 *보안 도구* 를 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **보안 도구** 를 클릭합니다.
 
-1. *Portal CORS(Cross-Origin Resource Sharing)* 탭으로 이동하고 *Default Portal CORS Configuration*을 클릭합니다.
+1. **Portal CORS(Cross-Origin Resource Sharing**) 탭으로 이동하고 **Default Portal CORS Configuration** 을 클릭합니다.
 
     ![기본 포털 CORS 구성 클릭](./using-object-data-with-react-charts/images/02.png)
 
-1. `/o/c/*` 값으로 *URL 패턴*을 추가하고 *저장*을 클릭합니다. 이렇게 하면 모든 개체 API에 대해 CORS가 활성화됩니다.
+1. `/o/c/*` 값으로 **URL 패턴** 을 추가하고 **저장** 을 클릭합니다. 이렇게 하면 모든 개체 API에 대해 CORS가 활성화됩니다.
 
     ![객체 API에 대한 /o/c/* URL 패턴을 추가합니다.](./using-object-data-with-react-charts/images/03.png)
 
 ## React 차트용 개체 만들기
 
-1. *Global Menu*(![Global Menu](../../../images/icon-applications-menu.png))를 열고 *Control Panel* 탭으로 이동한 다음 *Objects*를 클릭합니다. .
+1. **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png))를 열고 **Control Panel** 탭으로 이동한 다음 **Objects** 를 클릭합니다. .
 
-1. *추가* 버튼(![추가 버튼](../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
+1. **추가** 버튼(![추가 버튼](../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
     | 필드 | 가치 |
     | :--- | :--- |
@@ -43,20 +39,20 @@ uuid: 47e8890e-1dde-4c95-bb3a-56eb09f18b1a
     제공된 React 앱은 이러한 값을 사용합니다.
     ```
 
-1. 새 *개체* 초안을 선택하고 *필드* 탭을 클릭한 다음 다음 *필드*추가합니다.
+1. 새 **개체** 초안을 선택하고 **필드** 탭을 클릭한 다음 다음 **필드** 추가합니다.
 
    | 라벨 | 필드 이름 | 유형 | 요구하는     |
    |:-- |:----- |:-- |:-------- |
    | 라벨 | 라벨    | 원본 | &#10004; |
    | 가치 | 가치    | 정수 | &#10004; |
 
-1. *세부 정보* 탭을 클릭하고 *게시*클릭합니다.
+1. **세부 정보** 탭을 클릭하고 **게시** 클릭합니다.
 
 [Publishing an Object](../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 은 데이터 수신 및 저장을 위한 새로운 애플리케이션을 생성하고 활성화합니다. 이제 Liferay UI 또는 Headless API를 통해 액세스할 수 있습니다.
 
 ## 헤드리스 API를 사용하여 개체에 데이터 추가
 
-1. Liferay의 *API Explorer* (예: `localhost:8080/o/api`)을 열고 *REST Applications* 드롭다운 메뉴를 클릭한 다음 *c/x3j8objects*을 클릭합니다.
+1. Liferay의 **API Explorer**(예: `localhost:8080/o/api`)을 열고 **REST Applications** 드롭다운 메뉴를 클릭한 다음 **c/x3j8objects** 을 클릭합니다.
 
 1. 배치 `POST` API에 대한 요청 본문에 이 데이터를 입력합니다.
 
@@ -85,7 +81,7 @@ uuid: 47e8890e-1dde-4c95-bb3a-56eb09f18b1a
    ]
    ```
 
-1. *실행* 클릭하여 개체에 데이터 항목을 추가합니다.
+1. **실행** 클릭하여 개체에 데이터 항목을 추가합니다.
 
 데이터 추가가 완료되면 제공된 React 서버를 설정할 수 있습니다. 여기에는 X3J8-Object에 대한 API 호출을 수행하고 해당 데이터를 표시하는 FusionChart 구현이 포함됩니다.
 
@@ -93,7 +89,7 @@ uuid: 47e8890e-1dde-4c95-bb3a-56eb09f18b1a
 
 React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 따르세요.
 
-1. [React 프로젝트](./liferay-x3j8.zip)다운로드하고 압축을 풉니다.
+1. [React 프로젝트](./liferay-x3j8.zip) 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/liferay-x3j8.zip -O
@@ -155,15 +151,15 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
 
 ## 애플리케이션의 `.js` 파일 호스팅
 
-1. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*확장한 다음 *문서 및 미디어*클릭합니다.
+1. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png))을 열고 **콘텐츠 & 데이터** 확장한 다음 **문서 및 미디어** 클릭합니다.
 
 1. `.js` 파일을 업로드 영역으로 끌어다 놓습니다.
 
    문서 라이브러리에 업로드하면 원격 앱을 만드는 데 사용할 고유한 WebDAV URL이 파일에 할당됩니다.
 
-1. *정보* 아이콘(![Info Icon](../../../images/icon-information.png))을 클릭하고 *업로드된 파일*선택합니다.
+1. **정보** 아이콘(![Info Icon](../../../images/icon-information.png))을 클릭하고 **업로드된 파일** 선택합니다.
 
-1. 파일의 *WebDAV URL* 을 복사하고 다음 단계에서 사용할 수 있도록 저장합니다.
+1. 파일의 **WebDAV URL** 을 복사하고 다음 단계에서 사용할 수 있도록 저장합니다.
 
    예: `http://localhost:8080/webdav/guest/document_library/main.5a6819d5.js`.
 
@@ -171,9 +167,9 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
 
 ## React 차트용 원격 앱 만들기
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *애플리케이션* 탭을 클릭한 다음 *원격 앱*선택합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **애플리케이션** 탭을 클릭한 다음 **원격 앱** 선택합니다.
 
-1. *추가* 버튼(![Add Button](../../../images/icon-add.png))을 클릭합니다.
+1. **추가** 버튼(![Add Button](../../../images/icon-add.png))을 클릭합니다.
 
 1. 다음 값을 입력합니다.
 
@@ -185,9 +181,9 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
    | URL        | `.js` 파일의 WebDAV URL |
    | 포틀릿 분류 이름  | 원격 앱                 |
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
-일단 저장되면 Liferay는 사이트 페이지에 배포할 수 있는 원격 앱용 위젯을 생성합니다. 이 위젯은 애플리케이션의 포틀릿 범주 이름(예: 이 자습서의 경우 *원격 앱* ) 아래에 나열됩니다.
+일단 저장되면 Liferay는 사이트 페이지에 배포할 수 있는 원격 앱용 위젯을 생성합니다. 이 위젯은 애플리케이션의 포틀릿 범주 이름(예: 이 자습서의 경우 **원격 앱**) 아래에 나열됩니다.
 
 ![사이트 페이지에 원격 앱 위젯을 배포할 수 있습니다.](./using-object-data-with-react-charts/images/06.png)
 

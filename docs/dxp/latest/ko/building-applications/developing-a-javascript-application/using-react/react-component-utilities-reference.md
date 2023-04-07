@@ -77,4 +77,4 @@ function OverlayContainer({root, allowEdit}) {
 />
 ```
 
-[위](#frontend-js-react-web-module)에서 언급한 `frontend-js-react-web` 모듈의 `render()` 함수를 래핑합니다. 여기에 전달된 `data`는 `renderData`로 전달되고 `module`은 `renderable`([위](#frontend-js-react-web-module)에서 언급한 구성 요소 함수 또는 React 요소)을 내보내야 합니다.
+[위](#frontend-js-react-web-module) 에서 언급한 `frontend-js-react-web` 모듈의 `render()` 함수를 래핑합니다. 여기에 전달된 `data`는 `renderData`로 전달되고 `module`은 `renderable`( [위](#frontend-js-react-web-module) 에서 언급한 구성 요소 함수 또는 React 요소)을 내보내야 합니다.

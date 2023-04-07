@@ -1,4 +1,3 @@
-
 # 이전 버전에서 직접 동기식 메시징 사용
 
 ```{important}
@@ -17,7 +16,7 @@
 docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 ```
 
-<http://localhost:8080>에서 Liferay에 로그인합니다. 이메일 주소 _test@liferay.com_ 및 암호 _test_사용하십시오. 프롬프트가 표시되면 비밀번호를 _learn_로 변경하십시오.
+<http://localhost:8080>에서 Liferay에 로그인합니다. 이메일 주소 **test@liferay.com** 및 암호 **test** 사용하십시오. 프롬프트가 표시되면 비밀번호를 **learn** 로 변경하십시오.
 
 그런 다음 다음 단계를 따르십시오.
 
@@ -106,7 +105,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 이 구성자는 [`구성 요소`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 클래스입니다. [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 사용하여 `DestinationFactory` 인스턴스를 주입합니다.
 
-`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 `acme/x6n5_able`이라는 *동기식* 대상을 생성합니다. 동기 대상은 동기 메시징에 최적화되어 있습니다. 마지막으로 이 메소드는 `BundleContext`를 사용하여 OSGi 서비스에 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 등록합니다.
+`_activate(BundleContext)` 메서드는 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 를 사용하여 `acme/x6n5_able`이라는 **동기식** 대상을 생성합니다. 동기 대상은 동기 메시징에 최적화되어 있습니다. 마지막으로 이 메소드는 `BundleContext`를 사용하여 OSGi 서비스에 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 등록합니다.
 
 `X6N5AbleMessagingConfigurator` 비활성화되면 `_deactivate()` 메서드가 대상 서비스를 등록 해제합니다.
 
@@ -119,7 +118,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
    :lines: 12-37
 ```
 
-`X6N5BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 *다이렉트* 모드로 설정된 `SynchronousMessageSender` 삽입합니다(주석의 `target = "(mode=DIRECT)"` 속성으로 지정됨).
+`X6N5BakerOSGiCommands` 자체 클래스 유형의 서비스 `구성 요소` 입니다. `@Reference` 주석을 사용하여 **다이렉트** 모드로 설정된 `SynchronousMessageSender` 삽입합니다(주석의 `target = "(mode=DIRECT)"` 속성으로 지정됨).
 
 ```{note}
 *직접* 모드에서 `SynchronousMessageSender` `send` 메소드는 현재 스레드가 모든 리스너에게 메시지를 전달할 때까지 호출 클래스를 차단합니다.
@@ -127,11 +126,11 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 `X6N5BakerOSGiCommands`의 `@Component` 속성은 `sendMessage` 라는 Gogo 셸 명령 함수를 `x6n5` 범위에서 정의합니다. 이 명령은 `sendMessage(String)` 메서드에 매핑되고 `String`입력을 받습니다.
 
-`sendMessage(String)` 메소드는 Gogo 쉘 명령의 `String` 페이로드로 사용하여 [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) 생성합니다. `SynchronousMessageSender` `send(String, Message)` 메서드는 현재 스레드를 사용하여 메시지를 `acme/x6n5_able` [`대상`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 메시지 수신기로 전달합니다. 스레드가 모든 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)s에서 메시지를 처리할 때까지 `X6N5BakerOSGiCommands` 클래스에서 실행이 차단됩니다. 그런 다음 메시지 응답을 기록하는 `X6N5BakerOSGiCommands` `sendMessage(String)` 메서드에서 실행이 계속됩니다.
+`sendMessage(String)` 메소드는 Gogo 쉘 명령의 `String` 페이로드로 사용하여 [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) 생성합니다. `SynchronousMessageSender` `send(String, Message)` 메서드는 현재 스레드를 사용하여 메시지를 `acme/x6n5_able` [`대상`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 메시지 수신기로 전달합니다. 스레드가 모든 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) s에서 메시지를 처리할 때까지 `X6N5BakerOSGiCommands` 클래스에서 실행이 차단됩니다. 그런 다음 메시지 응답을 기록하는 `X6N5BakerOSGiCommands` `sendMessage(String)` 메서드에서 실행이 계속됩니다.
 
 ## 리스너 검사
 
-`x6n5-charlie-impl` 모듈의 `X6N5CharlieMessageListener` 클래스 및 `x6n5-dog-impl` 모듈의 `X6N5DogMessageListener` 클래스는 `acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)에 전송된 메시지를 수신합니다. 그들은 메시지 듣기 [](./listening-for-messages.md) 보여주는 것과 같은 방식으로 등록합니다.
+`x6n5-charlie-impl` 모듈의 `X6N5CharlieMessageListener` 클래스 및 `x6n5-dog-impl` 모듈의 `X6N5DogMessageListener` 클래스는 `acme/x6n5_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 에 전송된 메시지를 수신합니다. 그들은 메시지 듣기 [](./listening-for-messages.md) 보여주는 것과 같은 방식으로 등록합니다.
 
 `X6N5CharlieMessageListener` 클래스:
 
@@ -153,7 +152,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 ## 무엇 향후 계획
 
-기본 *모드를 사용하여 동기식 메시징을 탐색* [이전 버전에서 기본 동기식 메시징 사용](./using-default-synchronous-messaging-in-previous-versions.md)참조하십시오.
+기본 **모드를 사용하여 동기식 메시징을 탐색**[이전 버전에서 기본 동기식 메시징 사용](./using-default-synchronous-messaging-in-previous-versions.md)참조하십시오.
 
 메시지를 보낸 후 즉시 처리를 계속하려면 [비동기 메시징 사용](./using-asynchronous-messaging.md)참조하십시오.
 

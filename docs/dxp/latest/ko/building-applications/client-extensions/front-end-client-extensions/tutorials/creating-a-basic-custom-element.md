@@ -1,7 +1,3 @@
----
-uuid: fdced878-aea0-40b8-9959-828e9787d373
----
-
 # 기본 맞춤 요소 만들기
 
 {bdg-secondary}`사용 가능한 Liferay 7.4+`
@@ -14,13 +10,13 @@ uuid: fdced878-aea0-40b8-9959-828e9787d373
 
 여기에서 Liferay의 [`create_custom_element.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_custom_element.sh) 스크립트를 사용하여 기본 원격 애플리케이션을 생성합니다. 애플리케이션이 생성된 후 해당 코드를 컴파일하고 `.js` 및 `.css` 파일을 호스팅합니다. 일단 호스팅되면 각 파일의 URL을 복사하고 이를 사용하여 맞춤 요소를 만듭니다. 마지막으로 응용 프로그램을 사이트 페이지에 위젯으로 배포할 수 있습니다.
 
-![create_custom_element.sh 스크립트를 사용하여 간단한 React 애플리케이션을 생성합니다.](./creating-a-basic-custom-element/images/01.png)
+![create **custom** element.sh 스크립트를 사용하여 간단한 React 애플리케이션을 생성합니다.](./creating-a-basic-custom-element/images/01.png)
 
 ```{note}
 사용자 정의 요소 클라이언트 확장은 빌드, 패키징 또는 호스팅 방식에 관계없이 모든 기술을 사용할 수 있습니다. 이 튜토리얼은 React를 사용하는 샘플 사용자 정의 요소 애플리케이션만 제공합니다.
 ```
 
-`create_custom_element.sh` 실행하려면 최신 버전 [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), [YARN](https://classic.yarnpkg.com/)이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
+`create_custom_element.sh` 실행하려면 최신 버전 [Node.JS](https://nodejs.org/) , [NPM](https://www.npmjs.com/) , [YARN](https://classic.yarnpkg.com/) 이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
 
 ## `create_custom_element.sh` 스크립트 실행
 
@@ -124,21 +120,21 @@ File sizes after gzip:
 
 그런 다음 다음 단계를 따르십시오.
 
-1. *사이트 메뉴* (![Site Menu](../../../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*확장한 다음 *문서 및 미디어*로 이동합니다.
+1. **사이트 메뉴**(![Site Menu](../../../../images/icon-product-menu.png))을 열고 **콘텐츠 & 데이터** 확장한 다음 **문서 및 미디어** 로 이동합니다.
 
-1. *추가* (![Add Button](../../../../images/icon-add.png))를 클릭하고 *여러 파일 업로드*선택합니다.
+1. **추가**(![Add Button](../../../../images/icon-add.png))를 클릭하고 **여러 파일 업로드** 선택합니다.
 
 1. `.js` 및 `.css` 파일을 업로드 영역으로 끌어다 놓습니다.
 
-   또는 *파일 선택* 사용하여 업로드하십시오.
+   또는 **파일 선택** 사용하여 업로드하십시오.
 
    ![.js 및 .css 파일을 Liferay 문서 라이브러리에 업로드합니다.](./creating-a-basic-custom-element/images/02.png)
 
-1. *게시*클릭합니다.
+1. **게시** 클릭합니다.
 
 이렇게 하면 파일이 문서 라이브러리에 추가되고 원격 애플리케이션을 만드는 데 사용할 고유한 URL이 할당됩니다.
 
-각 파일의 URL을 보려면 *정보* 아이콘(![Info Icon](../../../../images/icon-information.png))을 클릭하고 파일을 선택하십시오. 각 파일의 *WebDAV URL* 을 복사하고 다음 단계에서 사용할 수 있도록 저장합니다.
+각 파일의 URL을 보려면 **정보** 아이콘(![Info Icon](../../../../images/icon-information.png))을 클릭하고 파일을 선택하십시오. 각 파일의 **WebDAV URL** 을 복사하고 다음 단계에서 사용할 수 있도록 저장합니다.
 
 ![각 파일의 WebDAV URL을 복사합니다.](./creating-a-basic-custom-element/images/03.png)
 
@@ -149,9 +145,9 @@ File sizes after gzip:
 
 ## Liferay에 애플리케이션 등록
 
-1. *글로벌 메뉴* (![Global Menu](../../../../images/icon-applications-menu.png))을 열고 *애플리케이션* 탭을 클릭한 다음 *원격 앱*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../../images/icon-applications-menu.png))을 열고 **애플리케이션** 탭을 클릭한 다음 **원격 앱** 으로 이동합니다.
 
-1. *추가* (![Add Button](../../../../images/icon-add.png))을 클릭합니다.
+1. **추가**(![Add Button](../../../../images/icon-add.png))을 클릭합니다.
 
 1. 다음 값을 입력합니다.
 
@@ -164,7 +160,7 @@ File sizes after gzip:
    | CSS URL    | `.css` 파일의 WebDAV URL |
    | 포틀릿 분류 이름  | 원격 앱                  |
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 일단 저장되면 Liferay는 다른 페이지 위젯처럼 사이트 페이지에 배포할 수 있는 H5V7-Remote-App이라는 위젯을 생성합니다. 이 위젯은 선택한 포틀릿 범주 이름 아래에 나타납니다.
 

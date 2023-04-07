@@ -1,4 +1,3 @@
-
 # Liferay npm Bundler 2.x를 사용하도록 Angular 프로젝트 마이그레이션
 
 liferay-npm-bundler 2.x를 사용하도록 Angular 프로젝트를 마이그레이션하려면 다음 단계를 따르십시오. liferay-npm-bundler 1.x는 일부 변환 단계를 수행하기 위해 Babel에 의존했지만 이제 이러한 변환은 버전 2.x에서 자동으로 적용됩니다. 따라서 프로젝트에서 Babel을 제거해야 합니다.

@@ -1,7 +1,3 @@
----
-uuid: 5689e9cb-ea33-47b6-9586-df785fab2b62
----
-
 # CSS YAML 구성 참조
 
 `client-extension.yaml` 파일로 CSS 클라이언트 확장을 정의할 수 있습니다.

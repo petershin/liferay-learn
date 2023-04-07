@@ -5,11 +5,9 @@ uuid: bc607275-9efe-4dee-9199-22ccc118a821
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-With a theme CSS client extension, you can override the CSS files (`main.css` and `clay.css`) of your Liferay Theme to change the entire look and feel of a page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension.
+With a theme CSS client extension, you can override the current theme's CSS files (`main.css` and `clay.css`) to change the look and feel of a page. Start with a client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace).
 
 ## Prerequisites
-
-To start developing client extensions,
 
 1. Install Java (JDK 8 or JDK 11).
 
@@ -71,7 +69,9 @@ The `package.json` file contains the following code:
 
 The `dependencies` section includes the `sassy-inputs` library. This is not used in the example, but describes how an npm module is imported and used in your theme CSS client extension. The `liferayDesignPack` section describes the base theme used for the styles. Using the `styled` theme ensures that the existing styles specified on pages, fragments and widgets are not impacted. The other fields `main`, `name` and `version` provide required metadata.
 
-The `src/css/_custom_.scss` file contains this SCSS:
+<!-- What if the styled theme is not the theme currently configured (and thus being overridden?) What happens if this Client Extension is installed/enabled and then somebody changes the theme? -Rich --> 
+
+The `src/css/_custom.scss` file contains this SCSS:
 
 ```css
 @import 'sassy-inputs/sass/main';
@@ -87,7 +87,7 @@ The first line imports the npm module added in `package.json`. The CSS modifies 
 Your code is present inside `_custom.scss` while the `client-extension.yaml` file points to `clay.css` and `main.css`. This is because the theme CSS client extension runs the full Clay CSS build process resulting in a compiled `clay.css` and `main.css` file that also contains the compiled CSS code from `_custom.scss`.
 ```
 
-Add CSS to create a hover effect for all images. Open the `_custom.scss` file, add a declaration for `img:hover`, and specify the following properties:
+Add CSS to create a hover effect for all images. Open the `_custom.scss` file, add a declaration for `img:hover`, and specify these properties:
 
 ```css
 img:hover{
@@ -96,7 +96,7 @@ img:hover{
 }
 ```
 
-This specifies that images must have a `2px` red border and rounded edges on hover.
+This defines images as having a `2px` red border and rounded edges on hover.
 
 Now deploy the client extension.
 
@@ -129,7 +129,7 @@ STARTED liferay-sample-theme-css_1.0.0
 
 ## Use the Client Extension on a Page
 
-Configure a page in Liferay to use your deployed client extension:
+Configure a page to use your deployed client extension:
 
 1. On a page, click _Edit_ (![Edit icon](../../../../images/icon-edit-pencil.png)) at the top.
 
@@ -143,7 +143,7 @@ Configure a page in Liferay to use your deployed client extension:
 
 1. Scroll down and click _Save_.
 
-Now your client extension is configured. In the page editor, the background on the header is an image and every link that you hover over has a background color and change of text color. To see your changes applied on the page outside Edit mode, you must publish the page.
+In the page editor, the background on the header is an image, and every link that you hover over has changed background and text color. To see your changes applied on the page outside Edit mode, you must publish the page.
 
 ![The new theme appears on the selected page.](./using-a-theme-css-client-extension/images/02.gif)
 

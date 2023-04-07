@@ -1,12 +1,18 @@
 # Setting Channel Defaults
 
-To set channel defaults for an account, open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ) and navigate to *Control Panel* &rarr; *Accounts*. Select an account and click *Channel Defaults*. See the following sections for more information on setting channel defaults. 
+Users with the necessary account management permissions can set channel defaults for business accounts. To do this, <!-- Link to Channel Defaults Permission Guide when published -->
+
+1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ) and navigate to *Control Panel* &rarr; *Accounts*.
+
+1. Select a business account and go to the *Channel Defaults* tab.
+
+Here you can set the following defaults.
 
 ```{note}
-If you set defaults for all other channels and for individual channels, the individual defaults takes priority if eligible. 
+If you set defaults for individual channels and all other channels, the individual defaults takes priority if eligible. 
 ```
 
-## Setting Default Billing and Shipping Addresses
+## Default Billing and Shipping Addresses
 
 {bdg-secondary}`Available Liferay 7.4 U41+/GA41+` 
 
@@ -20,10 +26,11 @@ If you set defaults for all other channels and for individual channels, the indi
 
    ![Set default billing and shipping addresses for all or individual channels.](./setting-channel-defaults/images/01.png)
 
-<!-- Link to Channel Defaults Permission Guide when published -->
-Only users with account management permissions can manage channel defaults. Account users can, however, set a default billing and shipping address from the *Account Details* tab.
+```{note}
+Generally, only users with account management permissions can manage channel defaults. However, account users can set their default billing and shipping addresses for all channels via the *Account Details* tab.
+```
 
-## Setting Default Terms and Conditions 
+## Default Terms and Conditions
 
 {bdg-secondary}`Available Liferay 7.4 U40+/GA40+` 
 
@@ -31,10 +38,10 @@ Only users with account management permissions can manage channel defaults. Acco
 
 1. Select *All Channels* or an individual *channel*. 
 
-1. (Optional) Enable the *Override Eligibility* toggle to override eligibility set for the delivery terms and conditions individually. 
+1. (Optional) Enable the *Override Eligibility* toggle to override eligibility set for the terms and conditions.
 
    ```{important}
-   Overriding eligibility for terms and conditions do not make them eligible for a particular channel. Payment terms are linked to a payment method and delivery terms are linked to a shipping option. When there are multiple eligible terms and conditions for a payment method or shipping option, overriding eligibility sets the selected terms and conditions as a default. 
+   Payment terms are linked to a payment method and delivery terms are linked to a shipping option. When there are multiple eligible terms and conditions for a payment method or shipping option, overriding eligibility sets the selected terms and conditions as the default, regardless of eligibility. See [Understanding Eligibility and Channel Defaults](../channel-defaults.md#understanding-eligibility-and-channel-defaults) to learn more.
    ```
 
 1. Select a *term*. 
@@ -43,11 +50,11 @@ Only users with account management permissions can manage channel defaults. Acco
 
    ![Set default terms and conditions for all or individual channels.](./setting-channel-defaults/images/02.png)
 
-## Setting Default Shipping Options
+## Default Shipping Options
 
-{bdg-secondary}`Available Liferay 7.4 U49+//GA49+`
+{bdg-secondary}`Available Liferay 7.4 U49+/GA49+`
 
-The default shipping value is determined by existing priority settings configured for the channel. If other shipping options are available, you can select one of them: 
+The default shipping value is determined by existing priority settings for the channel. If other shipping options are available, you can select one of them as the default. To do this,
 
 1. Go to *Shipping Options* and click *Edit* for the desired channel. 
 
@@ -57,7 +64,7 @@ The default shipping value is determined by existing priority settings configure
 
    ![Set a default shipping option for individual channels.](./setting-channel-defaults/images/03.png)
 
-## Setting Default Price Lists and Discounts
+## Default Price Lists and Discounts
 
 {bdg-secondary}`Available Liferay 7.4 U40+/GA40+`
 
@@ -73,7 +80,7 @@ The default shipping value is determined by existing priority settings configure
 
    ![Set a default price list or discount for all or individual channels.](./setting-channel-defaults/images/04.png)
 
-## Setting Default Currencies
+## Default Currencies
 
 {bdg-secondary}`Available Liferay 7.4 U42+/GA42+`
 
@@ -84,16 +91,16 @@ The default shipping value is determined by existing priority settings configure
 1. Select a *currency*. 
 
    ```{important}
-   This sets the default channel currency for the account during navigation only. Product pages and the catalog uses the currency set here. The currency set for the channel at the time of creation is not modified. 
+   This sets the default channel currency for the account during navigation only. Product pages and the catalog use the currency set here. The currency set for the channel at the time of creation is not modified. 
    ```
 
 1. Click *Save*. 
 
    ![Set a default currency for all or individual channels.](./setting-channel-defaults/images/05.png)
 
-## Setting Payment Methods
+## Default Payment Methods
 
-The default payment method is determined by existing priority settings configured for the channel. If other payment methods are available, you can select one of them: 
+The default payment method is determined by existing priority settings for the channel. If other payment methods are available, you can select one of them as the default. To do this,
 
 1. Go to *Payment Methods* and click *Edit* for the desired channel. 
 
@@ -103,38 +110,41 @@ The default payment method is determined by existing priority settings configure
 
    ![Set a default payment method for individual channels.](./setting-channel-defaults/images/06.png)
 
-## Setting Channel Account Managers
+## Default Channel Account Managers
 
 {bdg-secondary}`Available Liferay 7.4 U46+/GA46+`
 
-```{important}
-Channel account manager is not a new role in Liferay. The newly added permission gives users a view into accounts outside the organization structure. This was not possible earlier. This is also useful to grant temporary permissions to a user to cover for an account. 
-```
+1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Channel Account Managers.
 
-Channel account managers view and manage orders for accounts from one or more channels. If you have a channel account manager per channel, they can only manage orders for the selected account coming in from the selected channel. You can have multiple channel account managers for one channel. To select a user as the channel account manager, you need the following permission. 
+1. Select *All Channels* or an individual *channel*.
 
-| Permission                                                               | Description                                                            |
-| :----------------------------------------------------------------------- | :--------------------------------------------------------------------- |
-| Accounts > Account Entry: Manage Available Accounts via User Channel Rel | Manage accounts by creating a relationship between users and channels. |
+   ```{tip}
+   You can assign multiple channel account managers to the same channel.
+   ```
 
-![Use this permission to allow a user to appear in the channel account manager dropdown.](./setting-channel-defaults/images/07.png)
+1. Select a *user*.
 
-```{note}
-This permission works with *Regular Roles*, *Organization Roles* and *Account Roles*. Users with this permission appear in the channel account manager dropdown. For the user to view and manage orders, you must also enable order related permissions. 
+   All users with the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear in the channel account manager dropdown. See [Understanding Channel Account Managers](#understanding-channel-account-managers) for more information.
 
-Channel account managers work with or without [organizations](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/organizations/understanding-organizations). If you use organizations, this user can manage accounts where they are a channel manager in addition to the accounts in the organization they have permission to manage. If you do not use organizations, you can use a channel account manager to control access to individual accounts. 
-```
+1. Click *Save*.
+
+   ![Select default channel account manager for all or individual channels.](./setting-channel-defaults/images/07.png)
+
+### Understanding Channel Account Managers
+
+When selecting default Channel Account Managers, only users with the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear. You can use this permission to grant users access to accounts without requiring them to be account members or organization account managers. You can assign this permission to *Regular Roles*, *Organization Roles* and *Account Roles*.
+
+![Users with this permission appear in the channel account manager dropdown menu.](./setting-channel-defaults/images/08.png)
+
+By itself, this permission does not grant users the ability to access the Accounts application, or view and update individual accounts. It also does not grant users the ability to manage orders or set channel defaults for price lists and other Commerce entities. If you want Channel Account Managers to perform these administrative actions, you must grant them the necessary permissions for each application (e.g., Accounts, Orders, Price Lists).
 
 <!-- Link to Channel Defaults Permission Guide when published -->
 
-To set up a default channel account manager, 
+```{note}
+If you use [organizations](../../organizations/understanding-organizations.md), users can continue to manage the organization accounts they have permission to manage along with accounts for which they are default Channel Account Managers.
+```
 
-1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Channel Account Managers. 
+## Additional Information
 
-1. Select *All Channels* or an individual *channel*. 
-
-1. Select a *user*. 
-
-1. Click *Save*. 
-
-   ![Select default channel account manager for all or individual channels.](./setting-channel-defaults/images/08.png)
+* [Channel Defaults](../channel-defaults.md)
+* [Introduction to Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels)

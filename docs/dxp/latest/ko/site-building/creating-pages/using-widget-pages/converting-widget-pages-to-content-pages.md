@@ -33,7 +33,7 @@
 ```
 
 ```{note}
-포틀릿은 위젯 페이지에서 [render-weight](https://docs.liferay.com/ce/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) 에 따라 렌더링되지만 이는 사실이 아닙니다. 콘텐츠 페이지의 경우. 포틀릿은 콘텐츠 페이지의 페이지에 나타나는 순서대로(즉, 왼쪽에서 오른쪽으로, 위에서 아래로) 렌더링되므로 일부 포틀릿은 콘텐츠 페이지에서의 위치에 따라 조만간 렌더링될 수 있습니다.
+포틀릿은 위젯 페이지에서 [render-weight](https://docs.liferay.com/ce/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) 에 따라 렌더링되지만 이는 사실이 아닙니다. 콘텐츠 페이지의 경우. 포틀릿은 콘텐츠 페이지의 페이지에 나타나는 순서대로(즉, 왼쪽에서 오른쪽으로, 위에서 아래로) 렌더링되므로 일부 포틀릿은 콘텐츠 페이지에서의 사이트에 따라 조만간 렌더링될 수 있습니다.
 ```
 
 ## 위젯 페이지를 콘텐츠 페이지로 직접 변환

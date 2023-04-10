@@ -26,7 +26,7 @@
 
 원격 앱의 위젯이 페이지에 추가되면 먼저 제공된 HTML 요소 이름으로 태그를 생성한 다음 요소의 코드에 정의된 논리를 실행하여 애플리케이션 마크업을 렌더링합니다. 항목 또는 위젯 인스턴스에 속성이 포함된 경우 생성된 사용자 지정 요소 마크업(`<custom-element (+props)/>`)에 추가됩니다.
 
-일단 렌더링되면 응용 프로그램은 Liferay 페이지에 완전히 통합되어 Liferay의 공용 JavaScript API를 사용하고 호스트 페이지에서 이미 사용 가능한 스타일 클래스를 재사용할 수 있습니다. 그러나 사용자 정의 요소를 빌드하는 방법과 해당 스타일 규칙을 배치하는 위치에 따라 이를 변경할 수 있습니다. 예를 들어 애플리케이션의 마크업이 [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) 사용하는 경우 맞춤 요소의 스타일과 호스트 페이지를 서로 격리할 수 있습니다.
+일단 렌더링되면 응용 프로그램은 Liferay 페이지에 완전히 통합되어 Liferay의 공용 JavaScript API를 사용하고 호스트 페이지에서 이미 사용 가능한 스타일 클래스를 재사용할 수 있습니다. 그러나 사용자 정의 요소를 빌드하는 방법과 해당 스타일 규칙을 배치하는 사이트에 따라 이를 변경할 수 있습니다. 예를 들어 애플리케이션의 마크업이 [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) 사용하는 경우 맞춤 요소의 스타일과 호스트 페이지를 서로 격리할 수 있습니다.
 
 ```{note}
 사용자 정의 요소 위젯의 여러 인스턴스가 페이지에 추가되면 Liferay는 애플리케이션의 URL을 한 번만 포함합니다.

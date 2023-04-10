@@ -4,7 +4,7 @@
 
 기존 Liferay DXP/검색 엔진 설치에서 하나의 Liferay DXP 클러스터는 하나의 Elasticsearch 클러스터와 통신하여 검색 엔진 클러스터에 대한 하나의 연결을 통해 모든 읽기(검색 쿼리 실행) 및 쓰기(문서 생성) 요청을 보냅니다. 이 설정에서는 모든 Elasticsearch 클러스터 노드가 단일 데이터 센터에 있다고 가정합니다(Liferay DXP 서버와 다른 데이터 센터에 있을 수 있음).
 
-데이터 위치 및 재해 복구에 대한 우려를 해결하기 위해 Elasticsearch는 Elasticsearch 7+에 대해 [LES 가입자](https://www.liferay.com/products/dxp/enterprise-search) 가 Liferay DXP와 함께 사용할 수 있는 [CCR(Cross-Cluster Replication)](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/xpack-ccr.html) 기능을 출시했습니다(버전 호환성 세부 정보는 [LES 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651#Liferay-Enterprise-Search) 참조). ). LES CCR 모듈을 사용하면 대체 형태의 다중 데이터 센터 배포를 달성할 수 있습니다. Elasticsearch 클러스터의 노드를 여러 데이터 센터에 분산하는 것은 허용하지 않지만 각 데이터 센터에서 별도의 Elasticsearch 클러스터를 구성하고 연결할 수 있습니다.
+데이터 사이트 및 재해 복구에 대한 우려를 해결하기 위해 Elasticsearch는 Elasticsearch 7+에 대해 [LES 가입자](https://www.liferay.com/products/dxp/enterprise-search) 가 Liferay DXP와 함께 사용할 수 있는 [CCR(Cross-Cluster Replication)](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/xpack-ccr.html) 기능을 출시했습니다(버전 호환성 세부 정보는 [LES 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651#Liferay-Enterprise-Search) 참조). ). LES CCR 모듈을 사용하면 대체 형태의 다중 데이터 센터 배포를 달성할 수 있습니다. Elasticsearch 클러스터의 노드를 여러 데이터 센터에 분산하는 것은 허용하지 않지만 각 데이터 센터에서 별도의 Elasticsearch 클러스터를 구성하고 연결할 수 있습니다.
 
 이 구성은 **리더** 인덱스를 포함하는 하나의 클러스터와 리더에서 복제된 **팔로워** 인덱스를 포함하는 하나 이상의 클러스터를 가정합니다. 팔로어 인덱스는 Liferay DXP에서만 데이터를 읽는 데 사용됩니다. 리더 인덱스는 항상 쓰기에 사용되지만 읽기에도 사용할 수 있습니다.
 
@@ -12,7 +12,7 @@
 
 위의 다이어그램은 CCR의 최소 예를 보여줍니다. 각 데이터 센터에는 하나 이상의 DXP 노드와 하나의 Elasticsearch 클러스터가 있습니다. 미국 데이터 센터에는 모든 DXP 노드가 쓰는 리더 인덱스가 있습니다. 헝가리 데이터 센터는 로컬(헝가리) DXP 노드가 읽는 팔로워 인덱스를 보유합니다. 데이터는 리더에서 팔로워로 한 방향으로 복제됩니다.
 
-Liferay DXP는 WAN(Wide Area Network) 프로토콜을 통해 서로 다른 위치에 노드가 있는 분산 클러스터 개념을 오랫동안 지원해 왔습니다. Liferay DXP의 유연성과 Elasticsearch의 클러스터 간 복제 지원은 다양한 시스템 설계를 지원할 수 있습니다.
+Liferay DXP는 WAN(Wide Area Network) 프로토콜을 통해 서로 다른 사이트에 노드가 있는 분산 클러스터 개념을 오랫동안 지원해 왔습니다. Liferay DXP의 유연성과 Elasticsearch의 클러스터 간 복제 지원은 다양한 시스템 설계를 지원할 수 있습니다.
 
 클러스터 간 복제를 설정하려면 다음을 수행해야 합니다.
 

@@ -43,7 +43,7 @@ Liferay Commerce의 모든 주문에는 [주문 정보](./order-information.md) 
 |:---------- |:--------------------------------------------------------------------------------------------------------------------------------------------- |
 | 전송됨        | 추가 상태 업데이트 없이 주문이 [전송](./processing-an-order.md#commerce-20-and-below) 되었습니다. (전송된 주문의 기본 주문 상태입니다.)                                           |
 | 이행 대기 중    | 주문이 [전송되고](./processing-an-order.md#commerce-20-and-below) 결제가 확인되었지만 운송업체에서 아직 [배송](../shipments/introduction-to-shipments.md) 준비가 되지 않았습니다. |
-| 픽업 대기 중    | 주문이 준비되었으며( [배송됨](../shipments/introduction-to-shipments.md)가능) 판매자가 지정한 위치에서 구매자가 픽업하기를 기다리고 있습니다.                                           |
+| 픽업 대기 중    | 주문이 준비되었으며( [배송됨](../shipments/introduction-to-shipments.md)가능) 판매자가 지정한 사이트에서 구매자가 픽업하기를 기다리고 있습니다.                                           |
 | 출하를 기다리는 중 | 주문이 [배송](../shipments/introduction-to-shipments.md)준비되었으며 배송업체에서 픽업 및 배송을 기다리고 있습니다.                                                          |
 | 부분 환불됨     | 판매자가 주문 총액보다 적은 금액으로 구매자에게 환불했습니다.                                                                                                            |
 | 일부 배송됨     | 주문한 제품 중 일부만 [배송](../shipments/introduction-to-shipments.md)되었습니다.                                                                            |
@@ -68,7 +68,7 @@ Liferay Commerce의 모든 주문에는 [주문 정보](./order-information.md) 
 
 ## 워크플로 상태
 
-**워크플로 상태** 주문이 두 개의 [주문 워크플로](../order-workflows/introduction-to-order-workflows.md)중 하나에 있는 위치에 대한 정보를 제공합니다.
+**워크플로 상태** 주문이 두 개의 [주문 워크플로](../order-workflows/introduction-to-order-workflows.md)중 하나에 있는 사이트에 대한 정보를 제공합니다.
 
 ### 열려 있는
 

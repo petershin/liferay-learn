@@ -13,7 +13,7 @@ able-theme-spritemap:
     url: spritemap.svg
 ```
 
-필수 `url` 속성은 `.svg` 스프라이트 맵 파일의 위치를 정의합니다.
+필수 `url` 속성은 `.svg` 스프라이트 맵 파일의 사이트를 정의합니다.
 
 [예제 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-spritemap) 에는 완전한 테마 스프라이트 맵 클라이언트 확장이 포함되어 있습니다.
 

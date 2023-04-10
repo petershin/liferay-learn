@@ -16,7 +16,7 @@ Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. JDK를 선택하려�
 
 ## DXP WAR 준비
 
-1. 임의의 위치에 DXP WAR 파일의 압축을 풉니다.
+1. 임의의 사이트에 DXP WAR 파일의 압축을 풉니다.
 
 1. 확장된 WAR의 `WEB-INF/classes` 폴더에 [`Portal-ext.properties`](../../reference/portal-properties.md) 이라는 파일을 만듭니다.
 

@@ -8,7 +8,7 @@
 
 Blueprints &rarr; 쿼리 요소 화면에서 작업하는 동안 요소에 대한 쿼리 구성 JSON을 보려면 작업 아이콘(![Actions](../../../../images/icon-actions.png)) &rarr; 요소 JSON 보기를 클릭합니다.
 
-블루프린트의 제목 표시줄에 있는 토글 스위치를 사용하여 블루프린트에서 각 요소를 비활성화하거나 활성화할 수 있습니다. Blueprint에서 요소를 간소화하여 보기 위해 요소의 제목 표시줄에 있는 아래쪽 화살표 아이콘(![Down Arrow Icon](../../../../images/icon-angle-down.png))을 사용하여 요소의 콘텐츠를 축소할 수 있습니다.
+블루프린트의 제목 표시줄에 있는 토글 스사이트를 사용하여 블루프린트에서 각 요소를 비활성화하거나 활성화할 수 있습니다. Blueprint에서 요소를 간소화하여 보기 위해 요소의 제목 표시줄에 있는 아래쪽 화살표 아이콘(![Down Arrow Icon](../../../../images/icon-angle-down.png))을 사용하여 요소의 콘텐츠를 축소할 수 있습니다.
 
 각 요소에는 구성 옵션이 있으며, 그 중 다수는 Elasticsearch [Query DSL 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl.html) 에 정의된 쿼리 속성에 직접적으로 해당합니다. 특정 쿼리 유형에 대한 링크는 아래에 적절하게 제공됩니다.
 
@@ -20,16 +20,16 @@ Blueprints &rarr; 쿼리 요소 화면에서 작업하는 동안 요소에 대�
 
 ### 모든 키워드 일치 부스트
 
-주어진 필드에서 검색 키워드가 일치하는 경우 다중 일치 쿼리를 사용하여 결과를 높입니다. 요소의 다중 일치 쿼리 절을 전체적으로 부스트하고 각 개별 필드에 대한 일치를 부스트할 수 있습니다. _Text to Match_ 구성 필드는 선택 사항입니다. 비워 두면 검색 사용자의 키워드가 쿼리에 전달됩니다.
+주어진 필드에서 검색 키워드가 일치하는 경우 다중 일치 쿼리를 사용하여 결과를 높입니다. 요소의 다중 일치 쿼리 절을 전체적으로 부스트하고 각 개별 필드에 대한 일치를 부스트할 수 있습니다. **Text to Match** 구성 필드는 선택 사항입니다. 비워 두면 검색 사용자의 키워드가 쿼리에 전달됩니다.
 
 ![다중 일치 쿼리에 대한 일치를 유연하게 향상합니다.](./search-blueprints-elements-reference/images/01.png)
 
 - 필드: 검색할 필드와 개별적으로 부스트할지 여부를 선택합니다.
-- 일치 유형: Elasticsearch에서 내부적으로 쿼리를 처리하는 방식을 지정합니다. _Most Fields_ 지정된 각 필드에 대한 일치 쿼리를 생성하고 점수를 결합하므로 아마도 가장 기본적인 유형일 것입니다.
+- 일치 유형: Elasticsearch에서 내부적으로 쿼리를 처리하는 방식을 지정합니다. **Most Fields** 지정된 각 필드에 대한 일치 쿼리를 생성하고 점수를 결합하므로 아마도 가장 기본적인 유형일 것입니다.
 - 부스트: 일치하는 결과의 관련성 점수를 조정합니다. 기본값은 1.0이므로 1.0보다 큰 값은 점수를 높이고 0에서 1.0 사이의 값은 점수를 낮춥니다.
 - 일치시킬 텍스트: 하드코딩된 키워드를 일치시키거나 사용자의 검색 키워드와 일치하도록 비워 둡니다.
 
-_외부 참조_: Elasticsearch [다중 일치](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) 쿼리 문서를 참조하십시오.
+**외부 참조** : Elasticsearch [다중 일치](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) 쿼리 문서를 참조하십시오.
 
 ### 부스트 자산 유형
 
@@ -43,7 +43,7 @@ _외부 참조_: Elasticsearch [다중 일치](https://www.elastic.co/guide/en/e
 
 사용자의 검색 키워드에 구성된 키워드가 포함된 경우 카테고리의 콘텐츠를 부스트합니다. 키워드 및 저작물 카테고리 ID가 필요합니다.
 
-Elasticsearch 인덱스(예: Kibana 사용)를 쿼리하여 `assetCategoryId`을 포함하는 자산 범주에 대한 검색 문서를 찾을 수 있습니다. 이 경우 검색 중인 범주의 제목은 _business_입니다.
+Elasticsearch 인덱스(예: Kibana 사용)를 쿼리하여 `assetCategoryId`을 포함하는 자산 범주에 대한 검색 문서를 찾을 수 있습니다. 이 경우 검색 중인 범주의 제목은 **business** 입니다.
 
 ```json
 GET /_search
@@ -122,13 +122,13 @@ GET /_search
 - 수정자: 수정자를 사용하여 필드 값에 적용합니다. 기본값은 제곱근입니다. 다른 옵션으로는 None, log, log1p, log2p, ln, ln1p, ln2p, Square 또는 Reciprocal이 있습니다.
 - 부스트: 초기 부스트 값을 설정합니다. 기본값은 10입니다. 부스트 값에 함수 점수를 곱하여 최종 점수 조정을 얻습니다.
 
-_예:_ 문서의 버전 수가 `8`이고 기본값이 요소에서 사용된 경우 문서의 점수는 다음과 같이 계산됩니다.
+**예:** 문서의 버전 수가 `8`이고 기본값이 요소에서 사용된 경우 문서의 점수는 다음과 같이 계산됩니다.
 
 `10 * (sqrt (1.2 * 8))`
 
 따라서 이 문서에는 이 요소로 인해 약 `30` 의 점수가 추가됩니다.
 
-_외부 참조:_ Elasticsearch [함수 점수 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) 설명서를 참조하십시오.
+**외부 참조:** Elasticsearch [함수 점수 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) 설명서를 참조하십시오.
 
 ### 신선도 향상
 
@@ -143,7 +143,7 @@ Gaussian 함수를 사용하여 최근 수정된 부스트 내용.
 - 결과의 관련성이 감쇠 매개변수와 같게 되는 지금부터 (과거의) 일 수를 결정하기 위해 오프셋에 배율이 추가됩니다.
 - 부스트는 정의된 척도 내에 있는 결과를 부스트하기 위한 시작 숫자 값입니다.
 
-_외부 참조:_ 자세한 내용은 Elasticsearch [함수 점수 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) 설명서를 참조하십시오.
+**외부 참조:** 자세한 내용은 Elasticsearch [함수 점수 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) 설명서를 참조하십시오.
 
 ### 더 긴 콘텐츠 부스트
 
@@ -159,17 +159,17 @@ Function Score Query의 Field Value Factor를 사용하여 사용자의 현재 �
 - Factor는 필드 값에 곱할 값입니다.
 - 수정자는 필드 값을 수정할 때 사용할 기능을 정의합니다.
 
-_외부 참조:_ 자세한 내용은 Elasticsearch [함수 점수 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) 설명서를 참조하십시오.
+**외부 참조:** 자세한 내용은 Elasticsearch [함수 점수 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-function-score-query.html) 설명서를 참조하십시오.
 
 ### 근접성 향상
 
 가우시안 함수로 검색 사용자에게 더 가까운 콘텐츠를 부스트합니다.
 
-Boost Proximity 요소는 [ipstack](https://ipstack.com) 서비스를 사용하여 문서에서 [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) 필드로 표시된 사용자 위치에 더 가까운 검색 결과를 향상시킵니다.
+Boost Proximity 요소는 [ipstack](https://ipstack.com) 서비스를 사용하여 문서에서 [geopoint](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) 필드로 표시된 사용자 사이트에 더 가까운 검색 결과를 향상시킵니다.
 
-ipstack 서비스 및 Boost Proximity Element와 함께 작동하려면 검색 문서에 [geopoint 필드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) 이 있어야 합니다. Liferay에는 기존 자산에 사용자 정의 필드로 추가할 수 있는 호환 가능한 지리적 위치 필드가 포함되어 있습니다.
+ipstack 서비스 및 Boost Proximity Element와 함께 작동하려면 검색 문서에 [geopoint 필드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/geo-point.html) 이 있어야 합니다. Liferay에는 기존 자산에 사용자 정의 필드로 추가할 수 있는 호환 가능한 지리적 사이트 필드가 포함되어 있습니다.
 
-ipstack 서비스 설정, 사용자 정의 지리적 위치 필드 사용, Blueprint에 Boost Proximity 요소 추가에 대한 자세한 내용은 [검색 경험 개인화](./personalizing-the-search-experience.md) 참조하십시오.
+ipstack 서비스 설정, 사용자 정의 지리적 사이트 필드 사용, Blueprint에 Boost Proximity 요소 추가에 대한 자세한 내용은 [검색 경험 개인화](./personalizing-the-search-experience.md) 참조하십시오.
 
 ### 부스트 태그 콘텐츠
 
@@ -179,7 +179,7 @@ ipstack 서비스 설정, 사용자 정의 지리적 위치 필드 사용, Bluep
 
 태그와 정확히 일치하는 키워드로 콘텐츠를 홍보하세요. 검색 사용자의 키워드는 `assetTagNames.raw` 필드 내용과 비교되고(이렇게 하면 `assetTagNames` 텍스트 필드에서 키워드 필드가 만들어짐) 문서에서 용어 쿼리가 일치하면 구성된 값만큼 점수가 상승합니다.
 
-_외부 참조:_ Elasticsearch [용어 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html) 설명서를 참조하십시오.
+**외부 참조:** Elasticsearch [용어 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html) 설명서를 참조하십시오.
 
 ### 키워드 일치로 웹 콘텐츠 부스트
 
@@ -195,13 +195,13 @@ _외부 참조:_ Elasticsearch [용어 쿼리](https://www.elastic.co/guide/en/e
 
 ![지정된 필드에서 정확히 일치하는 결과를 필터링합니다.](./search-blueprints-elements-reference/images/09.png)
 
-_외부 참조:_ [Elasticsearch 용어 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-terms-query.html) 설명서를 참조하십시오.
+**외부 참조:**[Elasticsearch 용어 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-terms-query.html) 설명서를 참조하십시오.
 
 ### 일정 기간 동안 생성된 콘텐츠로 검색 제한
 
 범위 쿼리를 사용하여 결과를 필터링합니다. 시간 범위를 구성합니다.
 
-_외부 참조:_ [Elasticsearch 범위 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-range-query.html) 설명서를 참조하십시오.
+**외부 참조:**[Elasticsearch 범위 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-range-query.html) 설명서를 참조하십시오.
 
 ### HEAD 버전으로 검색 제한
 
@@ -239,13 +239,13 @@ _외부 참조:_ [Elasticsearch 범위 쿼리](https://www.elastic.co/guide/en/e
 
 사이트의 ID는 사이트 설정 &rarr; 사이트 구성 화면에 표시됩니다.
 
-이 요소의 기능은 [검색 표시줄의](../../../getting-started/searching-for-content.md#configuring-the-search-bar) 범위 구성 옵션과 겹칩니다. 이 요소가 작동하려면 검색 표시줄 범위를 _Everything_ 로 설정해야 합니다.
+이 요소의 기능은 [검색 표시줄의](../../../getting-started/searching-for-content.md#configuring-the-search-bar) 범위 구성 옵션과 겹칩니다. 이 요소가 작동하려면 검색 표시줄 범위를 **Everything** 로 설정해야 합니다.
 
 ## 일부 결과 숨기기
 
 Must Not 발생 절이 있는 부울 쿼리에서 쿼리를 래핑하면 쿼리와 일치하는 경우 결과를 숨길 수 있습니다.
 
-_외부 참조:_ [Elasticsearch 부울 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html) 설명서를 참조하십시오.
+**외부 참조:**[Elasticsearch 부울 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html) 설명서를 참조하십시오.
 
 ### 정확한 용어 일치로 숨기기
 
@@ -285,7 +285,7 @@ Elasticsearch DSL 쿼리 본문을 있는 그대로 요소에 붙여넣습니다
 
 ![Elasticsearch 쿼리 본문을 요소에 붙여넣습니다.](./search-blueprints-elements-reference/images/12.png)
 
-_외부 참조:_ [Elasticsearch Wrapper 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-wrapper-query.html) 설명서를 참조하십시오.
+**외부 참조:**[Elasticsearch Wrapper 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-wrapper-query.html) 설명서를 참조하십시오.
 
 ### 스케줄링 인식
 
@@ -295,7 +295,7 @@ _외부 참조:_ [Elasticsearch Wrapper 쿼리](https://www.elastic.co/guide/en/
 
 쿼리 문자열 쿼리 구문을 사용하여 하나 이상의 필드를 일치시킵니다. 모든 검색 키워드가 일치해야 하는지(AND) 또는 하나만 일치해야 하는지(OR)를 결정하는 데 사용할 기본 부울 연산자(OR 또는 AND)를 지정합니다. 이 요소를 사용하면 부울 연산자, 와일드카드 등을 사용하여 고급 검색 키워드 문자열을 입력할 수 있습니다.
 
-_외부 참조:_ [Elasticsearch 쿼리 문자열 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html#query-string-syntax) 설명서를 참조하십시오.
+**외부 참조:**[Elasticsearch 쿼리 문자열 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html#query-string-syntax) 설명서를 참조하십시오.
 
 ### 스테이징 인식
 
@@ -307,14 +307,14 @@ _외부 참조:_ [Elasticsearch 쿼리 문자열 쿼리](https://www.elastic.co/
 
 - 필드 구성을 사용하여 검색할 필드를 선택하십시오. 분석된 텍스트 필드만 선택하십시오.
 - 연산자는 분석된 모든 검색 키워드가 각 필드에 나타나야 하는지(AND) 또는 각 필드에 하나만 나타나야 하는지(OR)를 결정합니다. 정확한 동작은 일치 유형의 영향을 받습니다.
-- 일치 유형은 Elasticsearch에서 내부적으로 쿼리를 처리하는 방식을 결정합니다. _Most Fields_ 지정된 각 필드에 대한 일치 쿼리를 생성하고 점수를 결합하므로 아마도 가장 기본적인 유형일 것입니다.
+- 일치 유형은 Elasticsearch에서 내부적으로 쿼리를 처리하는 방식을 결정합니다. **Most Fields** 지정된 각 필드에 대한 일치 쿼리를 생성하고 점수를 결합하므로 아마도 가장 기본적인 유형일 것입니다.
 - 퍼지는 부정확한 일치에 대한 동작을 설정합니다. 0, 1 또는 2를 설정하면 쿼리가 일치 항목을 반환하도록 허용되는 [Levenshtein 편집 거리](https://en.wikipedia.org/wiki/Levenshtein_distance) 직접 지정합니다. AUTO는 검색되는 용어의 길이를 기준으로 편집 거리를 생성합니다. 자세한 내용은 [Elasticsearch 퍼지 문서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/common-options.html#fuzziness) 을 참조하십시오.
-- 최소 일치해야 함은 검색에서 반환할 문서에 대해 일치해야 하는 최소 절 수를 설정합니다. 자세한 내용은 [Elasticsearch의 minimum_should_match](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-minimum-should-match.html) 설명서를 참조하십시오.
+- 최소 일치해야 함은 검색에서 반환할 문서에 대해 일치해야 하는 최소 절 수를 설정합니다. 자세한 내용은 [Elasticsearch의 minimum **should** match](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-minimum-should-match.html) 설명서를 참조하십시오.
 - Slop은 구문 및 구문 접두사 검색 유형에서 사용됩니다. 구문이 일치하지 않고 여전히 일치할 수 있는 단어 수를 지정하여 부정확한 구문 일치를 허용합니다. 예를 들어 구문 유형과 슬롭 1을 사용하여 "liferay blogs"를 검색하면 여전히 "liferay dxp blogs"가 포함된 필드와 일치할 수 있습니다.
 - 이 요소에서 제공하는 절과 일치하는 모든 문서를 부스트하도록 부스트를 설정합니다.
 - 쿼리 절과 일치해야 하는 값을 하드코딩하려면 Text to Match를 설정하십시오. 사용자의 키워드로만 검색하려면 이 항목을 공백으로 두십시오.
 
-_외부 참조:_ [Elasticsearch 다중 일치 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) 설명서를 참조하십시오.
+**외부 참조:**[Elasticsearch 다중 일치 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) 설명서를 참조하십시오.
 
 ## 추가 정보
 

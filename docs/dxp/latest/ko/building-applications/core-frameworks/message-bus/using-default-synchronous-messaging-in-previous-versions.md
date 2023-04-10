@@ -242,7 +242,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 시간 초과와 동시에 메시지를 보내는 것을 축하합니다.
 
-## 무엇 향후 계획
+## 다음
 
 직접 **모드** 사용하여 동기식 메시징을 탐색하려면 [이전 버전에서 직접 동기식 메시징 사용](./using-direct-synchronous-messaging-in-previous-versions.md)참조하십시오.
 

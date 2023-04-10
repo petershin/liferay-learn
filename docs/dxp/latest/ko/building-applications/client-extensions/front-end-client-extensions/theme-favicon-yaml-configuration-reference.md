@@ -13,7 +13,7 @@ able-theme-favicon:
     url: favicon.ico
 ```
 
-필수 `url` 속성은 favicon 아이콘 이미지의 위치를 정의합니다. 이 이미지는 클라이언트 확장이 배포될 때 모든 페이지에 대한 새로운 favicon 옵션이 됩니다.
+필수 `url` 속성은 favicon 아이콘 이미지의 사이트를 정의합니다. 이 이미지는 클라이언트 확장이 배포될 때 모든 페이지에 대한 새로운 favicon 옵션이 됩니다.
 
 [예제 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-favicon) 에는 완전한 테마 favicon 클라이언트 확장이 포함되어 있습니다.
 

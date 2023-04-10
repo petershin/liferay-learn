@@ -41,7 +41,7 @@ com.liferay.portal.verify.VerifyException: com.liferay.dynamic.data.mapping.vali
 Liferay의 UI 또는 API는 Liferay DXP의 개체 간의 관계를 설명하므로 데이터를 조작하는 데에만 사용해야 합니다. 데이터베이스에서 직접 SQL을 사용하여 레코드를 제거하지 마십시오. SQL에서 개체 관계가 누락되어 개체가 분리되고 성능 문제가 발생할 수 있습니다.
 ```
 
-다음은 사용하지 않는 개체를 확인하는 몇 가지 일반적인 위치입니다.
+다음은 사용하지 않는 개체를 확인하는 몇 가지 일반적인 사이트입니다.
 
 ### 대형/채워진 테이블의 객체
 

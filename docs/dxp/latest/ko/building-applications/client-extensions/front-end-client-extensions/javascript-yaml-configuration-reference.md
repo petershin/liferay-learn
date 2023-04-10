@@ -13,7 +13,7 @@ able-global-js:
     url: global.js
 ```
 
-필수 `url` 속성은 JavaScript 리소스 파일의 위치를 정의합니다. 페이지에서 활성화되면 이 경로의 JavaScript가 각 페이지 로드에서 실행됩니다.
+필수 `url` 속성은 JavaScript 리소스 파일의 사이트를 정의합니다. 페이지에서 활성화되면 이 경로의 JavaScript가 각 페이지 로드에서 실행됩니다.
 
 [예제 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-global-js) 에는 완전한 JavaScript 클라이언트 확장이 포함되어 있습니다.
 

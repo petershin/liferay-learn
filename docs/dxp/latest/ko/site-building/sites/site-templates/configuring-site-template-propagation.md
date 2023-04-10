@@ -28,5 +28,5 @@
 
 ## 추가 정보
 
-* [위치 템플렛](../site-templates.md)
+* [사이트 템플렛](../site-templates.md)
 * [템플릿 변경 전파](./propagating-template-changes.md)

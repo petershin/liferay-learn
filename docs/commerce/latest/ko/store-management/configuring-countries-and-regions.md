@@ -19,7 +19,7 @@
    | 3글자 ISO 코드  | [ISO-3166-2](https://www.iso.org/obp/ui/#search/code/) 표준에 따른 세 글자 ISO 코드 |
    | 숫자          | [ISO-3166-2](https://www.iso.org/obp/ui/#search/code/) 표준에 따른 숫자 코드       |
    | 부가가치세 대상    | 해당 국가가 VAT 대상인지 확인                                                        |
-   | 위치          | 국가 드롭다운에서 국가의 정렬 순서를 결정합니다.                                               |
+   | 사이트          | 국가 드롭다운에서 국가의 정렬 순서를 결정합니다.                                               |
    | 활동적인        | 국가 활성화/비활성화                                                               |
 
    ![Liferay 인스턴스에 국가를 추가하려면 필요한 정보를 입력하십시오.](./configuring-countries-and-regions/images/01.png)
@@ -42,11 +42,11 @@ Liferay에서 국가에 세부 정보를 추가할 수 있습니다. 이것을�
    |:-- |:--------------------------------------------------------------- |
    | 이름 | 지역 이름                                                           |
    | 암호 | [ISO-3166-2](https://www.iso.org/obp/ui/#search/code/) 지역 식별 코드 |
-   | 위치 | 배송 주소 페이지의 지역 드롭다운 메뉴에서 지역의 우선 순위를 결정합니다.                       |
+   | 사이트 | 배송 주소 페이지의 지역 드롭다운 메뉴에서 지역의 우선 순위를 결정합니다.                       |
 
    이 예에서는 아일랜드에 Leinster 지역을 추가합니다.
 
-   ![지역의 이름, 코드 및 위치를 입력합니다.](./configuring-countries-and-regions/images/02.png)
+   ![지역의 이름, 코드 및 사이트를 입력합니다.](./configuring-countries-and-regions/images/02.png)
 
 1. **활성** 전환합니다.
 

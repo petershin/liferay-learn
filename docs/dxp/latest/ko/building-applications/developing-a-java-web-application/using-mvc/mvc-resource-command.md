@@ -126,7 +126,7 @@ MVC 리소스 명령 클래스는 [`MVCResourceCommand`](https://github.com/life
 
 뷰의 **다운로드** 링크를 클릭하면 `P8V5DownloadMVCResourceCommand`의 `serveResource` 메서드가 호출됩니다.
 
-## 무엇 향후 계획
+## 다음
 
 이제 MVC 리소스 명령을 사용하는 방법을 알게 되었습니다. 포틀릿의 컨텐츠를 현지화하려면 [현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)참조하십시오. 모델, 지속성 및 서비스 계층을 개발할 준비가 되었으면 [서비스 빌더](../../data-frameworks/service-builder.md) 방문하십시오.
 

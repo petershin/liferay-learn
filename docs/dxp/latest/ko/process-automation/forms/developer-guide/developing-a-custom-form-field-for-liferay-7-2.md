@@ -226,7 +226,7 @@ Liferay 7.2는 사용자 지정 양식 필드에 대해 다른 프런트 엔드 
    - 구성 요소 속성 `ddm.form.field.type.name`
    - `getName`에 의해 반환된 문자열
      
-     두 위치의 값은 이제 `c2p9slider`입니다.
+     두 사이트의 값은 이제 `c2p9slider`입니다.
 
 1. 프로젝트의 프런트 엔드가 교체되면 실행 중인 Liferay 7.2에 배포합니다. 
 

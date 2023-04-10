@@ -152,6 +152,6 @@ Page revisions now have to go through the workflow process.
 ![With workflow enabled on Page Revisions, the Site administrator must submit their page variation for publication before it can go live.](./activating-workflow/images/13.png)
 -->
 
-## 무엇 향후 계획
+## 다음
 
 * [자산 검토](./reviewing-assets.md)

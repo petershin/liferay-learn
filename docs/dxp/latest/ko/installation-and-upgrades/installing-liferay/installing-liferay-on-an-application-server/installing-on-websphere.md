@@ -33,12 +33,12 @@ Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. JDK를 선택하려�
 응용 프로그램 서버 바이너리가 설치되면 **프로필 관리 도구** 시작하여 DXP에 적합한 프로필을 만듭니다.
 
 1. **생성...** 클릭하고 **응용 프로그램 서버** 선택한 다음 **다음** 클릭합니다.
-1. **고급** 프로필 생성 옵션을 클릭한 후 **다음** 클릭합니다. 고급 프로필을 사용하여 프로필의 위치와 프로필, 노드 및 호스트의 이름과 같은 설정 값을 지정하고 특정 포트를 할당하거나 선택적으로 관리 콘솔 및 샘플 애플리케이션을 배포할지 여부를 선택하고 웹을 추가할지 여부를 선택합니다. IBM HTTP Server에 대한 서버 정의. 이러한 옵션에 대한 자세한 내용은 WebSphere 설명서를 참조하십시오.
+1. **고급** 프로필 생성 옵션을 클릭한 후 **다음** 클릭합니다. 고급 프로필을 사용하여 프로필의 사이트와 프로필, 노드 및 호스트의 이름과 같은 설정 값을 지정하고 특정 포트를 할당하거나 선택적으로 관리 콘솔 및 샘플 애플리케이션을 배포할지 여부를 선택하고 웹을 추가할지 여부를 선택합니다. IBM HTTP Server에 대한 서버 정의. 이러한 옵션에 대한 자세한 내용은 WebSphere 설명서를 참조하십시오.
 
     ![그림 1: 고유한 설정을 지정하려면 고급 프로필 옵션을 선택합니다.](./installing-on-websphere/images/01.png)
 
 1. **관리 콘솔 배치** 상자를 선택하십시오. 이를 통해 애플리케이션 서버 작업을 위한 웹 기반 UI를 사용할 수 있습니다. 기본 응용 프로그램을 건너뜁니다. (개발 머신에만 설치하십시오.)**다음** 클릭합니다.
-1. 프로필 이름과 위치를 설정합니다. 환경에 적합한 성능 조정 설정을 지정하십시오.
+1. 프로필 이름과 사이트를 설정합니다. 환경에 적합한 성능 조정 설정을 지정하십시오.
 
    ```{note}
    성능 조정 설정에 대한 자세한 내용은 WebSphere 설명서를 참조하십시오. *다음*을 클릭합니다.
@@ -153,7 +153,7 @@ com.ibm.ws.exception.RuntimeWarning: com.ibm.ws.webcontainer.exception.WebAppNot
 ## 종속성 설치
 
 1. OSGi Dependencies ZIP 파일의 압축을 풀고 내용물을 `[Liferay Home]/osgi` 폴더에 넣습니다(아직 없는 경우 이 폴더를 만듭니다). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
-1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 DXP WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 DXP WAR을 임의의 위치에 압축 해제하고 데이터베이스 공급업체의 JDBC JAR 파일을 분해된 DXP WAR의 `WEB-INF/shielded-container- lib` 폴더에 넣고 DXP WAR을 다시 압축합니다.
+1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 DXP WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 DXP WAR을 임의의 사이트에 압축 해제하고 데이터베이스 공급업체의 JDBC JAR 파일을 분해된 DXP WAR의 `WEB-INF/shielded-container- lib` 폴더에 넣고 DXP WAR을 다시 압축합니다.
 
     지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 참조하십시오.
 
@@ -162,7 +162,7 @@ Hypersonic 데이터베이스는 DXP와 함께 번들로 제공되며 테스트 
 ```
 
 ```{note}
-DXP 7.3 및 이전 버전의 경우 종속성 ZIP 파일의 압축을 풀고 해당 콘텐츠를 WebSphere 애플리케이션 서버의 `[설치 위치]/WebSphere/AppServer/lib/ext` 폴더에 넣습니다. 데이터베이스 벤더의 JDBC JAR 파일도 해당 폴더에 배치하십시오.
+DXP 7.3 및 이전 버전의 경우 종속성 ZIP 파일의 압축을 풀고 해당 콘텐츠를 WebSphere 애플리케이션 서버의 `[설치 사이트]/WebSphere/AppServer/lib/ext` 폴더에 넣습니다. 데이터베이스 벤더의 JDBC JAR 파일도 해당 폴더에 배치하십시오.
 ```
 
 ## Elasticsearch 설치
@@ -175,7 +175,7 @@ Liferay DXP가 구성되고(Elasticsearch 커넥터에 `.config` 파일 사용) 
 
 DXP의 `portlet.jar` (버전 3)은 버전 2.0과 역호환됩니다. DXP 7.4 `.war` `portlet.jar` 포함되어 있으며 이전 DXP 버전의 종속성 ZIP에도 포함되어 있습니다. WebSphere의 `portlet.jar` 버전 2.0을 재정의해야 합니다.
 
-1. `[설치 위치]/WebSphere/AppServer/profiles/your-profile/` 폴더에서 `app_shared_libraries`이라는 폴더를 만듭니다.
+1. `[설치 사이트]/WebSphere/AppServer/profiles/your-profile/` 폴더에서 `app_shared_libraries`이라는 폴더를 만듭니다.
 
 1. DXP WAR(7.4+) 또는 `[Install Location]/WebSphere/AppServer/lib/ext` 폴더에서 생성한 `app_shared_libraries` 폴더로 DXP `portlet.jar` 을 복사합니다.
 
@@ -187,7 +187,7 @@ DXP의 `portlet.jar` (버전 3)은 버전 2.0과 역호환됩니다. DXP 7.4 `.w
 
 DXP의 `portlet.jar` 서버 관련 공유 라이브러리에 배치하는 것 외에도 `config.ini` 파일이 먼저 로드되도록 구성합니다.
 
-1. `[설치 위치]/WebSphere/AppServer/configuration/config.ini` 파일을 엽니다.
+1. `[설치 사이트]/WebSphere/AppServer/configuration/config.ini` 파일을 엽니다.
 1. 특성 `com.ibm.CORBA,com.ibm`을 찾으십시오.
 1. 속성 `javax.portlet,javax.portlet.filter,javax.portlet.annotations` 뒤 `com.ibm.CORBA` 및 앞 `com.ibm`삽입하십시오.
 1. 파일을 저장합니다.
@@ -222,7 +222,7 @@ Liferay는 데모 목적으로 기본적으로 HSQL을 사용합니다. Liferay 
 1. **자원 &rarr; JDBC 제공자** 클릭하십시오.
 1. 범위를 선택한 다음 **New** 클릭합니다.
 1. 데이터베이스 유형, 제공자 유형 및 구현 유형을 선택하십시오. 미리 정의된 데이터베이스를 선택하면 마법사가 이름 및 설명 필드를 자동으로 채웁니다. 원하는 데이터베이스가 나열되지 않으면 **데이터베이스 유형** 필드에서 **사용자 정의** 선택한 다음 **구현 클래스 이름** 를 입력하십시오. 예를 들어 MySQL을 사용하는 경우 **데이터베이스 유형** &rarr; **사용자 정의** 선택한 다음 `com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource` in **구현 클래스 이름** 을 입력합니다. **다음** 클릭합니다.
-1. 클래스 경로 설정에서 모든 텍스트를 지웁니다. 필요한 JAR은 이미 서버의 클래스 경로 위치에 복사되었습니다. **다음** 클릭합니다.
+1. 클래스 경로 설정에서 모든 텍스트를 지웁니다. 필요한 JAR은 이미 서버의 클래스 경로 사이트에 복사되었습니다. **다음** 클릭합니다.
 1. 설정을 검토하고 **마침** 클릭합니다. 최종 구성은 다음과 같아야 합니다.
    
    ![그림 4: 완료된 JDBC 제공자 구성.](./installing-on-websphere/images/04.png)
@@ -333,7 +333,7 @@ DXP에서는 JSP가 Java 8 바이트코드 형식으로 컴파일되어야 합�
 <jsp-attribute name="jdkSourceLevel" value="18" />
 ```
 
-`ibm-web-ext.xmi` 파일의 정확한 경로는 WebSphere 설치 위치 및 DXP 버전에 따라 다르지만 다음은 예입니다.
+`ibm-web-ext.xmi` 파일의 정확한 경로는 WebSphere 설치 사이트 및 DXP 버전에 따라 다르지만 다음은 예입니다.
 
 ```bash
 /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/config/cells/localhostNode01Cell/applications/liferayXX.ear/deployments/liferayXX/liferayXX.war/WEB-INF/ibm-web-ext.xmi

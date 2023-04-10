@@ -1,10 +1,10 @@
 # 미리 정의된 요소 변수 참조
 
-요소 소스 편집기에서 원하는 위치에 커서를 놓고 왼쪽 사이드바에서 변수를 클릭하여 삽입합니다. Custom JSON Element에서 변수를 편집기에 직접 입력해야 합니다. 각 변수의 구문은 아래 표에 나와 있습니다.
+요소 소스 편집기에서 원하는 사이트에 커서를 놓고 왼쪽 사이드바에서 변수를 클릭하여 삽입합니다. Custom JSON Element에서 변수를 편집기에 직접 입력해야 합니다. 각 변수의 구문은 아래 표에 나와 있습니다.
 
 | 변하기 쉬운                                | 유형: 정의                                                                                                                                                 | 통사론                                     |
 |:------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------ |:--------------------------------------- |
-|                                       | <a href="#context" id="context">**문맥**</a>                                                                                                                              |                                         |
+|                                       | <a href="#context" id="context"> **문맥** </a>                                                                                                                              |                                         |
 | 회사 ID                                 | 번호: 현재 인스턴스의 회사 ID                                                                                                                                     | `${context.company_id}`                 |
 | 준비 중인 그룹                              | 부울: 현재 사이트가 준비되었는지 여부                                                                                                                                  | `${context.is_staging_group}`           |
 | 언어                                    | 텍스트: 현재 언어에 대한 2자리 코드(예: `en`)                                                                                                                         | `${context.language}`                   |
@@ -13,16 +13,16 @@
 | 페이지 레이아웃 아이디                          | 번호: 페이지의 ID                                                                                                                                            | `${context.plid}`                       |
 | 퍼블리싱 ID                               | 번호: 간행물 ID                                                                                                                                             | `${context.publication_id}`             |
 | 범위 그룹 ID                              | 현재 사이트의 ID                                                                                                                                             | `${context.scope_group_id}`             |
-|                                       | <a href="#time" id="time">**시간**</a>                                                                                                                              |                                         |
+|                                       | <a href="#time" id="time"> **시간** </a>                                                                                                                              |                                         |
 | 현재 날짜                                 | 날짜: 현재 날짜                                                                                                                                              | `${time.current_date}`                  |
 | 현재 날짜                                 | 번호: 날짜                                                                                                                                                 | `${time.current_day_of_month}`          |
-| 현재 요일                                 | 숫자: 요일(_1 = 월요일_)                                                                                                                                      | `${time.current_day_of_week}`           |
+| 현재 요일                                 | 숫자: 요일(**1 = 월요일**)                                                                                                                                      | `${time.current_day_of_week}`           |
 | 현재 날짜                                 | 번호: 올해의 날                                                                                                                                              | `${time.current_day_of_year}`           |
 | 현재 시간                                 | 번호: 현재 시간                                                                                                                                              | `${time.current_hour}`                  |
 | 현재 연도                                 | 번호: 현재 연도                                                                                                                                              | `${time.current_year}`                  |
 | 시간                                    | 시간: 시간                                                                                                                                                 | `${time.time_of_day}`                   |
 | 현지화된 시간대 이름                           | 텍스트: 로케일에 맞게 현지화된 시간대                                                                                                                                  | `${time.time_zone_name_localized}`      |
-|                                       | <a href="#user" id="user">**사용자**</a>                                                                                                                              |                                         |
+|                                       | <a href="#user" id="user"> **사용자** </a>                                                                                                                              |                                         |
 | 활성 부분 항목 아이디                          | 번호: 사용자의 세그먼트 ID                                                                                                                                       | `${user.active_segment_entry_ids}`      |
 | 나이                                    | 숫자: 사용자의 나이(년 수)                                                                                                                                       | `${user.age}`                           |
 | 자산 범주 ID {bdg-secondary}`7.4 U41+`    | 번호: 사용자 카테고리의 ID                                                                                                                                       | `${user.asset_category_ids}`            |
@@ -46,7 +46,7 @@
 | 상위 자산 범주 ID {bdg-secondary}`7.4 U41+` | 번호: 사용자 카테고리의 모든 상위 카테고리 ID                                                                                                                            | `${user.parent_asset_category_ids}`     |
 | 일반 역할 ID                              | 번호: 사용자의 일반 역할에 대한 역할 ID                                                                                                                               | `${user.regular_role_ids}`              |
 | 사용자 그룹 ID                             | 번호: 사용자가 속한 사용자 그룹의 ID                                                                                                                                 | `${user.user_group_ids}`                |
-|                                       | <a href="#conditional-elements" id="conditional-elements">**조건부 요소**\*</a>                                                                                                                              |                                         |
+|                                       | <a href="#conditional-elements" id="conditional-elements"> **조건부 요소** \*</a>                                                                                                                              |                                         |
 | IP 스택 시티                              | 텍스트: 검색 IP 주소가 발생한 도시                                                                                                                                  | `${ipstack.city}`                       |
 | IP 스택 대륙 코드                           | 텍스트: 검색 IP 주소가 발생한 대륙 코드(예: 북미의 경우 NA)                                                                                                                 | `${ipstack.continent_code}`             |
 | IP 스택 대륙 이름                           | 텍스트: 대륙 이름                                                                                                                                             | `${ipstack.continent_name}`             |
@@ -68,7 +68,7 @@
 
 **\*** 먼저 각 서비스를 활성화하여 ipstack 및 OpenWeatherMap 변수에 액세스합니다. 시스템 또는 인스턴스 설정 &rarr; 플랫폼 &rarr; 검색 경험을 방문하십시오. 사용 확인란을 클릭하고 구성 중인 서비스에 대한 구성을 저장합니다. OpenWeatherMap 서비스는 활성화된 ipstack 서비스에 따라 달라집니다. ipstack 서비스를 사용하는 예는 [개인화 검색 경험](../personalizing-the-search-experience.md) 참조하십시오.
 
-**\*\*** 이러한 즉시 사용 가능한 변수 외에도 [Custom Fields](../../../../../system-administration/configuring-liferay/adding-custom-fields.md)는 사용자 엔터티는 요소의 변수로 참조될 수도 있습니다. 예를 들어 이름이 _Employee_인 사용자 정의 필드는 `user.custom.field.employee`가 있는 요소에서 참조됩니다.
+**\*\****이러한 즉시 사용 가능한 변수 외에도 [Custom Fields](../../../../../system-administration/configuring-liferay/adding-custom-fields.md)는 사용자 엔터티는 요소의 변수로 참조될 수도 있습니다. 예를 들어 이름이***Employee** 인 사용자 정의 필드는 `user.custom.field.employee`가 있는 요소에서 참조됩니다.
 
 ## 추가 정보
 

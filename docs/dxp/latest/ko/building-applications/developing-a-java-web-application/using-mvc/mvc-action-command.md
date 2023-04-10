@@ -137,7 +137,7 @@ MVC Action Command 클래스는 [`MVCActionCommand`](https://github.com/liferay/
 
 다음으로 포틀릿의 JSP가 UI 구성 요소 작업을 명령에 매핑하는 방법을 확인합니다.
 
-## 무엇 향후 계획
+## 다음
 
 이제 MVC 작업 명령을 사용하는 방법을 알았으므로 [MVC 렌더링 명령](./mvc-render-command.md) 및 [MVC 리소스 명령](./mvc-resource-command.md)을 확인하고 싶을 수 있습니다. 앱의 콘텐츠 현지화를 시작하려면 [현지화된 메시지 사용](./using-localized-messages-in-an-mvc-portlet.md)참조하십시오. 모델, 지속성 및 서비스 계층 개발을 시작할 준비가 되었으면 [서비스 빌더](../../data-frameworks/service-builder.md) 을 방문하십시오.
 

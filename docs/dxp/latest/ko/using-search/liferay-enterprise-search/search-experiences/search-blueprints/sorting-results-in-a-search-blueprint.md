@@ -2,11 +2,11 @@
 
 검색 결과의 순서를 제어하기 위해 Blueprint를 검색하기 위해 [정렬 구성](./search-blueprints-configuration-reference.md#sort-configuration) 추가합니다.
 
-1. *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png))을 열고 *Applications* 탭을 클릭한 다음 *Blueprints*선택합니다.
+1. **Global Menu**(![Global Menu](../../../../images/icon-applications-menu.png))을 열고 **Applications** 탭을 클릭한 다음 **Blueprints** 선택합니다.
 
 1. [청사진을 생성하거나](./creating-and-managing-search-blueprints.md) 기존 청사진을 엽니다.
 
-1. *구성* 탭을 클릭하고 정렬 구성 텍스트 영역에 JSON을 입력합니다.
+1. **구성** 탭을 클릭하고 정렬 구성 텍스트 영역에 JSON을 입력합니다.
 
 ![Blueprint의 결과를 정렬하려면 JSON을 입력합니다.](./sorting-results-in-a-search-blueprint/images/01.png)
 
@@ -59,7 +59,7 @@
 
 중첩된 필드가 있는 문서를 보려면
 
-1. 청사진의 _구성_ 탭으로 이동하고 이 JSON을 고급 구성 상자에 입력하여 문서 `_source` 가져오기를 활성화합니다.
+1. 청사진의 **구성** 탭으로 이동하고 이 JSON을 고급 구성 상자에 입력하여 문서 `_source` 가져오기를 활성화합니다.
 
     ```json
     {
@@ -69,7 +69,7 @@
     }
     ```
 
-1. 도구 모음에서 _미리보기_ 클릭하고 중첩된 필드가 있는 결과를 검색하고 해당 필드를 확장합니다.
+1. 도구 모음에서 **미리보기** 클릭하고 중첩된 필드가 있는 결과를 검색하고 해당 필드를 확장합니다.
 
 중첩 필드의 경우 정렬 구성의 필드 선언이 더 복잡합니다.
 
@@ -113,7 +113,7 @@
 
 중첩된 필드가 있는 문서를 보려면
 
-1. 청사진의 _구성_ 탭으로 이동하고 이 JSON을 고급 구성 상자에 입력하여 문서 `_source` 가져오기를 활성화합니다.
+1. 청사진의 **구성** 탭으로 이동하고 이 JSON을 고급 구성 상자에 입력하여 문서 `_source` 가져오기를 활성화합니다.
 
     ```json
     {
@@ -123,7 +123,7 @@
     }
     ```
 
-1. 도구 모음에서 _미리보기_ 클릭하고 중첩된 필드가 있는 결과를 검색하고 해당 필드를 확장합니다.
+1. 도구 모음에서 **미리보기** 클릭하고 중첩된 필드가 있는 결과를 검색하고 해당 필드를 확장합니다.
 
 이 예는 개체 정수 필드를 기준으로 정렬합니다.
 

@@ -11,9 +11,9 @@ toc:
 ```{toctree}
 :maxdepth: 3
 
-고가용성을 위한 클러스터링/example-creating-a-simple-dxp-cluster.md
-고가용성을 위한 클러스터링/데이터베이스 구성을 위한 클러스터 노드.md
-고가용성을 위한 클러스터링 -availability/configuring-cluster-link.md
+clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md
+clustering-for-high-availability/database-configuration-for-cluster-nodes.md
+clustering-for-high-availability/configuring-cluster-link.md
 clustering-for-high-availability/configuring-unicast-over-tcp.md
 ```
 
@@ -43,7 +43,7 @@ Liferay DXP는 여러 시스템의 클러스터(수평 클러스터) 또는 단�
 
 DXP 클러스터를 구성한 후 여기에 애플리케이션을 배포하고 사용자 경험을 계속 개선할 수 있습니다. 자세한 내용은 [클러스터 설치 유지 관리](../maintaining-a-liferay-installation/maintaining-clustered-installations.md)를 참조하십시오.
 
-## 무엇 향후 계획
+## 다음
 
 예시를 통해 클러스터를 생성하는 것은 DXP 클러스터링을 이해하는 훌륭한 첫 단계입니다. 자세한 내용은 [예제: 단순 DXP 클러스터 생성](./clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md)부터 시작하십시오. 그런 다음 위에 나열된 [클러스터링 요구 사항](#clustering-requirements) 을 처리합니다.
 

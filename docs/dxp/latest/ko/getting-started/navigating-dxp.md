@@ -122,7 +122,7 @@ Liferay DXP 7.3 이전 버전에서는 전역 메뉴의 내용이 화면 왼쪽�
 
 ![DXP 7.1 및 7.2의 제어판은 사이트 메뉴 위에 있습니다.](./navigating-dxp/images/06.png)
 
-## 무엇 향후 계획
+## 다음
 
 시작하기 연습을 계속하고 [첫 번째 사이트 만들기](./creating-your-first-site.md)에 대해 알아보십시오.
 

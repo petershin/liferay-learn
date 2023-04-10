@@ -141,7 +141,7 @@ MVC Render Command 클래스는 [`MVCRenderCommand`](https://github.com/liferay/
 |:------------------------------------------------------------------------ |:----------------------------------- |
 | `<portlet:param name="mvcRenderCommandName" value="/a4p1/able" />` | `mvc.command.name=/a4p1/able`       |
 
-## 무엇 향후 계획
+## 다음
 
 이제 MVC Render Command 클래스에서 렌더링 논리를 구현하는 방법을 알았습니다. 다음으로 [MVC 리소스 명령](./mvc-resource-command.md) 클래스를 사용하여 파일과 같은 리소스에 대해 조치를 취할 수 있습니다. 
 

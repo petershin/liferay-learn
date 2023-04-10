@@ -43,7 +43,8 @@ Solr에 대한 커넥터를 아직 획득하지 않은 경우,
 
 1. 다음 URL에서 <https://liferay.com> `user.name` 을 대체하십시오.
 
-   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace **apps/225525277/versions> DXP: [https://web.liferay.com/web/ [user.name]/apps/-/marketplace** apps /182518167/버전](https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions)
+   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions> 
+   DXP: [https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions)
 
 1. **App** 을 클릭하여 앱의 LPKG 파일을 다운로드합니다.
 

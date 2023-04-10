@@ -13,7 +13,7 @@ able-theme-js:
     url: main.js
 ```
 
-필수 `url` 속성은 JavaScript 파일의 위치를 정의합니다. 페이지에서 활성화되면 페이지가 로드될 때마다 URL의 모든 JavaScript 리소스가 실행됩니다.
+필수 `url` 속성은 JavaScript 파일의 사이트를 정의합니다. 페이지에서 활성화되면 페이지가 로드될 때마다 URL의 모든 JavaScript 리소스가 실행됩니다.
 
 <!--TODO: are any additional resources available for theme JS as opposed to normal JS? Is there any functional difference in how it runs? -->
 

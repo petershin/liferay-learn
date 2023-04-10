@@ -50,7 +50,7 @@ NPM 및 Yarn은 의존하는 툴킷 및 모듈을 설치하는 데 사용할 패
 Fragments Toolkit의 `liferay-fragments` 명령은 Fragments 프로젝트를 생성하기 위한 인터페이스를 시작합니다.
 
 ```{warning}
-조각 프로젝트를 중첩하지 마십시오. 기존 Fragments 프로젝트 외부의 자체 위치에 새 Fragments 프로젝트를 만들어야 합니다.
+조각 프로젝트를 중첩하지 마십시오. 기존 Fragments 프로젝트 외부의 자체 사이트에 새 Fragments 프로젝트를 만들어야 합니다.
 ```
 
 `liferay-x2y6` 프로젝트 폴더에 있으면 종료합니다(예: `cd ..`).

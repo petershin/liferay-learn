@@ -49,7 +49,7 @@ LAR에는 다음과 같은 속성과 요구 사항이 있습니다.
 ![LAR 파일을 다운로드합니다.](./exporting-importing-site-pages-and-content/images/02.png)
 
 ```{note}
-생성된 LAR에는 내보내기 구성 중에 선택한 모든 데이터가 포함됩니다. 여기에 개인 정보나 민감한 정보가 포함된 경우 LAR 파일이 안전한 위치에 저장되어 있는지 확인하십시오.
+생성된 LAR에는 내보내기 구성 중에 선택한 모든 데이터가 포함됩니다. 여기에 개인 정보나 민감한 정보가 포함된 경우 LAR 파일이 안전한 사이트에 저장되어 있는지 확인하십시오.
 ```
 
 ## 사이트 페이지 및 콘텐츠 가져오기
@@ -109,5 +109,5 @@ Liferay는 스테이징 특정 기능뿐만 아니라 내보내기/가져오기 
 ## 추가 정보
 
 * [사이트 추가](./adding-a-site.md)
-* [위치 템플렛](./site-templates.md)
+* [사이트 템플렛](./site-templates.md)
 * [사이트 템플릿 내보내기/가져오기](./site-templates/exporting-importing-site-templates.md)

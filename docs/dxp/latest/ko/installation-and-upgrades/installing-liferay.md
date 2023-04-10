@@ -65,7 +65,7 @@ Docker 이미지 및 Tomcat 번들에서 Liferay는 기본적으로 임베디드
 1. [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 에서 지원되는 애플리케이션 서버를 선택하십시오.
 1. 해당 [애플리케이션 서버](./installing-liferay/installing-liferay-on-an-application-server.md)에 Liferay 설치 지침을 따르십시오.
 
-## 무엇 향후 계획
+## 다음
 
 Liferay를 설치한 후 [Liferay](./setting-up-liferay.md) 설정으로 이동하여 다음 옵션을 구성합니다.
 

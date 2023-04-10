@@ -8,7 +8,7 @@
 
 Tomcat에 설치하려면 DXP WAR 설치, 종속성 설치, Tomcat 구성 및 DXP 배포가 필요합니다. 데이터베이스와 메일 서버 연결도 구성해야 합니다.
 
-이를 수행하는 가장 [하고 쉬운 방법은 Liferay Liferay-Tomcat](../installing-a-liferay-tomcat-bundle.md) 번들을 다운로드하고 여기에서 종속성, 스크립트 및 `ROOT.xml` 아래 설명된 위치로 복사하는 것입니다. 그렇지 않으면 종속성을 다운로드하고 Tomcat을 수동으로 구성할 수 있습니다.
+이를 수행하는 가장 [하고 쉬운 방법은 Liferay Liferay-Tomcat](../installing-a-liferay-tomcat-bundle.md) 번들을 다운로드하고 여기에서 종속성, 스크립트 및 `ROOT.xml` 아래 설명된 사이트로 복사하는 것입니다. 그렇지 않으면 종속성을 다운로드하고 Tomcat을 수동으로 구성할 수 있습니다.
 
 ## 전제 조건
 
@@ -58,7 +58,7 @@ DXP를 실행하도록 Tomcat을 구성하는 작업에는 다음 작업이 포�
 
 1. `setenv.bat`, `setenv.sh`,  `startup.bat`, `startup.sh`, `shutdown.bat`및 `shutdown.sh` 파일을 DXP 번들에서 `$CATALINA_BASE/bin` 로 복사합니다. 폴더. 그렇지 않으면  `setenv.bat` 및 `setenv.sh` 스크립트를 작성하십시오.
 
-1. `setenv.sh` 스크립트는 Tomcat의 서블릿 컨테이너인 Catalina에 대한 JVM 옵션을 설정합니다. 이러한 옵션 중에는 Java 런타임 환경의 위치가 있습니다. 서버에서 이 환경을 전역적으로 사용할 수 없는 경우 Tomcat이 실행될 수 있도록 `setenv.sh` 스크립트에서 해당 위치를 설정합니다. `JAVA_HOME` 환경 변수를 DXP 지원 JRE로 지정하여 이를 수행하십시오.
+1. `setenv.sh` 스크립트는 Tomcat의 서블릿 컨테이너인 Catalina에 대한 JVM 옵션을 설정합니다. 이러한 옵션 중에는 Java 런타임 환경의 사이트가 있습니다. 서버에서 이 환경을 전역적으로 사용할 수 없는 경우 Tomcat이 실행될 수 있도록 `setenv.sh` 스크립트에서 해당 사이트를 설정합니다. `JAVA_HOME` 환경 변수를 DXP 지원 JRE로 지정하여 이를 수행하십시오.
 
     ```bash
     export JAVA_HOME=/usr/lib/jvm/java-8-jdk
@@ -97,7 +97,7 @@ DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵�
 
 Tomcat 구성을 계속하십시오.
 
-1. Liferay-Tomcat 번들이 있는 경우 `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 파일을 애플리케이션 서버의 해당 위치에 복사합니다. 파일 경로가 없으면 생성하고 `ROOT.xml` 파일을 생성합니다.
+1. Liferay-Tomcat 번들이 있는 경우 `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 파일을 애플리케이션 서버의 해당 사이트에 복사합니다. 파일 경로가 없으면 생성하고 `ROOT.xml` 파일을 생성합니다.
 
     `ROOT.xml` 파일은 DXP에 대한 웹 애플리케이션 컨텍스트를 지정합니다. 예를 들어,
 

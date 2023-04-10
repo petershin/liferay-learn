@@ -90,7 +90,7 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
 public void execute(CPInstance cpInstance) throws PortalException;
 ```
 
-> 이 메서드는 사용자 지정 활동에 대한 비즈니스 논리가 구현되는 위치입니다.
+> 이 메서드는 사용자 지정 활동에 대한 비즈니스 논리가 구현되는 사이트입니다.
 
 ```java
 public String getKey();

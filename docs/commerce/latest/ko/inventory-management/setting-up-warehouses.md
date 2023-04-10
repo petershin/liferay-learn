@@ -1,6 +1,6 @@
 # 창고 설정
 
-창고는 제품 재고를 보관하는 물리적 위치를 나타냅니다. 창고를 활성화하려면 지리적 위치를 설정해야 합니다. Fedex 배송 방법은 이 지리적 위치를 사용하여 배송비를 계산합니다. 자세한 내용은 [Fedex 배송 방법 사용](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md) 참조하십시오.
+창고는 제품 재고를 보관하는 물리적 사이트를 나타냅니다. 창고를 활성화하려면 지리적 사이트를 설정해야 합니다. Fedex 배송 방법은 이 지리적 사이트를 사용하여 배송비를 계산합니다. 자세한 내용은 [Fedex 배송 방법 사용](../store-management/configuring-shipping-methods/using-the-fedex-shipping-method.md) 참조하십시오.
 
 단일 웨어하우스를 사용하여 여러 채널을 제공하거나 여러 웨어하우스가 있는 단일 채널을 제공할 수 있습니다. **Miniium** 또는 **Speedwell** 액셀러레이터를 사용하는 경우 3개의 샘플 웨어하우스가 하나의 채널에 서비스를 제공합니다.
 
@@ -20,7 +20,7 @@
 
 1. **제출** 클릭합니다.
 
-   이렇게 하면 새 비활성 웨어하우스가 생성됩니다. 이제 주소, 지리적 위치를 추가하고 활성화할 수 있습니다.
+   이렇게 하면 새 비활성 웨어하우스가 생성됩니다. 이제 주소, 지리적 사이트를 추가하고 활성화할 수 있습니다.
 
    ![새 창고에 대한 세부 정보를 입력하고 활성화합니다.](./setting-up-warehouses/images/02.png)
 
@@ -28,14 +28,14 @@
 
 1. Geolocation 섹션에 창고의 위도 및 경도 값을 입력합니다.
 
-   또는 창고 주소를 기반으로 창고의 지리적 위치를 자동으로 생성하도록 [Bing Geocoder](#using-bing-geocoder-to-set-a-warehouses-geolocation) 을 구성할 수 있습니다.
+   또는 창고 주소를 기반으로 창고의 지리적 사이트를 자동으로 생성하도록 [Bing Geocoder](#using-bing-geocoder-to-set-a-warehouses-geolocation) 을 구성할 수 있습니다.
 
 1. 주소 섹션에 창고 주소를 입력합니다.
 
 1. 토글을 **활성** 로 전환합니다.
 
    ```{important}
-   창고를 활성화하려면 지리적 위치를 설정해야 합니다.
+   창고를 활성화하려면 지리적 사이트를 설정해야 합니다.
    ```
 
 1. **자격** 탭을 클릭하고 창고를 특정 채널 또는 사용 가능한 모든 채널에 연결합니다. 채널의 제품 인벤토리를 결정합니다.
@@ -46,9 +46,9 @@
 
 1. **저장** 클릭합니다.
 
-## Bing Geocoder를 사용하여 창고의 지리적 위치 설정
+## Bing Geocoder를 사용하여 창고의 지리적 사이트 설정
 
-Liferay는 Bing Maps API와 통합되어 창고 주소에서 지리적 위치를 자동으로 생성합니다. 이 기능을 사용하려면 [Bing 지도 계정](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account) 및 [Bing 지도 키](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key) 있어야 합니다.
+Liferay는 Bing Maps API와 통합되어 창고 주소에서 지리적 사이트를 자동으로 생성합니다. 이 기능을 사용하려면 [Bing 지도 계정](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/creating-a-bing-maps-account) 및 [Bing 지도 키](https://docs.microsoft.com/en-us/bingmaps/getting-started/bing-maps-dev-center-help/getting-a-bing-maps-key) 있어야 합니다.
 
 그런 다음 다음 단계에 따라 인스턴스에 대한 Bing Geocoder를 구성합니다.
 
@@ -60,9 +60,9 @@ Liferay는 Bing Maps API와 통합되어 창고 주소에서 지리적 위치를
 
 1. **저장** 클릭합니다.
 
-지오코더가 구성되면 주소가 있는 모든 창고에 대한 창고 지리적 위치를 생성할 수 있습니다. 창고 페이지로 이동하여 원하는 창고에 대해 **작업** 버튼(![Actions Button](../images/icon-actions.png))을 클릭하고 **지리적 위치 찾기** 선택합니다. 지오코더는 주소를 위도 및 경도 좌표로 변환합니다.
+지오코더가 구성되면 주소가 있는 모든 창고에 대한 창고 지리적 사이트를 생성할 수 있습니다. 창고 페이지로 이동하여 원하는 창고에 대해 **작업** 버튼(![Actions Button](../images/icon-actions.png))을 클릭하고 **지리적 사이트 찾기** 선택합니다. 지오코더는 주소를 위도 및 경도 좌표로 변환합니다.
 
-![원하는 창고에 대한 작업 버튼을 클릭하고 지리적 위치 찾기를 선택합니다.](./setting-up-warehouses/images/05.png)
+![원하는 창고에 대한 작업 버튼을 클릭하고 지리적 사이트 찾기를 선택합니다.](./setting-up-warehouses/images/05.png)
 
 ## Liferay 7.4 U46/GA46 이하
 
@@ -76,7 +76,7 @@ Liferay는 Bing Maps API와 통합되어 창고 주소에서 지리적 위치를
 
    ![새 창고에 대한 세부 정보를 입력하고 활성화합니다.](./setting-up-warehouses/images/07.png)
 
-1. 창고를 활성화하려면 토글을 **활성** 로 전환하십시오. 활성화하기 전에 지리적 위치를 입력해야 합니다.
+1. 창고를 활성화하려면 토글을 **활성** 로 전환하십시오. 활성화하기 전에 지리적 사이트를 입력해야 합니다.
 
 1. 채널 섹션에서 확인란을 사용하여 웨어하우스를 채널에 연결합니다. 연결된 창고는 채널의 제품 재고를 결정합니다.
 
@@ -84,7 +84,7 @@ Liferay는 Bing Maps API와 통합되어 창고 주소에서 지리적 위치를
 
 1. **Geolocation** 섹션에 창고의 위도 및 경도 값을 입력합니다.
 
-   또는 창고의 지리 위치를 자동으로 생성하는 방법을 알아보려면 [Bing Geocoder를 사용하여 창고의 지리 위치 설정](#using-bing-geocoder-to-set-a-warehouses-geolocation) 참조하십시오.
+   또는 창고의 지리 사이트를 자동으로 생성하는 방법을 알아보려면 [Bing Geocoder를 사용하여 창고의 지리 사이트 설정](#using-bing-geocoder-to-set-a-warehouses-geolocation) 참조하십시오.
 
 1. **저장** 클릭합니다.
 
@@ -107,7 +107,7 @@ Liferay는 Bing Maps API와 통합되어 창고 주소에서 지리적 위치를
 
 1. 채널을 선택하세요. 채널의 제품 재고는 연결된 창고에 따라 다릅니다.
 
-1. 창고 위치에 따라 필수 지리적 위치 데이터를 입력합니다.
+1. 창고 사이트에 따라 필수 지리적 사이트 데이터를 입력합니다.
 
    * **위도** : 36.282974
    * **경도** : -115.136

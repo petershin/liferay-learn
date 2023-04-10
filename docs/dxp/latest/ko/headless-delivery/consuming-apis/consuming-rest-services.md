@@ -15,13 +15,13 @@ REST 서비스를 호출하려면 실행 중인 Liferay DXP가 필요합니다.
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Liferay DXP's REST services are published at this URL:
+Liferay DXP의 REST 서비스는 다음 URL에 게시됩니다.
 
 ```
 http[s]://[hostname]:[port]/o/api
 ```
 
-On your Docker instance, you can find them here:
+Docker 인스턴스에서 다음 위치에서 찾을 수 있습니다.
 
 ```
 http://localhost:8080/o/api

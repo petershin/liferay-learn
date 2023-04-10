@@ -83,7 +83,7 @@ public CommerceTaxValue getCommerceTaxValue(
     throws CommerceTaxEngineException;
 ```
 
-> 이 메서드는 세금 엔진에 대한 비즈니스 논리가 구현되는 위치입니다. 자세한 내용은 [CommerceTaxValue](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxValue.java) 참조하십시오.
+> 이 메서드는 세금 엔진에 대한 비즈니스 논리가 구현되는 사이트입니다. 자세한 내용은 [CommerceTaxValue](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxValue.java) 참조하십시오.
 
 ```java
 public String getDescription(Locale locale);

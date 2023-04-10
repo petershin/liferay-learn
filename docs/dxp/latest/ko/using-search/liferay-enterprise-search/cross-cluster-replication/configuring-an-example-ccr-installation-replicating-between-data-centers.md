@@ -41,7 +41,7 @@ cluster.link.enabled=true
 
 ## 보안을 위한 전제 조건: 인증 및 암호화 구성
 
-통신(TLS/SSL)을 암호화하고 Liferay DXP와 Elasticsearch 노드 간의 사용자 인증을 활성화하려면 [보안 구성](../../installing-and-upgrading-a-search-engine/elasticsearch/securing- elasticsearch.md):
+통신(TLS/SSL)을 암호화하고 Liferay DXP와 Elasticsearch 노드 간의 사용자 인증을 활성화하려면 [보안 구성](../../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md):
 
 1. Elasticsearch 클러스터에서 X-Pack Security를 구성합니다. 노드 인증서가 동일한 CA에 의해 서명되고 리더 및 팔로워 클러스터의 보안 설정이 일치하는지 확인하십시오. 
 

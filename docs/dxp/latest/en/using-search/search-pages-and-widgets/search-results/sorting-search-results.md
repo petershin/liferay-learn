@@ -141,11 +141,42 @@ The `+` sign following the field name indicates that the order is _ascending_.  
 
 ## Sorting by Nested Fields
 
-{bdg-secondary}`Available 7.2 FP12+, 7.3 FP2+, 7.4 (all updates)`
+### Sorting by Object Definition Fields
 
-As described in [Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-ddm-fields), DDM Fields became [nested fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) as of Liferay 7.2 SP3+/FP8+ (and on all Liferay 7.3 versions). On the latest Fix Pack and GA release of 7.2 and 7.3, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for these nested fields.
+{bdg-secondary}`7.4 Update/GA XX+`
+<!-- fill in the version -->
 
-Your Sort configurations that relied on fields named `ddm__keyword__*` at the root of the Elasticsearch document continue to be valid---the Search framework itself was adjusted to account for the nested field types. Use these fields as usual in your Sort widget's _Field_ configuration, even though they're no longer at the root of the document.
+[Object definition](../../../building-applications/objects.md) fields are indexed as nested fields in Elasticsearch. 
+
+```json
+"nestedFieldArray" : [
+   {
+     "fieldName" : "lastAcessed",
+     "valueFieldName" : "value_date",
+     "value_date" : "20230502000000"
+   },
+   {
+     "fieldName" : "immunityType",
+     "valueFieldName" : "value_keyword",
+     "value_keyword" : "diplomatic"
+   },
+   {
+     "fieldName" : "luckyNumber",
+     "valueFieldName" : "value_integer",
+     "value_integer" : "19"
+   }
+],
+```
+
+To sort by an object's field, a special notation is required, following the pattern `nestedFieldArray.[fieldName].[valueFieldName]`. For example, to sort by the `lastAccessed` date field in the nested array above, enter `nestedFieldArray.lastAccessed.value_date` as the Sort widget configuration's Indexed Field.
+
+### Sorting by Web Content Structure Fields
+
+{bdg-secondary}`7.2 FP12+, 7.3 FP2+, 7.4 (all updates)`
+
+As described in [Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-fields), Web Content Structure fields became [nested fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) as of Liferay 7.2 SP3+/FP8+ (and on all Liferay 7.3 versions). On the latest Fix Pack and GA release of 7.2 and 7.3, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for these nested fields.
+
+Sort configurations relying on fields named `ddm__keyword__*` at the root of the Elasticsearch document continue to be valid---the Search framework was adjusted to account for the nested field types. Use these fields as usual in your Sort widget's _Field_ configuration, even though they're no longer at the root of the document.
 
 The Sort widget works with keyword, date, and numeric fields. To find DDM keyword fields in existing documents in the index,
 

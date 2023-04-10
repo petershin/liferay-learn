@@ -2,7 +2,7 @@
 
 As Kyle begins to work on development with Liferay Cloud, he goes through his first full deployment process by deploying and promoting a simple widget module.
 
-Deploy and test an example widget to walk through the whole process.
+Here, you'll deploy and test an example widget to walk through the whole process.
 
 ## Pushing Up New Code
 
@@ -48,13 +48,13 @@ Whether you deploy to UAT or another `dev` environment depends on your subscript
 
 1. Find the new build from your push and click *Deploy build to...*
 
-    ![Find your build on the Builds page and deploy it to UAT.](./deploying-and-promoting-to-production/images/01.png)
+   ![Find your build on the Builds page and deploy it to UAT.](./deploying-and-promoting-to-production/images/01.png)
 
 1. From the *Environment* drop-down menu, select your UAT environment.
 
 1. Click the checkboxes to confirm the impact of the deployment.
 
-    ![The Deploy Build button appears when you have selected an environment and clicked the checkboxes.](./deploying-and-promoting-to-production/images/02.png)
+   ![The Deploy Build button appears when you have selected an environment and clicked the checkboxes.](./deploying-and-promoting-to-production/images/02.png)
 
 1. Click *Deploy Build*.
 
@@ -72,11 +72,11 @@ Next, manually test the new widget to ensure it's working correctly.
 
 1. Click the `lcp-secret-ci-customer-user` secret.
 
-    ![The lcp-secret-ci-customer-user secret has the username needed to access your UAT instance.](./deploying-and-promoting-to-production/images/03.png)
+   ![The lcp-secret-ci-customer-user secret has the username needed to access your UAT instance.](./deploying-and-promoting-to-production/images/03.png)
 
 1. Click *View* to confirm the secret value you need to log into your UAT instance.
 
-    ![Click View to view and confirm the secret value.](deploying-and-promoting-to-production/images/04.png)
+   ![Click View to view and confirm the secret value.](deploying-and-promoting-to-production/images/04.png)
 
     ```{tip}
     The default username is `customer`.
@@ -104,7 +104,7 @@ Next, test the new widget to make sure it's working properly.
 
 1. Click the edit icon ( ![edit icon](../../../images/icon-edit.png) ) at the top of the page to access a list of widgets.
 
-1. From the *Fragments and Widgets* side bar, click the *Widgets* tab.
+1. From the Fragments and Widgets sidebar, click the *Widgets* tab.
 
 1. Scroll down and expand the *Sample* section to find the new widget, *E3V7 Widget*.
 

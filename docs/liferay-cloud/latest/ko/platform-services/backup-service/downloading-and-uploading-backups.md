@@ -1,4 +1,3 @@
-
 # 백업 다운로드 및 업로드
 
 Liferay Cloud 백업 서비스는 환경 데이터베이스의 백업과 Liferay 인스턴스의 `LIFERAY_HOME/data` 폴더의 전체 내용을 생성합니다. 이 콘텐츠는 아카이브 파일(각각`.gz` 및 `.tgz` )로 저장되며 Liferay Cloud 콘솔을 통해 다운로드할 수 있습니다.

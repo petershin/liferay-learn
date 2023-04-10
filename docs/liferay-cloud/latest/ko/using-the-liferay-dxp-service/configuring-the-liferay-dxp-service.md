@@ -1,4 +1,3 @@
-
 # Liferay DXP 서비스 구성
 
 Liferay DXP를 구성하는 데 사용할 수 있는 몇 가지 방법이 있습니다: [시스템 설정](https://learn.liferay.com/dxp/latest/ko/system-administration/configuring-liferay/system-settings.html) 및 [구성 파일 사용](https://learn.liferay.com/dxp/latest/ko/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) 및 [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 사용. Liferay Cloud의 Liferay DXP 인스턴스에 대한 DXP 속성 및 구성 파일은 리포지토리의 Liferay DXP 서비스 디렉터리에 있는 `configs/` 폴더 중 하나에 배치되어 배포됩니다.

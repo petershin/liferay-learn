@@ -144,7 +144,40 @@ Setting a custom field to searchable means that the value of the field is indexe
 
 ## Accessing Nested Fields
 
-As documented in the [7.3 Breaking Changes document](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document), the way Liferay Dynamic Data Mapping framework indexes some fields has changed. They were previously at the root of the search engine document; now they're nested fields. This change affects Liferay 7.3 and Liferay 7.2 SP3/FP8+ (but only if the _Enable Legacy Dynamic Data Mapping Index Fields_ setting is disabled in System Settings &rarr; Dynamic Data Mapping Indexer). On the latest Fix Pack and GA release of 7.3, this change is accounted for in Liferay's Search API and no configuration updates are necessary. Therefore, if you have Custom Facet widgets that relied on fields named `ddm__text__*` or `ddm__keyword__*` that were at the root of the Elasticsearch document, continue to use these fields as usual in your Custom Facet's _Aggregation Field_ configuration, even though they're no longer at the root of the document.
+Object Definition fields and Web Content Structure fields are indexed as nested fields in Elasticsearch.
+
+### Using Object Definition Fields in the Custom Facet
+
+{bdg-secondary}`7.4 Update/GA XX+`
+<!-- fill in the version -->
+
+[Object definition](../../../building-applications/objects.md) fields are indexed as nested fields in Elasticsearch. 
+
+```json
+"nestedFieldArray" : [
+   {
+     "fieldName" : "lastAcessed",
+     "valueFieldName" : "value_date",
+     "value_date" : "20230502000000"
+   },
+   {
+     "fieldName" : "immunityType",
+     "valueFieldName" : "value_keyword",
+     "value_keyword" : "diplomatic"
+   },
+   {
+     "fieldName" : "luckyNumber",
+     "valueFieldName" : "value_integer",
+     "value_integer" : "19"
+   }
+],
+```
+
+To use an object's field in the Custom Facet widget's Aggregation Field configuration, a special notation is required. Following the pattern `nestedFieldArray.[fieldName].[valueFieldName]`, you can sort by the `lastAccessed` date field in the nested array above. Enter `nestedFieldArray.lastAccessed.value_date` as the Sort widget configuration's Indexed Field.
+
+### Using Web Content Structure Fields in the Custom Facet
+
+As documented in the [7.3 Breaking Changes document](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document), the way Liferay Dynamic Data Mapping framework indexes some fields changed. Fields previously at the root of the search engine document are now indexed as nested fields. This change affects Liferay 7.3 and Liferay 7.2 SP3/FP8+ (but only if the _Enable Legacy Dynamic Data Mapping Index Fields_ setting is disabled in System Settings &rarr; Dynamic Data Mapping Indexer). On the latest Fix Pack and GA release of 7.3, this change is accounted for in Liferay's Search API and no configuration updates are necessary. Therefore, if you have Custom Facet widgets that relied on fields named `ddm__text__*` or `ddm__keyword__*` that were at the root of the Elasticsearch document, continue to use these fields as usual in your Custom Facet's _Aggregation Field_ configuration, even though they're no longer at the root of the document.
 
 To find DDM fields in existing documents in the index,
 

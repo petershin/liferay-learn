@@ -17,6 +17,10 @@ function Authorize() {
 		}
 	}
 
+	const urlSearchParams = new URLSearchParams(window.location.search);
+
+	var code = urlSearchParams.get('code');
+
 	return (
 		<div>
 			<h2>Authorize</h2>
@@ -46,6 +50,18 @@ function Authorize() {
 			<form onSubmit={handleAuthorize}>
 				<button type='onSubmit'>Authorize</button>
 			</form>
+
+			{code && (
+				<div>
+					<br />
+
+					Authorization Code:
+
+					<br />
+
+					{code}
+				</div>
+			)}
 		</div>
 	);
 }

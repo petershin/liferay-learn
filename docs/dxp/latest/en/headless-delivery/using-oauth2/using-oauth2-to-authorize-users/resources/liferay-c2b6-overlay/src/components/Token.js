@@ -6,6 +6,7 @@ function Token({handleToken, grantType}) {
 	const [clientId, setClientId] = React.useState('');
 	const [clientSecret, setClientSecret] = React.useState('');
 	const [password, setPassword] = React.useState('');
+	const [token, setToken] = React.useState('');
 	const [tokenUrl, setTokenUrl] = React.useState('');
 	const [username, setUsername] = React.useState('');
 
@@ -13,6 +14,8 @@ function Token({handleToken, grantType}) {
 		const token = await getAuthToken({clientId, clientSecret, grantType, password, tokenUrl, username});
 
 		handleToken(token);
+
+		setToken(token);
 	}
 
 	return (
@@ -78,6 +81,18 @@ function Token({handleToken, grantType}) {
 			)}
 
 			<button onClick={handleGetToken}>Get Token</button>
+
+			{token && (
+				<div>
+					<br />
+
+					Authorization Token:
+
+					<br />
+
+					{token.access_token}
+				</div>
+			)}
 		</div>
 	);
 }

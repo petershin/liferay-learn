@@ -1,4 +1,3 @@
-
 # 그리드 조각으로 반응형 레이아웃 구축
 <!--TASK: Reconsider article.-->
 > 가용성: 라이프레이 DXP 7.3+.

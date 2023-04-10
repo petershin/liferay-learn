@@ -3,7 +3,6 @@ toc:
   - ./creating-and-managing-elements/creating-elements.md
   - ./creating-and-managing-elements/managing-elements.md
   - ./creating-and-managing-elements/predefined-element-variables-reference.md
-uuid: ae0f4186-8c72-4319-a08a-fe80793f2f42
 ---
 
 # 요소 생성 및 관리

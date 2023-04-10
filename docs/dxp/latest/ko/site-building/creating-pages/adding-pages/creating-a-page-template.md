@@ -1,4 +1,3 @@
-
 # 페이지 템플릿 만들기
 
 {bdg-secondary}`사용 가능: Liferay DXP/Portal 7.3+`

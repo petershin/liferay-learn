@@ -1,4 +1,3 @@
-
 # 콘텐츠 페이지에서 콘텐츠 관리
 <!-- Alt: Managing Content in Pages and Templates... If renamed, relocate to Displaying Content.-->
 콘텐츠 페이지 및 템플릿을 편집하거나 생성할 때 여기에 추가된 모든 문서, 웹 콘텐츠 기사, 컬렉션 또는 인라인 텍스트를 빠르게 보고 편집할 수 있습니다. 이렇게 하려면 편집 사이드바에서 **페이지 콘텐츠** 버튼(![Page Content](../../../images/icon-paperclip.png))을 선택합니다.

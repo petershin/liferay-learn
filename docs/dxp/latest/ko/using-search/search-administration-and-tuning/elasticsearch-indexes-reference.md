@@ -1,4 +1,3 @@
-
 # Elasticsearch 인덱스 참조
 
 Liferay 7.3 및 7.4에는 각각 Elasticsearch에서 생성된 인덱스 세트가 있습니다. 이러한 인덱스와 인덱스가 수행하는 작업을 이해하면 Liferay의 Elasticsearch 설치를 더 잘 구성하고 관리하는 데 도움이 될 수 있습니다.

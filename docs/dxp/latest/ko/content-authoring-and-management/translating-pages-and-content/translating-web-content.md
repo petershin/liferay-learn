@@ -1,4 +1,3 @@
-
 # 웹 콘텐츠 번역
 
 {bdg-secondary}`사용 가능한 Liferay DXP/Portal 7.3+`
@@ -8,7 +7,7 @@ Liferay는 웹 콘텐츠 기사를 번역하기 위한 통합 도구를 제공�
 원하는 경우 [사용자 정의 작업 흐름을 활성화하여](./enabling-workflows-for-translations.md) 번역에 대한 검토 및 게시 프로세스를 지시할 수 있습니다.
 
 ```{note}
-번역에 사용할 수 있는 언어는 인스턴스의 현지화 설정에 따라 결정됩니다. [초기 인스턴스 현지화](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) 및 [가상 인스턴스 현지화](../../system-administration/ 참조 configure-liferay/virtual-instances/localization.md)를 참조하십시오.
+번역에 사용할 수 있는 언어는 인스턴스의 현지화 설정에 따라 결정됩니다. 자세한 내용은 [초기 인스턴스 현지화](../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) 및 [가상 인스턴스 현지화](../../system-administration/configuring-liferay/virtual-instances/localization.md)를 참조하십시오.
 ```
 
 ## 콘텐츠 수동 번역

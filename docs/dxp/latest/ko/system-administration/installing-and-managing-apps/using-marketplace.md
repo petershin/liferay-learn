@@ -1,4 +1,3 @@
-
 # 마켓플레이스 사용
 
 Liferay Marketplace는 앱 공유, 탐색 및 다운로드를 위한 허브입니다. Marketplace는 전체 Liferay 생태계를 활용하여 사용자 친화적인 원스톱 상점에서 앱을 출시하고 공유합니다.

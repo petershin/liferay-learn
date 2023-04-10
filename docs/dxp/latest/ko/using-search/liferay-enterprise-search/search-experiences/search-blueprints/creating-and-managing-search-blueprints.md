@@ -1,7 +1,3 @@
----
-uuid: 75d0f713-0c4c-46ae-8761-21a0878077cf
----
-
 # 검색 Blueprint 생성 및 관리
 
 전역 메뉴의 응용 프로그램 섹션 &rarr; 검색 경험에서 [검색 청사진](./understanding-search-blueprints.md) 을 생성할 수 있습니다. 청사진이 이미 있고 Liferay [검색 페이지](../../../search-pages-and-widgets/working-with-search-pages.md)에서 그 기능을 적용하려면 [검색 페이지에서 검색 청사진 사용](./using-a-search-blueprint-on-a-search-page.md)참조하십시오.
@@ -16,11 +12,11 @@ uuid: 75d0f713-0c4c-46ae-8761-21a0878077cf
 
 1. 새 검색 청사진 창에서 청사진에 이름(필수)과 설명(선택 사항)을 지정합니다.
 
-1. Blueprint 계획에 따라 다음 메뉴를 사용하여 [Blueprint](./understanding-search-blueprints.md#what-is-a-blueprint)빌드를 계속합니다.
+1. Blueprint 계획에 따라 다음 메뉴를 사용하여 [Blueprint](./understanding-search-blueprints.md#what-is-a-blueprint) 빌드를 계속합니다.
 
-   - [Query Builder](#using-the-query-builder): Query Elements 섹션에서 Blueprint에 대한 요소를 선택하거나 구성하여 검색에 새 쿼리 절을 추가합니다. 쿼리 설정 섹션에서 쿼리에 대한 추가 설정(예: 검색할 자산 및 개체 유형)을 구성합니다.
+   - [Query Builder](#using-the-query-builder) : Query Elements 섹션에서 Blueprint에 대한 요소를 선택하거나 구성하여 검색에 새 쿼리 절을 추가합니다. 쿼리 설정 섹션에서 쿼리에 대한 추가 설정(예: 검색할 자산 및 개체 유형)을 구성합니다.
 
-   - [구성](#adding-configurations): 검색에서 고급 설정(예: 정렬 또는 집계)을 구성합니다.
+   - [구성](#adding-configurations) : 검색에서 고급 설정(예: 정렬 또는 집계)을 구성합니다.
 
 1. Blueprint를 빌드하고 구성하면서 테스트합니다. _미리보기_ 클릭하고 검색어를 입력하세요.
 
@@ -42,9 +38,9 @@ uuid: 75d0f713-0c4c-46ae-8761-21a0878077cf
 
 쿼리 빌더를 사용하여
 
-1. [Blueprint](#adding-elements-to-the-blueprint)에 요소를 추가합니다.
+1. [Blueprint](#adding-elements-to-the-blueprint) 에 요소를 추가합니다.
 
-1. [검색할 Liferay 자산 선택](#choosing-which-liferay-assets-to-search).
+1. [검색할 Liferay 자산 선택](#choosing-which-liferay-assets-to-search) .
 
 ### 청사진에 요소 추가
 
@@ -64,7 +60,7 @@ uuid: 75d0f713-0c4c-46ae-8761-21a0878077cf
 
 1. 원하는 만큼 검색 쿼리를 구성하는 데 필요한 만큼 요소를 추가합니다.
 
-   즉시 사용 가능한 각 요소에 대한 설명은 [Search Blueprints Elements Reference](./search-blueprints-elements-reference.md) 참조하십시오.
+   즉시 사용 가능한 각 요소에 대한 설명은 [청사진 요소 참조 검색](./search-blueprints-elements-reference.md) 참조하십시오.
 
 1. 사용자 지정 요소가 필요한 경우 사용자 지정 JSON 요소를 쿼리 빌더에 추가하고 필요한 쿼리 절을 작성합니다.
 
@@ -97,7 +93,7 @@ uuid: 75d0f713-0c4c-46ae-8761-21a0878077cf
 ![유형 선택 모달은 검색할 자산의 일괄 관리에 사용됩니다.](./creating-and-managing-search-blueprints/images/07.png)
 
 ```{note}
-검색 가능한 유형 모달에서 모든 자산을 선택 취소하는 것은 모든 유형을 선택하는 것과 동일합니다. 모든 자산 및 개체 유형이 검색됩니다. 대부분의 Liferay 검색 절 비활성화에 대해 알아보려면 [쿼리 절 기여자 구성](#advanced-configuring-query-clause-contributors)을 참조하십시오.
+검색 가능한 유형 모달에서 모든 자산을 선택 취소하는 것은 모든 유형을 선택하는 것과 동일합니다. 모든 자산 및 개체 유형이 검색됩니다. 대부분의 Liferay 검색 절 비활성화에 대해 알아보려면 [쿼리 절 기여자 구성](#advanced-configuring-query-clause-contributors) 을 참조하십시오.
 ```
 
 검색 가능한 유형 구성을 편집한 후에는 항상 Blueprint를 저장하십시오.
@@ -115,7 +111,7 @@ Liferay의 백엔드 코드(및 잠재적으로 Liferay 인스턴스에 배포�
 - 검색 프레임웍 인덱서 조항
 - 검색 프레임웍 쿼리 공헌자
 
-일반적으로 기본 설정으로 충분합니다. [Searchable Types](#choosing-which-liferay-assets-to-search)을 사용하는 것 이상으로 이 동작을 조정해야 한다면 이러한 백엔드 기여자가 작동하는 방식을 이해해야 합니다.
+일반적으로 기본 설정으로 충분합니다. [Searchable Types](#choosing-which-liferay-assets-to-search) 을 사용하는 것 이상으로 이 동작을 조정해야 한다면 이러한 백엔드 기여자가 작동하는 방식을 이해해야 합니다.
 
 1. **검색 가능 유형** 을 사용하여 개별 인덱서가 검색에 참여하지 않도록 합니다. 유형의 인덱서를 비활성화하면 쿼리 기여자를 선택하더라도 유형에 대한 절이 검색 쿼리에 추가되지 않습니다. 이러한 유형에 대한 결과는 사용자에게 표시되지 않습니다.
 

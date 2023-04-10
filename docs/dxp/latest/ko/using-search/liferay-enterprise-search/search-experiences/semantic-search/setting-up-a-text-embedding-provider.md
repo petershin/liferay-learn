@@ -1,10 +1,7 @@
-- - - -
-uuid: a46cc468-a441-4a77-9628-b618b79d823b
-- - - -
 # 텍스트 임베딩 공급자 설정
 
 {bdg-secondary}`7.4 U70+`
-{bdg-link-dark}`[베타 기능](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
+{bdg-link-dark}` [베타 기능](https://help.liferay.com/hc/ko/articles/12917247551757-Beta-Features) `
 
 텍스트 임베딩 제공업체에는 두 가지 작업이 있습니다.
 
@@ -24,7 +21,7 @@ uuid: a46cc468-a441-4a77-9628-b618b79d823b
 ## txtai 구성 및 실행
 
 ```{note} 
-여기서 txtai 구성은 데모용입니다. 자세한 내용은 [txtai 문서](https://neuml.github.io/txtai/)를 참조하세요.
+여기서 txtai 구성은 데모용입니다. 자세한 내용은 [txtai 문서](https://neuml.github.io/txtai/) 를 참조하세요.
 ```
 
 API에 액세스하도록 txtai를 설정합니다. docker 컨테이너에서 txtai를 실행하려면 [txtai 설명서](https://neuml.github.io/txtai/cloud/) 참조하거나 Linux의 경우 다음 기본 단계를 따르십시오.
@@ -49,7 +46,7 @@ API에 액세스하도록 txtai를 설정합니다. docker 컨테이너에서 tx
    ```
 
    ```{important}
-   임베딩 경로에 [선택한 모델](./../semantic-search.md#choosing-a-model)이 입력됩니다.
+   임베딩 경로에 [선택한 모델](./../semantic-search.md#choosing-a-model) 이 입력됩니다.
    ```
 
 1. txtai 폴더에서 다음을 실행합니다.
@@ -84,10 +81,10 @@ API에 액세스하도록 txtai를 설정합니다. docker 컨테이너에서 tx
 ## 포옹하는 얼굴 추론 API 사용
 
 ```{important}
-[Hugging Face Inference API](https://huggingface.co/inference-api)는 테스트 및 개발에 적합합니다. Hugging Face를 생산을 위한 텍스트 포함 공급자로 사용하려면 [Hugging Face Inference Endpoints 공급자](#using-the-hugging-face-inference-endpoints)를 사용하세요.
+[Hugging Face Inference API](https://huggingface.co/inference-api) 는 테스트 및 개발에 적합합니다. Hugging Face를 생산을 위한 텍스트 포함 공급자로 사용하려면 [Hugging Face Inference Endpoints 공급자](#using-the-hugging-face-inference-endpoints) 를 사용하세요.
 ```
 
-Hugging Face Inference API를 사용하려면 먼저 [Hugging Face 계정](https://huggingface.co/join)만듭니다.
+Hugging Face Inference API를 사용하려면 먼저 [Hugging Face 계정](https://huggingface.co/join) 만듭니다.
 
 계정이 있으면
 
@@ -115,7 +112,7 @@ Hugging Face Inference API를 사용하려면 먼저 [Hugging Face 계정](https
 
 ## 포옹하는 얼굴 추론 끝점 사용
 
-[Hugging Face Inference Endpoints](https://huggingface.co/inference-endpoints) 서비스는 Hugging Face의 엔터프라이즈급 유료 텍스트 삽입 서비스입니다. 시맨틱 검색 솔루션을 테스트하고 개발할 때 [Inference API](#using-the-hugging-face-inference-api)을 사용할 수 있습니다.
+[Hugging Face Inference Endpoints](https://huggingface.co/inference-endpoints) 서비스는 Hugging Face의 엔터프라이즈급 유료 텍스트 삽입 서비스입니다. 시맨틱 검색 솔루션을 테스트하고 개발할 때 [Inference API](#using-the-hugging-face-inference-api) 을 사용할 수 있습니다.
 
 대부분의 설정은 Hugging Face에서 완료됩니다. Inference API를 설정한 후,
 

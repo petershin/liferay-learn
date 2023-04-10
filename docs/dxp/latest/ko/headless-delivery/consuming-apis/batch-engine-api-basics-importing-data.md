@@ -1,7 +1,3 @@
----
-uuid: c9510a79-6e06-424a-86dc-99df9fdda568
----
-
 # Batch Engine API 기본 사항 - 데이터 가져오기
 
 Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 REST API를 제공합니다. Liferay로 데이터를 가져오려면 이러한 서비스를 호출하십시오.
@@ -15,7 +11,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Batch Engine API 기본 사항](./liferay-g4j2.zip)을 다운로드하고 압축을 풉니다.
+1. [Batch Engine API 기본 사항](./liferay-g4j2.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
@@ -25,9 +21,9 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
    unzip liferay-g4j2.zip
    ```
 
-1. 데이터를 가져오려면 가져오는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. *Schemas* 섹션까지 아래로 스크롤하고 가져오려는 엔터티의 `x-class-name` 필드를 기록해 둡니다.
+1. 데이터를 가져오려면 가져오는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. **Schemas** 섹션까지 아래로 스크롤하고 가져오려는 엔터티의 `x-class-name` 필드를 기록해 둡니다.
 
-1. 다음 cURL 스크립트를 사용하여 계정을 Liferay 인스턴스로 가져옵니다. 명령줄에서 `curl` 폴더로 이동합니다. *계정* 의 정규화된 클래스 이름을 매개변수로 사용하여 `ImportTask_POST_ToInstance.sh` 스크립트를 실행합니다.
+1. 다음 cURL 스크립트를 사용하여 계정을 Liferay 인스턴스로 가져옵니다. 명령줄에서 `curl` 폴더로 이동합니다. **계정** 의 정규화된 클래스 이름을 매개변수로 사용하여 `ImportTask_POST_ToInstance.sh` 스크립트를 실행합니다.
 
    ```bash
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
@@ -78,7 +74,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
    `executeStatus` `COMPLETED`이면 가져온 데이터를 확인할 수 있습니다. 그렇지 않은 경우 명령을 다시 실행하여 태스크 실행이 완료되었는지 확인하십시오. `executeStatus` `FAILED`표시되면 `errorMessage` 필드를 확인하여 무엇이 잘못되었는지 확인하십시오.
 
-1. *전역 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *계정*으로 이동하여 가져온 데이터를 확인합니다. 두 개의 새 계정이 추가되었는지 확인합니다.
+1. **전역 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **계정** 으로 이동하여 가져온 데이터를 확인합니다. 두 개의 새 계정이 추가되었는지 확인합니다.
 
    ![두 개의 새 계정이 추가되었는지 확인합니다.](./batch-engine-api-basics/images/01.png)
 
@@ -127,7 +123,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 | `-u "test@liferay.com:learn"`                                                                                     | 기본 인증 자격 증명             |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html)을 통해 사용자를 인증해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](../using-oauth2/using-oauth2-to-authorize-users.md)을 참조하세요.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](../using-oauth2/using-oauth2-to-authorize-users.md)을 참조하세요.
 ```
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
@@ -362,7 +358,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) 은 모든 헤드리스 배치 엔진 서비스 및 스키마를 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 모든 헤드리스 배치 엔진 서비스 및 스키마를 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
 
 ## 추가 정보
 

@@ -1,7 +1,3 @@
----
-uuid: ef70f47a-a2c2-4371-95e0-e11c5107c60e
----
-
 # 청사진 구성 참조 검색
 
 검색 청사진 사용자 인터페이스에는 청사진 생성을 위한 쿼리 빌더가 있습니다. 요소를 추가하고 쿼리 설정을 구성하는 것 외에도 많은 블루프린트 사용 사례에 중요한 추가 구성이 있습니다. 이러한 구성으로 작업하려면 전역 메뉴 &rarr; 응용 프로그램 &rarr; 청사진으로 이동합니다. 새 청사진을 추가하거나 기존 청사진을 연 다음 _구성_ 탭을 클릭합니다.
@@ -54,7 +50,7 @@ uuid: ef70f47a-a2c2-4371-95e0-e11c5107c60e
 청사진에 하이라이트를 추가하려면,
 
 1. 청사진 편집기에서 _구성_ 탭을 클릭합니다.
-1. 하이라이트 구성 텍스트 영역을 찾아 유효한 JSON을 입력합니다. 속성 및 가능한 값은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/highlighting.html)에 자세히 설명되어 있습니다.
+1. 하이라이트 구성 텍스트 영역을 찾아 유효한 JSON을 입력합니다. 속성 및 가능한 값은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/highlighting.html) 에 자세히 설명되어 있습니다.
 
    ```json
    {
@@ -191,7 +187,7 @@ uuid: ef70f47a-a2c2-4371-95e0-e11c5107c60e
 
 
    ```{tip}
-   [하위 수준 검색 옵션](../../../search-pages-and-widgets/search-results/understanding-low-level-search-options)을 사용하여 검색 페이지에서 검색 컨텍스트 속성을 구성할 수 있습니다. md) 위젯입니다.
+   [하위 수준 검색 옵션](../../../search-pages-and-widgets/search-results/understanding-low-level-search-options) 을 사용하여 검색 페이지에서 검색 컨텍스트 속성을 구성할 수 있습니다. md) 위젯입니다.
    ```
 
 ## 고급 설정

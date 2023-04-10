@@ -1,4 +1,3 @@
-
 # Elasticsearch 모니터링
 
 {bdg-link-primary}`[LES 구독](./activating-liferay-enterprise-search.md)`
@@ -190,7 +189,7 @@ Kibana 및 LES 모니터링이 설치, 구성 및 실행되면 페이지에 Elas
 
 1. 위젯 검색창을 이용하여 **monitoring** 검색하고 **Elasticsearch Monitoring** 위젯을 검색 카테고리에서 페이지로 드래그합니다. Liferay DXP 7.2의 경우 위젯 이름은 **X-Pack Monitoring** 입니다.
 
-> 자세한 내용은 관련 Elasticsearch 설명서를 참조하십시오. [**클러스터 모니터링](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/es-monitoring.html**)[X-Pack 설정---클러스터 환경에서 모니터링 및 보안 모범 사례](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html)
+> 자세한 내용은 관련 Elasticsearch 설명서를 참조하십시오. [**클러스터 모니터링](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/es-monitoring.html**) [X-Pack 설정---클러스터 환경에서 모니터링 및 보안 모범 사례](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html)
 
 ## Kibana 구성 예
 

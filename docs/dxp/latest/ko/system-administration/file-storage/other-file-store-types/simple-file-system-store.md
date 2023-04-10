@@ -27,7 +27,7 @@
 * 서로 다른 `DLFileEntry` 테이블 열에 저장됩니다. 숫자 파일 항목 이름은 `이름` 열에 저장되고 문서 ID는 `fileEntryId` 열에 저장됩니다.
 
 ```{warning}
-문서 라이브러리에서 데이터베이스 트랜잭션 롤백이 발생하는 경우 트랜잭션의 파일 시스템 변경 사항은 되돌릴 **아닙니다**. 문서 라이브러리 파일과 파일 시스템 저장소의 파일 간에 불일치가 발생할 수 있으며 수동 동기화가 필요할 수 있습니다. [DBStore](./dbstore.md) 을 제외한 모든 DXP 저장소는 이 제한에 취약합니다.
+문서 라이브러리에서 데이터베이스 트랜잭션 롤백이 발생하는 경우 트랜잭션의 파일 시스템 변경 사항은 되돌릴 **아닙니다**. 문서 라이브러리 파일과 파일 시스템 저장소의 파일 간에 불일치가 발생할 수 있으며 수동 동기화가 필요할 수 있습니다. [디비스토어](./dbstore.md) 을 제외한 모든 DXP 저장소는 이 제한에 취약합니다.
 ```
 
 ## 상점 구성
@@ -63,5 +63,5 @@ dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
 
 * [파일 스토리지](../../file-storage.md)
 * [Amazon S3 Store](./amazon-s3-store.md)
-* [DBStore](./dbstore.md)
+* [디비스토어](./dbstore.md)
 * [파일 저장소 마이그레이션](../file-store-migration.md)

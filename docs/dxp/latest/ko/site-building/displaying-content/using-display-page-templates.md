@@ -25,7 +25,7 @@ using-display-page-templates/configuring-seo-and-open-graph.md
 
 ![전용 URL에 콘텐츠를 표시하기 위한 표시 페이지 템플릿을 만듭니다.](./using-display-page-templates/images/01.png)
 
-표시 페이지 템플릿을 만들 때 콘텐츠 유형(예: 웹 콘텐츠 기사, 문서, 블로그 항목)을 선택하여 시작합니다. 이는 표시 페이지를 렌더링하기 위해 템플릿을 사용할 수 있는 콘텐츠 항목을 결정합니다. 그런 다음 콘텐츠 페이지와 동일한 UI 및 디자인 요소를 사용하여 템플릿을 디자인할 수 있습니다. 즉, 페이지 [fragments](../creating-pages/page-fragments-and-widgets/using-fragments.md) 및 [widgets](../creating-pages/using-content-pages/using-widgets-on)을 사용할 수 있습니다. -a-content-page.md) 콘텐츠 필드에 매핑하고 추가 기능을 통합하는 동적 디스플레이를 구축합니다. 또한 [SEO 설정](./using-display-page-templates/configuring-seo-and-open-graph.md)을 정의하여 페이지의 검색 순위를 높일 수 있습니다.
+표시 페이지 템플릿을 만들 때 콘텐츠 유형(예: 웹 콘텐츠 기사, 문서, 블로그 항목)을 선택하여 시작합니다. 이는 표시 페이지를 렌더링하기 위해 템플릿을 사용할 수 있는 콘텐츠 항목을 결정합니다. 그런 다음 콘텐츠 페이지와 동일한 UI 및 디자인 요소를 사용하여 템플릿을 디자인할 수 있습니다. 즉, 페이지 [fragments](../creating-pages/page-fragments-and-widgets/using-fragments.md) 및 [widgets](../creating-pages/using-content-pages/using-widgets-on) 을 사용할 수 있습니다. -a-content-page.md) 콘텐츠 필드에 매핑하고 추가 기능을 통합하는 동적 디스플레이를 구축합니다. 또한 [SEO 설정](./using-display-page-templates/configuring-seo-and-open-graph.md)을 정의하여 페이지의 검색 순위를 높일 수 있습니다.
 
 템플릿을 디자인한 후 콘텐츠 유형을 표시하기 위한 기본 템플릿으로 만들거나 일부 콘텐츠 항목만 사용하도록 수동으로 구성할 수 있습니다. 일단 설정되면 사용자는 친숙한 URL을 방문하여 콘텐츠 항목의 표시 페이지를 볼 수 있습니다. 콘텐츠는 템플릿 디자인에 따라 동적으로 렌더링됩니다.
 

@@ -1,7 +1,3 @@
----
-uuid: 891409db-2dab-4236-b174-b8576e6a21c0
----
-
 # 예제 CCR 설치 구성: 데이터 센터 간 복제
 
 > **Liferay 엔터프라이즈 검색(LES) 가입자**
@@ -16,7 +12,7 @@ Liferay DXP 7.1, 7.2 및 7.3 간의 구성 및 절차의 차이점은 이 지침
 
 각각 동일한 인덱스의 복사본이 있는 `localhost`에서 두 개의 단일 노드 Elasticsearch 클러스터를 사용합니다. 이것은 클러스터 간 복제의 데이터 지역성과 재해 복구 이점을 얻기 위해 구성할 수 있는 가장 간단한 시나리오입니다.
 
-바닐라 Liferay DXP 설치에는 [Cross Cluster Replication](./cross-cluster-replication.md#liferay-dxp-decide-which-indexes-to-replicate-from-the-remote-cluster)에 제시된 인덱스가 포함되어 있습니다. Liferay DXP에서 사용하는 모든 Elasticsearch 클러스터(이 예에서는 두 개의 클러스터)에는 이러한 인덱스가 필요합니다.
+바닐라 Liferay DXP 설치에는 [Cross Cluster Replication](./cross-cluster-replication.md#liferay-dxp-decide-which-indexes-to-replicate-from-the-remote-cluster) 에 제시된 인덱스가 포함되어 있습니다. Liferay DXP에서 사용하는 모든 Elasticsearch 클러스터(이 예에서는 두 개의 클러스터)에는 이러한 인덱스가 필요합니다.
 
 여기에서 제공되는 Elasticsearch API 호출은 별도의 Kibana 설치 또는 [LES 모니터링 위젯](../monitoring-elasticsearch.md)을 통해 액세스할 수 있는 Kibana의 Dev Tools 콘솔에 복사 및 붙여넣기할 수 있습니다.
 
@@ -36,7 +32,7 @@ cluster.link.enabled=true
 
 ## 필수 Elasticsearch 플러그인 설치
 
-필요한 Elasticsearch [플러그인](../../installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md#install-elasticsearch)을 설치했는지 확인하십시오.
+필요한 Elasticsearch [플러그인](../../installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md#install-elasticsearch) 을 설치했는지 확인하십시오.
 
 - `analysis-icu`
 - `analysis-stempel`
@@ -67,7 +63,7 @@ cluster.link.enabled=true
 
 Liferay DXP 7.4부터 Liferay Enterprise Search(LES) 애플리케이션이 모든 Liferay DXP 번들 및 Docker 컨테이너에 포함됩니다. 따라서 Liferay DXP 7.4+에서는 LPKG를 설치할 필요가 없습니다. 자세한 내용은 [LES](../activating-liferay-enterprise-search.md) 활성화를 참조하십시오.
 
-1. [LES 다운로드 페이지](https://customer.liferay.com/downloads)에서 Elasticsearch LPKG용 Liferay DXP 클러스터 간 복제를 다운로드합니다.
+1. [LES 다운로드 페이지](https://customer.liferay.com/downloads) 에서 Elasticsearch LPKG용 Liferay DXP 클러스터 간 복제를 다운로드합니다.
 
 1. [모든 DXP 노드에 LPKG](../../../system-administration/installing-and-managing-apps/installing-apps.md) 설치합니다.
 

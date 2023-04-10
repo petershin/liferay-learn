@@ -1,10 +1,6 @@
----
-uuid: faa4a458-c7c6-4b61-a08f-37cb58873c58
----
-
 # 원격 라이브 스테이징 구성
 
-*원격 라이브 스테이징*사용하면 스테이징 및 라이브 환경이 별도의 Liferay 서버에서 호스팅됩니다. 활성화되면 스테이징 구성에 사용된 사이트 또는 자산 라이브러리가 스테이징 환경이 되고 원격 서버가 라이브 환경이 됩니다.
+**원격 라이브 스테이징** 사용하면 스테이징 및 라이브 환경이 별도의 Liferay 서버에서 호스팅됩니다. 활성화되면 스테이징 구성에 사용된 사이트 또는 자산 라이브러리가 스테이징 환경이 되고 원격 서버가 라이브 환경이 됩니다.
 
 원격 라이브 스테이징을 활성화하기 전에 스테이징 및 라이브 환경에 사용할 Liferay 서버를 구성해야 합니다. 또한 원격 서버에 빈 사이트 또는 자산 라이브러리를 새로 만들고 스테이징 구성 중에 해당 ID를 사용해야 합니다.
 
@@ -23,11 +19,11 @@ uuid: faa4a458-c7c6-4b61-a08f-37cb58873c58
 
    사용 가능한 암호화 알고리즘은 다음 키 길이를 지원합니다.
 
-   **AES**: 128, 192 및 256비트 키
+   **AES** : 128, 192 및 256비트 키
 
-   **복어**: 32 - 448비트 키
+   **복어** : 32 - 448비트 키
 
-   **DESede(트리플 DES)**: 112 또는 168비트 키. Liferay의 최소 키 길이는 56비트 키를 지원하지 않습니다. <!--Does this limit apply to Blowfish?-->
+   **DESede(트리플 DES**) : 112 또는 168비트 키. Liferay의 최소 키 길이는 56비트 키를 지원하지 않습니다. <!--Does this limit apply to Blowfish?-->
 
 1. 각 서버의 `portal-ext.properties` 파일에 다음 속성을 추가하여 각 서버를 다른 서버의 허용된 서버 목록에 추가합니다.
 
@@ -41,16 +37,16 @@ uuid: faa4a458-c7c6-4b61-a08f-37cb58873c58
    IPv6 주소의 유효성을 검사하는 경우 IPv4 주소를 강제로 사용하지 않도록 앱 서버의 JVM을 구성해야 합니다. 예를 들어 Tomcat을 사용하는 경우 `$TOMCAT_HOME\bin\setenv.[bat|sh]` 파일에 `-Djava.net.preferIPv4Stack=false` 속성을 추가합니다.
    ```
 
-1. 원격 인스턴스의 *터널 인증 확인자 구성*을 업데이트합니다.
+1. 원격 인스턴스의 **터널 인증 확인자 구성** 을 업데이트합니다.
 
-   이렇게 하려면 *제어판* &rarr; *구성* &rarr; *시스템 설정* &rarr; *API 인증* &rarr; *터널 인증*으로 이동하십시오.
+   이렇게 하려면 **제어판** &rarr; **구성** &rarr; **시스템 설정** &rarr; **API 인증** &rarr; **터널 인증** 으로 이동하십시오.
 
-   */api/liferay/do* 클릭하고 *Hosts Allowed* 필드에 사용 중인 추가 IP 주소를 삽입합니다. 완료되면 *업데이트*을 클릭합니다.
+   **/api/liferay/do** 클릭하고 **Hosts Allowed** 필드에 사용 중인 추가 IP 주소를 삽입합니다. 완료되면 **업데이트** 을 클릭합니다.
 
    ![제어판을 통해 원격 인스턴스의 터널 인증 확인자 구성을 업데이트합니다.](./configuring-remote-live-staging/images/01.png)
 
    ```{note}
-   기본적으로 활성화되어 있는 동안 각 Liferay 서버의 터널링 서블릿[인증 검증자](../../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md ) 사용 가능.
+   기본적으로 활성화되어 있는 동안 각 Liferay 서버의 터널링 서블릿 [인증 검증자](../../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md ) 사용 가능.
    ```
 
    또는 이 구성을 Liferay 인스턴스의 OSGi 파일에 작성할 수 있습니다(예: `osgi/configs/com.liferay.portal.security.auth.verifier.tunnel.module.configuration.TunnelAuthVerifierConfiguration-default.config`):
@@ -76,39 +72,39 @@ Liferay 서버를 준비했으면 다음 단계에 따라 사이트 또는 자�
 
 1. 사이트 또는 자산 라이브러리에서 스테이징 애플리케이션을 엽니다.
 
-   사이트의 경우 *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png)) &rarr; *게시* &rarr; *준비*로 이동합니다.
+   사이트의 경우 **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png)) &rarr; **게시** &rarr; **준비** 로 이동합니다.
 
-   Asset Libraries의 경우 *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Applications 탭* &rarr; *Asset Libraries*로 이동합니다. 그런 다음 원하는 자산 라이브러리를 열고 게시에서 *준비* 클릭합니다.
+   Asset Libraries의 경우 **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **Applications 탭** &rarr; **Asset Libraries** 로 이동합니다. 그런 다음 원하는 자산 라이브러리를 열고 게시에서 **준비** 클릭합니다.
 
-1. *원격 라이브*선택합니다. 그러면 추가 구성 필드가 나타납니다.
+1. **원격 라이브** 선택합니다. 그러면 추가 구성 필드가 나타납니다.
 
    ![원격 라이브 스테이징을 선택합니다.](./configuring-remote-live-staging/images/02.png)
 
 1. 다음 원격 라이브 연결 세부 정보를 입력합니다.
 
-   **원격 호스트/IP**: *원격 호스트/IP* 필드에 원격 서버의 IP 주소를 입력합니다. 이는 `portal-ext.properties` 파일에 지정된 `tunnel.servlet.hosts.allowed` 속성과 일치해야 합니다.
+   **원격 호스트/IP** : **원격 호스트/IP** 필드에 원격 서버의 IP 주소를 입력합니다. 이는 `portal-ext.properties` 파일에 지정된 `tunnel.servlet.hosts.allowed` 속성과 일치해야 합니다.
 
-   **원격 포트**: 원격 DXP 인스턴스의 포트를 *원격 포트* 필드에 입력합니다.
+   **원격 포트** : 원격 DXP 인스턴스의 포트를 **원격 포트** 필드에 입력합니다.
 
-   **원격 경로 컨텍스트**: *원격 경로 컨텍스트 입력*. 루트가 아닌 포털 서블릿 컨텍스트 경로가 원격 Liferay 서버에서 사용되는 경우에만 필요합니다. 이 컨텍스트에 대한 액세스는 프록시나 방화벽에 의해 차단되어서는 안 됩니다.
+   **원격 경로 컨텍스트** : **원격 경로 컨텍스트 입력** . 루트가 아닌 포털 서블릿 컨텍스트 경로가 원격 Liferay 서버에서 사용되는 경우에만 필요합니다. 이 컨텍스트에 대한 액세스는 프록시나 방화벽에 의해 차단되어서는 안 됩니다.
 
-   **원격 사이트 ID**/**원격 자산 라이브러리 ID**: 원하는 대상에 대해 *사이트 ID*/*자산 라이브러리 ID* 입력합니다.
+   **원격 사이트 ID** / **원격 자산 라이브러리 ID** : 원하는 대상에 대해 **사이트 ID** / **자산 라이브러리 ID** 입력합니다.
 
    ```{note}
    IPv6 주소를 구성하는 경우 *Remote Host/IP* 필드에 입력할 때 대괄호를 포함해야 합니다(예: [0:0:0:0:0:0:0:1]).
 
-   원격 서버가 클러스터인 경우 원격 호스트/IP를 클러스터의 부하 분산된 IP 주소로 설정하여 게시 프로세스의 가용성을 높일 수 있습니다. 자세한 내용은 [클러스터 환경에서 원격 스테이징 구성](https://help.liferay.com/hc/en-us/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment)을 참조하십시오.
+   원격 서버가 클러스터인 경우 원격 호스트/IP를 클러스터의 부하 분산된 IP 주소로 설정하여 게시 프로세스의 가용성을 높일 수 있습니다. 자세한 내용은 [클러스터 환경에서 원격 스테이징 구성](https://help.liferay.com/hc/ko/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment) 을 참조하십시오.
    ```
 
 1. 스테이징에서 라이브로 페이지를 게시하기 위해 보안 네트워크 연결(즉, HTTPS)을 사용할지 여부를 결정합니다.
 
 1. 사이트 또는 자산 라이브러리에 사용되는 원격 URL을 수동으로 정의할지 여부를 결정합니다.
 
-1. (사이트 전용) *페이지 버전 관리* 활성화 여부를 선택합니다.
+1. (사이트 전용)**페이지 버전 관리** 활성화 여부를 선택합니다.
 
    ![페이지 버전 관리를 활성화합니다.](./configuring-local-live-staging/images/03.png)
 
-1. 준비하려는 *데이터* 및 *콘텐츠* 유형을 선택합니다.
+1. 준비하려는 **데이터** 및 **콘텐츠** 유형을 선택합니다.
 
    자산 라이브러리는 문서, 미디어 및 웹 콘텐츠 애플리케이션에 대한 스테이징 데이터만 지원합니다.
 
@@ -120,7 +116,7 @@ Liferay 서버를 준비했으면 다음 단계에 따라 사이트 또는 자�
    응용 프로그램이 확인되면 해당 데이터가 복사되며 라이브 사이트에서 직접 편집하지 못할 수 있습니다. 응용 프로그램을 선택 해제할 때 스테이징의 변경 사항이 손실될 수 있으므로 먼저 게시되었는지 확인하십시오. 자세한 내용은 [스테이징에서 데이터 및 콘텐츠 유형 관리](./managing-data-and-content-types-in-staging.md)를 참조하세요.
    ```
 
-1. 스테이징 프로세스를 시작하려면 *저장* 클릭하십시오. 이 프로세스의 기간은 사이트 또는 자산 라이브러리의 크기에 따라 다릅니다.
+1. 스테이징 프로세스를 시작하려면 **저장** 클릭하십시오. 이 프로세스의 기간은 사이트 또는 자산 라이브러리의 크기에 따라 다릅니다.
 
    ```{note}
    원격 라이브 스테이징 활성화 시도가 실패하면 서버를 제대로 준비했는지 확인하십시오.
@@ -160,11 +156,11 @@ staging.remote.transfer.buffer.size
 
 1. 사이트 또는 자산 라이브러리에서 스테이징 애플리케이션을 엽니다.
 
-1. 응용 프로그램 표시줄에 있는 *작업* 버튼( ![Actions button](../../../images/icon-actions.png) )을 클릭하고 *스테이징 구성*선택합니다.
+1. 응용 프로그램 표시줄에 있는 **작업** 버튼( ![Actions button](../../../images/icon-actions.png) )을 클릭하고 **스테이징 구성** 선택합니다.
 
    ![애플리케이션 표시줄에서 작업 버튼을 클릭하고 스테이징 구성을 선택합니다.](./configuring-remote-live-staging/images/05.png)
 
-1. 스테이징 구성에 대해 *없음* 선택하고 *저장*클릭합니다.
+1. 스테이징 구성에 대해 **없음** 선택하고 **저장** 클릭합니다.
 
 ## 추가 정보
 

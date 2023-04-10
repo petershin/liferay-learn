@@ -1,4 +1,3 @@
-
 # 표시 페이지 템플릿 생성 및 관리
 
 {bdg-secondary}`사용 가능한 Liferay DXP/Portal 7.3+`

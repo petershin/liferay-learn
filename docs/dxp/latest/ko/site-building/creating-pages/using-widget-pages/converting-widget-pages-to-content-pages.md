@@ -1,7 +1,3 @@
----
-uuid: 7da80e15-5bb6-4751-ad80-fa8465581172
----
-
 # 위젯 페이지를 콘텐츠 페이지로 변환
 
 이전 버전에서 Widget Pages는 사용자 지정 레이아웃 및 사용자 지정 가능한 열과 같은 독점 기능을 제공했습니다. 이러한 독점 기능 중 다수는 7.3 이상의 [콘텐츠 페이지](../using-content-pages.md) 에서 사용할 수 있으므로 대부분의 경우 콘텐츠 페이지를 만들고 싶을 것입니다.
@@ -14,13 +10,13 @@ uuid: 7da80e15-5bb6-4751-ad80-fa8465581172
 
 위젯 페이지를 변환하기 전에 변환 초안을 미리 보려면 다음 단계를 따르십시오.
 
-1. Liferay DXP 메뉴를 열고 사이트 메뉴에서 *Site Builder* &rarr; *Pages* 로 이동합니다.
+1. Liferay DXP 메뉴를 열고 사이트 메뉴에서 **Site Builder** &rarr; **Pages** 로 이동합니다.
 
-1. 위젯 페이지 옆에 있는 작업 메뉴(![Actions](../../../../images/icon-actions.png))를 열고 *미리보기 및 콘텐츠 페이지로 변환* 옵션을 선택합니다.
+1. 위젯 페이지 옆에 있는 작업 메뉴(![Actions](../../../../images/icon-actions.png))를 열고 **미리보기 및 콘텐츠 페이지로 변환** 옵션을 선택합니다.
 
 1. 모든 경고를 확인하고 변환 초안을 필요한 대로 조정합니다. 이 시점에서 원하는 조각을 초안에 추가할 수도 있습니다.
 
-1. *Publish* 클릭하여 미리보기 초안을 게시하거나 *Discard Conversion Draft* 클릭하여 위젯 페이지를 원래 상태로 재설정합니다. 경고가 있는 경우 아래 설명된 대로 최선의 변환이 완료됩니다.
+1. **Publish** 클릭하여 미리보기 초안을 게시하거나 **Discard Conversion Draft** 클릭하여 위젯 페이지를 원래 상태로 재설정합니다. 경고가 있는 경우 아래 설명된 대로 최선의 변환이 완료됩니다.
 
 ### 최선의 전환
 
@@ -37,26 +33,26 @@ uuid: 7da80e15-5bb6-4751-ad80-fa8465581172
 ```
 
 ```{note}
-포틀릿은 위젯 페이지에서 [render-weight](https://docs.liferay.com/ce/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight)에 따라 렌더링되지만 이는 사실이 아닙니다. 콘텐츠 페이지의 경우. 포틀릿은 콘텐츠 페이지의 페이지에 나타나는 순서대로(즉, 왼쪽에서 오른쪽으로, 위에서 아래로) 렌더링되므로 일부 포틀릿은 콘텐츠 페이지에서의 위치에 따라 조만간 렌더링될 수 있습니다.
+포틀릿은 위젯 페이지에서 [render-weight](https://docs.liferay.com/ce/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) 에 따라 렌더링되지만 이는 사실이 아닙니다. 콘텐츠 페이지의 경우. 포틀릿은 콘텐츠 페이지의 페이지에 나타나는 순서대로(즉, 왼쪽에서 오른쪽으로, 위에서 아래로) 렌더링되므로 일부 포틀릿은 콘텐츠 페이지에서의 위치에 따라 조만간 렌더링될 수 있습니다.
 ```
 
 ## 위젯 페이지를 콘텐츠 페이지로 직접 변환
 
 미리보기 없이 위젯 페이지를 콘텐츠 페이지로 변환하려면 다음 단계를 따르세요.
 
-1. Liferay DXP 메뉴를 열고 사이트 메뉴에서 *Site Builder* &rarr; *Pages* 로 이동합니다.
+1. Liferay DXP 메뉴를 열고 사이트 메뉴에서 **Site Builder** &rarr; **Pages** 로 이동합니다.
 
-1. 위젯 페이지 또는 여러 위젯 페이지의 확인란을 선택합니다. 관리 도구 모음에서 *작업* 메뉴를 열고 *콘텐츠 페이지로 변환* 옵션을 선택합니다.
+1. 위젯 페이지 또는 여러 위젯 페이지의 확인란을 선택합니다. 관리 도구 모음에서 **작업** 메뉴를 열고 **콘텐츠 페이지로 변환** 옵션을 선택합니다.
 
    ![컨텍스트 메뉴를 통해 여러 위젯 페이지를 변환할 수 있습니다.](./converting-widget-pages-to-content-pages/images/01.png)
 
-1. 변환을 완료하기 위해 나타나는 프롬프트에서 *확인* 클릭합니다.
+1. 변환을 완료하기 위해 나타나는 프롬프트에서 **확인** 클릭합니다.
 
 ## API를 사용하여 모든 위젯 페이지를 콘텐츠 페이지로 대량 변환
 
 내장된 스크립트 편집기를 사용하여 사이트의 모든 위젯 페이지를 콘텐츠 페이지로 일괄 변환할 수 있습니다.
 
-1. Liferay DXP 메뉴를 열고 *제어판* &rarr; *구성* &rarr; *서버 관리* &rarr; *스크립트*으로 이동합니다.
+1. Liferay DXP 메뉴를 열고 **제어판** &rarr; **구성** &rarr; **서버 관리** &rarr; **스크립트** 으로 이동합니다.
 
 1. 스크립트 창에 이 스크립트를 입력하고 그룹 ID를 자신의 ID로 바꾸십시오. Groovy 스크립트는 [`BulkLayoutConverter` 인터페이스](https://docs.liferay.com/dxp/portal/7.3-latest/apps/layout-3.0.0/javadocs/com/liferay/layout/util/BulkLayoutConverter.html) 사용하여 지정된 그룹 ID가 있는 모든 위젯 페이지를 콘텐츠 페이지로 변환합니다.
 
@@ -91,7 +87,7 @@ uuid: 7da80e15-5bb6-4751-ad80-fa8465581172
     out.println("Convertible layouts after conversion: " + ArrayUtil.toStringArray(plids))
     ```
 
-1. *실행* 클릭하여 스크립트를 실행합니다.
+1. **실행** 클릭하여 스크립트를 실행합니다.
 
 1. 변환 가능한 레이아웃(페이지)이 남아 있지 않음을 보여 주는 출력은 아래 스니펫과 유사해야 합니다.
 

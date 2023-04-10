@@ -1,4 +1,3 @@
-
 # 페이지 조각에서 사용자 정의 필드 사용
 
 Liferay의 사용자 또는 페이지에 [사용자 정의 필드](../../../system-administration/configuring-liferay/adding-custom-fields.md) 을 추가한 경우 조각으로 액세스할 수 있습니다. 페이지 사용자 정의 필드의 값을 얻으려면 다음을 사용하십시오.

@@ -1,7 +1,3 @@
----
-uuid: 5db29a70-07cb-44a5-be7d-a8c06ae94401
----
-
 # 조각 구성 유형 참조
 
 이 참조는 프래그먼트에 사용 가능한 구성 유형을 나열합니다. 프래그먼트를 구성 가능하게 만드는 방법에 대한 자세한 내용은 [프래그먼트에 구성 옵션 추가](../../developing-page-fragments/adding-configuration-options-to-fragments.md) 을 참조하십시오.
@@ -116,9 +112,9 @@ FreeMarker 컨텍스트에 삽입된 구성 값은 JSON 파일에 지정된 정�
 
 * 텍스트 상자에 색상의 16진수 코드를 입력합니다.
 
-* *스타일북의 값* 버튼을 클릭하면 현재 사용 중인 [스타일북](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)에 정의된 미리 정의된 색상 메뉴가 열립니다. 그러면 단추를 다시 눌러 연결을 해제할 때까지 필드 값이 선택한 토큰에 연결됩니다. 토큰 값의 연결을 해제하면 선택한 색상이 해당하는 16진수 코드 값으로 다시 변환됩니다.
+* **스타일북의 값** 버튼을 클릭하면 현재 사용 중인 [스타일북](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)에 정의된 미리 정의된 색상 메뉴가 열립니다. 그러면 단추를 다시 눌러 연결을 해제할 때까지 필드 값이 선택한 토큰에 연결됩니다. 토큰 값의 연결을 해제하면 선택한 색상이 해당하는 16진수 코드 값으로 다시 변환됩니다.
 
-* 색상 선택기에 정의된 기본값이 없는 경우 *기본값* 드롭다운 메뉴를 클릭하여 현재 사용 중인 스타일 북에서 색상을 선택합니다. 이것은 값을 선택할 때 Stylebook의 값 단추와 동일하게 작동합니다.
+* 색상 선택기에 정의된 기본값이 없는 경우 **기본값** 드롭다운 메뉴를 클릭하여 현재 사용 중인 스타일 북에서 색상을 선택합니다. 이것은 값을 선택할 때 Stylebook의 값 단추와 동일하게 작동합니다.
 
 ![색상 선택기 구성을 사용하면 색상 값을 직접 입력하거나 범위에서 선택하거나 스타일 북에서 선택할 수 있습니다.](./fragment-configuration-types-reference/images/02.png)
 
@@ -387,7 +383,7 @@ FreeMarker 컨텍스트에 삽입된 구성 값은 JSON 파일에 지정된 정�
 `collectionSelector` 구성 유형을 사용하여 [컬렉션](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) 또는 컬렉션 공급자를 포함하는 프래그먼트를 개발할 수 있습니다. 수동 및 동적 컬렉션 모두에서 `collectionSelector` 을 사용할 수 있습니다.
 
 ```{note}
-개발자는 컬렉션 공급자를 사용하여 고급 기준으로 특정 컬렉션을 만들 수 있습니다. 자세히 알아보려면 [정보 목록 제공자 만들기](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider)에 대한 정보를 읽어보십시오. 프레임워크](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서.
+개발자는 컬렉션 공급자를 사용하여 고급 기준으로 특정 컬렉션을 만들 수 있습니다. 자세히 알아보려면 [정보 목록 제공자 만들기](https://help.liferay.com/hc/ko/articles/360029067271-Creating-an-Information-List-Provider) 에 대한 정보를 읽어보십시오. 프레임워크](https://help.liferay.com/hc/ko/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서.
 ```
 
 다음 JSON 구성은 `collectionSelector`을 사용하는 방법을 보여줍니다.
@@ -460,7 +456,7 @@ HTML에서 이 콜렉션을 참조하려면 JSON 구성에서 콜렉션 `이름`
 
 ## 색상 팔레트 구성
 
-색상표 JSON 구성은 색상을 선택해야 하는 경우에 구현할 수 있는 색상 선택기를 만듭니다. [color picker 구성](#color-picker-configuration)과 달리 현재 사용하고 있는 [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)의 색상 체계에 구성된 테마 색상을 기반으로 한 옵션만 제공합니다.
+색상표 JSON 구성은 색상을 선택해야 하는 경우에 구현할 수 있는 색상 선택기를 만듭니다. [color picker 구성](#color-picker-configuration) 과 달리 현재 사용하고 있는 [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)의 색상 체계에 구성된 테마 색상을 기반으로 한 옵션만 제공합니다.
 
 이 구성은 `textColor`이라는 색상 팔레트 필드를 만듭니다.
 

@@ -1,7 +1,3 @@
----
-uuid: b6d54fc8-344a-4595-954b-10be35f1ce47
----
-
 # 검색 청사진에서 결과 정렬
 
 검색 결과의 순서를 제어하기 위해 Blueprint를 검색하기 위해 [정렬 구성](./search-blueprints-configuration-reference.md#sort-configuration) 추가합니다.
@@ -19,7 +15,7 @@ uuid: b6d54fc8-344a-4595-954b-10be35f1ce47
 
 * 아래 예시는 간단합니다. 강력한 정렬 구성은 모든 시나리오를 고려해야 합니다. 예를 들어 검색 결과 문서에 정렬 필드가 없으면 [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results .html#_missing_values) 매개변수를 사용하여 정렬 동작을 구성합니다.
 
-   자세한 내용은 [Elasticsearch의 정렬 문서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html)를 참조하세요.
+   자세한 내용은 [Elasticsearch의 정렬 문서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html) 를 참조하세요.
 ```
 
 ## 예 1: 제목으로 정렬

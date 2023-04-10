@@ -252,8 +252,8 @@ DXP 콘텐츠 인덱싱 시작:
 
 1. 인덱스 작업 탭에서 다음 옵션을 클릭합니다.
 
-    .* **모든 수색 색인을Reindex**
-    .* **모든 수색 색인을Reindex**
+    * **모든 수색 색인을Reindex**
+    * **모든 수색 색인을Reindex**
 
 콘텐츠는 검색 엔진에 색인을 생성합니다. 자세한 내용은 [검색 개요](../../../using-search/getting-started/search-overview.md) 을 참조하십시오.
 
@@ -286,13 +286,13 @@ DXP 클러스터에 대해 [데이터베이스](./database-configuration-for-clu
 | LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_JNDI_PERIOD_NAME= | 데이터 소스 JNDI 이름 |
 | LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_DRIVER_UPPERCASEC_LASS\\<br>_UPPERCASEN_AME=\\<br>org.mariadb.jdbc.Driver | 데이터베이스 드라이버 클래스 |
 | LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_URL=\\<br>jdbc:mariadb://some-mariadb:3306/dxp_db?\\<br>useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false | 데이터 소스 URL |
-| LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME=\\<br>루트 | 데이터베이스 관리자 사용자 이름 |
+| LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME=\\<br>root | 데이터베이스 관리자 사용자 이름 |
 | LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD=\\<br>my-secret-pw | 데이터베이스 관리자 사용자 비밀번호 |
-| LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_ENABLED=\\<br>참 | 클러스터 링크 활성화 |
+| LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_ENABLED=\\<br>true | 클러스터 링크 활성화  |
 | LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_CHANNEL_PERIOD_LOGIC_PERIOD_NAME\\<br>_PERIOD_CONTROL=\\<br>control-channel-logic-name-2 | 클러스터 노드의 고유 제어 채널 이름 |
 | LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_CHANNEL_PERIOD_LOGIC_PERIOD_NAME\\<br>_PERIOD_TRANSPORT_PERIOD_NUMBER0=\\<br>transport-channel-logic-name-2 | 클러스터 노드의 고유 전송 채널 이름 |
 | LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_AUTODETECT_PERIOD_ADDRESS=\\<br>some-mariadb:3306 | 클러스터 노드 주소를 얻기 위해 ping할 알려진 주소 |
-| LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=\\<br>참 | 서버 주소 및 웹 서버 포트 표시 |
+| LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=\\<br>true | 서버 주소 및 웹 서버 포트를 표시합니다. |
 | LIFERAY_DL_PERIOD_STORE_PERIOD_IMPL=\\<br>com.liferay.portal.store.db.DBStore | 파일 저장소(문서 라이브러리 저장소) 클래스 |
 
 자세한 내용은 Env/ [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 정의를 참조하십시오.

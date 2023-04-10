@@ -1,7 +1,3 @@
----
-uuid: 7b3a2c98-4dcc-4e82-814d-d50ba40070c5
----
-
 # API 쿼리 매개변수
 
 [REST API](./consuming-rest-services.md) 또는 [GraphQL API](./consuming-graphql-apis.md)사용하든 응답을 필터링하는 데 도움이 되는 다양한 쿼리 매개변수를 사용할 수 있습니다.
@@ -216,7 +212,7 @@ JSON 응답:
 
 **연산자 조합 및 OData 구문**
 
-구문 예제 및 기타 연산자 조합은 [OData 표준 참조](https://docs.oasis-open.org/odata/odata/v4.01/csprd06/part1-protocol/odata-v4.01-csprd06-part1-protocol.html#sec_BuiltinFilterOperations)에서 다룹니다.
+구문 예제 및 기타 연산자 조합은 [OData 표준 참조](https://docs.oasis-open.org/odata/odata/v4.01/csprd06/part1-protocol/odata-v4.01-csprd06-part1-protocol.html#sec_BuiltinFilterOperations) 에서 다룹니다.
 
 ## 편평화 매개변수
 

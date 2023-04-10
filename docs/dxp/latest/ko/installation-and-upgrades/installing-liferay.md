@@ -5,7 +5,6 @@ toc:
   - ./installing-liferay/running-liferay-for-the-first-time.md
   - ./installing-liferay/using-liferay-docker-images.md
   - ./installing-liferay/installing-liferay-on-an-application-server.md
-uuid: 8a2fb4d4-cef3-4dee-9c4a-7f8aa819a695
 ---
 
 # 라이프레이 설치
@@ -33,9 +32,9 @@ Liferay Tomcat 번들은 모든 서버에 압축을 풀고 구성하고 실행�
 물론 온프레미스에서 지원되는 모든 애플리케이션 서버에 Liferay를 항상 설치할 수 있습니다. 
 
 ```{note}
-기업 가입자는 Liferay Cloud에서 [Liferay DXP를 서비스로 배포](https://learn.liferay.com/en/w/liferay-cloud/using-the-liferay-dxp-service)할 수 있습니다. Liferay Cloud는 인프라 비용(하드웨어, 전기 요금)을 줄이고, 더 많은 고객을 처리할 수 있도록 빠르게 확장하고, 시장 출시 시간을 단축하고, 사용하기 쉽습니다.
+기업 가입자는 Liferay Cloud에서 [Liferay DXP를 서비스로 배포](https://learn.liferay.com/en/w/liferay-cloud/using-the-liferay-dxp-service) 할 수 있습니다. Liferay Cloud는 인프라 비용(하드웨어, 전기 요금)을 줄이고, 더 많은 고객을 처리할 수 있도록 빠르게 확장하고, 시장 출시 시간을 단축하고, 사용하기 쉽습니다.
 
-Liferay Cloud에 관심이 있으시면 Liferay Cloud [제품 정보](https://www.liferay.com/products/dxp-cloud)를 참조하거나 Liferay 담당자에게 문의하십시오.
+Liferay Cloud에 관심이 있으시면 Liferay Cloud [제품 정보](https://www.liferay.com/products/dxp-cloud) 를 참조하거나 Liferay 담당자에게 문의하십시오.
 ```
 
 자신의 컴퓨터에서 Liferay를 개발하려면 다음과 같은 편리한 옵션을 고려하십시오.
@@ -54,16 +53,16 @@ Liferay Tomcat 번들은 Liferay가 Tomcat에 사전 설치된 ZIP 파일입니�
 번들을 시작하려면 [Liferay Tomcat 번들 설치](./installing-liferay/installing-a-liferay-tomcat-bundle.md)을 참조하십시오.
 
 ```{warning}
-Docker 이미지 및 Tomcat 번들에서 Liferay는 기본적으로 임베디드 HSQL 데이터베이스를 사용하도록 구성됩니다. 시연 목적 외에도 모든 기능을 갖춘 [지원되는 RDBMS](https://help.liferay.com/hc/en-us/articles/360049238151)를 사용하는 것이 좋습니다. 구성 지침은 [데이터베이스 구성](./reference/database-configurations.md)을 참조하십시오.
+Docker 이미지 및 Tomcat 번들에서 Liferay는 기본적으로 임베디드 HSQL 데이터베이스를 사용하도록 구성됩니다. 시연 목적 외에도 모든 기능을 갖춘 [지원되는 RDBMS](https://help.liferay.com/hc/ko/articles/360049238151) 를 사용하는 것이 좋습니다. 구성 지침은 [데이터베이스 구성](./reference/database-configurations.md)을 참조하십시오.
 ```
 
 ## 애플리케이션 서버에 Liferay 설치
 
-지원되는 모든 [애플리케이션 서버](https://help.liferay.com/hc/en-us/articles/360049238151)에 Liferay를 설치할 수 있습니다. 이것은 일반적으로 DevOps 및 고가용성 환경에서 사용하기에 가장 실용적인 설치 유형입니다.
+지원되는 모든 [애플리케이션 서버](https://help.liferay.com/hc/ko/articles/360049238151) 에 Liferay를 설치할 수 있습니다. 이것은 일반적으로 DevOps 및 고가용성 환경에서 사용하기에 가장 실용적인 설치 유형입니다.
 
 시작하려면
 
-1. [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)에서 지원되는 애플리케이션 서버를 선택하십시오.
+1. [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 에서 지원되는 애플리케이션 서버를 선택하십시오.
 1. 해당 [애플리케이션 서버](./installing-liferay/installing-liferay-on-an-application-server.md)에 Liferay 설치 지침을 따르십시오.
 
 ## 무엇 향후 계획

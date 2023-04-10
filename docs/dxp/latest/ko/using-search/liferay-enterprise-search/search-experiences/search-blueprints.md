@@ -8,7 +8,6 @@ toc:
   - ./search-blueprints/sorting-results-in-a-search-blueprint.md
   - ./search-blueprints/understanding-search-blueprints.md
   - ./search-blueprints/using-a-search-blueprint-on-a-search-page.md
-uuid: 216dc540-09fa-468d-8b4f-a6bbdb866fc2
 ---
 
 # 청사진 검색

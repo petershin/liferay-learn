@@ -1,4 +1,3 @@
-
 # 구성 및 속성 마이그레이션
 
 현재 DXP 설치의 OSGi 구성(7.0+) 및 속성(예: [포털 속성](../reference/portal-properties.md) 및 [시스템 속성](../reference/system-properties.md))은 필요에 맞게 DXP 인스턴스를 설정합니다. 새 DXP 인스턴스에서 이러한 설정을 사용하려면 새 Liferay Home으로 마이그레이션하고 업데이트해야 합니다.

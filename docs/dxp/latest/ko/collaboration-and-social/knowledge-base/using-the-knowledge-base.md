@@ -1,4 +1,3 @@
-
 # 기술 자료 사용
 
 Knowledge Base 앱을 사용하여 전문적인 제품 설명서를 표시하거나 완전한 책 또는 안내서를 작성할 수 있습니다. Markdown으로 작성된 기사 소스 파일을 가져올 수도 있습니다. [워크플로 사용](../../process-automation/workflow/introduction-to-workflow.md)이므로 게시 전에 기사 승인을 요구할 수 있습니다. 또한 사용자가 일반적인 개요를 따르는 데 도움이 되는 [기사 템플릿](./knowledge-base-templates.md) 을 만들 수 있습니다.

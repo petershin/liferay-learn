@@ -1,7 +1,3 @@
----
-uuid: fedf1e88-d26f-4015-b97e-3dd10e9da657
----
-
 # 검색 경험 개인화
 
 검색 경험 및 검색 청사진의 주요 사용 사례 중 하나는 Liferay의 [검색 결과](../../../search-pages-and-widgets/search-results.md)개인화하는 것입니다. 개인화된 검색 경험을 통해 각 사용자는 자신의 상황에 대한 특정 세부 정보에 따라 결과를 볼 수 있습니다. 현재 Blueprint가 다음과 같은 상황별 질문의 답변에 반응하도록 만드는 요소가 있습니다.
@@ -26,7 +22,7 @@ uuid: fedf1e88-d26f-4015-b97e-3dd10e9da657
 
 개인화 노력에 특히 유용한 몇 가지 요소가 있습니다.
 
-**부스트 근접성:** [ipstack](https://ipstack.com) 서비스를 사용하여 [geopoint](https://www.elastic.co/로 표시된 사용자 위치에 더 가까운 검색 결과를 제공합니다. guide/en/elasticsearch/reference/7.x/geo-point.html) 필드를 문서에 추가합니다. [아래 예시](#building-a-blueprint-to-personalize-search-results)는 서비스를 설정하고 Boost Proximity Element를 사용하는 방법을 보여줍니다.
+**부스트 근접성:** [ipstack](https://ipstack.com) 서비스를 사용하여 [geopoint](https://www.elastic.co/로 표시된 사용자 위치에 더 가까운 검색 결과를 제공합니다. guide/en/elasticsearch/reference/7.x/geo-point.html) 필드를 문서에 추가합니다. [아래 예시](#building-a-blueprint-to-personalize-search-results) 는 서비스를 설정하고 Boost Proximity Element를 사용하는 방법을 보여줍니다.
 
 **현재 언어에 대한 콘텐츠 부스트:** 현재 세션의 언어와 일치하는 `defaultLanguageId` 필드로 검색 결과를 부스트합니다.
 

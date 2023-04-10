@@ -23,7 +23,7 @@ Liferay의 Headless Delivery 애플리케이션은 [게시판](../../message-boa
 
 다음은 Headless API를 보여주는 샘플 코드입니다. 이 코드에는 샘플 cURL 및 Java 파일이 모두 포함되어 있습니다.
 
-다음 명령을 실행하여 [샘플 코드](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip)를 다운로드하고 압축을 풉니다. :
+다음 명령을 실행하여 [샘플 코드](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip) 를 다운로드하고 압축을 풉니다. :
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip -O

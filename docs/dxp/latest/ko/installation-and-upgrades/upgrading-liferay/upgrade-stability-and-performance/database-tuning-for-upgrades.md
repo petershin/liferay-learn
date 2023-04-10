@@ -36,7 +36,7 @@ InnoDB 이중 쓰기를 끄고 트랜잭션 커밋 시 InnoDB 플러시 로그�
 
 ## MySQL
 
-[InnoDB 이중 쓰기](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_doublewrite) 를 끄고 [트랜잭션 커밋 시 InnoDB 플러시 로그](https:/ /dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit) 을 `0`으로 변경합니다.
+[InnoDB 이중 쓰기](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_doublewrite) 를 끄고 [트랜잭션 커밋 시 InnoDB 플러시 로그](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit) 을 `0`으로 변경합니다.
 
 ## 오라클 데이터베이스
 

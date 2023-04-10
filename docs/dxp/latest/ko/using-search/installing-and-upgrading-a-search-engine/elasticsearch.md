@@ -47,7 +47,7 @@ Liferay 7.2 및 7.3에는 Elasticsearch 7 지원 및 인증되고 암호화된 E
 - [Elasticsearch 설치 문제 해결](elasticsearch/troubleshooting-elasticsearch-installation.md)
 - [사이드카 또는 임베디드 Elasticsearch 사용](elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md)
 
-- [**Liferay 클러스터링**][Liferay 클러스터에 검색 엔진 추가](../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md#start-a-search-engine-server)
+- [**Liferay 클러스터링**] [Liferay 클러스터에 검색 엔진 추가](../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md#start-a-search-engine-server)
 
 ## 업그레이드
 

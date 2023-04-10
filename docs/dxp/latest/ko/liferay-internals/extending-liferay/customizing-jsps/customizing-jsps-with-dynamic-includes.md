@@ -1,4 +1,3 @@
-
 # Dynamic Include로 JSP 사용자 정의
 
 [`liferay-util:dynamic-include` 태그](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/liferay-util/dynamic-include.html) 콘텐츠(JavaScript 코드, HTML, 등)를 주입할 수 있는 자리 표시자입니다. 예제 프로젝트는 동적 포함으로 콘텐츠를 삽입하는 방법을 보여줍니다.
@@ -10,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [동적 포함으로 JSP 사용자 지정](./liferay-n3q9.zip)을 다운로드하고 압축을 풉니다.
+1. [동적 포함으로 JSP 사용자 지정](./liferay-n3q9.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O

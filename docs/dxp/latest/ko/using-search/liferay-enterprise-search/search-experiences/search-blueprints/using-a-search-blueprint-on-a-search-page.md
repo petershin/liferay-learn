@@ -1,7 +1,3 @@
----
-uuid: dc1f2a74-8d1b-475f-ba5e-a4d98d9f25c8
----
-
 # 검색 페이지에서 검색 청사진 사용
 
 기본적으로 검색 페이지에는 연결된 검색 [](./understanding-search-blueprints.md) 없습니다. Liferay 검색 경험에 영향을 미치려면 [검색 페이지](../../../search-pages-and-widgets/working-with-search-pages.md) 에 청사진을 적용해야 합니다. 사이트에 검색 페이지가 여러 개 있는 경우 청사진을 사용해야 하는 각 페이지는 별도로 구성해야 하므로 아래 단계를 따르세요. 원하는 경우 각 페이지에 다른 청사진을 사용할 수 있습니다.

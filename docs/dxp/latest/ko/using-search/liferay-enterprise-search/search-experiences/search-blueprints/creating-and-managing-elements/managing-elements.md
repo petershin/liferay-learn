@@ -1,7 +1,3 @@
----
-uuid: 9c605bf4-a130-4723-93e3-04c2f725098b
----
-
 # 요소 관리
 
 새 요소를 생성하려면 _추가_ (![Add](../../../../images/icon-add.png))을 클릭합니다. 자세한 내용은 [요소 만들기](./creating-elements.md) 참조하십시오.
@@ -23,7 +19,7 @@ uuid: 9c605bf4-a130-4723-93e3-04c2f725098b
 ![요소 JSON 파일을 가져옵니다.](./managing-elements/images/02.png)
 
 ```{warning}
-[요소 스키마](./creating-elements.md#understanding-the-element-schema)는 변경될 수 있습니다. Liferay 버전 간에 스키마가 변경되면 이전 요소의 JSON 가져오기가 실패할 수 있습니다.
+[요소 스키마](./creating-elements.md#understanding-the-element-schema) 는 변경될 수 있습니다. Liferay 버전 간에 스키마가 변경되면 이전 요소의 JSON 가져오기가 실패할 수 있습니다.
 ```
 
 ## 추가 정보

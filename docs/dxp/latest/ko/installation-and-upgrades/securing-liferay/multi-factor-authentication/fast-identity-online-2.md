@@ -22,7 +22,7 @@ Fast IDentity Online 2 또는 FIDO2 표준은 암호 없는 인증을 위해 생
 
 **사용자당 허용된 자격 증명:** 각 사용자는 이 수의 FIDO2 장치를 가질 수 있습니다.
 
-**신뢰 당사자 ID:**[WebAuthn 신뢰 당사자 ID](https://www.w3.org/TR/webauthn-2/#relying-party) . 일반적으로 웹사이트의 도메인 이름으로 설정합니다.
+**신뢰 당사자 ID:** [WebAuthn 신뢰 당사자 ID](https://www.w3.org/TR/webauthn-2/#relying-party) . 일반적으로 웹사이트의 도메인 이름으로 설정합니다.
 
 **오리진:** 인증자 응답은 설치를 가리켜야 하는 이 오리진 URL과 비교됩니다. 보안을 위해 항상 `https` 을 사용하여 연결을 암호화해야 합니다.
 

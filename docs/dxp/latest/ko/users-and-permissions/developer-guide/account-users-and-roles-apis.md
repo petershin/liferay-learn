@@ -1,18 +1,15 @@
----
-uuid: 108e2423-cc6f-4442-9797-f6ce5bcfdbd9
----
-
 # 계정 사용자 및 역할 API
 
 애플리케이션 메뉴에서 [계정 사용자](../accounts/account-users.md) 및 [계정 역할](../accounts/account-roles.md) 관리할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 이러한 서비스를 호출하여 계정 사용자 및 역할을 만들고 관리합니다.
 
 ## 계정 사용자 추가
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps:
+그런 다음 다음 단계를 따르십시오.
 
-1. Download and unzip [Accounts API Basics](./liferay-t5p9.zip).
+1. [계정 API 기본 사항](./liferay-t5p9.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -81,7 +78,7 @@ Then, follow these steps:
         }     
     ```
 
-1. *글로벌 메뉴* &rarr; *애플리케이션* &rarr; *계정*으로 이동합니다. 사용자를 만든 계정을 클릭합니다. *사용자* 탭을 클릭하고 생성된 새 사용자를 확인합니다.
+1. **글로벌 메뉴** &rarr; **애플리케이션** &rarr; **계정** 으로 이동합니다. 사용자를 만든 계정을 클릭합니다. **사용자** 탭을 클릭하고 생성된 새 사용자를 확인합니다.
 
   ![새 계정 사용자가 추가되었는지 확인합니다.](./account-users-and-roles-apis/images/01.png)
 

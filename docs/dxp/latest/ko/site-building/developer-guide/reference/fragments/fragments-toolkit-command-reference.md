@@ -1,7 +1,3 @@
----
-uuid: afe56739-fa42-4145-a09a-24c56a0b9ec8
----
-
 # Fragments Toolkit 명령 참조
 
 [Fragments Toolkit](../../developing-page-fragments/using-the-fragments-toolkit.md) 현재 실행 중인 Liferay DXP 인스턴스에 연결하여 조각을 가져오고 내보낼 수 있습니다. 포털로 자동으로 가져온 툴킷으로 생성한 조각을 가질 수도 있습니다. 다음 명령을 사용할 수 있습니다.

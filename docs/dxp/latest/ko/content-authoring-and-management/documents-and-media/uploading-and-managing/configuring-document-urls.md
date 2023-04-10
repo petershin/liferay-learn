@@ -1,7 +1,3 @@
----
-uuid: a266c23a-5c23-4de6-a818-21e83f79cb1e
----
-
 # 문서 URL 구성
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U27+/GA27+`
@@ -22,17 +18,17 @@ uuid: a266c23a-5c23-4de6-a818-21e83f79cb1e
 
 파일의 친숙한 URL을 설정하려면 다음 단계를 따르십시오.
 
-1. *사이트 메뉴* ( ![Site Menu](../../../images/icon-product-menu.png) )을 열고 *콘텐츠 & 데이터*확장한 다음 *문서 및 미디어*로 이동합니다.
+1. **사이트 메뉴**( ![Site Menu](../../../images/icon-product-menu.png) )을 열고 **콘텐츠 & 데이터** 확장한 다음 **문서 및 미디어** 로 이동합니다.
 
 1. 원하는 파일 업로드 또는 편집을 시작합니다.
 
-1. *친숙한 URL* 필드를 편집합니다.
+1. **친숙한 URL** 필드를 편집합니다.
 
    각 URL 값은 사이트마다 고유해야 합니다. 값이 이미 사용 중인 경우 Liferay는 URL 끝에 숫자 값을 추가하여 충돌을 자동으로 해결합니다(예: `my-file`, `my-file-1`, `my-file-2`).
 
    ![파일을 업로드하거나 편집할 때 친숙한 URL을 변경할 수 있습니다.](./configuring-document-urls/images/01.png)
 
-1. *게시*클릭합니다.
+1. **게시** 클릭합니다.
 
 저장되면 지정된 URL(예: `http://[server-address]/documents/d/[site-friendly-url]/[file-friendly-URL]`)에서 파일에 액세스할 수 있습니다.
 
@@ -46,17 +42,17 @@ uuid: a266c23a-5c23-4de6-a818-21e83f79cb1e
 
 파일에 대해 유지된 URL을 보고 관리하려면 다음 단계를 따르십시오.
 
-1. *사이트 메뉴* ( ![Site Menu](../../../images/icon-product-menu.png) )을 열고 *콘텐츠 & 데이터*확장한 다음 *문서 및 미디어*로 이동합니다.
+1. **사이트 메뉴**( ![Site Menu](../../../images/icon-product-menu.png) )을 열고 **콘텐츠 & 데이터** 확장한 다음 **문서 및 미디어** 로 이동합니다.
 
-1. 원하는 파일에 대해 *동작* 버튼( ![Actions Button](../../../images/icon-actions.png) )을 클릭하고 *편집*선택합니다.
+1. 원하는 파일에 대해 **동작** 버튼( ![Actions Button](../../../images/icon-actions.png) )을 클릭하고 **편집** 선택합니다.
 
-1. 친숙한 URL 필드에서 *기록* 버튼( ![History Button](../../../images/icon-history.png) )을 클릭합니다.
+1. 친숙한 URL 필드에서 **기록** 버튼( ![History Button](../../../images/icon-history.png) )을 클릭합니다.
 
    ![친숙한 URL 필드의 기록 버튼을 클릭합니다.](./configuring-document-urls/images/02.png)
 
-1. *복원* 버튼( ![Restore Button](../../../images/icon-restore2.png) )을 클릭하여 현재 친숙한 URL을 선택한 URL로 바꿉니다.
+1. **복원** 버튼( ![Restore Button](../../../images/icon-restore2.png) )을 클릭하여 현재 친숙한 URL을 선택한 URL로 바꿉니다.
 
-1. *URL 잊어버리기* 버튼( ![Forget URL Button](../../../images/icon-delete.png) )을 클릭하여 파일 기록에서 선택한 URL을 제거합니다. 제거되면 더 이상 URL을 사용하여 파일에 액세스할 수 없습니다.
+1. **URL 잊어버리기** 버튼( ![Forget URL Button](../../../images/icon-delete.png) )을 클릭하여 파일 기록에서 선택한 URL을 제거합니다. 제거되면 더 이상 URL을 사용하여 파일에 액세스할 수 없습니다.
 
    ![복원 또는 URL 잊어버리기 버튼을 클릭합니다.](./configuring-document-urls/images/03.png)
 
@@ -70,7 +66,7 @@ Liferay 7.4 U34/GA34부터 표시 페이지 템플릿 프레임워크는 각 파
 
 ## 문서 버전 URL
 
-파일에 친숙한 모든 URL은 파일의 최신 버전으로 연결됩니다. 이전 버전의 URL에 액세스하려면 파일의 버전 기록으로 이동하여 원하는 버전의 *다운로드* URL을 복사합니다.
+파일에 친숙한 모든 URL은 파일의 최신 버전으로 연결됩니다. 이전 버전의 URL에 액세스하려면 파일의 버전 기록으로 이동하여 원하는 버전의 **다운로드** URL을 복사합니다.
 
 ![원하는 버전의 다운로드 URL을 복사합니다.](./configuring-document-urls/images/04.png)
 

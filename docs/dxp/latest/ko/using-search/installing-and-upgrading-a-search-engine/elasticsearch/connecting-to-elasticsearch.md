@@ -1,4 +1,3 @@
-
 # Elasticsearch에 연결
 
 [Elasticsearch를 설정한 후](./installing-elasticsearch.md)Liferay 커넥터를 사용하여 Elasticsearch에 Liferay를 연결해야 합니다. 연결 단계는 구성 중인 커넥터에 따라 다릅니다. 참조를 위해 [사용 가능한 Liferay Elasticsearch 커넥터](#available-liferay-elasticsearch-connectors) 을 참조하십시오.
@@ -188,10 +187,10 @@ Elasticsearch에 대한 번들 커넥터가 설치에 항상 최선의 선택은
 |:------------------------- |:---------------------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------- |:----------------- |
 | Liferay 7.4, 모든 종류        | Elasticsearch 7에 대한 Liferay 커넥터          | 번들                                                                                                                                              | [HTTP](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-overview.html) | &#10004;                                                                            | 사이드카/원격(프로덕션)\* |
 | CE 7.3 GA4+, DXP 7.3 GA1+ | Elasticsearch 7에 대한 Liferay(CE) 커넥터      | 번들                                                                                                                                              | [HTTP](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-overview.html) | &#10004;                                                                            | 사이드카/원격(프로덕션)\* |
-| CE 7.2, DXP 7.2           | Elasticsearch 6에 대한 Liferay 커넥터(CE)      | 번들                                                                                                                                              | [수송](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html)      | &#10004;\ *\* ( [LES](https://www.liferay.com/products/dxp/enterprise-search) 필요) | 임베디드 / 원격         |
+| CE 7.2, DXP 7.2           | Elasticsearch 6에 대한 Liferay 커넥터(CE)      | 번들                                                                                                                                              | [수송](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html)      | &#10004;\ **\**( [LES](https://www.liferay.com/products/dxp/enterprise-search) 필요) | 임베디드 / 원격         |
 | CE 7.2, DXP 7.2           | Liferay 커넥터(CE)에서 Elasticsearch 7(v3.x)로 | 시장: [CE](https://web.liferay.com/marketplace/-/mp/application/170642090) , [DXP](https://web.liferay.com/marketplace/-/mp/application/170390307) | [수송](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html)      | &#10004;                                                                            | 임베디드 / 원격         |
 
-\* **커넥터 구성의**Operation Mode**( `operationMode`) 설정은 더 이상 사용되지 않으며 **Production Mode Enabled**(`productionModeEnabled`)로 대체됩니다.
+\* **커넥터 구성의** Operation Mode (** `operationMode`) 설정은 더 이상 사용되지 않으며** Production Mode Enabled**(`productionModeEnabled`)로 대체됩니다.
 
 \*\* [Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963) 애플리케이션을 통해.
 

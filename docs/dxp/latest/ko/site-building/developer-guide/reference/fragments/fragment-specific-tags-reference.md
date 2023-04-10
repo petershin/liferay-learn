@@ -1,7 +1,3 @@
----
-uuid: ba3f3663-f72e-4f18-b220-d9b2e127ef5e
----
-
 # 단편별 태그 및 속성 참조
 
 표준 HTML, CSS 및 JavaScript와 함께 Liferay 전용 태그를 사용할 수 있으며 Liferay Portal 7.3 GA3 및 Liferay DXP 7.3부터 속성을 사용하여 조각에 편집 가능한 섹션을 만들거나 위젯을 포함할 수 있습니다. 편집 가능한 요소는 게시 전에 수정할 수 있습니다. 즉, 서식이 동일하지만 특정 컨텍스트에 적용할 수 있는 요소를 포함하는 단순하고 재사용 가능한 조각을 만들 수 있습니다.
@@ -122,7 +118,7 @@ Liferay Portal 7.3 GA2 이하의 경우 다음 구문을 사용하십시오.
 </div>
 ```
 
-콘텐츠 매핑은 프래그먼트의 편집 가능한 필드를 웹 콘텐츠 또는 블로그와 같은 자산 유형의 필드와 연결합니다. 예를 들어 이미지 필드를 매핑하여 웹 콘텐츠 기사의 미리보기 이미지를 표시할 수 있습니다. 매핑 필드에 대한 자세한 내용은 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)을 참조하십시오.
+콘텐츠 매핑은 프래그먼트의 편집 가능한 필드를 웹 콘텐츠 또는 블로그와 같은 자산 유형의 필드와 연결합니다. 예를 들어 이미지 필드를 매핑하여 웹 콘텐츠 기사의 미리보기 이미지를 표시할 수 있습니다. 매핑 필드에 대한 자세한 내용은 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) 을 참조하십시오.
 
 ## 편집 가능한 링크 만들기
 
@@ -151,7 +147,7 @@ Liferay Portal 7.3 GA2 이하의 경우 다음 구문을 사용하십시오.
 
 ![링크의 모양과 동작을 정의하기 위한 몇 가지 옵션이 있습니다.](./fragment-specific-tags-reference/images/03.png)
 
-편집 가능한 링크에 대한 자세한 내용은 [편집 가능한 링크](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings)을 참조하십시오.
+편집 가능한 링크에 대한 자세한 내용은 [편집 가능한 링크](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) 을 참조하십시오.
 
 ## 편집 가능한 HTML 만들기
 
@@ -269,7 +265,7 @@ W3C HTML 표준에 따르면 사용자 정의 요소는 자동으로 닫힐 수 
   }
 ```
 
-이 샘플 코드를 사용하여 페이지의 대상 언어에 따라 버튼 유형을 변경할 수 있습니다. 다음 예에서 _Contact Us_/_Contacto_ 버튼 조각은 `buttonType` 필드에 대해 `localizable` 속성을 `true` 로 설정합니다. 예제에서는 이 속성을 사용하여 페이지가 en-US 언어(A)를 사용하는 경우 _기본_ 버튼 유형을 구성하고 페이지가 es-ES(B)를 사용하는 경우 _개요 기본_ 유형을 구성합니다.
+이 샘플 코드를 사용하여 페이지의 대상 언어에 따라 버튼 유형을 변경할 수 있습니다. 다음 예에서 **Contact Us** / **Contacto** 버튼 조각은 `buttonType` 필드에 대해 `localizable` 속성을 `true` 로 설정합니다. 예제에서는 이 속성을 사용하여 페이지가 en-US 언어(A)를 사용하는 경우 **기본** 버튼 유형을 구성하고 페이지가 es-ES(B)를 사용하는 경우 **개요 기본** 유형을 구성합니다.
 
 ![프래그먼트의 현지화 가능한 요소는 일반 탭 아래에 플래그 아이콘을 표시하고 언어마다 다른 구성을 지원합니다.](./fragment-specific-tags-reference/images/04.png)
 

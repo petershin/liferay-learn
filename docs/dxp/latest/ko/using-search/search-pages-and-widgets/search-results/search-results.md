@@ -1,4 +1,3 @@
-
 # 수입 카테고리 탐색
 
 검색 결과는 탐색, 정렬 및 필터링이 쉬워야 합니다. 기본 검색 환경과 마음대로 사용할 수 있는 다양한 구성 옵션을 이해하여 사용자에게 최적의 검색 환경을 제공하세요.
@@ -27,7 +26,7 @@
 
 ## 검색 결과 관련성
 
-검색 엔진은 *관련성*에 따라 결과를 처리하고 정렬합니다. 관련성은 검색 엔진에서 계산한 점수입니다. 점수는 [검색 엔진에서 제공하는 알고리즘](https://www.elastic.co/guide/en/elasticsearch/guide/master/relevance-intro.html#relevance-intro)으로 계산됩니다.
+검색 엔진은 *관련성*에 따라 결과를 처리하고 정렬합니다. 관련성은 검색 엔진에서 계산한 점수입니다. 점수는 [검색 엔진에서 제공하는 알고리즘](https://www.elastic.co/guide/en/elasticsearch/guide/master/relevance-intro.html#relevance-intro) 으로 계산됩니다.
 
 결과 관련성을 구성할 수 있습니다.
 

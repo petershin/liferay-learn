@@ -1,16 +1,12 @@
----
-uuid: b9b38050-9b86-42e1-862b-11ddbeae8c04
----
-
 # WildFly에 설치
 
 WildFly에 설치하려면 DXP WAR 설치, 종속성 설치, WildFly 구성 및 WildFly에 DXP 배포가 필요합니다. 데이터베이스 및 메일 서버 연결도 구성해야 합니다.
 
 ## 전제 조건
 
-Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. 자세한 내용은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.
+Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. 자세한 내용은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 참조하십시오.
 
-[도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community)에서 이 파일을 다운로드하십시오. 관리자는 다음을 다운로드해야 합니다.
+[도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community) 에서 이 파일을 다운로드하십시오. 관리자는 다음을 다운로드해야 합니다.
 
 * DXP 전쟁 파일
 * OSGi 종속성 ZIP 파일
@@ -32,7 +28,7 @@ Liferay DXP에는 Java JDK 8 또는 11이 필요합니다. 자세한 내용은 [
 1. OSGi 종속성 ZIP 파일을 `[Liferay Home]/osgi` 폴더에 압축 해제합니다(이 폴더가 없으면 생성). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
 1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 WAR에는 해당 드라이버가 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스에 대한 드라이버가 없는 경우 데이터베이스 공급업체의 JDBC JAR 파일을 다운로드하여 `$WILDFLY_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib` 폴더에 넣으세요.
 
-    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.
+    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 참조하십시오.
 
 ```{note}
 Hypersonic 데이터베이스는 DXP와 함께 번들로 제공되며 테스트 목적으로 유용합니다. 프로덕션 DXP 인스턴스에 HSQL을 사용하지 마십시오.
@@ -80,7 +76,7 @@ DXP 7.3 및 이전 버전의 경우 다음 추가 단계를 따르십시오.
 
 ## 독립 실행형 모드와 도메인 모드의 WildFly에서 DXP 실행
 
-WildFly는 *독립형* 모드 또는 *도메인* 모드에서 시작할 수 있습니다. 도메인 모드를 사용하면 단일 제어 지점에서 여러 애플리케이션 서버 인스턴스를 관리할 수 있습니다. 이러한 애플리케이션 서버의 콜렉션을 *도메인*이라고 합니다. 독립 실행형 모드와 도메인 모드에 대한 자세한 내용은 [WildFly 관리 가이드](https://docs.wildfly.org/23/Admin_Guide.html)에서 이 주제에 대한 섹션을 참조하십시오. DXP는 독립 실행형 모드에서 WildFly를 완벽하게 지원하지만 도메인 모드에서는 지원하지 않습니다.
+WildFly는 **독립형** 모드 또는 **도메인** 모드에서 시작할 수 있습니다. 도메인 모드를 사용하면 단일 제어 지점에서 여러 애플리케이션 서버 인스턴스를 관리할 수 있습니다. 이러한 애플리케이션 서버의 콜렉션을 **도메인** 이라고 합니다. 독립 실행형 모드와 도메인 모드에 대한 자세한 내용은 [WildFly 관리 가이드](https://docs.wildfly.org/23/Admin_Guide.html) 에서 이 주제에 대한 섹션을 참조하십시오. DXP는 독립 실행형 모드에서 WildFly를 완벽하게 지원하지만 도메인 모드에서는 지원하지 않습니다.
 
 DXP는 WildFly가 독립 실행형 모드에서 실행될 때 지원하지만 도메인 모드에서 실행될 때는 지원하지 않습니다. DXP의 자동 배포는 관리형 배포에서 작동하지 않습니다. WildFly가 파일(폭발 또는 비폭발)을 복사하여 관리형 배포의 콘텐츠를 관리하기 때문입니다. 이렇게 하면 JSP 후크 및 Ext 플러그인이 의도한 대로 작동하지 않습니다. 예를 들어 JSP 후크는 DXP의 JSP 재정의 메커니즘이 애플리케이션 서버에 의존하기 때문에 관리되는 도메인 모드에서 실행되는 WildFly에서 작동하지 않습니다. 그러나 JSP 후크 및 Ext 플러그인은 더 이상 사용되지 않으므로 사용하지 않을 수 있습니다.
 
@@ -219,7 +215,7 @@ Java 옵션 및 메모리 인수는 아래에 설명되어 있습니다.
 | `-XX:SurvivorRatio`    | 서바이벌 공간에 대한 새 공간의 비율입니다. 생존자 공간은 구세대 공간으로 승격되기 전에 젊은 세대 개체를 보유합니다.       |
 
 ```{note}
-DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Tuning Liferay](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
+DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Liferay 튜닝](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
 ```
 
 **검문소:**

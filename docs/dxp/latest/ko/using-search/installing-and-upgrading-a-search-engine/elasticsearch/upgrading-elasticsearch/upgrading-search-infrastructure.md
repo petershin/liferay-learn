@@ -1,4 +1,3 @@
-
 # 검색 인프라 업그레이드
 
 Liferay를 업그레이드하는 동안 Elasticsearch를 사용할 때 검색 환경을 고려해야 합니다. 정확한 단계는 기존 검색 엔진 설치 및 Liferay 버전에 따라 다르지만 [기존 인덱스 백업](./backing-up-elasticsearch.md)부터 시작해야 합니다.

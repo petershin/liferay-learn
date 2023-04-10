@@ -89,7 +89,7 @@ TensorFlow 공급자가 구성되었습니다.
 
 **API 키:** 귀하의 [API 키](https://azure.microsoft.com/en-us/try/cognitive-services/my-apis/?apiSlug=computer-services) Computer Vision API V2.
 
-**API 엔드포인트:**[Computer Vision API V2](https://westcentralus.api.cognitive.microsoft.com/vision/v2.0) 의 엔드포인트입니다.
+**API 엔드포인트:** [Computer Vision API V2](https://westcentralus.api.cognitive.microsoft.com/vision/v2.0) 의 엔드포인트입니다.
 
 Microsoft Cognitive Services 공급자가 구성되었습니다. 자세한 내용은 [Microsoft Cognitive Services 설명서](https://docs.microsoft.com/en-us/azure/cognitive-services/) 을 참조하십시오.
 

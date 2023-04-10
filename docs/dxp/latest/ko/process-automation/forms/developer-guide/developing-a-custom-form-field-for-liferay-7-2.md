@@ -1,7 +1,3 @@
----
-
----
-
 # Liferay 7.2용 사용자 정의 양식 필드 개발
 
 Liferay 7.3 및 Liferay 7.4용 React 기반 사용자 지정 양식 필드를 개발할 수 있습니다. 방법을 알아보려면 [사용자 정의 양식 필드 유형 작성](./writing-a-custom-form-field-type.md) 을 참조하십시오. Liferay 7.2는 MetalJS 및 Soy 클로저 템플릿을 기반으로 하는 다른 프런트 엔드 기술을 사용했습니다. 이 자습서에서는 Liferay 7.2 설치에서 실행되도록 React 기반 Acme C2P9 슬라이더 필드를 조정하는 방법을 배울 수 있습니다.

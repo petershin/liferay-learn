@@ -2,12 +2,11 @@
 toc:
   - ./semantic-search/setting-up-a-text-embedding-provider.md
   - ./semantic-search/creating-a-search-blueprint-for-semantic-search.md
-uuid: e305b83d-913c-497f-8760-6a9c0ecc87f3
 ---
 
 # 시맨틱 검색
 {bdg-secondary}`7.4 U70+`
-{bdg-link-dark}`[베타 기능](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)`
+{bdg-link-dark}` [베타 기능](https://help.liferay.com/hc/ko/articles/12917247551757-Beta-Features) `
 
 ```{toctree}
 :maxdepth: 1
@@ -63,7 +62,7 @@ Liferay에서 시맨틱 검색을 활성화하려면
 feature.flag.LPS-122920=true
 ```
 
-[환경 변수](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables)을 사용하여 시맨틱 검색을 활성화하려면 다음을 구성에 추가하십시오.
+[환경 변수](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables) 을 사용하여 시맨틱 검색을 활성화하려면 다음을 구성에 추가하십시오.
 
 ```properties
 LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER2__NUMBER2__NUMBER9__NUMBER2__NUMBER0_=true
@@ -97,7 +96,7 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__N
 
 텍스트 임베딩 공급자 설정 [](./semantic-search/setting-up-a-text-embedding-provider.md)시맨틱 검색에 추가 구성 옵션을 사용할 수 있습니다. 제어판 &rarr; 인스턴스 설정 &rarr; 시맨틱 검색을 방문하십시오.
 
-텍스트 임베딩 제공자 설정은 [시맨틱 검색 활성화](#enabling-semantic-search)에서 다룹니다.
+텍스트 임베딩 제공자 설정은 [시맨틱 검색 활성화](#enabling-semantic-search) 에서 다룹니다.
 
 색인 설정에는 다음이 포함됩니다.
 
@@ -149,6 +148,6 @@ Liferay의 시맨틱 검색은 다음 중 하나입니다.
 * 일반 키워드 일치가 발생합니다.
   * 검색 창 위젯에 입력된 검색 구문은 Liferay의 검색 프레임워크에서 수신되어 분석 및 추가 처리를 위해 검색 엔진으로 전송되고 검색 엔진의 기존 색인 문서와 일치하며 관련성에 대해 점수가 매겨지고 추가를 위해 Liferay로 반환됩니다. 처리(강조 표시, 요약, 권한에 대한 추가 필터링 수행 등).
 * 추가 시맨틱 검색 처리가 발생합니다.
-  * 검색 구문이 텍스트 임베딩 공급자에게 전송되고 벡터 표현이 생성됩니다( [텍스트 임베딩](https://neuml.github.io/txtai/embeddings/)). 키워드 검색 관련성에 의해 점수가 매겨진 검색 결과를 렌더링하기 전에 창 제한 설정 내에서 캡처된 결과는 검색 구의 벡터 표현을 인덱스 문서의 벡터 표현과 비교하여 다시 점수가 매겨집니다. 새 점수가 계산되고 최종 사용자가 사용할 수 있도록 결과가 검색 페이지로 반환됩니다. 자세한 내용은 Elastic의 [벡터 검색이란 무엇입니까](https://www.elastic.co/what-is/vector-search) 참조하십시오.
+  * 검색 구문이 텍스트 임베딩 공급자에게 전송되고 벡터 표현이 생성됩니다( [텍스트 임베딩](https://neuml.github.io/txtai/embeddings/) ). 키워드 검색 관련성에 의해 점수가 매겨진 검색 결과를 렌더링하기 전에 창 제한 설정 내에서 캡처된 결과는 검색 구의 벡터 표현을 인덱스 문서의 벡터 표현과 비교하여 다시 점수가 매겨집니다. 새 점수가 계산되고 최종 사용자가 사용할 수 있도록 결과가 검색 페이지로 반환됩니다. 자세한 내용은 Elastic의 [벡터 검색이란 무엇입니까](https://www.elastic.co/what-is/vector-search) 참조하십시오.
 
 [^1]: 문서의 필드를 검사하려면 [문서 형식](../../search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) 에 결과 표시 설정 또는 [검색 청사진 미리보기](./search-blueprints/creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) 기능을 사용합니다.

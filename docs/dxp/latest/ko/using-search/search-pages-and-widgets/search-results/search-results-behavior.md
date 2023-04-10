@@ -1,7 +1,3 @@
----
-uuid: fb5824c6-339d-46be-b697-12497bf052ba
----
-
 # 검색 결과 동작
 
 이전에는 검색 결과를 표시하는 방법을 [배웠습니다](./configuring-the-search-results-widget.md). 검색 결과를 개선할 수 있는 추가 검색 결과 개념 및 구성이 있습니다.
@@ -89,13 +85,13 @@ uuid: fb5824c6-339d-46be-b697-12497bf052ba
 
 1. 요약에 포함할 자산별 필드는 `ModelSummaryContributor` Java 클래스(Liferay 자체 클래스 및 타사 개발자가 배포한 클래스)에 정의되어 있습니다. 이 논리의 이전 구현은 `Indexer.getSummary`에서 제공했습니다.
 
-1. 검색 결과 요약에 표시할 수 있는 필드는 검색 결과 표시 로직([`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/builder/SearchResultSummaryDisplayBuilder.java) 및 [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java))에 의해 정의됩니다.
+1. 검색 결과 요약에 표시할 수 있는 필드는 검색 결과 표시 로직( [`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/builder/SearchResultSummaryDisplayBuilder.java) 및 [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java) )에 의해 정의됩니다.
 
 1. [검색 결과](./configuring-the-search-results-widget.md) 위젯(기본적으로_목록_ )에서 사용하는 [위젯 템플릿](../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) 에는 요약에 포함된 사용 가능한 필드를 포함하여 검색 결과 표시와 관련된 모든 항목의 최종 단어가 있습니다.
 
 ## 하이라이트
 
-요약에 나타나는 검색어는 기본적으로 <mark>강조 표시</mark> 입니다. 이것이 바람직하지 않은 경우 [위젯 구성 화면](./configuring-the-search-results-widget.md#displaying-search-results)에서 비활성화합니다. 
+요약에 나타나는 검색어는 기본적으로 <mark>강조 표시</mark> 입니다. 이것이 바람직하지 않은 경우 [위젯 구성 화면](./configuring-the-search-results-widget.md#displaying-search-results) 에서 비활성화합니다. 
 
 ![결과 목록에서 검색 키워드가 강조 표시됩니다.](./search-results-behavior/images/05.png)
 
@@ -116,7 +112,7 @@ Liferay 7.2+에서는 공개 콘텐츠 페이지의 [페이지 콘텐츠](../../
 ![공개 및 비공개 페이지의 제목을 검색할 수 있습니다.](./search-results-behavior/images/11.png)
 
 ```{note}
-Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가 비활성화됩니다. 그러나 원하는 경우 활성화할 수 있습니다. 자세한 내용은 [비공개 페이지 활성화](../../../site-building/creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages)를 참조하세요.
+Liferay 7.4 U22+ 및 GA22+의 경우 새 설치에 대해 비공개 페이지가 비활성화됩니다. 그러나 원하는 경우 활성화할 수 있습니다. 자세한 내용은 [비공개 페이지 활성화](../../../site-building/creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) 를 참조하세요.
 ```
 
 콘텐츠 페이지에 대해 인덱싱된 필드를 검색하려면 검색 결과 위젯의 _문서 양식_ 에 결과 표시 설정을 활성화합니다. 자세한 내용은 [검색 엔진 문서 검사](./configuring-the-search-results-widget.md#inspecting-search-engine-documents) 참조하십시오.

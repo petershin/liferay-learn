@@ -1,10 +1,6 @@
----
-uuid: 97837f94-619a-4ac0-9b0c-bf9dca31e748
----
-
 # 콘텐츠 검색
 
-색인이 생성된 모든 콘텐츠(일명 Liferay DXP에서 자산 _개_ )가 검색 결과로 반환될 수 있습니다. [사용자 지정 콘텐츠도 인덱싱할 수 있으므로](https://help.liferay.com/hc/en-us/articles/360032260612-Model-Entity-Indexing-Framework)설치 시 기본적으로 포함된 자산 유형 외에 추가 자산 유형이 있을 수 있습니다. 다음 이미지는 Liferay DXP에서 인덱싱되는 다양한 콘텐츠 유형의 예를 보여줍니다.
+색인이 생성된 모든 콘텐츠(일명 Liferay DXP에서 자산 **개**)가 검색 결과로 반환될 수 있습니다. [사용자 지정 콘텐츠도 인덱싱할 수 있으므로](https://help.liferay.com/hc/ko/articles/360032260612-Model-Entity-Indexing-Framework) 설치 시 기본적으로 포함된 자산 유형 외에 추가 자산 유형이 있을 수 있습니다. 다음 이미지는 Liferay DXP에서 인덱싱되는 다양한 콘텐츠 유형의 예를 보여줍니다.
 
 ![이러한 앱이 배포되면 기본적으로 해당 콘텐츠를 검색할 수 있습니다.](./searching-for-content/images/08.png)
 
@@ -16,9 +12,9 @@ uuid: 97837f94-619a-4ac0-9b0c-bf9dca31e748
 
 ### 검색어 입력
 
-Liferay의 검색 인프라는 지원되는 검색 엔진([Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) 및 [Solr](http://lucene.apache.org/solr/features.html))에 의해 구현된 전체 텍스트 검색을 지원합니다.
+Liferay의 검색 인프라는 지원되는 검색 엔진( [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) 및 [Solr](http://lucene.apache.org/solr/features.html) )에 의해 구현된 전체 텍스트 검색을 지원합니다.
 
-전체 텍스트 검색은 검색 쿼리에 입력된 모든 단어(예: *stock market*)를 각 색인 문서의 모든 단어와 비교합니다. Elasticsearch와 같은 검색 엔진은 관련성 점수를 계산하여 최상의 결과가 먼저 반환되도록 합니다(예: 최근 강세장에 대한 블로그 항목). *stock* 또는 *market* 과 같은 단어가 포함된 모든 항목이 반환됩니다.
+전체 텍스트 검색은 검색 쿼리에 입력된 모든 단어(예: **stock market**)를 각 색인 문서의 모든 단어와 비교합니다. Elasticsearch와 같은 검색 엔진은 관련성 점수를 계산하여 최상의 결과가 먼저 반환되도록 합니다(예: 최근 강세장에 대한 블로그 항목). **stock** 또는 **market** 과 같은 단어가 포함된 모든 항목이 반환됩니다.
 
 전체 텍스트 검색 외에도 고급 검색 구문이 지원됩니다. 기본 검색 엔진이 정확한 동작을 결정하므로 자세한 내용은 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) 또는 [Solr](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html) 설명서를 참조하십시오.
 
@@ -36,13 +32,13 @@ Liferay의 검색 인프라는 지원되는 검색 엔진([Elasticsearch](https:
 
 ### 정확한 구문 일치: 인용 검색
 
-사용자가 검색어(예: _agile frameworks_)가 입력한 대로 정확한 구문으로 결과만 생성하기를 원하는 경우 어떻게 합니까? 일반 전체 텍스트 검색에서 _agile frameworks_ 검색하면 _agile_ 및 _frameworks_라는 용어만 포함하는 검색 결과와 두 용어를 모두 포함하지만 다른 텍스트로 구분된 히트, 정확한 구 일치가 포함된 결과가 반환됩니다. 정확한 구가 포함된 적중만 반환되도록 하려면 따옴표로 묶습니다: _"agile frameworks"_.
+사용자가 검색어(예: **agile frameworks**)가 입력한 대로 정확한 구문으로 결과만 생성하기를 원하는 경우 어떻게 합니까? 일반 전체 텍스트 검색에서 **agile frameworks** 검색하면 **agile** 및 **frameworks** 라는 용어만 포함하는 검색 결과와 두 용어를 모두 포함하지만 다른 텍스트로 구분된 히트, 정확한 구 일치가 포함된 결과가 반환됩니다. 정확한 구가 포함된 적중만 반환되도록 하려면 따옴표로 묶습니다: **"agile frameworks"** .
 
 ![검색어를 따옴표로 묶어 정확한 구문 일치를 검색합니다.](./searching-for-content/images/04.png)
 
 ### 접두사 검색
 
-접두사 검색을 사용하여 용어 *악기* 검색하면 전체 단어를 포함하는 문서뿐만 아니라 접두사로 *악기* 포함된 변형도 반환됩니다. 예를 들어 *instruments*, *instrumental*및 *instrumentation* 결과도 반환됩니다.
+접두사 검색을 사용하여 용어 **악기** 검색하면 전체 단어를 포함하는 문서뿐만 아니라 접두사로 **악기** 포함된 변형도 반환됩니다. 예를 들어 **instruments** , **instrumental** 및 **instrumentation** 결과도 반환됩니다.
 
 !["레버" 을 검색하면 "레버리지" 과 "레버리지"도 반환됩니다.](./searching-for-content/images/03.png)
 
@@ -64,29 +60,29 @@ Liferay의 검색 인프라는 지원되는 검색 엔진([Elasticsearch](https:
 
 #### 전시 조정
 
-**키워드 매개변수 이름:** 검색에 입력된 키워드에 대한 매개변수 이름을 편집합니다. 예를 들어 키워드 용어 _데이터_ 을 검색할 때 기본 URL은 다음과 같습니다.
+**키워드 매개변수 이름:** 검색에 입력된 키워드에 대한 매개변수 이름을 편집합니다. 예를 들어 키워드 용어 **데이터** 을 검색할 때 기본 URL은 다음과 같습니다.
 
 ```
 http://localhost:8080/web/guest/search?q=data
 ```
 
-키워드 매개변수 이름을 _키워드_ 로 변경하면 다음과 같습니다.
+키워드 매개변수 이름을 **키워드** 로 변경하면 다음과 같습니다.
 
 ```
 http://localhost:8080/web/guest/search?keyword=data
 ```
 
-**범위:** 이 사이트(기본값), 전체 및 사용자 선택 허용의 세 가지 옵션 중에서 선택합니다. *이 사이트* 은 검색이 실행된 사이트와 관련된 자산만 검색됨을 의미합니다. *Everything*선택하여 검색 범위를 모든 사이트로 확장합니다. 사용자가 검색할 범위를 선택하도록 하려면 *사용자가 선택하도록 허용*선택합니다.
+**범위:** 이 사이트(기본값), 전체 및 사용자 선택 허용의 세 가지 옵션 중에서 선택합니다. **이 사이트** 은 검색이 실행된 사이트와 관련된 자산만 검색됨을 의미합니다. **Everything** 선택하여 검색 범위를 모든 사이트로 확장합니다. 사용자가 검색할 범위를 선택하도록 하려면 **사용자가 선택하도록 허용** 선택합니다.
 
 ![사용자가 검색이 실행되는 범위를 선택하도록 합니다.](./searching-for-content/images/06.png)
 
-**범위 매개변수 이름:** 검색이 수행되는 범위에 대한 URL 매개변수 이름을 설정하십시오. 이 매개변수는 범위 _사용자가_ 선택하도록 선택한 경우에만 URL에 나타납니다. 기본값은 _범위_이므로 단어 _데이터_ 검색하면 다음과 같은 기본 URL이 생성됩니다.
+**범위 매개변수 이름:** 검색이 수행되는 범위에 대한 URL 매개변수 이름을 설정하십시오. 이 매개변수는 범위 **사용자가** 선택하도록 선택한 경우에만 URL에 나타납니다. 기본값은 **범위** 이므로 단어 **데이터** 검색하면 다음과 같은 기본 URL이 생성됩니다.
 
 ```
 http://localhost:8080/web/guest/search?q=data&scope=this-site
 ```
 
-_범위_ _대상_ 으로 변경하면 다음 URL이 생성됩니다.
+**범위****대상** 으로 변경하면 다음 URL이 생성됩니다.
 
 ```
 http://localhost:8080/web/guest/search?q=data&target=this-site
@@ -100,7 +96,7 @@ http://localhost:8080/web/guest/search?q=data&target=this-site
 
 #### 고급 설정
 
-**고급 검색 구문 사용:** Elasticsearch를 사용하는 경우 이를 활성화하면 사용자가 검색 표시줄에 [쿼리 문자열 구문](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) 입력할 수 있습니다. Solr를 사용하는 경우 적절한 구문 [에 대한 설명서를 참조](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html).
+**고급 검색 구문 사용:** Elasticsearch를 사용하는 경우 이를 활성화하면 사용자가 검색 표시줄에 [쿼리 문자열 구문](https://www.elastic.co/guide/en/elasticsearch/reference/7.6/query-dsl-simple-query-string-query.html) 입력할 수 있습니다. Solr를 사용하는 경우 적절한 구문 [에 대한 설명서를 참조](https://lucene.apache.org/solr/guide/7_0/query-syntax-and-parsing.html) .
 
 **Staged Sites의 결과 표시:** Content from [Staging environment](../../site-building/publishing-tools/staging.md) is [not searchable](../search-pages-and-widgets/search-results/search-results-behavior.md#search-and-staging) 라이브 사이트에서 이 설정에 관계없이. 이 설정을 사용하면 로컬 스테이징이 활성화된 사이트에서 Everything 범위가 구성된 경우 다른 로컬 스테이징 사이트에서 콘텐츠를 검색할 수 있습니다.
 
@@ -125,7 +121,7 @@ Liferay 7.4에는 GUI 기반 애플리케이션 구축 프레임워크인 [Lifer
 
    ![개체 항목에 대한 제목 및 내용 요약이 표시됩니다.](./searching-for-content/images/10.png)
 
-Liferay 7.4 U64+/GA64+의 경우 검색 결과에서 개체 항목을 클릭하면 해당 항목의 [디스플레이 페이지](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects)로 리디렉션됩니다(존재하는 경우).
+Liferay 7.4 U64+/GA64+의 경우 검색 결과에서 개체 항목을 클릭하면 해당 항목의 [디스플레이 페이지](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) 로 리디렉션됩니다(존재하는 경우).
 
 ## 추가 정보
 

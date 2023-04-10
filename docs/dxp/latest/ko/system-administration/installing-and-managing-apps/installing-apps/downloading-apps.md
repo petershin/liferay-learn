@@ -32,9 +32,9 @@ LPKG 파일이 시스템에 다운로드됩니다.
 
 1. Marketplace 웹사이트 또는 Liferay.com을 통해 구매한 앱 페이지로 이동합니다.
 
-    **마켓플레이스 웹사이트:**[https://web.liferay.com/marketplace](https://web.liferay.com/marketplace) 으로 이동하여 로그인합니다. 오른쪽 상단 모서리에 있는 프로필 사진을 클릭하고 **구매한 앱** 을 선택합니다.
+    **마켓플레이스 웹사이트:** [https://web.liferay.com/marketplace](https://web.liferay.com/marketplace) 으로 이동하여 로그인합니다. 오른쪽 상단 모서리에 있는 프로필 사진을 클릭하고 **구매한 앱** 을 선택합니다.
 
-    **Liferay.com:**[liferay.com](https://www.liferay.com) 으로 이동하여 로그인합니다. 오른쪽 상단 모서리에 있는 프로필 사진을 클릭하고 메뉴에서 **계정 홈** 을 선택한 다음 왼쪽 탐색 패널에서 **앱** 을 선택합니다.
+    **Liferay.com:** [liferay.com](https://www.liferay.com) 으로 이동하여 로그인합니다. 오른쪽 상단 모서리에 있는 프로필 사진을 클릭하고 메뉴에서 **계정 홈** 을 선택한 다음 왼쪽 탐색 패널에서 **앱** 을 선택합니다.
 
     ![Marketplace 및 Liferay.com 계정 홈 페이지에서 구매한 앱을 관리할 수 있습니다.](./downloading-apps/images/02.png)
 

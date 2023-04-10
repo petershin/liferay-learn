@@ -1,7 +1,3 @@
----
-uuid: 496a6651-e3f5-4ff2-8754-6362d84e366a
----
-
 # 미리 정의된 요소 변수 참조
 
 요소 소스 편집기에서 원하는 위치에 커서를 놓고 왼쪽 사이드바에서 변수를 클릭하여 삽입합니다. Custom JSON Element에서 변수를 편집기에 직접 입력해야 합니다. 각 변수의 구문은 아래 표에 나와 있습니다.
@@ -64,7 +60,7 @@ uuid: 496a6651-e3f5-4ff2-8754-6362d84e366a
 | 날씨 지도 온도 열기                           | 번호: 온도                                                                                                                                                 | `${openweathermap.temp}`                |
 | 날씨 지도 열기 날씨 설명                        | 텍스트: 날씨에 대한 설명(예: "맑은 하늘")                                                                                                                             | `${openweathermap.weather_description}` |
 | 날씨 지도 열기 날씨 ID                        | 번호: 날씨 설명에 해당하는 [ID](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2)                                                          | `${openweathermap.weather_id}`          |
-| 날씨 지도 메인 라벨 열기                        | 텍스트: 날씨에 대한 [기본 식별자(예: Rain; 이것은 날씨 ID에 따른 OpenWeatherMap의 API 응답](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2)의 기본 필드입니다. | `${openweathermap.weather_main}`        |
+| 날씨 지도 메인 라벨 열기                        | 텍스트: 날씨에 대한 [기본 식별자(예: Rain; 이것은 날씨 ID에 따른 OpenWeatherMap의 API 응답](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2) 의 기본 필드입니다. | `${openweathermap.weather_main}`        |
 | 날씨 지도 열기 풍속                           | 숫자: 풍속(km/h)                                                                                                                                           | `${openweathermap.wind_speed}`          |
 | 사용자 정의 필드 **\*\***                | 사용자 정의 필드의 값                                                                                                                                           | `user.custom.field.[name]`              |
 

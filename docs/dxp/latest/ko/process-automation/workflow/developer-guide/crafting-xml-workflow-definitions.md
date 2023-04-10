@@ -1,7 +1,3 @@
----
-uuid: cf8367f8-a297-4fe1-be3c-9ea3437f06f5
----
-
 # XML 워크플로 정의 만들기
 
 Liferay DXP의 모든 작업 흐름 정의는 XML 형식으로 작성됩니다. 고유한 워크플로우 정의를 만들려면 정의가 실제 승인 프로세스를 반영해야 한다는 점을 기억하십시오.
@@ -10,7 +6,7 @@ Liferay DXP의 모든 작업 흐름 정의는 XML 형식으로 작성됩니다. 
 DXP를 사용하는 구독자는 [그래픽 디자이너](../designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md)를 사용하여 워크플로를 만들 수 있습니다. 이미 XML로 작업 흐름을 만들기 시작한 경우 이를 업로드하고 GUI에서 계속할 수 있습니다. 
 ```
 
-1. 전역 메뉴(![Global Menu](../../../images/icon-applications-menu.png))를 엽니다. 워크플로에서 _Process Builder_선택합니다.
+1. 전역 메뉴(![Global Menu](../../../images/icon-applications-menu.png))를 엽니다. 워크플로에서 **Process Builder** 선택합니다.
 
 1. 새 워크플로 정의를 추가하려면 ![add](../../../images/icon-add.png) 아이콘을 클릭합니다.
 
@@ -27,13 +23,13 @@ DXP를 사용하는 구독자는 [그래픽 디자이너](../designing-and-manag
 * [단일 승인자](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml)
 * [단일 승인자 스크립트 할당](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml)
 
-아래에서 가장 간단한 워크플로인 단일 승인자를 사용하여 기본 사항을 알아봅니다. 단일 승인자 워크플로우에는 _생성됨_ 및 _승인됨_이라는 두 가지 필수 상태인 시작 및 종료가 포함됩니다. 또한 _리뷰_ 및 _업데이트_의 두 가지 작업이 포함되어 있습니다. 이러한 작업은 _승인_, _거부_및 _다시 제출_과 같은 _작업_을 정의합니다.
+아래에서 가장 간단한 워크플로인 단일 승인자를 사용하여 기본 사항을 알아봅니다. 단일 승인자 워크플로우에는 **생성됨** 및 **승인됨** 이라는 두 가지 필수 상태인 시작 및 종료가 포함됩니다. 또한 **리뷰** 및 **업데이트** 의 두 가지 작업이 포함되어 있습니다. 이러한 작업은 **승인** , **거부** 및 **다시 제출** 과 같은 **작업** 을 정의합니다.
 
 워크플로를 구성 요소로 나눌 때 상태, 태스크 및 작업에 대해 생각하십시오. 정의를 마치면 작업할 준비가 된 것입니다. 이제 단일 승인자 워크플로가 작동하는 방식을 확인하여 모든 것을 통합할 준비가 되었습니다.
 
 ## 개요
 
-워크플로우 정의의 구조는 XSD 파일( [`liferay-workflow-definition-7_4_0.xsd`](https://www.liferay.com/dtd/liferay-workflow-definition_7_4_0.xsd)에 정의됩니다.
+워크플로우 정의의 구조는 XSD 파일( [`liferay-workflow-definition-7_4_0.xsd`](https://www.liferay.com/dtd/liferay-workflow-definition_7_4_0.xsd) 에 정의됩니다.
 
 워크플로 정의 파일의 맨 위에서 스키마를 선언합니다.
 
@@ -58,7 +54,7 @@ DXP를 사용하는 구독자는 [그래픽 디자이너](../designing-and-manag
 
 ## 시작 및 종료 노드
 
-각 워크플로 정의는 _상태 노드_로 시작하고 끝납니다. [단일 승인자](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml)에서 이와 같은 _시작_ 노드를 만듭니다.
+각 워크플로 정의는 **상태 노드** 로 시작하고 끝납니다. [단일 승인자](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-workflow-definition.xml) 에서 이와 같은 **시작** 노드를 만듭니다.
 
 ```xml
 <state>
@@ -73,12 +69,12 @@ DXP를 사용하는 구독자는 [그래픽 디자이너](../designing-and-manag
 </state>
 ```
 
-이 예에서 _시작_ 노드에는 다음 속성이 있습니다.
+이 예에서 **시작** 노드에는 다음 속성이 있습니다.
 
 * 초기 상태입니다.
-* 노드는 _검토_라는 [_태스크_ 노드](./workflow-task-node-reference.md) 으로 전환됩니다.
+* 노드는 **검토** 라는 [**태스크** 노드](./workflow-task-node-reference.md) 으로 전환됩니다.
 
-_End_ 노드는 다음과 같습니다.
+**End** 노드는 다음과 같습니다.
 
 ```xml
     <state>
@@ -109,13 +105,13 @@ _End_ 노드는 다음과 같습니다.
 
 태스크 노드는 워크플로우 프로세스에서 사용자가 수행해야 하는 작업을 정의합니다. 다른 워크플로 노드와 달리 작업 노드에는 할당이 있습니다. 사용자 또는 [역할](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)에 작업을 할당할 수 있습니다.
 
-작업 노드에는 작업 타이머, 작업(알림 및 스크립트 포함 가능) 및 전환이 포함될 수 있습니다. 자세한 내용은 [Workflow Task Node Reference](./workflow-task-node-reference.md) 을 참조하십시오. 단일 승인자 작업 흐름에는 _검토_ 및 _업데이트_의 두 가지 작업이 포함됩니다.
+작업 노드에는 작업 타이머, 작업(알림 및 스크립트 포함 가능) 및 전환이 포함될 수 있습니다. 자세한 내용은 [워크플로 작업 노드 참조](./workflow-task-node-reference.md) 을 참조하십시오. 단일 승인자 작업 흐름에는 **검토** 및 **업데이트** 의 두 가지 작업이 포함됩니다.
 
 ### 검토 작업 노드 생성
 
 검토 작업에는 거부 또는 승인의 두 가지 결과가 있습니다. 여기에는 제출물이 검토 준비가 되었을 때 검토자에게 알려주는 `<notification>` 요소가 포함됩니다. 사용자에게 할당된 경우 해당 사용자는 자산을 검토해야 합니다. 역할에 할당된 경우 해당 역할을 가진 모든 사람이 자산을 검토할 수 있습니다.
 
-두 가지 가능한 전환이 있습니다: _승인_ 및 _거부_. 승인되면 워크플로는 이전에 `승인`이라고 했던 최종 상태로 전환됩니다. 거부되면 업데이트 작업에 대한 워크플로 번역입니다.
+두 가지 가능한 전환이 있습니다: **승인** 및 **거부** . 승인되면 워크플로는 이전에 `승인`이라고 했던 최종 상태로 전환됩니다. 거부되면 업데이트 작업에 대한 워크플로 번역입니다.
 
 ```xml
     <task>
@@ -205,11 +201,11 @@ _End_ 노드는 다음과 같습니다.
     </task>
 ```
 
-_검토_ 작업 노드가 추가 및 구성되었습니다. 훌륭한! 이제 업데이트 작업만 남았습니다.
+**검토** 작업 노드가 추가 및 구성되었습니다. 훌륭한! 이제 업데이트 작업만 남았습니다.
 
 ### 업데이트 태스크 노드 생성
 
-제출이 검토 작업에서 _거부_ 전환을 입력하면 검토를 위해 다시 제출할 수 있도록 업데이트 작업으로 이동합니다. 자산이 여기에 도착하면 비슷한 이름의 _거부_ 작업이 실행되고 워크플로 상태를 `거부됨` 및 `보류 중`에 할당합니다. 원래 작성자에게 알림이 전송됩니다. 자산도 원래 작성자에게 다시 할당됩니다. 여기에서 원래 작성자는 아마도 자산을 편집하여 거부된 문제를 해결한 후 자산을 다시 제출할 수 있습니다.
+제출이 검토 작업에서 **거부** 전환을 입력하면 검토를 위해 다시 제출할 수 있도록 업데이트 작업으로 이동합니다. 자산이 여기에 도착하면 비슷한 이름의 **거부** 작업이 실행되고 워크플로 상태를 `거부됨` 및 `보류 중`에 할당합니다. 원래 작성자에게 알림이 전송됩니다. 자산도 원래 작성자에게 다시 할당됩니다. 여기에서 원래 작성자는 아마도 자산을 편집하여 거부된 문제를 해결한 후 자산을 다시 제출할 수 있습니다.
 
 ```xml
     <task>

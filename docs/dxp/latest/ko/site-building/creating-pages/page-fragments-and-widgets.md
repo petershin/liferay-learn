@@ -2,7 +2,6 @@
 toc:
   - ./page-fragments-and-widgets/using-fragments.md
   - ./page-fragments-and-widgets/using-widgets.md
-uuid: b34554d6-3d96-4f96-bcb8-83b486db176b
 ---
 
 # 페이지 조각 및 위젯

@@ -1,4 +1,3 @@
-
 # 솔라 제한 사항
 
 Liferay의 Solr 구현에는 제한이 있습니다. Solr를 검색 엔진으로 선택하면 일부 Liferay 기능 및 API를 사용할 수 없습니다. 최상의 경험을 위해 [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) 설치하십시오.

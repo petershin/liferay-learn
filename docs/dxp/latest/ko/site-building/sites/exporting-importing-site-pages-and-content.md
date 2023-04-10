@@ -1,13 +1,9 @@
----
-uuid: e253af5f-e55d-45f1-a5a9-577d5e8b8443
----
-
 # 사이트 페이지 및 콘텐츠 내보내기/가져오기
 
 Liferay 사이트에는 LAR(Liferay Archive) 파일로 사이트 데이터를 추출하고 전송하기 위한 내보내기/가져오기 애플리케이션이 포함되어 있습니다. 사이트 수준에서 이러한 도구에 액세스할 수 있습니다.
 
 ```{note}
-또한 개별 사이트 애플리케이션 및 [페이지 위젯](../creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/exporting-importing-widget-data.md에 대한 내보내기 및 가져오기 기능에 액세스할 수 있습니다. ).
+또한 개별 사이트 애플리케이션 및 [페이지 위젯](../creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/exporting-importing-widget-data.md에 대한 내보내기 및 가져오기 기능에 액세스할 수 있습니다. ) .
 ```
 
 ## 사이트 LAR 속성 및 요구 사항
@@ -94,7 +90,7 @@ LAR에는 다음과 같은 속성과 요구 사항이 있습니다.
 
 1. *저장*클릭합니다.
 
-이제 새로운 내보내기 프로세스를 생성할 때 [템플릿을 선택할 수 있습니다](#exporting-site-pages-and-content).
+이제 새로운 내보내기 프로세스를 생성할 때 [템플릿을 선택할 수 있습니다](#exporting-site-pages-and-content) .
 
 ## 내보내기/가져오기 프로세스 구성
 

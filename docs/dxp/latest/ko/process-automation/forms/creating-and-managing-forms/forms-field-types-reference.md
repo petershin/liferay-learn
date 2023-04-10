@@ -1,12 +1,11 @@
-
 # 양식 필드 유형 참조
 
 Liferay Forms 응용 프로그램에는 양식에 추가할 수 있는 많은 필드 유형과 요소가 포함되어 있습니다. 사용 가능한 요소를 찾으려면
 
-1. _제품 메뉴_ (![Product Menu](../../../images/icon-product-menu.png))을 열고 사이트 관리 메뉴에서 나침반 아이콘(![Compass](../../../images/icon-compass.png))을 클릭합니다. 양식이 생성될 사이트를 선택합니다.
-1. _콘텐츠 & 데이터_  &rarr; _양식_클릭합니다.
-1. _추가_ 버튼(![Add](../../../images/icon-add.png))을 클릭합니다. 양식 작성기 보기가 나타납니다.
-1. _추가_ 버튼(![Add](../../../images/icon-add.png))을 한 번 더 클릭하여 _요소 추가_ 사이드바를 표시합니다(아직 열리지 않은 경우).
+1. **제품 메뉴**(![Product Menu](../../../images/icon-product-menu.png))을 열고 사이트 관리 메뉴에서 나침반 아이콘(![Compass](../../../images/icon-compass.png))을 클릭합니다. 양식이 생성될 사이트를 선택합니다.
+1. **콘텐츠 & 데이터** &rarr; **양식** 클릭합니다.
+1. **추가** 버튼(![Add](../../../images/icon-add.png))을 클릭합니다. 양식 작성기 보기가 나타납니다.
+1. **추가** 버튼(![Add](../../../images/icon-add.png))을 한 번 더 클릭하여 **요소 추가** 사이드바를 표시합니다(아직 열리지 않은 경우).
 
 ![많은 유용한 양식 요소가 있습니다.](./forms-field-types-reference/images/01.png)
 
@@ -47,7 +46,7 @@ Liferay Forms 응용 프로그램에는 양식에 추가할 수 있는 많은 �
 
 ### 현장확인
 
-현장 확인은 버전 7.4부터 Liferay Forms에서 지원됩니다. 양식 본문에 직접 추가하는 양식 작성기의 필드가 아니라 한 줄 텍스트 또는 숫자 필드를 _확인 필요_ 로 구성할 때만 확인 필드가 양식에 나타납니다(필드의 고급 구성 섹션 사용). 이 필드는 중요한 데이터가 있는 필드(예: 이메일 주소 필드)가 올바르게 입력되었는지 확인합니다.
+현장 확인은 버전 7.4부터 Liferay Forms에서 지원됩니다. 양식 본문에 직접 추가하는 양식 작성기의 필드가 아니라 한 줄 텍스트 또는 숫자 필드를 **확인 필요** 로 구성할 때만 확인 필드가 양식에 나타납니다(필드의 고급 구성 섹션 사용). 이 필드는 중요한 데이터가 있는 필드(예: 이메일 주소 필드)가 올바르게 입력되었는지 확인합니다.
 
 ![확인 필드는 사용자가 올바른 정보를 입력하도록 도와줍니다.](./forms-field-types-reference/images/21.png)
 
@@ -55,7 +54,7 @@ Liferay Forms 응용 프로그램에는 양식에 추가할 수 있는 많은 �
 
 **방향:** 세로(기본값) 또는 가로를 선택하여 확인 필드를 원래 필드 아래에 표시할지 옆에 표시할지 결정합니다.
 
-**레이블:** 원래 필드 레이블의 접두사를 선택합니다. 기본값은 확인이므로 이메일 주소라는 필드의 확인 필드 레이블은 _이메일 주소 확인_입니다.
+**레이블:** 원래 필드 레이블의 접두사를 선택합니다. 기본값은 확인이므로 이메일 주소라는 필드의 확인 필드 레이블은 **이메일 주소 확인** 입니다.
 
 **오류 메시지:** 확인하는 필드에 따라 보다 구체적인 오류 메시지를 제공할 수 있습니다.
 
@@ -83,7 +82,7 @@ Liferay 7.3의 첫 번째 릴리스에서는 편집 가능한 구성 필드 이�
 
 ### 텍스트 항목
 
-사용자는 이 필드에 자유 형식 텍스트를 입력합니다. 예를 들어 전체 이름 필드는 텍스트 필드입니다. 기본적으로 텍스트 필드는 한 줄의 텍스트에 모든 입력을 유지합니다. 더 긴 응답을 수용하려면 [이 예에서와 같이](./creating-forms.md) 텍스트 필드를 구성할 때 여러 줄 설정을 선택하십시오. 텍스트 필드의 [유효성 검사 옵션](./validating-text-and-numeric-field-entries.md ).
+사용자는 이 필드에 자유 형식 텍스트를 입력합니다. 예를 들어 전체 이름 필드는 텍스트 필드입니다. 기본적으로 텍스트 필드는 한 줄의 텍스트에 모든 입력을 유지합니다. 더 긴 응답을 수용하려면 [이 예에서와 같이](./creating-forms.md) 텍스트 필드를 구성할 때 여러 줄 설정을 선택하십시오. 텍스트 필드의 [유효성 검사 옵션](./validating-text-and-numeric-field-entries.md ) .
 
 ![여러 줄 텍스트 필드는 여러 줄의 사용자 입력을 허용합니다.](./forms-field-types-reference/images/03.png)
 
@@ -144,10 +143,10 @@ Liferay 7.4에 추가된 사용자는 한 필드에 날짜와 시간을 모두 �
 숫자 필드에 대한 몇 가지 흥미로운 고급 필드 설정이 있습니다.
 
 - [**Require Confirmation**](#field-confirmation) 은 사용자가 데이터를 올바르게 입력했는지 확인합니다.
-- **[유효성 검사](./validating-text-and-numeric-field-entries.md)** 사전 구성된 요구 사항에 대한 사용자 입력을 제한합니다. 
+- [**유효성 검사](./validating-text-and-numeric-field-entries.md**) 사전 구성된 요구 사항에 대한 사용자 입력을 제한합니다. 
       ![숫자 입력을 확인합니다.](./forms-field-types-reference/images/25.png)
 
-- **[입력 마스크](./validating-text-and-numeric-field-entries.md#masking-numeric-fields)** 을 사용하면 사용자가 숫자 데이터를 입력할 때 올바른 형식을 표시할 수 있습니다.
+- [**입력 마스크](./validating-text-and-numeric-field-entries.md#masking-numeric-fields**) 을 사용하면 사용자가 숫자 데이터를 입력할 때 올바른 형식을 표시할 수 있습니다.
 
 ### 업로드
 
@@ -172,7 +171,7 @@ dl.show.hidden.mount.folders=true
 제어판에서 게스트 업로드 동작을 구성합니다: 시스템 설정 &rarr; 양식(콘텐츠 및 데이터) &rarr; 양식 또는 com.liferay.dynamic.data.mapping.form.web.internal.configuration이라는 [구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) `하여 구성합니다. DDMFormWebConfiguration.config`.
 
 ```{tip}
-[인스턴스 범위](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions)에서 Forms 애플리케이션을 구성하려면 인스턴스 설정에서 Forms 항목을 사용합니다.
+[인스턴스 범위](../../../system-administration/configuring-liferay/understanding-configuration-scope.md#scope-definitions) 에서 Forms 애플리케이션을 구성하려면 인스턴스 설정에서 Forms 항목을 사용합니다.
 ```
 
 **게스트 업로드 파일 확장자(`guestUploadFileExtensions`):** 허용되는 파일 확장자의 쉼표로 구분된 목록을 입력합니다. 기본적으로 다음 목록이 지원됩니다: `doc`, `docx`, `jpeg`, `jpg`, `pdf`, `png`, `ppt`, `pptx`, `tiff`, `txt`, `xls`, `xlsx`.
@@ -193,7 +192,7 @@ dl.show.hidden.mount.folders=true
 게스트 사용자는 이미지에 액세스하거나 이미지를 업로드할 수 없습니다. 인증된 사용자만 양식에 액세스할 수 있는 경우가 아니면 이 필드를 사용하지 마십시오.
 ```
 
-이미지를 추가한 후 사용자는 이미지에 대한 추가 필드인 _설명_채울 수 있습니다. 이미지 필드가 선택 사항인 경우 사용법은 간단합니다. 이미지나 해당 설명이 필요하지 않습니다. 그러나 모든 양식 필드와 마찬가지로 이미지 필드도 필수로 표시될 수 있습니다. 이미지 필드가 필수인 경우 양식 작성자는 설명이 필수인지 선택 사항인지 선택할 수 있습니다.
+이미지를 추가한 후 사용자는 이미지에 대한 추가 필드인 **설명** 채울 수 있습니다. 이미지 필드가 선택 사항인 경우 사용법은 간단합니다. 이미지나 해당 설명이 필요하지 않습니다. 그러나 모든 양식 필드와 마찬가지로 이미지 필드도 필수로 표시될 수 있습니다. 이미지 필드가 필수인 경우 양식 작성자는 설명이 필수인지 선택 사항인지 선택할 수 있습니다.
 
 ![필수 이미지 필드의 설명 필드는 필수 또는 선택 사항일 수 있습니다.](./forms-field-types-reference/images/27.png)
 

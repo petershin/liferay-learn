@@ -1,4 +1,3 @@
-
 # 사용자 계정 API 기본 사항
 
 제어판에서 [사용자](../users/adding-and-managing-users.md) 추가하고 관리할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 이러한 서비스를 호출하여 사용자를 추가, 편집, 삭제할 수 있습니다.

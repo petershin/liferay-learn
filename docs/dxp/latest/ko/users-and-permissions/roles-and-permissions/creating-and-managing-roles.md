@@ -1,7 +1,3 @@
----
-uuid: 52fccdbc-556d-40a3-992e-e0eba8ee0542
----
-
 # 역할 생성 및 관리
 
 역할과 권한을 [이해하다](./understanding-roles-and-permissions.md) 이해하면 사용자가 Liferay DXP 솔루션 내에서 작업할 수 있도록 권한을 부여하는 데 필요한 역할을 생성할 수 있습니다.
@@ -12,9 +8,9 @@ uuid: 52fccdbc-556d-40a3-992e-e0eba8ee0542
 
 먼저, [생성해야 하는 역할의 범위](./understanding-roles-and-permissions.md) 결정합니다. 역할은 사이트, 조직, 자산 라이브러리 또는 계정별로 전역적으로(일반 역할) 범위를 지정할 수 있습니다.
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* 탭으로 이동하여 *역할*클릭합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** 탭으로 이동하여 **역할** 클릭합니다.
 
-1. *추가* (![Add Button](../../images/icon-add.png))을 클릭합니다.
+1. **추가**(![Add Button](../../images/icon-add.png))을 클릭합니다.
 
 1. 역할 유형을 선택합니다.
 
@@ -22,7 +18,7 @@ uuid: 52fccdbc-556d-40a3-992e-e0eba8ee0542
 
 1. 키를 입력합니다. 프로그래밍 방식으로 역할을 참조하기 위한 고유 식별자입니다. 기본적으로 제목 값이 사용됩니다.
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 ![역할 유형을 선택하고 제목, 설명 및 키를 입력합니다.](./creating-and-managing-roles/images/01.png)
 
@@ -32,13 +28,13 @@ uuid: 52fccdbc-556d-40a3-992e-e0eba8ee0542
 
 역할의 제목, 설명 및 키는 언제든지 업데이트할 수 있지만 해당 유형/범위는 변경할 수 없습니다.
 
-이렇게 하려면 역할의 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 *편집*선택합니다. 완료되면 *저장*클릭합니다.
+이렇게 하려면 역할의 **작업** 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 **편집** 선택합니다. 완료되면 **저장** 클릭합니다.
 
 ## 역할 관리 권한
 
 개별 역할을 관리하기 위한 권한을 할당할 수 있습니다.
 
-1. 역할의 *작업* 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 *권한*선택합니다.
+1. 역할의 **작업** 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 **권한** 선택합니다.
 
 1. 기존 일반 역할이 선택한 역할에 대해 수행할 수 있는 작업을 지정합니다. 이 할당은 개별 역할에 대한 것이며 [역할 애플리케이션에 대한 권한 정의](./defining-role-permissions.md)와는 다릅니다.
    
@@ -52,7 +48,7 @@ uuid: 52fccdbc-556d-40a3-992e-e0eba8ee0542
 
 ## 역할 삭제
 
-1. 역할의 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 *삭제*선택합니다. 
+1. 역할의 **작업** 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 **삭제** 선택합니다. 
 
 1. 정말로 역할을 삭제할 것인지 확인합니다. 역할이 연결된 [개의 워크플로 작업 할당](../../process-automation/workflow/using-workflows/reviewing-assets.md) 과 함께 즉시 삭제됩니다.
    
@@ -64,7 +60,7 @@ uuid: 52fccdbc-556d-40a3-992e-e0eba8ee0542
 
 내보내기 또는 가져오기 프로세스를 시작하려면 
 
-1. 역할 애플리케이션을 열고 애플리케이션 표시줄에서 *작업* 버튼 ![Actions Button](./../../images/icon-actions.png) 클릭한 다음 *내보내기/가져오기*선택합니다.
+1. 역할 애플리케이션을 열고 애플리케이션 표시줄에서 **작업** 버튼 ![Actions Button](./../../images/icon-actions.png) 클릭한 다음 **내보내기/가져오기** 선택합니다.
    
    ![역할 애플리케이션을 열고 애플리케이션 표시줄에서 작업 버튼을 클릭한 다음 내보내기/가져오기를 선택합니다.](./creating-and-managing-roles/images/04.png)
 

@@ -1,4 +1,3 @@
-
 # 검색 Blueprint 생성 및 관리
 
 [검색 청사진](./understanding-search-blueprints.md) 글로벌 메뉴의 관리 애플리케이션을 사용하여 생성, 업데이트 및 삭제됩니다. 글로벌 메뉴의 애플리케이션 섹션을 열고 검색 경험 카테고리를 찾으십시오. 청사진이 이미 있고 Liferay [검색 페이지](../../search-pages-and-widgets/working-with-search-pages.md)에서 그 기능을 적용하려면 [검색 페이지에서 검색 청사진 사용](using-a-search-blueprint-on-a-search-page.md)참조하십시오.

@@ -18,7 +18,7 @@ DXP 번들 및 DXP 애플리케이션 서버 설치의 패치 단계는 비슷�
 Docker 컨테이너에서 DXP를 실행하는 경우 [Docker에서 DXP 패치](../../installing-liferay/using-liferay-docker-images/patching-dxp-in-docker.md의 지침을 따르십시오. ) .
 ```
 
-DXP 번들을 패치하는 경우 아래의 기본 패치 단계를 계속하십시오. 응용 프로그램 서버에서 DXP를 패치하는 경우 [패치 단계를 따르기 전에](#preparing-to-patch-dxp-on-an-application-server)**추가 준비를** .
+DXP 번들을 패치하는 경우 아래의 기본 패치 단계를 계속하십시오. 응용 프로그램 서버에서 DXP를 패치하는 경우 [패치 단계를 따르기 전에](#preparing-to-patch-dxp-on-an-application-server) **추가 준비를** .
 
 ## 패치 단계
 

@@ -1,14 +1,10 @@
----
-uuid: ff808648-0541-424c-b35b-dab20e241790
----
-
 # 연습: Docker를 사용하여 Liferay 및 Elasticsearch 실행
 
 > 적용 대상: Liferay DXP 7.3+
 
 여기에서 로컬 컴퓨터의 최소 Liferay-Elasticsearch 설정을 살펴보고 Elasticsearch와 Liferay DXP 7.3+ 간의 [REST 클라이언트](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-high.html) 연결이 어떻게 구성되었는지 확인할 수 있습니다. 이 예에서는 두 개의 Docker 컨테이너(Elasticsearch 컨테이너 하나와 Liferay DXP 컨테이너 하나)를 사용합니다. 보다 개념적이고 프로덕션과 유사한 정보는 [Elasticsearch 설치](./getting-started-with-elasticsearch.md)을 참조하십시오.
 
-Elasticsearch 연결에서 인증 및 암호화를 활성화하려면 [Securing Elasticsearch](./securing-elasticsearch.md) 읽으십시오.
+Elasticsearch 연결에서 인증 및 암호화를 활성화하려면 [Elasticsearch 보안](./securing-elasticsearch.md) 읽으십시오.
 
 ## Docker 컨테이너에 바인드 마운트를 위한 로컬 폴더 생성
 
@@ -91,7 +87,7 @@ Liferay DXP가 Elasticsearch와 연결하는 데 필요한 속성을 지정한 �
 ## 추가 정보
 
 * [Elasticsearch 보안](./securing-elasticsearch.md)
-* [Liferay Enterprise Search](../../liferay-enterprise-search.md)
+* [라이프레이 엔터프라이즈 검색](../../liferay-enterprise-search.md)
 * [수색 페이지](../../search-pages-and-widgets/working-with-search-pages/search-pages.md)
 * [검색 관리 및 조정](../../search-administration-and-tuning.md)
 * [Elasticsearch 커넥터 설정](./elasticsearch-connector-configuration-reference.md)

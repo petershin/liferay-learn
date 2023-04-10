@@ -1,7 +1,3 @@
----
-uuid: 14f37389-738c-415b-840c-e405e65fe58a
----
-
 # 톰캣에 설치하기
 
 ```{important}
@@ -16,7 +12,7 @@ Tomcat에 설치하려면 DXP WAR 설치, 종속성 설치, Tomcat 구성 및 DX
 
 ## 전제 조건
 
-Tomcat을 구성하는 방법에 관계없이 [도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community)에서 이러한 파일을 다운로드하여 설치해야 합니다.
+Tomcat을 구성하는 방법에 관계없이 [도움말 센터](https://customer.liferay.com/downloads) (구독) 또는 [Liferay 커뮤니티 다운로드](https://www.liferay.com/downloads-community) 에서 이러한 파일을 다운로드하여 설치해야 합니다.
 
 * DXP 전쟁 파일
 * OSGi 종속성 ZIP 파일
@@ -25,10 +21,10 @@ Tomcat을 구성하는 방법에 관계없이 [도움말 센터](https://custome
 Java JDK 8 또는 11이 필요합니다.
 
 ```{note}
-지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151)를 참조하십시오.  권장 JVM 설정은 [JVM 구성](../../reference/jvm-configuration.md)을 참조하십시오.
+지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 를 참조하십시오.  권장 JVM 설정은 [JVM 구성](../../reference/jvm-configuration.md)을 참조하십시오.
 ```
 
-Tomcat 서버 상위 폴더는 [*Liferay Home*](../../reference/liferay-home.md)입니다. `$TOMCAT_HOME` Tomcat 서버 폴더를 나타냅니다. 일반적으로 이름은 `tomcat-[version]` 또는 `apache-tomcat-[version]`입니다.
+Tomcat 서버 상위 폴더는 [**Liferay Home**](../../reference/liferay-home.md)입니다. `$TOMCAT_HOME` Tomcat 서버 폴더를 나타냅니다. 일반적으로 이름은 `tomcat-[version]` 또는 `apache-tomcat-[version]`입니다.
 
 ## DXP WAR 설치
 
@@ -37,12 +33,12 @@ Tomcat 서버 상위 폴더는 [*Liferay Home*](../../reference/liferay-home.md)
 
 ## 종속성 설치
 
-DXP는 Liferay-Tomcat 번들에 포함된 많은 JAR에 의존합니다. 번들의 일부 JAR은 반드시 필요한 것은 아니지만 여전히 유용할 수 있습니다. Tomcat 번들을 사용하지 않는 경우 아래 설명된 대로 다운로드한 *OSGi 종속성* 아카이브와 타사 JAR 종속성을 사용합니다.
+DXP는 Liferay-Tomcat 번들에 포함된 많은 JAR에 의존합니다. 번들의 일부 JAR은 반드시 필요한 것은 아니지만 여전히 유용할 수 있습니다. Tomcat 번들을 사용하지 않는 경우 아래 설명된 대로 다운로드한 **OSGi 종속성** 아카이브와 타사 JAR 종속성을 사용합니다.
 
 1. `[Liferay Home]/osgi` 폴더에 OSGi Dependencies ZIP 파일 내용의 압축을 풉니다(이 폴더가 없으면 생성). Liferay의 OSGi 런타임은 이러한 모듈에 의존합니다.
 1. DXP 7.4+ WAR 파일에는 MariaDB 및 PostgreSQL용 드라이버가 포함되어 있습니다. 이전 WAR에는 해당 기능이 없습니다. 7.4+ WAR에 사용 중인 지원 데이터베이스용 드라이버가 없는 경우 데이터베이스 공급업체의 JDBC JAR 파일을 다운로드하여 `$CATALINA_BASE/webapps/ROOT/WEB-INF/shielded-container-lib` 폴더에 넣습니다. .
 
-    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 참조하십시오.
+    지원되는 데이터베이스 목록은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151) 참조하십시오.
 
 ```{note}
 Hypersonic 데이터베이스는 DXP와 함께 번들로 제공되며 테스트 목적으로 유용합니다. 프로덕션 인스턴스에 HSQL을 사용하지 마세요.
@@ -96,7 +92,7 @@ DXP를 실행하도록 Tomcat을 구성하는 작업에는 다음 작업이 포�
 | `-XX:SurvivorRatio` | 서바이벌 공간에 대한 새 공간의 비율입니다. 생존자 공간은 구세대 공간으로 승격되기 전에 젊은 세대 개체를 보유합니다.       |
 
 ```{note}
-DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Tuning Liferay](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
+DXP를 설치한 후 성능 향상을 위해 이러한 구성(이러한 JVM 옵션 포함)을 추가로 조정할 수 있습니다. [Liferay 튜닝](../../setting-up-liferay/tuning-liferay.md) 및 [JVM 조정](../../setting-up-liferay/tuning-your-jvm. md) 자세한 내용은
 ```
 
 Tomcat 구성을 계속하십시오.
@@ -213,10 +209,10 @@ DXP 7.3 및 이전 버전의 경우 다음 값을 `common.loader` 속성의 값 
 1. 사용 가능한 기본 메모리 및 메타스페이스 제한이 설정됩니다.
 1. `$CATALINA_BASE/conf/Catalina/localhost/ROOT.xml` 웹 애플리케이션 컨텍스트를 선언합니다.
 1. `$CATALINA_BASE/conf/server.xml` UTF-8 인코딩을 설정합니다.
-1. `$CATALINA_BASE/conf/server.xml` 호스트 액세스 로그를 쓰기 위한 값을 선언하지 않습니다. *(선택사항)*
+1. `$CATALINA_BASE/conf/server.xml` 호스트 액세스 로그를 쓰기 위한 값을 선언하지 않습니다. (**선택사항**)
 1. `$CATALINA_HOME/conf/logging.properties` 원하는 로그 수준을 설정합니다.
 1. `$CATALINA_HOME/conf/web.xml` 태그 핸들러 풀을 설정하고 Java 8을 JSP 컴파일러로 설정합니다.
-1. `$CATALINA_HOME/conf/web.xml` 애플리케이션 서버가 추가 메타데이터를 찾지 않도록 지정합니다. *(선택사항)*
+1. `$CATALINA_HOME/conf/web.xml` 애플리케이션 서버가 추가 메타데이터를 찾지 않도록 지정합니다. (**선택사항**)
 1. Tomcat의 `bin` 폴더에 있는 스크립트는 실행 가능합니다.
 1. `$CATALINA_BASE/conf/catalina.properties`의 `common.loader` 속성은 필수 JAR에 대한 Catalina 액세스 권한을 부여합니다.
 
@@ -261,7 +257,7 @@ Liferay DXP는 DXP의 내장 데이터 소스(권장)를 사용하거나 앱 서
 
     데이터베이스 URL, 사용자 이름 및 암호를 적절한 값으로 바꾸십시오. Liferay는 기본적으로 데이터베이스 연결 풀에 [Hikari CP](https://liferay.dev/blogs/-/blogs/tomcat-hikaricp) 을 사용합니다.
 
-1. **[Liferay_Home]**의 `portal-ext.properties` 파일에서 데이터 소스를 지정하십시오. 예를 들어,
+1. [**Liferay_Home**] 의 `portal-ext.properties` 파일에서 데이터 소스를 지정하십시오. 예를 들어,
 
     ```properties
     jdbc.default.jndi.name=jdbc/LiferayPool

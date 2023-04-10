@@ -1,4 +1,3 @@
-
 # 제3자를 번역에 사용
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U15+ 및 GA15+`

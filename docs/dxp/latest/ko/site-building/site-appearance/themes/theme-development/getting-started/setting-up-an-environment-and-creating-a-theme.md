@@ -1,4 +1,3 @@
-
 # 환경 설정 및 테마 만들기
 
 테마 만들기는 테마 개발의 첫 단계입니다. 고유한 테마가 있으면 이를 Liferay DXP 인스턴스에 배포하고 [사이트 사용자](../../introduction-to-themes.md#developing-themes) 에 사용할 수 있습니다.

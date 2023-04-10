@@ -1,18 +1,14 @@
----
-uuid: ac5e5ddc-ee51-48a5-86ac-ac47e6a0ea0e
----
-
 # 조각 드롭 영역 정의
 
 드롭 영역은 콘텐츠 페이지를 구축하는 데 필수적입니다. 이를 통해 사용자가 다른 조각과 위젯을 끌어다 놓을 수 있는 조각 내 영역을 정의하여 고유한 페이지 레이아웃과 동적 디스플레이를 생성할 수 있습니다.
 
 놓기 영역을 정의하려면 다음 단계를 따르세요.
 
-1. *사이트 관리* &rarr; *디자인* &rarr; *단편*로 이동합니다.
+1. **사이트 관리** &rarr; **디자인** &rarr; **단편** 로 이동합니다.
 
 1. Fragment Sets에서 편집하려는 조각이 있는 세트를 선택합니다.
 
-1. 프래그먼트의 *Actions* (![Action](./../../../images/icon-actions.png)) 버튼을 클릭하고 *Edit* 선택하여 [Fragments Editor](./using-the-fragments-editor.md)엽니다.
+1. 프래그먼트의 **Actions**(![Action](./../../../images/icon-actions.png)) 버튼을 클릭하고 **Edit** 선택하여 [Fragments Editor](./using-the-fragments-editor.md)엽니다.
 
 1. HTML 코드 영역에서 `<lfr-drop-zone></lfr-drop-zone>` 레이블을 추가하여 조각 내 드롭 영역을 정의합니다.
 

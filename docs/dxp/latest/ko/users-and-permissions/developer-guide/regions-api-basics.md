@@ -5,6 +5,7 @@
 Liferay의 REST API를 사용하여 지역을 만들고 관리합니다.
 
 ## 지역 추가
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 

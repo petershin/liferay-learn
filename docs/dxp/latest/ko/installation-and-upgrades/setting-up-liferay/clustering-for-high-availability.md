@@ -4,7 +4,6 @@ toc:
 - ./clustering-for-high-availability/database-configuration-for-cluster-nodes.md
 - ./clustering-for-high-availability/configuring-cluster-link.md
 - ./clustering-for-high-availability/configuring-unicast-over-tcp.md
-uuid: e38676bb-0c00-45cb-a1ff-37038f7ad701
 ---
 
 # 고가용성을 위한 클러스터링
@@ -46,7 +45,7 @@ DXP 클러스터를 구성한 후 여기에 애플리케이션을 배포하고 �
 
 ## 무엇 향후 계획
 
-예시를 통해 클러스터를 생성하는 것은 DXP 클러스터링을 이해하는 훌륭한 첫 단계입니다. 자세한 내용은 [예제: 단순 DXP 클러스터 생성](./clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md)부터 시작하십시오. 그런 다음 위에 나열된 [클러스터링 요구 사항](#clustering-requirements)을 처리합니다.
+예시를 통해 클러스터를 생성하는 것은 DXP 클러스터링을 이해하는 훌륭한 첫 단계입니다. 자세한 내용은 [예제: 단순 DXP 클러스터 생성](./clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md)부터 시작하십시오. 그런 다음 위에 나열된 [클러스터링 요구 사항](#clustering-requirements) 을 처리합니다.
 
 ```{note}
 이 문서에서는 Java EE 애플리케이션 서버, HTTP 서버 및 로드 밸런서와 같은 타사 소프트웨어의 특정 구현을 사용하지 않고 DXP 특정 클러스터 구성에 대해 설명합니다. 해당 구성 요소에 대한 설명서를 참조하여 구성하십시오. DXP 클러스터를 생성하기 전에 OS가 127.0.0.1에서 로컬 네트워크에 대한 시스템의 호스트 이름을 정의하지 않는지 확인하십시오.

@@ -1,7 +1,3 @@
----
-uuid: a8dd9eb8-f44a-4cc3-8425-1685472c0119
----
-
 # 포틀릿 필터로 포틀릿 활동 감사
 
 포틀릿 필터는 각 [포틀릿 요청 처리 단계](../../building-applications/developing-a-java-web-application/reference/portlets.md#portlet-phases) 이 시작될 때 요청과 응답을 가로채므로 거기에 기능을 추가할 수 있습니다. 따라서 렌더링, 작업, 이벤트 및 리소스 제공 단계 동안 포틀릿 활동을 감사하는 데 유용합니다.
@@ -22,7 +18,7 @@ uuid: a8dd9eb8-f44a-4cc3-8425-1685472c0119
 1. `@Component` 주석을 사용하여 포틀릿 필터를 OSGi 프레임워크 내의 구성 요소로 선언하고 이를 `PortletFilter.class` 서비스로 식별합니다.
 
    ```{note}
-   포틀릿 필터는 [OSGi 선언적 서비스(DS) 구성 요소](https://enroute.osgi.org/FAQ/300-declarative-services.html)입니다. 필터는 `portlet.xml` 설명자 또는 `@PortletLifecycleFilter` 주석을 사용하여 포틀릿에 적용할 수도 있습니다. 자세한 내용은 Portlet 3.0 사양을 참조하십시오.
+   포틀릿 필터는 [OSGi 선언적 서비스(DS) 구성 요소](https://enroute.osgi.org/FAQ/300-declarative-services.html) 입니다. 필터는 `portlet.xml` 설명자 또는 `@PortletLifecycleFilter` 주석을 사용하여 포틀릿에 적용할 수도 있습니다. 자세한 내용은 Portlet 3.0 사양을 참조하십시오.
    ```
 
 1. `@Component` 선언에 다음 속성을 입력합니다.

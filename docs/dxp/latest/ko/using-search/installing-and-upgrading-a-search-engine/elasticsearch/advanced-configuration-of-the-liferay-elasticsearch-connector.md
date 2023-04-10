@@ -1,4 +1,3 @@
-
 # Liferay Elasticsearch 커넥터의 고급 구성
 
 [Elasticsearch 연결](./connecting-to-elasticsearch.md) 구성 파일 [를 사용하거나 시스템 설정](./elasticsearch-connector-configuration-reference.md#configuration-files-and-system-settings-entries) 통해 구성됩니다.

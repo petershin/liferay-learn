@@ -1,4 +1,3 @@
-
 # Docker를 통한 업그레이드
 
 자동 업그레이드가 활성화된 상태에서 Liferay Docker 이미지를 실행하면 데이터베이스 업그레이드 도구를 사용하여 Liferay 시작 시 데이터베이스를 투명하게 업그레이드합니다. 업그레이드가 완료된 후 [해당 Docker 컨테이너를 통해 Liferay 사용](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images.md)을 계속하거나 새 업그레이드된 데이터베이스에 Liferay 온프레미스 설치.

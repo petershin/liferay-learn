@@ -28,7 +28,7 @@ It's important to note four pieces of background information:
 
 ## Supporting Every Deployment Approach
 
-Liferay has always been about preserving customer investment in their chosen software stack and infrastructure. As a result, Liferay offers three product deployment offerings so customers can choose the approach that fits their requirements: 
+Liferay has always been about preserving customer investment in their chosen software stack and infrastructure. As a result, Liferay has three product deployment offerings so customers can choose the approach that fits their requirements: 
 
 1. **Liferay Experience Cloud** provides a Software-as-a-Service (SaaS) deployment model.
 

@@ -88,15 +88,15 @@ To find the fields you can filter by in the Custom Filter widget, users with the
 
 {bdg-secondary}`Available 7.2 FP10+, 7.3 FP1+, 7.4 (all updates)`
 
-As described in [Accessing Nested Fields](../search-facets/custom-facet.md#accessing-nested-fields), DDM Fields became [nested fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) as of Liferay 7.2 SP3+/FP8+ (and on all Liferay 7.3 versions). On the latest Fix Pack and GA release of 7.2 and 7.3, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for these nested fields.
+As described in [Accessing Nested Fields](../search-facets/custom-facet.md#accessing-nested-fields), object definition and web content structure fields are nested fields. On the latest Fix Pack and GA release of 7.2 and 7.3, and in all 7.4 updates, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for nested fields.
 
-To find DDM fields in existing documents in the index,
+To inspect nested fields in existing documents in the index,
 
-1. Enable _Display Results in Document Form_ in the Search Results widget's configuration, then search for a result that uses the nested field.
+1. Enable _Display Results in Document Form_ in the Search Results widget's configuration, then search for a result that uses a nested field.
 
-1. Expand the _Details_ view of the result, then find its `ddmFieldArray` field and copy its value. For example,
+1. Expand the _Details_ view of the result, then find its parent field ( in web content structure, `nestedFieldArray` in objects) field and copy its value. For example, a web content article has a `ddmFieldArray` with nested fields:
 
-```json
+   ```json
    "ddmFieldArray" : [
                {
                  "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
@@ -105,7 +105,19 @@ To find DDM fields in existing documents in the index,
                  "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
                }
              ],
-```
+   ```
+
+   Meanwhile, an object entry has a `nestedFieldArray` with nested fields:
+
+   ```json
+   "nestedFieldArray" : [
+      {
+        "fieldName" : "lastAcessed",
+        "valueFieldName" : "value_date",
+        "value_date" : "20230502000000"
+      }
+   ],
+    ```
 
 Using a nested field in a Custom Filter configuration requires three custom filter widgets.  A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is added for wrapping the required child queries: one child query matches the field's name, the other the value.
 
@@ -113,7 +125,7 @@ Using a nested field in a Custom Filter configuration requires three custom filt
 If you require custom filters on multiple nested fields in the same page, you must configure separate custom parameter names for each child query. See [Custom Filter Examples](./custom-filter-examples.md#boosting-matches-to-nested-fields) for an example. 
 ```
 
-See [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) for an example showing the use of a DDM Structure field with the Custom Filter widget.
+See [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) for an example showing the use of a web content structure field with the Custom Filter widget.
 
 ## Related Content
 

@@ -3,13 +3,12 @@ uuid: 01f46794-2cd4-4ffc-94d3-e244880f2b6f
 ---
 # Packaging Client Extensions
 
-{bdg-secondary}`7.4+`
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (self-hosted)`
 
-The Liferay workspace takes care of packaging client extension projects but there are details about packaging which are necessary to understand when [specifying the files to include](working-with-client-extensions.md#packaging-files-in-client-extensions) or when building a custom packaging tool.
+Client extension projects are built as deployable `.zip` archives, called **Liferay Universal File Format Archives** (LUFFAs). Each LUFFA follows a particular structure and defines a few specific component files (which can be automatically generated or provided by your project). The Liferay workspace takes care of packaging client extension projects when you build them, but understanding how it's packaged is important when you are [assembling client extensions](./working-with-client-extensions.md#assembling-client-extensions), or if you're using a different process to create a LUFFA.
 
-The packaging output is called the **Universal File Format Archive** (UFFA) which is a ZIP archive which follows a particular structure and defines a few specific contents some of which are automatically generated if not provided by the project.
+This is a LUFFA's structure:
 
-The structure of a UFFA is:
 ```bash
 .
 ├── batch
@@ -19,45 +18,55 @@ The structure of a UFFA is:
 ├── LCP.json
 ├── static
 │   └── **/*
-└── [microservice_resources]*
+└── [microservice resources]
 ```
 
 ## `batch`
 
-***Note:*** This path is only required by `batch` client extension projects.
+```{note}
+This directory is only required by [batch client extension projects](./batch-client-extensions.md).
+```
 
-Any number of `*.batch-engine-data.json` files can be placed into a directory structure (of unlimited depth and structure) under the root level `batch` directory. These files must be accompanied by a `batch` client extension defined in `client-extension.yaml` otherwise they will be ignored.
+The data entities included in a batch client extension are represented as `*.batch-engine-data.json` files, within a `batch/` folder in the built LUFFA. These files can be in any folder structure within the `batch/` folder.
+
+Any number of `*.batch-engine-data.json` files can be placed into a directory structure (of unlimited depth and structure) under the root level `batch/` directory. These files are ignored if there is no batch client extension defined in your project's `client-extension.yaml` file.
 
 ## `*.client-extension-config.json`
 
-***Note:*** At least one is **required**.
+```{note}
+At least one `*.client-extension-config.json` file is **required** in each LUFFA.
+```
 
-One or more client extension config json ([OSGi Configuration Resource Format](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.configurator.html#d0e131566)) files are placed in the root of the archive. Usually these files are converted automatically by the workspace from the contents of `client-extension.yaml`. The conversion from `yaml` to `json` is not a 1:1 mapping. The heuristics of the conversion are codified in the [workspace plugin](https://repo1.maven.org/maven2/com/liferay/com.liferay.gradle.plugins.workspace/).
+One or more `*.client-extension-config.json` ([OSGi Configuration Resource Format](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.configurator.html#d0e131566)) files are placed at the root of the LUFFA, and they define how your client extensions are structured in the archive. Usually these files are converted automatically during the build process based on your `client-extension.yaml` file's contents. The conversion from YAML to JSON format is not a 1:1 mapping. The conversion process is specified by the [Liferay workspace plugin](https://repo1.maven.org/maven2/com/liferay/com.liferay.gradle.plugins.workspace/).
 
 ## `Dockerfile`
 
-***Note:*** One is **required**.
+```{note}
+At least one Dockerfile is **required** in each LUFFA.
+```
 
-In the case of `microservice` client extensions, a `Dockerfile` must be provided in the root of the archive. This is usually accomplished by placing the `Dockerfile` in the root of the project where the workspace will then copy this file into the archive. This `Dockerfile` must be constructed such that it can execute the `microservice` client extensions in the project. Liferay may provide a limited number of prepared, easy to adopt Docker images for some use cases.
+You must provide a [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) in your project for [microservice client extensions](./microservice-cient-extensions.md). You can provide it in the root of your project, so that it's copied into the LUFFA when your project is built.
 
-In the case of `batch`, `configuration` and `front-end` client extensions the `Dockerfile` is prescribed and will be automatically added into the archive.
+You must write your `Dockerfile` such that it can execute the microservice client extensions in your project. For example, your `Dockerfile` may need to install specific tools that your microservice's code needs to run. Liferay may provide a limited number of prepared, easy-to-adopt Docker images for some use cases.
 
-When implementing a packaging tool the following docker files are expected:
+The build process automatically generates an appropriate `Dockerfile` for [batch](./batch-client-extensions.md), [configuration](./configuration-client-extensions.md), and [front-end](./front-end-client-extensions.md) client extensions, and includes it in the LUFFA.
 
-* `batch` - use `liferay/batch:latest`
+If you're packaging the LUFFA yourself, these `Dockerfile`s are expected:
+
+* **Batch**: use `liferay/batch:latest`
 
     ```Dockerfile
     FROM liferay/batch:latest
     COPY /batch /batch
     ```
 
-* `configuration` - use `liferay/noop:latest`
+* **Configuration**: use `liferay/noop:latest`
 
     ```Dockerfile
     FROM liferay/noop:latest
     ```
 
-* `front-end` - use `liferay/caddy:latest`
+* **Front-end**: use `liferay/caddy:latest`
 
     ```Dockerfile
     FROM liferay/caddy:latest
@@ -66,15 +75,23 @@ When implementing a packaging tool the following docker files are expected:
 
 ## `LCP.json`
 
-***Note:*** One is **required**.
+```{note}
+An `LCP.json` file is **required** in each LUFFA.
+```
 
-In the case of `microservice` client extensions, a `LCP.json` must be provided in the root of the archive. This is usually accomplished by placing the `LCP.json` in the root of the project where the workspace will then copy this file into the archive. This `LCP.json` declares the settings used to run the `microservice` client extension image in LXC.
+You must provide an `LCP.json` file in your project for [microservice client extensions](./microservice-client-extensions.md). You can provide it in the root of your project, so that it's copied into the LUFFA when your project is built. This `LCP.json` file configures the container that is used for the microservice when it's deployed in Liferay Experience Cloud.
 
-In the case of `batch`, `configuration` and `front-end` client extensions the `LCP.json` is prescribed and will be automatically added into the archive.
+The build process automatically generates an appropriate `LCP.json` file for [batch](./batch-client-extensions.md), [configuration](./configuration-client-extensions.md), and [front-end](./front-end-client-extensions.md) client extensions, and includes it in the LUFFA.
 
-When implementing a packaging tool the following `LCP.json`s are suggested:
+If you're packaging the LUFFA yourself, these specifications are suggested:
 
-* `batch` - the batch docker image does not require significant number of resources so the `LCP.json` can specify small values for `cpu`, `memory` and `scale`. It requires setting the environment variable `LIFERAY_BATCH_OAUTH_APP_ERC` to the value of the `oAuthApplicationHeadlessServer` property declared for the batch client extension. This can be provided through interpolation as shown bellow. It must declare `kind` to be `Job`.
+* **Batch**:
+
+    A batch Docker image does not require significant resources, so the `LCP.json` can specify small values for `cpu`, `memory` and `scale`.
+
+    It must declare `kind` to be `Job`.
+
+    It requires setting the environment variable `LIFERAY_BATCH_OAUTH_APP_ERC` to the value of your batch client extension's `oAuthApplicationHeadlessServer` property. This can be provided through interpolation, like the example below.
 
     ```json
     {
@@ -89,7 +106,11 @@ When implementing a packaging tool the following `LCP.json`s are suggested:
     }
     ```
 
-* `configuration` - the configuration docker image requires little-to-no resources (even less than batch) so the `LCP.json` can specify very small values for `cpu`, `memory` and `scale`. It must declare `kind` to be `Job`.
+* **Configuration**:
+
+    A configuration Docker image requires very little resources (even less than batch), so the `LCP.json` can specify very small values for `cpu`, `memory` and `scale`.
+
+    It must declare `kind` to be `Job`.
 
     ```json
     {
@@ -101,7 +122,15 @@ When implementing a packaging tool the following `LCP.json`s are suggested:
     }
     ```
 
-* `front-end` - the front-end docker image does not require significant number of resources so the `LCP.json` can specify small values for `cpu`, `memory` and `scale`. It must declare `kind` to be `Deployment`. It must specify the `loadBalancer` property with `targerPort` set to `80`. It _should_ also specify `livenessProbe` and `readinessProbe` properties for self-healing.
+* **Front-end**:
+
+    A front-end Docker image does not require significant resources, so the `LCP.json` can specify small values for `cpu`, `memory` and `scale`.
+
+    It must declare `kind` to be `Deployment`.
+
+    It must specify the `loadBalancer` property with `targerPort` set to `80`.
+
+    It should also specify [`livenessProbe` and `readinessProbe` properties](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) for self-healing.
 
     ```json
     {
@@ -129,19 +158,19 @@ When implementing a packaging tool the following `LCP.json`s are suggested:
     }
     ```
 
-See the [Configuration via LCP.json](../../../../../liferay-cloud/latest/en/reference/configuration-via-lcp-json.md) article.
+See [Configuration via LCP.json](https://learn.liferay.com/w/liferay-cloud/reference/configuration-via-lcp-json) for more information.
 
 ## `static`
 
-***Note:*** This path is only required by `front-end` client extension projects.
+```{note}
+This directory is only required by [front-end client extension projects](./front-end-client-extensions.md).
+```
 
-Any number of static resource files can be placed into a directory structure (of unlimited depth and structure) under the root level `static` directory. These files must be accompanied by `front-end` client extensions defined in `client-extension.yaml` otherwise they will be ignored.
+Any number of static resource files can be placed into the root level `static/` directory in the built LUFFA. These files can be in any folder structure within the `static/` folder. These files are ignored if there is no front-end client extension defined in your project's `client-extension.yaml` file.
 
-## `[microservice_resources]*`
+## Microservice Resources
 
-***Note:*** This path is only required by `microservice` client extension projects.
-
-In the case of `microservice` client extensions any additional resources can be added into the archive provided they do not conflict with the required files previously mentioned.
+You can include any additional resources in the built LUFFA for your microservice client extension projects, as long as they do not conflict with other required files.
 
 ## Additional Information
 

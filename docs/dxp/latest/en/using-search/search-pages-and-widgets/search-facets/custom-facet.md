@@ -146,12 +146,28 @@ Setting a custom field to searchable means that the value of the field is indexe
 
 Object Definition fields and Web Content Structure fields are indexed as nested fields in Elasticsearch.
 
+Prior to Liferay 7.4 U72/GA72, [web content structure fields](#using-web-content-structure-fields-in-the-custom-facet) were accessible in the Custom Facet widget by their `ddmFieldName`, but object definition fields were not accessible.
+
+Beginning in Liferay 7.4 U72/GA72, you can use any nested field in the Custom Facet widget's Aggregation Field configuration with a special notation. Using a period character as the separator, enter the parent field, the name of the field that holds the field name, and the name of the field that holds the value. 
+
+This example references an object field in the Aggregation Field configuration:
+
+```
+nestedFieldArray.lastAccessed.value_date
+```
+
+
+This example references a web content structure field:
+
+```
+ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_String_sortable
+```
+
 ### Using Object Definition Fields in the Custom Facet
 
-{bdg-secondary}`7.4 Update/GA XX+`
-<!-- fill in the version -->
+{bdg-secondary}`7.4 U72+/GA72+`
 
-[Object definition](../../../building-applications/objects.md) fields are indexed as nested fields in Elasticsearch. 
+[Object definition](../../../building-applications/objects.md) fields are indexed as nested fields in Elasticsearch under a parent `nestedFieldArray`:
 
 ```json
 "nestedFieldArray" : [
@@ -166,38 +182,22 @@ Object Definition fields and Web Content Structure fields are indexed as nested 
      "value_keyword" : "diplomatic"
    },
    {
-     "fieldName" : "luckyNumber",
+     "fieldName" : "randomNumber",
      "valueFieldName" : "value_integer",
      "value_integer" : "19"
    }
 ],
 ```
 
-To use an object's field in the Custom Facet widget's Aggregation Field configuration, a special notation is required. Following the pattern `nestedFieldArray.[fieldName].[valueFieldName]`, you can sort by the `lastAccessed` date field in the nested array above. Enter `nestedFieldArray.lastAccessed.value_date` as the Sort widget configuration's Indexed Field.
+To use an object's field in the Custom Facet widget's Aggregation Field configuration, a special notation is required to specify the parent field (e.g., `nestedFieldArray`), the name of the field that holds the field name (e.g., `fieldName`), and the name of the field that holds the value (e.g., `value_date`). Use the pattern `nestedFieldArray.[fieldName].[valueFieldName]`. For example, you can sort by the `lastAccessed` date field in the nested array above by entering `nestedFieldArray.lastAccessed.value_date` as the Custom Facet widget configuration's Aggregation Field.
 
 ### Using Web Content Structure Fields in the Custom Facet
 
 As documented in the [7.3 Breaking Changes document](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document), the way Liferay Dynamic Data Mapping framework indexes some fields changed. Fields previously at the root of the search engine document are now indexed as nested fields. This change affects Liferay 7.3 and Liferay 7.2 SP3/FP8+ (but only if the _Enable Legacy Dynamic Data Mapping Index Fields_ setting is disabled in System Settings &rarr; Dynamic Data Mapping Indexer). On the latest Fix Pack and GA release of 7.3, this change is accounted for in Liferay's Search API and no configuration updates are necessary. Therefore, if you have Custom Facet widgets that relied on fields named `ddm__text__*` or `ddm__keyword__*` that were at the root of the Elasticsearch document, continue to use these fields as usual in your Custom Facet's _Aggregation Field_ configuration, even though they're no longer at the root of the document.
 
-To find DDM fields in existing documents in the index,
+To find DDM fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
 
-```json
-GET liferay-20097/_search
-{
-  "query": {
-    "nested": {
-      "path": "ddmFieldArray",
-      "query": {
-        "wildcard":  { "ddmFieldArray.ddmFieldName": "ddm__keyword*" }
-      }
-    }
-  }
-}
-```
-
-Replace the Company Id---`20097`---in the index name parameter to match your instance's value.
-
-The document returned has a `ddmFieldArray` object with nested content:
+The document has a `ddmFieldArray` field with nested content:
 
 ```json
  "ddmFieldArray" : [
@@ -222,4 +222,4 @@ The document returned has a `ddmFieldArray` object with nested content:
   ],
 ```
 
-To use one of these fields in a Custom Facet, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) in the _Aggregation Field_ of the Custom Facet configuration.
+To use one of these fields in a Custom Facet, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) in the Aggregation Field of the Custom Facet configuration.

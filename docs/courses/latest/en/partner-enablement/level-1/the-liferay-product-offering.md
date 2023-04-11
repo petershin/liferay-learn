@@ -8,7 +8,7 @@ uuid: b982f1e4-2c22-4563-aa19-68d9aa8a801a
 
 * Liferay develops a single Product: Liferay DXP
 * There are three Product Deployment Offerings:
-  * Liferay Experience Cloud (LXC) [SaSS]
+  * Liferay Experience Cloud (LXC) [SaaS]
   * Liferay Experience Cloud - Self Managed [PaaS]
   * DXP - Self Hosted
 

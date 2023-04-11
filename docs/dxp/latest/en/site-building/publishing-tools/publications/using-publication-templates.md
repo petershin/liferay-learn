@@ -3,7 +3,7 @@ uuid: 50898f75-135c-4b46-ae9d-b32ce3c80351
 ---
 # Using Publication Templates
 
-{bdg-secondary}`Available Liferay 7.4 U63+/GA63+`
+{bdg-secondary}`Available Liferay 7.4 U73+/GA73+`
 
 To simplify creating publications with shared details and contributors, use publication templates. You can create a list of users to invite and assign roles and use tokens to auto-populate names and descriptions.
 
@@ -15,11 +15,21 @@ To create a publication template,
 
    ![Open the Publications application, click the Actions button in the Application Bar, and select Templates.](./using-publication-templates/images/01.png)
 
-1. Click *Add* (![Add button](../../../images/icon-add.png)).
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ).
 
 1. Enter a name and description for the template.
 
    ![Enter a name and description for the template.](./using-publication-templates/images/02.png)
+
+1. (Optional) Set the template as the default for new publications.
+
+   **Default Template**: Manually created publications use the template by default. You can select an alternative template during publication creation.
+
+   **Default Sandbox Template**: Automatically created publications use the template when sandbox mode is enabled. You can still manually create publications using an alternative template.
+
+   ```{note}
+   You can only have one default template and default sandbox template at a time.
+   ```
 
 1. Enter a name and description to use for publications created with the template.
 

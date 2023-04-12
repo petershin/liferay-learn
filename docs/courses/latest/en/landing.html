@@ -5,12 +5,16 @@
 		el: '#landingPage',
 		data: {
 			cards: [
-				{
+				{ 
 					icon: '#developing-applications-logo',
 					sectionName: 'Liferay Administrator',
 					sectionURL: 'liferay-administrator.html',
 					showAll: false,
 					subsections: [
+						{
+							name: 'Cloud Administrator',
+							url: 'liferay-administrator/cloud-administrator.html'
+						},
 						{
 							name: 'Configuration',
 							url: 'liferay-administrator/configuration.html'
@@ -19,21 +23,21 @@
 							name: 'Users, Accounts, Organizations, and Permissions',
 							url: 'liferay-administrator/users-accounts-organizations.html'
 						},
-						{
-							icon: '#users-and-permissions-logo',
-							sectionName: 'Liferay Partner Enablement',
-							sectionURL: 'partner-enablement.html',
-							showAll: false,
-							subsections: [
-								{
-									name: 'Level 1',
-									url: 'partner-enablement/level-1.html'
-								},
-							]
-						},
 					]
 				},
-			]
-		}
-	})
+				{
+					icon: '#users-and-permissions-logo',
+					sectionName: 'Partner Enablement',
+					sectionURL: 'partner-enablement.html',
+					showAll: false,
+					subsections: [
+						 {
+								name: 'Level 1',
+								url: 'partner-enablement/level-1.html'
+						 },
+					]
+			 },
+		]
+ }
+})
 </script>

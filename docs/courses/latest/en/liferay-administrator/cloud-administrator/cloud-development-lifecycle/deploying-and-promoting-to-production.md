@@ -1,3 +1,6 @@
+---
+uuid: 3ecb6bba-774f-4472-8363-4d079e4abe81
+---
 # Deploying and Promoting to Production
 
 As Kyle begins to work on development with Liferay Cloud, he goes through his first full deployment process by deploying and promoting a simple widget module.

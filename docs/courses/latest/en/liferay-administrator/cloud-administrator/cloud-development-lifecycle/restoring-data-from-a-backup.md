@@ -46,51 +46,13 @@ Once the backup from production is completed, restore it to your UAT environment
 
 Your UAT environment's services are temporarily unavailable while the backup is restored.
 
-## Access Your UAT Instance
+## Try Deleting Data
 
-<!-- I think we can make this one step in the next section (i.e., 1. Log into your UAT instance) and make the step a link to the instructions you wrote elsewhere for this. I don't think we want to have to maintain the same instructions in two places. -Rich --> 
-
-Before you can start making changes to your Liferay instance in UAT, you need the credentials to access it.
-
-```{note}
-You may be able to skip these steps if you are already authenticated to your UAT Liferay instance. If your session hasn't expired yet, click *Visit Site* from your UAT environment and skip to [deleting some data](#try-deleting-data).
-```
-
-1. Navigate to your `infra` environment.
-
-1. Click *Settings* on the left side of the screen.
-
-1. Select the *Secrets* tab.
-
-1. Click the `lcp-secret-ci-customer-user` secret.
-
-   ![The lcp-secret-ci-customer-user secret has the username needed to access your UAT instance.](./deploying-and-promoting-to-production/images/04.png)
-
-1. Click *View* to confirm the secret value you need to log into your UAT instance.
-
-   ![Click View to view and confirm the secret value.](deploying-and-promoting-to-production/images/05.png)
-
-    ```{tip}
-    The default username is `customer`.
-    ```
-
-1. Click the back arrow to return to the list of secrets.
-
-1. Click the `lcp-secret-ci-customer-password` secret.
-
-1. Click *View* to see the secret value. You can click the value itself to copy it to your clipboard.
+Try deleting your default home page from your UAT Liferay instance.
 
 1. Navigate to your UAT environment.
 
-1. Click *Visit Site* at the top of the page.
-
-1. When prompted for credentials, enter the username and password you found from the `lcp-secret-ci-customer-user` and `lcp-secret-ci-customer-password` secrets, respectively.
-
-Now you have successfully logged in and accessed your UAT Liferay instance.
-
-## Try Deleting Data
-
-Try deleting your default home page.
+1. Click *Visit Site* at the top of the page to access your UAT Liferay instance. If your session has expired from logging in previously, [use your project's login credentials](./deploying-and-promoting-to-production.md#accessing-your-uat-environment) to authenticate.
 
 1. Log in as the [default administrator](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account).
 
@@ -111,8 +73,6 @@ The home page is deleted, and the deletion cannot be undone. The *Home* button i
 Kyle realizes after deleting the page that it shouldn't have been deleted, and he can't remember how to make a new one easily.
 
 Help Kyle recover the data in UAT by restoring the backup you took before accessing the Liferay instance.
-
-<!-- Remember that we aren't giving people options here, because it's training, not docs. They go through the steps so they can do exactly what we show them. Further information is provided in Relevant Concepts. -Rich --> 
 
 1. In the Liferay Cloud console, navigate to your production environment.
 

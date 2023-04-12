@@ -1,6 +1,11 @@
+---
+uuid: a36c0089-84d7-49a1-a928-5332fc1a970c
+---
 # Setting Channel Defaults
 
-Users with the necessary account management permissions can set channel defaults for business accounts. To do this, <!-- Link to Channel Defaults Permission Guide when published -->
+{bdg-secondary}`Available Liferay 7.4 U49+/GA49+`
+
+Users with the necessary account management permissions can set channel defaults for business accounts. <!-- Link to Channel Defaults Permission Guide when published --> To do this,
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ) and navigate to *Control Panel* &rarr; *Accounts*.
 
@@ -13,8 +18,6 @@ If you set defaults for individual channels and all other channels, the individu
 ```
 
 ## Default Billing and Shipping Addresses
-
-{bdg-secondary}`Available Liferay 7.4 U41+/GA41+` 
 
 1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Billing Addresses or Shipping Addresses. 
 
@@ -31,8 +34,6 @@ Generally, only users with account management permissions can manage channel def
 ```
 
 ## Default Terms and Conditions
-
-{bdg-secondary}`Available Liferay 7.4 U40+/GA40+` 
 
 1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Delivery Terms and Conditions or Payment Terms and Conditions. 
 
@@ -52,8 +53,6 @@ Generally, only users with account management permissions can manage channel def
 
 ## Default Shipping Options
 
-{bdg-secondary}`Available Liferay 7.4 U49+/GA49+`
-
 The default shipping value is determined by existing priority settings for the channel. If other shipping options are available, you can select one of them as the default. To do this,
 
 1. Go to *Shipping Options* and click *Edit* for the desired channel. 
@@ -65,8 +64,6 @@ The default shipping value is determined by existing priority settings for the c
    ![Set a default shipping option for individual channels.](./setting-channel-defaults/images/03.png)
 
 ## Default Price Lists and Discounts
-
-{bdg-secondary}`Available Liferay 7.4 U40+/GA40+`
 
 1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Price Lists or Discounts. 
 
@@ -81,8 +78,6 @@ The default shipping value is determined by existing priority settings for the c
    ![Set a default price list or discount for all or individual channels.](./setting-channel-defaults/images/04.png)
 
 ## Default Currencies
-
-{bdg-secondary}`Available Liferay 7.4 U42+/GA42+`
 
 1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Currencies. 
 
@@ -112,8 +107,6 @@ The default payment method is determined by existing priority settings for the c
 
 ## Default Channel Account Managers
 
-{bdg-secondary}`Available Liferay 7.4 U46+/GA46+`
-
 1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Channel Account Managers.
 
 1. Select *All Channels* or an individual *channel*.
@@ -132,7 +125,7 @@ The default payment method is determined by existing priority settings for the c
 
 ### Understanding Channel Account Managers
 
-When selecting default Channel Account Managers, only users with the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear. You can use this permission to grant users access to accounts without requiring them to be account members or organization account managers. You can assign this permission to *Regular Roles*, *Organization Roles* and *Account Roles*.
+When selecting default Channel Account Managers, only users that have a regular with the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear. You can use this permission to grant users access to accounts without requiring them to be account members or organization account managers.
 
 ![Users with this permission appear in the channel account manager dropdown menu.](./setting-channel-defaults/images/08.png)
 

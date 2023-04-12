@@ -51,10 +51,10 @@ Relevance can be turned on or off, but not removed completely. When relevance is
 
 To access the widget configuration screen, open the widget Options menu (![Options](../../../images/icon-app-options.png)) and click _Configuration_.
 
-Each Sort option has three settings: _Indexed Field Name_, _Display Label_, and _Order_.
+Each Sort option has three settings: _Indexed Field_, _Display Label_, and _Order_.
 
 
-**Indexed Field Name:** Enter the `fieldName` of the indexed field to sort. Most of the time this is a [keyword](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) field. Other acceptable options are `date` and any [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html). There's even a way to coerce `text` fields into behaving with the Sort widget (see below). 
+**Indexed Field:** Enter the `fieldName` of the indexed field to sort. Most of the time this is a [keyword](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) field. Other acceptable options are `date` and any [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html). There's even a way to coerce `text` fields into behaving with the Sort widget (see below). 
 
 **Display Label:** Set the displayed label for the type of sort being configured.
 
@@ -204,4 +204,4 @@ The documents have a `ddmFieldArray` object with nested content:
   ],
 ```
 
-To use one of these fields in a Sort configuration, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) as the _Field_ setting.
+To use one of these fields in a Sort configuration, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) as the Indexed Field setting.

@@ -60,7 +60,7 @@ Try deleting your default home page from your UAT Liferay instance.
 
 1. Next to the Home page, open the Actions menu ( ![Actions icon](../../../images/icon-actions.png) ) and click *Delete*.
 
-   ![Delete the Home page from the Pages menu.](./restoring-data-from-a-backup/images/06.png)
+   ![Delete the Home page from the Pages menu.](./restoring-data-from-a-backup/images/04.png)
 
    A pop-up dialog appears asking to confirm the deletion.
 

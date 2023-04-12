@@ -100,4 +100,4 @@ Next: [Importing and Exporting users](./importing-and-exporting-users.md).
 
 ## Relevant Concepts
 
-[Connecting to an LDAP Directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)
+- [Connecting to an LDAP Directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)

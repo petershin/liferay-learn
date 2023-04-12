@@ -90,10 +90,8 @@ Congratulations! You have completed this module on user data.
 
 ## Relevant Concepts
 
-<!-- Please fix the links below to point to the new site. -Rich --> 
+- [Exporting User Data](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/exporting-user-data)
 
-[Exporting User Data](https://learn.liferay.com/dxp/latest/en/users-and-permissions/managing-user-data/exporting-user-data.html)
+- [Sanitizing User Data](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/sanitizing-user-data)
 
-[Sanitizing User Data](https://learn.liferay.com/dxp/latest/en/users-and-permissions/managing-user-data/sanitizing-user-data.html)
-
-[Configuring the Anonymous User](https://learn.liferay.com/dxp/latest/en/users-and-permissions/managing-user-data/configuring-the-anonymous-user.html)
+- [Configuring the Anonymous User](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/configuring-the-anonymous-user)

@@ -5,7 +5,8 @@ uuid: a36c0089-84d7-49a1-a928-5332fc1a970c
 
 {bdg-secondary}`Available Liferay 7.4 U49+/GA49+`
 
-Users with the necessary account management permissions can set channel defaults for business accounts. <!-- Link to Channel Defaults Permission Guide when published --> To do this,
+Users with the necessary account management permissions can set channel defaults for business accounts. 
+<!-- Link to Channel Defaults Permission Guide when published --> 
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ) and navigate to *Control Panel* &rarr; *Accounts*.
 
@@ -19,25 +20,25 @@ If you set defaults for individual channels and all other channels, the individu
 
 ## Default Billing and Shipping Addresses
 
-1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Billing Addresses or Shipping Addresses. 
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Billing Addresses or Shipping Addresses. 
 
-1. Select *All Channels* or an individual *channel*. 
+1. Select *All Channels* or an individual channel. 
 
-1. Select an *address*. 
+1. Select an address. 
 
 1. Click *Save*. 
 
    ![Set default billing and shipping addresses for all or individual channels.](./setting-channel-defaults/images/01.png)
 
 ```{note}
-Generally, only users with account management permissions can manage channel defaults. However, account users can set their default billing and shipping addresses for all channels via the *Account Details* tab.
+Only users with account management permissions can manage channel defaults. However, account users can set their default billing and shipping addresses for all channels via the Account Details tab.
 ```
 
 ## Default Terms and Conditions
 
-1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Delivery Terms and Conditions or Payment Terms and Conditions. 
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Delivery Terms and Conditions or Payment Terms and Conditions. 
 
-1. Select *All Channels* or an individual *channel*. 
+1. Select *All Channels* or an individual channel. 
 
 1. (Optional) Enable the *Override Eligibility* toggle to override eligibility set for the terms and conditions.
 
@@ -53,11 +54,11 @@ Generally, only users with account management permissions can manage channel def
 
 ## Default Shipping Options
 
-The default shipping value is determined by existing priority settings for the channel. If other shipping options are available, you can select one of them as the default. To do this,
+The default shipping value is determined by existing priority settings for the channel. If other shipping options are available, you can select one of them as the default:
 
 1. Go to *Shipping Options* and click *Edit* for the desired channel. 
 
-1. Select a *shipping option*. 
+1. Select a shipping option. 
 
 1. Click *Save*. 
 
@@ -65,9 +66,9 @@ The default shipping value is determined by existing priority settings for the c
 
 ## Default Price Lists and Discounts
 
-1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Price Lists or Discounts. 
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Price Lists or Discounts. 
 
-1. Select *All Channels* or an individual *channel*. 
+1. Select *All Channels* or an individual channel. 
 
 1. (Optional) Enable the *Override Eligibility* toggle to override existing eligibility criteria configured for price lists. 
 
@@ -79,9 +80,9 @@ The default shipping value is determined by existing priority settings for the c
 
 ## Default Currencies
 
-1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Currencies. 
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Currencies. 
 
-1. Select *All Channels* or an individual *channel*. 
+1. Select *All Channels* or an individual channel. 
 
 1. Select a *currency*. 
 
@@ -95,7 +96,7 @@ The default shipping value is determined by existing priority settings for the c
 
 ## Default Payment Methods
 
-The default payment method is determined by existing priority settings for the channel. If other payment methods are available, you can select one of them as the default. To do this,
+The default payment method is determined by existing priority settings for the channel. If other payment methods are available, you can select one of them as the default: 
 
 1. Go to *Payment Methods* and click *Edit* for the desired channel. 
 
@@ -107,17 +108,17 @@ The default payment method is determined by existing priority settings for the c
 
 ## Default Channel Account Managers
 
-1. Click the *Add* button ( ![Add Button](../../../images/icon-add.png) ) under Channel Account Managers.
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Channel Account Managers.
 
-1. Select *All Channels* or an individual *channel*.
+1. Select *All Channels* or an individual channel.
 
    ```{tip}
    You can assign multiple channel account managers to the same channel.
    ```
 
-1. Select a *user*.
+1. Select a user.
 
-   All users with the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear in the channel account manager dropdown. See [Understanding Channel Account Managers](#understanding-channel-account-managers) for more information.
+   All users with the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear in the channel account manager drop-down. See [Understanding Channel Account Managers](#understanding-channel-account-managers) for more information.
 
 1. Click *Save*.
 
@@ -125,11 +126,11 @@ The default payment method is determined by existing priority settings for the c
 
 ### Understanding Channel Account Managers
 
-When selecting default Channel Account Managers, only users that have a regular with the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear. You can use this permission to grant users access to accounts without requiring them to be account members or organization account managers.
+When selecting default Channel Account Managers, only users that have the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear. You can use this permission to grant users access to accounts without requiring them to be account members or organization account managers.
 
 ![Users with this permission appear in the channel account manager dropdown menu.](./setting-channel-defaults/images/08.png)
 
-By itself, this permission does not grant users the ability to access the Accounts application, or view and update individual accounts. It also does not grant users the ability to manage orders or set channel defaults for price lists and other Commerce entities. If you want Channel Account Managers to perform these administrative actions, you must grant them the necessary permissions for each application (e.g., Accounts, Orders, Price Lists).
+By itself, this permission does not grant access to the Accounts application, or to view and update individual accounts. It also does not grant allow managing orders or setting channel defaults for price lists and other Commerce entities. If you want Channel Account Managers to perform these administrative actions, you must grant them the necessary permissions for each application (e.g., Accounts, Orders, Price Lists).
 
 <!-- Link to Channel Defaults Permission Guide when published -->
 

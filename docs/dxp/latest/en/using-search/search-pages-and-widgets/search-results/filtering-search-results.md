@@ -94,17 +94,17 @@ To inspect nested fields in existing documents in the index,
 
 1. Enable _Display Results in Document Form_ in the Search Results widget's configuration, then search for a result that uses a nested field.
 
-1. Expand the _Details_ view of the result, then find its parent field ( in web content structure, `nestedFieldArray` in objects) field and copy its value. For example, a web content article has a `ddmFieldArray` with nested fields:
+1. Click _Details_ to see a result's document view, then find its parent field (`ddmFieldArray` in web content structures, `nestedFieldArray` in objects). For example, a web content article has a `ddmFieldArray` with nested fields:
 
    ```json
    "ddmFieldArray" : [
-               {
-                 "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
-                 "ddmFieldValueKeyword_en_US" : "true",
-                 "ddmFieldValueKeyword_en_US_String_sortable" : "true",
-                 "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
-               }
-             ],
+      {
+        "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
+        "ddmFieldValueKeyword_en_US" : "true",
+        "ddmFieldValueKeyword_en_US_String_sortable" : "true",
+        "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
+      }
+   ],
    ```
 
    Meanwhile, an object entry has a `nestedFieldArray` with nested fields:
@@ -117,7 +117,7 @@ To inspect nested fields in existing documents in the index,
         "value_date" : "20230502000000"
       }
    ],
-    ```
+   ```
 
 Using a nested field in a Custom Filter configuration requires three custom filter widgets.  A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is added for wrapping the required child queries: one child query matches the field's name, the other the value.
 

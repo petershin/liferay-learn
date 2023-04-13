@@ -11,6 +11,7 @@ uuid: b982f1e4-2c22-4563-aa19-68d9aa8a801a
   * Liferay Experience Cloud (LXC) [SaaS]
   * Liferay Experience Cloud - Self Managed [PaaS]
   * DXP - Self Hosted
+* Our Sales approach is SaaS first
 
 ## Background
 
@@ -122,6 +123,8 @@ With Liferay Experience Cloud SaaS, Liferay provides and manages all of the infr
 
 What is important to note is that although the deployment model is SaaS, this is not a turnkey application. Customers have a full Liferay DXP instance to use, with all of the out-of-the-box capabilities DXP provides, and they can build their custom applications on top of that base. Furthermore, they can continue to work with Partners and Liferay's Global Services organization to help them build those applications.
 
+**Low Value Activities**
+
 | Responsibility | Liferay | Customer |
 | --- | --- | --- |
 | Products | &#10004; |  |
@@ -136,7 +139,7 @@ What is important to note is that although the deployment model is SaaS, this is
 | Software Troubleshooting | &#10004; |  |
 | Security Scanning / SAST / DAST | &#10004; |  |
 
-**High Customer Value Activities**
+**High Value Activities**
 
 | Responsibility | Liferay | Customer |
 | --- | --- | --- |

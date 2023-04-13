@@ -7,7 +7,7 @@ uuid: 17dfab4d-3c5f-4001-8a65-38a34170aa61
 
 Published objects are integrated automatically with Liferay's permissions framework. You can manage user access to an object and its entries with [application](#application-permissions) and [resource](#resource-permissions) permissions. With role-based access control, you can ensure only appropriate users view and use your application's data.
 
-By default, custom object permissions are not assigned to user roles automatically. This is to prevent the accidental exposure of object data. To grant access, you must manually assign object permissions to the desired roles.
+By default, custom object permissions are not assigned to user roles automatically. This is to prevent the accidental exposure of object data. To grant access, manually assign object permissions to the desired roles.
 
 When defining role permissions, active objects appear according to their scope and panel category key.
 

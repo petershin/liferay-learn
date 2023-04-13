@@ -39,7 +39,7 @@ Client extension development follows the _workspace_ plus _project_ model. Withi
 
 Client extensions grouped together in a single project form a cohesive collection, packaged as a single, deployable unit when built. It's your decision as a developer to group client extensions together where it makes sense (e.g., to improve efficiency when they should work on related tasks).
 
-However, when you build client extensions in a single project together, they are associated with a Docker container that represents a workload particular to that project. This means that there are some restrictions on which kinds of client extensions can be grouped together. For example, [microservice client extensions](./microservice-client-extensions.md) cannot be grouped with other types of client extensions, because they represent a workload that runs as a microservice outside of your Liferay instance, which is incompatible with most other classifications.
+However, when you build client extensions in a single project together, they are associated with a Docker container that represents a workload particular to that project. This means that there are some restrictions on which kinds of client extensions can be grouped together. For example, [microservice client extensions](./microservice-client-extensions.md) cannot be grouped with most types of client extensions, because they represent a workload that runs as a microservice outside of your Liferay instance, which is incompatible with most other classifications (any except for configuration types).
 
 You can group client extensions together in these ways:
 
@@ -66,7 +66,7 @@ Each client extension project has its own folder inside of the workspace's `clie
 
 When you build a client extension, more files are automatically created and packaged with the built [LUFFA](./packaging-client-extensions.md) (i.e., the resulting `.zip` file). However, you must define an `assemble` block in your `client-extension.yaml` file to configure which files to include from your build or project files.
 
-An `assembleClientExtension` gradle task executes when you run `gradle build` or `gradle deploy` within a client extension project, and it includes the files specified in the project's `assemble` block. By default, outputs are placed into a `build/clientExtension` folder in your project. Everything in this folder is used to create the LUFFA (e.g., `dist/my-client-extension-project.zip`).
+An `assembleClientExtension` gradle task executes when you run `gradle build` or `gradle deploy` within a client extension project, and it includes the files specified in the project's `assemble` block. By default, outputs are placed into a `build/liferay-client-extension-build/` folder in your project. Everything in this folder is used to create the LUFFA (e.g., `dist/my-client-extension-project.zip`).
 
 The `assemble` block is a YAML *array* that can include multiple instructions for files to include. Each set of instructions must be in this form:
 
@@ -93,15 +93,15 @@ Each item in the `assemble` array has these properties:
           into: static
    ```
 
-* `into`: Specify where the matching resources are copied *into* for your resulting LUFFA.
+* `into`: Specify where in the resulting LUFFA to copy the matching resources.
 
-    Front-end client extensions must be put into the `static` directory. They use static resources, and the `static` directory allows Liferay to serve theim as static resources (in self-hosted instances) or from containers in Liferay Experience Cloud.
+    Static resources (for front-end client extensions) must be copied into the `static/` directory. This directory allows Liferay to serve them as static resources (in self-hosted instances) or from containers in Liferay Experience Cloud.
 
-    Batch client extensions must be put into the `batch` directory because they require special handling when deployed.
+    JSON resources for batch client extensions must be copied into the `batch/` directory.
 
-* `fromTask`: (mutually exclusive with `from`) A special case exists when a gradle build is used in the project. `fromTask` specifies a named gradle task in the project that is executed before the assembly step. 
+* `fromTask`: (mutually exclusive with `from`) Use this when a gradle build is used in your project. `fromTask` specifies a named gradle task in the project that is executed before the assembly step.
 
-    For example, in a `microservice` client extension project using Spring Boot, the gradle task `bootJar` creates the `.jar` file containing the application and all its dependencies. In this example, it is preferable to use the property `fromTask`. This causes the workspace to, first, execute the project's `bootJar` gradle task and then _include_ the outputs of the task (i.e., the built `.jar` file) in the root of the resulting LUFFA:
+    For example, in a `microservice` client extension project using Spring Boot, the gradle task `bootJar` creates the `.jar` file containing the application and all its dependencies. In this example, it is preferable to use the property `fromTask`. This causes the workspace to, first, execute the project's `bootJar` gradle task and then *include* the outputs of the task (i.e., the built `.jar` file) in the root of the resulting LUFFA:
 
     ```yaml
     assemble:

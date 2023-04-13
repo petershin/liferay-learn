@@ -1,11 +1,11 @@
 ---
-uuid: 01f46794-2cd4-4ffc-94d3-e244880f2b6f
+uuid: 05f145b0-0a81-445c-88af-4aa6d52c0469
 ---
 # Packaging Client Extensions
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (self-hosted)`
 
-Client extension projects are built as deployable `.zip` archives, called **Liferay Universal File Format Archives** (LUFFAs). Each LUFFA follows a particular structure and defines a few specific component files (which can be automatically generated or provided by your project). The Liferay workspace takes care of packaging client extension projects when you build them, but understanding how it's packaged is important when you are [assembling client extensions](./working-with-client-extensions.md#assembling-client-extensions), or if you're using a different process to create a LUFFA.
+Client extension projects are built as deployable `.zip` archives, called *Liferay Universal File Format Archives* (LUFFAs). Each LUFFA follows a particular structure and defines a few specific component files (which can be automatically generated or provided by your project). The Liferay workspace takes care of packaging client extension projects when you build them, but understanding how it's packaged is important when you are [assembling client extensions](./working-with-client-extensions.md#assembling-client-extensions), or if you're using a different process to create a LUFFA.
 
 This is a LUFFA's structure:
 
@@ -45,7 +45,7 @@ One or more `*.client-extension-config.json` ([OSGi Configuration Resource Forma
 At least one Dockerfile is **required** in each LUFFA.
 ```
 
-You must provide a [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) in your project for [microservice client extensions](./microservice-cient-extensions.md). You can provide it in the root of your project, so that it's copied into the LUFFA when your project is built.
+You must provide a [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) in your project for [microservice client extensions](./microservice-client-extensions.md). You can provide it in the root of your project, so that it's copied into the LUFFA when your project is built.
 
 You must write your `Dockerfile` such that it can execute the microservice client extensions in your project. For example, your `Dockerfile` may need to install specific tools that your microservice's code needs to run. Liferay may provide a limited number of prepared, easy-to-adopt Docker images for some use cases.
 
@@ -174,5 +174,5 @@ You can include any additional resources in the built LUFFA for your microservic
 
 ## Additional Information
 
-* [Working with Client Extensions](./client-extensions/working-with-client-extensions.md)
-* [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)
+* [Working with Client Extensions](./working-with-client-extensions.md)
+* [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md)

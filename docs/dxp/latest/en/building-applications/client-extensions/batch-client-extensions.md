@@ -1,7 +1,7 @@
 ---
 toc:
   - ./batch-client-extensions/batch-yaml-configuration-reference.md
-uuid: 654223de-17be-4786-a90d-775f986c0911
+uuid: 601bd5b5-8b5b-4ac6-9030-776439ff9aa7
 ---
 # Batch Client Extensions
 

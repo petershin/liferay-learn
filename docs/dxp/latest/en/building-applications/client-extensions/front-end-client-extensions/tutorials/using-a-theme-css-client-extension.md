@@ -69,9 +69,9 @@ The `package.json` file contains the following code:
 
 The `dependencies` section includes the `sassy-inputs` library. This is not used in the example, but describes how an npm module is imported and used in your theme CSS client extension. The `liferayDesignPack` section describes the base theme used for the styles. Using the `styled` theme ensures that the existing styles specified on pages, fragments and widgets are not impacted. The other fields `main`, `name` and `version` provide required metadata.
 
-<!-- What if the styled theme is not the theme currently configured (and thus being overridden?) What happens if this Client Extension is installed/enabled and then somebody changes the theme? -Rich --> 
-
-<!-- What if the styled theme is not the theme currently configured (and thus being overridden?) What happens if this Client Extension is installed/enabled and then somebody changes the theme? -Rich --> 
+```{note}
+You can set the base theme to `styled` or `unstyled`. All themes in Liferay use the `unstyled` or `styled` theme as the base. If you apply the theme CSS client extension to a page that uses a different theme, the client extension's styling replaces the styling from the theme. If you change the theme of a page that already uses a theme CSS client extension, the client extension is removed. 
+```
 
 The `src/css/_custom.scss` file contains this SCSS:
 

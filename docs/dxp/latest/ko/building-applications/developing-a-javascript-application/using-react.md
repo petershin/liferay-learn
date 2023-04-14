@@ -5,7 +5,6 @@ toc:
 - ./using-react/remote-applications-with-headless-apis.md
 - ./using-react/react-component-utilities-reference.md
 ---
-
 # 반응 사용
 
 ```{toctree}

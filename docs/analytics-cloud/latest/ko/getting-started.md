@@ -3,7 +3,6 @@ toc:
   - ./getting-started/connecting-liferay-dxp-to-analytics-cloud.md
   - ./getting-started/viewing-the-analytics-dashboard.md
 ---
-
 # 시작하기
 
 ```{toctree}

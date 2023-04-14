@@ -13,7 +13,6 @@ toc:
   - ./developing-page-fragments/including-default-resources-with-fragments.md
   - ./developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
 ---
-
 # 페이지 조각 개발
 
 ```{toctree}

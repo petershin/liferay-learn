@@ -5,7 +5,6 @@ toc:
   - ./client-extensions/microservice-client-extensions.md
   - ./client-extensions/configuration-client-extensions.md
 ---
-
 # 원격 앱
 
 ```{toctree}

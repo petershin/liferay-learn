@@ -9,7 +9,6 @@ toc:
 - ./installation-and-upgrades/4-0-breaking-changes.md
 - ./installation-and-upgrades/installing-commerce-2-1-and-below.md
 ---
-
 # 설치 및 업그레이드
 
 ```{toctree}

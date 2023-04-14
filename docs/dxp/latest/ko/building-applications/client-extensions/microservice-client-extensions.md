@@ -4,7 +4,6 @@ toc:
   - ./microservice-client-extensions/workflow-action-yaml-configuration-reference.md
   - ./microservice-client-extensions/notification-type-yaml-configuration-reference.md
 ---
-
 # 마이크로서비스 클라이언트 확장
 
 ```{toctree}

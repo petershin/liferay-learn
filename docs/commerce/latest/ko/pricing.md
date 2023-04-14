@@ -11,7 +11,6 @@ toc:
 - ./pricing/configuring-taxes.md
 - ./pricing/developer-guide.md
 ---
-
 # 가격
 
 ```{toctree}

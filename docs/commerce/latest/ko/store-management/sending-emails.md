@@ -4,7 +4,6 @@ toc:
 - ./sending-emails/configuring-the-commerce-notification-queue.md
 - ./sending-emails/notification-template-variables-reference-guide.md
 ---
-
 # 이메일 보내기
 
 ```{toctree}

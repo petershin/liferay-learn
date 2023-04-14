@@ -3,7 +3,6 @@ toc:
   - ./semantic-search/setting-up-a-text-embedding-provider.md
   - ./semantic-search/creating-a-search-blueprint-for-semantic-search.md
 ---
-
 # 시맨틱 검색
 {bdg-secondary}`7.4 U70+`
 {bdg-link-dark}` [베타 기능](https://help.liferay.com/hc/ko/articles/12917247551757-Beta-Features) `

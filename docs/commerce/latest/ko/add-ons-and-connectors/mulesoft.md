@@ -3,7 +3,6 @@ toc:
 - ./mulesoft/configuring-the-mulesoft-connector.md
 - ./mulesoft/designing-mule-flows.md
 ---
-
 # 뮬소프트
 
 ```{toctree}

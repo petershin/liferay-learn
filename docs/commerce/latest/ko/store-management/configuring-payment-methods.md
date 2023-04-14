@@ -6,7 +6,6 @@ toc:
 - ./configuring-payment-methods/money-orders.md
 - ./configuring-payment-methods/paypal.md
 ---
-
 # 결제 수단 구성
 
 ```{toctree}

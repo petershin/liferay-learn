@@ -4,7 +4,6 @@ toc:
   - ./creating-and-managing-elements/managing-elements.md
   - ./creating-and-managing-elements/predefined-element-variables-reference.md
 ---
-
 # 요소 생성 및 관리
 
 ```{toctree}

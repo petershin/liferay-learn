@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> LRDOCS-11761 Fix ac and commerce ko translations' formats
 # Liferay Commerce 구성 개요
 
 전역 메뉴에서 상거래를 구성하는 옵션을 찾을 수 있습니다.

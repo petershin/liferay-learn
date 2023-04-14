@@ -6,7 +6,6 @@ toc:
   - collections-and-collection-pages/collection-providers.md
   - ../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md
 ---
-
 # 컬렉션 및 컬렉션 페이지
 
 ```{toctree}

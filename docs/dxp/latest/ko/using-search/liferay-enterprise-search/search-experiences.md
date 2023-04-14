@@ -3,7 +3,6 @@ toc:
   - ./search-experiences/search-blueprints.md
   - ./search-experiences/semantic-search.md
 ---
-
 # Search Experiences
 
 {bdg-primary}`[LES 구독](./activating-liferay-enterprise-search.md)`

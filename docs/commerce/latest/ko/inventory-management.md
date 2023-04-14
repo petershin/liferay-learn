@@ -11,7 +11,6 @@ toc:
   - ./inventory-management/product-inventory-configuration-reference-guide.md
   - ./inventory-management/developer-guide.md
 ---
-
 # 재고 관리
 
 ```{toctree}

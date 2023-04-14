@@ -13,7 +13,6 @@ toc:
   - ' [Join the Community](https://liferay.dev/) '
   - ' [Open a Ticket](https://liferay-support.zendesk.com/agent/) '
 ---
-
 # 도움 받기
 
 ```{toctree}

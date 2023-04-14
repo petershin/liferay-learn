@@ -20,7 +20,6 @@
 ```{note}
 세그먼트 기반 분석 데이터를 탐색하려면 먼저 [세그먼트 생성](../people/segments/creating-segments.md)해야 합니다. 이들은 선택한 속성에 따라 함께 집계되는 개인 그룹입니다.
 ```
-
 <!-- Hiding until further notice
 For understanding your Commerce data:
 

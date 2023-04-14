@@ -47,7 +47,7 @@
 1. 선택적으로 잘못된 연결이 정상적으로 처리되도록 데이터 연결의 유효성을 검사합니다.
 
 1. 기본 [`spring.configs` 및 `spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 를 `portal-ext.properties` 파일에 복사하고 다음 Spring 구성 파일 경로를 추가하여 읽기-작성기 데이터베이스 구성을 활성화합니다.
-  
+
    `spring.configs`에 추가: 
 
     ```
@@ -89,7 +89,7 @@
 1. 선택적으로 잘못된 연결이 정상적으로 처리되도록 데이터 연결의 유효성을 검사합니다.
 
 1. 기본 [`spring.configs` 및 `spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 를 `portal-ext.properties` 파일에 복사하여 읽기 작성기 데이터베이스 구성을 활성화하고 다음 Spring 구성 파일 경로를 여기에 추가합니다.
-   
+
    `spring.configs`에 추가: 
 
     ```

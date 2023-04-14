@@ -3,7 +3,6 @@ toc:
 - ./other-tools/liferay-cli-tool.md
 - ./other-tools/liferay-npm-bundler.md
 ---
-
 # 기타 도구
 
 ```{toctree}

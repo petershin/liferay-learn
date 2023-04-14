@@ -5,7 +5,6 @@ toc:
 - ./managing-site-urls/setting-up-redirects-and-404-tracking.md
 - ./managing-site-urls/using-pattern-redirects.md
 ---
-
 # 사이트 URL 관리
 
 ```{toctree}

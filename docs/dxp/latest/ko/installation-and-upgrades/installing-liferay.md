@@ -6,7 +6,6 @@ toc:
   - ./installing-liferay/using-liferay-docker-images.md
   - ./installing-liferay/installing-liferay-on-an-application-server.md
 ---
-
 # 라이프레이 설치
 
 ```{toctree}

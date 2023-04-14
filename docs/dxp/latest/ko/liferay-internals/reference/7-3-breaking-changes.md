@@ -53,7 +53,6 @@ JSP에서 아이콘을 직접 사용하는 개발자는 위에서 설명한 대�
 이 변경은 불필요한 파일을 제공하지 않음으로써 대역폭을 절약하고 사이트의 성능을 향상시키기 위해 만들어졌습니다.
 
 ---------------------------------------
-
 ### liferay.frontend.ProgressBar를 제거했습니다.
 - **날짜:** 2019-8-28
 - **JIRA 티켓:** [LPS-100122](https://issues.liferay.com/browse/LPS-100122)
@@ -75,7 +74,6 @@ JSP에서 아이콘을 직접 사용하는 개발자는 위에서 설명한 대�
 `liferay.frontend.ProgressBar` 구성 요소는 7.2에서 더 이상 사용되지 않으며 더 이상 사용되지 않습니다.
 
 ---------------------------------------
-
 ### AssetCategory의 트리 경로는 왼쪽/오른쪽 범주 ID를 대체합니다.
 - **날짜:** 2019-Oct-08
 - **JIRA 티켓:** [LPS-102671](https://issues.liferay.com/browse/LPS-102671)
@@ -150,7 +148,6 @@ else {
 이 변경은 AssetCategory의 계층적 트리 구현을 개선하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### liferay.frontend.Slider가 제거되었습니다.
 - **날짜:** 2019-10-10
 - **JIRA 티켓:** [LPS-100124](https://issues.liferay.com/browse/LPS-100124)
@@ -172,7 +169,6 @@ else {
 `liferay.frontend.Slider` 구성 요소는 7.2에서 더 이상 사용되지 않으며 더 이상 사용되지 않습니다.
 
 ---------------------------------------
-
 ### com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag가 제거됨
 - **날짜:** 2019-10-15
 - **JIRA 티켓:** [LPS-100144](https://issues.liferay.com/browse/LPS-100144)
@@ -194,7 +190,6 @@ Java 클래스 `com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag
 `asset:asset-tags-selector` 및 해당 구성 요소가 React로 마이그레이션되어 이전 태그와 해당 soy 인프라가 필요하지 않습니다.
 
 ---------------------------------------
-
 ### 제거된 포털 속성 user.groups.copy.layouts.to.user.personal.site
 - **날짜:** 2019-12-26
 - **JIRA 티켓:** [LPS-106339](https://issues.liferay.com/browse/LPS-106339)
@@ -216,7 +211,6 @@ Java 클래스 `com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag
 이 속성과 관련된 동작은 6.2부터 사용되지 않습니다.
 
 ---------------------------------------
-
 ### Auto Deploying EXT 플러그인에 대한 지원 제거
 - **날짜:** 2019-12-31
 - **JIRA 티켓:** [LPS-106008](https://issues.liferay.com/browse/LPS-106008)
@@ -238,7 +232,6 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 이 기능은 7.1부터 사용되지 않습니다.
 
 ---------------------------------------
-
 ### 교체된 OSGi 구성 속성 autoUpgrade
 - **날짜:** 2020년 1월 3일
 - **JIRA 티켓:** [LPS-102842](https://issues.liferay.com/browse/LPS-102842)
@@ -266,7 +259,6 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 이 변경은 Core와 모듈 간의 자동 업그레이드 기능을 통합하기 위해 이루어졌습니다. 프로덕션 환경에서 시작 시 새 업그레이드 프로세스가 실행되지 않도록 기본값도 변경되었습니다.
 
 ---------------------------------------
-
 ### SingleVMPoolUtil 및 MultiVMPoolUtil 클래스 제거됨
 - **날짜: 2020년** 월 1일-7일
 - **JIRA 티켓:** [LPS-106315](https://issues.liferay.com/browse/LPS-106315)
@@ -313,7 +305,6 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 이 변경은 보안 문제를 피하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### liferay-frontend:cards-treeview 태그 제거됨
 - **날짜:** 2020년 1월 10일
 - **JIRA 티켓:** [LPS-106899](https://issues.liferay.com/browse/LPS-106899)
@@ -335,7 +326,6 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 이 변경은 태그가 주로 내부적으로 사용되었기 때문에 이루어졌습니다.
 
 ---------------------------------------
-
 ### liferay-frontend:contextual-sidebar 태그 제거
 - **날짜:** 2020년 1월 10일
 - **JIRA 티켓:** [LPS-100146](https://issues.liferay.com/browse/LPS-100146)
@@ -357,7 +347,6 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 이 변경은 태그가 주로 내부적으로 사용되었기 때문에 이루어졌습니다.
 
 ---------------------------------------
-
 ### Portal Vulcan API에서 작업 추가 메서드 제거됨
 - **날짜: 2020년** 월 1일-22일
 - **JIRA 티켓:** [LPS-98387](https://issues.liferay.com/browse/LPS-98387)
@@ -379,7 +368,6 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 이러한 메서드는 정리 리팩터의 일부로 제거되었습니다.
 
 ---------------------------------------
-
 ### 변경된 컨트롤 메뉴 및 제품 메뉴 포지셔닝
 - **날짜:** 2020-2-04
 - **JIRA 티켓:** [LPS-107487](https://issues.liferay.com/browse/LPS-107487)
@@ -442,7 +430,6 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 이 변경은 액세스 가능성을 개선하고 최상위 메뉴 사이트 지정 및 제어에 필요한 논리를 단순화하기 위해 이루어졌습니다. 일반적인 시각적 결함을 피하는 보다 정확하고 예상되는 마크업을 제공합니다.
 
 ---------------------------------------
-
 ### jQuery는 더 이상 기본적으로 포함되지 않음
 - **날짜:** 2020-2-04
 - **JIRA 티켓:** [LPS-95726](https://issues.liferay.com/browse/LPS-95726)
@@ -466,7 +453,6 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 이 변경은 대부분 사용되지 않고 중복되는 모든 페이지에서 추가 라이브러리 코드를 번들링하고 제공하는 것을 방지하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### 서버 측 병렬 렌더링이 더 이상 지원되지 않음
 - **날짜:** 2020-3-16
 - **JIRA 티켓:** [LPS-110359](https://issues.liferay.com/browse/LPS-110359)
@@ -488,7 +474,6 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 이 기능은 더 이상 사용되지 않습니다.
 
 ---------------------------------------
-
 ### ContentField 값 속성 이름이 contentFieldValue로 변경됨
 - **날짜: 2020년 3월 18일**
 - **JIRA 티켓:** [LPS-106886](https://issues.liferay.com/browse/LPS-106886)
@@ -510,7 +495,6 @@ REST 클라이언트에서 속성 이름을 `contentFieldValue` 로 변경합니
 이 변경으로 `{schemaName}+Value`라고 하는 헤드리스 API의 모든 값 속성 이름과의 일관성이 복원됩니다.
 
 ---------------------------------------
-
 ### liferay-editor-image-uploader 플러그인 제거
 - **날짜:** 2020-3-27
 - **JIRA 티켓:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
@@ -532,7 +516,6 @@ REST 클라이언트에서 속성 이름을 `contentFieldValue` 로 변경합니
 이 변경으로 인해 CKEditor에서 이미지 드래그 앤 드롭 처리가 가능하고 Alloy Editor와 CKEditor 모두에 공통 이미지 업로더가 제공됩니다.
 
 ---------------------------------------
-
 ### TinyMCE 편집기는 더 이상 기본적으로 번들로 제공되지 않습니다.
 - **날짜:** 2020-3-27
 - **JIRA 티켓:** [LPS-110733](https://issues.liferay.com/browse/LPS-110733)
@@ -560,7 +543,6 @@ TinyMCE를 사용하도록 Liferay Portal을 구성한 경우 이러한 구성�
 이 변경은 보다 응집력 있고 포괄적인 경험을 제공하기 위해 단일 편집기 주위에 서식 있는 텍스트 콘텐츠를 작성하기 위한 모든 UX를 통합하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### 간편 편집기가 더 이상 기본적으로 번들로 제공되지 않음
 - **날짜:** 2020-3-27
 - **JIRA 티켓:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
@@ -588,7 +570,6 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 이 변경은 보다 응집력 있고 포괄적인 경험을 제공하기 위해 단일 편집기 주위에 서식 있는 텍스트 콘텐츠를 작성하기 위한 모든 UX를 통합하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### asset.vocabulary.default는 이제 언어 키를 보유합니다.
 - **날짜:** 2020-4-28
 - **JIRA 티켓:** [LPS-112334](https://issues.liferay.com/browse/LPS-112334)
@@ -610,7 +591,6 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 사용자가 모든 언어에서 기본 어휘의 이름을 변경할 필요가 없도록 변경되었습니다.
 
 ---------------------------------------
-
 ### Liferay.Poller는 더 이상 기본적으로 초기화되지 않습니다.
 - **날짜:** 2020-5-19
 - **JIRA 티켓:** [LPS-112942](https://issues.liferay.com/browse/LPS-112942)
@@ -648,7 +628,6 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 `Liferay.Poller` 구성 요소는 보관된 채팅 애플리케이션에서만 사용되었습니다. 기본적으로 초기화를 건너뛰면 일반적인 경우에 페이지 로드가 간소화됩니다.
 
 ---------------------------------------
-
 ### ContentTransformerListener는 기본적으로 비활성화되어 있습니다.
 - **날짜:** 2020-5-25
 - **JIRA 티켓:** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
@@ -670,7 +649,6 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 `ContentTransformerListener` 은 기사 요소(기사 필드에서 `HtmlUtil.stripComments` 및 `HtmlUtil.stripHtml` 호출)에 대한 값비싼 문자열 처리로 인해 성능 향상을 위해 비활성화되었습니다.
 
 ---------------------------------------
-
 ### Liferay.BrowserSelectors.run이 더 이상 호출되지 않음
 - **날짜:** 2020-5월-26
 - **JIRA 티켓:** [LPS-112983](https://issues.liferay.com/browse/LPS-112983)
@@ -729,7 +707,6 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 오래된 브라우저를 참조하는 일부 클래스는 Alloy UI에 의존하는 레거시 JavaScript를 통해 상위 `<html>` 요소에 추가되었습니다. 오래된 브라우저 참조를 제거하는 이 변경은 이제 서버 측에서 수행되어 페이지 로딩 시간을 개선합니다.
 
 ---------------------------------------
-
 ### 차단 캐시에 대한 지원 제거
 - **날짜:** 2020-6-17
 - **JIRA 티켓:** [LPS-115687](https://issues.liferay.com/browse/LPS-115687)
@@ -755,7 +732,6 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 블로킹 캐시는 절대로 활성화하면 안 되므로 성능을 개선하기 위해 이 변경이 이루어졌습니다.
 
 ---------------------------------------
-
 ### 각 엔터티 모델에 대한 캐시 속성 설정 지원 제거
 - **날짜: 2020년 6월** 일-24일
 - **JIRA 티켓:** [LPS-116049](https://issues.liferay.com/browse/LPS-116049)
@@ -787,7 +763,6 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 이러한 속성이 엔터티에 유용하지 않기 때문에 이렇게 변경되었습니다.
 
 ---------------------------------------
-
 ### 포털 속성 이름이 "module.framework.properties.felix.fileinstall.\*" 에서 "module.framework.properties.file.install.\*" 로 변경됨
 - **날짜:** 2020-7-13
 - **JIRA 티켓:** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
@@ -809,7 +784,6 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 이 변경은 Apache Felix 파일 설치의 인라인을 반영하기 위해 이루어졌습니다. Liferay는 현재 이 기능을 관리하고 유지하고 있습니다.
 
 ---------------------------------------
-
 ### Elasticsearch의 동적 데이터 매핑 필드가 중첩 문서로 변경됨
 - **날짜: 2020년 7월** 일-27일
 - **JIRA 티켓:** [LPS-103224](https://issues.liferay.com/browse/LPS-103224)
@@ -847,7 +821,6 @@ Liferay 코드에는 몇 가지 예가 있습니다. 예를 들어, [DDMIndexerI
 이 변경은 Dynamic Data Mapping 구조가 너무 많은 경우 발생하는 총 필드의 **제한이 1을 초과함** Elasticsearch 오류를 방지하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### Lexicon 아이콘 경로 이동
 - **날짜:** 2020-Aug-17
 - **JIRA 티켓:** [LPS-115812](https://issues.liferay.com/browse/LPS-115812)
@@ -869,7 +842,6 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 이 변경은 아이콘 스프라이트 맵에 대한 참조를 통합하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### DDM 지속성 클래스에서 classNameId 관련 메소드 제거됨
 - **날짜:** 2020-8-18
 - **JIRA 티켓:** [LPS-108525](https://issues.liferay.com/browse/LPS-108525)
@@ -898,7 +870,6 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 이러한 방법은 [LPS-108525](https://issues.liferay.com/browse/LPS-108525) 에 대한 솔루션의 일부로 제거되었습니다.
 
 ---------------------------------------
-
 ### com.liferay.dynamic.data.mapping.util.BaseDDMDisplay 메서드 제거됨
 - **날짜:** 2020-8-18
 - **JIRA 티켓:** [LPS-103549](https://issues.liferay.com/browse/LPS-103549)
@@ -920,7 +891,6 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 이 메서드는 정리 리팩터의 일부로 제거되었습니다.
 
 ---------------------------------------
-
 ### 대체된 포털 속성: view.count.enabled 및 buffered.increment.enabled
 - **날짜:** 2020-Oct-01
 - **JIRA 티켓:** [LPS-120626](https://issues.liferay.com/browse/LPS-120626) 및 [LPS-121145](https://issues.liferay.com/browse/LPS-121145)
@@ -956,7 +926,6 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 이 변경은 조회수 동작 관리를 용이하게 하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### 제거된 포털 속성 "module.framework.properties.file.install.optionalImportRefreshScope"
 - **날짜:** 2020-10-11
 - **JIRA 티켓:** [LPS-122008](https://issues.liferay.com/browse/LPS-122008)

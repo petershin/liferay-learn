@@ -13,7 +13,6 @@ toc:
   - ./clay-tag-library/clay-progress-bars.md
   - ./clay-tag-library/clay-stickers.md
 ---
-
 # 클레이 태그 라이브러리
 
 ```{toctree}

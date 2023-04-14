@@ -38,7 +38,6 @@ JSP는 실제 템플릿 엔진이 아니며 거의 사용되지 않습니다. Fr
 JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중할 수 있습니다.
 
 ---------------------------------------
-
 ### Lodash는 더 이상 기본적으로 포함되지 않습니다.
 - **날짜:** 2018-11-27
 - **JIRA 티켓:** [LPS-87677](https://issues.liferay.com/browse/LPS-87677)
@@ -62,7 +61,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 이 변경은 대부분 사용되지 않고 중복되는 모든 페이지에서 추가 라이브러리 코드를 번들링하고 제공하는 것을 방지하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### 두 개의 스테이징 포털 속성을 OSGi 구성으로 이동했습니다.
 - **날짜:** 2018-Dec-12
 - **JIRA 티켓:** [LPS-88018](https://issues.liferay.com/browse/LPS-88018)
@@ -89,7 +87,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 이 변경은 포털 구성 변경을 쉽게 하기 위한 모듈화 노력의 일환으로 이루어졌습니다.
 
 ---------------------------------------
-
 ### 페이지 기능에 대한 애플리케이션 URL 링크 제거
 - **날짜:** 2018-Dec-14
 - **JIRA 티켓:** [LPS-85948](https://issues.liferay.com/browse/LPS-85948)
@@ -111,7 +108,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 제한된 수의 포틀릿이 이 특성을 사용합니다. 동일한 결과를 얻을 수 있는 더 나은 방법이 있습니다.
 
 ---------------------------------------
-
 ### TermOfUseContentProvider를 kernel.util에서 이동했습니다.
 - **날짜:** 2019-Jan-07
 - **JIRA 티켓:** [LPS-88869](https://issues.liferay.com/browse/LPS-88869)
@@ -145,7 +141,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 이는 패키지 버전이 잠길 가능성을 줄이기 위해 커널 제공자 인터페이스를 정리하는 여러 단계 중 하나입니다.
 
 ---------------------------------------
-
 ### HibernateConfigurationConverter 및 변환기 제거됨
 - **날짜:** 2019-Jan-07
 - **JIRA 티켓:** [LPS-88870](https://issues.liferay.com/browse/LPS-88870)
@@ -167,7 +162,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 이는 패키지 버전이 잠길 가능성을 줄이기 위해 커널 제공자 인터페이스를 정리하는 여러 단계 중 하나입니다.
 
 ---------------------------------------
-
 ### JDK 기능 및 공급업체 사용으로 전환
 - **날짜:** 2019년 1월 08일
 - **JIRA 티켓:** [LPS-88911](https://issues.liferay.com/browse/LPS-88911)
@@ -189,7 +183,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 이는 패키지 버전이 잠길 가능성을 줄이기 위해 커널 제공자 인터페이스를 정리하는 여러 단계 중 하나입니다.
 
 ---------------------------------------
-
 ### com.liferay.portal.service.InvokableService 인터페이스가 더 이상 사용되지 않음
 - **날짜:** 2019년 1월 08일
 - **JIRA 티켓:** [LPS-88912](https://issues.liferay.com/browse/LPS-88912)
@@ -211,7 +204,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 이는 패키지 버전이 잠길 가능성을 줄이기 위해 커널 제공자 인터페이스를 정리하는 여러 단계 중 하나입니다.
 
 ---------------------------------------
-
 ### ServiceLoaderCondition 지원 중단
 - **날짜:** 2019년 1월 08일
 - **JIRA 티켓:** [LPS-88913](https://issues.liferay.com/browse/LPS-88913)
@@ -233,7 +225,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 이는 패키지 버전이 잠길 가능성을 줄이기 위해 커널 제공자 인터페이스를 정리하는 여러 단계 중 하나입니다.
 
 ---------------------------------------
-
 ### JDK 술어 사용으로 전환됨
 - **날짜:** 2019년 1월 14일
 - **JIRA 티켓:** [LPS-89139](https://issues.liferay.com/browse/LPS-89139)
@@ -262,7 +253,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 이는 패키지 버전이 잠길 가능성을 줄이기 위해 커널 제공자 인터페이스를 정리하는 여러 단계 중 하나입니다.
 
 ---------------------------------------
-
 ### com.liferay.portal.kernel.util 패키지에서 안전하지 않은 기능 인터페이스 제거
 - **날짜:** 2019년 1월 15일
 - **JIRA 티켓:** [LPS-89223](https://issues.liferay.com/browse/LPS-89223)
@@ -288,7 +278,6 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 이는 패키지 버전이 잠길 가능성을 줄이기 위해 커널 제공자 인터페이스를 정리하는 여러 단계 중 하나입니다.
 
 ---------------------------------------
-
 ### 포털 배포에서 더 이상 사용되지 않는 NTLM
 - **날짜:** 2019년 1월 21일
 - **JIRA 티켓:** [LPS-88300](https://issues.liferay.com/browse/LPS-88300)
@@ -310,7 +299,6 @@ NTLM을 인증 시스템으로 계속 사용하려면 Liferay Marketplace에서 
 이 변경은 이전 독점 솔루션(NTLM)을 사용하지 않도록 하기 위한 것입니다. 표준 프로토콜이자 NTLM에 비해 더 안전한 인증 방법인 Kerberos가 이제 권장됩니다.
 
 ---------------------------------------
-
 ### 포털 배포에서 더 이상 사용되지 않는 OpenID
 - **날짜:** 2019년 1월 21일
 - **JIRA 티켓:** [LPS-88906](https://issues.liferay.com/browse/LPS-88906)
@@ -332,7 +320,6 @@ OpenID를 인증 시스템으로 계속 사용하려면 Liferay Marketplace에�
 이 변경은 더 이상 사용되지 않는 솔루션(OpenID)을 사용하지 않도록 하기 위한 것입니다. OpenID Connect는 이제 OAuth 위에서 실행되기 때문에 더 안전한 인증 방법인 OpenID Connect를 권장합니다.
 
 ---------------------------------------
-
 ### 포털 배포에서 더 이상 사용되지 않는 Google SSO
 - **날짜:** 2019년 1월 21일
 - **JIRA 티켓:** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
@@ -354,7 +341,6 @@ Google SSO를 인증 시스템으로 계속 사용하려면 Liferay Marketplace�
 이 변경은 인증에 이전 솔루션(Google SSO)을 사용하지 않도록 하기 위한 것입니다. OpenID Connect는 인증을 위해 Google 구현을 사용하는 데 권장되는 사양입니다.
 
 ---------------------------------------
-
 ### liferay-amd-loader에서 Liferay.Loader.addModules를 제거했습니다.
 - **날짜:** 2019-2-01
 - **JIRA 티켓:** [LPS-83949](https://issues.liferay.com/browse/LPS-83949)
@@ -378,7 +364,6 @@ Liferay.Loader.addModules를 직접 대체할 수 없습니다.
 서버 측에서 모든 모듈 해상도를 수행하면 속도와 네트워크 성능이 향상됩니다.
 
 ---------------------------------------
-
 ### 업데이트된 AlloyEditor v2.0에는 React의 새로운 주요 버전이 포함되어 있습니다.
 - **날짜:** 2019-2-04
 - **JIRA 티켓:** [LPS-90079](https://issues.liferay.com/browse/LPS-90079)
@@ -406,7 +391,6 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 이 변경은 더 이상 사용되지 않는 API를 제거하여 성능 및 호환성을 개선하고 번들 크기를 줄이는 최신 주 버전의 React를 사용하기 위해 만들어졌습니다.
 
 ---------------------------------------
-
 ### dl.tabs.visible Portal 속성이 더 이상 사용되지 않음
 
 - **날짜:** 2019-4월-10
@@ -429,7 +413,6 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 문서 & 미디어는 UX 관점에서 검토되었으며 위젯 페이지에서 탐색 탭을 제거하는 것은 UI 정리 프로세스의 일부였습니다.
 
 ---------------------------------------
-
 ### 제품 메뉴에서 사용자 메뉴 이동
 
 - **날짜:** 2019-4월-19
@@ -452,7 +435,6 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 상품 내비게이션은 UX 관점에서 검토되었으며 상품 메뉴에서 사용자 메뉴를 제거하고 자체 메뉴로 분할하여 더 나은 사용자 경험을 제공합니다.
 
 ---------------------------------------
-
 ### 국가 목록에서 홍콩 및 마카오 제거
 
 - **날짜:** 2019-4-26
@@ -475,7 +457,6 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 1997년 홍콩 반환, 1999년 마카오 반환 이후 홍콩과 마카오는 중국의 특별행정구가 됐다.
 
 ---------------------------------------
-
 ### JGroups가 3.6.16에서 4.1.1로 업그레이드되었습니다.
 
 - **날짜:** 2019-8-15
@@ -498,7 +479,6 @@ JGroups는 버전 3.6.16에서 4.1.1로 업그레이드되었습니다.
 이 업그레이드는 보안 문제를 해결하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### Liferay AssetEntries_AssetCategories는 더 이상 사용되지 않습니다.
 
 - **날짜:** 2019-9-11
@@ -554,7 +534,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경은 [LPS-76488](https://issues.liferay.com/browse/LPS-76488) 로 인해 개발자가 지정된 범주에 대한 자산 목록의 순서를 제어할 수 있도록 하는 변경 사항으로 인해 이루어졌습니다.
 
 ---------------------------------------
-
 ### 자동 태그 추가는 수동으로 재구성해야 함
 
 - **날짜:** 2019-Oct-02
@@ -577,7 +556,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경 사항은 이전에 분할된 구성 인터페이스를 통합하여 사용자 경험을 개선합니다.
 
 ---------------------------------------
-
 ### 블로그 이미지 포털 속성을 시스템 설정으로 이동했습니다.
 
 - **날짜:** 2019-Oct-02
@@ -600,7 +578,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 다시 시작하지 않고 블로그 이미지 속성을 구성할 수 있도록 이 변경이 이루어졌습니다.
 
 ---------------------------------------
-
 ### 캐시 부트스트랩 기능 제거
 
 - **날짜:** 2020년 1월 8일
@@ -625,7 +602,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경은 보안 문제를 피하기 위해 이루어졌습니다.
 
 ---------------------------------------
-
 ### 기본적으로 비활성화된 ContentTransformerListener
 
 - **날짜:** 2020-5-25
@@ -648,7 +624,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 `ContentTransformerListener` 은 기사 요소에서 많은 문자열 프로세스를 실행합니다(기사 필드에서 `HtmlUtil.stripComments` 및 `HtmlUtil.stripHtml` 호출). 성능 향상을 위해 비활성화되었습니다.
 
 ---------------------------------------
-
 ### DDMDataProvider에서 대체된 메소드
 
 - **날짜:** 2020-7-14
@@ -671,7 +646,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
-
 ### DDMDataProviderRequest에서 제거된 생성자
 
 - **날짜:** 2020-7-14
@@ -694,7 +668,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 제공자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
-
 ### DDMDataProviderRequest에서 제거된 메서드
 
 - **날짜:** 2020-7-14
@@ -727,7 +700,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
-
 ### DDMDataProviderRequest에서 대체된 메소드
 - **날짜:** 2020년 7월 14일
 - **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
@@ -749,7 +721,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
-
 ### DDMDataProviderResponse에서 제거된 메소드
 
 - **날짜:** 2020-7-14
@@ -778,7 +749,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
-
 ### DDMDataProviderResponse에서 메소드 대체
 
 - **날짜:** 2020-7-14
@@ -801,7 +771,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
-
 ### DDMDataProviderResponse에서 Enum을 교체했습니다.
 
 - **날짜:** 2020-7-14
@@ -824,7 +793,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경 사항은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 API 리팩토링의 일부입니다.
 
 ---------------------------------------
-
 ### 삭제된 DDMDataProviderResponseOutput
 
 - **날짜:** 2020-7-14
@@ -847,7 +815,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 클래스 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderResponseOutput` 은 [LPS-81563](https://issues.liferay.com/browse/LPS-81563) 의 데이터 공급자 코드에 개선 사항이 구현된 후 사용되지 않기 때문에 사용 중단 경고 없이 삭제되었습니다.
 
 ---------------------------------------
-
 ### DDMDataProviderTracker에서 메소드 제거
 
 - **날짜:** 2020-7-14
@@ -870,7 +837,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderContext` 클래스에서 제공하는 모든 데이터는 클래스 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderRequest` 및 `com에서 찾을 수 있습니다. liferay.dynamic.data.mapping.data.provider.DDMDataProviderInstanceSettings`. 따라서 클래스 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderContext` 및 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderContextContributor` 은 더 이상 필요하지 않습니다. `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderContextContributor` 이 Liferay Portal 7.2에서 제거되었습니다.
 
 ---------------------------------------
-
 ### DDMFormInstanceRecordLocalService에서 메소드 교체
 
 - **날짜:** 2020-7-14
@@ -895,7 +861,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경 사항은 [LPS-81564](https://issues.liferay.com/browse/LPS-81564) 의 스토리지 어댑터 API 리팩토링의 일부입니다.
 
 ---------------------------------------
-
 ### DDMStructureService에서 제거된 메서드
 
 - **날짜:** 2020-7-14
@@ -932,7 +897,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이러한 방법은 Liferay Portal 7.0에서 더 이상 사용되지 않습니다.
 
 ---------------------------------------
-
 ### 동적 데이터 매핑 지속성 클래스에서 제거된 메서드
 
 - **날짜:** 2020-7-14
@@ -973,7 +937,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 `getBadColumnNames` 은 인터페이스(예: `com.liferay.dynamic.data.mapping.service.persistence.DDMContentPersistence`)에서 자동으로 제거되고 구현 클래스(예: `com.liferay.dynamic.data.mapping.service)에 보관되었습니다. persistence.impl.DDMContentPersistenceImpl`) Service Builder에서 클래스를 생성한 경우.
 
 ---------------------------------------
-
 ### 동적 데이터 매핑 유틸리티 클래스에서 제거된 메서드
 
 - **날짜:** 2020-7-14
@@ -1007,7 +970,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 `getBadColumnNames` 은 지속성 유틸리티(예: `com.liferay.dynamic.data.mapping.service.persistence.DDMContentUtil`)에서 자동으로 제거되었으며 지속성 구현(예: `com.liferay.dynamic.data.mapping.service)에 보관되었습니다. .persistence.impl.DDMContentPersistenceImpl`) Service Builder에서 클래스를 생성한 경우.
 
 ---------------------------------------
-
 ### module.framework.properties.felix.fileinstall.\ **포털 속성의 이름을 module.framework.properties.file.install.\** 으로 변경했습니다.
 
 - **날짜:** 2020-Aug-08
@@ -1030,7 +992,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이 변경 사항은 Apache Felix Fileinstall 인라인을 반영합니다. Liferay는 이제 이 기능을 관리하고 유지하므로 속성의 이름이 적절하게 바뀝니다.
 
 ---------------------------------------
-
 ### buffered.increment.enabled 포털 속성을 대체했습니다.
 
 - **날짜:** 2020-10-21
@@ -1061,7 +1022,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 이렇게 하면 조회수 동작을 쉽게 관리할 수 있습니다.
 
 ---------------------------------------
-
 ### module.framework.properties.file.install.optionalImportRefreshScope 포털 속성을 제거했습니다.
 
 - **날짜: 2021년 2월 3일** 일
@@ -1084,7 +1044,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 대체 동작이 바람직한 경우는 거의 없었습니다. 파일 설치는 번들이 Liferay에 설치되는 기본 방법이므로 기본적으로 모든 번들이 관리됩니다. 이 기능을 지원하는 분기 논리를 제거하면 코드 유지 관리 및 가독성이 향상됩니다.
 
 ---------------------------------------
-
 ### .cfg 파일에 .cfg 형식 사용
 
 - **날짜: 2021년 2월** 일-21일

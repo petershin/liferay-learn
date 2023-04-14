@@ -2,7 +2,6 @@
 toc:
   - ./../file-storage/enabling-antivirus-scanning-for-uploaded-files.md
 ---
-
 # 보안 설정
 
 ```{toctree}

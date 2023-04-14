@@ -4,7 +4,6 @@ toc:
   - ./actions/understanding-action-types.md
   - ./action/using-manual-actions.md
 ---
-
 # 액션
 
 ```{toctree}

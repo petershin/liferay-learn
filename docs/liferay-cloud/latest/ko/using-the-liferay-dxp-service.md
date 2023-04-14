@@ -8,7 +8,6 @@ toc:
 - ./using-the-liferay-dxp-service/using-the-mysql-client.md
 - ./using-the-liferay-dxp-service/upgrading-your-liferay-dxp-instance.md
 ---
-
 # Liferay DXP 서비스 사용
 
 Liferay 서비스는 모든 프로젝트의 핵심입니다. 애플리케이션의 Liferay DXP 인스턴스를 실행하고 웹 서버, Elasticsearch 및 MySQL 데이터베이스와 같은 다른 서비스와 상호 작용합니다.

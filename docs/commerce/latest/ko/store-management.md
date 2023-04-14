@@ -10,7 +10,6 @@ toc:
   - store-management/locale-options.md
   - store-management/configuring-countries-and-regions.md
 ---
-
 # 매장 관리
 
 ```{toctree}

@@ -9,8 +9,6 @@ Liferay 7.2는 사용자 지정 양식 필드에 대해 다른 프런트 엔드 
 1. 사용자 지정 양식 필드 유형 프로젝트](./liferay-c2p9.zip)를 다운로드하여 압축을 풉니다.
 
 풉니다. 
-   
-   
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O

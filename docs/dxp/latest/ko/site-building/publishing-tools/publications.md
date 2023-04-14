@@ -10,7 +10,6 @@ toc:
   - ./publications/reverting-changes.md
   - ./publications/publications-permissions.md
 ---
-
 # 출판
 
 ```{toctree}

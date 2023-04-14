@@ -3,7 +3,6 @@ toc:
 - ./layouts/designing-object-layouts.md
 - ./layouts/adding-categorization-to-fields-tabs.md
 ---
-
 # 배치
 
 ```{toctree}

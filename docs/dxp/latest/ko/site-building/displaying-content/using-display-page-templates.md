@@ -7,7 +7,6 @@ toc:
   - ./using-display-page-templates/displaying-categories-using-display-pages.md
   - ./using-display-page-templates/configuring-seo-and-open-graph.md
 ---
-
 # 표시 페이지 템플릿 사용
 
 ```{toctree}

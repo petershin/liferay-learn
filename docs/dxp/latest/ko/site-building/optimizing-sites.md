@@ -3,7 +3,6 @@ toc:
 - ./optimizing-sites/ab-testing.md
 - ./optimizing-sites/building-a-responsive-site.md
 ---
-
 # 사이트 최적화
 
 ```{toctree}

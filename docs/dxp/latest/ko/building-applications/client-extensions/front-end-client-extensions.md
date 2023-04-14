@@ -12,7 +12,6 @@ toc:
   - ./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
   - ./front-end-client-extensions/remote-applications-ui-reference.md
 ---
-
 # 프런트 엔드 클라이언트 확장
 
 ```{toctree}

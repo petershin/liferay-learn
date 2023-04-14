@@ -3,7 +3,6 @@ toc:
   - ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
   - ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ---
-
 # 구성 클라이언트 확장
 
 ```{toctree}

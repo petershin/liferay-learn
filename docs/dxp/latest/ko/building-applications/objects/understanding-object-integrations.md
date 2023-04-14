@@ -4,7 +4,6 @@ toc:
   - ./understanding-object-integrations/headless-framework-integration.md
   - ./understanding-object-integrations/assets-framework-integration.md
 ---
-
 # 개체 통합 이해
 
 ```{toctree}
@@ -29,7 +28,8 @@ understanding-object-integrations/assets-framework-integration.md
 | 워크플로우    | 개체 항목의 생성, 검토 및 게시를 지시하기 위해 개체에 대한 사용자 정의 워크플로를 활성화합니다.                                                                                                                                                                                                                                                                                                                                                              |
 
 <!-- TASK: Add the following integrations when ready -->
-<!-- | Job Scheduler | Use the \[Job Scheduler\](../core-frameworks/job-scheduler-framework/using-job-scheduler.m) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |--><!-- | Publications |  | -->
+<!-- | Job Scheduler | Use the [Job Scheduler](../core-frameworks/job-scheduler-framework/using-job-scheduler.m) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |-->
+<!-- | Publications |  | -->
 
 ```{raw} html
 :file: ../../landingpage_template.html

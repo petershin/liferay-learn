@@ -8,7 +8,6 @@ toc:
   - ./workspace-settings/scoping-sites-and-individuals-using-properties.md
   - ./workspace-settings/contact-sync-data-reference.md
 ---
-
 # 작업 공간 설정
 
 ```{toctree}

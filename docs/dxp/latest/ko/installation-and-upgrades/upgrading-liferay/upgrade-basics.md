@@ -4,7 +4,6 @@ toc:
 - ./upgrade-basics/using-the-database-upgrade-tool.md
 - ./upgrade-basics/post-upgrade-considerations.md
 ---
-
 # 업그레이드 기본 사항
 
 ```{toctree}

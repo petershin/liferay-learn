@@ -15,7 +15,6 @@ toc:
   - ./creating-and-managing-objects/auditing-object-definition-events.md
   - ./creating-and-managing-objects/deleting-objects.md
 ---
-
 # 객체 생성 및 관리
 
 ```{toctree}

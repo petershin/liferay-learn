@@ -9,7 +9,6 @@ toc:
   - ./search-blueprints/understanding-search-blueprints.md
   - ./search-blueprints/using-a-search-blueprint-on-a-search-page.md
 ---
-
 # 청사진 검색
 
 {bdg-link-primary}`[LES 구독](../activating-liferay-enterprise-search.md)`

@@ -7,7 +7,6 @@ toc:
 - ./message-bus/listening-for-registration-events.md
 - ./message-bus/tuning-messaging-performance.md
 ---
-
 # 메시지 버스
 
 ```{toctree}

@@ -5,7 +5,6 @@ toc:
   - using-the-server-administration-panel/configuring-external-services.md
   - using-the-server-administration-panel/configuring-a-shutdown-event.md
 ---
-
 # 서버 관리 패널 사용
 
 ```{toctree}

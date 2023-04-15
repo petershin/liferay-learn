@@ -25,7 +25,7 @@ concat([textField], "[string]")
 
 ### Condition (with Text)
 
-Checks if user input meets one or more conditions and returns a boolean value. This function works like `if` statements. Each expression includes at least one `[condition]` (e.g., `[textField] == "foo"`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `[textField] == "foo", [textField] == "bar", true, false`).
+Checks if user input meets one or more conditions and returns a boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `textFieldName == "foo"`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `textFieldName == "foo", textFieldName == "bar", true, false`).
 
 ```
 condition([condition], [return-value])
@@ -103,7 +103,7 @@ Liferay provides the following operators and functions for Integer, Long Integer
 
 ### Condition (with Numeric)
 
-Checks if user input meets one or more conditions and returns a boolean value. This function works like `if` statements. Each expression includes at least one `[condition]` (e.g., `[numericField] == 10`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `[numericField] == 10, [numericField] != 100, true, false`).
+Checks if user input meets one or more conditions and returns a boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `numericFieldName == 10`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `numericFieldName == 10, numericFieldName != 100, true, false`).
 
 ```
 condition([condition], [return-value])
@@ -211,7 +211,7 @@ compareDates([dateField], [yyyy-MM-dd])
 
 ### Condition (with Date)
 
-Checks if user input meets one or more conditions and returns a boolean value. This function works like `if` statements. Each expression includes at least one `[condition]` (e.g., `[dateField] == 2020-01-01`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `[dateField] == 2020-01-01, [dateField] != 2022-01-01, true, false`).
+Checks if user input meets one or more conditions and returns a boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `dateFieldName == 2020-01-01`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `dateFieldName == 2020-01-01, dateFieldName != 2022-01-01, true, false`).
 
 ```
 condition([condition], [return-value])
@@ -299,20 +299,20 @@ OR match([lastNameField], "[A-Za-z]{1,50}")
 
 ## Validation Examples
 
-The following validations are common examples.
+The following validations are common examples. To use them, replace `fieldName` with the name of the fields you want to validate.
 
 ### Name Validation (with Text)
 
 Restricts values to alphabetic characters and limits the number of allowed characters.
 
 ```
-match([nameField], ("[A-Za-z]{1,50}")
+match(fieldName, "[A-Za-z]{1,50}")
 ```
 
 Allows for numbers in last names.
 
 ```
-match([lastNameField], "[A-Za-z][0-9]{1,50}")
+match(fieldName, "[A-Za-z][0-9]{1,50}")
 ```
 
 ### Password (with Text)
@@ -326,7 +326,7 @@ Checks if entries meet the following password criteria:
 * No spaces allowed
 
 ```
-match([passwordField], "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{8,}$")
+match(fieldName, "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{8,}$")
 ```
 
 ### Cell Phone Number (with Numeric)
@@ -334,7 +334,7 @@ match([passwordField], "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{
 Checks if entries match a phone number pattern. It restricts entries to numeric characters, limits the number of characters, and sets a standard phone number pattern.
 
 ```
-match([phoneNumberField], "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
+match(fieldName, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 ```
 
 ### Postal Code (with Numeric)
@@ -342,7 +342,7 @@ match([phoneNumberField], "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 Checks if entries match a postal code pattern. It restricts entries to numeric characters, limits the number of characters, and sets a standard postal code pattern.
 
 ```
-match([postalField], "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
+match(fieldName, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 ```
 
 ### Specify Age Range (Date)
@@ -350,9 +350,9 @@ match([postalField], "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 Checks if entries are between 18-65.
 
 ```
-pastDates([dateField], startsFrom, responseDate, years, -120, endsOn, responseDate, years, -18)
+pastDates(fieldName, startsFrom, responseDate, years, -120, endsOn, responseDate, years, -18)
 AND
-futureDates([dateField], startsFrom, responseDate, years, 0, endsOn, responseDate, years, 65)
+futureDates(fieldName, startsFrom, responseDate, years, 0, endsOn, responseDate, years, 65)
 ```
 
 ## Additional Information

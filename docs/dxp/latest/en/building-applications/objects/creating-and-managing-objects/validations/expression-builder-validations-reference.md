@@ -3,12 +3,12 @@ uuid: 2ef89ecc-8c75-43e3-86c1-420d6bbc3a25
 ---
 # Expression Builder Validations Reference
 
-{bdg-secondary}`Available Liferay 7.4 U27+ and GA27+`
+{bdg-secondary}`Available Liferay 7.4 U67+ and GA67+`
 
 With custom Objects, you can create field validations using Liferay's Expression Builder. This tool provides an integrated editor for quickly defining complex validation rules using predefined fields, operators, and functions. You can browse available elements in the conditions side panel.
 
 ```{important}
-Expression Builder validations can only be used with text, numeric, date, and boolean field types.
+Expression Builder validations can only be used with text, numeric, date, and Boolean field types.
 ```
 
 ## Text Fields
@@ -25,7 +25,7 @@ concat([textField], "[string]")
 
 ### Condition (with Text)
 
-Checks if user input meets one or more conditions and returns a boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `textFieldName == "foo"`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `textFieldName == "foo", textFieldName == "bar", true, false`).
+Checks if user input meets one or more conditions and returns a Boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `textFieldName == "foo"`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `textFieldName == "foo", textFieldName == "bar", true, false`).
 
 ```
 condition([condition], [return-value])
@@ -97,13 +97,21 @@ match([textField], "[string]")
 match([textField], "[regex]")
 ```
 
+### Old Value (with Text)
+
+Retrieves the prior value for the specified text field. You can then use this value with other functions and operators.
+
+```
+oldValue([textFieldName])
+```
+
 ## Numeric Fields
 
 Liferay provides the following operators and functions for Integer, Long Integer, Decimal, and Precision Decimal fields. You can use any of these fields as arguments. With some elements, you can also add numeric values to compare with the field's value (e.g., `123`, `3.1415`).
 
 ### Condition (with Numeric)
 
-Checks if user input meets one or more conditions and returns a boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `numericFieldName == 10`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `numericFieldName == 10, numericFieldName != 100, true, false`).
+Checks if user input meets one or more conditions and returns a Boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `numericFieldName == 10`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `numericFieldName == 10, numericFieldName != 100, true, false`).
 
 ```
 condition([condition], [return-value])
@@ -189,6 +197,14 @@ Checks if a number field is less than or equal to a specific numeric value and r
 [numericField] <= [number]
 ```
 
+### Old Value (with Numeric)
+
+Retrieves the prior value for the specified numeric field. You can then use this value with other functions and operators.
+
+```
+oldValue([numericField])
+```
+
 ### Sum
 
 Adds multiple numeric fields together and returns a single number that can be used with other validation functions.
@@ -211,7 +227,7 @@ compareDates([dateField], [yyyy-MM-dd])
 
 ### Condition (with Date)
 
-Checks if user input meets one or more conditions and returns a boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `dateFieldName == 2020-01-01`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `dateFieldName == 2020-01-01, dateFieldName != 2022-01-01, true, false`).
+Checks if user input meets one or more conditions and returns a Boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `dateFieldName == 2020-01-01`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `dateFieldName == 2020-01-01, dateFieldName != 2022-01-01, true, false`).
 
 ```
 condition([condition], [return-value])
@@ -223,6 +239,14 @@ Checks if a date field's value is in the future and returns a Boolean. If the fi
 
 ```
 futureDates([dateField], "[yyyy-MM-dd]")
+```
+
+### Old Value (with Date)
+
+Retrieves the prior value for the specified date field. You can then use this value with other functions and operators.
+
+```
+oldValue([dateField])
 ```
 
 ### Past Dates

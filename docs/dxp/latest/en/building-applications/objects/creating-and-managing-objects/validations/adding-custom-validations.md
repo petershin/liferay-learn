@@ -3,7 +3,7 @@ uuid: 4554a488-5db0-4353-b9d0-a9af05b41200
 ---
 # Adding Custom Validations
 
-{bdg-secondary}`Available Liferay 7.4 U27+/GA27+`
+{bdg-secondary}`Available Liferay 7.4 U67+/GA67+`
 
 Validations set rules for determining valid field entries. Each validation has its own trigger, conditions, and error text, which you can set via the Objects UI. You can define validations using [Groovy scripts](#using-groovy-validations) or [Liferay expressions](#using-expression-builder-validations).
 
@@ -72,7 +72,7 @@ For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://doc
 Expression Builder provides predefined fields, operators, and functions that you can access in the Elements side panel. Clicking an element adds it to the conditions editor. These functions return a Boolean value. See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for a complete list of provided operators and functions.
 
 ```{important}
-You can only use Expression Builder validations with text, numeric, date, and boolean field types.
+You can only use Expression Builder validations with text, numeric, date, and Boolean field types.
 ```
 
 ![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/06.png)
@@ -96,29 +96,32 @@ This table lists available operators for Expression Builder validations:
 
 This table lists available Expression Builder functions with their compatible field types:
 
-| Operator | Text Fields | Numeric Fields | Date Fields |
-| :--- | :--- | :--- | :--- |
-| Compare Dates |  |  | &#10004; |
-| Concat | &#10004; |  |  |
-| Condition | &#10004; | &#10004; | &#10004; |
-| Contains | &#10004; | &#10004; |  |
-| Does Not Contain | &#10004; | &#10004; |  |
-| Future Dates |  |  | &#10004; |
-| Is a URL | &#10004; |  |  |
-| Is an Email | &#10004; |  |  |
-| Is Decimal |  | &#10004; |  |
-| Is Empty | &#10004; |  |  |
-| Is Equal To | &#10004; | &#10004; |  |
-| Is Greater Than |  | &#10004; |  |
-| Is Greater Than or Equal To |  | &#10004; |  |
-| Is Integer |  | &#10004; |  |
-| Is Less Than |  | &#10004; |  |
-| Is Less Than or Equal To |  | &#10004; |  |
-| Is Not Equal To | &#10004; | &#10004; |  |
-| Match | &#10004; |  |  |
-| Past Dates |  |  | &#10004; |
-| Range |  |  | &#10004; |
-| Sum |  | &#10004; |  |
+| Operator                    | Text Fields | Numeric Fields | Date Fields | Description                                                                                                           |
+|:----------------------------|:------------|:---------------|:------------|:----------------------------------------------------------------------------------------------------------------------|
+| Compare Dates               |             |                | &#10004;    | Checks if a date field's value is the same as a set value.                                                            |
+| Concat                      | &#10004;    |                |             | Combines multiple strings or text fields and return a single string that can be used with other validation functions. |
+| Condition                   | &#10004;    | &#10004;       | &#10004;    | Checks if user input meets one or more conditions and returns a Boolean value.                                        |
+| Contains                    | &#10004;    | &#10004;       |             | Checks if a field contains a specified value and returns a Boolean.                                        |
+| Does Not Contain            | &#10004;    | &#10004;       |             | Checks if a field contains a specified value and returns a Boolean.                                        |
+| Future Dates                |             |                | &#10004;    | Checks if a date field's value is in the future and returns a Boolean.                                                |
+| Is a URL                    | &#10004;    |                |             | Checks if a text field is a URL and returns a Boolean.                                                                |
+| Is an Email                 | &#10004;    |                |             | Checks if a text field is an email and returns a Boolean.                                                             |
+| Is Decimal                  |             | &#10004;       |             | Checks if a number field is a decimal and returns a Boolean.                                                          |
+| Is Empty                    | &#10004;    |                |             | Checks if a text field is empty and returns a Boolean.                                                                |
+| Is Equal To                 | &#10004;    | &#10004;       |             | Checks if a field value is equal to a specified value and returns a Boolean.                                          |
+| Is Greater Than             |             | &#10004;       |             | Checks if a number field is greater than a specific numeric value and returns a Boolean.                              |
+| Is Greater Than or Equal To |             | &#10004;       |             | Checks if a number field is greater than or equal to a specific numeric value and returns a Boolean.                  |
+| Is Integer                  |             | &#10004;       |             | Checks if a number field is an integer and returns a Boolean.                                                         |
+| Is Less Than                |             | &#10004;       |             | Checks if a number field is less than a specific numeric value and returns a Boolean.                                 |
+| Is Less Than or Equal To    |             | &#10004;       |             | Checks if a number field is less than or equal to a specific numeric value and returns a Boolean.                     |
+| Is Not Equal To             | &#10004;    | &#10004;       |             | Checks if a field value is different from a specified value and returns a Boolean.                                    |
+| Match                       | &#10004;    |                |             | Checks if a text field matches a specific string value or RegEx expression and returns a Boolean.                     |
+| Old Value                   | &#10004;    | &#10004;       | &#10004;    | Retrieves the prior value for the specified field.                                                                    |
+| Past Dates                  |             |                | &#10004;    | Checks if a date field's value is in the past and returns a Boolean.                                                  |
+| Range                       |             |                | &#10004;    | Checks if a date range begins with a past date and ends with a future date.                                           |
+| Sum                         |             | &#10004;       |             | Adds multiple numeric fields together and returns a single number that can be used with other validation functions.   |
+
+See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for more information and examples.
 
 ## Available Fields Reference
 

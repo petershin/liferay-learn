@@ -43,7 +43,7 @@ To add an action,
 
 1. (Optional) Enable a condition for automatic triggers. Click *Code* ( ![Code](../../../../images/icon-code.png) ) to view available expressions.
 
-   On Liferay 7.4 U33+/GA33+, Liferay validates the condition's syntax when you click *Done*. If the expression is invalid, Liferay displays an error message.
+   On Liferay 7.4 U33+/GA33+, Liferay validates the condition's syntax when you click *Done*. If the expression is invalid, Liferay displays an error message. See [Expression Builder Validations Reference](../validations/expression-builder-validations-reference.md) for more information on available fields, operators, and functions.
 
    <!--TASK: See [Using Action Conditions]() for more information. -->
 

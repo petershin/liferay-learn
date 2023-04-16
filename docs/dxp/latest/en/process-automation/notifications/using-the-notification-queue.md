@@ -3,7 +3,7 @@ uuid: 355cd01a-1910-4066-8b7f-fff359cc14f5
 ---
 # Using the Notification Queue
 
-{bdg-secondary}`Available Liferay 7.4 U34+ and GA34+`
+{bdg-secondary}`Available Liferay 7.4 U72+/GA72+`
 
 Liferay provides the Notification Queue application for reviewing email notifications triggered by an Object action. You can verify the status of notifications and resend them if needed. 
 
@@ -11,14 +11,37 @@ Liferay provides the Notification Queue application for reviewing email notifica
 
 The application lists the following details for each notification: 
 
-| Column | Description |
-| :--- | :--- |
-| Subject | The notification's subject, which is set in the notification's [template](./creating-notification-templates.md). |
+| Column     | Description                                                                                                                                                                                 |
+|:-----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Subject    | The notification's subject, which is set in the notification's [template](./creating-notification-templates.md).                                                                            |
 | Trigger By | The Object responsible for triggering the [notification action](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md#notification-actions). |
-| From | The notification's sender, which is set in the notification's [template](./creating-notification-templates.md). |
-| To | The notification's recipients, which is set in the notification's [template](./creating-notification-templates.md). |
-| Status | Indicates the status of the notification, whether it was sent (*Sent*) or is in the process of sending (*Unsent*). |
+| From       | The notification's sender, which is set in the notification's [template](./creating-notification-templates.md).                                                                             |
+| To         | The notification's recipients, which is set in the notification's [template](./creating-notification-templates.md).                                                                         |
+| Status     | Indicates the status of the notification, whether it was sent (*Sent*) or is in the process of sending (*Unsent*).                                                                          |
 
 Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for an entry to *delete* it or *resend* the notification.
 
 ![Delete entries or resend notifications.](./using-the-notification-queue/images/02.png)
+
+## Clearing the Notification Queue
+
+By default, Liferay clears the notification queue every `43200` minutes (i.e., 30 days). This deletes all notifications in the queue. If desired, you can configure this deletion interval.
+
+To do this,
+
+1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *System Settings*.
+
+1. Under Platform, click *Notifications*.
+
+1. Under Notification Queue, enter the number of minutes between deletion operations.
+
+   The deletion interval must be greater than `15` minutes.
+
+   ![Under Notification Queue, enter the number of minutes between deletion operations.](./using-the-notification-queue/images/03.png)
+
+1. Click *Save*.
+
+## Additional Information
+
+* [Creating Notification Templates](./creating-notification-templates.md)
+* [Configuring Personal Notifications](./configuring-personal-notifications.md)

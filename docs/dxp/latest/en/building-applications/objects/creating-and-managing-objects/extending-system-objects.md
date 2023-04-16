@@ -3,7 +3,7 @@ uuid: 52556bc8-a31b-4331-bcd7-317428006384
 ---
 # Extending System Objects
 
-{bdg-secondary}`Available Liferay 7.4 U70+/GA70+`
+{bdg-secondary}`Available Liferay 7.4 U72+/GA72+`
 
 With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, Postal Address, and User.
 
@@ -15,14 +15,14 @@ The Postal Address object is only used to store account addresses. For this reas
 
 When extending system objects, you can add [fields](#adding-fields), [relationships](#adding-relationships), [actions](#adding-actions), and [validations](#adding-validations) to them.
 
-| Feature | System Objects | Custom Objects |
-| :--- | :--- | :--- |
-| Fields | &#10004; | &#10004; |
-| Relationships | &#10004; | &#10004; |
-| Layouts |  | &#10004; |
-| Actions | &#10004; | &#10004; |
-| Views |  | &#10004; |
-| Validations | &#10004; | &#10004; |
+| Feature       | System Objects | Custom Objects |
+|:--------------|:---------------|:---------------|
+| Fields        | &#10004;       | &#10004;       |
+| Relationships | &#10004;       | &#10004;       |
+| Layouts       |                | &#10004;       |
+| Actions       | &#10004;       | &#10004;       |
+| Views         |                | &#10004;       |
+| Validations   | &#10004;       | &#10004;       |
 
 ## Adding Fields
 
@@ -54,13 +54,13 @@ See [Using Relationships REST APIs](../objects-tutorials/using-apis/using-relati
 
 You can add actions to system objects, triggered on events like adding, updating, or removing entries. The table below shows actions supported by system objects: 
 
-| Action Type | Supported in System Objects? |
-| :---------- | :--------------------------- |
-| [Webhook](./actions/defining-object-actions.md#webhook)                            | &#10004; |
-| [Groovy Script](./actions/defining-object-actions.md#groovy-script)                | &#10004; |
-| [Notification](./actions/defining-object-actions.md#notification)                  | &#10004; |
-| [Add Object Entry](./actions/defining-object-actions.md#add-an-object-entry)       | &#10008; |
-| [Update Object Entry](./actions/defining-object-actions.md#update-an-object-entry) | &#10008; |
+| Action Type                                                                        | Supported in System Objects? |
+|:-----------------------------------------------------------------------------------|:-----------------------------|
+| [Webhook](./actions/defining-object-actions.md#webhook)                            | &#10004;                     |
+| [Groovy Script](./actions/defining-object-actions.md#groovy-script)                | &#10004;                     |
+| [Notification](./actions/defining-object-actions.md#notification)                  | &#10004;                     |
+| [Add Object Entry](./actions/defining-object-actions.md#add-an-object-entry)       | &#10004;                     |
+| [Update Object Entry](./actions/defining-object-actions.md#update-an-object-entry) | &#10004;                     |
 
 See [Defining Object Actions](./actions/defining-object-actions.md) for more information.
 

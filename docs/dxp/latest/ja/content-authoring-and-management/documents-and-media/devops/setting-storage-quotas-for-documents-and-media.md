@@ -1,11 +1,11 @@
 # ドキュメントとメディアのストレージクォータを設定する
 
-`data.limit.dl.storage.max.size`ポータルプロパティを有効にすることで、ドキュメントとメディアでストレージクォータを定義できます。 このプロパティの値を定義すると、定義されたクォータを超えるアップロードの試行は失敗し、エラーメッセージが表示されます。 このクォータは特に、ドキュメントとメディア、およびそのAPIのユーザー（掲示板の添付ファイル、ブログ画像など）に適用されます。
+`data.limit.dl.storage.max.size`ポータルプロパティを有効にすることで、ドキュメントとメディアでストレージクォータを定義できます。 このプロパティの値を定義すると、定義されたクォータを超えるアップロードの試行は失敗し、エラーメッセージが表示されます。 このクォータは特に、ドキュメントとメディア、およびそのAPIのユーザー(掲示板の添付ファイル、ブログ画像など）に適用されます。
 
 ![制限を超えるアップロードの試行は失敗し、エラーメッセージが表示されます。](./setting-storage-quotas-for-documents-and-media/images/01.png)
 
 ```{important}
-設定はグローバルですが、各インスタンスは現在消費されているクォータを追跡します。 100MBのクォータを定義し、10個のインスタンスがある場合、ドキュメントとメディアが消費できる最大グローバルストレージは約1TBです。
+設定はグローバルですが、各インスタンスは現在消費されているクォータを追跡します。 100MBのクォータを定義し、10個のインスタンスを使用する場合、DocumentsとMediaが消費できる最大グローバルストレージはおよそ1GBになります。
 ```
 
 デフォルトでは、`data.limit.dl.storage.max.size`ポータルプロパティが無効になっています。 `portal-ext.properties`ファイルを使用して、この値をオーバーライドできます。
@@ -24,7 +24,7 @@ Liferayインスタンスのドキュメントとメディアのグローバル�
 
    負の数を割り当てるか、`0`を割り当てると、プロパティが無効になります。
 
-1. `portal-ext.properties`ファイルを [Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md) フォルダまたは`［USER_HOME]`フォルダにデプロイします。 詳細は、[ポータルプロパティ](../../../installation-and-upgrades/reference/portal-properties.md)を参照してください。
+1. `portal-ext.properties`ファイルを[Liferay Home](../../../installation-and-upgrades/reference/liferay-home.md)フォルダまたは`［USER_HOME]`フォルダにデプロイします。 詳細は、[ポータルプロパティ](../../../installation-and-upgrades/reference/portal-properties.md)を参照してください。
 
 1. Liferayサーバーを再起動して、新しいプロパティファイルを適用します。
 

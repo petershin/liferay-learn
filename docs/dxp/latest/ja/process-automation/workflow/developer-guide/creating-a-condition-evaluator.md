@@ -8,15 +8,16 @@
 まず、 `ConditionEvaluator`をデプロイし、動作を確認します。
 
 ## コンディション評価装置の導入
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+その後、以下の手順で操作してください：
 
-1. Acme R6J9 Implementationプロジェクトをダウンロードして解凍します。
+1. Acme R6J9 Implementation プロジェクトをダウンロードし、解凍する。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/process-automation/workflow/developer-guide/liferay-r6j9.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/process-automation/workflow/developer-guide/liferay-r6j9.zip -O
    ```
 
    ```bash
@@ -40,7 +41,7 @@
    ```
 
 ```{note}
-便宜上、`ConditionEvaluator`の`activate`メソッドは、R6J9 Conditional Approverのワークフロー定義をオートロードしました。 このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 [新しいワークフロー定義のアップロード](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) を参照してください。
+便宜上、`ConditionEvaluator`の`activate`メソッドは、R6J9 Conditional Approverのワークフロー定義をオートロードしました。 このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 [新しいワークフロー定義のアップロード](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition)を参照してください。
 ```
 
 ## 条件エバリュエーターをテストする
@@ -51,15 +52,15 @@ Acme R6J9 Condition Evaluatorを使用するには、ブログエントリーで
 
 2. 設定タブで、ブログのエントリアセットタイプにR6J9  Conditional Approver の定義を割り当てる。
 
-3. ［**保存**］ をクリックします。
+3. _［保存］_ をクリックします。
 
 4. デフォルトの管理者であるUser Test Testを使って、サイトメニューの &rarr; Content & Data &rarr; Blogsを開きます。
 
-5. 追加ボタン（![Add](../../../images/icon-add.png)）をクリックします。
+5. 追加ボタン(![Add](../../../images/icon-add.png)）をクリックします。
 
-6. タイトルとコンテンツの欄に何かを入力し、 **公開申請** をクリックします。
+6. タイトル」と「コンテンツ」フィールドに何かを入力し、「 _ワークフローに投稿する」_をクリックします。
 
-7. メインのBlogsビューに戻り、エントリーが表示され、ステータスが **承認済み** と表示されていることを確認します。
+7. メインのBlogsビューに戻り、エントリーが表示され、ステータスが _承認済み_と表示されていることを確認します。
 
    ```{tip}
    最初にステータスが［返答待ち］と表示された場合は、ページを更新してください。
@@ -67,7 +68,7 @@ Acme R6J9 Condition Evaluatorを使用するには、ブログエントリーで
 
    ![管理者であるユーザーがブログのエントリを送信したため、ワークフローによって自動承認されました。](./creating-a-condition-evaluator/images/01.png)
 
-唯一の承認者の定義や、管理者ではない別のユーザーでテストすると、ブログのエントリが **返答待ち** というステータスで追加されていることがわかります。
+唯一の承認者の定義や、管理者ではない別のユーザーでテストすると、ブログのエントリが _返答待ち_というステータスで追加されていることがわかります。
 
 ## R6J9Condition Evaluatorについて
 
@@ -95,7 +96,7 @@ Acme R6J9 Implementationプロジェクトには、ワークフローのユー�
 
 `evaluate` メソッドは、ワークフロー定義で呼び出されたときに、ワークフローがトランジションを介して適切なノードに進むことができるように、有効なトランジション名を返す必要があります。
 
-`evaluate`メソッドは、`KaleoCondition`と `ExecutionContext`の2つのパラメータを受け取ります。ワークフローエンジンは、ワークフロープロセスの中で条件エバリュエーターを呼び出す役割を担っているため、お客様のコードではこれらのオブジェクトをインスタンス化したり構築したりする必要はありません。しかし、そこから有益な情報を得ることができます。例えば、以下のようになります。R6J9条件エバリュエーターは、 `workflowContext`(type `Map`) と `serviceContext`(type `ServiceContext`) を`ExecutionContext`から取得します。
+`evaluate`メソッドは、`KaleoCondition`と`ExecutionContext`という2つのパラメータを受け取ります。ワークフローエンジンは、ワークフロー処理で条件評価器を呼び出す役割を担っているため、あなたのコードはこれらのオブジェクトのインスタンス化と構築を担当することはありません。ただし、これらのオブジェクトから有用な情報を取得することはできます。例えば、R6J9 条件評価器は `ExecutionContext` から `workflowContext` (Map` 型）と `serviceContext` (`ServiceContext` 型）を取得する：
 
 ```{literalinclude} ./creating-a-condition-evaluator/resources/liferay-r6j9.zip/r6j9-impl/src/main/java/com/acme/r6j9/internal/kaleo/runtime/condition/R6J9ConditionEvaluator.java
    :dedent: 2
@@ -103,7 +104,7 @@ Acme R6J9 Implementationプロジェクトには、ワークフローのユー�
    :lines: 39-41
 ```
 
-`workflowContext` はワークフローユーザーのIDを、 `serviceContext` はバーチャルインスタンスのID（ `companyId`）を取得するために使用されます。 どちらも、ユーザーが管理者権限 **管理者** を持っているかどうかを確認するために必要です。ユーザーが管理者権限を持っている場合、ワークフローによって資産が自動承認されます（**承認** というトランジションに沿って送信されます）。 それ以外の場合は、 **review** トランジションを実行します。
+`workflowContext` はワークフローユーザーのIDを、 `serviceContext` はバーチャルインスタンスのID( `companyId`）を取得するために使用されます。 どちらも、ユーザーが管理者権限_管理者_を持っているかどうかを確認するために必要です。ユーザーが管理者権限を持っている場合、ワークフローによって資産が自動承認されます(_承認_というトランジションに沿って送信されます）。 それ以外の場合は、 _review_ トランジションを実行します。
 
 ```{literalinclude} ./creating-a-condition-evaluator/resources/liferay-r6j9.zip/r6j9-impl/src/main/java/com/acme/r6j9/internal/kaleo/runtime/condition/R6J9ConditionEvaluator.java
    :dedent: 2
@@ -113,7 +114,7 @@ Acme R6J9 Implementationプロジェクトには、ワークフローのユー�
 
 ### ワークフロー定義での `ConditionEvaluator` の呼び出しについて
 
-Acme R6J9実装プロジェクトで自動ロードされたR6J9 Conditional Approverワークフロー定義は、Liferay DXP/Portalに同梱されている唯一の承認者唯一の承認者の定義とほぼ同じです。 最初の違いは、 `が作成された` の状態ノードにあります。 実行唯一の承認者の定義では，レビューの遷移を常に実行するが，R6J9 Conditional Approverでは， `チェック・ロール` の遷移を実行する． 主な違いは、同じ名前の **条件ノード** 追加です。 conditionノードは、 `R6J9ConditionEvaluator` に依存して条件ロジックを実行します。
+Acme R6J9実装プロジェクトで自動ロードされたR6J9 Conditional Approverワークフロー定義は、Liferay DXP/Portalに同梱されている唯一の承認者唯一の承認者の定義とほぼ同じです。 最初の違いは、 `が作成された` の状態ノードにあります。 実行唯一の承認者の定義では，レビューの遷移を常に実行するが，R6J9 Conditional Approverでは， `チェック・ロール` の遷移を実行する． 主な違いは、同じ名前の _条件ノード_ 追加です。 conditionノードは、 `R6J9ConditionEvaluator` に依存して条件ロジックを実行します。
 
 ```{literalinclude} ./creating-a-condition-evaluator/resources/liferay-r6j9.zip/r6j9-impl/src/main/resources/com/acme/r6j9/internal/kaleo/runtime/condition/dependencies/r6j9-workflow-definition.xml
    :dedent: 1

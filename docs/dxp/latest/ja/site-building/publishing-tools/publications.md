@@ -2,6 +2,7 @@
 toc:
 - ./publications/enabling-publications.md
 - ./publications/creating-and-managing-publications.md
+- ./publications/using-publication-templates.md
 - ./publications/making-and-publishing-changes.md
 - ./publications/using-workflow-with-publications.md
 - ./publications/collaborating-on-publications.md
@@ -16,6 +17,7 @@ toc:
 
 publications/enabling-publications.md
 publications/creating-and-managing-publications.md
+publications/using-publication-templates.md
 publications/making-and-publishing-changes.md
 publications/using-workflow-with-publications.md
 publications/collaborating-on-publications.md
@@ -24,11 +26,11 @@ publications/reverting-changes.md
 publications/publications-permissions.md
 ```
 
-> 対応可能：Liferay DXP/Portal 7.3以降
+{bdg-secondary}`Liferay DXP/Portal 7.3以降で利用可能`
 
-**パブリケーション** を使用して、DXPインスタンス全体で変更を開発、追跡、および公開できます。 これは、データベース列を作成して、本番環境のサイトに表示されるコンテンツのバージョンを決定することによって機能します。 これを使用して、ユーザーは個別の **パブリケーション** を作成し、変更を公開可能なブロックにグループ化します。
+*パブリケーション*を使用して、DXPインスタンス全体で変更を開発、追跡、および公開できます。 これは、データベース列を作成して、本番環境のサイトに表示されるコンテンツのバージョンを決定することによって機能します。 これを使用して、ユーザーは個別の*パブリケーション*を作成し、変更を公開可能なブロックにグループ化します。
 
-変更を加えるときは、 **編集** モードと **本番環境** モードを切り替えることができます。 これにより、インスタンスのマイナーな変更やメジャー変更を、本番環境に公開する前に編集環境で作業することができます。 その後、変更を確認してすぐに公開するか、後で公開するようにスケジュールすることができます。
+変更を加えるときは、*編集*モードと*本番環境*モードを切り替えることができます。 これにより、インスタンスのマイナーな変更やメジャー変更を、本番環境に公開する前に編集環境で作業することができます。 その後、変更を確認してすぐに公開するか、後で公開するようにスケジュールすることができます。
 
 ![パブリケーションの概要ページを使用して、パブリケーションを作成、表示、および管理します。](./publications/images/01.png)
 
@@ -38,7 +40,7 @@ publications/publications-permissions.md
 
 さらに、パブリケーションはプロセスの透明性が高いため、公開時の競合をより簡単に特定して解決することができます。 また、完全な公開履歴を保持しているので、インスタンスへの変更を確認したり、元に戻したりするのに利用できます。
 
-開始するには、 [パブリケーションの有効化](./publications/enabling-publications.md) を参照してください。
+開始するには、[Enabling Publications](./publications/enabling-publications.md)を参照してください。
 
 ```{raw} html
 :file: ../../landingpage_template.html

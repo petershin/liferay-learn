@@ -3,6 +3,7 @@ toc:
 - ./developer-guide/catalog-api-basics.md
 - ./developer-guide/option-api-basics.md
 - ./developer-guide/product-api-basics.md
+- ./developer-guide/specification-api-basics.md
 ---
 # 開発者ガイド
 
@@ -12,6 +13,7 @@ toc:
 developer-guide/catalog-api-basics.md
 developer-guide/option-api-basics.md
 developer-guide/product-api-basics.md
+developer-guide/specification-api-basics.md
 ```
 
 ::::{grid} 2
@@ -25,7 +27,11 @@ developer-guide/product-api-basics.md
 :link: ./developer-guide/option-api-basics.md
 :::
 
-:::{grid-item-card}  Product API Basics
+:::{grid-item-card}  プロダクトAPIの基本
 :link: ./developer-guide/product-api-basics.md
+:::
+
+:::{grid-item-card}  仕様APIの基本
+:link: ./developer-guide/specification-api-basics.md
 :::
 ::::

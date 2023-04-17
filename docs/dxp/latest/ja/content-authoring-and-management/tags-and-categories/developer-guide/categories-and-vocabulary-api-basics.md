@@ -7,63 +7,65 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+その後、以下の手順で操作してください：
 
-1. [Categories and Vocabulary API Basics](./liferay-f5w3.zip)  をダウンロードし、解凍してください。
+1. [Categories and Vocabulary API Basics](./liferay-f5w3.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories/developer-guide/liferay-f5w3.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-f5w3.zip -O
    ```
 
    ```bash
    unzip liferay-f5w3.zip
    ```
 
-1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
+1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 1. cURLスクリプトを使用して、サイトに新しいボキャブラリを追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`TaxonomyVocabulary_POST_ToSite.sh`スクリプトを実行します。
 
-    ```bash
-    ./TaxonomyVocabulary_POST_ToSite.sh 1234
-    ```
+   ```bash
+   ./TaxonomyVocabulary_POST_ToSite.sh 1234
+   ```
 
-    JSON応答では、新しいボキャブラリが追加されたことを示しています。
+   JSON応答では、新しいボキャブラリが追加されたことを示しています。
 
-    ```bash
-    "availableLanguages" : [ "en-US" ],
-    "creator" : {
-      "additionalName" : "",
-      "contentType" : "UserAccount",
-      "familyName" : "Test",
-      "givenName" : "Test",
-      "id" : 20129,
-      "name" : "Test Test",
-      "profileURL" : "/web/test"
-    },
-    "dateCreated" : "2021-09-09T21:03:15Z",
-    "dateModified" : "2021-09-09T21:03:15Z",
-    "description" : "Foo",
-    "id" : 40126,
-    "name" : "Able",
-    "numberOfTaxonomyCategories" : 0,
-    "siteId" : 20125
-    ```
+   ```json
+   {
+     "availableLanguages" : [ "en-US" ],
+     "creator" : {
+       "additionalName" : "",
+       "contentType" : "UserAccount",
+       "familyName" : "Test",
+       "givenName" : "Test",
+       "id" : 20129,
+       "name" : "Test Test",
+       "profileURL" : "/web/test"
+     },
+     "dateCreated" : "2021-09-09T21:03:15Z",
+     "dateModified" : "2021-09-09T21:03:15Z",
+     "description" : "Foo",
+     "id" : 40126,
+     "name" : "Able",
+     "numberOfTaxonomyCategories" : 0,
+     "siteId" : 20125
+   }
+   ```
 
-1. ［**Administration Menu**］ &rarr; ［**カテゴリー設定**］ &rarr; ［**カテゴリー**］ に移動して、カテゴリーアプリケーションに移動します。 新しいボキャブラリが追加されたことを確認してください。
+1. *［Administration Menu］* &rarr; *［カテゴリー設定］* &rarr; *［カテゴリー］*に移動して、カテゴリーアプリケーションに移動します。 新しいボキャブラリが追加されたことを確認してください。
 
-    ![新しいボキャブラリが追加されました。](./categories-and-vocabulary-api-basics/images/01.png)
+   ![新しいボキャブラリが追加されました。](./categories-and-vocabulary-api-basics/images/01.png)
 
 1. RESTサービスは、Javaクライアントを使って呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 以下のコマンドでソースファイルをコンパイルします。
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 1. 以下のコマンドを使用して`TaxonomyVocabulary_POST_ToSite`クラスを実行します。 `siteId`値をサイトのIDに置き換えます。
 
-    ```bash
-    java -classpath .:* -DsiteId=1234 TaxonomyVocabulary_POST_ToSite
-    ```
+   ```bash
+   java -classpath .:* -DsiteId=1234 TaxonomyVocabulary_POST_ToSite
+   ```
 
 ## cURLコマンドの検証
 
@@ -84,7 +86,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 | `-u "test@liferay.com:learn"`                                                             | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -101,7 +103,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                                                | 説明                                                          |
+| 行(省略形）                                                                                                | 説明                                                          |
 |:----------------------------------------------------------------------------------------------------- |:----------------------------------------------------------- |
 | `TaxonomyVocabularyResource.Builder builder = ...`                                                    | `Builder`を取得し、`TaxonomyVocabularyResource`サービスインスタンスを生成します。 |
 | `TaxonomyVocabularyResource taxonomyVocabularyResource = builder.authentication(...).build();`        | 基本認証を指定し、`TaxonomyVocabularyResource`サービスインスタンスを生成します。      |
@@ -116,7 +118,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 他の例のJavaクラスはこれと類似していますが、異なる`TaxonomyVocabularyResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、 [TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) を参照してください。
+サービスの詳細は、[TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`TaxonomyVocabulary` RESTサービスを呼び出す例です。
@@ -127,13 +129,13 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 
 ### TaxonomyVocabularies_GET_FromSite.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./TaxonomyVocabularies_GET_FromSite.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/curl/TaxonomyVocabularies_GET_FromSite.sh
    :language: bash
@@ -141,13 +143,13 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 
 ### TaxonomyVocabularies_GET_FromSite.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DsiteId=1234 TaxonomyVocabularies_GET_FromSite
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabularies_GET_FromSite.java
    :dedent: 1
@@ -181,13 +183,13 @@ java -classpath .:* -DsiteId=1234 TaxonomyVocabularies_GET_FromSite
 
 ### TaxonomyVocabulary_GET_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_GET_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_GET_ById.java
    :dedent: 1
@@ -203,13 +205,13 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_GET_ById
 
 ### TaxonomyVocabulary_PATCH_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./TaxonomyVocabulary_PATCH_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/curl/TaxonomyVocabulary_PATCH_ById.sh
    :language: bash
@@ -217,13 +219,13 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_GET_ById
 
 ### TaxonomyVocabulary_PATCH_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PATCH_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_PATCH_ById.java
    :dedent: 1
@@ -239,13 +241,13 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PATCH_ById
 
 ### TaxonomyVocabulary_PUT_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./TaxonomyVocabulary_PUT_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/curl/TaxonomyVocabulary_PUT_ById.sh
    :language: bash
@@ -253,13 +255,13 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PATCH_ById
 
 ### TaxonomyVocabulary_PUT_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PUT_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/java/TaxonomyVocabulary_PUT_ById.java
    :dedent: 1
@@ -279,7 +281,7 @@ java -classpath .:* -DtaxonomyVocabularyId=1234 TaxonomyVocabulary_PUT_ById
 ./TaxonomyVocabulary_DELETE_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./categories-and-vocabulary-api-basics/resources/liferay-f5w3.zip/curl/TaxonomyVocabulary_DELETE_ById.sh
    :language: bash

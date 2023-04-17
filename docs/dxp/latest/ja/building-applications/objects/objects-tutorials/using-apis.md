@@ -2,10 +2,10 @@
 toc:
 - ./using-apis/object-api-basics.md
 - ./using-apis/using-batch-apis.md
+- ./using-apis/using-relationship-rest-apis.md
 - ./using-apis/using-nested-fields-with-rest-apis.md
 - ./using-apis/using-aggregation-terms-with-rest-apis.md
 ---
-
 # APIの使用
 
 ```{toctree}
@@ -13,6 +13,7 @@ toc:
 
 using-apis/object-api-basics.md
 using-apis/using-batch-apis.md
+using-apis/using-relationship-rest-apis.md
 using-apis/using-nested-fields-with-rest-apis.md
 using-apis/using-aggregation-terms-with-rest-apis.md
 ```
@@ -28,11 +29,15 @@ using-apis/using-aggregation-terms-with-rest-apis.md
 :link: ./using-apis/using-batch-apis.md
 :::
 
-:::{grid-item-card} REST APIでネストしたフィールドの使用
+:::{grid-item-card} リレーションシップREST APIの利用
+:link: ./using-apis/using-relationship-rest-apis.md
+:::
+
+:::{grid-item-card} ネストされたフィールドをREST APIで使う
 :link: ./using-apis/using-nested-fields-with-rest-apis.md
 :::
 
-:::{grid-item-card} REST APIでの集計用語の使用
+:::{grid-item-card} REST APIで集計用語を使う
 :link: ./using-apis/using-aggregation-terms-with-rest-apis.md
 :::
 ::::

@@ -9,9 +9,9 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います:
+その後、以下の手順で操作してください：
 
-1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。.
+1. [Accounts API Basics](./liferay-t5p9.zip)をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -21,29 +21,30 @@
    unzip liferay-t5p9.zip
    ```
 
-1. cURLスクリプトを使用して、インスタンスに新しいAccountを追加します。 コマンドラインで、 `curl` フォルダに移動します。 `Account_POST_ToInstance.sh` スクリプトを実行します。
+1. cURLスクリプトを使用して、インスタンスに新しいAccountを追加します。 コマンドラインで、 `curl`フォルダに移動します。 `Account_POST_ToInstance.sh` スクリプトを実行します。
 
-    ```bash
-    ./Account_POST_ToInstance.sh
-    ```
+   ```bash
+   ./Account_POST_ToInstance.sh
+   ```
 
-    JSONレスポンスでは、新しいAccountが追加されたことを示しています。
+   JSONレスポンスでは、新しいAccountが追加されたことを示しています。
 
-    ```bash
-    "description" : "Foo",
-    "domains" : [ ],
-    "externalReferenceCode" : "",
-    "id" : 39302,
-    "name" : "Able",
-    "numberOfUsers" : 0,
-    "organizationIds" : [ ],
-    "parentAccountId" : 0,
-    "status" : 0,
-    "type" : "business"
+   ```json
+   {
+     "description" : "Foo",
+     "domains" : [ ],
+     "externalReferenceCode" : "",
+     "id" : 39302,
+     "name" : "Able",
+     "numberOfUsers" : 0,
+     "organizationIds" : [ ],
+     "parentAccountId" : 0,
+     "status" : 0,
+     "type" : "business"
+   }
+   ```
 
-    ```
-
-1. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 新しいアカウントが追加されたことを確認してください。
+1. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 新しいアカウントが追加されたことを確認してください。
 
    ![新しいアカウントが追加されたことを確認します。](./accounts-api-basics/images/01.png)
 
@@ -78,7 +79,7 @@
 | `-u "test@liferay.com:learn"`                                 | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](.../.../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -95,7 +96,7 @@
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                   | 説明                                                     |
+| 行(省略形）                                                                   | 説明                                                     |
 |:------------------------------------------------------------------------ |:------------------------------------------------------ |
 | `AccountResource.Builder builder = ...`                                  | ` AccountResourc`サービスインスタンスを生成するための`Builder`を取得します。    |
 | `AccountResource accountResource = builder.authentication(...).build();` | ベーシック認証を指定し、 `AccountResource` サービスインスタンスを生成します。       |
@@ -110,7 +111,7 @@
 他のJavaクラスの例はこれと似ていますが、異なる `AccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
+サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の `Account` RESTサービスを呼び出す例です。
@@ -197,13 +198,13 @@ java -classpath .:* -DaccountId=1234 Account_GET_ById
 
 ### Account_PATCH_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Account_PATCH_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/curl/Account_PATCH_ById.sh
    :language: bash

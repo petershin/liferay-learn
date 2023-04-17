@@ -26,15 +26,16 @@ Groovyアクションロジックをワークフロー定義の `<script>` 要�
 まず、 `ActionExecutor`をデプロイし、動作を確認します。
 
 ## アクション・エクゼキュータの配置
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+その後、以下の手順で操作してください：
 
-1. Acme E5C9 Implementationプロジェクトをダウンロードして解凍します。
+1. Acme E5C9 Implementation プロジェクトをダウンロードし、解凍する。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/process-automation/workflow/developer-guide/liferay-e5c9.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/process-automation/workflow/developer-guide/liferay-e5c9.zip -O
    ```
 
    ```bash
@@ -58,7 +59,7 @@ Groovyアクションロジックをワークフロー定義の `<script>` 要�
    ```
 
 ```{note}
-便宜上、`ActionExecutor`の`activate`メソッドでE5C9 Single Approverワークフロー定義をオートロードしています。 このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 [新しいワークフロー定義のアップロード](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) を参照してください。
+便宜上、`ActionExecutor`の`activate`メソッドは、E5C9 Single Approverワークフロー定義をオートロードするようにしました。 このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 [新しいワークフロー定義のアップロード](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition)を参照してください。
 ```
 
 ## アクションエグゼキュータをテストする
@@ -69,19 +70,19 @@ Acme E5C9 Action Executorを使用するには、ワークフロー定義をブ�
 
 1. 設定タブで、［E5C9 唯一の承認者］の定義を［ブログのエントリのアセットタイプ］に割り当てる。
 
-1. ［**保存**］ をクリックします。
+1. _［保存］_ をクリックします。
 
 1. デフォルトの管理者であるUser Test Testを使って、サイトメニューの &rarr; Content & Data &rarr; Blogsを開きます。
 
-1. **追加** ボタン（![Add](../../../images/icon-add.png)）をクリックします。
+1. _追加_ ボタン (![Add](../../../images/icon-add.png)) をクリックします。
 
-1. タイトルとコンテンツの欄に何かを入力し、 **公開申請** をクリックします。
+1. タイトル」と「コンテンツ」フィールドに何かを入力し、「 _ワークフローに投稿する」_をクリックします。
 
-1. メインのBlogsビューに戻り、エントリーが表示され、ステータスが **返答待ち** と表示されていることを確認します。
+1. メインのBlogsビューに戻り、エントリーが表示され、ステータスが _返答待ち_と表示されていることを確認します。
 
    ワークフローフレームワークでは、ステータスを［保留］に設定しています。 これ以降、ステータスの更新はアクションエクゼキュータのロジックを使って行われます。
 
-1. [ワークフロー内のブログエントリーを承認する](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task) .
+1. [ワークフロー内のブログエントリーを承認する](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task).
 
    ![この承認または拒否は、E5C9アクションエグゼキューターによって行われます。](./creating-an-action-executor/images/01.png)
 
@@ -89,9 +90,9 @@ Acme E5C9 Action Executorを使用するには、ワークフロー定義をブ�
 
 ## E5C9アクションエグゼキュータを理解する
 
-Acme E5C9実装プロジェクトでは、唯一の承認者定義のワークフロースクリプトのステータス設定ロジックを、`E5C9ActionExecutor`という1つのJavaクラスに抽出します。
+Acme E5C9 Implementationプロジェクトは、Single Approver定義のワークフロースクリプトのステータス設定ロジックを、単一のJavaクラスである`E5C9ActionExecutor`に抽出します。
 
-このプロジェクトでは、アクションエクゼキュータに加えて、E5C9 唯一の承認者と呼ばれるワークフロー定義が含まれ、オートロードされます。このワークフロー定義は、デフォルトの唯一の承認者と同じロジックを持ちますが、ワークフロー定義に直接Groovyスクリプトを使用する代わりに、アクションエクゼキュータクラスのロジックを使用します。
+このプロジェクトでは、アクションエグゼキューターに加えて、E5C9 Single Approver と呼ばれるワークフロー定義が含まれ、自動ロードされます。これは、デフォルトの Single Approver と同じロジックですが、ワークフロー定義に直接 Groovy スクリプトを使用するのではなく、アクションエグゼキュータークラスのロジックを使用しています。
 
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 4
@@ -111,7 +112,7 @@ Acme E5C9実装プロジェクトでは、唯一の承認者定義のワーク�
 
 `execute` メソッドは何も返しません。 その代わり、メソッド内で任意にロジックが実行され、XMLの定義に従ってワークフローの処理が継続されます。 アクションの実行中に、ワークフローのステータスが更新されることがよくあります。
 
-`execute` メソッドは、 `KaleoAction` と `ExecutionContext`の2つのパラメータを受け取ります。 ワークフローエンジンは、ワークフロープロセス内のアクションエクゼキュータを呼び出す役割を担っているため、お客様のコードではこれらのオブジェクトのインスタンス化や構築を行う必要はありません。 しかし、そこから有益な情報を得ることができます。 例えば、E5C9アクション・エクゼキュータは、 `workflowContext` （ `Map`タイプ）を `ExecutionContext`から取得します。
+`execute` メソッドは、 `KaleoAction` と `ExecutionContext`の2つのパラメータを受け取ります。 ワークフローエンジンは、ワークフロープロセス内のアクションエクゼキュータを呼び出す役割を担っているため、お客様のコードではこれらのオブジェクトのインスタンス化や構築を行う必要はありません。 しかし、そこから有益な情報を得ることができます。 例えば、E5C9アクション・エクゼキュータは、 `workflowContext` ( `Map`タイプ）を `ExecutionContext`から取得します。
 
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 3
@@ -129,7 +130,7 @@ Acme E5C9実装プロジェクトでは、唯一の承認者定義のワーク�
 
 ### ワークフロー定義内でのActionExecutorの呼び出し
 
-Acme E5C9実装プロジェクトで自動ロードされるE5C9 唯一の承認者のワークフロー定義は、Liferayに同梱されている唯一の承認者の定義とほぼ同じである。 E5C9の唯一の承認者定義では、すべてのロジックがアクション・エクゼキュータ・クラスにアウトソースされているため、大幅に簡素化されていますが、その違いはステート・ノードとタスク・ノードのスクリプト要素にあります。 定義のアクション（rejectとapprove）には、どちらも同じスクリプトタグが付いています。
+Acme E5C9実装プロジェクトで自動ロードされるE5C9 唯一の承認者のワークフロー定義は、Liferayに同梱されている唯一の承認者の定義とほぼ同じである。 E5C9の唯一の承認者定義では、すべてのロジックがアクション・エクゼキュータ・クラスにアウトソースされているため、大幅に簡素化されていますが、その違いはステート・ノードとタスク・ノードのスクリプト要素にあります。 定義のアクション(rejectとapprove）には、どちらも同じスクリプトタグが付いています。
 
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/resources/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/dependencies/e5c9-workflow-definition.xml
    :dedent: 4

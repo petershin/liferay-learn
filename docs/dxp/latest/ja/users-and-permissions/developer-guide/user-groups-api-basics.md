@@ -1,52 +1,53 @@
-# User Groups APIの基本
+# User Groups API の基礎知識
 
-アプリケーションメニューから [Create and Manage User Groups](../user-groups/creating-and-managing-user-groups.md) を利用できますが、LiferayのREST APIを利用することも可能です。 これらのサービスを呼び出して、ユーザーグループを管理します。
+アプリケーションメニューから [Create and Manage User Groups](../user-groups/creating-and-managing-user-groups.md) を利用できますが、Liferay の REST API を利用することも可能です。 これらのサービスを呼び出して、ユーザーグループを管理します。
 
-## ユーザーグループの追加
+## ユーザーグループを追加する
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+次に、以下の手順に従います:
 
-1. [User Groups API Basics](./liferay-y6f2.zip) をダウンロードし、解凍してください。
+1. [User Groups API Basics](./liferay-y6f2.zip)をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-y6f2.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6f2.zip -O
    ```
 
    ```bash
    unzip liferay-y6f2.zip
    ```
 
-1. cURLスクリプトを使用して、インスタンスに新しいユーザーグループを追加します。 コマンドラインで、 `curl` フォルダに移動します。 `UserGroup_POST_ToInstance.sh` スクリプトを実行します。
+1. cURLスクリプトを使用して、インスタンスに新しいユーザーグループを追加します。 コマンドラインで、 `curl`フォルダに移動します。 `UserGroup_POST_ToInstance.sh` スクリプトを実行します。
 
    ```bash
    ./UserGroup_POST_ToInstance.sh
    ```
 
-   JSONレスポンスには、新しいユーザーグループが追加されたことが示されています。
+   JSONレスポンスには、新しいユーザーグループが追加されたことが示されています：
 
-   ```bash
-   "description" : "",
-   "externalReferenceCode" : "72c5739f-a6e9-d4b8-5481-7cf1a427ea79",
-   "id" : 43099,
-   "name" : "Able",
-   "usersCount" : 0
-
+   ```json
+   {
+     "description" : "",
+     "externalReferenceCode" : "72c5739f-a6e9-d4b8-5481-7cf1a427ea79",
+     "id" : 43099,
+     "name" : "Able",
+     "usersCount" : 0
+   }
    ```
 
-2. **Global Menu** &rarr; **Control Panel** &rarr; **User Groups** に移動します。 新しいユーザーグループが追加されたことを確認します。
+1. *Global Menu* &rarr; *Control Panel* &rarr; *User Groups*に移動します。 新しいユーザーグループが追加されたことを確認します。
 
    ![新しいユーザーグループが追加されたことを確認します。](./user-groups-api-basics/images/01.png)
 
-3. RESTサービスは、Javaクライアントを使って呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 以下のコマンドでソースファイルをコンパイルします。
+1. RESTサービスは、Javaクライアントを使って呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 以下のコマンドでソースファイルをコンパイルします。
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-4. `UserGroup_POST_ToInstance.java` クラスを、以下のコマンドで実行します。
+1. `UserGroup_POST_ToInstance.java` クラスを、以下のコマンドで実行します。
 
    ```bash
    java -classpath .:* UserGroup_POST_ToInstance
@@ -71,7 +72,7 @@
 | `-u "test@liferay.com:learn"`                                    | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) 経由でユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -88,11 +89,11 @@
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                       | 説明                                                          |
-|:---------------------------------------------------------------------------- |:----------------------------------------------------------- |
-| `UserGroupResource.Builder builder = ...`                                    | `UserGroupResource` サービスインスタンスを生成するための `Builder` を取得する。     |
-| `UserGroupResource userGroupResource = builder.authentication(...).build();` | Basic 認証を指定し、 `UserGroupResource` サービスインスタンスを生成します。         |
-| `UserGroup userGroup = userGroupResource.postUserGroup(...);`                | `userGroupResource.postUserGroup` メソッドを呼び出し、post にデータを渡します。 |
+| 行(省略形）                                                                       | 説明                                                         |
+|:---------------------------------------------------------------------------- |:---------------------------------------------------------- |
+| `UserGroupResource.Builder builder = ...`                                    | `UserGroupResource` サービスインスタンスを生成するための `Builder` を取得する。    |
+| `UserGroupResource userGroupResource = builder.authentication(...).build();` | 基本認証を指定し、 `UserGroupResource` サービスインスタンスを生成します。            |
+| `UserGroup userGroup = userGroupResource.postUserGroup(...);`                | `userGroupResource.postUserGroup` メソッドを呼び出し、postにデータを渡します。 |
 
 プロジェクトには、依存関係として`com.liferay.headless.admin.user.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
@@ -100,27 +101,27 @@
 `main`メソッドのコメントでは、クラスの実行を実演しています。
 ```
 
-他のJavaクラスの例もこれと同様ですが、異なる `UserGroupResource` メソッドを呼び出しています。
+他の例のJavaクラスはこれと似ていますが、異なる `UserGroupResource` メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は [UserGroupResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserGroupResource.java) を参照ください。
+サービスの詳細は [UserGroupResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserGroupResource.java) を参照ください。
 ```
 
-以下は、cURL と Java を使用して、他の `UserGroup` REST サービスを呼び出す例です。
+以下は、cURLとJavaを使用して、他の `UserGroup` RESTサービスを呼び出す例です。
 
 ## インスタンスからユーザーグループを取得する
 
-以下のcURLまたはJavaコマンドを実行することで、User Groupの一覧を表示することができます。
+以下のcURLまたはJavaコマンドを実行することで、ユーザーグループの一覧を表示することができます。
 
 ### UserGroups_GET_FromInstance.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./UserGroups_GET_FromInstance.sh
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/curl/UserGroups_GET_FromInstance.sh
    :language: bash
@@ -128,13 +129,13 @@
 
 ### UserGroups_GET_FromInstance.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* UserGroups_GET_FromInstance
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/java/UserGroups_GET_FromInstance.java
    :dedent: 1
@@ -142,14 +143,14 @@ java -classpath .:* UserGroups_GET_FromInstance
    :lines: 11-22
 ```
 
-Instance の `UserGroup` オブジェクトが JSON で表示されます。
+インスタンスの `UserGroup` オブジェクトがJSONで表示されます。
 
 ## ユーザーグループの取得
 
 以下のcURLまたはJavaコマンドで、特定のユーザーグループを取得します。
 
 ```{tip}
-ユーザーグループ ID を取得するには、 ``UserGroups_GET_FromInstance.[java|sh]`` を使用します。
+ユーザーグループIDを取得するには、 ``UserGroups_GET_FromInstance.[java|sh]`` を使用してください。
 ```
 
 ### UserGroup_GET_ById.sh
@@ -168,13 +169,13 @@ Instance の `UserGroup` オブジェクトが JSON で表示されます。
 
 ### UserGroup_GET_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DuserGroupId=1234 UserGroup_GET_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/java/UserGroup_GET_ById.java
    :dedent: 1
@@ -182,21 +183,21 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_GET_ById
    :lines: 8-18
 ```
 
-`UserGroup` フィールドは、JSONで表示されます。
+`UserGroup` フィールドは、JSON で表示されます。
 
 ## ユーザーグループのパッチ
 
-以下のcURLとJavaコマンドを使用して、既存のユーザーグループの部分編集を行います。 `1234` をユーザーグループのIDに置き換えてください。
+以下のcURLとJavaのコマンドで、既存のユーザーグループの部分編集を行います。 `1234` をユーザーグループのIDに置き換えてください。
 
 ### UserGroup_PATCH_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./UserGroup_PATCH_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/curl/UserGroup_PATCH_ById.sh
    :language: bash
@@ -204,13 +205,13 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_GET_ById
 
 ### UserGroup_PATCH_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DuserGroupId=1234 UserGroup_PATCH_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/java/UserGroup_PATCH_ById.java
    :dedent: 1
@@ -220,17 +221,17 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_PATCH_ById
 
 ## ユーザーグループを置く
 
-以下のcURLとJavaのコマンドで、既存のユーザーグループを完全に上書きします。 `1234` をユーザーグループのIDに置き換えてください。
+以下のcURLとJavaのコマンドで、既存のユーザーグループを完全に上書きする。 `1234` をユーザーグループのIDに置き換えてください。
 
 ### UserGroup_PUT_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./UserGroup_PUT_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/curl/UserGroup_PUT_ById.sh
    :language: bash
@@ -238,13 +239,13 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_PATCH_ById
 
 ### UserGroup_PUT_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DuserGroupId=1234 UserGroup_PUT_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/java/UserGroup_PUT_ById.java
    :dedent: 1
@@ -252,9 +253,9 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_PUT_ById
    :lines: 9-25
 ```
 
-## ユーザーグループの削除
+## ユーザーグループを削除する
 
-以下のcURLおよびJavaコマンドで、既存のUser Groupを削除します。 `1234` をユーザーグループのIDに置き換えてください。
+以下のcURLコマンドとJavaコマンドで、既存のユーザーグループを削除します。 `1234` をユーザーグループのIDに置き換えてください。
 
 ### UserGroup_DELETE_ById.sh
 
@@ -264,7 +265,7 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_PUT_ById
 ./UserGroup_DELETE_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./user-groups-api-basics/resources/liferay-y6f2.zip/curl/UserGroup_DELETE_ById.sh
    :language: bash
@@ -286,4 +287,4 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には `UserGroup` のすべてのサービスとスキーマが表示され、各サービスを試用するためのインターフェイスが用意されています。
+[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には、 `UserGroup` のすべてのサービスとスキーマが表示され、各サービスを試すためのインターフェイスが用意されています。

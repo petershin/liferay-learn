@@ -1,71 +1,100 @@
 # ヘッドレスフレームワークの統合
 
-> 対応可能：Liferay DXP/Portal 7.4以降
+{bdg-secondary}`Liferay DXP/Portal 7.4以降で利用可能`
 
-オブジェクトを公開すると、Liferayは自動的にそのためのREST APIを生成します。 これにより、カスタムオブジェクトにヘッドレスでアクセスできるようになり、CRUD操作を実行できるようになります。 オブジェクト用に生成されたAPIは、その範囲（つまり、CompanyまたはSite）によって異なります。 <!--TASK: replace first sentence when GraphQL APIs are supported, "When you publish an Object, Liferay automatically generates both REST and [GraphQL](https://graphql.org) APIs for it."-->
+カスタムオブジェクトの定義を公開すると、Liferayはオブジェクトとそのデータと対話するためのデフォルトの [REST APIs](../../../headless-delivery/consuming-apis/consuming-rest-services.md) を生成します。 これらのAPIは、オブジェクトのスコープ(会社やサイトなど）に応じて異なります。 定義にリレーションシップやスタンドアロンアクションが含まれている場合、Liferayはそれらを呼び出すためのエンドポイントも生成します。
 
-すべてのオブジェクトは、`c/[pluralobjectlabel]`命名パターン（`c/timeoffrequests`など）を使用します。 各オブジェクトエントリースキーマには、オブジェクトのすべてのフィールドとリレーションシップが含まれています。
+これらのヘッドレスサービスのパスは、 `c/[pluralobjectlabel]` の命名パターン(例： `/o/c/timeoffrequests`）に従います。 利用可能なオブジェクトAPIは、Liferay API Explorerの `[server]:[port]/o/api` (例： `localhost:8080/o/api`）で確認・テストできます。 *REST Applications* をクリックすると、API のドロップダウン・リストが表示されます。
 
-オブジェクトのAPIは、Liferay API Explorerを介して`[server]:[port]/o/api`（例：`localhost:8080/o/api`）で表示およびテストできます。 REST APIは、 ［**REST Applications**］ の下にリストされています。
-<!--TASK: uncomment when GraphQL APIs are supported, "Click *GraphQL* to access Liferay's [Graph*i*QL](https://github.com/graphql/graphiql) browser."--> 関連するオブジェクトのチュートリアルについては、 [APIの使用](../objects-tutorials/using-apis.md) を参照してください。
+![各オブジェクトは、「REST Applications」の下に表示されます。](./headless-framework-integration/images/01.png)
 
-## オブジェクトREST APIs
+オブジェクトがアクティブな間は、これらのAPIを使用して、基本的なCRUD操作、 [集約項](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) と [入れ子フィールド](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md)を使用した複雑なクエリの実行、スタンドアロンアクションのトリガー、エントリ関係の管理などを実行できます。 オブジェクトAPIのチュートリアルについては、 [Using APIs](../objects-tutorials/using-apis.md) を参照してください。
 
-[REST API](../../../headless-delivery/consuming-apis/consuming-rest-services.md)を使用すると、オブジェクトエントリーに対して単一およびバッチの両方のCRUD操作を実行できます。 [集約用語](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md)と[ネストされたフィールド](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md)を使って、複雑なクエリを実行することもできます。
+## デフォルトのカンパニースコープ付きREST API
 
-![各オブジェクトは［REST Applications］の下に表示されます。](./headless-framework-integration/images/01.png)
+デフォルトのREST APIは、すべてのcompany-scopedオブジェクトで利用可能です。 Javaのメソッドについては、 `ObjectName` をオブジェクトの名前に置き換えてください。
 
-すべてのエンドポイントとJavaメソッドは、オブジェクトの名前を使用します。 以下の例では、`ObjectName`と`objectName`をオブジェクトの名前に置き換えてください。
-
-```{important}
-Liferay DXP 7.4 GA1では、選択リストフィールドの値は、オブジェクトAPIコールで以下のフォーマットを使用する必要があります。`"samplePicklist":"string"`です。 Liferay DXP 7.4 U1では、フォーマットが変更され、値はこのフォーマットを使用する必要があります。`"samplePicklist":{"key":"string"}`.
-```
-
-### 会社に範囲指定されているオブジェクト
-
-次のREST APIは、すべての会社に範囲指定されているオブジェクトで使用できます。
-
-| HTTP メソッド | HTTPエンドポイント                                           | Javaメソッド                        | 説明                                                                  |
-|:--------- |:----------------------------------------------------- |:------------------------------- |:------------------------------------------------------------------- |
-| DELETE    | `/by-external-reference-code/{externalReferenceCode}` | `deleteByExternalReferenceCode` | 外部参照コードを使用して、指定されたオブジェクトエントリーを削除します                                 |
-| GET       | `/by-external-reference-code/{externalReferenceCode}` | `getByExternalReferenceCode`    | 外部参照コードを使用して、指定されたオブジェクトエントリーの詳細を返します                               |
-| PUT       | `/by-external-reference-code/{externalReferenceCode}` | `putByExternalReferenceCode`    | 指定されたオブジェクトエントリーの詳細を、外部参照コードを使用してAPI呼び出しで提供されたものに置き換えます             |
-| GET       | `/`                                                   | `getObjectNamePage`             | Liferayインスタンスのオブジェクトエントリーの完全なリストを返します。結果は、ページ分割、絞り込み、検索、およびソートが可能です |
-| POST      | `/`                                                   | `postObjectName`                | APIコールで提供された詳細を使用して、新しいオブジェクトエントリーを作成します                            |
-| DELETE    | `/batch`                                              | `deleteObjectNameBatch`         | 複数のオブジェクトエントリーを削除します                                                |
-| POST      | `/batch`                                              | `postObjectNameBatch`           | API呼び出しで提供された詳細を使用して複数のオブジェクトエントリーを作成します                            |
-| PUT       | `/batch`                                              | `putObjectNameBatch`            | API呼び出しで提供された詳細を使用して、複数のオブジェクトエントリーを置き換えます                          |
-| DELETE    | `/{objectNameId}`                                     | `deleteObjectName`              | 指定されたオブジェクトエントリーを削除し、操作が成功した場合は204を返します                             |
-| GET       | `/{objectNameId}`                                     | `getObjectName`                 | 指定されたオブジェクトエントリーの詳細を返します                                            |
-| PATCH     | `/{objectNameId}`                                     | `patchObjectName`               | 指定されたオブジェクトエントリーのAPI呼び出しで指定されたフィールドを更新します。他のフィールドは変更されません           |
-| PUT       | `/{objectNameId}`                                     | `putObjectName`                 | 指定されたオブジェクトエントリーの詳細を、API呼び出しで提供されたものに置き換えます                         |
-
-### サイトに範囲指定されたオブジェクト
-
-次のREST APIは、すべてのサイトに範囲指定されているオブジェクトで使用できます。
-
-| HTTP メソッド | HTTPエンドポイント                                                             | Javaメソッド                                     | 説明                                                               |
-|:--------- |:----------------------------------------------------------------------- |:-------------------------------------------- |:---------------------------------------------------------------- |
-| DELETE    | `/scopes/{scopeKey}/by-external-reference-code/{externalReferenceCode}` | `deleteScopeScopeKeyByExternalReferenceCode` | スコープキーと外部参照コードを使用して、指定されたオブジェクトエントリーを削除します                       |
-| GET       | `/scopes/{scopeKey}/by-external-reference-code/{externalReferenceCode}` | `getScopeScopeKeyByExternalReferenceCode`    | スコープキーと外部参照コードを使用して、指定されたオブジェクトエントリーの詳細を返します                     |
-| PUT       | `/scopes/{scopeKey}/by-external-reference-code/{externalReferenceCode}` | `putScopeScopeKeyByExternalReferenceCode`    | 指定されたオブジェクトエントリーの詳細を、そのスコープキーと外部参照コードを使用してAPI呼び出しで提供されたものに置き換えます |
-| GET       | `/scopes/{scopesKey}`                                                   | `getScopeScopeKeyPage`                       | サイトのオブジェクトエントリーの完全なリストを返します。結果は、ページ分割、絞り込み、検索、およびソートが可能です        |
-| POST      | `/scopes/{scopesKey}`                                                   | `postScopeScopeKey`                          | API呼び出しで提供された詳細を使用して、指定されたサイトに新しいオブジェクトエントリーを作成します               |
-| DELETE    | `/{objectNameId}`                                                       | `deleteObjectName`                           | 指定されたオブジェクトエントリーを削除します                                           |
-| GET       | `/{objectNameId}`                                                       | `getObjectName`                              | 指定されたオブジェクトエントリーの詳細を返します                                         |
-| PATCH     | `/{objectNameId}`                                                       | `patchObjectName`                            | 指定されたオブジェクトエントリーのAPI呼び出しで指定されたフィールドを更新します。他のフィールドは変更されません        |
-| PUT       | `/{objectNameId}`                                                       | `putObjectName`                              | 指定されたオブジェクトエントリーの詳細を、API呼び出しで提供されたものに置き換えます                      |
+| HTTP メソッド | HTTPエンドポイント                         | Javaメソッド                        | 説明                                                             |
+|:--------- |:----------------------------------- |:------------------------------- |:-------------------------------------------------------------- |
+| DELETE    | `/by-external-reference-code/{erc}` | `deleteByExternalReferenceCode` | 指定されたエントリーを削除し、成功した場合は 204 を返す。                                |
+| GET       | `/by-external-reference-code/{erc}` | `getByExternalReferenceCode`    | 指定されたエントリーの詳細を返します。                                            |
+| PATCH     | `/by-external-reference-code/{erc}` | `patchByExternalReferenceCode`  | 指定されたエントリーを更新します。APIコールに含まれるフィールドのみが変更されます。                    |
+| PUT       | `/by-external-reference-code/{erc}` | `putByExternalReferenceCode`    | 指定されたエントリーの詳細をAPIコールで提供されたものに置き換える。                            |
+| GET       | `/`                                 | `getObjectNamePage`             | Liferayインスタンスのエントリーの完全なリストを返します。結果をページ分割、フィルター、検索、ソートすることができます |
+| POST      | `/`                                 | `postObjectName`                | APIコールで提供された詳細を使用して、新しいエントリーを作成します。                            |
+| DELETE    | `/batch`                            | `deleteObjectNameBatch`         | 複数のエントリーを削除し、操作に成功した場合は204を返す                                  |
+| POST      | `/batch`                            | `postObjectNameBatch`           | APIコールで提供された詳細を使用して、複数のエントリーを作成します。                            |
+| PUT       | `/batch`                            | `putObjectNameBatch`            | APIコールで提供された詳細を使用して、複数のエントリーを置き換える                             |
+| DELETE    | `/{entryId}`                        | `deleteObjectName`              | 指定されたエントリーを削除し、成功した場合は 204 を返す。                                |
+| GET       | `/{entryId}`                        | `getObjectName`                 | 指定されたエントリーの詳細を返します。                                            |
+| PATCH     | `/{entryId}`                        | `patchObjectName`               | 指定されたエントリーを更新します。APIコールに含まれるフィールドのみが変更されます。                    |
+| PUT       | `/{entryId}`                        | `putObjectName`                 | 指定されたエントリーの詳細をAPIコールで提供されたものに置き換える。                            |
 
 ```{note}
-APIの `scopesKey`パラメーターには、目的のデータスコープの適切な識別子（サイトID、ユーザーロールなど）を使用します。
+バッチオペレーションは、カンパニースコープのオブジェクトに対してのみ利用可能です。
 ```
 
-<!--TASK: uncomment when GraphQL APIs are supported, 
-## Object GraphQL APIs
+## デフォルトのサイトスコープ型REST APIs
 
-With the GraphQL APIs, you can both query and mutate Object data. All APIs for custom Objects are listed under `c` in Liferay's GraphQL schema. You can use Liferay's integrated Graph*i*QL IDE to search Object schemas, draft queries, run requests, and more. To access it, go to Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) and click *GraphQL*.
+デフォルトのREST APIは、すべてのサイトスコピックオブジェクトで利用可能です。 Javaのメソッドについては、 `ObjectName` をオブジェクトの名前に置き換えてください。
 
-![Use Liferay's GraphiQL explorer to search Object schemas and run your requests.](./headless-framework-integration/images/02.png)
+| HTTP メソッド | HTTPエンドポイント                                           | Javaメソッド                                     | 説明                                                       |
+|:--------- |:----------------------------------------------------- |:-------------------------------------------- |:-------------------------------------------------------- |
+| DELETE    | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `deleteScopeScopeKeyByExternalReferenceCode` | 指定されたエントリーを削除し、成功した場合は 204 を返す。                          |
+| GET       | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `getScopeScopeKeyByExternalReferenceCode`    | 指定されたエントリーの詳細を返します。                                      |
+| PATCH     | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `patchScopeScopeKeyByExternalReferenceCode`  | 指定されたエントリーを更新します。APIコールに含まれるフィールドのみが変更されます。              |
+| PUT       | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `putScopeScopeKeyByExternalReferenceCode`    | 指定されたエントリーの詳細をAPIコールで提供されたものに置き換える。                      |
+| GET       | `/scopes/{scopeKey}`                                  | `getScopeScopeKeyPage`                       | 指定されたスコープ内のエントリーの完全なリストを返します。結果のページ分割、フィルター、検索、ソートが可能です。 |
+| POST      | `/scopes/{scopeKey}`                                  | `postScopeScopeKey`                          | APIコールで提供された詳細を使用して、指定されたスコープに新しいエントリーを作成します。            |
+| DELETE    | `/{entryId}`                                          | `deleteObjectName`                           | 指定されたエントリーを削除し、成功した場合は 204 を返す。                          |
+| GET       | `/{entryId}`                                          | `getObjectName`                              | 指定されたエントリーの詳細を返します。                                      |
+| PATCH     | `/{entryId}`                                          | `patchObjectName`                            | 指定されたエントリーを更新します。APIコールに含まれるフィールドのみが変更されます。              |
+| PUT       | `/{entryId}`                                          | `putObjectName`                              | 指定されたエントリーの詳細をAPIコールで提供されたものに置き換える。                      |
+
+```{note}
+scopeKey`には、希望するデータスコープの適切な識別子(例：サイトIDやユーザーロール）を使用します。
+```
+
+## リレーションシップREST APIs
+
+{bdg-secondary}`利用可能 Liferay 7.4 U70+/GA70+`
+
+オブジェクト間に1対多、多対多の関係を定義すると、Liferayはエントリ関係を照会、管理するためのエンドポイントを生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれます。 [Relationship APIの使用](../objects-tutorials/using-apis/using-relationship-rest-apis.md) をご参照ください。
+
+HTTPエンドポイントでは、 `relationshipName` をリレーションシップの名前(例： `userToTicket`）に置き換えてください。 各リレーションシップAPIのJavaメソッドは、メソッド＋カレントオブジェクト＋リレーションシップ名＋関連オブジェクトという命名パターンに従っています(例： `getTicketUserToTicketUserPage`、 `deleteTicketUserToTicketUser`)。
+
+| HTTP メソッド | HTTPエンドポイント                                                       | 説明                                           |
+|:--------- |:----------------------------------------------------------------- |:-------------------------------------------- |
+| GET       | `/{entryId}/relationshipName`                                     | 指定されたエントリーに関連するすべてのエントリーを、リレーションシップを通じて返します。 |
+| PUT       | `/{entryId}/relationshipName/{relatedEntryId}`                    | 指定されたオブジェクトのエントリーを関連付けるために、リレーションシップを使用します。  |
+| PUT       | `/by-external-reference-code/{erc}/relationshipName/{relatedERC}` | 指定されたオブジェクトのエントリーを関連付けるために、リレーションシップを使用します。  |
+| DELETE    | `/{entryId}/relationshipName/{relatedEntryId}`                    | 指定されたオブジェクトのエントリーの関連付けを解除する                  |
+
+サイトスコープ付きオブジェクトの場合、ERC エンドポイントには `/scope/{scopeKey}` のプレフィックスが含まれる(例： `/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`）。 システムオブジェクトでは、外部参照コードのエンドポイントは利用できません。
+
+```{tip}
+専用のリレーションシップAPIに加えて、`nestedFields`クエリパラメータをオブジェクトの他のGET APIと組み合わせて使用すると、エントリとその関連エントリを返すことができます。 このパラメータを使用する場合、出力に含めたいリレーションシップの名前を指定する必要があります(例：`nestedFields=ticketAssignee`など）。 詳細と入門チュートリアルについては、[Using Nested Fields with REST APIs](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md) を参照してください。
+```
+
+## スタンドアロンアクションREST API
+
+{bdg-secondary}`利用可能 Liferay 7.4 U60+/GA60+`
+
+公開オブジェクトにスタンドアロンアクションを定義すると、Liferayはエントリでアクションをトリガーするための2つのエンドポイントを生成します。 一つはエントリーのIDを使用し、もう一つはエントリーの外部参照コード(ERC）を使用します。 詳しくは、 [「マニュアルアクションを使う」](../creating-and-managing-objects/actions/using-manual-actions.md) をご覧ください。
+
+| HTTP メソッド | HTTPエンドポイント                                                   | Javaメソッド                  |
+|:--------- |:------------------------------------------------------------- |:------------------------- |
+| PUT       | `/by-external-reference-code/{erc}/object-actions/actionName` | `putObjectNameActionName` |
+| PUT       | `/{entryId}/object-actions/actionName`                        | `putObjectNameActionName` |
+
+サイトスコープ付きオブジェクトの場合、ERC エンドポイントには `/scope/{scopeKey}` のプレフィックスが含まれる(例： `/scopes/{scopeKey}/by-external-reference-code/{erc}/object-actions/actionName`)。 システムオブジェクトでは、外部参照コードのエンドポイントは利用できません。
+
+<!--TASK: uncomment when GraphQL APIs are better supported, 
+## GraphQL APIs
+
+With the GraphQL APIs, you can both query and mutate object data. All APIs for custom objects are listed under `c` in Liferay's GraphQL schema. You can use Liferay's integrated Graph*i*QL IDE to search object schemas, draft queries, run requests, and more. To access it, go to Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) and click *GraphQL*.
+
+![Use Liferay's GraphiQL explorer to search object schemas and run your requests.](./headless-framework-integration/images/02.png)
 
 See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) for more information.
 -->
@@ -73,5 +102,4 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 ## 追加情報
 
 * [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-* [APIの利用](../objects-tutorials/using-apis.md)
-<!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->
+* [APIを使う](../objects-tutorials/using-apis.md)<!--TASK: * \[Consuming GraphQL APIs\](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

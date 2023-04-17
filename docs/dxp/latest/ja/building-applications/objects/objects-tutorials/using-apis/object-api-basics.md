@@ -1,11 +1,11 @@
 # オブジェクトAPIの基本
 
-オブジェクトを公開すると、Liferayは自動的にそのためのREST APIを生成します。 これらのAPIは、会社とサイトに範囲指定されたオブジェクトで異なりますが、すべて`c/[pluralobjectlabel]` の命名パターン（例： `c/timeoffrequests`）を使用します。 これらのAPIを使用して、オブジェクトエントリーの作成、アクセス、更新、および削除を行うことができます。
+オブジェクトを公開すると、Liferayは自動的にそのためのREST APIを生成します。 これらのAPIは、会社とサイトに範囲指定されたオブジェクトで異なりますが、すべて`c/[pluralobjectlabel]` の命名パターン(例： `c/timeoffrequests`）を使用します。 これらのAPIを使用して、オブジェクトエントリーの作成、アクセス、更新、および削除を行うことができます。
 
-ここでは、cURLコマンドを使用して、カスタムオブジェクトの基本的なCRUD操作を実行します。 先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
+ここでは、cURLコマンドを使用して、カスタムオブジェクトの基本的なCRUD操作を実行します。 先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。
 
 ```{tip}
-サイトオブジェクトと会社オブジェクトの両方に対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*REST Applications*の下にリストされています。
+サイトオブジェクトと会社オブジェクトの両方に対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` (例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*REST Applications*の下にリストされています。
 ```
 
 ## Liferayインスタンスのセットアップ
@@ -13,38 +13,38 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、下記の手順で、このチュートリアルの基本オブジェクトを[作成](../../creating-and-managing-objects/creating-objects.md)します。
+次に、以下の手順で、このチュートリアルで使用する基本的なオブジェクトを[作成](../../creating and-managing-objects/creating-objects.md )します：
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブで ［**オブジェクト**］ をクリックします。
+1. [グローバルメニュー](./../../.../.../images/icon-applications-menu.png) を開き、[コントロールパネル] タブに移動して、[オブジェクト] をクリックします。
 
-1. **追加** ボタン(![追加ボタン](../../../../images/icon-add.png))をクリックして、下記の値を入力します。
+1. 追加*ボタン(！［追加ボタン］(../../../../images/icon-add.png)）をクリックし、以下の値を入力します：
 
-   | フィールド | 値 |
+   | フィールド｜値｜を入力します。
    | :--- | :--- |
    | ラベル | `Able` |
-   | 複数形ラベル | `Ables` |
+   | 複数形ラベル｜`Ables`｜(アブルス
    | 名前 | `Able` |
 
-1. 新規の **オブジェクト** ドラフトを選択し、 **フィールド** タブに移動して、単一のテキストフィールドを追加します。
+1. 新しい*オブジェクト*ドラフトを選択し、*フィールド*タブに移動し、単一のテキストフィールドを追加します：
 
-   | ラベル | フィールド名 | タイプ | 要否 |
+   | ラベル｜フィールド名｜タイプ｜必須｜」。
    | :--- | :--- | :--- | :--- |
-   | 名前 | 名前 | テキスト | &#10004; |
+   | 名前 | テキスト | &#10004; |
 
-1. ［**詳細**］ タブに移動し、 ［**公開**］ をクリックします。
+1. 詳細*タブを開き、*公開*をクリックします。
 
-   ```{important}
-   このチュートリアルでは、下記の値を使用する必要があります。
+   ```{important}} をクリックします。
+   このチュートリアルでは、上記の値を使用する必要があります。
    ```
 
-[オブジェクトの公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 ヘッドレスAPIを介してアクセスできるようになりました。
+[オブジェクトの公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 ヘッドレスAPIを介してアクセスできるようになりました。
 
 ## サンプルコードを準備する
 
 以下のコマンドを実行して、提供されたサンプルコードをダウンロードし、解凍してください。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/ja/building-applications/objects/objects-tutorials/using-apis/liferay-v1s4.zip -O
+curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-v1s4.zip -O
 ```
 
 ```bash
@@ -77,7 +77,7 @@ unzip liferay-v1s4.zip
 
    ターミナルには、新しく作成されたエントリーの完全なスキーマが表示されます。 次のメソッドで使用するために、最初のエントリーのIDをコピーします。
 
-   ```bash
+   ```json
    {
      "id" : 41969,
      ...
@@ -109,7 +109,7 @@ unzip liferay-v1s4.zip
    ./Able_PUT_ById.sh {entry-id}
    ```
 
-   ```bash
+   ```json
    {
      "id" : 41969,
      ...
@@ -131,7 +131,7 @@ unzip liferay-v1s4.zip
 
    前の手順でエントリーを削除したため、次のメッセージが返されます。
 
-   ```bash
+   ```json
    {
      "status" : "NOT_FOUND",
      "title" : "No ObjectEntry exists with the primary key 41969"

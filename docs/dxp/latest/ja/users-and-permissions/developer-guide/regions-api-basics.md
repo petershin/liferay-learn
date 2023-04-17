@@ -1,27 +1,27 @@
-# Regions API の基本
+# リージョンAPIの基本
 
 {bdg-secondary}`Liferay 7.4 U24以降とGA24以降で利用可能`
 
-Liferay の REST API を使用して、地域を作成および管理します。
+Liferay の REST API を使用して、リージョンを作成および管理します。
 
-## リージョンの追加
+## リージョンを追加する
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
 次に、以下の手順を実行します。
 
-1. [Regions API Basics](./liferay-r2p3.zip) をダウンロードし、解凍してください。
+1. [Regions API Basics](./liferay-r2p3.zip) をダウンロードし、解凍する。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-r2p3.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-r2p3.zip -O
    ```
 
    ```bash
    unzip liferay-r2p3.zip
    ```
 
-1. cURL スクリプトを使用して、国に新しい地域を追加します。 コマンドラインで、 `curl` フォルダに移動します。 `Region_POST_ToCountry.sh` スクリプトを実行します。
+1. cURLスクリプトを使用して、ある国に新しい地域を追加します。 コマンドラインで、 `curl`フォルダに移動します。 `Region_POST_ToCountry.sh` スクリプトを実行する。
 
    ```bash
    ./Region_POST_ToCountry.sh 1234
@@ -29,17 +29,18 @@ Liferay の REST API を使用して、地域を作成および管理します�
 
    `1234` を国のIDに置き換えてください。 [Get Countries from Instance](./countries-api-basics.md#get-countries-from-instance) を使用して、ID のリストを取得します。
 
-   JSONレスポンスは、新しい地域が追加されたことを示します。
+   JSONレスポンスは、新しいリージョンが追加されたことを示します：
 
-   ```bash
-   "active" : true,
-   "countryId" : 43501,
-   "id" : 43503,
-   "name" : "Foo",
-   "position" : 0.0,
-   "regionCode" : "ABL",
-   "title_i18n" : { }
-
+   ```json
+   {
+     "active" : true,
+     "countryId" : 43501,
+     "id" : 43503,
+     "name" : "Foo",
+     "position" : 0.0,
+     "regionCode" : "ABL",
+     "title_i18n" : { }
+   }
    ```
 
 1. RESTサービスは、Javaクライアントを使って呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 ソースファイルをコンパイルします。
@@ -48,7 +49,7 @@ Liferay の REST API を使用して、地域を作成および管理します�
    javac -classpath .:* *.java
    ```
 
-1. `Region_POST_ToCountry.java` クラスを実行します。
+1. `Region_POST_ToCountry.java` クラスを実行します：
 
    ```bash
    java -classpath .:* -DcountryId=1234 Region_POST_ToCountry
@@ -73,14 +74,14 @@ Liferay の REST API を使用して、地域を作成および管理します�
 | `-u "test@liferay.com:learn"`                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
 
-`Region_POST_ToCountry.java` クラスは、Region 関連サービスを呼び出すことで地域を追加します。
+`Region_POST_ToCountry.java` クラスは、Region 関連サービスを呼び出して地域を追加します。
 
 ```{literalinclude} ./regions-api-basics/resources/liferay-r2p3.zip/java/Region_POST_ToCountry.java
    :dedent: 1
@@ -90,11 +91,11 @@ Liferay の REST API を使用して、地域を作成および管理します�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                 | 説明                                                   |
-|:---------------------------------------------------------------------- |:---------------------------------------------------- |
-| `RegionResource.Builder builder = ...`                                 | `RegionResource` サービスインスタンスを生成するための `Builder` を取得する。 |
-| `RegionResource regionResource = builder.authentication(...).build();` | 基本認証を指定し、 `RegionResource` サービスインスタンスを生成します。         |
-| `Region region = regionResource.postRegion(...);`                      | `regionResource.postRegion` メソッドを呼び出し、データをpostに渡します。 |
+| 行(省略形）                                                                 | 説明                                                    |
+|:---------------------------------------------------------------------- |:----------------------------------------------------- |
+| `RegionResource.Builder builder = ...`                                 | `RegionResource` サービスインスタンスを生成するための `Builder` を取得する。  |
+| `RegionResource regionResource = builder.authentication(...).build();` | 基本認証を指定し、 `RegionResource` サービスインスタンスを生成します。          |
+| `Region region = regionResource.postRegion(...);`                      | `regionResource.postRegion` メソッドを呼び出し、post にデータを渡します。 |
 
 プロジェクトには、依存関係として`com.liferay.headless.admin.address.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
@@ -102,17 +103,17 @@ Liferay の REST API を使用して、地域を作成および管理します�
 `main`メソッドのコメントでは、クラスの実行を実演しています。
 ```
 
-他の例のJavaクラスはこれと似ているが、異なる `RegionResource` メソッドを呼び出している。
+他の例のJavaクラスはこれと似ていますが、異なる `RegionResource` のメソッドを呼び出します。
 
 ```{important}
-サービスの詳細は [RegionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless-admin-address/headless-admin-address-client/src/main/java/com/liferay/headless/admin/address/client/resource/v1_0/RegionResource.java) を参照ください。
+サービスの詳細は [RegionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless-admin-address/client/src/main/java/com/liferay/headless/admin/address/client/resource/v1_0/RegionResource.java) をご参照ください。
 ```
 
-以下は、cURL と Java を使って、他の `Region` REST サービスを呼び出す例です。
+以下は、cURLとJavaを使用して、他の `Region` RESTサービスを呼び出す例です。
 
 ## インスタンスからリージョンを取得する
 
-以下のcURLまたはJavaコマンドを実行することで、リージョンの一覧を表示することができます。
+以下のcURLまたはJavaコマンドを実行することで、地域を一覧表示することができます。
 
 ### Regions_GET_FromInstance.sh
 
@@ -144,14 +145,14 @@ java -classpath .:* Regions_GET_FromInstance
    :lines: 11-22
 ```
 
-Instance の `Region` オブジェクトが JSON で表示されます。
+インスタンスの `Region` オブジェクトがJSONで表示されます。
 
 ## リージョンを取得する
 
 以下のcURLまたはJavaコマンドで、特定の地域を取得します。
 
 ```{tip}
-インスタンスの ``Region`` ID を取得するには、 ``Regions_GET_FromInstance.[java|sh]`` を使用します。
+インスタンス ``Region`` のIDを取得するには ``Regions_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
 ### Region_GET_ById.sh
@@ -184,11 +185,11 @@ java -classpath .:* -DregionId=1234 Region_GET_ById
    :lines: 8-18
 ```
 
-`Region` フィールドは、JSONで表示されます。
+`Region` フィールドがJSONで表示されます。
 
-## リージョンのパッチ
+## リージョンをパッチする
 
-以下のcURLとJavaコマンドで、既存のRegionの部分編集を行う。 `1234` を自分のリージョンIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存のリージョンを部分編集します。 `1234` を自分のリージョンIDに置き換えてください。
 
 ### Region_PATCH_ById.sh
 
@@ -222,17 +223,17 @@ java -classpath .:* -DregionId=1234 Region_PATCH_ById
 
 ## リージョンを置く
 
-以下のcURLとJavaコマンドで、既存のリージョンを完全に上書きする。 `1234` を自分の地域のIDに置き換えてください。
+以下のcURLとJavaのコマンドで、既存のリージョンを完全に上書きする。 `1234` を自分の地域のIDに置き換えてください。
 
 ### Region_PUT_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Region_PUT_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./regions-api-basics/resources/liferay-r2p3.zip/curl/Region_PUT_ById.sh
    :language: bash
@@ -240,13 +241,13 @@ java -classpath .:* -DregionId=1234 Region_PATCH_ById
 
 ### Region_PUT_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DregionId=1234 Region_PUT_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./regions-api-basics/resources/liferay-r2p3.zip/java/Region_PUT_ById.java
    :dedent: 1
@@ -254,9 +255,9 @@ java -classpath .:* -DregionId=1234 Region_PUT_ById
    :lines: 9-26
 ```
 
-## リージョンの削除
+## リージョンを削除する
 
-以下のcURLとJavaのコマンドで、既存のリージョンを削除します。 `1234` を自分の地域のIDに置き換えてください。
+以下のcURLコマンドとJavaコマンドで、既存のリージョンを削除します。 `1234` を自分の地域のIDに置き換えてください。
 
 ### Region_DELETE_ById.sh
 
@@ -266,7 +267,7 @@ java -classpath .:* -DregionId=1234 Region_PUT_ById
 ./Region_DELETE_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./regions-api-basics/resources/liferay-r2p3.zip/curl/Region_DELETE_ById.sh
    :language: bash
@@ -288,4 +289,4 @@ java -classpath .:* -DregionId=1234 Region_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には `Region` のすべてのサービスとスキーマが表示され、各サービスを試用するためのインターフェイスが用意されています。
+[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には、 `Region` のすべてのサービスとスキーマが表示され、各サービスを試すためのインターフェイスが用意されています。

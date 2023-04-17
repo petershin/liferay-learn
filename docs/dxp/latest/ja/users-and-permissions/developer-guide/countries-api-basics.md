@@ -1,4 +1,4 @@
-# Countries API の基本
+# Countries API の基礎知識
 
 {bdg-secondary}`Liferay 7.4 U24以降とGA24以降で利用可能`
 
@@ -9,51 +9,52 @@ Liferay の Rest API を使用して、国を作成および管理します。
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+その後、以下の手順で操作してください：
 
-1. [Countries API Basics](./liferay-g6m8.zip) をダウンロードし、解凍してください。
+1. Countries API Basics](./liferay-g6m8.zip)をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-g6m8.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-g6m8.zip -O
    ```
 
    ```bash
    unzip liferay-g6m8.zip
    ```
 
-1. cURLスクリプトを使用して、インスタンスに新しい国を追加します。 コマンドラインで、 `curl` フォルダに移動します。 `Country_POST_ToInstance.sh` スクリプトを実行します。
+1. cURLスクリプトを使用して、インスタンスに新しい国を追加します。 コマンドラインで、 `curl`フォルダに移動します。 `Country_POST_ToInstance.sh` スクリプトを実行する。
 
    ```bash
    ./Country_POST_ToInstance.sh
    ```
 
-   JSONレスポンスに、新しい国が追加されたことが示されています。
+   JSONレスポンスには、新しい国が追加されたことが示されています：
 
-   ```bash
-   "a2" : "AB",
-   "a3" : "ABL",
-   "active" : true,
-   "billingAllowed" : true,
-   "groupFilterEnabled" : false,
-   "id" : 43501,
-   "name" : "Foo",
-   "number" : 1234,
-   "position" : 0.0,
-   "regions" : [ ],
-   "shippingAllowed" : true,
-   "subjectToVAT" : false,
-   "title_i18n" : { },
-   "zipRequired" : true
-
+   ```json
+   {
+     "a2" : "AB",
+     "a3" : "ABL",
+     "active" : true,
+     "billingAllowed" : true,
+     "groupFilterEnabled" : false,
+     "id" : 43501,
+     "name" : "Foo",
+     "number" : 1234,
+     "position" : 0.0,
+     "regions" : [ ],
+     "shippingAllowed" : true,
+     "subjectToVAT" : false,
+     "title_i18n" : { },
+     "zipRequired" : true
+   }
    ```
 
-1. RESTサービスは、Javaクライアントを使って呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 このようにソースファイルをコンパイルしてください。
+1. RESTサービスは、Javaクライアントを使って呼び出すこともできます。 `curl` フォルダから、 `java` フォルダに移動します。 このようにソースファイルをコンパイルします：
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. `Country_POST_ToInstance.java` クラスを実行します。
+1. `Country_POST_ToInstance.java` クラスを実行します：
 
    ```bash
    java -classpath .:* Country_POST_ToInstance
@@ -78,14 +79,14 @@ Liferay の Rest API を使用して、国を作成および管理します。
 | `-u "test@liferay.com:learn"`                                                                     | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
 
-`Country_POST_ToInstance.java` クラスは、Country 関連サービスを呼び出すことで国を追加します。
+`Country_POST_ToInstance.java` クラスは、Country 関連サービスを呼び出して、国を追加します。
 
 ```{literalinclude} ./countries-api-basics/resources/liferay-g6m8.zip/java/Country_POST_ToInstance.java
    :dedent: 1
@@ -95,11 +96,11 @@ Liferay の Rest API を使用して、国を作成および管理します。
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                   | 説明                                                     |
-|:------------------------------------------------------------------------ |:------------------------------------------------------ |
-| `CountryResource.Builder builder = ...`                                  | `CountryResource` サービスインスタンスを生成するための `Builder` を取得する。  |
-| `CountryResource countryResource = builder.authentication(...).build();` | Basic 認証を指定し、 `CountryResource` サービスインスタンスを生成します。      |
-| `Country country = countryResource.postCountry(...);`                    | `countryResource.postCountry` メソッドを呼び出し、データをpostに渡します。 |
+| 行(省略形）                                                                   | 説明                                                      |
+|:------------------------------------------------------------------------ |:------------------------------------------------------- |
+| `CountryResource.Builder builder = ...`                                  | `CountryResource` サービスインスタンスを生成するための `Builder` を取得する。   |
+| `CountryResource countryResource = builder.authentication(...).build();` | 基本認証を指定し、 `CountryResource` サービスインスタンスを生成します。           |
+| `Country country = countryResource.postCountry(...);`                    | `countryResource.postCountry` メソッドを呼び出し、post にデータを渡します。 |
 
 プロジェクトには、依存関係として`com.liferay.headless.admin.address.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
@@ -107,15 +108,15 @@ Liferay の Rest API を使用して、国を作成および管理します。
 `main`メソッドのコメントでは、クラスの実行を実演しています。
 ```
 
-他の例のJavaクラスは、これと似ていますが、異なる `CountryResource` メソッドを呼び出します。
+他の例のJavaクラスはこれと似ていますが、異なる `CountryResource` のメソッドを呼び出します。
 
 ```{important}
-サービスの詳細は [CountryResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless-admin-address/headless-admin-address-client/src/main/java/com/liferay/headless/admin/address/client/resource/v1_0/CountryResource.java) を参照ください。
+サービスの詳細は [CountryResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless-admin-address-client/src/main/java/com/liferay/headless/admin/address/client/resource/v1_0/CountryResource.java) を参照してください。
 ```
 
-以下は、cURL と Java を使って他の `国` の REST サービスを呼び出す例です。
+以下は、cURLとJavaを使用して、他の `国` RESTサービスを呼び出す例です。
 
-## インスタンスからの国名取得
+## インスタンスから国名を取得する
 
 以下のcURLまたはJavaコマンドを実行することで、国を一覧表示することができます。
 
@@ -149,17 +150,17 @@ java -classpath .:* Countries_GET_FromInstance
    :lines: 11-22
 ```
 
-Instance の `Country` オブジェクトが JSON で表示されます。
+インスタンスの `国` オブジェクトがJSONで表示されます。
 
 ## 国を取得する
 
 以下のcURLまたはJavaコマンドで、特定の国を取得します。
 
 ```{tip}
-インスタンスの ``Countries`` ID を取得するには、 ``Countries_GET_FromInstance.[java|sh]`` を使用します。
+インスタンス ``Countries_GET_FromInstance.[java|sh]`` を使用して、インスタンス ``Country`` のIDを取得します。
 ```
 
-### Country_GET_ById.sh
+### 国別_GET_ById.sh
 
 コマンド：
 
@@ -189,11 +190,11 @@ java -classpath .:* -DcountryId=1234 Country_GET_ById
    :lines: 8-18
 ```
 
-`国名` フィールドは、JSONで表示されます。
+`Country` フィールドは、JSONで表示されます。
 
-## 国別パッチ
+## 国を継ぐ
 
-以下のcURLとJavaコマンドで、既存の国の部分編集を行う。 `1234` をあなたの国のIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存の国の部分編集を行います。 `1234` をあなたの国のIDに置き換えてください。
 
 ### Country_PATCH_ById.sh
 
@@ -225,19 +226,19 @@ java -classpath .:* -DcountryId=1234 Country_PATCH_ById
    :lines: 9-25
 ```
 
-## 国を指定する
+## 国名を入れる
 
-以下のcURLとJavaコマンドで、既存の国を完全に上書きします。 `1234` をあなたの国のIDに置き換えてください。
+以下のcURLとJavaのコマンドで、既存の国を完全に上書きする。 `1234` をあなたの国のIDに置き換えてください。
 
-### Country_PUT_ById.sh
+### 国別_PUT_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Country_PUT_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./countries-api-basics/resources/liferay-g6m8.zip/curl/Country_PUT_ById.sh
    :language: bash
@@ -245,13 +246,13 @@ java -classpath .:* -DcountryId=1234 Country_PATCH_ById
 
 ### Country_PUT_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DcountryId=1234 Country_PUT_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./countries-api-basics/resources/liferay-g6m8.zip/java/Country_PUT_ById.java
    :dedent: 1
@@ -261,7 +262,7 @@ java -classpath .:* -DcountryId=1234 Country_PUT_ById
 
 ## 国を削除する
 
-以下のcURLとJavaコマンドで、既存の国を削除します。 `1234` をあなたの国のIDに置き換えてください。
+以下のcURLとJavaのコマンドで、既存の国を削除します。 `1234` をあなたの国のIDに置き換えてください。
 
 ### Country_DELETE_ById.sh
 
@@ -271,7 +272,7 @@ java -classpath .:* -DcountryId=1234 Country_PUT_ById
 ./Country_DELETE_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./countries-api-basics/resources/liferay-g6m8.zip/curl/Country_DELETE_ById.sh
    :language: bash
@@ -293,4 +294,4 @@ java -classpath .:* -DcountryId=1234 Country_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には、 `Country` のすべてのサービスとスキーマが表示され、各サービスを試用できるインターフェイスが用意されています。
+[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には、 `Country` のすべてのサービスとスキーマが表示され、各サービスを試すためのインターフェイスが用意されています。

@@ -4,26 +4,26 @@
 
 次の手順に従って、ウィジェットページにウィジェットを追加します。
 
-1. **アプリケーションバーの****追加** ボタン(![Add](../../../images/icon-add-app.png))をクリックします。
+1. アプリケーションバーの *追加* ボタン (![Add](../../../images/icon-add-app.png)) をクリックします。
 
-   ![アプリケーションバーの追加ボタンをクリックします。](./adding-widgets-to-a-page/images/01.png)
+   ![アプリケーションバーの［追加ボタン］をクリックします。](./adding-widgets-to-a-page/images/01.png)
 
-1 **ウィジェット** パネルを開き、利用可能なウィジェットのカテゴリを検索または閲覧して、目的のウィジェットを見つけます。
+1. *ウィジェット* パネルを開き、利用可能なウィジェットのカテゴリを検索または閲覧して、目的のウィジェットを見つけます。
 
    ![ウィジェットパネルには、ページに機能を追加するために使用できるいくつかのデフォルトウィジェットが含まれています。](./adding-widgets-to-a-page/images/02.png)
 
-1 ウィジェットをページレイアウトの配置したい列と行にドラッグします。
+1. ウィジェットをページレイアウトの配置したい列と行にドラッグします。
 
 ```{tip}
 DXP 7.3以降では、ウィジェットページの上部にある目のアイコンをクリックすると、すべてのウィジェットのウィジェットコントロールを切り替えることができます。 無効にすると、ウィジェットコントロールにカーソルを合わせてもポップアップしなくなります。
 ```
 
 ```{note}
-ウィジェットはウィジェットページの、 [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) に従ってレンダリングされます。
+ウィジェットはウィジェットページの、 [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight)に従ってレンダリングされます。
 ```
 
 ## 追加情報
 
-- [ウィジェットページのユーザーパーソナライズの有効化](./configuring-widgets/enabling-user-personalization-of-widget-pages.md)
-- [ウィジェットページをコンテントページに変換する](./configuring-widgets/converting-widget-pages-to-content-pages.md)
+- [ウィジェットページのユーザーパーソナライズの有効化](./enabling-user-personalization-of-widget-pages.md)
+- [ウィジェットページをコンテントページに変換する](./converting-widget-pages-to-content-pages.md)
 - [コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析](../../../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)

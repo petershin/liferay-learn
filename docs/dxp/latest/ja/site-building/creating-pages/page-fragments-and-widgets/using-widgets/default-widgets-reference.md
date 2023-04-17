@@ -1,8 +1,8 @@
 # デフォルトウィジェットのリファレンス
 
-Liferayは様々なウィジェットをすぐに提供するので、すぐにソリューションの構築を始めることができます。 ウィジェットは、コンテンツページ、ウィジェットページ、ページテンプレートに配置することができます。 コンテンツページで利用可能なウィジェットを表示するには、ページの編集を開始し、編集サイドバーメニューの「**フラグメントとウィジェット**(![Fragments and Widgets](../../../../images/icon-plus.png))」を選択し、「**ウィジェット**」タブを選択してください。 ウィジェットページで利用可能なウィジェットを表示するには、 **Add**(![add](../../../../images/icon-plus.png)) をクリックします。
+Liferayは様々なウィジェットをすぐに提供するので、すぐにソリューションの構築を始めることができます。 ウィジェットは、コンテンツページ、ウィジェットページ、ページテンプレートに配置することができます。 コンテンツページで利用可能なウィジェットを表示するには、ページの編集を開始し、編集サイドバーメニューの「 *フラグメントとウィジェット* (![Fragments and Widgets](../../../../images/icon-plus.png))」を選択し、「 *ウィジェット* 」タブを選択してください。 ウィジェットページで利用可能なウィジェットを表示するには、 *Add* (![add](../../../../images/icon-plus.png)) をクリックします。
 
-ウィジェットは、このようなセクションで構成されています。
+ウィジェットは、このようなセクションで構成されています：
 
 * [ハイライト](#highlighted)
 * [アカウント](#accounts)
@@ -30,7 +30,7 @@ Liferayは様々なウィジェットをすぐに提供するので、すぐに�
 
 ## アカウント
 
-Accountsについて詳しく知りたい方は、こちらをご覧ください。 [アカウント](../../../../users-and-permissions/accounts.md)
+Accountsについて詳しく知りたい方は、こちらをご覧ください： [アカウント](../../../../users-and-permissions/accounts.md)
 
 | ウィジェット  | 説明                                                                                                                                |
 |:------- |:--------------------------------------------------------------------------------------------------------------------------------- |
@@ -43,7 +43,7 @@ Accountsについて詳しく知りたい方は、こちらをご覧ください
 | ウィジェット          | 説明                                                                                                                                                               |
 |:--------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | ブログ             | Blogs アプリケーションを管理し、アクセスするための [Blogs ウィジェット](../../../../content-authoring-and-management/blogs/displaying-blogs.md#using-the-blogs-widget) を追加する。                |
-| ブログの集約（アグリゲーター） | 複数のソースからブログエントリーを公開する [Blogs Aggregator ウィジェット](../../../../content-authoring-and-management/blogs/aggregating-blogs.md#aggregating-blogs) を追加する。                |
+| ブログの集約(アグリゲーター） | 複数のソースからブログエントリーを公開する [Blogs Aggregator ウィジェット](../../../../content-authoring-and-management/blogs/aggregating-blogs.md#aggregating-blogs) を追加する。                |
 | カレンダー           | イベントの確認や追加に使用できるカレンダーウィジェットを追加します。                                                                                                                               |
 | 動的データリスト(DDL)表示 | 動的なデータリストを表示するウィジェットを追加する。 動的データリストは、Liferay DXP7.3で非推奨になりました。 [オブジェクト](../../../../building-applications/objects.md)に置き換わっています。                                 |
 | フォーム            | [Form ウィジェット](../../../../process-automation/forms/sharing-forms-and-managing-submissions.md) を追加し、特定のフォームを表示するように設定することができます。                                   |
@@ -65,7 +65,7 @@ Accountsについて詳しく知りたい方は、こちらをご覧ください
 | マイサイト   | ユーザーが所属し、参加できるサイトを一覧表示する「 [マイサイト」ウィジェット](../../../../site-building/sites/site-membership/adding-members-to-sites.md#joining-sites-with-the-my-sites-application) を追加します。 |
 | ページコメント | ページにコメントできる「ページコメント」ウィジェットを追加します。                                                                                                                                        |
 | 不正の報告   | ページを報告できるページフラッグスウィジェットを追加します。                                                                                                                                           |
-| ページの評価  | ページを評価できるページ評価ウィジェットを追加します。                                                                                                                                              |
+| ページの評価  | ページを評価できるページ評価ウィジェットを追加。                                                                                                                                                 |
 
 ## コンテンツ管理
 
@@ -81,7 +81,7 @@ Accountsについて詳しく知りたい方は、こちらをご覧ください
 | ナレッジベースの記事      | 一つの記事の内容を表示する [Knowledge Base Article ウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-article-widget) を追加します。                                    |
 | ナレッジベース・ディスプレイ  | 公開されているナレッジベースの記事を表示する [ナレッジベース表示ウィジェット](../../../../collaboration-and-social/knowledge-base/knowledge-base-display-widget.md) を追加する。                                                                       |
 | ナレッジベース検索       | ナレッジベースの記事を検索するために使用できる [Knowledge Base Search ウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-search-widget) を追加します。                            |
-| ナレッジベースのセクション   | 特定のトピック（セクション）に関連する記事を公開できる [ナレッジベースセクションウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-section-widget) を追加する。                                  |
+| ナレッジベースセクション    | 特定のトピック(セクション）に関連する記事を公開できる [ナレッジベースセクションウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-section-widget) を追加する。                                  |
 | メディアギャラリー       | シンプルなギャラリーのようなスタイルでメディアを表示する [Media Gallery ウィジェット](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget) を追加します。 |
 | メニュー表示          | サイトのページ階層を表示する [メニュー表示ウィジェット](../../../site-navigation/configuring-menu-displays.md#configuring-the-menu-display-widget) を追加します。                                                                            |
 | 最もよく見れられているアセット | 再生回数の多いアセットを表示する「Most Viewed Assets」ウィジェットを追加しました。                                                                                                                                                          |
@@ -99,8 +99,8 @@ Accountsについて詳しく知りたい方は、こちらをご覧ください
 
 | ウィジェット      | 説明                                                                                                                                                                                |
 |:----------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 警告          | [アラートウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加し、優先度の高い情報を赤い **重要** タグで表示します。 |
-| お知らせ        | 赤い **重要** タグがない情報を表示する [お知らせウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加する。     |
+| 警告          | [アラートウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加し、優先度の高い情報を赤い *重要* タグで表示します。 |
+| お知らせ        | 赤い *重要* タグがない情報を表示する [お知らせウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加する。     |
 | 最近のコンテンツ    | 最近作成されたアセットを一覧表示する「最近のコンテンツ」ウィジェットを追加しました。                                                                                                                                        |
 | RSS パブリッシャー | RSSフィードからの投稿を一覧表示するRSSパブリッシャーウィジェットを追加しました。                                                                                                                                       |
 
@@ -119,27 +119,27 @@ Accountsについて詳しく知りたい方は、こちらをご覧ください
 
 検索ウィジェットは、お客様やユーザーによってカスタマイズ可能な、テーラーメイドの検索体験を提供します。
 
-| ウィジェット|説明文
+| ウィジェット | 説明 |
 | :--- | :--- |
-| Blueprints Options|検索ブループリントを適用できる [Blueprints Options widget](../../../using-search/liferay-enterprise-search/search-experiences/using-a-search-blueprint-on-a-search-page.md) が追加されました。|
-| カテゴリーファセット|検索結果をカテゴリーで絞り込む[カテゴリーファセットウィジェット](.../.../.../using-search/search-pages-and-widgets/search-facets/category-facet.md) を追加しました。|
-| カスタムファセット|検索結果をどのフィールドでグループ化するかを選択できる[カスタムファセットウィジェット](.../.../.../using-search/search-pages-and-widgets/search-facets/custom-facet.md) を追加しました。|
-| カスタムフィルター|カスタムコードを展開することなく、検索エンジンに送信されるクエリを制御できる[カスタムフィルターウィジェット](.../.../.../using-search/search-pages-and-widgets/search-results/filtering-search-results.md.md) を追加しました。|
-| Elasticsearch Monitoring|Elasticsearchを監視できる[Elasticsearch Monitoringウィジェット](../../../using-search/liferay-enterprise-search/monitoring-elasticsearch.md) を追加しました。|
-| フォルダファセット|資産フォルダで検索結果をフィルタリングできる [フォルダファセットウィジェット](.../.../.../using-search/search-pages-and-widgets/search-facets/folder-facet.md) が追加されました。|
-| 低レベル検索オプション|低レベル検索を利用できる[低レベル検索オプションウィジェット](.../.../.../using-search/search-pages-and-widgets/search-results/understanding-low-level-search-options.md) を追加しました。|
-| モディファイドファセット|アセットがいつ作成されたか、またはいつ変更されたかで検索結果をフィルタリングできる [モディファイドファセットウィジェット](../../../using-search/search-pages-and-widgets/search-facets/modified-facet.md) が追加されました。|
-| Search Bar|ユーザーが検索できるサーチバーウィジェットを追加します。デフォルトでは、検索バーウィジェットは、ユーザーをデフォルトの [検索ページ](../../../using-search/search-pages-and-widgets/working-with-search-pages.md) に送信します。|
-| キーボード入力時にバックエンドの検索コードが構築するクエリ文字列と、検索エンジンから返される応答文字列を検査できる [Search Insights widget](../../../using-search/search-pages-and-widgets/search-insights.md) が追加されました。これは、テストや開発時にのみ使用されることを意図しています。|
-| 検索オプション|検索オプションウィジェットを追加し、ページ内の検索オプションを追加設定できるようにしました。|
-| 検索結果|[検索結果ウィジェット](../../../../using-search/search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) 検索結果を表示する「検索結果」を追加する。|
-| Similar Results|ページ上で選択されているメインアセットに類似した検索結果を表示する[Similar Resultsウィジェット](../../../../using-search/search-pages-and-widgets/similar-results.md) を追加することができます。|
-| サイトファセット|検索結果をサイトで絞り込むことができる[サイトファセットウィジェット](.../.../.../using-search/search-pages-and-widgets/search-facets/site-facet.md) を追加しました。|
-| ソート|検索結果の並び順をコントロールできる[ソートウィジェット](../../../using-search/search-pages-and-widgets/search-results/sorting-search-results.md) を追加しました。|
-| サジェスチョン|最初のクエリに対して改善を提案することができる [サジェスチョンウィジェット](../../../../using-search/search-pages-and-widgets/search-results/sorting-search-results.md) を追加することができました。|
-| タグファセット|検索結果をタグで絞り込むことができる[タグファセットウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/tag-facet.md)  を追加しました。|
-| タイプファセット|アセットタイプで検索結果を絞り込むことができる[タイプファセットウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/type-facet.md) を追加しました。|
-| ユーザーファセット|検索結果をユーザーで絞り込むことができる[ユーザーファセットウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/user-facet.md) を追加しました。|
+| ブループリント オプション | [ブループリント オプション ウィジェット](../../../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/using-a-search-blueprint-on-a- を追加します 検索ブループリントを適用できる search-page.md)。 |
+| カテゴリ ファセット | 検索結果をカテゴリ別にフィルタリングする [カテゴリ ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/category-facet.md) を追加します。 |
+| カスタム ファセット | グループ化するフィールドを選択できる [カスタム ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/custom-facet.md) を追加します による検索結果。 |
+| カスタムフィルター | クエリを制御できる [カスタム フィルター ウィジェット](../../../../using-search/search-pages-and-widgets/search-results/filtering-search-results.md) を追加します カスタム コードを展開せずに検索エンジンに送信されます。 |
+| Elasticsearch モニタリング | Elasticsearch を監視できる [Elasticsearch 監視ウィジェット](../../../../using-search/liferay-enterprise-search/monitoring-elasticsearch.md) を追加します。 |
+| フォルダー ファセット | [Folder Facet widget](../../../../using-search/search-pages-and-widgets/search-facets/folder-facet.md) を追加して、検索結果をアセットでフィルタリングできるようにします フォルダ。 |
+| 低レベルの検索オプション | [低レベル検索オプション ウィジェット] を追加します (../../../../using-search/search-pages-and-widgets/search-results/understanding-low-level-search-options.md) これにより、低レベルの検索を使用できます。 |
+| 変更されたファセット | [変更された Faced ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/modified-facet.md) を追加して、いつ検索結果をフィルタリングできるようにしますか? アセットが作成または変更されました。 |
+| 検索バー | ユーザーが検索できる検索バー ウィジェットを追加します。 デフォルトでは、検索バー ウィジェットはユーザーをデフォルトの [検索ページ](../../../../using-search/search-pages-and-widgets/working-with-search-pages. md)。 |
+| 検索インサイト | [検索インサイト ウィジェット](../../../../using-search/search-pages-and-widgets/search-insights.md) を追加して、バックエンドによって作成されたクエリ文字列を検査できるようにします キーボードが入力されたときの検索コードと、検索エンジンから返された応答文字列。 これは、テストおよび開発中にのみ使用することを意図しています。 |
+| 検索オプション | 検索オプション ウィジェットを追加すると、ページで追加の検索オプションを構成できます。 |
+| 検索結果 | [検索結果ウィジェット](../../../../using-search/search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) を追加します。 検索クエリの結果。 |
+| 同様の結果 | [類似結果ウィジェット](../../../../using-search/search-pages-and-widgets/similar-results.md) を追加します。 ページ。 |
+| サイト ファセット | [サイト ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/site-facet.md) を追加して、サイトごとに検索結果をフィルター処理できるようにします . |
+| 並べ替え | [並べ替えウィジェット](../../../../using-search/search-pages-and-widgets/search-results/sorting-search-results.md) を追加して、 の検索結果。 |
+| 提案 | [提案ウィジェット](../../../../using-search/search-pages-and-widgets/search-results/enabling-search-suggestions.md) を追加して、初期の改善を提案できます。 クエリ。 |
+| タグ ファセット | 検索結果をタグでフィルタリングできる [タグ ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/tag-facet.md) を追加します。 . |
+| 型ファセット | [タイプ ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/type-facet.md) を追加して、検索結果をアセットでフィルタリングできるようにします タイプ。 |
+| ユーザー ファセット | [ユーザー ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/user-facet.md) を追加して、検索結果をユーザー別にフィルタリングできるようにします。 . |
 
 ## ソーシャル
 
@@ -149,7 +149,7 @@ Accountsについて詳しく知りたい方は、こちらをご覧ください
 |:--------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | アクティビティ   | サイト上のユーザーアクティビティを追跡できる [Activities ウィジェット](../../../../collaboration-and-social/social-tools/user-guide/using-the-activities-widget.md) を追加します。                                 |
 | コンタクトセンター | [Contacts Center ウィジェット](../../../../collaboration-and-social/social-tools/user-guide/using-the-contacts-center-widget.md) を追加し、ユーザーが他のユーザーとのつながりを形成したり、フォローしたりすることができるようになります。 |
-| メンバー      | サイト会員を表示するMembersウィジェットを追加する。                                                                                                                                                   |
+| メンバ      | サイトメンバーを表示するMembersウィジェットを追加します。                                                                                                                                                |
 | 自分の連絡先    | 接続先を表示するMy Contactsウィジェットを追加します。 このウィジェットは、プロフィールページにのみ追加することができます。                                                                                                             |
 | プロフィール編集  | プロフィールウィジェットを追加し、写真と説明を表示できるようにしました。 マイプロフィールページにのみ適用可能です。                                                                                                                      |
 

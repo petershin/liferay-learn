@@ -6,10 +6,10 @@ Reactベースのカスタムフォーム項目は、Liferay 7.3およびLiferay
 
 Liferay 7.2 では、カスタムフォーム項目に別のフロントエンドフレームワークを使用していました。 Acme C2P9 SliderフィールドをLiferay 7.2上で動作するよう調整するには、以下の手順に従ってください。
 
-1. [カスタムフォーム項目タイププロジェクト](./writing-a-custom-form-field-type/resources/liferay-c2p9.zip) をダウンロードし、解凍してください。
+1. [カスタムフォーム項目タイププロジェクト](./liferay-c2p9.zip)をダウンロードし、解凍してください。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-c2p9.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O
     ```
 
     ```bash
@@ -59,7 +59,7 @@ Liferay 7.2 では、カスタムフォーム項目に別のフロントエン�
     "metal-tools-soy": "4.3.2"
    ```
 
-   次に、既存の`scripts`コンテンツ（2行）を下記の3行に置き換えます。
+   次に、既存の`scripts`コンテンツ(2行）を下記の3行に置き換えます。
 
    ```json
    "build": "npm run build-soy && npm run build-js && liferay-npm-bundler",
@@ -83,7 +83,7 @@ Liferay 7.2 では、カスタムフォーム項目に別のフロントエン�
    };
    ```
 
-   **チェックポイント：** プロジェクトは7.2のフロントエンドフレームワークを想定して再設定されているので、フォーム項目プロジェクトのフロントエンドを置き換える必要があります。
+   **チェックポイント：**プロジェクトは7.2のフロントエンドフレームワークを想定して再設定されているので、フォーム項目プロジェクトのフロントエンドを置き換える必要があります。
 
 1. 既存の`Slider.es.js`ファイルを削除し、それに代わる以下の3つのファイルを作成します。
    - `Slider.es.js`：MetalJS + Soyフロントエンドを使用した新しいスライダーコンポーネント。
@@ -213,7 +213,7 @@ Liferay 7.2 では、カスタムフォーム項目に別のフロントエン�
       {/deltemplate}
       ```
 
-1. `DDMFormFieldType`に対して細かい調整が必要です：フィールドの識別子（`名前`）は、Soy テンプレートで Stringリテラルとして参照されるため、ハイフン（`-`）を持つことができません。 `C2P9DDMFormFieldType`クラスを開き、以下のハイフンを削除してください。
+1. `DDMFormFieldType`に対して細かい調整が必要です：フィールドの識別子(`名前`）は、Soy テンプレートで Stringリテラルとして参照されるため、ハイフン(`-`）を持つことができません。 `C2P9DDMFormFieldType`クラスを開き、以下のハイフンを削除してください。
 
    - コンポーネントプロパティ `ddm.form.field.type.name`
    - `getName`によって返される文字列
@@ -237,5 +237,5 @@ Liferay 7.2 では、カスタムフォーム項目に別のフロントエン�
    STARTED com.acme.c2p9.impl_1.0.0 [1009]
    ```
 
-フォーム項目はデプロイされ、Liferay 7.2上で [使用できるように準備されています](./writing-a-custom-forms-field-type.md#use-the-deployed-slider-field) 。
+フォーム項目はデプロイされ、Liferay 7.2上で[使用できるように準備されています](./writing-a-custom-form-field-type.md#use-the-deployed-slider-field)。
 

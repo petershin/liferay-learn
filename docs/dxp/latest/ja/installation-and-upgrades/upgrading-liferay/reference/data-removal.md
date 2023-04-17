@@ -2,21 +2,29 @@
 
 {bdg-secondary}`7.4以降で利用可能`
 
-現在のLiferay機能には、不要なデータが含まれている可能性があります。 データ削除ツールはこのデータを削除します。
+データ削除ツールで、期限切れの雑誌記事や出版物のプレビューなど、不要なアプリケーションデータを消去します。
 
-廃止されたデータを削除する方法は次のとおりです。
+データを削除する場合、
 
-1. **コントロールパネル** で、 ［**システム設定**］ &rarr; ［**Upgrades**］（［**プラットフォーム**］ カテゴリ内） &rarr; ［**Data Removal**］ に移動します。 ［Data Removal］画面が表示されます。
+1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *コントロールパネル* &rarr; *システム設定* &rarr; *アップグレード* &rarr; *データ削除*.
 
-    ![これが［Data Removal］画面です。](./data-removal/images/01.png)
+   ![データ削除」タブに移動します。](./data-removal/images/01.png)
 
-1. 削除するデータのタイプを選択し、 ［**保存**］ をクリックします。
+1. 削除するデータを選択します：
 
-廃止されたデータが削除されます。
+   * 有効期限切れの雑誌記事
 
-注：設定を [設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)に保存するには、 **Actions** メニューをクリックし、 **Export** を選択します。
+   * ドキュメントライブラリ プレビュー 変更履歴 ストア コンテンツデータ (出版物)
 
-この `com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration.config` 設定ファイルをサーバー起動時に使用し、古いデータを削除します。 ファイル内の `removeExpiredJournalArticles` キーに `true` を設定します。 データ削除後、 `osgi/configs` フォルダから設定ファイルを削除し、以後のサーバー起動時にファイルが実行されないようにする。
+   * 出版物変更追跡ストアコンテンツデータ(出版物）
+
+   ```{important}
+   Liferay のバージョンが 7.3 U10 または 7.4 U37 より前のものを使用している場合のみ、発行済み変更追跡ストアコンテンツデータを削除します。 タスク実行後は、この不要なデータがこれ以上蓄積されないようにアップグレードしてください。
+   ```
+
+1. *［保存］* をクリックします。
+
+Liferayは選択したデータを即座に削除します。
 
 ## 追加情報
 

@@ -15,13 +15,13 @@ Liferay DXPには、ほとんどのアプリケーションでRESTサービス�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Liferay DXP の REST サービスは、この URL で公開されています。
+Liferay DXP の REST サービスは、この URL で公開されています：
 
 ```
-http［s］://［hostname］:［port］/o/api
+http[s]://[hostname]:[port]/o/api
 ```
 
-Dockerインスタンスでは、ここで見つけることができます。
+Dockerインスタンス上では、ここで見つけることができます：
 
 ```
 http://localhost:8080/o/api
@@ -29,9 +29,9 @@ http://localhost:8080/o/api
 
 APIはいくつかのカテゴリに分類されています。この例では、`BlogPosting`サービスを使ってBlogsウィジェットからブログ記事を取得しますが、公開されているどのサービスでもこの手順を使うことができます。
 
-1. **Headless Delivery** カテゴリを選択します。このカテゴリには `BlogPosting` サービスが含まれています。フィルタを使用して、サービスを検索することができます。
+1. *Headless Delivery*カテゴリを選択します。このカテゴリには `BlogPosting` サービスが含まれています。フィルタを使用して、サービスを検索することができます。
 
-1. **Show Schemas** ボタンをクリックすると、画面の右側にこのカテゴリーに含まれるすべてのスキーマのリストが表示されます。
+1. *Show Schemas*ボタンをクリックすると、画面の右側にこのカテゴリーに含まれるすべてのスキーマのリストが表示されます。
 
 1. ブラウザのタブにスキーマブラウザを開いておくと、`BlogPosting`をPUTしたいときにそのスキーマが必要になります。
 
@@ -39,10 +39,10 @@ APIはいくつかのカテゴリに分類されています。この例では�
 
 ## データが格納されているサイトを特定する
 
-ここで、デフォルトのSite IDを見つける必要があります。
+ここで、デフォルトのSite IDを見つける必要があります：
 
-1. サイトメニュー(![サイトメニュー](../../images/icon-menu.png))を開き、 **設定** &rarr; **サイト設定** に移動します。
-1. Platform セクションの下にある **Site Configuration** をクリックします。Liferay DXP バージョン 7.3 以前の場合、 **General** タブをクリックします。
+1. サイトメニュー(![サイトメニュー](../../images/icon-menu.png))を開き、*設定* &rarr; *サイト設定*に移動します。
+1. Platform セクションの下にある *Site Configuration* をクリックします。Liferay DXP バージョン 7.3 以前の場合、*General* タブをクリックします。
 1. Site ID]の下にある[Site identifier]を見つけます。
 
    ![サイト設定とサイト構成オプションでサイトIDを特定します](./consuming-rest-services/images/03.png)
@@ -51,11 +51,11 @@ APIはいくつかのカテゴリに分類されています。この例では�
 
 これで、電話をかけるのに必要なものはすべて揃いました。すべてのウェブサービスは、要求しているデータにアクセスできるクレデンシャルを使用してアクセスする必要があります。最も簡単な方法は、URLでクレデンシャルデータを渡すBasic Authを使用することです。これは安全ではないので、この方法は開発中にのみ使用する必要があります。本番環境では、[OAuth2](../using-oauth2.md)を使用してユーザーを認証する必要があります。
 
-以下の例では、 [cURL](https://curl.haxx.se) を使用しています。
+以下の例では、[cURL](https://curl.haxx.se)を使用しています。
 
 ### 基本的なAuthを使用したサービスの呼び出し（開発中のみ）
 
-Basic Authを使用してサービスを呼び出すには、URLで認証情報を提供します。
+Basic Authを使用してサービスを呼び出すには、URLで認証情報を提供します：
 
 ```bash
 curl "http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings/" -u 'test@liferay.com:learn'
@@ -105,12 +105,12 @@ curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://l
 
 ![任意のサービスのスキーマは、Liferay DXPインスタンス上で公開されます。](./consuming-rest-services/images/02.png)
 
-1. スキーマブラウザを含むブラウザタブに戻る。 右側で、 `BlogPosting` のエントリーをクリックし、そのスキーマを表示します（上図参照）。 これは、 `BlogPosting`の全データ構造を示していますが、必須項目は2つだけです。
+1. スキーマブラウザを含むブラウザタブに戻る。 右側で、 `BlogPosting` のエントリーをクリックし、そのスキーマを表示します(上図参照）。 これは、 `BlogPosting`の全データ構造を示していますが、必須項目は2つだけです：
 
     * `articleBody`
     * `headline`
 
-2. ブログエントリーを投稿するためのシンプルなJSONドキュメントを構築します。
+1. ブログエントリーを投稿するためのシンプルなJSONドキュメントを構築します。
 
     ```json
     {
@@ -119,7 +119,7 @@ curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://l
     }
     ```
 
-3. リクエストを行います。
+1. リクエストを行います。
 
     ```bash
     curl --header "Content-Type: application/json" --request POST --data '{ "headline": "Test Blog Entry from REST Services", "articleBody": "This article was posted via REST services provided by Liferay DXP." }' http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings -u test@liferay.com:learn

@@ -9,14 +9,14 @@ LiferayのHeadless Deliveryアプリケーションは、[ドキュメントと�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-サインインしたら、 [サイトのIDを取得](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) してください。このIDは、いくつかのサービスコールで使うことになります。
+サインインしたら、[サイトのIDを取得](./../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) します。このIDは、いくつかのサービスコールで使用することになります。
 
-次に、以下の手順を実行します。
+次に、以下の手順を実行します：
 
-1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip) をダウンロードし、解凍する。
+1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip)をダウンロードし、解凍してください：
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
     ```
 
     ```bash
@@ -47,14 +47,14 @@ cURLスクリプトを使用して、ファイルを[ドキュメントとメデ
 
 コマンド応答は、次のように、JSONで新しいドキュメントとメディアファイルを記述します。
 
-```bash 
+```json
 {
-    ...
-    "description" : "",
-    ...
-    "id" : 38301,
-    ...
-    "title" : "Document_POST_ToSite.sh"
+  ...
+  "description": "",
+  ...
+  "id": 38301,
+  ...
+  "title": "Document_POST_ToSite.sh"
 }
 ```
 
@@ -101,7 +101,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | 引数                                                                      | 説明                                                                   |
 |:----------------------------------------------------------------------- |:-------------------------------------------------------------------- |
 | `-F "file=@Document_POST_ToSite.sh"`                                    | 投稿するファイル。                                                            |
-| `-H "Content-Type: multipart/form-data"`                                | 投稿されているメディアタイプ（ [MIME 種別](https://en.wikipedia.org/wiki/Media_type) ）。 |
+| `-H "Content-Type: multipart/form-data"`                                | 投稿されているメディアタイプ([MIME 種別](https://en.wikipedia.org/wiki/Media_type)）。 |
 | `-X POST`                                                               | 指定されたエンドポイントで呼び出すHTTPメソッド。                                           |
 | `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | RESTサービスエンドポイント。 サイトIDのパラメーターが`${1}`に置き換わります。                        |
 | `-u "test@liferay.com:learn"`                                           | 基本認証の資格情報。                                                           |
@@ -126,7 +126,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                     | 説明                                                                                                                                                                                      |
+| 行(省略形）                                                                     | 説明                                                                                                                                                                                      |
 |:-------------------------------------------------------------------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `DocumentResource.Builder builder = ...`                                   | `Builder`を取得し、`DocumentResource`サービスインスタンスを生成します。                                                                                                                                       |
 | `DocumentResource documentResource = builder.authentication(...).build();` | 基本認証を指定し、`DocumentResource`サービスインスタンスを生成します。                                                                                                                                            |
@@ -152,13 +152,13 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 ### Documents_GET_FromSite.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Documents_GET_FromSite.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Documents_GET_FromSite.sh
    :language: bash
@@ -192,13 +192,13 @@ java -classpath .:* -DsiteId=1234 Documents_GET_FromSite
 
 ### Document_GET_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Document_GET_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_GET_ById.sh
    :language: bash
@@ -234,7 +234,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById
 ./Document_GET_ById_ContentValue.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./document-api-basics/resources/liferay-g9i6.zip/curl/Document_GET_ById_ContentValue.sh
    :language: bash
@@ -242,7 +242,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById
 
 最初の引数行は、サービスエンドポイントと認証クレデンシャルをそれぞれ指定します。 URLの`/o/headless-delivery/v1.0/documents/${1}`部分は、IDで`Document`を取得するためのRESTサービスエンドポイントです。 このURLは、`Document_GET_ById.sh`スクリプトのURLと同じです。 `?nestedFields=contentValue`部分は、`Document`の`nestedFields`に埋め込まれた`contentValue`を要求します。 最後に、`&fields=contentValue`部分が`contentValue`フィールドで絞り込みを行い、コンテンツフィールドのみが返されます。 ただし、サービスのみを呼び出すと、次のように、JSONでラップされたBase64でエンコードされたコンテンツが返されます。
 
-```bash
+```json
 {
   "contentValue" : "Y3VybCBcCgktRiAiZmlsZT1ARG9jdW1lbnRfUE9TVF9Ub1NpdGUuc2giIFwKCS1IICJDb250ZW50LVR5cGU6IG11bHRpcGFydC9mb3JtLWRhdGEiIFwKCS1YIFBPU1QgXAoJImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9vL2hlYWRsZXNzLWRlbGl2ZXJ5L3YxLjAvc2l0ZXMvJHsxfS9kb2N1bWVudHMiIFwKCS11ICJ0ZXN0QGxpZmVyYXkuY29tOnRlc3Qi"
 }
@@ -304,7 +304,7 @@ Base64.Decoder decoder = Base64.getDecoder();
    :language: bash
 ```
 
-最初のフォームデータ部分（-Fに続く）は、`Document`の`description`フィールドに新しい値を指定します。 2番目のフォームデータ部分は、アップロードする更新されたファイルを指定します。
+最初のフォームデータ部分(-Fに続く）は、`Document`の`description`フィールドに新しい値を指定します。 2番目のフォームデータ部分は、アップロードする更新されたファイルを指定します。
 
 ### Document_PATCH_ById.java
 
@@ -425,7 +425,7 @@ java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 
 [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`Document`および`DocumentFolder`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 
-[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) および [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) のJavaインターフェースも参照してください。
+[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java)および[DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java)のJavaインターフェースも参照してください。
 
 ## 追加情報
 

@@ -2,28 +2,20 @@
 
 Analytics Cloudの使用を開始するには、いくつかのステップを実行しなければなりません。 これらの手順がまだ実行されていない場合、アクティベーション処理中にエラーが発生する可能性があります。 以下に、アクティベーション中に発生するエラーの最も一般的な原因とその解決策をリストアップしました。
 
-<a name="someone-has-already-claimed-the-offering" />
-
 ## ［他のユーザーがすでにアクティベーションしました。］
 
 このエラーは、組織の誰かがすでにAnalytics Cloudを設定していて、所有者のロールを持っている場合に発生する可能性があります。 このエラーが表示された場合は、ワークスペースを設定した組織のユーザーに連絡してアクセスを要求してください。
 
-組織内の誰が Analytics Cloud ワークスペースを設定したかわからない場合は、 <analytics-cloud@liferay.com>までご連絡ください。 所有者のロールを持つアカウントを特定して、アクセスを依頼できるようにお手伝いさせていただきます。
-
-<a name="you-have-not-yet-created-a-liferay-account" />
+組織内の誰がAnalytics Cloud Workspaceを設定したのか判断できない場合は、 [help.liferay.com](https://help.liferay.com/)を通してサポートにお問い合わせください。 所有者のロールを持つアカウントを特定して、アクセスを依頼できるようにお手伝いさせていただきます。
 
 ## ［まだLiferayアカウントを作成していません］
 
-この場合は、単にLiferayアカウントを作成してください（サインインしようとするとオプションが表示されます）。 アカウントを作成すると、そのアカウントを組織のAnalytics CloudサブスクリプションまたはBasic Tierに関連付けることができます。 <analytics-cloud@liferay.com> までご連絡いただければ設定させていただきます。
-
-<a name="unable-to-access-the-analytics-cloud-basic-tier" />
+この場合は、単にLiferayアカウントを作成してください(サインインしようとするとオプションが表示されます）。 アカウントを作成すると、そのアカウントを組織のAnalytics CloudサブスクリプションまたはBasic Tierに関連付けることができます。 [help.liferay.com](https://help.liferay.com/) を通してサポートにご連絡いただければ、お客様のために設定させていただきます。
 
 ## ［Analytics Cloudの基本ティアにアクセスできません］
 
-Analytics CloudのBasic層は、Liferay DXPサブスクリプションに関連付けられています。 組織が DXP サブスクリプションを持っている場合は、アカウントをそのサブスクリプションに関連付けることができるので、ベーシック層のワークスペースを要求することができます。 <analytics-cloud@liferay.com> までご連絡いただければ、設定させていただきます。
-
-<a name="additional-information" />
+Analytics CloudのBasic層は、Liferay DXPサブスクリプションに関連付けられています。 組織が DXP サブスクリプションを持っている場合は、アカウントをそのサブスクリプションに関連付けることができるので、ベーシック層のワークスペースを要求することができます。 [help.liferay.com](https://help.liferay.com/) よりサポートにご連絡いただければ、設定させていただきます。
 
 ## 追加情報
 
-ここに記載されていないアクティベーション プロセスに関するその他の問題については、 <analytics-cloud@liferay.com> までお問い合わせください。
+ここに記載されていないアクティベーションプロセスに関するその他の問題については、 [help.liferay.com](https://help.liferay.com/) からサポートにご連絡ください。

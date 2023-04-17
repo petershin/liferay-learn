@@ -7,9 +7,9 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います:
+その後、以下の手順で操作してください：
 
-1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。.
+1. [Accounts API Basics](./liferay-t5p9.zip)をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -29,56 +29,63 @@
 
    JSONのレスポンスには、新しいアカウントが追加されたことが示されています。
 
-   ```bash
-        {
-        "accountBriefs" : [ {
-            "id" : 38935,
-            "name" : "Able",
-            "roleBriefs" : [ ]
-        } ],
-        "additionalName" : "",
-        "alternateName" : "dog",
-        "birthDate" : "1977-01-01T00:00:00Z",
-        "customFields" : [ ],
-        "dashboardURL" : "",
-        "dateCreated" : "2021-10-12T21:00:59Z",
-        "dateModified" : "2021-10-12T21:01:01Z",
-        "emailAddress" : "dog@liferay.com",
-        "externalReferenceCode" : "",
-        "familyName" : "Easy",
-        "givenName" : "Dog",
-        "id" : 39005,
-        "jobTitle" : "",
-        "keywords" : [ ],
-        "name" : "Dog Easy",
-        "organizationBriefs" : [ ],
-        "profileURL" : "",
-        "roleBriefs" : [ {
-            "id" : 20111,
-            "name" : "User"
-        } ],
-        "siteBriefs" : [ {
-            "id" : 20125,
-            "name" : "Global"
-        }, {
-            "id" : 20123,
-            "name" : "Guest"
-        } ],
-        "userAccountContactInformation" : {
-            "emailAddresses" : [ ],
-            "facebook" : "",
-            "jabber" : "",
-            "postalAddresses" : [ ],
-            "skype" : "",
-            "sms" : "",
-            "telephones" : [ ],
-            "twitter" : "",
-            "webUrls" : [ ]
-        }
-        }     
-    ```
+   ```json
+   {
+     "accountBriefs": [
+       {
+         "id": 38935,
+         "name": "Able",
+         "roleBriefs": []
+       }
+     ],
+     "additionalName": "",
+     "alternateName": "dog",
+     "birthDate": "1977-01-01T00:00:00Z",
+     "customFields": [],
+     "dashboardURL": "",
+     "dateCreated": "2021-10-12T21:00:59Z",
+     "dateModified": "2021-10-12T21:01:01Z",
+     "emailAddress": "dog@liferay.com",
+     "externalReferenceCode": "",
+     "familyName": "Easy",
+     "givenName": "Dog",
+     "id": 39005,
+     "jobTitle": "",
+     "keywords": [],
+     "name": "Dog Easy",
+     "organizationBriefs": [],
+     "profileURL": "",
+     "roleBriefs": [
+       {
+         "id": 20111,
+         "name": "User"
+       }
+     ],
+     "siteBriefs": [
+       {
+         "id": 20125,
+         "name": "Global"
+       },
+       {
+         "id": 20123,
+         "name": "Guest"
+       }
+     ],
+     "userAccountContactInformation": {
+       "emailAddresses": [],
+       "facebook": "",
+       "jabber": "",
+       "postalAddresses": [],
+       "skype": "",
+       "sms": "",
+       "telephones": [],
+       "twitter": "",
+       "webUrls": []
+     }
+   }    
+   ```
 
-1.  **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 ユーザーを作成したアカウントをクリックします。 ［**Users**］ タブをクリックすると、作成された新しいユーザーが表示されます。
+1. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 ユーザーを作成したアカウントをクリックします。 *［Users］* タブをクリックすると、作成された新しいユーザーが表示されます。
 
   ![新しいアカウントユーザーが追加されたことを確認します。](./account-users-and-roles-apis/images/01.png)
 
@@ -113,7 +120,7 @@
 | `-u "test@liferay.com:learn"`                                                                                                                | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](.../.../headless-delivery/using-oauth2.md) 経由でユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](../../headless-delivery/using-oauth2.md) を使ってユーザーを認証する必要があります。 OAuth2を利用したReactアプリケーションのサンプルは、[OAuth2を利用したユーザー認証](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -130,7 +137,7 @@
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                           | 説明                                                                    |
+| 行(省略形）                                                                           | 説明                                                                    |
 |:-------------------------------------------------------------------------------- |:--------------------------------------------------------------------- |
 | `UserAccountResource.Builder builder = ...`                                      | ` UserAccountResource `サービスインスタンスを生成するための`Builder`を取得します。             |
 | `UserAccountResource userAccountResource = builder.authentication(...).build();` | ベーシック認証を指定し、 `UserAccountResource` サービスインスタンスを生成します。                  |
@@ -145,7 +152,7 @@
 他のJavaクラスの例は、このクラスと似ていますが、異なるメソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
+サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、関連する他のRESTサービスを呼び出す例です。
@@ -274,13 +281,13 @@ java -classpath .:* -DaccountId=1234 -DaccountRoleId=5678 -DuserAccountId=9012 A
 
 ### AccountRoles_GET_FromAccount.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DaccountId=1234 AccountRoles_GET_FromAccount
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./accounts-api-basics/resources/liferay-t5p9.zip/java/AccountRoles_GET_FromAccount.java
    :dedent: 1

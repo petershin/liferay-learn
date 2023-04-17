@@ -6,7 +6,7 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
 |:------------------------- |:------------------------- |
 | <ul><li>ストラクチャーとテンプレートの情報収集</li><li>ストラクチャー権限の置換</li></ul> | <ul><li>ストラクチャーやテンプレートの作成</li><li>ストラクチャーやテンプレートの削除</li></ul> |
 
-ここでは、いくつかの [cURL](https://curl.haxx.se/) コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、構造化コンテンツの管理方法について学習していきます。 以下のトピックについて学習することができます。
+ここでは、いくつかの [cURL](https://curl.haxx.se/)コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、構造化コンテンツの管理方法について学習していきます。 以下のトピックについて学習することができます。
 
 - [環境のセットアップ](#setting-up-your-environment)
 - [使用するサービスの特定](#identifying-the-service-to-consume)
@@ -16,12 +16,13 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
 - [ストラクチャー権限の置換](#replacing-the-structure-permissions)
 
 ## 環境のセットアップ
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+その後、以下の手順で操作してください：
 
-1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip) をダウンロードし、解凍します：
+1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip)をダウンロードし、解凍する：
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip -O
@@ -43,9 +44,9 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
 
 ### サイトIDの特定
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**Configuration**］ &rarr; ［**Site Settings**］ に移動します。
-1. ［プラットフォーム］セクションで、 ［**Site Configuration**］ をクリックします。
-1. サイトIDの下でサイト識別子を見つけます。
+1. サイトメニュー(![Site menu](../../../images/icon-menu.png)）を開き、*［Configuration］* &rarr; *［Site Settings］*に移動します。
+1. プラットフォームセクションで、*［Site Configuration］*をクリックします。
+1. ［サイトID］の下でサイト識別子を見つけます。
 
    ![［サイト設定］と［Site Configuration］オプションでサイトIDを特定します。](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
 
@@ -61,8 +62,8 @@ REST APIを使用してプログラム的にストラクチャーとテンプレ
 
 ### サンプルストラクチャーとテンプレートの特定
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**コンテンツ & データ**］ &rarr; ［**Webコンテンツ**］ に移動します。
-1. ［**ストラクチャー**］ タブをクリックします。
+1. サイトメニュー(![Site menu](../../../images/icon-menu.png)）を開き、*［Content & Data］* &rarr; *［Web Content］*に移動します。
+1. *［ストラクチャー］*タブをクリックします。
 1. IDの欄で、ストラクチャーのIDを特定します。
 
    ![［ストラクチャー］タブで、ID欄の下にあるストラクチャーの IDを確認します。](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
@@ -134,40 +135,47 @@ Webコンテンツの管理には、Liferay DXP Headless Delivery API の`Struct
    }
 ```
 
-ストラクチャーには、 `contentStructureFields`の`dataType`セクションで説明される単一のテキストフィールドがあります。 ストラクチャーにさらに要素を含めると、 `contentStructureFields`の下に追加のセクションが表示されます。 以下は、テキストフィールド（`"dataType" : "string"`）と画像フィールド（`"dataType" : "image"`）を持つストラクチャーのJSON出力部分です。
+ストラクチャーには、 `contentStructureFields`の`dataType`セクションで説明される単一のテキストフィールドがあります。 ストラクチャーにさらに要素を含めると、 `contentStructureFields`の下に追加のセクションが表示されます。 以下は、テキストフィールド(`"dataType" : "string"`）と画像フィールド(`"dataType" : "image"`）を持つストラクチャーのJSON出力部分です。
 
 ```json
-   {
-    "actions" : { },
-    "facets" : [ ],
-    "items" : [ {
-        "availableLanguages" : [ "en-US" ],
-        "contentStructureFields" : [ {
-        "dataType" : "string",
-        "inputControl" : "text",
-        "label" : "Text",
-        "localizable" : true,
-        "multiple" : false,
-        "name" : "Text86549034",
-        "nestedContentStructureFields" : [ ],
-        "options" : [ ],
-        "predefinedValue" : "",
-        "repeatable" : false,
-        "required" : false,
-        "showLabel" : true
-        }, {
-        "dataType" : "image",
-        "label" : "Image",
-        "localizable" : true,
-        "multiple" : false,
-        "name" : "Image96876678",
-        "nestedContentStructureFields" : [ ],
-        "options" : [ ],
-        "predefinedValue" : "{}",
-        "repeatable" : false,
-        "required" : false,
-        "showLabel" : true
-        } ],
+{
+  "actions": {},
+  "facets": [],
+  "items": [
+    {
+      "availableLanguages": ["en-US"],
+      "contentStructureFields": [
+        {
+          "dataType": "string",
+          "inputControl": "text",
+          "label": "Text",
+          "localizable": true,
+          "multiple": false,
+          "name": "Text86549034",
+          "nestedContentStructureFields": [],
+          "options": [],
+          "predefinedValue": "",
+          "repeatable": false,
+          "required": false,
+          "showLabel": true
+        },
+        {
+          "dataType": "image",
+          "label": "Image",
+          "localizable": true,
+          "multiple": false,
+          "name": "Image96876678",
+          "nestedContentStructureFields": [],
+          "options": [],
+          "predefinedValue": "{}",
+          "repeatable": false,
+          "required": false,
+          "showLabel": true
+        }
+      ]
+    }
+  ]
+}
 ```
 
 ## サイトテンプレートの取得
@@ -192,32 +200,32 @@ cURLスクリプトのパラメーター：
 以下は、このスクリプトが生成するJSON出力の一部です。 このスクリプトは、サイト内のすべてのテンプレートを返します。 この例では、 `id` と `name`で識別される単一のテンプレートを確認できます。 `contentStructureId` は関連するストラクチャーIDに、 `templateScript` はテンプレートを記述したFreeMarker テンプレート言語に対応します。
 
 ```json
-   {
-    ...
-        "availableLanguages" : [ "en-US" ],
-        "contentStructureId" : 41837,
-        "creator" : {
-        "additionalName" : "",
-        "contentType" : "UserAccount",
-        "familyName" : "Bowman",
-        "givenName" : "David",
-        "id" : 20129,
-        "name" : "David Bowman"
-        },
-        "dateCreated" : "2021-08-02T13:24:32Z",
-        "dateModified" : "2021-08-02T14:33:24Z",
-        "description" : "",
-        "id" : "41847",
-        "name" : "Simple Template",
-        "programmingLanguage" : "ftl",
-        "siteId" : 20125,
-        "templateScript" : "<#if (Text86549034.getData())??>\n\t${Text86549034.getData()}\n</#if>"
-    } ],
-    "lastPage" : 1,
-    "page" : 1,
-    "pageSize" : 20,
-    "totalCount" : 1
-   }
+{
+  ...
+    "availableLanguages" : [ "en-US" ],
+    "contentStructureId" : 41837,
+    "creator" : {
+      "additionalName" : "",
+      "contentType" : "UserAccount",
+      "familyName" : "Bowman",
+      "givenName" : "David",
+      "id" : 20129,
+      "name" : "David Bowman"
+    },
+    "dateCreated" : "2021-08-02T13:24:32Z",
+    "dateModified" : "2021-08-02T14:33:24Z",
+    "description" : "",
+    "id" : "41847",
+    "name" : "Simple Template",
+    "programmingLanguage" : "ftl",
+    "siteId" : 20125,
+    "templateScript" : "<#if (Text86549034.getData())??>\n\t${Text86549034.getData()}\n</#if>"
+  } ],
+  "lastPage" : 1,
+  "page" : 1,
+  "pageSize" : 20,
+  "totalCount" : 1
+}
 ```
 
 ```{note}
@@ -245,31 +253,33 @@ cURLスクリプトのパラメーター：
 JSON出力には、`items`セクションの下に権限が含まれます。 この例では、 `roleName`にサンプルストラクチャーの権限を持つロールが1つだけあり、 `actionIds`に権限リストがあります 。
 
 ```json
-    {
-    "actions" : {
-        "get" : {
-        "method" : "GET",
-        "href" : "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
-        },
-        "replace" : {
-        "method" : "PUT",
-        "href" : "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
-        }
+{
+  "actions": {
+    "get": {
+      "method": "GET",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
     },
-    "facets" : [ ],
-    "items" : [ {
-        "actionIds" : [ "DELETE", "PERMISSIONS", "UPDATE", "VIEW" ],
-        "roleName" : "Owner"
-    } ],
-    "lastPage" : 1,
-    "page" : 1,
-    "pageSize" : 2,
-    "totalCount" : 2
+    "replace": {
+      "method": "PUT",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
     }
+  },
+  "facets": [],
+  "items": [
+    {
+      "actionIds": ["DELETE", "PERMISSIONS", "UPDATE", "VIEW"],
+      "roleName": "Owner"
+    }
+  ],
+  "lastPage": 1,
+  "page": 1,
+  "pageSize": 2,
+  "totalCount": 2
+}
 ```
 
 ```{note}
-権限の管理方法については、[Webコンテンツストラクチャーとテンプレートへのアクセス許可の割り当て](../web-content-structures/assigning-permissions-to-structures-and-templates.md) をご覧ください。
+権限の管理方法については、[Webコンテンツストラクチャーとテンプレートへの権限の割り当て](.../assigning-web-content-structures/assigning-permissions-to-structures and-templates.md） をご覧ください。
 ```
 
 ## ストラクチャー権限の置換
@@ -293,28 +303,31 @@ cURLスクリプトのパラメーター：
 JSON出力では、 `items` セクションの下に、各ロールについて2つのエントリーが表示されます。
 
 ```json
-    {
-    "actions" : {
-        "get" : {
-        "method" : "GET",
-        "href" : "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
-        },
-        "replace" : {
-        "method" : "PUT",
-        "href" : "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
-        }
+{
+  "actions": {
+    "get": {
+      "method": "GET",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
     },
-    "facets" : [ ],
-    "items" : [ {
-        "actionIds" : [ "DELETE", "PERMISSIONS", "UPDATE", "VIEW" ],
-        "roleName" : "Owner"
-    }, {
-        "actionIds" : [ "DELETE", "VIEW" ],
-        "roleName" : "Power User"
-    } ],
-    "lastPage" : 1,
-    "page" : 1,
-    "pageSize" : 2,
-    "totalCount" : 2
+    "replace": {
+      "method": "PUT",
+      "href": "http://localhost:8080/o/headless-delivery/v1.0/content-structures/41837/permissions"
     }
+  },
+  "facets": [],
+  "items": [
+    {
+      "actionIds": ["DELETE", "PERMISSIONS", "UPDATE", "VIEW"],
+      "roleName": "Owner"
+    },
+    {
+      "actionIds": ["DELETE", "VIEW"],
+      "roleName": "Power User"
+    }
+  ],
+  "lastPage": 1,
+  "page": 1,
+  "pageSize": 2,
+  "totalCount": 2
+}
 ```

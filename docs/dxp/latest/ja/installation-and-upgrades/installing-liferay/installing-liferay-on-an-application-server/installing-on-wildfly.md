@@ -4,41 +4,41 @@ WildFlyにインストールするには、DXP WARのインストール、依存
 
 ## 前提条件
 
-Liferay DXPにはJava JDK 8または11が必要です。 詳細は、 [互換性マトリクス](https://help.liferay.com/hc/ja/articles/360049238151) を参照してください。
+Liferay DXPにはJava JDK 8または11が必要です。 詳細は、[互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360049238151)を参照してください。
 
-[ヘルプセンター](https://customer.liferay.com/downloads) (サブスクリプション)または [Liferayコミュニティのダウンロード](https://www.liferay.com/downloads-community) から、これらのファイルをダウンロードしてください。 管理者は以下をダウンロードする必要があります。
+[ヘルプセンター](https://customer.liferay.com/downloads)(サブスクリプション)または[Liferayコミュニティのダウンロード](https://www.liferay.com/downloads-community)から、これらのファイルをダウンロードしてください。 管理者は以下をダウンロードする必要があります。
 
 * DXP WARファイル
 * OSGi依存関係のZIPファイル
-* 依存関係のZIPファイル（DXP 7.3以前）
+* 依存関係のZIPファイル(DXP 7.3以前）
 
 インストール手順では、これらの用語を使用しています。
 
-[`［Liferay Home］`](../../reference/liferay-home.md)：WildFlyサーバーフォルダを含むフォルダ（ `$WILDFLY_HOME`と表記されています。） DXPをインストールしてデプロイした後、`data`、`deploy`、および`logs`フォルダを生成します。
+[`［Liferay Home］`](../../reference/liferay-home.md)：WildFlyサーバーフォルダを含むフォルダ( `$WILDFLY_HOME`と表記されています。） DXPをインストールしてデプロイした後、`data`、`deploy`、および`logs`フォルダを生成します。
 
 `$WILDFLY_HOME`：WildFlyサーバーフォルダー。 通常、`wildfly-［version］`という名前です。
 
 ## DXP WARのインストール
 
 1. クリーンなWildflyインストールを開始していて、`$WILDFLY_HOME/standalone/deployments/ROOT.war`フォルダが存在する場合は、そのすべてのサブフォルダとファイルを削除します。
-1. DXP WARファイルを`$WILDFLY_HOME/standalone/deployments/ROOT.war`フォルダに解凍します（このフォルダが存在しない場合は作成します）。
+1. DXP WARファイルを`$WILDFLY_HOME/standalone/deployments/ROOT.war`フォルダに解凍します(このフォルダが存在しない場合は作成します）。
 
 ## 依存関係のインストール
 
-1. OSGi Dependencies ZIPファイルを `［Liferay Home］/osgi` フォルダーに解凍します（このフォルダーが存在しない場合は作成します）。 LiferayのOSGiランタイムは、これらのモジュールに依存しています。
+1. OSGi Dependencies ZIPファイルを `［Liferay Home］/osgi` フォルダーに解凍します(このフォルダーが存在しない場合は作成します）。 LiferayのOSGiランタイムは、これらのモジュールに依存しています。
 1. DXP 7.4+ WARファイルには、MariaDBおよびPostgreSQLのドライバーが含まれています。 以前のWARにはそれらがありません。 7.4以降のWARに、使用中のサポートされているデータベースのドライバーがない場合は、データベースベンダーのJDBC JARファイルをダウンロードして、`$WILDFLY_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib`フォルダーに配置します。
 
-    サポートされているデータベースの一覧については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/360049238151) を参照してください。
+    サポートされているデータベースの一覧については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360049238151) を参照してください。
 
 ```{note}
-HypersonicデータベースはDXPにバンドルされており、テスト目的で役立ちます。 本番環境のDXPインスタンスにはHSQLを**使用しないでください**。
+HypersonicデータベースはDXPにバンドルされており、テスト目的に役立ちます。 本番環境のDXPインスタンスにはHSQLを**使用しないでください**。
 ```
 
 ### 以前のバージョンの依存関係をインストールする
 
 DXP 7.3以前の場合は、次の追加手順に従います。
 
-1. 依存関係のZIPファイルを`$WILDFLY_HOME/modules/com/liferay/portal/main`フォルダに解凍します（このフォルダが存在しない場合は作成します）。
+1. 依存関係のZIPファイルを`$WILDFLY_HOME/modules/com/liferay/portal/main`フォルダに解凍します(このフォルダが存在しない場合は作成します）。
 1. `$WILDFLY_HOME/modules/com/liferay/portal/main`フォルダに`module.xml`というファイルを作成します。 このファイルでは、データベースベンダーの JAR ファイル、ポータルモジュール、およびその必要なリソースや依存関係のすべてにパスを設定した resource-root 要素を宣言します。
 
     ```xml
@@ -76,9 +76,9 @@ DXP 7.3以前の場合は、次の追加手順に従います。
 
 ## WildFlyでのスタンドアロンモードとドメインモードのDXPの実行
 
-WildFlyは、 **スタンドアロン** モードまたは **ドメイン** モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 **ドメイン** と呼ばれます。 スタンドアロンモードとドメインモードの詳細は、 [WildFly管理ガイド](https://docs.jboss.org/author/display/WFLY/Admin+Guide#AdminGuide-Operatingmodes) このトピックに関するセクションを参照してください。 DXPは、スタンドアロンモードではWildFlyを完全にサポートしますが、ドメインモードではサポートしません。
+WildFlyは、 *スタンドアロン* モードまたは *ドメイン* モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 *ドメイン*と呼ばれます。 スタンドアロンモードとドメインモードの詳細は、 [WildFly管理ガイド](https://docs.wildfly.org/23/Admin_Guide.html)このトピックに関するセクションを参照してください。 DXPは、スタンドアロンモードではWildFlyを完全にサポートしますが、ドメインモードではサポートしません。
 
-DXPは、スタンドアロンモードで実行する場合はWildFlyをサポートしますが、ドメインモードで実行する場合はサポートしません。 WildFlyはファイル（展開または非展開）をコピーして管理対象デプロイメントのコンテンツを管理するため、DXPの自動展開は管理対象デプロイメントでは機能しません。 これにより、JSPフックとExtプラグインが意図したとおりに機能しなくなります。 たとえば、DXPのJSPオーバーライドメカニズムはアプリケーションサーバーに依存しているため、JSPフックは管理対象ドメインモードで実行されているWildFlyでは機能しません。 ただし、JSPフックとExtプラグインは非推奨であるため、使用していない可能性があります。
+DXPは、スタンドアロンモードで実行する場合はWildFlyをサポートしますが、ドメインモードで実行する場合はサポートしません。 WildFlyはファイル(展開または非展開）をコピーして管理対象デプロイメントのコンテンツを管理するため、DXPの自動展開は管理対象デプロイメントでは機能しません。 これにより、JSPフックとExtプラグインが意図したとおりに機能しなくなります。 たとえば、DXPのJSPオーバーライドメカニズムはアプリケーションサーバーに依存しているため、JSPフックは管理対象ドメインモードで実行されているWildFlyでは機能しません。 ただし、JSPフックとExtプラグインは非推奨であるため、使用していない可能性があります。
 
 ドメインモードデプロイメントを使用する場合は、コマンドラインインターフェースを使用します。
 
@@ -133,7 +133,7 @@ WildFlyがDXPを実行するように構成するには、次のものが含ま�
     </security-domain>
     ```
 
-1. `<subsystem xmlns="urn:jboss:domain:undertow:12.0" ...>` 要素からウェルカムコンテンツ要素をコメントアウトします。 例:
+1. `<subsystem xmlns="urn:jboss:domain:undertow:12.0" ...>` 要素からウェルカムコンテンツ要素をコメントアウトします。 例えば、
 
     ```xml
     <!--<location name="/" handler="welcome-content"/>-->
@@ -199,7 +199,7 @@ Javaオプションとメモリ引数について以下に説明します。
 | `-Dfile.encoding=UTF-8`                   | DXPにはUTF-8ファイルエンコーディングが必要です。                                                                         |
 | `-Djava.locale.providers=JRE,COMPAT,CLDR` | これは、JDK 11で4桁の日付を表示するために必要です。                                                                        |
 | `-Djava.net.preferIPv4Stack=true`         | IPv6よりもIPv4スタックを優先します。                                                                               |
-| `-Dlog4j2.formatMsgNoLookups=true`        | リモートコード実行（RCE）の脆弱性を解決します。 詳細は、 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) を参照してください。 |
+| `-Dlog4j2.formatMsgNoLookups=true`        | リモートコード実行(RCE）の脆弱性を解決します。 詳細は、 [LPS-143663](https://issues.liferay.com/browse/LPS-143663) を参照してください。 |
 | `-Duser.timezone=GMT`                     | DXPでは、アプリケーションサーバーのJVMがGMTタイムゾーンを使用する必要があります。                                                        |
 
 **メモリ引数の説明**
@@ -215,12 +215,12 @@ Javaオプションとメモリ引数について以下に説明します。
 | `-XX:SurvivorRatio`    | 新しいスペースとSurvivor領域の比率。 Survivor領域は、古い世代の領域に昇格する前に、若い世代のオブジェクトを保持します。   |
 
 ```{note}
-DXPのインストール後、これらの構成（これらのJVMオプションを含む）をさらに調整して、パフォーマンスを向上させることができます。 詳細については、 [Liferayの調整](../../setting-up-liferay/tuning-liferay.md) および [JVMの調整](../../setting-up-liferay/tuning-your-jvm.md) を参照してください。
+DXPのインストール後、これらの構成(これらのJVMオプションを含む）をさらに調整して、パフォーマンスを向上させることができます。 詳細については、[Tuning Liferay](../../setting-up-liferay/tuning-liferay.md)および[Tuning Your JVM](../../setting-up-liferay/tuning-your-jvm.md)を参照してください。
 ```
 
 **チェックポイント:**
 
-1. ファイルエンコーディング、ユーザータイムゾーン、優先プロトコルスタックは、 `standalone.conf.sh` スクリプトの `JAVA_OPTS` に設定されています。
+1. ファイルエンコーディング、ユーザータイムゾーン、優先プロトコルスタックは、 `standalone.conf.sh` スクリプトの `JAVA_OPTS` で設定済みです。
 1. 利用可能なメモリのデフォルト量が増加しました。
 
 これで、WildFlyにDXPをインストールするための規定のスクリプト変更が完了しました。
@@ -229,7 +229,7 @@ DXPのインストール後、これらの構成（これらのJVMオプショ�
 
 WildFlyサーバーでIBM JDKを使用する場合は、以下の追加手順を実行します。
 
-1. DXP 7.3 以前の場合、 `$WILDFLY_HOME/modules/com/liferay/portal/main/module.xml` ファイルに移動し、この依存関係を `<dependencies>` 要素内に挿入してください。
+1. DXP 7.3 以前の場合、 `$WILDFLY_HOME/modules/com/liferay/portal/main/module.xml` ファイルに移動して、この依存関係を `<dependencies>` 要素内に挿入してください：
 
     `<module name="ibm.jdk" />`
 
@@ -247,17 +247,17 @@ WildFlyサーバーでIBM JDKを使用する場合は、以下の追加手順を
 
 ## Liferayにおけるデータソースの構成
 
-DXPには組み込みのHypersonicデータベースが含まれています。これはデモンストレーション目的には最適ですが、 **本番環境では使用しないでください** 。 本番環境では、フル機能のサポートされているRDBMSを使用してください。 データベースのセットアップについては、[データベースの設定](../configuring-a-database.md)を参照してください。
+DXPには組み込みのHypersonicデータベースが含まれています。これはデモンストレーション目的には最適ですが、**本番環境では使用しないでください**。 本番環境では、フル機能のサポートされているRDBMSを使用してください。 データベースのセットアップについては、[データベースの設定](../configuring-a-database.md)を参照してください。
 
-Liferay DXPは、DXPに組み込まれているデータソースを使用する（推奨）か、アプリケーションサーバー上に作成したデータソースを使用してデータベースに接続できます。
+Liferay DXPは、DXPに組み込まれているデータソースを使用する(推奨）か、アプリケーションサーバー上に作成したデータソースを使用してデータベースに接続できます。
 
 [セットアップウィザード](../running-liferay-for-the-first-time.md)を使用して、DXPを初めて実行するときに、データベースを使用してDXPの組み込みデータソースを構成できます。 または、データベースの [データベーステンプレート](../../reference/database-templates.md)に 基づいて、データソースを [`portal-ext.properties` ファイル](../../reference/portal-properties.md)で構成できます。
 
-## Wildflyのデータソース設定
+## Wildflyのデータソース構成
 
 WildFlyを使用してデータソースを管理する場合は、次の手順に従います。
 
-1. DXP WAR（7.4以降）またはデータベースベンダーからJDBC JARを取得し、`$WILDFLY_HOME/modules/com/liferay/portal/main`フォルダにコピーします。
+1. DXP WAR(7.4以降）またはデータベースベンダーからJDBC JARを取得し、`$WILDFLY_HOME/modules/com/liferay/portal/main`フォルダにコピーします。
 
 1. `$WILDFLY_HOME/modules/com/liferay/portal/main`フォルダに`module.xml`というファイルを作成します。 ファイル内で、portalモジュールとJDBC JARを宣言します。
 
@@ -294,7 +294,7 @@ WildFlyを使用してデータソースを管理する場合は、次の手順�
     データベースのURL、ユーザー名、パスワードを適切な値に置き換えてください。
 
     ```{note}
-    データソース`jndi-name`を変更する必要がある場合は、`<default-bindings>` タグ内の`datasource`要素を編集してください。
+    データソース`jndi-name`を変更する必要がある場合は、`<default-bindings>`タグ内の`datasource`要素を編集してください。
     ```
 
 1. `<datasources>` 要素内にもある `standalone.xml` ファイルの `<drivers>` 要素にドライバークラス名を追加します。
@@ -329,7 +329,7 @@ WildFlyを使用してデータソースを管理する場合は、次の手順�
     </subsystem>
     ```
 
-1. Liferay Homeフォルダの[`portal-ext.properties`](../../reference/portal-properties.md)ファイルで、JNDiデータソースを指定します。 例:
+1. Liferay Homeフォルダの[`portal-ext.properties`](../../reference/portal-properties.md)ファイルで、JNDiデータソースを指定します。 例えば、
 
     ```properties
     jdbc.default.jndi.name=java:jboss/datasources/ExampleDS
@@ -369,7 +369,7 @@ WildFlyでメールセッションを管理する場合は、次の手順に従�
 ## DXPのデプロイ
 
 1. `ROOT.war`のデプロイをトリガーするには、`$WILDFLY_HOME/standalone/deployments/`フォルダに `ROOT.war.dodeploy`という名前の空のファイルを作成します。
-1. `$WILDFLY_HOME/bin` に移動し、 `standalone.sh`を実行して WildFly アプリケーションサーバーを起動します。 WildFlyは`ROOT.war.dodeploy`ファイルを検出し、ファイルのプレフィックス（つまり、`ROOT.war`）に一致するWebアプリケーションをデプロイします。
+1. `$WILDFLY_HOME/bin` に移動し、 `standalone.sh`を実行して WildFly アプリケーションサーバーを起動します。 WildFlyは`ROOT.war.dodeploy`ファイルを検出し、ファイルのプレフィックス(つまり、`ROOT.war`）に一致するWebアプリケーションをデプロイします。
 
 DXPのデプロイ後に、 `PhaseOptimizer`を含む以下のような過剰な警告やログメッセージが表示される場合があります。 これらは良性なので、無視しても構いません。 これらのメッセージは、アプリサーバーのログレベルまたはログフィルターを調整することでオフにできます。
 
@@ -383,15 +383,15 @@ INFO: pass supports: [ES3 keywords as identifiers, getters, reserved words as pr
 current AST contains: [ES3 keywords as identifiers, getters, reserved words as properties, setters, string continuation, trailing comma, array pattern rest, arrow function, binary literal, block-scoped function declaration, class, computed property, const declaration, default parameter, destructuring, extended object literal, for-of loop, generator, let declaration, member declaration, new.target, octal literal, RegExp flag 'u', RegExp flag 'y', rest parameter, spread expression, super, template literal, exponent operator (**), async function, trailing comma in param list, object literals with spread, object pattern rest
 ```
 
-Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 詳細は、 [Liferay DXPのアクティブ化](../../setting-up-liferay/activating-liferay-dxp.md) を参照してください。
+Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 詳細は、[Activating Liferay DXP](../../setting-up-liferay/activating-liferay-dxp.md)を参照してください。
 
 　 DXPはWildFlyで実行されています。
 
 ## 次のステップ
 
-[管理者ユーザーとしてサインイン](../../../getting-started/introduction-to-the-admin-account.md)して、[DXPでのソリューションの構築](../../../building_solutions_on_dxp.md) を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
+[管理者ユーザーとしてサインインして](../../../getting-started/introduction-to-the-admin-account.md)、DXPでソリューションの構築を開始できます。 または、[Liferay DXPのその他のセットアップ](../../setting-up-liferay.md)トピックを参照できます。
 
-* [マーケットプレイスプラグインのインストール](../../../system-administration/installing-and-managing-apps/getting-started/using-marketplace.md#appendix-installing-the-marketplace-plugin)
+* [マーケットプレイスプラグインのインストール](../../../system-administration/installing-and-managing-apps/using-marketplace.md#appendix-installing-the-marketplace-plugin)
 * [試用期間中のプラグインへのアクセス](../../../system-administration/installing-and-managing-apps/installing-apps/accessing-ee-plugins-during-a-trial-period.md)
 * [検索エンジンのインストール](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md)
 * [Liferay DXPの保護](../../securing-liferay.md)

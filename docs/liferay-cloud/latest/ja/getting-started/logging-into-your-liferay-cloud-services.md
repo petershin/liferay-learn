@@ -1,52 +1,57 @@
-# Liferayクラウドサービスにログインする
+# Liferay Cloudサービスへのログイン
 
-デフォルトでは、LiferayおよびInfrastructureサービスのWebインターフェースに直接アクセスするためにログインが必要です。 これらのサービスのログイン認証情報は、通常、最初のオンボーディングメールで提供されますが、必要に応じてLiferay Cloud Consoleにある場合もあります。
+デフォルトでは、非本番環境(uatなど）でLiferayとInfrastructureサービスのWebインターフェースにアクセスするには、ログインが必要です。 通常、ログイン認証情報は最初のオンボーディングメールに記載されていますが、Liferay Cloud Consoleにも記載されています。
 
 ## ログイン資格情報の検索
 
-1. **infra** 環境に移動します。
-1. 左側のメニューで［**Services**］をクリックします。
-1. ［**ci**］ サービスを選択します。
-1. ［**Environment Variables**］ タブをクリックします。
-1. `JENKINS_CUSTOMER_PASSWWORD` 横の ［**show**］ アイコンを表示して、パスワードを取得します。
-1. `JENKINS_CUSTOMER_USER_NAME` 横にある ［**show**］ アイコンをクリックして、ユーザー名を取得します。
+1. _infra_ 環境に移動します。
 
-![ウェブサーバー](./logging-into-your-liferay-cloud-services/images/01.png)
+1. 左メニューの「 _設定」_ をクリックします。
+
+1. _Secrets_ タブをクリックします。
+
+1. _lcp-secret-ci-customer-user_ と _lcp-secret-ci-customer-password_ シークレットをクリックしてアクセスする。
+
+   ![lcp-secret-ci-customer-user および lcp-secret-ci-customer-password シークレットには、お客様のログイン認証が含まれています。](./logging-into-your-liferay-cloud-services/images/01.png)
+
+1. 各シークレットのページで *View* をクリックすると、値が表示されます。 明らかになった値をクリックすると、クリップボードにコピーされます。
+
+   ![表示］をクリックすると、秘密の値が表示されます。](./logging-into-your-liferay-cloud-services/images/02.png)
 
 ## ログイン
 
-1. 選択した環境（**dev** 、 **prd** 、 など）に移動します。
+1. 選択した環境(dev、uatなど）にナビゲートします。
 
-1. ページの上部にある ［**Visit Site**］ ドロップダウンメニューをクリックします。
+1. ページ上部の「 *サイト訪問* 」をクリックします。
 
-    ![［Visit Site］ドロップダウンには、環境内のLiferayインスタンスの利用可能なエンドポイントがすべて表示されます。](./logging-into-your-liferay-cloud-services/images/02.png)
+   ![Visit Siteドロップダウンには、環境内のLiferayインスタンスで利用可能なエンドポイントがすべてリストアップされます。](./logging-into-your-liferay-cloud-services/images/03.png)
 
-    ドロップダウンメニューは、アクセスすることのできる全ての利用可能な`liferay`サービスを表示します。これには、デフォルトの`webserver`サービスエンドポイントと環境に追加したカスタムドメインが含まれています。
+   ドロップダウンメニューには、 `liferay` サービスのエンドポイント(デフォルトの `Web サーバ` サービスのエンドポイント、および環境に追加したカスタムドメインを含む）がすべて表示されます。
 
 1. 目的のエンドポイントをクリックして、対応するURLでLiferayインスタンスにアクセスできます。
 
-1. プロンプトが表示されたら、Liferay Cloud [Jenkins のユーザー名とパスワード](#locating-login-credentials) を入力してください。
+1. プロンプトが表示されたら、Liferay Cloud [Jenkins のユーザー名とパスワード](#locating-login-credentials) を入力します。
 
-    ![認証](./logging-into-your-liferay-cloud-services/images/03.png)
+   ![表示されるポップアップで認証する。](./logging-into-your-liferay-cloud-services/images/04.png)
 
-1. これにより、ユーザーがLiferay DXP 7.xインスタンス（この例ではLiferay DXP 7.2 GA1）にリダイレクトされます。
+ログインすると、ユーザーはLiferay DXP 7.xインスタンス(この例ではLiferay DXP 7.2 GA1）へリダイレクトされます。
 
-    ![Liferay DXP 7.2 GA1 サインイン](./logging-into-your-liferay-cloud-services/images/04.png)
+![ログイン後、環境のLiferay DXPインスタンスに移動します。](./logging-into-your-liferay-cloud-services/images/05.png)
 
 ### デフォルトのサービスURLの検索
 
-デフォルトの`webserver`エンドポイントのURLを見つけるには、サービスのページに移動し 、ページの１番上にある`webserver` ロゴ をクリックします（そうするとURLに展開されます）：
+デフォルトの `ウェブサーバー` のエンドポイントの URL は、そのサービスページで確認できます。 `ウェブサーバー` のロゴをクリックすると、その URL が展開されます：
 
-![サービス名のロゴをクリックすると、そのサービスに該当するURLが表示されます。](./logging-into-your-liferay-cloud-services/images/05.png)
+![サービスのロゴがクリック可能なURLに展開されます。](./logging-into-your-liferay-cloud-services/images/06.png)
 
 この方法でLiferayにアクセスする際には、 [Jenkinsログイン資格情報](#locating-login-credentials) が必要です。
 
 同様の手順で、Jenkins CIのWebインターフェイスにもアクセスできます。 Jenkins URLを見つけるには、`infra`環境にある`ci`サービスに移動します：
 
-![また、CIサービスでは、Jenkins CIのWebインターフェイスで利用できるURLが用意されています。](./logging-into-your-liferay-cloud-services/images/06.png)
+![CIサービスには、Jenkins CIのWebインターフェースのURLが記載されています。](./logging-into-your-liferay-cloud-services/images/07.png)
 
 ## 追加情報
 
 * [Liferay DXPサービスの使用](../using-the-liferay-dxp-service.md)
 * [継続的インテグレーション](../platform-services/continuous-integration.md)
-* [Webサーバサービス](../platform-services/web-server-service.md)
+* [Webサーバーサービス](../platform-services/web-server-service.md)

@@ -5,15 +5,16 @@ RESTビルダーを使用すると、構築したいAPIを定義でき、RESTビ
 ## サンプルのREST APIをデプロイする
 
 RESTビルダーの動作を確認するために、カタログ内のIDによってダミー製品を取得するサンプルAPIをデプロイできます。 この簡単な例がどのように機能するかを理解したら、独自のアプリケーション用のAPIを作成できます。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+その後、以下の手順で操作してください：
 
-1. Download and unzip the `.zip` archive containing the [Acme Foo API](./liferay-r3b2.zip) :
+1. Acme Foo API](./liferay-r3b2.zip)を含む `.zip` アーカイブをダウンロードし解凍する：
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O
     ```
 
     ```bash
@@ -37,7 +38,7 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
     STARTED com.acme.headless.r3b2.impl_1.0.0
     ```
 
-1. DXPインスタンスにログインし、 **グローバルメニュー**（![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; ［**コントロールパネル**］ &rarr; ［**Gogoシェル**］ に移動します。
+1. DXPインスタンスにログインし、_グローバルメニュー_(![Global Menu icon](../../images/icon-applications-menu.png)）&rarr; _［コントロールパネル］_ &rarr; _［Gogoシェル］_に移動します。
 
 1. Gogoシェルプロンプトで、次のコマンドを入力します。
 
@@ -47,7 +48,7 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
 
     このページには、新しくデプロイされたAPIである`Liferay.Headless.R3B2`を含む、インストールされているすべてのJAX-RSバンドルが一覧表示されます。 これでAPIがデプロイされ、呼び出す準備が整いました。
 
-    ![新しくデプロイされたAPI（Liferay.Headless.R3B2という名前）は、コマンドの結果として一覧表示され、使用できるようになります。](./producing-and-implementing-apis-with-rest-builder/images/01.png)
+    ![新しくデプロイされたAPI(Liferay.Headless.R3B2という名前）は、コマンドの結果として一覧表示され、使用できるようになります。](./producing-and-implementing-apis-with-rest-builder/images/01.png)
 
 1. ターミナルから次のコマンドを実行し、`{fooId}`を1〜3の数字に置き換えて、APIをテストします。
 
@@ -57,13 +58,13 @@ RESTビルダーの動作を確認するために、カタログ内のIDによ�
 
     クエリは、JSONオブジェクトでラップされた対応する製品のID、名前、および説明を返します。
 
-    ```json
+   ```json
    {
      "description": "Universal truth must be transcendental.",
      "id": 1,
      "name": "Truth"
    }
-    ```
+   ```
 
 新しいREST APIを正常にデプロイして使用しました。
 
@@ -110,7 +111,7 @@ RESTビルダーの構成は`rest-config.yaml`ファイルに属します。  �
 
 `baseURI`：このプロジェクトのすべてのAPIのコンテキストURL
 
-`className`：ルートリソースクラスのJavaクラス名（JAX-RSで使用）
+`className`：ルートリソースクラスのJavaクラス名(JAX-RSで使用）
 
 `name`：APIのJAX-RS名
 
@@ -183,7 +184,7 @@ components:
                     type: string
 ```
 
-この例では、`Foo`というスキーマが、このAPIを使用するための重要なデータを表しています。 `Goo`エンティティは、`fooId`を使用して`Foo`にリンクされています。  スキーマでサポートされているデータタイプのリストについては、 [OpenAPIの仕様](https://swagger.io/docs/specification/data-models/data-types/) を参照してください。
+この例では、`Foo`というスキーマが、このAPIを使用するための重要なデータを表しています。 `Goo`エンティティは、`fooId`を使用して`Foo`にリンクされています。  スキーマでサポートされているデータタイプのリストについては、[OpenAPIの仕様](https://swagger.io/docs/specification/data-models/data-types/)を参照してください。
 
 スキーマ定義によって、RESTビルダーが生成するクラスの名前が決まります。これには、リソースファイル内のビルディングブロックとテンプレートが含まれます。 上記のスキーマは`Foo`および`Bar`と呼ばれるため、実装ロジックは`FooResourceImpl`クラスと`GooResourceImpl`クラスに属します。
 
@@ -233,11 +234,11 @@ paths:
 `get`、 `post`、 `put`、 `patch`、 `delete`など、さまざまな種類のリクエストのパスを追加できます。
 ```
 
-このパス（`foo/{fooId}`）は、URLの末尾にパス文字列を追加することでこのAPI（`getFoo`）に到達できることを指定します（これには、`rest-config.yaml`ファイルの`baseURI`と`version`の値も含まれます）。 たとえば、このサンプルAPIには、完全なURL：`localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}`を介してアクセスします。
+このパス(`foo/{fooId}`）は、URLの末尾にパス文字列を追加することでこのAPI(`getFoo`）に到達できることを指定します(これには、`rest-config.yaml`ファイルの`baseURI`と`version`の値も含まれます）。 たとえば、このサンプルAPIには、完全なURL：`localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}`を介してアクセスします。
 
 `fooId`の代わりに使用する値は、一致する名前のパラメーターとして使用されます。
 
-各パスには、`parameters`ブロックの下（および`get`ブロック内）に`responses`ブロックがあり、少なくとも成功した呼び出しの応答（`200`応答で示される）を定義します。
+各パスには、`parameters`ブロックの下(および`get`ブロック内）に`responses`ブロックがあり、少なくとも成功した呼び出しの応答(`200`応答で示される）を定義します。
 
 この`responses`ブロックは、呼び出しの成功時に`Product`を返すことを指定します。 文字列`#/components/schemas/Foo`は、同じファイルで以前に定義されたスキーマを参照し、RESTビルダーがこのAPIの戻り値のタイプとして`Foo`スキーマを使用できるようにします。
 
@@ -267,13 +268,13 @@ GraphQLエンドポイントコードは `graphql` 、JAX-RSアプリケーシ�
 
 ## 実装ロジックを追加する
 
-最後のステップは、定義した各APIのロジックを定義することです。 `impl`モジュール内で、`rest-openapi.yaml`で定義したスキーマ名（この例では、`FooResourceImpl.java`と`GooResourceImpl.java`）に基づいて、実装が配置されるJavaリソースクラスを見つけます。
+最後のステップは、定義した各APIのロジックを定義することです。 `impl`モジュール内で、`rest-openapi.yaml`で定義したスキーマ名(この例では、`FooResourceImpl.java`と`GooResourceImpl.java`）に基づいて、実装が配置されるJavaリソースクラスを見つけます。
 
 ```{tip}
 実装のクラスの場所は、`rest-config.yaml`ファイルで`apiPackagePath`に定義した値によって異なります。 そのパスをたどり、その中の`internal/resource/<version>/`に移動します。 この例と同じパスを使用した場合、ファイルは`src/main/java/com/acme/headless/r3b2/internal/resource/v1_0/`内にあります。
 ```
 
-実装クラス（`[SchemaName]ResourceImpl`）は、基本クラス（`Base[SchemaName]ResourceImpl`）の横にあります。 実装クラスを開きます。 これは単なる例であるため、この実装では事前に入力された`HashTable`を使用し、`getFoo`メソッドは一致する`fooId`を持つ`HashTable`から製品を返します。 完全な実装については、プロジェクト内の`FooResourceImpl.java`を参照してください。
+実装クラス(`[SchemaName]ResourceImpl`）は、基本クラス(`Base[SchemaName]ResourceImpl`）の横にあります。 実装クラスを開きます。 これは単なる例であるため、この実装では事前に入力された`HashTable`を使用し、`getFoo`メソッドは一致する`fooId`を持つ`HashTable`から製品を返します。 完全な実装については、プロジェクト内の`FooResourceImpl.java`を参照してください。
 
 ```java
     @Override
@@ -282,9 +283,9 @@ GraphQLエンドポイントコードは `graphql` 、JAX-RSアプリケーシ�
     }
 ```
 
-このメソッドは、特別なJAX-RSアノテーションを使用して定義された基本クラス（`Base[SchemaName]ResourceImpl`）で定義された基本メソッドをオーバーライドします。
+このメソッドは、特別なJAX-RSアノテーションを使用して定義された基本クラス(`Base[SchemaName]ResourceImpl`）で定義された基本メソッドをオーバーライドします。
 
-リクエストを完了するために、任意のビジネスロジックを追加できます。 RESTビルダーは、スキーマで定義したオブジェクトのデフォルトコンストラクターのみを作成します。 このサンプルのビジネスロジックは、オブジェクトを作成し、それに値を追加します（`rest-openapi.yaml`で`parameters`を定義した方法に基づく）。
+リクエストを完了するために、任意のビジネスロジックを追加できます。 RESTビルダーは、スキーマで定義したオブジェクトのデフォルトコンストラクターのみを作成します。 このサンプルのビジネスロジックは、オブジェクトを作成し、それに値を追加します(`rest-openapi.yaml`で`parameters`を定義した方法に基づく）。
 
 ```java
    Foo foo1 = new Foo() {

@@ -1,15 +1,15 @@
 # Option API の基本
 
-[オプションテンプレート](../../product-management/creating-and-managing-products/products/using-product-options.md)は、アプリケーションメニューやREST APIで管理できます。 [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) サービスを呼び出して、オプションを作成・管理します。
+オプションテンプレート [](../../product-management/creating-and-managing-products/products/using-product-options.md) は、アプリケーションメニューやREST APIで管理することができます。 [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) サービスを呼び出して、オプションを作成・管理します。
 
 ## オプションの追加
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Liferayが起動したら。
+Liferayが起動したら、
 
-1. Option API Basics](./liferay-d3g5.zip)をダウンロードし、解凍してください。
+1. [Option API Basics](./liferay-d3g5.zip)をダウンロードして解凍する。
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-d3g5.zip -O
@@ -21,7 +21,7 @@ Liferayが起動したら。
 
 1. オプションはインスタンスにスコープされ、各オプションは一意の `キー`を指定する必要があります。
 
-   cURLスクリプトを使用して、新しいオプションを追加してください。 コマンドラインで、 `curl` フォルダに移動します。 `Option_POST_ToInstance.sh` スクリプトを実行する。
+   cURLスクリプトを使用して、新しいオプションを追加してください。 コマンドラインで、 `curl`フォルダに移動します。 `Option_POST_ToInstance.sh` スクリプトを実行する。
 
    ```bash
    ./Option_POST_ToInstance.sh
@@ -106,7 +106,7 @@ Liferayが起動したら。
 | `-u "test@liferay.com:learn"`                                                                      | 基本認証の認証情報を入力します。                   |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html)をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -123,13 +123,13 @@ Liferayが起動したら。
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                 | 説明                                                   |
+| 行(省略形）                                                                 | 説明                                                   |
 |:---------------------------------------------------------------------- |:---------------------------------------------------- |
 | `OptionResource.Builder builder = ...`                                 | `OptionResource` サービスインスタンスを生成するための `Builder` を取得する。 |
 | `OptionResource optionResource = builder.authentication(...).build();` | 基本認証を使用し、 `OptionResource` サービスインスタンスを生成します。         |
 | `optionResource.postOption(...);`                                      | `optionResource.postOption` メソッドを呼び出し、postにデータを渡します。 |
 
-このプロジェクトには、依存関係として `com.liferay.headless.commerce.admin.catalog.client.jar` ファイルが含まれています。 すべての REST アプリケーションのクライアント JAR 依存情報は、インストール先の API Explorer で `/o/api` (例: <http://localhost:8080/o/api>) から確認できます。
+このプロジェクトには、依存関係として`com.liferay.headless.commerce.admin.catalog.client.jar` ファイルが含まれています。 すべてのRESTアプリケーションのクライアントJAR依存情報は、インストール先のAPIエクスプローラーで`/o/api` (例: <http://localhost:8080/o/api>) から確認できます。
 
 ```{note}
 `main`メソッドのコメントでは、クラスの実行を実演しています。
@@ -181,7 +181,7 @@ java -classpath .:* Options_GET_FromInstance
 
 ### フィルタリング、ページ分割、検索、並べ替えのオプション
 
-このAPIは、オプションのフィルタリング、ページ分割、検索、並べ替えのためのパラメータも受け付けます。 詳しくは、 [`getOptionsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java#L43-#L46) メソッドをご覧ください。 クエリでは、以下の `Option` フィールドを使用して、結果のフィルタリング、検索、およびソートを行うことができます。
+このAPIは、オプションのフィルタリング、ページ分割、検索、並べ替えのためのパラメータも受け付けます。 詳しくは、 [`getOptionsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java#L43-#L46) メソッドをご覧ください。 クエリでは、以下の `Option` フィールドを使用して、結果のフィルタリング、検索、およびソートを行うことができます：
 
 * フィールドタイプ
 * キー
@@ -190,14 +190,14 @@ java -classpath .:* Options_GET_FromInstance
 | フィルタークエリ                | 説明                       |
 |:----------------------- |:------------------------ |
 | `name eq 'Able'`        | オプション名はAbleと等しくなければならない。 |
-| `fieldType eq 'select'` | オプションの種類は必ず選択すること        |
+| `fieldType eq 'select'` | オプションの種類は必ず選択すること。       |
 
 | ソートクエリ      | 説明          |
 |:----------- |:----------- |
-| `key:desc`  | 名前の降順で並べます。 |
+| `key:desc`  | キーで降順に並べます。 |
 | `name:desc` | 名前の降順で並べます。 |
 
-詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
+詳しくは、[APIクエリパラメーター](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html)をご参照ください。
 
 ## オプションの取得
 
@@ -241,7 +241,7 @@ java -classpath .:* -DoptionId=1234 Option_GET_ById
 
 ## パッチアオプション
 
-cURL と Java `patch` コマンドで既存のオプションを更新します。 `1234` をオプションのIDに置き換えてください。
+cURL と Java `patch` コマンドで、既存のオプションを更新します。 `1234` をオプションのIDに置き換えてください。
 
 ### Option_PATCH_ById.sh
 
@@ -307,4 +307,4 @@ java -classpath .:* -DoptionId=1234 Option_DELETE_ById
    :lines: 8-17
 ```
 
-[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Option` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。
+[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Option` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。

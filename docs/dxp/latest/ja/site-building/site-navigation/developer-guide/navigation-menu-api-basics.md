@@ -7,47 +7,48 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+その後、以下の手順で操作してください：
 
 1. [Categories and Vocabulary API Basics](./liferay-p7s4.zip) をダウンロードし、解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/site-building/site-navigation/developer-guide/liferay-p7s4.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/site-building/site-navigation/developer-guide/liferay-p7s4.zip -O
    ```
 
    ```bash
    unzip liferay-p7s4.zip
    ```
 
-2. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
+2. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 3. cURLスクリプトを使用して、サイトに新しいナビゲーションメニューを追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`NavigationMenu_POST_ToSite.sh`スクリプトを実行します。
 
-    ```bash
-    ./NavigationMenu_POST_ToSite.sh 1234
-    ```
+   ```bash
+   ./NavigationMenu_POST_ToSite.sh 1234
+   ```
 
-    JSONのレスポンスには、新しいナビゲーションメニューが追加されたことが示されています。
+   JSONのレスポンスには、新しいナビゲーションメニューが追加されたことが示されています。
 
-    ```bash
-    "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20129,
-    "name" : "Test Test"
-    },
-    "dateCreated" : "2021-09-09T21:41:31Z",
-    "dateModified" : "2021-09-09T21:41:31Z",
-    "id" : 40131,
-    "name" : "Foo",
-    "navigationMenuItems" : [ ],
-    "siteId" : 20125
+   ```json
+   {
+     "creator" : {
+       "additionalName" : "",
+       "contentType" : "UserAccount",
+       "familyName" : "Test",
+       "givenName" : "Test",
+       "id" : 20129,
+       "name" : "Test Test"
+     },
+     "dateCreated" : "2021-09-09T21:41:31Z",
+     "dateModified" : "2021-09-09T21:41:31Z",
+     "id" : 40131,
+     "name" : "Foo",
+     "navigationMenuItems" : [ ],
+     "siteId" : 20125
+   }
+   ```
 
-    ```
-
-4. ［**Administration Menu**］ &rarr; ［**サイトビルダー**］ &rarr; ［**Navigation Menus**］ に移動して、ナビゲーションメニューアプリケーションに移動します。 新しいナビゲーションメニューが追加されたことを確認してください。
+4. *［Administration Menu］* &rarr; *［サイトビルダー］* &rarr; *［Navigation Menus］*に移動して、ナビゲーションメニューアプリケーションに移動します。 新しいナビゲーションメニューが追加されたことを確認してください。
 
     ![新しいナビゲーションメニューが追加されたことを確認してください。](./navigation-menu-api-basics/images/01.png)
 
@@ -82,7 +83,7 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
 | `-u "test@liferay.com:learn"`                                                  | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -99,7 +100,7 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                                 | 説明                                                                     |
+| 行(省略形）                                                                                 | 説明                                                                     |
 |:-------------------------------------------------------------------------------------- |:---------------------------------------------------------------------- |
 | `NavigationMenuResource.Builder builder = ...`                                         | `Builder`を取得し、`NavigationMenuResource`サービスインスタンスを生成します。                |
 | `NavigationMenuResource navigationMenuResource = builder.authentication(...).build();` | 基本認証を指定し、`NavigationMenuResource`サービスインスタンスを生成します。                     |
@@ -114,7 +115,7 @@ main``メソッドのコメントでは、クラスの実行を実演してい�
 他の例のJavaクラスはこれと類似していますが、異なる`NavigationMenuResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、 [NavigationMenuResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/NavigationMenuResource.java) を参照してください。
+サービスの詳細は、[NavigationMenuResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/NavigationMenuResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`NavigationMenu` RESTサービスを呼び出す例です。
@@ -125,13 +126,13 @@ main``メソッドのコメントでは、クラスの実行を実演してい�
 
 ### NavigationMenus_GET_FromSite.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./NavigationMenus_GET_FromSite.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./navigation-menu-api-basics/resources/liferay-p7s4.zip/curl/NavigationMenus_GET_FromSite.sh
    :language: bash
@@ -139,13 +140,13 @@ main``メソッドのコメントでは、クラスの実行を実演してい�
 
 ### NavigationMenus_GET_FromSite.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DsiteId=1234 NavigationMenus_GET_FromSite
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./navigation-menu-api-basics/resources/liferay-p7s4.zip/java/NavigationMenus_GET_FromSite.java
    :dedent: 1
@@ -179,13 +180,13 @@ java -classpath .:* -DsiteId=1234 NavigationMenus_GET_FromSite
 
 ### NavigationMenu_GET_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_GET_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./navigation-menu-api-basics/resources/liferay-p7s4.zip/java/NavigationMenu_GET_ById.java
    :dedent: 1
@@ -201,13 +202,13 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_GET_ById
 
 ### NavigationMenu_PUT_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./NavigationMenu_PUT_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./navigation-menu-api-basics/resources/liferay-p7s4.zip/curl/NavigationMenu_PUT_ById.sh
    :language: bash
@@ -215,13 +216,13 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_GET_ById
 
 ### NavigationMenu_PUT_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_PUT_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./navigation-menu-api-basics/resources/liferay-p7s4.zip/java/NavigationMenu_PUT_ById.java
    :dedent: 1
@@ -235,13 +236,13 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_PUT_ById
 
 ### NavigationMenu_DELETE_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./NavigationMenu_DELETE_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./navigation-menu-api-basics/resources/liferay-p7s4.zip/curl/NavigationMenu_DELETE_ById.sh
    :language: bash
@@ -255,7 +256,7 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_PUT_ById
 java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_DELETE_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./navigation-menu-api-basics/resources/liferay-p7s4.zip/java/NavigationMenu_DELETE_ById.java
    :dedent: 1

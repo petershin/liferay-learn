@@ -1,21 +1,22 @@
 # WebコンテンツAPIの詳細設定
 
-Liferay DXP RESTサービスを使用すると、サイトの構造化コンテンツを作成・管理することができます。 構造化コンテンツとは、 Webコンテンツストラクチャーを使用する[Webコンテンツ](../web-content-articles/adding-a-basic-web-content-article.md) です。 ストラクチャーは、Webコンテンツの記事に含まれる作成者、概要、内容などの情報を定義します。 ストラクチャーにより、必要な情報がコンテンツにすべて含まれるようになります。 ストラクチャーの詳細については、 [Webコンテンツストラクチャーを理解する](../web-content-structures/understanding-web-content-structures.md)をご覧ください。
+Liferay DXP RESTサービスを使用すると、サイトの構造化コンテンツを作成・管理することができます。 構造化コンテンツとは、Webコンテンツストラクチャーを使用する[Webコンテンツ](../web-content-articles/adding-a-basic-web-content-article.md) です。 ストラクチャーは、Webコンテンツの記事に含まれる作成者、概要、内容などの情報を定義します。 ストラクチャーにより、必要な情報がコンテンツにすべて含まれるようになります。 ストラクチャーの詳細については、 [Webコンテンツストラクチャーを理解する](../web-content-structures/understanding-web-content-structures.md)をご覧ください。
 
-ここでは、いくつかの [cURL](https://curl.haxx.se/) コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、ストラクチャーと構造化コンテンツについて学習していきます。 Liferay DXPでのREST APIの使用については、 [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)をご覧ください。
+ここでは、いくつかの [cURL](https://curl.haxx.se/)コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、ストラクチャーと構造化コンテンツについて学習していきます。 Liferay DXPでのREST APIの使用については、 [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)をご覧ください。
 
 ```{note}
 WebコンテンツAPI の概要については、[WebコンテンツAPIの基本](./web-content-api-basics.md) をご覧ください。
 ```
 
 ## 環境のセットアップ
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、 [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) をダウンロードし、解凍します：
+次に、[サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip)をダウンロードし、解凍してください：
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip -O
+curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip -O
 ```
 
 ```bash
@@ -28,8 +29,8 @@ unzip liferay-m7b2.zip
 
 ### サイトIDを特定します。
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**Configuration**］ &rarr; ［**Site Settings**］ に移動します。
-1. ［プラットフォーム］セクションで、 ［**Site Configuration**］ をクリックします。 Liferay DXPバージョン7.3以前の場合は、 ［**一般**］ タブをクリックします。
+1. サイトメニュー(![Site menu](../../../images/icon-menu.png)）を開き、*［Configuration］* &rarr; *［Site Settings］*に移動します。
+1. ［プラットフォーム］セクションで、*［Site Configuration］*をクリックします。 Liferay DXPバージョン7.3以前の場合は、*一般*タブをクリックします。
 1. ［Site ID］の下でサイト識別子を見つけます。
 
    ![［サイト設定］と［Site Configuration］オプションでサイトIDを特定します。](./advanced-web-content-api/images/05.png)
@@ -38,10 +39,10 @@ unzip liferay-m7b2.zip
 
 ここでは、画像を含むさまざまなコンテンツフィールドを含むWebコンテンツの記事を扱います。 サンプルのWebコンテンツ記事にこれらの画像を追加するには、次の手順に従います。
 
-1. サイトメニュー(![Site menu](../../../images/icon-menu.png))を開き、 ［**コンテンツ & データ**］ &rarr; ［**ドキュメントとメディア**］ に移動します。
-1. **追加** ボタン（![Add](../../../images/icon-add.png)）をクリックし、 ［**複数ファイルのアップロード**］ を選択します。
-1. `foo.png`、`bar.png`、`goo.png`イメージを [サンプルプロジェクトフォルダー](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) からドロップエリアにドラッグ＆ドロップします。
-1. ［**Publish**］ をクリックします。
+1. サイトメニュー(![Site menu](../../../images/icon-menu.png))を開き、*［コンテンツ & データ］* &rarr; *［ドキュメントとメディア］*に移動します。
+1. *追加*ボタン(![Add](../../../images/icon-add.png)）をクリックし、*［複数ファイルのアップロード］*を選択します。
+1. `foo.png`、`bar.png`、`goo.png`イメージを[サンプルプロジェクトフォルダー](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip)からドロップエリアにドラッグ＆ドロップします。
+1. *［公開］*をクリックします。
 
 また、 `Document_POST_ToSite.sh`スクリプトを使って、REST API`ドキュメント`サービスにより、それぞれの画像を別々にポストすることも可能です。
 
@@ -56,9 +57,9 @@ curl \
 
 この例では、 相対画像ファイルパスとサイトIDをパラメーターとして使用して、`foo.png` の画像を投稿しています。
 
-| メソッド | サービス     | エンドポイント                      |
-|:---- |:-------- |:---------------------------- |
-| GET  | `ドキュメント` | `/v1.0/sites/${2}/documents` |
+| メソッド | サービス       | エンドポイント                      |
+|:---- |:---------- |:---------------------------- |
+| GET  | `Document` | `/v1.0/sites/${2}/documents` |
 
 ```bash
 ./Document_POST_ImageToSite.sh "../images/foo.png" 20125
@@ -91,12 +92,12 @@ REST APIを使ったドキュメントの操作については、 [ドキュメ�
 REST APIを使用してプログラム的にWebコンテンツストラクチャーを作成することはできません。
 ```
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**コンテンツ & データ**］ &rarr; ［**Webコンテンツ**］ に移動します。
-1. ［**ストラクチャー**］ タブを選択し、 **追加** ボタン（![Add](../../../images/icon-add.png)）をクリックします。
+1. サイトメニュー(![Site menu](../../../images/icon-menu.png)）を開き、*［Content & Data］* &rarr; *［Web Content］*に移動します。
+1. *［ストラクチャー］*タブを選択し、*追加*ボタン(![Add](../../../images/icon-add.png)）をクリックします。
 1. 以下の内容で、新しいWebコンテンツストラクチャーを作成します。
 
     - 名前： `Foo`
-    - フィールド（この順で）：`Text`、`Image`、`Date`、`Single Selection`
+    - フィールド(この順で）：`Text`、`Image`、`Date`、`Single Selection`
 
 1. ［Single Selection］フィールドには、これらの値を使用します。
 
@@ -105,16 +106,16 @@ REST APIを使用してプログラム的にWebコンテンツストラクチャ
 
    ![ユーザーインターフェースで新しいWebコンテンツストラクチャーを作成します。](./advanced-web-content-api/images/01.png)
 
-1. 各ストラクチャー項目をクリックし、そのフィールド参照値を更新します（下表参照）。 フィールド参照値は、サイドバーの［Advanced］セクションにあります。
+1. 各ストラクチャー項目をクリックし、そのフィールド参照値を更新します(下表参照）。 フィールド参照値は、サイドバーの［Advanced］セクションにあります。
 
-1. ［**保存**］ をクリックします。
+1. *［Save］* をクリックします。
 
-  | 項目                     | 新規フィールド参照値                 |
-  |:---------------------- |:-------------------------- |
-  | テキスト                   | `TextReference`            |
-  | Image (Automatic Copy) | `ImageReference`           |
-  | Date (Automatic Copy)  | `DateReference`            |
-  | 選択                     | `SingleSelectionReference` |
+  | 項目       | 新規フィールド参照値                 |
+  |:-------- |:-------------------------- |
+  | テキストボックス | `TextReference`            |
+  | 画像       | `ImageReference`           |
+  | 日付       | `DateReference`            |
+  | 選択       | `SingleSelectionReference` |
 
   ![ストラクチャー項目フィールド参照値を更新する。](./advanced-web-content-api/images/03.gif)
 
@@ -128,44 +129,44 @@ REST APIを使用してプログラム的にWeb コンテンツ テンプレー�
 
 ストラクチャーの `image`フィールドを含むWebコンテンツテンプレートを作成します。
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**コンテンツ & データ**］ &rarr; ［**Webコンテンツ**］ に移動します。
-1. ［**Templates**］ タブを選択し、 **追加** ボタン（![Add](../../../images/icon-add.png)）をクリックします。
-1. テンプレート名として **Foo** をタイプします。
-1. ［Properties］サイドパネルから、［Structure］フィールドの横にある **追加** ボタン(![Add](../../../images/icon-plus.png))をクリックします。
+1. サイトメニュー(![Site menu](../../../images/icon-menu.png)）を開き、*［Content & Data］* &rarr; *［Web Content］*に移動します。
+1. *［Templates］*タブを選択し、*追加*ボタン(![Add](../../../images/icon-add.png)）をクリックします。
+1. テンプレート名として_Foo_をタイプします。
+1. ［Properties］サイドパネルから、［Structure］フィールドの横にある*追加*ボタン(![Add](../../../images/icon-plus.png))をクリックします。
 
    ![ストラクチャー項目の横にある追加ボタンをクリックすると、テンプレートがストラクチャーにリンクされます。](./advanced-web-content-api/images/06.png)
 
-1. **Foo** Webコンテンツストラクチャーを [前のセクション](#create-the-structure-sample) から選択します。
-1. FreeMarkerエディターに含まれるデフォルトの`<#-- --> `ブロックコメントを削除します。
-1. サイドバーで、 **Elements**(![Elements](../../../images/icon-list-ul.png))をクリックします。
-1. ［Fields］グループで、 ［**Text**］ 、 ［**Image**］ 、 ［**Date**］ 、 ［**Single Selection**］ フィールドをクリックし、自分のテンプレートに追加します。 FreeMarkerエディターで、各フィールドが新しい行で始まることを確認します。
+1. _Foo_Webコンテンツストラクチャーを[前のセクション](#create-the-structure-sample)から選択します。
+1. FreeMarkerエディターに含まれるデフォルトの`<#-- -->`ブロックコメントを削除します。
+1. サイドバーで、 *Elements* (![Elements](../../../images/icon-list-ul.png))をクリックします。
+1. ［Fields］グループで、*［Text］*、*［Image］*、*［Date］*、*［Single Selection］*フィールドをクリックし、自分のテンプレートに追加します。 FreeMarkerエディターで、各フィールドが新しい行で始まることを確認します。
 
    ![FreeMarkerエディターでWebコンテンツテンプレートのフィールドを編集します。](./advanced-web-content-api/images/07.gif)
 
-1. ［**保存**］ をクリックします。
+1. *［Save］* をクリックします。
 
 ストラクチャーの`image`フィールドを含まない第二のWebコンテンツテンプレートを作成します。
 
-1. ［Templates］タブで、 **アクション** ボタン(![Actions](../../../images/icon-actions.png))をクリックし、 ［**Copy**］ を選択します。
+1. ［Templates］タブで、*アクション*ボタン(![Actions](../../../images/icon-actions.png))をクリックし、*［Copy］*を選択します。
 
-   ![**Actions** メニューを使用して、最初のテンプレートをコピーします。](./advanced-web-content-api/images/10.png)
+   ![*Actions*メニューを使用して、最初のテンプレートをコピーします。](./advanced-web-content-api/images/10.png)
 
-1. テンプレートの名前を **Goo** に更新し、 ［**Copy**］ をクリックします。
+1. テンプレートの名前を_Goo_に更新し、 *［Copy］*をクリックします。
 
    ![テンプレートの名前を"Goo"に更新します。](./advanced-web-content-api/images/09.png)
 
-1. ［テンプレート］タブで、新規の ［**Goo**］ テンプレートをクリックします。
+1. ［テンプレート］タブで、新規の_［Goo］_テンプレートをクリックします。
 1. テンプレートエディターで、FreeMarkerスクリプトから画像情報 `<#if (ImageReference.getData())></#if>`を削除します。
 
    ![テンプレートから画像情報を削除します。](./advanced-web-content-api/images/11.gif)
 
-1. ［**保存**］ をクリックします。
+1. *［Save］* をクリックします。
 
  詳しくは、 [Webコンテンツテンプレートの作成](../web-content-templates/creating-web-content-templates.md)を参照してください。
 
 ## WebコンテンツストラクチャーIDの取得
 
-既存のすべてのサイト構造を返すには、 `ContentStructures_GET_FromSite.sh`スクリプトを使用します。 このスクリプトでは、`ContentStructure`サービスが`GET` HTTPメソッドおよび [サイトID](#identify-the-site-id) パラメーターと共に使用されています。
+既存のすべてのサイト構造を返すには、 `ContentStructures_GET_FromSite.sh`スクリプトを使用します。 このスクリプトでは、`ContentStructure`サービスが`GET` HTTPメソッドおよび[サイトID](#identify-the-site-id)パラメーターと共に使用されています。
 
 | メソッド | サービス               | エンドポイント                               |
 |:---- |:------------------ |:------------------------------------- |
@@ -268,11 +269,11 @@ REST APIを使用してプログラム的にWeb コンテンツ テンプレー�
 
 ## 画像IDの取得
 
-[以前投稿した](#adding-the-images-to-liferay-dxp) 画像のIDを取得するには、`Documents_GET_FromSite.sh`スクリプトを使用します。 このスクリプトでは、 `Document`サービスが、 `GET` HTTPメソッドおよび [サイトID](#identify-the-site-id) パラメーターと共に使用されています。
+[以前投稿した](#adding-the-images-to-liferay-dxp)画像のIDを取得するには、`Documents_GET_FromSite.sh`スクリプトを使用します。 このスクリプトでは、 `Document`サービスが、 `GET` HTTPメソッドおよび[サイトID](#identify-the-site-id)パラメーターと共に使用されています。
 
-| メソッド | サービス     | エンドポイント                      |
-|:---- |:-------- |:---------------------------- |
-| GET  | `ドキュメント` | `/v1.0/sites/${1}/documents` |
+| メソッド | サービス       | エンドポイント                      |
+|:---- |:---------- |:---------------------------- |
+| GET  | `Document` | `/v1.0/sites/${1}/documents` |
 
 ```bash
 ./Documents_GET_FromSite.sh 20125
@@ -284,7 +285,7 @@ REST APIを使用してプログラム的にWeb コンテンツ テンプレー�
 
 ## Webコンテンツテンプレートの取得
 
-`ContentTemplates_GET_FromSite`スクリプトを使用して、サイトのすべてのテンプレートを取得します。 このスクリプトでは、`ContentTemplate` サービスが、 `GET` HTTPメソッドと [サイトID](#identify-the-site-id) パラメーターと共に使用されています。
+`ContentTemplates_GET_FromSite`スクリプトを使用して、サイトのすべてのテンプレートを取得します。 このスクリプトでは、`ContentTemplate` サービスが、 `GET` HTTPメソッドと[サイトID](#identify-the-site-id)パラメーターと共に使用されています。
 
 | メソッド | サービス              | エンドポイント                              |
 |:---- |:----------------- |:------------------------------------ |
@@ -305,7 +306,7 @@ REST APIを使用してプログラム的にWeb コンテンツ テンプレー�
 - `templateScript`には、`programmingLanguage`で指定された言語のスクリプトが含まれていません。 この例では、FreeMarkerが言語となります。
 - `Foo`テンプレートの`templateScript`フィールドには、`<#if (ImageReference.getData())></#if>`で参照される画像フィールドが含まれています。 `Goo`テンプレートの`templateScript`フィールドには、この参照は含まれていません。
 
-```bash
+```json
 {
   "actions" : {
     "get" : {
@@ -374,7 +375,7 @@ REST APIを使用してプログラム的にWeb コンテンツ テンプレー�
 
 ### IDによるWebコンテンツテンプレートの取得
 
-[上記の](#getting-the-web-content-templates) スクリプトは、サイトのすべてのWebコンテンツテンプレートを収集しますが、そのIDを参照することで特定のテンプレートに関する情報を取得することができます。 このためには、 `ContentTemplate_GET_ById.sh`cURLスクリプトを使用してください。 このスクリプトは、サイトIDとテンプレートIDのパラメーターを使用します。
+[上記の](#getting-the-web-content-templates)スクリプトは、サイトのすべてのWebコンテンツテンプレートを収集しますが、そのIDを参照することで特定のテンプレートに関する情報を取得することができます。 このためには、 `ContentTemplate_GET_ById.sh`cURLスクリプトを使用してください。 このスクリプトは、サイトIDとテンプレートIDのパラメーターを使用します。
 
 | メソッド | サービス              | エンドポイント                                   |
 |:---- |:----------------- |:----------------------------------------- |
@@ -391,7 +392,7 @@ REST APIを使用してプログラム的にWeb コンテンツ テンプレー�
 
 ## Webコンテンツの記事を投稿する
 
-`StructuredContent_POST_ToSite.sh`cURLスクリプトは、`POST`HTTPメソッドと [以前に作成した](#create-the-sample-structure) サンプルストラクチャーを使って新規Webコンテンツの記事を作成します。 このスクリプトでは、 [サイトID](#identifying-the-site-id) 、ストラクチャーID、 foo.pngの [画像ID](#getting-the-images-ids) をパラメーターとして使用しています。
+`StructuredContent_POST_ToSite.sh`cURLスクリプトは、`POST`HTTPメソッドと[以前に作成した](#create-the-sample-structure)サンプルストラクチャーを使って新規Webコンテンツの記事を作成します。 このスクリプトでは、[サイトID](#identifying-the-site-id)、ストラクチャーID、 foo.pngの[画像ID](#getting-the-images-ids)をパラメーターとして使用しています。
 
 | メソッド | サービス                | エンドポイント                                    |
 |:---- |:------------------- |:------------------------------------------ |
@@ -409,7 +410,7 @@ cURLスクリプトのパラメーター：
 | $2       | `contentStructureId` |
 | $3       | 画像`id`               |
 
-Liferay DXPで新規Webコンテンツの記事を見つけるには、 **サイトメニュー**(![Site menu](../../../images/icon-menu.png))を開いて、 ［**コンテンツ & データ**］ &rarr; ［**Webコンテンツ**］ に移動します。
+Liferay DXPで新規Webコンテンツの記事を見つけるには、*サイトメニュー* (![Site menu](../../../images/icon-menu.png))を開いて、*［コンテンツ & データ］* &rarr; *［Webコンテンツ］*に移動します。
 
 ![POST HTTPメソッドによるWebコンテンツ記事。](./advanced-web-content-api/images/08.png)
 
@@ -422,7 +423,7 @@ Liferay DXPで新規Webコンテンツの記事を見つけるには、 **サイ
   - `DateReference`内の日付情報。
   - `SingleSelectionReference`内のラジオボタンコントロール。
 
-```bash
+```json
 {
   "actions" : {
     ...
@@ -528,7 +529,7 @@ Note: PATCH option information will be included in a follow-up (see LPS-137932).
 Webコンテンツの記事は、特定のテンプレートにリンクされているわけではありません。 テンプレートは、Webコンテンツのレンダリング方法を定義するもので、同じWebコンテンツに異なるテンプレートを使用することができます。 詳細については、 [Webコンテンツストラクチャーを理解する](../web-content-structures/understanding-web-content-structures.md)をご覧ください。
 
 ```{tip}
-Webコンテンツの記事は特定のテンプレートにリンクされているわけではないので、新しい記事を`POST`するときにテンプレートを指定することはできません（HTTPの`POST`メソッドはテンプレートを記述した`renderedContents`セクションを無視します）。
+Webコンテンツの記事は特定のテンプレートにリンクされているわけではないので、新しい記事を`POST`するときにテンプレートを指定することはできません(HTTPの`POST`メソッドはテンプレートを記述した`renderedContents`セクションを無視します）。
 ```
 
 スクリプト`./StructuredContentRendered_GET_ById.sh`は、選択したWebコンテンツとテンプレートを使ってWebコンテンツをレンダリングします。 このスクリプトでは、`GET`HTTPメソッドを `StructuredContent`サービスで使用します。

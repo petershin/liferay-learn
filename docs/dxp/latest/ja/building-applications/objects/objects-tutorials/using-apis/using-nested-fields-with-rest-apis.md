@@ -1,97 +1,100 @@
 # REST APIでネストしたフィールドの使用
 
-カスタムオブジェクトAPIでは、`nestedFields`パラメーターを使用すると、1つのGET要求で複数レベルの関連オブジェクトを返すことができます。 また、`nestedFieldsDepth`パラメーターを使用して、クエリに含まれるオブジェクトエントリーの深さ（`0-5`）を決定できます。 ここでは、cURLスクリプトを使用して、ネストされたフィールドを持つオブジェクトAPIを呼び出すことになります。
+{bdg-secondary}`利用可能 Liferay 7.4 U69+/GA69+`
+
+カスタムオブジェクトAPIでは、 `nestedFields` パラメータを使用すると、1つのGETリクエストで複数レベルの関連オブジェクトを返すことができます。 `nestedFieldsDepth` パラメータは、クエリに含まれるオブジェクトエントリの深さを決定する： `0-5`.
 
 ```{tip}
-ネストされたフィールドは、通常、複数のリクエストを必要とする情報を取得するのに便利な方法です。 こうすることで、関連するエンティティIDで新たにリクエストを送ることなく、エンティティ自身から関連するエンティティの全情報を得られます。
+`nestedFields`パラメータは、通常複数のリクエストを必要とする情報を取得するのに便利な方法です。 これを使えば、あるエントリーとその関連エントリーを一緒に取り出すことができます。 関連するエントリのみを返すために、Liferayは専用の[関係API](./../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を提供します。 [関係性REST APIの使用](./using-relationship-rest-apis.md)を参照し、紹介します。
 ```
 
-先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
+[](#setting-up-a-liferay-instance) Liferay 7.4 のインスタンスを新規に立ち上げ、  提供されたチュートリアルコードを準備します。 [](#preparing-the-sample-code) 次に、スクリプトを実行して関連エントリーを作成し、 `nestedFields` パラメータを使用してクエリーを実行します。
 
 ## Liferayインスタンスのセットアップ
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、下記の手順で、3つのオブジェクトを[作成](../../creating-and-managing-objects/creating-objects.md)します。
+次に、3つのオブジェクトを[作成](../../creating-and-managing-objects/creating-objects.md)してください：
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブで ［**オブジェクト**］ をクリックします。
+1. [グローバルメニュー](./../../.../.../images/icon-applications-menu.png) を開き、[コントロールパネル] タブに移動し、[オブジェクト]をクリックします。
 
-1. 3つのオブジェクトドラフトを作成します。
+1. オブジェクトの下書きを3つ作成します。
 
-   第一オブジェクト：
+   最初のオブジェクトです：
 
-      | 項目 | 値 |
-      | :--- | :--- |
-      | ラベル | `Able` |
-      | 複数形のラベル | `Ables` |
-      | 名前 | `Able` |
+   | フィールド｜値｜の3つ
+   | :--- | :--- |
+   | ラベル | `Able` |
+   | 複数形ラベル｜`Ables`｜(アブルス
+   | 名前 | `Able` |
 
-  第二オブジェクト：
+   第2オブジェクト
 
-      | 項目 | 値 |
-      | :--- | :--- |
-      | ラベル | `Baker` |
-      | 複数形のラベル | `Bakers` |
-      | 名前 | `Baker` |
+   | フィールド｜値｜の3つ
+   | :--- | :--- |
+   | ラベル | `Baker` |
+   | 複数形ラベル | `ベーカーズ`｜Bakers
+   | 名前 | `Baker` |
 
-   第三オブジェクト：
+   第3のオブジェクト
 
-      | 項目 | 値 |
-      | :--- | :--- |
-      | ラベル | `Charlie` |
-      | 複数形のラベル | `Charlies` |
-      | 名前 | `Charlie` |
+   | フィールド｜値｜の3つ
+   | :--- | :--- |
+   | ラベル｜`Charlie`｜(チャーリー
+   
+   | 名前 | `Charlie`
 
-1. 各オブジェクトドラフトに以下のテキストフィールドを追加します。
+1. 各オブジェクトのドラフトに`name`テキストフィールドを追加します。
 
-   | ラベル | 項目名 | 種類 | 必須 |
+   | ラベル｜フィールド名｜タイプ｜必須｜を追加する。
    | :--- | :--- | :--- | :--- |
-   | `Name` | `name` | Text | &#10004; |
+   | `名前`｜テキスト｜ &#10004; |
 
-1. 以下の関連を定義します。
+1. 次の関係を定義する。
 
-   Ableの場合：
+   エイブル用です：
 
-      | ラベル | リレーション名 | 種類 | オブジェクト |
-      | :--- | :--- | :--- | :--- |
-      | `Able to Baker` | `ableToBaker` | 1対多 | Baker |
+   | ラベル｜リレーションシップ名｜タイプ｜オブジェクト｜です。
+   | :--- | :--- | :--- | :--- |
+   | (1)パン屋さん｜(2)パン屋さん｜(3)パン屋さん｜(4)一から十まで｜(5)パン屋さん｜(6)
 
-   Bakerの場合：
+   ベーカー用：
 
-      | ラベル | リレーション名 | 種類 | オブジェクト |
-      | :--- | :--- | :--- | :--- |
-      | `Baker to Charlie` | `bakerToCharlie` | 1対多 | Charlie |
+   | ラベル｜リレーションシップ名｜タイプ｜オブジェクト｜の3つからなる。
+   | :--- | :--- | :--- | :--- |
+   | パン屋からチャーリーへ」｜「パン屋からチャーリーへ」｜「一対多」｜「チャーリー」｜「パン屋からチャーリーへ」｜「パン屋からチャーリー」へ
 
-1. 各オブジェクトを [公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) します。
+1. 各オブジェクトを [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) します。
 
-公開後は、ヘッドレスAPIで各オブジェクトにアクセスすることができます。
+公開されると、Headless APIで各オブジェクトにアクセスできるようになります。
 
-## サンプルコードを準備する
+## サンプルコードの準備
 
-以下のコマンドを実行して、提供されたサンプルコードをダウンロードし、解凍してください。
+以下のコマンドを実行し、提供されたサンプルコードをダウンロードし、解凍してください：
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/ja/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
+curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
 ```
 
 ```bash
 unzip liferay-w4s7.zip
 ```
 
-サンプルコードには、各オブジェクトに対するPOSTコマンドと`Charlie`に対するGETコマンドが含まれています。
+サンプルコードには、各オブジェクトの POST コマンドと、 `Charlie`の GET コマンドが含まれています。
 
 ```{tip}
-サイトオブジェクトと会社オブジェクトの両方に対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*［RESTアプリケーション］*の下に表示されます。
+サイトオブジェクトとカンパニーオブジェクトに対して生成されるAPIの完全なリストは、[オブジェクトヘッドレスフレームワーク統合](../../understanding-object-integrations/headless-framework-integration.md) を参照してください。 カスタムオブジェクトの API は Liferay API Explorer を介して `[server]:[port]/o/api` (例: `localhost:8080/o/api`) で閲覧、テストすることができます。 REST Applications*をクリックし、APIを選択します。
 ```
 
 ## サンプルコードを使用する
 
-次の手順に従って、関連するオブジェクトエントリーを追加し、照会します。
+以下の手順で、関連オブジェクトのエントリーを追加し、照会します：
 
 1. `liferay-w4s7`プロジェクトの`curl`フォルダに移動します。
 
    ```bash
-   cd liferay-p8n6/curl
+   cd liferay-w4s7/curl
    ```
 
 1. `Able_POST_ToCompany`を実行し、`Able`エントリーを作成します。
@@ -102,7 +105,7 @@ unzip liferay-w4s7.zip
 
    次のPOSTコマンドで使用するために、最初のエントリーのIDをコピーします。
 
-   ```bash
+   ```json
    {
      "id" : 41969,
      ...
@@ -130,7 +133,7 @@ unzip liferay-w4s7.zip
 
    これにより、指定された`Able`エントリーに関連する`Baker`エントリーが作成されます。 次のPOSTコマンドで使用するために、最初のBakerエントリーのIDをコピーします。
 
-   ```bash
+   ```json
    {
      "id" : 41975,
      ...
@@ -161,7 +164,7 @@ unzip liferay-w4s7.zip
 
    これにより、直前の`Baker`エントリーに関連する`Charlie`エントリーが作成されます。 次のGETコマンドで使用するために、最初のエントリーのIDをコピーします。
 
-   ```bash
+   ```json
    {
      "id" : 41981,
      ...
@@ -190,9 +193,9 @@ unzip liferay-w4s7.zip
    ./Charlie_GET_ById.sh [charlie-entry-id]
    ```
 
-   これは、ネストされたフィールドを使用してエントリーに照会し、関連するオブジェクトの3つのレベルすべてについてスキーマを返します。
+   これは、ネストされたフィールドを使用してエントリに問い合わせ、関連するオブジェクトの3つのレベルすべてについてスキーマを返します。
 
-   ```bash
+   ```json
    {
      "r_bakerToCharlie_c_baker" : {
        ...
@@ -220,7 +223,7 @@ unzip liferay-w4s7.zip
 
 提供されたGETメソッドは、`nestedFields` と `nestedFieldsDepth`パラメーターを持つURLを呼び出します。
 
-`nestedFields`：クエリーに含まれるエントリーの種類を決定します（例: `able,baker`）。
+`nestedFields`: クエリーに含まれるエントリーの種類を決定します(例： `ableToBaker,bakerToCharlie`）。
 
 `nestedFieldsDepth`：取り込みたいエントリーの深さを決定します。0〜5の間で設定可能です。
 

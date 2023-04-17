@@ -3,7 +3,6 @@ toc:
 - ./getting-started.md
 - ./touchpoints.md
 - ./people.md
-- ./commerce.md
 - ./optimization.md
 - ./apis.md
 - ./workspace-data.md

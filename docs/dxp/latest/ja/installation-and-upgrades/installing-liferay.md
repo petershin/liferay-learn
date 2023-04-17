@@ -31,9 +31,9 @@ Liferay Tomcatバンドルは、任意のサーバーに抽出、構成、およ
 もちろん、オンプレミスでサポートされている任意のアプリケーションサーバーにLiferayをいつでもインストールできます。
 
 ```{note}
-エンタープライズ契約者は、Liferay Cloud上で [サービスとしてのLiferay DXPをデプロイ](https://learn.liferay.com/liferay-cloud/latest/ja/using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.html) できます。 Liferay Cloudは、インフラコスト（ハードウェア、電気代）を削減し、より多くの顧客を処理するために高速に拡張し、市場投入までの時間を短縮し、簡単に使用することができます。
+エンタープライズ契約者は、Liferay Cloud上で[サービスとしてLiferay DXPをデプロイ](https://learn.liferay.com/en/w/liferay-cloud/using-the-liferay-dxp-service)できます。 Liferay Cloudは、インフラコスト(ハードウェア、電気代）を削減し、より多くの顧客を処理するために高速に拡張し、市場投入までの時間を短縮し、簡単に使用することができます。
 
-Liferay Cloudにご興味のある方は、Liferay Cloud [製品情報](https://www.liferay.com/products/dxp-cloud) をご覧いただくか、Liferayの担当者にお問い合わせください。
+Liferay Cloudにご興味のある方は、Liferay Cloud [製品情報](https://www.liferay.com/products/dxp-cloud)をご覧いただくか、Liferayの担当者にお問い合わせください。
 ```
 
 自分のマシンでLiferayを開発したい場合は、次の便利なオプションを検討してください。
@@ -43,7 +43,7 @@ Liferay Cloudにご興味のある方は、Liferay Cloud [製品情報](https://
 
 ## Dockerイメージ
 
-LiferayのDockerイメージは、Liferayの使用を開始するための最速の方法です。 イメージには、Tomcatアプリケーションサーバーに事前インストールされたLiferayが付属しています。 まずは、 [Liferay Dockerイメージの使用](./installing-liferay/using-liferay-docker-images.md) にアクセスしてください。
+LiferayのDockerイメージは、Liferayの使用を開始するための最速の方法です。 イメージには、Tomcatアプリケーションサーバーに事前インストールされたLiferayが付属しています。 まずは、 [Using Liferay Docker Images](./installing-liferay/using-liferay-docker-images.md)にアクセスしてください。
 
 ## Liferay Tomcat バンドル
 
@@ -52,21 +52,21 @@ Liferay Tomcatバンドルは、LiferayがTomcatに事前インストールさ�
 バンドルを開始するには、[Installing a Liferay Tomcat Bundle](./installing-liferay/installing-a-liferay-tomcat-bundle.md)を参照してください。
 
 ```{warning}
-DockerイメージとTomcatバンドルでは、Liferayはデフォルトで組み込みHSQLデータベースを使用するように構成されています。 デモ目的以外では、フル機能の [サポートされているRDBMS](https://help.liferay.com/hc/ja/articles/360049238151) を使用することをお勧めします。 構成手順については、[Database Configurations](./reference/database-configurations.md)を参照してください。
+DockerイメージとTomcatバンドルでは、Liferayはデフォルトで組み込みHSQLデータベースを使用するように構成されています。 デモ目的以外では、フル機能の[サポートされているRDBMS](https://help.liferay.com/hc/en-us/articles/360049238151)を使用することをお勧めします。 構成手順については、[Database Configurations](./reference/database-configurations.md)を参照してください。
 ```
 
 ## アプリケーションサーバーへのLiferayのインストール
 
-Liferayは、 [サポートされている任意のアプリケーションサーバー](https://help.liferay.com/hc/ja/articles/360049238151) にインストールできます。 これは通常、DevOpsおよび高可用性環境で使用する最も実用的なインストールタイプです。
+Liferayは、[サポートされている任意のアプリケーションサーバー](https://help.liferay.com/hc/en-us/articles/360049238151)にインストールできます。 これは通常、DevOpsおよび高可用性環境で使用する最も実用的なインストールタイプです。
 
 開始するには、
 
-1. [互換性マトリックス](https://help.liferay.com/hc/ja/articles/360049238151) からサポートされているアプリケーションサーバーを選択します。
+1. [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360049238151)からサポートされているアプリケーションサーバーを選択します。
 1. [アプリケーションサーバー](./installing-liferay/installing-liferay-on-an-application-server.md)にLiferayをインストールするための手順に従います。
 
 ## 次のステップ
 
-Liferayをインストールした後、 [Liferayのセットアップ](./setting-up-liferay.md) に進み、次のオプションを構成します。
+Liferayをインストールした後、[Setting Up Liferay](./setting-up-liferay.md)に進み、次のオプションを構成します。
 
 * 検索
 * ローカライズ

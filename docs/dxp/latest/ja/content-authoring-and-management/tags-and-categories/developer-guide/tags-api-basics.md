@@ -7,47 +7,49 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+その後、以下の手順で操作してください：
 
-1. [Tags API Basics](./liferay-r7u9.zip) をダウンロードし、解凍してください。
+1. [Tags API Basics](./liferay-r7u9.zip)をダウンロードし、解凍する。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
+   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
    ```
 
    ```bash
    unzip liferay-r7u9.zip
    ```
 
-1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
+1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 1. cURLスクリプトを使用して、サイトに新しいタグを追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`Keyword_POST_ToSite.sh`スクリプトを実行します。
 
-    ```bash
-    ./Keyword_POST_ToSite.sh 1234
-    ```
+   ```bash
+   ./Keyword_POST_ToSite.sh 1234
+   ```
 
-    JSON応答では、新しいタグが追加されたことを示しています。
+   JSON応答では、新しいタグが追加されたことを示しています。
 
-    ```bash
-   "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20129,
-    "name" : "Test Test",
-    "profileURL" : "/web/test"
-   },
-   "dateCreated" : "2021-09-09T21:15:46Z",
-   "dateModified" : "2021-09-09T21:15:46Z",
-   "id" : 40130,
-   "keywordUsageCount" : 0,
-   "name" : "foo",
-   "siteId" : 20125
-    ```
+   ```json
+   {
+     "creator" : {
+       "additionalName" : "",
+       "contentType" : "UserAccount",
+       "familyName" : "Test",
+       "givenName" : "Test",
+       "id" : 20129,
+       "name" : "Test Test",
+       "profileURL" : "/web/test"
+     },
+     "dateCreated" : "2021-09-09T21:15:46Z",
+     "dateModified" : "2021-09-09T21:15:46Z",
+     "id" : 40130,
+     "keywordUsageCount" : 0,
+     "name" : "foo",
+     "siteId" : 20125
+   }
+   ```
 
-1. ［**Administration Menu**］ &rarr; ［**カテゴリー設定**］ &rarr; ［**Tags**］ に移動して、タグアプリケーションに移動します。 新しいタグが追加されたことを確認してください。
+1. *［Administration Menu］* &rarr; *［カテゴリー設定］* &rarr; *［Tags］*に移動して、タグアプリケーションに移動します。 新しいタグが追加されたことを確認してください。
 
     ![新しいタグが追加されたことを確認してください。](./tags-api-basics/images/01.png)
 
@@ -82,7 +84,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 | `-u "test@liferay.com:learn"`                                                | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのためにベーシック認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使ったReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](.../.../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)経由でユーザーを認証する必要があります。 OAuth2を使用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md)をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -99,7 +101,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行（省略形）                                                                   | 説明                                                       |
+| 行(省略形）                                                                   | 説明                                                       |
 |:------------------------------------------------------------------------ |:-------------------------------------------------------- |
 | `KeywordResource.Builder builder = ...`                                  | `Builder`を取得し、`KeywordResource`サービスインスタンスを生成します。         |
 | `KeywordResource keywordResource = builder.authentication(...).build();` | 基本認証を指定し、`KeywordResource`サービスインスタンスを生成します。              |
@@ -114,7 +116,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 他の例のJavaクラスはこれと類似していますが、異なる`KeywordResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、 [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) を参照してください。
+サービスの詳細は、[KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`Keyword` RESTサービスを呼び出す例です。
@@ -125,13 +127,13 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 ### Keywords_GET_FromSite.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Keywords_GET_FromSite.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/curl/Keywords_GET_FromSite.sh
    :language: bash
@@ -139,13 +141,13 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 ### Keywords_GET_FromSite.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/java/Keywords_GET_FromSite.java
    :dedent: 1
@@ -160,7 +162,7 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 次のcURLまたはJavaコマンドを使用して、特定のタグを取得します。 `1234`をタグのIDに置き換えてください。
 
 ```{tip}
-``Keywords_GET_FromSite.[java|sh]`` を使用して、サイトの ``Keyword`` IDを取得します。
+``Keywords_GET_FromSite.[java|sh]``を使用して、サイトの``Keyword`` IDを取得します。
 ```
 
 ### Keyword_GET_ById.sh
@@ -179,13 +181,13 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 
 ### Keyword_GET_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/java/Keyword_GET_ById.java
    :dedent: 1
@@ -201,13 +203,13 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
 
 ### Keyword_PUT_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Keyword_PUT_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/curl/Keyword_PUT_ById.sh
    :language: bash
@@ -215,13 +217,13 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
 
 ### Keyword_PUT_ById.java
 
-コマンド:
+コマンド：
 
 ```bash
 java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/java/Keyword_PUT_ById.java
    :dedent: 1
@@ -235,13 +237,13 @@ java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
 
 ### Keyword_DELETE_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Keyword_DELETE_ById.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/curl/Keyword_DELETE_ById.sh
    :language: bash
@@ -255,7 +257,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
 java -classpath .:* -DkeywordId=1234 Keyword_DELETE_ById
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./tags-api-basics/resources/liferay-r7u9.zip/java/Keyword_DELETE_ById.java
    :dedent: 1

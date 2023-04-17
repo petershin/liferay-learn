@@ -30,7 +30,7 @@ Analytics Cloudは、データを俯瞰的に見ることも、平面レベル�
 
 ## 自社サイトに関するアナリティクス
 
-大まかに言えば、Analytics Cloudのレポートは、サイト全体のデータを1つの包括的なダッシュボードに集約します。 Liferay DXPで[サイト構築](https://learn.liferay.com/dxp/latest/en/site-building/introduction-to-site-building.html)や[ページ作成](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages.html)を行うと、サイトへのトラフィックの流れが分かってきます。 もっとも人気のあるページのランキングを確認できます。
+大まかに言えば、Analytics Cloudのレポートは、サイト全体のデータを1つの包括的なダッシュボードに集約します。 Liferay DXPで [サイト構築の概要](https://learn.liferay.com/dxp/latest/ja/site-building/introduction-to-site-building.html) や [ページの作成](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages.html) を行うと、サイトへのトラフィックの流れが分かってきます。 もっとも人気のあるページのランキングを確認できます。
 
 ![サイト全体のレポートでは、サイトのアナリティクスを俯瞰的に見ることができます。](./getting-started/images/01.png)
 
@@ -66,7 +66,7 @@ Analytics Cloudにはアセットに関する次の情報が表示されます�
 
 ## サイトにエンゲージする人々についてのアナリティクス
 
-Analytics Cloudは、訪問者に関するグローバルなデータを表示します。 例えば、サイト上でアクティブな訪問者の総数や、個人のさまざまなグループ( _セグメント_）が求めているトピックを確認できます。
+Analytics Cloudは、訪問者に関するグローバルなデータを表示します。 例えば、サイト上でアクティブな訪問者の総数や、個人のさまざまなグループ(**セグメント**）が求めているトピックを確認できます。
 
 ![メンバーアナリティクスは、訪問者全体に関するデータを表示します。](./getting-started/images/04.png)
 

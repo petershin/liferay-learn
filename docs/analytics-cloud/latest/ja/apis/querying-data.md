@@ -162,4 +162,4 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 * `キーワード` (文字列）：ページのタイトルやURL情報にマッチさせるキーワード。
 * `rangeKey` (整数）：データのグループ化に使用される範囲。 設定可能な値は、0(過去24時間のデータ）、1(昨日のデータ）、7(過去7日間のデータ）、28(過去28日間のデータ）、30(初期値、過去30日間のデータ）、90(過去90日間のデータ）です。
 * `sortMetric` (String)：デフォルトは `viewsMetrics`です； `ctrMetric`, `timeOnPageMetric`, `exitRateMetric`, `ctpMetric`, `sessionsMetric`, `avgTimeOnPageMetric`, `bounceMetric`...可能な値です、 `maxScrollDepthMetric`, `visitorsMetric`, `viewsMetric`, `bounceRateMetric`, `indirectAccessMetric`, `entrancesMetric`, `directAccessMetric`.
-* `sortOrder` (文字列）、可能な値は * asc *または *desc*。 sortMetricに従って、結果を昇順または降順で並べ替える。 デフォルトはdesc。
+* `sortOrder` (文字列）、可能な値は **asc** または **desc** 。 sortMetricに従って、結果を昇順または降順で並べ替える。 デフォルトはdesc。

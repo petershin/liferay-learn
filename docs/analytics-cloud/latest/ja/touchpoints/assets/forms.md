@@ -1,6 +1,6 @@
 # フォーム
 
-[フォーム](https://learn.liferay.com/dxp/latest/en/process-automation/forms/introduction-to-forms.html) は、企業にとって重要な直接データ収集ツールです。 あなたのWebフォームは貴重な情報を提供していますか、それともユーザーを遠ざけていますか？ Analytics Cloudは重要なインサイトを提供します。
+[フォームの概要](https://learn.liferay.com/dxp/latest/ja/process-automation/forms/introduction-to-forms.html) は、企業にとって重要な直接データ収集ツールです。 あなたのWebフォームは貴重な情報を提供していますか、それともユーザーを遠ざけていますか？ Analytics Cloudは重要なインサイトを提供します。
 
 Analytics Cloudで、メニューのタッチポイントセクションを見つけ、Assetsをクリックします。 4つのタブがあり、それぞれがタブタイトルで示されたアセットタイプのページ順リストを表示しています。 フォームをクリックします。
 

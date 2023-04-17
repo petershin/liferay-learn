@@ -4,7 +4,7 @@ A/Bテストは、複数のバージョンのページを一度にテストす�
 
 A/B テストの作成とコンテンツページへの設定については、Liferay DXP の [A/Bテスト](https://learn.liferay.com/dxp/latest/ja/site-building/optimizing-sites/ab-testing/ab-testing.html) で詳しく説明されています。
 
-Analytics Cloudは、Liferay DXPで実行されたA/Bテストのすべての結果を追跡します。 作成されたテストは、Analytics Cloudと自動的に同期され、そこで管理することができます。 ドラフト、実行中、終了、完了した A/B テストを表示するには、左カラムの *Tests* メニューにアクセスします。
+Analytics Cloudは、Liferay DXPで実行されたA/Bテストのすべての結果を追跡します。 作成されたテストは、Analytics Cloudと自動的に同期され、そこで管理することができます。 ドラフト、実行中、終了、完了した A/B テストを表示するには、左カラムの **Tests** メニューにアクセスします。
 
 ![テスト」メニューには、サイトに対して作成・定義されたすべてのA/Bテストが表示されます。](a-b-testing/images/01.png)
 
@@ -72,7 +72,7 @@ A/Bテストは、開始後に必ずステータスが付いているのが特�
 
 ![現在のベストバリアントを表示することができますが、テストは実行中です。](a-b-testing/images/06.png)
 
-テストの実行中に、サマリーバーから *Terminate Test* を選択すると、テストを終了させることができます。
+テストの実行中に、サマリーバーから **Terminate Test** を選択すると、テストを終了させることができます。
 
 ![実行中のテストを終了する場合は、「Terminate Test」をクリックします。](a-b-testing/images/07.png)
 

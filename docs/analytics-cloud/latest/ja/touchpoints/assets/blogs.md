@@ -1,6 +1,6 @@
 # ブログ
 
-[ブログエントリー](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/getting-started-with-blogs.html) は、ウェブサイトの重要なコンテンツです。 ブログエントリーは、新しいブログ記事で読者を引き付け、コメント欄で読者間で交流する場を与えます。
+[ブログを始める](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/blogs/getting-started-with-blogs.html) は、ウェブサイトの重要なコンテンツです。 ブログエントリーは、新しいブログ記事で読者を引き付け、コメント欄で読者間で交流する場を与えます。
 
 Analytics Cloudは、読者がどのようにブログ記事に関与しているかについての重要な洞察を与えてくれます。
 

@@ -20,17 +20,13 @@ Create a manual backup before you begin testing.
 
 1. Click *Backup Now* to create a manual backup.
 
-    ```{tip}
-    If you don't need specific data for your testing, you could skip creating a manual backup and use the most recent automatic backup. 
-    ```
-
-![Use a manual backup if you need the most recent data from your Liferay instance, or an automatic backup if it's not necessary.](./restoring-data-from-a-backup/images/01.png)
+![Use a manual backup for this exercise.](./restoring-data-from-a-backup/images/01.png)
 
 The backup service is unavailable and the buttons on the page are disabled until the backup completes.
 
 ## Restore the Backup to UAT
 
-Once the backup from production is completed, restore it to your UAT environment.
+When the backup from production finishes, restore it to your UAT environment.
 
 1. Click _Actions_ ( ![Actions icon](../../../images/icon-actions.png) ) next to the manual backup at the top of the list and click *Restore to...*
 
@@ -46,13 +42,13 @@ Once the backup from production is completed, restore it to your UAT environment
 
 Your UAT environment's services are temporarily unavailable while the backup is restored.
 
-## Try Deleting Data
+## Simulate A Disaster
 
-Try deleting your default home page from your UAT Liferay instance.
+Simulate disaster by deleting your default home page from your UAT Liferay instance.
 
 1. Navigate to your UAT environment.
 
-1. Click *Visit Site* at the top of the page to access your UAT Liferay instance. If your session has expired from logging in previously, [use your project's login credentials](./deploying-and-promoting-to-production.md#accessing-your-uat-environment) to authenticate.
+1. Click *Visit Site* at the top of the page to access your UAT Liferay instance. If your session has expired from logging in previously, [use your project's credentials](./deploying-and-promoting-to-production.md#accessing-your-uat-environment) to authenticate.
 
 1. Log in as the [default administrator](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account).
 
@@ -70,9 +66,7 @@ The home page is deleted, and the deletion cannot be undone. The *Home* button i
 
 ## Restore the Backup
 
-Kyle realizes after deleting the page that it shouldn't have been deleted, and he can't remember how to make a new one easily.
-
-Help Kyle recover the data in UAT by restoring the backup you took before accessing the Liferay instance.
+Kyle realizes after deleting the page that it shouldn't have been deleted, and he can't remember how to make a new one easily. Help Kyle recover the data in UAT by restoring the backup you took before accessing the Liferay instance.
 
 1. In the Liferay Cloud console, navigate to your production environment.
 

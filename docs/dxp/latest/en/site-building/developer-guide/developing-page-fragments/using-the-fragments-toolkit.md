@@ -183,16 +183,36 @@ Each Fragment Set uses this structure:
 
     * `configuration.json`(optional): a JSON file that defines the Fragment's configuration. See [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md) for more information.
 
-    * `fragment.json`: a JSON file that describes the Fragment.
+    * `fragment.json`: a JSON file that describes the Fragment. See [Modifying fragment.json](#modifying-fragmentjson) for more information.
 
-        ```json
+* `resources/` (optional): a folder containing any additional images or files the Fragments need. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
+
+You can use the Fragments Toolkit to quickly create projects with this structure.
+
+### Modifying fragment.json
+
+`fragment.json`  contains fragment attributes that can be modified to enhance the functionality and usability of fragments.
+
+| Key                    | Description                                                                                                                       |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| `cssPath`              | Specifies .css, .scss, or .sass files.                                                                                            |
+| `configurationPath`    | Specifies the configuration source for the fragment.                                                                              |
+| `htmlPath`             | Specifies the HTML source for the fragment.                                                                                       |
+| `jsPath`               | Specifies the JavaScript source for the fragment.                                                                                 |
+| `name`                 | The name of the fragment.                                                                                                         |
+| `type`                 | Specifies a component or React fragment.                                                                                          |
+| `icon`                 | Adds a clay icon to imported fragments. See the [Clay Icon List](https://clayui.com/docs/components/icon.html) for available icons. |
+| `sass {loadPaths:[]}}` | Specifies external dependencies.                                                                                                  |
+
+ ```json
         {
             "cssPath": "styles.css",
             "configurationPath": "configuration.json",
             "htmlPath": "index.html",
             "jsPath": "main.js",
             "name": "Fragment name",
-            "type": "[component|react]"
+            "type": "[component|react]",
+            "icon": "adjust"
 
             // This configuration is optional and can be removed
             "sass": {
@@ -201,23 +221,7 @@ Each Fragment Set uses this structure:
                 ]
             }
         }
-        ```
-
-      Update the `*Path` properties in `fragment.json` with the names of your CSS, configuration, HTML, and JavaScript files.
-
-        * `styles.css`: the CSS source for the Fragment.
-
-        * `index.html`: the HTML source for the Fragment.
-
-        * `main.js`: the JavaScript source for the Fragment.
-
-        ```{note}
-        In addition to pointing to a `.css` file, the `cssPath` key can also specify a `.scss` or `.sass` file.  You can also use external dependencies by adding `sass: {loadPaths:[]}}` in `fragment.json`.
-        ```
-
-* `resources/` (optional): a folder containing any additional images or files the Fragments need. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
-
-You can use the Fragments Toolkit to quickly create projects with this structure.
+```
 
 ## Add a Fragment Set to the Project
 
@@ -321,7 +325,10 @@ Modify any part of your Fragment.
 * HTML (`index.html`)
 * CSS (`styles.css`)
 * JavaScript (`main.js`)
+* Fragment Attributes (`fragment.json`)
 * [Configuration options](./adding-configuration-options-to-fragments.md) (`configuration.json`).
+
+
 
 For example, you can build off of the above HTML and use [Clay](https://clayui.com/)'s [Bootstrap](https://getbootstrap.com/)-based components to create Fragment with an attention-getting headline and description, as demonstrated in this `index.html`:
 

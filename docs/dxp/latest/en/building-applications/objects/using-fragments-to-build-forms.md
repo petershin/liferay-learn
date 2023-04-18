@@ -53,22 +53,27 @@ Form fragments can only be used with custom objects. Therefore, Liferay hides th
 
 1. Click *Publish* when finished.
 
-## Supported Field Types for Fragment Components
+## Supported Field Types for Form Components
 
-Each form fragment can support one or more form field types, which correspond to object field types.
+Each form fragment can support one or more object field type. The default form components support these fields.
 
-The default form components support these fields.
+| Form Fragment    | Object Field Types                                |
+|:-----------------|:--------------------------------------------------|
+| CAPTCHA          | N/A                                               |
+| Checkbox         | Boolean                                           |
+| Date             | Date                                              |
+| File Upload      | Attachment                                        |
+| Multiselect List | Multiple Picklist                                 |
+| Numeric Input    | Integer, Long Integer, Decimal, Precision Decimal |
+| Rich Text        | Rich Text                                         |
+| Select from List | Relationship, Picklist                            |
+| Submit Button    | N/A                                               |
+| Text Input       | Text, Long Text                                   |
+| Textarea         | Text, Long Text                                   |
 
-| Fragment | Form Field Types | Object Field Types |
-| :--- | :--- | :--- |
-| CAPTCHA | N/A | N/A |
-| Checkbox | Boolean | Boolean |
-| Date | Date | Date |
-| File Upload | File | Attachment |
-| Numeric Input | Number | Integer, Long Integer, Decimal, Precision Decimal |
-| Select from List | Relationship, Select | Relationship, Picklist |
-| Submit Button | N/A | N/A |
-| Text Input | Text | Text, Long Text, Rich Text |
+```{tip}
+If categorization is enabled for the object, you can use the Tags and Categories form fragments to add metadata to object entries. 
+```
 
 ## Additional Information
 

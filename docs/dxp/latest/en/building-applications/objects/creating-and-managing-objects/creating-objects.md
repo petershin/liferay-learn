@@ -121,9 +121,9 @@ Follow these steps to edit the object draft:
 
    While enabled, you can add the object's widget to site pages. See [Deploying Object Widgets in Sites](../deploying-object-widgets-to-sites.md).
 
-1. Enable or disable categorization for custom layouts.
+1. Enable or disable categorization for object entries.
 
-   While enabled, you can add categorization blocks to fields tabs in custom layouts. See [Adding Categorization to Fields Tabs](./layouts/adding-categorization-to-fields-tabs.md).
+   While enabled, you can add categorization blocks to fields tabs in custom layouts. See [Adding Categorization to Fields Tabs](./layouts/adding-categorization-to-fields-tabs.md). Additionally, you can add the tags and categories fragments in form containers, allowing you to add metadata to the object entries.
 
 1. Enable or disable comments for object display pages.
 

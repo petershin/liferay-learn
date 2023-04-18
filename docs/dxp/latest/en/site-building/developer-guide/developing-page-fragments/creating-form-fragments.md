@@ -62,55 +62,70 @@ To specify the supported field types, add the `fieldTypes` property to `typeOpti
 
 After that, follow the same process as when creating a basic fragment. See [Using the Fragments Toolkit](./using-the-fragments-toolkit.md) for more information about creating and deploying basic fragments.
 
+## Supported Field Types Reference
+
+| Field Type    | Description                                          |
+|:--------------|:-----------------------------------------------------|
+| `boolean`     | Boolean field.                                       |
+| `captcha`     | Users must verify they are human before submissions. |
+| `date`        | Date field.                                          |
+| `file`        | Adds support for attaching files.                    |
+| `html`        | Adds a CKEditor for adding rich text.                |
+| `multiselect` | Select from a list of checkboxes.                    |
+| `number`      | Numeric fields.                                      |
+| `relationship`| Define object relationships.
+| `select`      | Select options from dropdown lists.       |
+| `text`        | Adds support for text fields.             |
+
 ## Using the `input` Variable with Form Fragments
 
 Form fragments include the `input` variable for use with each fragment's JavaScript and FreeMarker code. This variable contains the properties for configuring the fragment.
 
 ## Input Variable Properties Reference
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| `type` | `string` | Field type mapped to the input. |
-| `name` | `string` | Input's name. |
-| `required` | `boolean` | Whether the input is required. |
-| `value` | `string` | Field's value. |
-| `label` | `string` | Input's label. |
-| `showLabel` | `boolean` | Whether the label is visible to users. |
-| `errorMessage` | `string` | Form submission errors. |
-| `helpText` | `string` | UI help message for the form field. If undefined, this property is empty. |
-| `showHelpText` | `boolean` | Whether the help text is visible to users. |
-| `attributes` | `object` | Options added to the fragment for specific input types. |
+| Property       | Type      | Description                                                               |
+|:---------------|:----------|:--------------------------------------------------------------------------|
+| `fieldTypes`   | `string`  | Field type mapped to the input.                                           |
+| `name`         | `string`  | Input's name.                                                             |
+| `required`     | `boolean` | Whether the input is required.                                            |
+| `value`        | `string`  | Field's value.                                                            |
+| `label`        | `string`  | Input's label.                                                            |
+| `showLabel`    | `boolean` | Whether the label is visible to users.                                    |
+| `errorMessage` | `string`  | Form submission errors.                                                   |
+| `helpText`     | `string`  | UI help message for the form field. If undefined, this property is empty. |
+| `showHelpText` | `boolean` | Whether the help text is visible to users.                                |
+| `attributes`   | `object`  | Options added to the fragment for specific input types.                   |
 
 ### Attributes for `file` Input
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| `allowedFileExtensions` | `string` | Allowed file extensions. If Show Supported File Info is enabled, the allowed extensions are displayed in the field's help text. |
-| `maxFileSize` | `number` | Maximum upload size in megabytes. If Show Supported File Info is enabled, the maximum allowed size appears in the field's help text. |
-| `selectFromDocumentLibrary` | `boolean` | Whether users can select files from the document library. This is set in the object's [attachment field](../../../building-applications/objects/creating-and-managing-objects/fields.md). |
-| `selectFromDocumentLibraryURL` | `string` or `undefined` | If `selectFromDocumentLibrary` is true, this property contains the URL for rendering the corresponding `ItemSelector`. |
+| Property                       | Type                    | Description                                                                                                                                                                               |
+|:-------------------------------|:------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `allowedFileExtensions`        | `string`                | Allowed file extensions. If Show Supported File Info is enabled, the allowed extensions are displayed in the field's help text.                                                           |
+| `maxFileSize`                  | `number`                | Maximum upload size in megabytes. If Show Supported File Info is enabled, the maximum allowed size appears in the field's help text.                                                      |
+| `selectFromDocumentLibrary`    | `boolean`               | Whether users can select files from the document library. This is set in the object's [attachment field](../../../building-applications/objects/creating-and-managing-objects/fields.md). |
+| `selectFromDocumentLibraryURL` | `string` or `undefined` | If `selectFromDocumentLibrary` is true, this property contains the URL for rendering the corresponding `ItemSelector`.                                                                    |
 
 ### Attributes for `number` Input
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| `dataType` | `integer` or `decimal` | Whether to allow integer or decimal numbers. |
-| `max` | `number` or `undefined` | Maximum number allowed. |
-| `min` | `number` or `undefined` | Minimum number allowed. |
-| `step` | `string` or `undefined` | String value that can be used with the HTML input "step" attribute to indicate the maximum allowed precision. |
+| Property   | Type                    | Description                                                                                                   |
+|:-----------|:------------------------|:--------------------------------------------------------------------------------------------------------------|
+| `dataType` | `integer` or `decimal`  | Whether to allow integer or decimal numbers.                                                                  |
+| `max`      | `number` or `undefined` | Maximum number allowed.                                                                                       |
+| `min`      | `number` or `undefined` | Minimum number allowed.                                                                                       |
+| `step`     | `string` or `undefined` | String value that can be used with the HTML input "step" attribute to indicate the maximum allowed precision. |
 
 ### Attributes for `relationship` Input
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
-| `relationshipLabelFieldName` | `string` | Field name of the related object used as the label. |
-| `relationshipValueFieldName` | `string` | Field name of the related object used as the value. |
-| `relationshipURL` | `string` | URL used to fetch options from the API. The API response uses Liferay's headless list format, including pagination. Pass additional parameters to query the response. |
+| Property                     | Type     | Description                                                                                                                                                           |
+|:-----------------------------|:---------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `relationshipLabelFieldName` | `string` | Field name of the related object used as the label.                                                                                                                   |
+| `relationshipValueFieldName` | `string` | Field name of the related object used as the value.                                                                                                                   |
+| `relationshipURL`            | `string` | URL used to fetch options from the API. The API response uses Liferay's headless list format, including pagination. Pass additional parameters to query the response. |
 
 ### Attributes for `select` Input
 
-| Property | Type | Description |
-| :--- | :--- | :--- |
+| Property  | Type                                    | Description                |
+|:----------|:----------------------------------------|:---------------------------|
 | `options` | `Array<{label: string, value: string}>` | List of available options. |
 
 ## Additional Information

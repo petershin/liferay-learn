@@ -7,15 +7,20 @@ Liferay provides a variety of fragments out-of-the-box, so you can start buildin
 
 Fragments are organized into the following sets:
 
-* [Layout Elements](#layout-elements)
-* [Basic Components](#basic-components)
-* [Form Components](#form-components)
-* [Content Display](#content-display)
-* [Cookie Banner](#cookie-banner)
-* [Featured Content](#featured-content)
-* [Footers](#footers)
-* [Navigation Bars](#navigation-bars)
-* [Menu Displays](#menu-display)
+- [Default Fragments Reference](#default-fragments-reference)
+  - [Layout Elements](#layout-elements)
+  - [Basic Components](#basic-components)
+  - [Form Components](#form-components)
+  - [Content Display](#content-display)
+  - [Cookie Banner](#cookie-banner)
+  - [Featured Content](#featured-content)
+    - [Banners](#banners)
+    - [Features](#features)
+    - [Highlights](#highlights)
+  - [Footers](#footers)
+  - [Navigation Bars](#navigation-bars)
+  - [Menu Display](#menu-display)
+  - [Additional Information](#additional-information)
 
 ```{note}
 Available configuration options vary by fragment and fragment sub-element. See [Configuring Fragments](./configuring-fragments.md) for more information.
@@ -66,10 +71,15 @@ Use Form Components fragments to build forms in content pages. These fragments o
 | Checkbox | Adds a checkbox to the form container that you can map to boolean fields. |
 | Date | Adds a field that you can map to custom date fields. |
 | File Upload | Adds a file upload button that you can map to [attachment fields](../../../../building-applications/objects/creating-and-managing-objects/fields/attachment-fields.md#attachment-fields). The mapped attachment field determines how files are uploaded. By default, this fragment displays supported file extensions. |
+| Multiselect List | Adds a field that you can map to multiselect picklists. |
 | Numeric Input | Adds a field that you can map to custom numeric fields (i.e., integer, long integer, decimal, and precision decimal). You can set a placeholder value and help text. |
+| Rich Text| Adds a field that you can map to rich text fields.|
 | Select from List | Adds a drop-down menu that you can map to custom picklist and relationship fields. If the mapped field includes more than 10 options, the drop-down menu also includes a search bar for querying options. |
-| Text Input | Adds a field that you can map to text fields (i.e., text, long text, rich text). |
 | Submit Button | Adds a button for submitting the form entry. Every form container must include a submit button. |
+| Text Input | Adds a field that you can map to text fields (i.e., text, long text). |
+| Textarea | Adds a field that you can map to long text fields. |
+| Tags | Adds a field to add tags from the current site or global site to object entries.|
+| Categories| Adds a field to add categories from the current site or global site to object entries.|
 
 ## Content Display
 

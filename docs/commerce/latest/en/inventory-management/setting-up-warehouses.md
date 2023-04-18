@@ -41,9 +41,9 @@ Before creating a warehouse, you must enable the applicable country and region o
    You must set the geolocation before you can activate the warehouse.
    ```
 
-1. Click the *Eligibility* tab and associate the warehouse to a specific channel or all available channels. This determines the product inventory for a channel.
+1. You must link a warehouse to one or more channels after creation. This determines the product inventory for those channels. 
 
-   If you want to associate the warehouse to a specific channel, click the *Specific Channels* radio button, enter a channel name and click *Select*.
+   Click the *Eligibility* tab, select *Specific Channels*, enter a channel name and click *Select*.
 
    ![Associate the warehouse to all available channels or specific channels.](./setting-up-warehouses/images/03.png)
 

@@ -25,7 +25,7 @@ Follow these steps to enable Publications:
 
    ![Toggle the switch and click Save.](./enabling-publications/images/01.png)
 
-1. (Optional) Toggle *Sandbox Only* mode. While enabled, users are directed automatically to their last working publication when they log in. If they don't have one, a new publication is generated for them. You can use publication templates to set default values for these auto-generated publications. See [Using Publication Templates](./using-publication-templates.md) for more information.
+1. (Optional) Toggle *Sandbox Only* mode. While enabled, users are directed automatically to their last working publication when they log in. If they don't have one, a new publication is generated for them using the `screen.name - date` naming pattern. You can use publication templates to set default values for these auto-generated publications. See [Using Publication Templates](./using-publication-templates.md) for more information.
 
    ```{tip}
    Using Sandbox Only can help reduce accidental edits to production.

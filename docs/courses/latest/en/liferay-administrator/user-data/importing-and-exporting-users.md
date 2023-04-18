@@ -3,7 +3,7 @@ uuid: f12d1fae-61aa-4d42-880c-b0d718838530
 ---
 # Importing and Exporting Users
 
-Once the LDAP server is connected to your Liferay environment, you can import or export users. 
+Once LDAP is connected, users are imported as they log in. Delectable Bonsai, however, wants to import all of Almighty Syrup's users in one shot. 
 
 ## Importing LDAP Users
 
@@ -35,10 +35,10 @@ If you leave the _Enable _Import_ box unchecked, users are imported individually
 
 1. Now modify an existing user. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. 
 
-1. Click on the user Kyle Klein. See [creating users](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#creating-users), if you need to create this user.
+1. Select the user Kyle Klein. See [creating users](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#creating-users), if you need to create this user.
 
 1. Make a change to his personal information. For example, change his birth year from 1970 to 1971. Click _Save_.
-   
+ 
 1. Go back to the LDAP server settings. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
 
 1. In the left navigation, click _Servers_. 

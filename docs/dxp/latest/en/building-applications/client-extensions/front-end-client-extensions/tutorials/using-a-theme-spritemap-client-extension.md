@@ -1,14 +1,14 @@
 ---
 uuid: 916e394b-8115-4639-b465-d849ede6475b
 ---
-# Using a Theme Spritemap Client Extension
+# Using a Theme Sprite Map Client Extension
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-With a theme spritemap client extension, you can override the default [Clay](https://clayui.com/docs/components/icon.html) spritemap used for icons on the selected page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension. 
+With a theme sprite map client extension, you can override the default [Clay](https://clayui.com/docs/components/icon.html) sprite map used for icons on the selected page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension. 
 
 ```{note}
-An SVG spritemap is an image that contains several icons grouped together each with a unique ID. You can load the SVG and reference any of the individual icons using this ID. This also provides a slight performance improvement, as you can download and cache the spritemap once and use it to display all the icons of your site. 
+An SVG sprite map is an image that contains several icons grouped together each with a unique ID. You can load the SVG and reference any of the individual icons using this ID. This also provides a slight performance improvement, as you can download and cache the sprite map once and use it to display all the icons of your site. 
 ```
 
 ## Prerequisites
@@ -31,11 +31,11 @@ To start developing client extensions,
    unzip com.liferay.sample.workspace-latest.zip
    ```
 
-Now you have the tools to deploy your first theme spritemap client extension. 
+Now you have the tools to deploy your first theme sprite map client extension. 
 
 ## Examine and Modify the Client Extension
 
-The theme spritemap client extension is in the sample workspace's `client-extensions/liferay-sample-theme-spritemap-1/` folder. It is defined in the `client-extension.yaml` file: 
+The theme sprite map client extension is in the sample workspace's `client-extensions/liferay-sample-theme-spritemap-1/` folder. It is defined in the `client-extension.yaml` file: 
 
 ```yaml
 liferay-sample-theme-spritemap-1:
@@ -44,7 +44,7 @@ liferay-sample-theme-spritemap-1:
     url: spritemap.svg
 ```
 
-The client extension has the ID `liferay-sample-theme-spritemap-1` and contains the key configurations for a theme spritemap client extension, including the type and the spritemap file to add. See the [Theme Spritemap YAML Configuration Reference](../theme-spritemap-yaml-configuration-reference.md) for more information on the available properties. 
+The client extension has the ID `liferay-sample-theme-spritemap-1` and contains the key configurations for a theme sprite map client extension, including the type and the sprite map file to add. See the [Theme Sprite Map YAML Configuration Reference](../theme-sprite-map-yaml-configuration-reference.md) for more information on the available properties. 
 
 It also contains the `assemble` YAML block:
 
@@ -54,9 +54,9 @@ assemble:
       into: static
 ```
 
-This specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The SVG spritemap in a theme spritemap client extension is used as a static resource in Liferay. 
+This specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The SVG sprite map in a theme sprite map client extension is used as a static resource in Liferay. 
 
-The `assets/spritemap.svg` is an exact copy of the [Clay icons](https://clayui.com/docs/components/icon.html) spritemap used in Liferay. To change a specific icon, you must find the ID of the icon. You can _Inspect_ the HTML element to find this. 
+The `assets/spritemap.svg` is an exact copy of the [Clay icons](https://clayui.com/docs/components/icon.html) sprite map used in Liferay. To change a specific icon, you must find the ID of the icon. You can _Inspect_ the HTML element to find this. 
 
 ![Icons in the navbar.](./using-a-theme-spritemap-client-extension/images/01.png)
 
@@ -126,7 +126,7 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 ## Use the Client Extension on a Page
 
 ```{warning}
-The theme spritemap client extension is currently behind a [dev feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (`LPS-166479`). You must not use this client extension in production. Use it only for testing purposes. 
+The theme sprite map client extension is currently behind a [dev feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (`LPS-166479`). You must not use this client extension in production. Use it only for testing purposes. 
 ```
 
 Configure a page to use your deployed client extension:
@@ -137,7 +137,7 @@ Configure a page to use your deployed client extension:
 
 1. In the _Theme Spritemap Client Extension_ section, click Add (![Add](../../../../images/icon-duplicate.png)).
 
-1. Select the newly deployed spritemap, _Liferay Sample Theme Spritemap 1_.
+1. Select the newly deployed sprite map, _Liferay Sample Theme Spritemap 1_.
 
    ![Select the Liferay Sample Theme Spritemap 1 client extension and click Save.](./using-a-theme-spritemap-client-extension/images/05.gif)
 
@@ -145,11 +145,11 @@ Configure a page to use your deployed client extension:
 
 1. Go back to the page. You can see a fish icon in place of the edit icon.
 
-![The new icon from the spritemap appears on the navbar.](./using-a-theme-spritemap-client-extension/images/06.png)
+![The new icon from the sprite map appears on the navbar.](./using-a-theme-spritemap-client-extension/images/06.png)
 
 ## Next Steps
 
-You have successfully used a theme spritemap client extension in Liferay. Next, try deploying other client extension types.
+You have successfully used a theme sprite map client extension in Liferay. Next, try deploying other client extension types.
 
 * [Using a CSS Client Extension](./using-a-css-client-extension.md)
 * [Using a JS Client Extension](./using-a-javascript-client-extension.md)

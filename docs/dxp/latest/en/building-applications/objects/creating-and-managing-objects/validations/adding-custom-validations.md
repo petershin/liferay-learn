@@ -101,8 +101,8 @@ This table lists available Expression Builder functions with their compatible fi
 | Compare Dates               |             |                | &#10004;    | Checks if a date field's value is the same as a set value.                                                            |
 | Concat                      | &#10004;    |                |             | Combines multiple strings or text fields and return a single string that can be used with other validation functions. |
 | Condition                   | &#10004;    | &#10004;       | &#10004;    | Checks if user input meets one or more conditions and returns a Boolean value.                                        |
-| Contains                    | &#10004;    | &#10004;       |             | Checks if a field contains a specified value and returns a Boolean.                                        |
-| Does Not Contain            | &#10004;    | &#10004;       |             | Checks if a field contains a specified value and returns a Boolean.                                        |
+| Contains                    | &#10004;    | &#10004;       |             | Checks if a field contains a specified value and returns a Boolean.                                                   |
+| Does Not Contain            | &#10004;    | &#10004;       |             | Checks if a field does not contain a specified value and returns a Boolean.                                           |
 | Future Dates                |             |                | &#10004;    | Checks if a date field's value is in the future and returns a Boolean.                                                |
 | Is a URL                    | &#10004;    |                |             | Checks if a text field is a URL and returns a Boolean.                                                                |
 | Is an Email                 | &#10004;    |                |             | Checks if a text field is an email and returns a Boolean.                                                             |

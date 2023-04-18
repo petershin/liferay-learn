@@ -56,7 +56,11 @@ assemble:
 
 This specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The SVG sprite map in a theme sprite map client extension is used as a static resource in Liferay. 
 
-The `assets/spritemap.svg` is an exact copy of the [Clay icons](https://clayui.com/docs/components/icon.html) sprite map used in Liferay. To change a specific icon, you must find the ID of the icon. You can _Inspect_ the HTML element to find this. 
+```{important}
+The `assets/spritemap.svg` is a copy of the [Clay icons](https://clayui.com/docs/components/icon.html) sprite map used in Liferay. You won't notice any changes in the UI as all the icons used in Liferay are present in the example sprite map. Since a sprite map client extension replaces the entire sprite map on the selected page, make sure that you have all the necessary icons with their corresponding IDs when overriding to avoid missing icons. 
+```
+
+To change a specific icon, you must find the ID of the icon. You can _Inspect_ the HTML element to find this. 
 
 ![Icons in the navbar.](./using-a-theme-spritemap-client-extension/images/01.png)
 

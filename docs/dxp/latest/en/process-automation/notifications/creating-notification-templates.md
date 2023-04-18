@@ -23,7 +23,7 @@ To use email notifications, your instance must have a configured [mail server](.
 
    ![Click the Add button and select Email.](./creating-notification-templates/images/01.png)
 
-   You can use object field references to populate messages dynamically with entry data. In the template designer, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select an object definition. Copy and paste a field reference term into the desired template field. You can only reference fields for entries directly involved in the object's action.
+   You can use object field references to populate messages dynamically with entry data. In the template designer, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select an object definition. Copy and paste field reference terms into the desired template fields. You can only reference fields for entries directly involved in the object's action. See [Definition of Terms Reference](#definition-of-terms-reference) for more information.
 
    ![Search entities to add references to supported fields.](./creating-notification-templates/images/02.png)
 
@@ -63,7 +63,7 @@ Once created, you can use notification templates with object actions. See [Defin
 
    ![Click the Add Button and select User Notification.](./creating-notification-templates/images/07.png)
 
-   You can use object field references to populate messages dynamically with entry data. In the template designer, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select an object definition. Copy and paste a field reference term into the desired template field. You can only reference fields for entries directly involved in the object's action.
+   You can use object field references to populate messages dynamically with entry data. In the template designer, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select an object definition. Copy and paste field reference terms into the desired template fields. You can only reference fields for entries directly involved in the object's action. See [Definition of Terms Reference](#definition-of-terms-reference) for more information.
 
    ![Search entities to add references to supported fields.](./creating-notification-templates/images/08.png)
 
@@ -86,6 +86,47 @@ Once created, you can use notification templates with object actions. See [Defin
 1. Click *Save*.
 
 Once created, you can use notification templates with object actions. See [Defining Object Actions](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) for more information.
+
+## Definition of Terms Reference
+
+When designing notification templates, you can use definition terms to access user and entry data to dynamically populate a template. This includes any entries and users involved in the event triggering the [notification](../../building-applications/objects/creating-and-managing-objects/actions/understanding-action-types.md#notification) action.
+
+Consider a scenario with a custom Ticket object that is on the child side of a one-to-many relationship with the User system object. This relationship is used to determine the ticket's assignee. If you add a notification action to the Ticket object for notifying the assignee on entry update, then the template used for this action can access data for both the updated ticket and the assignee.
+
+Terms are available for both custom and default object fields.
+
+### Default Terms for Current Entry
+
+Use these terms to access information about the current object entry.
+
+| Label                   | Term                                   |
+|:------------------------|:---------------------------------------|
+| Author Email Address    | `[%OBJECTNAME_AUTHOR_EMAIL_ADDRESS%]`  |
+| Author First Name       | `[%OBJECTNAME_AUTHOR_FIRST_NAME%]`     |
+| Author ID               | `[%OBJECTNAME_AUTHOR_ID%]`             |
+| Author Last Name        | `[%OBJECTNAME_AUTHOR_LAST_NAME%]`      |
+| Author Middle Name      | `[%OBJECTNAME_AUTHOR_MIDDLE_NAME%]`    |
+| Author Prefix           | `[%OBJECTNAME_AUTHOR_PREFIX%]`         |
+| Author Suffix           | `[%OBJECTNAME_AUTHOR_SUFFIX%]`         |
+| Create Date             | `[%OBJECTNAME_CREATEDATE%]`            |
+| External Reference Code | `[%OBJECTNAME_EXTERNALREFERENCECODE%]` |
+| ID                      | `[%OBJECTNAME_ID%]`                    |
+| Modified Date           | `[%OBJECTNAME_MODIFIEDDATE%]`          |
+| Status                  | `[%OBJECTNAME_STATUS%]`                |
+
+### Default Terms for Current User
+
+Use these terms to access information about the current user triggering the notification action.
+
+| Label                      | Term                             |
+|:---------------------------|:---------------------------------|
+| Current User Email Address | `[%CURRENT_USER_EMAIL_ADDRESS%]` |
+| Current User First Name    | `[%CURRENT_USER_FIRST_NAME%]`    |
+| Current User Prefix        | `[%CURRENT_USER_PREFIX%]`        |
+| Current User Last Name     | `[%CURRENT_USER_LAST_NAME%]`     |
+| Current User Middle Name   | `[%CURRENT_USER_MIDDLE_NAME%]`   |
+| Current User ID            | `[%CURRENT_USER_ID%]`            |
+| Current User Suffix        | `[%CURRENT_USER_SUFFIX%]`        |
 
 ## Additional Information
 

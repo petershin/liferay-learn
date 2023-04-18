@@ -33,7 +33,7 @@ To use email notifications, your instance must have a configured [mail server](.
 
 1. In Settings, enter contact information for the email sender and recipients.
 
-   To add multiple recipients, separate email addresses with a comma (e.g., `test@liferay.com,learn@liferay.com`).
+   To add multiple recipients, separate email addresses with a comma or space (e.g., `test@liferay.com,learn@liferay.com`, `[%TICKET_AUTHOR_EMAIL_ADDRESS%] [%CURRENT_USER_EMAIL_ADDRESS%]`).
 
    ![Under Settings, enter details for the sender and desired recipients.](./creating-notification-templates/images/04.png)
 
@@ -73,7 +73,7 @@ Once created, you can use notification templates with object actions. See [Defin
 
 1. In Settings, determine the notification's recipients.
 
-   You can use defined terms, user names, or user roles. To add multiple recipients, separate values with a comma (e.g., `[%TICKET_CREATOR%]`, `[%TICKET_R_ASSIGNEE_USERID%]`).
+   You can use defined terms, user names, or user roles. To add multiple recipients, separate values with a comma or space (e.g., `[%TICKET_AUTHOR_ID%]`, `[%TICKET_R_ASSIGNEE_USERID%]`).
 
    ![Determine recipients by entering terms, individual user names, or user roles.](./creating-notification-templates/images/10.png)
 

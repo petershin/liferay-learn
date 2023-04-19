@@ -37,7 +37,7 @@ Consider a scenario with two insurance objects: policies and claims. If you rela
 
 1. Begin editing an aggregation field.
 
-1. Under Filters, click the *Add* button (![Add Button](../../../../images/icon-add.png))
+1. Under Filters, click the *Add* button (![Add Button](../../../../images/icon-add.png)).
 
 1. Select a field to filter by. Available options include date, integer, and picklist fields in the related object.
 

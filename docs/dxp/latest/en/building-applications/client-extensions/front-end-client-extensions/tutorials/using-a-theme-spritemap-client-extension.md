@@ -5,10 +5,10 @@ uuid: 916e394b-8115-4639-b465-d849ede6475b
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-With a theme sprite map client extension, you can override the default [Clay](https://clayui.com/docs/components/icon.html) sprite map used for icons on the selected page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension. 
+With a theme sprite map client extension, you can override the default [Clay](https://clayui.com/docs/components/icon.html) sprite map used for icons on a page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension. 
 
 ```{note}
-An SVG sprite map is an image that contains several icons grouped together each with a unique ID. You can load the SVG and reference any of the individual icons using this ID. This also provides a slight performance improvement, as you can download and cache the sprite map once and use it to display all the icons of your site. 
+An SVG sprite map is an image that contains several icons grouped together, each with a unique ID. You can load the SVG and reference the individual icons by ID. This provides a slight performance improvement, as you can download and cache the sprite map once to display all the site icons.
 ```
 
 ## Prerequisites
@@ -44,7 +44,7 @@ liferay-sample-theme-spritemap-1:
     url: spritemap.svg
 ```
 
-The client extension has the ID `liferay-sample-theme-spritemap-1` and contains the key configurations for a theme sprite map client extension, including the type and the sprite map file to add. See the [Theme Sprite Map YAML Configuration Reference](../theme-sprite-map-yaml-configuration-reference.md) for more information on the available properties. 
+The client extension has the ID `liferay-sample-theme-spritemap-1` and contains the key configurations for a theme sprite map client extension, including the type and the sprite map file to add. See the [Theme Sprite Map YAML Configuration Reference](../theme-sprite-map-yaml-configuration-reference.md) for more information on the available properties.
 
 It also contains the `assemble` YAML block:
 
@@ -57,10 +57,12 @@ assemble:
 This specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The SVG sprite map in a theme sprite map client extension is used as a static resource in Liferay. 
 
 ```{important}
-The `assets/spritemap.svg` is a copy of the [Clay icons](https://clayui.com/docs/components/icon.html) sprite map used in Liferay. You won't notice any changes in the UI as all the icons used in Liferay are present in the example sprite map. Since a sprite map client extension replaces the entire sprite map on the selected page, make sure that you have all the necessary icons with their corresponding IDs when overriding to avoid missing icons. 
+The sample project's `assets/spritemap.svg` is a copy of the [Clay icons](https://clayui.com/docs/components/icon.html) sprite map used in Liferay. You won't notice any changes in the UI as all the icons used in Liferay are present in the example sprite map. 
+
+Since a sprite map client extension replaces the entire sprite map on the selected page, make sure that you have all the necessary icons with their corresponding IDs to avoid missing icons. 
 ```
 
-To change a specific icon, you must find the ID of the icon. You can _Inspect_ the HTML element to find this. 
+To change a specific icon, you must find the ID of the icon. You can inspect the HTML element to find this. 
 
 ![Icons in the navbar.](./using-a-theme-spritemap-client-extension/images/01.png)
 
@@ -105,7 +107,7 @@ To change the pencil icon to a different one,
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once Liferay starts, run this command from the client extension's folder in the sample workspace:
+Next, run this command from the client extension project's folder in the sample workspace:
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
@@ -135,11 +137,11 @@ The theme sprite map client extension is currently behind a [dev feature flag](.
 
 Configure a page to use your deployed client extension:
 
-1. On a page, click _Edit_ (![Edit icon](../../../../images/icon-edit-pencil.png)) at the top.
+1. Go to the page, then click _Edit_ (![Edit icon](../../../../images/icon-edit-pencil.png)) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)) and click _configuration_ (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)) and click _Configuration_ (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
-1. In the _Theme Spritemap Client Extension_ section, click Add (![Add](../../../../images/icon-duplicate.png)).
+1. In the Theme Spritemap Client Extension section, click _Add_ (![Add](../../../../images/icon-duplicate.png)).
 
 1. Select the newly deployed sprite map, _Liferay Sample Theme Spritemap 1_.
 
@@ -147,7 +149,7 @@ Configure a page to use your deployed client extension:
 
 1. Scroll down and click _Save_.
 
-1. Go back to the page. You can see a fish icon in place of the edit icon.
+1. Go back to the page. In the navbar, a fish icon has replaced the pencil (![Edit icon](../../../../images/icon-edit-pencil.png)) for the edit functionality.
 
 ![The new icon from the sprite map appears on the navbar.](./using-a-theme-spritemap-client-extension/images/06.png)
 

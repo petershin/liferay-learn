@@ -18,6 +18,8 @@ This is a LUFFA's structure:
 ├── LCP.json
 ├── static
 │   └── **/*
+├── WEB-INF
+│   └── liferay-plugin-package.properties
 └── [microservice resources]
 ```
 

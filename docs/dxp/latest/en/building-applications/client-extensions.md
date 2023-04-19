@@ -38,7 +38,7 @@ These are the classifications of client extensions:
 
 ### Batch Client Extensions
 
-{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md)`
+{bdg-link-primary}`[Dev Feature](../system-administration/configuring-liferay/feature-flags.md)`
 
 Batch client extensions provide data entities to your Liferay instance, such as [object definitions](./objects/creating-and-managing-objects/exporting-and-importing-object-definitions.md) or [workflow definitions](../process-automation/workflow/introduction-to-workflow.md). Create batch client extensions by exporting data via the [batch engine framework](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md).
 

@@ -54,7 +54,7 @@ In real life, you'd already have a mail server for Liferay to use. Here, you'll 
 
 1. Copy and paste the one-time password onto the login page. Click _Submit. You successfully logged into Liferay.
 
-Next: []
+Next: [Securing Web Services](./securing-web-services.md)
 
 ## Relevant Concepts
 

@@ -20,7 +20,7 @@ developer-guide/term-api-basics.md
 :link: ./developer-guide/order-api-basics.md
 :::
 
-:::{grid-item-card} Order Type API Basics
+:::{grid-item-card} Order Type API 基本編
 :link: ./developer-guide/order-type-api-basics.md
 :::
 

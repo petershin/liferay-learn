@@ -24,19 +24,19 @@ Liferay 固有のコードは `liferay` フォルダに属し、 [Liferay DXP wo
 
 ## OSGiモジュールの整理
 
-もし、オンプレミスの Liferay インストールに使用するカスタム OSGi モジュールがあるなら、すべての [OSGi モジュールのソースコード](https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/overriding-osgi-services.html) を適切な環境の `liferay/modules/{ENV}/` フォルダ（同じワークスペースフォルダ構造を持つ）に置きます。
+もし、オンプレミスの Liferay インストールに使用するカスタム OSGi モジュールがあるなら、すべての [OSGiサービスのオーバーライドをする](https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/overriding-osgi-services.html) を適切な環境の `liferay/modules/{ENV}/` フォルダ（同じワークスペースフォルダ構造を持つ）に置きます。
 
 変更がデプロイされると、カスタムモジュールのコードは自動的にコンパイルされ、 `liferay` サービスコンテナの `$LIFERAY_HOME/deploy/` フォルダーにデプロイされます。
 
 ## カスタムテーマの整理
 
-次に、 [カスタムテーマ](https://learn.liferay.com/dxp/latest/ja/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html) のすべてのソースコードを、適切な環境の `liferay/themes/{ENV}/` フォルダに置きます。
+次に、 [環境の設定とテーマの作成](https://learn.liferay.com/dxp/latest/ja/site-building/site-appearance/themes/theme-development/getting-started/setting-up-an-environment-and-creating-a-theme.html) のすべてのソースコードを、適切な環境の `liferay/themes/{ENV}/` フォルダに置きます。
 
 変更がデプロイされると、カスタムテーマは自動的にビルドされ、 `liferay` サービスコンテナの `$LIFERAY_HOME/deploy/` フォルダにデプロイされます。
 
 ## WARファイルの整理
 
-次に、Liferay インストールのすべての WAR ファイル [WARファイル](https://learn.liferay.com/dxp/latest/ja/building-applications/reference/deploying-wars-wab-generator.html) を適切な環境の `liferay/wars/{ENV}/` フォルダに配置します。
+次に、Liferay インストールのすべての WAR ファイル [WARのデプロイ（WABジェネレータ）](https://learn.liferay.com/dxp/latest/ja/building-applications/reference/deploying-wars-wab-generator.html) を適切な環境の `liferay/wars/{ENV}/` フォルダに配置します。
 
 変更がデプロイされると、WAR ファイルは自動的に適切な環境の `liferay` サービスのコンテナ内の `$LIFERAY_HOME/deploy/` フォルダにデプロイされます（複数可）。
 

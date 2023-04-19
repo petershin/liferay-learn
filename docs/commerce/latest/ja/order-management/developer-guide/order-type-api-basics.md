@@ -67,7 +67,7 @@ Liferayが起動したら、
    }
    ```
 
-1. *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; *Commerce* &rarr; *Order Types*に移動します。 新しく追加された注文タイプが表示されます。
+1. **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; **Commerce** &rarr; **Order Types** に移動します。 新しく追加された注文タイプが表示されます。
 
    ![注文種別の追加を確認する。](./order-type-api-basics/images/01.png)
 
@@ -102,7 +102,7 @@ Liferayが起動したら、
 | `-u "test@liferay.com:learn"`                                              | 基本認証の認証情報を入力します。                   |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users)をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -183,14 +183,14 @@ java -classpath .:* OrderTypes_GET_FromInstance
 |:----------- |:-------------- |
 | `name:desc` | `名前` で降順に並びます。 |
 
-詳しくは、[APIクエリパラメーター](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html)をご参照ください。
+詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
 
 ## オーダータイプを取得する
 
 cURL と Java `get` コマンドで、特定の注文タイプを取得します。 `1234` を注文種別のIDに置き換えてください。
 
 ```{tip}
-OrderTypes_GET_FromInstance.[java|sh]`を使用して、すべてのオーダータイプのリストを取得し、特に欲しいオーダータイプの `id` をメモします。
+`OrderTypes_GET_FromInstance.[java|sh]`を使用して、すべてのオーダータイプのリストを取得し、特に欲しいオーダータイプの `id` をメモします。
 ```
 
 ### OrderType_GET_ById.sh
@@ -293,4 +293,4 @@ java -classpath .:* -DorderTypeId=1234 OrderType_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `OrderType` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。
+[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `OrderType` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。

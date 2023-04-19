@@ -23,7 +23,7 @@ Liferay Cloudでは、アプリケーションを管理するために組み合�
 
 活性プローブと準備プローブは、環境に関係なくすべてのサービスに展開されます。 通常、顧客は、ニーズに基づいて値を調整する必要がない限り、プローブを変更する必要はありません。 たとえば、システム管理者は、`initialDelaySeconds` 値を 増やして、起動プロセスを長くすることができます。
 
-デフォルト値を変更するには、 `lcp.json` ファイルを変更します。 [Configuration via LCP.json](../reference/configuration-via-lcp-json.md)を参照してください。
+デフォルト値を変更するには、 `lcp.json` ファイルを変更します。 [LCP.jsonによるコンフィギュレーション](../reference/configuration-via-lcp-json.md) を参照してください。
 
 ## 準備プローブ
 

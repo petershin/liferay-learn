@@ -4,17 +4,17 @@
 
 ## ログイン資格情報の検索
 
-1. _infra_ 環境に移動します。
+1. **infra** 環境に移動します。
 
-1. 左メニューの「 _設定」_ をクリックします。
+1. 左メニューの「**設定**」 をクリックします。
 
-1. _Secrets_ タブをクリックします。
+1. **Secrets** タブをクリックします。
 
-1. _lcp-secret-ci-customer-user_ と _lcp-secret-ci-customer-password_ シークレットをクリックしてアクセスする。
+1. **lcp-secret-ci-customer-user** と **lcp-secret-ci-customer-password** シークレットをクリックしてアクセスする。
 
    ![lcp-secret-ci-customer-user および lcp-secret-ci-customer-password シークレットには、お客様のログイン認証が含まれています。](./logging-into-your-liferay-cloud-services/images/01.png)
 
-1. 各シークレットのページで *View* をクリックすると、値が表示されます。 明らかになった値をクリックすると、クリップボードにコピーされます。
+1. 各シークレットのページで **View** をクリックすると、値が表示されます。 明らかになった値をクリックすると、クリップボードにコピーされます。
 
    ![表示］をクリックすると、秘密の値が表示されます。](./logging-into-your-liferay-cloud-services/images/02.png)
 
@@ -22,7 +22,7 @@
 
 1. 選択した環境(dev、uatなど）にナビゲートします。
 
-1. ページ上部の「 *サイト訪問* 」をクリックします。
+1. ページ上部の「**サイト訪問**」をクリックします。
 
    ![Visit Siteドロップダウンには、環境内のLiferayインスタンスで利用可能なエンドポイントがすべてリストアップされます。](./logging-into-your-liferay-cloud-services/images/03.png)
 

@@ -9,7 +9,7 @@
 
 Liferayが起動したら、
 
-1. [Option API Basics](./liferay-d3g5.zip)をダウンロードして解凍する。
+1. [Option API Basics](./liferay-d3g5.zip) をダウンロードして解凍する。
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-d3g5.zip -O
@@ -59,7 +59,7 @@ Liferayが起動したら、
    }
    ```
 
-1. オプションの追加を確認するには、 *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Options*に移動してください。 新しいオプションが表示されます。
+1. オプションの追加を確認するには、 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Options** に移動してください。 新しいオプションが表示されます。
 
    ![新しいオプションが追加されたことを確認する。](./option-api-basics/images/01.png)
 
@@ -106,7 +106,7 @@ Liferayが起動したら、
 | `-u "test@liferay.com:learn"`                                                                      | 基本認証の認証情報を入力します。                   |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html)をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -197,14 +197,14 @@ java -classpath .:* Options_GET_FromInstance
 | `key:desc`  | キーで降順に並べます。 |
 | `name:desc` | 名前の降順で並べます。 |
 
-詳しくは、[APIクエリパラメーター](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html)をご参照ください。
+詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
 
 ## オプションの取得
 
 cURL または Java `get` コマンドで特定のオプションを取得します。 `1234` をオプションのIDに置き換えてください。
 
 ```{tip}
-Options_GET_FromInstance.[java|sh]`を使用して、すべてのオプションのリストを取得し、特に欲しいオプションの `id` をメモします。
+`Options_GET_FromInstance.[java|sh]`を使用して、すべてのオプションのリストを取得し、特に欲しいオプションの `id` をメモします。
 ```
 
 ### Option_GET_ById.sh
@@ -307,4 +307,4 @@ java -classpath .:* -DoptionId=1234 Option_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Option` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。
+[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Option` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。

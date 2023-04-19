@@ -9,7 +9,7 @@
 
 Liferayが起動したら、
 
-1. [Specification API Basics](./liferay-u9x9.zip)をダウンロードし、解凍してください。
+1. [Specification API Basics](./liferay-u9x9.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-u9x9.zip -O
@@ -41,12 +41,12 @@ Liferayが起動したら、
    }
    ```
 
-1. 仕様追加を確認するには、 *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Specifications*に移動してください。 新しい仕様が「仕様ラベル」タブに表示されます。
+1. 仕様追加を確認するには、 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Specifications** に移動してください。 新しい仕様が「仕様ラベル」タブに表示されます。
 
    ![新しい仕様が追加されたことを確認する。](./specification-api-basics/images/01.png)
 
    ```{note}
-   現在、APIでは仕様グループへの仕様ラベルの追加や仕様グループの作成はできません。 代わりにSpecifications UIを使用する必要があります。 グローバルメニュー*(！[アプリケーションメニューアイコン](../../images/icon-applications-menu.png)）を開き、*Commerce* &rarr; *Specifications* に移動します。 詳しくは、「仕様グループ」(../creating and-managing-products/products/specifications.md#specification-groups) を参照してください。
+   現在、APIでは仕様グループへの仕様ラベルの追加や仕様グループの作成はできません。 代わりにSpecifications UIを使用する必要があります。 グローバルメニュー*(！[アプリケーションメニューアイコン](../../images/icon-applications-menu.png) ）を開き、*Commerce* &rarr; *Specifications* に移動します。 詳しくは、[仕様グループ](../creating and-managing-products/products/specifications.md#specification-groups) を参照してください。
    ```
 
 1. または、Javaクライアントを使用してRESTサービスを呼び出します。 `java`フォルダに移動し、ソースファイルをコンパイルします。
@@ -80,7 +80,7 @@ Liferayが起動したら、
 | `-u "test@liferay.com:learn"`                                                   | 基本認証の認証情報を入力します。                   |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users)をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -121,7 +121,7 @@ Liferayが起動したら、
 
 cURLやJavaのコマンドで、Liferayインスタンスのすべての仕様をリストアップします。
 
-### 仕様書_GET_FromInstance.sh
+### Specifications_GET_FromInstance.sh
 
 コマンド：
 
@@ -135,7 +135,7 @@ cURLやJavaのコマンドで、Liferayインスタンスのすべての仕様�
    :language: bash
 ```
 
-### 仕様書_GET_FromInstance.java
+### Specifications_GET_FromInstance.java
 
 コマンド：
 
@@ -170,17 +170,17 @@ java -classpath .:* Specifications_GET_FromInstance
 | `key:desc`  | キーで降順に並べます。   |
 | `title:asc` | タイトルの昇順で並べます。 |
 
-詳しくは、[APIクエリパラメーター](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html)をご参照ください。
+詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
 
 ## 仕様書を入手する
 
 cURL または Java `get` コマンドで特定の仕様を取得します。 `1234` を仕様書のIDに置き換えてください。
 
 ```{tip}
-Specifications_GET_FromInstance.[java|sh]`を使用して、すべての仕様のリストを取得し、特に欲しい仕様の `id` をメモします。
+`Specifications_GET_FromInstance.[java|sh]`を使用して、すべての仕様のリストを取得し、特に欲しい仕様の `id` をメモします。
 ```
 
-### 仕様書_GET_ById.sh
+### Specification_GET_ById.sh
 
 コマンド：
 
@@ -194,7 +194,7 @@ Specifications_GET_FromInstance.[java|sh]`を使用して、すべての仕様�
    :language: bash
 ```
 
-### 仕様書_GET_ById.java
+### Specification_GET_ById.java
 
 コマンド：
 
@@ -216,7 +216,7 @@ java -classpath .:* -DspecificationId=1234 Specification_GET_ById
 
 cURLとJava `patch` コマンドで既存の仕様を更新します。 `1234` をお客様の仕様のIDに置き換えてください。
 
-### 仕様書_PATCH_ById.sh
+### Specification_PATCH_ById.sh
 
 コマンド：
 
@@ -230,7 +230,7 @@ cURLとJava `patch` コマンドで既存の仕様を更新します。 `1234` �
    :language: bash
 ```
 
-### 仕様書_PATCH_ById.java
+### Specification_PATCH_ById.java
 
 コマンド：
 
@@ -250,7 +250,7 @@ java -classpath .:* -DspecificationId=1234 Specification_PATCH_ById
 
 cURL と Java `delete` コマンドで既存の仕様を削除する。 `1234` をお客様の仕様のIDに置き換えてください。
 
-### 仕様書_DELETE_ById.sh
+### Specification_DELETE_ById.sh
 
 コマンド：
 
@@ -264,7 +264,7 @@ cURL と Java `delete` コマンドで既存の仕様を削除する。 `1234` �
    :language: bash
 ```
 
-### 仕様書_DELETE_ById.java
+### Specification_DELETE_ById.java
 
 コマンド：
 
@@ -280,4 +280,4 @@ java -classpath .:* -DspecificationId=1234 Specification_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Specification` のサービスやスキーマが表示され、各サービスをテストするためのインターフェイスが用意されています。
+[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Specification` のサービスやスキーマが表示され、各サービスをテストするためのインターフェイスが用意されています。

@@ -59,14 +59,14 @@ Liferay Cloudに移行することで、 [高可用性とスケーラビリテ�
 
 * [Git](https://git-scm.com/) : 移行中、Liferay Cloudに変更をコミットしプッシュするためにGitを使用できるよう、Gitをインストールする必要があります。
 * リポジトリホスティングサービスアカウント。Liferay Cloudのビルドのために変更をプッシュして送信するには、これらのウェブサイトのいずれかのアカウントを持っている必要があります。 [GitHub](https://github.com/) , [Bitbucket](https://bitbucket.org/) , または [GitLab](https://about.gitlab.com/) のアカウントを使用することができます。
-* [Liferay Patching Tool](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) : 移行の第一段階として、パッチやホットフィックス情報を確認するためにPatching Toolが必要です。
+* [パッチングツールのインストール](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) : 移行の第一段階として、パッチやホットフィックス情報を確認するためにPatching Toolが必要です。
 * ファイル圧縮ソフト：ローカルシステムのOSとしてWindowsを使用している場合、圧縮ファイルをパック/アンパックするためのファイル圧縮ソフト（例えば、 [7-Zip](https://www.7-zip.org/) ）も必要です。
 
 これらのツールをインストールした後は、時間をかけて慣れていくのがよいでしょう。
 
 例えば、もしあなたがGitの初心者なら、 [Gitの公式資料](https://git-scm.com/doc) (参考文書、コマンド・チートシートなどを含む)を見たり、移行に適用する前に独自に使用する練習をしたりするとよいでしょう。 Gitは、この移行ガイドで使用されているもの以上の機能を持つ、強力なバージョン管理ツールです。
 
-Liferay Cloudへの移行には、独自のカスタムコード、モジュール、テーマを、プロジェクト専用のLiferay Workspaceに移動することも必要です。 もしLiferay Workspaceを初めて使うのであれば、効果的な使い方を学ぶこともできます。 [ここ](https://learn.liferay.com/dxp/latest/ja/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) .
+Liferay Cloudへの移行には、独自のカスタムコード、モジュール、テーマを、プロジェクト専用のLiferay Workspaceに移動することも必要です。 もしLiferay Workspaceを初めて使うのであれば、効果的な使い方を学ぶこともできます。 [Liferay Workspaceの概要](https://learn.liferay.com/dxp/latest/ja/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) .
 
 ### 環境を整える
 

@@ -36,7 +36,7 @@ Liferay Cloud のサブスクリプションに関連するメールアカウン
 
 1. GitHubにログインします。
 
-1. `dxpcloud` を _Your teams_ の検索ボックスで検索します。
+1. `dxpcloud` を **Your teams** の検索ボックスで検索します。
 
 ![あなたのチーム」の検索ボックスでdxpcloudを検索してください。](./initial-setup-overview/images/02.png)
 
@@ -54,9 +54,9 @@ Liferay Cloud のサブスクリプションに関連するメールアカウン
 
 ## CI と Liferay サービスにログインする
 
-Jenkins(CI）のWebインターフェースにログインし、Liferay DXPインスタンスの非本番環境(例： *dev* と *uat*）にアクセスできるようにログインしてください。
+Jenkins(CI）のWebインターフェースにログインし、Liferay DXPインスタンスの非本番環境(例： **dev** と **uat**）にアクセスできるようにログインしてください。
 
-ログイン認証情報は、最初のオンボーディングメールで提供され、お客様の *infra* 環境の [secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) として記載されています。
+ログイン認証情報は、最初のオンボーディングメールで提供され、お客様の **infra** 環境の [secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) として記載されています。
 
 詳細な手順については、 [Liferay Cloudサービスにログインする](./logging-into-your-liferay-cloud-services.md) を参照してください。
 
@@ -66,7 +66,7 @@ Liferay Cloudでのデプロイを開始する前に、正しい環境とサー�
 
 ### 環境の検証
 
-購入したすべての環境が、*Projects*下のLiferay Cloudコンソールの[ホームページ](https://console.liferay.cloud/projects)に表示されていることを確認します。
+購入したすべての環境が、 **Projects** 下のLiferay Cloudコンソールの [ホームページ](https://console.liferay.cloud/projects) に表示されていることを確認します。
 
 ![図3：Liferay Cloudコンソールでプロビジョニングされた環境を確認する。](./initial-setup-overview/images/03.png)
 
@@ -76,21 +76,21 @@ Liferay Cloudでのデプロイを開始する前に、正しい環境とサー�
 
 各環境のロケーションが、チームからリクエストされたロケーションと一致していることを確認します。
 
-すべての環境ロケーションは、Liferay Cloudコンソールの[ホームページ](https://console.liferay.cloud/projects)に記載されています。
+すべての環境ロケーションは、Liferay Cloudコンソールの [ホームページ](https://console.liferay.cloud/projects) に記載されています。
 
-また、環境の *［概要］* ページや *［設定］* ページに移動することで、環境の位置を確認することができます。
+また、環境の ［**概要**］ ページや ［**設定**］ ページに移動することで、環境の位置を確認することができます。
 
 ![図4：［Overview］ページで環境の位置を表示する。](./initial-setup-overview/images/04.png)
 
-環境の場所があなたのチームが要求した場所と一致しない場合は、 [Liferayサポートチームに](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)連絡してください。
+環境の場所があなたのチームが要求した場所と一致しない場合は、 [Liferayサポートチームに](https://help.liferay.com/hc/ja/articles/360030208451-DXP-Cloud-Support-Overview) 連絡してください。
 
 ### DXP Cloudスタックサービスの確認
 
 Liferay Cloudのスタックサービスが正しくデプロイされていることを確認します。
 
-1. Liferay Cloudコンソールから *dev* 環境にアクセスします。
+1. Liferay Cloudコンソールから **dev** 環境にアクセスします。
 
-1. *Services* ページに移動します。
+1. **Services** ページに移動します。
 
 ![図 5：［Services］ページで Liferay Cloud Stackサービスのステータスを表示する。](./initial-setup-overview/images/05.png)
 

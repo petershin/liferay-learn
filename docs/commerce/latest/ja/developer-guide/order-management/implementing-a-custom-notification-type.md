@@ -104,7 +104,7 @@ Liferay Commerceは、ストアの様々なイベントトリガーに対して�
 
 ## カスタム通知タイプの仕組み
 
-この例は、主に7つのステップで構成されています。 最初に、OSGi登録用にクラスに注釈を付ける必要があります。 次に、[CommerceNotificationType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-notification-api/src/main/java/com/liferay/commerce/notification/type/CommerceNotificationType.java)のインターフェイスを確認します。 次に、カスタムの`CommerceNotificationType`の実装を終了します。
+この例は、主に7つのステップで構成されています。 最初に、OSGi登録用にクラスに注釈を付ける必要があります。 次に、 [CommerceNotificationType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-notification-api/src/main/java/com/liferay/commerce/notification/type/CommerceNotificationType.java) のインターフェイスを確認します。 次に、カスタムの`CommerceNotificationType`の実装を終了します。
 
 その後、`ModelListener`を`CommerceShipment`クラスに対して作成します。 次に、`CommerceDefinitionTermContributor`インターフェイスを確認します。 最後に、新しい通知のワイルドカードを解決するために、用語コントリビューターを実装します。
 
@@ -164,7 +164,7 @@ public String getLabel(Locale locale);
     :lines: 15-41
 ```
 
-出荷が作成される度に通知をトリガーするためには、[`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/BaseModelListener.java) インターフェースを実装する[`BaseModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java)クラスを拡張する必要があります。 このインタフェースは、作成、アップデート、削除などのイベントをトリガーとするエンティティのメソッドを持ちます。 `onAfterCreate(T model)`メソッドを使用すると、出荷の作成時に通知をトリガーすることができます。
+出荷が作成される度に通知をトリガーするためには、 [`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/BaseModelListener.java) インターフェースを実装する [`BaseModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java) クラスを拡張する必要があります。 このインタフェースは、作成、アップデート、削除などのイベントをトリガーとするエンティティのメソッドを持ちます。 `onAfterCreate(T model)`メソッドを使用すると、出荷の作成時に通知をトリガーすることができます。
 
 ### CommerceDefinitionTermContributorインターフェースの確認
 

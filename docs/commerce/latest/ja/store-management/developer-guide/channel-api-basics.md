@@ -7,9 +7,9 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Once Liferay is running,
+Liferayが起動したら、
 
-1. Download and unzip [Channel API Basics](./liferay-a2t5.zip).
+1. [Channel API Basics](./liferay-a2t5.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/store-management/developer-guide/liferay-a2t5.zip -O
@@ -40,7 +40,7 @@ Once Liferay is running,
    }
    ```
 
-1. チャンネルの追加を確認するには、 *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Channels*に移動してください。 新しいチャンネルが表示されます。
+1. チャンネルの追加を確認するには、 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Channels** に移動してください。 新しいチャンネルが表示されます。
 
    ![新しいチャンネルが追加されたことを確認する。](./channel-api-basics/images/01.png)
 
@@ -75,7 +75,7 @@ Once Liferay is running,
 | `-u "test@liferay.com:learn"`                                                         | 基本認証の認証情報を入力します。                   |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、[OAuth2によるユーザーの認証](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users)をご覧ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2) 経由でユーザーを認証する必要があります。 OAuth2を活用したReactアプリケーションのサンプルは、 [OAuth2によるユーザーの認証](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) をご覧ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用します。
@@ -116,7 +116,7 @@ Once Liferay is running,
 
 cURLまたはJavaコマンドで、Liferayインスタンスの全チャンネルをリストアップします。
 
-### チャンネル_GET_FromInstance.sh
+### Channels_GET_FromInstance.sh
 
 コマンド：
 
@@ -130,7 +130,7 @@ cURLまたはJavaコマンドで、Liferayインスタンスの全チャンネ�
    :language: bash
 ```
 
-### チャンネル_GET_FromInstance.java
+### Channels_GET_FromInstance.java
 
 コマンド：
 
@@ -165,17 +165,17 @@ java -classpath .:* Channels_GET_FromInstance
 | `name:desc`       | 名前の降順で並べます。           |
 | `siteGroupId:asc` | siteGroupIdの昇順でソートする。 |
 
-詳しくは、[APIクエリパラメーター](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html)をご参照ください。
+詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
 
 ## チャンネルを取得する
 
 cURL または Java `get` コマンドで特定のチャンネルを取得します。 `1234` をチャンネルのIDに置き換えてください。
 
 ```{tip}
-Channels_GET_FromInstance.[java|sh]`を使用して、すべてのチャンネルのリストを取得し、特に必要なチャンネルの `id` をメモします。
+`Channels_GET_FromInstance.[java|sh]`を使用して、すべてのチャンネルのリストを取得し、特に必要なチャンネルの `id` をメモします。
 ```
 
-### チャンネル_GET_ById.sh
+### Channel_GET_ById.sh
 
 コマンド：
 
@@ -189,7 +189,7 @@ Channels_GET_FromInstance.[java|sh]`を使用して、すべてのチャンネ�
    :language: bash
 ```
 
-### チャンネル_GET_ById.java
+### Channel_GET_ById.java
 
 コマンド：
 
@@ -211,7 +211,7 @@ java -classpath .:* -DchannelId=1234 Channel_GET_ById
 
 cURL と Java `patch` コマンドで既存のチャンネルを更新します。 `1234` を自分のチャンネルのIDに置き換えてください。
 
-### チャンネル_PATCH_ById.sh
+### Channel_PATCH_ById.sh
 
 コマンド：
 
@@ -225,7 +225,7 @@ cURL と Java `patch` コマンドで既存のチャンネルを更新します�
    :language: bash
 ```
 
-### チャンネル_PATCH_ById.java
+###  Channel_PATCH_ById.java
 
 コマンド：
 
@@ -245,7 +245,7 @@ java -classpath .:* -DchannelId=1234 Channel_PATCH_ById
 
 cURL と Java `delete` コマンドで既存のチャンネルを削除します。 `1234` を自分のチャンネルのIDに置き換えてください。
 
-### チャンネル_DELETE_ById.sh
+### Channel_DELETE_ById.sh
 
 コマンド：
 
@@ -259,7 +259,7 @@ cURL と Java `delete` コマンドで既存のチャンネルを削除します
    :language: bash
 ```
 
-### チャンネル_DELETE_ById.java
+### Channel_DELETE_ById.java
 
 コマンド：
 
@@ -275,4 +275,4 @@ java -classpath .:* -DchannelId=1234 Channel_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Channel` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。
+[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Channel` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。

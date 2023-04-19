@@ -3,7 +3,7 @@ uuid: 355cd01a-1910-4066-8b7f-fff359cc14f5
 ---
 # Using the Notification Queue
 
-{bdg-secondary}`Available Liferay 7.4 U72+/GA72+`
+{bdg-secondary}`Available Liferay 7.4 U75+/GA75+`
 
 Liferay provides the Notification Queue application for reviewing email notifications triggered by an Object action. You can verify the status of notifications and resend them if needed. 
 
@@ -25,7 +25,7 @@ Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) fo
 
 ## Clearing the Notification Queue
 
-By default, Liferay clears the notification queue every `43200` minutes (i.e., 30 days). This deletes all notifications in the queue. If desired, you can configure this deletion interval.
+By default, Liferay clears the notification queue every `43200` minutes (i.e., 30 days). This deletes all notifications in the queue, regardless of status, sent or unsent. If desired, you can configure this deletion interval.
 
 To do this,
 
@@ -35,7 +35,7 @@ To do this,
 
 1. Under Notification Queue, enter the number of minutes between deletion operations.
 
-   The deletion interval must be greater than `15` minutes.
+   This interval must be greater than `15` minutes.
 
    ![Under Notification Queue, enter the number of minutes between deletion operations.](./using-the-notification-queue/images/03.png)
 

@@ -88,42 +88,50 @@ To find the fields you can filter by in the Custom Filter widget, users with the
 
 {bdg-secondary}`Available 7.2 FP10+, 7.3 FP1+, 7.4 (all updates)`
 
-As described in [Accessing Nested Fields](../search-facets/custom-facet.md#accessing-nested-fields), object definition and web content structure fields are nested fields. On the latest Fix Pack and GA release of 7.2 and 7.3, and in all 7.4 updates, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for nested fields.
+Object definition and [web content structure fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) are nested fields in Elasticsearch. The [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for nested fields.
 
-To inspect nested fields in existing documents in the index,
-
-1. Enable _Display Results in Document Form_ in the Search Results widget's configuration, then search for a result that uses a nested field.
-
-1. Click _Details_ to see a result's document view, then find its parent field (`ddmFieldArray` in web content structures, `nestedFieldArray` in objects). For example, a web content article has a `ddmFieldArray` with nested fields:
-
-   ```json
-   "ddmFieldArray" : [
-      {
-        "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
-        "ddmFieldValueKeyword_en_US" : "true",
-        "ddmFieldValueKeyword_en_US_String_sortable" : "true",
-        "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
-      }
-   ],
-   ```
-
-   Meanwhile, an object entry has a `nestedFieldArray` with nested fields:
-
-   ```json
-   "nestedFieldArray" : [
-      {
-        "fieldName" : "lastAcessed",
-        "valueFieldName" : "value_date",
-        "value_date" : "20230502000000"
-      }
-   ],
-   ```
-
-Using a nested field in a Custom Filter configuration requires three custom filter widgets.  A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is added for wrapping the required child queries: one child query matches the field's name, the other the value.
+Using a nested field in a Custom Filter configuration requires three custom filter widgets. A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is added for wrapping the required child queries: one child query matches the field's name, the other the value.
 
 ```{important}
 If you require custom filters on multiple nested fields in the same page, you must configure separate custom parameter names for each child query. See [Custom Filter Examples](./custom-filter-examples.md#boosting-matches-to-nested-fields) for an example. 
 ```
+
+To find nested fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
+
+For example, an object entry has a `nestedFieldArray` with nested fields:
+
+```json
+"nestedFieldArray" : [
+   {
+     "fieldName" : "lastAcessed",
+     "valueFieldName" : "value_date",
+     "value_date" : "20230502000000"
+   }
+],
+```
+
+Meanwhile, a web content article has a `ddmFieldArray` with nested fields:
+
+```json
+"ddmFieldArray" : [
+   {
+     "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
+     "ddmFieldValueKeyword_en_US" : "true",
+     "ddmFieldValueKeyword_en_US_String_sortable" : "true",
+     "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
+   }
+],
+```
+
+Depending on your version, [nested field storage for DDM fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
+
+| Liferay Version  | Nested Field Enabled by Default |
+| :--------------- | :------- |
+| 7.4 all updates  | &#10004; |
+| 7.3 all updates  | &#10004; |
+| DXP 7.2 SP3/FP8+ | &#10004; |
+
+To revert the behavior, use the Enable Legacy Dynamic Data Mapping Index Fields setting in System Settings &rarr; Dynamic Data Mapping Indexer.
 
 See [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) for an example showing the use of a web content structure field with the Custom Filter widget.
 

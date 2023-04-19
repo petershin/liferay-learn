@@ -173,11 +173,7 @@ To sort by an object's field, a special notation is required, following the patt
 
 {bdg-secondary}`7.2 FP12+, 7.3 FP2+, 7.4 (all updates)`
 
-As described in [Accessing Nested Fields](../search-facets/custom-facet.md#accessing-nested-fields), web content structure fields became [nested fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) as of Liferay 7.2 SP3+/FP8+ (and on all Liferay 7.3 versions). On the latest Fix Pack and GA release of 7.2 and 7.3, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for these nested fields.
-
-Sort configurations relying on fields named `ddm__keyword__*` at the root of the Elasticsearch document continue to be valid---the Search framework was adjusted to account for the nested field types. Use these fields as usual in your Sort widget's _Field_ configuration, even though they're no longer at the root of the document.
-
-The Sort widget works with keyword, date, and numeric fields. To find DDM fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
+The Sort widget works with keyword, date, and numeric fields. To find web content structure (DDM) fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.
 
 The documents have a `ddmFieldArray` object with nested content:
 
@@ -205,3 +201,14 @@ The documents have a `ddmFieldArray` object with nested content:
 ```
 
 To use one of these fields in a Sort configuration, enter the `ddmFieldName` value (e.g., `ddm__keyword__40806__Testb5mx_en_US`) as the Indexed Field setting.
+
+Depending on your version, [nested field storage](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) may be enabled by default for Elasticsearch:
+
+| Liferay Version  | Nested Field Enabled by Default |
+| :--------------- | :------- |
+| 7.4 all updates  | &#10004; |
+| 7.3 all updates  | &#10004; |
+| DXP 7.2 SP3/FP8+ | &#10004; |
+
+To revert the behavior, use the Enable Legacy Dynamic Data Mapping Index Fields setting in System Settings &rarr; Dynamic Data Mapping Indexer.
+

@@ -189,8 +189,6 @@ The Query String query should not be used if the value being passed is coming fr
 
 {bdg-secondary}`Available 7.2 FP10+, 7.3 FP1+, 7.4 (all updates)`
 
-As described in [Accessing Nested Fields](../search-facets/custom-facet.md#accessing-nested-fields), DDM Fields became [nested fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) as of Liferay 7.2 SP3+/FP8+ (and on all Liferay 7.3 versions). On the latest Fix Pack and GA release of 7.2 and 7.3, the [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for these nested fields.
-
 Using a [nested field](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) in a Custom Filter configuration requires three Custom Filter widgets on the search page. A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) that wraps the required child queries is added in one of the widgets: one child query matches the field's name, the other the value.
 
 This example demonstrates adding a boost for matches to a certain DDM Structure field.

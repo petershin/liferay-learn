@@ -2,6 +2,7 @@
 toc:
   - ./configuring-liferay/understanding-configuration-scope.md
   - ./configuring-liferay/system-settings.md
+  - ./configuring-liferay/feature-flags.md
   - ./configuring-liferay/adding-custom-fields.md
   - ./configuring-liferay/changing-language-translations.md
   - ./configuring-liferay/managing-countries.md

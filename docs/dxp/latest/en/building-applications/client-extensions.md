@@ -5,6 +5,7 @@ toc:
   - ./client-extensions/front-end-client-extensions.md
   - ./client-extensions/microservice-client-extensions.md
   - ./client-extensions/configuration-client-extensions.md
+  - ./client-extensions/batch-client-extensions.md
 uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 ---
 # Client Extensions
@@ -37,9 +38,7 @@ These are the classifications of client extensions:
 
 ### Batch Client Extensions
 
-```{warning}
-Batch client extensions are currently a **beta feature** in Liferay 7.4. The available features are temporarily limited.
-```
+{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md)`
 
 Batch client extensions provide data entities to your Liferay instance, such as [object definitions](./objects/creating-and-managing-objects/exporting-and-importing-object-definitions.md) or [workflow definitions](../process-automation/workflow/introduction-to-workflow.md). Create batch client extensions by exporting data via the [batch engine framework](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md).
 

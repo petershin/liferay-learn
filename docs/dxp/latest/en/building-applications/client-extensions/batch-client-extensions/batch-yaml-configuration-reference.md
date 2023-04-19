@@ -3,11 +3,11 @@ uuid: a92f8a77-b22a-44be-88c0-fff9e1284347
 ---
 # Batch YAML Configuration Reference
 
-You can define a Batch client extension with a `client-extension.yaml` file.
+You can define a batch client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-This `client-extension.yaml` file defines a Batch client extension:
+This `client-extension.yaml` file defines a client extension of type `batch`:
 
 ```yaml
 yoke-batch:
@@ -20,12 +20,12 @@ yoke-oauth-application-headless-server:
 
 ## YAML Properties
 
-These properties are specific to Batch client extensions:
+These properties are specific to batch client extensions:
 
-| Name | Data Type | Default Value | Description |
-| :--- | :--- | :--- | :--- |
-| `name` | String | | The Batch name. |
-| `oAuthApplicationHeadlessServer` | String | | (Required) The identity (`externalReferenceCode`) of an OAuth2 application headless server profile. |
+| Name                             | Data Type | Description     |
+| :------------------------------- | :-------- | :-------------- |
+| `name`                           | String    | The batch name. |
+| `oAuthApplicationHeadlessServer` | String    | (Required) The identity (`externalReferenceCode`) of an OAuth2 application headless server profile. |
 
 ## Additional Information
 

@@ -23,7 +23,7 @@ To use email notifications, your instance must have a configured [mail server](.
 
    ![Click the Add button and select Email.](./creating-notification-templates/images/01.png)
 
-   You can use object field references to populate messages dynamically with entry data. In the template designer, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select an object definition. Copy and paste field reference terms into the desired template fields. You can only reference fields for entries directly involved in the object's action. See [Definition of Terms Reference](#definition-of-terms-reference) for more information.
+   You can use field references to populate messages dynamically with entry and user data. To reference object entry fields, go to the Definition of Terms section and use the drop-down menu to select an object definition. To reference fields for the user who triggers the notification action, go to the General Terms section. In the following steps, you can use these reference terms for the desired template fields. See [Definition of Terms Reference](#definition-of-terms-reference) for more information.
 
    ![Search entities to add references to supported fields.](./creating-notification-templates/images/02.png)
 
@@ -63,7 +63,7 @@ Once created, you can use notification templates with object actions. See [Defin
 
    ![Click the Add Button and select User Notification.](./creating-notification-templates/images/07.png)
 
-   You can use object field references to populate messages dynamically with entry data. In the template designer, go to the *Definition of Terms* section and use the *Entity* drop-down menu to select an object definition. Copy and paste field reference terms into the desired template fields. You can only reference fields for entries directly involved in the object's action. See [Definition of Terms Reference](#definition-of-terms-reference) for more information.
+   You can use field references to populate messages dynamically with entry and user data. To reference object entry fields, go to the Definition of Terms section and use the drop-down menu to select an object definition. To reference fields for the user who triggers the notification action, go to the General Terms section. In the following steps, you can use these reference terms for the desired template fields. See [Definition of Terms Reference](#definition-of-terms-reference) for more information.
 
    ![Search entities to add references to supported fields.](./creating-notification-templates/images/08.png)
 
@@ -89,11 +89,15 @@ Once created, you can use notification templates with object actions. See [Defin
 
 ## Definition of Terms Reference
 
-When designing notification templates, you can use definition terms to access user and entry data to dynamically populate a template. This includes any entries and users involved in the event triggering the [notification](../../building-applications/objects/creating-and-managing-objects/actions/understanding-action-types.md#notification) action.
+When designing notification templates, you can use definition terms to access user and entry data to dynamically populate a template. This includes any entries and users involved in the event triggering the [notification action](../../building-applications/objects/creating-and-managing-objects/actions/understanding-action-types.md#notification).
 
 Consider a scenario with a custom Ticket object that is on the child side of a one-to-many relationship with the User system object. This relationship is used to determine the ticket's assignee. If you add a notification action to the Ticket object for notifying the assignee on entry update, then the template used for this action can access data for both the updated ticket and the assignee.
 
 Terms are available for both custom and default object fields.
+
+```{important}
+You can only reference fields for entries and users directly involved in the event that triggers the notification action. 
+```
 
 ### Default Terms for Current Entry
 

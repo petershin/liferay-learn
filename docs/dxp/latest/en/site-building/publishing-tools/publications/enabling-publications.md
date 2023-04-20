@@ -31,7 +31,7 @@ Follow these steps to enable Publications:
    Using Sandbox Only can help reduce accidental edits to production.
    ```
 
-1. (Optional) Enable *Allow Unapproved Changes* to let users publish unapproved changes to a publication.
+1. (Optional) Enable *Allow Unapproved Changes* to let users publish unapproved changes to production.
 
 1. Click *Save* to save your configuration. You're redirected to the Publications application page.
 

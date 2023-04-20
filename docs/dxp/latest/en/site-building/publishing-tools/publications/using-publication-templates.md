@@ -21,14 +21,14 @@ To create a publication template,
 
    ![Enter a name and description for the template.](./using-publication-templates/images/02.png)
 
-1. (Optional) Set the template as the default for new publications.
+1. (Optional) Set this template as the default for new publications.
 
-   **Default Template**: Manually created publications use the template by default. You can select an alternative template during publication creation. When [Sandbox Only mode](./enabling-publications.md#how-to-enable-publications) is enabled, automatically created publications use the template unless a default sandbox template exists.
+   **Default Template**: Manually created publications use this template by default, but you can select an alternative template during publication creation. When [Sandbox Only mode](./enabling-publications.md#how-to-enable-publications) is enabled, automatically created publications use the template if a Default Sandbox Template isn't set.
 
-   **Default Sandbox Template**: Automatically created publications use the template when [Sandbox Only mode](./enabling-publications.md#how-to-enable-publications) is enabled. You can still manually create publications using an alternative template.
+   **Default Sandbox Template**: Automatically created publications use this template when [Sandbox Only mode](./enabling-publications.md#how-to-enable-publications) is enabled. You can still manually create publications using an alternative template.
 
    ```{note}
-   You can only have one default template and default sandbox template at a time.
+   You can only have one default template and one default sandbox template at a time.
    ```
 
 1. Enter a name and description to use for publications created with the template.

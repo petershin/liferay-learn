@@ -31,9 +31,9 @@ Follow these steps to enable Publications:
    Using Sandbox Only can help reduce accidental edits to production.
    ```
 
-1. (Optional) Toggle *Allow Unapproved Changes*. While enabled, users can publish a publication even if it contains unapproved changes.
+1. (Optional) Enable *Allow Unapproved Changes* to let users publish unapproved changes to a publication.
 
-1. Click *Save* to save your configuration. This redirects you to the Publications application page.
+1. Click *Save* to save your configuration. You're redirected to the Publications application page.
 
 Once enabled, you can access the drop-down Publications bar menu from anywhere in your Liferay instance.
 
@@ -47,7 +47,7 @@ If desired, you can disable Publications at any time via the Publications applic
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Publications*.
 
-1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) in the Application Bar, and select *Settings*.
+1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) in the Application Bar, and select *Settings*.
 
    ![Open the Publications application, click the Actions button, and select Settings.](./enabling-publications/images/03.png)
 

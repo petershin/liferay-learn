@@ -3,20 +3,20 @@ uuid: 1793412f-135e-4ee3-bb27-a46e3383ff7c
 ---
 # Understanding Personal Data
 
-Your customers interact with your site in various ways. Some of these interactions, such as message board replies or form submissions, leave behind personal data on your system. See [managing user data](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) to learn about all the different types of personal data that might get generated on your site.
+Customers interact with your site in various ways. Some of these interactions, such as message board replies or form submissions, leave behind personal data on your system. If you must comply with regulations such as the EU's GDPR, Liferay gives you tools for managing that data so you can be in compliance. See [managing user data](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data) to learn about all the different types of personal data that might get generated on your site.
 
-## Working with Personal Data
+In this step and the next, you'll use Liferay's user data tools to deactivate or delete a user and anonymize or delete the user's data.
 
 1. Log into Liferay as the administrator (i.e. [Kyle Klein](../users-accounts-organizations/managing-users.md#creating-users)).
 
-1. Change the user authentication setting. Note, this is only for our learning and testing purposes.
+1. Change the user authentication setting so you can log in as the user you'll create below. Note, this is only for our learning and testing purposes.
 
    * Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_.
    * Under Platform, click _User Authentication_.
    * Uncheck the box next to require strangers to verify their email address.
    * Click _Save_.
 
-1. Set permissions for the regular user role.
+1. Set permissions for the regular user role so that users by default can access the Message Boards.
 
    * Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Roles_.
    * Scroll down and click _User_.
@@ -76,7 +76,7 @@ Your customers interact with your site in various ways. Some of these interactio
 
 In this way, as customers interact with your site, they leave behind personal data. 
 
-Next: [Managing and Deleting Personal Data](./managing-and-deleting-personal-data.md)
+Next, you'll learn how to manage this data, should users wish their data to be anonymized or deleted: [Managing and Deleting Personal Data](./managing-and-deleting-personal-data.md)
 
 ## Relevant Concepts
 

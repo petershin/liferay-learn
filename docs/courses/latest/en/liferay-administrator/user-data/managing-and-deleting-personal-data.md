@@ -7,7 +7,7 @@ Liferay provides user data tools for managing and deleting personal user data. T
 
 ## Exporting Personal Data
 
-Individuals have a right to request their personal data. Follow the steps to export Tommy Tanner's personal data.
+Morally and sometimes legally, individuals have a right to request their personal data, and Tommy Tanner has requested his Message Boards data. Follow the steps to export it for him.
 
 1. Log back into Liferay as the administrator.
 
@@ -15,15 +15,15 @@ Individuals have a right to request their personal data. Follow the steps to exp
 
 1. Click _Options_ (![Options icon](../../images/icon-actions.png)) for Tommy Tanner. Click _Export Personal Data_.
 
-1. In the next page, click _Add_ (![Add icon](../../images/icon-add.png)) to start a new export process.
+1. On the next page, click _Add_ (![Add icon](../../images/icon-add.png)) to start a new export process.
 
-1. In the next page, select all items you wish to export. For example, select all personal data from message boards. Click _Export_ after making your selection.
+1. On the next page, select all items you wish to export. For example, select all personal data from message boards. Click _Export_ after making your selection.
 
    ![Select the items you wish to export.](./managing-and-deleting-personal-data/images/01.png)
 
-1. The next page shows an export process for each category of personal data. To download, click _Options_ (![Options icon](../../images/icon-actions.png)) and select _Download_. The personal user data is downloaded to your machine.
+1. The next page shows an export process for each category of personal data. To download, click _Options_ (![Options icon](../../images/icon-actions.png)) and select _Download_. The personal user data is downloaded to your machine. You can now send it to Tommy. 
 
-1. On your local machine, unzip the downloaded file. The folders contain XML files that are both machine and human readable.
+1. On your local machine, unzip the downloaded file. The folders contain XML files that are both machine and human readable. 
 
 ## Anonymizing Personal Data
 
@@ -37,13 +37,13 @@ Choose to anonymize personal data if you want to keep existing content without p
 
    ![Select each category of data to anonymize.](./managing-and-deleting-personal-data/images/02.png)
 
-1. Click _Options_ (![Options icon](../../images/icon-actions.png)) next to message boards and click _Anonymize_. Click _OK_ in the pop-up window. The user's personal data has now been anonymized (e.g. The message board thread no longer shows Tommy Tanner.)
+1. Click _Options_ (![Options icon](../../images/icon-actions.png)) next to message boards and click _Anonymize_. Click _OK_ in the pop-up window. The user's personal data has now been anonymized by having the name changed to the anonymous user. 
 
    ![The message board thread no longer shows Tommy Tanner.](./managing-and-deleting-personal-data/images/03.png)
 
 ## Deleting Personal Data
 
-Finally, you can choose to delete personal data completely. This option deletes any data or content the user generated.
+Finally, you can choose to delete personal data completely. This option deletes data or content the user generated.
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_.
 
@@ -51,7 +51,7 @@ Finally, you can choose to delete personal data completely. This option deletes 
 
 1. Click _Options_ (![Options icon](../../images/icon-actions.png)) for Tommy Tanner. Click _Delete Personal Data_.
 
-1. The next page shows all personal data associated with the user. Select the forms category.
+1. The next page shows all personal data associated with the user. Select the _forms_ category.
 
 1. Click _Options_ (![Options icon](../../images/icon-actions.png)) next to the forms category and click _Delete_. Click _OK_ in the pop-up window. 
 

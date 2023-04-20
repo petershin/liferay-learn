@@ -3,13 +3,19 @@ uuid: 50529940-7894-40c7-b819-25f3f2a83930
 ---
 # Exporting and Importing Object Definitions
 
-{bdg-secondary}`Available Liferay 7.4 U5+/GA9+`
+{bdg-secondary}`Available Liferay 7.4 U68+/GA68+`
 
-You can import and export object definitions as `.json` files. This makes it easy to migrate objects between Liferay environments.
+You can export and import object definitions as `.json` files. These files include the definition's complete schema (e.g., configurations, fields, actions, relationships).
 
-```{important}
-Objects does not support exporting and importing relationships. All other object elements and configurations are supported (e.g., scope, fields, layouts, actions).
+When exporting definitions with relationships, the JSON file includes all relationships defined in the current object, as well as many-to-many relationships defined in other objects. However, the file does not include one-to-many relationships defined in other objects.
+
+If an imported definition references picklists or objects that do not exist, Liferay automatically generates them using the external reference codes provided in the JSON file.
+
+<!--TASK: Uncomment when batch feature and documentation is ready...
+```{tip}
+You can use the batch client extension to help migrate object definitions between Liferay environments. See [Client Extensions](../../client-extensions.md) for more information.
 ```
+-->
 
 ## Exporting Definitions
 
@@ -31,17 +37,23 @@ Once exported, you can import the object definition into compatible Liferay envi
 
    ![Click the Actions button in the Application Bar and select Import Object.](./exporting-and-importing-object-definitions/images/02.png)
 
-1. Enter a *name* for the new object and select the *JSON file* you want to import.
+1. Enter a name for the object. You can edit this value after import.
 
    ```{important}
    Object names must be unique and use PascalCase.
    ```
 
+1. Select a *JSON file* to import.
+
+   Once selected, the modal window displays the definition's external reference code (ERC). You can edit the ERC after import.
+
    ![Enter a name and select the desired JSON file.](./exporting-and-importing-object-definitions/images/03.png)
 
 1. Click *Import*.
 
-The object definition imports in the background and can take a few minutes.
+The object definition begins importing in the background and can take a few minutes.
+
+If the definition references picklists or objects that do not exist, Liferay automatically generates them using the external reference codes provided in the JSON file.
 
 ## Additional Information
 

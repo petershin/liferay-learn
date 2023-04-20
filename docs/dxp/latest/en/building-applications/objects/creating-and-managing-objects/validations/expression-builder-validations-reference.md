@@ -99,7 +99,7 @@ match([textField], "[regex]")
 
 ### Old Value (with Text)
 
-Retrieves the prior value for the specified text field. You can then use this value with other functions and operators.
+Retrieves the prior value for the specified text field. You can use the value with other functions and operators.
 
 ```
 oldValue([textFieldName])
@@ -199,7 +199,7 @@ Checks if a number field is less than or equal to a specific numeric value and r
 
 ### Old Value (with Numeric)
 
-Retrieves the prior value for the specified numeric field. You can then use this value with other functions and operators.
+Retrieves the prior value for the specified numeric field. You can use the value with other functions and operators.
 
 ```
 oldValue([numericField])
@@ -243,7 +243,7 @@ futureDates([dateField], "[yyyy-MM-dd]")
 
 ### Old Value (with Date)
 
-Retrieves the prior value for the specified date field. You can then use this value with other functions and operators.
+Retrieves the prior value for the specified date field. You can use the value with other functions and operators.
 
 ```
 oldValue([dateField])
@@ -323,7 +323,7 @@ OR match([lastNameField], "[A-Za-z]{1,50}")
 
 ## Validation Examples
 
-The following validations are common examples. To use them, replace `fieldName` with the name of the fields you want to validate.
+The following validations are common examples. To use them, replace `fieldName` with the name of the field to validate.
 
 ### Name Validation (with Text)
 

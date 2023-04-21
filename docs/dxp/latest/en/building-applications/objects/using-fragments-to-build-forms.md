@@ -55,7 +55,7 @@ Form fragments can only be used with custom objects. Therefore, Liferay hides th
 
 ## Supported Field Types for Form Components
 
-Each form fragment can support one or more object field type. The default form components support these fields.
+Each form fragment can support one or more object field types. The default form components support these fields.
 
 | Form Fragment    | Object Field Types                                |
 |:-----------------|:--------------------------------------------------|

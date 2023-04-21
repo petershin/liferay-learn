@@ -123,7 +123,7 @@ Follow these steps to edit the object draft:
 
 1. Enable or disable categorization for object entries.
 
-   While enabled, you can add categorization blocks to fields tabs in custom layouts. See [Adding Categorization to Fields Tabs](./layouts/adding-categorization-to-fields-tabs.md). Additionally, you can add the tags and categories fragments in form containers, allowing you to add metadata to the object entries.
+   While enabled, you can add categorization blocks to fields tabs in custom layouts. See [Adding Categorization to Fields Tabs](./layouts/adding-categorization-to-fields-tabs.md). Additionally, you can attach metadata to the object entries by adding the tags and categories fragments in form containers.
 
 1. Enable or disable comments for object display pages.
 

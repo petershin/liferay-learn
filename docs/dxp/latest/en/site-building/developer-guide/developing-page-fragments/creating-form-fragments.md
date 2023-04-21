@@ -74,7 +74,7 @@ After that, follow the same process as when creating a basic fragment. See [Usin
 | `multiselect` | Select from a list of checkboxes.                    |
 | `number`      | Numeric fields.                                      |
 | `relationship`| Define object relationships.
-| `select`      | Select options from dropdown lists.       |
+| `select`      | Select options from drop-down lists.       |
 | `text`        | Adds support for text fields.             |
 
 ## Using the `input` Variable with Form Fragments
@@ -90,17 +90,17 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 | `required`     | `boolean` | Whether the input is required.                                            |
 | `value`        | `string`  | Field's value.                                                            |
 | `label`        | `string`  | Input's label.                                                            |
-| `showLabel`    | `boolean` | Whether the label is visible to users.                                    |
+| `showLabel`    | `boolean` | Label visibility.
 | `errorMessage` | `string`  | Form submission errors.                                                   |
 | `helpText`     | `string`  | UI help message for the form field. If undefined, this property is empty. |
-| `showHelpText` | `boolean` | Whether the help text is visible to users.                                |
+| `showHelpText` | `boolean` | Help text visibility.
 | `attributes`   | `object`  | Options added to the fragment for specific input types.                   |
 
 ### Attributes for `file` Input
 
 | Property                       | Type                    | Description                                                                                                                                                                               |
 |:-------------------------------|:------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `allowedFileExtensions`        | `string`                | Allowed file extensions. If Show Supported File Info is enabled, the allowed extensions are displayed in the field's help text.                                                           |
+| `allowedFileExtensions`        | `string`                | Allowed file extensions. If Show Supported File Info is enabled, the allowed extensions appear in the field's help text.                                                           |
 | `maxFileSize`                  | `number`                | Maximum upload size in megabytes. If Show Supported File Info is enabled, the maximum allowed size appears in the field's help text.                                                      |
 | `selectFromDocumentLibrary`    | `boolean`               | Whether users can select files from the document library. This is set in the object's [attachment field](../../../building-applications/objects/creating-and-managing-objects/fields.md). |
 | `selectFromDocumentLibraryURL` | `string` or `undefined` | If `selectFromDocumentLibrary` is true, this property contains the URL for rendering the corresponding `ItemSelector`.                                                                    |
@@ -109,7 +109,7 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 
 | Property   | Type                    | Description                                                                                                   |
 |:-----------|:------------------------|:--------------------------------------------------------------------------------------------------------------|
-| `dataType` | `integer` or `decimal`  | Whether to allow integer or decimal numbers.                                                                  |
+| `dataType` | `integer` or `decimal`  | Choose integer or decimal numbers.                                                                  |
 | `max`      | `number` or `undefined` | Maximum number allowed.                                                                                       |
 | `min`      | `number` or `undefined` | Minimum number allowed.                                                                                       |
 | `step`     | `string` or `undefined` | String value that can be used with the HTML input "step" attribute to indicate the maximum allowed precision. |

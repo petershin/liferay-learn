@@ -236,7 +236,7 @@ Form fragments include unique configuration options. To access them, you must ma
 
 | Field | Description |
 | :--- | :--- |
-| Show Characters Count| Displays the number of characters entered and gives a warning message when the maximum character count is exceeded. The maximum character count can be configured in the object's field configuration. See [Field Types UI Reference](../../../../../building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) for more information.|
+| Show Characters Count| Displays the number of characters entered and a warning when the maximum character count is exceeded. The maximum character count can be configured in the object's field configuration. See [Field Types UI Reference](../../../../../building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects.md) for more information.|
 
 ### Categories
 

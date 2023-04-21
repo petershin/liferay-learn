@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.4+`
 
-クライアントエクステンションを使えば、OSGiモジュールをデプロイすることなく、Liferayを拡張することができます。 従来のモジュール開発と同様に、クライアントエクステンションは [Liferay Workspace](../tooling/liferay-workspace.md)に存在します。 を学ぶことから始めましょう。
+クライアントエクステンションを使えば、OSGiモジュールをデプロイすることなく、Liferayを拡張することができます。 従来のモジュール開発と同様に、クライアントエクステンションは [Liferay Workspace](../tooling/liferay-workspace.md) に存在します。 を学ぶことから始めましょう。
 
 - クライアントエクステンションの開発を始めるために必要なツールは？
 - クライアントの拡張子を設定ファイルに定義する方法
@@ -15,7 +15,7 @@
 1. Java 8またはJDK 11。
 
     ```{note}
-    対応するJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)をご確認ください。 推奨されるJVMの設定については、[JVM設定](../../installation-and-upgrades/references/jvm-configuration.html) を参照してください。
+    対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) をご確認ください。 推奨されるJVMの設定については、 [JVM設定](../../installation-and-upgrades/references/jvm-configuration.html) を参照してください。
     ```
 
 1. Liferayのワークスペースです。 クライアント拡張プロジェクトのサンプルを含むワークスペースをダウンロードするには、次のように実行します。
@@ -26,7 +26,7 @@
 
     クライアント拡張プロジェクト( `client-extensions/` ディレクトリ内）を自分のワークスペースにコピーするか、サンプルワークスペー スを直接使用することができます。
 
-1. Liferay Experience Cloud(LXC)をご利用の場合は、 [`lcp` CLI ツール](https://learn.liferay.com/liferay-cloud/latest/en/reference/command-line-tool.html)...が必要です。
+1. Liferay Experience Cloud(LXC)をご利用の場合は、 [コマンドラインツール](https://learn.liferay.com/liferay-cloud/latest/ja/reference/command-line-tool.html) ...が必要です。
 
 ## クライアントエクステンションを設定する
 

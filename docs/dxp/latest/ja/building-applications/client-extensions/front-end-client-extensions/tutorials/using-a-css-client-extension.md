@@ -2,7 +2,7 @@
 
 {bdg-secondary}`利用可能 Liferay 7.4 U45+/GA45+`
 
-CSSクライアントエクステンションを使えば、テーマやLiferayのコードに依存することなく、ページスタイルをオーバーライドすることができます。 クライアントエクステンション( [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace)のもの）から始めます。
+CSSクライアントエクステンションを使えば、テーマやLiferayのコードに依存することなく、ページスタイルをオーバーライドすることができます。 クライアントエクステンション( [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace) のもの）から始めます。
 
 ## 前提条件
 
@@ -11,7 +11,7 @@ CSSクライアントエクステンションを使えば、テーマやLiferay�
 1. Java(JDK8またはJDK11）をインストールする。
 
    ```{note}
-   対応するJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)を確認してください。 推奨されるJVMの設定については、[JVM Configuration](../../../installation-and-upgrades/reference/jvm-configuration.md) を参照してください。
+   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM Configuration](../../../installation-and-upgrades/reference/jvm-configuration.md) を参照してください。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍してください：
@@ -102,19 +102,19 @@ STARTED sample-global-css_1.0.0
 
 配備したクライアントエクステンションを使用するために、Liferayのページを設定します：
 
-1. 少なくとも1つのボタンがあるページで、上部にある _編集_ アイコン ![Edit icon](../../../../images/icon-edit-pencil.png) をクリックします。
+1. 少なくとも1つのボタンがあるページで、上部にある **編集** アイコン ![Edit icon](../../../../images/icon-edit-pencil.png) をクリックします。
 
 1. サイドバーで「ページデザインオプション」メニュー(![Page Design Options icon](../../../../images/icon-format.png))に移動し、メニュー上部の設定アイコン(![Configuration icon](../../../../images/icon-cog3.png))をクリックします。
 
    ![ページデザインオプションメニューの歯車アイコンをクリックすると、このクライアント拡張機能の設定にアクセスできます。](./using-a-css-client-extension/images/01.png)
 
-1. ページ下部の *CSS Client Extensions* のセクションで、 *Add CSS Client Extensions*をクリックします。
+1. ページ下部の **CSS Client Extensions** のセクションで、 **Add CSS Client Extensions** をクリックします。
 
    ![リストからCSSクライアント拡張を追加します。](./using-a-css-client-extension/images/02.png)
 
-1. ポップアップモーダルからCSSクライアント拡張を選択し、 *Add*をクリックします。
+1. ポップアップモーダルからCSSクライアント拡張を選択し、 **Add** をクリックします。
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 これで、クライアントエクステンションの設定は完了です。 ページエディターで、ボタンの背景色が、CSSで指定した色になりました。 編集モード以外でページにCSSが適用されるのを確認するには、ページを公開する必要があります。
 

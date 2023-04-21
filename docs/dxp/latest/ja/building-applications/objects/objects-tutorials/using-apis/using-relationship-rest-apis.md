@@ -4,7 +4,7 @@
 
 カスタムオブジェクトやシステムオブジェクトに関連を追加すると、Liferayはそれらの関連にアクセスするためのRESTエンドポイントを生成します。 エントリーの関連付けや関連付けの解除、エントリーの関連エントリーを返すことができます。 これらのエンドポイントは、1対多の関連では親オブジェクトに、多対多の関連では両方のオブジェクトに追加されます。
 
-続行するには、新しいLiferay 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。 その後、スクリプトを実行してオブジェクトエントリーを作成し、互いの関連を管理します。
+続行するには、新しいLiferay 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。 その後、スクリプトを実行してオブジェクトエントリーを作成し、互いの関連を管理します。
 
 ## Liferayインスタンスのセットアップ
 ```{include} /_snippets/run-liferay-portal.md
@@ -12,7 +12,7 @@
 
 次に、関連する3つのカスタムオブジェクトを[作成](../../creating-and-managing-objects/creating-objects.md) します。
 
-1. *グローバルメニュー* (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］*タブで*［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブで ［**オブジェクト**］ をクリックします。
 
 1. 3つのオブジェクトドラフトを作成します。
 
@@ -53,7 +53,7 @@
    | `Able to Baker` | `ableToBaker` | 1対多 | Baker |
    | `Able to Charlie` | `ableToCharlie` | 1対多 | Charlie |
 
-1. 各オブジェクトを[公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)します。
+1. 各オブジェクトを [公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) します。
 
 公開後、以下の関連APIを含む、それらのREST APIにアクセスできます。
 

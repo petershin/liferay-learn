@@ -13,7 +13,7 @@ Liferay は、ピックリストの定義 (`ListTypeDefinition`) とそのエン
 
 次に、サンプルコードを用意します：
 
-1. [Picklists API Basics](./liferay-v3n6.zip)をダウンロードし、解凍してください。
+1. [Picklists API Basics](./liferay-v3n6.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/picklists/liferay-v3n6.zip -O
@@ -42,7 +42,7 @@ Liferay は、ピックリストの定義 (`ListTypeDefinition`) とそのエン
    }
    ```
 
-1. *Global Menu* &rarr; *Control Panel* &rarr; *Picklists*に移動します。 新しいピックリストが表示されます。
+1. **Global Menu** &rarr; **Control Panel** &rarr; **Picklists** に移動します。 新しいピックリストが表示されます。
 
    ![新しいピックリストが追加されたことを確認してください。](./picklists-api-basics/images/02.png)
 
@@ -155,7 +155,7 @@ java -classpath .:* ListTypeDefinitions_GET_FromInstance
 以下のcURLまたはJavaコマンドで、特定のピックリストを取得します。
 
 ```{tip}
-ListTypeDefinitions_GET_FromInstance.[java|sh]``を使用して、インスタンス ``Picklist`` のIDを取得します。
+`ListTypeDefinitions_GET_FromInstance.[java|sh]` を使用して、インスタンス ``Picklist`` のIDを取得します。
 ```
 
 ### ListTypeDefinition_GET_ById.sh

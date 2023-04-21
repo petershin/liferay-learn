@@ -21,7 +21,7 @@ other-tools/liferay-npm-bundler.md
 * [デフォルトのバンドラーローダー](./other-tools/liferay-npm-bundler/default-bundler-loaders.md)
 * [Liferayとローダー構成のエクスポート方法](./other-tools/liferay-npm-bundler/how-liferay-amd-loader-configuration-is-exported.md)
 * [ポータルがnpmパッケージを公開する方法](./other-tools/liferay-npm-bundler/how-portal-publishes-npm-packages.md)
-* [How the Bundler Formats JS Modules](./other-tools/liferay-npm-bundler/how-the-bundler-formats-js-modules.md)
+* [バンドラーがJavaScriptモジュールをフォーマットする方法](./other-tools/liferay-npm-bundler/how-the-bundler-formats-js-modules.md)
 * [バンドラー構成プリセットについて](./other-tools/liferay-npm-bundler/how-the-default-preset-configures-the-liferay-npm-bundler.md)
 * [npmbundlerrc構造について](./other-tools/liferay-npm-bundler/npmbundlerrc-structure.md)
 * [OSGiバンドルとnpmパッケージ構造](./other-tools/liferay-npm-bundler/the-structure-of-osgi-bundles-containing-npm-packages.md)

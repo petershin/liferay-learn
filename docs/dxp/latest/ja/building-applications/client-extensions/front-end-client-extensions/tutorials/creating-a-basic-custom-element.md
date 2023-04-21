@@ -16,7 +16,7 @@
 カスタムエレメントクライアントの拡張は、構築、パッケージ化、ホスティングの方法に関係なく、あらゆるテクノロジーを使用できます。 このチュートリアルでは、Reactを使用したカスタム要素アプリケーションのサンプルのみを提供しています。
 ```
 
-`create_custom_element.sh` を実行するには、 [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), [YARN](https://classic.yarnpkg.com/)の最新版が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
+`create_custom_element.sh` を実行するには、 [Node.JS](https://nodejs.org/) , [NPM](https://www.npmjs.com/) , [YARN](https://classic.yarnpkg.com/) の最新版が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
 
 ## `create_custom_element.sh` スクリプトを実行します。
 
@@ -79,7 +79,7 @@ h5v7-custom-element
 
 ### Reactルーティングを理解する
 
-生成されたコードには、 `hello-world` (デフォルト)、 `hello-foo`、 `hello-bar`の3つのルートが含まれています。 ルーティングは、アプリケーションを実行する際に使用できる代替コードのセットです。 基本的な例については、[Using Routes with Custom Elements](./using-routes-with-custom-elements.md)を参照してください。
+生成されたコードには、 `hello-world` (デフォルト)、 `hello-foo`、 `hello-bar`の3つのルートが含まれています。 ルーティングは、アプリケーションを実行する際に使用できる代替コードのセットです。 基本的な例については、 [カスタム要素でルーティングを使用する](./using-routes-with-custom-elements.md) を参照してください。
 
 ## Reactアプリケーションの構築
 
@@ -107,7 +107,7 @@ File sizes after gzip:
   121 B     build/static/css/main.9877909d.css
 ```
 
-これらのファイルは、Liferayにアクセス可能な場所に[ホスト](#hosting-the-application-files)されている必要があります。 これらは、リモートサーバーや、静的リソースの提供に最適化されたデータストレージシステムでホストすることができます。 デモの目的で、この例ではLiferayのドキュメントライブラリにアップロードし、WebDAV URLを使ってホストしています。
+これらのファイルは、Liferayにアクセス可能な場所に [ホスト](#hosting-the-application-files) されている必要があります。 これらは、リモートサーバーや、静的リソースの提供に最適化されたデータストレージシステムでホストすることができます。 デモの目的で、この例ではLiferayのドキュメントライブラリにアップロードし、WebDAV URLを使ってホストしています。
 
 ```{tip}
 ビルドごとに一意のファイル名が生成されます。 カスタムアプリケーションをテストするときは、ビルド後に `.js` と `.css` ファイルを更新するのを忘れないようにしてください。
@@ -116,25 +116,26 @@ File sizes after gzip:
 ## アプリケーションファイルのホスティング
 
 デモのために、このチュートリアルでは、Liferayドキュメントライブラリでアプリケーションの静的リソースをホストします。 本番環境では、静的リソースをホストするために最適化されたサーバーでアプリケーションのファイルをホストする必要があります。
+
 `{include} /_snippets/run-liferay-dxp.md`
 
 次に、以下の手順に従います。
 
-1. *サイトメニュー* (![Site Menu](../../../../images/icon-product-menu.png)) を開き、 *［コンテンツ & データ］*を展開して、 *［ドキュメントとメディア］*へ移動してください。
+1. **サイトメニュー**(![Site Menu](../../../../images/icon-product-menu.png)) を開き、 ［**コンテンツ & データ**］ を展開して、 ［**ドキュメントとメディア**］ へ移動してください。
 
-1. *追加* (![Add Button](../../../../images/icon-add.png)) をクリックし、 *複数ファイルのアップロード*を選択します。
+1. **追加**(![Add Button](../../../../images/icon-add.png)) をクリックし、 **複数ファイルのアップロード** を選択します。
 
 1. `.js` と `.css` のファイルをアップロードエリアにドラッグ＆ドロップしてください。
 
-   または、*［Select Files］*を使用してアップロードしてください。
+   または、 ［**Select Files**］ を使用してアップロードしてください。
 
    ![.js と .css ファイルを Liferayドキュメントライブラリにアップロードします。](./creating-a-basic-custom-element/images/02.png)
 
-1. *［Publish］*をクリックします。
+1. ［**Publish**］ をクリックします。
 
 これにより、ファイルがドキュメントライブラリに追加され、リモートアプリケーションを作成するために使用する固有のURLが割り当てられます。
 
-各ファイルのURLを表示するには、*Info*アイコン (![Info Icon](../../../../images/icon-information.png)) をクリックし、ファイルを選択してください。 各ファイルの*WebDAV URL*をコピーし、次のステップで使用するために保存してください。
+各ファイルのURLを表示するには、 **Info** アイコン (![Info Icon](../../../../images/icon-information.png)) をクリックし、ファイルを選択してください。 各ファイルの **WebDAV URL** をコピーし、次のステップで使用するために保存してください。
 
 ![各ファイルのWebDAV URLをコピーします。](./creating-a-basic-custom-element/images/03.png)
 
@@ -145,9 +146,9 @@ File sizes after gzip:
 
 ## Liferayにアプリケーションを登録する
 
-1. *グローバルメニュー* (![Global Menu](../../../../images/icon-applications-menu.png)) を開き、*［アプリケーション］*タブをクリックし、*［リモートアプリケーション］*へ移動します。
+1. **グローバルメニュー**(![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**リモートアプリケーション**］ へ移動します。
 
-1. *追加* (![Add Button](../../../../images/icon-add.png)） をクリックします。
+1. **追加**(![Add Button](../../../../images/icon-add.png)） をクリックします。
 
 1. 次の値を入力します。
 
@@ -160,7 +161,7 @@ File sizes after gzip:
    | CSSのURL       | `.css`ファイルのWebDAV URL |
    | ポートレットのカテゴリー名 | リモートアプリケーション          |
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 保存すると、LiferayはH5V7-Custom-Elementという名前のウィジェットを作成し、他のページウィジェットのようにサイトページに配置することができます。 選択したポートレットカテゴリー名の下に表示されるウィジェットです。
 

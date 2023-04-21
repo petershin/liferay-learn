@@ -28,7 +28,7 @@ Liferay Objects はこれらのアクションタイプを提供します。
 | オブジェクトエントリーを追加 | アクティブなオブジェクトにエントリーを作成する。                       |
 | オブジェクトエントリーを更新 | 現在のオブジェクト・エントリーのフィールドを更新する。                    |
 | Webhook        | URLにペイロードを配信する。                                |
-| Groovy スクリプト   | [Groovy](https://groovy-lang.org/)のスクリプトを実行する。 |
+| Groovy スクリプト   | [Groovy](https://groovy-lang.org/) のスクリプトを実行する。 |
 
 ```{important}
 Groovyスクリプトアクションは、Liferay Experience Cloud Self-ManagedとLiferay DXP Self-Hostedでのみ利用可能です。

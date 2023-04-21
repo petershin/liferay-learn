@@ -4,11 +4,11 @@
 
 カスタムオブジェクトの定義を公開すると、Liferayはオブジェクトとそのデータと対話するためのデフォルトの [REST APIs](../../../headless-delivery/consuming-apis/consuming-rest-services.md) を生成します。 これらのAPIは、オブジェクトのスコープ(会社やサイトなど）に応じて異なります。 定義にリレーションシップやスタンドアロンアクションが含まれている場合、Liferayはそれらを呼び出すためのエンドポイントも生成します。
 
-これらのヘッドレスサービスのパスは、 `c/[pluralobjectlabel]` の命名パターン(例： `/o/c/timeoffrequests`）に従います。 利用可能なオブジェクトAPIは、Liferay API Explorerの `[server]:[port]/o/api` (例： `localhost:8080/o/api`）で確認・テストできます。 *REST Applications* をクリックすると、API のドロップダウン・リストが表示されます。
+これらのヘッドレスサービスのパスは、 `c/[pluralobjectlabel]` の命名パターン(例： `/o/c/timeoffrequests`）に従います。 利用可能なオブジェクトAPIは、Liferay API Explorerの `[server]:[port]/o/api` (例： `localhost:8080/o/api`）で確認・テストできます。 **REST Applications** をクリックすると、API のドロップダウン・リストが表示されます。
 
 ![各オブジェクトは、「REST Applications」の下に表示されます。](./headless-framework-integration/images/01.png)
 
-オブジェクトがアクティブな間は、これらのAPIを使用して、基本的なCRUD操作、 [集約項](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) と [入れ子フィールド](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md)を使用した複雑なクエリの実行、スタンドアロンアクションのトリガー、エントリ関係の管理などを実行できます。 オブジェクトAPIのチュートリアルについては、 [Using APIs](../objects-tutorials/using-apis.md) を参照してください。
+オブジェクトがアクティブな間は、これらのAPIを使用して、基本的なCRUD操作、 [集約項](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) と [入れ子フィールド](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md)を使用した複雑なクエリの実行、スタンドアロンアクションのトリガー、エントリ関係の管理などを実行できます。 オブジェクトAPIのチュートリアルについては、 [APIの使用](../objects-tutorials/using-apis.md) を参照してください。
 
 ## デフォルトのカンパニースコープ付きREST API
 
@@ -73,7 +73,7 @@ HTTPエンドポイントでは、 `relationshipName` をリレーションシ�
 サイトスコープ付きオブジェクトの場合、ERC エンドポイントには `/scope/{scopeKey}` のプレフィックスが含まれる(例： `/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`）。 システムオブジェクトでは、外部参照コードのエンドポイントは利用できません。
 
 ```{tip}
-専用のリレーションシップAPIに加えて、`nestedFields`クエリパラメータをオブジェクトの他のGET APIと組み合わせて使用すると、エントリとその関連エントリを返すことができます。 このパラメータを使用する場合、出力に含めたいリレーションシップの名前を指定する必要があります(例：`nestedFields=ticketAssignee`など）。 詳細と入門チュートリアルについては、[Using Nested Fields with REST APIs](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md) を参照してください。
+専用のリレーションシップAPIに加えて、`nestedFields`クエリパラメータをオブジェクトの他のGET APIと組み合わせて使用すると、エントリとその関連エントリを返すことができます。 このパラメータを使用する場合、出力に含めたいリレーションシップの名前を指定する必要があります(例：`nestedFields=ticketAssignee`など）。 詳細と入門チュートリアルについては、 [REST APIでネストしたフィールドの使用](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md) を参照してください。
 ```
 
 ## スタンドアロンアクションREST API
@@ -102,4 +102,4 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 ## 追加情報
 
 * [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-* [APIを使う](../objects-tutorials/using-apis.md)<!--TASK: * \[Consuming GraphQL APIs\](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->
+* [APIを使う](../objects-tutorials/using-apis.md)<!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

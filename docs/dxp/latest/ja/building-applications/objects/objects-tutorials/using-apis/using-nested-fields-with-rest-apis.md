@@ -5,10 +5,10 @@
 カスタムオブジェクトAPIでは、 `nestedFields` パラメータを使用すると、1つのGETリクエストで複数レベルの関連オブジェクトを返すことができます。 `nestedFieldsDepth` パラメータは、クエリに含まれるオブジェクトエントリの深さを決定する： `0-5`.
 
 ```{tip}
-`nestedFields`パラメータは、通常複数のリクエストを必要とする情報を取得するのに便利な方法です。 これを使えば、あるエントリーとその関連エントリーを一緒に取り出すことができます。 関連するエントリのみを返すために、Liferayは専用の[関係API](./../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を提供します。 [関係性REST APIの使用](./using-relationship-rest-apis.md)を参照し、紹介します。
+`nestedFields`パラメータは、通常複数のリクエストを必要とする情報を取得するのに便利な方法です。 これを使えば、あるエントリーとその関連エントリーを一緒に取り出すことができます。 関連するエントリのみを返すために、Liferayは専用の [関係API](./../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を提供します。 [関係性REST APIの使用](./using-relationship-rest-apis.md)を参照し、紹介します。
 ```
 
-[](#setting-up-a-liferay-instance) Liferay 7.4 のインスタンスを新規に立ち上げ、  提供されたチュートリアルコードを準備します。 [](#preparing-the-sample-code) 次に、スクリプトを実行して関連エントリーを作成し、 `nestedFields` パラメータを使用してクエリーを実行します。
+[押立てる](#setting-up-a-liferay-instance) Liferay 7.4 のインスタンスを新規に立ち上げ、  提供されたチュートリアルコードを準備します。 [装う](#preparing-the-sample-code) 次に、スクリプトを実行して関連エントリーを作成し、 `nestedFields` パラメータを使用してクエリーを実行します。
 
 ## Liferayインスタンスのセットアップ
 
@@ -23,47 +23,46 @@
 
    最初のオブジェクトです：
 
-   | フィールド｜値｜の3つ
+   | フィールド | 値 |
    | :--- | :--- |
    | ラベル | `Able` |
-   | 複数形ラベル｜`Ables`｜(アブルス
+   | 複数形ラベル | `Ables` |
    | 名前 | `Able` |
 
    第2オブジェクト
 
-   | フィールド｜値｜の3つ
+   | フィールド | 値 |
    | :--- | :--- |
    | ラベル | `Baker` |
-   | 複数形ラベル | `ベーカーズ`｜Bakers
+   | 複数形ラベル | `ベーカーズ` | 
    | 名前 | `Baker` |
 
    第3のオブジェクト
 
-   | フィールド｜値｜の3つ
+   | フィールド | 値 |
    | :--- | :--- |
-   | ラベル｜`Charlie`｜(チャーリー
-   
-   | 名前 | `Charlie`
+   | ラベル | `Charlie` | 
+   | 名前 | `Charlie` |
 
 1. 各オブジェクトのドラフトに`name`テキストフィールドを追加します。
 
-   | ラベル｜フィールド名｜タイプ｜必須｜を追加する。
+   | ラベル | フィールド名 | タイプ | 必須 | を追加する。
    | :--- | :--- | :--- | :--- |
-   | `名前`｜テキスト｜ &#10004; |
+   | `名前` | `名前` | テキスト |  &#10004; |
 
 1. 次の関係を定義する。
 
-   エイブル用です：
+   Ableの場合：
 
-   | ラベル｜リレーションシップ名｜タイプ｜オブジェクト｜です。
+   | ラベル | リレーション名 | 種類 | オブジェクト |
    | :--- | :--- | :--- | :--- |
-   | (1)パン屋さん｜(2)パン屋さん｜(3)パン屋さん｜(4)一から十まで｜(5)パン屋さん｜(6)
+   | `Able to Baker` | `ableToBaker` | 1対多 | Baker |
 
-   ベーカー用：
+   For Baker:
 
-   | ラベル｜リレーションシップ名｜タイプ｜オブジェクト｜の3つからなる。
+   | ラベル | リレーション名 | 種類 | オブジェクト |
    | :--- | :--- | :--- | :--- |
-   | パン屋からチャーリーへ」｜「パン屋からチャーリーへ」｜「一対多」｜「チャーリー」｜「パン屋からチャーリーへ」｜「パン屋からチャーリー」へ
+   | `Baker to Charlie` | `bakerToCharlie` | 1対多 | Charlie |
 
 1. 各オブジェクトを [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) します。
 
@@ -84,7 +83,7 @@ unzip liferay-w4s7.zip
 サンプルコードには、各オブジェクトの POST コマンドと、 `Charlie`の GET コマンドが含まれています。
 
 ```{tip}
-サイトオブジェクトとカンパニーオブジェクトに対して生成されるAPIの完全なリストは、[オブジェクトヘッドレスフレームワーク統合](../../understanding-object-integrations/headless-framework-integration.md) を参照してください。 カスタムオブジェクトの API は Liferay API Explorer を介して `[server]:[port]/o/api` (例: `localhost:8080/o/api`) で閲覧、テストすることができます。 REST Applications*をクリックし、APIを選択します。
+サイトオブジェクトとカンパニーオブジェクトに対して生成されるAPIの完全なリストは、[オブジェクトヘッドレスフレームワーク統合](../../understanding-object-integrations/headless-framework-integration.md) を参照してください。 カスタムオブジェクトの API は Liferay API Explorer を介して `[server]:[port]/o/api` (例: `localhost:8080/o/api`) で閲覧、テストすることができます。 **REST Applications** をクリックし、APIを選択します。
 ```
 
 ## サンプルコードを使用する

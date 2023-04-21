@@ -26,7 +26,7 @@ client-extensions/configuration-client-extensions.md
 
 クライアントエクステンションを使用すると、次のことができます。
 
-* Liferayのコードに依存することなく、 [カスタムJavaScriptやCSS](#front-end-client-extensions)を適用することができます。
+* Liferayのコードに依存することなく、 [カスタムJavaScriptやCSS](#front-end-client-extensions) を適用することができます。
 * Liferay ページの [カスタム要素](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) に、リモートでホストされているアプリケーションを埋め込む。
 * [クライアント拡張に変換することで、同じ設定やオブジェクトを複数の環境に適用することができます](#configuration-client-extensions)
 * カスタムサービスや [関数を呼び出す](#microservice-client-extensions) Liferayの外部で実行される(例えば、RESTエンドポイント）、お好みのプログラミング言語や技術を使用します。
@@ -51,15 +51,15 @@ client-extensions/configuration-client-extensions.md
 
 マイクロサービスクライアント拡張は、Liferay内でトリガーするAPIエンドポイント(オブジェクトやワークフローのアクションなど）を提供します。 これらのアクションイベントがAPIを呼び出したら、Liferayの外で好きな機能を別の *マイクロサービス*として実行することができます。
 
-具体的な種類については、 [Microservice Client Extensions](./client-extensions/microservice-client-extensions.md) をご参照ください。
+具体的な種類については、 [マイクロサービスクライアント拡張機能](./client-extensions/microservice-client-extensions.md) をご参照ください。
 
 ### コンフィギュレーション・クライアント拡張機能
 
 コンフィギュレーションクライアントエクステンションは、Liferayインスタンス内の機能を変更するための特定のコンフィギュレーションを提供します。
 
-これらは、他のクライアント拡張( [マイクロサービスクライアント拡張](#microservice-client-extensions)など）と一緒に使用することができます。 例えば、OAuthユーザーエージェントクライアントエクステンションを使用して、ユーザートリガーアクションイベントで動作するクライアントエクステンションを認証することができます。
+これらは、他のクライアント拡張( [マイクロサービスクライアント拡張](#microservice-client-extensions) など）と一緒に使用することができます。 例えば、OAuthユーザーエージェントクライアントエクステンションを使用して、ユーザートリガーアクションイベントで動作するクライアントエクステンションを認証することができます。
 
-具体的な種類については、 [Configuration Client Extensions](./client-extensions/configuration-client-extensions.md) をご参照ください。
+具体的な種類については、 [コンフィギュレーション・クライアント拡張機能](./client-extensions/configuration-client-extensions.md) をご参照ください。
 
 ## 追加情報
 

@@ -11,7 +11,7 @@
 1. Java(JDK8またはJDK11）をインストールする。
 
     ```{note}
-    対応するJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)を確認してください。 推奨されるJVMの設定については、[JVM Configuration](../../../installation-and-upgrades/reference/jvm-configuration.md) を参照してください。
+    対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM Configuration](../../../installation-and-upgrades/reference/jvm-configuration.md) を参照してください。
     ```
 
 1. サンプルワークスペースをダウンロードし、解凍してください：
@@ -80,17 +80,17 @@ STARTED liferay-sample-theme-favicon_1.0.0
 <!-- Should we suggest doing this to the pages of a Site Template? -->
 配備したクライアントエクステンションを使用するために、Liferayのページを設定します：
 
-1. ページで、上部にある _編集_ (![Edit icon](../../../../images/icon-edit-pencil.png)) をクリックします。
+1. ページで、上部にある **編集**(![Edit icon](../../../../images/icon-edit-pencil.png)) をクリックします。
 
-1. サイドバーの「ページデザインオプション」メニュー(![Page Design Options icon](../../../../images/icon-format.png)）に移動し、メニュー上部の _構成_ (![Configuration icon](../../../../images/icon-cog3.png)) をクリックします。
+1. サイドバーの「ページデザインオプション」メニュー(![Page Design Options icon](../../../../images/icon-format.png)）に移動し、メニュー上部の **構成**(![Configuration icon](../../../../images/icon-cog3.png)) をクリックします。
 
-1. _Look and Feel_ タブの _Favicon_ セクションで、 _Change Favicon_をクリックします。
+1. **Look and Feel** タブの **Favicon** セクションで、 **Change Favicon** をクリックします。
 
-1. _Client Extensions_ をクリックし、新しく配置したファビコン _Sample Theme Favicon_を選択します。
+1. **Client Extensions** をクリックし、新しく配置したファビコン **Sample Theme Favicon** を選択します。
 
    ![Sample Theme Favicon」クライアント拡張機能を選択し、「保存」をクリックします。](./using-a-theme-favicon-client-extension/images/01.gif)
 
-1. 下にスクロールして、 _保存_をクリックします。
+1. 下にスクロールして、 **保存** をクリックします。
 
 1. ページに戻ってください。 新しいファビコンがブラウザのタブに表示されます。
 

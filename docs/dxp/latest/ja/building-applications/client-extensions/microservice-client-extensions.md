@@ -18,7 +18,7 @@ microservice-client-extensions/notification-type-yaml-configuration-reference.md
 
 マイクロサービスクライアント拡張を定義し、Liferayインスタンスのイベントに応答して独自のコードを実行します。 どのようにコードを実装するかはあなた次第です。あなたが好きなパターンやテクノロジーを使ってください。 マイクロサービスのクライアント拡張はLiferayの外でホストされ、Liferay自体からの合図でトリガーされます。
 
-マイクロサービスクライアント拡張は、リクエストを適切に処理し、保護されたLiferay APIを呼び出すために、事前に設定された認証プロファイルを必要とします。 認証プロファイルは、同じプロジェクト内にクライアント拡張として含めることで追加できます(例： [OAuthユーザーエージェントクライアント拡張](./configuration-client-extensions.md#oauth-user-agent-client-extensions)）。
+マイクロサービスクライアント拡張は、リクエストを適切に処理し、保護されたLiferay APIを呼び出すために、事前に設定された認証プロファイルを必要とします。 認証プロファイルは、同じプロジェクト内にクライアント拡張として含めることで追加できます(例： [OAuthユーザーエージェントクライアント拡張](./configuration-client-extensions.md#oauth-user-agent-client-extensions) ）。
 
 マイクロサービスのクライアント拡張は、Liferay Experience Cloud内にデプロイされると自動的にホストされます。 Liferayインスタンスをセルフホストする場合、これらのクライアントエクステンションが使用するマイクロサービスを個別にホストする必要があります。
 

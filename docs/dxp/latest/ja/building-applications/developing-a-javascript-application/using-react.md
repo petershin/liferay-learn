@@ -6,7 +6,6 @@ toc:
     ./../client-extensions/front-end-client-extensions/tutorials/using-routes-with-custom-elements.md
   - ./using-react/remote-applications-with-headless-apis.md
   - ./using-react/react-component-utilities-reference.md
-
 ---
 # Using React
 
@@ -36,7 +35,7 @@ LiferayとReactを使用して独自のソリューションを構築します�
 :link: ./using-react/remote-applications-with-headless-apis.md
 :::
 
-:::{grid-item-card} React Component Utilities Reference
+:::{grid-item-card} Reactコンポーネントユーティリティーリファレンス
 :link: ./using-react/react-component-utilities-reference.md
 :::
 ::::

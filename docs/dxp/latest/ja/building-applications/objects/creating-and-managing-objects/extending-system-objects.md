@@ -10,7 +10,7 @@ Liferay Objectを使用すると、サポートされているシステムサー
 
 ![オブジェクトフレームワークと統合されたシステムサービスを拡張します。](./extending-system-objects/images/01.png)
 
-システムオブジェクトを拡張する場合、[フィールド](#adding-fields)、[リレーション](#adding-relationships)、[操作](#adding-actions)、[バリデーション](#adding-validations)を追加できます。
+システムオブジェクトを拡張する場合、 [フィールド](#adding-fields) 、 [リレーション](#adding-relationships) 、 [操作](#adding-actions) 、 [バリデーション](#adding-validations) を追加できます。
 
 | 機能    | システムオブジェクト | カスタムオブジェクト |
 |:----- |:---------- |:---------- |
@@ -26,7 +26,7 @@ Liferay Objectを使用すると、サポートされているシステムサー
 システムオブジェクトにフィールドを追加することができます。 追加のデータベースカラムは、サービスの元のテーブル名に`_x`を付加したものを使用する別のデータベーステーブルに追加されます(例: `AccountEntry_x`）。 システムオブジェクトは、利用可能なすべてのフィールドタイプ( [）をサポートしています](./fields.md)。 システムオブジェクトはカスタムレイアウトやビューをサポートしないため、これらのカスタムフィールドにはHeadless APIを介してのみアクセスできます。 詳細については、[オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md)を参照してください。
 
 ```{note}
-Liferayの[カスタムフィールド](../../system-administration/configuring-liferay/adding-custom-fields.md)アプリケーションは、[Expando](../../data-frameworks/expando-framework/accessing-custom-fields-with-expando.md)フレームワークを使ったほとんどのLiferayシステムアプリケーションへのフィールドを追加するためのものです。 オブジェクトはExpandoベースのカスタムフィールドに対応していないため、オブジェクト機能([relationships](#adding-relationships)、[actions](#adding-actions)および[validations](#adding-validations) など）で使用することはできません。
+Liferayの[カスタムフィールド](../../system-administration/configuring-liferay/adding-custom-fields.md)アプリケーションは、[Expando](../../data-frameworks/expando-framework/accessing-custom-fields-with-expando.md)フレームワークを使ったほとんどのLiferayシステムアプリケーションへのフィールドを追加するためのものです。 オブジェクトはExpandoベースのカスタムフィールドに対応していないため、オブジェクト機能( [relationships](#adding-relationships) 、 [actions](#adding-actions) および [validations](#adding-validations) など）で使用することはできません。
 ```
 
 ## リレーションシップの追加
@@ -34,7 +34,7 @@ Liferayの[カスタムフィールド](../../system-administration/configuring-
 システムオブジェクトとカスタムオブジェクトの間にリレーションシップを追加して、その実体をリンクさせることができます。 システムオブジェクトは、1対多と多対多の両方のリレーションシップをサポートしています。 詳細については、[オブジェクトリレーションシップの定義](./relationships/defining-object-relationships.md)を参照してください。
 
 ```{important}
-システムオブジェクトはカスタム [layouts](./layouts/designing-object-layouts.md）、 [views](./views/designing-object-views.md ）をサポートしていないため、システムオブジェクトのUIにリレーションを追加することはできない。 ヘッドレスAPIを経由してのみ対話が可能です。 
+システムオブジェクトはカスタム [layouts](./layouts/designing-object-layouts.md) 、 [views](./views/designing-object-views.md) をサポートしていないため、システムオブジェクトのUIにリレーションを追加することはできない。 ヘッドレスAPIを経由してのみ対話が可能です。 
 ```
 
 ### リレーションシップAPI

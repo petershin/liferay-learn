@@ -187,11 +187,11 @@ Each Fragment Set uses this structure:
 
 * `resources/` (optional): a folder containing any additional images or files the Fragments need. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
 
-You can use the Fragments Toolkit to quickly create projects with this structure.
+You can use the Fragments Toolkit to create projects quickly with this structure.
 
 ### Modifying fragment.json
 
-`fragment.json`  contains fragment attributes that can be modified to enhance the functionality and usability of fragments.
+`fragment.json` contains fragment attributes that can be modified to enhance the functionality and usability of fragments.
 
 | Key                    | Description                                                                                                                       |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------|

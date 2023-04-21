@@ -47,7 +47,7 @@ You can create applications that access Liferay's headless REST APIs using the O
    ```
 
    ```bash
-   cd liferay-c2b6.zip
+   cd liferay-c2b6
    ```
 
 1. Verify that `node` and `yarn` are installed. If not, run the setup script and follow the prompts:
@@ -56,37 +56,35 @@ You can create applications that access Liferay's headless REST APIs using the O
    ./setup_tutorial.sh
    ```
 
-1. Add your Liferay OAuth Client ID and Client Secret to the app's config files. Navigate to the `utils` folder of `grant-type-authorization-code`.
+1. Navigate into the app's root directory and start the React server.
 
    ```bash
-   cd liferay-c2b6.zip/c2b6-remote-app/src/grant-type-authorization-code/utils
-   ```
-
-   Open the `config.js` file and add your Client ID and Client Secret values. Do the same for the `config.js` files in `grant-type-client-credentials` folder and `grant-type-password` folder.
-
-1. Navigate back to the app's root directory and start the React server.
-
-   ```bash
-   cd liferay-c2b6.zip/c2b6-remote-app
+   cd c2b6-custom-element
    ```
 
    ```bash
-   yarn start
+   yarn install && yarn start
    ```
 
 ### Authorization Code Flow
 
 The authorization code flow requires users to log in with their credentials and approve authorization before permission is granted to the app. This additional step is avoided with the other flows.
 
-1. Open the React app running at <http://localhost:3000>, then click *Authorization Code Flow* at the top of the page. Click *Authorize*.
-
-   ![In the authorization code flow, click the Authorize button.](./using-oauth2-to-authorize-users/images/03.png)
+1. Open the React app running at <http://localhost:3000>, then click *Authorization Code Flow* at the top of the page. 
+   
+1. Input `http://localhost:8080/o/oauth2/authorize` for the Liferay authorize URL. Input the client ID from your clipboard. Click _Authorize_.
 
 1. If you're not already logged in, you are redirected to the Liferay login page before being sent to the authorization page. Enter your username and password (e.g. *test@liferay.com:learn*) and click *Sign In*. On the authorization page, click *Authorize*. If you are already logged in, you are sent to the authorization page directly.
 
-1. You are redirected back to the React app. Click *Get Authorization Code*, then click *Get Token*. The application makes a request to Liferay for an access token.
+   ![Click _Authorizez_ to authorize the application.](./using-oauth2-to-authorize-users/images/03.png)
 
-1. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
+   Your are redirected back to the React app. Note that authorization code that is used to make the next API call is displayed.
+
+1. Input `http://localhost:8080/o/oauth2/token` for the Liferay token URL. Input the client ID and client secret from your clipboard. Click _Get Token_. Note the authorization token that can be used to make future REST API calls is displayed.
+
+1. Input `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
+
+   ![A list of Liferay users is displayed.](./using-oauth2-to-authorize-users/images/04.png)
 
 ### Client Credentials Flow
 
@@ -94,9 +92,9 @@ The client credentials flow is used typically for server to server interaction a
 
 1. Open the React app running at <http://localhost:3000>, then click *Client Credentials Flow* at the top of the page. 
 
-1. Click *Get Token*. The application makes a request to Liferay for an access token.
+1. Input `http://localhost:8080/o/oauth2/token` for the Liferay token URL. Input the client ID and client secret from your clipboard. Click *Get Token*. Note the authorization token that can be used to make future REST API calls is displayed.
 
-1. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
+1. Input `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
 
 ### Password Flow
 
@@ -108,71 +106,69 @@ In a password flow, the username and password are directly exposed to the applic
 
 1. Open the React app running at <http://localhost:3000>, then click *Password Flow* at the top of the page. 
 
-1. Click *Get Token*. The application makes a request to Liferay for an access token.
+1. Input `http://localhost:8080/o/oauth2/token` for the Liferay token URL. 
 
-1. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
+1. Input the client ID and client secret from your clipboard. 
+
+1. Input your username and password (e.g. *test@liferay.com:learn*). 
+
+1. Click *Get Token*. Note the authorization token that can be used to make future REST API calls is displayed.
+
+1. Input `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
 
 ## Examine the Code
 
-The React app has three routes, each leading to a different authentication flow. The files for configuring each route/flow are located in separate folders. Each route's `components` folder defines the UI elements for handling the events fired by clicking buttons. For example, the `Authorize.js` file redirects to the authorization page, `Token.js` fetches the access token, and `Users.js` fetches the list of users. Each route's `utils` folder holds the `config.js` and `requests.js` files. 
+The React app is made up of different parts. The `components` folder defines the UI elements for handling the events fired by clicking buttons. For example, the `Authorize.js` file redirects to the authorization page, `Token.js` fetches the access token, and `Users.js` fetches the list of users. Each authorization flow uses some or all of these components
+
+Some or all of these components are used in the different authorization flows. Each of the authorization flow pages are defined in the `routes` folder.
+
+Finally, the API request to get an authorization token and the request to get users is defined in the `Requests.js` file in the `utils` folder. 
 
 ```
 src
-├── grant-type-authorization-code
-│   ├── components
-│   |   ├── Authorize.js
-│   |   ├── Token.js
-│   |   └── Users.js
-│   ├── utils
-│   |   ├── config.js
-│   |   └── Requests.js
-│   └── AuthorizationCode.js
-├── grant-type-client-credentials
-│   ├── components
-│   |   ├── Token.js
-│   |   └── Users.js
-│   ├── utils
-│   |   ├── config.js
-│   |   └── Requests.js
-│   └── ClientCredentials.js
-├── grant-type-password
-│   ├── components
-│   |   ├── Token.js
-│   |   └── Users.js
-│   ├── utils
-│   |   ├── config.js
-│   |   └── Requests.js
-│   └── Password.js
+├── components
+│   ├── Authorize.js
+│   ├── Token.js
+│   ├── Users.js
+├── routes
+│   ├── grant-type-authorization-code
+│   |   ├── AuthorizeCode.js
+│   ├── grant-type-client-credentials
+│   |   ├── ClientCredentials.js
+│   ├── grant-type-password
+│   |   ├── Password.js
+├── utils
+│   ├── Requests.js
 ├── App.js
 └── index.js
 ```
 
 ### Authorization Grant Type
 
-In `grant-type-authorization-code`, the first step is handled by the `Authorize.js` file. A request for authorization is made when the *Authorize* button is clicked.
+The `AuthorizeCode.js` file of the `grant-type-authorization-code` flow uses all three components (i.e. `Authorize.js`, `Token.js` and `Users.js`)
 
-```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/components/Authorize.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/routes/grant-type-authorization-code/AuthorizationCode.js
 :language: javascript
-:lines: 6-18
+:lines: 16-35
 ```
 
-In addition to the standard `clientId` and `clientSecret`, a `redirectUri` is also required in the `config.js` file. After authorizing the application, the Liferay server redirects the user back to the Authorization Code Flow page of the app. Along with the redirect, a one-time authorization code is passed back to the app in the URL (e.g. `http://localhost:3000/grant-type-authorization-code?code={code}`). 
+In the code, the first step is handled by the `Authorize.js` component. A request for authorization is made when the *Authorize* button is clicked.
 
-Clicking *Get Authorization Code* calls the `getCode` function to parse the authorization code. Then it can be passed in the access token request.
-
-```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/components/Authorize.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/components/Authorize.js
 :language: javascript
-:lines: 20-26
+:lines: 3-67
 ```
 
-Clicking *Get Token* calls the `getAuthToken` function in the `Requests.js` file.
+Along with the redirect, a one-time authorization code is passed back to the app in the URL (e.g. `http://localhost:3000/grant-type-authorization-code?code={code}`). 
 
-```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/utils/Requests.js
+The next step is handled by the `Token.js` component. Clicking *Get Token* calls the `getAuthToken` function in the `Requests.js` file.
+
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/components/Token.js
 :language: javascript
-:lines: 3-29
+:lines: 3-98
 ```
 
-The parameters `client_id`, `client_secret`, `code`, `grant_type`, and `redirect_uri` are sent in this API request. If the parameters are valid, Liferay returns a JSON response with the access token.
+In the `Token.js` component, the parameters `client_id`, `client_secret`, `code`, `grant_type`, and `redirect_uri` are sent in this API request. If the parameters are valid, Liferay returns a JSON response with the access token.
 
 Example response:
 
@@ -189,56 +185,35 @@ The `Users.js` file parses the response for the `access_token`.
 
 Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
 
-```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-authorization-code/utils/Requests.js
-:language: javascript
-:lines: 31-42
-```
-
-The access token is passed in the header of the API request as an `'Authorization': 'Bearer'` type authorization.
-
 ### Client Credentials Grant Type
 
-In `grant-type-client-credentials`, the `Request.js` file's `getAuthToken` function is called when the *Get Token* button is clicked.
+The `ClientCredentials.js` file of the `grant-type-client-credentials` flow uses two components (i.e. `Token.js` and `Users.js`). 
 
-```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-client-credentials/utils/Requests.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/routes/grant-type-client-credentials/ClientCredentials.js
 :language: javascript
-:lines: 3-27
+:lines: 6-31
 ```
 
-The parameters `client_id`, `client_secret`, and `grant_type` are sent in this API request. If the parameters are valid, Liferay returns a JSON response with the access token.
+In the `Token.js` component, the parameters `client_id`, `client_secret`, and `grant_type` are sent in the API request. If the parameters are valid, Liferay returns a JSON response with the access token.
 
 The `Users.js` file parses the response for the `access_token`.
 
 Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
-
-```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-client-credentials/utils/Requests.js
-:language: javascript
-:lines: 29-40
-```
-
-The access token is passed along in the header of the API request as an `'Authorization': 'Bearer'` type authorization.
 
 ### Password Grant Type
 
-In `grant-type-password`, the `Request.js` file's `getAuthToken` function is called when the *Get Token* button is clicked.
+The `Password.js` file of the `grant-type-password` flow uses two components (i.e. `Token.js` and `Users.js`).
 
-```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-password/utils/Requests.js
+```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/routes/grant-type-password/Password.js
 :language: javascript
-:lines: 3-29
+:lines: 6-31
 ```
 
-The parameters `client_id`, `client_secret`, `grant_type`, `password`, and `username` are sent as parameters in this API request. If the parameters are valid, the Liferay server returns a JSON response with the access token.
+In the `Token.js` component, the parameters `client_id`, `client_secret`, `grant_type`, `password`, and `username` are sent as parameters in the API request. If the parameters are valid, the Liferay server returns a JSON response with the access token.
 
-The `Users.js` file parses the response for the `access_token`.
+The `Users.js` component parses the response for the `access_token`.
 
 Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
-
-```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/grant-type-password/utils/Requests.js
-:language: javascript
-:lines: 31-42
-```
-
-The access token is passed along in the header of the API request as an `'Authorization': 'Bearer'` type authorization.
 
 ## Additional Information
 

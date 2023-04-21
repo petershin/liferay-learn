@@ -70,26 +70,12 @@ The `package.json` file contains the following code:
 The `dependencies` section includes the `sassy-inputs` library. This is not used in the example, but describes how an npm module is imported and used in your theme CSS client extension. The `liferayDesignPack` section describes the base theme used for the styles. Using the `styled` theme ensures that the existing styles specified on pages, fragments and widgets are not impacted. The other fields `main`, `name` and `version` provide required metadata.
 
 ```{note}
-You can set the base theme to `styled` or `unstyled`. All themes in Liferay use the `unstyled` or `styled` theme as the base. If you apply the theme CSS client extension to a page that uses a different theme, the client extension's styling replaces the styling from the theme. If you change the theme of a page that already uses a theme CSS client extension, the client extension is removed. 
+You can set the base theme to `styled` or `unstyled`. The unstyled theme contains a set of basic styles and the `styled` theme contains all of the styles from the `unstyled` theme along with additional styling. All themes in Liferay use the `unstyled` or `styled` theme as the base. 
+
+If you apply the theme CSS client extension to a page that uses a different theme, the client extension's styling **replaces** the styling from the theme. If you have custom styles in your original theme, make sure you add those to the `_custom.scss` file so that those elements are not affected when you apply the client extension. 
+
+If you change the theme of a page that already uses a theme CSS client extension, the client extension is removed. 
 ```
-<!-- I'm still confused by this. Scenario: 
-        1. You create this client extension based on styled. 
-        2. Your current theme was not based on styled. 
-        3. You deploy the client extension. 
-        4. What happens?
-    
-    What I'm looking for is *exactly* what happens. 
-
-    1. Do the client extension's CSS files get *added* to the styles already defined on the page? 
-    2. Or does the client extension through JavaScript remove all the styles and replace them with what's in the client extension? 
-
-    In the case of #1, styles intended to override styles from the styled theme get *added* to the page (because they didn't exist in the current theme), but they might not take effect because they aren't being used by the current theme. 
-
-    In the case of #2, the client extension becomes the theme. So developers have to make sure they define every style they need. 
-
-    Developers need to understand the behavior so they can apply it correctly. 
-
-    -Rich -->
 
 The `src/css/_custom.scss` file contains this SCSS:
 

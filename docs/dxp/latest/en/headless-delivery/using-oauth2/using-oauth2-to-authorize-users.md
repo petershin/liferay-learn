@@ -118,11 +118,9 @@ In a password flow, the username and password are directly exposed to the applic
 
 ## Examine the Code
 
-The React app is made up of different parts. The `components` folder defines the UI elements for handling the events fired by clicking buttons. For example, the `Authorize.js` file redirects to the authorization page, `Token.js` fetches the access token, and `Users.js` fetches the list of users. Each authorization flow uses some or all of these components
+The React app is made up of different parts. The `components` folder defines the UI elements and logic for handling the events fired by clicking buttons. For example, the `Authorize.js` file redirects to the authorization page, `Token.js` fetches the access token, and `Users.js` fetches the list of users. Each authorization flow uses some or all of these components
 
-Some or all of these components are used in the different authorization flows. Each of the authorization flow pages are defined in the `routes` folder.
-
-Finally, the API request to get an authorization token and the request to get users is defined in the `Requests.js` file in the `utils` folder. 
+The API request to get an authorization token and the request to get users is defined in the `Requests.js` file in the `utils` folder. 
 
 ```
 src
@@ -181,7 +179,7 @@ Example response:
 }
 ```
 
-The `Users.js` file parses the response for the `access_token`. 
+The `Users.js` component parses the response for the `access_token`. 
 
 Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
 
@@ -196,7 +194,7 @@ The `ClientCredentials.js` file of the `grant-type-client-credentials` flow uses
 
 In the `Token.js` component, the parameters `client_id`, `client_secret`, and `grant_type` are sent in the API request. If the parameters are valid, Liferay returns a JSON response with the access token.
 
-The `Users.js` file parses the response for the `access_token`.
+The `Users.js` component parses the response for the `access_token`.
 
 Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
 

@@ -7,6 +7,7 @@ toc:
   - ./tutorials/using-a-theme-css-client-extension.md
   - ./tutorials/creating-a-basic-custom-element.md
   - ./tutorials/using-routes-with-custom-elements.md
+  - ./tutorials/using-an-iframe-client-extension.md
 uuid: 8e6f2308-09b7-437f-8e69-34307388b844
 ---
 
@@ -22,6 +23,7 @@ tutorials/using-a-theme-spritemap-client-extension.md
 tutorials/using-a-theme-css-client-extension.md
 tutorials/creating-a-basic-custom-element.md
 tutorials/using-routes-with-custom-elements.md
+tutorials/using-an-iframe-client-extension.md
 ```
 
 Follow these tutorials to create basic front-end client extensions.
@@ -56,5 +58,10 @@ Follow these tutorials to create basic front-end client extensions.
 :::{grid-item-card} Using Routes with Custom Elements
 :link: ./tutorials/using-routes-with-custom-elements.md
 :::
+
+:::{grid-item-card} Using an IFrame Client Extension
+:link: ./tutorials/using-an-iframe-client-extension.md
+:::
+
 ::::
 

@@ -1,17 +1,17 @@
 ---
 uuid: 26cee4e4-07ad-4341-a5d6-ee4c715f7009
 ---
-# Creating a Basic IFrame Client Extension
+# Using an IFrame Client Extension
 
 {bdg-secondary}`7.4+`
 
-IFrame client extensions use Liferay's front-end infrastructure to register external applications as `<iframe>` HTML elements as widgets on Liferay pages. Unlike other front-end client extensions, IFrames do not provide a static resource.
+IFrame client extensions use Liferay's front-end infrastructure to register external applications as `<iframe>` HTML elements. They're deployed onto Liferay pages as widgets. Unlike other front-end client extensions, IFrames do not provide a static resource.
 
 ```{warning}
-IFrame client extensions are under development and are unsupported in Liferay 7.4.
+IFrame client extensions are under development and are currently unsupported in Liferay 7.4.
 ```
 
-Start with a client extension (from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace)).
+Start with a client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace).
 
 
 ## Prerequisites
@@ -38,7 +38,7 @@ Now you have the tools to deploy your IFrame client extension.
 
 ## Examine and Modify the Client Extension
 
-The IFrame client extension is in the sample workspace's `client-extensions/liferay-sample-iframe-1/` folder. It's defined in the `client-extension.yaml` file:
+The `client-extensions/liferay-sample-iframe-1/client-extension.yaml` file defines the IFrame client extension project in the sample workspace:
 
 ```yaml
 liferay-sample-iframe-1-counter-app:
@@ -47,26 +47,26 @@ liferay-sample-iframe-1-counter-app:
     url: https://arnab-datta.github.io/counter-app
 ```
 
-The client extension has the ID `liferay-sample-iframe-1` and contains the key configurations for an IFrame client extension, including the `name`, `type` and the URL of the app to ingest as an IFrame. See the [IFrame YAML configuration reference](../iframe-yaml-configuration-reference.md) for more information on the available properties.
+This client extension has the ID `liferay-sample-iframe-1` and contains the key configurations for an IFrame client extension, including the `name`, `type` and the URL of the app to ingest as an IFrame. See the [IFrame YAML configuration reference](../iframe-yaml-configuration-reference.md) for more information on the available properties.
 
 Next, deploy the client extension.
 
 ## Deploy the Client Extension to Liferay
 
+```{note}
+To deploy your client extension to Liferay Experience Cloud, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to run [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
+```
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once Liferay starts, go to the client extension's folder in the sample workspace and run
+Next, go to the client extension's folder in the sample workspace and run
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
 This builds your client extension and deploys the zip to Liferay's `deploy/` folder.
-
-```{note}
-To deploy your client extension to Liferay Experience Cloud, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to run [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
-```
 
 ```{tip}
 To deploy all client extensions in the workspace simultaneously, run the command from the `client-extensions/` folder.
@@ -82,13 +82,13 @@ Now that your client extension is deployed, configure Liferay to use it.
 
 ## Use the Client Extension on a Page
 
-Configure a page in Liferay to use your deployed client extension: 
+Add your deployed client extension to a page in Liferay: 
 
-1. Click _Edit_ ![Edit](../../../../images/icon-edit-pencil.png) at the top of any page.
+1. Click _Edit_ (![Edit](../../../../images/icon-edit-pencil.png)) at the top of any page.
 
-1. Add the widget to the page. In the Fragments and Widgets sidebar (![Fragments and Widgets](../../../../images/icon-plus.png)), click *Widgets*.
+1. Add the widget to the page. In the Fragments and Widgets sidebar (![Fragments and Widgets](../../../../images/icon-plus.png)), click _Widgets_.
 
-1. Find the Client Extensions &rarr; Counter App widget and drag it onto the page. Click *Publish*.
+1. Find the Client Extensions &rarr; Counter App widget and drag it onto the page. Click _Publish_.
 
    ![Drag the Counter App onto a page.](./using-an-iframe-client-extension/images/01.png)
 

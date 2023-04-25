@@ -9,7 +9,7 @@
 
 次に、以下の手順に従います:
 
-1. [User Groups API Basics](./liferay-y6f2.zip)をダウンロードし、解凍してください。
+1. [User Groups API Basics](./liferay-y6f2.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6f2.zip -O
@@ -37,7 +37,7 @@
    }
    ```
 
-1. *Global Menu* &rarr; *Control Panel* &rarr; *User Groups*に移動します。 新しいユーザーグループが追加されたことを確認します。
+1. **Global Menu** &rarr; **Control Panel** &rarr; **User Groups** に移動します。 新しいユーザーグループが追加されたことを確認します。
 
    ![新しいユーザーグループが追加されたことを確認します。](./user-groups-api-basics/images/01.png)
 

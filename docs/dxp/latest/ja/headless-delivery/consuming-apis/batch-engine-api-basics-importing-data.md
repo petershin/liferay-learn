@@ -11,7 +11,7 @@ LiferayのHeadless Batch Engineは、データのインポートやエクスポ�
 
 その後、以下の手順で進めてください：
 
-1. [Batch Engine API Basics](./liferay-g4j2.zip)をダウンロードし、解凍してください。
+1. [Batch Engine API Basics](./liferay-g4j2.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
@@ -21,9 +21,9 @@ LiferayのHeadless Batch Engineは、データのインポートやエクスポ�
    unzip liferay-g4j2.zip
    ```
 
-1. データをインポートするには、インポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPIエクスプローラから、 `/o/api`で取得することができます。 *Schemas* セクションまでスクロールダウンし、インポートしたいエンティティの `x-class-name` フィールドをメモする。
+1. データをインポートするには、インポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPIエクスプローラから、 `/o/api`で取得することができます。 **Schemas** セクションまでスクロールダウンし、インポートしたいエンティティの `x-class-name` フィールドをメモする。
 
-1. 以下のcURLスクリプトを使用して、Liferayインスタンスにアカウントをインポートします。 コマンドラインで、 `curl`フォルダに移動します。 `ImportTask_POST_ToInstance.sh` スクリプトを、 *Account* の完全修飾クラス名をパラメータとして実行する。
+1. 以下のcURLスクリプトを使用して、Liferayインスタンスにアカウントをインポートします。 コマンドラインで、 `curl`フォルダに移動します。 `ImportTask_POST_ToInstance.sh` スクリプトを、 **Account** の完全修飾クラス名をパラメータとして実行する。
 
    ```bash
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
@@ -74,7 +74,7 @@ LiferayのHeadless Batch Engineは、データのインポートやエクスポ�
 
    `executeStatus` が `COMPLETED`の場合、インポートデータを確認することができます。 実行されていない場合は、再度コマンドを実行し、タスクの実行が終了したことを確認します。 `executeStatus` が `FAILED`を示している場合、 `errorMessage` フィールドを確認し、何が問題だったかを理解する。
 
-1. インポートしたデータを確認するには、 *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 *Control Panel* &rarr; *Accounts*に移動してください。 2つの新しいアカウントが追加されていることを確認してください。
+1. インポートしたデータを確認するには、 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Control Panel** &rarr; **Accounts** に移動してください。 2つの新しいアカウントが追加されていることを確認してください。
 
    ![2つの新しいアカウントが追加されたことを確認する。](./batch-engine-api-basics/images/01.png)
 
@@ -123,7 +123,7 @@ LiferayのHeadless Batch Engineは、データのインポートやエクスポ�
 | `-u "test@liferay.com:learn"`                                                                                     | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 Oauth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 Oauth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
 ```
 
 他のcURLコマンドも同様のJSON引数を使用しています。
@@ -358,7 +358,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
+[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
 
 ## 追加情報
 

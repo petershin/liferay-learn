@@ -11,7 +11,7 @@
 
 その後、以下の手順で操作してください：
 
-1. [Accounts API Basics](./liferay-t5p9.zip)をダウンロードし、解凍してください。
+1. [Accounts API Basics](./liferay-t5p9.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -44,7 +44,7 @@
    }
    ```
 
-1. *グローバルメニュー* &rarr; *［アプリケーション］* &rarr; *［Accounts］*に移動します。 新しいアカウントが追加されたことを確認してください。
+1. **グローバルメニュー** &rarr; ［**アプリケーション**］ &rarr; ［**Accounts**］ に移動します。 新しいアカウントが追加されたことを確認してください。
 
    ![新しいアカウントが追加されたことを確認します。](./accounts-api-basics/images/01.png)
 
@@ -111,7 +111,7 @@
 他のJavaクラスの例はこれと似ていますが、異なる `AccountResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
+サービスの詳細は、 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の `Account` RESTサービスを呼び出す例です。

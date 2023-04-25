@@ -12,17 +12,17 @@ Liferayでは、エラーページや404ページなどのシステムレベル�
 
 404エラーのユーティリティページを作成する場合、
 
-1. *Site Builder* &rarr; *Pages* &rarr; *Utility Pages*に移動します。
+1. **Site Builder** &rarr; **Pages** &rarr; **Utility Pages** に移動します。
 
-1. *を選択する* を追加する (![Actions Menu](../../../images/icon-add.png)) 。
+1. **を選択する** を追加する (![Actions Menu](../../../images/icon-add.png)) 。
 
-1. 空のコンテンツページや利用可能なマスターページテンプレートには、 *空白* を選択します。
+1. 空のコンテンツページや利用可能なマスターページテンプレートには、 **空白** を選択します。
 
 404 Utility Pageをデフォルトの404エラーページとして適用する場合、
 
 1. ユーティリティページの「アクション」メニュー(![Actions Menu](../../../images/icon-actions.png)）を選択します。
 
-1. *Mark as Defaultを選択*.
+1. **Mark as Defaultを選択** .
 
 ![ユーザーがウェブサイト上で見つからないページに遭遇したときのデフォルトページとして、カスタム404エラーユーティリティページを選択します。](./using-utility-pages/02.png)
 

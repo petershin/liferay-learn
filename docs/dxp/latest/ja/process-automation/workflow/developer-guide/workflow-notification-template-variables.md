@@ -28,8 +28,8 @@ DEBUGレベルの [ロギング](../../../system-administration/using-the-server
 
 1. この設定でログレベルを追加します。
 
-   - *ロガー名*： `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
-   - *ログレベル*：`DEBUG`
+   - **ロガー名** ： `com.liferay.portal.workflow.kaleo.runtime.internal.notification.TemplateNotificationMessageGenerator`
+   - **ログレベル** ：`DEBUG`
 
 1. アセット(ブログのエントリなど）に対して、[ワークフロー定義(唯一の承認者定義など）を有効にします](../using-workflows/activating-workflow.md)。
 
@@ -58,7 +58,7 @@ DEBUGレベルの [ロギング](../../../system-administration/using-the-server
 
 1. **値** 変数は、単一の値を提供します。 変数が単一の値を提供する場合、その値を通知に表示するために使用することができます。また、通知メッセージに表示される他の有用な情報を取得する操作のパラメータとして渡すこともできます。
 
-   _例：_ 唯一の承認者の定義では、FreeMarkerのテンプレートでこの通知を提供しています。
+**例：** 唯一の承認者の定義では、FreeMarkerのテンプレートでこの通知を提供しています。
 
    ```markup
    ${userName} sent you a ${entryType} for review in the workflow.
@@ -66,7 +66,7 @@ DEBUGレベルの [ロギング](../../../system-administration/using-the-server
 
    `userName`と`entryType`が値を提供しているので、通知は次のように表示されます。
 
-   _Joe Bloggsさんから、ワークフローで確認するためのブログのエントリが送られてきました。_
+**Joe Bloggsさんから、ワークフローで確認するためのブログのエントリが送られてきました。**
 
 
    また、値型変数の内容を確認することもできます。 唯一の承認者の定義には、この通知テンプレートも含まれています。
@@ -77,11 +77,11 @@ DEBUGレベルの [ロギング](../../../system-administration/using-the-server
 
    レビュアがタスクコメントを提供した場合は、そのコメントが表示されます。 そうでない場合は、通知の送付先には以下が表示されます。
 
-   _あなたの提出物はレビューされました_
+**あなたの提出物はレビューされました**
 
 1. **オペレーション** 変数はLiferay DXPのJavaクラスを公開しているので、通知テンプレートでその操作にアクセスすることができます。 これらの変数については、クラスの [Javadoc](https://learn.liferay.com/web/guest/w/reference/dxp/javadocs) を熟知するか、 [ソースコード](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]) を見て、その動作を理解する必要があります。
 
-   _例：_ このFreeMarkerは、デフォルトのロケールを使用して、特定のパターン(_月/日/年、時間：分_）で現在の日付を取得します。
+**例：** このFreeMarkerは、デフォルトのロケールを使用して、特定のパターン(**月/日/年、時間：分**）で現在の日付を取得します。
 
    ```markup
    ${dateUtil.getCurrentDate("MM/dd/yyyy, HH:mm",  localeUtil.getDefault())}`
@@ -114,7 +114,7 @@ DEBUGレベルの [ロギング](../../../system-administration/using-the-server
 | `${userPortraitURL}`           | &#10004; |           |  ブログのエントリーにのみ適用され、ユーザーのポートレートのURLを返します。|
 | `${portal}`                    |          | &#10004;  | [Portal](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/Portal.html) |
 | `${commonPermission}`          |          | &#10004;  | [CommonPermission](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/CommonPermission.html) |
-| `${userURL}`                   | &#10004; |           | ブログエントリーにのみ適用され、ログインしたユーザーのプロフィールページのURLを返します。参照： [UserImpl#getDisplayURL](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portal/model/impl/UserImpl.html#getDisplayURL-com.liferay.portal.kernel.theme.ThemeDisplay-). |
+| `${userURL}`                   | &#10004; |           | ブログエントリーにのみ適用され、ログインしたユーザーのプロフィールページのURLを返します。参照： [UserImpl#getDisplayURL](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portal/model/impl/UserImpl.html#getDisplayURL-com.liferay.portal.kernel.theme.ThemeDisplay-) . |
 | `${expandoValueLocalService}`  |          | &#10004;  | [ExpandoValueLocalService](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/expando/kernel/service/ExpandoValueLocalService.html) |
 | `${entryType}`                 | &#10004; |           | ワークフローのエントリのタイプ（例：Blogs Entry） |
 | `${organizationPermission}`    |          | &#10004;  | [OrganizationPermission](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/OrganizationPermission.html) |
@@ -134,7 +134,7 @@ DEBUGレベルの [ロギング](../../../system-administration/using-the-server
 | `${taskName}`                  | &#10004; |           | 通知が入っているタスクの名前 |
 | `${httpUtil}`                  |          | &#10004;  | [HttpUtil](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/HttpUtil.html) |
 | `${portletURLFactory}`         |          | &#10004;  | [PortletURLFactory](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/PortletURLFactory.html) |
-| `${imageToken}`                | &#10004; |           | [WebServerServletToken.getToken(long imageId)](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/webserver/WebServerServletToken.html); からの画像トークンは、非推奨になり、削除されます |
+| `${imageToken}`                | &#10004; |           | [WebServerServletToken.getToken(long imageId)](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/webserver/WebServerServletToken.html) ; からの画像トークンは、非推奨になり、削除されます |
 | `${groupPermission}`           |          | &#10004;  | [GroupPermission](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/GroupPermission.html) |
 | `${timeZoneUtil}`              |          | &#10004;  | [TimeZoneUtil](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/TimeZoneUtil.html) |
 | `${unicodeLanguageUtil}`       |          | &#10004;  | [UnicodeLanguageUtil](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/language/UnicodeLanguageUtil.html) |
@@ -142,7 +142,7 @@ DEBUGレベルの [ロギング](../../../system-administration/using-the-server
 | `${auditRouterUtil}`           |          | &#10004;  | [AuditRouterUtil](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/audit/AuditRouterUtil.html) |
 | `${kaleoTaskInstanceToken}`    |          | &#10004;  | [ワークフロースクリプトに関してはドキュメントを参照してください](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
 | `${accountPermission}`         |          | &#10004;  | [AccountPermission](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/AccountPermission.html) |
-| `${httpUtilUnsafe}`            |          | &#10004;  | `${httpUtil}`のような、[Http](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/Http.html)のインスタンスは、ローカルネットワークにアクセスするために使用することができます |
+| `${httpUtilUnsafe}`            |          | &#10004;  | `${httpUtil}`のような、 [Http](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/Http.html) のインスタンスは、ローカルネットワークにアクセスするために使用することができます |
 | `${workflowTaskAssignees}`     | &#10004; |          | [ワークフロースクリプトに関してはドキュメントを参照してください](./../developer-guide/using-the-script-engine-in-workflow.md#predefined-variables) |
 | `${random}`                   |           | &#10004;  | A Java utility for generating [Random](https://docs.oracle.com/javase/8/docs/api/java/util/Random.html) numbers;を生成するためのJavaユーティリティは、非推奨で将来削除予定です |
 | `${rolePermission}`           |           | &#10004;  | [RolePermission](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/RolePermission.html) |
@@ -150,7 +150,7 @@ DEBUGレベルの [ロギング](../../../system-administration/using-the-server
 | `${paramUtil}`                |           | &#10004;  | [ParamUtil](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/ParamUtil.html) |
 | `${locationPermission}`       | &#10004;  |           | `OrganizationPermissionUtil.getOrganizationPermission()`の結果を返します |
 | `${calendarFactory}`          |           | &#10004;  | [CalendarFactory](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/CalendarFactory.html) |
-| `${webServerToken}`           | &#10004; |           | [WebServerServletToken.getToken(long imageId)](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/webserver/WebServerServletToken.html)からの画像トークン |
+| `${webServerToken}`           | &#10004; |           | [WebServerServletToken.getToken(long imageId)](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/webserver/WebServerServletToken.html) からの画像トークン |
 | `${sessionClicks}`            |           | &#10004;  | [SessionClicks](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/util/SessionClicks.html) |
 | `${userPermission}`           |           | &#10004;  | [UserPermission](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/service/permission/UserPermission.html) |
 | `${entryClassName}`           | &#10004;  |

@@ -114,12 +114,12 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 * スタイルブックからの値 ** ボタンをクリックすると、現在使用している [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)で定義されている、あらかじめ定義された色のメニューが表示され、選択することができます。 これにより、再度ボタンを押すとリンクが解除されるまで、フィールドの値が選択されたトークンにリンクされます。 トークン値のリンクを解除すると、選択した色が再び同等の16進コード値に変換されます。
 
-* カラーピッカーにデフォルト値が定義されていない場合は、 *Default* ドロップダウンメニューをクリックし、現在使用しているスタイルブックから任意の色を選択します。 これは、値を選択する際の「スタイルブックからの値」ボタンと同じ働きをします。
+* カラーピッカーにデフォルト値が定義されていない場合は、 **Default** ドロップダウンメニューをクリックし、現在使用しているスタイルブックから任意の色を選択します。 これは、値を選択する際の「スタイルブックからの値」ボタンと同じ働きをします。
 
 ![カラーピッカーの設定では、色の値を直接入力したり、範囲から選択したり、スタイルブックから選択することができます。](./fragment-configuration-types-reference/images/02.png)
 
 ```{note}
-使用しているテーマに[スタイルブック用トークン定義](../../site-appearance/style-books/developer-guide/style-book-token-definitions.md）がない場合、ページ上のカラーピッカー設定は[カラーパレット](#色パレット設定）設定に置き換えられます。
+使用しているテーマに[スタイルブック用トークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md）がない場合、ページ上のカラーピッカー設定は[カラーパレット](#色パレット設定）設定に置き換えられます。
 ```
 
 このJSON設定は、 `headingColor`というカラーピッカーフィールドを作成します：
@@ -383,7 +383,7 @@ videoSelector`型は [external video](../../creating-pages/page-fragments-and-wi
 `collectionSelector` 構成タイプを使用すると、 [コレクション](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) またはコレクションプロバイダを含むフラグメントを開発することができます。 `collectionSelector` は、手動コレクションと動的コレクションの両方で使用することができます。
 
 ```{note}
-開発者は、コレクションプロバイダを使用して、より高度な条件を持つ特定のコレクションを作成することができます。 詳しくは、開発者向けドキュメント[Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework)の[情報リストプロバイダの作成](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider)に関する情報をご覧ください。
+開発者は、コレクションプロバイダを使用して、より高度な条件を持つ特定のコレクションを作成することができます。 詳しくは、開発者向けドキュメント [Info Framework](https://help.liferay.com/hc/ja/articles/360029067251-Introduction-to-The-Info-Framework) の [情報リストプロバイダの作成](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をご覧ください。
 ```
 
 次のJSON設定は、 `collectionSelector`を使用する方法を示しています。
@@ -456,7 +456,7 @@ HTMLでこのコレクションを参照するには、JSONの設定でコレク
 
 ## カラーパレットの設定
 
-カラーパレットJSON設定により、色を選択しなければならない場合のために実装できるカラーセレクタを作成します。 [カラーピッカー設定](#color-picker-configuration)とは異なり、現在使用されている [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)のカラーシステムで設定されたテーマカラーに基づくオプションのみを提供します。
+カラーパレットJSON設定により、色を選択しなければならない場合のために実装できるカラーセレクタを作成します。 [カラーピッカー設定](#color-picker-configuration) とは異なり、現在使用されている [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)のカラーシステムで設定されたテーマカラーに基づくオプションのみを提供します。
 
 この構成では、 `textColor`というカラーパレットフィールドが作成されます：
 

@@ -1,8 +1,8 @@
 # ワークフローでのフォームの使用
 
-_Forms_ アプリケーションは、 _Workflow_ アプリケーションと統合されているため、ユーザーはフォームのワークフロープロセスを起動することができます。 つまり、フォームの入力が受け入れられる前に、まず承認が必要なのです。 フォームに対しワークフロープロセスを有効にする方法については、[Activating Workflow for Forms](../../workflow/using-workflows/activating-workflow.md#forms)を参照してください。
+**Forms** アプリケーションは、 **Workflow** アプリケーションと統合されているため、ユーザーはフォームのワークフロープロセスを起動することができます。 つまり、フォームの入力が受け入れられる前に、まず承認が必要なのです。 フォームに対しワークフロープロセスを有効にする方法については、 [Activating Workflow for Forms](../../workflow/using-workflows/activating-workflow.md#forms) を参照してください。
 
-ワークフローが有効になると、 _Submit_ ボタンが、 _Submit for Workflow_に置き換わります。
+ワークフローが有効になると、 **Submit** ボタンが、 **Submit for Workflow** に置き換わります。
 
 ![送信ボタンがSubmit for Workflowに置き換わっています。](./using-forms-with-a-workflow/images/01.png)
 
@@ -14,10 +14,10 @@ _Forms_ アプリケーションは、 _Workflow_ アプリケーションと統
 
 ![レビュアーは、エントリーを承認するか否かを選択することができます。](./using-forms-with-a-workflow/images/03.png)
 
-フォームレコードが承認されると、_［Approved］_ステータスとともに同じフォームエントリメニューに表示されます。
+フォームレコードが承認されると、 ［**Approved**］ ステータスとともに同じフォームエントリメニューに表示されます。
 
-1. _［サイト管理］_ &rarr; _［コンテンツ& データ］_ &rarr; _［フォーム］_に移動します。
-1. 選択したフォームの横にある_アクション_(![Actions](../../../images/icon-actions.png)）ボタンをクリックし、_［View Entries］_を選択します。
+1. ［**サイト管理**］ &rarr; ［**コンテンツ& データ**］ &rarr; ［**フォーム**］ に移動します。
+1. 選択したフォームの横にある **アクション**(![Actions](../../../images/icon-actions.png)）ボタンをクリックし、 ［**View Entries**］ を選択します。
 
 ![フォームレコードが承認されました](./using-forms-with-a-workflow/images/04.png)
 

@@ -16,7 +16,7 @@ page-settings/configuring-your-pages-friendly-url.md
 page-settings/updating-page-permissions.md
 ```
 
-:::{grid} 2
+::::{grid} 2
 :gutter: 3 3 3 3
 
 :::{grid-item-card} ページセットの設定

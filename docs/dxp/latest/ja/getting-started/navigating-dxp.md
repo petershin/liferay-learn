@@ -1,16 +1,16 @@
 # DXPのナビゲート
 
-Liferay DXPのすぐに使えるナビゲーションは、_個人用メニュー_、_グローバルメニュー_、_サイトメニュー_の3つの主要な領域に編成されています。
+Liferay DXPのすぐに使えるナビゲーションは、 **個人用メニュー** 、 **グローバルメニュー** 、 **サイトメニュー** の3つの主要な領域に編成されています。
 
 ## サイトメニュー
 
-画面の左側にあるDXP_サイトメニュー_には、現在表示されている特定のサイトを対象とするアクション、コンテンツ、および構成が含まれています。 アプリケーションバーのサイトメニューアイコン(![Site Menu](../images/icon-menu.png)）をクリックすると、サイトメニューの表示・非表示を切り替えることができます。
+画面の左側にあるDXP **サイトメニュー** には、現在表示されている特定のサイトを対象とするアクション、コンテンツ、および構成が含まれています。 アプリケーションバーのサイトメニューアイコン(![Site Menu](../images/icon-menu.png)）をクリックすると、サイトメニューの表示・非表示を切り替えることができます。
 
 ![サイトメニューを展開して、すべてのオプションを表示します。](./navigating-dxp/images/05.png)
 
-*サイトメニュー*は選択したサイトを示します。 上記の例では、サイトは `Liferay`です。 サイトメニューのコンパスアイコン( ![Compass Icon](../images/icon-compass.png) ）をクリックすると、作業しているサイトを変更することができます。
+**サイトメニュー** は選択したサイトを示します。 上記の例では、サイトは `Liferay`です。 サイトメニューのコンパスアイコン( ![Compass Icon](../images/icon-compass.png) ）をクリックすると、作業しているサイトを変更することができます。
 
-次の一般的なサイト構築および管理アクティビティは、_サイトメニュー_で実行できます。
+次の一般的なサイト構築および管理アクティビティは、 **サイトメニュー** で実行できます。
 
 * [ページの追加](../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md)
 * [コンテンツの作成](../content-authoring-and-management.md)
@@ -20,7 +20,7 @@ Liferay DXPのすぐに使えるナビゲーションは、_個人用メニュ�
 
 ## アプリケーションバー
 
-_アプリケーションバー_ は、各ページの上部に表示され、アプリケーションは [サイトメニュー](#site-menu)に一覧表示されます。 アプリケーションバーには、現在開いているアプリケーションに応じて、さまざまなオプションが含まれるアクション(![Actions](../images/icon-actions.png)）メニューが表示されます。
+**アプリケーションバー** は、各ページの上部に表示され、アプリケーションは [サイトメニュー](#site-menu) に一覧表示されます。 アプリケーションバーには、現在開いているアプリケーションに応じて、さまざまなオプションが含まれるアクション(![Actions](../images/icon-actions.png)）メニューが表示されます。
 
 ![アプリケーションバーで使用できるアクションは、現在開いているアプリケーションによって異なります。](./navigating-dxp/images/07.png)
 
@@ -58,7 +58,7 @@ _アプリケーションバー_ は、各ページの上部に表示され、�
 
 ユーザーはパーソナルメニューを使用して次のことができます。
 
-* [アカウント情報を変更する](./introduction-to-the-admin-account.md#changing-account-information)(名前、パスワードなど）
+* [アカウント情報を変更する](./introduction-to-the-admin-account.md#changing-account-information) (名前、パスワードなど）
 * [メンバーとなっているサイトを確認する](../site-building/sites/site-membership/adding-members-to-sites.md)
 * [サイト通知を確認する](../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
 * [サインアウトする](./introduction-to-the-admin-account.md#signing-out)
@@ -66,21 +66,21 @@ _アプリケーションバー_ は、各ページの上部に表示され、�
 
 ## グローバルメニュー
 
-DXPの_グローバルメニュー_には、_アプリケーションメニュー_と_コントロールパネル_が含まれています。 画面上部の_アプリケーションメニュー_アイコン(![Applications Menu icon](../images/icon-applications-menu.png)）をクリックしてアクセスします。
+DXPの **グローバルメニュー** には、 **アプリケーションメニュー** と **コントロールパネル** が含まれています。 画面上部の **アプリケーションメニュー** アイコン(![Applications Menu icon](../images/icon-applications-menu.png)）をクリックしてアクセスします。
 
 ```{note}
 デフォルトでは、*ゲスト*または*ユーザー*のロールを持つユーザーは、グローバルメニューにアクセスできません。
 ```
 
-インターフェイスの右側の_グローバルメニュー_の_［Applications］_タブまたは_［Control Panel］_タブから、利用可能な他のサイトに移動することもできます。
+インターフェイスの右側の **グローバルメニュー** の ［**Applications**］ タブまたは ［**Control Panel**］ タブから、利用可能な他のサイトに移動することもできます。
 
 ### アプリケーションメニュー
 
-_アプリケーションメニュー_には、Liferay DXPサーバー内のさまざまなアプリケーションを管理するためのさまざまなリンクが含まれています。
+**アプリケーションメニュー** には、Liferay DXPサーバー内のさまざまなアプリケーションを管理するためのさまざまなリンクが含まれています。
 
 ![アプリケーションメニューには、すべてのサイトに適用できる多くのグローバル設定と重要な機能が含まれています。](./navigating-dxp/images/02.png)
 
-_アプリケーションメニュー_から管理できるアプリケーションの一部を次に示します。
+**アプリケーションメニュー** から管理できるアプリケーションの一部を次に示します。
 
 * [コンテンツダッシュボード](../content-authoring-and-management/content-dashboard.md)
 * [ワークフロー](../process-automation/workflow/introduction-to-workflow.md)
@@ -92,19 +92,19 @@ Liferay 7.3 CE GA6およびLiferay DXP 7.3 GA1以降、Liferay Commerce 3.0はLi
 
 ![コマースメニューには、すべてのストア機能が含まれています。](./navigating-dxp/images/03.png)
 
-_コマース_メニューから管理できる機能は次のとおりです。
+**コマース** メニューから管理できる機能は次のとおりです。
 
-* [新しいカタログを作成する](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html)
+* [新しいカタログを作成する](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html)
 * [新しいチャンネルを作成する](https://learn.liferay.com/commerce/latest/en/starting-a-store/channels/managing-channels.html)
-* [在庫を管理する](https://learn.liferay.com/commerce/latest/en/inventory-management.html)
-* [注文を処理する](https://learn.liferay.com/commerce/latest/en/order-management/orders/processing-an-order.html)
+* [在庫管理](https://learn.liferay.com/commerce/latest/ja/inventory-management.html)
+* [注文の処理](https://learn.liferay.com/commerce/latest/ja/order-management/orders/processing-an-order.html)
 * その他
 
-Liferay Commerceの詳細については、[Liferay Commerceの概要](https://learn.liferay.com/commerce/latest/en/starting-a-store/introduction-to-liferay-commerce.html)を参照してください。
+Liferay Commerceの詳細については、 [Liferay Commerceの概要](https://learn.liferay.com/commerce/latest/ja/starting-a-store/introduction-to-liferay-commerce.html) を参照してください。
 
 ### コントロールパネル
 
-_コントロールパネル_には、Liferay DXPインストールまたは特定のインスタンスに_グローバル_にスコープできる一般的な管理アクションと構成が含まれています。
+**コントロールパネル** には、Liferay DXPインストールまたは特定のインスタンスに **グローバル** にスコープできる一般的な管理アクションと構成が含まれています。
 
 ![これで、コントロールパネルがグローバルメニューの一部になりました。](./navigating-dxp/images/04.png)
 

@@ -11,7 +11,7 @@ LiferayのHeadless Batch Engineは、データのインポートやエクスポ�
 
 その後、以下の手順で操作してください：
 
-1. [Batch Engine API Basics](./liferay-g4j2.zip)をダウンロードし、解凍する。
+1. [Batch Engine API Basics](./liferay-g4j2.zip) をダウンロードし、解凍する。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
@@ -21,9 +21,9 @@ LiferayのHeadless Batch Engineは、データのインポートやエクスポ�
    unzip liferay-g4j2.zip
    ```
 
-1. データをエクスポートするには、エクスポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPIエクスプローラから、 `/o/api`で取得することができます。 *Schemas* セクションまでスクロールダウンし、エクスポートしたいエンティティの `x-class-name` フィールドをメモしておきます。
+1. データをエクスポートするには、エクスポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPIエクスプローラから、 `/o/api`で取得することができます。 **Schemas** セクションまでスクロールダウンし、エクスポートしたいエンティティの `x-class-name` フィールドをメモしておきます。
 
-1. Liferayインスタンスからアカウントをエクスポートするには、以下のcURLスクリプトを使用します。 コマンドラインで、 `curl`フォルダに移動します。 `ExportTask_POST_ToInstance.sh` スクリプトを、完全修飾クラス名 *Account* および `json` をパラメーターとして実行します。 `json` パラメーターは、エクスポートされたデータのフォーマットを示します。 また、 `jsonl` と `csv` のフォーマットにも対応しています。
+1. Liferayインスタンスからアカウントをエクスポートするには、以下のcURLスクリプトを使用します。 コマンドラインで、 `curl`フォルダに移動します。 `ExportTask_POST_ToInstance.sh` スクリプトを、完全修飾クラス名 **Account** および `json` をパラメーターとして実行します。 `json` パラメーターは、エクスポートされたデータのフォーマットを示します。 また、 `jsonl` と `csv` のフォーマットにも対応しています。
 
    ```bash
    ./ExportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account json
@@ -129,7 +129,7 @@ LiferayのHeadless Batch Engineは、データのインポートやエクスポ�
 | `-u "test@liferay.com:learn"`                                                | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 Oauth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 Oauth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
 ```
 
 ## Javaクラスを調べる
@@ -280,7 +280,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
+[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
 
 ## 追加情報
 

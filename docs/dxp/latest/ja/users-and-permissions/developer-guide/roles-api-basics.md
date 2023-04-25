@@ -180,7 +180,7 @@ java -classpath .:* -DroleId=1234 Role_GET_ById
 
 ユーザーを特定のサイトロールに関連付けることができます。 `1234` をRoleのIDに置き換えてください。 `5678` をお客様のサイトIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation_POST_ToSite.shを実行します。
+### RoleUserAssociation_POST_ToSite.sh
 
 コマンド:
 
@@ -214,7 +214,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
 
 ユーザーを特定の組織ロールに関連付けることができます。 `1234` を組織IDに置き換えてください。 `5678` を自分のRoleのIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation_POST_ToOrganization.shを実行します。
+### RoleUserAssociation_POST_ToOrganization.sh
 
 コマンド:
 
@@ -228,7 +228,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
    :language: bash
 ```
 
-### RoleUserAssociation_POST_ToOrganization.java
+###  RoleUserAssociation_POST_ToOrganization.java
 
 コマンド:
 
@@ -248,7 +248,7 @@ java -classpath .:* -DorganizationId=1234 -DroleId=5678 -DuserAccountId=9012 Rol
 
 特定のユーザーから通常の役割の関連付けを削除します。 `1234` をRoleのIDに置き換えてください。 `5678` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation_DELETE_FromInstance.shを実行します。
+### RoleUserAssociation_DELETE_FromInstance.sh
 
 コマンド:
 
@@ -282,7 +282,7 @@ java -classpath .:* -DroleId=1234 -DuserAccountId=5678 RoleUserAssociation_DELET
 
 特定のユーザーからサイトロールの関連付けを削除する。 `1234` をRoleのIDに置き換えてください。 `5678` をお客様のサイトIDに置き換えてください。 `9012` をユーザーIDに置き換えてください。
 
-### RoleUserAssociation_DELETE_FromSite.shを実行します。
+### RoleUserAssociation_DELETE_FromSite.sh
 
 コマンド:
 

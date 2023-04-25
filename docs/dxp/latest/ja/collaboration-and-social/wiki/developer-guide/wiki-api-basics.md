@@ -11,7 +11,7 @@ LiferayのHeadless Deliveryアプリケーションは、[Wiki](../getting-start
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-起動したら、Site IDを取得します。サイトIDを見つけるには、*サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、*設定* &rarr; *サイト設定* &rarr; *サイト設定*に移動します。
+起動したら、Site IDを取得します。サイトIDを見つけるには、 **サイトメニュー**(![サイトメニュー](../../../images/icon-menu.png))を開き、 **設定** &rarr; **サイト設定** &rarr; **サイト設定** に移動します。
 
 ![サイト構成設定の下にあるサイトIDを探す](./wiki-api-basics/images/01.png)。
 
@@ -19,7 +19,7 @@ LiferayのHeadless Deliveryアプリケーションは、[Wiki](../getting-start
 
 このチュートリアルでは、ヘッドレスAPIを実証するためのサンプルコードを提供します。このコードには、チュートリアルで使用するサンプルcURLとJavaファイルの両方が含まれています。
 
-以下のコマンドを実行して、[サンプルコード](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip)をダウンロードし、解凍してください：
+以下のコマンドを実行して、 [サンプルコード](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip) をダウンロードし、解凍してください：
 
 
 ```bash
@@ -45,7 +45,7 @@ javac -classpath .:* *.java
 提供されるコードには、 `WikiNode` と `WikiPage` のサービスのためのAPIが含まれています。 収録されているサンプルAPIの一覧は、 [チュートリアルコードリファレンス](#tutorial-code-reference) をご参照ください。
 
 ```{important}
-提供されるコードは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](./../.../headless-delivery/using-oauth2.md）を使用してユーザーを認証する必要があります。
+提供されるコードは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](./../.../headless-delivery/using-oauth2.md) を使用してユーザーを認証する必要があります。
 ```
 
 ## サンプルWikiNodeのAPIを呼び出す

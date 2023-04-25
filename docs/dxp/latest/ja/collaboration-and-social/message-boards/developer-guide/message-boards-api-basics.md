@@ -1,6 +1,6 @@
 # メッセージボードAPIの基本
 
-Liferay の Headless Delivery アプリケーションは、 [Message Boards](../../message-boards.md) アプリケーションに REST サービスを提供します。 これらのサービスでは、掲示板のカテゴリやスレッド、メッセージの追加、情報の一覧表示、内容の修正、削除が可能です。 ここでは、cURLコマンドとJavaクラスを使用してこれらのサービスを呼び出します。
+Liferay の Headless Delivery アプリケーションは、 [掲示板](../../message-boards.md) アプリケーションに REST サービスを提供します。 これらのサービスでは、掲示板のカテゴリやスレッド、メッセージの追加、情報の一覧表示、内容の修正、削除が可能です。 ここでは、cURLコマンドとJavaクラスを使用してこれらのサービスを呼び出します。
 
 ```{note}
 掲示板のカテゴリは、Liferayのバックエンドでは*sections*という名前になっています。 スレッドを整理するためのトピックを定義するセクションです。
@@ -15,7 +15,7 @@ Liferay の Headless Delivery アプリケーションは、 [Message Boards](..
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-起動したら、サイトIDを取得します。サイトIDを調べるには、*サイトメニュー*(！[サイトメニュー](./../../images/icon-menu.png)）を開き、*設定* &rarr; *サイト設定* &rarr; *サイト設定*に移動します。
+起動したら、サイトIDを取得します。サイトIDを調べるには、 **サイトメニュー**(！ [サイトメニュー](./../../images/icon-menu.png) ）を開き、 **設定** &rarr; **サイト設定** &rarr; **サイト設定** に移動します。
 
 ![サイト構成設定の下にあるサイトIDを探す](./message-board-api-basics/images/01.png)
 
@@ -23,7 +23,7 @@ Liferay の Headless Delivery アプリケーションは、 [Message Boards](..
 
 以下は、ヘッドレスAPIをデモするためのサンプルコードです。このコードには、サンプルのcURLファイルとJavaファイルの両方が含まれています。
 
-以下のコマンドを実行し、[サンプルコード](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip)をダウンロードし、解凍してください：
+以下のコマンドを実行し、 [サンプルコード](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip) をダウンロードし、解凍してください：
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip -O
@@ -48,7 +48,7 @@ javac -classpath .:* *.java
 提供されるコードには、 `MessageBoardSection`、 `MessageBoardThread` 、 `MessageBoardMessage` サービス用のAPIが含まれています。 収録されているサンプルAPIの一覧は、 [チュートリアルコードリファレンス](#tutorial-code-reference) をご参照ください。
 
 ```{important}
-提供されるコードは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](./../.../headless-delivery/using-oauth2.md）を使用してユーザーを認証する必要があります。
+提供されるコードは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](../../../headless-delivery/using-oauth2.md) を使用してユーザーを認証する必要があります。
 ```
 
 ## サンプルAPIを呼び出す

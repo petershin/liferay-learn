@@ -20,13 +20,13 @@ Rescore by Text Embedding要素は、埋め込みプロバイダーと連携す�
 
 ## Rescore by Text Embedding Elementの追加
 
-[セマンティック検索を有効にした状態で初めてLiferayを起動した場合](../semantic-search.md#enabling-semantic-search)、Rescore by Text Embedding要素は [Search Blueprints UI](../search-blueprints/creating-and-managing-elements.md)で使用する準備が整っています。 インスタンスに要素が表示されない場合は、手動で追加することができます：
+[セマンティック検索を有効にした状態で初めてLiferayを起動した場合](../semantic-search.md#enabling-semantic-search) 、Rescore by Text Embedding要素は [Search Blueprints UI](../search-blueprints/creating-and-managing-elements.md)で使用する準備が整っています。 インスタンスに要素が表示されない場合は、手動で追加することができます：
 
-1. Liferay で *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 *Application* &rarr; *Blueprints*をクリックします。
+1. Liferay で **Global Menu**(![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 **Application** &rarr; **Blueprints** をクリックします。
 
-1. *Elements*をクリックし、 *Add* (![Add](../../../../images/icon-add.png)) をクリックします。
+1. **Elements** をクリックし、 **Add**(![Add](../../../../images/icon-add.png)) をクリックします。
 
-1. タイトル *Rescore by Text Embedding* を入力し、 *Create*をクリックします。
+1. タイトル **Rescore by Text Embedding** を入力し、 **Create** をクリックします。
 
 1. 以下のセクション、 [リファレンスから要素のJSONをコピーします：テキスト埋め込み要素によるリスコア](#reference-rescore-by-text-embedding-element)
 

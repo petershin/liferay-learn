@@ -24,7 +24,7 @@
 1. 条件の作成： ［**Is greater than**］ &rarr; ［**Value**］ &rarr; **0** .
 1. ［**Do**］ ドロップダウンメニューから ［**Calculate**］ を選択します。
 1. ［**Choose a Field to Show the Result**］ ドロップダウンメニューから ［**Total**］ を選択します。
-1. 組み込みの電卓を使って、 (**NumberofAttendees*RegistrationFee**) と入力してください。
+1. 組み込みの電卓を使って、 **(NumberofAttendees*RegistrationFee)** と入力してください。
 
     ![2つのフィールドを掛け合わせて、総登録料を計算します。](./using-the-calculate-rule/images/01.png)
 

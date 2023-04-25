@@ -50,7 +50,7 @@ users.update.last.login=false
 
 **インポート時にユーザーパスワードを自動生成** ユーザーインポート時にランダムなパスワードを作成します。
 
-**Default User Password:** **Enable User Password on Import** と **Autogenerate User Password on Import** が無効の場合、ここに入力したパスワードを使用します。
+**Default User Password:****Enable User Password on Import** と **Autogenerate User Password on Import** が無効の場合、ここに入力したパスワードを使用します。
 
 **インポート時にグループキャッシュを有効にします。** インポートされたグループをキャッシュすることで、データベースアクセスによるインポートの遅延を防ぎます。
 

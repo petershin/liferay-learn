@@ -9,7 +9,7 @@
 
 その後、以下の手順で進めてください：
 
-1. [Knowledge Base API Basics](./liferay-t3x7.zip)をダウンロードし、解凍してください。
+1. [Knowledge Base API Basics](./liferay-t3x7.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/knowledge-base/developer-guide/liferay-t3x7.zip -O
@@ -19,7 +19,7 @@
    unzip liferay-t3x7.zip
    ```
 
-1. ログインすると、[サイトのIDを取得します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 このIDは、いくつかのサービス呼び出しで使用します。
+1. ログインすると、 [サイトのIDを取得します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 このIDは、いくつかのサービス呼び出しで使用します。
 
 1. cURLスクリプトを使用して、サイトに新しいナレッジベースの記事を追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`KnowledgeBaseArticle_POST_ToSite.sh`スクリプトを実行します。 例えば、
 
@@ -129,7 +129,7 @@
 他の例のJavaクラスはこれと類似していますが、異なる`KnowledgeBaseArticle`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、[KnowledgeBaseArticleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java)を参照してください。
+サービスの詳細は、 [KnowledgeBaseArticleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`KnowledgeBaseArticle`RESTサービスを呼び出す例です。

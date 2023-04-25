@@ -59,7 +59,7 @@ Groovyアクションロジックをワークフロー定義の `<script>` 要�
    ```
 
 ```{note}
-便宜上、`ActionExecutor`の`activate`メソッドは、E5C9 Single Approverワークフロー定義をオートロードするようにしました。 このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 [新しいワークフロー定義のアップロード](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition)を参照してください。
+便宜上、`ActionExecutor`の`activate`メソッドは、E5C9 Single Approverワークフロー定義をオートロードするようにしました。 このコードは、ワークフロープロセスビルダーに移動し、ワークフロー定義をアップロードするのと同じことを実現します。 [新しいワークフロー定義のアップロード](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) を参照してください。
 ```
 
 ## アクションエグゼキュータをテストする
@@ -70,19 +70,19 @@ Acme E5C9 Action Executorを使用するには、ワークフロー定義をブ�
 
 1. 設定タブで、［E5C9 唯一の承認者］の定義を［ブログのエントリのアセットタイプ］に割り当てる。
 
-1. _［保存］_ をクリックします。
+1. ［**保存**］ をクリックします。
 
 1. デフォルトの管理者であるUser Test Testを使って、サイトメニューの &rarr; Content & Data &rarr; Blogsを開きます。
 
-1. _追加_ ボタン (![Add](../../../images/icon-add.png)) をクリックします。
+1. **追加** ボタン (![Add](../../../images/icon-add.png)) をクリックします。
 
-1. タイトル」と「コンテンツ」フィールドに何かを入力し、「 _ワークフローに投稿する」_をクリックします。
+1. タイトル」と「コンテンツ」フィールドに何かを入力し、「**ワークフローに投稿する**」 をクリックします。
 
-1. メインのBlogsビューに戻り、エントリーが表示され、ステータスが _返答待ち_と表示されていることを確認します。
+1. メインのBlogsビューに戻り、エントリーが表示され、ステータスが **返答待ち** と表示されていることを確認します。
 
    ワークフローフレームワークでは、ステータスを［保留］に設定しています。 これ以降、ステータスの更新はアクションエクゼキュータのロジックを使って行われます。
 
-1. [ワークフロー内のブログエントリーを承認する](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task).
+1. [ワークフロー内のブログエントリーを承認する](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task) .
 
    ![この承認または拒否は、E5C9アクションエグゼキューターによって行われます。](./creating-an-action-executor/images/01.png)
 

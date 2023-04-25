@@ -9,6 +9,7 @@ toc:
 :maxdepth: 2
 
 message-boards/user-guide.md
+message-boards/developer-guide.md
 ```
 
 ユーザーガイド
@@ -23,3 +24,7 @@ message-boards/user-guide.md
 * [掲示板の権限リファレンス](.//message-boards/user-guide/message-boards-permissions-reference.md)
 * [掲示板の設定リファレンス](.//message-boards/user-guide/message-boards-configuration-reference.md)
 * [掲示板ウィジェットのUIリファレンス](.//message-boards/user-guide/message-boards-widget-ui-reference.md)
+
+## Developer Guide
+
+* [メッセージボードAPIの基本](./message-boards/developer-guide/message-boards-api-basics.md)

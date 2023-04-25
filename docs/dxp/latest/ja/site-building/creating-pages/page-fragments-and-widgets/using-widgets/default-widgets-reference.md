@@ -1,6 +1,6 @@
 # デフォルトウィジェットのリファレンス
 
-Liferayは様々なウィジェットをすぐに提供するので、すぐにソリューションの構築を始めることができます。 ウィジェットは、コンテンツページ、ウィジェットページ、ページテンプレートに配置することができます。 コンテンツページで利用可能なウィジェットを表示するには、ページの編集を開始し、編集サイドバーメニューの「 *フラグメントとウィジェット* (![Fragments and Widgets](../../../../images/icon-plus.png))」を選択し、「 *ウィジェット* 」タブを選択してください。 ウィジェットページで利用可能なウィジェットを表示するには、 *Add* (![add](../../../../images/icon-plus.png)) をクリックします。
+Liferayは様々なウィジェットをすぐに提供するので、すぐにソリューションの構築を始めることができます。 ウィジェットは、コンテンツページ、ウィジェットページ、ページテンプレートに配置することができます。 コンテンツページで利用可能なウィジェットを表示するには、ページの編集を開始し、編集サイドバーメニューの「**フラグメントとウィジェット**(![Fragments and Widgets](../../../../images/icon-plus.png))」を選択し、「**ウィジェット**」タブを選択してください。 ウィジェットページで利用可能なウィジェットを表示するには、 **Add**(![add](../../../../images/icon-plus.png)) をクリックします。
 
 ウィジェットは、このようなセクションで構成されています：
 
@@ -99,8 +99,8 @@ Accountsについて詳しく知りたい方は、こちらをご覧ください
 
 | ウィジェット      | 説明                                                                                                                                                                                |
 |:----------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 警告          | [アラートウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加し、優先度の高い情報を赤い *重要* タグで表示します。 |
-| お知らせ        | 赤い *重要* タグがない情報を表示する [お知らせウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加する。     |
+| 警告          | [アラートウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加し、優先度の高い情報を赤い **重要** タグで表示します。 |
+| お知らせ        | 赤い **重要** タグがない情報を表示する [お知らせウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加する。     |
 | 最近のコンテンツ    | 最近作成されたアセットを一覧表示する「最近のコンテンツ」ウィジェットを追加しました。                                                                                                                                        |
 | RSS パブリッシャー | RSSフィードからの投稿を一覧表示するRSSパブリッシャーウィジェットを追加しました。                                                                                                                                       |
 
@@ -129,7 +129,7 @@ Accountsについて詳しく知りたい方は、こちらをご覧ください
 | フォルダー ファセット | [Folder Facet widget](../../../../using-search/search-pages-and-widgets/search-facets/folder-facet.md) を追加して、検索結果をアセットでフィルタリングできるようにします フォルダ。 |
 | 低レベルの検索オプション | [低レベル検索オプション ウィジェット] を追加します (../../../../using-search/search-pages-and-widgets/search-results/understanding-low-level-search-options.md) これにより、低レベルの検索を使用できます。 |
 | 変更されたファセット | [変更された Faced ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/modified-facet.md) を追加して、いつ検索結果をフィルタリングできるようにしますか? アセットが作成または変更されました。 |
-| 検索バー | ユーザーが検索できる検索バー ウィジェットを追加します。 デフォルトでは、検索バー ウィジェットはユーザーをデフォルトの [検索ページ](../../../../using-search/search-pages-and-widgets/working-with-search-pages. md)。 |
+| 検索バー | ユーザーが検索できる検索バー ウィジェットを追加します。 デフォルトでは、検索バー ウィジェットはユーザーをデフォルトの [検索ページ](../../../../using-search/search-pages-and-widgets/working-with-search-pages.md) 。 |
 | 検索インサイト | [検索インサイト ウィジェット](../../../../using-search/search-pages-and-widgets/search-insights.md) を追加して、バックエンドによって作成されたクエリ文字列を検査できるようにします キーボードが入力されたときの検索コードと、検索エンジンから返された応答文字列。 これは、テストおよび開発中にのみ使用することを意図しています。 |
 | 検索オプション | 検索オプション ウィジェットを追加すると、ページで追加の検索オプションを構成できます。 |
 | 検索結果 | [検索結果ウィジェット](../../../../using-search/search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) を追加します。 検索クエリの結果。 |

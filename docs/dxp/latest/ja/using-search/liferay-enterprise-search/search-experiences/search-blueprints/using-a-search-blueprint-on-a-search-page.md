@@ -7,12 +7,12 @@
 1. [ブループリントの作成](./creating-and-managing-search-blueprints.md).
 1. [検索ページ](../../../search-pages-and-widgets/working-with-search-pages.md)を作成または移動する。
 1. ［ページにブループリントオプションウィジェット］を追加します。
-1. ウィジェットの _オプション_ アイコン (![Options](../../../../images/icon-app-options.png)) をクリックし、 *設定*をクリックします。
-1. ページのブループリントを選択するには、「 _選択」_をクリックします。
+1. ウィジェットの **オプション** アイコン (![Options](../../../../images/icon-app-options.png)) をクリックし、 **設定** をクリックします。
+1. ページのブループリントを選択するには、「**選択**」 をクリックします。
 
    ![ページで使用する青写真を選択します。](./using-a-search-blueprint-on-a-search-page/images/02.png)
 
-1. ブループリントを選択したら、Configuration 画面で _Save_ をクリックします。
+1. ブループリントを選択したら、Configuration 画面で **Save** をクリックします。
 
 これで、ブループリントの機能がページに適用されました。
 
@@ -75,4 +75,3 @@ Follow this example to set search context attributes into a blueprint-driven sea
 You can find the blueprint ID from the Blueprints application (Global Menu &rarr; Applications &rarr; Blueprints (Search Experiences).
 -->
 <!-- Example is unfinished--uncomment when finalized. -->
-

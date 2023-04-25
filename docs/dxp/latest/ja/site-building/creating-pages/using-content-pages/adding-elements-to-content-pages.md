@@ -18,7 +18,7 @@
 
 1. 設定]サイドバーで各ページ要素を選択し、設定する。 詳しくは、 [フラグメントの設定](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) を参照してください。
 
-   ![設定]サイドバーで各ページ要素を選択し、設定する。](adding-elements-to-content-pages/images/03.png)
+   ![[設定]サイドバーで各ページ要素を選択し、設定する。](adding-elements-to-content-pages/images/03.png)
 
 1. ［**公開**］ をクリックします。
 

@@ -50,7 +50,7 @@
    }
    ```
 
-1. *グローバルメニュー* &rarr; *コントロールパネル* &rarr; *ユーザーと組織*に移動します。 *［Organizations］*タブをクリックします。 新しい組織が追加されたことを確認します。
+1. **グローバルメニュー** &rarr; **コントロールパネル** &rarr; **ユーザーと組織** に移動します。 ［**Organizations**］ タブをクリックします。 新しい組織が追加されたことを確認します。
 
    ![新しい組織が追加されたことを確認する。](./organizations-api-basics/images/01.png)
 
@@ -166,7 +166,7 @@ java -classpath .:* Organizations_GET_FromInstance
 インスタンスの ``組織`` ID を取得するには ``Organizations_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### 組織名_GET_ById.sh
+### Organization_GET_ById.sh
 
 コマンド:
 
@@ -180,7 +180,7 @@ java -classpath .:* Organizations_GET_FromInstance
    :language: bash
 ```
 
-### 組織_GET_ById.java
+### Organization_GET_ById.java
 
 コマンド：
 
@@ -202,7 +202,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
 
 以下のcURLとJavaコマンドで、既存の組織の部分編集を行います。 `1234` をあなたの組織のIDに置き換えてください。
 
-### 組織_PATCH_ById.sh
+### Organization_PATCH_ById.sh
 
 コマンド：
 
@@ -216,7 +216,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
    :language: bash
 ```
 
-### 組織_PATCH_ById.java
+### Organization_PATCH_ById.java
 
 コマンド：
 
@@ -250,7 +250,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
    :language: bash
 ```
 
-### 組織_PUT_ById.java
+### Organization_PUT_ById.java
 
 コマンド：
 
@@ -270,7 +270,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
 
 以下のcURLコマンドとJavaコマンドで、既存の組織を削除する。 `1234` をあなたの組織のIDに置き換えてください。
 
-### Organization_DELETE_ById.sh
+### rganization_DELETE_ById.sh
 
 コマンド:
 
@@ -284,7 +284,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
    :language: bash
 ```
 
-### 組織_DELETE_ById.java
+### Organization_DELETE_ById.java
 
 コマンド
 

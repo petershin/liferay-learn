@@ -19,7 +19,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
    unzip liferay-f5w3.zip
    ```
 
-1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
+1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 1. cURLスクリプトを使用して、サイトに新しいボキャブラリを追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`TaxonomyVocabulary_POST_ToSite.sh`スクリプトを実行します。
 
@@ -51,7 +51,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
    }
    ```
 
-1. *［Administration Menu］* &rarr; *［カテゴリー設定］* &rarr; *［カテゴリー］*に移動して、カテゴリーアプリケーションに移動します。 新しいボキャブラリが追加されたことを確認してください。
+1. ［**Administration Menu**］ &rarr; ［**カテゴリー設定**］ &rarr; ［**カテゴリー**］ に移動して、カテゴリーアプリケーションに移動します。 新しいボキャブラリが追加されたことを確認してください。
 
    ![新しいボキャブラリが追加されました。](./categories-and-vocabulary-api-basics/images/01.png)
 
@@ -118,7 +118,7 @@ LiferayのREST APIは、Liferayのカテゴリーとボキャブラリ機能の�
 他の例のJavaクラスはこれと類似していますが、異なる`TaxonomyVocabularyResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、[TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java)を参照してください。
+サービスの詳細は、 [TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`TaxonomyVocabulary` RESTサービスを呼び出す例です。

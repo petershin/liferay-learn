@@ -2,13 +2,13 @@
 
 {bdg-secondary}`7.4+`
 
-PublicationsはLiferayのパーミッションフレームワークと連携しているので、通常のロールに[アプリケーション](#application-permissions)と[リソース](#resource-permissions)のパーミッションを割り当てることができます。また、共同研究者を招待する際に、[個々の出版物を対象とした](#assigning-roles-to-publication-collaborators)パーミッションを割り当てることができます。許可されたユーザーだけが、出版物にアクセスし、そのリソースに対してアクションを実行することができます。
+PublicationsはLiferayのパーミッションフレームワークと連携しているので、通常のロールに [アプリケーション](#application-permissions) と [リソース](#resource-permissions) のパーミッションを割り当てることができます。また、共同研究者を招待する際に、 [個々の出版物を対象とした](#assigning-roles-to-publication-collaborators) パーミッションを割り当てることができます。許可されたユーザーだけが、出版物にアクセスし、そのリソースに対してアクションを実行することができます。
 
 ```{note}
 出版物の許可には、ページおよびコンテンツの編集権限は含まれません。 出版物のユーザーは、彼らが行動することが期待されているアプリケーションやリソース(例：ウェブコンテンツ、ブログ、ページ）に対する明確な許可を必要とします。
 ```
 
-デフォルトでは、Liferayは [*Publications User*](#publications-user-role) ロールに、パブリケーションを作成しアクセスするための基本的なパーミッションを提供します。
+デフォルトでは、Liferayは [**Publications User**](#publications-user-role) ロールに、パブリケーションを作成しアクセスするための基本的なパーミッションを提供します。
 
 ![Liferay は、デフォルトの Publications User ロールを提供します。](./publications-permissions/images/01.png)
 
@@ -17,12 +17,12 @@ PublicationsはLiferayのパーミッションフレームワークと連携し�
 ![正規のロールを追加したり、その他のロールの権限を設定する。](./publications-permissions/images/02.png)
 
 ```{note}
-出版物の権限は、*通常のロール*にのみ割り当てることができます。 詳しくは、[Understanding Roles and Permissions](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) を参照してください。
+出版物の権限は、*通常のロール*にのみ割り当てることができます。 詳しくは、[ロールと権限について](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) を参照してください。
 ```
 
 ## アプリケーションの権限
 
-アプリケーション権限は、Publicationsアプリケーション自体へのアクセスを許可するもので、 [リソース権限](#resource-permissions)は含まれません。
+アプリケーション権限は、Publicationsアプリケーション自体へのアクセスを許可するもので、 [リソース権限](#resource-permissions) は含まれません。
 
 | 権限              | 説明                                                                                                                         |
 |:--------------- |:-------------------------------------------------------------------------------------------------------------------------- |
@@ -42,13 +42,13 @@ Sandbox Onlyを有効にし、ユーザーが本番環境で作業すること�
 
 ## リソース権限
 
-リソース権限は、パブリケーションアプリケーションのリソースを閲覧したり操作したりするためのアクセス権を付与するものです。 これらの権限の中には、[パブリケーションの作成に関連](#publications-creating-publications)するものもあれば、[既存のパブリケーションに対するアクションを実行する](#publication-acting-on-existing-publications)ものもあります(例：編集、削除、公開）。
+リソース権限は、パブリケーションアプリケーションのリソースを閲覧したり操作したりするためのアクセス権を付与するものです。 これらの権限の中には、 [パブリケーションの作成に関連](#publications-creating-publications) するものもあれば、 [既存のパブリケーションに対するアクションを実行する](#publication-acting-on-existing-publications) ものもあります(例：編集、削除、公開）。
 
 ### パブリケーション(出版物の作成）
 
 | 権限                | 説明                                                                                                                                      |
 |:----------------- |:--------------------------------------------------------------------------------------------------------------------------------------- |
-| パブリケーションを追加する (1) | パブリケーションを作成します。 この許可がない場合、ユーザーは、 [招待されたときのみ、出版物にアクセスし、貢献することができます](./collaborating-on-publications.md#inviting-users-to-a-publication)。 |
+| パブリケーションを追加する (1) | パブリケーションを作成します。 この許可がない場合、ユーザーは、 [招待されたときのみ、出版物にアクセスし、貢献することができます](./collaborating-on-publications.md#inviting-users-to-a-publication) 。 |
 | パーミッション (2)       | パブリケーションの作成に関連するパーミッションを表示・変更する：パブリケーションの追加とパーミッション。                                                                                    |
 
 
@@ -73,7 +73,7 @@ Sandbox Onlyを有効にし、ユーザーが本番環境で作業すること�
 
 ## 出版物のユーザーロール
 
-デフォルトでは、 *Publications User* ロールは、これらの権限を持ちます：
+デフォルトでは、 **Publications User** ロールは、これらの権限を持ちます：
 
 * Portal: View Control Panel Menu
 * パブリケーションズコントロールパネルでアクセス
@@ -84,7 +84,7 @@ Sandbox Onlyを有効にし、ユーザーが本番環境で作業すること�
 
 ## 出版協力者への役割分担の設定
 
-デフォルトでは、パブリケーション作成者には *owner* ロールが自動的に割り当てられ、そのパブリケーションに対してすべてのアクションを実行することができます。 [自分のパブリケーションにユーザーを招待するとき](./collaborating-on-publications.md#inviting-users-to-a-publication)、オーナーはこれらのパブリケーション・ロールを割り当てることができます：
+デフォルトでは、パブリケーション作成者には **owner** ロールが自動的に割り当てられ、そのパブリケーションに対してすべてのアクションを実行することができます。 [自分のパブリケーションにユーザーを招待するとき](./collaborating-on-publications.md#inviting-users-to-a-publication) 、オーナーはこれらのパブリケーション・ロールを割り当てることができます：
 
 | 出版物の役割 | 参照       | 更新       | 公開       | 権限の設定    | 削除       |
 |:------ |:-------- |:-------- |:-------- |:-------- |:-------- |
@@ -97,11 +97,11 @@ Sandbox Onlyを有効にし、ユーザーが本番環境で作業すること�
 
 各出版ロールは、現在の出版物にスコープされ、他の出版物でのパーミッションは付与されない。
 
-パブリケーションロールは、通常のロールの権限を制限するものではありません。 例えば、削除権限を持つユーザーがパブリケーションに招待され、 *viewer* ロールを割り当てられた場合、通常のロール権限によりパブリケーションを削除することができます。
+パブリケーションロールは、通常のロールの権限を制限するものではありません。 例えば、削除権限を持つユーザーがパブリケーションに招待され、 **viewer** ロールを割り当てられた場合、通常のロール権限によりパブリケーションを削除することができます。
 
 ## 追加情報
 
 * [公開](../publications.md)
-* [Creating and Managing Publications](./creating-and-managing-publications.md)
+* [パブリケーションの作成と管理](./creating-and-managing-publications.md)
 * [パブリケーションでのコラボレーション](./collaborating-on-publications.md)
 * [ロール権限の定義](../../../users-and-permissions/roles-and-permissions/defining-role-permissions.md)

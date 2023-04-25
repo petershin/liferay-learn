@@ -10,13 +10,13 @@
 1. インスタンス設定で「検索バーのサジェスチョン」が有効になっていることを確認します。 デフォルトで有効になっています。
 
 1. 検索バーウィジェットの設定で、検索バーサジェストを設定します。
-   - オプション」(![Options](../../../images/icon-widget-options.png))メニューをクリックし、「 _構成」(_)を選択します。
+   - オプション」(![Options](../../../images/icon-widget-options.png))メニューをクリックし、「**構成**」()を選択します。
 
-1. Suggestions Contributor を _Blueprint_に変更します。
+1. Suggestions Contributor を **Blueprint** に変更します。
 
-1. _Select_をクリックして、ブループリントを選択します。
+1. **Select** をクリックして、ブループリントを選択します。
 
-1. _［Save］_ をクリックします。
+1. ［**Save**］ をクリックします。
 
 これで Search Bar Suggestions は、Blueprint が提供するクエリ句と設定を使用して、Elasticsearch にカスタマイズされたリクエストを送信します。
 

@@ -1,6 +1,6 @@
 # デフォルトのサイトアプリケーション
 
-すべてのサイトには、パーソナライズされたデジタルエクスペリエンスを構築するための以下のコアアプリケーションが含まれています。 *サイトメニュー* (![Site Menu](../../images/icon-product-menu.png)) からアクセスできます。 *サイトメニュー*には、オブジェクトで作成されたカスタムアプリケーションも含めることができます。 詳しくは、[オブジェクトの作成](../../building-applications/objects/creating-and-managing-objects/creating-objects.md)を参照してください。
+すべてのサイトには、パーソナライズされたデジタルエクスペリエンスを構築するための以下のコアアプリケーションが含まれています。 **サイトメニュー**(![Site Menu](../../images/icon-product-menu.png)) からアクセスできます。 **サイトメニュー** には、オブジェクトで作成されたカスタムアプリケーションも含めることができます。 詳しくは、[オブジェクトの作成](../../building-applications/objects/creating-and-managing-objects/creating-objects.md)を参照してください。
 
 ```{tip}
 あるサイトにおいてアプリケーションを使用する場合、アプリケーションのデータはそのサイト内に限定され、他のサイトと共有することはできません。 ただし、アセットライブラリを使用すると、一部のアセットタイプを複数のサイトで使用できるようにすることができます。 詳しくは、[アセットライブラリ](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) をご覧ください。
@@ -31,11 +31,11 @@
 | [Webコンテンツ](../../content-authoring-and-management/web-content.md)             | サイトのWebコンテンツの記事、ストラクチャーおよびテンプレートを作成・管理します。     |
 | [ブログ](../../content-authoring-and-management/blogs.md)                        | 本サイトのブログエントリーおよび画像を作成・管理します。                   |
 | [ドキュメントとメディア](../../content-authoring-and-management/documents-and-media.md)  | サイトのドキュメントおよびその他のメディアアセットをアップロードし、管理します。       |
-| [動的データリスト](../../process-automation/forms/dynamic-data-lists.md) (*廃止予定*)     | 定義されたフィールドセットを使用してフォームを作成・表示します。               |
+| [動的データリスト](../../process-automation/forms/dynamic-data-lists.md) (**廃止予定**)     | 定義されたフィールドセットを使用してフォームを作成・表示します。               |
 | [フォーム](../../process-automation/forms.md)                                     | ユーザーデータを収集するためのサイトフォームを作成・管理します(例：フィードバック、求職）。 |
 | [ナレッジベース](../../collaboration-and-social/knowledge-base.md)                   | サイトの公式ドキュメントを作成・表示します。                         |
 | [掲示板](../../collaboration-and-social/message-boards.md)                       | サイトの掲示板を作成・管理し、コミュニケーションやコラボレーションを活性化させます。     |
-| [Wiki](../../collaboration-and-social/wiki.md)                                | 本サイトのWikiノードおよび記事を作成・管理します。                    |
+| [Wikiノード](../../collaboration-and-social/wiki.md)                                | 本サイトのWikiノードおよび記事を作成・管理します。                    |
 | [翻訳](../../content-authoring-and-management/translating-pages-and-content.md) | サイトページやコンテンツの翻訳を管理します。                         |
 
 ## カテゴリー設定

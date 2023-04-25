@@ -4,9 +4,9 @@ JBoss EAPにインストールするには、DXP WARのインストール、依�
 
 ## 前提条件
 
-Liferay DXPにはJava JDK 8または11が必要です。 詳細は、[互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360049238151)を参照してください。
+Liferay DXPにはJava JDK 8または11が必要です。 詳細は、 [互換性マトリクス](https://help.liferay.com/hc/ja/articles/360049238151) を参照してください。
 
-これらのファイルを [ヘルプセンター](https://customer.liferay.com/downloads) (サブスクリプション）または [Liferayコミュニティダウンロード](https://www.liferay.com/downloads-community)からダウンロードします。
+これらのファイルを [ヘルプセンター](https://customer.liferay.com/downloads) (サブスクリプション）または [Liferayコミュニティダウンロード](https://www.liferay.com/downloads-community) からダウンロードします。
 
 * DXP WARファイル
 * OSGi依存関係のZIPファイル
@@ -32,7 +32,7 @@ WAR ファイル名を変更することで、デフォルトの Liferay Portal 
 1. OSGi Dependencies ZIPファイルを `［Liferay Home］/osgi` フォルダーに解凍します(このフォルダーが存在しない場合は作成します）。 LiferayのOSGiランタイムは、これらのモジュールに依存しています。
 1. DXP 7.4+ WARファイルには、MariaDBおよびPostgreSQLのドライバーが含まれています。 以前のWARにはそれらがありません。 7.4以降のWARに、使用中のサポートされているデータベースのドライバーがない場合は、データベースベンダーのJDBC JARファイルをダウンロードして、`$JBOSS_HOME/standalone/deployments/ROOT.war/WEB-INF/shielded-container-lib`フォルダーに配置します。
 
-    サポートされているデータベースの一覧については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360049238151) を参照してください。
+    サポートされているデータベースの一覧については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/360049238151) を参照してください。
 
 ```{note}
 DXPには、テスト目的に役立つHypersonicデータベースが含まれています。 本番環境インスタンスにはHSQLを**使用しないでください**。
@@ -74,7 +74,7 @@ DXP 7.3以前の場合は、次の追加手順に従います。
 
 ## スタンドアロンモードとドメインモードのJBoss EAPでのDXPの実行
 
-JBoss EAPは、 *スタンドアロン* モードまたは *ドメイン* モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 *ドメイン*と呼ばれます。 スタンドアロンモードとドメインモードの詳細については、 [JBoss EAP Product Documentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes)のこのトピックに関するセクションを参照してください。
+JBoss EAPは、 **スタンドアロン** モードまたは **ドメイン** モードのいずれかで起動できます。 ドメインモードでは、単一のコントロールポイントから複数のアプリケーションサーバーインスタンスを管理できます。 このようなアプリケーションサーバーのコレクションは、 **ドメイン** と呼ばれます。 スタンドアロンモードとドメインモードの詳細については、 [JBoss EAP Product Documentation](https://access.redhat.com/documentation/en-us/red_hat_jboss_enterprise_application_platform/7.1/html/introduction_to_jboss_eap/overview_of_jboss_eap#operating_modes) のこのトピックに関するセクションを参照してください。
 
 DXPは、スタンドアロンモードで実行する場合はJBoss EAPをサポートしますが、ドメインモードで実行する場合はサポートしません。 JBossはファイル(展開または非展開）をコピーして管理対象デプロイメントのコンテンツを管理するため、DXPの自動展開は管理対象デプロイメントでは機能しません。 これにより、JSPフックとExtプラグインが意図したとおりに機能しなくなります。 たとえば、DXPのJSPオーバーライドメカニズムはアプリケーションサーバーに依存しているため、JSPフックは管理対象ドメインモードで実行されているJBoss EAPでは機能しません。 ただし、JSPフックとExtプラグインは非推奨であるため、使用していない可能性があります。
 
@@ -238,7 +238,7 @@ JBossサーバーでIBM JDKを使用する場合は、以下の追加手順を�
 
 ## Liferayにおけるデータソースの構成
 
-DXPには組み込みのHypersonicデータベースが含まれています。これはデモンストレーション目的には最適ですが、**本番環境では使用しないでください**。 本番環境では、フル機能のサポートされているRDBMSを使用してください。 データベースのセットアップについては、[データベースの設定](../configuring-a-database.md)を参照してください。
+DXPには組み込みのHypersonicデータベースが含まれています。これはデモンストレーション目的には最適ですが、 **本番環境では使用しないでください** 。 本番環境では、フル機能のサポートされているRDBMSを使用してください。 データベースのセットアップについては、[データベースの設定](../configuring-a-database.md)を参照してください。
 
 Liferay DXPは、DXPに組み込まれているデータソースを使用する(推奨）か、アプリケーションサーバー上に作成したデータソースを使用してデータベースに接続できます。
 
@@ -376,7 +376,7 @@ INFO: pass supports: [ES3 keywords as identifiers, getters, reserved words as pr
 current AST contains: [ES3 keywords as identifiers, getters, reserved words as properties, setters, string continuation, trailing comma, array pattern rest, arrow function, binary literal, block-scoped function declaration, class, computed property, const declaration, default parameter, destructuring, extended object literal, for-of loop, generator, let declaration, member declaration, new.target, octal literal, RegExp flag 'u', RegExp flag 'y', rest parameter, spread expression, super, template literal, exponent operator (**), async function, trailing comma in param list, object literals with spread, object pattern rest]
 ```
 
-Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 詳細は、[Activating Liferay DXP](../../setting-up-liferay/activating-liferay-dxp.md)を参照してください。
+Liferay DXP Enterpriseサブスクリプションをお持ちの場合、DXPはアクティベーションキーを要求します。 詳細は、 [Liferay DXPのアクティブ化](../../setting-up-liferay/activating-liferay-dxp.md) を参照してください。
 
 　 DXPはJBoss EAPで実行されています。
 

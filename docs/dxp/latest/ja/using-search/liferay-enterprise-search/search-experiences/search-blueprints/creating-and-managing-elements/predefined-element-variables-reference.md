@@ -16,7 +16,7 @@
 |                                        | <a href="#time" id="time">**TIME**</a>                                                                                                                                       |                                         |
 | 現在の日付                                  | 日付：現在の日付                                                                                                                                                        | `${time.current_date}`                  |
 | 現在の月の日                                 | 数字：月の日                                                                                                                                                          | `${time.current_day_of_month}`          |
-| 現在の週の日                                 | 番号：曜日(_1 = 月曜日_）。                                                                                                                                               | `${time.current_day_of_week}`           |
+| 現在の週の日                                 | 番号：曜日(**1 = 月曜日**）。                                                                                                                                               | `${time.current_day_of_week}`           |
 | 現在の年の日                                 | 数字：年号の日                                                                                                                                                         | `${time.current_day_of_year}`           |
 | 現在の時間                                  | 数字：現在の時間                                                                                                                                                        | `${time.current_hour}`                  |
 | 現在の年                                   | 番号：当年度                                                                                                                                                          | `${time.current_year}`                  |
@@ -46,7 +46,7 @@
 | 親資産カテゴリー ID {bdg-secondary}`7.4 U41+`  | 番号：ユーザーのカテゴリの親カテゴリすべてのID                                                                                                                                        | `${user.parent_asset_category_ids}`     |
 | 標準ロール ID                               | 番号：ユーザーの通常ロールのロールID                                                                                                                                             | `${user.regular_role_ids}`              |
 | ユーザーグループID                             | 番号：そのユーザーが所属するユーザーグループのID                                                                                                                                       | `${user.user_group_ids}`                |
-|                                        | <a href="#conditional-elements" id="conditional-elements">条件付き要素****。</a>                                                                                                                                       |                                         |
+|                                        | <a href="#conditional-elements" id="conditional-elements">**条件付き要素**\*</a>                                                                                                                                       |                                         |
 | IPスタックシティ                              | テキスト：検索するIPアドレスの発信地となる都市名                                                                                                                                       | `${ipstack.city}`                       |
 | IPスタック 大陸コード                           | テキスト：検索するIPアドレスの発信元となる大陸コード(例：北米はNA）。                                                                                                                           | `${ipstack.continent_code}`             |
 | IPスタック大陸名                              | テキスト：大陸の名前                                                                                                                                                      | `${ipstack.continent_name}`             |
@@ -60,15 +60,15 @@
 | 天気図を開く 気温                              | 番号：温度                                                                                                                                                           | `${openweathermap.temp}`                |
 | 天気予報を開く 天気予報の説明                        | テキスト：天気の説明(例：「晴れ」）。                                                                                                                                             | `${openweathermap.weather_description}` |
 | 天気予報を開く 天気予報ID                         | 番号：気象記述に対応する [ID](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2)                                                                      | `${openweathermap.weather_id}`          |
-| 天気図を開く メインラベル                          | Text: 天気の [一次識別子(例：Rain。これは OpenWeatherMap の API レスポンスの Main フィールドです）](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2)、天気 ID に従ったものです。 | `${openweathermap.weather_main}`        |
+| 天気図を開く メインラベル                          | Text: 天気の [一次識別子(例：Rain。これは OpenWeatherMap の API レスポンスの Main フィールドです）](https://openweathermap.org/weather-conditions#Weather-Condition-Codes-2) 、天気 ID に従ったものです。 | `${openweathermap.weather_main}`        |
 | オープンウェザーマップ 風速                         | 数値：風速(km/h                                                                                                                                                      | `${openweathermap.wind_speed}`          |
-| ユーザーカスタムフィールド **˶*☝️**                 | ユーザーカスタムフィールドの値                                                                                                                                                 | `user.custom.field.[name]`              |
+| ユーザーカスタムフィールド **\*\*** | ユーザーカスタムフィールドの値                                                                                                                                                 | `user.custom.field.[name]`              |
 
 **\*** [Liferay Commerce](https://learn.liferay.com/w/commerce/installation-and-upgrades/activating-liferay-commerce-enterprise) を起動し、Commerce 固有の変数にアクセスします。
 
 **\*** ipstack と OpenWeatherMap の変数にアクセスするには、まず各サービスを有効にします。 システムまたはインスタンスの設定 &rarr; プラットフォーム &rarr; 検索エクスペリエンスにアクセスします。 有効］チェックボックスをクリックし、設定するサービスの設定を保存します。 OpenWeatherMap サービスは、ipstack サービスが有効であることに依存していることに注意してください。 ipstack サービスを使用した例については、 [Personalizing Search Experience](../personalizing-the-search-experience.md) をご参照ください。
 
-**\*\*** \*\* これらの既成の変数に加え、 [ユーザー・エンティティ上のカスタム・フィールド](../../../../../system-administration/configuring-liferay/adding-custom-fields.md) も、要素内の変数として参照することができる。 例えば、 _Employee_ という名前のユーザーカスタムフィールドは、 `user.custom.field.employee`という要素の中で参照されます。
+**\*\*** これらの既成の変数に加え、 [ユーザー・エンティティ上のカスタム・フィールド](../../../../../system-administration/configuring-liferay/adding-custom-fields.md) も、要素内の変数として参照することができる。 例えば、***Employee** という名前のユーザーカスタムフィールドは、 `user.custom.field.employee`という要素の中で参照されます。
 
 ## 追加情報
 

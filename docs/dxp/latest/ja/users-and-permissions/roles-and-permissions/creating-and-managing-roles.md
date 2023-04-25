@@ -8,9 +8,9 @@
 
 まず、 [、作成しなければならない役割の範囲](./understanding-roles-and-permissions.md) を決定します。 ロールは、グローバル(通常のロール）、サイト、組織、アセットライブラリ、またはアカウントごとにスコープすることができます。
 
-1. *グローバルメニュー* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *コントロールパネル* タブを開き、 *役割*をクリックします。
+1. **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** タブを開き、 **役割** をクリックします。
 
-1. *追加* (![Add Button](../../images/icon-add.png)） をクリックします。
+1. **追加**(![Add Button](../../images/icon-add.png)） をクリックします。
 
 1. 役割の種類を選択します。
 
@@ -18,7 +18,7 @@
 
 1. キーを入力します。 プログラム上でロールを参照するための一意の識別子です。 デフォルトでは、タイトル値が使用されます。
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 ![役割の種類を選択し、タイトル、説明、キーを入力します。](./creating-and-managing-roles/images/01.png)
 
@@ -28,13 +28,13 @@
 
 ロールのタイトル、説明、キーはいつでも更新できますが、タイプ/スコープを変更することはできません。
 
-これを行うには、ロールの *アクション* ボタン (![Actions Button](../../images/icon-actions.png)) をクリックし、 *編集*を選択します。 完了したら、*［Save］*をクリックします。
+これを行うには、ロールの **アクション** ボタン (![Actions Button](../../images/icon-actions.png)) をクリックし、 **編集** を選択します。 完了したら、 ［**Save**］ をクリックします。
 
 ## ロール管理権限
 
 個々のロールを管理するための権限を割り当てることができます。
 
-1. ロールの *アクション* ボタン(![Actions](../../images/icon-actions.png)）をクリックし、 *権限*を選択します。
+1. ロールの **アクション** ボタン(![Actions](../../images/icon-actions.png)）をクリックし、 **権限** を選択します。
 
 1. 選択したロールに対して、既存の通常のロールが実行できるアクションを指定します。 この割り当ては個々のロールに対して行われ、 [Rolesアプリケーションで権限を定義するのとは異なります](./defining-role-permissions.md)。
 
@@ -48,7 +48,7 @@
 
 ## ロールの削除
 
-1. ロールの *アクション* ボタン(![Actions Button](../../images/icon-actions.png)）をクリックし、 *削除*を選択します。
+1. ロールの **アクション** ボタン(![Actions Button](../../images/icon-actions.png)）をクリックし、 **削除** を選択します。
 
 1. 本当に役割を削除するのか確認する。 ロールは、それに関連する [ワークフローのタスク割り当て](../../process-automation/workflow/using-workflows/reviewing-assets.md) と共に、直ちに削除されます。
 
@@ -60,7 +60,7 @@
 
 エクスポートまたはインポート処理を開始する、
 
-1. Rolesアプリケーションを開き、アプリケーションバーの *Actions* ボタン ![Actions Button](./../../images/icon-actions.png) をクリックし、 *Export/Import*を選択します。
+1. Rolesアプリケーションを開き、アプリケーションバーの **Actions** ボタン ![Actions Button](./../../images/icon-actions.png) をクリックし、 **Export/Import** を選択します。
 
    ![Rolesアプリケーションを開き、アプリケーションバーの「Actions」ボタンをクリックし、「Export/Import」を選択します。](./creating-and-managing-roles/images/04.png)
 

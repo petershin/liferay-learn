@@ -1,6 +1,6 @@
 #クラスタノードのデータベース構成
 
-DXPクラスタのノードが機能するためには、最低限、[同じデータベースを共有するように設定](./example-creating-a-simple-dxp-cluster.md#configure-cluster-link-and-the-other-server-connections) (またはデータベースクラスタ）である必要があります。ここで説明する最適化は、DXPクラスタのデータベース性能をさらに向上させることができるので、DXPの使用状況や予想されるトランザクション量を考慮した上で検討する必要があります。
+DXPクラスタのノードが機能するためには、最低限、 [同じデータベースを共有するように設定](./example-creating-a-simple-dxp-cluster.md#configure-cluster-link-and-the-other-server-connections) (またはデータベースクラスタ）である必要があります。ここで説明する最適化は、DXPクラスタのデータベース性能をさらに向上させることができるので、DXPの使用状況や予想されるトランザクション量を考慮した上で検討する必要があります。
 
 ```{warning}
 クラスタリングは、組み込みHSQLデータベースでは機能しません。
@@ -38,7 +38,7 @@ DXPクラスタのノードが機能するためには、最低限、[同じデ�
 
     JDBC接続値の例については、[データベーステンプレート](../../reference/database-templates.md)を参照してください。
 
-1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して[カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter)データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
+1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して [カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -60,7 +60,7 @@ DXPクラスタのノードが機能するためには、最低限、[同じデ�
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-詳細は、 [Spring configuration Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring)参照してください。
+詳細は、 [Spring configuration Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 参照してください。
 
 ### JNDI
 
@@ -80,7 +80,7 @@ DXPクラスタのノードが機能するためには、最低限、[同じデ�
     jdbc.write.password=[place your password here]
     ```
 
-1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して[カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter)データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
+1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して [カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -102,14 +102,14 @@ DXPクラスタのノードが機能するためには、最低限、[同じデ�
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-詳細は、 [Spring configuration Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring)参照してください。
+詳細は、 [Spring configuration Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 参照してください。
 
 DXPは、次回の起動時に、読み取りデータソース、書き込みデータソース、およびカウンターデータソースを使用します。
 
 ## データベースの複製
 
-データベースクラスタを使用すると、フォールトトレランスとDXPのパフォーマンスが向上します。 データベースクラスタインスタンスは常に同期している必要があります。 レプリケーションは、変更されたデータと変更されたスキーマを1つのデータベースインスタンスから別のデータベースインスタンスにコピーするプロセスです。 サポートされるすべての [データベース](https://help.liferay.com/hc/en-us/articles/360049238151) はレプリケーションをサポートします。 データベースクラスターを使用している場合は、データベースベンダーの指示に従って、データベースをレプリケーション用に設定します。
+データベースクラスタを使用すると、フォールトトレランスとDXPのパフォーマンスが向上します。 データベースクラスタインスタンスは常に同期している必要があります。 レプリケーションは、変更されたデータと変更されたスキーマを1つのデータベースインスタンスから別のデータベースインスタンスにコピーするプロセスです。 サポートされるすべての [データベース](https://help.liferay.com/hc/ja/articles/360049238151) はレプリケーションをサポートします。 データベースクラスターを使用している場合は、データベースベンダーの指示に従って、データベースをレプリケーション用に設定します。
 
 ## 次のステップ
 
-クラスター用のデータベースを設定したので、 [DXP クラスタリングの要件](../clustering-for-high-availability.md#clustering-requirements)に引き続き対処することができます。 次の要件は、すべてのノードが [ファイルストア](../../../system-administration/file-storage.md)にアクセスできるようにし、そのファイルストアで各ノードを構成することです。
+クラスター用のデータベースを設定したので、 [DXP クラスタリングの要件](../clustering-for-high-availability.md#clustering-requirements) に引き続き対処することができます。 次の要件は、すべてのノードが [ファイルストア](../../../system-administration/file-storage.md)にアクセスできるようにし、そのファイルストアで各ノードを構成することです。

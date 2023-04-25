@@ -4,11 +4,11 @@
 
 次の手順に従って、ウィジェットページにウィジェットを追加します。
 
-1. アプリケーションバーの *追加* ボタン (![Add](../../../images/icon-add-app.png)) をクリックします。
+1. アプリケーションバーの **追加** ボタン (![Add](../../../images/icon-add-app.png)) をクリックします。
 
    ![アプリケーションバーの［追加ボタン］をクリックします。](./adding-widgets-to-a-page/images/01.png)
 
-1. *ウィジェット* パネルを開き、利用可能なウィジェットのカテゴリを検索または閲覧して、目的のウィジェットを見つけます。
+1. **ウィジェット** パネルを開き、利用可能なウィジェットのカテゴリを検索または閲覧して、目的のウィジェットを見つけます。
 
    ![ウィジェットパネルには、ページに機能を追加するために使用できるいくつかのデフォルトウィジェットが含まれています。](./adding-widgets-to-a-page/images/02.png)
 
@@ -19,7 +19,7 @@ DXP 7.3以降では、ウィジェットページの上部にある目のアイ�
 ```
 
 ```{note}
-ウィジェットはウィジェットページの、 [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight)に従ってレンダリングされます。
+ウィジェットはウィジェットページの、 [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) に従ってレンダリングされます。
 ```
 
 ## 追加情報

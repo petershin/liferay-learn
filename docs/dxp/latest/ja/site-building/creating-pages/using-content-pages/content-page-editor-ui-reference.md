@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay 7.4 U37+/GA37+の場合`
 
-コンテントページエディタを使用して、コンテントページ内の要素を[追加し](./adding-elements-to-content-pages.md)設定することができます。 コンテントページエディタを開くには、コンテントページに移動して、*編集* (![Edit icon](../../../images/icon-edit.png) ) をクリックします。 編集ツールバーとサイドバーが表示され、コンテントページを作成するためのツールやコンポーネントが表示されます。
+コンテントページエディタを使用して、コンテントページ内の要素を[追加し](./adding-elements-to-content-pages.md)設定することができます。 コンテントページエディタを開くには、コンテントページに移動して、 **編集**(![Edit icon](../../../images/icon-edit.png) ) をクリックします。 編集ツールバーとサイドバーが表示され、コンテントページを作成するためのツールやコンポーネントが表示されます。
 
 - [編集ツールバー](#editing-toolbar)
 - [編集サイドバー](#editing-sidebar)
@@ -30,12 +30,12 @@
 デバイスアイコンをクリックして、Liferayのレスポンシブレイアウトエディタにアクセスします。 ここでは、さまざまな画面サイズに対応したページを設定することができます。 利用可能な表示オプションは、デスクトップ ( ![Desktop](../../../images/icon-display.png) )、タブレット ( ![Tablet](../../../images/icon-tablet-portrait.png) )、スマホ(横） ( ![Landscape Phone](../../../images/icon-mobile-landscape.png) )、スマホ(縦） ( ![Portrait Phone](../../../images/icon-mobile-portrait.png) )です。 タブレットやスマホのレイアウト編集中は、リサイズハンドルバーを使って画面サイズを手動で調整することができます。 詳しくは、 [レスポンシブレイアウトの構築](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) をご覧ください。
 
 ```{note}
-[フラグメントとウィジェット](#fragments-and-widgets)および[ページデザインオプション](#page-design-options)パネルは、デスクトップレイアウトでのみ利用可能です。
+[フラグメントとウィジェット](#fragments-and-widgets) および [ページデザインオプション](#page-design-options) パネルは、デスクトップレイアウトでのみ利用可能です。
 ```
 
 ### 編集履歴
 
-*履歴* ボタン (![History Button](./../../../images/icon-time.png) ) をクリックすると、現在の編集セッションで行われた変更内容が表示されます。 この履歴は、変更の予約や復元に使用することができます。 また、「元に戻す」・「やり直し」コマンドボタンをクリックすることもできます。
+**履歴** ボタン (![History Button](./../../../images/icon-time.png) ) をクリックすると、現在の編集セッションで行われた変更内容が表示されます。 この履歴は、変更の予約や復元に使用することができます。 また、「元に戻す」・「やり直し」コマンドボタンをクリックすることもできます。
 
 ![［元に戻す］、［やり直し］、［履歴］ボタンを使って、変更した内容を元に戻すことができます。](./content-page-editor-ui-reference/images/03.png)
 
@@ -45,14 +45,14 @@
 
 | 編集モード   | Description                                   | 利用可能なオプション                |
 |:------- |:--------------------------------------------- |:------------------------- |
-| ページデザイン | ページとページの内容を更新する権限がある場合に、ページをデザインすることができます。    | <ul><li>[Browser](#browser)</li><li>[ページコンテンツ](#page-content)</li><li>[Comments](#comments)</li></ul> |
-| コンテンツ編集 | ページの更新権限がある場合は、コンテンツの編集が可能ですが、ページの内容は編集できません。 | <ul><li>[フラグメントとウィジェット](#fragments-and-widgets)</li><li>[Browser](#browser)</li><li>[ページデザインオプション](#page-design-options)</li><li>[ページコンテンツ](#page-content)</li><li>[Comments](#comments)</li></ul> |
+| ページデザイン | ページとページの内容を更新する権限がある場合に、ページをデザインすることができます。    | <ul><li> [Browser](#browser) </li><li> [ページコンテンツ](#page-content) </li><li> [Comments](#comments) </li></ul> |
+| コンテンツ編集 | ページの更新権限がある場合は、コンテンツの編集が可能ですが、ページの内容は編集できません。 | <ul><li> [フラグメントとウィジェット](#fragments-and-widgets) </li><li> [Browser](#browser) </li><li> [ページデザインオプション](#page-design-options) </li><li> [ページコンテンツ](#page-content) </li><li> [Comments](#comments) </li></ul> |
 
 ![編集モードは、［ページデザイン］と［コンテンツ編集］のどちらかを選択します。](content-page-editor-ui-reference/images/04.png)
 
 ### サイドバーを切り替える
 
-サイドバー切り替えボタン( ![Toggle Sidebars](../../../images/icon-view.png) )をクリックして、編集中のサイドバーを非表示にし、ページをプレビューします。 アプリケーションバーのアクションボタン( ![Actions Button](../../../images/icon-actions.png) )をクリックし、 *［プレビューを新しいタブで開く］*を選択すると、現在のページエクスペリエンスと言語を新しいタブで見ることができます。
+サイドバー切り替えボタン( ![Toggle Sidebars](../../../images/icon-view.png) )をクリックして、編集中のサイドバーを非表示にし、ページをプレビューします。 アプリケーションバーのアクションボタン( ![Actions Button](../../../images/icon-actions.png) )をクリックし、 ［**プレビューを新しいタブで開く**］ を選択すると、現在のページエクスペリエンスと言語を新しいタブで見ることができます。
 
 ### ページテンプレートを作成する
 
@@ -67,9 +67,9 @@
 選択した編集モードに応じて、編集サイドバーでこれらのパネルにアクセスすることができます。
 
 - ![フラグメントとウィジェット](../../../images/icon-plus.png) - [フラグメントとウィジェット](#fragments-and-widgets)
-- ![ブラウザ](../../../images/icon-hierarchy.png) - [ブラウザ](#browser) (旧 *セレクション*)
+- ![ブラウザ](../../../images/icon-hierarchy.png) - [ブラウザ](#browser) (旧 **セレクション**)
 - ![ページデザインオプション](../../../images/icon-format.png) - [ページデザインオプション](#page-design-options)
-- ![ページコンテンツ](../../../images/icon-paperclip.png) - [ページコンテンツ](#page-content) (旧 *コンテンツ*)
+- ![ページコンテンツ](../../../images/icon-paperclip.png) - [ページコンテンツ](#page-content) (旧 **コンテンツ**)
 - ![コメント](../../../images/icon-message.png) - [コメント](#comments)
 
 ![編集サイドバーには、以下のパネルがあります。](content-page-editor-ui-reference/images/05.png)
@@ -78,12 +78,12 @@
 
 フラグメントとウィジェットパネル( ![Fragments and Widgets icon](../../../images/icon-plus.png) )では、すぐに使用できるページ要素とカスタムのページ要素の両方にアクセスすることができます。
 
-**フラグメント**: フラグメントは、拡張性、再利用性、ドラッグ＆ドロップ可能な要素で、コンテントページの主要な構成要素として機能します。 例としては、レイアウト要素、ビデオ、テキストオーバーレイ付きのバナー画像などがあります。 すぐに使えるフラグメントについては、[フラグメントの使用](../page-fragments-and-widgets/using-fragments.md)を、独自のフラグメントを作成する方法については [フラグメントの開発](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)を参照してください。
+**フラグメント** : フラグメントは、拡張性、再利用性、ドラッグ＆ドロップ可能な要素で、コンテントページの主要な構成要素として機能します。 例としては、レイアウト要素、ビデオ、テキストオーバーレイ付きのバナー画像などがあります。 すぐに使えるフラグメントについては、[フラグメントの使用](../page-fragments-and-widgets/using-fragments.md)を、独自のフラグメントを作成する方法については [フラグメントの開発](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)を参照してください。
 
-**ウィジェット**：ウィジェットとは、ページに動的な機能を追加する[アプリケーション](../../../building-applications.md)のことです。 例としては、ブログ、掲示板、カレンダーなどがあります。 詳細は、[コンテントページでのウィジェットの使用](./using-widgets-on-a-content-page.md)を参照してください。
+**ウィジェット** ：ウィジェットとは、ページに動的な機能を追加する[アプリケーション](../../../building-applications.md)のことです。 例としては、ブログ、掲示板、カレンダーなどがあります。 詳細は、[コンテントページでのウィジェットの使用](./using-widgets-on-a-content-page.md)を参照してください。
 
 ```{tip}
-Liferay 7.4 U37/GA37から、順序ボタン(![順序ボタン](../../../images/icon-order.png))をクリックして、フラグメントとウィジェットのセットを並べ替えます。 スターボタン(！[スターボタン](../../images/icon-star.png)）をクリックすると、フラグメントやウィジェットをお気に入り要素に追加することができます。
+Liferay 7.4 U37/GA37から、順序ボタン(![順序ボタン](../../../images/icon-order.png))をクリックして、フラグメントとウィジェットのセットを並べ替えます。 スターボタン(！ [スターボタン](../../images/icon-star.png) ）をクリックすると、フラグメントやウィジェットをお気に入り要素に追加することができます。
 ```
 
 ### ブラウザ
@@ -91,7 +91,7 @@ Liferay 7.4 U37/GA37から、順序ボタン(![順序ボタン](../../../images/
 ブラウザパネル( ![Browser](../../../images/icon-hierarchy.png) )を使って、ページ内のすべての要素を表示、整理、管理することができます。 要素は階層で表示されます。 Liferay 7.4 U37/GA37+では、ブラウザパネルで要素をドラッグ＆ドロップして再編成したり、要素をダブルクリックして名前を変更したりすることができます。 要素を選択すると、その設定が設定サイドパネルに表示されます。 フラグメントのサブエレメントを選択すると、その他の設定にアクセスできます。 詳しくは、[フラグメントの設定](../page-fragments-and-widgets/using-fragments/configuring-fragments.md)を参照してください。
 
 ```{note}
-コンテントページを編集する場合、ヘッダーとフッターの要素はブラウザパネルに含まれません。 これらの要素は、[マスターページテンプレート](../defining-headers and footers/master-page-templates.md) でのみ編集が可能です。
+コンテントページを編集する場合、ヘッダーとフッターの要素はブラウザパネルに含まれません。 これらの要素は、[マスターページテンプレート](../defining-headers-and-footers/master-page-templates.md) でのみ編集が可能です。
 ```
 
 ### ページコンテンツ

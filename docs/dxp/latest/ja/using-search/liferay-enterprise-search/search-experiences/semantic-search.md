@@ -14,7 +14,7 @@ toc:
 ./semantic-search/creating-a-search-blueprint-for-semantic-search.md
 ```
 
-_セマンティック_ 検索されたフレーズの背後にある意図を評価するものです。 一方、 _キーワード_ 検索は、検索されたフレーズをインデックスされたテキストフィールドにマッチさせるもので、意味に基づくマッチを作り出すことはできません。
+**セマンティック** 検索されたフレーズの背後にある意図を評価するものです。 一方、 **キーワード** 検索は、検索されたフレーズをインデックスされたテキストフィールドにマッチさせるもので、意味に基づくマッチを作り出すことはできません。
 
 | 検索したフレーズ | インデックス付きコンテンツ                            | マッチタイプ                                        |
 |:-------- |:---------------------------------------- |:--------------------------------------------- |
@@ -49,8 +49,8 @@ Liferayのような高度なキーワード検索(Elasticsearchを使用）で�
 
 Liferayでセマンティック検索を可能にするため、
 
-1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *コントロールパネル* &rarr; *インスタンスの設定*をクリックします。
-1. *Platform* &rarr; *Feature Flags* セクションを開いてください。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** &rarr; **インスタンスの設定** をクリックします。
+1. **Platform** &rarr; **Feature Flags** セクションを開いてください。
 1. Betaの項目で、Semantic Searchを有効にします。
 
 ![セマンティック検索はベータ版機能であり、インスタンス設定で有効にする必要があります。](./semantic-search/images/02.png)
@@ -61,7 +61,7 @@ Liferayでセマンティック検索を可能にするため、
 feature.flag.LPS-122920=true
 ```
 
-[環境変数](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables)を使ってセマンティック検索を有効にするには、次のように設定を追加します：
+[環境変数](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables) を使ってセマンティック検索を有効にするには、次のように設定を追加します：
 
 ```properties
 LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER2__NUMBER2__NUMBER9__NUMBER2__NUMBER0_=true
@@ -78,7 +78,7 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__N
 
 [適切に訓練されたモデル](https://www.sbert.net/docs/pretrained_models.html) が最も重要です。インデックスに含まれるデータは、選択したモデルにとって適切でなければなりません。 訓練済みのモデルを使うのは便利ですが、本番で使う前にデータに合わせて微調整が必要な場合があります。 ロバスト・テストによってのみ、選択したモデルが適切であることを知ることができます。
 
-例えば、 _「スケートはどのように動くのか」と検索した場合、海洋生物学を学習したモデルとレクリエーションを学習したモデルでは、結果が異なります。_と検索した場合、海洋生物学を学んだモデルと、レクリエーションを学んだモデルでは、異なる結果が得られるでしょう。
+例えば、 「**スケートはどのように動くのか」と検索した場合、海洋生物学を学習したモデルとレクリエーションを学習したモデルでは、結果が異なります。** と検索した場合、海洋生物学を学んだモデルと、レクリエーションを学んだモデルでは、異なる結果が得られるでしょう。
 
 [Hugging Face モデルハブ](https://huggingface.co/models) は、事前に訓練されたドメイン固有のモデルの大規模なコレクションを提供します。
 
@@ -89,13 +89,13 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__N
 1. 初めてセマンティック検索を可能にする。
 1. セマンティックサーチの設定で、テキスト埋め込みプロバイダー、モデル、ベクトル寸法、テキスト切り捨ての戦略を変更すること。
 
-テキスト埋め込みのインデックスを作成するには、インデックスアクション画面を使用し、セマンティック検索システムまたはインスタンス設定のアセットエントリークラス名の設定で有効にしているモデルタイプだけについて、 _Reindex_ ボタンをクリックします。
+テキスト埋め込みのインデックスを作成するには、インデックスアクション画面を使用し、セマンティック検索システムまたはインスタンス設定のアセットエントリークラス名の設定で有効にしているモデルタイプだけについて、 **Reindex** ボタンをクリックします。
 
 ## セマンティック検索を設定する
 
 [text embeddings provider](./semantic-search/setting-up-a-text-embedding-provider.md)を設定する以外にも、セマンティック検索のための設定オプションが用意されています。 コントロールパネルにアクセス &rarr; インスタンス設定 &rarr; セマンティック検索。
 
-テキスト埋め込みプロバイダの設定については、 [セマンティック検索を有効にする](#enabling-semantic-search)で説明しています。
+テキスト埋め込みプロバイダの設定については、 [セマンティック検索を有効にする](#enabling-semantic-search) で説明しています。
 
 インデックス設定には、このようなものがあります：
 
@@ -109,7 +109,7 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__N
 現在、Basic Web Contentの記事のみ対応しています。
 ```
 
-**Languages(言語）：** 変換する言語とローカライズを選択します。 デフォルトでは、リストアップされたすべての言語が選択されています。 _Ctrl + Click_を使って、リストから複数の言語を選択します。
+**Languages(言語）：** 変換する言語とローカライズを選択します。 デフォルトでは、リストアップされたすべての言語が選択されています。 **Ctrl + Click** を使って、リストから複数の言語を選択します。
 
 ```{warning}
 言語を有効にしても、その言語に対応した文埋め込みが作成されることを保証するものではありません。 サイト内で使用可能な言語であること。 システム/インスタンス設定で言語が有効で、サイト内で利用可能であるにもかかわらず、あるコンテンツの翻訳がない場合、デフォルトの翻訳がテキスト埋め込みを作成するために使用されます。
@@ -147,6 +147,6 @@ Liferayのセマンティックサーチは、以下のどちらかです。
 * 通常のキーワードマッチングが発生します：
   * 検索バーウィジェットに入力された検索フレーズは、Liferayの検索フレームワークによって受信され、分析と追加処理のために検索エンジンに送られ、検索エンジンの既存のインデックス文書とマッチングされ、関連性がスコア化され、その追加処理(ハイライト、要約、許可のための追加フィルタリングの実行など）のためにLiferayに返されます。
 * 追加の意味検索処理が発生します：
-  * 検索フレーズはテキスト埋め込みプロバイダーに送られ、ベクトル表現が作成されます(テキスト埋め込み [](https://neuml.github.io/txtai/embeddings/)）。 キーワード検索の関連性でスコアリングされた検索結果をレンダリングする前に、ウィンドウ制限設定内に取り込まれた結果は、検索フレーズのベクトル表現とインデックス文書のベクトル表現を比較することで再スコアリングされます。 新しいスコアが計算され、その結果はエンドユーザーが消費するために検索ページに返されます。 詳しくはElasticの [ベクターサーチとは](https://www.elastic.co/what-is/vector-search) をご覧ください。
+  * 検索フレーズはテキスト埋め込みプロバイダーに送られ、ベクトル表現が作成されます(テキスト埋め込み [](https://neuml.github.io/txtai/embeddings/) ）。 キーワード検索の関連性でスコアリングされた検索結果をレンダリングする前に、ウィンドウ制限設定内に取り込まれた結果は、検索フレーズのベクトル表現とインデックス文書のベクトル表現を比較することで再スコアリングされます。 新しいスコアが計算され、その結果はエンドユーザーが消費するために検索ページに返されます。 詳しくはElasticの [ベクターサーチとは](https://www.elastic.co/what-is/vector-search) をご覧ください。
 
 [^1]: ドキュメント内のフィールドを検査するには、 [Display Results in Document Form](../../search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) の設定、または [Search Blueprints preview](./search-blueprints/creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) 機能を使用します。

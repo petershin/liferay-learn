@@ -5,9 +5,13 @@ uuid: d717105d-bf1d-4b82-88ea-61798efeb7a5
 
 Use the different web service tools Liferay offers to protect your system as different applications and clients interact with Liferay. See [securing Liferay web services](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services) to learn more.
 
+<!-- Same thing. Do we have reasons why Delectable Bonsai wants to do this? -Rich --> 
+
 ## Understanding Service Access Policies
 
 Use the service access policy tool to set which web services have public access. You can view a list of the default policies. Follow the steps below to add a new policy. See [setting service access policies](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies) to learn more.
+
+<!-- We should probably have a warning here that in most circumstances, you don't want your web services having public access. Unless you are providing a public service, requiring authentication is best. -Rich --> 
 
 1. Make an API request without passing any credentials. 
 
@@ -23,12 +27,12 @@ Use the service access policy tool to set which web services have public access.
 
 2. Configure the new policy as follows:
 
-   * Input `MY_USER_ACCOUNT_GUEST_ACCESS` as the name.
+   * Enter `MY_USER_ACCOUNT_GUEST_ACCESS` as the name.
    * Toggle the enabled switch on.
    * Toggle the default switch on.
-   * Input `My User Account Guest Access` as the title.
-   * Input `com.liferay.headless.admin.user.internal.resource.v1_0.UserAccountResourceImpl` as the service class.
-   * Input `getMyUserAccount` as the method name.
+   * Enter `My User Account Guest Access` as the title.
+   * Enter `com.liferay.headless.admin.user.internal.resource.v1_0.UserAccountResourceImpl` as the service class.
+   * Enter `getMyUserAccount` as the method name.
    * Click _Save_.
 
 3. Make the same API request.
@@ -47,7 +51,7 @@ When a server from a different domain tries to access Liferay web services, the 
 
    * Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Objects_.
    * Click _Add_ (![Add icon](../../images/icon-add.png)).
-   * Input the following:
+   * Enter the following object:
      * Label: `J4X7-Object`
      * Plural Label: `J4X7-Objects`
      * Name: `J4X7Object`
@@ -96,6 +100,8 @@ When a server from a different domain tries to access Liferay web services, the 
    See that the entry was prevented from being added.
 
 1. In Liferay, navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _System Settings_. Note, a CORS policy can also be configured at the instance level (i.e. for LXC users).
+
+<!-- Configure it at the instance level by default, always. -Rich --> 
 
 1. Add a CORS policy for the object.
 

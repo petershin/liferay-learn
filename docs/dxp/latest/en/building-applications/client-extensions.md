@@ -12,7 +12,7 @@ uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-Client extensions extend Liferay without using OSGi modules. You can deploy client extensions to any Liferay environment, whether you host it yourself or on Liferay Experience Cloud. They are also the primary way to customize Liferay with Liferay Experience Cloud, together with built-in configurations like [Liferay objects](./objects.md).
+Client extensions extend Liferay without using OSGi modules. You can deploy client extensions to any Liferay environment, whether you host it yourself or on Liferay Cloud. They are also the primary way to customize Liferay with Liferay Cloud, together with built-in configurations like [Liferay objects](./objects.md).
 
 While other Liferay extensions like [OSGi modules](../liferay-internals/fundamentals/module-projects.md) or [themes](../site-building/site-appearance/themes/introduction-to-themes.md) modify or add functionality to Liferay itself, client extensions interface only with Liferay's APIs. This loose coupling makes client extensions more flexible and easier to apply to environments after an upgrade, since they depend only on APIs, which rarely change between versions. You can also create client extensions using whatever programming languages or technologies you wish, because your client extensions run outside of Liferay and integrate with objects, with no extra code required to connect them.
 
@@ -38,7 +38,7 @@ These are the classifications of client extensions:
 
 ### Batch Client Extensions
 
-{bdg-link-primary}`[Dev Feature](../system-administration/configuring-liferay/feature-flags.md)`
+{bdg-link-primary}`[Dev Feature](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags)`
 
 Batch client extensions provide data entities to your Liferay instance, such as [object definitions](./objects/creating-and-managing-objects/exporting-and-importing-object-definitions.md) or [workflow definitions](../process-automation/workflow/introduction-to-workflow.md). Create batch client extensions by exporting data via the [batch engine framework](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md).
 

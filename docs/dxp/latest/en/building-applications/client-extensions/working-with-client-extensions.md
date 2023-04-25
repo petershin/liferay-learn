@@ -7,13 +7,13 @@ uuid: 01f46794-2cd4-4ffc-94d3-e244880f2b6f
 
 Using client extensions, you can extend Liferay without deploying OSGi modules. Just like traditional module development, client extensions live in a [Liferay Workspace](../tooling/liferay-workspace.md). Get started by learning
 
-- What tools are required to begin developing client extensions
+- The required tools to begin developing client extensions
 - How to define a client extension in its configuration file
 - How to deploy client extensions
 
 ## Required Tools and Settings
 
-To start developing client extensions, obtain the following items:
+Install the three prerequisites for developing client extensions: 
 
 1. Java 8 or JDK 11.
 
@@ -21,7 +21,7 @@ To start developing client extensions, obtain the following items:
     Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for information on supported JDKs, databases, and environments. See [JVM Configuration](../../installation-and-upgrades/references/jvm-configuration.html) for recommended JVM settings.
     ```
 
-1. A Liferay workspace. To download a workspace with example client extension projects, run
+1. Liferay workspace. To download a workspace with example client extension projects, run
 
     ```bash
     curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
@@ -29,11 +29,11 @@ To start developing client extensions, obtain the following items:
 
     You can copy the client extension projects (in the `client-extensions/` directory) into your own workspace or use the sample workspace directly.
 
-1. If you are using Liferay Experience Cloud(LXC), you must have the [`lcp` CLI tool](https://learn.liferay.com/liferay-cloud/latest/en/reference/command-line-tool.html).
+1. If you are using Liferay Experience Cloud (LXC), you must have the [`lcp` CLI tool](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool).
 
 ## Client Extension Projects
 
-Client extension development follows a _workspace plus project_ model. Within a [Liferay workspace](../tooling/liferay-workspace.md), a client extension project is implemented in a folder under `[workspace-root]/client-extensions`. The project's `client-extension.yaml` file defines its client extensions, and single build process results in a single set of outputs for each project. When built, the client extension project is packaged as a deployable `*.zip` archive called a Liferay Universal File Format Archive (LUFFA).
+Client extension development follows a _workspace plus project_ model. Within a [Liferay workspace](../tooling/liferay-workspace.md), you implement a client extension project under `[workspace-root]/client-extensions`. The project's `client-extension.yaml` file defines its client extensions, and a build process results in a single set of outputs for each project. The built client extension project is a deployable `*.zip` archive called a Liferay Universal File Format Archive (LUFFA).
 
 ## Grouping Client Extensions in Projects
 
@@ -60,20 +60,20 @@ Client extensions are defined in `client-extension.yaml` files with these proper
 
 `dxp.lxc.liferay.com.virtualInstanceId`: Enter the virtual instance ID to deploy to.
 
-Each client extension project has its own folder inside the workspace's `client-extensions/` folder. A client extension project contains a single `client-extension.yaml` file, which defines one or more client extensions. For example, [the `iframe-2` project's `client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-iframe-2/client-extension.yaml) defines three `iframe` client extensions: `Baseball`, `Football`, and `Hockey`.
+Each client extension project has its own folder inside the workspace's `client-extensions/` folder. A client extension project contains a single `client-extension.yaml` file that defines one or more client extensions. For example, [the `iframe-2` project's `client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-iframe-2/client-extension.yaml) defines three `iframe` client extensions: `Baseball`, `Football`, and `Hockey`.
 
 ### Assembling Client Extensions
 
-When you build a client extension, files are automatically created and packaged in the resulting [LUFFA](./packaging-client-extensions.md). Define an `assemble` block in your `client-extension.yaml` file to configure which files to include from your build or project files.
+When you build a client extension, files are created automatically and packaged in the resulting [LUFFA](./packaging-client-extensions.md). Define an `assemble` block in your `client-extension.yaml` file to configure files to include from your build or project files.
 
-The `assembleClientExtension` gradle task executes when you run `gradle build` or `gradle deploy` within a client extension project. During execution, the files specified in the project's `assemble` block are placed into a `build/liferay-client-extension-build/` folder in your project. Everything in this folder is used to create the LUFFA (e.g., `dist/my-client-extension-project.zip`).
+The `assembleClientExtension` Gradle task executes when you run `gradle build` or `gradle deploy` within a client extension project. During execution, the files specified in the project's `assemble` block are placed into a `build/liferay-client-extension-build/` folder in your project. Everything in this folder is used to create the LUFFA (e.g., `dist/my-client-extension-project.zip`).
 
 The `assemble` block is a YAML array that can include multiple instructions for files to include. Each set of instructions follows this pattern:
 
 ```yaml
-- from: <some folder in your project>
-  include: <single file or glob match>
-  into: <output location in archive>
+- from: [some folder in your project]
+  include: [single file or glob match]
+  into: [output location in archive]
 ```
 
 The `assemble` array has these properties:
@@ -82,31 +82,31 @@ The `assemble` array has these properties:
 
 * `include`: Specify a single file or glob matching a subset of files to include from the from directory. If not defined, all files are included recursively (equivalent to `**/*`).
 
-    You can use an array of multiple `include` patterns if needed:
+   You can use an array of multiple `include` patterns if needed:
 
-    ```yaml
-    assemble:
-        - from: build
-          include:
-            - "vite/js/*.js"
-            - "vite/css/*.css"
-          into: static
-    ```
+   ```yaml
+   assemble:
+       - from: build
+         include:
+           - "vite/js/*.js"
+           - "vite/css/*.css"
+         into: static
+   ```
 
 * `into`: Specify where in the resulting LUFFA to copy the matching resources.
 
-    Static resources for front-end client extensions must be copied into the `static/` directory. Liferay serves these as static resources in self-hosted instances, or from containers in LXC.
+   Static resources for front-end client extensions must be copied into the `static/` directory. Liferay serves these as static resources in self-hosted instances, or from containers in LXC.
 
-    JSON resources for batch client extensions must be copied into the `batch/` directory.
+   JSON resources for batch client extensions must be copied into the `batch/` directory.
 
-* `fromTask`: Instead of `from`, you can specify a gradle task in the project to execute before the assembly step.
+* `fromTask`: Instead of `from`, you can specify a Gradle task in the project to execute before the assembly step.
 
-    For example, in a `microservice` client extension project using Spring Boot, the gradle task `bootJar` creates the `.jar` file containing the application and all its dependencies. In this case use the property `fromTask` to trigger the execution of the project's `bootJar` gradle task and then include the outputs of the task (i.e., the built `.jar` file) in the root of the resulting LUFFA:
+   For example, in a `microservice` client extension project using Spring Boot, the Gradle task `bootJar` creates the `.jar` file containing the application and all its dependencies. In this case use the property `fromTask` to trigger the execution of the project's `bootJar` Gradle task and then include the outputs of the task (i.e., the built `.jar` file) in the root of the resulting LUFFA:
 
-    ```yaml
-    assemble:
-        - fromTask: bootJar
-    ```
+   ```yaml
+   assemble:
+       - fromTask: bootJar
+   ```
 
 ### Example `assemble` Blocks
 
@@ -162,14 +162,14 @@ To deploy client extensions for LXC,
 1. Run this command to deploy each client extension to your chosen environment:
 
    ```bash
-   lcp deploy --extension <extension-zip-file>
+   lcp deploy --extension [extension-zip-file]
    ```
 
    When prompted, select a project and the deployment environment. The zip files are uploaded to your LXC project once the command completes.
 
 ### Deploying to a Self-Hosted Liferay Instance
 
-If you host your Liferay installation on-premises, use the workspace bundle zip to deploy your client extensions.  To build and deploy your client extensions, run this command from your workspace's `client-extensions/` folder:
+If you self-host your Liferay installation, use the workspace bundle zip to deploy your client extensions. To build and deploy your client extensions, run this command from your workspace's `client-extensions/` folder:
 
 ```bash
 ../gradlew clean distBundleZip

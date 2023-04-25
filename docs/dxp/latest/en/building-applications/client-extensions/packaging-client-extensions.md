@@ -5,7 +5,7 @@ uuid: 05f145b0-0a81-445c-88af-4aa6d52c0469
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (self-hosted)`
 
-Client extension projects are built as deployable `.zip` archives called *Liferay Universal File Format Archives* (LUFFAs). Each LUFFA has a particular structure and defines specific component files, which are generated automatically if not provided by your project. The Liferay workspace packages client extension projects when you build them. Understanding how packaging works is important for [assembling client extensions](./working-with-client-extensions.md#assembling-client-extensions) or creating LUFFAs with a different process.
+Client extension projects are built as deployable archives called *Liferay Universal File Format Archives* (LUFFAs) with a `.zip` extension. Each LUFFA has a particular structure and defines specific component files, which are generated automatically if not provided by your project. Liferay workspace packages client extension projects when you build them. Understanding how packaging works is important for [assembling client extensions](./working-with-client-extensions.md#assembling-client-extensions) or creating LUFFAs with a different process.
 
 This is a LUFFA's structure:
 
@@ -26,12 +26,12 @@ This is a LUFFA's structure:
 ## `batch`
 
 ```{note}
-The `batch` directory is only required by [batch client extension projects](./batch-client-extensions.md).
+The `batch` folder is only required by [batch client extension projects](./batch-client-extensions.md).
 ```
 
-The data entities included in a batch client extension are represented as `*.batch-engine-data.json` files, within a `batch/` folder in the built LUFFA. These files can be in any folder structure within the `batch/` folder.
+The data entities in a batch client extension are `*.batch-engine-data.json` files inside a `batch/` folder in the built LUFFA. These files can be in any folder structure within the `batch/` folder.
 
-You can place any number of `*.batch-engine-data.json` files under the root level `batch/` directory, using a directory structure of unlimited depth. These files are ignored if there is no batch client extension defined in your project's `client-extension.yaml` file.
+You can place any number of `*.batch-engine-data.json` files under the root level `batch/` directory, using a directory structure of unlimited depth. If you fail to define a batch extension in your project's `client-extension.yaml` file, Liferay ignores these files.
 
 ## `*.client-extension-config.json`
 
@@ -39,7 +39,7 @@ You can place any number of `*.batch-engine-data.json` files under the root leve
 At least one `*.client-extension-config.json` file is required in each LUFFA.
 ```
 
-One or more `*.client-extension-config.json` ([OSGi Configuration Resource Format](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.configurator.html#d0e131566)) files are placed at the root of the LUFFA. They define how your client extensions are structured in the archive. Usually these files are produced during the build process based on your `client-extension.yaml` file's contents. The conversion from YAML to JSON is specified by the [Liferay workspace plugin](https://repo1.maven.org/maven2/com/liferay/com.liferay.gradle.plugins.workspace/), and is not a 1:1 mapping.
+At the root of the LUFFA are one or more `*.client-extension-config.json` ([OSGi Configuration Resource Format](https://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.configurator.html#d0e131566)) files. They define how your client extensions are structured in the archive. Usually these files are produced during the build process based on your `client-extension.yaml` file's contents. The conversion from YAML to JSON is specified by the [Liferay workspace plugin](https://repo1.maven.org/maven2/com/liferay/com.liferay.gradle.plugins.workspace/), and is not a 1:1 mapping.
 
 ## `Dockerfile`
 
@@ -73,6 +73,8 @@ FROM liferay/caddy:latest
 COPY static/ /public_html/
 ```
 
+<!-- Why? What are these different images for? -Rich --> 
+
 ## `LCP.json`
 
 ```{note}
@@ -84,6 +86,8 @@ The build process automatically generates and packages an `LCP.json` file for [b
 You must provide an `LCP.json` file in your project for [microservice client extensions](./microservice-client-extensions.md). Add it to the root of your project, and it's copied into the LUFFA when your project is built. This `LCP.json` file configures the container used for the microservice when it's deployed in Liferay Experience Cloud.
 
 If packaging the LUFFA yourself, each client extension comes with different specification suggestions for its `LCP.json`:
+
+<!-- Because the first two requirements below repeat, I think this can be reformatted into one of those tables with checkmarks, and then you can put the examples after the table. Column headings: Significant Resources, Kind, Notes (set env variable, readiness probes, etc.). -Rich --> 
 
 - Batch client extensions
 

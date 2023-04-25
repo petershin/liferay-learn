@@ -87,80 +87,66 @@ You must provide an `LCP.json` file in your project for [microservice client ext
 
 If packaging the LUFFA yourself, each client extension comes with different specification suggestions for its `LCP.json`:
 
-<!-- Because the first two requirements below repeat, I think this can be reformatted into one of those tables with checkmarks, and then you can put the examples after the table. Column headings: Significant Resources, Kind, Notes (set env variable, readiness probes, etc.). -Rich --> 
+| Client Extension | Requires Significant Resources | Kind | Notes |
+| :--------------- | :----------------------------- | :--- | :---- |
+| [Batch](#example-batch-client-extension-lcp-json)            | &#10008;                       | Job  | <ul><li>The environment variable `LIFERAY_BATCH_OAUTH_APP_ERC` must be set to the value of your batch client extension's `oAuthApplicationHeadlessServer` property. This can be provided through interpolation.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul> |
+| [Configuration](#example-configuration-client-extension-lcp-json)    | &#10008;                       | Job  | <ul><li>Even less memory intensive than batch type extensions.</li><li>You can specify very small values for `cpu`, `memory` and `scale`.</li></ul>
+| [Front-End](#example-front-end-client-extension-lcp-json)        | &#10008;                       | Job  | <ul><li>Must specify the `loadBalancer` property with `targerPort` set to `80`.</li><li>Should specify [`livenessProbe` and `readinessProbe` properties](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) for self-healing.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul>
 
-- Batch client extensions
+### Example Batch Client Extension LCP.json
 
-  - Do not require significant resources, so the `LCP.json` can specify small values for `cpu`, `memory` and `scale`.
+ ```json
+{
+    "cpu": 0.2,
+    "env": {
+        "LIFERAY_BATCH_OAUTH_APP_ERC": "__batch.oAuthApplicationHeadlessServer__"
+    },
+    "id": "__CLIENT_EXTENSION_ID__",
+    "kind": "Job",
+    "memory": 50,
+    "scale": 1
+}
+```
 
-  - Must declare `kind` to be `Job`.
+### Example Configuration Client Extension LCP.json
 
-  - Require setting the environment variable `LIFERAY_BATCH_OAUTH_APP_ERC` to the value of your batch client extension's `oAuthApplicationHeadlessServer` property. This can be provided through interpolation, like the example below.
+```json
+{
+    "cpu": 0.1,
+    "id": "__CLIENT_EXTENSION_ID__",
+    "kind": "Job",
+    "memory": 10,
+    "scale": 1
+}
+```
 
-    ```json
-    {
-        "cpu": 0.2,
-        "env": {
-            "LIFERAY_BATCH_OAUTH_APP_ERC": "__batch.oAuthApplicationHeadlessServer__"
-        },
-        "id": "__CLIENT_EXTENSION_ID__",
-        "kind": "Job",
-        "memory": 50,
-        "scale": 1
-    }
-    ```
+### Example Front-End Client Extension LCP.json
 
-- Configuration client extensions
-
-  - Do not require significant resources (less than batch), so the `LCP.json` can specify very small values for `cpu`, `memory` and `scale`.
-
-  - Must declare `kind` to be `Job`.
-
-    ```json
-    {
-        "cpu": 0.1,
-        "id": "__CLIENT_EXTENSION_ID__",
-        "kind": "Job",
-        "memory": 10,
-        "scale": 1
-    }
-    ```
-
-- Front-end client extensions
-
-  - Do not require significant resources, so the `LCP.json` can specify small values for `cpu`, `memory` and `scale`.
-
-  - Must declare `kind` to be `Deployment`.
-
-  - Must specify the `loadBalancer` property with `targerPort` set to `80`.
-
-  - Should specify [`livenessProbe` and `readinessProbe` properties](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) for self-healing.
-
-    ```json
-    {
-        "cpu": 0.2,
-        "id": "__CLIENT_EXTENSION_ID__",
-        "kind": "Deployment",
-        "livenessProbe": {
-            "httpGet": {
-                "path": "/",
-                "port": 80
-            }
-        },
-        "loadBalancer": {
-            "cdn": true,
-            "targetPort": 80
-        },
-        "memory": 50,
-        "readinessProbe": {
-            "httpGet": {
-                "path": "/",
-                "port": 80
-            }
-        },
-        "scale": 1
-    }
-    ```
+```json
+{
+    "cpu": 0.2,
+    "id": "__CLIENT_EXTENSION_ID__",
+    "kind": "Deployment",
+    "livenessProbe": {
+        "httpGet": {
+            "path": "/",
+            "port": 80
+        }
+    },
+    "loadBalancer": {
+        "cdn": true,
+        "targetPort": 80
+    },
+    "memory": 50,
+    "readinessProbe": {
+        "httpGet": {
+            "path": "/",
+            "port": 80
+        }
+    },
+    "scale": 1
+}
+```
 
 See [Configuration via LCP.json](https://learn.liferay.com/w/liferay-cloud/reference/configuration-via-lcp-json) for more information.
 

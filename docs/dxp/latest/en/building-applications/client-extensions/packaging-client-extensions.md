@@ -51,7 +51,9 @@ The build process automatically generates and packages a `Dockerfile` for [batch
 
 You must provide a [`Dockerfile`](https://docs.docker.com/engine/reference/builder/) in your project for [microservice client extensions](./microservice-client-extensions.md). Add it to the root of your project, and it's copied into the LUFFA when you build the project. Make sure your `Dockerfile` can execute the microservice client extensions in your project. For example, your `Dockerfile` may need to install specific tools that your microservice's code needs to run.
 
-If packaging the LUFFA yourself, each client extension type requires certain `Dockerfile` conventions.
+### Packaging a Client Extension Manually
+
+If packaging the LUFFA yourself, batch, configuration, and front-end client extensions requires certain `Dockerfile` conventions.
 
 For batch client extensions, use the `liferay/batch:latest` image:
 
@@ -73,7 +75,7 @@ FROM liferay/caddy:latest
 COPY static/ /public_html/
 ```
 
-<!-- Why? What are these different images for? -Rich --> 
+A microservice client extension's `Dockerfile` depends entirely on your specific context, so a pre-configured image cannot be provided.
 
 ## `LCP.json`
 
@@ -90,7 +92,7 @@ If packaging the LUFFA yourself, each client extension comes with different spec
 | Client Extension | Requires Significant Resources | Kind | Notes |
 | :--------------- | :----------------------------- | :--- | :---- |
 | [Batch](#example-batch-client-extension-lcp-json)            | &#10008;                       | Job  | <ul><li>The environment variable `LIFERAY_BATCH_OAUTH_APP_ERC` must be set to the value of your batch client extension's `oAuthApplicationHeadlessServer` property. This can be provided through interpolation.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul> |
-| [Configuration](#example-configuration-client-extension-lcp-json)    | &#10008;                       | Job  | <ul><li>Even less memory intensive than batch type extensions.</li><li>You can specify very small values for `cpu`, `memory` and `scale`.</li></ul>
+| [Configuration](#example-configuration-client-extension-lcp-json)    | &#10008;                       | Job  | <ul><li>Even less memory intensive than batch extensions.</li><li>You can specify very small values for `cpu`, `memory` and `scale`.</li></ul>
 | [Front-End](#example-front-end-client-extension-lcp-json)        | &#10008;                       | Job  | <ul><li>Must specify the `loadBalancer` property with `targerPort` set to `80`.</li><li>Should specify [`livenessProbe` and `readinessProbe` properties](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) for self-healing.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul>
 
 ### Example Batch Client Extension LCP.json

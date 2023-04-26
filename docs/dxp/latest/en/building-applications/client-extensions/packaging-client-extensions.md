@@ -53,7 +53,7 @@ You must provide a [`Dockerfile`](https://docs.docker.com/engine/reference/build
 
 ### Packaging a Client Extension Manually
 
-If packaging the LUFFA yourself, batch, configuration, and front-end client extensions requires certain `Dockerfile` conventions.
+If packaging the LUFFA yourself, batch, configuration, and front-end client extensions requires certain `Dockerfile` conventions. Liferay provides them for you in the images below. 
 
 For batch client extensions, use the `liferay/batch:latest` image:
 
@@ -93,7 +93,7 @@ If packaging the LUFFA yourself, each client extension comes with different spec
 | :--------------- | :----------------------------- | :--- | :---- |
 | [Batch](#example-batch-client-extension-lcp-json)            | &#10008;                       | Job  | <ul><li>The environment variable `LIFERAY_BATCH_OAUTH_APP_ERC` must be set to the value of your batch client extension's `oAuthApplicationHeadlessServer` property. This can be provided through interpolation.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul> |
 | [Configuration](#example-configuration-client-extension-lcp-json)    | &#10008;                       | Job  | <ul><li>Even less memory intensive than batch extensions.</li><li>You can specify very small values for `cpu`, `memory` and `scale`.</li></ul>
-| [Front-End](#example-front-end-client-extension-lcp-json)        | &#10008;                       | Job  | <ul><li>Must specify the `loadBalancer` property with `targerPort` set to `80`.</li><li>Should specify [`livenessProbe` and `readinessProbe` properties](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) for self-healing.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul>
+| [Front-End](#example-front-end-client-extension-lcp-json)        | &#10008;                       | Deployment  | <ul><li>Must specify the `loadBalancer` property with `targetPort` set to `80`.</li><li>Should specify [`livenessProbe` and `readinessProbe` properties](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) for self-healing.</li><li>You can specify small values for `cpu`, `memory` and `scale`.</li></ul>
 
 ### Example Batch Client Extension LCP.json
 

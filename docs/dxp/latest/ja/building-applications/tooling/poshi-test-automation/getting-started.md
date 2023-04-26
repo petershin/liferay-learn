@@ -11,7 +11,6 @@ myst:
   html_meta:
     "documentation-type": "user-guide"
 ---
-
 # はじめに
 
 ```{toctree}

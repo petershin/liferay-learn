@@ -6,7 +6,6 @@ myst:
   html_meta:
     "documentation-type": "user-guide"
 ---
-
 # Poshiの基本
 
 ```{toctree}

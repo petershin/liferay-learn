@@ -2,7 +2,6 @@
 toc:
 - ./upgrading-custom-development/upgrading-language-key-overrides.md
 ---
-
 # カスタム開発のアップグレード
 
 ```{toctree}

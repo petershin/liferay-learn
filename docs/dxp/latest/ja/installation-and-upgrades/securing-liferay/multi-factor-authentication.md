@@ -4,7 +4,6 @@ toc:
 - ./multi-factor-authentication/multi-factor-authentication-checkers.md
 - ./multi-factor-authentication/fast-identity-online-2.md
 ---
-
 # 多要素認証
 
 ```{toctree}

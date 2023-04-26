@@ -6,7 +6,6 @@ toc:
 - ./securing-liferay/using-antisamy.md
 - ./securing-liferay/securing-web-services.md
 ---
-
 # Liferayの保護
 
 ```{toctree}

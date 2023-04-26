@@ -4,7 +4,6 @@ toc:
 - ./reference/portletmvc4spring-annotations.md
 - ./reference/portletmvc4spring-configuration-files.md
 ---
-
 # リファレンス
 
 ```{toctree}

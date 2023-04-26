@@ -7,7 +7,6 @@ toc:
 - ./organizations/organization-sites.md
 - ./organizations/adding-a-new-organization-type.md
 ---
-
 # 組織
 
 ```{toctree}

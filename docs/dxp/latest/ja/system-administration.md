@@ -7,7 +7,6 @@ toc:
 - ./system-administration/using-the-server-administration-panel.md
 - ./system-administration/data-integration.md
 ---
-
 # システム管理
 
 ```{toctree}

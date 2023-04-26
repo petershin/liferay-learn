@@ -6,7 +6,6 @@ toc:
 - ./reference/exported-third-party-packages.md
 - ./reference/portal-developer-properties.md
 ---
-
 # リファレンス
 
 ```{toctree}

@@ -3,7 +3,6 @@ toc:
 - ./configuration-files-and-factories/using-configuration-files.md
 - ./configuration-files-and-factories/using-factory-configuration.md
 ---
-
 # 設定ファイルとファクトリー
 
 ```{toctree}

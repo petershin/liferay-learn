@@ -4,7 +4,6 @@ toc:
 - ./localization/automatically-generating-translations.md
 - ./localization/reference.md
 ---
-
 # ローカライズ
 
 ```{toctree}

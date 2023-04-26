@@ -90,9 +90,6 @@ Groovyスクリプトを[XMLワークフロー定義](./crafting-xml-workflow-de
 | `workflowTaskAssignees` (`List<` [`WorkflowTaskAssignee`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/workflow/WorkflowTaskAssignee.java) `>`)                                                 | タスクの担当者をリストアップします。                                                                                                           |                                                        |
 | `kaleoTimerInstanceToken` ( [`KaleoTimerInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTimerInstanceToken.java) ) | [タスクタイマー](./workflow-task-node-reference.md)が存在する場合は、`kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`を呼び出してIDを取得します。 | |                                                      |
 
-
-
-
 ## スクリプトの例
 
 ワークフローのほぼすべての時点で、Liferayのスクリプトエンジンを使用して、ワークフローAPIまたは他のLiferay APIにアクセスできます。 ワークフロースクリプトを使用できる実用的な方法をいくつか次に示します。

@@ -3,7 +3,6 @@ toc:
 - ./search-bar-suggestions/configuring-search-bar-suggestions.md
 - ./search-bar-suggestions/search-bar-suggestions-blueprints.md
 ---
-
 # 検索バーのサジェスチョン
 
 ```{toctree}

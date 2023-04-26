@@ -9,7 +9,6 @@ toc:
 - ./fundamentals/configuring-dependencies.md
 - ./fundamentals/using-the-gogo-shell.md
 ---
-
 # Fundamentals
 
 ```{toctree}

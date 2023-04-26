@@ -9,7 +9,6 @@ toc:
 - ./form-rules/using-the-show-hide-rule.md
 - ./form-rules/example-using-hidden-fields-with-form-rules.md
 ---
-
 # フォームルール
 
 ```{toctree}

@@ -4,7 +4,6 @@ toc:
 - ./securing-web-services/using-authentication-verifiers.md
 - ./securing-web-services/setting-up-cors.md
 ---
-
 # Webサービスの保護
 
 ```{toctree}

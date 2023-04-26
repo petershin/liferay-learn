@@ -4,7 +4,6 @@ toc:
 - ./user-groups/managing-site-membership-and-permissions-with-user-groups.md
 - ./user-groups/user-group-sites.md
 ---
-
 # ユーザーグループ
 
 ```{toctree}

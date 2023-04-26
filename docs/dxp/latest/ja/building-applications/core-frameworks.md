@@ -8,7 +8,6 @@ toc:
 - ./core-frameworks/portlet-providers.md
 - ./core-frameworks/servlets.md
 ---
-
 # コアフレームワーク
 
 ```{toctree}

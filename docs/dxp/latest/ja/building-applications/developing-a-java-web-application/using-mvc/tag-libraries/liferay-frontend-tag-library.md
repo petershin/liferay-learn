@@ -7,7 +7,6 @@ toc:
 - ./liferay-frontend-tag-library/including-actions-in-the-management-bar.md
 - ./liferay-frontend-tag-library/disabling-the-management-bar.md
 ---
-
 # Liferayフロントエンドタグライブラリ
 
 ```{toctree}

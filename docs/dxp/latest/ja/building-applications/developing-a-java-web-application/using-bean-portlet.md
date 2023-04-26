@@ -2,7 +2,6 @@
 toc:
 - ./using-bean-portlet/reference.md
 ---
-
 # Bean Portletの使用
 
 ```{toctree}

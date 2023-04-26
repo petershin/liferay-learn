@@ -3,7 +3,6 @@ toc:
 - ./reference/deploying-wars-wab-generator.md
 - ./reference/jars-excluded-from-wabs.md
 ---
-
 # リファレンス
 
 ```{toctree}

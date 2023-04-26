@@ -9,7 +9,6 @@ toc:
 - ./workflow-designer/assigning-task-nodes.md
 - ./workflow-designer/workflow-transitions.md
 ---
-
 # ワークフローデザイナー
 
 {bdg-primary}`サブスクリプション`

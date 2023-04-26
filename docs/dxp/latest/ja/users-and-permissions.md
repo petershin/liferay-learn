@@ -9,7 +9,6 @@ toc:
 - ./users-and-permissions/connecting-to-a-user-directory.md
 - ./users-and-permissions/developer-guide.md
 ---
-
 # ユーザーと権限
 
 ```{toctree}

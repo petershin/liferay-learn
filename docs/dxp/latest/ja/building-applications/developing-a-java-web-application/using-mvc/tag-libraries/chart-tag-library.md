@@ -13,7 +13,6 @@ toc:
 - ./chart-tag-library/step-chart.md
 - ./chart-tag-library/refreshing-charts-to-reflect-real-time-data.md
 ---
-
 # チャートタグライブラリ
 
 ```{toctree}

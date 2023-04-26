@@ -2,7 +2,6 @@
 toc:
   - ./channel-defaults/setting-channel-defaults.md
 ---
-
 # チャンネルのデフォルト
 
 {bdg-secondary}`Liferay 7.4 U49+/GA49+で利用可能`

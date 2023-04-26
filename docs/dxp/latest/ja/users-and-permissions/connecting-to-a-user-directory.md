@@ -4,7 +4,6 @@ toc:
 - ./connecting-to-a-user-directory/configuring-user-import-and-export.md
 - ./connecting-to-a-user-directory/ldap-configuration-reference.md
 ---
-
 # ユーザーディレクトリへの接続
 
 ```{toctree}

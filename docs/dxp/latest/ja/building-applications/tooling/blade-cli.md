@@ -4,7 +4,6 @@ toc:
 - ./blade-cli/generating-projects-with-blade-cli.md
 - ./blade-cli/troubleshooting-blade-cli.md
 ---
-
 # Blade CLI
 
 ```{toctree}

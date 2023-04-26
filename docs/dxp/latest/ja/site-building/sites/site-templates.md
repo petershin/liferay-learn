@@ -5,7 +5,6 @@ toc:
 - ./site-templates/configuring-site-template-propagation.md
 - ./site-templates/exporting-importing-site-templates.md
 ---
-
 # サイトテンプレート
 
 ```{toctree}

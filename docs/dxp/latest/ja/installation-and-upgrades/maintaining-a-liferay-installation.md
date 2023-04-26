@@ -8,7 +8,6 @@ toc:
 - ./maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.md
 - ./maintaining-a-liferay-installation/reference.md
 ---
-
 # Liferay DXPインストールの管理
 
 ```{toctree}

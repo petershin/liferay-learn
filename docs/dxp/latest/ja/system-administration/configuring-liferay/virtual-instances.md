@@ -12,7 +12,6 @@ toc:
 - ./virtual-instances/third-party.md
 - ./virtual-instances/redirect-urls.md
 ---
-
 # 仮想インスタンス
 
 ```{toctree}

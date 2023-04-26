@@ -7,7 +7,6 @@ toc:
 - ./installing-liferay-on-an-application-server/installing-on-websphere.md
 - ./installing-liferay-on-an-application-server/setting-up-jndi-on-tomcat.md
 ---
-
 # アプリケーションサーバーへのLiferayのインストール
 
 ```{toctree}

@@ -3,7 +3,6 @@ toc:
 - ./maintaining-clustered-installations/rolling-restarts.md
 - ./maintaining-clustered-installations/blue-green-deployments.md
 ---
-
 # クラスター化されたインストールの維持
 
 ```{toctree}

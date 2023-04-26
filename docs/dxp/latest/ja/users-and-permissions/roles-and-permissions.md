@@ -8,7 +8,6 @@ toc:
 - ./roles-and-permissions/configuring-a-password-policy.md
 - ./roles-and-permissions/default-roles-reference.md
 ---
-
 # ロールと権限
 
 ```{toctree}

@@ -7,7 +7,6 @@ toc:
 - ./liferay-internals/contributing-to-liferay-development.md
 - ./liferay-internals/reference.md
 ---
-
 # Liferayの内部
 
 ```{toctree}

@@ -6,7 +6,6 @@ toc:
 - ./authenticating-with-saml/configuring-saml-at-the-instance-level.md
 - ./authenticating-with-saml/saml-settings.md
 ---
-
 # SAMLによる認証
 
 ```{toctree}

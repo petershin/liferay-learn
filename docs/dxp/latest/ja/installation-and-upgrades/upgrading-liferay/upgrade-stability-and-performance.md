@@ -5,7 +5,6 @@ toc:
 - ./upgrade-stability-and-performance/example-removing-intermediate-journal-article-versions.md
 - ./upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md
 ---
-
 # 安定性とパフォーマンスのアップグレード
 
 ```{toctree}

@@ -8,7 +8,6 @@ toc:
 - ./dynamic-data-lists/creating-form-templates.md
 - ./dynamic-data-lists/creating-display-templates.md
 ---
-
 # 動的データリスト
 
 ```{toctree}

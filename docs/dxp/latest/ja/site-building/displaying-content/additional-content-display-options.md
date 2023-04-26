@@ -6,7 +6,6 @@ toc:
 - ./additional-content-display-options/styling-widgets-with-widget-templates.md
 - ./additional-content-display-options/using-the-iframe-widget.md
 ---
-
 # コンテンツの表示の追加オプション
 
 ```{toctree}

@@ -10,7 +10,6 @@ toc:
 - ./using-google-sheets-with-objects/using-wyzebulb-to-sync-object-data-with-google-sheets.md
 - ./using-google-sheets-with-objects/using-zapier-to-sync-object-data-with-google-sheets.md
 ---
-
 # オブジェクトでのGoogle シートの使用
 
 {bdg-secondary}`7.4以降で利用可能`

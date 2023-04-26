@@ -15,7 +15,6 @@ toc:
 - ./reference/troubleshooting-upgrades.md
 - ./reference/upgrade-reports.md
 ---
-
 # リファレンス
 
 ```{toctree}

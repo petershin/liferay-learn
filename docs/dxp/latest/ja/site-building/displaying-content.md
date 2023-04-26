@@ -6,7 +6,6 @@ toc:
 - ./displaying-content/additional-content-display-options.md
 - ./displaying-content/using-information-templates.md
 ---
-
 # コンテンツの表示
 
 ```{toctree}

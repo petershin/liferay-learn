@@ -4,7 +4,6 @@ toc:
 - ./patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md
 - ./patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2.md
 ---
-
 # 以前のDXPバージョンにパッチを適用
 
 ```{toctree}

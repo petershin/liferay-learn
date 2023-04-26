@@ -11,7 +11,6 @@ toc:
 - ./using-mvc/sharing-localized-messages.md
 - ./using-mvc/tag-libraries.md
 ---
-
 # MVCの使用
 
 ```{toctree}

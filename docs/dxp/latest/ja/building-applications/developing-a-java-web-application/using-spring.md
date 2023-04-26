@@ -2,7 +2,6 @@
 toc:
 - ./using-spring/reference.md
 ---
-
 # Springの使用
 
 ```{toctree}

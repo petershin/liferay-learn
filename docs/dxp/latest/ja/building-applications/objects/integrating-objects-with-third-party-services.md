@@ -2,7 +2,6 @@
 toc:
 - ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
 ---
-
 # オブジェクトとサードパーティーのサービスとの連携
 
 ```{toctree}

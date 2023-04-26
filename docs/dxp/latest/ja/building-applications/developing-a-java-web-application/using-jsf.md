@@ -2,7 +2,6 @@
 toc:
 - ./using-jsf/reference.md
 ---
-
 # JSFの使用
 
 ```{toctree}

@@ -2,7 +2,6 @@
 toc:
 - ./kaleo-forms/kaleo-forms.md
 ---
-
 # Kaleoフォーム
 
 ```{toctree}

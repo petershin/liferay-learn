@@ -5,7 +5,6 @@ toc:
 - ./job-scheduler-framework/creating-a-new-job-scheduler-task-executor.md
 - ./job-scheduler-framework/job-scheduler-ui-reference.md
 ---
-
 # ジョブスケジューラフレームワーク
 
 ```{toctree}

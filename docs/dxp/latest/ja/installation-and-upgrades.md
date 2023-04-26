@@ -7,7 +7,6 @@ toc:
 - ./installation-and-upgrades/upgrading-liferay.md
 - ./installation-and-upgrades/reference.md
 ---
-
 # インストールとアップグレード
 
 ```{toctree}

@@ -10,7 +10,6 @@ toc:
 - ./developer-guide/countries-api-basics.md
 - ./developer-guide/regions-api-basics.md
 ---
-
 # 開発者ガイド
 
 ```{toctree}

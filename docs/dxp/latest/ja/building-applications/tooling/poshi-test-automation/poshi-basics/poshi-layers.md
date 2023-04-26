@@ -9,7 +9,6 @@ myst:
   html_meta:
     "documentation-type": "user-guide"
 ---
-
 # Poshiレイヤー
 
 ```{toctree}

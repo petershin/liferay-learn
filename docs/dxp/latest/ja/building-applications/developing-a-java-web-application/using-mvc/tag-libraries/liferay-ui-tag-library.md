@@ -6,7 +6,6 @@ toc:
 - ./liferay-ui-tag-library/liferay-ui-tabs.md
 - ./liferay-ui-tag-library/liferay-ui-icon-help.md
 ---
-
 # Liferay UIタグライブラリ
 
 ```{toctree}

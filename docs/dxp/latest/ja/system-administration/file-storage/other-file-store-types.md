@@ -7,7 +7,6 @@ toc:
 - ./other-file-store-types/google-cloud-storage.md
 - ./other-file-store-types/microsoft-azure-blob-storage.md
 ---
-
 # その他のファイルストレージタイプ
 
 ```{toctree}

@@ -4,7 +4,6 @@ toc:
 - ./process-automation/workflow.md
 - ./process-automation/notifications.md
 ---
-
 # プロセスの自動化
 
 ```{toctree}

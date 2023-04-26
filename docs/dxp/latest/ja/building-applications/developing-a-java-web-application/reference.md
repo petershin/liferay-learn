@@ -5,7 +5,6 @@ toc:
 - ./reference/portlet-descriptor-to-osgi-service-property-map.md
 - ./reference/portlet-ids.md
 ---
-
 # リファレンス
 
 ```{toctree}

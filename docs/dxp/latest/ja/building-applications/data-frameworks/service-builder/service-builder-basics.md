@@ -4,7 +4,6 @@ toc:
 - ./service-builder-basics/understanding-service-builder-generated-classes.md
 - ./service-builder-basics/invoking-a-service-locally.md
 ---
-
 # サービスビルダーの基本
 
 ```{toctree}

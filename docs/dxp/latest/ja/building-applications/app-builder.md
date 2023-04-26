@@ -5,7 +5,6 @@ toc:
 - ./app-builder/creating-the-role-change-request-object.md
 - ./app-builder/creating-the-role-change-request-app.md
 ---
-
 # アプリビルダー
 
 ```{toctree}

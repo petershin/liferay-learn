@@ -5,7 +5,6 @@ toc:
 - ./reference/liferay-faces-alloy.md
 - ./reference/liferay-faces-portal.md
 ---
-
 # リファレンス
 
 ```{toctree}

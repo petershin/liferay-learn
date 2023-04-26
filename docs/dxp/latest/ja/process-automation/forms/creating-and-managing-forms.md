@@ -17,7 +17,6 @@ toc:
 - ./creating-and-managing-forms/validation-conditions-reference.md
 - ./creating-and-managing-forms/forms-permissions-reference.md
 ---
-
 # フォームの作成と管理
 
 ```{toctree}

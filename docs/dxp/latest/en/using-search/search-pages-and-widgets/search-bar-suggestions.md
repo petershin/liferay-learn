@@ -21,4 +21,4 @@ Liferay's Search Bar Suggestions provides _search as you type_ functionality. As
 
 To learn how to use and configure Search Bar Suggestions, see [Configuring Search Bar Suggestions](./search-bar-suggestions/configuring-search-bar-suggestions.md)
 
-To use [Search Blueprints](../liferay-enterprise-search/search-experiences.md) to control the query used in Search Bar Suggestions, see [Search Bar Suggestions Blueprints](./search-bar-suggestions/search-bar-suggestions-blueprints.md).
+To use [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the query used in Search Bar Suggestions, see [Search Bar Suggestions Blueprints](./search-bar-suggestions/search-bar-suggestions-blueprints.md).

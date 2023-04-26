@@ -33,7 +33,7 @@ To start developing client extensions,
 
 Now you have the tools to deploy your first theme sprite map client extension. 
 
-## Examine and Modify the Client Extension
+## Examine the Theme Sprite Map Project
 
 The theme sprite map client extension is in the sample workspace's `client-extensions/liferay-sample-theme-spritemap-1/` folder. It is defined in the `client-extension.yaml` file: 
 
@@ -62,9 +62,11 @@ The sample project's `assets/spritemap.svg` is a copy of the [Clay icons](https:
 Since a sprite map client extension replaces the entire sprite map on the selected page, make sure that you have all the necessary icons with their corresponding IDs to avoid missing icons. 
 ```
 
+## Modify the Sprite Map
+
 To change a specific icon, you must find the ID of the icon. You can inspect the HTML element to find this. 
 
-![Icons in the navbar.](./using-a-theme-spritemap-client-extension/images/01.png)
+![The navbar contains nine icons.](./using-a-theme-spritemap-client-extension/images/01.png)
 
 Given below are the IDs of the icons used on the top navbar. 
 
@@ -80,9 +82,9 @@ Given below are the IDs of the icons used on the top navbar.
 | 8      | ![Search icon](./using-a-theme-spritemap-client-extension/images/03.png)      | search                 |
 | 9      | ![User icon](./using-a-theme-spritemap-client-extension/images/04.png)        | user                   |
 
-To change the pencil icon to a different one, 
+To swap the pencil icon for a fish, 
 
-1. Find the `<symbol>` tag corresponding to the ID of `pencil` inside `assets/spritemap.svg`. You must open the SVG file in an editor to view this. 
+1. Find the `<symbol>` tag corresponding to the ID of `pencil` inside `assets/spritemap.svg`. You must open the SVG file in a text editor to view this. 
 
    ```html
    <symbol id="pencil" viewBox="0 0 512 512">
@@ -102,7 +104,7 @@ To change the pencil icon to a different one,
    </symbol>
    ```
 
-## Deploy the Client Extension to Liferay
+## Deploy the Sprite Map Client Extension
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -129,7 +131,7 @@ Confirm the deployment in your Liferay instance's console:
 STARTED liferay-sample-theme-spritemap-1_1.0.0
 ```
 
-## Use the Client Extension on a Page
+## Use the New Sprite Map on a Page
 
 ```{warning}
 The theme sprite map client extension is currently behind a [dev feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (`LPS-166479`). You must not use this client extension in production. Use it only for testing purposes. 
@@ -141,7 +143,7 @@ Configure a page to use your deployed client extension:
 
 1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)) and click _Configuration_ (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
-1. In the Theme Spritemap Client Extension section, click _Add_ (![Add](../../../../images/icon-duplicate.png)).
+1. In the Theme Sprite Map Client Extension section, click _Add_ (![Add](../../../../images/icon-duplicate.png)).
 
 1. Select the newly deployed sprite map, _Liferay Sample Theme Spritemap 1_.
 
@@ -155,7 +157,7 @@ Configure a page to use your deployed client extension:
 
 ## Next Steps
 
-You have successfully used a theme sprite map client extension in Liferay. Next, try deploying other client extension types.
+You have successfully used a theme sprite map client extension. Next, try deploying other client extension types.
 
 * [Using a CSS Client Extension](./using-a-css-client-extension.md)
 * [Using a JS Client Extension](./using-a-javascript-client-extension.md)

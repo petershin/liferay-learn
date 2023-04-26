@@ -99,7 +99,7 @@ Now that you have the necessary configuration for clustering, deploy the configu
 
 1. Click *Builds* at the top-right of the screen to access the Builds page.
 
-1. Click the Actions menu ![Actions menu icon](../../images/icon-actions.png) for the build corresponding to the commit with your new changes, and select *Deploy build to...*
+1. Click the Actions menu ![Actions menu icon](../../../images/icon-actions.png) for the build corresponding to the commit with your new changes, and select *Deploy build to...*
 
    ![Select the build to deploy with your commit message from the Builds page.](./setting-up-clustering-for-the-liferay-service/images/01.png)
 

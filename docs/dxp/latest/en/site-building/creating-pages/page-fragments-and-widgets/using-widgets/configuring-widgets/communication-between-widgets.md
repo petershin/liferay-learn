@@ -5,7 +5,7 @@ uuid: 0a9b9626-48a2-44e9-b120-0b1d55516f62
 
 Portlet widgets can communicate with each other using public render parameters and events. Some Liferay portlets provide a configuration UI to help you get the most out of this communication mechanism:
 
-1. Click *Options* (![Options](../../../../images/icon-app-options.png)) &rarr; *Configuration* &rarr; *Communication* tab.
+1. Click *Options* (![Options](../../../../../images/icon-app-options.png)) &rarr; *Configuration* &rarr; *Communication* tab.
 
 ![You can configure portlets to communicate with each other using public render parameters.](./communication-between-widgets/images/01.png)
 

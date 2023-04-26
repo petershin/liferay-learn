@@ -21,7 +21,7 @@ For example, configure the Language Selector widget templates like this:
 
 1.  Open the *Home* &rarr; *Design* &rarr; *Widget Templates*.
 
-1.  Click *Add* (![Add](../../../../images/icon-add.png)) and select the option *Language Selector Template*.
+1.  Click *Add* (![Add](../../../../../images/icon-add.png)) and select the option *Language Selector Template*.
 
 1.  Open *Details* and find the *Template Key* - `LANGUAGE-ICON-FTL`
 

@@ -14,7 +14,7 @@ All of Liferay's widgets support Liferay's robust, fine-grained permissions syst
 
 ![The permissions matrix makes configuration for a widget convenient.](./setting-widget-permissions/images/01.png)
 
-1. Go to the widget's *Options* icon (![Options](../../../../images/icon-app-options.png)) and select *Permissions*. This shows you a table of roles.
+1. Go to the widget's *Options* icon (![Options](../../../../../images/icon-app-options.png)) and select *Permissions*. This shows you a table of roles.
 
 1. Use the check boxes to grant certain permissions to different roles. Click *Save* after you've made your selections.
 

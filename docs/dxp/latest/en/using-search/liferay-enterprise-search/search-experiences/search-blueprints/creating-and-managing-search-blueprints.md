@@ -206,7 +206,7 @@ Here you can access these features:
 
    ![Inspect the document's fields.](./creating-and-managing-search-blueprints/images/13.png)
 
-[Some elements](./search-blueprints-elements-reference.md) read search context attributes that you can provide or override manually. To test Blueprints with these elements, click the gear icon (![Gear](../../../images/icon-cog3.png)) to add search context attributes to the Blueprint preview search. Enter the key/value pair for the attribute, then click _Done_. Note that this attribute is only set for the Blueprint preview and isn't saved with the Blueprint itself. You can configure these attributes on a Search Page. See [Using a Search Blueprint on a Search Page](./using-a-search-blueprint-on-a-search-page.md) for more information.
+[Some elements](./search-blueprints-elements-reference.md) read search context attributes that you can provide or override manually. To test Blueprints with these elements, click the gear icon (![Gear](../../../../images/icon-cog3.png)) to add search context attributes to the Blueprint preview search. Enter the key/value pair for the attribute, then click _Done_. Note that this attribute is only set for the Blueprint preview and isn't saved with the Blueprint itself. You can configure these attributes on a Search Page. See [Using a Search Blueprint on a Search Page](./using-a-search-blueprint-on-a-search-page.md) for more information.
 
 For example,
 

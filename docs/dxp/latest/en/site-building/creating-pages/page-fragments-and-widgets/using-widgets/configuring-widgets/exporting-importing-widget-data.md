@@ -32,7 +32,7 @@ To export or import data from the widget's administrative area,
 
 1.  Go to the widget's designated area in the Liferay DXP Menu. For example, if you plan to export Web Content data, go to *Content and Data* &rarr; *Web Content*.
 
-1.  Click *Options* (![Options](../../../../images/icon-actions.png)) from the top right of the page and select *Export/Import*.
+1.  Click *Options* (![Options](../../../../../images/icon-actions.png)) from the top right of the page and select *Export/Import*.
 
 1.  Select the *Export* or *Import* tab to begin configuring the respective process.
 
@@ -40,9 +40,9 @@ To export or import data from the widget's administrative area,
 
 To export or import data from a widget,
 
-1.  Ensure the widget you're exporting/importing from is available on a page. You can add widgets from the *Add* (![Add Button](../../../../images/icon-add.png)) &rarr; *Widgets* menu.
+1.  Ensure the widget you're exporting/importing from is available on a page. You can add widgets from the *Add* (![Add Button](../../../../../images/icon-add.png)) &rarr; *Widgets* menu.
 
-1.  Select the widget's *Options* icon (![Options](../../../../images/icon-app-options.png)) and select *Export/Import*.
+1.  Select the widget's *Options* icon (![Options](../../../../../images/icon-app-options.png)) and select *Export/Import*.
 
 1.  Select the *Export* or *Import* tab to begin configuring the respective process.
 

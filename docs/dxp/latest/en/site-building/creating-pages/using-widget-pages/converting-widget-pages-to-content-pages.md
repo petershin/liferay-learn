@@ -15,7 +15,7 @@ To preview a conversion draft before converting your Widget Page, follow these s
 
 1. Open the Liferay DXP Menu and go to *Site Builder* &rarr; *Pages* under your Site's menu.
 
-1. Open the Actions Menu (![Actions](../../../../images/icon-actions.png)) next to Widget Page and select the *Preview and convert to Content Page* option.
+1. Open the Actions Menu (![Actions](../../../images/icon-actions.png)) next to Widget Page and select the *Preview and convert to Content Page* option.
 
 1. Acknowledge any warnings and make any required adjustments to the conversion draft. You can also add any fragments you'd like to the draft at this point.
 

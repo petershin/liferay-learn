@@ -3,7 +3,7 @@ uuid: 87abd88b-e917-4702-9da3-b517bdbffcad
 ---
 # Configuring Widget Look and Feel
 
-1.  Click *Options* (![Actions Button](../../../../images/icon-actions.png)) in the top right corner of the widget.
+1.  Click *Options* (![Actions Button](../../../../../images/icon-actions.png)) in the top right corner of the widget.
 
 1.  Select *Look and Feel Configuration*.
 

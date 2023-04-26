@@ -7,7 +7,7 @@ You can share widgets with other sites by embedding an instance of a widget runn
 
 ![The Sharing tab in your widget's Configuration menu can share your widget in a variety of ways.](./sharing-widgets-with-other-sites/images/01.png)
 
-1. Click the widget's *Options* icon (![Options](../../../../images/icon-app-options.png)) &rarr; *Configuration* &rarr; *Sharing*.
+1. Click the widget's *Options* icon (![Options](../../../../../images/icon-app-options.png)) &rarr; *Configuration* &rarr; *Sharing*.
 
 1. There are three sub-tabs under sharing: Facebook, OpenSocial Gadget and Netvibes. Proceed according to the context you choose.
 

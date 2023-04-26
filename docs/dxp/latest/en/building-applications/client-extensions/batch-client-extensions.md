@@ -5,7 +5,7 @@ uuid: 601bd5b5-8b5b-4ac6-9030-776439ff9aa7
 ---
 # Batch Client Extensions
 
-{bdg-link-primary}`[Dev Feature](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags)`
+{bdg-link-primary}`[Dev Feature](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags)`
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (self-hosted)`
 
@@ -24,7 +24,7 @@ feature.flag.COMMERCE-8087=true
 ```
 
 ```{warning}
-This is a [feature under development](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags). Never enable a dev feature flag in production.
+This is a [feature under development](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags). Never enable a dev feature flag in production.
 ```
 
 Specify the batch client extension in your `client-extension.yaml` file:

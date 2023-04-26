@@ -28,7 +28,7 @@ To apply the 404 Utility Page as the default 404 error page,
 
 1. Select *Mark as Default*. 
 
-![Select a custom 404 error utility page as the default page when a user encounters a missing page on the website.](./using-utility-pages/02.png)
+![Select a custom 404 error utility page as the default page when a user encounters a missing page on the website.](./using-utility-pages/images/02.png)
 
 ```{note}
 If a site contains no pages, the default 404 error page is shown even if a utility page is applied.

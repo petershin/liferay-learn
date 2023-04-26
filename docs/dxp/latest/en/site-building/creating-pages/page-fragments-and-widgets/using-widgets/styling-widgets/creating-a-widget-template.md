@@ -13,13 +13,13 @@ Follow these steps to create a Widget Template:
 
 1. Navigate to the desired site where you want to create the widget template.
 
-1. Open the *Site Menu* ( ![Site Menu](../../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Templates* &rarr; *Widget Templates*.
+1. Open the *Site Menu* ( ![Site Menu](../../../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Templates* &rarr; *Widget Templates*.
 
    ```{note}
    In the Global Site, you can view sample widget templates. These sample templates differ from the default templates already configured in the apps.
    ```
 
-1. Click *Add* ( ![Add Button](../../../../images/icon-add.png) ) and select the type of template to create.
+1. Click *Add* ( ![Add Button](../../../../../images/icon-add.png) ) and select the type of template to create.
 
    ![Click on Design and Widget templates.](./creating-a-widget-template/images/01.png)
 
@@ -27,11 +27,11 @@ Follow these steps to create a Widget Template:
 
 1. Design your template in the editor.
 
-   In the *Elements* side panel ( ![Elements](../../../../images/icon-list-ul.png) ), you can select from available widget fields, variables, and utilities. Some elements are common to all widgets, while others are specific to the selected widget type.
+   In the *Elements* side panel ( ![Elements](../../../../../images/icon-list-ul.png) ), you can select from available widget fields, variables, and utilities. Some elements are common to all widgets, while others are specific to the selected widget type.
 
    ![Design the template using field elements.](./creating-a-widget-template/images/02.png)
 
-1. (Optional) In the Details side panel (![Details](../../../../images/icon-cog3.png)), enter a *description* and select an *image* for the template.
+1. (Optional) In the Details side panel (![Details](../../../../../images/icon-cog3.png)), enter a *description* and select an *image* for the template.
 
 1. Click *Save*.
 
@@ -49,7 +49,7 @@ You can also embed same-type templates into other templates. For example, suppos
 
 ## Configuring Widget Templates
 
-After you've saved your widget template, you can manage it through its Actions button (![Actions Button](../../../../images/icon-actions.png)). This provides several options:
+After you've saved your widget template, you can manage it through its Actions button (![Actions Button](../../../../../images/icon-actions.png)). This provides several options:
 
 - *Edit*: modify the widget template's setup properties.
 - *Permissions*: manage the permissions *Update*, *Permissions*, *Delete*, and *View* for the widget template.

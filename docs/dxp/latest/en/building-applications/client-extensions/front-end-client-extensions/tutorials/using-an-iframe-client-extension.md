@@ -5,7 +5,7 @@ uuid: 26cee4e4-07ad-4341-a5d6-ee4c715f7009
 
 {bdg-secondary}`7.4+`
 
-IFrame client extensions use Liferay's front-end infrastructure to register external applications as `<iframe>` HTML elements. They're deployed onto Liferay pages as widgets. Unlike other front-end client extensions, IFrames do not provide a static resource.
+IFrame client extensions use Liferay's front-end infrastructure to register external applications as `<iframe>` HTML elements. They're added to Liferay pages as widgets. Unlike other front-end client extensions, IFrames do not provide a static resource.
 
 ```{warning}
 IFrame client extensions are under development and are currently unsupported in Liferay 7.4.
@@ -37,6 +37,8 @@ To start developing client extensions,
 Now you have the tools to deploy your IFrame client extension.
 
 ## Examine the IFrame Client Extension
+
+<!-- I'm sending this back because it's too boilerplate. I had to change all the headings on the Sprite Map one, and it looks like I'd have to change the headings on this one too. Just like our other dev articles, these client extension tutorials should not have the same headings throughout. This heading doesn't even describe what's in this section. You never say the client extension loads whatever's at the URL, nor do you describe what the example URL does, so the reader has no idea what to expect when it's deployed. Also, the reader never modifies anything. So this heading is pretty useless. Headings should never be generic; they should be specific to the topic being discussed. -Rich -->
 
 The `client-extensions/liferay-sample-iframe-1/client-extension.yaml` file defines the IFrame client extension project in the sample workspace:
 

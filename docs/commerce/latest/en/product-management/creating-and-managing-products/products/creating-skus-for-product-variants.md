@@ -12,7 +12,7 @@ Without Product Options, only one SKU can be active for a Product at a time.
 ```
 
 ```{tip}
-It’s highly recommended that Product Option values are finalized before using them to create SKUs. See `Using Product Options <./using-product-options.md`>_ for more information.
+It's highly recommended that Product Option values are finalized before using them to create SKUs. See [Using Product Options](./using-product-options.md) for more information.
 ```
 
 ## Automatically Generating Multiple SKUs

@@ -19,7 +19,7 @@ liferay
 With the exception of the `common/` directory, changes added to an environment-specific folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to a `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to all subfolders within the `configs/` directory, for all services.
 
 ```{note}
-If you are using version 3.x.x services, then these configuration files instead belong in the appropriate `lcp/liferay/config/{ENV}/` folder. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md)_ for more information on checking the version.
+If you are using version 3.x.x services, then these configuration files instead belong in the appropriate `lcp/liferay/config/{ENV}/` folder. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
 ```
 
 ## Portal Properties

@@ -38,6 +38,8 @@ Now you have the tools to deploy your IFrame client extension.
 
 ## Examine the IFrame Client Extension
 
+<!-- I'm sending this back because it's too boilerplate. I had to change all the headings on the Sprite Map one, and it looks like I'd have to change the headings on this one too. Just like our other dev articles, these client extension tutorials should not have the same headings throughout. This heading doesn't even describe what's in this section. You never say the client extension loads whatever's at the URL, nor do you describe what the example URL does, so the reader has no idea what to expect when it's deployed. Also, the reader never modifies anything. So this heading is pretty useless. Headings should never be generic; they should be specific to the topic being discussed. -Rich -->
+
 The `client-extensions/liferay-sample-iframe-1/client-extension.yaml` file defines the IFrame client extension project in the sample workspace:
 
 ```yaml

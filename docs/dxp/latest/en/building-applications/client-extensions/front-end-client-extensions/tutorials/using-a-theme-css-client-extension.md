@@ -29,17 +29,17 @@ Now you have the tools to deploy your first theme CSS client extension.
 
 ## Examine and Modify the Client Extension
 
-The theme CSS client extension is in the sample workspace's `client-extensions/liferay-sample-theme-css/` folder. It is defined in the `client-extension.yaml` file:
+The theme CSS client extension is in the sample workspace's `client-extensions/liferay-sample-theme-css-1/` folder. It is defined in the `client-extension.yaml` file:
 
 ```yaml
-liferay-sample-theme-css:
+liferay-sample-theme-css-1:
     clayURL: css/clay.css
     mainURL: css/main.css
-    name: Liferay Sample Theme CSS
+    name: Liferay Sample Theme CSS 1
     type: themeCSS
 ```
 
-The client extension has the ID `liferay-sample-theme-css` and contains the key configurations for a theme CSS client extension, including the type and path to the two CSS resource files. See the [Theme CSS YAML Configuration Reference](../theme-css-yaml-configuration-reference.md) for more information on the available properties.
+The client extension has the ID `liferay-sample-theme-css-1` and contains the key configurations for a theme CSS client extension, including the type and path to the two CSS resource files. See the [Theme CSS YAML Configuration Reference](../theme-css-yaml-configuration-reference.md) for more information on the available properties.
 
 It also contains the `assemble` YAML block:
 
@@ -62,7 +62,7 @@ The `package.json` file contains the following code:
       "baseTheme": "styled"
    },
    "main": "package.json",
-   "name": "@liferay/liferay-sample-theme-css",
+   "name": "@liferay/liferay-sample-theme-css-1",
    "version": "1.0.0"
 }
 ```
@@ -130,7 +130,7 @@ To deploy all client extensions in the workspace simultaneously, run the command
 Confirm the deployment in your Liferay instance's console:
 
 ```bash
-STARTED liferay-sample-theme-css_1.0.0
+STARTED liferay-sample-theme-css-1_1.0.0
 ```
 
 ## Use the Client Extension on a Page
@@ -143,7 +143,7 @@ Configure a page to use your deployed client extension:
 
 1. In the _Theme CSS Client Extension_ section under the _Look and Feel_ tab, click Add (![Add](../../../../images/icon-duplicate.png)).
 
-1. Select the newly deployed client extension, _Liferay Sample Theme CSS_.
+1. Select the newly deployed client extension, _Liferay Sample Theme CSS 1_.
 
    ![Select the Sample Theme CSS client extension and click Save.](./using-a-theme-css-client-extension/images/01.png)
 

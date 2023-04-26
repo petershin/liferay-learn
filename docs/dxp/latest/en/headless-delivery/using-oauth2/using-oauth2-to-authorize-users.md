@@ -82,7 +82,7 @@ The authorization code flow requires users to log in with their credentials and 
 
 1. Enter `http://localhost:8080/o/oauth2/token` for the Liferay token URL. Paste the client ID and client secret from your clipboard. Click _Get Token_. Note the authorization token that can be used to make future REST API calls appears.
 
-1. Enter `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
+1. Enter `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Data*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
 
    ![A list of Liferay users appears.](./using-oauth2-to-authorize-users/images/04.png)
 
@@ -94,7 +94,7 @@ The client credentials flow is used typically for server to server interaction a
 
 1. Enter `http://localhost:8080/o/oauth2/token` for the Liferay token URL. Paste the client ID and client secret from your clipboard. Click *Get Token*. Note the authorization token that can be used to make future REST API calls appears.
 
-1. Enter `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
+1. Enter `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Data*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
 
 ### Password Flow
 
@@ -114,13 +114,13 @@ In a password flow, the username and password are directly exposed to the applic
 
 1. Click *Get Token*. Note the authorization token that can be used to make future REST API calls appears.
 
-1. Enter `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Users*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
+1. Enter `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` for the Liferay get user URL. Click *Get Data*. The React app makes a REST API call to Liferay using token-based authentication and returns a list of Liferay users.
 
 ## Examine the Code
 
 The React app's `components` folder defines the UI elements and logic for handling the events fired by clicking buttons. For example, the `Authorize.js` file redirects to the authorization page, `Token.js` fetches the access token, and `Users.js` fetches the list of users. Each authorization flow uses some or all of these components. 
 
-The API request to get an authorization token and the request to get users is defined in the `Requests.js` file in the `utils` folder. 
+The API request to get an authorization token and the GET request is defined in the `Requests.js` file in the `utils` folder. 
 
 ```
 src
@@ -181,7 +181,7 @@ Example response:
 
 The `Users.js` component parses the response for the `access_token`. 
 
-Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
+Finally, clicking *Get Data* calls the `getUsers` function in the `Requests.js` file.
 
 ### Client Credentials Grant Type
 
@@ -196,7 +196,7 @@ In the `Token.js` component, the parameters `client_id`, `client_secret`, and `g
 
 The `Users.js` component parses the response for the `access_token`.
 
-Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
+Finally, clicking *Get Data* calls the `getUsers` function in the `Requests.js` file.
 
 ### Password Grant Type
 
@@ -211,7 +211,7 @@ In the `Token.js` component, the parameters `client_id`, `client_secret`, `grant
 
 The `Users.js` component parses the response for the `access_token`.
 
-Finally, clicking *Get Users* calls the `getUsers` function in the `Requests.js` file.
+Finally, clicking *Get Data* calls the `getUsers` function in the `Requests.js` file.
 
 ## Additional Information
 

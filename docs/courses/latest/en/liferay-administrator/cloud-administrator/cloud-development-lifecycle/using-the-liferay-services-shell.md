@@ -1,6 +1,6 @@
 # Using the Liferay Service's Shell
 
-In order to more effectively observe his effects on the Liferay database during testing, Kyle tries using the Liferay service's shell to query it directly.
+Sometimes you need direct access to the system to see what's happening. Kyle wants to use the Liferay service's shell to view the directory structure and verify database creation. 
 
 Here, you'll use the shell and directly query a Liferay instance's database from the console.
 
@@ -12,7 +12,7 @@ Access the Liferay service's shell via the service's page.
 
 1. Click *Services* on the left side of the screen.
 
-1. Click the Liferay service.
+1. Click the *Liferay* service.
 
 1. Click the *Shell* tab.
 
@@ -26,12 +26,12 @@ Changes you make to your Liferay instance through the shell are not permament. T
 
 ## Using the MySQL Client
 
-Next, use the MySQL client to directly interface with your Liferay instance's database and view live data.
+Next, use the MySQL client to view your Liferay instance's database. 
 
 1. Enter `mysql` into the shell to log into the MySQL client with the default user.
 
     ```{note}
-    Logging in with the default database user gives read-only access to the database. For testing that requires directly manipulating data, you must log in [with the database service's credentials](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client#logging-in-with-read-and-write-privileges).
+    Logging in with the default database user gives read-only access to the database. If you must manipulate data, log in [with the database service's credentials](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/using-the-mysql-client#logging-in-with-read-and-write-privileges).
     ```
 
 1. Enter `show tables;` to show a list of all existing tables that you can scroll through.

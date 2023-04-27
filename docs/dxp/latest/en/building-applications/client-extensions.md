@@ -10,6 +10,16 @@ uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 ---
 # Client Extensions
 
+```{toctree}
+:maxdepth: 4
+client-extensions/working-with-client-extensions.md
+client-extensions/packaging-client-extensions.md
+client-extensions/front-end-client-extensions.md
+client-extensions/microservice-client-extensions.md
+client-extensions/configuration-client-extensions.md
+client-extensions/batch-client-extensions.md
+```
+
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
 Client extensions extend Liferay without using OSGi modules. You can deploy client extensions to any Liferay environment, whether you host it yourself or on Liferay Cloud. They are also the primary way to customize Liferay with Liferay Cloud, together with built-in configurations like [Liferay objects](./objects.md).

@@ -5,9 +5,7 @@ uuid: 7db077d3-aec1-400b-8475-62390f01bd47
 
 {bdg-secondary}`Available Liferay DXP 7.4 U69+/GA69+`
 
-Liferay's mini cart fragment provides a detailed overview of your cart. You can use it to increase or decrease an product's quantity, delete products, submit the cart for checkout or use the quick add to cart functionality. 
-
-<!-- Add link to Quick Add to Cart when ready -->
+Liferay's mini cart fragment provides a detailed overview of your cart. You can use it to increase or decrease product quantity, delete products, submit the cart for checkout or use the search bar to quickly add products to cart. 
 
 ## Adding the Mini Cart Fragment to a Page
 
@@ -55,4 +53,24 @@ The header area contains two buttons:
 
 The Product List area lists each product in the cart along with its quantity and price. You can click the Delete (![Delete](../../images/icon-delete.png)) button next to a product to delete it. You can increase or decrease the quantity of the product and the Cart Summary section updates automatically. Click _Submit_ to continue to check out. None of these buttons are available when the cart is empty. 
 
-<!-- Add info and link to Quick Add to Cart when ready -->
+## Quickly Adding Products to the Cart
+
+You can use the search bar in the fragment to quickly add items to the cart. Using this, you can search by a product name or known SKU and add them to an open order from any page containing the fragment. It reduces the time taken to create orders and removes the burden of having to search through the catalog first. 
+
+After adding the mini cart fragment on a page,
+
+1. Create a new order through the [account selector](./using-the-account-selector-fragment.md).
+
+1. Open the mini cart, and search for a known SKU or product.
+
+1. Select the SKU and click the mini cart (![Mini Cart](../../images/icon-mini-cart.png)) icon.
+
+The SKU gets added to your cart. You can also add multiple SKUs at a time by adding all of them from the search bar and then clicking on the mini cart icon once. 
+
+![Add multiple SKUs at once by selecting each SKU and clicking on the mini cart icon.](./using-the-mini-cart-fragment/images/05.gif)
+
+<!-- Add this when ready
+
+### Adding Discontinued Products to Cart
+
+SKUs may reach end-of-life (EOL) and be marked as discontinued. Discontinued SKUs may or may not get a replacement. Replacement SKUs get added automatically to the cart when you try adding the discontinued SKU through quick add-to-cart.  -->

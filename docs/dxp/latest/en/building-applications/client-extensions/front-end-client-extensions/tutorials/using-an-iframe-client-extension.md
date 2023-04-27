@@ -36,9 +36,7 @@ To start developing client extensions,
 
 Now you have the tools to deploy your IFrame client extension.
 
-## Examine the IFrame Client Extension
-
-<!-- I'm sending this back because it's too boilerplate. I had to change all the headings on the Sprite Map one, and it looks like I'd have to change the headings on this one too. Just like our other dev articles, these client extension tutorials should not have the same headings throughout. This heading doesn't even describe what's in this section. You never say the client extension loads whatever's at the URL, nor do you describe what the example URL does, so the reader has no idea what to expect when it's deployed. Also, the reader never modifies anything. So this heading is pretty useless. Headings should never be generic; they should be specific to the topic being discussed. -Rich -->
+## Specify a URL for the IFrame Client Extension to Load
 
 The `client-extensions/liferay-sample-iframe-1/client-extension.yaml` file defines the IFrame client extension project in the sample workspace:
 
@@ -52,8 +50,6 @@ liferay-sample-iframe-1-counter-app:
 This client extension has the ID `liferay-sample-iframe-1` and contains the key configurations for an IFrame client extension, including the `name`, `type` and the URL of the app to ingest as an IFrame. The [Counter App](https://github.com/arnab-datta/counter-app) running at the example's `url` is a basic React app that simulates adding items to a shopping cart. After deploying the client extension, you can add the app to a page in Liferay as you would any widget.
 
 See the [IFrame YAML configuration reference](../iframe-yaml-configuration-reference.md) for more information on the available properties.
-
-
 
 ## Deploy the IFrame Client Extension
 
@@ -70,10 +66,10 @@ Next, go to the client extension's folder in the sample workspace and run
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-This builds your client extension and deploys the zip to Liferay's `deploy/` folder.
+This builds your client extension and deploys the zip to Liferay's `/deploy` folder.
 
 ```{tip}
-To deploy all client extensions in the workspace simultaneously, run the command from the `client-extensions/` folder.
+To deploy all client extensions in the workspace simultaneously, run the command from the `/client-extensions` folder.
 ```
 
 Confirm the deployment in your Liferay instance's console:
@@ -84,9 +80,9 @@ STARTED liferay-sample-iframe-1_1.0.0 [1592]
 
 Now that your client extension is deployed, configure Liferay to use it. 
 
-## Use the IFrame Client Extension
+## Add the IFrame Client Extension as a Widget
 
-The IFrame is added to a page as a widget. In Liferay,
+The IFrame is added to a page as a widget. 
 
 1. Click _Edit_ (![Edit](../../../../images/icon-edit-pencil.png)) at the top of any page.
 

@@ -36,7 +36,7 @@ To start developing client extensions,
 
 Now you have the tools to deploy your IFrame client extension.
 
-## Examine and Modify the Client Extension
+## Examine the IFrame Client Extension
 
 The `client-extensions/liferay-sample-iframe-1/client-extension.yaml` file defines the IFrame client extension project in the sample workspace:
 
@@ -51,7 +51,7 @@ This client extension has the ID `liferay-sample-iframe-1` and contains the key 
 
 Next, deploy the client extension.
 
-## Deploy the Client Extension to Liferay
+## Deploy the IFrame Client Extension
 
 ```{note}
 To deploy your client extension to Liferay Experience Cloud, use the Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to run [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
@@ -80,7 +80,7 @@ STARTED liferay-sample-iframe-1_1.0.0 [1592]
 
 Now that your client extension is deployed, configure Liferay to use it. 
 
-## Use the Client Extension on a Page
+## Use the IFrame Client Extension
 
 Add your deployed client extension to a page in Liferay: 
 

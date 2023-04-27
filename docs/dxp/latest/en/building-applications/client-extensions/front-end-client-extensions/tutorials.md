@@ -43,6 +43,7 @@ Follow these tutorials to create basic front-end client extensions.
 
 :::{grid-item-card} Using a Theme Sprite Map Client Extension
 :link: ./tutorials/using-a-theme-spritemap-client-extension.md
+:::
 
 :::{grid-item-card} Using a Theme CSS Client Extension
 :link: ./tutorials/using-a-theme-css-client-extension.md
@@ -55,5 +56,5 @@ Follow these tutorials to create basic front-end client extensions.
 :::{grid-item-card} Using Routes with Custom Elements
 :link: ./tutorials/using-routes-with-custom-elements.md
 :::
-
 ::::
+

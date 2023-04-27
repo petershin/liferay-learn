@@ -27,7 +27,7 @@ With a theme CSS client extension, you can override the current theme's CSS file
 
 Now you have the tools to deploy your first theme CSS client extension.
 
-## Examine and Modify the Client Extension
+## Examine How the Theme's Styles are Overridden
 
 The theme CSS client extension is in the sample workspace's `client-extensions/liferay-sample-theme-css-1/` folder. It is defined in the `client-extension.yaml` file:
 
@@ -67,10 +67,10 @@ The `package.json` file contains the following code:
 }
 ```
 
-The `dependencies` section includes the `sassy-inputs` library. This is not used in the example, but describes how an npm module is imported and used in your theme CSS client extension. The `liferayDesignPack` section describes the base theme used for the styles. Using the `styled` theme ensures that the existing styles specified on pages, fragments and widgets are not impacted. The other fields `main`, `name` and `version` provide required metadata.
+The `dependencies` section includes the `sassy-inputs` library. This is not used in the example, but shows how to import and use an npm module in your theme CSS client extension. The `liferayDesignPack` section declares the base theme used for the styles. Using the `styled` theme ensures that the existing styles specified on pages, fragments and widgets are not impacted. The other fields `main`, `name` and `version` provide required metadata.
 
 ```{note}
-You can set the base theme to `styled` or `unstyled`. The unstyled theme contains a set of basic styles and the `styled` theme contains all of the styles from the `unstyled` theme along with additional styling. All themes in Liferay use the `unstyled` or `styled` theme as the base. 
+You can set the base theme to `styled` or `unstyled`. The unstyled theme contains a set of basic styles and the `styled` theme contains all styles from the `unstyled` theme along with additional styling. All themes in Liferay use the `unstyled` or `styled` theme as the base. 
 
 If you apply the theme CSS client extension to a page that uses a different theme, the client extension's styling **replaces** the styling from the theme. If you have custom styles in your original theme, make sure you add those to the `_custom.scss` file so that those elements are not affected when you apply the client extension. 
 
@@ -93,7 +93,9 @@ The first line imports the npm module added in `package.json`. The CSS modifies 
 Your code is present inside `_custom.scss` while the `client-extension.yaml` file points to `clay.css` and `main.css`. This is because the theme CSS client extension runs the full Clay CSS build process resulting in a compiled `clay.css` and `main.css` file that also contains the compiled CSS code from `_custom.scss`.
 ```
 
-Add CSS to create a hover effect for all images. Open the `_custom.scss` file, add a declaration for `img:hover`, and specify these properties:
+## Modify the Theme CSS
+
+Add CSS to create a hover effect for all images. Open the `_custom.scss` file and add a declaration for `img:hover`:
 
 ```css
 img:hover{
@@ -106,7 +108,7 @@ This defines images as having a `2px` red border and rounded edges on hover.
 
 Now deploy the client extension.
 
-## Deploy the Client Extension to Liferay
+## Deploy Your Theme CSS Client Extension
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -133,15 +135,15 @@ Confirm the deployment in your Liferay instance's console:
 STARTED liferay-sample-theme-css-1_1.0.0
 ```
 
-## Use the Client Extension on a Page
+## Override the Themes on a Page
 
-Configure a page to use your deployed client extension:
+Configure a page to use your new theme CSS: 
 
 1. On a page, click _Edit_ (![Edit icon](../../../../images/icon-edit-pencil.png)) at the top.
 
-1. In the sidebar, navigate to the _Page Design Options_ menu (![Page Design Options icon](../../../../images/icon-format.png)) and click _configuration icon_ (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the _Page Design Options_ menu (![Page Design Options icon](../../../../images/icon-format.png)) and click _Configuration_ (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
-1. In the _Theme CSS Client Extension_ section under the _Look and Feel_ tab, click Add (![Add](../../../../images/icon-duplicate.png)).
+1. In the Theme CSS Client Extension section under the Look and Feel tab, click _Add_ (![Add](../../../../images/icon-duplicate.png)).
 
 1. Select the newly deployed client extension, _Liferay Sample Theme CSS 1_.
 

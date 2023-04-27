@@ -4,6 +4,7 @@ toc:
   - ./tutorials/using-a-css-client-extension.md
   - ./tutorials/using-a-theme-favicon-client-extension.md
   - ./tutorials/using-a-theme-spritemap-client-extension.md
+  - ./tutorials/using-a-theme-css-client-extension.md
   - ./tutorials/creating-a-basic-custom-element.md
   - ./tutorials/using-routes-with-custom-elements.md
 uuid: 8e6f2308-09b7-437f-8e69-34307388b844
@@ -18,6 +19,7 @@ tutorials/using-a-javascript-client-extension.md
 tutorials/using-a-css-client-extension.md
 tutorials/using-a-theme-favicon-client-extension.md
 tutorials/using-a-theme-spritemap-client-extension.md
+tutorials/using-a-theme-css-client-extension.md
 tutorials/creating-a-basic-custom-element.md
 tutorials/using-routes-with-custom-elements.md
 ```
@@ -41,6 +43,9 @@ Follow these tutorials to create basic front-end client extensions.
 
 :::{grid-item-card} Using a Theme Spritemap Client Extension
 :link: ./tutorials/using-a-theme-spritemap-client-extension.md
+
+:::{grid-item-card} Using a Theme CSS Client Extension
+:link: ./tutorials/using-a-theme-css-client-extension.md
 :::
 
 :::{grid-item-card} Creating a Basic Custom Element

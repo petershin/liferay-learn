@@ -160,3 +160,4 @@ You have successfully used a theme CSS client extension in Liferay. Next, try de
 * [Using a CSS Client Extension](./using-a-css-client-extension.md)
 * [Using a JS Client Extension](./using-a-javascript-client-extension.md)
 * [Using a Theme Favicon Client Extension](./using-a-theme-favicon-client-extension.md)
+* [Using a Theme Sprite Map Client Extension](./using-a-theme-spritemap-client-extension.md)

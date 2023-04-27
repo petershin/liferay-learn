@@ -91,7 +91,7 @@ Once created, you can use notification templates with object actions. See [Defin
 
 You can use reference terms to access user and entry data, dynamically populating a template's fields. You can reference any entries and users involved in the event triggering the [notification action](../../building-applications/objects/creating-and-managing-objects/actions/understanding-action-types.md#notification).
 
-Consider a scenario with a custom Ticket object that is on the child side of a one-to-many relationship with the User system object. This relationship is used to determine the ticket's assignee. If you add a notification action to the Ticket object for notifying the assignee on entry update, then the template used for this action can access data for both the updated ticket and the assignee.
+Consider a scenario with a custom Ticket object that is on the child side of a one-to-many relationship with the User system object. This relationship determines the ticket's assignee. If you add a notification action to the Ticket object for notifying the assignee on entry update, the template used for this action can access data for both the updated ticket and the assignee.
 
 Terms are available for both custom and default object fields.
 

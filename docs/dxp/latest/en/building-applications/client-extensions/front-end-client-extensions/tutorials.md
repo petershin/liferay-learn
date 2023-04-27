@@ -41,7 +41,7 @@ Follow these tutorials to create basic front-end client extensions.
 :link: ./tutorials/using-a-theme-favicon-client-extension.md
 :::
 
-:::{grid-item-card} Using a Theme Spritemap Client Extension
+:::{grid-item-card} Using a Theme Sprite Map Client Extension
 :link: ./tutorials/using-a-theme-spritemap-client-extension.md
 
 :::{grid-item-card} Using a Theme CSS Client Extension

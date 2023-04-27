@@ -90,7 +90,7 @@ Because this example uses an input parameter, you must provide the input to the 
 
 ## Granting Data Provider Permissions
 
-Users must have view permission on a data provider to see the options it provides. For example, if Guests are to fill out a form, they must be granted the view permission.
+Users must have view permission on a data provider to see the options it provides. For example, if Guests must fill out a form, grant them the view permission.
 
 To configure the data provider's permissions:
 

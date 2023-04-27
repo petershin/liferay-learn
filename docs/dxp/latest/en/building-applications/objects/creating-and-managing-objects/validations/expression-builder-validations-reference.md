@@ -41,7 +41,7 @@ contains([textField], "[string]")
 
 ### Does Not Contain (with Text)
 
-Checks if a text field does not contain a specific string value and returns a Boolean.  If the field *does* contain the value, it returns `false`.
+Checks if a text field does not contain a specific string value and returns a Boolean. If the field *does* contain the value, it returns `false`.
 
 ```
 NOT(contains([textField], "[string]"))

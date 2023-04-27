@@ -5,7 +5,7 @@ uuid: 441c07d0-8ab3-4a39-82e6-3702dcf45e22
 
 {bdg-secondary}`Available Liferay 7.3+`
 
-Publications provides a convenient and flexible way for you and your teams to develop, track, and publish changes to your Liferay instance. When enabled, Publications is activated globally and can be accessed anywhere to edit supported entities.
+Publications provides a convenient and flexible way for you and your teams to develop, track, and publish changes. When enabled, Publications is activated globally and can be accessed anywhere to edit supported entities.
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/8N6djs7Gcs4
 
@@ -60,8 +60,6 @@ Once disabled, all active publications are deactivated, scheduled publications a
 ```
 
 ## Enabling Publications for 7.3.x
-
-Follow these steps to enable Publications:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Settings* under Publications.
 

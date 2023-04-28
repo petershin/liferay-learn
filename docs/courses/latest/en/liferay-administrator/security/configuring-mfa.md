@@ -5,30 +5,11 @@ uuid: c94a253c-fa97-4098-90c0-d43a16534131
 
 Add an additional layer of security for your Liferay environment with multi-factor authentication (i.e. MFA). Liferay supports both one-time codes through email and third-party services that support SMS or authenticator apps. See [using multi-factor-authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication) to learn more.
 
-<!-- Again, there will be something here about why Delectable Bonsai needs this, right? -Rich --> 
+Delectable Bonsai has come a long way from its days at the farmer's market. Now with many employees and customers, the IT department is now requiring MFA as part of its effort to enhance security.
 
 ## Setting Up MFA
 
-In real life, you'd already have a mail server for Liferay to use. Here, you'll simulate one. 
-
-<!-- Didn't we do this somewhere else? -Rich --> 
-
-1. Download [FakeSMTP](http://nilhcem.com/FakeSMTP/). 
-
-1. Unzip the file. Start the FakeSMTP mail server: 
-
-   ```bash
-   java -jar fakeSMTP-2.0.jar
-   ```
-
-1. Set the listening port to `2525` and click _Start server_.
-
-   Note, if using a docker container for Liferay, the following env variables must be included in the your run command.
-
-   ```properties
-   --env LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL_PERIOD_SMTP_PERIOD_PORT=2525 \
-   --env LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL_PERIOD_SMTP_PERIOD_HOST=172.17.0.1 \
-   ```
+1. Follow the steps in [Configuring Mail in Liferay](../configuration/server-administration-and-email.md#configuring-mail-in-lxc-sm-or-self-hosted) to simulate an SMTP mail server.
 
 1. Log into Liferay as the administrator (i.e. [Kyle Klein](../users-accounts-organizations/managing-users.md#creating-users)).
 

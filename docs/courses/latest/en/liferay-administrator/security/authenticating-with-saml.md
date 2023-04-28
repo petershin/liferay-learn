@@ -5,7 +5,7 @@ uuid: c8bad60f-49bf-4002-ae2f-39991aaa5980
 
 When authenticating with SAML, Liferay can serve as either the service provider (SP) or the identity provider (IdP). See [authenticating with SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) to learn more.
 
-<!-- You'll add something here about how Delectable Bonsai needs this for something, right? -Rich --> 
+Delectable Bonsai continues to grow even after its acquisition of Almighty Syrup. As they look to the possibility of acquiring another company, the IT team decides to utilize SAML to centralize the storing and managing of user credentials. Follow the steps below to see this in action.
 
 ## Setting Up an Identity Provider
 
@@ -90,14 +90,16 @@ Next, in the `liferayidp` container (`localhost:7080`), navigate to _Global Menu
    * Enter the name identifier attribute name as `emailAddress`.
    * Tick the _Attributes Enabled_ checkbox.
    * In the attributes text box, enter the following attributes:
+
+      ```
       firstName
       lastName
       emailAddress
       screenName
       uuid
-   * Click _Save_ at the bottom of the page.
+      ```
 
-   <!-- I don't think the above will format well. Of course, we can't check yet because we don't have a previewer for the new parser. -Rich --> 
+   * Click _Save_ at the bottom of the page.
 
 ## Testing the SAML connection
 

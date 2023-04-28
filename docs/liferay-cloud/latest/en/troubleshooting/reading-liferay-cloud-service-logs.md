@@ -79,15 +79,31 @@ Follow these steps to access environment service logs via the Liferay Cloud cons
 
 1. Click on *Logs* in the environment menu.
 
-View application, status, and build logs across all environment services, or filter results using the drop-down menus.
+View application, status, and build logs across all environment services, or [filter results](#searching-and-filtering-logs) using the drop-down menus.
 
 To download logs, click the *Download Logs* button.
 
-![Figure 1: View environment logs form the Logs page.](./reading-liferay-cloud-service-logs/images/02.png)
+![View environment logs form the Logs page.](./reading-liferay-cloud-service-logs/images/02.png)
 
 Individual service logs are also available under the *Logs* tab in each service's dedicated page.
 
-![Figure 2: Access and download individual service logs under the Logs tab in each service's dedicated page.](./reading-liferay-cloud-service-logs/images/03.png)
+![Access and download individual service logs under the Logs tab in each service's dedicated page.](./reading-liferay-cloud-service-logs/images/03.png)
+
+### Searching and Filtering Logs
+
+You can filter logs by [type](#log-types) or by service on the Logs page via drop-down menus. If you filter logs to a specific service, another drop-down menu appears where you can filter to a specific instance.
+
+![Use the drop-down menus to filter by type, service, and service instance.](./reading-liferay-cloud-service-logs/images/04.png)
+
+Use the date picker at the top-right corner to filter by a specific date range. You cannot choose a date that [no longer has valid logs](../reference/platform-limitations.md#all-services).
+
+![Use the date picker to see logs from a specific date range.](./reading-liferay-cloud-service-logs/images/05.png)
+
+You can also search by a specific term or regular expression in the logs. Select *Term* or *Regex* from the drop-down menu, and then enter your search term or regular expression. Search suggestions appear based on previous searches. Regular expressions use the [RE2 syntax](https://github.com/google/re2/wiki/Syntax).
+
+![Use the search to find logs with specific terms or formats.](./reading-liferay-cloud-service-logs/images/06.png)
+
+You can only filter by log type or instance on specific service pages.
 
 ## Accessing Logs via the Terminal
 

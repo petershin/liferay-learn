@@ -57,6 +57,8 @@ function check_translation_article_uuids {
 function main {
 	IFS=$'\n'
 
+	pushd $(git rev-parse --show-toplevel)
+
 	check_duplicate_uuids
 
 	check_english_article_uuids
@@ -64,6 +66,8 @@ function main {
 	check_translation_article_uuids
 
 	echo "Use 'git status' and 'git diff' to inspect the changes and make sure you only removed the frontmatter uuid lines."
+
+	popd
 
 	unset IFS
 }

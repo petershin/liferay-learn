@@ -5,7 +5,7 @@ uuid: c94a253c-fa97-4098-90c0-d43a16534131
 
 Add an additional layer of security for your Liferay environment with multi-factor authentication (i.e. MFA). Liferay supports both one-time codes through email and third-party services that support SMS or authenticator apps. See [using multi-factor-authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication) to learn more.
 
-Delectable Bonsai has come a long way from its days at the farmer's market. Now with many employees and customers, the IT department is now requiring MFA as part of its effort to enhance security.
+Delectable Bonsai has come a long way from its days at the farmer's market. Now with many employees and customers, the IT department is requiring MFA as part of its enhanced security efforts.
 
 ## Setting Up MFA
 
@@ -13,15 +13,7 @@ Delectable Bonsai has come a long way from its days at the farmer's market. Now 
 
 1. Log into Liferay as the administrator (i.e. [Kyle Klein](../users-accounts-organizations/managing-users.md#creating-users)).
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Server Administration_. Click the _Mail_ tab.
-
-1. Set the outgoing port to `2525`. Click _Save_.
-
-1. Next, navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Click _Email_ under the platform section.
-
-1. Click _Email Sender_ in the left navigation. Set the name as `Support` and address as `support@delectablebonsai.com`. Click _Save_.
-
-1. Navigate back to the instance settings. Under Security, click _Multi-Factor Authentication_. 
+1. Next, navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Click _Multi-Factor Authentication_ under the security section.
 
 1. Tick the _enabled_ box and click _Save_. See [Enabling Multi-Factor Authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication#enabling-multi-factor-authentication) to learn more about the configuration options.
 

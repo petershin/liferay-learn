@@ -5,7 +5,7 @@ uuid: d717105d-bf1d-4b82-88ea-61798efeb7a5
 
 Use the different web service tools Liferay offers to protect your system as different applications and clients interact with Liferay. See [securing Liferay web services](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services) to learn more.
 
-Fans of Delectable Bonsai have been asking for a way to be able to customize and download their user profiles to use on other platforms. See how the IT department might configure a public web service to enable this.
+Fans of Delectable Bonsai have been asking for a way to customize and download their user profiles to use on other platforms. See how the IT department might configure a public web service to enable this.
 
 ## Understanding Service Access Policies
 
@@ -47,7 +47,9 @@ The example below is for demonstration purposes only. Granting access to these s
 
 ## Enabling Cross-Origin Resource Sharing
 
-When a server from a different domain tries to access Liferay web services, the cross-origin resource sharing (CORS) policy allows or denies each request. Follow the steps below to see an example of this with a React application running locally. See [setting up CORS](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors) to learn more.
+When a server from a different domain tries to access Liferay web services, the cross-origin resource sharing (CORS) policy allows or denies each request. See [setting up CORS](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors) to learn more.
+
+Delectable Bonsai may choose to create a [Liferay object](https://learn.liferay.com/w/dxp/building-applications/objects) for users to have customized profile fields. Follow the steps below to see an example of this with a React application running locally. 
 
 1. Create a Liferay object.
 
@@ -117,7 +119,7 @@ When a server from a different domain tries to access Liferay web services, the 
 
    With the CORS policy updated, a J4X7 object entry is now successfully added.
 
-Next: [Authorizing with OAuth2](./authorizing-with-oauth2.md)]
+Next: [Authorizing with OAuth2](./authorizing-with-oauth2.md)
 
 ## Relevant Concepts
 

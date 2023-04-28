@@ -5,7 +5,7 @@ uuid: 5e845736-c6b5-42bb-8bf0-deb3e9786214
 
 An AntiSamy sanitizer is enabled by default in Liferay. This sanitizer prevents malicious JavaScript code from being injected into the system while still allowing users to utilize HTML and CSS. See [AntiSamy](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/using-antisamy) to learn more. 
 
-To prevent malicious activity, the IT department of Delectable Bonsai wants to prevent any JavaScript code from being placed in web content. See this in action below. 
+To prevent malicious activity, the IT department of Delectable Bonsai decides to forbid JavaScript code from being placed in web content. See this in action below. 
 
 ## Configuring AntiSamy
 
@@ -63,7 +63,7 @@ By default, all JavaScript code is sanitized and prevented from being executed e
    * Click _Source_ (![Code icon](../../images/icon-code.png)) to switch to code view.
    * Make a small change to the content. For example, change the `Hello World!` to `Hello Foo!`. 
    * Click _Publish_.
-   * Click back into the web content. See that the Javascript code has been sanitized.
+   * Click back into the web content. See that the Javascript code has been removed and the content has been sanitized.
 
    ![The web content is sanitized by AntiSamy.](./managing-antisamy/images/02.png)
 

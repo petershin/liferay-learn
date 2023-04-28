@@ -9,9 +9,9 @@ Liferay의 REST API는 블로그 게시물 및 이미지를 추가, 수정 및 �
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [블로그 API 기본 사항](./liferay-r3g4.zip) 을 다운로드하고 압축을 풉니다.
+1. [블로그 API 기본 사항](./liferay-r3g4.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/developer-guide/liferay-r3g4.zip -O
@@ -21,9 +21,9 @@ Liferay의 REST API는 블로그 게시물 및 이미지를 추가, 수정 및 �
    unzip liferay-r3g4.zip
    ```
 
-2. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 아래의 다른 서비스 호출에서 이것을 사용합니다.
+1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 아래의 다른 서비스 호출에서 이것을 사용합니다.
 
-3. cURL 스크립트를 사용하여 사이트에 새 블로그 게시물을 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `BlogPosting_POST_ToSite.sh` 스크립트를 실행합니다.
+1. cURL 스크립트를 사용하여 사이트에 새 블로그 게시물을 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `BlogPosting_POST_ToSite.sh` 스크립트를 실행합니다.
 
     ```bash
     ./BlogPosting_POST_ToSite.sh 1234
@@ -31,34 +31,36 @@ Liferay의 REST API는 블로그 게시물 및 이미지를 추가, 수정 및 �
 
     JSON 응답은 새 블로그 게시물이 추가되었음을 보여줍니다.
 
-    ```bash
-    "alternativeHeadline" : "",
-    "articleBody" : "Foo",
-    "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20125,
-    "name" : "Test Test"
-    },
-    "customFields" : [ ],
-    "dateCreated" : "2021-07-21T21:26:55Z",
-    "dateModified" : "2021-07-21T21:26:55Z",
-    "datePublished" : "2021-07-21T21:26:00Z",
-    "description" : "",
-    "encodingFormat" : "text/html",
-    "friendlyUrlPath" : "able",
-    "headline" : "Able",
-    "id" : 38511,
-    "keywords" : [ ],
-    "numberOfComments" : 0,
-    "relatedContents" : [ ],
-    "siteId" : 20121,
-    "taxonomyCategoryBriefs" : [ ]
+    ```json
+    {
+      "alternativeHeadline": "",
+      "articleBody": "Foo",
+      "creator": {
+        "additionalName": "",
+        "contentType": "UserAccount",
+        "familyName": "Test",
+        "givenName": "Test",
+        "id": 20125,
+        "name": "Test Test"
+      },
+      "customFields": [],
+      "dateCreated": "2021-07-21T21:26:55Z",
+      "dateModified": "2021-07-21T21:26:55Z",
+      "datePublished": "2021-07-21T21:26:00Z",
+      "description": "",
+      "encodingFormat": "text/html",
+      "friendlyUrlPath": "able",
+      "headline": "Able",
+      "id": 38511,
+      "keywords": [],
+      "numberOfComments": 0,
+      "relatedContents": [],
+      "siteId": 20121,
+      "taxonomyCategoryBriefs": []
+    }
     ```
 
-1. **관리 메뉴** &rarr; **콘텐츠 & 데이터** &rarr; **블로그** 로 이동하여 블로그 애플리케이션으로 이동합니다. 새 블로그 게시물이 추가되었는지 확인합니다.
+1. *관리 메뉴* &rarr; *콘텐츠 & 데이터* &rarr; *블로그*로 이동하여 블로그 애플리케이션으로 이동합니다. 새 블로그 게시물이 추가되었는지 확인합니다.
 
     ![새 블로그 게시물이 추가되었는지 확인합니다.](./blog-api-basics/images/01.png)
 
@@ -112,7 +114,7 @@ Liferay의 REST API는 블로그 게시물 및 이미지를 추가, 수정 및 �
 
 | 라인(약칭)                                                                           | 묘사                                                                   |
 |:-------------------------------------------------------------------------------- |:-------------------------------------------------------------------- |
-| `BlogPostingResource.Builder builder = ...`                                      | `BlogPostingResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.                |
+| `BlogPostingResource.Builder builder = ...`                                      | `BlogPostingResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.                  |
 | `BlogPostingResource blogPostingResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `BlogPostingResource` 서비스 인스턴스를 생성합니다.                   |
 | `BlogPosting blogPosting = blogPostingResource.postSiteBlogPosting(...);`        | `BlogPostingResource.postSiteBlogPosting` 메서드를 호출하고 데이터를 게시물에 전달합니다. |
 
@@ -132,7 +134,7 @@ Liferay의 REST API는 블로그 게시물 및 이미지를 추가, 수정 및 �
 
 ## 사이트에서 블로그 게시물 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 사이트의 블로그 게시물을 나열할 수 있습니다. 위와 같이 `1234` 을 사이트 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 사이트의 블로그 게시물을 나열할 수 있습니다. 위와 같이 `1234` 사이트 ID로 바꿉니다.
 
 ### BlogPostings_GET_FromSite.sh
 
@@ -168,7 +170,7 @@ java -classpath .:* -DsiteId=1234 BlogPostings_GET_FromSite
 
 ## 블로그 게시물 받기
 
-다음 cURL 또는 Java 명령을 사용하여 특정 블로그 게시물을 가져옵니다. `1234` 을 블로그 게시물의 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 사용하여 특정 블로그 게시물을 가져옵니다. `1234` 블로그 게시물의 ID로 바꿉니다.
 
 ```{tip}
 `BlogPostings_GET_FromSite.[java|sh]`를 사용하여 `BlogPosting` ID를 가져옵니다.
@@ -208,7 +210,7 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_GET_ById
 
 ## 블로그 게시물 패치
 
-다음 cURL 및 Java 명령을 사용하여 기존 블로그 게시물을 부분적으로 편집합니다. 참고: `1234` 을 블로그 게시물의 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 기존 블로그 게시물을 부분적으로 편집합니다. 참고: `1234` 블로그 게시물의 ID로 바꾸십시오.
 
 ### BlogPosting_PATCH_ById.sh
 
@@ -244,7 +246,7 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_PATCH_ById
 
 ## 블로그 게시물 올리기
 
-다음 cURL 및 Java 명령을 사용하여 기존 블로그 게시물을 완전히 덮어씁니다. `1234` 을 블로그 게시물의 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 기존 블로그 게시물을 완전히 덮어씁니다. `1234` 블로그 게시물의 ID로 바꾸십시오.
 
 ### BlogPosting_PUT_ById.sh
 
@@ -278,7 +280,7 @@ java -classpath .:* -DblogPostingId=1234 BlogPosting_PUT_ById
 
 ## 블로그 게시물 삭제
 
-다음 cURL 및 Java 명령을 사용하여 기존 블로그 게시물을 삭제합니다. `1234` 을 블로그 게시물의 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 기존 블로그 게시물을 삭제합니다. `1234` 블로그 게시물의 ID로 바꾸십시오.
 
 ### BlogPosting_DELETE_ById.sh
 

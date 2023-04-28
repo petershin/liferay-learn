@@ -9,9 +9,9 @@ REST Builder를 사용하면 빌드하려는 API를 정의할 수 있으며 REST
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [Acme Foo API](./liferay-r3b2.zip) 가 포함된 `.zip` 아카이브를 다운로드하고 압축을 풉니다.
+1. [Acme Foo API](./liferay-r3b2.zip)가 포함된 `.zip` 아카이브를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O
@@ -38,7 +38,7 @@ REST Builder를 사용하면 빌드하려는 API를 정의할 수 있으며 REST
     STARTED com.acme.headless.r3b2.impl_1.0.0
     ```
 
-1. DXP 인스턴스에 로그인하고 **전역 메뉴**( ![Global Menu icon](../../images/icon-applications-menu.png) ) &rarr; **제어판** &rarr; **Gogo Shell로 이동합니다.**
+1. DXP 인스턴스에 로그인하고 _전역 메뉴_ ( ![Global Menu icon](../../images/icon-applications-menu.png) ) &rarr; _제어판_ &rarr; _Gogo Shell로 이동합니다._
 
 1. Gogo Shell 프롬프트에서 다음 명령을 입력합니다.
 
@@ -46,7 +46,7 @@ REST Builder를 사용하면 빌드하려는 API를 정의할 수 있으며 REST
     jaxrs:check
     ```
 
-    이 페이지에는 새로 배포된 API인 `Liferay.Headless.R3B2`을 포함하여 설치된 모든 JAX-RS 번들이 나열됩니다. 이제 API가 배포되었으며 호출할 준비가 되었습니다.
+    이 페이지에는 새로 배포된 API인 `Liferay.Headless.R3B2`포함하여 설치된 모든 JAX-RS 번들이 나열됩니다. 이제 API가 배포되었으며 호출할 준비가 되었습니다.
 
     ![새로 배포된 API(Liferay.Headless.R3B2)가 명령의 결과로 나열되고 사용할 준비가 되었습니다.](./producing-and-implementing-apis-with-rest-builder/images/01.png)
 
@@ -58,13 +58,13 @@ REST Builder를 사용하면 빌드하려는 API를 정의할 수 있으며 REST
 
     쿼리는 JSON 개체에 래핑된 해당 제품의 ID, 이름 및 설명을 반환합니다.
 
-    ```json
+   ```json
    {
      "description": "Universal truth must be transcendental.",
      "id": 1,
      "name": "Truth"
    }
-    ```
+   ```
 
 축하합니다. 새 REST API를 성공적으로 배포하고 사용했습니다.
 
@@ -99,7 +99,7 @@ dependencies {
 
 ## YAML 구성
 
-첫 번째 단계는 REST Builder 구성 파일을 만드는 것입니다. `impl` 모듈의 루트 폴더에 두 개의 파일( `rest-config.yaml` 및 `rest-openapi.yaml`)을 추가합니다. 이러한 파일에는 REST Builder가 API에 대한 스캐폴딩 코드를 생성하는 데 필요한 모든 정보가 포함되어 있어야 합니다.
+첫 번째 단계는 REST Builder 구성 파일을 만드는 것입니다. `impl` 모듈의 루트 폴더에 두 개의 파일( `rest-config.yaml` 및 `rest-openapi.yaml`을 추가합니다. 이러한 파일에는 REST Builder가 API에 대한 스캐폴딩 코드를 생성하는 데 필요한 모든 정보가 포함되어 있어야 합니다.
 
 ### REST 빌더 구성 추가
 
@@ -184,7 +184,7 @@ components:
                     type: string
 ```
 
-이 예제에서 `Foo` 이라는 스키마는 이 API를 사용하기 위한 중요한 데이터를 나타냅니다. `Goo` 엔티티는 `fooId`를 사용하여 `Foo` 에 연결됩니다.  스키마에 대해 지원되는 데이터 유형 목록은 [OpenAPI 사양](https://swagger.io/docs/specification/data-models/data-types/) 을 참조하십시오.
+이 예제에서 `Foo` 이라는 스키마는 이 API를 사용하기 위한 중요한 데이터를 나타냅니다. `Goo` 엔티티는 `fooId`를 사용하여 `Foo` 에 연결됩니다.  스키마에 대해 지원되는 데이터 유형 목록은 [OpenAPI 사양](https://swagger.io/docs/specification/data-models/data-types/) 참조하십시오.
 
 스키마 정의는 리소스 파일의 스캐폴딩 및 템플릿을 포함하여 REST Builder가 생성하는 클래스의 이름을 결정합니다. 위의 스키마는 `Foo` 및 `Bar`이라고 하므로 구현 논리는 `FooResourceImpl` 및 `GooResourceImpl` 클래스에 속합니다.
 
@@ -234,15 +234,15 @@ paths:
 `get`, `post`, `put`, `patch` 및 `delete`를 포함하여 다양한 종류의 요청에 대한 경로를 추가할 수 있습니다.
 ```
 
-경로(`foo/{fooId}`)는 URL 끝에 경로 문자열을 추가하여 이 API(`getFoo`)에 도달할 수 있음을 지정합니다(`baseURI` 및 `version` 값도 포함). rest-config.yaml` 파일). 예를 들어 이 예제 API는 전체 URL인 `localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}`를 통해 액세스됩니다.
+경로(`foo/{fooId}`)는 URL 끝에 경로 문자열을 추가하여 이 API(`getFoo`)에 도달할 수 있음을 지정합니다(여기에는 `의 `baseURI` 및 `version` 값도 포함됨). rest-config.yaml` 파일). 예를 들어 이 예제 API는 전체 URL인 `localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}`를 통해 액세스됩니다.
 
-`fooId` 을 대체하는 값이 일치하는 이름의 매개변수로 사용됩니다.
+`fooId`를 대체하는 값은 이름이 일치하는 매개변수로 사용됩니다.
 
-각 경로에는 적어도 성공적인 호출에 대한 응답( `200` 응답으로 표시됨)을 정의하는 `매개변수` 블록 아래(및 `get` 블록 내) `응답` 블록이 있습니다.
+각 경로에는 성공적인 호출에 대한 응답('200' 응답으로 표시됨)을 정의하는 'parameters' 블록 아래(및 'get' 블록 내)에 'responses' 블록이 있습니다.
 
-이 `응답` 블록은 성공적인 호출이 `Product`을 반환하도록 지정합니다. 문자열 `#/components/schemas/Foo` 은 이전에 동일한 파일에서 정의된 스키마를 참조하여 REST Builder가 이 API의 반환 유형으로 `Foo` 스키마를 사용할 수 있도록 합니다.
+이 `responses` 블록은 성공적인 호출이 `Product`를 반환하도록 지정합니다. `#/components/schemas/Foo` 문자열은 이전에 동일한 파일에서 정의된 스키마를 참조하여 REST Builder가 이 API의 반환 유형으로 `Foo` 스키마를 사용할 수 있도록 합니다.
 
-마지막으로 이 경로에 대한 `태그` 정의를 `응답` 블록 아래에 추가합니다.
+마지막으로 `responses` 블록 아래에 이 경로에 대한 `tags` 정의를 추가합니다.
 
 ```yaml
 tags: ["Foo"]
@@ -271,10 +271,10 @@ GraphQL 엔드포인트 코드와 JAX-RS 애플리케이션 코드는 각각 `gr
 마지막 단계는 정의한 각 API에 대한 논리를 정의하는 것입니다. `impl` 모듈 내에서 `rest-openapi.yaml` 에서 정의한 스키마 이름(이 예에서는 `FooResourceImpl.java` 및 `GooResourceImpl.java`)을 기반으로 구현이 진행되는 Java 자원 클래스를 찾으십시오.
 
 ```{tip}
-구현을 위한 클래스의 사이트는 `rest-config.yaml` 파일에서 `apiPackagePath`에 대해 정의한 값에 따라 다릅니다. 해당 경로를 따른 다음 그 안에 있는 `internal/resource/<version>/`로 이동합니다. 이 예제와 동일한 경로를 사용한 경우 파일은 `src/main/java/com/acme/headless/r3b2/internal/resource/v1_0/`에 있습니다.
+구현을 위한 클래스의 위치는 `rest-config.yaml` 파일에서 `apiPackagePath`에 대해 정의한 값에 따라 다릅니다. 해당 경로를 따른 다음 그 안에 있는 `internal/resource/<version>/`로 이동합니다. 이 예제와 동일한 경로를 사용한 경우 파일은 `src/main/java/com/acme/headless/r3b2/internal/resource/v1_0/`에 있습니다.
 ```
 
-구현 클래스(`[SchemaName]ResourceImpl`)는 기본 클래스(`Base[SchemaName]ResourceImpl`) 옆에 있습니다. 구현 클래스를 여십시오. 이것은 단지 예일 뿐이므로 이 구현은 미리 채워진 `HashTable`을 사용하고 `getFoo` 메서드는 일치하는 `fooId`을 사용하여 `HashTable` 에서 제품을 반환합니다. 전체 구현은 프로젝트의 `FooResourceImpl.java` 을 참조하십시오.
+구현 클래스(`[SchemaName]ResourceImpl`)는 기본 클래스(`Base[SchemaName]ResourceImpl`) 옆에 있습니다. 구현 클래스를 여십시오. 이것은 단지 예일 뿐이므로 이 구현은 미리 채워진 `HashTable`사용하고 `getFoo` 메서드는 일치하는 `fooId`을 사용하여 `HashTable` 에서 제품을 반환합니다. 전체 구현은 프로젝트의 `FooResourceImpl.java` 참조하십시오.
 
 ```java
     @Override
@@ -316,6 +316,6 @@ GraphQL 엔드포인트 코드와 JAX-RS 애플리케이션 코드는 각각 `gr
 
 ## 결론
 
-축하합니다! 이제 REST Builder로 새 API를 구현하는 기본 사항을 알고 DXP에 새 API를 추가했습니다.
+축하해요! 이제 REST Builder로 새 API를 구현하는 기본 사항을 알고 DXP에 새 API를 추가했습니다.
 
 <!-- Add links to the overview and other articles as additional information when available. -->

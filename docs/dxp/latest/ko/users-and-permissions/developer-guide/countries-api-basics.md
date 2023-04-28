@@ -5,13 +5,12 @@
 Liferay의 Rest API를 사용하여 국가를 만들고 관리합니다.
 
 ## 국가 추가
-
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [국가 API 기본 사항](./liferay-g6m8.zip) 을 다운로드하고 압축을 풉니다.
+1. Download and unzip [Countries API Basics](./liferay-g6m8.zip).
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-g6m8.zip -O
@@ -29,22 +28,23 @@ Liferay의 Rest API를 사용하여 국가를 만들고 관리합니다.
 
    JSON 응답은 새 국가가 추가되었음을 보여줍니다.
 
-   ```bash
-   "a2" : "AB",
-   "a3" : "ABL",
-   "active" : true,
-   "billingAllowed" : true,
-   "groupFilterEnabled" : false,
-   "id" : 43501,
-   "name" : "Foo",
-   "number" : 1234,
-   "position" : 0.0,
-   "regions" : [ ],
-   "shippingAllowed" : true,
-   "subjectToVAT" : false,
-   "title_i18n" : { },
-   "zipRequired" : true
-
+   ```json
+   {
+     "a2" : "AB",
+     "a3" : "ABL",
+     "active" : true,
+     "billingAllowed" : true,
+     "groupFilterEnabled" : false,
+     "id" : 43501,
+     "name" : "Foo",
+     "number" : 1234,
+     "position" : 0.0,
+     "regions" : [ ],
+     "shippingAllowed" : true,
+     "subjectToVAT" : false,
+     "title_i18n" : { },
+     "zipRequired" : true
+   }
    ```
 
 1. REST 서비스는 Java 클라이언트를 사용하여 호출할 수도 있습니다. `curl` 폴더에서 `java` 폴더로 이동합니다. 다음과 같이 소스 파일을 컴파일합니다.
@@ -97,7 +97,7 @@ Liferay의 Rest API를 사용하여 국가를 만들고 관리합니다.
 
 | 라인(약칭)                                                                   | 묘사                                                        |
 |:------------------------------------------------------------------------ |:--------------------------------------------------------- |
-| `CountryResource.Builder builder = ...`                                  | `CountryResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.         |
+| `CountryResource.Builder builder = ...`                                  | `CountryResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.           |
 | `CountryResource countryResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `CountryResource` 서비스 인스턴스를 생성합니다.            |
 | `Country country = countryResource.postCountry(...);`                    | `countryResource.postCountry` 메소드를 호출하고 데이터를 post에 전달합니다. |
 
@@ -107,10 +107,10 @@ Liferay의 Rest API를 사용하여 국가를 만들고 관리합니다.
 `main` 메서드의 주석은 클래스 실행을 보여줍니다.
 ```
 
-다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `CountryResource` 메서드를 호출합니다.
+다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `CountryResource` 메소드를 호출합니다.
 
 ```{important}
-[CountryResource]참조$LIFERAY_LEARN_PORTAL_GIT_TAG$https://github.com/liferay/liferay-portal/blob/[1]/modules/apps/headless/headless-admin-address/headless-admin-address-client/src/main/java/com /liferay/headless/admin/address/client/resource/v1_0/CountryResource.java)를 참조하십시오.
+[CountryResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$(https://github.com/liferay/liferay-portal/blob/[1]/modules/apps/headless/headless-admin-address/headless-admin-address-client/src/main/java/com /liferay/headless/admin/address/client/resource/v1_0/CountryResource.java)를 참조하십시오.
 ```
 
 다음은 cURL과 Java를 사용하여 다른 `국가` REST 서비스를 호출하는 예입니다.
@@ -193,7 +193,7 @@ java -classpath .:* -DcountryId=1234 Country_GET_ById
 
 ## 국가 패치
 
-다음 cURL 및 Java 명령을 사용하여 기존 국가를 부분적으로 편집합니다. `1234` 을 국가 ID로 바꿉니다.
+다음 cURL 및 Java 명령을 사용하여 기존 국가를 부분적으로 편집합니다. `1234` 국가 ID로 바꿉니다.
 
 ### Country_PATCH_ById.sh
 
@@ -227,7 +227,7 @@ java -classpath .:* -DcountryId=1234 Country_PATCH_ById
 
 ## 나라를 넣어
 
-다음 cURL 및 Java 명령으로 기존 국가를 완전히 덮어씁니다. `1234` 을 국가 ID로 바꿉니다.
+다음 cURL 및 Java 명령으로 기존 국가를 완전히 덮어씁니다. `1234` 국가 ID로 바꿉니다.
 
 ### Country_PUT_ById.sh
 
@@ -261,7 +261,7 @@ java -classpath .:* -DcountryId=1234 Country_PUT_ById
 
 ## 국가 삭제
 
-다음 cURL 및 Java 명령을 사용하여 기존 국가를 삭제합니다. `1234` 을 국가 ID로 바꿉니다.
+다음 cURL 및 Java 명령을 사용하여 기존 국가를 삭제합니다. `1234` 국가 ID로 바꿉니다.
 
 ### Country_DELETE_ById.sh
 

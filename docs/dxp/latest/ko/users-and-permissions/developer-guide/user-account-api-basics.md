@@ -11,7 +11,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [사용자 계정 API 기본 사항](./liferay-y6q4.zip) 을 다운로드하고 압축을 풉니다.
+1. [사용자 계정 API 기본 사항](./liferay-y6q4.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6q4.zip -O
@@ -23,74 +23,79 @@
 
 1. cURL 스크립트를 사용하여 Liferay 인스턴스에 새 사용자를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. `User_POST_ToInstance.sh` 스크립트를 실행합니다.
 
-    ```bash
-    ./User_POST_ToInstance.sh
-    ```
+   ```bash
+   ./User_POST_ToInstance.sh
+   ```
 
-    JSON 응답은 새 사용자가 추가되었음을 보여줍니다.
+   JSON 응답은 새 사용자가 추가되었음을 보여줍니다.
 
-    ```bash
-    {
-        "additionalName" : "",
-        "alternateName" : "able",
-        "birthDate" : "1977-01-01T00:00:00Z",
-        "customFields" : [ ],
-        "dashboardURL" : "",
-        "dateCreated" : "2021-05-19T16:04:46Z",
-        "dateModified" : "2021-05-19T16:04:46Z",
-        "emailAddress" : "able@liferay.com",
-        "familyName" : "Foo",
-        "givenName" : "Able",
-        "id" : 39321,
-        "jobTitle" : "",
-        "keywords" : [ ],
-        "name" : "Able Foo",
-        "organizationBriefs" : [ ],
-        "profileURL" : "",
-        "roleBriefs" : [ {
-            "id" : 20113,
-            "name" : "User"
-        } ],
-        "siteBriefs" : [ {
-            "id" : 20127,
-            "name" : "Global"
-        }, {
-            "id" : 20125,
-            "name" : "Guest"
-        } ],
-        "userAccountContactInformation" : {
-            "emailAddresses" : [ ],
-            "facebook" : "",
-            "jabber" : "",
-            "postalAddresses" : [ ],
-            "skype" : "",
-            "sms" : "",
-            "telephones" : [ ],
-            "twitter" : "",
-            "webUrls" : [ ]
-        }
-    }%   
-    ```
+   ```json
+   {
+     "additionalName": "",
+     "alternateName": "able",
+     "birthDate": "1977-01-01T00:00:00Z",
+     "customFields": [],
+     "dashboardURL": "",
+     "dateCreated": "2021-05-19T16:04:46Z",
+     "dateModified": "2021-05-19T16:04:46Z",
+     "emailAddress": "able@liferay.com",
+     "familyName": "Foo",
+     "givenName": "Able",
+     "id": 39321,
+     "jobTitle": "",
+     "keywords": [],
+     "name": "Able Foo",
+     "organizationBriefs": [],
+     "profileURL": "",
+     "roleBriefs": [
+       {
+         "id": 20113,
+         "name": "User"
+       }
+     ],
+     "siteBriefs": [
+       {
+         "id": 20127,
+         "name": "Global"
+       },
+       {
+         "id": 20125,
+         "name": "Guest"
+       }
+     ],
+     "userAccountContactInformation": {
+       "emailAddresses": [],
+       "facebook": "",
+       "jabber": "",
+       "postalAddresses": [],
+       "skype": "",
+       "sms": "",
+       "telephones": [],
+       "twitter": "",
+       "webUrls": []
+     }
+   }%
+   ```
 
-    제어판에서 새로 추가된 사용자를 확인합니다. 나중 명령을 위해 사용자의 `id` 번호를 기록하십시오.
+   제어판에서 새로 추가된 사용자를 확인합니다. 나중 명령을 위해 사용자의 `id` 번호를 기록하십시오.
 
-    ![제어판에서 추가된 사용자를 확인하십시오.](./user-account-api-basics/images/01.png)
+   ![제어판에서 추가된 사용자를 확인하십시오.](./user-account-api-basics/images/01.png)
 
 1. REST 서비스는 Java 클래스로 호출할 수도 있습니다. `curl` 폴더에서 `java` 폴더로 이동합니다. 다음 명령을 사용하여 소스 파일을 컴파일합니다.
 
-    ```bash
-    javac -classpath .:* *.java
-    ```
+   ```bash
+   javac -classpath .:* *.java
+   ```
 
 1. 다음 명령을 사용하여 `User_POST_ToInstance` 클래스를 실행합니다.
 
-    ```bash
-    java -classpath .:* User_POST_ToInstance
-    ```
+   ```bash
+   java -classpath .:* User_POST_ToInstance
+   ```
 
-    제어판에서 다른 사용자가 추가되었는지 확인하십시오.
+   제어판에서 다른 사용자가 추가되었는지 확인하십시오.
 
-    ![제어판에서 다른 사용자가 추가되었습니다.](user-account-api-basics/images/02.png)
+   ![제어판에서 다른 사용자가 추가되었습니다.](user-account-api-basics/images/02.png)
 
 cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시오.
 
@@ -145,7 +150,7 @@ cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시�
 다른 예제 Java 클래스는 이것과 유사하지만 다른 `UserAccountResource` 메소드를 호출합니다.
 
 ```{important}
-[UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com 참조) /liferay/headless/admin/user/client/resource/v1_0/UserAccountResource.java)를 참조하십시오.
+[UserAccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserAccountResource.java)를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 사용자 REST 서비스를 호출하는 예입니다.

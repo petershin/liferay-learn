@@ -7,9 +7,9 @@ Liferay의 REST API는 Liferay의 탐색 메뉴에 대한 서비스를 제공합
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [Categories and Vocabulary API Basics](./liferay-p7s4.zip) 을 다운로드하고 압축을 풉니다.
+1. [Categories and Vocabulary API Basics](./liferay-p7s4.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/site-building/site-navigation/developer-guide/liferay-p7s4.zip -O
@@ -19,35 +19,36 @@ Liferay의 REST API는 Liferay의 탐색 메뉴에 대한 서비스를 제공합
    unzip liferay-p7s4.zip
    ```
 
-2. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 아래의 다른 서비스 호출에서 이것을 사용합니다.
+2. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 아래의 다른 서비스 호출에서 이것을 사용합니다.
 
 3. cURL 스크립트를 사용하여 사이트에 새 탐색 메뉴를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `NavigationMenu_POST_ToSite.sh` 스크립트를 실행합니다.
 
-    ```bash
-    ./NavigationMenu_POST_ToSite.sh 1234
-    ```
+   ```bash
+   ./NavigationMenu_POST_ToSite.sh 1234
+   ```
 
-    JSON 응답은 새로운 탐색 메뉴가 추가되었음을 보여줍니다.
+   JSON 응답은 새로운 탐색 메뉴가 추가되었음을 보여줍니다.
 
-    ```bash
-    "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20129,
-    "name" : "Test Test"
-    },
-    "dateCreated" : "2021-09-09T21:41:31Z",
-    "dateModified" : "2021-09-09T21:41:31Z",
-    "id" : 40131,
-    "name" : "Foo",
-    "navigationMenuItems" : [ ],
-    "siteId" : 20125
+   ```json
+   {
+     "creator" : {
+       "additionalName" : "",
+       "contentType" : "UserAccount",
+       "familyName" : "Test",
+       "givenName" : "Test",
+       "id" : 20129,
+       "name" : "Test Test"
+     },
+     "dateCreated" : "2021-09-09T21:41:31Z",
+     "dateModified" : "2021-09-09T21:41:31Z",
+     "id" : 40131,
+     "name" : "Foo",
+     "navigationMenuItems" : [ ],
+     "siteId" : 20125
+   }
+   ```
 
-    ```
-
-4. **관리 메뉴** &rarr; **사이트 빌더** &rarr; **탐색 메뉴** 로 이동하여 탐색 메뉴 애플리케이션으로 이동합니다. 새로운 내비게이션 메뉴가 추가된 것을 확인하세요.
+4. *관리 메뉴* &rarr; *사이트 빌더* &rarr; *탐색 메뉴*로 이동하여 탐색 메뉴 애플리케이션으로 이동합니다. 새로운 내비게이션 메뉴가 추가된 것을 확인하세요.
 
     ![새로운 탐색 메뉴가 추가되었는지 확인하십시오.](./navigation-menu-api-basics/images/01.png)
 
@@ -101,7 +102,7 @@ Liferay의 REST API는 Liferay의 탐색 메뉴에 대한 서비스를 제공합
 
 | 라인(약칭)                                                                                 | 묘사                                                                         |
 |:-------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------- |
-| `NavigationMenuResource.Builder builder = ...`                                         | `NavigationMenuResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.                   |
+| `NavigationMenuResource.Builder builder = ...`                                         | `NavigationMenuResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.                     |
 | `NavigationMenuResource navigationMenuResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `NavigationMenuResource` 서비스 인스턴스를 생성합니다.                      |
 | `NavigationMenu navigationMenu = navigationMenuResource.postSiteNavigationMenu(...);`  | `navigationMenuResource.postSiteNavigationMenu` 메서드를 호출하고 데이터를 게시물에 전달합니다. |
 
@@ -114,14 +115,14 @@ Liferay의 REST API는 Liferay의 탐색 메뉴에 대한 서비스를 제공합
 다른 예제 Java 클래스는 이 클래스와 비슷하지만 다른 `NavigationMenuResource` 메서드를 호출합니다.
 
 ```{important}
-[NavigationMenuResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/delivery/client/resource/v1_0/NavigationMenuResource.java)를 참조하십시오.
+[NavigationMenuResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/NavigationMenuResource.java)를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 `NavigationMenu` REST 서비스를 호출하는 예입니다.
 
 ## 사이트에서 탐색 메뉴 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 사이트의 탐색 메뉴를 나열할 수 있습니다. 위와 같이 `1234` 을 사이트 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 사이트의 탐색 메뉴를 나열할 수 있습니다. 위와 같이 `1234` 사이트 ID로 바꿉니다.
 
 ### NavigationMenus_GET_FromSite.sh
 
@@ -153,11 +154,11 @@ java -classpath .:* -DsiteId=1234 NavigationMenus_GET_FromSite
    :lines: 11-25
 ```
 
-사이트의 `NavigationMenu` 개체는 JSON으로 나열됩니다.
+사이트의 `NavigationMenu` 객체는 JSON으로 나열됩니다.
 
 ## 탐색 메뉴 가져오기
 
-다음 cURL 또는 Java 명령을 사용하여 특정 탐색 메뉴를 가져옵니다. `1234` 을 탐색 메뉴의 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 사용하여 특정 탐색 메뉴를 가져옵니다. `1234` 탐색 메뉴의 ID로 바꿉니다.
 
 ```{tip}
 ``NavigationMenu`` ID를 얻으려면 ``NavigationMenus_GET_FromSite.[java|sh]``를 사용하십시오.
@@ -197,7 +198,7 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_GET_ById
 
 ## 탐색 메뉴 넣기
 
-다음 cURL 및 Java 명령을 사용하여 기존 탐색 메뉴를 완전히 덮어씁니다. `1234` 을 탐색 메뉴의 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 기존 탐색 메뉴를 완전히 덮어씁니다. `1234` 탐색 메뉴의 ID로 바꾸십시오.
 
 ### NavigationMenu_PUT_ById.sh
 
@@ -231,7 +232,7 @@ java -classpath .:* -DnavigationMenuId=1234 NavigationMenu_PUT_ById
 
 ## 탐색 메뉴 삭제
 
-다음 cURL 및 Java 명령을 사용하여 기존 탐색 메뉴를 삭제합니다. `1234` 을 탐색 메뉴의 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 기존 탐색 메뉴를 삭제합니다. `1234` 탐색 메뉴의 ID로 바꾸십시오.
 
 ### NavigationMenu_DELETE_ById.sh
 

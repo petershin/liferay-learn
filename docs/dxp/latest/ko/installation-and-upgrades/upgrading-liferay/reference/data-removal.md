@@ -2,21 +2,29 @@
 
 {bdg-secondary}`가능 7.4+`
 
-현재 Liferay 기능에는 불필요한 데이터가 있을 수 있습니다. 데이터 제거 도구는 이 데이터를 제거합니다.
+데이터 제거 도구를 사용하여 만료된 저널 기사 및 출판물 미리 보기와 같은 불필요한 응용 프로그램 데이터를 지웁니다.
 
-사용하지 않는 데이터를 제거하는 방법은 다음과 같습니다.
+데이터를 제거하려면
 
-1. **제어판** 에서 **시스템 설정** &rarr; **업그레이드**(**플랫폼** 범주) &rarr; **데이터 제거** 로 이동합니다. 데이터 제거 화면이 나타납니다.
+1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *시스템 설정* &rarr; *업그레이드* &rarr; *데이터 제거*으로 이동합니다.
 
-    ![다음은 데이터 제거 화면입니다.](./data-removal/images/01.png)
+   ![데이터 제거 탭으로 이동합니다.](./data-removal/images/01.png)
 
-1. 제거할 데이터 유형을 선택하고 **저장** 을 클릭합니다.
+1. 제거할 데이터 선택:
 
-사용되지 않는 데이터가 제거됩니다.
+   * 만료된 저널 기사
 
-설정을 [구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)에 저장하려면 **작업** 메뉴를 클릭하고 **내보내기** 를 선택하십시오.
+   * 문서 라이브러리 미리 보기 변경 내용 추적 콘텐츠 데이터 저장(간행물)
 
-사용하지 않는 데이터를 제거하려면 서버 시작 시 이 `com.liferay.data.cleanup.internal.configuration.DataRemovalConfiguration.config` 구성 파일을 사용하십시오. 파일에서 `removeExpiredJournalArticles` 키를 `true` 으로 설정합니다. 데이터 제거 후 `osgi/configs` 폴더에서 구성 파일을 제거하여 후속 서버 시작 시 파일이 실행되지 않도록 합니다.
+   * 게시된 변경 내용 추적 저장소 콘텐츠 데이터(간행물)
+
+   ```{important}
+   7.3 U10 또는 7.4 U37 이전의 Liferay 버전을 사용하는 경우 게시된 변경 내용 추적 저장소 콘텐츠 데이터만 제거하십시오. 작업을 실행한 후 불필요한 데이터가 더 이상 누적되지 않도록 업그레이드하십시오.
+   ```
+
+1. *저장*클릭합니다.
+
+Liferay는 선택한 데이터를 즉시 제거합니다.
 
 ## 추가 정보
 

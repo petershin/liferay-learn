@@ -1,6 +1,6 @@
 # 액션 실행자 만들기
 
-워크플로 노드는 [Groovy 스크립트](./using-the-script-engine-in-workflow.md)를 통해 사용자 지정 논리를 실행하는 `<action>` 요소를 포함할 수 있습니다.
+워크플로 노드는 [Groovy 스크립트](./using-the-script-engine-in-workflow.md)통해 사용자 지정 논리를 실행하는 `<action>` 요소를 포함할 수 있습니다.
 
 ```xml
 <action>
@@ -30,7 +30,7 @@ Groovy 작업 논리를 워크플로 정의 `<script>` 요소에 직접 작성�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. Acme E5C9 구현 프로젝트를 다운로드하고 압축을 풉니다.
 
@@ -59,30 +59,30 @@ Groovy 작업 논리를 워크플로 정의 `<script>` 요소에 직접 작성�
    ```
 
 ```{note}
-편의를 위해 'ActionExecutor'의 'activate' 메서드는 E5C9 단일 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) 를 참조하십시오.
+편의를 위해 'ActionExecutor'의 'activate' 메서드는 E5C9 단일 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition)를 참조하세요.
 ```
 
 ## 액션 실행자 테스트
 
 Acme E5C9 Action Executor를 사용하려면 블로그 항목과 함께 사용할 작업 흐름 정의를 설정하고 관리 사용자로 새 블로그 항목을 추가하십시오.
 
-1. 글로벌 메뉴의 애플리케이션 탭에서 워크플로 &rarr; 프로세스 빌더로 이동합니다.
+1. 전역 메뉴의 애플리케이션 탭에서 워크플로 &rarr; 프로세스 빌더로 이동합니다.
 
 1. 구성 탭에서 블로그 항목 자산 유형에 E5C9 단일 승인자 정의를 지정하십시오.
 
-1. **저장** 을 클릭합니다.
+1. _저장_클릭합니다.
 
 1. 기본 관리 사용자 테스트 테스트를 사용하여 사이트 메뉴 &rarr; 콘텐츠 & 데이터 &rarr; 블로그를 엽니다.
 
-1. **추가** 버튼(![Add](../../../images/icon-add.png))을 클릭합니다.
+1. _추가_ 버튼(![Add](../../../images/icon-add.png))을 클릭합니다.
 
-1. Title 및 Content 필드에 내용을 입력한 다음 **Submit for Workflow** 을 클릭합니다.
+1. 제목 및 내용 필드에 내용을 입력한 다음 _Submit for Workflow_을 클릭합니다.
 
-1. 기본 블로그 보기로 돌아가 항목이 표시되고 상태가 **Pending** 로 표시되는지 확인합니다.
+1. 기본 블로그 보기로 돌아가 항목이 표시되고 상태가 _Pending_로 표시되는지 확인합니다.
 
    워크플로우 프레임워크는 상태를 보류 중으로 설정합니다. 이 시점부터 작업 실행기의 논리를 사용하여 상태 업데이트가 이루어집니다.
 
-1. [워크플로우에서 블로그 항목 승인](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task) .
+1. [워크플로우에서 블로그 항목 승인](../using-workflows/reviewing-assets.md#approving-or-rejecting-a-task).
 
    ![이 승인 또는 거부는 E5C9 Action Executor에 의해 수행됩니다.](./creating-an-action-executor/images/01.png)
 
@@ -112,7 +112,7 @@ Acme E5C9 구현 프로젝트는 단일 승인자 정의 워크플로우 스크�
 
 `실행` 메서드는 아무 것도 반환하지 않습니다. 대신 메서드 내에서 논리가 임의로 실행되고 XML 정의에 따라 워크플로 처리가 계속됩니다. 작업 실행 내에서 워크플로 상태가 업데이트되는 경우가 많습니다.
 
-`execute` 메소드는 두 개의 매개변수, `KaleoAction` 및 `ExecutionContext`를 사용합니다. 워크플로 엔진은 워크플로 프로세스에서 작업 실행기 호출을 담당하므로 코드는 이러한 개체의 인스턴스화 및 구성을 담당하지 않습니다. 그러나 그들로부터 유용한 정보를 얻을 수 있습니다. 예를 들어, E5C9 Action Executor는 `ExecutionContext`에서 `개의 workflowContext` (유형 `Map`의)을 검색합니다.
+`execute` 메소드는 두 개의 매개변수, `KaleoAction` 및 `ExecutionContext`사용합니다. 워크플로 엔진은 워크플로 프로세스에서 작업 실행기 호출을 담당하므로 코드는 이러한 개체의 인스턴스화 및 구성을 담당하지 않습니다. 그러나 이들로부터 유용한 정보를 얻을 수 있습니다. 예를 들어, E5C9 Action Executor는 `ExecutionContext`에서 `workflowContext` (유형 `Map`의)을 검색합니다.
 
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 3
@@ -120,7 +120,7 @@ Acme E5C9 구현 프로젝트는 단일 승인자 정의 워크플로우 스크�
    :lines: 43-44
 ```
 
-`workflowContext` 은 가장 최근에 실행된 전환을 가져오는 데 사용되므로 조건 논리가 워크플로의 자산에 대해 설정할 상태를 결정할 수 있습니다.
+`workflowContext` 가장 최근에 실행된 전환을 가져오는 데 사용되므로 조건 논리가 워크플로의 자산에 대해 설정할 상태를 결정할 수 있습니다.
 
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/java/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/E5C9ActionExecutor.java
    :dedent: 3
@@ -130,7 +130,7 @@ Acme E5C9 구현 프로젝트는 단일 승인자 정의 워크플로우 스크�
 
 ### 워크플로 정의에서 ActionExecutor 호출
 
-Acme E5C9 구현 프로젝트에서 자동 로드되는 E5C9 단일 승인자 워크플로우 정의는 Liferay와 함께 제공되는 단일 승인자 정의와 거의 동일합니다. 차이점은 전적으로 상태 및 작업 노드의 스크립트 요소에 있습니다. 모든 논리가 작업 실행자 클래스에 아웃소싱되기 때문에 E5C9 단일 승인자 정의에서 크게 단순화되었습니다. 두 정의 작업(거부 및 승인)에는 동일한 스크립트 태그가 있습니다.
+Acme E5C9 구현 프로젝트에서 자동 로드되는 E5C9 단일 승인자 워크플로우 정의는 Liferay와 함께 제공되는 단일 승인자 정의와 거의 동일합니다. 차이점은 전적으로 상태 및 작업 노드의 스크립트 요소에 있습니다. 모든 논리가 작업 실행자 클래스에 아웃소싱되기 때문에 E5C9 단일 승인자 정의에서 크게 단순화됩니다. 두 정의 작업(거부 및 승인)에는 동일한 스크립트 태그가 있습니다.
 
 ```{literalinclude} ./creating-an-action-executor/resources/liferay-e5c9.zip/e5c9-impl/src/main/resources/com/acme/e5c9/internal/workflow/kaleo/runtime/scripting/internal/action/dependencies/e5c9-workflow-definition.xml
    :dedent: 4

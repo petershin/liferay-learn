@@ -11,7 +11,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [계정 API 기본 사항](./liferay-t5p9.zip) 을 다운로드하고 압축을 풉니다.
+1. [계정 API 기본 사항](./liferay-t5p9.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -23,27 +23,28 @@
 
 1. cURL 스크립트를 사용하여 인스턴스에 새 계정을 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. `Account_POST_ToInstance.sh` 스크립트를 실행합니다.
 
-    ```bash
-    ./Account_POST_ToInstance.sh
-    ```
+   ```bash
+   ./Account_POST_ToInstance.sh
+   ```
 
-    JSON 응답은 새 계정이 추가되었음을 보여줍니다.
+   JSON 응답은 새 계정이 추가되었음을 보여줍니다.
 
-    ```bash
-    "description" : "Foo",
-    "domains" : [ ],
-    "externalReferenceCode" : "",
-    "id" : 39302,
-    "name" : "Able",
-    "numberOfUsers" : 0,
-    "organizationIds" : [ ],
-    "parentAccountId" : 0,
-    "status" : 0,
-    "type" : "business"
+   ```json
+   {
+     "description" : "Foo",
+     "domains" : [ ],
+     "externalReferenceCode" : "",
+     "id" : 39302,
+     "name" : "Able",
+     "numberOfUsers" : 0,
+     "organizationIds" : [ ],
+     "parentAccountId" : 0,
+     "status" : 0,
+     "type" : "business"
+   }
+   ```
 
-    ```
-
-1. **글로벌 메뉴** &rarr; **애플리케이션** &rarr; **계정** 으로 이동합니다. 새 계정이 추가되었는지 확인합니다.
+1. *글로벌 메뉴* &rarr; *애플리케이션* &rarr; *계정*으로 이동합니다. 새 계정이 추가되었는지 확인합니다.
 
    ![새 계정이 추가되었는지 확인합니다.](./accounts-api-basics/images/01.png)
 
@@ -110,7 +111,7 @@
 다른 예제 Java 클래스는 이 클래스와 유사하지만 `AccountResource` 메소드가 다릅니다.
 
 ```{important}
-서비스에 대한 자세한 내용은 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) 를 참조하세요.
+[AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)를 참조하십시오.
 ```
 
 다음은 cURL과 Java를 사용하여 다른 `Account` REST 서비스를 호출하는 예입니다.

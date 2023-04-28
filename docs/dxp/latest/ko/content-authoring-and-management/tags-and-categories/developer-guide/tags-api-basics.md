@@ -7,9 +7,9 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르세요:
 
-1. [Tags API 기본 사항](./liferay-r7u9.zip) 을 다운로드하고 압축을 풉니다.
+1. [태그 API 기본 사항](./liferay-r7u9.zip)을 다운로드하여 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
@@ -19,35 +19,37 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
    unzip liferay-r7u9.zip
    ```
 
-1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 아래의 다른 서비스 호출에서 이것을 사용합니다.
+1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 아래의 다른 서비스 호출에서 이것을 사용합니다.
 
 1. cURL 스크립트를 사용하여 사이트에 새 태그를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `Keyword_POST_ToSite.sh` 스크립트를 실행합니다.
 
-    ```bash
-    ./Keyword_POST_ToSite.sh 1234
-    ```
+   ```bash
+   ./Keyword_POST_ToSite.sh 1234
+   ```
 
-    JSON 응답은 새 태그가 추가되었음을 보여줍니다.
+   JSON 응답은 새 태그가 추가되었음을 보여줍니다.
 
-    ```bash
-   "creator" : {
-    "additionalName" : "",
-    "contentType" : "UserAccount",
-    "familyName" : "Test",
-    "givenName" : "Test",
-    "id" : 20129,
-    "name" : "Test Test",
-    "profileURL" : "/web/test"
-   },
-   "dateCreated" : "2021-09-09T21:15:46Z",
-   "dateModified" : "2021-09-09T21:15:46Z",
-   "id" : 40130,
-   "keywordUsageCount" : 0,
-   "name" : "foo",
-   "siteId" : 20125
-    ```
+   ```json
+   {
+     "creator" : {
+       "additionalName" : "",
+       "contentType" : "UserAccount",
+       "familyName" : "Test",
+       "givenName" : "Test",
+       "id" : 20129,
+       "name" : "Test Test",
+       "profileURL" : "/web/test"
+     },
+     "dateCreated" : "2021-09-09T21:15:46Z",
+     "dateModified" : "2021-09-09T21:15:46Z",
+     "id" : 40130,
+     "keywordUsageCount" : 0,
+     "name" : "foo",
+     "siteId" : 20125
+   }
+   ```
 
-1. **관리 메뉴** &rarr; **분류** &rarr; **태그** 로 이동하여 태그 애플리케이션으로 이동합니다. 새 태그가 추가되었는지 확인합니다.
+1. *관리 메뉴* &rarr; *분류* &rarr; *태그*로 이동하여 태그 애플리케이션으로 이동합니다. 새 태그가 추가되었는지 확인합니다.
 
     ![새 태그가 추가되었는지 확인합니다.](./tags-api-basics/images/01.png)
 
@@ -101,7 +103,7 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 
 | 라인(약칭)                                                                   | 묘사                                                           |
 |:------------------------------------------------------------------------ |:------------------------------------------------------------ |
-| `KeywordResource.Builder builder = ...`                                  | `KeywordResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.            |
+| `KeywordResource.Builder builder = ...`                                  | `KeywordResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.              |
 | `KeywordResource keywordResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `KeywordResource` 서비스 인스턴스를 생성합니다.               |
 | `Keyword keyword = keywordResource.postSiteKeyword(...);`                | `keywordResource.postSiteKeyword` 메소드를 호출하고 데이터를 게시물에 전달합니다. |
 
@@ -121,7 +123,7 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 
 ## 사이트에서 키워드 게시물 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 사이트의 태그를 나열할 수 있습니다. 위와 같이 `1234` 을 사이트 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 사이트의 태그를 나열할 수 있습니다. 위와 같이 `1234` 사이트 ID로 바꿉니다.
 
 ### Keywords_GET_FromSite.sh
 
@@ -157,7 +159,7 @@ java -classpath .:* -DsiteId=1234 Keywords_GET_FromSite
 
 ## 키워드 얻기
 
-다음 cURL 또는 Java 명령을 사용하여 특정 태그를 가져옵니다. `1234` 을 태그의 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 사용하여 특정 태그를 가져옵니다. `1234` 태그의 ID로 바꿉니다.
 
 ```{tip}
 ``Keywords_GET_FromSite.[java|sh]``를 사용하여 사이트 ``Keyword`` ID를 가져옵니다.
@@ -197,7 +199,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_GET_ById
 
 ## 키워드 넣기
 
-다음 cURL 및 Java 명령으로 기존 태그를 완전히 덮어씁니다. `1234` 을 태그의 ID로 바꾸십시오.
+다음 cURL 및 Java 명령으로 기존 태그를 완전히 덮어씁니다. `1234` 태그의 ID로 바꾸십시오.
 
 ### Keyword_PUT_ById.sh
 
@@ -231,7 +233,7 @@ java -classpath .:* -DkeywordId=1234 Keyword_PUT_ById
 
 ## 키워드 삭제
 
-다음 cURL 및 Java 명령을 사용하여 기존 태그를 삭제합니다. `1234` 을 태그의 ID로 바꾸십시오.
+다음 cURL 및 Java 명령을 사용하여 기존 태그를 삭제합니다. `1234` 태그의 ID로 바꾸십시오.
 
 ### Keyword_DELETE_ById.sh
 
@@ -263,4 +265,4 @@ java -classpath .:* -DkeywordId=1234 Keyword_DELETE_ById
    :lines: 8-17
 ```
 
-[API 탐색기](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 은 `키워드` 서비스 및 스키마를 모두 나열하고 각 서비스를 시험해 볼 수 있는 인터페이스가 있습니다.
+[API 탐색기](../../../headless-delivery/consuming-apis/consuming-rest-services.md) `키워드` 서비스 및 스키마를 모두 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.

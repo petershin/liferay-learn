@@ -5,13 +5,12 @@
 Liferay의 REST API를 사용하여 지역을 만들고 관리합니다.
 
 ## 지역 추가
-
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [Regions API 기본 사항](./liferay-r2p3.zip) 을 다운로드하고 압축을 풉니다.
+1. [Regions API 기본 사항](./liferay-r2p3.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-r2p3.zip -O
@@ -27,19 +26,20 @@ Liferay의 REST API를 사용하여 지역을 만들고 관리합니다.
    ./Region_POST_ToCountry.sh 1234
    ```
 
-   `1234` 을 국가 ID로 바꿉니다. [Get Countries from Instance](./countries-api-basics.md#get-countries-from-instance) 을 사용하여 ID 목록을 가져옵니다.
+   `1234` 국가 ID로 바꿉니다. [Get Countries from Instance](./countries-api-basics.md#get-countries-from-instance) 을 사용하여 ID 목록을 가져옵니다.
 
    JSON 응답은 새 지역이 추가되었음을 보여줍니다.
 
-   ```bash
-   "active" : true,
-   "countryId" : 43501,
-   "id" : 43503,
-   "name" : "Foo",
-   "position" : 0.0,
-   "regionCode" : "ABL",
-   "title_i18n" : { }
-
+   ```json
+   {
+     "active" : true,
+     "countryId" : 43501,
+     "id" : 43503,
+     "name" : "Foo",
+     "position" : 0.0,
+     "regionCode" : "ABL",
+     "title_i18n" : { }
+   }
    ```
 
 1. REST 서비스는 Java 클라이언트를 사용하여 호출할 수도 있습니다. `curl` 폴더에서 `java` 폴더로 이동합니다. 소스 파일을 컴파일합니다.
@@ -92,7 +92,7 @@ Liferay의 REST API를 사용하여 지역을 만들고 관리합니다.
 
 | 라인(약칭)                                                                 | 묘사                                                     |
 |:---------------------------------------------------------------------- |:------------------------------------------------------ |
-| `RegionResource.Builder builder = ...`                                 | `RegionResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.       |
+| `RegionResource.Builder builder = ...`                                 | `RegionResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.         |
 | `RegionResource regionResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `RegionResource` 서비스 인스턴스를 생성합니다.          |
 | `Region region = regionResource.postRegion(...);`                      | `regionResource.postRegion` 메서드를 호출하고 데이터를 게시물에 전달합니다. |
 
@@ -105,7 +105,7 @@ Liferay의 REST API를 사용하여 지역을 만들고 관리합니다.
 다른 예제 Java 클래스는 이 클래스와 유사하지만 서로 다른 `RegionResource` 메서드를 호출합니다.
 
 ```{important}
-[RegionResource]참조$LIFERAY_LEARN_PORTAL_GIT_TAG$https://github.com/liferay/liferay-portal/blob/[1]/modules/apps/headless/headless-admin-address/headless-admin-address-client/src/main/java/com /liferay/headless/admin/address/client/resource/v1_0/RegionResource.java)를 참조하십시오.
+[RegionResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$(https://github.com/liferay/liferay-portal/blob/[1]/modules/apps/headless/headless-admin-address/headless-admin-address-client/src/main/java/com /liferay/headless/admin/address/client/resource/v1_0/RegionResource.java)를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 `개 지역` REST 서비스를 호출하는 예입니다.
@@ -144,7 +144,7 @@ java -classpath .:* Regions_GET_FromInstance
    :lines: 11-22
 ```
 
-인스턴스의 `지역` 개체가 JSON에 나타납니다.
+인스턴스의 `지역` 객체가 JSON에 나타납니다.
 
 ## 지역 가져오기
 
@@ -188,7 +188,7 @@ java -classpath .:* -DregionId=1234 Region_GET_ById
 
 ## 지역 패치
 
-다음 cURL 및 Java 명령을 사용하여 기존 지역을 부분적으로 편집합니다. `1234` 을 해당 지역의 ID로 바꿉니다.
+다음 cURL 및 Java 명령을 사용하여 기존 지역을 부분적으로 편집합니다. `1234` 해당 지역의 ID로 바꿉니다.
 
 ### Region_PATCH_ById.sh
 
@@ -222,7 +222,7 @@ java -classpath .:* -DregionId=1234 Region_PATCH_ById
 
 ## 지역 지정
 
-다음 cURL 및 Java 명령으로 기존 영역을 완전히 덮어씁니다. `1234` 을 해당 지역의 ID로 바꿉니다.
+다음 cURL 및 Java 명령으로 기존 영역을 완전히 덮어씁니다. `1234` 해당 지역의 ID로 바꿉니다.
 
 ### Region_PUT_ById.sh
 
@@ -256,7 +256,7 @@ java -classpath .:* -DregionId=1234 Region_PUT_ById
 
 ## 지역 삭제
 
-다음 cURL 및 Java 명령을 사용하여 기존 영역을 삭제합니다. `1234` 을 해당 지역의 ID로 바꿉니다.
+다음 cURL 및 Java 명령을 사용하여 기존 영역을 삭제합니다. `1234` 해당 지역의 ID로 바꿉니다.
 
 ### Region_DELETE_ById.sh
 
@@ -288,4 +288,4 @@ java -classpath .:* -DregionId=1234 Region_DELETE_ById
    :lines: 8-17
 ```
 
-[API 탐색기](../../headless-delivery/consuming-apis/consuming-rest-services.md) 은 `지역` 서비스 및 스키마를 모두 표시하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
+[API 탐색기](../../headless-delivery/consuming-apis/consuming-rest-services.md) `개 지역` 서비스 및 스키마를 모두 표시하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.

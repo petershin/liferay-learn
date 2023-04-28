@@ -2,6 +2,8 @@
 toc:
   - ./tutorials/using-a-javascript-client-extension.md
   - ./tutorials/using-a-css-client-extension.md
+  - ./tutorials/using-a-theme-favicon-client-extension.md
+  - ./tutorials/using-a-theme-spritemap-client-extension.md
   - ./tutorials/creating-a-basic-custom-element.md
   - ./tutorials/using-routes-with-custom-elements.md
 ---
@@ -13,6 +15,7 @@ toc:
 tutorials/using-a-javascript-client-extension.md
 tutorials/using-a-css-client-extension.md
 tutorials/using-a-theme-favicon-client-extension.md
+tutorials/using-a-theme-spritemap-client-extension.md
 tutorials/creating-a-basic-custom-element.md
 tutorials/using-routes-with-custom-elements.md
 ```
@@ -32,6 +35,10 @@ tutorials/using-routes-with-custom-elements.md
 
 :::{grid-item-card} 테마 Favicon 클라이언트 확장 사용
 :link: ./tutorials/using-a-theme-favicon-client-extension.md
+:::
+
+:::{grid-item-card} 테마 스프라이트맵 클라이언트 확장 사용
+:link: ./tutorials/using-a-theme-spritemap-client-extension.md
 :::
 
 :::{grid-item-card} 기본 맞춤 요소 만들기

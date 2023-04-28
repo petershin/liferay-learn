@@ -1,15 +1,15 @@
-# 조직 API 기본 사항
+# 조직 API 기본사항
 
-애플리케이션 메뉴에서 [조직 생성 및 관리](../organizations/creating-and-managing-organizations.md) 를 할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 조직을 관리하려면 이러한 서비스를 호출하십시오.
+애플리케이션 메뉴에서 [조직 생성 및 관리](../organizations/creating-and-managing-organizations.md) 할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 조직을 관리하려면 이러한 서비스를 호출하십시오.
 
 ## 조직 추가
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [Organizations API 기본 사항](./liferay-w2h3.zip) 을 다운로드하고 압축을 풉니다.
+1. [Organizations API 기본 사항](./liferay-w2h3.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O
@@ -27,28 +27,30 @@
 
    JSON 응답은 새 조직이 추가되었음을 보여줍니다.
 
-   ```bash
-   "comment" : "",
-   "customFields" : [ ],
-   "dateCreated" : "2022-05-19T17:38:19Z",
-   "dateModified" : "2022-05-19T17:38:19Z",
-   "externalReferenceCode" : "",
-   "id" : "40922",
-   "keywords" : [ ],
-   "location" : { },
-   "name" : "Able",
-   "numberOfAccounts" : 0,
-   "numberOfOrganizations" : 0,
-   "numberOfUsers" : 0,
-   "organizationContactInformation" : {
-      "emailAddresses" : [ ],
-      "postalAddresses" : [ ],
-      "telephones" : [ ],
-      "webUrls" : [ ]
-
+   ```json
+   {
+     "comment": "",
+     "customFields": [],
+     "dateCreated": "2022-05-19T17:38:19Z",
+     "dateModified": "2022-05-19T17:38:19Z",
+     "externalReferenceCode": "",
+     "id": "40922",
+     "keywords": [],
+     "location": {},
+     "name": "Able",
+     "numberOfAccounts": 0,
+     "numberOfOrganizations": 0,
+     "numberOfUsers": 0,
+     "organizationContactInformation": {
+       "emailAddresses": [],
+       "postalAddresses": [],
+       "telephones": [],
+       "webUrls": []
+     }
+   }
    ```
 
-1. **전역 메뉴** &rarr; **제어판** &rarr; **사용자 및 조직** 로 이동합니다. **조직** 탭을 클릭합니다. 새 조직이 추가되었는지 확인합니다.
+1. *전역 메뉴* &rarr; *제어판* &rarr; *사용자 및 조직*로 이동합니다. *조직* 탭을 클릭합니다. 새 조직이 추가되었는지 확인합니다.
 
    ![새 조직이 추가되었는지 확인합니다.](./organizations-api-basics/images/01.png)
 
@@ -102,7 +104,7 @@
 
 | 라인(약칭)                                                                             | 묘사                                                                |
 |:---------------------------------------------------------------------------------- |:----------------------------------------------------------------- |
-| `OrganizationResource.Builder builder = ...`                                       | `OrganizationResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.            |
+| `OrganizationResource.Builder builder = ...`                                       | `OrganizationResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.              |
 | `OrganizationResource organizationResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `OrganizationResource` 서비스 인스턴스를 생성합니다.               |
 | `Organization organization = organizationResource.postOrganization(...);`          | `organizationResource.postOrganization` 메서드를 호출하고 데이터를 게시에 전달합니다. |
 
@@ -115,10 +117,10 @@
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `OrganizationResource` 메서드를 호출합니다.
 
 ```{important}
-[OrganizationResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin 참조) /user/client/resource/v1_0/OrganizationResource.java)를 참조하십시오.
+[OrganizationResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/OrganizationResource.java)를 참조하십시오.
 ```
 
-다음은 cURL 및 Java를 사용하여 다른 `개 조직` REST 서비스를 호출하는 예입니다.
+다음은 cURL 및 Java를 사용하여 다른 `조직` REST 서비스를 호출하는 예입니다.
 
 ## 인스턴스에서 조직 가져오기
 
@@ -198,7 +200,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
 
 ## 조직 패치
 
-다음 cURL 및 Java 명령을 사용하여 기존 조직을 부분적으로 편집합니다. `1234` 을 조직의 ID로 바꿉니다.
+다음 cURL 및 Java 명령을 사용하여 기존 조직을 부분적으로 편집합니다. `1234` 조직의 ID로 바꿉니다.
 
 ### Organization_PATCH_ById.sh
 
@@ -232,7 +234,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
 
 ## 조직 배치
 
-다음 cURL 및 Java 명령으로 기존 조직을 완전히 덮어씁니다. `1234` 을 조직의 ID로 바꿉니다.
+다음 cURL 및 Java 명령으로 기존 조직을 완전히 덮어씁니다. `1234` 조직의 ID로 바꿉니다.
 
 ### Organization_PUT_ById.sh
 
@@ -266,7 +268,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
 
 ## 조직 삭제
 
-다음 cURL 및 Java 명령을 사용하여 기존 조직을 삭제합니다. `1234` 을 조직의 ID로 바꿉니다.
+다음 cURL 및 Java 명령을 사용하여 기존 조직을 삭제합니다. `1234` 조직의 ID로 바꿉니다.
 
 ### Organization_DELETE_ById.sh
 

@@ -9,11 +9,11 @@ Liferay의 헤드리스 배달 애플리케이션은 문서 및 폴더를 추가
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-로그인하면 [사이트 ID 검색](../../../headless-delivery/ 소모-apis/소비-rest-services.md#identify-the-site-containing-the-data) . 여러 서비스 호출에서 이 ID를 사용합니다.
+로그인하면 [사이트 ID 검색](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 여러 서비스 호출에서 이 ID를 사용합니다.
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [예제 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip) 를 다운로드하고 압축을 풉니다. ):
+1. [예제 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip)를 다운로드하고 압축을 풉니다. ):
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
@@ -23,7 +23,7 @@ Liferay의 헤드리스 배달 애플리케이션은 문서 및 폴더를 추가
     unzip liferay-g9i6.zip
     ```
 
-cURL 스크립트를 사용하여 파일을 [문서 및 미디어](../../documents-and-media.md) 에 업로드합니다.
+cURL 스크립트를 사용하여 파일을 [Documents and Media](../../documents-and-media.md)에 업로드합니다.
 
 1. 명령줄에서 `curl` 폴더로 이동합니다.
 
@@ -47,14 +47,14 @@ cURL 스크립트를 사용하여 파일을 [문서 및 미디어](../../documen
 
 명령 응답은 다음과 같이 JSON의 새 문서 및 미디어 파일을 설명합니다.
 
-```bash 
+```json
 {
-    ...
-    "description" : "",
-    ...
-    "id" : 38301,
-    ...
-    "title" : "Document_POST_ToSite.sh"
+  ...
+  "description": "",
+  ...
+  "id": 38301,
+  ...
+  "title": "Document_POST_ToSite.sh"
 }
 ```
 
@@ -101,7 +101,7 @@ cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시�
 | 인수                                                                      | 묘사                                                                    |
 |:----------------------------------------------------------------------- |:--------------------------------------------------------------------- |
 | `-F "file=@Document_POST_ToSite.sh"`                                    | 게시할 파일입니다.                                                            |
-| `-H "Content-Type: multipart/form-data"`                                | 게시 중인 미디어 유형( [MIME 유형](https://en.wikipedia.org/wiki/Media_type) )입니다. |
+| `-H "Content-Type: multipart/form-data"`                                | 게시 중인 미디어 유형([MIME 유형](https://en.wikipedia.org/wiki/Media_type))입니다. |
 | `-X POST`                                                               | 지정된 끝점에서 호출할 HTTP 메서드입니다.                                             |
 | `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | REST 서비스 엔드포인트. 사이트 ID 매개변수는 `${1}`대체합니다.                             |
 | `-u "test@liferay.com:learn"`                                           | 기본 인증 자격 증명.                                                          |
@@ -138,7 +138,7 @@ cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시�
 `main` 메서드의 주석은 클래스 실행을 보여줍니다.
 ```
 
-다른 예제 Java 클래스는 이것과 유사하지만 다른 `DocumentResource` 메소드를 호출합니다.
+다른 예제 Java 클래스는 이것과 유사하지만 다른 `DocumentResource` 메서드를 호출합니다.
 
 ```{important}
 [DocumentResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/delivery/client/resource/v1_0/DocumentResource.java)를 참조하세요.
@@ -220,7 +220,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById
    :lines: 8-18
 ```
 
-`문서` 필드는 JSON에 나열됩니다.
+`문서` 필드는 JSON으로 나열됩니다.
 
 ## 문서 콘텐츠 가져오기
 
@@ -242,7 +242,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById
 
 첫 번째 인수 줄은 각각 서비스 끝점과 인증 자격 증명을 지정합니다. URL의 `/o/headless-delivery/v1.0/documents/${1}` 부분은 해당 ID로 `문서` 가져오는 REST 서비스 엔드포인트입니다. 이 URL은 `Document_GET_ById.sh` 스크립트의 URL과 동일합니다. `?nestedFields=contentValue` 부분은 `문서`의 `nestedFields`에 포함된 `contentValue` 요청합니다. 마지막으로 `&fields=contentValue` 부분은 `contentValue` 필드를 필터링하여 content 필드만 반환되도록 합니다. 그러나 서비스만 호출하면 다음과 같이 JSON으로 래핑된 Base64로 종료된 콘텐츠가 반환됩니다.
 
-```bash
+```json
 {
   "contentValue" : "Y3VybCBcCgktRiAiZmlsZT1ARG9jdW1lbnRfUE9TVF9Ub1NpdGUuc2giIFwKCS1IICJDb250ZW50LVR5cGU6IG11bHRpcGFydC9mb3JtLWRhdGEiIFwKCS1YIFBPU1QgXAoJImh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9vL2hlYWRsZXNzLWRlbGl2ZXJ5L3YxLjAvc2l0ZXMvJHsxfS9kb2N1bWVudHMiIFwKCS11ICJ0ZXN0QGxpZmVyYXkuY29tOnRlc3Qi"
 }

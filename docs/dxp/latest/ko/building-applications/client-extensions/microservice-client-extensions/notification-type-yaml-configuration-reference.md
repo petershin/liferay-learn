@@ -8,7 +8,7 @@
 
 ```yaml
 zebra-notification-type:
-oAuth2ApplicationExternalReferenceCode: zebra-oauth-user-agent
+    oAuth2ApplicationExternalReferenceCode: zebra-oauth-user-agent
     resourcePath: /zebra/notification
     type: notificationType
 
@@ -16,7 +16,7 @@ zebra-oauth-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-필수 `resourcePath` 속성은 알림 처리기의 사이트를 정의합니다. 외부 애플리케이션으로 액세스할 수 있는 알림 처리기 구현을 가리킵니다. 이 값은 OAuth2 애플리케이션 프로필의 `homePageURL` 값과 결합되어 완전한 URL을 형성합니다.
+필수 `resourcePath` 속성은 알림 처리기의 위치를 정의합니다. 외부 애플리케이션으로 액세스할 수 있는 알림 처리기 구현을 가리킵니다. 이 값은 OAuth2 애플리케이션 프로필의 `homePageURL` 값과 결합되어 완전한 URL을 형성합니다.
 
 알림 유형 클라이언트 확장에는 Liferay의 알림에 의해 트리거된 요청을 보호하기 위해 OAuth2 애플리케이션 프로필이 필요합니다. 위의 예는 이 프로필에 대한 추가 [OAuth 사용자 에이전트 클라이언트 확장](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) 을 정의하고 `oAuth2ApplicationExternalReferenceCode` 속성은 해당 `키` 값을 참조합니다.
 

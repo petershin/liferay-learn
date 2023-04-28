@@ -15,27 +15,27 @@
 
 그런 다음 다음 단계에 따라 이 자습서의 기본 객체를 [만들기](../../creating-and-managing-objects/creating-objects.md)하십시오.
 
-1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 클릭 **사물** .
+1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
 
-1. **추가** 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
+1. *추가* 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
     | 필드 | 가치 |
     | :--- | :--- |
     | 라벨 | '가능' |
-    | 복수 레이블 | '에이블스' |
+    | 복수 라벨 | '에이블스' |
     | 이름 | '가능' |
 
-1. 새 **개체** 초안을 선택하고 **필드** 탭으로 이동한 다음 단일 텍스트 필드를 추가합니다.
+1. 새 *개체* 초안을 선택하고 *필드* 탭으로 이동한 다음 단일 텍스트 필드를 추가합니다.
 
-    | 라벨 | 필드명 | 유형 | 필수 |
+    | 라벨 | 필드 이름 | 유형 | 필수 |
     | :--- | :--- | :--- | :--- |
     | 이름 | 이름 | 텍스트 | &#10004; |
 
-1. **세부 정보** 탭으로 이동하여 **게시** 를 클릭합니다.
+1. *세부 정보* 탭으로 이동하여 *게시*를 클릭합니다.
 
-    ```{중요}
-    이 자습서에서는 위의 값을 사용해야 합니다.
-    ```
+   ```{important}
+   For this tutorial, you must use the above values.
+   ```
 
 [Publishing an Object](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 은 데이터 수신 및 저장을 위한 새로운 애플리케이션을 생성하고 활성화합니다. 이제 Headless API를 통해 액세스할 수 있습니다.
 
@@ -55,10 +55,10 @@ unzip liferay-v1s4.zip
 
 | HTTP 방법 | HTTP 끝점           | 묘사                                                                       |
 |:------- |:----------------- |:------------------------------------------------------------------------ |
-| 가져 오기   | `/`               | Liferay 인스턴스의 전체 객체 항목 목록을 반환합니다. 결과에 페이지를 매기고, 필터링하고, 검색하고, 정렬할 수 있습니다. |
+| 얻다      | `/`               | Liferay 인스턴스의 전체 객체 항목 목록을 반환합니다. 결과에 페이지를 매기고, 필터링하고, 검색하고, 정렬할 수 있습니다. |
 | 우편      | `/`               | API 호출에 제공된 세부 정보를 사용하여 새 객체 항목을 생성합니다.                                  |
 | 삭제      | `/{objectNameId}` | 지정된 개체 항목을 삭제하고 작업이 성공하면 204를 반환합니다.                                     |
-| 가져 오기   | `/{objectNameId}` | 지정된 개체 항목에 대한 세부 정보를 반환합니다.                                              |
+| 얻다      | `/{objectNameId}` | 지정된 개체 항목에 대한 세부 정보를 반환합니다.                                              |
 | 놓다      | `/{objectNameId}` | 지정된 개체 항목의 세부 정보를 API 호출에 제공된 세부 정보로 바꿉니다.                               |
 
 ## 사용자 정의 개체의 API 호출
@@ -69,7 +69,7 @@ unzip liferay-v1s4.zip
    cd liferay-v1s4/curl
    ```
 
-1. `Able_POST_ToCompany`을 실행합니다. 이렇게 하면 세 개의 항목이 생성됩니다.
+1. `Able_POST_ToCompany`실행합니다. 이렇게 하면 세 개의 항목이 생성됩니다.
 
    ```bash
    ./Able_POST_ToCompany.sh
@@ -77,7 +77,7 @@ unzip liferay-v1s4.zip
 
    터미널은 새로 생성된 항목에 대한 전체 스키마를 표시합니다. 다음 방법에 사용할 첫 번째 항목의 ID를 복사합니다.
 
-   ```bash
+   ```json
    {
      "id" : 41969,
      ...
@@ -97,7 +97,7 @@ unzip liferay-v1s4.zip
    }
    ```
 
-1. `Ables_GET_FromCompany`을 실행합니다. 객체의 항목 목록을 반환합니다.
+1. `Ables_GET_FromCompany`실행합니다. 객체의 항목 목록을 반환합니다.
 
    ```bash
    ./Ables_GET_FromCompany.sh
@@ -109,7 +109,7 @@ unzip liferay-v1s4.zip
    ./Able_PUT_ById.sh {entry-id}
    ```
 
-   ```bash
+   ```json
    {
      "id" : 41969,
      ...
@@ -117,13 +117,13 @@ unzip liferay-v1s4.zip
    }
    ```
 
-1. 매개변수와 동일한 ID로 `Able_DELETE_ById` 을 실행합니다. 이것은 지정된 항목을 삭제합니다.
+1. 매개변수와 동일한 ID로 `Able_DELETE_ById` 실행합니다. 이것은 지정된 항목을 삭제합니다.
 
    ```bash
    ./Able_DELETE_ById.sh {entry-id}
    ```
 
-1. 매개변수와 동일한 ID로 `Able_GET_ById` 을 실행합니다. 지정된 항목이 있는 경우 해당 항목에 대한 세부 정보를 반환합니다.
+1. 매개변수와 동일한 ID로 `Able_GET_ById` 실행합니다. 지정된 항목이 있는 경우 해당 항목에 대한 세부 정보를 반환합니다.
 
    ```bash
    ./Able_GET_ById.sh {entry-id}
@@ -131,7 +131,7 @@ unzip liferay-v1s4.zip
 
    이전 단계에서 항목을 삭제했으므로 다음 메시지가 반환됩니다.
 
-   ```bash
+   ```json
    {
      "status" : "NOT_FOUND",
      "title" : "No ObjectEntry exists with the primary key 41969"

@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [계정 API 기본 사항](./liferay-t5p9.zip) 을 다운로드하고 압축을 풉니다.
+1. [계정 API 기본 사항](./liferay-t5p9.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -29,56 +29,63 @@
 
    JSON 응답은 새 계정이 추가되었음을 보여줍니다.
 
-   ```bash
-        {
-        "accountBriefs" : [ {
-            "id" : 38935,
-            "name" : "Able",
-            "roleBriefs" : [ ]
-        } ],
-        "additionalName" : "",
-        "alternateName" : "dog",
-        "birthDate" : "1977-01-01T00:00:00Z",
-        "customFields" : [ ],
-        "dashboardURL" : "",
-        "dateCreated" : "2021-10-12T21:00:59Z",
-        "dateModified" : "2021-10-12T21:01:01Z",
-        "emailAddress" : "dog@liferay.com",
-        "externalReferenceCode" : "",
-        "familyName" : "Easy",
-        "givenName" : "Dog",
-        "id" : 39005,
-        "jobTitle" : "",
-        "keywords" : [ ],
-        "name" : "Dog Easy",
-        "organizationBriefs" : [ ],
-        "profileURL" : "",
-        "roleBriefs" : [ {
-            "id" : 20111,
-            "name" : "User"
-        } ],
-        "siteBriefs" : [ {
-            "id" : 20125,
-            "name" : "Global"
-        }, {
-            "id" : 20123,
-            "name" : "Guest"
-        } ],
-        "userAccountContactInformation" : {
-            "emailAddresses" : [ ],
-            "facebook" : "",
-            "jabber" : "",
-            "postalAddresses" : [ ],
-            "skype" : "",
-            "sms" : "",
-            "telephones" : [ ],
-            "twitter" : "",
-            "webUrls" : [ ]
-        }
-        }     
-    ```
+   ```json
+   {
+     "accountBriefs": [
+       {
+         "id": 38935,
+         "name": "Able",
+         "roleBriefs": []
+       }
+     ],
+     "additionalName": "",
+     "alternateName": "dog",
+     "birthDate": "1977-01-01T00:00:00Z",
+     "customFields": [],
+     "dashboardURL": "",
+     "dateCreated": "2021-10-12T21:00:59Z",
+     "dateModified": "2021-10-12T21:01:01Z",
+     "emailAddress": "dog@liferay.com",
+     "externalReferenceCode": "",
+     "familyName": "Easy",
+     "givenName": "Dog",
+     "id": 39005,
+     "jobTitle": "",
+     "keywords": [],
+     "name": "Dog Easy",
+     "organizationBriefs": [],
+     "profileURL": "",
+     "roleBriefs": [
+       {
+         "id": 20111,
+         "name": "User"
+       }
+     ],
+     "siteBriefs": [
+       {
+         "id": 20125,
+         "name": "Global"
+       },
+       {
+         "id": 20123,
+         "name": "Guest"
+       }
+     ],
+     "userAccountContactInformation": {
+       "emailAddresses": [],
+       "facebook": "",
+       "jabber": "",
+       "postalAddresses": [],
+       "skype": "",
+       "sms": "",
+       "telephones": [],
+       "twitter": "",
+       "webUrls": []
+     }
+   }    
+   ```
 
-1. **글로벌 메뉴** &rarr; **애플리케이션** &rarr; **계정** 으로 이동합니다. 사용자를 만든 계정을 클릭합니다. **사용자** 탭을 클릭하고 생성된 새 사용자를 확인합니다.
+1. *글로벌 메뉴* &rarr; *애플리케이션* &rarr; *계정*으로 이동합니다. 사용자를 만든 계정을 클릭합니다. *사용자* 탭을 클릭하고 생성된 새 사용자를 확인합니다.
 
   ![새 계정 사용자가 추가되었는지 확인합니다.](./account-users-and-roles-apis/images/01.png)
 
@@ -145,7 +152,7 @@
 다른 예제 Java 클래스는 이것과 유사하지만 다른 메소드를 호출합니다.
 
 ```{important}
-[AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com 참조) /liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)를 참조하십시오.
+[AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) 를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 기타 관련 REST 서비스를 호출하는 예입니다.

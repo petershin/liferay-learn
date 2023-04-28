@@ -11,7 +11,7 @@ Liferay의 Headless Delivery 애플리케이션은 [Wiki](../getting-started-wit
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-일단 시작되면 사이트 ID를 검색하십시오. 사이트 ID를 찾으려면 **사이트 메뉴**(![사이트 메뉴](../../../images/icon-menu.png))를 열고 **구성** &rarr; **사이트 설정** &rarr; **사이트 구성** .
+일단 시작되면 사이트 ID를 검색하십시오. 사이트 ID를 찾으려면 *사이트 메뉴*(![사이트 메뉴](../../../images/icon-menu.png))를 열고 *구성* &rarr; *사이트 설정* &rarr; *사이트 구성*.
 
 ![사이트 구성 설정에서 사이트 ID를 찾습니다.](./wiki-api-basics/images/01.png)
 
@@ -19,7 +19,7 @@ Liferay의 Headless Delivery 애플리케이션은 [Wiki](../getting-started-wit
 
 이 자습서에서는 Headless API를 시연하는 샘플 코드를 제공합니다. 이 코드에는 자습서 전체에서 사용할 수 있는 샘플 cURL 및 Java 파일이 모두 포함되어 있습니다.
 
-다음 명령을 실행하여 [샘플 코드](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip) 를 다운로드하고 압축을 풉니다.
+다음 명령을 실행하여 [샘플 코드](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip)를 다운로드하고 압축을 풉니다.
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip -O
@@ -41,7 +41,7 @@ javac -classpath .:* *.java
 
 프로젝트에는 `com.liferay.headless.delivery.client.jar` 파일이 종속 항목으로 포함되어 있습니다. `/o/api`에 설치된 API 탐색기에서 모든 REST 애플리케이션에 대한 클라이언트 JAR 종속성 정보를 찾을 수 있습니다.
 
-제공된 코드에는 `WikiNode` 및 `WikiPage` 서비스용 API가 포함되어 있습니다. 포함된 모든 샘플 API 목록은 [Tutorial Code Reference](#tutorial-code-reference) 을 참조하십시오.
+제공된 코드에는 `WikiNode` 및 `WikiPage` 서비스용 API가 포함되어 있습니다. 포함된 모든 샘플 API 목록은 [Tutorial Code Reference](#tutorial-code-reference) 참조하십시오.
 
 ```{important}
 제공된 코드는 데모용으로 기본 인증을 사용합니다. 프로덕션의 경우 [OAuth2](../../../headless-delivery/using-oauth2.md)으로 사용자를 인증해야 합니다.
@@ -83,7 +83,7 @@ javac -classpath .:* *.java
 
 1. 다음 GET, PUT 및 DELETE 메서드와 함께 사용할 노드의 ID를 복사합니다.
 
-   ```bash
+   ```json
    {
 ...
      "description" : "Foo",
@@ -126,7 +126,7 @@ javac -classpath .:* *.java
    java -classpath .:* -DwikiNodeId={wiki-node-id} WikiNode_PUT_ById
    ```
 
-   ```bash
+   ```json
    {
 ...
      "description" : "Bar",
@@ -167,7 +167,7 @@ javac -classpath .:* *.java
 
    이전 단계에서 노드를 삭제했으므로 다음 메시지를 반환합니다.
 
-   ```bash
+   ```json
    {
      "status" : "NOT_FOUND",
      "title" : "No WikiNode exists with the primary key 38405"
@@ -212,7 +212,7 @@ cURL 명령 또는 Java 클래스를 사용하여 `WikiPage` API를 호출할 �
 
 1. `WikiPage_POST_ToNode` 호출과 함께 사용하기 위해 출력에서 노드의 ID를 복사합니다.
 
-   ```bash
+   ```json
    {
 ...
      "description" : "Foo",
@@ -239,7 +239,7 @@ cURL 명령 또는 Java 클래스를 사용하여 `WikiPage` API를 호출할 �
 
 1. `WikiPage_POST_ToParent` 호출과 함께 사용할 페이지의 ID를 복사합니다.
 
-   ```bash
+   ```json
    {
 ...
      "content" : "Foo",
@@ -253,7 +253,7 @@ cURL 명령 또는 Java 클래스를 사용하여 `WikiPage` API를 호출할 �
    }
    ```
 
-1. 위의 위키 페이지 ID를 매개변수로 사용하여 `WikiPage_POST_ToParent` 을 실행합니다. 이렇게 하면 지정된 Wiki 페이지에 대한 하위 페이지가 생성됩니다.
+1. 위의 Wiki 페이지 ID를 매개변수로 사용하여 `WikiPage_POST_ToParent` 실행합니다. 이렇게 하면 지정된 Wiki 페이지에 대한 하위 페이지가 생성됩니다.
 
    **cURL의 경우:**
 
@@ -267,7 +267,7 @@ cURL 명령 또는 Java 클래스를 사용하여 `WikiPage` API를 호출할 �
    java -classpath .:* -DparentWikiPageId={wiki-page-id} WikiPage_POST_ToParent
    ```
 
-   ```bash
+   ```json
    {
 ...
       "content" : "Foo",
@@ -323,7 +323,7 @@ cURL 명령 또는 Java 클래스를 사용하여 `WikiPage` API를 호출할 �
    java -classpath .:* -DwikiPageId={wiki-page-id} WikiPage_PUT_ById
    ```
 
-   ```bash
+   ```json
    {
      "내용" : "바",
 ...
@@ -365,7 +365,7 @@ cURL 명령 또는 Java 클래스를 사용하여 `WikiPage` API를 호출할 �
 
    이전 단계에서 페이지가 삭제되었으므로 다음 메시지가 표시됩니다.
 
-   ```bash
+   ```json
    {
      "status" : "NOT_FOUND",
      "title" : "No WikiNode exists with the primary key 38515"
@@ -451,5 +451,3 @@ Wiki 페이지에 POST 및 PUT 메서드를 사용할 때 `headline` 및 `encodi
 
 * [Liferay를 헤드리스 플랫폼으로 사용](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
 * [휴식 서비스 이용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-### `WikiNode_POST_ToSite.sh`
-

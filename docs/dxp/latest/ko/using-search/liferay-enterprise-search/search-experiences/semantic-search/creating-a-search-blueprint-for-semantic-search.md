@@ -1,7 +1,7 @@
 # 시맨틱 검색을 위한 검색 청사진 만들기
 
 {bdg-secondary}`7.4 U70+`
-{bdg-link-dark}` [베타 기능](https://help.liferay.com/hc/ko/articles/12917247551757-Beta-Features) `
+{bdg-link-primary}`[베타 기능](../../../../system-administration/configuring-liferay/feature-flags.md)`
 
 모델이 선택되고 텍스트 임베딩이 인덱싱되면 검색 시 임베딩을 처리하도록 Liferay를 구성해야 합니다. 개념적으로 두 가지 선택이 있습니다.
 
@@ -20,7 +20,7 @@ Rescore by Text Embedding 요소는 임베딩 공급자와 함께 작동하도�
 
 ## Rescore by Text Embedding 요소 추가
 
-[시맨틱 검색이 활성화된 상태에서](../semantic-search.md#enabling-semantic-search) 처음으로 Liferay를 시작하면 [검색 청사진 UI](../search-blueprints/creating-and-managing-elements.md)에서 Rescore by Text Embedding 요소를 사용할 수 있습니다. 인스턴스에 요소가 표시되지 않으면 수동으로 추가할 수 있습니다.
+[시맨틱 검색이 활성화된 상태에서](../semantic-search.md#enabling-semantic-search)처음으로 Liferay를 시작하면 [검색 청사진 UI](../search-blueprints/creating-and-managing-elements.md)에서 Rescore by Text Embedding 요소를 사용할 수 있습니다. 인스턴스에 요소가 표시되지 않으면 수동으로 추가할 수 있습니다.
 
 1. Liferay에서 *전역 메뉴* (![Global Menu](../../../../images/icon-applications-menu.png))을 연 다음 *응용 프로그램* &rarr; *청사진*클릭합니다.
 
@@ -38,7 +38,7 @@ Rescore by Text Embedding 요소는 임베딩 공급자와 함께 작동하도�
 
 Rescore by Text Embedding 요소에는 몇 가지 구성 가능한 옵션이 제공됩니다.
 
-**부스트:** 기본값이 10인 이 설정은 점수를 다시 매긴 결과를 부스트하는 정도를 결정합니다.
+**부스트:** 기본값이 10인 이 설정은 점수를 다시 매긴 결과를 부스트하는 양을 결정합니다.
 
 **벡터 필드 기능:** 코사인 유사성 또는 내적 기능 중에서 선택합니다. 코사인 유사성 기능을 사용하도록 기본 설정되어 있는 선택된 기능은 검색된 키워드와 대상 문서 텍스트 임베딩 간의 유사성을 측정합니다. 어떤 기능이 가장 적합한지 결정하려면 모델의 문서를 확인하십시오.
 

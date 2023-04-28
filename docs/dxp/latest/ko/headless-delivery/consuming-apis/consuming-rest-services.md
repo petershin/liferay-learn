@@ -1,6 +1,6 @@
 # REST 서비스 사용
 
-Liferay DXP에는 대부분의 애플리케이션에 대한 REST 서비스가 포함되어 있습니다. 이러한 서비스는 [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery) 와 완전히 호환됩니다. 여기에서 섭취 방법을 배웁니다. 세 단계만 거치면 됩니다. 
+Liferay DXP에는 대부분의 애플리케이션에 대한 REST 서비스가 포함되어 있습니다. 이러한 서비스는 [OpenAPI](https://app.swaggerhub.com/apis/liferayinc/headless-delivery)와 완전히 호환됩니다. 여기에서 섭취 방법을 배웁니다. 세 단계만 거치면 됩니다.
 
 1. 사용하려는 서비스를 식별합니다.
 1. 필요한 데이터가 포함된 사이트를 식별합니다.
@@ -24,14 +24,14 @@ http[s]://[hostname]:[port]/o/api
 Docker 인스턴스에서 다음 위치에서 찾을 수 있습니다.
 
 ```
-http://localhost:8080/o/api
+http://로컬호스트:8080/o/api
 ```
 
 API는 여러 범주로 나뉩니다. 이 예에서는 `BlogPosting` 서비스를 사용하여 블로그 위젯에서 블로그 게시물을 검색하지만 게시된 모든 서비스에서 이 절차를 사용할 수 있습니다.
 
-1. **Headless Delivery** 카테고리를 선택합니다. 이 범주에는 `BlogPosting` 서비스가 포함됩니다. 필터를 사용하여 서비스를 검색할 수 있습니다.
+1. *Headless Delivery* 카테고리를 선택합니다. 이 범주에는 `BlogPosting` 서비스가 포함됩니다. 필터를 사용하여 서비스를 검색할 수 있습니다.
 
-1. **Show Schemas** 버튼을 클릭하면 화면 오른쪽에 해당 카테고리의 모든 스키마 목록이 나타납니다.
+1. *Show Schemas* 버튼을 클릭하면 화면 오른쪽에 해당 카테고리의 모든 스키마 목록이 나타납니다.
 
 1. 브라우저 탭을 스키마 브라우저에 열어 둡니다. `BlogPosting`을 PUT하려면 해당 스키마가 필요합니다.
 
@@ -41,17 +41,17 @@ API는 여러 범주로 나뉩니다. 이 예에서는 `BlogPosting` 서비스�
 
 이제 기본 사이트 ID를 찾아야 합니다.
 
-1. 사이트 메뉴(![사이트 메뉴](../../images/icon-menu.png))를 열고 **구성** &rarr; **사이트 설정** .
-1. 플랫폼 섹션에서 **사이트 구성** 을 클릭합니다. Liferay DXP 버전 7.3 이하의 경우 **일반** 탭을 클릭합니다.
+1. 사이트 메뉴(![사이트 메뉴](../../images/icon-menu.png))를 열고 *구성* &rarr; *사이트 설정*.
+1. 플랫폼 섹션에서 *사이트 구성*을 클릭합니다. Liferay DXP 버전 7.3 이하의 경우 *일반* 탭을 클릭합니다.
 1. 사이트 ID 아래에서 사이트 식별자를 찾습니다.
 
     ![사이트 설정 및 사이트 구성 옵션에서 사이트 ID를 식별합니다.](./ 소모-rest-services/images/03.png)
 
 ## 데이터에 액세스할 수 있는 자격 증명을 사용하여 서비스 호출하기
 
-이제 전화를 거는 데 필요한 모든 것이 있습니다. 요청하는 데이터에 액세스할 수 있는 자격 증명을 사용하여 모든 웹 서비스에 액세스해야 합니다. 가장 간단한 방법은 URL에서 자격 증명 데이터를 전달하는 기본 인증을 사용하는 것입니다. 이 방법은 안전하지 않으므로 개발 중에만 이 방법을 사용해야 합니다. 프로덕션의 경우 애플리케이션에서 [OAuth2](../using-oauth2.md)를 통해 사용자에게 권한을 부여해야 합니다.
+이제 전화를 거는 데 필요한 모든 것이 있습니다. 요청하는 데이터에 액세스할 수 있는 자격 증명을 사용하여 모든 웹 서비스에 액세스해야 합니다. 가장 간단한 방법은 URL에서 자격 증명 데이터를 전달하는 기본 인증을 사용하는 것입니다. 이것은 안전하지 않기 때문에 개발 중에만 이 방법을 사용해야 합니다. 프로덕션의 경우 애플리케이션에서 [OAuth2](../using-oauth2.md)를 통해 사용자에게 권한을 부여해야 합니다.
 
-아래 예시는 [cURL](https://curl.haxx.se) 을 사용합니다.
+아래 예시는 [cURL](https://curl.haxx.se)을 사용합니다.
 
 ### 기본 인증을 사용하여 서비스 호출(개발 중에만 해당)
 
@@ -110,7 +110,7 @@ curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://l
     * `articleBody`
     * `headline`
 
-2. 블로그 항목을 게시할 간단한 JSON 문서를 구성합니다. 
+1. 블로그 항목을 게시할 간단한 JSON 문서를 구성합니다. 
 
     ```json
     {
@@ -119,7 +119,7 @@ curl -H "Authorization: Bearer d5571ff781dc555415c478872f0755c773fa159" http://l
     }
     ```
 
-3. 요청하기: 
+1. 요청하기: 
 
     ```bash
     curl --header "Content-Type: application/json" --request POST --data '{ "headline": "Test Blog Entry from REST Services", "articleBody": "This article was posted via REST services provided by Liferay DXP." }' http://localhost:8080/o/headless-delivery/v1.0/sites/20122/blog-postings -u test@liferay.com:learn

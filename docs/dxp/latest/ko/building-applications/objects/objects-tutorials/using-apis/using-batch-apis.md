@@ -9,28 +9,29 @@
 ```
 
 ## Liferay 인스턴스 설정
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) a basic Object for this tutorial:
+그런 다음 다음 단계에 따라 이 자습서의 기본 객체를 [만들기](../../creating-and-managing-objects/creating-objects.md)하십시오.
 
-1. Open the **Global Menu**(![Global Menu](../../../../images/icon-applications-menu.png)), go to the **Control Panel** tab, and click **Objects** .
+1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
 
-1. Click the **Add** button (![Add Button](../../../../images/icon-add.png)) and enter these values:
+1. *추가* 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Able` |
-   | Plural Label | `Ables` |
-   | Name | `Able` |
+    | 필드 | 가치 |
+    | :--- | :--- |
+    | 라벨 | '가능' |
+    | 복수 라벨 | '에이블스' |
+    | 이름 | '가능' |
 
-1. Select the new **Object** draft, go to the **Fields** tab, and add a single text **field** :
+1. 새 *개체* 초안을 선택하고 *필드* 탭으로 이동한 다음 단일 텍스트 *필드*를 추가합니다.
 
-   | Label | Field Name | Type | Required |
-   | :--- | :--- | :--- | :--- |
-   | Name | name | Text | &#10004; |
+    | 라벨 | 필드 이름 | 유형 | 필수 |
+    | :--- | :--- | :--- | :--- |
+    | 이름 | 이름 | 텍스트 | &#10004; |
 
-1. Go to the **Details** tab and click **Publish** .
+1. *세부 정보* 탭으로 이동하여 *게시*를 클릭합니다.
 
    ```{important}
    For this tutorial, you must use the above values.
@@ -70,7 +71,7 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
    cd liferay-t4r3/curl
    ```
 
-1. `Ables_POST_Batch`을 실행합니다. 이렇게 하면 여러 개체 항목이 생성됩니다.
+1. `Ables_POST_Batch`실행합니다. 이렇게 하면 여러 개체 항목이 생성됩니다.
 
    ```bash
    ./Ables_POST_Batch.sh
@@ -78,7 +79,7 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
 
    터미널에 유사한 출력이 표시됩니다.
 
-   ```bash
+   ```json
    {
      "className" : "com.liferay.object.rest.dto.v1_0.ObjectEntry",
      "contentType" : "JSON",
@@ -95,7 +96,7 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
    }
    ```
 
-1. `Ables_GET_FromCompany` 을 실행하여 항목이 생성되었는지 확인합니다. 그러면 모든 개체 항목의 목록이 반환됩니다.
+1. `Ables_GET_FromCompany` 실행하여 항목이 생성되었는지 확인합니다. 그러면 모든 개체 항목의 목록이 반환됩니다.
 
    ```bash
    ./Ables_GET_FromCompany.sh
@@ -103,7 +104,7 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
 
    다음 PUT 및 DELETE 메서드와 함께 사용할 각 항목의 ID를 복사합니다.
 
-   ```bash
+   ```json
    {
      ...
      "items" : [ {
@@ -129,13 +130,13 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
    }
    ```
 
-1. 각 항목 ID를 매개변수로 사용하여 `Ables_PUT_Batch` 을 실행합니다. 이렇게 하면 지정된 항목의 세부 정보가 API 호출에 제공된 세부 정보로 대체됩니다.
+1. 각 항목 ID를 매개변수로 사용하여 `Ables_PUT_Batch` 실행합니다. 이렇게 하면 지정된 항목의 세부 정보가 API 호출에 제공된 세부 정보로 대체됩니다.
 
    ```bash
    ./Ables_PUT_Batch.sh {first-entry-id} {second-entry-id} {third-entry-id}
    ```
 
-   ```bash
+   ```json
    {
      "className" : "com.liferay.object.rest.dto.v1_0.ObjectEntry",
      "contentType" : "JSON",
@@ -152,13 +153,13 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
    }
    ```
 
-1. `Ables_GET_FromCompany` 을 실행하여 항목이 업데이트되었는지 확인합니다.
+1. `Ables_GET_FromCompany` 실행하여 항목이 업데이트되었는지 확인합니다.
 
    ```bash
    ./Ables_GET_FromCompany.sh
    ```
 
-   ```bash
+   ```json
    {
      ...
      "items" : [ {
@@ -184,13 +185,13 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
    }
    ```
 
-1. 각 항목 ID를 매개변수로 사용하여 `Ables_DELETE_Batch` 을 실행합니다. 이렇게 하면 지정된 항목이 삭제됩니다.
+1. 각 항목 ID를 매개변수로 사용하여 `Ables_DELETE_Batch` 실행합니다. 이렇게 하면 지정된 항목이 삭제됩니다.
 
    ```bash
    ./Ables_DELETE_Batch.sh {first-entry-id} {second-entry-id} {third-entry-id}
    ```
 
-1. `Ables_GET_FromCompany` 을 실행하여 항목이 삭제되었는지 확인합니다.
+1. `Ables_GET_FromCompany` 실행하여 항목이 삭제되었는지 확인합니다.
 
    ```bash
    ./Ables_GET_FromCompany.sh

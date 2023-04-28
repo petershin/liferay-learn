@@ -1,6 +1,6 @@
 # 사용자 그룹 API 기본 사항
 
-애플리케이션 메뉴에서 [사용자 그룹 생성 및 관리](../user-groups/creating-and-managing-user-groups.md) 를 할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 사용자 그룹을 관리하려면 이러한 서비스를 호출하십시오.
+애플리케이션 메뉴에서 [사용자 그룹 생성 및 관리](../user-groups/creating-and-managing-user-groups.md) 할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 사용자 그룹을 관리하려면 이러한 서비스를 호출하십시오.
 
 ## 사용자 그룹 추가
 
@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [사용자 그룹 API 기본 사항](./liferay-y6f2.zip) 을 다운로드하고 압축을 풉니다.
+1. [사용자 그룹 API 기본 사항](./liferay-y6f2.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6f2.zip -O
@@ -27,26 +27,27 @@
 
    JSON 응답은 새 사용자 그룹이 추가되었음을 보여줍니다.
 
-   ```bash
-   "description" : "",
-   "externalReferenceCode" : "72c5739f-a6e9-d4b8-5481-7cf1a427ea79",
-   "id" : 43099,
-   "name" : "Able",
-   "usersCount" : 0
-
+   ```json
+   {
+     "description" : "",
+     "externalReferenceCode" : "72c5739f-a6e9-d4b8-5481-7cf1a427ea79",
+     "id" : 43099,
+     "name" : "Able",
+     "usersCount" : 0
+   }
    ```
 
-2. **전역 메뉴** &rarr; **제어판** &rarr; **사용자 그룹** 로 이동합니다. 새 사용자 그룹이 추가되었는지 확인합니다.
+1. *전역 메뉴* &rarr; *제어판* &rarr; *사용자 그룹*로 이동합니다. 새 사용자 그룹이 추가되었는지 확인합니다.
 
    ![새 사용자 그룹이 추가되었는지 확인합니다.](./user-groups-api-basics/images/01.png)
 
-3. REST 서비스는 Java 클라이언트를 사용하여 호출할 수도 있습니다. `curl` 폴더에서 `java` 폴더로 이동합니다. 다음 명령을 사용하여 소스 파일을 컴파일합니다.
+1. REST 서비스는 Java 클라이언트를 사용하여 호출할 수도 있습니다. `curl` 폴더에서 `java` 폴더로 이동합니다. 다음 명령을 사용하여 소스 파일을 컴파일합니다.
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-4. 다음 명령을 사용하여 `UserGroup_POST_ToInstance.java` 클래스를 실행합니다.
+1. 다음 명령을 사용하여 `UserGroup_POST_ToInstance.java` 클래스를 실행합니다.
 
    ```bash
    java -classpath .:* UserGroup_POST_ToInstance
@@ -90,7 +91,7 @@
 
 | 라인(약칭)                                                                       | 묘사                                                          |
 |:---------------------------------------------------------------------------- |:----------------------------------------------------------- |
-| `UserGroupResource.Builder builder = ...`                                    | `UserGroupResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.         |
+| `UserGroupResource.Builder builder = ...`                                    | `UserGroupResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.           |
 | `UserGroupResource userGroupResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `UserGroupResource` 서비스 인스턴스를 생성합니다.            |
 | `UserGroup userGroup = userGroupResource.postUserGroup(...);`                | `userGroupResource.postUserGroup` 메서드를 호출하고 데이터를 게시에 전달합니다. |
 
@@ -103,7 +104,7 @@
 다른 예제 Java 클래스는 이것과 유사하지만 다른 `UserGroupResource` 메소드를 호출합니다.
 
 ```{important}
-[UserGroupResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin 참조) /user/client/resource/v1_0/UserGroupResource.java)를 참조하십시오.
+[UserGroupResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserGroupResource.java)를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 `UserGroup` REST 서비스를 호출하는 예입니다.
@@ -186,7 +187,7 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_GET_ById
 
 ## 사용자 그룹 패치
 
-다음 cURL 및 Java 명령을 사용하여 기존 사용자 그룹을 부분적으로 편집합니다. `1234` 을 사용자 그룹의 ID로 바꿉니다.
+다음 cURL 및 Java 명령을 사용하여 기존 사용자 그룹을 부분적으로 편집합니다. `1234` 사용자 그룹의 ID로 바꿉니다.
 
 ### UserGroup_PATCH_ById.sh
 
@@ -220,7 +221,7 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_PATCH_ById
 
 ## 사용자 그룹 넣기
 
-다음 cURL 및 Java 명령으로 기존 사용자 그룹을 완전히 덮어씁니다. `1234` 을 사용자 그룹의 ID로 바꿉니다.
+다음 cURL 및 Java 명령으로 기존 사용자 그룹을 완전히 덮어씁니다. `1234` 사용자 그룹의 ID로 바꿉니다.
 
 ### UserGroup_PUT_ById.sh
 
@@ -254,7 +255,7 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_PUT_ById
 
 ## 사용자 그룹 삭제
 
-다음 cURL 및 Java 명령을 사용하여 기존 사용자 그룹을 삭제합니다. `1234` 을 사용자 그룹의 ID로 바꿉니다.
+다음 cURL 및 Java 명령을 사용하여 기존 사용자 그룹을 삭제합니다. `1234` 사용자 그룹의 ID로 바꿉니다.
 
 ### UserGroup_DELETE_ById.sh
 
@@ -286,4 +287,4 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_DELETE_ById
    :lines: 8-17
 ```
 
-[API 탐색기](../../headless-delivery/consuming-apis/consuming-rest-services.md) 은 `UserGroup` 서비스 및 스키마를 모두 표시하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
+[API 탐색기](../../headless-delivery/consuming-apis/consuming-rest-services.md) `UserGroup` 서비스 및 스키마를 모두 표시하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.

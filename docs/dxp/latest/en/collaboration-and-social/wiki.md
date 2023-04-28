@@ -3,7 +3,6 @@ toc:
   - ./wiki/getting-started-with-wikis.md
   - ./wiki/creating-wiki-pages.md
   - ./wiki/creating-a-node.md
-  - ./wiki/exporting-and-importing-a-wiki.md
   - ./wiki/using-the-page-menu-widget.md
   - ./wiki/using-the-tree-menu-widget.md
   - ./wiki/using-the-wiki-display-widget.md
@@ -20,7 +19,6 @@ uuid: 26f2006e-611d-476d-8df9-1f2b87625cb7
 ./wiki/getting-started-with-wikis.md
 ./wiki/creating-wiki-pages.md
 ./wiki/creating-a-node.md
-./wiki/exporting-and-importing-a-wiki.md
 ./wiki/using-the-page-menu-widget.md
 ./wiki/using-the-tree-menu-widget.md
 ./wiki/using-the-wiki-display-widget.md

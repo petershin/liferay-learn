@@ -3,7 +3,7 @@ toc:
   - ./building-applications/objects.md
   - ./building-applications/client-extensions.md
   - ./building-applications/developing-a-javascript-application.md
-  - ../headless-delivery/apis-with-rest-builder.md
+  - ./headless-delivery/apis-with-rest-builder.md
   - ./building-applications/developing-a-java-web-application.md
   - ./building-applications/core-frameworks.md
   - ./building-applications/data-frameworks.md
@@ -20,7 +20,7 @@ uuid: c7a717b4-ea54-4ca6-a16a-51f3e0f47d24
 building-applications/objects.md
 building-applications/client-extensions.md
 building-applications/developing-a-javascript-application.md
-../headless-delivery/apis-with-rest-builder.md
+headless-delivery/apis-with-rest-builder.md
 building-applications/developing-a-java-web-application.md
 building-applications/core-frameworks.md
 building-applications/data-frameworks.md

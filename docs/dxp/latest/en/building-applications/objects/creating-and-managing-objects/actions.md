@@ -2,8 +2,8 @@
 toc:
   - ./actions/defining-object-actions.md
   - ./actions/understanding-action-types.md
-  - ./action/using-manual-actions.md
-uuid: 22678165-9c15-45ec-9f59-73eb9e2769b8
+  - ./actions/using-manual-actions.md
+uusing-dispatch.mduid: 22678165-9c15-45ec-9f59-73eb9e2769b8
 ---
 # Actions
 

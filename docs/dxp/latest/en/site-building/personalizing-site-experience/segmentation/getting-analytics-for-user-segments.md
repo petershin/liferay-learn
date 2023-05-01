@@ -9,6 +9,8 @@ To use Analytics Cloud with User Segments, you must first connect your DXP data 
 
 ```{important}
 Synchronization with Analytics Cloud is not instant, so once you have connected Analytics Cloud and Liferay DXP, you must first wait for the users and data to synchronize. After that completes, you can create Segments in Analytics Cloud to capture data in DXP.
+
+Also note that segments created in Analytics Cloud sync with Liferay DXP. However, segments created in Liferay DXP do not sync with Analytics Cloud.
 ```
 
 Follow these steps to get Segment analytics:

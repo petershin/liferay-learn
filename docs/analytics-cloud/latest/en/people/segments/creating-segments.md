@@ -3,6 +3,10 @@ uuid: d14f7796-5e5d-45ee-940a-f65582a6324c
 ---
 # Creating Segments
 
+```{important}
+Segments created in Analytics Cloud sync with Liferay DXP. However, segments created in Liferay DXP do not sync with Analytics Cloud.
+```
+
 ## Creating a Dynamic Segment
 
 1. Click *Segments* in the navigation panel. A table with existing Segments appears.

@@ -91,19 +91,19 @@ Individual service logs are also available under the *Logs* tab in each service'
 
 ### Searching and Filtering Logs
 
-You can filter logs by [type](#log-types) or by service on the Logs page via drop-down menus. If you filter logs to a specific service, another drop-down menu appears where you can filter to a specific instance.
+You can filter by [type](#log-types) or by service on the Logs page. If you filter logs by a service, another drop-down menu appears for filtering by a specific node.
 
 ![Use the drop-down menus to filter by type, service, and service instance.](./reading-liferay-cloud-service-logs/images/04.png)
 
-Use the date picker at the top-right corner to filter by a specific date range. You cannot choose a date that [no longer has valid logs](../reference/platform-limitations.md#all-services).
+To filter by a date range, use the date picker at the top-right corner. You cannot choose a date that [no longer has valid logs](../reference/platform-limitations.md#all-services).
 
 ![Use the date picker to see logs from a specific date range.](./reading-liferay-cloud-service-logs/images/05.png)
 
-You can also search by a specific term or regular expression in the logs. Select *Term* or *Regex* from the drop-down menu, and then enter your search term or regular expression. Search suggestions appear based on previous searches. Regular expressions use the [RE2 syntax](https://github.com/google/re2/wiki/Syntax).
+You can search the logs for a specific term or regular expression. Select *Term* or *Regex* from the drop-down menu, and then enter your search term or regular expression. Search suggestions appear based on previous searches. Regular expressions use the [RE2 syntax](https://github.com/google/re2/wiki/Syntax).
 
 ![Use the search to find logs with specific terms or formats.](./reading-liferay-cloud-service-logs/images/06.png)
 
-You can only filter by log type or instance on specific service pages.
+On a service's page, you can only filter logs by type or instance.
 
 ## Accessing Logs via the Terminal
 

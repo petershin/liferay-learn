@@ -85,10 +85,14 @@ These variables are injected into task nodes:
 
 | Variable | Description | Usage |
 | :--- | :--- | :--- |
-| `kaleoTaskInstanceToken` ([`KaleoTaskInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTaskInstanceToken.java)) | The task's token itself is available in the workflow script. | Use it to get its ID, for use in other useful programmatic workflow activities, like programmatic assignment. |
+| `kaleoTaskInstanceToken` ([`KaleoTaskInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTaskInstanceToken.java)) | The task's token itself is available in the workflow script. | Use it to get its ID, which is useful in other programmatic workflow activities. |
 | `taskName` (`String`)  The task's own name is accessible (returns the same as `KaleoTak.getName()`). | |
 | `workflowTaskAssignees` (`List<`[`WorkflowTaskAssignee`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/workflow/WorkflowTaskAssignee.java)`>`) | Lists the task's assignees. | |
 | `kaleoTimerInstanceToken` ([`KaleoTimerInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTimerInstanceToken.java)) | If a [task timer](./workflow-task-node-reference.md) exists, get its ID by calling `kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`. | | |
+
+```{warning}
+These variables are available in action scripts in workflow task nodes (i.e., scripts in an `<actions>` &rarr; `<action>` &rarr; `<script>` block). [Scripted assignments](../designing-and-managing-workflows/workflow-designer/assigning-task-nodes.md#scripted-assignments) do not have these variables injected.
+```
 
 ## Script Example
 

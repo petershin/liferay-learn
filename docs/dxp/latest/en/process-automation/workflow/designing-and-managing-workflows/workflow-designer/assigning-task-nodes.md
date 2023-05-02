@@ -57,7 +57,27 @@ You can determine the probable resource action name from the permissions screen 
 
 ## Scripted Assignments
 
-You can also use a script to manage the assignment. Here's the script for the review task assignment in the Scripted Single Approver workflow definition (`single-approver-scripted-assignment-workflow-definition.xml`):
+<!-- do we need an availability notice for the users list?-->
+You can use a script to manage the assignment. Set a single user in the `user` variable, or add users to a list in the `users` variable. To specify role assignments, add a list of roles (even if there's just one) to the `roles` variable. 
+
+In the XML source, scripted assignments are written in the `<scripted-assignment>` XML element:
+
+```xml
+<assignments>
+   <scripted-assignment>
+      <script>
+         <![CDATA[
+            ...
+         ]]>
+      </script>
+      <script-language>groovy</script-language>
+   </scripted-assignment>
+</assignments>
+```
+
+### Assigning to Roles
+
+The script for the review task assignment in the Scripted Single Approver workflow definition (`single-approver-scripted-assignment-workflow-definition.xml`) sets `roles`:
 
 ```groovy
 import com.liferay.portal.kernel.model.Group;
@@ -95,20 +115,40 @@ This script assigns the task to the *Administrator* Role, then checks if the ass
 
 Note the `roles = new ArrayList<Role>();` line. In a scripted assignment, the `roles` variable is where you specify any roles the task is assigned to. For example, when `roles.add(adminRole);` is called, the administrator role is added to the assignment.
 
-In the XML source, scripted assignments are written in the `<scripted-assignment>` XML element:
+The `roles` variable assignment defines the assignable candidates for the task. Once the entry is submitted to the workflow, one of the candidate users must assign the task to themselves. See [Reviewing Assets](../../using-workflows/reviewing-assets.md) for more information.
 
-```xml
-<assignments>
-   <scripted-assignment>
-      <script>
-         <![CDATA[
-            ...
-         ]]>
-      </script>
-      <script-language>groovy</script-language>
-   </scripted-assignment>
-</assignments>
+### Assigning to Users
+
+Assign a user or a list of users to a task. These assignments appear in the My Workflow Tasks application under Assigned to Me. To assign a list of users as possible candidates, 
+
+```groovy
+import com.liferay.portal.kernel.service.UserLocalServiceUtil;
+import com.liferay.portal.kernel.util.GetterUtil;
+import com.liferay.portal.kernel.workflow.WorkflowConstants;
+
+users = new ArrayList();
+
+long companyId = GetterUtil.getLong((String)workflowContext.get(WorkflowConstants.CONTEXT_COMPANY_ID));
+
+users.add(UserLocalServiceUtil.getUserByEmailAddress(companyId, "user1@liferay.com"));
+users.add(UserLocalServiceUtil.getUserByEmailAddress(companyId, "user2@liferay.com"));
 ```
+
+The `users` variable assignment, like `roles`, defines the assignable candidates for the task. Once the entry is submitted to the workflow, one of the candidate users must assign the task to themselves. See [Reviewing Assets](../../using-workflows/reviewing-assets.md) for more information.
+
+To assign a single user to the task,
+
+```groovy
+import com.liferay.portal.kernel.service.UserLocalServiceUtil;
+import com.liferay.portal.kernel.util.GetterUtil;
+import com.liferay.portal.kernel.workflow.WorkflowConstants;
+
+long companyId = GetterUtil.getLong((String)workflowContext.get(WorkflowConstants.CONTEXT_COMPANY_ID));
+
+user = UserLocalServiceUtil.getUserByEmailAddress(companyId, "user1@liferay.com");
+```
+
+The `user` variable assignment is immediate. When the entry is submitted to the workflow, there's only one candidate, therefore the assignment is made directly to that user.
 
 ## Additional Information
 

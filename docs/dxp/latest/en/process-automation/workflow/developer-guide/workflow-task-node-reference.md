@@ -3,9 +3,9 @@ uuid: e7efd454-e2cb-44e8-949d-8aff5238e78a
 ---
 # Workflow Task Node Reference
 
-As the name implies, tasks are the part of the workflow where *work* is done. Tasks must be assigned to Users, who review the submitted asset and decide if an asset from the workflow is acceptable for publication or needs more work.
+As the name implies, tasks are the part of the workflow where work is done. Tasks must be assigned to users, who review the submitted asset and decide if an asset from the workflow is acceptable for publication or needs more work.
 
-Unlike other workflow nodes, task nodes have Assignments, because a User is expected to *do something* (often approve or reject the submitted asset) when a workflow process enters the task node.
+Unlike other workflow nodes, task nodes have Assignments, because a user is expected to do something (often approve or reject the submitted asset) when a workflow process enters the task node.
 
 Commonly, task nodes contain task timers, assignments, actions (which can include notifications and scripts), and transitions. Notifications and actions are not limited to task nodes, but task nodes and their assignments deserve their own article (this one).
 
@@ -62,38 +62,58 @@ These have a name and a [script](./using-the-script-engine-in-workflow.md) and a
 
 ## Assignments
 
-Workflow tasks are completed by a User. Assignments make sure the right users can access the tasks. You can choose how you want to configure your assignments. Assignments can be added to
+Workflow tasks are completed by a user. Assignments make sure the right users can access the tasks. You can choose how you want to configure your assignments. Assignments can be added to
 
-* Specific Roles
-* Multiple Roles of a Role type (Organization, Site, Asset Library, Account, or Regular Role types)
+* Specific roles of a role type (Organization, Site, Asset Library, Account, or Regular role types)
+
+   ```xml
+   <assignments>
+       <roles>
+           <role>
+               <role-type>organization</role-type>
+               <name>Organization Administrator</name>
+           </role>
+       </roles>
+   </assignments>
+   ```
+
+   The above assignment specifies that an Organization Administrator must complete the task.
+
 * Asset creator
+
+   ```xml
+   <assignments>
+      <user />
+   </assignments>
+   ```
+
 * Resource actions
-* Specific Users
+
+   ```xml
+   <assignments>
+       <resource-actions>
+           <resource-action>UPDATE</resource-action>
+       </resource-actions>
+   </assignments>
+   ```
+
+* Specific users
+
+   ```xml
+   <assignments>
+       <user>
+           <user-id>20156</user-id>
+       </user>
+   </assignments>
+   ```
+
+   The above assignment specifies that only the user with the user ID of 20156 may complete the task. Alternatively, specify the `<screen-name>` or `<email-address>` of the user.
+
 
 Additionally, you can write a script to define the assignment. For an example, see the [single-approver-scripted-assignment-workflow-definition.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml).
 
-```xml
-<assignments>
-    <roles>
-        <role>
-            <role-type>organization</role-type>
-            <name>Organization Administrator</name>
-        </role>
-    </roles>
-</assignments>
-```
+Set a single user in the `user` variable, or add users to a list in the `users` variable. To specify role assignments, add a list of roles (even if there's just one) to the `roles` variable.
 
-The above assignment specifies that an Organization Administrator must complete the task.
-
-```xml
-<assignments>
-    <user>
-        <user-id>20156</user-id>
-    </user>
-</assignments>
-```
-
-The above assignment specifies that only the User with the user ID of 20156 may complete the task. Alternatively, specify the `<screen-name>` or `<email-address>` of the User.
 
 ```xml
 <assignments>
@@ -137,21 +157,21 @@ The above assignment specifies that only the User with the user ID of 20156 may 
 </assignments>
 ```
 
-The above assignment assigns the task to the *Administrator* Role, then checks whether the *group* of the asset is an Organization. If it is, the *Organization Content Reviewer* role is assigned to it. If it's not, the task is assigned to the *Site Content Reviewer* Role.
+The above assignment assigns the task to the Administrator role, then checks whether the group of the asset is an Organization. If it is, the Organization Content Reviewer role is assigned to it. If it's not, the task is assigned to the Site Content Reviewer role.
 
-Note the `roles = new ArrayList<Role>();` line above. In a scripted assignment, the `roles` variable is where you specify any Roles the task is assigned to. For example, when `roles.add(adminRole);` is called, the Administrator Role is added to the assignment.
+Note the `roles = new ArrayList<Role>();` line above. In a scripted assignment, the `roles` variable is where you specify any roles the task is assigned to. For example, when `roles.add(adminRole);` is called, the Administrator role is added to the assignment.
 
 ## Resource Action Assignments
 
-Users can assign a task to a resource action such as an *Update* action. If your workflow definition specifies the UPDATE action in an assignment, then anyone who has permission to update the type of asset being processed in the workflow is assigned to the task. You can configure multiple assignments for a task.
+Users can assign a task to a resource action such as an Update action. If your workflow definition specifies the UPDATE action in an assignment, then anyone who has permission to update the type of asset being processed in the workflow is assigned to the task. You can configure multiple assignments for a task.
 
-*Resource actions* are operations performed by Users on an application or entity. For example, a User might have permission to update Message Boards Messages. This is called an UPDATE resource action, because the User can update the resource. If you're uncertain about what resource actions are, refer to the developer tutorial on the [permission system](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for a more detailed explanation.
+*Resource actions* are operations performed by users on an application or entity. For example, a user might have permission to update Message Boards Messages. This is called an UPDATE resource action, because the user can update the resource. If you're uncertain about what resource actions are, refer to the developer tutorial on the [permission system](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for a more detailed explanation.
 
-To find all the resource actions that have been created, you need access to the Roles Admin application in the Control Panel (in other words, you need permission for the VIEW action on the Roles resource).
+To find all the resource actions that have been created, you need access to the roles admin application in the Control Panel (in other words, you need permission for the VIEW action on the roles resource).
 
 1. Navigate to the _Control Panel_ &rarr; _Users_ &rarr; _Roles_.
 1. Add a new Regular Role. See [Managing Roles](../../../users-and-permissions/roles-and-permissions/creating-and-managing-roles.md) for more information.
-1. Once the Role is added, navigate to the Define Permissions interface for the Role.
+1. Once the role is added, navigate to the Define Permissions interface for the role.
 1. Find the resource whose action should define your workflow assignment.
 
 Here's what the assignment's XML looks like:
@@ -164,7 +184,7 @@ Here's what the assignment's XML looks like:
 </assignments>
 ```
 
-Now when the workflow proceeds to the task with the resource action assignment, Users with `UPDATE` permission on the resource (for example, Message Boards Messages) are notified of the task and can assign it to themselves (if the notification is set to Task Assignees). Specifically, Users see the tasks in their *My Workflow Tasks* application under the tab *Assigned to My Roles*.
+Now when the workflow proceeds to the task with the resource action assignment, users with `UPDATE` permission on the resource (for example, Message Boards Messages) are notified of the task and can assign it to themselves (if the notification is set to Task Assignees). Specifically, users see the tasks in their My Workflow Tasks application under the tab Assigned to My Roles.
 
 Use all upper case letters for resource action names. Here are some common resource actions:
 
@@ -176,7 +196,7 @@ Use all upper case letters for resource action names. Here are some common resou
 * SUBSCRIBE
 * ADD_DISCUSSION
 
-Determine the probable resource action name from the permissions screen for a resource. For example, in Message Boards, one of the permissions displayed on that screen is *Add Discussion*. Convert that to all uppercase and replace the space with an underscore, and you have the action name.
+Determine the probable resource action name from the permissions screen for a resource. For example, in Message Boards, one of the permissions displayed on that screen is Add Discussion. Convert that to all uppercase and replace the space with an underscore, and you have the action name.
 
 ## Task Timers
 

@@ -5,25 +5,25 @@ uuid: a9354b98-4d80-476d-ba76-92d35155654b
 
 {bdg-primary}`Subscription`
 
-Task nodes require interaction by people. To alert and associate tasks with the right people, use [Notifications](./configuring-workflow-actions-and-notifications.md#adding-notifications) and Assignments, respectively. You can assign Task nodes to 
+Task nodes require interaction by people. To alert and associate tasks with the right people, use [notifications](./configuring-workflow-actions-and-notifications.md#adding-notifications) and assignments, respectively. You can assign task nodes to 
 
-- Specific Roles
-- Multiple Roles of a [Role type](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) (Organization, Site, Asset Library, Account, or Regular Role types)
-- The Asset Creator
-- Resource Actions
-- Specific Users
+- Specific roles
+- Multiple roles of a [role type](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) (organization, site, asset library, account, or regular role types)
+- The content creator
+- Resource actions
+- Specific users
 
 Additionally, you can write a [script](../../developer-guide/using-the-script-engine-in-workflow.md) to define the assignment (see [Scripted Assignments](#scripted-assignments)).
 
-![You can add an Assignment to a Task node.](./assigning-task-nodes/images/01.png)
+![You can add an assignment to a task node.](./assigning-task-nodes/images/01.png)
 
 ## Resource Action Assignments
 
-You can assign a workflow task to a _Resource Action_. Resource actions are operations performed by Users on an application or entity. For example, a User might have permission to update Message Boards Messages. This is called an UPDATE resource action, because the User can update the resource. If your workflow definition specifies the UPDATE action in an assignment, anyone with permission to update the asset type being processed in the workflow is assigned to the task. You can configure multiple assignments for a task.
+You can assign a workflow task to a _resource action_. Resource actions are operations performed by users on an application or entity. For example, a user might have permission to update message boards messages. This is called an UPDATE resource action, because the user can update the resource. If your workflow definition specifies the UPDATE action in an assignment, anyone with permission to update the asset type being processed in the workflow is assigned to the task. You can configure multiple assignments for a task.
 
-<!--To learn more about Resource Actions, refer to the developer tutorial on the [permission system](LINK when available) for a more detailed explanation.-->
+<!--To learn more about resource actions, refer to the developer tutorial on the [permission system](LINK when available) for a more detailed explanation.-->
 
-Here's what the assignment looks like in the Source (Workflow XML) view:
+Here's what the assignment looks like in the source (XML) view:
 
 ```xml
 <assignments>
@@ -35,12 +35,12 @@ Here's what the assignment looks like in the Source (Workflow XML) view:
 
 You can assign the workflow to the appropriate workflow enabled asset.
 
-Now when the workflow proceeds to the task with the resource action assignment, Users with `UPDATE` permission on the resource (for example, Message Boards Messages) are notified of the task and can assign it to themselves (if the notification is set to Task Assignees). Specifically, Users see the tasks in their *My Workflow Tasks* application under the tab *Assigned to My Roles*.
+Now when the workflow proceeds to the task with the resource action assignment, Users with `UPDATE` permission on the resource (for example, message boards messages) are notified of the task and can assign it to themselves (if the notification is set to task assignees). Specifically, Users see the tasks in their *My Workflow Tasks* application under the tab *Assigned to My Roles*.
 
 ```{note}
-The My Workflow Tasks application is accessible from a User's personal menu:
+The My Workflow Tasks application is accessible from a user's personal menu:
 
-![My Workflow Tasks is where Users go to manage content in the workflow.](./assigning-task-nodes/images/02.png)
+![My Workflow Tasks is where users manage content in the workflow.](./assigning-task-nodes/images/02.png)
 ```
 
 Use all upper case letters for resource action names. To enter more than one, use a comma-separated list. Here are some common resource actions:
@@ -53,11 +53,11 @@ Use all upper case letters for resource action names. To enter more than one, us
 * SUBSCRIBE
 * ADD_DISCUSSION
 
-You can determine the probable resource action name from the permissions screen for that resource. For example, in Message Boards, one of the permissions displayed on that screen is *Add Discussion*. Convert that to all uppercase and replace the space with an underscore, and you have the action name.
+You can determine the probable resource action name from the permissions screen for that resource. For example, in message boards, one of the permissions displayed on that screen is *Add Discussion*. Convert that to all uppercase and replace the space with an underscore, and you have the action name.
 
 ## Scripted Assignments
 
-You can also use a script to manage the assignment. Here's the script for the Review task assignment in the Scripted Single Approver workflow definition (`single-approver-scripted-assignment-workflow-definition.xml`):
+You can also use a script to manage the assignment. Here's the script for the review task assignment in the Scripted Single Approver workflow definition (`single-approver-scripted-assignment-workflow-definition.xml`):
 
 ```groovy
 import com.liferay.portal.kernel.model.Group;
@@ -89,13 +89,26 @@ else {
 
     roles.add(role);
 }
-
-user = null;
 ```
 
-This script assigns the task to the *Administrator* Role, then checks if the asset's *group* is an Organization. If so, it assigns it to the *Organization Content Reviewer* Role. If not, it assigns the task to the *Site Content Reviewer* Role.
+This script assigns the task to the *Administrator* Role, then checks if the asset's *group* is an organization. If so, it assigns it to the *Organization Content Reviewer* Role. If not, it assigns the task to the *Site Content Reviewer* Role.
 
-Note the `roles = new ArrayList<Role>();` line above. In a scripted assignment, the `roles` variable is where you specify any Roles the task is assigned to. For example, when `roles.add(adminRole);` is called, the Administrator Role is added to the assignment.
+Note the `roles = new ArrayList<Role>();` line. In a scripted assignment, the `roles` variable is where you specify any roles the task is assigned to. For example, when `roles.add(adminRole);` is called, the administrator role is added to the assignment.
+
+In the XML source, scripted assignments are written in the `<scripted-assignment>` XML element:
+
+```xml
+<assignments>
+   <scripted-assignment>
+      <script>
+         <![CDATA[
+            ...
+         ]]>
+      </script>
+      <script-language>groovy</script-language>
+   </scripted-assignment>
+</assignments>
+```
 
 ## Additional Information
 

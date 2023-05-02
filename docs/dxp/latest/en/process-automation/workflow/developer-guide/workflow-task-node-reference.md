@@ -130,7 +130,6 @@ The above assignment specifies that only the User with the user ID of 20156 may 
                         roles.add(role);
                     }
 
-                    user = null;
                 ]]>
             </script>
         <script-language>groovy</script-language>

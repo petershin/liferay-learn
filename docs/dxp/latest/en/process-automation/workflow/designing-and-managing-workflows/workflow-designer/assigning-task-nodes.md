@@ -21,8 +21,6 @@ Additionally, you can write a [script](../../developer-guide/using-the-script-en
 
 You can assign a workflow task to a _resource action_. Resource actions are operations performed by users on an application or entity. For example, a user might have permission to update message boards messages. This is called an UPDATE resource action, because the user can update the resource. If your workflow definition specifies the UPDATE action in an assignment, anyone with permission to update the asset type being processed in the workflow is assigned to the task. You can configure multiple assignments for a task.
 
-<!--To learn more about resource actions, refer to the developer tutorial on the [permission system](LINK when available) for a more detailed explanation.-->
-
 Here's what the assignment looks like in the source (XML) view:
 
 ```xml
@@ -35,7 +33,7 @@ Here's what the assignment looks like in the source (XML) view:
 
 You can assign the workflow to the appropriate workflow enabled asset.
 
-Now when the workflow proceeds to the task with the resource action assignment, Users with `UPDATE` permission on the resource (for example, message boards messages) are notified of the task and can assign it to themselves (if the notification is set to task assignees). Specifically, Users see the tasks in their *My Workflow Tasks* application under the tab *Assigned to My Roles*.
+Now when the workflow proceeds to the task with the resource action assignment, Users with `UPDATE` permission on the resource (for example, message boards messages) are notified of the task and can assign it to themselves (if the notification is set to task assignees). Specifically, users see the tasks in their *My Workflow Tasks* application under the tab *Assigned to My Roles*.
 
 ```{note}
 The My Workflow Tasks application is accessible from a user's personal menu:
@@ -57,7 +55,6 @@ You can determine the probable resource action name from the permissions screen 
 
 ## Scripted Assignments
 
-<!-- do we need an availability notice for the users list?-->
 You can use a script to manage the assignment. Set a single user in the `user` variable, or add users to a list in the `users` variable. To specify role assignments, add a list of roles (even if there's just one) to the `roles` variable. 
 
 In the XML source, scripted assignments are written in the `<scripted-assignment>` XML element:
@@ -111,7 +108,7 @@ else {
 }
 ```
 
-This script assigns the task to the *Administrator* Role, then checks if the asset's *group* is an organization. If so, it assigns it to the *Organization Content Reviewer* Role. If not, it assigns the task to the *Site Content Reviewer* Role.
+This script assigns the task to the administrator role, then checks if the asset's group is an organization. If so, the organization content reviewer role is added. If not, the site content reviewer role is added.
 
 Note the `roles = new ArrayList<Role>();` line. In a scripted assignment, the `roles` variable is where you specify any roles the task is assigned to. For example, when `roles.add(adminRole);` is called, the administrator role is added to the assignment.
 

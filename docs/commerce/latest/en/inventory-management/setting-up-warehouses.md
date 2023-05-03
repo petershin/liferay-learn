@@ -23,11 +23,11 @@ Before creating a warehouse, you must enable the applicable country and region o
 
 1. Click *Submit*.
 
-   This creates the new inactive warehouse. You can now add its address, geolocation and activate it.
+   This creates a new inactive warehouse and opens its details tab.
 
    ![Enter details for the new warehouse and activate it.](./setting-up-warehouses/images/02.png)
 
-1. (Optional) Edit the name and add a description.
+1. (Optional) Edit or localize the name and description.
 
 1. Enter the latitude and longitude values for the warehouse in the Geolocation section.
 
@@ -41,7 +41,7 @@ Before creating a warehouse, you must enable the applicable country and region o
    You must set the geolocation before you can activate the warehouse.
    ```
 
-1. You must link a warehouse to one or more channels after creation. This determines the product inventory for those channels. 
+1. Link the warehouse to one or more channels. This determines the product inventory for those channels.
 
    Click the *Eligibility* tab, select *Specific Channels*, enter a channel name and click *Select*.
 

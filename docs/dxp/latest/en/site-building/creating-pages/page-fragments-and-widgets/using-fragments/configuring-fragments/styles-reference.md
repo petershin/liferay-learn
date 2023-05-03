@@ -21,7 +21,9 @@ To access a fragment's Styles menu,
 
 ![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
 
-Many styles have defined tokens supported by style books. See [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) and [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) for more information.
+Many styles have defined tokens supported by style books. The value of tokens can be inherited from style books, which is indicated by a blue dot or "value from stylebook" icon (![Value from Stylebook](../../../../../images/icon-theme.png)) next to the displayed value. See [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) and [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) for more information.
+
+![Visual representation of inherited token values with blue dots](./styles-reference/images/07.png)
 
 ```{note}
 For Liferay 7.4 U31+/GA31+, you can configure fragment styles for individual viewports by clicking the device buttons at the top of the screen or setting up [adaptive media](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md) for background images. For earlier versions, you can only configure text and spacing styles for different devices.

@@ -5,7 +5,7 @@ uuid: 4214e7cf-2624-4d50-98ca-d3a02791742d
 
 Use Liferay to create and manage users for Delectable Bonsai. See [Create and Manage Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users) to learn more.
 
-## Creating Users
+## Create an Administrator
 
 Instead of continuing to use the default Liferay admin account, create a new Delectable Bonsai administrator account that will go on to create the other users, organizations, and accounts.
 
@@ -52,7 +52,7 @@ In a production environment, you should not use the default admin account. Inste
    * Sign in with `kyle@delectablebonsai.com` as the email address and `test` as the password.
    * In the next page to reset password, set the new password as `learn`.
 
-Create an account for the IT manager.
+## Create an Account for the IT Manager.
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Click _Add User_ (![Add icon](../../images/icon-add.png)).
 

@@ -7,7 +7,7 @@ uuid: f6380d67-6784-46a4-8723-46fcc24177a5
 
 You may have a business use case where you need another Liferay environment with its own set of sites, users, and organizations. Rather than spinning up a brand new server, you can create a virtual instance.
 
-For example, Delectable Bonsai also sells maple syrup as a white label product. Other companies purchase the syrup and add their own branding to it. Delectable Bonsai runs a virtual instance to host their separate, white label side of the business.
+For example, Delectable Bonsai has both an external, public facing website for their business and an internal intranet for its employees that it calls Breakfast. These are built using virtual instances. 
 
 ## Virtual Instances in LXC
 
@@ -19,9 +19,9 @@ Contact your Liferay Cloud support person for setting up virtual instances.
 
 1. Click _Add_ (![Add icon](../../images/icon-add.png)) and enter the following information.
 
-   * Web ID: `www.bulkbonsaimaplesyrup.com`
-   * Virtual Host: `www.bulkbonsaimaplesyrup.com`
-   * Mail Domain: `bulkbonsaimaplesyrup.com`
+   * Web ID: `breakfast.delectablebonsai.com`
+   * Virtual Host: `breakfast.delectablebonsai.com`
+   * Mail Domain: `delectablebonsai.com`
    * Max Users: `0` (note, this means unlimited users)
    * Active: toggle on
    * Virtual Instance Initializer: select _Blank Site_.
@@ -32,15 +32,21 @@ Contact your Liferay Cloud support person for setting up virtual instances.
 
 1. Since this is not a real externally hosted site, add the domain to your `/etc/hosts` file of your local system.
 
-   `127.0.0.1 www.bulkbonsaimaplesyrup.com`
+   `127.0.0.1 breakfast.delectablebonsai.com`
 
    ```{note}
-   If using a docker container, `--add-host bulkbonsaimaplesyrup.com:127.0.0.1` entry must be included in your run command.
+   If using a docker container, `--add-host breakfast.delectablebonsai.com:127.0.0.1` entry must be included in your run command.
    ```
 
-1. Once the virtual instance is successfully added, navigate to `http://www.bulkbonsaimaplesyrup.com:8080/`. 
+1. Once the virtual instance is successfully added, navigate to `http://breakfast.delectablebonsai.com:8080/`. 
 
    ![The new virtual instance is ready to use.](./configuring-virtual-instances/images/02.png)
+
+## Create an Administrator for the New Instance
+
+Virtual instances are separate Liferay instances. The new instance you just created has no user accounts in it. Create one for Kyle Klein so he can administer this instance as well. 
+
+If you need a reminder for how to do that, you can [go back](../users-accounts-organizations/managing-users.md#create-an-administrator) and follow the instructions to register him and make him an administrator of this instance. 
 
 The next step is to [configure instance settings](./configuring-instance-settings.md).
 

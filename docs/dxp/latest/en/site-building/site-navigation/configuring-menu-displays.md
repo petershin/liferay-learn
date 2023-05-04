@@ -75,7 +75,7 @@ You can configure which pages at what level from the menu appear in the widget. 
 | Field | Description |
 | :--- | :--- |
 | **Start with Menu Items In** | Select the type of Level: _Level_, _Level Relative to the Current Menu Item_, or _Select Parent_.  |
-| **Number of Levels** | Select the level number to display, from 0 to 4. Level 0 represents the parent page, Level 1 represents the first level child page, and so forth. |
+| **Number of Levels** | Select the level number to display, from 0 to 4. Level 0 represents the parent page, Level 0 represents the first level child page, and so forth. |
 | **Levels to Display:** | Select the number of levels to display in the navigation, from 1 down to Unlimited. |
 | **Expand Sublevels:** | Select _Auto_ or _All_ from this dropdown menu; this determines if hovering the mouse over the navigation reveals navigation levels one at a time automatically or all the levels at once. |
 

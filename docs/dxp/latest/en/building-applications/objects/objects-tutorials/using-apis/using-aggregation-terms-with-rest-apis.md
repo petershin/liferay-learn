@@ -159,4 +159,4 @@ This batch GET method includes the `aggregationTerms` URL parameter with two val
 
 * [Object API Basics](./object-api-basics.md)
 * [Using Batch APIs](./using-batch-apis.md)
-* [Using Nested Fields with REST APIs](./using-nested-fields-with-rest-apis.md)
+* [Using `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md)

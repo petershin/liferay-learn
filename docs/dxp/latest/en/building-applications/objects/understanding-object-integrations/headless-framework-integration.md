@@ -11,7 +11,7 @@ The path for these headless services follows the `c/[pluralobjectlabel]` naming 
 
 ![Each object appears under REST Applications.](./headless-framework-integration/images/01.png)
 
-While the object is active, you can use these APIs to perform basic CRUD operations, run complex queries using [aggregation terms](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) and [nested fields](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md), trigger standalone actions, manage entry relationships, and more. See [Using APIs](../objects-tutorials/using-apis.md) for object API tutorials.
+While the object is active, you can use these APIs to perform basic CRUD operations, run complex queries using [aggregation terms](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) and [nested fields](../objects-tutorials/using-apis/using-nestedfields-to-query-related-entries.md), trigger standalone actions, manage entry relationships, and more. See [Using APIs](../objects-tutorials/using-apis.md) for object API tutorials.
 
 ## Default Company-Scoped REST APIs
 
@@ -76,7 +76,7 @@ For the HTTP endpoints, replace `relationshipName` with the name of your relatio
 For site-scoped objects, the ERC endpoint includes the `/scope/{scopeKey}` prefix (e.g., `/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`). External reference code endpoints are not available for system objects.
 
 ```{tip}
-In addition to the dedicated relationship APIs, you can use the `nestedFields` query parameter with the object's other GET APIs to return an entry with its related entries. When using this parameter, you must provide the name of the relationship you want to include in the output (e.g., `nestedFields=ticketAssignee`). See [Using Nested Fields with REST APIs](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md) for more information and an introductory tutorial.
+In addition to the dedicated relationship APIs, you can use the `nestedFields` query parameter with the object's other GET APIs to return an entry with its related entries. When using this parameter, you must provide the name of the relationship you want to include in the output (e.g., `nestedFields=ticketAssignee`). See [Using `nestedFields` to Query Related Entries](../objects-tutorials/using-apis/using-nestedfields-to-query-related-entries.md) for more information and an introductory tutorial.
 ```
 
 ## Standalone Action REST APIs

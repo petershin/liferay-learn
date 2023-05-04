@@ -350,7 +350,7 @@ Use the REST APIs to add object entries and manage their relationships:
    }
    ```
 
-   See [Using Nested Fields with REST APIs](./using-nested-fields-with-rest-apis.md) for more information on the `nestedFields` parameter.
+   See [Using `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md) for more information on the `nestedFields` parameter.
 
 ## Examining the Code
 
@@ -381,5 +381,5 @@ Use the REST APIs to add object entries and manage their relationships:
 ## Related Topics
 
 * [Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md)
-* [Using Nested Fields with REST APIs](./using-nested-fields-with-rest-apis.md)
+* [Using Nested Fields with REST APIs](./using-nestedfields-to-query-related-entries.md)
 * [Defining Object Relationships](../../creating-and-managing-objects/relationships/defining-object-relationships.md)

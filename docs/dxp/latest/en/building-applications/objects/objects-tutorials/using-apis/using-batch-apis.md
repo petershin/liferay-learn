@@ -225,5 +225,5 @@ The GET method is included for demonstration purposes. This returns a complete l
 ## Related Topics
 
 * [Object API Basics](./object-api-basics.md)
-* [Using Nested Fields with REST APIs](./using-nested-fields-with-rest-apis.md)
+* [Using `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
 * [Using Aggregation Terms with REST APIs](./using-aggregation-terms-with-rest-apis.md)

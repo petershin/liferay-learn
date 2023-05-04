@@ -404,7 +404,7 @@ Follow these steps to add and query related object entries:
 
 ## Examining the `Charlie_GET_ById` Script
 
-```{literalinclude} ./using-nested-fields-with-rest-apis/resources/liferay-w4s7.zip/curl/Charlie_GET_ById.sh
+```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Charlie_GET_ById.sh
    :language: bash
 ```
 

@@ -222,5 +222,5 @@ GETメソッドは、デモのために含まれています。 これは、Life
 ## 追加情報
 
 * [オブジェクトAPIの基本](./object-api-basics.md)
-* [REST APIでネストしたフィールドの使用](./using-nested-fields-with-rest-apis.md)
+* [REST APIでネストしたフィールドの使用](./using-nestedfields-to-query-related-entries.md)
 * [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md)

@@ -156,4 +156,4 @@ unzip liferay-b3x5.zip
 
 * [オブジェクトAPIの基本](./object-api-basics.md)
 * [バッチAPIの使用](./using-batch-apis.md)
-* [REST APIでネストしたフィールドの使用](./using-nested-fields-with-rest-apis.md)
+* [REST APIでネストしたフィールドの使用](./using-nestedfields-to-query-related-entries.md)

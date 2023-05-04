@@ -3,13 +3,21 @@ uuid: a4cb2ac1-d3b7-4956-b2ea-c4cc0d30eb1a
 ---
 # Auditing Object Definition Events
 
-{bdg-secondary}`Available Liferay 7.4 U47+/GA47+`
+{bdg-secondary}`Available Liferay 7.4 U72+/GA72+`
 
-The Objects application is integrated with Liferay's Audit framework, so you can track events for object definitions and entries. To access the Audit application, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Audit*.
+You can use Liferay's audit framework to track events for custom object definitions and their entries. To track entry events, you must [enable entry history](#enabling-entry-history) for the desired definition. While enabled, you can view an object's history via the [Audit application](#using-the-audit-application) or [REST APIs](#using-rest-apis).
+
+```{important}
+Viewing an entry's history requires both the `View` and `Object Entry History` permissions for the entry.
+```
+
+## Using the Audit Application
+
+To access the Audit application, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Audit*.
 
 ![Click Audit in the Control Panel to view events related to object definitions.](./auditing-object-definition-events/images/01.png)
 
-The Audit application lists events in a table with these columns:
+Events appear in a table with these columns:
 
 | Column | Description |
 | :--- | :--- |
@@ -21,25 +29,33 @@ The Audit application lists events in a table with these columns:
 | Client IP | IP address responsible for the action. |
 | Create Date | When the event record was created. |
 
-You can click any event field to view a more complete record, including specific action details.
+You can click any event field to view a more complete record, including specific action details. If desired, you can search and filter results using keywords and other facets.
+
+Object entry events use the `ObjectDefinition#[ObjectID]` naming pattern.
 
 ![Click an event field to view more details.](./auditing-object-definition-events/images/02.png)
 
-If desired, you can search and filter results using keywords and other facets.
+## Using REST APIs
+
+You can use the `nestedFields` parameter with the `auditEvents` value to return an entry's history in GET API calls (e.g., `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`). See [Using `nestedFields` to Audit Entry History](../objects-tutorials/using-apis/using-nestedfields-to-audit-entry-history.md) for a basic tutorial.
 
 ## Enabling Entry History
 
-By default, entry history is disabled for custom objects. You can configure this setting for definition drafts. After publishing, you cannot change this setting.
+By default, entry history is disabled for custom objects. For 7.4 U72+/GA72+, you can configure this setting at any time. In earlier versions, you can only configure this setting before [publishing the object definition](./creating-objects.md#publishing-object-drafts).
 
-Follow these steps:
+To enable entry history,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Edit an object definition draft.
+1. Begin editing the desired object definition.
 
-1. In the Details tab, enable entry history and click *Save*.
+1. In the Details tab, toggle *Enable Entry History*.
 
    ![Enable entry history.](./auditing-object-definition-events/images/03.png)
+
+1. Click *Save*.
+
+While enabled, Liferay keeps a history of entry events that you can view in the Audit application or via API calls.
 
 ## Related Topics
 

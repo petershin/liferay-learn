@@ -53,11 +53,11 @@ This page serves as an archive and index of videos that were previously hosted o
 
 ### 7.3 Front-End Developer
 
-* [7.3 Front-End Developer (1/5) - Build Your First Front-End Project DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZbw4S_sMBs-F1dq0ploHvH)
-* [7.3 Front-End Developer (2/5) - Create Your Unique Site Brand with Themes DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZChjtsBVZP3ZH3eheUQVl4)
-* [7.3 Front-End Developer (3/5) - Create Page Fragments DXP](https://youtube.com/playlist?list=PLm3_L1L-YueZlR9rzVRSC2edT51uC9d_G)
-* [7.3 Front-End Developer (4/5) - Content Presentation DXP](https://youtube.com/playlist?list=PLm3_L1L-YueahH2OkCuH-nRcC6S3SbVbh)
-* [7.3 Front-End Developer (5/5) - Controlling Page Layouts DXP](https://youtube.com/playlist?list=PLm3_L1L-YuebnQR-FFZn9f-3GAJsr5VvD)
+* [7.3 Front-End Developer (1/5) - Build Your First Front-End Project](https://youtube.com/playlist?list=PLm3_L1L-YueYkCX-m7AaSdKJDkwDdda4x)
+* [7.3 Front-End Developer (2/5) - Create Your Unique Site Brand with Themes](https://youtube.com/playlist?list=PLm3_L1L-Yueb-sDw7Iho7QXSykCUrRXX3)
+* [7.3 Front-End Developer (3/5) - Create Page Fragments](https://youtube.com/playlist?list=PLm3_L1L-YueYWFcAjj6alNnFwlF6z6CaM)
+* [7.3 Front-End Developer (4/5) - Content Presentation](https://youtube.com/playlist?list=PLm3_L1L-YueZeTWGy1Z2taGJVVmsM5YyJ)
+* [7.3 Front-End Developer (5/5) - Controlling Page Layouts](https://youtube.com/playlist?list=PLm3_L1L-YueaWyxWE-kXG78-QSUy0r9od)
 
 ### 7.3 Back-End Developer
 

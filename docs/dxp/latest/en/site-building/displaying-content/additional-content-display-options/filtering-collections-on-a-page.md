@@ -9,7 +9,7 @@ There are two Page Fragments you can add to your pages to help Users filter cont
 
 ## Using the Collection Filter Fragment
 
-The Collection Filter Fragment is used to filter the content displayed in a chosen Collection on the page. Users can either search for keywords or select categories to filter the Collection associated with the filter Fragment.
+The Collection Filter Fragment is used to filter the content displayed in a chosen Collection on the page. Users can either search for keywords, select categories, or tags to filter the Collection associated with the filter Fragment.
 
 Follow these steps to add and configure a Collection Filter Fragment to a page (that is already displaying a Collection in a [Collection Display Fragment](./displaying-collections.md#configuring-a-collection-display-fragment)):
 
@@ -21,32 +21,39 @@ Follow these steps to add and configure a Collection Filter Fragment to a page (
 
     The *Filter* drop-down menu appears when you have selected a compatible Collection.
 
-1. Use the Filter menu to choose a type of filter for the Fragment, *Keywords* or *Category*.
+1. Use the Filter menu to choose a type of filter for the Fragment, *Keywords* ,*Category*, or *tags*.
 
     ```{note}
     If any modules have been deployed adding custom Collection filters (by implementing the [`FragmentCollectionFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-collection-filter-api/src/main/java/com/liferay/fragment/collection/filter/FragmentCollectionFilter.java) and [`InfoFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/info/info-api/src/main/java/com/liferay/info/filter/InfoFilter.java) interfaces), then you can also choose these filters from the list.
     ```
 
-    If you choose the *Keywords* filter type, then Users can search for any keyword to filter the Collection by. If you choose the *Category* filter type, then the *Source* input field appears to configure the selection of categories Users can choose from.
+The Collection Filter Fragment's behavior changes depending on whether you configured the Keywords, Category, or Tags filter type.
 
-1. If you chose the Category filter type, then click on the Source input field, and use the popup dialog to choose the source of categories for Users to choose from.
+### Filtering by Keyword
 
-    ![Select the vocabulary or category that contains the desired category selection.](./filtering-collections-on-a-page/images/02.png)
-
-1. Click *Select This Level* when you have selected the vocabulary or parent category *containing the desired categories to choose from*.
-
-1. Publish the page.
-
-The Collection Filter Fragment's behavior changes depending on whether you configured the Keywords or Category filter type.
-
-If you chose the Keywords type, then the Collection Filter Fragment appears as a search bar. Users can enter keywords to filter Collections displayed on the page to content containing those keywords.
+ When Keywords is selected, the Collection Filter Fragment appears as a search bar, where users can filter the displayed content of collections by entering keywords.
 
 ![The Keywords filter type presents a search bar to Users to enter keywords to filter by.](./filtering-collections-on-a-page/images/03.png)
 
-If you chose the Category type, then the Fragment appears as a menu listing all of the categories that can be chosen. Users can select any number of these categories and apply them to filter Collections to content with those categories.
+### Filtering by Category
+
+When *Category* is selected, the *Source* input field can be used to configure which categories users can select.
+
+![Select the vocabulary or category that contains the desired category selection.](./filtering-collections-on-a-page/images/02.png)
+
+1. Click *Select This Level* when you have selected the vocabulary or parent category *containing the desired categories to choose from*.
+
+2. Publish the page.
+
+After configuring the Category filter, the Collection Filter Fragment displays a menu of categories. Users can select one or more categories to filter the displayed content of the collection.
 
 ![The Category filter type presents a list of categories for Users to enable and apply as a filter.](./filtering-collections-on-a-page/images/04.png)
 
+### Filtering by Tags
+
+When *Tags* is selected, users can type in the provided field and see a dropdown showing existing tags that can be selected.
+
+![The Tags filter type presents a search bar with autocomplete that displays available tags.](./filtering-collections-on-a-page/images/06.png)
 ## Using the Applied Filters Fragment
 
 The Applied Filters Fragment is used to see a list of filters applied with the [Collection Filter Fragment](#using-the-collection-filter-fragment).

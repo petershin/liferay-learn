@@ -5,7 +5,7 @@ uuid: a4cb2ac1-d3b7-4956-b2ea-c4cc0d30eb1a
 
 {bdg-secondary}`Available Liferay 7.4 U72+/GA72+`
 
-You can use Liferay's audit framework to track events for custom object definitions and their entries. To track entry events, you must [enable entry history](#enabling-entry-history) for the desired definition. While enabled, you can view an object's history via the [Audit application](#using-the-audit-application) or [REST APIs](#using-rest-apis).
+You can use Liferay's audit framework to track events for custom object definitions and their entries. To track entry events, you must [enable entry history](#enabling-entry-history) for the desired definition. While enabled, you can view an entry's history via the [Audit application](#using-the-audit-application) or [REST APIs](#using-rest-apis).
 
 ```{important}
 Viewing an entry's history requires both the `View` and `Object Entry History` permissions for the entry.
@@ -55,7 +55,7 @@ To enable entry history,
 
 1. Click *Save*.
 
-While enabled, Liferay keeps a history of entry events that you can view in the Audit application or via API calls.
+While enabled, Liferay keeps a history of entry events that you can view in the Audit application or via REST API calls.
 
 ## Related Topics
 

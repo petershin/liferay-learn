@@ -129,9 +129,13 @@ Follow these steps to edit the object draft:
 
    While enabled, you can use the Page Comments widget in entry display pages. See [Creating Display Page Templates for Objects](../displaying-object-entries.md#creating-display-page-templates-for-objects).
 
-1. Enable or disable history for object entries. You can only configure this setting before publishing.
+1. Enable or disable history for object entries.
 
-   While enabled, object entry events appear in the Audit application. See [Auditing Object Definition Events](./auditing-object-definition-events.md).
+   While enabled, Liferay keeps a history of entry events that you can view in the Audit application or via REST API calls. See [Auditing Object Definition Events](./auditing-object-definition-events.md).
+
+   ```{important}
+   For 7.4 U72+/GA72+, you can configure this setting at any time. For prior versions, you can only configure this setting before publishing.
+   ```
 
 1. Click *Save*.
 

@@ -156,4 +156,4 @@ unzip liferay-b3x5.zip
 
 * [개체 API 기본 사항](./object-api-basics.md)
 * [배치 API 사용](./using-batch-apis.md)
-* [REST API에서 중첩 필드 사용](./using-nested-fields-with-rest-apis.md)
+* [REST API에서 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md)

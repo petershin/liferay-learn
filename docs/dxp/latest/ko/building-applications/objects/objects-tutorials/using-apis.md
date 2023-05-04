@@ -3,7 +3,7 @@ toc:
   - ./using-apis/object-api-basics.md
   - ./using-apis/using-batch-apis.md
   - ./using-apis/using-relationship-rest-apis.md
-  - ./using-apis/using-nested-fields-with-rest-apis.md
+  - ./using-apis/using-nestedfields-to-query-related-entries.md
   - ./using-apis/using-aggregation-terms-with-rest-apis.md
 ---
 # API 사용
@@ -14,7 +14,7 @@ toc:
 using-apis/object-api-basics.md
 using-apis/using-batch-apis.md
 using-apis/using-relationship-rest-apis.md
-using-apis/using-nested-fields-with-rest-apis.md
+using-apis/using-nestedfields-to-query-related-entries.md
 using-apis/using-aggregation-terms-with-rest-apis.md
 ```
 
@@ -34,7 +34,7 @@ using-apis/using-aggregation-terms-with-rest-apis.md
 :::
 
 :::{grid-item-card} REST API로 중첩 필드 사용
-:link: ./using-apis/using-nested-fields-with-rest-apis.md
+:link: ./using-apis/using-nestedfields-to-query-related-entries.md
 :::
 
 :::{grid-item-card} REST API로 집계 용어 사용

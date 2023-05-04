@@ -222,5 +222,5 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
 ## 추가 정보
 
 * [개체 API 기본 사항](./object-api-basics.md)
-* [REST API에서 중첩 필드 사용](./using-nested-fields-with-rest-apis.md)
+* [REST API에서 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md)
 * [REST API에서 집계 용어 사용](./using-aggregation-terms-with-rest-apis.md)

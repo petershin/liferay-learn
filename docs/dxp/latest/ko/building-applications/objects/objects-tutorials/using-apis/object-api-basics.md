@@ -157,5 +157,5 @@ unzip liferay-v1s4.zip
 ## 추가 정보
 
 * [배치 API 사용](./using-batch-apis.md)
-* [REST API에서 중첩 필드 사용](./using-nested-fields-with-rest-apis.md)
+* [REST API에서 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md)
 * [REST API에서 집계 용어 사용](./using-aggregation-terms-with-rest-apis.md)

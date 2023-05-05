@@ -118,7 +118,7 @@ The default payment method is determined by existing priority settings for the c
 
 1. Select a user.
 
-   All users with the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear in the channel account manager drop-down. See [Understanding Channel Account Managers](#understanding-channel-account-managers) for more information.
+   All users with a regular role having the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear in the channel account manager drop-down. See [Understanding Channel Account Managers](#understanding-channel-account-managers) for more information.
 
 1. Click *Save*.
 
@@ -126,7 +126,7 @@ The default payment method is determined by existing priority settings for the c
 
 ### Understanding Channel Account Managers
 
-When selecting default Channel Account Managers, only users that have the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear. You can use this permission to grant users access to accounts without requiring them to be account members or organization account managers.
+When selecting default Channel Account Managers, only users with a regular role that have the `Accounts > Account Entry: Manage Available Accounts via User Channel Rel` permission appear. You can use this permission to grant users access to accounts without requiring them to be account members or organization account managers.
 
 ![Users with this permission appear in the channel account manager dropdown menu.](./setting-channel-defaults/images/08.png)
 

@@ -107,7 +107,7 @@ Next, in the `liferayidp` container (`localhost:7080`), navigate to _Global Menu
 
 1. Click the user profile image in the top right and click _Sign Out_. Sign in with the credentials `support@delectablebonsai.com:learn`. Note the `liferayidp` container verified the user and provided successful login.
 
-Next: [Configuring MFA](./configuring-mfa.md)
+Next: [Authorizing with OAuth2](./authorizing-with-oauth2.md)
 
 ## Relevant Concepts
 

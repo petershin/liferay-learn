@@ -27,4 +27,4 @@ These topics give you a tour through many of Liferay's security features. To lea
 
 Ready?
 
-[Let's Go!](./security/authenticating-with-saml.md)
+[Let's Go!](./security/authentication.md)

@@ -28,8 +28,8 @@ In the Element Source editor, place the cursor in the desired location and click
 | | <a href="#user" id="user">**USER**</a> | |
 | Active Segment Entry IDs | Number: the user's segment IDs | `${user.active_segment_entry_ids}` |
 | Age | Number: the user's age in number of years | `${user.age}` |
-| Asset Category Ids {bdg-secondary}`7.4 U41+` | Number: the IDs of the user's categories | `${user.asset_category_ids}` |
-| Asset Tag Names {bdg-secondary}`7.4 U41+` | Text: the user's tags | `${user.asset_tag_names}` |
+| Asset Category Ids (_Available 7.4 U41+_) | Number: the IDs of the user's categories | `${user.asset_category_ids}` |
+| Asset Tag Names (_Available 7.4 U41+_) | Text: the user's tags | `${user.asset_tag_names}` |
 | Birthday | Date: the user's birth date | `${user.birthday}` |
 | Create Date | Date: the date when the user account was created in Liferay | `${user.create_date}` |
 | Current Site Role IDs | Number: the user's site role IDs | `${user.current_site_role_ids}` |
@@ -46,7 +46,7 @@ In the Element Source editor, place the cursor in the desired location and click
 | Job Title | Text: the user's job title | `${user.job_title}` |
 | Language ID | Text: the user's language code (e.g., `en_US`) | `${user.language_id}` |
 | Last Name | Text: the user's last name | `${user.last_name}` |
-| Parent Asset Category Ids {bdg-secondary}`7.4 U41+` | Number: the IDs of all the parent categories of the user's categories | `${user.parent_asset_category_ids}` |
+| Parent Asset Category Ids (_Available 7.4 U41+_) | Number: the IDs of all the parent categories of the user's categories | `${user.parent_asset_category_ids}` |
 | Regular Role IDs | Number: the role IDs for the user's regular roles | `${user.regular_role_ids}` |
 | User group IDs | Number: the IDs of the user groups that the user is part of | `${user.user_group_ids}` |
 | | <a href="#conditional-elements" id="conditional-elements">**CONDITIONAL ELEMENTS**\*</a> | |

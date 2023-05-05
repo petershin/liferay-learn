@@ -15,7 +15,7 @@ Delectable Bonsai has come a long way from its days at the farmer's market. Now 
 
 1. Next, navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Click _Multi-Factor Authentication_ under the security section.
 
-1. Tick the _enabled_ box and click _Save_. See [Enabling Multi-Factor Authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication#enabling-multi-factor-authentication) to learn more about the configuration options.
+1. Tick the _Enabled_ box and click _Save_. See [Enabling Multi-Factor Authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication#enabling-multi-factor-authentication) to learn more about the configuration options.
 
    Note, ensure you can successfully receive email through FakeSMTP before proceeding to prevent locking yourself out of the system.
 
@@ -32,6 +32,10 @@ Delectable Bonsai has come a long way from its days at the farmer's market. Now 
    ![Get the one-time password from the email.](./configuring-mfa/images/01.png)
 
 1. Copy and paste the one-time password onto the login page. Click _Submit_. You successfully logged into Liferay.
+
+```{note}
+Logging in for the rest of the course will be difficult with Multi-Factor Authentication enabled. When finished with this exercise, go back and uncheck the _Enabled_ box and click _Save_ to disable Multi-Factor Authentication. 
+```
 
 Next: [Securing Web Services](./securing-web-services.md)
 

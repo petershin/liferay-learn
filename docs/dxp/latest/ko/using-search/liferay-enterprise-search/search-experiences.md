@@ -29,11 +29,11 @@ Liferay Enterprise Search Experiences 앱에는 최종 사용자의 검색 경�
 
 {bdg-link-primary}`[베타 기능](../../system-administration/configuring-liferay/feature-flags.md)`
 
-[Semantic Search](./search-experiences/semantic-search.md) 기계 학습 모델을 사용하여 색인 콘텐츠와 사용자의 자연어 검색 구문을 구문 분석하여 결과가 검색 의도를 더 잘 반영하도록 합니다.
+[시맨틱 검색](./search-experiences/semantic-search.md) 기계 학습 모델을 사용하여 색인 콘텐츠와 사용자의 자연어 검색 구문을 구문 분석하여 결과가 검색 의도를 더 잘 반영하도록 합니다.
 
 ## Liferay 검색 경험 얻기
 
-Liferay 검색 경험은 Liferay DXP 7.3에서 [Liferay 기업 검색](../liferay-enterprise-search.md) 구독 및 [Liferay 7.4에서 Liferay DXP와 함께 제공](./activating-liferay -enterprise-search.md). 자세한 내용은 [LES 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651#DXP-7.3-LES)를 확인하세요.
+Liferay 검색 경험은 Liferay DXP 7.3에서 [Liferay 기업 검색](../liferay-enterprise-search.md) 구독 및 [Liferay 7.4에서 Liferay DXP와 함께 제공](./activating-liferay -enterprise-search.md). 자세한 내용은 [LES 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651#DXP-7.3-LES) 를 확인하세요.
 
 | 버전 가용성          | 설치 방법                                                                                                               | 배송 방법 수정                                                                                           |
 |:--------------- |:------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------- |
@@ -42,7 +42,7 @@ Liferay 검색 경험은 Liferay DXP 7.3에서 [Liferay 기업 검색](../lifera
 
 Liferay DXP 7.3에서 검색 경험은 LES 가입자에게 애드온 애플리케이션으로 제공됩니다.
 
-1. [고객 포털](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3)에서 앱을 다운로드하십시오.
+1. [고객 포털](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-3) 에서 앱을 다운로드하십시오.
 1. Liferay DXP에 애플리케이션 설치 
       * Liferay 번들을 실행하는 경우 LPKG를 `[Liferay Home]/deploy` 폴더에 복사합니다. Liferay가 실행되고 있지 않으면 Liferay를 시작하기 전에 `[Liferay Home]/osgi/marketplace` 에 직접 복사할 수 있습니다.
    * Liferay Docker 컨테이너를 실행하는 경우 [지원되는 방법 중 하나로 LPKG를 설치합니다](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md).

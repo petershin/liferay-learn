@@ -79,7 +79,7 @@ SQL 스크립트를 준비했으면 다음 단계에 따라 데이터 복원과 
 
 1. [사용자 지정 SQL 스크립트를 온라인으로 포함하도록 백업 서비스](../../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 배포합니다.
 
-1. [백업 페이지에서 환경 복원](#restoring-an-environment-from-the-backups-page)에 대해 위에 나열된 지침을 따르십시오.
+1. [백업 페이지에서 환경 복원](#restoring-an-environment-from-the-backups-page) 에 대해 위에 나열된 지침을 따르십시오.
 
 데이터베이스가 복원되면 백업 서비스의 `scripts` 폴더에서 SQL 스크립트가 실행됩니다.
 

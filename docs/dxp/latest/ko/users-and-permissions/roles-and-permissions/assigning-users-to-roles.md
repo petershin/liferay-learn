@@ -88,7 +88,6 @@ Liferay CE 7.3.1 GA2 및 Liferay DXP 7.2 SP3+부터 사이트 역할을 [사용�
 
 ![자산 라이브러리 메뉴의 People &rarr; Memberships 섹션 내에서 자산 라이브러리 역할을 할당합니다.](./assigning-users-to-roles/images/03.png)
 
-
 <!--
 ## Account Roles
 

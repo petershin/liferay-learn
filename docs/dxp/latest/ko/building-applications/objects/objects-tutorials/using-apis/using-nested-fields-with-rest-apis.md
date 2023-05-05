@@ -5,7 +5,7 @@
 사용자 정의 객체 API를 사용하면 `nestedFields` 매개변수를 사용하여 단일 GET 요청에서 여러 수준의 관련 객체를 반환할 수 있습니다. `nestedFieldsDepth` 매개변수는 쿼리에 포함된 객체 항목의 깊이를 결정합니다: `0-5`.
 
 ```{tip}
-`nestedFields` 매개변수는 일반적으로 여러 요청이 필요한 정보를 검색하는 편리한 방법입니다. 이를 통해 관련 항목과 함께 항목을 검색할 수 있습니다. 관련 항목만 반환하기 위해 Liferay는 전용 [관계 API](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis)를 제공합니다. 소개는 [관계 REST API 사용](./using-relationship-rest-apis.md)을 참조하세요.
+`nestedFields` 매개변수는 일반적으로 여러 요청이 필요한 정보를 검색하는 편리한 방법입니다. 이를 통해 관련 항목과 함께 항목을 검색할 수 있습니다. 관련 항목만 반환하기 위해 Liferay는 전용 [관계 API](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) 를 제공합니다. 소개는 [관계 REST API 사용](./using-relationship-rest-apis.md)을 참조하세요.
 ```
 
 계속하려면 [설정](#setting-up-a-liferay-instance) 새 Liferay 7.4 인스턴스 및 [준비](#preparing-the-sample-code) 제공된 튜토리얼 코드. 그런 다음 스크립트를 실행하여 관련 항목을 만들고 `nestedFields` 매개변수를 사용하여 쿼리합니다.
@@ -17,7 +17,7 @@
 
 다음으로 [create](../../creating-and-managing-objects/creating-objects.md) 세 가지 개체:
 
-1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
+1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 클릭 **사물** .
 
 1. 세 개의 개체 초안을 만듭니다.
 

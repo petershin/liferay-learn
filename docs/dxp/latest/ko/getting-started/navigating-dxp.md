@@ -102,7 +102,7 @@ Liferay 7.3 CE GA6 및 Liferay DXP 7.3 GA1부터 Liferay Commerce 3.0은 이제 
 
 Liferay Commerce에 대한 자세한 내용은 [라이프레이 커머스 소개](https://learn.liferay.com/commerce/latest/ko/starting-a-store/introduction-to-liferay-commerce.html) 참조하십시오.
 
-### 제어반
+### 제어판
 
 **제어판** 에는 Liferay DXP 설치 또는 특정 인스턴스에 대해 전역적으로 **범위** 지정할 수 있는 일반 관리 작업 및 구성이 포함되어 있습니다.
 

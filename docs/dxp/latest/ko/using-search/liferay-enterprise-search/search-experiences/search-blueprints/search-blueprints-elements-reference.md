@@ -195,13 +195,13 @@ ipstack 서비스 설정, 사용자 정의 지리적 사이트 필드 사용, Bl
 
 ![지정된 필드에서 정확히 일치하는 결과를 필터링합니다.](./search-blueprints-elements-reference/images/09.png)
 
-**외부 참조:**[Elasticsearch 용어 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-terms-query.html) 설명서를 참조하십시오.
+**외부 참조:** [Elasticsearch 용어 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-terms-query.html) 설명서를 참조하십시오.
 
 ### 일정 기간 동안 생성된 콘텐츠로 검색 제한
 
 범위 쿼리를 사용하여 결과를 필터링합니다. 시간 범위를 구성합니다.
 
-**외부 참조:**[Elasticsearch 범위 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-range-query.html) 설명서를 참조하십시오.
+**외부 참조:** [Elasticsearch 범위 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-range-query.html) 설명서를 참조하십시오.
 
 ### HEAD 버전으로 검색 제한
 
@@ -245,7 +245,7 @@ ipstack 서비스 설정, 사용자 정의 지리적 사이트 필드 사용, Bl
 
 Must Not 발생 절이 있는 부울 쿼리에서 쿼리를 래핑하면 쿼리와 일치하는 경우 결과를 숨길 수 있습니다.
 
-**외부 참조:**[Elasticsearch 부울 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html) 설명서를 참조하십시오.
+**외부 참조:** [Elasticsearch 부울 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html) 설명서를 참조하십시오.
 
 ### 정확한 용어 일치로 숨기기
 
@@ -285,7 +285,7 @@ Elasticsearch DSL 쿼리 본문을 있는 그대로 요소에 붙여넣습니다
 
 ![Elasticsearch 쿼리 본문을 요소에 붙여넣습니다.](./search-blueprints-elements-reference/images/12.png)
 
-**외부 참조:**[Elasticsearch Wrapper 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-wrapper-query.html) 설명서를 참조하십시오.
+**외부 참조:** [Elasticsearch Wrapper 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-wrapper-query.html) 설명서를 참조하십시오.
 
 ### 스케줄링 인식
 
@@ -295,7 +295,7 @@ Elasticsearch DSL 쿼리 본문을 있는 그대로 요소에 붙여넣습니다
 
 쿼리 문자열 쿼리 구문을 사용하여 하나 이상의 필드를 일치시킵니다. 모든 검색 키워드가 일치해야 하는지(AND) 또는 하나만 일치해야 하는지(OR)를 결정하는 데 사용할 기본 부울 연산자(OR 또는 AND)를 지정합니다. 이 요소를 사용하면 부울 연산자, 와일드카드 등을 사용하여 고급 검색 키워드 문자열을 입력할 수 있습니다.
 
-**외부 참조:**[Elasticsearch 쿼리 문자열 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html#query-string-syntax) 설명서를 참조하십시오.
+**외부 참조:** [Elasticsearch 쿼리 문자열 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html#query-string-syntax) 설명서를 참조하십시오.
 
 ### 스테이징 인식
 
@@ -314,7 +314,7 @@ Elasticsearch DSL 쿼리 본문을 있는 그대로 요소에 붙여넣습니다
 - 이 요소에서 제공하는 절과 일치하는 모든 문서를 부스트하도록 부스트를 설정합니다.
 - 쿼리 절과 일치해야 하는 값을 하드코딩하려면 Text to Match를 설정하십시오. 사용자의 키워드로만 검색하려면 이 항목을 공백으로 두십시오.
 
-**외부 참조:**[Elasticsearch 다중 일치 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) 설명서를 참조하십시오.
+**외부 참조:** [Elasticsearch 다중 일치 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) 설명서를 참조하십시오.
 
 ## 추가 정보
 

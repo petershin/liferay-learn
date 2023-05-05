@@ -15,7 +15,7 @@ SVG 스프라이트 맵은 각각 고유한 ID를 가진 함께 그룹화된 여
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
     ```{note}
-    지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오. 
+    지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오. 
     ```
 
 1. 샘플 작업 공간을 다운로드하고 압축을 풉니다.
@@ -114,7 +114,7 @@ Next, run this command from the client extension project's folder in the sample 
 이렇게 하면 클라이언트 확장이 빌드되고 zip이 Liferay의 `deploy/` 폴더에 배포됩니다.
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)를 사용하여 [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
+클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 를 사용하여 [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) .
 ```
 
 ```{tip}
@@ -130,7 +130,7 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 ## 페이지에서 새 스프라이트 맵 사용
 
 ```{warning}
-테마 스프라이트 맵 클라이언트 확장은 현재 [dev 기능 플래그](../../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags)(` LPS-166479`). 프로덕션 환경에서 이 클라이언트 확장을 사용하면 안 됩니다. 테스트 목적으로만 사용하십시오. 
+테마 스프라이트 맵 클라이언트 확장은 현재 [dev 기능 플래그](../../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (` LPS-166479`). 프로덕션 환경에서 이 클라이언트 확장을 사용하면 안 됩니다. 테스트 목적으로만 사용하십시오. 
 ```
 
 배포된 클라이언트 확장을 사용하도록 페이지를 구성합니다.

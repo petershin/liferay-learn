@@ -6,31 +6,31 @@
 
 ## 선택 목록 만들기
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판* 탭으로 이동하여 *선택 목록*클릭합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** 탭으로 이동하여 **선택 목록** 클릭합니다.
 
-1. *추가* (![Add Button](../../../images/icon-add.png))을 클릭합니다.
+1. **추가**(![Add Button](../../../images/icon-add.png))을 클릭합니다.
 
    ![추가를 클릭하여 새 선택 목록을 만듭니다.](./using-picklists/images/01.png)
 
 1. UI에서 목록을 식별할 수 있도록 선택 목록의 이름을 지정합니다. 생성 후 이름을 현지화할 수 있습니다.
 
-1. *저장* 클릭하여 빈 선택 목록 정의를 만들고 외부 참조 코드(ERC)를 생성합니다. 생성 후 ERC를 편집할 수 있습니다.
+1. **저장** 클릭하여 빈 선택 목록 정의를 만들고 외부 참조 코드(ERC)를 생성합니다. 생성 후 ERC를 편집할 수 있습니다.
 
 1. 새 선택 목록을 클릭하여 편집을 시작합니다.
 
-1. 항목에서 *추가* (![Add](../../../images/icon-add.png))을 클릭합니다.
+1. 항목에서 **추가**(![Add](../../../images/icon-add.png))을 클릭합니다.
 
    ![선택 목록에 새 항목을 추가하려면 추가를 클릭합니다.](./using-picklists/images/02.png)
 
 1. 모달 창에서 항목의 이름과 키를 입력합니다.
 
-   **이름**: 항목의 표시 이름을 결정하며 생성 후 현지화할 수 있습니다.
+   **이름** : 항목의 표시 이름을 결정하며 생성 후 현지화할 수 있습니다.
 
-   **키**: 백엔드에서 애플리케이션이 이해하는 기준값을 결정하고 카멜케이스를 사용한다.
+   **키** : 백엔드에서 애플리케이션이 이해하는 기준값을 결정하고 카멜케이스를 사용한다.
 
    ![이름과 키를 입력한 다음 저장을 클릭합니다.](./using-picklists/images/03.png)
 
-1. *저장*클릭합니다. 선택 목록은 새 항목으로 즉시 업데이트되고 외부 참조 코드(ERC)를 생성합니다.
+1. **저장** 클릭합니다. 선택 목록은 새 항목으로 즉시 업데이트되고 외부 참조 코드(ERC)를 생성합니다.
 
    목록 항목을 클릭하여 이름을 현지화하거나 ERC를 편집할 수 있지만 키는 변경할 수 없습니다. 언제든지 항목을 제거할 수 있습니다.
 
@@ -42,7 +42,7 @@
 
 {bdg-secondary}`7.4 U56+/GA56+의 경우`
 
-일단 생성되면 개체 필드를 생성할 때 선택 목록을 선택할 수 있습니다. *선택 목록* 또는 *다중 선택 선택 목록* 필드 유형을 선택하고 목록을 선택합니다. 자세한 내용은 [객체에 필드 추가](../creating-and-managing-objects/fields/adding-fields-to-objects.md) 및 [사용자 정의 상태 추가 및 관리](../creating-and-managing-objects/fields/adding-and-managing-custom-states.md) 참조하십시오.
+일단 생성되면 개체 필드를 생성할 때 선택 목록을 선택할 수 있습니다. **선택 목록** 또는 **다중 선택 선택 목록** 필드 유형을 선택하고 목록을 선택합니다. 자세한 내용은 [객체에 필드 추가](../creating-and-managing-objects/fields/adding-fields-to-objects.md) 및 [사용자 정의 상태 추가 및 관리](../creating-and-managing-objects/fields/adding-and-managing-custom-states.md) 참조하십시오.
 
 ![사용자는 새 개체 필드를 만들 때 선택 목록을 선택할 수 있습니다.](./using-picklists/images/05.png)
 

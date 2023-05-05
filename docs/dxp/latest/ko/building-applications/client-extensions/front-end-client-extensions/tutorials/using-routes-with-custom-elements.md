@@ -2,7 +2,7 @@
 
 {bdg-secondary}`사용 가능한 Liferay 7.4+`
 
-사용자 정의 요소 클라이언트 확장은 Liferay의 프런트 엔드 인프라를 사용하여 외부 애플리케이션을 Liferay 플랫폼에 등록하고 이를 위젯으로 렌더링합니다. 여러 경로를 포함하는 애플리케이션의 경우(예: [React Router](https://reactrouter.com/)) 원격 애플리케이션 속성을 정의하여 런타임 시 위젯에 사용되는 경로를 결정할 수 있습니다. 이러한 속성은 Liferay의 원격 앱 메뉴 또는 배포된 위젯의 구성 옵션을 통해 애플리케이션에 대해 설정할 수 있습니다.
+사용자 정의 요소 클라이언트 확장은 Liferay의 프런트 엔드 인프라를 사용하여 외부 애플리케이션을 Liferay 플랫폼에 등록하고 이를 위젯으로 렌더링합니다. 여러 경로를 포함하는 애플리케이션의 경우(예: [React Router](https://reactrouter.com/) ) 원격 애플리케이션 속성을 정의하여 런타임 시 위젯에 사용되는 경로를 결정할 수 있습니다. 이러한 속성은 Liferay의 원격 앱 메뉴 또는 배포된 위젯의 구성 옵션을 통해 애플리케이션에 대해 설정할 수 있습니다.
 
 ```{warning}
 다른 유형의 클라이언트 확장과 같은 사용자 정의 요소 또는 IFrame 배포는 Liferay 7.4의 **베타 기능**입니다. 이 자습서는 사용자 지정 요소 원격 애플리케이션을 다르게 배포하며 향후 업데이트까지 여전히 권장되는 접근 방식입니다.
@@ -16,7 +16,7 @@
 사용자 정의 요소 클라이언트 확장은 빌드, 패키징 또는 호스팅 방식에 관계없이 모든 기술을 사용할 수 있습니다. 이 자습서는 기본 라우팅이 있는 샘플 사용자 지정 요소 애플리케이션만 제공합니다.
 ```
 
-`create_custom_element.sh` 실행하려면 최신 버전 [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), [YARN](https://classic.yarnpkg.com/)이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
+`create_custom_element.sh` 실행하려면 최신 버전 [Node.JS](https://nodejs.org/) , [NPM](https://www.npmjs.com/) , [YARN](https://classic.yarnpkg.com/) 이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
 
 ## React 애플리케이션 생성, 구축 및 호스팅
 
@@ -144,7 +144,7 @@ J1V3-Custom-Element는 인스턴스화할 수 있으므로 각각 고유한 독�
 
 ## `경로` 속성 사용
 
-자동 생성된 앱에는 `hello-world`, `hello-foo`, `hello-bar`의 세 가지 경로가 포함됩니다. 기본적으로 애플리케이션은 `hello-world` 경로를 사용합니다. 그러나 원격 애플리케이션 속성을 사용하여 대체 경로를 사용하도록 구성할 수 있습니다. [원격 앱 메뉴](#defining-a-route-property-via-the-remote-apps-menu) 또는 [위젯의 구성 옵션](#defining-a-route-property-via-widget-configuration)을 통해 이러한 속성을 설정할 수 있습니다.
+자동 생성된 앱에는 `hello-world`, `hello-foo`, `hello-bar`의 세 가지 경로가 포함됩니다. 기본적으로 애플리케이션은 `hello-world` 경로를 사용합니다. 그러나 원격 애플리케이션 속성을 사용하여 대체 경로를 사용하도록 구성할 수 있습니다. [원격 앱 메뉴](#defining-a-route-property-via-the-remote-apps-menu) 또는 [위젯의 구성 옵션](#defining-a-route-property-via-widget-configuration) 을 통해 이러한 속성을 설정할 수 있습니다.
 
 ### 원격 앱 메뉴를 통해 경로 속성 정의
 

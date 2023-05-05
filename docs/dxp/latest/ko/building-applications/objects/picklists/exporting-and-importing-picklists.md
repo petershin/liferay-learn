@@ -4,9 +4,9 @@ Liferay의 내보내기/가져오기 프레임워크를 사용하여 환경 간�
 
 ## 선택 목록 내보내기
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판* 탭으로 이동하여 *선택 목록*클릭합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** 탭으로 이동하여 **선택 목록** 클릭합니다.
 
-1. *Actions* (![Actions Button](../../../images/icon-actions.png)) 원하는 목록 을 클릭 하고 *Export as JSON*선택 합니다 .
+1. **Actions**(![Actions Button](../../../images/icon-actions.png)) 원하는 목록 을 클릭 하고 **Export as JSON** 선택 합니다 .
 
    이렇게 하면 선택 목록 정의 및 항목이 JSON 파일로 다운로드됩니다.
 
@@ -14,15 +14,15 @@ Liferay의 내보내기/가져오기 프레임워크를 사용하여 환경 간�
 
 ## 선택 목록 가져오기
 
-1. *글로벌 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판* 탭으로 이동하여 *선택 목록*클릭합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** 탭으로 이동하여 **선택 목록** 클릭합니다.
 
-1. Application Bar에서 *Actions* (![Actions Button](../../../images/icon-actions.png))를 클릭하고 *Import Picklist*선택합니다.
+1. Application Bar에서 **Actions**(![Actions Button](../../../images/icon-actions.png))를 클릭하고 **Import Picklist** 선택합니다.
 
    ![애플리케이션 표시줄에서 작업 버튼을 클릭하고 선택 목록 가져오기를 선택합니다.](./exporting-and-importing-picklists/images/02.png)
 
 1. 모달 창에서 목록의 이름을 입력하고 가져올 선택 목록 JSON을 선택합니다.
 
-1. *가져오기*클릭합니다.
+1. **가져오기** 클릭합니다.
 
    ![목록 이름을 입력하고 가져올 선택 목록을 선택합니다.](./exporting-and-importing-picklists/images/03.png)
 

@@ -19,7 +19,7 @@
 
 1. 객체 정의의 애플리케이션 페이지로 이동합니다.
 
-1. 원하는 항목에 대해 *작업* 버튼(![Action Button](../../../../images/icon-actions.png))을 클릭하고 독립 실행형 작업을 선택합니다.
+1. 원하는 항목에 대해 **작업** 버튼(![Action Button](../../../../images/icon-actions.png))을 클릭하고 독립 실행형 작업을 선택합니다.
 
    이 예에서 작업은 미리 알림 보내기입니다.
 
@@ -33,7 +33,7 @@ Liferay는 게시된 개체 정의에 대한 REST API를 자동으로 생성합�
 
 1. `[server]:[port]/o/api` (예: `localhost:8080/o/api`)에서 Liferay의 API 탐색기를 엽니다.
 
-1. *REST 애플리케이션* 클릭하고 원하는 오브젝트 정의를 선택하십시오. 사용자 지정 개체는 `c/[pluralobjectlabel]` 이름 지정 패턴(예: `c/티켓`)을 사용합니다.
+1. **REST 애플리케이션** 클릭하고 원하는 오브젝트 정의를 선택하십시오. 사용자 지정 개체는 `c/[pluralobjectlabel]` 이름 지정 패턴(예: `c/티켓`)을 사용합니다.
 
 각 독립 실행형 작업에 대해 Liferay는 두 개의 PUT API를 생성합니다. 하나는 항목의 ID를 사용하고 다른 하나는 항목의 외부 참조 코드(ERC)를 사용합니다.
 
@@ -47,7 +47,7 @@ Liferay는 게시된 개체 정의에 대한 REST API를 자동으로 생성합�
 
 Liferay는 독립 실행형 작업을 트리거할 수 있는 역할을 관리하기 위한 권한을 자동으로 생성합니다. 각 권한은 `작업을 따릅니다.[actionName]` 명명 패턴(예: `action.sendReminder`). 개체 권한에 대한 자세한 내용은 [권한 프레임워크 통합](../../understanding-object-integrations/permissions-framework-integration.md) 참조하십시오.
 
-![독립 실행형 권한은 작업을 사용합니다.[actionName] 명명 패턴.](./using-manual-actions/images/05.png)
+![독립 실행형 권한은 작업을 사용합니다. [actionName] 명명 패턴.](./using-manual-actions/images/05.png)
 
 ## 추가 정보
 

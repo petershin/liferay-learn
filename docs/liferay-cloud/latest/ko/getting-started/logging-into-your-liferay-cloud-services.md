@@ -4,17 +4,17 @@
 
 ## 로그인 자격 증명 찾기
 
-1. _infra_ 환경으로 이동합니다.
+1. **infra** 환경으로 이동합니다.
 
-1. 왼쪽 메뉴에서 _설정_ 클릭합니다.
+1. 왼쪽 메뉴에서 **설정** 클릭합니다.
 
-1. _비밀_ 탭을 클릭합니다.
+1. **비밀** 탭을 클릭합니다.
 
-1. _lcp-secret-ci-customer-user_ 및 _lcp-secret-ci-customer-password_ 암호를 클릭하여 액세스합니다.
+1. **lcp-secret-ci-customer-user** 및 **lcp-secret-ci-customer-password** 암호를 클릭하여 액세스합니다.
 
    ![lcp-secret-ci-customer-user 및 lcp-secret-ci-customer-password 시크릿에는 로그인 자격 증명이 포함되어 있습니다.](./logging-into-your-liferay-cloud-services/images/01.png)
 
-1. 각 비밀의 페이지에서 *보기* 클릭하여 값을 표시합니다. 표시된 값을 클릭하여 클립보드에 복사합니다.
+1. 각 비밀의 페이지에서 **보기** 클릭하여 값을 표시합니다. 표시된 값을 클릭하여 클립보드에 복사합니다.
 
    ![보기를 클릭하여 비밀 값을 표시합니다.](./logging-into-your-liferay-cloud-services/images/02.png)
 
@@ -22,7 +22,7 @@
 
 1. 선택한 환경(dev, uat 등)으로 이동합니다.
 
-1. 페이지 상단의 *사이트* 방문을 클릭합니다.
+1. 페이지 상단의 **사이트** 방문을 클릭합니다.
 
    ![사이트 방문 드롭다운에는 환경의 Liferay 인스턴스에 사용 가능한 모든 엔드포인트가 나열됩니다.](./logging-into-your-liferay-cloud-services/images/03.png)
 

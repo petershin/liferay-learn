@@ -16,7 +16,7 @@ Liferay 서비스는 모든 프로젝트의 핵심입니다. 애플리케이션�
 
 Liferay Cloud의 Liferay 서비스는 Liferay DXP의 온프레미스 인스턴스와 동일한 방식으로 사용할 수 있습니다. 그러나 Liferay Cloud에서 인스턴스로 작업할 때 구성 및 개발 워크플로우에는 몇 가지 차이점이 있습니다.
 
-자세한 내용은 [Liferay 서비스 제한 사항](./reference/platform-limitations.md#liferay-service)을 참조하십시오.
+자세한 내용은 [Liferay 서비스 제한 사항](./reference/platform-limitations.md#liferay-service) 을 참조하십시오.
 
 -   [버전 선택](#choosing-a-version)
 -   [배포(사용자 지정, 패치 및 라이선스)](#deployment-customization-patching-and-licensing)
@@ -43,7 +43,7 @@ liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-sp2-202005120922
 Liferay Cloud 스택이 아직 4.xx로 업데이트되지 않은 경우 기본적으로 이 버전은 리포지토리 루트의 `gradle.properties` 파일에 있습니다. 이 경우 `liferay.workspace.lcp.liferay.image` 속성으로 버전을 정의합니다(주 버전과 별도로 정의할 필요 없음). 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해하기](./reference/understanding-service-stack-versions.md)를 참조하세요.
 ```
 
-Liferay Cloud의 [서비스 변경 로그](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog)에서 각각의 새 릴리스에 대한 참조를 확인할 수 있습니다. 각각의 새로운 서비스 업데이트에는 인스턴스에 사용할 수 있는 Docker 이미지가 포함됩니다. 또한 [Docker Hub의 DXP 태그](https://hub.docker.com/r/liferay/dxp/tags?page=1)를 직접 확인하여 사용할 Docker 이미지 이름을 찾을 수도 있습니다.
+Liferay Cloud의 [서비스 변경 로그](https://help.liferay.com/hc/ko/sections/360006251311-Services-Changelog) 에서 각각의 새 릴리스에 대한 참조를 확인할 수 있습니다. 각각의 새로운 서비스 업데이트에는 인스턴스에 사용할 수 있는 Docker 이미지가 포함됩니다. 또한 [Docker Hub의 DXP 태그](https://hub.docker.com/r/liferay/dxp/tags?page=1) 를 직접 확인하여 사용할 Docker 이미지 이름을 찾을 수도 있습니다.
 
 릴리스 정보의 새 버전을 사용하여 Docker 이미지 값을 업데이트하십시오. 새 Docker 이미지는 인스턴스가 시작되거나 다음에 리포지토리에서 Liferay 서비스를 배포할 때 사용됩니다. 새 릴리스의 Docker 이미지를 사용하여 다른 서비스의 속성을 업그레이드할 수도 있습니다.
 
@@ -99,7 +99,7 @@ liferay
 
 Liferay DXP에는 콘텐츠를 구축, 관리 및 웹에 배포할 수 있는 많은 강력한 기능이 있습니다. 그러나 이러한 기능 중 일부는 Liferay Cloud에서 사용할 수 없습니다.
 
--   [원격 준비](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html)는 현재 Liferay Cloud에서 지원되지 않습니다. 온프레미스 설치에서 Liferay Cloud로 마이그레이션하는 사용자는 스테이징 기능을 계속 사용하려면 로컬 스테이징으로 전환해야 합니다.
+-   [원격 라이브 스테이징 구성](https://learn.liferay.com/dxp/latest/ko/site-building/publishing-tools/staging/configuring-remote-live-staging.html) 는 현재 Liferay Cloud에서 지원되지 않습니다. 온프레미스 설치에서 Liferay Cloud로 마이그레이션하는 사용자는 스테이징 기능을 계속 사용하려면 로컬 스테이징으로 전환해야 합니다.
 
 ## 추가 정보
 

@@ -26,7 +26,7 @@ Liferay에는 콘텐츠 페이지에 개체 양식을 작성하기 위한 양식
 
 1. (선택 사항) 프래그먼트를 사용하여 레이아웃을 디자인합니다. 자세한 내용은 [조각으로 반응형 레이아웃 구축](../../site-building/optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) 을 참조하십시오.
 
-1. *Form Container* 조각을 페이지에 추가하고 개체에 매핑합니다.
+1. **Form Container** 조각을 페이지에 추가하고 개체에 매핑합니다.
 
    컨테이너는 모든 개체 필드에 대한 제출 버튼과 조각을 자동으로 생성합니다. 알파벳순으로 나타납니다. 필수 필드는 그에 따라 표시됩니다.
 
@@ -48,7 +48,7 @@ Liferay에는 콘텐츠 페이지에 개체 양식을 작성하기 위한 양식
 
    ![양식 조각을 구성합니다.](./using-fragments-to-build-forms/images/03.png)
 
-1. 완료되면 *게시* 클릭합니다.
+1. 완료되면 **게시** 클릭합니다.
 
 ## 양식 구성 요소에 대해 지원되는 필드 유형
 

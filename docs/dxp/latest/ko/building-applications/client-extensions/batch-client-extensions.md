@@ -4,7 +4,7 @@ toc:
 ---
 # 배치 클라이언트 확장
 
-{bdg-link-primary}`[개발 기능](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags)`
+{bdg-link-primary}` [개발 기능](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) `
 
 {bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(자체 호스팅)`
 
@@ -23,7 +23,7 @@ feature.flag.COMMERCE-8087=true
 ```
 
 ```{warning}
-이것은 [개발 중인 기능](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags)입니다. 프로덕션 환경에서 개발 기능 플래그를 사용하지 마세요.
+이것은 [개발 중인 기능](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) 입니다. 프로덕션 환경에서 개발 기능 플래그를 사용하지 마세요.
 ```
 
 `client-extension.yaml` 파일에서 배치 클라이언트 확장을 지정합니다.

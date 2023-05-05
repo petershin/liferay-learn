@@ -11,7 +11,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Batch Engine API 기본 사항](./liferay-g4j2.zip)을 다운로드하고 압축을 풉니다.
+1. [Batch Engine API 기본 사항](./liferay-g4j2.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
@@ -21,9 +21,9 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
    unzip liferay-g4j2.zip
    ```
 
-1. 데이터를 내보내려면 내보내는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. *Schemas* 섹션까지 아래로 스크롤하고 내보낼 엔티티의 `x-class-name` 필드를 기록해 둡니다.
+1. 데이터를 내보내려면 내보내는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. **Schemas** 섹션까지 아래로 스크롤하고 내보낼 엔티티의 `x-class-name` 필드를 기록해 둡니다.
 
-1. 다음 cURL 스크립트를 사용하여 Liferay 인스턴스에서 계정을 내보냅니다. 명령줄에서 `curl` 폴더로 이동합니다. *계정* 및 `json` 의 정규화된 클래스 이름을 매개 변수로 사용하여 `ExportTask_POST_ToInstance.sh` 스크립트를 실행합니다. `json` 매개변수는 내보낸 데이터의 형식을 나타냅니다. 또한 `jsonl` 및 `csv` 형식을 지원합니다.
+1. 다음 cURL 스크립트를 사용하여 Liferay 인스턴스에서 계정을 내보냅니다. 명령줄에서 `curl` 폴더로 이동합니다. **계정** 및 `json` 의 정규화된 클래스 이름을 매개 변수로 사용하여 `ExportTask_POST_ToInstance.sh` 스크립트를 실행합니다. `json` 매개변수는 내보낸 데이터의 형식을 나타냅니다. 또한 `jsonl` 및 `csv` 형식을 지원합니다.
 
    ```bash
    ./ExportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account json
@@ -129,7 +129,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 | `-u "test@liferay.com:learn"`                                                | 기본 인증 자격 증명             |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html)을 통해 사용자를 인증해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
 ```
 
 ## Java 클래스 검토
@@ -159,7 +159,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `ExportTaskResource` 메서드를 호출합니다.
 
 ```{important}
-[ExportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ExportTaskResource.java)를 참조하십시오.
+[ExportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ExportTaskResource.java) 를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 Batch Engine 내보내기 REST 서비스를 호출하는 예입니다.
@@ -280,7 +280,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) 은 모든 헤드리스 배치 엔진 서비스 및 스키마를 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 모든 헤드리스 배치 엔진 서비스 및 스키마를 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
 
 ## 추가 정보
 

@@ -6,7 +6,7 @@ Liferay Cloud 및 해당 서비스에는 구독 수준에 따라 몇 가지 중�
 
 Liferay Cloud 사용을 계획할 때 다음과 같은 일반적인 제한 사항을 고려하십시오.
 
-* 사용 가능한 vCPU, 메모리, 크기 조정, 네트워크 구성(도메인, SSL 인증서 및 IP 주소) 및 각 서비스에 대한 VPN 대역폭에 제한이 적용됩니다. 예를 들어 각 서비스는 최대 200GB RAM으로 제한됩니다. 사용자 지정 도메인도 웹 서버의 구성에 따라 [50 또는 1500으로 제한됩니다](#network-configuration).
+* 사용 가능한 vCPU, 메모리, 크기 조정, 네트워크 구성(도메인, SSL 인증서 및 IP 주소) 및 각 서비스에 대한 VPN 대역폭에 제한이 적용됩니다. 예를 들어 각 서비스는 최대 200GB RAM으로 제한됩니다. 사용자 지정 도메인도 웹 서버의 구성에 따라 [50 또는 1500으로 제한됩니다](#network-configuration) .
 
 * 동시 작업(예: 동시 업로드), 빌드 크기, 동시 빌드 및 백업에도 제한이 있습니다.
 
@@ -39,7 +39,7 @@ Liferay Cloud 사용을 계획할 때 다음과 같은 일반적인 제한 사�
 
 **서비스당 추가 인스턴스**: [`스케일` 설정](../manage-and-optimize/auto-scaling.md) 초기에 구독 계획에 대해 구매한 인스턴스 수를 사용합니다. 기본적으로 서비스는 검색을 제외하고 하나의 추가 인스턴스를 추가할 수 있습니다. 검색 서비스는 홀수의 인스턴스를 사용해야 합니다.
 
-**중단 시간**: Liferay Cloud 인프라가 예정된 유지 관리를 위해 업데이트되면 단일 인스턴스로 실행되는 서비스가 다시 시작될 수 있습니다. 중단을 방지하려면 생산 유형 환경에 대해 고가용성 설정(웹 서버 및 Liferay 서비스 각각 2개 인스턴스 및 검색 서비스 3개 인스턴스)을 사용하십시오. 계획된 유지 보수 일정 [여기](https://help.liferay.com/hc/en-us/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule)볼 수 있습니다.
+**중단 시간**: Liferay Cloud 인프라가 예정된 유지 관리를 위해 업데이트되면 단일 인스턴스로 실행되는 서비스가 다시 시작될 수 있습니다. 중단을 방지하려면 생산 유형 환경에 대해 고가용성 설정(웹 서버 및 Liferay 서비스 각각 2개 인스턴스 및 검색 서비스 3개 인스턴스)을 사용하십시오. 계획된 유지 보수 일정 [여기](https://help.liferay.com/hc/ko/articles/360032562611-DXP-Cloud-Platform-Maintenance-and-Release-Schedule) 볼 수 있습니다.
 
 **서비스 인스턴스당 메모리**: 서비스는 최대 200GB의 RAM을 가질 수 있으며 이는 가입 계획에 따라 결정됩니다. 기본 계획에는 서비스당 16GB가 있습니다.
 
@@ -49,7 +49,7 @@ Liferay Cloud 사용을 계획할 때 다음과 같은 일반적인 제한 사�
 
 이러한 제한 사항은 각 Liferay 클라우드 환경에서 [Liferay 서비스](../using-the-liferay-dxp-service.md) 에 적용됩니다.
 
-**원격 스테이징**: [원격 스테이징](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) 은 Liferay Cloud에서 사용할 수 없습니다. 로컬 스테이징은 계속 사용할 수 있으며 지원됩니다.
+**원격 스테이징**: [원격 라이브 스테이징 구성](https://learn.liferay.com/dxp/latest/ko/site-building/publishing-tools/staging/configuring-remote-live-staging.html) 은 Liferay Cloud에서 사용할 수 없습니다. 로컬 스테이징은 계속 사용할 수 있으며 지원됩니다.
 
 **자동 크기 조정**: 활성화되면 자동 크기 조정은 기본 최대 10개까지만 새 인스턴스를 추가할 수 있습니다. 최대 100개의 인스턴스까지 서로 다른 최대 인스턴스 수를 구성할 수 있습니다.
 
@@ -97,9 +97,9 @@ Liferay Cloud 사용을 계획할 때 다음과 같은 일반적인 제한 사�
 
 이러한 제한 사항은 각 Liferay 클라우드 환경에서 [백업 서비스](../platform-services/backup-service/backup-service-overview.md) 에 적용됩니다.
 
-**백업 일관성**: 변경되는 데이터가 있는 데이터베이스에서 복사하는 모든 프로세스와 마찬가지로 업데이트가 진행되는 동안 백업이 생성되면 데이터베이스와 문서 라이브러리의 데이터 간의 일관성을 보장할 수 없습니다. 완전히 일관된 백업을 보장하려면 데이터베이스 관리자와 협력하여 수동 백업을 수행하는 동안 [업데이트를 중지하십시오](../platform-services/backup-service/backup-service-overview.md#creating-a-manual-backup).
+**백업 일관성**: 변경되는 데이터가 있는 데이터베이스에서 복사하는 모든 프로세스와 마찬가지로 업데이트가 진행되는 동안 백업이 생성되면 데이터베이스와 문서 라이브러리의 데이터 간의 일관성을 보장할 수 없습니다. 완전히 일관된 백업을 보장하려면 데이터베이스 관리자와 협력하여 수동 백업을 수행하는 동안 [업데이트를 중지하십시오](../platform-services/backup-service/backup-service-overview.md#creating-a-manual-backup) .
 
-**백업 크기**: Liferay Cloud 버전 4.2.0 이전에는 백업에 사용된 [임시 스토리지](#file-storage). 이러한 버전의 백업 크기는 공유 임시 디스크의 남은 공간으로 제한되며 상황에 따라 달라질 수 있습니다.
+**백업 크기**: Liferay Cloud 버전 4.2.0 이전에는 백업에 사용된 [임시 스토리지](#file-storage) . 이러한 버전의 백업 크기는 공유 임시 디스크의 남은 공간으로 제한되며 상황에 따라 달라질 수 있습니다.
 
 **백업 업로드**: 분당 하나의 백업만 업로드할 수 있습니다.
 

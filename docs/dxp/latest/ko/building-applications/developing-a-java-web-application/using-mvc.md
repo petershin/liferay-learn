@@ -67,9 +67,9 @@ Liferay DXP의 애플리케이션은 여러 개별 모듈 [로](../../liferay-in
 
 더 큰 애플리케이션에서 `-Portlet` 클래스는 모든 컨트롤러 논리를 보유하는 경우 괴물이 되고 다루기 어려워질 수 있습니다. Liferay는 컨트롤러 기능을 분리하기 위해 MVC 명령 클래스를 제공합니다.
 
-* **[`MVCActionCommand`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCActionCommand.html) :** `-ActionCommand` 클래스를 사용하여 조치 URL에 의해 호출되는 각 포틀릿 조치를 보유하십시오.
-* **[`MVCRenderCommand`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.html) :** `-RenderCommand` 클래스를 사용하여 렌더링 URL에 응답하여 적절한 JSP로 디스패치하는 `렌더링` 메서드를 보유합니다.
-* **[`MVCResourceCommand`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCResourceCommand.html) :** `-ResourceCommand` 클래스를 사용하여 리소스 URL을 기반으로 리소스를 제공합니다.
+* ** [`MVCActionCommand`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCActionCommand.html) :** `-ActionCommand` 클래스를 사용하여 조치 URL에 의해 호출되는 각 포틀릿 조치를 보유하십시오.
+* ** [`MVCRenderCommand`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.html) :** `-RenderCommand` 클래스를 사용하여 렌더링 URL에 응답하여 적절한 JSP로 디스패치하는 `렌더링` 메서드를 보유합니다.
+* ** [`MVCResourceCommand`](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/bridges/mvc/MVCResourceCommand.html) :** `-ResourceCommand` 클래스를 사용하여 리소스 URL을 기반으로 리소스를 제공합니다.
 
 모든 것을 함께 연결하고 제대로 작동하려면 혼란스러운 구성 파일이 있어야 합니다. 맞습니까? 잘못됨: `-Portlet` 클래스의 `@Component` 주석에서 모두 쉽게 관리됩니다.
 

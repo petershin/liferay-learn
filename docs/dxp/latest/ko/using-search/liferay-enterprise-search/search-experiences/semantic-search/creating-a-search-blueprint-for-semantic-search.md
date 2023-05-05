@@ -20,13 +20,13 @@ Rescore by Text Embedding 요소는 임베딩 공급자와 함께 작동하도�
 
 ## Rescore by Text Embedding 요소 추가
 
-[시맨틱 검색이 활성화된 상태에서](../semantic-search.md#enabling-semantic-search)처음으로 Liferay를 시작하면 [검색 청사진 UI](../search-blueprints/creating-and-managing-elements.md)에서 Rescore by Text Embedding 요소를 사용할 수 있습니다. 인스턴스에 요소가 표시되지 않으면 수동으로 추가할 수 있습니다.
+[시맨틱 검색이 활성화된 상태에서](../semantic-search.md#enabling-semantic-search) 처음으로 Liferay를 시작하면 [검색 청사진 UI](../search-blueprints/creating-and-managing-elements.md)에서 Rescore by Text Embedding 요소를 사용할 수 있습니다. 인스턴스에 요소가 표시되지 않으면 수동으로 추가할 수 있습니다.
 
-1. Liferay에서 *전역 메뉴* (![Global Menu](../../../../images/icon-applications-menu.png))을 연 다음 *응용 프로그램* &rarr; *청사진*클릭합니다.
+1. Liferay에서 **전역 메뉴**(![Global Menu](../../../../images/icon-applications-menu.png))을 연 다음 **응용 프로그램** &rarr; **청사진** 클릭합니다.
 
-1. *요소*클릭한 다음 *추가* (![Add](../../../../images/icon-add.png))을 클릭합니다.
+1. **요소** 클릭한 다음 **추가**(![Add](../../../../images/icon-add.png))을 클릭합니다.
 
-1. 제목 *Rescore by Text Embedding* 을 입력하고 *만들기*클릭합니다.
+1. 제목 **Rescore by Text Embedding** 을 입력하고 **만들기** 클릭합니다.
 
 1. 아래 섹션에서 요소의 JSON을 복사합니다. [참조: Rescore by Text Embedding 요소](#reference-rescore-by-text-embedding-element)
 

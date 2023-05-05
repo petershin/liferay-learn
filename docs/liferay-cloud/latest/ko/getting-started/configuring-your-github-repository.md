@@ -69,7 +69,7 @@ GitHub 리포지토리를 생성, 복제 및 푸시하는 데 도움이 필요�
 
 `LCP_CI_SCM_TOKEN` 값의 경우 GitHub 조직에 대해 생성된 개인 액세스 토큰을 사용합니다. 이 토큰을 만들고 액세스하는 방법에 대한 지침은 [GitHub 문서](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line) 를 참조하십시오.
 
-생성된 개인 액세스 토큰에는 **repo** 및 **admin:repo***hook** 아래의 모든 범위 권한이 선택되어 있어야 합니다. **admin:repo***hook** 범위 권한은 리포지토리가 Liferay Cloud와 성공적으로 통합된 후 [](#personal-access-token-usage) 특히 제거될 수 있습니다.
+생성된 개인 액세스 토큰에는 **repo** 및 **admin:repo** **hook** 아래의 모든 범위 권한이 선택되어 있어야 합니다. **admin:repo_hook** 범위 권한은 리포지토리가 Liferay Cloud와 성공적으로 통합된 후 [](#personal-access-token-usage) 특히 제거될 수 있습니다.
 
 ![PAT를 성공적으로 사용할 수 있도록 올바른 권한을 확인하십시오.](./configuring-your-github-repository/images/05.png)
 
@@ -108,8 +108,6 @@ Liferay Cloud가 저장소와 통합하려면 `LCP_CI_SCM_TOKEN` 값에서 참�
 새 Git 푸시가 Jenkins 빌드를 트리거하는지 확인합니다.
 
 1. 저장소를 변경(예: 파일 추가)한 다음 분기에 커밋합니다. 
-   
-   
 
     ```bash
     git commit -m "Add file to test builds"
@@ -120,7 +118,6 @@ Liferay Cloud가 저장소와 통합하려면 `LCP_CI_SCM_TOKEN` 값에서 참�
     ```bash
     git push origin branch-name
     ```
-
 
 1. Liferay Cloud Console에서 **빌드** 페이지로 이동합니다.
 

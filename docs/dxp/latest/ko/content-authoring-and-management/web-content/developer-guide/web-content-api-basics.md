@@ -9,6 +9,7 @@ Liferay DXP REST 서비스를 사용하여 사이트에서 구조화된 콘텐�
 아래의 구조 및 구조화된 콘텐츠에 대한 cURL 및 Java 샘플을 참조하세요. 구조화된 콘텐츠 관리에 대한 고급 예제는 [고급 웹 콘텐츠 API](./advanced-web-content-api.md) 을 참조하십시오. Liferay DXP에서 REST API 사용에 대한 개요는 [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)을 참조하십시오.
 
 ## 환경 설정
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
@@ -551,7 +552,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 | `StructuredContent_POST_ToStructuredContentFolder.[java\|sh]` | 웹 콘텐츠 기사를 폴더에 게시합니다.     |
 
 ```{important}
-REST API를 사용하여 웹 콘텐츠 폴더를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle- bin/recycle-bin-overview.md).
+REST API를 사용하여 웹 콘텐츠 폴더를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md).
 ```
 
 ## 관련 정보

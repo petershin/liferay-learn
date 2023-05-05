@@ -68,7 +68,7 @@
 
 **\*** 먼저 각 서비스를 활성화하여 ipstack 및 OpenWeatherMap 변수에 액세스합니다. 시스템 또는 인스턴스 설정 &rarr; 플랫폼 &rarr; 검색 경험을 방문하십시오. 사용 확인란을 클릭하고 구성 중인 서비스에 대한 구성을 저장합니다. OpenWeatherMap 서비스는 활성화된 ipstack 서비스에 따라 달라집니다. ipstack 서비스를 사용하는 예는 [개인화 검색 경험](../personalizing-the-search-experience.md) 참조하십시오.
 
-**\*\****이러한 즉시 사용 가능한 변수 외에도 [Custom Fields](../../../../../system-administration/configuring-liferay/adding-custom-fields.md)는 사용자 엔터티는 요소의 변수로 참조될 수도 있습니다. 예를 들어 이름이***Employee** 인 사용자 정의 필드는 `user.custom.field.employee`가 있는 요소에서 참조됩니다.
+**\*\*** 이러한 즉시 사용 가능한 변수 외에도 [Custom Fields](../../../../../system-administration/configuring-liferay/adding-custom-fields.md)는 사용자 엔터티는 요소의 변수로 참조될 수도 있습니다. 예를 들어 이름이 **Employee** 인 사용자 정의 필드는 `user.custom.field.employee`가 있는 요소에서 참조됩니다.
 
 ## 추가 정보
 

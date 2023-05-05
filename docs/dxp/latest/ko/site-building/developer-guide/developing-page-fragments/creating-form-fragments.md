@@ -6,11 +6,11 @@
 
 양식 조각을 만들려면
 
-1. *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) )을 열고 *Design*확장한 다음 *Fragments*으로 이동합니다.
+1. **Site Menu**( ![Site Menu](../../../images/icon-product-menu.png) )을 열고 **Design** 확장한 다음 **Fragments** 으로 이동합니다.
 
-1. *더하기* (![Plus Button](../../../images/icon-plus.png))을 클릭하여 양식 조각을 구성하기 위한 조각 세트를 만듭니다.
+1. **더하기**(![Plus Button](../../../images/icon-plus.png))을 클릭하여 양식 조각을 구성하기 위한 조각 세트를 만듭니다.
 
-1. *추가* (![Add Button](../../../images/icon-add.png))을 클릭하고 *Form Fragment* 유형을 선택한 후 *다음*클릭합니다.
+1. **추가**(![Add Button](../../../images/icon-add.png))을 클릭하고 **Form Fragment** 유형을 선택한 후 **다음** 클릭합니다.
 
    ![양식 조각 유형을 선택하고 다음을 클릭하십시오.](./creating-form-fragments/images/01.png)
 
@@ -22,7 +22,7 @@
 
    ![조각이 지원하는 필드 유형을 선택합니다.](./creating-form-fragments/images/02.png)
 
-1. *추가*클릭합니다. 이렇게 하면 초안 조각이 생성되고 조각 편집 페이지로 이동합니다.
+1. **추가** 클릭합니다. 이렇게 하면 초안 조각이 생성되고 조각 편집 페이지로 이동합니다.
 
 1. 코드 탭에서 조각에 대한 HTML, CSS 및 JavaScript를 추가합니다.
 
@@ -32,7 +32,7 @@
 
    ![구성 탭에서 JSON을 사용하여 조각을 구성하고 여기에 옵션을 추가합니다.](./creating-form-fragments/images/04.png)
 
-1. *게시*클릭합니다.
+1. **게시** 클릭합니다.
 
 이제 양식 조각을 사용하여 콘텐츠 페이지에서 양식을 작성하십시오. 자세한 내용은 [프래그먼트를 사용하여 양식 작성](../../../building-applications/objects/using-fragments-to-build-forms.md) 참조하십시오.
 

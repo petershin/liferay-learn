@@ -19,7 +19,7 @@ toc:
 
 클라이언트 확장을 사용하면 다음을 수행할 수 있습니다.
 
-* Liferay 코드에 대한 종속성을 피하면서 [맞춤형 JavaScript 또는 CSS](#front-end-client-extensions)적용
+* Liferay 코드에 대한 종속성을 피하면서 [맞춤형 JavaScript 또는 CSS](#front-end-client-extensions) 적용
 * Liferay 페이지의 [사용자 정의 요소](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 에 원격으로 호스팅되는 애플리케이션 포함
 * 동일한 구성 또는 개체를 여러 환경에 적용하여 [클라이언트 확장으로 변환](#configuration-client-extensions)
 * 선택한 프로그래밍 언어 또는 기술을 사용하여 Liferay 외부(예: REST 끝점)에서 실행되는 사용자 지정 서비스 또는 [기능](#microservice-client-extensions) 호출
@@ -37,31 +37,31 @@ toc:
 
 ### 배치 클라이언트 확장
 
-{bdg-link-primary}`[개발 기능](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags)`
+{bdg-link-primary}` [개발 기능](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) `
 
 Batch 클라이언트 확장은 [개체 정의](./objects/creating-and-managing-objects/exporting-and-importing-object-definitions.md) 또는 [워크플로 정의](../process-automation/workflow/introduction-to-workflow.md)과 같은 Liferay 인스턴스에 데이터 엔터티를 제공합니다. [배치 엔진 프레임워크](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md)을 통해 데이터를 내보내 배치 클라이언트 확장을 만듭니다.
 
-이 특정 유형에 대한 자세한 내용은 [Batch Client Extensions](./client-extensions/batch-client-extensions.md) 참조하십시오.
+이 특정 유형에 대한 자세한 내용은 [배치 클라이언트 확장](./client-extensions/batch-client-extensions.md) 참조하십시오.
 
 ### 구성 클라이언트 확장
 
 구성 클라이언트 확장은 Liferay 인스턴스 내에서 기능을 변경하기 위한 특정 구성을 제공합니다.
 
-[microservice client extensions](#microservice-client-extensions)과 같은 다른 클라이언트 확장과 함께 사용할 수 있습니다. 예를 들어 OAuth 사용자 에이전트 클라이언트 확장을 사용하여 사용자 트리거 작업 이벤트와 함께 작동하는 클라이언트 확장을 인증할 수 있습니다.
+[microservice client extensions](#microservice-client-extensions) 과 같은 다른 클라이언트 확장과 함께 사용할 수 있습니다. 예를 들어 OAuth 사용자 에이전트 클라이언트 확장을 사용하여 사용자 트리거 작업 이벤트와 함께 작동하는 클라이언트 확장을 인증할 수 있습니다.
 
-특정 유형에 대한 자세한 내용은 [Configuration Client Extensions](./client-extensions/configuration-client-extensions.md) 을 참조하십시오.
+특정 유형에 대한 자세한 내용은 [구성 클라이언트 확장](./client-extensions/configuration-client-extensions.md) 을 참조하십시오.
 
 ### 프런트 엔드 클라이언트 확장
 
 프런트 엔드 클라이언트 확장은 특정 페이지에 표시할 리소스를 제공합니다. 이제 테마 리소스 또는 사용자 지정 HTML 요소를 클라이언트 확장에서 제공할 수 있습니다. 대부분의 프런트 엔드 클라이언트 확장은 Liferay 인스턴스에 *정적 리소스* 제공합니다.
 
-특정 유형에 대한 자세한 내용은 [Front-end Client Extensions](./client-extensions/front-end-client-extensions.md) 참조하십시오.
+특정 유형에 대한 자세한 내용은 [프런트 엔드 클라이언트 확장](./client-extensions/front-end-client-extensions.md) 참조하십시오.
 
 ### 마이크로서비스 클라이언트 확장
 
 마이크로서비스 클라이언트 확장은 Liferay 내에서 트리거할 API 끝점을 제공합니다(예: 개체 또는 워크플로 작업). 이러한 작업 이벤트가 API를 호출하면 Liferay 외부에서 별도의 *마이크로 서비스*로 원하는 모든 기능을 실행할 수 있습니다.
 
-특정 유형에 대한 자세한 내용은 [Microservice Client Extensions](./client-extensions/microservice-client-extensions.md) 을 참조하세요.
+특정 유형에 대한 자세한 내용은 [마이크로서비스 클라이언트 확장](./client-extensions/microservice-client-extensions.md) 을 참조하세요.
 
 ## 추가 정보
 

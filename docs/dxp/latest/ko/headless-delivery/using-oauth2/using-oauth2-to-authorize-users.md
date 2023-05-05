@@ -7,33 +7,33 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-1. *전역 메뉴*(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 *제어판*으로 이동합니다. *보안* *OAuth 2 관리*.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 으로 이동합니다. **보안***OAuth 2 관리** .
 
-1. *추가*(![아이콘 추가](../../images/icon-add.png))를 클릭하여 새 OAuth2 애플리케이션을 생성합니다.
+1. **추가**(![아이콘 추가](../../images/icon-add.png))를 클릭하여 새 OAuth2 애플리케이션을 생성합니다.
 
-1. 애플리케이션에 이름을 지정합니다(예: foo). 웹사이트 URL을 `http://localhost:3000`으로 설정하고 콜백 URI를 `http://localhost:3000/grant-type-authorization-code`로 설정합니다. *저장*을 클릭합니다.
+1. 애플리케이션에 이름을 지정합니다(예: foo). 웹사이트 URL을 `http://localhost:3000`으로 설정하고 콜백 URI를 `http://localhost:3000/grant-type-authorization-code`로 설정합니다. **저장** 을 클릭합니다.
 
     ![새 OAuth2 애플리케이션을 생성하려면 양식을 작성하세요.](./using-oauth2-to-authorize-users/images/01.png)
 
-1. 클라이언트 ID와 클라이언트 암호를 클립보드에 복사합니다. Client Secret을 얻으려면 *편집*을 클릭하십시오. 팝업 창에서 값을 복사합니다.
+1. 클라이언트 ID와 클라이언트 암호를 클립보드에 복사합니다. Client Secret을 얻으려면 **편집** 을 클릭하십시오. 팝업 창에서 값을 복사합니다.
 
     이 값은 나중에 샘플 React 앱에서 필요합니다.
 
-1. 페이지 상단의 _Scopes_ 탭을 클릭합니다. 아래로 스크롤하여 _LIFERAY.HEADLESS.ADMIN.USER_를 클릭한 다음 _대신 데이터 읽기_ 확인란을 선택합니다.
+1. 페이지 상단의 **Scopes** 탭을 클릭합니다. 아래로 스크롤하여 **LIFERAY.HEADLESS.ADMIN.USER** 를 클릭한 다음 **대신 데이터 읽기** 확인란을 선택합니다.
 
     ![LIFERAY.HEADLESS.ADMIN.USER에 대한 읽기 권한 활성화.](./using-oauth2-to-authorize-users/images/02.png)
 
-    *저장*을 클릭합니다. 이제 OAuth2 애플리케이션에 관리 사용자 API 카테고리에 대한 읽기 권한이 있습니다.
+    **저장** 을 클릭합니다. 이제 OAuth2 애플리케이션에 관리 사용자 API 카테고리에 대한 읽기 권한이 있습니다.
 
-1. 다음으로 *전역 메뉴*(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 *제어판* 탭을 클릭한 다음 *시스템 설정*으로 이동합니다. ~ *보안 도구*.
+1. 다음으로 **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 탭을 클릭한 다음 **시스템 설정** 으로 이동합니다. ~ **보안 도구** .
 
-1. *Portal CORS(Cross-Origin Resource Sharing)* 탭으로 이동하고 *Default Portal CORS Configuration*을 클릭합니다.
+1. **Portal CORS(Cross-Origin Resource Sharing**) 탭으로 이동하고 **Default Portal CORS Configuration** 을 클릭합니다.
 
-1. 값이 `/o/headless-admin-user/*`인 *URL 패턴*을 추가하고 *저장*을 클릭합니다. 이렇게 하면 API의 'headless-admin-user' 범주에 대한 CORS가 활성화됩니다.
+1. 값이 `/o/headless-admin-user/*`인 **URL 패턴** 을 추가하고 **저장** 을 클릭합니다. 이렇게 하면 API의 'headless-admin-user' 범주에 대한 CORS가 활성화됩니다.
 
 ## 샘플 React 앱 배포
 
-1. [OAuth2 React App](./liferay-c2b6.zip)을 다운로드하고 압축을 풉니다.
+1. [OAuth2 React App](./liferay-c2b6.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O
@@ -67,19 +67,19 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 
 권한 부여 코드 흐름에서는 사용자가 자신의 자격 증명으로 로그인하고 앱에 권한이 부여되기 전에 권한 부여를 승인해야 합니다. 다른 흐름에서는 이 추가 단계를 피할 수 있습니다.
 
-1. <http://localhost:3000>에서 실행 중인 React 앱을 연 다음 페이지 상단에서 *인증 코드 흐름* 클릭합니다.
+1. <http://localhost:3000>에서 실행 중인 React 앱을 연 다음 페이지 상단에서 **인증 코드 흐름** 클릭합니다.
 
-1. Liferay 승인 URL에 'http://localhost:8080/o/oauth2/authorize'를 입력합니다. 클립보드에서 클라이언트 ID를 붙여넣습니다. _인증_ 을 클릭합니다.
+1. Liferay 승인 URL에 'http://localhost:8080/o/oauth2/authorize'를 입력합니다. 클립보드에서 클라이언트 ID를 붙여넣습니다. **인증** 을 클릭합니다.
 
-1. 아직 로그인하지 않은 경우 인증 페이지로 이동하기 전에 Liferay 로그인 페이지로 리디렉션됩니다. 사용자 이름과 암호(예 *test@liferay.com:learn*)를 입력하고 *로그인*클릭합니다. 승인 페이지에서 *승인*클릭합니다. 이미 로그인한 경우 인증 페이지로 바로 이동됩니다.
+1. 아직 로그인하지 않은 경우 인증 페이지로 이동하기 전에 Liferay 로그인 페이지로 리디렉션됩니다. 사용자 이름과 암호(예 **test@liferay.com:learn**)를 입력하고 **로그인** 클릭합니다. 승인 페이지에서 **승인** 클릭합니다. 이미 로그인한 경우 인증 페이지로 바로 이동됩니다.
 
-   ![_Authorizez_ 를 클릭하여 애플리케이션을 인증합니다.](./using-oauth2-to-authorize-users/images/03.png)
+   ![**Authorizez** 를 클릭하여 애플리케이션을 인증합니다.](./using-oauth2-to-authorize-users/images/03.png)
 
    React 앱으로 다시 리디렉션됩니다. 다음 API 호출을 만드는 데 사용되는 인증 코드가 표시됩니다.
 
-1. Liferay 토큰 URL에 `http://localhost:8080/o/oauth2/token` 을 입력합니다. 클립보드에서 클라이언트 ID와 클라이언트 암호를 붙여넣습니다. _토큰 받기_ 클릭합니다. 향후 REST API 호출을 만드는 데 사용할 수 있는 권한 부여 토큰이 나타납니다.
+1. Liferay 토큰 URL에 `http://localhost:8080/o/oauth2/token` 을 입력합니다. 클립보드에서 클라이언트 ID와 클라이언트 암호를 붙여넣습니다. **토큰 받기** 클릭합니다. 향후 REST API 호출을 만드는 데 사용할 수 있는 권한 부여 토큰이 나타납니다.
 
-1. Liferay get user URL에 `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` 입력합니다. *사용자 가져오기*클릭합니다. React 앱은 토큰 기반 인증을 사용하여 Liferay에 REST API를 호출하고 Liferay 사용자 목록을 반환합니다.
+1. Liferay get user URL에 `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` 입력합니다. **사용자 가져오기** 클릭합니다. React 앱은 토큰 기반 인증을 사용하여 Liferay에 REST API를 호출하고 Liferay 사용자 목록을 반환합니다.
 
    ![Liferay 사용자 목록이 나타납니다.](./using-oauth2-to-authorize-users/images/04.png)
 
@@ -87,11 +87,11 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 
 클라이언트 자격 증명 흐름은 일반적으로 서버 간 상호 작용에 사용되며 사용자를 포함하지 않습니다.
 
-1. <http://localhost:3000>에서 실행 중인 React 앱을 연 다음 페이지 상단에서 *Client Credentials Flow* 클릭합니다.
+1. <http://localhost:3000>에서 실행 중인 React 앱을 연 다음 페이지 상단에서 **Client Credentials Flow** 클릭합니다.
 
-1. Liferay 토큰 URL에 `http://localhost:8080/o/oauth2/token` 을 입력합니다. 클립보드에서 클라이언트 ID와 클라이언트 암호를 붙여넣습니다. *토큰 받기*클릭합니다. 향후 REST API 호출을 만드는 데 사용할 수 있는 권한 부여 토큰이 나타납니다.
+1. Liferay 토큰 URL에 `http://localhost:8080/o/oauth2/token` 을 입력합니다. 클립보드에서 클라이언트 ID와 클라이언트 암호를 붙여넣습니다. **토큰 받기** 클릭합니다. 향후 REST API 호출을 만드는 데 사용할 수 있는 권한 부여 토큰이 나타납니다.
 
-1. Liferay get user URL에 `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` 입력합니다. *사용자 가져오기*클릭합니다. React 앱은 토큰 기반 인증을 사용하여 Liferay에 REST API를 호출하고 Liferay 사용자 목록을 반환합니다.
+1. Liferay get user URL에 `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` 입력합니다. **사용자 가져오기** 클릭합니다. React 앱은 토큰 기반 인증을 사용하여 Liferay에 REST API를 호출하고 Liferay 사용자 목록을 반환합니다.
 
 ### 비밀번호 흐름
 
@@ -101,17 +101,17 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 암호 흐름에서 사용자 이름과 암호는 애플리케이션에 직접 노출됩니다. 따라서 사용자는 애플리케이션을 신뢰해야 합니다. API 요청에 사용자 이름과 비밀번호를 전달하는 것도 위험합니다. 암호 흐름을 사용하는 것은 권장되지 않습니다.
 ```
 
-1. <http://localhost:3000>에서 실행 중인 React 앱을 연 다음 페이지 상단에서 *Password Flow* 클릭합니다.
+1. <http://localhost:3000>에서 실행 중인 React 앱을 연 다음 페이지 상단에서 **Password Flow** 클릭합니다.
 
 1. Liferay 토큰 URL에 `http://localhost:8080/o/oauth2/token` 을 입력합니다.
 
 1. 클립보드에서 클라이언트 ID와 클라이언트 암호를 붙여넣습니다.
 
-1. 사용자 이름과 비밀번호를 입력합니다(예: *test@liferay.com:learn*).
+1. 사용자 이름과 비밀번호를 입력합니다(예: **test@liferay.com:learn**).
 
-1. *토큰 받기*클릭합니다. 향후 REST API 호출을 만드는 데 사용할 수 있는 권한 부여 토큰이 나타납니다.
+1. **토큰 받기** 클릭합니다. 향후 REST API 호출을 만드는 데 사용할 수 있는 권한 부여 토큰이 나타납니다.
 
-1. Liferay get user URL에 `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` 입력합니다. *사용자 가져오기*클릭합니다. React 앱은 토큰 기반 인증을 사용하여 Liferay에 REST API를 호출하고 Liferay 사용자 목록을 반환합니다.
+1. Liferay get user URL에 `http://localhost:8080/o/headless-admin-user/v1.0/user-accounts` 입력합니다. **사용자 가져오기** 클릭합니다. React 앱은 토큰 기반 인증을 사용하여 Liferay에 REST API를 호출하고 Liferay 사용자 목록을 반환합니다.
 
 ## 코드 검토
 
@@ -147,7 +147,7 @@ src
 :lines: 16-35
 ```
 
-코드에서 `Authorize.js` 구성 요소가 첫 번째 단계를 처리합니다. *승인* 버튼을 클릭하면 승인 요청이 이루어집니다.
+코드에서 `Authorize.js` 구성 요소가 첫 번째 단계를 처리합니다. **승인** 버튼을 클릭하면 승인 요청이 이루어집니다.
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/components/Authorize.js
 :language: javascript
@@ -156,7 +156,7 @@ src
 
 리디렉션과 함께 일회성 인증 코드가 URL의 앱으로 다시 전달됩니다(예: `http://localhost:3000/grant-type-authorization-code?code={code}`).
 
-`Token.js` 구성 요소가 다음 단계를 처리합니다. *Get Token* 클릭하면 `Requests.js` 파일에서 `getAuthToken` 함수가 호출됩니다.
+`Token.js` 구성 요소가 다음 단계를 처리합니다. **Get Token** 클릭하면 `Requests.js` 파일에서 `getAuthToken` 함수가 호출됩니다.
 
 ```{literalinclude} ./using-oauth2-to-authorize-users/resources/liferay-c2b6-overlay/src/components/Token.js
 :language: javascript
@@ -178,7 +178,7 @@ src
 
 `Users.js` 구성요소는 `access_token`에 대한 응답을 구문 분석합니다.
 
-마지막으로 *Get Users* 클릭하면 `Requests.js` 파일에서 `getUsers` 함수가 호출됩니다.
+마지막으로 **Get Users** 클릭하면 `Requests.js` 파일에서 `getUsers` 함수가 호출됩니다.
 
 ### 클라이언트 자격 증명 부여 유형
 
@@ -193,7 +193,7 @@ src
 
 `Users.js` 구성요소는 `access_token`에 대한 응답을 구문 분석합니다.
 
-마지막으로 *Get Users* 클릭하면 `Requests.js` 파일에서 `getUsers` 함수가 호출됩니다.
+마지막으로 **Get Users** 클릭하면 `Requests.js` 파일에서 `getUsers` 함수가 호출됩니다.
 
 ### 비밀번호 부여 유형
 
@@ -208,7 +208,7 @@ src
 
 `Users.js` 구성요소는 `access_token`에 대한 응답을 구문 분석합니다.
 
-마지막으로 *Get Users* 클릭하면 `Requests.js` 파일에서 `getUsers` 함수가 호출됩니다.
+마지막으로 **Get Users** 클릭하면 `Requests.js` 파일에서 `getUsers` 함수가 호출됩니다.
 
 ## 추가 정보
 

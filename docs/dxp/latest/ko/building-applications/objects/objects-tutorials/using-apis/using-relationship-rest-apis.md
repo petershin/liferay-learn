@@ -13,7 +13,7 @@
 
 다음으로 [create](../../creating-and-managing-objects/creating-objects.md) 3개의 관련 사용자 지정 개체:
 
-1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
+1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 클릭 **사물** .
 
 1. 세 개의 개체 초안을 만듭니다.
 

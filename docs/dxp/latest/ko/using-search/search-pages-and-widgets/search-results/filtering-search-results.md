@@ -54,7 +54,7 @@ Liferay DXP 색인에 있는 필드를 찾으려면 [제어판의 필드 매핑 
 
 **상위 쿼리 이름(텍스트):** 하위 절을 Bool 쿼리에 제공할 때 상위 사용자 지정 필터 위젯에 구성된 쿼리 이름과 일치하도록 설정합니다. 그렇지 않으면 비워 둡니다.
 
-**부스트(숫자):**[부스트](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html#term-field-params) 이 쿼리와 일치하는 결과의 점수. 여기에 의미가 있는 정수 또는 십진수를 지정하십시오.
+**부스트(숫자):** [부스트](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html#term-field-params) 이 쿼리와 일치하는 결과의 점수. 여기에 의미가 있는 정수 또는 십진수를 지정하십시오.
 
 항상 이와 일치하는 결과를 맨 위에 표시하려면 Boost 값을 매우 높게 설정하십시오(예: **1000**).
 

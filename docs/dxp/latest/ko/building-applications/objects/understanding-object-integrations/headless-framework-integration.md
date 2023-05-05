@@ -4,11 +4,11 @@
 
 사용자 정의 개체 정의를 게시하면 Liferay는 개체 및 해당 데이터와 상호 작용하기 위해 기본 [REST API](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 을 생성합니다. 이러한 API는 개체의 범위(예: 회사 또는 사이트)에 따라 다릅니다. 정의에 관계 또는 독립 실행형 작업이 포함된 경우 Liferay는 이를 호출하기 위한 엔드포인트도 생성합니다.
 
-이러한 헤드리스 서비스의 경로는 `c/[pluralobjectlabel]` 명명 패턴(예: `/o/c/timeoffrequests`)을 따릅니다. `[server]:[port]/o/api` (예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용 가능한 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션* 클릭하여 API 드롭다운 목록을 확인합니다.
+이러한 헤드리스 서비스의 경로는 `c/[pluralobjectlabel]` 명명 패턴(예: `/o/c/timeoffrequests`)을 따릅니다. `[server]:[port]/o/api` (예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용 가능한 개체 API를 보고 테스트할 수 있습니다. **REST 애플리케이션** 클릭하여 API 드롭다운 목록을 확인합니다.
 
 ![각 개체는 REST 응용 프로그램 아래에 나타납니다.](./headless-framework-integration/images/01.png)
 
-개체가 활성 상태인 동안 이러한 API를 사용하여 기본 CRUD 작업을 수행하고, [집계 용어](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) 및 [중첩 필드](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md)를 사용하여 복잡한 쿼리를 실행하고, 독립 실행형 작업을 트리거하고, 항목 관계를 관리하는 등의 작업을 수행할 수 있습니다. 개체 API 자습서는 [Using APIs](../objects-tutorials/using-apis.md) 참조하십시오.
+개체가 활성 상태인 동안 이러한 API를 사용하여 기본 CRUD 작업을 수행하고, [집계 용어](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) 및 [중첩 필드](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md)를 사용하여 복잡한 쿼리를 실행하고, 독립 실행형 작업을 트리거하고, 항목 관계를 관리하는 등의 작업을 수행할 수 있습니다. 개체 API 자습서는 [API 사용](../objects-tutorials/using-apis.md) 참조하십시오.
 
 ## 기본 회사 범위 REST API
 
@@ -102,4 +102,5 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 ## 추가 정보
 
 * [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-* [API 사용](../objects-tutorials/using-apis.md)<!--TASK: * \[Consuming GraphQL APIs\](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->
+* [API 사용](../objects-tutorials/using-apis.md)
+<!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

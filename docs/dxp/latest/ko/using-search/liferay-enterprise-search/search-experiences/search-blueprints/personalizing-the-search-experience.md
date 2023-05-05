@@ -22,7 +22,7 @@
 
 개인화 노력에 특히 유용한 몇 가지 요소가 있습니다.
 
-**부스트 근접성:**[ipstack](https://ipstack.com) 서비스를 사용하여 [geopoint](https://www.elastic.co/로 표시된 사용자 사이트에 더 가까운 검색 결과를 제공합니다. guide/en/elasticsearch/reference/7.x/geo-point.html) 필드를 문서에 추가합니다. [아래 예시](#building-a-blueprint-to-personalize-search-results) 는 서비스를 설정하고 Boost Proximity Element를 사용하는 방법을 보여줍니다.
+**부스트 근접성:** [ipstack](https://ipstack.com) 서비스를 사용하여 [geopoint](https://www.elastic.co/로 표시된 사용자 사이트에 더 가까운 검색 결과를 제공합니다. guide/en/elasticsearch/reference/7.x/geo-point.html) 필드를 문서에 추가합니다. [아래 예시](#building-a-blueprint-to-personalize-search-results) 는 서비스를 설정하고 Boost Proximity Element를 사용하는 방법을 보여줍니다.
 
 **현재 언어에 대한 콘텐츠 부스트:** 현재 세션의 언어와 일치하는 `defaultLanguageId` 필드로 검색 결과를 부스트합니다.
 

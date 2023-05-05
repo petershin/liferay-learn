@@ -9,11 +9,11 @@ Liferay의 헤드리스 배달 애플리케이션은 문서 및 폴더를 추가
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-로그인하면 [사이트 ID 검색](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 여러 서비스 호출에서 이 ID를 사용합니다.
+로그인하면 [사이트 ID 검색](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 여러 서비스 호출에서 이 ID를 사용합니다.
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [예제 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip)를 다운로드하고 압축을 풉니다. ):
+1. [예제 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip) 를 다운로드하고 압축을 풉니다. ):
 
     ```bash
     curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
@@ -23,7 +23,7 @@ Liferay의 헤드리스 배달 애플리케이션은 문서 및 폴더를 추가
     unzip liferay-g9i6.zip
     ```
 
-cURL 스크립트를 사용하여 파일을 [Documents and Media](../../documents-and-media.md)에 업로드합니다.
+cURL 스크립트를 사용하여 파일을 [문서 및 미디어](../../documents-and-media.md) 에 업로드합니다.
 
 1. 명령줄에서 `curl` 폴더로 이동합니다.
 
@@ -101,7 +101,7 @@ cURL 명령과 Java 클래스의 작동 방식을 보려면 계속 읽으십시�
 | 인수                                                                      | 묘사                                                                    |
 |:----------------------------------------------------------------------- |:--------------------------------------------------------------------- |
 | `-F "file=@Document_POST_ToSite.sh"`                                    | 게시할 파일입니다.                                                            |
-| `-H "Content-Type: multipart/form-data"`                                | 게시 중인 미디어 유형([MIME 유형](https://en.wikipedia.org/wiki/Media_type))입니다. |
+| `-H "Content-Type: multipart/form-data"`                                | 게시 중인 미디어 유형( [MIME 유형](https://en.wikipedia.org/wiki/Media_type) )입니다. |
 | `-X POST`                                                               | 지정된 끝점에서 호출할 HTTP 메서드입니다.                                             |
 | `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | REST 서비스 엔드포인트. 사이트 ID 매개변수는 `${1}`대체합니다.                             |
 | `-u "test@liferay.com:learn"`                                           | 기본 인증 자격 증명.                                                          |

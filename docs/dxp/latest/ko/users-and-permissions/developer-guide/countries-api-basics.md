@@ -10,7 +10,7 @@ Liferay의 Rest API를 사용하여 국가를 만들고 관리합니다.
 
 그런 다음 다음 단계를 따르십시오.
 
-1. Download and unzip [Countries API Basics](./liferay-g6m8.zip).
+1. [국가 API 기본 사항](./liferay-g6m8.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-g6m8.zip -O

@@ -9,7 +9,7 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
 
 그런 다음 다음 단계를 따르세요:
 
-1. [카테고리 및 어휘 API 기본 사항](./liferay-f5w3.zip)을 다운로드하여 압축을 풉니다.
+1. [카테고리 및 어휘 API 기본 사항](./liferay-f5w3.zip) 을 다운로드하여 압축을 풉니다.
 
 
    ```bash
@@ -20,7 +20,7 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
    unzip liferay-f5w3.zip
    ```
 
-1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 아래의 다른 서비스 호출에서 이것을 사용합니다.
+1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 아래의 다른 서비스 호출에서 이것을 사용합니다.
 
 1. cURL 스크립트를 사용하여 사이트에 새 어휘를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `TaxonomyVocabulary_POST_ToSite.sh` 스크립트를 실행합니다.
 
@@ -52,7 +52,7 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
    }
    ```
 
-1. *관리 메뉴* &rarr; *분류* &rarr; *범주*로 이동하여 범주 애플리케이션으로 이동합니다. 새로운 어휘가 추가되었는지 확인하십시오.
+1. **관리 메뉴** &rarr; **분류** &rarr; **범주** 로 이동하여 범주 애플리케이션으로 이동합니다. 새로운 어휘가 추가되었는지 확인하십시오.
 
    ![새로운 어휘가 추가되었습니다.](./categories-and-vocabulary-api-basics/images/01.png)
 
@@ -119,7 +119,7 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `TaxonomyVocabularyResource` 메서드를 호출합니다.
 
 ```{important}
-[TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java)를 참조하십시오.
+[TaxonomyVocabularyResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/TaxonomyVocabularyResource.java) 를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 `TaxonomyVocabulary` REST 서비스를 호출하는 예입니다.

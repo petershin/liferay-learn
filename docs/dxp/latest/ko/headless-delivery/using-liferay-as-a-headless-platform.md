@@ -5,9 +5,9 @@ Liferay는 웹 인터페이스에서 사용할 수 있는 것과 동일한 종�
 ## 연결 방법
 
 클라이언트가 웹 API를 통해 Liferay DXP에 연결할 수 있는 세 가지 접근 방식이 있습니다.
-* [**_** OpenAPI 사양을 준수하는 헤드리스 REST API **_**](#headless-rest-apis)
-* GraphQL 사양을 준수하는 [**_** GraphQL API **_**](#graphql-api)
-* [**_** 일반 웹/REST 서비스 **_**](#plain-webrest-services) , Service Builder에서 생성
+* [__Headless REST APIs__](#headless-rest-apis)
+* GraphQL 사양을 준수하는 [ [__GraphQL API__](#graphql-api)
+* [__Plain Web/REST Services__](#plain-webrest-services) , Service Builder에서 생성
 
 ### 헤드리스 REST API
 

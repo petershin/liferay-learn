@@ -16,7 +16,7 @@
 사용자 정의 요소 클라이언트 확장은 빌드, 패키징 또는 호스팅 방식에 관계없이 모든 기술을 사용할 수 있습니다. 이 튜토리얼은 React를 사용하는 샘플 사용자 정의 요소 애플리케이션만 제공합니다.
 ```
 
-`create_custom_element.sh` 실행하려면 최신 버전 [Node.JS](https://nodejs.org/), [NPM](https://www.npmjs.com/), [YARN](https://classic.yarnpkg.com/)이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
+`create_custom_element.sh` 실행하려면 최신 버전 [Node.JS](https://nodejs.org/) , [NPM](https://www.npmjs.com/) , [YARN](https://classic.yarnpkg.com/) 이 필요합니다. 계속하기 전에 이러한 도구가 설치되어 있는지 확인하십시오.
 
 ## `create_custom_element.sh` 스크립트 실행
 
@@ -107,7 +107,7 @@ File sizes after gzip:
   121 B     build/static/css/main.9877909d.css
 ```
 
-이러한 파일은 Liferay에 액세스할 수 있는 위치에서 [호스팅](#hosting-the-application-files) 되어야 합니다. 정적 리소스를 제공하는 데 최적화된 원격 서버 또는 데이터 스토리지 시스템에서 호스팅할 수 있습니다. 데모 목적으로 이 예에서는 Liferay의 문서 라이브러리에 업로드하고 WebDAV URL을 사용하여 호스팅합니다.
+이러한 파일은 Liferay에 액세스할 수 있는 사이트에서 [호스팅](#hosting-the-application-files) 되어야 합니다. 정적 리소스를 제공하는 데 최적화된 원격 서버 또는 데이터 스토리지 시스템에서 호스팅할 수 있습니다. 데모 목적으로 이 예에서는 Liferay의 문서 라이브러리에 업로드하고 WebDAV URL을 사용하여 호스팅합니다.
 
 ```{tip}
 모든 빌드에 대해 고유한 파일 이름이 생성됩니다. 사용자 지정 애플리케이션을 테스트할 때 빌드 후 `.js` 및 `.css` 파일을 업데이트해야 합니다.

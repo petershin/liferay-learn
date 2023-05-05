@@ -9,7 +9,7 @@
 
 LiferAy가 실행되면
 
-1. [채널 API 기본 사항](./liferay-a2t5.zip)을 다운로드하여 압축을 풉니다.
+1. [채널 API 기본 사항](./liferay-a2t5.zip) 을 다운로드하여 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/store-management/developer-guide/liferay-a2t5.zip -O
@@ -40,7 +40,7 @@ LiferAy가 실행되면
    }
    ```
 
-1. 채널 추가를 확인하려면 *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *상거래* &rarr; *채널*로 이동합니다. 새 채널이 나타납니다.
+1. 채널 추가를 확인하려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **상거래** &rarr; **채널** 로 이동합니다. 새 채널이 나타납니다.
 
    ![새 채널이 추가되었는지 확인합니다.](./channel-api-basics/images/01.png)
 
@@ -75,7 +75,7 @@ LiferAy가 실행되면
 | `-u "test@liferay.com:learn"`                                                         | 기본 인증 자격 증명을 입력합니다.           |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2)을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users)를 참조하세요. .
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2) 을 통해 사용자를 인증해야 합니다. OAuth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](https://learn.liferay.com/en/w/dxp/headless-delivery/using-oauth2/using-oauth2-to-authorize-users) 를 참조하세요. .
 ```
 
 다른 cURL 명령은 유사한 JSON 인수를 사용합니다.
@@ -165,7 +165,7 @@ java -classpath .:* Channels_GET_FromInstance
 | `name:desc`       | 내림차순으로 이름을 기준으로 정렬합니다.          |
 | `siteGroupId:asc` | 오름차순으로 siteGroupId를 기준으로 정렬합니다. |
 
-자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
+자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
 
 ## 채널 확보
 
@@ -275,4 +275,4 @@ java -classpath .:* -DchannelId=1234 Channel_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `채널` 서비스와 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 `채널` 서비스와 스키마를 보여주고 각 서비스를 테스트하기 위한 인터페이스를 가지고 있습니다.

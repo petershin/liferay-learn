@@ -111,12 +111,13 @@ Fragments 프로젝트 생성을 축하합니다!
 생성기는 프로젝트 이름에서 파생된 폴더에 각 프로젝트를 만듭니다. 예를 들어 프로젝트 이름을 `Sample Liferay Fragments`지정했으므로 생성기는 `sample-liferay-fragments`이라는 프로젝트 폴더를 생성했습니다.
 
 ## 샘플 조각 세트 가져오기
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to import the sample Fragment Set to Liferay:
+그런 다음 다음 단계에 따라 샘플 조각 세트를 Liferay로 가져옵니다.
 
-1. Import the Fragment Set to your Liferay instance invoking the `yarn run import` command in the project's root folder (e.g., `sample-liferay-fragments`). Alternatively, you can [import the Fragment Set manually](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
+1. 프로젝트의 루트 폴더(예: `sample-liferay-fragments`)에서 `yarn run import` 명령을 호출하여 Fragment Set을 Liferay 인스턴스로 가져옵니다. 또는 [Fragment Set을 수동으로 가져오기](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md)할 수 있습니다.
 
     ```bash
     cd sample-liferay-fragments
@@ -324,8 +325,6 @@ Fragment의 일부를 수정하십시오.
 * 조각 속성(`fragment.json`)
 * [구성 옵션](./adding-configuration-options-to-fragments.md) (`configuration.json`).
 
-
-
 예를 들어 위의 HTML에서 빌드하고 [Clay](https://clayui.com/) 의 [Bootstrap](https://getbootstrap.com/) 기반 구성 요소를 사용하여 이 `index.html`에서 보여 주는 것처럼 주의를 끄는 제목과 설명이 있는 Fragment를 만들 수 있습니다.
 
 ```html
@@ -369,7 +368,7 @@ Fragment의 일부를 수정하십시오.
 ```
 
 ```{note}
-Liferay 7.2 이하를 사용하는 경우 `data-lfr-editable-[id|type]` 속성을 제거하고 [Fragment-Specific Tags](../ reference/fragments/fragment-specific-tags-reference.md).
+Liferay 7.2 이하를 사용하는 경우 `data-lfr-editable-[id|type]` 속성을 제거하고 [Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md).
 ```
 
 첫 번째 `div` 요소의 `class="component-my-jumbotron"` 속성은 페이지에서 이 조각을 고유하게 식별하려고 시도합니다.

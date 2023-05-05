@@ -13,7 +13,7 @@
 
 그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 **기본 포털 CORS 구성** 에 추가합니다.
 
-1. **글로벌 메뉴**(![글로벌 메뉴](../../../이미지/아이콘-응용프로그램-메뉴.png)를 열고 **제어판** 탭으로 이동한 다음 **보안 도구** 를 클릭합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../../../images/icon-applications-menu.png)를 열고 **제어판** 탭으로 이동한 다음 **보안 도구** 를 클릭합니다.
 
 1. **Portal CORS(Cross-Origin Resource Sharing**) 탭으로 이동하고 **Default Portal CORS Configuration** 을 클릭합니다.
 
@@ -36,7 +36,7 @@
     | 이름 | X3J8Object |
 
    ```{note}
-   The provided React app uses these values.
+   제공된 React 앱은 이러한 값을 사용합니다.
    ```
 
 1. 새 **개체** 초안을 선택하고 **필드** 탭을 클릭한 다음 다음 **필드** 추가합니다.

@@ -65,7 +65,7 @@ API에 액세스하도록 txtai를 설정합니다. docker 컨테이너에서 tx
 
 1. Liferay에서 **글로벌 메뉴**(![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **검색 경험** &rarr; **시맨틱 검색** 엽니다.
 
-   - **Text Embeddings Enabled****true** 으로 설정합니다.
+   - **Text Embeddings Enabled** **true** 으로 설정합니다.
    - 텍스트 임베딩 공급자로 **txtai** 선택합니다.
    - 위의 테스트 설정을 따른 경우 txtai 호스트 주소, 기본 인증 사용자 이름 및 기본 인증 비밀번호의 기본값을 그대로 둡니다.
    - 벡터 차원 포함에서 기본값(768)을 그대로 둡니다.

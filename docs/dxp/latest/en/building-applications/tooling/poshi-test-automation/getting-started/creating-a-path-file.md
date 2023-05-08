@@ -33,9 +33,9 @@ From the given test scenario, gather the elements that your test needs to intera
 
 1. Search for your name to navigate to the search results page.
 
-1. Again, using the selector icon from the Web Developer Console, click on the "No Results" message and determine the path. In this case, use `//h4[contains(.,'No results were found.)]`.
+1. Again, using the selector icon from the Web Developer Console, click on the "No Results" message and determine the path. In this case, use `//h1[contains(.,'No results were found.')]`.
 
-1. For an added assertion, search for a term that will surely have results, for example, search for the term "Staging". When the search results are displayed, use the selector icon to get the path for one of the results. In this case, use `//ul[@class='search']//a[contains(.,'Staging')]`. Note that the term 'Staging' is specific to this search result and makes the path inflexible to be used in other scenarios. To make this path reusable, use a variable that can be passed on from the testcase: `//ul[@class='search']//a[contains(.,'${key_searchTerm}')]`. See [Using Variables](../poshi-basics/poshi-layers/variables.md) for more information.
+1. For an added assertion, search for a term that will surely have results, for example, search for the term "Staging". When the search results are displayed, use the selector icon to get the path for one of the results. In this case, use `//input[@data-qa-id='searchInput' and @value='Staging']`. Note that the term 'Staging' is specific to this search result and makes the path inflexible to be used in other scenarios. To make this path reusable, use a variable that can be passed on from the testcase: `//input[@data-qa-id='searchInput' and @value='${key_searchTerm}']`. See [Using Variables](../poshi-basics/poshi-layers/variables.md) for more information.
 
 ## Building the Path File
 
@@ -60,17 +60,17 @@ From the given test scenario, gather the elements that your test needs to intera
 <tbody>
 <tr>
 	<td>NO_RESULTS_MESSAGE</td>
-	<td>//h4[@id="noResultsMessage"]</td>
+	<td>//h1[contains(.,'No results were found.')]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>SEARCH_BAR</td>
-	<td>//input[@id="docsSearch"]</td>
+	<td>//input[@placeholder="Search..."]</td>
 	<td></td>
 </tr>
 <tr>
 	<td>SEARCH_RESULTS</td>
-	<td>//ul[@class='search']//a[contains(.,'${key_searchTerm}')]</td>
+	<td>//input[@data-qa-id='searchInput' and @value='${key_searchTerm}']</td>
 	<td></td>
 </tr>
 </tbody>

@@ -7,7 +7,7 @@ uuid: ee4ef207-d58a-4840-af34-f74fb4a031dc
 This feature works [only with Elasticsearch](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
 ```
 
-With Custom Filters, you can contribute queries to the main search query, filtering search results to exert control over what's returned in the Search Results widget. You can make the filter widgets visible or invisible and decide if they're changeable or immutable.
+With Custom Filters, you can contribute queries to the main search query, filtering search results to control what's returned in the Search Results widget. You can make the filter widgets visible or invisible and decide if they're changeable or immutable.
 
 ![Apply a custom filter to weed out certain search results.](./filtering-search-results/images/03.png)
 
@@ -55,8 +55,7 @@ To understand each type, see the [Elasticsearch documentation](https://www.elast
 
 **Query Name (text):** Set the name of the contributed query. This is unnecessary unless this filter acts as a parent query to another filter that contributes child clauses; in that case set this filter's Query Name as the child filter's Parent Query Name.  This parent/child behavior is only available for filters of type Bool.
 
-**Parent Query Name (text):** When contributing a child clause to a Bool query, set this to match the Query
-Name configured in the parent Custom Filter widget. Otherwise, leave it blank.
+**Parent Query Name (text):** When contributing a child clause to a Bool query, set this to match the Query Name configured in the parent Custom Filter widget. Otherwise, leave it blank.
 
 **Boost (number):** [Boost](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html#term-field-params) the score of the results matching this query. Specify any whole or decimal number here that makes sense.
 
@@ -86,14 +85,12 @@ To find the fields you can filter by in the Custom Filter widget, users with the
 
 ## Finding and Using Nested Fields
 
-{bdg-secondary}`Available 7.2 FP10+, 7.3 FP1+, 7.4 (all updates)`
+{bdg-secondary}`Available 7.2 FP10+, 7.3 FP1+, 7.4+`
 
-Object definition and [web content structure fields](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) are nested fields in Elasticsearch. The [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is supported to account for nested fields.
-
-Using a nested field in a Custom Filter configuration requires three custom filter widgets. A [Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) is added for wrapping the required child queries: one child query matches the field's name, the other the value.
+Object definition and [web content structure](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) fields are indexed as nested fields in Elasticsearch. To filter by a nested field, you must add three Custom Filter widgets to the page. The first widget is for adding the [Elasticsearch `nested` query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html), while the other two are for defining child queries that match the nested field's name and value. When the final portal query is generated, the `nested` query wraps the child queries.
 
 ```{important}
-If you require custom filters on multiple nested fields in the same page, you must configure separate custom parameter names for each child query. See [Custom Filter Examples](./custom-filter-examples.md#boosting-matches-to-nested-fields) for an example. 
+If you require custom filters on multiple nested fields in the same page, you must configure separate parameter names for each child query. See [Custom Filter Examples](./custom-filter-examples.md#boosting-matches-to-nested-fields) for an example. 
 ```
 
 To find nested fields in existing documents in the index, use the [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) setting in the Search Results widget.

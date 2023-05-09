@@ -64,7 +64,7 @@ These have a name and a [script](./using-the-script-engine-in-workflow.md) and a
 
 Workflow tasks are completed by a user. Assignments make sure the right users can access the tasks. You can choose how you want to configure your assignments. Assignments can be added to
 
-* Specific roles of a role type (Organization, Site, Asset Library, Account, or Regular role types)
+* Specific roles of any type (Organization, Site, Asset Library, Account, or Regular)
 
    ```xml
    <assignments>
@@ -109,11 +109,9 @@ Workflow tasks are completed by a user. Assignments make sure the right users ca
 
    The above assignment specifies that only the user with the ID `20156` may complete the task. Alternatively, specify the `<screen-name>` or `<email-address>` of the user.
 
-
 You can write a script to define the assignment. For an example, see the [single-approver-scripted-assignment-workflow-definition.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml).
 
 Set a single user in the `user` variable, or add users to a list in the `users` variable. To specify role assignments, add a list of roles (even if there's just one) to the `roles` variable.
-
 
 ```xml
 <assignments>

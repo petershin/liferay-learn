@@ -71,7 +71,7 @@ Use Liferay's OAuth2 tools to authorize third-party applications to access data.
 
    ![The price list is displayed in the React app.](./authorizing-with-oauth2/images/02.png)
 
-Next: [Managing AntiSamy](./managing-antisamy.md)
+Next: [Managing AntiSamy](../managing-antisamy.md)
 
 ## Relevant Concepts
 

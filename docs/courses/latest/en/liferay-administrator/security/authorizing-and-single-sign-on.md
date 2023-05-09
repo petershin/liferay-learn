@@ -13,4 +13,4 @@ Liferay offers many enterprise options for single sign-on, such as old school to
 
 Liferay can also grant access to resources given the token exchange protocol offered by industry-standard OAuth 2.0. Here you'll learn how to configure OAuth 2 profiles to grant access to your resources stored in Liferay, for users using anything from a web client, to a mobile app, or a headless microservice. 
 
-Begin by [authenticating with SAML](./authorizing-and-single-sign-on/authenticating-with-saml.md)
+Begin by [Authenticating with SAML](./authorizing-and-single-sign-on/authenticating-with-saml.md)

@@ -24,6 +24,8 @@ Delectable Bonsai wants to lock down certain features they won't be using. Since
 
 You have now disabled the Image Request authentication verifier. For a list of what the other ones do, see the link below. 
 
+Next: [Password Policies](./password-policies.md)
+
 ## Relevant Concepts
 
 [Using Authentication Verifiers](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers)

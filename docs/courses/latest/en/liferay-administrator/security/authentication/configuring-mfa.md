@@ -37,7 +37,9 @@ Delectable Bonsai has come a long way from its days at the farmer's market. Now 
 Logging in for the rest of the course will be difficult with Multi-Factor Authentication enabled. When finished with this exercise, go back and uncheck the _Enabled_ box and click _Save_ to disable Multi-Factor Authentication. 
 ```
 
-Next: [Securing Web Services](./securing-web-services.md)
+Awesome! You have now completed the Authentication module. 
+
+Next: [Securing Web Services](../securing-web-services.md)
 
 ## Relevant Concepts
 

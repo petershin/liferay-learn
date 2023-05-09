@@ -75,3 +75,7 @@ Delectable Bonsai may choose to create a [Liferay object](https://learn.liferay.
    ![A J4X7 object entry is successfully added.](./cross-origin-resource-sharing/images/02.png)
 
    With the CORS policy updated, a J4X7 object entry is now successfully added.
+
+Excellent! You have now configured CORS, and you have completed the Securing Web Services module. 
+
+Next: [Authorizing and Single Sign-On](../authorizing-and-single-sign-on.md)

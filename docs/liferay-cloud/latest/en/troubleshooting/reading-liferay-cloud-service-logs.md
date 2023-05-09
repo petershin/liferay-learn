@@ -79,13 +79,13 @@ Follow these steps to access environment service logs via the Liferay Cloud cons
 
 1. Click on *Logs* in the environment menu.
 
-View application, status, and build logs across all environment services, or [filter results](#searching-and-filtering-logs) using the drop-down menus.
+View application, status, and build logs across all environment services or [filter results](#searching-and-filtering-logs) using the drop-down menus.
 
 To download logs, click the *Download Logs* button.
 
 ![View environment logs form the Logs page.](./reading-liferay-cloud-service-logs/images/02.png)
 
-Individual service logs are also available under the *Logs* tab in each service's dedicated page.
+Individual service logs are also available under the Logs tab in each service's dedicated page.
 
 ![Access and download individual service logs under the Logs tab in each service's dedicated page.](./reading-liferay-cloud-service-logs/images/03.png)
 

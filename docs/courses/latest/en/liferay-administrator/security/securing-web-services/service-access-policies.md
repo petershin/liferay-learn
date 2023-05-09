@@ -40,6 +40,8 @@ The example below is for demonstration purposes only. Granting access to these s
 
    Liferay now returns the user account info of the guest user. Allow or deny access in this way for other services.
 
+Next: [Cross-Origin Resource Sharing](./cross-origin-resource-sharing.md)
+
 ## Relevant Concepts
 
 [Setting Service Access Policies](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies)

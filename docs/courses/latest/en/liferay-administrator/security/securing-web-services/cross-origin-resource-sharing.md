@@ -67,10 +67,10 @@ Delectable Bonsai may choose to create a [Liferay object](https://learn.liferay.
    * Click _Security Tools_.
    * Click _Portal Cross-Origin Resource Sharing (CORS)_ in the left navigation.
    * Click _Add_.
-   * Input _Foo_ as the name.
+   * Enter _Foo_ as the name.
    * Add a *URL Pattern* with the value `/o/c/j4x7objects/*` and click *Update*.
 
-1. Back in the React app, add a J4X7 object entry. Input `foo` as the name and description and click _Add_.
+1. Back in the React app, add a J4X7 object entry. Enter `foo` as the name and description and click _Add_.
 
    ![A J4X7 object entry is successfully added.](./cross-origin-resource-sharing/images/02.png)
 

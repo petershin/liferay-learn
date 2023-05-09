@@ -1,9 +1,11 @@
 ---
 uuid: c94a253c-fa97-4098-90c0-d43a16534131
 ---
-# Configuring MFA
+# Configuring Multi-Factor Authentication
 
-Add an additional layer of security for your Liferay environment with multi-factor authentication (i.e. MFA). Liferay supports both one-time codes through email and third-party services that support SMS or authenticator apps. See [using multi-factor-authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication) to learn more.
+Multi-Factor Authentication requires users to both know something and have something. Usually, this is a password and a device or service, like a mobile phone or an email address. To log in, users must supply their passwords and a code sent to this device. 
+
+Liferay supports both one-time codes through email and third-party services that support SMS or authenticator apps. See [using multi-factor-authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication) to learn more.
 
 Delectable Bonsai has come a long way from its days at the farmer's market. Now with many employees and customers, the IT department is requiring MFA as part of its enhanced security efforts.
 
@@ -17,7 +19,7 @@ Delectable Bonsai has come a long way from its days at the farmer's market. Now 
 
 1. Tick the _Enabled_ box and click _Save_. See [Enabling Multi-Factor Authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication#enabling-multi-factor-authentication) to learn more about the configuration options.
 
-   Note, ensure you can successfully receive email through FakeSMTP before proceeding to prevent locking yourself out of the system.
+Note, ensure you can successfully receive email through FakeSMTP before proceeding to prevent locking yourself out of the system.
 
 ## Testing the MFA
 

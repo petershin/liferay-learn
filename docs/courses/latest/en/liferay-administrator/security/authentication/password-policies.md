@@ -6,10 +6,10 @@ uuid: d40fdaf9-2b3e-4ce7-be84-11faf6f8dd14
 
 Password policies are rules set for everything having to do with passwords: 
 
-- Their age
-- Their length and syntax
-- Their history
-- Their expiration
+- Age
+- Length and syntax
+- History
+- Expiration
 - Lockout rules
 - Change rules
 

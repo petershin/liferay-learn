@@ -6,8 +6,10 @@ uuid: c262be43-4185-4715-adee-64f9e2d2141d
 
 Use the service access policy tool to set which web services have public access. You can view a list of the default policies. Follow the steps below to add a new policy. See [setting service access policies](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies) to learn more.
 
+Note that by default, Liferay's service access policies do not grant public access to any APIs. 
+
 ```{warning}
-The example below is for demonstration purposes only. Granting access to these services make them public facing and typically should be paired with authentication.
+The example below is for demonstration purposes only. Granting access to these services makes them public facing and typically should be paired with authentication.
 ```
 
 1. Make an API request without passing any credentials. 

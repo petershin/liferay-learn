@@ -27,7 +27,6 @@ Because it's a public website, unscrupulous users who register themselves may de
 1. Click _Reserved Credentials_ on the left. 
 
 1. In the Screen Names field, type the screen names you don't want users to have, one per line: 
-
     - admin
     - root
     - president

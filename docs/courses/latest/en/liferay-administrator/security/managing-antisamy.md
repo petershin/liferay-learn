@@ -3,7 +3,7 @@ uuid: 5e845736-c6b5-42bb-8bf0-deb3e9786214
 ---
 # Managing AntiSamy
 
-An AntiSamy sanitizer is enabled by default in Liferay. This sanitizer prevents malicious JavaScript code from being injected into the system while still allowing users to utilize HTML and CSS. See [AntiSamy](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/using-antisamy) to learn more. 
+An AntiSamy sanitizer is enabled by default in Liferay. This sanitizer prevents malicious JavaScript code from being injected into the system when users use HTML and CSS in various Liferay applications. See [AntiSamy](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/using-antisamy) to learn more. 
 
 To prevent malicious activity, the IT department of Delectable Bonsai decides to forbid JavaScript code from being placed in web content. See this in action below. 
 
@@ -20,7 +20,7 @@ By default, all JavaScript code is sanitized and prevented from being executed e
    * Click _Source_ (![Code icon](../../images/icon-code.png)) to switch to code view.
    * Paste the following JavaScript snippet.
 
-   ```javascript
+   ```html
    <script>
    function foo() {
    alert("Hello World!");
@@ -36,7 +36,7 @@ By default, all JavaScript code is sanitized and prevented from being executed e
    * In the next screen, select the blank template. Input `Webcontent` as the page name. Click _Add_.
    * In the left navigation, select _Widgets_ under the fragments and widgets tab.
    * Find the web content display widget under content management. Drag it onto the page.
-   * Click _Options_ ([!Options icon](../../images/icon-actions.png)) of the widget and click _Configuration_.
+   * Click _Options_ ([!Options icon](../../images/icon-actions.png)) on the widget and click _Configuration_.
    * In the pop-up window, select the foo web content you just created. Click _Save_.
    * Finally, click _Publish_.
 

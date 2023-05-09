@@ -54,7 +54,7 @@ Delectable Bonsai may choose to create a [Liferay object](https://learn.liferay.
    yarn start
    ```
 
-1. Try to add a J4X7 object entry. Input `foo` as the name and description and click _Add_.
+1. Try to add a J4X7 object entry. Enter `foo` as the name and description and click _Add_.
 
    ![Try to add a J4X7 object entry.](./cross-origin-resource-sharing/images/01.png)
 

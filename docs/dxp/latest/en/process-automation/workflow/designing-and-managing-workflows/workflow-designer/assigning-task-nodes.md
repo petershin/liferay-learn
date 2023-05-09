@@ -116,7 +116,7 @@ The `roles` variable assignment defines the assignable candidates for the task. 
 
 ### Assigning to Users
 
-Assign a user or a list of users to a task. These assignments appear in the My Workflow Tasks application under Assigned to Me. To assign a list of users as possible candidates, 
+Assign a user or list of users to a task. These assignments appear in the My Workflow Tasks application under Assigned to Me. To assign a list of users as possible candidates,
 
 ```groovy
 import com.liferay.portal.kernel.service.UserLocalServiceUtil;
@@ -145,7 +145,7 @@ long companyId = GetterUtil.getLong((String)workflowContext.get(WorkflowConstant
 user = UserLocalServiceUtil.getUserByEmailAddress(companyId, "user1@liferay.com");
 ```
 
-The `user` variable assignment is immediate. When the entry is submitted to the workflow, there's only one candidate, therefore the assignment is made directly to that user.
+In this case, the `user` variable assignment is immediate since there is only one candidate.
 
 ## Additional Information
 

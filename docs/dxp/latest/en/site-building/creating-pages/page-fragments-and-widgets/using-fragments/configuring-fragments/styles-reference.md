@@ -21,7 +21,7 @@ To access a fragment's Styles menu,
 
 ![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
 
-Many styles have defined tokens supported by style books. The value of tokens can be inherited from style books, which is indicated by a blue dot or "value from stylebook" icon (![Value from Stylebook](../../../../../images/icon-theme.png)) next to the displayed value. See [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) and [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) for more information.
+Many styles have defined tokens supported by style books. The value of tokens can be inherited from style books, which is indicated by a blue dot or _value from stylebook_ icon (![Value from Stylebook](../../../../../images/icon-theme.png)) next to the displayed value. See [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) and [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) for more information.
 
 ![Visual representation of inherited token values with blue dots](./styles-reference/images/07.png)
 

@@ -52,7 +52,7 @@ Now you can configure authentication on the internal intranet.
 
 1. Click _Save_. 
 
-   ![Set the options for an internal website.](./configuring-sign-in/images/02.png)
+![Set the options for an internal website.](./configuring-sign-in/images/02.png)
 
 Internal users authenticate using a screen name given to them by administrators, not by their email addresses. 
 
@@ -62,5 +62,6 @@ Next: [Authentication Verifiers](./authentication-verifiers.md)
 
 ## Relevant Concepts
 
-- [Authentication Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics)
-- [User Authentication](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/user-authentication)
+[Authentication Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics)
+
+[User Authentication](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/user-authentication)

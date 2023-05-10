@@ -48,11 +48,7 @@ Users must now use passwords that's at least six characters long, has one letter
    - Minimum Symbols: 1
    - Minimum Upper Case: 1
 
-<!-- Aswin - We have already explained about syntax checking, so I thought it might be useful to explain the following three options also. It wasn't all straightforward for me to understand from their names. -->
-
 1. Under Password History, toggle _Enable History_. Leave the default history count as 6. 
-
-   This keeps up to 6 passwords in history to avoid users from reusing the same ones. 
 
 1. Under Password Expiration, toggle _Enable Expiration_ and configure these options: 
 
@@ -60,17 +56,15 @@ Users must now use passwords that's at least six characters long, has one letter
    - Warning Time: 2 Weeks
    - Grace Limit: 5
 
-   Passwords now expire after 26 weeks. Two weeks prior to expiration, users receive a warning. Even after expiry, users can enter their passwords up to 5 times (grace limit). 
-
 1. Under Lockout, toggle _Enable Lockout_ and configure these options: 
 
    - Maximum Failure: 5
    - Reset Failure Count: 10 Minutes
    - Lockout Duration: Until unlocked by an administrator
 
-   Users can now enter incorrect passwords only five times consecutively (maximum failure) before they're locked out. The failure count gets reset to 0 if the time between consecutive failed attempts is greater than 10 minutes. Only an administrator can unlock locked accounts. 
-
 1. Click _Save_. 
+
+Breakfast users must now use six passwords before they can repeat one. Their passwords also expire every six months, two weeks prior to which they receive a warning. After their passwords expire, they can still use it up to a grace limit of five times before they are locked out. If they use the wrong password, they get five chances to log in, after which their accounts are locked. If they don't use all five chances, the failure count is reset after 10 minutes. Only administrators can unlock accounts. 
 
 Excellent! You have now configured password policies for both instances. 
 
@@ -78,4 +72,4 @@ Next: [Configuring Multi-Factor Authentication](./configuring-mfa.md)
 
 ## Relevant Concepts
 
-- [Configuring a Password Policy](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/configuring-a-password-policy)
+[Configuring a Password Policy](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/configuring-a-password-policy)

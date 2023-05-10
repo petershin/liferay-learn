@@ -19,7 +19,7 @@ Delectable Bonsai wants to lock down certain features they won't be using. Since
 
 1. Click _Save_. 
 
-   ![The Image Request authentication verifier is used only by LibreOffice.](./authentication-verifiers/images/01.png)
+![The Image Request authentication verifier is used only by LibreOffice.](./authentication-verifiers/images/01.png)
 
 You have now disabled the Image Request authentication verifier. For a list of what the other ones do, see the link below. 
 
@@ -27,4 +27,4 @@ Next: [Password Policies](./password-policies.md)
 
 ## Relevant Concepts
 
-- [Using Authentication Verifiers](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers)
+[Using Authentication Verifiers](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers)

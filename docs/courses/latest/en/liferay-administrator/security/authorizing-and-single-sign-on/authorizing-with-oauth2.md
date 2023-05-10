@@ -7,9 +7,9 @@ Use Liferay's OAuth2 tools to authorize third-party applications to access data.
 
 ## Setting Up OAuth2
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to _Control Panel_ &rarr; _Security_ &rarr; _OAuth 2 Administration_.
+1. Open the _Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to _Control Panel_ &rarr; _Security_ &rarr; _OAuth 2 Administration_.
 
-1. Click _Add_ (![Add Icon](../../images/icon-add.png)) to create a new OAuth2 application. 
+1. Click _Add_ (![Add Icon](../../../images/icon-add.png)) to create a new OAuth2 application. 
 
 1. Give the application a name (e.g., foo). Set the Website URL as `http://localhost:3000` and the Callback URI as `http://localhost:3000/grant-type-authorization-code`. Click *Save*.
 
@@ -21,7 +21,7 @@ Use Liferay's OAuth2 tools to authorize third-party applications to access data.
 
    Click *Save*. Your OAuth2 Application now has read privileges for the commerce pricing API category.
 
-1. Next, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Security Tools*.
+1. Next, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Control Panel* tab, and go to *System Settings* &rarr; *Security Tools*.
 
 1. Go to the *Portal Cross-Origin Resource Sharing (CORS)* tab and click *Default Portal CORS Configuration*.
 

@@ -1,7 +1,6 @@
 ---
 uuid: 6aca0e01-fe8f-4076-8000-50888771a2b5
 ---
-
 ## Enabling Cross-Origin Resource Sharing
 
 When a server from a different domain tries to access Liferay web services, the cross-origin resource sharing (CORS) policy allows or denies each request. See [setting up CORS](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors) to learn more.

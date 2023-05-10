@@ -22,7 +22,7 @@ The example below is for demonstration purposes only. Granting access to these s
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Service Access Policy_.
 
-1.  Click _Add_ (![Add icon](../../images/icon-add.png)).
+1. Click _Add_ (![Add icon](../../images/icon-add.png)).
 
 1. Configure the new policy as follows:
 

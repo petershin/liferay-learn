@@ -1,3 +1,6 @@
+---
+uuid: 38f72d34-99ad-4e11-b28e-bf41850ee7c7
+---
 # Application Development
 
 Liferay provides out-of-the-box features for building dynamic digital experiences on a unified platform. It also provides extensive tools for building custom solutions that enhance and adapt the platform to meet your business needs. Using objects, headless APIs, client extensions, and fragments, you can build and integrate custom applications seamlessly with Liferay's core features.

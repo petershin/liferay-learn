@@ -4,7 +4,6 @@ toc:
     - ./authorizing-and-single-sign-on/authorizing-with-oauth2.md
 uuid: 0aba9fed-1dee-4bd0-a57a-fd8200e72c35
 ---
-
 # Authorizing and Single Sign-On
 
 Authentication and authorization are like the two sides of a coin. Authentication ensures that credentials given match credentials stored in the system. Authorization grants access to resources given authentication that's already happened. Here, you'll learn about ways Liferay offers to authenticate users given credentials coming from another system, and you'll learn about how Liferay uses [OAuth 2](https://oauth.net/2/) to authorize access to resources on behalf of users. 

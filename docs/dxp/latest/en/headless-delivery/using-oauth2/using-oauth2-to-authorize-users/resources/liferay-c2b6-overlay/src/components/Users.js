@@ -14,11 +14,11 @@ function Users({token}) {
 
 	return (
 		<div>
-			<h2>Get Users</h2>
+			<h2>Get Data</h2>
 
 			<input
 				onChange={(event) => setUrl(event.target.value)}
-				placeholder="Liferay Get User URL"
+				placeholder="Liferay Request URL"
 				style={{width: 500}}
 				type="text"
 				value={url}
@@ -28,7 +28,7 @@ function Users({token}) {
 
 			<br />
 
-			<button onClick={handleGetUsers}>Get Users</button>
+			<button onClick={handleGetUsers}>Get Data</button>
 
 			<pre>{JSON.stringify(users, null, 2)}</pre>
 		</div>

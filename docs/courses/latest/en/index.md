@@ -4,7 +4,7 @@ toc:
 - ./partner-enablement.md
 uuid: 79dff06d-5aef-4fba-bf17-edbb16e2ed5a
 ---
-# Liferay Courses
+# Courses
 
 ```{toctree}
 :maxdepth: 4

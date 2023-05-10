@@ -1,7 +1,6 @@
 ---
 uuid: 08ae049f-1024-4ac2-919e-7b0f7f5fa52f
 ---
-
 # Configuring Sign In
 
 Liferay's sign-in widget is configurable and adjusts to how you've set its options. In a prior step, you configured two [virtual instances](../../configuration/configuring-virtual-instances.md). One of these is for a public-facing, external website. The other is for an internal intranet meant for employees or partners. 
@@ -18,7 +17,7 @@ Guest users should be able to access the external site and register for accounts
 
 1. Make sure all boxes are checked except _Allow strangers to create accounts with a company email address_. Delectable Bonsai wants only members of the Marketing department to have accounts on the public website, and they will be created by administrators. 
 
-![Having all boxes checked is appropriate for an external site.](./configuring-sign-in/images/01.png)
+   ![Having all boxes checked is appropriate for an external site.](./configuring-sign-in/images/01.png)
 
 1. Click _Save_. 
 
@@ -27,9 +26,9 @@ Because it's a public website, unscrupulous users who register themselves may de
 1. Click _Reserved Credentials_ on the left. 
 
 1. In the Screen Names field, type the screen names you don't want users to have, one per line: 
-    - admin
-    - root
-    - president
+   - admin
+   - root
+   - president
 
 1. Click _Save_. 
 
@@ -53,7 +52,7 @@ Now you can configure authentication on the internal intranet.
 
 1. Click _Save_. 
 
-![Set the options for an internal website.](./configuring-sign-in/images/02.png)
+   ![Set the options for an internal website.](./configuring-sign-in/images/02.png)
 
 Internal users authenticate using a screen name given to them by administrators, not by their email addresses. 
 
@@ -63,6 +62,5 @@ Next: [Authentication Verifiers](./authentication-verifiers.md)
 
 ## Relevant Concepts
 
-[Authentication Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics)
-
-[User Authentication](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/user-authentication)
+- [Authentication Basics](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/authentication-basics)
+- [User Authentication](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/user-authentication)

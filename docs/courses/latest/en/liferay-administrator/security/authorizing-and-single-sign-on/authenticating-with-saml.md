@@ -29,7 +29,7 @@ Delectable Bonsai has grown by acquiring Almighty Syrup. As they look to the pos
 
 1. Configure a new identity provider.
 
-   * Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_. 
+   * Navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_. 
    * Under the general tab, select _Identity Provider_ as the SAML role. 
    * Enter the entity ID as `liferayidp`. 
    * Click _Save_.
@@ -49,7 +49,7 @@ Delectable Bonsai has grown by acquiring Almighty Syrup. As they look to the pos
 
 1. Navigate to `localhost:8080` and log in as the administrator (i.e. `test@liferay.com:test`). Note, you may need to access each container in a different browser.
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_. 
+1. Navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_. 
 
 1. Configure a new service provider.
 
@@ -64,7 +64,7 @@ Delectable Bonsai has grown by acquiring Almighty Syrup. As they look to the pos
 
 ## Linking the SP and IdP
 
-In the `liferaysp` container (`localhost:8080`), navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_. Click the _Identity Provider Connections_ tab.
+In the `liferaysp` container (`localhost:8080`), navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_. Click the _Identity Provider Connections_ tab.
 
 1. Create an IdP connection.
 
@@ -74,13 +74,13 @@ In the `liferaysp` container (`localhost:8080`), navigate to _Global Menu_ (![Gl
    * Tick the _Enabled_ checkbox.
    * Enter the metadata URL as `http://[IP Address]:7080/c/portal/saml/metadata`. Note, replace `[IP address]` with your machine's local IP address.
    * Under attribute mapping, use the drop-down list and select `emailAddress`. Set the SAML attribute as `emailAddress`.
-   * Click the (![add icon](../../images/icon-add.png)) for another entry. Use the drop-down list and select `firstName`. Set the SAML attribute as `firstName`.
-   * Click the (![add icon](../../images/icon-add.png)) for another entry. Use the drop-down list and select `lastName`. Set the SAML attribute as `lastName`.
-   * Click the (![add icon](../../images/icon-add.png)) for another entry. Use the drop-down list and select `screenName`. Set the SAML attribute as `screenName`.
-   * Click the (![add icon](../../images/icon-add.png)) for another entry. Use the drop-down list and select `UUID`. Set the SAML attribute as `UUID`.
+   * Click the (![Add icon](../../../images/icon-add.png)) for another entry. Use the drop-down list and select `firstName`. Set the SAML attribute as `firstName`.
+   * Click the (![Add icon](../../../images/icon-add.png)) for another entry. Use the drop-down list and select `lastName`. Set the SAML attribute as `lastName`.
+   * Click the (![Add icon](../../../images/icon-add.png)) for another entry. Use the drop-down list and select `screenName`. Set the SAML attribute as `screenName`.
+   * Click the (![Add icon](../../../images/icon-add.png)) for another entry. Use the drop-down list and select `UUID`. Set the SAML attribute as `UUID`.
    * Click _Save_ at the bottom of the page.
 
-Next, in the `liferayidp` container (`localhost:7080`), navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_. Click the _Service Provider Connections_ tab.
+1. Next, in the `liferayidp` container (`localhost:7080`), navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _SAML Admin_. Click the _Service Provider Connections_ tab.
 
    * Click _Add Service Provider_.
    * Enter the name as `liferaysp`.
@@ -103,7 +103,7 @@ Next, in the `liferayidp` container (`localhost:7080`), navigate to _Global Menu
 
 ## Testing the SAML connection
 
-1. In the `liferaysp` container (i.e. `localhost:8080`), navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Note that the Test Test administrator is the only user listed.
+1. In the `liferaysp` container (i.e. `localhost:8080`), navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Note that the Test Test administrator is the only user listed.
 
 1. Click the user profile image in the top right and click _Sign Out_. Sign in with the credentials `support@delectablebonsai.com:learn`. Note the `liferayidp` container verified the user and provided successful login.
 

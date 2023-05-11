@@ -1,0 +1,6 @@
+Bundle-Name: Acme Site Initializer J6K3
+Bundle-SymbolicName: com.acme.site.initializer.j6k3
+Bundle-Version: 1.0.0
+Liferay-Site-Initializer-Name: J6K3
+Provide-Capability: liferay.site.initializer
+Web-ContextPath: /site-initializer-j6k3

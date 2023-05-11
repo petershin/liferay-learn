@@ -1,0 +1,80 @@
+[
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "DBACCOUNT-001"
+			}
+		],
+		"alternateName": "Kyle",
+		"emailAddress": "kyle@delectablebonsai.com",
+		"externalReferenceCode": "DBUSER-001",
+		"familyName": "Klein",
+		"givenName": "Kyle",
+		"jobTitle": "IT Staff",
+		"organizationBriefs": [
+			{
+				"name": "IT"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "DBACCOUNT-002"
+			}
+		],
+		"alternateName": "Marcus",
+		"emailAddress": "marcus@delectablebonsai.com",
+		"externalReferenceCode": "DBUSER-002",
+		"familyName": "Morgan",
+		"givenName": "Marcus",
+		"jobTitle": "IT Manager",
+		"organizationBriefs": [
+			{
+				"name": "IT"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "DBACCOUNT-003"
+			}
+		],
+		"alternateName": "Lily",
+		"emailAddress": "lily@delectablebonsai.com",
+		"externalReferenceCode": "DBUSER-003",
+		"familyName": "Lewis",
+		"givenName": "Lily",
+		"jobTitle": "Account Manager",
+		"organizationBriefs": [
+			{
+				"name": "Sales & Marketing"
+			},
+			{
+				"name": "Marvelous Markets"
+			}
+		]
+	},
+	{
+		"accountBriefs": [
+			{
+				"externalReferenceCode": "DBACCOUNT-003",
+				"roleBriefs": [
+					"Order Manager"
+				]
+			}
+		],
+		"alternateName": "Noah",
+		"emailAddress": "noah@marvelousmarkets.com",
+		"externalReferenceCode": "DBUSER-004",
+		"familyName": "Norman",
+		"givenName": "Noah",
+		"jobTitle": "Store Manager",
+		"organizationBriefs": [
+			{
+				"name": "Marvelous Markets"
+			}
+		]
+	}
+]

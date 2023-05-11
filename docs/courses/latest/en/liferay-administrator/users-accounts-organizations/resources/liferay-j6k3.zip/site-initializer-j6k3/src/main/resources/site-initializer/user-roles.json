@@ -1,0 +1,14 @@
+[
+	{
+		"emailAddress": "kyle@delectablebonsai.com",
+		"roles": [
+			"Administrator"
+		]
+	},
+	{
+		"emailAddress": "marcus@delectablebonsai.com",
+		"roles": [
+			"Administrator"
+		]
+	}
+]

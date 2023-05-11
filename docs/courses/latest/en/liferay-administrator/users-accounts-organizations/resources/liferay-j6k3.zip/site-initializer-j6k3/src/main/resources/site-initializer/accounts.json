@@ -1,0 +1,17 @@
+[
+	{
+		"externalReferenceCode": "DBACCOUNT-001",
+		"name": "Delectable Bonsai User 001",
+		"type": "person"
+	},
+	{
+		"externalReferenceCode": "DBACCOUNT-002",
+		"name": "Delectable Bonsai User 002",
+		"type": "person"
+	},
+	{
+		"externalReferenceCode": "DBACCOUNT-003",
+		"name": "Marvelous Markets NYC",
+		"type": "business"
+	}
+]

@@ -18,7 +18,7 @@ The following collection providers are available out-of-the-box and function the
 * Highest Rated Assets: displays rated assets from highest to lowest.
 * Recent Content: displays recently modified assets from the most recent to least recent.
 
-![When configuring a collection display fragment, you can choose collection providers such as Most Viewed Assets, Highest Rated Assets, and Recent Content.](./collection-providers/01.png)
+![When configuring a collection display fragment, you can choose collection providers such as Most Viewed Assets, Highest Rated Assets, and Recent Content.](./collection-providers/images/01.png)
 
 ## Related Items Collection Providers
 
@@ -28,7 +28,7 @@ Related items collection providers show lists of items related to the main items
 
 1. By nesting collections within a collection display fragment on a content page.
 
-![When configuring a collection display fragment, you can choose Related Items collection providers.](./collection-providers/02.png)
+![When configuring a collection display fragment, you can choose Related Items collection providers.](./collection-providers/images/02.png)
 
 **Related Assets:** shows items related to the main item on display.
 
@@ -38,13 +38,13 @@ Related items collection providers show lists of items related to the main items
 
 **Items with the Same Categories:** shows items with the same category as the main item being viewed. For example, if the main item has the category *football*, items with the same category appear. You can further refine the results by selecting _Any Category of the Same Vocabulary_ or _A Specific Category_ under *Advanced Rule*.
 
-![Items with the Same Categories requires you to choose an item type.](./collection-providers/04.png)
+![Items with the Same Categories requires you to choose an item type.](./collection-providers/images/04.png)
 
 ### Advanced Rules for Items with the Same Categories
 
 You can further refine displayed items while filtering them based on their types.
 
-![When configuring the Items with the Same Categories provider, you can choose advanced rules from the drop-down.](./collection-providers/03.png)
+![When configuring the Items with the Same Categories provider, you can choose advanced rules from the drop-down.](./collection-providers/images/03.png)
 
 **Any Category of the Same Vocabulary:** shows all items with categories in the same vocabulary as the main asset. For example, if the main asset has the category *football* all other items in the *sports* vocabulary are shown.
 

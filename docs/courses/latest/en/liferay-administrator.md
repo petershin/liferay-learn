@@ -3,6 +3,9 @@ toc:
 - ./liferay-administrator/cloud-administrator.md
 - ./liferay-administrator/configuration.md
 - ./liferay-administrator/users-accounts-organizations.md
+- ./liferay-administrator/user-data.md
+- ./liferay-administrator/clustering.md
+- ./liferay-administrator/security.md
 uuid: 42a40fb0-ecff-498c-8433-68b0005c2d15
 ---
 # Liferay Administrator
@@ -13,6 +16,9 @@ uuid: 42a40fb0-ecff-498c-8433-68b0005c2d15
 liferay-administrator/cloud-administrator.md
 liferay-administrator/configuration.md
 liferay-administrator/users-accounts-organizations
+liferay-administrator/user-data.md
+liferay-administrator/clustering.md
+liferay-administrator/security.md
 ```
 
 This course covers all necessary topics for setting up and administering a Liferay DXP installation. For those using LXC-SM, Liferay's PaaS for DXP, start with the Cloud Administrator course!
@@ -42,5 +48,23 @@ Learn how to get started configuring Liferay DXP.
 :link: ./liferay-administrator/users-accounts-organizations
 
 Learn how Users, Accounts, and Organizations can be used to deliver for your needs on Liferay DXP.
+:::
+
+:::{grid-item-card}  User Data
+:link: ./liferay-administrator/user-data.md
+
+Learn how to manage user data.
+:::
+
+:::{grid-item-card}  Clustering
+:link: ./liferay-administrator/clustering.md
+
+Learn how to configure a Liferay cluster.
+:::
+
+:::{grid-item-card}  Security
+:link: ./liferay-administrator/security.md
+
+Learn how to get secure your Liferay environment.
 :::
 ::::

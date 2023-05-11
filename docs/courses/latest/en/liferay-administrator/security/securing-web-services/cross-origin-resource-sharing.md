@@ -9,20 +9,20 @@ Delectable Bonsai may choose to create a [Liferay object](https://learn.liferay.
 
 1. Create a Liferay object.
 
-   * Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Objects_.
-   * Click _Add_ (![Add icon](../../images/icon-add.png)).
+   * Navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Objects_.
+   * Click _Add_ (![Add icon](../../../images/icon-add.png)).
    * Enter the following object:
      * Label: `J4X7-Object`
      * Plural Label: `J4X7-Objects`
      * Name: `J4X7Object`
    * Click _Save_.
    * Select the J4X7-Object you just created. Click the _Fields_ tab.
-   * Click _Add_ (![Add icon](../../images/icon-add.png)) and add the following field:
+   * Click _Add_ (![Add icon](../../../images/icon-add.png)) and add the following field:
      * Label: `name`
      * Field Name: `name`
      * Type: `Text`
    * Click _Save_.
-   * Click _Add_ (![Add icon](../../images/icon-add.png)) and add the following field:
+   * Click _Add_ (![Add icon](../../../images/icon-add.png)) and add the following field:
      * Label: `description`
      * Field Name: `description`
      * Type: `Text`
@@ -59,7 +59,7 @@ Delectable Bonsai may choose to create a [Liferay object](https://learn.liferay.
 
    See that the entry was prevented from being added.
 
-1. In Liferay, navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_.
+1. In Liferay, navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_.
 
 1. Add a CORS policy for the object.
 

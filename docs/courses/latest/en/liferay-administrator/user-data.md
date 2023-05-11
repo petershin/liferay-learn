@@ -17,4 +17,4 @@ As customers come and go, you can use Liferay's user data management tools to he
 * Understand the personal data that accumulates on your system
 * Use Liferay's GDPR tools
 
-[Let's Go!](./user-data/connecting-to-ldap.md).
+[Let's Go!](./user-data/connecting-to-ldap.md)

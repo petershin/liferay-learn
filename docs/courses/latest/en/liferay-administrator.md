@@ -10,33 +10,28 @@ uuid: 42a40fb0-ecff-498c-8433-68b0005c2d15
 ---
 # Liferay Administrator
 
-```{toctree}
-:maxdepth: 3
+Is your Liferay instance installed? Now what? Whether you're on LXC, LXC-SM, or self-hosted, this course covers administering your Liferay installation. You'll learn
 
-liferay-administrator/cloud-administrator.md
-liferay-administrator/configuration.md
-liferay-administrator/users-accounts-organizations
-liferay-administrator/user-data.md
-liferay-administrator/clustering.md
-liferay-administrator/security.md
-```
+- The difference between System Settings, Virtual Instances, and System Settings
+- How to make Liferay send notification emails
+- The difference between Accounts and Users, and how to import them
+- How Organizations help you manage your users and sites
+- How Roles apply permissions to users
+- How Accounts can manage user access 
+- How to work with personal data to comply with GDPR and user data requests
+- If you're self-hosted, how to cluster Liferay
+- How to tune authentication, password policies, and account management
+- Single sign-on with SAML
+- How to secure web services
+- How to create OAuth 2.0 profiles for access to web services
+- How to filter JavaScript out of user-submitted HTML
 
-This course covers all necessary topics for setting up and administering a Liferay DXP installation. For those using LXC-SM, Liferay's PaaS for DXP, start with the Cloud Administrator course!
+Dive in and begin creating a website for Delectable Bonsai, a (fake) company that combines the (fictitious) health benefits of Bonsai tree sap with maple syrup to create an unbeatable breakfast experience! 
 
-```{note}
-Go to market even faster by using Liferay Experience Cloud! LXC is a full SaaS offering that saves you time and money by managing and administering all your Liferay infrastructure for you so you can focus on delivering business solutions.
-```
+What are you waiting for? Start by creating your Liferay [configuration](./liferay-administrator/configuration.md). 
 
-We recommend that all prospective Liferay administrators, regardless of your deployment paradigm (SaaS, PaaS, or on-prem), go through the Configuration and Users/Accounts/Organizations course to have a baseline understanding of how these concepts work.
-
-::::{grid} 2
+::::{grid} 1
 :gutter: 3 3 3 3
-
-:::{grid-item-card}  Cloud Administrator
-:link: ./liferay-administrator/cloud-administrator.md
-
-Learn the ins and outs of working with Liferay Experience Cloud - Self-Managed. 
-:::
 
 :::{grid-item-card}  Configuration
 :link: ./liferay-administrator/configuration.md

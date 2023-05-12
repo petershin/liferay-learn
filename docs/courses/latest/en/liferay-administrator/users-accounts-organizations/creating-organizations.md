@@ -98,7 +98,7 @@ Next, create an organization site for the Sales & Marketing department to host a
 
 1. The Sales & Marketing organization site now has a page with Sales & Marketing blog postings for anyone that is part of the child organization to view. See [Getting Started with Blogs](https://learn.liferay.com/en/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs) to learn more about blogs and blog entries.
 
-The next step is to assign different [roles and permissions](./setting-roles-and-permissions.md) to each user.
+Next, you'll import users by [connecting to LDAP](./connecting-to-ldap.md). 
 
 ## Relevant Concepts
 

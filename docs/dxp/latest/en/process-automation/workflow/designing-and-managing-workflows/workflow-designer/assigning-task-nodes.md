@@ -110,13 +110,13 @@ else {
 
 This script assigns the task to the administrator role, then checks if the asset's group is an organization. If so, the organization content reviewer role is added. If not, the site content reviewer role is added.
 
-Note the `roles = new ArrayList<Role>();` line. In a scripted assignment, the `roles` variable is where you specify any roles the task is assigned to. For example, when `roles.add(adminRole);` is called, the administrator role is added to the assignment.
+Note the `roles = new ArrayList<Role>();` line. In a scripted assignment, the `roles` variable is where you assign roles to tasks. For example, when `roles.add(adminRole);` is called, the administrator role is added to the assignment.
 
 The `roles` variable assignment defines the assignable candidates for the task. Once the entry is submitted to the workflow, one of the candidate users must assign the task to themselves. See [Reviewing Assets](../../using-workflows/reviewing-assets.md) for more information.
 
 ### Assigning to Users
 
-Assign a user or list of users to a task. These assignments appear in the My Workflow Tasks application under Assigned to Me. To assign a list of users as possible candidates,
+Assign a user or list of users to a task. These assignments appear in the My Workflow Tasks application under Assigned to Me. To assign a list of users as possible candidates, use code like this: 
 
 ```groovy
 import com.liferay.portal.kernel.service.UserLocalServiceUtil;

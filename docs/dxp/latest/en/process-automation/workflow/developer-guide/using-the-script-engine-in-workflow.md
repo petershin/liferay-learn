@@ -91,7 +91,7 @@ These variables are injected into task nodes:
 | `kaleoTimerInstanceToken` ([`KaleoTimerInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoTimerInstanceToken.java)) | If a [task timer](./workflow-task-node-reference.md) exists, get its ID by calling `kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`. | | |
 
 ```{warning}
-These variables are available in action scripts in workflow task nodes (i.e., scripts in an `<actions>` &rarr; `<action>` &rarr; `<script>` block). [Scripted assignments](../designing-and-managing-workflows/workflow-designer/assigning-task-nodes.md#scripted-assignments) do not have these variables injected.
+These variables appear in action scripts in workflow task nodes (i.e., scripts in an `<actions>` &rarr; `<action>` &rarr; `<script>` block). [Scripted assignments](../designing-and-managing-workflows/workflow-designer/assigning-task-nodes.md#scripted-assignments) do not have these variables injected.
 ```
 
 ## Script Example

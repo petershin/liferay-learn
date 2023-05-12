@@ -5,16 +5,32 @@
 		el: '#landingPage',
 		data: {
 			cards: [
+				{
+					icon: '#dxp-cloud-logo',
+					sectionName: 'Cloud Administrator',
+					sectionURL: 'cloud-administrator.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Liferay Experience Cloud',
+							url: 'cloud-administrator/liferay-experience-cloud.html'
+						},
+						{
+							name: 'Cloud Setup and Management',
+							url: 'cloud-administrator/liferay-experience-cloud-self-managed/cloud-setup-and-management.html'
+						},
+						{
+							name: 'Cloud Development Lifecycle',
+							url: 'cloud-administrator/liferay-experience-cloud-self-managed/cloud-development-lifecycle.html'
+						}
+					]
+				},
 				{ 
 					icon: '#developing-applications-logo',
 					sectionName: 'Liferay Administrator',
 					sectionURL: 'liferay-administrator.html',
 					showAll: false,
 					subsections: [
-						{
-							name: 'Cloud Administrator',
-							url: 'liferay-administrator/cloud-administrator.html'
-						},
 						{
 							name: 'Configuration',
 							url: 'liferay-administrator/configuration.html'

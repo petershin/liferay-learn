@@ -132,8 +132,10 @@ To revert the behavior, use the Enable Legacy Dynamic Data Mapping Index Fields 
 
 See [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) for an example showing the use of a web content structure field with the Custom Filter widget.
 
-## Related Content
+## Related Topics
 
-- [Custom Filter Examples](./custom-filter-examples.md)
-- [Result Rankings](../../search-administration-and-tuning/result-rankings.md)
-- [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md)
+[Custom Filter Examples](./custom-filter-examples.md)
+
+[Result Rankings](../../search-administration-and-tuning/result-rankings.md)
+
+[Synonym Sets](../../search-administration-and-tuning/synonym-sets.md)

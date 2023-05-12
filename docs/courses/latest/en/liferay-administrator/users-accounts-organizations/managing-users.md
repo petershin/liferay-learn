@@ -3,7 +3,7 @@ uuid: 4214e7cf-2624-4d50-98ca-d3a02791742d
 ---
 # Managing Users
 
-Use Liferay to create and manage users for Delectable Bonsai. See [Create and Manage Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users) to learn more.
+Whether you bring in users from an LDAP or create them within Liferay, use the available tools to manage your users. See [Create and Manage Users](https://learn.liferay.com/en/w/dxp/users-and-permissions/users/adding-and-managing-users) to learn more.
 
 ## Create an Administrator
 

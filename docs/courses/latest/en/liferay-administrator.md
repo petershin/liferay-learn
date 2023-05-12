@@ -65,6 +65,6 @@ Learn how to configure a Liferay cluster.
 :::{grid-item-card}  Security
 :link: ./liferay-administrator/security.md
 
-Learn how to get secure your Liferay environment.
+Learn how to secure your Liferay environment.
 :::
 ::::

@@ -61,7 +61,7 @@ If you leave the _Enable _Import_ box unchecked, users are imported individually
 
    ![Kyle Klein as been added to the LDAP.](./importing-and-exporting-users/images/02.png)
 
-Next: [understanding personal data](./understanding-personal-data.md).
+Next: [Managing users](./managing-users.md).
 
 ## Relevant Concepts
 

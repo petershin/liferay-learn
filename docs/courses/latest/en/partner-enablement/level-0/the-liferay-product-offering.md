@@ -1,4 +1,7 @@
 ---
+toc:
+- ./level-0/determining-which-deployment-option-is-best-for-your-customer.md
+- ./level-0/liferay-dxp-product-capabilities.md
 uuid: b982f1e4-2c22-4563-aa19-68d9aa8a801a
 ---
 
@@ -145,6 +148,10 @@ What is important to note is that although the deployment model is SaaS, this is
 | --- | --- | --- |
 | Application Delivery |  | &#10004; |
 
-## Related Topics
+## What's Next
+
+Now that you understand Liferay's product offering, [learn how to determine what deployment option is best for your customer](./the-liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md).
+
+## Additional Information
 
 * [Liferay Overview]()

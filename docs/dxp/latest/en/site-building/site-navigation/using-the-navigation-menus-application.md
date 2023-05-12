@@ -138,7 +138,7 @@ Follow these steps to configure the Navigation Menu's type:
 
 The Navigation Menu has been deleted.
 
-## Additional Information
+## Related Topics
 
 * [Managing Site Navigation](./managing-site-navigation.md)
 * [Navigation Menu Element Types](./navigation-menu-element-types.md)

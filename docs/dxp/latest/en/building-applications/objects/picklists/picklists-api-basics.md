@@ -309,7 +309,7 @@ After creating a picklist, use the services below to create and manage picklist 
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all `ListTypeDefinition` and `ListTypeEntry` services and schemas and has an interface to test each service.
 
-## Additional Information
+## Related Topics
 
 * [Using Picklists](./using-picklists.md)
 * [Exporting and Importing Picklists](./exporting-and-importing-picklists.md)

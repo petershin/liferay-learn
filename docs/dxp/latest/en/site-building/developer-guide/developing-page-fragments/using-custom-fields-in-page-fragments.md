@@ -43,7 +43,7 @@ You can add FreeMarker code like this to check whether the value exists before u
 [#/if]
 ```
 
-## Additional Information
+## Related Topics
 
 * [Adding Custom Fields to Users](../../../system-administration/configuring-liferay/adding-custom-fields.md)
 

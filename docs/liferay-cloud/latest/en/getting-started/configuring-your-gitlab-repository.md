@@ -189,7 +189,7 @@ Verify that new merge requests trigger Jenkins builds:
 
 1. Verify that the links redirect to the correct GitLab pages.
 
-## Additional Information
+## Related Topics
 
 * [Configuring Your BitBucket Repository](./configuring-your-bitbucket-repository.md)
 * [Configuring Your GitHub Repository](./configuring-your-github-repository.md)

@@ -53,7 +53,7 @@ Here's how to restore the patching files:
 
 You have learned the benefits of using a Slim Bundle and you know how to patch it.
 
-## Additional Information
+## Related Topics
 
 * [Installing Patches](../installing-patches-for-dxp-7-3-and-earlier.md)
 * [Slimming Down Patched Installations](./slimming-down-patched-installations.md)

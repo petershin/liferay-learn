@@ -99,6 +99,6 @@ You can check the different status labels on the [DocuSign website](https://supp
 Disabling the Digital Signature Configuration removes all reference to DocuSign, including the Digital Signature module in the Control Panel. If you disable the feature in Liferay, all envelopes are still visible in DocuSign. If you re-enable digital signatures, the list appears again.
 ```
 
-## Additional Information
+## Related Topics
 
 - [Understanding Configuration Scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md)

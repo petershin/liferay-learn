@@ -105,7 +105,7 @@ To remove an Asset Library and its contents from your instance, click its *Actio
 Asset Library deletion cannot be undone. Ensure you're removing the correct Asset Library and that you've backed up any assets you want to keep.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Asset Libraries Overview](./asset-libraries-overview.md)
 * [Asset Library Content](./asset-library-content.md)

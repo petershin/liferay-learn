@@ -35,6 +35,6 @@ The widget immediately reflects the status of your cart if there are items prese
 The Mini Cart widget supports Application Display Templates to change the look and feel of the widget without having to deploy any code.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Liferay Commerce Widget Reference List](./widget-reference.md)

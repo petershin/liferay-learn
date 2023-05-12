@@ -99,6 +99,6 @@ Add your themelet to any theme with the `gulp extend` command:
 
 The themelet is installed to the theme, and the changes are present the next time you build and deploy this theme with the `gulp deploy` command.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Theme](../getting-started/setting-up-an-environment-and-creating-a-theme.md)

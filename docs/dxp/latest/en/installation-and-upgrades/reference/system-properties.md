@@ -74,6 +74,6 @@ If you want to use DXP's `system.properties` file and you want to extend/overrid
 
 Liferay DXP handles system properties in a flexible way, leaving you free to configure your system as best suits you.
 
-## Additional Information
+## Related Topics
 
 * [Portal Properties](./portal-properties.md)

@@ -95,7 +95,7 @@ From here, you can click *Revert* for a publication to automatically create a ne
 While all published publications on an instance are listed in the History tab, only publication owners and collaborators can view the publication's list of changes or revert it.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Publications Overview](../publications.md)
 * [Enabling Publications](./enabling-publications.md)

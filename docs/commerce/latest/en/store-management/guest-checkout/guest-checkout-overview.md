@@ -31,7 +31,7 @@ Clicking the _Continue as a Guest_ allows customers to complete the purchase wit
 
 If this authentication page does not exist, Guests will be redirected to the page with the _Checkout_ widget.
 
-## Additional Information
+## Related Topics
 
 * [Enabling Guest Checkout](./enabling-guest-checkout.md)
 * [Introduction to Channels](../../store-management/channels/introduction-to-channels.md)

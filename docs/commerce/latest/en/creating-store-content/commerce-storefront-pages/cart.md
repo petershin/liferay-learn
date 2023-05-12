@@ -19,7 +19,7 @@ You can use the Cart page to manage the contents of your cart. There are three a
 The *Mini Cart* widget supports Liferay's Adaptive Media out-of-the-box. See [Serving Device and Screen Optimized Media](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) for more information.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)

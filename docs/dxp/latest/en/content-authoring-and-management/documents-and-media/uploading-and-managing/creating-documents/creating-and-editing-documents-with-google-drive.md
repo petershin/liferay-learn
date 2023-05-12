@@ -82,7 +82,7 @@ When an editing session already exists for a Documents and Media file, the follo
 
 **Cancel Checkout:** Deletes the Google file, discarding any changes. This is equivalent to clicking *Discard Changes* in a Google Docs&trade; editing window.
 
-## Additional Information
+## Related Topics
 
 * [Creating and Editing Documents with Microsoft Office 365](./creating-and-editing-documents-with-microsoft-office-365.md)
 * [Linking to Files on Google Drive](../linking-to-files-on-google-drive.md)

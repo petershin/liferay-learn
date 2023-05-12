@@ -258,7 +258,7 @@ Form fragments include unique configuration options. To access them, you must ma
 | Button Text | For the File Upload fragment, set a localizable button text for attaching files. |
 | Show Supported File Info | For the File Upload fragment, display or hide the list of supported extensions and file size limit. |
 
-## Additional Information
+## Related Topics
 
 * [Configuring Fragments](../configuring-fragments.md)
 * [Fragment Styles Reference](./styles-reference.md)

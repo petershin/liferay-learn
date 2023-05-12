@@ -25,7 +25,7 @@ To delete the definition,
 
    ![Enter the name of the object definition and click Done.](./deleting-objects/images/02.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](./creating-objects.md)
 * [Activating and Deactivating Objects](./activating-and-deactivating-objects.md)

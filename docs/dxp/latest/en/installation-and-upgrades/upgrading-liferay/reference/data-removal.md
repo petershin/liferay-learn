@@ -29,7 +29,7 @@ To remove data,
 
 Liferay immediately removes the selected data.
 
-## Additional Information
+## Related Topics
 
 * [Data Cleanup](./data-cleanup.md)
 * [Upgrading Via Docker](../upgrade-basics/upgrading-via-docker.md)

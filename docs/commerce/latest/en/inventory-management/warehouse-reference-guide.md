@@ -60,7 +60,7 @@ Under *Channels*, you can view the available channels that the warehouse can ser
 
 The FedEx shipping method uses the warehouse's geolocation to calculate shipping costs during checkout. When there are multiple warehouses, the Liferay instance chooses the warehouse with the lowest shipping cost.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Shipments](../order-management/shipments/introduction-to-shipments.md)
 * [Setting Up Commerce Warehouses](./setting-up-warehouses.md)

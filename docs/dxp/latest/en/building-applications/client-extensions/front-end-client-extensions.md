@@ -171,7 +171,7 @@ Set these properties in the `client-extension.yaml` file of any front-end client
 
 See [Configuring Client Extensions in `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Client Extensions](../client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)

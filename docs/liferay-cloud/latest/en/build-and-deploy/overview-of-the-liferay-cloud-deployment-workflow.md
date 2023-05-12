@@ -62,7 +62,7 @@ See [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-th
 
 If desired, you can set up your CI service to automatically deploy builds to your project's `dev` environment. Add an environment variable to the CI service that initiates automatic deployments for builds made from your specified branch. See [Setting Up Automatic Deployment](./automatically-deploying-ci-service-builds.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Deployment Types](./understanding-deployment-types.md)
 * [Understanding Deployment Strategies](./understanding-deployment-strategies.md)

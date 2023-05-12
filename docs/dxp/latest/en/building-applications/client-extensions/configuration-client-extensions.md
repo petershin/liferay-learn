@@ -41,7 +41,7 @@ Specify an OAuth user agent client extension in your `client-extension.yaml` fil
 type: oAuthApplicationUserAgent
 ```
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Client Extensions](../client-extensions.md)
 * [Configuring Client Extensions in `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

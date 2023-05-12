@@ -72,6 +72,6 @@ Also, you can manage Site-specific display templates for your app: do this by cl
 
 ![Click the *Configuration* menu of an app to edit and manage available widget templates.](./creating-a-widget-template/images/04.png)
 
-## Additional Information
+## Related Topics
 
 - [Widget Template Example](./using-a-widget-template-example.md)

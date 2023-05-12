@@ -155,7 +155,7 @@ These scripts include the following APIs:
 
 This batch GET method includes the `aggregationTerms` URL parameter with two values: `dateModified` and `description`. These determine the facet criteria used for aggregating data from Object entries in the request response.
 
-## Additional Information
+## Related Topics
 
 * [Object API Basics](./object-api-basics.md)
 * [Using Batch APIs](./using-batch-apis.md)

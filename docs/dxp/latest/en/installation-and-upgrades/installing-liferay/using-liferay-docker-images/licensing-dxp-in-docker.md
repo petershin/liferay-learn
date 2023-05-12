@@ -62,7 +62,7 @@ INFO  [fileinstall-directory-watcher][LicenseManager:?] License registered for D
 
 Congratulations on updating your DXP license!
 
-## Additional Information
+## Related Topics
 
 * [Activating Liferay DXP](../../setting-up-liferay/activating-liferay-dxp.md)
 * [Providing Files to the Container](./providing-files-to-the-container.md)

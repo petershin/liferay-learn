@@ -11,7 +11,7 @@ _Order Workflows_ are a channel-specific setting that, if enabled, require the b
 
 Users can activate the _Buyer Order Approval Workflow_, _Seller Order Acceptance Workflow_, or both in their order lifecycle. The Workflows can be used to mirror real world business procedures, such as all orders must be reviewed by an order manager before submission.
 
-## Additional Information
+## Related Topics
 
 * [Enabling or Disabling Order Workflows](./enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](./approving-or-rejecting-orders-in-order-workflows.md)

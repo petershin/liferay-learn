@@ -100,6 +100,6 @@ When the provider returns a `DLVideoExternalShortcut` object, it overrides the o
 
 Since `getDescription()`, `getThumbnailURL()`, and `getTitle()` are not overridden, `null` is returned. 
 
-## Additional Information
+## Related Topics
 
 * [Creating External Video Shortcuts](../videos/creating-external-video-shortcuts.md)

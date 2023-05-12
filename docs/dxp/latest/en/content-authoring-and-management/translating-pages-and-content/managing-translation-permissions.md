@@ -39,7 +39,7 @@ Follow these steps to assign Translate permissions for specific languages:
 
 Users with the configured role can now manually translate Web Content and Content Page experiences into the specified languages.
 
-## Additional Information
+## Related Topics
 
 * [Translating Content Pages](./translating-content-pages.md)
 * [Translating Web Content](./translating-web-content.md)

@@ -210,7 +210,7 @@ The Network page shows any custom certificates, with a maximum of one per servic
 | `key` | | SSL certificate's key in Base64 format. Group this in an [`ssl`](#adding-custom-ssl-certificates) object, or a [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) object (to list multiple certificates). |
 | `crt` | | SSL certificate's crt in Base64 format. Group this in an [`ssl`](#adding-custom-ssl-certificates) object, or a [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) object (to list multiple certificates). |
 
-## Additional Information
+## Related Topics
 
 * [Private Network](./private-network.md)
 * [VPN Integration Overview](./vpn-integration-overview.md)

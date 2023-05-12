@@ -85,6 +85,6 @@ Channels have four types of notification templates for subscription events:
 | [%ORDER_CREATOR%] | User who created the order |
 | [%ORDER_ID%]      | Order ID                    |
 
-## Additional Information
+## Related Topics
 
 * [Using Notification Templates](./using-notification-templates.md)

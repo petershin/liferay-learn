@@ -137,7 +137,7 @@ Once configured, you can run each task manually by clicking *Run Now*, or schedu
 Running these tasks can be resource intensive and degrade platform performance. To reduce performance impact, avoid running them during peak use hours.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Liferay Marketplace](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)
 * [Using Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)

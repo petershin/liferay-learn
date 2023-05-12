@@ -67,7 +67,7 @@ There is also history bar at the top of the image:
 
 The history bar can undo, redo, or reset changes that have been made to the image in the editor. Use the reset button with caution: once it has been pressed the image is reset to its original state, causing all changes made within the editor to be lost.
 
-## Additional Information
+## Related Topics
 
 * [Documents and Media](../../documents-and-media.md)
 * [Uploading Files](./uploading-files.md)

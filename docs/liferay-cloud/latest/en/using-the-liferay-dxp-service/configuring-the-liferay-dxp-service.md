@@ -102,7 +102,7 @@ The Liferay service in Liferay Cloud uses [environment variables](../reference/d
 
 See [Liferay Service Environment Variables](./liferay-service-environment-variables.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Enabling Clustering in Liferay Cloud](./setting-up-clustering-in-liferay-cloud.md)

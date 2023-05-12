@@ -99,7 +99,7 @@ To override a product's Subscription settings for a specific SKU:
 
 The SKU is now available on a subscription basis.
 
-## Additional Information
+## Related Topics
 
 * [Specifications](./specifications.md)
 * [Creating SKUs for Product Variants](./creating-skus-for-product-variants.md)

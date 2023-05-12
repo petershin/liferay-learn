@@ -84,7 +84,7 @@ WAR projects don't use Bnd and must specify contracts in their `WEB-INF/liferay-
 
 Congratulations! Now you can import all kinds of packages for your modules to use.
 
-## Additional Information
+## Related Topics
 
 * [Configuring Dependencies](./configuring-dependencies.md)
 * [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)

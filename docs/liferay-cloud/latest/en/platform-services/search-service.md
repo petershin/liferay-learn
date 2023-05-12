@@ -73,6 +73,6 @@ You can set such configurations and environment variables in the `configs/{ENV}/
 | :--- | :--- | :--- |
 | `ES_JAVA_OPTS` | `-Xms4g -Xmx4g` | Java settings for the ES instance |
 
-## Additional Information
+## Related Topics
 
 * [Configuration via LCP JSON](../reference/configuration-via-lcp-json.md)

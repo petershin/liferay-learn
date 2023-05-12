@@ -58,7 +58,7 @@ To add a price list:
 
 The price list (_VIP Customers_ in this example) has been created and applied to the chosen Account Groups and Accounts. Repeat the steps to create other price lists as necessary.
 
-## Additional Information
+## Related Topics
 
 * [Creating a New Account](../users-and-accounts/account-management/creating-a-new-account.md)
 * [Creating a New Account Group](../users-and-accounts/account-management/creating-a-new-account-group.md)

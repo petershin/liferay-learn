@@ -35,6 +35,6 @@ To create new wiki pages on the new node:
 
 Once on the new node, click _This page is empty. Edit it to add some text._ to edit the current node's _FrontPage_ page.
 
-## Additional Information
+## Related Topics
 
 * [Creating Wiki Pages](./creating-wiki-pages.md)

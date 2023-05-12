@@ -39,7 +39,7 @@ Follow these steps to enable a custom Workflow for a site-scoped object:
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Objects](../objects.md)
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)

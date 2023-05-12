@@ -58,7 +58,7 @@ The patch files are restored to the installations patch file default location. A
 
 You now know how to store patch files so that your DXP installation doesn't take up unnecessary space. And you know how to restore the patch files so that you can install new patches.
 
-## Additional Information
+## Related Topics
 
 * [Installing Patches](../installing-patches-for-dxp-7-3-and-earlier.md)
 * [Installing the Patching Tool](../../reference/installing-the-patching-tool.md)

@@ -61,7 +61,7 @@ The *Versions* tab lists all saved versions of the selected file entry. You can 
 
 See [Checking Out and Editing Files](../publishing-and-sharing/managing-document-access/managing-document-changes-with-checkout.md) for more information about file versions.
 
-## Additional Information
+## Related Topics
 
 * [Documents and Media](../../documents-and-media.md)
 * [Uploading Files](./uploading-files.md)

@@ -58,7 +58,7 @@ Once finished restarting, the configured Azure Blob Storage container is your in
 If you're using Azure Blob Storage store in a clustered environment, the configuration on all nodes must be identical. In particular, make sure the `portal-ext.properties` file and the Azure Blob Storage store settings in System Settings are the same. 
 ```
 
-## Additional Information
+## Related Topics
 
 * [Azure Blob Storage Documentation](https://docs.microsoft.com/en-us/azure/storage/blobs/)
 * [File Storage](../../file-storage.md)

@@ -31,7 +31,7 @@ Reviewers can approve or reject the pending account. See [Reviewing Assets](../.
 
 ![Reviewers can approve or reject accounts.](./using-workflow-with-accounts/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating Accounts](../accounts.md#creating-an-account)
 * [Workflow Designer Overview](../../process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md)

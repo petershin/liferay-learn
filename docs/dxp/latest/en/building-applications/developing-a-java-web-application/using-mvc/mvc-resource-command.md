@@ -133,7 +133,7 @@ Clicking the view's *Download* link invokes `P8V5DownloadMVCResourceCommand`'s `
 
 Now you know how to use MVC Resource Commands. If you want to localize your portlet's content, see [Using Localized Messages](./using-localized-messages-in-an-mvc-portlet.md). If you're ready to develop model, persistence, and service layers, visit [Service Builder](../../data-frameworks/service-builder.md).
 
-## Additional Information
+## Related Topics
 
 * [Using MVC](../using-mvc.md)
 * [MVC Render Command](./mvc-render-command.md)

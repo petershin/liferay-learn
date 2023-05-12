@@ -89,7 +89,7 @@ Here are the changes from 7.2 to 7.3:
 | view.count.enabled | *NA* | true. See the [breaking change](https://learn.liferay.com/dxp/latest/en/liferay-internals/reference/7-3-breaking-changes.html#replaced-portal-properties-view-count-enabled-and-buffered-increment-enabled). |
 | work.dir.override.enabled | *NA* | false. See [Work Directory](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Work%20Directory). |
 
-## Additional Information
+## Related Topics
 
 * [Default Setting Changes in 7.2](default-setting-changes-in-7-2.md)
 * [7.3 Breaking Changes](../../../liferay-internals/reference/7-3-breaking-changes.md)

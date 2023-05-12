@@ -60,7 +60,7 @@ Enable Staging at the beginning of Site or Asset Library creation to avoid huge 
 
 For Staging, JVMs/networks should be configured with a minimum of 4GB of memory and 20MB/s transfer rate (disk).
 
-## Additional Information
+## Related Topics
 
 * [Configuring Local Live Staging](./configuring-local-live-staging.md)
 * [Configuring Remote Live Staging](./configuring-remote-live-staging.md)

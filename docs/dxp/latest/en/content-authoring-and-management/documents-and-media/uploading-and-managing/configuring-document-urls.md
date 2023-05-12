@@ -73,7 +73,7 @@ All file friendly URLs lead to latest version of the file. If you want to access
 
 ![Copy the download URL for the desired version.](./configuring-document-urls/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Documents and Media](../../documents-and-media.md)
 * [Uploading Files](./uploading-files.md)

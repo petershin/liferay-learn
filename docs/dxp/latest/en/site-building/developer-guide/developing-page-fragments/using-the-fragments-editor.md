@@ -111,7 +111,7 @@ While developing a Fragment, changes are automatically saved as a draft until yo
 Since Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+, you can create Page Fragments on the *Global* Site to make them available for all Sites. To expose this feature in the initial releases of these versions, you must create a `.config` file named `com.liferay.fragment.web.internal.configuration.FragmentGlobalPanelAppConfiguration.config` and add the `enabled=B"true"` property. Then copy it to your Liferay DXP instance's `osgi/configs` folder. Global Page Fragments are inherited by child Sites and can only be edited from the Global Site. Any resources the Global Page Fragment references from the Global Site are copied to a Site that leverages the Page Fragment.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using the Fragments Toolkit](./using-the-fragments-toolkit.md)
 * [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)

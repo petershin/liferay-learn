@@ -87,7 +87,7 @@ Alternatively, you can then manually delete recycled content or restore it to yo
 
 See [Recycle Bin Overview](../recycle-bin/recycle-bin-overview.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Asset Libraries Overview](./asset-libraries-overview.md)
 * [Creating and Managing Asset Libraries](./creating-and-managing-asset-libraries.md)

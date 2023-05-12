@@ -350,7 +350,7 @@ Determine whether child Sites can display content from this Site, including stru
 
 ![You can determine whether child Sites can display content from this Site.](./site-settings-ui-reference/images/18.png)
 
-## Additional Information
+## Related Topics
 
 - [Page Configuration UI Reference](../creating-pages/page-settings/configuring-individual-pages.md)
 - [Configuring Page Sets](../creating-pages/page-settings/configuring-page-sets.md)

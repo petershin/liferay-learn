@@ -108,7 +108,7 @@ Once your build has successfully deployed and your `dev` environment's Liferay s
 
    ![Verify the web server node is displayed at the bottom of the Home Page.](./deploying-changes-via-the-liferay-cloud-console/images/09.png)
 
-## Additional Information
+## Related Topics
 
 * [Overview of the Liferay Cloud Development Workflow](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Deploying Changes via the CLI Tool](./deploying-changes-via-the-cli-tool.md)

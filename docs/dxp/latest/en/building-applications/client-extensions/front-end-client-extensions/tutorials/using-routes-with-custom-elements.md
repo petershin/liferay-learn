@@ -230,7 +230,7 @@ routes
     :lines: 1-9
 ```
 
-## Additional Information
+## Related Topics
 
 * [Front-end Client Extensions](../../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)

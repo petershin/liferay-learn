@@ -38,7 +38,7 @@ If you want to map several Structure field values to individual Fragments, you m
 
 1. Click *Publish* to save the changes.
 
-## Additional Information
+## Related Topics
 
 - [Using Fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)
 - [Understanding Web Content Structures](../../../content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures.md)

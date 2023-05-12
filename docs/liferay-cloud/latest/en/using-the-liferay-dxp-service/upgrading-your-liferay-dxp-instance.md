@@ -262,7 +262,7 @@ Upgrading the liferay service requires a database upgrade and restoring the life
 
 Congratulations! You have upgraded your DXP database to the new version and deployed it to your chosen environment. You can also [restore the same backup](#restore-the-backup) again to other environments as needed.
 
-## Additional Information
+## Related Topics
 
 Learn more about DXP upgrades:
 

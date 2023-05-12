@@ -147,6 +147,6 @@ The product image has been updated with the respective Product Option. Repeat th
 
 1. Click _Publish_.
 
-## Additional Information
+## Related Topics
 
 To configure a default placeholder image for products that do not have an image uploaded, see [Configuring a Product Placeholder Image](../../catalogs/configuring-a-product-placeholder-image.md).

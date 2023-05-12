@@ -49,7 +49,7 @@ Follow these steps to add a new portal User to an Organization:
 
 This creates a new portal User already assigned to the selected Organization and implicitly given the basic Organization User role. You can assign additional Organization-scoped roles if desired. See [Organization Roles](./organization-roles.md) to learn more.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Organizations](./understanding-organizations.md)
 * [Creating and Managing Organizations](./creating-and-managing-organizations.md)

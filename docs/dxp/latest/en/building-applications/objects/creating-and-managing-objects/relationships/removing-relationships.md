@@ -23,7 +23,7 @@ Follow these steps to remove relationships from published object definitions:
 
    ![Enter the name of the relationship and click Done.](./removing-relationships/images/01.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Defining Object Relationships](./defining-object-relationships.md)

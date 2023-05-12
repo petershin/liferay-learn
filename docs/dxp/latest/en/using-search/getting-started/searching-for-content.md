@@ -126,7 +126,7 @@ The Type Facet and the Search Results widget support searching for Liferay Objec
 
 For Liferay 7.4 U64+/GA64+, clicking an object entry in search results redirects to the entry's [display page](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects), if one exists.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Search Results](../search-pages-and-widgets/search-results/search-results-behavior.md)
 * [Enabling Search Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md)

@@ -62,7 +62,7 @@ To enable comments for Content Pages, follow these steps:
 This enables Content Page Comments for all instances. To control this on an instance-by-instance basis, navigate to the same setting in *Instance Settings* (instead of *System Settings*).
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using Content Pages](../using-content-pages.md)
 * [Adding Elements to Content Pages](./adding-elements-to-content-pages.md)

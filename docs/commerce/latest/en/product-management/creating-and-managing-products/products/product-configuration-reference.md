@@ -116,7 +116,7 @@ By default, Products are visible across all Channels and Catalogs, you can limit
 
 See [Virtual Product Reference](./../product-types/virtual-product-reference.md) -->
 
-## Additional Information
+## Related Topics
 
 * [Creating a Simple Product](../product-types/creating-a-simple-product.md)
 * [Creating a Grouped Product](../product-types/creating-a-grouped-product.md)

@@ -207,6 +207,6 @@ Since the original Processing status checks for the Pending status in its method
 
 Congratulations! You now know the basics for implementing the `CommerceOrderStatus` interface, and have added a new order status to Liferay Commerce.
 
-## Additional Information
+## Related Topics
 
 * [Commerce Order Engine Overview](./commerce-order-engine-overview.md)

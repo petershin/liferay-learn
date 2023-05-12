@@ -55,7 +55,7 @@ The order details page contains the following information for each order item:
 
 When the unit, promo and final prices are shown in the channel, the system adds net and tax in case the channel is configured to show gross prices.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Discounts](./promoting-products/introduction-to-discounts.md)
 * [Creating a Price List](./creating-a-price-list.md)

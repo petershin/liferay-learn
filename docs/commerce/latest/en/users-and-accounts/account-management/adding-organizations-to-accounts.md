@@ -56,7 +56,7 @@ Users who have administrative permissions for the store or installation may crea
 
 The organization has been added to the account using the Control Panel.
 
-## Additional Information
+## Related Topics
 
 * [Accounts Management](../account-management.md)
 * [Account Roles](./account-roles.md)

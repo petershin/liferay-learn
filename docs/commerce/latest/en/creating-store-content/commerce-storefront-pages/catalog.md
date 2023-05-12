@@ -16,7 +16,7 @@ The Catalog page is the primary way for users to browse, search, and select Chan
 
 To learn more about these widgets, see [Widget Reference](../liferay-commerce-widgets/widget-reference.md).
 
-## Additional Information
+## Related Topics
 
 * [Creating a Catalog Page](../creating-a-catalog-page.md)
 * [Widget Reference](../liferay-commerce-widgets/widget-reference.md)

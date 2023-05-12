@@ -47,7 +47,7 @@ Follow these steps to enable dynamic or manual export for the Asset Publisher wi
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Staging](../staging.md)
 * [Understanding the Publishing Process](./understanding-the-publishing-process.md)

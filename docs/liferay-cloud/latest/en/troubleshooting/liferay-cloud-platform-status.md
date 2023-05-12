@@ -47,7 +47,7 @@ Click on *Subscribe to Updates*, and select the method of notification that is m
 
 ![Figure 4: Subscribe to receive updates regarding the status of the Liferay Cloud Platform.](./liferay-cloud-platform-status/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Liferay Cloud Support Overview](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
 * [Troubleshooting Tools and Resources](./troubleshooting-tools-and-resources.md)

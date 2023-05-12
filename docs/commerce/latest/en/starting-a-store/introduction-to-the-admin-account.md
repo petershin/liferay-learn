@@ -93,6 +93,6 @@ To log out of your account:
 
     ![Signing Out](./introduction-to-the-admin-account/images/05.png "Signing Out")
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Securing Liferay DXP](https://help.liferay.com/hc/en-us/articles/360017897072-Introduction-to-Securing-Liferay-DXP)

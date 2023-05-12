@@ -27,6 +27,6 @@ Clicking on the link redirects to the site page where the asset is located.
 
 Lastly, click _RSS_ to subscribe to the user activities.
 
-## Additional Information
+## Related Topics
 
 * [Using the Contacts Center Widget](./using-the-contacts-center-widget.md)

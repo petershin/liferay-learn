@@ -79,7 +79,7 @@ Follow these steps to sync Object data to a Google Sheet:
 
    ![Turn on your Zap.](./using-zapier-to-sync-object-data-with-google-sheets/images/14.png)
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../../objects.md)
 * [Creating and Managing Objects](../../creating-and-managing-objects.md)

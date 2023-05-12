@@ -88,7 +88,7 @@ xuggler.enabled=true
 
 Restart the application server to finish enabling Xuggler.
 
-## Additional Information
+## Related Topics
 
 - [Configuring Documents and Media Previews](../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)
 - [Enabling FFmpeg for Audio and Video Previews](../../content-authoring-and-management/documents-and-media/devops/enabling-ffmpeg-for-audio-and-video-previews.md)

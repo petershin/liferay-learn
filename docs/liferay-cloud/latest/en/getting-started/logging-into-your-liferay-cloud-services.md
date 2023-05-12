@@ -53,7 +53,7 @@ You can follow similar steps to access the Jenkins CI web interface. Navigate to
 
 ![The CI service has a URL for the Jenkins CI web interface.](./logging-into-your-liferay-cloud-services/images/07.png)
 
-## Additional Information
+## Related Topics
 
 * [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Continuous Integration](../platform-services/continuous-integration.md)

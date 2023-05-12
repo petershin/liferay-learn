@@ -134,6 +134,6 @@ Next, set the Tax Rate by Category and by Address:
 
 Address specific tax rates are now configured.
 
-## Additional Information
+## Related Topics
 
 * [Creating Tax Categories](../configuring-taxes/creating-tax-categories.md)

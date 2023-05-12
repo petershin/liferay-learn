@@ -57,7 +57,7 @@ To add a new Flat Rate Shipping Option:
 
 The new Shipping Option has been added and is available during the checkout process.
 
-## Additional Information
+## Related Topics
 
 * [Using the Variable Rate Shipping Method](./using-the-variable-rate-shipping-method.md)
 * [Using FedEx as a Carrier Method](./using-the-fedex-shipping-method.md)

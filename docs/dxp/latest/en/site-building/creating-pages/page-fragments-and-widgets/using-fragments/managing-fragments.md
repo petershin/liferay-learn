@@ -83,7 +83,7 @@ Users cannot edit or copy [saved fragment compositions](./saving-fragment-compos
 Users cannot edit [default fragments](./default-fragments-reference.md) directly. However, you can copy default fragments into a custom set and edit them there.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using Fragments](../using-fragments.md)
 * [Configuring Fragments](./configuring-fragments.md)

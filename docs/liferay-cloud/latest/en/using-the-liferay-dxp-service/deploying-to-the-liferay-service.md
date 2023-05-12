@@ -162,7 +162,7 @@ Behind the scenes, XML licenses are copied to `$LIFERAY_HOME/deploy`, and AATF l
 If you are using version 3.x.x services, then licenses instead belong in the `lcp/liferay/license/{ENV}/` folder in your repository. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)

@@ -50,7 +50,7 @@ To use it, navigate to a product's *Configuration* tab, enable the *Display Avai
 
 ![Activate the Display Availability toggle and select an availability estimate from the drop-down.](./availability-estimates/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Inventory Management](../inventory-management.md)
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference-guide.md)

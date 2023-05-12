@@ -82,7 +82,7 @@ Here you can also [export](#exporting-templates) and [import](#importing-templat
 By default, Info Template exports include Widget Templates. However, you can configure which templates are included in the LAR file.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Creating a Widget Template](../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md)
 * [Creating Web Content Templates](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)

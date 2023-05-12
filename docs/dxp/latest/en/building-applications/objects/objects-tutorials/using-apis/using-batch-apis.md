@@ -222,7 +222,7 @@ The GET method is included for demonstration purposes. This returns a complete l
    :language: bash
 ```
 
-## Additional Information
+## Related Topics
 
 * [Object API Basics](./object-api-basics.md)
 * [Using Nested Fields with REST APIs](./using-nested-fields-with-rest-apis.md)

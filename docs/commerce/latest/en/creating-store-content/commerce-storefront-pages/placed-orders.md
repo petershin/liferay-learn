@@ -17,7 +17,7 @@ Individual order summaries may be viewed by clicking the related Order ID link. 
 
 ![Order summaries](./placed-orders/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)

@@ -139,6 +139,6 @@ Next, test your instance with its pruned database.
 
 Find and resolve any issues related to the objects you removed. This is an important step, in case objects were mistakenly removed, or if this affects other content. You can always restart pruning a new copy of your production database if you can't resolve an issue.
 
-## Additional Information
+## Related Topics
 
 * [Example: Removing Intermediate Journal Article Versions](./example-removing-intermediate-journal-article-versions.md)

@@ -64,7 +64,7 @@ Follow these steps to import a Page Template:
 
 The Page Template has been imported into the Site.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Page Template](./creating-a-page-template.md)
 * [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md)

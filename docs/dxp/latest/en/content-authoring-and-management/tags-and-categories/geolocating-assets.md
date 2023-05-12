@@ -130,7 +130,7 @@ Once your assets are geolocation-enabled, the [Asset Publisher](../../site-build
 
 ![The Asset Publisher can display your geolocated assets on a map.](./geolocating-assets/images/14.png)
 
-## Additional Information
+## Related Topics
 
 * [Configuring Asset Auto Tagging](./auto-tagging/configuring-asset-auto-tagging.md)
 * [Tagging Content and Managing Tags](./tagging-content-and-managing-tags.md)

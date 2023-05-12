@@ -63,7 +63,7 @@ You can also set permissions for individual variations so certain Users have acc
 
    ![Use the check boxes to configure User permissions for the selected variation.](./managing-staging-permissions/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Staging Overview](../staging.md)
 * [Page Versioning](./page-versioning.md)

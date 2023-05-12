@@ -23,7 +23,7 @@ Follow these steps to update Page permissions:
 
 1. Click *Save* to apply the changes.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
 * [Assigning Users to Roles](../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md)

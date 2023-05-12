@@ -39,7 +39,7 @@ Liferay Cloud also sends an email to all team members when the Support Access se
 
 ![Figure 3: An email lets everyone know when the Support Access setting changes.](./support-access/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Troubleshooting Tools and Resources](./troubleshooting-tools-and-resources.md)
 * [Help Center](https://help.liferay.com/hc/en-us)

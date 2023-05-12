@@ -110,6 +110,6 @@ Run `npm install` to install LibSass. The next time you build with gulp, the err
 
 <!-- Add Using Blade to Create a Theme section, with a link to Theme Templates documentation when available-->
 
-## Additional Information
+## Related Topics
 
 * [Changing Your Site's Appearance](../../../../../getting-started/changing-your-sites-appearance.md)

@@ -382,7 +382,7 @@ On deploying the portlet application WAR file, the [WAB Generator](../../../refe
 
 The [`liferay-plugin-package-[version].dtd` file](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) describes the `liferay-plugin-package.properties` file. 
 
-## Additional Information  
+## Related Topics  
 
 * [PortletMVC4Spring Annotations](./portletmvc4spring-annotations.md)
 * [Migrating to PortletMVC4Spring \(Help Center\)](https://help.liferay.com/hc/en-us/articles/360030614052-Migrating-to-PortletMVC4Spring)

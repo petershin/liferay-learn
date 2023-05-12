@@ -430,7 +430,7 @@ The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-serv
 
 See the [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) and [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) Java interfaces too.
 
-## Additional Information
+## Related Topics
 
 * [Documents and Media](../../documents-and-media.md)
 * [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

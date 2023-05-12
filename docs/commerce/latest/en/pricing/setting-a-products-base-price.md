@@ -48,7 +48,7 @@ Products are located in the _Control Panel_ in the legacy versions.
 
 This product SKU’s base price, promo price (optional), and cost (optional) have been set. The _Cost_ field corresponds to your cost for this SKU which can help you track margins.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Price List](./creating-a-price-list.md)
 * [Creating a Discount](./promoting-products/creating-a-discount.md)

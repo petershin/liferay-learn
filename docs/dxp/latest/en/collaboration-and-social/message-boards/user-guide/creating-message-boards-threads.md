@@ -96,7 +96,7 @@ To reply to a message in a thread:
 
 In addition to replying to a message, you can rate it or flag it as objectionable. A message board moderator can evaluate flagged messages and decide how to handle the messages and their authors.
 
-## Additional Information
+## Related Topics
 
 * [Creating Message Boards Categories](./creating-message-boards-categories.md)
 

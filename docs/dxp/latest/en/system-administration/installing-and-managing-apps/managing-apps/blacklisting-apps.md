@@ -86,7 +86,7 @@ The log reports each item installation.
 
 Congratulations! Now you can manage multiple app, module, and plugin installations using a simple list.
 
-## Additional Information
+## Related Topics
 
 * [Managing Apps](./using-the-app-manager.md)
 * [Using the Felix Gogo shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)

@@ -25,7 +25,7 @@ To activate or deactivate a custom object,
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](./creating-objects.md)
 * [Deleting Objects](./deleting-objects.md)

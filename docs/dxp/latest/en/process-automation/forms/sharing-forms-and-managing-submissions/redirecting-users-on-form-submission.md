@@ -15,6 +15,6 @@ Follow these steps to set up a redirect URL:
 
 1. Click _Done_.
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](../creating-and-managing-forms/creating-forms.md)

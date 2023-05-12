@@ -70,7 +70,7 @@ When creating or editing a _Basic Web Content_ article, you can access the follo
 | **Related Assets** | Used to select any related assets, if desired. | |
 | **Permissions** | Used to set any permissions for Guests or Site Members, specific to the article. | Click More Options to see who can view the article. See [Roles and Permissions](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) for more information. |
 
-## Additional Information
+## Related Topics
 
 * [Creating and Managing Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)
 * [Introduction to Web Content Structures](../web-content-structures/understanding-web-content-structures.md)

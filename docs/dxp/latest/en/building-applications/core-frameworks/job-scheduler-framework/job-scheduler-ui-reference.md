@@ -88,7 +88,7 @@ This page compiles a list of all jobs scheduled across the Liferay instance usin
 | Run Now | Button to manually execute the job |
 | Pause/Resume | Option to *Pause*/*Resume* the job, accessible via the Actions button |
 
-## Additional Information
+## Related Topics
 
 * [Using Job Scheduler](./using-job-scheduler.md)
 * [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)

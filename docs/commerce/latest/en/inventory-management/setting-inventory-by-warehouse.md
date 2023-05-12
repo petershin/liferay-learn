@@ -101,7 +101,7 @@ To transfer stock between warehouses,
 
 You can now view the updated inventory for each warehouse.
 
-## Additional Information
+## Related Topics
 
 * [Setting Up Commerce Warehouses](./setting-up-warehouses.md)
 * [Inventory Management Reference Guide](./inventory-management-reference-guide.md)

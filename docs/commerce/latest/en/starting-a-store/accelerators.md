@@ -25,6 +25,6 @@ To use an Accelerator:
 
 Your accelerated site has been created.
 
-## Additional Information
+## Related Topics
 
 * [Using the Minium Accelerator to Jump Start Your B2B Store](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)

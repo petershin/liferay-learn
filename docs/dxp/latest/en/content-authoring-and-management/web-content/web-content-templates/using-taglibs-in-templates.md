@@ -25,6 +25,6 @@ The `utilLocator`, `objectUtil`, and `staticUtil` variables for FreeMarker are d
 
 After you've saved your template, DXP provides a WebDAV URL and static URL. These values access the XML source of your structure. You can find these URLs by returning to your template after it's been saved and expanding the *Details* section. For more information on WebDAV and the uses of the WebDAV URL, reference the [WebDAV Access](../../documents-and-media/publishing-and-sharing/accessing-documents-with-webdav.md) section.
 
-## Additional Information
+## Related Topics
 
 * [Embedding Widgets in Templates](./embedding-widgets-in-templates.md)

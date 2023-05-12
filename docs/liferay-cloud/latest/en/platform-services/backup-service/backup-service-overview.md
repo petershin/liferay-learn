@@ -212,7 +212,7 @@ Name                          | Default Value              | Description |
 `LCP_MASTER_USER_NAME`        | `dxpcloud`                 | The master username. |
 `LCP_MASTER_USER_PASSWORD`    | `LCP_PROJECT_MASTER_TOKEN` | The master password. |
 
-## Additional Information
+## Related Topics
 
 * [Downloading and Uploading Backups](./downloading-and-uploading-backups.md)
 * [Restoring Data from a Backup](./restoring-data-from-a-backup.md)

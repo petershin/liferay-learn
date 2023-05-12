@@ -166,7 +166,7 @@ The portlet's `view.jsp` contains a form users can submit in an `ActionRequest` 
 
 Submitting the `ActionRequest` with the `actionURL` invokes the portlet's `addH6D2Entry` method. 
 
-## Additional Information
+## Related Topics
 
 * [Managing User Data](../managing-user-data.md)
 * [Service Builder](../../building-applications/data-frameworks/service-builder.md)

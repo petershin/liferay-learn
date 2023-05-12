@@ -143,7 +143,7 @@ After setting up Staging, you can access the Staging Configuration page by click
 
 From here, you can disable Staging for your site, or modify your [page versioning](page-versioning.md) settings. However, *Staged Content* options cannot be modified after the initial setup.
 
-## Additional Information
+## Related Topics
 
 * [Staging Overview](../staging.md)
 * [Understanding the Publishing Process](./understanding-the-publishing-process.md)

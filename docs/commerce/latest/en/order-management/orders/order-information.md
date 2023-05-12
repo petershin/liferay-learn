@@ -37,7 +37,7 @@ The _Emails_ tab contains all the [transactional emails](../../store-management/
 
 ![Emails Tab](./order-information/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
 * [Orders Menu Reference Guide](./orders-menu-reference-guide.md)

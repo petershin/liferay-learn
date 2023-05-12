@@ -213,7 +213,7 @@ The `Users.js` component parses the response for the `access_token`.
 
 Finally, clicking *Get Data* calls the `getUsers` function in the `Requests.js` file.
 
-## Additional Information
+## Related Topics
 
 * [Using OAuth 2.0](../using-oauth2.md)
 * [Creating an OAuth2 Application](./creating-oauth2-applications.md)

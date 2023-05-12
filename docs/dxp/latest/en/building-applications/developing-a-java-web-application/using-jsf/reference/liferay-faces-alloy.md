@@ -23,7 +23,7 @@ If you want to utilize Liferay's AlloyUI technology based on YUI3, you must incl
 
 As you can see, it's extremely easy to configure your JSF application to use Liferay's AlloyUI tags. 
 
-## Additional Information 
+## Related Topics 
 
 * [Developing a JSF Portlet Application \(Help Center\)](https://help.liferay.com/hc/en-us/articles/360029069451-Developing-a-JSF-Portlet-Application)
 * [Liferay Faces Bridge](./liferay-faces-bridge.md)

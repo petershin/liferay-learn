@@ -103,7 +103,7 @@ If you have an approval workflow in place to publish products, you must go throu
 
 ![Unchecking the published checkbox to remove the product from the storefront.](./managing-product-status/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Configuring Product Visibility Using Channels](../store-management/channels/configuring-product-visibility-using-channels.md)
 * [Creating a Simple Product](../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)

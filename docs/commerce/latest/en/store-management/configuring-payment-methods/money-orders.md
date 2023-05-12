@@ -20,7 +20,7 @@ To start creating an article:
 
 Your store may now accept Money Orders as a form of payment.
 
-## Additional Information
+## Related Topics
 
 **Note 1**: You can display your store's notes about money orders in different languages.
 

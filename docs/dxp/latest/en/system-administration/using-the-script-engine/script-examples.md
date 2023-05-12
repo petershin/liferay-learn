@@ -132,7 +132,7 @@ out.println(outputFile.text)
 
 Congratulations! You've executed various scripts in the Script Console.
 
-## Additional Information
+## Related Topics
 
 * [Running Scripts From the Script Console](./running-scripts-from-the-script-console.md)
 * [Using the Script Engine in Workflow](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)

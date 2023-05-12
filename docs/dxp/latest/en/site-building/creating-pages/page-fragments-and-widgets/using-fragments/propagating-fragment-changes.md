@@ -58,7 +58,7 @@ Automatic propagation can lead to unintended consequences in the production envi
 
 When enabled, changes made to a fragment's non-editable fields are automatically propagated to all instances of the fragment.
 
-## Additional Information
+## Related Topics
 
 * [Using Fragments](../using-fragments.md)
 * [Fragment Styles Reference](./configuring-fragments/styles-reference.md)

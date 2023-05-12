@@ -85,7 +85,7 @@ Follow the steps below:
 
 Notifications on the Update node have been added.
 
-## Additional Information
+## Related Topics
 
 * [Workflow Notification Template Variables](../../developer-guide/workflow-notification-template-variables.md)
 * [Creating Workflow Tasks](./creating-workflow-tasks.md)

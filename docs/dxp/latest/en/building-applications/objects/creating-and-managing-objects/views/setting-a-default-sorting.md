@@ -25,7 +25,7 @@ With custom views, you can set a default sorting for tables. Follow these steps:
 
 Object entries are now sorted according to your default sorting.
 
-## Additional Information
+## Related Topics
 
 * [Views](../views.md)
 * [Designing Object Views](./designing-object-views.md)

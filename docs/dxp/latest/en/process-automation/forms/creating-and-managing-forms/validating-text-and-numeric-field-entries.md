@@ -120,7 +120,7 @@ The Input Mask configuration lets you you display the correct number format as t
 
      ![Create an input mask for decimal fields.](./validating-text-and-numeric-field-entries/images/09.png)
 
-## Additional Information
+## Related Topics
 
 * [Validation Conditions Reference](./validation-conditions-reference.md)
 * [Creating Forms](./creating-forms.md)

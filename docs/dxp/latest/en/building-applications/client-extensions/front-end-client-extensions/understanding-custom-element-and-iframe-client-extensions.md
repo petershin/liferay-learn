@@ -53,7 +53,7 @@ By default, all browsers impose the 'same-origin' policy for IFrame applications
 
 When an IFrame app uses the client SDK, the Liferay page receives instructions to perform certain actions on behalf of the application as the current logged-in user. This includes making service calls to the DXP server and accessing state details (e.g., opening a toast in the host page, calling headless APIs, running GraphQL queries, accessing style properties).
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Client Extensions](../../client-extensions.md)
 * [Creating a Basic Custom Element](./tutorials/creating-a-basic-custom-element.md)

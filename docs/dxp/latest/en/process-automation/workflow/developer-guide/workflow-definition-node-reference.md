@@ -229,7 +229,7 @@ Here's the `content-review` task from the Category Specific Approval workflow, w
 </task>
 ```
 
-## Additional Information
+## Related Topics
 
 * [Crafting XML Workflow Definitions](./crafting-xml-workflow-definitions.md)
 * [Workflow Task Node Reference](./workflow-task-node-reference.md)

@@ -27,6 +27,6 @@ These properties are specific to batch client extensions:
 | `name`                           | String    | The batch name. |
 | `oAuthApplicationHeadlessServer` | String    | (Required) The identity (`externalReferenceCode`) of an OAuth2 application headless server profile. |
 
-## Additional Information
+## Related Topics
 
 * [Working with Client Extensions](../working-with-client-extensions.md)

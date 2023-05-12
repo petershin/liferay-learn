@@ -30,7 +30,7 @@ These properties are specific to theme sprite map client extensions:
 
 See [Front-end Client Extension Properties](../front-end-client-extensions.md#front-end-client-extension-properties) for properties common to all front-end client extensions.
 
-## Additional Information
+## Related Topics
 
 * [Front-end Client Extensions](../front-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)

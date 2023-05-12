@@ -50,7 +50,7 @@ When Liferay DXP deploys a WAR, it converts it to a [WAB](https://docs.osgi.org/
 
 Congratulations! You resolved dependencies on packages from non-OSGi JARs.
 
-## Additional Information
+## Related Topics
 
 * [Importing Packages](../importing-packages.md)
 * [Exporting Packages](../exporting-packages.md)

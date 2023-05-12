@@ -77,7 +77,7 @@ If needed, follow these steps to perform bulk export/import operations for Site 
 
    ![Go to the Import tab to import an LAR file with multiple Site Templates.](./exporting-importing-site-templates/images/07.png)
 
-## Additional Information
+## Related Topics
 
 * [Site Templates](../site-templates.md)
 * [Creating Site Templates](./creating-site-templates.md)

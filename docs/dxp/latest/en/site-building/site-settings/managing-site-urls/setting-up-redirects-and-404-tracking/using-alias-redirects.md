@@ -61,7 +61,7 @@ Once you've added a URL redirect, edit or remove it at any time by clicking its 
 Changes made to a redirect may not immediately display in browsers that have cached the old redirect configuration.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Tracking 404 URLs](./tracking-404-urls.md)
 * [Using Pattern Redirects](./using-pattern-redirects.md)

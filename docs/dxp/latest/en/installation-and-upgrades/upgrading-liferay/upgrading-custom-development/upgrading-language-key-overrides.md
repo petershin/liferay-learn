@@ -16,7 +16,7 @@ Here's how to upgrade language key overrides:
 
 Your module is ready to deploy.
 
-## Additional Information
+## Related Topics
 
 * [Overriding Global Language Translations](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
 * [Renamed Language Keys](../reference/renamed-language-keys.md)

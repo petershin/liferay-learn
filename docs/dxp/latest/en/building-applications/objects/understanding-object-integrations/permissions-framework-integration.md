@@ -82,7 +82,7 @@ Follow these steps:
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Object Integrations](../understanding-object-integrations.md)
 * [Objects Overview](../../objects.md)

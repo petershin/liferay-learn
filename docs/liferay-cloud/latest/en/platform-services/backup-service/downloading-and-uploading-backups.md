@@ -221,7 +221,7 @@ Run this command to compress the data volume:
 cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 ```
 
-## Additional Information
+## Related Topics
 
 * [Backup Service Overview](./backup-service-overview.md)
 * [Restoring Data from a Backup](./restoring-data-from-a-backup.md)

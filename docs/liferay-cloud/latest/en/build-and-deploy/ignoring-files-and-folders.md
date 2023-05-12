@@ -42,7 +42,7 @@ As best practice, keep the `.lcpignore` file in the top level folder of your pro
 If a file or folder has been deployed and administrators want to ignore it later, Liferay Cloud will not ignore the file if a subsequent rule tries to include that file or folder. Rather, that file or folder will not be updated.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Configuring the Liferay Service](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)

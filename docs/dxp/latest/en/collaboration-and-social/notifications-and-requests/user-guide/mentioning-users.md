@@ -25,6 +25,6 @@ Mentioned users receive a site notification and an email informing them that the
 
 The notification and email indicate the author's name and content type, and contain links to the content. You can access your notifications by selecting *Notifications* from your user menu. See [Managing Notifications and Requests](./managing-notifications-and-requests.md)
 
-## Additional Information
+## Related Topics
 
 * [Configuring Mentions](./configuring-mentions.md)

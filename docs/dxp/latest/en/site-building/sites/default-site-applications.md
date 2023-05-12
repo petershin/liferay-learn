@@ -78,7 +78,7 @@ When you use an application in a Site, the application's data is restricted to t
 | [Export](./exporting-importing-site-pages-and-content.md) | Export Site Pages and content in as an LAR file. |
 | [Import](./exporting-importing-site-pages-and-content.md) | Import Site Pages and content from a LAR file. |
 
-## Additional Information
+## Related Topics
 
 * [Sites](../sites.md)
 * [Adding a Site](./adding-a-site.md)

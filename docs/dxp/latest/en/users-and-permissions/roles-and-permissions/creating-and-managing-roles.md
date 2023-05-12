@@ -88,7 +88,7 @@ A Web Content folder contains Web Content articles. The Web Content folder is an
 
 Besides Web Content folders, examples of asset containers include Bookmarks folders, Message Boards categories, Wiki nodes, and Documents and Media folders.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Roles and Permissions](./understanding-roles-and-permissions.md)
 * [Defining Role Permissions](./defining-role-permissions.md)

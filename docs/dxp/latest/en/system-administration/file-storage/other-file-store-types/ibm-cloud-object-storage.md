@@ -39,7 +39,7 @@ If a database transaction rollback occurs in a Document Library, the transaction
 
 Please consult official IBM Cloud Object Storage documentation for additional details on using IBM's service.
 
-## Additional Information
+## Related Topics
 
 * [File Storage](../../file-storage.md)
 * [Amazon S3 Store](./amazon-s3-store.md)

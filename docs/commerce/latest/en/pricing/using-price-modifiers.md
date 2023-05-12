@@ -72,7 +72,7 @@ Follow these steps to configure a Price Modifier's target:
 
 1. After selecting the desired targets, return to the *Info* tab, and click on *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Pricing](./introduction-to-pricing.md)
 * [Creating a Price List](creating-a-price-list.md)

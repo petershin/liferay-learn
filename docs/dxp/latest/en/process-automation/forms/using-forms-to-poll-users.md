@@ -86,7 +86,7 @@ For installations [upgraded](../../installation-and-upgrades/upgrading-liferay.m
 - manually replace any Polls Display widget you had on a page with a Form widget.
 ```
 
-## Additional Information
+## Related Topics
 
 - [Creating and Managing Forms](./creating-and-managing-forms.md)
 - [Maintenance Mode and Deprecations in 7.4](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)

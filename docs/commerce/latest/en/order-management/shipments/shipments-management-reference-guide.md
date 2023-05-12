@@ -80,6 +80,6 @@ The _Delivered_ tab displays the same information as the _Shipped_ tab.
 
 ![Delivered tab](./shipments-management-reference-guide/images/08.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating a Shipment](./creating-a-shipment.md)

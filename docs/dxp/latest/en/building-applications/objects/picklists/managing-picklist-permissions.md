@@ -67,7 +67,7 @@ Follow these steps to manage permissions for individual Picklists:
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Using Picklists](./using-picklists.md)
 * [Defining Role Permissions](../../../users-and-permissions/roles-and-permissions/defining-role-permissions.md)

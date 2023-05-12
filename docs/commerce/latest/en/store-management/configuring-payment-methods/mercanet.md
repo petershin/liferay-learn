@@ -49,7 +49,7 @@ _Euro_ is now set as the primary currency.
 
 Mercanet is now enabled for your store.
 
-## Additional Information
+## Related Topics
 
 * [Adding a New Currency](../currencies/adding-a-new-currency.md)
 * [Authorize.Net](./authorize-net.md)

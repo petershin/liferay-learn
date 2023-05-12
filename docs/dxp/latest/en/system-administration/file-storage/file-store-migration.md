@@ -43,7 +43,7 @@ Your DXP instance is using the migrated files on the newly configured file store
 Make sure to save your new store configuration in System Settings. Otherwise, you can't use the new store and following exception occurs: `java.lang.IllegalStateException: Store is not available`
 ```
 
-## Additional Information
+## Related Topics
 
 * [File Storage](../file-storage.md)
 * [Amazon S3 Store](./other-file-store-types/amazon-s3-store.md)

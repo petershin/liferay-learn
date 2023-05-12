@@ -74,7 +74,7 @@ To activate FedEx as a shipping method for your site:
 
 The store is now configured to use FedEx as a shipping method. Note that the store can have multiple shipping methods enabled and as long as credentials are valid, sellers may now select FedEx specific shipping options.
 
-## Additional Information
+## Related Topics
 
 FedEx Web Services Developer Guide
 

@@ -61,7 +61,7 @@ However, if you would like to define file details before uploading them, follow 
 | Related Assets | &#10004; |  | Select related assets or the file from the Site or connected Asset Library. |
 | Permissions | &#10004; | &#10004; | Set permissions for the uploaded file/files. These settings determine which user roles can view the file and perform other actions related to it (e.g., update, delete). |
 
-## Additional Information
+## Related Topics
 
 * [Using Folders](./using-folders.md)
 * [Using the Media Gallery](../publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget)

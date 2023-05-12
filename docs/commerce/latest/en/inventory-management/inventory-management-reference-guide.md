@@ -71,7 +71,7 @@ See [Viewing Inventory Changes](./using-the-inventory-management-system.md#viewi
 
 The inventory settings are located in the Control Panel. To access it, navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Inventory*.
 
-## Additional Information
+## Related Topics
 
 * [Creating SKUs for Product Variants](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md)
 * [Low Stock Action](./low-stock-action.md)

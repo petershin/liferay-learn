@@ -73,7 +73,7 @@ Assets like tags, categories, structures, templates, widget templates, document 
 
 The Staging framework gathers deletions (including trashed entities) in a Site. These deletions can be published to clean up the Live Site. If you plan to process it later, or if it's not a problem to have lingering data on Live, this can be turned off as well to save execution time during the process.
 
-## Additional Information
+## Related Topics
 
 * [Staging Overview](../staging.md)
 * [Understanding the Publishing Process](./understanding-the-publishing-process.md)

@@ -17,7 +17,7 @@ uuid: e8e5f457-bd87-4dd7-9cc4-49ff6fb75029
 
 **Variable Rate**: This shipping method uses a formula to calculate a unique rate for each order by weight, product price, or other factors you determine.
 
-## Additional Information
+## Related Topics
 
 * [Applying Shipping Method Restrictions](./applying-shipping-method-restrictions.md)
 * [Measurement Units](./measurement-units.md)

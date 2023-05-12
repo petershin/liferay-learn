@@ -110,7 +110,7 @@ Once backend processes are complete, Liferay Cloud's load balancer is updated wi
 
 See [Load Balancer](./load-balancer.md) to learn more about SSL certificates in Liferay Cloud, including how to set up one or more custom SSL certificates.
 
-## Additional Information
+## Related Topics
 
 * [Load Balancer](./load-balancer.md)
 * [Configuration Via LCP.json](../../reference/configuration-via-lcp-json.md)

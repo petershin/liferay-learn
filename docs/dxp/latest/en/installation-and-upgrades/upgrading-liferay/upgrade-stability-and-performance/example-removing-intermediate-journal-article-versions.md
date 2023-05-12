@@ -108,7 +108,7 @@ You can write similar code to remove intermediate versions of other entities. On
 Print the version (and any other information of interest) of each object you're removing. You can also comment out the object deletion call and read the printout of versions to be removed as a test before committing to deleting them.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Pruning the Database](./database-pruning-for-faster-upgrades.md)
 * [Tuning for the Data Upgrade](./database-tuning-for-upgrades.md)

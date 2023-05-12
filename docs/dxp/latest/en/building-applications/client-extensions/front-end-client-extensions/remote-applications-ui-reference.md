@@ -23,7 +23,7 @@ When creating or editing an extension, the following fields are available depend
 | Friendly URL Mapping | Define the widget's Friendly URL Mapping, so you can refer to it using a more user readable URL. |
 | Properties | Define default properties that are included in all instances of the application's widget. These properties are passed to the remote application by the widget as additional URL attributes to access them programmatically. If desired, you can configure individual widget instances to override these entry properties. |
 
-## Additional Information
+## Related Topics
 
 * [Front-end Client Extensions](../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](./understanding-custom-element-and-iframe-client-extensions.md)

@@ -152,7 +152,7 @@ Below are all default fields available for custom objects:
 
 System objects have their own default fields, though there is some overlap with the above chart.
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Adding Fields to Objects](../fields/adding-fields-to-objects.md)

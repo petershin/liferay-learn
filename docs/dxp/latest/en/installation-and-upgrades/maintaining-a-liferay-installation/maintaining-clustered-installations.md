@@ -61,7 +61,7 @@ backward-compatible include, but are not limited to these:
 * `com.liferay.portal.scheduler.multiple`
 * `com.liferay.portal.scheduler.multiple.*`
 
-## Additional Information
+## Related Topics
 
 * [Rolling Restarts](./maintaining-clustered-installations/rolling-restarts.md)
 * [Blue-Green Deployments](./maintaining-clustered-installations/blue-green-deployments.md)

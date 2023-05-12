@@ -96,7 +96,7 @@ Prevent bots from creating and logging into accounts by enabling CAPTCHA or reCA
 1. The other options allow developers to customize the Simple CAPTCHA engine.
 1. Click *Save* when finished.
 
-## Additional Information
+## Related Topics
 
 * [Securing Liferay](../securing-liferay.md)
 * [Introduction to Securing Web Services](./securing-web-services.md)

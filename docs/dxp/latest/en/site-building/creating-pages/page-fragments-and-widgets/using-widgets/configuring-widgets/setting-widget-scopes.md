@@ -35,7 +35,7 @@ Once you create a new widget scope, a Scope Configuration button (![Scope Config
 
 ![Use the Scope Configuration button under Content & Data to determine which scope to manage content for.](./setting-widget-scopes/images/02.png)
 
-## Additional Information
+## Related Topics
 
 * [Exporting/Importing Widget Data](./exporting-importing-widget-data.md)
 * [Scoping Your Message Boards](../../../../../collaboration-and-social/message-boards/user-guide/scoping-your-message-boards.md)

@@ -67,7 +67,7 @@ By default, objects use entry IDs for their title fields. The title field value 
 To do this, begin editing the desired object definition, go to the *Details* tab, and select a different value for the *Title Field*. Click *Save* when finished.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Accounts](../../../../users-and-permissions/accounts.md)
 * [Extending System Objects](../extending-system-objects.md)

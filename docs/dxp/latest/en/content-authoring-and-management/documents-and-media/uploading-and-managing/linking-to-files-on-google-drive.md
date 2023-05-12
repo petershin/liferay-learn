@@ -27,7 +27,7 @@ A new file entry appears for the linked Google document. You can view the file e
 You can also use Google Docs&trade; for online file creation and editing. See [Creating and Editing Documents with Google Drive](./creating-documents/creating-and-editing-documents-with-google-drive.md).
 ```
 
-## Additional Information
+## Related Topics
 
 * [Enabling Links to Google Drive Documents](../devops/google-drive-integration/enabling-links-to-google-drive-documents.md)
 * [Creating and Editing Documents with Google Drive](./creating-documents/creating-and-editing-documents-with-google-drive.md)

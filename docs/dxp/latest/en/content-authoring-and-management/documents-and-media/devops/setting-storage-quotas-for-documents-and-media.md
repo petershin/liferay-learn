@@ -37,7 +37,7 @@ Under normal circumstances, the system dynamically updates the storage quota. Ho
 Updating a quota can be time and resource intensive, depending on the amount of documents stored in Documents and Media. Please exercise care when running this command in your production environment.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Documents and Media](../../documents-and-media.md)
 * [Portal Properties](../../../installation-and-upgrades/reference/portal-properties.md)

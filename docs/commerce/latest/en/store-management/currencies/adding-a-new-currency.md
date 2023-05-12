@@ -26,7 +26,7 @@ To add a new currency:
 1. Switch the _Active_ toggle to _Yes_.
 1. Click _Save_.
 
-## Additional Information
+## Related Topics
 
 ### Notes
 

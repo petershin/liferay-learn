@@ -70,7 +70,7 @@ Once the buyer has submitted his cart for pre-approval, or placed an order for s
 
 The order has been approved (or rejected). To review additional orders, return to the *Notifications* page and repeat the steps outlined above.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Order Workflows](./introduction-to-order-workflows.md)
 * [Enabling or Disabling Order Workflows](enabling-or-disabling-order-workflows.md)

@@ -164,7 +164,7 @@ You can place any number of static resource files into the root level `static/` 
 
 You can include additional resources in the built LUFFA for your microservice client extension projects, as long as they do not conflict with other required files.
 
-## Additional Information
+## Related Topics
 
 * [Working with Client Extensions](./working-with-client-extensions.md)
 * [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md)

@@ -147,7 +147,7 @@ user = UserLocalServiceUtil.getUserByEmailAddress(companyId, "user1@liferay.com"
 
 In this case, the `user` variable assignment is immediate since there is only one candidate.
 
-## Additional Information
+## Related Topics
 
 * [Creating Workflow Tasks](./creating-workflow-tasks.md)
 * [Using Task Nodes](./workflow-nodes.md)

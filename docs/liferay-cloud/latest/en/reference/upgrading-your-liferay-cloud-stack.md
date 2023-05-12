@@ -179,6 +179,6 @@ Alternatively, you can also follow the [development workflow](../build-and-deplo
 
 You may then want to [deploy the new service versions](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) to a development environment, or explore some of the new functionality in the new versions of your Liferay Cloud services. See the [explanation of the changes](./liferay-cloud-project-changes-in-version-4.md) to learn more.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Service Stack Versions](./understanding-service-stack-versions.md)

@@ -90,7 +90,7 @@ You can also add a common prefix to the names shown in the selector:
 
 1. Enter the prefix into the *Content Root Prefix* field and click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Using the Knowledge Base](./using-the-knowledge-base.md)
 * [Creating Knowledge Base Articles](./creating-knowledge-base-articles.md)

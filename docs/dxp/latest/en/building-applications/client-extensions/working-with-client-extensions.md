@@ -183,7 +183,7 @@ If you must manually deploy the zip files, run
 
 Then copy the archives from each project's `dist/` folder into the server's `[Liferay Home]/osgi/client-extensions/` folder.
 
-## Additional Information
+## Related Topics
 
 * [Batch Client Extensions](./batch-client-extensions.md)
 * [Configuration Client Extensions](./configuration-client-extensions.md)

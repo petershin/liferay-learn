@@ -97,7 +97,7 @@ The Microsoft Cognitive Services provider has been configured. For more informat
 
 If you have more than one virtual instance, you can configure each instance individually. Navigate to the _Control Panel_ &rarr; _Instance Settings_. Click _Assets_ then configure the provider there.
 
-## Additional Information
+## Related Topics
 
 * [Configuring Asset Auto Tagging](./configuring-asset-auto-tagging.md)
 * [Auto Tagging Assets](./auto-tagging-assets.md)

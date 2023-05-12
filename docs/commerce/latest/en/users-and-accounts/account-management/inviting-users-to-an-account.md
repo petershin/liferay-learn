@@ -47,7 +47,7 @@ The users have been added to the account.
 
 ![Inviting a user to an Account in the Control Panel](./inviting-users-to-an-account/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Account Management](../account-management.md)
 * [Creating a New Account](./creating-a-new-account.md)

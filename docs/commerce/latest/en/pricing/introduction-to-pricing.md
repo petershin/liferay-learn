@@ -129,7 +129,7 @@ By default, Commerce 2.1.x and earlier versions use Commerce Pricing Engine v1.0
 
 Once saved, your instance uses the Pricing Engine v2.0 for all price calculations.
 
-## Additional Information
+## Related Topics
 
 * [Setting a Product's Base Price](./setting-a-products-base-price.md)
 * [Creating a Price List](./creating-a-price-list.md)

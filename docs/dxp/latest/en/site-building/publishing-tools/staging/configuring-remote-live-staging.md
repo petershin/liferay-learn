@@ -165,7 +165,7 @@ Follow these steps to disable Remote Live Staging:
 
 1. Select *None* for your Staging configuration and click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Staging Overview](../staging.md)
 * [Site Staging UI Reference](./site-staging-ui-reference.md)

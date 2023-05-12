@@ -96,7 +96,7 @@ To create email notifications in Commerce 2.0 and below:
 
 The notification template now sends an automated email upon receiving an order. When you create a template, a new notification is added to the notification queue whenever an order is placed. To view this, you can check the *Notifications Queue* sub-tab after placing an order. By default, the Liferay instance checks the queue every 15 minutes to send any unsent notifications. To learn how to change the interval, see [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md).
 
-## Additional Information
+## Related Topics
 
 * [Notification Template Variables Reference Guide](./notification-template-variables-reference-guide.md)
 * [Configuring the Commerce Notification Queue](./configuring-the-commerce-notification-queue.md)

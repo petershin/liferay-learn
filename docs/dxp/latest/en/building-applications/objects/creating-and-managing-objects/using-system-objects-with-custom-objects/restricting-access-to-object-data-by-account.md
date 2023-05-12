@@ -122,7 +122,7 @@ Grant users permission to create and manage object data for all accounts.
 | Claims > Claim: View | View object entries. |
 | Claims > Claims: Add Object Entry | Create an object entry. |
 
-## Additional Information
+## Related Topics
 
 * [Accounts](../../../../users-and-permissions/accounts.md)
 * [Extending System Objects](../extending-system-objects.md)

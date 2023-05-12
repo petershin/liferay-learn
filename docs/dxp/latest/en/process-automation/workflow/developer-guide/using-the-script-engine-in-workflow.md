@@ -219,7 +219,7 @@ Bundle bundle = FrameworkUtil.getBundle(GroovyExecutor.class);
 
 Liferay's Kaleo Workflow Engine and Liferay's Script Engine makes for a powerful combination. When configuring your permissions, be aware of the potential consequences of poorly or maliciously written scripts inside a workflow definition.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Workflow](../introduction-to-workflow.md)
 * [Creating an Action Executor](./creating-an-action-executor.md)

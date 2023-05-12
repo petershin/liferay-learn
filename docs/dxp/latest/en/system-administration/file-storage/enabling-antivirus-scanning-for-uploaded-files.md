@@ -59,7 +59,7 @@ Now files are scanned on upload to Liferay applications. If a virus is detected 
 Never save a virus-infected file. Reject the file by canceling the current operation.
 ```
 
-## Additional Information
+## Related Topics
 
 * [File Storage](../file-storage.md)
 * [Configuring Liferay](../configuring-liferay.md)

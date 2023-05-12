@@ -43,7 +43,7 @@ You must satisfy all dependencies to compile and deploy a module successfully. A
 
 Nice! Specifying dependencies is a skill you can depend on!
 
-## Additional Information
+## Related Topics
 
 * [Finding Artifacts](./finding-artifacts.md)
 * [Importing Packages](../importing-packages.md)

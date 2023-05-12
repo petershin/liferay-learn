@@ -278,7 +278,7 @@ The flag icon under the fragment's General settings indicates the configuration 
 
 Fragments with the `localizable` attribute that do not specify a custom configuration for a language use the default page language's configuration.
 
-## Additional Information
+## Related Topics
 
 - [Fragments Toolkit Command Reference](./fragments-toolkit-command-reference.md)
 - [Page Fragment Editor Interface Reference](./page-fragment-editor-interface-reference.md)

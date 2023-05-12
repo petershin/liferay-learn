@@ -50,6 +50,6 @@ The amount of time the above steps take depends on the size of your application 
 | 4:21 pm | The manual backup is restored the Production environment and the Custom Domain configurations returned to their original state. |
 | 4:25 pm | Traffic is re-routed back to the original Production environment. |
 
-## Additional Information
+## Related Topics
 
 * [Configuring Cross-Region Disaster Recovery](./configuring-cross-region-disaster-recovery.md)

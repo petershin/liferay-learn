@@ -31,7 +31,7 @@ To configure a Show-Hide action rule:
 
 Now the *Legal Guardian Email Address* field appears only if the user selects *No* in the *I am 18 years old or older* field.
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](../creating-and-managing-forms/creating-forms.md)
 * [Form Rules Overview](./form-rules-overview.md)

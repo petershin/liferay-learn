@@ -61,7 +61,7 @@ DXP connects to the mail session immediately.
 | Password | The password DXP uses to log into the SMTP server. |
 | Manually specify additional JavaMail properties to override the above configuration| This field is for any additional JavaMail settings. |
 
-## Additional Information
+## Related Topics
 
 * [Configuring Default Email Senders](./configuring-mail/configuring-default-email-senders.md)
 * [Alternative Email Configuration Methods](./configuring-mail/alternative-email-configuration-methods.md)

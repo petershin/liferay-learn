@@ -38,7 +38,7 @@ To configure the Jump to Page Rule:
 It's best to use the *is not equal to* condition with fields existing on the same page. Forms checks the first field, and if it is returned as *true*, it skips the second field.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](../creating-and-managing-forms/creating-forms.md)
 * [Form Rules](./form-rules-overview.md)

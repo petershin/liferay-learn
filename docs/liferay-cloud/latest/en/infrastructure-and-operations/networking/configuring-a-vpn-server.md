@@ -323,7 +323,7 @@ Follow these steps if using an OpenVPN server:
 
 The OpenVPN server has been configured.
 
-## Additional Information
+## Related Topics
 
 * [VPN Integration Overview](./vpn-integration-overview.md)
 * [Connecting a VPN Server to Liferay Cloud](./connecting-a-vpn-server-to-liferay-cloud.md)

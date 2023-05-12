@@ -27,7 +27,7 @@ In order to set up a local environment for development with Liferay Cloud, the f
 Liferay Cloud has similar prerequisites to [Liferay Workspace](https://help.liferay.com/hc/en-us/articles/360029147471-Liferay-Workspace). Developers who are familiar with creating a Liferay Workspace using [Liferay Dev Studio](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191007&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191038), [Maven](https://help.liferay.com/hc/en-us/articles/360017885592-Maven-Workspace), or the [Liferay IntelliJ Plugin](https://plugins.jetbrains.com/plugin/10739-liferay-intellij-plugin) will have most of the necessary tools already set up.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Configuring Your Github Repository](../getting-started/configuring-your-github-repository.md)
 * [Configuring Your Bitbucket Repository](./configuring-your-bitbucket-repository.md)

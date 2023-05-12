@@ -38,7 +38,7 @@ The grid fragment adds multiple drop zone modules to a page or template. These m
 
 ![Grids include standard and unique configuration options.](./using-layout-elements/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Default Fragments Reference](./default-fragments-reference.md)
 * [Saving Fragment Compositions](./saving-fragment-compositions.md)

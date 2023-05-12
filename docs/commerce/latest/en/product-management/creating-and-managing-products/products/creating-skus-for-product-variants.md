@@ -116,7 +116,7 @@ These fields override Product-level specifications for individual SKUs and are u
 | Expiration Date | Determines when the SKU is no longer available for purchase |
 | Never Expire | Determines whether the SKU can be scheduled to automatically expire |
 
-## Additional Information
+## Related Topics
 
 * [Products Overview](./products-overview.md)
 * [Using Product Options](./using-product-options.md)

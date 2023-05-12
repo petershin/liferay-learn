@@ -52,7 +52,7 @@ Minimum value: `-99999999999999.9999999999999999`
 
 Headless Data Type: BigDecimal
 
-## Additional Information
+## Related Topics
 
 * [Fields](../fields.md)
 * [Aggregation Fields](./aggregation-fields.md)

@@ -27,7 +27,7 @@ This creates a new blank Site with your Organization's Users and general informa
 
 When you create an Organization Site, your Organization's Users are automatically assigned to it with implicit Site roles that correspond to their Organization roles. For example, Organization Users are functionally equivalent to Site Members, possessing basic Site privileges, while Organization Administrators function as Site Administrators and can manage Site pages, widgets, and content. See [Organization Roles](./organization-roles.md) and the [Default Roles Reference](../roles-and-permissions/default-roles-reference.md#organization-roles) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Organizations](./understanding-organizations.md)
 * [Creating and Managing Organizations](./creating-and-managing-organizations.md)

@@ -26,7 +26,7 @@ To see which categories and threads you have subscribed to:
 
 Message Boards can be published as [RSS](https://en.wikipedia.org/wiki/RSS) feeds. RSS for _Message Boards_ are enabled by default and Liferay DXP supports RSS 1.0, RSS 2.0, or Atom 1.0.
 
-## Additional Information
+## Related Topics
 
 * [Configuring a Message Boards Category Mailing List](./configuring-a-message-boards-category-mailing-list.md)
 * [Configuring Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)

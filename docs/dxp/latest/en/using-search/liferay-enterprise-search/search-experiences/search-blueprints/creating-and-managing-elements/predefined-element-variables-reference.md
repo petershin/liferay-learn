@@ -73,7 +73,7 @@ In the Element Source editor, place the cursor in the desired location and click
 
 **\*\*** In addition to these out-of-the-box variables, [Custom Fields](../../../../../system-administration/configuring-liferay/adding-custom-fields.md) on the user entity can also be referenced as variables in the element. For example, a user custom field with the name _Employee_ is referenced in an element with `user.custom.field.employee`.
 
-## Additional Information
+## Related Topics
 
 - [Creating Elements](./creating-elements.md)
 - [Search Blueprints Configuration Reference](../search-blueprints-configuration-reference.md)

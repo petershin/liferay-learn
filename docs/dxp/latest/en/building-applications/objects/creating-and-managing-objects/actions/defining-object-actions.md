@@ -73,7 +73,7 @@ You can deactivate an action from its Basic Info tab. Toggle the *Active* switch
 
 ![Toggle the Active switch to deactivate the action.](./defining-object-actions/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Understanding Action Types](./understanding-action-types.md)

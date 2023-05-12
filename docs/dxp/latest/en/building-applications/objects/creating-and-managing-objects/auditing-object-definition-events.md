@@ -41,7 +41,7 @@ Follow these steps:
 
    ![Enable entry history.](./auditing-object-definition-events/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Objects](../../objects.md)
 * [Creating and Managing Objects](../creating-and-managing-objects.md)

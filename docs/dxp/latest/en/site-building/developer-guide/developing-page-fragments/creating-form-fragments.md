@@ -128,7 +128,7 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 |:----------|:----------------------------------------|:---------------------------|
 | `options` | `Array<{label: string, value: string}>` | List of available options. |
 
-## Additional Information
+## Related Topics
 
 * [Developing Page Fragments](../developing-page-fragments.md)
 * [Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md)

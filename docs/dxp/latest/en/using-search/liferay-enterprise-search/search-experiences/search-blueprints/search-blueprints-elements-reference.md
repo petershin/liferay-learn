@@ -319,7 +319,7 @@ Search for a text match over multiple text fields. Match either the search user'
 
 _External Reference:_ See the [Elasticsearch Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) documentation.
 
-## Additional Information
+## Related Topics
 
 - [Creating and Managing Search Blueprints](./creating-and-managing-search-blueprints.md)
 - [Personalizing the Search Experience](./personalizing-the-search-experience.md)

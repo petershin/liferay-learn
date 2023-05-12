@@ -51,7 +51,7 @@ Follow these steps to assign an Organization role to existing Organization Users
 
 1. Click on *Update Associations* when finished.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Organizations](./understanding-organizations.md)
 * [Creating and Managing Organizations](./creating-and-managing-organizations.md)

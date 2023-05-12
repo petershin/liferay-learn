@@ -340,6 +340,6 @@ Code:
 
 The Users Able Goo and Baker Goo have now been deleted.
 
-## Additional Information
+## Related Topics
 
 Check out the [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) to see the list of all User related REST services.

@@ -66,7 +66,7 @@ To translate the workflow,
 
 Once the workflow definition is published and [associated to an asset](../../using-workflows/activating-workflow.md), participants like workflow task assignees will interact with the workflow in their language.
 
-## Additional Information
+## Related Topics
 
 * [Managing Workflows](../managing-workflows.md)
 * [Workflow Nodes](./workflow-nodes.md)

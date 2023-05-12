@@ -41,7 +41,7 @@ Managing Roles and Permissions long-term can be easily accomplished within Lifer
 (Double/Dual-Screenshot: Show User's permissions before the move and after the move)
 -->
 
-## Additional Information
+## Related Topics
 
 * [Creating and Managing Organizations](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/creating-and-managing-organizations.html)
 * [Adding a New Organization Type](https://learn.liferay.com/dxp/latest/en/users-and-permissions/organizations/adding-a-new-organization-type.html)

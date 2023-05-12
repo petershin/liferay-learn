@@ -46,7 +46,7 @@ In DXP 7.3+, you can also select a checkbox near the top of the page to make you
 
 ![Check the Cacheable option to improve the performance of your pages by caching the fragment.](./page-fragment-editor-interface-reference/images/02.png)
 
-## Additional Information
+## Related Topics
 
 - [Developing Fragments](../../developing-page-fragments/developing-fragments-intro.md)
 - [Adding Configuration Options to Fragments](../../developing-page-fragments/adding-configuration-options-to-fragments.md)

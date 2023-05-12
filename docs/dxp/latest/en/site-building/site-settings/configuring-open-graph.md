@@ -57,7 +57,7 @@ To create localized alt descriptions for your Open Graph image, click on the *La
 <meta property="og:image:alt" content="This is an example." />
 ```
 
-## Additional Information
+## Related Topics
 
 * [Search Engine Optimization](../optimizing-sites.md)
 * [Site Settings UI Reference](./site-settings-ui-reference.md)

@@ -422,7 +422,7 @@ For example, if you have your CA's certificate (public key) and private key in `
 
 	`keytool -importcert -keystore elastic-nodes.p12 -trustcacerts -storepass liferay -file ca.crt`
 
-## Additional Information
+## Related Topics
 
 * [Connecting to Elasticsearch](../connecting-to-elasticsearch.md)
 * [Troubleshooting Elasticsearch Installation](../troubleshooting-elasticsearch-installation.md)

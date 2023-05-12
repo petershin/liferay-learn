@@ -55,7 +55,7 @@ In the [Category Specific Definition](https://github.com/liferay/liferay-portal/
 
 _Task_ nodes represent where all the work is done. See [Creating Workflow Tasks](./creating-workflow-tasks.md) and [Using Task Nodes](./assigning-task-nodes.md).
 
-## Additional Information
+## Related Topics
 
 * [Creating Workflow Tasks](./creating-workflow-tasks.md)
 * [Using Task Nodes](./assigning-task-nodes.md)

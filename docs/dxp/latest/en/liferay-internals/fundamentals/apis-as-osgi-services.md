@@ -206,7 +206,7 @@ When you deployed the module, the Service Component Runtime registered the `P9G2
 
 You have *defined* a service capability called `Greeter` and *provided* it in a service component called `P9G2Greeter`. The `Greeter` service is in place. How do clients access the service and use it? That's demonstrated in [Using an OSGi Service](./using-an-osgi-service.md).
 
-## Additional Information
+## Related Topics
 
 * [Gogo Shell Commands](./using-the-gogo-shell/gogo-shell-commands.md)
 * [Exporting Packages](./exporting-packages.md)

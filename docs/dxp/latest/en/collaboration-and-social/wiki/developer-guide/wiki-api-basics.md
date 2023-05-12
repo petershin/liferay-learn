@@ -450,7 +450,7 @@ The following are representative examples of the tutorial's Java commands.
    :lines: 6-25
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using Liferay as a Headless Platform](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
 * [Consuming Rest Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

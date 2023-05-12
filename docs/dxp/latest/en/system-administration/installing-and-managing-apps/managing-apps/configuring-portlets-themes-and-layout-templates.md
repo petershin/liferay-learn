@@ -21,7 +21,7 @@ The Components listing is the easiest way to configure [portlets](https://help.l
 
 Congratulations! You can use the Components listing to examine and manage installed portlets, themes, and layout templates.
 
-## Additional Information
+## Related Topics
 
 * [Maintaining Clustered Installations](../../../installation-and-upgrades/maintaining-a-liferay-installation/maintaining-clustered-installations.md)
 * [Blacklisting Apps](./blacklisting-apps.md)

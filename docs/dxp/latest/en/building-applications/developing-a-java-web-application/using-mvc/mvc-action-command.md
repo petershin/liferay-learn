@@ -144,7 +144,7 @@ Next see how the portlet's JSP maps UI component actions to the commands.
 
 Now that you know how to use MVC Action Commands, you may want to check out [MVC Render Commands](./mvc-render-command.md) and [MVC Resource Commands](./mvc-resource-command.md). If you want to start localizing your app's content, see [Using Localized Messages](./using-localized-messages-in-an-mvc-portlet.md). If you're ready to start developing model, persistence, and service layers, visit [Service Builder](../../data-frameworks/service-builder.md).
 
-## Additional Information
+## Related Topics
 
 * [Using MVC](../using-mvc.md)
 * [MVC Render Command](./mvc-render-command.md)

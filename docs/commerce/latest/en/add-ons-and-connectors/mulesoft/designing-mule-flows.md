@@ -71,7 +71,7 @@ If you've used the *Transform Message* module to map entity fields between sourc
 
 To view all available operations and related input parameters, see [Liferay MuleSoft Connector Technical Reference](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc).
 
-## Additional Information
+## Related Topics
 
 * [Configuring the MuleSoft Connector](./configuring-the-mulesoft-connector.md)
 * [Liferay MuleSoft Connector Technical Reference](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc)

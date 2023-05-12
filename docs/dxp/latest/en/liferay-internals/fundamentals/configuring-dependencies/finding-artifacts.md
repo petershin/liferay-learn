@@ -134,7 +134,7 @@ Make sure to follow the above instructions to determine the version of Liferay a
 
 Now that you know the artifact's attributes, you can configure a dependency on it. See [Specifying Dependencies](./specifying-dependencies.md) for details.
 
-## Additional Information
+## Related Topics
 
 * [Importing Packages](../importing-packages.md)
 * [Exporting Packages](../exporting-packages.md)

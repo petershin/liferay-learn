@@ -76,7 +76,7 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEX__UPPERCASEX__UPPERCASEX__MINUS__N
 Never use dev features in production. Instabilities in Liferay are expected side effects of enabling dev feature flags. 
 ```
 
-## Additional Information
+## Related Topics
 
 * [Semantic Search](../../using-search/liferay-enterprise-search/search-experiences/semantic-search.md)
 * [Beta Features](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)

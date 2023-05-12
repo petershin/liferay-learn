@@ -25,7 +25,7 @@ Canceling a shipment changes the status in the _Transmitted_ tab in the [_Orders
 
 Note that if a new shipment is [created](./creating-a-shipment.md) from the same order, a new shipment number is generated (for example, _42888_).
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Shipments](./introduction-to-shipments.md)
 * [Processing an Order](../orders/processing-an-order.md)

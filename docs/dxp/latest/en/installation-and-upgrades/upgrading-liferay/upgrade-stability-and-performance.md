@@ -48,6 +48,6 @@ Lastly, take time to test your DXP instance with your upgraded database.
 
 After you've upgraded your DXP instance successfully, you can orchestrate releasing it to production.
 
-## Additional Information 
+## Related Topics 
 
 * [Updating Clustered Installations](../maintaining-a-liferay-installation/maintaining-clustered-installations.md)

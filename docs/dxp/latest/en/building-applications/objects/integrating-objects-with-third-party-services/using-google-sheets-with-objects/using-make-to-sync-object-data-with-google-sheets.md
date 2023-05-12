@@ -143,7 +143,7 @@ Follow these steps to sync Google Sheet data to an Object:
    By default this scenario is automatically triggered every 15 minutes. 
    ```
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../../objects.md)
 * [Creating and Managing Objects](../../creating-and-managing-objects.md)

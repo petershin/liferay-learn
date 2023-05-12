@@ -33,7 +33,7 @@ Images uploaded before you create a resolution are _not_ affected and must be ad
 Image resolutions and their identifiers cannot be updated if the resolution has been used to adapt images. This prevents inconsistencies in generated images.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Managing Image Resolutions](./managing-image-resolutions.md)
 * [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)

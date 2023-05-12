@@ -19,6 +19,6 @@ You might wish to ignore certain parameter values from other portlets. For examp
 
 Reading the value of a parameter from another portlet is an advanced but powerful option that allows portlets to communicate with each other even if their developers didn't intend them to. For example, imagine that the Wiki publishes information about certain countries, and another portlet shows country names for administrative reasons. If the second portlet has a *country* public render parameter, the Wiki can show the information from the country selected in the administration portlet by setting the value of the Wiki portlet's title parameter from the country parameter value of the administration portlet. Cool, isn't it?
 
-## Additional Information
+## Related Topics
 
 - [Sharing Applications With Other Sites](./sharing-widgets-with-other-sites.md)

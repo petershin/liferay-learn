@@ -77,7 +77,7 @@ Follow these steps to sync Object data to a Google Sheet:
 
    ![Activate the recipe.](./using-workato-to-sync-object-data-with-google-sheets/images/16.png)
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../../objects.md)
 * [Creating and Managing Objects](../../creating-and-managing-objects.md)

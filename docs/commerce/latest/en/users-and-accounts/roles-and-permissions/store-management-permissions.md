@@ -81,7 +81,7 @@ Store Management applications are connected to the following resources:
 | Manage Currencies | Ability to access and modify Currency entities |
 | Permissions | Ability to view and modify resource permissions in the Currencies application |
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Channels](../../store-management/channels/introduction-to-channels.md)
 * [Managing Channels](../../store-management/channels/managing-channels.md)

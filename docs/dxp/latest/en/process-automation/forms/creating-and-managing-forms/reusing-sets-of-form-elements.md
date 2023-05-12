@@ -60,6 +60,6 @@ To use an Element Set in a Form:
 
 1. Click _Publish Form_ button when finished.
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](./creating-forms.md)

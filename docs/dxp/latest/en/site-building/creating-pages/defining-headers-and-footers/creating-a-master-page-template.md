@@ -37,7 +37,7 @@ You can revert any action using the *Undo* (![Preview](../../../images/icon-undo
 If a custom Master Page Template is used for a page, the Theme for the page is defined through the Master Page Template and can't be changed through the page's settings. See [Changing a Master Page Template's Look and Feel](./managing-master-page-templates.md#changing-a-master-page-templates-look-and-feel) for more information.
 ```
 
-## Additional Information
+## Related Topics
 
 - [Managing Master Page Templates](./managing-master-page-templates.md)
 - [Master Pages Templates](./master-page-templates.md)

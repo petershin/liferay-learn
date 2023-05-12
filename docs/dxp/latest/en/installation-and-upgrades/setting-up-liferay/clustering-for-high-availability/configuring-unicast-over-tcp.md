@@ -205,7 +205,7 @@ Here are example TCP and TCPPing elements using the bind ports on nodes running 
 
 If you have added entities that can be cached or you want to tune the cache configuration for your system, you can do so using a module. For information on configuring cache, please see [Cache Configuration](https://help.liferay.com/hc/en-us/articles/360035581451-Introduction-to-Cache-Configuration).
 
-## Additional Information
+## Related Topics
 
 * [Configuring Cluster Link](./configuring-cluster-link.md)
 * [Clustering for High Availability](../clustering-for-high-availability.md)

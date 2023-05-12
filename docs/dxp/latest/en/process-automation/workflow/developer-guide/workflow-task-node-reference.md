@@ -251,7 +251,7 @@ Like `<action>` elements, `<timer-action>` elements can contain scripts. See [Us
 A `timer-action` can contain all the same tags as an `action`, with one exception: `execution-type`. Timer actions are always triggered once the time is up, so specifying and execution type of `onEntry`, for example, isn't meaningful inside a timer.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Crafting XML Workflow Definitions](./crafting-xml-workflow-definitions.md)
 * [Workflow Definition Node Reference](./workflow-definition-node-reference.md)

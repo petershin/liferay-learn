@@ -42,6 +42,6 @@ The form now has placeholder values.
 
 1. Click _Save Form_ when finished.
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](./creating-forms.md)

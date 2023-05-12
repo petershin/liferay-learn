@@ -168,7 +168,7 @@ private Map<String, Double> _exchangeRates = new HashMap<String, Double>() {
 
 Congratulations! You now know the basics for implementing the `ExchangeRateProvider` interface, and have added a new exchange rate provider to Liferay Commerce.
 
-## Additional Information
+## Related Topics
 
 * [Adding a New Currency](../../store-management/currencies/adding-a-new-currency.md)
 * [Managing Exchange Rates](../../store-management/currencies/managing-exchange-rates.md)

@@ -77,7 +77,7 @@ To resolve Missing Requirement conflicts, you can discard the conflicting change
 
 These conflicts only occur when users attempt to revert a publication including a deletion that has already been reverted. Users cannot revert the same publication twice if it included a deletion, since the system cannot add back what has already been added back.
 
-## Additional Information
+## Related Topics
 
 * [Creating and Managing Publications](./creating-and-managing-publications.md)
 * [Making and Publishing Changes](./making-and-publishing-changes.md)

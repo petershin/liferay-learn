@@ -22,7 +22,7 @@ Products and discounts can be configured to be available in all channels or spec
 * Countries
 * Warehouses
 
-## Additional Information
+## Related Topics
 
 * [Managing Channels](./managing-channels.md)
 * [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md)

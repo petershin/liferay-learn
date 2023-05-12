@@ -19,7 +19,7 @@ Once items have been added to the cart, order managers can review the pending or
 
 If [Order Workflows](../../order-management/order-workflows/introduction-to-order-workflows.md) are enabled, the above mentioned steps may be slightly different.
 
-## Additional Information
+## Related Topics
 
 * [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)

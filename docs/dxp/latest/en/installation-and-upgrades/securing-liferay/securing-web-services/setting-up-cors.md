@@ -48,7 +48,7 @@ You'll find the settings in Configuration &rarr; System Settings &rarr; Security
 
 JAX-RS<!-- future link required --> developers can use the `@CORS` annotation to set policies for their deployed applications.
 
-## Additional Information
+## Related Topics
 
 * [Securing Liferay](../../securing-liferay.md)
 * [Introduction to Securing Web Services](../securing-web-services.md)

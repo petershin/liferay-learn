@@ -63,7 +63,7 @@ Once set, Liferay uses the template to display the content item at its unique fr
 
 ![Preview your content in the context of the display page template or view the Display Page using the content's Action menu.](./publishing-content-with-display-pages/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Using Display Page Templates](../using-display-page-templates.md)
 * [Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)

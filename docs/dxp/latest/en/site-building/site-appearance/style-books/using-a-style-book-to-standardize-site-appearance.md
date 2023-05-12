@@ -149,6 +149,6 @@ These options modify the style for the default types of buttons. You can customi
 
 ![Change the colors under Button Primary to affect many common buttons for out-of-the-box widgets when using the Classic theme.](./using-a-style-book-to-standardize-site-appearance/images/09.png)
 
-## Additional Information
+## Related Topics
 
 * [Style Book Token Definitions](./developer-guide/style-book-token-definitions.md)

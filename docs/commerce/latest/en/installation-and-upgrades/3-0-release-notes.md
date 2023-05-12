@@ -25,6 +25,6 @@ See [Introduction to Pricing](../pricing/introduction-to-pricing.md) to learn mo
 | [COMMERCE-4190](https://issues.liferay.com/browse/COMMERCE-4190) | Shipping Options entries are not visible in the table |
 | [COMMERCE-4915](https://issues.liferay.com/browse/COMMERCE-4915) | The Tax Categories page is not visible and an error is thrown when upgrading from DXP 7.2 + Commerce 2.1.2 to DXP 7.3 + Commerce 3.0 |
 
-## Additional Information
+## Related Topics
 
 * [3.0 Breaking Changes](./3-0-breaking-changes.md)

@@ -70,6 +70,6 @@ The My Sites Directory application lists the Sites a User belongs to. This appli
 
 ![The My Sites Application displays the Sites you're a member of and the ones you can join.](./adding-members-to-sites/images/05.png)
 
-## Additional Information
+## Related Topics
 
 You can also invite users to become members of a site by using the Invitations widget. See [Inviting Members to Your Site](./inviting-members-to-your-site.md) to learn more.

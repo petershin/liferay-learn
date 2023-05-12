@@ -23,7 +23,7 @@ Liferay's Talend Components can connect to both out-of-the-box Headless APIs and
 
 With these components, you can create and run complex data flow management processes in Talend Open Studio. See [Installing Liferay Talend Components](./installing-liferay-talend-components.md) for detailed installation instructions.
 
-## Additional Information
+## Related Topics
 
 * [Installing Liferay Talend Components](./installing-liferay-talend-components.md)
 * [Designing Talend Jobs Using Liferay Talend Components](./designing-talend-jobs-using-liferay-talend-components.md)

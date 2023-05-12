@@ -19,7 +19,7 @@ You can view available currencies via the *Currencies* page in the *Commerce* ta
 
 <!-- Update article once [COMMERCE-5171](https://issues.liferay.com/browse/COMMERCE-5171) is implemented. It removes Catalog Currency and uses the Base Price List currency alone as currency basis. -->
 
-## Additional Information
+## Related Topics
 
 * [Adding a New Currency](./adding-a-new-currency.md)
 * [Managing Exchange Rates](./managing-exchange-rates.md)

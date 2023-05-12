@@ -314,7 +314,7 @@ pending message count 0, sent message count 2
 
 Now you know how to monitor messaging at a destination and adjust destination settings. You can test different settings to optimize performance.
 
-## Additional Information
+## Related Topics
 
 * [Using Asynchronous Messaging](./using-asynchronous-messaging.md)
 * [Using Default Synchronous Messaging in Previous Versions](./using-default-synchronous-messaging-in-previous-versions.md)

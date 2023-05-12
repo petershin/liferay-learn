@@ -59,7 +59,7 @@ There are several portal properties you can add to [`portal-ext.properties`](../
 
 The Public and Private Page Sets of personal Sites are handled separately. You can leave one Page Set enabled while disabling the other. If you initially had user personal Sites enabled for your instance but then disabled them, existing personal Sites remain on your instance until the next time users sign in, at which point they're removed.
 
-## Additional Information
+## Related Topics
 
 - [Adding a Site](./adding-a-site.md)
 - [Sites Templates](./site-templates.md)

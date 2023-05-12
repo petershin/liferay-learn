@@ -81,7 +81,7 @@ Follow these steps to make a relationship field mandatory:
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Designing Object Layouts](../layouts/designing-object-layouts.md)

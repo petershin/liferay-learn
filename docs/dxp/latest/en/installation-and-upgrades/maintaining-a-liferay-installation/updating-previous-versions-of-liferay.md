@@ -177,7 +177,7 @@ You're running on the Liferay update Tomcat Bundle.
 
 Congratulations! Your Liferay instance is updated and running.
 
-## Additional Information
+## Related Topics
 
 * [Backing Up](./backing-up.md)
 * [Applying a Hotfix](./applying-a-hotfix.md)

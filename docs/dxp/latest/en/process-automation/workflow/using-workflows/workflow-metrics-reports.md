@@ -149,7 +149,7 @@ The top of the Item Detail view is important. It shows you the information about
 
 The Process Details section section of the modal was enhanced in 7.4. Click the Track Workflow link to open a diagram view of the item's progress in the workflow.
 
-## Additional Information
+## Related Topics
 
 * [Using Workflow Metrics](./using-workflow-metrics.md)
 * [Building Workflows](../designing-and-managing-workflows/building-workflows.md)

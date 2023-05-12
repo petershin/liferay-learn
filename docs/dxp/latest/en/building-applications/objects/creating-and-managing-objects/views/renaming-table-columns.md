@@ -25,7 +25,7 @@ Once saved, the localized label is used for the view column.
 
 ![The localized label is used for the view column.](./renaming-table-columns/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Views](../views.md)
 * [Designing Object Views](./designing-object-views.md)

@@ -152,7 +152,7 @@ The API and Impl modules defined and provided the `Greeter` service, respectivel
 
 Now that you're familiar with using OSGi services from neighboring projects, you can explore using OSGi services from external artifacts. [Configuring Dependencies](./configuring-dependencies.md) demonstrates finding modules and configuring them as dependencies.
 
-## Additional Information
+## Related Topics
 
 * [Importing Packages](./importing-packages.md)
 * [Exporting Packages](./exporting-packages.md)

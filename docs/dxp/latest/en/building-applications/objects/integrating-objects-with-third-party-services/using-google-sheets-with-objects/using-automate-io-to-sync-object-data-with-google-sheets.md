@@ -67,7 +67,7 @@ Follow these steps to sync Object data to a Google Sheet:
 
    ![Verify the test was successful.](./using-automate-io-to-sync-object-data-with-google-sheets/images/12.png)
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../../objects.md)
 * [Creating and Managing Objects](../../creating-and-managing-objects.md)

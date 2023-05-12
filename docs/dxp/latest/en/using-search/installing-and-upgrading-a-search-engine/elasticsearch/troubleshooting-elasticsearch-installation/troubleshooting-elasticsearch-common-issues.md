@@ -65,7 +65,7 @@ ode_name]SSL configuration [xpack.security.transport.ssl.] relies upon fallback 
 
 These warnings do not signal any functional issues and can be disabled (see [Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/logging.html#deprecation-logging) to learn how).
 
-## Additional Information
+## Related Topics
 
 * [Connecting to Elasticsearch](../connecting-to-elasticsearch.md)
 * [Troubleshooting Elasticsearch Installation](../troubleshooting-elasticsearch-installation.md)

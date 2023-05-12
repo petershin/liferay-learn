@@ -29,7 +29,7 @@ Bnd makes a module's exported packages *substitutable*. That is, Bnd substitutes
 
 Now you can share your module's terrific packages!
 
-## Additional Information
+## Related Topics
 
 * [Configuring Dependencies](./configuring-dependencies.md)
 * [Semantic Versioning](./semantic-versioning.md)

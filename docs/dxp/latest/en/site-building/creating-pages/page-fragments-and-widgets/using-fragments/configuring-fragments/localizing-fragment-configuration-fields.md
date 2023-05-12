@@ -36,7 +36,7 @@ You can localize links you enter manually and links from a content field. If the
 <!--TASK: explain.
 ## Localizing Collection Filter Label Text -->
 
-## Additional Information
+## Related Topics
 
 - [Using Content Pages](../../../using-content-pages.md)
 - [Content Page Editor UI Reference](../../../using-content-pages/content-page-editor-ui-reference.md)

@@ -54,7 +54,7 @@ Inventory Management applications reference the following resources:
 | Manage Inventory | Ability to access and modify Inventory entities linked to a Warehouse |
 | Permissions | Ability to view and modify resource permissions in the Warehouses and Inventory applications |
 
-## Additional Information
+## Related Topics
 
 * [Inventory Management](../../inventory-management.md)
 * [Inventory Management Reference Guide](../../inventory-management/inventory-management-reference-guide.md)

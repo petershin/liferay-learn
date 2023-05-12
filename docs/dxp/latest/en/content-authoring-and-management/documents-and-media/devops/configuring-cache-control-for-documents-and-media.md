@@ -35,7 +35,7 @@ Follow these steps to configure caching for your Liferay system or instance:
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Setting Storage Quotas for Documents and Media](./setting-storage-quotas-for-documents-and-media.md)
 * [Configuring Documents and Media Preview](./configuring-documents-and-media-previews.md)

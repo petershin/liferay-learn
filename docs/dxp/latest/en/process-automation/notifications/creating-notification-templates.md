@@ -132,7 +132,7 @@ Use these terms to access information about the current user triggering the noti
 | Current User ID            | `[%CURRENT_USER_ID%]`            |
 | Current User Suffix        | `[%CURRENT_USER_SUFFIX%]`        |
 
-## Additional Information
+## Related Topics
 
 * [Configuring Mail](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
 * [Email Settings](../../system-administration/configuring-liferay/virtual-instances/email-settings.md)

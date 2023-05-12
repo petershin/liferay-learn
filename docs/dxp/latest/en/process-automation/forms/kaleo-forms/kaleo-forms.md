@@ -88,7 +88,7 @@ In Liferay 7.4 Update 1, a new feature was added to the Kaleo Form Admin applica
 
 To access the diagram view, click the Track Workflow configuration option in the entry's Actions menu (![Actions](../../../images/icon-actions.png)).
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Forms](../introduction-to-forms.md)
 * [Introduction to Workflow](../../workflow/introduction-to-workflow.md)

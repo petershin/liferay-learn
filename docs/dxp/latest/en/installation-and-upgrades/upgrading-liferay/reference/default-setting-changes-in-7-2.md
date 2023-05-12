@@ -147,7 +147,7 @@ Here are some properties that have changed since version 6.2:
 
 The latest [portal properties reference](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) provides property details and examples. Many properties are now replaced by OSGi configurations, which are accessible through the UI in [System Settings](../../../system-administration/configuring-liferay/system-settings.md).
 
-## Additional Information
+## Related Topics
 
 * [7.2 Breaking Changes](../../../liferay-internals/reference/7-3-breaking-changes.md)
 * [7.1 Breaking Changes](https://help.liferay.com/hc/en-us/articles/360017902892-Breaking-Changes)

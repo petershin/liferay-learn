@@ -85,7 +85,7 @@ You can also do this using XML configuration. Right click the `Liferay_Config` g
 
 Click *Test Connection*. If successful, you can start building flows using the connector. Otherwise, review your configuration.
 
-## Additional Information
+## Related Topics
 
 * [Designing Mule Flows](./designing-mule-flows.md)
 * [Consuming APIs](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis.html)

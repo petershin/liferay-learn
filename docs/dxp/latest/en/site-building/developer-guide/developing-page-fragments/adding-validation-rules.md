@@ -159,7 +159,7 @@ When using backslashes to escape characters in regex values (e.g., `\d`), you mu
 
 ![Use pattern validation rules using regex to define valid entries.](./adding-validation-rules/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Developing Fragments](./developing-fragments-intro.md)
 * [Using the Fragments Editor](./using-the-fragments-editor.md)

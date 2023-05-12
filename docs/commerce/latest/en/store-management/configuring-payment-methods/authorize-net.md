@@ -71,7 +71,7 @@ Once finished, Authorize.Net is now enabled.
 1. Click _Save_.
 1. Click the _3-dot icon_ next to _Authorize.Net_ then _Activate_.
 
-## Additional Information
+## Related Topics
 
 * [Adding a New Currency](../currencies/adding-a-new-currency.md)
 * [Mercanet](./mercanet.md)

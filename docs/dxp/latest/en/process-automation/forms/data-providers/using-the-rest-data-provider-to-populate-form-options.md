@@ -132,7 +132,7 @@ To uncover errors arising from Data Provider failures, [configure log levels](..
  
 The console now sends warning messages whenever there are errors in the Data Provider.
 
-## Additional Information
+## Related Topics
 
 * [Data Providers Overview](./data-providers-overview.md)
 * [Using the Autofill Rule](../form-rules/using-the-autofill-rule.md)

@@ -68,7 +68,7 @@ Follow these steps to edit a Documents and Media file in Office 365&trade;:
 
     ![To modify a document, select Edit in Office 365 from the file's Actions menu.](./creating-and-editing-documents-with-microsoft-office-365/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Enabling Document Creation and Editing with Microsoft Office 365](../../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
 * [Creating and Editing Documents with Google Drive](./creating-and-editing-documents-with-google-drive.md)

@@ -43,7 +43,7 @@ From here, you can hover over an old URL to reveal the following options:
 
 ![Hover over an old URL to reveal the Restore and Forget options.](./configuring-your-pages-friendly-url/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Configuring Your Site's Friendly URL](./../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
 * [Configuring Individual Pages](./configuring-individual-pages.md)

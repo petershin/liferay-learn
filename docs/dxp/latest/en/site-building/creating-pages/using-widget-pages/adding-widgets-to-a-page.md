@@ -25,7 +25,7 @@ In DXP 7.3+, you can click the eye icon at the top of any Widget Page to toggle 
 Widgets are rendered according to [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) on Widget Pages.
 ```
 
-## Additional Information
+## Related Topics
 
 - [Enabling User Personalization of Widget Pages](./enabling-user-personalization-of-widget-pages.md)
 - [Converting Widget Pages to Content Pages](./converting-widget-pages-to-content-pages.md)

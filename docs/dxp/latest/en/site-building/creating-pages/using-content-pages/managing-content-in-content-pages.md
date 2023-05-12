@@ -55,7 +55,7 @@ For Liferay DXP/Portal 7.3, you can review Web Content deployed using Fragments 
     * *Permissions*: Update the web content's permissions
     * *View Usages*: See where the web content is used on the Site
 
-## Additional Information
+## Related Topics
 
 * [Using Content Pages](../using-content-pages.md)
 * [Adding Elements to Content Pages](./adding-elements-to-content-pages.md)

@@ -125,7 +125,7 @@ Follow theses steps:
 
 If you've enabled Liferay's integration with [Google Cloud Translation](./using-third-parties-for-translation.md#enabling-google-cloud-translation), [Amazon Translate](./using-third-parties-for-translation.md#enabling-amazon-translate), or [Microsoft Translator](./using-third-parties-for-translation.md#enabling-microsoft-translator), you can use them to automatically translate Web Content. See [Using Third Parties for Translation](./using-third-parties-for-translation.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Translating Web Content](./translating-web-content.md)
 * [Using Third Parties for Translation](./using-third-parties-for-translation.md)

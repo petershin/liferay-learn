@@ -243,7 +243,7 @@ private Http _http;
 private KBArticleLocalService _kbArticleLocalService;
 ```
 
-## Additional Information
+## Related Topics
 
 Since each implementation of an entity's URLs is likely to differ significantly, see the `SimilarResultsContributor` [interface](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web-spi/src/main/java/com/liferay/portal/search/similar/results/web/spi/contributor/SimilarResultsContributor.java) and the bundled [implementations](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor) on GitHub if you need more inspiration when writing your own application's contributor.
 

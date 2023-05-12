@@ -147,7 +147,7 @@ You can impersonate account users to view the system as they would see it. This 
 
 A new window opens with you logged in as the selected account user.
 
-## Additional Information
+## Related Topics
 
 * [Accounts](../accounts.md)
 * [Account Roles](./account-roles.md)

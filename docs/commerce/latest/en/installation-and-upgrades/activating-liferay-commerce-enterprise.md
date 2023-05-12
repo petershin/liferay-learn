@@ -182,7 +182,7 @@ Remove the expired XML key from the `opt/liferay/osgi/modules` folder and the ex
 
 The Liferay Cloud team manages both DXP and Commerce licenses, and there is no need for users to manually update them for themselves.
 
-## Additional Information
+## Related Topics
 
 * [Installation Overview](./installation-overview.md)
 * [Upgrading Liferay Commerce](./upgrading-liferay-commerce.md)

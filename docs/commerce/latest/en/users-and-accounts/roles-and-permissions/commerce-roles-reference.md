@@ -255,7 +255,7 @@ The Sales Agent is a regular role in Liferay Commerce and assignees are able to 
 | Manage Organizations      | Ability to add or remove organizations                         |
 | Manage Available Accounts | Ability to manage Accounts that the sales agent is a member of |
 
-## Additional Information
+## Related Topics
 
 * [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [Order Management Permissions Reference](./order-management-permissions.md)

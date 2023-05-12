@@ -58,7 +58,7 @@ See [Providing Files to the Container](./providing-files-to-the-container.md) fo
 
 Now you know how to install apps and other artifacts to Liferay.
 
-## Additional Information
+## Related Topics
 
 * [Using Liferay Docker Images](../using-liferay-docker-images.md)
 * [Providing Files to the Container](./providing-files-to-the-container.md)

@@ -196,7 +196,7 @@ this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximu
 
 Congratulations! You now know the basics for implementing the `CommerceOrderValidator` interface, and have added a new order validator to Liferay Commerce.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Simple Product](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

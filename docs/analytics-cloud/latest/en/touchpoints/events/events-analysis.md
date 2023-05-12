@@ -41,7 +41,7 @@ As individuals visit and interact with your site, Analytics Cloud tracks these e
 
 1. To save the event analysis for future viewing, give the analysis a name and click the *Save Analysis* button. The analysis will be available in the event analysis tool for future viewing.
 
-## Additional Information
+## Related Topics
 
 * [Definitions for Events](../../workspace-data/definitions/definitions-for-events.md)
 * [Definitions for Event Attributes](../../workspace-data/definitions/definitions-for-event-attributes.md)

@@ -89,7 +89,7 @@ If desired, change the audit log format to JSON by adding one line to the `modse
 SecAuditLogFormat JSON
 ```
 
-## Additional Information
+## Related Topics
 
 * [Private Network](../networking/private-network.md)
 * [Load Balancer](../networking/load-balancer.md)

@@ -35,7 +35,7 @@ When you have an active order, the account selector fragment displays the order 
 
 ![Open the account selector to create a new order or switch between accounts.](./using-the-account-selector-fragment/images/03.gif)
 
-## Additional Information
+## Related Topics
 
 [Catalog](../commerce-storefront-pages/catalog.md)
 

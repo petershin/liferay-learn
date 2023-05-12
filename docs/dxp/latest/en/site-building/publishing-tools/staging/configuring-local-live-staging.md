@@ -77,7 +77,7 @@ Follow these steps to disable Local Live Staging:
 For most content types, Staging only publishes the latest approved version of each content item. For this reason, disabling Local Live Staging results in the loss of older content versions (e.g., documents). Once Staging is disabled, only the latest published version in Live is preserved. Web Content is the only exception.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Staging Overview](../staging.md)
 * [Site Staging UI Reference](./site-staging-ui-reference.md)

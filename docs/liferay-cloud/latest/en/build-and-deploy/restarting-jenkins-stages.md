@@ -46,7 +46,7 @@ Follow these steps to restart a Jenkins stage:
 
    ![This runs a new build based on the build you selected.](./restarting-jenkins-stages/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Continuous Integration](../platform-services/continuous-integration.md)
 * [Overview of the Liferay Cloud Deployment Workflow](./overview-of-the-liferay-cloud-deployment-workflow.md)

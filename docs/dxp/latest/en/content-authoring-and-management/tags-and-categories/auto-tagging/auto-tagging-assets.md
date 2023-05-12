@@ -73,6 +73,6 @@ The OpenNLP provider has been configured.
 
 If there are multiple virtual instances on the server, you can override these settings for each instance from _Control Panel_ &rarr; _Instance Settings_ &rarr; _Assets_.
 
-## Additional Information
+## Related Topics
 
 * [Auto Tagging Images](./auto-tagging-images.md)

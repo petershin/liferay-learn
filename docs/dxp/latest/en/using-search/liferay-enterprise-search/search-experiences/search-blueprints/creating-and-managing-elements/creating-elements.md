@@ -245,7 +245,7 @@ There are several configuration properties you can add for each field in the UI 
    - `unit` sets the unit of measurement for a number field.
    - `unitSuffix` sets the unit notation to display for a number field with a unit (for example, if `unit` is `km`, you could set the `unitSuffix` as `km` or `kilometers`).
 
-## Additional Information
+## Related Topics
 
 - [Creating and Managing Search Blueprints](../creating-and-managing-search-blueprints.md)
 - [Search Blueprints Elements Reference](../search-blueprints-elements-reference.md)

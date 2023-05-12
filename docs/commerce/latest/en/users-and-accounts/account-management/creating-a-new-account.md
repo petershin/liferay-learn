@@ -64,7 +64,7 @@ Users who have administrative permissions for the store or installation may crea
 
 The new account has been created using the Control Panel. Click _Addresses_ to update the account's addresses. For more information, see the [Adding Addresses to an Account](../account-management/adding-addresses-to-an-account.md#using-the-control-panel) article.
 
-## Additional Information
+## Related Topics
 
 * [Account Management](../account-management.md)
 * [Inviting Users to an Account](./inviting-users-to-an-account.md)

@@ -30,7 +30,7 @@ Here are some commonly used commands:
 | `system:check` | Scans the system for anomalies, executing the `ds:unsatisfied` and `dm na` commands. |
 | `uninstall [BUNDLE_ID]` | uninstalls the specified bundle from the module framework. This does not remove the specified bundle from Liferay's module framework; it's hidden from Gogo's `lb` command, but is still present. Adding a new version of the uninstalled bundle, therefore, will not reinstall it; it will update the currently hidden uninstalled version. To remove a bundle from Liferay's module framework permanently, manually delete it from the `[Liferay Home]/osgi` folder. For more information on the `uninstall` command, see OSGi's [uninstall](https://osgi.org/javadoc/r6/core/org/osgi/framework/Bundle.html#uninstall\(\)) documentation. |
 
-## Additional Information
+## Related Topics
 
 * [Using the Gogo Shell](../using-the-gogo-shell.md)
 * [Command Line Gogo Shell](./command-line-gogo-shell.md)

@@ -122,7 +122,7 @@ Customization options include the following application triggers.
 | Adds a new wiki page in a wiki you are subscribed to | &#10004; | &#10004; |
 | Updates a wiki page you are subscribed to | &#10004; | &#10004; |
 
-## Additional Information
+## Related Topics
 
 * [Configuring Mail](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
 * [Email Settings](../../system-administration/configuring-liferay/virtual-instances/email-settings.md)

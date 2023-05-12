@@ -219,6 +219,6 @@ Use the Search Location field(s) in Liferay 7.4+ to collect valid addresses conv
 
 See [Using the Search Location Field](using-the-search-location-field.md) for more information.
 
-## Additional Information
+## Related Topics
 
 - [Creating Forms](./creating-forms.md)

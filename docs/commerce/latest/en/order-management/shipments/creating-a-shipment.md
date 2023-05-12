@@ -90,7 +90,7 @@ The order manager can update the status of the shipment as needed, until the ord
 
 ![Shipped Items](./creating-a-shipment/images/06.png)
 
-## Additional Information
+## Related Topics
 
 * [Setting Up Warehouses](../../inventory-management/setting-up-warehouses.md)
 * [Setting Inventory by Warehouse](../../inventory-management/setting-inventory-by-warehouse.md)

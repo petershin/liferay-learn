@@ -100,7 +100,7 @@ Each publication role is scoped to the current publication and does not grant pe
 
 Publication roles do not restrict regular role permissions. For example, if users with the delete permission are invited to a publication and assigned the *viewer* role, they can delete the publication because of their regular role permissions.
 
-## Additional Information
+## Related Topics
 
 * [Publications](../publications.md)
 * [Creating and Managing Publications](./creating-and-managing-publications.md)

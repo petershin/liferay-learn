@@ -126,7 +126,7 @@ To run the Groovy import script,
 
 1. Make sure you test the Synonym Sets and Result Rankings to ensure everything is working as expected.
 
-## Additional Information
+## Related Topics
 
 * [Upgrading Elasticsearch](../getting-started-with-elasticsearch.md)
 * [Getting Started with Elasticsearch](../getting-started-with-elasticsearch.md)

@@ -52,6 +52,6 @@ You can only select one sample file for a Virtual Product.
 Any selected Web Content article takes priority over terms added in the text editor.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Creating a Virtual Product](./creating-a-virtual-product.md)

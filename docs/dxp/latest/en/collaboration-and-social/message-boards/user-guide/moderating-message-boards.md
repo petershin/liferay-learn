@@ -84,6 +84,6 @@ Moderators have the option to delete the flagged reply. To delete a flagged repl
 
 The reply is now deleted.
 
-## Additional Information
+## Related Topics
 
 * [Managing Notifications and Requests](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)

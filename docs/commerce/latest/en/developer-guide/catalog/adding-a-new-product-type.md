@@ -273,6 +273,6 @@ c1n4-screen-navigation-entry=C1N4 Screen Navigation Entry
 
 Congratulations! You now know the basics for implementing the `CPType` interface, and have implemented a new product type with its own custom screen to Liferay Commerce.
 
-## Additional Information
+## Related Topics
 
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

@@ -31,7 +31,7 @@ To configure Form email notifications:
 
 1. Click _Done_ then close the dialog window.
 
-## Additional Information
+## Related Topics
 
 * [Using Forms with a Workflow](./using-forms-with-a-workflow.md)
 * [Configuring Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)

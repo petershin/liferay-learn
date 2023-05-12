@@ -160,7 +160,7 @@ The portlet parameter called `nameForTheDoSomethingMoreMethod` provides looser c
 
 Now that you know how to use action URLs, you can concentrate on writing action methods. Alternatively, you could investigate using [MVCActionCommand classes](./mvc-action-command.md). Or if you're ready to explore handling other portlet phases, look at using [MVCRenderCommand](./mvc-render-command.md) and [MVCResourceCommand](./mvc-resource-command.md) classes.
 
-## Additional Information
+## Related Topics
 
 * [MVCActionCommand classes](./mvc-action-command.md)
 * [MVCRenderCommand](./mvc-render-command.md)

@@ -127,7 +127,7 @@ Users can also specify a service as part of the `lcp log` command:
 lcp log -p <environment-id> -s <service-id>
 ```
 
-## Additional Information
+## Related Topics
 
 * [Shell Access](./shell-access.md)
 * [Disaster Recovery Overview](./disaster-recovery-overview.md)

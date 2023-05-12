@@ -15,7 +15,7 @@ Relate one object entry to multiple object entries. This type adds a relationshi
 
 Relate multiple object entries with multiple object entries. This adds a relationship table to entries on both sides of the relationship.
 
-## Additional Information
+## Related Topics
 
 * []()
 * []()

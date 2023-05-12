@@ -42,7 +42,7 @@ To give a sales agent access to accounts:
 
 Sales agents can access any account within any of their associated organizations.
 
-## Additional Information
+## Related Topics
 
 * [Account Management](../account-management.md)
 * [Creating a New Account](./creating-a-new-account.md)

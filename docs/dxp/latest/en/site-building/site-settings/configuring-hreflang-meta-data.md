@@ -67,7 +67,7 @@ When enabled, hreflang meta data is only generated for languages with translated
 By default, individual Site settings are inherited from [Site Scope instance settings](#instance-site-scope-settings). However, individual Site configurations override this behavior. To restore the default behavior and synchronize changes between both menus, you must restore the individual Site's settings to default. 
 ```
 
-## Additional Information
+## Related Topics
 
 * [Site Localization](./site-localization.md)
 * [Exporting and Importing Translations](../../content-authoring-and-management/translating-pages-and-content.md)

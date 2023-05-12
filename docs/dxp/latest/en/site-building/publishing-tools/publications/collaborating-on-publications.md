@@ -71,7 +71,7 @@ Follow these steps to remove a collaborator from a publication.
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Creating and Managing Publications](./creating-and-managing-publications.md)
 * [Making and Publishing Changes](./making-and-publishing-changes.md)

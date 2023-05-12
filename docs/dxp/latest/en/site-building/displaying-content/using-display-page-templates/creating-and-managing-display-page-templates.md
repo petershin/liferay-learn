@@ -92,7 +92,7 @@ Follow these steps to view your display page template usage and unassign your co
 
 If you assign your content to a new display page template, make sure the content appears as expected. To preview and display your content, see [Publishing Content with Display Pages](./publishing-content-with-display-pages.md).
 
-## Additional Information
+## Related Topics
 
 * [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
 * [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)

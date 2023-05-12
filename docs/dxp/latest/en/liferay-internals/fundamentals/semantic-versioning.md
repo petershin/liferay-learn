@@ -81,7 +81,7 @@ Gradle uses exact versions when only one version is specified.
 
 You now know the pros and cons for tracking dependencies as a range and as an exact match.
 
-## Additional Information
+## Related Topics
 
 * [Importing Packages](./importing-packages.md)
 * [Exporting Packages](./exporting-packages.md)

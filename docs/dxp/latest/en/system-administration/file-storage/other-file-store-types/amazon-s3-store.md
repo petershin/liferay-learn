@@ -76,7 +76,7 @@ If a database transaction rollback occurs in a Document Library, the transaction
 
 Consult the Amazon Simple Storage documentation for additional details on using Amazon's service.
 
-## Additional Information
+## Related Topics
 
 * [Configuring File Storage](../../file-storage.md)
 * [Bucket Restrictions and Limitations](https://docs.aws.amazon.com/AmazonS3/latest/dev//BucketRestrictions.html#bucketnamingrules)

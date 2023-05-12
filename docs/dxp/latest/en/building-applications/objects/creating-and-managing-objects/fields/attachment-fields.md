@@ -50,7 +50,7 @@ curl -X "POST" "http://localhost:8080/o/c/timeOffRequest?restrictFields=actions"
 }'
 ```
 
-## Additional Information
+## Related Topics
 
 * [Fields](../fields.md)
 * [Adding Fields to Objects](./adding-fields-to-objects.md)

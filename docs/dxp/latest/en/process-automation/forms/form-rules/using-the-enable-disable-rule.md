@@ -31,7 +31,7 @@ If the respondents has answered YES, then they are able to edit the field.
 
 ![If users select yes, the field is enabled.](./using-the-enable-disable-rule/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](../creating-and-managing-forms/creating-forms.md)
 * [Form Rules Overview](./form-rules-overview.md)

@@ -100,7 +100,7 @@ Now you can access Dynatrace's advanced performance monitoring from the Liferay 
 
 Log in with your Dynatrace credentials to check log trails and create custom dashboards.
 
-## Additional Information
+## Related Topics
 
 * [Using the Liferay DXP Service](../using-the-liferay-dxp-service.md)
 * [Real-Time Alerts](./real-time-alerts.md)

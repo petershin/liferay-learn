@@ -31,7 +31,7 @@ Once installed, follow these steps to enable Liferay's OpenOffice/LibreOffice in
 
 You can now use OpenOffice/LibreOffice compatible features, which include converting documents, viewing supported document types in your browser, and generating document thumbnails and previews.
 
-## Additional Information
+## Related Topics
 
 * [Documents and Media](../../documents-and-media.md)
 * [Configuring Documents and Media Previews](./configuring-documents-and-media-previews.md)

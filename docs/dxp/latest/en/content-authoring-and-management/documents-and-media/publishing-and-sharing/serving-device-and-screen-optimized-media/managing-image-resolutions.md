@@ -67,7 +67,7 @@ URLs that point to adapted images whose original image is in the Recycle Bin ret
 
 If the original image is restored from the Recycle Bin, the adapted images are accessible again.
 
-## Additional Information
+## Related Topics
 
 * [Adding Image Resolutions](./adding-image-resolutions.md)
 * [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)

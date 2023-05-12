@@ -54,7 +54,7 @@ Calculations are limited to numeric fields.
 
 See the [Using the Calculate Rule](../form-rules/using-the-calculate-rule.md) article to learn more.
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](./creating-forms.md)
 * [Forms Field Types Reference](./forms-field-types-reference.md)

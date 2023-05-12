@@ -67,7 +67,7 @@ Guest customers can now add items to the cart and proceed to checkout without lo
 
 They must enter their contact information including a valid email address before continuing.
 
-## Additional Information
+## Related Topics
 
 * [Guest Checkout Overview](./guest-checkout-overview.md)
 * [Introduction to Channels](../../store-management/channels/introduction-to-channels.md)

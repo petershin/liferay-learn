@@ -23,7 +23,7 @@ DXP is now saving files to DBStore.
 Consider [enabling antivirus scanning for uploaded files](../enabling-antivirus-scanning-for-uploaded-files.md).
 ```
 
-## Additional Information
+## Related Topics
 
 * [File Storage](../../file-storage.md)
 * [File Store Migration](../file-store-migration.md)

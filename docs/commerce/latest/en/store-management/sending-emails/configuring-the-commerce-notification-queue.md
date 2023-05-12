@@ -17,6 +17,6 @@ You can change the interval for sending and removing queued notifications.
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Using Notification Templates](./using-notification-templates.md)

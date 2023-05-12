@@ -87,7 +87,7 @@ Specify the properties Liferay DXP needs to connect with Elasticsearch, then run
 
 Re-index your search and spell check indexes. Both re-index actions are carried out from the Index Actions tab of Control Panel &rarr; Configuration &rarr; Search.
 
-## Additional Information
+## Related Topics
 
 * [Securing Elasticsearch](./securing-elasticsearch.md)
 * [Liferay Enterprise Search](../../liferay-enterprise-search.md)

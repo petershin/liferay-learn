@@ -21,7 +21,7 @@ If further edits are required, translators can return to the translation interfa
 
 If the translation is approved for a Content Page, the Page is saved as a draft with the language edits. If the translation is approved for Web Content, the changes are applied immediately.
 
-## Additional Information
+## Related Topics
 
 * [Translating Web Content](./translating-web-content.md)
 * [Translating Content Pages](./translating-content-pages.md)

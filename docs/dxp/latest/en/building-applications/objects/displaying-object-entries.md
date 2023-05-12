@@ -139,7 +139,7 @@ You can now select from the template when mapping Object entries to fragment fie
 
 Since Objects are integrated with the info framework, you can add Object entries to navigation menus to provide quick access. All published Objects automatically appear as available sources for menu elements. See [Using the Navigation Menus Application](../../site-building/site-navigation/using-the-navigation-menus-application.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)
 * [About Collections and Collection Pages](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)

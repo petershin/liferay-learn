@@ -101,7 +101,7 @@ After sharing a file, you can un-share it or modify its permissions on a per-use
 
 1. Click *Save* and close the dialog.
 
-## Additional Information
+## Related Topics
 
 * [Enabling and Configuring Sharing](./enabling-and-configuring-sharing.md)
 * [Documents and Media Permissions Reference](./documents-and-media-permissions-reference.md)

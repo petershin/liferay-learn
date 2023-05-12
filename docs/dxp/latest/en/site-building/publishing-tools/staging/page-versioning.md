@@ -93,7 +93,7 @@ When two variations of site pages are merged, new pages that don't exist in the 
 
 You can use permissions to manage user access to variations. See [Managing Staging Permissions](./managing-staging-permissions.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Staging Overview](../staging.md)
 * [Configuring Local Live Staging](./configuring-local-live-staging.md)

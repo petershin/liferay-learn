@@ -59,7 +59,7 @@ Once enabled, you can access the 404 URL management tab in the Redirection appli
 Enabling or disabling the application does not affect data stored in the database. If disabled, you can reenable the feature to access your data at any time.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Managing Site URLs](../../managing-site-urls.md)
 * [Using Alias Redirects](./using-alias-redirects.md)

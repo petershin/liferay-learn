@@ -27,7 +27,7 @@ Users can use the  _Wiki Display_ widget to highlight a specific wiki page regar
 
 The _Wiki Display_ widget now displays the selected _Wiki Page_.
 
-## Additional Information
+## Related Topics
 
 * [Page Menu Widget](./using-the-page-menu-widget.md)
 * [Tree Menu Widget](./using-the-tree-menu-widget.md)

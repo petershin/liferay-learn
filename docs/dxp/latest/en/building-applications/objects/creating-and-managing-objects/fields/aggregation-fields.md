@@ -61,7 +61,7 @@ Consider a scenario with two insurance objects: policies and claims. If you rela
 
 Once saved, only related entries that meet all filter criteria are included in the aggregation field's calculations.
 
-## Additional Information
+## Related Topics
 
 * [Fields](../fields.md)
 * [Attachment Fields](./attachment-fields.md)

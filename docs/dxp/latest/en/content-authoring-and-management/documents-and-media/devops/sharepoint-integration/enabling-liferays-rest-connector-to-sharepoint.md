@@ -109,7 +109,7 @@ Follow these steps to create SharePoint Search configuration with an different s
 
 1. Click *Save* when finished.
 
-## Additional Information
+## Related Topics
 
 * [Installing Apps](../../../../system-administration/installing-and-managing-apps/installing-apps.md)
 * [Creating SharePoint Repositories in Documents and Media](./creating-sharepoint-repositories-in-documents-and-media.md)

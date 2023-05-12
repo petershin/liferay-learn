@@ -149,7 +149,7 @@ To add a folder:
     * **Name**: Folder name (Car parts)
 1. Click _Save_.
 
-## Additional Information
+## Related Topics
 
 * [Creating SKUs for Product Variants](./creating-skus-for-product-variants.md)
 * [Adding a Page to a Site](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)

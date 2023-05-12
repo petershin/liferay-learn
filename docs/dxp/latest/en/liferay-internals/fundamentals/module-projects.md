@@ -267,7 +267,7 @@ Modules leverage each other's capabilities via APIs like the `Greeter` API. Life
 For details about the module lifecycle, see [Module Lifecycle](../architecture/module-lifecycle.md).
 ```
 
-## Additional Information
+## Related Topics
 
 * [APIs as OSGi Services](./apis-as-osgi-services.md)
 * [Using an OSGi Service](./using-an-osgi-service.md)

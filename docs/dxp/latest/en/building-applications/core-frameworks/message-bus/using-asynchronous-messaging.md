@@ -307,7 +307,7 @@ Now that you're familiar with asynchronous messaging, you can tune it for optima
 
 If you want to explore synchronous messaging using *default* and *direct* modes, see [Using Direct Synchronous Messaging in Previous Versions](./using-direct-synchronous-messaging-in-previous-versions.md) and [Using Default Synchronous Messaging in Previous Versions](./using-default-synchronous-messaging-in-previous-versions.md) for details.
 
-## Additional Information
+## Related Topics
 
 * [Message Bus](../message-bus.md)
 * [Listening for Messages](./listening-for-messages.md)

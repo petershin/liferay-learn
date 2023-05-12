@@ -47,6 +47,6 @@ You can find the *Template Key* when editing a previously published template.
 
 ![You can find the Template Key when view the Edit page for a template.](./embedding-widgets-in-templates/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Embedding a Portlet by Portlet Name](https://help.liferay.com/hc/articles/360028746512-Embedding-a-Portlet-by-Portlet-Name)

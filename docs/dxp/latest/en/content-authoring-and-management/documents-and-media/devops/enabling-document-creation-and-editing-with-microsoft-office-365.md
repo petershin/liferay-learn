@@ -55,7 +55,7 @@ Access has been granted at the global level.
 
  **Note:** Once enabled, you can disable this feature by deleting the client ID, client secret, and tenant values from the form.
 
-## Additional Information
+## Related Topics
 
 * [Enabling Document Creation and Editing with Google Drive](./google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md)
 * [Creating and Editing Documents with Microsoft Office 365](../uploading-and-managing/creating-documents/creating-and-editing-documents-with-microsoft-office-365.md)

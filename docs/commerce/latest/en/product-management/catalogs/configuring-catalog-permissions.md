@@ -58,7 +58,7 @@ Follow the steps below to configure catalog permissions:
 
 The catalog's permissions are now configured.
 
-## Additional Information
+## Related Topics
 
 * [Understanding Roles and Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [Configuring Product Visibility Using Channels](../../store-management/channels/configuring-product-visibility-using-channels.md)

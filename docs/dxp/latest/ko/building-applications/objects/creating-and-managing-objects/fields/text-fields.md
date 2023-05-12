@@ -30,7 +30,7 @@ Stores text with advanced formatting tools and media elements (e.g., images, vid
 
 Headless Data Type: Clob
 
-## Additional Information
+## Related Topics
 
 * [Fields](../fields.md)
 * [Adding Custom Validations](../validations/adding-custom-validations.md)

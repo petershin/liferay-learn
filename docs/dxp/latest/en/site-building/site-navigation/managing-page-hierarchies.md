@@ -28,7 +28,7 @@ Users can access page options by clicking the _Options_ (![Option](../../images/
 | **Orphan Widgets** | Clears the data related to widgets that have been removed from the page. |
 | **Delete** | Deletes the page and all its data. |
 
-## Additional Information
+## Related Topics
 
 * [Using the Navigation Menus Application](./using-the-navigation-menus-application.md)
 * [Configuring Navigation Menus](./configuring-menu-displays.md)

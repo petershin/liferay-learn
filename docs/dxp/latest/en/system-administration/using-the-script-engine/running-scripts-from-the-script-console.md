@@ -86,7 +86,7 @@ Use the Script Console cautiously and test your scripts on non-production system
 
 The script engine can be used outside of the Script Console, such as in a Kaleo Workflow. Using the script engine in workflows is next.
 
-## Additional Information
+## Related Topics
 
 * [Invoking Liferay services](./invoking-liferay-services-from-scripts.md)
 * [Using the Script Engine in Workflow](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)

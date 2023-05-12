@@ -61,6 +61,6 @@ Similarly, when content that contains adapted images is exported, Adaptive Media
 
 Adaptive Media doesn't regenerate adapted images during export/import or the publishing of staged content. To improve performance, Adaptive Media instead reuses the existing adapted images.
 
-## Additional Information
+## Related Topics
 
 * [Adding Image Resolutions](./adding-image-resolutions.md)

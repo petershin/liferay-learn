@@ -52,7 +52,7 @@ Liferay automatically generates permissions for managing which roles can trigger
 
 ![Standalone permissions use the action.[actionName] naming pattern.](./using-manual-actions/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Defining Object Actions](./defining-object-actions.md)
 * [Understanding Action Types](./understanding-action-types.md)

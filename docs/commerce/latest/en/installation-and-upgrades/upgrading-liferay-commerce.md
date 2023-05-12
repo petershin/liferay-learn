@@ -179,7 +179,7 @@ After upgrading from to the latest version, execute a full search reindex:
 
 Once reindexing is complete, the upgraded Liferay Commerce instance is ready for use.
 
-## Additional Information
+## Related Topics
 
 * [Installing Apps](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
 * [Liferay Commerce Fix Delivery Method](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

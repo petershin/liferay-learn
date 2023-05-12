@@ -21,7 +21,7 @@ To manage the Adaptive Media Image Resolutions, see [Managing Image Resolutions]
 
 If you have upgraded to the latest DXP version and were using a legacy version that did not support Adaptive Media, you can migrate existing Documents and Media thumbnails to new Adaptive Media defined Image Resolutions; see [Migrating Documents and Media Thumbnails](./migrating-documents-and-media-thumbnails.md).
 
-## Additional Information
+## Related Topics
 
 * [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)
 * [Adaptive Media Modules Reference](../../developer-guide/adaptive-media-modules-reference.md)

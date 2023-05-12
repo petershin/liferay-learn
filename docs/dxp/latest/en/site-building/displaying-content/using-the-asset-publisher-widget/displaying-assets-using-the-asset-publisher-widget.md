@@ -40,7 +40,7 @@ Since the Asset Publisher widget publishes assets, it excels at publishing mixed
 
 ![You can publish mixed content types with the Asset Publisher widget.](./displaying-assets-using-the-asset-publisher-widget/images/02.png)
 
-## Additional Information
+## Related Topics
 
 * [Selecting Assets in the Asset Publisher Widget](./selecting-assets-in-the-asset-publisher-widget.md)
 * [Configuring the Asset Publisher Display Settings](./configuring-asset-publisher-display-settings.md)

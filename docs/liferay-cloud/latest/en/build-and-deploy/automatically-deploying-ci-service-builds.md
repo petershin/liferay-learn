@@ -29,7 +29,7 @@ If desired, you can configure automatic deployment by editing the `LCP_CI_DEPLOY
 
 Once restarted, any changes pushed or merged to your specified branch are automatically built and deployed to the target environment.
 
-## Additional Information
+## Related Topics
 
 * [Overview of the Liferay Cloud Development Workflow](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-liferay-cloud-console.md)

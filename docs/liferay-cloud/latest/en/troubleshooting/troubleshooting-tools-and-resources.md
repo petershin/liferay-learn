@@ -147,7 +147,7 @@ For additional support, users can contact one of Liferay's global [Support Cente
 
 When submitting a ticket, please provide information regarding the build images currently in use, behavior or question you are facing, steps to reproduce the issue, and a description of both the actual behavior and the expected behavior.
 
-## Additional Information
+## Related Topics
 
 * [Liferay Cloud Support Overview](https://help.liferay.com/hc/en-us/articles/360030208451-DXP-Cloud-Support-Overview)
 * [Liferay Cloud Knowledge Base](https://help.liferay.com/hc/en-us/categories/360001132872)

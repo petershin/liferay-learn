@@ -45,7 +45,7 @@ We recommend these best practices when writing your Fragment code:
 * Use JavaScript sparingly, since it isn't easily reusable. Instead, reference external JavaScript libraries.
 * Escape Fragment configuration text values.
 
-## Additional Information
+## Related Topics
 
 * [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
 * [Using the Fragments Editor](./using-the-fragments-editor.md)

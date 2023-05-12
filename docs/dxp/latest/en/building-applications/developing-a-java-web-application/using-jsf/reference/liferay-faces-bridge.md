@@ -41,7 +41,7 @@ The JSR 329/378 standards defines several configuration options prefixed with th
 
 Liferay Faces Bridge is an essential part of the JSF development process for Liferay DXP/Portal. See [Developing a JSF Portlet Application \(Help Center\)](https://help.liferay.com/hc/en-us/articles/360029069451-Developing-a-JSF-Portlet-Application) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Liferay Faces Alloy](./liferay-faces-alloy.md)
 * [Liferay Faces Portal](./liferay-faces-portal.md)

@@ -29,7 +29,7 @@ To configure site template propagation,
 
 If propagation is disabled for a Site Template, enabling propagation immediately begins propagating changes to connected Sites simultaneously. While propagation remains enabled for the template, subsequent changes are propagated to sites individually when they’re first visited by a user.
 
-## Additional Information
+## Related Topics
 
 * [Site Templates](../site-templates.md)
 * [Propagating Template Changes](./propagating-template-changes.md)

@@ -62,7 +62,7 @@ Consider [enabling antivirus scanning for uploaded files](../enabling-antivirus-
 
 In a [clustered environment](../../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md), point the store to a network mounted file system that all the nodes can access. The networked file system must be accessible to all nodes, support concurrent requests, and support file locking. If Simple File System Store is used without such a file system and multiple users attempt writing to the same file concurrently, data corruption can occur.
 
-## Additional Information
+## Related Topics
 
 * [File Storage](../../file-storage.md)
 * [Amazon S3 Store](./amazon-s3-store.md)

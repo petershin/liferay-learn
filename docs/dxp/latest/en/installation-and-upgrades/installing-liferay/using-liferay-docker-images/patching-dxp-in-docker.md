@@ -167,7 +167,7 @@ If a patch requires upgrading the database, you must upgrade it using the Databa
 
 After the database is upgraded, run your container that uses that database.
 
-## Additional Information
+## Related Topics
 
 * [Installing Apps and Other Artifacts to Containers](./installing-apps-and-other-artifacts-to-containers.md)
 * [Using Liferay Docker Images](../using-liferay-docker-images.md)

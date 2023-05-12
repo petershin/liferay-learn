@@ -86,6 +86,6 @@ Regardless of how many categories (and subcategories) there are, a category is j
 
 Once you have created categories and a few subcategories, you can learn how to create [Message Board Threads](./creating-message-boards-threads.md)
 
-## Additional Information
+## Related Topics
 
 * [Message Boards Configuration Reference](./message-boards-configuration-reference.md)

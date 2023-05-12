@@ -75,7 +75,7 @@ Each form fragment can support one or more object field types. The default form 
 If categorization is enabled for the object, you can use the Tags and Categories form fragments to add metadata to object entries. 
 ```
 
-## Additional Information
+## Related Topics
 
 * [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
 * [Configuring Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)

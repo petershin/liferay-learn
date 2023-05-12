@@ -135,7 +135,7 @@ If you want to develop control logic in separate MVC command classes, read these
 
 If you're ready to develop your model layer, see [Service Builder](../data-frameworks/service-builder.md).
 
-## Additional Information
+## Related Topics
 
 * [Portlet Preferences](./using-mvc/portlet-preferences.md)
 * [Using Localized Messages in an MVC Portlet](./using-mvc/using-localized-messages-in-an-mvc-portlet.md)

@@ -53,7 +53,7 @@ Once exported, you can import the object definition into compatible Liferay envi
 
 The object definition begins importing in the background and can take a few minutes.
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](./creating-objects.md)
 * [Activating and Deactivating Objects](./activating-and-deactivating-objects.md)

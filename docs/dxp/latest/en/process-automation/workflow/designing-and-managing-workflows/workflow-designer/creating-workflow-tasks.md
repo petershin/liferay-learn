@@ -133,7 +133,7 @@ You can also assign the Task node to a Resource Action instead of another user o
 
 Now that you've walked through a workflow creation and learned how to use the workflow designer, look into adding node types that can take your workflow processes to the next level; such as [Forks and Joins](./using-forks-and-joins.md) or [Conditions](./using-condition-nodes.md).
 
-## Additional Information
+## Related Topics
 
 * [Activating Workflow](../../using-workflows/activating-workflow.md)
 * [Workflow Nodes](./workflow-nodes.md)

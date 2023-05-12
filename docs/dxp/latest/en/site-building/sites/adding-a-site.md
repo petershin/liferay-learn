@@ -37,7 +37,7 @@ You can only use the blank template or custom templates when creating an Organiz
 
 Liferay [User Groups](../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) are lists of users that can span multiple Organizations and Sites. If desired, you can create dedicated Sites for User Groups to add Pages to the [personal Site](./personal-sites.md) of each group member. See [User Group Sites](../../users-and-permissions/user-groups/user-group-sites.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Site Building](../introduction-to-site-building.md)
 * [Site Templates](./site-templates.md)

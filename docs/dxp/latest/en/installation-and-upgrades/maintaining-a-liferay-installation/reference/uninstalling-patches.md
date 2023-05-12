@@ -50,7 +50,7 @@ Any installed hotfix is removed and the current Fix Pack level is maintained.
 
 Now you know how to restore your DXP installation by uninstalling and reverting patches.
 
-## Additional Information
+## Related Topics
 
 * [Installing Patches](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
 * [Understanding Patch Types](../patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md)

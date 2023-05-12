@@ -299,7 +299,7 @@ The example DXP server containers uses these settings.
 
 Please see the Env/[Portal Property](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) definitions for more information.
 
-## Additional Information
+## Related Topics
 
 * [Database Configuration for Cluster Nodes](./database-configuration-for-cluster-nodes.md)
 * [Configuring Cluster Link](./configuring-cluster-link.md)

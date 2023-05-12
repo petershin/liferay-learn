@@ -80,7 +80,7 @@ To manage a Master Page Templates's Look and Feel and other options, follow thes
 A theme is applied to a content page through a Master Page Template. When a Master Page Template is applied to a content page, the look and feel of the content page is defined by the Master Page Template.
 ```
 
-## Additional Information
+## Related Topics
 
 - [Master Pages Templates](./master-page-templates.md)
 - [Creating a Master Page Template](./creating-a-master-page-template.md)

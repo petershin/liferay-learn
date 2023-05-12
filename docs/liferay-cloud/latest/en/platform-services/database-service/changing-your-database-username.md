@@ -45,7 +45,7 @@ Follow these steps to change your database username:
 
 Once published, all connected services restart and stop receiving requests for some minutes. They may also behave differently depending on the secret's usage. When the service starts up, the environment variables are read and the database user is updated.
 
-## Additional Information
+## Related Topics
 
 * [Database Service](./database-service.md)
 * [Changing your Database Password](./changing-your-database-password.md)

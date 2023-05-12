@@ -22,7 +22,7 @@ All of Liferay's widgets support Liferay's robust, fine-grained permissions syst
 Some widgets have permissions specific to them. For example, Message Boards contains a *Ban User* permission. This makes no sense in the context of most other widgets. Those permissions are covered with those widgets.
 ```
 
-## Additional Information
+## Related Topics
 
 - [Setting Widget Scopes](./setting-widget-scopes.md)
 - [Understanding Roles and Permissions](../../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

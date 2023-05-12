@@ -95,7 +95,7 @@ Once the components finish updating, you must update any existing Talend jobs th
 Be sure to document each component's configurations before replacing them. This helps ensure that your job maintains the same functionality as before.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Liferay Talend Components Overview](./liferay-talend-components-overview.md)
 * [Designing Talend Jobs Using Liferay Components](./designing-talend-jobs-using-liferay-talend-components.md)

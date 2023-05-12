@@ -198,6 +198,6 @@ q4f7-commerce-product-content-renderer=Q4F7 Commerce Product Content Renderer
 
 Congratulations! You now know the basics for implementing the `CPContentRenderer` interface, and have added a new product content renderer to Liferay Commerce.
 
-## Additional Information
+## Related Topics
 
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

@@ -45,7 +45,7 @@ Now when creating or editing the object's entries, users can access and apply ta
 Visibility and permissions can affect how the categorization block appears.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Designing Object Layouts](./designing-object-layouts.md)

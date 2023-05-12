@@ -33,7 +33,7 @@ A virtual host connects a domain name (e.g., `www.helloworld.com`) to a Site. Th
 
 Your site is now accessible using the configured domain.
 
-## Additional Information
+## Related Topics
 
 * [Configuring Your Site's Friendly URL](./configuring-your-sites-friendly-url.md)
 * [Setting Up Redirects and 404 Tracking](./setting-up-redirects-and-404-tracking.md)

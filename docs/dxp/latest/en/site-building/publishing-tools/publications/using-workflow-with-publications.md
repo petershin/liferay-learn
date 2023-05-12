@@ -23,7 +23,7 @@ Once changes are approved, additional edits to the same entities are tracked as 
 
 ![Additional edits to the same entities are tracked as separate changes in the publication.](./using-workflow-with-publications/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Workflow](../../../process-automation/workflow/introduction-to-workflow.md)
 * [Creating and Managing Publications](./creating-and-managing-publications.md)

@@ -57,7 +57,7 @@ While Creating a template, you can optionally determine the following Template s
 
 * **Featured Image**: Select a featured image for your Template via URL or from your device.
 
-## Additional Information
+## Related Topics
 
 * [Creating Structures](../web-content-structures/creating-structures.md)
 * [Adding a Basic Web Content Article](../web-content-articles/adding-a-basic-web-content-article.md)

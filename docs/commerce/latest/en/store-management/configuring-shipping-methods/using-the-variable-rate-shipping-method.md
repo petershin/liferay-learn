@@ -130,7 +130,7 @@ The new shipping option has been created. To finish configuring this shipping op
 
 1. Click _Save_.
 
-## Additional Information
+## Related Topics
 
 * [Using a Flat Rate Shipping Method](./using-the-flat-rate-shipping-method.md)
 * [Using FedEx as a Carrier Method](./using-the-fedex-shipping-method.md)

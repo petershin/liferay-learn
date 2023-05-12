@@ -48,6 +48,6 @@ To create an account group:
 
 The Account Group has been created and one account has been associated with this Account Group.
 
-## Additional Information
+## Related Topics
 
 * [Creating a New Account](./creating-a-new-account.md)

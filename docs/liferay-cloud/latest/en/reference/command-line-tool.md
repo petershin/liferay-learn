@@ -258,7 +258,7 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/uninstall.sh -fsSL | bash
 
 For Windows 7 and 8, go to *Control Panel* &rarr; *Add or Remove Programs*. In Windows 10, go to *Control Panel* &rarr; *Programs* &rarr; *Uninstall a program*. Then, find *LCP CLI* in the list of programs, select it, and click *Uninstall*. Follow the steps in the wizard.
 
-## Additional Information
+## Related Topics
 
 * [Troubleshooting Tools and Resources](../troubleshooting/troubleshooting-tools-and-resources.md)
 * [Deploying Changes Via the CLI Tool](../build-and-deploy/deploying-changes-via-the-cli-tool.md)

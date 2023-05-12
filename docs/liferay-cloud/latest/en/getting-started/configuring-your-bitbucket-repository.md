@@ -192,7 +192,7 @@ Verify that new pull requests trigger Jenkins builds:
 
 1. Verify that the links redirect to the correct BitBucket pages.
 
-## Additional Information
+## Related Topics
 
 * [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
 * [Configuring Your GitLab Repository](./configuring-your-gitlab-repository.md)

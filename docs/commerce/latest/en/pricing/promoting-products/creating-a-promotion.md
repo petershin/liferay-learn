@@ -57,7 +57,7 @@ This activates the promotion, and the prices of all products in the catalog are 
 
 ![The prices of all products in the catalog are reduced by 20% on the scheduled date](./creating-a-promotion/images/06.png)
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Promotions](./introduction-to-promotions.md)
 * [Using the Promotion Base List](./using-the-promotion-base-list.md)

@@ -70,6 +70,6 @@ Classloading for JSPs and Service Builder classes is similar to that of web appl
 
 You now know the classloading hierarchy, understand it in context of web applications, and have references to information on other classloading perspectives.
 
-## Additional Information
+## Related Topics
 
 * [Bundle Classloading Flow](./bundle-classloading-flow.md)

@@ -56,7 +56,7 @@ The App Manager's uninstall, re-install, and re-activation features have known i
 
 Congratulations! You can use the App Manager to examine and manage application deployments.
 
-## Additional Information
+## Related Topics
 
 * [Blacklisting Apps](./blacklisting-apps.md)
 * [Blacklisting OSGi Components](./blacklisting-osgi-components.md)

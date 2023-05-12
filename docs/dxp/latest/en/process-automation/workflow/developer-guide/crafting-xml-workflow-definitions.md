@@ -262,7 +262,7 @@ Great! Now add the closing tag:
 
 The Single Approver workflow is now complete. Now that you see how workflows are created, you can learn about all the other possible options, such as forks, joins, and conditions. Liferay's workflow system can implement any processes you need. 
 
-## Additional Information
+## Related Topics
 
 * [Workflow Definition Node Reference](./workflow-definition-node-reference.md)
 * [Workflow Task Node Reference](./workflow-task-node-reference.md)

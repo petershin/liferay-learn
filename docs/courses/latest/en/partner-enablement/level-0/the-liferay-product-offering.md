@@ -142,6 +142,6 @@ What is important to note is that although the deployment model is SaaS, this is
 | --- | --- | --- |
 | Application Delivery |  | &#10004; |
 
-## Additional Information
+## Related Topics
 
 * [Liferay Overview]()

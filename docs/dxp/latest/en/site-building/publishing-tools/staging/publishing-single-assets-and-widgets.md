@@ -33,7 +33,7 @@ After changing a widget, you can publish the widget by clicking on the *Actions*
 
 ![Click on a widget's Action button, and select Staging.](./publishing-single-assets-and-widgets/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Staging Overview](../staging.md)
 * [Managing Staging Permissions](./managing-staging-permissions.md)

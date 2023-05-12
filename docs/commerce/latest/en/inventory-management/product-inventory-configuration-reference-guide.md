@@ -37,7 +37,7 @@ To access the inventory configuration options for a product, navigate to a its *
 
 ![The Configuration tab shows available inventory options for the selected product.](./product-inventory-configuration-reference-guide/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)
 * [Low Stock Action](./low-stock-action.md)

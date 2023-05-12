@@ -25,7 +25,7 @@ Many editing options can only be accessed in the Staging environment. This is to
 
 When changes are made in the Staging environment, they can then be published all at once, or one at a time. As with [Sites](./site-staging-ui-reference.md#publish-to-live), you can use [simple](./site-staging-ui-reference.md#simple-publishing) or [advanced](./site-staging-ui-reference.md#advanced-publishing) publishing options.
 
-## Additional Information
+## Related Topics
 
 * [Staging Overview](../staging.md)
 * [Asset Libraries Overview](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)

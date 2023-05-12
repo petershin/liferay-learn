@@ -44,7 +44,7 @@ Each file version has an Actions menu (![Actions](../../../../images/icon-action
 
 You can manage files using WebDAV and continue to track version history. To learn more, see [Accessing Documents with WebDAV](../accessing-documents-with-webdav.md).
 
-## Additional Information
+## Related Topics
 
 * [Permissions and Documents](./permissions-and-documents.md)
 * [Sharing Documents with Other Users](./sharing-documents-with-other-users.md)

@@ -68,6 +68,6 @@ To replace the existing placeholder image:
 
 The new image has been applied to the entire instance.
 
-## Additional Information
+## Related Topics
 
 * [Creating a New Catalog](./creating-a-new-catalog.md)

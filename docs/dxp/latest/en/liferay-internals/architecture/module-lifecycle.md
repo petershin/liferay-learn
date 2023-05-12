@@ -54,7 +54,7 @@ Service references are _static_ and _reluctant_ by default. That is, an injected
 
 Use Declarative Services annotations to specify component activation and service policies. Use Gogo Shell commands to control modules and components.
 
-## Additional Information
+## Related Topics
 
 * [Module Projects](../fundamentals/module-projects.md)
 * [Gogo Shell Commands](../fundamentals/using-the-gogo-shell/gogo-shell-commands.md)

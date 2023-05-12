@@ -179,7 +179,7 @@ Wiki widgets present the Wiki application and display wiki pages.
 | Wiki | Adds a [Wiki widget](../../../../collaboration-and-social/wiki/wiki-widget-ui-reference.md) displaying the Wiki application. |
 | Wiki Display | Adds a [Wiki Display widget](../../../../collaboration-and-social/wiki/using-the-wiki-display-widget.md) highlighting a specific wiki page. |
 
-## Additional Information
+## Related Topics
 
 * [Using Widget Pages](../../using-widget-pages.md)
 * [Using Widgets](../using-widgets.md)

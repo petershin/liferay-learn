@@ -37,7 +37,7 @@ These properties are specific to workflow action client extensions:
 | `resourcePath`                           | String (partial URL) | (Required) The path to the workflow action handler. This value is combined with the OAauth2 application profile's `homePageURL` value for a complete URL. |
 | `oAuth2ApplicationExternalReferenceCode` | String               | (Required) The external reference code for an OAuth2 application profile, needed for securing requests. |
 
-## Additional Information
+## Related Topics
 
 * [Microservice Client Extensions](../microservice-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)

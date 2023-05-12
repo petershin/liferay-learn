@@ -99,7 +99,7 @@ Verify the Liferay Cloud stack services are properly deployed:
 
 When properly deployed, the status of all 5 default Cloud Stack services should be 'Ready'.
 
-## Additional Information
+## Related Topics
 
 - [Configuring Your GitHub Repository](./configuring-your-github-repository.md)
 - [Understanding Liferay Cloud Environments](./understanding-liferay-cloud-environments.md)

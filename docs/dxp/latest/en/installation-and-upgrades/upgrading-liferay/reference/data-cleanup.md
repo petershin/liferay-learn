@@ -33,7 +33,7 @@ In versions earlier than 7.4, Data Cleanup settings persist. To disable cleanup 
 You can also clean up module data on server startup (in a [Liferay Docker container](../upgrade-basics/upgrading-via-docker.md) or on a local machine) using a  `com.liferay.data.cleanup.internal.configuration.DataCleanupConfiguration.config` [configuration file](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). After the cleanup, prevent subsequent server startups from running the cleanups again by removing the configuration file from the `osgi/configs` folder.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Data Removal](./data-removal.md)
 * [Using Configuration Files](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)

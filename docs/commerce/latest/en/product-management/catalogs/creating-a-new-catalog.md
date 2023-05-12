@@ -45,7 +45,7 @@ The new catalog has been created and will be selectable when adding a new produc
 
 ![Catalog and Products](./creating-a-new-catalog/images/02.png)
 
-## Additional Information
+## Related Topics
 
 * [Locale Options](../../store-management/locale-options.md)
 * [Adding a New Currency](../../store-management/currencies/adding-a-new-currency.md)

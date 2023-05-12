@@ -27,6 +27,6 @@ include-and-override=portal-developer.properties
 | module.framework.properties.osgi.console=localhost:11311 | Enables console access for debugging modules. |
 | work.dir.override.enabled=true | Allows using the Liferay work directory to override JSP files within a deployed OSGi bundle. |
 
-## Additional Information
+## Related Topics
 
 * [Portal Properties](../../installation-and-upgrades/reference/portal-properties.md)

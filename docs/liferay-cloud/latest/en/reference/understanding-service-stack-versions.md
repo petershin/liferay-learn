@@ -58,7 +58,7 @@ In this example, the `image` property's value has a name ending in `4.0.0`, indi
 Upgrading your service stack to version `4.x.x` is recommended for access to the latest improvements. See [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)_ for steps on performing the upgrade.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Liferay Cloud Project Changes in Version 4](./liferay-cloud-project-changes-in-version-4.md)
 * [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)

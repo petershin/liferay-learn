@@ -33,7 +33,7 @@ Note that the Recycle Bin is enabled for different asset types when the Staging 
 Check your Recycle Bin before enabling or disabling a Staging environment. You may end up losing assets that are already in the Recycle Bin. 
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using the Recycle Bin](./using-the-recycle-bin.md)
 * [Configuring the Recycle Bin](./configuring-the-recycle-bin.md)

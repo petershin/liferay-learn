@@ -118,7 +118,7 @@ The Shipment Items Tab contains the following information:
 
 Clicking *Add* (![Add icon](../../images/icon-add.png)) opens a window where you can add more items to the order.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Shipment](./creating-a-shipment.md)
 * [Canceling a Shipment](./cancelling-a-shipment.md)

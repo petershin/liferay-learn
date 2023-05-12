@@ -108,7 +108,7 @@ Now that you've uploaded and confirmed your LAR file, a similar screen to what y
 
 Once you've selected the appropriate options, select *Import*, and your widget's data is imported and ready for use.
 
-## Additional Information
+## Related Topics
 
 - [Communication Between Widgets](./communication-between-widgets.md)
 - [Exporting/Importing Site Pages and Content](../../../../sites/exporting-importing-site-pages-and-content.md)

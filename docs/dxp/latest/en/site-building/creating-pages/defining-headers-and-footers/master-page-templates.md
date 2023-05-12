@@ -15,7 +15,7 @@ Building a Master Page Template is similar to the process of creating a Content 
 
 ![A typical use case for a Master Page Template has a Header, a Drop Zone, and a Footer](./master-page-templates/images/02.png) 
 
-## Additional Information
+## Related Topics
 
 - [Creating a Master Page Template](./creating-a-master-page-template.md)
 - [Managing Master Page Templates](./managing-master-page-templates.md)

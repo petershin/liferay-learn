@@ -32,7 +32,7 @@ You can split the review task so that two reviews can happen at the same time. I
 
 With a regular Join node, for the workflow to proceed beyond the join, the transition from both parallel executions must be invoked. However, if you use a Join XOR node instead, the workflow proceeds as long as the transition from one of the parallel executions is invoked.
 
-## Additional Information
+## Related Topics
 
 * [Activating Workflow](../../using-workflows/activating-workflow.md)
 * [Workflow Nodes](./workflow-nodes.md)

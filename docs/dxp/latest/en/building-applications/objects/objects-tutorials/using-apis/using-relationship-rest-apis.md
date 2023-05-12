@@ -378,7 +378,7 @@ Use the REST APIs to add object entries and manage their relationships:
    :language: bash
 ```
 
-## Additional Information
+## Related Topics
 
 * [Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md)
 * [Using Nested Fields with REST APIs](./using-nested-fields-with-rest-apis.md)

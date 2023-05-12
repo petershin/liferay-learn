@@ -149,7 +149,7 @@ The hyperlink `<a href="<%= bakerURL %>">Go to Baker</a>` binds the render URL t
 
 Now you know how to implement render logic in MVC Render Command classes. Next, you can act on resources such as files using [MVC Resource Command](./mvc-resource-command.md) classes. 
 
-## Additional Information
+## Related Topics
 
 * [MVC Resource Command](./mvc-resource-command.md)
 * [MVC Action Command](./mvc-action-command.md)

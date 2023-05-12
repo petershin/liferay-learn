@@ -89,7 +89,7 @@ Follow these steps to sync Object data to a Google Sheet:
 
    ![Click Start Flow.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/18.png)
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../../objects.md)
 * [Creating and Managing Objects](../../creating-and-managing-objects.md)

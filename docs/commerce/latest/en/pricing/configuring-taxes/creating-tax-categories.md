@@ -58,7 +58,7 @@ To create a new tax category:
 
 The Tax Category is now available for your store.
 
-## Additional Information
+## Related Topics
 
 * [Setting Rates for Tax Calculations](./setting-rates-for-tax-calculations.md)
 * [Applying Tax Rates](./applying-tax-rates.md)

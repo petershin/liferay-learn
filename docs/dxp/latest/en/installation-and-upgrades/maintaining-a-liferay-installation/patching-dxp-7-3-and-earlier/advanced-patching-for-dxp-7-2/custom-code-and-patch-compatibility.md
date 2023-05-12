@@ -66,7 +66,7 @@ Example:
 
 Now you know how to integrate your custom code and custom patches with other DXP patches.
 
-## Additional Information
+## Related Topics
 
 * [Installing Patches](../installing-patches-for-dxp-7-3-and-earlier.md)
 * [Installing the Patching Tool](../../reference/installing-the-patching-tool.md)

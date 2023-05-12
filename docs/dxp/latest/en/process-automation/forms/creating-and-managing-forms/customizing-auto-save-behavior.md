@@ -16,6 +16,6 @@ To change the duration:
 1. Enter a different Autosave Interval value to increase the interval. To disable Autosave, enter 0.
 1. Click _Save_.
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](./creating-forms.md)

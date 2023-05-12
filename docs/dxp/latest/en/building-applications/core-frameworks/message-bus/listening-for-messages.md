@@ -95,6 +95,6 @@ Set your component's `destination.name` property value to your destination's nam
 
 When you deploy your project, the OSGi Runtime registers your `MessageListener` with the destination. Your `MessageListener` now receives messages sent to the destination.
 
-## Additional Information
+## Related Topics
 
 * [Message Bus](../message-bus.md)

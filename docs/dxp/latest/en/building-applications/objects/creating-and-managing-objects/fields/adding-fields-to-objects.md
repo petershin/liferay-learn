@@ -98,7 +98,7 @@ The following field names are reserved by Liferay and cannot be used. If users a
 | `userName` | User name of the entry's author. |
 | `uuid` | Unique universal ID for the entry. |
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Defining Object Relationships](../relationships/defining-object-relationships.md)

@@ -119,7 +119,7 @@ You can completely remove a VPN configuration by using the *Delete VPN* option.
 
 The VPN is deleted and can no longer be used for your environment. Add a new VPN configuration to connect to your environment instead.
 
-## Additional Information
+## Related Topics
 
 * [VPN Integration Overview](./vpn-integration-overview.md)
 * [Configuring a VPN Server](./configuring-a-vpn-server.md)

@@ -84,7 +84,7 @@ _Published_ workflow definitions cannot be deleted if they are current associate
 
     ![Deleting a Workflow](./managing-workflows/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Crafting XML Workflow Definitions](../developer-guide/crafting-xml-workflow-definitions.md)
 * [Workflow Designer Overview (Subscription)](./workflow-designer/workflow-designer-overview.md)

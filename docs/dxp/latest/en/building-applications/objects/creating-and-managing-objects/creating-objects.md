@@ -179,7 +179,7 @@ You can still edit and localize labels for objects, fields, and relationships af
 For Liferay 7.4 U25/GA25 and earlier versions, users cannot delete published object definitions or remove relationships included in an object at the time of publishing.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../objects.md)
 * [Adding Fields to Objects](./fields/adding-fields-to-objects.md)

@@ -103,7 +103,7 @@ The Job Scheduler Page's *Scheduled Jobs* tab also lists all jobs scheduled on t
 
 ![View all jobs scheduled using the MessageListener interface.](./using-job-scheduler/images/07.png)
 
-## Additional Information
+## Related Topics
 
 * [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)
 * [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)

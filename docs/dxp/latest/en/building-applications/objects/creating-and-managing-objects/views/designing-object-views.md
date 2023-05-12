@@ -51,7 +51,7 @@ Once saved, the view table displays the selected fields. If desired, you can als
 For 7.4 U21+, you can duplicate a view by clicking its Actions button ( ![Actions Button](../../../../images/icon-actions.png) ) and selecting *Duplicate*. This creates a complete copy of the original view with "(Copy)" appended to it's name. 
 ```
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Adding Fields to Objects](../fields/adding-fields-to-objects.md)

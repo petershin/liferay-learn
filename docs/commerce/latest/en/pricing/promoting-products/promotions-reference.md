@@ -22,7 +22,7 @@ uuid: f3403be8-b40e-40dd-abd1-612452b9b7cd
 | Amount    | Amount by which to modify                                                                                                                                                                  |
 | Priority  | Priority that decides which modifier has precedence when there are multiple modifiers present. The higher the priority value, the higher the precedence (2 greater than 1 greater than 0). |
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Promotions](./introduction-to-promotions.md)
 * [Using the Promotion Base List](./using-the-promotion-base-list.md)

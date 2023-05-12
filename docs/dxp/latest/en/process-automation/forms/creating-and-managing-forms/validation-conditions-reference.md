@@ -25,6 +25,6 @@ There are several out-of-the-box validation conditions that can be used to valid
 | Is less than or equal to | This condition checks whether the value is less than or equal to the specified value. |
 | Is less than | This condition checks whether the value is less than the specified value. |
 
-## Additional Information
+## Related Topics
 
 * [Validating Text and Numeric Field Entries](./validating-text-and-numeric-field-entries.md)

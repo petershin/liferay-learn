@@ -99,7 +99,7 @@ In this tab, the order activity is exclusively on the seller's side. The seller 
 
 ![Transmitted Tab](./orders-menu-reference-guide/images/04.png "Transmitted Tab")
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
 * [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows.md)

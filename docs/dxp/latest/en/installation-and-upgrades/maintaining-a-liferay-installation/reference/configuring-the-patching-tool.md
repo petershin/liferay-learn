@@ -146,7 +146,7 @@ Once you've created a profile, you can use it in your Patching Tool commands. Fo
 ./patching-tool.sh test-server install
 ```
 
-## Additional Information
+## Related Topics
 
 * [Installing Patches](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
 * [Installing the Patching Tool](./installing-the-patching-tool.md)

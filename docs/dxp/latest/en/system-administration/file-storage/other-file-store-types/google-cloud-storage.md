@@ -69,7 +69,7 @@ Follow these steps to use GCS as the default Store for the Liferay instance:
 
 1. Restart the Liferay server.
 
-## Additional Information
+## Related Topics
 
 * [Portal Properties](../../../installation-and-upgrades/reference/portal-properties.md)
 * [File Storage](../../file-storage.md)

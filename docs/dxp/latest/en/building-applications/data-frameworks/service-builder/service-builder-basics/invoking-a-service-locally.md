@@ -155,7 +155,7 @@ You've invoked a Service Builder service from a portlet application. These servi
 
 Now that you know Service Builder basics, you can explore [Defining Entities](../defining-entities.md) to create relationships between entities, localize entities, support queries, and more. Or you can dive into [Business Logic with Service Builder](../business-logic-with-service-builder.md).
 
-## Additional Information
+## Related Topics
 
 * [Portlets](../../../developing-a-java-web-application/reference/portlets.md)
 * [Using MVC](../../../developing-a-java-web-application/using-mvc.md)

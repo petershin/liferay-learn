@@ -267,7 +267,7 @@ Follow these steps to deploy `S1J6BakerImpl`, `S1J6CharlieImpl`, and `S1J6DogImp
 
    Since both `S1J6CharlieImpl` and `S1J6DogImpl` have the same ranking, the service that's registered first takes priority and is bound to `S1J6Portlet`.
 
-## Additional Information
+## Related Topics
 
 * [Module Projects](../fundamentals/module-projects.md)
 * [Using an OSGi Service](../fundamentals/using-an-osgi-service.md)

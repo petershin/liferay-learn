@@ -78,7 +78,7 @@ Liferay's publishing tools support the following types of pages and content:
 Content pages do not support Staging's [page variations](./staging/page-versioning.md) feature.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Publishing Tools](../publishing-tools.md)
 * [Publications](./publications.md)

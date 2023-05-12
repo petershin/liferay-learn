@@ -89,7 +89,7 @@ Liferay Cloud delivers [application metrics](./manage-and-optimize/application-m
 
 ![Use a variety of metrics to keep tabs on your Liferay Cloud services, including your Liferay DXP instances.](./getting-started/images/07.png)
 
-## Additional Information
+## Related Topics
 
 * [Development Requirements](./getting-started/development-requirements.md)
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)

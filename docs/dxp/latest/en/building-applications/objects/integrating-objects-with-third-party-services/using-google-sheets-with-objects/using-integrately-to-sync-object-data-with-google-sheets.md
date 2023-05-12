@@ -65,7 +65,7 @@ Follow these steps to sync Object data to a Google Sheet:
 
    ![Turn on your connection.](./using-integrately-to-sync-object-data-with-google-sheets/images/12.png)
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../../objects.md)
 * [Creating and Managing Objects](../../creating-and-managing-objects.md)

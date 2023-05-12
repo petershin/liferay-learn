@@ -141,7 +141,7 @@ By default, this field is unmapped in Display Page templates. This means the tem
 
 ![The Image Alt Description field defines a Display Page's og:image:alt property](./configuring-seo-and-open-graph/images/10.png)
 
-## Additional Information
+## Related Topics
 
 - [Configuring Your Page's Friendly URL](../../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
 - [Configuring Open Graph](./../../site-settings/configuring-open-graph.md)

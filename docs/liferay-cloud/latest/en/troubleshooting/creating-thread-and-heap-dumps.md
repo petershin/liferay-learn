@@ -224,6 +224,6 @@ rm -r <TIMESTAMPED_FOLDER>/
 
 The [scripts provided here](#choose-a-script-to-generate-the-dumps) save the thread and heap dumps into subfolders with a timestamp that you can use to determine when they were created. You can choose to delete only subfolders with timestamps that are no longer needed for your troubleshooting.
 
-## Additional Information
+## Related Topics
 
 * [Shell Access](./shell-access.md)

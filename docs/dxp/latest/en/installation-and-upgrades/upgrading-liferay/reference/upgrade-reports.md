@@ -82,7 +82,7 @@ Warnings thrown during upgrade process
 ...
 ```
 
-## Additional Information
+## Related Topics
 
 * [Upgrade Basics](../upgrade-basics.md)
 

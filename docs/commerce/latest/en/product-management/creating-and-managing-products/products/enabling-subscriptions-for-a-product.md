@@ -62,7 +62,7 @@ Subscription details are displayed in a Product's display page via the Product D
 
 ![Payment and Delivery Subscription details are displayed in the Product Detail widget.](./enabling-subscriptions-for-a-product/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Managing Subscriptions](../../../order-management/subscriptions/managing-subscriptions.md)
 * [Subscription Administration Reference Guide](../../../order-management/subscriptions/subscription-administration-reference-guide.md)

@@ -49,7 +49,7 @@ Commerce Products are available on all Liferay DXP sites by default, so you must
 
 Commerce Products are now available as Related Assets.
 
-## Additional Information
+## Related Topics
 
 * [Defining Content Relationships](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
 * [Adding a Basic Web Content Article](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)

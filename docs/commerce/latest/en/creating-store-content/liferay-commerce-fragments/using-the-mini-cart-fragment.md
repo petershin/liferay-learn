@@ -74,7 +74,7 @@ This adds the SKU to your cart. If desired, you can add multiple SKUs at once.
 
 SKUs may reach end-of-life (EOL) and be marked as discontinued. Discontinued SKUs may or may not get a replacement. Replacement SKUs get added automatically to the cart when you try adding the discontinued SKU through quick add-to-cart.  -->
 
-## Additional Information
+## Related Topics
 
 [Catalog](../commerce-storefront-pages/catalog.md)
 

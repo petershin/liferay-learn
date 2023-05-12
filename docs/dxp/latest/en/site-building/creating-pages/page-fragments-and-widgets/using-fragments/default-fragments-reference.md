@@ -165,7 +165,7 @@ Using the Menu Display fragment, you can add menus to your content pages. Once d
 | Availability |  |
 -->
 
-## Additional Information
+## Related Topics
 
 * [Using Content Pages](../../using-content-pages.md)
 * [Content Page Editor UI Reference](../../using-content-pages/content-page-editor-ui-reference.md)

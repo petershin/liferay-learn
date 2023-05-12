@@ -85,7 +85,7 @@ These properties instruct the WAB generator to store generated WABs in your inst
 
 Awesome! You can deploy your WAR plugin as a WAB and you know how to save a copy of the WAB to examine it!
 
-## Additional Information
+## Related Topics
 
 * [JARs Excluded from WABs](./jars-excluded-from-wabs.md)
 * [Resolving Third Party Library Package Dependencies](../../liferay-internals/fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)

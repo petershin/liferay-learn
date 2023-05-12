@@ -167,7 +167,7 @@ When reviewing publication changes, file and page previews can accumulate in the
 
 Liferay immediately removes the unnecessary data.
 
-## Additional Information
+## Related Topics
 
 * [Publications Overview](../publications.md)
 * [Enabling Publications](./enabling-publications.md)

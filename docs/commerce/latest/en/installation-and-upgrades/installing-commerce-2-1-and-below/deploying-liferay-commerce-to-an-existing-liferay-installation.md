@@ -45,7 +45,7 @@ To begin using Liferay Commerce:
 
 Liferay Commerce has been deployed and is ready for use. Store administrators can begin building a storefront and populating their catalog.
 
-## Additional Information
+## Related Topics
 
 Note that if the application server is restarted, Liferay Commerce will not execute the `VerifyProcess` commands a second time.
 

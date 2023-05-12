@@ -187,7 +187,7 @@ Properties stored in the DXP database are prioritized over properties set in Por
 
 Go to *Control Panel* at *Configuration* &rarr; *System Settings* to find System Settings. System Settings can be exported as `.config` files to save in source control and use in distributed DXP installations. Portal properties set via System Settings and configuration files are stored in the database. Some properties are applied immediately while others require restarting the server.
 
-## Additional Information
+## Related Topics
 
 * [Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)
 * [Portal Developer Properties](../../liferay-internals/reference/portal-developer-properties.md)

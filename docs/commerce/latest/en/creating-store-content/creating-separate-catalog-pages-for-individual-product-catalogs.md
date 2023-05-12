@@ -64,7 +64,7 @@ You should see products from only one catalog on the page. Repeat the above step
 You can also disable the Custom Filter and make it immutable and invisible using the checkboxes inside the *Configuration* menu. You can use the Custom Filter for a wide range of use cases. See [Custom Filter Examples](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) for more information.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Creating a Catalog Page](./creating-a-catalog-page.md)
 * [Custom Filter Examples](https://learn.liferay.com/dxp/latest/en/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html)

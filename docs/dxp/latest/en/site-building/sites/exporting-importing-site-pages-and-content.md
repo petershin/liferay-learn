@@ -109,7 +109,7 @@ Liferay provides settings for configuring export/import processes as well as Sta
 | Validate Layout References | If checked, publishing or importing content types with text causes Liferay to check the content for links to one of the portal's virtual hosts and ensure they point to a valid Liferay page. Uncheck this if your virtual host has pages not in Liferay. |
 | Validate Missing References | If checked, publishing and import processes cause Liferay to check for missing references. If unchecked, missing reference validation is skipped. As a result, references without existing targets can be published or imported to the target site. |
 
-## Additional Information
+## Related Topics
 
 * [Adding a Site](./adding-a-site.md)
 * [Site Templates](./site-templates.md)

@@ -88,7 +88,7 @@ Product B has a base price of $60, with two price tiers for Tiered Pricing. If t
 
 This creates a price tier ($90) for orders that reach the minimum quantity (20) for the product (*Premium Brake Fluid*) on the price list (*VIP Customers*). Repeat the steps to add successive price tiers to the same product and price list (for other minimum quantities), or to add a price tier to another product and price list.
 
-## Additional Information
+## Related Topics
 
 **Note**: You can view Price Tier entries directly from the Product SKU.
 

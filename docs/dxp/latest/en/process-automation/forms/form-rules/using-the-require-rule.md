@@ -31,7 +31,7 @@ Follow the steps below:
 
 1. Click _Save_ when finished.
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](../creating-and-managing-forms/creating-forms.md)
 * [Using the Show-Hide Rule](./using-the-show-hide-rule.md)

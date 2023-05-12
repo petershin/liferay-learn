@@ -93,7 +93,7 @@ When making POST, PATCH, and PUT API calls for objects that include a picklist f
 }
 ```
 
-## Additional Information
+## Related Topics
 
 * [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md)
 * [Managing Picklist Permissions](./managing-picklist-permissions.md)

@@ -64,7 +64,7 @@ Microservice client extensions provide API endpoints to trigger within Liferay (
 
 See [Microservice Client Extensions](./client-extensions/microservice-client-extensions.md) for more information on the specific types.
 
-## Additional Information
+## Related Topics
 
 * [Working with Client Extensions](./client-extensions/working-with-client-extensions.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

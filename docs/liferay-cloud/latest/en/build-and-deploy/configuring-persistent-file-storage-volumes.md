@@ -79,7 +79,7 @@ Both services will be able to access the specified volume in NFS on the next dep
 
 Volumes persist in your environment even when the services are deleted. You can change the name of the volume in use for your service (or rename the existing volume) to use a new volume, but the old volume's contents will still exist (in either NFS or the service's SSD). You must also remove the contents of any volume yourself if you do not want them to persist.
 
-## Additional Information
+## Related Topics
 
 * [Configuring Your Github Repository](../getting-started/configuring-your-github-repository.md)
 * [Configuring via LCP.json](../reference/configuration-via-lcp-json.md)

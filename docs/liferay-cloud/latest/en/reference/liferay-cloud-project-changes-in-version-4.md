@@ -154,6 +154,6 @@ The new stack does not contain a docker-compose file to spin up a local environm
 
 You can test changes in a local environment, and then migrate them to Liferay Cloud. See [Migrating to Liferay Cloud](../migrating-to-liferay-cloud.md) for more help.
 
-## Additional Information
+## Related Topics
 
 * [Upgrading Your Liferay Cloud Stack](./upgrading-your-liferay-cloud-stack.md)

@@ -53,7 +53,7 @@ You can access these settings under *Segments Service*:
 Please be aware of [Configuration Scope](../../../system-administration/configuring-liferay/understanding-configuration-scope.md). Settings disabled at the system level cannot be enabled at the instance level, but settings enabled at the system level can be disabled at the instance level.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Analytics Cloud Segments](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)
 * [Session Property Vocabularies](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

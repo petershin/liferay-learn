@@ -67,7 +67,7 @@ Follow these steps to sync Object data to a Google Sheet:
 
    If successful, the *Workflow* is activated and ready to use.
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../../objects.md)
 * [Creating and Managing Objects](../../creating-and-managing-objects.md)

@@ -76,7 +76,7 @@ Updating to a new maintenance version is very similar to upgrading to a new majo
 
 The Liferay Commerce instance has been updated. There is no need to reindex and all the data remains unchanged.
 
-## Additional Information
+## Related Topics
 
 Liferay Commerce is built on Liferay Digital Experience Platform. Occasionally, it is necessary to update the core Liferay DXP platform, are a requirement to updating to the latest major, minor, or maintenance version. Fixes to Liferay Commerce are independent from Liferay.
 

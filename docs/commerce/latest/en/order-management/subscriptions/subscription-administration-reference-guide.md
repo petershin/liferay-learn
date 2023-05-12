@@ -111,7 +111,7 @@ The _Payments_ tab tracks the order's payment history.
 | TXN ID | This is the transaction ID. |
 | Amount | This refers to the order's total amount. |
 
-## Additional Information
+## Related Topics
 
 * [Enabling a Subscription](../../product-management/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
 * [Managing Subscriptions](./managing-subscriptions.md)

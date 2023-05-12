@@ -53,7 +53,7 @@ To access the page tree,
 
    ![You can add, preview, configure, or reorder Pages from the Page Tree menu.](./managing-site-navigation/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Adding a Page to a Site](../creating-pages/adding-pages/adding-a-page-to-a-site.md)
 * [Using Navigation Menus](./using-the-navigation-menus-application.md)

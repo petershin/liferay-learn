@@ -104,7 +104,7 @@ Attempting to publish a form with invalid mappings displays an error message tha
 | Rich Text | Rich Text |
 | Text (*previously String*) | Text, Multiple Selection, Grid, Color |
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../objects.md)
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)

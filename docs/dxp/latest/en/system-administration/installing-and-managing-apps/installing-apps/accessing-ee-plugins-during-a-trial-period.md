@@ -27,7 +27,7 @@ During your trial period, plugin management for EE plugins is only available in 
 EE plugin source code is only available to you after you get an official enterprise subscription.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Installing Apps](../installing-apps.md)
 * [Renewing Apps](../managing-apps/renewing-apps.md)

@@ -84,7 +84,7 @@ Here are the features moved to Maintenance Mode in 7.3:
 While Export/Import was previously listed under maintenance mode, Liferay continues to improve the Export/Import application.
 ```
 
-## Additional Information
+## Related Topics
 
 * [7.3 Breaking Changes](../../../liferay-internals/reference/7-3-breaking-changes.md)
 * [7.3 Default Setting Changes](./default-setting-changes-in-7-3.md)

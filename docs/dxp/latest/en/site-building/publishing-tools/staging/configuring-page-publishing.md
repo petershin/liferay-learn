@@ -23,7 +23,7 @@ Follow these steps to configure child/parent publishing for your system:
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Understanding the Publishing Process](./understanding-the-publishing-process.md)
 * [Page Versioning](./page-versioning.md)

@@ -41,7 +41,7 @@ To configure the deletion interval,
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Creating Notification Templates](./creating-notification-templates.md)
 * [Configuring Personal Notifications](./configuring-personal-notifications.md)

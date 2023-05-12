@@ -27,6 +27,6 @@ Follow these steps:
 
 Users with the proper permissions can read/write SharePoint documents and folders, perform document check-in/check-out, download documents, and more. Each action performed in one context is propagated in the other.
 
-## Additional Information
+## Related Topics
 
 * [Enabling Liferay's REST Connector to SharePoint](./enabling-liferays-rest-connector-to-sharepoint.md)

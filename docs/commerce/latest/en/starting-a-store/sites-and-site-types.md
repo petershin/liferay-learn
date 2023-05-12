@@ -39,7 +39,7 @@ To set your site's type, navigate to _Site Administration_ → _Commerce_ → _S
 
 Changing a site's type also changes which accounts appear in its Accounts widget. If an instance contains business accounts but a site's type is set to B2C, those accounts still exist in the database but do not appear in the Accounts widget and are inaccessible to users.
 
-## Additional Information
+## Related Topics
 
 * [Store Setup Overview](../starting-a-store/store-setup-overview.md)
 * [Building a Site](https://learn.liferay.com/dxp/latest/en/site-building.html)

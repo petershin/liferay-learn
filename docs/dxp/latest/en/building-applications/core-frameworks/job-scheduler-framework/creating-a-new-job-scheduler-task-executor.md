@@ -110,7 +110,7 @@ The module is declared an OSGi `@Component` and defines two properties: `dispatc
 
 Following the `@Component` annotation, the module extends the `BaseDispatchTaskExecutor` abstract class and overrides the `doExecute` method. This method uses the `LogFactoryUtil` to display an INFO message in the console's logs.
 
-## Additional Information
+## Related Topics
 
 * [Understanding the Job Scheduler Framework](./understanding-the-job-scheduler-framework.md)
 * [Using Job Scheduler](./using-job-scheduler.md)

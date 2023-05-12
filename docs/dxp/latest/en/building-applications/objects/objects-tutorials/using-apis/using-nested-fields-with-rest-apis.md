@@ -230,7 +230,7 @@ The provided GET method calls a URL with the `nestedFields` and `nestedFieldsDep
 
 `nestedFieldsDepth`: Determines the depth of entries you want to include and can be set between 0-5.
 
-## Additional Information
+## Related Topics
 
 * [Object API Basics](./object-api-basics.md)
 * [Using Batch APIs](./using-batch-apis.md)

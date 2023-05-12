@@ -171,7 +171,7 @@ Once saved, Liferay creates a widget named H5V7-Custom-Element, which you can de
 
 ![Deploy the H5V7-Custom-Element widget to site pages.](./creating-a-basic-custom-element/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Front-end Client Extensions](../../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)

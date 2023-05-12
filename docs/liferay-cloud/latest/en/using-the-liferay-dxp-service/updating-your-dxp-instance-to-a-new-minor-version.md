@@ -113,7 +113,7 @@ Follow these steps:
 
 The updated `liferay` service starts back up with the desired number of nodes after the final deployment.
 
-## Additional Information
+## Related Topics
 
 * [Deploying to the Liferay Service](./deploying-to-the-liferay-service.md)
 * [Installing Hotfixes](./deploying-to-the-liferay-service.md#deploying-hotfixes)

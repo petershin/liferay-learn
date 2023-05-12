@@ -9,6 +9,6 @@ Liferay takes security on the cloud very seriously and has published the followi
 
 * [Liferay Cloud Data Security & Protection](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Cloud+Data+Security+and+Protection.pdf/78ce7065-9787-1fb2-9c7b-6d7c13f4a3e6?t=1564674972483)
 
-## Additional Information
+## Related Topics
 
 For any additional questions or concerns about information security, please open a [Help Center ticket](https://liferay-support.zendesk.com/agent/).

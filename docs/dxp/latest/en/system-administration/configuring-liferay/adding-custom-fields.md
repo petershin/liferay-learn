@@ -96,6 +96,6 @@ The configuration options you have will also depend on the field type you choose
 
 **Delete:** You can delete the custom field.
 
-## Additional Information
+## Related Topics
 
 * [Adding Custom Fields for Users](../../users-and-permissions/users/adding-custom-fields-to-users.md)

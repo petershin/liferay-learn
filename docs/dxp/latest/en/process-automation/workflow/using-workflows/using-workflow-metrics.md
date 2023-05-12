@@ -148,7 +148,7 @@ Following a similar set of steps, you can also update the due date (![Calendar](
 
 ![Transition multiple workflow items at once to a new step in the workflow.](./using-workflow-metrics/images/06.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating Tasks in the Workflow Designer](https://help.liferay.com/hc/articles/360028821932-Creating-Tasks-in-the-Workflow-Designer)
 * [Workflow Task Nodes](../developer-guide/workflow-task-node-reference.md)

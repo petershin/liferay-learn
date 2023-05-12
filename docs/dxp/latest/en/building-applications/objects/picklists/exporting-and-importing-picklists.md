@@ -29,7 +29,7 @@ You can transfer picklists between environments as JSON files using Liferay's ex
 
    ![Enter a name for the list and select a picklist to import.](./exporting-and-importing-picklists/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Using Picklists](./using-picklists.md)
 * [Picklist API Basics](./picklists-api-basics.md)

@@ -47,7 +47,7 @@ This creates a new widget template, which you can apply to the corresponding typ
 
 The widget now uses the custom template. By using more advanced widget template scripts, you can further enhance the capabilities of your widgets.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Widget Template](../../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md)
 * [Configuring Widget Look and Feel](../../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/configuring-widget-look-and-feel.md)

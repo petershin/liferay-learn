@@ -69,7 +69,7 @@ For example, here's how to include a different version of a Spring Framework pac
 
 You are now including the version of the JAR your WAB requires.
 
-## Additional Information
+## Related Topics
 
 * [Exported Third Party Packages](../../liferay-internals/reference/exported-third-party-packages.md)
 * [Configuring Dependencies](../../liferay-internals/fundamentals/configuring-dependencies.md)

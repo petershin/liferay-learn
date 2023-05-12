@@ -59,7 +59,7 @@ Minor version updates of Java can be applied in rolling restarts. Major version 
 
 All rolling restart eligible updates can be applied using the rolling restart steps listed earlier. Other updates must be done differently as described next.
 
-## Additional Information
+## Related Topics
 
 * [Blue Green Deployment](./blue-green-deployments.md)
 * [Clustering for High Availability](../../setting-up-liferay/clustering-for-high-availability.md)

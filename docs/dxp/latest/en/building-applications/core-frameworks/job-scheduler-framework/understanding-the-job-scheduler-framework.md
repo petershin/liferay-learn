@@ -38,7 +38,7 @@ The [`DispatchLog`](https://github.com/liferay/liferay-portal/blob/master/module
 
 The [`DispatchConfigurator`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-service/src/main/java/com/liferay/dispatch/internal/messaging/DispatchConfigurator.java) class defines properties of the Job Scheduler framework, such as the `DispatchMessageListener` destination, `executorService` queue size and thread pool, `RejectedExecutionHandler`, and more.
 
-## Additional Information
+## Related Topics
 
 * [Using Job Scheduler](./using-job-scheduler.md)
 * [Job Scheduler UI Reference](./job-scheduler-ui-reference.md)

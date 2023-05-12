@@ -69,7 +69,7 @@ To give other users access to a newly created page template follow these steps:
 
 Users with the roles specified now have access to the page template.
 
-## Additional Information
+## Related Topics
 
 ### Propagating Changes for Widget Pages
 
@@ -91,7 +91,7 @@ Staging functionality is in [maintenance mode](../../../installation-and-upgrade
 
 If staging has been enabled, changes to the Widget Page Template are automatically propagated to the *staged* page. These changes must still be approved before the page is published to the live site. For this reason, the automatic propagation of Widget Page Template changes to the staged page cannot be turned off and the *Inherit Changes* selector does not appear.
 
-## Additional Information
+## Related Topics
 
 - [Adding a Page to a Site](./adding-a-page-to-a-site.md)
 - [Exporting and Importing Page Templates](./exporting-and-importing-page-templates.md)

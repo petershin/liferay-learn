@@ -65,7 +65,7 @@ Users can select the template when [creating a publication](./creating-and-manag
 
 ![Users can select the template when creating a publication.](./using-publication-templates/images/07.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating and Managing Publications](./creating-and-managing-publications.md)
 * [Collaborating on Publications](./collaborating-on-publications.md)

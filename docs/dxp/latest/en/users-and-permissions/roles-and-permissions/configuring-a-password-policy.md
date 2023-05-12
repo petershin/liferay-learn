@@ -128,6 +128,6 @@ Once you have your `portal-ext.properties` file, place it in the [`[Liferay Home
 | `passwords.default.policy.reset.ticket.max.age` | 86400 | How long a password reset link is valid for. Time is in seconds |
 | `passwords.default.policy.warning.time` | 86400 | How long before a password expires that the user will be notified. Time is in seconds |
 
-## Additional Information
+## Related Topics
 
 * [Authentication Basics](../../installation-and-upgrades/securing-liferay/authentication-basics.md)

@@ -379,7 +379,7 @@ AND
 futureDates(fieldName, startsFrom, responseDate, years, 0, endsOn, responseDate, years, 65)
 ```
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Adding Fields to Objects](../fields/adding-fields-to-objects.md)

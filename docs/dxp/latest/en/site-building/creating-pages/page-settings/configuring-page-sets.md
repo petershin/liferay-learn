@@ -117,6 +117,6 @@ In Liferay DXP 7.3, you can access the same settings from the _Page Tree_ menu:
 
     ![You can access the same Page Sets options from the Page Tree menu.](./configuring-page-sets/images/07.png)
 
-## Additional Information
+## Related Topics
 
 * [Configuring Individual Pages](./configuring-individual-pages.md)

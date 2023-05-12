@@ -33,6 +33,6 @@ By default, the services in Liferay Cloud are pre-configured to use the `Rolling
 }
 ```
 
-## Additional Information
+## Related Topics
 
 * [Understanding Deployment Types](./understanding-deployment-types.md)

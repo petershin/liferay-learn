@@ -51,7 +51,7 @@ When a user attempts to access the source URL, Liferay tests the patterns agains
 
 * If no alias is found, Liferay tests each redirect pattern in sequence until all patterns are exhausted or one of them matches. Liferay redirects users to the first match.
 
-## Additional Information
+## Related Topics
 
 * [Managing Site URLs](../../managing-site-urls.md)
 * [Using Alias Redirects](./using-alias-redirects.md)

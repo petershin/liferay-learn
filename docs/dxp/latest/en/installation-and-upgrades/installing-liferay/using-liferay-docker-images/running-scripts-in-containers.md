@@ -131,7 +131,7 @@ inside some-pre-configure-script.sh
 
 Now you know how to execute scripts in all parts of the container's lifecycle.
 
-## Additional Information
+## Related Topics
 
 * [Using Liferay Docker Images](../using-liferay-docker-images.md)
 * [Container Lifecycle and API](./container-lifecycle-and-api.md)

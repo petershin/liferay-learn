@@ -139,7 +139,7 @@ It implements the round trip back to View 1.
 
 Now you know how to render portlet views. Next, you can perform actions in your portlet or render your views using separate `RenderCommand` classes.
 
-## Additional Information
+## Related Topics
 
 * [MVC Render Command](./mvc-render-command.md)
 * [MVC Action Command](./mvc-action-command.md)

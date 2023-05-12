@@ -66,7 +66,7 @@ The price list is now associated with the product.
 
 The product (_Premium Brake Fluid_) is now added to the price list (_VIP Customers_). Repeat the steps to add additional products to this price list or another list.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Price List](./creating-a-price-list.md)
 * [Using Price Tiers](./using-price-tiers.md)

@@ -73,7 +73,7 @@ Follow these steps to sync Object data to a Google Sheet:
 
     ![Define an action that sends a request to the webhook endpoint whenever an entry is added.](./using-ifttt-to-sync-object-data-with-google-sheets/images/15.png)
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../../objects.md)
 * [Creating and Managing Objects](../../creating-and-managing-objects.md)

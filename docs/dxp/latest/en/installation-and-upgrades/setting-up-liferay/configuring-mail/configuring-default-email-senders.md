@@ -58,7 +58,7 @@ Attempts to use the above emails result in a logged `WARN` trace:
 ```bash
 Email xxx will be ignored because it is included in mail.send.blacklist
 ```
-## Additional Information
+## Related Topics
 
 * [Configuring Mail](../configuring-mail.md)
 * [Alternative Email Configuration Methods](./alternative-email-configuration-methods.md)

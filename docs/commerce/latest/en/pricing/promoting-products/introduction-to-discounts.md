@@ -63,7 +63,7 @@ You can create discount levels for applying multiple discounts to products and o
 
 When editing price entries, you can set alternative discounts that override those set in the Discounts application. These discounts use the percentage type. However, they do not support rules or eligibility restrictions. If you want to maintain restrictions, do not use discount overrides.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Pricing](../introduction-to-pricing.md)
 * [Creating a Discount](./creating-a-discount.md)

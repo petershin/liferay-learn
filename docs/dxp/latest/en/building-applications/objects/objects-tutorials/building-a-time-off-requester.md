@@ -245,7 +245,7 @@ Once requests are added and related to employee entries, you can view them in th
 
 ![View an employee's related requests in the Time Off Requests tab.](./building-a-time-off-requester/images/12.png)
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../objects.md)
 * [Creating Objects](../creating-and-managing-objects/creating-objects.md)

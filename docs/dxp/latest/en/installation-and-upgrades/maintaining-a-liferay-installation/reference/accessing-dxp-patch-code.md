@@ -110,7 +110,7 @@ Even though all approved subscribers access the same repository, your GitHub use
 
 **(3) For Wikis:** The official Liferay DXP documentation is on <https://learn.liferay.com> and the support Knowledge Base is on the [Help Center](https://help.liferay.com/hc/en-us/). We don't use the `liferay-dxp` repository wiki. If you want to suggest article changes or request documentation on a topic, please notify the Liferay Support team by [creating a support ticket](https://help.liferay.com/hc/en-us/requests/new) in the Help Center.
 
-## Additional Information
+## Related Topics
 
 * [About Open Source at Liferay](https://liferay.dev/open-source)
 * [Getting Started with GitHub and Git](https://help.github.com/en/github/getting-started-with-github)

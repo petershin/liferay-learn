@@ -89,7 +89,7 @@ To select a different application display template (ADT) or create your own, cli
 
 **Scope:** Specify the blog instance the widget displays: the current Site's blog (default), the global blog, or the page's blog. 
 
-## Additional Information
+## Related Topics
 
 * [Adding Blog Entries](./adding-blog-entries.md)
 * [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md)

@@ -119,6 +119,6 @@ By default, there are four kinds of actions that can be configured for mobile fa
 Liferay was designed from the ground up to be responsive and adapt to any device that might be accessing it. Before creating new themes or forcing a layout template change, you should test how the Site behaves out-of-the-box. Certain features, like URL Redirects, can be disruptive and frustrating if used improperly.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Building a Responsive Site](./building-a-responsive-site.md)

@@ -58,6 +58,6 @@ When a user gets a request to join a site, it appears in the *Requests List* tab
 
 ![Managing Multiple Notification status](./managing-notifications-and-requests/images/06.png)
 
-## Additional Information
+## Related Topics
 
 * [Mentioning Users](./mentioning-users.md)

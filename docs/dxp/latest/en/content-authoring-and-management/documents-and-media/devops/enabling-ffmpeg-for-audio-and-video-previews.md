@@ -25,7 +25,7 @@ Once installed, follow these steps to configure Documents and Media to use FFmpe
 
 Once configured, audio and video previews are automatically generated for audio and video files at upload or update.
 
-## Additional Information
+## Related Topics
 
 * [Managing Files](../uploading-and-managing/managing-files.md)
 * [Configuring Documents and Media Previews](./configuring-documents-and-media-previews.md)

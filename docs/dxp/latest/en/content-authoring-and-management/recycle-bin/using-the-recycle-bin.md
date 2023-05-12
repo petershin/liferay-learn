@@ -77,7 +77,7 @@ A status message appears indicating whether your request was successful.
 
 To delete all recycled items, click on the *Actions* button (![Actions](../../images/icon-actions.png)) in the Application bar, and select *Empty the Recycle Bin*.
 
-## Additional Information
+## Related Topics
 
 * [Recycle Bin Overview](./recycle-bin-overview.md)
 * [Configuring the Recycle Bin](./configuring-the-recycle-bin.md)

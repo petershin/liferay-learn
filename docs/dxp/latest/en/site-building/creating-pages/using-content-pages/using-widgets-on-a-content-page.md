@@ -57,7 +57,7 @@ Although you can still access basic configuration options and permissions for wi
 * *Configuration Templates*: Configuration Templates that save the widget's configuration settings to a template are only available on Widget Pages.
 * *Export/Import*: You can only export/import application data for widgets on Widget Pages.
 
-## Additional Information
+## Related Topics
 
 - [Using Content Pages](../using-content-pages.md)
 - [Adding Elements to Content Pages](./adding-elements-to-content-pages.md)

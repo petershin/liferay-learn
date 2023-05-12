@@ -59,7 +59,7 @@ Go to your site and open the product page for u-joint. It should have a base dis
 Overriding discounts for a price entry overrides all discount levels targeting the SKU. See [Overriding Discounts](./introduction-to-discounts.md#overriding-discounts) for more information.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Pricing](../introduction-to-pricing.md)
 * [Introduction to Discounts](./introduction-to-discounts.md)

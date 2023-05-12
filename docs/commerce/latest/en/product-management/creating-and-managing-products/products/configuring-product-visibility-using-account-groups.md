@@ -63,7 +63,7 @@ To filter products by Account Groups:
 
 This product is now visible to only the accounts that are customer accounts of these account groups.
 
-## Additional Information
+## Related Topics
 
 * [Configuring Product Visibility Using Channels](../../../store-management/channels/configuring-product-visibility-using-channels.md)
 * [Creating a New Account Group](../../../users-and-accounts/account-management/creating-a-new-account-group.md)

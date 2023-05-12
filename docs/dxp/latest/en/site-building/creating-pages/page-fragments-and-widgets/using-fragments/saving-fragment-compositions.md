@@ -177,7 +177,7 @@ When you configure one or more Containers inside another Container Fragment, you
 
     ![Select the Container grouping the page elements you want to style using the Flex display options.](./saving-fragment-compositions/images/20.png)
 
-## Additional Information
+## Related Topics
 
 * [Using Fragments](../using-fragments.md)
 * [Managing Fragments](./managing-fragments.md)

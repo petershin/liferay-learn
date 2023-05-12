@@ -44,6 +44,6 @@ Shipping methods may be restricted by country or region. To learn more, see [App
 
 <br></br>
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Shipments](../order-management/shipments/introduction-to-shipments.md)

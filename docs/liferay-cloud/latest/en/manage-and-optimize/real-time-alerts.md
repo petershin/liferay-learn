@@ -45,7 +45,7 @@ Filter and manage alerts using the buttons above the table:
 
 ![Real Time Alerts](./real-time-alerts/images/02.png)
 
-## Additional Information
+## Related Topics
 
 * [Application Metrics](./application-metrics.md)
 * [Quotas](./quotas.md)

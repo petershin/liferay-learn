@@ -47,6 +47,6 @@ Netvibes offers a similar environment where users can log in, create their own p
 
 Go to *Netvibes* on the Sharing tab, enable the *Allow users to add [application-name] to Netvibes pages* selector. You can then use the provided URL to create a custom Netvibes widget based on the instance of the Liferay widget that you're using.
 
-## Additional Information
+## Related Topics
 
 - [Setting Widget Permissions](./setting-widget-permissions.md)

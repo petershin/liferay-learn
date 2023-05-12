@@ -84,7 +84,7 @@ In Liferay DXP 7.3 and earlier, Manage All Accounts and Manage Order Prices were
 | Manage Subscriptions | Ability to access and modify Subscription entities |
 | Permissions | Ability to view and modify permissions for Subscription entities |
 
-## Additional Information
+## Related Topics
 
 * [Processing an Order](../../order-management/orders/processing-an-order.md)
 * [Shipments Management Reference Guide](../../order-management/shipments/shipments-management-reference-guide.md)

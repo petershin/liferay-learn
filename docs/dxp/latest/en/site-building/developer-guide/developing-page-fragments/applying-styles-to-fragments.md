@@ -54,7 +54,7 @@ You can add the `data-lfr-styles` attribute using your preferred method for edit
 * **Using the [Fragments Editor](./using-the-fragments-editor.md) in the UI**: make the change in the HTML window of the editor
 * **Using the [Fragments Toolkit](./using-the-fragments-toolkit.md)**: make the change in the fragment's `index.html` file
 
-## Additional Information
+## Related Topics
 
 * [Developing Fragments](./developing-fragments-intro.md)
 * [Using the Fragments Editor](./using-the-fragments-editor.md)

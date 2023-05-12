@@ -159,7 +159,7 @@ If you want to explore synchronous messaging using *default* mode, see [Using De
 
 If you want to continue processing immediately after sending a message, see [Using Asynchronous Messaging](./using-asynchronous-messaging.md).
 
-## Additional Information
+## Related Topics
 
 * [Message Bus](../message-bus.md)
 * [Listening for Messages](./listening-for-messages.md)

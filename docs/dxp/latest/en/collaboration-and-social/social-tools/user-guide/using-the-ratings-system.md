@@ -57,6 +57,6 @@ Not every widget that supports content ratings can have ratings enabled or disab
 
 <!-- TODO: (When developer-oriented article available) You can also enable ratings for your own applications by adding just a few lines of code. See the article on [adding support for ratings](link) to your content widgets for more information. -->
 
-## Additional Information
+## Related Topics
 
 * [Using the Activities Widget](./using-the-activities-widget.md)

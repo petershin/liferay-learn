@@ -98,7 +98,7 @@ To set product prices and quantities:
 
 Once you have set the product's price and SKUs, see the sections above on how to add Product Options, Specifications or upload Product Images.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Grouped Product](./creating-a-grouped-product.md)
 * [Creating a Virtual Product](./creating-a-virtual-product.md)

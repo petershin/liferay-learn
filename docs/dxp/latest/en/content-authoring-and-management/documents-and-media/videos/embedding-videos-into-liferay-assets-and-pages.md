@@ -51,7 +51,7 @@ Use the External Video fragment to embed YouTube, Vimeo, Facebook, and Twitch vi
 The External Video fragment does not support video controls for autoplay, loop, or mute. If you need these controls, use the Video URL fragment.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Creating External Video Shortcuts](./creating-external-video-shortcuts.md)
 * [Creating Video Shortcut Providers](../developer-guide/creating-video-shortcut-providers.md)

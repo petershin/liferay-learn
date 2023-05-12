@@ -27,7 +27,7 @@ Place the Dropdown Fragment inside a Grid Fragment to observe the differences be
 
 ![You can define the drop zone size in the Dropdown panel using the Panel Type options.](./creating-dropdown-menus-with-fragments/images/03.gif)
 
-## Additional Information
+## Related Topics
 
 * [Using Fragments](../using-fragments.md)
 * [Configuring Fragments](./configuring-fragments.md)

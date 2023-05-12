@@ -142,7 +142,7 @@ Once your build has successfully deployed and your `dev` environment's Liferay s
 
    ![Verify the webserver node is displayed at the bottom of the Home Page.](./deploying-changes-via-the-cli-tool/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Command-Line Tool](../reference/command-line-tool.md)
 * [Overview of the Liferay Cloud Development Workflow](./overview-of-the-liferay-cloud-deployment-workflow.md)

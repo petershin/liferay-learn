@@ -60,7 +60,7 @@ Set a URL, page reference, or asset mapping to add a clickable link to the selec
 
 ![Access a sub-element's Link settings in the Browser panel of the editing sidebar menu.](./fragment-sub-elements-reference/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Configuring Fragments](../configuring-fragments.md)
 * [General Settings Reference](./general-settings-reference.md)

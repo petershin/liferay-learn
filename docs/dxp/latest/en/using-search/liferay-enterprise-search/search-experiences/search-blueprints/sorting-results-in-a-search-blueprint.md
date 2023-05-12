@@ -150,7 +150,7 @@ This example sorts by an object integer field:
 }
 ```
 
-## Additional Information
+## Related Topics
 
 * [Search Blueprints Configuration Reference](search-blueprints-configuration-reference.md)
 * [Sorting Search Results](../../../search-pages-and-widgets/search-results/sorting-search-results.md)

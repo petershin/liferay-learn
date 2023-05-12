@@ -19,7 +19,7 @@ The Search Bar widget is scoped to include *Everything*. This is necessary for d
 Also, the Search Options widget is set to *Allow Empty Searches*. This allows customers to browse and filter all content visible to the Channel.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)

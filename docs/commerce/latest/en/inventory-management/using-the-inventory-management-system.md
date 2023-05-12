@@ -121,7 +121,7 @@ You can view this information in the changelog:
 
 ![View different events associated to the inventory of the selected SKU.](./using-the-inventory-management-system/images/07.png)
 
-## Additional Information
+## Related Topics
 
 * [Inventory Management Reference Guide](./inventory-management-reference-guide.md)
 * [Warehouse Reference Guide](./warehouse-reference-guide.md)

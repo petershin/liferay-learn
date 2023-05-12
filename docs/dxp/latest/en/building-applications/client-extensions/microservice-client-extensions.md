@@ -59,7 +59,7 @@ Use the `type` value in your `client-extension.yaml` file to specify a notificat
 type: notificationType
 ```
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Client Extensions](../client-extensions.md)
 * [Configuring Client Extensions in `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

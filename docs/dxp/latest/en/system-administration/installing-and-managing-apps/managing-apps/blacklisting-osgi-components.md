@@ -52,7 +52,7 @@ To temporarily re-enable a blacklisted component, remove its name from the Compo
 
 Congratulations! Now you can manage multiple components using a simple list.
 
-## Additional Information
+## Related Topics
 
 * [Blacklisting Apps](./blacklisting-apps.md)
 * [Managing Apps](./using-the-app-manager.md)

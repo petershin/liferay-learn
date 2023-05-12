@@ -187,7 +187,7 @@ Here you can add custom `<meta>` tags to the `<head>` of a Page. These tags are 
 
 ![Add custom meta tags to a Page's head using the Property and Content fields.](./configuring-individual-pages/images/24.png)
 
-## Additional Information
+## Related Topics
 
 * [Adding Pages to a Site](./../adding-pages/adding-a-page-to-a-site.md)
 * [Using Content Pages](../using-content-pages.md)

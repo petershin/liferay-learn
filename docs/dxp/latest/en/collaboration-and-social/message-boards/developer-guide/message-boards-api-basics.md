@@ -566,7 +566,7 @@ The following are representative examples of the tutorial's Java commands.
    :lines: 4-33
 ```
 
-## Additional Information
+## Related Topics
 
 * [Getting Started with Message Boards](../user-guide/getting-started-with-message-boards.md)
 * [Message Boards Configuration Reference](./../user-guide/message-boards-configuration-reference.md)

@@ -135,7 +135,7 @@ A page's header and footer are not listed in the Selection panel hierarchy, beca
 
 In the Contents panel (![Contents](../../../images/icon-list-ul.png)), you can view, edit, and manage all web content on the page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
 
-## Additional Information
+## Related Topics
 
 - [Using Content Pages](../using-content-pages.md)
 - [Adding Elements to Content Pages](./adding-elements-to-content-pages.md)

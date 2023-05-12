@@ -18,6 +18,6 @@ This article describes configuration terms for Liferay Commerce Connector to Pun
 | Punch out Access Token | A single-use token used to auto-login the Punch out user |
 | Punch out vendor | The third-party vendor that connects punch out catalogs with buyer procurement systems |
 
-## Additional Information
+## Related Topics
 
 * [Liferay Commerce Connector to PunchOut2Go](./liferay-commerce-connector-to-punchout2go.md)

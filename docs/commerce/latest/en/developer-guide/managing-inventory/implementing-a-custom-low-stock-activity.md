@@ -143,7 +143,7 @@ j1e4-commerce-low-stock-activity=J1E4 Commerce Low Stock Activity
 
 Congratulations! You now know the basics for implementing the `CommerceLowStockActivity` interface and have added a new low stock activity to Liferay Commerce.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Simple Product](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

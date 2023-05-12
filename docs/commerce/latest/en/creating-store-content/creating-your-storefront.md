@@ -23,7 +23,7 @@ The following types of pages may be created:
 | [Search](./commerce-storefront-pages/search.md) | Allows users to search | _Search_, _Tag_, _Category Facet_, _Option Facet_, _Specification Facet_ |
 | Spare Parts Finder / BOM| Displays a list of materials that make up a particular product | _Commerce BOM_ |
 
-## Additional Information
+## Related Topics
 
 * [Widget Reference Guide](./liferay-commerce-widgets/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)

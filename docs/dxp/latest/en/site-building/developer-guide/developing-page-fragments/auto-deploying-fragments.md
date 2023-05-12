@@ -126,7 +126,7 @@ Follow these steps to modify the fragment set and redeploy it:
 
 Great! Now you know how to work with a fragment set locally, specify a site for it, and import it using auto-deployment.
 
-## Additional Information
+## Related Topics
 
 * [Including Default Resources with Fragments](./including-default-resources-with-fragments.md)
 * [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)

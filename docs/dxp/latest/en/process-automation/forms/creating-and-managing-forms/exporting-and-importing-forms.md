@@ -48,7 +48,7 @@ The Forms `LAR` file has been downloaded. You can import this to another Site.
 
 The Forms from the Guest Site are imported into this Site.
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](./creating-forms.md)
 * [Forms Configuration Reference](./forms-configuration-reference.md)

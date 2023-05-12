@@ -157,7 +157,7 @@ The following are examples of the tutorial's cURL commands.
    :language: bash
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using Batch APIs](./using-batch-apis.md)
 * [Using Nested Fields with REST APIs](./using-nested-fields-with-rest-apis.md)

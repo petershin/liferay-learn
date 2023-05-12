@@ -19,7 +19,7 @@ The *Page Menu* widget presents links that can include links to other [Wiki Page
 
     ![The modal window closes, and the configured Page Menu is displayed.](./using-the-page-menu-widget/images/03.png)
 
-## Additional Information
+## Related Topics
 
 - [Getting Started with Wikis](./getting-started-with-wikis.md)
 - [Creating Wiki Pages](./creating-wiki-pages.md)

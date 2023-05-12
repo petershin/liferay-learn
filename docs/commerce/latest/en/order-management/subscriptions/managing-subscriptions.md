@@ -108,7 +108,7 @@ Commerce Orders and Subscriptions are managed in the _Control Panel._
 
 Once the order has been accepted, it appears on the [Subscriptions menu](./subscription-administration-reference-guide.md).
 
-## Additional Information
+## Related Topics
 
 * [Subscription Management Reference Guide](./subscription-administration-reference-guide.md)
 * [Enabling Subscriptions for a Product](../../product-management/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)

@@ -19,7 +19,7 @@ To apply a restriction:
 
 Your store is now restricted from shipping to those countries. Repeat these steps for all the other shipping methods such as _Variable Rate_ and _FedEx_. If you are customizing Liferay Commerce by adding additional carrier shipping methods (UPS, DHL, and so forth) through an extension point, you may want to include the same function to restrict delivery by region.
 
-## Additional Information
+## Related Topics
 
 * [Using the Flat Rate Shipping Method](./using-the-flat-rate-shipping-method.md)
 * [Variable Rate](./using-the-variable-rate-shipping-method.md)

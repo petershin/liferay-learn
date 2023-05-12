@@ -99,7 +99,7 @@ Follow these steps to automatically translate fields:
 
 1. Click *Save as Draft* or *Publish* when finished.
 
-## Additional Information
+## Related Topics
 
 * [Translating Web Content](./translating-web-content.md)
 * [Translating Content Pages](./translating-content-pages.md)

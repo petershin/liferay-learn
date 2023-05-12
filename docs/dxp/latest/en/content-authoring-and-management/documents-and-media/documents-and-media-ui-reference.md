@@ -111,7 +111,7 @@ Using email notifications requires a connected mail server. See `Configuring Mai
 
 ![Compose the email sent when existing documents are updated.](./documents-and-media-ui-reference/images/16.png)
 
-## Additional Information
+## Related Topics
 
 * [Documents and Media](../documents-and-media.md)
 * [Exporting/Importing Site Pages and Contents](../../site-building/sites/exporting-importing-site-pages-and-content.md)

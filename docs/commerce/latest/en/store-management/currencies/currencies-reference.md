@@ -22,7 +22,7 @@ To manage currencies, navigate to _Control Panel_ → _Commerce_ → _Settings_ 
 | Priority | Order in which the currency is displayed in the table; the higher the number, the further down it is displayed |
 | Active | Toggle to activate this currency |
 
-## Additional Information
+## Related Topics
 
 * [Adding a New Currency](./adding-a-new-currency.md)
 * [Mercanet](../configuring-payment-methods/mercanet.md)

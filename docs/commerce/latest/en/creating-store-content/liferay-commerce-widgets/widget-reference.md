@@ -39,7 +39,7 @@ The following article documents all the Liferay Commerce Widgets and their funct
 | Wish List Content | This widget displays the content of a wish list. |
 | Wish Lists | This widget displays all of an Account's wish lists. |
 
-## Additional Information
+## Related Topics
 
 * [Creating Your Storefront](../creating-your-storefront.md)
 * [Creating a Catalog Page](../creating-a-catalog-page.md)

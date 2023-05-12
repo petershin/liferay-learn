@@ -187,7 +187,7 @@ Each version displays the author of the version, the time of its creation, and a
 
 ![Click the Versions tab to view the version history for a content dashboard item.](./content-dashboard-interface/images/11.png)
 
-## Additional Information
+## Related Topics
 
 * [About the Content Dashboard](./about-the-content-dashboard.md)
 * [About the Content Performance Tool](../page-performance-and-accessibility/about-the-content-performance-tool.md)

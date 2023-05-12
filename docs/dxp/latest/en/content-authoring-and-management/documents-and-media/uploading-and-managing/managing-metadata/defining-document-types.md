@@ -88,7 +88,7 @@ When users create new files of the document type, they're presented with metadat
 
 ![Creating a new Picture Document](./defining-document-types/images/13.png)
 
-## Additional Information
+## Related Topics
 
 * [Documents and Media](../../../documents-and-media.md)
 * [Defining Metadata Sets](./defining-metadata-sets.md)

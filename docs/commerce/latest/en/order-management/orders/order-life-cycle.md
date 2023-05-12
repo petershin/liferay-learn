@@ -29,7 +29,7 @@ When the seller advances an order from pending to transmitted, the order is sent
 
 The seller completes the remaining steps to deliver the ordered products to the buyer. Additional information can be added to the order, such as an updated order status, shipping information, and estimated arrival time. Buyers and sellers may then be notified that the order has been fulfilled.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Order Workflows](../order-workflows/introduction-to-order-workflows.md)
 * [Processing an Order](./processing-an-order.md)

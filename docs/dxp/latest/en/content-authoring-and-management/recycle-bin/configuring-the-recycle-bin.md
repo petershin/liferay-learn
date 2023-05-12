@@ -28,6 +28,6 @@ To configure the Recycle Bin,
 
 The Trash Entries Max Age value must be expressed in minutes. By default, items sit in the Recycle Bin for 30 days before they are deleted automatically.
 
-## Additional Information
+## Related Topics
 
 * [Using the Recycle Bin](./using-the-recycle-bin.md)

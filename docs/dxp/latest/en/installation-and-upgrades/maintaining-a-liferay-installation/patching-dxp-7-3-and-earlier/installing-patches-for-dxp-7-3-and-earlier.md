@@ -167,7 +167,7 @@ If you installed DXP on an application server, make these preparations:
 
 Now you know how to patch a DXP Bundle and a DXP application server installation.
 
-## Additional Information
+## Related Topics
 
 * [Installing the Patching Tool](../reference/installing-the-patching-tool.md)
 * [Configuring the Patching Tool](../reference/configuring-the-patching-tool.md)

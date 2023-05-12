@@ -37,7 +37,7 @@ The Calculate Rule has been created.
 
 ![Calculate the registration total by multiplying the two fields.](./using-the-calculate-rule/images/02.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](../creating-and-managing-forms/creating-forms.md)
 * [Form Rules Overview](./form-rules-overview.md)

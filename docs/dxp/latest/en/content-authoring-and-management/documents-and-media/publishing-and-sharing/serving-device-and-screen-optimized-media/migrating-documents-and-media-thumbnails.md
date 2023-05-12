@@ -58,7 +58,7 @@ If you undeploy Adaptive Media at some point after running the migration process
 
    ![Navigate to the Gogo Shell.](./migrating-documents-and-media-thumbnails/images/02.png)
 
-## Additional Information
+## Related Topics
 
 * [Managing Image Resolutions](./managing-image-resolutions.md)
 * [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md)

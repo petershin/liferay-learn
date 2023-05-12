@@ -40,7 +40,7 @@ The Patching Tool reports when a patch you're installing requires a newer Patchi
 
 The Patching Tool is ready to configure with your DXP installation.
 
-## Additional Information
+## Related Topics
 
 * [Configuring the Patching Tool](./configuring-the-patching-tool.md)
 * [Installing Patches](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)

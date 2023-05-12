@@ -39,7 +39,7 @@ If you want to offer special pricing to a customer that is lower than the usual 
 
 ![Comparison of a product's price with a Promotion and a Price List.](./introduction-to-promotions/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating a Promotion](./creating-a-promotion.md)
 * [Using the Promotion Base List](./using-the-promotion-base-list.md)

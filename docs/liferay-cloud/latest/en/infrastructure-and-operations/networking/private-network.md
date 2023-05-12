@@ -51,7 +51,7 @@ Here's an example configuration:
 | `protocol` | TCP | The type of connection to create (TCP and UDP are supported) |
 | `external` | true | Whether your connection is available to external connections. The default value `false` restricts the connection to internal Liferay Cloud connections |
 
-## Additional Information
+## Related Topics
 
 * [Configuration via LCP JSON](../../reference/configuration-via-lcp-json.md)
 * [Shell Access](../../troubleshooting/shell-access.md)

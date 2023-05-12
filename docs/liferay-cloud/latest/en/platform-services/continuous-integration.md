@@ -133,7 +133,7 @@ Name                                          | Default Value   | Description |
 `LCP_DATABASE_SERVICE`                |                 | The host name of the Database service. |
 
 
-## Additional Information
+## Related Topics
 
 * [Logging into your Liferay Cloud Services](../getting-started/logging-into-your-liferay-cloud-services.md)
 * [Configuring Your GitLab Repository](../getting-started/configuring-your-gitlab-repository.md)

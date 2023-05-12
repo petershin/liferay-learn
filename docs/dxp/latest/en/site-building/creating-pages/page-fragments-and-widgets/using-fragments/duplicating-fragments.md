@@ -25,7 +25,7 @@ Follow these steps to duplicate a Fragment:
 Layouts (Sections or Rows) containing instanceable Widgets cannot be duplicated. In this case, a message appears indicating the Widget preventing the duplication.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using Fragments](../using-fragments.md)
 * [Configuring Fragments](../using-fragments/configuring-fragments.md)

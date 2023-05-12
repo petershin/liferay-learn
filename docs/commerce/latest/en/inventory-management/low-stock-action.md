@@ -37,7 +37,7 @@ To configure a low stock action,
 
 Once configured, the selected low stock action is triggered whenever the product inventory falls below the set threshold.
 
-## Additional Information
+## Related Topics
 
 * [Product Inventory Configuration Reference](./product-inventory-configuration-reference-guide.md)
 * [Implementing a Custom Low Stock Action](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)

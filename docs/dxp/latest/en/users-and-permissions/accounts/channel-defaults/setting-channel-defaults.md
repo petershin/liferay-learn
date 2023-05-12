@@ -138,7 +138,7 @@ By itself, this permission does not grant access to the Accounts application, or
 If you use [organizations](../../organizations/understanding-organizations.md), users can continue to manage the organization accounts they have permission to manage along with accounts for which they are default Channel Account Managers.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Channel Defaults](../channel-defaults.md)
 * [Introduction to Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels)

@@ -56,7 +56,7 @@ Install Liferay Commerce using a bundle from the [Liferay Community Downloads](h
 
 Install Liferay Commerce by deploying the `LPKG` file to your preexisting Liferay DXP installation. See [Deploying Liferay Commerce to an Existing Installation](./installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Liferay Digital Experience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
 * [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)

@@ -137,7 +137,7 @@ In Liferay DXP 7.3 and earlier, the *Add Commerce Product Specification Option* 
 | Add Commerce Model | Ability to add Model entries to a Brand in the Application Admin |
 | Permissions | Ability to view and modify resource permissions in the Application Admin |
 
-## Additional Information
+## Related Topics
 
 * [Products Overview](../../product-management/creating-and-managing-products/products/products-overview.md)
 * [Creating a New Catalog](../../product-management/catalogs/creating-a-new-catalog.md)

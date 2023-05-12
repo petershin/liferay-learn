@@ -161,7 +161,7 @@ products-ending-in-the-same-word=Products Ending in the Same Word
 
 Congratulations! You now know the basics for implementing the `CPDataSource` interface, and have added a new product data source to Liferay Commerce.
 
-## Additional Information
+## Related Topics
 
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
 * [Related Products, Up-Sells, and Cross-Sells](../../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)

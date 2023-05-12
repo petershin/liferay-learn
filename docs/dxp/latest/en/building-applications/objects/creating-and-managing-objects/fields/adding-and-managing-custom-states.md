@@ -71,7 +71,7 @@ Once saved, users can only transition an entry's state according to your defined
 
 ![Set up a custom flow determines available transitions for each state.](./adding-and-managing-custom-states/images/07.png)
 
-## Additional Information
+## Related Topics
 
 * [Picklists](../../picklists.md)
 * [Fields](../fields.md)

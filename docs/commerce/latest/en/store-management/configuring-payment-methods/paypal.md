@@ -22,7 +22,7 @@ Before configuring your store to use PayPal, it is necessary to generate a PayPa
 
 PayPal is now enabled for your store.
 
-## Additional Information
+## Related Topics
 
 Here is more information about adding other payment methods:
 

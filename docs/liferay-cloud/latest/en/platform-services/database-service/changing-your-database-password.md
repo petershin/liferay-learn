@@ -93,7 +93,7 @@ When you are ready, follow these steps to change your database password:
 
 Your `database` service is now updated with a new password, and your other services are synchronized to connect to it properly.
 
-## Additional Information
+## Related Topics
 
 * [Database Service](./database-service.md)
 * [Changing Your Database Username](./changing-your-database-username.md)

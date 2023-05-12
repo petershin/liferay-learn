@@ -114,7 +114,7 @@ The Help Center is also a launching point for account support, support FAQs and 
 
 Now that you know the patch types Liferay provides for delivering fixes, you can stay updated on relevant patches and [install](./installing-patches-for-dxp-7-3-and-earlier.md) them.
 
-## Additional Information
+## Related Topics
 
 * [Installing Patches](./installing-patches-for-dxp-7-3-and-earlier.md)
 * [Installing the Patching Tool](../reference/installing-the-patching-tool.md)

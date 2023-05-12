@@ -59,6 +59,6 @@ To view them, use the Product Publisher widget with the data source set to *Freq
 
 ![To view “Also Bought” Product Recommendations, use the Product Publisher widget with the data source set to Frequent Pattern Recommendations.](./understanding-recommendation-types/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Using Product Recommendations](./using-product-recommendations.md)

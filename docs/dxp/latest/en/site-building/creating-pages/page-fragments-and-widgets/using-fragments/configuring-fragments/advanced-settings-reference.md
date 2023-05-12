@@ -101,7 +101,7 @@ By default, Liferay automatically renders all containers in a page. However, set
 
 ![Improve page load performance by setting the container's content-visibility to auto.](./advanced-settings-reference/images/06.png)
 
-## Additional Information
+## Related Topics
 
 * [General Settings Reference](./general-settings-reference.md)
 * [Using Fragments](../../using-fragments.md)

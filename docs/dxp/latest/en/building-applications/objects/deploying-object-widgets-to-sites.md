@@ -45,7 +45,7 @@ You can also click the widget's *Options* button (![Options Button](../../images
 
 Available options depend on whether the widget is deployed to a [Content Page](../../site-building/creating-pages/using-content-pages/using-widgets-on-a-content-page.md) or [Widget Page](../../site-building/creating-pages/using-widget-pages.md).
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)
 * [Displaying Object Entries](./displaying-object-entries.md)

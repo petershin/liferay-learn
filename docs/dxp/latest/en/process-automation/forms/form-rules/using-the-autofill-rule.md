@@ -50,7 +50,7 @@ Follow the steps below:
 
 Users can now search for a region then the countries in the form.
 
-## Additional Information
+## Related Topics
 
 * [Creating Forms](../creating-and-managing-forms/creating-forms.md)
 * [Data Providers Overview](../data-providers/data-providers-overview.md)

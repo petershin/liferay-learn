@@ -73,7 +73,7 @@ These features can be configured using [portal properties](https://learn.liferay
 Liferay Portal's philosophy is "secure by default." Please exercise significant caution when modifying security-specific defaults or white-lists. Such actions may lead to security misconfiguration and an insecure deployment.
 ```
 
-## Additional Information
+## Related Topics
 
 For more information about securing a Liferay Portal installation, please see [our security statement](https://www.liferay.com/security), [the community security team](https://portal.liferay.dev/people/community-security-team), and the resources listed on those pages.
 

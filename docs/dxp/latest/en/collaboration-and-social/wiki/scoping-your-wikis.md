@@ -81,6 +81,6 @@ Any changes you make here apply to the scope that you selected in the previous s
 
 ![Selecting the new page scoped wiki](./scoping-your-wikis/images/09.png)
 
-## Additional Information
+## Related Topics
 
 * [Widget Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope)

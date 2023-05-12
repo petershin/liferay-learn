@@ -587,7 +587,7 @@ cURL script parameters:
 | $2 | `contentStructureId` |
 | $3 | Image `id` |
 
-## Additional Information
+## Related Topics
 
 - [Web Content API Basics](./web-content-api-basics.md)
 - [Consuming REST Services](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

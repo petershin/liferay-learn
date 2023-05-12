@@ -79,7 +79,7 @@ You can configure which pages at what level from the menu appear in the widget. 
 | **Levels to Display:** | Select the number of levels to display in the navigation, from 1 down to Unlimited. |
 | **Expand Sublevels:** | Select _Auto_ or _All_ from this dropdown menu; this determines if hovering the mouse over the navigation reveals navigation levels one at a time automatically or all the levels at once. |
 
-## Additional Information
+## Related Topics
 
 - [Using the Navigation Menus Application](./using-the-navigation-menus-application.md)
 - [Managing Site Navigation](./managing-site-navigation.md)

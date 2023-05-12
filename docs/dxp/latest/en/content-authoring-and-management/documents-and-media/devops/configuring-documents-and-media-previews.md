@@ -25,7 +25,7 @@ Liferay DXP currently supports integration with the following programs.
 
 With these tools installed and configured, Documents and Media can provide in application previews of most file types.
 
-## Additional Information
+## Related Topics
 
 * [Managing Files](../uploading-and-managing/managing-files.md)
 * [Documents and Media UI Reference](../documents-and-media-ui-reference.md)

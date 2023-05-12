@@ -26,7 +26,7 @@ Some of the features included in Liferay Faces Portal are:
 
 * Expression Language: Adds a set of EL keywords such as `liferay` for getting Liferay-specific info, and `i18n` for integration with out-of-the-box Liferay internationalized messages. 
 
-## Additional Information 
+## Related Topics 
 
 * [Developing a JSF Portlet Application \(Help Center\)](https://help.liferay.com/hc/en-us/articles/360029069451-Developing-a-JSF-Portlet-Application)
 * [Liferay Faces Bridge](./liferay-faces-bridge.md)

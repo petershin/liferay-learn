@@ -497,7 +497,7 @@ If you were to choose the color white, the `h3` tag heading would have the class
 
 ![The color palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/03.png)
 
-## Additional Information
+## Related Topics
 
 - [Developing Fragments](../../developing-page-fragments/developing-fragments-intro.md)
 - [Fragment Specific Tags Reference](./fragment-specific-tags-reference.md)

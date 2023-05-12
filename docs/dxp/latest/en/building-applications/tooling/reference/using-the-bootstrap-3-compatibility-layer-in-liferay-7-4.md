@@ -57,7 +57,7 @@ If you **do not** require the atlas theme variables, add this to your project's 
 
 Now the Bootstrap 3 compatibility layer is included in your theme, so it works with Liferay DXP 7.4 GA1. Your next task is to change your project's code so you can remove the dependency on Bootstrap 3. 
 
-## Additional Information
+## Related Topics
 
 * [Upgrading a Theme](../../../site-building/site-appearance/themes/upgrading-a-theme.md)
 * [Features Deprecated in 7.4](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4)

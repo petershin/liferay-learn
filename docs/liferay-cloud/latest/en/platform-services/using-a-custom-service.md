@@ -85,6 +85,6 @@ If you deploy this build to one of your environments (by clicking _Deploy Build 
 
 ![New "customservice" deploying alongside the other services.](./using-a-custom-service/images/01.png)
 
-## Additional Information
+## Related Topics
 
 * [Overview of the Liferay Cloud Deployment Workflow](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)

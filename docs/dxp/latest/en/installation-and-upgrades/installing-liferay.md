@@ -77,7 +77,7 @@ After installing Liferay, go to [Setting Up Liferay](./setting-up-liferay.md) to
 * High availability
 * and more
 
-## Additional Information
+## Related Topics
 
 * [Backing Up](./maintaining-a-liferay-installation/backing-up.md)
 * [Updating Liferay](./maintaining-a-liferay-installation/updating-liferay.md)

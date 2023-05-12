@@ -41,7 +41,7 @@ If you've selected to publish *Now*, you are redirected to the publishing page. 
 
 If you've selected to publish *Later*, you are redirected to the Review Changes page for your new publication. At this point, you can make further changes to your publication, and then publish when ready.
 
-## Additional Information
+## Related Topics
 
 * [Creating and Managing Publications](./creating-and-managing-publications.md)
 * [Making and Publishing Changes](./making-and-publishing-changes.md)

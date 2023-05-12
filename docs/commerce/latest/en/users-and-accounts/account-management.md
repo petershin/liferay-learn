@@ -46,7 +46,7 @@ See the following articles to learn more about common Account Management actions
 * [Adding Addresses to an Account](./account-management/adding-addresses-to-an-account.md)
 * [Creating a New Account Group](./account-management/creating-a-new-account-group.md)
 
-## Additional Information
+## Related Topics
 
 * [Sites and Site Types](../starting-a-store/sites-and-site-types.md)
 * [Account Roles](./account-management/account-roles.md)

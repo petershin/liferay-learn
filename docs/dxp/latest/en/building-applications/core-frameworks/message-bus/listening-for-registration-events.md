@@ -175,7 +175,7 @@ Congratulations! You've triggered all of the message bus event listener and dest
 
 Now that you know how to listen for these Message Bus events, you can listen for messages at new destinations or [tune your messaging environment](./tuning-messaging-performance.md) in response to new registration related activities.
 
-## Additional Information
+## Related Topics
 
 * [Tuning Messaging Performance](./tuning-messaging-performance.md)
 * [Listening for Messages](./listening-for-messages.md)

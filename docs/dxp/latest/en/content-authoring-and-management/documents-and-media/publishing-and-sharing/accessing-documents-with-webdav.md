@@ -27,7 +27,7 @@ To access the Document Library folder from a file browser, you must use your log
 
 Once set up, you can use your operating system's file browser to add, edit, and delete files in the connected Documents and Media folder. If you edit a file in this folder on your file system, all changes appear in Liferay and the file's minor version is incremented.
 
-## Additional Information
+## Related Topics
 
 * [Enabling and Configuring Document Sharing](./managing-document-access/enabling-and-configuring-sharing.md)
 * [Sharing Documents with Other Users](./managing-document-access/sharing-documents-with-other-users.md)

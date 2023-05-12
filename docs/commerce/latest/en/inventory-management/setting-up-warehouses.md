@@ -121,7 +121,7 @@ To add a new warehouse,
 
 The new warehouse is now active ready to use.
 
-## Additional Information
+## Related Topics
 
 * [Adding Regions](../store-management/configuring-countries-and-regions.md#adding-regions)
 * [Configuring Countries and Regions](../store-management/configuring-countries-and-regions.md)

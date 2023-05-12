@@ -35,7 +35,7 @@ Once saved, users can filter object entries using the added fields, and default 
 
 ![Users can filter entries using the added fields.](./adding-filters-to-views/images/03.png)
 
-## Additional Information
+## Related Topics
 
 * [Views](../views.md)
 * [Designing Object Views](./designing-object-views.md)

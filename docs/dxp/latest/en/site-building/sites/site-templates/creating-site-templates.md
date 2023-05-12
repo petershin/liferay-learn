@@ -39,7 +39,7 @@ The UI for designing the template is identical with the UI for designing Sites. 
 Pages inherited from a template cannot be deleted. You also cannot directly add child Pages to them on the Site level. They can only be added or removed in the Site Template.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Site Templates](../site-templates.md)
 * [Propagating Template Changes](./propagating-template-changes.md)

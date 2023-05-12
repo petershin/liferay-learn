@@ -86,7 +86,7 @@ Normal environment variables do not have special security measures. Any Users th
 
 To store sensitive variable values (such as login credentials), you can use secrets. Secrets are encrypted in the backend and are hidden from Users without the *Admin* role. Regular environment variables may also [reference secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#referencing-secrets-from-environment-variables) to secure their values. See [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Configuration via LCP.json](../reference/configuration-via-lcp-json.md)
 * [Managing Secure Environment Variables with Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)

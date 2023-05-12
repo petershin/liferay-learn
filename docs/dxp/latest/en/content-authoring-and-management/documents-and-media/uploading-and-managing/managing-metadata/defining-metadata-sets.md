@@ -103,6 +103,6 @@ You can translate each of a metadata set's field values to any supported locales
 
 1. Click _Save_ when finished.
 
-## Additional Information
+## Related Topics
 
 * [Creating Document Types](./defining-document-types.md)

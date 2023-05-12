@@ -287,7 +287,7 @@ docker cp [config file] [container]:/opt/liferay/osgi/configs
 
 Now you know how to configure a Liferay container's JVM options, Portal Properties, image Env variable, System Properties, and System Settings.
 
-## Additional Information
+## Related Topics
 
 * [Using Liferay Docker Images](../using-liferay-docker-images.md)
 * [Container Lifecycle and API](./container-lifecycle-and-api.md)

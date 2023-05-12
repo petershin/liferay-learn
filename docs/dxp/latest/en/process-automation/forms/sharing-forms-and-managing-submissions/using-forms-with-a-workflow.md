@@ -24,7 +24,7 @@ Once a Form Record has been approved, it appears in the same Form Entries menu w
 
 ![The Form Record has been approved](./using-forms-with-a-workflow/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Managing Form Entries](./managing-form-entries.md)
 * [Reviewing Assets](../../workflow/using-workflows/reviewing-assets.md)

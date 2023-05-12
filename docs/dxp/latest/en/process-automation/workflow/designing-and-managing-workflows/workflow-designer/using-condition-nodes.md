@@ -81,7 +81,7 @@ if (categoryName.equals("legal")) {
 }
 ```
 
-## Additional Information
+## Related Topics
 
 * [Managing Workflows](../managing-workflows.md)
 * [Workflow Nodes](./workflow-nodes.md)

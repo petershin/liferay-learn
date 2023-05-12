@@ -99,7 +99,7 @@ Pricing applications reference the following resources:
 | Manage Tax Categories | Ability to manage Tax Category entities in the Tax Categories application |
 | Permissions | Ability to view and modify resource permissions in the Tax Categories application |
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Pricing](../../pricing/introduction-to-pricing.md)
 * [Introduction to Discounts](../../pricing/promoting-products/introduction-to-discounts.md)

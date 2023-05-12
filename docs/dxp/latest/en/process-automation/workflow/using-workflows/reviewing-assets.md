@@ -59,7 +59,7 @@ Once a task is complete, one of several things happens:
 
 The approved asset (the Wiki Page) is now published in the widget.
 
-## Additional Information
+## Related Topics
 
 * [Managing Notifications and Requests](../../../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
 * [Workflow Task Nodes](../developer-guide/workflow-task-node-reference.md)

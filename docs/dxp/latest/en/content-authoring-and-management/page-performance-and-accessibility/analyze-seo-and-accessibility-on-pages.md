@@ -136,7 +136,7 @@ To avoid errors when auditing your Pages, ensure that you have [configured a val
 | This Page cannot be audited | The Page you are trying to audit is not publicly accessible. |
 | An unexpected error occurred | This is a generic error. Verify that the Page Audit tool is configured correctly and that the Page you want to audit is accessible from the internet. |
 
-## Additional Information
+## Related Topics
 
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - [Get Started with the PageSpeed Insights API](https://developers.google.com/speed/docs/insights/v5/get-started)

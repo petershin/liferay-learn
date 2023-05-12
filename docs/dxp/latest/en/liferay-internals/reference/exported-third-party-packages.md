@@ -64,7 +64,7 @@ Here's how to make sure a project has required packages at compile time but reli
 
 Now you can safely leverage Liferay's exported third party packages!
 
-## Additional Information
+## Related Topics
 
 * [Configuring Dependencies](../fundamentals/configuring-dependencies.md)
 * [JARs Excluded from WABs](../../building-applications/reference/jars-excluded-from-wabs.md)

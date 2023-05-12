@@ -121,7 +121,7 @@ You can validate it by checking the product in your catalog to view the updated 
 
 To view whether a discount or price list has been linked to a Product Group, click the _Applications Menu_ ![Applications Menu](../../images/icon-applications-menu.png), click the _Commerce_ tab, and go to _Pricing_ &rarr; _Product Groups_. Under Price Lists and Discounts, you can see the associated entities.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Discounts](./introduction-to-discounts.md)
 * [Introduction to Pricing](../introduction-to-pricing.md)

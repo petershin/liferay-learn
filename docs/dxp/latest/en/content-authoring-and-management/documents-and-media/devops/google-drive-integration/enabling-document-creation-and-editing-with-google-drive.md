@@ -50,7 +50,7 @@ Once enabled, authorized users can create Google Docs, Slides, and Sheets via Do
 To disable this feature, click on the *Actions* button for Google Drive, and select  *Reset Default Values*.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Enabling Links to Google Drive Documents](./enabling-links-to-google-drive-documents.md)
 * [Creating and Editing Documents with Google Drive](../../uploading-and-managing/creating-documents/creating-and-editing-documents-with-google-drive.md)

@@ -190,7 +190,7 @@ Once Saved, Liferay creates a widget for the remote app that you can deploy to S
 
 ![You can deploy the remote app widget to Site Pages.](./using-object-data-with-react-charts/images/06.png)
 
-## Additional Information
+## Related Topics
 
 * [Objects Overview](../../objects.md)
 * [Headless Framework Integration](../understanding-object-integrations/headless-framework-integration.md)

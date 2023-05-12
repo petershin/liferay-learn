@@ -37,7 +37,7 @@ When you access this 'Services' Content Page from your computer, the grid layout
 You can save and reuse the Grid Fragment configuration of your choice in other Content Pages. For more information, see [Saving Fragment Compositions](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md).
 ```
 
-## Additional Information
+## Related Topics
 
 - [Building a Responsive Site Overview](./building-a-responsive-site.md)
 - [Saving Fragment Compositions](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md)

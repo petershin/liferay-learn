@@ -87,6 +87,6 @@ The Advanced Styling tab displays current information about your widget, includi
 
 You can also enter custom CSS class names for your widget and custom CSS code. Clicking the *Add a CSS rule for just this portlet* or *Add a CSS rule for all portlets like this one* links adds the CSS code shells into your custom CSS text box.
 
-## Additional Information
+## Related Topics
 
 - [Exporting/Importing Widget Data](../configuring-widgets/exporting-importing-widget-data.md)

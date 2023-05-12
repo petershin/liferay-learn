@@ -71,7 +71,7 @@ Follow these steps to manage permissions for individual object definitions:
 
 1. Click *Save*.
 
-## Additional Information
+## Related Topics
 
 * [Objects](../objects.md)
 * [Creating and Managing Objects](./creating-and-managing-objects.md)

@@ -28,7 +28,7 @@ These properties are specific to OAuth headless server client extensions:
 | `userAccountEmailAddress` | String | (The default administrator user's email address) | The email address for the user account associated with this OAuth2 application profile. This is only used if the `userAccountScreenName` property is undefined. |
 | `userAccountScreenName` | String | (The default administrator user's screen name) | The screen name for the user account associated with the OAuth2 application profile. This overrides the value for `userAccountEmailAddress`. |
 
-## Additional Information
+## Related Topics
 
 * [Microservice Client Extensions](../microservice-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)

@@ -36,7 +36,7 @@ A geolocation database contains a mapping between IP addresses and their countri
 
 The file path is empty by default. When empty, it uses the free [GeoLite2](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data?lang=en) database to resolve IP addresses. Optionally, you can set the path to a different geolocation database with the `.mmdb` extension on your server to override the default database.
 
-## Additional Information
+## Related Topics
 
 * [Configuring Segment Conditions](./creating-and-managing-user-segments.md#configuring-segment-conditions)
 * [Content Page Personalization](../experience-personalization/content-page-personalization.md)

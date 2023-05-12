@@ -73,7 +73,7 @@ Here is a list of important permissions and which team roles have them:
 | Downscaling manually | &#10004; | &#10004; | X | X |
 | Changing VPN settings | &#10004; | &#10004; | &#10004; | X |
 
-## Additional Information
+## Related Topics
 
 * [Initial Setup Overview](../getting-started/initial-setup-overview.md)
 * [Team Activities](./team-activities.md)

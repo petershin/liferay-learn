@@ -19,6 +19,6 @@ In this case, simply create a Liferay account(the option will appear in when att
 
 The Basic tier of Analytics Cloud is associated with a Liferay DXP subscription. If your organization has a DXP subscription, we can associate your account with that subscription so that you can claim the Basic tier Workspace. Please contact support through [help.liferay.com](https://help.liferay.com/) and we will set it up.
 
-## Additional Information
+## Related Topics
 
 For any other issues with the activation process that are not listed here, please contact support through [help.liferay.com](https://help.liferay.com/) and we'll be happy to assist you in getting started.

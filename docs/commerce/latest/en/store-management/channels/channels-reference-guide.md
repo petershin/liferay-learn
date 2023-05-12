@@ -112,7 +112,7 @@ Users can manage their Punch Out procurement systems from here. Purchasing the a
 
 -->
 
-## Additional Information
+## Related Topics
 
 * [Configuring Product Visibility Using Channels](./configuring-product-visibility-using-channels.md)
 * [Enabling or Disabling Order Workflows](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md)

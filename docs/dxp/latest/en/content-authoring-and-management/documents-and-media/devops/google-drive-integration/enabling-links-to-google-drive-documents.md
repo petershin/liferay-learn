@@ -71,7 +71,7 @@ Follow these steps to create Documents and Media shortcuts for Google Drive file
 
 Once published, the Google Drive file can now be accessed and used in Liferay via the Documents and Media application. See [Linking to Files on Google Drive](../../uploading-and-managing/linking-to-files-on-google-drive.md) for more information.
 
-## Additional Information
+## Related Topics
 
 * [Enabling Document Creation and Editing with Google Drive](./enabling-document-creation-and-editing-with-google-drive.md)
 * [Linking to Files on Google Drive](../../uploading-and-managing/linking-to-files-on-google-drive.md)

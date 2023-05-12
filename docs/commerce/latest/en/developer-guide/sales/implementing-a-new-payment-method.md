@@ -198,6 +198,6 @@ pay-via-b1c3-commerce-payment-method=Pay via B1C3 commerce payment method.
 
 Congratulations! You now know the basics for implementing the `CommercePaymentMethod` interface and have added a new payment method to Liferay Commerce.
 
-## Additional Information
+## Related Topics
 
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

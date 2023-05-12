@@ -35,7 +35,7 @@ Follow these steps to apply tax rates to a Channel's shipping costs:
 
    ![Select the Tax Category to use for shipping costs in applicable Channel orders.](./applying-tax-rates/images/02.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating Tax Categories](./creating-tax-categories.md)
 * [Setting Rates for Tax Calculations](./setting-rates-for-tax-calculations.md)

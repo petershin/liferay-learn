@@ -25,7 +25,7 @@ To import an Element, click _Actions_ (![Actions](../../../../../images/icon-act
 The [Element schema](./creating-elements.md#understanding-the-element-schema) can change. If the schema changes between Liferay versions, importing an older Element's JSON may fail.
 ```
 
-## Additional Information
+## Related Topics
 
 - [Creating Elements](./creating-elements.md)
 - [Predefined Element Variables Reference](./predefined-element-variables-reference.md)

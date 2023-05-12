@@ -45,7 +45,7 @@ If you delete and propagate a drop zone with a unique ID, the drop zone and its 
 
 Drop zone IDs are not mandatory. Drop zones without IDs function the same and appear in the order they are specified. If you add drop zone IDs to an existing fragment and then save and propagate it, then beginning with the initial propagation, the IDs are added.
 
-## Additional Information
+## Related Topics
 
 - [Developing Fragments](./developing-fragments-intro.md)
 - [Using the Fragments Editor](./using-the-fragments-editor.md)

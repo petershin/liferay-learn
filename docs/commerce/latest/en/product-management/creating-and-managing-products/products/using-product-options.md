@@ -203,7 +203,7 @@ The Option Template is now applied; when the product is displayed on the catalog
 
 ![The Quantity option has been added to Torque Converters.](./using-product-options/images/10.png)
 
-## Additional Information
+## Related Topics
 
 Note that you can apply more than one option template per product and each option has its own unique display priority. In addition to _Package Quantity_ (created by default in the Minium accelerator), there is the _Color_ Option created in the Options Template section above. You may also change the Option Values on this screen without having to change the template itself.
 

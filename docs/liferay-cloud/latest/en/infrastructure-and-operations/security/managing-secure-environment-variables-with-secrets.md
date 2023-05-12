@@ -109,7 +109,7 @@ You can also reference secrets from environment variables added in your service'
 
 When you deploy the file to your service, the secret variable appears with any others on the Environment Variables page.
 
-## Additional Information
+## Related Topics
 
 * [Configuration via LCP.json](../../reference/configuration-via-lcp-json.md)
 * [Defining Environment Variables](../../reference/defining-environment-variables.md)

@@ -166,7 +166,7 @@ The value in the token definition's `mappings` (`font-family-base`) matches the 
 If a value for `defaultValue` is included in your token definition, then this must match the default value defined in the matching CSS variable definition.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Using a Style Book to Standardize Site Appearance](../using-a-style-book-to-standardize-site-appearance.md)
 <!-- Add link to token definition tutorial when available -->

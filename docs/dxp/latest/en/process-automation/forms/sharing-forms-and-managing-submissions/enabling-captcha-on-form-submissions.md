@@ -21,6 +21,6 @@ Form submissions now require the completion of a CAPTCHA check.
 
 ![Form with captcha enabled.](./enabling-captcha-on-form-submissions/images/03.png)
 
-## Additional Information
+## Related Topics
 
 By default, Liferay uses a "Simple CAPTCHA" check. This can be configured and changed to use an alternative CAPTCHA engine, like Google's reCAPTCHA service. For more information on how to do this, see [Authentication Basics](../../../installation-and-upgrades/securing-liferay/authentication-basics.md#configuring-captcha-or-recaptcha).

@@ -81,6 +81,6 @@ Follow these steps to create a Product bundle:
 
 ![Customers can make a selection from the Product Bundle Options on the Product's Display Page.](./creating-product-bundles/images/04.png)
 
-## Additional Information
+## Related Topics
 
 * [Using Product Options](./using-product-options.md)

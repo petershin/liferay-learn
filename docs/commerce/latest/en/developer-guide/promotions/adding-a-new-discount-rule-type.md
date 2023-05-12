@@ -246,7 +246,7 @@ minimum-number-of-items=Minimum Number of Items
 
 Congratulations! You now know the basics for implementing the `CommerceDiscountRuleType` interface, and have added a new discount rule type with a custom UI input to Liferay Commerce.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Discount](../../pricing/promoting-products/creating-a-discount.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

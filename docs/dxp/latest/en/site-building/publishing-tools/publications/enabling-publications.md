@@ -87,7 +87,7 @@ If desired, you can disable Publications at any time via the Publications *Setti
 Once disabled, all active publications are deactivated, scheduled publications are canceled, and you can no longer access your publication history. DXP, however, retains your instance's publication history, so you can access it again if you re-enable Publications.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Publications Overview](../publications.md)
 * [Creating and Managing Publications](./creating-and-managing-publications.md)

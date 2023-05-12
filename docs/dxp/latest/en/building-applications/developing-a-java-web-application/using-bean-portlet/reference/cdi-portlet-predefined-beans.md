@@ -72,6 +72,6 @@ Table 2: Dependent Scoped Beans[^2]
  
 [^2]: Martin Scott Nicklous, Java&trade; Portlet Specification 3.0, page 123. 
 
-## Additional Information
+## Related Topics
 
 [CDI Dependency Injection](../../../core-frameworks/dependency-injection.md)

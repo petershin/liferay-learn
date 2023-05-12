@@ -29,7 +29,7 @@ Commerce Catalogs provides four out-of-the-box Product types: Simple, Grouped, V
 
 **[Shop by Diagram](./product-types/shop-by-diagram.md)**: These are component parts belonging to a Bill of Materials (BOM) diagram that reference products in the store.
 
-## Additional Information
+## Related Topics
 
 * [Creating a Simple Product](./product-types/creating-a-simple-product.md)
 * [Creating a Grouped Product](./product-types/creating-a-grouped-product.md)

@@ -53,7 +53,7 @@ If desired, you can configure folder permissions to restrict access to its files
 
 ![Configure folder permissions.](./using-folders/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Using Workflow with Documents and Media](../publishing-and-sharing/using-workflow-with-documents-and-media.md)
 * [Uploading Files](./uploading-files.md)

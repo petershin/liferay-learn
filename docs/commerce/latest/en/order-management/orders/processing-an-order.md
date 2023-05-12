@@ -120,7 +120,7 @@ The order is then moved to the _Transmitted_ tab. Once an order is transmitted, 
 
 See the [Creating a New Shipment on Liferay Commerce 2.0 and Below](../shipments/creating-a-shipment.md#creating-a-new-shipment-on-liferay-commerce-2-0-and-below) article section to learn more.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Orders Workflows](../order-workflows/introduction-to-order-workflows.md)
 * [Orders Menu Reference Guide](./orders-menu-reference-guide.md)

@@ -55,7 +55,7 @@ The Password Reset Notification entry defines the email template for the message
 
 ![Notify Users when a password reset has been requested.](./email-settings/images/06.png)
 
-## Additional Information
+## Related Topics
 
 * [Configuring Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
 * [Notifications](../../../process-automation/notifications.md)

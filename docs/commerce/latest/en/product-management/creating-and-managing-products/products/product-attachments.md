@@ -78,7 +78,7 @@ To add a product attachment:
 1. Select any applicable product options.
 1. Click _Publish_ when finished.
 
-## Additional Information
+## Related Topics
 
 * [Product Images](./product-images.md)
 * [Specifications](./specifications.md)

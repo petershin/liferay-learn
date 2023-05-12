@@ -49,7 +49,7 @@ To view the entries and their languages in the Liferay Forms application,
 
    ![Administrators can easily see the form record language.](./translating-forms/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Forms Field Types Reference](./forms-field-types-reference.md)
 * [Customizing the Submit Button](./customizing-the-submit-button.md)

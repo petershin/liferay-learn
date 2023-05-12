@@ -94,7 +94,7 @@ The IFrame is added to a page as a widget.
 
 Confirm the Counter App is working by adding some items. 
 
-## Additional Information
+## Related Topics
 
 * [Front-end Client Extensions](../../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)

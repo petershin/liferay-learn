@@ -75,7 +75,7 @@ Groovy Script actions execute Groovy scripts. Enter your script into the provide
 
 <!--TASK: When Client Extensions documentation is ready, recommend custom object actions instead of groovy scripts due to limitations. -->
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Defining Object Actions](./defining-object-actions.md)

@@ -65,7 +65,7 @@ By default, the services in Liferay Cloud are pre-configured in order to fit a m
 The deployment type of the services in Liferay Cloud must only be changed with caution, as it may result in data loss or impacted performance.
 ```
 
-## Additional Information
+## Related Topics
 
 * [Configuring Persistent File System Volumes](./configuring-persistent-file-storage-volumes.md)
 * [Understanding Deployment Strategies](./understanding-deployment-strategies.md)

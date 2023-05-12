@@ -111,7 +111,7 @@ The layout is now used when creating and editing the object's entries.
 
 ![The object uses the default layout for creating and editing entries.](./designing-object-layouts/images/12.png)
 
-## Additional Information
+## Related Topics
 
 * [Creating Objects](../creating-objects.md)
 * [Adding Fields to Objects](../fields/adding-fields-to-objects.md)

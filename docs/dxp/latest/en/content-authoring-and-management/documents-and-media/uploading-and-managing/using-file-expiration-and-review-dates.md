@@ -61,7 +61,7 @@ When a file expires or requires review, a notification email is sent to the file
 
 1. Click on *Save* when finished.
 
-## Additional Information
+## Related Topics
 
 * [Uploading Files](./uploading-files.md)
 * [Documents and Media](../../documents-and-media.md)

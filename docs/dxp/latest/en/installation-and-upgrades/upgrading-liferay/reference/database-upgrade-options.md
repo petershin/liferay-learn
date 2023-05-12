@@ -68,7 +68,7 @@ Here are process summaries for using a Docker image or Tomcat Bundle to perform 
 | &#10004; |  | 1. Configure the new Docker image.<br>2. Run it with the upgrade environment variable enabled.<br>3. When the upgrades complete successfully, install the new Liferay WAR and OSGi dependencies on the application server. |
 |  | &#10004; | 1. Configure the new Liferay Tomcat Bundle.<br>2. Run the Database Upgrade Tool from the bundle.<br>3. When the upgrades complete successfully, install the new Liferay WAR and OSGi dependencies on the application server. |
 
-## Additional Information
+## Related Topics
 
 * [Upgrade Basics](../upgrade-basics.md)
 * [Maintaining a Liferay Installation](../../maintaining-a-liferay-installation.md)

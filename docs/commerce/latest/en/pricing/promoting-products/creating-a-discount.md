@@ -158,7 +158,7 @@ Your store now has an active discount with 20% off selected goods for those in t
 
 In this example, a Discount Rule has been applied to this particular Discount. Customers will receive this discount for all purchases over the set amount.
 
-## Additional Information
+## Related Topics
 
 * [Introduction to Discounts](./introduction-to-discounts.md)
 * [Creating a New Account Group](../../users-and-accounts/account-management/creating-a-new-account-group.md)

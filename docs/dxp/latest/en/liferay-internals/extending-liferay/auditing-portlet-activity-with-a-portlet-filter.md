@@ -196,7 +196,7 @@ The portlet filter proceeds to implement the [`RenderFilter`](http://docs.lifera
 
    Whenever a render request is made, this `doFilter` is called.
 
-## Additional Information
+## Related Topics
 
 * [Portlets](../../building-applications/developing-a-java-web-application/reference/portlets.md)
 <!--TASK: Add link to Using Portlet Filters article when finished -->

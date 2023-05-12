@@ -237,7 +237,7 @@ Encapsulating capability variations as modules facilitates extensibility. If you
 
 Are you excited yet? Are you ready to start developing? Here are some resources for you to learn more. 
 
-## Additional Information
+## Related Topics
 
 * [OSGi Alliance](https://www.osgi.org/)
 * [Getting started with OSGi at OSGi EnRoute](https://enroute.osgi.org/)

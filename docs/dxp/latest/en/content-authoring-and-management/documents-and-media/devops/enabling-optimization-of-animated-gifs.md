@@ -25,7 +25,7 @@ Optimizing animated GIFs using Adaptive Media requires three steps: installing G
 
 1. Click _Save_ when finished.
 
-## Additional Information
+## Related Topics
 
 * [How Adaptive Media Works](../publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md)
 * [Using Adapted Images in Site Content](../publishing-and-sharing/serving-device-and-screen-optimized-media/using-adapted-images-in-site-content.md)

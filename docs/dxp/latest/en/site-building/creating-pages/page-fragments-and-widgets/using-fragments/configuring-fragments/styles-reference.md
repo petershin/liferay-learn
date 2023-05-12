@@ -124,7 +124,7 @@ Configure the space between a fragment's frame and its content.
 | Padding Left | Sets the left padding of an element. |
 | Padding Right | Sets the right padding of an element. |
 
-## Additional Information
+## Related Topics
 
 * [Using Content Pages](../../../using-content-pages.md)
 * [Using Fragments](../../using-fragments.md)

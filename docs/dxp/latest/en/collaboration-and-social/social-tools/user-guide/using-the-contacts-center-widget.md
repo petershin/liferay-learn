@@ -75,6 +75,6 @@ Users can download their connections as [vCards](https://en.wikipedia.org/wiki/V
 
 Users can upload the `.vcf` file to their email and SMS system of their choice.
 
-## Additional Information
+## Related Topics
 
 * [Managing Notifications and Requests](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)

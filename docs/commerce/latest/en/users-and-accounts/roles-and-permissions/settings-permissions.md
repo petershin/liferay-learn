@@ -55,7 +55,7 @@ Settings applications reference the following resources:
 | Manage Health Status | Ability to access and modify Health Status entities |
 | Permissions | Ability to view and modify resource permissions in the Health Check application |
 
-## Additional Information
+## Related Topics
 
 * [Availability Estimates](../../inventory-management/availability-estimates.md)
 * [Measurement Units](../../store-management/configuring-shipping-methods/measurement-units.md)

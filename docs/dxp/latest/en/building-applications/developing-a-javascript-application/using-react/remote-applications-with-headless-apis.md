@@ -141,7 +141,7 @@ Basic authentication is used here for demonstration purposes. For production, yo
 
 The forms are gathered together and displayed on one page with the [`App.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/App.js) file.
 
-## Additional Information
+## Related Topics
 
 [Creating a Basic Custom Element](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)
 [Headless Framework Integration](../../objects/understanding-object-integrations/headless-framework-integration.md)

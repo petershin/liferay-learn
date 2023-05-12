@@ -19,6 +19,6 @@ Event attributes are the metadata that provide context for events. Different att
 
     The following data typecasts are available: Boolean, Date, Duration, Number, and String. Analytics Cloud automatically tries to detect and cast the datatype based on the first data collected for that attribute. Make changes to the typecast if necessary.
 
-## Additional Information
+## Related Topics
 
 * [Events Analysis](../../touchpoints/events/events-analysis.md)

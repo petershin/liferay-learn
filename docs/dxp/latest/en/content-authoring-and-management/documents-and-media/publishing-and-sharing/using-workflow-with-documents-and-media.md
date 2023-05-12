@@ -49,7 +49,7 @@ Follow these steps to enable or disable a workflow for individual folders and do
 
 This enables the chosen workflows for the selected folder and document types.
 
-## Additional Information
+## Related Topics
 
 * [Workflow Designer](../../../process-automation/workflow/designing-and-managing-workflows/workflow-designer.md)
 * [Documents and Media UI Reference](../documents-and-media-ui-reference.md)

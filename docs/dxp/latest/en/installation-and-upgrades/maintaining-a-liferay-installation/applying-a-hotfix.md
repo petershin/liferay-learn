@@ -93,7 +93,7 @@ The Patching Tool applies Hotfixes. Here's how to configure it:
 
 Congratulations! You applied a Hotfix to your DXP installation.
 
-## Additional Information
+## Related Topics
 
 * [Patching DXP in Docker](../installing-liferay/using-liferay-docker-images/patching-dxp-in-docker.md)
 * [Getting Patch Information](./reference/getting-patch-information.md)

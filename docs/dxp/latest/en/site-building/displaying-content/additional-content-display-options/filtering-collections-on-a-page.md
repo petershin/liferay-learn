@@ -71,6 +71,6 @@ Now, when the User filters content with the Collection Filter Fragment, the Appl
 
 ![The Applied Filters Fragment shows all filters currently applied to the configured Collection.](./filtering-collections-on-a-page/images/05.png)
 
-## Additional Information
+## Related Topics
 
 * [Displaying Collections](./displaying-collections.md)

@@ -63,7 +63,7 @@ In earlier versions of Liferay Portal 7.4 than GA4, there is also a *Display Pag
 
 In Liferay 7.4 GA5+ and U1+, the Display Page type is replaced with the content types that use Display Pages: [blogs entries](#blogs-entries), [web content articles](#web-content-articles), [documents](#documents), and [Categories](#categories).
 
-## Additional Information
+## Related Topics
 
 * [Using the Navigation Menus Application](./using-the-navigation-menus-application.md)
 * [Publishing Content with Display Pages](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)

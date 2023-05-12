@@ -79,7 +79,7 @@ Here are the features moved to maintenance mode in 7.2:
 Liferay continues to improve the Staging application, particularly for Remote Live Staging in scenarios that require content to be created in one environment and consumed in another. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
 ```
 
-## Additional Information
+## Related Topics
 
 * [7.2 Breaking Changes](../../../liferay-internals/reference/7-2-breaking-changes.md)
 * [7.2 Default Setting Changes](./default-setting-changes-in-7-2.md)

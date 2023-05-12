@@ -45,5 +45,5 @@ When you have one or more active shipping options available for the channel, the
 ## Related Topics
 
 * [Channel Defaults](../channel-defaults.md)
-* [Channel Defaults Permissions Reference](./channel-defaults-permissions-reference.md)
+* [Setting Channel Defaults](./setting-channel-defaults.md)
 * [Introduction to Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels)

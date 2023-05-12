@@ -40,7 +40,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
     ```
 
     ```{note}
-    setup_tutorial.sh`スクリプトは、Yeoman、Yarn、ツールキットのセットアップのためのコマンドを提供します。 スクリプトは、サンプルプロジェクトのZIPファイルに収録されています。
+    `setup_tutorial.sh`スクリプトは、Yeoman、Yarn、ツールキットのセットアップのためのコマンドを提供します。 スクリプトは、サンプルプロジェクトのZIPファイルで利用できます。
     ```
 
 スクリプトによって報告された満たしていない要件をすべて解決し、環境の準備が整ったと報告されるまでスクリプトを再実行してください。
@@ -115,7 +115,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順でサンプルのFragment SetをLiferayにインポートしてください。
+次に、以下の手順でサンプルのFragment SetをLiferayにインポートしてください：
 
 1. プロジェクトのルートフォルダ（例：`sample-liferay-fragments`）で `yarn run import` コマンドを実行し、Fragment SetをLiferayのインスタンスにインポートします。あるいは、[フラグメントセットを手動でインポートする](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) こともできます。
 
@@ -178,18 +178,38 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 
 * `[fragment-name]/`: フラグメントのすべてのファイルを含むフォルダ。
 
-    * `configuration.json`(オプション): フラグメントの構成を定義する JSON ファイル。 詳細は、 [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md) を参照してください。
+    * `configuration.json`(オプション): フラグメントの構成を定義する JSON ファイル。 詳細は、[フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md)を参照してください。
 
-    * `fragment.json`: Fragmentを記述するJSONファイルです。
+    * `fragment.json`: フラグメントを説明するJSONファイル。 詳しくは [Fragment.json の修正](#modifying-fragmentjson) をご覧ください。
 
-        ```json
+* `resources/` (オプション): フラグメントが必要とする追加の画像またはファイルを含むフォルダ。 詳細は、[フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md)を参照してください。
+
+フラグメントツールキットを使えば、この構造で素早くプロジェクトを作成することができます。
+
+### fragment.jsonを修正する
+
+`fragment.json` フラグメントの属性が含まれており、フラグメントの機能性や使い勝手を向上させるために変更することができます。
+
+| キー                     | Description                                                                                                   |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `cssPath`              | .css, .scss, .sass ファイルを指定します。                                                                                |
+| `configurationPath`    | フラグメントの設定ソースを指定します。                                                                                           |
+| `htmlPath`             | フラグメントのHTMLソースを指定する。                                                                                          |
+| `jsPath`               | フラグメントのJavaScriptソースを指定します。                                                                                   |
+| `name`                 | フラグメントの名前です。                                                                                                  |
+| `type`                 | コンポーネントまたはReactフラグメントを指定します。                                                                                  |
+| `icon`                 | インポートしたフラグメントに粘土のアイコンを追加する。 利用可能なアイコンは、 [クレイアイコンリスト](https://clayui.com/docs/components/icon.html) を参照してください。 |
+| `sass {loadPaths:[]}}` | 外部依存関係を指定する。                                                                                                  |
+
+ ```json
         {
             "cssPath": "styles.css",
             "configurationPath": "configuration.json",
             "htmlPath": "index.html",
             "jsPath": "main.js",
             "name": "Fragment name",
-            "type": "[component|react]"
+            "type": "[component|react]",
+            "icon": "adjust"
 
             // This configuration is optional and can be removed
             "sass": {
@@ -198,23 +218,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
                 ]
             }
         }
-        ```
-
-      `fragment.json` の `*Path` プロパティを、CSS、設定、HTML、および JavaScript のファイル名で更新します。
-
-        * `styles.css`: フラグメントの CSS ソース。
-
-        * `index.html`: フラグメントの HTML ソース。
-
-        * `main.js`: フラグメントの JavaScript ソース。
-
-        ```{note}
-        cssPath` キーには、`.css` ファイルを指定する他に、`.scss` または `.sass` ファイルを指定することができる。  また、`sass:fragment.json`に{loadPaths:[]}}`を追加することで、外部の依存関係を利用することができます。
-        ```
-
-* `resources/` (オプション): フラグメントが必要とする追加の画像またはファイルを含むフォルダ。 詳細は、 [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md) を参照してください。
-
-フラグメントツールキットを使用して、このストラクチャーを持つプロジェクトをすばやく作成できます。
+```
 
 ## プロジェクトにフラグメントセットを追加する
 
@@ -283,7 +287,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
     ```
 
     ```{note}
-    Liferayの編集可能なデータ構文については、[Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md) を参照してください。
+    Liferayの編集可能なデータ構文については、[フラグメント固有のタグ](../reference/fragments/fragment-specific-tags-reference.md) を参照してください。
     ```
 
 1. 先ほど作成したフラグメントセットを選択します（`My Set`）。
@@ -318,7 +322,10 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 * HTML (`index.html`)
 * CSS (`styles.css`)
 * JavaScript (`main.js`)
+* フラグメントの属性 (`fragment.json`)
 * [構成オプション](./adding-configuration-options-to-fragments.md) (`configuration.json`)
+
+
 
 たとえば、上記の HTML から構築し、 [Clay](https://clayui.com/) の [Bootstrap](https://getbootstrap.com/) ベースのコンポーネントを使用して、次の `index.html` に示すように、注目を集める見出しと説明を持つフラグメントを作成できます。
 
@@ -363,7 +370,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 ```
 
 ```{note}
-Liferay 7.2以下を使用している場合は、[Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md) にあるように、 `data-lfr-editable-[id|type]` 属性を削除してコンテンツ要素を `lfr-editable` 要素で囲んでください。
+Liferay 7.2以下を使用している場合は、[フラグメント固有のタグ](../reference/fragments/fragment-specific-tags-reference.md) にあるように、`data-lfr-editable-[id|type]` 属性を削除してコンテンツ要素を `lfr-editable` 要素で囲んでください。
 ```
 
 最初の `div` 要素の `class="component-my-jumbotron"` 属性は、ページ上のこのフラグメントを一意に識別しようとします。

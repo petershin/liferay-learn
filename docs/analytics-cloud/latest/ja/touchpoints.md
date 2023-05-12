@@ -53,7 +53,7 @@ Touchpoints へのナビゲーションは、まず [サイトダッシュボー
 * カスタムレンジ
 
 ```{note}
-ページデータは、canonical URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [DXP でカスタムカノニカル URL を設定する方法](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) について詳しく説明します。
+ページデータは、canonical URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [ページ単位での設定](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) について詳しく説明します。
 ```
 
 1つのページの詳細な指標を表示するには、表中のそのページをクリックします。 詳しくは、 [Page Analytics](./touchpoints/pages/pages.md) をご覧ください。

@@ -6,7 +6,7 @@
 
 ## 既存のカタログページをコピーする
 
-Liferay DXP 7.4 U22+ と GA22+ では、Minium サイトの Catalog ページをコピーするには、まず [インスタンスの Private Pages](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/understanding-pages/understanding-pages.html#enabling-private-pages) を有効にする必要があります。 それ以前のバージョンをお使いの場合は、この手順は必要ありません。
+Liferay DXP 7.4 U22+ と GA22+ では、Minium サイトの Catalog ページをコピーするには、まず [ページについて](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/understanding-pages/understanding-pages.html#enabling-private-pages) を有効にする必要があります。 それ以前のバージョンをお使いの場合は、この手順は必要ありません。
 
 1. プライベートページがアクティブになったら、 **サイトメニュー**(![Site Menu](../images/icon-product-menu.png)) を開き、 **サイトビルダー** &rarr; **ページ** にアクセスしてください。
 

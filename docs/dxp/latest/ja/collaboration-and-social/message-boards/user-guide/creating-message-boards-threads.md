@@ -13,7 +13,7 @@
 1. ［**Body**］ フィールドでスレッドのコンテンツを作成します。
 
     ```{note}
-    このフィールドは、HTMLの代わりにBBCodeを使用することを除いて、ブログアプリと同じエディターを使用します。 詳細な手順については、 [エディターの使用](https://help.liferay.com/hc/articles/360018173051-Using-the-Blog-Entry-Editor-) のドキュメントを参照してください。
+    このフィールドは、HTMLの代わりにBBCodeを使用することを除いて、ブログアプリと同じエディターを使用します。 詳細な手順については、[エディターの使用](https://help.liferay.com/hc/articles/360018173051-Using-the-Blog-Entry-Editor-) のドキュメントを参照してください。
     ```
 
     ![図1. 最初の投稿を作成する](./creating-message-boards-threads/images/01.png)
@@ -50,8 +50,11 @@
 
 メッセージボードのスレッドは、 ［**Urgent**］ 、 ［**Sticky**］ 、または ［**Announcement**］ の優先順位を付けることができます。 デフォルトでは、「None」に設定されています。
 
-1. ［**More Settings**］ セクションを展開します。 <!-- Broken Image Link !\[Figure 4. Setting a thread priority\](./creating-message-boards-threads/images/07.png) -->1. スレッドの優先度を選択します。
-1. ［**公開**］ をクリックします。
+1. ［**More Settings**］ セクションを展開します。
+
+1. スレッドの優先度を選択します。
+
+1. ［**Publish**］ をクリックします。
 
 新しい投稿が作成されました。 サイト管理者は、後でこの投稿を別のカテゴリに移動することができます。
 
@@ -94,7 +97,9 @@
 
 * [掲示板カテゴリの作成](./creating-message-boards-categories.md)
 
+
 <!-- Is there a placeholder for an article on "Enabling User Mentions for Collaboration Applications"? This should be link to a placeholder.
 * User can [mention other users](https://help.liferay.com/hc/en-us/articles/360028720892-Mentioning-Users) by entering the `@` character and their user name.
 -->
-* [掲示板設定リファレンス](./message-boards-configuration-reference.md)
+
+* [掲示板の設定リファレンス](./message-boards-configuration-reference.md)

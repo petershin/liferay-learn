@@ -2,27 +2,27 @@
 
 ウィジェットテンプレートは、サイト上のウィジェットの外観をカスタマイズするための優れたツールです。
 
-この例では、メディアギャラリーウィジェットのデフォルト設定を変更し、カルーセルウィジェットテンプレートを使用することを示します。
+この例では、メディアギャラリーウィジェットのデフォルト設定を変更し、カルーセルウィジェットテンプレートを使用することを示しています。
 
 ![メディアギャラリーウィジェットに画像を追加して、Liferayエクスペリエンスをカスタマイズします。](./using-a-widget-template-example/images/04.gif)
 
 ## メディアギャラリーウィジェットを設定する
 
-1. ドキュメントとメディアにまだ画像がない場合は、ドキュメントとメディアに画像を追加してください。 商品メニューを開き、「サイトビルダー」 &rarr; 「ページ」を表示します。 ［**コンテンツとデータ**］ へ移動し、 [［**ドキュメントとメディア**］](../../../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md) &rarr; ［**追加**］(![Add](../../../../images/icon-add.png)）をクリックしてアップロードするファイルを選択します。
+1. ドキュメントとメディアにまだ画像がない場合は、ドキュメントとメディアに画像を追加してください。 プロダクトメニューを開き、［サイトビルダー］&rarr;［ページ］と進みます。 ［**Content and Data**］ へ移動し、 [［**Documents and Media**］](../../../../../content-authoring-and-management/documents-and-media/uploading-and-managing/uploading-files.md) &rarr; ［**追加**］（![Add](../../../../../images/icon-add.png)）をクリックしてアップロードするファイルを選択します。
 
     ![ドキュメントとメディアで表示するファイルを選択します。](./using-a-widget-template-example/images/01.png)
 
-1. サイトの既存のページにメディアギャラリーウィジェットを追加します。 クリック **追加**(![Add](../../../../images/icon-plus.png)) &rarr; **ウィジェット** &rarr; **コンテンツ管理** &rarr; **メディアギャラリー** &rarr; **公開** .
+1. サイトの既存のページにメディアギャラリーウィジェットを追加します。 **追加**(![Add](../../../../../images/icon-plus.png)) &rarr; ［**ウィジェット**］ &rarr; ［**Content Management**］ &rarr; ［**Media Gallery**］ &rarr; ［**Publish**］ をクリックします。
 
     ![ウィジェットセクションのコンテンツと管理から、メディアギャラリーを追加します。](./using-a-widget-template-example/images/02.png)
 
-1. ウィジェットメニュー (![Actions](../../../../images/icon-actions.png))&rarr; **設定** &rarr; **表示テンプレート** へ移動します。 表示テンプレートを ［**カルーセル**］ に変更します。
+1. ウィジェットメニュー (![Actions](../../../../../images/icon-actions.png))&rarr; ［**Configuration**］ &rarr; ［**Display Template**］ へ移動します。 表示テンプレートを ［**Carousel**］ に変更します。
 
     ![メディアギャラリーの設定画面。](./using-a-widget-template-example/images/03.png)
 
-  ウィジェットがカルーセル表示テンプレートを使用するようになりました。
+  これでウィジェットにはカルーセル表示テンプレートが使用されるようになりました。
 
-![メディアギャラリーの設定画面では、テンプレートを変更することができます。](./using-a-widget-template-example/images/04.gif)
+![メディアギャラリーの設定画面にテンプレートの変更が表示されます。](./using-a-widget-template-example/images/04.gif)
 
 ## 追加情報
 

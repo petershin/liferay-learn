@@ -1,10 +1,10 @@
 # ウィジェットを他のサイトと共有する
 
-Facebook、OpenSocial、Netvibesなど、自分のサイトで動いているウィジェットのインスタンスを他のサイトに埋め込むことで、ウィジェットを他のサイトと共有することができます。 これにより、他の方法では得られなかった、まったく新しいWebサイトへの露出の道が開かれます。
+Facebook、OpenSocial、Netvibesなど、お客様のサイトで動作しているウィジェットのインスタンスを他のWebサイトに埋め込むことで、他のサイトとウィジェットを共有することができます。 これにより、他の方法では得られなかった、まったく新しいWebサイトへの露出の道が開かれます。
 
 ![ウィジェットの設定メニューにある「共有」タブは、様々な方法でウィジェットを共有することができます。](./sharing-widgets-with-other-sites/images/01.png)
 
-1. ウィジェットの **オプション** アイコン (![Options](../../../../images/icon-app-options.png)) &rarr; **設定** &rarr; **共有** をクリックします。
+1. ウィジェットの **オプション** アイコン (![Options](../../../../../images/icon-app-options.png)) &rarr; ［**設定**］ &rarr; ［**共有**］ をクリックしてください。
 
 1. 共有のサブタブは、Facebook、OpenSocial Gadget、Netvibesの3つです。 選択したコンテキストに従って進みます。
 
@@ -18,7 +18,7 @@ Facebook、OpenSocial、Netvibesなど、自分のサイトで動いているウ
 
 1. 共有の［Facebook］タブに移動します。
 
-1. **APIキー** を取得する。 <!--\[ include link -\]()--> と、 **キャンバスページURL** 。 <!--\[ include link -\]()--> をフェイスブックから見ることができます。 それらをコピーして［共有］タブに貼り付けます。
+1. ［**API Key**］ <!--\[ include link -\]()--> および ［**Canvas Page URL**］ を <!--\[ include link -\]()--> Facebookから取得します。 それらをコピーして［共有］タブに貼り付けます。
 
     ![ウィジェットの設定メニューにある「共有」タブは、様々な方法でウィジェットを共有することができます。](./sharing-widgets-with-other-sites/images/02.png)
 

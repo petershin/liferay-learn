@@ -7,7 +7,7 @@ toc:
   - ./using-react/remote-applications-with-headless-apis.md
   - ./using-react/react-component-utilities-reference.md
 ---
-# Using React
+# Reactの使用
 
 ```{toctree}
 :maxdepth: 3

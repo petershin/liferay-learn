@@ -20,13 +20,13 @@ message-bus/listening-for-registration-events.md
 message-bus/tuning-messaging-performance.md
 ```
 
-メッセージバスは、メッセージを交換するための疎結合された方法を提供します。 メッセージを送信するクラスはメッセージバスを呼び出してメッセージを宛先に送信し、その宛先に登録されている他のクラス（*リスナー*）がメッセージを受信します。 リスナーは送信者に対して透過的であり、その逆も同様です。
+メッセージバスは、メッセージを交換するための疎結合された方法を提供します。 メッセージを送信するクラスはメッセージバスを呼び出してメッセージを宛先に送信し、その宛先に登録されている他のクラス（**リスナー**）がメッセージを受信します。 リスナーは送信者に対して透過的であり、その逆も同様です。
 
 主なメッセージングコンポーネントは次のとおりです。
 
 **宛先：** メッセージが送信される論理的（物理的ではない）な指名された場所。
 
-**リスナー：** 特定の宛先に送信されたメッセージを*リッスンする*クラス。
+**リスナー：** 特定の宛先に送信されたメッセージを **リッスンする** クラス。
 
 **メッセージバス：** 宛先登録を処理し、リスナーにメッセージを送信するフレームワーク。
 
@@ -61,9 +61,9 @@ message-bus/tuning-messaging-performance.md
 
 * [非同期メッセージングの使用](./message-bus/using-asynchronous-messaging.md) は、宛先を構成し、その宛先に非同期でメッセージを送信する方法を示しています。 これは、メッセージを送信する最も簡単な方法です。
 
-* [以前のバージョンでのデフォルトの同期メッセージングの使用](./message-bus/using-default-synchronous-messaging-in-previous-versions.md) は、メッセージ送信者が、1人のリスナーがメッセージに応答するまでブロックする様子を示しています *または*、リスナーが応答しない場合は、メッセージがタイムアウトするまでブロックする様子を示しています。
+* [以前のバージョンでのデフォルトの同期メッセージングの使用](./message-bus/using-default-synchronous-messaging-in-previous-versions.md) は、メッセージ送信者が、1人のリスナーがメッセージに応答するまでブロックする様子を示しています **または** 、リスナーが応答しない場合は、メッセージがタイムアウトするまでブロックする様子を示しています。
 
-* [Using Direct Synchronous Messaging in Previous Versions](./message-bus/using-default-synchronous-messaging-in-previous-versions.md) は、メッセージ送信者が *すべての* リスナーがメッセージを受信するまでメッセージ送信をブロックしている様子を示しています。
+* [Using Direct Synchronous Messaging in Previous Versions](./message-bus/using-default-synchronous-messaging-in-previous-versions.md) は、メッセージ送信者が **すべての** リスナーがメッセージを受信するまでメッセージ送信をブロックしている様子を示しています。
 
 ## パフォーマンスの調整
 

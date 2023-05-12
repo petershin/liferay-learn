@@ -32,5 +32,5 @@ toc:
 
 :::{grid-item-card}  チャンネルデフォルトの設定
 :link: ./channel-defaults/setting-channel-defaults.md
-:::  
-::::：
+:::
+::::

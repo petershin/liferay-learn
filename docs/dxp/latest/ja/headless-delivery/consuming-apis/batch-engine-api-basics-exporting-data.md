@@ -202,7 +202,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTask_GET_ById
 
 ## サイトからのデータの書き出し
 
-以下のcURLまたはJavaコマンドを実行することで、サイトからデータをエクスポートすることができます。 以下の例では、あるサイトからブログ記事をエクスポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` に置き換えます。 他のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータも更新する必要があります。
+以下のcURLまたはJavaコマンドを実行することで、サイトからデータをエクスポートすることができます。 以下の例では、あるサイトからブログ記事をエクスポートしています。 [RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` に置き換えます。 他のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータも更新する必要があります。
 
 ### ExportTask_POST_ToSite.sh
 

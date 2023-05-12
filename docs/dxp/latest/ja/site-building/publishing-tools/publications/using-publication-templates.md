@@ -1,6 +1,6 @@
 # パブリケーションテンプレートの使用
 
-{bdg-secondary}`利用可能 Liferay 7.4 U63+/GA63+`
+{bdg-secondary}`利用可能 Liferay 7.4 U73+/GA73+`
 
 詳細や投稿者を共有した出版物の作成を簡単にするために、出版物テンプレートを使用します。 招待するユーザーのリストを作成し、ロールを割り当て、トークンを使って名前や説明を自動入力することができます。
 
@@ -12,11 +12,21 @@
 
    ![Publicationsアプリケーションを開き、アプリケーションバーの「Actions」ボタンをクリックし、「Templates」を選択します。](./using-publication-templates/images/01.png)
 
-1. **追加**(![Add button](../../../images/icon-add.png)） をクリックします。
+1. **Add**( ![Add Button](../../../images/icon-add.png) ) をクリックします。
 
 1. テンプレートの名前と説明を入力します。
 
    ![テンプレートの名前と説明を入力します。](./using-publication-templates/images/02.png)
+
+1. (オプション）このテンプレートを新しい出版物のデフォルトとして設定します。
+
+   **デフォルトテンプレート** : 手動で作成した出版物は、デフォルトでこのテンプレートを使用しますが、出版物の作成時に代替テンプレートを選択することができます。 [Sandbox Onlyモード](./enabling-publications.md#how-to-enable-publications) が有効な場合、Default Sandbox Templateが設定されていない場合、自動的に作成される出版物はこのテンプレートを使用します。
+
+   **Default Sandbox Template** : [Sandbox Only mode](./enabling-publications.md#how-to-enable-publications) が有効な場合に、自動的に作成される出版物はこのテンプレートを使用します。 別のテンプレートを使って、手動で出版物を作成することも可能です。
+
+   ```{note}
+   デフォルトテンプレートとデフォルトサンドボックステンプレートは、一度に1つずつしか持つことができません。
+   ```
 
 1. テンプレートで作成された出版物に使用する名前と説明を入力します。
 

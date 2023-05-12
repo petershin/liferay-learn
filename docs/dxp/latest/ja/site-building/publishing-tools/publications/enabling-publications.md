@@ -1,13 +1,13 @@
 # パブリケーションの有効化
 
-> 対応可能：Liferay DXP/Portal 7.3以降
+{bdg-secondary}`Liferay 7.3以降で利用可能`
 
-パブリケーションは、あなたとあなたのチームがDXPインスタンスへの変更を開発、追跡、および公開するための便利で柔軟な方法を提供します。 有効にすると、パブリケーションはグローバルにアクティブ化され、どこからでもアクセスしてサポートされているエンティティを編集できます。
+Publicationsは、お客様やお客様のチームが変更を開発、追跡、公開するための便利で柔軟な方法を提供します。 有効にすると、パブリケーションはグローバルにアクティブ化され、どこからでもアクセスしてサポートされているエンティティを編集できます。
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/8N6djs7Gcs4
 
 ```{important}
-ステージングとパブリケーションを同時に有効にすることはできません。 いずれかのサイトでステージングが有効になっている場合は、パブリケーションを有効にする前に、まずステージングを無効にする必要があります。 詳細については、 [Disabling Local Live Staging](../staging/configuring-local-live-staging.md#disabling-local-live-staging) および [Disabling Remote Live Staging](../staging/configuring-remote-live-staging.md#disabling-remote-live-staging) を参照してください。
+ステージングとパブリケーションを同時に有効にすることはできません。 お客様のサイトでStagingが有効になっている場合、Publicationsを有効にする前にStagingを無効にする必要があります。 詳細については、 [Disabling Local Live Staging](../staging/configuring-local-live-staging.md#disabling-local-live-staging) および [Disabling Remote Live Staging](../staging/configuring-remote-live-staging.md#disabling-remote-live-staging) を参照してください。
 
 [Workflow](../../../process-automation/workflow/introduction-to-workflow.md) は、Liferay 7.3 の Publications では使用できません。
 ```
@@ -16,21 +16,23 @@
 
 パブリケーションを有効にするには、次の手順に従います。
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**Applications**］ タブをクリックして、 ［**Publications**］ に移動します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **アプリケーション** タブを開き、 **出版** をクリックします。
 
 1. Toggle **Enable Publications** .
 
    ![スイッチを切り替えて、［保存］をクリックします。](./enabling-publications/images/01.png)
 
-1. (オプション)**Sandbox Only** モードをトグルします。 この機能を有効にすると、ユーザーがログインしたときに、最後に作業した出版物に自動的に誘導されます。 もし、持っていなければ、新しい出版物が生成されます。
+1. (オプション)**Sandbox Only** モードを切り替えます。 この機能を有効にすると、ユーザーがログインしたときに、最後に作業した出版物に自動的に誘導されます。 もし持っていない場合は、 `screen.name - date` の命名パターンを使って、その人のために新しい出版物が生成されます。 出版物テンプレートを使用すると、これらの自動生成出版物のデフォルト値を設定することができます。 詳しくは、 [「パブリケーションテンプレートの使用」](./using-publication-templates.md) をご覧ください。
 
    ```{tip}
-   サンドボックスのみを使用することで、本番環境での偶発的な編集を減らすことができます。
+   Sandbox Onlyを使用することで、本番での偶発的な編集を減らすことができます。
    ```
 
-1. ［**Save**］ をクリックして、構成を保存します。 これにより、［Publications］アプリケーションページにリダイレクトされます。
+1. (オプション)**Allow Unapproved Changes** を有効にして、承認されていない変更を本番環境に公開することをユーザーに許可します。
 
-有効にすると、DXPインスタンスのどこからでもドロップダウンの［Publications］バーメニューにアクセスできます。
+1. **保存** をクリックして、設定を保存します。 出版物の申し込みページに遷移します。
+
+有効化すると、Liferayインスタンスのどこからでもドロップダウンパブリケーションバーメニューにアクセスできるようになります。
 
 ![DXPインスタンスのどこからでもドロップダウンの［Publications］バーメニューにアクセスできます。](./enabling-publications/images/02.png)
 
@@ -40,45 +42,43 @@
 
 必要に応じて、［Publications］アプリケーションページからいつでもパブリケーションを無効にできます。
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**Applications**］ タブをクリックして、 ［**Publications**］ に移動します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **アプリケーション** タブを開き、 **出版** をクリックします。
 
-1. アプリケーションバーの **アクション** ボタン（![Actions Button](../../../images/icon-actions.png)）をクリックし、 ［**Settings**］ を選択します。
+1. アプリケーションバーの「**アクション**」(![Actions Button](../../../images/icon-actions.png)) をクリックし、「**設定**」 を選択します。
 
-   ![パブリケーションアプリケーションを開き、アクションボタンをクリックして、［Settings］を選択します。](./enabling-publications/images/03.png)
+   ![Publicationsアプリケーションを開き、「Actions」ボタンをクリックし、「Settings」を選択します。](./enabling-publications/images/03.png)
 
 1. スイッチを切り替えて、パブリケーションを無効にします。
 
-1. ［**保存**］ をクリックします。
+1. ［**Save**］ をクリックします。
 
 ```{important}
-無効にすると、アクティブなすべてのパブリケーションが無効になり、スケジュールされたパブリケーションがキャンセルされ、パブリケーション履歴にアクセスできなくなります。 ただし、DXPはインスタンスのパブリケーション履歴を保持するため、パブリケーションを再度有効にすれば再度アクセスできます。
+無効にすると、アクティブなすべてのパブリケーションが無効になり、スケジュールされたパブリケーションがキャンセルされ、パブリケーション履歴にアクセスできなくなります。 しかし、Liferayはインスタンスのパブリケーション履歴を保持するので、Publicationsを再度有効にすれば、再びアクセスすることができます。
 ```
 
 ## 7.3.xのパブリケーションの有効化
 
-パブリケーションを有効にするには、次の手順に従います。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **アプリケーション** タブを開き、出版物の下の **設定** をクリックします。
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、［Applications］タブをクリックし、 ［**Publications**］ の下にある ［**Settings**］ をクリックします。
-
-   ![グローバルメニューで、［Publications］の下の［Settings］をクリックします。](./enabling-publications/images/04.png)
+   ![グローバルメニューで、「出版物」の「設定」をクリックします。](./enabling-publications/images/04.png)
 
 1. スイッチを ［**Yes**］ に切り替えます。
 
-1. ［**Submit**］ をクリックして、構成を保存します。
+1. **Submit** をクリックし、設定を保存します。
 
-   または、 ［**Save and Go to Overview**］ をクリックすると、構成が保存され、［Publications］概要ページにリダイレクトされます。
+   または、「**保存して概要へ**」 をクリックすると、設定が保存され、Publicationsの概要ページにリダイレクトされます。
 
-   ![トグルを［Yes］に設定し、［送信］または［保存して概要に移動］をクリックします。](./enabling-publications/images/05.png)
+   ![ToggleをYesに設定し、SubmitまたはSave and Go to Overviewをクリックします。](./enabling-publications/images/05.png)
 
 ## 7.3.xのパブリケーションの無効化
 
 必要に応じて、パブリケーションの ［**Settings**］ ページからいつでもパブリケーションを無効にできます。
 
-1. **グローバルメニュー**（![Global Menu](../../../images/icon-applications-menu.png)）を開き、［Applications］タブをクリックし、 ［**Publications**］ の下にある ［**Settings**］ をクリックします。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **アプリケーション** タブを開き、出版物の下の **設定** をクリックします。
 
 1. スイッチを ［**No**］ に切り替えます。
 
-1. ［**送信**］ をクリックします 。
+1. ［**Submit**］ をクリックします 。
 
 ```{important}
 無効にすると、アクティブなすべてのパブリケーションが無効になり、スケジュールされたパブリケーションがキャンセルされ、パブリケーション履歴にアクセスできなくなります。 ただし、DXPはインスタンスのパブリケーション履歴を保持するため、パブリケーションを再度有効にすれば再度アクセスできます。

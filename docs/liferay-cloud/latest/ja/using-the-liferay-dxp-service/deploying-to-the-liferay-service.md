@@ -88,7 +88,7 @@ CIビルドは、これらのフォルダー内のソースコードをコンパ
 Hotfixを適用するには、Liferay DXPサービスディレクトリ内の `configs/{ENV}/patching/` フォルダにHotfix ZIPファイルを追加してください。 この変更を展開すると、ホットフィックスがLiferay DXPインスタンスに適用されます。
 
 ```{note}
-[これらの指示](./updating-your-dxp-instance-to-a-new-minor-version.md)を参照して、代わりにLiferay DXPの新しいマイナーバージョンにアップデートしてください（新しい [サービスパック](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) など）。
+[これらの指示](./updating-your-dxp-instance-to-a-new-minor-version.md)を参照して、代わりにLiferay DXPの新しいマイナーバージョンにアップデートしてください（新しい [パッチタイプについて](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) など）。
 ```
 
 たとえば、次のような構造を持つホットフィックスを開発環境にデプロイできます：

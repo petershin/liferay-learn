@@ -1,18 +1,23 @@
 # デフォルトのフラグメントリファレンス
 
-Liferayは様々なフラグメントをすぐに提供するので、すぐにソリューションの構築を開始することができます。 コンテンツページやページテンプレートの編集を始めると、利用可能なフラグメントが表示されます。 編集中に、編集サイドバーメニューの「**フラグメントとウィジェット**」 タブ(![Fragments and Widgets](../../../../images/icon-plus.png))を開いてください。
+Liferayは様々なフラグメントをすぐに提供するので、すぐにソリューションの構築を開始することができます。 コンテンツページやページテンプレートの編集を始めると、利用可能なフラグメントが表示されます。 編集中に、編集サイドバーメニューの **Fragment and Widgets** タブ (![Fragments and Widgets](../../../../images/icon-plus.png)) を開く。
 
 フラグメントは、次のセットに編成されています。
 
-* [レイアウト要素](#layout-elements)
-* [基本コンポーネント](#basic-components)
-* [フォームコンポーネント](#form-components)
-* [コンテンツの表示](#content-display)
-* [Cookieバナー](#cookie-banner)
-* [主なコンテンツ](#featured-content)
-* [フッタ](#footers)
-* [ナビゲーションバー](#navigation-bars)
-* [メニュー表示](#menu-display)
+- [Default Fragments Reference](#default-fragments-reference)
+  - [レイアウト要素](#layout-elements)
+  - [基本コンポーネント](#basic-components)
+  - [フォームコンポーネント](#form-components)
+  - [コンテンツの表示](#content-display)
+  - [Cookieバナー](#cookie-banner)
+  - [主なコンテンツ](#featured-content)
+    - [バナー](#banners)
+    - [機能](#features)
+    - [ハイライト](#highlights)
+  - [フッタ](#footers)
+  - [ナビゲーションバー](#navigation-bars)
+  - [メニュー表示](#menu-display)
+  - [追加情報](#additional-information)
 
 ```{note}
 利用可能な設定オプションは、フラグメントおよびフラグメントサブエレメントによって異なります。 詳細については、 [フラグメントの設定](./configuring-fragments.md) を参照してください。
@@ -26,29 +31,29 @@ Liferayは様々なフラグメントをすぐに提供するので、すぐに�
 
 | フラグメント          | 説明                                                     |
 |:--------------- |:------------------------------------------------------ |
-| コンテナ(旧： **パネル**）。 | 構成可能なドロップゾーンを追加します。                                    |
-| グリッド(従来は **行**）。  | 複数のドロップゾーンモジュールを追加します。 これらのモジュールは、垂直または水平に構成および配置できます。 |
+| コンテナ（旧： **パネル**）。 | 構成可能なドロップゾーンを追加します。                                    |
+| グリッド（従来は **行**）。  | 複数のドロップゾーンモジュールを追加します。 これらのモジュールは、垂直または水平に構成および配置できます。 |
 
 ## 基本コンポーネント
 
-ページに基本的な機能を追加するためのシンプルなデザイン要素です。例えば、ボタン、見出し、タブなどがあります。これらのコンポーネントを使用することで、ページを少しずつ構築することができます。DXPには、以下の基本コンポーネントが含まれています。
+これらは、ページに基本的な機能を追加するシンプルなデザイン要素です。 例としては、ボタン、見出し、タブなどがあります。 これらのコンポーネントを使用すると、ページを少しずつ作成できます。 DXPには、次の基本コンポーネントが含まれています。
 
-| フラグメント | 説明 |
+| フラグメント | ディスクリプション |
 | :--- | :--- |
-| ボタン | [リンク要素](./configuring-fragments/fragment-sub-elements-reference.md) を追加し、使用可能な 5 つのボタンの種類 (プライマリ、セカンダリ、リンク、アウトライン プライマリ、アウトライン セカンダリ) を追加します。 |
-| カード | カード | [画像](./configuring-fragments/fragment-sub-elements-reference.md)、[リッチ テキスト](./configuring-fragments/fragment-sub-elements-reference.md)、[リンク](. /configuring-fragments/fragment-sub-elements-reference.md) 要素をディスプレイ カードとして配置します。 |
-| ドロップダウン {bdg-secondary}`7.4+` | [単純なテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md) とドロップ ゾーンを追加します。 他のフラグメントやウィジェットをドロップ ゾーンにドラッグ アンド ドロップして、高度なドロップダウン メニューを作成できます。 |
-| 外部ビデオ {bdg-secondary}`7.4+` | ページまたはテンプレートに外部ビデオを埋め込みます。 サポートされているビデオ ソースには、YouTube、Facebook、Twitch、Vimeo、およびドキュメントとメディアに保存されているビデオが含まれます。 [動画の埋め込み](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md)を参照 詳細については。 |
-| 見出し | H1-H6 スタイルを使用するように構成できる [単純なテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md) を追加します。 |
-| HTML | 編集可能な [HTML 要素](./configuring-fragments/fragment-sub-elements-reference.md) を追加します。 要素をダブルクリックすると、HTML 構文を使用してそのコンテンツを編集できるモーダル ウィンドウが開きます。 |
-| 画像 | 構成可能な [イメージ要素] (./configuring-fragments/fragment-sub-elements-reference.md) を追加します。 設定時に、画像の元のサイズを使用するか、コンテキストに合わせて調整するかを決定します。 |
-| 段落 | [リッチ テキスト要素](./configuring-fragments/fragment-sub-elements-reference.md) を追加します。 編集時に、フラグメントのテキストを強調表示して、追加の書式設定オプションにアクセスします。 |
-| セパレーター | ページ要素間に水平線を追加します。 間隔と色を設定できます。 |
-| スライダー | スライドにグループ化された複数の [画像](./configuring-fragments/fragment-sub-elements-reference.md) と [リッチ テキスト](./configuring-fragments/fragment-sub-elements-reference.md) オーバーレイを追加します . ユーザーは各スライドを手動で切り替えることができます。 |
-| ソーシャル | [画像要素](./configuring-fragments/fragment-sub-elements-reference.md) に Facebook、Twitter、LinkedIn のアイコンを追加し、各プラットフォームのページにリンクできます。 |
-| スペーサー | ページ上のフラグメント間に水平方向の余白を追加します。 高さを設定できます。 |
-| タブ | [単純なテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md) を含む複数のタブと、ウィジェットやその他のフラグメントを追加するための個別のドロップ ゾーンを追加します。 |
-| ビデオ URL (以前の **ビデオ フラグメント**) | Youtube または Documents and Media からのビデオをページまたはテンプレートに埋め込みます。 ビデオを自動再生、ループ、またはミュートに設定できます。 ビデオ コントロールをエンド ユーザーから非表示にすることもできます。 [動画の埋め込み](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md)を参照 詳細については。 |
+| ボタン | 5つのボタンタイプを持つ[link要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します： ボタンの種類は、プライマリ、セカンダリ、リンク、アウトラインプライマリ、アウトラインセカンダリの5種類です。|
+| カード | ディスプレイカードとして配置された[image](./configuring-fragments/fragment-sub-elements-reference.md), [rich text](./configuring-fragments/fragment-sub-elements-reference.md), [link](./configuring-fragments/fragment-sub-elements-reference.md) 要素を追加する。|
+| ドロップダウン {bdg-secondary}`7.4+` |  [シンプルなテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md)とドロップゾーンを追加しました。ドロップゾーンに他のフラグメントやウィジェットをドラッグ＆ドロップすることで、高度なドロップダウンメニューを作成することができます。|
+| 外部動画 {bdg-secondary}`7.4+` |  外部動画をページやテンプレートに埋め込みます。サポートされているビデオソースは、YouTube、Facebook、Twitch、Vimeo、およびDocuments and Mediaに保存されているビデオです。詳しくは、[動画の埋め込み](../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) を参照してください。|
+| Heading | H1-H6スタイルを使用するように設定できる[シンプルなテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加する。|
+| HTML | 編集可能な[HTML要素](./configuring-fragments/fragment-sub-elements-reference.md)が追加されます。ダブルクリックするとモーダルウィンドウが開き、HTML構文で内容を編集することができます。|
+| 画像 | 設定可能な[画像要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します。設定時に、画像の元のサイズを使用するか、文脈に合わせて調整するかを決定します。|
+| [リッチテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md) を追加します。編集時には、フラグメントのテキストをハイライトして、追加の書式設定オプションにアクセスします。|
+| セパレーター | ページ要素間に横線を入れる。間隔や色を設定することができます。|
+| スライダー | 複数の[画像](./configuring-fragments/fragment-sub-elements-reference.md)に[リッチテキスト](./configuring-fragments/fragment-sub-elements-reference.md)をオーバーレイして、スライドにグループ化されたものを追加します。ユーザーは、各スライドを手動で循環させることができます。|
+| ソーシャル | Facebook、Twitter、LinkedInのアイコンを持つ[画像要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加し、それぞれのプラットフォーム上のページにリンクすることができる。|
+| スペーサー | ページ上のフラグメントの間に水平方向の空白を追加します。高さを設定することができます。|
+| タブ | [シンプルなテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md)とウィジェットや他のフラグメントを追加するための個々のドロップゾーンを持つ複数のタブを追加します。|
+| 動画URL（従来は*動画フラグメント） | YoutubeやDocuments and Mediaの動画をページやテンプレートに埋め込む。動画の自動再生、ループ、ミュートを設定できます。また、エンドユーザーからビデオのコントロールを隠すこともできます。[動画の埋め込み](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) を参照してください。 |
 
 ## フォームコンポーネント
 
@@ -63,10 +68,15 @@ Form Componentsフラグメントを使用して、コンテンツページ内�
 | チェックボックス   | フォームコンテナにチェックボックスを追加し、ブーリアンフィールドに対応させることができます。                                                                                                                                                                                       |
 | 日付         | カスタムの日付フィールドにマッピングできるフィールドを追加します。                                                                                                                                                                                                    |
 | ファイルアップロード | [添付ファイルフィールド](../../../../building-applications/objects/creating-and-managing-objects/fields/attachment-fields.md#attachment-fields) にマッピング可能なファイルアップロードボタンを追加します。 マップされた添付ファイルフィールドは、ファイルのアップロード方法を決定します。 デフォルトでは、対応するファイル拡張子を表示します。 |
-| 数値入力       | カスタム数値フィールド(integer、long integer、decimal、precision decimalなど）にマッピングできるフィールドを追加します。 プレースホルダ値やヘルプテキストを設定できます。                                                                                                                          |
+| 複数選択のリスト   | マルチセレクト・ピクリストにマッピングできるフィールドを追加します。                                                                                                                                                                                                   |
+| 数値入力       | カスタム数値フィールド（integer、long integer、decimal、precision decimalなど）にマッピングできるフィールドを追加します。 プレースホルダ値やヘルプテキストを設定することができます。                                                                                                                     |
+| リッチテキスト    | リッチテキストフィールドにマッピングできるフィールドを追加します。                                                                                                                                                                                                    |
 | プルダウン      | カスタムピックリストとリレーションシップフィールドにマッピングできるドロップダウンメニューを追加します。 マップされたフィールドに10以上のオプションが含まれる場合、ドロップダウンメニューには、オプションを検索するための検索バーも含まれます。                                                                                                            |
-| テキスト入力     | テキストフィールド(テキスト、ロングテキスト、リッチテキストなど）にマッピング可能なフィールドを追加します。                                                                                                                                                                               |
 | 送信ボタン      | フォームの入力を送信するためのボタンを追加する。 すべてのフォームコンテナには、送信ボタンが必要です。                                                                                                                                                                                  |
+| テキスト入力     | テキストフィールドにマッピングできるフィールドを追加します（例：テキスト、ロングテキスト）。                                                                                                                                                                                       |
+| テキスト領域     | 長いテキストフィールドにマッピングできるフィールドを追加します。                                                                                                                                                                                                     |
+| タグ         | 現在のサイトまたはグローバルサイトのタグをオブジェクトエントリに追加するためのフィールドを追加します。                                                                                                                                                                                  |
+| カテゴリ       | 現在のサイトまたはグローバルサイトのカテゴリをオブジェクトエントリに追加するためのフィールドを追加します。                                                                                                                                                                                |
 
 
 
@@ -82,9 +92,9 @@ Form Componentsフラグメントを使用して、コンテンツページ内�
 | コンテンツの表示                | ドキュメントとメディア、Webコンテンツ、ブログ、またはカテゴリからの単一のコンテンツ項目を表示します。 使用可能な構成オプションは、選択したコンテンツの種類によって異なります。                                                                                                                                                                        |
 | コンテンツのフラグ               | コンテンツ項目にフラグを立てるための要素を追加します。                                                                                                                                                                                                                                      |
 | コンテンツの評価                | コンテンツ項目を評価するための要素を追加します。                                                                                                                                                                                                                                         |
-| コレクションフィルター(7.4以降で利用可能） | 語彙やカテゴリを使ってコレクション表示をフィルタリングするための要素を追加する。                                                                                                                                                                                                                         |
-| 適用されたフィルター(7.4以降で利用可能）  | コレクション表示に適用されるフィルタを表示・管理するための要素を追加する。                                                                                                                                                                                                                            |
-| コレクション表示                | 手動で定義したコレクションと動的に定義したコレクション、およびコレクションプロバイダーによって定義されたコレクションを表示します。 コレクションをグリッドで表示するか、リストテンプレート(ボーダー、箇条書き、インライン、番号、スタイルなしなど）で表示するかを設定することができます。 詳細は、[コレクション表示](../../../displaying-content/additional-content-display-options/displaying-collections.md)を参照してください。 |
+| コレクションフィルター（7.4以降で利用可能） | 語彙やカテゴリを使ってコレクション表示をフィルタリングするための要素を追加する。                                                                                                                                                                                                                         |
+| 適用されたフィルター（7.4以降で利用可能）  | コレクション表示に適用されるフィルタを表示・管理するための要素を追加する。                                                                                                                                                                                                                            |
+| コレクション表示                | 手動で定義したコレクションと動的に定義したコレクション、およびコレクションプロバイダーによって定義されたコレクションを表示します。 コレクションをグリッドで表示するか、リストテンプレート（ボーダー、箇条書き、インライン、番号、スタイルなしなど）で表示するかを設定することができます。 詳細は、[コレクション表示](../../../displaying-content/additional-content-display-options/displaying-collections.md)を参照してください。 |
 
 <!--| Knowledge Base Article Navigation (Available 7.4 U **+/GA** +) | |-->
 
@@ -101,12 +111,12 @@ Form Componentsフラグメントを使用して、コンテンツページ内�
 注目コンテンツの断片は、複数のコンポーネントで構成される複雑なページ要素です。 フラグメントのレイアウトをプレビューするには、フラグメントの「ウィジェット」パネルで **カードビュー**( ![Card View](../../../../images/icon-cards2.png) ) に切り替えます。 Liferay には、以下の Featured Content フラグメントが含まれています。
 
 ```{note}
-Liferay DXP/Portal 7.3では、各フラグメントの*Information*アイコン(！ [Information](../../../../images/icon-information.png) ）にマウスを合わせると、レイアウトのプレビューができます。
+Liferay DXP/Portal 7.3では、各フラグメントの*Information*アイコン(![Information](../../../../images/icon-information.png))にマウスを合わせると、レイアウトのプレビューができます。
 ```
 
 ### バナー
 
-**バナー** フラグメントを使用して、コンテンツページにテキストとリンク要素を追加し、CTA(Call to Action）バナーを作成します。 DXPには、次のレイアウトが含まれています。
+**バナー** フラグメントを使用して、コンテンツページにテキストとリンク要素を追加し、CTA（Call to Action）バナーを作成します。 DXPには、次のレイアウトが含まれています。
 
 ![コンテンツページにテキストやリンクの要素を追加して、Call to Actionバナーを作成することができます。](./default-fragments-reference/images/01.png)
 

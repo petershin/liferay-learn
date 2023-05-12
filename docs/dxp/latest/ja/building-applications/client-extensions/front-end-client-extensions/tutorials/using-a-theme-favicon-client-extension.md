@@ -50,10 +50,11 @@ assemble:
 これは、 `assets/` フォルダ内のすべてを、構築されたクライアント拡張機能 `.zip` ファイルに静的リソースとして含めることを指定します。 テーマのファビコンクライアント拡張子のファビコンファイルは、Liferayの静的リソースとして使用されます。
 
 ## LiferayにClient Extensionをデプロイする。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once Liferay starts, run this command from the client extension's folder in the sample workspace:
+Liferayが起動したら、サンプルワークスペース内のクライアント拡張のフォルダからこのコマンドを実行します：
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)

@@ -28,7 +28,8 @@ understanding-object-integrations/assets-framework-integration.md
 | ワークフロー    | オブジェクトのカスタムワークフローを有効にし、オブジェクトエントリーの作成、レビュー、公開を指示します。                                                                                                                                                                                                                                                                                                                                                                                  |
 
 <!-- TASK: Add the following integrations when ready -->
-<!-- | Job Scheduler | Use the \[Job Scheduler\](../core-frameworks/job-scheduler-framework/using-job-scheduler.m) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |--><!-- | Publications |  | -->
+<!-- | Job Scheduler | Use the [Job Scheduler](../core-frameworks/job-scheduler-framework/using-job-scheduler.m) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |-->
+<!-- | Publications |  | -->
 
 ```{raw} html
 :file: ../../landingpage_template.html

@@ -46,7 +46,7 @@ Liferayが起動したら、
    ![新しい仕様が追加されたことを確認する。](./specification-api-basics/images/01.png)
 
    ```{note}
-   現在、APIでは仕様グループへの仕様ラベルの追加や仕様グループの作成はできません。 代わりにSpecifications UIを使用する必要があります。 *グローバルメニュー*(![アプリケーションメニューアイコン](../../images/icon-applications-menu.png) ）を開き、*Commerce* &rarr; *Specifications* に移動します。 詳しくは、[仕様グループ](../creating-and-managing-products/products/specifications.md#specification-groups) を参照してください。
+   現在、APIでは仕様グループへの仕様ラベルの追加や仕様グループの作成はできません。 代わりにSpecifications UIを使用する必要があります。 *グローバルメニュー*(![アプリケーションメニューアイコン](../../images/icon-applications-menu.png) ）を開き、*Commerce* &rarr; *Specifications* に移動します。 詳しくは、 [仕様グループ](../creating-and-managing-products/products/specifications.md#specification-groups) を参照してください。
    ```
 
 1. または、Javaクライアントを使用してRESTサービスを呼び出します。 `java`フォルダに移動し、ソースファイルをコンパイルします。

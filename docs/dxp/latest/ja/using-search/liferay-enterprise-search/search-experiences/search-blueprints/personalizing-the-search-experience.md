@@ -58,7 +58,7 @@ Search ExperiencesとSearch Blueprintsの最も優れた使用例の1つは、Li
 1. APIキーを入力します.
 1. ［**保存**］ をクリックします。
 
-![[システム設定]でipstackサービスを設定します。](./personalizing-the-search-experience/images/01.png)
+![ [システム設定]でipstackサービスを設定します。](./personalizing-the-search-experience/images/01.png)
 
 ### 位置情報アセットを設定する
 
@@ -95,7 +95,7 @@ ipstackサービスとBoost Proximity Elementで動作するためには、検�
 
 1. **Add**(![Add](../../../../images/icon-add.png)) をクリックして、ブループリントを追加します。
 
-   ![[ブループリントの追加]ウィンドウからブループリントの作成を開始します。](./creating-and-managing-search-blueprints/images/02.png)
+   ![ [ブループリントの追加]ウィンドウからブループリントの作成を開始します。](./creating-and-managing-search-blueprints/images/02.png)
 
 1. ［新規検索ブループリント］ウィンドウで、ブループリントに［name］ (必須) と［description］(オプション) を指定します。
 

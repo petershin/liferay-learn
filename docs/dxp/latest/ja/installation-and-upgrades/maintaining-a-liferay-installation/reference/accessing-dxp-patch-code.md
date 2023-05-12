@@ -78,7 +78,7 @@ GitHubのユーザー名を変更すると、リポジトリへのアクセス�
 
 GitHubユーザーのリポジトリアクセスを削除する方法は次のとおりです。
 
-1. [ヘルプセンター](https://help.liferay.com/hc/en-us/)の[プロジェクト](https://customer.liferay.com/project-details?_ga=2.57624622.528260345.1619731014-1356934316.1588162379)ページに移動します。
+1. [ヘルプセンター](https://help.liferay.com/hc/ja/) の [プロジェクト](https://customer.liferay.com/project-details?_ga=2.57624622.528260345.1619731014-1356934316.1588162379) ページに移動します。
 1. DXPプロジェクトを選択します。
 1. ソースコードアクセス*タブを選択します。
 1. ユーザーのGitHub情報を展開します。

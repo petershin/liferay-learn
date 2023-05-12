@@ -1,6 +1,6 @@
 # システムオブジェクトの拡張
 
-{bdg-secondary}`利用可能 Liferay 7.4 U70+/GA70+`
+{bdg-secondary}`利用可能 Liferay 7.4 U72+/GA72+`
 
 Liferay Objectを使用すると、サポートされているシステムサービスを拡張することができます。 現在、オブジェクトフレームワークと統合されているのは、次のサービスのみです：［Account］、［Commerce Order］、［Commerce Product］、［Commerce Product Group］、［Postal Address］、［User］。
 
@@ -23,10 +23,10 @@ Liferay Objectを使用すると、サポートされているシステムサー
 
 ## フィールドの追加
 
-システムオブジェクトにフィールドを追加することができます。 追加のデータベースカラムは、サービスの元のテーブル名に`_x`を付加したものを使用する別のデータベーステーブルに追加されます(例: `AccountEntry_x`）。 システムオブジェクトは、利用可能なすべてのフィールドタイプ( [）をサポートしています](./fields.md)。 システムオブジェクトはカスタムレイアウトやビューをサポートしないため、これらのカスタムフィールドにはHeadless APIを介してのみアクセスできます。 詳細については、[オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md)を参照してください。
+システムオブジェクトにフィールドを追加することができます。 追加のデータベースカラムは、サービスの元のテーブル名に`_x`を付加したものを使用する別のデータベーステーブルに追加されます（例: `AccountEntry_x`）。 システムオブジェクトは、利用可能なすべてのフィールドタイプ（ [）をサポートしています](./fields.md)。 システムオブジェクトはカスタムレイアウトやビューをサポートしないため、これらのカスタムフィールドにはHeadless APIを介してのみアクセスできます。 詳細については、[オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md)を参照してください。
 
 ```{note}
-Liferayの[カスタムフィールド](../../system-administration/configuring-liferay/adding-custom-fields.md)アプリケーションは、[Expando](../../data-frameworks/expando-framework/accessing-custom-fields-with-expando.md)フレームワークを使ったほとんどのLiferayシステムアプリケーションへのフィールドを追加するためのものです。 オブジェクトはExpandoベースのカスタムフィールドに対応していないため、オブジェクト機能( [relationships](#adding-relationships) 、 [actions](#adding-actions) および [validations](#adding-validations) など）で使用することはできません。
+Liferayの[カスタムフィールド](../../system-administration/configuring-liferay/adding-custom-fields.md)アプリケーションは、[Expando](../../data-frameworks/expando-framework/accessing-custom-fields-with-expando.md)フレームワークを使ったほとんどのLiferayシステムアプリケーションへのフィールドを追加するためのものです。 オブジェクトはExpandoベースのカスタムフィールドに対応していないため、オブジェクト機能（ [relationships](#adding-relationships) 、 [actions](#adding-actions) および [validations](#adding-validations) など）で使用することはできません。
 ```
 
 ## リレーションシップの追加
@@ -41,7 +41,7 @@ Liferayの[カスタムフィールド](../../system-administration/configuring-
 
 システムオブジェクトが多対多の関係にある場合、または1対多の関係の親側にある場合、Liferayは関係の問い合わせと管理のために [RESTエンドポイント](../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれます。
 
-この例では、Userシステムオブジェクトは、カスタムオブジェクト(`timeOffRequest`）と1対多の関係(`userRequests`）になっています。 これらのエンドポイントは、 [`headless-admin-user`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-user/v1.0/openapi.json) サービスに表示されます。
+この例では、Userシステムオブジェクトは、カスタムオブジェクト（`timeOffRequest`）と1対多の関係（`userRequests`）になっています。 これらのエンドポイントは、 [`headless-admin-user`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-user/v1.0/openapi.json) サービスに表示されます。
 
 ![Liferayは、リレーションシップを照会・管理するためのRESTエンドポイントを生成します。](./extending-system-objects/images/02.png)
 
@@ -51,13 +51,13 @@ Liferayの[カスタムフィールド](../../system-administration/configuring-
 
 システムオブジェクトにアクションを追加し、エントリーの追加、更新、削除などのイベントをトリガーにすることができます。 下の表は、システムオブジェクトがサポートするアクションを示したものです。
 
-| アクションの種類                                                                      | System Objectsでサポートされている？ |
-|:----------------------------------------------------------------------------- |:------------------------- |
-| [Webhook](./actions/defining-object-actions.md#webhook)                       | &#10004;                  |
-| [Groovy スクリプト](./actions/defining-object-actions.md#groovy-script)            | &#10004;                  |
-| [通知](./actions/defining-object-actions.md#notification)                       | &#10004;                  |
-| [オブジェクトエントリーを追加](./actions/defining-object-actions.md#add-an-object-entry)    | &#10008;                  |
-| [オブジェクトエントリーを更新](./actions/defining-object-actions.md#update-an-object-entry) | &#10008;                  |
+| アクションの種類                                                                      | システムオブジェクトでのサポートの有無 |
+|:----------------------------------------------------------------------------- |:------------------- |
+| [Webhook](./actions/defining-object-actions.md#webhook)                       | &#10004;            |
+| [Groovy スクリプト](./actions/defining-object-actions.md#groovy-script)            | &#10004;            |
+| [通知](./actions/defining-object-actions.md#notification)                       | &#10004;            |
+| [オブジェクトエントリーを追加](./actions/defining-object-actions.md#add-an-object-entry)    | &#10004;            |
+| [オブジェクトエントリーを更新](./actions/defining-object-actions.md#update-an-object-entry) | &#10004;            |
 
 詳しくは、 [オブジェクトアクションの定義](./actions/defining-object-actions.md) をご覧ください。
 

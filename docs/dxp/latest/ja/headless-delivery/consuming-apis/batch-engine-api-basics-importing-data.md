@@ -198,7 +198,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ## サイトへのデータ取り込み
 
-以下のcURLまたはJavaコマンドを実行することで、サイトにデータを取り込むことができます。 この例では、ブログの記事をサイトにインポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` に置き換えます。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータとインポートするデータも更新する必要があります。
+以下のcURLまたはJavaコマンドを実行することで、サイトにデータを取り込むことができます。 この例では、ブログの記事をサイトにインポートしています。 [RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、 `1234` に置き換えます。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメータとインポートするデータも更新する必要があります。
 
 ### ImportTask_POST_ToSite.sh
 

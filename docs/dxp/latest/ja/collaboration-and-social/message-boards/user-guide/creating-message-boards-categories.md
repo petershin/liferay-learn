@@ -24,7 +24,7 @@
 
     ![掲示板カテゴリーを設定します。](./creating-message-boards-categories/images/02.png)
 
-1. ここでは、 ［**Viewable by**］ を ［**Anyone (Guest Role)**］ のままにします。 使用可能なさまざまな権限の詳細は、[掲示板の権限リファレンス](./message-boards-permissions-reference.md)を参照してください。
+1. ここでは、 ［**Viewable by**］ を ［**Anyone (Guest Role**)］ のままにします。 使用可能なさまざまな権限の詳細は、[掲示板の権限リファレンス](./message-boards-permissions-reference.md)を参照してください。
 1. ［**Save**］ をクリックします。
 
 新しいカテゴリがテーブルに表示されます。

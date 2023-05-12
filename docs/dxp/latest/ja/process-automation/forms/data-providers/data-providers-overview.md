@@ -12,7 +12,7 @@
 データソースの中には、 [restcountries.com](https://restcountries.com) データプロバイダーのようなサードパーティーのソースから取得するものもあります。 また、Liferay DXPには独自に登録されたWebサービスがあります。 ローカルサーバーを実行している場合は、 [http://localhost:8080/api/jsonws](http://localhost:8080/api/jsonws) でリストを参照してください。 国のリストを入力する場合、2つの`get-countries` JSON Web サービスがありますが、どちらでも動作します。 ［**Invoke**］ をクリックすると、結果が生成されます。
 
 ```{warning}
-ローカルテスト環境でLiferayのWebサービスとデータプロバイダを使ってテストするには、ローカルネットワークアクセスを有効にする必要があります。 [ローカルネットワーク上のデータへのアクセスの有効化](./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network) を参照してください
+Liferayのウェブサービスを使用して、ローカルなテスト環境でデータプロバイダーとテストをするには、ローカルネットワークアクセスを有効にする必要があります。 [ローカルネットワーク上のデータへのアクセスを有効にする](./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network) を参照して下さい。
 ```
 
 ［**Result**］ タブには、次のアフガニスタンのレコードのように、JSON構文を使用した国のリストが表示されます。
@@ -42,9 +42,9 @@ Webサービスから選択可能なフィールドを選択します。 `get-co
 
 フォームアプリケーションからデータプロバイダーを設定するには、 ［**サイト管理**］ &rarr; ［**コンテンツ & データ**］ &rarr; ［**フォーム**］ へ行きます。 ［**データプロバイダー**］ タブをクリックし、（![Add icon](../../../images/icon-add.png)）アイコンをクリックして開始します。 データプロバイダーを設定する際には、いくつかのフィールドに入力する必要があります。
 
-![このデータサービスでは、国を返します。](./data-providers-overview/images/03.png)
+![このデータ提供者は、国を返します。](./data-providers-overview/images/03.png)
 
-### URL (Automatic Copy)
+### URL
 
 内部または外部のRESTサービスのエンドポイントのURLを入力します。 上記の例では、<https://restcountries.com/>にあるRESTサービスを示していて、このサービスには`region`で国を検索するエンドポイントが含まれています。
 
@@ -76,7 +76,7 @@ Webサービスから選択可能なフィールドを選択します。 `get-co
 
 ### 入力
 
-RESTサービスからのパスパラメーターまたはクエリパラメーターを設定して、RESTサービスの応答を絞り込みます。 ラベル、パラメーター、タイプ（テキストまたは数値）を指定し、データプロバイダーを使用するために入力が必要かどうかを選択します。
+RESTサービスからのパスパラメーターまたはクエリパラメーターを設定して、RESTサービスの応答を絞り込みます。 ラベル、パラメータ、タイプ（テキストまたは数値）を指定します。
 
 ### 出力
 
@@ -84,7 +84,7 @@ RESTサービスからのパスパラメーターまたはクエリパラメー�
 
 複数の入力を追加することができます。 入力値を指定する方法を提供するには、 [自動入力ルール](../form-rules/using-the-autofill-rule.md)を使用します。 ユーザーが1つのフィールドに入力すると、その入力内容がRESTサービスに送信されます。 RESTサービスの応答データは、入力パラメータによってフィルタリングされます。
 
-出力パスフィールドは [JsonPath構文](https://github.com/json-path/JsonPath) で指定されるため、必ず`$`で始まる必要があります。 パスが返すデータのタイプは、［Type］フィールドで選択したタイプと一致する必要があります。 `restcountries.com` サービスを使用して、[パス]フィールドに`$..name`と入力することで、`name`フィールドを出力として指定します。 より複雑なJsonPath式を構築する必要がある場合（たとえば、人口1億人以上のすべての国の名前が必要な場合 --- `restcountries.com`サービスを使用した `$..[?(@.population>100000000)].name`）は、 [こちら](http://jsonpath.herokuapp.com/) や [こちら](https://jsonpath.com/) のように`JsonPath`エバリュエーターを使用することを検討してください。
+出力パスフィールドは [JsonPath構文](https://github.com/json-path/JsonPath) で指定されるため、必ず`$`で始まる必要があります。 パスが返すデータのタイプは、［Type］フィールドで選択したタイプと一致する必要があります。 `restcountries.com` サービスを使用して、［パス］フィールドに`$..name`と入力することで、`name`フィールドを出力として指定します。 より複雑なJsonPath式を構築する必要がある場合（たとえば、人口1億人以上のすべての国の名前が必要な場合 --- `restcountries.com`サービスを使用した `$..［?(@.population>100000000)］.name`）は、 [こちら](http://jsonpath.herokuapp.com/) や [こちら](https://jsonpath.com/) のように`JsonPath`エバリュエーターを使用することを検討してください。
 
 ```{tip}
 ある値を表示し、別の値をデータベースに保存するには、[Paths]フィールドにセミコロンで区切って両方を入力します（`$..name;$..numericCode`）。

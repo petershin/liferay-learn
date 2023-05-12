@@ -46,15 +46,15 @@ After adding the Mini Cart fragment to a page,
 
 The header area contains two buttons: 
 
-* View Details: Go to the Open Carts page to view more details about the open order.
+**View Details:** Go to the Open Carts page to view more details about the open order.
 
-* Remove All Items: Clear your cart of products.
+**Remove All Items:** Clear your cart of products.
 
 The product list area displays all products in the cart along with their quantity and price. Here you can remove (![Delete](../../images/icon-delete.png)) or adjust the quantity of individual products. As you make changes, the cart summary section updates automatically. Click _Submit_ to continue checking out.
 
 ## Quickly Adding Products to the Cart
 
-You can use the search bar in the fragment to quickly add items to the cart. Search by a product name or known SKU. This can reduce the time to create orders by removing the burden of searching through the catalog.
+You can use the search bar in the fragment to add items to the cart quickly. Search by a product name or known SKU. This can reduce the time to create orders by removing the burden of searching through the catalog.
 
 After adding the Mini Cart fragment to a page,
 
@@ -76,6 +76,8 @@ SKUs may reach end-of-life (EOL) and be marked as discontinued. Discontinued SKU
 
 ## Additional Information
 
-* [Catalog](../commerce-storefront-pages/catalog.md)
-* [Pending Orders](../commerce-storefront-pages/pending-orders.md)
-* [Checkout](../commerce-storefront-pages/checkout.md)
+[Catalog](../commerce-storefront-pages/catalog.md)
+
+[Pending Orders](../commerce-storefront-pages/pending-orders.md)
+
+[Checkout](../commerce-storefront-pages/checkout.md)

@@ -29,7 +29,7 @@ The account selector immediately shows the user's selected account, if any exist
 
 ## Account Selector Details
 
-After adding the account selector fragment to a page, you can click the account icon to open it. Here you can access the accounts you have permission to manage. You can also create a new order from the account selector by clicking on the _Create New Order_ button. For this to work correctly, you must have an [Open Carts page](../commerce-storefront-pages/pending-orders.md).
+After adding the account selector fragment to a page, you can click the account icon to open it. Here you can access the accounts you have permission to manage. You can also create a new order from the account selector by clicking the _Create New Order_ button. For this to work correctly, you must have an [Open Carts page](../commerce-storefront-pages/pending-orders.md).
 
 When you have an active order, the account selector fragment displays the order number and its status right below the account name. If there's an active workflow, the order is created with the _Draft_ status.
 
@@ -37,6 +37,8 @@ When you have an active order, the account selector fragment displays the order 
 
 ## Additional Information
 
-* [Catalog](../commerce-storefront-pages/catalog.md)
-* [Pending Orders](../commerce-storefront-pages/pending-orders.md)
-* [Checkout](../commerce-storefront-pages/checkout.md)
+[Catalog](../commerce-storefront-pages/catalog.md)
+
+[Pending Orders](../commerce-storefront-pages/pending-orders.md)
+
+[Checkout](../commerce-storefront-pages/checkout.md)

@@ -21,6 +21,14 @@ Here, we'll continue the story of Delectable Bonsai, a fictional B2B producer of
 
 This course is organized into four modules. The first three develop the Distributor Application using only out-of-the-box features. The fourth and final module develops the Ticketing System using more advanced development capabilities.
 
+By the end of this course, you'll create an onboarding flow that takes users from submitting an application to a newly business account once approved.
+
+<!-- 
+```{note}
+This course uses both Java and Javascript. To proceed, ensure _.
+```
+-->
+
 ## Learning Objectives
 
 By the end of this course, you will know how to

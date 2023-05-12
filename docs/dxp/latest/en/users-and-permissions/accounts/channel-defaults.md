@@ -1,6 +1,7 @@
 ---
 toc:
   - ./channel-defaults/setting-channel-defaults.md
+  - ./channel-defaults/channel-defaults-permissions-reference.md
 uuid: eeecd784-2cf2-4b02-9c11-52ef261b18ac
 ---
 # Channel Defaults
@@ -33,5 +34,9 @@ For example, if Discount A is the channel default for a business account but onl
 
 :::{grid-item-card}  Setting Channel Defaults
 :link: ./channel-defaults/setting-channel-defaults.md
+:::
+
+:::{grid-item-card}  Channel Defaults Permissions Reference
+:link: ./channel-defaults/channel-defaults-permissions-reference.md
 :::
 ::::

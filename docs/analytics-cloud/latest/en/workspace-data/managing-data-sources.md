@@ -24,7 +24,3 @@ If you choose to disconnect the DXP instance from the workspace, click the *Disc
 **Synced Sites:** Shows your DXP Sites' sync status with Analytics Cloud. To configure, see [syncing sites to a property](../workspace-settings/scoping-sites-and-individuals-using-properties.md#syncing-sites-to-a-property).
 
 **Synced Contacts:** Shows your DXP contacts sync status with Analytics Cloud. To configure, see [syncing contacts to a property](../workspace-settings/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property)
-
-## Deleting a Data Source
-
-To delete the data source, click the *Delete Data Source* button at the top right of the page. You're asked to confirm. Note, deleting the data source removes the connection and deletes all synced data.

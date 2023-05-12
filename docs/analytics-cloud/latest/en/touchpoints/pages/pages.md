@@ -30,13 +30,17 @@ All Page data in Analytics Cloud appears for a specified time period. The time p
 The Overview tab of a Page's metrics has several data presentations. The first chart, called Visitor Behavior, contains these metrics:
 
 * Unique Visitors
-* Total Views
+* Views
 * Bounce Rate
-* Average Time on Page
+* Time on Page
 * Entrances
 * Exit Rate
 
-Select the time period for the data displayed. There are always two trend lines displayed: Selected Period and Previous Period. This facilitates comparisons between time periods.
+```{note}
+These metrics are updated after the end of a user's session (i.e. 30 minutes of inactivity) or the end of the day (i.e. 23:59). However, the Views metric is updated immediately and not dependent on the end of a user's session.
+```
+
+Select the time period for the data displayed. Select _Compare to Previous_ to see a second comparison line of the previous time period.
 
 ![Trends can be identified over selected periods of time.](pages/images/01.png)
 
@@ -48,11 +52,11 @@ Useful with the time period filter, Page Visitors is the number of visitors that
 
 A unique visitor has a unique IP address in Analytics Cloud. Therefore, if the same person views the Page from a different device, it's logged as two unique visitors.
 
-### Page Views
+### Views
 
-Useful with the time period filter, Page View is the number of views for a Page Page in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. Over the last 30 days, one visitor (IP address) could come back to the Page 100 times. That means there are 100 Page Views, but only one visitor (assuming she used the same machine to access the Page each time. However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the Page passes before the user interacts with the Page again.
+Useful with the time period filter, View is the number of views for a Page in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. Over the last 30 days, one visitor (IP address) could come back to the Page 100 times. That means there are 100 Page Views, but only one visitor (assuming she used the same machine to access the Page each time. However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the Page passes before the user interacts with the Page again.
 
-### Page Bounce Rate
+### Bounce Rate
 
 Bounce Rate is the percentage of visitors to the Page that navigated away from the site without any page interaction (including scrolling on the page) after the initial page load. It's calculated as a daily rate (percentage per day), and the daily rate trend line is displayed over the selected time period.
 
@@ -88,7 +92,7 @@ The Audience report uses charts to present information about the audience intera
 
 **Segmented Viewers:** A donut chart presents the percentage of known individuals who belong or do not belong to one or more Analytics Cloud Segments. The center of the chart shows the total number of known individuals. Tooltips on each chart section show the number of users for that section (e.g, the number of users belonging to one or more Segments). 
 
-**Segments at the Time of View:** A bar chart shows the percentage of known individuals that comprise each Segment. The chart shows a bar for each of the top five Segments, and then aggregates the remaining Segments into the last bar. A tooltip on the last bar shows the values for each of the remaining Segments.
+**Viewer Segments:** A bar chart shows the percentage of known individuals that comprise each Segment. The chart shows a bar for each of the top five Segments, and then aggregates the remaining Segments into the last bar. A tooltip on the last bar shows the values for each of the remaining Segments.
 
 ![Quickly identify and segment users of your site.](pages/images/02.png)
 
@@ -108,17 +112,4 @@ Click Web Browser to see a donut chart displaying up to the top eight web browse
 
 ![Learn how many users are distributed across different browser agents.](pages/images/05.png)
 
-## Assets
-
-View a list of the Assets on the Page by their number of Interactions over the selected time period.
-
-Depending on the Asset being viewed, a different Interaction metric is reported:
-
-* Blogs reports Views
-* Documents and Media reports Downloads
-* Forms reports Submissions
-* Web Content reports Views
-
-![Identify high performing assets on your site.](pages/images/06.png)
-
-After all those fundamental metrics, you're really getting to know your Pages. But there's some interesting Page data you haven't seen. Discover how people came to the Page in the first place. Learn about Path Analytics next.
+After all those fundamental metrics, you're really getting to know your Pages. But there's some interesting Page data you haven't seen. Discover how people came to the Page in the first place. Learn about [Path Analytics](./paths.md) next.

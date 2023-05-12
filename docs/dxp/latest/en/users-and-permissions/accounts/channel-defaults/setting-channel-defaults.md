@@ -132,8 +132,6 @@ When selecting default Channel Account Managers, only users with a regular role 
 
 By itself, this permission does not grant access to the Accounts application, or to view and update individual accounts. It also does not grant allow managing orders or setting channel defaults for price lists and other Commerce entities. If you want Channel Account Managers to perform these administrative actions, you must grant them the necessary permissions for each application (e.g., Accounts, Orders, Price Lists).
 
-<!-- Link to Channel Defaults Permission Guide when published -->
-
 ```{note}
 If you use [organizations](../../organizations/understanding-organizations.md), users can continue to manage the organization accounts they have permission to manage along with accounts for which they are default Channel Account Managers.
 ```
@@ -141,4 +139,5 @@ If you use [organizations](../../organizations/understanding-organizations.md), 
 ## Related Topics
 
 * [Channel Defaults](../channel-defaults.md)
+* [Channel Defaults Permissions Reference](./channel-defaults-permissions-reference.md)
 * [Introduction to Channels](https://learn.liferay.com/web/guest/w/commerce/store-management/channels/introduction-to-channels)

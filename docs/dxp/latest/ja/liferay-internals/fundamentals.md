@@ -9,7 +9,7 @@ toc:
 - ./fundamentals/configuring-dependencies.md
 - ./fundamentals/using-the-gogo-shell.md
 ---
-# Fundamentals
+# 基本
 
 ```{toctree}
 :maxdepth: 3

@@ -1,7 +1,7 @@
 ---
 toc: 
-    - ./authorizing-and-single-sign-on/authenticating-with-saml.md
-    - ./authorizing-and-single-sign-on/authorizing-with-oauth2.md
+- ./authorizing-and-single-sign-on/authenticating-with-saml.md
+- ./authorizing-and-single-sign-on/authorizing-with-oauth2.md
 uuid: 0aba9fed-1dee-4bd0-a57a-fd8200e72c35
 ---
 # Authorizing and Single Sign-On

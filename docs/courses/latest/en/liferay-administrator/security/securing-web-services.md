@@ -1,7 +1,7 @@
 ---
 toc:
-   - ./securing-web-services/service-access-policies.md
-   - ./securing-web-services/cross-origin-resource-sharing.md
+- ./securing-web-services/service-access-policies.md
+- ./securing-web-services/cross-origin-resource-sharing.md
 uuid: d717105d-bf1d-4b82-88ea-61798efeb7a5
 ---
 # Securing Web Services

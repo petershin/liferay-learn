@@ -1,12 +1,12 @@
 ---
 toc:
-    - ./authentication/configuring-sign-in.md
-    - ./authentication/authentication-verifiers.md
-    - ./authentication/password-policies.md
-    - ./authentication/configuring-mfa.md
+- ./authentication/configuring-sign-in.md
+- ./authentication/authentication-verifiers.md
+- ./authentication/password-policies.md
+- ./authentication/configuring-mfa.md
 uuid: 260baca9-d846-4fe9-ac3c-006b3acde892
 ---
-# Authentication 
+# Authentication
 
 Liferay's authentication options are flexible enough for almost any scenario you can cook up. From configuring how users sign in, to how authenticated sessions are verified, to configuring more secure authentication via multiple factors, you can configure your Liferay-based website's authentication the way you need it. 
 

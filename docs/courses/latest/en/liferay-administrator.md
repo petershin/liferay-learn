@@ -1,6 +1,5 @@
 ---
 toc:
-- ./liferay-administrator/cloud-administrator.md
 - ./liferay-administrator/configuration.md
 - ./liferay-administrator/users-accounts-organizations.md
 - ./liferay-administrator/user-data.md
@@ -30,7 +29,7 @@ Dive in and begin creating a website for Delectable Bonsai, a (fake) company tha
 
 What are you waiting for? Start by creating your Liferay [configuration](./liferay-administrator/configuration.md). 
 
-::::{grid} 1
+::::{grid} 2
 :gutter: 3 3 3 3
 
 :::{grid-item-card}  Configuration

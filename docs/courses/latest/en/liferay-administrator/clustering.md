@@ -1,8 +1,8 @@
 ---
 toc:
-   - ./clustering/configuring-the-database.md
-   - ./clustering/configuring-search.md
-   - ./clustering/configuring-the-dxp-cluster.md
+- ./clustering/configuring-the-database.md
+- ./clustering/configuring-search.md
+- ./clustering/configuring-the-dxp-cluster.md
 uuid: 1dc9419e-caaa-4805-8289-bb7629674882
 ---
 # Clustering

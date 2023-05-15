@@ -11,18 +11,9 @@ A microservice client extension relies on OAuth 2 for communication with Liferay
 | Run the Spring Boot microservice application           | Protected endpoint: `/dad/joke`                                                                                                          | A protected endpoint to the resource server. It takes a Jwt token and returns a payload.                          | liferay-sample-etc-spring-boot  |
 | Deploy the Liferay Sample Custom Element 2             | Client extension: [`customElement`](../../front-end-client-extensions/custom-element-yaml-configuration-reference.md)                    | Defines a custom element and requests the payload from the resource server, through its OAuth 2 client code.      | liferay-sample-custom-element-2 |
 
-An authenticated user loads a page with the client application on it (the custom element). The custom element requests an authorization code, which is made available by the communication channel configured by our user agent extension (essentially Liferay is the authorization server). Liferay returns the code, then the client asks for the access token via back channel request.
+An authenticated user loads a page with the client application on it (the custom element). The custom element requests an authorization code, which is made available by the communication channel configured by our user agent extension (i.e., Liferay is the authorization server). Liferay returns the code, then the client asks for the access token via back channel request. With the token, the endpoint in the microservice is accessible by the client.
 
 Extensions of type `oAuthApplicationUserAgent` are registered as having a client profile User Agent Application, meaning that the Authorization Code flow is being used.
-
-[Where is this specified or defined? Is it inherent to the profile "User Agent Application", which is defined by the CX `type` property?] The OAuth 2.0 Authorization Code Grant is used to certify the user's request to the protected endpoint in the microservice.
-
-Because the OAuth 2.0 application defined in Liferay (via the allows JWT_BEARER authorization tokens, the request to the microservice includes this token, generated for the logged in user. The microservice then provides this token in the Authorization headers of its constructed Web Client. The Custom Element client extension's JS files simply reference the OAuth Application User Agent and ask for the correct route from the application, and let the authorization orchestration happen between Liferay's OAuth administration backend and the external microservice's protected route.
-
-This example 
-
-1. Deploys an OAuth Application User Agent client extension 
-1. Runs a microservice outside of Liferay 
 
 ## Prerequisites
 
@@ -48,7 +39,6 @@ Now you have the tools to start the microservice and deploy the client extension
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
-
 
 ## Examine the Microservice Project's Client Extensions
 
@@ -102,7 +92,7 @@ liferay-sample-oauth-application-user-agent:
 
 The external application/microservice is created with the `bootJar` command.
 
-<!--There are some confusing things about this. You have to deploy this to Liferay, but you have to do it by running a weird command at the workspace root, gw :client-extensions:liferay-sample-etc-spring-boot:deploy -Ddeploy.docker.container.id=lrdev. The deploy command isn't even available for the client extension (../../gradlew tasks). Also, I want to talk about bootJar and have the reader run it, but in reality we need bootRun, parth of the liferay gradle plugin.-->
+<!--There are some confusing things about this. You have to deploy this to Liferay, but you have to do it by running a weird command at the workspace root, gw :client-extensions:liferay-sample-etc-spring-boot:deploy. The deploy command isn't even available for the client extension (../../gradlew tasks). Also, I want to talk about bootJar and have the reader run it, but in reality we need bootRun, part of the liferay gradle plugin.-->
 
 The most important part of the `client-extension.yaml` is in the `liferay-sample-oauth-application-user-agent` definition. This sets up Liferay as the authorization server, so that the front-end client extension you deploy next can call the resource server's secure endpoint and display its payload.
 
@@ -150,11 +140,10 @@ liferay-sample-custom-element-2:
 
    ![The Liferay Sample OAuth Application User Agent is added when you deploy the client extension.](./using-a-microservice-client-extension/images/01.png)
 
-The Liferay Sample OAuth Application User Agent provides the [OAuth2 authorization](../../../../headless-delivery/using-oauth2.md) needed so that Liferay can access the Spring Boot application's data through its protected endpoint. Nowhere in the client extension is the client ID or secret needed for authorization. This is because, due to its omission, the [Client Authentication Method] is set to `none`. All that is needed for Liferay to authorize the application in this case is declaring the external reference code in the `application-default.properties`:
-<!-- Is this actually true? Should we instruct what you'd do to make it more super-secure?-->
+The Liferay Sample OAuth Application User Agent provides the [OAuth2 authorization](../../../../headless-delivery/using-oauth2.md) needed so that Liferay can access the Spring Boot application's data through its protected endpoint. All that is needed for Liferay to authorize the application in this case is declaring the external reference code in the `application-default.properties`:
 
 ```properties
-liferay.oauth.application.external.reference.codes=liferay-sample-oauth-application-user-agent
+liferay.oauth.application.external.reference.codes=liferay-sample-etc-spring-boot-oauth-application-user-agent
 ```
 
 ## Start the Microservice
@@ -192,4 +181,4 @@ Add the Custom Element 2 widget to a page in your running Liferay. When you publ
 
 ## Additional Details
 
-<!--More detailed OAuth 2 stuff?-->
+<!--More detailed OAuth 2 stuff, or is keeping it simple better?-->

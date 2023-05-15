@@ -170,7 +170,7 @@ Elasticsearch is ready for [connections from Liferay](./connecting-to-elasticsea
 
 If you're running in production, [secure communication between Liferay and Elasticsearch](./securing-elasticsearch.md).
 
-## Additional Topics
+## Related Topics
 
 * [Securing Elasticsearch](./securing-elasticsearch.md)
 * [Liferay Enterprise Search](../../liferay-enterprise-search.md)

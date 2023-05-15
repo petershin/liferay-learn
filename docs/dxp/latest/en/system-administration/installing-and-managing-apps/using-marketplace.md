@@ -94,7 +94,7 @@ Follow these steps to install the Marketplace plugin:
 
 The Marketplace is now available to use in the Control Panel.
 
-## Additional information
+## Related Topics
 
 * [Installing Apps](./installing-apps.md)
 * [Renewing Apps](./managing-apps/renewing-apps.md)

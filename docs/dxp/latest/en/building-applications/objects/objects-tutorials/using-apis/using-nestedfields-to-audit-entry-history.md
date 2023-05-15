@@ -281,7 +281,7 @@ The provided GET scripts add the `nestedFields` parameters to their URL.
    :language: bash
 ```
 
-## Additional Information
+## Related Topics
 
 * [Auditing Object Definition Events](../../creating-and-managing-objects/auditing-object-definition-events.md)
 * [Using `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md)

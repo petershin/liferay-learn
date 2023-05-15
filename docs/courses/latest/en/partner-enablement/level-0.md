@@ -11,6 +11,6 @@ Welcome to the Level 0 modules! These modules introduce you to Liferay: the comp
 :::{grid-item-card} The Liferay Product Offering
 :link: ./level-0/the-liferay-product-offering.md
 
-This module provides an introduction to the Liferay product and product offerings.
+This module provides an introduction to Liferay, Liferay's sales approach, and the capabilities of Liferay DXP.
 :::
 ::::

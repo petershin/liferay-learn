@@ -8,7 +8,7 @@ uuid: 65b4cc84-7474-473a-a399-1fa6231051ed
 The Account Selector fragment provides an easy way for users to switch between their accounts when browsing products and creating orders.
 
 ```{tip}
-The fragment works best in [catalog](../commerce-storefront-pages/catalog.md), [open cart](../commerce-storefront-pages/pending-orders.md), and [checkout](../commerce-storefront-pages/checkout.md) pages.
+The fragment works best when you have the [catalog](../commerce-storefront-pages/catalog.md), [open cart](../commerce-storefront-pages/pending-orders.md), and [checkout](../commerce-storefront-pages/checkout.md) pages.
 ```
 
 ## Adding the Account Selector Fragment to a Page

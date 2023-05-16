@@ -28,6 +28,7 @@ If you don't sell sports apparel, you could use the Interest data to convince sp
 
 Either way, the Interests insight helps generate new business. The Interests insight tells you the most common topics mentioned by the pages and assets customers visit most.
 
+<!--- 
 ## Adding Keywords to the Block List
 
 Follow these steps to add a keyword to the block list:
@@ -41,3 +42,4 @@ Follow these steps to add a keyword to the block list:
 To delete a keyword from the block list, click that keyword's trash icon (![Delete](../../images/icon-delete.png)). To delete multiple keywords at once, select the checkbox for each and click the trash icon that appears at the top of the table. You can select all keywords via the checkbox at the top of the table.
 
 ![The keyword management screen.](managing-interest-topics/images/01.png)
+--->

@@ -11,6 +11,10 @@ There are two types of Segments:
 
 **Dynamic Segments:** Individuals aggregated automatically based on criteria that you specify. Criteria can be based on Individuals' attributes and interaction with your Liferay DXP Site pages and assets. For example, you can use an industry attribute as criteria. Analytics on industry Segments show industries that engage with you the most and what content they're interested in.
 
+```{note}
+Dynamic segment data is updated every hour. Dynamic segment data is also update when a new dynamic segment is created or when a dynamic segment is edited.
+```
+
 **Static Segments:** Individuals you aggregate manually. 
 
 ## Segment Profiles

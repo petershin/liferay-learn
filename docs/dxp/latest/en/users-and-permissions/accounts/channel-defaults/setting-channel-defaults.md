@@ -130,7 +130,7 @@ When selecting default Channel Account Managers, only users with a regular role 
 
 ![Users with this permission appear in the channel account manager dropdown menu.](./setting-channel-defaults/images/08.png)
 
-By itself, this permission does not grant access to the Accounts application, or to view and update individual accounts. It also does not grant allow managing orders or setting channel defaults for price lists and other Commerce entities. If you want Channel Account Managers to perform these administrative actions, you must grant them the necessary permissions for each application (e.g., Accounts, Orders, Price Lists).
+By itself, this permission does not grant access to the Accounts application, or to view and update individual accounts. It also does not grant allow managing orders or setting channel defaults for price lists and other Commerce entities. If you want Channel Account Managers to perform these administrative actions, you must grant them the necessary permissions for each application (e.g., Accounts, Orders, Price Lists). See [Channel Defaults Permissions Reference](./channel-defaults-permissions-reference.md) for more information.
 
 ```{note}
 If you use [organizations](../../organizations/understanding-organizations.md), users can continue to manage the organization accounts they have permission to manage along with accounts for which they are default Channel Account Managers.

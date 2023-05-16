@@ -25,7 +25,7 @@
 
 ## React 차트용 객체 만들기
 
-1. **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png))를 열고 **Control Panel** 탭으로 이동한 다음 **Objects** 를 클릭합니다. .
+1. **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png))를 열고 **Control Panel** 탭으로 이동한 다음 **Objects** 를 클릭합니다.
 
 1. **추가** 버튼(![추가 버튼](../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
@@ -175,7 +175,7 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
 
    | 분야         | 가치                    |
    |:---------- |:--------------------- |
-   | 이름         | X3J8-맞춤 요소            |
+   | 이름         | X3J8-Custom-Element            |
    | 유형         | 커스텀 엘레멘트              |
    | HTML 요소 이름 | `x3j8-custom-element` |
    | URL        | `.js` 파일의 WebDAV URL  |

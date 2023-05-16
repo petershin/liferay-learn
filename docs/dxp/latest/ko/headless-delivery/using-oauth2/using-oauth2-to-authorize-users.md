@@ -7,7 +7,7 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 으로 이동합니다. **보안***OAuth 2 관리** .
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 으로 이동합니다. **보안** **OAuth 2 관리**.
 
 1. **추가**(![아이콘 추가](../../images/icon-add.png))를 클릭하여 새 OAuth2 애플리케이션을 생성합니다.
 

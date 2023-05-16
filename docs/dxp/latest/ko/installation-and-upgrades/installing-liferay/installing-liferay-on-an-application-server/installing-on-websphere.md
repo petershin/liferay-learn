@@ -282,7 +282,6 @@ WebSphere를 사용하여 메일 세션을 관리하려면 다음 단계를 따�
 1. **적용** 클릭합니다.
 
 1. Liferay Home의 `portal-ext.properties` 파일에서 메일 세션을 지정합니다. 예를 들어, 
-   
 
     ```properties
     mail.session.jndi.name=mail/MailSession

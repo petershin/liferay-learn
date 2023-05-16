@@ -21,7 +21,7 @@
 
 ## CRUD 애플리케이션을 위한 객체 생성
 
-1. **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png))를 열고 **Control Panel** 탭을 클릭한 다음 **Objects** 로 이동합니다. .
+1. **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png))를 열고 **Control Panel** 탭을 클릭한 다음 **Objects** 로 이동합니다.
 
 1. **추가** 버튼(![추가 버튼](../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 

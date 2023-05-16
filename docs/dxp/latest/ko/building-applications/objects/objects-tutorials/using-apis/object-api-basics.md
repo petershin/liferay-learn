@@ -34,7 +34,7 @@
 1. **세부 정보** 탭으로 이동하여 **게시** 를 클릭합니다.
 
    ```{important}
-   For this tutorial, you must use the above values.
+   이 자습서에서는 위의 값을 사용해야 합니다.
    ```
 
 [Publishing an Object](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 은 데이터 수신 및 저장을 위한 새로운 애플리케이션을 생성하고 활성화합니다. 이제 Headless API를 통해 액세스할 수 있습니다.

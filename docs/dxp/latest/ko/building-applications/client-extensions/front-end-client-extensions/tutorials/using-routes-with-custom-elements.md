@@ -89,17 +89,17 @@
    121 B     build/static/css/main.9877909d.css
    ```
 
-1. 이메일 주소 *test@liferay.com* 와 암호 *test*사용하여 `<http://localhost:8080>` 에서 Liferay에 로그인합니다. 프롬프트가 표시되면 비밀번호를 *learn*로 변경하십시오.
+1. 이메일 주소 **test@liferay.com** 와 암호 **test** 사용하여 `<http://localhost:8080>` 에서 Liferay에 로그인합니다. 프롬프트가 표시되면 비밀번호를 **learn** 로 변경하십시오.
 
-1. *사이트 메뉴* (![Site Menu](../../../../images/icon-product-menu.png))을 열고 *콘텐츠 & 데이터*확장한 다음 *문서 및 미디어*로 이동합니다.
+1. **사이트 메뉴**(![Site Menu](../../../../images/icon-product-menu.png))을 열고 **콘텐츠 & 데이터** 확장한 다음 **문서 및 미디어** 로 이동합니다.
 
-1. *추가* (![Add Button](../../../../images/icon-add.png))를 클릭하고 *여러 파일 업로드*선택합니다.
+1. **추가**(![Add Button](../../../../images/icon-add.png))를 클릭하고 **여러 파일 업로드** 선택합니다.
 
 1. `.js` 및 `.css` 파일을 업로드 영역으로 끌어다 놓습니다.
 
    ![.js 및 .css 파일을 Liferay 문서 라이브러리에 업로드합니다.](./using-routes-with-custom-elements/images/02.png)
 
-1. *게시*클릭합니다.
+1. **게시** 클릭합니다.
 
 이렇게 하면 파일이 Liferay 문서 라이브러리에 추가되고 원격 애플리케이션을 만드는 데 사용할 고유한 WebDAV URL이 할당됩니다.
 
@@ -107,7 +107,7 @@
 이 자습서는 데모 목적으로 Liferay의 문서 라이브러리에서 응용 프로그램의 정적 리소스를 호스팅합니다. 프로덕션 환경에서는 정적 리소스 호스팅에 최적화된 서버에서 애플리케이션 파일을 호스팅해야 합니다.
 ```
 
-각 파일의 URL을 보려면 *정보* 아이콘(![Info Icon](../../../../images/icon-information.png))을 클릭하고 한 번에 파일 중 하나를 선택하십시오. 각 파일의 *WebDAV URL* 을 복사하고 다음 단계에서 사용할 수 있도록 저장합니다.
+각 파일의 URL을 보려면 **정보** 아이콘(![Info Icon](../../../../images/icon-information.png))을 클릭하고 한 번에 파일 중 하나를 선택하십시오. 각 파일의 **WebDAV URL** 을 복사하고 다음 단계에서 사용할 수 있도록 저장합니다.
 
 ![각 파일의 WebDAV URL을 복사합니다.](./using-routes-with-custom-elements/images/03.png)
 
@@ -118,9 +118,9 @@
 
 ## 애플리케이션 등록 및 배포
 
-1. *글로벌 메뉴* (![Global Menu](../../../../images/icon-applications-menu.png))을 열고 *애플리케이션* 탭을 클릭한 다음 *원격 앱*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../../images/icon-applications-menu.png))을 열고 **애플리케이션** 탭을 클릭한 다음 **원격 앱** 으로 이동합니다.
 
-1. *추가* (![Add Button](../../../../images/icon-add.png))을 클릭합니다.
+1. **추가**(![Add Button](../../../../images/icon-add.png))을 클릭합니다.
 
 1. 다음 값을 입력합니다.
 
@@ -134,7 +134,7 @@
    | 인스턴스 가능    | &#10004;              |
    | 포틀릿 분류 이름  | 원격 앱                  |
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 일단 저장되면 Liferay는 다른 페이지 위젯처럼 사이트 페이지에 배포할 수 있는 J1V3-Custom-Element라는 위젯을 생성합니다. 선택한 포틀릿 범주 이름 아래에 나타납니다.
 
@@ -148,9 +148,9 @@ J1V3-Custom-Element는 인스턴스화할 수 있으므로 각각 고유한 독�
 
 ### 원격 앱 메뉴를 통해 경로 속성 정의
 
-1. *글로벌 메뉴* (![Global Menu](../../../../images/icon-applications-menu.png))을 열고 *애플리케이션* 탭을 클릭한 다음 *원격 앱*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../../../images/icon-applications-menu.png))을 열고 **애플리케이션** 탭을 클릭한 다음 **원격 앱** 으로 이동합니다.
 
-1. *J1V3-Custom-Element*을 선택합니다.
+1. **J1V3-Custom-Element** 을 선택합니다.
 
    ![J1V3-Custom-Element를 선택합니다.](./using-routes-with-custom-elements/images/05.png)
 
@@ -158,7 +158,7 @@ J1V3-Custom-Element는 인스턴스화할 수 있으므로 각각 고유한 독�
 
    ![속성 필드에 route=hello-foo를 입력합니다.](./using-routes-with-custom-elements/images/06.png)
 
-1. *게시*클릭합니다.
+1. **게시** 클릭합니다.
 
 1. 배포된 두 위젯이 모두 `HelloFoo` 경로를 사용하는지 확인합니다.
 
@@ -168,7 +168,7 @@ J1V3-Custom-Element는 인스턴스화할 수 있으므로 각각 고유한 독�
 
 1. J1V3-Custom-Element 위젯이 포함된 페이지를 편집합니다.
 
-1. 위젯 중 하나에 대해 *옵션* 버튼(![Options Button](../../../../images/icon-actions.png))을 클릭하고 *구성*선택합니다.
+1. 위젯 중 하나에 대해 **옵션** 버튼(![Options Button](../../../../images/icon-actions.png))을 클릭하고 **구성** 선택합니다.
 
    ![옵션 버튼을 클릭하고 구성을 선택합니다.](./using-routes-with-custom-elements/images/08.png)
 
@@ -176,7 +176,7 @@ J1V3-Custom-Element는 인스턴스화할 수 있으므로 각각 고유한 독�
 
    ![속성 필드에 route=hello-bar를 입력합니다.](./using-routes-with-custom-elements/images/09.png)
 
-1. *저장*클릭합니다.
+1. **저장** 클릭합니다.
 
 1. 구성된 위젯이 `hello-bar` 경로를 사용하는 반면 다른 위젯은 여전히 `hello-foo` 경로를 사용하는지 확인합니다.
 

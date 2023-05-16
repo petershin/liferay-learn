@@ -135,17 +135,17 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 
 배포된 클라이언트 확장을 사용하도록 페이지를 구성합니다.
 
-1. 페이지로 이동한 다음 상단의 _편집_ (![Edit icon](../../../../images/icon-edit-pencil.png))을 클릭합니다.
+1. 페이지로 이동한 다음 상단의 **편집**(![Edit icon](../../../../images/icon-edit-pencil.png))을 클릭합니다.
 
-1. 사이드바에서 페이지 디자인 옵션 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하고 메뉴 상단에서 _구성_ (![Configuration icon](../../../../images/icon-cog3.png))를 클릭합니다.
+1. 사이드바에서 페이지 디자인 옵션 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하고 메뉴 상단에서 **구성**(![Configuration icon](../../../../images/icon-cog3.png))를 클릭합니다.
 
-1. 테마 스프라이트 맵 클라이언트 확장 섹션에서 _추가_ (![Add](../../../../images/icon-duplicate.png))을 클릭합니다.
+1. 테마 스프라이트 맵 클라이언트 확장 섹션에서 **추가**(![Add](../../../../images/icon-duplicate.png))을 클릭합니다.
 
-1. 새로 배포된 스프라이트 맵인 _Liferay Sample Theme Spritemap 1_을 선택합니다.
+1. 새로 배포된 스프라이트 맵인 **Liferay Sample Theme Spritemap 1** 을 선택합니다.
 
    ![Liferay 샘플 테마 Spritemap 1 클라이언트 확장을 선택하고 저장을 클릭합니다.](./using-a-theme-spritemap-client-extension/images/05.gif)
 
-1. 아래로 스크롤하여 _저장_클릭합니다.
+1. 아래로 스크롤하여 **저장** 클릭합니다.
 
 1. 페이지로 돌아갑니다. 탐색 모음에서 편집 기능을 위해 물고기 아이콘이 연필(![Edit icon](../../../../images/icon-edit-pencil.png))을 대체했습니다.
 

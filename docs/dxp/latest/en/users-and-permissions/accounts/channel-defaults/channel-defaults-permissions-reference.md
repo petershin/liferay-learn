@@ -5,42 +5,36 @@ uuid: bf0d7ce5-eba6-44af-b58c-48c0c80bfcfb
 
 {bdg-secondary}`Available Liferay DXP 7.4 U75+/GA75+`
 
-Setting channel defaults for an account ensures that addresses, shipping options, terms and conditions, and payment methods are pre-selected during checkout. This ensures a smooth checkout experience and results in faster creation of orders. Only users with specific permissions can change these during checkout. Users without permissions won't see the associated checkout steps. 
+Setting channel defaults for an account ensures that addresses, shipping options, terms and conditions, and payment methods are pre-selected for checkout. This can provide a smoother checkout experiences and faster order creation.
+
+Only users with specific permissions can change these defaults at checkout, while users without these permissions do not see the associated checkout steps.
 
 ## Checkout Flow Permissions
 
-The following permissions determine which users can add or modify addresses and change the payment methods and shipping options during checkout. 
+Users with the following permissions can change an account's billing address, payment methods, and shipping options during checkout.
 
-### Permission to View and Manage Addresses
+### Billing Addresses
 
-| Permissions                                                            | Description                                                                                                                    |
-| :--------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
-| Commerce > Order Management > Commerce Orders > View Billing Address   | Ability to view the billing address.                                                                                           |
-| Control Panel > Accounts > Accounts > Account Entry > Manage Addresses | A user with this permission can view addresses during checkout. They can also add new addresses and edit the pre-selected one. |
+| Permissions                                                            | Description                                                                                                                        |
+|:-----------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| Commerce > Order Management > Commerce Orders > View Billing Address   | Ability to view an account's billing address during checkout and in these pages: Order Summary, Placed Orders, and Pending Orders. |
+| Control Panel > Accounts > Accounts > Account Entry > Manage Addresses | Ability to view, add, and edit an account's addresses during checkout.                                                             |
 
-If you don't have the first permission, you cannot view the billing address during checkout and in the following pages:
+### Payment Methods
 
-* Order Summary
-* Placed Orders
-* Pending Orders
+| Permissions                                                                           | Description                                                                                      |
+| :------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------- |
+| Commerce > Order Management > Commerce Orders > Manage Commerce Order Payment Methods | Ability to change an account's payment methods based on the channel's available payment methods. |
 
-If you have the view permission, you can view the billing address in the pages above but cannot edit or create new addresses during checkout. To do that, you need the second permission. 
+When one or more payment methods are active for the channel, the highest priority eligible payment method is pre-selected. With this permission, you can choose an alternative payment method. Otherwise, this checkout step does not appear.
 
-### Permission to Manage Payment Methods
+### Shipping Options
 
-| Permissions                                                                           | Description                                                                                   |
-| :------------------------------------------------------------------------------------ | :-------------------------------------------------------------------------------------------- |
-| Commerce > Order Management > Commerce Orders > Manage Commerce Order Payment Methods | Ability to change the payment methods based on the available payment methods for the channel. |
+| Permissions                                                                            | Description                                                                                        |
+| :------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------- |
+| Commerce > Order Management > Commerce Orders > Manage Commerce Order Shipping Options | Ability to change an account's shipping options based on the channel's available shipping options. |
 
-When you have one or more active payment methods available for the channel, the highest priority eligible payment method is pre-selected. If you have the permission, you can change between the available payment methods, if not, the checkout step isn't shown. 
-
-### Permission to Manage Shipping Options
-
-| Permissions                                                                            | Description                                                                                     |
-| :------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
-| Commerce > Order Management > Commerce Orders > Manage Commerce Order Shipping Options | Ability to change the shipping options based on the available shipping options for the channel. |
-
-When you have one or more active shipping options available for the channel, the highest priority eligible option is pre-selected. If you have the permission, you can change between the available shipping options, if not, the checkout step isn't shown. 
+When one or more shipping options are active for the channel, the highest priority eligible option is pre-selected. With this permission, you can choose an alternative shipping option. Otherwise, this checkout step does not appear.
 
 ## Related Topics
 

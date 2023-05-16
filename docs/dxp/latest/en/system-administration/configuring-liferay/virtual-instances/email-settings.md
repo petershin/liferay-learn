@@ -9,9 +9,9 @@ To access these options,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Configuration* &rarr; *Instance Settings*.
 
-1. Select *Email* under the platform section.
+1. Select *Email* under Platform.
 
-Here configuration options appear in these tabs:
+Configuration options appear on the left:
 
 | Configuration                                                       | Purpose                                                                                            |
 |:--------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
@@ -19,19 +19,19 @@ Here configuration options appear in these tabs:
 | [Email Sender](#email-sender)                                       | Set the sender's name and address for email templates.                                             |
 | [Email Verification Notification](#email-verification-notification) | Determine the email template for requesting users to verify their email address.                   |
 | [Mail Host Names](#mail-host-names)                                 | Enter mail hosts associated with the instance.                                                     |
-| Mail Setting                                                        | Set up a mail server for the instance.                                                             |
+| Mail Settings                                                       | Connect a mail server to the instance.                                                             |
 | [Password Changed Notification](#password-changed-notification)     | Determine the email template for password changes.                                                 |
 | [Password Reset Notification](#password-reset-notification)         | Determine the email template for password reset requests.                                          |
 
 ```{note}
-Your installation must have a [configured connection to a mail server](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) in order to send email notifications. Mail server configurations set at the instance scope override server level configurations. 
+Your installation must have a [configured connection to a mail server](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) to send email notifications. Mail server configurations set at the instance scope override server level configurations. 
 
-For each notification template, you can view available template variables in the Definition of Terms section. Use these variables to dynamically populate emails.
+For each notification template, you can view available template variables at the bottom of the page. Use these variables to populate emails dynamically.
 ```
 
 ## Account Created Notification
 
-These templates are for emails sent to users after creating an account. One template includes a password setup link, while the other does not.
+These templates define emails sent to users after creating an account. One template includes a password setup link, while the other does not.
 
 Use the *Enabled* checkbox at the top to enable this notification.
 
@@ -39,13 +39,13 @@ Use the *Enabled* checkbox at the top to enable this notification.
 
 ## Email Sender
 
-The email sender specifies the virtual instance's administrative name and email address for email notifications. You can include these values in notification templates using the `[$FROM_NAME$]` and `[$FROM_ADDRESS$]` variables. By default, they are from the `admin.email.from.name` and `admin.email.from.address` [portal properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Admin%20Portlet). This name and email address appear in the *From* field in all email messages sent by the virtual instance.
+The email sender specifies the virtual instance's administrative name and email address for email notifications. You can include these values in notification templates using the `[$FROM_NAME$]` and `[$FROM_ADDRESS$]` variables. Defaults from [portal properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Admin%20Portlet) are `admin.email.from.name` and `admin.email.from.address`. This name and email address appear in the *From* field in all email messages sent by the virtual instance.
 
 ![Configure the from name and address for system emails.](./email-settings/images/02.png)
 
 ## Email Verification Notification
 
-This template is for emails sent to users when asked to verify their email address.
+This template defines emails sent to users when asked to verify their email address.
 
 ![Verify the email address of users.](./email-settings/images/03.png)
 
@@ -57,7 +57,7 @@ You can specify additional mail host names here that are owned by your organizat
 
 ## Password Changed Notification
 
-This template is for emails notifying users that their password has been changed.
+This template defines emails notifying users that their password has been changed.
 
 ![Notify users when their password changes.](./email-settings/images/05.png)
 
@@ -69,5 +69,6 @@ This template is for password reset requests.
 
 ## Related Topics
 
-* [Configuring Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
-* [Notifications](../../../process-automation/notifications.md)
+[Configuring Mail](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
+
+[Notifications](../../../process-automation/notifications.md)

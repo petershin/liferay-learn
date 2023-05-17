@@ -5,12 +5,12 @@ uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 
 {bdg-secondary}`Available Liferay 7.4 U69+/GA69+`
 
-With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related objects in a single GET request. To do this, you must pass the names of the relationships you want to include in the query. If these relationships span multiple levels, use the `nestedFieldsDepth` parameter to indicate the depth of entries to include in the query. You can include up to five levels (e.g., `nestedFieldsDepth=5`).
+With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related objects in a single GET request. To do this, you must pass the relationship names you want to include in the query. If the relationships span multiple levels, set the `nestedFieldsDepth` parameter to the depth you need. You can include up to five levels (e.g., `nestedFieldsDepth=5`).
 
-By default, `nestedFields` returns a single page of the first 20 nested items, but you can use the `pageCount` parameter to determine how many items are included in the response: `[fieldName].pageCount=[number]`.
+<!--By default, `nestedFields` returns a single page of the first 20 nested items. To change how many items are returned, use the `pageCount` parameter: `[fieldName].pageCount=[number]`.-->
 
 ```{tip}
-The `nestedFields` parameter is a convenient way to retrieve information that would usually require multiple requests. With it, you can retrieve an entry along with its related entries. To return only the related entries, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introduction.
+By adding the `nestedFields` parameter to your request, you can retrieve information that would otherwise require multiple requests. With it, you can retrieve an entry along with its related entries. To return only the related entries, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introduction.
 ```
 
 To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create related entries and query them using the `nestedFields` parameter.
@@ -234,7 +234,7 @@ Follow these steps to add and query related object entries:
    ./Charlie_GET_ById.sh [charlieId]
    ```
 
-   This queries the entry using nested fields and returns the schema for all three levels of the related objects.
+   This queries the entry using nested fields and returns all three levels of related objects.
 
    ```json
    {
@@ -364,7 +364,7 @@ Follow these steps to add and query related object entries:
    ./Able_GET_ByExternalReferenceCode.sh able-one
    ```
 
-   This queries the `Able` entry using the `nestedFields` parameter and returns its schema with the schema of all related `Charlie` entries.
+   This queries the `Able` entry using the `nestedFields` parameter, returning the `Able` entry and all related `Charlie` entries.
 
    ```json
    {
@@ -410,11 +410,11 @@ Follow these steps to add and query related object entries:
    :language: bash
 ```
 
-The provided GET method calls a URL with the `nestedFields` and `nestedFieldsDepth` parameters.
+The GET request calls a `charlies` endpoint and includes the `nestedFields` and `nestedFieldsDepth` parameters.
 
 `nestedFields`: Determines the relationship(s) to include in the query (e.g., `ableToBaker,bakerToCharlie`).
 
-`nestedFieldsDepth`: Determines the depth of entries you want to include and can be set between 0-5.
+`nestedFieldsDepth`: Determines the depth of entries to include. Set this to a number from 0-5.
 
 ## Related Topics
 

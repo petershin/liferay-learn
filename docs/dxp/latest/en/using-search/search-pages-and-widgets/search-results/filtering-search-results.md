@@ -128,7 +128,7 @@ Depending on your version, [nested field storage for DDM fields](../../../lifera
 | 7.3 all updates  | &#10004; |
 | DXP 7.2 SP3/FP8+ | &#10008; |
 
-To change the behavior, use the Enable Legacy Dynamic Data Mapping Index Fields setting in System Settings &rarr; Dynamic Data Mapping Indexer.
+To change the behavior, use the _Enable Legacy Dynamic Data Mapping Index Fields_ setting in System Settings &rarr; Dynamic Data Mapping Indexer.
 
 See [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) for an example showing the use of a web content structure field with the Custom Filter widget.
 

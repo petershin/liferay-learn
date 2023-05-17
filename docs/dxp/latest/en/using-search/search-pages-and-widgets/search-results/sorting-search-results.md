@@ -210,5 +210,5 @@ Depending on your version, [nested field storage](../../../liferay-internals/ref
 | 7.3 all updates  | &#10004; |
 | DXP 7.2 SP3/FP8+ | &#10008; |
 
-To change the behavior, use the Enable Legacy Dynamic Data Mapping Index Fields setting in System Settings &rarr; Dynamic Data Mapping Indexer.
+To change the behavior, use the _Enable Legacy Dynamic Data Mapping Index Fields_ setting in System Settings &rarr; Dynamic Data Mapping Indexer.
 

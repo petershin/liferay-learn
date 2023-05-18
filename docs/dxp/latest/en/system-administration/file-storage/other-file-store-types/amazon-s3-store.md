@@ -3,6 +3,8 @@ uuid: 6abef168-1381-46ae-b190-a9ff7c096d2d
 ---
 # Amazon Simple Storage Service
 
+{bdg-primary}`Self-Hosted Only`
+
 Amazon's simple storage service (S3) is a cloud-based storage solution that DXP's S3 Store uses to store files seamlessly to the cloud. Once you have an AWS account and have created an S3 *bucket*, you can configure the S3 store.
 
 S3 uses the concept of buckets for file storage. In Amazon's UI, create a [bucket](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) for your DXP files. Configure the bucket in a [geographical region](https://docs.aws.amazon.com/general/latest/gr/s3.html) that is as close as possible to your DXP server host.

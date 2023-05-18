@@ -14,7 +14,7 @@ Before enabling this connection, you must have an active [Azure Blob Store accou
 Next, do the following to enable the connection to your Liferay instance,
 
 * [Configure the File Store Method via the Control Panel](#configuring-the-store)
-* Set the [`dl.store.impl` portal property to use Azure Blog Storage](#setting-azure-blog-storage-as-default-store) as the default storage method
+* Set the [`dl.store.impl` portal property to use Azure Blob Storage](#setting-azure-blob-storage-as-default-store) as the default storage method
 
 ```{warning}
 If a database transaction rollback occurs in a Document Library, the transaction’s file system changes are not reversed. Inconsistencies between Document Library files and those in the file system store can occur and may require manual synchronization. All of the DXP stores except for DBStore are vulnerable to this limitation.
@@ -38,9 +38,9 @@ Follow these steps to configure the store:
 
 Once you’ve configured the Azure Blob Storage Store, you can set it as your default file storage system.
 
-## Setting Azure Blog Storage as Default Store
+## Setting Azure Blob Storage as Default Store
 
-Follow these steps to use Azure Blog Storage as the default Store for the Liferay instance:
+Follow these steps to use Azure Blob Storage as the default Store for the Liferay instance:
 
 1. Add the following property to the instance's [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) file:
 

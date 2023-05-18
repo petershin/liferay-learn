@@ -5,7 +5,7 @@ uuid: 902fc6f9-716c-4d56-8aeb-752a222ee882
 
 {bdg-secondary}`Available Liferay 7.4 U72+/GA72+`
 
-When you [enable entry history](../../creating-and-managing-objects/auditing-object-definition-events.md#enabling-entry-history) for an object definition, you can use the `nestedFields` parameter with REST APIs to audit entry events. Simply add `nestedFields=auditEvents` to the path for GET requests (e.g., `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`).
+When you [enable entry history](../../creating-and-managing-objects/auditing-object-definition-events.md#enabling-entry-history) for an object definition, you can use the `nestedFields` parameter with REST APIs to audit entry events. Add `nestedFields=auditEvents` to the path for GET requests (e.g., `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`).
 
 To get started, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, [run the scripts](#using-the-sample-code) to create entries, update them, and query those changes using the `nestedFields` parameter.
 
@@ -54,7 +54,7 @@ Once published, you can access the object via Headless APIs.
 
 ## Preparing the Sample Code
 
-Run the commands below to download and unzip the provided sample code:
+Download and unzip the sample code:
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-g4m3.zip -O
@@ -64,7 +64,7 @@ curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objec
 unzip liferay-g4m3.zip
 ```
 
-The sample code includes cURL scripts for creating, updating, and querying object entries.
+The sample code includes shell scripts for creating, updating, and querying object entries.
 
 ```{tip}
 For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
@@ -179,11 +179,11 @@ For a complete list of APIs generated for site and company objects, see [Objects
    }
    ```
 
-   The `auditEvents` array includes these elements.
+   The `auditEvents` array includes these elements:
 
-    * `auditFieldChanges`: Indicates the field updated along with its new and old values.
-    * `dateCreated`: Indicates the time and date of the event.
-    * `eventType`: Indicates the type of event (e.g., `ADD`, `UPDATE`, `DELETE`).
+   * `auditFieldChanges`: The field that was updated, with its new and old values.
+   * `dateCreated`: The time and date of the event.
+   * `eventType`: The event type (e.g., `ADD`, `UPDATE`, `DELETE`).
 
 1. Execute `Ables_GET_FromCompany`.
 
@@ -265,9 +265,9 @@ For a complete list of APIs generated for site and company objects, see [Objects
    }
    ```
 
-## Examining the GET Scripts
+## Examining the GET Requests
 
-The provided GET scripts add the `nestedFields` parameters to their URL.
+The provided scripts execute GET requests, adding the `nestedFields` parameter to their URLs.
 
 ### `Able_GET_ByExternalReferenceCode`
 

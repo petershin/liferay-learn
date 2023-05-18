@@ -5,10 +5,10 @@ uuid: a4cb2ac1-d3b7-4956-b2ea-c4cc0d30eb1a
 
 {bdg-secondary}`Available Liferay 7.4 U72+/GA72+`
 
-You can use Liferay's audit framework to track events for custom object definitions and their entries. To track entry events, you must [enable entry history](#enabling-entry-history) for the desired definition. While enabled, you can view an entry's history via the [Audit application](#using-the-audit-application) or [REST APIs](#using-rest-apis).
+You can use Liferay's audit framework to track events for custom object definitions and their entries. To track entry events, you must [enable entry history](#enabling-entry-history) for the object definition. While enabled, you can view an entry's history via the [Audit application](#using-the-audit-application) or [REST APIs](#using-rest-apis).
 
 ```{important}
-Using REST APIs to view an entry's history requires both the `View` and `Object Entry History` permissions for the entry. See [Permissions Framework Integration](../understanding-object-integrations/permissions-framework-integration.md)
+Using REST APIs to view an entry's history requires both the `View` and `Object Entry History` permissions for the entry. See [Permissions Framework Integration](../understanding-object-integrations/permissions-framework-integration.md).
 ```
 
 ## Using the Audit Application
@@ -17,7 +17,7 @@ To access the Audit application, open the *Global Menu* (![Global Menu](../../..
 
 ![Click Audit in the Control Panel to view events related to object definitions.](./auditing-object-definition-events/images/01.png)
 
-Events appear in a table with these columns:
+Events appear in a table:
 
 | Column | Description |
 | :--- | :--- |
@@ -29,7 +29,7 @@ Events appear in a table with these columns:
 | Client IP | IP address responsible for the action. |
 | Create Date | When the event record was created. |
 
-You can click any event field to view a more complete record, including specific action details. If desired, you can search and filter results using keywords and other facets.
+Click an event field to view a more complete record, including specific action details. You can search and filter results using keywords and other terms.
 
 Object entry events use the `ObjectDefinition#[ObjectID]` naming pattern.
 

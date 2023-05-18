@@ -9,7 +9,7 @@ With each new Liferay DXP and Liferay Portal release, a feature may not warrant 
 
 Obsolete features are eventually removed or replaced with newer, better features. Before dropping support for an obsolete feature, Liferay marks it *Deprecated*.
 
-**Deprecated:** The feature will be unsupported as early as the next minor version release. For example, support for a feature deprecated in 7.4 can be dropped as early as 7.5.
+**Deprecated:** The feature will be unsupported as early as the next minor version release.
 
 ```{important}
 Plan to stop using deprecated features because their support may cease as early as the next minor release.

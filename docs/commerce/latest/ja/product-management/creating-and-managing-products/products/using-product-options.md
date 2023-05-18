@@ -168,8 +168,8 @@ SKUコントリビューターには、 [SKU](./creating-skus-for-product-varian
 1. (![Add icon](../../../images/icon-add.png)) をクリックして、オプションテンプレートを追加します。
 1. 次のように入力します：
     * **名前:** 黒
-    * **重要度:** 1. 0
-     ***キー:**（［**Name**］ フィールドから自動生成）
+    * **重要度:** 1.0
+     **キー:**（［**Name**］ フィールドから自動生成）
 
         ![オプション値の追加](./using-product-options/images/07.png)
 

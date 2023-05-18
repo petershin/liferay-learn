@@ -47,4 +47,4 @@ For Liferay, set `-Djavax.net.debug=ssl:handshake:verbose` in the Application Se
 CATALINA_OPTS="$CATALINA_OPTS -Djavax.net.debug=ssl:handshake:verbose"
 ```
 
-For Elasticsearch, add `-Djavax.net.debug=ssl:handshake:verbose` to the end of `[Elasticsearch Home/]config/jvm.options`.
+For Elasticsearch, add `-Djavax.net.debug=ssl:handshake:verbose` to the end of `[Elasticsearch Home]/config/jvm.options`.

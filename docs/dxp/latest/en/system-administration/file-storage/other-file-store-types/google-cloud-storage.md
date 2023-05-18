@@ -3,6 +3,8 @@ uuid: 6d60e7cc-9027-4ff5-9ee1-7fe2b33dbbd0
 ---
 # Google Cloud Storage
 
+{bdg-primary}`Self-Hosted Only`
+
 > Available for Liferay DXP 7.3 SP3+ and 7.4+
 
 Liferay DXP provides integration with Google's Cloud Storage (GCS) service. With GCS integration, you can seamlessly store and access your Liferay instance files in the cloud.

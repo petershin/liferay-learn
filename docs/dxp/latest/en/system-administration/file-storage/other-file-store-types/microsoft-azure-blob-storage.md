@@ -3,6 +3,8 @@ uuid: 2e374c77-a095-4dcd-b6bd-5fd04c057df6
 ---
 # Microsoft Azure Blob Storage Service
 
+{bdg-primary}`Self-Hosted Only`
+
 > Available for 7.4+ and 7.3 FP2+  
 
 Microsoft Azure Blob Storage is a cloud-based storage solution that DXP’s Azure Blob Storage Store uses to seamlessly store files to the cloud. Under the hood, it uses the Microsoft’s Blob Storage API, optimized to handle huge amounts of unstructured data.

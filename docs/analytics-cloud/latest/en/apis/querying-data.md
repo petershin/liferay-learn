@@ -62,7 +62,7 @@ The following query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keywords` (string): The keyword(s) to be matched with the data.
+* `keywords` (string): The keyword(s) to be matched within the title of the asset.
 * `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
 * `sortMetric`(string): The metric by which to sort the data. Possible values are `clicksMetric`, `commentsMetric`, `ratingsMetric`, `readingTimeMetric`, and `viewsMetric`.
 * `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
@@ -83,7 +83,7 @@ The following query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keywords` (string): The keyword(s) to be matched with the data.
+* `keywords` (string): The keyword(s) to be matched within the title of the asset.
 * `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
 * `sortMetric`(string): The metric by which to sort the data. Possible values are `commentsMetric`, `downloadsMetric`, `previewsMetric`, `ratingsMetrics`.
 * `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
@@ -104,7 +104,7 @@ The following query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keywords` (string): The keyword(s) to be matched with the data.
+* `keywords` (string): The keyword(s) to be matched within the title of the asset.
 * `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
 * `sortMetric`(string): The metric by which to sort the data. Possible values are `abandonmentsMetric`, `completionTimeMetric`, `submissionsMetric`, `viewsMetric`.
 * `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
@@ -127,7 +127,7 @@ The following query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `query` (string): keywords to be matched with the individuals demographics information.
+* `query` (string): Any word(s) to be searched within an individual's `emailAddress`, `firstName`, or `lastName`.
 
 To retrieve activities data on a specific individual:
 
@@ -159,7 +159,7 @@ The following query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keywords` (string): The keyword(s) to be matched with the data.
+* `keywords` (string): The keyword(s) to be matched within the title of the asset.
 * `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
 * `sortMetric` (string): The metric by which to sort the data. Possible values are `avgTimeOnPageMetric`, `bounceMetric`, `bounceRateMetric`, `ctaClicksMetric`, `directAccessMetric`, `entrancesMetric`, `exitRateMetric`, `indirectAccessMetric`, `readsMetric`, `sessionsMetric`, `timeOnPageMetric`, `viewsMetric`, `visitorsMetric`.
 * `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
@@ -201,7 +201,7 @@ The following query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keyword` (string): The keyword(s) to be matched with the data.
+* `keyword` (string): The keyword(s) to be matched within the title of the asset.
 * `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
 * `sortMetric`(string): The metric by which to sort the data. The possible value is `viewsMetric`.
 * `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.

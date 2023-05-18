@@ -14,41 +14,106 @@ The following response should be returned:
 ```json
 {
    "_links":{
-      "accounts":{
-         "href": "https://analytics.liferay.com/api/reports/accounts"
-      },
-      "individuals":{
-         "href": "https://analytics.liferay.com/api/reports/individuals"
-      },
-      "pages":{
-         "href": "https://analytics.liferay.com/api/reports/pages"
-      },
-      "segments":{
-         "href": "https://analytics.liferay.com/api/reports/segments"
-      }
+        "blogs": {
+            "href": "https://analytics.liferay.com/api/reports/blogs{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        },
+        "documents-and-media": {
+            "href": "https://analytics.liferay.com/api/reports/documents-and-media{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        },
+        "forms": {
+            "href": "https://analytics.liferay.com/api/reports/forms{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        },
+        "individuals": {
+            "href": "https://analytics.liferay.com/api/reports/individuals{?channelId,page,query}",
+            "templated": true
+        },
+        "pages": {
+            "href": "https://analytics.liferay.com/api/reports/pages{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        },
+        "segments": {
+            "href": "https://analytics.liferay.com/api/reports/segments{?channelId,page}",
+            "templated": true
+        },
+        "web-contents": {
+            "href": "https://analytics.liferay.com/api/reports/web-contents{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        }
    }
 }
 ```
 
-From here you can call different APIs to get data for accounts, individuals, pages, and segments.
+From here you can call different APIs to get data for the different data types.
 
-All the server responses to the analytics data follow the same data structure. The response is a paged results of entities computed by Liferay Analytics Cloud. By default, each page will contain 20 elements and it can be navigated by replacing the page query parameter. Total shows the total number of available elements. Below you can see  response format:
+All the server responses to the analytics data follow the same data structure. The response is a paged results of entities computed by Liferay Analytics Cloud. By default, each page will contain 20 elements and it can be navigated by replacing the page query parameter. Total shows the total number of available elements.
 
-```json
-{"results":[],"total":0}
-```
+## Accessing Blogs Data
 
-## Accessing Accounts Data
-
-Accounts data can be retrieved with the following command:
+Blog data can be retrieved with the following command:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/accounts
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs
 ```
 
-### Parameters
+The following query parameters are available:
 
-* `page` (Integer): results page number
+* `channelId` (integer): The Analytics Cloud workspace property ID.
+* `page` (integer): The results page number.
+* `keywords` (string): The keyword(s) to be matched with the data.
+* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
+* `sortMetric`(string): The metric by which to sort the data. Possible values are `clicksMetric`, `commentsMetric`, `ratingsMetric`, `readingTimeMetric`, and `viewsMetric`.
+* `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
+
+To retrieve data about a specific blog post:
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs/{blogID}
+```
+
+## Accessing Documents and Media Data
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media
+```
+
+The following query parameters are available:
+
+* `channelId` (integer): The Analytics Cloud workspace property ID.
+* `page` (integer): The results page number.
+* `keywords` (string): The keyword(s) to be matched with the data.
+* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
+* `sortMetric`(string): The metric by which to sort the data. Possible values are `commentsMetric`, `downloadsMetric`, `previewsMetric`, `ratingsMetrics`.
+* `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
+
+To retrieve data about a specific document:
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media/{documentId}
+```
+
+## Accessing Forms Data
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms
+```
+
+The following query parameters are available:
+
+* `channelId` (integer): The Analytics Cloud workspace property ID.
+* `page` (integer): The results page number.
+* `keywords` (string): The keyword(s) to be matched with the data.
+* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
+* `sortMetric`(string): The metric by which to sort the data. Possible values are `abandonmentsMetric`, `completionTimeMetric`, `submissionsMetric`, `viewsMetric`.
+* `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
+
+To retrieve data about a specific form:
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms/{formId}
+```
 
 ## Accessing Individuals Data
 
@@ -58,78 +123,52 @@ Individuals data can be retrieved by the following command
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
 ```
 
-### Parameters
+The following query parameters are available:
 
-* `page` Integer: results page number
-* `query` String: keywords to be matched with the individuals demographics information  
+* `channelId` (integer): The Analytics Cloud workspace property ID.
+* `page` (integer): The results page number.
+* `query` (string): keywords to be matched with the individuals demographics information.
 
-## Individual Activities
-
-```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/activities
-```
-
-Returns the list of activities performed by the individual
-
-The structure of each activity is described below
-
-```json
-{
-   "ownerId": "371000621354447876",
-   "startTime": "2019-10-28T21:49:05.674Z",,
-   "applicationId":"WebContent",
-   "eventId":"webContentViewed",
-   "eventProperties":{
-      "numberOfWords":"13",
-      "articleId":"232001430",
-      "title":"Navigation Content - Partner Resources Basic (for launch)",
-      "pageViewActivityId":"8ed2e0d9-ed41-4b3d-bbe1-e1219448e9eb"
-   }
-}
-```
-
-### Properties
-
-* `ownerId` (String): Owner of the activity, equivalent to the individual ID.
-* `startTime` (Date): Date timestamp of when the activity occurred.
-* `applicationId` (String): Id of the application that triggered the event.
-* `eventId` (String): ID of the analytics events performed by the individual; event ID represent an action performed by the individual.
-* `eventProperties` (Object): Metadata information about the event, varies according to the eventId;
-
-## Individual Interests
+To retrieve activities data on a specific individual:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/interests
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/activities
 ```
 
-Returns the list of individuals' interests, the structure of each interest is described below
-
-```json
-{
-   "score":0.6908830400645879,
-   "ownerId":"385450976494153117",
-   "dateRecorded":null,
-   "id":"389978452012791133",
-   "name":"Digital Experience Software Tailored"
-}
-```
-
-### Properties
-
-* `score` (Number): Numerical representation of how interest the individual is in that particular topic; ranges from 0 to 1.
-* `ownerId` (String): Owner of the activity, equivalent to the individual ID.
-* `dateRecorded` (Date): Date timestamp of when the interest was calculated.
-* `applicationId` (String): Id of the application that triggered the event.
-* `id` (String): Unique identifier of the interest.
-* `name` (String): Name of the interest.
-
-## Individual Segments
+To retrieve interests data on a specific individual:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/segments
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/interests
 ```
 
-Returns the list of segments the individual belongs to, the structure of each segment is described in the section Data Types > Segments.
+To retrieve segment data on a specific individual:
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/segments
+```
+
+## Accessing Pages Data
+
+Page data can be retrieved by the following command:
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
+```
+
+The following query parameters are available:
+
+* `channelId` (integer): The Analytics Cloud workspace property ID.
+* `page` (integer): The results page number.
+* `keywords` (string): The keyword(s) to be matched with the data.
+* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
+* `sortMetric` (string): The metric by which to sort the data. Possible values are `avgTimeOnPageMetric`, `bounceMetric`, `bounceRateMetric`, `ctaClicksMetric`, `directAccessMetric`, `entrancesMetric`, `exitRateMetric`, `indirectAccessMetric`, `readsMetric`, `sessionsMetric`, `timeOnPageMetric`, `viewsMetric`, `visitorsMetric`.
+* `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
+
+To retrieve page data from a specific URL:
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages/{pageURL}
+```
 
 ## Accessing Segments Data
 
@@ -139,30 +178,36 @@ Segments data can be retrieved by the following command:
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
 ```
 
-### Properties
+The following query parameters are available:
 
-`page` : Integer, results page number
+* `channelId` (integer): The Analytics Cloud workspace property ID.
+* `page` (integer): The results page number.
 
-## Segment individuals
-
-Returns the list of individuals that belong to the segment.
-
-```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{id}/individuals
-```
-
-## Accessing Page Data
-
-Page data can be retrieved by the following command:
+To retrieve all the individuals of a specific segment:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{segmentsId}/individuals
 ```
 
-### Properties
+## Accessing Web Contents Data
 
-* `page` (Integer): results page number.
-* `keywords` (String): keywords to be matched with the pages title or url information.
-* `rangeKey` (Integer): range to be used to group data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days.
-* `sortMetric` (String): defined what metric to sort the results, default to `viewsMetrics`; possible values are `ctrMetric`, `timeOnPageMetric`, `exitRateMetric`, `ctpMetric`, `sessionsMetric`, `avgTimeOnPageMetric`, `bounceMetric`, `maxScrollDepthMetric`, `visitorsMetric`, `viewsMetric`, `bounceRateMetric`, `indirectAccessMetric`, `entrancesMetric`, `directAccessMetric`.
-* `sortOrder` (String), possible values are *asc* or *desc*. Orders the results according to the sortMetric in ascending or descending order. Default is desc.
+Segments data can be retrieved by the following command:
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-content
+```
+
+The following query parameters are available:
+
+* `channelId` (integer): The Analytics Cloud workspace property ID.
+* `page` (integer): The results page number.
+* `keyword` (string): The keyword(s) to be matched with the data.
+* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
+* `sortMetric`(string): The metric by which to sort the data. The possible value is `viewsMetric`.
+* `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
+
+To retrieve data about a specific web content:
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents/{webContentsID}
+```

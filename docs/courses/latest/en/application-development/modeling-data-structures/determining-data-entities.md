@@ -11,10 +11,10 @@ Previously, adding custom data entities to the Liferay platform required buildin
 ```
 
 ```{tip}
-Liferay places some limitations on some definition options after publishing. For example, fields included in a definition at the time of publishing cannot be removed, though you can remove fields added after publishing. Publishing your definition early in the development process can help you maintain maximal freedom while iterating on your application. <!--REFINE-->
+Liferay places limitations on some definition options after publishing. For example, fields included in a definition at the time of publishing cannot be removed, though you can remove fields added after publishing. Publishing your definition early in the development process can help you maintain maximal freedom while iterating on your application. <!--REFINE-->
 ```
 
-## Exercise: Creating the Distributor Application Object Definition
+## Creating the Distributor Application Object
 
 As mentioned previously, Delectable Bonsai needs a solution for receiving and approving applications to become product distributors. At its most basic implementation, this solution requires a single object definition for creating and storing applications submitted by potential distributors.
 

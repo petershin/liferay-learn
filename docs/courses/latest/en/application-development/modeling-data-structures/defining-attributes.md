@@ -4,15 +4,13 @@ Attributes are specific pieces of information you want to store for entities, su
 
 <!-- Diagram? -->
 
-## Exercise: Adding Attributes to the Distributor Application
-
 Delectable Bonsai needs to collect business information for verifying each applicant's identity and credit. These details are necessary for Know Your Customer (KYC) best practice and compliance with Anti-Money Laundering (AML) laws. Additionally, they want to collect information that can help them assess the relative value of each prospective distributor. For example, if the company is working to reach a specific region, they can give applications from that region higher priority.
 
 First, use Picklists to create predefined lists of string values. Then, add these fields to the Distributor Application object along with other custom fields. <!--REFINE-->
 
 <!-- Before adding fields directly to the object definition, create picklists for any single-select or multi-select fields we want to include. Once created, we can add fields to the Distributor Application object. -->
 
-### Adding Picklists for Distributor Application
+## Adding Picklists for the Distributor Application Object
 
 With Liferay picklists, you can define lists of string values that you can use for single-select and multiselect fields. <!--predetermines options for users creating entries--> Delectable Bonsai needs these picklists for their Distributor Application:
 
@@ -32,7 +30,7 @@ The following steps first cover how to create the Business Types list via the Li
 Using Picklist APIs, you can add lists and items with pre-configured ERCs and localized names in one step. If you're working with multiple lists, this method is far more efficient than manually creating lists through the UI. <!--REFINE-->
 ```
 
-#### Creating Picklists via the Picklists UI
+### Creating Picklists via the Picklists UI
 
 1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Picklists*.
 
@@ -70,7 +68,7 @@ Using Picklist APIs, you can add lists and items with pre-configured ERCs and lo
 
 You can now use the picklist to create a single-select or multi-select field in the Distributor Application object.
 
-#### Creating Picklists via REST APIs
+### Creating Picklists via REST APIs
 
 1. Download and unzip the [Defining Attributes](./liferay-p6k3.zip) resources.
 
@@ -250,9 +248,9 @@ You can now use the picklist to create a single-select or multi-select field in 
 
 You can now use these picklists to create single-select and multi-select fields in the Distributor Application object.
 
-### Adding Fields to the Distributor Application Object
+## Adding Fields to the Distributor Application Object
 
-With Object [data fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields), you can store and manage specific types of information in your application. <!-- Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference). --> Delectable Bonsai needs fields for collecting applicant, contact, business, bank, and credit information.
+With Object [data fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields), you can store and manage specific types of information in your application. <!-- Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference). --> Delectable Bonsai needs fields for collecting applicant, contact, business, bank, and reference information.
 
 The following steps first cover how to add fields via the Liferay UI. Then, they cover how to create the remaining fields using the `object-admin` REST APIs. <!--REFINE-->
 
@@ -260,7 +258,7 @@ The following steps first cover how to add fields via the Liferay UI. Then, they
 
 <!-- After adding a field, you can access additional configuration options. For example, you can determine whether the field is searchable. -->
 
-#### Adding Fields via the Objects UI
+### Adding Fields via the Objects UI
 
 1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
@@ -356,7 +354,7 @@ Once created, the default table view displays a scrolling table that includes al
 
 Delectable Bonsai can use these fields to collect general details for assessing the value of each applicant. However, they need to collect additional information to follow KYC policies and comply with AML laws. To add these fields, use the `object-admin` REST APIs.
 
-#### Adding Fields via REST APIs
+### Adding Fields via REST APIs
 
 1. Navigate to the `liferay-p6k3/curl` folder. The provided ZIP includes shell scripts for creating the remaining fields.
 
@@ -368,8 +366,8 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    ./ObjectField_POST_ContactInformation_ByExternalReferenceCode.sh
    ```
 
-   | Field Name                   | Type    |
-   |:-----------------------------|:--------|
+   | Field Name                  | Type    |
+   |:----------------------------|:--------|
    | `primaryContactName`        | Text    |
    | `primaryContactTitle`       | Text    |
    | `primaryContactEmail`       | Text    |
@@ -422,42 +420,30 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    | `bankZIPPostalCode`       | Integer |
    | `bankCountry`             | Text    |
 
-1. Run this script to create fields for storing the business's credit references:
+1. Run this script to create fields for receiving business reference details:
 
    ```bash
-   ./ObjectField_POST_CreditReferences_ByExternalReferenceCode.sh
+   ./ObjectField_POST_BusinessReference_ByExternalReferenceCode.sh
    ```
 
-   | Field Name                              | Type    |
-   |:----------------------------------------|:--------|
-   | `creditReferenceOneSupplierName`        | Text    |
-   | `creditReferenceOneAccountNumber`       | Text    |
-   | `creditReferenceOnePhoneNumber`         | Integer |
-   | `creditReferenceOneAddressLineOne`      | Text    |
-   | `creditReferenceOneAddressLineTwo`      | Text    |
-   | `creditReferenceOneCity`                | Text    |
-   | `creditReferenceOneStateProvinceRegion` | Text    |
-   | `creditReferenceOneZIPPostalCode`       | Integer |
-   | `creditReferenceOneCountry`             | Text    |
-   | `creditReferenceTwoSupplierName`        | Text    |
-   | `creditReferenceTwoAccountNumber`       | Text    |
-   | `creditReferenceTwoPhoneNumber`         | Integer |
-   | `creditReferenceTwoAddressLineOne`      | Text    |
-   | `creditReferenceTwoAddressLineTwo`      | Text    |
-   | `creditReferenceTwoCity`                | Text    |
-   | `creditReferenceTwoStateProvinceRegion` | Text    |
-   | `creditReferenceTwoZIPPostalCode`       | Integer |
-   | `creditReferenceTwoCountry`             | Text    |
+   | Field Name                     | Type    |
+   |:-------------------------------|:--------|
+   | `referenceSupplierName`        | Text    |
+   | `referencePhoneNumber`         | Integer |
+   | `referenceAddressLineOne`      | Text    |
+   | `referenceAddressLineTwo`      | Text    |
+   | `referenceCity`                | Text    |
+   | `referenceStateProvinceRegion` | Text    |
+   | `referenceZIPPostalCode`       | Integer |
+   | `referenceCountry`             | Text    |
 
-Once finished, the Distributor Application object should have 65 fields. <!--FINISH-->
+Once finished, the Distributor Application object should have 56 fields. These fields can help Delectable Bonsai collect the data they need for evaluating and vetting each applicant in compliance with KYC policies and AML laws.
 
-![The Distributor Application object should have 65 fields](./defining-attributes/images/07.png)
+![The Distributor Application object should have 56 fields.](./defining-attributes/images/07.png)
 
-These fields can help Delectable Bonsai collect the data they need for __, KYC policies, and complying with AML laws. However, presently, none of the fields have validations. Doesn't ensure the integrity of input data. Also, there are now so many fields that using the default view and layout is unmanageable.<!--FINISH-->
+Presently, none of the fields include validations to ensure the integrity of application data. Furthermore, with over 50 fields, the default view and layout are no longer viable UIs for creating and displaying application entries. The second and third modules of this course will address these issues. But first, we must explore the concept of relationships when modeling data structures.
 
-In the next module, we will add validations to these fields. Then, in the third module, we will develop a custom UI for creating and viewing entries.<!--FINISH-->
-
-But first, we must explore the concept of relationships and __. <!--FINISH-->
+Next: [Defining Relationships](./defining-relationships.md)
 
 ## Relevant Concepts
 

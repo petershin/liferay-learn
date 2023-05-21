@@ -23,14 +23,14 @@ Account and organization roles are only supported in objects with account restri
 
 Application permissions grant access to the published object itself and do not include [resource-related permissions](#resource-permissions). Each object includes these standard application permissions according to their defined scope:
 
-| Permission | Description |
-| :--- | :--- |
-| Access in Control Panel (*Company Scope Only*) | Access the object in the Global Menu ( ![Global Menu](../../../images/icon-applications-menu.png) ). |
+| Permission                                                          | Description                                                                                                  |
+|:--------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------|
+| Access in Control Panel (*Company Scope Only*)                      | Access the object in the Global Menu ( ![Global Menu](../../../images/icon-applications-menu.png) ).         |
 | Access in Site and Asset Library Administration (*Site Scope Only*) | Access the object in the Site Menu ( ![Site Menu](../../../images/icon-product-menu.png) ) or Asset Library. |
-| Configuration | N/A |
-| Permissions | View and modify application permissions for the object. |
-| Preferences | N/A |
-| View | View the object's application page. |
+| Configuration                                                       | N/A                                                                                                          |
+| Permissions                                                         | View and modify application permissions for the object.                                                      |
+| Preferences                                                         | N/A                                                                                                          |
+| View                                                                | View the object's application page.                                                                          |
 
 ## Resource Permissions
 
@@ -38,19 +38,20 @@ Resource permissions grant access to view and act on resources in the object app
 
 ### Creating Entries
 
-| Permission | Description |
-| :--- | :--- |
-| Add Object Entry | Create an entry. |
-| Permissions | View and manage permissions related to creating entries. |
+| Permission       | Description                                              |
+|:-----------------|:---------------------------------------------------------|
+| Add Object Entry | Create an entry.                                         |
+| Permissions      | View and manage permissions related to creating entries. |
 
 ### Acting on Existing Entries
 
-| Permission | Description |
-| :--- | :--- |
-| Delete | Delete entries. |
-| Permissions | View and modify permissions for individual entries. |
-| Update | Update entries. |
-| View | View entries. |
+| Permission           | Description                                                                                                                                                                                                                                                                                                        |
+|:---------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Delete               | Delete entries.                                                                                                                                                                                                                                                                                                    |
+| Object Entry History | Use REST APIs to [query entry history](../objects-tutorials/using-apis/using-nestedfields-to-audit-entry-history.md). This permissions is only available while [Entry History is enabled](../creating-and-managing-objects/auditing-object-definition-events.md#enabling-entry-history) for the object definition. |
+| Permissions          | View and modify permissions for individual entries.                                                                                                                                                                                                                                                                |
+| Update               | Update entries.                                                                                                                                                                                                                                                                                                    |
+| View                 | View entries.                                                                                                                                                                                                                                                                                                      |
 
 ```{note}
 The creator of an object entry is assigned the owner role automatically and granted the above permissions.

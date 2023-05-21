@@ -7,11 +7,9 @@ uuid: a4cb2ac1-d3b7-4956-b2ea-c4cc0d30eb1a
 
 You can use Liferay's audit framework to track events for custom object definitions and their entries. To track entry events, you must [enable entry history](#enabling-entry-history) for the object definition. While enabled, you can view an entry's history via the [Audit application](#using-the-audit-application) or [REST APIs](#using-rest-apis).
 
-```{important}
-Using REST APIs to view an entry's history requires both the `View` and `Object Entry History` permissions for the entry. See [Permissions Framework Integration](../understanding-object-integrations/permissions-framework-integration.md).
-```
-
 ## Using the Audit Application
+
+{bdg-primary}`Subscription`
 
 To access the Audit application, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Audit*.
 
@@ -38,6 +36,10 @@ Object entry events use the `ObjectDefinition#[ObjectID]` naming pattern.
 ## Using REST APIs
 
 You can use the `nestedFields` parameter with the `auditEvents` value to return an entry's history in GET API calls (e.g., `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`). See [Using `nestedFields` to Audit Entry History](../objects-tutorials/using-apis/using-nestedfields-to-audit-entry-history.md) for a basic tutorial.
+
+```{important}
+Using REST APIs to view an entry's history requires both the `View` and `Object Entry History` permissions for the entry. See [Permissions Framework Integration](../understanding-object-integrations/permissions-framework-integration.md) for more information.
+```
 
 ## Enabling Entry History
 

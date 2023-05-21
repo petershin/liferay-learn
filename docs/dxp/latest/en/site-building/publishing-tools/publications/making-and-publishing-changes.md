@@ -63,27 +63,19 @@ Before publishing, you can review a publication's tracked changes to ensure it o
 
 Alternatively, you can review any publication's tracked changes via the Publications application. Simply navigate to the *Ongoing* tab, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the desired Publication, and select *Review Changes*.
 
-### Display Styles
+When reviewing changes, all tracked changes appear in a list that you can order by *Change Type*, *Modified Date*, *Site*, *Title*, or *User*.
 
-When reviewing changes, you can also switch between two display styles: *Changes* and *Context*.
-
-* **Changes**: This displays all tracked changes in a list that you can order by *Change Type*, *Modified Date*, *Site*, *Title*, or *User*.
-
-   ![View tracked changes in a list.](./making-and-publishing-changes/images/03.png)
-
-* **Context**: This displays all tracked changes in a tree, so you can view them in context with their associated changes.
-
-   ![View tracked changes in context.](./making-and-publishing-changes/images/04.png)
+![View tracked changes in a list.](./making-and-publishing-changes/images/03.png)
 
 ### Simple and Advanced Change Summaries
 
 By default, DXP displays a simple summary of tracked changes, but you can toggle the switch to *Show All Items*. This includes all background processes related to your changes.
 
-![Toggle Show All Items to see all changes included in the publications.](./making-and-publishing-changes/images/05.png)
+![Toggle Show All Items to see all changes included in the publications.](./making-and-publishing-changes/images/04.png)
 
 Click on an individual change to view more details. From here, you can also click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the tracked change to *Edit* or *Discard* it. Available actions depend on the type of change.
 
-![Click on individual changes to view more details.](./making-and-publishing-changes/images/06.png)
+![Click on individual changes to view more details.](./making-and-publishing-changes/images/05.png)
 
 ### Previewing Changes to Pages
 
@@ -91,11 +83,11 @@ Click on an individual change to view more details. From here, you can also clic
 
 If a publication includes edits to a page, you can preview those changes alongside the original version of the page. To do this, click the edited page while reviewing changes.
 
-![View page versions in the Display tab.](./making-and-publishing-changes/images/07.png)
+![View page versions in the Display tab.](./making-and-publishing-changes/images/06.png)
 
 Once selected, you can view each page version individually or select Split View to see both versions side by side.
 
-![View each page version individually, or select Split View to see them side by side.](./making-and-publishing-changes/images/08.png)
+![View each page version individually, or select Split View to see them side by side.](./making-and-publishing-changes/images/07.png)
 
 ## Publishing Your Changes
 
@@ -113,11 +105,11 @@ Follow these steps to publish changes immediately:
 
 1. Click on *Publish*.
 
-   ![Navigate to the desired publication and click on Publish.](./making-and-publishing-changes/images/09.png)
+   ![Navigate to the desired publication and click on Publish.](./making-and-publishing-changes/images/08.png)
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
-   ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/10.png)
+   ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/09.png)
 
 1. Click on *Publish*.
 
@@ -133,7 +125,7 @@ Follow these steps to schedule publishing for a later time.
 
 1. Click on *Schedule*.
 
-   ![Navigate to the desired publication and click on Schedule.](./making-and-publishing-changes/images/11.png)
+   ![Navigate to the desired publication and click on Schedule.](./making-and-publishing-changes/images/10.png)
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
@@ -143,7 +135,7 @@ Follow these steps to schedule publishing for a later time.
 
 1. Enter a *date* and *time* to determine when the changes are published to production.
 
-   ![Set a date and time to publish your changes.](./making-and-publishing-changes/images/12.png)
+   ![Set a date and time to publish your changes.](./making-and-publishing-changes/images/11.png)
 
 1. Click on *Schedule* to complete the process.
 
@@ -161,7 +153,7 @@ When reviewing publication changes, file and page previews can accumulate in the
 
 1. Select *Remove DL Preview Change Tracking Store Content Data*.
 
-   ![Check the change tracking options.](making-and-publishing-changes/images/13.png)
+   ![Check the change tracking options.](making-and-publishing-changes/images/12.png)
 
 1. Click *Save*.
 

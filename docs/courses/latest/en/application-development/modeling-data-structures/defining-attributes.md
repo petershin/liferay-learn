@@ -70,7 +70,7 @@ You can now use the picklist to create a single-select or multi-select field in 
 
 ### Creating Picklists via REST APIs
 
-1. Download and unzip the [Defining Attributes](./liferay-p6k3.zip) resources.
+1. Download and unzip the resources for [Defining Attributes](./liferay-p6k3.zip).
 
    ```bash
    curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-attributes/liferay-p6k3.zip -O
@@ -256,7 +256,7 @@ The following steps first cover how to add fields via the Liferay UI. Then, they
 
 ![]()
 
-<!-- After adding a field, you can access additional configuration options. For example, you can determine whether the field is searchable. -->
+<!-- After adding a field, you can access additional configuration options. For example, by default all fields are searchable by __, but you can __ .-->
 
 ### Adding Fields via the Objects UI
 

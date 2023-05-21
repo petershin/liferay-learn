@@ -9,6 +9,10 @@ When you [enable entry history](../../creating-and-managing-objects/auditing-obj
 
 To get started, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, [run the scripts](#using-the-sample-code) to create entries, update them, and query those changes using the `nestedFields` parameter.
 
+```{important}
+Using REST APIs to view an entry's history requires both the `View` and `Object Entry History` permissions for the entry. See [Permissions Framework Integration](../../understanding-object-integrations/permissions-framework-integration.md).
+```
+
 ## Setting Up a Liferay Instance
 
 ```{include} /_snippets/run-liferay-portal.md
@@ -267,7 +271,7 @@ For a complete list of APIs generated for site and company objects, see [Objects
 
 ## Examining the GET Requests
 
-The provided scripts execute GET requests, adding the `nestedFields` parameter to their URLs.
+These GET requests include the `nestedFields=auditEvents` parameter in their URLs.
 
 ### `Able_GET_ByExternalReferenceCode`
 

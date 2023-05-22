@@ -1,8 +1,8 @@
 # Configuring Liferay for a Custom Feedback Counter Service
 
-Kyle has an idea for a simple application that can help keep track of user feedback by fetching Liferay [object data](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects). He created a simple Spring Boot application that can call Liferay API to achieve this, but now he wants to run it as a custom service in Liferay Cloud.
+Kyle has an idea for a simple application that can help keep track of user feedback by fetching Liferay [object data](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects). He created a simple Spring Boot application that can call a Liferay API to achieve this, and now he wants to run it as a custom service in Liferay Cloud.
 
-In the next few exercises, you'll create a custom service to turn Kyle's simple application into a custom service that runs in Liferay Cloud. Here, you'll start by configuring your Liferay instance so that it works with Kyle's application.
+In the next few exercises, you'll turn Kyle's simple application into a custom service that runs in Liferay Cloud. You'll start by configuring your Liferay instance so that it works with Kyle's application.
 
 To start this task, you need to
 
@@ -17,7 +17,7 @@ First, import the object definition and use it to create some data for your appl
 
 ### Import and Publish the Object Definition
 
-1. In a new folder within a [Liferay workspace](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace), download and unzip Kyle's feedback counter project:
+1. In a new folder within a [Liferay Workspace](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace/what-is-liferay-workspace), download and unzip Kyle's feedback counter project:
 
     ```bash
     curl https://resources.learn.liferay.com/courses/latest/en/liferay-administrator/cloud-administrator/cloud-development-lifecycle/w9g6.zip -O
@@ -31,9 +31,9 @@ First, import the object definition and use it to create some data for your appl
 
 1. Log into your UAT Liferay instance.
 
-1. Open the Applications menu ( ![Applications menu icon](../../../images/icon-applications-menu.png) ) at the top of the screen and navigate to *Control Panel* &rarr; *Objects*.
+1. Open the _Applications_ menu ( ![Applications menu icon](../../../images/icon-applications-menu.png) ) at the top of the screen and navigate to *Control Panel* &rarr; *Objects*.
 
-1. Click the Actions menu ( ![Actions menu icon](../../../images/icon-actions.png) ) at the top of the screen and click *Import*.
+1. Click _Actions_ ( ![Actions menu icon](../../../images/icon-actions.png) ) at the top of the screen and click *Import*.
 
 1. Enter `FeedbackInput` as the name.
 
@@ -49,7 +49,7 @@ Enable it in widgets and fragments and publish it:
 
 1. Click the Feedback Input object definition from the list.
 
-1. Ensure the Show Widget radio button is selected at the bottom of the page.
+1. Enable the Show Widget switch at the bottom of the page.
 
    ![Enable the Show Widget option so you can use the object for a form on a page to create sample data.](./configuring-liferay-for-a-custom-feedback-counter-service/images/02.png)
 
@@ -63,7 +63,7 @@ Next, add a form using the object to a page and submit some values to create usa
 
 1. Navigate back to your site's home page.
 
-1. Click the _Edit_ icon ( ![Edit icon](../../../images/icon-edit.png) ) at the top of the page to edit the page.
+1. Click _Edit_ ( ![Edit icon](../../../images/icon-edit.png) ) at the top of the page to edit the page.
 
 1. In the list of fragments on the left side of the screen, drag the *Form Container* fragment onto the page.
 
@@ -89,7 +89,7 @@ Next, configure your Liferay instance to allow remote requests and OAuth 2 autho
 
 ### Add and Configure an OAuth 2 Profile
 
-1. Open the Applications Menu ( ![Applications menu icon](../../../images/icon-applications-menu.png) ) at the top of the screen and navigate to *Control Panel* &rarr; *OAuth 2 Administration*.
+1. Open the _Applications Menu_ ( ![Applications menu icon](../../../images/icon-applications-menu.png) ) at the top of the screen and navigate to *Control Panel* &rarr; *OAuth 2 Administration*.
 
 1. Click _Add_ ( ![Add icon](../../../images/icon-add.png) ) to add a new OAuth 2 profile for your custom service.
 
@@ -97,7 +97,7 @@ Next, configure your Liferay instance to allow remote requests and OAuth 2 autho
 
 1. Deselect the *Authorization code* checkbox.
 
-    ![Create an OAuth 2 profile for your custom service.](./configuring-liferay-for-a-custom-feedback-counter-service/images/05.png)
+   ![Create an OAuth 2 profile for your custom service.](./configuring-liferay-for-a-custom-feedback-counter-service/images/05.png)
 
 1. Click *Save*.
 
@@ -111,33 +111,11 @@ You must also configure the scopes for this profile so that it can be used to re
 
 1. Select the checkbox for *read data on your behalf*.
 
-    ![Enable the scope to read data for your new object definition.](./configuring-liferay-for-a-custom-feedback-counter-service/images/06.png)
+   ![Enable the scope to read data for your new object definition.](./configuring-liferay-for-a-custom-feedback-counter-service/images/06.png)
 
 1. Scroll down to the bottom and click *Save*.
 
-### Add CORS-Enabled URL Paths
-
-1. Open the Applications Menu ( ![Applications menu icon](../../../images/icon-applications-menu.png) ) at the top of the screen and navigate to *Control Panel* &rarr; *System Settings*.
-
-1. Under the *Security* category, click *Security Tools*.
-
-    ![Access the CORS configuration menu from Security Tools in System Settings.](./configuring-liferay-for-a-custom-feedback-counter-service/images/07.png)
-
-1. From the left-side menu, click *Portal Cross-Origin Resource Sharing (CORS)*.
-
-1. Click *Default Portal CORS Configuration*.
-
-1. Make sure the *Enabled* checkbox is selected at the top of the screen.
-
-1. Click the plus icon next to a URL Pattern entry to create a new URL pattern, and fill the value in with: `/o/oauth2/*`
-
-1. Add another URL Pattern entry with: `/o/c/*`
-
-    ![Add URL patterns for the OAuth 2 token retrieval and the object API.](./configuring-liferay-for-a-custom-feedback-counter-service/images/08.png)
-
-1. Scroll to the bottom of the page and click *Update*.
-
-Now your Liferay instance allows remote requests for authorization. Next, you'll [create a custom service for your Liferay Cloud environment](./creating-your-custom-feedback-counter-service.md) that retrieves data via the `feedbackinput` object's API.
+Next, you'll [create a custom service for your Liferay Cloud environment](./creating-your-custom-feedback-counter-service.md) that retrieves data via the `feedbackinput` object's API.
 
 ## Relevant Concepts
 

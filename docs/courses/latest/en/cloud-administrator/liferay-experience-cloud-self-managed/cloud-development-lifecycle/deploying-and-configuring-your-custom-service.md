@@ -6,7 +6,7 @@ Here, you'll deploy it to Liferay Cloud, add secret environment variables, and s
 
 ## Deploying Your Custom Service to Your UAT Environment
 
-Navigate to your custom service's directory in your project repository, and use the CLI tool to deploy it directly.
+Navigate to your custom service's directory in your project repository and use the CLI tool to deploy it directly.
 
 ```bash
 lcp deploy
@@ -30,19 +30,19 @@ Disable basic authentication for your UAT environment's web server so your custo
 
 1. Find the line that enforces basic authentication:
 
-    ```
-    auth_basic "Authentication Required";
-    ```
+   ```
+   auth_basic "Authentication Required";
+   ```
 
 1. Comment out this line by adding a `#` character to the beginning of the line.
 
 1. From the `webserver` folder, re-deploy the web server service to your UAT environment:
 
-    ```bash
-    lcp deploy
-    ```
+   ```bash
+   lcp deploy
+   ```
 
-    Choose your UAT environment when prompted.
+   Choose your UAT environment when prompted.
 
 When your web server service restarts, web traffic to the Liferay instance is enabled and your custom service can send requests to it.
 
@@ -54,13 +54,13 @@ Add the client ID to your new `feedback` service as a [secret](https://learn.lif
 
 1. In the Liferay Cloud console, navigate to your UAT environment.
 
-    ![The feedback service is running together with your other services.](./deploying-and-configuring-your-custom-service/images/02.png)
+   ![The feedback service is running together with your other services.](./deploying-and-configuring-your-custom-service/images/02.png)
 
-    Your new `feedback` service is present in the list of services running.
+   Your new `feedback` service is present in the list of services running.
 
 1. Click *Settings* from the left-side menu.
 
-1. In the *Secrets* tab, click *Create New Secret*.
+1. In the Secrets tab, click *Create New Secret*.
 
 1. Fill in the form to add a new secret for the OAuth 2 client ID:
 
@@ -74,11 +74,11 @@ Add the client ID to your new `feedback` service as a [secret](https://learn.lif
 
 1. Check all of the checkboxes to confirm the impact of the change.
 
-    ![Add the secret with the environment variable name that your service uses.](./deploying-and-configuring-your-custom-service/images/03.png)
+   ![Add the secret with the environment variable name that your service uses.](./deploying-and-configuring-your-custom-service/images/03.png)
 
 1. Click *Create Secret*.
 
-Then repeat the process to add the OAuth 2 client secret value.
+Repeat the process to add the OAuth 2 client secret value.
 
 1. Click the Back arrow to return to the list of secrets.
 
@@ -86,11 +86,11 @@ Then repeat the process to add the OAuth 2 client secret value.
 
 1. Fill in the form for the OAuth 2 client secret:
 
-    * **Name**: `oauth2-client-secret`
+   * **Name:** `oauth2-client-secret`
 
-    * **Description**: Client secret used to authenticate with Liferay.
+   * **Description:** Client secret used to authenticate with Liferay.
 
-    * **Value**: (Use the client secret value you [copied from your OAuth 2 profile](./configuring-liferay-for-a-custom-feedback-counter-service.md#add-and-configure-an-oauth-2-profile))
+   * **Value:** (Use the client secret value you [copied from your OAuth 2 profile](./configuring-liferay-for-a-custom-feedback-counter-service.md#add-and-configure-an-oauth-2-profile))
 
 1. At the bottom of the page, select the `feedback` service and enter `OAUTH2_CLIENT_SECRET` as the environment variable key.
 
@@ -110,9 +110,9 @@ Now your custom service has everything it needs to count feedback submissions. V
 
 1. Click the address shown next to your `feedback` service in the list of network endpoints.
 
-    ![The Network page shows you all of the network endpoints for your services, including your externally exposed service's web address.](./deploying-and-configuring-your-custom-service/images/05.png)
+   ![The Network page shows you all of the network endpoints for your services, including your externally exposed service's web address.](./deploying-and-configuring-your-custom-service/images/05.png)
 
-    You set `external: true` in the custom service's `LCP.json` file, so public web traffic is authorized with port 8181.
+   You set `external: true` in the custom service's `LCP.json` file, so public web traffic is authorized with port 8181.
 
 1. By default, the endpoint listed uses an `https` address. However, your custom service uses `http`. Remove the `s` from the URL in your browser's address bar to access your custom service's endpoint.
 

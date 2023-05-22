@@ -9,7 +9,7 @@ The root endpoint of Liferay Analytics Cloud is <https://analytics.liferay.com/a
 curl -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
 ```
 
-The following response should be returned:
+These response should be returned:
 
 ```json
 {
@@ -52,20 +52,20 @@ All the server responses to the analytics data follow the same data structure. T
 
 ## Accessing Blogs Data
 
-Blog data can be retrieved with the following command:
+Use this command to retrieve all Blogs data:
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs
 ```
 
-The following query parameters are available:
+These query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keywords` (string): The keyword(s) to be matched within the title of the asset.
-* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
-* `sortMetric`(string): The metric by which to sort the data. Possible values are `clicksMetric`, `commentsMetric`, `ratingsMetric`, `readingTimeMetric`, and `viewsMetric`.
-* `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
+* `keywords` (string): The keyword(s) matched within the asset's title.
+* `rangeKey` (integer): The time range for grouping the data. Possible values are `0` (data from the last 24 hours), `1` (data from yesterday), `7` (data from the last 7 days), `28` (data from the last 28 days), `30` (default value, data from the last 30 days), `90` (data from the last 90 days).
+* `sortMetric`(string): The metric for sorting the data. Possible values are `clicksMetric`, `commentsMetric`, `ratingsMetric`, `readingTimeMetric`, and `viewsMetric`.
+* `sortOrder` (string): The order for displaying the results. Possible values are `asc` or `desc`.
 
 To retrieve data about a specific blog post:
 
@@ -75,18 +75,20 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 
 ## Accessing Documents and Media Data
 
+Use this command to retrieve all Documents and Media data:
+
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media
 ```
 
-The following query parameters are available:
+These query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keywords` (string): The keyword(s) to be matched within the title of the asset.
-* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
-* `sortMetric`(string): The metric by which to sort the data. Possible values are `commentsMetric`, `downloadsMetric`, `previewsMetric`, `ratingsMetrics`.
-* `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
+* `keywords` (string): The keyword(s) matched within the data.
+* `rangeKey` (integer): The time range for grouping the data. Possible values are `0` (data from the last 24 hours), `1` (data from yesterday), `7` (data from the last 7 days), `28` (data from the last 28 days), `30` (default value, data from the last 30 days), `90` (data from the last 90 days).
+* `sortMetric`(string): The metric for sorting the data. Possible values are `commentsMetric`, `downloadsMetric`, `previewsMetric`, `ratingsMetrics`.
+* `sortOrder` (string): The order for displaying the results. Possible values are `asc` or `desc`.
 
 To retrieve data about a specific document:
 
@@ -96,18 +98,20 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 
 ## Accessing Forms Data
 
+Use this command to retrieve all Forms data:
+
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms
 ```
 
-The following query parameters are available:
+These query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keywords` (string): The keyword(s) to be matched within the title of the asset.
-* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
-* `sortMetric`(string): The metric by which to sort the data. Possible values are `abandonmentsMetric`, `completionTimeMetric`, `submissionsMetric`, `viewsMetric`.
-* `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
+* `keywords` (string): The keyword(s) matched within the data.
+* `rangeKey` (integer): The time range for grouping the data. Possible values are `0` (data from the last 24 hours), `1` (data from yesterday), `7` (data from the last 7 days), `28` (data from the last 28 days), `30` (default value, data from the last 30 days), `90` (data from the last 90 days).
+* `sortMetric`(string): The metric for sorting the data. Possible values are `abandonmentsMetric`, `completionTimeMetric`, `submissionsMetric`, `viewsMetric`.
+* `sortOrder` (string): The order for displaying the results. Possible values are `asc` or `desc`.
 
 To retrieve data about a specific form:
 
@@ -117,17 +121,17 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 
 ## Accessing Individuals Data
 
-Individuals data can be retrieved by the following command
+Use this command to retrieve all Individuals data:
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
 ```
 
-The following query parameters are available:
+These query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `query` (string): Any word(s) to be searched within an individual's `emailAddress`, `firstName`, or `lastName`.
+* `query` (string): Any word(s) searched for in an individual's `emailAddress`, `firstName`, or `lastName`.
 
 To retrieve activities data on a specific individual:
 
@@ -149,19 +153,19 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 
 ## Accessing Pages Data
 
-Page data can be retrieved by the following command:
+Use this command to retrieve all Pages data:
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
 ```
 
-The following query parameters are available:
+These query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keywords` (string): The keyword(s) to be matched within the title of the asset.
-* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
-* `sortMetric` (string): The metric by which to sort the data. Possible values are `avgTimeOnPageMetric`, `bounceMetric`, `bounceRateMetric`, `ctaClicksMetric`, `directAccessMetric`, `entrancesMetric`, `exitRateMetric`, `indirectAccessMetric`, `readsMetric`, `sessionsMetric`, `timeOnPageMetric`, `viewsMetric`, `visitorsMetric`.
+* `keywords` (string): The keyword(s) matched within the data.
+* `rangeKey` (integer): The time range for grouping the data. Possible values are `0` (data from the last 24 hours), `1` (data from yesterday), `7` (data from the last 7 days), `28` (data from the last 28 days), `30` (default value, data from the last 30 days), `90` (data from the last 90 days).
+* `sortMetric` (string): The metric for sorting the data. Possible values are `avgTimeOnPageMetric`, `bounceMetric`, `bounceRateMetric`, `ctaClicksMetric`, `directAccessMetric`, `entrancesMetric`, `exitRateMetric`, `indirectAccessMetric`, `readsMetric`, `sessionsMetric`, `timeOnPageMetric`, `viewsMetric`, `visitorsMetric`.
 * `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
 
 To retrieve page data from a specific URL:
@@ -172,13 +176,13 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 
 ## Accessing Segments Data
 
-Segments data can be retrieved by the following command:
+Use this command to retrieve all Segments data:
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
 ```
 
-The following query parameters are available:
+These query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
@@ -191,20 +195,20 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 
 ## Accessing Web Contents Data
 
-Segments data can be retrieved by the following command:
+Use this command to retrieve all Web Contents data:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-content
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents
 ```
 
-The following query parameters are available:
+These query parameters are available:
 
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
-* `keyword` (string): The keyword(s) to be matched within the title of the asset.
-* `rangeKey` (integer): The time range to be used to group the data. Possible values are 0 (data from the last 24 hours), 1 (data from yesterday), 7 (data from the last 7 days), 28 (data from the last 28 days), 30 (default value, data from the last 30 days), 90 (data from the last 90 days).
-* `sortMetric`(string): The metric by which to sort the data. The possible value is `viewsMetric`.
-* `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
+* `keywords` (string): The keyword(s) matched within the data.
+* `rangeKey` (integer): The time range for grouping the data. Possible values are `0` (data from the last 24 hours), `1` (data from yesterday), `7` (data from the last 7 days), `28` (data from the last 28 days), `30` (default value, data from the last 30 days), `90` (data from the last 90 days).
+* `sortMetric`(string): The metric for sorting the data. The possible value is `viewsMetric`.
+* `sortOrder` (string): The order for displaying the results. Possible values are `asc` or `desc`.
 
 To retrieve data about a specific web content:
 

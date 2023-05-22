@@ -20,7 +20,9 @@ To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Next, create and relate three objects:
+Next, create and relate three object definitions.
+
+### Creating Related Object Definitions
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
@@ -98,9 +100,7 @@ This ZIP provides shell scripts that run cURL commands for creating, relating, a
 For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
 ```
 
-## Using the Sample Code
-
-Follow these steps to add and query related object entries:
+## Creating and Querying Related Object Entries
 
 1. Navigate to the `curl` folder in the `liferay-w4s7` project.
 

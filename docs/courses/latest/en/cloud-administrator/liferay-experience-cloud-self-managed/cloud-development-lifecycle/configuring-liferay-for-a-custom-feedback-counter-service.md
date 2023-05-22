@@ -1,3 +1,7 @@
+---
+uuid: f5e55aa7-8b00-4663-8aea-c84319c98cfb
+---
+
 # Configuring Liferay for a Custom Feedback Counter Service
 
 Kyle has an idea for a simple application that can help keep track of user feedback by fetching Liferay [object data](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects). He created a simple Spring Boot application that can call a Liferay API to achieve this, and now he wants to run it as a custom service in Liferay Cloud.

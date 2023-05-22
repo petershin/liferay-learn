@@ -1,3 +1,7 @@
+---
+uuid: 22ffce89-99bb-41dc-811c-c02c2b9d58d3
+---
+
 # Creating Your Custom Feedback Counter Service
 
 Previously, you added "feedbackinput" object data and its API.

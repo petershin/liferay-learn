@@ -1,3 +1,7 @@
+---
+uuid: 7e4e5e7b-b9de-4c34-9a0d-e53d50162137
+---
+
 # Deploying and Configuring Your Custom Service
 
 Previously, you built a Docker image and designed a custom service to use Kyle's simple Spring Boot application.

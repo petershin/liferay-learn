@@ -9,11 +9,11 @@ Event attributes are the metadata that provide context for events. Different att
 
     ![Select or search for a specific event attribute.](./definitions-for-event-attributes/images/01.png)
 
-2. Click an attribute to see more details. The Sample Raw Data column shows recent data of that particular attribute. The Last Seen column shows when the attribute was last seen. 
+1. Click an attribute to see more details. The Sample Raw Data column shows recent data of that particular attribute. The Last Seen column shows when the attribute was last seen.
 
     ![View the details of a particular attribute.](./definitions-for-event-attributes/images/02.png)
 
-3. Click the *Edit* button to edit the Display Name, Description, or Default Data Typecast of the attribute. 
+1. Click the *Edit* button to edit the Display Name, Description, or Default Data Typecast of the attribute.
 
     ![Click the Edit button to make changes to the event attribute.](./definitions-for-event-attributes/images/03.png)
 

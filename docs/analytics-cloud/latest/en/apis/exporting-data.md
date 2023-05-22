@@ -23,7 +23,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
    curl -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z'
    ```
 
-2. After requesting the data, a message like this appears:
+1. After requesting the data, a message like this appears:
 
    ```json
    {"fromDate":"2022-01-01T00:00:01.000Z","createdDate":"2022-06-29T17:50:46.824Z","toDate":"2022-01-05T23:59:59.000Z","message":"A new data export file for this date range and type will be created. Please come back later.","type":"PAGE","status":"PENDING"}%   
@@ -31,7 +31,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
 
    It may take some time (i.e. a few minutes to a few hours) for the request to finish processing depending on the size of the data being fetched.
 
-3. Run the same command again and the data is returned in your terminal window. Note that if the request is still processing, a message with `"status":"RUNNING"` appears. Check again later. 
+1. Run the same command again and the data is returned in your terminal window. Note that if the request is still processing, a message with `"status":"RUNNING"` appears. Check again later.
 
    If you wish to download the data as a JSON file, add `>> [filename.json]` to the end of the request. For example:
 

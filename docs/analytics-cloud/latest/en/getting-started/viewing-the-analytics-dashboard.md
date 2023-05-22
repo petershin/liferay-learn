@@ -63,6 +63,6 @@ The UI for Analytics Cloud currently supports English, Japanese, Portuguese, and
 
    ![Click on your user name, then click Language.](./viewing-the-analytics-dashboard/images/02.png)
 
-2. Select the language. Refresh the page. The dashboard and menu is now in the selected language.
+1. Select the language. Refresh the page. The dashboard and menu is now in the selected language.
 
 Well done! To browse all the available features, options, and configurations for Analytics Cloud, click the *Analytics Cloud* breadcrumb above.

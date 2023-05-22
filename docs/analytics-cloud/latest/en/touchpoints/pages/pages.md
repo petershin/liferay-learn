@@ -37,7 +37,7 @@ The Overview tab of a Page's metrics has several data presentations. The first c
 * Exit Rate
 
 ```{note}
-These metrics are updated after the end of a user's session (i.e. 30 minutes of inactivity) or the end of the day (i.e. 23:59). However, the Views metric is updated immediately and not dependent on the end of a user's session.
+The Views metric updates immediately, while other metrics update after the user's session ends (i.e. 30 minutes of inactivity) or at the end of the day (i.e. 23:59).
 ```
 
 Select the time period for the data displayed. Select _Compare to Previous_ to see a second comparison line of the previous time period.
@@ -54,7 +54,7 @@ A unique visitor has a unique IP address in Analytics Cloud. Therefore, if the s
 
 ### Views
 
-Useful with the time period filter, View is the number of views for a Page in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. Over the last 30 days, one visitor (IP address) could come back to the Page 100 times. That means there are 100 Page Views, but only one visitor (assuming she used the same machine to access the Page each time. However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the Page passes before the user interacts with the Page again.
+Useful with the time period filter, View is the number of views for a Page in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. Over the last 30 days, one visitor (IP address) could come back to the Page 100 times. That means there are 100 Page Views, but only one visitor (assuming she used the same machine to access the Page each time). However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the Page passes before the user interacts with the Page again.
 
 ### Bounce Rate
 

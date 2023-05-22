@@ -26,7 +26,7 @@ The Current Totals panel presents the total number of individuals, known and ano
 ![The Current Totals panel presents total numbers for visitors to your Site.](./individuals-dashboard/images/01.png)
 
 ```{note}
-An individual is considered known when an email address is matched at login with user data that is synced with Analytics Cloud. When a new user registers on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as a known individual.
+Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When a new user registers on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as a known individual.
 ```
 
 The panel also displays a percentage change in total numbers compared to the previous 30 days.
@@ -61,7 +61,7 @@ To learn more about interests see [Understanding Interests](../../workspace-data
 
 ## Breakdown
 
-The Breakdown panel presents distribution information based on selected attributes of individuals. The following nine attributes are available:
+The Breakdown panel presents distribution information based on selected attributes of individuals. These attributes are available:
 
 * `additionalName`: middle name
 * `birthDate`: birth date
@@ -79,9 +79,8 @@ To add a new breakdown,
 
 1. Click the plus sign at the top right of the panel. 
 
-2. Use the drop-down menu to select an attribute. 
+1. Use the drop-down menu to select an attribute.
 
-3. Input a name for the breakdown and click *Save*.
+1. Input a name for the breakdown and click _Save_.
 
 To view the breakdown of additional attributes, click *Explore Breakdown*. Alternatively, click the _Distribution_ tab at the top of the page.
-

@@ -48,7 +48,7 @@ Here are the charts in the Audience report:
 **Downloads:** A donut chart that presents the percentage of total unique visitors who are known or anonymous. The center shows the total number of unique visitors. Tooltips show the number of users for that section (e.g, the number of known or anonymous users).
 
 ```{note}
-An individual is considered known when an email address is matched at login with user data that is synced with Analytics Cloud. When a new user registers on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as a known individual.
+Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When a new user registers on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as a known individual.
 ```
 
 **Segmented Downloads:** A donut chart that presents the percentage of known individuals who belong or do not belong to one or more Analytics Cloud Segments. The center shows the total number of Known Individuals. Tooltips show the number of known individuals for that section (e.g, the number of known individuals belonging to one or more Segments).

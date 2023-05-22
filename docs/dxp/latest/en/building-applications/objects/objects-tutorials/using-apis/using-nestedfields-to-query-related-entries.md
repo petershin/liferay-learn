@@ -5,7 +5,7 @@ uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 
 {bdg-secondary}`Available Liferay 7.4 U69+/GA69+`
 
-With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related objects in a single GET request. To do this, you must pass the relationship names you want to include in the query. If the relationships span multiple levels, set the `nestedFieldsDepth` parameter to the depth you need. You can include up to five levels (e.g., `nestedFieldsDepth=5`).
+With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related object entries in a single GET request. To do this, you must pass the `nestedFields` parameter with the relationship names you want to include in the query, separating each relationship with a comma: `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. If the relationships span multiple levels, set the `nestedFieldsDepth` parameter to the depth you need. You can include up to five levels (e.g., `nestedFieldsDepth=5`).
 
 <!--By default, `nestedFields` returns a single page of the first 20 nested items. To change how many items are returned, use the `pageCount` parameter: `[fieldName].pageCount=[number]`.-->
 
@@ -13,18 +13,18 @@ With custom object APIs, you can use the `nestedFields` parameter to return mult
 By adding the `nestedFields` parameter to your request, you can retrieve information that would otherwise require multiple requests. With it, you can retrieve an entry along with its related entries. To return only the related entries, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introduction.
 ```
 
-To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, run the scripts to create related entries and query them using the `nestedFields` parameter.
+To proceed, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, [run the scripts](#using-the-sample-code) to create related entries and query them using the `nestedFields` parameter.
 
 ## Setting Up a Liferay Instance
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Next, [create](../../creating-and-managing-objects/creating-objects.md) three objects:
+Next, create and relate three objects:
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Create three object drafts.
+1. [Create](../../creating-and-managing-objects/creating-objects.md) three object drafts.
 
    First Object:
 
@@ -92,7 +92,7 @@ curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objec
 unzip liferay-w4s7.zip
 ```
 
-The sample code includes cURL scripts for creating, relating, and querying object entries.
+This ZIP provides shell scripts that run cURL commands for creating, relating, and querying object entries using REST APIs. This includes two GET commands for querying related entries.
 
 ```{tip}
 For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
@@ -108,7 +108,7 @@ Follow these steps to add and query related object entries:
    cd liferay-w4s7/curl
    ```
 
-1. Execute `Able_POST_ToCompany` to create `Able` entries.
+1. Execute `Able_POST_ToCompany` to create Able entries.
 
    ```bash
    ./Able_POST_ToCompany.sh
@@ -142,13 +142,15 @@ Follow these steps to add and query related object entries:
    }
    ```
 
-1. Execute `Baker_POST_ToCompany` using an `Able` entry ID as a parameter.
+1. Execute `Baker_POST_ToCompany` using the ID for `able-one` as a parameter.
 
    ```bash
    ./Baker_POST_ToCompany.sh [ableId]
    ```
 
-   This creates `Baker` entries related to the specified `Able` entry. Copy the first `Baker` entry ID for use with the following POST command.
+   This creates three Baker entries and relates them to the specified Able entry using the `ableToBaker` relationship.
+
+   Each Baker entry has three `ableToBaker` relationship fields: `ableToBakerERC`, `r_ableToBaker_c_ableId`, and `r_ableToBaker_c_ableERC`.
 
    ```json
    {
@@ -185,13 +187,15 @@ Follow these steps to add and query related object entries:
    }
    ```
 
-1. Execute `Charlie_POST_ToCompany` using a `Baker` entry ID as a parameter.
+   Copy the first Baker entry ID for use with the following POST command.
+
+1. Execute `Charlie_POST_ToCompany` using the ID for `baker-one` as a parameter.
 
    ```bash
    ./Charlie_POST_ToCompany.sh [bakerId]
    ```
 
-   This creates `Charlie` entries related to the preceding `Baker` entry. Copy the first entry's ID for use with the following GET command.
+   This creates three Charlie entries and relates them to the specified Baker entry using the `bakerToCharlie` relationship.
 
    ```json
    {
@@ -228,13 +232,27 @@ Follow these steps to add and query related object entries:
    }
    ```
 
-1. Execute `Charlie_GET_ById` using a `Charlie` entry ID as a parameter.
+   You now have three Charlie entries related to a Baker entry that is itself related to an Able entry. However, if you query a Charlie entry using a basic GET request, the response only includes details for the Charlie entry. It does not include details for the related Baker or Able entries. To return details for these entries, you must use the `nestedFields` and `nestedFieldsDepth` parameters.
+
+   Copy the first entry's ID for use with the following GET command.
+
+1. Execute `Charlie_GET_ById` using a Charlie entry ID as a parameter.
 
    ```bash
    ./Charlie_GET_ById.sh [charlieId]
    ```
 
-   This queries the entry using nested fields and returns all three levels of related objects.
+   This GET request calls an `o/c/charlies` endpoint with the `nestedFields` and `nestedFieldsDepth` parameters.
+
+   ```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Charlie_GET_ById.sh
+      :language: bash
+   ```
+
+   `nestedFields`: Determines the relationship(s) to include in the query (`ableToBaker,bakerToCharlie`).
+
+   `nestedFieldsDepth`: Determines the depth of entries to include (`2`).
+
+   This command returns all three levels of related objects (i.e., Charlie, Baker, and Able).
 
    ```json
    {
@@ -350,21 +368,29 @@ Follow these steps to add and query related object entries:
    }
    ```
 
-1. Execute `Charlie_PUT_CharlieToAble_ByExternalReferenceCode` with the following ERCs.
+1. Execute `Charlie_PUT_CharlieToAble_ByExternalReferenceCode` with these ERCs.
 
    ```bash
    ./Charlie_PUT_CharlieToAble_ByExternalReferenceCode.sh charlie-one charlie-two charlie-three able-one
    ```
 
-   This relates all three `Charlie` entries with the specified able entry using the `charlieToAble` relationship.
+   This relates all three Charlie entries directly with the specified `able-one` entry using the `charlieToAble` relationship.
 
-1. Execute `Able_GET_ByExternalReferenceCode` with the `Able` entry's ERC.
+1. Execute `Able_GET_ByExternalReferenceCode` with the Able entry's ERC.
 
    ```bash
    ./Able_GET_ByExternalReferenceCode.sh able-one
    ```
 
-   This queries the `Able` entry using the `nestedFields` parameter, returning the `Able` entry and all related `Charlie` entries.
+   This GET request calls an `o/c/ables` endpoint with the `nestedFields` parameter.
+
+   ```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Able_GET_ByExternalReferenceCode.sh
+      :language: bash
+   ```
+
+   `nestedFields`: Determines the relationship(s) to include in the query (`charlieToAble`).
+
+   This command returns details for `able-one` along with all details for the three related Charlie entries.
 
    ```json
    {
@@ -404,17 +430,17 @@ Follow these steps to add and query related object entries:
    }
    ```
 
-## Examining the `Charlie_GET_ById` Script
+## `Charlie_GET_ById.sh`
 
 ```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Charlie_GET_ById.sh
    :language: bash
 ```
 
-The GET request calls a `charlies` endpoint and includes the `nestedFields` and `nestedFieldsDepth` parameters.
+## `Able_GET_ByExternalReferenceCode.sh`
 
-`nestedFields`: Determines the relationship(s) to include in the query (e.g., `ableToBaker,bakerToCharlie`).
-
-`nestedFieldsDepth`: Determines the depth of entries to include. Set this to a number from 0-5.
+```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Able_GET_ByExternalReferenceCode.sh
+   :language: bash
+```
 
 ## Related Topics
 

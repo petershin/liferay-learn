@@ -3,9 +3,9 @@ uuid: c41d47fa-26bc-460b-b688-d1e3b7bcd123
 ---
 # Adding Fields to Objects
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Available Liferay 7.4 U76+/GA76+`
 
-Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference). By default, all objects include the following system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status. But you can add new fields at any time.
+Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference). By default, all objects include these system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status. But you can add new fields at any time.
 
 Follow these steps:
 
@@ -31,15 +31,15 @@ Follow these steps:
    Some field names are reserved by Liferay and cannot be used. See [Reserved Field Names](#reserved-field-names) for more information. 
    ```
 
-1. Select a field *Type*. Some field types include additional configuration options (e.g., Picklist, Attachment). See [Field Type Reference](#field-types-ui-reference) below for a basic overview of each type, or see [Fields](../fields.md) for more detailed information.
+1. Select a field *Type*. Some field types include additional configuration options (e.g., picklist, attachment). See [Field Type Reference](#field-types-ui-reference) below for an overview of each type.
 
-   In some cases, these options are available during field creation (e.g., Picklist, Attachment), while others are only available after field creation (e.g., Text, Long Text). 
+   In some cases, these options are available during field creation, while others are only available after field creation.
+
+   ```{tip}
+   Some business use cases require fields to only accept unique values. For example, you may want to prevent multiple users from having the same email address. In these cases, use the text or integer field type and enable *Accept Unique Values Only*.
+   ```
 
 1. Determine whether the field is *Mandatory*.
-
-   ```{note}
-   Mandatory boolean fields require a true value from end users.
-   ```
 
 1. Click *Save*.
 
@@ -51,52 +51,48 @@ You can remove fields from object drafts at any time. However, you cannot remove
 
 ## Field Types UI Reference
 
-{bdg-secondary}`For 7.4 U56+/GA56+`
-
-| Type | Description |
-| :--- | :--- |
-| [Aggregation](./aggregation-fields.md) | Stores read-only values calculated using values from a relationship table. Available functions include `count`, `sum`, `average`, `min`, and `max`. |
-| [Attachment](./attachment-fields.md) | Stores `jpeg`, `jpg`, `pdf`, and `png` files no larger than 100 MB. |
-| Boolean | Stores true or false values. |
-| Date | Stores date values. |
-| Decimal (*previously Double*) | Stores a decimal number value that supports fractional portions. |
-| Integer | Stores an integer up to 9 digits in length. |
-| Long Integer (*previously Long*) | Stores a large integer up to 16 digits in length. |
-| Long Text (*previously Clob*) | Stores a text box value that supports up to 65,000 characters; after creating a Long Text field, you can configure it to limit the number of characters allowed. |
-| Multiselect Picklist | Stores one or more string values from a picklist. See [Picklists](../../picklists.md) for more information. |
-| Picklist | Stores a picklist string value. See [Picklists](../../picklists.md) for more information. |
-| Precision Decimal (*previously BigDecimal*) | Stores a high-precision decimal number without rounding. |
-| Relationship | Stores the numeric ID for all related object entries. Objects automatically adds relationship fields to objects on the child side of a One to Many relationship. See [Defining Object Relationships](../relationships/defining-object-relationships.md) for more information. |
-| Rich Text | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio). |
-| Text (*previously String*) | Stores simple text values up to 280 characters; after creating a Text field, you can configure it to limit the number of characters allowed. |
+| Field Types (UI)                            | Data Type (HEADLESS) | Description                                                                                                                                                                                                                                                                   |
+|:--------------------------------------------|:---------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Aggregation](./aggregation-fields.md)      | String               | Stores read-only values calculated using values from a relationship table. Available functions include `count`, `sum`, `average`, `min`, and `max`.                                                                                                                           |
+| [Attachment](./attachment-fields.md)        | Relationship > Long  | Stores files; by default, uploaded files can be no larger than 100 MB; this field supports all file types accepted by [Documents and Media](../../../../content-authoring-and-management/documents-and-media.md).                                                             |
+| Boolean                                     | Boolean              | Stores true or false values. Mandatory boolean fields require a true value from end users.                                                                                                                                                                                    |
+| Date                                        | Date                 | Stores date values                                                                                                                                                                                                                                                            |
+| Decimal (*previously Double*)               | Double               | Stores a decimal number value with a limit of 16 digits. <br><br> Example: `999.9999999999999` (16 digits total)                                                                                                                                                              |
+| Integer                                     | Integer              | Stores an integer up to nine digits in length. You can configure integer fields to only allow unique values. <br><br> Maximum value: `2147483647` <br><br> Minimum value: `-2147483648`                                                                                       |
+| Long Integer (*previously Long*)            | Long                 | Stores a large integer up to 16 digits in length. <br><br> Maximum value: `9007199254740991` <br><br> Minimum value: `-9007199254740991`                                                                                                                                      |
+| Long Text (*previously Clob*)               | Clob                 | Stores a text box value that supports up to 65,000 characters; after creating a long text field, you can configure it to limit the number of characters allowed.                                                                                                              |
+| Multiselect Picklist                        | String               | Stores one or more string values from a [picklist](../../picklists.md).                                                                                                                                                                                                       |
+| Picklist                                    | String               | Stores one string value from a [picklist](../../picklists.md).                                                                                                                                                                                                                |
+| Precision Decimal (*previously BigDecimal*) | BigDecimal           | Stores a high-precision decimal number without rounding and supports up to 16 decimal digits. <br><br> Maximum Value: `99999999999999.9999999999999999` <br><br> Minimum value: `-99999999999999.9999999999999999`                                                            |
+| Relationship                                | Long                 | Stores the numeric ID for all related object entries. Objects automatically adds relationship fields to objects on the child side of a one-to-many relationship. See [Defining Object Relationships](../relationships/defining-object-relationships.md) for more information. |
+| Rich Text                                   | Clob                 | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio).                                                                                                                                                                                  |
+| Text (*previously String*)                  | String               | Stores simple text values up to 280 characters. You can configure text fields to only allow unique values. Also, after creating the field, you can configure it to limit the number of characters allowed.                                                                    |
 
 ## Reserved Field Names
 
-{bdg-secondary}`For 7.4 U41+/GA41+`
-
 The following field names are reserved by Liferay and cannot be used. If users attempt to create a field using one of these field names, Liferay displays an error message.
 
-| Field | Description |
-| :--- | :--- |
-| `companyId` | Portal instance where the entry was created. |
-| `createDate` | When the entry was created. |
-| `externalReferenceCode` | External reference code for the entry. |
-| `groupId` | Site ID where the entry was created. |
-| `lastPublishDate` | Date when the entry was last published. |
-| `modifiedDate` | Date when the entry was last modified. |
-| `mvccVersion` | MVCC version of the entry. |
-| `objectDefinitionId` | ID of the entry's object. |
-| `objectEntryId` | ID for the entry. |
-| `status` | Workflow status for the entry. |
-| `statusByUserId` | ID of the assigned user in Workflow. |
-| `statusByUserName` | Name of the assigned user in Workflow. |
-| `statusDate` | Date when the Workflow status was last updated. |
-| `userEmailAddress` | Email address for the entry's author. |
-| `userFirstName` | First name of the entry's author. |
-| `userId` | ID of the entry's author. |
-| `userLastName` | Last name of the entry's author. |
-| `userName` | User name of the entry's author. |
-| `uuid` | Unique universal ID for the entry. |
+| Field                   | Description                                     |
+|:------------------------|:------------------------------------------------|
+| `companyId`             | Portal instance where the entry was created.    |
+| `createDate`            | When the entry was created.                     |
+| `externalReferenceCode` | External reference code for the entry.          |
+| `groupId`               | Site ID where the entry was created.            |
+| `lastPublishDate`       | Date when the entry was last published.         |
+| `modifiedDate`          | Date when the entry was last modified.          |
+| `mvccVersion`           | MVCC version of the entry.                      |
+| `objectDefinitionId`    | ID of the entry's object.                       |
+| `objectEntryId`         | ID for the entry.                               |
+| `status`                | Workflow status for the entry.                  |
+| `statusByUserId`        | ID of the assigned user in Workflow.            |
+| `statusByUserName`      | Name of the assigned user in Workflow.          |
+| `statusDate`            | Date when the Workflow status was last updated. |
+| `userEmailAddress`      | Email address for the entry's author.           |
+| `userFirstName`         | First name of the entry's author.               |
+| `userId`                | ID of the entry's author.                       |
+| `userLastName`          | Last name of the entry's author.                |
+| `userName`              | User name of the entry's author.                |
+| `uuid`                  | Unique universal ID for the entry.              |
 
 ## Related Topics
 

@@ -17,7 +17,7 @@ fields/aggregation-fields.md
 fields/attachment-fields.md
 ```
 
-{bdg-secondary}`Available Liferay 7.4 U56+/GA56+`
+{bdg-secondary}`Available Liferay 7.4 U76+/GA76+`
 
 Object fields are data definitions that represent database columns and store different types of values. All objects include default system fields, but you can [add custom fields](./fields/adding-fields-to-objects.md) to both draft and published objects.
 
@@ -27,22 +27,22 @@ When you [publish](./creating-objects.md#publishing-object-drafts) an object dra
 
 Liferay provides these field types that correspond to specific data types in the back-end:
 
-| Field Types (UI) | Data Type (HEADLESS) | Description |
-| :--- | :--- | :--- |
-| [Aggregation](./fields/aggregation-fields.md) | String | Stores read-only values calculated using values from a relationship table. Available functions include `count`, `sum`, `average`, `min`, and `max`. |
-| [Attachment](./fields/attachment-fields.md) | Relationship > Long | Stores files; by default, uploaded files can be no larger than 100 MB; this field supports all file types accepted by [Documents and Media](../../../content-authoring-and-management/documents-and-media.md). |
-| Boolean | Boolean | Stores true or false values |
-| Date | Date | Stores date values |
-| Decimal (_previously Double_) | Double | Stores a decimal number value with a limit of 16 digits. <br><br> Example: `999.9999999999999` (16 digits total) |
-| Integer | Integer | Stores an integer up to nine digits in length. <br><br> Maximum value: `2147483647` <br><br> Minimum value: `-2147483648` |
-| Long Integer (_previously Long_) | Long | Stores a large integer up to 16 digits in length. <br><br> Maximum value: `9007199254740991` <br><br> Minimum value: `-9007199254740991` |
-| Long Text (_previously Clob_) | Clob | Stores a text box value that supports up to 65,000 characters; after creating a Long Text field, you can configure it to limit the number of characters allowed. |
-| Multiselect Picklist | String | Stores one or more string values from a [picklist](../picklists.md). |
-| Picklist | String | Stores one string value from a [picklist](../picklists.md). |
-| Precision Decimal (_previously BigDecimal_) | BigDecimal | Stores a high-precision decimal number without rounding and supports up to 16 decimal digits. <br><br> Maximum Value: `99999999999999.9999999999999999` <br><br> Minimum value: `-99999999999999.9999999999999999` |
-| Relationship | Long | Stores the numeric ID for all related object entries. Objects automatically adds relationship fields to objects on the child side of a One to Many relationship. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information. |
-| Rich Text | Clob | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio). |
-| Text (_previously String_) | String | Stores simple text values up to 280 characters; after creating a Text field, you can configure it to limit the number of characters allowed. |
+| Field Types (UI)                              | Data Type (HEADLESS) | Description                                                                                                                                                                                                                                                                  |
+|:----------------------------------------------|:---------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Aggregation](./fields/aggregation-fields.md) | String               | Stores read-only values calculated using values from a relationship table. Available functions include `count`, `sum`, `average`, `min`, and `max`.                                                                                                                          |
+| [Attachment](./fields/attachment-fields.md)   | Relationship > Long  | Stores files; by default, uploaded files can be no larger than 100 MB; this field supports all file types accepted by [Documents and Media](../../../content-authoring-and-management/documents-and-media.md).                                                               |
+| Boolean                                       | Boolean              | Stores true or false values. Making Boolean fields mandatory requires a true value.                                                                                                                                                                                          |
+| Date                                          | Date                 | Stores date values                                                                                                                                                                                                                                                           |
+| Decimal (*previously Double*)                 | Double               | Stores a decimal number value with a limit of 16 digits. <br><br> Example: `999.9999999999999` (16 digits total)                                                                                                                                                             |
+| Integer                                       | Integer              | Stores an integer up to nine digits in length. You can configure integer fields to only allow unique values. <br><br> Maximum value: `2147483647` <br><br> Minimum value: `-2147483648`                                                                                      |
+| Long Integer (*previously Long*)              | Long                 | Stores a large integer up to 16 digits in length. <br><br> Maximum value: `9007199254740991` <br><br> Minimum value: `-9007199254740991`                                                                                                                                     |
+| Long Text (*previously Clob*)                 | Clob                 | Stores a text box value that supports up to 65,000 characters; after creating a long text field, you can configure it to limit the number of characters allowed.                                                                                                             |
+| Multiselect Picklist                          | String               | Stores one or more string values from a [picklist](../picklists.md).                                                                                                                                                                                                         |
+| Picklist                                      | String               | Stores one string value from a [picklist](../picklists.md).                                                                                                                                                                                                                  |
+| Precision Decimal (*previously BigDecimal*)   | BigDecimal           | Stores a high-precision decimal number without rounding and supports up to 16 decimal digits. <br><br> Maximum Value: `99999999999999.9999999999999999` <br><br> Minimum value: `-99999999999999.9999999999999999`                                                           |
+| Relationship                                  | Long                 | Stores the numeric ID for all related object entries. Objects automatically adds relationship fields to objects on the child side of a one-to-many relationship. See [Defining Object Relationships](./relationships/defining-object-relationships.md) for more information. |
+| Rich Text                                     | Clob                 | Stores text with advanced formatting tools and media elements (e.g., images, videos, audio).                                                                                                                                                                                 |
+| Text (*previously String*)                    | String               | Stores simple text values up to 280 characters. You can configure text fields to only allow unique values. Also, after creating the field, you can configure it to limit the number of characters allowed.                                                                   |
 
 ::::{grid} 2
 :gutter: 3 3 3 3

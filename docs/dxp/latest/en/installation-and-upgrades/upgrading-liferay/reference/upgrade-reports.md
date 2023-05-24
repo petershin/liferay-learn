@@ -33,6 +33,8 @@ cd liferay-home
 echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties
 ```
 
+Note, calculating the document library size may require long wait times. Therefore the timeout period is set to ten seconds by default. To change this duration, modify the `upgrade.report.dl.storage.size.timeout` property in your `properties-ext.properties` file. Increase the time or set the value to `0` to disable the timout.
+
 The [Database Upgrade Tool](../upgrade-basics/using-the-database-upgrade-tool.md) generates an upgrade report the next time you run it.
 
 Here is an example upgrade report:

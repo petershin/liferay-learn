@@ -3,32 +3,32 @@ uuid: fc207835-2243-4f2b-858f-67cfff5a1b3f
 ---
 # Commerce Roles Reference
 
-Liferay includes four [out-of-the-box roles](#out-of-the-box-roles) for Commerce: Account Administrator, Account Member, Buyer, and Order Manager. While these roles are configured to model some common roles, you can create additional account roles or modify the out-of-the-box ones to better suit your use case. Some [common custom roles](#custom-roles) include Catalog Manager, Inventory Manager, Shipment Manager, Instance Order Manager, and Discount Manager.
+Liferay includes four roles [out-of-the-box](#out-of-the-box-roles) for Commerce. This includes the account administrator, account member, buyer, and order manager. You can modify the out-of-the-box roles or create additional account roles to better suit your use case. Some [common custom roles](#custom-roles) include catalog manager, inventory manager, shipment manager, instance order Manager, and discount manager.
 
 ```{note}
-For Liferay 7.3.x and earlier Commerce versions, [Sales Agent](#sales-agent) is also included as an out-of-the-box role.
+The sales agent role is available out-of-the-box for Liferay 7.3.x and earlier Commerce versions. It is available in Liferay DXP 7.4 and above through the Minium and Speedwell accelerators only. 
 ```
 
 ## Viewing Permissions
 
 Follow these steps to view and manage permissions associated with a Commerce role:
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click on the *Control Panel* tab, and go to *Users* &rarr; *Roles*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 
    ![Click on Roles in the Control Panel.](./commerce-roles-reference/images/01.png)
 
-1. Click on the desired role:
+1. Click the Account Roles tab and select a role:
 
-   * *Account Administrator* (Account Role)
-   * *Account Member* (Account Role)
-   * Buyer (Account Role)
-   * Order Manager (Account Role)
+   * Account Administrator
+   * Account Member
+   * Buyer
+   * Order Manager
 
    ```{note}
-   In Liferay 7.3 and earlier versions, the Account Administrator is a Site Role, and the Account Member role is not a default role. 
+   In Liferay 7.3 and earlier versions, the account administrator is a site role, and the account member role is not a default role. 
    ```
 
-1. Click on the *Define Permissions* tab.
+1. Click the *Define Permissions* tab.
 
    From here, you can view a summary of all application and resource permissions assigned to the role.
 
@@ -38,51 +38,51 @@ Follow these steps to view and manage permissions associated with a Commerce rol
 
 ## Out-of-the-Box Roles
 
-The following roles are automatically added to your DXP instance during Commerce activation. They are included alongside default DXP roles and can be modified if desired. See [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) for more information.
+The following roles are available out-of-the-box with your DXP instance. They are included alongside default DXP roles and you can modify them if needed. See [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) for more information.
 
 ### Account Administrator
 
 > Account Role
 
-Account Administrators are super users of their account. They can approve or reject orders when there is a [Buyer Order Approval](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md#enabling-workflow) workflow enabled and oversee the Order Managers and Buyers of their Account. They can modify their Account, invite or add users to it, and assign roles to other Account members. Account Administrators cannot create or delete Accounts. This permission is reserved for instance administrators.
+Account administrators are super users of their account. They can approve or reject orders when there is a [buyer order approval](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md#enabling-workflow) workflow enabled and oversee the order managers and buyers of their account. They can modify their account, invite or add users to it, and assign roles to other account members. Account administrators cannot create or delete accounts. This permission is reserved for instance administrators.
 
-The following Account permissions affect the Account Administrator's ability to modify accounts in a B2B setting, while the Open Carts permissions affect the administrator's ability to modify orders regardless of the store type.
+The accounts permissions pertain to the account administrator's ability to modify accounts in a B2B setting, while the open carts permissions affect the administrator's ability to modify orders regardless of the store type.
 
 | Permissions                                                          | Description                                                                                                |
 | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| Accounts > Account: Add Account Entry                                | Ability to add Account entries                                                                             |
-| Accounts > Account Entry: Manage Users                               | Ability to manage Account users                                                                            |
-| Accounts > Account Entry: Update                                     | Ability to modify Account entries                                                                          |
-| Accounts > Account Entry: View                                       | Ability to view an Account                                                                                 |
-| Accounts > Account Entry: View Users                                 | Ability to view Account users                                                                              |
-| Accounts > Commerce Account: Manage Addresses                        | Ability to add a new billing, a shipping, or a combined address to an Account                              |
-| Accounts > Commerce Account: Manage Members                          | Ability to invite Users and Organizations to an Account; also ability to edit their details                |
-| Accounts > Commerce Account: Update                                  | Ability to modify an Account                                                                               |
-| Accounts > Commerce Account: View                                    | Ability to view an Account                                                                                 |
-| Accounts > Commerce Account: View Addresses                          | Ability to view all addresses associated with an Account                                                   |
-| Accounts > Commerce Account: View Members                            | Ability to view all members in an Account                                                                  |
-| Open Carts > Commerce Order: Add Order                               | Ability to add an Order to a buyer's Account                                                               |
-| Open Carts > Commerce Order: Approve Open Orders                     | Ability to approve Orders when workflow is enabled                                                         |
-| Open Carts > Commerce Order: Check Out Open Orders                   | Ability to complete the checkout process for Orders                                                        |
-| Open Carts > Commerce Order: Delete Orders                           | Ability to delete Orders                                                                                   |
-| Open Carts > Commerce Order: Manage Orders                           | Ability to change Order details, such as mailing and billing addresses; ability to add a note to the Order |
-| Open Carts > Commerce Order: View Open Orders                        | Ability to view all open Orders                                                                            |
-| Open Carts > Commerce Order: View Orders                             | Ability to view Orders regardless of status                                                                |
-| Open Carts > Commerce Orders: Manage Commerce Order Payment Methods  | Ability to manage payment methods of an Order                                                              |
-| Open Carts > Commerce Orders: Manage Commerce Order Shipping Options | Ability to manage shipping options of an Order                                                             |
-| Open Carts > Commerce Orders: Manage Order Delivery Terms            | Ability to manage the Delivery Terms of an Order                                                           |
-| Open Carts > Commerce Orders: Manage Order Payment Terms             | Ability to manage the Payment Terms of an Order                                                            |
-| Open Carts > Commerce Orders: View Billing Address                   | Ability to view the billing address of an Order                                                            |
-| Accounts > Account Entry: View Account Roles                         | Ability to view Account Roles                                                                              |
-| Accounts > Account Entry: View Addresses                             | Ability to view addresses of the Account                                                                   |
-| Accounts > Account Entry: Manage Addresses                           | Ability to manage addresses of the Account                                                                 |
-| Accounts > Account Entry: View Organizations                         | Ability to view organizations in the Account                                                               |
+| Accounts > Account: Add Account Entry                                | Ability to add account entries                                                                             |
+| Accounts > Account Entry: Manage Users                               | Ability to manage account users                                                                            |
+| Accounts > Account Entry: Update                                     | Ability to modify account entries                                                                          |
+| Accounts > Account Entry: View                                       | Ability to view an account                                                                                 |
+| Accounts > Account Entry: View Users                                 | Ability to view account users                                                                              |
+| Accounts > Commerce Account: Manage Addresses                        | Ability to add a new billing, a shipping, or a combined address to an account                              |
+| Accounts > Commerce Account: Manage Members                          | Ability to invite users and organizations to an account; also ability to edit their details                |
+| Accounts > Commerce Account: Update                                  | Ability to modify an account                                                                               |
+| Accounts > Commerce Account: View                                    | Ability to view an account                                                                                 |
+| Accounts > Commerce Account: View Addresses                          | Ability to view all addresses associated with an account                                                   |
+| Accounts > Commerce Account: View Members                            | Ability to view all members in an account                                                                  |
+| Open Carts > Commerce Order: Add Order                               | Ability to add an order to a buyer's account                                                               |
+| Open Carts > Commerce Order: Approve Open Orders                     | Ability to approve orders when workflow is enabled                                                         |
+| Open Carts > Commerce Order: Check Out Open Orders                   | Ability to complete the checkout process for orders                                                        |
+| Open Carts > Commerce Order: Delete Orders                           | Ability to delete orders                                                                                   |
+| Open Carts > Commerce Order: Manage Orders                           | Ability to change order details, such as mailing and billing addresses; ability to add a note to the order |
+| Open Carts > Commerce Order: View Open Orders                        | Ability to view all open orders                                                                            |
+| Open Carts > Commerce Order: View Orders                             | Ability to view orders regardless of status                                                                |
+| Open Carts > Commerce Orders: Manage Commerce Order Payment Methods  | Ability to manage payment methods of an order                                                              |
+| Open Carts > Commerce Orders: Manage Commerce Order Shipping Options | Ability to manage shipping options of an order                                                             |
+| Open Carts > Commerce Orders: Manage Order Delivery Terms            | Ability to manage the delivery terms of an order                                                           |
+| Open Carts > Commerce Orders: Manage Order Payment Terms             | Ability to manage the payment terms of an order                                                            |
+| Open Carts > Commerce Orders: View Billing Address                   | Ability to view the billing address of an order                                                            |
+| Accounts > Account Entry: View Account Roles                         | Ability to view account roles                                                                              |
+| Accounts > Account Entry: View Addresses                             | Ability to view addresses of the account                                                                   |
+| Accounts > Account Entry: Manage Addresses                           | Ability to manage addresses of the account                                                                 |
+| Accounts > Account Entry: View Organizations                         | Ability to view organizations in the account                                                               |
 
 ### Account Member
 
 > Account Role (included in Liferay 7.4+)
 
-This role is automatically assigned to all users within an account and grants basic view permissions.
+This role is automatically assigned to all users of an account and grants basic view permissions.
 
 | Permission                     | Description                |
 | :----------------------------- | :------------------------- |
@@ -92,55 +92,55 @@ This role is automatically assigned to all users within an account and grants ba
 
 > Account Role
 
-A buyer can make purchases on behalf of the Account they are handling. When there's a Buyer Order Approval workflow in place, they must submit the Order to the Order Manager who decides whether to approve it or not. A buyer can also view and check out Orders from another buyer of the same Account.
+A buyer can make purchases on behalf of the account they are handling. When there's a buyer order approval workflow, they must submit the order to the order manager who decides whether to approve it or not. A buyer can also view and check out orders from another buyer of the same account.
 
-The following Accounts permissions pertain to the Buyer's ability to view and manage addresses, while the Open Carts permissions pertain to the buyer’s ability to view, create, and check out orders, and also view and manage other order attributes.
+The accounts permissions pertain to the buyer's ability to view and manage addresses, while the open carts permissions pertain to the buyer’s ability to view, create, and check out orders, and also manage other order attributes.
 
 | Permissions                                                          | Description                                         |
 | :------------------------------------------------------------------- | :-------------------------------------------------- |
-| Open Carts > Commerce Order: Add Order                               | Ability to add an Order to a buyer's Account        |
-| Open Carts > Commerce Order: Checkout Open Orders                    | Ability to complete the checkout process for Orders |
-| Open Carts > Commerce Order: View Open Orders                        | Ability to view open Orders                         |
-| Open Carts > Commerce Order: View Orders                             | Ability to view Orders regardless of status         |
-| Accounts > Account Entry: Manage Addresses                           | Ability to manage the addresses of an Account       |
-| Accounts > Account Entry: View Addresses                             | Ability to view the addresses of an Account         |
-| Open Carts > Commerce Orders: Manage Commerce Order Payment Methods  | Ability to manage the payment methods of an Order   |
-| Open Carts > Commerce Orders: Manage Commerce Order Shipping Options | Ability to manage the shipping options of an Order  |
-| Open Carts > Commerce Orders: Manage Order Delivery Terms            | Ability to manage the Delivery Terms of an Order    |
-| Open Carts > Commerce Orders: Manage Order Payment Terms             | Ability to manage the Payment Terms of an Order     |
-| Open Carts > Commerce Orders: View Billing Address                   | Ability to view the billing address of an Order     |
+| Open Carts > Commerce Order: Add Order                               | Ability to add an order to a buyer's account        |
+| Open Carts > Commerce Order: Checkout Open Orders                    | Ability to complete the checkout process for orders |
+| Open Carts > Commerce Order: View Open Orders                        | Ability to view open orders                         |
+| Open Carts > Commerce Order: View Orders                             | Ability to view orders regardless of status         |
+| Accounts > Account Entry: Manage Addresses                           | Ability to manage the addresses of an account       |
+| Accounts > Account Entry: View Addresses                             | Ability to view the addresses of an account         |
+| Open Carts > Commerce Orders: Manage Commerce Order Payment Methods  | Ability to manage the payment methods of an order   |
+| Open Carts > Commerce Orders: Manage Commerce Order Shipping Options | Ability to manage the shipping options of an order  |
+| Open Carts > Commerce Orders: Manage Order Delivery Terms            | Ability to manage the delivery terms of an order    |
+| Open Carts > Commerce Orders: Manage Order Payment Terms             | Ability to manage the payment terms of an order     |
+| Open Carts > Commerce Orders: View Billing Address                   | Ability to view the billing address of an order     |
 
 ### Order Manager
 
 > Account Role
 
-You can use this role to oversee all the purchases made in the Account. If a Buyer Order Approval workflow is in place, the Order Manager gets a request from the Buyer to approve a purchase. This role grants users all the permissions of Buyers and allows them to also manage, delete, and approve orders in a specific Site.
+You can use this role to oversee all the purchases made in the account. If there's a buyer order approval workflow, the order manager gets a request from the buyer to approve a purchase. This role grants users all the permissions of buyers and allows them to also manage, delete, and approve orders in a specific site.
 
 | Permissions                                                          | Description                                                                                                |
 | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| Open Carts > Commerce Order: Add Order                               | Ability to add an Order to a buyer's Account                                                               |
-| Open Carts > Commerce Order: Approve Open Orders                     | Ability to approve Orders when workflow is enabled                                                         |
-| Open Carts > Commerce Order: Check Out Open Orders                   | Ability to complete the checkout process for Orders                                                        |
-| Open Carts > Commerce Order: Delete Orders                           | Ability to delete Orders                                                                                   |
-| Open Carts > Commerce Order: Manage Orders                           | Ability to change Order details, such as mailing and billing addresses; ability to add a note to the Order |
-| Open Carts > Commerce Order: View Open Orders                        | Ability to view all open Orders                                                                            |
-| Open Carts > Commerce Order: View Orders                             | Ability to view Orders regardless of status                                                                |
-| Open Carts > Commerce Orders: Manage Commerce Order Payment Methods  | Ability to manage the payment methods of an Order                                                          |
-| Open Carts > Commerce Orders: Manage Commerce Order Shipping Options | Ability to manage an Order’s shipping options                                                              |
-| Open Carts > Commerce Orders: Manage Order Delivery Terms            | Ability to manage the Delivery Terms of an Order                                                           |
-| Open Carts > Commerce Orders: Manage Order Payment Terms             | Ability to manage the Payment Terms of an Order                                                            |
-| Open Carts > Commerce Orders: View Billing Address                   | Ability to view the billing address of an Order                                                            |
+| Open Carts > Commerce Order: Add Order                               | Ability to add an order to a buyer's account                                                               |
+| Open Carts > Commerce Order: Approve Open Orders                     | Ability to approve orders when workflow is enabled                                                         |
+| Open Carts > Commerce Order: Check Out Open Orders                   | Ability to complete the checkout process for orders                                                        |
+| Open Carts > Commerce Order: Delete Orders                           | Ability to delete orders                                                                                   |
+| Open Carts > Commerce Order: Manage Orders                           | Ability to change order details, such as mailing and billing addresses; ability to add a note to the order |
+| Open Carts > Commerce Order: View Open Orders                        | Ability to view all open orders                                                                            |
+| Open Carts > Commerce Order: View Orders                             | Ability to view orders regardless of status                                                                |
+| Open Carts > Commerce Orders: Manage Commerce Order Payment Methods  | Ability to manage the payment methods of an order                                                          |
+| Open Carts > Commerce Orders: Manage Commerce Order Shipping Options | Ability to manage an order’s shipping options                                                              |
+| Open Carts > Commerce Orders: Manage Order Delivery Terms            | Ability to manage the delivery terms of an order                                                           |
+| Open Carts > Commerce Orders: Manage Order Payment Terms             | Ability to manage the payment terms of an order                                                            |
+| Open Carts > Commerce Orders: View Billing Address                   | Ability to view the billing address of an order                                                            |
 
 ## Roles created by Site Initializers - Minium and Speedwell
 
 ### Sales Agent
 
-The Sales Agent is a regular role in Liferay and assignees are able to manage any account assigned to the role without granting administrative permissions. You can find it under the *Regular Roles* tab.
+The sales agent is a regular role in Liferay and assignees are able to manage any account assigned to the role without granting them administrative permissions. You can find it under the *Regular Roles* tab.
 
 | Permissions                                                       | Description                                                                          |
 | :---------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
 | Accounts > Account Entry: Manage Organizations                    | Ability to add or remove organizations                                               |
-| Accounts > Account Entry: Manage Users                            | Ability to add or remove user§s                                                      |
+| Accounts > Account Entry: Manage Users                            | Ability to add or remove users                                                       |
 | Open Carts > Commerce Order: Add Order                            | Ability to add an order to the account that the agent's organization is a member of. |
 | Open Carts > Commerce Order: Check Out Open Orders                | Ability to complete the checkout process for orders                                  |
 | Open Carts > Commerce Order: View Open Orders                     | Ability to view all open orders                                                      |
@@ -150,7 +150,7 @@ The Sales Agent is a regular role in Liferay and assignees are able to manage an
 
 > Regular Role
 
-The Discount Manager role grants permissions to create, update, and delete Discounts in Liferay Commerce. Since Commerce Discounts can target different parts of an order and use different eligibility rules, there are a lot of possible permission configurations for a Discount Manager.
+The discount manager role grants permissions to create, update, and delete discounts in Commerce. Since discounts can target different parts of an order and use different eligibility rules, there are a lot of possible permission configurations for a Discount Manager.
 
 | Permissions                                                 | Description                                                      |
 | :---------------------------------------------------------- | :--------------------------------------------------------------- |
@@ -161,7 +161,7 @@ The Discount Manager role grants permissions to create, update, and delete Disco
 | Price Lists > Commerce Price List: Update                   | Ability to modify price list entries                             |
 | Price Lists > Commerce Price List: View                     | Ability to view price list entries                               |
 | Price Lists > Commerce Price Lists: Add Commerce Price List | Ability to add price list entries                                |
-| Promotions: Access in Control Panel                         | Ability to access to Promotions application in the Global Menu   |
+| Promotions: Access in Control Panel                         | Ability to access to promotions in the Global Menu               |
 
 ### Category Manager
 
@@ -171,11 +171,11 @@ The category manager role grants permissions to create categories and vocabulari
 
 | Permissions                                                 | Description                                                               |
 | :---------------------------------------------------------- | :------------------------------------------------------------------------ |
-| Catalogs: Access in Control Panel                           | Ability to access the Catalogs application in the Global Menu             |
+| Catalogs: Access in Control Panel                           | Ability to access the catalogs application in the Global Menu             |
 | Catalogs > Commerce Catalog: Update                         | Ability to update product catalogs                                        |
 | Catalogs > Commerce Catalog: View                           | Ability to view product catalogs                                          |
 | Catalogs > Commerce Catalogs: Add Commerce Catalog          | Ability to add new product catalogs                                       |
-| Categories: Access in Site and Asset Library administration | Ability to access categories in the Site and Asset Library administration |
+| Categories: Access in Site and Asset Library administration | Ability to access categories in the site and asset library administration |
 | Categories: View                                            | Ability to view categories                                                |
 | Categories > Asset Categories: Add Category                 | Ability to add categories                                                 |
 | Categories > Asset Categories: Add Vocabulary               | Ability to add vocabularies                                               |
@@ -191,15 +191,15 @@ The operations manager role grants permissions to manage accounts of an account 
 | Permissions                                                  | Description                                                                                                |
 | :----------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
 | Account Groups > Commerce Accounts: Manage All Accounts      | Ability to manage accounts of an account group                                                             |
-| Inventory: Access in Control Panel                           | Ability to access the Inventory application in the Global Menu                                             |
+| Inventory: Access in Control Panel                           | Ability to access inventory in the Global Menu                                                             |
 | Open Carts > Commerce Orders: Manage Order Delivery Terms    | Ability to manage the delivery terms of an order                                                           |
 | Open Carts > Commerce Orders: Manage Order Payment Terms     | Ability to manage the payment terms of an order                                                            |
 | Open Carts > Commerce Orders: Manage Orders                  | Ability to change order details, such as mailing and billing addresses; ability to add a note to the order |
-| Orders: Access in Control Panel                              | Ability to access the Orders application in the Global Menu                                                |
+| Orders: Access in Control Panel                              | Ability to access orders in the Global Menu                                                                |
 | Portal: View Control Panel Menu                              | Ability to access the Global Menu                                                                          |
-| Shipments: Access in Control Panel                           | Ability to access the Shipments application in the Global Menu                                             |
+| Shipments: Access in Control Panel                           | Ability to access shipments in the Global Menu                                                             |
 | Shipments > Commerce Shipments: Manage Shipments             | Ability to access and modify shipments entities                                                            |
-| Subscriptions: Access in Control Panel                       | Ability to access the subscriptions application in the Global Menu                                         |
+| Subscriptions: Access in Control Panel                       | Ability to access subscriptions in the Global Menu                                                         |
 | Subscriptions > Commerce Subscriptions: Manage Subscriptions | Ability to access and modify subscriptions                                                                 |
 | Warehouses > Commerce Inventories: Manage Inventory          | Ability to access and modify inventory linked to a warehouse                                               |
 
@@ -209,8 +209,8 @@ The operations manager role grants permissions to manage accounts of an account 
 
 | Permissions                                         | Description                                         |
 | :-------------------------------------------------- | :-------------------------------------------------- |
-| Open Carts > Commerce Orders: Check Out Open Orders | Ability to complete the checkout process for Orders |
-| Open Carts > Commerce Orders: View Open Orders      | Ability to view all open Orders                     |
+| Open Carts > Commerce Orders: Check Out Open Orders | Ability to complete the checkout process for orders |
+| Open Carts > Commerce Orders: View Open Orders      | Ability to view all open orders                     |
 
 ## Custom Roles
 
@@ -220,23 +220,23 @@ The following list includes common custom roles you may want to create for your 
 
 > Regular Role
 
-The Catalog Manager role grants permissions to access, create, edit, and manage Products within a specific Catalog. This role is useful in multiple Catalog scenarios, where different vendors or company teams manage different Products in separate Catalogs. Catalog Managers cannot manage inventory. For this responsibility, see [Inventory Manager](#inventory-manager)
+The catalog manager role grants permissions to access, create, edit, and manage products within a specific catalog. This role is useful in multiple catalog scenarios, where different vendors or company teams manage different products in separate catalogs. Catalog managers cannot manage inventory. For this responsibility, see [Inventory Manager](#inventory-manager)
 
 | Permissions                                         | Description                                                   |
 | :-------------------------------------------------- | :------------------------------------------------------------ |
-| Catalogs: Access in Control Panel                   | Ability to access the Catalogs application in the Global Menu |
-| Catalogs: View                                      | Ability to view the Catalogs application                      |
+| Catalogs: Access in Control Panel                   | Ability to access the catalogs application in the Global Menu |
+| Catalogs: View                                      | Ability to view the catalogs application                      |
 | Currencies > Commerce Currencies: Manage Currencies | Ability to manage currencies                                  |
 | Portal: View Control Panel Menu                     | Ability to access the Global Menu                             |
-| Products: Access in Control Panel                   | Ability to access the Products application in the Global Menu |
-| Products: View                                      | Ability to view the Products application                      |
+| Products: Access in Control Panel                   | Ability to access the products application in the Global Menu |
+| Products: View                                      | Ability to view the products application                      |
 
-In addition to the above permissions, you must also assign *View* and *Update* permissions for the individual Catalogs you want the role will manage.
+In addition to the above permissions, you must also assign *View* and *Update* permissions for the individual catalogs you want the role will manage.
 
 To do this, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Product Management* &rarr; *Catalog*. Then, click on the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired Catalog, and select *Permissions*. Use the check boxes to assign the role *View* and *Update* permissions.
 
 ```{note}
-If you'd like your Catalog Manager to manage Products within a Catalog without the ability to modify the Catalog itself, remove the `Catalogs: Access in Control Panel` and `Catalogs: View` permissions.
+If you'd like your catalog manager to manage products within a catalog without the ability to modify the catalog itself, remove the `Catalogs: Access in Control Panel` and `Catalogs: View` permissions.
 ```
 
 ### Inventory Manager
@@ -247,9 +247,9 @@ The Inventory Manager role allows users to view and manage inventory in all Ware
 
 | Permissions                                         | Description                                                           |
 | :-------------------------------------------------- | :-------------------------------------------------------------------- |
-| Inventory: Access in Control Panel                  | Ability to access the Inventory application in the Control Panel      |
-| Inventory: View                                     | Ability to view the Inventory application                             |
-| Warehouses > Commerce Inventories: Manage Inventory | Ability to access and modify Inventory entities linked to a Warehouse |
+| Inventory: Access in Control Panel                  | Ability to access the inventory application in the Control Panel      |
+| Inventory: View                                     | Ability to view the inventory application                             |
+| Warehouses > Commerce Inventories: Manage Inventory | Ability to access and modify inventory entities linked to a warehouse |
 | Portal: View Control Panel Menu                     | Ability to access the Global Menu                                     |
 
 ### Instance Order Manager
@@ -260,18 +260,18 @@ The Order Manager role grants users the necessary permissions for managing order
 
 | Permissions                                                | Description                                                                                                |
 | :--------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| Open Carts > Commerce Order: Add Order                     | Ability to add an Order to a buyer's Account                                                               |
-| Open Carts > Commerce Order: Approve Open Orders           | Ability to approve Orders when workflow is enabled                                                         |
-| Open Carts > Commerce Order: Check Out Open Orders         | Ability to complete the checkout process for Orders                                                        |
-| Open Carts > Commerce Order: Delete Orders                 | Ability to delete Orders                                                                                   |
-| Open Carts > Commerce Order: Manage Order Notes            | Ability to change general Order notes                                                                      |
-| Open Carts > Commerce Order: Manage Order Restricted Notes | Ability to change restricted Order notes                                                                   |
-| Open Carts > Commerce Order: Manage Orders                 | Ability to change Order details, such as mailing and billing addresses; ability to add a note to the Order |
-| Open Carts > Commerce Order: View Open Orders              | Ability to view all open Orders                                                                            |
-| Open Carts > Commerce Order: View Orders                   | Ability to view Orders regardless of status                                                                |
-| Orders: Access in Control Panel                            | Ability to access the Orders application in the Global Menu                                                |
-| Orders: Permissions                                        | Ability to view and modify permissions for the Orders application                                          |
-| Orders: View                                               | Ability to view the Orders application                                                                     |
+| Open Carts > Commerce Order: Add Order                     | Ability to add an Order to a buyer's account                                                               |
+| Open Carts > Commerce Order: Approve Open Orders           | Ability to approve orders when workflow is enabled                                                         |
+| Open Carts > Commerce Order: Check Out Open Orders         | Ability to complete the checkout process for orders                                                        |
+| Open Carts > Commerce Order: Delete Orders                 | Ability to delete orders                                                                                   |
+| Open Carts > Commerce Order: Manage Order Notes            | Ability to change general order notes                                                                      |
+| Open Carts > Commerce Order: Manage Order Restricted Notes | Ability to change restricted order notes                                                                   |
+| Open Carts > Commerce Order: Manage Orders                 | Ability to change order details, such as mailing and billing addresses; ability to add a note to the order |
+| Open Carts > Commerce Order: View Open Orders              | Ability to view all open orders                                                                            |
+| Open Carts > Commerce Order: View Orders                   | Ability to view orders regardless of status                                                                |
+| Orders: Access in Control Panel                            | Ability to access the orders application in the Global Menu                                                |
+| Orders: Permissions                                        | Ability to view and modify permissions for the orders application                                          |
+| Orders: View                                               | Ability to view the orders application                                                                     |
 | Account Groups > Commerce Accounts: Manage All Accounts    | Necessary to access the Account Groups application                                                         |
 | Portal: View Control Panel Menu                            | Ability to access the Global Menu                                                                          |
 
@@ -298,14 +298,14 @@ The Shipment Manager role allows a user to process shipments. This includes the 
 
 > Regular Role
 
-The Sales Agent is a regular role in Liferay Commerce and assignees are able to manage any account assigned to the role without granting administrative permissions. Because it is a regular role, it is found in the *Regular Roles* tab.
+The sales agent is a regular role in Liferay and assignees are able to manage any account assigned to the role without granting administrative permissions. You can find it under the *Regular Roles* tab.
 
-![View default Sales Agent permissions in the Define Permissions tab.](./commerce-roles-reference/images/06.png)
+![View default sales agent permissions in the Define Permissions tab.](./commerce-roles-reference/images/06.png)
 
 | Permissions               | Description                                                    |
 | :------------------------ | :------------------------------------------------------------- |
 | Manage Organizations      | Ability to add or remove organizations                         |
-| Manage Available Accounts | Ability to manage Accounts that the sales agent is a member of |
+| Manage Available Accounts | Ability to manage accounts that the sales agent is a member of |
 
 ## Related Topics
 

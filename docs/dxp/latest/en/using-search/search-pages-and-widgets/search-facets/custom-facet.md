@@ -59,7 +59,7 @@ Alternatively, use your search engine's API to browse the mappings. In Elasticse
 ```
 
  ```bash
-curl -X GET "localhost:9200/_mapping/LiferayDocumentType"?pretty
+curl -X GET "localhost:9200/_mapping"?pretty
  ```
 
 Solr uses the [ListFields API](https://lucene.apache.org/solr/guide/6_6/schema-api.html#SchemaAPI-ListFields):

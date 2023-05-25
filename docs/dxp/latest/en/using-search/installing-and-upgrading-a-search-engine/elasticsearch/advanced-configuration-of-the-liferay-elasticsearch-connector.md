@@ -62,16 +62,19 @@ To add a property, use this JSON syntax:
 
 ```json
 { 
-    "LiferayDocumentType": {  
-        "properties": {   
-            "fooName": {
-                "index": "true",
-                "store": "true",
-                "type": "keyword"
-            }
-        }   
-    }
+     "properties": {
+         "fooName": {
+             "index": "true",
+             "store": "true",
+             "type": "keyword"
+         }
+     }
 }
+```
+
+
+```{note}
+For Liferay 7.4 U## or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
 ```
 
 To see that your additional mappings have been added to the Liferay mappings, use `curl` to access this URL after saving your additions and re-indexing:
@@ -124,26 +127,28 @@ Here's a partial example, showing a [dynamic template](https://www.elastic.co/gu
 
 ```json
 {
-    "LiferayDocumentType": {
-        "dynamic_templates": [
-            {
-                "template_ja": {
-                    "mapping": {
-                        "analyzer": "kuromoji_liferay_custom",
-                        "index": "analyzed",
-                        "store": "true",
-                        "term_vector": "with_positions_offsets",
-                        "type": "string"
-                    },
-                    "match": "\\w+_ja\\b|\\w+_ja_[A-Z]{2}\\b",
-                    "match_mapping_type": "string",
-                    "match_pattern": "regex"
-                }
-                ...
-            }
-        ]
-    }
+     "dynamic_templates": [
+         {
+             "template_ja": {
+                 "mapping": {
+                     "analyzer": "kuromoji_liferay_custom",
+                     "index": "analyzed",
+                     "store": "true",
+                     "term_vector": "with_positions_offsets",
+                     "type": "string"
+                 },
+                 "match": "\\w+_ja\\b|\\w+_ja_[A-Z]{2}\\b",
+                 "match_mapping_type": "string",
+                 "match_pattern": "regex"
+             }
+             ...
+         }
+     ]
 }
+```
+
+```{note}
+For Liferay 7.4 U## or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
 ```
 
 ### Adding Configurations to the Development Mode Elasticsearch

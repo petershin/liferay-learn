@@ -38,6 +38,7 @@ All metadata is exported from contents and documents, so the `.xls` file contain
 * Categories
 * Tags
 * Modified Date
+* Review Date
 * Description
 * Extension
 * File Name

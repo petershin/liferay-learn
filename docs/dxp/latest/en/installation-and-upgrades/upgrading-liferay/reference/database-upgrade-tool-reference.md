@@ -153,9 +153,11 @@ Add all [portal properties](../../reference/portal-properties.md), such as `port
 
 * `hibernate.jdbc.batch_size`: The JDBC batch size used to improve performance (set to _250_ by default). _This property may improve upgrade performance, but it is not required._
 
-* `upgrade.log.context.enabled`: Set to `true` to see upgrade-related log lines that are tagged with an identifier.
+* `upgrade.log.context.enabled`: Set to `true` to see upgrade-related log lines that are tagged with an identifier. The possible identifiers are:
 
-* `upgrade.log.context.name`: When using `upgrade.log.context.enabled`, set a name for the identifier. For example, `upgrade.log.context.name=foo`.
+    * `{upgrade.component=portal}`: for upgrade processes related to portal
+    * `{upgrade.component=framework}`: for processes related to the upgrade framework logic
+    * `{upgrade.component=<bundleSymblociName>}`: for upgrade processes related to modules
 
 Note, `upgrade.log.context.enabled` works for both the upgrade tool as well as upgrades upon startup. To use this feature, you must also copy the [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) file into `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` and rename the file to `portal-log4j-ext.xml`. Then find the appender definition:
 
@@ -177,12 +179,15 @@ Here are some example log lines that include a tag for upgrade related-lines:
 
 ```
 ...
-2022-07-26 20:56:15.966 INFO  [main][PortalUpgradeProcess:174] Upgrading com.liferay.portal.upgrade.PortalUpgradeProcess {foo=foo}
-2022-07-26 20:56:15.969 INFO  [main][UpgradeProcess:98] Upgrading com.liferay.portal.upgrade.v7_4_x.UpgradeAddress {foo=foo}
-2022-07-26 20:56:18.765 INFO  [main][UpgradeProcess:113] Completed upgrade process com.liferay.portal.upgrade.v7_4_x.UpgradeAddress in 2797 ms {foo=foo}
+2023-05-24 23:29:31.143 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties {upgrade.component=portal}
+2023-05-24 23:29:31.145 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 3 ms {upgrade.component=portal}
 ...
-2022-07-26 20:56:38.611 INFO  [main][BaseDB:716] Dropping stale indexes {foo=foo}
-2022-07-26 20:56:38.615 INFO  [main][BaseDB:786] drop index IX_60C8634C on Repository {foo=foo}
+2023-05-24 23:29:34.012 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions {upgrade.component=framework}
+2023-05-24 23:29:34.029 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 17 ms {upgrade.component=framework}
+...
+2023-05-24 23:30:17.046 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.db.index.IndexUpdaterUtil#lambda$updateIndexes$1#Updating database indexes for com.liferay.wiki.service {upgrade.component=com.liferay.wiki.service}
+2023-05-24 23:30:17.094 INFO  [main][BaseDB:776] Dropping stale indexes {upgrade.component=com.liferay.wiki.service}
+2023-05-24 23:30:17.095 INFO  [main][BaseDB:846] drop index IX_18565130 on WikiPage {upgrade.component=com.liferay.wiki.service}
 ...
 ```
 

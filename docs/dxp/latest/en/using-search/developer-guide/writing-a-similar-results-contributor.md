@@ -13,13 +13,7 @@ You can display your application's custom content in the [Similar Results widget
 
 Since the Knowledge Base application does not implement a `SimilarResultsContributor` for KB Articles out of the box, this example implements one. For simplicity, only KB Articles in the root folder of the application are dealt with here.
 
-## Overview
-
-1. [**Deploy an Example**](#deploy-an-example)
-1. [**Walk Through the Example**](#walk-through-the-example)
-1. [**Additional Information**](#additional-information)
-
-## Deploy an Example
+## Deploy a SimilarResultsContributor for Knowledge Base Articles
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
@@ -79,7 +73,7 @@ Then, follow these steps to get an example `SimilarResultsContributor` up and ru
 
 Now that you verified that the example behaves properly, learn how it works.
 
-## Walk Through the Example
+## Examine the SimilarResultsContributor
 
 Review the deployed example. It contains just one class: the contributor that enables custom content for the Similar Results widget.
 
@@ -243,7 +237,7 @@ private Http _http;
 private KBArticleLocalService _kbArticleLocalService;
 ```
 
-## Related Topics
+## Additional Details
 
 Since each implementation of an entity's URLs is likely to differ significantly, see the `SimilarResultsContributor` [interface](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web-spi/src/main/java/com/liferay/portal/search/similar/results/web/spi/contributor/SimilarResultsContributor.java) and the bundled [implementations](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor) on GitHub if you need more inspiration when writing your own application's contributor.
 
@@ -263,7 +257,3 @@ The `uid` is constructed in a standard way as of Liferay DXP 7.3. The `com.lifer
 Similarly, in versions 7.2 and 7.1, if an entity is indexed with the Composite Indexer APIs (i.e., it has a `ModelDocumentContributor` class), the `uid` is set by Liferay's implementation and is standardized.
 
 However, entities indexed with the legacy Indexer API (i.e., the entity has a `*Indexer` class that extends Liferay's `BaseIndexer`) may have overridden the logic that sets the `uid`, so it's worth looking into an entity's indexing implementation.
-
-## Conclusion
-
-By implementing a `SimilarResultsContributor`, you can contribute your own custom content for display in the Similar Results widget.

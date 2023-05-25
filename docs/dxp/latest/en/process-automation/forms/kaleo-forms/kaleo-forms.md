@@ -12,7 +12,7 @@ Liferay's *Kaleo Forms* solution combines the features of *Workflow Designer* an
 * [Kaleo Forms](#kaleo-forms)
   * [Creating a Kaleo Forms Process](#creating-a-kaleo-forms-process)
   * [Using a Kaleo Forms Process](#using-a-kaleo-forms-process)
-  * [Additional Information](#additional-information)
+  * [Related Topics](#related-topics)
 
 ## Creating a Kaleo Forms Process
 

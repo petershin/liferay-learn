@@ -20,7 +20,7 @@ Fragments are organized into the following sets:
   - [Footers](#footers)
   - [Navigation Bars](#navigation-bars)
   - [Menu Display](#menu-display)
-  - [Additional Information](#additional-information)
+  - [Related Topics](#related-topics)
 
 ```{note}
 Available configuration options vary by fragment and fragment sub-element. See [Configuring Fragments](./configuring-fragments.md) for more information.

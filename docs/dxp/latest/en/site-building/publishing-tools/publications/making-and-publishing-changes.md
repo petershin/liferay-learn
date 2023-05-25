@@ -63,7 +63,7 @@ Before publishing, you can review a publication's tracked changes to ensure it o
 
 Alternatively, you can review any publication's tracked changes via the Publications application. Simply navigate to the *Ongoing* tab, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the desired Publication, and select *Review Changes*.
 
-When reviewing changes, all tracked changes appear in a list that you can order by *Change Type*, *Modified Date*, *Site*, *Title*, or *User*.
+When reviewing changes, all tracked changes appear in a list that you can order by Change Type, Modified Date, Site, Status, Title, or User.
 
 ![View tracked changes in a list.](./making-and-publishing-changes/images/03.png)
 
@@ -73,7 +73,7 @@ By default, DXP displays a simple summary of tracked changes, but you can toggle
 
 ![Toggle Show All Items to see all changes included in the publications.](./making-and-publishing-changes/images/04.png)
 
-Click on an individual change to view more details. From here, you can also click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the tracked change to *Edit* or *Discard* it. Available actions depend on the type of change.
+Click on an individual change to view more details. From here, you can also click on the Actions button ( ![Actions button](../../../images/icon-actions.png) ) for the tracked change to Edit or Discard it. Available actions depend on the type of change.
 
 ![Click on individual changes to view more details.](./making-and-publishing-changes/images/05.png)
 
@@ -99,11 +99,11 @@ When you begin the publishing process, Liferay performs a compatibility check to
 
 Follow these steps to publish changes immediately:
 
-1. Open the Publications *drop-down menu*, and select *Review Changes*.
+1. Open the Publications drop-down menu, and select *Review Changes*.
 
    Alternatively, open the Publications application, and click on the desired publication.
 
-1. Click on *Publish*.
+1. Click *Publish*.
 
    ![Navigate to the desired publication and click on Publish.](./making-and-publishing-changes/images/08.png)
 
@@ -111,19 +111,19 @@ Follow these steps to publish changes immediately:
 
    ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/09.png)
 
-1. Click on *Publish*.
+1. Click *Publish*.
 
-The publication's changes are immediately applied to production, and you are redirected to the *History* tab. From here, you can view publishing details (e.g., date, publisher, status) and [revert](./reverting-changes.md) a publication's changes if desired..
+The publication's changes are immediately applied to production, and you are redirected to the History tab. From here, you can view publishing details (e.g., date, publisher, status) and [revert](./reverting-changes.md) a publication's changes if desired..
 
 ### Scheduling for Later
 
 Follow these steps to schedule publishing for a later time.
 
-1. Open the Publications *drop-down menu*, and select *Review Changes*.
+1. Open the Publications drop-down menu, and select *Review Changes*.
 
    Alternatively, open the Publications application, and click on the desired publication.
 
-1. Click on *Schedule*.
+1. Click *Schedule*.
 
    ![Navigate to the desired publication and click on Schedule.](./making-and-publishing-changes/images/10.png)
 
@@ -133,13 +133,13 @@ Follow these steps to schedule publishing for a later time.
    At the time of the publication, DXP performs a second conflict detection to ensure there are no new conflicting changes. The publish fails if DXP detects new conflicts that cannot be automatically resolved. If the conflicts can be resolved automatically, DXP proceeds with publishing.
    ```
 
-1. Enter a *date* and *time* to determine when the changes are published to production.
+1. Enter a date and time to determine when the changes are published to production.
 
    ![Set a date and time to publish your changes.](./making-and-publishing-changes/images/11.png)
 
-1. Click on *Schedule* to complete the process.
+1. Click *Schedule* to complete the process.
 
-This redirects you to the *Scheduled* tab where you can view and [manage scheduled publications](./creating-and-managing-publications.md#managing-scheduled-publications).
+This redirects you to the Scheduled tab where you can view and [manage scheduled publications](./creating-and-managing-publications.md#managing-scheduled-publications).
 
 ## Removing Unnecessary Publication Data
 
@@ -153,7 +153,7 @@ When reviewing publication changes, file and page previews can accumulate in the
 
 1. Select *Remove DL Preview Change Tracking Store Content Data*.
 
-   ![Check the change tracking options.](making-and-publishing-changes/images/12.png)
+   ![Check the change tracking options.](./making-and-publishing-changes/images/12.png)
 
 1. Click *Save*.
 

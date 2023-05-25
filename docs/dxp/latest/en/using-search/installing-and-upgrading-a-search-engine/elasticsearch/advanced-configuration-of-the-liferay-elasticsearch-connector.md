@@ -99,7 +99,7 @@ The above example shows how a `fooName` field might be added to Liferay's type m
 
 {bdg-link-warning}`Requires Re-Index`
 
-Use `overrideTypeMappings` to override Liferay's default type mappings and exert control over how data is indexed into the [company and system indexes](../../search-administration-and-tuning/elasticsearch-indexes-reference.md). This is an advanced feature that should be used only if strictly necessary. If you set this value, the default mappings used to define the Liferay Document Type in Liferay source code (for example, `liferay-type-mappings.json`) are ignored entirely, so include the whole mappings definition in this property, not just the segment you're modifying.
+Use `overrideTypeMappings` to override Liferay's default type mappings and exert control over how data is indexed into the [company and system indexes](../../search-administration-and-tuning/elasticsearch-indexes-reference.md). This is an advanced feature that should be used only if strictly necessary. If you set this value, the default mappings in Liferay's source code (for example, `liferay-type-mappings.json`) are ignored entirely, so include the whole mappings definition in this property, not just the segment you're modifying.
 
 To make a modification, find the entire list of the current mappings being used to create the index by navigating to the URL
 

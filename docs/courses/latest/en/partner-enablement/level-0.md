@@ -1,4 +1,6 @@
 ---
+toc:
+- ./level-0/the-liferay-product-offering.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
 ---
 # Level 0

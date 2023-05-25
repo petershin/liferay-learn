@@ -10,7 +10,7 @@ Liferay’s Content and Asset Management capabilities allow practitioners to cre
 
 ## Related Features
 
-### Content Managment System
+### Content Management System
 
 * [Web Content](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content)
 * [Structures](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-structures)

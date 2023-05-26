@@ -153,7 +153,7 @@ Add all [portal properties](../../reference/portal-properties.md), such as `port
 
 * `hibernate.jdbc.batch_size`: The JDBC batch size used to improve performance (set to _250_ by default). _This property may improve upgrade performance, but it is not required._
 
-* `upgrade.log.context.enabled`: Set to `true` to see upgrade-related log lines that are tagged with an identifier. The possible identifiers are:
+* `upgrade.log.context.enabled`: Set to `true` to see upgrade-related log lines that are tagged with an identifier. The possible identifiers are
 
     * `{upgrade.component=portal}`: for upgrade processes related to portal
     * `{upgrade.component=framework}`: for processes related to the upgrade framework logic

@@ -5,7 +5,7 @@ uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 
 {bdg-secondary}`Available Liferay 7.4 U69+/GA69+`
 
-With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related object entries in a single GET request. To do this, you must pass the `nestedFields` parameter with the relationship names you want to include in the query, separating each relationship with a comma: `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. If the relationships span multiple levels, set the `nestedFieldsDepth` parameter to the depth you need. You can include up to five levels (e.g., `nestedFieldsDepth=5`).
+With custom object APIs, you can use the `nestedFields` parameter to return multiple levels of related object entries in a single GET request. Pass the `nestedFields` parameter with the relationship names to include in the query, separating each relationship with a comma: `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. If the relationships span multiple levels, set the `nestedFieldsDepth` parameter to the depth you need. You can include up to five levels (e.g., `nestedFieldsDepth=5`).
 
 ```{tip}
 By adding the `nestedFields` parameter to your request, you can retrieve information that would otherwise require multiple requests. With it, you can retrieve an entry along with its related entries. To return only the related entries, Liferay provides dedicated [relationship APIs](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis). See [Using Relationship REST APIs](./using-relationship-rest-apis.md) for an introduction.
@@ -92,7 +92,7 @@ curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objec
 unzip liferay-w4s7.zip
 ```
 
-This ZIP provides shell scripts that run cURL commands for creating, relating, and querying object entries using REST APIs. This includes two GET commands for querying related entries.
+The ZIP provides shell scripts that run cURL commands for creating, relating, and querying object entries using REST APIs. This includes two GET commands for querying related entries.
 
 ```{tip}
 For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.

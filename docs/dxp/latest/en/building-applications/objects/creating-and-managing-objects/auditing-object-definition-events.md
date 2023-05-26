@@ -11,7 +11,7 @@ You can use Liferay's audit framework to track events for custom object definiti
 
 {bdg-primary}`Subscription`
 
-To access the Audit application, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Audit*.
+To access the Audit application, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Control Panel*  &rarr; click *Audit*.
 
 ![Click Audit in the Control Panel to view events related to object definitions.](./auditing-object-definition-events/images/01.png)
 

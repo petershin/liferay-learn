@@ -18,11 +18,11 @@ Using REST APIs to view an entry's history requires both the `View` and `Object 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Next, enable Liferay's persistent audit message processor. Then, create and publish an object definition.
+Next, enable Liferay's persistent audit message processor. Then create and publish an object definition.
 
 ### Enabling the Persistent Audit Message Processor
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *System Settings*.
+1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; *Control Panel* tab, &rarr; *System Settings*.
 
 1. Under Security, click *Audit* and go to the *Persistent Message Audit Message Processor* tab.
 
@@ -185,7 +185,7 @@ For a complete list of APIs generated for site and company objects, see [Objects
 
    The `auditEvents` array includes these elements:
 
-   * `auditFieldChanges`: The field that was updated, with its new and old values.
+   * `auditFieldChanges`: The updated field, with its new and old values.
    * `dateCreated`: The time and date of the event.
    * `eventType`: The event type (e.g., `ADD`, `UPDATE`, `DELETE`).
 

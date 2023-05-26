@@ -439,7 +439,7 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
 이제 모델을 정의하고 이에 대한 지속성 코드 및 서비스 코드를 생성하는 방법을 알았으므로 생성된 서비스 클래스를 검사해야 합니다. [생성된 클래스 이해 및 확장](./understanding-service-builder-generated-classes.md)에서 계속하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [로컬에서 서비스 호출](./invoking-a-service-locally.md)
 * [Liferay 작업 영역이란 무엇입니까](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)

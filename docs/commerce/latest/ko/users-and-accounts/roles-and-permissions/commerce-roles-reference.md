@@ -252,7 +252,7 @@ Liferay 7.3.x 및 이전 Commerce 버전의 경우 [판매 에이전트](#sales-
 | 조직 관리    | 조직을 추가하거나 제거하는 기능      |
 | 가용 계정 관리 | 판매 대리인이 속한 계정을 관리하는 기능 |
 
-## 추가 정보
+## 관련 주제
 
 * [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [주문 관리 권한 참조](./order-management-permissions.md)

@@ -87,7 +87,7 @@ SecAuditLog /var/log/modsec_audit.log
 SecAuditLogFormat JSON
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [개인 네트워크](../networking/private-network.md)
 * [로드 밸런서](../networking/load-balancer.md)

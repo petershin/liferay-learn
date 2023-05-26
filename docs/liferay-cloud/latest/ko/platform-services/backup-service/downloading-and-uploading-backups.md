@@ -218,7 +218,7 @@ USE `lportal`;
 cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [백업 서비스 개요](./backup-service-overview.md)
 * [백업에서 데이터 복원](./restoring-data-from-a-backup.md)

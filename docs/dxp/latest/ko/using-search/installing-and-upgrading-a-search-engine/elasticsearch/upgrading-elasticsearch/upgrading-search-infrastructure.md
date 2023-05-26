@@ -126,7 +126,7 @@ Groovy 가져오기 스크립트를 실행하려면
 
 1. 동의어 집합 및 결과 순위를 테스트하여 모든 것이 예상대로 작동하는지 확인하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Elasticsearch 업그레이드](../getting-started-with-elasticsearch.md)
 * [Elasticsearch 시작하기](../getting-started-with-elasticsearch.md)

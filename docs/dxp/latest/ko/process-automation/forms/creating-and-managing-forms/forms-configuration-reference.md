@@ -105,6 +105,6 @@ com.liferay.dynamic.data.mapping.form.web.internal.configuration.DDMFormWebConfi
 | 업로드 필드의 최대 반복(`maximumRepetitionsForUploadFields`)             | 필드가 반복 가능하도록 구성된 경우 사용자가 필드를 양식에 추가할 수 있는 최대 횟수를 설정합니다(게스트 사용자 및 로그인한 사용자에게 동일하게 적용됨). 기본적으로 제한은 5입니다.                                                                   |
 | 게스트 업로드 필드에 대한 최대 제출(`maximumSubmissionsForGuestUploadFields`) | 게스트 사용자가 게스트 지원 업로드 필드가 포함된 양식을 제출할 수 있는 최대 횟수를 설정합니다. 게스트 사용자의 IP 주소는 제출을 추적하는 데 사용됩니다. 기본적으로 제한은 5입니다.                                                                 |
 
-## 추가 정보
+## 관련 주제
 
 * [양식 권한 참조](./forms-permissions-reference.md)

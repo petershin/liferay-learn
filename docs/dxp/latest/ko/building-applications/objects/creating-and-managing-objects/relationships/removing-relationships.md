@@ -20,7 +20,7 @@ Liferay 7.4 U26/GA26 이전 버전의 경우 사용자는 [publishing](../creati
 
    ![관계 이름을 입력하고 완료를 클릭합니다.](./removing-relationships/images/01.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](../creating-objects.md)
 * [개체 관계 정의](./defining-object-relationships.md)

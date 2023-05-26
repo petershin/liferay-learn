@@ -146,7 +146,7 @@ Liferay 7.4에서는 버전 선택기가 단계별 성능 메트릭에 추가되
 
 모달의 프로세스 세부 정보 섹션 섹션이 7.4에서 향상되었습니다. 워크플로에서 항목의 진행 상황에 대한 다이어그램 보기를 열려면 워크플로 추적 링크를 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 지표 사용](./using-workflow-metrics.md)
 * [워크플로우 구축](../designing-and-managing-workflows/building-workflows.md)

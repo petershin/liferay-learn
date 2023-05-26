@@ -20,7 +20,7 @@ Minium과 같은 [Accelerator](../starting-a-store/accelerators.md)을 사용하
 | [검색](./commerce-storefront-pages/search.md)                 | 사용자가 검색할 수 있습니다.                         | **검색** , **태그** , **카테고리 패싯** , **옵션 패싯** , **사양 패싯** |
 | 예비 부품 찾기 / BOM                                              | 특정 제품을 구성하는 재료 목록을 표시합니다.                | **커머스 BOM** |
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 참조 가이드](./liferay-commerce-widgets/widget-reference.md)
 * [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)

@@ -129,7 +129,7 @@ out.println(outputFile.text)
 
 축하합니다! 스크립트 콘솔에서 다양한 스크립트를 실행했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [스크립트 콘솔에서 스크립트 실행](./running-scripts-from-the-script-console.md)
 * [워크플로에서 스크립트 엔진 사용](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)

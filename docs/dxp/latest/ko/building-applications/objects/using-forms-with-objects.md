@@ -101,7 +101,7 @@ Liferay 객체는 Forms 애플리케이션과 통합되어 있으므로 사용�
 | 서식있는 텍스트                 | 서식있는 텍스트            |
 | 텍스트(**이전 문자열**)            | 텍스트, 다중 선택, 그리드, 색상 |
 
-## 추가 정보
+## 관련 주제
 
 * [개체 개요](../objects.md)
 * [개체 만들기](./creating-and-managing-objects/creating-objects.md)

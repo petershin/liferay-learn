@@ -204,6 +204,6 @@ Scheduling 단계를 완료하려면 Custom Field를 **Confirmed** 로 설정해
 
 축하합니다! 이제 `CommerceOrderStatus` 인터페이스를 구현하기 위한 기본 사항을 알고 있으며 Liferay Commerce에 새 주문 상태를 추가했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [상거래 주문 엔진 개요](./commerce-order-engine-overview.md)

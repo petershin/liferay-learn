@@ -187,7 +187,7 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
 
 ![사이트 페이지에 원격 앱 위젯을 배포할 수 있습니다.](./using-object-data-with-react-charts/images/06.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 개요](../../objects.md)
 * [헤드리스 프레임워크 통합](../understanding-object-integrations/headless-framework-integration.md)

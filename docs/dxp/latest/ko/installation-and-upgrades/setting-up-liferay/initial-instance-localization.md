@@ -42,7 +42,7 @@ DXP를 이미 실행한 경우 제어판에서 인스턴스의 기본 언어 및
 
 DXP 인스턴스의 기본 언어 및 시간대를 구성했습니다. 로케일 선택을 용이하게 하는 방법을 포함하여 DXP 현지화에 대한 자세한 정보를 알아보려면 [사이트 현지화](../../site-building/site-settings/site-localization.md)을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [가상 인스턴스 현지화 구성](../../system-administration/configuring-liferay/virtual-instances/localization.md)
 * [전역 언어 번역 재정의](../../liferay-internals/extending-liferay/overriding-global-language-translations.md)

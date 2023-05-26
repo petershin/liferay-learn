@@ -78,7 +78,7 @@ Liferay Commerce를 사용하면 권한을 사용하여 전역 메뉴(![Global M
 | 통화 관리 | 통화 엔터티 액세스 및 수정 기능             |
 | 권한    | 통화 애플리케이션에서 리소스 권한을 보고 수정하는 기능 |
 
-## 추가 정보
+## 관련 주제
 
 * [채널 소개](../../store-management/channels/introduction-to-channels.md)
 * [채널 관리](../../store-management/channels/managing-channels.md)

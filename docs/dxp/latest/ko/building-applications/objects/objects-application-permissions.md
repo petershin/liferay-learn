@@ -68,7 +68,7 @@
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [객체](../objects.md)
 * [객체 생성 및 관리](./creating-and-managing-objects.md)

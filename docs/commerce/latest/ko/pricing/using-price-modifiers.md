@@ -69,7 +69,7 @@
 
 1. 원하는 대상을 선택한 후 **정보** 탭으로 돌아가서 **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [가격 소개](./introduction-to-pricing.md)
 * [가격표 생성](creating-a-price-list.md)

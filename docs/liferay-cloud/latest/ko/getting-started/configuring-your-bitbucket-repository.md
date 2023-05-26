@@ -191,7 +191,7 @@ Liferay Cloud가 분기에 제대로 연결될 수 있으려면 리포지토리�
 
 1. 링크가 올바른 BitBucket 페이지로 리디렉션되는지 확인하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [GitHub 리포지토리 구성](./configuring-your-github-repository.md)
 * [GitLab 리포지토리 구성](./configuring-your-gitlab-repository.md)

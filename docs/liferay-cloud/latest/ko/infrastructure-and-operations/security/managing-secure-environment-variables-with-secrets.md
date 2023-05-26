@@ -106,7 +106,7 @@
 
 파일을 서비스에 배포하면 환경 변수 페이지에 다른 변수와 함께 비밀 변수가 나타납니다.
 
-## 추가 정보
+## 관련 주제
 
 * [LCP.json을 통한 구성](../../reference/configuration-via-lcp-json.md)
 * [환경 변수 정의](../../reference/defining-environment-variables.md)

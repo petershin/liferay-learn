@@ -59,7 +59,7 @@ dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
 
 [클러스터 환경](../../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md)에서 저장소는 모든 노드가 액세스할 수 있는 네트워크 마운트 파일 시스템을 가리킵니다. 네트워크 파일 시스템은 모든 노드에서 액세스할 수 있어야 하며 동시 요청을 지원하고 파일 잠금을 지원해야 합니다. 이러한 파일 시스템 없이 단순 파일 시스템 저장소를 사용하고 여러 사용자가 동일한 파일에 동시에 쓰기를 시도하면 데이터 손상이 발생할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [파일 스토리지](../../file-storage.md)
 * [Amazon S3 Store](./amazon-s3-store.md)

@@ -25,7 +25,7 @@
 
 ![트리 메뉴 위젯 구성](./using-the-tree-menu-widget/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [페이지 메뉴 위젯](./using-the-page-menu-widget.md)
 * [위키 디스플레이 위젯](./using-the-wiki-display-widget.md)

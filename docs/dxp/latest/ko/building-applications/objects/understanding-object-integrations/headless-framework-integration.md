@@ -99,7 +99,7 @@ With the GraphQL APIs, you can both query and mutate object data. All APIs for c
 See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) for more information.
 -->
 
-## 추가 정보
+## 관련 주제
 
 * [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
 * [API 사용](../objects-tutorials/using-apis.md)

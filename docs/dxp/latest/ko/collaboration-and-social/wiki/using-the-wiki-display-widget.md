@@ -24,7 +24,7 @@
 
 이제 **Wiki Display** 위젯이 선택한 **Wiki Page** 을 표시합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [페이지 메뉴 위젯](./using-the-page-menu-widget.md)
 * [트리 메뉴 위젯](./using-the-tree-menu-widget.md)

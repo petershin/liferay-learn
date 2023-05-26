@@ -7,7 +7,7 @@ Liferay Source는 이제 두 가지 주요 영역을 사용하여 구성됩니�
 * **Portal Core** - 아직 모듈로 추출되지 않은 원래 플랫폼의 일부입니다. 그들은 Portal-impl, Portal-service 및 Portal-web과 같은 Liferay 6.2의 친숙한 이름을 가지고 있습니다.
 * **모듈** - 이제 많은 기능이 모듈로 추출되어 **liferay-portal/modules** 디렉토리에 상주합니다. 많은 모듈이 Liferay MVC 패턴을 따르고 관련 .api, .service 및 .web 모듈로 구성됩니다.
 
-## 추가 정보
+## 관련 주제
 
 Liferay 소스에서 사용되는 일부 패턴을 더 깊이 이해하려면 공식 Liferay 문서에서 웹 애플리케이션 개발 튜토리얼을 읽어보세요.
 

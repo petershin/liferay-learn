@@ -22,7 +22,7 @@ DXP 7.3+에서는 위젯 페이지 상단에 있는 눈 아이콘을 클릭하�
 위젯은 위젯 페이지에서 [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) 에 따라 렌더링됩니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 - [위젯 페이지의 사용자 개인화 활성화](./enabling-user-personalization-of-widget-pages.md)
 - [위젯 페이지를 콘텐츠 페이지로 변환](./converting-widget-pages-to-content-pages.md)

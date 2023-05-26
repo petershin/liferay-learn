@@ -49,6 +49,6 @@
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [환율 공급자 구현](../../developer-guide/sales/implementing-an-exchange-rate-provider.md)

@@ -72,6 +72,6 @@
 
 사용자는 `.vcf` 파일을 자신이 선택한 이메일 및 SMS 시스템에 업로드할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [알림 및 요청 관리](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)

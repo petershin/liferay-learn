@@ -22,7 +22,7 @@ Adaptive Media를 사용하여 애니메이션 GIF를 최적화하려면 DXP가 
 
 1. 완료되면 **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [적응형 미디어 작동 방식](../publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md)
 * [사이트 콘텐츠에서 적응된 이미지 사용](../publishing-and-sharing/serving-device-and-screen-optimized-media/using-adapted-images-in-site-content.md)

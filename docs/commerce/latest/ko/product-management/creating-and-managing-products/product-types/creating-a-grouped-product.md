@@ -97,7 +97,7 @@ Liferay Commerce에서 그룹화된 제품은 고객 편의를 위해 또는 특
 1. **저장** 을 클릭합니다. (프로모션 가격 및 비용 필드를 0.00으로 두면 이 시점에서 할인이나 프로모션이 적용되지 않습니다.)
 1. **가격표** 을 클릭하여 이 제품을 기존 [가격표](../../../pricing/adding-products-to-a-price-list.md)에 적용합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [간단한 제품 만들기](./creating-a-simple-product.md)
 * [가상 제품 만들기](./creating-a-virtual-product.md)

@@ -166,7 +166,7 @@ UAD 프레임워크는 사용자 데이터를 추적하고 익명화하기 위�
 
 `ActionRequest` 을 `actionURL` 과 함께 제출하면 포틀릿의 `addH6D2Entry` 메소드가 호출됩니다. 
 
-## 추가 정보
+## 관련 주제
 
 * [사용자 데이터 관리](../managing-user-data.md)
 * [서비스 빌더](../../building-applications/data-frameworks/service-builder.md)

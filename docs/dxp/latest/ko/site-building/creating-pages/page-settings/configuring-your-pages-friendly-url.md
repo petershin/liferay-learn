@@ -40,7 +40,7 @@ Liferay DXP는 페이지에 사용되는 모든 친숙한 URL 목록을 유지�
 
 ![이전 URL 위로 마우스를 가져가면 복원 및 삭제 옵션이 표시됩니다.](./configuring-your-pages-friendly-url/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [사이트의 친숙한 URL 구성](./../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
 * [개별 페이지 구성](./configuring-individual-pages.md)

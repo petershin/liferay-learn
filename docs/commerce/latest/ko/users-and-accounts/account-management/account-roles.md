@@ -39,7 +39,7 @@ Commerce에는 즉시 사용할 수 있는 두 가지 계정 역할이 포함됩
 
 판매 에이전트는 관련 조직 내의 모든 계정에 액세스할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [계정 관리](../account-management.md)
 * [새 계정 만들기](./creating-a-new-account.md)

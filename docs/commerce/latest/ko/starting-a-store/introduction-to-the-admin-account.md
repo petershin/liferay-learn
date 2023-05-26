@@ -90,6 +90,6 @@ Admin 사용자는 Liferay Commerce의 새 설치에서 기본적으로 생성�
 
     ![로그아웃](./introduction-to-the-admin-account/images/05.png "로그아웃")
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay DXP 보안 소개](https://help.liferay.com/hc/ko/articles/360017897072-Introduction-to-Securing-Liferay-DXP)

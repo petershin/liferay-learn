@@ -58,7 +58,7 @@ FreeMarker 목록을 사용하여 프래그먼트에 대해 동일한 HTML 요�
 
 자세한 내용은 [공식 FreeMarker 문서](https://freemarker.apache.org/docs/ref_directive_list.html) 를 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [조각에 구성 옵션 추가](./adding-configuration-options-to-fragments.md)
 * [조각 구성 유형](../reference/fragments/fragment-configuration-types-reference.md)

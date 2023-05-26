@@ -49,7 +49,7 @@ Liferay는 독립 실행형 작업을 트리거할 수 있는 역할을 관리�
 
 ![독립 실행형 권한은 작업을 사용합니다. [actionName] 명명 패턴.](./using-manual-actions/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 작업 정의](./defining-object-actions.md)
 * [작업 유형 이해](./understanding-action-types.md)

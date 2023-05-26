@@ -282,6 +282,6 @@ java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
 
 [REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 모든 헤드리스 배치 엔진 서비스 및 스키마를 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Batch Engine API 기본 사항 - 데이터 가져오기](./batch-engine-api-basics-importing-data.md)

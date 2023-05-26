@@ -165,7 +165,7 @@ Patching Tool이 패치를 설치하고 DXP가 실행됩니다.
 
 데이터베이스가 업그레이드된 후 해당 데이터베이스를 사용하는 컨테이너를 실행하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [컨테이너에 앱 및 기타 아티팩트 설치](./installing-apps-and-other-artifacts-to-containers.md)
 * [Liferay Docker 이미지 사용](../using-liferay-docker-images.md)

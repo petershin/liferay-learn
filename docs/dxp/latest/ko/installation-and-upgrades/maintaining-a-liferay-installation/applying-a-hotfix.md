@@ -90,7 +90,7 @@ Liferay 지원 팀은 귀하와 협력하여 문제가 제품에 있는지 확�
 
 축하합니다! DXP 설치에 핫픽스를 적용했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Docker에서 DXP 패치](../installing-liferay/using-liferay-docker-images/patching-dxp-in-docker.md)
 * [패치 정보 얻기](./reference/getting-patch-information.md)

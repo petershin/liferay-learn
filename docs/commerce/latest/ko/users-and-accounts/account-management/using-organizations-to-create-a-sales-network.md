@@ -39,7 +39,7 @@ For example, a B2B company can give everyone in their sales network access to th
 (Double/Dual-Screenshot: Show User's permissions before the move and after the move)
 -->
 
-## 추가 정보
+## 관련 주제
 
 * [조직 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/organizations/creating-and-managing-organizations.html)
 * [새 조직 유형 추가](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/organizations/adding-a-new-organization-type.html)

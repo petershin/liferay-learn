@@ -28,7 +28,7 @@
 
 이 인증 페이지가 없으면 손님은 **Checkout** 위젯이 있는 페이지로 리디렉션됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [게스트 체크아웃 활성화](./enabling-guest-checkout.md)
 * [채널 소개](../../store-management/channels/introduction-to-channels.md)

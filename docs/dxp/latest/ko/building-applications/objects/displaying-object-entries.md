@@ -136,7 +136,7 @@ Liferay 객체를 사용하면 기존 DXP 프레임워크를 사용하여 객체
 
 Objects는 정보 프레임워크와 통합되므로 탐색 메뉴에 Object 항목을 추가하여 빠른 액세스를 제공할 수 있습니다. 게시된 모든 객체는 자동으로 메뉴 요소의 사용 가능한 소스로 나타납니다. 자세한 내용은 [탐색 메뉴 사용 애플리케이션](../../site-building/site-navigation/using-the-navigation-menus-application.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](./creating-and-managing-objects/creating-objects.md)
 * [컬렉션 및 컬렉션 페이지 정보](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)

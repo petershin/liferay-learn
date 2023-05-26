@@ -50,7 +50,7 @@
 [구성 범위](../../../system-administration/configuring-liferay/understanding-configuration-scope.md)에 유의하십시오. 시스템 수준에서 비활성화된 설정은 인스턴스 수준에서 활성화할 수 없지만 시스템 수준에서 활성화된 설정은 인스턴스 수준에서 비활성화할 수 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html)
 * [세션 속성 어휘](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

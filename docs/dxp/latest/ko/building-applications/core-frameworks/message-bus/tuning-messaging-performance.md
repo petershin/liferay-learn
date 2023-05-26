@@ -311,7 +311,7 @@ pending message count 0, sent message count 2
 
 이제 대상에서 메시징을 모니터링하고 대상 설정을 조정하는 방법을 알았습니다. 다양한 설정을 테스트하여 성능을 최적화할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [비동기 메시징 사용](./using-asynchronous-messaging.md)
 * [이전 버전에서 기본 동기 메시징 사용](./using-default-synchronous-messaging-in-previous-versions.md)

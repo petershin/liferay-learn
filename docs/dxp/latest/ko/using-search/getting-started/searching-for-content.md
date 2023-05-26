@@ -123,7 +123,7 @@ Liferay 7.4에는 GUI 기반 애플리케이션 구축 프레임워크인 [Lifer
 
 Liferay 7.4 U64+/GA64+의 경우 검색 결과에서 개체 항목을 클릭하면 해당 항목의 [디스플레이 페이지](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) 로 리디렉션됩니다(존재하는 경우).
 
-## 추가 정보
+## 관련 주제
 
 * [검색 결과 이해](../search-pages-and-widgets/search-results/search-results-behavior.md)
 * [검색 제안 활성화](../search-pages-and-widgets/search-results/enabling-search-suggestions.md)

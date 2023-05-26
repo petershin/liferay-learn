@@ -48,7 +48,7 @@ Jenkins 단계를 다시 시작하려면 다음 단계를 따르세요.
 
    ![이렇게 하면 선택한 빌드를 기반으로 새 빌드가 실행됩니다.](./restarting-jenkins-stages/images/05.png)</ol>
 
-## 추가 정보
+## 관련 주제
 
 * [지속적인 통합](../platform-services/continuous-integration.md)
 * [Liferay 클라우드 배포 워크플로 개요](./overview-of-the-liferay-cloud-deployment-workflow.md)

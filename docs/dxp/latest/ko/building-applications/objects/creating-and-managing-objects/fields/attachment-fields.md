@@ -46,7 +46,7 @@ curl -X "POST" "http://localhost:8080/o/c/timeOffRequest?restrictFields=actions"
 }'
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [분야](../fields.md)
 * [개체에 필드 추가](./adding-fields-to-objects.md)

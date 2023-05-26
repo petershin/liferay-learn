@@ -76,7 +76,7 @@ Liferay 7.0 이하에서 업그레이드하는 경우 해당 릴리스에서 발
 Liferay는 특히 한 환경에서 콘텐츠를 생성하고 다른 환경에서 소비해야 하는 시나리오에서 원격 라이브 스테이징을 위해 스테이징 애플리케이션을 지속적으로 개선하고 있습니다. 자세한 내용은 [게시 도구](../../../site-building/publishing-tools.md)를 참조하세요.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [7.2 주요 변경 사항](../../../liferay-internals/reference/7-2-breaking-changes.md)
 * [7.2 기본 설정 변경](./default-setting-changes-in-7-2.md)

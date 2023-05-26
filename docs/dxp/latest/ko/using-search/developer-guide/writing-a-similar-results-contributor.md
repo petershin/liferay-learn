@@ -239,7 +239,7 @@ private Http _http;
 private KBArticleLocalService _kbArticleLocalService;
 ```
 
-## 추가 정보
+## 관련 주제
 
 엔터티 URL의 각 구현은 크게 다를 수 있으므로 자신의 애플리케이션 기여자를 작성할 때 더 많은 영감이 필요한 경우 GitHub의 `SimilarResultsContributor` [인터페이스](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web-spi/src/main/java/com/liferay/portal/search/similar/results/web/spi/contributor/SimilarResultsContributor.java) 및 번들 [구현](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor) 을 참조하십시오.
 

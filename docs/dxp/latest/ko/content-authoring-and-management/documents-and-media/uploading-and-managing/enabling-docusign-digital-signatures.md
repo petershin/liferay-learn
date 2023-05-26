@@ -96,6 +96,6 @@ DocuSign은 **봉투** 이라는 용어를 사용하여 서명할 문서 또는 
 디지털 서명 구성을 비활성화하면 제어판의 디지털 서명 모듈을 포함하여 DocuSign에 대한 모든 참조가 제거됩니다. Liferay에서 이 기능을 비활성화해도 DocuSign에서 모든 봉투를 계속 볼 수 있습니다. 디지털 서명을 다시 활성화하면 목록이 다시 나타납니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 - [구성 범위 이해](../../../system-administration/configuring-liferay/understanding-configuration-scope.md)

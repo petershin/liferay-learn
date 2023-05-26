@@ -108,7 +108,7 @@
 
 ![기존 문서가 업데이트될 때 전송되는 이메일을 작성합니다.](./documents-and-media-ui-reference/images/16.png)
 
-## 추가 정보
+## 관련 주제
 
 * [문서 및 미디어](../documents-and-media.md)
 * [사이트 페이지 및 콘텐츠 내보내기/가져오기](../../site-building/sites/exporting-importing-site-pages-and-content.md)

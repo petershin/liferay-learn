@@ -54,7 +54,7 @@
 
 ![카탈로그에 있는 모든 제품의 가격이 예정된 날짜에 20% 인하됩니다.](./creating-a-promotion/images/06.png)
 
-## 추가 정보
+## 관련 주제
 
 * [프로모션 소개](./introduction-to-promotions.md)
 * [프로모션 베이스 목록 사용](./using-the-promotion-base-list.md)

@@ -25,7 +25,7 @@ Liferay Commerce 번들을 사용하려면 다음 단계를 따르십시오.
 
 ![환영 이미지](./using-the-liferay-commerce-tomcat-bundle/images/01.png)
 
-## 추가 정보
+## 관련 주제
 
 * [설치 개요](../installation-overview.md)
 * [Liferay-Tomcat 번들 설치](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/installing-liferay/installing-a-liferay-tomcat-bundle.html)

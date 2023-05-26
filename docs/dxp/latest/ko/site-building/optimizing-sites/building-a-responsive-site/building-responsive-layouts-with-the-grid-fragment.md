@@ -34,7 +34,7 @@ Liferay DXP [은 기본적으로 반응형 디자인](./building-a-responsive-si
 다른 콘텐츠 페이지에서 선택한 그리드 조각 구성을 저장하고 재사용할 수 있습니다. 자세한 내용은 [Fragment Compositions 저장](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md)을 참조하세요.
 ```
 
-## 추가 정보
+## 관련 주제
 
 - [반응형 사이트 구축 개요](./building-a-responsive-site.md)
 - [단편 구성 저장](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md)

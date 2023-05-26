@@ -157,7 +157,7 @@ JSP 작업 URL:
 
 이제 작업 URL을 사용하는 방법을 알았으므로 작업 메서드 작성에 집중할 수 있습니다. 또는 [MVCActionCommand 클래스](./mvc-action-command.md)을 사용하여 조사할 수 있습니다. 또는 다른 포틀릿 단계 처리를 탐색할 준비가 되었으면 [MVCRenderCommand](./mvc-render-command.md) 및 [MVCResourceCommand](./mvc-resource-command.md) 클래스 사용을 살펴보십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [MVCActionCommand 클래스](./mvc-action-command.md)
 * [MVCRenderCommand](./mvc-render-command.md)

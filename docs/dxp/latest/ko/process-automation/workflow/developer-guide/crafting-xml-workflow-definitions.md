@@ -259,7 +259,7 @@ DXP를 사용하는 구독자는 [그래픽 디자이너](../designing-and-manag
 
 이제 단일 승인자 워크플로가 완료되었습니다. 이제 워크플로가 생성되는 방식을 확인했으므로 분기, 조인 및 조건과 같은 다른 모든 가능한 옵션에 대해 알아볼 수 있습니다. Liferay의 작업 흐름 시스템은 필요한 모든 프로세스를 구현할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 정의 노드 참조](./workflow-definition-node-reference.md)
 * [워크플로 작업 노드 참조](./workflow-task-node-reference.md)

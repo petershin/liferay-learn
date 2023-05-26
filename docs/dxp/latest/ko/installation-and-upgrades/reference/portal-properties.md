@@ -184,7 +184,7 @@ DXP 데이터베이스에 저장된 속성은 포털 속성 파일에 설정된 
 
 **제어판** 의 **구성** &rarr; **시스템 설정** 으로 이동하여 시스템 설정을 찾습니다. 시스템 설정을 `.config` 파일로 내보내 소스 제어에 저장하고 분산 DXP 설치에서 사용할 수 있습니다. 시스템 설정 및 구성 파일을 통해 설정된 포털 속성은 데이터베이스에 저장됩니다. 일부 속성은 즉시 적용되지만 다른 속성은 서버를 다시 시작해야 합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [문맥 재산](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)
 * [포털 개발자 속성](../../liferay-internals/reference/portal-developer-properties.md)

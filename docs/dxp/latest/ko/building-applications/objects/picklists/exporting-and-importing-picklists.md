@@ -26,7 +26,7 @@ Liferay의 내보내기/가져오기 프레임워크를 사용하여 환경 간�
 
    ![목록 이름을 입력하고 가져올 선택 목록을 선택합니다.](./exporting-and-importing-picklists/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [선택 목록 사용](./using-picklists.md)
 * [선택 목록 API 기본 사항](./picklists-api-basics.md)

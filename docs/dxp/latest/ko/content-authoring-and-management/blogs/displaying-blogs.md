@@ -86,7 +86,7 @@ Liferay는 블로그 항목을 표시하는 두 가지 방법을 제공합니다
 
 **범위:** 위젯이 표시하는 블로그 인스턴스를 지정합니다. 현재 사이트의 블로그(기본값), 글로벌 블로그 또는 페이지의 블로그.
 
-## 추가 정보
+## 관련 주제
 
 * [블로그 항목 추가](./adding-blog-entries.md)
 * [표시 페이지 템플릿 사용](../../site-building/displaying-content/using-display-page-templates.md)

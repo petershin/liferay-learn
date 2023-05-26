@@ -145,7 +145,7 @@ Liferay 7.2에서 Workflow Metrics는 검색 관리 패널(제어판 &rarr; 구�
 
 ![여러 워크플로 항목을 한 번에 워크플로의 새 단계로 전환합니다.](./using-workflow-metrics/images/06.png)
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로우 디자이너에서 태스크 생성](https://help.liferay.com/hc/articles/360028821932-Creating-Tasks-in-the-Workflow-Designer)
 * [워크플로 태스크 노드](../developer-guide/workflow-task-node-reference.md)

@@ -164,7 +164,7 @@ DXP 번들을 패치하는 경우 아래의 기본 패치 단계를 계속하십
 
 이제 DXP 번들 및 DXP 애플리케이션 서버 설치를 패치하는 방법을 알았습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [패치 도구 설치](../reference/installing-the-patching-tool.md)
 * [패치 도구 구성](../reference/configuring-the-patching-tool.md)

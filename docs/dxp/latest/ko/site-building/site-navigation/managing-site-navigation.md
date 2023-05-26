@@ -50,7 +50,7 @@ DXP 7.3+에서 여러 사이트에서 사용할 탐색 메뉴를 생성하려는
 
    ![페이지 트리 메뉴에서 페이지를 추가, 미리보기, 구성 또는 재정렬할 수 있습니다.](./managing-site-navigation/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [사이트에 페이지 추가](../creating-pages/adding-pages/adding-a-page-to-a-site.md)
 * [탐색 메뉴 사용](./using-the-navigation-menus-application.md)

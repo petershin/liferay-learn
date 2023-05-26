@@ -83,7 +83,7 @@ LPKG를 블랙리스트에 올리면 모든 내부 모듈이 제거됩니다.
 
 축하합니다! 이제 간단한 목록을 사용하여 여러 앱, 모듈 및 플러그인 설치를 관리할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [앱 관리](./using-the-app-manager.md)
 * [Felix Gogo 셸 사용](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)

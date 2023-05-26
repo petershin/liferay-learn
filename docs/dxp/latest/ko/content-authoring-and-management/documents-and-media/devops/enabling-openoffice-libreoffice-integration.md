@@ -28,7 +28,7 @@ OpenOffice와 LibreOffice 모두 통합이 가능하지만 일부 기능은 모�
 
 이제 문서 변환, 브라우저에서 지원되는 문서 유형 보기, 문서 축소판 및 미리보기 생성을 포함하는 OpenOffice/LibreOffice 호환 기능을 사용할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [문서 및 미디어](../../documents-and-media.md)
 * [문서 및 미디어 미리보기 구성](./configuring-documents-and-media-previews.md)

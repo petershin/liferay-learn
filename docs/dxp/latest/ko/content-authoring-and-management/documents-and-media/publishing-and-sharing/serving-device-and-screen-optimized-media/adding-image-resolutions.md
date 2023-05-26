@@ -30,7 +30,7 @@
 해상도가 이미지를 조정하는 데 사용된 경우 이미지 해상도 및 해당 식별자를 업데이트할 수 없습니다. 이것은 생성된 이미지의 불일치를 방지합니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [이미지 해상도 관리](./managing-image-resolutions.md)
 * [적응형 미디어 구성 참조](./adaptive-media-configuration-reference.md)

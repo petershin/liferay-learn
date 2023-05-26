@@ -60,7 +60,7 @@ Liferay 7.4부터는 [양식 필드](../creating-and-managing-forms/forms-field-
 | **데이터 공급자로 자동 채우기** | [데이터 공급자](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) 사용하여 다른 필드에서 조건이 충족될 때 필드를 채웁니다. |
 | **산출하십시요** | 다른 필드에 입력된 데이터를 사용하여 계산된 값으로 필드를 채웁니다.                                                                                 |
 
-## 추가 정보
+## 관련 주제
 
 * [양식 만들기](../creating-and-managing-forms/creating-forms.md)
 * [양식 필드 유형 참조](../creating-and-managing-forms/forms-field-types-reference.md)

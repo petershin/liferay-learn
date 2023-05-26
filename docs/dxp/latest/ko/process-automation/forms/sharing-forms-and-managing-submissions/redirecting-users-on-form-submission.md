@@ -12,6 +12,6 @@
 
 1. **완료** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [양식 만들기](../creating-and-managing-forms/creating-forms.md)

@@ -68,7 +68,7 @@
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [출판물 생성 및 관리](./creating-and-managing-publications.md)
 * [변경 및 게시](./making-and-publishing-changes.md)

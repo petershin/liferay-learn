@@ -307,7 +307,7 @@ OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.
 
 **기본** 및 **직접** 모드를 사용하여 동기식 메시징을 탐색하려면 자세한 내용은 [이전 버전](./using-direct-synchronous-messaging-in-previous-versions.md) 에서 직접 동기식 메시징 사용 및 [이전 버전](./using-default-synchronous-messaging-in-previous-versions.md) 에서 기본 동기식 메시징 사용을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [메시지 버스](../message-bus.md)
 * [메시지 듣기](./listening-for-messages.md)

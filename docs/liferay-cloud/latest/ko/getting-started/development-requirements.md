@@ -24,7 +24,7 @@ Liferay Cloud로 개발을 위한 로컬 환경을 설정하려면 다음이 필
 Liferay Cloud에는 [Liferay Workspace](https://help.liferay.com/hc/ko/articles/360029147471-Liferay-Workspace) 와 유사한 전제 조건이 있습니다. Developers who are familiar with creating a Liferay Workspace using [Liferay Dev Studio](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191007&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191038) , [Maven](https://help.liferay .com/hc/en-us/articles/360017885592-Maven-Workspace) 또는 [Liferay IntelliJ 플러그인](https://plugins.jetbrains.com/plugin/10739-liferay-intellij-plugin) 에 대부분의 필요한 도구는 이미 설정되어 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [Github 리포지토리 구성](../getting-started/configuring-your-github-repository.md)
 * [Bitbucket 리포지토리 구성](./configuring-your-bitbucket-repository.md)

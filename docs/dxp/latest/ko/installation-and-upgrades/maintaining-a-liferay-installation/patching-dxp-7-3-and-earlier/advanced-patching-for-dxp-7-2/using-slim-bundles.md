@@ -50,7 +50,7 @@ directory and run patching-tool setup.
 
 Slim Bundle 사용의 이점을 배웠고 이를 패치하는 방법을 알고 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [패치 설치](../installing-patches-for-dxp-7-3-and-earlier.md)
 * [패치 설치 축소](./slimming-down-patched-installations.md)

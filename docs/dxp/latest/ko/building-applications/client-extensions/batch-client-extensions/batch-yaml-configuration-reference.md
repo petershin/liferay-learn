@@ -24,6 +24,6 @@ yoke-oauth-application-headless-server:
 | `name`                           | 끈      | 배치 이름입니다.                                                       |
 | `oAuthApplicationHeadlessServer` | 끈      | (필수) OAuth2 애플리케이션 헤드리스 서버 프로필의 ID(`externalReferenceCode`)입니다. |
 
-## 추가 정보
+## 관련 주제
 
 * [클라이언트 확장 작업](../working-with-client-extensions.md)

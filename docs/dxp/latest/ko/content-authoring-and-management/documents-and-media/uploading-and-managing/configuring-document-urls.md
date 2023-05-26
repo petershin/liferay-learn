@@ -70,7 +70,7 @@ Liferay 7.4 U34/GA34부터 표시 페이지 템플릿 프레임워크는 각 파
 
 ![원하는 버전의 다운로드 URL을 복사합니다.](./configuring-document-urls/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [문서 및 미디어](../../documents-and-media.md)
 * [파일 업로드](./uploading-files.md)

@@ -108,7 +108,7 @@
 | TXN 식별 | 트랜잭션 ID입니다.                                        |
 | 총계     | 이것은 주문의 총 금액을 나타냅니다.                               |
 
-## 추가 정보
+## 관련 주제
 
 * [구독 활성화](../../product-management/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
 * [구독 관리](./managing-subscriptions.md)

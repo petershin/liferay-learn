@@ -19,7 +19,7 @@ Liferay Commerce에는 사전 구성되어 사용할 준비가 된 여러 통화
 | 우선순위 | 통화가 테이블에 표시되는 순서입니다. 숫자가 높을수록 더 아래로 표시됩니다. |
 | 활성 | 이 통화를 활성화하려면 토글 | 
 
-## 추가 정보
+## 관련 주제
 
 * [새 통화 추가](./adding-a-new-currency.md)
 * [Mercanet](../configuring-payment-methods/mercanet.md)

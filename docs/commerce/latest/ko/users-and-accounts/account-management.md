@@ -45,7 +45,7 @@ Commerce는 비즈니스 및 개인의 두 가지 계정 유형을 제공합니�
 * [계정에 주소 추가](./account-management/adding-addresses-to-an-account.md)
 * [새 계정 그룹 만들기](./account-management/creating-a-new-account-group.md)
 
-## 추가 정보
+## 관련 주제
 
 * [사이트 및 사이트 유형](../starting-a-store/sites-and-site-types.md)
 * [계정 역할](./account-management/account-roles.md)

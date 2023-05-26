@@ -76,7 +76,7 @@
 
 서비스가 삭제되더라도 볼륨은 환경에 유지됩니다. 서비스에 사용 중인 볼륨의 이름을 변경하거나 기존 볼륨의 이름을 변경하여 새 볼륨을 사용할 수 있지만 이전 볼륨의 콘텐츠는 여전히 존재합니다(NFS 또는 서비스의 SSD). 또한 볼륨을 유지하지 않으려면 볼륨의 내용을 직접 제거해야 합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Github 리포지토리 구성](../getting-started/configuring-your-github-repository.md)
 * [LCP.json을 통한 구성](../reference/configuration-via-lcp-json.md)

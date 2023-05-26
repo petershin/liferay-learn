@@ -30,7 +30,7 @@
 
 이제 구성된 도메인을 사용하여 사이트에 액세스할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [사이트의 친숙한 URL 구성](./configuring-your-sites-friendly-url.md)
 * [리디렉션 및 404 추적 설정](./setting-up-redirects-and-404-tracking.md)

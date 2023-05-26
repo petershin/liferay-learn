@@ -293,6 +293,6 @@ POST _reindex/
 
 Elasticsearch를 [으로 업그레이드하고 있다면](./upgrading-to-elasticsearch-7.md)지금 할 수 있습니다. 
 
-## 추가 정보
+## 관련 주제
 
 [검색 관리 및 조정](../../../search-administration-and-tuning.md)

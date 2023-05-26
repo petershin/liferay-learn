@@ -99,7 +99,7 @@ Dynatrace를 통합하려면 다음 단계를 따르십시오.
 
 로그 트레일을 확인하고 맞춤형 대시보드를 생성하려면 Dynatrace 자격 증명으로 로그인하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay DXP 서비스 사용](../using-the-liferay-dxp-service.md)
 * [실시간 알림](./real-time-alerts.md)

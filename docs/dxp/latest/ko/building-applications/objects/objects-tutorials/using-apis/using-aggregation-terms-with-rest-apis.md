@@ -152,7 +152,7 @@ unzip liferay-b3x5.zip
 
 이 배치 GET 메소드에는 2개의 값( `dateModified` 및 `description`)이 있는 `aggregationTerms` URL 매개변수가 포함됩니다. 이는 요청 응답의 개체 항목에서 데이터를 집계하는 데 사용되는 패싯 기준을 결정합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [개체 API 기본 사항](./object-api-basics.md)
 * [배치 API 사용](./using-batch-apis.md)

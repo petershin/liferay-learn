@@ -105,7 +105,7 @@ Commerce 3.0에서는 **개의 주문** 과 **구독** 이 **글로벌 애플리
 
 주문이 수락되면 [구독 메뉴](./subscription-administration-reference-guide.md)에 표시됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [구독 관리 참조 가이드](./subscription-administration-reference-guide.md)
 * [제품에 대한 구독 활성화](../../product-management/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)

@@ -60,7 +60,7 @@
 
 ![디스플레이 페이지 템플릿의 컨텍스트에서 콘텐츠를 미리 보거나 콘텐츠의 작업 메뉴를 사용하여 디스플레이 페이지를 봅니다.](./publishing-content-with-display-pages/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [표시 페이지 템플릿 사용](../using-display-page-templates.md)
 * [표시 페이지 템플릿 생성 및 관리](./creating-and-managing-display-page-templates.md)

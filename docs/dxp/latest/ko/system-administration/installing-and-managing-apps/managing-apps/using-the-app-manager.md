@@ -53,7 +53,7 @@ App Manager의 제거, 재설치 및 재활성화 기능에는 알려진 문제�
 
 축하합니다! 앱 관리자를 사용하여 애플리케이션 배포를 검사하고 관리할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [블랙리스트 앱](./blacklisting-apps.md)
 * [OSGi 구성요소 블랙리스트 작성](./blacklisting-osgi-components.md)

@@ -19,7 +19,7 @@
 * 국가
 * 창고
 
-## 추가 정보
+## 관련 주제
 
 * [채널 관리](./managing-channels.md)
 * [채널을 사용하여 제품 가시성 구성](./configuring-product-visibility-using-channels.md)

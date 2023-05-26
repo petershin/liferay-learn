@@ -77,6 +77,6 @@
 
 ![배달됨 탭](./shipments-management-reference-guide/images/08.png)
 
-## 추가 정보
+## 관련 주제
 
 * [배송 만들기](./creating-a-shipment.md)

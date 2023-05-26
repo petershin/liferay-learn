@@ -108,7 +108,7 @@ W3E7 예제 애플리케이션은 이 접근 방식을 보여줍니다.
 
 축하합니다! JSP와 하나의 간단한 Java 클래스를 사용하여 웹 애플리케이션을 만들었습니다. 여기에서 갈 수 있는 방향이 많이 있습니다. 더 많은 보기를 추가하려면 [MVC 포틀릿](./rendering-views-with-mvc-portlet.md)을 사용한 렌더링 보기를 참조하십시오. 애플리케이션에 작업을 추가하려면 [MVC 작업 명령](./mvc-action-command.md)을 참조하십시오. 또는 [서비스 빌더](../../data-frameworks/service-builder.md) 을 사용하여 백엔드 데이터 모델을 구현합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [OSGi 서비스 속성 맵에 대한 포틀릿 설명자](../reference/portlet-descriptor-to-osgi-service-property-map.md)
 * [MVC 사용](../using-mvc.md)

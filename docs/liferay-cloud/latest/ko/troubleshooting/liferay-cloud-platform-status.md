@@ -44,7 +44,7 @@ Liferay Cloud Platform 상태 페이지를 아래로 스크롤하여 최근 사�
 
 ![그림 4: Liferay Cloud Platform의 상태에 관한 업데이트를 받으려면 구독하십시오.](./liferay-cloud-platform-status/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 클라우드 지원 개요](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
 * [문제 해결 도구 및 리소스](./troubleshooting-tools-and-resources.md)

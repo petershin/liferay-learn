@@ -61,7 +61,7 @@ Liferay DXP 7.4 U22+ 및 GA22+에서 Miniium 사이트의 카탈로그 페이지
 사용자 지정 필터를 비활성화하고 *구성* 메뉴 내부의 확인란을 사용하여 변경할 수 없고 보이지 않게 할 수도 있습니다. 다양한 사용 사례에 사용자 지정 필터를 사용할 수 있습니다. 자세한 내용은 [사용자 정의 필터 예](https://learn.liferay.com/dxp/latest/ko/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) 를 참조하세요. .
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [카탈로그 페이지 생성](./creating-a-catalog-page.md)
 * [사용자 정의 필터 예](https://learn.liferay.com/dxp/latest/ko/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html)

@@ -175,7 +175,7 @@ Wiki 위젯은 Wiki 응용 프로그램을 표시하고 Wiki 페이지를 표시
 | Wiki   | Wiki 응용 프로그램을 표시하는 [Wiki 위젯](../../../../collaboration-and-social/wiki/wiki-widget-ui-reference.md) 추가합니다.                                      |
 | Wiki전시 | 특정 위키 페이지를 강조 표시하는 [위키 표시 위젯](../../../../collaboration-and-social/wiki/using-the-wiki-display-widget.md) 추가합니다.                                |
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 페이지 사용](../../using-widget-pages.md)
 * [위젯 사용](../using-widgets.md)

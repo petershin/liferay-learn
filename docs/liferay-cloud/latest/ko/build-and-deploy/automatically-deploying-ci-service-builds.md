@@ -26,7 +26,7 @@ Liferay Cloud를 사용하면 웹후크를 사용하여 프로젝트의 Git 리�
 
 다시 시작하면 지정된 브랜치에 푸시되거나 병합된 모든 변경 사항이 자동으로 빌드되어 대상 환경에 배포됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 클라우드 개발 워크플로 개요](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Liferay Cloud Console을 통해 변경 사항 배포](./deploying-changes-via-the-liferay-cloud-console.md)

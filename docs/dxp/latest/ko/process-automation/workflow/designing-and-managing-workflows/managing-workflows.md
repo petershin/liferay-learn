@@ -82,7 +82,7 @@
    
    ![워크플로우 삭제](./managing-workflows/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [XML 워크플로 정의 만들기](../developer-guide/crafting-xml-workflow-definitions.md)
 * [워크플로 디자이너 개요(구독)](./workflow-designer/workflow-designer-overview.md)

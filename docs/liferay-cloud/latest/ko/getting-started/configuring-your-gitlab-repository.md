@@ -186,7 +186,7 @@ Liferay Cloud의 Jenkins 서비스는 선택한 git SCM 공급자에 대한 웹�
 
 1. 링크가 올바른 GitLab 페이지로 리디렉션되는지 확인합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [BitBucket 리포지토리 구성](./configuring-your-bitbucket-repository.md)
 * [GitHub 리포지토리 구성](./configuring-your-github-repository.md)

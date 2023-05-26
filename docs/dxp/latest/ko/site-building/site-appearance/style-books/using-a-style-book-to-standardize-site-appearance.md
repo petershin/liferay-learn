@@ -146,6 +146,6 @@ Style Book을 편집할 때 드롭다운 상자에서 사용할 수 있는 범�
 
 ![클래식 테마를 사용할 때 기본 위젯에 대한 많은 일반 버튼에 영향을 미치도록 버튼 기본 아래의 색상을 변경합니다.](./using-a-style-book-to-standardize-site-appearance/images/09.png)
 
-## 추가 정보
+## 관련 주제
 
 * [Style Book 토큰 정의](./developer-guide/style-book-token-definitions.md)

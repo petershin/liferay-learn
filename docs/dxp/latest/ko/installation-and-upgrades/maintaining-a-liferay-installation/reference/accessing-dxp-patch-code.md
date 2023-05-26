@@ -107,7 +107,7 @@ GitHub 사용자의 리포지토리 액세스 권한을 제거하는 방법은 �
 
 **(3) Wiki의 경우:** 공식 Liferay DXP 문서는 <https://learn.liferay.com>에 있으며 지원 기술 자료는 [도움말 센터](https://help.liferay.com) 에 있습니다. /hc/en-us/). 우리는 `liferay-dxp` 저장소 위키를 사용하지 않습니다. 기사 변경을 제안하거나 주제에 대한 문서를 요청하려면 [지원 티켓 생성](https://help.liferay.com/hc/ko/requests/new) 을 통해 Liferay 지원 팀에 알려주십시오. 지원 센터.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay의 오픈 소스 정보](https://liferay.dev/open-source)
 * [GitHub 및 Git 시작하기](https://help.github.com/en/github/getting-started-with-github)

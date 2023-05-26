@@ -75,7 +75,7 @@ Liferay의 게시 도구는 다음 유형의 페이지 및 콘텐츠를 지원�
 콘텐츠 페이지는 Staging의 [페이지 변형](./staging/page-versioning.md) 기능을 지원하지 않습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [게시 도구](../publishing-tools.md)
 * [출판](./publications.md)

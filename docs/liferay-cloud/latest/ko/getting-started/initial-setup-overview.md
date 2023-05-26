@@ -96,7 +96,7 @@ Liferay Cloud 스택 서비스가 올바르게 배포되었는지 확인합니�
 
 제대로 배포되면 기본 Cloud Stack 서비스 5개 모두의 상태가 '준비됨'이어야 합니다.
 
-## 추가 정보
+## 관련 주제
 
 - [GitHub 리포지토리 구성](./configuring-your-github-repository.md)
 - [Liferay 클라우드 환경 이해](./understanding-liferay-cloud-environments.md)

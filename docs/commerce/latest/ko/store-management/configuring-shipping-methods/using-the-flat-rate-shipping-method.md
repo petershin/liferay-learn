@@ -54,7 +54,7 @@
 
 새 배송 옵션이 추가되었으며 결제 과정에서 사용할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [가변 요율 배송 방법 사용](./using-the-variable-rate-shipping-method.md)
 * [배송 방법으로 FedEx 사용](./using-the-fedex-shipping-method.md)

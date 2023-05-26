@@ -125,7 +125,7 @@ Fragments Toolkit을 사용하는 경우 `yarn run add-fragment`을 실행할 �
 |:--------- |:--------------------------------------------- |:---------------- |
 | `options` | `Array<{label: string, value: string}>` | 사용 가능한 옵션 목록입니다. |
 
-## 추가 정보
+## 관련 주제
 
 * [페이지 조각 개발](../developing-page-fragments.md)
 * [프래그먼트를 사용하여 양식 작성](../../../building-applications/objects/using-fragments-to-build-forms.md)

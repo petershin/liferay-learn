@@ -35,7 +35,7 @@
 동일한 페이지에 있는 필드에 *같지 않음* 조건을 사용하는 것이 가장 좋습니다. Forms는 첫 번째 필드를 확인하고 *true*로 반환되면 두 번째 필드를 건너뜁니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [양식 만들기](../creating-and-managing-forms/creating-forms.md)
 * [양식 규칙](./form-rules-overview.md)

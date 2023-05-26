@@ -51,7 +51,7 @@
 * **UI에서 [Fragments Editor 사용](./using-the-fragments-editor.md)** : 편집기의 HTML 창에서 변경
 * **[Fragments Toolkit 사용](./using-the-fragments-toolkit.md)** : 프래그먼트의 `index.html` 파일을 변경합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [조각 개발](./developing-fragments-intro.md)
 * [조각 편집기 사용](./using-the-fragments-editor.md)

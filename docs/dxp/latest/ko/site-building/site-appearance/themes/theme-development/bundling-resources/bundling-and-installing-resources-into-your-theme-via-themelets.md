@@ -96,6 +96,6 @@ themelet을 추가할 테마가 없는 경우 [테마 만들기](../getting-star
 
 themelet이 테마에 설치되고 다음에 `gulp deploy` 명령을 사용하여 이 테마를 빌드하고 배포할 때 변경 사항이 나타납니다.
 
-## 추가 정보
+## 관련 주제
 
 * [테마 만들기](../getting-started/setting-up-an-environment-and-creating-a-theme.md)

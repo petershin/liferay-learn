@@ -28,7 +28,7 @@ Commerce Catalogs는 단순, 그룹화, 가상 및 다이어그램의 네 가지
 
 **[다이어그램으로 쇼핑하기](./product-types/shop-by-diagram.md)** : 매장의 제품을 참조하는 BOM(Bill of Materials) 다이어그램에 속하는 구성 요소 부품입니다.
 
-## 추가 정보
+## 관련 주제
 
 * [간단한 제품 만들기](./product-types/creating-a-simple-product.md)
 * [그룹화된 제품 만들기](./product-types/creating-a-grouped-product.md)

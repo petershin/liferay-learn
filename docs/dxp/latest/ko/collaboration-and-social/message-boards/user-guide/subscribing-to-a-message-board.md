@@ -23,7 +23,7 @@
 
 메시지 보드는 [RSS](https://en.wikipedia.org/wiki/RSS) 피드로 게시할 수 있습니다. **메시지 보드** 용 RSS는 기본적으로 활성화되어 있으며 Liferay DXP는 RSS 1.0, RSS 2.0 또는 Atom 1.0을 지원합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [게시판 범주 메일링 목록 구성](./configuring-a-message-boards-category-mailing-list.md)
 * [메일 구성](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)

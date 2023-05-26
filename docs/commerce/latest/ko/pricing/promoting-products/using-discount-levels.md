@@ -56,7 +56,7 @@ Minium 사이트에서 할인 수준을 추가하려면,
 가격 항목에 대한 할인을 재정의하면 SKU를 대상으로 하는 모든 할인 수준이 재정의됩니다. 자세한 내용은 [할인 무시](./introduction-to-discounts.md#overriding-discounts) 를 참조하세요.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [가격 소개](../introduction-to-pricing.md)
 * [할인 소개](./introduction-to-discounts.md)

@@ -44,6 +44,6 @@
 
 ![템플릿의 편집 페이지를 볼 때 템플릿 키를 찾을 수 있습니다.](./embedding-widgets-in-templates/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [포틀릿 이름으로 포틀릿 포함](https://help.liferay.com/hc/articles/360028746512-Embedding-a-Portlet-by-Portlet-Name)

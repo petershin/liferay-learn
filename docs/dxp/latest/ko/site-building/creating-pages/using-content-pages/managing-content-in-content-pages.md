@@ -52,7 +52,7 @@ Liferay DXP/Portal 7.3의 경우 **콘텐츠** 패널(![Contents](../../../image
     * **권한** : 웹 콘텐츠의 권한 업데이트
     * **사용 보기** : 사이트에서 웹 콘텐츠가 사용되는 사이트 보기
 
-## 추가 정보
+## 관련 주제
 
 * [콘텐츠 페이지 사용](../using-content-pages.md)
 * [콘텐츠 페이지에 요소 추가](./adding-elements-to-content-pages.md)

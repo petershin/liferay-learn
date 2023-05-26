@@ -61,7 +61,7 @@
 
 주문 작업 흐름을 비활성화하려면 **작업 흐름 없음** 옵션을 선택하고 **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 즉시 사용 가능한 **단일 승인자(버전 1**) 은 사용 가능한 주문 워크플로우입니다. [워크플로 소개](https://learn.liferay.com/dxp/latest/ko/process-automation/workflow/introduction-to-workflow.html) 을 생성한 다음 **주문 워크플로** 탭에서 선택할 수 있습니다.
 

@@ -23,7 +23,7 @@
 
 새 배송이 동일한 주문에서 [생성](./creating-a-shipment.md) 인 경우 새 배송 번호가 생성됩니다(예: **42888**).
 
-## 추가 정보
+## 관련 주제
 
 * [선적 소개](./introduction-to-shipments.md)
 * [주문 처리](../orders/processing-an-order.md)

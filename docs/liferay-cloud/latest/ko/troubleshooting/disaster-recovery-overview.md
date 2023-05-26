@@ -47,6 +47,6 @@ Liferay Cloud의 DR 전략은 **Warm** 입니다. Liferay Cloud 사용자는 재
 | 오후 4시 21분 | 수동 백업은 프로덕션 환경에서 복원되고 사용자 지정 도메인 구성은 원래 상태로 돌아갑니다.                                      |
 | 오후 4시 25분 | 트래픽은 원래 프로덕션 환경으로 다시 라우팅됩니다.                                                            |
 
-## 추가 정보
+## 관련 주제
 
 * [지역 간 재해 복구 구성](./configuring-cross-region-disaster-recovery.md)

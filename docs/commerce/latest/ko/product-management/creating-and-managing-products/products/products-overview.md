@@ -34,7 +34,7 @@ Liferay Commerce는 [단순](../product-types/creating-a-simple-product.md), [�
 
 또한 사용자 지정 제품 [재고 규칙](../../../inventory-management.md) 을 구성하여 고객이 구매할 수 있는 최대 및 최소 수량을 설정하고, 채널에서 주문을 회수할지 여부를 결정하거나, 재고가 설정된 임계값 아래로 떨어질 때 제품 판매 방법을 제어할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [간단한 제품 만들기](../product-types/creating-a-simple-product.md)
 * [그룹화된 제품 만들기](../product-types/creating-a-grouped-product.md)

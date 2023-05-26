@@ -126,7 +126,7 @@ Commerce Pricing Engine v1.0에서 가격 항목에는 SKU, 표준 가격 및 �
 
 일단 저장되면 인스턴스는 모든 가격 계산에 Pricing Engine v2.0을 사용합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [제품의 기본 가격 설정](./setting-a-products-base-price.md)
 * [가격표 생성](./creating-a-price-list.md)

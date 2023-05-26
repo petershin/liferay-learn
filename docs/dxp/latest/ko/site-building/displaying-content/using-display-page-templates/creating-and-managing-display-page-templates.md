@@ -90,7 +90,7 @@
 
 콘텐츠를 새 표시 페이지 템플릿에 할당하는 경우 콘텐츠가 예상대로 표시되는지 확인하십시오. 콘텐츠를 미리 보고 표시하려면 [디스플레이 페이지로 콘텐츠 게시](./publishing-content-with-display-pages.md)참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [디스플레이 페이지로 콘텐츠 게시](./publishing-content-with-display-pages.md)
 * [SEO 및 Open Graph 구성](./configuring-seo-and-open-graph.md)

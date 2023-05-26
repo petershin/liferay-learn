@@ -82,6 +82,6 @@
 | [%ORDER_CREATOR%] | 주문을 생성한 사용자 |
 | [%ORDER_ID%]      | Order Id    |
 
-## 추가 정보
+## 관련 주제
 
 * [알림 템플릿 사용](./using-notification-templates.md)

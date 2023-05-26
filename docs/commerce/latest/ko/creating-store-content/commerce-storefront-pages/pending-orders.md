@@ -16,7 +16,7 @@
 
 [주문 워크플로](../../order-management/order-workflows/introduction-to-order-workflows.md) 이 활성화된 경우 위에서 언급한 단계가 약간 다를 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 참조 가이드](../liferay-commerce-widgets/widget-reference.md)
 * [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)

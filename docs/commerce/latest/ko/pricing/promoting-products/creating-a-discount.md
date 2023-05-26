@@ -155,7 +155,7 @@
 
 이 예에서는 이 특정 할인에 할인 규칙이 적용되었습니다. 고객은 정해진 금액을 초과하는 모든 구매에 대해 이 할인을 받게 됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [할인 소개](./introduction-to-discounts.md)
 * [새 계정 그룹 만들기](../../users-and-accounts/account-management/creating-a-new-account-group.md)

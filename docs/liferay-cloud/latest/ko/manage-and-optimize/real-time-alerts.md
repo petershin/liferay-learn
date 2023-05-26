@@ -42,7 +42,7 @@ Liferay Cloud는 시스템 관리자에게 프로젝트의 예기치 않은 동�
 
 ![실시간 알림](./real-time-alerts/images/02.png)
 
-## 추가 정보
+## 관련 주제
 
 * [애플리케이션 지표](./application-metrics.md)
 * [할당량](./quotas.md)

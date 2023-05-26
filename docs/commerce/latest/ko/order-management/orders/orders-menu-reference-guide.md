@@ -96,7 +96,7 @@
 
 ![전송 탭](./orders-menu-reference-guide/images/04.png "전송 탭")
 
-## 추가 정보
+## 관련 주제
 
 * [주문 워크플로 소개](../order-workflows/introduction-to-order-workflows.md)
 * [주문 워크플로 활성화 또는 비활성화](../order-workflows/enabling-or-disabling-order-workflows.md)

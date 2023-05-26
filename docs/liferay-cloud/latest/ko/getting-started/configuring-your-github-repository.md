@@ -137,7 +137,7 @@ Liferay Cloud가 저장소와 통합하려면 `LCP_CI_SCM_TOKEN` 값에서 참�
 
 1. 링크가 올바른 GitHub 페이지로 리디렉션되는지 확인합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [BitBucket 리포지토리 구성](./configuring-your-bitbucket-repository.md)
 * [GitLab 리포지토리 구성](./configuring-your-gitlab-repository.md)

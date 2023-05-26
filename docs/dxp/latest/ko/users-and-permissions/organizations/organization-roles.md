@@ -48,7 +48,7 @@ Liferay DXP는 다음과 같은 기본 조직 역할을 제공합니다.
 
 1. 완료되면 **Update Associations** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [조직 이해](./understanding-organizations.md)
 * [조직 생성 및 관리](./creating-and-managing-organizations.md)

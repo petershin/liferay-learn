@@ -66,7 +66,7 @@ Liferay 7.4 U20부터 UI에 나타나는 워크플로 텍스트는 번역 가능
 
 워크플로 정의가 게시되고 [자산](../../using-workflows/activating-workflow.md)에 연결되면 워크플로 작업 담당자와 같은 참가자가 자신의 언어로 워크플로와 상호 작용합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 관리](../managing-workflows.md)
 * [워크플로우 노드](./workflow-nodes.md)

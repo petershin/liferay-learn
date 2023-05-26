@@ -56,7 +56,7 @@
 
 모든 롤링 재시작 적격 업데이트는 앞서 나열된 롤링 재시작 단계를 사용하여 적용할 수 있습니다. 다른 업데이트는 다음에 설명된 대로 다르게 수행해야 합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [블루 그린 배포](./blue-green-deployments.md)
 * [고가용성을 위한 클러스터링](../../setting-up-liferay/clustering-for-high-availability.md)

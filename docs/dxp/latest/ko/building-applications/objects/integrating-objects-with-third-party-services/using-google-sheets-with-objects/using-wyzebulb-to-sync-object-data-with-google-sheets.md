@@ -72,7 +72,7 @@
 
     ![흐름이 실행 중인지 확인합니다.](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/17.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 개요](../../../objects.md)
 * [객체 생성 및 관리](../../creating-and-managing-objects.md)

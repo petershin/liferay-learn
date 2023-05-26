@@ -70,7 +70,7 @@
 
     ![항목이 추가될 때마다 Webhook 끝점에 요청을 보내는 작업을 정의합니다.](./using-ifttt-to-sync-object-data-with-google-sheets/images/15.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 개요](../../../objects.md)
 * [객체 생성 및 관리](../../creating-and-managing-objects.md)

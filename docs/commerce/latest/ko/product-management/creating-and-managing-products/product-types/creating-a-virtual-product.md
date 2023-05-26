@@ -114,7 +114,7 @@ Liferay Commerce에서 가상 제품은 고객이 다운로드할 수 있는 무
 
 제품 가격 및 SKU를 설정했으면 제품 옵션, 사양을 추가하거나 제품 이미지를 업로드하는 방법에 대한 위의 섹션을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [그룹화된 제품 만들기](./creating-a-grouped-product.md)
 * [간단한 제품 만들기](./creating-a-simple-product.md)

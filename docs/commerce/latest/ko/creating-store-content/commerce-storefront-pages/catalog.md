@@ -13,7 +13,7 @@
 
 이러한 위젯에 대한 자세한 내용은 [위젯 참조](../liferay-commerce-widgets/widget-reference.md)을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [카탈로그 페이지 생성](../creating-a-catalog-page.md)
 * [위젯 참조](../liferay-commerce-widgets/widget-reference.md)

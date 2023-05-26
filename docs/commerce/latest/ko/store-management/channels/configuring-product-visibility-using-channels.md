@@ -61,7 +61,7 @@ Liferay Commerce에서 채널 사용에 대한 자세한 내용은 다음을 참
 
 선택한 채널에서만 제품이 표시됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [채널 소개](./introduction-to-channels.md)
 * [채널 관리](./managing-channels.md)

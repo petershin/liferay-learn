@@ -55,7 +55,7 @@
 
 가격 목록(이 예에서는 **VIP 고객**)이 생성되어 선택한 계정 그룹 및 계정에 적용되었습니다. 필요에 따라 단계를 반복하여 다른 가격 목록을 만듭니다.
 
-## 추가 정보
+## 관련 주제
 
 * [새 계정 만들기](../users-and-accounts/account-management/creating-a-new-account.md)
 * [새 계정 그룹 만들기](../users-and-accounts/account-management/creating-a-new-account-group.md)

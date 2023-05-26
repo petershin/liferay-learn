@@ -22,7 +22,7 @@
 
 ![보기 열에는 현지화된 레이블이 사용됩니다.](./renaming-table-columns/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [전망](../views.md)
 * [개체 보기 디자인](./designing-object-views.md)

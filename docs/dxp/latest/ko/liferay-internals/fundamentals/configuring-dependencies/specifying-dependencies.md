@@ -40,7 +40,7 @@
 
 멋진! 종속성을 지정하는 것은 의존할 수 있는 기술입니다!
 
-## 추가 정보
+## 관련 주제
 
 * [유물 찾기](./finding-artifacts.md)
 * [패키지 가져오기](../importing-packages.md)

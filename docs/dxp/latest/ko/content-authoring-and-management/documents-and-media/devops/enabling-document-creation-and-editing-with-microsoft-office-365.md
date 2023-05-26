@@ -52,7 +52,7 @@ Office 365&trade; 을 사용하여 문서 및 미디어 파일을 만들고 편�
 
  **참고:** 활성화되면 양식에서 클라이언트 ID, 클라이언트 암호 및 테넌트 값을 삭제하여 이 기능을 비활성화할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Google 드라이브로 문서 생성 및 편집 활성화](./google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md)
 * [Microsoft Office 365로 문서 작성 및 편집](../uploading-and-managing/creating-documents/creating-and-editing-documents-with-microsoft-office-365.md)

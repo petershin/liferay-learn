@@ -140,7 +140,7 @@ Staging을 설정한 후 **Staging** 페이지의 **Application** 막대에서 *
 
 여기에서 사이트의 스테이징을 비활성화하거나 [페이지 버전 관리](page-versioning.md) 설정을 수정할 수 있습니다. 단, **Staged Content** 옵션은 초기 설정 후 수정할 수 없습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [스테이징 개요](../staging.md)
 * [게시 프로세스 이해](./understanding-the-publishing-process.md)

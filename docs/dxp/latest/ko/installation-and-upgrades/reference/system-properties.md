@@ -71,6 +71,6 @@ DXP의 `system.properties` 파일을 사용하고 시스템 속성을 확장/재
    
    Liferay DXP는 시스템 속성을 유연한 방식으로 처리하므로 시스템을 가장 적합하게 구성할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [문맥 재산](./portal-properties.md)

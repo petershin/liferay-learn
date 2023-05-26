@@ -176,7 +176,7 @@ Liferay Commerce 인스턴스가 업그레이드되었습니다.
 
 재인덱싱이 완료되면 업그레이드된 Liferay Commerce 인스턴스를 사용할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [앱 설치](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
 * [Liferay Commerce 수정 전달 방법](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

@@ -74,7 +74,7 @@
    
    ![가져오기 탭으로 이동하여 여러 사이트 템플릿이 있는 LAR 파일을 가져옵니다.](./exporting-importing-site-templates/images/07.png)
 
-## 추가 정보
+## 관련 주제
 
 * [사이트 템플렛](../site-templates.md)
 * [사이트 템플릿 만들기](./creating-site-templates.md)

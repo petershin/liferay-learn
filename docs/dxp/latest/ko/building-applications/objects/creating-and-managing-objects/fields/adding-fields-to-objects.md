@@ -95,7 +95,7 @@
 | `userName`              | 항목 작성자의 사용자 이름입니다.          |
 | `uuid`                  | 항목의 고유한 범용 ID입니다.           |
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](../creating-objects.md)
 * [개체 관계 정의](../relationships/defining-object-relationships.md)

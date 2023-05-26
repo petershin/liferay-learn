@@ -53,6 +53,6 @@ Liferay DXP의 자산 프레임워크 <!-- TODO: Add link to asset framework art
 ```
 <!-- TODO: (When developer-oriented article available) You can also enable ratings for your own applications by adding just a few lines of code. See the article on \[adding support for ratings\](link) to your content widgets for more information. -->
 
-## 추가 정보
+## 관련 주제
 
 * [활동 위젯 사용](./using-the-activities-widget.md)

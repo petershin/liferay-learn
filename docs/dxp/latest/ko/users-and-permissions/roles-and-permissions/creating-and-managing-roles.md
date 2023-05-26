@@ -86,7 +86,7 @@
 
 웹 콘텐츠 폴더 외에도 자산 컨테이너의 예로는 책갈피 폴더, 게시판 범주, Wiki 노드, 문서 및 미디어 폴더가 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [역할 및 권한 이해](./understanding-roles-and-permissions.md)
 * [역할 권한 정의](./defining-role-permissions.md)

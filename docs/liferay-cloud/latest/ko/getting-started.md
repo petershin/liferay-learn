@@ -88,7 +88,7 @@ Liferay Cloud는 IT 팀이 시간이 지남에 따라 사이트의 상태 및 �
 
 ![다양한 메트릭을 사용하여 Liferay DXP 인스턴스를 포함하여 Liferay 클라우드 서비스에 대한 탭을 유지하십시오.](./getting-started/images/07.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개발 요구 사항](./getting-started/development-requirements.md)
 * [Github 리포지토리 구성](./getting-started/configuring-your-github-repository.md)

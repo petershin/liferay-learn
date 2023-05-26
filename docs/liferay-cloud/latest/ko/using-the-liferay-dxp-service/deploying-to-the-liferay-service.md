@@ -159,7 +159,7 @@ liferay
 버전 3.xx 서비스를 사용하는 경우 라이센스는 대신 리포지토리의 `lcp/liferay/license/{ENV}/` 폴더에 속합니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해하기](../reference/understanding-service-stack-versions.md)를 참조하십시오.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay DXP 서비스 사용](../using-the-liferay-dxp-service.md)
 * [Liferay DXP 서비스 구성](./configuring-the-liferay-dxp-service.md)

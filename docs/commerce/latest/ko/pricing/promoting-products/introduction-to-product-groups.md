@@ -119,7 +119,7 @@
 
 할인 또는 가격 목록이 제품 그룹에 연결되었는지 확인하려면 **애플리케이션 메뉴** ![Applications Menu](../../images/icon-applications-menu.png), **상거래** 탭을 클릭하고 **가격 책정** &rarr; **제품 그룹** 로 이동합니다. 가격표 및 할인 아래에서 연결된 엔터티를 볼 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [할인 소개](./introduction-to-discounts.md)
 * [가격 소개](../introduction-to-pricing.md)

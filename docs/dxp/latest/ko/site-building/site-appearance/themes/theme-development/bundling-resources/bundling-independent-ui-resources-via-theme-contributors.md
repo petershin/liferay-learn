@@ -122,7 +122,7 @@ body, #wrapper {
 
 축하합니다! CSS 스타일 변경으로 테마 기여자를 만들었습니다. [Style Books](../../../style-books/using-a-style-book-to-standardize-site-appearance.md)을 사용하여 사이트 페이지에 특정 스타일 변경 사항을 적용할 수도 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [테마렛을 통해 리소스를 테마에 번들링 및 설치](./bundling-and-installing-resources-into-your-theme-via-themelets.md)
 * [테마 소개](../../introduction-to-themes.md)

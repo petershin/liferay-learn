@@ -66,7 +66,7 @@ WAR에 내보낸 타사 패키지의 다른 버전이 [필요한 경우](../../l
 
 이제 WAB에 필요한 JAR 버전이 포함됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [내보낸 타사 패키지](../../liferay-internals/reference/exported-third-party-packages.md)
 * [종속성 구성](../../liferay-internals/fundamentals/configuring-dependencies.md)

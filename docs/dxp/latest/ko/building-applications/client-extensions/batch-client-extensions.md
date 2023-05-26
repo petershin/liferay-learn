@@ -34,7 +34,7 @@ type: batch
 
 [배치 엔진 프레임워크](../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) 에서 지원하는 모든 유형의 데이터를 Liferay 인스턴스에서 내보낼 수 있습니다. 여기에는 [객체 정의](../objects/creating-and-managing-objects.md) 및 [워크플로우 정의](../../process-automation/workflow/introduction-to-workflow.md)가 포함됩니다. 내보낼 때 JSON 파일 형식을 선택합니다. `*.batch-engine-data.json` 파일이 [배치 클라이언트 확장](./batch-client-extensions/batch-yaml-configuration-reference.md)에 추가되면 [빌드된 아카이브](./packaging-client-extensions.md) Liferay Experience Cloud 또는 자체 호스팅 Liferay 인스턴스에 배포합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [클라이언트 확장 소개](../client-extensions.md)
 * [`client-extension.yaml`에서 클라이언트 확장 구성](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

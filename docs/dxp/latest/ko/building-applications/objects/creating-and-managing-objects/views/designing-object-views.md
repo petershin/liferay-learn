@@ -48,7 +48,7 @@
 7.4 U21+의 경우 작업 버튼( ![작업 버튼](../../../../images/icon-actions.png) )을 클릭하고 *Duplicate*를 선택하여 보기를 복제할 수 있습니다. 이렇게 하면 이름에 "(복사)"가 추가된 원본 보기의 완전한 복사본이 생성됩니다. 
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](../creating-objects.md)
 * [개체에 필드 추가](../fields/adding-fields-to-objects.md)

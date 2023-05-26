@@ -227,7 +227,7 @@ unzip liferay-w4s7.zip
 
 `nestedFieldsDepth`: 포함하려는 항목의 깊이를 결정하며 0-5 사이에서 설정할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [개체 API 기본 사항](./object-api-basics.md)
 * [배치 API 사용](./using-batch-apis.md)

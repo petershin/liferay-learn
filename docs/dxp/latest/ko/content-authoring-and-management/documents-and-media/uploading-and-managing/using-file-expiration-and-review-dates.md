@@ -58,7 +58,7 @@ Liferay의 시스템은 설정된 [확인 간격](#configuring-the-check-interva
 
 1. 완료되면 **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [파일 업로드](./uploading-files.md)
 * [문서 및 미디어](../../documents-and-media.md)

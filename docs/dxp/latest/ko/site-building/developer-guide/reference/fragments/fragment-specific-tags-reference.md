@@ -275,7 +275,7 @@ W3C HTML 표준에 따르면 사용자 정의 요소는 자동으로 닫힐 수 
 
 언어에 대한 사용자 정의 구성을 지정하지 않는 `지역화 가능` 속성이 있는 조각은 기본 페이지 언어의 구성을 사용합니다.
 
-## 추가 정보
+## 관련 주제
 
 - [Fragments Toolkit 명령 참조](./fragments-toolkit-command-reference.md)
 - [페이지 조각 편집기 인터페이스 참조](./page-fragment-editor-interface-reference.md)

@@ -36,7 +36,7 @@
 
 ![그림 3: 지원 액세스 설정이 변경되면 모든 사람에게 이메일로 알립니다.](./support-access/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [문제 해결 도구 및 리소스](./troubleshooting-tools-and-resources.md)
 * [지원 센터](https://help.liferay.com/hc/en-us)

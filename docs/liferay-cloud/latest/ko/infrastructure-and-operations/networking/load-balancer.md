@@ -207,7 +207,7 @@ base64encodedcertificate
 | `열쇠`            |                                    | Base64 형식의 SSL 인증서 키입니다. 이것을 [`ssl`](#adding-custom-ssl-certificates) 개체 또는 [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) 개체로 그룹화합니다(여러 인증서를 나열하기 위해). |
 | `crt`           |                                    | Base64 형식의 SSL 인증서 crt. 이것을 [`ssl`](#adding-custom-ssl-certificates) 개체 또는 [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) 개체로 그룹화합니다(여러 인증서를 나열하기 위해).  |
 
-## 추가 정보
+## 관련 주제
 
 * [개인 네트워크](./private-network.md)
 * [VPN 통합 개요](./vpn-integration-overview.md)

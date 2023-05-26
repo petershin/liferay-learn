@@ -59,7 +59,7 @@ INFO  [fileinstall-directory-watcher][LicenseManager:?] License registered for D
 
 DXP 라이선스 업데이트를 축하합니다!
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay DXP 활성화](../../setting-up-liferay/activating-liferay-dxp.md)
 * [컨테이너에 파일 제공](./providing-files-to-the-container.md)

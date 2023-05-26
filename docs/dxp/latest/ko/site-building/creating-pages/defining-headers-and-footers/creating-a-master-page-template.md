@@ -34,7 +34,7 @@ Portal에는 사이트 페이지에 대한 머리글 및 바닥글의 모양과 
 사용자 지정 마스터 페이지 템플릿이 페이지에 사용되는 경우 페이지의 테마는 마스터 페이지 템플릿을 통해 정의되며 페이지 설정을 통해 변경할 수 없습니다. 자세한 내용은 [마스터 페이지 템플릿의 모양과 느낌 변경](./managing-master-page-templates.md#change-a-master-page-templates-look-and-feel) 을 참조하세요.
 ```
 
-## 추가 정보
+## 관련 주제
 
 - [마스터 페이지 템플릿 관리](./managing-master-page-templates.md)
 - [마스터 페이지 템플릿](./master-page-templates.md)

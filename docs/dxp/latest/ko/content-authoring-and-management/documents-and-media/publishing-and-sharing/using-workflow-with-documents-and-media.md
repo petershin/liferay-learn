@@ -46,7 +46,7 @@
 
 이렇게 하면 선택한 폴더 및 문서 유형에 대해 선택한 워크플로가 활성화됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 디자이너](../../../process-automation/workflow/designing-and-managing-workflows/workflow-designer.md)
 * [문서 및 미디어 UI 참조](../documents-and-media-ui-reference.md)

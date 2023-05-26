@@ -16,7 +16,7 @@
 
 자산 라이브러리를 사용하여 콘텐츠 협업을 개선하고 자산 구성을 간소화하며 인스턴스 전체에서 콘텐츠 중복을 줄입니다. 자산 라이브러리를 시작하려면 [자산 라이브러리 생성 및 관리](./creating-and-managing-asset-libraries.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [자산 라이브러리 생성 및 관리](./creating-and-managing-asset-libraries.md)
 * [자산 라이브러리 콘텐츠](./asset-library-content.md)

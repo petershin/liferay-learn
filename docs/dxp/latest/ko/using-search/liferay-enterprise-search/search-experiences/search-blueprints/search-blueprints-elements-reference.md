@@ -316,7 +316,7 @@ Elasticsearch DSL 쿼리 본문을 있는 그대로 요소에 붙여넣습니다
 
 **외부 참조:** [Elasticsearch 다중 일치 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) 설명서를 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 - [검색 Blueprint 생성 및 관리](./creating-and-managing-search-blueprints.md)
 - [검색 경험 개인화](./personalizing-the-search-experience.md)

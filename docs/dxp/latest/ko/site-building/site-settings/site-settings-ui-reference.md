@@ -347,7 +347,7 @@ Liferay DXP를 DocuSign과 통합하여 전자 서명을 관리할 수 있습니
 
 ![하위 사이트가 이 사이트의 콘텐츠를 표시할 수 있는지 여부를 결정할 수 있습니다.](./site-settings-ui-reference/images/18.png)
 
-## 추가 정보
+## 관련 주제
 
 - [페이지 구성 UI 참조](../creating-pages/page-settings/configuring-individual-pages.md)
 - [페이지 세트 구성](../creating-pages/page-settings/configuring-page-sets.md)

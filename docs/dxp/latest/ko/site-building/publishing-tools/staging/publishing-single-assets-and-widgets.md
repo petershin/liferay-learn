@@ -30,7 +30,7 @@
 
 ![위젯의 작업 버튼을 클릭하고 스테이징을 선택합니다.](./publishing-single-assets-and-widgets/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [스테이징 개요](../staging.md)
 * [스테이징 권한 관리](./managing-staging-permissions.md)

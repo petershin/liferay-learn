@@ -99,7 +99,7 @@ framgent의 고급 설정을 구성하려면 페이지에 대한 업데이트 - 
 
 ![컨테이너의 콘텐츠 가시성을 자동으로 설정하여 페이지 로드 성능을 개선합니다.](./advanced-settings-reference/images/06.png)
 
-## 추가 정보
+## 관련 주제
 
 * [일반 설정 참조](./general-settings-reference.md)
 * [조각 사용](../../using-fragments.md)

@@ -134,7 +134,7 @@ Liferay DXP 7.3 및 이전 버전에서는 *상거래 제품 사양 옵션 추�
 | 커머스 모델 추가  | 애플리케이션 관리자에서 브랜드에 모델 항목을 추가하는 기능 |
 | 권한         | 애플리케이션 관리자에서 리소스 권한을 보고 수정하는 기능  |
 
-## 추가 정보
+## 관련 주제
 
 * [제품 개요](../../product-management/creating-and-managing-products/products/products-overview.md)
 * [새 카탈로그 만들기](../../product-management/catalogs/creating-a-new-catalog.md)

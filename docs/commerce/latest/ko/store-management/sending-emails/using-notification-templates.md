@@ -93,7 +93,7 @@ Commerce 2.0 이하에서 이메일 알림을 생성하려면:
 
 알림 템플릿은 이제 주문을 받으면 자동 이메일을 보냅니다. 템플릿을 생성하면 주문할 때마다 알림 대기열에 새 알림이 추가됩니다. 이를 보려면 주문 후 **알림 대기열** 하위 탭을 확인할 수 있습니다. 기본적으로 Liferay 인스턴스는 15분마다 대기열을 확인하여 보내지 않은 알림을 보냅니다. 간격을 변경하는 방법은 [상거래 알림 대기열 구성](./configuring-the-commerce-notification-queue.md)을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [알림 템플릿 변수 참조 가이드](./notification-template-variables-reference-guide.md)
 * [상거래 알림 대기열 구성](./configuring-the-commerce-notification-queue.md)

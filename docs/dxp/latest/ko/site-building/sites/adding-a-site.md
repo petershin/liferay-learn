@@ -34,7 +34,7 @@ Liferay [Organizations](../../users-and-permissions/organizations/understanding-
 
 Liferay [사용자 그룹](../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) 은 여러 조직 및 사이트에 걸쳐 있을 수 있는 사용자 목록입니다. 원하는 경우 사용자 그룹 전용 사이트를 생성하여 각 그룹 구성원의 [개인 사이트](./personal-sites.md) 에 페이지를 추가할 수 있습니다. 자세한 내용은 [사용자 그룹 사이트](../../users-and-permissions/user-groups/user-group-sites.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [사이트 구축 소개](../introduction-to-site-building.md)
 * [사이트 템플렛](./site-templates.md)

@@ -54,7 +54,7 @@ Open Graph `<meta>` 태그는 인증되지 않은 사용자에게만 페이지 �
 <meta property="og:image:alt" content="This is an example." />
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [검색 엔진 최적화](../optimizing-sites.md)
 * [사이트 설정 UI 참조](./site-settings-ui-reference.md)

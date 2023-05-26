@@ -47,7 +47,7 @@
 
 ![Display Availability 토글을 활성화하고 드롭다운에서 예상 가용성을 선택합니다.](./availability-estimates/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [재고 관리](../inventory-management.md)
 * [제품 인벤토리 구성 참조](./product-inventory-configuration-reference-guide.md)

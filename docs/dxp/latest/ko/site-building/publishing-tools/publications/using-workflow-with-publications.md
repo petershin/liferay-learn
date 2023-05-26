@@ -20,7 +20,7 @@
 
 ![동일한 엔터티에 대한 추가 편집은 게시에서 별도의 변경으로 추적됩니다.](./using-workflow-with-publications/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 소개](../../../process-automation/workflow/introduction-to-workflow.md)
 * [출판물 생성 및 관리](./creating-and-managing-publications.md)

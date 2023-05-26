@@ -81,6 +81,6 @@
 
 지금은 답글이 삭제되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [알림 및 요청 관리](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)

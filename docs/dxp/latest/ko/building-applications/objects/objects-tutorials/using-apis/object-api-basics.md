@@ -154,7 +154,7 @@ unzip liferay-v1s4.zip
    :language: bash
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [배치 API 사용](./using-batch-apis.md)
 * [REST API에서 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md)

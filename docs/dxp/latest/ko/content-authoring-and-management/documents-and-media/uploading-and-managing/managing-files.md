@@ -58,7 +58,7 @@
 
 파일 버전에 대한 자세한 내용은 [파일 체크아웃 및 편집](../publishing-and-sharing/managing-document-access/managing-document-changes-with-checkout.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [문서 및 미디어](../../documents-and-media.md)
 * [파일 업로드](./uploading-files.md)

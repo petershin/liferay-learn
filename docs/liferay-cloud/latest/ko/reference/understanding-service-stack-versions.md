@@ -55,7 +55,7 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
 최신 개선 사항에 액세스하려면 서비스 스택을 버전 `4.xx`로 업그레이드하는 것이 좋습니다. 업그레이드 수행 단계는 [Liferay Cloud Stack 업그레이드](./upgrading-your-liferay-cloud-stack.md)_를 참조하십시오.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [버전 4의 Liferay Cloud 프로젝트 변경 사항](./liferay-cloud-project-changes-in-version-4.md)
 * [Liferay 클라우드 스택 업그레이드](./upgrading-your-liferay-cloud-stack.md)

@@ -100,7 +100,7 @@
 
 ![게시된 확인란을 선택 취소하여 상점 첫화면에서 제품을 제거합니다.](./managing-product-status/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [채널을 사용하여 제품 가시성 구성](../store-management/channels/configuring-product-visibility-using-channels.md)
 * [간단한 제품 만들기](../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)

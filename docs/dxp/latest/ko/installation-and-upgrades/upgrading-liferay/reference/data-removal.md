@@ -26,7 +26,7 @@
 
 Liferay는 선택한 데이터를 즉시 제거합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [데이터 정리](./data-cleanup.md)
 * [Docker를 통한 업그레이드](../upgrade-basics/upgrading-via-docker.md)

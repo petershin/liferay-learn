@@ -24,6 +24,6 @@ _Activities 위젯 사용을 시작하려면:
 
 마지막으로 **RSS** 을 클릭하여 사용자 활동을 구독합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [컨택 센터 위젯 사용](./using-the-contacts-center-widget.md)

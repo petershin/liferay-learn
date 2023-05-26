@@ -65,7 +65,7 @@ Liferay DXP는 [JSR 362](https://jcp.org/en/jsr/detail?id=362) 에 지정된 대
 | `창 ID` (문자열)    | `windowId`    | `@WindowId`    | 모두    |
 | `포틀릿 이름` (문자열)  | `portletName` | `@PortletName` | 모두    |
 
-## 추가 정보
+## 관련 주제
 
 [CDI 종속성 주입](../../../core-frameworks/dependency-injection.md)
 

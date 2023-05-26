@@ -49,7 +49,7 @@ CORS는 Cross-Origin Resource Sharing의 약자입니다. Origin은 다른 도�
 
 JAX-RS<!-- future link required --> 개발자는 `@CORS` 주석을 사용하여 배포된 애플리케이션에 대한 정책을 설정할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [라이프레이 확보](../../securing-liferay.md)
 * [보안 웹 서비스 소개](../securing-web-services.md)

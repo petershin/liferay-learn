@@ -46,7 +46,7 @@ Reindex를 실행하여 관련 자산이 필터에 채워졌는지 확인합니�
 
 상거래 제품은 이제 관련 자산으로 사용할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [콘텐츠 관계 정의](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
 * [기본 웹 콘텐츠 기사 추가](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)

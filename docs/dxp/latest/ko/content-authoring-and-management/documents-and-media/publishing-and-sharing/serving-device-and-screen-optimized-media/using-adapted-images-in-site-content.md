@@ -58,6 +58,6 @@ Adaptive Media는 DXP의 [콘텐츠 스테이징](../../../../content-authoring-
 
 Adaptive Media는 준비된 콘텐츠를 내보내거나 가져오는 동안 적응된 이미지를 다시 생성하지 않습니다. 성능을 개선하기 위해 Adaptive Media는 대신 기존의 적응된 이미지를 재사용합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [이미지 해상도 추가](./adding-image-resolutions.md)

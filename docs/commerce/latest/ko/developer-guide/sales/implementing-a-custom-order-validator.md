@@ -193,7 +193,7 @@ this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximu
 
 축하합니다! 이제 `CommerceOrderValidator` 인터페이스를 구현하기 위한 기본 사항을 알고 있으며 Liferay Commerce에 새 주문 유효성 검사기를 추가했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [간단한 제품 만들기](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
 * [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

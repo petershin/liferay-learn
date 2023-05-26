@@ -18,7 +18,7 @@
 
 축하합니다! 구성 요소 목록을 사용하여 설치된 포틀릿, 테마 및 레이아웃 템플릿을 검사하고 관리할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [클러스터된 설치 유지](../../../installation-and-upgrades/maintaining-a-liferay-installation/maintaining-clustered-installations.md)
 * [블랙리스트 앱](./blacklisting-apps.md)

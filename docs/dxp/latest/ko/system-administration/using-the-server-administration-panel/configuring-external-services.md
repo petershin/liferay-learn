@@ -85,7 +85,7 @@ xuggler.enabled=true
 
 응용 프로그램 서버를 다시 시작하여 Xuggler 활성화를 완료합니다.
 
-## 추가 정보
+## 관련 주제
 
 - [문서 및 미디어 미리보기 구성](../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)
 - [오디오 및 비디오 미리보기에 FFmpeg 활성화](../../content-authoring-and-management/documents-and-media/devops/enabling-ffmpeg-for-audio-and-video-previews.md)

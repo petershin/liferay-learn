@@ -34,7 +34,7 @@
 
 ![구성 탭에는 선택한 제품에 대해 사용 가능한 인벤토리 옵션이 표시됩니다.](./product-inventory-configuration-reference-guide/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [재고 부족 사용자 지정 활동 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)
 * [재고 부족 조치](./low-stock-action.md)

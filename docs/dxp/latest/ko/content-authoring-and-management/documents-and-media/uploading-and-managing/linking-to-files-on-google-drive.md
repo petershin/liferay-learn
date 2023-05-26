@@ -24,7 +24,7 @@ Google 드라이브&trade; 의 파일 또는 Google 포토&trade;의 이미지�
 온라인 파일 생성 및 편집을 위해 Google Docs&trade; 을 사용할 수도 있습니다. [Google 드라이브로 문서 생성 및 편집](./creating-documents/creating-and-editing-documents-with-google-drive.md)을 참조하세요.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [Google 드라이브 문서에 대한 링크 활성화](../devops/google-drive-integration/enabling-links-to-google-drive-documents.md)
 * [Google 드라이브로 문서 생성 및 편집](./creating-documents/creating-and-editing-documents-with-google-drive.md)

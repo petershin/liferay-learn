@@ -82,7 +82,7 @@ DXP 업데이트 27/CE GA 27 이전의 Liferay 7.4 버전 설치 [upgraded](../.
 - 페이지에 있던 투표 표시 위젯을 양식 위젯으로 수동으로 교체합니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 - [양식 생성 및 관리](./creating-and-managing-forms.md)
 - [7.4의 유지 관리 모드 및 지원 중단](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)

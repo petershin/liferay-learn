@@ -563,7 +563,7 @@ javac -classpath .:* *.java
    :lines: 4-33
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [게시판 시작하기](../user-guide/getting-started-with-message-boards.md)
 * [메시지 보드 구성 참조](./../user-guide/message-boards-configuration-reference.md)

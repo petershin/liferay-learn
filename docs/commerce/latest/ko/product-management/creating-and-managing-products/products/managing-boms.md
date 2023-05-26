@@ -146,7 +146,7 @@ BOM 위젯에 다이어그램이 표시됩니다.
     * **Name** : 폴더명(자동차부품)
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [제품 변형에 대한 SKU 만들기](./creating-skus-for-product-variants.md)
 * [사이트에 페이지 추가](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)

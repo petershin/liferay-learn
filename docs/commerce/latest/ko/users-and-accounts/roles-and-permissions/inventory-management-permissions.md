@@ -51,7 +51,7 @@ Liferay Commerce를 사용하면 권한을 사용하여 전역 메뉴(![Global M
 | 재고 관리 | 창고에 연결된 인벤토리 엔터티에 액세스하고 수정하는 기능     |
 | 권한    | 창고 및 재고 애플리케이션에서 리소스 권한을 보고 수정하는 기능 |
 
-## 추가 정보
+## 관련 주제
 
 * [재고 관리](../../inventory-management.md)
 * [재고 관리 참조 안내서](../../inventory-management/inventory-management-reference-guide.md)

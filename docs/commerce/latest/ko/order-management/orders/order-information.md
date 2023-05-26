@@ -34,7 +34,7 @@
 
 ![이메일 탭](./order-information/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [주문 워크플로 소개](../order-workflows/introduction-to-order-workflows.md)
 * [주문 메뉴 참조 가이드](./orders-menu-reference-guide.md)

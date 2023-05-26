@@ -144,7 +144,7 @@
 
 최신 [포털 속성 참조](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) 속성 세부 정보 및 예제를 제공합니다. 이제 많은 속성이 [시스템 설정](../../../system-administration/configuring-liferay/system-settings.md)의 UI를 통해 액세스할 수 있는 OSGi 구성으로 대체되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [7.2 주요 변경 사항](../../../liferay-internals/reference/7-3-breaking-changes.md)
 * [7.1 주요 변경 사항](https://help.liferay.com/hc/ko/articles/360017902892-Breaking-Changes)

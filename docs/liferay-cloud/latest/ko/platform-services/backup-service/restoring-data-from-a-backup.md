@@ -88,7 +88,7 @@ Jun 20 14:46:41.795 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeOr
 Jun 20 14:46:41.970 build-39 [backup-57488f8b8-rjq4f] Running Script: SanitizeUsers.sql
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [백업 서비스](./backup-service-overview.md)
 * [백업 다운로드 및 업로드](./downloading-and-uploading-backups.md)

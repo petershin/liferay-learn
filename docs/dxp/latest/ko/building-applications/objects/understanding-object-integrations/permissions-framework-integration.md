@@ -79,7 +79,7 @@
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [개체 통합 이해](../understanding-object-integrations.md)
 * [개체 개요](../../objects.md)

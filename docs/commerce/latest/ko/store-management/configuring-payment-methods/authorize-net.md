@@ -76,7 +76,7 @@ Authorize.net을 결제 수단으로 활성화하려면:
 1. **Authorize.Net** 옆에 있는 **점 3개 아이콘** 클릭한 다음 **활성화** 클릭합니다.
 
 
-## 추가 정보
+## 관련 주제
 
 * [새 통화 추가](../currencies/adding-a-new-currency.md)
 * [Mercanet](./mercanet.md)

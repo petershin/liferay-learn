@@ -119,7 +119,7 @@ Liferay는 통합 알림 도구를 제공하므로 플랫폼 이벤트에 대해
 | 구독 중인 Wiki에 새 Wiki 페이지를 추가합니다 | &#10004; | &#10004; |
 | 구독 중인 Wiki 페이지를 업데이트합니다       | &#10004; | &#10004; |
 
-## 추가 정보
+## 관련 주제
 
 * [메일 구성](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
 * [이메일 설정](../../system-administration/configuring-liferay/virtual-instances/email-settings.md)

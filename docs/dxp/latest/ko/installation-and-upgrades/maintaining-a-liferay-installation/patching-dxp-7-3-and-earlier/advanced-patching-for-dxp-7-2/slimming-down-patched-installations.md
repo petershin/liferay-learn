@@ -55,7 +55,7 @@ DXP를 다시 패치해야 할 경우 분리된 패치 파일을 복원해야 �
 
 이제 DXP 설치가 불필요한 공간을 차지하지 않도록 패치 파일을 저장하는 방법을 알게 되었습니다. 그리고 새 패치를 설치할 수 있도록 패치 파일을 복원하는 방법도 알고 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [패치 설치](../installing-patches-for-dxp-7-3-and-earlier.md)
 * [패치 도구 설치](../../reference/installing-the-patching-tool.md)

@@ -42,7 +42,7 @@ Fragment 코드를 작성할 때 다음 모범 사례를 권장합니다.
 * JavaScript는 쉽게 재사용할 수 없으므로 드물게 사용하십시오. 대신 외부 JavaScript 라이브러리를 참조하십시오.
 * 조각 구성 텍스트 값을 이스케이프합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [조각에 구성 옵션 추가](./adding-configuration-options-to-fragments.md)
 * [조각 편집기 사용](./using-the-fragments-editor.md)

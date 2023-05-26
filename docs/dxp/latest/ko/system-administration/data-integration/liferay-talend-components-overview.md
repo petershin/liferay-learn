@@ -20,7 +20,7 @@ Liferay의 Talend 구성 요소는 즉시 사용 가능한 Headless API와 REST 
 
 이러한 구성 요소를 사용하여 Talend Open Studio에서 복잡한 데이터 흐름 관리 프로세스를 만들고 실행할 수 있습니다. 자세한 설치 지침은 [Liferay Talend 구성 요소 설치](./installing-liferay-talend-components.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay Talend 구성 요소 설치](./installing-liferay-talend-components.md)
 * [Liferay Talend 구성 요소를 사용하여 Talend 작업 설계](./designing-talend-jobs-using-liferay-talend-components.md)

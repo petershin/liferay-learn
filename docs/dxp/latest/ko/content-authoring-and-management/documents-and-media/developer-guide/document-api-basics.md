@@ -427,7 +427,7 @@ Documents and Media에서 `Document`이 제거됩니다.
 
 [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) 및 [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) Java 인터페이스도 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [문서 및 미디어](../../documents-and-media.md)
 * [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

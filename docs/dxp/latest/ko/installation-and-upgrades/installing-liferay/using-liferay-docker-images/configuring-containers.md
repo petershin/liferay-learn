@@ -287,7 +287,7 @@ docker cp [config file] [container]:/opt/liferay/osgi/configs
 
 이제 Liferay 컨테이너의 JVM 옵션, 포털 속성, 이미지 Env 변수, 시스템 속성 및 시스템 설정을 구성하는 방법을 알았습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay Docker 이미지 사용](../using-liferay-docker-images.md)
 * [컨테이너 수명 주기 및 API](./container-lifecycle-and-api.md)

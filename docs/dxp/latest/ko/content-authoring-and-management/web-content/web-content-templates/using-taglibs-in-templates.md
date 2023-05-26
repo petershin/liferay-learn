@@ -22,6 +22,6 @@ FreeMarker에 대한 `utilLocator`, `objectUtil` 및 `staticUtil` 변수는 기�
 
 템플릿을 저장하면 DXP가 WebDAV URL과 정적 URL을 제공합니다. 이러한 값은 구조의 XML 소스에 액세스합니다. 저장한 후 템플릿으로 돌아가서 **세부 정보** 섹션을 펼치면 이러한 URL을 찾을 수 있습니다. WebDAV 및 WebDAV URL 사용에 대한 자세한 내용은 [WebDAV 액세스](../../documents-and-media/publishing-and-sharing/accessing-documents-with-webdav.md) 섹션을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [템플릿에 위젯 포함](./embedding-widgets-in-templates.md)

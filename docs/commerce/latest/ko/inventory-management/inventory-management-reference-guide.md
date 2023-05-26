@@ -68,7 +68,7 @@ On Order 탭에는 이 SKU를 주문한 계정 목록이 표시됩니다. 이 �
 
 인벤토리 설정은 제어판에 있습니다. 액세스하려면 **제어판** &rarr; **상거래** &rarr; **재고** 로 이동하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [제품 변형에 대한 SKU 만들기](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md)
 * [재고 부족 조치](./low-stock-action.md)

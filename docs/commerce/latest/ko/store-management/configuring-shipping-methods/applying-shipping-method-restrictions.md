@@ -16,7 +16,7 @@
 
 귀하의 상점은 이제 해당 국가로의 배송이 제한됩니다. **가변 요율** 및 **FedEx** 과 같은 다른 모든 배송 방법에 대해 이 단계를 반복합니다. 확장 지점을 통해 추가 운송업체 배송 방법(UPS, DHL 등)을 추가하여 Liferay Commerce를 사용자 지정하는 경우 동일한 기능을 포함하여 지역별로 배송을 제한할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [고정 요금 배송 방법 사용](./using-the-flat-rate-shipping-method.md)
 * [변동 환율](./using-the-variable-rate-shipping-method.md)

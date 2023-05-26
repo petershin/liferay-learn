@@ -13,7 +13,7 @@ Liferay DXP/Portal 7.4에서 Liferay 모듈 언어 키가 Liferay Portal 언어 
 
 모듈을 배포할 준비가 되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [전역 언어 번역 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)
 * [이름이 변경된 언어 키](../reference/renamed-language-keys.md)

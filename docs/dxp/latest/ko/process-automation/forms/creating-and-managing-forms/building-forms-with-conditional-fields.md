@@ -51,7 +51,7 @@
 
 자세한 내용은 [계산 규칙 사용](../form-rules/using-the-calculate-rule.md) 기사를 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [양식 만들기](./creating-forms.md)
 * [양식 필드 유형 참조](./forms-field-types-reference.md)

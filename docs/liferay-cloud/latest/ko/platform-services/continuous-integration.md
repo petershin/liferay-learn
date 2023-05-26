@@ -129,7 +129,7 @@ util.sendSlackMessage("About to create Liferay Cloud build...")
 `LCP_CI_USE_DEFAULT_JENKINSFILE` | `거짓` | Default Jenkinsfile |
 `LCP_DATABASE_SERVICE` | | 데이터베이스 서비스의 호스트 이름입니다. |
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 클라우드 서비스에 로그인](../getting-started/logging-into-your-liferay-cloud-services.md)
 * [GitLab 리포지토리 구성](../getting-started/configuring-your-gitlab-repository.md)

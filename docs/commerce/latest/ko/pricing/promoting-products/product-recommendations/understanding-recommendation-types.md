@@ -56,6 +56,6 @@
 
 !["또한 구매한" 제품 권장 사항을 보려면 빈번한 패턴 권장 사항으로 설정된 데이터 소스와 함께 제품 게시자 위젯을 사용하십시오.](./understanding-recommendation-types/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [제품 추천 사용](./using-product-recommendations.md)

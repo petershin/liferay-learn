@@ -54,7 +54,7 @@
 
 * **추천 이미지** : URL을 통해 또는 장치에서 템플릿의 추천 이미지를 선택합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [구조 만들기](../web-content-structures/creating-structures.md)
 * [기본 웹 콘텐츠 기사 추가](../web-content-articles/adding-a-basic-web-content-article.md)

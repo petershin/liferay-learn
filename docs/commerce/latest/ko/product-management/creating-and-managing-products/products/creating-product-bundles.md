@@ -78,6 +78,6 @@ Liferay Commerce는 [제품 옵션](./using-product-options.md)을 사용하여 
 
 ![고객은 제품 표시 페이지의 제품 번들 옵션에서 선택할 수 있습니다.](./creating-product-bundles/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [제품 옵션 사용](./using-product-options.md)

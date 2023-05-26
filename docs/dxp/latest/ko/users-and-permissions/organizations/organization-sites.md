@@ -24,7 +24,7 @@ Liferay [Organizations](./understanding-organizations.md) 은 분산 사용자 �
 
 조직 사이트를 만들 때 조직의 사용자는 해당 조직 역할에 해당하는 암시적 사이트 역할과 함께 자동으로 사이트에 할당됩니다. 예를 들어 조직 사용자는 기본 사이트 권한을 소유한 사이트 구성원과 기능적으로 동일하며 조직 관리자는 사이트 관리자 역할을 하며 사이트 페이지, 위젯 및 콘텐츠를 관리할 수 있습니다. 자세한 내용은 [조직 역할](./organization-roles.md) 및 [기본 역할 참조](../roles-and-permissions/default-roles-reference.md#organization-roles) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [조직 이해](./understanding-organizations.md)
 * [조직 생성 및 관리](./creating-and-managing-organizations.md)

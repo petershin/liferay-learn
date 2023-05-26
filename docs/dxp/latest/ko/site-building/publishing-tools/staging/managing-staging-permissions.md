@@ -60,7 +60,7 @@
 
    ![확인란을 사용하여 선택한 변형에 대한 사용자 권한을 구성합니다.](./managing-staging-permissions/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [스테이징 개요](../staging.md)
 * [페이지 버전 관리](./page-versioning.md)

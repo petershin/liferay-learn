@@ -34,7 +34,7 @@
 
 ![두 필드를 곱하여 등록 합계를 계산합니다.](./using-the-calculate-rule/images/02.png)
 
-## 추가 정보
+## 관련 주제
 
 * [양식 만들기](../creating-and-managing-forms/creating-forms.md)
 * [양식 규칙 개요](./form-rules-overview.md)

@@ -64,7 +64,7 @@ Adaptive Media에서 필요한 모든 이미지를 생성하지 않은 경우(�
 
 휴지통에서 원본 이미지를 복원하면 수정된 이미지에 다시 액세스할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [이미지 해상도 추가](./adding-image-resolutions.md)
 * [적응형 미디어 구성 참조](./adaptive-media-configuration-reference.md)

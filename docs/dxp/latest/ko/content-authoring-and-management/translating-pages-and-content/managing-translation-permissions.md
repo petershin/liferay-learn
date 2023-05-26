@@ -36,7 +36,7 @@
 
 구성된 역할을 가진 사용자는 이제 웹 콘텐츠 및 콘텐츠 페이지 경험을 지정된 언어로 수동으로 번역할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [콘텐츠 페이지 번역](./translating-content-pages.md)
 * [웹 콘텐츠 번역](./translating-web-content.md)

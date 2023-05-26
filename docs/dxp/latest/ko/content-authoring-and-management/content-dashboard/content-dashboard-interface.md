@@ -184,7 +184,7 @@
 
 ![콘텐츠 대시보드 항목의 버전 기록을 보려면 버전 탭을 클릭합니다.](./content-dashboard-interface/images/11.png)
 
-## 추가 정보
+## 관련 주제
 
 * [콘텐츠 대시보드 정보](./about-the-content-dashboard.md)
 * [콘텐츠 성능 도구 정보](../page-performance-and-accessibility/about-the-content-performance-tool.md)

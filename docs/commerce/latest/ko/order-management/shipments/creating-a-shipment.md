@@ -87,7 +87,7 @@
 
 ![배송된 품목](./creating-a-shipment/images/06.png)
 
-## 추가 정보
+## 관련 주제
 
 * [창고 설정](../../inventory-management/setting-up-warehouses.md)
 * [창고별 재고 설정](../../inventory-management/setting-inventory-by-warehouse.md)

@@ -68,7 +68,7 @@ Google 드라이브 파일에 대한 문서 및 미디어 바로가기를 만들
 
 일단 게시되면 문서 및 미디어 애플리케이션을 통해 Liferay에서 Google 드라이브 파일에 액세스하고 사용할 수 있습니다. 자세한 내용은 [Google 드라이브의 파일에 연결](../../uploading-and-managing/linking-to-files-on-google-drive.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Google 드라이브로 문서 생성 및 편집 활성화](./enabling-document-creation-and-editing-with-google-drive.md)
 * [Google 드라이브의 파일에 연결](../../uploading-and-managing/linking-to-files-on-google-drive.md)

@@ -55,6 +55,6 @@
 
 ![여러 알림 상태 관리](./managing-notifications-and-requests/images/06.png)
 
-## 추가 정보
+## 관련 주제
 
 * [사용자 언급](./mentioning-users.md)

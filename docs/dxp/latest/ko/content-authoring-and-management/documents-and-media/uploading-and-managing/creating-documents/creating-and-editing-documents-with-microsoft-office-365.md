@@ -65,7 +65,7 @@ Office 365&trade;에서 문서 및 미디어 파일을 편집하려면 다음 �
 
     ![문서를 수정하려면 파일의 작업 메뉴에서 Office 365에서 편집을 선택합니다.](./creating-and-editing-documents-with-microsoft-office-365/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [Microsoft Office 365로 문서 생성 및 편집 활성화](../../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
 * [Google 드라이브로 문서 생성 및 편집](./creating-and-editing-documents-with-google-drive.md)

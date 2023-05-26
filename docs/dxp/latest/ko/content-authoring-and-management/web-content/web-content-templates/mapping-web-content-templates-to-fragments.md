@@ -35,7 +35,7 @@
 
 1. **게시** 을 클릭하여 변경 사항을 저장합니다.
 
-## 추가 정보
+## 관련 주제
 
 - [조각 사용](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)
 - [웹 콘텐츠 구조 이해](../../../content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures.md)

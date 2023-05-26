@@ -51,7 +51,7 @@ DXP는 다음에 시작할 때 메일 세션에 연결합니다.
 다음 속성을 [portal-ext.properties](../../reference/portal-properties.md)으로 설정하고 서버를 다시 시작하면 제어판에서 `mail.session.jndi.name=mail/ 값을 설정하는 것과 동일한 효과가 있습니다. 메일세션`
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [Tomcat 관리 메일 세션 구성](../../installing-liferay/installing-liferay-on-an-application-server/installing-on-tomcat.md#mail-configuration)
 * [WebSphere 관리 메일 세션 구성](../../installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md#mail-configuration)

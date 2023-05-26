@@ -15,7 +15,7 @@ Liferay Commerce를 사용하면 카탈로그, 가격표 및 채널에서 서로
 ```
 <!-- Update article once \[COMMERCE-5171\](https://issues.liferay.com/browse/COMMERCE-5171) is implemented. It removes Catalog Currency and uses the Base Price List currency alone as currency basis. -->
 
-## 추가 정보
+## 관련 주제
 
 * [새 통화 추가](./adding-a-new-currency.md)
 * [환율 관리](./managing-exchange-rates.md)

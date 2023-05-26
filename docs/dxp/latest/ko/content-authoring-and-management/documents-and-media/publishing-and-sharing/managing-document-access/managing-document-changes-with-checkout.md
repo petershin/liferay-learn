@@ -41,7 +41,7 @@
 
 WebDAV를 사용하여 파일을 관리하고 버전 기록을 계속 추적할 수 있습니다. 자세한 내용은 [WebDAV로 문서 액세스](../accessing-documents-with-webdav.md)참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [허가 및 문서](./permissions-and-documents.md)
 * [다른 사용자와 문서 공유](./sharing-documents-with-other-users.md)

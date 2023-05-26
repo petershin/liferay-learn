@@ -50,7 +50,7 @@
 
 ![폴더 권한을 구성합니다.](./using-folders/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [문서 및 미디어에 워크플로 사용](../publishing-and-sharing/using-workflow-with-documents-and-media.md)
 * [파일 업로드](./uploading-files.md)

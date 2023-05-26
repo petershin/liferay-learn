@@ -4,7 +4,7 @@
 
 ![제품 비교](./compare/images/01.png)
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 참조 가이드](../liferay-commerce-widgets/widget-reference.md)
 * [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)

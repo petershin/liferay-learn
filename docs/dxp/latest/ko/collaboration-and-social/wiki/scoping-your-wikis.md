@@ -78,6 +78,6 @@
 
 ![새 페이지 범위 위키 선택](./scoping-your-wikis/images/09.png)
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 범위](https://help.liferay.com/hc/articles/360028819992-Widget-Scope)

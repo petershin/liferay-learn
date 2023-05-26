@@ -47,7 +47,7 @@ Liferay와 Google 드라이브의 통합을 활성화하려면 다음 단계를 
 이 기능을 비활성화하려면 Google 드라이브의 *작업* 버튼을 클릭하고 *기본값 재설정*을 선택하세요.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [Google 드라이브 문서에 대한 링크 활성화](./enabling-links-to-google-drive-documents.md)
 * [Google 드라이브로 문서 생성 및 편집](../../uploading-and-managing/creating-documents/creating-and-editing-documents-with-google-drive.md)

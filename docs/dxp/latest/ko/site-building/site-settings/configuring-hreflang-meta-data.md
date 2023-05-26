@@ -64,7 +64,7 @@ Liferay 인스턴스에 대한 hreflang 동작을 구성하려면 다음 단계�
 기본적으로 개별 사이트 설정은 [사이트 범위 인스턴스 설정](#instance-site-scope-settings) 에서 상속됩니다. 그러나 개별 사이트 구성은 이 동작을 재정의합니다. 기본 동작을 복원하고 두 메뉴 간의 변경 사항을 동기화하려면 개별 사이트의 설정을 기본값으로 복원해야 합니다. 
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [사이트 현지화](./site-localization.md)
 * [번역 내보내기 및 가져오기](../../content-authoring-and-management/translating-pages-and-content.md)

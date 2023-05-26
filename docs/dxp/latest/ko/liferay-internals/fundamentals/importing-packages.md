@@ -81,7 +81,7 @@ WAR 프로젝트는 Bnd를 사용하지 않으며 `WEB-INF/liferay-plugin-packag
 
 축하합니다! 이제 모듈에서 사용할 모든 종류의 패키지를 가져올 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [종속성 구성](./configuring-dependencies.md)
 * [블레이드 CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)

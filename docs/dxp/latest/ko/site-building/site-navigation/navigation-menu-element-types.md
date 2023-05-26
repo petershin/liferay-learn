@@ -60,7 +60,7 @@ GA4보다 이전 버전의 Liferay Portal 7.4에는 메뉴에 추가된 디스�
 
 Liferay 7.4 GA5+ 및 U1+에서 디스플레이 페이지 유형은 디스플레이 페이지: [블로그 항목](#blogs-entries) , [웹 콘텐츠 기사](#web-content-articles) , [문서](#documents) 및 [범주](#categories) 을 사용하는 콘텐츠 유형으로 대체됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [탐색 메뉴 애플리케이션 사용](./using-the-navigation-menus-application.md)
 * [디스플레이 페이지로 콘텐츠 게시](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)

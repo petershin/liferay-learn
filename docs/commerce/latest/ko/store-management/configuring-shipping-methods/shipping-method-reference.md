@@ -14,7 +14,7 @@
 
 **가변 요금** : 이 배송 방법은 무게, 제품 가격 또는 결정한 기타 요인에 따라 각 주문에 대한 고유 요금을 계산하는 공식을 사용합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [배송 방법 제한 적용](./applying-shipping-method-restrictions.md)
 * [측정 단위](./measurement-units.md)

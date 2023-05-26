@@ -162,7 +162,7 @@ staging.remote.transfer.buffer.size
 
 1. 스테이징 구성에 대해 **없음** 선택하고 **저장** 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [스테이징 개요](../staging.md)
 * [사이트 준비 UI 참조](./site-staging-ui-reference.md)

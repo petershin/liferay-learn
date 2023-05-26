@@ -52,7 +52,7 @@ WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("expired
 
 **태스크** 노드는 모든 작업이 수행되는 사이트를 나타냅니다. [작업 노드를 사용하여 워크플로 작업 만들기](./creating-workflow-tasks.md) 및 [](./assigning-task-nodes.md)을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 작업 만들기](./creating-workflow-tasks.md)
 * [작업 노드 사용](./assigning-task-nodes.md)

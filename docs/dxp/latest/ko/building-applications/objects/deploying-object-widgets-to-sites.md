@@ -42,7 +42,7 @@
 
 사용 가능한 옵션은 위젯이 [콘텐츠 페이지](../../site-building/creating-pages/using-content-pages/using-widgets-on-a-content-page.md) 또는 [위젯 페이지](../../site-building/creating-pages/using-widget-pages.md)에 배포되었는지 여부에 따라 다릅니다.
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](./creating-and-managing-objects/creating-objects.md)
 * [개체 항목 표시](./displaying-object-entries.md)

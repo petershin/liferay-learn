@@ -62,7 +62,7 @@ ode_name]SSL configuration [xpack.security.transport.ssl.] relies upon fallback 
 
 이러한 경고는 기능적 문제를 나타내지 않으며 비활성화할 수 있습니다(방법을 알아보려면 [Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/logging.html#deprecation-logging) 참조).
 
-## 추가 정보
+## 관련 주제
 
 * [Elasticsearch에 연결](../connecting-to-elasticsearch.md)
 * [Elasticsearch 설치 문제 해결](../troubleshooting-elasticsearch-installation.md)

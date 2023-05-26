@@ -20,7 +20,7 @@ DXP는 이제 DBStore에 파일을 저장하고 있습니다.
 [업로드된 파일에 대한 바이러스 백신 검사 활성화](../enabling-antivirus-scanning-for-uploaded-files.md)를 고려하십시오.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [파일 스토리지](../../file-storage.md)
 * [파일 저장소 마이그레이션](../file-store-migration.md)

@@ -149,7 +149,7 @@ API와 Impl 모듈은 각각 `Greeter` 서비스를 정의하고 제공했습니
 
 이제 인접 프로젝트의 OSGi 서비스 사용에 익숙해졌으므로 외부 아티팩트의 OSGi 서비스 사용을 탐색할 수 있습니다. [종속성 구성](./configuring-dependencies.md) 은 모듈을 찾고 종속성으로 구성하는 방법을 보여줍니다.
 
-## 추가 정보
+## 관련 주제
 
 * [패키지 가져오기](./importing-packages.md)
 * [패키지 내보내기](./exporting-packages.md)

@@ -127,7 +127,7 @@ Geolocation은 자산이 메타데이터로 생성된 지리적 좌표를 자산
 
 ![자산 게시자는 사이트 정보가 있는 자산을 지도에 표시할 수 있습니다.](./geolocating-assets/images/14.png)
 
-## 추가 정보
+## 관련 주제
 
 * [자산 자동 태그 지정 구성](./auto-tagging/configuring-asset-auto-tagging.md)
 * [콘텐츠 태깅 및 태그 관리](./tagging-content-and-managing-tags.md)

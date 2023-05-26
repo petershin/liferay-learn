@@ -24,6 +24,6 @@ include-and-override=portal-developer.properties
 | module.framework.properties.osgi.console=localhost:11311      | 디버깅 모듈에 대한 콘솔 액세스를 활성화합니다.                                                                                                                                                |
 | work.dir.override.enabled=true                                | Liferay 작업 디렉토리를 사용하여 배포된 OSGi 번들 내에서 JSP 파일을 재정의할 수 있습니다.                                                                                                                |
 
-## 추가 정보
+## 관련 주제
 
 * [문맥 재산](../../installation-and-upgrades/reference/portal-properties.md)

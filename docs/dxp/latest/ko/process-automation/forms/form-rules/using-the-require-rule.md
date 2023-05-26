@@ -28,7 +28,7 @@
 
 1. 완료되면 **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [양식 만들기](../creating-and-managing-forms/creating-forms.md)
 * [숨기기 표시 규칙 사용](./using-the-show-hide-rule.md)

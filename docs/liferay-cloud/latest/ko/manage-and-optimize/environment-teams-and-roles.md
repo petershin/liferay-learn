@@ -70,7 +70,7 @@
 | 수동으로 축소           | &#10004; | &#10004; |    엑스    |   엑스   |
 | VPN 설정 변경         | &#10004; | &#10004; | &#10004; |   엑스   |
 
-## 추가 정보
+## 관련 주제
 
 * [초기 설정 개요](../getting-started/initial-setup-overview.md)
 * [팀 활동](./team-activities.md)

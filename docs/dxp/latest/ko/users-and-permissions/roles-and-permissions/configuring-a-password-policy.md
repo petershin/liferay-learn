@@ -125,6 +125,6 @@ passwords.default.policy.min.symbols=1
 | `passwords.default.policy.reset.ticket.max.age`   | 86400                    | 비밀번호 재설정 링크의 유효 기간입니다. 시간은 초 단위입니다                                 |
 | `passwords.default.policy.warning.time`           | 86400                    | 비밀번호가 만료되기 전까지 사용자에게 알림이 전송되는 시간입니다. 시간은 초 단위입니다                   |
 
-## 추가 정보
+## 관련 주제
 
 * [인증 기본 사항](../../installation-and-upgrades/securing-liferay/authentication-basics.md)

@@ -18,7 +18,7 @@ Adaptive Media를 사용하려면 먼저 사용자의 장치에 전달되는 이
 
 최신 DXP 버전으로 업그레이드했고 Adaptive Media를 지원하지 않는 레거시 버전을 사용하고 있었다면 기존 문서 및 미디어 썸네일을 새로운 Adaptive Media 정의 이미지 해상도로 마이그레이션할 수 있습니다. [문서 및 미디어 축소판 마이그레이션](./migrating-documents-and-media-thumbnails.md)을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [적응형 미디어 구성 참조](./adaptive-media-configuration-reference.md)
 * [적응형 미디어 모듈 참조](../../developer-guide/adaptive-media-modules-reference.md)

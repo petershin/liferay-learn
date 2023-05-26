@@ -44,6 +44,6 @@ For users interested in adding other shipping methods or carriers, see [Implemen
 
 <br></br>
 
-## 추가 정보
+## 관련 주제
 
 * [선적 소개](../order-management/shipments/introduction-to-shipments.md)

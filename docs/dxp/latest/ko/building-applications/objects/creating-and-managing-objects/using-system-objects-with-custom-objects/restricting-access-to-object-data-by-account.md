@@ -119,7 +119,7 @@
 | 클레임 > 클레임: 보기       | 개체 항목을 봅니다.                                                                     |
 | 클레임 > 클레임: 개체 항목 추가 | 개체 항목을 만듭니다.                                                                    |
 
-## 추가 정보
+## 관련 주제
 
 * [계정](../../../../users-and-permissions/accounts.md)
 * [시스템 개체 확장](../extending-system-objects.md)

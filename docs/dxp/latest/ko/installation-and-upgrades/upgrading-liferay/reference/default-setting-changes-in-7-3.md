@@ -86,7 +86,7 @@
 | 조회수.활성화                                                                                  | **NA** | 여실한. [7.3 주요 변경 사항](https://learn.liferay.com/dxp/latest/ko/liferay-internals/reference/7-3-breaking-changes.html#replaced-portal-properties-view-count-enabled-and-buffered-increment-enabled) 참조하십시오. |
 | work.dir.override.enabled                                                                | **NA** | 틀린. [작업 디렉토리](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Work%20Directory) 참조하십시오.                                                                         |
 
-## 추가 정보
+## 관련 주제
 
 * [7.2의 기본 설정 변경 사항](default-setting-changes-in-7-2.md)
 * [7.3 주요 변경 사항](../../../liferay-internals/reference/7-3-breaking-changes.md)

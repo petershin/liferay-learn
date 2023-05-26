@@ -57,7 +57,7 @@
 
 스테이징을 위해 JVM/네트워크는 최소 4GB 메모리와 20MB/s 전송 속도(디스크)로 구성되어야 합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [로컬 라이브 스테이징 구성](./configuring-local-live-staging.md)
 * [원격 라이브 스테이징 구성](./configuring-remote-live-staging.md)

@@ -418,7 +418,7 @@ CA 인증서(공용 키)가 노드 인증서에 없는 경우에도 이러한 �
 
     `keytool -importcert -keystore elastic-nodes.p12 -trustcacerts -storepass liferay -file ca.crt`
 
-## 추가 정보
+## 관련 주제
 
 * [Elasticsearch에 연결](../connecting-to-elasticsearch.md)
 * [Elasticsearch 설치 문제 해결](../troubleshooting-elasticsearch-installation.md)

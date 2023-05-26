@@ -30,6 +30,6 @@
 }
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [배포 유형 이해](./understanding-deployment-types.md)

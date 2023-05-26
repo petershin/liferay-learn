@@ -68,7 +68,7 @@
 
 ![사용자 정의 흐름을 설정하면 각 상태에 대해 사용 가능한 전환이 결정됩니다.](./adding-and-managing-custom-states/images/07.png)
 
-## 추가 정보
+## 관련 주제
 
 * [선택목록](../../picklists.md)
 * [분야](../fields.md)

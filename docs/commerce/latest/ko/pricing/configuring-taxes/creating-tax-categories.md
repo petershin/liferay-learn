@@ -57,7 +57,7 @@ Liferay Commerce는 세금 범주를 사용하여 채널 제품 및 배송 비�
 
 이제 상점에서 세금 범주를 사용할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [세금 계산을 위한 세율 설정](./setting-rates-for-tax-calculations.md)
 * [세율 적용](./applying-tax-rates.md)

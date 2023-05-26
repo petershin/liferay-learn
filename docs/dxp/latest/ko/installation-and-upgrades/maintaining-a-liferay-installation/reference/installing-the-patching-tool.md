@@ -37,7 +37,7 @@ cd patching-tool
 
 Patching Tool은 DXP 설치와 함께 구성할 준비가 되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [패치 도구 구성](./configuring-the-patching-tool.md)
 * [패치 설치](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)

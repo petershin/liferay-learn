@@ -123,7 +123,7 @@ Liferay DXP 7.4+의 경우 조각 컬렉션을 Liferay UI에서 조각 세트라
 
 엄청난! 이제 로컬에서 조각 세트로 작업하고 사이트를 지정하고 자동 배포를 사용하여 가져오는 방법을 알았습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [프래그먼트에 기본 리소스 포함](./including-default-resources-with-fragments.md)
 * [조각에 구성 옵션 추가](./adding-configuration-options-to-fragments.md)

@@ -83,6 +83,6 @@
 
 범주와 몇 가지 하위 범주를 만든 후에는 만드는 방법을 배울 수 있습니다. [게시판 스레드](./creating-message-boards-threads.md)
 
-## 추가 정보
+## 관련 주제
 
 * [메시지 보드 구성 참조](./message-boards-configuration-reference.md)

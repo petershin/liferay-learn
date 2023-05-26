@@ -93,7 +93,7 @@ Liferay Commerce의 모든 주문에는 [주문 정보](./order-information.md) 
 | 보류 중     | 주문이 접수되었지만 아직 판매자가 [승인](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) 하지 않았습니다.                                                                                             |
 | 승인됨      | 판매자가 주문을 검토하고 [승인](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md) 했으며 이제 주문이 [전송될 수 있습니다](./processing-an-order.md#commerce-20-and-below) . (참고: 이 워크플로 상태는 **전송됨** 탭에도 나타납니다.) |
 
-## 추가 정보
+## 관련 주제
 
 * [주문 워크플로 소개](../order-workflows/introduction-to-order-workflows.md)
 * [주문 워크플로우에서 주문 승인 또는 거부](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)

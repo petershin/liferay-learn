@@ -60,7 +60,7 @@ maintaining-clustered-installations/blue-green-deployments.md
 * `com.liferay.portal.scheduler.multiple`
 * `com.liferay.portal.scheduler.multiple.*`
 
-## 추가 정보
+## 관련 주제
 
 * [롤링 리스타트](./maintaining-clustered-installations/rolling-restarts.md)
 * [청록색 배포](./maintaining-clustered-installations/blue-green-deployments.md)

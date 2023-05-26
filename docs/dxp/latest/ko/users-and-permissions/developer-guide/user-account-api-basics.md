@@ -337,6 +337,6 @@ java -classpath .:* -DuserId=1234 User_DELETE_ById
 
 이제 사용자 Able Goo 및 Baker Goo가 삭제되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 [API 탐색기](../../headless-delivery/consuming-apis/consuming-rest-services.md) 확인하여 모든 사용자 관련 REST 서비스 목록을 확인하십시오.

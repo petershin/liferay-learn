@@ -243,7 +243,7 @@ minimum-number-of-items=Minimum Number of Items
 
 축하해요! 이제 `CommerceDiscountRuleType` 인터페이스를 구현하기 위한 기본 사항을 알고 있으며 Liferay Commerce에 사용자 정의 UI 입력이 있는 새로운 할인 규칙 유형을 추가했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [할인 만들기](../../pricing/promoting-products/creating-a-discount.md)
 * [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

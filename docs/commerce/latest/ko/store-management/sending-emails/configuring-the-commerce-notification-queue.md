@@ -14,6 +14,6 @@
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [알림 템플릿 사용](./using-notification-templates.md)

@@ -42,7 +42,7 @@
 프로모션 가격으로 SKU를 타겟팅하는 또 다른 방법은 *Global Menu*(![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 *Commerce* &rarr; 으로 이동하는 것입니다. *제품*. 제품을 찾아 선택하고 *SKUs* 탭을 클릭합니다. 타겟팅할 SKU를 선택하고 프로모션 가격을 설정합니다. *게시*를 클릭합니다. 이렇게 하면 기본 판촉 목록에서 SKU 가격이 설정됩니다. Liferay DXP 7.4 U42/GA42 이전에는 프로모션 가격을 판매 가격이라고 했습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [프로모션 소개](./introduction-to-promotions.md)
 * [판촉 만들기](./creating-a-promotion.md)

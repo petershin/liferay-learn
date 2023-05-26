@@ -32,7 +32,7 @@
 
 ![사용자는 추가된 필드를 사용하여 항목을 필터링할 수 있습니다.](./adding-filters-to-views/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [전망](../views.md)
 * [개체 보기 디자인](./designing-object-views.md)

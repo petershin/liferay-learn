@@ -40,7 +40,7 @@ DXP 인스턴스는 새로 구성된 파일 저장소에서 마이그레이션�
 시스템 설정에서 새 상점 구성을 저장해야 합니다. 그렇지 않으면 새 저장소를 사용할 수 없으며 다음 예외가 발생합니다. `java.lang.IllegalStateException: Store is not available`
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [파일 스토리지](../file-storage.md)
 * [아마존 S3 스토어](./other-file-store-types/amazon-s3-store.md)

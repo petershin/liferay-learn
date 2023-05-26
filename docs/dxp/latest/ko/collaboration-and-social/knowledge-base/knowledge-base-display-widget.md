@@ -87,7 +87,7 @@ Knowledge Base Display의 내비게이션 메뉴 및 디스플레이 옵션은 �
 
 1. **콘텐츠 루트 접두사** 필드에 접두사를 입력하고 **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [기술 자료 사용](./using-the-knowledge-base.md)
 * [기술 자료 문서 만들기](./creating-knowledge-base-articles.md)

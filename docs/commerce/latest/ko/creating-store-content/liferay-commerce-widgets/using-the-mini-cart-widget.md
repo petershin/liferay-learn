@@ -32,6 +32,6 @@ Mini Cart 위젯은 Minium 및 Speedwell과 같은 액셀러레이터에 있는 
 Mini Cart 위젯은 응용 프로그램 표시 템플릿을 지원하여 코드를 배포하지 않고도 위젯의 모양과 느낌을 변경할 수 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay Commerce 위젯 참조 목록](./widget-reference.md)

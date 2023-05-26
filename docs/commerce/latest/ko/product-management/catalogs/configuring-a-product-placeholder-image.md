@@ -65,6 +65,6 @@ Liferay Commerce 2.0 이하에서는 Liferay Commerce 인스턴스에서 생성�
 
 새 이미지가 전체 인스턴스에 적용되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [새 카탈로그 만들기](./creating-a-new-catalog.md)

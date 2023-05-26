@@ -85,7 +85,7 @@ Liferay에서 문서 유형은 파일을 업로드하고 문서 및 미디어에
 
 ![새 그림 문서 만들기](./defining-document-types/images/13.png)
 
-## 추가 정보
+## 관련 주제
 
 * [문서 및 미디어](../../../documents-and-media.md)
 * [메타데이터 세트 정의](./defining-metadata-sets.md)

@@ -117,7 +117,7 @@ Liferay 7.4부터는 날짜 필드의 고급 구성에 유효성 검사가 포�
 
      ![소수점 필드에 대한 입력 마스크를 만듭니다.](./validating-text-and-numeric-field-entries/images/09.png)
 
-## 추가 정보
+## 관련 주제
 
 * [검증 조건 참조](./validation-conditions-reference.md)
 * [양식 만들기](./creating-forms.md)

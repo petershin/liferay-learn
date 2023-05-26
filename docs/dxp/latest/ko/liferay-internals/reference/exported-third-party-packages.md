@@ -61,7 +61,7 @@ Export-Package:\
 
 이제 Liferay의 내보낸 타사 패키지를 안전하게 활용할 수 있습니다!
 
-## 추가 정보
+## 관련 주제
 
 * [종속성 구성](../fundamentals/configuring-dependencies.md)
 * [WAB에서 제외된 JAR](../../building-applications/reference/jars-excluded-from-wabs.md)

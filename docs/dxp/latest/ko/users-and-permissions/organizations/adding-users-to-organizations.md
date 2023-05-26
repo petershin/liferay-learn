@@ -46,7 +46,7 @@ Liferay [조직](./understanding-organizations.md)을 사용하면 사용자 및
 
 이렇게 하면 선택한 조직에 이미 할당되고 암시적으로 기본 조직 사용자 역할이 부여된 새 포털 사용자가 생성됩니다. 원하는 경우 추가 조직 범위 역할을 할당할 수 있습니다. 자세한 내용은 [조직 역할](./organization-roles.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [조직 이해](./understanding-organizations.md)
 * [조직 생성 및 관리](./creating-and-managing-organizations.md)

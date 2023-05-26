@@ -55,7 +55,7 @@
 
 이제 카탈로그의 권한이 구성되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [채널을 사용하여 제품 가시성 구성](../../store-management/channels/configuring-product-visibility-using-channels.md)

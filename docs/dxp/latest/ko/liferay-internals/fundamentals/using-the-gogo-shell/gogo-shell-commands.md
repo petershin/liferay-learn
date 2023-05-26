@@ -27,7 +27,7 @@ Gogo 셸은 [Felix Gogo 기본 명령](https://felix.apache.org/documentation/su
 | `system:check`                           | `ds:unsatisfied` 및 `dm na` 명령을 실행하여 시스템에서 이상이 있는지 검사합니다.                                                                                                                                                                                                                                                                                                                                      |
 | `uninstall [BUNDLE_ID]`                  | 모듈 프레임워크에서 지정된 번들을 제거합니다. 이것은 Liferay의 모듈 프레임워크에서 지정된 번들을 제거하지 않습니다. Gogo의 `lb` 명령에는 숨겨져 있지만 여전히 존재합니다. 따라서 제거된 번들의 새 버전을 추가해도 다시 설치되지 않습니다. 현재 숨겨진 제거된 버전을 업데이트합니다. Liferay의 모듈 프레임워크에서 번들을 영구적으로 제거하려면 `[Liferay Home]/osgi` 폴더에서 번들을 수동으로 삭제하십시오. `uninstall` 명령에 대한 자세한 내용은 OSGi의 [제거](https://osgi.org/javadoc/r6/core/org/osgi/framework/Bundle.html#uninstall\(\) ) 설명서를 참조하세요. |
 
-## 추가 정보
+## 관련 주제
 
 * [고고 셸 사용](../using-the-gogo-shell.md)
 * [명령줄 고고 셸](./command-line-gogo-shell.md)

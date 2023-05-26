@@ -93,7 +93,7 @@ GMS: address=oz-52865, cluster=liferay-channel-control, physical address=192.168
 
 로드 상태에서 DXP 클러스터를 테스트하고 시스템 최적화를 조사하는 것이 가장 좋습니다. 사이트에서 가장 많이 사용되는 엔티티를 고려하고 캐시 설정을 적절하게 조정하십시오. 캐시 구성에 대한 자세한 내용은 [캐시 구성](https://help.liferay.com/hc/ko/articles/360035581451-Introduction-to-Cache-Configuration) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [TCP를 통한 유니캐스트 구성](./configuring-unicast-over-tcp.md)
 * [고가용성을 위한 클러스터링](../clustering-for-high-availability.md)

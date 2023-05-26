@@ -128,7 +128,7 @@ inside some-pre-configure-script.sh
 
 이제 컨테이너 수명 주기의 모든 부분에서 스크립트를 실행하는 방법을 알게 되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay Docker 이미지 사용](../using-liferay-docker-images.md)
 * [컨테이너 수명 주기 및 API](./container-lifecycle-and-api.md)

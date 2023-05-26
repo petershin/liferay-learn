@@ -72,7 +72,7 @@ Groovy 스크립트 작업은 Groovy 스크립트를 실행합니다. 제공된 
 
 <!--TASK: When Client Extensions documentation is ready, recommend custom object actions instead of groovy scripts due to limitations. -->
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](../creating-objects.md)
 * [개체 작업 정의](./defining-object-actions.md)

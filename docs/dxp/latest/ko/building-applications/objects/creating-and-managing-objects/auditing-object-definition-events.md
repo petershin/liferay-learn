@@ -38,7 +38,7 @@
 
    ![항목 기록을 활성화합니다.](./auditing-object-definition-events/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [객체](../../objects.md)
 * [객체 생성 및 관리](../creating-and-managing-objects.md)

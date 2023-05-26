@@ -118,7 +118,7 @@ Commerce 2.0 또는 2.1을 사용하는 경우 인벤토리 관리 옵션은 제
 
 ![선택한 SKU의 인벤토리와 관련된 다양한 이벤트를 봅니다.](./using-the-inventory-management-system/images/07.png)
 
-## 추가 정보
+## 관련 주제
 
 * [재고 관리 참조 안내서](./inventory-management-reference-guide.md)
 * [창고 참조 가이드](./warehouse-reference-guide.md)

@@ -82,7 +82,7 @@ module.framework.web.generator.generated.wabs.store.dir=${module.framework.base.
 
 엄청난! WAR 플러그인을 WAB로 배포할 수 있으며 WAB 사본을 저장하여 검사하는 방법을 알고 있습니다!
 
-## 추가 정보
+## 관련 주제
 
 * [WAB에서 제외된 JAR](./jars-excluded-from-wabs.md)
 * [타사 라이브러리 패키지 종속성 해결](../../liferay-internals/fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)

@@ -79,7 +79,7 @@ Warnings thrown during upgrade process
 ...
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [업그레이드 기본 사항](../upgrade-basics.md)
 

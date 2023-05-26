@@ -375,7 +375,7 @@ REST API를 사용하여 개체 항목을 추가하고 해당 관계를 관리�
    :language: bash
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [헤드리스 프레임워크 통합](../../understanding-object-integrations/headless-framework-integration.md)
 * [REST API에서 중첩 필드 사용](./using-nested-fields-with-rest-apis.md)

@@ -493,7 +493,7 @@ HTML에서 이 콜렉션을 참조하려면 JSON 구성에서 콜렉션 `이름`
 
 ![색상 팔레트 구성은 색상 선택이 필요할 때 유용합니다.](./fragment-configuration-types-reference/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 - [조각 개발](../../developing-page-fragments/developing-fragments-intro.md)
 - [단편별 태그 참조](./fragment-specific-tags-reference.md)

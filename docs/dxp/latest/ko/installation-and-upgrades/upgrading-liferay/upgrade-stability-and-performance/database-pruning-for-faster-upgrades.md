@@ -135,6 +135,6 @@ imported "LIFERAY"."USER\_" 17.32 MB 62214 rows
 
 제거한 개체와 관련된 모든 문제를 찾아 해결합니다. 개체가 실수로 제거되었거나 다른 콘텐츠에 영향을 미치는 경우 중요한 단계입니다. 문제를 해결할 수 없는 경우 프로덕션 데이터베이스의 새 복사본 정리를 언제든지 다시 시작할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [예: 중간 저널 기사 버전 제거](./example-removing-intermediate-journal-article-versions.md)

@@ -107,7 +107,7 @@
 
 `@Component` 주석에 이어 모듈은 `BaseDispatchTaskExecutor` 추상 클래스를 확장하고 `doExecute` 메서드를 재정의합니다. 이 방법은 `LogFactoryUtil` 을 사용하여 콘솔 로그에 INFO 메시지를 표시합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [작업 스케줄러 프레임워크 이해](./understanding-the-job-scheduler-framework.md)
 * [작업 스케줄러 사용](./using-job-scheduler.md)

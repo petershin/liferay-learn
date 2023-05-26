@@ -67,7 +67,7 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 
 `(3) [liferay-68b8f6b48d-r8r5f-29669, liferay-68b8f6b48d-gzsg4-48301, liferay-68b8f6b48d-hdj9t-17435]` 은 `(3)` 노드가 클러스터의 일부임을 나타냅니다. 노드. 이 목록에는 슬레이브 노드 외에 마스터 노드가 포함됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [자동 크기 조정](../manage-and-optimize/auto-scaling.md)
 * [Liferay DXP 서비스 소개](../using-the-liferay-dxp-service.md)

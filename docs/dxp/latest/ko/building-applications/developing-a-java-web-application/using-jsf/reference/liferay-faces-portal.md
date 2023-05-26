@@ -23,7 +23,7 @@ Liferay Faces Portal에 포함된 일부 기능은 다음과 같습니다.
 
 * 표현 언어: Liferay 관련 정보를 얻기 위한 `liferay` 및 즉시 사용 가능한 Liferay 국제화 메시지와의 통합을 위한 `i18n` 과 같은 일련의 EL 키워드를 추가합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [JSF 포틀릿 애플리케이션 개발 \(도움말 센터\)](https://help.liferay.com/hc/ko/articles/360029069451-Developing-a-JSF-Portlet-Application)
 * [라이프레이 페이스 브리지](./liferay-faces-bridge.md)

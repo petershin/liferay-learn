@@ -22,7 +22,7 @@ Documents and Media는 오디오 및 비디오 파일 미리 보기를 생성하
 
 일단 구성되면 업로드 또는 업데이트 시 오디오 및 비디오 파일에 대한 오디오 및 비디오 미리 보기가 자동으로 생성됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [파일 관리](../uploading-and-managing/managing-files.md)
 * [문서 및 미디어 미리보기 구성](./configuring-documents-and-media-previews.md)

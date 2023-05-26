@@ -138,7 +138,7 @@ SEO 및 Open Graph 설명을 함께 업데이트하는 것이 가장 좋습니�
 
 ![이미지 대체 설명 필드는 디스플레이 페이지의 og:image:alt 속성을 정의합니다.](./configuring-seo-and-open-graph/images/10.png)
 
-## 추가 정보
+## 관련 주제
 
 - [페이지의 친숙한 URL 구성](../../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
 - [오픈 그래프 구성](./../../site-settings/configuring-open-graph.md)

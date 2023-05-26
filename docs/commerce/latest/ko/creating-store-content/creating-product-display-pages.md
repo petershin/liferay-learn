@@ -30,7 +30,7 @@ Liferay Commerce를 사용하면 개별 매장 제품을 사이트 페이지와 
 제품 세부 정보 또는 카테고리 콘텐츠 위젯이 있는 두 개의 레이아웃이 있는 경우 Liferay는 기본적으로 레이아웃 목록에 나열된 첫 번째 레이아웃으로 설정됩니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [상점 만들기](./creating-your-storefront.md)
 * [카탈로그 페이지 생성](./creating-a-catalog-page.md)

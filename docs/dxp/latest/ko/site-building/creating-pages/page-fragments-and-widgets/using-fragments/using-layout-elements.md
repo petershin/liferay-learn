@@ -35,7 +35,7 @@
 
 ![그리드에는 표준 및 고유 구성 옵션이 포함됩니다.](./using-layout-elements/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [기본 조각 참조](./default-fragments-reference.md)
 * [단편 구성 저장](./saving-fragment-compositions.md)

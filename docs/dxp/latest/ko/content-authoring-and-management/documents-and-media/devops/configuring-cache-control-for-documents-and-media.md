@@ -32,7 +32,7 @@ Liferay 시스템 또는 인스턴스에 대한 캐싱을 구성하려면 다음
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [문서 및 미디어에 대한 스토리지 할당량 설정](./setting-storage-quotas-for-documents-and-media.md)
 * [문서 및 미디어 미리보기 구성](./configuring-documents-and-media-previews.md)

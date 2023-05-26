@@ -20,7 +20,7 @@ YUI3을 기반으로 하는 Liferay의 AlloyUI 기술을 활용하려면 JSF 포
 
 보시다시피 Liferay의 AlloyUI 태그를 사용하도록 JSF 애플리케이션을 구성하는 것은 매우 쉽습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [JSF 포틀릿 애플리케이션 개발 \(도움말 센터\)](https://help.liferay.com/hc/ko/articles/360029069451-Developing-a-JSF-Portlet-Application)
 * [라이프레이 페이스 브리지](./liferay-faces-bridge.md)

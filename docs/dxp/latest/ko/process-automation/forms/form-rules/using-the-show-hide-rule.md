@@ -28,7 +28,7 @@
 
 이제 **법적 보호자 이메일 주소** 필드는 사용자가 **18세 이상입니다** 필드에서 **아니요** 을 선택한 경우에만 나타납니다.
 
-## 추가 정보
+## 관련 주제
 
 * [양식 만들기](../creating-and-managing-forms/creating-forms.md)
 * [양식 규칙 개요](./form-rules-overview.md)

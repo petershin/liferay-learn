@@ -47,7 +47,7 @@
 
 이제 패치를 제거하고 되돌려 DXP 설치를 복원하는 방법을 알았습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [패치 설치](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
 * [패치 유형 이해](../patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md)

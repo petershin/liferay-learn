@@ -80,7 +80,7 @@
 기본적으로 정보 템플릿 내보내기에는 위젯 템플릿이 포함됩니다. 그러나 LAR 파일에 포함되는 템플릿을 구성할 수 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 템플릿 만들기](../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md)
 * [웹 콘텐츠 템플릿 만들기](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)

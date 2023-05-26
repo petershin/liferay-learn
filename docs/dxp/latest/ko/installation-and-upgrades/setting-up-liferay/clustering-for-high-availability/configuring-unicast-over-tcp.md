@@ -203,7 +203,7 @@ JGroups는 Rackspace Ping, BPing, File Ping 등을 포함하여 클러스터 구
 
 캐시할 수 있는 엔터티를 추가했거나 시스템의 캐시 구성을 조정하려는 경우 모듈을 사용하여 수행할 수 있습니다. 캐시 구성에 대한 자세한 내용은 [캐시 구성](https://help.liferay.com/hc/ko/articles/360035581451-Introduction-to-Cache-Configuration) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [클러스터 링크 구성](./configuring-cluster-link.md)
 * [고가용성을 위한 클러스터링](../clustering-for-high-availability.md)

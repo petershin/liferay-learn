@@ -42,7 +42,7 @@
 가시성 및 권한은 분류 블록이 표시되는 방식에 영향을 줄 수 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](../creating-objects.md)
 * [개체 레이아웃 디자인](./designing-object-layouts.md)

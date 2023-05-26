@@ -134,7 +134,7 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 항목이 없습
 이러한 작업을 실행하면 리소스를 많이 사용하고 플랫폼 성능이 저하될 수 있습니다. 성능에 미치는 영향을 줄이려면 사용량이 가장 많은 시간에는 실행하지 마십시오.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [라이프레이 마켓플레이스](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)
 * [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)

@@ -143,7 +143,7 @@ proxy.https.password=password
 ./patching-tool.sh test-server install
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [패치 설치](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
 * [패치 도구 설치](./installing-the-patching-tool.md)

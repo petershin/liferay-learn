@@ -39,7 +39,7 @@ JSR 329/378 표준은 `javax.portlet.faces` 네임스페이스가 접두어로 �
 
 Liferay Faces Bridge는 Liferay DXP/Portal용 JSF 개발 프로세스의 필수 부분입니다. 자세한 내용은 [JSF 포틀릿 애플리케이션 개발 \(도움말 센터\)](https://help.liferay.com/hc/ko/articles/360029069451-Developing-a-JSF-Portlet-Application) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 얼굴 합금](./liferay-faces-alloy.md)
 * [Liferay 얼굴 포털](./liferay-faces-portal.md)

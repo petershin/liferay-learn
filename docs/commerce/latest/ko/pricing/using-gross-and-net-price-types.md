@@ -52,7 +52,7 @@ Liferay Commerce를 사용하면 프로모션 및 할인을 계산하기 위해 
 
 단위, 판촉 및 최종 가격이 채널에 표시되면 채널이 총 가격을 표시하도록 구성된 경우 시스템에서 순 및 세금을 추가합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [할인 소개](./promoting-products/introduction-to-discounts.md)
 * [가격표 생성](./creating-a-price-list.md)

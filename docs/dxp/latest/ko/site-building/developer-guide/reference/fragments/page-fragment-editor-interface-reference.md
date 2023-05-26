@@ -43,7 +43,7 @@ DXP 7.3+에서는 페이지 상단 근처의 확인란을 선택하여 조각을
 
 ![조각을 캐싱하여 페이지의 성능을 향상시키려면 캐시 가능 옵션을 선택하십시오.](./page-fragment-editor-interface-reference/images/02.png)
 
-## 추가 정보
+## 관련 주제
 
 - [조각 개발](../../developing-page-fragments/developing-fragments-intro.md)
 - [조각에 구성 옵션 추가](../../developing-page-fragments/adding-configuration-options-to-fragments.md)

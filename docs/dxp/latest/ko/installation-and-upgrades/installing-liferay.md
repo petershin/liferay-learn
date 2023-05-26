@@ -76,7 +76,7 @@ Liferay를 설치한 후 [Liferay](./setting-up-liferay.md) 설정으로 이동�
 * 고가용성
 * 그리고 더
 
-## 추가 정보
+## 관련 주제
 
 * [백업](./maintaining-a-liferay-installation/backing-up.md)
 * [라이프레이 업데이트](./maintaining-a-liferay-installation/updating-liferay.md)

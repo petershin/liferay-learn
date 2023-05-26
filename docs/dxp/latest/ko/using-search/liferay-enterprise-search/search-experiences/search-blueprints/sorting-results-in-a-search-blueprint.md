@@ -147,7 +147,7 @@
 }
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [청사진 구성 참조 검색](search-blueprints-configuration-reference.md)
 * [검색 결과 정렬](../../../search-pages-and-widgets/search-results/sorting-search-results.md)

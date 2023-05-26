@@ -138,6 +138,6 @@
 
 양식은 함께 모여 [`App.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/App.js) 파일과 함께 한 페이지에 표시됩니다.
 
-## 추가 정보
+## 관련 주제
 
 [기본 사용자 정의 요소 생성](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) [헤드리스 프레임워크 통합](../../objects/understanding-object-integrations/headless-framework-integration.md)

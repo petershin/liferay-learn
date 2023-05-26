@@ -34,7 +34,7 @@ easy-oauth-application-user-agent:
 | `resourcePath`                           | 문자열(부분 URL) | (필수) 워크플로 작업 핸들러의 경로입니다. 이 값은 전체 URL에 대한 OAauth2 애플리케이션 프로필의 `homePageURL` 값과 결합됩니다. |
 | `oAuth2ApplicationExternalReferenceCode` | 끈           | (필수) 요청 보안에 필요한 OAuth2 애플리케이션 프로필의 외부 참조 코드입니다.                                      |
 
-## 추가 정보
+## 관련 주제
 
 * [마이크로서비스 클라이언트 확장](../microservice-client-extensions.md)
 * [클라이언트 확장 작업](../working-with-client-extensions.md)

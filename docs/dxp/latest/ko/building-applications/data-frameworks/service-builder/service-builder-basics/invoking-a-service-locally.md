@@ -151,7 +151,7 @@ JSP는 다음 태그 라이브러리의 태그를 사용합니다.
 
 이제 Service Builder 기본 사항을 알았으므로 [엔터티 정의](../defining-entities.md) 를 탐색하여 엔터티 간의 관계를 생성하고, 엔터티를 지역화하고, 쿼리를 지원하는 등의 작업을 수행할 수 있습니다. 또는 [Service Builder를 사용한 비즈니스 로직](../business-logic-with-service-builder.md)에 대해 자세히 알아볼 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [포틀릿](../../../developing-a-java-web-application/reference/portlets.md)
 * [MVC 사용](../../../developing-a-java-web-application/using-mvc.md)

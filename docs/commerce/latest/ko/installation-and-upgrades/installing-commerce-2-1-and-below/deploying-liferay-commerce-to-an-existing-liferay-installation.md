@@ -42,7 +42,7 @@ Liferay Commerce 사용을 시작하려면:
 
 Liferay Commerce가 배포되었으며 사용할 준비가 되었습니다. 스토어 관리자는 스토어프론트 구축 및 카탈로그 채우기를 시작할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 응용 프로그램 서버가 다시 시작되면 Liferay Commerce는 `VerifyProcess` 명령을 두 번 실행하지 않습니다.
 

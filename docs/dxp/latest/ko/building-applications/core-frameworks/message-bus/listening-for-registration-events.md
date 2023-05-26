@@ -172,7 +172,7 @@ Message Bus는 [`MessageListener`](https://github.com/liferay/liferay-portal/blo
 
 이제 이러한 Message Bus 이벤트를 수신하는 방법을 알았 [새](./tuning-messaging-performance.md) 에서 메시지를 수신하거나 새 등록 관련 활동에 대한 응답으로 메시징 환경을 조정할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [메시징 성능 조정](./tuning-messaging-performance.md)
 * [메시지 듣기](./listening-for-messages.md)

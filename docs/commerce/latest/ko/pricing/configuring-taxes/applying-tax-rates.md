@@ -33,7 +33,7 @@
    
    ![해당 채널 주문의 배송비에 사용할 세금 범주를 선택합니다.](./applying-tax-rates/images/02.png)
 
-## 추가 정보
+## 관련 주제
 
 * [세금 범주 생성](./creating-tax-categories.md)
 * [세금 계산을 위한 세율 설정](./setting-rates-for-tax-calculations.md)

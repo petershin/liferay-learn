@@ -30,7 +30,7 @@ Liferay Fragments를 사용할 때 대상 고객의 언어와 일치하도록 �
 <!--TASK: explain.
 ## Localizing Collection Filter Label Text -->
 
-## 추가 정보
+## 관련 주제
 
 - [콘텐츠 페이지 사용](../../../using-content-pages.md)
 - [콘텐츠 페이지 편집기 UI 참조](../../../using-content-pages/content-page-editor-ui-reference.md)

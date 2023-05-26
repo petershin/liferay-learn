@@ -51,7 +51,7 @@ Gogo Shell의 [서비스 구성 요소 런타임 명령](http://felix.apache.org
 
 선언적 서비스 주석을 사용하여 구성 요소 활성화 및 서비스 정책을 지정합니다. Gogo Shell 명령을 사용하여 모듈 및 구성 요소를 제어합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [모듈 프로젝트](../fundamentals/module-projects.md)
 * [Gogo 셸 명령](../fundamentals/using-the-gogo-shell/gogo-shell-commands.md)

@@ -144,7 +144,7 @@ Liferay Cloud 알림은 활성 Liferay 기업 구독이 있는 고객에게만 �
 
 티켓을 제출할 때 현재 사용 중인 빌드 이미지, 직면한 동작 또는 질문, 문제를 재현하는 단계, 실제 동작과 예상 동작에 대한 설명에 대한 정보를 제공하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 클라우드 지원 개요](https://help.liferay.com/hc/ko/articles/360030208451-DXP-Cloud-Support-Overview)
 * [Liferay 클라우드 기술 자료](https://help.liferay.com/hc/ko/categories/360001132872)

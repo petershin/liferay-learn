@@ -140,7 +140,7 @@ j1e4-commerce-low-stock-activity=J1E4 Commerce Low Stock Activity
 
 축하해요! 이제 `CommerceLowStockActivity` 인터페이스를 구현하기 위한 기본 사항을 알고 있으며 Liferay Commerce에 새로운 낮은 재고 활동을 추가했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [간단한 제품 만들기](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
 * [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

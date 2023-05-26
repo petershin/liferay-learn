@@ -64,7 +64,7 @@
 
    ![테스트가 성공했는지 확인합니다.](./using-automate-io-to-sync-object-data-with-google-sheets/images/12.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 개요](../../../objects.md)
 * [객체 생성 및 관리](../../creating-and-managing-objects.md)

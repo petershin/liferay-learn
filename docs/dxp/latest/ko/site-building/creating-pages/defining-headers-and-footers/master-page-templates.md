@@ -12,7 +12,7 @@
 
 ![마스터 페이지 템플릿의 일반적인 사용 사례에는 머리글, 놓기 영역 및 바닥글이 있습니다.](./master-page-templates/images/02.png)
 
-## 추가 정보
+## 관련 주제
 
 - [마스터 페이지 템플릿 만들기](./creating-a-master-page-template.md)
 - [마스터 페이지 템플릿 관리](./managing-master-page-templates.md)

@@ -130,7 +130,7 @@
 
 이제 워크플로 생성 과정을 살펴보고 워크플로 디자이너를 사용하는 방법을 배웠으므로 워크플로 프로세스를 다음 단계로 끌어올릴 수 있는 노드 유형을 추가하는 방법을 살펴보십시오. 예를 들어 [포크 및 조인](./using-forks-and-joins.md) 또는 [조건](./using-condition-nodes.md).
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 활성화](../../using-workflows/activating-workflow.md)
 * [워크플로우 노드](./workflow-nodes.md)

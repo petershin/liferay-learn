@@ -99,6 +99,6 @@ JAR은 `build/libs` 폴더(즉, `g9b6-impl/build/libs/com.acme.G9B6.impl-1.0.0`)
 
 `getDescription()`, `getThumbnailURL()`및 `getTitle()` 는 재정의되지 않았으므로 `null` 이 반환됩니다. 
 
-## 추가 정보
+## 관련 주제
 
 * [외부 비디오 바로 가기 만들기](../videos/creating-external-video-shortcuts.md)

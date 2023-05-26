@@ -30,7 +30,7 @@
 `com.liferay.data.cleanup을 사용하여 서버 시작 시([Liferay Docker 컨테이너](../upgrade-basics/upgrading-via-docker.md) 또는 로컬 시스템에서) 모듈 데이터를 정리할 수도 있습니다. .internal.configuration.DataCleanupConfiguration.config` [구성 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md). 정리 후 `osgi/configs` 폴더에서 구성 파일을 제거하여 후속 서버 시작 시 정리가 다시 실행되지 않도록 합니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [데이터 제거](./data-removal.md)
 * [구성 파일 사용](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)

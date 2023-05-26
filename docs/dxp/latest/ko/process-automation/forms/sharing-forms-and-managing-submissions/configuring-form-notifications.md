@@ -29,7 +29,7 @@
 
 1. **완료** 을 클릭한 다음 대화창을 닫습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로와 함께 양식 사용](./using-forms-with-a-workflow.md)
 * [메일 구성](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)

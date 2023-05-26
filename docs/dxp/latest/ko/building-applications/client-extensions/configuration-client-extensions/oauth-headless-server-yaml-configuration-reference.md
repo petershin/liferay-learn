@@ -25,7 +25,7 @@ yoke-oauth-headless-server:
 | `userAccountEmailAddress` | 끈           | (기본 관리자 사용자의 이메일 주소)                             | 이 OAuth2 애플리케이션 프로필과 연결된 사용자 계정의 이메일 주소입니다. `userAccountScreenName` 속성이 정의되지 않은 경우에만 사용됩니다. |
 | `userAccountScreenName`   | 끈           | (기본 관리자 사용자의 화면 이름)                              | OAuth2 애플리케이션 프로필과 연결된 사용자 계정의 화면 이름입니다. 이는 `userAccountEmailAddress`값을 재정의합니다.             |
 
-## 추가 정보
+## 관련 주제
 
 * [마이크로서비스 클라이언트 확장](../microservice-client-extensions.md)
 * [클라이언트 확장 작업](../working-with-client-extensions.md)

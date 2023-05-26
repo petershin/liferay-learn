@@ -78,7 +78,7 @@
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](../creating-objects.md)
 * [개체 레이아웃 디자인](../layouts/designing-object-layouts.md)

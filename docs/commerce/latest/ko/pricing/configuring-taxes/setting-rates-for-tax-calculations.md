@@ -132,6 +132,6 @@ Liferay Commerce에는 제품 및 배송 비용에 대한 세율을 정의하고
 
 이제 주소별 세율이 구성되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [세금 범주 생성](../configuring-taxes/creating-tax-categories.md)

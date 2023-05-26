@@ -107,6 +107,6 @@ Error: compound selectors may no longer be extended.
 
 <!-- Add Using Blade to Create a Theme section, with a link to Theme Templates documentation when available-->
 
-## 추가 정보
+## 관련 주제
 
 * [사이트 모양 변경](../../../../../getting-started/changing-your-sites-appearance.md)

@@ -259,7 +259,7 @@ Upgrading the liferay service requires a database upgrade and restoring the life
 
 축하합니다! DXP 데이터베이스를 새 버전으로 업그레이드하고 선택한 환경에 배포했습니다. 필요에 따라 동일한 백업을 다른 환경으로 [](#restore-the-backup) 할 수도 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 DXP 업그레이드에 대해 자세히 알아보십시오.
 

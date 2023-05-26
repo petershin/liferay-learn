@@ -584,7 +584,7 @@ cURL 스크립트 매개변수:
 | $2      | `contentStructureId` |
 | $3      | 이미지 `ID`             |
 
-## 추가 정보
+## 관련 주제
 
 - [웹 콘텐츠 API 기본 사항](./web-content-api-basics.md)
 - [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

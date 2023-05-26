@@ -134,7 +134,7 @@ public class HelloWorldPortlet extends MVCPortlet {
 
 모델 계층을 개발할 준비가 되었으면 [서비스 빌더](../data-frameworks/service-builder.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Portlet특혜](./using-mvc/portlet-preferences.md)
 * [MVC 포틀릿에서 지역화된 메시지 사용](./using-mvc/using-localized-messages-in-an-mvc-portlet.md)

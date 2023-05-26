@@ -59,7 +59,7 @@ Liferay Cloud 콘솔은 프로젝트에 변경 사항을 배포하는 기본 방
 
 원하는 경우 프로젝트의 `dev` 환경에 빌드를 자동으로 배포하도록 CI 서비스를 설정할 수 있습니다. 지정된 분기에서 만든 빌드에 대한 자동 배포를 시작하는 CI 서비스에 환경 변수를 추가합니다. 자세한 내용은 [자동 배포 설정](./automatically-deploying-ci-service-builds.md) 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [배포 유형 이해](./understanding-deployment-types.md)
 * [배포 전략 이해](./understanding-deployment-strategies.md)

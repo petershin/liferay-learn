@@ -95,7 +95,7 @@ Microsoft Cognitive Services 공급자가 구성되었습니다. 자세한 내�
 
 둘 이상의 가상 인스턴스가 있는 경우 각 인스턴스를 개별적으로 구성할 수 있습니다. **제어판** &rarr; **인스턴스 설정** 으로 이동합니다. **자산** 을 클릭한 다음 여기에서 공급자를 구성합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [자산 자동 태그 지정 구성](./configuring-asset-auto-tagging.md)
 * [자동 태그 지정 자산](./auto-tagging-assets.md)

@@ -156,7 +156,7 @@
 
 ![정규식을 사용하는 패턴 유효성 검사 규칙을 사용하여 유효한 항목을 정의합니다.](./adding-validation-rules/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [조각 개발](./developing-fragments-intro.md)
 * [조각 편집기 사용](./using-the-fragments-editor.md)

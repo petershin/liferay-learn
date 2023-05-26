@@ -36,7 +36,7 @@ Liferay Commerce는 사이트 유형과 함께 Liferay 사이트를 사용합니
 
 사이트 유형을 변경하면 계정 위젯에 표시되는 계정도 변경됩니다. 인스턴스에 비즈니스 계정이 포함되어 있지만 사이트 유형이 B2C로 설정된 경우 해당 계정은 여전히 데이터베이스에 존재하지만 계정 위젯에 나타나지 않으며 사용자가 액세스할 수 없습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [매장 설정 개요](../starting-a-store/store-setup-overview.md)
 * [사이트 구축](https://learn.liferay.com/dxp/latest/ko/site-building.html)

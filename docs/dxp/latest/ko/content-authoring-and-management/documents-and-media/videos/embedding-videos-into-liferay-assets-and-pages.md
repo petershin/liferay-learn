@@ -48,7 +48,7 @@ Liferay는 비디오를 페이지에 삽입하기 위해 특별히 두 가지 �
 외부 비디오 조각은 자동 재생, 반복 또는 음소거에 대한 비디오 컨트롤을 지원하지 않습니다. 이러한 제어가 필요한 경우 비디오 URL 부분을 사용하십시오.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [외부 비디오 바로 가기 만들기](./creating-external-video-shortcuts.md)
 * [비디오 바로 가기 공급자 생성](../developer-guide/creating-video-shortcut-providers.md)

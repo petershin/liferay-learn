@@ -265,7 +265,7 @@ Bnd는 `bnd.bnd` 파일의 모든 헤더를 전파하고 더 많은 헤더와 �
 모듈 수명 주기에 대한 자세한 내용은 [모듈 수명 주기](../architecture/module-lifecycle.md)를 참조하세요.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [OSGi 서비스로서의 API](./apis-as-osgi-services.md)
 * [OSGi 서비스 사용](./using-an-osgi-service.md)

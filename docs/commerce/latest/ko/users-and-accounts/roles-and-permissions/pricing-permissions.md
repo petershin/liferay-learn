@@ -96,7 +96,7 @@ Liferay Commerce를 사용하면 글로벌 메뉴(![Global Menu](../../images/ic
 | 세금 범주 관리 | 세금 범주 애플리케이션에서 세금 범주 엔터티를 관리하는 기능 |
 | 권한       | 세금 범주 애플리케이션에서 리소스 권한을 보고 수정하는 기능 |
 
-## 추가 정보
+## 관련 주제
 
 * [가격 소개](../../pricing/introduction-to-pricing.md)
 * [할인 소개](../../pricing/promoting-products/introduction-to-discounts.md)

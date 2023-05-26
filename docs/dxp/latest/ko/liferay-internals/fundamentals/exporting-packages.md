@@ -26,7 +26,7 @@ Bnd는 모듈의 내보낸 패키지를 *대체 가능*하게 만듭니다. 즉,
 
 이제 모듈의 멋진 패키지를 공유할 수 있습니다!
 
-## 추가 정보
+## 관련 주제
 
 * [종속성 구성](./configuring-dependencies.md)
 * [시맨틱 버전 관리](./semantic-versioning.md)

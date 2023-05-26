@@ -110,7 +110,7 @@ Liferay DXP에 대한 부 버전 업데이트도 프로젝트 저장소를 변�
 
 업데이트된 `liferay` 서비스는 최종 배포 후 원하는 수의 노드로 백업을 시작합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 서비스에 배포](./deploying-to-the-liferay-service.md)
 * [핫픽스 설치](./deploying-to-the-liferay-service.md#deploying-hotfixes)

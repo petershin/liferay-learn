@@ -47,7 +47,7 @@ Liferay DXP는 WAR을 배포할 때 이를 [WAB](https://docs.osgi.org/specifica
 
 축하합니다! 비 OSGi JAR에서 패키지에 대한 종속성을 해결했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [패키지 가져오기](../importing-packages.md)
 * [패키지 내보내기](../exporting-packages.md)

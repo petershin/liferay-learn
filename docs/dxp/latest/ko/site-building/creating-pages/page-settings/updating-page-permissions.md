@@ -20,7 +20,7 @@
 
 1. **저장** 을 클릭하여 변경 사항을 적용합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [역할 및 권한 이해](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
 * [역할에 사용자 할당](../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md)

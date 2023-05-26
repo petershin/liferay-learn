@@ -44,7 +44,7 @@
 
 ![제어판에서 계정에 사용자 초대](./inviting-users-to-an-account/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [계정 관리](../account-management.md)
 * [새 계정 만들기](./creating-a-new-account.md)

@@ -109,7 +109,7 @@ Fragment를 개발하는 동안 변경 사항은 Fragment가 게시될 때까지
 Liferay DXP 7.2 SP1+ 및 Liferay Portal 7.2 GA2+부터 *글로벌* 사이트에서 페이지 조각을 생성하여 모든 사이트에서 사용할 수 있도록 할 수 있습니다. 이 버전의 초기 릴리스에서 이 기능을 노출하려면 `com.liferay.fragment.web.internal.configuration.FragmentGlobalPanelAppConfiguration.config`라는 `.config` 파일을 만들고 `enabled=B"true"`를 추가해야 합니다. 재산. 그런 다음 Liferay DXP 인스턴스의 `osgi/configs` 폴더에 복사합니다. 글로벌 페이지 조각은 하위 사이트에서 상속되며 글로벌 사이트에서만 편집할 수 있습니다. 글로벌 사이트에서 글로벌 페이지 조각이 참조하는 모든 리소스는 페이지 조각을 활용하는 사이트로 복사됩니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [조각 툴킷 사용](./using-the-fragments-toolkit.md)
 * [조각에 구성 옵션 추가](./adding-configuration-options-to-fragments.md)

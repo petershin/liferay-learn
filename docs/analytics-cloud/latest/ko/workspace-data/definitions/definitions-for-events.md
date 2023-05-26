@@ -66,6 +66,6 @@ Analytics Cloud는 현재 최대 100개의 사용자 지정 이벤트를 지원�
 
 사용자 정의 이벤트를 차단하려면 사용자 정의 이벤트 탭에서 이벤트 옆의 상자를 선택하고 **이벤트 차단** 을 클릭하십시오. 또는 이벤트 이름 오른쪽에 있는 차단 아이콘(![block icon](../../images/icon-block.png))을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [이벤트 분석](../../touchpoints/events/events-analysis.md)

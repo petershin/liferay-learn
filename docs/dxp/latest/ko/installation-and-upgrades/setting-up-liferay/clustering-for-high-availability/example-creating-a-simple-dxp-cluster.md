@@ -297,7 +297,7 @@ DXP 클러스터에 대해 [데이터베이스](./database-configuration-for-clu
 
 자세한 내용은 Env/ [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) 정의를 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [클러스터 노드에 대한 데이터베이스 구성](./database-configuration-for-cluster-nodes.md)
 * [클러스터 링크 구성](./configuring-cluster-link.md)

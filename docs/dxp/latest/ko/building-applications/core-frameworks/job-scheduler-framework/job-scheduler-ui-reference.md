@@ -84,7 +84,7 @@ Job Scheduler 작업에 Talend **Job Archive** `.zip` 파일을 업로드합니�
 | 지금 실행    | 작업을 수동으로 실행하는 버튼                       |
 | 일시중지/재개  | 옵션 **일시 중지** / **재개** 작업 버튼을 통해 액세스할 수 있는 작업 |
 
-## 추가 정보
+## 관련 주제
 
 * [작업 스케줄러 사용](./using-job-scheduler.md)
 * [작업 스케줄러 프레임워크 이해](./understanding-the-job-scheduler-framework.md)

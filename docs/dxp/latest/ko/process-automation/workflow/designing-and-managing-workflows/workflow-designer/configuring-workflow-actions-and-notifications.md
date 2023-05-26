@@ -82,7 +82,7 @@
 
 업데이트 노드에 대한 알림이 추가되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 알림 템플릿 변수](../../developer-guide/workflow-notification-template-variables.md)
 * [워크플로 작업 만들기](./creating-workflow-tasks.md)

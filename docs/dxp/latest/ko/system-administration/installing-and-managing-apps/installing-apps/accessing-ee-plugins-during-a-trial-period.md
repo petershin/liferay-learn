@@ -24,7 +24,7 @@ EE 플러그인 목록이 나타납니다. 평가 기간 동안 이러한 DXP EE
 EE 플러그인 소스 코드는 공식 엔터프라이즈 구독을 얻은 후에만 사용할 수 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [앱 설치](../installing-apps.md)
 * [앱 갱신](../managing-apps/renewing-apps.md)

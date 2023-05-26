@@ -259,7 +259,7 @@ References:   (total 1)
 
    `S1J6CharlieImpl` 과 `S1J6DogImpl` 모두 동일한 순위를 가지므로 먼저 등록된 서비스가 우선 순위를 가지며 `S1J6Portlet`에 바인딩됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [모듈 프로젝트](../fundamentals/module-projects.md)
 * [OSGi 서비스 사용](../fundamentals/using-an-osgi-service.md)

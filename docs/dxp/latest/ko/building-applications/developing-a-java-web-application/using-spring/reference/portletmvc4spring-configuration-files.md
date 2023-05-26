@@ -379,7 +379,7 @@ com.liferay.portal.kernel.servlet.filters.invoker
 
 [`liferay-plugin-package- [버전].dtd` 파일](https://learn.liferay.com/reference/latest/en/dxp/definitions/index.html) 은 `liferay-plugin-package.properties` 파일.
 
-## 추가 정보
+## 관련 주제
 
 * [PortletMVC4Spring 주석](./portletmvc4spring-annotations.md)
 * [PortletMVC4Spring으로 마이그레이션 \(도움말 센터\)](https://help.liferay.com/hc/ko/articles/360030614052-Migrating-to-PortletMVC4Spring)

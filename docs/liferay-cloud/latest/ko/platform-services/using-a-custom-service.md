@@ -83,6 +83,6 @@ Liferay Cloud는 Docker 이미지를 서비스의 기반으로 사용합니다. 
 
 ![다른 서비스와 함께 배포되는 새로운 "customservice".](./using-a-custom-service/images/01.png)
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)

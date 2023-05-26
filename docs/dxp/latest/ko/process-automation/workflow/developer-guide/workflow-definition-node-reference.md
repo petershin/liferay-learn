@@ -224,7 +224,7 @@
 </task>
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [XML 워크플로 정의 만들기](./crafting-xml-workflow-definitions.md)
 * [워크플로 작업 노드 참조](./workflow-task-node-reference.md)

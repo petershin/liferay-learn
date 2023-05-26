@@ -90,7 +90,7 @@
 }
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [개체에 필드 추가](../creating-and-managing-objects/fields/adding-fields-to-objects.md)
 * [선택 목록 권한 관리](./managing-picklist-permissions.md)

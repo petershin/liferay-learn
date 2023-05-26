@@ -117,7 +117,7 @@ Liferay Commerce에서 주문 처리는 주문 수락과 주문 처리의 두 �
 
 자세한 내용은 [Liferay Commerce 2.0 이하](../shipments/creating-a-shipment.md#creating-a-new-shipment-on-liferay-commerce-2-0-and-below) 섹션에서 새 발송물 생성을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [주문 워크플로 소개](../order-workflows/introduction-to-order-workflows.md)
 * [주문 메뉴 참조 가이드](./orders-menu-reference-guide.md)

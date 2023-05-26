@@ -100,7 +100,7 @@ Talend는 맞춤형 데이터 통합 작업을 정의하기 위한 오픈 소스
 
 ![MessageListener 인터페이스를 사용하여 예약된 모든 작업을 봅니다.](./using-job-scheduler/images/07.png)
 
-## 추가 정보
+## 관련 주제
 
 * [작업 스케줄러 UI 참조](./job-scheduler-ui-reference.md)
 * [작업 스케줄러 프레임워크 이해](./understanding-the-job-scheduler-framework.md)

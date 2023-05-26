@@ -166,7 +166,7 @@ File sizes after gzip:
 
 ![H5V7-Custom-Element 위젯을 사이트 페이지에 배포합니다.](./creating-a-basic-custom-element/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [프런트 엔드 클라이언트 확장](../../front-end-client-extensions.md)
 * [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md)

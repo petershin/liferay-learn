@@ -42,7 +42,7 @@
 
 ![카탈로그 및 제품](./creating-a-new-catalog/images/02.png)
 
-## 추가 정보
+## 관련 주제
 
 * [로케일 옵션](../../store-management/locale-options.md)
 * [새 통화 추가](../../store-management/currencies/adding-a-new-currency.md)

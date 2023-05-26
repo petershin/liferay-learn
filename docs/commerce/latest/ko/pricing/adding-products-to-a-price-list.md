@@ -63,7 +63,7 @@
 
 이제 제품(**Premium Brake Fluid**)이 가격표(**VIP Customers**)에 추가되었습니다. 이 가격표 또는 다른 목록에 추가 제품을 추가하려면 단계를 반복하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [가격표 생성](./creating-a-price-list.md)
 * [가격 계층 사용](./using-price-tiers.md)

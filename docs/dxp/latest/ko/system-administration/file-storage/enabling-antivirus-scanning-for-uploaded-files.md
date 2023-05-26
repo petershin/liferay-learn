@@ -56,7 +56,7 @@ Liferay는 [ClamAV Daemon](https://www.clamav.net/documents/scanning#clamd) (Cla
 바이러스에 감염된 파일은 절대 저장하지 마세요. 현재 작업을 취소하여 파일을 거부합니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [파일 스토리지](../file-storage.md)
 * [Liferay 구성](../configuring-liferay.md)

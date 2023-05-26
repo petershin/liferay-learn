@@ -54,7 +54,7 @@ yarn add @liferay/bs3-bs4-compat
 
 이제 부트스트랩 3 호환성 레이어가 테마에 포함되어 있으므로 Liferay DXP 7.4 GA1에서 작동합니다. 다음 작업은 부트스트랩 3에 대한 종속성을 제거할 수 있도록 프로젝트의 코드를 변경하는 것입니다. 
 
-## 추가 정보
+## 관련 주제
 
 * [테마 업그레이드](../../../site-building/site-appearance/themes/upgrading-a-theme.md)
 * [7.4에서 더 이상 사용되지 않는 기능](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4)

@@ -86,7 +86,7 @@
 
 채널이 생성되고 선택한 사이트와 연결됩니다. 이제 제품이 이 새 채널로 필터링되도록 구성할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [채널 소개](./introduction-to-channels.md)
 * [채널을 사용하여 제품 가시성 구성](./configuring-product-visibility-using-channels.md)

@@ -209,7 +209,7 @@ Liferay Cloud 콘솔을 통해 환경 변수를 설정했지만 나중에 `backu
 | `LCP_MASTER_USER_NAME`                          | `dxpcloud`                 | 마스터 사용자 이름입니다.                                                                                                                                                   |
 | `LCP_MASTER_USER_PASSWORD`                      | `LCP_PROJECT_MASTER_TOKEN` | 마스터 암호입니다.                                                                                                                                                       |
 
-## 추가 정보
+## 관련 주제
 
 * [백업 다운로드 및 업로드](./downloading-and-uploading-backups.md)
 * [백업에서 데이터 복원](./restoring-data-from-a-backup.md)

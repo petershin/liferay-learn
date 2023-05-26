@@ -96,7 +96,7 @@ SKU는 제품에 대해 구성된 것과 다른 배송 중량 및 치수를 갖�
 
 이제 SKU를 구독 기준으로 사용할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [명세서](./specifications.md)
 * [제품 변형에 대한 SKU 만들기](./creating-skus-for-product-variants.md)

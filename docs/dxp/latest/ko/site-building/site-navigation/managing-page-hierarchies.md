@@ -25,7 +25,7 @@ Liferay를 사용하면 페이지를 계층 구조로 구성하여 원하는 사
 | **분리된 위젯** | 페이지에서 제거된 위젯 관련 데이터를 지웁니다.         |
 | **삭제** | 페이지와 모든 데이터를 삭제합니다.                |
 
-## 추가 정보
+## 관련 주제
 
 * [탐색 메뉴 애플리케이션 사용](./using-the-navigation-menus-application.md)
 * [탐색 메뉴 구성](./configuring-menu-displays.md)

@@ -179,7 +179,7 @@ Liferay Commerce Enterprise를 재활성화하려면 먼저 서버에서 만료�
 
 Liferay Cloud 팀은 DXP 및 Commerce 라이센스를 모두 관리하므로 사용자가 직접 수동으로 업데이트할 필요가 없습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [설치 개요](./installation-overview.md)
 * [Liferay Commerce 업그레이드](./upgrading-liferay-commerce.md)

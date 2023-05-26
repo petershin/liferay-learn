@@ -73,7 +73,7 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEX__UPPERCASEX__UPPERCASEX__MINUS__N
 프로덕션에서 개발 기능을 사용하지 마십시오. Liferay의 불안정성은 dev 기능 플래그를 활성화할 때 예상되는 부작용입니다. 
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [시맨틱 검색](../../using-search/liferay-enterprise-search/search-experiences/semantic-search.md)
 * [베타 기능](https://help.liferay.com/hc/ko/articles/12917247551757-Beta-Features)

@@ -63,7 +63,7 @@ Patching Tool의 `store` 및 `diff` 명령은 Liferay DXP 패치 및 사용자 �
 
 이제 사용자 정의 코드 및 사용자 정의 패치를 다른 DXP 패치와 통합하는 방법을 알았습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [패치 설치](../installing-patches-for-dxp-7-3-and-earlier.md)
 * [패치 도구 설치](../../reference/installing-the-patching-tool.md)

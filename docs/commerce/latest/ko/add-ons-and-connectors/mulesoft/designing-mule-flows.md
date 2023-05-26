@@ -68,7 +68,7 @@
 
 사용 가능한 모든 작업 및 관련 입력 매개변수를 보려면 [Liferay MuleSoft 커넥터 기술 참조](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [MuleSoft 커넥터 구성](./configuring-the-mulesoft-connector.md)
 * [Liferay MuleSoft 커넥터 기술 참조](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc)

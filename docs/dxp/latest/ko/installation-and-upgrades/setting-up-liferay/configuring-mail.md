@@ -60,7 +60,7 @@ DXP는 메일 세션에 즉시 연결합니다.
 | 암호                                         | DXP가 SMTP 서버에 로그인하는 데 사용하는 비밀번호입니다.                                                                   |
 | 수동으로 위 윤곽을 무시하기 위하여 JavaMail 추가 재산을 지정하십시오 | 이 필드는 추가 JavaMail 설정을 위한 것입니다.                                                                        |
 
-## 추가 정보
+## 관련 주제
 
 * [기본 이메일 발신자 구성](./configuring-mail/configuring-default-email-senders.md)
 * [대체 이메일 구성 방법](./configuring-mail/alternative-email-configuration-methods.md)

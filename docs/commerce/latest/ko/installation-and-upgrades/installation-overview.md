@@ -50,7 +50,7 @@ Docker를 사용하여 Liferay Commerce를 설치합니다. 자세한 내용은 
 
 기존 Liferay DXP 설치에 `LPKG` 파일을 배포하여 Liferay Commerce를 설치합니다. 자세한 내용은 [기존 설치에 Liferay Commerce 배포](./installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md) 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 디지털 경험 플랫폼 성능](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
 * [프록시 서버를 통해 Marketplace 앱 활성화](https://help.liferay.com/hc/ko/articles/360018427391)

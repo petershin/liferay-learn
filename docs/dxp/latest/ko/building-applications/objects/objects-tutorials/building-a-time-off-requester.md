@@ -245,7 +245,7 @@ Liferay UI를 통해 요청 항목을 추가하려면 다음 단계를 따르십
 
 ![휴가 요청 탭에서 직원의 관련 요청을 봅니다.](./building-a-time-off-requester/images/12.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 개요](../../objects.md)
 * [개체 만들기](../creating-and-managing-objects/creating-objects.md)

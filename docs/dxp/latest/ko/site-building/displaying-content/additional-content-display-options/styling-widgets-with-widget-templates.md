@@ -44,7 +44,7 @@
 
 위젯은 이제 사용자 정의 템플릿을 사용합니다. 고급 위젯 템플릿 스크립트를 사용하여 위젯의 기능을 더욱 향상시킬 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 템플릿 만들기](../../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md)
 * [위젯 모양 및 느낌 구성](../../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/configuring-widget-look-and-feel.md)

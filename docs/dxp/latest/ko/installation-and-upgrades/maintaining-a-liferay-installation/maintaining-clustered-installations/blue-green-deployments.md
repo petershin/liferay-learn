@@ -19,7 +19,7 @@
 * [BlueGreen배포](http://martinfowler.com/bliki/BlueGreenDeployment.html)
 * [AWS로 블루-그린 배포 구현](https://www.thoughtworks.com/insights/blog/implementing-blue-green-deployments-aws)
 
-## 추가 정보
+## 관련 주제
 
 * [롤링 리스타트](./rolling-restarts.md)
 * [고가용성을 위한 클러스터링](../../setting-up-liferay/clustering-for-high-availability.md)

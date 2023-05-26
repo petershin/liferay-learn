@@ -241,7 +241,7 @@ UI 구성의 각 필드에 대해 추가할 수 있는 몇 가지 구성 속성�
    - `단위` 은 숫자 필드의 측정 단위를 설정합니다.
    - `unitSuffix`는 단위가 있는 숫자 필드에 표시할 단위 표기법을 설정합니다(예를 들어 `unit`이 `km`인 경우 `unitSuffix`를 `km` 또는 `km`로 설정할 수 있음).
 
-## 추가 정보
+## 관련 주제
 
 - [검색 Blueprint 생성 및 관리](../creating-and-managing-search-blueprints.md)
 - [청사진 요소 참조 검색](../search-blueprints-elements-reference.md)

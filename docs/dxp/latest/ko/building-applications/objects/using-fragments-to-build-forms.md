@@ -72,7 +72,7 @@ Liferay에는 콘텐츠 페이지에 개체 양식을 작성하기 위한 양식
 개체에 대해 분류가 활성화된 경우 태그 및 범주 양식 조각을 사용하여 개체 항목에 메타데이터를 추가할 수 있습니다. 
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [양식 컴포넌트](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
 * [조각 구성](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)

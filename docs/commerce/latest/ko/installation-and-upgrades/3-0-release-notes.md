@@ -22,6 +22,6 @@ Liferay Commerce 3.0은 최신 버전의 Liferay DXP와 호환됩니다. 플래�
 | [상업-4190](https://issues.liferay.com/browse/COMMERCE-4190) | 배송 옵션 항목이 표에 표시되지 않습니다.                                                                    |
 | [상업-4915](https://issues.liferay.com/browse/COMMERCE-4915) | DXP 7.2 + Commerce 2.1.2에서 DXP 7.3 + Commerce 3.0으로 업그레이드할 때 세금 범주 페이지가 표시되지 않고 오류가 발생합니다. |
 
-## 추가 정보
+## 관련 주제
 
 * [3.0 주요 변경 사항](./3-0-breaking-changes.md)

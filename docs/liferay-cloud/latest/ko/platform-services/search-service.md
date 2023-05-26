@@ -69,6 +69,6 @@ Elasticsearch에 대한 모든 환경 변수 및 기타 구성 형식은 [공식
 |:-------------- |:--------------- |:------------------- |
 | `ES_JAVA_OPTS` | `-Xms4g -Xmx4g` | ES 인스턴스에 대한 Java 설정 |
 
-## 추가 정보
+## 관련 주제
 
 * [LCP JSON을 통한 구성](../reference/configuration-via-lcp-json.md)

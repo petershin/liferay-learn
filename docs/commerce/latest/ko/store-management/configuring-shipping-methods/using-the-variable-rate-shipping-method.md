@@ -127,7 +127,7 @@
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [고정 요금 배송 방법 사용](./using-the-flat-rate-shipping-method.md)
 * [배송 방법으로 FedEx 사용](./using-the-fedex-shipping-method.md)

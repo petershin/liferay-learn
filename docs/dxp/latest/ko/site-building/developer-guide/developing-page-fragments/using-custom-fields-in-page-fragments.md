@@ -40,7 +40,7 @@ user.getExpandoBridge().getAttribute("ATTRIBUTE_NAME")
 [#/if]
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [사용자에게 사용자 정의 필드 추가](../../../system-administration/configuring-liferay/adding-custom-fields.md)
 

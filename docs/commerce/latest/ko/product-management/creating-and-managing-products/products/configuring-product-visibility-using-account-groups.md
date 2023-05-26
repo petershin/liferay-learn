@@ -60,7 +60,7 @@
 
 이제 이 제품은 이러한 계정 그룹의 고객 계정인 계정에만 표시됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [채널을 사용하여 제품 가시성 구성](../../../store-management/channels/configuring-product-visibility-using-channels.md)
 * [새 계정 그룹 만들기](../../../users-and-accounts/account-management/creating-a-new-account-group.md)

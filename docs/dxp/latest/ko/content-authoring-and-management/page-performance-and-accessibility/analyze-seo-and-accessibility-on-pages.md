@@ -133,7 +133,7 @@ SEO 문제:
 | 이 페이지는 감사할 수 없습니다. | 감사하려는 페이지는 공개적으로 액세스할 수 없습니다.                                                                                                                                                                                                        |
 | 의외 과실은 일어났다        | 이것은 일반적인 오류입니다. 페이지 감사 도구가 올바르게 구성되어 있고 감사하려는 페이지가 인터넷에서 액세스 가능한지 확인하십시오.                                                                                                                                                            |
 
-## 추가 정보
+## 관련 주제
 
 - [구글 페이지 스피드 인사이트](https://developers.google.com/speed/pagespeed/insights/)
 - [PageSpeed Insights API 시작하기](https://developers.google.com/speed/docs/insights/v5/get-started)

@@ -16,7 +16,7 @@
 
     ![모달 창이 닫히고 구성된 페이지 메뉴가 표시됩니다.](./using-the-page-menu-widget/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 - [Wiki 시작하기](./getting-started-with-wikis.md)
 - [위키 페이지 만들기](./creating-wiki-pages.md)

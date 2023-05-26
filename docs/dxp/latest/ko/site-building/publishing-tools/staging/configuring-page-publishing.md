@@ -20,7 +20,7 @@
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [게시 프로세스 이해](./understanding-the-publishing-process.md)
 * [페이지 버전 관리](./page-versioning.md)

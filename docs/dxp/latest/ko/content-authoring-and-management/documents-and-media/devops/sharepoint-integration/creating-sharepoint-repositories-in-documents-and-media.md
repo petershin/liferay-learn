@@ -24,6 +24,6 @@
 
 적절한 권한이 있는 사용자는 SharePoint 문서 및 폴더를 읽고 쓰고, 문서 체크인/체크아웃을 수행하고, 문서를 다운로드하는 등의 작업을 수행할 수 있습니다. 한 컨텍스트에서 수행된 각 작업은 다른 컨텍스트에서 전파됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [SharePoint에 대한 Liferay의 REST 커넥터 활성화](./enabling-liferays-rest-connector-to-sharepoint.md)

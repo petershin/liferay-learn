@@ -83,7 +83,7 @@ userInfo.each {
 
 스크립트 엔진은 Kaleo Workflow와 같은 스크립트 콘솔 외부에서 사용할 수 있습니다. 다음은 워크플로에서 스크립트 엔진을 사용하는 것입니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 서비스 호출](./invoking-liferay-services-from-scripts.md)
 * [워크플로에서 스크립트 엔진 사용](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)

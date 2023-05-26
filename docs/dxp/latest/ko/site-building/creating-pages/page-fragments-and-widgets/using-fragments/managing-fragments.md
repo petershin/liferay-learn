@@ -80,7 +80,7 @@ Liferay DXP는 Liferay UI에서 조각을 관리하기 위한 도구를 제공�
 사용자는 [기본 조각](./default-fragments-reference.md)을 직접 편집할 수 없습니다. 그러나 기본 조각을 사용자 정의 세트로 복사하고 편집할 수 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [조각 사용](../using-fragments.md)
 * [조각 구성](./configuring-fragments.md)

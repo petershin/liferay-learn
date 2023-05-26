@@ -35,7 +35,7 @@ Liferay 작업 스케줄러는 Liferay의 스케줄러 엔진 위에 구축된 �
 
 [`DispatchConfigurator`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-service/src/main/java/com/liferay/dispatch/internal/messaging/DispatchConfigurator.java) 클래스는 `DispatchMessageListener` 대상, `executorService` 대기열 크기 및 스레드 풀, `RejectedExecutionHandler`등과 같은 Job Scheduler 프레임워크의 속성을 정의합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [작업 스케줄러 사용](./using-job-scheduler.md)
 * [작업 스케줄러 UI 참조](./job-scheduler-ui-reference.md)

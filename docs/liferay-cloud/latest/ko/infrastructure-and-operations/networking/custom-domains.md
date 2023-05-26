@@ -107,7 +107,7 @@ Liferay Cloud 콘솔을 통해 사용자 지정 도메인을 추가하면 [Let's
 
 하나 이상의 사용자 지정 SSL 인증서를 설정하는 방법을 포함하여 Liferay Cloud의 SSL 인증서에 대한 자세한 내용은 [로드 밸런서](./load-balancer.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [로드 밸런서](./load-balancer.md)
 * [LCP.json을 통한 구성](../../reference/configuration-via-lcp-json.md)

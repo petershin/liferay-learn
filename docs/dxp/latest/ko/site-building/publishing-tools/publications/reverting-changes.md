@@ -38,7 +38,7 @@ Liferay 버전을 업그레이드한 후에는 업그레이드 전에 게시된 
 
 **Later** 게시하도록 선택한 경우 새 게시에 대한 변경 사항 검토 페이지로 리디렉션됩니다. 이 시점에서 발행물을 추가로 변경한 다음 준비가 되면 발행할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [출판물 생성 및 관리](./creating-and-managing-publications.md)
 * [변경 및 게시](./making-and-publishing-changes.md)

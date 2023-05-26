@@ -40,7 +40,7 @@ type: oAuthApplicationHeadlessServer
 type: oAuthApplicationUserAgent
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [클라이언트 확장 소개](../client-extensions.md)
 * [`client-extension.yaml`에서 클라이언트 확장 구성](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

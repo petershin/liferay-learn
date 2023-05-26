@@ -67,7 +67,7 @@
 
 주문이 승인(또는 거부)되었습니다. 추가 주문을 검토하려면 **알림** 페이지로 돌아가서 위에 설명된 단계를 반복하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [주문 워크플로 소개](./introduction-to-order-workflows.md)
 * [주문 워크플로 활성화 또는 비활성화](enabling-or-disabling-order-workflows.md)

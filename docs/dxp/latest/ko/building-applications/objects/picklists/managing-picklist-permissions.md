@@ -64,7 +64,7 @@
 
 1. **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [선택 목록 사용](./using-picklists.md)
 * [역할 권한 정의](../../../users-and-permissions/roles-and-permissions/defining-role-permissions.md)

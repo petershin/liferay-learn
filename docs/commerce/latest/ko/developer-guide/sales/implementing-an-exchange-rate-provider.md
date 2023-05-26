@@ -165,7 +165,7 @@ private Map<String, Double> _exchangeRates = new HashMap<String, Double>() {
 
 축하합니다! 이제 `ExchangeRateProvider` 인터페이스를 구현하기 위한 기본 사항을 알고 있으며 Liferay Commerce에 새로운 환율 공급자를 추가했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [새 통화 추가](../../store-management/currencies/adding-a-new-currency.md)
 * [환율 관리](../../store-management/currencies/managing-exchange-rates.md)

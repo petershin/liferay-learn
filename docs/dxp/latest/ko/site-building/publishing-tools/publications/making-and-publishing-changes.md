@@ -164,7 +164,7 @@ Liferay 버전을 업그레이드한 후에는 기존 간행물을 변경, 게�
 
 Liferay는 불필요한 데이터를 즉시 제거합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [간행물 개요](../publications.md)
 * [간행물 활성화](./enabling-publications.md)

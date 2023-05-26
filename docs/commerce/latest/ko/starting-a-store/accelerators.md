@@ -22,6 +22,6 @@ Liferay Commerce는 즉시 사용 가능한 B2B 사이트 가속기인 Miniium�
 
 가속 사이트가 생성되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Minium Accelerator를 사용하여 B2B Store 시작](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)

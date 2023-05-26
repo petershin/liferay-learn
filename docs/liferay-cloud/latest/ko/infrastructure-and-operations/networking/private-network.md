@@ -48,7 +48,7 @@
 | `의정서`        | TCP  | 생성할 연결 유형(TCP 및 UDP가 지원됨)                                                     |
 | `external`   | 여실한  | 외부 연결에서 연결을 사용할 수 있는지 여부입니다. 기본값 `false` 은 내부 Liferay Cloud 연결에 대한 연결을 제한합니다. |
 
-## 추가 정보
+## 관련 주제
 
 * [LCP JSON을 통한 구성](../../reference/configuration-via-lcp-json.md)
 * [셸 액세스](../../troubleshooting/shell-access.md)

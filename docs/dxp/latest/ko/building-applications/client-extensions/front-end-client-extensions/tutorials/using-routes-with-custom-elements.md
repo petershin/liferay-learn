@@ -227,7 +227,7 @@ routes
     :lines: 1-9
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [프런트 엔드 클라이언트 확장](../../front-end-client-extensions.md)
 * [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md)

@@ -85,7 +85,7 @@ Liferay 7.4 업데이트 1에서는 Kaleo Form Admin 애플리케이션의 UI에
 
 다이어그램 보기에 액세스하려면 항목의 작업 메뉴(![Actions](../../../images/icon-actions.png))에서 워크플로 추적 구성 옵션을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [양식 소개](../introduction-to-forms.md)
 * [워크플로 소개](../../workflow/introduction-to-workflow.md)

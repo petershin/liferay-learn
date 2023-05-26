@@ -180,7 +180,7 @@ zip 파일을 수동으로 배포해야 하는 경우 다음을 실행합니다.
 
 그런 다음 각 프로젝트의 `dist/` 폴더에서 서버의 `[Liferay Home]/osgi/client-extensions/` 폴더로 아카이브를 복사합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [배치 클라이언트 확장](./batch-client-extensions.md)
 * [구성 클라이언트 확장](./configuration-client-extensions.md)

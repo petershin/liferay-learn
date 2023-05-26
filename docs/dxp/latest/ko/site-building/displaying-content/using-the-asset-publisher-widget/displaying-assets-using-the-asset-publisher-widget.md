@@ -36,7 +36,7 @@ Asset Publisher 위젯은 자산을 게시하므로 이미지, 문서, 블로그
 
 ![자산 게시자 위젯을 사용하여 혼합 콘텐츠 유형을 게시할 수 있습니다.](./displaying-assets-using-the-asset-publisher-widget/images/02.png)
 
-## 추가 정보
+## 관련 주제
 
 * [자산 게시자 위젯에서 자산 선택](./selecting-assets-in-the-asset-publisher-widget.md)
 * [Asset Publisher 디스플레이 설정 구성](./configuring-asset-publisher-display-settings.md)

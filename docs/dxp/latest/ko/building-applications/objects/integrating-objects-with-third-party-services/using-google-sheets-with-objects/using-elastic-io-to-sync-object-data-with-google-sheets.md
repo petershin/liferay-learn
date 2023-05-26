@@ -86,7 +86,7 @@
 
    ![흐름 시작을 클릭합니다.](./using-elastic-io-to-sync-object-data-with-google-sheets/images/18.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 개요](../../../objects.md)
 * [객체 생성 및 관리](../../creating-and-managing-objects.md)

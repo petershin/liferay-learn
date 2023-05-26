@@ -74,7 +74,7 @@ Wiki 및 Message Board 항목에 추가된 첨부 파일은 삭제 시 휴지통
 
 재활용품을 모두 삭제하려면 애플리케이션 표시줄에서 **동작** 버튼(![Actions](../../images/icon-actions.png))을 클릭하고 **휴지통 비우기를 선택합니다** .
 
-## 추가 정보
+## 관련 주제
 
 * [휴지통 개요](./recycle-bin-overview.md)
 * [휴지통 구성](./configuring-the-recycle-bin.md)

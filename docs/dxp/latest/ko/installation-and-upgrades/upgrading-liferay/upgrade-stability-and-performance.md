@@ -47,6 +47,6 @@ DXP 업그레이드 프로세스는 프로덕션에서 일반적으로 수행되
 
 DXP 인스턴스를 성공적으로 업그레이드한 후 프로덕션으로 릴리스를 조정할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [클러스터된 설치 업데이트](../maintaining-a-liferay-installation/maintaining-clustered-installations.md)

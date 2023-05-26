@@ -25,7 +25,7 @@ xray-oauth-user-agent:
 | `privacyPolicyURL` | URL         |                                                  | OAuth2 애플리케이션 프로필의 개인정보 보호정책에 대한 URL입니다. |
 | `scopes`           | 끈[]         | []                                               | OAuth2 애플리케이션 프로필과 연결된 범위의 배열입니다.        |
 
-## 추가 정보
+## 관련 주제
 
 * [마이크로서비스 클라이언트 확장](../microservice-client-extensions.md)
 * [클라이언트 확장 작업](../working-with-client-extensions.md)

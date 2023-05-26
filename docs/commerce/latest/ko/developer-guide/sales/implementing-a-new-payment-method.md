@@ -187,6 +187,6 @@ pay-via-b1c3-commerce-payment-method=Pay via B1C3 commerce payment method.
 
 축하합니다! 이제 `CommercePaymentMethod` 인터페이스를 구현하기 위한 기본 사항을 알고 있으며 Liferay Commerce에 새 결제 방법을 추가했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

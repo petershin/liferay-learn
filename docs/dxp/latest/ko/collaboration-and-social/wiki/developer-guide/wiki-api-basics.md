@@ -447,7 +447,7 @@ Wiki 페이지에 POST 및 PUT 메서드를 사용할 때 `headline` 및 `encodi
    :lines: 6-25
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay를 헤드리스 플랫폼으로 사용](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
 * [휴식 서비스 이용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

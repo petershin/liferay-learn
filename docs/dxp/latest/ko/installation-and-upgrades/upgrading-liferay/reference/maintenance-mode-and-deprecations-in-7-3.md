@@ -82,7 +82,7 @@
 내보내기/가져오기는 이전에 유지 관리 모드로 나열되었지만 Liferay는 계속해서 내보내기/가져오기 애플리케이션을 개선하고 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [7.3 주요 변경 사항](../../../liferay-internals/reference/7-3-breaking-changes.md)
 * [7.3 기본 설정 변경](./default-setting-changes-in-7-3.md)

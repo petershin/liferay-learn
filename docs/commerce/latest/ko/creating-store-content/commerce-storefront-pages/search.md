@@ -16,7 +16,7 @@
 또한 검색 옵션 위젯은 *빈 검색 허용*으로 설정됩니다. 이를 통해 고객은 채널에 표시되는 모든 콘텐츠를 찾아보고 필터링할 수 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 참조 가이드](../liferay-commerce-widgets/widget-reference.md)
 * [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)

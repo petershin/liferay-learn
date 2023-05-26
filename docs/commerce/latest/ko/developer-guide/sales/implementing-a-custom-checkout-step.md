@@ -175,7 +175,7 @@ n8n6-commerce-checkout-step=N8N6 Commerce Checkout Step
 
 축하합니다! 이제 `CommerceCheckoutStep` 인터페이스를 구현하기 위한 기본 사항을 알고 있으며 Liferay Commerce에 새로운 결제 단계를 추가했습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [점검](../../creating-store-content/commerce-storefront-pages/checkout.md)
 * [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

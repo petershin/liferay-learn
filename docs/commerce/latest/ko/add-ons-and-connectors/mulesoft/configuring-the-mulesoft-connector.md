@@ -82,7 +82,7 @@ XML 구성을 사용하여 이 작업을 수행할 수도 있습니다. `Liferay
 
 **연결 테스트** 클릭합니다. 성공하면 커넥터를 사용하여 흐름 작성을 시작할 수 있습니다. 그렇지 않으면 구성을 검토하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [노새 흐름 설계](./designing-mule-flows.md)
 * [API 소비](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis.html)

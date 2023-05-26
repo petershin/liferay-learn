@@ -46,7 +46,7 @@ Liferay의 문서 및 미디어 응용 프로그램을 사용하면 외부 플�
 
 생성된 외부 비디오 바로 가기는 대부분의 Liferay 자산에 내장될 수 있습니다. 자세한 내용은 [Liferay 자산 및 페이지에 비디오 포함](./embedding-videos-into-liferay-assets-and-pages.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 자산 및 페이지에 비디오 포함](./embedding-videos-into-liferay-assets-and-pages.md)
 * [사용자 지정 비디오 바로 가기 공급자 만들기](../developer-guide/creating-video-shortcut-providers.md)

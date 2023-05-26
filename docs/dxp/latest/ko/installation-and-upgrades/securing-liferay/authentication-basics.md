@@ -93,7 +93,7 @@ CAPTCHA 또는 reCAPTCHA를 활성화하여 봇이 계정을 생성하고 로그
 1. 다른 옵션을 사용하면 개발자가 Simple CAPTCHA 엔진을 사용자 정의할 수 있습니다.
 1. 완료되면 **저장** 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [라이프레이 확보](../securing-liferay.md)
 * [보안 웹 서비스 소개](./securing-web-services.md)

@@ -219,7 +219,7 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
    :language: bash
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [개체 API 기본 사항](./object-api-basics.md)
 * [REST API에서 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md)

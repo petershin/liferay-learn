@@ -22,7 +22,7 @@ Liferay DXP는 현재 다음 프로그램과의 통합을 지원합니다.
 
 이러한 도구를 설치하고 구성하면 Documents and Media는 대부분의 파일 형식에 대한 응용 프로그램 미리 보기를 제공할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [파일 관리](../uploading-and-managing/managing-files.md)
 * [문서 및 미디어 UI 참조](../documents-and-media-ui-reference.md)

@@ -98,7 +98,7 @@
 
 이제 각 창고의 업데이트된 인벤토리를 볼 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [상업 창고 설정](./setting-up-warehouses.md)
 * [재고 관리 참조 안내서](./inventory-management-reference-guide.md)

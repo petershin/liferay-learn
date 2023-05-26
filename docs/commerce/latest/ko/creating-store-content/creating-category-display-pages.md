@@ -48,6 +48,6 @@ Liferay DXP 7.3 및 이전 버전의 경우 채널 설정에서 기본 범주 �
 
 이렇게 하면 범주와 선택한 페이지 간의 관계가 설정됩니다. 사용자가 특정 카테고리를 클릭할 때마다 새 카테고리 표시 페이지로 리디렉션됩니다. 카테고리 표시 페이지를 보고 관리하려면 채널 설정 아래의 카테고리 표시 페이지 탭을 사용하십시오.
 
-## 추가 정보
+## 관련 주제
 
 - [디스플레이 페이지를 사용하여 카테고리 표시](https://learn.liferay.com/dxp/latest/ko/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.html)

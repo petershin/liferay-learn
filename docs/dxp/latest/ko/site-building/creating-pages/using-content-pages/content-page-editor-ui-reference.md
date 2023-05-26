@@ -132,7 +132,7 @@ Liferay 7.4 U37/GA37부터 주문 버튼(![주문 버튼](../../../images/icon-o
 
 콘텐츠 패널(![Contents](../../../images/icon-list-ul.png))에서 페이지의 모든 웹 콘텐츠를 보고 편집하고 관리할 수 있습니다. 여기에는 위젯에 표시되고 콘텐츠 필드에 매핑된 콘텐츠가 포함됩니다. 자세한 내용은 [콘텐츠 페이지의 콘텐츠 관리](./managing-content-in-content-pages.md) 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 - [콘텐츠 페이지 사용](../using-content-pages.md)
 - [콘텐츠 페이지에 요소 추가](./adding-elements-to-content-pages.md)

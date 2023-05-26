@@ -24,7 +24,7 @@ Liferay는 드롭다운 조각을 제공하여 고급 드롭다운 메뉴(A)를 
 
 ![패널 유형 옵션을 사용하여 드롭다운 패널에서 드롭 영역 크기를 정의할 수 있습니다.](./creating-dropdown-menus-with-fragments/images/03.gif)
 
-## 추가 정보
+## 관련 주제
 
 * [조각 사용](../using-fragments.md)
 * [조각 구성](./configuring-fragments.md)

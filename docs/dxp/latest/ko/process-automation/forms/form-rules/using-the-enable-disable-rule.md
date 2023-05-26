@@ -28,7 +28,7 @@
 
 ![사용자가 예를 선택하면 필드가 활성화됩니다.](./using-the-enable-disable-rule/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [양식 만들기](../creating-and-managing-forms/creating-forms.md)
 * [양식 규칙 개요](./form-rules-overview.md)

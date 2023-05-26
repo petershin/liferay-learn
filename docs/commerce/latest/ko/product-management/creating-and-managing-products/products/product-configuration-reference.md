@@ -113,7 +113,7 @@ SKU는 제품의 변형을 나타냅니다. 자세한 내용은 [제품 변형�
 
 See [Virtual Product Reference](./../product-types/virtual-product-reference.md) -->
 
-## 추가 정보
+## 관련 주제
 
 * [간단한 제품 만들기](../product-types/creating-a-simple-product.md)
 * [그룹화된 제품 만들기](../product-types/creating-a-grouped-product.md)

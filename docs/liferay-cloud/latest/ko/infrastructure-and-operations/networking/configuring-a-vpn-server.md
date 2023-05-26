@@ -320,7 +320,7 @@ OpenVPN 서버를 사용하는 경우 다음 단계를 따르세요.
 
 OpenVPN 서버가 구성되었습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [VPN 통합 개요](./vpn-integration-overview.md)
 * [VPN 서버를 Liferay Cloud에 연결](./connecting-a-vpn-server-to-liferay-cloud.md)

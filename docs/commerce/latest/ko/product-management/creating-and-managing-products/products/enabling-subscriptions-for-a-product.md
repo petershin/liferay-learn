@@ -59,7 +59,7 @@ Liferay Commerce를 사용하면 [Simple](../product-types/creating-a-simple-pro
 
 ![결제 및 배송 가입 내역은 상품 상세 위젯에 표시됩니다.](./enabling-subscriptions-for-a-product/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [구독 관리](../../../order-management/subscriptions/managing-subscriptions.md)
 * [구독 관리 참조 가이드](../../../order-management/subscriptions/subscription-administration-reference-guide.md)

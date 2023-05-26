@@ -33,7 +33,7 @@
 
 파일 경로는 기본적으로 비어 있습니다. 비어 있으면 무료 [GeoLite2](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data?lang=en) 데이터베이스를 사용하여 IP 주소를 확인합니다. 선택적으로 서버에서 확장자가 `.mmdb` 인 다른 지리적 사이트 데이터베이스에 대한 경로를 설정하여 기본 데이터베이스를 재정의할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [세그먼트 조건 구성](./creating-and-managing-user-segments.md#configuring-segment-conditions)
 * [컨텐츠 페이지 개인화](../experience-personalization/content-page-personalization.md)

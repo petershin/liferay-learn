@@ -110,7 +110,7 @@ Users can manage their Punch Out procurement systems from here. Purchasing the a
 
 -->
 
-## 추가 정보
+## 관련 주제
 
 * [채널을 사용하여 제품 가시성 구성](./configuring-product-visibility-using-channels.md)
 * [주문 워크플로 활성화 또는 비활성화](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md)

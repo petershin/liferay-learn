@@ -28,7 +28,7 @@
 
 ![검토자는 계정을 승인하거나 거부할 수 있습니다.](./using-workflow-with-accounts/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [계정 생성](../accounts.md#creating-an-account)
 * [워크플로 디자이너 개요](../../process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md)

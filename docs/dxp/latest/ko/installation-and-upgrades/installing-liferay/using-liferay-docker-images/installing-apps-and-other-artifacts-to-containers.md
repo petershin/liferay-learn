@@ -58,7 +58,7 @@ docker cp ~/my-apps/some-app.lpkg [container]:/opt/liferay/deploy
 
 이제 Liferay에 앱 및 기타 아티팩트를 설치하는 방법을 알았습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay Docker 이미지 사용](../using-liferay-docker-images.md)
 * [컨테이너에 파일 제공](./providing-files-to-the-container.md)

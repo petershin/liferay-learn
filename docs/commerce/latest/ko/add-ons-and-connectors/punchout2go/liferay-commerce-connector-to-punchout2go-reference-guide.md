@@ -15,6 +15,6 @@
 | 펀치 아웃 액세스 토큰 | Punch out 사용자 자동 로그인에 사용되는 일회용 토큰                                                   |
 | 펀치 아웃 벤더     | 펀치 아웃 카탈로그와 구매자 조달 시스템을 연결하는 타사 공급업체                                                |
 
-## 추가 정보
+## 관련 주제
 
 * [PunchOut2Go에 대한 Liferay Commerce 커넥터](./liferay-commerce-connector-to-punchout2go.md)

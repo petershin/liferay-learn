@@ -90,7 +90,7 @@
 
 권한을 사용하여 변형에 대한 사용자 액세스를 관리할 수 있습니다. 자세한 내용은 [스테이징 권한 관리](./managing-staging-permissions.md) 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [스테이징 개요](../staging.md)
 * [로컬 라이브 스테이징 구성](./configuring-local-live-staging.md)

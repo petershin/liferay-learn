@@ -34,7 +34,7 @@ SKU 재고가 특정 임계값 아래로 떨어지면 낮은 재고 조치가 �
 
 일단 구성되면 제품 재고가 설정된 임계값 아래로 떨어질 때마다 선택한 재고 부족 조치가 트리거됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [제품 인벤토리 구성 참조](./product-inventory-configuration-reference-guide.md)
 * [맞춤형 저재고 작업 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)

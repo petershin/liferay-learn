@@ -64,7 +64,7 @@
 
 계속하기 전에 유효한 이메일 주소를 포함한 연락처 정보를 입력해야 합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [비회원 결제 개요](./guest-checkout-overview.md)
 * [채널 소개](../../store-management/channels/introduction-to-channels.md)

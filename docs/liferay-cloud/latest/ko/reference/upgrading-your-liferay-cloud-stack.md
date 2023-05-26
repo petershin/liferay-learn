@@ -176,6 +176,6 @@ Docker 이미지 이름 끝에 있는 숫자는 사용 중인 Liferay Cloud 스�
 
 그런 다음 새 서비스 버전 [을 개발 환경에](../build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md) 하거나 새 버전의 Liferay 클라우드 서비스에서 일부 새 기능을 탐색할 수 있습니다. 자세한 내용은 변경 사항에 대한 [설명](./liferay-cloud-project-changes-in-version-4.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [서비스 스택 버전 이해](./understanding-service-stack-versions.md)

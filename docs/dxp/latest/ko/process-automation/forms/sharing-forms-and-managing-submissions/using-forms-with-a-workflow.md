@@ -21,7 +21,7 @@
 
 ![양식 레코드가 승인되었습니다.](./using-forms-with-a-workflow/images/04.png)
 
-## 추가 정보
+## 관련 주제
 
 * [양식 항목 관리](./managing-form-entries.md)
 * [자산 검토](../../workflow/using-workflows/reviewing-assets.md)

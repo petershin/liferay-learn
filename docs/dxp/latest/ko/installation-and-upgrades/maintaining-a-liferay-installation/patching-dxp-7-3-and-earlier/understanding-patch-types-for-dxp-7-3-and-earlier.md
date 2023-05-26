@@ -110,7 +110,7 @@ DXP 7.2에서 이미 핫픽스가 설치되어 있고 해당 핫픽스가 포함
 
 이제 Liferay가 수정 사항을 제공하기 위해 제공하는 패치 유형을 알고 있으므로 관련 패치에 대한 업데이트를 유지하고 [으로 설치](./installing-patches-for-dxp-7-3-and-earlier.md) 할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [패치 설치](./installing-patches-for-dxp-7-3-and-earlier.md)
 * [패치 도구 설치](../reference/installing-the-patching-tool.md)

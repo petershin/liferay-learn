@@ -38,7 +38,7 @@
 
 1. 나중에 볼 수 있도록 이벤트 분석을 저장하려면 분석에 이름을 지정하고 **분석 저장** 버튼을 클릭합니다. 분석은 나중에 볼 수 있도록 이벤트 분석 도구에서 사용할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [이벤트에 대한 정의](../../workspace-data/definitions/definitions-for-events.md)
 * [이벤트 속성에 대한 정의](../../workspace-data/definitions/definitions-for-event-attributes.md)

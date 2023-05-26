@@ -162,7 +162,7 @@ Liferay DXP/Portal 7.3의 경우 각 조각의 *정보* 아이콘(![Information]
 | Availability |  |
 -->
 
-## 추가 정보
+## 관련 주제
 
 * [콘텐츠 페이지 사용](../../using-content-pages.md)
 * [콘텐츠 페이지 편집기 UI 참조](../../using-content-pages/content-page-editor-ui-reference.md)

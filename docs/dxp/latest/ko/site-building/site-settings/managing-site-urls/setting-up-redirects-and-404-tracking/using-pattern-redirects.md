@@ -42,7 +42,7 @@ Liferay에서 리디렉션 패턴은 현재 사이트의 친숙한 URL을 기반
 
 * 별칭이 없으면 Liferay는 모든 패턴이 소진되거나 그 중 하나가 일치할 때까지 각 리디렉션 패턴을 순서대로 테스트합니다. Liferay는 사용자를 첫 번째 경기로 리디렉션합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [사이트 URL 관리](../managing-site-urls.md)
 * [리디렉션 도구 사용](./using-the-redirection-tool.md)

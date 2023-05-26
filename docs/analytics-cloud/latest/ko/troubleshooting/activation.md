@@ -16,6 +16,6 @@ Analytics Cloud 사용을 시작하려면 몇 가지 단계를 수행해야 합�
 
 Analytics Cloud의 기본 계층은 Liferay DXP 구독과 연결됩니다. 조직에 DXP 구독이 있는 경우 기본 계층 작업 공간을 요청할 수 있도록 계정을 해당 구독과 연결할 수 있습니다. [help.liferay.com](https://help.liferay.com/) 통해 지원팀에 문의하시면 설정해드리겠습니다.
 
-## 추가 정보
+## 관련 주제
 
 여기에 나열되지 않은 활성화 프로세스의 다른 문제는 [help.liferay.com](https://help.liferay.com/) 통해 지원팀에 문의하시면 시작하는 데 도움을 드리겠습니다.

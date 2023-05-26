@@ -46,7 +46,7 @@ Liferay Forms 애플리케이션에서 항목과 해당 언어를 보려면,
    
    ![관리자는 양식 레코드 언어를 쉽게 볼 수 있습니다.](./translating-forms/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [양식 필드 유형 참조](./forms-field-types-reference.md)
 * [제출 버튼 사용자 지정](./customizing-the-submit-button.md)

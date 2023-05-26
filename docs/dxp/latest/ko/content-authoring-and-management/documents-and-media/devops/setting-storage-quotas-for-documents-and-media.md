@@ -34,7 +34,7 @@ Liferay 인스턴스에서 문서 및 미디어에 대한 글로벌 스토리지
 할당량 업데이트는 문서 및 미디어에 저장된 문서의 양에 따라 시간과 리소스가 많이 소요될 수 있습니다. 프로덕션 환경에서 이 명령을 실행할 때 주의하십시오.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [문서 및 미디어](../../documents-and-media.md)
 * [문맥 재산](../../../installation-and-upgrades/reference/portal-properties.md)

@@ -75,7 +75,7 @@ When editing a system object, you can also configure the following settings in t
 | Title Field | Determine the field used as the title for object entries. |
 | Widget | Determine whether the object's Page widget is available in sites.| -->
 
-## 추가 정보
+## 관련 주제
 
 * [개체에 필드 추가](./fields/adding-fields-to-objects.md)
 * [개체 관계 정의](./relationships/defining-object-relationships.md)

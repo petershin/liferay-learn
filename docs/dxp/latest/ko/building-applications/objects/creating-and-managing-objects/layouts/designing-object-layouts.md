@@ -108,7 +108,7 @@
 
 ![개체는 항목을 만들고 편집하기 위해 기본 레이아웃을 사용합니다.](./designing-object-layouts/images/12.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](../creating-objects.md)
 * [개체에 필드 추가](../fields/adding-fields-to-objects.md)

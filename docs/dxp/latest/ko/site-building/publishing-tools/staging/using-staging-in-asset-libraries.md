@@ -22,7 +22,7 @@ Liferay의 Staging 애플리케이션은 DXP에서 변경 사항을 관리하기
 
 스테이징 환경에서 변경 사항이 있으면 한 번에 모두 게시하거나 한 번에 하나씩 게시할 수 있습니다. [사이트](./site-staging-ui-reference.md#publish-to-live) 과 마찬가지로 [단순](./site-staging-ui-reference.md#simple-publishing) 또는 [고급](./site-staging-ui-reference.md#advanced-publishing) 게시 옵션을 사용할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [스테이징 개요](../staging.md)
 * [자산 라이브러리 개요](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)

@@ -141,7 +141,7 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
    
    ![홈 페이지 하단에 웹 서버 노드가 표시되는지 확인합니다.](./deploying-changes-via-the-cli-tool/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [명령줄 도구](../reference/command-line-tool.md)
 * [Liferay 클라우드 개발 워크플로 개요](./overview-of-the-liferay-cloud-deployment-workflow.md)

@@ -57,7 +57,7 @@ Commerce 2.0 또는 2.1을 사용하는 경우 창고 설정은 *제어판*에 �
 
 FedEx 배송 방법은 창고의 지리적 사이트를 사용하여 결제 시 배송비를 계산합니다. 창고가 여러 개인 경우 Liferay 인스턴스는 배송비가 가장 낮은 창고를 선택합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [선적 소개](../order-management/shipments/introduction-to-shipments.md)
 * [상업 창고 설정](./setting-up-warehouses.md)

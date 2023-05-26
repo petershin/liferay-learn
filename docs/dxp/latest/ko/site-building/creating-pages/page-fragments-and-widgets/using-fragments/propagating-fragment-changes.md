@@ -56,7 +56,7 @@
 
 사용하도록 설정하면 조각의 편집할 수 없는 필드에 대한 변경 사항이 조각의 모든 인스턴스에 자동으로 전파됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [조각 사용](../using-fragments.md)
 * [조각 스타일 참조](./configuring-fragments/styles-reference.md)

@@ -115,7 +115,7 @@ Commerce 2.1은 **제어판** 을 통해 **주문** 메뉴에 액세스한다는
 
 **추가**(![Add icon](../../images/icon-add.png))을 클릭하면 주문에 더 많은 항목을 추가할 수 있는 창이 열립니다.
 
-## 추가 정보
+## 관련 주제
 
 * [배송 만들기](./creating-a-shipment.md)
 * [배송 취소](./cancelling-a-shipment.md)

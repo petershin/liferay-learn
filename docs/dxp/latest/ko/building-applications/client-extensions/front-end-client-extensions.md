@@ -170,7 +170,7 @@ type: iframe
 
 자세한 내용은 [클라이언트 확장 구성 `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [클라이언트 확장 소개](../client-extensions.md)
 * [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)

@@ -65,7 +65,7 @@ DXP/Portal 설치에는 세 가지 유형이 있습니다.
 | &#10004;  |              | 1. 새 Docker 이미지를 구성합니다.<br>2. 업그레이드 환경 변수를 활성화한 상태에서 실행하십시오.<br>3. 업그레이드가 성공적으로 완료되면 응용 프로그램 서버에 새 Liferay WAR 및 OSGi 종속성을 설치합니다.            |
 |           | &#10004;     | 1. 새 Liferay Tomcat 번들을 구성합니다.<br>2. 번들에서 Database Upgrade Tool을 실행합니다.<br>3. 업그레이드가 성공적으로 완료되면 응용 프로그램 서버에 새 Liferay WAR 및 OSGi 종속성을 설치합니다. |
 
-## 추가 정보
+## 관련 주제
 
 * [업그레이드 기본 사항](../upgrade-basics.md)
 * [Liferay 설치 유지](../../maintaining-a-liferay-installation.md)

@@ -45,7 +45,7 @@ Forms `LAR` 파일이 다운로드되었습니다. 이것을 다른 사이트로
 
 게스트 사이트의 양식을 이 사이트로 가져옵니다.
 
-## 추가 정보
+## 관련 주제
 
 * [양식 만들기](./creating-forms.md)
 * [양식 구성 참조](./forms-configuration-reference.md)

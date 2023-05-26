@@ -163,7 +163,7 @@ body {
 `defaultValue` 값이 토큰 정의에 포함된 경우 일치하는 CSS 변수 정의에 정의된 기본값과 일치해야 합니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [Style Book을 사용하여 현장 모양 표준화](../using-a-style-book-to-standardize-site-appearance.md)
 <!-- Add link to token definition tutorial when available -->

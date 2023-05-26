@@ -56,7 +56,7 @@ DXP 가입자: [Workflow Metrics application](./using-workflow-metrics.md#managi
 
 승인된 자산(Wiki 페이지)이 이제 위젯에 게시됩니다.
 
-## 추가 정보
+## 관련 주제
 
 * [알림 및 요청 관리](../../../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
 * [워크플로 태스크 노드](../developer-guide/workflow-task-node-reference.md)

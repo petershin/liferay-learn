@@ -97,7 +97,7 @@ DXP의 **문서 및 미디어** 앱을 사용하여 사용자는 서로 직접 �
 
 1. **저장** 을 클릭하고 대화 상자를 닫습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [공유 활성화 및 구성](./enabling-and-configuring-sharing.md)
 * [문서 및 미디어 권한 참조](./documents-and-media-permissions-reference.md)

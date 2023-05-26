@@ -105,7 +105,7 @@
 
    ![홈 페이지 하단에 웹 서버 노드가 표시되는지 확인합니다.](./deploying-changes-via-the-liferay-cloud-console/images/09.png)
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay 클라우드 개발 워크플로 개요](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLI 도구를 통해 변경 사항 배포](./deploying-changes-via-the-cli-tool.md)

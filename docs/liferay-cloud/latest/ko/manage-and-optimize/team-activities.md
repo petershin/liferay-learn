@@ -40,7 +40,7 @@
 또한 *빌드* 및 *배포* 페이지를 통해 프로젝트 환경의 모든 빌드 및 배포 활동을 볼 수 있습니다. 이러한 페이지에 대한 자세한 내용은 [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)를 참조하십시오.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [환경 팀 및 역할](./environment-teams-and-roles.md)
 * [Liferay 클라우드 배포 워크플로 개요](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)

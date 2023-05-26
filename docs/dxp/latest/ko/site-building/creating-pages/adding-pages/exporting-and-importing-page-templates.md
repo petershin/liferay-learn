@@ -61,7 +61,7 @@ ZIP 파일에는 `display-page-template.json`, `master-page.json`, `page-templat
 
 페이지 템플릿을 사이트로 가져왔습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [페이지 템플릿 만들기](./creating-a-page-template.md)
 * [사이트 페이지 및 콘텐츠 내보내기/가져오기](../../sites/exporting-importing-site-pages-and-content.md)

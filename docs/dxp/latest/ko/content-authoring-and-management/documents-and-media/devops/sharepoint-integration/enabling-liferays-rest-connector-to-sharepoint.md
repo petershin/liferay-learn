@@ -106,7 +106,7 @@ SharePoint를 사용하면 사용자 지정 소스 ID를 정의하여 검색 결
 
 1. 완료되면 **저장** 을 클릭합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [앱 설치](../../../../system-administration/installing-and-managing-apps/installing-apps.md)
 * [문서 및 미디어에 SharePoint 저장소 만들기](./creating-sharepoint-repositories-in-documents-and-media.md)

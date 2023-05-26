@@ -75,7 +75,7 @@
 | [내보내기](./exporting-importing-site-pages-and-content.md) | 사이트 페이지 및 콘텐츠를 LAR 파일로 내보냅니다.                                   |
 | [가져오기](./exporting-importing-site-pages-and-content.md) | LAR 파일에서 사이트 페이지 및 콘텐츠를 가져옵니다.                                  |
 
-## 추가 정보
+## 관련 주제
 
 * [사이트](../sites.md)
 * [사이트 추가](./adding-a-site.md)

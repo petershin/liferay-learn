@@ -79,7 +79,7 @@ Google Docs&trade;에서 문서 및 미디어 파일을 만들거나 편집할 �
 
 **체크아웃 취소:** Google 파일을 삭제하고 변경 사항을 버립니다. 이는 Google Docs&trade; 편집 창에서 **Discard Changes** 을 클릭하는 것과 같습니다.
 
-## 추가 정보
+## 관련 주제
 
 * [Microsoft Office 365로 문서 작성 및 편집](./creating-and-editing-documents-with-microsoft-office-365.md)
 * [Google 드라이브의 파일에 연결](../linking-to-files-on-google-drive.md)

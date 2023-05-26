@@ -270,6 +270,6 @@ public class C1N4ScreenNavigationEntry
 > 
 > 축하합니다! 이제 `CPType` 인터페이스를 구현하기 위한 기본 사항을 알고 있고 Liferay Commerce에 자체 사용자 정의 화면이 있는 새로운 제품 유형을 구현했습니다.
 > 
-> ## 추가 정보
+> ## 관련 주제
 > 
 > * [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

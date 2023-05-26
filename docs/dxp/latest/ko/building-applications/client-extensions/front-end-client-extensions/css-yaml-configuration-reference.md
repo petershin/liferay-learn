@@ -27,7 +27,7 @@ able-global-css:
 
 모든 프런트 엔드 클라이언트 확장에 공통적인 속성은 [프런트 엔드 클라이언트 확장 속성](../front-end-client-extensions.md#front-end-client-extension-properties) 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [프런트 엔드 클라이언트 확장](../front-end-client-extensions.md)
 * [클라이언트 확장 작업](../working-with-client-extensions.md)

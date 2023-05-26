@@ -131,7 +131,7 @@ Javadoc에서 Liferay 앱 모듈의 속성을 찾으려면 다음 단계를 따�
 
 아티팩트의 속성을 알았으므로 이제 아티팩트에 대한 종속성을 구성할 수 있습니다. 자세한 내용은 [종속성 지정](./specifying-dependencies.md) 을 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [패키지 가져오기](../importing-packages.md)
 * [패키지 내보내기](../exporting-packages.md)

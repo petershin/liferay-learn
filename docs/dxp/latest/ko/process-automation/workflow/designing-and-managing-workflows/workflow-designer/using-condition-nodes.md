@@ -78,7 +78,7 @@ if (categoryName.equals("legal")) {
 }
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 관리](../managing-workflows.md)
 * [워크플로우 노드](./workflow-nodes.md)

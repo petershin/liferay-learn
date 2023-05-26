@@ -72,7 +72,7 @@ Liferay 웹 서비스에는 보안 및 인증에 대한 다층적이고 구성 �
 Liferay Portal의 철학은 "기본적으로 보안"입니다. 보안 관련 기본값 또는 화이트리스트를 수정할 때 상당한 주의를 기울이십시오. 이러한 작업은 잘못된 보안 구성 및 안전하지 않은 배포로 이어질 수 있습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 Liferay Portal 설치 보안에 대한 자세한 내용은 [보안 설명](https://www.liferay.com/security) , [커뮤니티 보안 팀](https://portal.liferay.dev/people/community-security-team) 및 해당 페이지에 나열된 리소스를 참조하십시오.
 

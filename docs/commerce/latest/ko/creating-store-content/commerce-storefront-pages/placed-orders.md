@@ -14,7 +14,7 @@ Placed Orders 페이지는 주문 상태와 관계없이 **계정** 당 결제 �
 
 ![주문 요약](./placed-orders/images/03.png)
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 참조 가이드](../liferay-commerce-widgets/widget-reference.md)
 * [페이지 만들기](https://help.liferay.com/hc/ko/articles/360018171291-Creating-Pages)

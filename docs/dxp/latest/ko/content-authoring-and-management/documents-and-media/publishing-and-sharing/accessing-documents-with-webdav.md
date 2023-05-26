@@ -24,7 +24,7 @@
 
 일단 설정되면 운영 체제의 파일 브라우저를 사용하여 연결된 문서 및 미디어 폴더에서 파일을 추가, 편집 및 삭제할 수 있습니다. 파일 시스템의 이 폴더에 있는 파일을 편집하면 모든 변경 사항이 Liferay에 나타나고 파일의 부 버전이 증가합니다.
 
-## 추가 정보
+## 관련 주제
 
 * [문서 공유 활성화 및 구성](./managing-document-access/enabling-and-configuring-sharing.md)
 * [다른 사용자와 문서 공유](./managing-document-access/sharing-documents-with-other-users.md)

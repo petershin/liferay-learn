@@ -9,10 +9,10 @@
 
 ## 등록된 JSON 웹 서비스
 
-일부 데이터 소스는 [restcountries.com](https://restcountries.com) 데이터 공급자와 같은 타사 소스에서 가져옵니다. Liferay DXP에는 자체 등록 웹 서비스도 있습니다. 로컬 서버를 실행 중인 경우 목록은 [http://localhost:8080/api/jsonws](http://localhost:8080/api/jsonws) 을 참조하십시오. 국가 목록을 채우는 경우 두 개의 `get-countries` JSON 웹 서비스를 찾을 수 있습니다. 어느 쪽이든 작동합니다. **Invoke** 을 클릭하여 결과를 생성합니다.
+일부 데이터 소스는 [restcountries.com](https://restcountries.com) 데이터 공급자와 같은 타사 소스에서 가져옵니다. Liferay DXP에는 자체 등록 웹 서비스도 있습니다. 로컬 서버를 실행 중인 경우 목록은 [http://localhost:8080/api/jsonws](http://localhost:8080/api/jsonws) 참조하십시오. 국가 목록을 채우는 경우 두 개의 `get-countries` JSON 웹 서비스를 찾을 수 있습니다. 어느 쪽이든 작동합니다. **Invoke** 클릭하여 결과를 생성합니다.
 
 ```{warning}
-로컬 테스트 환경에서 데이터 공급자와 함께 Liferay의 웹 서비스를 사용하여 테스트하려면 로컬 네트워크 액세스를 활성화해야 합니다. [로컬 네트워크의 데이터에 대한 액세스 활성화](./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network) 를 참조하십시오. .
+로컬 테스트 환경에서 데이터 공급자와 함께 Liferay의 웹 서비스를 사용하여 테스트하려면 로컬 네트워크 액세스를 활성화해야 합니다. [로컬 네트워크의 데이터에 대한 액세스 활성화](./using-the-rest-data-provider-to-populate-form-options.md#enabling-access-to-data-on-the-local-network) 를 참조하십시오.
 ```
 
 **결과** 탭에는 아프가니스탄에 대한 이 레코드와 같이 JSON 구문을 사용하는 국가 목록이 표시됩니다.
@@ -42,7 +42,7 @@ URL 예제 탭에서 데이터 공급자를 생성할 때 사용할 URL을 찾�
 
 **사이트 관리** &rarr; **콘텐츠 & 데이터** &rarr; **양식** 로 이동하여 양식 애플리케이션에서 데이터 공급자를 구성할 수 있습니다. **Data Provider** 탭을 클릭한 다음 (![Add icon](../../../images/icon-add.png)) 아이콘을 클릭하여 시작합니다. 데이터 공급자를 구성할 때 작성해야 할 여러 필드가 있습니다.
 
-![이 데이터 서비스는 국가를 반환합니다.](./data-providers-overview/images/03.png)
+![이 데이터 공급자는 국가를 반환합니다.](./data-providers-overview/images/03.png)
 
 ### URL
 
@@ -76,7 +76,7 @@ URL 예제 탭에서 데이터 공급자를 생성할 때 사용할 URL을 찾�
 
 ### 입력
 
-REST 서비스의 응답을 필터링하도록 REST 서비스의 경로 또는 쿼리 매개변수를 구성합니다. 레이블, 매개변수 및 유형(텍스트 또는 숫자)을 지정하고 데이터 공급자를 사용하는 데 입력이 필요한지 여부를 선택합니다.
+REST 서비스의 응답을 필터링하도록 REST 서비스의 경로 또는 쿼리 매개변수를 구성합니다. 레이블, 매개변수 및 유형(텍스트 또는 숫자)을 지정합니다.
 
 ### 출력
 

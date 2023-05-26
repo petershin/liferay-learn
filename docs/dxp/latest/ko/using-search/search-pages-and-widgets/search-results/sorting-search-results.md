@@ -1,6 +1,6 @@
 # 검색 결과 정렬
 
-[검색 결과](./search-results.md) 위젯에 표시되는 검색 결과는 기본적으로 [관련성 점수](./search-results.md#search-results-relevance) (검색 엔진 [에 의해 계산됨)별로](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html) 됩니다. 정렬 위젯을 사용하여 사용자는 반환된 결과의 순서를 제어할 수 있습니다.
+[검색 결과](./search-results.md) 위젯에 표시되는 검색 결과는 [관련성 점수](./search-results.md#search-results-relevance) 순으로 정렬됩니다([검색 엔진]에서 계산됨). (https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) 기본적으로 제공됩니다. 정렬 위젯을 사용하여 사용자는 반환된 결과의 순서를 제어할 수 있습니다.
 
 [검색 페이지](../working-with-search-pages/search-pages.md) 에 위젯을 추가하여 결과 정렬을 시작합니다.
 
@@ -11,7 +11,7 @@
 - 생성 날짜 기준(기본적으로 최신순 또는 가장 오래된순 선택)
 - 일치하는 각 자산을 생성한 사용자의 알파벳순
 
-정렬 위젯의 미리 구성된 정렬 전략 중 하나를 선택하거나 직접 구성하십시오.
+정렬 위젯의 미리 구성된 정렬 전략 중 하나를 선택하거나 직접 구성하십시오. 
 
 위젯에서 원하지 않는 정렬 옵션을 삭제할 수도 있습니다.
 
@@ -42,16 +42,16 @@
 
 ![사용자는 정렬 위젯을 사용하여 검색 결과를 재정렬할 수 있습니다.](./sorting-search-results/images/04.gif)
 
+
 ```{note}
 관련성은 켜거나 끌 수 있지만 완전히 제거할 수는 없습니다. 관련성이 활성화되면 기본 검색 엔진 동작이 사용됩니다. 결과는 관련성의 내림차순으로 정렬됩니다(가장 높은 점수 먼저).
 ```
 
-위젯 구성 화면에 액세스하려면 위젯 옵션 메뉴(![Options](../../../images/icon-app-options.png))를 열고 **구성** 를 클릭합니다.
+위젯 구성 화면에 액세스하려면 위젯 옵션 메뉴(![Options](../../../images/icon-app-options.png))를 열고 **구성** 클릭합니다.
 
-각 정렬 옵션에는 **인덱싱된 필드 이름** , **표시 레이블** 및 **순서** 의 세 가지 설정이 있습니다.
+각 정렬 옵션에는 **인덱싱된 필드** , **표시 레이블** 및 **순서** 의 세 가지 설정이 있습니다.
 
-
-**색인 필드 이름:** 정렬할 색인 필드의 `fieldName` 을 입력합니다. 대부분의 경우 이것은 [키워드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) 필드입니다. 다른 허용 가능한 옵션은 `날짜` 및 [숫자 데이터 유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html) 입니다. 정렬 위젯을 사용하여 `텍스트` 필드가 작동하도록 강제하는 방법도 있습니다(아래 참조).
+**인덱스 필드:** 정렬할 인덱스 필드의 `fieldName` 입력합니다. 대부분의 경우 이것은 [키워드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) 필드입니다. 다른 허용 가능한 옵션은 `날짜` 및 [숫자 데이터 유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html) 입니다. 정렬 위젯을 사용하여 `텍스트` 필드가 작동하도록 강제하는 방법도 있습니다(아래 참조). 
 
 **표시 레이블:** 구성 중인 정렬 유형에 대해 표시된 레이블을 설정합니다.
 
@@ -84,8 +84,9 @@
     "type" : "date"
     
     "type" : "long"
+    
 
-`텍스트` 필드로 정렬해야 하는 경우 유형 `키워드`을 사용하여 인덱스에 새 버전의 필드를 추가합니다. 위에서 언급한 필드 매핑 화면에서 `liferay-[companyID]`라는 인덱스의 `firstName` 필드를 확인합니다.
+`텍스트` 필드로 정렬해야 하는 경우 유형 `키워드`사용하여 인덱스에 새 버전의 필드를 추가합니다. 위에서 언급한 필드 매핑 화면에서 `liferay-[companyID]`라는 인덱스의 `firstName` 필드를 확인합니다. 
 
 ```
 "firstName" : {
@@ -98,7 +99,7 @@
 },
 ```
 
-접미사가 `_sortable`이고 올바른 정렬 유형(`키워드`)이 있는 해당 필드가 있습니다. 정렬 가능한 필드는 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) 을 통해 도착했습니다.
+접미사가 `_sortable`이고 올바른 정렬 유형(`키워드`)이 있는 해당 필드가 있습니다. 정렬 가능한 필드는 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) 통해 도착했습니다.
 
 ```properties
 index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
@@ -108,7 +109,7 @@ index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 
 ## 새 정렬 옵션 추가
 
-새 필드 또는 적절한 유형의 기존 필드를 기준으로 정렬하려면 **옵션** 추가 버튼을 클릭합니다.
+새 필드 또는 적절한 유형의 기존 필드를 기준으로 정렬하려면 **옵션** 추가 버튼을 클릭합니다. 
 
 ```{tip}
 위젯 구성에서 텍스트 필드의 `fieldName_sortable` 버전을 사용해야 합니다. 
@@ -126,43 +127,51 @@ index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 
 클래식 구성에서 정렬 옵션의 순서를 제어하려면 `fieldName`뒤에 더하기 또는 빼기 기호를 추가하십시오. 작동 방식을 이해하려면 **생성됨** 및 **생성됨(오래된 것부터**) 으로 레이블이 지정된 기존 정렬 옵션이 어떻게 수행되는지 살펴보십시오.
 
-**레이블:** **생성됨**
-**필드:** `createDate-`
+**레이블:** **생성됨_** 필드:** `createDate-`
 
-필드 이름 뒤에 있는 `-` 기호는 순서가 **내림차순** 임을 나타냅니다. 이 방법으로 정렬하면 가장 최근에 생성된 검색 결과가 목록의 맨 위에 표시됩니다.
+필드 이름 뒤에 오는 `기호는 순서가 <em x-id="4">내림차순</em>임을 나타`.  이 방법으로 정렬하면 가장 최근에 생성된 검색 결과가 목록의 맨 위에 표시됩니다.
 
-**라벨:** **생성됨(오래된 것부터**)
-**필드:** `createDate+`
+**라벨:** **생성됨(오래된 것부터**)**필드:** `createDate+`
 
 필드 이름 뒤에 오는 `+` 기호는 순서가 **오름차순** 임을 나타냅니다.  이 방법으로 정렬하면 가장 오래된(만든 날짜 기준) 결과가 목록의 맨 위에 표시됩니다.
 
 ## 중첩된 필드로 정렬
 
-{bdg-secondary}`사용 가능 7.2 FP12+, 7.3 FP2+, 7.4(모든 업데이트)`
+### 개체 정의 필드별 정렬
 
-[중첩된 DDM 필드 액세스](../search-facets/custom-facet.md#accessing-nested-ddm-fields) 에 설명된 대로 DDM 필드는 Liferay 7.2 SP3+/FP8+(및 모든 Liferay 7.3 버전)에서 [중첩된 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 가 되었습니다. 7.2 및 7.3의 최신 수정 팩 및 GA 릴리스에서는 이러한 중첩 필드를 설명하기 위해 [Elasticsearch 중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 이 지원됩니다.
+{bdg-secondary}`7.4 U72+/GA72+`
 
-Elasticsearch 문서의 루트에 있는 `ddm__keyword__*` 필드에 의존하는 정렬 구성은 계속 유효합니다. 검색 프레임워크 자체는 중첩 필드 유형을 고려하여 조정되었습니다. 더 이상 문서의 루트에 있지 않더라도 정렬 위젯의 **필드** 구성에서 평소와 같이 이러한 필드를 사용하십시오.
-
-정렬 위젯은 키워드, 날짜 및 숫자 필드에서 작동합니다. 색인의 기존 문서에서 DDM 키워드 필드를 찾으려면
+[객체 정의](../../../building-applications/objects.md) 필드는 Elasticsearch에서 중첩 필드로 인덱싱됩니다. 인덱스의 기존 문서에서 개체 필드를 찾으려면 검색 결과 위젯에서 [문서 형식](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 에 결과 표시 설정을 사용합니다.
 
 ```json
-GET liferay-20097/_search
-{
-  "query": {
-    "nested": {
-      "path": "ddmFieldArray",
-      "query": {
-        "wildcard":  { "ddmFieldArray.ddmFieldName": "ddm__keyword*" }
-      }
-    }
-  }
-}
+"nestedFieldArray" : [
+   {
+     "fieldName" : "lastAcessed",
+     "valueFieldName" : "value_date",
+     "value_date" : "20230502000000"
+   },
+   {
+     "fieldName" : "immunityType",
+     "valueFieldName" : "value_keyword",
+     "value_keyword" : "diplomatic"
+   },
+   {
+     "fieldName" : "luckyNumber",
+     "valueFieldName" : "value_integer",
+     "value_integer" : "19"
+   }
+],
 ```
 
-인스턴스 값과 일치하도록 인덱스 이름 매개변수에서 Company Id---`20097`---을 바꿉니다.
+개체의 필드를 기준으로 정렬하려면 패턴 `nestedFieldArray에 따라 특별한 표기법이 필요합니다.[fieldName].[valueFieldName]`. 예를 들어 위의 중첩 배열에서 `lastAccessed` 날짜 필드를 기준으로 정렬하려면 정렬 위젯 구성의 색인 필드로 `nestedFieldArray.lastAccessed.value_date` 입력합니다.
 
-반환된 문서에는 중첩된 콘텐츠가 있는 `ddmFieldArray` 개체가 있습니다.
+### 웹 콘텐츠 구조 필드별 정렬
+
+{bdg-secondary}`7.2 FP12+, 7.3 FP2+, 7.4(모든 업데이트)`
+
+정렬 위젯은 키워드, 날짜 및 숫자 필드에서 작동합니다. 색인의 기존 문서에서 웹 컨텐츠 구조(DDM) 필드를 찾으려면 검색 결과 위젯에서 [문서 양식](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 에 결과 표시 설정을 사용하십시오.
+
+문서에는 중첩된 콘텐츠가 있는 `ddmFieldArray` 개체가 있습니다.
 
 ```json
  "ddmFieldArray" : [
@@ -187,4 +196,15 @@ GET liferay-20097/_search
   ],
 ```
 
-정렬 구성에서 이러한 필드 중 하나를 사용하려면 `ddmFieldName` 값(예: `ddm__keyword__40806__Testb5mx_en_US`)을 **필드** 설정으로 입력하십시오.
+정렬 구성에서 이러한 필드 중 하나를 사용하려면 인덱싱된 필드 설정으로 `ddmFieldName` 값(예: `ddm__keyword__40806__Testb5mx_en_US`)을 입력하십시오.
+
+버전에 따라 Elasticsearch에 기본적으로 [중첩 필드 저장소](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 활성화될 수 있습니다.
+
+| 라이프레이 버전         | 기본적으로 활성화된 중첩 필드 |
+|:---------------- |:---------------- |
+| 7.4 모든 업데이트      | &#10004;         |
+| 7.3 모든 업데이트      | &#10004;         |
+| DXP 7.2 SP3/FP8+ | &#10008;         |
+
+동작을 변경하려면 시스템 설정 &rarr; 동적 데이터 매핑 인덱서에서 **레거시 동적 데이터 매핑 인덱스 필드 활성화** 설정을 사용합니다.
+

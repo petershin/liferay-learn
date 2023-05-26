@@ -1,8 +1,8 @@
 # 워크플로 작업 노드 참조
 
-이름에서 알 수 있듯이 작업은 작업 **작업** 이 완료되는 워크플로의 일부입니다. 작업은 제출된 자산을 검토하고 워크플로의 자산이 게시에 적합한지 또는 추가 작업이 필요한지 결정하는 사용자에게 할당되어야 합니다.
+작업은 작업이 수행되는 워크플로의 일부입니다. 작업은 제출된 자산을 검토하고 워크플로의 콘텐츠를 게시할 수 있는지 또는 추가 작업이 필요한지 결정하는 사용자에게 할당되어야 합니다.
 
-다른 워크플로우 노드와 달리 태스크 노드에는 할당이 있습니다. 워크플로우 프로세스가 태스크 노드에 들어갈 때 사용자가 **무언가**(종종 제출된 자산을 승인하거나 거부함) 해야 하기 때문입니다.
+다른 워크플로우 노드와 달리 태스크 노드에는 할당이 있습니다. 워크플로우 프로세스가 태스크 노드에 들어갈 때 사용자가 무언가를 해야 하기 때문입니다(보통 제출을 승인하거나 거부함).
 
 일반적으로 작업 노드에는 작업 타이머, 할당, 작업(알림 및 스크립트를 포함할 수 있음) 및 전환이 포함됩니다. 알림 및 작업은 작업 노드로 제한되지 않지만 작업 노드 및 해당 할당은 자체 문서(이 문서)를 받을 자격이 있습니다.
 
@@ -60,36 +60,54 @@
 
 워크플로 작업은 사용자가 완료합니다. 할당은 올바른 사용자가 작업에 액세스할 수 있도록 합니다. 할당을 구성하는 방법을 선택할 수 있습니다. 에 과제를 추가할 수 있습니다.
 
-* 특정 역할
-* 역할 유형의 여러 역할(조직, 사이트, 자산 라이브러리, 계정 또는 일반 역할 유형)
+* 모든 유형의 특정 역할(조직, 사이트, 자산 라이브러리, 계정 또는 일반)
+
+   ```xml
+   <assignments>
+       <roles>
+           <role>
+               <role-type>organization</role-type>
+               <name>Organization Administrator</name>
+           </role>
+       </roles>
+   </assignments>
+   ```
+
+   위의 할당은 조직 관리자가 작업을 완료해야 함을 지정합니다.
+
 * 자산 작성자
+
+   ```xml
+   <assignments>
+      <user />
+   </assignments>
+   ```
+
 * 리소스 작업
+
+   ```xml
+   <assignments>
+       <resource-actions>
+           <resource-action>UPDATE</resource-action>
+       </resource-actions>
+   </assignments>
+   ```
+
 * 특정 사용자
 
-또한 할당을 정의하는 스크립트를 작성할 수 있습니다. 예를 보려면 [single-approver-scripted-assignment-workflow-definition.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml) 참조하십시오.
+   ```xml
+   <assignments>
+       <user>
+           <user-id>20156</user-id>
+       </user>
+   </assignments>
+   ```
 
-```xml
-<assignments>
-    <roles>
-        <role>
-            <role-type>organization</role-type>
-            <name>Organization Administrator</name>
-        </role>
-    </roles>
-</assignments>
-```
+   위의 할당은 ID `20156` 인 사용자만 작업을 완료할 수 있도록 지정합니다. 또는 사용자의 `<screen-name>` 또는 `<email-address>`지정하십시오.
 
-위의 할당은 조직 관리자가 작업을 완료해야 함을 지정합니다.
+할당을 정의하는 스크립트를 작성할 수 있습니다. 예를 보려면 [single-approver-scripted-assignment-workflow-definition.xml](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-runtime-impl/src/main/resources/META-INF/definitions/single-approver-scripted-assignment-workflow-definition.xml) 참조하십시오.
 
-```xml
-<assignments>
-    <user>
-        <user-id>20156</user-id>
-    </user>
-</assignments>
-```
-
-위 할당은 사용자 ID가 20156인 사용자만 작업을 완료할 수 있도록 지정합니다. 또는 User의 `<screen-name>` 또는 `<email-address>` 지정합니다.
+`사용자` 변수에 단일 사용자를 설정하거나 `사용자` 변수의 목록에 사용자를 추가합니다. 역할 할당을 지정하려면 역할 목록(하나뿐인 경우에도)을 `roles` 변수에 추가합니다.
 
 ```xml
 <assignments>
@@ -126,7 +144,6 @@
                         roles.add(role);
                     }
 
-                    user = null;
                 ]]>
             </script>
         <script-language>groovy</script-language>
@@ -134,17 +151,17 @@
 </assignments>
 ```
 
-위 할당은 작업을 **관리자** 역할에 할당한 다음 자산의 **그룹** 조직인지 확인합니다. 그렇다면 **조직 콘텐츠 검토자** 역할이 할당됩니다. 그렇지 않은 경우 작업은 **사이트 콘텐츠 검토자** 역할에 할당됩니다.
+위 할당은 관리자 역할에 작업을 할당한 다음 자산의 그룹이 조직인지 확인합니다. 그렇다면 조직 콘텐츠 검토자 역할이 할당됩니다. 그렇지 않은 경우 사이트 콘텐츠 검토자 역할에 작업이 할당됩니다.
 
 `개의 역할 = new ArrayList<Role>(); 위` 줄. 스크립팅된 할당에서 `역할` 변수는 작업이 할당된 역할을 지정하는 사이트입니다. 예를 들어, `인 경우 roles.add(adminRole);` 이 호출되면 관리자 역할이 할당에 추가됩니다.
 
 ## 자원 작업 지정
 
-사용자는 **업데이트** 작업과 같은 리소스 작업에 작업을 할당할 수 있습니다. 워크플로 정의가 할당에서 업데이트 작업을 지정하는 경우 워크플로에서 처리 중인 자산 유형을 업데이트할 수 있는 권한이 있는 사람은 누구나 작업에 할당됩니다. 작업에 대해 여러 할당을 구성할 수 있습니다.
+사용자는 업데이트 작업과 같은 리소스 작업에 작업을 할당할 수 있습니다. 워크플로 정의가 할당에서 업데이트 작업을 지정하는 경우 워크플로에서 처리 중인 콘텐츠를 업데이트할 수 있는 권한이 있는 사람은 누구나 작업에 할당됩니다. 작업에 대해 여러 할당을 구성할 수 있습니다.
 
-**리소스 작업** 응용 프로그램 또는 엔터티에서 사용자가 수행하는 작업입니다. 예를 들어 사용자는 게시판 메시지를 업데이트할 권한이 있을 수 있습니다. 사용자가 리소스를 업데이트할 수 있으므로 이를 리소스 업데이트 작업이라고 합니다. 리소스 작업이 무엇인지 확실하지 않은 경우 자세한 설명은 [권한 시스템](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) 에 대한 개발자 자습서를 참조하십시오.
+**리소스 작업** 애플리케이션 또는 엔터티에서 사용자가 수행하는 작업입니다. 예를 들어 사용자는 게시판 메시지를 업데이트할 권한이 있을 수 있습니다. 사용자가 리소스를 업데이트할 수 있으므로 이를 리소스 업데이트 작업이라고 합니다.
 
-생성된 모든 리소스 작업을 찾으려면 제어판에서 역할 관리 애플리케이션에 액세스해야 합니다(즉, 역할 리소스에 대한 보기 작업에 대한 권한이 필요함).
+사용 가능한 모든 리소스 작업을 찾으려면 제어판에서 역할 관리 애플리케이션에 대한 액세스 권한이 필요합니다(즉, 역할 리소스에 대한 `보기` 작업에 대한 권한이 필요함).
 
 1. **제어판** &rarr; **사용자** &rarr; **역할** 로 이동합니다.
 1. 새 정규 역할을 추가합니다. 자세한 내용은 [역할 관리](../../../users-and-permissions/roles-and-permissions/creating-and-managing-roles.md) 참조하십시오.
@@ -161,9 +178,9 @@
 </assignments>
 ```
 
-이제 워크플로가 리소스 작업 할당이 있는 작업을 진행할 때 리소스(예: 게시판 메시지)에 대한 '업데이트' 권한이 있는 사용자는 작업에 대한 알림을 받고 자신에게 할당할 수 있습니다(알림이 작업으로 설정된 경우). 양수인). 특히 사용자는 **내 역할에 할당됨** 탭 아래의 **내 워크플로 작업** 애플리케이션에서 작업을 볼 수 있습니다.
+이제 워크플로가 리소스 작업 할당이 있는 작업을 진행할 때 리소스에 대한 업데이트 권한(예: 게시판 메시지)이 있는 사용자는 작업에 대한 알림을 받고 자신에게 작업을 할당할 수 있습니다(알림이 작업 담당자로 설정된 경우). 특히 사용자는 내 역할에 할당된 탭 아래의 내 워크플로 작업 애플리케이션에서 작업을 볼 수 있습니다.
 
-리소스 작업 이름에는 모두 대문자를 사용하십시오. 다음은 몇 가지 일반적인 리소스 작업입니다. 
+리소스 작업 이름에는 모두 대문자를 사용하십시오. 다음은 몇 가지 일반적인 리소스 작업입니다.
 
 * 업데이트
 * 추가하다
@@ -173,7 +190,7 @@
 * 구독하다
 * 추가_토론
 
-리소스에 대한 권한 화면에서 가능한 리소스 작업 이름을 결정합니다. 예를 들어 게시판에서 해당 화면에 표시되는 권한 중 하나는 **토론 추가** 입니다. 모두 대문자로 변환하고 공백을 밑줄로 바꾸면 작업 이름이 생깁니다.
+리소스에 대한 권한 화면에서 가능한 리소스 작업 이름을 결정합니다. 예를 들어 게시판에서 해당 화면에 표시되는 권한 중 하나는 토론 추가입니다. 모두 대문자로 변환하고 공백을 밑줄로 바꾸면 작업 이름이 생깁니다.
 
 ## 작업 타이머
 
@@ -230,7 +247,7 @@
 `timer-action`은 `execution-type`을 제외하고 `action`과 동일한 태그를 모두 포함할 수 있습니다. 타이머 작업은 시간이 다 되면 항상 트리거되므로 예를 들어 `onEntry`의 지정 및 실행 유형은 타이머 내에서 의미가 없습니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [XML 워크플로 정의 만들기](./crafting-xml-workflow-definitions.md)
 * [워크플로 정의 노드 참조](./workflow-definition-node-reference.md)

@@ -6,7 +6,7 @@
 
 ## 기존 카탈로그 페이지 복사
 
-Liferay DXP 7.4 U22+ 및 GA22+에서 Miniium 사이트의 카탈로그 페이지를 복사하려면 먼저 인스턴스에 대해 개인 페이지 [을 활성화해야](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages/understanding-pages.html#enabling-private-pages) . 이전 버전을 사용 중인 경우 이 단계가 필요하지 않습니다.
+Liferay DXP 7.4 U22+ 및 GA22+에서 Miniium 사이트의 카탈로그 페이지를 복사하려면 먼저 인스턴스에 대해 개인 페이지 [페이지 이해](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/understanding-pages/understanding-pages.html#enabling-private-pages) . 이전 버전을 사용 중인 경우 이 단계가 필요하지 않습니다.
 
 1. 비공개 페이지가 활성화되면 **사이트 메뉴**(![Site Menu](../images/icon-product-menu.png))을 열고 **사이트 빌더** &rarr; **페이지** 로 이동합니다.
 

@@ -16,7 +16,7 @@ Liferay는 페이지 위젯에 대해 다음과 같은 범위 옵션을 제공�
 
 1. 페이지 편집을 시작합니다.
 
-1. 원하는 위젯 위로 마우스를 이동하고 **옵션** 버튼( ![Options Button](../../../../images/icon-app-options.png) )을 클릭한 다음 **구성** 선택합니다.
+1. 원하는 위젯 위로 마우스를 이동하고 **옵션** 버튼( ![Options Button](../../../../../images/icon-app-options.png) )을 클릭한 다음 **구성** 선택합니다.
 
 1. **범위** 탭으로 이동하고 드롭다운 메뉴를 사용하여 범위를 선택합니다.
 
@@ -28,11 +28,11 @@ Liferay는 페이지 위젯에 대해 다음과 같은 범위 옵션을 제공�
 
 1. **저장** 클릭합니다.
 
-새 위젯 범위를 생성하면 사이트 메뉴( ![Site Menu](../../../../images/icon-product-menu.png) )의 콘텐츠 & 데이터 아래에 범위 구성 버튼(![Scope Configuration Button](../../../../images/icon-cog.png))이 나타납니다. 이를 사용하여 기본 범위 또는 사용 가능한 페이지 범위를 선택할 수 있습니다. 선택에 따라 각 유형을 관리할 때 표시되는 콘텐츠가 변경됩니다.
+새 위젯 범위를 생성하면 사이트 메뉴( ![Site Menu](../../../../../images/icon-product-menu.png) )의 콘텐츠 & 데이터 아래에 범위 구성 버튼(![Scope Configuration Button](../../../../../images/icon-cog.png))이 나타납니다. 이를 사용하여 기본 범위 또는 사용 가능한 페이지 범위를 선택할 수 있습니다. 선택에 따라 각 유형을 관리할 때 나타나는 콘텐츠가 변경됩니다.
 
 ![콘텐츠 & 데이터 아래의 범위 구성 단추를 사용하여 콘텐츠를 관리할 범위를 결정합니다.](./setting-widget-scopes/images/02.png)
 
-## 추가 정보
+## 관련 주제
 
 * [위젯 데이터 내보내기/가져오기](./exporting-importing-widget-data.md)
 * [게시판 범위 지정](../../../../../collaboration-and-social/message-boards/user-guide/scoping-your-message-boards.md)

@@ -1,5 +1,7 @@
 # 구글 클라우드 저장소
 
+{bdg-primary}`자체 호스팅 전용`
+
 > Liferay DXP 7.3 SP3+ 및 7.4+에서 사용 가능
 
 Liferay DXP는 Google의 Cloud Storage(GCS) 서비스와의 통합을 제공합니다. GCS 통합을 통해 클라우드에서 Liferay 인스턴스 파일을 원활하게 저장하고 액세스할 수 있습니다.
@@ -12,7 +14,7 @@ Liferay DXP는 Google의 Cloud Storage(GCS) 서비스와의 통합을 제공합�
 
 ## GCS 전제 조건
 
-Liferay의 GCS 통합을 활성화하려면 활성 GCS 계정과 프로젝트가 필요합니다. 서버 간, 앱 수준 인증을 사용하려면 이 프로젝트에 [스토리지 버킷](https://cloud.google.com/storage/docs/creating-buckets) 과 [서비스 계정](https://cloud.google.com/iam/docs/creating-managing-service-accounts) 이 있어야 합니다. 서비스 계정에 대한 JSON [보안 키](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) 도 생성해야 합니다. 자세한 내용은 공식 [Google Cloud Storage](https://cloud.google.com/storage/docs) 문서를 참조하세요.
+Liferay의 GCS 통합을 활성화하려면 활성 GCS 계정과 프로젝트가 필요합니다. 서버 간, 앱 수준 인증을 사용하려면 이 프로젝트에 [스토리지 버킷](https://cloud.google.com/storage/docs/creating-buckets) 과 [서비스 계정](https://cloud.google.com/iam/docs/creating-managing-service-accounts) 있어야 합니다. 서비스 계정에 대한 JSON [보안 키](https://cloud.google.com/iam/docs/creating-managing-service-account-keys) 도 생성해야 합니다. 자세한 내용은 공식 [Google Cloud Storage](https://cloud.google.com/storage/docs) 문서를 참조하세요.
 
 ```{important}
 서비스 계정의 보안 키는 JSON 키 유형을 사용해야 합니다.
@@ -24,7 +26,7 @@ GCS 저장소를 구성하려면 다음 단계를 따르세요.
 
 1. **글로벌 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** 탭을 클릭한 다음 **구성** &rarr; **시스템 설정** 로 이동합니다.
 
-1. **파일 스토리지** 을 클릭하십시오.
+1. **파일 스토리지** 클릭하십시오.
 
    ![시스템 설정에서 파일 저장소를 클릭합니다.](./google-cloud-storage/images/01.png)
 
@@ -32,9 +34,9 @@ GCS 저장소를 구성하려면 다음 단계를 따르세요.
 
 1. (필수) 다음 정보를 입력합니다.
 
-   * **서비스 계정 키** : GCS 프로젝트의 서비스 계정에 안전하게 접근하기 위해 사용되는 비공개 JSON 키.
+   ****서비스 계정 키** : GCS 프로젝트의 서비스 계정에 안전하게 접근하기 위해 사용되는 비공개 JSON 키.
 
-   * **Bucket Name** : 파일을 저장하는 GCS 버킷의 이름.
+   ****Bucket Name** : 파일을 저장하는 GCS 버킷의 이름.
 
    ![서비스 계정 키와 버킷 이름을 입력합니다.](./google-cloud-storage/images/02.png)
 
@@ -46,7 +48,7 @@ GCS 저장소를 구성하려면 다음 단계를 따르세요.
 
    ![AES-256 암호화 키를 입력합니다.](./google-cloud-storage/images/04.png)
 
-1. 완료되면 **저장** 을 클릭합니다.
+1. 완료되면 **저장** 클릭합니다.
 
 GCS Store를 구성하면 GCS를 기본 파일 저장소 시스템으로 설정할 수 있습니다.
 
@@ -66,7 +68,7 @@ GCS를 Liferay 인스턴스의 기본 저장소로 사용하려면 다음 단계
 
 1. Liferay 서버를 다시 시작하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [문맥 재산](../../../installation-and-upgrades/reference/portal-properties.md)
 * [파일 스토리지](../../file-storage.md)

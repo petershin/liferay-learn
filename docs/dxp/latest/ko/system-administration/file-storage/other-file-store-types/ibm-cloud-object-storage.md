@@ -1,5 +1,7 @@
 # IBM 클라우드 오브젝트 스토리지
 
+{bdg-primary}`자체 호스팅 전용`
+
 Liferay DXP는 AWS S3 저장소와 동일한 구성을 사용하도록 S3 호환성 계층으로 IBM의 [Cloud Object Storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) 저장소를 구현합니다. IBM 계정을 설정하고 버킷을 생성했으면 인스턴스의 S3 Store를 구성할 준비가 된 것입니다.
 
 ## 상점 구성
@@ -18,7 +20,7 @@ Liferay DXP는 AWS S3 저장소와 동일한 구성을 사용하도록 S3 호환
    현재 상점은 *HMAC 자격 증명*만 지원합니다. 자세한 정보는 공식 [IBM Cloud Object Storage 문서](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-uhc-hmac-credentials-main) 를 참조하세요.
    ```
 
-1. 완료되면 **저장** 을 클릭합니다.
+1. 완료되면 **저장** 클릭합니다.
 
 시스템 설정 구성이 완료되면 IBM Cloud Object Storage 저장소를 기본값으로 설정해야 합니다. 이렇게 하려면 `portal-ext.properties` 파일에서 다음 특성을 설정하십시오.
 
@@ -36,7 +38,7 @@ dl.store.impl=com.liferay.portal.store.s3.IBMS3Store
 
 IBM 서비스 사용에 대한 자세한 내용은 공식 IBM Cloud Object Storage 문서를 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [파일 스토리지](../../file-storage.md)
 * [아마존 S3 스토어](./amazon-s3-store.md)

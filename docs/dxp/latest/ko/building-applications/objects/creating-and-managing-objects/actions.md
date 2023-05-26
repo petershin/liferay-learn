@@ -2,7 +2,7 @@
 toc:
   - ./actions/defining-object-actions.md
   - ./actions/understanding-action-types.md
-  - ./action/using-manual-actions.md
+  - ./actions/using-manual-actions.md
 ---
 # 액션
 

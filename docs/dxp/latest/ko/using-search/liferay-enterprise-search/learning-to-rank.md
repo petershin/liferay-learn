@@ -30,7 +30,7 @@ LES Learning to Rank가 배포되었지만 특정 검색 페이지에서 비활�
 
 Elasticsearch로 전송된 Liferay 쿼리를 다시 채점하기 위해 Learning to Rank를 사용하기 위한 몇 가지 전제 조건이 있습니다.
 
-- 순위 학습에는 [Liferay Enterprise Search](https://customer.liferay.com/en/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191013&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKG 파일을 만들고 [설치합니다](../../system-administration/installing-and-managing-apps/installing-apps.md).
+- 순위 학습에는 [Liferay Enterprise Search](https://customer.liferay.com/en/downloads?p **p** id=com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet&** com **liferay** osb **customer** downloads **display** web **DownloadsDisplayPortlet** productAssetCategoryId=118191013& **com** liferay **osb** customer **downloads** display **web** DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKG 파일을 만들고 [설치합니다](../../system-administration/installing-and-managing-apps/installing-apps.md).
 
    ```{note}
    Liferay DXP 7.4부터 Liferay Enterprise Search(LES) 애플리케이션이 모든 Liferay DXP 번들 및 Docker 컨테이너에 포함됩니다. 자세한 내용은 [LES 활성화](./activating-liferay-enterprise-search.md)를 참조하세요.

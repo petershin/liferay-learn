@@ -27,15 +27,15 @@ Liferay Cloud의 서비스는 기본적으로 제대로 작동하도록 미세 �
 
 다음 환경 변수는 웹 서버 서비스에 사용할 수 있습니다.
 
-| 이름                                        | 기본값  | 묘사                                                                                                                                                                                                              |
-|:----------------------------------------- |:---- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `LCP_HAPROXY_RESOLVER_HOLD_TIME`          | `10` | HAProxy 로드 밸런서에 대한 [`hold` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-hold) 을 구성합니다. 이 구성은 `유효` 상태용입니다.                                                                            |
-| `LCP_HAPROXY_RESOLVER_RETRIES`            | `3`  | HAProxy 로드 밸런서에 대한 [`resolve_retries` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-resolve_retries) 을 구성합니다(포기하기 전에 세션이 서버에 연결을 시도하는 재시도 횟수).                                        |
-| `LCP_HAPROXY_RESOLVER_TIMEOUT_RESOLVE`    | `1`  | HAProxy 로드 밸런서에 대한 [`시간 초과` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-timeout) 을 구성합니다(이벤트 시간 초과 시간(초)). 이 구성은 `해결` 이벤트용입니다.                                                      |
-| `LCP_HAPROXY_RESOLVER_TIMEOUT_RETRY`      | `1`  | HAProxy 로드 밸런서에 대한 [`시간 초과` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-timeout) 을 구성합니다(이벤트 시간 초과 시간(초)). 이 구성은 `재시도` 이벤트용입니다.                                                     |
-| `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` | `10` | 모든 서비스의 최대 인스턴스 수를 재정의합니다. [자동 크기 조정](../manage-and-optimize/auto-scaling.md) 을 사용하려는 경우 필요한 가장 높은 값으로 설정합니다.                                                                                                |
-| `LCP_WEBSERVER_LOG_FORMAT`                |      | Nginx 로깅 형식을 사용자 지정합니다. [공식 Nginx 문서](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/#setting-up-the-access-log) 를 참조하십시오.                                                                          |
-| `LCP_WEBSERVER_MOD_SECURITY`              | `끔`  | ModSecurity를 활성화 또는 비활성화합니다. 규칙을 활성화하고 처리하려면 이 값을 `On` 로 설정하고 중단 작업을 실행하지 않고 규칙을 처리하려면 `DetectionOnly` 으로 설정합니다. [웹 애플리케이션 방화벽](../infrastructure-and-operations/security/web-application-firewall.md)을 참조하십시오. |
+| 이름                                        | 기본값   | 묘사                                                                                                                                                                                                            |
+|:----------------------------------------- |:----- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `LCP_HAPROXY_RESOLVER_HOLD_TIME`          | `10`  | HAProxy 로드 밸런서에 대한 [`hold` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-hold) 을 구성합니다. 이 구성은 `유효` 상태용입니다.                                                                          |
+| `LCP_HAPROXY_RESOLVER_RETRIES`            | `3`   | HAProxy 로드 밸런서에 대한 [`resolve_retries` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-resolve_retries) 을 구성합니다(포기하기 전에 세션이 서버에 연결을 시도하는 재시도 횟수).                                      |
+| `LCP_HAPROXY_RESOLVER_TIMEOUT_RESOLVE`    | `1`   | HAProxy 로드 밸런서에 대한 [`시간 초과` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-timeout) 을 구성합니다(이벤트 시간 초과 시간(초)). 이 구성은 `해결` 이벤트용입니다.                                                    |
+| `LCP_HAPROXY_RESOLVER_TIMEOUT_RETRY`      | `1`   | HAProxy 로드 밸런서에 대한 [`시간 초과` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-timeout) 을 구성합니다(이벤트 시간 초과 시간(초)). 이 구성은 `재시도` 이벤트용입니다.                                                   |
+| `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` | `10`  | 모든 서비스의 최대 인스턴스 수를 재정의합니다. [자동 크기 조정](../manage-and-optimize/auto-scaling.md) 을 사용하려는 경우 필요한 가장 높은 값으로 설정합니다.                                                                                              |
+| `LCP_WEBSERVER_LOG_FORMAT`                |       | Nginx 로깅 형식을 사용자 지정합니다. [공식 Nginx 문서](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/#setting-up-the-access-log) 참조하십시오.                                                                          |
+| `LCP_WEBSERVER_MODSECURITY`               | `Off` | ModSecurity를 활성화 또는 비활성화합니다. 규칙을 활성화하고 처리하려면 이 값을 `On` 로 설정하고 중단 작업을 실행하지 않고 규칙을 처리하려면 `DetectionOnly` 으로 설정합니다. [웹 애플리케이션 방화벽](../infrastructure-and-operations/security/web-application-firewall.md)참조하십시오. |
 
 [수신 로드 밸런서](../infrastructure-and-operations/networking/load-balancer.md) 도 웹 서버 서비스를 통해 구성됩니다. 이 서비스에 환경 변수를 추가하여 로드 밸런서 및 사용자 지정 도메인을 구성할 수 있습니다. 자세한 내용은 [로드 밸런서 환경 변수 참조](../infrastructure-and-operations/networking/load-balancer.md#environment-variables-reference) 을 참조하십시오.
 
@@ -43,9 +43,9 @@ Nginx에 대한 모든 환경 변수 및 기타 구성 형식은 [공식 Nginx �
 
 ## 스크립트
 
-보다 광범위한 사용자 정의를 위해 스크립트를 사용할 수 있습니다. 그러나 그렇게 할 때는 하십시오. 이것은 웹 서버 서비스를 사용자 정의하는 가장 강력한 방법이며 은 원하지 않는 부작용을 일으킬 수 있습니다.
+보다 광범위한 사용자 정의를 위해 스크립트를 사용할 수 있습니다. 그러나 할 때는 주의하십시오. 이것은 웹 서버 서비스를 사용자 정의하는 가장 강력한 방법이며 원하지 않는 부작용을 일으킬 수 있습니다.
 
-`configs/{ENV}/scripts/` 폴더에 있는 `.sh` 파일은 서비스를 시작하기 전에 실행됩니다. 예를 들어 모든 로그 파일을 제거하는 스크립트를 포함하려면 다음 디렉토리 구조에 배치할 수 . 
+`configs/{ENV}/scripts/` 폴더에 있는 `.sh` 파일은 서비스를 시작하기 전에 실행됩니다. 예를 들어 모든 로그 파일을 제거하는 스크립트를 포함하려면 다음 디렉토리 구조에 할 수 있습니다. 
 
     webserver
     ├── configs

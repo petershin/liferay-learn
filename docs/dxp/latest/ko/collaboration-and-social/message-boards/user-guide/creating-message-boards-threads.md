@@ -1,10 +1,10 @@
 # 게시판 스레드 만들기
 
-기본적으로 필요한 권한(최소 **메시지 추가** , **메시지** 에 회신 3 , **파일 추가** 및 **보기**)이 있는 인증된 사용자만 스레드를 생성할 수 있습니다. 자세한 내용은 [메시지 보드 권한 참조](./message-boards-permissions-reference.md) 을 참조하십시오. 관리자는 게스트가 스레드를 게시할 수 있도록 기능을 활성화할 수 있습니다.
+기본적으로 필요한 권한(최소 **메시지 추가** , **메시지 3에 회신** , **파일 추가** 및 **보기**)이 있는 인증된 사용자만 스레드를 생성할 수 있습니다. 자세한 내용은 [메시지 보드 권한 참조](./message-boards-permissions-reference.md) 을 참조하십시오. 관리자는 게스트가 스레드를 게시할 수 있도록 기능을 활성화할 수 있습니다.
 
 ## 새 스레드 게시
 
-스레드는 메시지 보드 자체의 루트 수준과 생성된 [개의 범주 내에서 생성될 수 있습니다](./creating-message-boards-categories.md).
+스레드는 메시지 보드 자체의 루트 수준과 생성된 [범주 내에서 생성될 수 있습니다](./creating-message-boards-categories.md).
 
 새 스레드를 생성하려면:
 
@@ -31,14 +31,12 @@
 자동 바이러스 백신 검사를 활성화하여 업로드 시 파일을 검사할 수 있습니다. 자세한 내용은 [업로드된 파일에 대한 바이러스 백신 검사 활성화](../../../system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files.md)를 참조하십시오.
 ```
 
-### **태그** 및 **관련 자산** 을 사용하여 스레드 구성
+### **태그** 및 **관련 자산** 사용하여 스레드 구성
 
 **카테고리** 을 사용하여 스레드를 구성하는 것 외에도 사용자는 포럼 게시물에 태그를 추가할 수 있습니다. 이 태그(예: **Toyota**)를 사용하여 콘텐츠를 검색하면 **Toyota** 이 포함된 모든 게시물이 더 빨리 반환됩니다.
 
-1. **분류** 섹션을 확장합니다.
-1. **_** 선택 버튼을 클릭하여 기존 태그를 선택합니다. 또는 **태그** 필드에 태그 이름을 입력하고 **추가** 을 클릭하여 새 태그를 만듭니다. 자세한 내용은 태그 [에 대한](https://help.liferay.com/hc/articles/360028820472-Tagging-Content) 를 참조하십시오.
-
-이제 게시판 게시물에 태그가 있습니다.
+1. **Categorization** 섹션을 확장합니다.
+1. **Select** 버튼을 클릭하여 기존 태그를 선택합니다. 또는 **Tags** 필드에 태그 이름을 입력하고 **Add** 를 클릭하여 새 태그를 만듭니다. 자세한 내용은 [태그 문서](https://help.liferay.com/hc/articles/360028820472-Tagging-Content) 를 참조하세요.
 
 Message Boards 스레드는 DXP의 다른 기존 자산에 연결할 수 있습니다.
 
@@ -50,8 +48,11 @@ Message Boards 스레드는 DXP의 다른 기존 자산에 연결할 수 있습�
 
 메시지 보드 스레드는 **긴급** , **고정** 또는 **공지** 로 우선순위를 지정할 수 있습니다. 기본적으로 "없음"으로 설정되어 있습니다.
 
-1. **추가 설정** 섹션을 확장합니다. <!-- Broken Image Link !\[Figure 4. Setting a thread priority\](./creating-message-boards-threads/images/07.png) -->1. 스레드의 우선 순위를 선택합니다.
-1. **게시** 을 클릭합니다.
+1. **추가 설정** 섹션을 확장합니다.
+
+1. 스레드의 우선 순위를 선택합니다.
+
+1. **게시** 클릭합니다.
 
 새로운 포스트가 생성되었습니다. 사이트 관리자는 나중에 이 게시물을 다른 범주로 이동할 수 있습니다.
 
@@ -70,11 +71,11 @@ Message Boards 스레드는 DXP의 다른 기존 자산에 연결할 수 있습�
 회신을 답변으로 선택하려면:
 
 1. 점 3개 아이콘을 클릭합니다.
-1. **답변으로 표시** 을 클릭합니다.
+1. **답변으로 표시** 클릭합니다.
 
     ![그림 6. 회신은 게시판 질문에 대한 답변으로 표시될 수 있습니다.](./creating-message-boards-threads/images/02.png)
 
-1. 스레드를 게시하려면 **게시** 을 클릭합니다.
+1. 스레드를 게시하려면 **게시** 클릭합니다.
 
 ## 게시판 스레드 답글
 
@@ -86,12 +87,16 @@ Message Boards 스레드는 DXP의 다른 기존 자산에 연결할 수 있습�
 
 1. **응답** 버튼을 클릭합니다. 답장을 입력하기 위한 텍스트 필드만 포함된 빠른 답장 양식이 열립니다.
 1. 텍스트 필드에 답장을 입력합니다. 회신에 대한 더 많은 옵션에 액세스하려면 **고급 회신** 링크를 클릭하십시오. 그러면 스레드 추가/편집 양식에서 전체 편집기가 열립니다.
-1. **게시** 을 클릭합니다.
+1. **게시** 클릭합니다.
 
 메시지에 회신하는 것 외에도 메시지를 평가하거나 불쾌함을 표시할 수 있습니다. 게시판 조정자는 플래그가 지정된 메시지를 평가하고 메시지 및 해당 작성자를 처리하는 방법을 결정할 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
-* [게시판 카테고리 만들기](./creating-message-boards-categories.md) <!-- Is there a placeholder for an article on "Enabling User Mentions for Collaboration Applications"? This should be link to a placeholder.
+* [게시판 카테고리 만들기](./creating-message-boards-categories.md)
+
+<!-- Is there a placeholder for an article on "Enabling User Mentions for Collaboration Applications"? This should be link to a placeholder.
 * User can [mention other users](https://help.liferay.com/hc/en-us/articles/360028720892-Mentioning-Users) by entering the `@` character and their user name.
---> * [메시지 보드 구성 참조](./message-boards-configuration-reference.md)
+-->
+
+* [메시지 보드 구성 참조](./message-boards-configuration-reference.md)

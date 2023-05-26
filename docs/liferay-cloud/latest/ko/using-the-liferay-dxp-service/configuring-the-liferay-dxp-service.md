@@ -16,7 +16,7 @@ liferay
 `common/` 디렉토리를 제외하고 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때만 **전파됩니다. `common/` 디렉토리에 추가된 변경 사항은 대상 배포 환경에 관계없이** 항상_ 배포됩니다. 이것은 모든 서비스에 대해 `configs/` 디렉토리 내의 모든 하위 폴더에 적용됩니다.
 
 ```{note}
-버전 3.xx 서비스를 사용하는 경우 이러한 구성 파일은 대신 적절한 `lcp/liferay/config/{ENV}/` 폴더에 속합니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](../reference/understanding-service-stack-versions.md) 를 참조하세요.
+버전 3.xx 서비스를 사용하는 경우 이러한 구성 파일은 대신 적절한 `lcp/liferay/config/{ENV}/` 폴더에 속합니다. 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해하기](../reference/understanding-service-stack-versions.md)를 참조하십시오.
 ```
 
 ## 문맥 재산
@@ -65,7 +65,7 @@ liferay
 └── LCP.json
 ```
 
-`portal-ext.properties` 및 `portal-all.properties` 파일은 모든 환경에서 공유됩니다. 거기에 공유 속성을 추가하고 각각의 `portal-env.properties` 파일에 환경별 속성을 추가할 수 있습니다. 자세한 내용은 [포털 속성 우선 순위](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html#portal-property-priority) 참조하십시오.
+`portal-ext.properties` 및 `portal-all.properties` 파일은 모든 환경에서 공유됩니다. 거기에 공유 속성을 추가하고 각각의 `portal-env.properties` 파일에 환경별 속성을 추가할 수 있습니다. 자세한 내용은 [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html#portal-property-priority) 참조하십시오.
 
 ```{note}
 포털 특성은 환경 변수로 정의될 수도 있습니다. 자세한 내용은 [환경 변수 참조](./liferay-service-environment-variables.md#environment-variables-reference) 를 참조하세요.
@@ -95,11 +95,11 @@ Liferay Cloud의 Liferay 서비스가 클라우드 플랫폼의 폐쇄형 네트
 
 ## 환경 변수
 
-Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정 또는 데이터베이스 연결 설정과 같이 온프레미스 인스턴스와 다르게 수행되는 일부 구성 대신 환경 변수 [](../reference/defining-environment-variables.md) (또는 비밀 [개](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md))를 사용합니다. 환경 변수를 사용하여 [포털 속성을 재정의하거나 대체할 수도 있습니다](./liferay-service-environment-variables.md#overriding-portal-properties) .
+Liferay Cloud의 Liferay 서비스는 [환경 변수](../reference/defining-environment-variables.md)(또는 [비밀](../infrastructure-and-operations/security/managing-secure-environment-variables- with-secrets.md)) JVM 메모리 설정 또는 데이터베이스 연결 설정과 같이 온프레미스 인스턴스와 다르게 수행되는 일부 구성을 대신합니다. 환경 변수는 [포털 속성 재정의 또는 대체](./liferay-service-environment-variables.md#overriding-portal-properties) 에도 사용할 수 있습니다.
 
 자세한 내용은 [Liferay 서비스 환경 변수](./liferay-service-environment-variables.md) 참조하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [Liferay DXP 서비스 사용](../using-the-liferay-dxp-service.md)
 * [Liferay Cloud에서 클러스터링 활성화](./setting-up-clustering-in-liferay-cloud.md)

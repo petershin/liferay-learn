@@ -198,7 +198,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ## 사이트로 데이터 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 사이트로 데이터를 가져올 수 있습니다. 이 예에서는 블로그 게시물을 사이트로 가져옵니다. [사이트의 ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 을 찾아 `1234` 으로 바꿉니다. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 가져올 데이터와 정규화된 클래스 이름 매개 변수도 업데이트해야 합니다.
+다음 cURL 또는 Java 명령을 실행하여 사이트로 데이터를 가져올 수 있습니다. 이 예에서는 블로그 게시물을 사이트로 가져옵니다. [REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 을 찾아 `1234` 으로 바꿉니다. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 가져올 데이터와 정규화된 클래스 이름 매개 변수도 업데이트해야 합니다.
 
 ### ImportTask_POST_ToSite.sh
 

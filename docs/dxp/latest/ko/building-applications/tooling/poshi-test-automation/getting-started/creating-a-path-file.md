@@ -26,11 +26,11 @@
 
 1. 브라우저의 웹 개발자 콘솔(F12, DOM 표시)을 엽니다. 콘솔에는 검색 표시줄을 검사하여 로케이터를 가져올 수 있는 화살표가 있는 아이콘이 있습니다. 이것을 셀렉터라고 합니다.
 
-1. 선택기 아이콘을 사용하여 검색 표시줄을 클릭하고 DOM의 강조 표시된 부분에서 로케이터를 결정합니다. 이 경우 `//input[@placeholder="찾다..."]`사용합니다.
+1. 선택기 아이콘을 사용하여 검색 표시줄을 클릭하고 DOM의 강조 표시된 부분에서 로케이터를 결정합니다. 이 경우 `//input[@placeholder="Search..."]`를 사용하십시오.
 
 1. 이름을 검색하여 검색 결과 페이지로 이동합니다.
 
-1. 다시 Web Developer Console의 선택기 아이콘을 사용하여 "결과 없음" 메시지를 클릭하고 경로를 결정합니다. 이 경우 `//h1[@class='taglib-empty-result-message-title']`사용합니다.
+1. 다시 웹 개발자 콘솔의 선택기 아이콘을 사용하여 "결과 없음" 메시지를 클릭하고 경로를 결정합니다. 이 경우 `//h1[contains(.,'No results were found.')]`를 사용합니다.
 
 1. 추가된 어설션의 경우 결과가 확실히 있는 용어를 검색합니다(예: "Staging" 용어 검색). 검색 결과가 표시되면 선택기 아이콘을 사용하여 결과 중 하나의 경로를 가져옵니다. 이 경우 `//input[@data-qa-id='searchInput' and @value='Staging']`사용합니다. '스테이징'이라는 용어는 이 검색 결과에만 적용되며 다른 시나리오에서 사용할 수 없도록 경로를 유연하게 만듭니다. 이 경로를 재사용 가능하게 만들려면 테스트 사례에서 전달될 수 있는 변수를 사용하세요: `//input[@data-qa-id='searchInput' and @value='${key_searchTerm}']`. 자세한 내용은 [변수](../poshi-basics/poshi-layers/variables.md) 사용을 참조하십시오.
 
@@ -57,12 +57,12 @@
 <tbody>
 <tr>
     <td>NO_RESULTS_MESSAGE</td>
-    <td>//h1[@class='taglib-empty-result-message-title']</td>
+    <td>//h1[contains(.,'No results were found.')]</td>
     <td></td>
 </tr>
 <tr>
     <td>SEARCH_BAR</td>
-    <td>//input[@placeholder="찾다..."]</td>
+    <td>//input[@placeholder="Search..."]</td>
     <td></td>
 </tr>
 <tr>

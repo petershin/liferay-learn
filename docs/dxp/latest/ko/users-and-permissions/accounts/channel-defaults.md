@@ -1,6 +1,7 @@
 ---
 toc:
   - ./channel-defaults/setting-channel-defaults.md
+  - ./channel-defaults/channel-defaults-permissions-reference.md
 ---
 # 채널 기본값
 
@@ -32,5 +33,9 @@ toc:
 
 :::{grid-item-card}  채널 기본값 설정
 :link: ./channel-defaults/setting-channel-defaults.md
+:::
+
+:::{grid-item-card}  채널 기본 권한 참조
+:link: ./channel-defaults/channel-defaults-permissions-reference.md
 :::
 ::::

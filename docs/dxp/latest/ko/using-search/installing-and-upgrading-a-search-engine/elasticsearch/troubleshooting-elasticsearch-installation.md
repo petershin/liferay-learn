@@ -1,7 +1,9 @@
 ---
 toc:
-- ./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
-- ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
+  - >-
+    ./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md
+  - >-
+    ./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md
 ---
 # Elasticsearch 설치 문제 해결
 
@@ -37,10 +39,10 @@ Liferay 7.1-7.2를 사용 중이고 Elasticsearch 6에 대한 기본 번들 커�
 
 암호화 관련 문제를 해결하려면 상세 SSL 로깅을 활성화하십시오.
 
-Liferay의 경우 Application Server의 JVM에서 `-Djavax.net.debug=ssl:handshake:verbose` 을 설정합니다. Tomcat에서는 옵션이 `CATALINA_OPTS` in `setenv.sh`에 추가됩니다.
+Liferay의 경우 Application Server의 JVM에서 `-Djavax.net.debug=ssl:handshake:verbose` 설정합니다. Tomcat에서는 옵션이 `CATALINA_OPTS` in `setenv.sh`에 추가됩니다.
 
 ```properties
 CATALINA_OPTS="$CATALINA_OPTS -Djavax.net.debug=ssl:handshake:verbose"
 ```
 
-Elasticsearch의 경우 `[Elasticsearch Home/]config/jvm.options`끝에 `-Djavax.net.debug=ssl:handshake:verbose` 을 추가합니다.
+Elasticsearch의 경우 `[Elasticsearch Home]/config/jvm.options`끝에 `-Djavax.net.debug=ssl:handshake:verbose` 을 추가합니다.

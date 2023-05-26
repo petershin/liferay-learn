@@ -1,6 +1,6 @@
 # 식 작성기 유효성 검사 참조
 
-{bdg-secondary}`사용 가능한 Liferay 7.4 U27+ 및 GA27+`
+{bdg-secondary}`사용 가능한 Liferay 7.4 U67+ 및 GA67+`
 
 사용자 지정 개체를 사용하면 Liferay의 Expression Builder를 사용하여 필드 유효성 검사를 생성할 수 있습니다. 이 도구는 사전 정의된 필드, 연산자 및 함수를 사용하여 복잡한 유효성 검사 규칙을 신속하게 정의하기 위한 통합 편집기를 제공합니다. 조건 측면 패널에서 사용 가능한 요소를 찾아볼 수 있습니다.
 
@@ -22,7 +22,7 @@ concat([textField], "[string]")
 
 ### 조건(텍스트 포함)
 
-사용자 입력이 하나 이상의 조건을 충족하는지 확인하고 부울 값을 반환합니다. 이 함수는 `if` 문처럼 작동합니다. 각 표현식은 적어도 하나의 `[condition]` (예: `[textField] == "foo"`)를 포함하고 `true` 또는 `false`를 반환합니다. 동일한 표현식에 여러 조건을 추가하고 조건 중 어느 것도 충족되지 않는 경우 반환 값을 결정할 수 있습니다(예: `[textField] == "foo", [textField] == "bar", true, false`).
+사용자 입력이 하나 이상의 조건을 충족하는지 확인하고 부울 값을 반환합니다. 이 함수는 `if` 문처럼 작동합니다. 각 식은 하나 이상의 `조건` (예: `textFieldName == "foo"`)을 포함하고 `true` 또는 `false`을 반환합니다. 동일한 표현식에 여러 조건을 추가하고 조건이 충족되지 않는 경우 반환 값을 결정할 수 있습니다(예: `textFieldName == "foo", textFieldName == "bar", true, false`).
 
 ```
 condition([condition], [return-value])
@@ -38,7 +38,7 @@ contains([textField], "[string]")
 
 ### 포함하지 않음(텍스트 포함)
 
-텍스트 필드에 특정 문자열 값이 포함되어 있는지 확인하고 부울을 반환합니다.  필드 **에** 이 값을 포함하는 경우 `false`을 반환합니다.
+텍스트 필드에 특정 문자열 값이 포함되어 있지 않은지 확인하고 부울을 반환합니다. 필드 **에** 값을 포함하는 경우 `false`을 반환합니다.
 
 ```
 NOT(contains([textField], "[string]"))
@@ -46,7 +46,7 @@ NOT(contains([textField], "[string]"))
 
 ### URL 임
 
-텍스트 필드가 URL인지 확인하고 부울을 반환합니다. 필드가 URL 패턴과 일치하지 않으면 `false`을 반환합니다. `true`을 반환하려면 항목이 표준 URL 요소(예: `http`, `://`, `.com`)를 사용해야 합니다.
+텍스트 필드가 URL인지 확인하고 부울을 반환합니다. 필드가 URL 패턴과 일치하지 않으면 `false`반환합니다. `true`반환하려면 항목이 표준 URL 요소(예: `http`, `://`, `.com`)를 사용해야 합니다.
 
 ```
 isURL([textField])
@@ -54,7 +54,7 @@ isURL([textField])
 
 ### 이메일
 
-텍스트 필드가 이메일인지 확인하고 부울을 반환합니다. 필드가 특정 이메일 또는 이메일 패턴과 일치하지 않으면 `false`을 반환합니다. `true`을 반환하려면 항목이 표준 이메일 요소(예: `@gmail`, `.com`)를 사용해야 합니다.
+텍스트 필드가 이메일인지 확인하고 부울을 반환합니다. 필드가 특정 이메일 또는 이메일 패턴과 일치하지 않으면 `false`을 반환합니다. `true`반환하려면 항목이 표준 이메일 요소(예: `@gmail`, `.com`)를 사용해야 합니다.
 
 ```
 isEmailAddress([textField])
@@ -62,7 +62,7 @@ isEmailAddress([textField])
 
 ### 빈 값임
 
-텍스트 필드가 비어 있는지 확인하고 부울을 반환합니다.  필드가 비어 있지 않으면 `false`을 반환합니다.
+텍스트 필드가 비어 있는지 확인하고 부울을 반환합니다.  필드가 비어 있지 않으면 `false`반환합니다.
 
 ```
 isEmpty([textField])
@@ -70,7 +70,7 @@ isEmpty([textField])
 
 ### 같음(텍스트 포함)
 
-텍스트 필드가 특정 문자열 값과 같은지 확인하고 부울을 반환합니다. **이** 이 아니면 `false`을 반환합니다.
+텍스트 필드가 특정 문자열 값과 같은지 확인하고 부울을 반환합니다. **이** 이 아니면 `false`반환합니다.
 
 ```
 [textField] == "[string]"
@@ -78,7 +78,7 @@ isEmpty([textField])
 
 ### 같지 않음(텍스트 포함)
 
-텍스트 필드가 특정 문자열 값과 다른지 확인하고 부울을 반환합니다. **이** 이면 `false`을 반환합니다.
+텍스트 필드가 특정 문자열 값과 다른지 확인하고 부울을 반환합니다. **이** 이면 `false`반환합니다.
 
 ```
 [textField] != "[string]"
@@ -86,12 +86,20 @@ isEmpty([textField])
 
 ### 성냥
 
-텍스트 필드가 특정 문자열 값 또는 RegEx 표현식과 일치하는지 확인하고 부울을 반환합니다. 필드가 값과 일치하지 않으면 `false`을 반환합니다.
+텍스트 필드가 특정 문자열 값 또는 RegEx 표현식과 일치하는지 확인하고 부울을 반환합니다. 필드가 값과 일치하지 않으면 `false`반환합니다.
 
 ```
 match([textField], "[string]")
 
 match([textField], "[regex]")
+```
+
+### 이전 값(텍스트 포함)
+
+지정된 텍스트 필드의 이전 값을 검색합니다. 다른 함수 및 연산자와 함께 값을 사용할 수 있습니다.
+
+```
+oldValue([textFieldName])
 ```
 
 ## 숫자 필드
@@ -100,7 +108,7 @@ Liferay는 Integer, Long Integer, Decimal 및 Precision Decimal 필드에 대해
 
 ### 조건(숫자 포함)
 
-사용자 입력이 하나 이상의 조건을 충족하는지 확인하고 부울 값을 반환합니다. 이 함수는 `if` 문처럼 작동합니다. 각 식은 적어도 하나의 `[condition]` (예: `[numericField] == 10`)를 포함하고 `true` 또는 `false`를 반환합니다. 동일한 표현식에 여러 조건을 추가하고 조건 중 어느 것도 충족되지 않는 경우 반환 값을 결정할 수 있습니다(예: `[numericField] == 10, [numericField] != 100, true, false`).
+사용자 입력이 하나 이상의 조건을 충족하는지 확인하고 부울 값을 반환합니다. 이 함수는 `if` 문처럼 작동합니다. 각 표현식은 적어도 하나의 `조건` (예: `numericFieldName == 10`)을 포함하고 `true` 또는 `false`반환합니다. 동일한 표현식에 여러 조건을 추가하고 어떤 조건도 충족되지 않는 경우 반환 값을 결정할 수 있습니다(예: `numericFieldName == 10, numericFieldName != 100, true, false`).
 
 ```
 condition([condition], [return-value])
@@ -116,7 +124,7 @@ contains([numericField], [number])
 
 ### 포함하지 않음(숫자 포함)
 
-숫자 필드에 특정 숫자 값이 포함되어 있는지 확인하고 부울을 반환합니다. 필드 **에** 이 값을 포함하는 경우 `false`을 반환합니다.
+숫자 필드에 특정 숫자 값이 포함되어 있는지 확인하고 부울을 반환합니다. 필드 **에** 값을 포함하는 경우 `false`을 반환합니다.
 
 ```
 NOT(contains([numericField], [number]))
@@ -124,7 +132,7 @@ NOT(contains([numericField], [number]))
 
 ### 십진수임
 
-숫자 필드가 소수인지 확인하고 부울을 반환합니다. 필드 **이** 소수가 아닌 경우 `false`을 반환합니다.
+숫자 필드가 소수인지 확인하고 부울을 반환합니다. 필드 ** 소수가 아닌 경우 `false`반환합니다.
 
 ```
 isDecimal([numericField])
@@ -132,7 +140,7 @@ isDecimal([numericField])
 
 ### 정수임
 
-숫자 필드가 정수인지 확인하고 부울을 반환합니다. 필드 **이** 이 정수가 아닌 경우 `false`을 반환합니다.
+숫자 필드가 정수인지 확인하고 부울을 반환합니다. 필드 ** 정수가 아닌 경우 `false`반환합니다.
 
 ```
 isInteger([numericField])
@@ -140,7 +148,7 @@ isInteger([numericField])
 
 ### 같음(숫자 포함)
 
-숫자 필드가 특정 숫자 값과 같은지 확인하고 부울을 반환합니다. **이** 이 아니면 `false`을 반환합니다.
+숫자 필드가 특정 숫자 값과 같은지 확인하고 부울을 반환합니다. **이** 이 아니면 `false`반환합니다.
 
 ```
 [numericField] == [number]
@@ -148,7 +156,7 @@ isInteger([numericField])
 
 ### 같지 않음(숫자 포함)
 
-숫자 필드가 특정 숫자 값과 다른지 확인하고 부울을 반환합니다. **이** 이면 `false`을 반환합니다.
+숫자 필드가 특정 숫자 값과 다른지 확인하고 부울을 반환합니다. **이** 이면 `false`반환합니다.
 
 ```
 [numericField] != [number]
@@ -156,7 +164,7 @@ isInteger([numericField])
 
 ### 다음보다 큼
 
-숫자 필드가 특정 숫자 값보다 큰지 확인하고 부울을 반환합니다. 필드 **이** 보다 크지 않으면 `false`을 반환합니다.
+숫자 필드가 특정 숫자 값보다 큰지 확인하고 부울을 반환합니다. 필드 **이** 보다 크지 않으면 `false`반환합니다.
 
 ```
 [numericField] > [number]
@@ -172,7 +180,7 @@ isInteger([numericField])
 
 ### 다음보다 작음
 
-숫자 필드가 특정 숫자 값보다 작은지 확인하고 부울을 반환합니다. 필드 **이** 이 적지 않으면 `false`을 반환합니다.
+숫자 필드가 특정 숫자 값보다 작은지 확인하고 부울을 반환합니다. 필드 **이** 이 적지 않으면 `false`반환합니다.
 
 ```
 [numericField] < [number]
@@ -180,10 +188,18 @@ isInteger([numericField])
 
 ### 다음보다 작거나 같음
 
-숫자 필드가 특정 숫자 값보다 작거나 같은지 확인하고 부울을 반환합니다. 필드 **이** 이하가 아니면 `false`을 반환합니다.
+숫자 필드가 특정 숫자 값보다 작거나 같은지 확인하고 부울을 반환합니다. 필드 ** 이하가 아니면 `false`반환합니다.
 
 ```
 [numericField] <= [number]
+```
+
+### 이전 값(숫자 포함)
+
+지정된 숫자 필드의 이전 값을 검색합니다. 다른 함수 및 연산자와 함께 값을 사용할 수 있습니다.
+
+```
+oldValue([numericField])
 ```
 
 ### 합집합
@@ -200,7 +216,7 @@ Liferay는 날짜 필드에 대해 다음 연산자와 기능을 제공합니다
 
 ### 날짜 비교
 
-날짜 필드의 값이 설정한 값과 동일한지 확인합니다. 필드가 날짜와 일치하지 않으면 `false`을 반환합니다.
+날짜 필드의 값이 설정한 값과 동일한지 확인합니다. 필드가 날짜와 일치하지 않으면 `false`반환합니다.
 
 ```
 compareDates([dateField], [yyyy-MM-dd])
@@ -208,7 +224,7 @@ compareDates([dateField], [yyyy-MM-dd])
 
 ### 조건(날짜 포함)
 
-사용자 입력이 하나 이상의 조건을 충족하는지 확인하고 부울 값을 반환합니다. 이 함수는 `if` 문처럼 작동합니다. 각 표현식은 적어도 하나의 `[condition]` (예: `[dateField] == 2020-01-01`)를 포함하고 `true` 또는 `false`를 반환합니다. 동일한 표현식에 여러 조건을 추가하고 조건 중 어느 것도 충족되지 않는 경우 반환 값을 결정할 수 있습니다(예: `[dateField] == 2020-01-01, [dateField] != 2022-01-01, true, false`).
+사용자 입력이 하나 이상의 조건을 충족하는지 확인하고 부울 값을 반환합니다. 이 함수는 `if` 문처럼 작동합니다. 각 식은 하나 이상의 `조건` (예: `dateFieldName == 2020-01-01`)을 포함하고 `true` 또는 `false`반환합니다. 동일한 표현식에 여러 조건을 추가하고 조건 중 어느 것도 충족되지 않는 경우 반환 값을 결정할 수 있습니다(예: `dateFieldName == 2020-01-01, dateFieldName != 2022-01-01, true, false`).
 
 ```
 condition([condition], [return-value])
@@ -216,15 +232,23 @@ condition([condition], [return-value])
 
 ### 미래 날짜
 
-날짜 필드의 값이 미래인지 확인하고 부울을 반환합니다. 필드 **이** 미래 날짜가 아닌 경우 `false`을 반환합니다.
+날짜 필드의 값이 미래인지 확인하고 부울을 반환합니다. 필드 ** 미래 날짜가 아닌 경우 `false`반환합니다.
 
 ```
 futureDates([dateField], "[yyyy-MM-dd]")
 ```
 
+### 이전 값(날짜 포함)
+
+지정된 날짜 필드의 이전 값을 검색합니다. 다른 함수 및 연산자와 함께 값을 사용할 수 있습니다.
+
+```
+oldValue([dateField])
+```
+
 ### 지난 날짜
 
-날짜 필드의 값이 과거인지 확인하고 부울을 반환합니다. 필드 **이** 이 지난 날짜가 아니면 `false`을 반환합니다.
+날짜 필드의 값이 과거인지 확인하고 부울을 반환합니다. 필드 ** 이 지난 날짜가 아니면 `false`반환합니다.
 
 ```
 pastDates([dateField], "[yyyy-MM-dd]")
@@ -232,7 +256,7 @@ pastDates([dateField], "[yyyy-MM-dd]")
 
 ### 범위
 
-날짜 범위가 과거 날짜로 시작하고 미래 날짜로 끝나는지 확인합니다. 필드 **이 날짜 범위 내에서** 이 아닌 경우 `false`을 반환합니다.
+날짜 범위가 과거 날짜로 시작하고 미래 날짜로 끝나는지 확인합니다. 필드 **날짜 범위 내에서** 이 아닌 경우 `false`반환합니다.
 
 ```
 pastDates([dateField], "[yyyy-MM-dd]")
@@ -296,20 +320,20 @@ OR match([lastNameField], "[A-Za-z]{1,50}")
 
 ## 유효성 검사 예
 
-다음 유효성 검사는 일반적인 예입니다.
+다음 유효성 검사는 일반적인 예입니다. 이를 사용하려면 `fieldName` 을 유효성 검사할 필드 이름으로 바꿉니다.
 
 ### 이름 확인(텍스트 포함)
 
 값을 영문자로 제한하고 허용되는 문자 수를 제한합니다.
 
 ```
-match([nameField], ("[A-Za-z]{1,50}")
+match(fieldName, "[A-Za-z]{1,50}")
 ```
 
 성의 숫자를 허용합니다.
 
 ```
-match([lastNameField], "[A-Za-z][0-9]{1,50}")
+match(fieldName, "[A-Za-z][0-9]{1,50}")
 ```
 
 ### 비밀번호(텍스트 포함)
@@ -323,7 +347,7 @@ match([lastNameField], "[A-Za-z][0-9]{1,50}")
 * 공백이 허용되지 않음
 
 ```
-match([passwordField], "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{8,}$")
+match(fieldName, "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{8,}$")
 ```
 
 ### 휴대전화번호(숫자포함)
@@ -331,7 +355,7 @@ match([passwordField], "^(?=.*[A-Za-z])(?=.*d)(?=.*[@$!%*#?&])[A-Za-zd@$!%*#?&]{
 항목이 전화 번호 패턴과 일치하는지 확인합니다. 입력을 숫자로 제한하고 문자 수를 제한하며 표준 전화 번호 패턴을 설정합니다.
 
 ```
-match([phoneNumberField], "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
+match(fieldName, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 ```
 
 ### 우편번호(숫자 포함)
@@ -339,7 +363,7 @@ match([phoneNumberField], "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 항목이 우편 번호 패턴과 일치하는지 확인합니다. 항목을 숫자로 제한하고 문자 수를 제한하며 표준 우편 번호 패턴을 설정합니다.
 
 ```
-match([postalField], "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
+match(fieldName, "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 ```
 
 ### 연령 범위 지정(날짜)
@@ -347,12 +371,12 @@ match([postalField], "^([1-9]{2}) (?:[2-8]|9[1-9])[0-9]{3}-[0-9]{4}$")
 항목이 18-65 사이인지 확인합니다.
 
 ```
-pastDates([dateField], startsFrom, responseDate, years, -120, endsOn, responseDate, years, -18)
+pastDates(fieldName, startsFrom, responseDate, years, -120, endsOn, responseDate, years, -18)
 AND
-futureDates([dateField], startsFrom, responseDate, years, 0, endsOn, responseDate, years, 65)
+futureDates(fieldName, startsFrom, responseDate, years, 0, endsOn, responseDate, years, 65)
 ```
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](../creating-objects.md)
 * [개체에 필드 추가](../fields/adding-fields-to-objects.md)

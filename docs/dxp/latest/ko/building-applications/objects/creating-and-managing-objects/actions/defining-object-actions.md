@@ -29,7 +29,7 @@
    | 트리거             | 묘사              |
    |:--------------- |:--------------- |
    | 추가 이후 시         | 항목이 추가되면        |
-   | 첨부 파일 다운로드 후 켜기 | 출품작 첨부파일 다운로드 시 |
+   | 첨부 파일 다운로드 후 켜짐 | 출품작 첨부파일 다운로드 시 |
    | 삭제 이후 시         | 항목이 삭제된 경우      |
    | 업데이트 이후 시       | 항목이 업데이트되면      |
    | 독립형             | 수동으로 트리거됨       |
@@ -40,11 +40,7 @@
 
 1. (선택 사항) 자동 트리거 조건을 활성화합니다. 사용 가능한 표현식을 보려면 **코드**( ![Code](../../../../images/icon-code.png) )을 클릭하십시오.
 
-   Liferay 7.4 U33+/GA33+에서 Liferay는 **완료** 클릭할 때 조건 구문의 유효성을 검사합니다. 식이 유효하지 않으면 Liferay에 오류 메시지가 표시됩니다.
-
-   <!--TASK: See \[Using Action Conditions\]() for more information. -->
-
-   ![식을 사용하여 트리거에 대한 추가 조건을 설정합니다.](./defining-object-actions/images/04.png)
+   Liferay 7.4 U33+/GA33+에서 Liferay는 **완료** 클릭할 때 조건 구문의 유효성을 검사합니다. 식이 유효하지 않으면 Liferay에 오류 메시지가 표시됩니다. 사용 가능한 필드, 연산자 및 함수에 대한 자세한 내용은 [Expression Builder Validations Reference](../validations/expression-builder-validations-reference.md) 을 참조하십시오. <!--TASK: See \[Using Action Conditions\]() for more information. --> ![식을 사용하여 트리거에 대한 추가 조건을 설정합니다.](./defining-object-actions/images/04.png)
 
 1. 수행할 조치 유형을 선택하고 모든 추가 필드를 작성하십시오.
 
@@ -70,7 +66,7 @@
 
 ![작업을 비활성화하려면 활성 스사이트를 전환합니다.](./defining-object-actions/images/05.png)
 
-## 추가 정보
+## 관련 주제
 
 * [개체 만들기](../creating-objects.md)
 * [작업 유형 이해](./understanding-action-types.md)

@@ -70,11 +70,11 @@ Groovy 스크립트를 [XML 워크플로우 정의](./crafting-xml-workflow-defi
 
 이러한 변수는 워크플로 스크립트를 실행할 수 있는 모든 사이트에서 사용할 수 있습니다.
 
-| 변하기 쉬운                                                                                                                                                                                                                                                              | 묘사                                                                                        | 용법                                                                                                                                                                                                                                                                                   |
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `kaleoInstanceToken` ( [`KaleoInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoInstanceToken.java) ) | 워크플로 인스턴스 및 해당 인스턴스 토큰( `KaleoInstanceToken`)은 사용자가 **Submit for Workflow** 을 클릭할 때마다 생성됩니다. | 주입된 토큰을 사용하여 `kaleoInstanceToken.getKaleoInstanceTokenId()`호출하여 해당 ID를 검색합니다. 이것은 종종 스크립트에서 메소드 매개변수로 전달됩니다.                                                                                                                                                                         |
-| `userId`                                                                                                                                                                                                                                                            | 반환된 `userId` 은 상황에 따라 다릅니다.                                                               | 논리는 다음과 같이 작동합니다. `KaleoTaskInstanceToken.getcompletionUserId()` 이 null이면 `KaleoTaskInstanceToken.getUserId()`확인합니다. 그것도 null이면 `KaleoInstanceToken.getUserId()`호출하십시오. 스크립트가 실행될 때 워크플로에 개입하는 마지막 사용자의 ID입니다. `생성` 노드에서 이는 **워크플로 제출** 클릭한 사용자인 반면 단일 승인자 정의의 `검토` 노드 종료 시 검토자의 ID입니다. |
-| `워크플로우 컨텍스트` (`맵<String, Serializable>`)                                                                                                                                                                                                                      | 워크플로 컨텍스트에는 스크립트에서 사용할 수 있는 정보가 포함되어 있습니다.                                                | 컨텍스트는 일반적으로 매개변수로 전달되지만 `WorkflowContext`의 모든 속성은 스크립트에서도 사용할 수 있습니다. 스크립트의 워크플로 컨텍스트는 컨텍스트에 따라 다릅니다. `ExecutionContext.getWorkflowContext()` 에 대한 호출이 null로 반환되면 `KaleoInstanceModel.getWorkflowContext()`에서 워크플로 컨텍스트를 가져옵니다.                                                      |
+| 변하기 쉬운                                                                                                                                                                                                                                                              | 묘사                                                                                        | 용법                                                                                                                                                                                                                                                                                     |
+|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `kaleoInstanceToken` ( [`KaleoInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/main/java/com/liferay/portal/workflow/kaleo/model/KaleoInstanceToken.java) ) | 워크플로 인스턴스 및 해당 인스턴스 토큰( `KaleoInstanceToken`)은 사용자가 **Submit for Workflow** 을 클릭할 때마다 생성됩니다. | 주입된 토큰을 사용하여 `kaleoInstanceToken.getKaleoInstanceTokenId()`호출하여 해당 ID를 검색합니다. 이것은 종종 스크립트에서 메소드 매개변수로 전달됩니다.                                                                                                                                                                           |
+| `userId`                                                                                                                                                                                                                                                            | 반환된 `userId` 은 상황에 따라 다릅니다.                                                               | 논리는 다음과 같이 작동합니다. `KaleoTaskInstanceToken.getcompletionUserId()` 이 null인 경우 `KaleoTaskInstanceToken.getUserId()`확인합니다. 그것도 null이면 `KaleoInstanceToken.getUserId()`호출하십시오. 스크립트가 실행될 때 워크플로에 개입하는 마지막 사용자의 ID입니다. `생성` 노드에서 이는 **워크플로 제출** 클릭한 사용자인 반면 단일 승인자 정의의 `검토` 노드 종료 시 검토자의 ID입니다. |
+| `워크플로우 컨텍스트` (`맵<String, Serializable>`)                                                                                                                                                                                                                      | 워크플로 컨텍스트에는 스크립트에서 사용할 수 있는 정보가 포함되어 있습니다.                                                | 컨텍스트는 일반적으로 매개변수로 전달되지만 모든 `WorkflowContext` 특성은 스크립트에서도 사용할 수 있습니다. 스크립트의 워크플로 컨텍스트는 컨텍스트에 따라 다릅니다. `ExecutionContext.getWorkflowContext()` 에 대한 호출이 null로 반환되면 `KaleoInstanceModel.getWorkflowContext()`에서 워크플로 컨텍스트를 가져옵니다.                                                         |
 
 ### 태스크 노드에 주입된 변수
 
@@ -82,18 +82,22 @@ Groovy 스크립트를 [XML 워크플로우 정의](./crafting-xml-workflow-defi
 
 | 변수 | 설명 | 사용법 |
 | :--- | :--- | :--- |
-| `kaleoTaskInstanceToken`( [`KaleoTaskInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/ main/java/com/liferay/portal/workflow/kaleo/model/KaleoTaskInstanceToken.java) ) | 작업의 토큰 자체는 워크플로 스크립트에서 사용할 수 있습니다. | 프로그래밍 방식 할당과 같은 다른 유용한 프로그래밍 방식 워크플로 활동에 사용하기 위해 ID를 가져오는 데 사용합니다. |
+| `kaleoTaskInstanceToken`( [`KaleoTaskInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/ main/java/com/liferay/portal/workflow/kaleo/model/KaleoTaskInstanceToken.java) ) | 작업의 토큰 자체는 워크플로 스크립트에서 사용할 수 있습니다. | 이를 사용하여 다른 프로그래밍 워크플로 활동에 유용한 ID를 가져옵니다. |
 | `taskName` (`String`) 작업 자체 이름에 액세스할 수 있습니다(`KaleoTak.getName()`과 동일하게 반환됨). | |
 | `workflowTaskAssignees`(`목록<` [`WorkflowTaskAssignee`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/ 작업 흐름/WorkflowTaskAssignee.java) `>`) | 작업 담당자를 나열합니다. | |
 | `kaleoTimerInstanceToken`( [`KaleoTimerInstanceToken`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-workflow/portal-workflow-kaleo-api/src/ main/java/com/liferay/portal/workflow/kaleo/model/KaleoTimerInstanceToken.java) ) | [작업 타이머](./workflow-task-node-reference.md)가 있는 경우 `kaleoTimerInstanceToken.getKaleoTimerInstanceTokenId()`를 호출하여 해당 ID를 가져옵니다. | | |
 
+```{warning}
+이러한 변수는 워크플로 작업 노드의 작업 스크립트(예: `<actions>` &rarr; `<action>` &rarr; `<script>` 블록의 스크립트)에 나타납니다. [스크립트 할당](../designing-and-managing-workflows/workflow-designer/assigning-task-nodes.md#scripted-assignments) 에는 이러한 변수가 주입되지 않습니다.
+```
+
 ## 스크립트 예
 
-워크플로의 거의 모든 지점에서 Liferay의 스크립트 엔진을 사용하여 워크플로 API 또는 기타 Liferay API에 액세스할 수 있습니다. 워크플로 스크립트를 사용할 수 있는 몇 가지 실용적인 방법은 다음과 같습니다.
+워크플로의 거의 모든 지점에서 Liferay의 스크립트 엔진을 사용하여 워크플로 API 또는 기타 Liferay API에 액세스할 수 있습니다. 다음은 워크플로 스크립트를 사용할 수 있는 몇 가지 실용적인 방법입니다.
 
 * 특정 역할을 가진 사용자 목록 가져오기
 * 콘텐츠를 검토할 수 없는 경우 연락할 사람 목록과 함께 지정된 콘텐츠 승인자에게 이메일 보내기
-* 컨텐츠 승인에 할당된 모든 사용자에 대해 경고 포틀릿에 표시할 경고 생성
+* 컨텐츠를 승인하도록 지정된 사용자에 대해 경고 포틀릿에 표시할 경고 생성
 
 다음 워크플로 스크립트는 Groovy를 사용하여 작성되었으며 조건 노드와 함께 사용됩니다. 이 스크립트는 Liferay의 [자산 프레임워크](../../../building-applications/data-frameworks/asset-framework.md) 사용하여 자산의 범주를 결정하고 범주를 사용하여 올바른 승인 프로세스를 자동으로 결정합니다. 자산이 `법적` 범주에 있는 경우 제출 시 `법적 검토` 작업으로 전송됩니다. 그렇지 않으면 자산이 `기본 검토` 작업으로 전송됩니다.
 
@@ -212,10 +216,10 @@ Bundle bundle = FrameworkUtil.getBundle(GroovyExecutor.class);
 
 Liferay의 Kaleo 워크플로 엔진과 Liferay의 스크립트 엔진은 강력한 조합을 만듭니다. 권한을 구성할 때 워크플로 정의 내에서 잘못 작성되거나 악의적으로 작성된 스크립트의 잠재적인 결과에 유의하십시오.
 
-## 추가 정보
+## 관련 주제
 
 * [워크플로 소개](../introduction-to-workflow.md)
 * [액션 실행자 만들기](./creating-an-action-executor.md)
 * [조건 평가자 만들기](./creating-a-condition-evaluator.md)
 * [스크립트 콘솔에서 스크립트 실행](../../../system-administration/using-the-script-engine/running-scripts-from-the-script-console.md)
-* [스크립트 예제](../../../system-administration/using-the-script-engine/script-examples.md)
+* [스크립트 예](../../../system-administration/using-the-script-engine/script-examples.md)

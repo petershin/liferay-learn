@@ -4,7 +4,7 @@
 이 기능은 [Elasticsearch에서만](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md) 작동합니다.
 ```
 
-사용자 정의 필터 위젯은 검색 조정 노력에 강력한 도움이 됩니다. 사용자 지정 코드를 배포하지 않고도 검색 엔진으로 전송되는 쿼리를 제어할 수 있습니다. 다음은 사용자 정의 필터 위젯에 접근하는 방법을 이해하는 데 도움이 되는 몇 가지 일반적인 사용 사례입니다.
+사용자 정의 필터 위젯은 검색 조정 노력에 강력한 도움이 됩니다. 사용자 지정 코드를 배포하지 않고도 검색 엔진에 전송되는 쿼리를 제어할 수 있습니다. 다음은 사용자 정의 필터 위젯에 접근하는 방법을 이해하는 데 도움이 되는 몇 가지 일반적인 사용 사례입니다.
 
 - [검색 결과에서 콘텐츠 제외](#excluding-certain-content)
 - [검색 결과에서 콘텐츠 부스팅](#boosting-fields)
@@ -153,11 +153,11 @@
 
    위 스크린샷의 예제 콘텐츠에는 사용자 지정 필터가 하나 더 필요합니다. 필터 값이 `38105`이라는 한 가지 예외를 제외하고 위와 동일하게 구성합니다.
 
-   > **체크포인트:** 다시 검색하여 지정된 사이트의 콘텐츠만 반환되는지 확인합니다. 이는 검색 결과가 **문서 형식** 에 결과 표시로 구성된 경우 세부 정보 보기를 보면 확인할 수 있습니다.
+   > **체크포인트:** 다시 검색하여 지정된 사이트의 콘텐츠만 반환되는지 확인합니다. 이것은 검색 결과가 **문서 형식** 에 결과 표시로 구성된 경우 세부 정보 보기를 보면 더 확인할 수 있습니다.
 
    ![포함된 사이트의 콘텐츠만 표시됩니다.](./custom-filter-examples/images/02.png)
 
-중요한 것은 `groupId` 에 의한 필터는 `SiteBoolQuery` 상위 쿼리로 선언한다는 것입니다. 하위 Term 쿼리(각 사이트에 대해)의 **to** Occur 절은 OR 연산자 역할을 하므로 `groupId`중 하나라도 일치하면 콘텐츠가 검색 결과 위젯에 표시될 수 있습니다.
+중요한 것은 `groupId` 에 의한 필터는 `SiteBoolQuery` 상위 쿼리로 선언한다는 것입니다. 하위 Term 쿼리(각 사이트에 대해)의 **to** Occur 절은 OR 연산자 역할을 하므로 `개의 groupId`중 하나라도 일치하면 콘텐츠가 검색 결과 위젯에 표시될 수 있습니다.
 
 ## 쿼리 문자열이 포함된 복합 필터
 
@@ -185,8 +185,6 @@
 ## 중첩된 필드에 대한 일치 부스팅
 
 {bdg-secondary}`사용 가능 7.2 FP10+, 7.3 FP1+, 7.4(모든 업데이트)`
-
-[중첩된 DDM 필드 액세스](../search-facets/custom-facet.md#accessing-nested-ddm-fields) 에 설명된 대로 DDM 필드는 Liferay 7.2 SP3+/FP8+(및 모든 Liferay 7.3 버전)에서 [중첩된 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 가 되었습니다. 7.2 및 7.3의 최신 수정 팩 및 GA 릴리스에서는 이러한 중첩 필드를 설명하기 위해 [Elasticsearch 중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 지원됩니다.
 
 사용자 정의 필터 구성에서 [중첩 필드](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 을 사용하려면 검색 페이지에 세 개의 사용자 정의 필터 위젯이 필요합니다. 필수 하위 쿼리를 래핑하는 [중첩 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) 위젯 중 하나에 추가됩니다. 하나의 하위 쿼리는 필드 이름과 일치하고 다른 하나는 값과 일치합니다.
 
@@ -261,7 +259,7 @@
         - **커스텀 파리미터 이름:** `cparam`
 
       ```{important}
-      이 예에서는 하나의 중첩 필드에서만 사용자 정의 필터를 사용하므로 하위 쿼리(`cparam`)의 사용자 정의 매개변수는 실제로 필요하지 않습니다. 동일한 페이지의 여러 중첩 필드에 사용자 정의 필터를 설정하려면 이 예에서 설명한 대로 하위 쿼리에 대한 사용자 정의 매개변수 이름을 구성해야 합니다. 두 번째 중첩 필드에 대한 필터를 추가하려면 다른 사용자 정의 매개변수 이름(예: `cparam2`)을 공유하는 두 개의 하위 사용자 정의 필터가 필요합니다.
+      이 예에서는 하나의 중첩 필드에서만 사용자 정의 필터를 사용하므로 하위 쿼리(`cparam`)의 사용자 정의 매개변수는 실제로 필요하지 않습니다. 동일한 페이지의 여러 중첩 필드에 사용자 정의 필터를 설정하려면 이 예에서 설명한 대로 하위 쿼리에 대한 사용자 정의 매개 변수 이름을 구성해야 합니다. 두 번째 중첩 필드에 대한 필터를 추가하려면 다른 사용자 정의 매개변수 이름(예: `cparam2`)을 공유하는 두 개의 하위 사용자 정의 필터가 필요합니다.
       ```
 
 1. 이제 **테스트 콘텐츠** 검색을 반복하고 Boosted Web Content가 Not Boosted Web Content 위에 나타나는지 확인합니다.

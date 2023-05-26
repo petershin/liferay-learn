@@ -12,7 +12,7 @@
 
 ## 속성 이름 바꾸기
 
-속성 이름을 변경하려면 편집 아이콘(![edit icon](https://learn.liferay.com/dxp/latest/en/_images/icon-edit.png))을 클릭하고 변경 사항을 입력합니다. 텍스트 상자 외부를 클릭하면 변경 사항이 적용됩니다.
+속성 이름을 변경하려면 편집 아이콘(![edit icon](../images/icon-edit.png))을 클릭하고 변경 사항을 입력합니다. 텍스트 상자 외부를 클릭하면 변경 사항이 적용됩니다.
 
 ![편집 아이콘을 클릭하여 속성 이름을 변경합니다.](./managing-properties/images/02.png)
 

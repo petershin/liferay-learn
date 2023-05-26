@@ -11,7 +11,7 @@ Liferay의 모든 위젯은 Liferay의 강력하고 세분화된 권한 시스�
 
 ![권한 매트릭스는 위젯에 대한 구성을 편리하게 만듭니다.](./setting-widget-permissions/images/01.png)
 
-1. 위젯의 **옵션** 아이콘(![Options](../../../../images/icon-app-options.png))으로 이동하여 **권한** 선택합니다. 여기에는 역할 테이블이 표시됩니다.
+1. 위젯의 **옵션** 아이콘(![Options](../../../../../images/icon-app-options.png))으로 이동하여 **권한** 선택합니다. 여기에는 역할 테이블이 표시됩니다.
 
 1. 확인란을 사용하여 다른 역할에 특정 권한을 부여합니다. 선택한 후 **저장** 클릭합니다.
 
@@ -19,7 +19,7 @@ Liferay의 모든 위젯은 Liferay의 강력하고 세분화된 권한 시스�
 일부 위젯에는 특정 권한이 있습니다. 예를 들어 게시판에는 *사용자 차단* 권한이 포함되어 있습니다. 이것은 대부분의 다른 위젯과 관련하여 의미가 없습니다. 이러한 권한은 해당 위젯으로 처리됩니다.
 ```
 
-## 추가 정보
+## 관련 주제
 
 - [위젯 범위 설정](./setting-widget-scopes.md)
 - [역할 및 권한 이해](../../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

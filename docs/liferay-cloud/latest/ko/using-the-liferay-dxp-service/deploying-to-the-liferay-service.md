@@ -88,7 +88,7 @@ CI 빌드는 다음 폴더 내에서 소스 코드를 컴파일합니다.
 핫픽스를 적용하려면 핫픽스 ZIP 파일을 Liferay DXP 서비스 디렉토리 내의 `configs/{ENV}/patching/` 폴더에 추가하십시오. 이 변경 사항을 배포하면 핫픽스가 Liferay DXP 인스턴스에 적용됩니다.
 
 ```{note}
-Liferay DXP의 새로운 부 버전으로 업데이트하려면 [이 지침](./updating-your-dxp-instance-to-a-new-minor-version.md)을 참조하세요(예: 새 [서비스 팩](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) ).
+Liferay DXP의 새로운 부 버전으로 업데이트하려면 [이 지침](./updating-your-dxp-instance-to-a-new-minor-version.md)을 참조하세요(예: 새 [패치 유형 이해](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) ).
 ```
 
 예를 들어 다음과 같은 구조로 개발 환경에 핫픽스를 배포할 수 있습니다.

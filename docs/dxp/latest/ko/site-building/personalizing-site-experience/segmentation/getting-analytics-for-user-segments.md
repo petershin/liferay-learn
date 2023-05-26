@@ -6,6 +6,8 @@
 
 ```{important}
 Analytics Cloud와의 동기화는 즉시 이루어지지 않으므로 Analytics Cloud와 Liferay DXP를 연결한 후에는 먼저 사용자와 데이터가 동기화될 때까지 기다려야 합니다. 완료되면 Analytics Cloud에서 세그먼트를 생성하여 DXP에서 데이터를 캡처할 수 있습니다.
+
+또한 Analytics Cloud에서 생성된 세그먼트는 Liferay DXP와 동기화됩니다. 그러나 Liferay DXP에서 생성된 세그먼트는 Analytics Cloud와 동기화되지 않습니다.
 ```
 
 세그먼트 분석을 얻으려면 다음 단계를 따르십시오.
@@ -16,7 +18,7 @@ Analytics Cloud와의 동기화는 즉시 이루어지지 않으므로 Analytics
     하나 이상의 구성원을 포함하는 세그먼트만 Liferay DXP와 동기화됩니다. 즉, Analytics Cloud로 만든 빈 세그먼트는 Liferay DXP에서 사용할 수 없습니다.
     ```
 
-1. 세그먼트가 동기화되면 **세그먼트** 페이지로 이동합니다.
+1. 세그먼트가 동기화되면 *세그먼트* 페이지로 이동합니다.
 1. 새 세그먼트를 클릭하여 보고 사용자 정의하십시오.
 
 > 제품 이미지는 Liferay DXP 버전에 따라 약간 다를 수 있습니다.

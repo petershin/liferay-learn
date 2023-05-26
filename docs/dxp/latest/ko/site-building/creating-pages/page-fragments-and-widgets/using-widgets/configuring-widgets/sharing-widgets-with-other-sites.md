@@ -4,7 +4,7 @@
 
 ![위젯의 구성 메뉴에 있는 공유 탭은 다양한 방법으로 위젯을 공유할 수 있습니다.](./sharing-widgets-with-other-sites/images/01.png)
 
-1. 위젯의 **옵션** 아이콘(![Options](../../../../images/icon-app-options.png)) &rarr; **구성** &rarr; **공유** 클릭합니다.
+1. 위젯의 **옵션** 아이콘(![Options](../../../../../images/icon-app-options.png)) &rarr; **구성** &rarr; **공유** 클릭합니다.
 
 1. 공유 아래에는 Facebook, OpenSocial Gadget 및 Netvibes의 세 가지 하위 탭이 있습니다. 선택한 컨텍스트에 따라 진행합니다.
 
@@ -36,7 +36,7 @@ OpenSocial은 소셜 네트워킹 및 기타 웹 애플리케이션을 위한 �
 
 1. 공유 탭에서 **오픈소셜 가젯** 로 이동하고 선택기를 활성화합니다 **사용자가 오픈소셜 플랫폼에 [application-name] 추가할 수 있도록 허용합니다** .
 
-1. **저장** 클릭하고 위젯의 **옵션** 버튼을 다시 방문합니다. **OpenSocial 플랫폼에 추가** 이라는 새 버튼이 나타납니다. 이 새 버튼을 선택하면 OpenSocial 플랫폼에 위젯을 공유하기 위한 URL이 제공됩니다.
+1. **저장** 클릭하고 위젯의 **옵션** 버튼을 다시 방문합니다. **OpenSocial 플랫폼에 추가** 이라는 이름의 새 버튼이 나타납니다. 이 새 버튼을 선택하면 OpenSocial 플랫폼에 위젯을 공유하기 위한 URL이 제공됩니다.
 
 ## Netvibes
 
@@ -44,6 +44,6 @@ Netvibes는 사용자가 로그인하여 자신만의 개인 대시보드를 만
 
 공유 탭에서 **Netvibes** 로 이동하여 **사용자가 Netvibes 페이지에 [application-name] 추가하도록 허용** 선택기를 활성화합니다. 그런 다음 제공된 URL을 사용하여 사용 중인 Liferay 위젯의 인스턴스를 기반으로 사용자 정의 Netvibes 위젯을 만들 수 있습니다.
 
-## 추가 정보
+## 관련 주제
 
 - [위젯 권한 설정](./setting-widget-permissions.md)

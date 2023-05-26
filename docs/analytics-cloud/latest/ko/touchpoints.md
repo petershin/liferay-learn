@@ -53,7 +53,7 @@ Touchpoints 탐색은 [사이트 대시보드](./touchpoints/sites-dashboard.md)
 * 커스텀 범위
 
 ```{note}
-페이지 데이터는 표준 URL을 기반으로 합니다. [canonicalization](https://moz.com/learn/seo/canonicalization) 또는 [DXP에서 맞춤 표준 URL을 설정하는 방법](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) .
+페이지 데이터는 표준 URL을 기반으로 합니다. [canonicalization](https://moz.com/learn/seo/canonicalization) 또는 [개별 페이지 구성](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) .
 ```
 
 단일 페이지에 대한 자세한 측정항목을 보려면 표에서 해당 페이지를 클릭하세요. 자세한 내용은 [페이지 분석](./touchpoints/pages/pages.md) 을 참조하십시오.

@@ -34,7 +34,7 @@ Blueprints 애플리케이션(Global Menu &rarr; Applications &rarr; Blueprints(
 1. 청사진은 사용자 정의 매개변수(Liferay의 검색 프레임워크에서 설정하지 않은 매개변수)를 정의하고 이에 응답할 수 있으며 이러한 매개변수는 저수준 검색 옵션 위젯에서 수동으로 설정할 수 있습니다.
 1. 검색 컨텍스트 특성을 설정하고 검색 요청을 실행하여 검색 페이지에서 청사진의 동작을 테스트하는 것이 유용할 수 있습니다.
 
-   즉시 사용 가능한 요소에서 사용하는 매개변수에 대한 [자세한 내용은 요소 참조](./search-blueprints-elements-reference.md)를 참조하세요.  
+   즉시 사용 가능한 요소에서 사용하는 매개변수에 대한 [자세한 내용은 요소 참조](./search-blueprints-elements-reference.md)를 참조하세요. 
 
 <!--
 Follow this example to set search context attributes into a blueprint-driven search page:

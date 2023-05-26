@@ -26,7 +26,7 @@
 
 **익명 사용자 세그먼트 캐시 만료 시간** : 익명 세그먼트 캐시가 저장되는 시간 제한(초)을 설정합니다. 시간이 만료되면 캐시가 지워집니다.
 
-**관심 용어 캐시 만료 시간** : 관심 용어 캐시가 저장되는 시간 제한(초)을 설정합니다. 시간이 만료되면 캐시가 지워집니다. 자세한 내용은 [관심사 이해](https://learn.liferay.com/analytics-cloud/latest/en/workspace-data/definitions/managing-interest-topics.html#understanding-interests) 을 참조하십시오.
+**관심 용어 캐시 만료 시간** : 관심 용어 캐시가 저장되는 시간 제한(초)을 설정합니다. 시간이 만료되면 캐시가 지워집니다. 자세한 내용은 [관심 주제 관리](https://learn.liferay.com/analytics-cloud/latest/ko/workspace-data/definitions/managing-interest-topics.html#understanding-interests) 을 참조하십시오.
 
 **업데이트 간격** : Analytics Cloud 세그먼트에서 업데이트를 수신하는 간격(분)을 설정합니다. 이 설정은 시스템 설정 아래에만 나타납니다.
 

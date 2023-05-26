@@ -1,6 +1,6 @@
 # 위젯 모양 및 느낌 구성
 
-1.  위젯의 오른쪽 상단 모서리에 있는 **옵션**(![Actions Button](../../../../images/icon-actions.png))을 클릭합니다.
+1.  위젯의 오른쪽 상단 모서리에 있는 **옵션**(![Actions Button](../../../../../images/icon-actions.png))을 클릭합니다.
 
 1. **룩앤필 구성** 선택합니다.
 
@@ -84,6 +84,6 @@
 
 위젯 및 사용자 정의 CSS 코드에 대한 사용자 정의 CSS 클래스 이름을 입력할 수도 있습니다. **이 포틀릿에 대한 CSS 규칙 추가** 또는 **다음과 같은 모든 포틀릿에 대한 CSS 규칙 추가** 링크를 클릭하면 CSS 코드 셸이 사용자 정의 CSS 텍스트 상자에 추가됩니다.
 
-## 추가 정보
+## 관련 주제
 
 - [위젯 데이터 내보내기/가져오기](../configuring-widgets/exporting-importing-widget-data.md)

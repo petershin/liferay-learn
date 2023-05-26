@@ -4,7 +4,7 @@ toc:
   - ./inventory-management/setting-inventory-by-warehouse.md
   - ./inventory-management/low-stock-action.md
   - ./inventory-management/availability-estimates.md
-  - ./inventory-management/managing-product-publication.md
+  - ./inventory-management/managing-product-status.md
   - ./inventory-management/using-the-inventory-management-system.md
   - ./inventory-management/inventory-management-reference-guide.md
   - ./inventory-management/warehouse-reference-guide.md
@@ -20,7 +20,7 @@ inventory-management/setting-up-warehouses.md
 inventory-management/setting-inventory-by-warehouse.md
 inventory-management/low-stock-action.md
 inventory-management/availability-estimates.md
-inventory-management/managing-product-publication.md
+inventory-management/managing-product-status.md
 inventory-management/using-the-inventory-management-system.md
 inventory-management/inventory-management-reference-guide.md
 inventory-management/warehouse-reference-guide.md
@@ -63,7 +63,7 @@ Liferay에서 재고는 SKU별로 관리됩니다. 자세한 내용은 [창고](
 
 자신만의 사용자 지정 재고 부족 작업을 만드는 데 관심이 있는 개발자는 [사용자 지정 재고 부족 활동 구현](./developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)읽을 수 있습니다.
 
-## 가용성 예측
+## 가용성 추정치
 
 재고가 없는 제품에 대한 예상 가용성을 구성할 수 있습니다. 이것은 다시 사용할 수 있을 때 고객에게 알립니다. 자세한 내용은 [가용성 예측](./inventory-management/availability-estimates.md) 읽으십시오.
 

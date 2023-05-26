@@ -63,7 +63,7 @@ sysctl -w vm.max_map_count=262144
 
 다음은 단일 노드 및 다중 노드 Elasticsearch 클러스터 구성의 예입니다.
 
-Elasticsearch 서버와의 통신 인증 및 암호화에 대해 알아보려면 [Elasticsearch 보안](./securing-elasticsearch.md) 을 참조하십시오.
+Elasticsearch 서버와의 통신 인증 및 암호화에 대해 알아보려면 [Elasticsearch 보안](./securing-elasticsearch.md) 참조하십시오.
 
 ### 예: 단일 노드 프로덕션 Elasticsearch 클러스터
 
@@ -165,9 +165,9 @@ Liferay 7.2를 실행 중인 경우 `TransportService` 상태 메시지의 `publ
 
 Elasticsearch는 [Liferay로부터의 연결](./connecting-to-elasticsearch.md)에 대한 준비가 되어 있습니다.
 
-프로덕션에서 실행 중인 경우 [Liferay와 Elasticsearch](./securing-elasticsearch.md)간의 보안 통신.
+프로덕션 환경에서 실행 중인 경우 [Liferay와 Elasticsearch 간의 보안 통신](./securing-elasticsearch.md).
 
-## 추가 주제
+## 관련 주제
 
 * [Elasticsearch 보안](./securing-elasticsearch.md)
 * [라이프레이 엔터프라이즈 검색](../../liferay-enterprise-search.md)

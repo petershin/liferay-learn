@@ -18,10 +18,12 @@ Collection Display 조각을 제외한 모든 조각에는 스타일 설정 섹�
 
 ![편집 사이드바 메뉴의 브라우저 패널에서 조각의 스타일 설정에 액세스합니다.](./styles-reference/images/01.png)
 
-많은 스타일에는 스타일 책에서 지원하는 토큰이 정의되어 있습니다. 자세한 내용은 [Style Book 만들기](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 및 [Style Book 토큰 정의](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) 참조하십시오.
+많은 스타일에는 스타일 책에서 지원하는 토큰이 정의되어 있습니다. 토큰 값은 스타일 북에서 상속될 수 있으며 파란색 점 또는 **stylebook** 아이콘의 _value(![Stylebook의 값](../../../../../images/icon- theme.png)) 표시된 값 옆에 있습니다. [스타일 북 만들기](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 및 [스타일 북 만들기](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)를 참조하십시오. 토큰 정의]를 참조하십시오.
+
+![파란색 점으로 상속된 토큰 값의 시각적 표현](./styles-reference/images/07.png)
 
 ```{note}
-Liferay 7.4 U31+/GA31+의 경우 화면 상단의 장치 버튼을 클릭하거나 배경 이미지에 [적응형 미디어](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md) 를 설정하여 개별 뷰포트에 대한 조각 스타일을 구성할 수 있습니다. 이전 버전의 경우 다른 장치에 대한 텍스트 및 간격 스타일만 구성할 수 있습니다.
+Liferay 7.4 U31+/GA31+의 경우 화면 상단의 장치 버튼을 클릭하거나 배경 이미지에 [적응형 미디어](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md)를 설정하여 개별 뷰포트에 대한 조각 스타일을 구성할 수 있습니다. 이전 버전의 경우 다른 장치에 대한 텍스트 및 간격 스타일만 구성할 수 있습니다.
 ```
 
 ## 간격
@@ -32,7 +34,7 @@ Liferay 7.4 U31+/GA31+의 경우 화면 상단의 장치 버튼을 클릭하거�
 
 ![영역을 클릭하면 표시된 크기 목록에서 원하는 간격을 선택합니다.](./styles-reference/images/02.png)
 
-패딩 또는 여백 버튼을 클릭하면 기존 토큰에서 선택하거나 사용자 지정 값을 입력할 수 있습니다. 미리 정의된 토큰은 스타일 북의 [Spacing](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site -appearance.md#spacing) 카테고리. 사용자 지정 값을 입력하는 경우 해당 단위(예: `px`, `rem`)를 선택합니다. 필드를 초기 값으로 복원하려면 **재설정** 버튼( ![재설정](../../../../../images/icon-restore.png) )을 클릭하십시오.
+패딩 또는 여백 버튼을 클릭하면 기존 토큰에서 선택하거나 사용자 지정 값을 입력할 수 있습니다. 미리 정의된 토큰은 스타일 북의 [간격](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) 범주에 있는 번호가 매겨진 스페이서 필드에서 가져옵니다. 사용자 지정 값을 입력하는 경우 해당 단위를 선택합니다(예: ``, `rem`). 필드를 초기 값으로 복원하려면 **재설정** 버튼( ![Reset](../../../../../images/icon-restore.png) )을 클릭합니다.
 
 ```{note}
 7.4 U46/GA46 및 이전 버전의 경우 스타일 북에서 픽셀 이외의 단위를 사용하여 간격 값(예: 'rem')을 정의하는 경우 조각 구성 중에 픽셀로 변환됩니다.
@@ -119,7 +121,7 @@ Liferay 7.4 U31+/GA31+의 경우 화면 상단의 장치 버튼을 클릭하거�
 | Padding Left   | 요소의 왼쪽 패딩을 설정합니다.     |
 | Padding Right  | 요소의 오른쪽 안쪽 여백을 설정합니다. |
 
-## 추가 정보
+## 관련 주제
 
 * [콘텐츠 페이지 사용](../../../using-content-pages.md)
 * [조각 사용](../../using-fragments.md)

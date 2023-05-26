@@ -63,7 +63,7 @@ Batch 클라이언트 확장은 [개체 정의](./objects/creating-and-managing-
 
 특정 유형에 대한 자세한 내용은 [마이크로서비스 클라이언트 확장](./client-extensions/microservice-client-extensions.md) 을 참조하세요.
 
-## 추가 정보
+## 관련 주제
 
 * [클라이언트 확장 작업](./client-extensions/working-with-client-extensions.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

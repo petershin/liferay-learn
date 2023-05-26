@@ -30,7 +30,7 @@
 
 ## 클라이언트 확장 프로젝트
 
-클라이언트 확장 개발은 _작업 공간과 프로젝트_ 모델을 따릅니다. [Liferay 작업 공간](../tooling/liferay-workspace.md)내에서 `[workspace-root]/client-extensions`아래에 클라이언트 확장 프로젝트를 구현합니다. 프로젝트의 `client-extension.yaml` 파일은 클라이언트 확장을 정의하고 빌드 프로세스는 각 프로젝트에 대한 단일 출력 집합을 생성합니다. 빌드된 클라이언트 확장 프로젝트는 Liferay Universal File Format Archive(LUFFA)라고 하는 배포 가능한 `*.zip` 아카이브입니다.
+클라이언트 확장 개발은 **작업 공간과 프로젝트** 모델을 따릅니다. [Liferay 작업 공간](../tooling/liferay-workspace.md)내에서 `[workspace-root]/client-extensions`아래에 클라이언트 확장 프로젝트를 구현합니다. 프로젝트의 `client-extension.yaml` 파일은 클라이언트 확장을 정의하고 빌드 프로세스는 각 프로젝트에 대한 단일 출력 집합을 생성합니다. 빌드된 클라이언트 확장 프로젝트는 Liferay Universal File Format Archive(LUFFA)라고 하는 배포 가능한 `*.zip` 아카이브입니다.
 
 ## 프로젝트에서 클라이언트 확장 그룹화
 

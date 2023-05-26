@@ -44,7 +44,7 @@ enterprise.product.commerce.enabled=false
 LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=false
 ```
 
-자세한 내용은 [컨테이너 구성](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties) 참조하십시오.
+자세한 내용은 [컨테이너 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties) 참조하십시오.
 
 성공하면 상거래 모듈이 더 이상 전역 메뉴(![Global Menu](../images/icon-applications-menu.png))에 나타나지 않습니다.
 
@@ -132,7 +132,7 @@ XML 파일을 컨테이너의 `/opt/liferay/deploy` 폴더에 복사합니다. �
 
 #### Liferay 클라우드에 배포
 
-프로젝트의 중앙 Git 리포지토리에 있는 [`liferay/configs/{ENV}/deploy/`](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) 폴더에 키를 복사하고 변경 사항을 커밋합니다. 그런 다음 Liferay 서비스에 대한 Jenkins 빌드를 트리거하고 원하는 프로젝트 환경에 배포합니다. 환경의 Liferay 서비스에 파일을 배포하는 방법에 대한 자세한 내용은 [Liferay 클라우드 배포 워크플로 개요](https://learn.liferay.com/liferay-cloud/latest/ko/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) 참조하십시오.
+프로젝트의 중앙 Git 리포지토리에 있는 [Liferay 서비스에 배포](https://learn.liferay.com/liferay-cloud/latest/ko/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) 폴더에 키를 복사하고 변경 사항을 커밋합니다. 그런 다음 Liferay 서비스에 대한 Jenkins 빌드를 트리거하고 원하는 프로젝트 환경에 배포합니다. 환경의 Liferay 서비스에 파일을 배포하는 방법에 대한 자세한 내용은 [Liferay 클라우드 배포 워크플로 개요](https://learn.liferay.com/liferay-cloud/latest/ko/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) 참조하십시오.
 
 ```{important}
 Liferay Cloud 계약을 통해 Commerce를 구매한 경우 Liferay Cloud 팀이 클라우드 인프라를 통해 활성화 키를 관리하므로 키를 직접 관리할 필요가 없습니다. 그러나 기존 Liferay Cloud 프로젝트에 Commerce를 추가하는 경우 라이선스를 직접 수동으로 배포해야 합니다.

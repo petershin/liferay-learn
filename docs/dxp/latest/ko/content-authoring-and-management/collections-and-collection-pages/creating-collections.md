@@ -146,7 +146,7 @@
 
 동적 콘텐츠 세트를 사용하면 세트의 항목에 대해 **소스** , **범위** , **필터** 및 **주문** 선택할 수 있습니다.
 
-1. *Source*를 *Any*로, *Scope*를 *Current Site*로 둡니다.
+1. **Source** 를 **Any** 로, **Scope** 를 **Current Site** 로 둡니다.
 2. **Filter** 열고 **Contains Any of the following Tags** 로 설정되어 있는지 확인한 다음 **Tags** 상자에 "trending"을 입력합니다.
 
     ![콘텐츠 세트는 자산 게시자와 동일한 필터 시스템을 사용합니다.](./creating-collections/images/22.png)

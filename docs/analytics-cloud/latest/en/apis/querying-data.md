@@ -9,7 +9,7 @@ The root endpoint of Liferay Analytics Cloud is <https://analytics.liferay.com/a
 curl -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
 ```
 
-These response should be returned:
+This response should be returned:
 
 ```json
 {
@@ -48,7 +48,7 @@ These response should be returned:
 
 From here you can call different APIs to get data for the different data types.
 
-All the server responses to the analytics data follow the same data structure. The response is a paged results of entities computed by Liferay Analytics Cloud. By default, each page will contain 20 elements and it can be navigated by replacing the page query parameter. Total shows the total number of available elements.
+All the server responses to the analytics data follow the same data structure. The response is paged results of entities computed by Liferay Analytics Cloud. By default, each page contains 20 elements. It can be navigated by replacing the page query parameter. The total shows the total number of available elements.
 
 ## Accessing Blogs Data
 
@@ -67,7 +67,7 @@ These query parameters are available:
 * `sortMetric`(string): The metric for sorting the data. Possible values are `clicksMetric`, `commentsMetric`, `ratingsMetric`, `readingTimeMetric`, and `viewsMetric`.
 * `sortOrder` (string): The order for displaying the results. Possible values are `asc` or `desc`.
 
-To retrieve data about a specific blog post:
+To retrieve data about a specific blog post,
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs/{blogID}
@@ -90,7 +90,7 @@ These query parameters are available:
 * `sortMetric`(string): The metric for sorting the data. Possible values are `commentsMetric`, `downloadsMetric`, `previewsMetric`, `ratingsMetrics`.
 * `sortOrder` (string): The order for displaying the results. Possible values are `asc` or `desc`.
 
-To retrieve data about a specific document:
+To retrieve data about a specific document,
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media/{documentId}
@@ -113,7 +113,7 @@ These query parameters are available:
 * `sortMetric`(string): The metric for sorting the data. Possible values are `abandonmentsMetric`, `completionTimeMetric`, `submissionsMetric`, `viewsMetric`.
 * `sortOrder` (string): The order for displaying the results. Possible values are `asc` or `desc`.
 
-To retrieve data about a specific form:
+To retrieve data about a specific form,
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms/{formId}
@@ -133,19 +133,19 @@ These query parameters are available:
 * `page` (integer): The results page number.
 * `query` (string): Any word(s) searched for in an individual's `emailAddress`, `firstName`, or `lastName`.
 
-To retrieve activities data on a specific individual:
+To retrieve activities data on a specific individual,
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/activities
 ```
 
-To retrieve interests data on a specific individual:
+To retrieve interests data on a specific individual,
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/interests
 ```
 
-To retrieve segment data on a specific individual:
+To retrieve segment data on a specific individual,
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/segments
@@ -168,7 +168,7 @@ These query parameters are available:
 * `sortMetric` (string): The metric for sorting the data. Possible values are `avgTimeOnPageMetric`, `bounceMetric`, `bounceRateMetric`, `ctaClicksMetric`, `directAccessMetric`, `entrancesMetric`, `exitRateMetric`, `indirectAccessMetric`, `readsMetric`, `sessionsMetric`, `timeOnPageMetric`, `viewsMetric`, `visitorsMetric`.
 * `sortOrder` (string): The order to display the results. Possible values are `asc` or `desc`.
 
-To retrieve page data from a specific URL:
+To retrieve page data from a specific URL,
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages/{pageURL}
@@ -187,13 +187,13 @@ These query parameters are available:
 * `channelId` (integer): The Analytics Cloud workspace property ID.
 * `page` (integer): The results page number.
 
-To retrieve all the individuals of a specific segment:
+To retrieve all the individuals of a specific segment,
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{segmentsId}/individuals
 ```
 
-## Accessing Web Contents Data
+## Accessing Web Content Data
 
 Use this command to retrieve all Web Contents data:
 
@@ -210,7 +210,7 @@ These query parameters are available:
 * `sortMetric`(string): The metric for sorting the data. The possible value is `viewsMetric`.
 * `sortOrder` (string): The order for displaying the results. Possible values are `asc` or `desc`.
 
-To retrieve data about a specific web content:
+To retrieve data about a specific web content,
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents/{webContentsID}

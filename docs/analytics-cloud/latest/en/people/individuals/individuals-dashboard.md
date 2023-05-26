@@ -26,7 +26,7 @@ The Current Totals panel presents the total number of individuals, known and ano
 ![The Current Totals panel presents total numbers for visitors to your Site.](./individuals-dashboard/images/01.png)
 
 ```{note}
-Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When a new user registers on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as a known individual.
+Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
 ```
 
 The panel also displays a percentage change in total numbers compared to the previous 30 days.

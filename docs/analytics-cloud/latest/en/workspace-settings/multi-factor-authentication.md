@@ -33,7 +33,7 @@ Multi-factor authentication (MFA) is required for all Analytics Cloud users. Thi
 
     ![Click the Finish button to finish the process.](./multi-factor-authentication/images/05.png)
 
-1. Upon authentication, you are directed to the Analytics Cloud start page. From here, you can [Connect Liferay DXP to Analytics Cloud](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
+1. Upon authentication, the Analytics Cloud start page appears. From here, you can [Connect Liferay DXP to Analytics Cloud](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
 ## Help with MFA
 

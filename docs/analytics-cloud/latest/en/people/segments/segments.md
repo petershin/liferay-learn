@@ -41,7 +41,7 @@ The Overview tab also gives you a glimpse of the Segment's criteria, interests, 
 The Segment Membership panel displays the breakdown of the segment for known and anonymous individuals. It shows data for the previous 30 days. Place your mouse over the graph to see the breakdown at specific dates in the 30 days. 
 
 ```{note}
-Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When a new user registers on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as a known individual.
+Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
 ```
 
 ![The Segment Membership panel shows a breakdown of your segment for the past 30 days.](./segments/images/02.png)

@@ -3,7 +3,7 @@ uuid: 0ae4dfb4-7b8b-4658-a573-cd97a9a039a3
 ---
 # Exporting Data
 
-Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals/individuals-dashboard.md). Analytics data can also be fetched and exported with the use of Analytics Cloud's APIs. Specifically, you can fetch event data, individual data, segment data, or page data.
+Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals/individuals-dashboard.md). Analytics data can also be fetched and exported using Analytics Cloud's APIs. Specifically, you can fetch event data, individual data, segment data, or page data.
 
 ## Requesting a Data Export
 
@@ -15,7 +15,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
    curl -H "Authorization: Bearer [token]" -L https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
    ```
 
-   Replace `[token]` with your specific access token. Replace `[type]` with either `event`, `individual`, `page`, or `segment`. Give a start date and time by replacing `[ISO 8601 date and time]` after `fromDate=`. Give an end date and time by replacing `[ISO 8601 date and time]` after `toDate=`. Make sure to use the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date and time format. Note that the start date and time and end date and time are required in the request.
+   Replace `[token]` with your specific access token. Replace `[type]` with `event`, `individual`, `page`, or `segment`. Give a start date and time by replacing `[ISO 8601 date and time]` after `fromDate=`. Give an end date and time by replacing `[ISO 8601 date and time]` after `toDate=`. Make sure to use the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date and time format. Note that the start date and time and end date and time are required in the request.
 
    For example, a request for page data might look like this:
 
@@ -31,7 +31,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
 
    It may take some time (i.e. a few minutes to a few hours) for the request to finish processing depending on the size of the data being fetched.
 
-1. Run the same command again and the data is returned in your terminal window. Note that if the request is still processing, a message with `"status":"RUNNING"` appears. Check again later.
+1. Run the same command again, and the data is returned in your terminal window. Note that if the request is still processing, a message with `"status":"RUNNING"` appears. Check again later.
 
    If you wish to download the data as a JSON file, add `>> [filename.json]` to the end of the request. For example:
 

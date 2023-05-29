@@ -3,6 +3,7 @@ toc:
   - ./authenticating-with-saml/saml-authentication-process-overview.md
   - ./authenticating-with-saml/configuring-saml-at-the-system-level.md
   - ./authenticating-with-saml/saml-admin.md
+  - ./authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml.md
   - ./authenticating-with-saml/configuring-saml-at-the-instance-level.md
   - ./authenticating-with-saml/saml-settings.md
 uuid: 30e4f185-5f4b-4e4f-81f7-48b5a59f7111
@@ -15,6 +16,7 @@ uuid: 30e4f185-5f4b-4e4f-81f7-48b5a59f7111
 authenticating-with-saml/saml-authentication-process-overview.md
 authenticating-with-saml/configuring-saml-at-the-system-level.md
 authenticating-with-saml/saml-admin.md
+authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml.md
 authenticating-with-saml/configuring-saml-at-the-instance-level.md
 authenticating-with-saml/saml-settings.md
 ```
@@ -36,5 +38,6 @@ You can jump right to configuring SAML or learn how it works:
 * [SAML Authentication Process Overview](./authenticating-with-saml/saml-authentication-process-overview.md)
 * [Configuring SAML at the System Level](./authenticating-with-saml/configuring-saml-at-the-system-level.md)
 * [SAML Admin](./authenticating-with-saml/saml-admin.md)
+* [Importing User Groups' Memberships from an External IdP Through SAML](./authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml.md)
 * [Configuring SAML at the Instance Level](./authenticating-with-saml/configuring-saml-at-the-instance-level.md)
 * [SAML Configuration Reference](./authenticating-with-saml/saml-settings.md)

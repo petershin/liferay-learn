@@ -10,7 +10,7 @@
 
 여기에서 Liferay의 [`create_custom_element.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_custom_element.sh) 스크립트를 사용하여 기본 원격 애플리케이션을 생성합니다. 애플리케이션이 생성된 후 해당 코드를 컴파일하고 `.js` 및 `.css` 파일을 호스팅합니다. 일단 호스팅되면 각 파일의 URL을 복사하고 이를 사용하여 맞춤 요소를 만듭니다. 마지막으로 응용 프로그램을 사이트 페이지에 위젯으로 배포할 수 있습니다.
 
-![create **custom** element.sh 스크립트를 사용하여 간단한 React 애플리케이션을 생성합니다.](./creating-a-basic-custom-element/images/01.png)
+![create_custom_element.sh 스크립트를 사용하여 간단한 React 애플리케이션을 생성합니다.](./creating-a-basic-custom-element/images/01.png)
 
 ```{note}
 사용자 정의 요소 클라이언트 확장은 빌드, 패키징 또는 호스팅 방식에 관계없이 모든 기술을 사용할 수 있습니다. 이 튜토리얼은 React를 사용하는 샘플 사용자 정의 요소 애플리케이션만 제공합니다.

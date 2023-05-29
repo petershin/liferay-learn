@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(자체 호스팅)`
 
-클라이언트 확장 프로젝트는 확장자 `` 인 **Liferay Universal File Format Archives**(LUFFA)라는 배포 가능한 아카이브로 구축됩니다. 각 LUFFA는 특정 구조를 가지며 프로젝트에서 제공하지 않는 경우 자동으로 생성되는 특정 구성 요소 파일을 정의합니다. Liferay Workspace는 클라이언트 확장 프로젝트를 빌드할 때 패키지화합니다. 패키징 작동 방식을 이해하는 것은 [클라이언트 확장을 조립하거나](./working-with-client-extensions.md#assembling-client-extensions) 다른 프로세스로 LUFFA를 생성하는 데 중요합니다.
+클라이언트 확장 프로젝트는 `.zip` 확장자를 가진 *Liferay Universal File Format Archives*(LUFFA)라는 배포 가능한 아카이브로 구축됩니다. 각 LUFFA는 특정 구조를 가지며 프로젝트에서 제공하지 않는 경우 자동으로 생성되는 특정 구성 요소 파일을 정의합니다. Liferay Workspace는 클라이언트 확장 프로젝트를 빌드할 때 패키지화합니다. 패키징 작동 방식을 이해하는 것은 [클라이언트 확장을 조립](./working-with-client-extensions.md#assembling-client-extensions)하거나 다른 프로세스로 LUFFA를 생성하는 데 중요합니다.
 
 이것이 LUFFA의 구조입니다.
 

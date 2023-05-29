@@ -165,7 +165,7 @@ Liferay 7.3+에서 Workflow Metrics Settings 창에서 [Workflow Metrics](../../
 1. **모두 재색인** 클릭합니다. 시스템의 각 가상 인스턴스에 대해 이 작업을 반복합니다.
 
 ```{note}
-기본 데이터 스토리지(데이터베이스에서 지원하지 않는 데이터 저장)에 Elasticsearch 인덱스를 사용하는 경우 [스냅샷 및 복원 접근 방식](./upgrading-elasticsearch/backing-up-elasticsearch.md를 사용하여 해당 데이터를 새 Elasticsearch 클러스터로 가져올 수 있습니다. ) . 7.2 및 7.3에서 결과 순위 및 동의어에 대한 Liferay의 자체 검색 튜닝 인덱스는 기본 스토리지 인덱스입니다. 7.4에서 이러한 인덱스는 데이터베이스 테이블에 의해 지원됩니다.
+기본 데이터 스토리지(데이터베이스가 지원하지 않는 데이터 저장)에 Elasticsearch 인덱스를 사용하는 경우 [스냅샷 및 복원 방식](./upgrading-elasticsearch/backing-up-elasticsearch.md) 을 사용하여 해당 데이터를 새 Elasticsearch 클러스터로 가져올 수 있습니다. 7.2 및 7.3에서 결과 순위 및 동의어에 대한 Liferay의 자체 검색 튜닝 인덱스는 기본 스토리지 인덱스입니다. 7.4에서 이러한 인덱스는 데이터베이스 테이블에 의해 지원됩니다.
 ```
 
 Liferay 7.4 U45+/GA45+ 및 Liferay DXP 7.3 U14+에서는 향상된 로깅이 활성화되어 시스템 및 회사 색인에 대한 재색인 시작 및 완료 시점을 알 수 있습니다. 예를 들어,
@@ -190,9 +190,9 @@ Elasticsearch에 대한 번들 커넥터가 설치에 항상 최선의 선택은
 | CE 7.2, DXP 7.2           | Elasticsearch 6에 대한 Liferay 커넥터(CE)      | 번들                                                                                                                                              | [수송](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html)      | &#10004;\ **\**( [LES](https://www.liferay.com/products/dxp/enterprise-search) 필요) | 임베디드 / 원격         |
 | CE 7.2, DXP 7.2           | Liferay 커넥터(CE)에서 Elasticsearch 7(v3.x)로 | 시장: [CE](https://web.liferay.com/marketplace/-/mp/application/170642090) , [DXP](https://web.liferay.com/marketplace/-/mp/application/170390307) | [수송](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html)      | &#10004;                                                                            | 임베디드 / 원격         |
 
-\ **커넥터 구성의***Operation Mode***( `operationMode`) 설정은 더 이상 사용되지 않으며 ***Production Mode Enabled**(`productionModeEnabled`)로 대체됩니다.
+\* *커넥터 구성의* **Operation Mode** ( `operationMode`) 설정은 더 이상 사용되지 않으며 **Production Mode Enabled**(`productionModeEnabled`)로 대체됩니다.
 
-\ **\** [Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963) 애플리케이션을 통해.
+\*\* [Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963) 애플리케이션을 통해.
 
 호환 가능한 Elasticsearch 버전 및 필요한 패치 수준을 포함한 자세한 호환성 정보는 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 을 참조하십시오.
 

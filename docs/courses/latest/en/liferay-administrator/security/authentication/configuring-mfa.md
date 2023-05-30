@@ -11,9 +11,9 @@ Delectable Bonsai has come a long way from its days at the farmer's market. Now 
 
 ## Setting Up MFA
 
-1. Follow the steps in [Configuring Mail in Liferay](../configuration/server-administration-and-email.md#configuring-mail-in-lxc-sm-or-self-hosted) to simulate an SMTP mail server.
+1. Follow the steps in [Configuring Mail in Liferay](../../configuration/server-administration-and-email.md#configuring-mail-in-lxc-sm-or-self-hosted) to simulate an SMTP mail server.
 
-1. Log into Liferay as the administrator (i.e. [Kyle Klein](../users-accounts-organizations/managing-users.md#creating-users)).
+1. Log into Liferay as the administrator (i.e. [Kyle Klein](../../users-accounts-organizations/managing-users.md#creating-users)).
 
 1. Next, navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. Click _Multi-Factor Authentication_ under the security section.
 

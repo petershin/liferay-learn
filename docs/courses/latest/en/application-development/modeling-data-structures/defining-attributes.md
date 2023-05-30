@@ -1,18 +1,18 @@
 # Defining Attributes
 
-Attributes are specific pieces of information you want to store for entities, such as text and numeric values. With Liferay, this involves adding [data fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields) to an object definition and creating [picklists](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists) for use as single-select or multi-select fields. <!--REFINE-->
+Attributes are specific pieces of information you want to store for entities, such as text and numeric values. With Liferay, this involves adding [data fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields) to an object definition and creating [picklists](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists) for use as object fields. <!--REFINE-->
 
 <!-- Diagram? -->
 
 Delectable Bonsai needs to collect business information for verifying each applicant's identity and credit. These details are necessary for Know Your Customer (KYC) best practice and compliance with Anti-Money Laundering (AML) laws. Additionally, they want to collect information that can help them assess the relative value of each prospective distributor. For example, if the company is working to reach a specific region, they can give applications from that region higher priority.
 
-First, use Picklists to create predefined lists of string values. Then, add these fields to the Distributor Application object along with other custom fields. <!--REFINE-->
+To do this, first [create picklists](#adding-picklists-for-the-distributor-application-object) and then [add fields](#adding-fields-to-the-distributor-application-object) to the Distributor Application object.
 
-<!-- Before adding fields directly to the object definition, create picklists for any single-select or multi-select fields we want to include. Once created, we can add fields to the Distributor Application object. -->
+<!-- Separate article? -->
 
 ## Adding Picklists for the Distributor Application Object
 
-With Liferay picklists, you can define lists of string values that you can use for single-select and multiselect fields. <!--predetermines options for users creating entries--> Delectable Bonsai needs these picklists for their Distributor Application:
+With Liferay picklists, you can define lists of string values that you can use for single-select and multiselect fields. Delectable Bonsai needs these picklists for their Distributor Application:
 
 * Business Types
 * Distribution Regions
@@ -27,7 +27,7 @@ With Liferay picklists, you can define lists of string values that you can use f
 The following steps first cover how to create the Business Types list via the Liferay UI. Then, they cover how to create the remaining picklists using the `headless-admin-list-type` REST APIs. <!--REFINE-->
 
 ```{tip}
-Using Picklist APIs, you can add lists and items with pre-configured ERCs and localized names in one step. If you're working with multiple lists, this method is far more efficient than manually creating lists through the UI. <!--REFINE-->
+Using Picklist APIs, you can add lists and items with pre-configured ERCs and localized names in one step. If you're working with multiple lists, this method is far more efficient than manually creating lists through the UI.
 ```
 
 ### Creating Picklists via the Picklists UI
@@ -248,15 +248,17 @@ You can now use the picklist to create a single-select or multi-select field in 
 
 You can now use these picklists to create single-select and multi-select fields in the Distributor Application object.
 
+<!-- Separate article? -->
+
 ## Adding Fields to the Distributor Application Object
 
 With Object [data fields](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/fields), you can store and manage specific types of information in your application. <!-- Fields are data definitions that represent database columns and store different [types of values](#field-types-ui-reference). --> Delectable Bonsai needs fields for collecting applicant, contact, business, bank, and reference information.
 
-The following steps first cover how to add fields via the Liferay UI. Then, they cover how to create the remaining fields using the `object-admin` REST APIs. <!--REFINE-->
-
-![]()
+The following steps first cover how to add fields via the Liferay UI. Then, they cover how to create the remaining fields using the `object-admin` REST APIs.
 
 <!-- After adding a field, you can access additional configuration options. For example, by default all fields are searchable by __, but you can __ .-->
+
+<!-- TASK: Change mandatory values to false. This will help with subsequent steps in the tutorial. Also, users can set a field to mandatory for form fragments. -->
 
 ### Adding Fields via the Objects UI
 
@@ -282,15 +284,6 @@ The following steps first cover how to add fields via the Liferay UI. Then, they
    | Field Name | `applicationDate` |
    | Type       | Date              |
    | Mandatory  | True              |
-
-1. Add a Comments field:
-
-   | Field      | Value      |
-   |:-----------|:-----------|
-   | Label      | Comments   |
-   | Field Name | `comments` |
-   | Type       | Long Text  |
-   | Mandatory  | False      |
 
 1. Add a Distribution Regions field:
 
@@ -333,22 +326,31 @@ The following steps first cover how to add fields via the Liferay UI. Then, they
    | Mandatory     | False             |
    | Mark as State | False             |
 
-1. Add a Product Labeling field:
+1. Add an Estimated Annual Purchase Volume field:
 
-   | Field         | Value             |
-   |:--------------|:------------------|
-   | Label         | Product Labeling  |
-   | Field Name    | `productLabeling` |
-   | Type          | Picklist          |
-   | Picklist      | Product Labels    |
-   | Mandatory     | False             |
-   | Mark as State | False             |
+   | Field         | Value                            |
+   |:--------------|:---------------------------------|
+   | Label         | Estimated Annual Purchase Volume |
+   | Field Name    | `estimatedAnnualPurchaseVolume`  |
+   | Type          | Picklist                         |
+   | Picklist      | Annual Purchase Volumes          |
+   | Mandatory     | False                            |
+   | Mark as State | False                            |
+
+1. Add a Comments field:
+
+   | Field      | Value      |
+   |:-----------|:-----------|
+   | Label      | Comments   |
+   | Field Name | `comments` |
+   | Type       | Long Text  |
+   | Mandatory  | False      |
 
 Each saved field is immediately added to the published object. If you navigate to the Distributor Application, you can begin adding entries that include these fields. When you do, the fields are organized alphabetically.
 
 ![Add new entries that include the new fields.](./defining-attributes/images/05.png)
 
-Once created, the default table view displays a scrolling table that includes all new fields as well. <!--REFINE-->
+The default table in the object's application page also includes the new fields.
 
 ![The default table view includes all custom fields.](./defining-attributes/images/06.png)
 
@@ -358,7 +360,7 @@ Delectable Bonsai can use these fields to collect general details for assessing 
 
 1. Navigate to the `liferay-p6k3/curl` folder. The provided ZIP includes shell scripts for creating the remaining fields.
 
-   Each script includes multiple curl commands that call the `object-admin` service using the POST method. <!--See [Using Object Field APIs]() for more information on the schema for each field type.-->
+   Each script includes multiple curl commands that call the `object-admin` service using the POST method. <!--TASK: See [Using REST APIs to Add Fields to Object Definitions]() for more information on the schema for each field type.-->
 
 1. Run this script to create fields for storing contact information:
 

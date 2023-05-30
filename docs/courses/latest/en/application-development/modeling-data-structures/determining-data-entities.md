@@ -1,24 +1,20 @@
 # Determining Data Entities
 
-Developing applications begins with identifying the data entities you need to create and handle within your custom solution/use case<!--w/c-->. Whether insurance claims, support tickets, or commerce products, each type of entity is represented as a database table that determines its fundamental schema/structure<!--w/c-->, including data fields and relationships.
+Developing applications begins with identifying the data entities you need to create and handle within your business use case. Whether insurance claims, support tickets, or commerce products, each type of entity is represented as a database table that determines its fundamental schema/structure<!--w/c-->, including data fields and relationships.
 
 <!-- Diagram? -->
 
-Liferay provides the [Objects application](https://learn.liferay.com/en/w/dxp/building-applications/objects) for creating custom data models and extending supported system applications. When you publish custom objects, Liferay creates a database table for storing data entries. It also generates headless APIs for performing CRUD operations and provides a basic front-end. Using Liferay objects, you can build a robust and flexible foundation for your solution that is able to support the specific business processes and needs of your organization.
+Liferay provides the [Objects application](https://learn.liferay.com/en/w/dxp/building-applications/objects) for creating custom data models and extending supported system applications. When you publish custom objects, Liferay creates a database table for storing data entries. It also generates headless APIs for performing CRUD operations and provides a basic front-end. Using Liferay objects, you can build a robust and flexible foundation for your solution that is able to support the specific needs of your organization.
 
 ```{note}
-Previously, adding custom data entities to the Liferay platform required building and deploying OSGi modules. In 7.4+, this process is replaced by Liferay Objects. <!--REFINE-->
-```
-
-```{tip}
-Liferay places limitations on some definition options after publishing. For example, fields included in a definition at the time of publishing cannot be removed, though you can remove fields added after publishing. Publishing your definition early in the development process can help you maintain maximal freedom while iterating on your application. <!--REFINE-->
+Previously, adding custom data entities to the Liferay platform required building and deploying OSGi modules. In 7.4+, this process is replaced by Liferay Objects. <!--REFINE, distinguish between LXC et al.-->
 ```
 
 ## Creating the Distributor Application Object
 
 As mentioned previously, Delectable Bonsai needs a solution for receiving and approving applications to become product distributors. At its most basic implementation, this solution requires a single object definition for creating and storing applications submitted by potential distributors.
 
-Next,
+Next, <!--REFINE transition-->
 
 * [Add the Distributor Application object definition](#adding-a-definition-draft)
 * [Configure the definition's details](#configuring-the-object-definition)
@@ -26,7 +22,7 @@ Next,
 * [Publish the definition](#publishing-the-object-definition)
 
 ```{tip}
-This exercise creates the definition using the Objects UI. Alternatively, you can view and edit the definition using the Objects Admin REST service. See [Objects Admin API Basics]() for more information. <!--REFINE-->
+This exercise creates a definition using the Liferay Objects UI. Alternatively, you can view and edit the definition using the Objects Admin REST service. See [Objects Admin API Basics]() for more information. <!--REFINE-->
 ```
 
 ### Adding a Definition Draft
@@ -48,7 +44,14 @@ This exercise creates the definition using the Objects UI. Alternatively, you ca
 
 1. Click *Save*.
 
-   This creates a draft object definition with these standard data fields: `createDate`, `creator`, `externalReferenceCode`, `id`, `modifiedDate`, and `status`.
+   This creates a draft object definition with these standard data fields:
+
+      * `createDate`
+      * `creator`
+      * `externalReferenceCode`
+      * `id`
+      * `modifiedDate`
+      * `status`
 
    ![Liferay creates an object draft.](./determining-data-entities/images/03.png)
 
@@ -74,6 +77,8 @@ This exercise creates the definition using the Objects UI. Alternatively, you ca
    | Enable Entry History  | False                   |
 
 1. Click *Save*.
+
+<!--Consider what details to highlight...-->
 
 ### Adding a Custom Field
 
@@ -109,7 +114,11 @@ Before you can publish an object definition, you must add at least one custom fi
 
    ![In the Details tab, click Publish.](./determining-data-entities/images/07.png)
 
-Publishing a definition creates a database table with all fields included in the object at the time of publishing. Any field added after publishing is added to a side table in the database.Publishing also registers the application with the OSGi framework and integrates it with Liferay's core features (e.g., permissions, workflow, headless). See [Publishing Object Drafts](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects#publishing-object-drafts) for more information. <!--REFINE-->
+Publishing a definition creates a database table with all fields included in the object at the time of publishing. Any field added after publishing is added to a side table in the database. Publishing also registers the application with the OSGi framework and integrates it with Liferay's core features (e.g., permissions, workflow, headless). See [Publishing Object Drafts](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects#publishing-object-drafts) for more information. <!--REFINE-->
+
+```{tip}
+Liferay places limitations on some definition options after publishing. For example, fields included in a definition at the time of publishing cannot be removed, though you can remove fields added after publishing. Publishing your definition early in the development process can help you maintain maximal freedom while iterating on your application. <!--REFINE-->
+```
 
 ### Creating Distributor Application Entries
 
@@ -125,7 +134,7 @@ During publishing, Liferay generates REST APIs for Distributor Application, whic
 
 ![Liferay generates REST APIs for Distributor Application.](./determining-data-entities/images/10.png)
 
-Now that we have our object definition, we can add fields to collect the necessary applicant information.
+Now that we have our object definition, you can add fields to collect the necessary applicant information.
 
 Next: [Defining Attributes](./defining-attributes.md)
 

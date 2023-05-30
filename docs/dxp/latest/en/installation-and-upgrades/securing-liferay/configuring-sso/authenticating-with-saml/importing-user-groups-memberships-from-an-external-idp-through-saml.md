@@ -67,7 +67,7 @@ The following steps walk through the creation of a SAML 2.0 application on Okta 
 1. Select one of the radio buttons based on what suits you best and click *Finish*. 
 
 ```{note}
-The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name to user groups in Liferay.
+The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name with user groups in Liferay.
 ```
 
 ### Saving the Metadata

@@ -28,4 +28,4 @@ But first, you'll create four user accounts assigned across two different organi
 
 The next step is creating the users. Ready? 
 
-[Let's Go!](./users-accounts-organizations/connecting-to-ldap.md)
+[Let's Go!](./users-accounts-organizations/managing-users.md)

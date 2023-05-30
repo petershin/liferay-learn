@@ -3,7 +3,22 @@ uuid: faa31f3d-1d85-421c-a9c2-b1a262e4eb75
 ---
 # Importing User Groups' Memberships from an External IdP through SAML
 
-When using an external identity provider (IdP) for signing on to Liferay, you would want to import user groups' memberships also. To do this, register the IdP as a SAML Service Provider and configuring the necessary fields. This example uses Okta as the external IdP, but you can follow the instructions and apply it to other IdPs that send multi valued attributes using the same XML structure.
+When using an external identity provider (IdP) for signing on to Liferay, you would want to import user groups' memberships also. To do this, register the IdP as a SAML Service Provider and configuring the necessary fields. This example uses Okta as the external IdP, but you can follow the instructions and apply it to other IdPs that send multi valued attributes using the same XML structure. Given below is the XML structure for user groups:
+
+```xml
+<saml2:Attribute Name="userGroup" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified">
+      <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:type="xs:string"
+                           >Okta-UserGroup2
+      </saml2:AttributeValue>
+      <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                           xsi:type="xs:string"
+                           >Okta-UserGroup1
+      </saml2:AttributeValue>
+</saml2:Attribute>
+```
 
 ## Okta Configuration
 
@@ -52,7 +67,7 @@ The following steps walk through the creation of a SAML 2.0 application on Okta 
 1. Select one of the radio buttons based on what suits you best and click *Finish*. 
 
 ```{note}
-The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. 
+The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name to user groups in Liferay.
 ```
 
 ### Saving the Metadata

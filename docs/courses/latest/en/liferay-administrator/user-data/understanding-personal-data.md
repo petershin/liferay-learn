@@ -43,7 +43,7 @@ In this step and the next, you'll use Liferay's user data tools to deactivate or
    * In the left navigation, select _Widgets_ under the fragments and widgets tab.
    * Find the message boards widget under collaboration. Drag it onto the page.
    * Then find the form widget and drag it onto the page under the message boards widget.
-   * Click _Options_ ([!Options icon](../../images/icon-actions.png)) of the form widget and click _Configuration_.
+   * Click _Options_ (![Options icon](../../images/icon-actions.png)) of the form widget and click _Configuration_.
    * In the pop-up window, click the form you just created. Click _Save_.
    * Finally, click _Publish_.
 

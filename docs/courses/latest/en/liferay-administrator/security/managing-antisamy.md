@@ -36,7 +36,7 @@ By default, all JavaScript code is sanitized and prevented from being executed e
    * In the next screen, select the blank template. Input `Webcontent` as the page name. Click _Add_.
    * In the left navigation, select _Widgets_ under the fragments and widgets tab.
    * Find the web content display widget under content management. Drag it onto the page.
-   * Click _Options_ ([!Options icon](../../images/icon-actions.png)) on the widget and click _Configuration_.
+   * Click _Options_ (![Options icon](../../images/icon-actions.png)) on the widget and click _Configuration_.
    * In the pop-up window, select the foo web content you just created. Click _Save_.
    * Finally, click _Publish_.
 

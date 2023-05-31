@@ -11,7 +11,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"Integer\",\"businessType\":\"Integer\",\"externalReferenceCode\":\"8e17948a-dbc7-988c-3760-61bc790eaeb5\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Reference Phone Number\"},\"name\":\"referencePhoneNumber\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"8e17948a-dbc7-988c-3760-61bc790eaeb5\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Reference Phone Number\"},\"name\":\"referencePhoneNumber\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
 	-u "test@liferay.com:learn"
 
 # Reference Address Line One

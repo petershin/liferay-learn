@@ -368,12 +368,12 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    ./ObjectField_POST_ContactInformation_ByExternalReferenceCode.sh
    ```
 
-   | Field Name                  | Type    |
-   |:----------------------------|:--------|
-   | `primaryContactName`        | Text    |
-   | `primaryContactTitle`       | Text    |
-   | `primaryContactEmail`       | Text    |
-   | `primaryContactPhoneNumber` | Integer |
+   | Field Name                  | Type |
+   |:----------------------------|:-----|
+   | `primaryContactName`        | Text |
+   | `primaryContactTitle`       | Text |
+   | `primaryContactEmail`       | Text |
+   | `primaryContactPhoneNumber` | Text |
 
 1. Run this script to create fields for storing business information:
 
@@ -391,7 +391,7 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    | `businessAnnualRevenue`        | Precision Decimal    |
    | `businessDistributionChannels` | Multiselect Picklist |
    | `businessOtherBrandsOffered`   | Long Text            |
-   | `businessPhoneNumber`          | Integer              |
+   | `businessPhoneNumber`          | Text                 |
    | `businessAddressLineOne`       | Text                 |
    | `businessAddressLineTwo`       | Text                 |
    | `businessCity`                 | Text                 |
@@ -414,7 +414,7 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    |:--------------------------|:--------|
    | `bankName`                | Text    |
    | `bankAccountNumber`       | Text    |
-   | `bankPhoneNumber`         | Integer |
+   | `bankPhoneNumber`         | Text    |
    | `bankAddressLineOne`      | Text    |
    | `bankAddressLineTwo`      | Text    |
    | `bankCity`                | Text    |
@@ -431,7 +431,7 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    | Field Name                     | Type    |
    |:-------------------------------|:--------|
    | `referenceSupplierName`        | Text    |
-   | `referencePhoneNumber`         | Integer |
+   | `referencePhoneNumber`         | Text    |
    | `referenceAddressLineOne`      | Text    |
    | `referenceAddressLineTwo`      | Text    |
    | `referenceCity`                | Text    |

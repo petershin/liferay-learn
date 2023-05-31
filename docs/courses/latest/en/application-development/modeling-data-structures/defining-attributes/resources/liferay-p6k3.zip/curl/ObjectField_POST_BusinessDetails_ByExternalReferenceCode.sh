@@ -67,7 +67,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"Integer\",\"businessType\":\"Integer\",\"externalReferenceCode\":\"788ff32f-2c16-49b6-f0a4-70ad9525ac9c\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business Phone Number\"},\"name\":\"businessPhoneNumber\",\"objectFieldSettings\":[],\"required\":true,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"788ff32f-2c16-49b6-f0a4-70ad9525ac9c\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business Phone Number\"},\"name\":\"businessPhoneNumber\",\"objectFieldSettings\":[],\"required\":true,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
 	-u "test@liferay.com:learn"
 
 # Business Address Line One

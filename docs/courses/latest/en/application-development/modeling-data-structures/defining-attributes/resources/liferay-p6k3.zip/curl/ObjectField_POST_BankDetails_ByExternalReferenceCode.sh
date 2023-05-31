@@ -19,7 +19,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"Integer\",\"businessType\":\"Integer\",\"externalReferenceCode\":\"252a0d43-11eb-b9e0-42e4-97e1b2dce029\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Bank Phone Number\"},\"name\":\"bankPhoneNumber\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"252a0d43-11eb-b9e0-42e4-97e1b2dce029\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Bank Phone Number\"},\"name\":\"bankPhoneNumber\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
 	-u "test@liferay.com:learn"
 
 # Bank Address Line One

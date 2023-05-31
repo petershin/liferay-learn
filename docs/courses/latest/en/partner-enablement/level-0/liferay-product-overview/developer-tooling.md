@@ -15,3 +15,9 @@ Liferay provides a variety of developer tools that include standard build script
 ### Blade CLI
 
 * [Generating Projects with Blade CLI](https://learn.liferay.com/w/dxp/building-applications/tooling/blade-cli/generating-projects-with-blade-cli)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Platform Services.
+
+[Let's Go](./platform-services.md)

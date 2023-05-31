@@ -28,3 +28,9 @@ Business users can quickly and easily define the fields required for business ap
 ### Workflow Metrics
 
 * [Using Workflow Metrics](https://learn.liferay.com/w/dxp/process-automation/workflow/using-workflows/using-workflow-metrics)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Commerce.
+
+[Let's Go](./commerce.md)

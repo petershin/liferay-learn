@@ -18,3 +18,9 @@ Liferay's headless APIs are:
 ## Related Features
 
 * [Using Liferay as a Headless Platform](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Collaboration and Knowledge Sharing.
+
+[Let's Go](./collaboration-and-knowledge-sharing.md)

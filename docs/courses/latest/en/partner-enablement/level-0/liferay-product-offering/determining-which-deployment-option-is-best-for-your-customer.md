@@ -28,7 +28,7 @@ Solutions implemented with Liferay are not turnkey applications - even when a cu
 
 But, in most cases, not all of a business' problems will be solved with these features alone. A key strength of Liferay DXP has always been the ability to extend and customize the platform to fit specific needs. The preferred approach to extending the platform is to create [Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions). Client Extensions are not tied to Liferay's code, and can be used with any of the deployment approaches. Client Extensions allow developers to use the technologies that they are familiar with, and make it easy to perform upgrades to the core platform.
 
-![Client extensions are loosely-coupled, use modern technologies, and support easy upgrades.](../the-liferay-product-offering/images/05.png)
+![Client extensions are loosely-coupled, use modern technologies, and support easy upgrades.](../liferay-product-offering/images/05.png)
 
 In some circumstances where highly complex customization is needed, customers can use an alternative Java-based development approach, deploying OSGi modules to the core platform, however this necessitates a non-SaaS deployment approach.
 
@@ -71,12 +71,10 @@ All of these cases should progressively reduce as the product evolves, and as re
 
 Liferay has developed a sales decision flow to use with new customers and for new projects with existing customers. Partners can use this flow to help determine the optimal approach for each customer or project. This provides guidance on which deployment approach is right for an opportunity, covering key decision steps that will guide you towards SaaS, PaaS, PaaS with Managed Services, or Self-Hosted - and to guide you to the Solution Concierge Desk for outliers.
 
-![Sales decision flow for new customers and new projects with existing customers.](../the-liferay-product-offering/images/06.png)
+![Sales decision flow for new customers and new projects with existing customers.](../liferay-product-offering/images/06.png)
 
 ## What's Next
 
-Learn more about the [core capabilities of Liferay DXP](./liferay-dxp-product-capabilities.md) and how they meet customer needs.
+Learn more about the core capabilities of Liferay DXP and how they meet customer needs.
 
-## Additional Information
-
-* [Liferay Overview]()
+[Let's Go!](../liferay-product-overview.md)

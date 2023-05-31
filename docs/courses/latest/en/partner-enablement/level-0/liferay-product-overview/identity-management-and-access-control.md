@@ -26,3 +26,9 @@ Manage users while ensuring data compliance and the security of your digital env
 ### Personal Data Management
 
 * [GDPR rights to Data Portability and Right to be Forgotten are supported](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Integration and Interoperability.
+
+[Let's Go](./integration-and-interoperability.md)

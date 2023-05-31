@@ -34,3 +34,9 @@ Liferay’s Content and Asset Management capabilities allow practitioners to cre
 ### Structured Content
 
 * [Use Forms for user interaction](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Low Code and No Code Application Building.
+
+[Let's Go](./low-code-no-code-application-building.md)

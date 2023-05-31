@@ -25,3 +25,9 @@ Liferay’s Low-Code and No-Code tools make it possible for non-developers to bu
 
 * [Site Appearance](https://learn.liferay.com/w/dxp/site-building/site-appearance/site-appearance)
 * [Style Books](https://learn.liferay.com/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Data Modelling and Process Management.
+
+[Let's Go](./data-modelling-and-process-management.md)

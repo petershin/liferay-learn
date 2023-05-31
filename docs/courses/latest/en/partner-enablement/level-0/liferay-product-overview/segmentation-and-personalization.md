@@ -25,3 +25,9 @@ With Liferay DXP, you can personalize and optimize digital experiences at scale 
 ### Recommendations
 
 * [Content Recommendations](https://learn.liferay.com/web/guest/w/dxp/site-building/personalizing-site-experience/experience-personalization/understanding-content-recommendations)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Search and Navigation.
+
+[Let's Go](./search-and-navigation.md)

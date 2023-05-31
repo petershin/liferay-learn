@@ -26,3 +26,9 @@ Empower users to get answers to questions faster on their own, and solve more co
 * [Ratings](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/user-guide/using-the-ratings-system)
 * [Comments](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/using-page-comments)
 * [Mentions](https://learn.liferay.com/w/dxp/collaboration-and-social/notifications-and-requests/user-guide/mentioning-users)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Identity Management and Access Control.
+
+[Let's Go](./identity-management-and-access-control.md)

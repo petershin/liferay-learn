@@ -42,3 +42,9 @@ Design Systems & Experience Management work hand-in-hand, allowing designers to 
 
 * [PageSpeed Insights Recommendations](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages)
 * [General Accessibility Focus](https://learn.liferay.com/w/dxp/site-building/optimizing-sites#page-performance-and-accessibility)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Content and Asset Management.
+
+[Let's Go](./content-and-asset-management.md)

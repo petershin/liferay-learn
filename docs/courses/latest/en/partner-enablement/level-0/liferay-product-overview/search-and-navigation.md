@@ -29,3 +29,9 @@ Liferay DXP allows you to build digital experiences with dynamic navigation, cat
 
 * [Navigation Menus](https://learn.liferay.com/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
 * [Configuring Menu Displays](https://learn.liferay.com/w/dxp/site-building/site-navigation/configuring-menu-displays)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Headless APIs and Multichannel.
+
+[Let's Go](./headless-apis-and-multichannel.md)

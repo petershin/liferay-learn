@@ -1,13 +1,12 @@
 ---
 toc:
 - ./level-0/determining-which-deployment-option-is-best-for-your-customer.md
-- ./level-0/liferay-dxp-product-capabilities.md
 uuid: b982f1e4-2c22-4563-aa19-68d9aa8a801a
 ---
 
-# The Liferay Product Offering
+# Liferay Product Offering
 
-**At a Glance**
+In this module you will learn about the Liferay product offering:
 
 * Liferay develops a single Product: Liferay DXP
 * There are three Product Deployment Offerings:
@@ -18,9 +17,9 @@ uuid: b982f1e4-2c22-4563-aa19-68d9aa8a801a
 
 ## Background
 
-It's important to note four pieces of background information: 
+It's important to note four pieces of background information:
 
-1. Liferay's product is Liferay DXP, which is a single offering composed of three previously separate components. 
+1. Liferay's product is Liferay DXP, which is a single offering composed of three previously separate components.
 
 1. Liferay DXP contains three main capability sets: the core Digital Experience Platform, Commerce, and Analytics.
 
@@ -28,7 +27,7 @@ It's important to note four pieces of background information:
 
 1. The deployment approach chosen does not impact the features that are provided.
 
-![The Liferay Product line has three capability sets.](the-liferay-product-offering/images/01.png)
+![The Liferay Product line has three capability sets.](liferay-product-offering/images/01.png)
 
 ## Supporting Every Deployment Approach
 
@@ -46,7 +45,7 @@ This flexibility of deployment is an important differentiator over many of our c
 Although the deployment method for Liferay Experience Cloud is SaaS, this is not a turnkey-application. It is the full Digital Experience Platform, on top of which our customers, partners, and GS build the tailored solutions our customers need to solve their business problems.
 ```
 
-![Liferay has three product deployment offerings.](the-liferay-product-offering/images/02.png)
+![Liferay has three product deployment offerings.](liferay-product-offering/images/02.png)
 
 The day-to-day activities vary with each deployment approach. While each activity is important, delivering the actual business application has the greatest value. In contrast, some of the lower-value activities can be quite time-consuming and difficult. Depending on the deployment approach chosen, these activities can be offloaded to Liferay, freeing the customer to concentrate on the most important tasks. 
 
@@ -60,7 +59,7 @@ Then they must maintain that infrastructure and the platform software, plus patc
 
 Finally, they must build their solution on DXP.
 
-![Liferay DXP Infrastructure contains several components that when self-hosted, require much maintenance.](the-liferay-product-offering/images/03.png)
+![Liferay DXP Infrastructure contains several components that when self-hosted, require much maintenance.](liferay-product-offering/images/03.png)
 
 **Low Value Activities**
 
@@ -90,7 +89,7 @@ Liferay Experience Cloud Self-Managed (formerly DXP Cloud) is our Platform-as-a-
 
 Additionally, with Liferay Experience Cloud Self-Managed, there are predefined offers that include things like backup and VPN services. Furthermore, these scale via OOTB high availability, auto-scaling capabilities, auto-failover capabilities, and provide load balancing.  These activities are very important, but they can be hard and/or expensive to implement.
 
-![Liferay Experience Cloud Self Managed provides many infrastructure services to the customer.](the-liferay-product-offering/images/04.png)
+![Liferay Experience Cloud Self Managed provides many infrastructure services to the customer.](liferay-product-offering/images/04.png)
 
 Liferay also provides an infrastructure uptime SLA of 99.95%, does regular updates to the platform services, and provides the full DevSecOps CI/CD pipeline with build management.
 
@@ -150,8 +149,6 @@ What is important to note is that although the deployment model is SaaS, this is
 
 ## What's Next
 
-Now that you understand Liferay's product offering, [learn how to determine what deployment option is best for your customer](./the-liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md).
+Now that you understand Liferay's product offering, learn how to determine what deployment option is best for your customer.
 
-## Additional Information
-
-* [Liferay Overview]()
+[Let's Go!](./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md)

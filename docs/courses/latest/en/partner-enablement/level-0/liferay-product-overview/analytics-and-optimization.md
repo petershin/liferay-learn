@@ -27,3 +27,9 @@ Optimize digital experience outcomes with analytics that identify areas for impr
 ### Content Dashboard
 
 * [Content Dashboard](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard/about-the-content-dashboard)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Segmentation and Personalization.
+
+[Let's Go](./segmentation-and-personalization.md)

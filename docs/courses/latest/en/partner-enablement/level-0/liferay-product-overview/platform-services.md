@@ -24,3 +24,9 @@ Liferay’s platform services provide the tools and interfaces to allow Administ
 
 * [Translating Pages and Content](https://learn.liferay.com/w/dxp/content-authoring-and-management/translating-pages-and-content)
 * [Initial Instance Localization](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/initial-instance-localization)
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Cloud and Infrastructure.
+
+[Let's Go](./cloud-and-infrastructure.md)

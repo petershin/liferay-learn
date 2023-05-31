@@ -37,3 +37,9 @@ With digital commerce capabilities designed to support complex ordering workflow
 * [Support for buyers, sellers, accounts, user roles](https://learn.liferay.com/w/commerce/users-and-accounts)
 * [Dashboards](https://learn.liferay.com/w/analytics-cloud/commerce/commerce-dashboard)
 * Forecasting
+
+## What's Next
+
+Continue learning more about Liferay DXP capabilities: Analytics and Optimization.
+
+[Let's Go](./analytics-and-optimization.md)

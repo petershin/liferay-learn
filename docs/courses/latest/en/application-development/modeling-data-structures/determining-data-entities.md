@@ -1,19 +1,19 @@
 # Determining Data Entities
 
-Developing applications begins with identifying the data entities you need to create and handle within your business use case. Whether insurance claims, support tickets, or commerce products, each type of entity is represented as a database table that determines its fundamental structure, including data fields and relationships. With Liferay, this involves using the [Objects application](https://learn.liferay.com/en/w/dxp/building-applications/objects) to create custom data models and extend supported system applications. Using Liferay objects, you can build a robust and flexible foundation for your solution that is able to support the specific needs of your organization.
+Your first step toward creating an application is to define its data entities. In Liferay, you do this by defining various [Objects ](https://learn.liferay.com/en/w/dxp/building-applications/objects) representing your application's entities. These can be anything from insurance claims, support tickets, or commerce products.
+
+When you publish custom objects, Liferay creates a database table for storing data entries. It also generates headless APIs for performing CRUD operations and provides a basic front-end. Using Liferay objects, you can build a robust and flexible foundation for your solution that is able to support the specific needs of your organization.
 
 <!-- Diagram ![](./determining-data-entities/images/01.png) -->
 
-As mentioned previously, Delectable Bonsai needs a solution for receiving and approving applications to become product distributors. At its most basic implementation, this solution requires a single object definition for creating and storing applications submitted by potential distributors.
+Your first application will help Delectable Bonsai manage submitted product distributor applications. This requires a single object definition for creating and storing applications submitted by potential distributors. You'll do this in four steps: 
 
-To begin,
+1. [Add the Distributor Application object](#adding-the-distributor-application-object)
+1. [Configure the object](#configuring-the-object)
+1. [Add a custom field](#adding-a-custom-field)
+1. [Publish the object](#publishing-the-distributor-application-object)
 
-* [Add the Distributor Application object](#adding-the-distributor-application-object)
-* [Configure the object](#configuring-the-object)
-* [Add a custom field](#adding-a-custom-field)
-* [Publish the object](#publishing-the-distributor-application-object)
-
-After publishing the object definition, you can practice [using the Distributor Application object](#using-distributor-applications) to create entries.
+<!-- After publishing the object definition, you can practice [using the Distributor Application object](#using-distributor-applications) to create entries. -->
 
 ## Adding the Distributor Application Object
 
@@ -27,7 +27,7 @@ After publishing the object definition, you can practice [using the Distributor 
    |:-------------|:-------------------------|
    | Label        | Distributor Application  |
    | Plural Label | Distributor Applications |
-   | Object Name  | DistributorApplication   |
+   | Object Name  | `DistributorApplication` |
    | Storage Type | Default                  |
 
    ![Enter a label, plural label, object name, and storage type.](./determining-data-entities/images/02.png)
@@ -55,7 +55,7 @@ Configure Distributor Application as follows:
 
 1. Change the definition's ERC (External Reference Code):
 
-   * Click the *Edit* button (![Edit Button](../../images/icon-edit.png)).
+   * Click *Edit* (![Edit Button](../../images/icon-edit.png)).
    * Replace the UUID with `C_DISTRIBUTOR_APPLICATION`.
    * Click *Save*.
 
@@ -85,7 +85,7 @@ Configure Distributor Application as follows:
 
 ## Adding a Custom Field
 
-Before you can publish an object definition, you must add at least one custom field to it.
+Before you can publish an object definition, it must have at least one field.
 
 To do this,
 
@@ -141,7 +141,7 @@ You can also use the REST APIs generated for Distributor Application during publ
 
 ![Liferay generates REST APIs for Distributor Application.](./determining-data-entities/images/10.png)
 
-Now that you've created and published the Distributor Application object, you can define additional object attributes to collect necessary applicant information.
+Now that the object is defined, you can add more fields to collect the necessary applicant information.
 
 Next: [Defining Attributes](./defining-attributes.md)
 

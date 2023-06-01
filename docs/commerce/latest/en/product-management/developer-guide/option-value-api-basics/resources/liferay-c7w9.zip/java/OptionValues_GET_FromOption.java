@@ -4,7 +4,7 @@ import com.liferay.headless.commerce.admin.catalog.client.resource.v1_0.OptionVa
 public class OptionValues_GET_FromOption {
 
 	/**
-	 * java -classpath .:* OptionValues_GET_FromOption
+	 * java -classpath .:* -DoptionId=1234 OptionValues_GET_FromOption
 	 */
 	public static void main(String[] args) throws Exception {
 		OptionValueResource.Builder builder = OptionValueResource.builder();
@@ -14,8 +14,9 @@ public class OptionValues_GET_FromOption {
 		).build();
 
 		System.out.println(
-			optionValueResource.getOptionValuesPage(
-				null, null, Pagination.of(1, 2), null));
+			optionValueResource.getOptionIdOptionValuesPage(
+				Long.valueOf(System.getProperty("optionId")), null,
+				Pagination.of(1, 2), null));
 	}
 
 }

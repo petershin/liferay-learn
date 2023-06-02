@@ -118,7 +118,7 @@ The other cURL commands use similar JSON arguments.
 
 The `Option_POST_ToInstance.java` class adds an option by calling the `OptionResource` service.
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_POST_ToInstance.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_POST_ToInstance.java
    :dedent: 1
    :language: java
    :lines: 11-31
@@ -160,7 +160,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Options_GET_FromInstance.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Options_GET_FromInstance.sh
    :language: bash
 ```
 
@@ -174,7 +174,7 @@ java -classpath .:* Options_GET_FromInstance
 
 Code:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Options_GET_FromInstance.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Options_GET_FromInstance.java
    :dedent: 1
    :language: java
    :lines: 11-22
@@ -220,7 +220,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Option_GET_ById.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_GET_ById.sh
    :language: bash
 ```
 
@@ -234,7 +234,7 @@ java -classpath .:* -DoptionId=1234 Option_GET_ById
 
 Code:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_GET_ById.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_GET_ById.java
    :dedent: 1
    :language: java
    :lines: 8-18
@@ -256,7 +256,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Option_PATCH_ById.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_PATCH_ById.sh
    :language: bash
 ```
 
@@ -270,7 +270,7 @@ java -classpath .:* -DoptionId=1234 Option_PATCH_ById
 
 Code:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_PATCH_ById.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_PATCH_ById.java
    :dedent: 1
    :language: java
    :lines: 11-31
@@ -290,7 +290,7 @@ Command:
 
 Code:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Option_DELETE_ById.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_DELETE_ById.sh
    :language: bash
 ```
 
@@ -304,10 +304,10 @@ java -classpath .:* -DoptionId=1234 Option_DELETE_ById
 
 Code:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_DELETE_ById.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_DELETE_ById.java
    :dedent: 1
    :language: java
    :lines: 8-17
 ```
 
-The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `Option` services and schemas and has an interface to test each service.
+The [API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) shows the `OptionValue` services and schemas and has an interface to test each service.

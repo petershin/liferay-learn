@@ -33,7 +33,7 @@ Follow these steps:
 
 1. Select a field *Type*. Some field types include additional configuration options (e.g., picklist, attachment). See [Field Type Reference](#field-types-ui-reference) below for an overview of each type.
 
-   In some cases, these options are available during field creation, while others only appear after field creation.
+   Some options appear during field creation, and others only appear after field creation.
 
    ```{tip}
    You can require some types to accept only unique values. For example, you can prevent users from entering an existing email address. For text or integer field types, enable *Accept Unique Values Only*.
@@ -87,12 +87,12 @@ The following field names are reserved by Liferay and cannot be used. If users a
 | `statusByUserId`        | ID of the assigned user in Workflow.            |
 | `statusByUserName`      | Name of the assigned user in Workflow.          |
 | `statusDate`            | Date when the Workflow status was last updated. |
-| `userEmailAddress`      | Email address for the entry's author.           |
-| `userFirstName`         | First name of the entry's author.               |
-| `userId`                | ID of the entry's author.                       |
-| `userLastName`          | Last name of the entry's author.                |
-| `userName`              | User name of the entry's author.                |
-| `uuid`                  | Unique universal ID for the entry.              |
+| `userEmailAddress`      | Entry author's email address.           |
+| `userFirstName`         | Entry author's first name.               |
+| `userId`                | Entry author's user ID.                       |
+| `userLastName`          | Entry author's Last name.                |
+| `userName`              | Entry author's user name.                |
+| `uuid`                  | Entry's unique universal ID.              |
 
 ## Related Topics
 

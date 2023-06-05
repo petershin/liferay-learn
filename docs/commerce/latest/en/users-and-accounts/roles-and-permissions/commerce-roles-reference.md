@@ -3,7 +3,7 @@ uuid: fc207835-2243-4f2b-858f-67cfff5a1b3f
 ---
 # Commerce Roles Reference
 
-Liferay includes four roles [out-of-the-box](#out-of-the-box-roles) for Commerce. This includes the account administrator, account member, buyer, and order manager. You can modify the out-of-the-box roles or create additional account roles to better suit your use case. Some [common custom roles](#custom-roles) include catalog manager, inventory manager, shipment manager, instance order Manager, and discount manager.
+Liferay includes four roles [out-of-the-box](#out-of-the-box-roles) for Commerce: account administrator, account member, buyer, and order manager. You can modify these roles or create additional account roles to better suit your use case. Some [common custom roles](#custom-roles) include catalog manager, inventory manager, shipment manager, instance order manager, and discount manager.
 
 ```{note}
 The sales agent role is available out-of-the-box for Liferay 7.3.x and earlier Commerce versions. It is available in Liferay DXP 7.4 and above through the Minium and Speedwell accelerators only. 
@@ -38,15 +38,15 @@ Follow these steps to view and manage permissions associated with a Commerce rol
 
 ## Out-of-the-Box Roles
 
-The following roles are available out-of-the-box with your DXP instance. They are included alongside default DXP roles and you can modify them if needed. See [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) for more information.
+The following roles are available out-of-the-box with your DXP instance. They are included with default DXP roles, and you can modify them if needed. See [Defining Role Permissions](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) for more information.
 
 ### Account Administrator
 
 > Account Role
 
-Account administrators are super users of their account. They can approve or reject orders when there is a [buyer order approval](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md#enabling-workflow) workflow enabled and oversee the order managers and buyers of their account. They can modify their account, invite or add users to it, and assign roles to other account members. Account administrators cannot create or delete accounts. This permission is reserved for instance administrators.
+Account administrators are account super users. They can approve or reject orders when there is a [buyer order approval](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md#enabling-workflow) workflow enabled and oversee the order managers and buyers of their account. They can modify their account, invite or add users to it, and assign roles to other account members. Account administrators cannot create or delete accounts. This permission is reserved for instance administrators.
 
-The accounts permissions pertain to the account administrator's ability to modify accounts in a B2B setting, while the open carts permissions affect the administrator's ability to modify orders regardless of the store type.
+The accounts permissions define how account administrators can modify accounts in a B2B setting, while the open carts permissions define how administrators can modify orders regardless of the store type.
 
 | Permissions                                                          | Description                                                                                                |
 | :------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------- |
@@ -92,9 +92,9 @@ This role is automatically assigned to all users of an account and grants basic 
 
 > Account Role
 
-A buyer can make purchases on behalf of the account they are handling. When there's a buyer order approval workflow, they must submit the order to the order manager who decides whether to approve it or not. A buyer can also view and check out orders from another buyer of the same account.
+Buyers can make purchases on behalf of the account they are handling. When there's a buyer order approval workflow, they must submit the order to the order manager who decides whether to approve it or not. A buyer can also view and check out orders from another buyer of the same account.
 
-The accounts permissions pertain to the buyer's ability to view and manage addresses, while the open carts permissions pertain to the buyer’s ability to view, create, and check out orders, and also manage other order attributes.
+The accounts permissions define the buyer's ability to view and manage addresses, while the open carts permissions define the buyer’s ability to view, create, and check out orders, and also manage other order attributes.
 
 | Permissions                                                          | Description                                         |
 | :------------------------------------------------------------------- | :-------------------------------------------------- |
@@ -135,7 +135,7 @@ You can use this role to oversee all the purchases made in the account. If there
 
 ### Sales Agent
 
-The sales agent is a regular role in Liferay and assignees are able to manage any account assigned to the role without granting them administrative permissions. You can find it under the *Regular Roles* tab.
+The sales agent is a regular role in Liferay, and assignees can manage any account assigned to the role without granting them administrative permissions. You can find it under the Regular Roles tab.
 
 | Permissions                                                       | Description                                                                          |
 | :---------------------------------------------------------------- | :----------------------------------------------------------------------------------- |
@@ -231,12 +231,12 @@ The catalog manager role grants permissions to access, create, edit, and manage 
 | Products: Access in Control Panel                   | Ability to access the products application in the Global Menu |
 | Products: View                                      | Ability to view the products application                      |
 
-In addition to the above permissions, you must also assign *View* and *Update* permissions for the individual catalogs you want the role will manage.
+In addition to the above permissions, you must also assign View and Update permissions for the individual catalogs you want the role to manage.
 
 To do this, open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Product Management* &rarr; *Catalog*. Then, click on the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired Catalog, and select *Permissions*. Use the check boxes to assign the role *View* and *Update* permissions.
 
 ```{note}
-If you'd like your catalog manager to manage products within a catalog without the ability to modify the catalog itself, remove the `Catalogs: Access in Control Panel` and `Catalogs: View` permissions.
+If you want your catalog manager to manage products in a catalog but not modify the catalog itself, remove the `Catalogs: Access in Control Panel` and `Catalogs: View` permissions.
 ```
 
 ### Inventory Manager

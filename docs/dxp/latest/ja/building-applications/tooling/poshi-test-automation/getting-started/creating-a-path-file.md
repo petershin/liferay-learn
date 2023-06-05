@@ -30,9 +30,9 @@
 
 1. 名前を検索すると、検索結果ページに移動します。
 
-1. 再度、Web Developer Consoleのセレクターアイコンを使って、「結果がありません」というメッセージをクリックし、パスを決定します。 この場合、 `//h4[contains(.,'No results were found.)]`.
+1. 再度、Web Developer Consoleのセレクターアイコンを使って、「結果がありません」というメッセージをクリックし、パスを決定します。 この場合、 `//h1[@class='taglib-empty-result-message-title']`.
 
-1. さらにアサーションしたい場合は、例えば「ステージング」と検索するなど、確実に結果が出る言葉で検索してください。 検索結果が表示されたら、セレクターアイコンを使って、結果の1つのパスを取得することができます。 この場合、`//ul[@class='search']//a[contains(.,'Staging')]`を使用します。 なお、「ステージング」という言葉はこの検索結果に特有のものであり、他のシナリオで使用するにはパスの柔軟性に欠けることに注意してください。 このパスを再利用できるようにするには、テストケースから渡すことのできる変数を使用します。 `//ul[@class='search']//a[contains(.,'${key_searchTerm}')]`. 詳細は、[変数の使用](../poshi-basics/poshi-layers/variables.md)を参照してください。
+1. さらにアサーションしたい場合は、例えば「ステージング」と検索するなど、確実に結果が出る言葉で検索してください。 検索結果が表示されたら、セレクターアイコンを使って、結果の1つのパスを取得することができます。 この場合、`//input[@data-qa-id='searchInput' and @value='Staging']`を使用します。 なお、「ステージング」という言葉はこの検索結果に特有のものであり、他のシナリオで使用するにはパスの柔軟性に欠けることに注意してください。 このパスを再利用できるようにするには、テストケースから渡すことのできる変数を使用します。 `//input[@data-qa-id='searchInput' and @value='${key_searchTerm}']`. 詳細は、[変数の使用](../poshi-basics/poshi-layers/variables.md)を参照してください。
 
 ## パスファイルの構築
 
@@ -57,17 +57,17 @@
 <tbody>
 <tr>
     <td>NO_RESULTS_MESSAGE</td>
-    <td>//h4[@id="noResultsMessage"]</td>
+    <td>//h1[@class='taglib-empty-result-message-title']</td>
     <td></td>
 </tr>
 <tr>
     <td>SEARCH_BAR</td>
-    <td>//input[@id="docsSearch"]</td>
+    <td>//input[@placeholder="検索..."]</td>
     <td></td>
 </tr>
 <tr>
     <td>SEARCH_RESULTS</td>
-    <td>//ul[@class='search']//a[contains(.,'${key_searchTerm}')]</td>
+    <td>//input[@data-qa-id='searchInput' and @value='${key_searchTerm}']</td>
     <td></td>
 </tr>
 </tbody>

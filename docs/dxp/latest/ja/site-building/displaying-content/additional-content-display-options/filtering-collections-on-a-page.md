@@ -1,65 +1,73 @@
 # ページ上のコレクションをフィルタリングする
 
-お客様のサイトでコレクションを閲覧するユーザーの体験を向上させるために、ページフラグメントを追加して、コレクション内のコンテンツをフィルタリングすることができます。 例えば、表示されたCollectionsのコンテンツをキーワードで検索し、フィルタリングするために使用するFragmentを追加することができます。
+コレクションを閲覧するユーザーの利便性を向上させるために、ページフラグメントを追加して、コレクション内のコンテンツをフィルタリングすることができます。 例えば、表示されたCollectionsのコンテンツをキーワードで検索し、フィルタリングするためのFragmentを追加することができます。
 
-表示されたコレクションのコンテンツをユーザーがフィルタリングするために、ページに追加できるページフラグメントは、 [Collection Filter Fragment](#using-the-collection-filter-fragment) と [Applied Filters Fragment](#using-the-applied-filters-fragment) の2種類です。
+表示されたコレクションのコンテンツをユーザーがフィルタリングするために、ページに追加できるページフラグメ ントとして、 [Collection Filter Fragment](#using-the-collection-filter-fragment) と [Applied Filters Fragment](#using-the-applied-filters-fragment) の2つがあります。
 
 ## コレクションフィルタフラグメントの使用
 
-コレクションフィルタフラグメントは、選択されたコレクションに表示されるコンテンツをページ上でフィルタリングするために使用されます。 キーワード検索やカテゴリ選択により、フラグメントに関連するコレクションをフィルタリングすることができます。
+コレクションフィルタフラグメントは、選択したコレクションに表示されるコンテンツをページ上でフィルタリングするために使用されます。 キーワード検索や、カテゴリーやタグを選択し、フラグメントに関連するコレクションを絞り込むことができます。
 
-以下の手順に従って、コレクションフィルターフラグメントをページ（ [コレクション表示フラグメント](./displaying-collections.md#configuring-a-collection-display-fragment) で既にコレクションを表示している）に追加し、設定します。
+以下の手順で、ページ（ [コレクション表示フラグメント](./displaying-collections.md#configuring-a-collection-display-fragment) で既にコレクションを表示している）にコレクションフィルターフラグメントを追加し、設定することができます：
 
-1. ページを編集しながら、ページの任意の場所にコレクションフィルタフラグメントを追加します。
+1. ページを編集しながら、ページ上の任意の場所にコレクションフィルターフラグメントを追加します。
 
-1. Fragment の **General** 設定で、目的のコレクションを選択します。 コレクションが効果を発揮するためには、ページ上のコレクション表示フラグメントに表示される必要があります。
+1. フラグメントの **一般** 設定で、目的のコレクションを選択します。 コレクションが効果を発揮するためには、ページ上のコレクション表示フラグメントに表示されている必要があります。
 
-    ![コレクション表示フラグメントで既に表示されているコレクションを使用するように設定します。](./filtering-collections-on-a-page/images/01.png)
+    ![コレクション表示フラグメントで既に表示されているコレクションを使用するように設定する。](./filtering-collections-on-a-page/images/01.png)
 
-    互換性のあるコレクションを選択すると、 **Filter** ドロップダウンメニューが表示されます。
+    **Filter** ドロップダウンメニューは、互換性のあるコレクションを選択したときに表示されます。
 
-1. Filter メニューで、Fragment のフィルタの種類を、 **Keywords** または **Category** から選択します。
+1. フィルターメニューを使用して、 **キーワード** 、 **カテゴリー** 、 **タグ** のフィルターを選択します。
 
     ```{note}
-    カスタムコレクションフィルターを追加するモジュールがデプロイされている場合（ [`FragmentCollectionFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-collection-filter-api/src/main/java/com/liferay/fragment/collection/filter/FragmentCollectionFilter.java) と [`InfoFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/info/info-api/src/main/java/com/liferay/info/filter/InfoFilter.java) インターフェースを実装することで）、これらのフィルターもリストから選択することが可能です。
+    カスタムコレクションフィルタ（ [`FragmentCollectionFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-collection-filter-api/src/main/java/com/liferay/fragment/collection/filter/FragmentCollectionFilter.java) と [`InfoFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/info/info-api/src/main/java/com/liferay/info/filter/InfoFilter.java) インターフェースを実装したモジュールをデプロイした場合、これらのフィルタをリストから選択することも可能です。
     ```
 
-    **キーワード** フィルタタイプを選択した場合、ユーザーはコレクションをフィルタリングするための任意のキーワードを検索することができます。 **Category** フィルタタイプを選択した場合、 **Source** 入力フィールドが表示され、ユーザーが選択できるカテゴリの選択を設定することができます。
+コレクションフィルターのフラグメントの動作は、キーワード、カテゴリー、タグのいずれのフィルタータイプを設定したかに応じて変化します。
 
-1. カテゴリーフィルタータイプを選択した場合は、ソース入力フィールドをクリックし、ポップアップダイアログを使用して、ユーザーが選択するカテゴリーのソースを選択します。
+### キーワードによる絞り込み
 
-    ![希望するカテゴリー選択を含む語彙またはカテゴリーを選択します。](./filtering-collections-on-a-page/images/02.png)
+ キーワードを選択すると、コレクションフィルターが検索バーとして表示され、ユーザーはキーワードを入力することでコレクションの表示内容をフィルタリングすることができます。
 
-1. **Select This Level** をクリックし、選択したいカテゴリーを含む語彙または親カテゴリー **を選択します** .
+![キーワードのフィルタータイプは、ユーザーがキーワードを入力してフィルターするための検索バーを表示します。](./filtering-collections-on-a-page/images/03.png)
 
-1. ページを公開する。
+### カテゴリー別フィルタリング
 
-コレクションフィルタフラグメントの動作は、キーワードとカテゴリのどちらのフィルタタイプを設定したかによって変化します。
+Categoryを選択した場合、Source入力フィールドを使用して、ユーザーが選択できるカテゴリを設定することができます。
 
-キーワードタイプを選択した場合は、コレクションフィルターフラグメントが検索バーとして表示されます。 ユーザーがキーワードを入力することで、そのキーワードを含むコンテンツにページ上のCollectionを絞り込むことができます。
+![希望するカテゴリー選択を含む語彙またはカテゴリーを選択します。](./filtering-collections-on-a-page/images/02.png)
 
-![キーワードのフィルタリングでは、検索バーが表示され、キーワードを入力してフィルタリングすることができます。](./filtering-collections-on-a-page/images/03.png)
+1. 希望するカテゴリーを含む語彙または親カテゴリーを選択したら、「**このレベルを選択**」 をクリックします。
 
-カテゴリータイプを選択した場合、フラグメントは選択可能なすべてのカテゴリーをリストアップしたメニューとして表示されます。 ユーザーは、これらのカテゴリーをいくつでも選択し、カテゴリーを持つコンテンツにコレクションをフィルタリングするために適用することができます。
+2. ページを公開する。
+
+カテゴリフィルタを設定すると、コレクションフィルタフラグメントにカテゴリのメニューが表示されます。 ユーザーは1つまたは複数のカテゴリーを選択し、コレクションの表示内容をフィルタリングすることができます。
 
 ![カテゴリーフィルタータイプは、ユーザーがフィルターとして有効化し、適用するためのカテゴリーのリストを表示します。](./filtering-collections-on-a-page/images/04.png)
 
+### タグによるフィルタリング
+
+タグを選択すると、ユーザーはフィールドに入力し、選択可能な既存のタグを示すドロップダウンを見ることができます。
+
+![タグのフィルタータイプでは、利用可能なタグを表示するオートコンプリートを備えた検索バーを表示します。](./filtering-collections-on-a-page/images/06.png)
+
 ## アプライドフィルタフラグメントの使用
 
-Applied Filters Fragment は、 [Collection Filter Fragment](#using-the-collection-filter-fragment) で適用したフィルタの一覧を表示するために使用します。
+Applied Filters Fragment は、 [Collection Filter Fragment](#using-the-collection-filter-fragment) で適用されたフィルターの一覧を見るために使用します。
 
-以下の手順で、（すでにコレクションフィルタフラグメントが設定されている）ページに、アプライドフィルタフラグメントを追加します。
+コレクションフィルタフラグメントが設定されているページに、アプライドフィルタフラグメントを追加するには、以下の手順で行います：
 
-1. ページを編集しながら、ページ上の任意の場所にApplied Filter Fragmentを追加します。
+1. ページの編集中に、ページ上の任意の場所にアプライドフィルターフラグメントを追加します。
 
-1. Applied Filter Fragment の **General** 設定で、目的のコレクションを選択します。 同じコレクションをページに表示し、 [コレクションフィルタフラグメント](#using-the-collection-filter-fragment) で構成する必要があります。
+1. Applied Filter Fragment の **General** 設定で、目的のコレクションを選択します。 同じコレクションをページに表示し、 [コレクションフィルターフラグメント](#using-the-collection-filter-fragment) で構成する必要があります。
 
 1. ページを公開する。
 
-これで、ユーザーがCollection Filter Fragmentでコンテンツをフィルタリングすると、Applied Filters Fragmentに、設定されたコレクションに現在適用されているフィルタのリストが表示されるようになりました。 また、ユーザーは、リストアップされた各フィルターの **X** ボタンをクリックし、フィルターを削除することができます。
+これにより、ユーザーがコレクションフィルタフラグメントでコンテンツをフィルタリングすると、適用されたフィルタフラグメントに、設定されたコレクションに現在適用されているフィルタのリストが表示されるようになりました。 また、ユーザーは、リストアップされた各フィルタの **X** ボタンをクリックして、フィルタを削除することができます。
 
-![Applied Filters フラグメントには、設定されたコレクションに現在適用されている すべてのフィルタが表示されます。](./filtering-collections-on-a-page/images/05.png)
+![Applied Filters Fragmentには、設定されたコレクションに現在適用されているすべてのフィルターが表示されます。](./filtering-collections-on-a-page/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [コレクションの表示](./displaying-collections.md)

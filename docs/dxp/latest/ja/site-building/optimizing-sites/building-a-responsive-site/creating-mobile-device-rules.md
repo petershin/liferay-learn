@@ -128,6 +128,6 @@ Liferayは、応答性が高く、アクセスする可能性のあるすべて�
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [レスポンシブサイトの構築](./building-a-responsive-site.md)

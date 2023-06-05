@@ -101,7 +101,7 @@ Job Scheduler Page の **Scheduled Jobs** タブには、 `MessageListener` イ�
 
 ![MessageListenerインターフェイスを使用してスケジュールされたすべてのジョブを表示します。](./using-job-scheduler/images/07.png)
 
-## 追加情報
+## 関連トピック
 
 * [ジョブスケジューラーUIリファレンス](./job-scheduler-ui-reference.md)
 * [ジョブスケジューラフレームワークの理解](./understanding-the-job-scheduler-framework.md)

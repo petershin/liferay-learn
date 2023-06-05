@@ -55,7 +55,7 @@
 
 価格表（この例では **VIP顧客**）が作成され、選択したアカウントグループとアカウントに適用されました。 必要に応じて、手順を繰り返して他の価格表を作成します。
 
-## 追加情報
+## 関連トピック
 
 * [新規アカウントの作成](../users-and-accounts/account-management/creating-a-new-account.md)
 * [新規アカウントグループの作成](../users-and-accounts/account-management/creating-a-new-account-group.md)

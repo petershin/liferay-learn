@@ -63,7 +63,7 @@ toc:
 
 具体的な種類については、 [マイクロサービスクライアント拡張機能](./client-extensions/microservice-client-extensions.md) をご参照ください。
 
-## 追加情報
+## 関連トピック
 
 * [クライアントエクステンションの操作](./client-extensions/working-with-client-extensions.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

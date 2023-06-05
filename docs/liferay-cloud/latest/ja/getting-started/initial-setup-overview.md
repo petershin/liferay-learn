@@ -96,7 +96,7 @@ Liferay Cloudのスタックサービスが正しくデプロイされている�
 
 適切にデプロイされると、5つのデフォルトクラウドスタックサービスのステータスがすべて 'Ready'になります。
 
-## 追加情報
+## 関連トピック
 
 - [GitHubリポジトリの設定](./configuring-your-github-repository.md)
 - [Liferay Cloud環境について](./understanding-liferay-cloud-environments.md)

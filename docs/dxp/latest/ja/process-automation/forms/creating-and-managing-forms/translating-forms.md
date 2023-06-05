@@ -46,7 +46,7 @@ Liferayフォームアプリケーションでエントリーとその言語を�
    
    ![管理者は、フォームレコード言語を簡単に確認することができます。](./translating-forms/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [フォーム項目タイプのリファレンス](./forms-field-types-reference.md)
 * [送信ボタンのカスタマイズ](./customizing-the-submit-button.md)

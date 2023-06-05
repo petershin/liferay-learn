@@ -147,7 +147,7 @@
 }
 ```
 
-## 追加情報
+## 関連トピック
 
 * [検索 ブループリント コンフィギュレーション リファレンス](search-blueprints-configuration-reference.md)
 * [検索結果の並べ替え](../../../search-pages-and-widgets/search-results/sorting-search-results.md)

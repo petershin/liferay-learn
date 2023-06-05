@@ -32,7 +32,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [フォームの作成](../creating-and-managing-forms/creating-forms.md)
 * [フォームルールの概要](./form-rules-overview.md)

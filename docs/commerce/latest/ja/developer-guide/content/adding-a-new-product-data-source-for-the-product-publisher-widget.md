@@ -158,7 +158,7 @@ products-ending-in-the-same-word=Products Ending in the Same Word
 
 　 これで、`CPDataSource`インターフェイスを実装するための基本を理解し、Liferay Commerceに新しい商品データソースを追加しました。
 
-## 追加情報
+## 関連トピック
 
 * [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)
 * [関連商品、アップセル、クロスセル](../../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)

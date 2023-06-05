@@ -243,7 +243,7 @@ minimum-number-of-items=Minimum Number of Items
 
 　 これで、 `CommerceDiscountRuleType`インターフェイスを実装するための基本を理解し、Liferay CommerceにカスタムUI入力を用いた新しい割引ルールタイプを追加できました。
 
-## 追加情報
+## 関連トピック
 
 * [割引を作成する](../../pricing/promoting-products/creating-a-discount.md)
 * [Localizing Your Application](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

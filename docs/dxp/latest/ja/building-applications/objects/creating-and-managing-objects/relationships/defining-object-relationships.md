@@ -78,7 +78,7 @@
 
 1. ［**保存**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](../creating-objects.md)
 * [オブジェクトレイアウトの設計](../layouts/designing-object-layouts.md)

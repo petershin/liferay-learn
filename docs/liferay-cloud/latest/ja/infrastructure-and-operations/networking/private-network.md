@@ -48,7 +48,7 @@
 | `protocol`   | TCP  | 作成する接続のタイプ（TCPおよびUDPがサポートされています）                              |
 | `external`   | true | 接続が外部接続で使用できるかどうか。 デフォルト値 `false` Liferay Cloud の内部接続に制限されます。 |
 
-## 追加情報
+## 関連トピック
 
 * [LCP JSONによる設定](../../reference/configuration-via-lcp-json.md)
 * [シェルアクセス](../../troubleshooting/shell-access.md)

@@ -107,7 +107,7 @@ Liferay Cloudのコンソールからカスタムドメインを追加すると�
 
 [ロードバランサー](./load-balancer.md) を参照して、1つ以上のカスタムSSL証明書を設定する方法など、Liferay CloudのSSL証明書の詳細について確認してください。
 
-## 追加情報
+## 関連トピック
 
 * [ロードバランサー](./load-balancer.md)
 * [LCP.jsonによる設定](../../reference/configuration-via-lcp-json.md)

@@ -56,6 +56,6 @@
 
 !["よく一緒に購入されている"商品推奨を表示するには、データソースを頻出パターン推奨に設定した商品パブリッシャーウィジェットを使用します。](./understanding-recommendation-types/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [商品推薦の使用](./using-product-recommendations.md)

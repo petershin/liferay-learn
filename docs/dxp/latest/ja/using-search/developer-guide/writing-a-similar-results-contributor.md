@@ -10,23 +10,17 @@
 
 ナレッジベース（KB）アプリケーションは、すぐにはKB記事の `SimilarResultsContributor` を実装しないため、このサンプルで実装します。 簡単にするために、ここではアプリケーションのルートフォルダーにあるKB記事のみを扱います。
 
-## 概要
-
-1. [**サンプルをデプロイする**](#deploy-an-example)
-1. [**サンプルの説明**](#walk-through-the-example)
-1. [**追加情報**](#additional-information)
-
-## サンプルをデプロイする
+## ナレッジベース記事のSimilarResultsContributorを導入する。
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従って、サンプルの `SimilarResultsContributor` を Liferay DXP インスタンスで起動し、動作させます。
+次に、以下の手順に従って、Liferay DXP インスタンスで `SimilarResultsContributor` のサンプルを立ち上げて実行します：
 
-1. [Acme Similar Results Contributor](./liferay-r1s1.zip) をダウンロードし、解凍してください。
+1. [Acme Similar Results Contributor](./liferay-r1s1.zip) をダウンロードし、解凍する。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/using-search/developer-guide/liferay-r1s1.zip -O
+    curl https://learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-r1s1.zip -O
     ```
 
     ```bash
@@ -69,13 +63,13 @@
 
 1. KB記事の1つをクリックして、表示するメインアセットとして選択します。
 
-    Similar Resultsウィジェットで、関連する他のKBアーティクルが表示されるようになりました。
+    類似結果ウィジェットに、関連する他のKB記事が表示されるようになりました。
 <!-- This image could be a bit larger and also have some sort of highlighting to indicate the element that we want to draw the readers attention towards. -->
 ![The Similar Results widget can display KB Articles.](./writing-a-similar-results-contributor/images/02.png "KB Similar Results")
 
 例が適切に動作することを確認したので、それがどのように機能するかを学びます。
 
-## サンプルの説明
+## SimilarResultsContributorを検討する。
 
 デプロイされたサンプルを確認します。 これには、クラスが1つだけ含まれています。これは、類似結果ウィジェットのカスタムコンテンツを有効にするコントリビューターです。
 
@@ -104,7 +98,7 @@ public void detectRoute(RouteBuilder routeBuilder, RouteHelper routeHelper);
 エンティティのURLパターンの特徴的な部分を提供するために `detectRoute` を実装して、類似結果ウィジェットがコントリビューターを呼び出す必要があるかどうかを検出できるようにします。 URLパターンは、 `RouteBuilder` オブジェクトの属性として追加されます。 `RouteHelper` は、解析のためにURL文字列全体を取得するのに役立ちます。
 
 ```{note}
-各表示ウィジェットでサポートされている `SimilarResultsContributor` は1つだけです。
+SimilarResultsContributor`は、各ディスプレイウィジェットに1つだけサポートされています。
 ```
 
 ```java
@@ -226,7 +220,7 @@ public void writeDestination(
 
 #### サービスの依存関係を宣言する
 
-このコードは、OSGiコンテナにデプロイされたサービスに依存しています： `AssetEntryLocalService`、 `KBArticleLocalService`、及び `のHttp`。 `org.osgi.service.component.annotations.Reference` によって提供されるDeclarative Services `@Reference` アノテーションを使用して、それらの必要性を宣言します。 それらを公開フィールドに設定します。
+このコードは、OSGiコンテナにデプロイされたサービスに依存しています： `AssetEntryLocalService`、 `KBArticleLocalService`、及び `のHttp`。 `org.osgi.service.component.annotations.Referenceによって提供されるDeclarative Services <code>@Reference` アノテーションを使用して、それらの必要性を宣言します。 それらを公開フィールドに設定します。
 
 ```java
 @Reference
@@ -239,7 +233,7 @@ private Http _http;
 private KBArticleLocalService _kbArticleLocalService;
 ```
 
-## 追加情報
+## その他の詳細
 
 エンティティのURLの実装はそれぞれ大きく異なると思われますので、自分のアプリケーションのコントリビューターを書く際にインスピレーションが必要な場合は、GitHub上の `SimilarResultsContributor` [インターフェース](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web-spi/src/main/java/com/liferay/portal/search/similar/results/web/spi/contributor/SimilarResultsContributor.java) と、バンドルされている [の実装](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor) を参照してください。
 
@@ -256,10 +250,6 @@ private KBArticleLocalService _kbArticleLocalService;
 
 `uid` は、Liferay DXP 7.3以降の標準的な方法で構築されます。 `com.liferay.portal.search.internal.model.uid.UIDFactoryImpl` クラスは、Liferayのインデックスアーキテクチャによって制御されているすべてのドキュメントに `uid` を設定する責任があります。 現在は標準化されているので、推測をする必要はありません。
 
-同様に、バージョン7.2および7.1では、エンティティにComposite Indexer APIでインデックスが付けられている（つまり、ModelDocumentContributor` クラスが `）場合、 `uid` はLiferayの実装によって設定され、標準化されます。
+同様に、バージョン7.2および7.1では、エンティティにComposite Indexer APIでインデックスが付けられている（つまり、`ModelDocumentContributor` クラスが）場合、 `uid` はLiferayの実装によって設定され、標準化されます。
 
 ただし、レガシーインデクサーAPIでインデックス付けされたエンティティ（つまり、エンティティにはLiferayの `BaseIndexer`を拡張する `*インデクサー` クラスがある）は、 `uid`を設定するロジックをオーバーライドしている可能性があるため、エンティティのインデックス付けの実装を調べる価値があります。
-
-## まとめ
-
-`SimilarResultsContributor`実装することにより、独自のカスタムコンテンツを提供して、SimilarResultsウィジェットに表示できます。

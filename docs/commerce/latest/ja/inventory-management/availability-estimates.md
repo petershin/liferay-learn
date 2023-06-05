@@ -47,7 +47,7 @@
 
 ![ [可用性の表示]トグルを有効にし、ドロップダウンから可用性の見積もりを選択します。](./availability-estimates/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [在庫管理](../inventory-management.md)
 * [商品の在庫設定のリファレンス](./product-inventory-configuration-reference-guide.md)

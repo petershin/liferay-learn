@@ -114,7 +114,7 @@ PunchOut2Goへのコネクターが有効な状態でのチェックアウトプ
 
 ![注文が送信された後のリダイレクトをパンチアウトする。](./liferay-commerce-connector-to-punchout2go/images/06.png)
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Commerceを既存のLiferayインストールにデプロイする](../../installation-and-upgrades/installing-commerce-2-1-and-below/deploying-liferay-commerce-to-an-existing-liferay-installation.md)
 * [Liferay Commerce Enterpriseのアクティベーション](../../installation-and-upgrades/activating-liferay-commerce-enterprise.md)

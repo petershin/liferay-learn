@@ -44,7 +44,7 @@ Liferay Cloud Platformのステータスページを下にスクロールする�
 
 ![図4：Liferay Cloud Platformのステータスに関する更新情報を受け取るために登録する。](./liferay-cloud-platform-status/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [Liferayクラウドサポートの概要](https://help.liferay.com/hc/articles/360030208451-DXP-Cloud-Support-Overview)
 * [トラブルシューティングツールとリソース](./troubleshooting-tools-and-resources.md)

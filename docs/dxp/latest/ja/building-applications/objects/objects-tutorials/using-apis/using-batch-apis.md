@@ -219,7 +219,7 @@ GETメソッドは、デモのために含まれています。 これは、Life
    :language: bash
 ```
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトAPIの基本](./object-api-basics.md)
 * [REST APIでネストしたフィールドの使用](./using-nestedfields-to-query-related-entries.md)

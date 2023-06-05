@@ -146,7 +146,7 @@ MVCレンダーコマンドのクラスは、 [`MVCRenderCommand`](https://githu
 
 これで、MVCレンダーコマンドクラスにレンダーロジックを実装する方法がわかりました。 次に、[MVCリソースコマンド](./mvc-resource-command.md)クラスを使用してファイルなどのリソースを操作できます。
 
-## 追加情報
+## 関連トピック
 
 * [MVCリソースコマンド](./mvc-resource-command.md)
 * [MVCアクションコマンド](./mvc-action-command.md)

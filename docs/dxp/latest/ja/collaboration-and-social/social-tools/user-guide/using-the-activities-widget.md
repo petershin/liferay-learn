@@ -26,6 +26,6 @@ _Activitiesウィジェットの使用を開始するには：
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [コンタクトセンターウィジェットの使用](./using-the-contacts-center-widget.md)

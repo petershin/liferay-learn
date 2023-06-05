@@ -69,7 +69,7 @@
 
 1. 希望のターゲットを選択したら、 ［**Info**］ タブに戻り、 ［**Save**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [プライシングの概要](./introduction-to-pricing.md)
 * [価格表の作成](creating-a-price-list.md)

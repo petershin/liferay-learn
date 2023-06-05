@@ -48,6 +48,6 @@ Liferay DXP 7.3以前のバージョンでは、「チャネル設定」の「�
 
 これにより、カテゴリーと選択したページが関連付けられます。 ユーザーが特定のカテゴリーをクリックするたびに、新しいカテゴリー表示ページにリダイレクトされます。 カテゴリー表示ページを表示および管理するには、「チャネル設定」の「カテゴリー表示ページタブ」を使用します。
 
-## 追加情報
+## 関連トピック
 
 - [表示ページを使用したカテゴリー表示](https://learn.liferay.com/dxp/latest/ja/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.html)

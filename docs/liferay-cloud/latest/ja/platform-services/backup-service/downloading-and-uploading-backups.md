@@ -218,7 +218,7 @@ USE `lportal`.CREATE DATABASE */ `lportal`.DEFAULT CHARACTER SET utf8 */ USE `lp
 cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 ```
 
-## 追加情報
+## 関連トピック
 
 * [バックアップサービスの概要](./backup-service-overview.md)
 * [バックアップからのデータの復元](./restoring-data-from-a-backup.md)

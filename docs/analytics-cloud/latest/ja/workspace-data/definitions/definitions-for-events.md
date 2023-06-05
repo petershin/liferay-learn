@@ -66,6 +66,6 @@ Analytics Cloudは現在、最大100個のカスタムイベントをサポー�
 
 カスタムイベントをブロックするには、［カスタムイベント］タブで、イベントの横にあるボックスをチェックし、 ［**Block Events**］ をクリックします。 または、イベント名の右側にあるブロックアイコン（![block icon](../../images/icon-block.png)）をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [イベントの分析](../../touchpoints/events/events-analysis.md)

@@ -44,7 +44,7 @@
 
 1. ［**Save**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [ステージング](../staging.md)
 * [公開プロセスを理解する](./understanding-the-publishing-process.md)

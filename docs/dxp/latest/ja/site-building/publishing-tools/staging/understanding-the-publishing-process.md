@@ -57,7 +57,7 @@
 
 ステージングでは、JVM /ネットワークは最低4GBのメモリと20MB/秒の転送速度（ディスク）で構成する必要があります。
 
-## 追加情報
+## 関連トピック
 
 * [ローカル現行環境ステージングの設定](./configuring-local-live-staging.md)
 * [リモート本番環境ステージングの設定](./configuring-remote-live-staging.md)

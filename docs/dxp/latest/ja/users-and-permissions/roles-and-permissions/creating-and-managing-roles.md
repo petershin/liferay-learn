@@ -85,7 +85,7 @@ Web Content フォルダには、Web Content の記事が格納されていま�
 
 アセットコンテナの例としては、Webコンテンツフォルダの他に、ブックマークフォルダ、掲示板カテゴリ、Wikiノード、Documents and Mediaフォルダがあります。
 
-## 追加情報
+## 関連トピック
 
 * [ロールと権限について](./understanding-roles-and-permissions.md)
 * [ロール権限の定義](./defining-role-permissions.md)

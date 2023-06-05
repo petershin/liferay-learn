@@ -64,7 +64,7 @@ Liferayインスタンスのhreflang動作を構成するには、次の手順�
 デフォルトでは、個々のサイト設定は [サイトスコープインスタンス設定](#instance-site-scope-settings) から継承されます。 ただし、個々のサイト構成はこの動作より優先されます。 デフォルトの動作を復元し、両方のメニュー間で変更を同期するには、個々のサイトの設定をデフォルトに復元する必要があります。 
 ```
 
-## 追加情報
+## 関連トピック
 
 * [サイトのローカライゼーション](./site-localization.md)
 * [翻訳のエクスポートとインポート](../../content-authoring-and-management/translating-pages-and-content.md)

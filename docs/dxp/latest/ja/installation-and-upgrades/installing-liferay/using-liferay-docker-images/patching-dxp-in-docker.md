@@ -164,7 +164,7 @@ DXPは、アーティファクトとファイルを使用して新しいコン�
 
 データベースがアップグレードされたら、そのデータベースを使用するコンテナを実行します。
 
-## 追加情報
+## 関連トピック
 
 * [コンテナへのアプリやその他のアーティファクトのインストール](./installing-apps-and-other-artifacts-to-containers.md)
 * [Liferay Dockerイメージの使用](../using-liferay-docker-images.md)

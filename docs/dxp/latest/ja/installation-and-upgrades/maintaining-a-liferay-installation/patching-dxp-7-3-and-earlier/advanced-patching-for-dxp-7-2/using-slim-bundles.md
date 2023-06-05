@@ -50,7 +50,7 @@ directory and run patching-tool setup.
 
 スリムバンドルを使用するメリットを学び、パッチを適用する方法を理解しました。
 
-## 追加情報
+## 関連トピック
 
 * [パッチのインストール](../installing-patches-for-dxp-7-3-and-earlier.md)
 * [パッチを適用したインストールのスリム化](./slimming-down-patched-installations.md)

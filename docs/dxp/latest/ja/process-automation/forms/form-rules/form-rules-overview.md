@@ -60,7 +60,7 @@ Liferay 7.4以降では、 [フォームフィールド](../creating-and-managin
 | **データプロバイダーによる自動入力** | [データプロバイダー](../data-providers/using-the-rest-data-provider-to-populate-form-options.md)を使用して、別のフィールドで条件が満たされたときにフィールドに値を入力します。 |
 | **計算** | 他のフィールドに入力されたデータを使って、フィールドに計算値を入力します。                                                                                          |
 
-## 追加情報
+## 関連トピック
 
 * [フォームの作成](../creating-and-managing-forms/creating-forms.md)
 * [フォームフィールドタイプのリファレンス](../creating-and-managing-forms/forms-field-types-reference.md)

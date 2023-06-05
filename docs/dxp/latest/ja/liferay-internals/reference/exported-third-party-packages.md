@@ -61,7 +61,7 @@ Export-Package:\
 
 これで、Liferayのエクスポートされたサードパーティのパッケージを安全に利用できるようになりました。
 
-## 追加情報
+## 関連トピック
 
 * [依存関係の構成](../fundamentals/configuring-dependencies.md)
 * [WABから除外されたJAR](../../building-applications/reference/jars-excluded-from-wabs.md)

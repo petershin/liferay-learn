@@ -209,7 +209,7 @@ Liferay Cloud コンソールから環境変数を設定し、後で `backup/LCP
 | `LCP_MASTER_USER_NAME`                          | `dxpcloud`                 | マスターユーザー名。                                                                                                                                                                                  |
 | `LCP_MASTER_USER_PASSWORD`                      | `LCP_PROJECT_MASTER_TOKEN` | マスターパスワード。                                                                                                                                                                                  |
 
-## 追加情報
+## 関連トピック
 
 * [バックアップのダウンロードとアップロード](./downloading-and-uploading-backups.md)
 * [バックアップページからのデータの復元](./restoring-data-from-a-backup.md)

@@ -180,6 +180,6 @@ Dockerイメージ名の末尾にある数字は、使用しているLiferay Clo
 
 
 
-## 追加情報
+## 関連トピック
 
 * [サービススタックのバージョンについて](./understanding-service-stack-versions.md)

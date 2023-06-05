@@ -61,7 +61,7 @@ ZIPファイルには、 `display-page-template.json`, `master-page.json`, `page
 
 ページテンプレートがサイトにインポートされました。
 
-## 追加情報
+## 関連トピック
 
 * [ページテンプレートの作成](./creating-a-page-template.md)
 * [サイトページとコンテンツのエクスポート/インポート](../../sites/exporting-importing-site-pages-and-content.md)

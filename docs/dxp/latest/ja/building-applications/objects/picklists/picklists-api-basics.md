@@ -306,7 +306,7 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_DELETE_ById
 
 [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) では、 `ListTypeDefinition` と `ListTypeEntry` のすべてのサービスとスキーマを表示し、各サービスをテストするインターフェイスを備えています。
 
-## 追加情報
+## 関連トピック
 
 * [選択リストの使用](./using-picklists.md)
 * [ピックリストのエクスポートとインポート](./exporting-and-importing-picklists.md)

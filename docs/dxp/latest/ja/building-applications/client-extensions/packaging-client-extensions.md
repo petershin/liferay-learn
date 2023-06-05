@@ -161,7 +161,7 @@ static`ディレクトリは、[フロントエンドクライアント拡張プ
 
 他の必須ファイルと競合しない限り、マイクロサービスクライアント拡張プロジェクトのビルドLUFFAに追加のリソースを含めることができます。
 
-## 追加情報
+## 関連トピック
 
 * [クライアントエクステンションの操作](./working-with-client-extensions.md)
 * [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md)

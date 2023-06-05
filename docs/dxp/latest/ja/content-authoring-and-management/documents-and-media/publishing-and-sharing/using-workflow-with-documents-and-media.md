@@ -46,7 +46,7 @@ Documents and Mediaは、Liferayのワークフローエンジン [と完全に�
 
 選択したフォルダーとドキュメントタイプに対して、選択したワークフローを有効にします。
 
-## 追加情報
+## 関連トピック
 
 * [ワークフローデザイナー](../../../process-automation/workflow/designing-and-managing-workflows/workflow-designer.md)
 * [ドキュメントとメディアUIリファレンス](../documents-and-media-ui-reference.md)

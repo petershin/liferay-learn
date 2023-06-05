@@ -136,7 +136,7 @@ Object が発行されると、Liferay は [Collection Display フラグメン�
 
 オブジェクトは情報フレームワークと統合されているため、ナビゲーションメニューにオブジェクトのエントリを追加して、素早くアクセスできるようにすることができます。 公開されたすべてのオブジェクトは、メニュー要素で使用可能なソースとして自動的に表示されます。 詳しくは、 [ナビゲーションメニューのアプリケーションを使う](../../site-building/site-navigation/using-the-navigation-menus-application.md) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)
 * [コレクションとコレクションページについて](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)

@@ -125,7 +125,7 @@ Fragments Toolkit を使用する場合は、 `yarn run add-fragment`を実行�
 |:--------- |:--------------------------------------------- |:---------------- |
 | `options` | `Array<{label: string, value: string}>` | 使用可能なオプションの一覧です。 |
 
-## 追加情報
+## 関連トピック
 
 * [ページフラグメントの開発](../developing-page-fragments.md)
 * [フラグメントを使用してフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md)

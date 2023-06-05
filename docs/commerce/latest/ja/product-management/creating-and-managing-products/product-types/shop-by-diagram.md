@@ -77,7 +77,7 @@ commerceBOMは Liferay DXP 7.4+/Commerce 4.0+ で利用可能で、*部品表 (B
 画像：" [Bultaco engine exploded view](https://flickr.com/photos/tom-margie/1253798184/in/photolist-4XXvtu-2mn7DP8-NmN3U5-aq4SCB-H8ZMN9-dzT17o-pZgiwZ-2kLJEjC-bRALa6-9xjArz-aNgnMn-pjF6jp-NNVRDe-2jCWou9-niHeTv-2UN3w5-2mD79VN-bz84rF-7HSLu4-yQe2wr-9ptWiW-CY6AP-bzmZP9-9jRWia-chdwUu-Mp16Ah-8pHHKM-2mwEAZi-2kUCwFf-u4fJFj-aQS5mv-2iWwYAU-2iQKbJz-kHQyfH-2jE3t4n-3BBRmw-deC9th-25aFqYT-imHEdi-imH7SU-imH5gS-imGVyn-imGT5W-imHzii-imGNMX-imHxLR-UepKvn-4V5F4T-a48scN-4V5Fjp) " by [Tom Margie](https://flickr.com/photos/tom-margie/) / [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)
 ```
 
-## 追加情報
+## 関連トピック
 
 * [シンプル商品を作成する](./creating-a-simple-product.md)
 * [グループ商品の作成](./creating-a-grouped-product.md)

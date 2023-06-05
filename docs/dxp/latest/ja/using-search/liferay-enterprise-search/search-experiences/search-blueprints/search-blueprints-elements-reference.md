@@ -316,7 +316,7 @@ PDFファイルに限定して検索します。 この要素は、`mimeType`フ
 
 **外部参照：** [Elasticsearch Multi-match query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-multi-match-query.html) のドキュメントをご覧ください。
 
-## 追加情報
+## 関連トピック
 
 - [検索ブループリントの作成と管理](./creating-and-managing-search-blueprints.md)
 - [Search Experiencesのパーソナライズ](./personalizing-the-search-experience.md)

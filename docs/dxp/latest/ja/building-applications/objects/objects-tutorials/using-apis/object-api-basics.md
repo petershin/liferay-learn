@@ -154,7 +154,7 @@ unzip liferay-v1s4.zip
    :language: bash
 ```
 
-## 追加情報
+## 関連トピック
 
 * [バッチAPIの使用](./using-batch-apis.md)
 * [REST APIでネストしたフィールドの使用](./using-nestedfields-to-query-related-entries.md)

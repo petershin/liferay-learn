@@ -146,6 +146,6 @@ Spacingカテゴリのオプションを使用して、ページの主要な要�
 
 ![標準テーマを使用するときに、 [Button Primary]で色を変更すると、すぐに使用できるウィジェットの多くの一般的なボタンに作用します。](./using-a-style-book-to-standardize-site-appearance/images/09.png)
 
-## 追加情報
+## 関連トピック
 
 * [スタイルブックトークンの定義](./developer-guide/style-book-token-definitions.md)

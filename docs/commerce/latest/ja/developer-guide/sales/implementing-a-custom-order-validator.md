@@ -192,7 +192,7 @@ this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximu
 
 　 `CommerceOrderValidator`インターフェイスを実装するための基本を理解し、Liferay Commerceに新しい注文バリデーターを追加しました。
 
-## 追加情報
+## 関連トピック
 
 * [シンプル商品を作成する](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
 * [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

@@ -24,6 +24,6 @@ yoke-oauth-application-headless-server:
 | `name`                           | 文字列  | バッチ名です。                                                           |
 | `oAuthApplicationHeadlessServer` | 文字列  | (必須) OAuth2 アプリケーションヘッドレスサーバープロファイルの ID(`externalReferenceCode`)。 |
 
-## 追加情報
+## 関連トピック
 
 * [クライアントエクステンションの操作](../working-with-client-extensions.md)

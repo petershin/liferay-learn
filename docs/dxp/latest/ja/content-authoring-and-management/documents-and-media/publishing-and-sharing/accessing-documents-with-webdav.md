@@ -24,7 +24,7 @@
 
 一度設定すれば、OSのファイルブラウザーで、接続されたDocuments and Mediaフォルダー内のファイルを追加、編集、削除することが可能です。 ファイルシステム上のこのフォルダーにあるファイルを編集すると、すべての変更がLiferayに表示され、ファイルのマイナーバージョンが増えます。
 
-## 追加情報
+## 関連トピック
 
 * [共有の有効化と構成](./managing-document-access/enabling-and-configuring-sharing.md)
 * [他のユーザーとのドキュメントの共有](./managing-document-access/sharing-documents-with-other-users.md)

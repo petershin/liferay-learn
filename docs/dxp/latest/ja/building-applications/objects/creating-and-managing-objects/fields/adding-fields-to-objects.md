@@ -95,7 +95,7 @@
 | `userName`              | エントリー作成者のユーザー名。         |
 | `uuid`                  | エントリーの重複しないユニバーサルID。    |
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](../creating-objects.md)
 * [オブジェクトリレーションシップの定義](../relationships/defining-object-relationships.md)

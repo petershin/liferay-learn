@@ -6,160 +6,209 @@ Liferay Analytics Cloudのルートエンドポイントは、 <https://analytic
 curl -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
 ```
 
-以下のようなレスポンスが返ってきます。
+この応答が返ってくるはずです：
 
 ```json
 {
    "_links":{
-      "accounts":{
-         "href": "https://analytics.liferay.com/api/reports/accounts"
-      },
-      "individuals":{
-         "href": "https://analytics.liferay.com/api/reports/individuals"
-      },
-      "pages":{
-         "href": "https://analytics.liferay.com/api/reports/pages"
-      },
-      "segments":{
-         "href": "https://analytics.liferay.com/api/reports/segments"
-      }
+        "blogs": {
+            "href": "https://analytics.liferay.com/api/reports/blogs{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        },
+        "documents-and-media": {
+            "href": "https://analytics.liferay.com/api/reports/documents-and-media{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        },
+        "forms": {
+            "href": "https://analytics.liferay.com/api/reports/forms{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        },
+        "individuals": {
+            "href": "https://analytics.liferay.com/api/reports/individuals{?channelId,page,query}",
+            "templated": true
+        },
+        "pages": {
+            "href": "https://analytics.liferay.com/api/reports/pages{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        },
+        "segments": {
+            "href": "https://analytics.liferay.com/api/reports/segments{?channelId,page}",
+            "templated": true
+        },
+        "web-contents": {
+            "href": "https://analytics.liferay.com/api/reports/web-contents{?channelId,page,keywords,rangeKey,sortMetric,sortOrder}",
+            "templated": true
+        }
    }
 }
 ```
 
-ここから、さまざまなAPIを呼び出して、アカウント、ユーザー、ページ、セグメントのデータを取得することができます。
+ここから、さまざまなAPIを呼び出して、さまざまなデータ型のデータを取得することができます。
 
-アナリティクスデータに対するサーバーの応答は、すべて同じデータ構造に従っています。 応答は、Liferay Analytics Cloudによって計算されたエンティティのページ結果です。 デフォルトでは、各ページには20個の要素が含まれており、ページのクエリパラメーターを置き換えることでナビゲートすることができます。 Totalは、利用可能な要素の総数を表示します。 以下はリスポンスの形式です：
+アナリティクスデータに対するサーバーの応答は、すべて同じデータ構造に従っています。 レスポンスはLiferay Analytics Cloudで計算されたエンティティのページングされた結果です。 デフォルトでは、各ページに20個の要素が含まれています。 ページクエリパラメータを置き換えることで移動できます。 totalには、使用可能な要素の総数が表示されます。
 
-```json
-{"results":[],"total":0}
-```
+## ブログデータへのアクセス
 
-## アカウントデータへのアクセス
-
-アカウントデータは、以下のコマンドで取得できます：
+このコマンドを使うと、すべてのBlogデータを取得することができます：
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/accounts
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs
 ```
 
-### パラメーター
+これらのクエリパラメータを利用することができます：
 
-* `ページ` (整数）：結果ページ番号
+* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
+* `page` (integer)：結果のページ番号。
+* `keywords` (string)：アセットのタイトルにマッチするキーワード。
+* `rangeKey` (integer)： データをグループ化する時間範囲を指定します。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
+* `sortMetric`(string)：データをソートするためのメトリックを指定します。 設定可能な値は、 `clicksMetric`, `commentsMetric`, `ratingsMetric`, `readingTimeMetric`, and `viewsMetric`。
+* `sortOrder` (string)：結果を表示する順序を指定します。 指定できる値は、 `asc` または `desc`です。
+
+特定のブログ記事に関するデータを取得する場合、
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs/{blogID}
+```
+
+## ドキュメントやメディアデータへのアクセス
+
+すべてのDocumentsとMediaのデータを取得するコマンドです：
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media
+```
+
+これらのクエリパラメータを利用することができます：
+
+* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
+* `page` (integer)：結果のページ番号。
+* `keywords` (string)：データ内で一致したキーワード。
+* `rangeKey` (integer)： データをグループ化する時間範囲を指定します。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
+* `sortMetric`(string)：データをソートするためのメトリックを指定します。 可能な値は、 `commentsMetric`, `downloadsMetric`, `previewsMetric`, `ratingsMetrics`.
+* `sortOrder` (string)：結果を表示する順序を指定します。 指定できる値は、 `asc` または `desc`です。
+
+特定の文書に関するデータを取得する場合、
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media/{documentId}
+```
+
+## フォームデータへのアクセス
+
+すべてのフォームデータを取得する場合は、このコマンドを使用します：
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms
+```
+
+これらのクエリパラメータを利用することができます：
+
+* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
+* `page` (integer)：結果のページ番号。
+* `keywords` (string)：データ内で一致したキーワード。
+* `rangeKey` (integer)： データをグループ化するための時間範囲。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
+* `sortMetric`(string)：データをソートするためのメトリックを指定します。 可能な値は、 `abandonmentsMetric`, `completionTimeMetric`, `submissionsMetric`, `viewsMetric`.
+* `sortOrder` (string)：結果を表示する順序を指定します。 指定できる値は、 `asc` または `desc`です。
+
+特定のフォームに関するデータを取得する場合、
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms/{formId}
+```
 
 ## ユーザーデータへのアクセス
 
-ユーザーデータは、以下のコマンドで取得できます：
+このコマンドを使用すると、すべての個別データを取得することができます：
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
 ```
 
-### パラメーター
+これらのクエリパラメータを利用することができます：
 
-* `ページ` 整数：ページ番号の結果
-* `クエリ` 文字列：ユーザーの人口統計情報と一致するキーワード
+* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
+* `page` (integer)：結果のページ番号。
+* `query` （文字列）：個人の `emailAddress`, `firstName`, または `lastName`で検索された任意の単語（複数可） .
 
-## ユーザーのアクティビティ
-
-```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/activities
-```
-
-ユーザーによって実行されたアクティビティのリストを返します。
-
-各活動の構成は以下のとおりです：
-
-```json
-{
-   "ownerId": "371000621354447876",
-   "startTime": "2019-10-28T21:49:05.674Z",,
-   "applicationId":"WebContent",
-   "eventId":"webContentViewed",
-   "eventProperties":{
-      "numberOfWords":"13",
-      "articleId":"232001430",
-      "title":"Navigation Content - Partner Resources Basic (for launch)",
-      "pageViewActivityId":"8ed2e0d9-ed41-4b3d-bbe1-e1219448e9eb"
-   }
-}
-```
-
-### 詳細設定
-
-* `ownerId` (文字列）：ユーザーIDに相当する、アクティビティの所有者。
-* `startTime` (日付）：アクティビティが発生した日付のタイムスタンプ。
-* `applicationId` (文字列）：イベントをトリガーしたアプリケーションのID。
-* `eventId` (文字列）：ユーザーによって実行されたアナリティクスイベントのID。イベントIDは、ユーザーによって実行されるアクションを表す。
-* `eventProperties` (オブジェクト）：イベントに関するメタデータ情報。eventIdによって異なる。
-
-## ユーザーの興味
+特定の個人に関する活動データを取得すること、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/interests
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/activities
 ```
 
-ユーザーが興味があるもののリストを返します。各興味の構造は以下のようになります。
-
-```json
-{
-   "score":0.6908830400645879,
-   "ownerId":"385450976494153117",
-   "dateRecorded":null,
-   "id":"389978452012791133",
-   "name":"Digital Experience Software Tailored"
-}
-```
-
-### 詳細設定
-
-* ` score ` (数値)：ユーザーがその特定のトピックにどれだけ興味を持っているかを数値で表したもの。
-* `ownerId` (文字列）：ユーザーIDに相当する、アクティビティの所有者。
-* `dateRecorded` (日付）：興味が計算された日付のタイムスタンプ。
-* `applicationId` (文字列）：イベントをトリガーしたアプリケーションのID。
-* `id` (文字列）：興味対象の一意な識別情報。
-* `name` (文字列）：興味のあるものの名前。
-
-## ユーザーのセグメント
+特定の個人に関する興味データを取得するため、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/segments
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/interests
 ```
 
-ユーザーが所属するセグメントのリストを返します。各セグメントの構造については、［データ型 > セグメント］で説明しています。
-
-## セグメントデータへのアクセス
-
-セグメンツデータは以下のコマンドで取得できます：
+特定の個人に関するセグメントデータを取得すること、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
-```
-
-### 詳細設定
-
-`ページ` ：整数、結果ページ番号
-
-## ユーザーのセグメント化
-
-セグメントに属するユーザーのリストを返します。
-
-```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{id}/individuals
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/segments
 ```
 
 ## ページデータへのアクセス
 
-ページデータは、以下のコマンドで取得できます：
+このコマンドを使うと、すべてのページデータを取得することができます：
 
 ```
 curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
 ```
 
-### 詳細設定
+これらのクエリパラメータを利用することができます：
 
-* `ページ` (整数）：結果ページ番号。
-* `キーワード` (文字列）：ページのタイトルやURL情報にマッチさせるキーワード。
-* `rangeKey` (整数）：データのグループ化に使用される範囲。 設定可能な値は、0(過去24時間のデータ）、1(昨日のデータ）、7(過去7日間のデータ）、28(過去28日間のデータ）、30(初期値、過去30日間のデータ）、90(過去90日間のデータ）です。
-* `sortMetric` (String)：デフォルトは `viewsMetrics`です； `ctrMetric`, `timeOnPageMetric`, `exitRateMetric`, `ctpMetric`, `sessionsMetric`, `avgTimeOnPageMetric`, `bounceMetric`...可能な値です、 `maxScrollDepthMetric`, `visitorsMetric`, `viewsMetric`, `bounceRateMetric`, `indirectAccessMetric`, `entrancesMetric`, `directAccessMetric`.
-* `sortOrder` (文字列）、可能な値は **asc** または **desc** 。 sortMetricに従って、結果を昇順または降順で並べ替える。 デフォルトはdesc。
+* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
+* `page` (integer)：結果のページ番号。
+* `keywords` (string)：データ内で一致したキーワード。
+* `rangeKey` (integer)： データをグループ化するための時間範囲。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
+* `sortMetric` (string)：データをソートするためのメトリックを指定します。 可能な値は `avgTimeOnPageMetric`, `bounceMetric`, `bounceRateMetric`, `ctaClicksMetric`, `directAccessMetric`, `entrancesMetric`、 `exitRateMetric`, `indirectAccessMetric`, `readsMetric`, `sessionsMetric`, `timeOnPageMetric`, `viewsMetric`, `visitorsMetric`.
+* `sortOrder` (string)：結果の表示順を指定します。 指定できる値は、 `asc` または `desc`です。
+
+特定のURLからページデータを取得する場合、
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages/{pageURL}
+```
+
+## セグメントデータへのアクセス
+
+すべてのSegmentデータを取得する場合は、このコマンドを使用します：
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
+```
+
+これらのクエリパラメータを利用することができます：
+
+* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
+* `page` (integer)：結果のページ番号。
+
+特定のセグメントに属するすべての個人を取得する場合、
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{segmentsId}/individuals
+```
+
+## ウェブコンテンツデータへのアクセス
+
+このコマンドを使うと、すべてのWeb Contentsデータを取得できます：
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents
+```
+
+これらのクエリパラメータを利用することができます：
+
+* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
+* `page` (integer)：結果のページ番号。
+* `keywords` (string)：データ内で一致したキーワード。
+* `rangeKey` (integer)： データをグループ化するための時間範囲。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
+* `sortMetric`(string)：データをソートするためのメトリックを指定します。 可能な値は、 `viewsMetric`です。
+* `sortOrder` (string)：結果を表示する順序を指定します。 指定できる値は、 `asc` または `desc`です。
+
+特定のウェブコンテンツに関するデータを取得すること、
+
+```
+curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents/{webContentsID}
+```

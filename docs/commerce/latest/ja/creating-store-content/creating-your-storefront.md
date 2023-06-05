@@ -20,7 +20,7 @@ Miniumなどの[アクセラレータ](../starting-a-store/accelerators.md)を�
 | [検索機能](./commerce-storefront-pages/search.md)                | ユーザーが検索できます                      | ［**検索**］ 、 ［**タグ**］ 、 ［**カテゴリーファセット**］ 、 ［**オプションファセット**］ 、 ［**仕様ファセット**］ |
 | スペアパーツファインダー/BOM                                             | 特定の商品を構成する材料のリストを表示します           | **commerceBOM** |
 
-## 追加情報
+## 関連トピック
 
 * [ウィジェットリファレンスガイド](./liferay-commerce-widgets/widget-reference.md)
 * [ページの作成](https://help.liferay.com/hc/ja/articles/360018171291-Creating-Pages)

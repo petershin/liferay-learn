@@ -50,7 +50,7 @@
 
 ![フォルダーのアクセス権を設定する。](./using-folders/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [ドキュメントとメディアでのワークフローの使用](../publishing-and-sharing/using-workflow-with-documents-and-media.md)
 * [ファイルのアップロード](./uploading-files.md)

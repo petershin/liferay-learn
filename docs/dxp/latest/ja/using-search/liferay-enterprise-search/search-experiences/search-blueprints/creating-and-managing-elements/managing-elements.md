@@ -22,7 +22,7 @@
 [要素スキーマ](./creating-elements.md#understanding-the-element-schema) は変更することができます。 Liferayのバージョン間でスキーマが変更された場合、古いエレメントのJSONをインポートすると失敗することがあります。
 ```
 
-## 追加情報
+## 関連トピック
 
 - [エレメントを作る](./creating-elements.md)
 - [定義済み要素変数リファレンス](./predefined-element-variables-reference.md)

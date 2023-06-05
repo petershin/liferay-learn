@@ -1,5 +1,7 @@
 # IBM Cloud Object Storage
 
+{bdg-primary}`セルフホスティング専用`
+
 Liferay DXPは、IBMの [Cloud Object Storage](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-getting-started-cloud-object-storage) ストアをS3互換性レイヤーとともに実装しているため、AWS S3 Storeと同じ設定を使用します。 IBMアカウントを設定してバケットを作成したら、インスタンスのS3 Storeを設定する準備が整います。
 
 ## ストアの設定
@@ -36,7 +38,7 @@ dl.store.impl=com.liferay.portal.store.s3.IBMS3Store
 
 IBMのサービスの使用に関する追加の詳細については、IBM Cloud Object Storageの公式資料を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [ファイル ストレージ](../../file-storage.md)
 * [Amazon S3 Store](./amazon-s3-store.md)

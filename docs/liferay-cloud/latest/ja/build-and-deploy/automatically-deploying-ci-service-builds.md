@@ -26,7 +26,7 @@ Liferay Cloudでは、Webhookを使用して、プロジェクトのGitリポジ
 
 再起動すると、指定したブランチにプッシュまたはマージされた変更が自動的にビルドされ、ターゲット環境にデプロイされます。
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Cloud 開発ワークフローの概要](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [Liferay Cloud Consoleを使った変更のデプロイメント](./deploying-changes-via-the-liferay-cloud-console.md)

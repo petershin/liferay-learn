@@ -90,6 +90,6 @@
 
     ![ログアウト](./introduction-to-the-admin-account/images/05.png "ログアウト")
 
-## 追加情報
+## 関連トピック
 
 * [Liferay DXPのセキュリティについての紹介](https://help.liferay.com/hc/ja/articles/360017897072-Introduction-to-Securing-Liferay-DXP)

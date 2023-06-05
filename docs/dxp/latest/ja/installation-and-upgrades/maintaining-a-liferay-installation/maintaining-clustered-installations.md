@@ -59,7 +59,7 @@ maintaining-clustered-installations/blue-green-deployments.md
 * `com.liferay.portal.scheduler.multiple`
 * `com.liferay.portal.scheduler.multiple.*`
 
-## 追加情報
+## 関連トピック
 
 * [ローリング再起動](./maintaining-clustered-installations/rolling-restarts.md)
 * [ブルーグリーンのデプロイ](./maintaining-clustered-installations/blue-green-deployments.md)

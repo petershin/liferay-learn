@@ -119,7 +119,7 @@
 | Claims > Claim: View              | オブジェクトのエントリーを表示します。                                                                 |
 | Claims > Claims: Add Object Entry | オブジェクトエントリーを作成します。                                                                  |
 
-## 追加情報
+## 関連トピック
 
 * [アカウント](../../../../users-and-permissions/accounts.md)
 * [システムオブジェクトの拡張](../extending-system-objects.md)

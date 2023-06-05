@@ -187,7 +187,7 @@
 
 ![リモートアプリケーションウィジェットをサイトページにデプロイすることができます。](./using-object-data-with-react-charts/images/06.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクト概要](../../objects.md)
 * [ヘッドレスフレームワークの統合](../understanding-object-integrations/headless-framework-integration.md)

@@ -92,7 +92,7 @@ Liferayコンポーネントのコードベースに変更があった場合、T
 交換する前に、必ず各コンポーネントの構成を記録してください。 これにより、ジョブが以前と同じ機能を維持することができます。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Talendコンポーネントの概要](./liferay-talend-components-overview.md)
 * [Liferayコンポーネントを使用したTalendジョブの設計](./designing-talend-jobs-using-liferay-talend-components.md)

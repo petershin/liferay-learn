@@ -128,7 +128,7 @@ inside some-pre-configure-script.sh
 
 これで、コンテナのライフサイクルのすべての部分でスクリプトを実行する方法がわかりました。
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Dockerイメージの使用](../using-liferay-docker-images.md)
 * [コンテナのライフサイクルとAPI](./container-lifecycle-and-api.md)

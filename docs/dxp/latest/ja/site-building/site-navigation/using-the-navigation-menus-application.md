@@ -135,7 +135,7 @@ Dynamic Vocabulary要素により、アイテムの階層が変化しても、�
 
 ナビゲーションメニューが削除されました。
 
-## 追加情報
+## 関連トピック
 
 * [サイトナビゲーションの管理](./managing-site-navigation.md)
 * [ナビゲーションメニューの要素の種類](./navigation-menu-element-types.md)

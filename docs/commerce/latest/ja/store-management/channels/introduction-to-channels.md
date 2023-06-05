@@ -19,7 +19,7 @@
 * 国
 * 倉庫
 
-## 追加情報
+## 関連トピック
 
 * [チャネルの管理](./managing-channels.md)
 * [チャネルを使用した商品の可視性の構成](./configuring-product-visibility-using-channels.md)

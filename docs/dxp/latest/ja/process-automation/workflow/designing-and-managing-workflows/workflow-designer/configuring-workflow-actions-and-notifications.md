@@ -82,7 +82,7 @@ Single Approver のワークフロー定義を作成する場合、 **Update** T
 
 アップデートノードの通知が追加されました。
 
-## 追加情報
+## 関連トピック
 
 * [ワークフロー通知テンプレート変数](../../developer-guide/workflow-notification-template-variables.md)
 * [ワークフロータスクの作成](./creating-workflow-tasks.md)

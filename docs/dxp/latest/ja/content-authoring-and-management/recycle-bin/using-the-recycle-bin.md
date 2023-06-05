@@ -74,7 +74,7 @@ Wikiおよび掲示板エントリに追加された添付ファイルは、削�
 
 すべてのリサイクルアイテムを削除するには、アプリケーションバーの **アクション** ボタン(![Actions](../../images/icon-actions.png)）をクリックし、 ［**ゴミ箱を空にする**］ を選択します。
 
-## 追加情報
+## 関連トピック
 
 * [ゴミ箱の概要](./recycle-bin-overview.md)
 * [ゴミ箱の設定](./configuring-the-recycle-bin.md)

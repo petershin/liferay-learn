@@ -43,7 +43,7 @@ LCP_CI_ARTIFACT_NUM_TO_KEEP` 変数で許可されている以上のビルドで
 
    ![これにより、選択したビルドに基づいて新しいビルドが実行されます。](./restarting-jenkins-stages/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [継続的インテグレーション](../platform-services/continuous-integration.md)
 * [Liferay Cloud 導入ワークフローの概要](./overview-of-the-liferay-cloud-deployment-workflow.md)

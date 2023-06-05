@@ -47,7 +47,7 @@
 
 これで、パッチをアンインストールして元に戻すことにより、DXPインストールを復元する方法がわかりました。
 
-## 追加情報
+## 関連トピック
 
 * [パッチのインストール](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
 * [パッチタイプについて](../patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md)

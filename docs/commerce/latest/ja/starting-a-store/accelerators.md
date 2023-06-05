@@ -22,6 +22,6 @@ Liferay Commerceには、すぐに使用可能なB2Bサイトアクセラレー�
 
 アクセラレータによるサイトが作成されました。
 
-## 追加情報
+## 関連トピック
 
 * [Minium Acceleratorを使用してB2Bストアをすぐに開始する](../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)

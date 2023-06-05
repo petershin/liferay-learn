@@ -30,7 +30,7 @@
 
 ![ウィジェットのアクションボタンをクリックして、 [ステージング]を選択します。](./publishing-single-assets-and-widgets/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [ステージングの概要](../staging.md)
 * [ステージング権限の管理](./managing-staging-permissions.md)

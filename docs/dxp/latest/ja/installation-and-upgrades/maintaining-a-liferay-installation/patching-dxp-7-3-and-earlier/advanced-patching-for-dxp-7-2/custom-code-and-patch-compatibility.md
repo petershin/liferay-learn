@@ -63,7 +63,7 @@ DXP 7.2をカスタマイズまたはパッチするコードを展開する場�
 
 カスタムコードとカスタムパッチを他のDXPパッチと統合する方法をマスターしました。
 
-## 追加情報
+## 関連トピック
 
 * [パッチのインストール](../installing-patches-for-dxp-7-3-and-earlier.md)
 * [パッチングツールのインストール](../../reference/installing-the-patching-tool.md)

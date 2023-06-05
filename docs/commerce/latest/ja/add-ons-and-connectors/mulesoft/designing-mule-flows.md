@@ -68,7 +68,7 @@ Transform Message* モジュールを使用してソースとデスティネー�
 
 利用可能なすべての操作と関連する入力パラメータを表示するには、 [Liferay MuleSoft Connector Technical Reference](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [MuleSoftコネクタの設定](./configuring-the-mulesoft-connector.md)
 * [Liferay MuleSoft Connector テクニカルリファレンス](https://github.com/liferay/liferay-etl-mulesoft/blob/master/docs/liferay-connector-tech-ref.adoc)

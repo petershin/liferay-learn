@@ -85,7 +85,7 @@ LPKGをブラックリストに登録すると、その内部モジュールが�
 
 　 簡単なリストを使用して、複数のアプリ、モジュール、プラグインのインストールを管理できるようになりました。
 
-## 追加情報
+## 関連トピック
 
 * [アプリケーションマネージャーの使用](./using-the-app-manager.md)
 * [Felix Gogoシェルの使用](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)

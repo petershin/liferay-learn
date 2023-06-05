@@ -164,7 +164,7 @@ DXPをアプリケーションサーバーにインストールした場合は�
 
 DXPバンドルとDXPアプリケーションサーバーのインストールにパッチを適用する方法をマスターしました。
 
-## 追加情報
+## 関連トピック
 
 * [パッチツールのインストール](../reference/installing-the-patching-tool.md)
 * [パッチツールの構成](../reference/configuring-the-patching-tool.md)

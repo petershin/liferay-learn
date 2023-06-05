@@ -56,7 +56,7 @@ DXP契約者： [Workflow Metricsアプリケーション](./using-workflow-metr
 
 承認された資産(Wikiページ)はウィジェットに公開されました。
 
-## 追加情報
+## 関連トピック
 
 * [通知とリクエストの管理](../../../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md)
 * [ワークフロータスクノードのリファレンス](../developer-guide/workflow-task-node-reference.md)

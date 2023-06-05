@@ -64,7 +64,7 @@
 
    ![テストが正常に行われたことを確認します。](./using-automate-io-to-sync-object-data-with-google-sheets/images/12.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクト](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)

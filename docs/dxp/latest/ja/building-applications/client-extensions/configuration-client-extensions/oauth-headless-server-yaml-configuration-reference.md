@@ -25,7 +25,7 @@ yoke-oauth-headless-server:
 | `userAccountEmailAddress` | 文字列         | (デフォルトの管理者ユーザーの電子メールアドレス)                        | このOAuth2アプリケーションプロファイルに関連するユーザーアカウントの電子メールアドレスです。 `userAccountScreenName` プロパティが未定義の場合のみ使用されます。 |
 | `userAccountScreenName`   | 文字列         | (デフォルトの管理者ユーザーのスクリーンネーム)                         | OAuth2アプリケーションプロファイルに関連するユーザーアカウントのスクリーンネーム。 これは、 `userAccountEmailAddress`の値をオーバーライドします。       |
 
-## 追加情報
+## 関連トピック
 
 * [マイクロサービスクライアント拡張機能](../microservice-client-extensions.md)
 * [クライアントエクステンションの操作](../working-with-client-extensions.md)

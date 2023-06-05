@@ -58,7 +58,7 @@ FreeMarkerのリストを使用することで、フラグメントに同じHTML
 
 詳しくは、 [FreeMarker 公式ドキュメント](https://freemarker.apache.org/docs/ref_directive_list.html) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md)
 * [フラグメンテーションの構成タイプ](../reference/fragments/fragment-configuration-types-reference.md)

@@ -61,7 +61,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [アカウント管理](../account-management.md)
 * [アカウントのロール](./account-roles.md)

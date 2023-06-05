@@ -52,7 +52,7 @@ Liferay Commerceでは、グローバルメニュー（![Global Menu](../../imag
 | ヘルス状態管理 | ヘルス状態エンティティにアクセスして変更する機能           |
 | 権限の設定   | ヘルスチェックアプリケーションでリソース権限を表示および変更する機能 |
 
-## 追加情報
+## 関連トピック
 
 * [在庫数の見積もり](../../inventory-management/availability-estimates.md)
 * [計量単位](../../store-management/configuring-shipping-methods/measurement-units.md)

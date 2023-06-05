@@ -65,6 +65,6 @@ Liferay Commerce 2.0以下では、Liferay Commerceインスタンスで作成�
 
 新しいイメージがインスタンス全体に適用されました。
 
-## 追加情報
+## 関連トピック
 
 * [新しいカタログを作成する](./creating-a-new-catalog.md)

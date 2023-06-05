@@ -55,7 +55,7 @@
 
 これで、カタログの権限が設定されました。
 
-## 追加情報
+## 関連トピック
 
 * [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [チャネルを使用した商品の可視性の構成](../../store-management/channels/configuring-product-visibility-using-channels.md)

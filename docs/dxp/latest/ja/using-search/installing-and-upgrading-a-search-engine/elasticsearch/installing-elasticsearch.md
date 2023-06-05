@@ -31,7 +31,7 @@ sysctl -w vm.max_map_count=262144
 
 ## Elasticsearchのインストール
 
-1. Elasticsearchのアーカイブを [Elasticのウェブサイト](https://www.elastic.co) からダウンロードしてください。
+1. Elasticsearch アーカイブを [Elastic 社のウェブサイト](https://www.elastic.co) からダウンロードします。
 
     ```{important}
     [お使いのLiferayのバージョンと互換性のある](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors) 最新のElasticsearchアーカイブをダウンロードしてください。
@@ -167,7 +167,7 @@ Elasticsearchは[Liferayからの接続](./connecting-to-elasticsearch.md)の準
 
 本番環境で実行している場合は、[LiferayとElasticsearch間の通信を保護します](./securing-elasticsearch.md)。
 
-## 追加のトピック
+## 関連トピック
 
 * [Elasticsearchの保護](./securing-elasticsearch.md)
 * [Liferay Enterprise Search](../../liferay-enterprise-search.md)

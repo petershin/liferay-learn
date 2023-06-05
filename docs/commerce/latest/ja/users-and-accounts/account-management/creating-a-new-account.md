@@ -61,7 +61,7 @@ DXP 7.4以降、アカウント管理ウィジェットはDXPの一部です。 
 
 新規アカウントは、コントロールパネルを使用して作成されました。 アカウントのアドレスを更新するには、 ［**住所**］ をクリックします。 詳しくは、 [住所をアカウントに追加する](../account-management/adding-addresses-to-an-account.md#using-the-control-panel) の記事を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [アカウント管理](../account-management.md)
 * [アカウントへのユーザーの招待](./inviting-users-to-an-account.md)

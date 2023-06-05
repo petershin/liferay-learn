@@ -152,7 +152,7 @@ unzip liferay-b3x5.zip
 
 この一括GETメソッドには、`dateModified`と`description`という2つの値を持つ `aggregationTerms` URLパラメーターが含まれています。 これらは、リクエスト応答内のオブジェクトエントリーからデータを集約するために使用されるファセット基準を決定します。
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトAPIの基本](./object-api-basics.md)
 * [バッチAPIの使用](./using-batch-apis.md)

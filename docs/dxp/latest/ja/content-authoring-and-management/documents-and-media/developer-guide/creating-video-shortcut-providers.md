@@ -96,6 +96,6 @@
 
 `getDescription()`、`getThumbnailURL()`、および`getTitle()`がオーバーライドされていないので、`null`が返されます。
 
-## 追加情報
+## 関連トピック
 
 * [外部ビデオショートカットの作成](../videos/creating-external-video-shortcuts.md)

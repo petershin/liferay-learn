@@ -139,7 +139,7 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
 
    ![ホームページの下部にウェブサーバノードが表示されていることを確認します。](./deploying-changes-via-the-cli-tool/images/03.png)
 
-## 追加情報
+## 関連トピック
 
 * [コマンドラインツール](../reference/command-line-tool.md)
 * [Liferay Cloud 開発ワークフローの概要](./overview-of-the-liferay-cloud-deployment-workflow.md)

@@ -73,7 +73,7 @@ Office 365&trade;を使用して、次のタイプのドキュメントとメデ
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [Microsoft Office 365でドキュメントの作成と編集を有効にする](../../devops/enabling-document-creation-and-editing-with-microsoft-office-365.md)
 * [Googleドライブでのドキュメントの作成と編集](./creating-and-editing-documents-with-google-drive.md)

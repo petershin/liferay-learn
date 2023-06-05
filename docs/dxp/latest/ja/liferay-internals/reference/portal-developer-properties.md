@@ -24,6 +24,6 @@ include-and-override=portal-developer.properties
 | module.framework.properties.osgi.console=localhost:11311      | モジュールのデバッグ用のコンソールアクセスを有効にします。                                                                                                                                            |
 | work.dir.override.enabled=true                                | Liferayのワークディレクトリを使用して、デプロイされたOSGiバンドル内のJSPファイルを上書きできるようになります。                                                                                                           |
 
-## 追加情報
+## 関連トピック
 
 * [ポータルプロパティ](../../installation-and-upgrades/reference/portal-properties.md)

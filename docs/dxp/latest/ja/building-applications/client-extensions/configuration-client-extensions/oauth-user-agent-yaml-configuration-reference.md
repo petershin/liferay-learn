@@ -25,7 +25,7 @@ xray-oauth-user-agent:
 | `privacyPolicyURL` | URL         |                                                  | OAuth2アプリケーションプロファイルのプライバシーポリシーのURLです。   |
 | `scopes`           | 文字列[]       | []                                               | OAuth2 アプリケーションプロファイルに関連づけられたスコープの配列です。  |
 
-## 追加情報
+## 関連トピック
 
 * [マイクロサービスクライアント拡張機能](../microservice-client-extensions.md)
 * [クライアントエクステンションの操作](../working-with-client-extensions.md)

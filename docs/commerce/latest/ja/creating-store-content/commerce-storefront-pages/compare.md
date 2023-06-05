@@ -6,7 +6,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [Widget Reference Guide](../liferay-commerce-widgets/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/ja/articles/360018171291-Creating-Pages)

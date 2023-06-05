@@ -114,6 +114,6 @@ Liferay DXP 7.3では、 **ページツリー** メニューから同じ設定�
 
     ![ページツリーメニューから、同じページセットオプションにアクセスすることができます。](./configuring-page-sets/images/07.png)
 
-## 追加情報
+## 関連トピック
 
 * [ページ単位での設定](./configuring-individual-pages.md)

@@ -337,6 +337,6 @@ java -classpath .:* -DuserId=1234 User_DELETE_ById
 
 ユーザー［Able Goo］と［Baker Goo］は削除されました。
 
-## 追加情報
+## 関連トピック
 
 [APIエクスプローラー](../../headless-delivery/consuming-apis/consuming-rest-services.md) でユーザー関連のRESTサービスの一覧を確認できます。

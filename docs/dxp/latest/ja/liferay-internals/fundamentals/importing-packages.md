@@ -81,7 +81,7 @@ WARプロジェクトはBndを使用せず、 `WEB-INF/liferay-plugin-package.pr
 
 　 これで、モジュールで使用するすべての種類のパッケージをインポートできるようになりました。
 
-## 追加情報
+## 関連トピック
 
 * [依存関係の構成](./configuring-dependencies.md)
 * [Blade CLI](../../building-applications/tooling/blade-cli/generating-projects-with-blade-cli.md)

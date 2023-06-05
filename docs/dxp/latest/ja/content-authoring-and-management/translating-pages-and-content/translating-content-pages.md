@@ -122,7 +122,7 @@ Liferayは、選択された各エクスペリエンスのXLIFFファイルを�
 
 [Google Cloud Translation](./using-third-parties-for-translation.md#enabling-google-cloud-translation) , [Amazon Translate](./using-third-parties-for-translation.md#enabling-amazon-translate) , または [Microsoft Translator](./using-third-parties-for-translation.md#enabling-microsoft-translator) とLiferayの統合を有効にした場合、それらを使用してWebコンテンツを自動的に翻訳することが可能です。 詳しくは、 [翻訳にかかるサードパーティーの利用](./using-third-parties-for-translation.md) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [ウェブコンテンツの翻訳](./translating-web-content.md)
 * [翻訳にかかるサードパーティーの利用](./using-third-parties-for-translation.md)

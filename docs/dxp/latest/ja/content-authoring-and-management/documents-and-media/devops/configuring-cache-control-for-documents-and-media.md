@@ -32,7 +32,7 @@
 
 1. ［**Save**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [ドキュメントとメディアのストレージクォータを設定する](./setting-storage-quotas-for-documents-and-media.md)
 * [ドキュメントとメディアプレビューの設定](./configuring-documents-and-media-previews.md)

@@ -26,6 +26,6 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [LiferayのREST Connector to SharePointの有効化](./enabling-liferays-rest-connector-to-sharepoint.md)

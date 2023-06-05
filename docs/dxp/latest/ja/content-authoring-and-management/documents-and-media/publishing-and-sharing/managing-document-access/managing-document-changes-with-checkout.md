@@ -41,7 +41,7 @@
 
 WebDAVを使用してファイルを管理し、バージョン履歴を継続して追跡することができます。 詳しくは、 [WebDAVでドキュメントにアクセスする](../accessing-documents-with-webdav.md) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [権限とドキュメント](./permissions-and-documents.md)
 * [他のユーザーとのドキュメントの共有](./sharing-documents-with-other-users.md)

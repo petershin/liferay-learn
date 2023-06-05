@@ -203,7 +203,7 @@ JGroupsは、Rackspace Ping、BPing、File Pingなど、クラスターメンバ
 
 キャッシュできるエンティティを追加した場合、またはシステムのキャッシュ構成を調整したい場合は、モジュールを使用して行うことができます。  キャッシュの構成については、 [Cache Configuration](https://help.liferay.com/hc/ja/articles/360035581451-Introduction-to-Cache-Configuration) を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [クラスタリンクの構成](./configuring-cluster-link.md)
 * [高可用性のためのクラスタリング](../clustering-for-high-availability.md)

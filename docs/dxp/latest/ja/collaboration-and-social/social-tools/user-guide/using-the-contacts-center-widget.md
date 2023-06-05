@@ -84,6 +84,6 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [通知とリクエストの管理](../../notifications-and-requests/user-guide/managing-notifications-and-requests.md)

@@ -26,7 +26,7 @@
 
 Liferayは選択したデータを即座に削除します。
 
-## 追加情報
+## 関連トピック
 
 * [データ初期化](./data-cleanup.md)
 * [Docker経由のアップグレード](../upgrade-basics/upgrading-via-docker.md)

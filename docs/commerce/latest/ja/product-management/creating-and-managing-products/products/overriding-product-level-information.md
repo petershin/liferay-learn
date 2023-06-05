@@ -96,7 +96,7 @@ SKUがサブスクリプションベースで利用可能になりました。
 
 SKUがサブスクリプションベースで利用可能になりました。
 
-## 追加情報
+## 関連トピック
 
 * [仕様](./specifications.md)
 * [商品バリアントのSKU作成](./creating-skus-for-product-variants.md)

@@ -52,7 +52,7 @@ WorkflowStatusManagerUtil.updateStatus(WorkflowConstants.getLabelStatus("expired
 
 **タスク** ノードは、すべての作業が行われる場所を表しています。 [ワークフロータスクの作成](./creating-workflow-tasks.md)および[タスクノードの使用](./assigning-task-nodes.md)を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [ワークフロータスクの作成](./creating-workflow-tasks.md)
 * [タスクノードの割り当て](./assigning-task-nodes.md)

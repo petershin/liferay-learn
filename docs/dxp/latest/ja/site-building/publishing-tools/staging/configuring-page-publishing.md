@@ -20,7 +20,7 @@
 
 1. ［**Save**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [公開プロセスを理解する](./understanding-the-publishing-process.md)
 * [ページバージョニング](./page-versioning.md)

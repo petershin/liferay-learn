@@ -51,7 +51,7 @@ Gogo シェルの [サービスコンポーネントランタイムコマンド]
 
 Declarative Serviceアノテーションを使用して、コンポーネントのアクティブ化とサービスポリシーを指定します。 Gogo シェルコマンドを使用して、モジュールとコンポーネントを制御します。
 
-## 追加情報
+## 関連トピック
 
 * [モジュールプロジェクト](../fundamentals/module-projects.md)
 * [Gogo シェルコマンド](../fundamentals/using-the-gogo-shell/gogo-shell-commands.md)

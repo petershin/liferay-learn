@@ -14,6 +14,6 @@
 
 1. ［**Save**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [通知テンプレートの使用](./using-notification-templates.md)

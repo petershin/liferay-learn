@@ -24,15 +24,15 @@
 
 1. Liferay LearnサイトのURLが必要です。`http://learn.liferay.com`.
 
-1. ブラウザのWeb Developer Consoleを開きます(F12。これにより、DOMが表示されます）。 コンソールには矢印のついたアイコンが表示され、検索バーを調べてロケーターを取得することができます。 これをセレクターと呼びます。
+1. ブラウザのWeb Developer Consoleを開きます（F12。これにより、DOMが表示されます）。 コンソールには矢印のついたアイコンが表示され、検索バーを調べてロケーターを取得することができます。 これをセレクターと呼びます。
 
-1. セレクターアイコンで検索バーをクリックし、DOMのハイライト部分からロケーターを決定します。 この場合、 `//input[@placeholder="検索..."]`を使用します。
+1. セレクターアイコンで検索バーをクリックし、DOMのハイライト部分からロケーターを決定します。 この場合、 `//input[@placeholder="Search..."]`を使用します。
 
 1. 名前を検索すると、検索結果ページに移動します。
 
-1. 再度、Web Developer Consoleのセレクターアイコンを使って、「結果がありません」というメッセージをクリックし、パスを決定します。 この場合、 `//h1[@class='taglib-empty-result-message-title']`.
+1. 再度、Web Developer Consoleのセレクターアイコンを使って、「結果がありません」というメッセージをクリックし、パスを決定します。この場合、 `//h1[contains(.,'No results were found.')]`を使用します。
 
-1. さらにアサーションしたい場合は、例えば「ステージング」と検索するなど、確実に結果が出る言葉で検索してください。 検索結果が表示されたら、セレクターアイコンを使って、結果の1つのパスを取得することができます。 この場合、`//input[@data-qa-id='searchInput' and @value='Staging']`を使用します。 なお、「ステージング」という言葉はこの検索結果に特有のものであり、他のシナリオで使用するにはパスの柔軟性に欠けることに注意してください。 このパスを再利用できるようにするには、テストケースから渡すことのできる変数を使用します。 `//input[@data-qa-id='searchInput' and @value='${key_searchTerm}']`. 詳細は、[変数の使用](../poshi-basics/poshi-layers/variables.md)を参照してください。
+1. さらにアサーションしたい場合は、例えば「ステージング」と検索するなど、確実に結果が出る言葉で検索してください。検索結果が表示されたら、セレクターアイコンを使って、結果の1つのパスを取得することができます。 この場合、 `//input[@data-qa-id=searchInput]と@value='Staging']`を使用します。なお、「ステージング」という言葉はこの検索結果に特有のものであり、他のシナリオで使用するにはパスの柔軟性に欠けることに注意してください。このパスを再利用できるようにするために、テストケースから渡せる次の変数を使用します： `//input[@data-qa-id='searchInput' and @value='${key_searchTerm}']`。詳細は、[変数の使用](../poshi-basics/poshi-layers/variables.md)を参照してください。
 
 ## パスファイルの構築
 
@@ -57,12 +57,12 @@
 <tbody>
 <tr>
     <td>NO_RESULTS_MESSAGE</td>
-    <td>//h1[@class='taglib-empty-result-message-title']</td>
+    <td>//h1[contains(.,'No results were found.')]</td>
     <td></td>
 </tr>
 <tr>
     <td>SEARCH_BAR</td>
-    <td>//input[@placeholder="検索..."]</td>
+    <td>//input[@placeholder="Search..."]</td>
     <td></td>
 </tr>
 <tr>

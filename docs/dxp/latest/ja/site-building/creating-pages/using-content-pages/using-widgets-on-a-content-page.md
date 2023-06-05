@@ -65,7 +65,7 @@ Liferay Portal 7.3 GA2以降、コンテンツページからウィジェット�
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 - [コンテントページの使用](../using-content-pages.md)
 - [コンテンツページへの要素の追加](./adding-elements-to-content-pages.md)

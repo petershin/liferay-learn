@@ -60,7 +60,7 @@
 
 ![ディスプレイページテンプレートのコンテキストでコンテンツをプレビューするか、コンテンツのアクションメニューを使用してディスプレイページを表示します。](./publishing-content-with-display-pages/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [表示ページテンプレートの使用](../using-display-page-templates.md)
 * [表示ページテンプレートの作成と管理](./creating-and-managing-display-page-templates.md)

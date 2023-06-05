@@ -59,7 +59,7 @@ Liferay Cloudコンソールは、プロジェクトに変更をデプロイす�
 
 必要に応じて、CIサービスを設定して、プロジェクトの `dev`環境にビルドを自動的にデプロイすることもできます。 CIサービスに環境変数を追加することで、指定したブランチで作成されたビルドの自動デプロイを開始します。 詳細については、[Setting Up Automatic Deployment](./automatically-deploying-ci-service-builds.md)を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [配布タイプについて](./understanding-deployment-types.md)
 * [デプロイメント戦略について](./understanding-deployment-strategies.md)

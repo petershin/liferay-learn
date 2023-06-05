@@ -20,11 +20,11 @@
 
 1. ［**送信**］ をクリックします 。
 
-   これにより、新しい無効な倉庫が作成されます。 これにより、住所、位置情報を追加し、有効化できるようになりました。
+   これにより、新しい非アクティブな倉庫が作成され、その詳細タブが表示されます。
 
    ![新しい倉庫の詳細を入力し、アクティベートします。](./setting-up-warehouses/images/02.png)
 
-1. （オプション）名前を編集し、説明を追加します。
+1. (オプション）名前と説明を編集またはローカライズします。
 
 1. ［Geolocation］セクションに倉庫の緯度と経度の値を入力します。
 
@@ -38,9 +38,9 @@
    倉庫を有効にする前に、位置情報を設定する必要があります。
    ```
 
-1. ［**Eligibility**］ タブをクリックし、倉庫を特定のチャンネルまたは利用可能なすべてのチャンネルに関連付けます。 これは、チャンネルの商品在庫を決定するものです。
+1. 倉庫を1つまたは複数のチャンネルにリンクさせる。 これにより、そのチャネルの商品在庫が決定されます。
 
-   倉庫を特定のチャンネルに関連付ける場合は、 ［**Specific Channels**］ ラジオボタンをクリックし、チャンネル名を入力し、 ［**Select**］ をクリックします。
+   **Eligibility** タブをクリックし、 **Specific Channels** を選択し、チャンネル名を入力し、 **Select** をクリックします。
 
    ![倉庫を利用可能なすべてのチャンネルまたは特定のチャンネルに関連付けます。](./setting-up-warehouses/images/03.png)
 
@@ -118,8 +118,8 @@ LiferayはBing Maps APIと統合し、倉庫の住所から自動的に位置情
 
 新しい倉庫は、すぐに使えるように有効になっています。
 
-## 追加情報
+## 関連トピック
 
 * [地域の追加](../store-management/configuring-countries-and-regions.md#adding-regions)
-* [国や地域を設定する](../store-management/configuring-countries-and-regions.md)
+* [国や地域の設定](../store-management/configuring-countries-and-regions.md)
 * [チャンネルについて](../store-management/channels/introduction-to-channels.md)

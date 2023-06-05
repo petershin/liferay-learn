@@ -88,7 +88,7 @@ Liferay Cloud は、 [アプリケーションメトリクス](./manage-and-opti
 
 ![Liferay DXPインスタンスを含むLiferay Cloudサービスを監視するために、様々なメトリクスを使用します。](./getting-started/images/07.png)
 
-## 追加情報
+## 関連トピック
 
 * [開発要件](./getting-started/development-requirements.md)
 * [Githubリポジトリの構成](./getting-started/configuring-your-github-repository.md)

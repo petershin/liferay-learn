@@ -38,6 +38,6 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [Wikiページの作成](./creating-wiki-pages.md)

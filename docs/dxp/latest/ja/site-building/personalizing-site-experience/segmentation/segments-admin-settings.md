@@ -50,7 +50,7 @@ Segmentの動作は、システムレベルまたはインスタンスレベル�
 [設定範囲](../../../system-administration/configuring-liferay/understanding-configuration-scope.md)を意識してください。 システムレベルで無効にした設定はインスタンスレベルでは有効にできませんが、システムレベルで有効にした設定はインスタンスレベルで無効にすることができます。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html)
 * [セッションプロパティのボキャブラリ](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

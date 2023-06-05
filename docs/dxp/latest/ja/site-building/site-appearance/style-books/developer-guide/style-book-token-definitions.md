@@ -163,7 +163,7 @@ body {
 `defaultValue`の値がトークン定義に含まれている場合、これは一致するCSS変数定義で定義されているデフォルト値と一致する必要があります。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [スタイルブックを使用してサイトの外観を標準化する](../using-a-style-book-to-standardize-site-appearance.md)
 <!-- Add link to token definition tutorial when available -->

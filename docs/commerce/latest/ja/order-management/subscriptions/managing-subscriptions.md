@@ -105,7 +105,7 @@ commerce注文とサブスクリプションは、 ［**コントロールパネ
 
 注文が受理されると、 [サブスクリプションメニュー](./subscription-administration-reference-guide.md)表示されます。
 
-## 追加情報
+## 関連トピック
 
 * [サブスクリプション管理リファレンスガイド](./subscription-administration-reference-guide.md)
 * [商品のサブスクリプションを有効にする](../../product-management/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)

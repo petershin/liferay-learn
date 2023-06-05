@@ -93,7 +93,7 @@ Liferay Commerceのすべての注文には、[注文情報](./order-information
 | 申請中          | 注文は行われましたが、販売者による[承認](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)がまだ行われていません。                                                                                              |
 | 承認済み         | 販売者によって注文の確認と[承認](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)が行われ、注文を [送信](./processing-an-order.md#commerce-20-and-below) することができます。 (注：このワークフローステータスは、 ［**送信済み**］ タブにも表示されます。） |
 
-## 追加情報
+## 関連トピック
 
 * [注文ワークフローの概要](../order-workflows/introduction-to-order-workflows.md)
 * [注文ワークフローでの注文の承認または拒否](../order-workflows/approving-or-rejecting-orders-in-order-workflows.md)

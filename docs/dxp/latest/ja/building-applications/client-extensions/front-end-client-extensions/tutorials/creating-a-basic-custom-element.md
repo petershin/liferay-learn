@@ -167,7 +167,7 @@ File sizes after gzip:
 
 ![H5V7-Custom-Elementウィジェットをサイトページに配置する。](./creating-a-basic-custom-element/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [フロントエンドクライアント拡張機能](../../front-end-client-extensions.md)
 * [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md)

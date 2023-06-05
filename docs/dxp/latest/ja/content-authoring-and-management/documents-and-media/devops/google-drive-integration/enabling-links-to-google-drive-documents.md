@@ -68,7 +68,7 @@ Googleプロジェクトの準備ができたら、Liferayコントロールパ�
 
 公開されると、ドキュメントとメディアアプリケーションを介してGoogleドライブファイルにアクセスし、ファイルをLiferayで使用できるようになります。 詳しくは、 [Google Drive上のファイルへのリンク](../../uploading-and-managing/linking-to-files-on-google-drive.md) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [Googleドライブでドキュメントの作成と編集を有効にする](./enabling-document-creation-and-editing-with-google-drive.md)
 * [Googleドライブ上のファイルへのリンク](../../uploading-and-managing/linking-to-files-on-google-drive.md)

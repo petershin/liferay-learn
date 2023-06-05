@@ -1,10 +1,10 @@
 # 検索結果のフィルタリング
 
 ```{note}
-この機能は [Elasticsearch でのみ](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md) で動作します。
+この機能は[Elasticsearchでのみ](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
 ```
 
-カスタムフィルターを使用すると、メインの検索クエリにクエリを提供し、検索結果をフィルタリングして、検索結果ウィジェットで返される結果をコントロールできます。 フィルターウィジェットを表示または非表示にして、変更可能か不変かを決定できます。
+カスタムフィルターでは、メインの検索クエリにクエリを追加し、検索結果をフィルタリングして、検索結果ウィジェットに表示される内容を制御することができます。 フィルターウィジェットを表示または非表示にして、変更可能か不変かを決定できます。
 
 ![カスタムフィルターを適用して、特定の検索結果を除外します。](./filtering-search-results/images/03.png)
 
@@ -12,10 +12,10 @@
 
 とりあえず、以下の基本的な使用法を検討してください。
 
-| ユースケース | `構成` (**値**) |
-| :--- | :--- |
-| **ユーザー タイトル フィルター:** エンド ユーザーは、タイトル |`フィルター フィールド` (**title\** en\ **US**) `フィルター値 ` (**podcast**) `Filter Query Type` (**Match**) `Occur Type` (**must** not)_|
-| **ハードコーディングされたフィルタリング:** 管理ユーザーは、エンド ユーザーには見えず、変更できないフィルターを使用して検索ページを構成します。 ****上記の設定に追加_** `Invisible` (**True--checked**) `Immutable` (**True--checked**) |
+| ユースケース                                                                    | `設定` (**値**) |
+|:------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ユーザータイトルフィルター：** エンドユーザーは、フィルターキーを直接操作して、タイトルを使用して結果を探していたものに絞り込みます     | `フィルターフィールド` （**title \** en \ **US**） <br /> `フィルター値` （**ポッドキャスト**） <br /> `フィルタークエリタイプ` （**一致**） <br /> `発生タイプ` （**must** not）_ |
+| **ハードコード化されたフィルタリング：** 管理ユーザーは、エンドユーザーには表示されず変更できないフィルターを使用してページの検索を構成します。 | ****上記の構成に追加_** <br /> `` （**True-チェック済み**） <br /> `不変` （**True-チェック済み**） |
 
 カスタムフィルターは非常に多くのことを実行でき、それらすべてをリストすることは不可能です。 以下は、ウィジェットの設定ツアーです。 設定例は [カスタムフィルターの例](./custom-filter-examples.md)で見ることができます。
 
@@ -52,7 +52,7 @@ Liferay DXPインデックスに存在するフィールドを見つけるには
 
 **クエリ名（テキスト）：** 提供されたクエリの名前を設定します。 このフィルターが、子句を提供する別のフィルターに対する親クエリとして機能しない限り、これは不要です。その場合、このフィルターのクエリ名を子フィルターの親クエリ名として設定します。  この親/子動作は、Boolタイプのフィルターでのみ使用できます。
 
-**親のクエリ名（テキスト）：** Boolクエリに子節を寄与する場合、親のカスタム・フィルタ・ウィジェットで設定されたクエリ Nameと一致するように設定します。 それ以外の場合は、空白のままにします。
+**親クエリ名（テキスト）：** 子節をBoolクエリに寄与させる場合、親カスタムフィルタウィジェットで設定されたクエリ名と一致するように設定します。 それ以外の場合は、空白のままにします。
 
 **ブースト（数値）：** このクエリに一致する結果のスコアの [ブースト](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html#term-field-params) 。 ここでは、意味のある整数または10進数を指定します。
 
@@ -74,43 +74,63 @@ Liferay DXPインデックスに存在するフィールドを見つけるには
 
 ## フィールドを見つける
 
-カスタムフィルタウィジェットでフィルタリングできるフィールドを見つけるには、適切な権限を持つユーザーが、 **コントロールパネル** &rarr; **設定** &rarr; **検索** に移動します。  そこから、［フィールドマッピング］タブを開き、 `liferay-［companyId］` インデックスのマッピングを参照します。 マッピングの [`プロパティ`](https://www.elastic.co/guide/en/elasticsearch/reference/current/properties.html) セクションまでスクロールします。
+カスタムフィルタウィジェットでフィルタリングできるフィールドを見つけるには、適切な権限を持つユーザーは、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索**］ にナビゲートすることができます。  そこから、［フィールドマッピング］タブを開き、 `liferay-［companyId］` インデックスのマッピングを参照します。 マッピングの [`プロパティ`](https://www.elastic.co/guide/en/elasticsearch/reference/current/properties.html) セクションまでスクロールします。
 
 ![フィールドマッピングを参照して、Liferay DXPのインデックス付きフィールドを見つけます。](./filtering-search-results/images/04.png)
 
 ## ネストされたフィールドの検索と使用
 
-{bdg-secondary}`利用可能 7.2 FP10+、7.3 FP1+、7.4（すべてのアップデート）`
+{bdg-secondary}`あり 7.2 FP10+、7.3 FP1+、7.4+`
 
-[Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-ddm-fields) で説明されているように、Liferay 7.2 SP3 /FP8 (およびLiferay 7.3のすべてのバージョン)では、DDMフィールドは [ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) になりました。 7.2および7.3の最新のフィックスパックおよびGAリリースでは、これらのネストされたフィールドを考慮して、 [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) がサポートされています。
-
-既存のドキュメントのDDMフィールドをインデックスで探すには
-
-1. 検索結果ウィジェットの設定で、 **Display Results in Document Form** を有効にし、ネストされたフィールドを使用する結果を検索します。
-
-1. **結果の詳細** ビューを展開し、その `ddmFieldArray` フィールドを見つけ、その値をコピーします。 例えば、
-
-```json
-   "ddmFieldArray" : [
-               {
-                 "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
-                 "ddmFieldValueKeyword_en_US" :"true",
-                 "ddmFieldValueKeyword_en_US_String_sortable" : "true",
-                 "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
-               }
-             ],
-```
-
-カスタムフィルタ構成でネストされたフィールドを使用するには、3つのカスタムフィルタウィジェットが必要です。  [入れ子になったクエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) は、必要な子クエリをラップするために追加されます。一方の子クエリはフィールドの名前にマッチし、もう一方は値にマッチします。
+オブジェクト定義と [Webコンテンツ構造](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) フィールドは、Elasticsearchのネストされたフィールドとしてインデックスされます。 ネストしたフィールドでフィルタリングするには、3つのカスタムフィルタウィジェットをページに追加する必要があります。 最初のウィジェットは、 [Elasticsearch `ネストされた` クエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) を追加するためのもので、他の2つはネストされたフィールドの名前と値にマッチする子クエリを定義するためのものであります。 最終的なポータルクエリが生成されると、 `ネストされた` クエリが子クエリを包み込みます。
 
 ```{important}
-同じページ内の複数のネストされたフィールドにカスタムフィルターが必要な場合は、各子クエリに別々のカスタムパラメーター名を設定する必要があります。 例として、 [Custom Filter Examples](./custom-filter-examples.md#boosting-matches-to-nested-fields) を参照してください。 
+同一ページ内の複数のネストしたフィールドに対してカスタムフィルターを必要とする場合、各子クエリに対して別々のパラメーター名を設定する必要があります。 例については、 [カスタムフィルターの例](./custom-filter-examples.md#boosting-matches-to-nested-fields) を参照してください。 
 ```
 
-カスタムフィルタ」ウィジェットでのDDM構造体フィールドの使用例については、 [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) を参照してください。
+インデックス内の既存文書のネストされたフィールドを見つけるには、検索結果ウィジェットの [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
 
-## 関連する内容
+例えば、オブジェクト・エントリーは、ネストしたフィールドを持つ `nestedFieldArray` を持つ：
 
-- [カスタムフィルターの例](./custom-filter-examples.md)
-- [結果ランキング](../../search-administration-and-tuning/result-rankings.md)
-- [同義語セット](../../search-administration-and-tuning/synonym-sets.md)
+```json
+"nestedFieldArray" : [
+   {
+     "fieldName" : "lastAcessed",
+     "valueFieldName" : "value_date",
+     "value_date" : "20230502000000"
+   }
+],
+```
+
+一方、ウェブコンテンツの記事には、ネストしたフィールドを持つ `ddmFieldArray`：
+
+```json
+"ddmFieldArray" : [
+   {
+     "ddmFieldName" : "ddm__keyword__44012__Checkbox08350381_en_US",
+     "ddmFieldValueKeyword_en_US" : "true",
+     "ddmFieldValueKeyword_en_US_String_sortable" : "true",
+     "ddmValueFieldName" : "ddmFieldValueKeyword_en_US"
+   }
+],
+```
+
+お使いのバージョンによっては、DDMフィールドの [ネストされたフィールドストレージ](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) がElasticsearchのデフォルトで有効になっている場合があります：
+
+| Liferayのバージョン    | ネストされたフィールドはデフォルトで有効 |
+|:---------------- |:-------------------- |
+| 7.4 すべてのアップデート   | &#10004;             |
+| 7.3 すべてのアップデート   | &#10004;             |
+| DXP 7.2 SP3/FP8+ | &#10008;             |
+
+動作を変更するには、システム設定 &rarr; Dynamic Data Mapping Indexer の **Enable Legacy Dynamic Data Mapping Index Fields** の設定を使用します。
+
+カスタムフィルタウィジェットでWebコンテンツ構造フィールドを使用する例については、 [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) を参照してください。
+
+## 関連トピック
+
+[カスタムフィルターの例](./custom-filter-examples.md)
+
+[結果ランキング](../../search-administration-and-tuning/result-rankings.md)
+
+[同義語セット](../../search-administration-and-tuning/synonym-sets.md)

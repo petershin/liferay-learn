@@ -78,7 +78,7 @@ if (categoryName.equals("legal")) {
 }
 ```
 
-## 追加情報
+## 関連トピック
 
 * [ワークフローの管理](../managing-workflows.md)
 * [ワークフローノード](./workflow-nodes.md)

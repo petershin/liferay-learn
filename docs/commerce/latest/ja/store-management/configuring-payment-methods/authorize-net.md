@@ -68,7 +68,7 @@ Authorize.netを支払方法としてアクティブ化するには：
 1. ［**保存**］ をクリックします。
 1. ［**Authorize.Net**］ の隣にある **3ドットアイコン** をクリックし、次に ［**有効にする**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [新しい通貨の追加](../currencies/adding-a-new-currency.md)
 * [Mercanet](./mercanet.md)

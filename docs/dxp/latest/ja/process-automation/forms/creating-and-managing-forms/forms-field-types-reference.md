@@ -215,6 +215,6 @@ Liferay 7.4以降の［ロケーションの検索］フィールドを使用し
 
 詳細については、 [検索場所フィールドを使う](using-the-search-location-field.md)を参照してください。
 
-## 追加情報
+## 関連トピック
 
 - [フォームの作成](./creating-forms.md)

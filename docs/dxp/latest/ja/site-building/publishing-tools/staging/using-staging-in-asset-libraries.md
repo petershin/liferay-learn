@@ -22,7 +22,7 @@ Stagingが有効なサイトは、Stagingが有効でないAsset Librariesに接
 
 ステージング環境で変更が行われると、それらは一度にすべて、または一度に1つずつ公開できます。 [サイト](./site-staging-ui-reference.md#publish-to-live) と同様に、 [シンプル](./site-staging-ui-reference.md#simple-publishing) または [高度な](./site-staging-ui-reference.md#advanced-publishing) 公開設定オプションを使用できます。
 
-## 追加情報
+## 関連トピック
 
 * [ステージングの概要](../staging.md)
 * [アセットライブラリの概要](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)

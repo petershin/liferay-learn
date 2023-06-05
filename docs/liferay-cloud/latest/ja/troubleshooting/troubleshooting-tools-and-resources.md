@@ -144,7 +144,7 @@ Liferay Cloud の通知は、Liferay Enterprise サブスクリプションが�
 
 チケットを提出する際には、現在使用しているビルドイメージ、直面している動作や問題、問題を再現するための手順、実際の動作と期待される動作の両方の説明などの情報を提供してください。
 
-## 追加情報
+## 関連トピック
 
 * [Liferayクラウドサポートの概要](https://help.liferay.com/hc/ja/articles/360030208451-DXP-Cloud-Support-Overview)
 * [Liferay Cloud ナレッジベース](https://help.liferay.com/hc/ja/categories/360001132872)

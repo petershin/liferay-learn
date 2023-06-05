@@ -35,7 +35,7 @@ Liferay Job Schedulerは、LiferayのScheduler Engineの上に構築された柔
 
 [`DispatchConfigurator`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-service/src/main/java/com/liferay/dispatch/internal/messaging/DispatchConfigurator.java) クラスは、`DispatchMessageListener` の送信先、`executorService` のキューサイズとスレッドプール、`RejectedExecutionHandler` など、ジョブスケジューラーフレームワークのプロパティを定義します。
 
-## 追加情報
+## 関連トピック
 
 * [ジョブスケジューラーを使う](./using-job-scheduler.md)
 * [ジョブスケジューラーUIリファレンス](./job-scheduler-ui-reference.md)

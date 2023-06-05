@@ -112,7 +112,7 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 | TXN ID | これはトランザクションIDです。                                      |
 | 量      | これは注文の合計金額を指します。                                      |
 
-## 追加情報
+## 関連トピック
 
 * [サブスクリプションを有効にする](../../product-management/creating-and-managing-products/products/enabling-subscriptions-for-a-product.md)
 * [サブスクリプションの管理](./managing-subscriptions.md)

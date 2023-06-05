@@ -310,7 +310,7 @@ pending message count 0, sent message count 2
 
 これで、宛先でメッセージングを監視し、宛先設定を調整する方法がわかりました。 さまざまな設定をテストして、パフォーマンスを最適化できます。
 
-## 追加情報
+## 関連トピック
 
 * [非同期メッセージングの使用](./using-asynchronous-messaging.md)
 * [旧バージョンのデフォルトの同期メッセージングを使用する](./using-default-synchronous-messaging-in-previous-versions.md)

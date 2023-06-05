@@ -108,7 +108,7 @@
 
 ![既存のドキュメントが更新されたときに送信されるメールを作成します。](./documents-and-media-ui-reference/images/16.png)
 
-## 追加情報
+## 関連トピック
 
 * [ドキュメントとメディア](../documents-and-media.md)
 * [サイトのページやコンテンツをエクスポート/インポートする](../../site-building/sites/exporting-importing-site-pages-and-content.md)

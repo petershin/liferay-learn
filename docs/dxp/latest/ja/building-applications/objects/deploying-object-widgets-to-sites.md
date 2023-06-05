@@ -42,7 +42,7 @@
 
 利用可能なオプションは、ウィジェットが[コンテンツページ](../../site-building/creating-pages/using-content-pages/using-widgets-on-a-content-page.md)または[ウィジェットページ](../../site-building/creating-pages/using-widget-pages.md)にデプロイされるかどうかに依存します。
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)
 * [オブジェクトエントリの表示](./displaying-object-entries.md)

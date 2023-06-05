@@ -61,7 +61,7 @@
 
 注文ワークフローを無効にするには、［**ワークフロー** なし］オプションを選択し、［**保存**］をクリックします。
 
-## 追加情報
+## 関連トピック
 
 すぐに使える **シングル承認者（バージョン1**） は、利用可能な注文ワークフローです。 [ワークフローの概要](https://learn.liferay.com/dxp/latest/ja/process-automation/workflow/introduction-to-workflow.html) を作成して、 **注文ワークフロー** タブで選択できます。
 

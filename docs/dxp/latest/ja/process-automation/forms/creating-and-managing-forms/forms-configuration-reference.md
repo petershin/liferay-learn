@@ -105,6 +105,6 @@ com.liferay.dynamic.data.mapping.form.web.internal.configuration.DDMFormWebConfi
 | アップロードフィールドの最大繰り返し（`maximumRepetitionsForUploadFields`）         | フィールドが反復可能に設定されている場合、ユーザーがフォームにフィールドを追加できる最大回数を設定します（ゲストユーザーとログインユーザーに同じように適用されます）。 デフォルトでは5に設定されています。                                                                                      |
 | ゲストアップロードフィールドの最大送信数 (`maximumSubmissionsForGuestUploadFields`) | ゲストユーザーがゲスト対応のアップロードフィールドを含むフォームを送信できる最大回数を設定します。 ゲストユーザーのIPアドレスは、送信数の記録のために使用されます。 デフォルトでは5に設定されています。                                                                                      |
 
-## 追加情報
+## 関連トピック
 
 * [フォーム権限リファレンス](./forms-permissions-reference.md)

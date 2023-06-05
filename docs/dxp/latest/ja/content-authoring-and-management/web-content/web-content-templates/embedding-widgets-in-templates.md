@@ -44,6 +44,6 @@ FreeMarker のコンテキストに `theme` 変数が注入されなくなりま
 
 ![テンプレートの編集ページを表示すると、テンプレートキーを確認できます。](./embedding-widgets-in-templates/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [Embedding a Portlet by Portlet Name](https://help.liferay.com/hc/articles/360028746512-Embedding-a-Portlet-by-Portlet-Name)

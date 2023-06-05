@@ -20,7 +20,7 @@ PublicationsはLiferayの [Workflow](../../../process-automation/workflow/introd
 
 ![同じエンティティに対する追加の編集は、出版物の個別の変更として追跡されます。](./using-workflow-with-publications/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [ワークフローの概要](../../../process-automation/workflow/introduction-to-workflow.md)
 * [パブリケーションの作成と管理](./creating-and-managing-publications.md)

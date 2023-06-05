@@ -19,7 +19,7 @@ Liferay Commerceには、いくつかの通貨が事前設定されており、�
 | 重要度         | 通貨が表に表示される順序。数字が大きいほど、下に表示されます                                                                                                                                 |
 | 有効          | この通貨を有効にするトグル                                                                                                                                                  |
 
-## 追加情報
+## 関連トピック
 
 * [新しい通貨の追加](./adding-a-new-currency.md)
 * [Mercanet](../configuring-payment-methods/mercanet.md)

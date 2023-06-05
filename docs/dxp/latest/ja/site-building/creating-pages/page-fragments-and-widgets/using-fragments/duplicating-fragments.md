@@ -24,7 +24,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントの使用](../using-fragments.md)
 * [フラグメントの設定](../using-fragments/configuring-fragments.md)

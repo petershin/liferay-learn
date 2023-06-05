@@ -112,7 +112,7 @@ Liferay DXPのマイナーバージョンのアップデートには、プロジ
    
 更新された `liferay` サービスは、最終的なデプロイメントの後、希望する数のノードで再起動します。
 
-## 追加情報
+## 関連トピック
 
 * [Liferayサービスへのデプロイ](./deploying-to-the-liferay-service.md)
 * [Hotfixのインストール](./deploying-to-the-liferay-service.md#deploying-hotfixes)

@@ -58,7 +58,7 @@
 
 ファイルのバージョンについては、 [ファイルのチェックアウトと編集](../publishing-and-sharing/managing-document-access/managing-document-changes-with-checkout.md) を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [ドキュメントとメディア](../../documents-and-media.md)
 * [ファイルのアップロード](./uploading-files.md)

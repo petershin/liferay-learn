@@ -54,7 +54,7 @@
 
 新しい配送オプションが追加され、精算プロセスで利用可能になりました。
 
-## 追加情報
+## 関連トピック
 
 * [可変レート配送方法を使う](./using-the-variable-rate-shipping-method.md)
 * [FedExを運送業者の方法として使用する](./using-the-fedex-shipping-method.md)

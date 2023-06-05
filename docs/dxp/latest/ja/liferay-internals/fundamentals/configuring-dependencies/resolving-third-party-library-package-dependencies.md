@@ -47,7 +47,7 @@ Liferay DXPはWARをデプロイするときに、それを [WAB](https://docs.o
 
 　 非OSGi JARからのパッケージへの依存関係を解決しました。
 
-## 追加情報
+## 関連トピック
 
 * [パッケージのインポート](../importing-packages.md)
 * [パッケージのエクスポート](../exporting-packages.md)

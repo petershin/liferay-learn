@@ -6,8 +6,6 @@ Analytics Cloudの [Recommendation API](../../optimization/content-recommendatio
 現在、インタレスト・トピックは英語版のみ対応しています。 英語以外のコンテンツはフィルタリングされています。
 ```
 
-<a name="understanding-interests" />
-
 ## 興味のあるトピックの理解
 
 人々が興味を持っているトピックを見つけることで、製品やサービスを彼らに関連付けることができます。 Analytics Cloud の Interests インサイトは、これらの情報を提供する豊富でわかりやすいビジュアルで力を与えてくれます。
@@ -27,18 +25,18 @@ Analytics Cloudの [Recommendation API](../../optimization/content-recommendatio
 
 いずれにしても、利害関係者の洞察力は、新しいビジネスを生み出すのに役立ちます。 関心度インサイトでは、顧客が最も訪問するページやアセットによって言及されている最も一般的なトピックを知ることができます。
 
-<a name="adding-keywords-to-the-block-list" />
+<!--- 
+## Adding Keywords to the Block List
 
-## ブロックリストにキーワードを追加
+Follow these steps to add a keyword to the block list:
 
-キーワードをブロックリストに追加するには、以下の手順に従ってください。
+1. In Analytics Cloud, select Settings → Interest Topics. A table lists any existing keywords in the block list.
 
-1. Analytics Cloudで、［設定］→［興味のあるトピック］を選択します。 ブロックリストに既存のキーワードがあれば、テーブルに一覧表示されます。
+1. Click Add Keyword and enter one or more keywords in a comma-delimited list.
 
-1. ［Add Keyword］ をクリックして、1つまたは複数のキーワードをカンマ区切りで入力します。
+1. Click Send when you're finished. Your keywords then appear in the table.
 
-1. 入力が終わったら［送信］をクリックします。 キーワードが表に表示されます。
+To delete a keyword from the block list, click that keyword's trash icon (![Delete](../../images/icon-delete.png)). To delete multiple keywords at once, select the checkbox for each and click the trash icon that appears at the top of the table. You can select all keywords via the checkbox at the top of the table.
 
-ブロックリストからキーワードを削除するには、そのキーワードのゴミ箱アイコンをクリックします（![Delete](../../images/icon-delete.png)）。 複数のキーワードを一度に削除するには、それぞれのチェックボックスを選択し、表の上部に表示されるゴミ箱のアイコンをクリックします。 表の上部にあるチェックボックスですべてのキーワードを選択することができます。
-
-![キーワード管理画面です。](managing-interest-topics/images/01.png)
+![The keyword management screen.](managing-interest-topics/images/01.png)
+--->

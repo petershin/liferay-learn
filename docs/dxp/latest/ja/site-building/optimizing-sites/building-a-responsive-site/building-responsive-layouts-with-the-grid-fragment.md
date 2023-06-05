@@ -34,7 +34,7 @@ Liferay DXPではデフォルトで[レスポンシブデザインが使用](./b
 選択したグリッドフラグメント設定を保存して、他のコンテンツページで再利用できます。 詳細については、 [フラグメント構成の保存](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md) を参照してください。
 ```
 
-## 追加情報
+## 関連トピック
 
 - [レスポンシブサイトの構築の概要](./building-a-responsive-site.md)
 - [フラグメント構成の保存](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md)

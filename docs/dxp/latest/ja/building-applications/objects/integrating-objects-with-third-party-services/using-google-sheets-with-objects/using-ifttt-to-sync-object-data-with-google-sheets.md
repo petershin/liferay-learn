@@ -70,7 +70,7 @@
 
     ![エントリーが追加されるたびに、webhookエンドポイントにリクエストを送信するアクションを定義します。](./using-ifttt-to-sync-object-data-with-google-sheets/images/15.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクト](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)

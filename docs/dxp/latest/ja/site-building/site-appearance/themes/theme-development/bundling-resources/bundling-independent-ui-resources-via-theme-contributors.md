@@ -120,7 +120,7 @@ body, #wrapper {
 
 　 CSSスタイルを変更したテーマコントリビューターを作成しました。 [スタイルブック](../../../style-books/using-a-style-book-to-standardize-site-appearance.md)を使用して、サイトのページに特定のスタイル変更を適用することもできます。
 
-## 追加情報
+## 関連トピック
 
 * [テーマレットを介したリソースのバンドルとテーマへのインストール](./bundling-and-installing-resources-into-your-theme-via-themelets.md)
 * [テーマの概要](../../introduction-to-themes.md)

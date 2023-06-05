@@ -493,7 +493,7 @@ HTMLでこのコレクションを参照するには、JSONの設定でコレク
 
 ![カラーパレットの設定は、色の選択が必要な場合に便利です。](./fragment-configuration-types-reference/images/03.png)
 
-## 追加情報
+## 関連トピック
 
 - [フラグメントの開発](../../developing-page-fragments/developing-fragments-intro.md)
 - [フラグメント固有のタグリファレンス](./fragment-specific-tags-reference.md)

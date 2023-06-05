@@ -129,7 +129,7 @@
 | 現在ユーザーの ID     | `[%CURRENT_USER_ID%]`            |
 | 現在ユーザーの接尾辞     | `[%CURRENT_USER_SUFFIX%]`        |
 
-## 追加情報
+## 関連トピック
 
 * [メールの設定](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
 * [メール設定](../../system-administration/configuring-liferay/virtual-instances/email-settings.md)

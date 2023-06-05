@@ -45,6 +45,6 @@ For users interested in adding other shipping methods or carriers, see [Implemen
 
 <br></br>
 
-## 追加情報
+## 関連トピック
 
 * [出荷の概要](../order-management/shipments/introduction-to-shipments.md)

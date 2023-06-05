@@ -58,7 +58,7 @@ Liferayのシステムは、設定された [チェック間隔](#configuring-th
 
 1. 完了したら、 ［**保存**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [ファイルのアップロード](./uploading-files.md)
 * [ドキュメントとメディア](../../documents-and-media.md)

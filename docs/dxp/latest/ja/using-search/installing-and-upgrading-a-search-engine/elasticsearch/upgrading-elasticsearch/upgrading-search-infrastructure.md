@@ -125,7 +125,7 @@ Groovyインポートスクリプトを実行するには、
 
 1. 同義語セットと結果ランキングをテストして、すべてが期待通りに動作していることを確認してください。
 
-## 追加情報
+## 関連トピック
 
 * [Elasticsearchのアップグレード](../getting-started-with-elasticsearch.md)
 * [Elasticsearchを開始する](../getting-started-with-elasticsearch.md)

@@ -40,7 +40,7 @@
 また、プロジェクト環境のすべてのビルドとデプロイメントのアクティビティは、［Builds］および［Deployments］ページで確認できます。 これらのページについては、[Liferay Cloud デプロイメントワークフローの概要](../build-and-deploy/overview-of-liferay-cloud-deployment-workflow.md) を参照してください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [環境のチームとロール](./environment-teams-and-roles.md)
 * [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)

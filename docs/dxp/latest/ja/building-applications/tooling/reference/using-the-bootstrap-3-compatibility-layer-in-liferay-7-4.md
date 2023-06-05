@@ -54,7 +54,7 @@ atlasテーマ変数を必要 **としない** 場合は、代わりに以下を
 
 Bootstrap 3互換性レイヤーがテーマに含まれるようになり、Liferay DXP 7.4 GA1で機能するようになりました。 次の作業は、プロジェクトのコードを変更して、Bootstrap 3 への依存を解消することです。
 
-## 追加情報
+## 関連トピック
 
 * [テーマのアップグレード](../../../site-building/site-appearance/themes/upgrading-a-theme.md)
 * [7.4で廃止予定の機能](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4)

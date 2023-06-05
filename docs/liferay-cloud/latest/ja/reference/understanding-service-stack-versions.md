@@ -55,7 +55,7 @@ liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
 サービススタックをバージョン `4.x.x` にアップグレードすることで、最新の改善点を利用することができます。 アップグレードの実行手順は、[Liferay Cloud Stack のアップグレード](./upgrading-your-liferay-cloud-stack.md) をご覧ください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Cloud プロジェクト バージョン 4 での変更点](./liferay-cloud-project-changes-in-version-4.md)
 * [Liferayクラウドスタックのアップグレード](./upgrading-your-liferay-cloud-stack.md)

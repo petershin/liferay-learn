@@ -25,9 +25,9 @@ Commerce 2.0 または 2.1 を使用している場合、在庫管理オプシ�
 
 1. **追加**(![Add Button](../images/icon-add.png)) をクリックし、SKU、倉庫、数量を入力します。 例えば、
 
-   * **［SKU**］ : CHINAWARE-GRAY
-   * **［Warehouse**］ : United States - Southwest
-   * **［Quantity**］ ：120
+   * **［SKU］** : CHINAWARE-GRAY
+   * **［Warehouse］** : United States - Southwest
+   * **［Quantity］** ：120
 
    ![新しい在庫商品のSKU、倉庫、数量を入力します。](./using-the-inventory-management-system/images/01.png)
 
@@ -118,7 +118,7 @@ ChangelogページでSKUの在庫の変化を確認することができます�
 
 ![選択したSKUのインベントリに関連するさまざまなイベントを表示します。](./using-the-inventory-management-system/images/07.png)
 
-## 追加情報
+## 関連トピック
 
 * [在庫管理リファレンスガイド](./inventory-management-reference-guide.md)
 * [倉庫リファレンスガイド](./warehouse-reference-guide.md)

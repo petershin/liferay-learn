@@ -1,6 +1,6 @@
-# カスタムファセット設定
+# カスタムファセット
 
-カスタムファセットは、すぐに使用できる検索ファセットの中でもユニークなものです。 結果を単一の静的フィールド（更新日やアセットタイプなど）でグループ化するのではなく、カスタムファセットを使用して結果をグループ化するフィールドを選択します。 さらにカスタマイズして、まったく新しいファセットを作成できます。
+カスタムファセットは、標準機能の検索ファセットの中でもユニークなものです。 結果を単一の静的フィールド（更新日やアセットタイプなど）でグループ化するのではなく、カスタムファセットを使用して結果をグループ化するフィールドを選択します。 さらにカスタマイズして、まったく新しいファセットを作成できます。
 
 ## カスタムファセットの設定
 
@@ -18,7 +18,7 @@
 
 1. オプションの設定が終了したら、 ［**保存**］ ボタンをクリックします。
 
-**ディスプレイの設定：** **デフォルト** 、 **コンパクトレイアウト** 、 **ラベルレイアウト** の中から選択します。 デフォルトのレイアウトでは、各用語の横にチェックボックスが表示されますが、コンパクトレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。
+**ディスプレイの設定：****デフォルト** 、 **コンパクトレイアウト** 、 **ラベルレイアウト** の中から選択します。 デフォルトのレイアウトでは、各用語の横にチェックボックスが表示されますが、コンパクトレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。
 
 詳細設定には、追加のオプションが含まれています。
 
@@ -32,7 +32,7 @@
 
 **頻度の閾値：** 用語がファセット用語のリストに表示されるために必要な最小頻度を設定します。 たとえば、ファセットの頻度の閾値が3に設定されている場合、一致する結果が2つの用語は用語結果リストに表示されません。
 
-**Order Terms By:** Liferay 7.4 U60+/GA60+ では、ファセットのタームソート戦略を選択することができます。Term Frequency Descending (デフォルト) または Term Frequency Ascending。 デフォルトのソートでは、ファセット用語のマッチ数が多いものから少ないものへと並べ替えられます。
+**用語の並べ替え順序：** Liferay 7.4 U60+/GA60+では、［用語頻度（降順）］（デフォルト）、［用語頻度（昇順）］からファセット用語のソート戦略を選択することができます。 デフォルトのソートでは、ファセット用語の一致数が多いものから少ないものへと並べ替えられます。
 
 **表示頻度：** 用語頻度を表示するかどうかを選択します。
 
@@ -139,29 +139,67 @@ GET /liferay-20097/_mapping/field/*.raw
 
 カスタムフィールドを検索可能に設定することは、エンティティが変更されたとき、または再インデックスがトリガーされたときに、フィールドの値がインデックスされることを意味します。 `java.lang.String` フィールドのみを検索可能にすることができます。
 
-## DDMのネストされたフィールドへのアクセス
+## ネストされたフィールドにアクセスする
 
-[7.3 Breaking Changes ドキュメント](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) で説明されているように、Liferay Dynamic Data Mapping フレームワークがいくつかのフィールドをインデックスする方法が変更されました。 以前は検索エンジンのドキュメントのルートにありましたが、現在はネストされたフィールドになっています。  この変更は、Liferay 7.3 と Liferay 7.2 SP3/FP8+ に影響します（ただし、システム設定 &rarr; Dynamic Data Mapping Indexer で **Enable Legacy Dynamic Data Mapping Index Fields** 設定が無効になっている場合のみです）。 最新のFix PackとGAリリースの7.3では、この変更はLiferayのSearch APIで説明されており、設定の更新は必要ありません。 したがって、Elasticsearch ドキュメントのルートにあった `ddm__text__*` または `ddm__keyword__*` という名前のフィールドに依存している Custom Facet ウィジェットがある場合、これらのフィールドは通常どおり Custom Facet の **Aggregation Field** 設定で使用し続けます。これらのフィールドがドキュメントのルートにない場合でも、Custom Facet の **Aggregation Field** 設定でこれらのフィールドを通常通り使用し続けます。
+オブジェクト定義フィールドとウェブコンテンツ構造フィールドは、Elasticsearchではネストされたフィールドとしてインデックスされます。
 
-既存のドキュメントのDDMフィールドをインデックスで探すには
+Liferay 7.4 U72/GA72+では、Custom FacetウィジェットのAggregation Fieldの設定でこれらのフィールドを使用することができます。 そのためには、これらの要素をピリオドで区切って入力します：
 
-```json
-GET liferay-20097/_search
-{
-  "query": {
-    "nested": {
-      "path": "ddmFieldArray",
-      "query": {
-        "wildcard":  { "ddmFieldArray.ddmFieldName": "ddm__keyword*" }
-      }
-    }
-  }
-}
+* 親フィールド
+
+* フィールド名を保持するフィールド名
+
+* 値を保持するフィールドの名前
+
+この例では、オブジェクトフィールドを参照しています：
+
+```
+nestedFieldArray.lastAccessed.value_date
 ```
 
-インデックス名パラメータの企業ID---`20097`---を、インスタンスの値に合わせて置き換えます。
+この例では、Web コンテンツ構造フィールドを参照しています：
 
-返されたドキュメントには、ネストされたコンテンツを持つ `ddmFieldArray` オブジェクトがあります。
+```
+ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_String_sortable
+```
+
+### Custom FacetでObject Definition Fieldsを使用する。
+
+{bdg-secondary}`7.4 u72+/ga72+`
+
+[オブジェクト定義](../../../building-applications/objects.md) フィールドをインデックス内の既存のドキュメントで見つけるには、検索結果ウィジェットの [結果をドキュメントフォームで表示](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
+
+文書には、 `nestedFieldArray` フィールドがあり、内容が入れ子になっています：
+
+```json
+"nestedFieldArray" : [
+   {
+     "fieldName" : "lastAcessed",
+     "valueFieldName" : "value_date",
+     "value_date" : "20230502000000"
+   },
+   {
+     "fieldName" : "immunityType",
+     "valueFieldName" : "value_keyword",
+     "value_keyword" : "diplomatic"
+   },
+   {
+     "fieldName" : "randomNumber",
+     "valueFieldName" : "value_integer",
+     "value_integer" : "19"
+   }
+],
+```
+
+Custom FacetウィジェットのAggregation Field構成でオブジェクトフィールドを使用するには、親フィールド（例： `nestedFieldArray`）、フィールド名を保持するフィールド名（例： `fieldName`）、値を保持するフィールド名（例： `value_date`）を指定します。 このパターンを使用します: `nestedFieldArray.[fieldName][valueFieldName]`.
+
+例えば、 `nestedFieldArray.lastAccessed.value_date`と入力すると、上の入れ子配列の `lastAccessed` の日付フィールドでソートできます。
+
+### Custom FacetでWeb Content Structure Fieldsを使用する。
+
+[ネストされたウェブコンテンツ構造（DDM）フィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) をインデックス内の既存文書で見つけるには、検索結果ウィジェットの [結果を文書フォームで表示](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
+
+文書には、 `ddmFieldArray` フィールドがあり、ネストされたコンテンツがあります：
 
 ```json
  "ddmFieldArray" : [
@@ -186,4 +224,14 @@ GET liferay-20097/_search
   ],
 ```
 
-これらのフィールドの1つをカスタムファセットで使用するには、カスタムファセット構成の `ddmFieldName` の値（例えば、 `ddm__keyword__40806__Testb5mx_en_US`）を **集約フィールド** に入力します。
+これらのフィールドをカスタムファセットで使用するには、ウィジェットの集計フィールドに `ddmFieldName` の値（例： `ddm__keyword__40806__Testb5mx_en_US`）を入力します。
+
+お使いのバージョンによっては、DDMフィールドの [ネストされたフィールドストレージ](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) がElasticsearchのデフォルトで有効になっている場合があります：
+
+| Liferayのバージョン    | ネストされたフィールドはデフォルトで有効 |
+|:---------------- |:-------------------- |
+| 7.4 すべてのアップデート   | &#10004;             |
+| 7.3 すべてのアップデート   | &#10004;             |
+| DXP 7.2 SP3/FP8+ | &#10008;             |
+
+動作を変更するには、システム設定 &rarr; Dynamic Data Mapping Indexer の **Enable Legacy Dynamic Data Mapping Index Fields** の設定を使用します。

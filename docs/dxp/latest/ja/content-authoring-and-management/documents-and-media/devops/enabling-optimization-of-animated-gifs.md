@@ -22,7 +22,7 @@
 
 1. 完了したら、 ［**Save**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [アダプティブメディアの仕組み](../publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md)
 * [サイトコンテンツでの適用された画像の使用](../publishing-and-sharing/serving-device-and-screen-optimized-media/using-adapted-images-in-site-content.md)

@@ -1,6 +1,7 @@
 ---
 toc:
   - ./channel-defaults/setting-channel-defaults.md
+  - ./channel-defaults/channel-defaults-permissions-reference.md
 ---
 # チャンネルのデフォルト
 
@@ -33,4 +34,8 @@ toc:
 :::{grid-item-card}  チャンネルデフォルトの設定
 :link: ./channel-defaults/setting-channel-defaults.md
 :::
+
+:::{grid-item-card}  チャンネルデフォルトパーミッションリファレンス
+:link: ./channel-defaults/channel-defaults-permissions-reference.md
+:::  
 ::::

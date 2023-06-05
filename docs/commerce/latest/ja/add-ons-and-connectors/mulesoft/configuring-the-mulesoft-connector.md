@@ -82,7 +82,7 @@ http://[host]:[port]/o/headless-commerce-admin-catalog/v1.0/openapi.json
 
 **接続テスト** をクリックします。 成功すると、コネクタを使用したフローの構築を開始できます。 そうでない場合は、設定を見直してください。
 
-## 追加情報
+## 関連トピック
 
 * [Muleのフローをデザインする](./designing-mule-flows.md)
 * [APIの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis.html)

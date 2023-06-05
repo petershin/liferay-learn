@@ -52,7 +52,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [アカウント管理](../account-management.md)
 * [新規アカウントの作成](./creating-a-new-account.md)

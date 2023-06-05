@@ -439,7 +439,7 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
 モデルを定義し、その永続コードとサービスコードを生成する方法がわかったので、生成されたサービスクラスを調べる必要があります。 [生成されたクラスの理解と拡張](./understanding-service-builder-generated-classes.md)に進んでください。
 
-## 追加情報
+## 関連トピック
 
 * [ローカルでサービスを呼び出す](./invoking-a-service-locally.md)
 * [Liferay Workspaceの概要](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)

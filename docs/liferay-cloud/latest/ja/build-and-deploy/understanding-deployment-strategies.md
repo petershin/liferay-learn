@@ -30,6 +30,6 @@ Recreate` 戦略で定義されたデプロイメントは、新しいバージ�
 }
 ```
 
-## 追加情報
+## 関連トピック
 
 * [デプロイタイプについて](./understanding-deployment-types.md)

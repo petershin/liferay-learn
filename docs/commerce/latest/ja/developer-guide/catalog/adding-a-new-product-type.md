@@ -269,6 +269,6 @@ c1n4-screen-navigation-entry=C1N4 Screen Navigation Entry
 
 　 これで、 `CPType`インターフェイスを実装するための基本を理解し、Liferay Commerceに新しい商品タイプとその独自のカスタム画面を追加しました。
 
-## 追加情報
+## 関連トピック
 
 * [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

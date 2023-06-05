@@ -82,7 +82,7 @@ module.framework.web.generator.generated.wabs.store.dir=${module.framework.base.
 
 WARプラグインをWABとしてデプロイでき、WABのコピーを保存して調べる方法が分かりました。
 
-## 追加情報
+## 関連トピック
 
 * [WABから除外されたJAR](./jars-excluded-from-wabs.md)
 * [サードパーティライブラリパッケージの依存関係の解決](../../liferay-internals/fundamentals/configuring-dependencies/resolving-third-party-library-package-dependencies.md)

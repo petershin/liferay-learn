@@ -151,6 +151,6 @@ location /static/ {
 
 ローカル環境で変更をテストし、その後Liferay Cloudに移行することができます。 詳しくは [Liferay Cloud](../migrating-to-liferay-cloud.md) への移行をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [Liferayクラウドスタックのアップグレード](./upgrading-your-liferay-cloud-stack.md)

@@ -55,7 +55,7 @@ DXPは、アダプティブメディアを使用して、ドキュメントと�
 
    ![Gogo シェルに移動します。](./migrating-documents-and-media-thumbnails/images/02.png)
 
-## 追加情報
+## 関連トピック
 
 * [画像解像度の管理](./managing-image-resolutions.md)
 * [アダプティブメディア設定リファレンス](./adaptive-media-configuration-reference.md)

@@ -83,7 +83,7 @@ Webコンテンツは頻繁に更新される傾向があるため、バージ�
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [ステージングの概要](../staging.md)
 * [公開プロセスを理解する](./understanding-the-publishing-process.md)

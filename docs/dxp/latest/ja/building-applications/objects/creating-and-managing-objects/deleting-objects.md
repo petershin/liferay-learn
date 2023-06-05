@@ -22,7 +22,7 @@ Liferay 7.4 U26/GA26 以前のバージョンでは、ユーザーは [公開オ
 
    ![オブジェクト定義の名前を入力し、 [Done]をクリックします。](./deleting-objects/images/02.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](./creating-objects.md)
 * [オブジェクトの有効化と無効化](./activating-and-deactivating-objects.md)

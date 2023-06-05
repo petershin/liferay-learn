@@ -74,7 +74,7 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEX__UPPERCASEX__UPPERCASEX__MINUS__N
 開発用の機能を本番で使用しない。 Liferayの不安定さは、dev機能フラグを有効にすることで予想される副作用です。 
 ```
 
-## 追加情報
+## 関連トピック
 
 * [セマンティック検索](../../using-search/liferay-enterprise-search/search-experiences/semantic-search.md)
 * [ベータ版の特徴](https://help.liferay.com/hc/ja/articles/12917247551757-Beta-Features)

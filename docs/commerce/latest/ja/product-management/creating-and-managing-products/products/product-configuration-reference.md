@@ -113,7 +113,7 @@ SKUは、商品のバリアントを表します。 詳しくは、 [商品バ�
 
 See [Virtual Product Reference](./../product-types/virtual-product-reference.md) -->
 
-## 追加情報
+## 関連トピック
 
 * [シンプル商品を作成する](../product-types/creating-a-simple-product.md)
 * [グループ商品の作成](../product-types/creating-a-grouped-product.md)

@@ -194,6 +194,6 @@ q4f7-commerce-product-content-renderer=Q4F7 Commerce Product Content Renderer
 
 　 `CPContentRenderer`インターフェイスを実装するための基本を理解し、Liferay Commerceに新しい商品コンテンツレンダラーを追加しました。
 
-## 追加情報
+## 関連トピック
 
 * [アプリケーションのローカライズ](https://help.liferay.com/hc/ja/articles/360018168251-Localizing-Your-Application)

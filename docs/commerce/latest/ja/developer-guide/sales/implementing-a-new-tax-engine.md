@@ -146,7 +146,7 @@ this-tax-engine-serves-a-fixed-x-percent-flat-tax-rate=This tax engine serves a 
 
 　 `CommerceTaxEngine`インターフェイスを実装するための基本を理解し、Liferay Commerceに新しい税エンジンを追加しました。
 
-## 追加情報
+## 関連トピック
 
 * [MVCポートレットでのローカライズされたメッセージの使用](https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/using-localized-messages-in-an-mvc-portlet.html)
 * [税計算のためのレート設定](../../pricing/configuring-taxes/setting-rates-for-tax-calculations.md)

@@ -51,7 +51,7 @@
 * **[フラグメントエディターを使う](./using-the-fragments-editor.md) UIで使う** : エディターのHTMLウィンドウで変更する
 * **[Fragments Toolkit の使用](./using-the-fragments-toolkit.md)** : フラグメントの `index.html` ファイルを変更する。
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントの開発](./developing-fragments-intro.md)
 * [フラグメントエディターの使用](./using-the-fragments-editor.md)

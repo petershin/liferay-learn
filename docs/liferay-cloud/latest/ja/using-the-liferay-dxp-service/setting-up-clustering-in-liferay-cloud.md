@@ -67,7 +67,7 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 
 `（3）[liferay-68b8f6b48d-r8r5f-29669、liferay-68b8f6b48d-gzsg4-48301、liferay-68b8f6b48d-hdj9t-17435]` は、 `（3）` ノードがクラスターの一部であることを、ノードのIDと共に示しています。 このリストには、スレーブノードに加えてマスターノードが含まれます。
 
-## 追加情報
+## 関連トピック
 
 * [オートスケーリング](../manage-and-optimize/auto-scaling.md)
 * [Liferay DXPサービスの紹介](../using-the-liferay-dxp-service.md)

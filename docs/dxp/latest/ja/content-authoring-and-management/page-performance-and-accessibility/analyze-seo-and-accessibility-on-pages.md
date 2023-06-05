@@ -133,7 +133,7 @@ SEOの問題：
 | このページは監査できません   | 監査しようとしているページは、一般に公開されていません。                                                                                                                                                                                                                       |
 | 予期しないエラーが発生しました | これは一般的なエラーです。 ページ監査ツールが正しく構成されていること、および監査するページにインターネットからアクセスできることを確認してください。                                                                                                                                                                        |
 
-## 追加情報
+## 関連トピック
 
 - [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
 - [PageSpeed Insights API を使ってみる](https://developers.google.com/speed/docs/insights/v5/get-started)

@@ -75,7 +75,7 @@ Liferayのパブリッシングツールは、次のようなタイプのペー�
 コンテンツページは、Stagingの[ページバリエーション](./staging/page-versioning.md)機能には対応していません。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [公開ツール](../publishing-tools.md)
 * [公開](./publications.md)

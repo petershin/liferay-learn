@@ -81,7 +81,7 @@
 
     ![ワークフローの削除](./managing-workflows/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [XMLワークフロー定義の作成](../developer-guide/crafting-xml-workflow-definitions.md)
 * [ワークフローデザイナーの概要（サブスクリプション）](./workflow-designer/workflow-designer-overview.md)

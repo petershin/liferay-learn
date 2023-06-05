@@ -85,7 +85,7 @@ Liferayでは、ドキュメントタイプは、ファイルをアップロー�
 
 ![ピクチャードキュメントの新規作成](./defining-document-types/images/13.png)
 
-## 追加情報
+## 関連トピック
 
 * [ドキュメントとメディア](../../../documents-and-media.md)
 * [メタデータセットの定義](./defining-metadata-sets.md)

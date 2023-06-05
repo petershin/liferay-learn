@@ -74,7 +74,7 @@
 
    ![インポートタブに移動して、複数のサイトテンプレートを含むLARファイルをインポートします。](./exporting-importing-site-templates/images/07.png)
 
-## 追加情報
+## 関連トピック
 
 * [サイトテンプレート](../site-templates.md)
 * [サイトテンプレートの作成](./creating-site-templates.md)

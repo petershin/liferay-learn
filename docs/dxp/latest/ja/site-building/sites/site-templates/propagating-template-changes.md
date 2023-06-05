@@ -71,7 +71,7 @@ After encountering a conflict, follow these steps to restore automatic propagati
 
 1. Click the **Reset and Propagate** button to reset the merge fail count and attempts to propagate your site's changes again. -->
 
-## 追加情報
+## 関連トピック
 
 * [サイトテンプレート](../site-templates.md)
 * [サイトテンプレートプロパゲーションの設定](./configuring-site-template-propagation.md)

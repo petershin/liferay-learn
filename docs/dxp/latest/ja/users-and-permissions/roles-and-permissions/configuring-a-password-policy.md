@@ -125,6 +125,6 @@ passwords.default.policy.min.symbols=1
 | `パスワード.デフォルト.ポリシー.リセット.チケット.最大.年齢`      | 86400                    | パスワードリセットリンクの有効期間。 時間の単位は秒                                      |
 | `パスワード.デフォルト.ポリシー.警告.時間`                | 86400                    | パスワードの有効期限が切れる前に、ユーザーに通知する時間を指定します。 時間の単位は秒                     |
 
-## 追加情報
+## 関連トピック
 
 * [認証の基本](../../installation-and-upgrades/securing-liferay/authentication-basics.md)

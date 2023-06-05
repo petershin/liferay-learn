@@ -127,7 +127,7 @@ Webコンテンツの場所を設定するには、ブラウザと現在地を�
 
 ![アセットパブリッシャーは、位置情報が設定されたアセットを地図に表示できます。](./geolocating-assets/images/14.png)
 
-## 追加情報
+## 関連トピック
 
 * [アセットの自動タグ付けの設定](./auto-tagging/configuring-asset-auto-tagging.md)
 * [コンテンツのタグ付けとタグの管理](./tagging-content-and-managing-tags.md)

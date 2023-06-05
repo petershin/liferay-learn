@@ -83,7 +83,7 @@ Liferay Cloudのコンソールから、サービスの環境変数を追加・�
 
 機密性の高い変数値（ログイン認証情報など）を保存するには、シークレットを使用することができます。 シークレットはバックエンドで暗号化され、 **管理者** 役割がないユーザーから非表示にすることができます。 また、通常の環境変数は値を確保するために [シークレットを参照](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md#referencing-secrets-from-environment-variables) することができます。 詳しくは、 [シークレットで安全な環境変数を管理](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [LCP.jsonによるコンフィギュレーション](../reference/configuration-via-lcp-json.md)
 * [シークレットで安全な環境変数を管理](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)

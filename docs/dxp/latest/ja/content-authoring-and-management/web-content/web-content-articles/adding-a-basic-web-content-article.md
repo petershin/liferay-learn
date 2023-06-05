@@ -67,7 +67,7 @@ Webコンテンツは、サイトコンテンツを作成するための最も�
 | **関連するアセット** | 必要に応じて、関連するアセットを選択するために使用します。                       |                                                                                                                                                              |
 | **権限の設定** | 記事に固有のゲストまたはサイトメンバーの権限を設定するために使用します。                | ［More Options］をクリックすると、記事を閲覧できる人が表示されます。 詳細は、[ロールと権限](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)を参照してください。 |
 
-## 追加情報
+## 関連トピック
 
 * [表示ページテンプレートの作成と管理](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)
 * [Introduction to Web Content Structures](../web-content-structures/understanding-web-content-structures.md)

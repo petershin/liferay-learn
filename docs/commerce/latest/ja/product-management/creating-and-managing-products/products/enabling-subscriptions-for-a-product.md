@@ -59,7 +59,7 @@ Liferay Commerceでは、[ Simple ](../product-types/creating-a-simple-product.m
 
 ![支払と配送のサブスクリプションの詳細は、商品詳細ウィジェットに表示されます。](./enabling-subscriptions-for-a-product/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [サブスクリプションの管理](../../../order-management/subscriptions/managing-subscriptions.md)
 * [サブスクリプション管理リファレンスガイド](../../../order-management/subscriptions/subscription-administration-reference-guide.md)

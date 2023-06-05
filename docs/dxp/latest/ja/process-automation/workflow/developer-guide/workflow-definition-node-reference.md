@@ -224,7 +224,7 @@ XOR 結合は、1つの重要な点で結合とは異なります。それは、
 </task>
 ```
 
-## 追加情報
+## 関連トピック
 
 * [XMLワークフロー定義の作成](./crafting-xml-workflow-definitions.md)
 * [ワークフロータスクノードリファレンス](./workflow-task-node-reference.md)

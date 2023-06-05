@@ -252,7 +252,7 @@ Sales AgentはLiferay Commerceの通常のロールであり、割り当てユ�
 | 組織を管理         | 組織を追加または削除する機能                 |
 | 利用可能なアカウントを管理 | Sales Agentが加入しているアカウントを管理する機能 |
 
-## 追加情報
+## 関連トピック
 
 * [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [注文管理権限のリファレンス](./order-management-permissions.md)

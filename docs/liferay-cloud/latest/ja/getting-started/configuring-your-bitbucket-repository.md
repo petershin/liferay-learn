@@ -189,7 +189,7 @@ Liferay Cloud があなたのブランチに適切にリンクできるように
 
 1. リンクが正しいBitBucketページにリダイレクトすることを確認します。
 
-## 追加情報
+## 関連トピック
 
 * [GitHubリポジトリの設定](./configuring-your-github-repository.md)
 * [GitHubリポジトリの設定](./configuring-your-gitlab-repository.md)

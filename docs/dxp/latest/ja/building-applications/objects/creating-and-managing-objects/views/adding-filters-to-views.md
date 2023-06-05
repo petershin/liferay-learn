@@ -32,7 +32,7 @@
 
 ![ユーザーは、追加されたフィールドを使用してエントリーをフィルタリングすることができます。](./adding-filters-to-views/images/03.png)
 
-## 追加情報
+## 関連トピック
 
 * [ビュー](../views.md)
 * [オブジェクトビューの設計](./designing-object-views.md)

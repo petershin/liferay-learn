@@ -90,7 +90,7 @@ Liferayサポートチームはお客様と協力して、問題が製品にあ�
 
 　 DXPのインストールにホットフィックスを適用しました。
 
-## 追加情報
+## 関連トピック
 
 * [DockerでDXPにパッチを適用する](../installing-liferay/using-liferay-docker-images/patching-dxp-in-docker.md)
 * [パッチ情報の取得](./reference/getting-patch-information.md)

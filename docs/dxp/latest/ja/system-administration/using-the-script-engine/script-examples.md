@@ -129,7 +129,7 @@ out.println(outputFile.text)
 
 　 スクリプトコンソールでさまざまなスクリプトを実行しました。
 
-## 追加情報
+## 関連トピック
 
 * [スクリプトコンソールからのスクリプトの実行](./running-scripts-from-the-script-console.md)
 * [ワークフローでのスクリプトエンジンの使用](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)

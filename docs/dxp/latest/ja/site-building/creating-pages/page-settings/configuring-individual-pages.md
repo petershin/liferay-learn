@@ -183,7 +183,7 @@ Open Graph `<meta>` タグは、認証されていないユーザーに対して
 
 ![プロパティとコンテンツ項目を使用して、ページの見出しにカスタムメタタグを追加します。](./configuring-individual-pages/images/24.png)
 
-## 追加情報
+## 関連トピック
 
 * [サイトにページを追加する](./../adding-pages/adding-a-page-to-a-site.md)
 * [コンテントページの使用](../using-content-pages.md)

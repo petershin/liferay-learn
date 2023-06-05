@@ -105,7 +105,7 @@
 
    ![ホームページの下部にWebサーバーのノードが表示されていることを確認します。](./deploying-changes-via-the-liferay-cloud-console/images/09.png)
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Cloud 開発ワークフローの概要](./overview-of-the-liferay-cloud-deployment-workflow.md)
 * [CLIツールによる変更点のデプロイ](./deploying-changes-via-the-cli-tool.md)

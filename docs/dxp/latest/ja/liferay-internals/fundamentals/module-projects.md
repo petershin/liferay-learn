@@ -263,7 +263,7 @@ Bndは`bnd.bnd`ファイルからすべてのヘッダーをプロパゲート�
 モジュールのライフサイクルの詳細については、[モジュールのライフサイクル](../architecture/module-lifecycle.md)を参照してください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [OSGiサービスとしてのAPI](./apis-as-osgi-services.md)
 * [OSGiサービスの使用](./using-an-osgi-service.md)

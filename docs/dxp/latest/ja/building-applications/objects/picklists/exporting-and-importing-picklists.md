@@ -26,7 +26,7 @@ Liferayのexport/importフレームワークを使って、環境間でピック
 
    ![リストの名前を入力し、インポートするピックリストを選択します。](./exporting-and-importing-picklists/images/03.png)
 
-## 追加情報
+## 関連トピック
 
 * [選択リストの使用](./using-picklists.md)
 * [候補リストAPIの基本](./picklists-api-basics.md)

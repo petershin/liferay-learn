@@ -98,7 +98,7 @@ CSSクラス]テキストボックスには、自分で追加したCSSクラス�
 
 ![コンテナのcontent-visibilityをautoに設定することで、ページロードのパフォーマンスを向上させることができます。](./advanced-settings-reference/images/06.png)
 
-## 追加情報
+## 関連トピック
 
 * [一般設定リファレンス](./general-settings-reference.md)
 * [フラグメントの使用](../../using-fragments.md)

@@ -174,7 +174,7 @@ Liferay DXP 7.1 と 7.2 では、*Product Menu* を開き、*Site* &rarr; *Site 
 
     ![Flexの表示オプションを使用してスタイルを設定するページ要素をグループ化したコンテナを選択します。](./saving-fragment-compositions/images/20.png)
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントの使用](../using-fragments.md)
 * [フラグメントの管理](./managing-fragments.md)

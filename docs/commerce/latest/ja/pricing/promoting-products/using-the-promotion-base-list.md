@@ -42,7 +42,7 @@
 プロモーション価格でSKUをターゲットにするもう一つの方法は、*グローバルメニュー* ((![Applications Menu icon](../../images/icon-applications-menu.png)) を開いて*Commerce* &rarr; *Products*に移動することです。 製品を検索して選択し、*SKUs*タブをクリックします。 対象となるSKUを選択し、そのSKUにプロモーション価格を設定します。 *［公開］*をクリックします。 これは、ベースプロモーションリストのSKUの価格を設定します。 Liferay DXP 7.4 U42/GA42以前では、Promotion PriceはSale Priceと呼ばれていました。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [プロモーションについて](./introduction-to-promotions.md)
 * [プロモーションを作成する](./creating-a-promotion.md)

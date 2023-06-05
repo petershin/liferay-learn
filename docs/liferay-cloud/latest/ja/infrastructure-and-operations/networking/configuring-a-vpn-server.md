@@ -320,7 +320,7 @@ OpenVPNサーバーを使用する場合は、以下の手順に従ってくだ�
 
 OpenVPNサーバーの設定が完了しました。
 
-## 追加情報
+## 関連トピック
 
 * [VPNインテグレーションの概要](./vpn-integration-overview.md)
 * [Liferay CloudにVPNサーバーを接続する](./connecting-a-vpn-server-to-liferay-cloud.md)

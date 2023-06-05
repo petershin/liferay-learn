@@ -204,6 +204,6 @@ Schedulingステージを完了するには、カスタムフィールドを ［
 
 　 `CommerceOrderStatus`インターフェイスを実装するための基本を理解し、Liferay Commerceに新しい注文ステータスを追加しました。
 
-## 追加情報
+## 関連トピック
 
 * [commerce注文エンジンの概要 (近日公開！)](./commerce-order-engine-overview.md)

@@ -87,7 +87,7 @@ Liferay Commerceの以前のバージョンで出荷を作成するには：
 
 ![出荷済みアイテム](./creating-a-shipment/images/06.png)
 
-## 追加情報
+## 関連トピック
 
 * [倉庫の設定](../../inventory-management/setting-up-warehouses.md)
 * [倉庫ごとの在庫設定](../../inventory-management/setting-inventory-by-warehouse.md)

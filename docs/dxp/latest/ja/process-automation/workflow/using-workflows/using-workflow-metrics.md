@@ -145,7 +145,7 @@ Liferay 7.2では、ワークフローメトリクスは検索管理パネル(�
 
 ![複数のワークフロー項目を一度に新しいステップに遷移させることができます。](./using-workflow-metrics/images/06.png)
 
-## 追加情報
+## 関連トピック
 
 * [ワークフローデザイナーでのタスクの作成](https://help.liferay.com/hc/articles/360028821932-Creating-Tasks-in-the-Workflow-Designer)
 * [ワークフロータスクノードのリファレンス](../developer-guide/workflow-task-node-reference.md)

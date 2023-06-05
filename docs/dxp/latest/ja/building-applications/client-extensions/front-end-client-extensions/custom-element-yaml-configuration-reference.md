@@ -42,7 +42,7 @@ able-custom-element:
 
 すべてのフロントエンドクライアントエクステンションに共通するプロパティについては、 [フロントエンドクライアントエクステンションのプロパティ](../front-end-client-extensions.md#front-end-client-extension-properties) を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [フロントエンドクライアント拡張機能](../front-end-client-extensions.md)
 * [クライアントエクステンションの操作](../working-with-client-extensions.md)

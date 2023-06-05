@@ -89,7 +89,7 @@
 
 コンテンツを新しい表示ページテンプレートに割り当てた場合、コンテンツが期待通りに表示されることを確認します。 コンテンツをプレビューして表示するには、 [Display Pagesを使ったコンテンツの公開](./publishing-content-with-display-pages.md)を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [表示ページによるコンテンツの公開](./publishing-content-with-display-pages.md)
 * [SEOとOpen Graphの設定](./configuring-seo-and-open-graph.md)

@@ -134,11 +134,11 @@ public class HelloWorldPortlet extends MVCPortlet {
 
 モデルレイヤーを開発する準備ができている場合は、 [サービスビルダー](../data-frameworks/service-builder.md) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [ポートレットのルック&フィール](./using-mvc/portlet-preferences.md)
 * [MVCポートレットでのローカライズされたメッセージの使用](./using-mvc/using-localized-messages-in-an-mvc-portlet.md)
 * [モジュールプロジェクト](../../liferay-internals/fundamentals/module-projects.md)
 * [ワークスペース](../tooling/liferay-workspace/creating-code-with-liferay-workspace.md)
-* [Fundamentals](../../liferay-internals/fundamentals.md)
+* [基本](../../liferay-internals/fundamentals.md)
 * [アーキテクチャ](../../liferay-internals/architecture.md)

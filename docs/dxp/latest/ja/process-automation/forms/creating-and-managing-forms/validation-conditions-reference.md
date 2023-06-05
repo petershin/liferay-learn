@@ -23,6 +23,6 @@
 
 
 
-## 追加情報
+## 関連トピック
 
 * [テキストおよび数値フィールドエントリの検証](./validating-text-and-numeric-field-entries.md)

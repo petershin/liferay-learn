@@ -38,7 +38,7 @@
 *チェックアウト*ウィジェットは、Liferayのアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) を参照してください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [ウィジェットリファレンス](../liferay-commerce-widgets/widget-reference.md)
 * [ページの作成](https://help.liferay.com/hc/ja/articles/360018171291-Creating-Pages)

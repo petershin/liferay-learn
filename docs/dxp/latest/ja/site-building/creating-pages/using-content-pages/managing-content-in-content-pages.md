@@ -52,7 +52,7 @@ Liferay DXP/Portal 7.3の場合、 **コンテンツ** パネル（![Contents](.
     * **権限設定** ：Webコンテンツの権限を更新します
     * **利用数を表示** ：Webコンテンツがサイトで使用されている場所を確認します
 
-## 追加情報
+## 関連トピック
 
 * [コンテントページの使用](../using-content-pages.md)
 * [コンテンツページへの要素の追加](./adding-elements-to-content-pages.md)

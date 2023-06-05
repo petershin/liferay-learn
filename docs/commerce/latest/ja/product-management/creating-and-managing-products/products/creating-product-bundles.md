@@ -78,6 +78,6 @@ Liferay Commerceでは、商品バンドルに加えて、複数のSKUを組み�
 
 ![顧客は、商品の表示ページにある商品バンドルオプションから選択することができます。](./creating-product-bundles/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [商品オプションの使用](./using-product-options.md)

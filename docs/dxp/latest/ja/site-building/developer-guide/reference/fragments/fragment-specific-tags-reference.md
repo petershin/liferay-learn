@@ -275,7 +275,7 @@ localizable`属性は、`configurationRole`プロパティが`style`に設定さ
 
 `localizable` 属性を持つフラグメントで、言語のカスタム設定を指定しない場合は、デフォルトのページ言語の設定を使用します。
 
-## 追加情報
+## 関連トピック
 
 - [フラグメントツールキットコマンドリファレンス](./fragments-toolkit-command-reference.md)
 - [ページ フラグメントエディタのインターフェイスリファレンス](./page-fragment-editor-interface-reference.md)

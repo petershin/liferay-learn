@@ -64,7 +64,7 @@
 
 1. [**保存**] をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [選択リストの使用](./using-picklists.md)
 * [ロール権限の定義](../../../users-and-permissions/roles-and-permissions/defining-role-permissions.md)

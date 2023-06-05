@@ -50,7 +50,7 @@
 
 ![CIサービスには、Jenkins CIのWebインターフェースのURLが記載されています。](./logging-into-your-liferay-cloud-services/images/07.png)
 
-## 追加情報
+## 関連トピック
 
 * [Liferay DXPサービスの使用](../using-the-liferay-dxp-service.md)
 * [継続的インテグレーション](../platform-services/continuous-integration.md)

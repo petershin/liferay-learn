@@ -77,7 +77,7 @@ version: "latest.release"`
 
 これで、依存関係を範囲で追跡する場合と完全一致で追跡する場合の長所と短所がわかりました。
 
-## 追加情報
+## 関連トピック
 
 * [パッケージのインポート](./importing-packages.md)
 * [パッケージのエクスポート](./exporting-packages.md)

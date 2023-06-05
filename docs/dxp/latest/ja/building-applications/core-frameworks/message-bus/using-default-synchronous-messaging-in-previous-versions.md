@@ -247,7 +247,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 メッセージを送信した直後に処理を続行する場合は、[非同期メッセージングの使用](./using-asynchronous-messaging.md)を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [メッセージバス](../message-bus.md)
 * [メッセージのリッスン](./listening-for-messages.md)

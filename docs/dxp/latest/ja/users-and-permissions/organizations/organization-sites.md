@@ -30,7 +30,7 @@ Liferay [組織](./understanding-organizations.md) は、分散したユーザ�
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [組織について](./understanding-organizations.md)
 * [組織の作成と管理](./creating-and-managing-organizations.md)

@@ -60,7 +60,7 @@ Liferay Portal 7.4 の GA4 より前のバージョンでは、 **Display Page**
 
 Liferay 7.4 GA5+ と U1+ では、Display Page タイプは Display Pages を使用するコンテンツタイプに置き換えられます： [blog entries](#blogs-entries) , [web content articles](#web-content-articles) , [documents](#documents) , and [Categories](#categories) .
 
-## 追加情報
+## 関連トピック
 
 * [ナビゲーションメニューのアプリケーションを使う](./using-the-navigation-menus-application.md)
 * [表示ページによるコンテンツの公開](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)

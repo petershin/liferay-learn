@@ -60,7 +60,7 @@ DXPがすぐにメールセッションに接続します。
 | パスワード                                | DXPがSMTPサーバーへのログインに使用するパスワード。                                                                 |
 | 上記の設定を上書きする場合は、JavaMailの設定を指定してください。 | このフィールドは、追加のJavaMail設定用です。                                                                    |
 
-## 追加情報
+## 関連トピック
 
 * [デフォルトのメール送信者の設定](./configuring-mail/configuring-default-email-senders.md)
 * [代替の電子メールの設定方法](./configuring-mail/alternative-email-configuration-methods.md)

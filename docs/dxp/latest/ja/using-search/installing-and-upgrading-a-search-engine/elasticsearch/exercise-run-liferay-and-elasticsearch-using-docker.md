@@ -84,7 +84,7 @@ Liferay DXPがElasticsearchに接続するために必要なプロパティを�
 
 検索インデックスとスペルチェックインデックスを再作成します。 どちらのインデックス再作成も、コントロールパネルの &rarr; 設定 &rarr; 検索の「インデックスアクション」タブから実行されます。
 
-## 追加情報
+## 関連トピック
 
 * [Elasticsearchの保護](./securing-elasticsearch.md)
 * [Liferay Enterprise Search](../../liferay-enterprise-search.md)

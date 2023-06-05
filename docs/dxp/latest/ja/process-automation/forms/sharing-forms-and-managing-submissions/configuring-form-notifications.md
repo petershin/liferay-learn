@@ -28,7 +28,7 @@
 
 1. ［**Done**］ をクリックして、ダイアログウィンドウを閉じます。
 
-## 追加情報
+## 関連トピック
 
 * [ワークフローでのフォームの使用](./using-forms-with-a-workflow.md)
 * [メールの設定](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)

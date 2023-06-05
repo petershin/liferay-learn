@@ -69,6 +69,6 @@ Liferay DXP/Portal 7.4+では、ウィジェットテンプレートはFreeMarke
 
 ![アプリの **設定** メニューをクリックすると、利用可能なウィジェットテンプレートを編集・管理できます。](./creating-a-widget-template/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 - [ウィジェットテンプレートの例](./using-a-widget-template-example.md)

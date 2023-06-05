@@ -22,7 +22,7 @@
 
 ![ローカライズされたラベルがビュー列に使用されます。](./renaming-table-columns/images/03.png)
 
-## 追加情報
+## 関連トピック
 
 * [閲覧数](../views.md)
 * [オブジェクトビューの設計](./designing-object-views.md)

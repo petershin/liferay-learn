@@ -109,7 +109,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 Liferay DXP 7.2 SP1以降および Liferay Portal 7.2 GA2以降では、*グローバル* サイトでページ フラグメントを作成して、すべてのサイトで利用できるようにすることができます。 これらのバージョンの初期リリースでこの機能を公開するには、 `com.liferay.fragment.web.internal.configuration.FragmentGlobalPanelAppConfiguration.config` という名前の `.config` ファイルを作成し、 `enabled=B "true"` というプロパティを追加する必要があります。 そして、Liferay DXPインスタンスの `osgi/configs` フォルダにコピーしてください。 グローバル ページ フラグメントは子サイトに継承され、グローバル サイトからのみ編集できます。 グローバル ページ フラグメントがグローバル サイトから参照するすべてのリソースは、ページ フラグメントを利用するサイトにコピーされます。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントツールキットの使用](./using-the-fragments-toolkit.md)
 * [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md)

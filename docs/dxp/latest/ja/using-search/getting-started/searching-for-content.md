@@ -123,7 +123,7 @@ Liferay 7.4 には [Liferay Objects](../../building-applications/objects.md)と�
 
 Liferay 7.4 U64+/GA64+ では、検索結果のオブジェクトエントリーをクリックすると、そのエントリーの [表示ページ](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) が存在する場合、そちらにリダイレクトされます。
 
-## 追加情報
+## 関連トピック
 
 * [検索結果の動作](../search-pages-and-widgets/search-results/search-results-behavior.md)
 * [検索候補の有効化](../search-pages-and-widgets/search-results/enabling-search-suggestions.md)

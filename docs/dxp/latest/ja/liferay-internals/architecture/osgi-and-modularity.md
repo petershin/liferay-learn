@@ -230,7 +230,7 @@ Liferayのソースから典型的なアプリケーションを見てみると�
 
 　 開発を始める準備はできましたか。 さらに学習するためのリソースのいくつかを以下に紹介します。
 
-## 追加情報
+## 関連トピック
 
 * [OSGi Alliance](https://www.osgi.org/)
 * [Getting started with OSGi at OSGi EnRoute](https://enroute.osgi.org/)

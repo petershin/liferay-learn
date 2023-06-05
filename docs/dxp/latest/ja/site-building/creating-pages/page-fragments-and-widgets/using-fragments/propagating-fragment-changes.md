@@ -55,7 +55,7 @@
 
 有効にすると、フラグメントの編集不可能なフィールドに加えられた変更は、フラグメントのすべてのインスタンスに自動的に伝搬されます。
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントの使用](../using-fragments.md)
 * [Fragment Styles Reference](./configuring-fragments/styles-reference.md)

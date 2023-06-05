@@ -42,7 +42,7 @@
 
 ![カタログと商品](./creating-a-new-catalog/images/02.png)
 
-## 追加情報
+## 関連トピック
 
 * [ロケールオプション](../../store-management/locale-options.md)
 * [新しい通貨の追加](../../store-management/currencies/adding-a-new-currency.md)

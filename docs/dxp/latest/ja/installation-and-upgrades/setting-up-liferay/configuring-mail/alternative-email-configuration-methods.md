@@ -51,7 +51,7 @@ DXPは次回の起動時にメールセッションに接続します。
 [portal-ext.properties](../../reference/portal-properties.md)で以下のプロパティを設定し、サーバーを再起動すると、コントロールパネルの値を設定するのと同じ効果があります：`mail.session.jndi.name=mail/MailSession`
 ```
 
-## 追加情報
+## 関連トピック
 
 * [Tomcat管理のメールセッションの構成](../../installing-liferay/installing-liferay-on-an-application-server/installing-on-tomcat.md#mail-configuration)
 * [WebSphere管理のメールセッションの構成](../../installing-liferay/installing-liferay-on-an-application-server/installing-on-websphere.md#mail-configuration)

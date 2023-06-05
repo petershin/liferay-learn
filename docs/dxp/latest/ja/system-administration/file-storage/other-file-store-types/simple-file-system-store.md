@@ -59,7 +59,7 @@ dl.store.impl=com.liferay.portal.store.file.system.FileSystemStore
 
 [クラスター環境](../../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability.md)では、すべてのノードがアクセスできるネットワークマウントファイルシステムをストアに指定します。 ネットワーク化されたファイルシステムは、すべてのノードからアクセス可能で、同時要求をサポートし、ファイルロックをサポートしている必要があります。 そのようなファイルシステムなしで簡易ファイルシステムストアを使用し、複数のユーザーが同時に同じファイルに書き込もうとすると、データが破損する可能性があります。
 
-## 追加情報
+## 関連トピック
 
 * [ファイル ストレージ](../../file-storage.md)
 * [Amazon S3 Store](./amazon-s3-store.md)

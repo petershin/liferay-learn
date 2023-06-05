@@ -143,7 +143,7 @@ proxy.https.password=password
 ./patching-tool.sh test-server install
 ```
 
-## 追加情報
+## 関連トピック
 
 * [パッチのインストール](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)
 * [パッチングツールのインストール](./installing-the-patching-tool.md)

@@ -260,7 +260,7 @@ Upgrading the liferay service requires a database upgrade and restoring the life
 
 　 これでDXPデータベースを新しいバージョンにアップグレードし、選択した環境にデプロイできました。 また、必要に応じて、 [同じバックアップ](#restore-the-backup) を他の環境に再度リストアすることもできます。
 
-## 追加情報
+## 関連トピック
 
 DXPアップグレードの詳細：
 

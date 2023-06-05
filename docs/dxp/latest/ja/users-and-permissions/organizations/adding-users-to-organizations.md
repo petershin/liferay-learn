@@ -46,7 +46,7 @@ Liferayの [組織](./understanding-organizations.md)では、ユーザーとパ
 
 これにより、選択した組織に既に割り当てられ、暗黙的にに基本的な組織ユーザーのロールを与えられた新しいポータルユーザーが作成されます。 必要に応じて、組織を対象としたロールを追加で割り当てることができます。 詳しくは、 [組織ロール](./organization-roles.md) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [組織について](./understanding-organizations.md)
 * [組織の作成と管理](./creating-and-managing-organizations.md)

@@ -51,7 +51,7 @@ Liferay Commerceでは、グローバルメニュー（![Global Menu](../../imag
 | 在庫を管理 | 倉庫にリンクされた在庫エンティティにアクセスして変更する機能   |
 | 権限の設定 | 倉庫と在庫アプリケーションでリソース権限を表示および変更する機能 |
 
-## 追加情報
+## 関連トピック
 
 * [在庫管理](../../inventory-management.md)
 * [在庫管理リファレンスガイド](../../inventory-management/inventory-management-reference-guide.md)

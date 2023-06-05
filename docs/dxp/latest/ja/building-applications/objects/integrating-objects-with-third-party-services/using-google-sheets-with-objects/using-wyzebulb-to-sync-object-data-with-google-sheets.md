@@ -72,7 +72,7 @@
 
     ![フローが実行されていることを確認します。](./using-wyzebulb-to-sync-object-data-with-google-sheets/images/17.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクト](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)

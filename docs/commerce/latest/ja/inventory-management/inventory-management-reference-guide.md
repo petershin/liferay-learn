@@ -68,7 +68,7 @@ On Orderタブには、このSKUに注文を出したアカウントのリスト
 
 インベントリーの設定は、コントロールパネルにあります。 アクセスするには、 **コントロールパネル** &rarr; **コマース** &rarr; **インベントリ** に移動します。
 
-## 追加情報
+## 関連トピック
 
 * [商品バリアントのSKU作成](../product-management/creating-and-managing-products/products/creating-skus-for-product-variants.md)
 * [在庫数低下時のアクション](./low-stock-action.md)

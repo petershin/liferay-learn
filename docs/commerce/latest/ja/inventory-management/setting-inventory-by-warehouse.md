@@ -98,7 +98,7 @@
 
 各倉庫の更新された在庫を確認することができるようになりました。
 
-## 追加情報
+## 関連トピック
 
 * [コマース倉庫のセットアップ](./setting-up-warehouses.md)
 * [在庫管理リファレンスガイド](./inventory-management-reference-guide.md)

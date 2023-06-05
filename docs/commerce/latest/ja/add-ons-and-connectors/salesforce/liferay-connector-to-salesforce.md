@@ -134,7 +134,7 @@ Salesforceからのデータをフィルタリングして、新しく変更ま�
 これらのタスクを実行すると、リソースを大量に消費し、プラットフォームのパフォーマンスを低下させる可能性があります。 パフォーマンスへの影響を軽減するため、使用頻度の高い時間帯での実行は避けてください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [Liferayマーケットプレイス](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)
 * [ジョブスケジューラーを使う](https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)

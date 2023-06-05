@@ -563,7 +563,7 @@ javac -classpath .:* *.java
    :lines: 4-33
 ```
 
-## 追加情報
+## 関連トピック
 
 * [掲示板の概要](../user-guide/getting-started-with-message-boards.md)
 * [掲示板の設定リファレンス](./../user-guide/message-boards-configuration-reference.md)

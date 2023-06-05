@@ -29,7 +29,7 @@ Gogoシェルは、 [Felix Gogoの基本コマンド](https://felix.apache.org/d
 
 <a name="追加情報" />
 
-## 追加情報
+## 関連トピック
 
 * [Gogo シェルの使用](../using-the-gogo-shell.md)
 * [コマンドラインGogo シェル](./command-line-gogo-shell.md)

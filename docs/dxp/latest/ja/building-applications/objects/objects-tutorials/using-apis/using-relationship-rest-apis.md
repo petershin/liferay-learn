@@ -374,7 +374,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    :language: bash
 ```
 
-## 追加情報
+## 関連トピック
 
 * [ヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)
 * [REST APIでネストしたフィールドの使用](./using-nested-fields-with-rest-apis.md)

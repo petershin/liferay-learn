@@ -176,7 +176,7 @@ Liferay Commerceインスタンスがアップグレードされました。
 
 インデックスの再構築が完了すると、アップグレードされたLiferay Commerceインスタンスを使用する準備が整います。
 
-## 追加情報
+## 関連トピック
 
 * [アプリのインストール](https://learn.liferay.com/dxp/latest/ja/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
 * [Liferay Commerce修正プログラム配信方法](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

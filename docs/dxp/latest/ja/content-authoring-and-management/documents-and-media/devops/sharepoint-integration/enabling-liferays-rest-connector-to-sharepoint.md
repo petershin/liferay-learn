@@ -106,7 +106,7 @@ SharePointを使用すると、カスタムソースIDを定義して、検索�
 
 1. 完了したら、 ［**保存**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [アプリのインストール](../../../../system-administration/installing-and-managing-apps/installing-apps.md)
 * [ドキュメントとメディアでのSharePointリポジトリの作成](./creating-sharepoint-repositories-in-documents-and-media.md)

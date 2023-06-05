@@ -100,7 +100,7 @@ Liferay CloudのLiferayサービスは、JVMのメモリ設定やデータベー
 
 詳しくは、 [Liferayサービス環境変数](./liferay-service-environment-variables.md) を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [Liferay DXPサービスの使用](../using-the-liferay-dxp-service.md)
 * [Liferay Cloudでのクラスタリングの有効化](./setting-up-clustering-in-liferay-cloud.md)

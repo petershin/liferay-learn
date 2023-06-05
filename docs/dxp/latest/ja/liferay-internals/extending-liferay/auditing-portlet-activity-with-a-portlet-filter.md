@@ -193,7 +193,7 @@ public class B4K8PortletFilter implements RenderFilter {
 
    描画リクエストが行われるたびに、この`doFilter`が呼び出されます。
 
-## 追加情報
+## 関連トピック
 
 * [ポートレット](../../building-applications/developing-a-java-web-application/reference/portlets.md)
 <!--TASK: Add link to Using Portlet Filters article when finished -->

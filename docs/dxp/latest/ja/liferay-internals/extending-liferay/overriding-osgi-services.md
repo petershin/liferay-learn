@@ -264,7 +264,7 @@ References:   (total 1)
 
    `S1J6CharlieImpl`と`S1J6DogImpl`はどちらも同じランキングであるため、最初に登録されたサービスが優先されて`S1J6Portlet`にバインドされます。
 
-## 追加情報
+## 関連トピック
 
 * [モジュールプロジェクト](../fundamentals/module-projects.md)
 * [OSGiサービスの使用](../fundamentals/using-an-osgi-service.md)

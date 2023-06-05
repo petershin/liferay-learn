@@ -127,7 +127,7 @@
 
 1. ［**保存**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [定額制の配送方法を使う](./using-the-flat-rate-shipping-method.md)
 * [FedExを運送業者の方法として使用する](./using-the-fedex-shipping-method.md)

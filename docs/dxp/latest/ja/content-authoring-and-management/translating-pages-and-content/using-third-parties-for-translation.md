@@ -96,7 +96,7 @@ Microsoft Translatorを有効にするには、アクティブなMicrosoft Azure
 
 1. 終了したら、 **Save as Draft** または **Publish** をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [Webコンテンツの翻訳](./translating-web-content.md)
 * [コンテンツページの翻訳](./translating-content-pages.md)

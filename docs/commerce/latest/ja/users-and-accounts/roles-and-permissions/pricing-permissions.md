@@ -96,7 +96,7 @@ Liferay Commerceでは、グローバルメニュー（![Global Menu](../../imag
 | 税カテゴリー管理 | 税カテゴリーアプリケーションで税カテゴリーエンティティを管理する機能 |
 | 権限の設定    | 税カテゴリーアプリケーションでリソース権限を表示および変更する機能  |
 
-## 追加情報
+## 関連トピック
 
 * [プライシングの概要](../../pricing/introduction-to-pricing.md)
 * [割引について](../../pricing/promoting-products/introduction-to-discounts.md)

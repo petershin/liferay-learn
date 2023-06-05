@@ -84,7 +84,7 @@ Job Scheduler タスクの **Logs** を表示および削除します。 ［**St
 | 今すぐ実行        | ジョブを手動で実行するためのボタン                         |
 | Pause/Resume | ジョブを **一時停止** / **再開** するオプション。アクションボタンからアクセスできます |
 
-## 追加情報
+## 関連トピック
 
 * [ジョブスケジューラーを使う](./using-job-scheduler.md)
 * [ジョブスケジューラフレームワークの理解](./understanding-the-job-scheduler-framework.md)

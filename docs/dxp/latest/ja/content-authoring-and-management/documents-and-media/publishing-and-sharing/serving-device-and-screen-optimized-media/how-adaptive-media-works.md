@@ -18,7 +18,7 @@
 
 最新のDXPバージョンにアップグレードし、アダプティブメディアをサポートしていないレガシーバージョンを使用していた場合は、既存のドキュメントとメディアのサムネイルを新しいアダプティブメディアで定義された画像解像度に移行できます。[ドキュメントとメディアサムネイルのアダプティブメディアへの移行](./migrating-documents-and-media-thumbnails.md)を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [アダプティブメディア設定リファレンス](./adaptive-media-configuration-reference.md)
 * [アダプティブメディアモジュールリファレンス](../../developer-guide/adaptive-media-modules-reference.md)

@@ -77,6 +77,6 @@
 
 ![［配達済み］タブ](./shipments-management-reference-guide/images/08.png)
 
-## 追加情報
+## 関連トピック
 
 * [発送の作成](./creating-a-shipment.md)

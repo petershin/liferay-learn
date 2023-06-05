@@ -36,7 +36,7 @@ Asset Publisherウィジェットはアセットを公開するため、画像�
 
 ![Asset Publisherウィジェットで、混合コンテンツタイプを公開することができます。](./displaying-assets-using-the-asset-publisher-widget/images/02.png)
 
-## 追加情報
+## 関連トピック
 
 * [アセットパブリッシャーウィジェットでのアセットの選択](./selecting-assets-in-the-asset-publisher-widget.md)
 * [アセットパブリッシャー表示設定の構成](./configuring-asset-publisher-display-settings.md)

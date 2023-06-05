@@ -22,7 +22,7 @@
 
 設定が完了すると、アップロードまたはアップデート時に音声ファイルとビデオファイルの音声とビデオのプレビューが自動的に生成されます。
 
-## 追加情報
+## 関連トピック
 
 * [ファイルの管理](../uploading-and-managing/managing-files.md)
 * [ドキュメントとメディアプレビューの設定](./configuring-documents-and-media-previews.md)

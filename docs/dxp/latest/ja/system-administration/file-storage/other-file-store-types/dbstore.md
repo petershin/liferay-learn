@@ -20,7 +20,7 @@ DXPがファイルをDBStoreに保存するようになりました。
 [アップロードされたファイルの自動アンチウイルススキャンを有効にする](../enabling-antivirus-scanning-for-uploaded-files.md)を検討します。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [ファイル ストレージ](../../file-storage.md)
 * [ファイルストアの移行](../file-store-migration.md)

@@ -360,6 +360,6 @@ java -classpath .:* -DimportTaskId=1234 ImportTaskContent_GET_ById
 
 [RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、Headless Batch Engine の全サービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されています。
 
-## 追加情報
+## 関連トピック
 
 * [Batch Engine API の基本 - データのエクスポート](./batch-engine-api-basics-exporting-data.md)

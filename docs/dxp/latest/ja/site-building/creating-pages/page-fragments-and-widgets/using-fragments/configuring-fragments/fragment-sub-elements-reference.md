@@ -57,7 +57,7 @@ URL、ページ参照、アセットマッピングを設定して、選択し�
 
 ![編集サイドバーメニューのブラウザパネルでサブ要素のリンク設定にアクセスします。](./fragment-sub-elements-reference/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントの設定](../configuring-fragments.md)
 * [一般設定リファレンス](./general-settings-reference.md)

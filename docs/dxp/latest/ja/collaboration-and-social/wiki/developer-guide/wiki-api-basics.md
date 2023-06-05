@@ -448,7 +448,7 @@ WikiページにPOSTメソッドとPUTメソッドを使用する場合は、 `h
    :lines: 6-25
 ```
 
-## 追加情報
+## 関連トピック
 
 * [ヘッドレスプラットフォームとしてのLiferayの使用](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
 * [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

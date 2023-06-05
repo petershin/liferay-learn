@@ -284,7 +284,7 @@ docker cp ［config file］ ［container］:/opt/liferay/osgi/configs
 
 LiferayコンテナのJVMオプション、ポータルプロパティ、イメージ環境変数、システムプロパティ、およびシステム設定を構成する方法をマスターしました。
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Dockerイメージの使用](../using-liferay-docker-images.md)
 * [コンテナのライフサイクルとAPI](./container-lifecycle-and-api.md)

@@ -62,7 +62,7 @@ Liferay Cloudのサービスは、デフォルトで、大半のユースケー�
 Liferay Cloud のサービスのデプロイメントタイプは、データの損失やパフォーマンスに影響を与える可能性があるため、慎重に変更する必要があります。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [永続的なファイルシステムボリュームの設定](./configuring-persistent-file-storage-volumes.md)
 * [デプロイメント戦略について](./understanding-deployment-strategies.md)

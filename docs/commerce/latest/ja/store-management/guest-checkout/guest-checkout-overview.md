@@ -28,7 +28,7 @@ Eメールの入力後、ゲストはログインするか、アカウントを�
 
 この認証ページが存在しない場合、ゲストは **チェックアウト** ウィジェットのあるページにリダイレクトされます。
 
-## 追加情報
+## 関連トピック
 
 * [ゲストチェックアウトの有効化](./enabling-guest-checkout.md)
 * [チャネルについて](../../store-management/channels/introduction-to-channels.md)

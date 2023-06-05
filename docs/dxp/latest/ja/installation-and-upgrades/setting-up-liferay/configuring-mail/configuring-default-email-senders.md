@@ -56,7 +56,7 @@ announcements.email.to.address=noreply@domain.invalid
 ```bash
 メールxxxはmail.send.blacklistに含まれているため、無視されます
 ```
-## 追加情報
+## 関連トピック
 
 * [メールの構成](../configuring-mail.md)
 * [代替のメールの設定方法](./alternative-email-configuration-methods.md)

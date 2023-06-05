@@ -86,6 +86,6 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [Widget Scopes](https://help.liferay.com/hc/articles/360028819992-Widget-Scope)

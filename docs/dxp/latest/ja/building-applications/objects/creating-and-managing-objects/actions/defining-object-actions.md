@@ -70,7 +70,7 @@
 
 ![［Active］スイッチを切り替えて、アクションを無効にします。](./defining-object-actions/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](../creating-objects.md)
 * [アクションの種類について](./understanding-action-types.md)

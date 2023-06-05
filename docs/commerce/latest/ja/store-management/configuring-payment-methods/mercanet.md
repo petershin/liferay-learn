@@ -45,7 +45,7 @@ Mercanetを使用する場合、ストアではユーロを主要通貨として
 
 Mercanetがストアで有効になりました。
 
-## 追加情報
+## 関連トピック
 
 * [新しい通貨の追加](../currencies/adding-a-new-currency.md)
 * [Authorize.net](./authorize-net.md)

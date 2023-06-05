@@ -6,6 +6,8 @@
 
 ```{important}
 Analytics Cloudとの同期は即時ではないため、Analytics CloudとLiferay DXPを接続したら、まずユーザーとデータが同期するのを待つ必要があります。 それが完了したら、Analytics Cloudでセグメントを作成して、DXPでデータをキャプチャできます。
+
+また、Analytics Cloudで作成したセグメントは、Liferay DXPと同期することに注意してください。 ただし、Liferay DXPで作成したセグメントは、Analytics Cloudと同期しません。
 ```
 
 次の手順に従って、セグメント分析を取得します。
@@ -24,8 +26,6 @@ Analytics Cloudとの同期は即時ではないため、Analytics CloudとLifer
 ![セグメントのリストに表示されるAnalytics Cloudセグメントは、Analytics Cloudアイコンでマークされています。](./getting-analytics-for-user-segments/images/02.png)
 
 Analytics Cloudセグメントをクリックすると、Analytics Cloudに移動して、セグメントを編集し、条件を変更できます。 Liferay DXPでAnalytics Cloudセグメントを編集することはできません。
-
-<a name="related-information" />
 
 ## 関連情報
 

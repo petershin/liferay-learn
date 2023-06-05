@@ -144,7 +144,7 @@ Liferayのほとんどの新しいバージョンには、デフォルト設定�
 
 最新の [ポータルプロパティリファレンス](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) では、プロパティの詳細と例を提供しています。 多くのプロパティがOSGi構成に置き換えられています。これらの構成には、[システム設定](../../../system-administration/configuring-liferay/system-settings.md)のUIからアクセスできます。
 
-## 追加情報
+## 関連トピック
 
 * [7.2 旧バージョンと非互換の変更](../../../liferay-internals/reference/7-3-breaking-changes.md)
 * [7.1 Breaking Changes](https://help.liferay.com/hc/ja/articles/360017902892-Breaking-Changes)

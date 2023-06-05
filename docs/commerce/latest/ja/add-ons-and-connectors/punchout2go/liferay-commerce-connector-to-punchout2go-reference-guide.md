@@ -15,6 +15,6 @@
 | パンチアウトアクセストークン | パンチアウトユーザーの自動ログインに使用する1回限りのトークン。                                            |
 | パンチアウトベンダー     | パンチアウトカタログと購入者の調達システムをつなぐサードパーティベンダー。                                       |
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Commerce Connector to PunchOut2Go](./liferay-commerce-connector-to-punchout2go.md)

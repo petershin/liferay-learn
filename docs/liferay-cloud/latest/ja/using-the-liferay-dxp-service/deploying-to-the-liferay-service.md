@@ -159,7 +159,7 @@ liferay
 バージョン3.x.xのサービスを使用している場合、ライセンスはリポジトリの「lcp/liferay/license/{ENV}/」フォルダに置かれます。 バージョンの確認方法については， [サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [Liferay DXPサービスの使用](../using-the-liferay-dxp-service.md)
 * [Liferay DXPサービスの設定　](./configuring-the-liferay-dxp-service.md)

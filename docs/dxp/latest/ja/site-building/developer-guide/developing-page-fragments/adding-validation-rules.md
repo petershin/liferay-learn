@@ -168,7 +168,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントの開発](./developing-fragments-intro.md)
 * [フラグメントエディターの使用](./using-the-fragments-editor.md)

@@ -57,7 +57,7 @@ Commerce 2.0 または 2.1 を使用している場合、ウェアハウスの�
 
 FedExの配送方法は、チェックアウトの際に倉庫の地理的位置を利用して配送料を計算します。 複数の倉庫がある場合、Liferayインスタンスは出荷コストが最も低い倉庫を選択します。
 
-## 追加情報
+## 関連トピック
 
 * [出荷の概要](../order-management/shipments/introduction-to-shipments.md)
 * [コマース倉庫のセットアップ](./setting-up-warehouses.md)

@@ -203,7 +203,7 @@ Service-Component: OSGI-INF/com.acme.p9g2.internal.P9G2Greeter.xml
 
 `Greeter`というサービス機能を **定義** し、`P9G2Greeter`というサービスコンポーネントで提供しました。 `Greeter`サービスが配置されました。 クライアントはどのようにサービスにアクセスして使用するのでしょうか。 これについては、 [OSGiサービスの使用](./using-an-osgi-service.md) で説明しています。
 
-## 追加情報
+## 関連トピック
 
 * [Gogo シェルコマンド](./using-the-gogo-shell/gogo-shell-commands.md)
 * [パッケージのエクスポート](./exporting-packages.md)

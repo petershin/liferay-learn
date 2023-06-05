@@ -39,7 +39,7 @@ Liferay Cloud では、サービスをデプロイする前に、どのファイ
 ファイルやフォルダがデプロイされ、管理者が後でそれを無視したい場合、Liferay Cloud は後続のルールがそのファイルやフォルダを含めようとしても、ファイルを無視しないようにします。 むしろ、そのファイルやフォルダは更新されません。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [Liferay DXPサービスの使用](../using-the-liferay-dxp-service.md)
 * [Liferay サービスを設定する](../using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)

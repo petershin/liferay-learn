@@ -64,7 +64,7 @@
 
 続ける前に、有効なEメールアドレスを含む連絡先情報を入力する必要があります。
 
-## 追加情報
+## 関連トピック
 
 * [ゲストチェックアウトの概要](./guest-checkout-overview.md)
 * [チャネルについて](../../store-management/channels/introduction-to-channels.md)

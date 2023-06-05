@@ -126,7 +126,7 @@ Commerce Pricing Engine v1.0では、価格エントリーには、SKU、標準�
 
 保存すると、インスタンスはすべての価格計算にPricing Engine v2.0を使用します。
 
-## 追加情報
+## 関連トピック
 
 * [商品の基本価格を設定する](./setting-a-products-base-price.md)
 * [価格表の作成](./creating-a-price-list.md)

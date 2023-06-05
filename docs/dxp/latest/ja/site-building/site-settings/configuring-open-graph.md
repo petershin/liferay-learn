@@ -54,7 +54,7 @@ Open Graph画像のローカライズされた別の説明を作成するには�
 <meta property="og:image:alt" content="This is an example." />
 ```
 
-## 追加情報
+## 関連トピック
 
 * [検索エンジンを最適化](../optimizing-sites.md)
 * [サイト設定UIリファレンス](./site-settings-ui-reference.md)

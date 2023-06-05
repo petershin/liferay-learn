@@ -61,6 +61,6 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [ユーザーにメンションする](./mentioning-users.md)

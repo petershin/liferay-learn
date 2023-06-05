@@ -157,7 +157,7 @@ JSPアクションURL：
 
 アクションURLの使用方法がわかったので、アクションメソッドの作成に集中できます。 または、[MVCActionCommandクラス](./mvc-action-command.md)を使用して調査することもできます。 または、他のポートレットフェーズの処理を検討する準備ができている場合は、[MVCRenderCommand](./mvc-render-command.md)クラスと[MVCResourceCommand](./mvc-resource-command.md)クラスの使用を検討してください。
 MVCレンダーコマンド
-## 追加情報
+## 関連トピック
 
 * [MVCActionCommand](./mvc-action-command.md)
 * [MVCRenderCommand](./mvc-render-command.md)

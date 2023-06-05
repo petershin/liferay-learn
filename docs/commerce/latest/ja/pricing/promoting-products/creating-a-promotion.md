@@ -54,7 +54,7 @@
 
 ![予定日にカタログ掲載の全商品を20％値下げします](./creating-a-promotion/images/06.png)
 
-## 追加情報
+## 関連トピック
 
 * [プロモーションについて](./introduction-to-promotions.md)
 * [プロモーションベースリストの活用](./using-the-promotion-base-list.md)

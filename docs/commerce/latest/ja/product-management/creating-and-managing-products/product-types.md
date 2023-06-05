@@ -28,7 +28,7 @@ product-types/shop-by-diagram.md
 
 [**コマースBOM**](./product-types/shop-by-diagram.md) : これらはストア内の商品を参照する部品表（BOM）図に属する構成部品。
 
-## 追加情報
+## 関連トピック
 
 * [シンプル商品の作成](./product-types/creating-a-simple-product.md)
 * [グループ商品の作成](./product-types/creating-a-grouped-product.md)

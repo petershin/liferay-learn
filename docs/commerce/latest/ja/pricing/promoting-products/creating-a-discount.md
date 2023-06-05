@@ -155,7 +155,7 @@
 
 この例では、この特定の割引に割引ルールが適用されました。 顧客は、設定された金額を超えるすべての購入に対してこの割引を受けます。
 
-## 追加情報
+## 関連トピック
 
 * [割引について](./introduction-to-discounts.md)
 * [新規アカウントグループの作成](../../users-and-accounts/account-management/creating-a-new-account-group.md)

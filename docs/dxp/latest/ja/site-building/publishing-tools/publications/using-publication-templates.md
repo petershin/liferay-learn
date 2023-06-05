@@ -62,7 +62,7 @@
 
 ![ユーザーは、パブリケーションを作成する際に、このテンプレートを選択することができます。](./using-publication-templates/images/07.png)
 
-## 追加情報
+## 関連トピック
 
 * [パブリケーションの作成と管理](./creating-and-managing-publications.md)
 * [パブリケーションでのコラボレーション](./collaborating-on-publications.md)

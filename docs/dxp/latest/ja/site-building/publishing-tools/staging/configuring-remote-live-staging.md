@@ -162,7 +162,7 @@ staging.remote.transfer.buffer.size
 
 1. ステージング設定で ［**None**］ を選択し、 ［**保存**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [ステージングの概要](../staging.md)
 * [サイトステージングUIリファレンス](./site-staging-ui-reference.md)

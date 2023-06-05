@@ -80,7 +80,7 @@ Liferay DXP は、Liferay UI でフラグメントを管理するためのツー
 ユーザーは [default fragments](./default-fragments-reference.md) を直接編集することはできません。 ただし、デフォルトのフラグメントをカスタムセットにコピーして、そこで編集することは可能です。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントの使用](../using-fragments.md)
 * [フラグメントの設定](./configuring-fragments.md)

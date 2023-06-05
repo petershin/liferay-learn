@@ -163,7 +163,7 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 `ActionRequest` を `actionURL` と共に送信すると、ポートレットの `addH6D2Entry` メソッドを呼び出せるようになります。
 
-## 追加情報
+## 関連トピック
 
 * [ユーザーデータの管理](../managing-user-data.md)
 * [サービスビルダー](../../building-applications/data-frameworks/service-builder.md)

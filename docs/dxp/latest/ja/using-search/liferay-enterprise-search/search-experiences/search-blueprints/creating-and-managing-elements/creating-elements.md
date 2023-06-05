@@ -241,7 +241,7 @@ UI Configurationでは、各フィールドに対して追加できる設定プ�
    - `unit` 数値フィールドの測定単位を設定する。
    - `unitSuffix` は、単位を持つ数値フィールドに表示する単位表記を設定します(例えば、 `unit` が `km`の場合、 `unitSuffix` を `km` または `kilometers`として設定できます）。
 
-## 追加情報
+## 関連トピック
 
 - [検索ブループリントの作成と管理](../creating-and-managing-search-blueprints.md)
 - [検索ブループリント要素のリファレンス](../search-blueprints-elements-reference.md)

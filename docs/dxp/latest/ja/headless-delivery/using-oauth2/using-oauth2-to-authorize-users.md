@@ -209,7 +209,7 @@ src
 
 最後に、 ［**Get Users**］ をクリックすると、`Requests.js`ファイル内の`getUsers`関数が呼び出されます。
 
-## 追加情報
+## 関連トピック
 
 * [OAuth 2.0の使用](../using-oauth2.md)
 * [OAuth2アプリケーションの作成](./creating-oauth2-applications.md)

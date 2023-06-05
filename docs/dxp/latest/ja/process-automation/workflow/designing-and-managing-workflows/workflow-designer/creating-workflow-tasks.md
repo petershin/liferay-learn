@@ -130,7 +130,7 @@
 
 ワークフローの作成とワークフローデザイナの使用方法を学習したところで、ワークフロープロセスを次のレベルに進めることができるノードのタイプ（[フォークと結合](./using-forks-and-joins.md)や[条件](./using-condition-nodes.md)など）を追加する方法について見ていきます。
 
-## 追加情報
+## 関連トピック
 
 * [ワークフローの有効化](../../using-workflows/activating-workflow.md)
 * [ワークフローノード](./workflow-nodes.md)

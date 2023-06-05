@@ -32,7 +32,7 @@
 
    ![該当するチャネル注文の送料に使用する税カテゴリーを選択します。](./applying-tax-rates/images/02.png)
 
-## 追加情報
+## 関連トピック
 
 * [税区分の作成](./creating-tax-categories.md)
 * [税計算のためのレート設定](./setting-rates-for-tax-calculations.md)

@@ -89,7 +89,7 @@ Google Docs&trade;でドキュメントとメディアファイルを作成ま�
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [Microsoft Office 365を使用したドキュメントの作成と編集](./creating-and-editing-documents-with-microsoft-office-365.md)
 * [Googleドライブ上のファイルへのリンク](../linking-to-files-on-google-drive.md)

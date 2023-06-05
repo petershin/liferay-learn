@@ -49,6 +49,6 @@
 
 1. ［**保存**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [為替レートプロバイダーの実装](../../developer-guide/sales/implementing-an-exchange-rate-provider.md)

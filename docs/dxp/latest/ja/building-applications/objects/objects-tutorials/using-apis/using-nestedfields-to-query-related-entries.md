@@ -226,7 +226,7 @@ unzip liferay-w4s7.zip
 
 `nestedFieldsDepth`：取り込みたいエントリーの深さを決定します。0〜5の間で設定可能です。
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトAPIの基本](./object-api-basics.md)
 * [バッチAPIの使用](./using-batch-apis.md)

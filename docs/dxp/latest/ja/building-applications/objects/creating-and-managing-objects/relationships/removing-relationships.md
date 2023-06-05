@@ -20,7 +20,7 @@ Liferay 7.4 U26/GA26 以前のバージョンでは、 [publishing](../creating-
 
    ![リレーションシップの名前を入力し、［Done］をクリックします。](./removing-relationships/images/01.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](../creating-objects.md)
 * [オブジェクトリレーションシップの定義](./defining-object-relationships.md)

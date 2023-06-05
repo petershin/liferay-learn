@@ -15,7 +15,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [カタログページの作成](../creating-a-catalog-page.md)
 * [ウィジェットリファレンス](../liferay-commerce-widgets/widget-reference.md)

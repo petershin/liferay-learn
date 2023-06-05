@@ -151,7 +151,7 @@ JSPは、次のタグライブラリのタグを使用します。
 
 サービスビルダーの基本を理解したので、[エンティティの定義](../defining-entities.md)を調べて、エンティティ間の関係を作成したり、エンティティをローカライズしたり、クエリをサポートしたりできます。  または、[サービスビルダーによるビジネスロジック](../business-logic-with-service-builder.md)を学ぶこともできます。
 
-## 追加情報
+## 関連トピック
 
 * [ポートレット](../../../developing-a-java-web-application/reference/portlets.md)
 * [MVCの使用](../../../developing-a-java-web-application/using-mvc.md)

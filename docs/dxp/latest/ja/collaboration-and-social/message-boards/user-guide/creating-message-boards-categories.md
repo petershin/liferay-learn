@@ -83,6 +83,6 @@
 
 カテゴリといくつかのサブカテゴリを作成したら、[掲示板スレッド](./creating-message-boards-threads.md)の作成方法について学習します。
 
-## 追加情報
+## 関連トピック
 
 * [掲示板の設定リファレンス](./message-boards-configuration-reference.md)

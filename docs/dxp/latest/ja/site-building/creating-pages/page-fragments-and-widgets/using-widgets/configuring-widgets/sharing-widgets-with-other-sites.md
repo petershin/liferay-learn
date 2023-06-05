@@ -44,6 +44,6 @@ Netvibesも、ユーザーがログインして独自のパーソナルダッシ
 
 ［共有］タブで **Netvibes** に移動し、 ［**Allow users to add [application-name] to Netvibes pages**］ セレクターを有効にします。 次に、提供されたURLを使って、使用しているLiferayウィジェットのインスタンスに基づいたカスタムNetvibesウィジェットを作成することができます。
 
-## 追加情報
+## 関連トピック
 
 - [ウィジェット権限を設定する](./setting-widget-permissions.md)

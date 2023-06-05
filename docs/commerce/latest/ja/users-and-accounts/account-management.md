@@ -46,7 +46,7 @@ commerceでは、ビジネスとパーソナルタイプの2種類のアカウ�
 * [アカウントへのアドレスの追加](./account-management/adding-addresses-to-an-account.md)
 * [新規アカウントグループの作成](./account-management/creating-a-new-account-group.md)
 
-## 追加情報
+## 関連トピック
 
 * [サイトとサイトのタイプ](../starting-a-store/sites-and-site-types.md)
 * [アカウントロール](./account-management/account-roles.md)

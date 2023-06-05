@@ -38,7 +38,7 @@
 
 1. イベント分析を保存して後で見るには、分析に名前を付けて、 ［**Save Analysis**］ ボタンをクリックします。 分析結果は、イベント分析ツールで今後閲覧できるようになります。
 
-## 追加情報
+## 関連トピック
 
 * [イベントの定義](../../workspace-data/definitions/definitions-for-events.md)
 * [イベント属性の定義](../../workspace-data/definitions/definitions-for-event-attributes.md)

@@ -307,7 +307,7 @@ OSGiコンポーネントではないクラスでは、 [MessageBusUtil](https:/
 
 **デフォルト** と **ダイレクト** モードを使用した同期メッセージングを検討したい場合は、 [以前のバージョンでダイレクト同期メッセージングを使用](./using-direct-synchronous-messaging-in-previous-versions.md) と [以前のバージョンでデフォルト同期メッセージングを使用](./using-default-synchronous-messaging-in-previous-versions.md) に詳細が記載されています。
 
-## 追加情報
+## 関連トピック
 
 * [メッセージバス](../message-bus.md)
 * [メッセージのリッスン](./listening-for-messages.md)

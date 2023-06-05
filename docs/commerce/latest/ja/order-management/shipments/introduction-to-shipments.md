@@ -115,7 +115,7 @@ Store Manager は、 [受注後、Shipments メニューを使用して、出荷
 
 **追加**(![Add icon](../../images/icon-add.png)) をクリックすると、注文商品を追加できるウィンドウが表示されます。
 
-## 追加情報
+## 関連トピック
 
 * [出荷の作成](./creating-a-shipment.md)
 * [出荷の取り消し](./cancelling-a-shipment.md)

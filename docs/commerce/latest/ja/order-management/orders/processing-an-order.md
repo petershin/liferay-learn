@@ -122,7 +122,7 @@ Liferay Commerceでの注文の処理は、注文の受け入れと注文の処�
 
 詳細は、 [Liferay Commerce 2.0およびそれ以下](../shipments/creating-a-shipment.md#creating-a-new-shipment-on-liferay-commerce-2-0-and-below) の記事で新しい出荷を作成するセクションを参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [注文ワークフローの概要](../order-workflows/introduction-to-order-workflows.md)
 * [注文メニューリファレンスガイド](./orders-menu-reference-guide.md)

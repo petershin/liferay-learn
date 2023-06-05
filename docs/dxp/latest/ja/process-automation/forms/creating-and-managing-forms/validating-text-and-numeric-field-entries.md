@@ -117,7 +117,7 @@ Liferay 7.4では、日付フィールドの詳細設定に入力値の検証が
 
      ![10進数フィールドの入力マスクを作成します。](./validating-text-and-numeric-field-entries/images/09.png)
 
-## 追加情報
+## 関連トピック
 
 * [検証条件リファレンス](./validation-conditions-reference.md)
 * [フォームの作成](./creating-forms.md)

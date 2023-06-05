@@ -66,7 +66,7 @@ WARで[エクスポートされたサードパーティーパッケージ](../..
 
 これで、WABに必要なJARのバージョンが含まれました。
 
-## 追加情報
+## 関連トピック
 
 * [エクスポートされたサードパーティパッケージ](../../liferay-internals/reference/exported-third-party-packages.md)
 * [依存関係の構成](../../liferay-internals/fundamentals/configuring-dependencies.md)

@@ -132,7 +132,7 @@ XMLファイルをコンテナの`/opt/liferay/deploy`フォルダにコピー�
 
 #### Liferay Cloudへのデプロイ
 
-プロジェクトのセントラルGitリポジトリ内の [`liferay/configs/{ENV}/deploy/`](https://learn.liferay.com/liferay-cloud/latest/ja/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境の Liferay サービスへのファイルのデプロイについては、 [Liferay Cloud 導入ワークフローの概要](https://learn.liferay.com/liferay-cloud/latest/ja/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) を参照してください。
+プロジェクトのセントラルGitリポジトリ内の [Liferayサービスへのデプロイ](https://learn.liferay.com/liferay-cloud/latest/ja/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境の Liferay サービスへのファイルのデプロイについては、 [Liferay Cloud 導入ワークフローの概要](https://learn.liferay.com/liferay-cloud/latest/ja/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) を参照してください。
 
 ```{important}
 Liferay Cloudの契約でCommerceを購入した場合、アクティベーションキーはLiferay Cloudチームがクラウド基盤を通じて管理するため、お客様自身で管理する必要はありません。 ただし、既存のLiferay CloudプロジェクトにCommerceを追加する場合は、ライセンスを自分で手動でデプロイする必要があります。
@@ -179,7 +179,7 @@ Liferay Commerce Enterprise を再アクティブ化するには、まずサー�
 
 DXPとCommerceのライセンスはLiferay Cloudチームが管理しており、ユーザーが自分で手動で更新する必要はありません。
 
-## 追加情報
+## 関連トピック
 
 * [インストールの概要](./installation-overview.md)
 * [Liferay Commerceのアップグレード](./upgrading-liferay-commerce.md)

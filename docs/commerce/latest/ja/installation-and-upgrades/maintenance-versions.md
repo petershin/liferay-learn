@@ -73,7 +73,7 @@ Liferayは、定期的に、オープンソースとエンタープライズの�
 
 Liferay Commerceインスタンスが更新されました。 インデックスを再作成する必要はなく、すべてのデータは変更されません。
 
-## 追加情報
+## 関連トピック
 
 Liferay Commerceは、Liferay Digital Experience Platform上に構築されています。 場合によっては、コアのLiferay DXPプラットフォームをアップデートする必要があります。これは、最新のメジャー、マイナー、またはメンテナンスのバージョンにアップデートするための要件です。 Liferay Commerceの修正は、Liferayから独立しています。
 

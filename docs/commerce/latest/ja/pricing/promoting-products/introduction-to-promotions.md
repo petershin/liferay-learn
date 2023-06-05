@@ -36,7 +36,7 @@ Price Modifiers は、 **Catalog** , **Category** , **Product Group** , **Produc
 
 ![プロモーションとプライスリストによる商品価格の比較。](./introduction-to-promotions/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [プロモーションを作成する](./creating-a-promotion.md)
 * [プロモーションベースリストの活用](./using-the-promotion-base-list.md)

@@ -94,7 +94,7 @@ Microsoft CognitiveServicesプロバイダーが設定されました。 詳細�
 
 複数の仮想インスタンスがある場合は、各インスタンスを個別に設定できます。 ［**コントロールパネル**］ &rarr; ［**Instance Settings**］ に移動します。 ［**アセット**］ をクリックし、そこでプロバイダーを設定します。
 
-## 追加情報
+## 関連トピック
 
 * [アセットの自動タグ付けの設定](./configuring-asset-auto-tagging.md)
 * [アセットの自動タグ付け](./auto-tagging-assets.md)

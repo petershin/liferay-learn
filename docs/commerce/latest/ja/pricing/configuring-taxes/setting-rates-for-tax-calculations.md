@@ -131,6 +131,6 @@ Commerceの税エンジンは、取引が行われる時に税率の計算を定
 
 住所固有の税率が設定されました。
 
-## 追加情報
+## 関連トピック
 
 * [税カテゴリーの作成](../configuring-taxes/creating-tax-categories.md)

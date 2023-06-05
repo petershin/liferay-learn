@@ -20,7 +20,7 @@ LiferayのTalendコンポーネントは、すぐに使えるHeadless APIと、R
 
 これらのコンポーネントを使用すると、Talend Open Studioで複雑なデータフロー管理プロセスを作成し、実行することができます。 詳しいインストール方法は、 [Liferay Talend Componentsのインストール](./installing-liferay-talend-components.md) を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Talendコンポーネントのインストール](./installing-liferay-talend-components.md)
 * [Liferay Talendコンポーネントを使用したTalendジョブの設計](./designing-talend-jobs-using-liferay-talend-components.md)

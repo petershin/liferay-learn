@@ -418,7 +418,7 @@ Elasticsearchのノード証明書に署名したCAの証明書が、Liferayに�
 
     `keytool -importcert -keystore elastic-nodes.p12 -trustcacerts -storepass liferay -file ca.crt`
 
-## 追加情報
+## 関連トピック
 
 * [Elasticsearchへの接続](../connecting-to-elasticsearch.md)
 * [Elasticsearchインストールのトラブルシューティング](../troubleshooting-elasticsearch-installation.md)

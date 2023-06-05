@@ -47,7 +47,7 @@
 
 ユーザーは、地域を検索した後、フォーム内の国を検索できるようになりました。
 
-## 追加情報
+## 関連トピック
 
 * [フォームの作成](../creating-and-managing-forms/creating-forms.md)
 * [データプロバイダーの概要](../data-providers/data-providers-overview.md)

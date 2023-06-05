@@ -68,7 +68,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [ステージングの概要](../staging.md)
 * [ページバージョニング](./page-versioning.md)

@@ -78,7 +78,7 @@ Liferay Commerceでは、グローバルメニュー（![Global Menu](../../imag
 | 通貨管理  | 通貨エンティティにアクセスして変更する機能         |
 | 権限の設定 | 通貨アプリケーションでリソース権限を表示および変更する機能 |
 
-## 追加情報
+## 関連トピック
 
 * [チャネルについて](../../store-management/channels/introduction-to-channels.md)
 * [チャネルの管理](../../store-management/channels/managing-channels.md)

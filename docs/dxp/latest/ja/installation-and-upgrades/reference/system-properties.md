@@ -71,6 +71,6 @@ DXPの `system.properties` ファイルを使用し、システムプロパテ�
 
 Liferay DXPはシステムプロパティを柔軟に処理するので、システムを自由に構成できます。
 
-## 追加情報
+## 関連トピック
 
 * [ポータルプロパティ](./portal-properties.md)

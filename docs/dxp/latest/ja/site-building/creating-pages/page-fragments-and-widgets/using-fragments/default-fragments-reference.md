@@ -1,6 +1,6 @@
 # デフォルトのフラグメントリファレンス
 
-Liferayは様々なフラグメントをすぐに提供するので、すぐにソリューションの構築を開始することができます。 コンテンツページやページテンプレートの編集を始めると、利用可能なフラグメントが表示されます。 編集中に、編集サイドバーメニューの **Fragment and Widgets** タブ (![Fragments and Widgets](../../../../images/icon-plus.png)) を開く。
+Liferayは様々なフラグメントをすぐに提供するので、すぐにソリューションの構築を開始することができます。 コンテンツページやページテンプレートの編集を始めると、利用可能なフラグメントが表示されます。 編集中に、編集サイドバーメニューの「**フラグメントとウィジェット**」 タブ(![Fragments and Widgets](../../../../images/icon-plus.png))を開いてください。
 
 フラグメントは、次のセットに編成されています。
 
@@ -17,7 +17,7 @@ Liferayは様々なフラグメントをすぐに提供するので、すぐに�
   - [フッタ](#footers)
   - [ナビゲーションバー](#navigation-bars)
   - [メニュー表示](#menu-display)
-  - [追加情報](#additional-information)
+  - [関連トピック](#related-topics)
 
 ```{note}
 利用可能な設定オプションは、フラグメントおよびフラグメントサブエレメントによって異なります。 詳細については、 [フラグメントの設定](./configuring-fragments.md) を参照してください。
@@ -38,22 +38,22 @@ Liferayは様々なフラグメントをすぐに提供するので、すぐに�
 
 これらは、ページに基本的な機能を追加するシンプルなデザイン要素です。 例としては、ボタン、見出し、タブなどがあります。 これらのコンポーネントを使用すると、ページを少しずつ作成できます。 DXPには、次の基本コンポーネントが含まれています。
 
-| フラグメント | ディスクリプション |
-| :--- | :--- |
-| ボタン | 5つのボタンタイプを持つ[link要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します： ボタンの種類は、プライマリ、セカンダリ、リンク、アウトラインプライマリ、アウトラインセカンダリの5種類です。|
-| カード | ディスプレイカードとして配置された[image](./configuring-fragments/fragment-sub-elements-reference.md), [rich text](./configuring-fragments/fragment-sub-elements-reference.md), [link](./configuring-fragments/fragment-sub-elements-reference.md) 要素を追加する。|
-| ドロップダウン {bdg-secondary}`7.4+` |  [シンプルなテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md)とドロップゾーンを追加しました。ドロップゾーンに他のフラグメントやウィジェットをドラッグ＆ドロップすることで、高度なドロップダウンメニューを作成することができます。|
-| 外部動画 {bdg-secondary}`7.4+` |  外部動画をページやテンプレートに埋め込みます。サポートされているビデオソースは、YouTube、Facebook、Twitch、Vimeo、およびDocuments and Mediaに保存されているビデオです。詳しくは、[動画の埋め込み](../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) を参照してください。|
-| Heading | H1-H6スタイルを使用するように設定できる[シンプルなテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加する。|
-| HTML | 編集可能な[HTML要素](./configuring-fragments/fragment-sub-elements-reference.md)が追加されます。ダブルクリックするとモーダルウィンドウが開き、HTML構文で内容を編集することができます。|
-| 画像 | 設定可能な[画像要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します。設定時に、画像の元のサイズを使用するか、文脈に合わせて調整するかを決定します。|
-| [リッチテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md) を追加します。編集時には、フラグメントのテキストをハイライトして、追加の書式設定オプションにアクセスします。|
-| セパレーター | ページ要素間に横線を入れる。間隔や色を設定することができます。|
-| スライダー | 複数の[画像](./configuring-fragments/fragment-sub-elements-reference.md)に[リッチテキスト](./configuring-fragments/fragment-sub-elements-reference.md)をオーバーレイして、スライドにグループ化されたものを追加します。ユーザーは、各スライドを手動で循環させることができます。|
-| ソーシャル | Facebook、Twitter、LinkedInのアイコンを持つ[画像要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加し、それぞれのプラットフォーム上のページにリンクすることができる。|
-| スペーサー | ページ上のフラグメントの間に水平方向の空白を追加します。高さを設定することができます。|
-| タブ | [シンプルなテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md)とウィジェットや他のフラグメントを追加するための個々のドロップゾーンを持つ複数のタブを追加します。|
-| 動画URL（従来は*動画フラグメント） | YoutubeやDocuments and Mediaの動画をページやテンプレートに埋め込む。動画の自動再生、ループ、ミュートを設定できます。また、エンドユーザーからビデオのコントロールを隠すこともできます。[動画の埋め込み](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) を参照してください。 |
+| フラグメント                        | 説明                                                                                                                                                                                                                                                                                |
+|:----------------------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ボタン                           | プライマリ、セカンダリ、リンク、外枠（プライマリ）、外枠（セカンダリ）の5つの使用可能なボタン種別を持つ[リンク要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します。                                                                                                                                                    |
+| カード                           | 表示カードとして配置された[画像](./configuring-fragments/fragment-sub-elements-reference.md)、[リッチテキスト](./configuring-fragments/fragment-sub-elements-reference.md)、[リンク](./configuring-fragments/fragment-sub-elements-reference.md)要素を追加します。                                                    |
+| ドロップダウン {bdg-secondary}`7.4+` | [単純なテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md)とドロップゾーンを追加します。 ドロップゾーンに他のフラグメントやウィジェットをドラッグ＆ドロップすることで、高度なドロップダウンメニューを作成することができます。                                                                                                                         |
+| 外付けビデオ {bdg-secondary}`7.4+`  | ページやテンプレートに外部動画を埋め込む。 対応するビデオソースは、YouTube、Facebook、Twitch、Vimeo、およびドキュメントとメディアに保存されているビデオです。 詳細は、[Embedding Videos](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md)を参照してください。                          |
+| 見出し                           | H1-H6スタイルを使用するように構成できる[単純なテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します。                                                                                                                                                                              |
+| HTML                          | 編集可能な[HTML要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します。 要素をダブルクリックすると、HTML構文を使用してコンテンツを編集できるモーダルウィンドウが開きます。                                                                                                                                              |
+| 画像                            | 構成可能な[画像要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します。 構成するときは、画像の元のサイズを使用するか、コンテキストに合わせて調整するかを決定します。                                                                                                                                                     |
+| パラグラフ                         | [リッチテキスト要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します。 編集するときは、フラグメントのテキストを強調表示して、追加のフォーマットオプションにアクセスします。                                                                                                                                                 |
+| セパレーター（区切り文字)                 | ページ要素間に横線を追加します。 その間隔と色を構成できます。                                                                                                                                                                                                                                                   |
+| スライダー                         | スライドにグループ化された[リッチテキスト](./configuring-fragments/fragment-sub-elements-reference.md)オーバーレイを使用して複数の[画像](./configuring-fragments/fragment-sub-elements-reference.md)を追加します。 ユーザーは各スライドを手動で切り替えることができます。                                                                               |
+| ソーシャル                         | Facebook、Twitter、LinkedInのアイコンを使用して[画像要素](./configuring-fragments/fragment-sub-elements-reference.md)を追加します。これらのアイコンは、各プラットフォームのページにリンクできます。                                                                                                                                      |
+| スペーサー                         | ページ内のフラグメントの間に水平方向の空白を追加する。 その高さを設定できます。                                                                                                                                                                                                                                          |
+| タブ                            | [ シンプルなテキスト要素 ](./configuring-fragments/fragment-sub-elements-reference.md)、ウィジェットやその他のフラグメントを追加するための個別のドロップゾーンを持つ複数のタブを追加します。                                                                                                                                                    |
+| ビデオURL（以前は **ビデオフラグメント**）        | YoutubeやDocuments and Mediaの動画をページやテンプレートに埋め込むことができます。 ビデオを自動再生、ループ、またはミュートに設定できます。 エンドユーザーからビデオコントロールを非表示にすることもできます。 詳細は、[Embedding Videos](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md)を参照してください。 |
 
 ## フォームコンポーネント
 
@@ -69,7 +69,7 @@ Form Componentsフラグメントを使用して、コンテンツページ内�
 | 日付         | カスタムの日付フィールドにマッピングできるフィールドを追加します。                                                                                                                                                                                                    |
 | ファイルアップロード | [添付ファイルフィールド](../../../../building-applications/objects/creating-and-managing-objects/fields/attachment-fields.md#attachment-fields) にマッピング可能なファイルアップロードボタンを追加します。 マップされた添付ファイルフィールドは、ファイルのアップロード方法を決定します。 デフォルトでは、対応するファイル拡張子を表示します。 |
 | 複数選択のリスト   | マルチセレクト・ピクリストにマッピングできるフィールドを追加します。                                                                                                                                                                                                   |
-| 数値入力       | カスタム数値フィールド（integer、long integer、decimal、precision decimalなど）にマッピングできるフィールドを追加します。 プレースホルダ値やヘルプテキストを設定することができます。                                                                                                                     |
+| 数値入力       | カスタム数値フィールド（integer、long integer、decimal、precision decimalなど）にマッピングできるフィールドを追加します。 プレースホルダ値やヘルプテキストを設定できます。                                                                                                                          |
 | リッチテキスト    | リッチテキストフィールドにマッピングできるフィールドを追加します。                                                                                                                                                                                                    |
 | プルダウン      | カスタムピックリストとリレーションシップフィールドにマッピングできるドロップダウンメニューを追加します。 マップされたフィールドに10以上のオプションが含まれる場合、ドロップダウンメニューには、オプションを検索するための検索バーも含まれます。                                                                                                            |
 | 送信ボタン      | フォームの入力を送信するためのボタンを追加する。 すべてのフォームコンテナには、送信ボタンが必要です。                                                                                                                                                                                  |
@@ -77,9 +77,6 @@ Form Componentsフラグメントを使用して、コンテンツページ内�
 | テキスト領域     | 長いテキストフィールドにマッピングできるフィールドを追加します。                                                                                                                                                                                                     |
 | タグ         | 現在のサイトまたはグローバルサイトのタグをオブジェクトエントリに追加するためのフィールドを追加します。                                                                                                                                                                                  |
 | カテゴリ       | 現在のサイトまたはグローバルサイトのカテゴリをオブジェクトエントリに追加するためのフィールドを追加します。                                                                                                                                                                                |
-
-
-
 
 ## コンテンツの表示
 
@@ -111,7 +108,7 @@ Form Componentsフラグメントを使用して、コンテンツページ内�
 注目コンテンツの断片は、複数のコンポーネントで構成される複雑なページ要素です。 フラグメントのレイアウトをプレビューするには、フラグメントの「ウィジェット」パネルで **カードビュー**( ![Card View](../../../../images/icon-cards2.png) ) に切り替えます。 Liferay には、以下の Featured Content フラグメントが含まれています。
 
 ```{note}
-Liferay DXP/Portal 7.3では、各フラグメントの*Information*アイコン(![Information](../../../../images/icon-information.png))にマウスを合わせると、レイアウトのプレビューができます。
+Liferay DXP/Portal 7.3では、各フラグメントの*Information*アイコン（![Information](../../../../images/icon-information.png) ）にマウスを合わせると、レイアウトのプレビューができます。
 ```
 
 ### バナー
@@ -152,7 +149,7 @@ Liferay DXP/Portal 7.3では、各フラグメントの*Information*アイコン
 
 {bdg-secondary}`Liferay 7.4以降で利用可能`
 
-Menu Displayフラグメントを使用すると、コンテンツページにメニューを追加することができます。 展開後は、あらかじめ定義された [ナビゲーションメニュー](../../../site-navigation/using-the-navigation-menus-application.md)から選択することができます。 サイトナビゲーションのメニュー表示フラグメントの設定方法については、「 [サイトナビゲーションの管理」](../../../site-navigation/managing-site-navigation.md)を参照してください。
+Menu Displayフラグメントを使用すると、コンテンツページにメニューを追加することができます。 導入後は、あらかじめ定義された [ナビゲーションメニュー](../../../site-navigation/using-the-navigation-menus-application.md)から選択することができます。 サイトナビゲーションのメニュー表示フラグメントの設定方法については、「 [サイトナビゲーションの管理」](../../../site-navigation/managing-site-navigation.md)を参照してください。
 
 <!--## Product-->
 
@@ -165,7 +162,7 @@ Menu Displayフラグメントを使用すると、コンテンツページに�
 | Availability |  |
 -->
 
-## 追加情報
+## 関連トピック
 
 * [コンテントページの使用](../../using-content-pages.md)
 * [コンテントページエディタUIリファレンス](../../using-content-pages/content-page-editor-ui-reference.md)

@@ -130,7 +130,7 @@ MVCリソースコマンドクラスは、 [`MVCResourceCommand`](https://github
 
 これで、MVCリソースコマンドの使用方法がわかりました。 ポートレットのコンテンツをローカライズする場合は、[Using Localized Messages](./using-localized-messages-in-an-mvc-portlet.md)を参照してください。 モデルレイヤー、永続レイヤー、およびサービスレイヤーを開発する準備ができている場合は、 [サービスビルダー](../../data-frameworks/service-builder.md) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [MVCの使用](../using-mvc.md)
 * [MVCレンダーコマンド](./mvc-render-command.md)

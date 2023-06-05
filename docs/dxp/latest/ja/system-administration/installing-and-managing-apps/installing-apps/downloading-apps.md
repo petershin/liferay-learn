@@ -32,9 +32,9 @@ Liferayから電子送信されたレシートには、［Purchased App］ペー
 
 1. マーケットプレイスのWebサイトまたはLiferay.comから、［Purchased Apps］ページに移動します。
 
-    **マーケットプレイスのWebサイト**： [https://web.liferay.com/marketplace](https://web.liferay.com/marketplace) にアクセスしてログインします。 右上隅のプロフィール写真をクリックし、 ［**Purchased Apps**］ を選択します。
+    **マーケットプレイスのWebサイト** ： [https://web.liferay.com/marketplace](https://web.liferay.com/marketplace) にアクセスしてログインします。 右上隅のプロフィール写真をクリックし、 ［**Purchased Apps**］ を選択します。
 
-    **Liferay.com**： [liferay.com](https://www.liferay.com) にアクセスしてログインします。 右上隅のプロフィール画像をクリックし、メニューから **アカウント トップページ** を選択し、左側のナビゲーションパネルから **アプリ** を選択します。
+    **Liferay.com** ： [liferay.com](https://www.liferay.com) にアクセスしてログインします。 右上隅のプロフィール画像をクリックし、メニューから **アカウント トップページ** を選択し、左側のナビゲーションパネルから **アプリ** を選択します。
 
     ![購入したアプリは、マーケットプレイスとLiferay.comアカウントのホームページから管理できます。](./downloading-apps/images/02.png)
 

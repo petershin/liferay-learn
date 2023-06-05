@@ -101,7 +101,7 @@ LiferayオブジェクトはFormsアプリケーションと統合されてい�
 | リッチテキスト                 | リッチテキスト          |
 | Text (**以前はString**)      | テキスト、複数選択、グリッド、色 |
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクト](../objects.md)
 * [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)

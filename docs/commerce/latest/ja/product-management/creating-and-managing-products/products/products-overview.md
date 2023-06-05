@@ -34,7 +34,7 @@ Simple、グループ化済み、および仮想商品に対して、 [購読リ
 
 また、カスタム製品 [在庫ルール](../../../inventory-management.md) を設定して、顧客が購入できる最大量と最小量を設定したり、チャネルがバックオーダーを受け付けるかどうかを決定したり、在庫が設定した閾値を下回った場合に製品を販売する方法を管理することができます。
 
-## 追加情報
+## 関連トピック
 
 * [シンプル商品の作成](../product-types/creating-a-simple-product.md)
 * [グループ商品の作成](../product-types/creating-a-grouped-product.md)

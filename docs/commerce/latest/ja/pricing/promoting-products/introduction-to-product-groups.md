@@ -119,7 +119,7 @@ __［Modifier］__ : パーセント/置換/固定金額
 
 割引や価格表が商品グループにリンクされているかどうかを確認するには、 **アプリケーションメニュー** ![Applications Menu](../../images/icon-applications-menu.png)をクリックして、 ［**コマース**］ タブをクリックし、 ［**価格**］ &rarr; ［**商品グループ**］ へ進んでください。 価格表と割引の下に、関連するエンティティが表示されます。
 
-## 追加情報
+## 関連トピック
 
 * [割引について](./introduction-to-discounts.md)
 * [価格の概要](../introduction-to-pricing.md)

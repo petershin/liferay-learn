@@ -130,7 +130,7 @@ util.sendSlackMessage("About to create Liferay Cloud build...")
 | `lcp_database_service`                |          | データベースサービスのホスト名。                                                                                                                                                                                                                                                                |
 
 
-## 追加情報
+## 関連トピック
 
 * [Liferayクラウドサービスにログインする](../getting-started/logging-into-your-liferay-cloud-services.md)
 * [GitHubリポジトリの設定](../getting-started/configuring-your-gitlab-repository.md)

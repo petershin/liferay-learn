@@ -1,13 +1,13 @@
 ---
 toc:
-- ./search-blueprints/creating-and-managing-elements.md
-- ./search-blueprints/creating-and-managing-search-blueprints.md
-- ./search-blueprints/personalizing-the-search-experience.md
-- ./search-blueprints/search-blueprints-configuration-reference.md
-- ./search-blueprints/search-blueprints-elements-reference.md
-- ./search-blueprints/sorting-results-in-a-search-blueprint.md
-- ./search-blueprints/understanding-search-blueprints.md
-- ./search-blueprints/using-a-search-blueprint-on-a-search-page.md
+  - ./search-blueprints/understanding-search-blueprints.md
+  - ./search-blueprints/creating-and-managing-search-blueprints.md
+  - ./search-blueprints/using-a-search-blueprint-on-a-search-page.md
+  - ./search-blueprints/personalizing-the-search-experience.md
+  - ./search-blueprints/sorting-results-in-a-search-blueprint.md
+  - ./search-blueprints/search-blueprints-configuration-reference.md
+  - ./search-blueprints/search-blueprints-elements-reference.md
+  - ./search-blueprints/creating-and-managing-elements.md
 ---
 # ブループリントの検索
 
@@ -17,14 +17,14 @@ toc:
 ```{toctree}
 :maxdepth: 1
 
-./search-blueprints/creating-and-managing-elements.md
+./search-blueprints/understanding-search-blueprints.md
 ./search-blueprints/creating-and-managing-search-blueprints.md
+./search-blueprints/using-a-search-blueprint-on-a-search-page.md
 ./search-blueprints/personalizing-the-search-experience.md
+./search-blueprints/sorting-results-in-a-search-blueprint.md
 ./search-blueprints/search-blueprints-configuration-reference.md
 ./search-blueprints/search-blueprints-elements-reference.md
-./search-blueprints/sorting-results-in-a-search-blueprint.md
-./search-blueprints/understanding-search-blueprints.md
-./search-blueprints/using-a-search-blueprint-on-a-search-page.md
+./search-blueprints/creating-and-managing-elements.md
 ```
 
 検索ブループリントは、Search Experiencesアプリケーションの最初の機能です。 これを使えば、以下のことができます。

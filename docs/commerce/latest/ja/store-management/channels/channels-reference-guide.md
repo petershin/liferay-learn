@@ -111,7 +111,7 @@ Users can manage their Punch Out procurement systems from here. Purchasing the a
 
 -->
 
-## 追加情報
+## 関連トピック
 
 * [チャネルを使用した商品の可視性の構成](./configuring-product-visibility-using-channels.md)
 * [注文ワークフローの有効化・無効化](../../order-management/order-workflows/enabling-or-disabling-order-workflows.md)

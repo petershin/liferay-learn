@@ -132,7 +132,7 @@ Liferay 7.4 U37/GA37から、順序ボタン(![順序ボタン](../../../images/
 
 ［コンテンツ］パネル(![Contents](../../../images/icon-list-ul.png)）では、ページ上のすべてのWebコンテンツを表示、編集、管理することができます。 ウィジェットに表示されるコンテンツやコンテンツフィールドにマッピングされたコンテンツがあります。 詳細については、[コンテントページのコンテンツの管理](./managing-content-in-content-pages.md)を参照してください。
 
-## 追加情報
+## 関連トピック
 
 - [コンテントページの使用](../using-content-pages.md)
 - [コンテンツページへの要素の追加](./adding-elements-to-content-pages.md)

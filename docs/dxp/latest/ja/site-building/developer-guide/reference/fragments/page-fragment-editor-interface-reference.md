@@ -49,7 +49,7 @@ DXP 7.3 以降では、ページの上部にあるチェックボックスを選
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 - [フラグメントの開発](../../developing-page-fragments/developing-fragments-intro.md)
 - [フラグメントへの構成オプションの追加](../../developing-page-fragments/adding-configuration-options-to-fragments.md)

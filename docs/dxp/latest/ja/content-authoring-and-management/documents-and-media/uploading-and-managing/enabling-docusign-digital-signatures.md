@@ -108,6 +108,6 @@ DocuSignは、 **エンベロープ** という用語を使用して、署名す
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 - [構成スコープについて](../../../system-administration/configuring-liferay/understanding-configuration-scope.md)

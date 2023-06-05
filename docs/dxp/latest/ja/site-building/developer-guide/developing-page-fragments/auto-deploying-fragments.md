@@ -123,7 +123,7 @@ Liferay DXP 7.4+では、フラグメントコレクションはLiferay UIでは
 
 これで、フラグメントセットをローカルで操作する方法、フラグメントセットのサイトを指定する方法、自動配置を使用してインポートする方法がわかりました。
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md)
 * [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md)

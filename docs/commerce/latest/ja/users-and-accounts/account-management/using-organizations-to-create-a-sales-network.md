@@ -47,7 +47,7 @@ For example, a B2B company can give everyone in their sales network access to th
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [組織の作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/creating-and-managing-organizations.html)
 * [新しい組織種別の追加](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/organizations/adding-a-new-organization-type.html)

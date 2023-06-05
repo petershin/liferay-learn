@@ -90,7 +90,7 @@ IFrameは、ウィジェットとしてページに追加されます。
 
 アイテムを追加して、カウンターアプリが動作することを確認します。
 
-## 追加情報
+## 関連トピック
 
 * [フロントエンドクライアント拡張機能](../../front-end-client-extensions.md)
 * [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md)

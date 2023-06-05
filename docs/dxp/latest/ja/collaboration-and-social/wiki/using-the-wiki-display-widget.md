@@ -26,7 +26,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [Page Menu Widget](./using-the-page-menu-widget.md)
 * [Tree Menu Widget](./using-the-tree-menu-widget.md)

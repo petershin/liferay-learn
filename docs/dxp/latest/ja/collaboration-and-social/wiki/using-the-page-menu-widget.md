@@ -18,7 +18,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 - [Wikiの概要](./getting-started-with-wikis.md)
 - [Wikiページの作成](./creating-wiki-pages.md)

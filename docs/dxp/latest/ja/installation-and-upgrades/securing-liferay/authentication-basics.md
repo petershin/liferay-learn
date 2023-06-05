@@ -93,7 +93,7 @@ CAPTCHAまたはreCAPTCHAを有効にして、ボットによるアカウント�
 1. その他のオプションを使用すると、開発者が Simple CAPTCHA エンジンをカスタマイズできます。
 1. 完了したら、 ［**保存**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [Liferayの保護](../securing-liferay.md)
 * [Webサービスの保護の概要](./securing-web-services.md)

@@ -42,7 +42,7 @@ company.default.time.zone=Europe/Lisbon
 
 DXPインスタンスのデフォルトの言語とタイムゾーンを構成しました。 ロケールの選択を容易にする方法など、DXPのローカライズに関する詳細は、 [サイトのローカライゼーション](../../site-building/site-settings/site-localization.md)を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [仮想インスタンスのローカリゼーションの構成](../../system-administration/configuring-liferay/virtual-instances/localization.md)
 * [標準言語ファイルの上書き方法](../../liferay-internals/extending-liferay/overriding-global-language-translations.md)

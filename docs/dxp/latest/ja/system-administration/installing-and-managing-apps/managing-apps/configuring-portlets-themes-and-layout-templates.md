@@ -18,7 +18,7 @@
 
 　 コンポーネントリストを使用して、インストールされているポートレット、テーマ、およびレイアウトテンプレートを調査および管理できます。
 
-## 追加情報
+## 関連トピック
 
 * [クラスター化されたインストールの維持](../../../installation-and-upgrades/maintaining-a-liferay-installation/maintaining-clustered-installations.md)
 * [アプリのブラックリスト登録](./blacklisting-apps.md)

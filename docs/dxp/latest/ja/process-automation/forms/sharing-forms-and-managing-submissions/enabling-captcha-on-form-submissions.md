@@ -20,6 +20,6 @@ CAPTCHAを有効にするには：
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 デフォルトでは、Liferayは［Simple CAPTCHA］チェックを使用します。 これは、GoogleのreCAPTCHAサービスなどの代替CAPTCHAエンジンを使用するように構成および変更できます。 この方法の詳細は、 [認証の基本](../../../installation-and-upgrades/securing-liferay/authentication-basics.md#configuring-captcha-or-recaptcha) を参照してください。

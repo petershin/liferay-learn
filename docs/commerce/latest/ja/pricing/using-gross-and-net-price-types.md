@@ -52,7 +52,7 @@ Liferay Commerceでは、プロモーションと割引の計算にグロスま�
 
 単価、プロモーション価格、最終価格がチャネルに表示されると、チャネルがグロス価格を表示するように設定されている場合、システムではネットと税金が追加されます。
 
-## 追加情報
+## 関連トピック
 
 * [割引について](./promoting-products/introduction-to-discounts.md)
 * [価格表の作成](./creating-a-price-list.md)

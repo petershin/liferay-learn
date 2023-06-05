@@ -34,7 +34,7 @@
 
 ![［メール］タブ](./order-information/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [注文ワークフローの概要](../order-workflows/introduction-to-order-workflows.md)
 * [注文メニューリファレンスガイド](./orders-menu-reference-guide.md)

@@ -24,7 +24,7 @@
 
 ![メディアギャラリーの設定画面にテンプレートの変更が表示されます。](./using-a-widget-template-example/images/04.gif)
 
-## 追加情報
+## 関連トピック
 
 - [テンプレートへのウィジェットの埋め込み](../../../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md)
 - [ウィジェットテンプレートを使用したウィジェットのスタイル設定](../../../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)

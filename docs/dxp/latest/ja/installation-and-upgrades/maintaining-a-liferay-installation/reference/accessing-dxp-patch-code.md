@@ -107,7 +107,7 @@ GitHubユーザーのリポジトリアクセスを削除する方法は次の�
 
 **(3) Wikiについて：** Liferay DXPの公式ドキュメンテーションは<https://learn.liferay.com>にあり、サポートナレッジベースは [ヘルプセンター](https://help.liferay.com/hc/ja/) にあります。 `liferay-dxp`リポジトリのwikiは使用していません。  記事の変更を提案したり、トピックに関するドキュメントをリクエストする場合は、ヘルプセンターで [サポートチケットを作成](https://help.liferay.com/hc/ja/requests/new) してLiferayサポートチームにお知らせください。
 
-## 追加情報
+## 関連トピック
 
 * [ライフレイでのオープンソースについて](https://liferay.dev/open-source)
 * [GitHubとGitの概要](https://help.github.com/en/github/getting-started-with-github)

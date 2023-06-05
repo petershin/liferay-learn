@@ -28,7 +28,7 @@ Accounts のワークフローを有効にするには、次のようにしま�
 
 ![レビュアーは、アカウントを承認または拒否することができます。](./using-workflow-with-accounts/images/03.png)
 
-## 追加情報
+## 関連トピック
 
 * [アカウントの作成](../accounts.md#creating-an-account)
 * [ワークフローデザイナーの概要](../../process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md)

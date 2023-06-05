@@ -75,7 +75,7 @@
 | [エクスポート](./exporting-importing-site-pages-and-content.md) | サイトページとコンテンツをLARファイルとしてエクスポートします。                          |
 | [インポート](./exporting-importing-site-pages-and-content.md)  | サイトページとコンテンツをLARファイルからインポートします。                            |
 
-## 追加情報
+## 関連トピック
 
 * [サイト](../sites.md)
 * [サイトの追加](./adding-a-site.md)

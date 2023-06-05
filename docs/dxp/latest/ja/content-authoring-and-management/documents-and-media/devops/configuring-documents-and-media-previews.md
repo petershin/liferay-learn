@@ -22,7 +22,7 @@ Liferay DXPは現在、以下のプログラムとの統合をサポートして
 
 これらのツールをインストールして設定すると、ドキュメントとメディアはほとんどのファイル形式のアプリケーションプレビューを提供できます。
 
-## 追加情報
+## 関連トピック
 
 * [ファイルの管理](../uploading-and-managing/managing-files.md)
 * [ドキュメントとメディアUIリファレンス](../documents-and-media-ui-reference.md)

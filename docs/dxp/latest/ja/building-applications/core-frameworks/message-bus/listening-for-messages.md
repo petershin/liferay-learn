@@ -92,6 +92,6 @@ DestinationNames.DOCUMENT_LIBRARY_PDF_PROCESSOR
 
 プロジェクトをデプロイすると、OSGiランタイムは`MessageListener`を宛先に登録します。 これで、`MessageListener`は宛先に送信されたメッセージを受信します。
 
-## 追加情報
+## 関連トピック
 
 * [メッセージバス](../message-bus.md)

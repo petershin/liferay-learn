@@ -170,7 +170,7 @@ type: iframe
 
 [Client Extension の設定 `client-extension.yaml`](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [クライアントエクステンションの紹介](../client-extensions.md)
 * [カスタム要素とIFrameクライアント拡張機能を理解する](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)

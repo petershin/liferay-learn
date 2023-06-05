@@ -44,7 +44,7 @@
 
 ウィジェットがカスタムテンプレートを使用するようになりました。 より高度なウィジェットテンプレートスクリプトを使用することにより、ウィジェットの機能をさらに強化できます。
 
-## 追加情報
+## 関連トピック
 
 * [ウィジェットテンプレートの作成](../../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md)
 * [ウィジェットのルック＆フィールの設定](../../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/configuring-widget-look-and-feel.md)

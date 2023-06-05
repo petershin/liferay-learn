@@ -63,7 +63,7 @@
 
 商品（**Premium Brake Fluid**）が価格表（**VIP Customers**）に追加されました。 この価格表または別の価格表に他の商品を追加するには、上記の手順を繰り返します。
 
-## 追加情報
+## 関連トピック
 
 * [価格表の作成](./creating-a-price-list.md)
 * [価格レートを使う](./using-price-tiers.md)

@@ -585,7 +585,7 @@ cURLスクリプトのパラメーター：
 | $2       | `contentStructureId` |
 | $3       | 画像`id`               |
 
-## 追加情報
+## 関連トピック
 
 - [WebコンテンツAPIの基本](./web-content-api-basics.md)
 - [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

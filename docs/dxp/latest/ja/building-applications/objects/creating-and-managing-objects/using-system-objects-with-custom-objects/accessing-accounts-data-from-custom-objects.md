@@ -64,7 +64,7 @@ Account オブジェクトは一般的なアカウントデータ（名前、電
 これを行うには、目的のオブジェクト定義の編集を開始し、*Details*タブに移動し、*Title Field*に異なる値を選択します。 終了したら、*保存*をクリックします。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [アカウント](../../../../users-and-permissions/accounts.md)
 * [システムオブジェクトの拡張](../extending-system-objects.md)

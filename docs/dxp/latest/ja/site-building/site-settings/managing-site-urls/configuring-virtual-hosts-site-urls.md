@@ -30,7 +30,7 @@
 
 これで、設定済みのドメインを使用してサイトにアクセスできるようになりました。
 
-## 追加情報
+## 関連トピック
 
 * [サイトのフレンドリURLを設定する](./configuring-your-sites-friendly-url.md)
 * [リダイレクトと404トラッキングの設定](./setting-up-redirects-and-404-tracking.md)

@@ -58,7 +58,7 @@ Notification type client extensions は、Liferay の [通知イベント](../..
 type: notificationType
 ```
 
-## 追加情報
+## 関連トピック
 
 * [クライアントエクステンションの紹介](../client-extensions.md)
 * [`client-extension.yaml`でクライアント拡張機能を設定する。](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

@@ -138,7 +138,7 @@ SEOとOpenGraphの説明を一緒に更新することをお勧めします。
 
 ![ [画像の別の説明] フィールドは、表示ページの og:image:alt プロパティを定義します](./configuring-seo-and-open-graph/images/10.png)
 
-## 追加情報
+## 関連トピック
 
 - [ページのフレンドリURLの設定](../../creating-pages/page-settings/configuring-your-pages-friendly-url.md)
 - [Open Graphの設定](./../../site-settings/configuring-open-graph.md)

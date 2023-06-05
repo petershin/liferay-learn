@@ -1,5 +1,9 @@
 # セグメントの作成
 
+```{important}
+Analytics Cloudで作成したセグメントは、Liferay DXPと同期します。 ただし、Liferay DXPで作成したセグメントは、Analytics Cloudと同期しません。
+```
+
 ## 動的セグメントの作成
 
 1. ナビゲーションパネルの ［**Segments**］ をクリックします。 既存のセグメントが入った表が表示されます。

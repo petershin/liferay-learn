@@ -106,7 +106,7 @@
 
 ファイルをサービスにデプロイすると、シークレット変数が他の変数とともに環境変数ページに表示されます。
 
-## 追加情報
+## 関連トピック
 
 * [LCP.jsonによるコンフィギュレーション](../../reference/configuration-via-lcp-json.md)
 * [環境変数の定義](../../reference/defining-environment-variables.md)

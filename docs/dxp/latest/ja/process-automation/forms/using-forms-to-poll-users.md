@@ -84,7 +84,7 @@ DXP Update 27/CE GA 27より前のバージョンのLiferay 7.4に[アップグ�
 - ページ上にあった［Polls Display］ウィジェットを手動で［フォーム］ウィジェットに置き換えます。
 ```
 
-## 追加情報
+## 関連トピック
 
 - [フォームの作成と管理](./creating-and-managing-forms.md)
 - [7.4のメンテナンスモードと非推奨](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)

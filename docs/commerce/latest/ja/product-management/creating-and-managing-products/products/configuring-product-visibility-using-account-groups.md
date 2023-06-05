@@ -60,7 +60,7 @@
 
 この商品は、これらのアカウントグループのカスタマーアカウントであるアカウントのみに表示されるようになりました。
 
-## 追加情報
+## 関連トピック
 
 * [チャネルを使用した商品の可視性の構成](../../../store-management/channels/configuring-product-visibility-using-channels.md)
 * [新規アカウントグループの作成](../../../users-and-accounts/account-management/creating-a-new-account-group.md)

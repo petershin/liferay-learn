@@ -134,7 +134,7 @@ Liferay DXP 7.3以前では、*commerce商品仕様オプションの追加*お�
 | commerceモデルを追加  | アプリケーション管理者でブランドにモデルエントリーを追加する機能 |
 | 権限の設定       | アプリケーション管理者でリソース権限を表示および変更する機能   |
 
-## 追加情報
+## 関連トピック
 
 * [商品の概要](../../product-management/creating-and-managing-products/products/products-overview.md)
 * [新しいカタログを作成する](../../product-management/catalogs/creating-a-new-catalog.md)

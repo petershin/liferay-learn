@@ -146,7 +146,7 @@ BOMウィジェットに図が表示されます。
     * **名前** ：フォルダ名（自動車部品）
 1. ［**保存**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [商品バリアントのSKU作成](./creating-skus-for-product-variants.md)
 * [サイトにページを追加する](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/adding-pages/adding-a-page-to-a-site.html)

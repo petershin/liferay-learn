@@ -47,7 +47,7 @@ curl -X "POST" "http://localhost:8080/o/c/timeOffRequest?restrictFields=actions"
 }'
 ```
 
-## 追加情報
+## 関連トピック
 
 * [フィールド](../fields.md)
 * [オブジェクトへのフィールドの追加](./adding-fields-to-objects.md)

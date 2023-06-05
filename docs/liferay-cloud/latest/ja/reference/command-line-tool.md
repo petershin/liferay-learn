@@ -253,7 +253,7 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/uninstall.sh -fsSL | bash
 
 Windows 7および8の場合は、 ［**コントロールパネル**］ &rarr; ［**Add or Remove Programs**］ に進みます。 Windows 10では、 ［**コントロールパネル**］ &rarr; ［**プログラム**］ &rarr; ［**プログラムのアンインストール**］ に移動します。 次に、 プログラムの一覧から **LCP CLI** を探し、［**アンインストール**］をクリックします。 ウィザードの手順に従います。
 
-## 追加情報
+## 関連トピック
 
 * [トラブルシューティングツールとリソース](../troubleshooting/troubleshooting-tools-and-resources.md)
 * [CLIツールによる変更点のデプロイ](../build-and-deploy/deploying-changes-via-the-cli-tool.md)

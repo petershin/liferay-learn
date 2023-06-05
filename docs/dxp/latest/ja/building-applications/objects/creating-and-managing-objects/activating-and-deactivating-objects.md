@@ -22,7 +22,7 @@
 
 1. ［**Save**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](./creating-objects.md)
 * [オブジェクトの削除](./deleting-objects.md)

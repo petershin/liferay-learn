@@ -64,7 +64,7 @@
 
 元の画像がごみ箱から復元された場合、適用された画像に再びアクセスできます。
 
-## 追加情報
+## 関連トピック
 
 * [画像解像度の追加](./adding-image-resolutions.md)
 * [アダプティブメディア設定リファレンス](./adaptive-media-configuration-reference.md)

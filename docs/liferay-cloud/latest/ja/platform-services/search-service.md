@@ -69,6 +69,6 @@ Elasticsearchの環境変数やその他の設定方法はすべて、 [Elastics
 |:-------------- |:--------------- |:--------------- |
 | `ES_JAVA_OPTS` | `-Xms4g -Xmx4g` | ESインスタンスのJava設定 |
 
-## 追加情報
+## 関連トピック
 
 * [LCP JSONによる設定](../reference/configuration-via-lcp-json.md)

@@ -108,7 +108,7 @@
 
 ![このオブジェクトは、エントリーの作成と編集にデフォルトのレイアウトを使用します。](./designing-object-layouts/images/12.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](../creating-objects.md)
 * [オブジェクトへのフィールドの追加](../fields/adding-fields-to-objects.md)

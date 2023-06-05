@@ -67,7 +67,7 @@
 
 注文が承認されました（または拒否されました）。 追加の注文を確認するには、 ［**Notifications**］ ページに戻り、上記の手順を繰り返してください。
 
-## 追加情報
+## 関連トピック
 
 * [注文ワークフローの概要](./introduction-to-order-workflows.md)
 * [注文ワークフローの有効化・無効化](enabling-or-disabling-order-workflows.md)

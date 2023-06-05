@@ -111,7 +111,7 @@ DXP 7.2で、すでにホットフィックスがインストールされてい�
 
 Liferayがフィックスを提供するために提供するパッチの種類がわかったので、関連するパッチを最新の状態に保ち、それらを [インストール](./installing-patches-for-dxp-7-3-and-earlier.md) できます。
 
-## 追加情報
+## 関連トピック
 
 * [パッチのインストール](./installing-patches-for-dxp-7-3-and-earlier.md)
 * [パッチングツールのインストール](../reference/installing-the-patching-tool.md)

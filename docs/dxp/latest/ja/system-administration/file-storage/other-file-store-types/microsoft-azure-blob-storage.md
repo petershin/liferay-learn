@@ -1,5 +1,7 @@
 # Microsoft Azure Blob Storage Service
 
+{bdg-primary}`セルフホスティング専用`
+
 > 7.4以降および7.3 FP2以降で使用可能です。
 
 Microsoft Azure Blob Storageは、DXPのAzure Blob Storage Storeが使用するクラウドベースのストレージソリューションで、ファイルをクラウドにシームレスに保存することができます。 その下には、膨大な量の非構造化データを処理するために最適化されたマイクロソフトのBlob Storage APIが使用されています。
@@ -9,7 +11,7 @@ Microsoft Azure Blob Storageは、DXPのAzure Blob Storage Storeが使用する�
 次に、以下を実行して、Liferayインスタンスへの接続を有効にします。
 
 * [コントロールパネルでファイルの保存方法を設定する](#configuring-the-store)
-* [`dl.store.impl`ポータルプロパティを設定して、デフォルトのストレージ方式としてAzure Blog Storage](#setting-azure-blog-storage-as-default-store) を使用するように設定します。
+* [`dl.store.impl` ポータルのプロパティを設定して、デフォルトのストレージ方式として Azure Blob Storage](#setting-azure-blob-storage-as-default-store) を使用するようにします。
 
 ```{warning}
 ドキュメントライブラリでデータベーストランザクションのロールバックが発生した場合、トランザクションのファイルシステムの変更は元に戻されません。 ドキュメントライブラリファイルとファイルシステムストア内のファイルとの間に不整合が発生する可能性があり、手動での同期が必要になる場合があります。 DBStoreを除くすべてのDXPストアは、この制限に対して脆弱です。
@@ -33,9 +35,9 @@ Microsoft Azure Blob Storageは、DXPのAzure Blob Storage Storeが使用する�
 
 Azure Blob Storage Storeの設定が完了したら、デフォルトのファイルストレージシステムとして設定することができます。
 
-## Azure Blob Storageをデフォルトのストアとして設定する
+## Azure Blob Storageをデフォルトのストアに設定する
 
-以下の手順に従って、Liferayインスタンスのデフォルトストアとして Azure Blob Storageを使用します。
+以下の手順で、LiferayインスタンスのデフォルトStoreとしてAzure Blob Storageを使用します：
 
 1. 下記のプロパティをインスタンスの[`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md)ファイルに追加します。
 
@@ -55,7 +57,7 @@ Azure Blob Storage Storeの設定が完了したら、デフォルトのファ�
 クラスター環境でAzure Blob Storageのストアを使用している場合、すべてのノードの設定が同一である必要があります。 特に、`portal-ext.properties`ファイルと、システム設定のAzure Blob Storageストア設定が同じであることを確認してください。 
 ```
 
-## 追加情報
+## 関連トピック
 
 * [Azure Blob Storageのドキュメント](https://docs.microsoft.com/en-us/azure/storage/blobs/)
 * [ファイル ストレージ](../../file-storage.md)

@@ -104,6 +104,6 @@ npm link
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [Creating a Theme](../getting-started/setting-up-an-environment-and-creating-a-theme.md)

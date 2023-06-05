@@ -12,7 +12,7 @@
 
 ![マスターページテンプレートの一般的な使用例には、ヘッダー、ドロップゾーン、およびフッターがあります。](./master-page-templates/images/02.png)
 
-## 追加情報
+## 関連トピック
 
 - [マスターページテンプレートの作成](./creating-a-master-page-template.md)
 - [マスターページテンプレートの管理](./managing-master-page-templates.md)

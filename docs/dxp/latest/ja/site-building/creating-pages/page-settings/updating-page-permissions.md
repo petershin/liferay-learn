@@ -20,7 +20,7 @@
 
 1. ［**Save**］ をクリックすると、変更が適用されます。
 
-## 追加情報
+## 関連トピック
 
 * [ロールと権限について](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
 * [ユーザーのロールへの割り当て](../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md)

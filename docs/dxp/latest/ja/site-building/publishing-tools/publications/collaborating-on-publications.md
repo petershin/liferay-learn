@@ -68,7 +68,7 @@
 
 1. ［**Save**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [パブリケーションの作成と管理](./creating-and-managing-publications.md)
 * [変更の作成と公開](./making-and-publishing-changes.md)

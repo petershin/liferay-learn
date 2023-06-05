@@ -99,7 +99,7 @@ Liferay Cloudのコンソールから、Dynatraceの高度なパフォーマン�
 
 Dynatraceの認証情報でログインすると、ログの軌跡を確認したり、カスタムダッシュボードを作成したりできます。
 
-## 追加情報
+## 関連トピック
 
 * [Liferay DXPサービスの使用](../using-the-liferay-dxp-service.md)
 * [リアルタイムアラート](./real-time-alerts.md)

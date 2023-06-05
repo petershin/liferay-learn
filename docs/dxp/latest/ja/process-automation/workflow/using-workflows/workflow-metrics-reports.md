@@ -146,7 +146,7 @@ Liferay 7.4では、Performance by Stepメトリックにバージョンセレ�
 
 7.4でモーダルのプロセス詳細セクションの項目が強化されました。 ワークフローの追跡」リンクをクリックすると、ワークフローにおけるアイテムの進行状況を示すダイアグラムビューが表示されます。
 
-## 追加情報
+## 関連トピック
 
 * [ワークフローメトリクスの使用](./using-workflow-metrics.md)
 * [ワークフローの構築](../designing-and-managing-workflows/building-workflows.md)

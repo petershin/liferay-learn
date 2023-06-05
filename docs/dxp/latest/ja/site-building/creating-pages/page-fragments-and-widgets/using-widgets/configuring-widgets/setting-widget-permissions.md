@@ -19,7 +19,7 @@ Liferayのすべてのウィジェットは、Liferayの強固できめ細かい
 ウィジェットによっては、そのウィジェット固有の権限があります。 例えば、掲示板には*ユーザを拒否する*という権限があります。 これは、他のほとんどのウィジェットのコンテキストでは意味がありません。 その権限は、そのウィジェットでカバーしています。
 ```
 
-## 追加情報
+## 関連トピック
 
 - [ウィジェットのスコープを設定する](./setting-widget-scopes.md)
 - [ロールと権限について](../../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

@@ -86,7 +86,7 @@
 
 チャネルが作成され、選択したサイトに関連付けられます。 商品をこの新しいチャネルでフィルタリングされるように設定できるようになりました。
 
-## 追加情報
+## 関連トピック
 
 * [チャネルについて](./introduction-to-channels.md)
 * [チャネルを使用した商品の可視性の構成](./configuring-product-visibility-using-channels.md)

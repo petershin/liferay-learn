@@ -107,7 +107,7 @@
 
 `@Component`アノテーションに続いて、モジュールは`BaseDispatchTaskExecutor`抽象クラスを拡張し、`doExecute`メソッドをオーバーライドします。 このメソッドは、`LogFactoryUtil`を使用して、コンソールのログに通知メッセージを表示します。
 
-## 追加情報
+## 関連トピック
 
 * [ジョブスケジューラフレームワークの理解](./understanding-the-job-scheduler-framework.md)
 * [ジョブスケジューラーを使う](./using-job-scheduler.md)

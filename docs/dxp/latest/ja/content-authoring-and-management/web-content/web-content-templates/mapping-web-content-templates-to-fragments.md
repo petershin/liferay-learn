@@ -35,7 +35,7 @@
 
 1. ［**公開**］ をクリックして変更を保存します。
 
-## 追加情報
+## 関連トピック
 
 - [フラグメントの使用](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)
 - [Webコンテンツストラクチャーを理解する](../../../content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures.md)

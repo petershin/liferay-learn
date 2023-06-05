@@ -109,7 +109,7 @@ DXPの[ワークフロー](../../../../process-automation/workflow/introduction-
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
   - [ドキュメントとメディアUIリファレンス](../../documents-and-media-ui-reference.md)
   - [フォルダの作成](../../uploading-and-managing/creating-folders.md)

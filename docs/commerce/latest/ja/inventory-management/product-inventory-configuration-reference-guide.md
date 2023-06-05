@@ -34,7 +34,7 @@
 
 ![ [設定] タブには、選択した製品で利用可能なインベントリオプションが表示されます。](./product-inventory-configuration-reference-guide/images/03.png)
 
-## 追加情報
+## 関連トピック
 
 * [カスタムの在庫数低下アクティビティの実装](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)
 * [在庫数低下時のアクション](./low-stock-action.md)

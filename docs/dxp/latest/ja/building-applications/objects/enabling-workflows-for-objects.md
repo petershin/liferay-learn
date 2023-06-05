@@ -36,7 +36,7 @@
 
 1. ［**保存**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクト](../objects.md)
 * [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)

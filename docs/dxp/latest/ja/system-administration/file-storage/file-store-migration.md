@@ -40,7 +40,7 @@ DXPインスタンスが、新しく設定されたファイルストア上に�
 システム設定で新しいストア構成を必ず保存してください。 そうしないと、新しいストアを使用できず、次の例外が発生します：`java.lang.IllegalStateException: Store is not available`
 ```
 
-## 追加情報
+## 関連トピック
 
 * [ファイル ストレージ](../file-storage.md)
 * [Amazon S3 Store](./other-file-store-types/amazon-s3-store.md)

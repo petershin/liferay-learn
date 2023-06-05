@@ -105,7 +105,7 @@ LARファイルのアップロードと確認が完了すると、エクスポ�
 
 適切なオプションを選択したら、 ［**Import**］ を選択すると、ウィジェットのデータがインポートされ、使用できるようになります。
 
-## 追加情報
+## 関連トピック
 
 - [ウィジェット間の通信](./communication-between-widgets.md)
 - [サイトページとコンテンツのエクスポート/インポート](../../../../sites/exporting-importing-site-pages-and-content.md)

@@ -52,7 +52,7 @@ FreeMarkerでテンプレートを作成または編集する権限は信頼で�
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md)
 * [フラグメントエディターの使用](./using-the-fragments-editor.md)

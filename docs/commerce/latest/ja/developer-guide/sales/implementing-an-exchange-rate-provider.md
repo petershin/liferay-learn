@@ -164,7 +164,7 @@ private Map<String, Double> _exchangeRates = new HashMap<String, Double>() {
 
 　 `ExchangeRateProvider`インターフェイスを実装するための基本を理解し、Liferay Commerceに新しい為替レートプロバイダーを追加しました。
 
-## 追加情報
+## 関連トピック
 
 * [新しい通貨の追加](../../store-management/currencies/adding-a-new-currency.md)
 * [為替レートの管理](../../store-management/currencies/managing-exchange-rates.md)

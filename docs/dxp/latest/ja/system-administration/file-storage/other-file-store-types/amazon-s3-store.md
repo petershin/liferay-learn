@@ -1,5 +1,7 @@
 # Amazon Simple Storage Service
 
+{bdg-primary}`セルフホスティング専用`
+
 AmazonのS3（simple storage service）は、DXPのS3ストアが利用しているクラウドベースのストレージソリューションで、ファイルをシームレスにクラウドに保存できます。 AWSアカウントを取得し、S3 **バケット** を作成したら、S3ストアを設定できます。
 
 S3は、ファイルの保存にバケットという概念を用いています。 AmazonのUIで、DXPファイルの [バケット](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html) を作成します。 DXPサーバーのホストにできるだけ近い [地理的な地域](https://docs.aws.amazon.com/general/latest/gr/s3.html) にバケットを構成します。
@@ -12,11 +14,11 @@ AWS署名バージョン4リクエストの承認をサポートするための�
 
 ## SAXParserのセットアップ
 
-Amazon S3にはSAXParserが必要です。 お使いの環境でSAXParserが利用できない場合。
+Amazon S3にはSAXParserが必要です。 お使いの環境でSAXParserが利用できない場合、
 
-1. [Xerces SAXParser](https://xerces.apache.org/mirrors.cgi) をアプリケーションサーバーのグローバルライブラリフォルダにダウンロードします。 `Tomcat では /lib/ext` 、JBoss EAP および WildFly では `/module` です。
+1. [Xerces SAXParser](https://xerces.apache.org/mirrors.cgi) をアプリケーションサーバーのグローバルライブラリフォルダにダウンロードします： `Tomcat では /lib/ext` 、JBoss EAP および WildFly では `/module` です。
 
-1. [`system-ext.properties`](../../../installation-and-upgrades/reference/system-properties.md) ファイルで SAXParser を指定する。
+1. [`system-ext.properties`](../../../installation-and-upgrades/reference/system-properties.md) ファイルで SAXParser を指定する：
 
     ```properties
     org.xml.sax.driver=com.sun.org.apache.xerces.internal.parsers.SAXParser
@@ -26,7 +28,7 @@ Amazon S3にはSAXParserが必要です。 お使いの環境でSAXParserが利�
 
 ## ストアの設定
 
-1. 設定 [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md):
+1. 設定 [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md)：
 
     ```properties
     dl.store.impl=com.liferay.portal.store.s3.S3Store
@@ -73,7 +75,7 @@ DXPがクラスター全体でAmazon S3ストアを使用するようになり�
 
 Amazonのサービスの使用に関する詳細については、Amazon Simple Storageのドキュメントを参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [ファイルストレージ](../../file-storage.md)
 * [Bucket Restrictions and Limitations](https://docs.aws.amazon.com/AmazonS3/latest/dev//BucketRestrictions.html#bucketnamingrules)

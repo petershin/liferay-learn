@@ -36,7 +36,7 @@ Support Accessに変更があった場合、誰がいつ変更したかを示す
 
 ![図3：サポートアクセスの設定が変更されると、メールで全員に通知されます。](./support-access/images/03.png)
 
-## 追加情報
+## 関連トピック
 
 * [トラブルシューティングツールとリソース](./troubleshooting-tools-and-resources.md)
 * [ヘルプセンター](https://help.liferay.com/hc/en-us)

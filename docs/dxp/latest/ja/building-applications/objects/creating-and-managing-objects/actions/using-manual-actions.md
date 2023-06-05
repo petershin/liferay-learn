@@ -49,7 +49,7 @@ Liferayは、どのロールがスタンドアロンアクションをトリガ�
 
 ![スタンドアロンパーミッションは、アクションを使用します。 [actionName] ネーミングパターンを使用します。](./using-manual-actions/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトアクションの定義](./defining-object-actions.md)
 * [アクションの種類について](./understanding-action-types.md)

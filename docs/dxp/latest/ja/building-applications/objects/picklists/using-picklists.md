@@ -90,7 +90,7 @@
 }
 ```
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトへのフィールドの追加](../creating-and-managing-objects/fields/adding-fields-to-objects.md)
 * [候補リスト権限の管理](./managing-picklist-permissions.md)

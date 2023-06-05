@@ -84,6 +84,6 @@
 
 また、ウィジェットのカスタムCSSクラス名とカスタムCSSコードを入力することができます。 ［**Add a CSS rule for just this portlet**］ または ［**Add a CSS rule for all portlets like this one**］ リンクをクリックすると、CSSコードシェルがカスタムCSSテキストボックス内に追加されます。
 
-## 追加情報
+## 関連トピック
 
 - [ウィジェットデータのエクスポート/インポート](../configuring-widgets/exporting-importing-widget-data.md)

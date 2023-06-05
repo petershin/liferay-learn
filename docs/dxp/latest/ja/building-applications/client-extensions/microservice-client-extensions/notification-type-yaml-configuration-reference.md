@@ -31,7 +31,7 @@ zebra-oauth-user-agent:
 | `resourcePath`                           | 文字列（URLの一部） | (必須) 通知ハンドラへのパスです。 この値は、OAauth2アプリケーションプロファイルの `homePageURL` の値と組み合わされて、完全なURLとなります。 |
 | `oAuth2ApplicationExternalReferenceCode` | 文字列         | (必須) リクエストを保護するために必要な、OAuth2アプリケーションプロファイルの外部参照コードです。                                |
 
-## 追加情報
+## 関連トピック
 
 * [マイクロサービスクライアント拡張機能](../microservice-client-extensions.md)
 * [クライアントエクステンションの操作](../working-with-client-extensions.md)

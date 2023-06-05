@@ -86,7 +86,7 @@ Liferay DXPのほとんどの新しいバージョンには、デフォルト設
 | view.count.enabled                                                                       | **NA** | true. [7.3 旧バージョンと非互換の変更](https://learn.liferay.com/dxp/latest/ja/liferay-internals/reference/7-3-breaking-changes.html#replaced-portal-properties-view-count-enabled-and-buffered-increment-enabled) を参照。 |
 | work.dir.override.enabled                                                                | **NA** | false. [Work Directory](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html#Work%20Directory) を参照。                                                              |
 
-## 追加情報
+## 関連トピック
 
 * [7.2でのデフォルト設定の変更](default-setting-changes-in-7-2.md)
 * [7.3 旧バージョンと非互換の変更](../../../liferay-internals/reference/7-3-breaking-changes.md)

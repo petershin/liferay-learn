@@ -82,6 +82,6 @@ CIで変更を加えて新しいビルドを起動したら、Liferay Cloudコ�
 
 ![新しい "カスタムサービス" 他のサービスと並行して展開。](./using-a-custom-service/images/01.png)
 
-## 追加情報
+## 関連トピック
 
 * [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow)

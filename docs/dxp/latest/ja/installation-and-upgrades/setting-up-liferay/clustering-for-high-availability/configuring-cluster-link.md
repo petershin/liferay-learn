@@ -93,7 +93,7 @@ GMS: address=oz-52865, cluster=liferay-channel-control, physical address=192.168
 
 負荷をかけた状態でDXPクラスタをテストし、システムの最適化を調査するのが最善です。 サイトで最も使用されているエンティティを検討し、キャッシュ設定を適切に調整します。 キャッシュの構成については、 [Cache Configuration](https://help.liferay.com/hc/ja/articles/360035581451-Introduction-to-Cache-Configuration) を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [TCPを介したユニキャストの構成](./configuring-unicast-over-tcp.md)
 * [高可用性のクラスタリング](../clustering-for-high-availability.md)

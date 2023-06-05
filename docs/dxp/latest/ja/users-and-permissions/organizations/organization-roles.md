@@ -48,7 +48,7 @@ Liferay DXPでは、以下のデフォルトの組織ロールが用意されて
 
 1. 終了したら ［**Update Associations**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [組織について](./understanding-organizations.md)
 * [組織の作成と管理](./creating-and-managing-organizations.md)

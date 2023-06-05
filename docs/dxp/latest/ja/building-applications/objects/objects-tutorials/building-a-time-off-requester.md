@@ -239,7 +239,7 @@ Liferay Objectでは、コードを書いたりモジュールをデプロイす
 
 ![［Time Off Requests］タブで、employeeの関連するリクエストを表示します。](./building-a-time-off-requester/images/12.png)
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクト](../../objects.md)
 * [オブジェクトの作成](../creating-and-managing-objects/creating-objects.md)

@@ -118,7 +118,7 @@ Liferay は、選択された各言語の XLIFF ファイルを含む ZIP アー
 
 [Google Cloud Translation](https://cloud.google.com/translate/docs/setup) , [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) , または [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/) とLiferayの統合を有効にした場合、それらを使用してWebコンテンツを自動的に翻訳することが可能です。 詳しくは、 [翻訳のための第三者機関の利用](./using-third-parties-for-translation.md) をご覧ください。
 
-## 追加情報
+## 関連トピック
 
 * [コンテンツページの翻訳](./translating-content-pages.md)
 * [翻訳のための第三者機関の利用](./using-third-parties-for-translation.md)

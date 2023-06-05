@@ -132,6 +132,6 @@
 
 [`App.js`](./remote-apps-with-headless-apis/resources/liferay-j4x7-overlay/src/App.js) ファイルでフォームを集め、1つのページに表示します。
 
-## 追加情報
+## 関連トピック
 
 [基本的なカスタム要素の作成](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) [ヘッドレスフレームワークの統合](../../objects/understanding-object-integrations/headless-framework-integration.md)

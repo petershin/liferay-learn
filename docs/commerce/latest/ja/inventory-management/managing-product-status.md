@@ -100,7 +100,7 @@
 
 ![公開済みチェックボックスをオフにすると、ストアフロントから製品が削除されます。](./managing-product-status/images/05.png)
 
-## 追加情報
+## 関連トピック
 
 * [チャネルを使用した商品の可視性の構成](../store-management/channels/configuring-product-visibility-using-channels.md)
 * [シンプル商品の作成](../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)

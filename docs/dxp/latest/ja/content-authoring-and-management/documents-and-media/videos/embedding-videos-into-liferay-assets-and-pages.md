@@ -48,7 +48,7 @@ Liferayは、特に動画をページに埋め込むための2つのすぐに使
 外部動画フラグメントは、自動再生、ループ、ミュートのビデオコントロールに対応していません。 これらのコントロールが必要な場合は、動画URLフラグメントを使用してください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [外部動画ショートカットの作成](./creating-external-video-shortcuts.md)
 * [動画ショートカットプロバイダーの作成](../developer-guide/creating-video-shortcut-providers.md)

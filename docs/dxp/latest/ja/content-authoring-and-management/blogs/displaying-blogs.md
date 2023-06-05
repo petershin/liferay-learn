@@ -86,7 +86,7 @@ Liferay はブログエントリーを表示するために2つの方法を提�
 
 **スコープ：** ウィジェットが表示するブログインスタンスを、現在のサイトのブログ（デフォルト）、グローバルブログ、またはページのブログから指定します。
 
-## 追加情報
+## 関連トピック
 
 * [ブログエントリの追加](./adding-blog-entries.md)
 * [表示ページテンプレートの使用](../../site-building/displaying-content/using-display-page-templates.md)

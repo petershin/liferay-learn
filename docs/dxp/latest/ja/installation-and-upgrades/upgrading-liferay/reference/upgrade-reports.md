@@ -30,6 +30,8 @@ cd liferay-home
 echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties
 ```
 
+なお、ドキュメントライブラリーのサイズを計算すると、長い待ち時間がかかる場合があります。 そのため、タイムアウト時間はデフォルトで10秒に設定されています。 この期間を変更するには、 `portal-ext.properties` ファイルの `upgrade.report.dl.storage.size.timeout` プロパティを変更してください。 時間を長くするか、 `0` に設定するとタイムアウトが無効になります。
+
 [データベースアップグレードツール](../upgrade-basics/using-the-database-upgrade-tool.md)は、次回の実行時にアップグレードレポートを生成します。
 
 以下は、アップグレードレポートの例です。
@@ -79,9 +81,12 @@ Warnings thrown during upgrade process
 ...
 ```
 
-## 追加情報
+## 関連トピック
 
 * [アップグレードの基本](../upgrade-basics.md)
+
 * [データベースアップグレードツールの使用](../upgrade-basics/using-the-database-upgrade-tool.md)
+
 * [データベースアップグレードツールのリファレンス](../reference/database-upgrade-tool-reference.md#manual-configuration)
+
 * [アップグレードのトラブルシューティング](../reference/troubleshooting-upgrades.md)

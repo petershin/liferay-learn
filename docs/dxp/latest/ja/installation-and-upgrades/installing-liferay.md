@@ -76,7 +76,7 @@ Liferayをインストールした後、 [Liferayのセットアップ](./settin
 * 高可用性
 * その他
 
-## 追加情報
+## 関連トピック
 
 * [バックアップ](./maintaining-a-liferay-installation/backing-up.md)
 * [Liferayのアップデート](./maintaining-a-liferay-installation/updating-liferay.md)

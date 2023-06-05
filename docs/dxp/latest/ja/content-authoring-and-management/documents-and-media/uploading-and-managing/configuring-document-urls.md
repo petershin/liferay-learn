@@ -70,7 +70,7 @@ Liferay 7.4 U34/GA34から、表示ページのテンプレートフレームワ
 
 ![ご希望のバージョンのダウンロードURLをコピーしてください。](./configuring-document-urls/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [ドキュメントとメディア](../../documents-and-media.md)
 * [ファイルのアップロード](./uploading-files.md)

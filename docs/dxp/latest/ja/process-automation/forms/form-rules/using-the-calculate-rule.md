@@ -34,7 +34,7 @@
 
 ![2つのフィールドを掛け合わせて、総登録料を計算します。](./using-the-calculate-rule/images/02.png)
 
-## 追加情報
+## 関連トピック
 
 * [フォームの作成](../creating-and-managing-forms/creating-forms.md)
 * [フォームルールの概要](./form-rules-overview.md)

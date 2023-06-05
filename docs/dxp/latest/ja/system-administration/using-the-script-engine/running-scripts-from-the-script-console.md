@@ -83,7 +83,7 @@ userInfo.each {
 
 スクリプトエンジンは、Kaleoワークフローなど、スクリプトコンソールの外部で使用できます。 ワークフローでスクリプトエンジンを使用する方法は次回学びます。
 
-## 追加情報
+## 関連トピック
 
 * [スクリプトからのLiferayサービスの呼び出し](./invoking-liferay-services-from-scripts.md)
 * [ワークフローでのスクリプトエンジンの使用](../../process-automation/workflow/developer-guide/using-the-script-engine-in-workflow.md)

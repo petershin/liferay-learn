@@ -97,7 +97,7 @@ Liferay Commerceでは、グループ商品は、顧客の利便性や特別価�
 1. ［**保存**］ をクリックします。 （［Promo Price］および［Cost］フィールドが0.00のままの場合、この時点では割引やプロモーションは適用されません。）
 1. ［**Price List**］ をクリックして、この商品を既存の[［価格表］](../../../pricing/adding-products-to-a-price-list.md)に適用します。
 
-## 追加情報
+## 関連トピック
 
 * [シンプル商品を作成する](./creating-a-simple-product.md)
 * [仮想商品の作成](./creating-a-virtual-product.md)

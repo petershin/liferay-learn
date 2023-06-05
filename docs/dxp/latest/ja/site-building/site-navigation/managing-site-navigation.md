@@ -50,7 +50,7 @@ DXP 7.3では、複数のサイトで使用するナビゲーションメニュ�
 
    ![ページツリーメニューからページを追加、プレビュー、構成、または並べ替えることができます。](./managing-site-navigation/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [サイトにページを追加する](../creating-pages/adding-pages/adding-a-page-to-a-site.md)
 * [ナビゲーションメニューの使用](./using-the-navigation-menus-application.md)

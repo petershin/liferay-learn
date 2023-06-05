@@ -376,7 +376,7 @@ AND
 futureDates(fieldName, startsFrom, responseDate, years, 0, endsOn, responseDate, years, 65)
 ```
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](../creating-objects.md)
 * [オブジェクトへのフィールドの追加](../fields/adding-fields-to-objects.md)

@@ -18,6 +18,6 @@
 *［Product Details］* ウィジェットおよび *［Product Publisher］* ウィジェットは、Liferay のアダプティブメディアをすぐにサポートします。 詳しくは、 [配信デバイスと画面最適化メディア](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media.html) を参照してください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [関連商品、アップセル、クロスセル](../../product-management/creating-and-managing-products/products/related-products-up-sells-and-cross-sells.md)

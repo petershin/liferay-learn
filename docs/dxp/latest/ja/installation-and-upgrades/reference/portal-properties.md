@@ -237,7 +237,7 @@ DXPデータベースに格納されているプロパティは、ポータル�
 
 
 
-## 追加情報
+## 関連トピック
 
 * [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)
 * [ポータル開発者プロパティ](../../liferay-internals/reference/portal-developer-properties.md)

@@ -45,7 +45,7 @@
 
 ゲストサイトのフォームがこのサイトにインポートされます。
 
-## 追加情報
+## 関連トピック
 
 * [フォームの作成](./creating-forms.md)
 * [フォーム構成リファレンス](./forms-configuration-reference.md)

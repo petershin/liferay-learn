@@ -70,7 +70,7 @@ Liferay Cloud の新規ユーザーはアカウントを作成する必要があ
 | 手動でダウンスケールする         | &#10004; |  &#10004;   |    X     |    X    |
 | VPN設定の変更             | &#10004; |  &#10004;   | &#10004; |    X    |
 
-## 追加情報
+## 関連トピック
 
 * [初期設定の概要](../getting-started/initial-setup-overview.md)
 * [チーム活動](./team-activities.md)

@@ -38,7 +38,7 @@ Liferayは、Objectアクションによってトリガーされたメール通�
 
 1. ［**Save**］ をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [通知テンプレートの作成](./creating-notification-templates.md)
 * [個人通知の設定](./configuring-personal-notifications.md)

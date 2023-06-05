@@ -28,7 +28,7 @@ OpenOfficeとLibreOfficeはどちらも統合可能ですが、一部の機能�
 
 ドキュメントの変換、サポートされているドキュメントタイプのブラウザでの表示、ドキュメントのサムネイルとプレビューの生成など、OpenOffice / LibreOfficeと互換性のある機能を使用できるようになりました。
 
-## 追加情報
+## 関連トピック
 
 * [ドキュメントとメディア](../../documents-and-media.md)
 * [ドキュメントとメディアプレビューの設定](./configuring-documents-and-media-previews.md)

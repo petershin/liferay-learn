@@ -23,7 +23,7 @@
 
 掲示板は [RSS](https://en.wikipedia.org/wiki/RSS) フィードとして公開できます。 **掲示板** のRSSはデフォルトで有効になっており、Liferay DXPはRSS 1.0、RSS 2.0、またはAtom 1.0をサポートしています。
 
-## 追加情報
+## 関連トピック
 
 * [掲示板カテゴリのメーリングリストの設定](./configuring-a-message-boards-category-mailing-list.md)
 * [メールの設定](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)

@@ -56,7 +56,7 @@ Miniumサイトに割引レベルを追加する場合。
 価格エントリーの割引を上書きすると、そのSKUを対象とするすべての割引レベルが上書きされます。 詳しくは、 [割引の上書き](./introduction-to-discounts.md#overriding-discounts) をご覧ください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [価格の概要](../introduction-to-pricing.md)
 * [割引について](./introduction-to-discounts.md)

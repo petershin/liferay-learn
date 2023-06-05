@@ -1,21 +1,21 @@
 # Kaleoフォーム
 
 ```{important}
-Kaleo Forms は Liferay 7.4 で [maintenance mode](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) になっています。 可能であれば [オブジェクト](../../../building-applications/objects.md) を使用してください。
+Kaleo Formsは、Liferay 7.4では[メンテナンスモード](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)になっています。 可能であれば、[オブジェクト](../../../building-applications/objects.md)を使用してください。
 ```
 
-Liferayの **KALEOフォーム** ソリューションの特徴を兼ね備えた **ワークフローデザイナー** と **動的データリスト** フォームベースのビジネスプロセスを作成します。 これを使えば、フォームとワークフローのタスクを統合して、会議室のチェックアウトフォームやサポートチケットのプロセスなどを作成することができます。
+Liferayの **Kaleoフォーム** ソリューションは、 **ワークフローデザイナー** と **動的データリスト** の特徴を組み合わせて、フォームベースのビジネスプロセスを作成します。 これを使えば、フォームとワークフロータスクを統合して、会議室のチェックアウトフォームやサポートチケットのプロセスなどを作成することができます。
 
 * [Kaleoフォーム](#kaleo-forms)
   * [Kaleoフォームプロセスの作成](#creating-a-kaleo-forms-process)
   * [Kaleoフォームプロセスの利用](#using-a-kaleo-forms-process)
-  * [追加情報](#additional-information)
+  * [関連トピック](#related-topics)
 
 ## Kaleoフォームプロセスの作成
 
 以下の手順で、Kaleoフォームの新規プロセスを作成します。
 
-1. ［**サイトメニュー**］ を開き、 **コンテンツ & データ** &rarr; **Kaleoフォーム管理** に移動します。
+1. ［**サイトメニュー**］ を開き、 ［**コンテンツ & データ**］ &rarr; ［**Kaleoフォーム管理**］ に移動します。
 
 1. **追加** ボタン ![Add Button](../../../images/icon-add.png) をクリックして、新規プロセスウィザードを開きます。
 
@@ -39,7 +39,7 @@ Liferayの **KALEOフォーム** ソリューションの特徴を兼ね備え�
 
    既存の公開済みワークフローから選ぶことも、新規に作成することもできます。
 
-   * 公開されている既存のワークフローを選択するには、 ［**アクション**］ ボタン ![Actions Button](../../../images/icon-actions.png)をクリックし、 ［**選択**］ を選択します。 また、 **編集** を選択して、ワークフローを修正してから選択することもできます。
+   * 公開されている既存のワークフローを選択するには、 **アクション** ボタン![Actions Button](../../../images/icon-actions.png)をクリックし、 ［**選択**］ を選択します。 また、 **編集** を選択して、ワークフローを修正してから選択することもできます。
 
    * 新しいワークフローを作成するには、 ［**Add Workflow**］ をクリックして、必要な要素を組み込みます。 詳細は、 [ワークフローデザイナーの概要](../../workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) を参照してください。 完了したら、 ［**発行**］ をクリックし、ダイアログウィンドウを閉じると、選択可能なワークフローのリストが更新されます。
 
@@ -63,7 +63,7 @@ Liferayの **KALEOフォーム** ソリューションの特徴を兼ね備え�
 
 以下の手順で、Kaleoフォームのプロセスを開始します。
 
-1. ［**サイトメニュー**］ を開き、 **コンテンツ & データ** &rarr; **Kaleoフォーム管理** に移動します。
+1. ［**サイトメニュー**］ を開き、 ［**コンテンツ & データ**］ &rarr; ［**Kaleo Form管理**］ に移動します。
 
 1. 使用したい **Kaleoフォームプロセス** をクリックし、 **追加** ボタン ![Add Button](../../../images/icon-add.png)をクリックします。 選択したプロセスの初期フォームに移動します。
 
@@ -85,7 +85,7 @@ Liferay 7.4アップデート1では、Kaleo Form管理アプリケーション�
 
 図ビューにアクセスするには、エントリーのアクションメニューの［Track Workflow］設定オプション（![Actions](../../../images/icon-actions.png)）をクリックします。
 
-## 追加情報
+## 関連トピック
 
 * [フォームの概要](../introduction-to-forms.md)
 * [ワークフローの概要](../../workflow/introduction-to-workflow.md)

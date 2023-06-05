@@ -119,7 +119,7 @@ Liferayには通知ツールが統合されているため、プラットフォ�
 | 購読しているWikiに新しいWikiページを追加します。 | &#10004; | &#10004; |
 | 購読しているWikiページを更新する           | &#10004; | &#10004; |
 
-## 追加情報
+## 関連トピック
 
 * [メールの設定](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
 * [メール設定](../../system-administration/configuring-liferay/virtual-instances/email-settings.md)

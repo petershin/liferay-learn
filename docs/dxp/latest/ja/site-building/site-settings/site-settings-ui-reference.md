@@ -355,7 +355,7 @@ Liferay DXPとDocuSignを統合し、電子署名を管理することができ�
 
 ![サブサイトがこのサイトのコンテンツを表示できるかどうかを決定できます。](./site-settings-ui-reference/images/18.png)
 
-## 追加情報
+## 関連トピック
 
 - [ページ設定UIリファレンス](../creating-pages/page-settings/configuring-individual-pages.md)
 - [ページセットの設定](../creating-pages/page-settings/configuring-page-sets.md)

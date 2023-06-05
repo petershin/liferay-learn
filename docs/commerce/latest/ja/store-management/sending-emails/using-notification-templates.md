@@ -92,7 +92,7 @@ Commerce 2.0以前でメール通知を作成するには：
 
 通知テンプレートで、注文を受けた際に自動でメールを送信するようにしました。 テンプレートを作成すると、注文が入るたびに、新しい通知が通知キューに追加されます。 これを見るには、注文後に **Notifications Queue** サブタブを確認します。 デフォルトでは、Liferayインスタンスは15分ごとにキューをチェックし、未送信の通知を送信します。 間隔を変更する方法については、[コマース通知キューの構成](./configuring-the-commerce-notification-queue.md)参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [通知テンプレート変数リファレンスガイド](./notification-template-variables-reference-guide.md)
 * [コマース通知キューの設定](./configuring-the-commerce-notification-queue.md)

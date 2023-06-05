@@ -35,7 +35,7 @@
 
 ![グリッドには、標準的な構成オプションと独自の構成オプションがあります。](./using-layout-elements/images/03.png)
 
-## 追加情報
+## 関連トピック
 
 * [デフォルトのフラグメントリファレンス](./default-fragments-reference.md)
 * [フラグメント構成の保存](./saving-fragment-compositions.md)

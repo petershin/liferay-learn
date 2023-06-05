@@ -68,7 +68,7 @@ Groovy Scriptアクションは、Groovyスクリプトを実行します。 用
 
 <!--TASK: When Client Extensions documentation is ready, recommend custom object actions instead of groovy scripts due to limitations. -->
 
-## 追加情報
+## 関連トピック
 
 * [オブジェクトの作成](../creating-objects.md)
 * [オブジェクトアクションの定義](./defining-object-actions.md)

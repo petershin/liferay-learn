@@ -22,6 +22,6 @@ Liferay Commerce 3.0は、Liferay DXPの最新版に対応しています。 当
 | [COMMERCE-4190](https://issues.liferay.com/browse/COMMERCE-4190) | 配送オプションのエントリーがテーブルに表示されない。                                                             |
 | [COMMERCE-4915](https://issues.liferay.com/browse/COMMERCE-4915) | DXP 7.2およびCommerce 2.1.2からDXP 7.3およびCommerce 3.0にアップグレードした場合、税カテゴリーページが表示されず、エラーが発生する。 |
 
-## 追加情報
+## 関連トピック
 
 * [3.0 旧バージョンと非互換の変更](./3-0-breaking-changes.md)

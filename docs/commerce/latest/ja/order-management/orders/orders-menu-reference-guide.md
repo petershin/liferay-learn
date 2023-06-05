@@ -96,7 +96,7 @@
 
 ![［送信済み］タブ](./orders-menu-reference-guide/images/04.png "［送信済み］タブ")
 
-## 追加情報
+## 関連トピック
 
 * [注文ワークフローの概要](../order-workflows/introduction-to-order-workflows.md)
 * [注文ワークフローの有効化・無効化](../order-workflows/enabling-or-disabling-order-workflows.md)

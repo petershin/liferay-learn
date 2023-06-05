@@ -42,7 +42,7 @@ Liferay Cloud は、プロジェクトにおける予期せぬ動作をシステ
 
 ![リアルタイムアラート](./real-time-alerts/images/02.png)
 
-## 追加情報
+## 関連トピック
 
 * [アプリケーションメトリクス](./application-metrics.md)
 * [割り当て](./quotas.md)

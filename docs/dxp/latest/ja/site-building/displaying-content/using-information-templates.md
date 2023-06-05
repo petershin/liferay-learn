@@ -79,7 +79,7 @@ Information Templatesを使用すると、Info Frameworkを実装するあらゆ
 デフォルトでは、Info TemplateのエクスポートにはWidget Templatesが含まれます。 ただし、どのテンプレートを LAR ファイルに含めるかは設定可能です。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [ウィジェットテンプレートの作成](../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md)
 * [Webコンテンツテンプレートの作成](../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)

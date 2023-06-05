@@ -16,7 +16,7 @@
 
 [注文ワークフロー](../../order-management/order-workflows/introduction-to-order-workflows.md)が有効になっている場合、上記の手順は若干異なる場合があります。
 
-## 追加情報
+## 関連トピック
 
 * [ウィジェットリファレンス](../liferay-commerce-widgets/widget-reference.md)
 * [ページの作成](https://help.liferay.com/hc/ja/articles/360018171291-Creating-Pages)

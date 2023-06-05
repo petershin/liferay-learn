@@ -207,7 +207,7 @@ base64encodedcertificate
 | `key`           |                                    | Base64形式のSSL証明書のキー。 これを [`ssl`](#adding-custom-ssl-certificates) オブジェクト、または [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) オブジェクトにグループ化します （複数の証明書をリストするために）。  |
 | `crt`           |                                    | Base64形式のSSL証明書のcrt。 これを [`ssl`](#adding-custom-ssl-certificates) オブジェクト、または [`certs`](#mapping-multiple-ssl-certificates-to-custom-domains) オブジェクトにグループ化します （複数の証明書をリストするために）。 |
 
-## 追加情報
+## 関連トピック
 
 * [プライベートネットワーク](./private-network.md)
 * [VPNインテグレーションの概要](./vpn-integration-overview.md)

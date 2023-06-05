@@ -65,7 +65,7 @@ Liferay DXPは、 [JSR 362](https://jcp.org/en/jsr/detail?id=362) で指定さ�
 | `WindowID` (String)     | `windowId`    | `@WindowId`    | すべて  |
 | `Portlet name` (String) | `portletName` | `@PortletName` | すべて  |
 
-## 追加情報
+## 関連トピック
 
 [CDI Dependency Injection](../../../core-frameworks/dependency-injection.md)
 

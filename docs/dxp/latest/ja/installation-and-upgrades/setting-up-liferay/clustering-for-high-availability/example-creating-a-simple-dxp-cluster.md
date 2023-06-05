@@ -296,7 +296,7 @@ DXPクラスター用に[データベース](./database-configuration-for-cluste
 
 詳細は、Env/ [Portal Property](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) の定義を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [クラスタノードのデータベース構成](./database-configuration-for-cluster-nodes.md)
 * [クラスタリンクの構成](./configuring-cluster-link.md)

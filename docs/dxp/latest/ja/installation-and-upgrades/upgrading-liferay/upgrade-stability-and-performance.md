@@ -46,6 +46,6 @@ DXPアップグレードプロセスでは、本番環境で通常行われる�
 
 DXPインスタンスを正常にアップグレードしたら、それをオーケストレーションして本番環境にリリースできます。
 
-## 追加情報
+## 関連トピック
 
 * [クラスター化されたインストールの更新](../maintaining-a-liferay-installation/maintaining-clustered-installations.md)

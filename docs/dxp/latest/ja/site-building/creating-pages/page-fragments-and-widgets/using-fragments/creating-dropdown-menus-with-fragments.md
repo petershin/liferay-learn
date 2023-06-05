@@ -26,7 +26,7 @@ Liferayは、高度なドロップダウンメニューを作成するための�
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [フラグメントの使用](../using-fragments.md)
 * [フラグメントの設定](./configuring-fragments.md)

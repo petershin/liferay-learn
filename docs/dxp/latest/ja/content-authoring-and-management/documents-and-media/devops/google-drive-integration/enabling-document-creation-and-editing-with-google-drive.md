@@ -53,7 +53,7 @@ Googleプロジェクトの準備ができたら、Liferayのドキュメント�
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [Googleドライブドキュメントへのリンクを有効にする](./enabling-links-to-google-drive-documents.md)
 * [Googleドライブでのドキュメントの作成と編集](../../uploading-and-managing/creating-documents/creating-and-editing-documents-with-google-drive.md)

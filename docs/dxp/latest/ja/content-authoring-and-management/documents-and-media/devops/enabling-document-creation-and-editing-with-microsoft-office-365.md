@@ -58,7 +58,7 @@ Office 365&trade;を使用してドキュメントとメディアファイルを
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [Googleドライブでドキュメントの作成と編集を有効にする](./google-drive-integration/enabling-document-creation-and-editing-with-google-drive.md)
 * [Microsoft Office 365を使用したドキュメントの作成と編集](../uploading-and-managing/creating-documents/creating-and-editing-documents-with-microsoft-office-365.md)

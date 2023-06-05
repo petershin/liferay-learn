@@ -19,7 +19,7 @@
 * [BlueGreenDeployment](http://martinfowler.com/bliki/BlueGreenDeployment.html)
 * [Implementing Blue-Green Deployments with AWS](https://www.thoughtworks.com/insights/blog/implementing-blue-green-deployments-aws)
 
-## 追加情報
+## 関連トピック
 
 * [Rolling Restarts](./rolling-restarts.md)
 * [高可用性のクラスタリング](../../setting-up-liferay/clustering-for-high-availability.md)

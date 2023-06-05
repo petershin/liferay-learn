@@ -30,7 +30,7 @@ Liferayフラグメントを使用する場合、ターゲットオーディエ�
 <!--TASK: explain.
 ## Localizing Collection Filter Label Text -->
 
-## 追加情報
+## 関連トピック
 
 - [コンテントページの使用](../../../using-content-pages.md)
 - [コンテントページエディタUIリファレンス](../../../using-content-pages/content-page-editor-ui-reference.md)

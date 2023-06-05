@@ -61,7 +61,7 @@ Liferay DXP 7.4 U22+ と GA22+ では、Minium サイトの Catalog ページを
 また、*Configuration*メニュー内のチェックボックスを使用して、カスタムフィルターを無効化し、不変で不可視にすることができます。 カスタムフィルターは、さまざまなユースケースで利用できます。 詳しくは、 [カスタムフィルターの例](https://learn.liferay.com/dxp/latest/ja/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html) をご覧ください。
 ```
 
-## 追加情報
+## 関連トピック
 
 * [カタログページの作成](./creating-a-catalog-page.md)
 * [カスタムフィルターの例](https://learn.liferay.com/dxp/latest/ja/using-search/search-pages-and-widgets/search-results/custom-filter-examples.html)

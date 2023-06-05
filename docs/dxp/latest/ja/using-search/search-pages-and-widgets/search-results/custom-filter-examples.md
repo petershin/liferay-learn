@@ -1,7 +1,7 @@
 # カスタムフィルターの例
 
 ```{note}
-この機能は[Elasticsearchでのみ](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md) 機能します.
+この機能は[Elasticsearchでのみ](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
 ```
 
 カスタムフィルターウィジェットは、検索チューニングを強力にサポートします。 カスタムコードを導入することなく、検索エンジンに送信されるクエリをコントロールすることができます。 ここでは、カスタムフィルターウィジェットへのアプローチ方法を理解するために、いくつかの一般的な使用例を紹介します。
@@ -184,9 +184,7 @@
 
 ## ネストしたフィールドへのブーストマッチ
 
-{bdg-secondary}`利用可能 7.2 FP10+、7.3 FP1+、7.4（すべてのアップデート）`
-
-[Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-ddm-fields) で説明されているように、Liferay 7.2 SP3 /FP8 (およびLiferay 7.3のすべてのバージョン)では、DDMフィールドは [ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) になりました。 7.2および7.3の最新のフィックスパックおよびGAリリースでは、これらのネストされたフィールドを考慮して、 [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) がサポートされています。
+{bdg-secondary}`7.2 FP10+、7.3 FP1+、7.4（すべてのアップデート）で利用可能`
 
 カスタムフィルターの設定での [ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) を使用すると、ページの検索に3つのカスタムフィルターウィジェットが必要になります。 必要な子クエリをラップする [ネストされたクエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) がウィジェットの1つに追加されます。1つの子クエリはフィールドの名前と一致し、もう1つは値と一致します。
 
@@ -200,7 +198,7 @@
             - **タイプ：** `Boolean`
             - **フィールドラベル：** `Boost?`
         - フィールド 2:
-            - **タイプです。** `テキスト`
+            - **タイプです：** `テキスト`
             - **フィールドラベル：** `コンテンツ`
     - ストラクチャーを保存します。
 

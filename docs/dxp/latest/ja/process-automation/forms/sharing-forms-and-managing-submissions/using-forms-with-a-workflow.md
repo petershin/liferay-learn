@@ -21,7 +21,7 @@
 
 ![フォームレコードが承認されました](./using-forms-with-a-workflow/images/04.png)
 
-## 追加情報
+## 関連トピック
 
 * [フォームエントリの管理](./managing-form-entries.md)
 * [アセットの確認](../../workflow/using-workflows/reviewing-assets.md)

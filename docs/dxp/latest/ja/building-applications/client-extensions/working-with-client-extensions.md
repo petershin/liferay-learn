@@ -180,7 +180,7 @@ Liferayのインストールをセルフホストする場合は、ワークス�
 
 次に、各プロジェクトの `dist/` フォルダから、サーバーの `[Liferay Home]/osgi/client-extensions/` フォルダにアーカイブをコピーします。
 
-## 追加情報
+## 関連トピック
 
 * [バッチクライアント拡張機能](./batch-client-extensions.md)
 * [コンフィギュレーション・クライアント拡張機能](./configuration-client-extensions.md)

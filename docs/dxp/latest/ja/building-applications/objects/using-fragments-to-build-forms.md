@@ -72,7 +72,7 @@ Liferayには、コンテンツページでオブジェクトフォームを構�
 オブジェクトのカテゴリ分けが有効になっている場合、タグとカテゴリのフォームフラグメントを使用して、オブジェクトエントリにメタデータを追加することができます。 
 ```
 
-## 追加情報
+## 関連トピック
 
 * [フォームコンポーネント](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
 * [フラグメントの設定](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)

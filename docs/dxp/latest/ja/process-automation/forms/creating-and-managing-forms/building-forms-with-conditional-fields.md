@@ -51,7 +51,7 @@
 
 詳しくは、[計算ルールの使用](../form-rules/using-the-calculate-rule.md)の記事を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [フォームの作成](./creating-forms.md)
 * [フォーム項目タイプのリファレンス](./forms-field-types-reference.md)

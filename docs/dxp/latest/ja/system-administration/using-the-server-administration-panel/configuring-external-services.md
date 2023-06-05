@@ -87,7 +87,7 @@ xuggler.enabled=true
 
 アプリケーションサーバーを再起動して、Xugglerの有効化を完了します。
 
-## 追加情報
+## 関連トピック
 
 - [ドキュメントとメディアプレビューの設定](../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)
 - [音声とビデオのプレビュー用にFFmpegを有効にする](../../content-authoring-and-management/documents-and-media/devops/enabling-ffmpeg-for-audio-and-video-previews.md)

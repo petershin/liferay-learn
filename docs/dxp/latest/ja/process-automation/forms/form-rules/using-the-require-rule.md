@@ -32,7 +32,7 @@
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [フォームの作成](../creating-and-managing-forms/creating-forms.md)
 * [表示/非表示ルールの使用](./using-the-show-hide-rule.md)

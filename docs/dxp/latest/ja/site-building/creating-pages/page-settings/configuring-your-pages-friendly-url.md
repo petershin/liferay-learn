@@ -46,7 +46,7 @@ Liferay DXPは、ページに使用されるすべてのフレンドリURLのリ
 
 <a name="additional-information" />
 
-## 追加情報
+## 関連トピック
 
 * [サイトのフレンドリURLを設定する](./../../site-settings/managing-site-urls/configuring-your-sites-friendly-url.md)
 * [ページ単位での設定](./configuring-individual-pages.md)

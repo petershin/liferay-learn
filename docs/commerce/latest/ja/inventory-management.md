@@ -1,15 +1,15 @@
 ---
 toc:
-- ./inventory-management/setting-up-warehouses.md
-- ./inventory-management/setting-inventory-by-warehouse.md
-- ./inventory-management/low-stock-action.md
-- ./inventory-management/availability-estimates.md
-- ./inventory-management/managing-product-publication.md
-- ./inventory-management/using-the-inventory-management-system.md
-- ./inventory-management/inventory-management-reference-guide.md
-- ./inventory-management/warehouse-reference-guide.md
-- ./inventory-management/product-inventory-configuration-reference-guide.md
-- ./inventory-management/developer-guide.md
+  - ./inventory-management/setting-up-warehouses.md
+  - ./inventory-management/setting-inventory-by-warehouse.md
+  - ./inventory-management/low-stock-action.md
+  - ./inventory-management/availability-estimates.md
+  - ./inventory-management/managing-product-status.md
+  - ./inventory-management/using-the-inventory-management-system.md
+  - ./inventory-management/inventory-management-reference-guide.md
+  - ./inventory-management/warehouse-reference-guide.md
+  - ./inventory-management/product-inventory-configuration-reference-guide.md
+  - ./inventory-management/developer-guide.md
 ---
 # 在庫管理
 
@@ -20,7 +20,7 @@ inventory-management/setting-up-warehouses.md
 inventory-management/setting-inventory-by-warehouse.md
 inventory-management/low-stock-action.md
 inventory-management/availability-estimates.md
-inventory-management/managing-product-publication.md
+inventory-management/managing-product-status.md
 inventory-management/using-the-inventory-management-system.md
 inventory-management/inventory-management-reference-guide.md
 inventory-management/warehouse-reference-guide.md
@@ -106,7 +106,7 @@ Liferayでは、在庫はSKU単位で管理されます。 詳しくは、 [倉�
 :link: ./inventory-management/product-inventory-configuration-reference-guide.md
 :::
 
-:::{grid-item-card}  デベロッパーガイド
+:::{grid-item-card}  開発者ガイド
 :link: ./inventory-management/developer-guide.md
 :::
 ::::

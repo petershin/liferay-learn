@@ -82,6 +82,6 @@
 | [%ORDER_CREATOR%] | 注文を作成したユーザー |
 | [%ORDER_ID%]      | オーダーID      |
 
-## 追加情報
+## 関連トピック
 
 * [通知テンプレートの使用](./using-notification-templates.md)

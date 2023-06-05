@@ -1,53 +1,62 @@
 # 検索結果の並べ替え
 
-[検索結果](./search-results.md) ウィジェットに表示される検索結果は、デフォルトで [関連性スコア](./search-results.md#search-results-relevance) （ [検索エンジン](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html) によって計算される）の順に並べられます。 並べ替えウィジェットを使用すると、ユーザーは返される結果の順序を制御できます。
+[検索結果](./search-results.md) ウィジェットに表示される検索結果は、デフォルトで [関連性スコア](./search-results.md#search-results-relevance) （ [検索エンジン](https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html) が算出したもの）順に並んでいます。 Sortウィジェットを使用すると、ユーザーは返された結果の順序を制御することができます。
 
-ウィジェットを [検索ページ](../working-with-search-pages/search-pages.md) に追加して、結果のソートを開始します。
+[検索ページ](../working-with-search-pages/search-pages.md) にウィジェットを追加すると、結果の並べ替えを開始します。
 
-そのままの状態で、関連性ソートの代わりに次の方法で結果を並べ替えることができます。
+アウトオブボックスでは、関連性ソートの代わりに、これらの方法で結果を順序付けることができます：
 
-- タイトルのアルファベット順
-- 更新日（デフォルトでは最初に最新、または最も古いものを最初に選択）
-- 作成日（デフォルトでは最初に最新、または古いものを最初に選択）
-- 一致する各アセットを作成したユーザーのアルファベット順
+- タイトル別アルファベット
+- 更新日順（デフォルトでは新しいものから、または古いものから選択可能）
+- 作成日順（デフォルトでは新しいものから、または古いものから選択できます。）
+- 各アセットを作成したユーザーのアルファベット順
 
-並べ替えウィジェットの事前構成された並べ替え戦略のいずれかから選択するか、独自の戦略を構成します。
+ソートウィジェットは、あらかじめ設定されたソート戦略から1つを選択するか、独自の戦略を設定することができます。
 
-ウィジェットから不要な並べ替えオプションを削除することもできます。
+また、ウィジェットから不要なソートオプションを削除することも可能です。
 
-<a name="adding-the-sort-widget-to-a-page" />
+## ページにSort Widgetを追加する
 
-## ページへの並べ替えウィジェットの追加
-
-並べ替えウィジェットを使い始めるには、
+ソートウィジェットを使い始めるには
 
 1. ページの［追加］メニュー（![Add](../../../images/icon-add-widget.png)）を開き、［ウィジェット］セクションを展開します。
 
 1. ［検索］カテゴリから、並べ替えウィジェットをページにドラッグします。
 
-<a name="configuring-the-sort-widget" />
+## ソートウィジェットの設定
 
-## 並べ替えウィジェットの構成
+```{note}
+Liferay 7.4 DXP Update 29+/CE GA 29+で、Sortウィジェットの設定画面が更新されました。 一定期間、_Switch to Classic View_というリンクをクリックすることで、古い設定画面を使用することを選択できます。
 
-並べ替えウィジェットの設定画面から、次のことができます
+![従来のソート設定と、より直感的な新しい設定画面を切り替える](./sorting-search-results/images/03.png)
 
-- 既存の並べ替えオプションを編集する
-- オプションを削除する
-- 新しいオプションを追加する
+従来の設定画面を使用するオプションは、将来のアップデート/GAで削除される予定です。
+```
 
-![ユーザーは、並べ替えウィジェットを使用して検索結果を並べ替えることができます。](./sorting-search-results/images/01.png)
+ソートウィジェットの設定画面では、以下のことができます。
+
+- デフォルトの「関連性」ソートオプションを無効にします。
+- 既存のソートオプションを編集する
+- オプションの削除
+- 新規オプションの追加
+
+![ソートウィジェットで検索結果の並び替えが可能です。](./sorting-search-results/images/04.gif)
+
+```{note}
+関連性はオン・オフが可能ですが、完全に取り除くことはできません。 関連性を有効にすると、デフォルトの検索エンジンの動作が使用されます：結果は関連性の高い降順でソートされます（最も高いスコアを最初に）。
+```
 
 ウィジェット構成画面にアクセスするには、ウィジェットの［オプション］メニュー（![Options](../../../images/icon-app-options.png)）を開き、［**構成**］をクリックします。
 
-各並べ替えオプションには2つの設定があります： **ラベル** および **フィールド** 。
+各ソートオプションには3つの設定があります： **インデックス付きフィールド** 、 **表示ラベル** 、 **順序** 。
 
-**ラベル：** 構成するソートのタイプに表示されるラベルを設定します。
+**Indexed Field（インデックス・フィールド）：** ソートするインデックス付きフィールドの `fieldName` を入力します。 ほとんどの場合、これは [キーワード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) フィールドです。 その他、 `date` および任意の [numeric datatype](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html) が使用可能です。 さらに、 `テキスト` フィールドを強制的にソートウィジェットで動作させる方法もあります（下記参照）。
 
-**フィールド：** ソートするインデックス付きフィールドの `fieldName` を入力します。 ほとんどの場合、これは [キーワード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) フィールドです。 その他の受け入れ可能なオプションは、 `日付` および任意の [数値データ型](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html) です。 並べ替えウィジェット（以下を参照）で `テキスト` フィールドを強制的に動作させる方法さえあります。
+**表示ラベル：** 設定されているソートの種類に応じた表示ラベルを設定します。
 
-![並べ替えウィジェットの構成から、並べ替えオプションを追加、編集、または削除します。](./sorting-search-results/images/02.png)
+**順序を指定します：** 昇順または降順で並べ替えるかどうかを選択します。 クラシックビューを使用している場合、または更新された設定UIを含まない以前のLiferayのバージョンを使用している場合は、 [クラシック設定でのソート順序を制御する](#controlling-the-sort-order-in-the-classic-configuration) をご覧ください。
 
-<a name="changing-the-default-sort-behavior" />
+![ソートウィジェットの設定から、ソートオプションの追加、編集、削除を行います。](./sorting-search-results/images/02.png)
 
 ## デフォルトのソート動作の変更
 
@@ -65,11 +74,9 @@
 
 1. 設定を保存します。 検索を入力すると、新しいソートが適用されたことがわかります。
 
-<a name="finding-sortable-fields" />
+## ソート可能なフィールドを探す
 
-## 並べ替え可能なフィールドの検索
-
-適切な権限を持つユーザーは、 **コントロールパネル** &rarr; ［**設定**］ &rarr; ［**検索機能**］ へ行き、ソートウィジェットで使用できるフィールドを見つけることができます。  そこから、［フィールドマッピング］タブを開き、各インデックスのマッピングを参照します。  マッピングの `プロパティ` セクションまでスクロールし、 `キーワード` フィールド、 `日付` フィールド、または数値データタイプのフィールドを見つけます。 `タイプ` フィールドは有益です：
+適切な権限を持つユーザーは、 **コントロールパネル** &rarr; ［**設定**］ &rarr; ［**検索機能**］ へ行き、ソートウィジェットで使用できるフィールドを見つけることができます。  そこから、［フィールドマッピング］タブを開き、各インデックスのマッピングを参照します。  マッピングの `プロパティ` セクションまでスクロールし、 `キーワード` フィールド、 `日付` フィールド、または数値データ型を持つフィールドを見つけます。 `タイプ` の項目が参考になる：
 
     "type" : "keyword"
     
@@ -77,7 +84,7 @@
     
     "type" : "long"
 
-`テキスト` フィールドでソートする必要がある場合は、タイプ `キーワード`して、フィールドの新しいバージョンをインデックスに追加します。 上記のフィールドマッピング画面で、 `liferay-［companyID］`というインデックスの `firstName` フィールドを確認します。
+どうしても `テキスト` のフィールドでソートしたい場合は、新しいバージョンのフィールドをタイプ `キーワード`でインデックスに追加してください。 上記のフィールドマッピング画面で、 `liferay-［companyID］`というインデックスの `firstName` フィールドを確認します。
 
 ```
 "firstName" : {
@@ -90,73 +97,79 @@
 },
 ```
 
-サフィックス `_sortable`対応するフィールドがあり、ソートに適したタイプ（`キーワード`）があります。 ソート可能なフィールドは、 [ポータルのプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) を通して得られたものです。
+`_sortable`という接尾辞を持ち、ソートに適したタイプの対応するフィールドがあります（`keyword`）。 ソート可能なフィールドは、 [ポータルのプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) を通して得られたものです。
 
 ```properties
 index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 ```
 
-ここにリストされているすべてのテキストフィールドには、インデックスで自動的に作成される `fieldName_sortable` 対応物があります。 さらに追加するには、このプロパティを [`portal-ext.properties`](./../../../installation-and-upgrades/reference/portal-properties.md) ファイルにLiferayホームフォルダーにコピーし、並べ替えに必要な新しいフィールド名を追加して、サーバーを再起動します。
+ここに挙げたすべてのテキストフィールドには、 `fieldName_sortable` の対応表がインデックスに自動的に作成されます。 さらに追加するには、このプロパティをLiferay Homeフォルダの [`portal-ext.properties`](./../../../installation-and-upgrades/reference/portal-properties.md) ファイルにコピーし、ソートする必要がある新しいフィールド名を追加して、サーバーを再起動します。
 
-<a name="adding-new-sort-options" />
+## 新しいソートオプションの追加
 
-## 新しい並べ替えオプションの追加
+新しいフィールドまたは適切なタイプの既存のフィールドでソートするには、 **Add Option** ボタンをクリックします。
 
-新しいフィールドまたは適切なタイプの既存のフィールドで並べ替えるには、既存のオプションの **フィールド** 構成の下にあるプラス記号を使用して、ウィジェット構成でフィールドの `fieldName_sortable` バージョンを必ず使用してください。
+```{tip}
+ウィジェットの設定で、テキストフィールドの `fieldName_sortable` バージョンを必ず使用してください。 
+```
 
-すでに適切なデータ型である新しい並べ替えオプションを追加するには、オプションの **フィールド** 構成の下にあるプラス記号を使用して、フィールドに入力します。 構成画面でのオプションの順序は、ウィジェットを検索用に構成するときの選択リストの順序と一致します。
+すでに適切なデータ型になっているソートオプションを新たに追加するには、任意のオプションの **フィールド** 設定の下にあるプラス記号を使い、フィールドを埋めてください。 設定画面でのオプションの順序は、検索用ウィジェットを設定する際の選択リストでの順序と同じです。
 
-<a name="editing-and-deleting-sort-options" />
+## ソートオプションの編集・削除
 
-## 並べ替えオプションの編集と削除
+既存のオプションを編集するには、その設定セクションのテキストを編集します。
 
-既存のオプションを編集するには、設定セクションのテキストを編集します。
+既存のオプションを削除するには、ゴミ箱アイコンを使用します。
 
-既存のオプションを削除するには、 **フィールド** 設定の下にあるマイナス記号を使用します。
+## クラシック構成でソート順を制御する
 
-<a name="controlling-the-sort-order" />
+クラシック構成でソートオプションの順序を制御するには、 `fieldName`の後にプラスまたはマイナスの記号を追加してください。 **作成済み** と **作成済み（古い順**） というラベルのついた既存のソートオプションで、どのように動作するのかを見てみましょう：
 
-## ソート順の制御
+**ラベル：****作成日_** フィールド：** `create-date`となります。
 
-並べ替えオプションの順序を制御するには、 `fieldName`後にプラス記号またはマイナス記号を追加します。 それがどのように機能するかを理解するために、 **作成** および **作成（最も古い**） とラベル付けされた既存のソートオプションの実行方法を見てください。
+フィールド名の後に続く `-` の記号は、順序が **降順であることを示します** 。  この方法でソートすると、最近作成された検索結果がリストの一番上に表示されます。
 
-**ラベル：** **作成日_** フィールド：** `create-date`となります。
+**ラベル：****作成日（古い順**）**フィールド。** `createDate⁺`となります。
 
-フィールド名の次の`-` 記号は順序が **下降** であることを示します 。  この方法で並べ替えると、最近作成された検索結果がリストの一番上に表示されます。
-
-**ラベル：** **作成日（古い順**）**フィールド。** `createDate⁺`となります。
-
-フィールド名に続く `+` 記号は、順序が **昇順** ことを示しています。  この方法で並べ替えると、最も古い（作成日順）結果がリストの一番上に表示されます。
-
-<a name="sorting-by-nested-fields" />
+フィールド名の後に続く `+` の記号は、順序が **昇順であることを示します** 。  この方法でソートすると、作成日の古い結果がリストの上位に表示されます。
 
 ## ネストしたフィールドでのソート
 
-> 提供時期： 7.2 FP12, 7.3 FP2
+### オブジェクト定義フィールドによる並べ替え
 
-[Accessing Nested DDM Fields](../search-facets/custom-facet.md#accessing-nested-ddm-fields) で説明されているように、Liferay 7.2 SP3 /FP8 (およびLiferay 7.3のすべてのバージョン)では、DDMフィールドは [ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) になりました。 7.2および7.3の最新のFix PackおよびGAリリースでは、これらのネストされたフィールドを考慮して、 [Elasticsearch Nested query](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) がサポートされています。
+{bdg-secondary}`7.4 u72+/ga72+`
 
-Elasticsearch ドキュメントのルートにある `ddm__keyword__*` という名前のフィールドに依存していたソート構成は引き続き有効です--Search フレームワーク自体がネストしたフィールドタイプを考慮して調整されました。 これらのフィールドは、ソートウィジェットの **フィールド** の設定で、ドキュメントのルートにないにもかかわらず、通常通り使用します。
-
-ソートウィジェットは、キーワード、日付、数値の各フィールドに対応しています。 インデックス内の既存のドキュメントにあるDDMキーワードフィールドを見つけるには
+[オブジェクト定義](../../../building-applications/objects.md) フィールドは、Elasticsearch ではネストされたフィールドとしてインデックスされます。 インデックス内の既存の文書にあるオブジェクトフィールドを検索するには、検索結果ウィジェットの [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
 
 ```json
-GET liferay-20097/_search
-{
-  "query": {
-    "nested": {
-      "path": "ddmFieldArray",
-      "query": {
-        "wildcard":  { "ddmFieldArray.ddmFieldName": "ddm__keyword*" }
-      }
-    }
-  }
-}
+"nestedFieldArray" : [
+   {
+     "fieldName" : "lastAcessed",
+     "valueFieldName" : "value_date",
+     "value_date" : "20230502000000"
+   },
+   {
+     "fieldName" : "immunityType",
+     "valueFieldName" : "value_keyword",
+     "value_keyword" : "diplomatic"
+   },
+   {
+     "fieldName" : "luckyNumber",
+     "valueFieldName" : "value_integer",
+     "value_integer" : "19"
+   }
+],
 ```
 
-インデックス名パラメータの企業ID---`20097`---を、インスタンスの値に合わせて置き換えます。
+オブジェクトのフィールドでソートするには、 `nestedFieldArray のパターンに従った特別な表記が必要です。[fieldName][valueFieldName]`. 例えば、上記の入れ子配列の `lastAccessed` 日付フィールドでソートするには、Sort ウィジェット構成の Indexed Field として `nestedFieldArray.lastAccessed.value_date` を入力します。
 
-返されたドキュメントには、ネストされたコンテンツを持つ `ddmFieldArray` オブジェクトがあります。
+### Webコンテンツ構造フィールドによる並べ替え
+
+{bdg-secondary}`7.2 FP12+、7.3 FP2+、7.4（すべてのアップデート）`
+
+ソートウィジェットは、キーワード、日付、数値の各フィールドに対応しています。 インデックス内の既存文書にあるウェブコンテンツ構造（DDM）フィールドを検索するには、検索結果ウィジェットの [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
+
+ドキュメントは、 `ddmFieldArray` オブジェクトを持ち、ネストされたコンテンツを持ちます：
 
 ```json
  "ddmFieldArray" : [
@@ -181,4 +194,15 @@ GET liferay-20097/_search
   ],
 ```
 
-これらのフィールドのいずれかをソートの設定で使用するには、 `ddmFieldName` の値（例えば、 `ddm__keyword__40806__Testb5mx_en_US`）を **Field** の設定として入力します。
+これらのフィールドをソート構成で使用するには、 `ddmFieldName` の値（例： `ddm__keyword__40806__Testb5mx_en_US`）を Indexed Field 設定として入力してください。
+
+お使いのバージョンによっては、 [ネストされたフィールドストレージ](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) がElasticsearchのデフォルトで有効になっている場合があります：
+
+| Liferayのバージョン    | ネストされたフィールドはデフォルトで有効 |
+|:---------------- |:-------------------- |
+| 7.4 すべてのアップデート   | &#10004;             |
+| 7.3 すべてのアップデート   | &#10004;             |
+| DXP 7.2 SP3/FP8+ | &#10008;             |
+
+動作を変更するには、システム設定 &rarr; Dynamic Data Mapping Indexer の **Enable Legacy Dynamic Data Mapping Index Fields** の設定を使用します。
+

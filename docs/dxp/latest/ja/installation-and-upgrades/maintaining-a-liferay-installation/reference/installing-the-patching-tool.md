@@ -37,7 +37,7 @@ cd patching-tool
 
 パッチングツールをDXPインストールで構成する準備ができました。
 
-## 追加情報
+## 関連トピック
 
 * [パッチングツールの構成](./configuring-the-patching-tool.md)
 * [パッチのインストール](../patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.md)

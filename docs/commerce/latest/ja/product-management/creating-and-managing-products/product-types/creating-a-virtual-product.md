@@ -110,7 +110,7 @@ Liferay Commerceでは、仮想商品とは、顧客がダウンロードでき�
 
 商品の価格とSKUを設定したら、上記の、商品オプションや仕様の追加、または商品画像をアップロードする方法を参照してください。
 
-## 追加情報
+## 関連トピック
 
 * [グループ商品の作成](./creating-a-grouped-product.md)
 * [シンプル商品を作成する](./creating-a-simple-product.md)

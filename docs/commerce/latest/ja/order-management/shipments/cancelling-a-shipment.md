@@ -23,7 +23,7 @@
 
 
 
-## 追加情報
+## 関連トピック
 
 * [出荷の概要](./introduction-to-shipments.md)
 * [注文の処理](../orders/processing-an-order.md)

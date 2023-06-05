@@ -33,7 +33,7 @@
 
 ファイルパスはデフォルトで空です。 空の場合は、無償の [GeoLite2](https://dev.maxmind.com/geoip/geolite2-free-geolocation-data?lang=en) データベースを使用して IP アドレスを解決します。 オプションとして、サーバー上の `.mmdb` 拡張子を持つ別のジオロケーションデータベースへのパスを設定し、デフォルトのデータベースを上書きすることができます。
 
-## 追加情報
+## 関連トピック
 
 * [セグメント条件の設定](./creating-and-managing-user-segments.md#configuring-segment-conditions)
 * [コンテントページのパーソナライゼーション](../experience-personalization/content-page-personalization.md)

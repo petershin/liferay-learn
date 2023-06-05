@@ -32,7 +32,7 @@ feature.flag.COMMERCE-8087=true
 type: batch
 ```
 
-[オブジェクト定義](../objects/creating-and-managing-objects.md) や [ワークフロー定義](../../process-automation/workflow/introduction-to-workflow.md)など、 [バッチエンジンフレームワーク](../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) がサポートするあらゆるタイプのデータを Liferay インスタンスからエクスポートすることができます。 書き出しの際は、JSONTファイル形式を選択してください。 `*.batch-engine-data.json` ファイルを [バッチクライアント拡張](./batch-client-extensions/batch-yaml-configuration-reference.md)に追加したら、 [ビルドしたアーカイブ](./packaging-client-extensions.md) を Liferay Experience Cloud またはセルフホスティングの Liferay インスタンスにデプロイしてください。
+[オブジェクト定義](../objects/creating-and-managing-objects.md) や [ワークフロー定義](../../process-automation/workflow/introduction-to-workflow.md)など、 [バッチエンジンフレームワーク](../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) がサポートするあらゆるタイプのデータを Liferay インスタンスからエクスポートすることができます。 書き出しの際は、JSONファイル形式を選択してください。 `*.batch-engine-data.json` ファイルを [バッチクライアント拡張](./batch-client-extensions/batch-yaml-configuration-reference.md)に追加したら、 [ビルドしたアーカイブ](./packaging-client-extensions.md) を Liferay Experience Cloud またはセルフホスティングの Liferay インスタンスにデプロイしてください。
 
 ## 追加情報
 

@@ -84,7 +84,7 @@ type: themeJS
 
 ## テーマCSSクライアントエクステンション
 
-{bdg-secondary`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
 [CSSクライアント拡張](#css-client-extensions) がページにスタイルを追加するのに対し、テーマCSSクライアント拡張はサイトのテーマ [からも含めてページのスタイルをオーバーライドします](../../site-building/site-appearance/themes/introduction-to-themes.md). クライアント拡張機能は、 `clay.css` ファイルと `main.css` ファイルを使用して、サイトのテーマで通常使用される同じ名前のファイルを置き換えます。
 

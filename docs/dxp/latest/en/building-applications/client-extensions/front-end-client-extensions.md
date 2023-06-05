@@ -85,7 +85,7 @@ type: themeJS
 
 ## Theme CSS Client Extensions
 
-{bdg-secondary`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
+{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
 While [CSS client extensions](#css-client-extensions) add styling to pages, theme CSS client extensions override styling on the page, including from the site's [theme](../../site-building/site-appearance/themes/introduction-to-themes.md). The client extension uses a `clay.css` file and a `main.css` file to replace the identically named files normally used in your site's theme.
 

@@ -84,7 +84,7 @@ type: themeJS
 
 ## 테마 CSS 클라이언트 확장
 
-{bdg-secondary`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
 [CSS 클라이언트 확장](#css-client-extensions) 이 페이지에 스타일을 추가하는 동안 테마 CSS 클라이언트 확장은 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)을 포함하여 페이지의 스타일을 재정의합니다. . 클라이언트 확장은 `clay.css` 파일과 `main.css` 파일을 사용하여 사이트 테마에서 일반적으로 사용되는 동일한 이름의 파일을 대체합니다.
 

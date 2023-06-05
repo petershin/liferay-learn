@@ -167,7 +167,7 @@ Now that you have the default mapping file, make the necessary changes to add th
    ```
 
    ```{note}
-   For Liferay 7.4 U## or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
+   For Liferay 7.4 U80 or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
    ```
 
    The important change here is that the default assigned analyzer (`french`) is replaced with the custom analyzer `custom_liferay_analyzer_fr`.

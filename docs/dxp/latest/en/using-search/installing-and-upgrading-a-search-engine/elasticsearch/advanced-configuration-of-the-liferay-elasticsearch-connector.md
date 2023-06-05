@@ -74,7 +74,7 @@ To add a property, use this JSON syntax:
 
 
 ```{note}
-For Liferay 7.4 U## or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
+For Liferay 7.4 U80 or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
 ```
 
 To see that your additional mappings have been added to the Liferay mappings, use `curl` to access this URL after saving your additions and re-indexing:
@@ -148,7 +148,7 @@ Here's a partial example, showing a [dynamic template](https://www.elastic.co/gu
 ```
 
 ```{note}
-For Liferay 7.4 U## or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
+For Liferay 7.4 U80 or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
 ```
 
 ### Adding Configurations to the Development Mode Elasticsearch

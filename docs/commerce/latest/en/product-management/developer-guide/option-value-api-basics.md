@@ -22,7 +22,7 @@ Once Liferay is running,
    unzip liferay-c7w9.zip
    ```
 
-1. Option values are scoped to an option. If you don't have an option created already, see [Option API Basics](./option-api-basics.md) to create and manage options. When creating a new option value, you must provide the `id` of the option, a unique key, and a name for the option value.
+1. Option values are scoped to an option. If you haven't created an option, see [Option API Basics](./option-api-basics.md). When creating a new option value, you must provide the `id` of the option, a unique key, and a name for the option value.
 
    Use the cURL script to add a new option value. On the command line, navigate to the `curl` folder. Execute the `OptionValue_POST_ToOption.sh` script with the appropriate option ID as a parameter.
 
@@ -32,7 +32,7 @@ Once Liferay is running,
 
    The JSON response shows a new option value was added:
 
-   ```bash
+   ```json
    {
       "actions" : {
          "get" : {
@@ -58,7 +58,7 @@ Once Liferay is running,
    }
    ```
 
-1. To verify the option value addition, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Options*. Select the appropriate option. The new option value appears in the *Values* section.
+1. To verify the option value addition, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Options*. Select the appropriate option. The new option value appears in the Values section.
 
    ![Confirm that a new option value was added.](./option-value-api-basics/images/01.png)
 

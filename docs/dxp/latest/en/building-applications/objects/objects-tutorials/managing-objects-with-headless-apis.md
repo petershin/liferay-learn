@@ -5,7 +5,7 @@ uuid: 52fd1b70-d0cb-409e-99ec-fbd60bbf0a0f
 
 {bdg-secondary}Available Liferay 7.4
 
-You can [create and manage objects](../creating-and-managing-objects.md) from the Applications menu, but you can also use Liferay's REST APIs. Call these services to create and manage objects. Note that in Liferay's codebase, objects are called object definitions. Each object definition is made up of various object fields.
+You can [create and manage objects](../creating-and-managing-objects.md) from the Applications menu, but you can also use Liferay's REST APIs. Call these services to create and manage objects. Note that in Liferay's codebase, objects are called _object definitions_. Each object definition is made up of various object fields.
 
 ## Adding an Object Definition and Object Field
 
@@ -67,37 +67,37 @@ Then, follow these steps:
 
    ![See that a new object definition has been added.](./managing-objects-with-headless-apis/images/01.png)
 
-   Click on the _Foo_ object. Take note of the object's ID number.
+   Click the _Foo_ object. Note the object's ID number.
 
-1. Next, use the cURL script to add a new object field to the object definition. On the command line, execute the `ObjectField_POST_ToObjectDefinition.sh` script. Note, replace 1234 with your object's ID.
+1. Use the cURL script to add a new object field to the object definition. On the command line, execute the `ObjectField_POST_ToObjectDefinition.sh` script. Replace 1234 with your object's ID.
 
    ```bash
    ./ObjectField_POST_ToObjectDefinition.sh 1234
    ```
 
-1. In Liferay, click again on the _Foo_ object. Click the _Fields_ tab. Note that a new Able field was created.
+1. In Liferay, click again on the _Foo_ object. Click the _Fields_ tab. Note that a new Able field was added.
 
    ![See that a new object field has been added.](./managing-objects-with-headless-apis/images/02.png)
 
-1. The REST services can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. The REST services can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. Run the `ObjectDefinition_POST_ToInstance.java` class with the following command.
+1. Run the `ObjectDefinition_POST_ToInstance.java` class: 
 
    ```bash
    java -classpath .:* ObjectDefinition_POST_ToInstance
    ```
 
-1. Take note of the _Foo_ object's ID number. Then run the `ObjectField_POST_ToObjectDefinition.java` class with the following command. Replace 1234 with your object's ID.
+1. Note the _Foo_ object's ID number. Then run the `ObjectField_POST_ToObjectDefinition.java` class. Replace 1234 with your object's ID.
 
    ```bash
    java -classpath .:* -DobjectDefinitionId=1234 ObjectField_POST_ToObjectDefinition
    ```
 
-Note that the newly created objects are still in draft status. Make your necessary changes or modifications before publishing. Once objects are published, making edits become disabled. See [publishing object drafts](../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) to learn more.
+Newly created objects are still in draft status. Make your necessary changes or modifications before publishing. Once objects are published, edits are disabled. See [publishing object drafts](../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) to learn more.
 
 ## Examine cURL Command
 
@@ -109,13 +109,13 @@ The `ObjectDefinition_POST_ToInstance.sh` script calls the REST service with a c
 
 Here are the command's arguments:
 
-| Arguments | Description |
-| :--- | :--- |
-| `-H "Content-Type: application/json"` | Indicates that the request body format is JSON. |
-| `-X POST` | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/object-admin/v1.0/object-definitions"` | The REST service endpoint |
-| `-d "{\"label\": {\"en_US\": \"Foo\"}, \"name\": \"Foo\", \"pluralLabel\": {\"en_US\": \"Foos\"}, \"scope\": \"company\"}"` | The data you are requesting to post |
-| `-u "test@liferay.com:learn"` | Basic authentication credentials |
+| Arguments                                                                                                                   | Description                                         |
+|:----------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------|
+| `-H "Content-Type: application/json"`                                                                                       | Defines a request body format of JSON.              |
+| `-X POST`                                                                                                                   | The HTTP method to invoke at the specified endpoint |
+| `"http://localhost:8080/o/object-admin/v1.0/object-definitions"`                                                            | The REST service endpoint                           |
+| `-d "{\"label\": {\"en_US\": \"Foo\"}, \"name\": \"Foo\", \"pluralLabel\": {\"en_US\": \"Foos\"}, \"scope\": \"company\"}"` | The data you are requesting to post                 |
+| `-u "test@liferay.com:learn"`                                                                                               | Basic authentication credentials                    |
 
 ```{note}
 Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
@@ -135,11 +135,11 @@ The `ObjectDefinition_POST_ToInstance.java` class adds an object definition by c
 
 This class invokes the REST service using only three lines of code:
 
-| Line (abbreviated) | Description |
-| :----------------- | :---------- |
-| `ObjectDefinitionResource.Builder builder = ...` | Gets a `Builder` for generating a `ObjectDefinitionResource` service instance. |
-| `ObjectDefinitionResource objectDefinitionResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `ObjectDefinitionResource` service instance. |
-| `ObjectDefinition objectDefinition = objectDefinitionResource.postObjectDefinition(...);` | Calls the `objectDefinitionResource.postObjectDefinition` method and passes the data to post. |
+| Line (abbreviated)                                                                         | Description                                                                                   |
+|:-------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
+| `ObjectDefinitionResource.Builder builder = ...`                                           | Gets a `Builder` for generating a `ObjectDefinitionResource` service instance.                |
+| `ObjectDefinitionResource objectDefinitionResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `ObjectDefinitionResource` service instance.   |
+| `ObjectDefinition objectDefinition = objectDefinitionResource.postObjectDefinition(...);`  | Calls the `objectDefinitionResource.postObjectDefinition` method and passes the data to post. |
 
 Note that the project includes the `com.liferay.object.admin.rest.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
@@ -335,15 +335,15 @@ Code:
 
 ## Services for Object Fields
 
-The cURL commands and Java classes for object field works in the same way as object definition.
+The cURL commands and Java classes for object field work in the same way as object definitions.
 
-| Files | Description |
-| :---- | :---------- |
-| `ObjectField_DELETE_ById.[java\|sh]` | Deletes a object field by ID. |
-| `ObjectField_GET_ById.[java\|sh]` | Get a specific object field by ID. |
-| `ObjectField_PATCH_ById.[java\|sh]` | Patch a specific object field by ID. |
-| `ObjectField_POST_ToObjectDefinition.[java\|sh]` | Post an object field to an object definition. |
-| `ObjectField_PUT_ById.[java\|sh]` | Replaces a specific object field by ID. |
-| `ObjectFields_GET_FromObjectDefinition.[java\|sh]` | Get a list of object fields from an object definition. |
+| Files                                              | Description                                             |
+|:---------------------------------------------------|:--------------------------------------------------------|
+| `ObjectField_DELETE_ById.[java\|sh]`               | Deletes an object field by ID.                          |
+| `ObjectField_GET_ById.[java\|sh]`                  | Gets a specific object field by ID.                     |
+| `ObjectField_PATCH_ById.[java\|sh]`                | Patches a specific object field by ID.                  |
+| `ObjectField_POST_ToObjectDefinition.[java\|sh]`   | Posts an object field to an object definition.          |
+| `ObjectField_PUT_ById.[java\|sh]`                  | Replaces a specific object field by ID.                 |
+| `ObjectFields_GET_FromObjectDefinition.[java\|sh]` | Gets a list of object fields from an object definition. |
 
 The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the services and schemas for objects and has an interface to try out each service.

@@ -33,11 +33,29 @@ Out of the box on the most recent Liferay 7.4, the Search bar provides search su
 
 For the details on how it works, see [Search Bar Suggestions](../search-pages-and-widgets/search-bar-suggestions.md)
 
-### Matching Exact Phrases: Quoted Search
+### Quoted Search
 
-What if users want their search terms (for example, _agile frameworks_) to produce only results with the exact phrase, as typed? In a regular full text search, searching _agile frameworks_ returns search results containing just the terms _agile_ and _frameworks_, and hits containing both terms but separated by other text, as well as results with the exact phrase match. To ensure that only hits with the exact phrase are returned, enclose it in quotes: _"agile frameworks"_.
+Wrapping search bar queries in quotation marks forces the search engine to produce matches more strictly. The exact behavior depends on the type of field being searched.
 
-![Search for exact phrase matches by enclosing search terms in quotes.](./searching-for-content/images/04.png)
+#### Quoted Full Text Search: Ensuring Match Order
+
+In a full-text search (e.g., searching analyzed text fields), quoting search bar queries ensures that the searched terms are matched to the field only if they appear in the exact same order. The search engine is not matching the exact quoted phrase, because analysis still takes place on the indexed content and the search phrase.
+
+Consider a blog entry including this text in its `content` field:
+
+> Bring to the table win-win survival _strategies to ensure_ proactive collaboration.
+
+With the standard English analyzer pipeline, the search phrase _"strategy that ensures"_ will return this blog entry. The same analysis is performed on the search keywords and the indexed text, accounting for stemming, stop word removal, and other tokenization. Quoting the phrase enforces that the separate tokens in the phrase match with the tokens in the indexed document field, including their relative position to each other.
+
+By contrast, entering the search keywords _"strategies ensure"_ will not return the above blogs entry document, because the relative position of the tokens produced by analysis are different between the search keywords and the indexed content.
+
+![Enclose search terms in quotes to enforce that the token order matches in returned content.](./searching-for-content/images/04.png)
+
+#### Quoted Keyword Search: Exact Phrase Matching
+
+When searching non-analyzed fields (e.g., keyword fields), a quoted search phrase and the field value must match exactly.
+
+In a regular Liferay search, both analyzed and non-analyzed fields are present in index documents. The non-analyzed fields produce results only if their content matches exactly to the quoted search phrase, while the analyzed fields produce results as long as their tokens match the quoted search phrase's tokens and they appear in the same relative positions.
 
 ### Prefix Searching
 

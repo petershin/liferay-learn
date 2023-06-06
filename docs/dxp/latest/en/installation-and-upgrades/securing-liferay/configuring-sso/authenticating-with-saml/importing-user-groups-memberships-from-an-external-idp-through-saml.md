@@ -46,11 +46,11 @@ Below is the configuration using this structure for importing user groups from a
 
    **Name ID Format:** `EmailAddress`
 
-   **Application username:** `Custom` (Set the next blank field as `user.email`)
+   **Application username:** `Email`
 
    ![Configure settings for the SAML app.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/01.png)
 
-   <!-- I'm left with the question why? when it comes to the setting of Custom as `user.email`. Can you explain what this maps to in Liferay later? In other words, why are we setting this the way we are? I assume there's a good reason. -Rich -->
+   This field denotes the username with which you can log in to Okta which then logs you into Liferay when using SAML. 
 
 1. Add the following values under *Attribute Statements*: 
 
@@ -62,7 +62,7 @@ Below is the configuration using this structure for importing user groups from a
 
    **screenName (Unspecified):** `user.firstName`
 
-<!-- Same here. Do these things map to Liferay fields somehow? Why are we specifying these specific values? -Rich -->
+   The values on the left are names of the SAML attributes. They map to the corresponding values on the right which specify different user fields in Okta. 
 
 1. Add the following values under *Group Attribute Statements*:
 
@@ -72,14 +72,11 @@ Below is the configuration using this structure for importing user groups from a
 
 1. Click *Next*.
 
-1. Select one of the radio buttons based on what suits you best and click *Finish*. 
-
-<!-- What are these radio buttons for? I'm sure you omitted them for a reason, but I'm reading this with the idea that somebody might be using a different provider from Okta, and needs to know what from this example maps to the other provider. -Rich -->
+1. This step asks whether you're an Okta customer or partner. Select one based on what suits you best and click *Finish*. 
 
 ```{note}
 The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name with user groups in Liferay.
 ```
-
 <!-- Why would you prefix user group names with `Okta`? Seems silly to me. -Rich -->
 
 ## Saving the Metadata
@@ -128,17 +125,22 @@ Now, you must set Okta as a service provider in Liferay's SAML Admin.
 
 1. Set *Email Address* as the Name Identifier Format. 
 
-1. Under Attribute Mapping, create three new basic user fields to get a total of four. Enter the information as shown in the image:
+1. Under Attribute Mapping, create three new basic user fields to get a total of four. Enter the information as shown:
 
-<!-- Make a table with the values above, please. Users with screen readers can't get the values out of the image. -Rich -->
+   | User Fields  | SAML Attribute |
+   | :----------- | :------------- |
+   | emailAddress | emailAddress   |
+   | firstName    | firstName      |
+   | lastName     | lastName       |
+   | screenName   | screenName     |
 
    ![Create new basic user fields corresponding to the SAML attributes created on Okta.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/05.png)
 
 1. Under the User Memberships section, select `userGroups` from the drop-down and set its value as `userGroup`. 
 
-<!-- Point out how this maps to something specific from the XML configuration from Okta. -Rich -->
-
    ![Add a mapping for the userGroup field with the corresponding SAML attribute from Okta.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/06.png)
+
+   Both the mappings above link user attributes in Liferay with SAML attributes configured on Okta. For instance, the name of the user group SAML attribute in Okta is `userGroup`. This is mapped to the `userGroups` attribute in Liferay. 
 
 1. Click *Save*.
 
@@ -149,4 +151,3 @@ Now you can go to your Liferay instance and click *Sign In*. This redirects you 
 ```{important}
 Users are automatically assigned to user groups only if they are already present. Ensure that you have user groups in Liferay that correspond to the groups on Okta. If Okta sends the group information and the corresponding user group doesn't exist in Liferay, the attribute is ignored. See [Creating and Managing User Groups](../../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) to learn how to create and manage user groups.
 ```
-

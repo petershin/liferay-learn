@@ -13,7 +13,7 @@
 ```
 
 ```{important}
-詳細は、[Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation)を参照してください。
+詳細は、[Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation)を参照してください。
 ```
 
 ## 廃止予定の機能の利用可能性
@@ -32,8 +32,8 @@
 
 Liferay 7.0以前からアップグレードする場合は、該当するリリースで発生した廃止予定事項を調べてください。
 
-* [7.1](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+* [7.1](https://help.liferay.com/hc/ja/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+* [7.0](https://help.liferay.com/hc/ja/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 ## 7.2で廃止予定の機能
 
@@ -42,7 +42,7 @@ Liferay 7.0以前からアップグレードする場合は、該当するリリ
 | 機能                                   | 利用可能      | メモ                                                                                                                                                                                                                                                                   |
 |:------------------------------------ |:--------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | AlloyUI                              | バンドル      | [ClayUIタグ](https://clayui.com/)に相当するものとして公開されている[MetalJS](http://metaljs.com/)（仮）に置き換えられました。                                                                                                                                                                         |
-| オーディエンスターゲティング                       | 削除        | [パーソナライゼーション](../../../site-building/personalizing-site-experience.md)に置き換えられました（[オーディエンスターゲティングからの移行](https://help.liferay.com/hc/en-us/articles/360028711992-Manually-Migrating-from-Audience-Targeting)を参照）。                                                      |
+| オーディエンスターゲティング                       | 削除        | [パーソナライゼーション](../../../site-building/personalizing-site-experience.md)に置き換えられました（[オーディエンスターゲティングからの移行](https://help.liferay.com/hc/ja/articles/360028711992-Manually-Migrating-from-Audience-Targeting)を参照）。                                                      |
 | 中央認証サービス（CAS）                        | バンドル      | [ SAMLベースの認証](../../securing-liferay/configuring-sso/authenticating-with-saml.md)に移行。                                                                                                                                                                                |
 | CMISストア                              | 削除        | 別の[ファイルストアオプション](../../../system-administration/file-storage.md)に移行。 [Liferay 7.2にアップグレード](../upgrade-basics.md)する前に、[ファイルストアデータを移行してください](../../../system-administration/file-storage/file-store-migration.md)。                                                     |
 | Google ログイン/SSO                      | マーケットプレース | [OpenID Connect](../../securing-liferay/configuring-sso/using-openid-connect.md)に置き換えられました。                                                                                                                                                                          |

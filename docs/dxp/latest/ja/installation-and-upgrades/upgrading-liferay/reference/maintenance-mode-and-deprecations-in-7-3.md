@@ -13,7 +13,7 @@
 ```
 
 ```{important}
-詳細は、[Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation)を参照してください。
+詳細は、[Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation)を参照してください。
 ```
 
 ## 廃止予定の機能の利用可能性
@@ -52,7 +52,7 @@
 | アンケート                                             | バンドル                                                                                                                                                                         | フォームレポートに置き換えられました。                                                                                                                                                      |
 | プロジェクトテンプレート：project-templates-activator          | [GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions)にアーカイブ済み                                                                                        | 置換はありません。                                                                                                                                                                |
 | プロジェクトテンプレート：project-templates-freemarker-portlet | [GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions)にアーカイブ済み                                                                                        | 置換はありません。                                                                                                                                                                |
-| Screens                                           | Github - iOS： [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0)、Android： [5.1.0](https://github.com/liferay/liferay-screens/releases/tag/5.1.0-android) | [モバイルSDK](https://help.liferay.com/hc/en-us/articles/360020447511-Mobile-SDK)および[ヘッドレスAPI](../../../headless-delivery/using-liferay-as-a-headless-platform.md)を使用してください。 |
+| Screens                                           | Github - iOS： [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0)、Android： [5.1.0](https://github.com/liferay/liferay-screens/releases/tag/5.1.0-android) | [モバイルSDK](https://help.liferay.com/hc/ja/articles/360020447511-Mobile-SDK)および[ヘッドレスAPI](../../../headless-delivery/using-liferay-as-a-headless-platform.md)を使用してください。 |
 | *ツール* カテゴリの検索ウィジェット（クラシック）                        | バンドル                                                                                                                                                                         | 7.1で廃止。 *検索機能*カテゴリの[検索機能ウィジェット](../../../using-search/search-pages-and-widgets/search-results/search-results.md)に置き換えられました。                                              |
 | SOAP Webサービス                                      | バンドル（無効）                                                                                                                                                                     | Axis サーブレット (例：`http://localhost:8080/api/axis/`にサービスを公開する) は、このポータルプロパティ設定`axis.servlet.enabled`で有効にすることができます。 Liferayの`*SOAP`クラスは廃止されます。                               |
 | テーマ：Fjord                                         | アーカイブ済み                                                                                                                                                                      | 直接の置換はありません。                                                                                                                                                             |
@@ -65,8 +65,8 @@
 以前のLiferayバージョンからアップグレードする場合は、以前のバージョンで廃止になった機能も考慮する必要があります。
 
 * [7.2の非推奨事項とメンテナンスモードに移行した機能](./maintenance-mode-and-deprecations-in-7-2.md)
-* [7.1の非推奨事項](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0の非推奨事項](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+* [7.1の非推奨事項](https://help.liferay.com/hc/ja/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+* [7.0の非推奨事項](https://help.liferay.com/hc/ja/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 ## 7.3でメンテナンスモードに移行された機能
 

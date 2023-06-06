@@ -149,5 +149,7 @@ Now you can go to your Liferay instance and click *Sign In*. This redirects you 
    ![The user is added to the Liferay user group after successful login.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/07.png)
 
 ```{important}
-Users are automatically assigned to user groups only if they are already present. Ensure that you have user groups in Liferay that correspond to the groups on Okta. If Okta sends the group information and the corresponding user group doesn't exist in Liferay, the attribute is ignored. See [Creating and Managing User Groups](../../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) to learn how to create and manage user groups.
+Users are automatically assigned to user groups only if they are already present. Ensure that you have user groups in Liferay that correspond to the groups on Okta. If Okta sends the group information and the corresponding user group doesn't exist in Liferay, the attribute is ignored. See [Creating and Managing User Groups](../../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) to learn how to create and manage user groups. 
+
+If you assign users to other user groups in Liferay after signing in, these memberships are overwritten the next time you login through the IdP. 
 ```

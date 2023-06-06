@@ -248,6 +248,13 @@
 
 	.nav-link {
 		color: $default-color;
+		display: -webkit-box;
+		overflow: hidden;
+		margin-bottom: 0.5rem;
+		padding-bottom: 0;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+    	-webkit-line-clamp: 2;
 
 		&.active {
 			color: $primary;
@@ -258,6 +265,10 @@
 	.toc {
 		position: fixed;
 		margin-top: $spacing-default;
-		max-width: 12%;
+		max-width: 25%;
+
+		@include media-breakpoint-up(xl) {
+			max-width: 20%;
+		}
 	}
 }

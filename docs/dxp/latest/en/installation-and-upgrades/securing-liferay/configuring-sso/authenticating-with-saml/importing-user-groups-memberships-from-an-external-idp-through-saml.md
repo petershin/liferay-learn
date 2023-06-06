@@ -70,15 +70,15 @@ Below is the configuration using this structure for importing user groups from a
 
    ![Create a mapping for the user and group attributes.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/02.png)
 
+   ```{note}
+   The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name with user groups in Liferay. 
+
+   It is mandatory to mention a filter condition or regexp for group attribute statements. The SAML attribute is sent empty if there is no filter condition or regexp. 
+   ```
+
 1. Click *Next*.
 
 1. This step asks whether you're an Okta customer or a partner. Select one based on what suits you best and click *Finish*. 
-
-```{note}
-The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name with user groups in Liferay. 
-
-It is mandatory to mention a filter condition or regexp for group attribute statements. The SAML attribute is sent empty if there is no filter condition or regexp. 
-```
 
 ## Saving the Metadata
 

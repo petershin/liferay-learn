@@ -72,12 +72,13 @@ Below is the configuration using this structure for importing user groups from a
 
 1. Click *Next*.
 
-1. This step asks whether you're an Okta customer or partner. Select one based on what suits you best and click *Finish*. 
+1. This step asks whether you're an Okta customer or a partner. Select one based on what suits you best and click *Finish*. 
 
 ```{note}
-The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name with user groups in Liferay.
+The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name with user groups in Liferay. 
+
+It is mandatory to mention a filter condition or regexp for group attribute statements. The SAML attribute is sent empty if there is no filter condition or regexp. 
 ```
-<!-- Why would you prefix user group names with `Okta`? Seems silly to me. -Rich -->
 
 ## Saving the Metadata
 

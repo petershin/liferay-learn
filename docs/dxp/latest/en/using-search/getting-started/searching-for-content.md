@@ -45,7 +45,7 @@ Consider a blog entry including this text in its `content` field:
 
 > Bring to the table win-win survival _strategies to ensure_ proactive collaboration.
 
-With the standard English analyzer pipeline, the search phrase _"strategy that ensures"_ will return this blog entry. The same analysis is performed on the search keywords and the indexed text, accounting for stemming, stop word removal, and other tokenization. Quoting the phrase enforces that the separate tokens in the phrase match with the tokens in the indexed document field, including their relative position to each other.
+With the default English analyzer, the search phrase _"strategy that ensures"_ will return this blog entry. The same analysis is performed on the search keywords and the indexed text, accounting for stemming, stop word removal, and other tokenization. Quoting the phrase enforces that the separate tokens in the phrase match with the tokens in the indexed document field, including their relative position to each other.
 
 By contrast, entering the search keywords _"strategies ensure"_ will not return the above blogs entry document, because the relative position of the tokens produced by analysis are different between the search keywords and the indexed content.
 

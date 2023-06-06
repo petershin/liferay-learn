@@ -313,7 +313,7 @@ in the example below). This example renders the title, description, and body of 
 
 ## URL Configuration
 
-This configuration adds an input specifically for a URL to use in your fragment's markup:
+This configuration adds a field specifically for a URL to use in your fragment's markup:
 
 ```json
 {
@@ -331,7 +331,7 @@ This configuration adds an input specifically for a URL to use in your fragment'
 }
 ```
 
-When you configure a fragment with this configuration, you can choose from a drop-down menu to manually enter a URL (`URL`) or to select another page from the same site and use its complete URL (`Page`).
+When you configure a fragment with this configuration, you can choose from a drop-down menu to enter a URL manually (`URL`) or to select another page from the same site and use its complete URL (`Page`).
 
 Here is an example of fragment HTML that uses the URL configuration in the above JSON to create a hyperlink:
 

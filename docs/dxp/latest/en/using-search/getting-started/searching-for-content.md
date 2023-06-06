@@ -39,13 +39,13 @@ Wrapping search bar queries in quotation marks forces the search engine to produ
 
 #### Quoted Full Text Search: Ensuring Match Order
 
-In a full-text search (e.g., searching analyzed text fields), quoting search bar queries ensures that the searched terms are matched to the field only if they appear in the exact same order. The search engine is not matching the exact quoted phrase, because analysis still takes place on the indexed content and the search phrase.
+Placing search bar queries in quotes matches the searched terms to the field only if they appear in the exact same order. The search engine does not match the exact quoted phrase, because analysis still takes place on the indexed content and the search phrase.
 
 Consider a blog entry including this text in its `content` field:
 
 > Bring to the table win-win survival _strategies to ensure_ proactive collaboration.
 
-With the default English analyzer, the search phrase _"strategy that ensures"_ will return this blog entry. The same analysis is performed on the search keywords and the indexed text, accounting for stemming, stop word removal, and other tokenization. Quoting the phrase enforces that the separate tokens in the phrase match with the tokens in the indexed document field, including their relative position to each other.
+With the default English analyzer, the search phrase _"strategy that ensures"_ returns this blog entry. The same analysis is performed on the search keywords and the indexed text, accounting for stemming, stop word removal, and other tokenization. Quoting the phrase enforces that the separate tokens in the phrase match with the tokens in the indexed document field, including their relative position to each other.
 
 By contrast, entering the search keywords _"strategies ensure"_ will not return the above blogs entry document, because the relative position of the tokens produced by analysis are different between the search keywords and the indexed content.
 
@@ -55,7 +55,7 @@ By contrast, entering the search keywords _"strategies ensure"_ will not return 
 
 When searching non-analyzed fields (e.g., keyword fields), a quoted search phrase and the field value must match exactly.
 
-In a regular Liferay search, both analyzed and non-analyzed fields are present in index documents. The non-analyzed fields produce results only if their content matches exactly to the quoted search phrase, while the analyzed fields produce results as long as their tokens match the quoted search phrase's tokens and they appear in the same relative positions.
+In a regular Liferay search, both analyzed and non-analyzed fields are present in index documents. The non-analyzed fields produce results only if their content matches the quoted search phrase exactly, while the analyzed fields produce results as long as their tokens match the quoted search phrase's tokens and they appear in the same relative positions.
 
 ### Prefix Searching
 

@@ -2,6 +2,7 @@
 toc:
   - ./configuring-mail/configuring-default-email-senders.md
   - ./configuring-mail/alternative-email-configuration-methods.md
+  - ./configuring-mail/configuring-office-365-with-oauth.md
 uuid: 072db382-871c-474e-bdf9-ddf2a541ba30
 ---
 # Configuring Mail
@@ -11,6 +12,7 @@ uuid: 072db382-871c-474e-bdf9-ddf2a541ba30
 
 configuring-mail/configuring-default-email-senders.md
 configuring-mail/alternative-email-configuration-methods.md
+configuring-mail/configuring-office-365-with-oauth.md
 ```
 
 Liferay DXP/Portal can be configured to use a mail server to send email notifications for a variety of purposes: User registration and password management, Site membership notifications, and content updates. For demonstration purposes, you'll walk through configuring the built-in mail session to use a Gmail server.
@@ -65,3 +67,4 @@ DXP connects to the mail session immediately.
 
 * [Configuring Default Email Senders](./configuring-mail/configuring-default-email-senders.md)
 * [Alternative Email Configuration Methods](./configuring-mail/alternative-email-configuration-methods.md)
+* [Configuring Office 365 with OAuth](./configuring-mail/configuring-office-365-with-oauth.md)

@@ -31,7 +31,8 @@ public class Product_POST_ToCatalog {
 								put("en_US", "Foo");
 							}
 						};
-						productOptions = new ProductOption[] { new ProductOption() {
+						productOptions = new ProductOption[] {
+							new ProductOption() {
 								{
 									fieldType = "select";
 									key = "foo";
@@ -50,7 +51,8 @@ public class Product_POST_ToCatalog {
 						};
 
 						productType = "simple";
-						skus = new Sku[] { new Sku() {
+						skus = new Sku[] {
+							new Sku() {
 								{
 									published = true;
 									purchasable = true;

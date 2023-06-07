@@ -6,11 +6,11 @@ Here, you'll log into the console and start using the CLI tool.
 
 ## Accessing the Cloud Console
 
-When your Liferay Experience Cloud environment is set up, you receive an email inviting you to become an administrator. You receive separate email invitations to set up your administrator accounts for the Cloud console and for your Liferay instances.
+When your Liferay Experience Cloud environment is set up, you receive (separate) emails inviting you to set up your account and become an administrator for both the Cloud console and your Liferay instances on LXC.
 
-If you haven't already done so, accept the invitations in these emails so you can log into the console (and your Liferay instances).
+If you haven't already done so, accept the invitations in these emails and set up your account passwords so you can log into the console (and your Liferay instances).
 
-Once your account is set up, log in to the console at `https://console.liferay.cloud`. From there, you can see the UAT and production environments for your client extension projects.
+Once your account is set up, log into the console at `https://console.liferay.cloud`. From there, you can see the UAT and production environments for your client extension projects.
 
 ![Your UAT and production environments are available in the Cloud console for you to see your running client extensions.](./logging-into-the-cloud-console/images/01.png)
 

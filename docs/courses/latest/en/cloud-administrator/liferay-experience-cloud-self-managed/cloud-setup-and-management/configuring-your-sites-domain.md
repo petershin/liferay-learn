@@ -5,12 +5,12 @@ Now that the Delectable Bonsai site is up and running, it needs a web domain for
 Here, you'll register and configure a custom domain for your site.
 
 ```{important}
-This exercise requires you to reserve your own custom domains using a domain registration service. Skip this exercise if you are not ready to pay any fees associated with claiming your domains.
+This exercise requires you to reserve your own custom domain(s) using a domain registration service. Skip this exercise if you are not ready to pay any fees associated with claiming your domains.
 ```
 
 ## Finding Your Ingress Load Balancer IP Address
 
-First, find the IP address for your Ingress load balancer for your production environment.
+First, find your Ingress load balancer's IP address for your production environment.
 
 In the Liferay Cloud console, navigate to your production environment and click *Network* from the left-side menu. On the Network page, your load balancer's IP address is shown in the *Ingress Endpoints* section.
 
@@ -20,7 +20,7 @@ In the Liferay Cloud console, navigate to your production environment and click 
 
 Next, use the domain registration service of your choice to register your desired domain with the IP address for your production environment. Choose a domain name that you plan to use for your own site. Register the domain as a type `A` record.
 
-If you plan to configure additional custom domains or subdomains for your other environments, find the IP addresses from the *Network* page in those environments and them as well.
+If you plan to configure additional custom domains or subdomains for your other environments, find the IP addresses from the *Network* page in those environments to use them for domain registration.
 
 See your chosen domain registration service's documentation for more information on registering your domains.
 
@@ -60,7 +60,7 @@ Once the process completes, access your chosen domain in a browser to see it rou
 
 ![Your browser verifies that you are using a secured connection once the load balancer updates with a new SSL certificate.](./configuring-your-sites-domain/images/04.png)
 
-Next, you'll [enable clustering for your Liferay service](./setting-up-clustering-for-the-liferay-service.md) to handle higher traffic.
+Next, you'll [enable clustering for your Liferay service](./setting-up-clustering-for-the-liferay-service.md) to handle more traffic.
 
 ## Relevant Concepts
 

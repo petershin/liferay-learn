@@ -7,21 +7,9 @@ Your first task after your Liferay Cloud account is provisioned is to set up the
 
 Set up the repository and complete your first push to ensure it's working.
 
-## Install the CLI Tool
-
-First, you must install the CLI tool so you can deploy changes quickly to different services in Liferay Cloud. 
-
-Install the CLI tool via your command prompt.
-
-**On Linux/MacOS**:
-
-```bash
-curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
+```{note}
+You must have the [CLI tool installed](../../liferay-experience-cloud/logging-in-and-using-the-cli-tool.md#install-the-cli-tool) to continue with this course.
 ```
-
-**On Windows**:
-
-Download the latest version of the [Windows installer](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe) and follow the steps in the wizard.
 
 ## Fork and Clone the GitHub Repository
 

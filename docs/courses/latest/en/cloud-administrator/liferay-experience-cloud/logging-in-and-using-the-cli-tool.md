@@ -14,7 +14,7 @@ Once your account is set up, log in to the console at `https://console.liferay.c
 
 ![Your UAT and production environments are available in the Cloud console for you to see your running client extensions.](./logging-into-the-cloud-console/images/01.png)
 
-## Install the Tool on the Command Line
+## Install the CLI Tool
 
 Open a command prompt on your system to install the tool. Run this command:
 

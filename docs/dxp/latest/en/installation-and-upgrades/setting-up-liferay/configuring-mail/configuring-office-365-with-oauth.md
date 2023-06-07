@@ -3,7 +3,7 @@ uuid: 49804344-72f6-4e92-aa84-5b99e2bfd982
 ---
 # Configuring Microsoft Office 365 with OAuth
 
-{bdg-secondary}`Available Liferay DXP 7.4 U78/Liferay Portal 7.4 GA78 and above`
+{bdg-secondary}`Available Liferay DXP 7.4 U79/Liferay Portal 7.4 GA79 and above`
 
 OAuth 2.0 authorization is required to connect your Microsoft email service with Liferay. Follow the configuration steps below.
 

@@ -50,7 +50,7 @@ Below is the configuration using this structure for importing user groups from a
 
    ![Configure settings for the SAML app.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/01.png)
 
-   This field denotes the username with which you can log in to Okta which then logs you into Liferay when using SAML. 
+   This field denotes the source of the username users use to log in to Okta, which then logs them into Liferay when using SAML. 
 
 1. Add the following values under *Attribute Statements*: 
 
@@ -73,12 +73,12 @@ Below is the configuration using this structure for importing user groups from a
    ```{note}
    The instructions above assume that you already have a set of users on Okta belonging to different groups (starting with the prefix `Okta`). Okta recommends using either [keywords or regex](https://support.okta.com/help/s/article/How-to-pass-a-user-s-group-membership-in-a-SAML-Assertion-from-Okta?language=en_US) to define group memberships. These groups are matched by their name with user groups in Liferay. 
 
-   It is mandatory to mention a filter condition or regexp for group attribute statements. The SAML attribute is sent empty if there is no filter condition or regexp. 
+   It is mandatory to specify a filter condition or regexp for group attribute statements. The SAML attribute is sent empty if there is no filter condition or regexp. 
    ```
 
 1. Click *Next*.
 
-1. This step asks whether you're an Okta customer or a partner. Select one based on what suits you best and click *Finish*. 
+1. The rest of the form is Okta-specific and has no effect on the configuration. Select whatever suits you best and click *Finish*. 
 
 ## Saving the Metadata
 
@@ -150,7 +150,7 @@ Now you can go to your Liferay instance and click *Sign In*. This redirects you 
    ![The user is added to the Liferay user group after successful login.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/07.png)
 
 ```{important}
-Users are automatically assigned to user groups only if they are already present. Ensure that you have user groups in Liferay that correspond to the groups on Okta. If Okta sends the group information and the corresponding user group doesn't exist in Liferay, the attribute is ignored. See [Creating and Managing User Groups](../../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) to learn how to create and manage user groups. 
+Users are assigned automatically to user groups only if they are already present. Ensure that you have user groups in Liferay that correspond to the groups on Okta. If Okta sends the group information and the corresponding user group doesn't exist in Liferay, the attribute is ignored. See [Creating and Managing User Groups](../../../../users-and-permissions/user-groups/creating-and-managing-user-groups.md) to learn how to create and manage user groups. 
 
-If you assign users to other user groups in Liferay after signing in, these memberships are overwritten the next time you login through the IdP. 
+If you assign users to other user groups in Liferay after signing in, these memberships are overwritten the next time you log in through the IdP. 
 ```

@@ -98,7 +98,7 @@ Finally, configure the CI service in your `infra` environment to work with the p
 
 Once the CI service restarts, any pushes or pull requests to your private repository trigger new builds in your Liferay Cloud project.
 
-Next, you'll use the repository to complete your first push and deployment.
+Next, you'll configure your site to use your own [custom domain](./configuring-your-sites-domain.md).
 
 ## Related Concepts
 

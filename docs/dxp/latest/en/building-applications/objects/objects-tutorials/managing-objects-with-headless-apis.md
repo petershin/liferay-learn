@@ -118,7 +118,7 @@ Here are the command's arguments:
 | `-u "test@liferay.com:learn"`                                                                                               | Basic authentication credentials                    |
 
 ```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
+Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 ```
 
 The other cURL commands use similar JSON arguments.
@@ -346,4 +346,4 @@ The cURL commands and Java classes for object field work in the same way as obje
 | `ObjectField_PUT_ById.[java\|sh]`                  | Replaces a specific object field by ID.                 |
 | `ObjectFields_GET_FromObjectDefinition.[java\|sh]` | Gets a list of object fields from an object definition. |
 
-The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the services and schemas for objects and has an interface to try out each service.
+The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the services and schemas for objects and has an interface to try out each service.

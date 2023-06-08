@@ -34,6 +34,12 @@
 
 		> ul {
 			margin: 0;
+
+			@include media-breakpoint-up(md) {
+				height: 100vh;
+				overflow-y: scroll;
+				padding-bottom: 12rem;
+			}
 		}
 
 		a {

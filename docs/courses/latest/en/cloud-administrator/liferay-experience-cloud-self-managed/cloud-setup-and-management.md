@@ -6,6 +6,7 @@ toc:
    - ./cloud-setup-and-management/configuring-your-sites-domain.md
    - ./cloud-setup-and-management/setting-up-clustering-for-the-liferay-service.md
    - ./cloud-setup-and-management/configuring-auto-scaling.md
+   - ./cloud-setup-and-management/rotating-your-database-password.md
 uuid: 9f762025-c335-481c-b9d4-921e3021555c
 ---
 # Cloud Setup and Management

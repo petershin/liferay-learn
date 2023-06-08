@@ -73,7 +73,7 @@ Follow these steps to add a new SharePoint OAuth2 configuration via the Liferay 
 
 **Name**: The configuration's name
 
-**Authorization Grant Endpoint**: The URL used to request OAuth2 authorization grants (e.g., `https://[your-site-name]/sharepoint.com/_layouts/oauthauthorize.aspx` for SharePoint Online)
+**Authorization Grant Endpoint**: The URL used to request OAuth2 authorization grants (e.g., `https://[your-site-name].sharepoint.com/_layouts/oauthauthorize.aspx` for SharePoint Online)
 
 **Authorization Token Endpoint**: The ACS URL (e.g., `https://accounts.accesscontrol.windows.net/[App ID]/tokens/OAuth/2` for SharePoint Online)
 

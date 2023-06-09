@@ -25,6 +25,7 @@ public class Product_POST_ToCatalog {
 						active = true;
 						catalogId = Long.valueOf(
 							System.getProperty("catalogId"));
+
 						name = new HashMap<String, String>() {
 							{
 								put("en_US", "Foo");
@@ -48,6 +49,7 @@ public class Product_POST_ToCatalog {
 								}
 							}
 						};
+
 						productType = "simple";
 						skus = new Sku[] {
 							new Sku() {

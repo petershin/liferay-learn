@@ -1,3 +1,7 @@
+---
+uuid: 3d959a72-4ff9-4d25-b9ee-1d21d0c08d95
+---
+
 # Rotating Your Database password
 
 Delectable Bonsai's database security policy is to rotate the password at least every 90 days.
@@ -21,6 +25,10 @@ Before you change any database credentials, create a manual backup so that you c
    ![Click Backup Now to create a manual backup that you can restore later.](./rotating-your-database-password/images/01.png)
 
 The backup service's controls are temporarily unavailable while a backup is created. Wait for the backup to finish before proceeding.
+
+```{warning}
+Do not skip this step! You must create a backup before proceeding. Changing the database password requires deleting and recreating the database service, and then restoring your data. If you do not create a backup first, you will lose all your data. 
+```
 
 ## Changing Your Database Password
 
@@ -52,11 +60,11 @@ The secret value is changed, but the database service is not using the new passw
 
 ## Deleting and Deploying the Database Service
 
-Delete and re-deploy the database service for your new password to take effect.
+Delete and re-deploy the database service for your new password to take effect. Be sure you have backed up your data first! 
 
 1. Click *Services* on the left side of the screen.
 
-1. Click the Actions menu ( ![Actions icon](../../../images/icon-actions.png) ) for the database service, and click *Delete service*.
+1. Click *Actions* ( ![Actions icon](../../../images/icon-actions.png) ) for the database service, and click *Delete service*.
 
    ![You must delete the database service for the password change to take effect.](./rotating-your-database-password/images/04.png)
 
@@ -68,7 +76,7 @@ Delete and re-deploy the database service for your new password to take effect.
 
 1. Click *Builds* at the top of the screen.
 
-1. Click the Actions menu ![Actions icon](../../../images/icon-actions.png) for the latest build, and click *Deploy build to...*
+1. Click *Actions* ![Actions icon](../../../images/icon-actions.png) for the latest build, and click *Deploy build to...*
 
 1. From the *Environment* drop-down menu, select your production environment.
 
@@ -88,13 +96,13 @@ Once your services are up and running again (with the `Ready` status), restore t
 
 1. Click *Backups* on the left side of the screen.
 
-1. Click the Actions menu ( ![Actions icon](../../../images/icon-actions.png) ) for the manual backup you created previously, and click *Restore to...*
+1. Click *Actions* ( ![Actions icon](../../../images/icon-actions.png) ) for the manual backup you created previously, and click *Restore to...*
 
    ![Restore the backup after the database service is back up and running.](./rotating-your-database-password/images/07.png)
 
 1. In the *Select environment* drop-down menu, select your production environment.
 
-1. Click the checkboxes to confirm the impact of the backup restore.
+1. Click the checkboxes to confirm the impact of the restore process.
 
    ![Select the checkboxes and finalize the backup restore.](./rotating-your-database-password/images/08.png)
 

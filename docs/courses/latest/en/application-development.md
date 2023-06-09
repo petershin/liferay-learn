@@ -7,7 +7,7 @@ Liferay provides out-of-the-box features for building dynamic digital experience
 
 ## Overview
 
-This course covers the development paradigm for extending Liferay 7.4+. While these lessons focus on Liferay Experience Cloud (LXC), this content is applicable for LXC Self-Managed and Liferay DXP Self-Hosted as well.
+This course covers the development paradigm for extending Liferay 7.4+. While these lessons focus on Liferay Experience Cloud (LXC), this content is applicable to LXC Self-Managed and Liferay DXP Self-Hosted as well.
 
 ```{note}
 Previously, application development involved deploying OSGi modules to modify and extend the core Liferay platform directly. While this method remains valid for Self-Managed and Self-Hosted options, it is not available for LXC. The 7.4+ development paradigm avoids making any changes to Liferay's core and does not deploy OSGI modules and portlets.
@@ -35,4 +35,30 @@ By the end of this course, you will know how to
 
 The first step is modeling data structures for our applications. [Let's get started!](./application-development/modeling-data-structures.md)
 
-<!-- ADD CARDS -->
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card} Module One: Modeling Data Structures
+:link: ./application-development/modeling-data-structures.md
+
+Learn how to use Liferay Objects to define and manage custom data structures.
+:::
+
+:::{grid-item-card} Module Two: Implementing Business Logic
+:link: ./application-development/implementing-business-logic.md
+
+Learn how to add validations, notifications, and more to your applications in Liferay DXP.
+:::
+
+:::{grid-item-card} Module Three: Designing User Interfaces
+:link: ./application-development/designing-user-interfaces.md
+
+Learn how to design application interfaces in Liferay DXP.
+:::
+
+:::{grid-item-card} Module Four: Building a Ticketing System
+:link: ./application-development/building-a-ticketing-system.md
+
+Learn how to use advanced features to develop a ticketing system.
+:::
+::::

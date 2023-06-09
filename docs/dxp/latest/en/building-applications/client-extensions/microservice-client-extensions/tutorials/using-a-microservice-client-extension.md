@@ -3,18 +3,21 @@ uuid: 7ba1005d-5491-43f8-9067-5e63b241fe63
 ---
 # Using a Microservice Client Extension
 
-A microservice client extension is a standalone server process that relies on OAuth 2 for communication with Liferay. In this paradigm, the microservice is a resource server and Liferay is the authorization server. See [Using OAuth 2](../../../../headless-delivery/using-oauth2.md) for more information. The sample projects in this demonstration ingest the payload from a protected route in the resource server (microservice) and display it in a front-end widget based on a [custom element](../../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) client extension. In order to coordinate with the standalone [Spring Boot application](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started), two client extensions types are used in this example:
+A microservice client extension is a standalone server process that relies on OAuth 2 for communication with Liferay. The microservice is a resource server and Liferay is the authorization server. See [Using OAuth 2](../../../../headless-delivery/using-oauth2.md) for more information. The sample projects in this demonstration ingest the payload from a protected route in the resource server (microservice) and display it in a front-end widget based on a [custom element](../../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) client extension. In order to coordinate with the standalone [Spring Boot application](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started), two client extensions types are used in this example:
 
 | Deployable or Runnable Code                            | Type                                                                                                                                    | Description                                                                                                       | Workspace Sample                |
 |:-------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------|:--------------------------------|
 | Deploy the Liferay Sample OAuth Application User Agent | Client extension: [`oAuthApplicationUserAgent`](../../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) | Configures the authorization channel so the logged in user sees the microservice's payload in the custom element. | liferay-sample-etc-spring-boot  |
 | Run the Spring Boot microservice application           | Protected endpoint: `/dad/joke`                                                                                                         | A protected endpoint to the resource server. It takes a JWT token and returns a payload.                          | liferay-sample-etc-spring-boot  |
 | Deploy the Liferay Sample Custom Element 2             | Client extension: [`customElement`](../../front-end-client-extensions/custom-element-yaml-configuration-reference.md)                   | Defines a custom element and requests the payload from the resource server, through its OAuth 2 client code.      | liferay-sample-custom-element-2 |
-<!-- *Greg* We should make some type of mention that the customElement isn't strictly required,  it could just as easily be a piece of JS that is loaded by a HTML fragment, we are using the customElement client extension out of expediency (easy to deploy for the sample) -->
 
-The resource server has the protected route `/dad/joke`. The client (i.e., widget) user must be logged into Liferay so that on behalf of the user in context we can request an authorization code from the authorization server (Liferay). Once a token is granted, the client communicates with the resource server (Spring Boot application). When an authenticated user loads a page with the client application on it (the custom element), it requests an authorization code, which is available because of the communication channel configured by the user agent extension (i.e., Liferay is the authorization server). Liferay returns the code, then the client asks for the access token. With the token, the endpoint in the microservice is accessible by the client. The resource server validates the JWT token with Liferay using the JWKS URI endpoint. This is done automatically in the background.
+```{note}
+For convenience, this tutorial uses the ready-to-deploy custom element from the sample workspace. However, the custom element client extension isn't the focus of this tutorial. Any front-end technology that can call the authorization server and display the payload from the resource server can be used in place of the custom element.
+```
 
-Extensions of type `oAuthApplicationUserAgent` are registered as having a client profile User Agent Application, meaning that the Authorization Code flow is being used.
+The resource server has the protected route `/dad/joke`. On the behalf of the logged in user, the client (i.e., widget) requests an authorization code from the authorization server (Liferay). Once a token is granted, the client communicates with the resource server (Spring Boot application). 
+
+Extensions of type `oAuthApplicationUserAgent` are registered as having a client profile User Agent Application, meaning that the authorization code flow is being used.
 
 ## Prerequisites
 
@@ -43,39 +46,7 @@ Now you have the tools to start the microservice and deploy the client extension
 
 ## Examine the Microservice Project's Client Extensions
 
-The `client-extensions/liferay-sample-etc-spring-boot/client-extension.yaml` file defines the microservice client extension project in the sample workspace:
-
-```yaml
-assemble:
-    - fromTask: bootJar
-liferay-sample-etc-spring-boot-notification-type-1:
-    name: Liferay Sample Etc Spring Boot Notification Type 1
-    oAuth2ApplicationExternalReferenceCode: liferay-sample-etc-spring-boot-oauth-application-user-agent
-    resourcePath: /notification/type/1
-    type: notificationType
-liferay-sample-etc-spring-boot-oauth-application-user-agent:
-    name: Liferay Sample Etc Spring Boot Spring Boot OAuth Application User Agent
-    scopes:
-        - Liferay.Headless.Admin.Workflow.everything
-    type: oAuthApplicationUserAgent
-liferay-sample-etc-spring-boot-object-action-1:
-    name: Liferay Sample Etc Spring Boot Spring Boot Object Action 1
-    oAuth2ApplicationExternalReferenceCode: liferay-sample-etc-spring-boot-oauth-application-user-agent
-    resourcePath: /object/action/1
-    type: objectAction
-liferay-sample-etc-spring-boot-object-action-2:
-    name: Liferay Sample Etc Spring Boot Spring Boot Object Action 2
-    oAuth2ApplicationExternalReferenceCode: liferay-sample-etc-spring-boot-oauth-application-user-agent
-    resourcePath: /object/action/2
-    type: objectAction
-liferay-sample-etc-spring-boot-workflow-action-1:
-    name: Liferay Sample Etc Spring Boot Spring Boot Workflow Action 1
-    oAuth2ApplicationExternalReferenceCode: liferay-sample-etc-spring-boot-oauth-application-user-agent
-    resourcePath: /workflow/action/1
-    type: workflowAction
-```
-
-Most of the defined client extensions (the ones with `type: *Action`) are not needed for this example. The necessary lines from the `client-extension.yaml` can be boiled down to
+The `client-extensions/liferay-sample-etc-spring-boot/client-extension.yaml` file defines the microservice client extension project in the sample workspace. Most of the defined client extensions (e.g., the ones with `type: *Action`) are not needed for this example. The necessary lines from the `client-extension.yaml` can be boiled down to
 
 ```yaml
 assemble:
@@ -89,18 +60,7 @@ liferay-sample-etc-spring-boot-oauth-application-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-The external application/microservice is created with the `bootJar` command.
-
-<!--There are some confusing things about this. You have to deploy this to Liferay, but you have to do it by running a weird command at the workspace root, gw :client-extensions:liferay-sample-etc-spring-boot:deploy.... 
-Also, I want to talk about bootJar and have the reader run it, but in reality we need bootRun, part of the liferay gradle plugin.
-
-** Greg edit **
-This has been addressed and now you can run `gw deploy`...
-
-** Russ Reply **
-Great, what about the bootJar command--we don't run it here, should we mention it at all?
-Greg: Yes i think so, because we want to tell them that for deploying this to LXC we must enclose the microservice application/server process, which is done from the assemble: from: bootJar task (bootJar comes from springboot gradle plugin)
--->
+The external application/microservice is created with the `bootJar` command that is available from the [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/). The application JAR must be included in the LUFFA for deployment in LXC.
 
 The most important part of the `client-extension.yaml` is in the `liferay-sample-etc-spring-boot-oauth-application-user-agent` definition. This sets up Liferay as the authorization server, so that the front-end client extension you deploy next can call the resource server's secure endpoint and display its payload.
 
@@ -130,12 +90,12 @@ See [Understanding Custom Element and IFrame Client Extensions](../../front-end-
 
 ## Deploy the OAuth Application User Agent Client Extension
 
-1. Go to the sample workspace's `client-extension/liferay-sample-etc-spring-boot` folder.
+1. Go to the sample workspace's `client-extensions/liferay-sample-etc-spring-boot` folder.
 
 1. Run
 
    ```bash
-   ../../gradlew clean deploy
+   ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
 1. In Liferay's log, confirm that the client extension deployed and started:
@@ -153,7 +113,7 @@ See [Understanding Custom Element and IFrame Client Extensions](../../front-end-
 
    ![The Liferay Sample OAuth Application User Agent is added when you deploy the client extension.](./using-a-microservice-client-extension/images/01.png)
 
-The Liferay Sample OAuth Application User Agent provides the [OAuth2 authorization](../../../../headless-delivery/using-oauth2.md) needed so that Liferay can access the Spring Boot application's data through its protected endpoint. All that is needed for Liferay to authorize the application in this case is declaring the external reference code in the `application-default.properties`:
+The Liferay Sample OAuth Application User Agent provides the [OAuth 2 authorization](../../../../headless-delivery/using-oauth2.md) needed so that Liferay can access the Spring Boot application's data through its protected endpoint. All that is needed for Liferay to authorize the application in this case is declaring the external reference code in the `application-default.properties`:
 
 ```properties
 liferay.oauth.application.external.reference.codes=liferay-sample-etc-spring-boot-oauth-application-user-agent
@@ -185,7 +145,7 @@ The microservice is running, and the OAuth2 Application communication channel is
 1. Run 
 
    ```bash
-   ../../gradlew clean deploy
+   ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
 ## Display Dad Jokes on a Page
@@ -195,6 +155,8 @@ Add the Liferay Sample Custom Element 2 widget to a page in your running Liferay
 ![Custom Element 2 displays a bad joke each time the page is loaded.](./using-a-microservice-client-extension/images/02.png)
 
 ## Additional OAuth Details
+
+When an authenticated user loads a page with the client application on it (the custom element), it requests an authorization code, which is available because of the communication channel configured by the user agent extension (i.e., Liferay is the authorization server). Liferay returns the code, then the client asks for the access token. With the token, the endpoint in the microservice is accessible by the client. The resource server validates the JWT token with Liferay using the JWKS URI endpoint. This is done automatically in the background.
 
 In the `DadJoke.js` file of the `liferay-sample-custom-element-2` client extension, there's an important call that initiates the authorization pipeline:
 
@@ -206,9 +168,6 @@ try {
 }
 ```
 
-<!-- Is the first sentence below accurate? So hard to tell with JavaScript what's going to be set in this variable 
--Russ -->
-<!-- Greg: Yep, that looks good -->
 This call provides the client with a token, which the client can use as a bearer token when requesting the resources from the `/dad/joke` route in the resource server. The client code doesn't need to worry about the location of the server it's requesting, as this information is encapsulated in the OAuth 2 application. In self-hosted environments it's declared in the OAuth application user agent's `client-extension.yaml` properties, as `.serviceAddress` and `.serviceScheme`. In LXC environments the resource server is controlled by Liferay, so no declaration of its location is necessary. This sets up authorization code flow for the client and resource server communication, so that all that's left is for the client to call the endpoint in the resource server. `DadJoke.js` fetches from the `/dad/joke` route like this:
 
 ```js
@@ -223,10 +182,17 @@ React.useEffect(() => {
       .catch((error) => console.log(error));
 }, []);
 ```
-<!--More? I'm wondering if some of the somewhat repetitive text about OAuth from above can be moved down here.
-- Russ -->
-<!-- up2you -->
 
 <!-- Greg 
-I think it would be good I think to show the request coming into the REstController and explain a bit about the JWT that is available there (representing the user)
+I think it would be good I think to show the request coming into the RestController and explain a bit about the JWT that is available there (representing the user)
+     Russ
+I'm leaving this comment because Greg hasn't validated the below text.
 -->
+
+The OAuth client sends a `Jwt` token to the microservice, representing the authenticated user. Included is the authorization code, permissions that are granted, and many other details. This sample prints these details to the log for convenience:
+
+```log
+2023-06-08 16:01:42.617  INFO 3851009 --- [io-58081-exec-5] c.liferay.sample.DadJokeRestController   : JWT Claims: {sub=20123, grant_type=authorization_code, authorization_code=404dd760ffcaa322fd38387319941990e5e10bb2d97ab360e63271f613eb33f1, scope=Liferay.Headless.Admin.Workflow.everything, iss=localhost, exp=2023-06-08T20:10:51Z, iat=2023-06-08T20:00:51Z, jti=8ffd31c001c54b1331d484731ff1e43b341dd4cb7232b98da96a4aaec6b6a6d, client_id=id-60ac3dc8-f5e8-484e-25b3-23d435e838c6, code_verifier=~zACCmEV6ZuhZHAZ0Q.RaEvGo5YUMF6x2QimtgT4lgXjWB6_Jc0QtVDNrtnxeOTfondPxH4pwxY0aAI-Op0oz1vajQTTqhrNegJnSZ4vLEBZGgE9m5Jgmi3ORDy1Bg7Q, username=test@liferay.com}
+2023-06-08 16:01:42.618  INFO 3851009 --- [io-58081-exec-5] c.liferay.sample.DadJokeRestController   : JWT ID: 8ffd31c001c54b1331d484731ff1e43b341dd4cb7232b98da96a4aaec6b6a6d
+2023-06-08 16:01:42.618  INFO 3851009 --- [io-58081-exec-5] c.liferay.sample.DadJokeRestController   : JWT Subject: 20123
+```

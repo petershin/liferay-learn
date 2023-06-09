@@ -25,7 +25,6 @@ public class Product_POST_ToCatalog {
 						active = true;
 						catalogId = Long.valueOf(
 							System.getProperty("catalogId"));
-
 						name = new HashMap<String, String>() {
 							{
 								put("en_US", "Foo");
@@ -35,11 +34,11 @@ public class Product_POST_ToCatalog {
 							new ProductOption() {
 								{
 									fieldType = "select";
-									key = "foo";
+									key = "able";
 
 									name = new HashMap<String, String>() {
 										{
-											put("en_US", "Foo");
+											put("en_US", "Able");
 										}
 									};
 									optionId = Long.valueOf(
@@ -49,19 +48,18 @@ public class Product_POST_ToCatalog {
 								}
 							}
 						};
-
 						productType = "simple";
 						skus = new Sku[] {
 							new Sku() {
 								{
 									published = true;
 									purchasable = true;
-									sku = "TEST001";
+									sku = "SKU-01";
 									skuOptions = new SkuOption[] {
 										new SkuOption() {
 											{
-												key = "foo";
-												value = "Able";
+												key = "able";
+												value = "Baker";
 											}
 										}
 									};
@@ -71,12 +69,12 @@ public class Product_POST_ToCatalog {
 								{
 									published = true;
 									purchasable = true;
-									sku = "TEST002";
+									sku = "SKU-02";
 									skuOptions = new SkuOption[] {
 										new SkuOption() {
 											{
-												key = "foo";
-												value = "Baker";
+												key = "able";
+												value = "Charlie";
 											}
 										}
 									};

@@ -19,7 +19,7 @@ Here, we'll continue the story of Delectable Bonsai, a fictional B2B producer of
 
 1. A Ticketing System for customers to report issues and open requests
 
-This course consists of four modules. The first three develop the Distributor Application using Liferay's low-code features. The fourth and final module uses more advanced features to develop the Ticketing System.
+This course consists of four modules. The first three develop the Distributor Application using Liferay's low-code features. The fourth and final module uses more advanced features to develop the Ticketing System. <!-- and improve the Distributor Application? -->
 
 When finished, Delectable Bonsai will have an onboarding flow that takes users from submitting an application to a new business account.
 

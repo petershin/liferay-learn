@@ -6,7 +6,7 @@ uuid: 2625023e-5f99-4caa-b510-b3b340985973
 You can create products with multiple active SKUs using the product API or from the Products application. To create such a product, you must first have an option template created using the [Option API](./option-api-basics.md) or through the Options application, and have values present for the option. You can add values from the Options application or use the [Option Value API](./option-value-api-basics.md). 
 
 ```{note}
-You can also create an option template from the *Options* tab on a product. The values added here, however, are specific to the product and doesn't get added to the option template found under *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; *Commerce* &rarr; *Options*. 
+You can also create an option template from the Options tab on a product. The values added here, however, are specific to the product and doesn't get added to the option template found under Global Menu (![Applications Menu icon](../../images/icon-applications-menu.png)) &rarr; Commerce &rarr; Options. 
 ```
 
 ## Adding a Product with Multiple SKUs
@@ -26,11 +26,11 @@ Then follow these steps:
    unzip liferay-q8t5.zip
    ```
 
-1. A product is scoped to a catalog and the catalog ID is one of the required parameters. To have multiple active SKUs, the product must also have options. You can create an option template to reuse it with multiple products. To link an option template to a product, the option ID is required. 
+1. A product is scoped to a catalog, and the catalog ID is one of the required parameters. To have multiple active SKUs, the product must also have options. You can create an option template to reuse it with multiple products. To link an option template to a product, the option ID is required. 
 
-   To get the catalog ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog where you'll add products and note down the ID present next to its name. 
+   To get the catalog ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Catalogs*. Select the catalog where you'll add products and note the ID that's next to its name. 
 
-   To get the option ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Options*. Select the option you want to link to the product and note down the ID present next to its name. 
+   To get the option ID, open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and go to *Commerce* &rarr; *Options*. Select the option you want to link to the product and note the ID that's next to its name. 
 
    ```{important}
    This example assumes you have an option template created with the name `Able` containing two values, `Baker` and `Charlie`. 
@@ -111,11 +111,11 @@ Then follow these steps:
 
    Note the `skuFormatted` field shows `(Multiple SKUs)` confirming the creation of more than one SKU.
 
-1. Verify this by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and navigating to *Commerce* &rarr; *Products*. Click the *Options* tab to see the linked product option. Click the *SKUs* tab to see two new SKUs with the *Approved* status.
+1. Verify this by opening the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)), and navigating to *Commerce* &rarr; *Products*. Click the *Options* tab to see the linked product option. Click the *SKUs* tab to see two new SKUs with the Approved status.
 
    ![See that a new product with multiple SKUs has been added.](./product-api-creating-a-product-with-multiple-skus/images/01.png)
 
-1. You can also call the The REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
+1. You can also call the REST service using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files:
 
    ```bash
    javac -classpath .:* *.java
@@ -151,7 +151,7 @@ Basic authentication is used here for demonstration purposes. For production, yo
 
 ## Examine the Java Class
 
-The `Product_POST_ToCatalog.java` class adds a product with multiple SKUs by calling the product related service.
+The `Product_POST_ToCatalog.java` class adds a product with multiple SKUs by calling the product-related service.
 
 ```{literalinclude} ./product-api-creating-a-product-with-multiple-skus/resources/liferay-q8t5.zip/java/Product_POST_ToCatalog.java
    :dedent: 1
@@ -223,9 +223,9 @@ This is the example payload used to create one product with two active SKUs.
 There are a total of 6 fields in the JSON. 
 
 | Field            | Description                                                                                                                                                                                                                                                                                                            |
-| :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|:-----------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `active`         | Set it to true or false to change the product's visibility.                                                                                                                                                                                                                                                            |
-| `catalogId`      | ID of the catalog the product is a part of.                                                                                                                                                                                                                                                                            |
+| `catalogId`      | ID of the product's catalog.                                                                                                                                                                                                                                                                                           |
 | `name`           | The name of the product.                                                                                                                                                                                                                                                                                               |
 | `productOptions` | An array of product options. See [ProductOption](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/dto/v1_0/ProductOption.java) |
 | `productType`    | The type of the product (simple, grouped, virtual or diagram).                                                                                                                                                                                                                                                         |
@@ -233,14 +233,14 @@ There are a total of 6 fields in the JSON.
 
 The `productOptions` field contains information about the option that is linked to the product. 
 
-| Field            | Description                                                                                                                                 |
-| :--------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
-| `fieldType`      | The type of the option field. Can be one of `"text"`, `"select"`, `"radio"`, `"checkbox_multiple"`, `"date"`, `"numeric"`, or `"checkbox"`. |
-| `key`            | The key of the option.                                                                                                                      |
-| `name`           | The name of the option.                                                                                                                     |
-| `optionId`       | The ID of the option.                                                                                                                       |
-| `required`       | When true, you must select an option before checking out.                                                                                   |
-| `skuContributor` | When true, each option is linked to a SKU. This is mandatory for products with multiple SKUs.                                               |
+| Field            | Description                                                                                                                            |
+|:-----------------|:---------------------------------------------------------------------------------------------------------------------------------------|
+| `fieldType`      | The option field's type. Can be one of `"text"`, `"select"`, `"radio"`, `"checkbox_multiple"`, `"date"`, `"numeric"`, or `"checkbox"`. |
+| `key`            | The option's key.                                                                                                                      |
+| `name`           | The option's name.                                                                                                                     |
+| `optionId`       | The option's ID.                                                                                                                       |
+| `required`       | When true, you must select an option before checking out.                                                                              |
+| `skuContributor` | When true, each option is linked to a SKU. This is mandatory for products with multiple SKUs.                                          |
 
 The `skus` field contains information about the SKUs of a product. 
 

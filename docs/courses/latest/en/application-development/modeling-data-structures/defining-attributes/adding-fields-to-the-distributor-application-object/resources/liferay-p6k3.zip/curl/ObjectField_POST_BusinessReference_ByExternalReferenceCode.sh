@@ -19,7 +19,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"ea06823c-d47c-3d05-850d-1143ed6269ad\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"en_US\",\"label\":{\"en_US\":\"Reference Address Line One\"},\"name\":\"credreditReferenceOneAddressLineOne\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"ea06823c-d47c-3d05-850d-1143ed6269ad\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"en_US\",\"label\":{\"en_US\":\"Reference Address Line One\"},\"name\":\"referenceOneAddressLineOne\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
 	-u "test@liferay.com:learn"
 
 # Reference Address Line Two

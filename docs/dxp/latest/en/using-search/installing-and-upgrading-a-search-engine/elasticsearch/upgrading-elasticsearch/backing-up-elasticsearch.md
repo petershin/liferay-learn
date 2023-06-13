@@ -3,6 +3,7 @@ uuid: 35f429b3-aadb-4c7f-844f-e389410ea935
 ---
 # Backing Up Elasticsearch
 
+<!-- change all links to 8.x? -->
 [Elasticsearch replicas](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html#index-modules-settings) protect against a node going down, but they won't help you with a catastrophic failure. Only good backup practices can help you then.
 
 ## Backing Up Indexes Before Upgrading
@@ -35,6 +36,7 @@ For more detailed information, refer to Elastic's [Elasticsearch administration 
 
 ### Create a Repository
 
+<!-- change "here are the supported repository types" to "elasticsearch supports these repository types"? -->
 First [create a repository](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html) to store your snapshots. Here are the supported repository types:
 
 * Shared file system, such as a Network File System or NAS
@@ -60,6 +62,7 @@ PUT /_snapshot/test_backup
 }'
 ```
 
+<!--there's no hostname:port in the snippet above. we can probably just remove it from the text below, but confirm. -->
 Replace `localhost:9200` with your system's `hostname:port`, replace `test_backup` with the name of the repository to create, and replace the `location` setting value with the absolute path to your shared file system.
 
 If you created the repository correctly, the command returns this result:
@@ -91,7 +94,7 @@ PUT /_snapshot/test_backup/snapshot_2
 { "indices": "liferay-0,liferay-20116" }
 ```
 
-To list all indexes and index metrics, execute this command:
+To list all indexes and their metrics, execute this command:
 
 ```bash
 GET /_cat/indices?v
@@ -262,9 +265,9 @@ You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/
 
    where `indices` sets the snapshotted index names to restore from. The indexes from the above call would be restored as `restored_liferay-20101-search-tuning-rankings` and `restored_liferay-20101-search-tuning-synonyms`, following the `rename_pattern` and `rename_replacement` regular expressions.
 
-If you've added Synonym Sets or Results Rankings while running in Sidecar/Embedded mode, you'll see these search tunings disappear once you configure a Remote mode connection to Elasticsearch 7 and perform a full re-index.
+If you've added search tuning configurations (i.e., synonym sets or results rankings) while running in Sidecar/Embedded mode, they'll disappear once you configure a production mode connection to Elasticsearch and perform a full re-index.
 
-To restore your existing _Search Tuning_ index documents, you can use the [Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex) of Elasticsearch, like this:
+To restore your existing search tuning index documents, you can use the [Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex) of Elasticsearch, like this:
 
 ```json
 POST _reindex/

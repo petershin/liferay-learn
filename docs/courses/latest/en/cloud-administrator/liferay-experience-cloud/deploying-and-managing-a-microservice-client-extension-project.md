@@ -4,7 +4,7 @@ Kyle wants to start developing a custom application using a [microservice client
 
 Here, you'll start by trying out a sample microservice client extension using [Spring Boot](https://spring.io/projects/spring-boot) from [Liferay's sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace).
 
-## Download the sample workspace
+## Download the Sample Workspace
 
 Download and unzip the sample workspace for client extensions on your machine:
 

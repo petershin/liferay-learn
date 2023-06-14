@@ -8,28 +8,22 @@ Optimize digital experience outcomes with analytics that identify areas for impr
 
 ![Path insights help customers understand how to improve their content.](./analytics-and-optimization/images/01.png)
 
-## Related Features
-
-### Site and Page Analytics
+## Site and Page Analytics
 
 * [Sites Dashboard](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/sites-dashboard)
 * [Page Analytics](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/pages/pages)
 
-### Asset Analytics
+## Asset Analytics
 
 * [Assets](https://learn.liferay.com/web/guest/w/analytics-cloud/touchpoints/assets/assets)
 * [Content Performance Tool](https://learn.liferay.com/w/dxp/content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool)
 
-### Traffic and Path Analysis
+## Traffic and Path Analysis
 
 * [Paths](https://learn.liferay.com/w/analytics-cloud/touchpoints/pages/paths?p_l_back_url=%2Fsearch%3Fq%3Dtraffic&highlight=traffic)
 
-### Content Dashboard
+## Content Dashboard
 
 * [Content Dashboard](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard/about-the-content-dashboard)
 
-## What's Next
-
-Continue learning more about Liferay DXP capabilities: Segmentation and Personalization.
-
-[Let's Go](./segmentation-and-personalization.md)
+Next: [Segmentation and Personalization](./segmentation-and-personalization.md).

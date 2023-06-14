@@ -75,6 +75,6 @@ Liferay has developed a sales decision flow to use with new customers and for ne
 
 ## What's Next
 
-Learn more about the core capabilities of Liferay DXP and how they meet customer needs.
+Excellent! You've finished the module on the basics of the Liferay product offering. 
 
-[Let's Go!](../liferay-product-overview.md)
+[Start the next module](../liferay-product-overview.md) to get an overview of Liferay DXP's capabilities and how they meet customer needs.

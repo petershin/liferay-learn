@@ -8,7 +8,7 @@ uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
 
 Welcome to the Level 0 modules! These modules introduce you to Liferay: the company, its product and offerings, and how Liferay relates to the broader competitive landscape. Get started with learning about the Liferay Product Offering.
 
-[Let's Go!](./level-0/liferay-product-offering.md)
+Start by learning about [the Liferay product offering](./level-0/liferay-product-offering.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3

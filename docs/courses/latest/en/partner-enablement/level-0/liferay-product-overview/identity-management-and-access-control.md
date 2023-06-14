@@ -8,27 +8,21 @@ Manage users while ensuring data compliance and the security of your digital env
 
 ![SAML integration is available out of the box.](./identity-management-and-access-control/images/01.png)
 
-## Related Features
-
-### Identity Management
+## Identity Management
 
 * [Native user management](https://learn.liferay.com/w/dxp/users-and-permissions/users)
 * Integration with [external IdMs](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) like [SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml), OIDC, and [LDAP](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)
 
-### Access Control
+## Access Control
 
 * [Granular roles and permissions model](https://learn.liferay.com/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions)
 
-### Multi-factor Authentication (MFA)
+## Multi-factor Authentication (MFA)
 
 * [OTP, Time-based OTP, and FIDO 2 device support](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication)
 
-### Personal Data Management
+## Personal Data Management
 
 * [GDPR rights to Data Portability and Right to be Forgotten are supported](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
 
-## What's Next
-
-Continue learning more about Liferay DXP capabilities: Integration and Interoperability.
-
-[Let's Go](./integration-and-interoperability.md)
+Next: [Integration and Interoperability](./integration-and-interoperability.md).

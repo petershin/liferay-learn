@@ -6,7 +6,7 @@ uuid: b982f1e4-2c22-4563-aa19-68d9aa8a801a
 
 # Liferay Product Offering
 
-In this module you will learn about the Liferay product offering:
+Here you'll learn the Liferay product offering basics:
 
 * Liferay develops a single Product: Liferay DXP
 * There are three Product Deployment Offerings:
@@ -42,7 +42,7 @@ Liferay has always been about preserving customer investment in their chosen sof
 This flexibility of deployment is an important differentiator over many of our competitors, who may not offer anything other than a SaaS deployment option.
 
 ```{note}
-Although the deployment method for Liferay Experience Cloud is SaaS, this is not a turnkey-application. It is the full Digital Experience Platform, on top of which our customers, partners, and GS build the tailored solutions our customers need to solve their business problems.
+Although the deployment method for Liferay Experience Cloud is SaaS, this is not a turn-key application. It is the full Digital Experience Platform, on top of which our customers, partners, and GS build the tailored solutions our customers need to solve their business problems.
 ```
 
 ![Liferay has three product deployment offerings.](liferay-product-offering/images/02.png)
@@ -149,6 +149,6 @@ What is important to note is that although the deployment model is SaaS, this is
 
 ## What's Next
 
-Now that you understand Liferay's product offering, learn how to determine what deployment option is best for your customer.
+With that background out of the way, you can learn how to determine what deployment option is best for your customer.
 
 [Let's Go!](./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md)

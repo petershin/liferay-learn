@@ -3,7 +3,11 @@ uuid: 22d3101d-e411-429b-b0e0-3c9408f0670a
 ---
 # Liferay University
 
-This page serves as an archive and index of videos that were previously hosted on Liferay University. As of February 28, 2023 Liferay University is no longer operational. However, we have taken the initiative to preserve the videos here for your continued viewing convenience. 
+This page serves as an archive and index of videos that were previously hosted on Liferay University. As of February 28, 2023 Liferay University is no longer operational. References to the video content and how they mapped to the previous courses are archived here for your convenience.
+
+```{note}
+The course content referenced below is provided as-is and may not be up to date with the latest updates to Liferay DXP. The best way to stay up to date on Liferay DXP is by watching learn.liferay.com for future content updates.
+```
 
 ## 7.4 Courses and Modules
 

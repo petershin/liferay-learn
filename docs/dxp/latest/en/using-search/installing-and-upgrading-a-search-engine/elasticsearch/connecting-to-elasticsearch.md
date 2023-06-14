@@ -3,7 +3,7 @@ uuid: f1374d8a-9899-47a2-bd09-7465685f057b
 ---
 # Connecting to Elasticsearch
 
-After [setting up Elasticsearch](./installing-elasticsearch.md), you must connect Liferay to it using the Liferay Connector to Elasticsearch. Connection steps depend on the connector you're configuring. See [Available Liferay Elasticsearch Connectors](#available-liferay-elasticsearch-connectors) for reference.
+After [setting up Elasticsearch](./installing-elasticsearch.md), connect it with Liferay using the Liferay Connector to Elasticsearch. Connection steps depend on the connector you're configuring. See [Available Liferay Elasticsearch Connectors](#available-liferay-elasticsearch-connectors) for reference.
 
 Notable installation and configuration procedure differences are presented here. 
 
@@ -15,9 +15,13 @@ If you're on Liferay 7.2, skip to [Liferay 7.2: Installing Elasticsearch 7 Conne
 
 ## Configuring the Connector
 
-The Elasticsearch 7 connector is configured for Liferay 7.3+ via a configuration file named `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`. 
+You can configure the Elasticsearch 7 connector for Liferay 7.3+ with a configuration file:
 
-After specifying the configuration in the file, you can deploy it by placing it into your `[Liferay Home]/osgi/configs/` folder.
+```
+com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config
+```
+
+To deploy it, place it in `[Liferay Home]/osgi/configs/`.
 
 For Docker,
 
@@ -31,7 +35,7 @@ A simple Liferay 7.3+ connector configuration enables production mode (`producti
 
 1. Create the following configuration file:
 
-    ```bash
+    ```
     com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config
     ```
 

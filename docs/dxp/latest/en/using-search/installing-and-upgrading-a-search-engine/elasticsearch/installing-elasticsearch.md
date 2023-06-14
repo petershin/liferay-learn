@@ -72,6 +72,7 @@ See [Securing Elasticsearch](./securing-elasticsearch.md) to learn about authent
 
 Here's an `elasticsearch.yml` configuration for a single-node cluster:
 
+<!-- should we remove discovery seed hosts? how does it make sense in a single node cluster? considering it's included in the multi-node cluster example below, I think we should leave it out here. ES 8 gives me a log warning about this. -->
 ```yaml
 cluster.name: LiferayElasticsearchCluster
 
@@ -82,6 +83,7 @@ http.port: 9200
 network.host: es-node1
 node.name: es-node1
 transport.port: 9300
+xpack.security.enabled: false
 
 # Additional security settings 
 ```
@@ -158,9 +160,15 @@ Start Elasticsearch from the `bin` folder:
 ./elasticsearch
 ```
 
+```{tip}
+If Elasticsearch fails to start with the ERROR message `Elasticsearch exited unexpectedly` in the log, increase the heap size. During testing you can open the `config/jvm.options` file and uncomment the example settings for `-Xms4g` and `-Xmx4g`. In production, follow the instructions in that file to set these parameters properly.
+
+See [Troubleshooting Elasticsearch Installation](./troubleshooting-elasticsearch-installation.md) for more information.
+```
+
 Elasticsearch starts, and one of its status messages includes a transport address: 
 
-```sh
+```log
 [2019-04-01T16:55:50,127][INFO ][o.e.t.TransportService   ] [HfkqdKv] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
 ```
 

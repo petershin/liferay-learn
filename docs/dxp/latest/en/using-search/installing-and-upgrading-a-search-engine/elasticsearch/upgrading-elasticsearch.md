@@ -1,6 +1,7 @@
 ---
 toc:
   - ./upgrading-elasticsearch/upgrading-search-infrastructure.md
+  - ./upgrading-elasticsearch/upgrading-to-elasticsearch-8.md
   - ./upgrading-elasticsearch/upgrading-to-elasticsearch-7.md
   - ./upgrading-elasticsearch/backing-up-elasticsearch.md
 uuid: 74ea186e-bea7-4e10-aecc-67069682aeac
@@ -11,6 +12,7 @@ uuid: 74ea186e-bea7-4e10-aecc-67069682aeac
 :maxdepth: 1
 
 upgrading-elasticsearch/upgrading-search-infrastructure.md
+upgrading-elasticsearch/upgrading-to-elasticsearch-8.md
 upgrading-elasticsearch/upgrading-to-elasticsearch-7.md
 upgrading-elasticsearch/backing-up-elasticsearch.md
 ```

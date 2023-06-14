@@ -15,7 +15,7 @@ While upgrading Liferay, you must account for the search experience when using E
 ```{important}
 [Back up the search indexes](./backing-up-elasticsearch.md) before proceeding with these steps.
 ```
-<!--ange link to a new upgrading-to-elasticsearch-8.md article-->
+<!--change link to a new upgrading-to-elasticsearch-8.md article-->
 1. Make sure your system is at least on the minimum supported Elasticsearch version. If it's not, move to the [latest supported Elasticsearch](https://help.liferay.com/hc/en-us/articles/360016511651) by [upgrading.](upgrading-to-elasticsearch-7.md). It's possible to install a new Elasticsearch cluster and connect to the upgraded Liferay, but some data can be lost if the Elasticsearch cluster contained indexes used as primary storage, like the indexes for Liferay's Search Tuning features in Liferay DXP 7.2 and 7.3. See [Backing Up and Restoring Indexes Used for Primary Storage](backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) and [Importing the Search Tuning Indexes in 7.4.](#importing-the-search-tuning-indexes-in-7-4).
 
 1. [Connect Liferay to Elasticsearch](../connecting-to-elasticsearch.md) and configure [Security](../securing-elasticsearch.md).

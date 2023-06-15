@@ -85,7 +85,7 @@ Enabling Transport Layer Security (TLS) involves generating node certificates an
    ```
 
    ```{note}
-   On Liferay 7.3+ only the following keystore types can be used in the [Elasticsearch 7 connector configuration](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types).
+   On Liferay 7.3+ only the following keystore types can be used in the [Elasticsearch connector configuration](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types).
    ```
 
    To generate a certificate that works with multiple hosts (for example to use the same certificate on all Elasticsearch and Liferay servers), use comma-separated lists when listing the DNS names and IP addresses:
@@ -172,7 +172,7 @@ The certificates and keys are ready to use in your Elasticsearch configuration.
 
 ### Example Elasticsearch Security Configuration
 
-Here is the complete Elasticsearch 7 configuration (`elasticsearch.yml`; applies equally to Elasticsearch 6.5.x+):
+Here is the complete Elasticsearch configuration (`elasticsearch.yml`; applies equally to Elasticsearch 6.5.x+):
 
 ```yaml
 cluster.name: LiferayElasticsearchCluster
@@ -217,7 +217,7 @@ When you're finished configuring security, restart Elasticsearch. These steps re
 [Installing Elasticsearch](./installing-elasticsearch.md) and [Connecting to Elasticsearch](./connecting-to-elasticsearch.md) show enabling and configuring security; see them for the 7.3+ applicable security configurations.
 ```
 
-The Liferay Connector to Elasticsearch 7 bundled with Liferay 7.3+ includes X-Pack Security support. See the [Java 11 security documentation](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) for a list of the supported key store types that can be used in the Elasticsearch 7 connector configuration.
+The Elasticsearch connector bundled with Liferay 7.3+ includes X-Pack Security support. See the [Java 11 security documentation](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) for a list of the supported key store types that can be used in the Elasticsearch connector configuration.
 
 Create a file called
 
@@ -242,7 +242,7 @@ truststoreType="pkcs12"
 
 ### Configure a Secure Connection to Elasticsearch in Liferay 7.2
 
-All Liferay connectors to Elasticsearch 7 include X-Pack Security support.
+All Liferay connectors to Elasticsearch 7 and above include X-Pack Security support.
 
 ```{note}
 If you are on Liferay 7.2 and Elasticsearch 6.x and have a Liferay Enterprise Search subscription, [download](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-2) the "Liferay Enterprise Search Security" application. Install the LPKG file by copying it into the `[Liferay Home]/deploy` folder.
@@ -285,9 +285,9 @@ transportSSLVerificationMode="certificate"
 transportSSLEnabled="true"
 ```
 
-### Elasticsearch 7 Connector Security Settings in Liferay 7.3 and 7.4
+### Elasticsearch Connector Security Settings in Liferay 7.3 and 7.4
 
-Here's the complete list of security settings for the Elasticsearch 7 connector in 7.3+ (default values in parentheses):
+Here's the complete list of security settings for the Elasticsearch connector in 7.3+ (default values in parentheses):
 
 `authenticationEnabled` (_true_): Enable or disable authentication to Elasticsearch with a user name and password.
 

@@ -95,7 +95,7 @@ On Liferay 7.0-7.2 the error manifests as a more general `org.elasticsearch.clie
 
 The Elasticsearch log shows related errors.
 
-On Liferay 7.3 and 7.4, the [Elasticsearch 7](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.4) log prints
+On Liferay 7.3 and 7.4, the [Elasticsearch](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-DXP-7.4) log prints
 
 ```
 [2021-06-04T18:09:11,925][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [es-node1] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=0.0.0.0/0.0.0.0:9200, remoteAddress=/192.168.0.17:41104}
@@ -405,7 +405,7 @@ java.lang.RuntimeException: org.elasticsearch.ElasticsearchException: Elasticsea
 
 Make sure that the CA's certificate that signed the Elasticsearch node certificates is present and trusted in the truststore configured in Liferay.
 
-* If your [security settings](../securing-elasticsearch.md) are in the Elasticsearch 7 connector's configuration (`com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`), set the truststore for the Elasticsearch connections using the `truststorePath` property.
+* If your [security settings](../securing-elasticsearch.md) are in the Elasticsearch connector's configuration (`com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`), set the truststore for the Elasticsearch connections using the `truststorePath` property.
 * If your security settings are in the LES Security app configuration (`com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config`, set the truststore using the `sslTruststorePath` property. 
 
 You can also see these errors if the CA certificate (public key) is not present in the node certificate. In this case add it using Java's `keytool` or other tools like `openssl`, depending on the format of the CA certificate and node certificates (PKCS#12 or PEM).

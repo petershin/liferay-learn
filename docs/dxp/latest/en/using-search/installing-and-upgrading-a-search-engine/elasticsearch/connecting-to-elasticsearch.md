@@ -15,7 +15,7 @@ If you're on Liferay 7.2, skip to [Liferay 7.2: Installing Elasticsearch 7 Conne
 
 ## Configuring the Connector
 
-You can configure the Elasticsearch 7 connector for Liferay 7.3+ with a configuration file:
+You can configure the Elasticsearch connector for Liferay 7.3+ with a configuration file:
 
 ```
 com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config
@@ -184,7 +184,7 @@ In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, enhanced logging is enabled 
 2023-01-09 20:45:00.986 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:76] Finished reindexing company 20097
 ```
 
-Now Liferay is indexing content into your remote Elasticsearch 7 installation.
+Now Liferay is indexing content into your remote Elasticsearch installation.
 
 ## Available Liferay Elasticsearch Connectors
 

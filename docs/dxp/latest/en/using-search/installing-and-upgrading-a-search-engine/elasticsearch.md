@@ -9,8 +9,7 @@ toc:
   - ./elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md
   - ./elasticsearch/upgrading-elasticsearch.md
   - ./elasticsearch/elasticsearch-connector-configuration-reference.md
-  - >-
-    ./elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
+  - ./elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
 uuid: fc80c177-a89d-4dd5-8dac-b6fde330ad3f
 ---
 # Elasticsearch
@@ -56,6 +55,7 @@ Liferay 7.2 and 7.3 include support for Elasticsearch 7 and securing authenticat
 - [Upgrading Elasticsearch](elasticsearch/upgrading-elasticsearch.md)
 - [Upgrading Search Infrastructure](elasticsearch/upgrading-elasticsearch/upgrading-search-infrastructure.md)
 - [Backing Up Elasticsearch](elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md)
+- [Upgrading to Elasticsearch 8](elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-8.md)
 - [Upgrading to Elasticsearch 7](elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)
 
 ## Securing

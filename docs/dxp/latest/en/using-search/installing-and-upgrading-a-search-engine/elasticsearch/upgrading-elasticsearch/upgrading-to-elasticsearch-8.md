@@ -18,7 +18,7 @@ To upgrade an existing Elasticsearch 7 server (or cluster) to Elasticsearch 8,
 <!-- Not necessary, most likely. Confirm -->
 1. [Back up the application specific indexes for Search Tuning](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) (Synonym Sets and Result Rankings).
 
-1. [Install and configure Elasticsearch](../installing-elasticsearch.md).
+1. [Prepare the new Elasticsearch installation](../installing-elasticsearch.md).
 
 1. [Upgrade Elasticsearch](#upgrading-elasticsearch)
 
@@ -32,8 +32,11 @@ To upgrade an existing Elasticsearch 7 server (or cluster) to Elasticsearch 8,
 
 1. Configure the Connector to Elasticsearch 8 to connect to Elasticsearch.
 
-<!-- there's something in the ticket about not needing to re-index? check into it -->
 1. Restart Liferay, then re-index all search and spell check indexes.
+
+   ```{note}
+   If you performed a rolling upgrade, re-indexing is not necessary.
+   ```
 
 <!-- as mentioned above, do we need this? probably if there's a chance someone is coming from a 7.3 before we moved tunings to the DB -->
 1. Restore Search Tuning indexes from the snapshot. If you were previously using these features, you may have data stored in these indexes.
@@ -42,21 +45,19 @@ To upgrade an existing Elasticsearch 7 server (or cluster) to Elasticsearch 8,
 
 ## Upgrading Elasticsearch
 
-<!-- maybe this is where we recommend the re-index isn't required? Does this rolling restart stuff apply to this ES 7-8 upgrade? -->
-If you are using a rolling-restart eligible version, doing a [rolling upgrade](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) is the recommended way to upgrade your Elasticsearch cluster. Otherwise, follow the [full cluster restart upgrade ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/restart-upgrade.html) guide.
+If you are using a rolling-restart eligible version, doing a [rolling upgrade](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) is the recommended way to upgrade your Elasticsearch cluster as it minimizes downtime and eliminates the need to re-index all your data. Otherwise, follow the [full cluster restart upgrade ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/restart-upgrade.html) guide.
 
 <!-- more stuff about the pre-db tuning index data -->
 If you've installed a new Elasticsearch server and want to index your pre-upgrade data, most Liferay indexes can be restored by triggering a [re-index](#restart-liferay-and-re-index) from the UI, once the Liferay [database is upgraded](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md). However, the Search Tuning (Result Rankings and Synonyms) indexes and any custom indexes not backed by database storage must be restored from a [snapshot of the pre-upgrade indexes](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage).
 
-<!--if we don't need a re-index, maybe this is just another step, Restart Liferay -->
 ## Restart Liferay and Re-Index
 
 Once Liferay is connected with the Elasticsearch cluster, restart Liferay and re-index the applicable indexes into the new Elasticsearch installation:
 
 1. Restart Liferay.
 
-1. Re-index the company, system, and spell check indexes. From the Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)), navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. Click *Execute* for the *Reindex all search indexes* entry.
+1. If you've performed a full cluster restart upgrade, you must re-index the company, system, and spell check indexes. From the Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)), navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. Click *Execute* for the *Reindex all search indexes* entry.
 
-1. Re-index the [Workflow Metrics indexes](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics): from the Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)), navigate to *Applications* &rarr; *Workflow---Metrics*. Open the Settings menu (![Options](../../../../images/icon-options.png) and Click *Reindex All*. Repeat the process for each Virtual Instance.
+1. If you've performed a full cluster restart upgrade, you must re-index the [Workflow Metrics indexes](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics): from the Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)), navigate to *Applications* &rarr; *Workflow---Metrics*. Open the Settings menu (![Options](../../../../images/icon-options.png) and Click *Reindex All*. Repeat the process for each Virtual Instance.
 
 This restores the indexes built from data stored in the Liferay database. To restore indexes used as primary storage, see [Backing Up Elasticsearch](./backing-up-elasticsearch.md).

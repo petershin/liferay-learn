@@ -72,20 +72,17 @@ See [Securing Elasticsearch](./securing-elasticsearch.md) to learn about authent
 
 Here's an `elasticsearch.yml` configuration for a single-node cluster:
 
-<!-- should we remove discovery seed hosts? how does it make sense in a single node cluster? considering it's included in the multi-node cluster example below, I think we should leave it out here. ES 8 gives me a log warning about this. -->
 ```yaml
 cluster.name: LiferayElasticsearchCluster
 
 discovery.type: single-node
-discovery.seed_hosts:
-  - es-node1:9300
 http.port: 9200
 network.host: es-node1
 node.name: es-node1
 transport.port: 9300
-xpack.security.enabled: false
 
-# Additional security settings 
+# Enable security and configure it here
+xpack.security.enabled: false
 ```
 
 This cluster called `LiferayElasticsearchCluster` has one node called `es-node1`.
@@ -115,7 +112,8 @@ network.host: es-node3
 node.name: es-node3
 transport.port: 9302
 
-# Add security settings here
+# Enable security and configure it here
+xpack.security.enabled: false
 ```
 
 ```{tip}

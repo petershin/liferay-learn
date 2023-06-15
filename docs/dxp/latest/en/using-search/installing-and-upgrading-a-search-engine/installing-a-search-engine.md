@@ -15,6 +15,7 @@ Liferay's [Solr](http://lucene.apache.org/solr) support will receive one more up
 
 ## Java Requirements
 
+<!-- I don't think Elasticsearch 8 wants Java home, but rather $ES_JAVA_HOME--https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html#jvm-version -->
 * Search engines require the `JAVA_HOME` environment variable. Set it on your search engine host.
 
 * If you're using Liferay 7.2, Elasticsearch and Liferay must use the same Java version and distribution. Consult the [Elasticsearch compatibility matrix](https://www.elastic.co/support/matrix#matrix_jvm) and [Liferay's Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) to learn more about supported JDK distributions and versions. You can specify this in Elasticsearch:
@@ -23,7 +24,7 @@ Liferay's [Solr](http://lucene.apache.org/solr) support will receive one more up
     [Elasticsearch Home]/bin/elasticsearch.in.sh`: `JAVA_HOME=/path/to/java`
     ```
 
-The Java version and distribution requirement doesn't apply to Liferay 7.3 because the Elasticsearch 7 connector communicates via HTTP; there's no JVM level serialization. See the [Elastic's High-Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-high.html) for details.
+The Java version and distribution requirement doesn't apply to Liferay 7.3+ because the Elasticsearch 7 connector communicates via HTTP; there's no JVM level serialization. See [Elastic's High-Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-high.html) documentation for details.
 
 The same requirement doesn't apply to Solr either because the Solr connector also communicates via HTTP.
 

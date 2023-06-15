@@ -3,7 +3,6 @@ uuid: 35f429b3-aadb-4c7f-844f-e389410ea935
 ---
 # Backing Up Elasticsearch
 
-<!-- change all links to 8.x? -->
 [Elasticsearch replicas](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html#index-modules-settings) protect against a node going down, but they won't help you with a catastrophic failure. Only good backup practices can help you then.
 
 ## Backing Up Indexes Before Upgrading
@@ -36,13 +35,13 @@ For more detailed information, refer to Elastic's [Elasticsearch administration 
 
 ### Create a Repository
 
-<!-- change "here are the supported repository types" to "elasticsearch supports these repository types"? -->
-First [create a repository](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html) to store your snapshots. Here are the supported repository types:
+First [create a repository](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html) to store your snapshots. Elasticsearch allows several repository types, including
 
 * Shared file system, such as a Network File System or NAS
 * Amazon S3
 * HDFS (Hadoop Distributed File System)
 * Azure Cloud
+* Google Cloud Storage
 
 If you want to store snapshots on a shared file system, first register the path to the shared file system in each node's `elasticsearch.yml` using the [`path.repo` setting](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshots-register-repository.html#snapshots-filesystem-repository). For example,
 
@@ -62,8 +61,7 @@ PUT /_snapshot/test_backup
 }'
 ```
 
-<!--there's no hostname:port in the snippet above. we can probably just remove it from the text below, but confirm. -->
-Replace `localhost:9200` with your system's `hostname:port`, replace `test_backup` with the name of the repository to create, and replace the `location` setting value with the absolute path to your shared file system.
+Replace `test_backup` with the name of the repository to create, and replace the `location` setting value with the absolute path to your shared file system.
 
 If you created the repository correctly, the command returns this result:
 

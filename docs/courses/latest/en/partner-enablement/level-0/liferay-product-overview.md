@@ -4,7 +4,7 @@ toc:
 - ./liferay-product-overview/design-systems-and-experience-management.md
 - ./liferay-product-overview/content-and-asset-management.md
 - ./liferay-product-overview/low-code-no-code-application-building.md
-- ./liferay-product-overview/data-modelling-and-process-management.md
+- ./liferay-product-overview/data-modeling-and-process-management.md
 - ./liferay-product-overview/commerce.md
 - ./liferay-product-overview/analytics-and-optimization.md
 - ./liferay-product-overview/segmentation-and-personalization.md

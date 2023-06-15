@@ -163,3 +163,4 @@ Congratulations! You've completed the Liferay Experience Cloud module of the Clo
 * [Shell Access](https://learn.liferay.com/w/liferay-cloud/troubleshooting/shell-access)
 * [Troubleshooting Services](https://learn.liferay.com/w/liferay-cloud/troubleshooting/troubleshooting-services)
 * [Self-Healing](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing)
+* [Defining Environment Variables](https://learn.liferay.com/w/liferay-cloud/reference/defining-environment-variables#defining-environment-variables-via-the-liferay-cloud-console)

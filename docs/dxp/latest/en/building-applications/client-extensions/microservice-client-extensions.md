@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./microservice-client-extensions/tutorials.md
+  - ./microservice-client-extensions/using-a-microservice-client-extension.md
   - ./microservice-client-extensions/object-action-yaml-configuration-reference.md
   - ./microservice-client-extensions/workflow-action-yaml-configuration-reference.md
   - ./microservice-client-extensions/notification-type-yaml-configuration-reference.md

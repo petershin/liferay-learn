@@ -45,6 +45,20 @@ Use this to add audit information, in JSON format, to every log message written 
 
 When enabling *Use Incoming X-Request-ID*, a client can send the `X-Request-ID` header and Liferay tags every log statement with this value. This allows tracing of specific requests through multiple systems.
 
+## Configuring Audit Events for Scheduled Jobs
+
+By default, Liferay's scheduled jobs don’t trigger audit events. To change it,
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings*.
+
+1. Select *Infrastructure* from the *Platform* section. 
+
+1. Under *System Scope* on the left, select *Scheduler Engine Helper*. 
+
+1. Enable the checkbox for *Audit Scheduler Job Enabled*. 
+
+1. Click Save.
+
 ## Related Topics
 
 * [Searching and Exporting Audit Events](./searching-and-exporting-audit-events.md)

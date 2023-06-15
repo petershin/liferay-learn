@@ -1,0 +1,18 @@
+---
+uuid: 9ee712e1-cd41-423f-8365-f1118a356519
+---
+# Audit Framework
+
+Liferay's audit framework shows activities relating to users, user groups, organizations, roles, multi-factor authentication, and objects (definitions, fields, actions, layouts, relationships, validations, and views) on your instance. You can access it by opening the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigating to *Control Panel* &rarr; *Audit*. The application displays a searchable list of captured events. You can click on an event for more information, browse or search through the list, or export audit events to CSV. 
+
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card} Searching and Exporting Audit Events
+:link: ./audit-framework/searching-and-exporting-audit-events.md
+:::
+
+:::{grid-item-card} Audit Configuration Reference
+:link: ./audit-framework/audit-configuration-reference.md
+:::
+::::

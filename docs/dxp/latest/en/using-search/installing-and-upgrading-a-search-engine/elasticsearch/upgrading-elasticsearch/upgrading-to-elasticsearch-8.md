@@ -15,7 +15,6 @@ To upgrade an existing Elasticsearch 7 server (or cluster) to Elasticsearch 8,
 
 1. [Back up the Liferay Company and System Indexes](./backing-up-elasticsearch.md).
 
-<!-- Not necessary, most likely. Confirm -->
 1. [Back up the application specific indexes for Search Tuning](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) (Synonym Sets and Result Rankings).
 
 1. [Prepare the new Elasticsearch installation](../installing-elasticsearch.md).
@@ -38,7 +37,6 @@ To upgrade an existing Elasticsearch 7 server (or cluster) to Elasticsearch 8,
    If you performed a rolling upgrade, re-indexing is not necessary.
    ```
 
-<!-- as mentioned above, do we need this? probably if there's a chance someone is coming from a 7.3 before we moved tunings to the DB -->
 1. Restore Search Tuning indexes from the snapshot. If you were previously using these features, you may have data stored in these indexes.
 
 1. Verify that Search Tuning entries have been carried over.
@@ -47,7 +45,6 @@ To upgrade an existing Elasticsearch 7 server (or cluster) to Elasticsearch 8,
 
 If you are using a rolling-restart eligible version, doing a [rolling upgrade](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) is the recommended way to upgrade your Elasticsearch cluster as it minimizes downtime and eliminates the need to re-index all your data. Otherwise, follow the [full cluster restart upgrade ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/restart-upgrade.html) guide.
 
-<!-- more stuff about the pre-db tuning index data -->
 If you've installed a new Elasticsearch server and want to index your pre-upgrade data, most Liferay indexes can be restored by triggering a [re-index](#restart-liferay-and-re-index) from the UI, once the Liferay [database is upgraded](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md). However, the Search Tuning (Result Rankings and Synonyms) indexes and any custom indexes not backed by database storage must be restored from a [snapshot of the pre-upgrade indexes](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage).
 
 ## Restart Liferay and Re-Index

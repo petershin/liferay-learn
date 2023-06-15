@@ -32,6 +32,10 @@ Elasticsearch requires a higher _mmap count_ (for mapping the directory holding 
 sysctl -w vm.max_map_count=262144
 ```
 
+### Compatibility Headers
+
+For Elasticsearch 8, if there is any firewall or proxy infrastructure between Liferay and Elasticsearch, make sure the compatibility HTTP headers that Liferay is setting on each request are allowed and preserved in the network traffic.
+
 ## Install Elasticsearch
 
 1. Download an Elasticsearch archive from [Elastic's website](https://www.elastic.co).

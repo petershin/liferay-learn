@@ -422,6 +422,50 @@ For example, if you have your CA's certificate (public key) and private key in `
 
 	`keytool -importcert -keystore elastic-nodes.p12 -trustcacerts -storepass liferay -file ca.crt`
 
+
+## PKCS12 Keystore created with newer JDK cannot be opened by JDK 8
+
+Elasticsearch 8 uses the bundled OpenJDK 19 to generate certificates and private keys with the [`elasticsearch-certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/certutil.html) command. Meanwhile, when Liferay is configured to run with JDK 8, it cannot recognize certificates generated with JDK 16 or higher.
+
+
+Errors like this can result:
+
+```log
+2023-05-18 21:37:54.085 ERROR [Start Level: Equinox Container: 3f8ebcb7-02d0-40a7-a084-7a89762b9642][ElasticsearchConnectionConfigurationActivationHandler:56] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.84 (270)[com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionConfigurationActivationHandler(666)] : The activate method has thrown an exception
+java.lang.IllegalStateException: could not create the default ssl context
+	at org.elasticsearch.client.RestClientBuilder.createHttpClient(RestClientBuilder.java:328) ~[?:?]
+	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_292]
+	at org.elasticsearch.client.RestClientBuilder.build(RestClientBuilder.java:278) ~[?:?]
+	at org.elasticsearch.client.RestHighLevelClient.<init>(RestHighLevelClient.java:312) ~[?:?]
+   ...
+Caused by: java.security.NoSuchAlgorithmException: Error constructing implementation (algorithm: Default, provider: SunJSSE, class: sun.security.ssl.SSLContextImpl$DefaultSSLContext)
+	at java.security.Provider$Service.newInstance(Provider.java:1617) ~[?:1.8.0_292]
+	at sun.security.jca.GetInstance.getInstance(GetInstance.java:236) ~[?:1.8.0_292]
+	at sun.security.jca.GetInstance.getInstance(GetInstance.java:164) ~[?:1.8.0_292]
+	at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156) ~[?:1.8.0_292]
+   ...
+Caused by: java.security.KeyStoreException: problem accessing trust store
+	at sun.security.ssl.TrustManagerFactoryImpl.engineInit(TrustManagerFactoryImpl.java:73) ~[?:1.8.0_292]
+	at javax.net.ssl.TrustManagerFactory.init(TrustManagerFactory.java:250) ~[?:1.8.0_292]
+	at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.getTrustManagers(SSLContextImpl.java:1041) ~[?:1.8.0_292]
+	at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.<clinit>(SSLContextImpl.java:1011) ~[?:1.8.0_292]
+   ...
+Caused by: java.io.IOException: Keystore was tampered with, or password was incorrect
+	at sun.security.provider.JavaKeyStore.engineLoad(JavaKeyStore.java:792) ~[?:1.8.0_292]
+	at sun.security.provider.JavaKeyStore$JKS.engineLoad(JavaKeyStore.java:57) ~[?:1.8.0_292]
+	at sun.security.provider.KeyStoreDelegator.engineLoad(KeyStoreDelegator.java:224) ~[?:1.8.0_292]
+	at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(JavaKeyStore.java:71) ~[?:1.8.0_292]
+   ...
+Caused by: java.security.UnrecoverableKeyException: Password verification failed
+	at sun.security.provider.JavaKeyStore.engineLoad(JavaKeyStore.java:790) ~[?:1.8.0_292]
+	at sun.security.provider.JavaKeyStore$JKS.engineLoad(JavaKeyStore.java:57) ~[?:1.8.0_292]
+	at sun.security.provider.KeyStoreDelegator.engineLoad(KeyStoreDelegator.java:224) ~[?:1.8.0_292]
+	at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(JavaKeyStore.java:71) ~[?:1.8.0_292]
+   ...
+```
+
+To solve this issue, you can run Liferay with JDK 11. See the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829) for details.
+
 ## Related Topics
 
 * [Connecting to Elasticsearch](../connecting-to-elasticsearch.md)

@@ -21,6 +21,8 @@ You can configure the Elasticsearch connector for Liferay 7.3+ with a configurat
 com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config
 ```
 
+This same file can be used to connect Liferay 7.3 and 7.4 with Elasticsearch 7 or 8. See the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) to find your available Elasticsearch versions.
+
 To deploy it, place it in `[Liferay Home]/osgi/configs/`.
 
 For Docker,

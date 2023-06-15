@@ -3,7 +3,9 @@ uuid: b84baa8b-d4d8-4a1d-8a5e-e45aea686204
 ---
 # Upgrading to Elasticsearch 7
 
-If you're running Liferay 7.2, Elasticsearch 7 is supported. For specific version compatibility details, refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651).
+{bdg-secondary}`7.1 and 7.2`
+
+Liferay 7.3 and 7.4 support Elasticsearch 7 out of the box. To find the latest available search engine version for your Liferay installation, see the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651).
 
 For Liferay 7.2, Elasticsearch 7 is supported via the [Liferay Connector to Elasticsearch 7](https://web.liferay.com/marketplace/-/mp/application/170390307) (version `3.x`). If you're upgrading to Liferay 7.3+ or bringing your existing 7.2 search engine to Elasticsearch 7, you must upgrade your Elasticsearch servers. To set up a new Liferay 7.2 system, install Elasticsearch 7 and follow the [installation guide](../getting-started-with-elasticsearch.md).
 

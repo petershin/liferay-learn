@@ -5,7 +5,7 @@ uuid: cfc79d71-ec49-4872-85ba-571fe881ed6e
 
 {bdg-secondary}`7.4 U81+`
 
-Elasticsearch 8 is supported for the latest Liferay 7.4 Update and GA release out of the box. For specific version compatibility details, refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651).
+Elasticsearch 8 is supported and recommended for the latest Liferay 7.4 Update and GA release out of the box. For specific version compatibility details, refer to the [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651).
 
 ```{important}
 Before upgrading Elasticsearch, back up your existing data. If something goes wrong during or after the upgrade, roll back to the previous version using the uncorrupted index snapshots. Follow the steps in [Backing up Elasticsearch](./backing-up-elasticsearch.md).

@@ -4,6 +4,8 @@ toc:
 - ./level-0/what-is-a-digital-experience-platform.md
 - ./level-0/liferay-product-offering.md
 - ./level-0/liferay-product-overview.md
+- ./level-0/liferays-unique-value-proposition-organic-innovation-and-open-source-leadership.md
+- ./level-0/liferays-unique-value-proposition-portal-heritage-and-tailoring-liferay.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
 ---
 # Level 0
@@ -68,5 +70,17 @@ This module provides an introduction to Liferay's sales approach.
 :link: ./level-0/liferay-product-overview.md
 
 This module provides an introduction to Liferay DXP and its core capabilities.
+:::
+
+:::{grid-item-card} Liferay's Unique Value Proposition - Organic Innovation and Open Source Leadership
+:link: ./level-0/liferays-unique-value-proposition-organic-innovation-and-open-source-leadership.md
+
+Learn more about the unique value Liferay can provide as a result of Liferay's culture of organic innovation and leadership in open source.
+:::
+
+:::{grid-item-card} Liferay's Unique Value Proposition - Portal Heritage and Tailoring Liferay
+:link: ./level-0/liferays-unique-value-proposition-portal-heritage-and-tailoring-liferay.md
+
+Learn more about the unique value Liferay can provide as a result of Liferay's portal heritage and the inherent flexibility of the platform.
 :::
 ::::

@@ -8,11 +8,11 @@ uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
 ---
 # Level 0
 
-Welcome to the starting point for the Selling Liferay Learning Paths. This level is designed as the introduction to Liferay, and is aimed at anyone involved in working with Liferay and Liferay’s product and offerings. This content is particularly important for any commercial customer facing roles but will be beneficial for all other roles too, including technical roles, to provide a basic understanding and foundation.
+Welcome to the beginning! This is the entry point for the Selling Liferay learning paths. If you work with Liferay and Liferay's product and offerings, this content is for you, especially if you have a customer-facing role. Regardless of role, however, if you need a basic understanding and foundation, this content benefits you. 
 
 ## Expected Outcomes
 
-At the end of this course you will have an understanding of:
+By the end of this course you'll have learned
 
 * Who Liferay is
 * What Liferay sells
@@ -27,7 +27,7 @@ At the end of this course you will have an understanding of:
 
 ## Roles
 
-Level 0 is designed for all customer facing roles including, but not limited to:
+Level 0 is for all customer facing roles including, but not limited to
 
 * Account Executives (AEs)
 * Sales Engineers (SEs)
@@ -35,11 +35,11 @@ Level 0 is designed for all customer facing roles including, but not limited to:
 * Sales Development Representatives (SDRs)
 * Channel Account Managers (CAMs)
 
-Level 0 is also an ideal introduction to Liferay for anyone else involved with Liferay in any way including Professional Services, Developer, Support, Customer Success and so on.
+If you don't have one of the above roles, Level 0 is still an ideal introduction to Liferay for anyone, including Professional Services, Developer, Support, Customer Success, and more.
 
 ## Prerequisites
 
-There are no Liferay prerequisites for Level 0, however We recommend a general understanding of Enterprise Software and selling Enterprise Software.
+There are no Liferay prerequisites for Level 0; however, we recommend a general understanding of Enterprise Software and selling Enterprise Software.
 
 Start learning by getting an [Introduction to Liferay](./level-0/introudction-to-liferay.md).
 

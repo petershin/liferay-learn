@@ -11,7 +11,7 @@ IFrame client extensions use Liferay's front-end infrastructure to register exte
 IFrame client extensions are under development and are currently unsupported in Liferay 7.4.
 ```
 
-Start with a client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace).
+Start with a client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace).
 
 
 ## Prerequisites

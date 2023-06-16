@@ -14,7 +14,7 @@ xray-oauth-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc) includes a project with an OAuth user agent client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) includes a project with an OAuth user agent client extension.
 
 ## YAML Properties
 

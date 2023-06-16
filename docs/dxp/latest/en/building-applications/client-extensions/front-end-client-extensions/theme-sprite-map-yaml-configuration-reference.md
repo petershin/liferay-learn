@@ -18,7 +18,7 @@ able-theme-spritemap:
 
 The required `url` property defines the `.svg` sprite map file's location.
 
-[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-spritemap) contains a complete theme sprite map client extension.
+[The example workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-spritemap-1) contains a complete theme sprite map client extension.
 
 ## YAML Properties
 

@@ -5,7 +5,7 @@ uuid: a8159380-3119-46c5-be6e-d9e24e60c325
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-With a CSS client extension, you can override page styles without a theme or dependencies on Liferay's code. Start with a client extension (from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace)).
+With a CSS client extension, you can override page styles without a theme or dependencies on Liferay's code. Start with a client extension (from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)).
 
 ## Prerequisites
 

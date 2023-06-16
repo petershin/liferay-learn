@@ -1,3 +1,6 @@
+---
+uuid: d9751162-d28d-40f2-91b4-f7b16c32ae4f
+---
 # Deploying and Managing a Microservice Client Extension Project
 
 Kyle wants to start developing a custom application using a [microservice client extension](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) to help keep track of user-submitted feedback.
@@ -185,19 +188,15 @@ Delete the service from the console now that you're done using the sample micros
 
    ![Enter the service's name to enable the button to delete it.](./deploying-and-managing-a-microservice-client-extension-project/images/08.png)
 
-   ```{warning}
-   Deleting the service in the Cloud console fully removes the service's data, but it does not remove the client extensions that have been deployed to Liferay. If you want to remove all data from this project, you must delete the client extensions (and the OAuth 2 profile that it automatically created) from Liferay itself.
-   ```
-
-   <!-- We don't want to have these kinds of asides in the training. If they should delete everything (because it won't be used again), include that in the instructions. If they should not delete everything (perhaps because it's useful in a later exercise), explain why they're not deleting it (because they'll use it later).
-
-   We want to keep everything as concrete and focused on the task at hand as possible. -Rich -->
-
 1. Click *Delete Service*.
+
+```{note}
+Deleting the client extension service also breaks the link for your object definition's action, so it won't work anymore. In most cases, you should remove the object action that you aren't using anymore, but here you'll reuse the same object action for a revised client extension in the next exercise.
+```
 
 After a delay, the service is deleted and disappears from the Cloud console.
 
-Now you've successfully tested the sample Spring Boot application in your UAT environment. Next, you'll  troubleshoot a problem in the console.
+Now you've successfully tested the sample Spring Boot application in your UAT environment. Next, you'll troubleshoot a problem in the console.
 
 ## Relevant Concepts
 

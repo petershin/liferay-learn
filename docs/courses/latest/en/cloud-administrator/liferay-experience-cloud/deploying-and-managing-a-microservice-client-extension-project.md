@@ -190,9 +190,7 @@ Delete the service from the console now that you're done using the sample micros
 
 1. Click *Delete Service*.
 
-```{note}
-Deleting the client extension service also breaks the link for your object definition's action, so it won't work anymore. In most cases, you should remove the object action that you aren't using anymore, but here you'll reuse the same object action for a revised client extension in the next exercise.
-```
+   Deleting the client extension service also breaks the link to your object definition's action. Normally, you'd also remove the object action that's now not in use, but in this instance you'll leave it in place to save the step of recreating it for the next exercise. 
 
 After a delay, the service is deleted and disappears from the Cloud console.
 

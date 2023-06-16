@@ -1,6 +1,6 @@
 ---
 toc:
-- ./level-0/determining-which-deployment-option-is-best-for-your-customer.md
+- ./determining-which-deployment-option-is-best-for-your-customer.md
 uuid: b982f1e4-2c22-4563-aa19-68d9aa8a801a
 ---
 

@@ -26,16 +26,16 @@ The sample Spring Boot project uses an `application.properties` file to register
 
 1. Add properties for the `com.liferay.lxc.dxp.domains` and `com.liferay.lxc.dxp.mainDomain` using your UAT site's domain (e.g., `uat.delectablebonsai.com`):
 
-    ```properties
-    com.liferay.lxc.dxp.domains=YOUR DOMAIN
-    com.liferay.lxc.dxp.mainDomain=YOUR DOMAIN
-    ```
+   ```properties
+   com.liferay.lxc.dxp.domains=YOUR DOMAIN
+   com.liferay.lxc.dxp.mainDomain=YOUR DOMAIN
+   ```
 
 1. Add another property for the `https` protocol:
 
-    ```properties
-    com.liferay.lxc.dxp.server.protocol=https
-    ```
+   ```properties
+   com.liferay.lxc.dxp.server.protocol=https
+   ```
 
 Now the project is correctly configured for your LXC environment and ready to deploy.
 
@@ -45,23 +45,23 @@ Build and deploy the project to your LXC environment from the sample Spring Boot
 
 1. Run this command to build the project into a deployable [LUFFA](https://learn.liferay.com/w/dxp/building-applications/client-extensions/packaging-client-extensions):
 
-    ```bash
-    ../../gradlew clean build
-    ```
+   ```bash
+   ../../gradlew clean build
+   ```
 
-    The build first runs the `bootJar` Gradle task (because it's [defined in the `client-extension.yaml` file](https://learn.liferay.com/w/dxp/building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions)), and then generates the LUFFA containing all of the necessary components for deployment in the `dist/` folder.
+   The build first runs the `bootJar` Gradle task (because it's [defined in the `client-extension.yaml` file](https://learn.liferay.com/w/dxp/building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions)), and then generates the LUFFA containing all of the necessary components for deployment in the `dist/` folder.
 
 1. Use the CLI tool to deploy the built LUFFA:
 
-    ```bash
-    lcp deploy --extension dist/liferay-sample-etc-spring-boot.zip
-    ```
+   ```bash
+   lcp deploy --extension dist/liferay-sample-etc-spring-boot.zip
+   ```
 
-    When prompted, choose the number that corresponds to your UAT client extension environment.
+   When prompted, choose the number that corresponds to your UAT client extension environment.
 
 ![Enter the number for your UAT client extension environment to deploy your project.](./deploying-and-managing-a-microservice-client-extension-project/images/01.png)
 
-The client extension is deployed to your UAT environment, and it appears in the Cloud console after a delay. The *Ready* status appears when the service container is running and the Spring Boot application starts up.
+The client extension is deployed to your UAT environment, and it appears in the Cloud console after a delay. The Ready status appears when the service container is running and the Spring Boot application starts.
 
 ![Check the console to see that the Spring Boot server has started up.](./deploying-and-managing-a-microservice-client-extension-project/images/02.png)
 
@@ -77,59 +77,59 @@ Create an object definition with an [action](https://learn.liferay.com/w/dxp/bui
 
 1. Open the Applications menu ( ![Applications menu](../../images/icon-applications-menu.png) ) &rarr; *Control Panel* &rarr; *Objects*.
 
-1. On the Objects page, click Add ( ![Add icon](../../images/icon-actions.png) ), and fill in the New Custom Object form:
+1. On the Objects page, click *Add* ( ![Add icon](../../images/icon-actions.png) ), and fill in the New Custom Object form:
 
-    * **Label**: Feedback Input
+   * **Label**: Feedback Input
 
-    * **Plural Label**: Feedback Inputs
+   * **Plural Label**: Feedback Inputs
 
-    * **Object Name**: FeedbackInput
+   * **Object Name**: `FeedbackInput`
 
-    ![Fill in the form for the basic information for a Feedback Input object definition.](./deploying-and-managing-a-microservice-client-extension-project/images/03.png)
+   ![Fill in the form for the basic information for a Feedback Input object definition.](./deploying-and-managing-a-microservice-client-extension-project/images/03.png)
 
 1. Click *Save*.
 
-    The object definition is created as a draft, but it still needs a field and an action to use the object action client extension.
+   The object definition is created as a draft, but it still needs a field and an action to use the object action client extension.
 
 ### Add a Boolean Field
 
-1. Click the Feedback Input object definition on the objects list to edit it.
+1. Click the *Feedback Input object definition* on the objects list to edit it.
 
 1. Click the *Fields* tab.
 
-1. Click Add ( ![Add icon](../../images/icon-add.png) ), and fill in the New Field form:
+1. Click *Add* ( ![Add icon](../../images/icon-add.png) ), and fill in the New Field form:
 
-    * **Label**: Was this helpful?
+   * **Label**: Was this helpful?
 
-    * **Field Name**: helpful
+   * **Field Name**: `helpful`
 
-    * **Type**: Boolean
+   * **Type**: Boolean
 
-1. Click Save.
+1. Click *Save*.
 
 ### Add an Action Invoking Your Client Extension and Publish
 
 1. Click the *Actions* tab.
 
-1. Click Add ( ![Add icon](../../images/icon-add.png) ).
+1. Click *Add* ( ![Add icon](../../images/icon-add.png) ).
 
-1. Fill in the *Basic Info* form for the action:
+1. Fill in the Basic Info form for the action:
 
-    * **Action Label**: New Feedback
+   * **Action Label**: New Feedback
 
-    * **Action Name**: NewFeedback
+   * **Action Name**: `NewFeedback`
 
 1. Click the *Action Builder* tab.
 
-1. In the *Trigger* drop-down menu, select *On After Add*.
+1. In the Trigger drop-down menu, select *On After Add*.
 
-1. In the *Action* drop-down menu, select `object-action-executor[function#liferay-sample-etc-spring-boot-object-action-1]`.
+1. In the Action drop-down menu, select `object-action-executor[function#liferay-sample-etc-spring-boot-object-action-1]`.
 
-    ![Select the object action executor entry for the first Spring Boot object action client extension.](./deploying-and-managing-a-microservice-client-extension-project/images/04.png)
+   ![Select the object action executor entry for the first Spring Boot object action client extension.](./deploying-and-managing-a-microservice-client-extension-project/images/04.png)
 
 1. Click *Save*.
 
-1. Navigate back to the object definiton's *Details* tab, and click *Publish*.
+1. Navigate back to the object definition's Details tab and click *Publish*.
 
 Now the object definition is published and you can use it to submit object data.
 
@@ -139,21 +139,21 @@ Now add a form using your new object definition so you can test the object actio
 
 1. Navigate back to your site's home page.
 
-1. Click _Edit_ ( ![Edit icon](../../images/icon-edit.png) ) at the top of the page to edit the page.
+1. Click _Edit_ ( ![Edit icon](../../images/icon-edit.png) ) at the top of the page.
 
 1. In the list of fragments on the left side of the screen, drag the *Form Container* fragment onto the page.
 
    ![Drag the Form Container fragment onto the page to create a form that you can map to your object definition.](./deploying-and-managing-a-microservice-client-extension-project/images/05.png)
 
-1. In the Form Container's drop-down menu, select your new Feedback Input object definition.
+1. In the Form Container's drop-down menu, select your new *Feedback Input object definition*.
 
 1. Click *Publish* at the top of the page.
 
-   ![The object's "helpful" input is now a checkbox in a simple form.](./deploying-and-managing-a-microservice-client-extension-project/images/06.png)
+  ![The object's "helpful" input is now a checkbox in a simple form.](./deploying-and-managing-a-microservice-client-extension-project/images/06.png)
 
-   The form appears on the page with a single "Was this helpful?" checkbox.
+  The form appears on the page with a single "Was this helpful?" checkbox.
 
-1. Click the *Submit* button to submit the form on the page.
+1. Click the *Submit* button.
 
 An object entry is created once you submit the form, and that invokes the object action client extension you deployed.
 
@@ -165,9 +165,9 @@ Now that you've triggered the object action, check the Spring Boot application's
 
 1. Click *Services* to see the full list of your deployed microservices.
 
-1. Click on the `liferaysampleetcspringboot` service.
+1. Select the `liferaysampleetcspringboot` service.
 
-The *Logs* tab is shown by default on the service's page, and you can see the Spring Boot application logs printing out the object data Liferay sent to it.
+The Logs tab appears by default on the service's page, and you can see the Spring Boot application logs printing out the object data Liferay sent to it.
 
 ![Check out the logs to see the results of Liferay triggering your object action client extension.](./deploying-and-managing-a-microservice-client-extension-project/images/07.png)
 
@@ -179,21 +179,25 @@ Kyle plans to try customizing this object action, but doesn't need this version 
 
 Delete the service from the console now that you're done using the sample microservice.
 
-1. On the service's page, click Actions ( ![Actions menu](../../images/icon-actions.png) ) in the top-right corner, and click *Delete Service*.
+1. On the service's page, click *Actions* ( ![Actions menu](../../images/icon-actions.png) ) in the top-right corner, and click *Delete Service*.
 
 1. Enter `liferaysampleetcspringboot` to confirm the impact of the deletion.
 
-    ![Enter the service's name to enable the button to delete it.](./deploying-and-managing-a-microservice-client-extension-project/images/08.png)
+   ![Enter the service's name to enable the button to delete it.](./deploying-and-managing-a-microservice-client-extension-project/images/08.png)
 
-    ```{warning}
-    Deleting the service in the Cloud console fully remove's the service's data, but it does not remove the client extensions that have been deployed to Liferay. If you want to remove all data from this project, you must delete the client extensions (and the OAuth 2 profile that it automatically created) from Liferay itself.
-    ```
+   ```{warning}
+   Deleting the service in the Cloud console fully removes the service's data, but it does not remove the client extensions that have been deployed to Liferay. If you want to remove all data from this project, you must delete the client extensions (and the OAuth 2 profile that it automatically created) from Liferay itself.
+   ```
+
+   <!-- We don't want to have these kinds of asides in the training. If they should delete everything (because it won't be used again), include that in the instructions. If they should not delete everything (perhaps because it's useful in a later exercise), explain why they're not deleting it (because they'll use it later).
+
+   We want to keep everything as concrete and focused on the task at hand as possible. -Rich -->
 
 1. Click *Delete Service*.
 
 After a delay, the service is deleted and disappears from the Cloud console.
 
-Now you've successfully tested the sample Spring Boot application in your UAT environment. Next, you'll try adding a little code to it and troubleshooting a problem in the console.
+Now you've successfully tested the sample Spring Boot application in your UAT environment. Next, you'll  troubleshoot a problem in the console.
 
 ## Relevant Concepts
 

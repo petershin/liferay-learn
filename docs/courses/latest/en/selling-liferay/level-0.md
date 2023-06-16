@@ -6,6 +6,7 @@ toc:
 - ./level-0/liferays-unique-value-proposition.md
 - ./level-0/the-ideal-customer-profile.md
 - ./level-0/what-challenges-does-liferay-solve-horizontal-solutions.md
+- ./level-0/what-challenges-does-liferay-solve-industry-solutions.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
 ---
 # Level 0
@@ -82,5 +83,9 @@ Learn more about the scenarios where Liferay's offerings are strongest.
 :link: ./level-0/what-challenges-does-liferay-solve-horizontal-solutions.md
 
 Learn more about common horizontal solutions built with Liferay.
+:::{grid-item-card} What Challenges Does Liferay Solve - Industry Solutions
+:link: ./level-0/what-challenges-does-liferay-solve-industry-solutions.md
+
+This module covers how Liferay solves some of the common challenges seen in particular industries as well as the most common solutions for each industry.
 :::
 ::::

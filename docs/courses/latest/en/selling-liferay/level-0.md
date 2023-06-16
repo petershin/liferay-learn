@@ -5,6 +5,7 @@ toc:
 - ./level-0/liferay-product-overview.md
 - ./level-0/liferays-unique-value-proposition.md
 - ./level-0/the-ideal-customer-profile.md
+- ./level-0/what-challenges-does-liferay-solve-horizontal-solutions.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
 ---
 # Level 0
@@ -77,4 +78,9 @@ This module reviews the concept of a Digital Experience Platform.
 Learn more about the scenarios where Liferay's offerings are strongest.
 :::
 
+:::{grid-item-card} What Challenges Does Liferay Solve For? - Horizontal Solutions
+:link: ./level-0/what-challenges-does-liferay-solve-horizontal-solutions.md
+
+Learn more about common horizontal solutions built with Liferay.
+:::
 ::::

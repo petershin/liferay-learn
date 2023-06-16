@@ -1,5 +1,6 @@
 ---
 toc:
+- ./level-0/introduction-to-liferay.md
 - ./level-0/liferay-product-offering.md
 - ./level-0/liferay-product-overview.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
@@ -39,15 +40,21 @@ Level 0 is also an ideal introduction to Liferay for anyone else involved with L
 
 There are no Liferay prerequisites for Level 0, however We recommend a general understanding of Enterprise Software and selling Enterprise Software.
 
-Start by learning about [the Liferay product offering](./level-0/liferay-product-offering.md).
+Start learning by getting an [Introduction to Liferay](./level-0/introudction-to-liferay.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
+:::{grid-item-card} Introduction to Liferay
+:link: ./level-0/introduction-to-liferay.md
+
+This module provides an introduction to Liferay the company and what makes it an exciting and unique organization in the competitive landscape.
+:::
+
 :::{grid-item-card} Liferay Product Offering
 :link: ./level-0/liferay-product-offering.md
 
-This module provides an introduction to Liferay, Liferay's sales approach, and the capabilities of Liferay DXP.
+This module provides an introduction to Liferay's sales approach.
 :::
 
 :::{grid-item-card} Liferay Product Overview

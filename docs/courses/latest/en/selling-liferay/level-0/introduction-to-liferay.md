@@ -1,0 +1,103 @@
+---
+uuid: cc59c93a-3ba6-43bb-9c57-e319843170ee
+---
+
+# Introduction to Liferay
+
+**At a Glance**
+
+* Founded in 2004
+* Liferay’s competitive advantages include:
+  * Integration capabilities
+  * Organically innovation
+  * Highly flexible/scalable
+  * Outstanding support
+* A platform for digital solutions across the entire customer journey
+
+## Background
+
+This module provides an introduction to Liferay:
+
+1. Our origins as an open-source Portal vendor
+1. Key facts about the company
+1. Why Partners are so important to us
+1. What our high-level Competitive Advantages are
+1. What a Digital Experience Platform is defined as, and what the basic anatomy of a DXP looks like
+1. Key target solutions and example customers
+
+## Liferay Origins
+
+Liferay started as a group of young, nerdy entrepreneurs hoping to build a tech company that could be a vehicle for good.
+
+They had a simple goal: to create useful technology that benefited customers, partners, and employees, and to build an organization that helped others reach their full potential. 
+
+From hosting company meetings on church picnic tables Liferay has grown into a global company and the technology has transformed from solely open-source to a leading enterprise platform for solving complex digital needs.
+
+This vision continues today with our Mission Statement:
+
+> “By building a vibrant business, making technology useful, and investing in communities, we make it possible for people to reach their full potential to serve others.”
+
+## Liferay Corporate Overview
+
+### Company Background
+
+* Founded in 2004
+* Head office Los Angeles
+* Global presence in 22 locations
+* Over 5 Million downloads worldwide
+* 300+ Partners globally
+* 1200+ Enterprise Customers
+* 1000+ Employees Globally
+* 180 000+ Community Members
+
+Over more than 19 years Liferay has opened offices in all continents and today we serve more than 1200 Enterprise Customers. In addition tens of thousands of organizations use Liferay’s open source Community Edition.
+
+![Liferay has offices that span the globe.](./introduction-to-liferay/images/01.png)
+
+Liferay customers are served by over 1000 employees plus our global partner network of integrators, Digital Agencies, Solution Partners and OEM partners.
+
+There are over 180K members in the Liferay community contributing in various ways to the code, translations and testing of the platform.
+
+Despite being headquartered in the USA, Liferay is not a typical American company with:
+
+* 78% of staff are based outside North America.
+* Non-US members represent 50% of senior leadership of the company
+
+## Importance of Partners
+
+Partners are an integral part of how Liferay builds, markets, sells and supports solutions built on top of the Liferay platform.
+
+Our ecosystem is built of partners that solve business challenges for customers through a limitless number of business solutions, tailored to meet the unique needs of our customers.
+
+Our partners are experts in Digital Transformation and Customer Experience, and act as trusted advisers to their customers.
+
+Our Customers are looking for tailored solutions to solve their unique business needs and our partners have the advisory and implementation capabilities to meet their requirements.
+
+![Partners contribute over 55% of Liferay's global business.](./introduction-to-liferay/images/02.png)
+
+## Company Differentiation
+
+One of the Liferay benefits is our independence. We do not have external investors or stock owners who dictate what we build, where we focus and what is important.
+
+Our company strategy and direction as well as our product strategy and direction are made with customers, partners and employees in mind.
+
+Unlike many other software companies, Liferay employees stay with the organization for many years - with many having served for more than 10 years. This improves both the product knowledge as well as account continuity.
+
+## Liferay Competitive Advantages
+
+The Competitive Advantages of our product include:
+
+* Seamless integration with various legacy software applications and ability to easily integrate with almost any external system
+* Ranked best-in-class for B2B and B2E use cases by Gartner, and excellent track record for Consumer and Government solutions
+* Extensibility and flexibility to address the requirements of the most demanding enterprise customers
+* Low-Code and No-Code capabilities to allow non-developers to create tailored solutions
+* Outstanding customer support with industry-leading customer retention rates
+* Organic innovation.  Unlike many of our competitors Liferay is and has always been developed entirely in-house, bringing substantial user-experience benefits over platforms developed through acquisition
+
+![Liferay has numerous competitive advantages.](./introduction-to-liferay/images/03.png)
+
+## What's Next
+
+Continue your learning in the next module where you will learn more about Digital Experience Platforms.
+
+[Let's go!]()

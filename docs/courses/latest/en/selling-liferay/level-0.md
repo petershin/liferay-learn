@@ -1,6 +1,7 @@
 ---
 toc:
 - ./level-0/introduction-to-liferay.md
+- ./level-0/what-is-a-digital-experience-platform.md
 - ./level-0/liferay-product-offering.md
 - ./level-0/liferay-product-overview.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
@@ -49,6 +50,12 @@ Start learning by getting an [Introduction to Liferay](./level-0/introudction-to
 :link: ./level-0/introduction-to-liferay.md
 
 This module provides an introduction to Liferay the company and what makes it an exciting and unique organization in the competitive landscape.
+:::
+
+:::{grid-item-card} What is a Digital Experience Platform?
+:link: ./level-0/what-is-a-digital-experience-platform.md
+
+This module reviews the concept of a Digital Experience Platform.
 :::
 
 :::{grid-item-card} Liferay Product Offering

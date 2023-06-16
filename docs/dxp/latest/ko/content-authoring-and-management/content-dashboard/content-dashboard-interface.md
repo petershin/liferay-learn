@@ -32,7 +32,7 @@
 
 1. 첫 번째 어휘에 대한 X축 범주
 
-1. 두 번째 어휘의 Y축 범주
+1. 두 번째 어휘에 대한 Y축 범주
 
 1. 막대 차트
 
@@ -89,6 +89,7 @@
 | 어휘(x축)          | 콘텐츠 감사 도구의 [x축 어휘](#content-audit-tool) 에서 콘텐츠 항목에 적용되는 카테고리입니다.                                                 |
 | 어휘(y축)          | 콘텐츠 감사 도구의 [y축 어휘](#content-audit-tool) 에서 콘텐츠 항목에 적용된 카테고리입니다.                                                  |
 | 변경된 날짜          | 콘텐츠의 마지막 수정 날짜                                                                                                  |
+| 검토 날짜           | 콘텐츠 검토 날짜                                                                                                       |
 
 콘텐츠 목록은 **페이지** 아이콘( ![Page Icon](../../images/icon-page.png) )을 사용하여 [디스플레이 페이지 템플릿](../../site-building/displaying-content/using-display-page-templates.md)가 있는 자산을 식별합니다.
 
@@ -129,10 +130,12 @@
 | 분류              | 어휘에서 하나 이상의 [카테고리](../tags-and-categories/organizing-content-with-categories-and-tags.md) 사용하여 필터링합니다. |
 | 사이트 혹은 애셋 라이브러리 | 사이트 또는 자산 라이브러리별로 필터링합니다.                                                                              |
 | 유형              | 기본 및 사용자 지정 하위 유형을 포함하여 콘텐츠 유형 및 하위 유형별로 필터링합니다.                                                       |
-| 연장              | 파일 확장자로 필터링:</br><ul><li>`오디오`</li><li>`부호`</li><li>`압축됨`</li><li>`심상 화랑 심상`</li><li>`프레젠테이션`</li><li>`스프레드시트`</li><li>`원본`</li><li>`벡터`</li><li>`비디오`</li><li>`기타`</li></ul>                                                             |
 | 꼬리표             | 콘텐츠 [태그](../tags-and-categories/tagging-content-and-managing-tags.md)로 필터링합니다.                         |
+| 연장              | 파일 확장자로 필터링:</br><ul><li>`오디오`</li><li>`부호`</li><li>`압축됨`</li><li>`심상 화랑 심상`</li><li>`프레젠테이션`</li><li>`스프레드시트`</li><li>`원본`</li><li>`벡터`</li><li>`비디오`</li><li>`기타`</li></ul>                                                             |
 | 작성자로 필터링        | 콘텐츠 작성자별로 필터링합니다.                                                                                      |
 | 상태로 필터링         | 콘텐츠의 [워크플로 상태](../../process-automation/workflow/introduction-to-workflow.md)기준으로 필터링합니다.              |
+| 검토 날짜로 필터링      | 콘텐츠의 검토 날짜별로 필터링합니다.                                                                                   |
+| 주문자             | 콘텐츠 제목, 수정 날짜 또는 검토 날짜별로 필터링합니다.                                                                       |
 
 ![콘텐츠 항목을 필터링합니다.](./content-dashboard-interface/images/08.png)
 
@@ -160,9 +163,9 @@
 
 | 자산 유형                                    | 메타데이터/액션                  |
 |:---------------------------------------- |:------------------------- |
-| 웹 콘텐츠                                    | <ul><li>제목</li><li>유형 {bdg-secondary}'7.4 U44+/GA44+'</li><li>특수형 </li><li>버전(현재 활성 버전)</li><li>상태</li><li>작성자</li><li>미리보기 이미지 {bdg-secondary}`7.4 U42+/GA42+`</li><li>번역한 대상 언어</li><li>전시 날짜</li><li>작성 날짜</li><li>변경된 날짜</li><li>식별</li><li>구독하기 {bdg-secondary}`7.4 U42+/GA42+`</li><li>버전(버전 기록을 보려면 클릭){bdg-secondary}`7.4 U53+/GA53+`</li></ul> |
-| 문서 및 미디어 {bdg-secondary}`7.4 U23+/GA23+` | <ul><li>제목</li><li>URL</li><li>WebDAV URL {bdg-secondary}`7.4 U42+/GA42+`</li><li>파일 이름</li><li>유형 {bdg-secondary}'7.4 U44+/GA44+'</li><li>특수형</li><li>MIME 유형 {bdg-secondary}`7.4 U44+/GA44+`</li><li>버전(현재 활성 버전)</li><li>상태</li><li>작성자</li><li>미리보기 이미지</li><li>다운로드</li><li>공유 {bdg-secondary}`7.4 U42+/GA42+`</li><li>연장</li><li>규모</li><li>작성 날짜</li><li>변경된 날짜</li><li>식별</li><li>버전 (버전 기록을 보려면 클릭){bdg-secondary}`7.4 U53+/GA53+`</li></ul> |
-| 오래 되는 입장                                 | <ul><li>제목</li><li>유형</li><li>버전(현재 활성 버전)</li><li>상태</li><li>작성자</li><li>미리보기 이미지 {bdg-secondary}`7.4 U42+/GA42+`</li><li>공유 {bdg-secondary}`7.4 U42+/GA42+`</li><li>전시 날짜</li><li>작성 날짜</li><li>변경된 날짜</li><li>식별</li></ul> |
+| 웹 콘텐츠                                    | <ul><li>제목</li><li>유형 {bdg-secondary}'7.4 U44+/GA44+'</li><li>특수형 </li><li>버전(현재 활성 버전)</li><li>상태</li><li>작성자</li><li>미리보기 이미지 {bdg-secondary}`7.4 U42+/GA42+`</li><li>번역한 대상 언어</li><li>전시 날짜</li><li>작성 날짜</li><li>변경된 날짜</li><li>ID</li><li>구독하기 {bdg-secondary}`7.4 U42+/GA42+`</li><li>버전 (버전 기록을 보려면 클릭){bdg-secondary}`7.4 U53+/GA53+`</li></ul> |
+| 문서 및 미디어 {bdg-secondary}`7.4 U23+/GA23+` | <ul><li>제목</li><li>URL</li><li>WebDAV URL {bdg-secondary}`7.4 U42+/GA42+`</li><li>파일 이름</li><li>유형 {bdg-secondary}'7.4 U44+/GA44+'</li><li>특수형</li><li>MIME 유형 {bdg-secondary}`7.4 U44+/GA44+`</li><li>버전(현재 활성 버전)</li><li>상태</li><li>작성자</li><li>미리보기 이미지</li><li>다운로드</li><li>공유 {bdg-secondary}`7.4 U42+/GA42+`</li><li>연장</li><li>규모</li><li>작성 날짜</li><li>변경된 날짜</li><li>ID</li><li>버전 (버전 기록을 보려면 클릭){bdg-secondary}`7.4 U53+/GA53+`</li></ul> |
+| 오래 되는 입장                                 | <ul><li>제목</li><li>유형</li><li>버전(현재 활성 버전)</li><li>상태</li><li>작성자</li><li>미리보기 이미지 {bdg-secondary}`7.4 U42+/GA42+`</li><li>공유 {bdg-secondary}`7.4 U42+/GA42+`</li><li>전시 날짜</li><li>작성 날짜</li><li>변경된 날짜</li><li>ID</li></ul> |
 
 ![콘텐츠 정보 사이드바는 콘텐츠에 대한 메타데이터 및 작업을 제공합니다.](./content-dashboard-interface/images/10.png)
 

@@ -8,7 +8,7 @@
 
 ![각 개체는 REST 응용 프로그램 아래에 나타납니다.](./headless-framework-integration/images/01.png)
 
-개체가 활성 상태인 동안 이러한 API를 사용하여 기본 CRUD 작업을 수행하고, [집계 용어](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) 및 [중첩 필드](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md)를 사용하여 복잡한 쿼리를 실행하고, 독립 실행형 작업을 트리거하고, 항목 관계를 관리하는 등의 작업을 수행할 수 있습니다. 개체 API 자습서는 [API 사용](../objects-tutorials/using-apis.md) 참조하십시오.
+개체가 활성 상태인 동안 이러한 API를 사용하여 기본 CRUD 작업을 수행하고, [집계 용어](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) 및 [중첩 필드](../objects-tutorials/using-apis/using-nestedfields-to-query-related-entries.md)를 사용하여 복잡한 쿼리를 실행하고, 독립 실행형 작업을 트리거하고, 항목 관계를 관리하는 등의 작업을 수행할 수 있습니다. 개체 API 자습서는 [API 사용](../objects-tutorials/using-apis.md) 참조하세요.
 
 ## 기본 회사 범위 REST API
 
@@ -73,7 +73,7 @@ HTTP 끝점의 경우 `relationName` 관계 이름(예: `userToTicket`)으로 �
 사이트 범위 개체의 경우 ERC 끝점에는 `/scope/{scopeKey}` 접두사(예: `/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`)가 포함됩니다. 외부 참조 코드 끝점은 시스템 개체에 사용할 수 없습니다.
 
 ```{tip}
-전용 관계 API 외에도 객체의 다른 GET API와 함께 `nestedFields` 쿼리 매개변수를 사용하여 관련 항목이 있는 항목을 반환할 수 있습니다. 이 매개변수를 사용할 때 출력에 포함하려는 관계의 이름을 제공해야 합니다(예: `nestedFields=ticketAssignee`). 자세한 내용 및 소개 자습서는 [REST API로 중첩 필드 사용](../objects-tutorials/using-apis/using-nested-fields-with-rest-apis.md)을 참조하세요.
+전용 관계 API 외에도 객체의 다른 GET API와 함께 `nestedFields` 쿼리 매개변수를 사용하여 관련 항목이 있는 항목을 반환할 수 있습니다. 이 매개변수를 사용할 때 출력에 포함하려는 관계의 이름을 제공해야 합니다(예: `nestedFields=ticketAssignee`). 자세한 내용 및 소개 자습서는 [`nestedFields`를 사용하여 관련 항목 쿼리](../objects-tutorials/using-apis/using-nestedfields-to-query-related-entries.md)를 참조하세요.
 ```
 
 ## 독립 실행형 작업 REST API
@@ -103,4 +103,4 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 
 * [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
 * [API 사용](../objects-tutorials/using-apis.md)
-<!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->
+<!--TASK: * \[Consuming GraphQL APIs\](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

@@ -20,7 +20,7 @@
 업그레이드 보고는 Liferay DXP/Portal 7.4+에서 사용할 수 있습니다.
 ```
 
-업그레이드 보고는 `tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties` 파일에서 `upgrade.report.enabled=true` [Portal 속성](../../reference/portal-properties.md) 을 설정하여 활성화됩니다. 예를 들어,
+업그레이드 보고는 `tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties` 파일에서 `upgrade.report.enabled=true` [Portal 속성](../../reference/portal-properties.md) 설정하여 활성화됩니다. 예를 들어,
 
 ```bash
 cd liferay-home
@@ -29,6 +29,8 @@ cd liferay-home
 ```bash
 echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties
 ```
+
+문서 라이브러리 크기를 계산하려면 대기 시간이 오래 걸릴 수 있습니다. 따라서 제한 시간은 기본적으로 10초로 설정됩니다. 이 기간을 변경하려면 `portal-ext.properties` 파일에서 `upgrade.report.dl.storage.size.timeout` 특성을 수정하십시오. 시간을 늘리거나 값을 `0` 로 설정하여 시간 초과를 비활성화합니다.
 
 [데이터베이스 업그레이드 도구](../upgrade-basics/using-the-database-upgrade-tool.md) 은 다음에 실행할 때 업그레이드 보고서를 생성합니다.
 

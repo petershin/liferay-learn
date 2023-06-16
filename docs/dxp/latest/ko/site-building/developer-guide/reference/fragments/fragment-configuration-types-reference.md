@@ -10,6 +10,7 @@
 - `colorPicker` (Liferay 7.4 이상 사용 가능)
 - `길이` (Liferay 7.4+ U44/GA44 사용 가능)
 - `itemSelector`
+- `URL` (Liferay 7.4 이상 사용 가능)
 - `videoSelector` (Liferay 7.4 이상 사용 가능)
 - `collectionSelector`
 - `colorPalette`
@@ -112,7 +113,7 @@ FreeMarker 컨텍스트에 삽입된 구성 값은 JSON 파일에 지정된 정�
 
 * 텍스트 상자에 색상의 16진수 코드를 입력합니다.
 
-* **스타일북의 값** 버튼을 클릭하면 현재 사용 중인 [스타일북](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)에 정의된 미리 정의된 색상 메뉴가 열립니다. 그러면 단추를 다시 눌러 연결을 해제할 때까지 필드 값이 선택한 토큰에 연결됩니다. 토큰 값의 연결을 해제하면 선택한 색상이 해당하는 16진수 코드 값으로 다시 변환됩니다.
+* **스타일북의 값** 버튼을 클릭하여 현재 사용 중인 [스타일북](../../../site-appearance/style-books/using-a에서 정의된 사전 정의된 색상 메뉴를 엽니다. -style-book-to-standardize-site-appearance.md). 그러면 단추를 다시 눌러 연결을 해제할 때까지 필드 값이 선택한 토큰에 연결됩니다. 토큰 값의 연결을 해제하면 선택한 색상이 해당하는 16진수 코드 값으로 다시 변환됩니다.
 
 * 색상 선택기에 정의된 기본값이 없는 경우 **기본값** 드롭다운 메뉴를 클릭하여 현재 사용 중인 스타일 북에서 색상을 선택합니다. 이것은 값을 선택할 때 Stylebook의 값 단추와 동일하게 작동합니다.
 
@@ -305,6 +306,36 @@ FreeMarker 컨텍스트에 삽입된 구성 값은 JSON 파일에 지정된 정�
 ```
 
 ![항목 선택기 구성은 기존 콘텐츠를 표시하는 옵션 선택이 필요할 때 유용합니다.](./fragment-configuration-types-reference/images/04.png)
+
+## URL 구성
+
+이 구성은 프래그먼트의 마크업에서 사용할 URL에 대해 특별히 필드를 추가합니다.
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "label": "My URL",
+                    "name": "myURL",
+                    "type": "url"
+                }
+            ]
+        }
+    ]
+}
+```
+
+이 구성으로 프래그먼트를 구성할 때 드롭다운 메뉴에서 수동으로 URL을 입력하거나(`URL`) 동일한 사이트에서 다른 페이지를 선택하고 전체 URL을 사용하도록(`Page`) 선택할 수 있습니다.
+
+다음은 위의 JSON에서 URL 구성을 사용하여 하이퍼링크를 만드는 단편 HTML의 예입니다.
+
+```html
+<div class="fragment_1">
+    <a href=${configuration.myURL}>Click this link!</a>
+</div>
+```
 
 ## 비디오 선택기
 

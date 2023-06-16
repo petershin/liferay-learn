@@ -25,16 +25,18 @@ Michael이라는 개인이 이 페이지를 자주 방문하는 경우 의류 �
 
 어느 쪽이든 관심분야 인사이트는 새로운 비즈니스를 창출하는 데 도움이 됩니다. 관심분야 인사이트는 고객이 가장 많이 방문하는 페이지 및 자산에서 언급한 가장 일반적인 주제를 알려줍니다.
 
-## 차단 목록에 키워드 추가
+<!--- 
+## Adding Keywords to the Block List
 
-차단 목록에 키워드를 추가하려면 다음 단계를 따르십시오.
+Follow these steps to add a keyword to the block list:
 
-1. Analytics Cloud에서 설정 → 관심 주제를 선택합니다. 테이블에는 차단 목록에 있는 기존 키워드가 나열됩니다.
+1. In Analytics Cloud, select Settings → Interest Topics. A table lists any existing keywords in the block list.
 
-1. 키워드 추가를 클릭하고 쉼표로 구분된 목록에 하나 이상의 키워드를 입력합니다.
+1. Click Add Keyword and enter one or more keywords in a comma-delimited list.
 
-1. 완료되면 보내기를 클릭합니다. 그러면 키워드가 표에 나타납니다.
+1. Click Send when you're finished. Your keywords then appear in the table.
 
-차단 목록에서 키워드를 삭제하려면 해당 키워드의 휴지통 아이콘(![Delete](../../images/icon-delete.png))을 클릭합니다. 여러 키워드를 한 번에 삭제하려면 각각의 확인란을 선택하고 표 상단에 나타나는 휴지통 아이콘을 클릭합니다. 표 상단의 확인란을 통해 모든 키워드를 선택할 수 있습니다.
+To delete a keyword from the block list, click that keyword's trash icon (![Delete](../../images/icon-delete.png)). To delete multiple keywords at once, select the checkbox for each and click the trash icon that appears at the top of the table. You can select all keywords via the checkbox at the top of the table.
 
-![키워드 관리 화면입니다.](managing-interest-topics/images/01.png)
+![The keyword management screen.](managing-interest-topics/images/01.png)
+--->

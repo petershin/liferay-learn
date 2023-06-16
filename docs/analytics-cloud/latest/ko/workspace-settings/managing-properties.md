@@ -1,6 +1,6 @@
 # 속성 관리
 
-[속성 생성](../workspace-settings/scoping-sites-and-individuals-using-properties.md#creating-a-property) 후 Analytics Cloud의 작업 공간 설정 섹션에서 관리 및 수정할 수 있습니다. **설정** &rarr; **작업 공간 설정** &rarr; **속성** 으로 이동합니다.
+[속성 생성](../workspace-settings/scoping-sites-and-individuals-using-properties.md#creating-a-property) 후 Analytics Cloud의 작업 공간 설정 섹션에서 관리 및 수정할 수 있습니다. **설정** &rarr; **작업 공간 설정** &rarr; **속성** 로 이동합니다.
 
 ![설정에서 속성 섹션으로 이동합니다.](./managing-properties/images/01.png)
 
@@ -24,14 +24,6 @@
 
 ```{warning}
 그 결과 이 속성의 역사적 사건이 완전히 제거됩니다. 이 작업은 취소할 수 없습니다.
-```
-
-## 속성 삭제
-
-속성을 삭제하려면 **삭제** 버튼을 클릭합니다. 작업을 확인하는 새 양식이 나타납니다. 확인 문장을 복사하여 텍스트 상자에 붙여넣습니다. 이렇게 하면 **삭제** 버튼이 활성화됩니다. 버튼을 클릭하면 속성이 삭제됩니다.
-
-```{warning}
-그 결과 이 속성과 역사적 사건이 완전히 제거됩니다. 이 작업은 취소할 수 없습니다.
 ```
 
 ## 속성에 사용자 추가 및 제거

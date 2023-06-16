@@ -1,4 +1,4 @@
-# 7.3의 유지 관리 모드 및 사용 중단
+# 7.3의 유지 관리 모드 및 지원 중단
 
 각각의 새로운 DXP 릴리스에서는 기능이 지속적인 개선을 보장하지 않거나 더 이상 사용되지 않을 수 있습니다. 기능에 대한 향상을 중지하면 **유지 관리 모드** 로 설정됩니다.
 
@@ -6,7 +6,7 @@
 
 더 이상 사용되지 않는 기능은 결국 제거되거나 더 새롭고 더 나은 기능으로 대체됩니다. 더 이상 사용되지 않는 기능에 대한 지원을 중단하기 전에 Liferay는 해당 기능을 **Deprecated** 로 표시합니다.
 
-**Deprecated:** 이 기능은 빠르면 다음 마이너 버전 릴리스부터 지원되지 않습니다. 예를 들어 7.3에서 더 이상 사용되지 않는 기능에 대한 지원은 7.4에서 일찍 중단될 수 있습니다.
+**Deprecated:** 이 기능은 빠르면 다음 마이너 버전 릴리스부터 지원되지 않습니다.
 
 ```{important}
 더 이상 사용되지 않는 기능은 빠르면 다음 마이너 릴리스에서 지원이 중단될 수 있으므로 사용 중지를 계획하십시오.
@@ -42,7 +42,7 @@
 | 플래시 위젯 | 삭제됨 | 직접적인 교체가 없습니다. [FlashPlayer 수명 종료](https://www.adobe.com/products/flashplayer/end-of-life.html) 는 2020년 12월 31일입니다. |
 | Internet Explorer 11(IE11) 브라우저 지원 | 번들 | IE11 지원이 활성화된 Microsoft Edge로 전환하세요. |
 | JAAS 지원 | 번들 | 직접적인 교체가 없습니다. |
-| JQuery 기본 글로벌 Liferay 변수 | 번들(비활성화) | jQuery 타사 [시스템 설정](../../../system-administration/configuring-liferay/system-settings에서 `Enable jQuery` 속성을 `true`로 설정하여 이전 동작을 다시 가져올 수 있습니다. .md). |
+| JQuery 기본 글로벌 Liferay 변수 | 번들(비활성화) | jQuery 타사 [시스템 설정](../../../system-administration/configuring-liferay/system-settings.md) 에서 `Enable jQuery` 속성을 `true`로 설정하여 이전 동작을 다시 가져올 수 있습니다. |
 | 라이프레이 북마크 | 보관됨 | 직접적인 교체가 없습니다. |
 | Liferay 모바일 장치 감지 라이트 | 보관됨 | 직접적인 교체가 없습니다. |
 | 라이프레이 푸시 | 마켓플레이스 | [Headless Delivery](../../../headless-delivery/using-liferay-as-a-headless-platform.md)로 대체되었습니다. |
@@ -64,10 +64,9 @@
 
 이전 버전에서 업그레이드하는 경우 이전 Liferay 버전에서 더 이상 사용되지 않는 기능도 고려해야 할 수 있습니다.
 
-* [7.2 지원 중단 및 유지 관리 모드로 이동된 기능](./maintenance-mode-and-deprecations-in-7-2.md)
+* [7.2 지원 중단 및 유지 관리 모드로 이동한 기능](./maintenance-mode-and-deprecations-in-7-2.md)
 * [7.1 지원 중단](https://help.liferay.com/hc/ko/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
 * [7.0 지원 중단](https://help.liferay.com/hc/ko/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
-
 
 ## 7.3에서 유지 관리 모드로 이동한 기능
 

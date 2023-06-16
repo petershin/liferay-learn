@@ -1,13 +1,13 @@
 ---
 toc:
-  - ./search-blueprints/creating-and-managing-elements.md
+  - ./search-blueprints/understanding-search-blueprints.md
   - ./search-blueprints/creating-and-managing-search-blueprints.md
+  - ./search-blueprints/using-a-search-blueprint-on-a-search-page.md
   - ./search-blueprints/personalizing-the-search-experience.md
+  - ./search-blueprints/sorting-results-in-a-search-blueprint.md
   - ./search-blueprints/search-blueprints-configuration-reference.md
   - ./search-blueprints/search-blueprints-elements-reference.md
-  - ./search-blueprints/sorting-results-in-a-search-blueprint.md
-  - ./search-blueprints/understanding-search-blueprints.md
-  - ./search-blueprints/using-a-search-blueprint-on-a-search-page.md
+  - ./search-blueprints/creating-and-managing-elements.md
 ---
 # 청사진 검색
 
@@ -17,14 +17,14 @@ toc:
 ```{toctree}
 :maxdepth: 1
 
-./search-blueprints/creating-and-managing-elements.md
+./search-blueprints/understanding-search-blueprints.md
 ./search-blueprints/creating-and-managing-search-blueprints.md
+./search-blueprints/using-a-search-blueprint-on-a-search-page.md
 ./search-blueprints/personalizing-the-search-experience.md
+./search-blueprints/sorting-results-in-a-search-blueprint.md
 ./search-blueprints/search-blueprints-configuration-reference.md
 ./search-blueprints/search-blueprints-elements-reference.md
-./search-blueprints/sorting-results-in-a-search-blueprint.md
-./search-blueprints/understanding-search-blueprints.md
-./search-blueprints/using-a-search-blueprint-on-a-search-page.md
+./search-blueprints/creating-and-managing-elements.md
 ```
 
 검색 청사진은 검색 경험 애플리케이션의 첫 번째 기능입니다. 그것으로 당신은 할 수 있습니다

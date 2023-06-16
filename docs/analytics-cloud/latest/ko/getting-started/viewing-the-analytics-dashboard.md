@@ -20,6 +20,7 @@
 ```{note}
 세그먼트 기반 분석 데이터를 탐색하려면 먼저 [세그먼트 생성](../people/segments/creating-segments.md)해야 합니다. 이들은 선택한 속성에 따라 함께 집계되는 개인 그룹입니다.
 ```
+
 <!-- Hiding until further notice
 For understanding your Commerce data:
 
@@ -56,10 +57,10 @@ To explore Commerce analytics data, you must sync Commerce channels with Analyti
 
 Analytics Cloud용 UI는 현재 영어, 일본어, 포르투갈어 및 스페인어를 지원합니다. 언어 설정을 변경하려면,
 
-1. 대시보드 하단에서 사용자 이름을 클릭합니다. 그런 다음 *언어*을 클릭합니다.
+1. 대시보드 하단에서 사용자 이름을 클릭합니다. 그런 다음 **언어** 클릭합니다.
 
    ![사용자 이름을 클릭한 다음 언어를 클릭합니다.](./viewing-the-analytics-dashboard/images/02.png)
 
-2. 언어를 선택합니다. 페이지를 새로 고칩니다. 이제 대시보드와 메뉴가 선택한 언어로 표시됩니다.
+1. 언어를 선택합니다. 페이지를 새로 고칩니다. 이제 대시보드와 메뉴가 선택한 언어로 표시됩니다.
 
-잘하셨어요! Analytics Cloud에 대해 사용 가능한 모든 기능, 옵션 및 구성을 찾아보려면 위의 *Analytics Cloud* 이동 경로를 클릭하십시오.
+잘하셨어요! Analytics Cloud에 대해 사용 가능한 모든 기능, 옵션 및 구성을 찾아보려면 위의 **Analytics Cloud** 이동 경로를 클릭하십시오.

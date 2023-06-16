@@ -151,9 +151,11 @@ server.detector.server.id=tomcat
 
 * `hibernate.jdbc.batch_size`: 성능 향상을 위해 사용되는 JDBC 배치 크기(기본값은 **250** 으로 설정됨). **이 속성은 업그레이드 성능을 향상시킬 수 있지만 필수는 아닙니다.**
 
-* `upgrade.log.context.enabled`: 식별자로 태그가 지정된 업그레이드 관련 로그 줄을 보려면 `true` 으로 설정합니다.
+* `upgrade.log.context.enabled`: 식별자로 태그가 지정된 업그레이드 관련 로그 줄을 보려면 `true` 으로 설정합니다. 가능한 식별자는 다음과 같습니다.
 
-* `upgrade.log.context.name`: `upgrade.log.context.enabled`사용 시 식별자 이름을 설정한다. 예: `upgrade.log.context.name=foo`.
+    * `{upgrade.component=portal}`: 포털 관련 업그레이드 프로세스용
+    * `{upgrade.component=framework}`: 업그레이드 프레임워크 로직 관련 프로세스용
+    * `{upgrade.component=<bundleSymblociName>}`: 모듈 관련 업그레이드 프로세스용
 
 `upgrade.log.context.enabled` 업그레이드 도구와 시작 시 업그레이드 모두에 대해 작동합니다. 이 기능을 사용하려면 [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) 파일을 `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` 에 복사해야 합니다. 파일 이름을 `portal-log4j-ext.xml`로 바꿉니다. 그런 다음 appender 정의를 찾습니다.
 
@@ -175,18 +177,21 @@ server.detector.server.id=tomcat
 
 ```
 ...
-2022-07-26 20:56:15.966 INFO  [main][PortalUpgradeProcess:174] Upgrading com.liferay.portal.upgrade.PortalUpgradeProcess {foo=foo}
-2022-07-26 20:56:15.969 INFO  [main][UpgradeProcess:98] Upgrading com.liferay.portal.upgrade.v7_4_x.UpgradeAddress {foo=foo}
-2022-07-26 20:56:18.765 INFO  [main][UpgradeProcess:113] Completed upgrade process com.liferay.portal.upgrade.v7_4_x.UpgradeAddress in 2797 ms {foo=foo}
+2023-05-24 23:29:31.143 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties {upgrade.component=portal}
+2023-05-24 23:29:31.145 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 3 ms {upgrade.component=portal}
 ...
-2022-07-26 20:56:38.611 INFO  [main][BaseDB:716] Dropping stale indexes {foo=foo}
-2022-07-26 20:56:38.615 INFO  [main][BaseDB:786] drop index IX_60C8634C on Repository {foo=foo}
+2023-05-24 23:29:34.012 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions {upgrade.component=framework}
+2023-05-24 23:29:34.029 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 17 ms {upgrade.component=framework}
+...
+2023-05-24 23:30:17.046 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.db.index.IndexUpdaterUtil#lambda$updateIndexes$1#Updating database indexes for com.liferay.wiki.service {upgrade.component=com.liferay.wiki.service}
+2023-05-24 23:30:17.094 INFO  [main][BaseDB:776] Dropping stale indexes {upgrade.component=com.liferay.wiki.service}
+2023-05-24 23:30:17.095 INFO  [main][BaseDB:846] drop index IX_18565130 on WikiPage {upgrade.component=com.liferay.wiki.service}
 ...
 ```
 
 #### 업그레이드 구성 예
 
-다음은 사용자 정의하고 `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client/`에 복사할 수 있는 예제 업그레이드 구성 파일입니다.
+다음은 사용자 지정하고 `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client/`에 복사할 수 있는 예제 업그레이드 구성 파일입니다.
 
 * `app-server.properties`:
 
@@ -198,7 +203,7 @@ server.detector.server.id=tomcat
     extra.lib.dirs=bin
     ```
 
-* `portal-upgrade-database.properties`: 
+* `portal-upgrade-database.properties`:
 
     ```properties
     jdbc.default.url=jdbc:mysql://lportal62?characterEncoding=UTF-8&dontTrackOpenResources=true&holdResultsOpenOverStatementClose=true&serverTimezone=GMT&useFastDateParsing=false&useUnicode=true
@@ -207,7 +212,7 @@ server.detector.server.id=tomcat
     jdbc.default.password=
     ```
 
-* `portal-upgrade-ext.properties`: 
+* `portal-upgrade-ext.properties`:
 
     ```properties
     liferay.home=/home/user/servers/liferay7

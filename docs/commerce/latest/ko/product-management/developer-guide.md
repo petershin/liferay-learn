@@ -2,6 +2,7 @@
 toc:
   - ./developer-guide/catalog-api-basics.md
   - ./developer-guide/option-api-basics.md
+  - ./developer-guide/option-value-api-basics.md
   - ./developer-guide/product-api-basics.md
   - ./developer-guide/specification-api-basics.md
 ---
@@ -12,6 +13,7 @@ toc:
 
 developer-guide/catalog-api-basics.md
 developer-guide/option-api-basics.md
+developer-guide/option-value-api-basics.md
 developer-guide/product-api-basics.md
 developer-guide/specification-api-basics.md
 ```
@@ -25,6 +27,10 @@ developer-guide/specification-api-basics.md
 
 :::{grid-item-card}  옵션 API 기초
 :link: ./developer-guide/option-api-basics.md
+:::
+
+:::{grid-item-card}  OptionValue API 기초
+:link: ./developer-guide/option-value-api-basics.md
 :::
 
 :::{grid-item-card}  제품 API 기초

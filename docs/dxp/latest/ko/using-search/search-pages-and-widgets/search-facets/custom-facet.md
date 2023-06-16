@@ -44,10 +44,10 @@
 사용자 정의 패싯을 사용하려면 구성에서 사용할 분석되지 않은 키워드 필드를 알아야 합니다.
 
 ```{tip}
-Elasticsearch는 다양한 방식으로 인덱싱 필드를 지원합니다. 일부 텍스트 필드는 매핑에서 중첩된 'raw' [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/multi-fields.html) 인 경우 키워드 필드로 사용할 수 있습니다. , 또는 필드가 'fieldName_sortable'('keyword'로)로 매핑되는 별도의 추가 필드에 매핑되는 경우. Elasticsearch 다중 필드 개념을 활용하므로 사용자 정의 필드에 대한 패싯 생성에 대한 아래 예를 참조하십시오.
+Elasticsearch는 다양한 방식으로 인덱싱 필드를 지원합니다. 일부 텍스트 필드는 중첩된 '원시' [다중 필드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/multi-fields.html) 인 경우 키워드 필드로 사용할 수 있습니다. 매핑에서 또는 필드가 'fieldName_sortable'('키워드'로)로 매핑되는 별도의 추가 필드에 추가로 매핑되는 경우. Elasticsearch 다중 필드 개념을 활용하므로 사용자 정의 필드에 대한 패싯 생성에 대한 아래 예를 참조하십시오.
 ```
 
-사용 가능한 필드의 전체 목록을 찾아보려면 **제어판** &rarr; **구성** &rarr; **검색**(**필드 매핑** 탭 클릭)에서 필드 매핑을 검사하십시오. 여기에서 수많은 인덱스를 볼 수 있습니다. 관심이 있을 가능성이 있는 Liferay 자산은 `liferay-20101` 과 유사한 이름의 [회사 인덱스](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)에 인덱싱됩니다(`20101` 는 회사 ID임).
+사용 가능한 필드의 전체 목록을 찾아보려면 **제어판** &rarr; **구성** &rarr; **검색**(**필드 매핑** 탭 클릭)에서 필드 매핑을 검사하십시오. 여기에서 수많은 인덱스를 볼 수 있습니다. 관심이 있을 가능성이 있는 Liferay 자산은 `liferay-20101` (`20101` 는 회사 ID임)과 유사한 이름인 [회사 인덱스](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)에 인덱싱됩니다.
 
 또는 검색 엔진의 API를 사용하여 매핑을 찾아보십시오. Elasticsearch에서는 cURL을 사용하여 터미널에서 필드 매핑에 액세스하여 [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-get-mapping.html) 호출할 수 있습니다.
 
@@ -56,7 +56,7 @@ Elasticsearch는 다양한 방식으로 인덱싱 필드를 지원합니다. 일
 ```
 
  ```bash
-curl -X GET "localhost:9200/_mapping/LiferayDocumentType"?pretty
+curl -X GET "localhost:9200/_mapping"?pretty
  ```
 
 Solr는 [ListFields API](https://lucene.apache.org/solr/guide/6_6/schema-api.html#SchemaAPI-ListFields) 을 사용합니다.
@@ -226,7 +226,7 @@ ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_Str
 
 사용자 정의 패싯에서 이러한 필드 중 하나를 사용하려면 위젯의 집계 필드에 `ddmFieldName` 값(예: `ddm__keyword__40806__Testb5mx_en_US`)을 입력하십시오.
 
-버전에 따라 [DDM 필드용 중첩 필드 저장소](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch -have-changed-to-a-nested-document) 는 Elasticsearch에 대해 기본적으로 활성화될 수 있습니다.
+버전에 따라 [DDM 필드용 중첩 필드 저장소](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) 는 Elasticsearch에 대해 기본적으로 활성화될 수 있습니다.
 
 | 라이프레이 버전         | 기본적으로 활성화된 중첩 필드 |
 |:---------------- |:---------------- |

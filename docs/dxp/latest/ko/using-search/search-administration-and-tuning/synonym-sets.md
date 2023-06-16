@@ -1,6 +1,6 @@
 # 동의어 세트
 
-> **가입자**
+{bdg-primary}`구독`
 
 ```{note}
 이 기능은 [Elasticsearch에서만](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md) 작동합니다.
@@ -16,7 +16,7 @@
 
 동의어 집합은 현재 기본 로케일인 영어 또는 스페인어로 인덱싱된 필드에서 작동합니다. 이 두 언어 중 하나로 지역화할 수 있는 필드가 있는 Liferay 자산은 동의어 세트와 함께 작동합니다.
 
-Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/elasticsearch/guide/current/synonyms.html) 는 Synonyms Set UI를 통해 지원되지 않습니다.
+Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/elasticsearch/guide/current/synonyms.html) Synonyms Set UI를 통해 지원되지 않습니다.
 
 ## 동의어 세트 생성 및 관리
 
@@ -28,15 +28,15 @@ Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/e
 
    ![애플리케이션 메뉴에서 동의어 섹션으로 이동합니다.](synonym-sets/images/01.png)
 
-1. **_** 추가 아이콘(![Click on the add icon](../../images/icon-add.png))을 클릭하여 새 동의어 집합을 추가합니다.
+1. **추가** 아이콘(![추가 아이콘 클릭](../../images/icon-add.png))을 클릭하여 새 동의어 집합을 추가합니다.
 
 1. 세트에 동의어 목록을 입력하십시오. 동의어 입력은 **Enter** 을 클릭하거나 쉼표를 입력하여 수행됩니다.
 
    ![다른 동의어를 세트에 입력하십시오.](synonym-sets/images/02.png)
 
-1. 동의어 옆에 있는 **X** 을 클릭하면 동의어를 삭제할 수 있습니다. 세트를 마치면 **게시** 을 클릭합니다.
+1. 동의어 옆에 있는 **X** 을 클릭하면 동의어를 삭제할 수 있습니다. 세트를 마치면 **게시** 클릭합니다.
 
-1. 세트를 편집하거나 삭제하려면 **옵션** 아이콘(![Click on the options icon.](../../images/icon-options.png))을 클릭하고 **편집** 또는 **삭제** 을 클릭합니다.
+1. 세트를 편집하거나 삭제하려면 **옵션** 아이콘(![Click on the options icon.](../../images/icon-options.png))을 클릭하고 **편집** 또는 **삭제** 클릭합니다.
 
    ![변경하려면 편집 또는 삭제를 클릭하십시오.](synonym-sets/images/03.png)
 
@@ -56,7 +56,7 @@ Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/e
 
 기본적으로 Synonyms Sets는 동의어를 [영어 및 스페인어로만 지원합니다](#requirements-and-limitations) . 다른 언어에 대한 지원을 추가하려면 아래 구성 단계를 사용하십시오.
 
-- 기본 [프랑스어](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) 분석기를 필요한 변경 사항으로 다시 구현하여 [사용자 지정 분석기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) 을 생성합니다(파이프라인의 추가 [동의어 그래프 토큰 필터](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-synonym-graph-tokenfilter.html) 포함).
+- 기본 [프랑스어](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) 분석기를 필요한 변경 사항으로 다시 구현하여 [사용자 지정 분석기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) 생성합니다(파이프라인의 추가 [동의어 그래프 토큰 필터](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-synonym-graph-tokenfilter.html) 포함).
 - 커넥터 구성의 추가 색인 구성을 사용하여 사용자 정의 분석기 정의를 색인 설정에 추가하십시오.
 - 커넥터 구성의 유형 매핑 재정의 설정을 사용하여 Liferay DXP의 기본 유형 매핑을 재정의하여 원하는 필드에 사용자 지정 분석기를 적용합니다.
 - 새 설정을 적용하려면 인덱스를 다시 지정하십시오.
@@ -134,7 +134,7 @@ Liferay DXP 번들에서 매핑을 얻으려면,
    }
    ```
 
-이 구성에 설정을 추가하면 기본 인덱스 설정에서 사용할 수 있는 설정이 증가합니다. 소스 코드의 `index-settings.json` 파일에서 기본 JSON 설정을 찾습니다. 여기서 새 필터 `my-synonym-filter-fr`을 사용하는 `custom_liferay_analyzer_fr` 이라는 새 분석기를 생성합니다. `동의어` 배열은 현재 비어 있습니다. UI를 통해 생성된 동의어 집합이 여기에 표시됩니다.
+이 구성에 설정을 추가하면 기본 인덱스 설정에서 사용할 수 있는 설정이 증가합니다. 소스 코드의 `index-settings.json` 파일에서 기본 JSON 설정을 찾습니다. 여기서 새 필터 `my-synonym-filter-fr`을 사용하는 `custom_liferay_analyzer_fr` 이라는 새 분석기를 만듭니다. `동의어` 배열은 현재 비어 있습니다. UI를 통해 생성된 동의어 집합이 여기에 표시됩니다.
 
 1. Override Type Mappings 필드를 사용하여 사용자 지정 분석기(`custom_liferay_analyzer_fr`)를 사용하도록 `template_fr` 동적 필드에 대한 분석기를 변경합니다. 
 
@@ -144,24 +144,27 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 
    ```json
     {
-    "LiferayDocumentType": {
-        "date_detection": false,
-        "dynamic_templates": [
-            // (...)
-            {
-                "template_fr": {
-                    "mapping": {
-                        "analyzer": "custom_liferay_analyzer_fr",
-                        "store": true,
-                        "term_vector": "with_positions_offsets",
-                        "type": "text"
-                    },
-                    "match": "\\w+_fr\\b|\\w+_fr_[A-Z]{2}\\b",
-                    "match_mapping_type": "string",
-                    "match_pattern": "regex"
-                }
-            },
-            // (...)
+     "date_detection": false,
+     "dynamic_templates": [
+         // (...)
+         {
+             "template_fr": {
+                 "mapping": {
+                     "analyzer": "custom_liferay_analyzer_fr",
+                     "store": true,
+                     "term_vector": "with_positions_offsets",
+                     "type": "text"
+                 },
+                 "match": "\\w+_fr\\b|\\w+_fr_[A-Z]{2}\\b",
+                 "match_mapping_type": "string",
+                 "match_pattern": "regex"
+             }
+         },
+         // (...)
+   ```
+
+   ```{note}
+   Liferay 7.4 U80 이하의 경우 JSON 파일의 시작 부분에 'LiferayDocumentType' 선언을 포함해야 합니다.
    ```
 
 여기서 중요한 변경 사항은 기본 할당 분석기(`french`)가 사용자 지정 분석기 `custom_liferay_analyzer_fr`으로 대체되었다는 것입니다.
@@ -178,9 +181,9 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 
 1. 전체 재색인 수행: 제어판 &rarr; 검색 &rarr; 색인 작업에서 **모든 검색 색인 재색인을 클릭합니다.**
    
-   사용자 지정 매핑이 성공적으로 적용되었는지 확인하려면 필드 매핑 탭으로 이동하여 인덱스(예: `liferay-20101`)를 선택하고 오른쪽 패널에서 `template_fr` 을 찾습니다.
+   사용자 지정 매핑이 성공적으로 적용되었는지 확인하려면 필드 매핑 탭으로 이동하여 인덱스(예: `liferay-20101`)를 선택하고 오른쪽 패널에서 `template_fr` 찾습니다.
    
-   사용자 지정 분석기를 포함한 추가 인덱스 설정도 추가되었는지 확인하려면 Elasticsearch에 다음 API 호출을 수행합니다. `http://<host>:<port>/liferay-[company-id]/_settings` 응답에서 분석기 이름을 찾습니다. 예를 들어 `localhost`에서 `20101`으로 실행 중인 Liferay DXP 서버의 사이드카 Elasticsearch 서버에 대한 인덱스 설정을 보려면 <http://localhost:9201/liferay-20101/_settings>를 방문하십시오.
+   사용자 지정 분석기를 포함한 추가 인덱스 설정도 추가되었는지 확인하려면 Elasticsearch에 다음 API 호출을 수행합니다. `http://<host>:<port>/liferay-[company-id]/_settings` 응답에서 분석기 이름을 찾습니다. 예를 들어 `localhost`에서 `20101`으로 실행 중인 Liferay DXP 서버의 사이드카 Elasticsearch 서버에 대한 인덱스 설정을 보려면 <http://localhost:9201/liferay-20101/_settings>방문하십시오.
 
 새 필터가 작동하는지 확인하려면 
 
@@ -188,7 +191,7 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 
 1. 새 동의어 집합 만들기: `maison, logement`.
 
-1. 영어 및 프랑스어 번역으로 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 **maison** 을 추가합니다.
+1. 영어 및 프랑스어 번역으로 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 **maison** 추가합니다.
 
 1. 영어 및 프랑스어 번역으로 또 다른 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 **logement** 을 추가합니다.
 

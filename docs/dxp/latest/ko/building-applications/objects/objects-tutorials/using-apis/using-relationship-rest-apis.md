@@ -347,7 +347,7 @@ REST API를 사용하여 개체 항목을 추가하고 해당 관계를 관리�
    }
    ```
 
-   nestedFields `매개변수에 대한 자세한 내용은 <a href="./using-nested-fields-with-rest-apis.md">REST API와 함께 중첩 필드 사용</a> 을` 하십시오.
+   `nestedFields` 매개변수에 대한 자세한 내용은 [ `nestedFields` 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md) 을 참조하십시오.
 
 ## 코드 검토
 
@@ -378,5 +378,5 @@ REST API를 사용하여 개체 항목을 추가하고 해당 관계를 관리�
 ## 관련 주제
 
 * [헤드리스 프레임워크 통합](../../understanding-object-integrations/headless-framework-integration.md)
-* [REST API에서 중첩 필드 사용](./using-nested-fields-with-rest-apis.md)
+* [REST API에서 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md)
 * [개체 관계 정의](../../creating-and-managing-objects/relationships/defining-object-relationships.md)

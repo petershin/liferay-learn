@@ -6,7 +6,7 @@
 
 더 이상 사용되지 않는 기능은 결국 제거되거나 더 새롭고 더 나은 기능으로 대체됩니다. 더 이상 사용되지 않는 기능에 대한 지원을 중단하기 전에 Liferay는 해당 기능을 **Deprecated** 로 표시합니다.
 
-**Deprecated:** 이 기능은 빠르면 다음 마이너 버전 릴리스부터 지원되지 않습니다. 예를 들어 7.4에서 더 이상 사용되지 않는 기능에 대한 지원은 7.5에서 일찍 중단될 수 있습니다.
+**Deprecated:** 이 기능은 빠르면 다음 마이너 버전 릴리스부터 지원되지 않습니다.
 
 ```{important}
 더 이상 사용되지 않는 기능은 빠르면 다음 마이너 릴리스에서 지원이 중단될 수 있으므로 사용 중지를 계획하십시오.
@@ -36,15 +36,15 @@
 
 | 특징                          | 가용도                         | 주                                                                                                                                                                                                                                                         |
 |:--------------------------- |:--------------------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 앱 빌더, 앱 빌더 워크플로             | 삭제됨                         | [Liferay 개체](../../../building-applications/objects.md)로 대체되었습니다.                                                                                                                                                                                         |
-| 부트스트랩 3 & 부트스트랩 4 호환성 계층    | 삭제됨                         | [테마 업그레이드](../../../site-building/site-appearance/themes/upgrading-a-theme.md) 중에 호환성 레이어 추가를 선택하거나 레이어를 수동으로 추가합니다.                                                                                                                                      |
+| 앱 빌더, 앱 빌더 워크플로우            | 삭제됨                         | [Liferay 개체](../../../building-applications/objects.md)로 대체되었습니다.                                                                                                                                                                                         |
+| 부트스트랩 3 & 부트스트랩 4 호환성 레이어   | 삭제됨                         | [테마 업그레이드](../../../site-building/site-appearance/themes/upgrading-a-theme.md) 중에 호환성 레이어 추가를 선택하거나 레이어를 수동으로 추가합니다.                                                                                                                                      |
 | 상거래 계정 위젯                   | 삭제됨                         | DXP/Portal 계정 위젯으로 대체됨                                                                                                                                                                                                                                    |
 | 중앙 인증 서비스(CAS)              | 보관하는                        | 7.2에서 더 이상 사용되지 않습니다. SAML, OpenID Connect 및 토큰 기반 SSO를 비롯한 다른 솔루션으로 대체됩니다.                                                                                                                                                                               |
 | 상업 카테고리 탐색 위젯               | 번들                          | [디스플레이 페이지 템플릿으로 교체](../../../site-building/displaying-content/using-display-page-templates.md) [메뉴 디스플레이](../../../site-building/site-navigation/configuring-menu-displays.md) 지원.                                                                       |
 | 상거래 BOM(Bill of Materials)  | 삭제됨                         | Shop By Diagram으로 대체됩니다.                                                                                                                                                                                                                                  |
 | 상거래 카테고리 콘텐츠 위젯             | 번들                          | [디스플레이 페이지 템플릿](../../../site-building/displaying-content/using-display-page-templates.md)로 대체되었습니다.                                                                                                                                                      |
 | 다이제스트 인증                    | 번들                          | 다이제스트 인증에는 취약한 암호 해시 저장소가 필요하며 이는 취약점입니다.                                                                                                                                                                                                                 |
-| 동적 데이터 목록                   | 번들                          | 7.3에서 더 이상 사용되지 않습니다. [Liferay Objects](../../../building-applications/objects.md)로 대체됩니다.                                                                                                                                                                |
+| 다이나믹 데이터 목록                 | 번들                          | 7.3에서 더 이상 사용되지 않습니다. [Liferay Objects](../../../building-applications/objects.md)로 대체됩니다.                                                                                                                                                                |
 | EXT 플러그인 지원                 | 삭제됨                         | 구성 설정 및 표준 확장 지점으로 대체되었습니다.                                                                                                                                                                                                                               |
 | 이미지 편집기(Soy 기반)             | 삭제됨                         | React 기반 이미지 편집기로 대체되었습니다.                                                                                                                                                                                                                                |
 | 구글 로그인/SSO                  | 보관하는                        | 7.2에서 더 이상 사용되지 않습니다. SAML, OpenID Connect 및 토큰 기반 SSO를 비롯한 다른 솔루션으로 대체됩니다.                                                                                                                                                                               |
@@ -65,7 +65,7 @@
 이전 버전에서 업그레이드하는 경우 이전 Liferay 버전에서 더 이상 사용되지 않는 기능도 고려해야 할 수 있습니다.
 
 * [7.3 지원 중단 및 유지 관리 모드로 이동한 기능](./maintenance-mode-and-deprecations-in-7-3.md)
-* [7.2 지원 중단 및 유지 관리 모드로 이동된 기능](./maintenance-mode-and-deprecations-in-7-2.md)
+* [7.2 지원 중단 및 유지 관리 모드로 이동한 기능](./maintenance-mode-and-deprecations-in-7-2.md)
 * [7.1 지원 중단](https://help.liferay.com/hc/ko/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
 * [7.0 지원 중단](https://help.liferay.com/hc/ko/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 

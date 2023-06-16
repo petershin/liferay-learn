@@ -1,6 +1,6 @@
 # 검색 관리
 
-*제어판* &rarr; *구성* &rarr; *검색* 에는 세 가지 관리 UI(연결, 색인 작업 및 필드 매핑)가 있습니다. Connections는 설치가 연결된 검색 엔진을 보여주고, Index Actions는 재인덱싱을 위한 인터페이스이며, Field Mappings는 Liferay에서 검색 인덱스로 매핑된 필드를 표시합니다.
+**제어판** &rarr; **구성** &rarr; **검색** 에는 세 가지 관리 UI(연결, 색인 작업 및 필드 매핑)가 있습니다. Connections는 설치가 연결된 검색 엔진을 보여주고, Index Actions는 재인덱싱을 위한 인터페이스이며, Field Mappings는 Liferay에서 검색 인덱스로 매핑된 필드를 표시합니다.
 
 ![검색 관리 패널에는 세 개의 관리 화면이 있습니다.](./search-administration/images/02.png)
 

@@ -9,7 +9,7 @@ Liferay의 **Kaleo Forms** 솔루션은 **Workflow Designer** 과 **Dynamic Data
 * [Kaleo 양식](#kaleo-forms)
   * [Kaleo Forms 프로세스 생성](#creating-a-kaleo-forms-process)
   * [Kaleo 양식 프로세스 사용](#using-a-kaleo-forms-process)
-  * [추가 정보](#additional-information)
+  * [관련 주제](#related-topics)
 
 ## Kaleo Forms 프로세스 생성
 
@@ -39,11 +39,11 @@ Liferay의 **Kaleo Forms** 솔루션은 **Workflow Designer** 과 **Dynamic Data
 
    기존에 게시된 워크플로에서 선택하거나 새 워크플로를 생성할 수 있습니다.
 
-   * 게시된 기존 워크플로를 선택하려면 **작업** 버튼 ![Actions Button](../../../images/icon-actions.png)을 클릭하고 **선택** 선택합니다. **편집** 을 선택하여 워크플로를 선택하기 전에 수정할 수도 있습니다.
+   * 게시된 기존 워크플로를 선택하려면 **작업** 버튼 ![Actions Button](../../../images/icon-actions.png)을 클릭하고 **선택** 선택합니다. **편집** 을 선택하여 워크플로우를 선택하기 전에 수정할 수도 있습니다.
 
    * 새 워크플로를 만들려면 **워크플로 추가** 클릭하고 원하는 요소를 통합합니다. 자세한 내용은 [워크플로우 디자이너 개요](../../workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview.md) 을 참조하십시오. 완료되면 **게시** 클릭하고 대화 창을 닫아 선택할 수 있는 사용 가능한 워크플로 목록을 업데이트합니다.
 
-   워크플로우를 선택했으면 **다음** 클릭합니다.
+   워크플로를 선택했으면 **다음** 클릭합니다.
 
    ![새 프로세스의 양식에 사용할 워크플로를 선택하고 다음을 클릭합니다.](./kaleo-forms/images/03.png)
 

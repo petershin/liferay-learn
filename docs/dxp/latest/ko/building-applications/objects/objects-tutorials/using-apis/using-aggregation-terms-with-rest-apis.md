@@ -2,9 +2,9 @@
 
 REST API를 사용하여 개체 항목을 쿼리할 때 개체의 필드를 항목 데이터 집계를 위한 패싯 기준으로 사용할 수 있습니다. 이렇게 하려면 `aggregationTerms` 매개변수를 GET 요청에 추가하고 패싯 기준으로 사용할 데이터 필드를 지정하십시오. 이러한 기준에는 사용자 정의 필드, 기본 시스템 필드 또는 관계 필드가 포함될 수 있습니다. 그런 다음 요청 응답은 지정된 데이터 패싯을 단일 `패싯` 블록으로 그룹화합니다.
 
-여기서는 기본 사용자 지정 객체와 함께 `aggregatedTerms` 매개변수를 사용합니다.
+여기서는 기본 사용자 정의 객체와 함께 `aggregatedTerms` 매개변수를 사용합니다.
 
-진행하기 전에 새 Liferay DXP/Portal 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance) 하고 제공된 자습서 코드를 [준비](#preparing-the-sample-code) 하십시오.
+진행하기 전에 [설정](#setting-up-a-liferay-instance) 새 Liferay DXP/Portal 7.4 인스턴스 및 [준비](#preparing-the-sample-code) 제공된 튜토리얼 코드.
 
 ## Liferay 인스턴스 설정
 
@@ -20,21 +20,21 @@ REST API를 사용하여 개체 항목을 쿼리할 때 개체의 필드를 항�
     | 필드 | 가치 |
     | :--- | :--- |
     | 라벨 | '가능' |
-    | 복수 레이블 | '에이블스' |
+    | 복수 라벨 | '에이블스' |
     | 이름 | '가능' |
 
 1. 새 **개체** 초안을 선택하고 **필드** 탭으로 이동한 후 다음 텍스트 필드를 추가합니다.
 
-    | 라벨 | 필드명 | 유형 | 필수 |
+    | 라벨 | 필드 이름 | 유형 | 필수 |
     | :--- | :--- | :--- | :--- |
     | 이름 | 이름 | 텍스트 | &#10004; |
-    | 설명 | 설명 | 텍스트 | |
+    | 설명 | 설명 | 텍스트 |  |
 
 1. **세부 정보** 탭으로 이동하고 [**게시**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 를 클릭합니다.
 
-    ```{important}
-    이 자습서에서는 위의 값을 사용해야 합니다.
-    ```
+   ```{important}
+   이 자습서에서는 위의 값을 사용해야 합니다.
+   ```
 
 게시되면 헤드리스 API를 통해 개체에 액세스할 수 있습니다.
 
@@ -54,7 +54,7 @@ unzip liferay-b3x5.zip
 
 | HTTP 방법 | HTTP 끝점  | 묘사                                                                       |
 |:------- |:-------- |:------------------------------------------------------------------------ |
-| 가져 오기   | `/`      | Liferay 인스턴스의 전체 객체 항목 목록을 반환합니다. 결과에 페이지를 매기고, 필터링하고, 검색하고, 정렬할 수 있습니다. |
+| 얻다      | `/`      | Liferay 인스턴스의 전체 객체 항목 목록을 반환합니다. 결과에 페이지를 매기고, 필터링하고, 검색하고, 정렬할 수 있습니다. |
 | 우편      | `/batch` | API 호출에 제공된 세부 정보를 사용하여 여러 객체 항목을 생성합니다.                                 |
 
 ## 샘플 코드 사용
@@ -65,7 +65,7 @@ unzip liferay-b3x5.zip
    cd liferay-b3x5/curl
    ```
 
-1. `Ables_POST_Batch`을 실행합니다. 이렇게 하면 여러 개체 항목이 생성됩니다.
+1. `Ables_POST_Batch`실행합니다. 이렇게 하면 여러 개체 항목이 생성됩니다.
 
    ```bash
    ./Ables_POST_Batch.sh
@@ -90,9 +90,9 @@ unzip liferay-b3x5.zip
    }
    ```
 
-1. `Ables_GET_FromCompany` 을 실행하여 `aggregatedTerms` 매개변수로 생성된 모든 항목의 목록을 반환합니다.
+1. `Ables_GET_FromCompany` 실행하여 `aggregatedTerms` 매개변수로 생성된 모든 항목의 목록을 반환합니다.
 
-   응답에는 2개의 패싯 기준( `dateModified` 및 `description`)이 있는 `패싯` 블록이 포함되어야 합니다.
+   응답에는 2개의 패싯 기준( `dateModified` 및 `description`이 있는 `패싯` 블록이 포함되어야 합니다.
 
    ```bash
    ...
@@ -150,10 +150,10 @@ unzip liferay-b3x5.zip
    :language: bash
 ```
 
-이 배치 GET 메소드에는 2개의 값( `dateModified` 및 `description`)이 있는 `aggregationTerms` URL 매개변수가 포함됩니다. 이는 요청 응답의 개체 항목에서 데이터를 집계하는 데 사용되는 패싯 기준을 결정합니다.
+이 배치 GET 메소드에는 2개의 값( `dateModified` 및 `description`이 있는 `aggregationTerms` URL 매개변수가 포함됩니다. 이는 요청 응답의 개체 항목에서 데이터를 집계하는 데 사용되는 패싯 기준을 결정합니다.
 
 ## 관련 주제
 
 * [개체 API 기본 사항](./object-api-basics.md)
 * [배치 API 사용](./using-batch-apis.md)
-* [REST API에서 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md)
+* [`nestedFields` 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md)

@@ -62,15 +62,15 @@ Liferay 제어판을 통해 새 SharePoint OAuth2 구성을 추가하려면 다�
 
    ![제어판에서 시스템 설정 > 문서 & 미디어 > SharePoint OAuth 2로 이동합니다.](./enabling-liferays-rest-connector-to-sharepoint/images/01.png)
 
-1. **추가** 을 클릭하여 새 SharePoint OAuth2 구성 항목을 만듭니다.
+1. **추가** 클릭하여 새 SharePoint OAuth2 구성 항목을 만듭니다.
 
 1. 양식을 작성하십시오(아래 참조).
 
-1. 완료되면 **저장** 을 클릭합니다.
+1. 완료되면 **저장** 클릭합니다.
 
 **이름** : 구성의 이름
 
-**권한 부여 끝점** : OAuth2 권한 부여를 요청하는 데 사용되는 URL(예: SharePoint Online의 경우 `https://[your-site-name]/sharepoint.com/_layouts/oauthauthorize.aspx`)
+**권한 부여 끝점** : OAuth2 권한 부여를 요청하는 데 사용되는 URL(예: SharePoint Online의 경우 `https://[your-site-name].sharepoint.com/_layouts/oauthauthorize.aspx`)
 
 **인증 토큰 엔드포인트** : ACS URL(예: SharePoint Online의 경우 `https://accounts.accesscontrol.windows.net/[App ID]/tokens/OAuth/2`)
 
@@ -98,13 +98,13 @@ SharePoint를 사용하면 사용자 지정 소스 ID를 정의하여 검색 결
 
    ![제어판에서 시스템 설정 > 문서 & 미디어 > SharePoint OAuth 2로 이동합니다.](./enabling-liferays-rest-connector-to-sharepoint/images/02.png)
 
-1. **추가** 을 클릭하여 새 SharePoint 검색 구성 항목을 만듭니다.
+1. **추가** 클릭하여 새 SharePoint 검색 구성 항목을 만듭니다.
 
    ![추가를 클릭하여 새 SharePoint 검색 구성 항목을 만듭니다.](./enabling-liferays-rest-connector-to-sharepoint/images/03.png)
 
 1. 새 항목에 대한 사용자 지정 SharePoint 결과 SourceID를 입력합니다.
 
-1. 완료되면 **저장** 을 클릭합니다.
+1. 완료되면 **저장** 클릭합니다.
 
 ## 관련 주제
 

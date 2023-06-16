@@ -68,7 +68,7 @@ CSS 클라이언트 확장은 페이지에 새로운 CSS 스타일을 도입합�
 type: globalCSS
 ```
 
-시작하려면 [CSS 클라이언트 확장 사용](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) 참조하십시오.
+시작하려면 [CSS 클라이언트 확장 사용하기](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) 을 참조하십시오.
 
 ## 테마 JavaScript 클라이언트 확장
 
@@ -86,14 +86,14 @@ type: themeJS
 
 {bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
-[CSS 클라이언트 확장](#css-client-extensions) 이 페이지에 스타일을 추가하는 동안 테마 CSS 클라이언트 확장은 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)을 포함하여 페이지의 스타일을 재정의합니다. . 클라이언트 확장은 `clay.css` 파일과 `main.css` 파일을 사용하여 사이트 테마에서 일반적으로 사용되는 동일한 이름의 파일을 대체합니다.
+[CSS 클라이언트 확장](#css-client-extensions) 페이지에 스타일을 추가하지만 테마 CSS 클라이언트 확장은 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)을 포함하여 페이지의 스타일을 재정의합니다. 클라이언트 확장은 `clay.css` 파일과 `main.css` 파일을 사용하여 사이트 테마에서 일반적으로 사용되는 동일한 이름의 파일을 대체합니다.
 
-이 유형의 클라이언트 확장은 Liferay 애플리케이션 메뉴의 **클라이언트 확장** 에서 옵션으로 추가할 수 있습니다.
+Liferay 애플리케이션 메뉴의 **클라이언트 확장** 에서 이 유형의 클라이언트 확장을 옵션으로 추가할 수 있습니다.
 
-![Add a theme CSS client extension to replace CSS provided by your site's theme.](./front-end-client-extensions/images/01.png)
+![사이트 테마에서 제공하는 CSS를 대체할 테마 CSS 클라이언트 확장을 추가합니다.](./front-end-client-extensions/images/01.png)
 
 ```{note}
-이 유형의 클라이언트 확장을 사용하려면 `clay.css` 및 `main.css` 파일을 원격으로 호스트해야 합니다.
+이 유형의 클라이언트 확장을 사용하려면 `clay.css` 및 `main.css` 파일을 원격으로 호스팅해야 합니다.
 ```
 
 `client-extension.yaml` 파일에서 테마 CSS 클라이언트 확장을 지정합니다.

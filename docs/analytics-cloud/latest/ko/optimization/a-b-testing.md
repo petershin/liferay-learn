@@ -4,7 +4,7 @@ A/B 테스트는 페이지의 여러 버전을 한 번에 테스트하여 콘텐
 
 Liferay DXP의 [A/B 테스트](https://learn.liferay.com/dxp/latest/ko/site-building/optimizing-sites/ab-testing/ab-testing.html) 에서 A/B 테스트 생성 및 콘텐츠 페이지 구성에 대해 자세히 알아볼 수 있습니다.
 
-Analytics Cloud는 Liferay DXP에서 실행되는 A/B 테스트의 모든 결과를 추적합니다. 생성된 테스트는 관리할 수 있는 Analytics Cloud와 자동으로 동기화됩니다. 작성, 실행, 종료 및 완료된 A/B 테스트를 보려면 왼쪽 열의 *테스트* 메뉴로 이동하십시오.
+Analytics Cloud는 Liferay DXP에서 실행되는 A/B 테스트의 모든 결과를 추적합니다. 생성된 테스트는 관리할 수 있는 Analytics Cloud와 자동으로 동기화됩니다. 작성, 실행, 종료 및 완료된 A/B 테스트를 보려면 왼쪽 열의 **테스트** 메뉴로 이동하십시오.
 
 ![테스트 메뉴에는 사이트에 대해 생성되고 정의된 모든 A/B 테스트가 표시됩니다.](a-b-testing/images/01.png)
 
@@ -72,7 +72,7 @@ A/B 테스트는 항상 시작된 후 상태로 특징지어집니다. 여기에
 
 ![현재 최상의 변형을 볼 수 있지만 테스트가 실행 중입니다.](a-b-testing/images/06.png)
 
-테스트가 실행 중일 때 요약 표시줄에서 *테스트* 종료를 선택하여 테스트를 종료할 수 있습니다.
+테스트가 실행 중일 때 요약 표시줄에서 **테스트** 종료를 선택하여 테스트를 종료할 수 있습니다.
 
 ![실행 중인 테스트를 종료하려면 테스트 종료를 클릭합니다.](a-b-testing/images/07.png)
 

@@ -6,7 +6,7 @@
 
 더 이상 사용되지 않는 기능은 결국 제거되거나 더 새롭고 더 나은 기능으로 대체됩니다. 더 이상 사용되지 않는 기능에 대한 지원을 중단하기 전에 Liferay는 해당 기능을 **Deprecated** 로 표시합니다.
 
-**Deprecated:** 이 기능은 빠르면 다음 마이너 버전 릴리스부터 지원되지 않습니다. 예를 들어 7.2에서 더 이상 사용되지 않는 기능에 대한 지원은 7.3에서 일찍 중단될 수 있습니다.
+**Deprecated:** 이 기능은 빠르면 다음 마이너 버전 릴리스부터 지원되지 않습니다.
 
 ```{important}
 더 이상 사용되지 않는 기능은 빠르면 다음 마이너 릴리스에서 지원이 중단될 수 있으므로 사용 중지를 계획하십시오.
@@ -54,7 +54,7 @@ Liferay 7.0 이하에서 업그레이드하는 경우 해당 릴리스에서 발
 | OAuth 1.0a               | 마켓플레이스 | 번들에 포함된 OAuth 2.0으로 대체되었습니다.                                                                                                                                                                                                                              |
 | OpenAM / OpenSSO         | 번들     | [SAML 기반 인증으로 마이그레이션](../../securing-liferay/configuring-sso/authenticating-with-saml.md).                                                                                                                                                                |
 | OpenID                   | 마켓플레이스 | [OpenID Connect](../../securing-liferay/configuring-sso/using-openid-connect.md)로 대체되었습니다.                                                                                                                                                                |
-| 자원 수입업자                  | 번들     | 직접 대체 없이 7.1부터 사용되지 않음                                                                                                                                                                                                                                    |
+| 자원 수입업자                  | 번들     | 직접 교체 없이 7.1부터 사용되지 않음                                                                                                                                                                                                                                    |
 | RSS 게시자                  | 번들     | 이 위젯 활성화 및 사용에 대한 [기사](https://help.liferay.com/hc/ko/articles/360028820672-The-RSS-Publisher-Widget) 참조하십시오.                                                                                                                                          |
 | **도구** 카테고리의 검색 위젯(클래식)    | 번들     | 7.1에서 더 이상 사용되지 않습니다. **검색** 범주에서 [검색 위젯](../../../using-search/search-pages-and-widgets/search-results/search-results.md) 로 대체되었습니다.                                                                                                                       |
 | 스프라이트 프레임워크              | 번들     | Liferay의 이미지 스프라이트 프레임워크는 더 이상 사용되지 않으며 `sprite.enabled` [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 통해 기본적으로 비활성화됩니다. 여전히 원하는 프레임워크를 사용하여 이미지 스프라이트를 빌드하고 플러그인에 배포할 수 있습니다.               |

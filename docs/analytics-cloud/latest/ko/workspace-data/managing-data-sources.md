@@ -1,6 +1,6 @@
 # 데이터 소스 관리
 
-Liferay DXP [을 작업 공간에 연결](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) 후 설정 페이지에서 보고 변경할 수 있습니다. **설정** &rarr; **작업 공간 데이터** &rarr; **데이터 소스** 로 이동합니다.
+Liferay DXP [](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) 작업 공간에 연결한 후 설정 페이지에서 보고 변경할 수 있습니다. **설정** &rarr; **작업 공간 데이터** &rarr; **데이터 소스** 로 이동합니다.
 
 ![설정에서 연결된 데이터 소스 목록을 확인하세요.](./managing-data-sources/images/01.png)
 
@@ -21,7 +21,3 @@ DXP 인스턴스를 작업 공간에서 연결 해제하도록 선택한 경우 
 **동기화된 사이트:** DXP 사이트와 Analytics Cloud의 동기화 상태를 표시합니다. 구성하려면 [속성에 사이트 동기화](../workspace-settings/scoping-sites-and-individuals-using-properties.md#syncing-sites-to-a-property) 을 참조하십시오.
 
 **동기화된 연락처:** Analytics Cloud와의 DXP 연락처 동기화 상태를 보여줍니다. 구성하려면 [속성에 연락처 동기화 참조](../workspace-settings/scoping-sites-and-individuals-using-properties.md#syncing-contacts-to-a-property)
-
-## 데이터 소스 삭제
-
-데이터 소스를 삭제하려면 페이지 우측 상단의 **데이터 소스 삭제** 버튼을 클릭합니다. 확인하라는 메시지가 표시됩니다. 데이터 소스를 삭제하면 연결이 제거되고 모든 동기화된 데이터가 삭제됩니다.

@@ -86,7 +86,7 @@
 
 ## 용어 정의 참조
 
-참조 용어를 사용하여 사용자 및 항목 데이터에 액세스하고 템플릿의 필드를 동적으로 채울 수 있습니다. [알림 작업](../../building-applications/objects/creating-and-managing-objects/actions/understanding-action-types.md#notification)을 트리거하는 이벤트에 관련된 모든 항목 및 사용자를 참조할 수 있습니다.
+참조 용어를 사용하여 사용자 및 항목 데이터에 액세스하고 템플릿의 필드를 동적으로 채울 수 있습니다. [알림 작업](../../building-applications/objects/creating-and-managing-objects/actions/understanding-action-types.md#notification) 을 트리거하는 이벤트에 관련된 모든 항목 및 사용자를 참조할 수 있습니다.
 
 사용자 시스템 개체와의 일대다 관계의 하위 쪽에 있는 사용자 지정 티켓 개체가 있는 시나리오를 고려하십시오. 이 관계는 티켓 담당자를 결정합니다. 입장 업데이트 시 담당자에게 알리기 위해 티켓 개체에 알림 작업을 추가하면 이 작업에 사용되는 템플릿이 업데이트된 티켓과 담당자 모두에 대한 데이터에 액세스할 수 있습니다.
 

@@ -7,9 +7,9 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-LiferAy가 실행되면
+Liferay가 실행되면,
 
-1. [옵션 API 기본 사항](./liferay-d3g5.zip) 을 다운로드하여 압축을 풉니다.
+1. [옵션 API 기본 사항](./liferay-d3g5.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-d3g5.zip -O
@@ -59,7 +59,7 @@ LiferAy가 실행되면
    }
    ```
 
-1. 옵션 추가를 확인하려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **상거래** &rarr; **옵션** 으로 이동합니다. 새 옵션이 나타납니다.
+1. 옵션 추가를 확인하려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **옵션** 으로 이동합니다. 새 옵션이 나타납니다.
 
    ![새 옵션이 추가되었는지 확인합니다.](./option-api-basics/images/01.png)
 
@@ -115,7 +115,7 @@ LiferAy가 실행되면
 
 `Option_POST_ToInstance.java` 클래스는 `OptionResource` 서비스를 호출하여 옵션을 추가합니다.
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_POST_ToInstance.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_POST_ToInstance.java
    :dedent: 1
    :language: java
    :lines: 11-31
@@ -125,7 +125,7 @@ LiferAy가 실행되면
 
 | 라인(약칭)                                                                 | 묘사                                                    |
 |:---------------------------------------------------------------------- |:----------------------------------------------------- |
-| `OptionResource.Builder builder = ...`                                 | `OptionResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.        |
+| `OptionResource.Builder builder = ...`                                 | `OptionResource` 서비스 인스턴스를 생성하기 위해 `빌더` 가져옵니다.        |
 | `OptionResource optionResource = builder.authentication(...).build();` | 기본 인증을 사용하고 `OptionResource` 서비스 인스턴스를 생성합니다.         |
 | `optionResource.postOption(...);`                                      | `optionResource.postOption` 메서드를 호출하고 데이터를 게시에 전달합니다. |
 
@@ -138,7 +138,7 @@ LiferAy가 실행되면
 나머지 예제 Java 클래스는 서로 다른 `OptionResource` 메서드를 호출합니다.
 
 ```{important}
-[OptionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java) 를 참조하십시오.
+[OptionResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java)를 참조하십시오.
 ```
 
 다음은 cURL과 Java를 사용하여 다른 `옵션` REST 서비스를 호출하는 예입니다.
@@ -157,7 +157,7 @@ cURL 또는 Java 명령을 사용하여 Liferay 인스턴스의 모든 옵션을
 
 부호:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Options_GET_FromInstance.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Options_GET_FromInstance.sh
    :language: bash
 ```
 
@@ -171,7 +171,7 @@ java -classpath .:* Options_GET_FromInstance
 
 부호:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Options_GET_FromInstance.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Options_GET_FromInstance.java
    :dedent: 1
    :language: java
    :lines: 11-22
@@ -192,10 +192,10 @@ java -classpath .:* Options_GET_FromInstance
 | `name eq 'Able'`        | 옵션 이름은 Able과 같아야 합니다. |
 | `fieldType eq 'select'` | 옵션 유형은 선택해야 합니다.      |
 
-| 쿼리 정렬       | 묘사                    |
-|:----------- |:--------------------- |
-| `key:desc`  | 키를 기준으로 내림차순으로 정렬합니다. |
-| `name:desc` | 내림차순으로 이름별로 정렬합니다.    |
+| 쿼리 정렬       | 묘사                     |
+|:----------- |:---------------------- |
+| `key:desc`  | 내림차순으로 키를 기준으로 정렬합니다.  |
+| `name:desc` | 내림차순으로 이름을 기준으로 정렬합니다. |
 
 자세한 내용은 [API 쿼리 매개변수](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/api-query-parameters.html) 참조하세요.
 
@@ -217,7 +217,7 @@ cURL 또는 Java `get` 명령을 사용하여 특정 옵션을 가져옵니다. 
 
 부호:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Option_GET_ById.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_GET_ById.sh
    :language: bash
 ```
 
@@ -231,7 +231,7 @@ java -classpath .:* -DoptionId=1234 Option_GET_ById
 
 부호:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_GET_ById.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_GET_ById.java
    :dedent: 1
    :language: java
    :lines: 8-18
@@ -253,7 +253,7 @@ cURL 및 Java `패치` 명령으로 기존 옵션을 업데이트합니다. `123
 
 부호:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Option_PATCH_ById.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_PATCH_ById.sh
    :language: bash
 ```
 
@@ -267,7 +267,7 @@ java -classpath .:* -DoptionId=1234 Option_PATCH_ById
 
 부호:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_PATCH_ById.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_PATCH_ById.java
    :dedent: 1
    :language: java
    :lines: 11-31
@@ -287,7 +287,7 @@ cURL 및 Java `delete` 명령을 사용하여 기존 옵션을 삭제합니다. 
 
 부호:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Option_DELETE_ById.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_DELETE_ById.sh
    :language: bash
 ```
 
@@ -301,7 +301,7 @@ java -classpath .:* -DoptionId=1234 Option_DELETE_ById
 
 부호:
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_DELETE_ById.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_DELETE_ById.java
    :dedent: 1
    :language: java
    :lines: 8-17

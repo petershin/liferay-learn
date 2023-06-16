@@ -51,7 +51,7 @@ Elasticsearch에 대해 구성 가능한 항목이 있으면 Elasticsearch 커�
 
 {bdg-link-warning}`재색인 필요`
 
-`additionalTypeMappings` 각 [회사 및 시스템 인덱스](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) (즉, 각 Liferay 가상 인스턴스의 인덱스)에 데이터를 인덱싱하기 위한 추가 매핑을 정의합니다. 인덱스가 생성될 때 적용됩니다. JSON 구문을 사용하여 매핑을 추가합니다. 자세한 내용은 [여기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping.html) , [여기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-put-mapping.html) 참조하십시오. 새 필드(속성`개`) 매핑 및 새 동적 템플릿에 대해 `additionalTypeMappings` 을 사용하되 기존 매핑을 재정의하지 마십시오. 여기에 설정된 매핑이 기존 매핑과 겹치는 경우 인덱스 생성이 실패합니다. `overrideTypeMappings` 사용하여 기본 매핑을 바꿉니다.
+`additionalTypeMappings` 각 [회사 및 시스템 인덱스](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) (즉, 각 Liferay 가상 인스턴스의 인덱스)에 데이터를 인덱싱하기 위한 추가 매핑을 정의합니다. 인덱스가 생성될 때 적용됩니다. JSON 구문을 사용하여 매핑을 추가합니다. 자세한 내용은 [여기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping.html) , [여기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-put-mapping.html) 참조하세요. 새 필드(속성`개`) 매핑 및 새 동적 템플릿에 대해 `additionalTypeMappings` 을 사용하되 기존 매핑을 재정의하지 마십시오. 여기에 설정된 매핑이 기존 매핑과 겹치는 경우 인덱스 생성이 실패합니다. `overrideTypeMappings` 사용하여 기본 매핑을 바꿉니다.
 
 동적 템플릿과 마찬가지로 Liferay의 유형 매핑에 하위 필드 매핑을 추가할 수 있습니다. 이를 Elasticsearch에서는 [속성](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/properties.html) 이라고 합니다.
 
@@ -59,16 +59,19 @@ Elasticsearch에 대해 구성 가능한 항목이 있으면 Elasticsearch 커�
 
 ```json
 { 
-    "LiferayDocumentType": {  
-        "properties": {   
-            "fooName": {
-                "index": "true",
-                "store": "true",
-                "type": "keyword"
-            }
-        }   
-    }
+     "properties": {
+         "fooName": {
+             "index": "true",
+             "store": "true",
+             "type": "keyword"
+         }
+     }
 }
+```
+
+
+```{note}
+Liferay 7.4 U80 이하의 경우 JSON 파일의 시작 부분에 `LiferayDocumentType` 선언을 포함해야 합니다.
 ```
 
 추가 매핑이 Liferay 매핑에 추가되었는지 확인하려면 추가 사항을 저장하고 다시 인덱싱한 후 `curl` 사용하여 이 URL에 액세스하십시오.
@@ -77,7 +80,7 @@ Elasticsearch에 대해 구성 가능한 항목이 있으면 Elasticsearch 커�
 curl http://[HOST]:[ES_PORT]/liferay-[COMPANY_ID]/_mapping?pretty
 ```
 
-다음은 Liferay 회사 ID가 `20116`인 `localhost:9200`에서 실행되는 Elasticsearch 인스턴스의 모습입니다.
+다음은 Liferay Company ID가 `20116`인 `localhost:9200`에서 실행되는 Elasticsearch 인스턴스의 모습입니다.
 
 ```bash
 curl http://localhost:9200/liferay-20116/_mapping?pretty
@@ -93,7 +96,7 @@ Elasticsearch의 필드 데이터 유형에 대한 자세한 내용은 [here](ht
 
 {bdg-link-warning}`재색인 필요`
 
-`overrideTypeMappings` 사용하여 Liferay의 기본 유형 매핑을 재정의하고 데이터가 [회사 및 시스템 색인](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)으로 색인화되는 방식을 제어합니다. 꼭 필요한 경우에만 사용해야 하는 고급 기능입니다. 이 값을 설정하면 Liferay 소스 코드에서 Liferay 문서 유형을 정의하는 데 사용되는 기본 매핑(예: `liferay-type-mappings.json`)이 완전히 무시되므로 이 속성에 전체 매핑 정의를 포함하십시오. 수정 중인 세그먼트.
+`overrideTypeMappings` 사용하여 Liferay의 기본 유형 매핑을 재정의하고 데이터가 [회사 및 시스템 색인](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)으로 색인화되는 방식을 제어합니다. 꼭 필요한 경우에만 사용해야 하는 고급 기능입니다. 이 값을 설정하면 Liferay 소스 코드의 기본 매핑(예: `liferay-type-mappings.json`)이 완전히 무시되므로 수정하려는 세그먼트뿐만 아니라 이 속성에 전체 매핑 정의를 포함합니다.
 
 수정하려면 URL로 이동하여 인덱스를 만드는 데 사용되는 현재 매핑의 전체 목록을 찾으십시오.
 
@@ -115,32 +118,34 @@ http://[HOST]:[ES_PORT]/liferay-[COMPANY_ID]/_mapping?pretty
 }
 ```
 
-이제 원하는 매핑을 수정하십시오. 변경 사항을 저장하고 [Server Administration](../../../system-administration/using-the-server-administration-panel.md)에서 재색인을 트리거하면 변경 사항이 적용됩니다.
+이제 원하는 매핑을 수정하십시오. 변경 사항을 저장하고 [Server Administration](../../../system-administration/using-the-server-administration-panel.md)에서 재인덱싱을 트리거하면 변경 사항이 적용됩니다.
 
 다음은 `_ja`로 끝나는 모든 문자열 필드를 분석하기 위해 `additionalIndexConfigurations` 의 분석 구성을 사용하는 [동적 템플릿](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/dynamic-templates.html) 보여주는 부분적인 예입니다. 이를 다른 모든 기본 매핑에 포함하고 제공된 `template_ja` 을 다음 사용자 지정 매핑으로 바꿉니다.
 
 ```json
 {
-    "LiferayDocumentType": {
-        "dynamic_templates": [
-            {
-                "template_ja": {
-                    "mapping": {
-                        "analyzer": "kuromoji_liferay_custom",
-                        "index": "analyzed",
-                        "store": "true",
-                        "term_vector": "with_positions_offsets",
-                        "type": "string"
-                    },
-                    "match": "\\w+_ja\\b|\\w+_ja_[A-Z]{2}\\b",
-                    "match_mapping_type": "string",
-                    "match_pattern": "regex"
-                }
-                ...
-            }
-        ]
-    }
+     "dynamic_templates": [
+         {
+             "template_ja": {
+                 "mapping": {
+                     "analyzer": "kuromoji_liferay_custom",
+                     "index": "analyzed",
+                     "store": "true",
+                     "term_vector": "with_positions_offsets",
+                     "type": "string"
+                 },
+                 "match": "\\w+_ja\\b|\\w+_ja_[A-Z]{2}\\b",
+                 "match_mapping_type": "string",
+                 "match_pattern": "regex"
+             }
+             ...
+         }
+     ]
 }
+```
+
+```{note}
+Liferay 7.4 U80 이하의 경우 JSON 파일의 시작 부분에 'LiferayDocumentType' 선언을 포함해야 합니다.
 ```
 
 ### 개발 모드 Elasticsearch에 구성 추가

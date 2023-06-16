@@ -103,4 +103,4 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 
 * [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
 * [API 사용](../objects-tutorials/using-apis.md)
-<!--TASK: * \[Consuming GraphQL APIs\](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->
+<!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

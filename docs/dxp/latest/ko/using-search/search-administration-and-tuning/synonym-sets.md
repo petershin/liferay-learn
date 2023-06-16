@@ -76,7 +76,7 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 소스 코드에서 매핑을 가져오려면 [Liferay DXP 소스 코드 액세스](https://help.liferay.com/hc/ko/articles/360045389291) 가 있는 경우,
 
 1. 소스 코드 저장소에 대한 액세스 권한이 있으면 위 문서의 단계에 따라 수정팩 레벨에 대한 태그를 찾으십시오.
-1. `module/apps/portal-search-elasticsearch(6 또는 7)/portal-search-elasticsearch(6 또는 7)-impl/src/main/resources/META-INF/mappings`로 이동합니다.
+1. `modules/apps/portal-search-elasticsearch(6 or 7)/portal-search-elasticsearch(6 or 7)-impl/src/main/resources/META-INF/mappings`로 이동합니다.
 1. 여기에서 언급된 JSON 파일(`liferay-type-mappings.json`)을 찾을 수 있습니다.
 
 ```{warning}
@@ -167,7 +167,7 @@ Liferay DXP 번들에서 매핑을 얻으려면,
    Liferay 7.4 U80 이하의 경우 JSON 파일의 시작 부분에 'LiferayDocumentType' 선언을 포함해야 합니다.
    ```
 
-여기서 중요한 변경 사항은 기본 할당 분석기(`french`)가 사용자 지정 분석기 `custom_liferay_analyzer_fr`으로 대체되었다는 것입니다.
+   여기서 중요한 변경 사항은 기본 할당 분석기(`french`)가 사용자 지정 분석기 `custom_liferay_analyzer_fr`으로 대체되었다는 것입니다.
 
 1. 변경 사항을 구성에 저장하십시오. 
 

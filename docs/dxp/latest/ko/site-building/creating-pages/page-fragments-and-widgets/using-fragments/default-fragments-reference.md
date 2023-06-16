@@ -93,7 +93,7 @@ Liferay는 즉시 사용 가능한 다양한 조각을 제공하므로 솔루션
 | 적용된 필터(7.4 이상 사용 가능) | 컬렉션 표시에 적용된 필터를 표시하고 관리하기 위한 요소를 추가합니다.                                                                                                                                                                                                                   |
 | 콜렉션 디스플레이            | 수동 및 동적으로 정의된 컬렉션과 컬렉션 공급자가 정의한 컬렉션을 표시합니다. 컬렉션이 그리드에 표시되는지 또는 목록 템플릿(예: 테두리 있음, 글머리 기호, 인라인, 번호 매기기 및 스타일 없음)으로 표시되는지 여부를 구성할 수 있습니다. 자세한 내용은 [컬렉션 표시](../../../displaying-content/additional-content-display-options/displaying-collections.md) 참조하십시오. |
 
-<!--| Knowledge Base Article Navigation (Available 7.4 U **+/GA** +) | |-->
+<!--| Knowledge Base Article Navigation (Available 7.4 U_+/GA_+) | |-->
 
 ## 쿠키 배너
 

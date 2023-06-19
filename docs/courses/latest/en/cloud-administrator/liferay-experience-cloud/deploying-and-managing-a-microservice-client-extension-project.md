@@ -194,7 +194,7 @@ Delete the service from the console now that you're done using the sample micros
 
 After a delay, the service is deleted and disappears from the Cloud console.
 
-Now you've successfully tested the sample Spring Boot application in your UAT environment. Next, you'll troubleshoot a problem in the console.
+Now you've successfully tested the sample Spring Boot application in your UAT environment. Next, you'll [troubleshoot a problem in the console](./troubleshooting-a-microservice-in-the-cloud-console.md).
 
 ## Relevant Concepts
 

@@ -25,7 +25,7 @@ If your invitation was for a single environment (such as `dev` or `uat`) instead
 
 ![Logging into the console shows you a list of all environments you can access.](./accessing-the-liferay-cloud-console/images/03.png)
 
-Take some time to navigate around the console to familiarize yourself with the available controls. Once you're ready, proceed to add more team members to your project.
+Take some time to navigate around the console to familiarize yourself with the available controls. Once you're ready, proceed to [add more team members to your project](./adding-team-members-to-the-project.md).
 
 ## Related Concepts
 

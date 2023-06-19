@@ -55,7 +55,7 @@ Next, use the MySQL client to view your Liferay instance's database.
     quit
     ```
 
-Next, you'll deploy a simple custom service to your UAT environment.
+Congratulations! You've completed the self-managed Cloud Setup and Management module of the Cloud Administrator course.
 
 ## Related Concepts
 

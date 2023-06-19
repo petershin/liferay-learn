@@ -31,7 +31,7 @@ Repeat this process for your other environments (such as `uat`) to make sure you
 Give your team members roles that are appropriate to their role in each environment. For example, developers should have the Admin role in a `dev` environment if they are expected to handle all tasks in that environment. Check [Environment Teams and Roles](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles for more information.
 ```
 
-Next, you'll set up your GitHub repository so that you can push and deploy changes to your services.
+Next, you'll [set up your GitHub repository](./setting-up-the-github-repository.md) so that you can push and deploy changes to your services.
 
 ## Related Concepts
 

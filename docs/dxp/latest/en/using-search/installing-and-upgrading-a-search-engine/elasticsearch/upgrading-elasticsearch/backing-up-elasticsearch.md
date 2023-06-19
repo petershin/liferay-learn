@@ -168,7 +168,7 @@ If a catastrophic failure occurs, what good is a snapshot if you can't [restore 
 POST /_snapshot/test_backup/snapshot_1/_restore
 ```
 
-If you need to restore the data from a snapshot index into an existing index, restore the index with a different name, then reindex the data into the existing index. To limit the restore command to specific indexes, use the `indices` option. Rename the restored index using the `rename_pattern` and `rename_replacement` options:
+If you need to restore the data from a snapshot index into an existing index, restore the index with a different name, then re-index the data into the existing index. To limit the restore command to specific indexes, use the `indices` option. Rename the restored index using the `rename_pattern` and `rename_replacement` options:
 
 ```bash
 POST /_snapshot/test_backup/snapshot_1/_restore
@@ -265,7 +265,7 @@ You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/
 
 If you've added search tuning configurations (i.e., synonym sets or results rankings) while running in Sidecar/Embedded mode, they'll disappear once you configure a production mode connection to Elasticsearch and perform a full re-index.
 
-To restore your existing search tuning index documents, you can use the [Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex) of Elasticsearch, like this:
+To restore your existing search tuning index documents, you can use the Elasticsearch's [Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex), like this:
 
 ```json
 POST _reindex/

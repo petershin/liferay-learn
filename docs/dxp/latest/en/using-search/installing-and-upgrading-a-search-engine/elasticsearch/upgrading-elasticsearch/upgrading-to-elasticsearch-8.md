@@ -43,7 +43,7 @@ To upgrade an existing Elasticsearch 7 server (or cluster) to Elasticsearch 8,
 
 ## Upgrading Elasticsearch
 
-If you are using a rolling-restart eligible version, doing a [rolling upgrade](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) is the recommended way to upgrade your Elasticsearch cluster as it minimizes downtime and eliminates the need to re-index all your data. Otherwise, follow the [full cluster restart upgrade ](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/restart-upgrade.html) guide.
+If you are using a rolling restart-eligible version, doing a [rolling upgrade](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) is the recommended way to upgrade your Elasticsearch cluster as it minimizes downtime and eliminates the need to re-index all your data. Otherwise, follow the [full cluster restart upgrade ](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/restart-upgrade.html) guide.
 
 If you've installed a new Elasticsearch server and want to index your pre-upgrade data, most Liferay indexes can be restored by triggering a [re-index](#restart-liferay-and-re-index) from the UI, once the Liferay [database is upgraded](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md). However, the Search Tuning (Result Rankings and Synonyms) indexes and any custom indexes not backed by database storage must be restored from a [snapshot of the pre-upgrade indexes](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage).
 
@@ -53,7 +53,7 @@ Once Liferay is connected with the Elasticsearch cluster, restart Liferay and re
 
 1. Restart Liferay.
 
-1. If you've performed a full cluster restart upgrade, you must re-index the company, system, and spell check indexes. From the Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)), navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. Click *Execute* for the *Reindex all search indexes* entry.
+1. If you've performed a full cluster restart upgrade, you must re-index the company, system, and spell check indexes. From the Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)), navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*. Click *Execute* for the Reindex All Search Indexes entry.
 
 1. If you've performed a full cluster restart upgrade, you must re-index the [Workflow Metrics indexes](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics): from the Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)), navigate to *Applications* &rarr; *Workflow---Metrics*. Open the Settings menu (![Options](../../../../images/icon-options.png) and Click *Reindex All*. Repeat the process for each Virtual Instance.
 

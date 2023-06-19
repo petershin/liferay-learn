@@ -3,7 +3,7 @@ uuid: f1374d8a-9899-47a2-bd09-7465685f057b
 ---
 # Connecting to Elasticsearch
 
-After [setting up Elasticsearch](./installing-elasticsearch.md), connect it with Liferay using the Liferay Connector to Elasticsearch. Connection steps depend on the connector you're configuring. See [Available Liferay Elasticsearch Connectors](#available-liferay-elasticsearch-connectors) for reference.
+After [setting up Elasticsearch](./installing-elasticsearch.md), connect it to Liferay using the Liferay Connector to Elasticsearch. Connection steps depend on the connector you're configuring. See [Available Liferay Elasticsearch Connectors](#available-liferay-elasticsearch-connectors) for reference.
 
 Notable installation and configuration procedure differences are presented here. 
 

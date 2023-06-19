@@ -34,7 +34,7 @@ sysctl -w vm.max_map_count=262144
 
 ### Compatibility Headers
 
-For Elasticsearch 8, if there is any firewall or proxy infrastructure between Liferay and Elasticsearch, make sure the compatibility HTTP headers that Liferay is setting on each request are allowed and preserved in the network traffic. See [Elasticsearch's Requesting REST API Compatibility](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-api-compatibility.html#request-rest-api-compatibility) for more information.
+For Elasticsearch 8, if there is a firewall or proxy between Liferay and Elasticsearch, make sure the compatibility HTTP headers Liferay sets on each request are allowed and preserved in the network traffic. See [Elasticsearch's Requesting REST API Compatibility](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-api-compatibility.html#request-rest-api-compatibility) for more information.
 
 ## Install Elasticsearch
 

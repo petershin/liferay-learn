@@ -425,8 +425,7 @@ For example, if you have your CA's certificate (public key) and private key in `
 
 ## PKCS12 Keystore created with newer JDK cannot be opened by JDK 8
 
-Elasticsearch 8 uses the bundled OpenJDK 19 to generate certificates and private keys with the [`elasticsearch-certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/certutil.html) command. Meanwhile, when Liferay is configured to run with JDK 8, it cannot recognize certificates generated with JDK 16 or higher.
-
+Elasticsearch 8 uses the bundled OpenJDK 19 to generate certificates and private keys with the [`elasticsearch-certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/certutil.html) command. When Liferay runs on JDK 8, it cannot recognize certificates generated with JDK 16 or higher.
 
 Errors like this can result:
 
@@ -464,7 +463,7 @@ Caused by: java.security.UnrecoverableKeyException: Password verification failed
    ...
 ```
 
-To solve this issue, you can run Liferay with JDK 11. See the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829) for details.
+To solve this issue, you can run Liferay on JDK 11. See the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829) for details.
 
 ## Related Topics
 

@@ -4,22 +4,18 @@ Business logic refers to the rules and processes that determine how an applicati
 
 Examples include,
 
-* Implementing Field Validations
+* Validating Fields
 
 * Managing Data Access
 
+* Defining Workflows
+
 * Automating Notifications
 
-* Workflow and Process Management
+<!-- Other example: Integrating with External Systems, Calculations, Data Transformation, Localization, Logging -->
 
-* Integrating with External Systems
+Having modeled the Distributor Application object, you can incorporate these additional functionalities to make it more flexible/adaptable/scalable<!--w/c--> and ensure it fulfills Delectable Bonsai's business requirements.
 
-<!-- Other example: Calculations, Data Transformation, Localization, Logging -->
-
-<!-- Diagram? -->
-
-Having modeled your data structures, you can incorporate these additional functionalities to make your application more flexible/adaptable/scalable<!--w/c--> and ensure the application fulfills your business requirements.
-
-<!-- Transition... "With these elements in place, Delectable Bonsai can onboard distributors quickly and safely."-->
+<!-- Transition... "Once implemented, Delectable Bonsai can onboard distributors quickly and safely."-->
 
 Ready? [Let's Go](./implementing-business-logic/validations.md)!

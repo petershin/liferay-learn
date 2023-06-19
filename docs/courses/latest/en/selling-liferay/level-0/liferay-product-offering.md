@@ -147,8 +147,6 @@ What is important to note is that although the deployment model is SaaS, this is
 | --- | --- | --- |
 | Application Delivery |  | &#10004; |
 
-## What's Next
-
 With that background out of the way, you can learn how to determine what deployment option is best for your customer.
 
 [Let's Go!](./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md)

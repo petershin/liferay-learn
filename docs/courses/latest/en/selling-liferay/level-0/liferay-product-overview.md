@@ -1,21 +1,21 @@
 ---
 uuid: cc79b354-0d27-4a18-99d5-80494faad3c9
 toc:
-- ./liferay-product-overview/design-systems-and-experience-management.md
-- ./liferay-product-overview/content-and-asset-management.md
-- ./liferay-product-overview/low-code-no-code-application-building.md
-- ./liferay-product-overview/data-modeling-and-process-management.md
-- ./liferay-product-overview/commerce.md
-- ./liferay-product-overview/analytics-and-optimization.md
-- ./liferay-product-overview/segmentation-and-personalization.md
-- ./liferay-product-overview/search-and-navigation.md
-- ./liferay-product-overview/headless-apis-and-multichannel.md
-- ./liferay-product-overview/collaboration-and-knowledge-sharing.md
-- ./liferay-product-overview/identity-management-and-access-control.md
-- ./liferay-product-overview/integration-and-interoperability.md
-- ./liferay-product-overview/developer-tooling.md
-- ./liferay-product-overview/platform-services.md
-- ./liferay-product-overview/cloud-and-infrastructure.md
+   - ./liferay-product-overview/design-systems-and-experience-management.md
+   - ./liferay-product-overview/content-and-asset-management.md
+   - ./liferay-product-overview/low-code-no-code-application-building.md
+   - ./liferay-product-overview/data-modeling-and-process-management.md
+   - ./liferay-product-overview/commerce.md
+   - ./liferay-product-overview/analytics-and-optimization.md
+   - ./liferay-product-overview/segmentation-and-personalization.md
+   - ./liferay-product-overview/search-and-navigation.md
+   - ./liferay-product-overview/headless-apis-and-multichannel.md
+   - ./liferay-product-overview/collaboration-and-knowledge-sharing.md
+   - ./liferay-product-overview/identity-management-and-access-control.md
+   - ./liferay-product-overview/integration-and-interoperability.md
+   - ./liferay-product-overview/developer-tooling.md
+   - ./liferay-product-overview/platform-services.md
+   - ./liferay-product-overview/cloud-and-infrastructure.md
 ---
 
 # Liferay DXP Product Capabilities

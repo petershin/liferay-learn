@@ -110,7 +110,7 @@ Once your services are up and running again (with the `Ready` status), restore t
 
 Your production environment's services restart, and when they're back up, all services that use the database use the new password.
 
-Next, you'll deploy a patch to your environment.
+Next, you'll walk through the process of [installing a hotfix](./installing-a-hotfix.md).
 
 ## Relevant Concepts
 

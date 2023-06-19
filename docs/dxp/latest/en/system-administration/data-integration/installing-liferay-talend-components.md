@@ -9,7 +9,7 @@ Liferay's components for Talend Open Studio can import and export data between L
 
 ## Prerequisites
 
-Installing the Liferay components requires JDK 1.8+, Apache Maven 3.3+, and a local copy of the [DXP/Portal code](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend). You'll also need [Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) with [Components API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) already installed.
+Installing the Liferay components requires JDK 1.8+, Apache Maven 3.3+, and a local copy of the [DXP/Portal code](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/etl/talend). You'll also need [Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) with [Components API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) already installed.
 
 ## Talend Open Studio Configuration
 
@@ -36,7 +36,7 @@ The repository mirror location ensures the m2m plugin can connect securely to th
 
 ## Building the Talend Components
 
-Before you can install the Talend components, you must run `mvn clean install` in the [modules/etl/talend](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend) folder of your local `liferay-portal` repository.
+Before you can install the Talend components, you must run `mvn clean install` in the [modules/etl/talend](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend) folder of your local `liferay-portal` repository.
 
 This generates a jar bundle file in the following directories/folders:
 

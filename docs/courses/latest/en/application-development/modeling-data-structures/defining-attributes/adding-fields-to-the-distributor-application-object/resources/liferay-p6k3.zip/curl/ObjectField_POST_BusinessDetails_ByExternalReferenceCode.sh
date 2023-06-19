@@ -43,7 +43,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"BigDecimal\",\"businessType\":\"PrecisionDecimal\",\"externalReferenceCode\":\"0fdc9d61-5e7d-9605-97bc-e5d28a87ccbd\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Annual Revenue (in USD)\"},\"name\":\"businessAnnualRevenue\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"BigDecimal\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"0fdc9d61-5e7d-9605-97bc-e5d28a87ccbd\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Annual Revenue (in USD)\"},\"name\":\"businessAnnualRevenue\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
 	-u "test@liferay.com:learn"
 
 # Business Distribution Channels
@@ -67,7 +67,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"788ff32f-2c16-49b6-f0a4-70ad9525ac9c\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business Phone Number\"},\"name\":\"businessPhoneNumber\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"788ff32f-2c16-49b6-f0a4-70ad9525ac9c\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business Phone Number\"},\"name\":\"businessPhoneNumber\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
 	-u "test@liferay.com:learn"
 
 # Business Address Line One
@@ -107,7 +107,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"Integer\",\"businessType\":\"Integer\",\"externalReferenceCode\":\"c3529e16-a54f-b5c6-d84a-829ed5cdd821\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business ZIP, Postal Code\"},\"name\":\"businessZIPPostalCode\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"c3529e16-a54f-b5c6-d84a-829ed5cdd821\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business ZIP, Postal Code\"},\"name\":\"businessZIPPostalCode\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
 	-u "test@liferay.com:learn"
 
 # Business Country
@@ -123,7 +123,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"Integer\",\"businessType\":\"Integer\",\"externalReferenceCode\":\"1980893e-a034-a4f7-62ec-0876a3af0a6c\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business License Number\"},\"name\":\"businessLicenseNumber\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"1980893e-a034-a4f7-62ec-0876a3af0a6c\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business License Number\"},\"name\":\"businessLicenseNumber\",\"objectFieldSettings\":[{\"name\":\"uniqueValues\",\"value\": true}],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
 	-u "test@liferay.com:learn"
 
 # Business Resale Number
@@ -131,7 +131,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"Integer\",\"businessType\":\"Integer\",\"externalReferenceCode\":\"926708b8-2463-a964-9928-ad238d6a20cc\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business Resale Number\"},\"name\":\"businessResaleNumber\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"926708b8-2463-a964-9928-ad238d6a20cc\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business Resale Number\"},\"name\":\"businessResaleNumber\",\"objectFieldSettings\":[{\"name\":\"uniqueValues\",\"value\": true}],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
 	-u "test@liferay.com:learn"
 
 # Business Tax ID Number
@@ -139,7 +139,7 @@ curl \
 	-H "Content-Type: application/json" \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"Integer\",\"businessType\":\"Integer\",\"externalReferenceCode\":\"19853289-be70-8377-b7f6-e321ec3572a9\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business Tax ID Number\"},\"name\":\"businessTaxIDNumber\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"Integer\"}" \
+	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"19853289-be70-8377-b7f6-e321ec3572a9\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Business Tax ID Number\"},\"name\":\"businessTaxIDNumber\",\"objectFieldSettings\":[{\"name\":\"uniqueValues\",\"value\": true}],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
 	-u "test@liferay.com:learn"
 
 # Business License

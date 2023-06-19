@@ -109,7 +109,7 @@ Delectable Bonsai can use these fields to collect general details for assessing 
 1. Download and unzip the resources for [this exercise](./liferay-p6k3.zip).
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/adding-fields-to-the-distributor-application-object/adding-fields-to-the-distributor-application-object/liferay-p6k3.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-attributes/adding-fields-to-the-distributor-application-object/liferay-p6k3.zip -O
    ```
 
    ```bash
@@ -150,7 +150,7 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    | `businessType`                 | Picklist             |
    | `businessEstablishedDate`      | Date                 |
    | `businessEmployeeNumber`       | Integer              |
-   | `businessAnnualRevenue`        | Precision Decimal    |
+   | `businessAnnualRevenue`        | Text                 |
    | `businessDistributionChannels` | Multiselect Picklist |
    | `businessOtherBrandsOffered`   | Long Text            |
    | `businessPhoneNumber`          | Text                 |
@@ -158,11 +158,11 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    | `businessAddressLineTwo`       | Text                 |
    | `businessCity`                 | Text                 |
    | `businessStateProvinceRegion`  | Text                 |
-   | `businessZipPostalCode`        | Integer              |
+   | `businessZipPostalCode`        | Text                 |
    | `businessCountry`              | Text                 |
-   | `businessLicenseNumber`        | Integer              |
-   | `businessResaleNumber`         | Integer              |
-   | `businessTaxIDNumber`          | Integer              |
+   | `businessLicenseNumber`        | Text                 |
+   | `businessResaleNumber`         | Text                 |
+   | `businessTaxIDNumber`          | Text                 |
    | `businessLicense`              | Attachment           |
    | `businessProofOfInsurance`     | Attachment           |
 
@@ -172,17 +172,17 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    ./ObjectField_POST_BankDetails_ByExternalReferenceCode.sh
    ```
 
-   | Field Name                | Type    |
-   |:--------------------------|:--------|
-   | `bankName`                | Text    |
-   | `bankAccountNumber`       | Text    |
-   | `bankPhoneNumber`         | Text    |
-   | `bankAddressLineOne`      | Text    |
-   | `bankAddressLineTwo`      | Text    |
-   | `bankCity`                | Text    |
-   | `bankStateProvinceRegion` | Text    |
-   | `bankZIPPostalCode`       | Integer |
-   | `bankCountry`             | Text    |
+   | Field Name                | Type |
+   |:--------------------------|:-----|
+   | `bankName`                | Text |
+   | `bankAccountNumber`       | Text |
+   | `bankPhoneNumber`         | Text |
+   | `bankAddressLineOne`      | Text |
+   | `bankAddressLineTwo`      | Text |
+   | `bankCity`                | Text |
+   | `bankStateProvinceRegion` | Text |
+   | `bankZIPPostalCode`       | Text |
+   | `bankCountry`             | Text |
 
 1. Create fields for receiving business reference details:
 
@@ -190,20 +190,24 @@ Delectable Bonsai can use these fields to collect general details for assessing 
    ./ObjectField_POST_BusinessReference_ByExternalReferenceCode.sh
    ```
 
-   | Field Name                     | Type    |
-   |:-------------------------------|:--------|
-   | `referenceSupplierName`        | Text    |
-   | `referencePhoneNumber`         | Text    |
-   | `referenceAddressLineOne`      | Text    |
-   | `referenceAddressLineTwo`      | Text    |
-   | `referenceCity`                | Text    |
-   | `referenceStateProvinceRegion` | Text    |
-   | `referenceZIPPostalCode`       | Integer |
-   | `referenceCountry`             | Text    |
+   | Field Name                     | Type |
+   |:-------------------------------|:-----|
+   | `referenceSupplierName`        | Text |
+   | `referencePhoneNumber`         | Text |
+   | `referenceAddressLineOne`      | Text |
+   | `referenceAddressLineTwo`      | Text |
+   | `referenceCity`                | Text |
+   | `referenceStateProvinceRegion` | Text |
+   | `referenceZIPPostalCode`       | Text |
+   | `referenceCountry`             | Text |
 
 Once finished, the Distributor Application object should have 56 fields. These fields can help Delectable Bonsai collect the data they need for evaluating and vetting each applicant in compliance with KYC policies and AML laws.
 
 ![The Distributor Application object should have 56 fields.](./adding-fields-to-the-distributor-application-object/images/03.png)
+
+<!-- Transition -->
+
+Next: [Adding a Basic Layout and View](./adding-a-basic-layout-and-view.md)
 
 ## Relevant Concepts
 

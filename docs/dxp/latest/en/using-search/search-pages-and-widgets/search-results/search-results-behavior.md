@@ -25,7 +25,7 @@ Administrators can configure facets. Read about [Search facets](../search-facets
 
 The search engine uses relevance---a score calculated by the search engine---to rank results. Numerous factors contribute to the total score of a returned document, which depend on the search engine being used:
 
-* [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-similarity.html#bm25)
+* [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/index-modules-similarity.html#bm25)
 * [Solr](https://lucene.apache.org/solr/guide/8_0/relevance.html)
 
 [Result Rankings](../../search-administration-and-tuning/result-rankings.md) help you control the order of returned search results. 
@@ -88,7 +88,7 @@ To determine which fields to include in the result summaries, the Search Results
 
 1. Asset-specific fields to include in the Summary are defined in `ModelSummaryContributor` Java classes (Liferay's own classes and those deployed by third party developers). Older implementations of this logic were provided by `Indexer.getSummary`
 
-1. Fields available for display in the Search Results summaries are defined by the Search Results display logic ([`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/builder/SearchResultSummaryDisplayBuilder.java) and [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java)).
+1. Fields available for display in the Search Results summaries are defined by the Search Results display logic ([`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/builder/SearchResultSummaryDisplayContextBuilder.java) and [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java)).
 
 1. The [Widget Template](../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) used by the [Search Results](./configuring-the-search-results-widget.md) widget (_List_ by default) has the final word in all things related to Search Results display, including which of the available fields are included in the summary.
 

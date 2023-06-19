@@ -16,9 +16,9 @@ Add a [sort configuration](./search-blueprints-configuration-reference.md#sort-c
 ```{important}
 * Avoid using both the [Sort widget](../../../search-pages-and-widgets/search-results/sorting-search-results.md) and a search blueprint to configure sorting on a search page. Liferay cannot guarantee consistent behavior.
 
-* The examples below are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
+* The examples below are simple. A robust sort configuration must consider all scenarios. For example, if a search result document does not contain the sort field, use the [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html#_missing_values) parameter to configure the sort behavior.
 
-   See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html) for more details.
+   See [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html) for more details.
 ```
 
 ## Example 1: Sorting by Title

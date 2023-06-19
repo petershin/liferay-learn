@@ -393,7 +393,7 @@ Some further testing can confirm the root cause. Temporarily set `xpack.security
 ```{warning}
 Never leave the SSL verification mode set to `none` in production environments.
 
-Read the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html#transport-tls-ssl-settings) to learn more about the SSL verification mode setting.
+Read the [Elasticsearch documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html#transport-tls-ssl-settings) to learn more about the SSL verification mode setting.
 ```
 
 A similar problem can occur between Liferay and the Elasticsearch nodes. Liferay throws an error like this if the Elasticsearch node certificates were signed by a non-trusted CA (e.g., when using self-signed certificates):

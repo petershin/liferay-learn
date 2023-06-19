@@ -125,11 +125,11 @@ If you are not configuring hosts for a production mode setup, use `localhost` as
 
 Related Elasticsearch Documentation:
 
-- [Important Elasticsearch configuration](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/important-settings.html)
+- [Important Elasticsearch configuration](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/important-settings.html)
 
-- [Security settings in Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html)
+- [Security settings in Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html)
 
-- [Bootstrap Checks, Development vs. production mode](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html)
+- [Bootstrap Checks, Development vs. production mode](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/bootstrap-checks.html)
 ```
 
 ```{important}
@@ -146,7 +146,7 @@ Each Elasticsearch node's `elasticsearch.yml` file must use unique values for th
 
 ### Enforce Bootstrap Checks for Single Server in Production Mode
 
-Elasticsearch [bootstrap checks](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html) inspect configurations on startup and logs warnings for missing or suspicious configurations. In production, you should configure bootstrap checks to halt startup on misconfiguration. 
+Elasticsearch [bootstrap checks](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/bootstrap-checks.html) inspect configurations on startup and logs warnings for missing or suspicious configurations. In production, you should configure bootstrap checks to halt startup on misconfiguration. 
 
 To enforce the bootstrap checks in a single-node cluster, add this property to the end of your node's `[Elasticsearch Home]/config/jvm.options` file:
 

@@ -5,7 +5,7 @@ uuid: 200d8582-24d6-4c35-a50b-ddb0b4b7c8b1
 
 {bdg-link-primary}`[LES Subscription](./activating-liferay-enterprise-search.md)`
 
-If you have a Liferay Enterprise Search (LES) [subscription](https://www.liferay.com/products/dxp/enterprise-search), you can integrate Elastic's [Kibana monitoring UI](https://www.elastic.co/guide/en/kibana/7.x/introduction.html) with Liferay DXP, so your monitoring activities can be done within Liferay itself.
+If you have a Liferay Enterprise Search (LES) [subscription](https://www.liferay.com/products/dxp/enterprise-search), you can integrate Elastic's [Kibana monitoring UI](https://www.elastic.co/guide/en/kibana/8.8/introduction.html) with Liferay DXP, so your monitoring activities can be done within Liferay itself.
 
 ![With LES Monitoring, you can monitor Liferay's indexes from Liferay's UI.](./monitoring-elasticsearch/images/01.png)
 
@@ -60,7 +60,7 @@ Elasticsearch 6.x has reached [end of life](https://www.elastic.co/support/eol#e
 
    Use the `kibana_system` user password from your [security configuration](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md). Once Kibana is installed, you can change the built-in user passwords from the *Management* user interface.
 
-1. Begin configuring encryption by providing certificate files. See [Elastic's guide](https://www.elastic.co/guide/en/kibana/7.x/using-kibana-with-security.html#using-kibana-with-security) for more details.
+1. Begin configuring encryption by providing certificate files. See [Elastic's guide](https://www.elastic.co/guide/en/kibana/8.8/using-kibana-with-security.html#using-kibana-with-security) for more details.
 
    To reuse the files [created for Elasticsearch itself](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md#generate-node-certificates), copy the `[Elasticsearch Home]/config/certs` folder into the `[Kibana Home]/config/` folder.
 
@@ -193,7 +193,7 @@ Once Kibana and LES Monitoring are installed, configured, and running, add the E
 1. Use the widget search bar to search for *monitoring* and drag the *Elasticsearch Monitoring* widget from the Search category onto the page. If on Liferay DXP 7.2, the widget is called *X-Pack Monitoring*.
 
 > For more information, see the related Elasticsearch documentation:
-> * [Monitoring a cluster](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/es-monitoring.html)
+> * [Monitoring a cluster](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/es-monitoring.html)
 > * [Set up X-Pack---monitoring and security best practices in a clustered environment](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html)
 
 ## Example Kibana Configuration

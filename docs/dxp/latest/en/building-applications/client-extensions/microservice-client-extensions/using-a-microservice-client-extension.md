@@ -26,7 +26,7 @@ To start developing client extensions,
 1. Install Java (JDK 8 or JDK 11).
 
    ```{note}
-   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
+   Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
    ```
 
 1. Download and unzip the sample workspace:

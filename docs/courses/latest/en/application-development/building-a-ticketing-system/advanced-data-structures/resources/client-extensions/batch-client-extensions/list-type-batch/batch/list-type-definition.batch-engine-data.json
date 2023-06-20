@@ -1,0 +1,444 @@
+{
+	"actions": {
+		"create": {
+			"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions",
+			"method": "POST"
+		},
+		"createBatch": {
+			"href": "/o/headless-batch-engine/v1.0/import-task/com.liferay.headless.admin.list.type.dto.v1_0.ListTypeDefinition",
+			"method": "POST"
+		}
+	},
+	"configuration": {
+		"className": "com.liferay.headless.admin.list.type.dto.v1_0.ListTypeDefinition",
+		"companyId": 0,
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "UPSERT",
+			"onErrorFail": "false",
+			"taskItemDelegateName": "DEFAULT",
+			"updateStrategy": "UPDATE"
+		},
+		"userId": 0,
+		"version": "v1.0"
+	},
+	"facets": [],
+	"items": [
+		{
+			"actions": {
+				"get": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44302",
+					"method": "GET"
+				},
+				"permissions": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44302",
+					"method": "PATCH"
+				},
+				"update": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44302",
+					"method": "PUT"
+				}
+			},
+			"externalReferenceCode": "LIST_TICKET_PRIORITIES",
+			"listTypeEntries": [
+				{
+					"externalReferenceCode": "PRIORITY_MINOR",
+					"key": "minor",
+					"name": "Minor",
+					"name_i18n": {
+						"en-US": "Minor"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "PRIORITY_MODERATE",
+					"key": "moderate",
+					"name": "Moderate",
+					"name_i18n": {
+						"en-US": "Moderate"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "PRIORITY_MAJOR",
+					"key": "major",
+					"name": "Major",
+					"name_i18n": {
+						"en-US": "Major"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "PRIORITY_CRITICAL",
+					"key": "critical",
+					"name": "Critical",
+					"name_i18n": {
+						"en-US": "Critical"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "PRIORITY_UNASSIGNED",
+					"key": "unassigned",
+					"name": "Unassigned",
+					"name_i18n": {
+						"en-US": "Unassigned"
+					},
+					"type": ""
+				}
+			],
+			"name": "LIST_TICKET_PRIORITIES",
+			"name_i18n": {
+				"en-US": "LIST_TICKET_PRIORITIES"
+			}
+		},
+		{
+			"actions": {
+				"get": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44303",
+					"method": "GET"
+				},
+				"permissions": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44303",
+					"method": "PATCH"
+				},
+				"update": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44303",
+					"method": "PUT"
+				}
+			},
+			"externalReferenceCode": "LIST_TICKET_RESOLUTIONS",
+			"listTypeEntries": [
+				{
+					"externalReferenceCode": "RESOLUTION_UNRESOLVED",
+					"key": "unresolved",
+					"name": "Unresolved",
+					"name_i18n": {
+						"en-US": "Unresolved"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "RESOLUTION_FIXED",
+					"key": "fixed",
+					"name": "Fixed",
+					"name_i18n": {
+						"en-US": "Fixed"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "RESOLUTION_DUPLICATE",
+					"key": "duplicate",
+					"name": "Duplicate",
+					"name_i18n": {
+						"en-US": "Duplicate"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "RESOLUTION_EXPIRED",
+					"key": "expired",
+					"name": "Expired",
+					"name_i18n": {
+						"en-US": "Expired"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "RESOLUTION_DONE",
+					"key": "done",
+					"name": "Done",
+					"name_i18n": {
+						"en-US": "Done"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "RESOLUTION_APPROVED",
+					"key": "approved",
+					"name": "Approved",
+					"name_i18n": {
+						"en-US": "Approved"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "RESOLUTION_REJECTED",
+					"key": "rejected",
+					"name": "Rejected",
+					"name_i18n": {
+						"en-US": "Rejected"
+					},
+					"type": ""
+				}
+			],
+			"name": "LIST_TICKET_RESOLUTIONS",
+			"name_i18n": {
+				"en-US": "LIST_TICKET_RESOLUTIONS"
+			}
+		},
+		{
+			"actions": {
+				"get": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44304",
+					"method": "GET"
+				},
+				"permissions": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44304",
+					"method": "PATCH"
+				},
+				"update": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44304",
+					"method": "PUT"
+				}
+			},
+			"externalReferenceCode": "LIST_TICKET_REGIONS",
+			"listTypeEntries": [
+				{
+					"externalReferenceCode": "REGION_NORAM",
+					"key": "nORAM",
+					"name": "NORAM",
+					"name_i18n": {
+						"en-US": "NORAM"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "REGION_LATAM",
+					"key": "lATAM",
+					"name": "LATAM",
+					"name_i18n": {
+						"en-US": "LATAM"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "REGION_EMEA",
+					"key": "eMEA",
+					"name": "EMEA",
+					"name_i18n": {
+						"en-US": "EMEA"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "REGION_APAC",
+					"key": "aPAC",
+					"name": "APAC",
+					"name_i18n": {
+						"en-US": "APAC"
+					},
+					"type": ""
+				}
+			],
+			"name": "LIST_TICKET_REGIONS",
+			"name_i18n": {
+				"en-US": "LIST_TICKET_REGIONS"
+			}
+		},
+		{
+			"actions": {
+				"get": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44305",
+					"method": "GET"
+				},
+				"permissions": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44305",
+					"method": "PATCH"
+				},
+				"update": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44305",
+					"method": "PUT"
+				}
+			},
+			"externalReferenceCode": "LIST_TICKET_STATUSES",
+			"listTypeEntries": [
+				{
+					"externalReferenceCode": "STATUS_OPEN",
+					"key": "open",
+					"name": "Open",
+					"name_i18n": {
+						"en-US": "Open"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "STATUS_VERIFYING",
+					"key": "verifying",
+					"name": "Verifying",
+					"name_i18n": {
+						"en-US": "Verifying"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "STATUS_QUEUED",
+					"key": "queued",
+					"name": "Queued",
+					"name_i18n": {
+						"en-US": "Queued"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "STATUS_IN_PROGRESS",
+					"key": "inProgress",
+					"name": "In Progress",
+					"name_i18n": {
+						"en-US": "In Progress"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "STATUS_ANSWERED",
+					"key": "answered",
+					"name": "Answered",
+					"name_i18n": {
+						"en-US": "Answered"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "STATUS_ESCALATED",
+					"key": "escalated",
+					"name": "Escalated",
+					"name_i18n": {
+						"en-US": "Escalated"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "STATUS_IN_REVIEW",
+					"key": "inReview",
+					"name": "In Review",
+					"name_i18n": {
+						"en-US": "In Review"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "STATUS_WAITING",
+					"key": "waiting",
+					"name": "Waiting",
+					"name_i18n": {
+						"en-US": "Waiting"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "STATUS_CLOSED",
+					"key": "closed",
+					"name": "Closed",
+					"name_i18n": {
+						"en-US": "Closed"
+					},
+					"type": ""
+				}
+			],
+			"name": "LIST_TICKET_STATUSES",
+			"name_i18n": {
+				"en-US": "LIST_TICKET_STATUSES"
+			}
+		},
+		{
+			"actions": {
+				"get": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44315",
+					"method": "GET"
+				},
+				"permissions": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44315",
+					"method": "PATCH"
+				},
+				"update": {
+					"href": "http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions/44315",
+					"method": "PUT"
+				}
+			},
+			"externalReferenceCode": "LIST_TICKET_TYPES",
+			"listTypeEntries": [
+				{
+					"externalReferenceCode": "TYPE_APPLICATION",
+					"key": "application",
+					"name": "Application",
+					"name_i18n": {
+						"en-US": "Application"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "TYPE_CREDIT_LIMIT",
+					"key": "creditLimitIncrease",
+					"name": "Credit Limit Increase",
+					"name_i18n": {
+						"en-US": "Credit Limit Increase"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "TYPE_ACCOUNT_ISSUE",
+					"key": "accountIssue",
+					"name": "Account Issue",
+					"name_i18n": {
+						"en-US": "Account Issue"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "TYPE_PRODUCT_ISSUE",
+					"key": "productIssue",
+					"name": "Product Issue",
+					"name_i18n": {
+						"en-US": "Product Issue"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "TYPE_ORDER_ISSUE",
+					"key": "orderIssue",
+					"name": "Order Issue",
+					"name_i18n": {
+						"en-US": "Order Issue"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "TYPE_DELIVERY_ISSUE",
+					"key": "deliveryIssue",
+					"name": "Delivery Issue",
+					"name_i18n": {
+						"en-US": "Delivery Issue"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "TYPE_SITE_ISSUE",
+					"key": "siteIssue",
+					"name": "Site Issue",
+					"name_i18n": {
+						"en-US": "Site Issue"
+					},
+					"type": ""
+				},
+				{
+					"externalReferenceCode": "TYPE_OTHER",
+					"key": "other",
+					"name": "Other",
+					"name_i18n": {
+						"en-US": "Other"
+					},
+					"type": ""
+				}
+			],
+			"name": "LIST_TICKET_TYPES",
+			"name_i18n": {
+				"en-US": "LIST_TICKET_TYPES"
+			}
+		}
+	],
+	"lastPage": 1,
+	"page": 1,
+	"pageSize": 20,
+	"totalCount": 5
+}

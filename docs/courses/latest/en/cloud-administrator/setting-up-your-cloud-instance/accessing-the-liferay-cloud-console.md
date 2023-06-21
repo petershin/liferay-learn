@@ -3,6 +3,8 @@ uuid: 75c20fc7-274c-4d3e-87df-ee9043778df6
 ---
 # Accessing the Liferay Cloud Console
 
+<!-- This was moved from the previous LXC-SM folder. Please fix it to make it apply to both LXC and LXC-SM. Thanks! -Rich -->
+
 The Delectable Bonsai project has been provisioned, but Marcus and his staff must be granted access to it.
 
 Here, you'll access the Liferay Cloud console so you can start working with your project.

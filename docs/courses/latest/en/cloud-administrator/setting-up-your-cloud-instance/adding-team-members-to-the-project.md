@@ -3,6 +3,8 @@ uuid: ab400154-9fae-4665-b883-0f72d934bf74
 ---
 # Adding Team Members to the Project
 
+<!-- This was moved from the previous LXC-SM folder. Please fix it to make sure it applies to both LXC and LXC-SM. -Rich -->
+
 Marcus has access to the Liferay Cloud console for the whole Delectable Bonsai project, but his staff member, Kyle, also needs access.
 
 Here, you'll learn how to send invitations for your team members.

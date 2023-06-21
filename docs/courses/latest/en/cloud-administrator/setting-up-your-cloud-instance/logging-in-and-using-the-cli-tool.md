@@ -44,7 +44,9 @@ A browser tab automatically opens to `https://console.liferay.cloud/login`. If y
 
 Now the tool can connect to your environments to deploy your client extension projects.
 
-Next, you'll [deploy a microservice client extension](./deploying-and-managing-a-microservice-client-extension-project.md) to your UAT environment and see it running in the console.
+Excellent! You've completed this module on setting up your cloud instance. 
+
+Next: learn to [deploy code to your LXC instance](../deploying-code-to-lxc.md). 
 
 ## Relevant Concepts
 

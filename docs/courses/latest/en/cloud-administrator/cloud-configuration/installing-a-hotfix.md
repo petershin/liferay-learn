@@ -69,7 +69,9 @@ Test the hotfix in your UAT environment before applying it to production.
 
 Once you've confirmed the hotfix works correctly, repeat the [deployment process](#deploy-and-test-the-hotfix) for your production environment during your reserved downtime. Remember to remove the hotfix when you later update to the Liferay version that fixes the same issue.
 
-Congratulations! You've completed the self-managed Cloud Setup and Management module of the Cloud Administrator course.
+Congratulations! You've completed the self-managed Cloud Configuration module of the Cloud Administrator course.
+
+Next: [Cloud Development Life Cycle](../cloud-development-lifecycle.md). 
 
 ## Relevant Concepts
 

@@ -249,12 +249,12 @@
 	.nav-link {
 		color: $default-color;
 		display: -webkit-box;
-		overflow: hidden;
 		margin-bottom: 0.5rem;
+		overflow: hidden;
 		padding-bottom: 0;
 		text-overflow: ellipsis;
-		-webkit-box-orient: vertical;
-    	-webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
 
 		&.active {
 			color: $primary;

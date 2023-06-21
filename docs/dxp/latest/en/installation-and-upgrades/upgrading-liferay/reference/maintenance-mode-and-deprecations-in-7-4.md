@@ -5,11 +5,11 @@ uuid: bcaaeab9-3b46-4a48-8e84-64d84d2c6015
 
 With each new Liferay DXP and Liferay Portal release, a feature may not warrant continued enhancements or may become obsolete. Stopping enhancements for a feature puts it in *Maintenance Mode*.
 
-**Maintenance Mode:** The feature is supported but no longer being enhanced.
+**Maintenance Mode:** Supported features with no further enhancements planned
 
-Obsolete features are eventually removed or replaced with newer, better features. Before dropping support for an obsolete feature, Liferay marks it *Deprecated*.
+Obsolete features are eventually removed or replaced with newer, improved features. Before dropping support for an obsolete feature, Liferay marks it *Deprecated*.
 
-**Deprecated:** The feature will be unsupported as early as the next minor version release.
+**Deprecated:** Unsupported from the next minor version release
 
 ```{important}
 Plan to stop using deprecated features because their support may cease as early as the next minor release.
@@ -23,7 +23,7 @@ Please see [Maintenance Mode and Deprecation Policies](https://help.liferay.com/
 
 Deprecated features have different availability:
 
-**Bundled:** The feature is included in the Liferay software.
+**Bundled:** Liferay includes the feature.
 
 **Marketplace:** The feature is included in a Marketplace app final version.
 
@@ -44,7 +44,7 @@ Here are the features deprecated in 7.4:
 | Commerce Account Widget | Removed | Replaced by the DXP/Portal Accounts Widget |
 | Central Authentication Service (CAS) | Archived | Deprecated in 7.2. It is replaced by other solutions, including SAML, OpenID Connect, and Token-based SSO. |
 | Commerce Categories Navigation widget | Bundled | Replaced by [Display Page Templates](../../../site-building/displaying-content/using-display-page-templates.md) [Menu Display](../../../site-building/site-navigation/configuring-menu-displays.md) support. |
-| Commerce Bill of Materials (BOM) | Removed | To be replaced by Shop By Diagram. |
+| Commerce Bill of Materials (BOM) | Removed | Replaced by [Shop By Diagram](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram). |
 | Commerce Category Content widget | Bundled | Replaced by [Display Page Templates](../../../site-building/displaying-content/using-display-page-templates.md). |
 | Digest Authentication | Bundled | Digest Authentication  requires weak password hash storage, which is a vulnerability. |
 | Dynamic Data Lists | Bundled | Deprecated in 7.3. It is replaced by [Liferay Objects](../../../building-applications/objects.md). |
@@ -53,11 +53,11 @@ Here are the features deprecated in 7.4:
 | Google Login/SSO | Archived | Deprecated in 7.2. It is replaced by other solutions, including SAML, OpenID Connect, and Token-based SSO. |
 | JAAS support code | Bundled | No replacement. |
 | Liferay Mobile Device Detection Enterprise | Archived | Deprecated in 7.2. Contact 51Degrees for up-to-date definitions. |
-| Liferay Screens | Removed. Final version released in 7.3. | No direct replacement; however, the Mobile SDK and Headless API support mobile application development. |
+| Liferay Screens | Removed. Final version released in 7.3. | No direct replacement; however, the mobile SDK and headless APIs support mobile application development. |
 | Liferay Sync Connector and Sync Client | Archived | Deprecated in 7.3. It has no direct replacement. |
 | Live Users | Bundled | Deprecated in 7.2. It is replaced by [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html) |
 | Mobile SDK | Removed | Replaced by [Headless Delivery](../../../headless-delivery/using-liferay-as-a-headless-platform.md). |
-| NTLM | Archived | Deprecated in 7.2. It is replaced by [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md). If you're using NTLM to authenticate Microsoft Windows™ accounts with , switch to using [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md). |
+| NTLM | Archived | Deprecated in 7.2. It is replaced by [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md). If you're using NTLM to authenticate Microsoft Windows™ accounts with, switch to using [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md). |
 | OAuth 1.0a | Archived | Deprecated in 7.2. It is replaced by Liferay Connector to OAuth 2.0 |
 | Polls | Removed | Replaced by [Forms/Forms Reports](../../../process-automation/forms/sharing-forms-and-managing-submissions/form-reports.md). |
 | Search widget (classic) | Bundled | Deprecated in 7.1. It is replaced by the [Search widgets](../../../using-search/search-pages-and-widgets/search-results/search-results.md). |
@@ -76,13 +76,14 @@ Features deprecated in earlier Liferay versions may also need to be considered, 
 
 Here are the features moved to Maintenance Mode in 7.4:
 
-| Feature | Notes |
-| :------ | :---- |
-| Kaleo Forms | To be replaced replaced by business processes for [Liferay Objects](../../../building-applications/objects.md). |
-| Solr Connector | [Use Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md) if possible. |
+| Feature         | Notes                                                                                                                                      |
+| :-------------- | :----------------------------------------------------------------------------------------------------------------------------------------- |
+| Kaleo Forms     | To be replaced by business processes for [Liferay Objects](../../../building-applications/objects.md).                                     |
+| Solr Connector  | [Use Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md) if possible. |
+| Contacts Module | Moved 4 portlets in the Contacts module (Contacts Center, Members, My Contacts, Profile) to maintenance mode. No replacement currently.    |
 
 ```{note}
-Liferay continues to improve Import/Export and Staging, particularly for Remote Live Staging in scenarios that require content to be created in one environment and consumed in another. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
+Liferay continues to improve import/export and staging, particularly for remote live staging in scenarios that require content to be created in one environment and consumed in another. See [Publishing Tools](../../../site-building/publishing-tools.md) for more information.
 ```
 
 ## Related Topics

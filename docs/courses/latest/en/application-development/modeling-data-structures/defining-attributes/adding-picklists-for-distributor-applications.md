@@ -232,7 +232,7 @@ You can now use the picklist to create a single-select or multi-select field in 
 
 You can now use these picklists to create single-select and multi-select fields in the Distributor Application object.
 
-Next: [Adding Fields](./adding-fields.md)
+Next: [Adding Fields to the Distributor Application Object](./adding-fields-to-the-distributor-application-object.md)
 
 ## Relevant Concepts
 

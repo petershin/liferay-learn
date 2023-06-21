@@ -50,4 +50,4 @@ An object's default layout and view include all fields and displays them alphabe
 
 Presently, none of the fields include validations to ensure the integrity of application data. But before adding validations, we must explore the concept of relationships when modeling data structures.
 
-Next: [Defining Relationships](./defining-relationships.md)
+Next: [Defining Relationships](../defining-relationships.md)

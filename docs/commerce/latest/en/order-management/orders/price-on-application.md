@@ -47,7 +47,7 @@ The product detail's page contains a new button to request a quote.
 
 1. If everything looks good with the order, you can click on *Request a Quote* at the bottom.
 
-1. Enter an optional note for the support staff and click *Submit*.
+1. Enter an optional note and click *Submit*.
 
 ![Add an optional note before requesting a quote.](./price-on-application/images/04.png)
 

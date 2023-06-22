@@ -14,14 +14,6 @@ curl \
 	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"761b63e0-c682-cb29-1fa1-03dbcdfc47fb\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"en_US\",\"label\":{\"en_US\":\"Business Website\"},\"name\":\"businessWebsite\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
 	-u "test@liferay.com:learn"
 
-# Business Type
-curl \
-	-H "Content-Type: application/json" \
-	-X POST \
-	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"String\",\"businessType\":\"Picklist\",\"externalReferenceCode\":\"c8131574-6198-7dc6-abf1-704278f5771c\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"en_US\",\"label\":{\"en_US\":\"Business Type\"},\"listTypeDefinitionExternalReferenceCode\":\"LIST_BUSINESS_TYPES\",\"name\":\"businessType\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
-	-u "test@liferay.com:learn"
-
 # Business Established Date
 curl \
 	-H "Content-Type: application/json" \
@@ -44,14 +36,6 @@ curl \
 	-X POST \
 	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
 	-d "{\"DBType\":\"String\",\"businessType\":\"Text\",\"externalReferenceCode\":\"0fdc9d61-5e7d-9605-97bc-e5d28a87ccbd\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"\",\"label\":{\"en_US\":\"Annual Revenue (in USD)\"},\"name\":\"businessAnnualRevenue\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
-	-u "test@liferay.com:learn"
-
-# Business Distribution Channels
-curl \
-	-H "Content-Type: application/json" \
-	-X POST \
-	"http://localhost:8080/o/object-admin/v1.0/object-definitions/by-external-reference-code/C_DISTRIBUTOR_APPLICATION/object-fields" \
-	-d "{\"DBType\":\"String\",\"businessType\":\"MultiselectPicklist\",\"externalReferenceCode\":\"2442fb95-4882-d691-28ab-9177bb7dae98\",\"indexed\":true,\"indexedAsKeyword\":false,\"indexedLanguageId\":\"en_US\",\"label\":{\"en_US\":\"Distribution Channels\"},\"listTypeDefinitionExternalReferenceCode\":\"LIST_DISTRIBUTION_CHANNELS\",\"name\":\"businessDistributionChannels\",\"objectFieldSettings\":[],\"required\":false,\"state\":false,\"system\":false,\"type\":\"String\"}" \
 	-u "test@liferay.com:learn"
 
 # Business Other Brands Offered

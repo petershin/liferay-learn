@@ -1,6 +1,12 @@
-# Adding a Basic Layout and View
+# Adding a Custom Layout and View to Distributor Application
 
-An object's default layout and view include all fields and displays them alphabetically. With over 50 fields, the default user interfaces for the Distributor Application object are no longer viable for creating and displaying entries. While subsequent lessons cover how to design user interfaces using Liferay's page builder features, use these cURL scripts to create a custom view and layout for demonstration purposes: <!--Refine-->
+When you published the Distributor Application object, Liferay created a default [layout](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) and [view](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views). The layout provides a UI for creating and editing object entries, while the view provides a UI for viewing and managing existing entries. Here you'll use cURL scripts to create a custom layout and view.
+
+```{note}
+Subsequent lessons will explore how to design engaging, responsive user interfaces with Liferay's page builder features. Object custom layouts and views are only used here for demonstration purposes.
+```
+
+## Adding the Layout and View
 
 1. Download and unzip the resources for [this exercise](./liferay-t7z2.zip).
 
@@ -20,34 +26,59 @@ An object's default layout and view include all fields and displays them alphabe
    cd liferay-t7z2/curl
    ```
 
-1. Run this script to create the layout:
+1. Run this script to add the layout:
 
    ```bash
    ./ObjectLayout_POST_BasicLayout_ByExternalReferenceCode.sh
    ```
 
-   ![Run the script to create the layout.](./adding-a-basic-layout-and-view/images/01.png)
+1. Verify Basic Layout appears in the Layouts tab for the Distributor Application object.
 
-1. Create the view:
+   ![Verify Basic Layout appears in the Layouts tab for the Distributor Application object.](./adding-a-basic-layout-and-view/images/01.png)
+
+   The layout includes two tabs and organizes the fields into collapsible blocks:
+
+   * The first tab is available during entry creation includes six sections: General Details, Contact Information, Business Details, Business Address, Additional Business Info, and Attachments.
+
+   * The second tab is only available when editing an existing application and includes two sections: Bank Details and Credit Reference Details.
+
+   ![The layout organizes fields into two tabs.](./adding-a-basic-layout-and-view/images/02.png)
+
+1. Add the view:
 
    ```bash
    ./ObjectView_POST_BasicView_ByExternalReferenceCode.sh
    ```
 
-   ![Run the script to create the view.](./adding-a-basic-layout-and-view/images/02.png)
+1. Verify Basic View appears in the Views tab for the Distributor Application object.
 
-1. Practice creating entries in the Distributor Application object to verify the object is using the new layout and view.
+   ![Verify Basic View appears in the Views tab for the Distributor Application object.](./adding-a-basic-layout-and-view/images/03.png)
 
-   The layout includes two tabs and organizes the fields into collapsible blocks. <!--You can access the second tab after creating an entry.-->
+   The view includes five columns: ID, Applicant Name, Business Name, Create Date, Status.
 
-   ![The layout includes two tabs and organizes the fields into collapsible blocks.](./adding-a-basic-layout-and-view/images/03.png)
+   ![The view includes five columns: ID, Applicant Name, Business Name, Create Date, Status.](./adding-a-basic-layout-and-view/images/04.png)
 
-   The view defines a table with five columns.
+Since the custom layout and view are marked as default for Distributor application, they are active immediately.
 
-   ![The view defines a table with five columns.](./adding-a-basic-layout-and-view/images/04.png)
+## Using the Custom Layout and View
 
-<!-- Transition -->
+Practice creating entries in the Distributor Application object to verify the object is using the new layout and view.
 
-Presently, none of the fields include validations to ensure the integrity of application data. But before adding validations, we must explore the concept of relationships when modeling data structures.
+* Layout:
+
+   ![The layout includes two tabs and organizes the fields into collapsible blocks.](./adding-a-basic-layout-and-view/images/05.png)
+
+* View:
+
+   ![The view defines a table with five columns.](./adding-a-basic-layout-and-view/images/06.png)
+
+So far you've added all the fields and picklists Delectable Bonsai needs for following KYC policies, complying with AML laws, and weighing the prospective value of each application.
+
+Now Delectable Bonsai needs a way to store evaluation notes and relate them to specific applications. This is where object relationships come in.
 
 Next: [Defining Relationships](../defining-relationships.md)
+
+## Relevant Concepts
+
+* [Layouts](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts)
+* [Views](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views)

@@ -4,8 +4,10 @@ toc:
 - ./level-0/what-is-a-digital-experience-platform.md
 - ./level-0/liferay-product-offering.md
 - ./level-0/liferay-product-overview.md
-- ./level-0/liferays-unique-value-proposition-organic-innovation-and-open-source-leadership.md
-- ./level-0/liferays-unique-value-proposition-portal-heritage-and-tailoring-liferay.md
+- ./level-0/the-ideal-customer-profile-where-liferay-shines.md
+- ./level-0/the-ideal-customer-profile-target-industries.md
+- ./level-0/the-ideal-customer-profile-target-solutions.md
+- ./level-0/the-ideal-customer-profile-strengths-and-red-flags.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
 ---
 # Level 0
@@ -72,6 +74,7 @@ This module provides an introduction to Liferay's sales approach.
 This module provides an introduction to Liferay DXP and its core capabilities.
 :::
 
+<<<<<<< HEAD
 :::{grid-item-card} Liferay's Unique Value Proposition - Organic Innovation and Open Source Leadership
 :link: ./level-0/liferays-unique-value-proposition-organic-innovation-and-open-source-leadership.md
 
@@ -83,4 +86,30 @@ Learn more about the unique value Liferay can provide as a result of Liferay's c
 
 Learn more about the unique value Liferay can provide as a result of Liferay's portal heritage and the inherent flexibility of the platform.
 :::
+=======
+:::{grid-item-card} The Ideal Customer Profile - Where Liferay Shines
+:link: ./level-0/the-ideal-customer-profile-where-liferay-shines.md
+
+Learn more about the scenarios where Liferay's offerings are strongest.
+:::
+
+:::{grid-item-card} The Ideal Customer Profile - Target Industries
+:link: ./level-0/the-ideal-customer-profile-target-industries.md
+
+This module identifies and describes industries that are ideal for Liferay solutions.
+:::
+
+:::{grid-item-card} The Ideal Customer Profile - Target Solutions
+:link: ./level-0/the-ideal-customer-profile-target-solutions.md
+
+This module provides describes some of the solutions that Liferay excels at delivering.
+:::
+
+:::{grid-item-card} The Ideal Customer Profile - Strengths and Red Flags
+:link: ./level-0/the-ideal-customer-profile-strengths-and-red-flags.md
+
+This module identifies positive indicators and warning signs for prospective deals.
+:::
+
+>>>>>>> 94d952760 (LRDOCS-12036 Migrate four articles, add to level 0 toctree, update tiles)
 ::::

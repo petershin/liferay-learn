@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [DDM Form Annotations](./liferay-v1d9.zip)
 
     ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-v3d9.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-v1d9.zip -O
     ```
 
     ```bash

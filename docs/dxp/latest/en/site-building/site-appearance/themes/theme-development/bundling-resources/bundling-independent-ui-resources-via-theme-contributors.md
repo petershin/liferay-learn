@@ -21,7 +21,7 @@ Then, follow these steps to deploy the example theme contributor:
 1. Download and unzip the example.
 
     ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/site-building/site-appearance/themes/theme-development/bundling-resources/bundling-independent-ui-resources-via-theme-contributors/liferay-w9m6.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/site-building/site-appearance/themes/theme-development/bundling-resources/liferay-w9m6.zip -O
     ```
 
     ```bash

@@ -1,9 +1,9 @@
 ---
 toc:
 - ./level-0/introduction-to-liferay.md
-- ./level-0/what-is-a-digital-experience-platform.md
 - ./level-0/liferay-product-offering.md
 - ./level-0/liferay-product-overview.md
+- ./level-0/liferays-unique-value-proposition.md
 - ./level-0/the-ideal-customer-profile-where-liferay-shines.md
 - ./level-0/the-ideal-customer-profile-target-industries.md
 - ./level-0/the-ideal-customer-profile-target-solutions.md

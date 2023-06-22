@@ -8,9 +8,9 @@ Your first step in writing an application is to model its data structures. This 
 
 * Defining relationships between data entities
 
-<!-- Diagram ![]() -->
+<!-- ![]() -->
 
-<!-- For example, a Customer Relationship Management (CRM) solution may include multiple types of data entities, such as Accounts, Opportunities, Campaigns, and Issues. Each entity would have its own database table with fields for storing different types of values. They could also have relationships between each entity to help integrate data and facilitate customer service.-->
+<!-- In this case, Delectable Bonsai needs to __ for _. Each application needs to _. They then need a way to _.-->
 
 Ready?
 

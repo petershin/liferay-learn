@@ -1,63 +1,11 @@
-# Adding Picklists for Distributor Applications
+# Creating Picklists Using REST APIs
 
-With Liferay Picklists, you can define lists of string values that you can use for single-select and multiselect object fields. Delectable Bonsai needs these lists for the Distributor Application object:
-
-* Business Types
-* Distribution Regions
-* Distribution Channels
-* Order Types
-* Product Types
-* Annual Purchase Volumes
-* Product Labels
-
-![Create these picklists for use in Distributor Application.](./adding-picklists-for-distributor-applications/images/01.png)
-
-The following steps first cover how to create the Business Types list via the Liferay UI. Then, they cover how to create the remaining picklists using the `headless-admin-list-type` REST APIs.
-
-```{tip}
-Using Picklist APIs, you can add lists and items with pre-configured ERCs and localized names in one step. If you're working with multiple lists, this method is far more efficient than manually creating them through the UI.
-```
-
-## Creating Picklists via the Picklists UI
-
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Picklists*.
-
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ), enter Business Types for name, and click *Save*.
-
-1. Begin editing the picklist.
-
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) to add these items to the picklist:
-
-   | Name                 | Key                   |
-   |:---------------------|:----------------------|
-   | Independent Business | `independentBusiness` |
-   | Franchise            | `franchise`           |
-   | Other                | `other`               |
-
-1. Edit each item and set their ERCs to these values:
-
-   | External Reference Code              |
-   |:-------------------------------------|
-   | `BUSINESS_TYPE_INDEPENDENT_BUSINESS` |
-   | `BUSINESS_TYPE_FRANCHISE`            |
-   | `BUSINESS_TYPE_OTHER`                |
-
-   ![Add three items to the picklist and update their ERCs.](./adding-picklists-for-distributor-applications/images/02.png)
-
-1. Change the Picklist's ERC to `LIST_BUSINESS_TYPES`.
-
-   ![Update the picklist's ERC.](./adding-picklists-for-distributor-applications/images/03.png)
-
-1. Click *Save*.
-
-You can now use the picklist to create a single-select or multi-select field in the Distributor Application object. But first, create the remaining picklists using REST APIs.
-
-## Creating Picklists via REST APIs
+The `headless-admin-list-type` service provides REST APIs for performing CRUD operations for picklists. <!--Using these APIs is far more efficient than manually creating picklists through the UI, since you can add lists and items with pre-configured ERCs and localized names all in one step.--> Here you'll use these APIs to add the remaining picklists for the Distributor Application object.
 
 1. Download and unzip the resources for [this exercise](./liferay-r5w2.zip).
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-attributes/adding-picklists-for-distributor-applications/liferay-r5w2.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-attributes/creating-picklists-for-distributor-applications/liferay-r5w2.zip -O
    ```
 
    ```bash
@@ -65,29 +13,6 @@ You can now use the picklist to create a single-select or multi-select field in 
    ```
 
    This ZIP file includes shell scripts for creating the remaining picklists using the `headless-admin-list-type` REST APIs.
-
-   Each POST command uses the following schema for creating lists with their items:
-
-   ```json
-   {
-     "externalReferenceCode": "[LIST_ERC]",
-     "listTypeEntries": [
-       {
-         "externalReferenceCode": "[ITEM_ERC]",
-         "key": "[itemKey]",
-         "name": "[Item Name]",
-         "name_i18n": {
-           "en-US": "[Localized English Item Name]"
-           },
-         "type": ""
-       }
-     ],
-     "name": "[List Name]",
-     "name_i18n": {
-       "en-US": "[Localized English List Name]"
-     }
-   }
-   ```
 
 1. Navigate to the `curl` folder in the `liferay-r5w2` folder.
 
@@ -232,9 +157,8 @@ You can now use the picklist to create a single-select or multi-select field in 
 
 You can now use these picklists to create single-select and multi-select fields in the Distributor Application object.
 
-Next: [Adding Fields to the Distributor Application Object](./adding-fields-to-the-distributor-application-object.md)
+Next: [Adding Picklist Fields to the Object](./adding-picklist-fields-to-the-object.md)
 
 ## Relevant Concepts
 
-* [Picklists](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists)
 * [Picklists API Basics](https://learn.liferay.com/en/w/dxp/building-applications/objects/picklists/picklists-api-basics)

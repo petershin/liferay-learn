@@ -1,10 +1,10 @@
 # Determining Data Entities
 
-Your first step toward creating an application is to define its data entities. In Liferay, you do this by defining various [Objects ](https://learn.liferay.com/en/w/dxp/building-applications/objects) representing your application's entities. These can be anything from insurance claims, support tickets, or commerce products.
+Your first step toward creating an application is to define its data entities. In Liferay, you do this by defining various [Objects](https://learn.liferay.com/en/w/dxp/building-applications/objects) representing your application's entities. These can be anything from insurance claims, support tickets, or commerce products.
 
 When you publish custom objects, Liferay creates a database table for storing data entries. It also generates headless APIs for performing CRUD operations and provides a basic front-end. Using Liferay objects, you can build a robust and flexible foundation for your solution that is able to support the specific needs of your organization.
 
-<!-- Diagram ![](./determining-data-entities/images/01.png) -->
+<!-- ![](./determining-data-entities/images/01.png) -->
 
 Your first application will help Delectable Bonsai manage submitted product distributor applications. This requires a single object definition for creating and storing applications submitted by potential distributors. You'll do this in four steps: 
 

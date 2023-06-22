@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [Roles API Basics](./liferay-z3v5.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-z3v5.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-z3v5.zip -O
    ```
 
    ```bash

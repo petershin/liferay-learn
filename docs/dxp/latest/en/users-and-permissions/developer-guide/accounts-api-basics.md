@@ -17,7 +17,7 @@ Then, follow these steps:
 1. Download and unzip [Accounts API Basics](./liferay-t5p9.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
    ```
 
    ```bash

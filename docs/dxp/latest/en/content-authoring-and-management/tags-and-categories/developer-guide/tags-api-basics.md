@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [Tags API Basics](./liferay-r7u9.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
    ```
 
    ```bash

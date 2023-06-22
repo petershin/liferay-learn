@@ -47,7 +47,7 @@ Then, follow these steps:
 1. Download and unzip the example modules.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-s1j6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-s1j6.zip -O
    ```
 
    ```bash

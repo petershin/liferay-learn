@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip the [example project](dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3a4.zip):
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3a4.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3a4.zip -O
     ```
 
     ```bash

@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [Categories and Vocabulary API Basics](./liferay-p7s4.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/site-building/site-navigation/developer-guide/liferay-p7s4.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/site-building/site-navigation/developer-guide/liferay-p7s4.zip -O
    ```
 
    ```bash

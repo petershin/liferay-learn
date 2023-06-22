@@ -12,7 +12,7 @@ Liferay 7.2 used a different front-end framework for custom form fields. To adju
 1. Download and unzip [the Custom Forms Field Type project](./liferay-c2p9.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O
     ```
 
     ```bash

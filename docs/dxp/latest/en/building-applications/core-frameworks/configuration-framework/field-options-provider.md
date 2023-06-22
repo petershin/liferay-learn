@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [Field Options Provider](./liferay-z4h3.zip)
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-z4h3.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-z4h3.zip -O
     ```
 
     ```bash

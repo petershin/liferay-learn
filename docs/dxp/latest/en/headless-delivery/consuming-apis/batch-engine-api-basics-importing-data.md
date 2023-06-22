@@ -17,7 +17,7 @@ Then follow these steps:
 1. Download and unzip [Batch Engine API Basics](./liferay-g4j2.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
    ```
 
    ```bash

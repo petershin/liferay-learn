@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [Organizations API Basics](./liferay-w2h3.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O
    ```
 
    ```bash

@@ -21,7 +21,7 @@ Then, follow these steps:
 1. Download and unzip the example.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-t2p5.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-t2p5.zip -O
    ```
 
    ```bash

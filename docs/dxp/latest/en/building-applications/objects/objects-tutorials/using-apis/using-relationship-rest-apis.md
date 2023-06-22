@@ -85,7 +85,7 @@ For a complete list of APIs generated for site and company objects, see [Objects
 Run these commands to download and unzip the provided sample code:
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-f9m2.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-f9m2.zip -O
 ```
 
 ```bash

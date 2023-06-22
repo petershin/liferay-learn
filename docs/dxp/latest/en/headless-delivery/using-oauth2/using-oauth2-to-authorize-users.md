@@ -39,7 +39,7 @@ You can create applications that access Liferay's headless REST APIs using the O
 1. Download and unzip the [OAuth2 React App](./liferay-c2b6.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O
    ```
 
    ```bash

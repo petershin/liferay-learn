@@ -25,7 +25,7 @@ Then, follow these steps:
 1. Download and unzip [the DDM Storage Adapter project](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
     ```
 
     ```bash

@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [Enabling Assets](./liferay-s5e6.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
    ```
 
    ```bash

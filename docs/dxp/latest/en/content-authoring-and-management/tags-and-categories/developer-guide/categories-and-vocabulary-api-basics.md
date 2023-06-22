@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [Categories and Vocabulary API Basics](./liferay-f5w3.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-f5w3.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-f5w3.zip -O
    ```
 
    ```bash

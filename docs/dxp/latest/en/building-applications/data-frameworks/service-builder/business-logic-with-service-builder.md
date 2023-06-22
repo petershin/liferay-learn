@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [Business Logic with Service Builder](./liferay-e4g5.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/liferay-e4g5.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/liferay-e4g5.zip -O
     ```
 
     ```bash

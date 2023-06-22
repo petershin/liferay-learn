@@ -41,7 +41,7 @@ Then, follow these steps to deploy the example:
 1. Download and unzip `liferay-r9u2.zip`.
 
     ```bash
-    curl hhttps://learn.liferay.com/dxp/latest/en/liferay-internals/architecture/liferay-r9u2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/architecture/liferay-r9u2.zip -O
     ```
 
     ```bash

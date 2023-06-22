@@ -25,7 +25,7 @@ NPM and Yarn are package managers that you'll use to install the the toolkit and
 1. Download and unzip the example JavaScript project ZIP file.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
     ```
 
     ```bash

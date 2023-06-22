@@ -15,7 +15,7 @@ Then follow these steps:
 1. Download and unzip [Knowledge Base API Basics](./liferay-t3x7.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/knowledge-base/developer-guide/liferay-t3x7.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/knowledge-base/developer-guide/liferay-t3x7.zip -O
    ```
 
    ```bash

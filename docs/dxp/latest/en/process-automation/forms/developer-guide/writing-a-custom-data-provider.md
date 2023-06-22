@@ -21,7 +21,7 @@ Then, follow these steps:
 1. Download and unzip the Acme XML Data Provider.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-b4d8.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-b4d8.zip -O
    ```
 
    ```bash

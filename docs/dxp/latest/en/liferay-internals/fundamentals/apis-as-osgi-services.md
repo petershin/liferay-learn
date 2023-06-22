@@ -28,7 +28,7 @@ Then, follow these steps to start the example modules:
 1. Download and unzip `liferay-p9g2.zip`.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-p9g2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-p9g2.zip -O
     ```
 
     ```bash

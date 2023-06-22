@@ -23,7 +23,7 @@ Then, follow these steps to get an example `SimilarResultsContributor` up and ru
 1. Download and unzip [Acme Similar Results Contributor](./liferay-r1s1.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-r1s1.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-r1s1.zip -O
     ```
 
     ```bash

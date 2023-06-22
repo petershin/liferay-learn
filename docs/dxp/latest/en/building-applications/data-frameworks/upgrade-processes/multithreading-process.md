@@ -17,7 +17,7 @@ Then, follow these steps:
 1. Download and unzip [Multithreading Process](./liferay-j7z3.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
     ```
 
     ```bash

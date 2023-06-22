@@ -83,7 +83,7 @@ Then, follow these steps:
 1. Download and unzip `liferay-e6u7.zip`.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O
     ```
 
     ```bash

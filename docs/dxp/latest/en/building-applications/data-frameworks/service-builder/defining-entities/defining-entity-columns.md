@@ -10,7 +10,7 @@ Here you'll examine the sample project from [Understanding Service Builder Gener
 Start by downloading and unzipping the example:
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
    ```
 
    ```bash

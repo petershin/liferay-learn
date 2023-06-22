@@ -15,7 +15,7 @@ Then, follow these steps:
 1. Download and unzip [Completely Custom Configuration](./liferay-u2g5.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
     ```
 
     ```bash

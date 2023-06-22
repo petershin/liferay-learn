@@ -17,7 +17,7 @@ Then, follow these steps:
 1. Download and unzip [Countries API Basics](./liferay-g6m8.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-g6m8.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-g6m8.zip -O
    ```
 
    ```bash

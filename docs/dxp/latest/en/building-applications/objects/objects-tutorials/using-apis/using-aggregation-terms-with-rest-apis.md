@@ -46,7 +46,7 @@ Once published, you can access the Object via Headless APIs.
 Run the following commands to download and unzip the provided sample code:
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-b3x5.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-b3x5.zip -O
 ```
 
 ```bash

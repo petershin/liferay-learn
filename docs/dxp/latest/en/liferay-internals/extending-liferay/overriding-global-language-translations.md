@@ -68,7 +68,7 @@ Then, follow these steps to deploy the example:
 1. Download and unzip the `liferay-i2f4.zip` example project.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-i2f4.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-i2f4.zip -O
     ```
 
     ```bash
@@ -175,7 +175,7 @@ Here's how to deploy the example:
 1. Download and unzip the `liferay-x8f3.zip` example project.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-x8f3.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-x8f3.zip -O
     ```
 
     ```bash

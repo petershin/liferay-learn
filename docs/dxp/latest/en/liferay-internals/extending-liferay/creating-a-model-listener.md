@@ -17,7 +17,7 @@ Then, follow these steps to deploy an example model listener for the `JournalArt
 1. Download and unzip `Acme Model Listener`.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-n4g6.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-n4g6.zip -O
     ```
 
     ```bash

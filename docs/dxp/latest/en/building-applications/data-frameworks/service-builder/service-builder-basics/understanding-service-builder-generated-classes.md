@@ -8,7 +8,7 @@ Service Builder generates both [tables for your entity](./generating-model-persi
 Get started by downloading and unzipping the example project:
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
 ```
 
 ```bash

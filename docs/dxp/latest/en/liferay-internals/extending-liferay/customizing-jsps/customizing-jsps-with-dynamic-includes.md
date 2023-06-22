@@ -18,7 +18,7 @@ Then, follow these steps:
 1. Download and unzip [Customizing JSPs with Dynamic Includes](./liferay-n3q9.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
    ```
 
    ```bash

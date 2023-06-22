@@ -47,7 +47,7 @@ Then, follow these steps to [create](../../creating-and-managing-objects/creatin
 Run the following commands to download and unzip the provided sample code:
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-t4r3.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-t4r3.zip -O
 ```
 
 ```bash

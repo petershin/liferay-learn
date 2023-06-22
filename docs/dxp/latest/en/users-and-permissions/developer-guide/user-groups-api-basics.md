@@ -15,7 +15,7 @@ Then follow these steps:
 1. Download and unzip [User Groups API Basics](./liferay-y6f2.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6f2.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-y6f2.zip -O
    ```
 
    ```bash

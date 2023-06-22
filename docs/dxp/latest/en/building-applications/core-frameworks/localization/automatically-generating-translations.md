@@ -21,7 +21,7 @@ Then, follow these steps:
 1. Download and unzip [Automatically Generating Translations](./liferay-m7d6.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/localization/liferay-m7d6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/localization/liferay-m7d6.zip -O
    ```
 
    ```bash

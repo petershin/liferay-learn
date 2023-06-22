@@ -21,7 +21,7 @@ Then, follow these steps to deploy the example:
 1. Download and unzip the example.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-w3e7.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-w3e7.zip -O
    ```
 
    ```bash

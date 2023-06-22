@@ -17,7 +17,7 @@ Then, follow these steps:
 1. Download and unzip [Upgrading Your Database Tables](./liferay-p5d2.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-p5d2.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-p5d2.zip -O
    ```
 
    ```bash

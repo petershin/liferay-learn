@@ -38,7 +38,7 @@ Then, follow these steps:
 1. Download and unzip the Acme E5C9 Implementation project.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/process-automation/workflow/developer-guide/liferay-e5c9.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/workflow/developer-guide/liferay-e5c9.zip -O
    ```
 
    ```bash

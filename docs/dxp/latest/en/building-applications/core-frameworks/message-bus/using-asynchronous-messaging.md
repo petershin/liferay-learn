@@ -23,7 +23,7 @@ Then, start with sending a message in an example project.
 1. Download and unzip the example.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-n8k5.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-n8k5.zip -O
    ```
 
    ```bash

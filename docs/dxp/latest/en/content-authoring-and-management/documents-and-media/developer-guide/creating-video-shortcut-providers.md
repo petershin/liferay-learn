@@ -42,7 +42,7 @@ Then, follow these steps:
 1. Download and unzip the example module.
 
    ```bash
-   curl https://learn.liferay.com/docs/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9b6.zip -O
+   curl https://resources.learn.liferay.com/docs/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9b6.zip -O
    ```
 
    ```bash

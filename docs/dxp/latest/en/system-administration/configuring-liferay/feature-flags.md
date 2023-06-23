@@ -13,7 +13,7 @@ To access and manage feature flags, open the *Global Menu* (![Global Menu](../..
 
 1. [Release feature flags](#release-feature-flags)
 
-1. [Dev feature flags](#dev-feature-flags).
+1. [Dev feature flags](#dev-feature-flags)
 
 ![You can use feature flags to control the visibility of features.](./feature-flags/images/01.png)
 

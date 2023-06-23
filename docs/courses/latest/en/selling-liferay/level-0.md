@@ -45,7 +45,7 @@ If you don't have one of the above roles, Level 0 is still an ideal introduction
 
 There are no Liferay prerequisites for Level 0; however, we recommend a general understanding of Enterprise Software and selling Enterprise Software.
 
-Start learning by getting an [Introduction to Liferay](./level-0/introudction-to-liferay.md).
+Start learning by getting an [Introduction to Liferay](./level-0/introduction-to-liferay.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -54,12 +54,6 @@ Start learning by getting an [Introduction to Liferay](./level-0/introudction-to
 :link: ./level-0/introduction-to-liferay.md
 
 This module provides an introduction to Liferay the company and what makes it an exciting and unique organization in the competitive landscape.
-:::
-
-:::{grid-item-card} What is a Digital Experience Platform?
-:link: ./level-0/what-is-a-digital-experience-platform.md
-
-This module reviews the concept of a Digital Experience Platform.
 :::
 
 :::{grid-item-card} Liferay Product Offering
@@ -74,42 +68,16 @@ This module provides an introduction to Liferay's sales approach.
 This module provides an introduction to Liferay DXP and its core capabilities.
 :::
 
-<<<<<<< HEAD
-:::{grid-item-card} Liferay's Unique Value Proposition - Organic Innovation and Open Source Leadership
-:link: ./level-0/liferays-unique-value-proposition-organic-innovation-and-open-source-leadership.md
+:::{grid-item-card} Liferay's Unique Value Proposition
+:link: ./level-0/liferays-unique-value-proposition.md
 
-Learn more about the unique value Liferay can provide as a result of Liferay's culture of organic innovation and leadership in open source.
+This module reviews the concept of a Digital Experience Platform.
 :::
 
-:::{grid-item-card} Liferay's Unique Value Proposition - Portal Heritage and Tailoring Liferay
-:link: ./level-0/liferays-unique-value-proposition-portal-heritage-and-tailoring-liferay.md
-
-Learn more about the unique value Liferay can provide as a result of Liferay's portal heritage and the inherent flexibility of the platform.
-:::
-=======
-:::{grid-item-card} The Ideal Customer Profile - Where Liferay Shines
-:link: ./level-0/the-ideal-customer-profile-where-liferay-shines.md
+:::{grid-item-card} The Ideal Customer Profile
+:link: ./level-0/the-ideal-customer-profile.md
 
 Learn more about the scenarios where Liferay's offerings are strongest.
 :::
 
-:::{grid-item-card} The Ideal Customer Profile - Target Industries
-:link: ./level-0/the-ideal-customer-profile-target-industries.md
-
-This module identifies and describes industries that are ideal for Liferay solutions.
-:::
-
-:::{grid-item-card} The Ideal Customer Profile - Target Solutions
-:link: ./level-0/the-ideal-customer-profile-target-solutions.md
-
-This module provides describes some of the solutions that Liferay excels at delivering.
-:::
-
-:::{grid-item-card} The Ideal Customer Profile - Strengths and Red Flags
-:link: ./level-0/the-ideal-customer-profile-strengths-and-red-flags.md
-
-This module identifies positive indicators and warning signs for prospective deals.
-:::
-
->>>>>>> 94d952760 (LRDOCS-12036 Migrate four articles, add to level 0 toctree, update tiles)
 ::::

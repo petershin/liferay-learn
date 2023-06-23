@@ -106,9 +106,9 @@ The account (CC West) must now request a quote for this product while all other 
 ```{important}
 The default discovery logic for price lists and promotion lists is `hierarchy`. This works based on priority. The highest priority eligible price list or promotion list gets applied to the account. 
 
-When using the `lowest` discovery logic for price lists and promotion lists, price on application is considered the lowest compared to price lists and promotion lists (price on application < price lists & promotion lists).
+When using the `lowest` discovery logic for price lists and promotion lists, price on application has the highest precedence compared to price lists and promotion lists (price on application > price lists & promotion lists).
 
-Consider a scenario where an account is eligible for a custom price list and a promotion list with the promotion list having the lower price for a specific SKU. If you create another price list or promotion list and set the SKU to be priced on application, then that is given priority over everything else.
+Consider a scenario where an SKU is priced on application in the base price list. You have a long standing account that can buy the same SKU at a fixed price. To do this, you can create a custom price list or promotion list and set a price for the SKU and its eligibility for the specific account account. This takes precedence over the base price list (price on application) for that account. Other accounts have to request a quote for the same SKU. 
 ```
 
 ## Order Lifecycle of Products Priced on Application

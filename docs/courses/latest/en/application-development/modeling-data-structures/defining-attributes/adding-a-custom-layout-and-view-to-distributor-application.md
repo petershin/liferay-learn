@@ -11,7 +11,7 @@ Subsequent lessons will explore how to design engaging, responsive user interfac
 1. Download and unzip the resources for [this exercise](./liferay-t7z2.zip).
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-attributes/adding-a-basic-layout-and-view/liferay-t7z2.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-attributes/adding-a-custom-layout-and-view-to-distributor-application/liferay-t7z2.zip -O
    ```
 
    ```bash
@@ -34,7 +34,7 @@ Subsequent lessons will explore how to design engaging, responsive user interfac
 
 1. Verify Basic Layout appears in the Layouts tab for the Distributor Application object.
 
-   ![Verify Basic Layout appears in the Layouts tab for the Distributor Application object.](./adding-a-basic-layout-and-view/images/01.png)
+   ![Verify Basic Layout appears in the Layouts tab for the Distributor Application object.](./adding-a-custom-layout-and-view-to-distributor-application/images/01.png)
 
    The layout includes two tabs and organizes the fields into collapsible blocks:
 
@@ -42,7 +42,7 @@ Subsequent lessons will explore how to design engaging, responsive user interfac
 
    * The second tab is only available when editing an existing application and includes two sections: Bank Details and Credit Reference Details.
 
-   ![The layout organizes fields into two tabs.](./adding-a-basic-layout-and-view/images/02.png)
+   ![The layout organizes fields into two tabs.](./adding-a-custom-layout-and-view-to-distributor-application/images/02.png)
 
 1. Add the view:
 
@@ -52,11 +52,11 @@ Subsequent lessons will explore how to design engaging, responsive user interfac
 
 1. Verify Basic View appears in the Views tab for the Distributor Application object.
 
-   ![Verify Basic View appears in the Views tab for the Distributor Application object.](./adding-a-basic-layout-and-view/images/03.png)
+   ![Verify Basic View appears in the Views tab for the Distributor Application object.](./adding-a-custom-layout-and-view-to-distributor-application/images/03.png)
 
    The view includes five columns: ID, Applicant Name, Business Name, Create Date, Status.
 
-   ![The view includes five columns: ID, Applicant Name, Business Name, Create Date, Status.](./adding-a-basic-layout-and-view/images/04.png)
+   ![The view includes five columns: ID, Applicant Name, Business Name, Create Date, Status.](./adding-a-custom-layout-and-view-to-distributor-application/images/04.png)
 
 Since the custom layout and view are marked as default for Distributor application, they are active immediately.
 
@@ -66,11 +66,11 @@ Practice creating entries in the Distributor Application object to verify the ob
 
 * Layout:
 
-   ![The layout includes two tabs and organizes the fields into collapsible blocks.](./adding-a-basic-layout-and-view/images/05.png)
+   ![The layout includes two tabs and organizes the fields into collapsible blocks.](./adding-a-custom-layout-and-view-to-distributor-application/images/05.png)
 
 * View:
 
-   ![The view defines a table with five columns.](./adding-a-basic-layout-and-view/images/06.png)
+   ![The view defines a table with five columns.](./adding-a-custom-layout-and-view-to-distributor-application/images/06.png)
 
 So far you've added all the fields and picklists Delectable Bonsai needs for following KYC policies, complying with AML laws, and weighing the prospective value of each application.
 

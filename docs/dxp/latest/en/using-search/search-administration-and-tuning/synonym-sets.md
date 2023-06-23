@@ -137,7 +137,25 @@ Now that you have the default mapping file, make the necessary changes to add th
    }
    ```
 
-   Adding settings in this configuration augments those available in the out of the box index settings. Find the default JSON settings in the source code's `index-settings.json` file. Here you're creating a new analyzer called `custom_liferay_analyzer_fr` which uses a new filter `my-synonym-filter-fr`. The `synonyms` array is empty for now: Synonym Sets created through the UI will appear here.
+   Adding settings in this configuration augment those available in the out of the box index settings. Find the default JSON settings in the source code's `index-settings.json` file. Here you're creating a new analyzer called `custom_liferay_analyzer_fr` which uses a new filter `my-synonym-filter-fr`. The `synonyms` array is empty for now: Synonym Sets created through the UI will appear here.
+
+1. Modify the mappings file you copied. Leave the opening curly brace `{`, but delete lines 2 and 3 entirely (the line with the index name and the line with `mappings`):
+
+   ```json
+   "liferay-[COMPANY_ID]": {
+       "mappings" : {
+   ```
+
+   Then, from the end of the mappings, delete the concluding two curly braces.
+
+   ```json
+       }
+   }
+   ```
+
+   ```{note}
+   For Liferay 7.4 U80 or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
+   ```
 
 1. Using  the Override Type Mappings field, change the analyzer for the `template_fr` dynamic field to use the custom analyzer (`custom_liferay_analyzer_fr`):
 
@@ -164,10 +182,6 @@ Now that you have the default mapping file, make the necessary changes to add th
              }
          },
          // (...)
-   ```
-
-   ```{note}
-   For Liferay 7.4 U80 or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
    ```
 
    The important change here is that the default assigned analyzer (`french`) is replaced with the custom analyzer `custom_liferay_analyzer_fr`.

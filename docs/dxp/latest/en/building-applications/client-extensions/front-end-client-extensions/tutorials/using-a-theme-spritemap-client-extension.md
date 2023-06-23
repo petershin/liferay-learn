@@ -133,8 +133,8 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 
 ## Use the New Sprite Map on a Page
 
-```{warning}
-The theme sprite map client extension is currently behind a [dev feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) (`LPS-166479`). You must not use this client extension in production. Use it only for testing purposes. 
+```{note}
+The theme sprite map client extension is currently behind a [release feature flag](../../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags). You must enable the feature flag before start using it.
 ```
 
 Configure a page to use your deployed client extension:

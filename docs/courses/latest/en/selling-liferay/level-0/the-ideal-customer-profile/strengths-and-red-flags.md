@@ -2,20 +2,9 @@
 uuid: 6e2d033e-bb4b-4c04-91a1-641def7b286c
 ---
 
-# The Ideal Customer Profile - Strengths and Red Flags
+# Strengths and Red Flags
 
-**At a Glance**
-
-* Liferay shines when customers requirements:
-  * Are complex
-  * Have a focus on security and access control
-  * Require an ability to scale
-* Liferay is used across all industry verticals
-* Liferay can be used to solve almost any business problem
-
-## Strengths and Red Flags
-
-To help to summarize this module, there are many types of needs, buyers and situations that are particularly suitable for Liferay offerings and some that raise red flags we should pay attention to:
+To help to summarize this module, there are many needs, buyers, and situations that are particularly suitable for Liferay offerings and some that raise red flags we should pay attention to:
 
 * Use Cases - Simple or Complex?
 * Vendor Mix - tied to one, or flexible?
@@ -31,86 +20,78 @@ To help to summarize this module, there are many types of needs, buyers and situ
 * Product fit?
 * Portal and Commerce alignment?
 
-### Use Cases
+## Use Cases
 
-If there are multiple use case needs, self-service needs and / or any type of complexity in the play, that is good for Liferay.
+If there are multiple use case needs, self-service needs and/or any type of complexity in the play, that is good for Liferay.
 
-Conversely if the need is for a simple website, there are much cheaper options available. Even then, if the customer has future needs for a customer portal or an intranet it is worth challenging them to consider the longer term and benefits of using a single platform for multiple solutions.
+Conversely if the need is for a simple website, there are much cheaper options available. Even then, if the customer has future needs for a customer portal or an intranet, it is worth challenging them to consider the longer term benefits of using a single platform for multiple solutions.
 
-### Vendor Mix
+## Vendor Mix
 
-If the prospect already has Several technologies from several vendors, it shows they are not totally committed to just one vendor.
+If the prospect already has several technologies from several vendors, it shows they are not totally committed to just one vendor. However, if they are tied tightly to a single technology vendor, it will be hard to get them to choose anything else unless they are unhappy with that provider.
 
-Meanwhile if they are tied tightly to a single technology vendor, it will be hard to get them to choose anything else unless they are unhappy with that provider.
+## Who’s Driving the Buying Process?
 
-### Who’s Driving the Buying Process?
+This is somewhat simplistic, but it is usually positive for Liferay if the buying process is IT-driven.
 
-This is somewhat simplistic, but it is usually positive for Liferay if the buying process is IT-Driven.
+If the process is entirely driven by Marketing buyers this can be more challenging - for example they might expect certain marketing capabilities which Liferay does not have natively. In these cases, Liferay’s strong integration story means that these capabilities can be brought into the overall solution, which can turn things in our favor. In marketing-driven buying processes it is important to dig deeper to find the technical buying influences. They will be needed in the implementation, and they might help us.
 
-If the process is entirely driven by Marketing buyers this can be more challenging - for example they might expect certain marketing capabilities which Liferay does not have natively.
+This is even true with SaaS buyers, who are often more business-focused - a tailored solution still needs some degree of technical expertise.
 
-In these cases though Liferay’s strong integration story means that these capabilities can be brought into the overall solution, which can turn things in our favor. In marketing driven buying processes it is important to dig deeper to find the technical buying influences. They will be needed in the implementation and they might help us.
+## Consumer or broad scope
 
-This is even true with SaaS buyers, who will often be more business-focussed - a tailored solution will still need some degree of technical expertise.
+B2B, B2B2C, B2E, G2C, G2B (or multiple of these) use cases are often good for Liferay, but when it is **pure** B2C, we are not the strongest player.
 
-### Consumer or broad scope
+## Turnkey application or Tailored Solution
 
-B2B, B2B2C, B2E, G2C, G2B (or multiple of these) use cases are often very good for Liferay, but when it is **pure** B2C we are not the strongest player.
+Generally enterprise needs and scalability requirements, with the need for flexibility and tailoring makes our position stronger. But if the need seems to be mainly for a turnkey application or a point solution, it might not be right for us. As with any of these examples, it is worth challenging the buyer on whether they can really fulfill their needs without tailoring.
 
-### Turnkey application or Tailored Solution
+## Integration
 
-Generally enterprise needs and scalability requirements, with the need for flexibility, and for tailoring makes our position stronger.
+Liferay’s integration and interoperability capabilities are strong, so complex and several integration needs make our case stronger.
 
-But if the need seems to be mainly for a turnkey application or a point solution, it might not be right for us. As with any of these examples, it is worth challenging the buyer on whether they can really fulfil their needs without tailoring.
+If there’s a verified need for native integrations, that however may not be our best scenario - but note that it is rare to have a native integration covering the customer’s needs on a sufficient level.
 
-### Integration
+## Open Source
 
-Liferay’s integration and interoperability capabilities are strong - so complex and several integration needs make our case stronger.
+Obviously if the buyer has a preference for open source but they need enterprise-grade support and services, that is a really strong opportunity for Liferay.
 
-If there’s a verified need for native integrations, that however may not be our best scenario - but note that it is really rare to have a native integration covering the customer’s needs on a sufficient level.
+## Prospect Access
 
-### Open Source
-
-Obviously if the buyer has a preference for Open Source but they need enterprise grade support and services that is a really strong opportunity for Liferay.
-
-### Prospect Access
-
-Generally if we have direct access to the prospect that will be a better sign than if there is a buying organization or a consultant between the prospect and us, that could turn out to be a challenge.
+Generally if we have direct access to the prospect that is a better sign than if there is a buying organization or a consultant between the prospect and us: that could turn out to be a challenge.
 
 It is always easier if direct access to the prospect can be achieved.
 
-### Existing Portals
+## Existing Portals
 
-Another strong opportunity for us is when there’s a Legacy portal without support - especially when it is an enterprise. There aren’t that many great options for enterprise portal solutions.
+Another strong opportunity for us is when there’s a legacy portal without support---especially when it is an enterprise. There aren’t that many great options for enterprise portal solutions.
 
-### Size of Organization
+## Size of Organization
 
-When the buyer is a small business or small organization it is quite rare for them to have sufficient budget and sufficient resources for a platform like Liferay.
+When the buyer is a small business or small organization it is rare for them to have sufficient budget and sufficient resources for a platform like Liferay.
 
 The investment expectation discussion should be done quite early in the opportunity.
 
-### Governance & Security
+## Governance & Security
 
-Where there are complex governance needs and or a lot of different user groups and types and need for granular access rights and management and security these are more indicators where Liferay can be a good fit.
+Where there are complex governance needs and or a lot of different user groups, along with a need for granular access rights and management and security, these are indicators of a good fit for Liferay. 
 
-### Product Fit
+## Product Fit
 
-Customers’ generally do not go to market to buy a Digital Experience Platform - but they do look for things like Marketing Automation platforms, Customer Data platforms, Master Data Management, CRM, and so on.  And it is important to remember that while Liferay can cover some of those needs, we are not a best-of-breed CRM, or CDP, or MDM.
+Customers generally do not go to market to buy a digital experience platform, but they do look for things like marketing automation platforms, customer data platforms, master data management, CRM, and so on. It is important to remember that while Liferay can cover some of those needs, we are not a best-of-breed CRM, or CDP, or MDM.
 
 Remember the cost of sale and investing into opportunities that cannot be won is the same as those that can be!
 
-### Commerce and Portals
+## Commerce and Portals
 
-One of the reasons that B2B Commerce opportunities are hard for Consumer-focussed vendors is that they usually need Portal capabilities as well.  When both of these sets of requirements are present that’s likely to put Liferay in a strong position.
+One of the reasons that B2B Commerce opportunities are hard for consumer-focused vendors is that they usually need portal capabilities as well. When both of these sets of requirements are present that’s likely to put Liferay in a strong position.
 
 ## Summary
 
-![A summary of positive and negative signs to finding success in pursing a deal.](./the-ideal-customer-profile-strengths-and-red-flags/images/01.png)
+![A summary of positive and negative signs to finding success in pursing a deal.](./strengths-and-red-flags/images/01.png)
 
-Finally, it is important to remember that neither of these lists are exhaustive and none of these items alone make it a 100% win or 100% lost case. But the more there are the thumbs up and the less of thumbs down then the stronger our chances of winning will be.
+Finally, it is important to remember that these lists are not exhaustive, and none of these items alone make it a 100% win or 100% lost case. But the more thumbs up and the less thumbs down, the stronger our chances of winning are.
 
-## What’s Next
+Congratulations! You've completed the module on the ideal customer profile! 
 
-In the next module we’ll talk about the horizontal and industry challenges Liferay solves for.
-
-[Let’s go!]()
+Next: the horizontal and industry challenges Liferay solves for.

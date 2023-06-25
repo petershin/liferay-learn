@@ -1,0 +1,309 @@
+{
+    "accountEntryRestricted": false,
+    "accountEntryRestrictedObjectFieldName": "",
+    "actions": {
+        "delete": {},
+        "get": {},
+        "permissions": {},
+        "update": {}
+    },
+    "active": true,
+    "defaultLanguageId": "en_US",
+    "enableCategorization": true,
+    "enableComments": true,
+    "enableObjectEntryHistory": false,
+    "externalReferenceCode": "C_APPLICATION_EVALUATION",
+    "label": {
+        "en_US": "Application Evaluation"
+    },
+    "name": "ApplicationEvaluation",
+    "objectActions": [],
+    "objectFields": [
+        {
+            "DBType": "String",
+            "businessType": "Picklist",
+            "externalReferenceCode": "FIELD_ASSESSMENT_SCORE",
+            "indexed": true,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "en_US",
+            "label": {
+                "en_US": "Assessment Score"
+            },
+            "listTypeDefinitionExternalReferenceCode": "LIST_ASSESSMENT_SCORES",
+            "name": "assessmentScore",
+            "objectFieldSettings": [],
+            "readOnly": "false",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": false,
+            "type": "String"
+        },
+        {
+            "DBType": "Long",
+            "businessType": "Attachment",
+            "externalReferenceCode": "FIELD_ATTACHMENT",
+            "indexed": true,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "en_US",
+            "label": {
+                "en_US": "Attachment"
+            },
+            "name": "attachment",
+            "objectFieldSettings": [
+                {
+                    "name": "acceptedFileExtensions",
+                    "value": "jpeg, jpg, pdf, png"
+                },
+                {
+                    "name": "maximumFileSize",
+                    "value": 100
+                },
+                {
+                    "name": "fileSource",
+                    "value": "userComputer"
+                },
+                {
+                    "name": "showFilesInDocumentsAndMedia",
+                    "value": false
+                }
+            ],
+            "readOnly": "false",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": false,
+            "type": "Long"
+        },
+        {
+            "DBType": "String",
+            "businessType": "Text",
+            "externalReferenceCode": "FIELD_BUSINESS_NAME",
+            "indexed": true,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "en_US",
+            "label": {
+                "en_US": "Business Name"
+            },
+            "name": "businessName",
+            "objectFieldSettings": [],
+            "readOnly": "false",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": false,
+            "type": "String"
+        },
+        {
+            "DBType": "Date",
+            "businessType": "Date",
+            "externalReferenceCode": "FIELD_CREATE_DATE",
+            "indexed": false,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "",
+            "label": {
+                "en_US": "Create Date"
+            },
+            "name": "createDate",
+            "objectFieldSettings": [],
+            "readOnly": "true",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": true,
+            "type": "Date"
+        },
+        {
+            "DBType": "String",
+            "businessType": "Text",
+            "externalReferenceCode": "FIELD_CREATOR",
+            "indexed": false,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "",
+            "label": {
+                "en_US": "Author"
+            },
+            "name": "creator",
+            "objectFieldSettings": [],
+            "readOnly": "true",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": true,
+            "type": "String"
+        },
+        {
+            "DBType": "String",
+            "businessType": "Picklist",
+            "externalReferenceCode": "FIELD_DECISION",
+            "indexed": true,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "en_US",
+            "label": {
+                "en_US": "Decision"
+            },
+            "listTypeDefinitionExternalReferenceCode": "LIST_DECISIONS",
+            "name": "decision",
+            "objectFieldSettings": [],
+            "readOnly": "false",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": false,
+            "type": "String"
+        },
+        {
+            "DBType": "String",
+            "businessType": "Text",
+            "externalReferenceCode": "FIELD_EXTERNAL_REFERENCE_CODE",
+            "indexed": false,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "",
+            "label": {
+                "en_US": "External Reference Code"
+            },
+            "name": "externalReferenceCode",
+            "objectFieldSettings": [],
+            "readOnly": "false",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": true,
+            "type": "String"
+        },
+        {
+            "DBType": "Long",
+            "businessType": "LongInteger",
+            "externalReferenceCode": "FIELD_ID",
+            "indexed": true,
+            "indexedAsKeyword": true,
+            "indexedLanguageId": "",
+            "label": {
+                "en_US": "ID"
+            },
+            "name": "id",
+            "objectFieldSettings": [],
+            "readOnly": "true",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": true,
+            "type": "Long"
+        },
+        {
+            "DBType": "Clob",
+            "businessType": "RichText",
+            "externalReferenceCode": "FIELD_INTERVIEW_NOTES",
+            "indexed": true,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "en_US",
+            "label": {
+                "en_US": "Interview Notes"
+            },
+            "name": "interviewNotes",
+            "objectFieldSettings": [],
+            "readOnly": "false",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": false,
+            "type": "Clob"
+        },
+        {
+            "DBType": "Date",
+            "businessType": "Date",
+            "externalReferenceCode": "FIELD_MODIFIED_DATE",
+            "indexed": false,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "",
+            "label": {
+                "en_US": "Modified Date"
+            },
+            "name": "modifiedDate",
+            "objectFieldSettings": [],
+            "readOnly": "true",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": true,
+            "type": "Date"
+        },
+        {
+            "DBType": "Clob",
+            "businessType": "RichText",
+            "externalReferenceCode": "FIELD_RECOMMENDATION_COMMENTS",
+            "indexed": true,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "en_US",
+            "label": {
+                "en_US": "Recommendation Comments"
+            },
+            "name": "recommendationComments",
+            "objectFieldSettings": [],
+            "readOnly": "false",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": false,
+            "type": "Clob"
+        },
+        {
+            "DBType": "String",
+            "businessType": "MultiselectPicklist",
+            "externalReferenceCode": "FIELD_RECOMMENDATIONS",
+            "indexed": true,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "en_US",
+            "label": {
+                "en_US": "Recommendations"
+            },
+            "listTypeDefinitionExternalReferenceCode": "LIST_RECOMMENDATIONS",
+            "name": "recommendations",
+            "objectFieldSettings": [],
+            "readOnly": "false",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": false,
+            "type": "String"
+        },
+        {
+            "DBType": "String",
+            "businessType": "Text",
+            "externalReferenceCode": "FIELD_STATUS",
+            "indexed": false,
+            "indexedAsKeyword": false,
+            "indexedLanguageId": "",
+            "label": {
+                "en_US": "Status"
+            },
+            "name": "status",
+            "objectFieldSettings": [],
+            "readOnly": "true",
+            "readOnlyConditionExpression": "",
+            "required": false,
+            "state": false,
+            "system": true,
+            "type": "String"
+        }
+    ],
+    "objectLayouts": [],
+    "objectRelationships": [],
+    "objectValidationRules": [],
+    "objectViews": [],
+    "panelCategoryKey": "control_panel.object",
+    "parameterRequired": false,
+    "pluralLabel": {
+        "en_US": "Application Evaluations"
+    },
+    "portlet": false,
+    "restContextPath": "/o/c/applicationevaluations",
+    "scope": "company",
+    "status": {
+        "code": 0,
+        "label": "approved",
+        "label_i18n": "Approved"
+    },
+    "system": false,
+    "titleObjectFieldName": "id"
+}

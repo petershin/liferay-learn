@@ -16,7 +16,7 @@ Delectable Bonsai's Distributor Application object needs fields for collecting a
    | Mandatory                 | False            |
    | Accept Unique Values Only | True             |
 
-   ![Add the Applicant Email field.](./adding-fields-to-the-distributor-application-object/images/01.png)
+   ![Add the Applicant Email field.](./adding-fields-to-the-distributor-application-object/images/01.png) <!--UPDATE IMG-->
 
 1. Add a field for the primary contact's name:
 

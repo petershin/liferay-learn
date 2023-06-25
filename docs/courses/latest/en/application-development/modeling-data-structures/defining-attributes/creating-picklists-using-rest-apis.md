@@ -155,7 +155,11 @@ The `headless-admin-list-type` service provides REST APIs for performing CRUD op
    | Standard US | `standardUS` | `LABEL_STANDARD_US`     |
    | Localized   | `localized`  | `LABEL_LOCALIZED`       |
 
-You can now use these picklists to create single-select and multi-select fields in the Distributor Application object.
+When finished, you should have seven picklists:
+
+![Create these picklists for use in the Distributor Application object.](./creating-picklists-using-rest-apis/images/01.png)
+
+You can now use them to create single-select and multi-select fields in the Distributor Application object.
 
 Next: [Adding Picklist Fields to the Object](./adding-picklist-fields-to-the-object.md)
 

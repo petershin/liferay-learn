@@ -1,6 +1,6 @@
 # Adding Fields Using REST APIs
 
-The `object-admin` service provides REST APIs for performing CRUD operations on object definitions. This includes APIs for adding fields to an object definition. Here you'll use these APIs to add business and credit reference fields to the Distributor Application object.
+The `object-admin` service provides REST APIs for performing CRUD operations on object definitions, such as adding fields. Here you'll use these APIs to add business and credit reference fields to the Distributor Application object.
 
 1. Download and unzip the resources for [this exercise](./liferay-p6k3.zip).
 
@@ -84,7 +84,7 @@ The `object-admin` service provides REST APIs for performing CRUD operations on 
 
 Once finished, the Distributor Application should have 48 fields. These fields can help Delectable Bonsai collect the data they need for evaluating and vetting each applicant in compliance with KYC policies and AML laws.
 
-![The Distributor Application object should have 48 fields.](./adding-fields-using-rest-apis/images/01.png)
+![The Distributor Application object should have 48 fields.](./adding-fields-using-rest-apis/images/01.png) <!--UPDATE IMG-->
 
 Now Delectable Bonsai need to collect data necessary for assessing the relative value of each business opportunity. In this case, Delectable Bonsai wants applicants to select from predefined options. To achieve this, first create picklists.
 

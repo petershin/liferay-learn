@@ -3,7 +3,7 @@
 When you published the Distributor Application object, Liferay created a default [layout](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) and [view](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views). The layout provides a UI for creating and editing object entries, while the view provides a UI for viewing and managing existing entries. Here you'll use cURL scripts to create a custom layout and view.
 
 ```{note}
-Subsequent lessons will explore how to design engaging, responsive user interfaces with Liferay's page builder features. Object custom layouts and views are only used here for demonstration purposes.
+Subsequent lessons will explore how to design engaging, responsive user interfaces with Liferay's page builder features. Object custom layouts and views are only used here during development.
 ```
 
 ## Adding the Layout and View

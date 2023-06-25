@@ -10,17 +10,17 @@ Liferay picklists are predefined lists of string values that you can use with ob
 * Annual Purchase Volumes
 * Product Labels
 
-![Create these picklists for use in the Distributor Application object.](./creating-picklists-for-distributor-applications/images/01.png)
-
 To begin,
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Picklists*.
 
 1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ), enter Business Types for name, and click *Save*.
 
+   ![Create the Business Types picklist.](creating-picklists-for-distributor-applications/images/01.png)
+
 1. Begin editing the picklist.
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) to add these items to the picklist:
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) and add these items to the picklist:
 
    | Name                 | Key                   |
    |:---------------------|:----------------------|

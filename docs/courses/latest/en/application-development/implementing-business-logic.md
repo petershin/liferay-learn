@@ -12,10 +12,8 @@ Examples include,
 
 * Automating Notifications
 
-<!-- Other example: Integrating with External Systems, Calculations, Data Transformation, Localization, Logging -->
+<!-- Other examples: Integrating with External Systems, Calculations, Data Transformation, Localization, Logging -->
 
-Having modeled the Distributor Application object, you can incorporate these additional functionalities to make it more flexible/adaptable/scalable<!--w/c--> and ensure it fulfills Delectable Bonsai's business requirements.
+Having modeled the Distributor Application object, you can begin incorporating this logic to ensure your solution meets Delectable Bonsai's business requirements. Once implemented, they can onboard distributors quickly and safely.
 
-<!-- Transition... "Once implemented, Delectable Bonsai can onboard distributors quickly and safely."-->
-
-Ready? [Let's Go](./implementing-business-logic/validations.md)!
+Ready? [Let's Go](./implementing-business-logic/validating-fields.md)!

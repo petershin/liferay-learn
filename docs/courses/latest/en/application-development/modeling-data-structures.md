@@ -4,13 +4,13 @@ Your first step in writing an application is to model its data structures. This 
 
 * Identifying the types of data entities you want to store and manipulate
 
-* Adding attributes to each data entity
+* Adding attributes to each type of entity
 
-* Defining relationships between data entities
+* Defining relationships between entity types
 
 <!-- ![]() -->
 
-<!-- In this case, Delectable Bonsai needs to __ for _. Each application needs to _. They then need a way to _.-->
+<!-- In this case, Delectable Bonsai needs to store and manage distributor applications. Each application should include details for identifying the business. They also need a way of storing application evaluation notes and relating those notes to a specific application.-->
 
 Ready?
 

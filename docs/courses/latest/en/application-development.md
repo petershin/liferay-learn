@@ -13,7 +13,8 @@ Here, we'll continue the story of Delectable Bonsai, a fictional B2B producer of
 
 These applications are deployable on LXC, LXC-SM, and self-hosted environments.
 
-<!-- Add screenshots of the applications here. -Rich -->
+<!-- Add screenshots of the applications here. -Rich 
+Maybe have four images side by side. highlevel picture-->
 
 These applications will help Delectable Bonsai's partners apply for and obtain new business accounts.
 

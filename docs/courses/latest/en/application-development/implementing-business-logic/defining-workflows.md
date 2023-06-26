@@ -1,6 +1,6 @@
-# Workflow and Process Automation
+# Defining Workflows
 
-Workflows define approval processes for entries. With Liferay, you can enable workflow for custom objects or use picklists to define custom states.
+<!-- Workflows define approval processes for entries. With Liferay, you can enable workflow for custom objects or use picklists to define custom states. -->
 
 <!-- Diagram? -->
 
@@ -116,5 +116,7 @@ To practice using the application state, you must first add the field to the obj
 ### Designing a Workflow Review Process
 
 ### Enabling Workflow -->
+
+Next: [Automating Notifications](./automating-notifications.md)
 
 ## Relevant Concepts

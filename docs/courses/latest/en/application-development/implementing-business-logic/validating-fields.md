@@ -1,14 +1,14 @@
-# Validations
+# Validating Fields
 
-Validations set rules for determining whether field values are valid, ensuring user input meets your criteria. By validating data at the point of entry, applications can ensure the data meets the required format, type, and constraints, preventing data errors and reducing the need for manual data cleanup. In this way, validations can improve the integrity and consistency of gathered data (e.g., email addresses, phone numbers). With Liferay, this involves adding [validations](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/validations) directly to object definitions.
+Validations set rules for determining whether field values are valid, ensuring user input meets your criteria. By validating data at the point of entry, applications can ensure the data meets the required format, type, and constraints, preventing data errors and reducing the need for manual data cleanup. In this way, validations can improve the integrity and consistency of gathered data (e.g., email addresses, phone numbers). In Liferay, this involves adding validations directly to the object definition.
 
 <!-- Implementation img -->
 
-Thus far, Delectable Bonsai applicants can enter any value into Distributor Application fields. To ensure applicants provide the correct information, add validations for all email, phone number, and URL fields.
+So far, Delectable Bonsai has no way to ensure applicants provide valid, consistent data for Distributor Application's email, phone number, and URL fields. Here you'll add these validations.
 
-![Add validations for email, phone number, and URL fields.](./validations/images/01.png)
+![Add validations for email, phone number, and URL fields.](./validating-fields/images/01.png)
 
-## Adding Validation for Email Fields
+## Adding Validations for Email Fields
 
 Liferay provides the `isEmailAddress()` function for checking whether a field's value uses standard email elements (e.g., `@gmail`, `.com`).
 
@@ -25,7 +25,7 @@ Follow these steps to validate the `applicantEmail` and `primaryContactEmail` fi
    | Label | Email, applicantEmail |
    | Type  | Expression Builder    |
 
-   ![Enter a label, select a type, and click Save.](./validations/images/02.png)
+   ![Enter a label, select a type, and click Save.](./validating-fields/images/02.png)
 
 1. Begin editing the newly created validation.
 
@@ -36,7 +36,7 @@ Follow these steps to validate the `applicantEmail` and `primaryContactEmail` fi
    | Active Validation | True          |
    | Trigger Event     | On Submission |
 
-   ![Activate the validation and select the On Submission trigger.](./validations/images/03.png)
+   ![Activate the validation and select the On Submission trigger.](./validating-fields/images/03.png)
 
 1. Go to the *Conditions* tab and enter these values:
 
@@ -51,15 +51,15 @@ Follow these steps to validate the `applicantEmail` and `primaryContactEmail` fi
    You can use validations to make optional fields mandatory by not allowing users to leave the field empty.
    ```
 
-   ![Use the isEmailAddress function with the applicantEmail field.](./validations/images/04.png)
+   ![Use the isEmailAddress function with the applicantEmail field.](./validating-fields/images/04.png)
 
    If users attempt to submit an entry with an invalid value, Liferay displays the set error message.
 
-   ![Enter an error message displayed to end users when they attempt to submit invalid values.](./validations/images/05.png)
+   ![Enter an error message displayed to end users when they attempt to submit invalid values.](./validating-fields/images/05.png)
 
 1. Click *Save*.
 
-   ![Click Save to activate the validation.](./validations/images/06.png)
+   ![Click Save to activate the validation.](./validating-fields/images/06.png)
 
 1. Repeat the above steps to validate the `primaryContactEmail` field using the `isEmailAddress()` function.
 
@@ -129,11 +129,17 @@ Follow these steps to validate the `businessWebsite` field:
 
 1. Click *Save*.
 
-<!-- 
 ## Testing the Validations
--->
 
-<!-- Next: []() -->
+Now that you've added these validations, you can begin testing them now.
+
+Liferay validates each field upon entry submission. If the value does not follow validation rules, Liferay displays the validation's error message.
+
+![Liferay displays the validation's error message.](./validating-fields/images/06.png) <!--ADD IMAGE-->
+
+After adding validations, Delectable Bonsai wants to ensure only the intended users have access to application and evaluation data.
+
+Next: [Managing Access to Data](./managing-access-to-data.md)
 
 ## Relevant Concepts
 

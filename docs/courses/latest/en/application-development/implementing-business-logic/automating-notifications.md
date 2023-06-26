@@ -1,4 +1,4 @@
-# Notifications
+# Automating Notifications
 
 <!-- Separate Article. -->
 
@@ -29,7 +29,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
 
 ![Create four notification templates for the Distributor Application Object.](./notifications/images/01.png)
 
-### Application Submitted Template
+## Application Submitted Template
 
 1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Templates*.
 
@@ -73,7 +73,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
    Notification template ERCs use a randomly generated UUID, but you can change a template's ERC after creation. Using consistent and human-readable ERCs can help when moving your templates and objects between environments (e.g., `APPLICATION_SUBMITTED_ADMIN_USER`).
    ```
 
-### Application Received Template
+## Application Received Template
 
 1. Click *Add* ( ![Add Button](../../images/icon-add.png) ) and select *Email*.
 
@@ -116,7 +116,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
 
 1. Click *Save*.
 
-### Application Approved Template
+## Application Approved Template
 
 1. Click *Add* ( ![Add Button](../../images/icon-add.png) ) and select *Email*.
 
@@ -153,7 +153,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
 
 1. Click *Save*.
 
-### Application Denied Template
+## Application Denied Template
 
 1. Click *Add* ( ![Add Button](../../images/icon-add.png) ) and select *Email*.
 

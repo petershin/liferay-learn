@@ -1,6 +1,6 @@
 # Managing Access to Data
 
-Managing access to data is essential to data privacy and security. With Liferay, you can restrict access to sensitive object data using role permissions and account membership. Additionally, you can use OAuth2 for authorizing API calls by client extensions.
+Managing access to data is essential to data privacy and security. In Liferay, you can restrict access to sensitive object data using role permissions and account membership.
 
 Delectable Bonsai wants to allow authorized users to submit applications. They also want to create and define a role for assessing applications. <!--Refine-->
 
@@ -20,7 +20,7 @@ Delectable Bonsai wants to allow authorized users to submit applications. They a
    | Distributor Applications > Distributor Application: View              |
    | Distributor Applications > Distributor Applications: Add Object Entry |
 
-   ![Add these permissions to the User role.](managing-access-to-data/images/01.png)
+   ![Add these permissions to the User role.](./managing-access-to-data/images/01.png)
 
 1. Click *Save*.
 
@@ -76,6 +76,8 @@ Delectable Bonsai wants to allow authorized users to submit applications. They a
    Liferay automatically assigns the Portal: View Control Panel Menu permission.
    ```
    <!-- ![](./managing-access-to-data/images/05.png) -->
+
+Next: [Defining Workflows](./defining-workflows.md)
 
 ## Relevant Concepts
 

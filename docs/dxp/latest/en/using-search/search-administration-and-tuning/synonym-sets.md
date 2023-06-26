@@ -68,19 +68,11 @@ Out of the box, Synonyms Sets supports synonyms in [English and Spanish only](#r
 
 You must obtain the Elasticsearch connector's default JSON mappings before customizing it:
 
-To get the mappings from your Liferay DXP bundle,
+To get the mappings from your running Liferay,
 
-1. Go to `[Liferay Home]/osgi/marketplace`.
-1. Find the LPKG `Liferay Foundation - Liferay Connector to Elasticsearch 6/7 - Impl.lpkg`.
-1. Open with an archive manager, then extract the JAR file that has the name pattern `com.liferay.portal.search.elasticsearch6/7-x.y.z.jar`.
-1. Open the extracted JAR file with an archive manager and go to `META-INF/mappings`.
-1. The file called `liferay-type-mappings.json` is the resource you need. Extract it to your file system.
-
-To get the mappings from the source code, if you have [Liferay DXP Source Code Access](https://help.liferay.com/hc/en-us/articles/360045389291),
-
-1. Once you have access to the source code repository, follow the steps from the article above to find the tag for your fix pack level.
-1. Navigate to `modules/apps/portal-search-elasticsearch(6 or 7)/portal-search-elasticsearch(6 or 7)-impl/src/main/resources/META-INF/mappings`
-1. Here you will find the mentioned JSON file (`liferay-type-mappings.json`).
+1. Open the global menu (![Global Menu](../../images/icon-applications-menu.png)) and go to _Control Panel_ &rarr; _Search_.
+1. Click the _Field Mappings_ tab.
+1. Copy the mappings (![Copy](../../images/icon-copy.png)) and save them.
 
 ```{warning}
 Index mappings and settings can change between versions, and sometimes within a minor version (via a Fix Pack or Service Pack). Customizations to the mappings and settings must be reviewed and adapted as necessary when upgrading or moving to a new patch level. In addition, Liferay's Search team plans to add support for more languages out-of-the-box in future verisons, making customizations unnecessary.
@@ -154,7 +146,7 @@ Now that you have the default mapping file, make the necessary changes to add th
    ```
 
    ```{note}
-   For Liferay 7.4 U80 or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file.
+   For Liferay 7.4 U80 or earlier, you must include the `LiferayDocumentType` declaration at the beginning of the JSON file. For example, see the [Liferay 7.4 GA80 mappings](https://github.com/liferay/liferay-portal/blob/7.4.3.80-ga80/modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-impl/src/main/resources/META-INF/mappings/liferay-type-mappings.json)
    ```
 
 1. Using  the Override Type Mappings field, change the analyzer for the `template_fr` dynamic field to use the custom analyzer (`custom_liferay_analyzer_fr`):

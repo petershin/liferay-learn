@@ -38,7 +38,7 @@ Subsequent lessons will explore how to design engaging, responsive user interfac
 
    The layout includes two tabs and organizes the fields into collapsible blocks:
 
-   * The first tab is available during entry creation includes six sections: General Details, Contact Information, Business Details, Business Address, Additional Business Info, and Attachments.
+   * The first tab is available during entry creation and includes six sections: General Details, Contact Information, Business Details, Business Address, Additional Business Info, and Attachments.
 
    * The second tab is only available when editing an existing application and includes two sections: Bank Details and Credit Reference Details.
 

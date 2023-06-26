@@ -10,7 +10,7 @@ Here you'll update the custom layout for Distributor Application to include the 
 
 1. In the Info tab, rename the layout to Layout with Relationship Table.
 
-   ![Rename the layout to Layout with Relationship Table.](./relating-object-entries/images/01.png)
+   ![Rename the layout to Layout with Relationship Table.](./adding-the-relationship-to-custom-layouts/images/01.png)
 
 1. Go to the *Layout* tab.
 
@@ -22,11 +22,11 @@ Here you'll update the custom layout for Distributor Application to include the 
    | Type         | Relationship               |
    | Relationship | Application to Evaluations |
 
-   ![Add the relationship tab.](./relating-object-entries/images/02.png)
+   ![Add the relationship tab.](./adding-the-relationship-to-custom-layouts/images/02.png)
 
 1. Verify the relationship tab appears at the bottom of the layout.
 
-   ![Verify the relationship tab appears in the layout.](./relating-object-entries/images/03.png)
+   ![Verify the relationship tab appears in the layout.](./adding-the-relationship-to-custom-layouts/images/03.png)
 
 ## Adding the Relationship Field to Application Evaluation's Layout and View
 
@@ -40,7 +40,7 @@ Here you'll update the custom layout for Distributor Application to include the 
 
 1. Verify the new layout appears and includes the relationship field.
 
-   ![Verify the new layout includes the relationship field.](./relating-object-entries/images/04.png)
+   ![Verify the new layout includes the relationship field.](./adding-the-relationship-to-custom-layouts/images/04.png)
 
 1. Go to the *Views* tab.
 
@@ -52,7 +52,7 @@ Here you'll update the custom layout for Distributor Application to include the 
 
 1. Verify the new view appears and includes the relationship field.
 
-   ![Verify the new view includes the relationship field.](./relating-object-entries/images/05.png)
+   ![Verify the new view includes the relationship field.](./adding-the-relationship-to-custom-layouts/images/05.png)
 
 Now you can practice relating object entries!
 

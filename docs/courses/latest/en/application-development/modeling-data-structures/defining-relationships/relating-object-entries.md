@@ -1,8 +1,8 @@
 # Relating Object Entries
 
-After defining an object relationship, you can relate entries in two ways: the Liferay UI or relationship REST APIs. Here you'll practice using both methods to relate evaluations and applications.
+After defining an object relationship, you can relate entries in two ways: the Liferay UI or relationship REST APIs. Here you'll practice relating evaluations and applications via the UI.
 
-## Creating Sample Entries
+## Adding Test Data
 
 1. Download and unzip the resources for [this exercise](./liferay-g2n9.zip):
 
@@ -46,17 +46,23 @@ After defining an object relationship, you can relate entries in two ways: the L
    
    ```
 
-## Using the Layouts to Relate Entries
+Now, practice relating these entries.
 
-<!-- 
-1. Create application.
+## Relating the Entries
 
-1. Create 
-  -->
+<!--
+1. Open __.
 
-layouts to Relating Object Entries via REST APIs
+1. Begin editing __ and _ the relationship field.
 
-<!-- Should configure the title field for Distributor Application : Business Name, or Applicant Name -->
+   Options are identified using the object's title field. By default, objects identify entires using the ID field. 
+
+1. Set the Distributor Application's title field to Business Name.
+
+1. Return to Application Evaluation, 
+
+1. 
+-->
 
 Congratulations! You have successfully modeled the necessary data structures for Delectable Bonsai's distributor onboarding flow. Now you can start incorporating the business logic necessary for bringing your application to life, such as workflows, validations, notifications. You'll do this in our next module.
 

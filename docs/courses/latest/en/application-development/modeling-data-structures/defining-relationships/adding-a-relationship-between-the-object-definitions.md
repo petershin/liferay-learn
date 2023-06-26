@@ -19,7 +19,9 @@ Delectable Bonsai needs the ability to relate an application to multiple evaluat
 
    ![Add the applicationToEvaluations relationship to the Distributor Application object.](./adding-a-relationship-between-the-object-definitions/images/01.png)
 
-   <!-- ![For the Application Evaluation object, the relationship appears in the Fields tab.](./adding-a-relationship-between-the-object-definitions/images/02.png) -->
+   <!--TASK: ![For the Application Evaluation object, the relationship appears in the Fields tab.](./adding-a-relationship-between-the-object-definitions/images/02.png) -->
+
+   <!--TASK: ![Liferay adds dedicated relationship REST endpoints to both object definitions.](./adding-a-relationship-between-the-object-definitions/images/03.png) -->
 
 This adds a relationship table to Distributor Application and a relationship field to Application Evaluation. Liferay also adds dedicated relationship REST endpoints to both object definitions for relating and disassociating entries using REST APIs.
 

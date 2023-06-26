@@ -75,7 +75,7 @@ Unless your setup reveals a very compelling reason not to, you should replicate 
 
 Set up the Elasticsearch clusters, using versions supported with Liferay DXP that also support Cross-Cluster Replications. See the [LES compatibility matrix](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-Enterprise-Search) for details.
 
-Make sure you [install the Elasticsearch plugins Liferay DXP needs and provide cluster names](../../installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.html#configure-elasticsearch) to differentiate your follower and leader clusters.
+Make sure you [install the Elasticsearch plugins Liferay DXP needs and provide cluster names](../../installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md#configure-elasticsearch) to differentiate your follower and leader clusters.
 
 CCR requires an Elasticsearch Platinum level license, but [LES customers](../../liferay-enterprise-search.html) already have this. If you're testing locally, start a [trial license](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial.html) on each cluster.
 

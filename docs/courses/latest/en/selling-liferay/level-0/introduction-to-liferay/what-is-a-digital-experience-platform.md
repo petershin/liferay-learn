@@ -82,4 +82,8 @@ Some global organizations using Liferay Platform for serving their customers and
 
 Congratulations! You've now completed the Introduction to Liferay module. 
 
-Next: learn about the [Liferay Product Offering](../liferay-product-offering.md). 
+Next: learn about the [Liferay Product Offering](../liferay-product-offering.md).
+
+## Supporting Assets
+* View the [recording](/web/guest/d/l0-1-introduction-to-liferay) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-1-introduction-to-liferay-pdf) of the presentation used in the live workshop.

@@ -27,6 +27,10 @@ This module provides an introduction to Liferay:
 1. What a Digital Experience Platform is defined as, and what the basic anatomy of a DXP looks like
 1. Key target solutions and example customers
 
+## Supporting Assets
+* View the [recording](/web/guest/d/l0-1-introduction-to-liferay) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-1-introduction-to-liferay-pdf) of the presentation used in the live workshop.
+
 ## Liferay Origins
 
 Liferay started as a group of young, nerdy entrepreneurs hoping to build a tech company that could be a vehicle for good.

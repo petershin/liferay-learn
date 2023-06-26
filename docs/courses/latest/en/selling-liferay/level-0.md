@@ -68,7 +68,7 @@ This module provides an introduction to Liferay's sales approach.
 This module provides an introduction to Liferay DXP and its core capabilities.
 :::
 
-:::{grid-item-card} Liferay's Unique Value Proposition
+:::{grid-item-card} The Unique Value Proposition of Liferay
 :link: ./level-0/liferays-unique-value-proposition.md
 
 This module reviews the concept of a Digital Experience Platform.

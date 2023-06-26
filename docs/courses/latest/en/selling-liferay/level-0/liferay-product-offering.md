@@ -27,7 +27,7 @@ It's important to note four pieces of background information:
 
 1. The deployment approach chosen does not impact the features that are provided.
 
-![The Liferay Product line has three capability sets.](liferay-product-offering/images/01.png)
+![The Liferay Product line has three capability sets.](./liferay-product-offering/images/01.png)
 
 ## Supporting Every Deployment Approach
 
@@ -45,7 +45,7 @@ This flexibility of deployment is an important differentiator over many of our c
 Although the deployment method for Liferay Experience Cloud is SaaS, this is not a turn-key application. It is the full Digital Experience Platform, on top of which our customers, partners, and GS build the tailored solutions our customers need to solve their business problems.
 ```
 
-![Liferay has three product deployment offerings.](liferay-product-offering/images/02.png)
+![Liferay has three product deployment offerings.](./liferay-product-offering/images/02.png)
 
 The day-to-day activities vary with each deployment approach. While each activity is important, delivering the actual business application has the greatest value. In contrast, some of the lower-value activities can be quite time-consuming and difficult. Depending on the deployment approach chosen, these activities can be offloaded to Liferay, freeing the customer to concentrate on the most important tasks. 
 
@@ -59,7 +59,7 @@ Then they must maintain that infrastructure and the platform software, plus patc
 
 Finally, they must build their solution on DXP.
 
-![Liferay DXP Infrastructure contains several components that when self-hosted, require much maintenance.](liferay-product-offering/images/03.png)
+![Liferay DXP Infrastructure contains several components that when self-hosted, require much maintenance.](./liferay-product-offering/images/03.png)
 
 **Low Value Activities**
 
@@ -89,7 +89,7 @@ Liferay Experience Cloud Self-Managed (formerly DXP Cloud) is our Platform-as-a-
 
 Additionally, with Liferay Experience Cloud Self-Managed, there are predefined offers that include things like backup and VPN services. Furthermore, these scale via OOTB high availability, auto-scaling capabilities, auto-failover capabilities, and provide load balancing.  These activities are very important, but they can be hard and/or expensive to implement.
 
-![Liferay Experience Cloud Self Managed provides many infrastructure services to the customer.](liferay-product-offering/images/04.png)
+![Liferay Experience Cloud Self Managed provides many infrastructure services to the customer.](./liferay-product-offering/images/04.png)
 
 Liferay also provides an infrastructure uptime SLA of 99.95%, does regular updates to the platform services, and provides the full DevSecOps CI/CD pipeline with build management.
 

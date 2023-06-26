@@ -2,7 +2,7 @@
 uuid: 0ad4710c-53f7-476a-97e8-6ae14c13d2e2
 ---
 
-# Liferay’s Unique Value Proposition
+# Liferay's Unique Value Proposition
 
 **At a Glance**
 
@@ -33,7 +33,7 @@ USPs help support the value proposition and highlight benefits that target audie
 
 While the wording of each vendor’s value proposition is different, many vendors propose the same value. USPs, however, are the key differentiators that set vendors apart from their competitors and establish them in the market.
 
-## What is Liferay’s Value Proposition?  
+## What is Liferay's Value Proposition?  
 
 ![Liferay provides a complete platform without sacrificing speed, flexibility, or cost.](./liferays-unique-value-proposition/images/01.png)
 

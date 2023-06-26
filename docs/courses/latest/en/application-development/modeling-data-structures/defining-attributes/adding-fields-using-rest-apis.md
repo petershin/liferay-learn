@@ -84,7 +84,7 @@ The `object-admin` service provides REST APIs for performing CRUD operations on 
 
 Once finished, the Distributor Application should have 48 fields. These fields can help Delectable Bonsai collect the data they need for evaluating and vetting each applicant in compliance with KYC policies and AML laws.
 
-![The Distributor Application object should have 48 fields.](./adding-fields-using-rest-apis/images/01.png) <!--UPDATE IMG-->
+![The Distributor Application object should have 48 fields.](./adding-fields-using-rest-apis/images/01.png)
 
 Now Delectable Bonsai need to collect data necessary for assessing the relative value of each business opportunity. In this case, Delectable Bonsai wants applicants to select from predefined options. To achieve this, first create picklists.
 

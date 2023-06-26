@@ -31,14 +31,13 @@ Adding picklist fields to the Distributor Application object follows the same pr
 
 1. Add a Business Distribution Channels field:
 
-   | Field         | Value                          |
-   |:--------------|:-------------------------------|
-   | Label         | Distribution Channels          |
-   | Field Name    | `businessDistributionChannels` |
-   | Type          | Multiselect Picklist           |
-   | Picklist      | Distribution Channels          |
-   | Mandatory     | False                          |
-   | Mark as State | False                          |
+   | Field      | Value                          |
+   |:-----------|:-------------------------------|
+   | Label      | Business Distribution Channels |
+   | Field Name | `businessDistributionChannels` |
+   | Type       | Multiselect Picklist           |
+   | Picklist   | Distribution Channels          |
+   | Mandatory  | False                          |
 
 1. Add an Order Types of Interest field:
 
@@ -82,9 +81,11 @@ Adding picklist fields to the Distributor Application object follows the same pr
    | Mandatory     | False             |
    | Mark as State | False             |
 
+   ![Add seven picklist fields to Distributor Application.](./adding-picklist-fields-to-the-object/images/02.png)
+
 Now when users fill out a distributor application, they can select from predefined options for each field. Delectable Bonsai can then use these data points to assess the value of each business opportunity.
 
-![Users select from predefined options.](./adding-picklist-fields-to-the-object/images/02.png) <!--UPDATE IMG-->
+![Users select from predefined options.](./adding-picklist-fields-to-the-object/images/03.png)
 
 With over 50 fields, the current user interfaces for Distributor Application are no longer viable for creating and displaying entries. This is because the default layout and view include every object field and display them alphabetically. Before forward with modeling data structures, add a custom layout and view to Distributor Application.
 

@@ -16,7 +16,7 @@ Delectable Bonsai's Distributor Application object needs fields for collecting a
    | Mandatory                 | False            |
    | Accept Unique Values Only | True             |
 
-   ![Add the Applicant Email field.](./adding-fields-to-the-distributor-application-object/images/01.png) <!--UPDATE IMG-->
+   ![Add the Applicant Email field.](./adding-fields-to-the-distributor-application-object/images/01.png)
 
 1. Add a field for the primary contact's name:
 
@@ -69,11 +69,11 @@ Delectable Bonsai's Distributor Application object needs fields for collecting a
 
 Each saved field is immediately added to the Distributor Application object and automatically appears in its default layout when creating entries.
 
-![Add new entries that include the new fields.](./adding-fields-to-the-distributor-application-object/images/02.png) <!--UPDATE IMG-->
+![Add new entries that include the new fields.](./adding-fields-to-the-distributor-application-object/images/02.png)
 
 The new fields also appear in the object's default table view.
 
-![The default table view includes all custom fields.](./adding-fields-to-the-distributor-application-object/images/03.png) <!--UPDATE IMG-->
+![The default table view includes all custom fields.](./adding-fields-to-the-distributor-application-object/images/03.png)
 
 Now Delectable Bonsai needs to collect information from potential distributors for compliance with KYC and AML policies. However, instead of adding these fields manually, you'll add them programmatically using the `object-admin` REST APIs.
 

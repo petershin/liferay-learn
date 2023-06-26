@@ -1,7 +1,5 @@
 ---
 toc:
-   - ./cloud-configuration/accessing-the-liferay-cloud-console.md
-   - ./cloud-configuration/adding-team-members-to-the-project.md
    - ./cloud-configuration/setting-up-the-github-repository.md
    - ./cloud-configuration/configuring-your-sites-domain.md
    - ./cloud-configuration/setting-up-clustering-for-the-liferay-service.md

@@ -5,6 +5,10 @@ uuid: 902c5c67-4087-49ce-9f79-9bde48fffe86
 
 {bdg-secondary}`Available Liferay DXP 7.4 U83+/GA83+`
 
+```{important}
+Price on Application is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information. 
+```
+
 You may have expensive or complex products in your catalog that you don’t want customers checking out like regular products. These products typically require a support staff to intervene and assist them before making a purchase. You can hide pricing on such products and require your customers to request a quote using Liferay’s price on application feature. You can also use this to give customers the option to request quotes for regular products or baskets of goods. You can even selectively apply this to accounts or account groups so that some customers are able to order autonomously while others must request a quote. 
 
 ## Enabling Price on Application for a Product
@@ -122,3 +126,7 @@ After requesting a quote, an order gets placed with the status *Quote Requested*
 There is an entry for the order with the same status (*Quote Requested*). After selecting the order, you can add notes or more information that the customer can view from the placed orders screen. After reviewing the quote, you can click on *Quote Processed* to process the quote. 
 
 ![Click on Quote Processed to process the quote.](./price-on-application/images/06.png)
+
+```{note}
+Image: “[CIFA Wash Batching Plant](https://www.cifa.com/en/batching-plants/recycling/cifa-wash)” 
+```

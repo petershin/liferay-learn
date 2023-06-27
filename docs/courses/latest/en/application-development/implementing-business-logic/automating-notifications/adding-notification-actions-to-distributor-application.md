@@ -114,6 +114,8 @@ The first two actions trigger when an entry is created. The other two depend on 
 ## Triggering Notifications
 -->
 
+Congratulations! You've successfully added the business logic necessary for the Distributor Application object. Now you can .
+
 Next: [Designing User Interfaces](../../designing-user-interfaces.md)
 
 ## Relevant Concepts

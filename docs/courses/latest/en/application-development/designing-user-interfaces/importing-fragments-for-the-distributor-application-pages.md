@@ -1,5 +1,7 @@
 # Importing Fragments for the Distributor Application Pages
 
+<!-- Intro -->
+
 1. Download the Distributor Application fragments ZIP:
 
    ```bash

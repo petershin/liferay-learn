@@ -1,5 +1,7 @@
 # Designing User Interfaces
 
+Coming Soon!
+
 <!-- Designing custom user interfaces for custom applications in Liferay involves out-of-the-box page builder features (e.g., stylebooks, master page templates, display page templates), custom fragments, and front-end client extensions.
 
 Important to maintain continuity of style across your site (CSS) while providing a responsive display for different devices.
@@ -16,3 +18,7 @@ This section should include the OAuth client extension for authentication. -->
 Need a page for successful form submissions.
 Need an application overview page
 Need a display page for viewing each application's details. -->
+
+Ready?
+
+[Let's Go!](./designing-user-interfaces/adding-pages-for-distributor-application.md)

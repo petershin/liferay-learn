@@ -1,5 +1,7 @@
 # Adding Pages for Distributor Application
 
+<!-- Intro -->
+
 1. Download the LAR file for the Distributor Application pages: <!--REFINE-->
 
    ```bash

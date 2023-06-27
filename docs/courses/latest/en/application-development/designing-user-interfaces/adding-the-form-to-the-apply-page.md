@@ -6,11 +6,11 @@ With Liferay objects, this involves adding form fragments to a content page or p
 
 1. Navigate to the Apply page and click *Edit* (![Edit Button](../../images/icon-edit.png)).
 
-   ![](./adding-the-form-to-the-apply-page/images/01.png)
+   ![Navigate to the Apply page and click Edit.](./adding-the-form-to-the-apply-page/images/01.png)
 
 1. Drag and drop the *Form Page* fragment into the empty Fragment Elements container at the bottom of the page.
 
-   ![](./adding-the-form-to-the-apply-page/images/02.png)
+   ![Drag and drop the Form Page fragment into the empty Fragment Elements container.](./adding-the-form-to-the-apply-page/images/02.png)
 
    This includes a form container that's mapped to the Distributor Application object and its fields. The form organizes form elements into these groups:
 
@@ -22,7 +22,7 @@ With Liferay objects, this involves adding form fragments to a content page or p
    * Attachments
    * Submit
 
-   ![](./adding-the-form-to-the-apply-page/images/03.png)
+   ![The Form Page fragment includes seven containers with fragments already mapped to object fields.](./adding-the-form-to-the-apply-page/images/03.png)
 
 1. Select these fields and mark them as required:
 
@@ -33,7 +33,7 @@ With Liferay objects, this involves adding form fragments to a content page or p
    * Business Website
    * Business Phone Number
 
-   ![](./adding-the-form-to-the-apply-page/images/04.png)
+   ![Mark fields as required.](./adding-the-form-to-the-apply-page/images/04.png)
 
 1. Select these fields and enter a display label for them:
 
@@ -46,21 +46,21 @@ With Liferay objects, this involves adding form fragments to a content page or p
 
    The provided fragments include display labels for the business, bank, and reference fields.
 
-   ![](./adding-the-form-to-the-apply-page/images/05.png)
+   ![Enter display labels for fields.](./adding-the-form-to-the-apply-page/images/05.png)
 
 1. Set placeholder text for these fields:
 
-   | Field                        | Placeholder                   |
-   |:-----------------------------|:------------------------------|
-   | Primary Contact Phone Number | `+1 (777) 777-7777`           |
-   | Business Website             | `https://businesswebsite.com` |
-   | Business Phone Number        | `+1 (777) 777-7777`           |
+   | Field                        | Placeholder                         |
+   |:-----------------------------|:------------------------------------|
+   | Primary Contact Phone Number | `e.g., +1 (777) 777-7777`           |
+   | Business Website             | `e.g., https://businesswebsite.com` |
+   | Business Phone Number        | `e.g., +1 (777) 777-7777`           |
 
-   ![](./adding-the-form-to-the-apply-page/images/06.png)
+   ![Set placeholder test for fields.](./adding-the-form-to-the-apply-page/images/06.png)
 
 1. Select the Form Container fragment, set the Success Message to *Page*, and select *Application Submission*.
 
-   ![](./adding-the-form-to-the-apply-page/images/07.png)
+   ![Set the Success Message to Page and select Application Submission.](./adding-the-form-to-the-apply-page/images/07.png)
 
 1. Click *Publish*.
 

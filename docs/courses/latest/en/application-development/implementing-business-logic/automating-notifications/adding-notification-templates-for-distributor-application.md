@@ -19,9 +19,9 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
 
 ## Application Submitted Template
 
-1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Templates*.
+1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Templates*.
 
-1. Click *Add* ( ![Add Button](../../images/icon-add.png) ) and select *User Notification*.
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) and select *User Notification*.
 
 1. Scroll down to Definition of Terms and use the Entity drop-down menu to select the *Distributor Application* object.
 
@@ -63,7 +63,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
 
 ## Application Received Template
 
-1. Click *Add* ( ![Add Button](../../images/icon-add.png) ) and select *Email*.
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) and select *Email*.
 
 1. Enter these values for Basic Info:
 
@@ -94,7 +94,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
    | Editor Type | Rich Text |
    | Template | <!--See below...--> |
 
-   For the Template field, click the *Source* button ( ![Source button](../../images/icon-code.png) ). Then, copy and paste the contents of [`ApplicationReceived_Applicant_Email.html`](https://resources.learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/automating-notifications/adding-notification-templates-for-distributor-application/ApplicationReceived_Applicant_Email.html) into the Template field.
+   For the Template field, click the *Source* button ( ![Source button](../../../images/icon-code.png) ). Then, copy and paste the contents of [`ApplicationReceived_Applicant_Email.html`](https://resources.learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/automating-notifications/adding-notification-templates-for-distributor-application/ApplicationReceived_Applicant_Email.html) into the Template field.
 
    ![Enter these values for Content.](./adding-notification-templates-for-distributor-application/images/08.png)
 
@@ -106,7 +106,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
 
 ## Application Approved Template
 
-1. Click *Add* ( ![Add Button](../../images/icon-add.png) ) and select *Email*.
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) and select *Email*.
 
 1. Enter these values for Basic Info:
 
@@ -133,7 +133,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
    | Editor Type | Rich Text                          |
    | Template    | <!--See below...-->                |
 
-   For the Template field, click the *Source* button ( ![Source button](../../images/icon-code.png) ). Then, copy and paste the contents of [`ApplicationApproved_Applicant_Email.html`](https://resources.learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/automating-notifications/adding-notification-templates-for-distributor-application/ApplicationApproved_Applicant_Email.html) into the Template field.
+   For the Template field, click the *Source* button ( ![Source button](../../../images/icon-code.png) ). Then, copy and paste the contents of [`ApplicationApproved_Applicant_Email.html`](https://resources.learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/automating-notifications/adding-notification-templates-for-distributor-application/ApplicationApproved_Applicant_Email.html) into the Template field.
 
    When rendered, the body of the message should look like this:
 
@@ -143,7 +143,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
 
 ## Application Denied Template
 
-1. Click *Add* ( ![Add Button](../../images/icon-add.png) ) and select *Email*.
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) and select *Email*.
 
 1. Enter these values for Basic Info:
 
@@ -170,7 +170,7 @@ If the out-of-the-box notification types do not satisfy your requirements, you c
    | Editor Type | Rich Text                   |
    | Template    | <!--See below...-->         |
 
-   For the Template field, click the *Source* button ( ![Source button](../../images/icon-code.png) ). Then, copy and paste the contents of [`ApplicationDenied_Applicant_Email.html`](https://resources.learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/automating-notificiations/adding-notification-templates-for-distributor-application/ApplicationDenied_Applicant_Email.html) into the Template field.
+   For the Template field, click the *Source* button ( ![Source button](../../../images/icon-code.png) ). Then, copy and paste the contents of [`ApplicationDenied_Applicant_Email.html`](https://resources.learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/automating-notificiations/adding-notification-templates-for-distributor-application/ApplicationDenied_Applicant_Email.html) into the Template field.
 
    When rendered, the body of the message should look like this:
 

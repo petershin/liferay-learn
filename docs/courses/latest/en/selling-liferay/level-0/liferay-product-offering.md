@@ -1,6 +1,6 @@
 ---
 toc:
-- ./determining-which-deployment-option-is-best-for-your-customer.md
+- ./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md
 uuid: b982f1e4-2c22-4563-aa19-68d9aa8a801a
 ---
 

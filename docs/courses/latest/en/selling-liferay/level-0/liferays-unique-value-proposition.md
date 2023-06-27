@@ -1,4 +1,7 @@
 ---
+toc:
+  - ./liferays-unique-value-proposition/organic-innovation-and-open-source-leadership.md
+  - ./liferays-unique-value-proposition/portal-heritage-and-tailoring-liferay.md
 uuid: 0ad4710c-53f7-476a-97e8-6ae14c13d2e2
 ---
 

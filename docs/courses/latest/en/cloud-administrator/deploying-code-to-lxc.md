@@ -7,6 +7,14 @@ uuid: 819aa6d5-2b61-4438-b0dc-b848e6a25c87
 
 # Deploying Code to LXC
 
-Intro text here. 
+Now that you've accessed and started using the Cloud console, you're ready to deploy a client extension project to you LXC environment.
+
+```{note}
+This module requires a project on Liferay Experience Cloud. If you only have a project on the Self-Managed version (LXC-SM), skip ahead to [Cloud Configuration](./cloud-configuration.md).
+```
+
+[Client extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions) are the comprehensive means of extending LXC. You can deploy client extensions to [import batch data](https://learn.liferay.com/w/dxp/building-applications/client-extensions/batch-client-extensions), host [static front-end resources for your site](https://learn.liferay.com/w/dxp/building-applications/client-extensions/front-end-client-extensions), or even [integrate with custom microservices running in the cloud](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions). Your code and resources don't rely on any of Liferay's code, and you can focus on whatever you're trying to create.
+
+Delectable Bonsai's developers want to build a new way to collect and keep track of customer feedback using Liferay's [objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects). In this module, you'll get acquainted with deploying client extensions by testing, modifying, and troubleshooting changes to an [object action client extension](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions/object-action-yaml-configuration-reference) to implement a simple counter in a microservice.
 
 [Let's Go!](./deploying-code-to-lxc/deploying-and-managing-a-microservice-client-extension-project.md)

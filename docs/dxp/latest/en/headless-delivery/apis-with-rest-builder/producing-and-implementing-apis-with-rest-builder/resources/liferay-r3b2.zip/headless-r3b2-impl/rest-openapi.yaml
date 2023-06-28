@@ -23,8 +23,6 @@ components:
                 name:
                     type: string
 info:
-    description:
-        ""
     license:
         name: "Apache 2.0"
         url: "http://www.apache.org/licenses/LICENSE-2.0.html"
@@ -82,8 +80,8 @@ paths:
             responses:
                 204:
                     content:
-                        application/json: { }
-                        application/xml: { }
+                        application/json: {}
+                        application/xml: {}
             tags: ["Foo"]
         get:
             operationId: getFoo
@@ -222,8 +220,8 @@ paths:
             responses:
                 204:
                     content:
-                        application/json: { }
-                        application/xml: { }
+                        application/json: {}
+                        application/xml: {}
             tags: ["Goo"]
         get:
             operationId: getGoo

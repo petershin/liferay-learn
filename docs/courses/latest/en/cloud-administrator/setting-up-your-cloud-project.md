@@ -1,12 +1,12 @@
 ---
 toc:
-  - ./setting-up-your-cloud-instance/accessing-the-liferay-cloud-console.md
-  - ./setting-up-your-cloud-instance/adding-team-members-to-the-project.md
-  - ./setting-up-your-cloud-instance/using-the-cli-tool.md
+  - ./setting-up-your-cloud-project/accessing-the-liferay-cloud-console.md
+  - ./setting-up-your-cloud-project/adding-team-members-to-the-project.md
+  - ./setting-up-your-cloud-project/using-the-cli-tool.md
 uuid: 88094a31-939d-4710-bcc3-ee2d3933d721
 ---
 
-# Setting Up Your Cloud Instance
+# Setting Up Your Cloud Project
 
 This story begins after you have an environment provisioned for you on Liferay Cloud, either on Liferay Experience Cloud (LXC) or LXC Self-Managed.
 
@@ -14,4 +14,4 @@ In Liferay Experience Cloud, the Cloud console is used to manage each of your en
 
 In this module, you'll help Delectable Bonsai's IT staff, Marcus and Kyle, to access the Cloud console and acquire [the tools that you'll need](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to deploy changes to your Cloud environment.
 
-[Let's Go!](./setting-up-your-cloud-instance/accessing-the-liferay-cloud-console.md)
+[Let's Go!](./setting-up-your-cloud-project/accessing-the-liferay-cloud-console.md)

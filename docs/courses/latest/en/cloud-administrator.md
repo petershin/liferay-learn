@@ -1,6 +1,6 @@
 ---
 toc:
-- ./cloud-administrator/setting-up-your-cloud-instance.md
+- ./cloud-administrator/setting-up-your-cloud-project.md
 - ./cloud-administrator/deploying-code-to-lxc.md
 - ./cloud-administrator/cloud-configuration.md
 - ./cloud-administrator/cloud-development-lifecycle.md
@@ -26,13 +26,13 @@ You'll learn how to:
 
 Start working with a cloud project for Delectable Bonsai, a (fake) company that's taking Liferay Cloud's platform to build a reliable, customized experience for their maple syrup business.
 
-Whether you're working with LXC or LXC-SM, get started by [setting up your cloud instance](./cloud-administrator/setting-up-your-cloud-instance.md).
+Whether you're working with LXC or LXC-SM, get started by [setting up your cloud instance](./cloud-administrator/setting-up-your-cloud-project.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card}  Setting Up Your Cloud Instance
-:link: ./cloud-administrator/setting-up-your-cloud-instance.md
+:::{grid-item-card}  Setting Up Your Cloud Project
+:link: ./cloud-administrator/setting-up-your-cloud-project.md
 
 Learn how to get started using the Cloud console with LXC or LXC-SM.
 :::

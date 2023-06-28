@@ -8,7 +8,7 @@ Your first task after your Liferay Cloud account is provisioned is to set up the
 Set up the repository and complete your first push to ensure it's working.
 
 ```{note}
-You must have the [CLI tool installed](../setting-up-your-cloud-instance/using-the-cli-tool.md#install-the-cli-tool) to continue with this course.
+You must have the [CLI tool installed](../setting-up-your-cloud-project/using-the-cli-tool.md#install-the-cli-tool) to continue with this course.
 ```
 
 ## Fork and Clone the GitHub Repository

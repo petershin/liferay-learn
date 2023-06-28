@@ -26,7 +26,7 @@ You'll learn how to:
 
 Start working with a cloud project for Delectable Bonsai, a (fake) company that's taking Liferay Cloud's platform to build a reliable, customized experience for their maple syrup business.
 
-Whether you're working with LXC or LXC-SM, get started by [setting up your cloud instance](./cloud-administrator/setting-up-your-cloud-project.md).
+Whether you're working with LXC or LXC-SM, get started by [setting up your cloud project](./cloud-administrator/setting-up-your-cloud-project.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3

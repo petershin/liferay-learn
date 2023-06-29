@@ -9,7 +9,7 @@
 1. データリクエストは次のような形式をとります。
 
    ```
-   curl -H "Authorization: Bearer [token]" -L https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
+   curl -i -L -H "Authorization: Bearer [token]" -L https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
    ```
 
    `[token]`を特定のアクセストークンに置き換えてください。 `[type]` を `event`, `individual`, `page`, or `segment`に置き換える。 `fromDate=`の後に`[ISO 8601 date and time]`を置き換えることで、開始日時を指定します。 `toDate=`の後に`[ISO 8601 date and time]`を置き換えることで、終了日時を指定することができます。 必ず、 [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) の日時フォーマットを使用してください。 なお、リクエストには開始日時、終了日時が必要です。
@@ -17,7 +17,7 @@
    例えば、ページデータのリクエストは次のようなものです。
 
    ```
-   curl -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z'
+   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z'
    ```
 
 1. データを要求すると、次のようなメッセージが表示されます。
@@ -33,7 +33,7 @@
    データをJSONファイルとしてダウンロードする場合は、リクエストの最後に `>> [filename.json]` を追加してください。 以下に例を示します。
 
    ```
-   curl -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z' >> page-data.json
+   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z' >> page-data.json
    ```
 
    リクエストは1つずつ処理されます。 最初のリクエストの実行中に2番目のリクエストが行われた場合、最初のリクエストの処理が終了するまで、 `"status": "PENDING"` というメッセージが表示されます。

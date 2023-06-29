@@ -14,5 +14,5 @@ The generated token is usable for a default period of 30 days. Once the token ex
 The token must be copied and set to the request authorization header on every API call. If you’re using curl command line, this can be done by setting the following request header.
 
 ```
-curl -H "Authorization: Bearer {token}"
+curl -i -L -H "Authorization: Bearer {token}"
 ```

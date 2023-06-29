@@ -3,7 +3,7 @@
 Liferay Analytics Cloudのルートエンドポイントは、 <https://analytics.liferay.com/api/reports>です。 上記のURLにGETをリクエストすることで、すべてのデータタイプのエンドポイントのリストを取得することができます。 curlで試します。
 
 ```
-curl -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
+curl -i -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
 ```
 
 この応答が返ってくるはずです：
@@ -52,7 +52,7 @@ curl -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/rep
 このコマンドを使うと、すべてのBlogデータを取得することができます：
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs
 ```
 
 これらのクエリパラメータを利用することができます：
@@ -67,7 +67,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 特定のブログ記事に関するデータを取得する場合、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs/{blogID}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs/{blogID}
 ```
 
 ## ドキュメントやメディアデータへのアクセス
@@ -75,7 +75,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 すべてのDocumentsとMediaのデータを取得するコマンドです：
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media
 ```
 
 これらのクエリパラメータを利用することができます：
@@ -90,7 +90,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 特定の文書に関するデータを取得する場合、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media/{documentId}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media/{documentId}
 ```
 
 ## フォームデータへのアクセス
@@ -98,7 +98,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 すべてのフォームデータを取得する場合は、このコマンドを使用します：
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms
 ```
 
 これらのクエリパラメータを利用することができます：
@@ -113,7 +113,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 特定のフォームに関するデータを取得する場合、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms/{formId}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms/{formId}
 ```
 
 ## ユーザーデータへのアクセス
@@ -121,7 +121,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 このコマンドを使用すると、すべての個別データを取得することができます：
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
 ```
 
 これらのクエリパラメータを利用することができます：
@@ -133,19 +133,19 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 特定の個人に関する活動データを取得すること、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/activities
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/activities
 ```
 
 特定の個人に関する興味データを取得するため、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/interests
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/interests
 ```
 
 特定の個人に関するセグメントデータを取得すること、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/segments
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/segments
 ```
 
 ## ページデータへのアクセス
@@ -153,7 +153,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 このコマンドを使うと、すべてのページデータを取得することができます：
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
 ```
 
 これらのクエリパラメータを利用することができます：
@@ -168,7 +168,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 特定のURLからページデータを取得する場合、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages/{pageURL}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages/{pageURL}
 ```
 
 ## セグメントデータへのアクセス
@@ -176,7 +176,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 すべてのSegmentデータを取得する場合は、このコマンドを使用します：
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
 ```
 
 これらのクエリパラメータを利用することができます：
@@ -187,7 +187,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 特定のセグメントに属するすべての個人を取得する場合、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{segmentsId}/individuals
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{segmentsId}/individuals
 ```
 
 ## ウェブコンテンツデータへのアクセス
@@ -195,7 +195,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 このコマンドを使うと、すべてのWeb Contentsデータを取得できます：
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents
 ```
 
 これらのクエリパラメータを利用することができます：
@@ -210,5 +210,5 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 特定のウェブコンテンツに関するデータを取得すること、
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents/{webContentsID}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents/{webContentsID}
 ```

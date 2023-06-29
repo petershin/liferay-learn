@@ -11,5 +11,5 @@
 トークンをコピーして、すべてのAPI呼び出しでリクエスト認証ヘッダーに設定する必要があります。 curlコマンドラインを使用している場合、これは以下のリクエストヘッダーを設定することで実行できます。
 
 ```
-curl -H "Authorization: Bearer {token}"
+curl -i -L -H "Authorization: Bearer {token}"
 ```

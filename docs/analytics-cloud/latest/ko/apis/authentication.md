@@ -11,5 +11,5 @@
 토큰은 복사되어 모든 API 호출에서 요청 인증 헤더로 설정되어야 합니다. curl 명령줄을 사용하는 경우 다음 요청 헤더를 설정하여 수행할 수 있습니다.
 
 ```
-curl -H "Authorization: Bearer {token}"
+curl -i -L -H "Authorization: Bearer {token}"
 ```

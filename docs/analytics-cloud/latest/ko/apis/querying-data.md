@@ -3,7 +3,7 @@
 Liferay 분석 클라우드의 루트 엔드포인트는 <https://analytics.liferay.com/api/reports>입니다. 위의 URL로 GET을 요청하여 모든 데이터 유형 엔드포인트의 목록을 가져올 수 있습니다. 컬로 시도
 
 ```
-curl -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
+curl -i -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
 ```
 
 다음과 같은 응답이 반환되어야 합니다:
@@ -40,7 +40,7 @@ curl -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/rep
 다음 명령으로 계정 데이터를 검색할 수 있습니다:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/accounts
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/accounts
 ```
 
 ### 매개 변수
@@ -52,7 +52,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 개인 데이터는 다음 명령으로 검색할 수 있습니다.
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
 ```
 
 ### 매개 변수
@@ -63,7 +63,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 ## 개인 활동
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/activities
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/activities
 ```
 
 개인이 수행한 활동 목록을 반환합니다.
@@ -96,7 +96,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 ## 개인 관심사
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/interests
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/interests
 ```
 
 개인의 관심사 목록을 반환하며, 각 관심사의 구조는 아래에 설명되어 있습니다.
@@ -123,7 +123,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 ## 개별 세그먼트
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/segments
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{id}/segments
 ```
 
 개인이 속한 세그먼트의 목록을 반환하며, 각 세그먼트의 구조는 데이터 유형 > 세그먼트 섹션에 설명되어 있습니다.
@@ -133,7 +133,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 세그먼트 데이터는 다음 명령으로 검색할 수 있습니다:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
 ```
 
 ### 재산
@@ -145,7 +145,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 세그먼트에 속한 개인 목록을 반환합니다.
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{id}/individuals
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{id}/individuals
 ```
 
 ## 페이지 데이터 액세스
@@ -153,7 +153,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 페이지 데이터는 다음 명령으로 검색할 수 있습니다:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
 ```
 
 ### 재산

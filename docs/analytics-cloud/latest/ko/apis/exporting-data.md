@@ -9,7 +9,7 @@
 1. 데이터 요청은 다음 형식을 사용합니다.
 
    ```
-   curl -H "Authorization: Bearer [token]" -L https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
+   curl -i -L -H "Authorization: Bearer [token]" -L https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
    ```
 
    `[token]` 특정 액세스 토큰으로 바꿉니다. `[type]` **개별** , **페이지** 또는 **세그먼트** 로 교체하십시오. `fromDate=`다음에 `[ISO 8601 날짜 및 시간]` 교체하여 시작 날짜와 시간을 지정합니다. `toDate=`다음에 `[ISO 8601 날짜 및 시간]` 교체하여 종료 날짜 및 시간을 지정합니다. [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) 날짜 및 시간 형식을 사용해야 합니다. 요청에는 시작 날짜 및 시간과 종료 날짜 및 시간이 필요합니다.
@@ -17,7 +17,7 @@
    예를 들어 페이지 데이터 요청은 다음과 같습니다.
 
    ```
-   curl -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z'
+   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z'
    ```
 
 2. 데이터를 요청하면 다음과 같은 메시지가 나타납니다.
@@ -33,7 +33,7 @@
    데이터를 JSON 파일로 다운로드하려면 요청 끝에 `>> [filename.json]` 추가하십시오. 예를 들어:
 
    ```
-   curl -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z' >> page-data.json
+   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z' >> page-data.json
    ```
 
    요청은 한 번에 하나씩 처리됩니다. 첫 번째 요청이 아직 실행 중인 동안 두 번째 요청이 이루어지면 첫 번째 요청 처리가 완료될 때까지 `"status":"PENDING"` 메시지가 표시됩니다.

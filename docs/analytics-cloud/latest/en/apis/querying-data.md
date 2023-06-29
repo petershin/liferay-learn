@@ -6,7 +6,7 @@ uuid: bd2dad66-a3dc-47c2-b5d7-91a0c7fcadce
 The root endpoint of Liferay Analytics Cloud is <https://analytics.liferay.com/api/reports>. You can get the list of all data types endpoints by requesting a GET to the above URL. Try with curl
 
 ```
-curl -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
+curl -i -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
 ```
 
 This response should be returned:
@@ -55,7 +55,7 @@ All the server responses to the analytics data follow the same data structure. T
 Use this command to retrieve all Blogs data:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs
 ```
 
 These query parameters are available:
@@ -70,7 +70,7 @@ These query parameters are available:
 To retrieve data about a specific blog post,
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs/{blogID}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs/{blogID}
 ```
 
 ## Accessing Documents and Media Data
@@ -78,7 +78,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 Use this command to retrieve all Documents and Media data:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media
 ```
 
 These query parameters are available:
@@ -93,7 +93,7 @@ These query parameters are available:
 To retrieve data about a specific document,
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media/{documentId}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media/{documentId}
 ```
 
 ## Accessing Forms Data
@@ -101,7 +101,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 Use this command to retrieve all Forms data:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms
 ```
 
 These query parameters are available:
@@ -116,7 +116,7 @@ These query parameters are available:
 To retrieve data about a specific form,
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms/{formId}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms/{formId}
 ```
 
 ## Accessing Individuals Data
@@ -124,7 +124,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 Use this command to retrieve all Individuals data:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
 ```
 
 These query parameters are available:
@@ -136,19 +136,19 @@ These query parameters are available:
 To retrieve activities data on a specific individual,
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/activities
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/activities
 ```
 
 To retrieve interests data on a specific individual,
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/interests
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/interests
 ```
 
 To retrieve segment data on a specific individual,
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/segments
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/segments
 ```
 
 ## Accessing Pages Data
@@ -156,7 +156,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 Use this command to retrieve all Pages data:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
 ```
 
 These query parameters are available:
@@ -171,7 +171,7 @@ These query parameters are available:
 To retrieve page data from a specific URL,
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages/{pageURL}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages/{pageURL}
 ```
 
 ## Accessing Segments Data
@@ -179,7 +179,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 Use this command to retrieve all Segments data:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
 ```
 
 These query parameters are available:
@@ -190,7 +190,7 @@ These query parameters are available:
 To retrieve all the individuals of a specific segment,
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{segmentsId}/individuals
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{segmentsId}/individuals
 ```
 
 ## Accessing Web Content Data
@@ -198,7 +198,7 @@ curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/rep
 Use this command to retrieve all Web Contents data:
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents
 ```
 
 These query parameters are available:
@@ -213,5 +213,5 @@ These query parameters are available:
 To retrieve data about a specific web content,
 
 ```
-curl -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents/{webContentsID}
+curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents/{webContentsID}
 ```

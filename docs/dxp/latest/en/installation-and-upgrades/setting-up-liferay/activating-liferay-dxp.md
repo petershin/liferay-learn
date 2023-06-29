@@ -45,6 +45,14 @@ Trying out DXP? Get a [30 day trial activation key](https://www.liferay.com/prod
 If you're using Liferay Connected Services (LCS) with Liferay DXP 7.2 or earlier, see the [LCS documentation](https://help.liferay.com/hc/en-us/articles/360017897492-Introduction-to-Managing-Liferay-DXP-with-Liferay-Connected-Services-) for instructions on activating your DXP instance with LCS.
 ```
 
+## License Manager
+
+The license manager page displays server and license information. To see the page, click _License Manager_. Or login as an administrator and navigate to _Control Panel_ &rarr; _License Manager_.
+
+![The license manager page displays server and license information.](./activating-liferay-dxp/images/02.png)
+
+The status of the license is shown (e.g. active or expired), as well as other information such as license type and expiration date.
+
 ## Reactivating Liferay DXP
 
 If you have a new DXP activation key and your DXP instance is currently activated by a key or by Liferay Connected Services (LCS), it's best to remove remnants of the former activation method before deploying your new activation key. This removes any ambiguity as to which activation key you're using.

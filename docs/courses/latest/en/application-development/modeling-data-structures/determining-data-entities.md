@@ -1,12 +1,18 @@
+---
+uuid: 9d6cd0aa-7541-4fee-892f-60aa096669ec
+---
+
 # Determining Data Entities
 
 Your first step toward creating an application is to define its data entities. In Liferay, you do this by defining various [Objects](https://learn.liferay.com/en/w/dxp/building-applications/objects) representing your application's entities. These can be anything from insurance claims, support tickets, or commerce products.
 
 When you publish custom objects, Liferay creates a database table for storing data entries. It also generates headless APIs for performing CRUD operations and provides a basic front-end. Using Liferay objects, you can build a robust and flexible foundation for your solution that is able to support the specific needs of your organization.
 
+<!-- I recommend the above go in the intro (../modeling-data-structures.md). -Rich -->
+
 <!-- ![](./determining-data-entities/images/01.png) -->
 
-Your first application will help Delectable Bonsai manage submitted product distributor applications. This requires a single object definition for creating and storing applications submitted by potential distributors. You'll do this in four steps: 
+Your first application manages submitted product distributor applications for Delectable Bonsai. This requires a single object definition for creating and storing applications submitted by potential distributors. You'll do this in four steps: 
 
 1. [Add the Distributor Application object](#adding-the-distributor-application-object)
 1. [Configure the object](#configuring-the-object)
@@ -62,6 +68,7 @@ Configure Distributor Application as follows:
    ```{tip}
    Consistent, human-readable ERCs can help you move object definitions between instances and reference them via APIs.
    ```
+   <!-- This would be better explained above in the step. As you can probably tell, I'm trying to keep all admonitions out of the training. -Rich -->
 
    ![Update the definition's ERC to C_DISTRIBUTOR_APPLICATION.](./determining-data-entities/images/04.png)
 
@@ -79,15 +86,13 @@ Configure Distributor Application as follows:
    | Configuration > Enable Comments                | False                  |
    | Configuration > Enable Entry History           | False                  |
 
-   This configures the Distributor Application to store data by instance and appear in the Global Menu ( ![Global Menu](../../images/icon-applications-menu.png) ) according to its panel category key (i.e., Control Panel > Objects). Additionally, users can add the object to site pages as a widget and assign tags and categories to Distributor Application entries.
+   This configures the Distributor Application to store data by instance and appear in the Global Menu ( ![Global Menu](../../images/icon-applications-menu.png) ) according to its panel category key (i.e., Control Panel &rarr; Objects). Additionally, users can add the object to site pages as a widget and assign tags and categories to Distributor Application entries.
 
 1. Click *Save*.
 
 ## Adding a Custom Field
 
 Before you can publish an object definition, it must have at least one field.
-
-To do this,
 
 1. Go to the *Fields* tab.
 
@@ -115,9 +120,9 @@ To do this,
 
 When you publish custom objects, Liferay creates a database table for storing data entries. Publishing also registers the object with the OSGi framework, integrates it with [Liferay's core features](https://learn.liferay.com/w/dxp/building-applications/objects/understanding-object-integrations) (e.g., permissions, workflow, headless), and provides a basic user interface.
 
-To publish Distributor Application,
+<!-- You can keep the above as repetition so long as the original text (as noted above) is moved into the intro. -Rich -->
 
-1. Go to the object's *Details* tab.
+1. Go to the object's Details tab.
 
 1. Click *Publish*.
 
@@ -125,9 +130,20 @@ To publish Distributor Application,
 
 This activates Distributor Application and creates a database table with the `applicantName` field along with the default system fields. See [Publishing Object Drafts](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects#publishing-object-drafts) for more information on what happens during publishing.
 
+<!-- Excellent! -Rich --> 
+
 ## Using Distributor Applications
 
 Now that Distributor Application is published, you can begin using it.
+
+<!-- The below instructions should be made absolutely specific and step-ified. For example, 
+
+    1. Open the Global menu... Distributor Applications. 
+    2. Click *Add*. 
+    3. Fill out the form: 
+        Field: Value (etc)
+
+    We make a big difference between training and docs this way. -Rich -->
 
 To access the object's application page via the Liferay UI, open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Distributor Applications*.
 

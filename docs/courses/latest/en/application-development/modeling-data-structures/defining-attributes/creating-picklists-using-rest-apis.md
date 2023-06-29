@@ -2,6 +2,8 @@
 
 The `headless-admin-list-type` service provides REST APIs for performing CRUD operations for picklists. <!--Using these APIs is far more efficient than manually creating picklists through the UI, since you can add lists and items with pre-configured ERCs and localized names all in one step.--> Here you'll use these APIs to add the remaining picklists for the Distributor Application object.
 
+<!-- I like the sentence you commented out. It explains why you're doing it this way now: you have a lot of picklists to define, and it'll be much faster to do it this way. -Rich -->
+
 1. Download and unzip the resources for [this exercise](./liferay-r5w2.zip).
 
    ```bash
@@ -12,7 +14,7 @@ The `headless-admin-list-type` service provides REST APIs for performing CRUD op
    unzip liferay-r5w2.zip
    ```
 
-   This ZIP file includes shell scripts for creating the remaining picklists using the `headless-admin-list-type` REST APIs.
+   This .zip file includes shell scripts for creating the remaining picklists using the `headless-admin-list-type` REST APIs.
 
 1. Navigate to the `curl` folder in the `liferay-r5w2` folder.
 

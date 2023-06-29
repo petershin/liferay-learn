@@ -1,14 +1,12 @@
 # Setting Up the Application Evaluation Object
 
-Application evaluations need to provide business development managers with an infrastructure for consolidating assessment information about prospective applicants. After some planning, Delectable Bonsai team members created an Application Evaluation object in a separate environment. To migrate this object to the development environment, they exported it as a JSON file.
+Business development managers must consolidate assessments of prospective applicants. To achieve this, Delectable Bonsai team members created an Application Evaluation object in a separate environment. To migrate this object to the development environment, they exported it as a JSON file.
 
-Here you'll set up the Application Evaluation object by importing this file into your Liferay instance. But first, create the object's picklists using the `headless-admin-list-type` REST APIs.
+Here you'll import the Application Evaluation object into your Liferay instance. But first, create the object's picklists using the `headless-admin-list-type` REST APIs.
 
 ## Creating the Picklists
 
 The Application Evaluation object requires these picklists: Assessment Scores, Recommendations, and Decisions.
-
-To create them,
 
 1. Download and unzip the resources for [this exercise](./liferay-w1m9.zip):
 
@@ -50,7 +48,7 @@ With the picklists in place, you can import the Application Evaluation object.
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
-1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) in the Application Bar and select *Import*.
+1. Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) in the Application Bar and select *Import*.
 
 1. Enter these details and click *Import*
 

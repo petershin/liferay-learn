@@ -2,7 +2,7 @@
 
 The `object-admin` service provides REST APIs for performing CRUD operations on object definitions, such as adding fields. Here you'll use these APIs to add business and credit reference fields to the Distributor Application object.
 
-1. Download and unzip the resources for [this exercise](./liferay-p6k3.zip).
+1. Download and unzip [the resources](./liferay-p6k3.zip) for this exercise.
 
    ```bash
    curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-attributes/adding-fields-using-rest-apis/liferay-p6k3.zip -O
@@ -12,7 +12,7 @@ The `object-admin` service provides REST APIs for performing CRUD operations on 
    unzip liferay-p6k3.zip
    ```
 
-   This ZIP file includes shell scripts that call the `object-admin` REST APIs.
+   This .zip file includes shell scripts that call the `object-admin` REST APIs.
 
 1. Navigate to `liferay-p6k3/curl`.
 
@@ -82,10 +82,12 @@ The `object-admin` service provides REST APIs for performing CRUD operations on 
    | `referenceZIPPostalCode`       | Text |
    | `referenceCountry`             | Text |
 
-Once finished, the Distributor Application should have 48 fields. These fields can help Delectable Bonsai collect the data they need for evaluating and vetting each applicant in compliance with KYC policies and AML laws.
+When finished, the Distributor Application should have 48 fields. These fields can help Delectable Bonsai collect the data they need for evaluating and vetting each applicant in compliance with KYC policies and AML laws.
 
 ![The Distributor Application object should have 48 fields.](./adding-fields-using-rest-apis/images/01.png)
 
-Now Delectable Bonsai need to collect data necessary for assessing the relative value of each business opportunity. In this case, Delectable Bonsai wants applicants to select from predefined options. To achieve this, first create picklists.
+Now Delectable Bonsai must collect data necessary for assessing the relative value of each business opportunity. In this case, Delectable Bonsai wants applicants to select from predefined options. To achieve this, first create picklists.
+
+<!-- Above paragraph should go in next step. End this one with a congratulatory statement. -Rich -->
 
 Next: [Creating Picklists for Distributor Applications](./creating-picklists-for-distributor-applications.md)

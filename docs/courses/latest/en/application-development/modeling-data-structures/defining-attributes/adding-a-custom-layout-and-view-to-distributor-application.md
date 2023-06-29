@@ -1,6 +1,6 @@
 # Adding a Custom Layout and View to Distributor Application
 
-When you published the Distributor Application object, Liferay created a default [layout](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) and [view](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views). The layout provides a UI for creating and editing object entries, while the view provides a UI for viewing and managing existing entries. Here you'll use cURL scripts to create a custom layout and view.
+When you published the Distributor Application object, Liferay created a default [layout](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) and [view](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views). The layout provides a UI for creating and editing object entries, and the view provides a UI for viewing and managing existing entries. Here you'll use cURL scripts to create a custom layout and view.
 
 ```{note}
 Subsequent lessons will explore how to design engaging, responsive user interfaces with Liferay's page builder features. Object custom layouts and views are only used here during development.
@@ -18,7 +18,7 @@ Subsequent lessons will explore how to design engaging, responsive user interfac
    unzip liferay-t7z2.zip
    ```
 
-   This ZIP file includes shell scripts that use the `object-admin` REST APIs to add a layout and view to the Distributor Application object.
+   This .zip file includes shell scripts that use the `object-admin` REST APIs to add a layout and view to the Distributor Application object.
 
 1. Navigate to `liferay-t7z2/curl`.
 
@@ -74,7 +74,7 @@ Practice creating entries in the Distributor Application object to verify the ob
 
 So far you've added all the fields and picklists Delectable Bonsai needs for following KYC policies, complying with AML laws, and weighing the prospective value of each application.
 
-Now Delectable Bonsai needs a way to store evaluation notes and relate them to specific applications. This is where object relationships come in.
+Now Delectable Bonsai needs a way to store evaluation notes and relate them to specific applications. For this, you'll use object relationships.
 
 Next: [Defining Relationships](../defining-relationships.md)
 

@@ -89,4 +89,6 @@ Now when users fill out a distributor application, they can select from predefin
 
 With over 50 fields, the current user interfaces for Distributor Application are no longer viable for creating and displaying entries. This is because the default layout and view include every object field and display them alphabetically. Before forward with modeling data structures, add a custom layout and view to Distributor Application.
 
+<!-- Move the above paragraph to the beginning of the next step. -Rich -->
+
 Next: [Adding a Custom Layout and View to Distributor Application](./adding-a-custom-layout-and-view-to-distributor-application.md)

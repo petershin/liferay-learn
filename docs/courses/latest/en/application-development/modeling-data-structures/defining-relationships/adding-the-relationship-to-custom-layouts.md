@@ -1,14 +1,14 @@
 # Adding the Relationship to Custom Layouts
 
-Relationship fields appears automatically in an object's default layout, relationship tables do not. To test out the relationship, update the custom layout for Distributor Application to include the relationship table.
+Relationship fields appear automatically in an object's default layout; relationship tables do not. To test the relationship, update the custom layout for Distributor Application to include the relationship table.
 
-Here you'll update the custom layout for Distributor Application to include the relationship table. Then, you'll create a custom layout for Application Evaluation that includes the relationship field.
+Here you'll update the custom layout for Distributor Application to include the relationship table. Then you'll create a custom layout for Application Evaluation that includes the relationship field.
 
 ## Adding the Relationship Table to Distributor Application's Layout
 
 1. While editing the Distributor Application object, go to the *Layouts* tab and begin editing the layout.
 
-1. In the Info tab, rename the layout to Layout with Relationship Table.
+1. In the Info tab, rename the layout to *Layout with Relationship Table*.
 
    ![Rename the layout to Layout with Relationship Table.](./adding-the-relationship-to-custom-layouts/images/01.png)
 

@@ -1,6 +1,6 @@
 # Adding Fields to the Distributor Application Object
 
-Delectable Bonsai's Distributor Application object needs fields for collecting applicant and contact information. To add these fields manually via the Objects UI,
+Your next task is to add fields for collecting applicant and contact information: 
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
@@ -67,7 +67,7 @@ Delectable Bonsai's Distributor Application object needs fields for collecting a
    | Type       | Long Text  |
    | Mandatory  | False      |
 
-Each saved field is immediately added to the Distributor Application object and automatically appears in its default layout when creating entries.
+Each saved field is added immediately to the Distributor Application object and automatically appears in its default layout when creating entries.
 
 ![Add new entries that include the new fields.](./adding-fields-to-the-distributor-application-object/images/02.png)
 
@@ -75,7 +75,9 @@ The new fields also appear in the object's default table view.
 
 ![The default table view includes all custom fields.](./adding-fields-to-the-distributor-application-object/images/03.png)
 
-Now Delectable Bonsai needs to collect information from potential distributors for compliance with KYC and AML policies. However, instead of adding these fields manually, you'll add them programmatically using the `object-admin` REST APIs.
+Delectable Bonsai must collect information from potential distributors for compliance with KYC and AML policies. Rather than these fields manually, you'll add them programmatically using the `object-admin` REST APIs.
+
+<!-- Above paragraph should go in next step; end this one with a congratulatory statement for completing the step. -Rich --> 
 
 Next: [Adding Fields Using REST APIs](./adding-fields-using-rest-apis.md)
 

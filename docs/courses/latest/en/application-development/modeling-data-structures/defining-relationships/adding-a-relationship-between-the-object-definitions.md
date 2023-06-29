@@ -1,6 +1,6 @@
 # Adding a Relationship Between the Object Definitions
 
-Delectable Bonsai needs the ability to relate an application to multiple evaluations and each evaluation to only one application. In Liferay, this involves adding a one-to-many relationship in the Distributor Application object.
+Delectable Bonsai must relate an application to multiple evaluations. This involves adding a one-to-many relationship in the Distributor Application object.
 
 1. Begin editing the Distributor Application object.
 
@@ -25,7 +25,7 @@ Delectable Bonsai needs the ability to relate an application to multiple evaluat
 
 This adds a relationship table to Distributor Application and a relationship field to Application Evaluation. Liferay also adds dedicated relationship REST endpoints to both object definitions for relating and disassociating entries using REST APIs.
 
-Before you practice relating object entries, add the relationship to each object's custom layout.
+Before you practice relating object entries, you must add the relationship to each object's custom layout.
 
 Next: [Adding the Relationship to Custom Layouts](./adding-the-relationship-to-custom-layouts.md)
 

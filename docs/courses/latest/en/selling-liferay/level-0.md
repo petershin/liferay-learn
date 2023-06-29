@@ -4,10 +4,7 @@ toc:
 - ./level-0/liferay-product-offering.md
 - ./level-0/liferay-product-overview.md
 - ./level-0/liferays-unique-value-proposition.md
-- ./level-0/the-ideal-customer-profile-where-liferay-shines.md
-- ./level-0/the-ideal-customer-profile-target-industries.md
-- ./level-0/the-ideal-customer-profile-target-solutions.md
-- ./level-0/the-ideal-customer-profile-strengths-and-red-flags.md
+- ./level-0/the-ideal-customer-profile.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
 ---
 # Level 0

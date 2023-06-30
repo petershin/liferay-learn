@@ -1,6 +1,7 @@
 ---
 uuid: b55694af-20da-4436-a2ed-429b6bfb9c59
 ---
+
 # Setting Up the GitHub Repository
 
 Your first task after your Liferay Cloud account is provisioned is to set up the project's Git repository so you can deploy configurations as an administrator. Marcus must follow this procedure as the Delectable Bonsai project's administrator.

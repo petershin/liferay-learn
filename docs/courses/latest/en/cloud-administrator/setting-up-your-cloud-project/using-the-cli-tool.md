@@ -1,6 +1,7 @@
 ---
 uuid: c869b472-a6a9-4dcd-8567-b0f06d2e99ad
 ---
+
 # Using the CLI Tool
 
 Now that the Delectable Bonsai site is up and running on Liferay Experience Cloud, Kyle is ready to start deploying [client extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions) the development team created. To get started, he needs to install the [command-line tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool).

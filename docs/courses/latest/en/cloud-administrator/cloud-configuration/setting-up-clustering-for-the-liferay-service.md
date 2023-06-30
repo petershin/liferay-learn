@@ -1,6 +1,7 @@
 ---
 uuid: c1dd2bde-e995-4b03-88e1-8e15adeb7b17
 ---
+
 # Setting Up Clustering for the Liferay Service
 
 Because Delectable Bonsai's website draws millions of views, it must be clustered to handle the traffic. Here, you'll learn how to configure a two-node cluster of the production environment.

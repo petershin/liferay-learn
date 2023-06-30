@@ -8,6 +8,7 @@ toc:
    - ./cloud-configuration/installing-a-hotfix.md
 uuid: 9f762025-c335-481c-b9d4-921e3021555c
 ---
+
 # Cloud Configuration
 
 You've walked through the process of setting up and using the Cloud console to deploy changes in LXC. LXC-SM uses the same Cloud console for deploying changes and custom code, so you can get started with the console and tooling with LXC-SM using the [same process as for LXC](./setting-up-your-cloud-project.md). However, you also fully manage your own core Liferay services with it! 

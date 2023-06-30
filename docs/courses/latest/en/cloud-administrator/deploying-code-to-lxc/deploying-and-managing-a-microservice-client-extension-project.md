@@ -1,6 +1,7 @@
 ---
 uuid: d9751162-d28d-40f2-91b4-f7b16c32ae4f
 ---
+
 # Deploying and Managing a Microservice Client Extension Project
 
 Kyle wants to start developing a custom application using a [microservice client extension](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions#object-action-client-extensions) to help keep track of user-submitted feedback.

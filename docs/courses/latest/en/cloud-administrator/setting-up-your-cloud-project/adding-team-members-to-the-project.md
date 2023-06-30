@@ -1,6 +1,7 @@
 ---
 uuid: ab400154-9fae-4665-b883-0f72d934bf74
 ---
+
 # Adding Team Members to the Project
 
 Marcus has access to the Liferay Cloud console for the whole Delectable Bonsai project, but his staff member, Kyle, also needs access.

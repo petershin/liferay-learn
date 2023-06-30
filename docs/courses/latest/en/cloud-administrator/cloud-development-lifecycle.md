@@ -6,6 +6,7 @@ toc:
 - ./cloud-development-lifecycle/using-the-liferay-services-shell.md
 uuid: fcc6f693-4c07-4d89-b09c-3dd087170f1a
 ---
+
 # Cloud Development Lifecycle
 
 Now you've configured your LXC-SM environment for a project like Delectable Bonsai's. Developers like Kyle use the Cloud console too, for everything from deploying new development builds to troubleshooting issues when they arise.

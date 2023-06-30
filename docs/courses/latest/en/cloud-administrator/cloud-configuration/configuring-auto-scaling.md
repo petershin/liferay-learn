@@ -1,6 +1,7 @@
 ---
 uuid: 31cea680-b175-419d-b30f-d17851d3c89e
 ---
+
 # Configuring Auto-scaling
 
 Once you've enabled production environment clustering with any number of nodes, you can configure auto-scaling to better handle site traffic during peak hours.

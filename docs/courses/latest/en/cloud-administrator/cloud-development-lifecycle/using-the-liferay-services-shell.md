@@ -1,6 +1,7 @@
 ---
 uuid: e6c585d3-746c-414e-b417-0cef633c2ba1
 ---
+
 # Using the Liferay Service's Shell
 
 Sometimes you need direct access to the system to see what's happening. Kyle wants to use the Liferay service's shell to view the directory structure and verify database creation. 

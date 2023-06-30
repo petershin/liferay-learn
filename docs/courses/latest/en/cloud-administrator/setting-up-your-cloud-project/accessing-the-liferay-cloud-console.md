@@ -1,6 +1,7 @@
 ---
 uuid: 75c20fc7-274c-4d3e-87df-ee9043778df6
 ---
+
 # Accessing the Liferay Cloud Console
 
 The Delectable Bonsai project has been provisioned, but Marcus and his staff must be granted access to it.

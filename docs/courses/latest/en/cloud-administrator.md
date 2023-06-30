@@ -8,23 +8,23 @@ uuid: f18aba0c-9da6-4057-a9df-0d610216d651
 ---
 # Cloud Administrator
 
-Liferay Cloud allows you to build your website on a secure, reliable enterprise cloud platform. There are two major offerings you can have for your own project:
+If you want your website on a secure and reliable enterprise cloud platform, you can build it on Liferay Cloud. There are two major offerings you can have for your project:
 
-* **Liferay Experience Cloud (LXC)**: Work with an environment where Liferay and all necessary infrastructure are provided and maintained for you, according to your specific needs, while you only need to worry about providing your own code or customizations.
+* **Liferay Experience Cloud (LXC)**: Work with an environment where Liferay and all necessary infrastructure are provided and maintained for you, according to your specific needs, and you only have to provide your own code or customizations.
 * **Liferay Experience Cloud Self-Managed (LXC-SM)**: Work with a Liferay Cloud project where you directly control and configure each service in the cloud yourself, including the web server, database, and Elasticsearch server, and where you are responsible for maintaining and updating them.
 
-You'll learn how to:
+You'll learn how to
 
 * Access the Cloud console, where you manage all of your work in the cloud
 * Grant access to your other team members
 * Use the Cloud CLI tool to deploy changes or customizations
 * Deploy custom code projects
 * Use the tools in the Cloud console to troubleshoot your changes
-* Config ure your cloud services, including clustering, automatic scaling (auto-scaling), and hotfixes *(LXC-SM only)*
+* Configure your cloud services, including clustering, automatic scaling (auto-scaling), and hotfixes *(LXC-SM only)*
 * Automatically deploy builds for your cloud services *(LXC-SM only)*
 * Create and restore backups during testing *(LXC-SM only)*
 
-Start working with a cloud project for Delectable Bonsai, a (fake) company that's taking Liferay Cloud's platform to build a reliable, customized experience for their maple syrup business.
+Start working with a cloud project for Delectable Bonsai, a (fake) company that's using Liferay Cloud's platform to build a reliable, customized experience for their maple syrup business.
 
 Whether you're working with LXC or LXC-SM, get started by [setting up your cloud project](./cloud-administrator/setting-up-your-cloud-project.md).
 

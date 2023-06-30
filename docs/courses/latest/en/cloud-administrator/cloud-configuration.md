@@ -13,7 +13,7 @@ uuid: 9f762025-c335-481c-b9d4-921e3021555c
 You've walked through the process of setting up and using the Cloud console to deploy changes in LXC. LXC-SM uses the same Cloud console for deploying changes and custom code, so you can get started with the console and tooling with LXC-SM using the [same process as for LXC](./setting-up-your-cloud-project.md). However, you also fully manage your own core Liferay services with it! 
 
 ```{note}
-The next two modules (Cloud Configuration and the [Cloud Development Lifecycle](./cloud-development-lifecycle.md)) requires a project on LXC-SM.
+The next two modules (Cloud Configuration and the [Cloud Development Lifecycle](./cloud-development-lifecycle.md)) require a project on LXC-SM.
 ```
 
 Each of your development or production environments includes all of these as separate services in a Cloud network:
@@ -28,7 +28,7 @@ Each of your development or production environments includes all of these as sep
 
 You also have a [CI service](https://learn.liferay.com/w/liferay-cloud/platform-services/continuous-integration) in a separate `infra` environment, which controls any builds you've created or deployed for your other environments.
 
-In LXC-SM, it's your responsibility to configure and manage your environments according to your specific needs. Here, you'll learn how to:
+In LXC-SM, it's your responsibility to configure and manage your environments according to your specific needs. Here, you'll learn how to
 
 * Set up the Git repository to deploy builds for your entire project
 * Configure a custom domain for your Liferay instances

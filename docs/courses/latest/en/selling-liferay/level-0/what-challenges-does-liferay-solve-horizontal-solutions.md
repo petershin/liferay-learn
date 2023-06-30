@@ -6,7 +6,6 @@ toc:
 - ./what-challenges-does-liferay-solve-horizontal-solutions/supplier-portals.md
 - ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
 - ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
-
 uuid: b233e18d-2932-426e-9dfc-209670450195
 ---
 
@@ -14,7 +13,7 @@ uuid: b233e18d-2932-426e-9dfc-209670450195
 
 **At a Glance**
 
-* Liferay is great for Horizontal Solutions like:
+* Liferay is great for horizontal solutions like
   * Customer Portals
   * Digital Commerce Sites
   * External Websites
@@ -22,35 +21,39 @@ uuid: b233e18d-2932-426e-9dfc-209670450195
   * Partner Portals
   * Modern Intranets
   * And more
-* Customers often start with one project and later add others
-* Each of these solutions draw on many of Liferay’s core capabilities
+* Customers often start with one project and later add others.
+* Each of these solutions draw on many of Liferay’s core capabilities.
 
 ## Background
 
-In this module we will be learning more about the types of business challenges that Liferay is well suited to solve.  It’s important to note that one of Liferay’s strengths is its flexibility and that means that you really can use Liferay to solve just about any problem for any industry.
+Here you'll learn more about the types of business challenges that Liferay solves well. One of Liferay's key strengths is its flexibility, which means you really can use Liferay to solve just about any problem for any industry.
 
-However, there are some solutions and industries where we are a particularly good fit and we want to focus on new business opportunities that align with those solutions and industries to have the highest chance of success.
+However, there are some solutions and industries we are a particularly good fit for, and we want to focus on new business opportunities that align with those solutions and industries to have the highest chance of success.
 
 ## Definition of a Solution
 
-For the purposes of this module we will define a solution as a common business need or a set of challenges that Liferay Experience Cloud is well suited to address or solve.
+A solution is a common business need or a set of challenges that Liferay Experience Cloud is well-suited to address.
 
 ## Land and Expand
 
-It is important to keep in mind that most customers originally come to Liferay looking for a specific solution.  Over time they will often find additional business challenges that Liferay can help them to solve.
+Most customers come to Liferay looking for a specific solution. Over time they often find additional business challenges that Liferay can help them solve.
 
-As an example, a common pattern might be for a customer to find Liferay when looking for a modern intranet solution.  Once that solution has been implemented they realize that the same features and capabilities (and the very same subscription) could also help them to solve challenges on their public website or it may help them to provide an authenticated customer portal experience.
+For example, in one common pattern, a customer finds Liferay when looking for a modern intranet solution. After the customer implements their intranet, they realize the same features and capabilities (and the same subscription) could also help them solve challenges on their public website or on an authenticated customer portal experience.
 
 ![Starting with a basic solution and gradually extending Liferay's usage within a company is a great approach to expansion and growth.](./what-challenges-does-liferay-solve-horizontal-solutions/images/01.png)
 
 ## Horizontal Solutions
 
-Click on each of the tiles to read more about the six most common solutions which Liferay is used for.  In each case we have provided:
+Click on each of the tiles to read about the six solutions most commonly solved by Liferay. In each case is provided
 
 * A definition for the solution
 * The buying audience for the solution
 * Key benefits
 * Liferay DXP capabilities employed
+
+Don't know where to start? Start with Customer Portals. 
+
+[Let's Go!](./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -86,8 +89,3 @@ Click on each of the tiles to read more about the six most common solutions whic
 :::
 ::::
 
-## What’s Next
-
-Next we’ll cover key solutions for specific industries.
-
-[Let’s go!]()

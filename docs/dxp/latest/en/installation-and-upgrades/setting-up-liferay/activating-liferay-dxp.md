@@ -47,7 +47,7 @@ If you're using Liferay Connected Services (LCS) with Liferay DXP 7.2 or earlier
 
 ## License Manager
 
-The license manager page displays server and license information. To see the page, click _License Manager_. Or login as an administrator and navigate to _Control Panel_ &rarr; _License Manager_.
+The license manager page displays server and license information. To see the page, click _License Manager_ on the activation page. Or if you have previously activated your Liferay instance, login as an administrator and navigate to _Control Panel_ &rarr; _License Manager_.
 
 ![The license manager page displays server and license information.](./activating-liferay-dxp/images/02.png)
 

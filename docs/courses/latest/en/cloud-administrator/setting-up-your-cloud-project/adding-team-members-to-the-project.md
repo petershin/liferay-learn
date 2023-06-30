@@ -32,7 +32,7 @@ Repeat this process for your other environments (such as UAT) to make sure your 
 Give your team members roles that are appropriate to their role in each environment. For example, developers should have the Admin role in a `dev` environment if they are expected to handle all tasks in that environment. Check [Environment Teams and Roles](https://learn.liferay.com/w/liferay-cloud/manage-and-optimize/environment-teams-and-roles) for more information.
 ```
 
-Next, you'll [install the CLI tool](./using-the-cli-tool.md) so that you can push and deploy changes to your environment(s).
+Next: [install the CLI tool](./using-the-cli-tool.md) so that you can push and deploy changes to your environment(s).
 
 ## Related Concepts
 

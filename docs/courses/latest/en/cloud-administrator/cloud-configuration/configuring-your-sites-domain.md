@@ -64,7 +64,7 @@ Once the process completes, access your chosen domain in a browser to see it rou
 
 ![Your browser verifies that you are using a secured connection once the load balancer updates with a new SSL certificate.](./configuring-your-sites-domain/images/04.png)
 
-Next, you'll [enable clustering for your Liferay service](./setting-up-clustering-for-the-liferay-service.md) to handle more traffic.
+Next: [enable clustering for your Liferay service](./setting-up-clustering-for-the-liferay-service.md) to handle more traffic.
 
 ## Relevant Concepts
 

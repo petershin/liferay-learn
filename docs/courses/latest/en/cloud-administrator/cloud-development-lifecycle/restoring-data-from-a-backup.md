@@ -82,7 +82,7 @@ Kyle realizes after deleting the page that it shouldn't have been deleted, and h
 
 Your UAT Liferay service is temporarily unavailable while the backup is being restored. Once it's finished, you can visit the site again to see the home page is restored.
 
-Next, you'll [query your Liferay database directly using the shell](./using-the-liferay-services-shell.md) in the Liferay Cloud console.
+Next: [query your Liferay database directly using the shell](./using-the-liferay-services-shell.md) in the Liferay Cloud console.
 
 ## Relevant Concepts
 

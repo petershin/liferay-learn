@@ -68,7 +68,9 @@ Next, make a commit and test that automatic deployment is working properly.
 
 Your new commit appears in the list of deployments, deployed to the UAT environment.
 
-Now you can deploy any new developments or changes straight from your repository for testing. Next, you'll [practice using a backup to revert changes from development](./restoring-data-from-a-backup.md).
+Now you can deploy any new developments or changes straight from your repository for testing. 
+
+Next: [practice using a backup to revert changes from development](./restoring-data-from-a-backup.md).
 
 # Relevant Concepts
 

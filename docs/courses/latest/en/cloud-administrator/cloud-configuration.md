@@ -37,4 +37,4 @@ In LXC-SM, it's your responsibility to configure and manage your environments ac
 * Change (rotate) your database password
 * Install a hotfix
 
-[Let's Go!](./cloud-configuration/accessing-the-liferay-cloud-console.md)
+[Let's Go!](./cloud-configuration/setting-up-the-github-repository.md)

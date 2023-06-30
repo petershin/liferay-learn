@@ -30,7 +30,7 @@ Take some time to navigate around the console to familiarize yourself with the a
 
 If your project is on Liferay Experience Cloud, you also receive emails from **lxc.app** inviting you to set a password for your new administrator account on your Liferay instance. Accept this email as well so you can log in and manage your site.
 
-Once you're ready, proceed to [add more team members to your project](./adding-team-members-to-the-project.md).
+Next: [Adding Team Members to Your Project](./adding-team-members-to-the-project.md).
 
 ## Related Concepts
 

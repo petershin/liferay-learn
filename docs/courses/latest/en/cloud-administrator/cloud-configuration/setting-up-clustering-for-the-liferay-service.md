@@ -114,7 +114,7 @@ Now that you have the necessary configuration for clustering, deploy the configu
 
 Once your services restart, clustering is enabled, and you have two nodes of the Liferay service.
 
-Next, you'll [configure the Liferay service to auto-scale](./configuring-auto-scaling.md) for even more instances when they are needed.
+Next: [configure the Liferay service to auto-scale](./configuring-auto-scaling.md) for even more instances when they are needed.
 
 ## Related Concepts
 

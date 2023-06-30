@@ -82,7 +82,7 @@ Deploy the updated configuration to your production environment.
 
 Once your services restart, auto-scaling is enabled, up to a maximum of 12 instances.
 
-Next, you'll [change the password for your database service](./rotating-your-database-password.md).
+Next: [change the password for your database service](./rotating-your-database-password.md).
 
 ## Related Concepts
 

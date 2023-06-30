@@ -136,7 +136,7 @@ Deploy the build to production now that it's passed your testing process.
 
 The production environment's services restart with the new addition from the build. Once the services are back up, you can visit your production environment's Liferay instance to see the new widget appear there, too.
 
-Next, you'll [configure automatic deployment](./setting-up-automatic-deployment.md) to speed up the development workflow.
+Next: [configure automatic deployment](./setting-up-automatic-deployment.md) to speed up the development workflow.
 
 ## Related Concepts
 

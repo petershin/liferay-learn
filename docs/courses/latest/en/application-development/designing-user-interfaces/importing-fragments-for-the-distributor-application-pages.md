@@ -1,6 +1,6 @@
 # Importing Fragments for the Distributor Application Pages
 
-<!-- Intro -->
+Published objects are integrated with Liferay's core frameworks, so you can map page fragments to object entries, such as form fragments and the Collection Display fragment. Here you'll import pre-configured fragment compositions for use in distributor application pages.
 
 1. Download the Distributor Application fragments ZIP:
 
@@ -27,6 +27,11 @@
 
    ![Confirm the Distributor Application fragments imported successfully.](./importing-fragments-for-the-distributor-application-pages/images/03.png)
 
-<!-- Can now add these fragments to each of the pages. -->
+Now that you've imported the fragments, you can use them to incorporate Distributor Application features and data into your pages. Begin with building the submission form.
 
 Next: [Adding the Form to the Apply Page](./adding-the-form-to-the-apply-page.md)
+
+## Relevant Concepts
+
+* [Displaying Object Entries](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries)
+* [Using Fragments to Build Forms](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms)

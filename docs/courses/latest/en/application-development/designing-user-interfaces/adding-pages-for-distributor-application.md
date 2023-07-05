@@ -1,11 +1,11 @@
 # Adding Pages for Distributor Application
 
-<!-- Intro -->
+Pages are the primary building blocks <!--w/c--> of Liferay sites. Delectable Bonsai's design team has created and exported three placeholder pages for use with the Distributor Application object. Here you'll import these pages as a LAR file: <!--TASK: If you've completed the [Site Design]() course, then you've already added these pages to your site. Otherwise, you can download and import them as a LAR file. -->
 
-1. Download the LAR file for the Distributor Application pages: <!--REFINE-->
+1. Download the LAR file for this exercise:
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/adding-fields-to-the-distributor-application-object/adding-fields-to-the-distributor-application-object/distributor-application-pages.lar -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/adding-pages-for-distributor-application/distributor-application-pages.lar -O
    ```
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Publishing*, and click *Import*.
@@ -26,8 +26,10 @@
    * Application Submission
    * Distributor Applications
 
-   ![Verify the pages imported successfully.](./adding-pages-for-distributor-application/images/03.png)
+   ![Verify the pages appear in your site.](./adding-pages-for-distributor-application/images/03.png)
 
-After adding the pages, you can add fragments and widgets to __ each page. Instead of starting from scratch, you can import the provided fragment set. <!--REFINE-->
+These pages provide the framework for building the Distributor Application UI.
+
+Currently, they do not include any of the fragments or widgets necessary for creating, viewing, and managing applications. Instead of starting from scratch, import the provided fragment compositions.
 
 Next: [Importing Fragments for the Distributor Application Pages](./importing-fragments-for-the-distributor-application-pages.md)

@@ -1,23 +1,19 @@
 # Designing User Interfaces
 
-Coming Soon!
+Designing user interfaces for applications is integral to creating intuitive and engaging digital experiences. Using Liferay's page builder features, you can create dynamic and responsive UIs integrated with the platform <!--ALT: sites-->, providing a consistent user experience and access to application data and features in your site.
 
-<!-- Designing custom user interfaces for custom applications in Liferay involves out-of-the-box page builder features (e.g., stylebooks, master page templates, display page templates), custom fragments, and front-end client extensions.
+So far, Delectable Bonsai's application uses object layouts and views. While these are serviceable for administrative users, they have limited customization options and are only accessible to users who can access the Global Menu ![Global Menu](../images/icon-applications-menu.png). Since Delectable Bonsai wants to make applications accessible in their site, object layouts and views do not satisfy their requirements.
 
-Important to maintain continuity of style across your site (CSS) while providing a responsive display for different devices.
+<!-- Transition -->
 
-Views for administrators... Views for end users... Control access to fields and actions...
+For the Distributor Application, Delectable Bonsai needs these UIs in their site:
 
-This section should include the OAuth client extension for authentication. -->
+* An apply page for submitting applications
+* A success page for submissions
+* An application overview page for managing and editing applications
+* A display page for viewing each application's details
 
-<!--  This uses the default entry creation layout that's generated for all objects. -->
-
-<!-- Object's application page uses a default view... -->
-
-<!-- Need an apply page.
-Need a page for successful form submissions.
-Need an application overview page
-Need a display page for viewing each application's details. -->
+The first step is adding pages to the site.
 
 Ready?
 

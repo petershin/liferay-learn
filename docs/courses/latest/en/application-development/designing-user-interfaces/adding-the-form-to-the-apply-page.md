@@ -1,12 +1,12 @@
 # Adding the Form to the Apply Page
 
-<!-- Need dynamic form. Add to site page. Integrate with site design. Make available in the UI. Needs to also Form for submitting applications.
+By default, each object definition uses a layout for entry creation. Besides layouts, Liferay provides form fragments that you can map to custom objects for creating entries. Using form fragments, Delectable Bonsai can replace their object layout and integrate the form into their site pages.
 
-With Liferay objects, this involves adding form fragments to a content page or page template. -->
+Add the provided form fragment composition to the Apply page and configure its elements:
 
 1. Navigate to the Apply page and click *Edit* (![Edit Button](../../images/icon-edit.png)).
 
-   ![Navigate to the Apply page and click Edit.](./adding-the-form-to-the-apply-page/images/01.png)
+![Navigate to the Apply page.](./adding-the-form-to-the-apply-page/images/01.png)
 
 1. Drag and drop the *Form Page* fragment into the empty Fragment Elements container at the bottom of the page.
 
@@ -63,5 +63,7 @@ With Liferay objects, this involves adding form fragments to a content page or p
    ![Set the Success Message to Page and select Application Submission.](./adding-the-form-to-the-apply-page/images/07.png)
 
 1. Click *Publish*.
+
+Great! Now that you've added the form and configured its elements, Delectable Bonsai's prospective distributors can use the form to submit applications. Next, design the success page for application submissions.
 
 Next: [Adding Details to the Success Page](./adding-details-to-the-success-page.md)

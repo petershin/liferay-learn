@@ -93,12 +93,16 @@ The batch insert property is included in the [`portal-upgrade-database.propertie
 
 ## Running the Upgrade Tool
 
+```{important}
+As of Liferay 7.4 U82/GA82 and above, the `db_upgrade.sh` file has been renamed to `db_upgrade_client.sh`.
+```
+
 The upgrade tool is configured via its command line interface, or by [using properties files](../reference/database-upgrade-tool-reference.md#manual-configuration).
 
-The `db_upgrade.sh` script in the `[Liferay Home]/tools/portal-tools-db-upgrade-client` folder invokes the upgrade tool. The `--help` option describes the tool's usage.
+The `db_upgrade_client.sh` script in the `[Liferay Home]/tools/portal-tools-db-upgrade-client` folder invokes the upgrade tool (`db_upgrade_client.bat` on Windows). The `--help` option describes the tool's usage.
 
 ```bash
-./db_upgrade.sh --help
+./db_upgrade_client.sh --help
 ```
 
 Here's how to upgrade your database with the upgrade tool:
@@ -110,7 +114,7 @@ Here's how to upgrade your database with the upgrade tool:
     ```
 
     ```bash
-    ./db_upgrade.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx4096m"
+    ./db_upgrade_client.sh -j "-Dfile.encoding=UTF-8 -Duser.timezone=GMT -Xmx4096m"
     ```
 
     The command above executes the upgrade tool with the same JVM options recommended for the application server. File encoding (`UTF-8`), time zone (`GMT`), country, language, and memory settings (`-Xmx value`) should all match your application server's settings. For databases with over 10 GB of data, allocate additional memory using the `-Xmx` option.

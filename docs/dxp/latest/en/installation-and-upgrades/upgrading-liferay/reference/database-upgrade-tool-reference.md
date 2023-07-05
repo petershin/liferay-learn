@@ -3,9 +3,13 @@ uuid: 8d057d63-5edc-481f-b55d-ccfa3cb388fa
 ---
 # Database Upgrade Tool Reference
 
+```{important}
+As of Liferay 7.4 U82/GA82 and above, the `db_upgrade.sh` file has been renamed to `db_upgrade_client.sh`.
+```
+
 Here's an overview of Liferay's upgrade tool. 
 
-Start the upgrade tool using the `db_upgrade.sh` script in the `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client` folder (`db_upgrade.bat` on Windows).
+Start the upgrade tool using the `db_upgrade_client.sh` script in the `[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client` folder (`db_upgrade_client.bat` on Windows).
 
 ## Overview
 
@@ -17,7 +21,7 @@ Start the upgrade tool using the `db_upgrade.sh` script in the `[LIFERAY_HOME]/t
 This command prints the upgrade tool usage:
 
 ```bash
-db_upgrade.sh --help
+db_upgrade_client.sh --help
 ```
 
 Here are all the upgrade tool command line options:
@@ -35,7 +39,7 @@ Here are all the upgrade tool command line options:
 The `-l` option specifies the tool's log file name:
 
 ```bash
-db_upgrade.sh -l "output.log"
+db_upgrade_client.sh -l "output.log"
 ```
 
 ### Recommended JVM Options
@@ -50,10 +54,10 @@ Using a test scenario with a 3.2 GB database and a 15 GB Document Library, the f
 * File encoding UTF-8
 * User time zone GMT
 
-Here is the `db_upgrade.sh` command corresponding to these settings:
+Here is the `db_upgrade_client.sh` command corresponding to these settings:
 
 ```bash
-db_upgrade.sh -j "-Xmx8000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
+db_upgrade_client.sh -j "-Xmx8000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
 ```
 
 ## Configuring the Upgrade Tool

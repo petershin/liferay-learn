@@ -132,7 +132,7 @@ Now that you've added and activated the notification actions, you can trigger th
 
 Congratulations! You've successfully added the business logic necessary for the Distributor Application object. Now you can design a user interface using Liferay's page builder features.
 
-Next: [Designing User Interfaces](../../designing-user-interfaces.md)
+Module Three: [Designing User Interfaces](../../designing-user-interfaces.md)
 
 ## Relevant Concepts
 

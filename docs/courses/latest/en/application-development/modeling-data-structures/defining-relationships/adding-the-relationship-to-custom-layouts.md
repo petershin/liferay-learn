@@ -30,9 +30,23 @@ Here you'll update the custom layout for Distributor Application to include the 
 
 ## Adding the Relationship Field to Application Evaluation's Layout and View
 
-1. While editing the Application Evaluation object, go to the *Layouts* tab.
+1. Download and unzip the resources for [this exercise](./liferay-h2x9.zip):
 
-1. Run this script in the `liferay-w1m9/curl` folder to create a new default layout for Application Evaluations:
+   ```bash
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-relationships/setting-up-the-application-evaluation-object/liferay-h2x9.zip -O
+   ```
+
+   ```bash
+   unzip liferay-h2x9.zip
+   ```
+
+1. Navigate to the `curl` folder in the `liferay-h2x9` folder:
+
+   ```bash
+   cd liferay-h2x9/curl
+   ```
+
+1. Run this script to create a new default layout for Application Evaluations:
 
    ```bash
    ./ObjectLayout_POST_LayoutWithRelationship_ByExternalReferenceCode.sh
@@ -44,7 +58,7 @@ Here you'll update the custom layout for Distributor Application to include the 
 
 1. Go to the *Views* tab.
 
-1. Run this script in the `liferay-w1m9/curl` folder to create a new default view for Application Evaluations:
+1. Run this script to create a new default view for Application Evaluations:
 
    ```bash
    ./ObjectView_POST_ViewWithRelationship_ByExternalReferenceCode.sh

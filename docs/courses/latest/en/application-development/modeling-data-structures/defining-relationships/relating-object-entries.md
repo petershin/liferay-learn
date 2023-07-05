@@ -14,7 +14,7 @@ After defining an object relationship, you can relate entries in two ways: the L
    unzip liferay-g2n9.zip
    ```
 
-   This includes two scripts for creating _ and __ entries.
+   This includes two scripts for creating application and evaluation entries.
 
 1. Navigate to the `curl` folder in the `liferay-g2n9` folder:
 
@@ -30,9 +30,7 @@ After defining an object relationship, you can relate entries in two ways: the L
 
 1. Verify the entries appear in the Distributor Application application page:
 
-   ```bash
-   
-   ```
+   ![]()
 
 1. Create three entries for the Application Evaluation object:
 
@@ -42,13 +40,11 @@ After defining an object relationship, you can relate entries in two ways: the L
 
 1. Verify the entries appear in the Application Evaluation application page:
 
-   ```bash
-   
-   ```
+   ![]()
 
 Now, practice relating these entries.
 
-## Relating the Entries
+## Relating Entries
 
 <!--
 1. Open __.
@@ -66,7 +62,7 @@ Now, practice relating these entries.
 
 Congratulations! You have successfully modeled the necessary data structures for Delectable Bonsai's distributor onboarding flow. Now you can start incorporating the business logic necessary for bringing your application to life, such as workflows, validations, notifications. You'll do this in our next module.
 
-Next: [Implementing Business Logic](../../implementing-business-logic.md)
+Module Two: [Implementing Business Logic](../../implementing-business-logic.md)
 
 ## Relevant Concepts
 

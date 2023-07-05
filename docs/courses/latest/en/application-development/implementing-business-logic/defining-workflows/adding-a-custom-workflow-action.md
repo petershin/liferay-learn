@@ -23,7 +23,7 @@ Enable the workflow via the Liferay UI.
 
 -->
 
-Next: [Automating Notifications](./automating-notifications.md)
+Next: [Automating Notifications](../automating-notifications.md)
 
 ## Relevant Concepts
 

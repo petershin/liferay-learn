@@ -79,4 +79,9 @@ All of these B2B solutions feature inherent complexity in requirements and integ
 
 Congratulations! You have completed this module on Liferay's value proposition. 
 
-Next: [The Ideal Customer Profile for Liferay Customers]().
+Next: [The Ideal Customer Profile for Liferay Customers](../the-ideal-customer-profile.md).
+
+## Supporting Assets
+
+* View the [recording](/web/guest/d/l0-4-liferays-unique-value-proposition) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) of the presentation used in the live workshop.

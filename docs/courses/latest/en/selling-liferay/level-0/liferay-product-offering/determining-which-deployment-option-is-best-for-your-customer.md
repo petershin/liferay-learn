@@ -73,6 +73,12 @@ Liferay has developed a sales decision flow to use with new customers and for ne
 
 ![Sales decision flow for new customers and new projects with existing customers.](../liferay-product-offering/images/06.png)
 
+## Supporting Assets
+
+* View the [recording](/web/guest/d/l0-2a-liferay-offering ) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-2a-liferay-offering-pdf) of the presentation used in the live workshop.
+* Download the [Sales Decision Flow]/documents/d/guest/new-customer-new-project-sales-decision-flow) referred to in this module.
+
 ## What's Next
 
 Excellent! You've finished the module on the basics of the Liferay product offering. 

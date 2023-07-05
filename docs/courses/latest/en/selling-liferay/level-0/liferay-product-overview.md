@@ -24,6 +24,9 @@ As a quick refresher, Liferay's product is Liferay DXP, and includes core Digita
 
 ![The Liferay Product line has three capability sets.](./liferay-product-offering/images/01.png)
 
-By the end of this module you will have a high level view of all of the main capabilities areas of Liferay DXP. This lesson starts with reviewing Liferay DXP's Design Systems and Experience Management capabilities.
+By the end of this module you will have a high level view of all of the main capabilities areas of Liferay DXP. This lesson starts with reviewing Liferay DXP's [Design Systems and Experience Management](./liferay-product-overview/design-systems-and-experience-management.md) capabilities.
 
-[Let's Go!](./liferay-product-overview/design-systems-and-experience-management.md)
+## Supporting Assets
+
+* View the [recording](/web/guest/d/l0-2b-liferay-overview) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-2b-liferay-overview-pdf) of the presentation used in the live workshop.

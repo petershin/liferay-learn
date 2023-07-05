@@ -94,4 +94,9 @@ Finally, it is important to remember that these lists are not exhaustive, and no
 
 Congratulations! You've completed the module on the ideal customer profile! 
 
-Next: the horizontal and industry challenges Liferay solves for.
+Next: the [horizontal challenges Liferay solves for](../what-challenges-does-liferay-solve-horizontal-solutions.md).
+
+## Supporting Assets
+
+* View the [recording](/web/guest/d/l0-3-ideal-customer-profile) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-3-ideal-customer-profile-pdf) of the presentation used in the live workshop.

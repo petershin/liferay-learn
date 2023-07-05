@@ -19,6 +19,11 @@ This module introduces the Ideal Customer Profile for Liferay and summarizes the
 
 This knowledge helps Sellers be better equipped to prospect and to pre-qualify an opportunity or RFI / RFQ successfully.
 
+## Supporting Assets
+
+* View the [recording](/web/guest/d/l0-3-ideal-customer-profile) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-3-ideal-customer-profile-pdf) of the presentation used in the live workshop.
+
 ## Selling vs. Walking Away
 
 It is important to understand the strengths and weaknesses that your organization has and that the product you are selling has. 
@@ -38,6 +43,9 @@ To meet clients’ buying criteria or to effectively change them, we must unders
 * Pursuing major contracts is very expensive. 
 * Finishing second costs as much as winning the contract, but there’s no reward at the end. 
 
-Ready to start?
+Next, learn about [where Liferay shines](./the-ideal-customer-profile/where-liferay-shines.md).
 
-[Let's Go!](./the-ideal-customer-profile/where-liferay-shines.md)
+## Supporting Assets
+
+* View the [recording](/web/guest/d/l0-3-ideal-customer-profile) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-3-ideal-customer-profile-pdf) of the presentation used in the live workshop.

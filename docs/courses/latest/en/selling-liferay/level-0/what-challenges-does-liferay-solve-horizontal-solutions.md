@@ -30,6 +30,11 @@ Here you'll learn more about the types of business challenges that Liferay solve
 
 However, there are some solutions and industries we are a particularly good fit for, and we want to focus on new business opportunities that align with those solutions and industries to have the highest chance of success.
 
+## Supporting Assets
+
+* View the [recording](/web/guest/d/l0-5a-what-challenges-do-we-solve-overview) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-5a-what-challenges-do-we-solve-overview-pdf) of the presentation used in the live workshop.
+
 ## Definition of a Solution
 
 A solution is a common business need or a set of challenges that Liferay Experience Cloud is well-suited to address.

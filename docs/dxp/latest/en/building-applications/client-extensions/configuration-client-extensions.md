@@ -29,6 +29,36 @@ Specify an OAuth headless server client extension in your `client-extension.yaml
 type: oAuthApplicationHeadlessServer
 ```
 
+### The `ext-init-metadata` Dependency Side Effect
+
+The `oAuthApplicationHeadlessServer` client extension causes a side effect for the host workload. First, an additional dependency is defined for metadata which is provided by DXP as a _config tree_ (a directory structure which forms a set of key/value pairs where file names are the keys and file contents are the values).
+
+The following is an example of the _config tree_:
+
+```bash
+.
+# the oauth authorization uri of the DXP virtual instance (no protocol, domain or port)
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.authorization.uri
+# the audience of the oauth headless server application
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.headless.server.audience
+# the client id of the oauth headless server application
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.headless.server.client.id
+# the client secret of the oauth headless server application
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.headless.server.client.secret
+# the scopes of the oauth headless server application
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.headless.server.scopes
+# the introspection uri of the DXP virtual instance (no protocol, domain or port)
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.introspection.uri
+# the jwks (JSON Web Keys Set) uri of the DXP virtual instance (no protocol, domain or port)
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.jwks.uri
+# the token uri of the DXP virtual instance (no protocol, domain or port)
+└── <oAuth2ApplicationExternalReferenceCode>.oauth2.token.uri
+```
+
+Workloads in Liferay Experience Cloud will have this metadata automatically mounted into the workload container at the path `/etc/liferay/lxc/ext-init-metadata`.
+
+For on-premises applications this same _config tree_ structure is emitted by DXP in `${liferay.home}/cx-metadata/<virtualInstanceIdOrDefault>/<projectId>`. This path can then be provided to client extension microservices to have access to that same metadata.
+
 ## OAuth User Agent Client Extensions
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
@@ -40,6 +70,36 @@ Specify an OAuth user agent client extension in your `client-extension.yaml` fil
 ```yaml
 type: oAuthApplicationUserAgent
 ```
+
+### The `ext-init-metadata` Dependency Side Effect
+
+The `oAuthApplicationUserAgent` client extension causes a side effect for the host workload. First, an additional dependency is defined for metadata which is provided by DXP as a _config tree_ (a directory structure which forms a set of key/value pairs where file names are the keys and file contents are the values).
+
+The following is an example of the _config tree_:
+
+```bash
+.
+# the oauth authorization uri of the DXP virtual instance (no protocol, domain or port)
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.authorization.uri
+# the introspection uri of the DXP virtual instance (no protocol, domain or port)
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.introspection.uri
+# the jwks (JSON Web Keys Set) uri of the DXP virtual instance (no protocol, domain or port)
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.jwks.uri
+# newline separated redirect uris of the DXP virtual instance
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.redirect.uris
+# the token uri of the DXP virtual instance
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.token.uri (no protocol, domain or port)
+# the audience of the oauth user agent application
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.user.agent.audience
+# the client id of the oauth user agent application
+├── <oAuth2ApplicationExternalReferenceCode>.oauth2.user.agent.client.id
+# the scopes of the oauth user agent application
+└── <oAuth2ApplicationExternalReferenceCode>.oauth2.user.agent.scopes
+```
+
+Workloads in Liferay Experience Cloud will have this metadata automatically mounted into the workload container at the path `/etc/liferay/lxc/ext-init-metadata`.
+
+For on-premises applications this same _config tree_ structure is emitted by DXP in `${liferay.home}/cx-metadata/<virtualInstanceIdOrDefault>/<projectId>`. This path can then be provided to client extension microservices to have access to that same metadata.
 
 ## Related Topics
 

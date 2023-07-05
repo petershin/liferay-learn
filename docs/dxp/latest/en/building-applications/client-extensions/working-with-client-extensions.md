@@ -189,6 +189,29 @@ If you must manually deploy the zip files, run
 
 Then copy the archives from each project's `dist/` folder into the server's `[Liferay Home]/osgi/client-extensions/` folder.
 
+## Obtaining Context Sensitive Information
+
+Client extensions are designed to be made portable in that they should never contain environment specific information in their configuration. With that in mind, how does a client extension find information about it's runtime context, particularly the details specific to DXP?
+
+Every client extension workload is automatically provided with a _config tree_  (a directory structure which forms a set of key/value pairs where file names are the keys and file contents are the values) containing information about DXP. This way application logic can always retrieve information relative to the runtime and never have to hard code this information.
+
+
+The following is an example of the _config tree_:
+
+```bash
+.
+# the protocol with which to communicate with DXP virtual instance
+├── com.liferay.lxc.dxp.server.protocol
+# newline separated list of every domain belonging to the DXP virtual instance
+├── com.liferay.lxc.dxp.domains
+# the primary domain ("Virtual Host" field) of the DXP virtual instance
+└── com.liferay.lxc.dxp.mainDomain
+```
+
+Workloads in Liferay Experience Cloud will have this metadata automatically mounted into the workload container at the path `/etc/liferay/lxc/dxp-metadata`.
+
+For on-premises applications this same _config tree_ structure is emitted by DXP in `${liferay.home}/cx-metadata/<virtualInstanceIdOrDefault>/dxp-metadata`. This path can then be provided to client extension microservices to have access to that same metadata.
+
 ## Related Topics
 
 * [Batch Client Extensions](./batch-client-extensions.md)

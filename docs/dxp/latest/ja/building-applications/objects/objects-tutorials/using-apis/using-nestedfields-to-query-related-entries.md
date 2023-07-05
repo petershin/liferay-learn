@@ -1,4 +1,4 @@
-# `nestedFields` を使って関連するエントリーをクエリーする。
+# `nestedFields` を使って関連するエントリーをクエリーする
 
 {bdg-secondary}`Liferay 7.4 U69+/GA69+で利用可能`
 
@@ -19,7 +19,7 @@
 
 ### 関連オブジェクト定義の作成
 
-1. グローバルメニュー ( [**グローバルメニュー](../../../../images/icon-applications-menu.png) )を開き、** コントロールパネル **タブに移動し、** オブジェクト*をクリックします。
+1. **グローバルメニュー** (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; **［コントロールパネル］** tab, &rarr; **［システム設定］** の順に開きます。
 
 1. [Create](../../creating-and-managing-objects/creating-objects.md) 3つのオブジェクトドラフトを作成します。
 

@@ -31,7 +31,8 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
 
 以下のAPIは、現在LiferayのSolrコネクターではサポートされていません。
 
-* ポータルコアから（モジュール： `portal-kernel`、アーティファクト： `com.liferay.portal.kernel`）：
+* ポータルコアから（モジュール： `portal-kernel`、アーティファクト：
+    `com.liferay.portal.kernel`）:
   * `com.liferay.portal.kernel.search.generic.NestedQuery`
   * `com.liferay.portal.kernel.search.filter`：
     * `ComplexQueryPart`
@@ -39,7 +40,8 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
     * `GeoDistanceFilter`
     * `GeoDistanceRangeFilter`
     * `GeoPolygonFilter`
-* ポータル検索APIから（モジュール： `portal-search-api`、アーティファクト： `com.liferay.portal.search.api`）：
+* ポータル検索APIから（モジュール： `portal-search-api`、アーティファクト：
+    `com.liferay.portal.search.api`）：
   * `com.liferay.portal.search.filter`：
     * `ComplexQueryPart`
     * `TermsSetFilter`
@@ -50,7 +52,8 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
   * `com.liferay.portal.search.script.*`
   * `com.liferay.portal.search.significance.*`
   * `com.liferay.portal.search.sort *`：`ソート`、`FieldSort`および `ScoreSort`のみがサポートされています。
-* ポータル検索エンジンアダプターAPI（モジュール： `portal-search-engine-adapter-api`、アーティファクト： `com.liferay.portal.search.engine.adapter.api`）
+* ポータル検索エンジンアダプターAPI（モジュール： `portal-search-engine-adapter-api`、アーティファクト：
+    `com.liferay.portal.search.engine.adapter.api`）
   * `com.liferay.portal.search.engine.adapter.cluster.*`
   * `com.liferay.portal.search.engine.adapter.document.UpdateByQueryDocumentRequest`
   * `com.liferay.portal.search.engine.adapter.index。*`： `RefreshIndexRequest` のみがサポートされます

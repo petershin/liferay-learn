@@ -1,7 +1,7 @@
 # 検索結果のフィルタリング
 
 ```{note}
-この機能は[Elasticsearchでのみ](../../installing and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
+この機能は[Elasticsearchでのみ](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
 ```
 
 カスタムフィルターでは、メインの検索クエリにクエリを追加し、検索結果をフィルタリングして、検索結果ウィジェットに表示される内容を制御することができます。 フィルターウィジェットを表示または非表示にして、変更可能か不変かを決定できます。

@@ -1,6 +1,6 @@
 # REST APIでの集計用語の使用
 
-REST APIを使用してオブジェクトエントリーを照会する場合、オブジェクトのフィールドをファセット基準として使用してエントリーデータを集計できます。 これを行うには、GETリクエストに `aggregationTerms` パラメーターを追加し、ファセット基準として使用したいデータフィールドを指定します。 これらの基準には、カスタムフィールド、デフォルトのシステムフィールド、またはリレーションシップフィールドを含めることができます。 その後、リクエストレスポンスは指定されたデータファセットを単一の`facets`ブロックにグループ化します。
+REST APIを使用してオブジェクトエントリーを照会する場合、オブジェクトのフィールドをファセット基準として使用してエントリーデータを集計できます。 これを行うには、GETリクエストに `aggregationTerms` パラメーターを追加し、ファセット基準として使用したいデータフィールドを指定します。 これらの基準には、カスタム・フィールド、デフォルトのシステム・フィールド、またはリレーションシップ・フィールドを含めることができます。 その後、リクエストレスポンスは指定されたデータファセットを単一の`facets`ブロックにグループ化します。
 
 ここでは、 `aggregatedTerms` パラメーターを、基本的なカスタムオブジェクトと一緒に使用します。
 
@@ -11,26 +11,26 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、下記の手順で、このチュートリアルの基本オブジェクトを[作成](../../creating-and-managing-objects/creating-objects.md)します。
+次に、以下の手順に従って、このチュートリアルで使用する基本的なオブジェクトを [作成](../../creating-and-managing-objects/creating-objects.md)してください：
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブで ［**オブジェクト**］ をクリックします。
+1.*グローバルメニュー*(![Global Menu](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］*(**Control Panel**)タブに移動し、*［オブジェクト］*(**Objects**)をクリックします。
 
-1. **追加** ボタン(![追加ボタン](../../../../images/icon-add.png))をクリックし、下記の値を入力します。
+1. **追加** ボタン( [ボタンの追加](../../../../images/icon-add.png) )をクリックし、以下の値を入力します：
 
-   | フィールド | 値 |
-   | :--- | :--- |
-   | ラベル | `Able` |
-   | 複数形ラベル | `Ables` |
-   | 名前 | `Able` |
+    | フィールド | 値 |
+    | :--- | :--- |
+    | ラベル | `有能` |
+    | 複数のラベル | `エイブル` |
+    | 名前 | `有能` |
 
-1. 新規の **オブジェクト** ドラフトを選択し、 ［**フィールド**］ タブに移動して、次のテキストフィールドを追加します。
+1. 新しい **オブジェクト** ドラフトを選択し、 **フィールド** タブに移動して、次のテキスト フィールドを追加します。
 
-   | ラベル | フィールド名 | タイプ | 要否 |
-   | :--- | :--- | :--- | :--- |
-   | 名前 | 名前 | テキスト | &#10004; |
-   | 説明 | 説明 | テキスト |  |
+    | ラベル | フィールド名 | タイプ | 必須 |
+    | :--- | :--- | :--- | :--- |
+    | 名前 | 名前 | テキスト | &#10004; |
+    | 説明 | 説明 | テキスト | |
 
-1. ［**詳細**］ タブで [**公開**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) をクリックします。
+1. **Details** タブを開き、 [**Publish**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) をクリックする。
 
    ```{important}
    このチュートリアルでは、上記の値を使用する必要があります。
@@ -43,7 +43,7 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
 以下のコマンドを実行して、提供されたサンプルコードをダウンロードし、解凍してください。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/ja/building-applications/objects/objects-tutorials/using-apis/liferay-b3x5.zip -O
+curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-b3x5.zip -O
 ```
 
 ```bash
@@ -156,4 +156,4 @@ unzip liferay-b3x5.zip
 
 * [オブジェクトAPIの基本](./object-api-basics.md)
 * [バッチAPIの使用](./using-batch-apis.md)
-* [REST APIでネストしたフィールドの使用](./using-nestedfields-to-query-related-entries.md)
+* [`nestedFields` を使って関連するエントリーをクエリーする。](./using-nestedfields-to-query-related-entries.md)

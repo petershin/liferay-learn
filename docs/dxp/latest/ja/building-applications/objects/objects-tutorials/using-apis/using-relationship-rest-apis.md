@@ -7,57 +7,58 @@
 続行するには、新しいLiferay 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。 その後、スクリプトを実行してオブジェクトエントリーを作成し、互いの関連を管理します。
 
 ## Liferayインスタンスのセットアップ
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、関連する3つのカスタムオブジェクトを[作成](../../creating-and-managing-objects/creating-objects.md) します。
+次に、[作成](../../creating-and-managing-objects/creating-objects.md) 3 つの関連するカスタム オブジェクトを作成します。
 
-1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］ タブで ［**オブジェクト**］ をクリックします。
+1. **グローバル メニュー**(![グローバル メニュー](../../../../images/icon-applications-menu.png)) を開き、 **コントロール パネル** タブに移動して、 **オブジェクト** 。
 
-1. 3つのオブジェクトドラフトを作成します。
+1. 3 つのオブジェクト ドラフトを作成します。
 
-   第一オブジェクト：
+    最初のオブジェクト:
 
-      | 項目 | 値 |
-      | :--- | :--- |
-      | ラベル | `Able` |
-      | 複数形のラベル | `Ables` |
-      | 名前 | `Able` |
+    | フィールド | 値 |
+    | :--- | :--- |
+    | ラベル | `有能` |
+    | 複数のラベル | `エイブル` |
+    | 名前 | `有能` |
 
-  第二オブジェクト：
+    2 番目のオブジェクト:
 
-      | 項目 | 値 |
-      | :--- | :--- |
-      | ラベル | `Baker` |
-      | 複数形のラベル | `Bakers` |
-      | 名前 | `Baker` |
+    | フィールド | 値 |
+    | :--- | :--- |
+    | ラベル | `ベイカー` |
+    | 複数のラベル | `パン屋` |
+    | 名前 | `ベイカー` |
 
-   第三オブジェクト：
+    3 番目のオブジェクト:
 
-      | 項目 | 値 |
-      | :--- | :--- |
-      | ラベル | `Charlie` |
-      | 複数形のラベル | `Charlies` |
-      | 名前 | `Charlie` |
+    | フィールド | 値 |
+    | :--- | :--- |
+    | ラベル | チャーリー |
+    | 複数のラベル | チャーリーズ |
+    | 名前 | チャーリー |
 
-1. 各オブジェクトドラフトに以下の`name`フィールドを追加します。
+1. 各オブジェクトのドラフトに「name」フィールドを追加します。
 
-   | ラベル | 項目名 | 種類 | 必須 |
-   | :--- | :--- | :--- | :--- |
-   | `Name` | `name` | Text | &#10004; |
+    | ラベル | フィールド名 | タイプ | 必須 |
+    | :--- | :--- | :--- | :--- |
+    | `名前' | `名前` | テキスト | &#10004; |
 
-1. これらの関連をableオブジェクトに追加します。
+1. 次の関係をableオブジェクトに追加します。
 
-   | ラベル | 関連名 | タイプ | オブジェクト |
-   | :--- | :--- | :--- | :--- |
-   | `Able to Baker` | `ableToBaker` | 1対多 | Baker |
-   | `Able to Charlie` | `ableToCharlie` | 1対多 | Charlie |
+    | ラベル | 関係名 | タイプ | オブジェクト |
+    | :--- | :--- | :--- | :--- |
+    | `パン屋ができる` | `ableToBaker` | 1 対多 | ベイカー |
+    | 「チャーリーできる」 | `ableToCharlie` | 1 対多 | チャーリー |
 
-1. 各オブジェクトを [公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) します。
+1. [発行](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 各オブジェクト。
 
-公開後、以下の関連APIを含む、それらのREST APIにアクセスできます。
+公開されると、次の関係 API を含む REST API にアクセスできるようになります。
 
-| オブジェクト  | HTTPメソッド | HTTPエンドポイント                                                      | Java メソッド                       |
+| Object  | HTTP Method | HTTP Endpoint                                                      | Java Method                       |
 |:--------|:------------|:-------------------------------------------------------------------|:----------------------------------|
 | Able    | GET         | `/{ableId}/ableToBaker`                                            | `getAbleAbleToBakerBakerPage`     |
 | Able    | GET         | `/{ableId}/ableToCharlie`                                          | `getAbleAbleToCharlieCharliePage` |
@@ -73,7 +74,7 @@
 | Charlie | PUT         | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putCharlieAbleToCharlieAble`     |
 
 ```{tip}
-サイトオブジェクトと会社オブジェクトの両方に対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md) を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` (例：`localhost:8080/o/api`）で表示およびテストできます。 *RESTアプリケーション*をクリックし、APIを選択します。
+サイトおよび会社のオブジェクトに対して生成される API の完全なリストについては、[Objects Headless Framework Integration](../../undering-object-integrations/headless-framework-integration.md) を参照してください。 Liferay API Explorer の`[server]:[port]/o/api` (例: `localhost:8080/o/api`) でカスタム オブジェクト API を表示およびテストできます。 *REST アプリケーション* をクリックし、API を選択します。
 ```
 
 ## サンプルコードを準備する
@@ -100,7 +101,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    cd liferay-f9m2/curl
    ```
 
-1. `POST`コマンドを実行し、各オブジェクトに3つのエントリーを作成します。 これらのエントリーは、 `[objectname]-[number]`の命名パターンに従って、あらかじめ定義された外部参照コード(ERC）を持っています(例： `able-one`)。
+1. `POST`コマンドを実行し、各オブジェクトに3つのエントリーを作成します。 これらのエントリーは、 `[objectname]-[number]`の命名パターンに従って、あらかじめ定義された外部参照コード（ERC）を持っています（例： `able-one`)。
 
    ```bash
    ./Able_POST_Batch.sh
@@ -346,7 +347,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    }
    ```
 
-   `nestedFields`パラメーターの詳細については、 [REST APIでネストしたフィールドの使用](./using-nested-fields-with-rest-apis.md) を参照してください。
+   [ `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md) を参照。 `nestedFields` パラメータの詳細。
 
 ## コードを調べる
 
@@ -377,5 +378,5 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
 ## 関連トピック
 
 * [ヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)
-* [REST APIでネストしたフィールドの使用](./using-nested-fields-with-rest-apis.md)
+* [REST APIでネストしたフィールドの使用](./using-nestedfields-to-query-related-entries.md)
 * [オブジェクトリレーションの定義](../../creating-and-managing-objects/relationships/defining-object-relationships.md)

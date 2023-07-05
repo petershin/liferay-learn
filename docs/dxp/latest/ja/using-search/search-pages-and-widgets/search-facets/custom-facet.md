@@ -44,19 +44,19 @@
 カスタムファセットを使用するには、構成で使用する非分析キーワードフィールドを知っておく必要があります。
 
 ```{tip}
-Elasticsearchは複数の方法でフィールドのインデックス化をサポートしています。 いくつかのテキストフィールドは、マッピングの中で `raw` [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/multi-fields.html) とネストされている場合や、そのフィールドが `fieldName_sortable` として (`keyword` として) 別のフィールドマッピングで追加マッピングされている場合にキーワードフィールドとして使用することができます。 以下の例では、カスタムフィールドのファセットを作成し、Elasticsearchのマルチフィールドのコンセプトを活用しています。
+Elasticsearchは複数の方法でフィールドのインデックス化をサポートしています。 いくつかのテキストフィールドは、マッピングの中で `raw` [multi-fields](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/multi-fields.html) とネストされている場合や、そのフィールドが `fieldName_sortable` として (`keyword` として) 別のフィールドマッピングで追加マッピングされている場合にキーワードフィールドとして使用することができます。 以下の例では、カスタムフィールドのファセットを作成し、Elasticsearchのマルチフィールドのコンセプトを活用しています。
 ```
 
 使用可能なフィールドのリスト全体を参照するには、［**コントロールパネル**］→［**構成**］→［**検索**］（［**フィールドマッピング**］タブをクリック）からフィールドマッピングを調べます。 ここでは、数多くのインデックスを見ることができます。 興味のあるLiferayアセットは、 [company index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)にインデックスされており、 `liferay-20101` のような名前になっています（`20101` はカンパニーID）。
 
-あるいは、検索エンジンのAPIを使ってマッピングを閲覧することもできます。 Elasticsearchでは、端末からcURLを使ってフィールドマッピングにアクセスし、 [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-get-mapping.html) を呼び出すことができます。
+あるいは、検索エンジンのAPIを使ってマッピングを閲覧することもできます。 Elasticsearchでは、端末からcURLを使ってフィールドマッピングにアクセスし、 [Get Mapping API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/indices-get-mapping.html) を呼び出すことができます。
 
 ```{tip}
  [Kibanaの](../../liferay-enterprise-search/monitoring-elasticsearch.md) 開発ツールコンソールは、Elasticsearch APIの呼び出しを行うのに、cURL よりも便利です。
 ```
 
  ```bash
-curl -X GET "localhost:9200/_mapping/LiferayDocumentType"?pretty
+curl -X GET "localhost:9200/_mapping"?pretty
  ```
 
 Solrは [ListFields API](https://lucene.apache.org/solr/guide/6_6/schema-api.html#SchemaAPI-ListFields) を使用します。
@@ -167,9 +167,9 @@ ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_Str
 
 {bdg-secondary}`7.4 u72+/ga72+`
 
-[オブジェクト定義](../../../building-applications/objects.md) フィールドをインデックス内の既存のドキュメントで見つけるには、検索結果ウィジェットの [結果をドキュメントフォームで表示](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
+[オブジェクト定義](../../../building-applications/objects.md) フィールドをインデックス内の既存のドキュメントで見つけるには、検索結果ウィジェットの [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
 
-文書には、 `nestedFieldArray` フィールドがあり、内容が入れ子になっています：
+文書には、 `nestedFieldArray` 入れ子になった内容を持つフィールドがあります：
 
 ```json
 "nestedFieldArray" : [
@@ -191,15 +191,15 @@ ddmFieldArray.ddm__keyword__40806__Textb5mx_en_US.ddmFieldValueKeyword_en_US_Str
 ],
 ```
 
-Custom FacetウィジェットのAggregation Field構成でオブジェクトフィールドを使用するには、親フィールド（例： `nestedFieldArray`）、フィールド名を保持するフィールド名（例： `fieldName`）、値を保持するフィールド名（例： `value_date`）を指定します。 このパターンを使用します: `nestedFieldArray.[fieldName][valueFieldName]`.
+Custom Facet ウィジェットの Aggregation Field 構成でオブジェクト・フィールドを使用するには、親フィールド（例： `nestedFieldArray`）、フィールド名を保持するフィールド名（例： `fieldName`）、値を保持するフィールド名（例： `value_date`）を指定します。 このパターンを使用する： `nestedFieldArray.[fieldName][valueFieldName]`.
 
-例えば、 `nestedFieldArray.lastAccessed.value_date`と入力すると、上の入れ子配列の `lastAccessed` の日付フィールドでソートできます。
+例えば、 `nestedFieldArray.lastAccessed.value_date`と入力することで、上の入れ子配列の `lastAccessed` 日付フィールドでソートすることができます。
 
 ### Custom FacetでWeb Content Structure Fieldsを使用する。
 
-[ネストされたウェブコンテンツ構造（DDM）フィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) をインデックス内の既存文書で見つけるには、検索結果ウィジェットの [結果を文書フォームで表示](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
+[ネストされたウェブコンテンツ構造（DDM）フィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) をインデックス内の既存ドキュメントで見つけるには、検索結果ウィジェットの [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
 
-文書には、 `ddmFieldArray` フィールドがあり、ネストされたコンテンツがあります：
+文書には、 `ddmFieldArray` フィールドがあり、内容が入れ子になっています：
 
 ```json
  "ddmFieldArray" : [
@@ -224,9 +224,9 @@ Custom FacetウィジェットのAggregation Field構成でオブジェクトフ
   ],
 ```
 
-これらのフィールドをカスタムファセットで使用するには、ウィジェットの集計フィールドに `ddmFieldName` の値（例： `ddm__keyword__40806__Testb5mx_en_US`）を入力します。
+これらのフィールドの1つをカスタムファセットで使用するには、 `ddmFieldName` の値（例： `ddm__keyword__40806__Testb5mx_ja_US`）をウィジェットの集約フィールドに入力します。
 
-お使いのバージョンによっては、DDMフィールドの [ネストされたフィールドストレージ](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) がElasticsearchのデフォルトで有効になっている場合があります：
+お使いのバージョンによっては、 [DDMフィールドのネストされたフィールドストレージ](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) がElasticsearchのデフォルトで有効になっている場合があります：
 
 | Liferayのバージョン    | ネストされたフィールドはデフォルトで有効 |
 |:---------------- |:-------------------- |
@@ -234,4 +234,4 @@ Custom FacetウィジェットのAggregation Field構成でオブジェクトフ
 | 7.3 すべてのアップデート   | &#10004;             |
 | DXP 7.2 SP3/FP8+ | &#10008;             |
 
-動作を変更するには、システム設定 &rarr; Dynamic Data Mapping Indexer の **Enable Legacy Dynamic Data Mapping Index Fields** の設定を使用します。
+動作を変更するには、System Settings &rarr; Dynamic Data Mapping Indexer で **Enable Legacy Dynamic Data Mapping Index Fields** 設定を使用します。

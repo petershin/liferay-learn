@@ -11,7 +11,7 @@
 ローカルElasticsearchクラスターはフォロワー（レプリケート済み、読み取り専用）インデックスを保持する必要があり、同じ場所にあるLiferay DXPノードが読み取ることができるローカル検索エンジンとして機能します。
 
 ```{important}
-**CCRインストールのセキュリティ:** [前述](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption) したように、Elasticsearchクラスタは同じCAによって署名されたノード証明書と各クラスターのセキュリティ設定が一致する必要があります。 その他のアプローチや詳細については、 [Elasticのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cross-cluster-configuring.html) を参照してください。
+**CCRインストールのセキュリティ:** [前述](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption) したように、Elasticsearchクラスタは同じCAによって署名されたノード証明書と各クラスターのセキュリティ設定が一致する必要があります。 その他のアプローチや詳細については、 [Elasticのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/cross-cluster-configuring.html) を参照してください。
 ```
 
 1. `elasticsearch.yml`を構成します。

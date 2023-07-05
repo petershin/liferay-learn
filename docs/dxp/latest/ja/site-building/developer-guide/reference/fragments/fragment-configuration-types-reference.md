@@ -1,16 +1,17 @@
 # フラグメント設定タイプのリファレンス
 
-このリファレンスでは、フラグメントで利用可能な設定タイプをリストアップしています。 フラグメントを設定可能にする方法については、 [フラグメントに設定オプションを追加する](../../developing-page-fragments/adding-configuration-options-to-fragments.md) を参照してください。
+このリファレンスには、フラグメントに使用可能な構成タイプがリストされています。 フラグメントを構成可能にする方法の詳細は、[フラグメントへの構成オプションの追加](../../developing-page-fragments/adding-configuration-options-to-fragments.md)を参照してください。
 
-これらは、実装可能な設定可能なフラグメントタイプです。
+以下は実装できる構成可能なフラグメントタイプです。
 
 - `text`
 - `select`
 - `checkbox`
-- `colorPicker` (Liferay 7.4+ で利用可能です。）
+- `colorPicker` (Liferay 7.4+ で利用可能)
 - `length` (Available Liferay 7.4+ U44/GA44)
 - `itemSelector`
-- `videoSelector` (Available Liferay 7.4+)
+- `url` (Liferay 7.4+ で利用可能)
+- `videoSelector` （Liferay 7.4+で使用可能）
 - `collectionSelector`
 - `colorPalette`
 
@@ -20,7 +21,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ## テキスト設定
 
-このJSON設定は、テキストオプションを手動で入力する必要がある場合に実装できる入力テキストフィールドを作成します：
+この JSON 設定は、手動でテキストオプションを入力しなければならない場合に実装できる入力テキストフィールドを作成します：
 
 ```json
 {
@@ -44,7 +45,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 }
 ```
 
-![テキスト設定は、入力テキストオプションが必要な場合に便利です。](./fragment-configuration-types-reference/images/06.png)
+![テキスト設定は、入力テキスト オプションが必要な場合に役立ちます。](./fragment-configuration-types-reference/images/06.png)
 
 ## 選択設定
 
@@ -76,7 +77,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 }
 ```
 
-![select設定は、オプションの選択が必要な場合に有効です。](./fragment-configuration-types-reference/images/05.png)
+![選択設定は、オプションの選択が必要な場合に役立ちます。](./fragment-configuration-types-reference/images/05.png)
 
 ## チェックボックスの設定
 
@@ -102,27 +103,27 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ![チェックボックス設定は、ブール値の選択が必要な場合に役立ちます。](./fragment-configuration-types-reference/images/01.png)
 
-## カラーピッカーの構成
+## カラーピッカーの設定
 
 {bdg-secondary}`Liferay 7.4以降で利用可能`
 
-カラーピッカーJSON設定により、どんな色でも選択できる柔軟なカラーセレクターが作成されます。 これらの方法のいずれかを使って、色を選択することができます。
+カラーピッカーのJSON設定により、任意の色を選択できる柔軟なカラーセレクターが作成されます。 これらの方法のいずれかを使って、色を選択することができます。
 
-* 左側のカラーをクリックすると、カラーピッカーが開き、色を選ぶことができます。
+* 左側の色をクリックすると、カラーピッカーが開き、色を選択します。
 
 * 色の16進コードをテキストボックスに入力します。
 
-* スタイルブックからの値 ** ボタンをクリックすると、現在使用している [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)で定義されている、あらかじめ定義された色のメニューが表示され、選択することができます。 これにより、再度ボタンを押すとリンクが解除されるまで、フィールドの値が選択されたトークンにリンクされます。 トークン値のリンクを解除すると、選択した色が再び同等の16進コード値に変換されます。
+**［**スタイルブックの値**］ ボタンをクリックすると、現在使用している [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)で定義されている色を選択するための定義済みの色のメニューが表示されます。 これにより、再度ボタンを押してリンクが解除されるまで、フィールドの値が選択されたトークンにリンクされます。 トークン値のリンクを解除すると、選択した色が再び同等の16進コード値に変換されます。
 
-* カラーピッカーにデフォルト値が定義されていない場合は、 **Default** ドロップダウンメニューをクリックし、現在使用しているスタイルブックから任意の色を選択します。 これは、値を選択する際の「スタイルブックからの値」ボタンと同じ働きをします。
+* カラーピッカーにデフォルト値が定義されていない場合は、 ［**デフォルト**］ ドロップダウンメニューをクリックし、現在使用しているスタイルブックから任意の色を選択します。 これは、値を選択する際の［スタイルブックの値］ボタンと同じように機能します。
 
 ![カラーピッカーの設定では、色の値を直接入力したり、範囲から選択したり、スタイルブックから選択することができます。](./fragment-configuration-types-reference/images/02.png)
 
 ```{note}
-使用しているテーマに[スタイルブック用トークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md）がない場合、ページ上のカラーピッカー設定は[カラーパレット](#色パレット設定）設定に置き換えられます。
+使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)がない場合、ページ上のカラーピッカー設定は [color palette](#color-palette configuration) 設定に置き換えられます。
 ```
 
-このJSON設定は、 `headingColor`というカラーピッカーフィールドを作成します：
+このJSON設定は、`headingColor`というカラーピッカーフィールドを作成します。
 
 ```json
 {
@@ -142,7 +143,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 }
 ```
 
-`colorPicker` 型は、設定された名前で選択されたカラー値を保持するオブジェクトを格納します。 このオブジェクトは、フラグメントのHTML内で次のように参照することができます。
+`colorPicker`タイプは、設定された名前で選択されたカラー値を保持するオブジェクトを格納します。 このオブジェクトは、フラグメントのHTML内で次のように参照することができます。
 
 ```html
 <div class="fragment_69">
@@ -152,19 +153,19 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 </div>
 ```
 
-フラグメントがレンダリングされると、トークン `${configuration.OBJECT_NAME}` は選択された色に置き換えられます。 色の選び方次第で、どのような価値観になるかは変わってきます。
+フラグメントがレンダリングされると、トークン`${configuration.OBJECT_NAME}`は選択された色に置き換えられます。 値のタイプは、色の選択方法によって異なります。
 
 * 色を直接選んだ場合は、対応する16進コードの値に置き換わります。
-* 現在のスタイルブックから色を選択した場合、リンク先のトークンのCSS変数に置き換えられます(例えば、 `var(--danger)`）。
-* 現在のテーマに使用するトークン定義がない場合(そのため、 [カラーパレット](#color-palette-configuration) が代わりに使用される）、CSS カラー(例えば、 `rgb(255, 0, 0)`）に置き換えられます。
+* 現在のスタイルブックから色を選択した場合、リンク先のトークンのCSS変数（例えば、 `var(--danger)`）に置き換えられます。
+* 現在のテーマに使用するトークン定義がない場合（そのため、 [カラーパレット](#color-palette-configuration) が代わりに使用される）、CSS カラー（例えば、 `rgb(255, 0, 0)`）に置き換えられます。
 
 ## 長さ構成
 
-{bdg-secondary}`利用可能なLiferay 7.4 U44およびGA44+`
+{bdg-secondary}`利用可能な Liferay 7.4 U44 および GA44+`
 
-`長さ` 設定タイプは、幅、マージン、パディングなどの設定に、数値を入力し、定義済みの単位を選択するか、独自の単位を指定できるフィールドを作成します。
+`length` 設定タイプは、幅、マージン、パディングなどの設定に、数値を入力し、定義済みの単位を選択するか、独自の単位を指定できるフィールドを作成します。
 
-このJSONサンプルは、 `length` configuration typeを使用したフィールドを示します。 名前、ラベル、デフォルト値を定義するプロパティが含まれています。
+このJSONサンプルは、 `length` コンフィギュレーション・タイプを使用したフィールドを示しています。 名前、ラベル、デフォルト値を定義するプロパティが含まれています。
 
 ```json
 {
@@ -183,17 +184,17 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 }
 ```
 
-ユーザーインターフェースでは、利用可能な単位から選択するか、カスタム単位を指定することができます。
+ユーザー・インターフェースでは、利用可能な単位から選択するか、カスタム単位を指定することができます。
 
 <!-- The below screenshot is way too big. Please reduce. -Rich --> 
 
-![カスタムフラグメントの「サイズ」というフィールドは、長さの設定を使用して、利用可能な単位のドロップダウンを表示します。](./fragment-configuration-types-reference/images/10.png)
+![カスタムフラグメントの'Size'というラベルの付いたフィールドは、長さの設定を使用して、利用可能な単位のドロップダウンを表示します。](./fragment-configuration-types-reference/images/10.png)
 
 ## アイテムセレクターの設定
 
 {bdg-secondary}`Liferay 7.3以降で利用可能`
 
-この設定により、フラグメントに含める既存のコンテンツ(デフォルトではウェブコンテンツの記事、ブログエントリー、ドキュメント）を1つ選択するためのセレクタが作成されます。
+この設定により、フラグメントに含める既存のコンテンツ（デフォルトではWebコンテンツの記事、ブログエントリー、ドキュメント）を1つ選択するためのセレクターが作成されます。
 
 ```json
 {
@@ -282,7 +283,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 }
 ```
 
-そして、このウェブコンテンツ記事用のHTMLスニペットで、フラグメント内のコンテンツをレンダリングすることができます。
+その後、Web コンテンツ記事に次の HTML スニペットを使用して、フラグメント内のコンテンツをレンダリングできます。
 
 ```html
 <div class="fragment_name">
@@ -292,7 +293,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 </div>
 ```
 
-コンテンツの特定の部分にアクセスする必要がある場合は、フラグメント内のJavaオブジェクトを `[name-of-field]Object` というキーでアクセスすることもできます (`itemSelector1Object` 以下の例では). 次の例は、Web コンテンツの記事のタイトル、説明、および本文をレンダリングします。
+コンテンツの特定の部分にアクセスする必要がある場合は、`[name-of-field]Object`（以下の例では、`itemSelector1Object`）というキーでフラグメント内のJavaオブジェクトにアクセスすることもできます。 次の例は、Web コンテンツの記事のタイトル、説明、および本文をレンダリングします。
 
 ```html
 <div class="fragment_name">
@@ -304,13 +305,43 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 </div>
 ```
 
-![アイテムセレクターの構成は、既存のコンテンツを表示するためのオプション選択が必要な場合に有効です。](./fragment-configuration-types-reference/images/04.png)
+![アイテム セレクターの設定は、既存のコンテンツを表示するオプションの選択が必要な場合に役立ちます。](./fragment-configuration-types-reference/images/04.png)
+
+## URL設定
+
+このコンフィギュレーションは、フラグメントのマークアップで使用するURL専用のフィールドを追加します：
+
+```json
+{
+    "fieldSets": [
+        {
+            "fields": [
+                {
+                    "label": "My URL",
+                    "name": "myURL",
+                    "type": "url"
+                }
+            ]
+        }
+    ]
+}
+```
+
+このコンフィギュレーションでフラグメントを構成する場合、ドロップダウンメニューから、URLを手動で入力する（`URL`）か、同じサイトから別のページを選択し、その完全なURLを使用する（`Page`）かを選択できます。
+
+以下は、上記のJSONのURLコンフィギュレーションを使用してハイパーリンクを作成するフラグメントHTMLの例である：
+
+```html
+<div class="fragment_1">
+    <a href=${configuration.myURL}>Click this link!</a>
+</div>
+```
 
 ## ビデオセレクター
 
 {bdg-secondary}`Liferay 7.4以降で利用可能`
 
-`videoSelector` タイプを使用すると、 [外部ビデオ](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) のフラグメントを別のフラグメントに組み込むためのビデオセレクタを作成することができます。
+`videoSelector`タイプを使用すると、 [外部ビデオ](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md)フラグメントを別のフラグメントに組み込むためのビデオセレクターを作成することができます。
 
 ```json
 {
@@ -328,7 +359,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 }
 ```
 
-デフォルトで動画が埋め込まれているフラグメントが欲しい場合に便利です。 次のJSON設定サンプルは、カードフラグメントに外部ビデオセレクタを組み込む方法です。
+これは、デフォルトでビデオが埋め込まれているフラグメントが必要な場合に便利です。 以下のJSON設定サンプルは、カードフラグメントに外部ビデオセレクターを組み込む方法を示しています。
 
 ```json
 {
@@ -370,23 +401,23 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 }
 ```
 
-![ビデオセレクターを使えば、フラグメントに外部ビデオを含めることができます](./fragment-configuration-types-reference/images/07.png)
+![ビデオセレクターで、フラグメントに外部ビデオを含めることができます。](./fragment-configuration-types-reference/images/07.png)
 
 ```{note}
-videoSelector`型は [external video](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) フラグメントと互換性がありますが、 [video URL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) フラグメントと互換性がありません。
+videoSelector`型は [外部ビデオ](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) フラグメントと互換性がありますが、 [ビデオURL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) フラグメントとの互換性はありません。
 ```
 
 ## コレクションセレクター
 
 {bdg-secondary}`Liferay 7.3以降で利用可能`
 
-`collectionSelector` 構成タイプを使用すると、 [コレクション](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) またはコレクションプロバイダを含むフラグメントを開発することができます。 `collectionSelector` は、手動コレクションと動的コレクションの両方で使用することができます。
+`collectionSelector` の設定タイプを使用すると、 [コレクション](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) またはコレクションプロバイダーを含むフラグメントを開発することが可能です。 `collectionSelector` は、手動コレクションと動的コレクションの両方で使用することができます。
 
 ```{note}
-開発者は、コレクションプロバイダを使用して、より高度な条件を持つ特定のコレクションを作成することができます。 詳しくは、開発者向けドキュメント [Info Framework](https://help.liferay.com/hc/ja/articles/360029067251-Introduction-to-The-Info-Framework) の [情報リストプロバイダの作成](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をご覧ください。
+開発者は、コレクションプロバイダーを使用して、より高度な基準を持つ特定のコレクションを作成することができます。 詳しくは、開発者向けドキュメント [Info Framework](https://help.liferay.com/hc/ja/articles/360029067251-Introduction-to-The-Info-Framework) の [Creating an Information List Provider](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をご覧ください。
 ```
 
-次のJSON設定は、 `collectionSelector`を使用する方法を示しています。
+次のJSON設定は、`collectionSelector`を使用する方法を示しています。
 
 ```json
 { 
@@ -404,9 +435,9 @@ videoSelector`型は [external video](../../creating-pages/page-fragments-and-wi
 }
 ```
 
-このフラグメント構成を以下のHTMLコードサンプルで使用すると、コレクションアイテムの一覧を表示することができます。 `collectionObjectList` は、 [コンテンツページエディタ](../../../creating-pages/using-content-pages/content-page-editor-ui-reference.md)で選択したコレクションを表します。
+このフラグメント設定を、以下のHTMLコードサンプルで使用することで、コレクション項目を一覧表示することができます。 `collectionObjectList`は[コンテントページエディタ](../../../creating-pages/using-content-pages/content-page-editor-ui-reference.md)で選択されたコレクションを表します。
 
-HTMLでこのコレクションを参照するには、JSONの設定でコレクション `name` を使用し、接尾辞として `ObjectList` を使用します。前のJSONコードの抜粋では、コレクション `name` は `collection` なので、HTMLでは `collectionObjectList` を使ってコレクションを参照する。
+このコレクションをHTMLから参照するには、JSONの設定でコレクションの`名前`と`ObjectList`サフィックスを使用します。 先のJSONコードの抜粋では、コレクションの`name`は`collection`なので、HTMLでは `collectionObjectList`を使ってコレクションを参照しています。
 
 ```html
 <div class="fragment_310">
@@ -423,9 +454,9 @@ HTMLでこのコレクションを参照するには、JSONの設定でコレク
 </div>
 ```
 
-![Collectionの設定を使用して、Collectionセレクタを持つフラグメントを開発することができます。](./fragment-configuration-types-reference/images/08.png)
+![コレクションの設定により、フラグメントをコレクションセレクターで開発することができます。](./fragment-configuration-types-reference/images/08.png)
 
-また、 `collectionSelector` の設定で、 `itemType` を使用してコレクションセレクタをフィルタリングすることができます。 例えば、ウェブコンテンツとブログを含む異なるコレクションがある場合、コレクションセレクタを制限してブログコレクションのみを表示することができます。 このJSONサンプルは、この設定を説明するものです。
+また、`collectionSelector`の設定で`itemType`を使用してコレクションセレクターをフィルタリングすることができます。 例えば、Webコンテンツとブログを含む異なるコレクションがある場合、コレクションセレクターを制限して、ブログコレクションのみを表示することができます。 このJSONサンプルは、この設定を説明するものです。
 
 ```json
 {
@@ -446,19 +477,19 @@ HTMLでこのコレクションを参照するには、JSONの設定でコレク
 }
 ```
 
-このサンプル構成を使用すると、コレクションの種類が資産であるため、Webコンテンツとブログの両方を含むコレクションは、コレクションセレクタからフィルタリングされます。
+このサンプル構成では、Webコンテンツとブログの両方を含むコレクションは、コレクションタイプがアセットであるため、コレクションセレクターからフィルタリングされます。
 
-![ウェブコンテンツやブログエントリーを含むコレクションが資産タイプに該当します。](./fragment-configuration-types-reference/images/09.png)
+![Webコンテンツやブログエントリーを含むコレクションは、アセットタイプに対応します。](./fragment-configuration-types-reference/images/09.png)
 
 ```{tip}
-コンフィギュレーションでは、`itemType`の他に、`itemSubtype`を指定することができる。 itemSubtype`はアセット`classPK`に対応します。
+`itemType`に加え、`itemSubtype`をコンフィギュレーションで指定することができる。 `itemSubtype`はアセット`classPK`に対応します。
 ```
 
 ## カラーパレットの設定
 
-カラーパレットJSON設定により、色を選択しなければならない場合のために実装できるカラーセレクタを作成します。 [カラーピッカー設定](#color-picker-configuration) とは異なり、現在使用されている [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)のカラーシステムで設定されたテーマカラーに基づくオプションのみを提供します。
+カラーパレットJSON 構成は、色を選択する必要がある場合に実装できるカラー セレクターを作成します。 [カラーピッカー設定](#color-picker-configuration) とは異なり、現在使用されている [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)のカラーシステムで設定されているテーマカラーに基づいたオプションのみを提供します。
 
-この構成では、 `textColor`というカラーパレットフィールドが作成されます：
+この設定では、`textColor`というカラーパレットフィールドが作成されます。
 
 ```json
 {
@@ -483,7 +514,7 @@ HTMLでこのコレクションを参照するには、JSONの設定でコレク
 
 `colorPalette` タイプは、`cssClass` および `rgbValue` の 2 つの値を持つオブジェクトを格納します。
 
-例えば、上記のスニペットを実装すると、FreeMarkerで使用することができます：
+例えば、上記のスニペットを実装すれば、FreeMarkerで使用することができます：
 
 ```html
 <h3 class="text-${configuration.textColor.cssClass}">Example</h3>
@@ -491,11 +522,11 @@ HTMLでこのコレクションを参照するには、JSONの設定でコレク
 
 白を選択した場合、 `h3` タグの見出しはクラス `text-white'` を持ちます。
 
-![カラーパレットの設定は、色の選択が必要な場合に便利です。](./fragment-configuration-types-reference/images/03.png)
+![カラー パレットの設定は、色の選択が必要な場合に役立ちます。](./fragment-configuration-types-reference/images/03.png)
 
 ## 関連トピック
 
 - [フラグメントの開発](../../developing-page-fragments/developing-fragments-intro.md)
 - [フラグメント固有のタグリファレンス](./fragment-specific-tags-reference.md)
-- [ページ フラグメントエディタのインターフェイスリファレンス](./page-fragment-editor-interface-reference.md)
+- [ページ フラグメントエディタのインターフェースリファレンス](./page-fragment-editor-interface-reference.md)
 - [スタイルブックを使用してサイトの外観を標準化する](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)

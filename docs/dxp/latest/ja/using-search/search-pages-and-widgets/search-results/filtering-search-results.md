@@ -1,7 +1,7 @@
 # 検索結果のフィルタリング
 
 ```{note}
-この機能は[Elasticsearchでのみ](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
+この機能は[Elasticsearchでのみ](../../installing and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
 ```
 
 カスタムフィルターでは、メインの検索クエリにクエリを追加し、検索結果をフィルタリングして、検索結果ウィジェットに表示される内容を制御することができます。 フィルターウィジェットを表示または非表示にして、変更可能か不変かを決定できます。
@@ -40,21 +40,21 @@
 
 Liferay DXPインデックスに存在するフィールドを見つけるには、 [コントロールパネルのフィールドマッピングUI](#finding-fields) を使用します。
 
-**フィルター値（テキスト）：** ほとんどのフィルターでは、ここにテキスト値を入力して、指定したフィールドでフィルターを適用するテキストを指定する必要があります（たとえば、 **マッチ** クエリをテキスト **ストリート** に設定します `title_en_US` フィールド）。 一部のフィルタークエリタイプでは、 [_Regexp_](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-regexp-query.html) クエリの場合のように、特別な表記が必要です。
+**フィルター値（テキスト）：** ほとんどのフィルターでは、ここにテキスト値を入力して、指定したフィールドでフィルターを適用するテキストを指定する必要があります（たとえば、 **マッチ** クエリをテキスト **ストリート** に設定します `title_en_US` フィールド）。 一部のフィルタークエリタイプでは、 [_Regexp_](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-regexp-query.html) クエリの場合のように、特別な表記が必要です。
 
 **フィルタクエリタイプ（リストを選択）：** 結果をフィルターするクエリタイプを選択します。 使用可能なタイプには、ブール、日付の範囲、存在、ファジー、一致、一致フレーズ、一致フレーズプレフィックス、マルチ一致、プレフィックス、検索文字列、正規表現、スクリプト、単純検索文字列、用語、ワイルドカードが含まれます。
 
-これらのクエリの詳細は、 [Elasticsearchのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl.html) ご覧ください。
+これらのクエリの詳細は、 [Elasticsearchのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl.html) ご覧ください。
 
 **発生（リストを選択）：** 検索に提供されるクエリの発生タイプを設定します。 オプションには、Filter、must、must_not、shouldがあります。
 
-各タイプを理解するには、 [Elasticsearchのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-bool-query.html) 参照してください。
+各タイプを理解するには、 [Elasticsearchのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-bool-query.html) 参照してください。
 
 **クエリ名（テキスト）：** 提供されたクエリの名前を設定します。 このフィルターが、子句を提供する別のフィルターに対する親クエリとして機能しない限り、これは不要です。その場合、このフィルターのクエリ名を子フィルターの親クエリ名として設定します。  この親/子動作は、Boolタイプのフィルターでのみ使用できます。
 
-**親クエリ名（テキスト）：** 子節をBoolクエリに寄与させる場合、親カスタムフィルタウィジェットで設定されたクエリ名と一致するように設定します。 それ以外の場合は、空白のままにします。
+**親クエリ名（テキスト）：** 子節をBoolクエリに寄与する場合、親カスタムフィルタウィジェットで設定されたクエリ名と一致するように設定します。 それ以外の場合は、空白のままにします。
 
-**ブースト（数値）：** このクエリに一致する結果のスコアの [ブースト](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-term-query.html#term-field-params) 。 ここでは、意味のある整数または10進数を指定します。
+**ブースト（数値）：** このクエリに一致する結果のスコアの [ブースト](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-term-query.html#term-field-params) 。 ここでは、意味のある整数または10進数を指定します。
 
 常にこれと一致する結果が常に必要な場合は、ブースト値を非常に高く設定します（例： **1000**）。
 
@@ -80,17 +80,17 @@ Liferay DXPインデックスに存在するフィールドを見つけるには
 
 ## ネストされたフィールドの検索と使用
 
-{bdg-secondary}`あり 7.2 FP10+、7.3 FP1+、7.4+`
+{bdg-secondary}`利用可能 7.2 FP10+、7.3 FP1+、7.4+`
 
-オブジェクト定義と [Webコンテンツ構造](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) フィールドは、Elasticsearchのネストされたフィールドとしてインデックスされます。 ネストしたフィールドでフィルタリングするには、3つのカスタムフィルタウィジェットをページに追加する必要があります。 最初のウィジェットは、 [Elasticsearch `ネストされた` クエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) を追加するためのもので、他の2つはネストされたフィールドの名前と値にマッチする子クエリを定義するためのものであります。 最終的なポータルクエリが生成されると、 `ネストされた` クエリが子クエリを包み込みます。
+オブジェクト定義と [ウェブコンテンツ構造](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) フィールドは Elasticsearch のネストされたフィールドとしてインデックスされる。 ネストしたフィールドでフィルタリングするには、3つのカスタムフィルタウィジェットをページに追加する必要があります。 最初のウィジェットは、 [Elasticsearch `ネストされた` クエリ](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-nested-query.html) を追加するためのもので、他の2つはネストされたフィールドの名前と値にマッチする子クエリを定義するためのものです。 最終的なポータル・クエリが生成されると、 `ネストされた` クエリが子クエリをラップします。
 
 ```{important}
 同一ページ内の複数のネストしたフィールドに対してカスタムフィルターを必要とする場合、各子クエリに対して別々のパラメーター名を設定する必要があります。 例については、 [カスタムフィルターの例](./custom-filter-examples.md#boosting-matches-to-nested-fields) を参照してください。 
 ```
 
-インデックス内の既存文書のネストされたフィールドを見つけるには、検索結果ウィジェットの [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
+インデックス内の既存のドキュメントでネストされたフィールドを検索するには、検索結果ウィジェットの [Display Results in Document Form](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 設定を使用します。
 
-例えば、オブジェクト・エントリーは、ネストしたフィールドを持つ `nestedFieldArray` を持つ：
+例えば、オブジェクト・エントリーは、 `nestedFieldArray` 、ネストされたフィールドを持ちます：
 
 ```json
 "nestedFieldArray" : [
@@ -102,7 +102,7 @@ Liferay DXPインデックスに存在するフィールドを見つけるには
 ],
 ```
 
-一方、ウェブコンテンツの記事には、ネストしたフィールドを持つ `ddmFieldArray`：
+一方、ウェブコンテンツ記事は、 `ddmFieldArray` 、ネストされたフィールドを持っています：
 
 ```json
 "ddmFieldArray" : [
@@ -115,7 +115,7 @@ Liferay DXPインデックスに存在するフィールドを見つけるには
 ],
 ```
 
-お使いのバージョンによっては、DDMフィールドの [ネストされたフィールドストレージ](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) がElasticsearchのデフォルトで有効になっている場合があります：
+お使いのバージョンによっては、 [DDMフィールドのネストされたフィールドストレージ](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) がElasticsearchのデフォルトで有効になっている場合があります：
 
 | Liferayのバージョン    | ネストされたフィールドはデフォルトで有効 |
 |:---------------- |:-------------------- |
@@ -123,9 +123,9 @@ Liferay DXPインデックスに存在するフィールドを見つけるには
 | 7.3 すべてのアップデート   | &#10004;             |
 | DXP 7.2 SP3/FP8+ | &#10008;             |
 
-動作を変更するには、システム設定 &rarr; Dynamic Data Mapping Indexer の **Enable Legacy Dynamic Data Mapping Index Fields** の設定を使用します。
+動作を変更するには、System Settings &rarr; Dynamic Data Mapping Indexer の **Enable Legacy Dynamic Data Mapping Index Fields** 設定を使用します。
 
-カスタムフィルタウィジェットでWebコンテンツ構造フィールドを使用する例については、 [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) を参照してください。
+カスタムフィルタウィジェットを使ったウェブコンテンツ構造フィールドの使用例については [Boosting Matches to Nested Fields](custom-filter-examples.md#boosting-matches-to-nested-fields) を参照してください。
 
 ## 関連トピック
 

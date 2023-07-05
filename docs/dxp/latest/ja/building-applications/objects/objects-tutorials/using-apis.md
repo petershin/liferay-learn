@@ -19,15 +19,15 @@ toc:
 :link: ./using-apis/using-batch-apis.md
 :::
 
-:::{grid-item-card} リレーションシップREST APIの利用
+:::{grid-item-card} リレーションシップREST APIの使用
 :link: ./using-apis/using-relationship-rest-apis.md
 :::
 
-:::{grid-item-card} REST APIでネストしたフィールドの使用
+:::{grid-item-card} 関連エントリをクエリするために nestedFields を使用する
 :link: ./using-apis/using-nestedfields-to-query-related-entries.md
 :::
 
-:::{grid-item-card} `nestedFields` を使用して入力履歴を監査する
+:::{grid-item-card} nestedFields を使用して入力履歴を監査する History
 :link: ./using-apis/using-nestedfields-to-audit-entry-history.md
 :::
 

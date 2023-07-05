@@ -1,10 +1,11 @@
 ---
 toc:
-- ./authenticating-with-saml/saml-authentication-process-overview.md
-- ./authenticating-with-saml/configuring-saml-at-the-system-level.md
-- ./authenticating-with-saml/saml-admin.md
-- ./authenticating-with-saml/configuring-saml-at-the-instance-level.md
-- ./authenticating-with-saml/saml-settings.md
+  - ./authenticating-with-saml/saml-authentication-process-overview.md
+  - ./authenticating-with-saml/configuring-saml-at-the-system-level.md
+  - ./authenticating-with-saml/saml-admin.md
+  - ./authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml.md
+  - ./authenticating-with-saml/configuring-saml-at-the-instance-level.md
+  - ./authenticating-with-saml/saml-settings.md
 ---
 # SAMLによる認証
 
@@ -14,6 +15,7 @@ toc:
 authenticating-with-saml/saml-authentication-process-overview.md
 authenticating-with-saml/configuring-saml-at-the-system-level.md
 authenticating-with-saml/saml-admin.md
+authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml.md
 authenticating-with-saml/configuring-saml-at-the-instance-level.md
 authenticating-with-saml/saml-settings.md
 ```
@@ -35,5 +37,6 @@ SAMLの構成に直接移動するか、SAMLがどのように機能するかを
 * [SAML Authentication Process Overview (近日公開！)](./authenticating-with-saml/saml-authentication-process-overview.md)
 * [システムレベルでのSAMLの設定](./authenticating-with-saml/configuring-saml-at-the-system-level.md)
 * [SAML管理](./authenticating-with-saml/saml-admin.md)
-* [インスタンスレベルでのSAMLの設定](./authenticating-with-saml/configuring-saml-at-the-instance-level.md)
-* [SAML Configuration Reference](./authenticating-with-saml/saml-settings.md)
+* [SAMLを介した外部IdPからのユーザーグループのメンバーシップのインポート](./authenticating-with-saml/importing-user-groups-memberships-from-an-external-idp-through-saml.md)
+* [インスタンスレベルでのSAML設定](./authenticating-with-saml/configuring-saml-at-the-instance-level.md)
+* [SAML設定リファレンス](./authenticating-with-saml/saml-settings.md)

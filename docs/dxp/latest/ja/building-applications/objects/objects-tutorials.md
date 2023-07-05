@@ -1,8 +1,9 @@
 ---
 toc:
-- objects-tutorials/building-a-time-off-requester.md
-- objects-tutorials/using-object-data-with-react-charts.md
-- objects-tutorials/using-apis.md
+  - objects-tutorials/building-a-time-off-requester.md
+  - objects-tutorials/using-object-data-with-react-charts.md
+  - objects-tutorials/managing-objects-with-headless-apis.md
+  - objects-tutorials/using-apis.md
 ---
 # オブジェクトのチュートリアル
 
@@ -11,6 +12,7 @@ toc:
 
 objects-tutorials/building-a-time-off-requester.md
 objects-tutorials/using-object-data-with-react-charts.md
+objects-tutorials/managing-objects-with-headless-apis.md
 objects-tutorials/using-apis.md
 
 ```

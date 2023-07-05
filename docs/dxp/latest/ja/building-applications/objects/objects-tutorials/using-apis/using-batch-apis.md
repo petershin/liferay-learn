@@ -5,7 +5,7 @@
 先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
 
 ```{tip}
-サイトオブジェクトと会社オブジェクトの両方に対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` (例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*［RESTアプリケーション］*の下に表示されます。
+サイトオブジェクトと会社オブジェクトの両方に対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*［RESTアプリケーション］*の下に表示されます。
 ```
 
 ## Liferayインスタンスのセットアップ
@@ -13,27 +13,27 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順で、このチュートリアルで使用する基本的なオブジェクトを [作成](../../creating-and-managing-objects/creating-objects.md ) します：
+次に、以下の手順に従って、このチュートリアルで使用する基本的なオブジェクトを [作成](../../creating-and-managing-objects/creating-objects.md)してください：
 
-1. [グローバルメニュー](./../../.../.../images/icon-applications-menu.png) を開き、[コントロールパネル] タブに移動して、[オブジェクト] をクリックします。
+1. [グローバルメニュー](../../../../../images/icon-applications-menu.png) )を開き、 [コントロールパネル](**Control Panel**) タブに移動し、 [オブジェクト](**Objects**) をクリックします。
 
-1. **追加** ボタン( ![追加ボタン](../../../../images/icon-add.png) ）をクリックし、以下の値を入力します：
+1. **追加** ボタン( [ボタンの追加](../../../../images/icon-add.png) )をクリックし、以下の値を入力します：
 
-   | フィールド | 値 |
-   | :--- | :--- |
-   | ラベル | `Able` |
-   | 複数形ラベル | `Ables` |
-   | 名前 | `Able` |
+    | フィールド | 値 |
+    | :--- | :--- |
+    | ラベル | `有能` |
+    | 複数のラベル | `エイブル` |
+    | 名前 | `有能` |
 
-1. 新しい **オブジェクト** ドラフトを選択し、 **フィールド** タブに移動し、単一のテキスト **フィールド** を追加します：
+1. 新しい **オブジェクト** ドラフトを選択し、 **フィールド** タブに移動して、単一のテキスト **フィールド** を追加します。
 
-   | ラベル | フィールド名 | タイプ | 必須 |
-   | :--- | :--- | :--- | :--- |
-   | 名前 | 名前 | テキスト | &#10004; |
+    | ラベル | フィールド名 | タイプ | 必須 |
+    | :--- | :--- | :--- | :--- |
+    | 名前 | 名前 | テキスト | &#10004; |
 
-1. 詳細 **タブを開き、** 公開*をクリックします。
+1. **Details** タブに移動し、 **Publish** をクリックします。
 
-   ```{important}} をクリックします。
+   ```{important}
    このチュートリアルでは、上記の値を使用する必要があります。
    ```
 
@@ -222,5 +222,5 @@ GETメソッドは、デモのために含まれています。 これは、Life
 ## 関連トピック
 
 * [オブジェクトAPIの基本](./object-api-basics.md)
-* [REST APIでネストしたフィールドの使用](./using-nestedfields-to-query-related-entries.md)
+* [`nestedFields` を使って関連するエントリーをクエリーする。](./using-nestedfields-to-query-related-entries.md)
 * [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md)

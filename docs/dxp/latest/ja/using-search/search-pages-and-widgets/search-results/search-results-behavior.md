@@ -22,7 +22,7 @@
 
 検索エンジンは、検索結果の順位付けに、検索エンジンが算出したスコアである「関連性」を用います。 検索結果のスコアには、使用する検索エンジンによって様々な要因があります。
 
-* [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-similarity.html#bm25)
+* [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/index-modules-similarity.html#bm25)
 * [Solr](https://lucene.apache.org/solr/guide/8_0/relevance.html)
 
 [結果ランキング](../../search-administration-and-tuning/result-rankings.md) は、返された検索結果の順序をコントロールするのに役立ちます。
@@ -59,7 +59,7 @@
 
 ## 検索とステージング
 
-[ステージング](../../../site-building/publishing-tools/staging/managing-data-and-content-types-in-staging.md)では、コンテンツはまずプレビューやテスト環境に置かれた後、一般公開(ライブサイト）されます。 検索インデックスに追加されたコンテンツは、検索APIがアイテムがライブであるかどうかを解読できるようにマークされます。 ライブ版サイトでは、ライブ版サイト用にマークされたコンテンツのみが検索可能となります。 本サイトのステージングバージョンでは、ライブまたはステージングされたすべてのコンテンツが検索可能です。
+[ステージング](../../../site-building/publishing-tools/staging/managing-data-and-content-types-in-staging.md)では、コンテンツはまずプレビューやテスト環境に置かれた後、一般公開（ライブサイト）されます。 検索インデックスに追加されたコンテンツは、検索APIがアイテムがライブであるかどうかを解読できるようにマークされます。 ライブ版サイトでは、ライブ版サイト用にマークされたコンテンツのみが検索可能となります。 本サイトのステージングバージョンでは、ライブまたはステージングされたすべてのコンテンツが検索可能です。
 
 ## 検索と公開
 
@@ -70,12 +70,12 @@
 結果の要約には、アセットの開発者が、アセットを検索する人にとって最も有用であると考えたドキュメントの情報が含まれています。 各アセットでは、サマリーに含まれるフィールドが異なります。 テキストコンテンツのあるアセットでは、タイトルとコンテンツの一部を含む一般的なサマリー形式で、タイトルが最初に表示されます。 2行目には必ずアセットタイプが表示され、最後の行には検索ワードにマッチしたコンテンツのスニペットが表示されます。 ドキュメントとメディアドキュメントなど、コンテンツ項目のないアセットは、代わりに説明を表示します。
 
 ```{note}
-ユーザーは異なります。 ユーザーの結果のサマリーには、ユーザーのフルネームとアセットタイプ(ユーザー）のみが表示されます。
+ユーザーは異なります。 ユーザーの結果のサマリーには、ユーザーのフルネームとアセットタイプ（ユーザー）のみが表示されます。
 ```
 
 ![ユーザーの場合は、ユーザーのフルネームのみが表示されます。](./search-results-behavior/images/03.png)
 
-他のアセットを含むアセット(Webコンテンツおよびドキュメント & Mediaフォルダ）や、コンテンツが表示に適していないアセット(動的データリストレコードおよびカレンダーイベント）については、タイトル、アセットタイプ、および説明を結果のサマリーに表示する方が合理的です。
+他のアセットを含むアセット（Webコンテンツおよびドキュメント & Mediaフォルダ）や、コンテンツが表示に適していないアセット（動的データリストレコードおよびカレンダーイベント）については、タイトル、アセットタイプ、および説明を結果のサマリーに表示する方が合理的です。
 
 ![説明文を要約して表示するドキュメントフォルダ。](./search-results-behavior/images/04.png)
 
@@ -83,11 +83,11 @@
 
 結果のサマリーにどのフィールドを含めるかを決定するために、「検索結果」ウィジェットは3つの点を考慮します。
 
-1. 概要に含めるアセット固有のフィールドは、 `ModelSummaryContributor` Javaクラス(Liferay独自のクラスおよびサードパーティの開発者によってデプロイされたクラス）で定義されます。 このロジックの古い実装は、 `Indexer.getSummary`で提供されていました。
+1. 概要に含めるアセット固有のフィールドは、 `ModelSummaryContributor` Javaクラス（Liferay独自のクラスおよびサードパーティの開発者によってデプロイされたクラス）で定義されます。 このロジックの古い実装は、 `Indexer.getSummary`で提供されていました。
 
-1. 検索結果のサマリーで表示可能なフィールドは、検索結果の表示ロジック( [`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/builder/SearchResultSummaryDisplayBuilder.java) および [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java) ）によって定義されます。
+1. 検索結果サマリーで表示可能なフィールドは、検索結果表示ロジックによって定義されます ( [`SearchResultsSummaryDisplayBuilder`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/builder/SearchResultSummaryDisplayContextBuilder.java) および [`SearchResultsSummaryDisplayContext`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-search/portal-search-web/src/main/java/com/liferay/portal/search/web/internal/result/display/context/SearchResultSummaryDisplayContext.java) )。
 
-1. [検索結果](./configuring-the-search-results-widget.md) ウィジェット(デフォルトでは **リスト**）で使用される [ウィジェットテンプレート](../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) は、検索結果の表示に関するすべてのこと(利用可能なフィールドのどれが要約に含まれるかなど）について最終決定権を持ちます。
+1. [検索結果](./configuring-the-search-results-widget.md) ウィジェット(**リスト** デフォルト)で使用される [ウィジェットテンプレート](../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) は、利用可能なフィールドのどれが要約に含まれるかを含め、検索結果表示に関連するすべてのことに関して最終決定権を持つ。
 
 ## ハイライト
 
@@ -112,21 +112,21 @@ Liferay 7.2以降では、公開コンテンツページの [ページコンテ�
 ![公開・非公開ページのタイトルを検索することができます。](./search-results-behavior/images/11.png)
 
 ```{note}
-Liferay 7.4 U22+とGA22+では、新規インストール時にプライベートページが無効化されます。 ただし、必要に応じて有効にすることは可能です。 詳しくは、 [プライベートページの有効化](.../.../site-building/creating-pages/understanding-pages.md#enabling-private-pages) をご参照ください。
+Liferay 7.4 U22+とGA22+では、新規インストール時にプライベートページが無効になります。 ただし、必要に応じて有効にすることもできる。 詳しくは [プライベートページの有効化](../../../site-building/creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) を参照してください。
 ```
 
 コンテンツページのインデックスに登録されているフィールドを確認するには、［検索結果］ウィジェットの ［**ドキュメントフォームに結果を表示**］ の設定を有効にします。 詳しくは、 [検索エンジンのドキュメントを検査する](./configuring-the-search-results-widget.md#inspecting-search-engine-documents) をご覧ください。
 
 ![コンテンツページのドキュメントビューを検査して、どのフィールドがインデックスされているかを確認します。](./search-results-behavior/images/12.png)
 
-Liferay 7.4 GA25+/U25+では、ウィジェットページの検索も可能です(タイトルのみで）。
+Liferay 7.4 GA25+/U25+では、ウィジェットページを検索することもできます（タイトルのみ）。
 
 ## 検索結果でオブジェクトを返す
 
-Liferay 7.4 には [Liferay Objects](../../../building-applications/objects.md)という GUI 主導のアプリケーション構築のフレームワークが含まれています。 各オブジェクトの定義のフィールドは検索可能と宣言できます。オブジェクトエントリ(アプリケーションのユーザが送信したレコード）は、 [クエリを実行でき](../../getting-started/searching-for-content.md#searching-for-liferay-objects) 、検索結果ウィジェットに返すことが可能です。
+Liferay 7.4には、 [Liferay Objects](../../../building-applications/objects.md)が含まれており、GUI主導のアプリケーション構築フレームワークです。 各オブジェクトの定義のフィールドは検索可能と宣言できます。オブジェクトエントリ（アプリケーションのユーザが送信したレコード）は、 [クエリを実行でき](../../getting-started/searching-for-content.md#searching-for-liferay-objects) 、検索結果ウィジェットに返すことが可能です。
 
 ![オブジェクトエントリには、タイトルとコンテンツの概要が表示されます。](./search-results-behavior/images/13.png)
 
-Liferay 7.4 U64+/GA64+ では、検索結果のオブジェクトエントリーをクリックすると、そのエントリーの [表示ページ](../../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) にリダイレクトされ、結果の詳細が表示されるようになっています。 オブジェクトに表示ページテンプレートが存在しない場合、デフォルトのレイアウトが使用されます。 エントリーの詳細表示で戻る矢印をクリックすると、検索ページに戻ることができます。
+Liferay 7.4 U64+/GA64+ では、検索結果のオブジェクトエントリーをクリックすると、そのエントリーの [表示ページ](../../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) にリダイレクトされ、結果の詳細が表示されます。 オブジェクトの表示ページテンプレートが存在しない場合、デフォルトのレイアウトが使用されます。 エントリーの詳細表示で戻る矢印をクリックすると、検索ページに戻ります。
 
-![デフォルトの表示ページテンプレートが存在しない場合は、作成されます。](./search-results-behavior/images/14.png)
+![デフォルトの表示ページテンプレートがまだ存在しない場合は作成される。](./search-results-behavior/images/14.png)

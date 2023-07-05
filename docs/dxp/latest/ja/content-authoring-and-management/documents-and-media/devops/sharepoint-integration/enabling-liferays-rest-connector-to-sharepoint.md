@@ -70,7 +70,7 @@ RESTコネクターはOAuth2によるSharePointサーバー認証を行うAzure 
 
 **Name** ：設定の名前
 
-**認証許可エンドポイント** ：OAuth2権限付与を要求するために使用されるURL（例：SharePoint Onlineの場合は`https://[your-site-name]/sharepoint.com/_layouts/oauthauthorize.aspx`）
+**認証許可エンドポイント** : OAuth2 認可付与のリクエストに使用される URL (例: SharePoint Onlineの場合は `https://[your-site-name].sharepoint.com_layouts/oauthauthorize.aspx` )
 
 **認証トークンエンドポイント** ：ACSのURL（例：SharePoint Onlineの場合は`https://accounts.accesscontrol.windows.net/［App ID]/tokens/OAuth/2`）
 

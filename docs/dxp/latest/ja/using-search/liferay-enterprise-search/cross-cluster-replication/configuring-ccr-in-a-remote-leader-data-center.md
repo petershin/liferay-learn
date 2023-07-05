@@ -50,7 +50,7 @@
       ./bin/elasticssearch
       ```
 
-1. 試用段階で、まだ適切なライセンスを持っていない場合は、 [Elasticsearchのトライアルライセンス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/start-trial.html) を開始してください。
+1. 試用段階で、まだ適切なライセンスを持っていない場合は、 [Elasticsearchのトライアルライセンス](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial.html) を開始してください。
 
    ```
    POST /_license/start_trial?acknowledge=true
@@ -93,7 +93,7 @@
    ```
 
    ```{tip}
-   During development and testing, it's useful to set `logExceptionsOnly="false"` in the configuration files. 
+   開発中やテスト中は、`logExceptionsOnly="false"`を設定ファイルに設定しておくと便利です。
    ```
 
 1. リモート接続を設定します。
@@ -114,7 +114,7 @@
    ```
 
    ```{important}
-   The `remoteClusterConnectionId` value in the `ElasticsearchConfiguration.config` must match the `connectionId` in the `ElasticsearchConnectionConfiguration-remote.config` file. 
+   `ElasticsearchConfiguration.config` の `remoteClusterConnectionId` の値は、 `ElasticsearchConnectionConfiguration-remote.config` ファイルの `connectionId` と一致する必要があります。 
    ```
 
    Liferay DXP 7.2の場合、 `com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config` という名前の設定ファイルに以下の内容を記述して、接続を保護します。

@@ -1,12 +1,12 @@
 # Solrの制限事項
 
-LiferayのSolr実装には限界があります。 検索エンジンにSolrを選択した場合、Liferayの一部の機能やAPIが使用できません。 [Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md) をインストールすると、最高の体験ができます。
+LiferayのSolr実装には限界があります。 検索エンジンにSolrを選択した場合、Liferayの一部の機能やAPIは使用できません。 優れたエクスペリエンスを得るには[Elasticsearch](../elasticsearch/getting-started-with-elasticsearch.md)をインストールしてください。
 
-## 検索結果 品質
+## 検索結果の品質
 
 Liferayの検索機能には、Elasticsearch固有のAPIとマッピングが活用されています。 これらの機能の一部はSolrに含まれていないため、SolrをLiferayの検索エンジンとして使用する場合、検索結果の品質が低下することが予想されます。
 
-例えば、Liferayの言語認識ソート動作は、 [ICU Analysis Plugin from Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/plugins/7.x/analysis-icu-collation-keyword-field.html) のためにのみ存在する照合ルールに依存しています。Solrで検索するとき、特にフィールド値が発音区分符号を含むとき、いくつかの非最適なソート動作が予想されます。
+例えば、Liferayの言語認識ソート動作は、 [ElasticsearchからのICU Analysis Plugin](https://www.elastic.co/guide/en/elasticsearch/plugins/8.8/analysis-icu-collation-keyword-field.html) のためにのみ存在する照合ルールに依存しています。 Solrで検索する場合、特にフィールド値に発音区分符号が含まれていると、最適でないソート動作が予想されます。
 
 ## エンドユーザー機能の制限
 
@@ -21,8 +21,8 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
 * [検索チューニング：同義語](../../search-administration-and-tuning/synonym-sets.md)
 * [コンテンツダッシュボード](../../../content-authoring-and-management/content-dashboard.md)
 * [類似結果](../../search-pages-and-widgets/similar-results.md)
-* すべての [Liferay Enterprise Search](../../liferay-enterprise-search.md) アプリケーションを含みます。 
-     * クラスター横断レプリケーション
+* 以下を含むすべての [Liferay Enterprise Search](../../liferay-enterprise-search.md) アプリケーション：
+   * クラスター横断レプリケーション
    * 検索エクスペリエンス
    * Learning to Rank
    * モニタリング
@@ -31,17 +31,17 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
 
 以下のAPIは、現在LiferayのSolrコネクターではサポートされていません。
 
-* ポータルコアから（モジュール： `portal-kernel`、アーティファクト： `com.liferay.portal.kernel`）： 
-    * `com.liferay.portal.kernel.search.generic.NestedQuery`
-  * `com.liferay.portal.kernel.search.filter`： 
-        * `ComplexQueryPart`
+* ポータルコアから（モジュール： `portal-kernel`、アーティファクト： `com.liferay.portal.kernel`）：
+  * `com.liferay.portal.kernel.search.generic.NestedQuery`
+  * `com.liferay.portal.kernel.search.filter`：
+    * `ComplexQueryPart`
     * `GeoBoundingBoxFilter`
     * `GeoDistanceFilter`
     * `GeoDistanceRangeFilter`
     * `GeoPolygonFilter`
-* ポータル検索APIから（モジュール： `portal-search-api`、アーティファクト： `com.liferay.portal.search.api`）： 
-    * `com.liferay.portal.search.filter`： 
-        * `ComplexQueryPart`
+* ポータル検索APIから（モジュール： `portal-search-api`、アーティファクト： `com.liferay.portal.search.api`）：
+  * `com.liferay.portal.search.filter`：
+    * `ComplexQueryPart`
     * `TermsSetFilter`
   * `com.liferay.portal.search.geolocation.*`
   * `com.liferay.portal.search.highlight.*`
@@ -50,12 +50,12 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
   * `com.liferay.portal.search.script.*`
   * `com.liferay.portal.search.significance.*`
   * `com.liferay.portal.search.sort *`：`ソート`、`FieldSort`および `ScoreSort`のみがサポートされています。
-* ポータル検索エンジンアダプターAPI（モジュール： `portal-search-engine-adapter-api`、アーティファクト： `com.liferay.portal.search.engine.adapter.api`） 
-    * `com.liferay.portal.search.engine.adapter.cluster.*`
+* ポータル検索エンジンアダプターAPI（モジュール： `portal-search-engine-adapter-api`、アーティファクト： `com.liferay.portal.search.engine.adapter.api`）
+  * `com.liferay.portal.search.engine.adapter.cluster.*`
   * `com.liferay.portal.search.engine.adapter.document.UpdateByQueryDocumentRequest`
   * `com.liferay.portal.search.engine.adapter.index。*`： `RefreshIndexRequest` のみがサポートされます
-  * `com.liferay.portal.search.engine.adapter.search.*`: 
-        * `MultisearchSearchRequest`
+  * `com.liferay.portal.search.engine.adapter.search.*`:
+    * `MultisearchSearchRequest`
     * `SuggestSearchRequest`
   * `com.liferay.portal.search.engine.adapter.snapshot.*`
 

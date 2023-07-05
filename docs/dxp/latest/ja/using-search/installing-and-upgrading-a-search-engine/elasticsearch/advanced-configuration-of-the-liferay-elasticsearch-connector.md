@@ -1,8 +1,8 @@
-# Liferay Elasticsearch コネクタの高度な設定
+# Liferay Elasticsearchコネクターの詳細設定
 
 [Elasticsearchの接続](./connecting-to-elasticsearch.md) は、設定ファイル [またはシステム設定](./elasticsearch-connector-configuration-reference.md#configuration-files-and-system-settings-entries) を使って設定します。
 
-Elasticsearchコネクタには多くの設定オプションが用意されています。ほとんどのElasticsearchの設定は、Liferayの似たような、あるいは同じ名前の設定によって構成することができます（例えば、 `httpSSLEnabled`）。 特別な設定が必要な場合は、 [詳細設定](./../elasticsearch/elasticsearch-connector-configuration-reference.md)を使用して、必要な設定オプションを追加してください。 これらの特別な設定のほとんどは、設定やマッピングを追加したり、オーバーライドしたりするものです。
+Elasticsearchコネクターには多くの設定オプションが標準で用意されています。ほとんどのElasticsearchの設定は、Liferayの設定に類似あるいは同一の名前の設定で構成することができます（例： `httpSSLEnabled`）。 特別な設定が必要な場合は、 [詳細設定](./../elasticsearch/elasticsearch-connector-configuration-reference.md)を使用して、必要な設定オプションを追加してください。 これらの特別な設定のほとんどは、設定やマッピングを追加したり、オーバーライドしたりするものです。
 
 * [インデックス構成の追加](#adding-index-configurations)
 * [タイプマッピングの追加](#adding-type-mappings)
@@ -11,7 +11,7 @@ Elasticsearchコネクタには多くの設定オプションが用意されて�
 
 Elasticsearchで設定可能なものは、Elasticsearchコネクターを使って設定することができます。
 
-## Liferay Elasticsearch コネクタへの設定とマッピングの追加
+## Liferay Elasticsearchコネクターへの設定とマッピングの追加
 
 利用可能な設定オプションは、簡単に設定できる一般的なものと、YAMLやJSONの入力が必要な複雑な設定の2つのグループに分かれていると考えてください。
 
@@ -19,11 +19,11 @@ Elasticsearchで設定可能なものは、Elasticsearchコネクターを使っ
 
 ### インデックス構成の追加
 
-{bdg-link-warning}`再インデックスが必要です`
+{bdg-link-warning}`再インデックスが必要`
 
-`additionalIndexConfigurations` 設定は、 [会社インデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) （例：それぞれのLiferayの仮想インスタンスのインデックス）が作成されるときに、それぞれに適用される追加の設定（JSONやYAML）を定義します。 たとえば、この設定を使って、カスタムのアナライザーやフィルターを作成することができます。 使用可能な設定の完全なリストは、 [Elasticsearchのリファレンス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules.html) を参照してください。
+`additionalIndexConfigurations` 設定は、 [会社インデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) （例：それぞれのLiferayの仮想インスタンスのインデックス）が作成されるときに、それぞれに適用される追加の設定（JSONやYAML）を定義します。 たとえば、この設定を使って、カスタムのアナライザーやフィルターを作成することができます。 使用可能な設定の完全なリストは、 [Elasticsearchのリファレンス](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/index-modules.html) を参照してください。
 
-ここでは、フィールドや動的テンプレートに適用できる [解析](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-analysis.html) の設定例を示します（動的テンプレートへの適用例は、 [下](#overriding-type-mappings) を参照してください）。
+ここでは、フィールドまたは動的テンプレートに適用できる [analysis](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/index-modules-analysis.html) の設定方法を示す例を示します（動的テンプレートへの適用例については、 [下](#overriding-type-mappings) を参照してください）。
 
 ```json
 {  
@@ -49,26 +49,28 @@ Elasticsearchで設定可能なものは、Elasticsearchコネクターを使っ
 
 ### タイプマッピングの追加
 
-{bdg-link-warning}`再インデックスが必要です`
+{bdg-link-warning}`再インデックスが必要`
 
-`additionalTypeMappings` は、各 [会社やシステムのインデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) （つまり、各Liferay仮想インスタンスのインデックス）にデータをインデックスするための追加マッピングを定義します。 これらは、インデックスの作成時に適用されます。 JSONの構文を使ってマッピングを追加します。 詳しくは、 [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping.html) と [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/indices-put-mapping.html) をご覧ください。 新しいフィールド（`プロパティ`）のマッピングや新しいダイナミックテンプレートには `additionalTypeMappings` を使用し、既存のマッピングを上書きしないようにしてください。 ここで設定したマッピングが既存のマッピングと重なる場合は、インデックス作成に失敗します。 デフォルトのマッピングを置き換えるには、 `overrideTypeMappings` を使用します。
+`additionalTypeMappings` は、各 [会社やシステムのインデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) （つまり、各Liferay仮想インスタンスのインデックス）にデータをインデックスするための追加マッピングを定義します。 これらは、インデックスの作成時に適用されます。 JSONの構文を使ってマッピングを追加します。 詳しくは、 [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping.html) と [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/indices-put-mapping.html) をご覧ください。 新しいフィールド（`プロパティ`）のマッピングや新しいダイナミックテンプレートには `additionalTypeMappings` を使用し、既存のマッピングを上書きしないようにしてください。 ここで設定したマッピングが既存のマッピングと重なる場合は、インデックス作成に失敗します。 デフォルトのマッピングを置き換えるには、 `overrideTypeMappings` を使用します。
 
-ダイナミックテンプレートと同様に、Liferayのタイプマッピングにサブフィールドマッピングを追加することができます。 これらは、Elasticsearchでは [プロパティ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/properties.html) と呼ばれています。
+ダイナミックテンプレートと同様に、Liferayのタイプマッピングにサブフィールドマッピングを追加することができます。 これらは、Elasticsearchでは [プロパティ](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/properties.html) と呼ばれています。
 
 プロパティを追加するには、次のJSON構文を使用します。
 
 ```json
 { 
-    "LiferayDocumentType": {  
-        "properties": {   
-            "fooName": {
-                "index": "true",
-                "store": "true",
-                "type": "keyword"
-            }
-        }   
-    }
+     "properties": {
+         "fooName": {
+             "index": "true",
+             "store": "true",
+             "type": "keyword"
+         }
+     }
 }
+```
+
+```{note}
+Liferay 7.4 U80 以前では、JSON ファイルの最初に `LiferayDocumentType` 宣言を含める必要があります。
 ```
 
 追加したマッピングがLiferayのマッピングに追加されたことを確認するには、追加内容を保存してインデックスを再作成した後に、 `curl` を使ってこのURLにアクセスします。
@@ -85,23 +87,23 @@ curl http://localhost:9200/liferay-20116/_mapping?pretty
 
 上記のURLでは、 `liferay-20116` がインデックス名です。 これを含めると、その名前のインデックスを作成するために使用されたマッピングを確認したいことになります。
 
-Elasticsearchのフィールドデータタイプの詳細については、 [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/mapping-types.html) を参照してください。
+Elasticsearchのフィールドデータタイプの詳細については、 [こちら](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/mapping-types.html) を参照してください。
 
 上の例では、Liferayのタイプマッピングに、 `fooName` フィールドを追加する方法を示しています。 `fooName` はマッピングの既存のプロパティではないため、正常に機能します。 既存のプロパティマッピングを上書きしようとすると、インデックス作成に失敗します。 代わりに、 `overrideTypeMappings` の設定を使用して、マッピングの `プロパティ` をオーバーライドします。
 
 ### 型マッピングのオーバーライド
 
-{bdg-link-warning}`再インデックスが必要です`
+{bdg-link-warning}`再インデックスが必要`
 
-`overrideTypeMappings` を使用して、Liferayのデフォルトのタイプマッピングをオーバーライドし、データが [会社およびシステムインデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)インデックス付けされる方法を制御します。 これは高度な機能であり、厳密に必要な場合にのみ使用する必要があります。 この値を設定すると、LiferayソースコードでLiferayドキュメントタイプを定義するために使用されるデフォルトマッピング（例えば、 `liferay-type-mappings.json`）は完全に無視されますので、修正するセグメントだけでなく、マッピング定義全体をこのプロパティに含めてください。
+`overrideTypeMappings` を使用して、Liferayのデフォルトのタイプマッピングをオーバーライドし、データが [会社およびシステムインデックス](../../search-administration-and-tuning/elasticsearch-indexes-reference.md)インデックス付けされる方法を制御します。 これは高度な機能であり、厳密に必要な場合にのみ使用する必要があります。 この値を設定すると、Liferayのソースコードにあるデフォルトのマッピング(例えば、 `liferay-type-mappings.json`)は完全に無視されるので、変更するセグメントだけでなく、マッピング定義全体をこのプロパティに含めます。
 
-変更を加えるには、インデックス作成に使用されている現在のマッピングの全リストを、URL
+変更を加えるには、URLに移動して、インデックス作成に使用されている現在のマッピングの全リストを検索します。
 
 ```
 http://[HOST]:[ES_PORT]/liferay-[COMPANY_ID]/_mapping?pretty
 ```
 
-その内容を、このプロパティの値として（「システム設定」またはOSGiの設定ファイルに）コピーします。 冒頭の中括弧 `{`は残しますが、2行目と3行目は完全に削除します（インデックス名を書いた行と `マッピングを書いた行`）。
+その内容を、このプロパティの値として（［システム設定］またはOSGiの設定ファイルに）コピーします。 冒頭の中括弧 `{`は残しますが、2行目と3行目は完全に削除します（インデックス名を書いた行と `マッピングを書いた行`）。
 
 ```json
 "liferay-[COMPANY_ID]": {
@@ -117,35 +119,37 @@ http://[HOST]:[ES_PORT]/liferay-[COMPANY_ID]/_mapping?pretty
 
 ここで、好きなマッピングを変更します。 変更を保存し、 [サーバ管理](../../../system-administration/using-the-server-administration-panel.md)から再インデックスをトリガーすると、変更が有効になります。 
 
-ここでは、 [ダイナミック・テンプレート](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/dynamic-templates.html) が、 `additionalIndexConfigurations` の解析設定を使用して、 `_ja`で終わるすべての文字列フィールドを解析している例を示しています。 これを他のすべてのデフォルトマッピングと一緒にインクルードし、提供されている `template_ja` をこのカスタムマッピングで置き換えるのです。
+ここでは、 [ダイナミック・テンプレート](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/dynamic-templates.html) が、 `additionalIndexConfigurations` の解析設定を使用して、 `_ja`で終わるすべての文字列フィールドを解析している例を示しています。 これを他のすべてのデフォルトマッピングと一緒にインクルードし、提供されている `template_ja` をこのカスタムマッピングで置き換えるのです。
 
 ```json
 {
-    "LiferayDocumentType": {
-        "dynamic_templates": [
-            {
-                "template_ja": {
-                    "mapping": {
-                        "analyzer": "kuromoji_liferay_custom",
-                        "index": "analyzed",
-                        "store": "true",
-                        "term_vector": "with_positions_offsets",
-                        "type": "string"
-                    },
-                    "match": "\\w+_ja\\b|\\w+_ja_[A-Z]{2}\\b",
-                    "match_mapping_type": "string",
-                    "match_pattern": "regex"
-                }
-                ...
-            }
-        ]
-    }
+     "dynamic_templates": [
+         {
+             "template_ja": {
+                 "mapping": {
+                     "analyzer": "kuromoji_liferay_custom",
+                     "index": "analyzed",
+                     "store": "true",
+                     "term_vector": "with_positions_offsets",
+                     "type": "string"
+                 },
+                 "match": "\\w+_ja\\b|\\w+_ja_[A-Z]{2}\\b",
+                 "match_mapping_type": "string",
+                 "match_pattern": "regex"
+             }
+             ...
+         }
+     ]
 }
+```
+
+```{note}
+Liferay 7.4 U80 以前では、JSON ファイルの最初に `LiferayDocumentType` 宣言を含める必要があります。
 ```
 
 ### 開発モードのElasticsearchに設定を追加する
 
-追加設定(`additionalConfigurations`) フィールドを使用して、埋め込みまたはサイドカーのElasticsearchインスタンスの追加設定を（YAMLで）定義します。 これはテスト環境でのみ有効です。 通常、 `elasticsearch.yml` で設定するノードの設定は、すべてここで宣言することができます。 可能なすべてのノード設定の説明については、 [Elasticsearch のドキュメンテーション](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index.html)  を参照してください。
+追加設定(`additionalConfigurations`) フィールドを使用して、埋め込みまたはサイドカーのElasticsearchインスタンスの追加設定を（YAMLで）定義します。 これはテスト環境でのみ有効です。 通常、 `elasticsearch.yml` で設定するノードの設定は、すべてここで宣言することができます。 可能なすべてのノード設定の説明については、 [Elasticsearch のドキュメンテーション](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/index.html)  を参照してください。
 
 ## 複数行のYAML設定
 
@@ -162,4 +166,4 @@ additionalConfigurations=\
                     monitor.jvm.gc.young.warn: 600s
 ```
 
-簡単な設定から既存の型マッピングの上書きまで、ElasticsearchとLiferayのElasticsearchへのコネクタは設定が可能です。
+簡単な設定から既存の型マッピングの上書きまで、ElasticsearchとLiferayのElasticsearchへのコネクターは設定が可能です。

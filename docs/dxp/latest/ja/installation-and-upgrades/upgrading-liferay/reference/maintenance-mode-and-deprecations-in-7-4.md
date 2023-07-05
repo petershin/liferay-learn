@@ -13,7 +13,7 @@
 ```
 
 ```{important}
-詳細は、[Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation)を参照してください。
+詳細は、 [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation) を参照してください。
 ```
 
 ## 廃止予定の機能の利用可能性
@@ -52,7 +52,7 @@
 | Liferay Mobile Device Detection Enterprise | アーカイブ済み                 | 7.2で廃止。 最新の定義については、51Degreesにお問い合わせください.                                                                                                                                                                                                              |
 | Liferay Screens                            | 削除。 7.3でリリースされた最終バージョン。 | 直接的な代替品はありませんが、Mobile SDKとHeadless APIがモバイルアプリケーションの開発をサポートします。                                                                                                                                                                                       |
 | Liferay SyncコネクターとSyncクライアント               | アーカイブ済み                 | 7.3で廃止。 直接の置換はありません。                                                                                                                                                                                                                                  |
-| ライブユーザー                                    | バンドル                    | 7.2で廃止。  [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html)によって置き換えられました。                                                                                                                                              |
+| ライブユーザー                                    | バンドル                    | 7.2で廃止。  [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) によって置き換えられました。                                                                                                                                              |
 | モバイルSDK                                    | 削除済み                    | [ヘッドレスデリバリー](../../../headless-delivery/using-liferay-as-a-headless-platform.md)に置き換えられました。                                                                                                                                                           |
 | NTLM                                       | アーカイブ済み                 | 7.2で廃止。 [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)に置き換えられました。 NTLMを使用してMicrosoft Windows™アカウントを認証している場合は、[Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)を使用するように切り替えてください。 |
 | OAuth 1.0a                                 | アーカイブ済み                 | 7.2で廃止。 これはLiferayコネクターからOAuth 2.0に置き換えられます。                                                                                                                                                                                                          |

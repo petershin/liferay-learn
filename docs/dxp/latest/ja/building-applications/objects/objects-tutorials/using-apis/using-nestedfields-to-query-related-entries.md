@@ -1,76 +1,85 @@
-# REST APIでネストしたフィールドの使用
+# `nestedFields` を使って関連するエントリーをクエリーする。
 
-{bdg-secondary}`利用可能 Liferay 7.4 U69+/GA69+`
+{bdg-secondary}`Liferay 7.4 U69+/GA69+で利用可能`
 
-カスタムオブジェクトAPIでは、 `nestedFields` パラメータを使用すると、1つのGETリクエストで複数レベルの関連オブジェクトを返すことができます。 `nestedFieldsDepth` パラメータは、クエリに含まれるオブジェクトエントリの深さを決定する： `0-5`.
+`nestedFields` パラメータは、Liferay が1つの GET リクエストで複数のレベルの関連オブジェクトエントリを返すようにします。 `nestedFields` パラメータに、クエリに含めるリレーションシップ名をコンマで区切って渡します： `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. リレーションシップが複数のレベルにまたがる場合は、 `nestedFieldsDepth` パラメータを必要な深さに設定します。 最大5レベルまで含めることができる（例： `nestedFieldsDepth=5`）。
 
 ```{tip}
-`nestedFields`パラメータは、通常複数のリクエストを必要とする情報を取得するのに便利な方法です。 これを使えば、あるエントリーとその関連エントリーを一緒に取り出すことができます。 関連するエントリのみを返すために、Liferayは専用の [関係API](./../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を提供します。 [関係性REST APIの使用](./using-relationship-rest-apis.md)を参照し、紹介します。
+`nestedFields` パラメータは、複数のリクエストを必要とするような関連するエントリを取得することで、リクエストを最適化します。 関連するエントリーのみを返すために、Liferayは専用の [関連API](./../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を提供します。 概要については、[関連REST APIの利用](./using-relationship-rest-apis.md)を参照してください。
 ```
 
-[押立てる](#setting-up-a-liferay-instance) Liferay 7.4 のインスタンスを新規に立ち上げ、  提供されたチュートリアルコードを準備します。 [装う](#preparing-the-sample-code) 次に、スクリプトを実行して関連エントリーを作成し、 `nestedFields` パラメータを使用してクエリーを実行します。
+続行するには、新しいLiferay 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。 次に、 [スクリプトを実行する。](#creating-and-querying-related-object-entries) 関連エントリーを作成し、 `nestedFields` パラメーターを使用してクエリーする。
 
 ## Liferayインスタンスのセットアップ
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、3つのオブジェクトを[作成](../../creating-and-managing-objects/creating-objects.md)してください：
+次に、3つのオブジェクト定義を作成し、関連付けます。
 
-1. [グローバルメニュー](./../../.../.../images/icon-applications-menu.png) を開き、[コントロールパネル] タブに移動し、[オブジェクト]をクリックします。
+### 関連オブジェクト定義の作成
 
-1. オブジェクトの下書きを3つ作成します。
+1. グローバルメニュー ( [**グローバルメニュー](../../../../images/icon-applications-menu.png) )を開き、** コントロールパネル **タブに移動し、** オブジェクト*をクリックします。
 
-   最初のオブジェクトです：
+1. [Create](../../creating-and-managing-objects/creating-objects.md) 3つのオブジェクトドラフトを作成します。
 
-   | フィールド | 値 |
-   | :--- | :--- |
-   | ラベル | `Able` |
-   | 複数形ラベル | `Ables` |
-   | 名前 | `Able` |
+   最初のオブジェクト
 
-   第2オブジェクト
+    | フィールド | 値 |
+    | :--- | :--- |
+    | ラベル | `有能` |
+    | 複数のラベル | `エイブル` |
+    | 名前 | `有能` |
 
-   | フィールド | 値 |
-   | :--- | :--- |
-   | ラベル | `Baker` |
-   | 複数形ラベル | `ベーカーズ` | 
-   | 名前 | `Baker` |
+   2番目のオブジェクト
 
-   第3のオブジェクト
+    | フィールド | 値 |
+    | :--- | :--- |
+    | ラベル | `ベイカー` |
+    | 複数のラベル | `パン屋` |
+    | 名前 | `ベイカー` |
 
-   | フィールド | 値 |
-   | :--- | :--- |
-   | ラベル | `Charlie` | 
-   | 名前 | `Charlie` |
+   3番目のオブジェクト
 
-1. 各オブジェクトのドラフトに`name`テキストフィールドを追加します。
+    | フィールド | 値 |
+    | :--- | :--- |
+    | ラベル | チャーリー |
+    | 複数のラベル | チャーリーズ |
+    | 名前 | チャーリー |
 
-   | ラベル | フィールド名 | タイプ | 必須 | を追加する。
-   | :--- | :--- | :--- | :--- |
-   | `名前` | `名前` | テキスト |  &#10004; |
+1. 各オブジェクトのドラフトに「名前」テキストフィールドを追加します。
 
-1. 次の関係を定義する。
+    | ラベル | フィールド名 | タイプ | 必須 |
+    | :--- | :--- | :--- | :--- |
+    | `名前` | `名前` | テキスト | &#10004; |
 
-   Ableの場合：
+1. 次の関係を定義します。
 
-   | ラベル | リレーション名 | 種類 | オブジェクト |
-   | :--- | :--- | :--- | :--- |
-   | `Able to Baker` | `ableToBaker` | 1対多 | Baker |
+    アベルの場合:
 
-   For Baker:
+    | ラベル | 関係名 | タイプ | オブジェクト |
+    | :--- | :--- | :--- | :--- |
+    | `パン屋ができる` | `ableToBaker` | 1 対多 | ベイカー |
 
-   | ラベル | リレーション名 | 種類 | オブジェクト |
-   | :--- | :--- | :--- | :--- |
-   | `Baker to Charlie` | `bakerToCharlie` | 1対多 | Charlie |
+    ベイカーさんの場合：
+
+    | ラベル | 関係名 | タイプ | オブジェクト |
+    | :--- | :--- | :--- | :--- |
+    | 「ベイカーからチャーリーへ」 | `パン屋とチャーリー` | 1 対多 | チャーリー |
+
+    チャーリーの場合:
+
+    | ラベル | 関係名 | タイプ | オブジェクト |
+    | :--- | :--- | :--- | :--- |
+    | 「チャーリーとエイブル」 | `チャーリートゥアブル` | 多対多 | 有能 |
 
 1. 各オブジェクトを [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) します。
 
-公開されると、Headless APIで各オブジェクトにアクセスできるようになります。
+パブリッシュされると、Headless API を使って各オブジェクトにアクセスできるようになります。
 
 ## サンプルコードの準備
 
-以下のコマンドを実行し、提供されたサンプルコードをダウンロードし、解凍してください：
+以下のコマンドを実行して、提供されているサンプルコードをダウンロードし、解凍します：
 
 ```bash
 curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
@@ -80,15 +89,13 @@ curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objec
 unzip liferay-w4s7.zip
 ```
 
-サンプルコードには、各オブジェクトの POST コマンドと、 `Charlie`の GET コマンドが含まれています。
+ZIPは、REST APIを使用してオブジェクトエントリを作成、関連付け、照会するためのcURLコマンドを実行するシェルスクリプトを提供します。 これには、関連エントリーを照会するための2つのGETコマンドが含まれる。
 
 ```{tip}
-サイトオブジェクトとカンパニーオブジェクトに対して生成されるAPIの完全なリストは、[オブジェクトヘッドレスフレームワーク統合](../../understanding-object-integrations/headless-framework-integration.md) を参照してください。 カスタムオブジェクトの API は Liferay API Explorer を介して `[server]:[port]/o/api` (例: `localhost:8080/o/api`) で閲覧、テストすることができます。 **REST Applications** をクリックし、APIを選択します。
+サイトオブジェクトと会社オブジェクトに対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 *RESTアプリケーション*をクリックし、APIを選択します。
 ```
 
-## サンプルコードを使用する
-
-以下の手順で、関連オブジェクトのエントリーを追加し、照会します：
+## 関連オブジェクト・エントリーの作成と照会
 
 1. `liferay-w4s7`プロジェクトの`curl`フォルダに移動します。
 
@@ -96,7 +103,7 @@ unzip liferay-w4s7.zip
    cd liferay-w4s7/curl
    ```
 
-1. `Able_POST_ToCompany`を実行し、`Able`エントリーを作成します。
+1. `Able_POST_ToCompany` を実行して、Ableエントリーを作成する。
 
    ```bash
    ./Able_POST_ToCompany.sh
@@ -106,125 +113,329 @@ unzip liferay-w4s7.zip
 
    ```json
    {
-     "id" : 41969,
+     ...
+     "externalReferenceCode" : "able-one",
+     "id" : 47512,
      ...
      "name" : "Able 1"
    }
 
    {
-     "id" : 41971,
+     ...
+     "externalReferenceCode" : "able-two",
+     "id" : 47514,
      ...
      "name" : "Able 2"
    }
 
    {
-     "id" : 41973,
+     ...
+     "externalReferenceCode" : "able-three",
+     "id" : 47516,
      ...
      "name" : "Able 3"
    }
    ```
 
-1. `Able`のエントリーIDをパラメータとして、`Baker_POST_ToCompany`を実行します。
+1. `able-one` のIDをパラメータとして、 `Baker_POST_ToCompany` を実行する。
 
    ```bash
-   ./Baker_POST_ToCompany.sh {able-entry-id}
+   ./Baker_POST_ToCompany.sh [ableId]
    ```
 
-   これにより、指定された`Able`エントリーに関連する`Baker`エントリーが作成されます。 次のPOSTコマンドで使用するために、最初のBakerエントリーのIDをコピーします。
+   これは3つのBakerエントリーを作成し、 `ableToBaker` リレーションシップを使用して、指定されたAbleエントリーに関連付けます。
+
+   各Bakerエントリーには、`ableToBakerERC`、`r_ableToBaker_c_ableId`、`r_ableToBaker_c_ableERC`という3つの`ableToBaker`関係フィールドがあります。
 
    ```json
    {
-     "id" : 41975,
      ...
-     "name" : "Baker 1"
-     "r_ableToBaker_c_ableId" : 41969
+     "externalReferenceCode" : "baker-one",
+     "id" : 47518,
+     ...
+     "name" : "Baker 1",
+     "ableToBakerERC" : "able-one",
+     "r_ableToBaker_c_ableId" : 47512,
+     "r_ableToBaker_c_ableERC" : "able-one"
    }
 
    {
-     "id" : 41977,
      ...
-     "name" : "Baker 2"
-     "r_ableToBaker_c_ableId" : 41969
+     "externalReferenceCode" : "baker-two",
+     "id" : 47520,
+     ...
+     "name" : "Baker 2",
+     "ableToBakerERC" : "able-one",
+     "r_ableToBaker_c_ableId" : 47512,
+     "r_ableToBaker_c_ableERC" : "able-one"
    }
 
    {
-     "id" : 41979,
      ...
-     "name" : "Baker 3"
-     "r_ableToBaker_c_ableId" : 41969
+     "externalReferenceCode" : "baker-three",
+     "id" : 47522,
+     ...
+     "name" : "Baker 3",
+     "ableToBakerERC" : "able-one",
+     "r_ableToBaker_c_ableId" : 47512,
+     "r_ableToBaker_c_ableERC" : "able-one"
    }
    ```
 
-1. `Baker`エントリーIDをパラメータとして、`Charlie_POST_ToCompany`を実行します。
+   以下の POST コマンドで使用するために、最初のベーカー・エントリ ID をコピーする。
+
+1. `baker-one` のIDをパラメータとして、 `Charlie_POST_ToCompany` を実行する。
 
    ```bash
-   ./Charlie_POST_ToCompany.sh {baker-entry-id}
+   ./Charlie_POST_ToCompany.sh [bakerId]
    ```
 
-   これにより、直前の`Baker`エントリーに関連する`Charlie`エントリーが作成されます。 次のGETコマンドで使用するために、最初のエントリーのIDをコピーします。
+   これは、3 つの Charlie エントリを作成し、 `bakerToCharlie` リレーションシップを使用して、指定した Baker エントリに関連付けます。
 
    ```json
    {
-     "id" : 41981,
      ...
+     "externalReferenceCode" : "charlie-one",
+     "id" : 47524,
+     ...
+     "r_bakerToCharlie_c_bakerERC" : "baker-one",
+     "bakerToCharlieERC" : "baker-one",
      "name" : "Charlie 1",
-     "r_bakerToCharlie_c_bakerId" : 41975
+     "r_bakerToCharlie_c_bakerId" : 47518
    }
 
    {
-     "id" : 41983,
      ...
+     "externalReferenceCode" : "charlie-two",
+     "id" : 47526,
+     ...
+     "r_bakerToCharlie_c_bakerERC" : "baker-one",
+     "bakerToCharlieERC" : "baker-one",
      "name" : "Charlie 2",
-     "r_bakerToCharlie_c_bakerId" : 41975
+     "r_bakerToCharlie_c_bakerId" : 47518
    }
 
    {
-     "id" : 41985,
      ...
+     "externalReferenceCode" : "charlie-three",
+     "id" : 47528,
+     ...
+     "r_bakerToCharlie_c_bakerERC" : "baker-one",
+     "bakerToCharlieERC" : "baker-one",
      "name" : "Charlie 3",
-     "r_bakerToCharlie_c_bakerId" : 41975
+     "r_bakerToCharlie_c_bakerId" : 47518
    }
    ```
 
-1. `Charlie`エントリーIDをパラメータとして、`Charlie_GET_ById`を実行します。
+   これで、3つのチャーリー・エントリーが1つのベイカー・エントリーに関連し、そのエントリー自体がエイブル・エントリーに関連していることになる。 しかし、基本的なGETリクエストを使ってチャーリーエントリーを問い合わせた場合、レスポンスにはチャーリーエントリーの詳細しか含まれません。 関連するベイカーやエイブルのエントリーの詳細は含まれていない。 これらのエントリの詳細を返すには、 `nestedFields` および `nestedFieldsDepth` パラメータを使用する必要があります。
+
+   次のGETコマンドで使用するために、最初のエントリーのIDをコピーします。
+
+1. `Charlie_GET_ById` をチャーリーエントリーのIDをパラメータとして実行する。
 
    ```bash
-   ./Charlie_GET_ById.sh [charlie-entry-id]
+   ./Charlie_GET_ById.sh [charlieId]
    ```
 
-   これは、ネストされたフィールドを使用してエントリに問い合わせ、関連するオブジェクトの3つのレベルすべてについてスキーマを返します。
+   このGETリクエストは、 `nestedFields` と `nestedFieldsDepth` パラメータを持つ `o/c/charlies` エンドポイントを呼び出す。
+
+   ```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Charlie_GET_ById.sh
+      :language: bash
+   ```
+
+   `nestedFields`: クエリに含めるリレーションシップを指定します (`ableToBaker,bakerToCharlie`)。
+
+   `nestedFieldsDepth`: 含めるエントリーの深さを決定する (`2`)。
+
+   このコマンドは、3つのレベルの関連オブジェクト（すなわち、Charlie、Baker、Able）をすべて返す。
 
    ```json
    {
+     ...
+     "externalReferenceCode" : "charlie-one",
+     "id" : 47524,
+     ...
      "r_bakerToCharlie_c_baker" : {
        ...
-       "id" : 41975,
+       "externalReferenceCode" : "baker-one",
+       "id" : 47518,
        ...
        "r_ableToBaker_c_able" : {
          ...
-         "id" : 41969,
+         "externalReferenceCode" : "able-one",
+         "id" : 47512,
          ...
          "name" : "Able 1"
        },
+       "bakerToCharlie" : [ {
+         ...
+         "externalReferenceCode" : "charlie-one",
+         "id" : 47524,
+         ...
+         "r_bakerToCharlie_c_bakerERC" : "baker-one",
+         "bakerToCharlieERC" : "baker-one",
+         "name" : "Charlie 1",
+         "r_bakerToCharlie_c_bakerId" : 47518
+       }, {
+         ...
+         "externalReferenceCode" : "charlie-two",
+         "id" : 47526,
+         ...
+         "r_bakerToCharlie_c_bakerERC" : "baker-one",
+         "bakerToCharlieERC" : "baker-one",
+         "name" : "Charlie 2",
+         "r_bakerToCharlie_c_bakerId" : 47518
+       }, {
+         ...
+         "externalReferenceCode" : "charlie-three",
+         "id" : 47528,
+         ...
+         "r_bakerToCharlie_c_bakerERC" : "baker-one",
+         "bakerToCharlieERC" : "baker-one",
+         "name" : "Charlie 3",
+         "r_bakerToCharlie_c_bakerId" : 47518
+       } ],
        "name" : "Baker 1",
-       "r_ableToBaker_c_ableId" : 41969
+       "ableToBaker" : {
+         ...
+         "externalReferenceCode" : "able-one",
+         "id" : 47512,
+         ...
+         "name" : "Able 1"
+       },
+       "r_ableToBaker_c_ableId" : 47512,
+       "r_ableToBaker_c_ableERC" : "able-one"
+     },
+     "r_bakerToCharlie_c_bakerERC" : "baker-one",
+     "bakerToCharlie" : {
+       ...
+       "externalReferenceCode" : "baker-one",
+       "id" : 47518,
+       ...
+       "r_ableToBaker_c_able" : {
+         ...
+         "externalReferenceCode" : "able-one",
+         "id" : 47512,
+         ...
+         "name" : "Able 1"
+       },
+       "bakerToCharlie" : [ {
+         ...
+         "externalReferenceCode" : "charlie-one",
+         "id" : 47524,
+         ...
+         "r_bakerToCharlie_c_bakerERC" : "baker-one",
+         "bakerToCharlieERC" : "baker-one",
+         "name" : "Charlie 1",
+         "r_bakerToCharlie_c_bakerId" : 47518
+       }, {
+         ...
+         "externalReferenceCode" : "charlie-two",
+         "id" : 47526,
+         ...
+         "r_bakerToCharlie_c_bakerERC" : "baker-one",
+         "bakerToCharlieERC" : "baker-one",
+         "name" : "Charlie 2",
+         "r_bakerToCharlie_c_bakerId" : 47518
+       }, {
+         ...
+         "externalReferenceCode" : "charlie-three",
+         "id" : 47528,
+         ...
+         "r_bakerToCharlie_c_bakerERC" : "baker-one",
+         "bakerToCharlieERC" : "baker-one",
+         "name" : "Charlie 3",
+         "r_bakerToCharlie_c_bakerId" : 47518
+       } ],
+       "name" : "Baker 1",
+       "ableToBaker" : {
+         ...
+         "externalReferenceCode" : "able-one",
+         "id" : 47512,
+         ...
+         "name" : "Able 1"
+       },
+       "r_ableToBaker_c_ableId" : 47512,
+       "r_ableToBaker_c_ableERC" : "able-one"
      },
      "name" : "Charlie 1",
-     "r_bakerToCharlie_c_bakerId" : 41975
+     "r_bakerToCharlie_c_bakerId" : 47518
    }
    ```
 
-## GETスクリプトを調べる
+1. これらのERCで `Charlie_PUT_CharlieToAble_ByExternalReferenceCode` を実行する。
+
+   ```bash
+   ./Charlie_PUT_CharlieToAble_ByExternalReferenceCode.sh charlie-one charlie-two charlie-three able-one
+   ```
+
+   これは、 `charlieToAble` のリレーションシップを使用して、3つのチャーリーエントリーをすべて、指定された `able-one` エントリーと直接リレーションします。
+
+1. Able エントリーの ERC で `Able_GET_ByExternalReferenceCode` を実行する。
+
+   ```bash
+   ./Able_GET_ByExternalReferenceCode.sh able-one
+   ```
+
+   このGETリクエストは、 `o/c/ables` エンドポイントを、 `nestedFields` パラメータで呼び出す。
+
+   ```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Able_GET_ByExternalReferenceCode.sh
+      :language: bash
+   ```
+
+   `nestedFields`: クエリに含めるリレーションシップを決定します (`charlieToAble`)。
+
+   このコマンドは、 `able-one` の詳細を、関連する3つのCharlieエントリーのすべての詳細とともに返す。
+
+   ```json
+   {
+     ...
+     "externalReferenceCode" : "able-one",
+     "id" : 47512,
+     ...
+     "charlieToAble" : [ {
+       ...
+       "externalReferenceCode" : "charlie-one",
+       "id" : 47524,
+       ...
+       "r_bakerToCharlie_c_bakerERC" : "baker-one",
+       "bakerToCharlieERC" : "baker-one",
+       "name" : "Charlie 1",
+       "r_bakerToCharlie_c_bakerId" : 47518
+     }, {
+       ...
+       "externalReferenceCode" : "charlie-two",
+       "id" : 47526,
+       ...
+       "r_bakerToCharlie_c_bakerERC" : "baker-one",
+       "bakerToCharlieERC" : "baker-one",
+       "name" : "Charlie 2",
+       "r_bakerToCharlie_c_bakerId" : 47518
+     }, {
+       ...
+       "externalReferenceCode" : "charlie-three",
+       "id" : 47528,
+       ...
+       "r_bakerToCharlie_c_bakerERC" : "baker-one",
+       "bakerToCharlieERC" : "baker-one",
+       "name" : "Charlie 3",
+       "r_bakerToCharlie_c_bakerId" : 47518
+     } ],
+     "name" : "Able 1"
+   }
+   ```
+
+## `Charlie_GET_ById.sh`
 
 ```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Charlie_GET_ById.sh
    :language: bash
 ```
 
-提供されたGETメソッドは、`nestedFields` と `nestedFieldsDepth`パラメーターを持つURLを呼び出します。
+## `Able_GET_ByExternalReferenceCode.sh`
 
-`nestedFields`: クエリーに含まれるエントリーの種類を決定します(例： `ableToBaker,bakerToCharlie`）。
-
-`nestedFieldsDepth`：取り込みたいエントリーの深さを決定します。0〜5の間で設定可能です。
+```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Able_GET_ByExternalReferenceCode.sh
+   :language: bash
+```
 
 ## 関連トピック
 

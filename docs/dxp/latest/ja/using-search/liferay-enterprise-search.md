@@ -1,10 +1,10 @@
 ---
 toc:
-- ./liferay-enterprise-search/activating-liferay-enterprise-search.md
-- ./liferay-enterprise-search/cross-cluster-replication.md
-- ./liferay-enterprise-search/learning-to-rank.md
-- ./liferay-enterprise-search/monitoring-elasticsearch.md
-- ./liferay-enterprise-search/search-experiences.md
+  - ./liferay-enterprise-search/activating-liferay-enterprise-search.md
+  - ./liferay-enterprise-search/cross-cluster-replication.md
+  - ./liferay-enterprise-search/learning-to-rank.md
+  - ./liferay-enterprise-search/monitoring-elasticsearch.md
+  - ./liferay-enterprise-search/search-experiences.md
 ---
 # Liferay Enterprise Search
 
@@ -23,7 +23,7 @@ Liferay Enterprise Search (LES) のサブスクリプションでは、Liferay D
 - [Liferay Enterprise Searchを有効にする](liferay-enterprise-search/activating-liferay-enterprise-search.md)
 
 ```{note}
-LESをご利用のお客様には、Liferayより [プラチナElasticsearchライセンス](https://www.elastic.co/subscriptions) が提供されます。 サブスクリプションからライセンス受領まで時間がかかる場合がありますが、その間に [30日間トライアル](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/start-trial.html) を有効にして作業することが可能です。  
+LESをご利用のお客様には、Liferayより [プラチナElasticsearchライセンス](https://www.elastic.co/subscriptions) が提供されます。 サブスクリプションからライセンス受領まで時間がかかる場合がありますが、その間に [30日間トライアル](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial.html) を有効にして作業することが可能です。  
 ```
 
 以下のようなLESの各機能について、詳細なインストール方法と使用方法が記事に掲載されています。

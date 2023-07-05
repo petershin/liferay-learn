@@ -88,7 +88,6 @@ Liferay CE 7.3.1 GA2 および Liferay DXP 7.2 SP3+ の時点で、サイトロ�
 
 ![アセットライブラリメニューの［People］ &rarr; ［メンバーシップ］セクションで、アセットライブラリのロールを割り当てます。](./assigning-users-to-roles/images/03.png)
 
-
 <!--
 ## Account Roles
 

@@ -29,9 +29,13 @@ Elasticsearchは、ほとんどのオペレーティングシステムのデフ�
 sysctl -w vm.max_map_count=262144
 ```
 
+### 互換性ヘッダー
+
+Elasticsearch 8では、LiferayとElasticsearchの間にファイアウォールやプロキシがある場合、Liferayが各リクエストで設定する互換性のあるHTTPヘッダーがネットワークトラフィックで許可され、保存されることを確認してください。 詳しくは [Elasticsearch's Requesting REST API Compatibility](https://www.elastic.co/guide/en/elasticsearch/reference/current/rest-api-compatibility.html#request-rest-api-compatibility) をご覧ください。
+
 ## Elasticsearchのインストール
 
-1. Elasticsearch アーカイブを [Elastic 社のウェブサイト](https://www.elastic.co) からダウンロードします。
+1. Elasticsearch アーカイブを [Elastic のウェブサイト](https://www.elastic.co) からダウンロードする。
 
     ```{important}
     [お使いのLiferayのバージョンと互換性のある](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors) 最新のElasticsearchアーカイブをダウンロードしてください。
@@ -73,14 +77,13 @@ Elasticsearch サーバーとの通信の認証と暗号化については、 [E
 cluster.name: LiferayElasticsearchCluster
 
 discovery.type: single-node
-discovery.seed_hosts:
-  - es-node1:9300
 http.port: 9200
 network.host: es-node1
 node.name: es-node1
 transport.port: 9300
 
-# Additional security settings 
+# Add security settings below
+xpack.security.enabled: false
 ```
 
 `LiferayElasticsearchCluster`と呼ばれるこのクラスターには、`es-node1`と呼ばれるノードが1つあります。
@@ -110,7 +113,8 @@ network.host: es-node3
 node.name: es-node3
 transport.port: 9302
 
-# Add security settings here
+# Add security settings below
+xpack.security.enabled: false
 ```
 
 ```{tip}
@@ -118,11 +122,11 @@ transport.port: 9302
 
 関連するElasticsearchのドキュメントです。
 
-- [Elasticsearchの重要な設定](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/important-settings.html)
+- [Elasticsearchの重要な設定](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/important-settings.html)
 
-- [Elasticsearchのセキュリティ設定](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html)
+- [Elasticsearchのセキュリティ設定](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html)
 
-- [ブートストラップチェック、開発モードと本番モード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html)
+- [ブートストラップチェック、開発モードと本番モード](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/bootstrap-checks.html)
 ```
 
 ```{important}
@@ -139,7 +143,7 @@ transport.port: 9302
 
 ### 本番環境モードで単一サーバーのブートストラップチェックを実施する
 
-Elasticsearch [ブートストラップチェック](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/bootstrap-checks.html) では、起動時に構成を検査し、構成が欠落しているか疑わしい場合は警告をログに記録します。 本番環境では、構成ミスの際に起動を停止するようにブートストラップチェックを設定する必要があります。
+Elasticsearch [ブートストラップチェック](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/bootstrap-checks.html) では、起動時に構成を検査し、構成が欠落しているか疑わしい場合は警告をログに記録します。 本番環境では、構成ミスの際に起動を停止するようにブートストラップチェックを設定する必要があります。
 
 シングルノードクラスターでブートストラップチェックを実施するには、次のプロパティをノードの`［Elasticsearch Home］/config/jvm.options`ファイルの最後に追加します。
 
@@ -155,9 +159,15 @@ Elasticsearch [ブートストラップチェック](https://www.elastic.co/guid
 ./elasticsearch
 ```
 
+```{tip}
+ログに「Elasticsearch exited unexpectedly」というERRORメッセージが表示され、Elasticsearchが起動できない場合は、ヒープサイズを増やしてください。 テスト中に `config/jvm.options` ファイルを開き、`-Xms4g` と `-Xmx4g` の設定例のコメントを解除することができる。 本番では、そのファイルの指示に従って、これらのパラメータを適切に設定してください。
+
+詳しくは [Elasticsearchインストールのトラブルシューティング](./troubleshooting-elasticsearch-installation.md) を参照してください。
+```
+
 Elasticが起動したら、ステータスメッセージに下記のようなトランスポートアドレスが記載されます。
 
-```sh
+```log
 [2019-04-01T16:55:50,127][INFO ][o.e.t.TransportService   ] [HfkqdKv] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
 ```
 

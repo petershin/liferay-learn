@@ -27,7 +27,7 @@ Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](..
 
 **検索オプション** : これは特殊なケースで、このウィジェットを構成することで、ページスコープでの動作を定義します。 ［検索オプション］ウィジェットをページに追加し、「検索ページ」に2つのブーリアンを定義します。
 
-* 空の検索を許可する。デフォルトでは、キーワードを入力しなかった場合、検索結果は表示されません。 これを有効にすると、検索バーにキーワードが入力されていない場合、 **すべての** の結果が返されるようになります。
+* 空の検索を許可する：デフォルトでは、キーワードを入力しなかった場合、検索結果は表示されません。 これを有効にすると、検索バーにキーワードが入力されていない場合、 **すべての** の結果が返されるようになります。
 * 基本的なファセット選択。デフォルトでは、ファセット数はファセットを選択するたびに再計算されます。 これを有効にすると、ファセットリカウンティングがオフになります。
 
 **検索候補** ：より良いクエリやスペルチェックのクエリを提案します。 詳しくは、 [サジェスチョン・コンフィギュレーション・リファレンス](./search-pages-and-widgets/search-results/enabling-search-suggestions.md#suggestions-configuration-reference) を参照してください。
@@ -38,7 +38,7 @@ Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](..
 
 **ソート** : インデックス内の特定の `キーワード` フィールドの値に基づいて、ユーザーが検索結果を並べ替えることができます。 例えば、「タイトル」フィールドのアルファベット順に結果を表示します。 デフォルトの順序は、検索エンジンの 「**関連性**」 の計算によって決定されます。 詳しくは、 [検索結果の並べ替え](./search-pages-and-widgets/search-results/sorting-search-results.md) をご覧ください。
 
-**低レベルの検索オプション：* ***会社インデックス** 以外のインデックスを対象とした検索に参加するように検索ウィジェットを設定します。 会社インデックスはLiferay DXPアセットがデータのインデックスを作成する場所なので、多くのインストールではこのウィジェットは必要ありません。 詳しくは、 [低レベル検索オプションを理解する](./search-pages-and-widgets/search-results/understanding-low-level-search-options.md) をご覧ください。
+**低レベルの検索オプション：****会社インデックス** 以外のインデックスを対象とした検索に参加するように検索ウィジェットを設定します。 会社インデックスはLiferay DXPアセットがデータのインデックスを作成する場所なので、多くのインストールではこのウィジェットは必要ありません。 詳しくは、 [低レベル検索オプションを理解する](./search-pages-and-widgets/search-results/understanding-low-level-search-options.md) をご覧ください。
 
 **類似した検索結果：** ページに表示されているアセットに類似した検索結果を表示します。 詳細は、 [類似結果](./search-pages-and-widgets/similar-results.md) を参照してください。
 
@@ -90,11 +90,11 @@ Liferayのデフォルトテーマのように、検索先のページがテー�
 
 ### カテゴリファセットフィールド
 
-{bdg-secondary}`7.4 U47+とGA47+`
+{bdg-secondary}`7.4 U47+およびGA47+`
 
 **設定ファイル：** `com.liferay.portal.search.configuration.CategoryFacetConfiguration.config`となっています。
 
-Category Facet Fieldの項目には、1つの設定が含まれています。Category Facet Field（カテゴリーファセットフィールド）」です。 この設定は、Category Facetで集計を作成する際に使用するインデックス付きフィールドを指定します。 デフォルト値は、 `assetCategoryIds`です。 代わりに、 `assetVocabularyCategoryIds` を使用して、Category Facetウィジェットに表示する語彙とカテゴリを選択できるようにする必要があります。 詳しくは、 [Category Facet のドキュメント](./search-pages-and-widgets/search-facets/category-facet.md)をご覧ください。
+カテゴリーファセットフィールドのエントリーには、カテゴリーファセットフィールドという1つの設定が含まれています。 この設定は、Category Facetで集計を作成する際に使用するインデックス付きフィールドを指定します。 デフォルト値は、 `assetCategoryIds`です。 代わりに、`assetVocabularyCategoryIds`を使用して、カテゴリーファセットウィジェットに表示するボキャブラリとカテゴリーを選択できるようにする必要があります。 詳しくは、[Category Facet documentation](./search-pages-and-widgets/search-facets/category-facet.md)をご覧ください。
 
 ### デフォルト・キーワードクエリ
 
@@ -128,7 +128,7 @@ Category Facet Fieldの項目には、1つの設定が含まれています。Ca
 
 インデックスライターヘルパーエントリには、1つのエントリが含まれています。
 
-**`indexCommitImmediately`** ： **true**(デフォルト)の場合、書き込みリクエストのたびにサーチエンジンがインデックスリーダーを更新し、トランザクションをディスクに流す可能性があります。 これは、検索エンジンのパフォーマンスに悪影響を与える可能性があります。 デフォルトの動作は、個々のアセットへのインデックス書き込み（例：blog の追加、blog の更新）については直ちにコミットしますが、一括したインデックス書き込み操作（例：すべてのユーザーのインデックス化、すべてのフォームエントリのインデックス化）については、すべてのエントリが検索エンジンに送信されるまでコミットを遅らせます。 この設定をfalseにすると、個々のインデックス操作の動作が変化し、Asset Publisherなどのアプリケーションで、新しく追加されたコンテンツを表示する際にレスポンスが遅れることがあります。 詳しくは、 [Elasticsearchのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/near-real-time.html) をご覧ください。
+**`indexCommitImmediately`** ： **true**(デフォルト)の場合、書き込みリクエストのたびにサーチエンジンがインデックスリーダーを更新し、トランザクションをディスクに流す可能性があります。 これは、検索エンジンのパフォーマンスに悪影響を与える可能性があります。 デフォルトの動作は、個々のアセットへのインデックス書き込み（例：blog の追加、blog の更新）については直ちにコミットしますが、一括したインデックス書き込み操作（例：すべてのユーザーのインデックス化、すべてのフォームエントリのインデックス化）については、すべてのエントリが検索エンジンに送信されるまでコミットを遅らせます。 この設定をfalseにすると、個々のインデックス操作の動作が変化し、Asset Publisherなどのアプリケーションで、新しく追加されたコンテンツを表示する際にレスポンスが遅れることがあります。 詳しくは、 [Elasticsearchのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/near-real-time.html) をご覧ください。
 
 ### インデクサー登録
 
@@ -152,7 +152,7 @@ Category Facet Fieldの項目には、1つの設定が含まれています。Ca
 
 **`fieldNamePatterns`** ：ここで設定したパターンに一致する名前のフィールドは、分析されていないキーワードフィールドとして扱われます。 スコアリングされたフルテキストクエリの代わりに、スコアリングされていないワイルドカードクエリによってマッチングが行われます。 これはリソースを消費する操作で、インデックスが大きくなると検索エンジンのパフォーマンスが低下します。 部分文字列の照合では、 [ngram tokenizer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) に頼る方が、通常は良い結果が得られます。
 
-### 再インデクス
+### インデックスの再構築
 
 **設定ファイル：** `com.liferay.portal.search.configuration.config`です。
 
@@ -178,7 +178,7 @@ Category Facet Fieldの項目には、1つの設定が含まれています。Ca
 
 ### タイトルフィールドクエリビルダー
 
-**設定ファイル：** `com.liferay.portal.search.configuration.TitleFieldQueryBuilderConfiguration.config`
+**設定ファイル：** `com.liferay.portal.search.configuration.config`TitleFieldQueryBuilderConfiguration.config
 
 ドキュメントの「タイトル」フィールドにマッチした場合の検索の応答方法を設定します。
 
@@ -192,7 +192,7 @@ Category Facet Fieldの項目には、1つの設定が含まれています。Ca
 
 ### Elasticsearchのモニタリング
 
-**設定ファイル：** `com.liferay.portal.search.elasticsearch.monitoring.web.internal.configuration.config`。
+**設定ファイル：** `com.liferay.portal.search.elasticsearch.monitoring.web.internal.configuration.config`
 
 Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay Enterprise Search Monitoringモジュールを導入している場合、Elasticsearch Monitoringの構成を使用できます。 これらの設定プロパティについては、専用の [Elasticsearchをモニタリング](./liferay-enterprise-search/monitoring-elasticsearch.md) のドキュメントで説明しています。
 
@@ -200,7 +200,7 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 **設定ファイル：** `com.liferay.portal.search.elasticsearch7.config.ElasticsearchConfiguration.config`
 
-LiferayとElasticsearchの接続を設定する 7. これらのプロパティの詳細については、 [コネクターを構成する](./installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch.md#configuring-the-connector) を参照してください。
+LiferayとElasticsearch 7の接続を設定します。 これらのプロパティの詳細については、 [コネクターを構成する](./installing-and-upgrading-a-search-engine/elasticsearch/connecting-to-elasticsearch.md#configuring-the-connector) を参照してください。
 
 ### Elasticsearch接続
 
@@ -234,14 +234,14 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索**］ には、接続、アクションをインデックスする、フィールドマッピングの3つの管理用UIがあります。
 
-詳しくは、専用の [検索管理とチューニング](./search-administration-and-tuning.md) のドキュメントをご覧ください。
+詳しくは、専用の[検索管理とチューニング](./search-administration-and-tuning.md)のドキュメントをご覧ください。
 
-#### つながり
+#### 接続
 
 検索エンジンへの接続情報が表示されます。 例えば、
 
 * 検索エンジンベンダー：Elasticsearch
-* クライアントバージョン：7.16.3
+* クライアントのバージョン：7.16.3
 * 有効な接続：1
 * 稼働状態：緑
 * 接続ID：\ **REMOTE\**

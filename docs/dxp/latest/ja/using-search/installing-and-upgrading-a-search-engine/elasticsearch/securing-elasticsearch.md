@@ -18,12 +18,12 @@ xpack.security.enabled: true
 
 ## X-Packユーザーの設定
 
-X-Packを使用するシステムでは、次の [組み込みX-Packユーザー](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/built-in-users.html) が重要です。
+X-Packを使用するシステムでは、次の [組み込みX-Packユーザー](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/built-in-users.html) が重要です。
 
 * `kibana_system`
 * `elastic`
 
-Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-passwords.html) を使用してパスワードを設定します。
+Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/setup-passwords.html) を使用してパスワードを設定します。
 
 ```bash
 ./bin/elasticsearch-setup-passwords interactive
@@ -34,7 +34,7 @@ Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elas
 ```
 
 ```{note}
-内蔵ユーザーのパスワードを更新するには、KibanaのUIまたは [Change Password API](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-api-change-password.html) を使用します。
+内蔵ユーザーのパスワードを更新するには、KibanaのUIまたは [Change Password API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-api-change-password.html) を使用します。
 ```
 
 ## Elasticsearch通信の暗号化
@@ -43,9 +43,9 @@ Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elas
 
 ### ノード証明書の生成
 
-ノードごとに [証明書を生成する](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/configuring-tls.html#node-certificates) か、Liferayなどのすべてのノードとクライアントで使用する証明書を生成します。 または、認証局を使用してノード証明書を取得します。
+ノードごとに [証明書を生成する](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/configuring-tls.html#node-certificates) か、Liferayなどのすべてのノードとクライアントで使用する証明書を生成します。 または、認証局を使用してノード証明書を取得します。
 
-1. X-Packの [`certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/certutil.html) コマンドを使用してX-Pack認証局を生成します。
+1. X-Packの [`certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/certutil.html) コマンドを使用してX-Pack認証局を生成します。
 
     ```bash
     ./bin/elasticsearch-certutil ca --ca-dn CN=elastic-ca
@@ -82,7 +82,7 @@ Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elas
    ```
 
    ```{note}
-   Liferay 7.3+では、 [Elasticsearch 7コネクター設定](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) で使用できるキーストアタイプは以下のもののみです。
+   Liferay 7.3+ では、 [Elasticsearch connector configuration](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) で以下の keystore タイプのみが使用できます。
    ```
 
    複数のホストで動作する証明書を生成するには（たとえば、すべてのElasticsearchおよびLiferayサーバーで同じ証明書を使用するには）、DNS名とIPアドレスを列挙する際にカンマ区切りのリストを使用します。
@@ -94,7 +94,7 @@ Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elas
    `elasticsearch-certutil cert` コマンドは、 `elastic-nodes.p12` という別のファイルを生成します（他の名前でかまいません）。
 
    ```{note}
-   `certutil`コマンドのデフォルトでは、証明書の生成に*PKCS#12*形式を使用しており、これはElastic Stack 7.xで動作します。 Kibana 6.xはPKCS#12証明書では動作しないため、Liferay 7.2とKibana 6.xを*Liferay Enterprise Search Monitoring*で使用している場合は、`--pem`オプション（証明書を*PEM*形式で生成）が重要になります。 それぞれのケースのPEMコマンドは2つのZIPファイルを生成します。`ca.crt` と `ca.key`、`elastic-nodes.crt` と `elastic-nodes.key`の2つのZIPファイルが生成されます。 アーカイブの内容を解凍して、*[Elasticsearch Home]/config/certs* フォルダに入れてください。
+   `certutil`コマンドのデフォルトでは、証明書の生成に*PKCS#12*形式を使用しており、これはElastic Stack 7.xで動作します。 Kibana 6.xはPKCS#12証明書では動作しないため、Liferay 7.2とKibana 6.xを*Liferay Enterprise Search Monitoring*で使用している場合は、`--pem`オプション（証明書を*PEM*形式で生成）が重要になります。 それぞれのケースのPEMコマンドは2つのZIPファイルを生成します。ca.crt`と`ca.key`、`elastic-nodes.crt`と`elastic-nodes.key`の2つのZIPファイルが生成されます。 アーカイブの内容を解凍して、*[Elasticsearch Home]/config/certs*フォルダに入れてください。
    ```
 
 1. `elastic-nodes.p12`を`［Elasticsearch Home］/config/certs`フォルダに移動します。
@@ -121,7 +121,7 @@ Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elas
 
 ### Elasticsearch用のTLSを設定する
 
-`［Elasticsearch Home］/config/elasticsearch.yml`ファイルを介して各ノードで [TLSを有効](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/configuring-tls.html) にします。
+`［Elasticsearch Home］/config/elasticsearch.yml`ファイルを介して各ノードで [TLSを有効](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/configuring-tls.html) にします。
 
 1. ノード間通信のために`elasticsearch.yml`で次の設定を使用してトランスポート層TLSを有効にします。
 
@@ -169,7 +169,7 @@ Elasticsearchサーバーで、 [`setup-passwords`コマンド](https://www.elas
 
 ### Elasticsearchのセキュリティ設定の例
 
-Elasticsearch 7の完全な設定は次のとおりです（`elasticsearch.yml`。Elasticsearch 6.5.x以降にも同様に適用されます）。
+以下はElasticsearchの完全な設定です (`elasticsearch.yml`; Elasticsearch 6.5.x+にも同様に適用されます)：
 
 ```yaml
 cluster.name: LiferayElasticsearchCluster
@@ -214,7 +214,7 @@ TLSの設定に加えて、`authenticationEnabled`/`requiresAuthentication`を`t
 [Elasticsearchのインストール](./installing-elasticsearch.md) と [Elasticsearchへの接続](./connecting-to-elasticsearch.md) では、セキュリティを有効にし設定する方法を紹介していますので、 7.3 適用対象のセキュリティ設定についてはそちらを参照してください。
 ```
 
-Liferay 7.3+にバンドルされているLiferay Connector to Elasticsearch 7には、X-Pack Securityのサポートが含まれています。 Elasticsearch 7コネクタの設定で使用できるサポートされているキーストアタイプの一覧については、 [Java 11セキュリティのドキュメンテーション](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) を参照してください。
+Liferay 7.3+にバンドルされているElasticsearchコネクタはX-Pack Securityをサポートしています。 Elasticsearch コネクタの設定で使用できるサポートされているキーストアタイプのリストについては、 [Java 11 セキュリティドキュメント](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) を参照してください。
 
 以下のようなファイルを作成します。
 
@@ -239,7 +239,7 @@ truststoreType="pkcs12"
 
 ### Liferay 7.2でElasticsearchへの安全な接続を設定する
 
-Elasticsearch 7へのすべてのLiferayコネクタには、X-Pack Securityのサポートが含まれています。
+Elasticsearch 7以上へのLiferayコネクタはすべてX-Pack Securityをサポートしています。
 
 ```{note}
 Liferay 7.2とElasticsearch 6.xを使用していて、Liferay Enterprise Searchのサブスクリプションを持っている場合、 [download](https://customer.liferay.com/downloads/-/download/liferay-enterprise-search-for-liferay-dxp-7-2) 「Liferay Enterprise Search Security」アプリケーションを使用します。 LPKGファイルを`[Liferay Home]/deploy`フォルダにコピーしてインストールします。
@@ -282,9 +282,9 @@ transportSSLVerificationMode="certificate"
 transportSSLEnabled="true"
 ```
 
-### Liferay 7.3および7.4でのElasticsearch 7コネクタセキュリティの設定
+### Liferay 7.3と7.4におけるElasticsearchコネクタのセキュリティ設定
 
-7.3+におけるElasticsearch 7コネクタのセキュリティ設定の完全な一覧は次のとおりです（括弧内はデフォルト値）。
+以下は、7.3+ の Elasticsearch コネクタのセキュリティ設定の完全なリストです（カッコ内はデフォルト値）：
 
 `authenticationEnabled`（**true**）：ユーザー名とパスワードを使用したElasticsearchへの認証を有効または無効にします。
 
@@ -330,27 +330,27 @@ Liferay 7.2のX-Pack Security構成の設定の完全な一覧は次のとおり
 
 `sslTruststorePassword`：パスワードをトラストストアに設定します。
 
-## TLS プロトコルと暗号スイートの設定
+## TLSプロトコルと暗号スイートの設定
 
-LiferayのJVMにTLSプロパティを設定し、ElasticsearchとLiferayの接続を暗号化する際に使用するTLSプロトコルバージョンと暗号スイートに対して制御をかけることができます。 これらのプロパティは、Tomcatサーバーの `setenv.sh`で設定することができます。
+LiferayのJVMでTLSのプロパティを設定することで、ElasticsearchとLiferayの接続を暗号化する際に使用するTLSプロトコルのバージョンと暗号スイートを制御することができます。 これらのプロパティは、Tomcatサーバーの `setenv.sh`で設定することができる：
 
 ```properties
 CATALINA_OPTS="$CATALINA_OPTS -Djdk.tls.client.protocols=TLSv1.2
 CATALINA_OPTS="$CATALINA_OPTS -Djdk.tls.client.cipherSuites=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_DHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_DHE_RSA_WITH_AES_128_GCM_SHA256"
 ```
 
-なお、これらの値は一例である。
+なお、これらは一例である。
 
-これらの設定は、対応するXPackの設定と連動して動作します。
+これらの設定は、対応するXPackの設定と連動して機能する。
 
-Liferay 7.3 または 7.4 で REST Client 接続を設定している場合、 [HTTP レイヤー設定](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html#http-tls-ssl-settings) のように `elasticsearch.yml`を使用します。
+Liferay 7.3または7.4でREST Client接続を設定している場合は、 `elasticsearch.yml`にあるような [HTTPレイヤー設定](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html#http-tls-ssl-settings) を使用してください：
 
 ```yaml
 xpack.security.http.ssl.supported_protocols: [ "TLSv1.2" ]
 xpack.security.http.ssl.cipher_suites : TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_DHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
 ```
 
-Liferay 7.1 と 7.2 でトランスポートクライアントを設定している場合、 [トランスポート設定](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html#transport-tls-ssl-settings) のように `elaticsearch.yml`を使用します。
+Liferay 7.1と7.2でトランスポートクライアントを設定している場合は、 `elaticsearch.yml`にあるような [トランスポート設定](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html#transport-tls-ssl-settings) を使用してください：
 
 ```yaml
 xpack.security.transport.ssl.supported_protocols: [ "TLSv1.2" ]

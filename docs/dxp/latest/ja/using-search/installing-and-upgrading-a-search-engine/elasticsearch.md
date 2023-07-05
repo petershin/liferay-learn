@@ -1,15 +1,15 @@
 ---
 toc:
-- ./elasticsearch/getting-started-with-elasticsearch.md
-- ./elasticsearch/installing-elasticsearch.md
-- ./elasticsearch/connecting-to-elasticsearch.md
-- ./elasticsearch/securing-elasticsearch.md
-- ./elasticsearch/exercise-run-liferay-and-elasticsearch-using-docker.md
-- ./elasticsearch/troubleshooting-elasticsearch-installation.md
-- ./elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md
-- ./elasticsearch/upgrading-elasticsearch.md
-- ./elasticsearch/elasticsearch-connector-configuration-reference.md
-- ./elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
+  - ./elasticsearch/getting-started-with-elasticsearch.md
+  - ./elasticsearch/installing-elasticsearch.md
+  - ./elasticsearch/connecting-to-elasticsearch.md
+  - ./elasticsearch/securing-elasticsearch.md
+  - ./elasticsearch/exercise-run-liferay-and-elasticsearch-using-docker.md
+  - ./elasticsearch/troubleshooting-elasticsearch-installation.md
+  - ./elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md
+  - ./elasticsearch/upgrading-elasticsearch.md
+  - ./elasticsearch/elasticsearch-connector-configuration-reference.md
+  - ./elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
 ---
 # Elasticsearch
 
@@ -54,6 +54,7 @@ Liferay 7.2および7.3では、Elasticsearch 7をサポートし、認証およ
 - [Elasticsearchのアップグレード](elasticsearch/upgrading-elasticsearch.md)
 - [検索インフラストラクチャのアップグレード](elasticsearch/upgrading-elasticsearch/upgrading-search-infrastructure.md)
 - [Elasticsearchのバックアップ](elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md)
+- [Elasticsearch 8へのアップグレード](elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-8.md)
 - [Elasticsearch 7へのアップグレード](elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)
 
 ## 保護
@@ -62,5 +63,5 @@ Liferay 7.2および7.3では、Elasticsearch 7をサポートし、認証およ
 
 ## 構成
 
-- [Liferay Elasticsearch コネクタの高度な設定](elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md)
+- [Liferay Elasticsearchコネクターの詳細設定](elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md)
 - [Elasticsearchコネクターの設定リファレンス](elasticsearch/elasticsearch-connector-configuration-reference.md)

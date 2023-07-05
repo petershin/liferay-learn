@@ -1,6 +1,6 @@
 # Elasticsearchへの接続
 
-[Elasticsearchを設定](./installing-elasticsearch.md)した後、Liferay Connector to Elasticsearchを使用してLiferayをElasticsearchに接続する必要があります。 接続の手順は、設定するコネクタによって異なります。 [Available Liferay Elasticsearch Connectors](#available-liferay-elasticsearch-connectors) を参照してください。
+[Elasticsearch](./installing-elasticsearch.md)をセットアップした後、Liferay Connector to Elasticsearch を使って Liferay に接続します。 接続の手順は、設定するコネクターによって異なります。 [利用可能なLiferay Elasticsearchコネクター](#available-liferay-elasticsearch-connectors) を参照してください。
 
 ここでは、インストールや設定手順の主な違いについて説明します。
 
@@ -12,9 +12,15 @@ Liferay 7.2を使用している場合は、 [Liferay 7.2：Elasticsearch 7コ�
 
 ## コネクタの設定
 
-Elasticsearch 7コネクタは、`com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`という名前の設定ファイルを介してLiferay 7.3+用に設定されます。
+Liferay 7.3+ 用の Elasticsearch コネクタは設定ファイルで設定できます：
 
-ファイルで構成を指定したら、`［Liferay Home］/osgi/configs/`フォルダに配置してデプロイできます。
+```
+com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config
+```
+
+この同じファイルを使用して、Liferay 7.3および7.4とElasticsearch 7または8を接続することができます。 ご利用可能なElasticsearchのバージョンは、 [Search Engine Compatibility Matrix](https://help.liferay.com/hc/ja/articles/360016511651) をご覧ください。
+
+デプロイするには、 `[Liferay Home]/osgi/configs/`に配置します。
 
 Dockerの場合、
 
@@ -28,7 +34,7 @@ Liferay 7.3+コネクタのシンプル設定では、本番環境モード（`p
 
 1. 次の設定ファイルを作成します。
 
-    ```bash
+    ```
     com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config
     ```
 
@@ -59,7 +65,7 @@ Liferay 7.3+コネクタのシンプル設定では、本番環境モード（`p
 1. `.config`ファイルを`[Liferay Home]/osgi/configs`フォルダに配置します。
 
 ```{tip}
-コネクタには多くの設定項目があります。 それぞれの定義については、[Elasticsearchコネクターの設定](./elasticsearch-connector-configuration-reference.md) を参照してください。 ほとんどの設定は、 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index.html) で利用可能な設定に対応しています。
+コネクタには多くの設定項目があります。 それぞれの定義については、[Elasticsearchコネクターの設定](./elasticsearch-connector-configuration-reference.md) を参照してください。 ほとんどの設定は、 [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/index.html) で利用可能な設定に対応しています。
 ```
 
 Elasticsearchサーバーを名前で参照するには、各Elasticsearchサーバー名をDNSまたはLiferayサーバーの`/etc/hosts` ファイル内のIPアドレスにマップします。
@@ -107,8 +113,8 @@ Liferay 7.2では、バンドルされているコネクタアプリケーショ
 
    コネクタがElasticsearchのバージョンに対応していることを確認してください。 コネクタアプリケーションが新しいバージョン（7.18.0など）をサポートしている場合でも、コネクタのクライアントライブラリが古いバージョンのElasticsearch（7.17.1など）用である可能性があることに注意してください。 Liferayは、Elasticsearchのマイナーバージョンごとにコネクタをテストし、必要に応じて新しいアップデートコネクタバージョンを作成します。 コネクタの互換性については、 [検索エンジンの互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
 
-   * CE： [Liferay CE Connector to Elasticsearch 7](https://web.liferay.com/en/marketplace/-/mp/application/170642090) です。
-   * DXP： [Liferay Connector to Elasticsearch 7](https://web.liferay.com/en/marketplace/-/mp/application/170390307) です。
+   * CE： [Liferay CE Connector to Elasticsearch 7](https://web.liferay.com/en/marketplace/-/mp/application/170642090)
+   * DXP： [Liferay Connector to Elasticsearch 7](https://web.liferay.com/en/marketplace/-/mp/application/170390307)
 
 1. [LPKGをフォルダに配置してインストール](../../../system-administration/installing-and-managing-apps/installing-apps.md)します。
 
@@ -165,10 +171,10 @@ Liferay 7.3+では、［Workflow Metrics Settings］ウィンドウから[ワー
 1. ［**すべてインデックスを再構築**］ をクリックします。 この操作をシステム内の各仮想インスタンスに対して繰り返します。
 
 ```{note}
-Elasticsearchのインデックスをプライマリデータストレージ（データベースでバックアップされていないデータを保存）として使用している場合、[snapshot and restore approach](./upgrading-elasticsearch/backing-up-elasticsearch.md) を使用して、新しいElasticsearchクラスタにデータを導入することが可能です。 7.2 と 7.3 では、Liferay 独自の Search Tuning index for Result Rankings と Synonyms がプライマリストレージインデックスになります。 7.4では、これらのインデックスはデータベース・テーブルによってバックアップされています。
+Elasticsearchのインデックスをプライマリデータストレージとして使用している場合（データベースによってバックアップされていないデータを保存）、[Elasticsearchのバックアップ](./upgrading-elasticsearch/backing-up-elasticsearch.md) を使用してそのデータを新しいElasticsearchクラスターに取り込むことが可能です。 7.2と7.3では、Liferay独自の検索の調整インデックス（結果ランキングと同義語用）が、メインのストレージインデックスです。 7.4では、これらのインデックスはデータベーステーブルによってバックアップされています。
 ```
 
-Liferay 7.4 U45+/GA45+ と Liferay DXP 7.3 U14+ では、拡張ログが有効になり、システムインデックスとカンパニーインデックスの再インデックスの開始と終了を知ることができるようになりました。 例えば、
+Liferay 7.4 U45+/GA45+とLiferay DXP 7.3 U14+では、拡張ログが有効になっているため、システムインデックスとカンパニーインデックスの再インデックスの開始と終了を知ることができます。 例えば、
 
 ```log
 2023-01-09 20:44:17.730 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:57] Start reindexing company 0
@@ -177,7 +183,7 @@ Liferay 7.4 U45+/GA45+ と Liferay DXP 7.3 U14+ では、拡張ログが有効�
 2023-01-09 20:45:00.986 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:76] Finished reindexing company 20097
 ```
 
-これで、LiferayはリモートのElasticsearch 7インストールにコンテンツのインデックスを作成します。
+これでLiferayはリモートElasticsearchにコンテンツをインデックスするようになりました。
 
 ## 利用可能なLiferay Elasticsearchコネクタ
 
@@ -187,10 +193,10 @@ Liferay 7.4 U45+/GA45+ と Liferay DXP 7.3 U14+ では、拡張ログが有効�
 |:------------------------ |:------------------------------------------------ |:----------------------------------------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------- |:----------------------------------------------------------------------------------------- |:--------------------------------- |
 | Liferay 7.4、全種類          | Liferay Connector to  Elasticsearch 7            | バンドル                                                                                                                                                  | [HTTP](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-overview.html) | &#10004;                                                                                  | Sidecar / Remote (Production)\* |
 | CE 7.3 GA4+、DXP 7.3 GA1+ | Liferay (CE) Connector to Elasticsearch 7        | バンドル                                                                                                                                                  | [HTTP](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.x/java-rest-overview.html) | &#10004;                                                                                  | Sidecar / Remote (Production)\* |
-| CE 7.2、DXP 7.2           | Liferay Connector (CE) to Elasticsearch 6        | バンドル                                                                                                                                                  | [トランスポート](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html) | &#10004;\ **\**(requires [LES](https://www.liferay.com/products/dxp/enterprise-search) ) | エンベデッド/リモート                       |
+| CE 7.2、DXP 7.2           | Liferay Connector (CE) to Elasticsearch 6        | バンドル                                                                                                                                                  | [トランスポート](https://www.elastic.co/guide/en/elasticsearch/client/java-api/6.x/transport-client.html) | &#10004;\*\* (requires [LES](https://www.liferay.com/products/dxp/enterprise-search) ) | エンベデッド/リモート                       |
 | CE 7.2、DXP 7.2           | Liferay Connector (CE) to Elasticsearch 7 (v3.x) | マーケットプレイス [CE](https://web.liferay.com/marketplace/-/mp/application/170642090) , [DXP](https://web.liferay.com/marketplace/-/mp/application/170390307) | [トランスポート](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html) | &#10004;                                                                                  | エンベデッド/リモート                       |
 
-\* コネクタ設定の** **動作モード**( `operationMode`) 設定は非推奨になり、 **本番モードが有効**(`productionModeEnabled`)に置き換えられました。
+\* コネクタ設定の **動作モード** ( `operationMode`) 設定は非推奨になり、 **本番モードが有効**(`productionModeEnabled`)に置き換えられました。
 
 \*\* [Liferay Enterprise Search Security](https://web.liferay.com/marketplace/-/mp/application/106163963) アプリケーションを通して。
 
@@ -198,12 +204,12 @@ Liferay 7.4 U45+/GA45+ と Liferay DXP 7.3 U14+ では、拡張ログが有効�
 
 ## 次のステップ
 
-LiferayがElasticsearchに接続されたので、Elasticsearchの使用を開始できます。 本番環境では、LiferayサーバーとElasticsearchサーバー間の通信を保護する必要があります。 詳しくは、 [Elasticsearchの保護](./securing-elasticsearch.md) を参照してください。
+LiferayがElasticsearchに接続されたので、Elasticsearchの使用を開始できます。 本番環境では、LiferayサーバーとElasticsearchサーバー間の通信を保護する必要があります。 詳しくは、[Elasticsearchの保護](./securing-elasticsearch.md)を参照してください。
 
 ## 関連トピック
 
 * [Elasticsearchの保護](./securing-elasticsearch.md)
-* [Elasticsearch Connector Settings](./elasticsearch-connector-configuration-reference.md)
+* [Elasticsearchコネクタの設定](./elasticsearch-connector-configuration-reference.md)
 * [サイドカーまたはEmbedded モードのElasticsearchの使用](./using-the-sidecar-or-embedded-elasticsearch.md)
 * [Liferay エンタープライズサーチ](../../liferay-enterprise-search.md)
 * [ページの検索](../../search-pages-and-widgets/working-with-search-pages/search-pages.md)

@@ -1,15 +1,15 @@
-# Option API の基本
+# オプションAPIの基本
 
-オプションテンプレート [](../../product-management/creating-and-managing-products/products/using-product-options.md) は、アプリケーションメニューやREST APIで管理することができます。 [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) サービスを呼び出して、オプションを作成・管理します。
+[オプションテンプレート](../../product-management/creating-and-managing-products/products/using-product-options.md)は、アプリケーションメニューやREST APIで管理することができます。 [headless-commerce-admin-catalog](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-commerce-admin-catalog/v1.0/openapi.json) サービスを呼び出して、オプションを作成・管理します。
 
 ## オプションの追加
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Liferayが起動したら、
+Liferay が起動したら
 
-1. [Option API Basics](./liferay-d3g5.zip) をダウンロードして解凍する。
+1. Option API Basics](./liferay-d3g5.zip)をダウンロードして解凍します。
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-d3g5.zip -O
@@ -19,9 +19,9 @@ Liferayが起動したら、
    unzip liferay-d3g5.zip
    ```
 
-1. オプションはインスタンスにスコープされ、各オプションは一意の `キー`を指定する必要があります。
+1. オプションはインスタンスにスコープされ、各オプションは一意の `key`を指定する必要があります。
 
-   cURLスクリプトを使用して、新しいオプションを追加してください。 コマンドラインで、 `curl`フォルダに移動します。 `Option_POST_ToInstance.sh` スクリプトを実行する。
+   cURLスクリプトを使用して、新しいオプションを追加してください。 コマンドラインで、 `curl`フォルダに移動します。 `Option_POST_ToInstance.sh` スクリプトを実行します。
 
    ```bash
    ./Option_POST_ToInstance.sh
@@ -59,9 +59,9 @@ Liferayが起動したら、
    }
    ```
 
-1. オプションの追加を確認するには、 **Global Menu**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Options** に移動してください。 新しいオプションが表示されます。
+1. オプションの追加を確認するには、 **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コマース**］ &rarr; ［**Options**］ に移動してください。 新しいオプションが表示されます。
 
-   ![新しいオプションが追加されたことを確認する。](./option-api-basics/images/01.png)
+   ![新規オプションが追加されたことを確認します。](./option-api-basics/images/01.png)
 
 1. または、Javaクライアントを使用してRESTサービスを呼び出します。 `java`フォルダに移動し、ソースファイルをコンパイルします。
 
@@ -75,12 +75,12 @@ Liferayが起動したら、
    java -classpath .:* Option_POST_ToInstance
    ```
 
-![オプションを作成する際に、以下のオプションフィールドのタイプを使用することができます。](./option-api-basics/images/02.png)
+![オプションを作成する際に、以下のオプションフィールドタイプを使用することができます。](./option-api-basics/images/02.png)
 
 | 項目タイプ    | API値                               |
 |:-------- |:---------------------------------- |
 | テキストボックス | `"fieldType": "text"`              |
-| 一覧から選ぶ   | `"fieldType": "select"`            |
+| プルダウン    | `"fieldType": "select"`            |
 | ラジオボタン   | `"fieldType": "radio"`             |
 | 複数選択     | `"fieldType": "checkbox_multiple"` |
 | 日付       | `"fieldType": "date"`              |
@@ -89,7 +89,7 @@ Liferayが起動したら、
 
 ## cURLコマンドの検証
 
-`Option_POST_ToInstance.sh` スクリプトは、cURL コマンドで REST サービスを呼び出します。
+`Option_POST_ToInstance.sh`スクリプトは、cURLコマンドでRESTサービスを呼び出します。
 
 ```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_POST_ToInstance.sh
     :language: bash
@@ -115,7 +115,7 @@ Liferayが起動したら、
 
 `Option_POST_ToInstance.java` クラスは、 `OptionResource` サービスを呼び出してオプションを追加します。
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_POST_ToInstance.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_POST_ToInstance.java
    :dedent: 1
    :language: java
    :lines: 11-31
@@ -123,13 +123,13 @@ Liferayが起動したら、
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行(省略形）                                                                 | 説明                                                   |
-|:---------------------------------------------------------------------- |:---------------------------------------------------- |
-| `OptionResource.Builder builder = ...`                                 | `OptionResource` サービスインスタンスを生成するための `Builder` を取得する。 |
-| `OptionResource optionResource = builder.authentication(...).build();` | 基本認証を使用し、 `OptionResource` サービスインスタンスを生成します。         |
-| `optionResource.postOption(...);`                                      | `optionResource.postOption` メソッドを呼び出し、postにデータを渡します。 |
+| 行（省略形）                                                                 | 説明                                                    |
+|:---------------------------------------------------------------------- |:----------------------------------------------------- |
+| `OptionResource.Builder builder = ...`                                 | `OptionResource` サービスインスタンスを生成するための `Builder` を取得します。 |
+| `OptionResource optionResource = builder.authentication(...).build();` | 基本認証を使用し、`OptionResource`サービスインスタンスを生成します。            |
+| `optionResource.postOption(...);`                                      | `optionResource.postOption`メソッドを呼び出し、投稿するデータを渡します。    |
 
-このプロジェクトには、依存関係として`com.liferay.headless.commerce.admin.catalog.client.jar` ファイルが含まれています。 すべてのRESTアプリケーションのクライアントJAR依存情報は、インストール先のAPIエクスプローラーで`/o/api` (例: <http://localhost:8080/o/api>) から確認できます。
+このプロジェクトには、依存関係として `com.liferay.headless.commerce.admin.catalog.client.jar` ファイルが含まれています。 すべてのRESTアプリケーションのクライアント JAR 依存情報は、インストール先のAPIエクスプローラーで `/o/api` (例: <http://localhost:8080/o/api>) から確認できます。
 
 ```{note}
 `main`メソッドのコメントでは、クラスの実行を実演しています。
@@ -147,21 +147,21 @@ Liferayが起動したら、
 
 cURLやJavaのコマンドで、Liferayインスタンスの全オプションをリストアップします。
 
-### オプション_GET_FromInstance.sh
+### Options_GET_FromInstance.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./Options_GET_FromInstance.sh
 ```
 
-コード:
+コード：
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Options_GET_FromInstance.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Options_GET_FromInstance.sh
    :language: bash
 ```
 
-### オプション_GET_FromInstance.java
+### Options_GET_FromInstance.java
 
 コマンド：
 
@@ -171,37 +171,37 @@ java -classpath .:* Options_GET_FromInstance
 
 コード：
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Options_GET_FromInstance.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Options_GET_FromInstance.java
    :dedent: 1
    :language: java
    :lines: 11-22
 ```
 
-インスタンスの `Option` オブジェクトはJSONでフォーマットされています。
+インスタンスの`Option`オブジェクトはJSONでフォーマットされています。
 
-### フィルタリング、ページ分割、検索、並べ替えのオプション
+### オプションの絞り込み、ページネーション、検索、並び替え
 
-このAPIは、オプションのフィルタリング、ページ分割、検索、並べ替えのためのパラメータも受け付けます。 詳しくは、 [`getOptionsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java#L43-#L46) メソッドをご覧ください。 クエリでは、以下の `Option` フィールドを使用して、結果のフィルタリング、検索、およびソートを行うことができます：
+このAPIでは、オプションの絞り込み、ページ分割、検索、並べ替えを行うためのパラメーターも許可します。 詳しくは、 [`getOptionsPage`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/resource/v1_0/OptionResource.java#L43-#L46) メソッドをご覧ください。 クエリでは、以下の`Option`フィールドを使用して、結果の絞り込み、検索、および並べ替えを行うことができます。
 
-* フィールドタイプ
-* キー
+* fieldType
+* key
 * name
 
-| フィルタークエリ                | 説明                       |
-|:----------------------- |:------------------------ |
-| `name eq 'Able'`        | オプション名はAbleと等しくなければならない。 |
-| `fieldType eq 'select'` | オプションの種類は必ず選択すること。       |
+| フィルタークエリ                | 説明                        |
+|:----------------------- |:------------------------- |
+| `name eq 'Able'`        | オプション名はAbleと同じでなければなりません。 |
+| `fieldType eq 'select'` | オプションタイプを必ず選択しなければなりません。  |
 
-| ソートクエリ      | 説明          |
-|:----------- |:----------- |
-| `key:desc`  | キーで降順に並べます。 |
-| `name:desc` | 名前の降順で並べます。 |
+| ソートクエリ      | 説明            |
+|:----------- |:------------- |
+| `key:desc`  | キーで降順に並べ替えます。 |
+| `name:desc` | 名前で降順に並べ替えます。 |
 
 詳しくは、 [APIクエリパラメータ](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/api-query-parameters.html) をご参照ください。
 
 ## オプションの取得
 
-cURL または Java `get` コマンドで特定のオプションを取得します。 `1234` をオプションのIDに置き換えてください。
+cURLまたはJava `get`コマンドで特定のオプションを取得します。 `1234`をオプションのIDに置き換えます。
 
 ```{tip}
 `Options_GET_FromInstance.[java|sh]`を使用して、すべてのオプションのリストを取得し、特に欲しいオプションの `id` をメモします。
@@ -217,7 +217,7 @@ cURL または Java `get` コマンドで特定のオプションを取得しま
 
 コード：
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Option_GET_ById.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_GET_ById.sh
    :language: bash
 ```
 
@@ -231,7 +231,7 @@ java -classpath .:* -DoptionId=1234 Option_GET_ById
 
 コード：
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_GET_ById.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_GET_ById.java
    :dedent: 1
    :language: java
    :lines: 8-18
@@ -239,9 +239,9 @@ java -classpath .:* -DoptionId=1234 Option_GET_ById
 
 `Option` のフィールドはJSONで記載されています。
 
-## パッチアオプション
+## オプションにパッチを適用する
 
-cURL と Java `patch` コマンドで、既存のオプションを更新します。 `1234` をオプションのIDに置き換えてください。
+cURLとJava `patch` コマンドで既存のオプションを更新します。 `1234`をオプションのIDに置き換えます。
 
 ### Option_PATCH_ById.sh
 
@@ -253,7 +253,7 @@ cURL と Java `patch` コマンドで、既存のオプションを更新しま�
 
 コード：
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Option_PATCH_ById.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_PATCH_ById.sh
    :language: bash
 ```
 
@@ -267,7 +267,7 @@ java -classpath .:* -DoptionId=1234 Option_PATCH_ById
 
 コード：
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_PATCH_ById.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_PATCH_ById.java
    :dedent: 1
    :language: java
    :lines: 11-31
@@ -275,7 +275,7 @@ java -classpath .:* -DoptionId=1234 Option_PATCH_ById
 
 ## オプションの削除
 
-cURL と Java `delete` コマンドで既存のオプションを削除します。 `1234` をオプションのIDに置き換えてください。
+cURL と Java `delete` コマンドで既存のオプションを削除します。 `1234`をオプションのIDに置き換えます。
 
 ### Option_DELETE_ById.sh
 
@@ -287,7 +287,7 @@ cURL と Java `delete` コマンドで既存のオプションを削除します
 
 コード：
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/curl/Option_DELETE_ById.sh
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/curl/Option_DELETE_ById.sh
    :language: bash
 ```
 
@@ -301,10 +301,10 @@ java -classpath .:* -DoptionId=1234 Option_DELETE_ById
 
 コード：
 
-```{literalinclude} ./options-api-basics/resources/liferay-d3g5.zip/java/Option_DELETE_ById.java
+```{literalinclude} ./option-api-basics/resources/liferay-d3g5.zip/java/Option_DELETE_ById.java
    :dedent: 1
    :language: java
    :lines: 8-17
 ```
 
-[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) では、 `Option` のサービスとスキーマを表示し、各サービスをテストするためのインターフェイスを備えています。
+[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) は、`Option`のサービスやスキーマを表示し、各サービスをテストするためのインターフェースを備えています。

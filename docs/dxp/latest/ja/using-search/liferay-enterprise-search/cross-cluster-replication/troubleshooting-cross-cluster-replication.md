@@ -1,8 +1,6 @@
 # クラスター横断レプリケーションのトラブルシューティング
 
-ここでは、CCRのセットアップ中に発生する既知の一般的な落とし穴と、一般的なトラブルシューティング手法について説明します。 さらに詳しいトラブルシューティングについては、 [Elastic社のCCRドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/ccr-overview.html) または [Elastic社のフォーラム](https://discuss.elastic.co/tag/ccr-cross-cluster-replication) を参照してください。
-
-<a name="investigating-index-replication-issues" />
+ここでは、CCRのセットアップ中に発生する既知の一般的な落とし穴と、一般的なトラブルシューティング手法について説明します。 さらに詳しいトラブルシューティングについては、 [Elastic社のCCRドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/ccr-overview.html) または [Elastic社のフォーラム](https://discuss.elastic.co/tag/ccr-cross-cluster-replication) を参照してください。
 
 ## インデックスレプリケーションの問題の調査
 
@@ -10,15 +8,11 @@
 
 レプリケーションの問題を診断するために、 `com.liferay.portal.search.elasticsearch7.internal.cr.CrossClusterReplicationHelperImpl`に対するINFOログレベルを追加します。 ログレベルは、コントロールパネル &rarr; サーバー管理 &rarr; ログレベルで追加されます。
 
-<a name="inspecting-connection-requestresponse" />
-
 ## 接続要求/応答の検査
 
 クラスター横断レプリケーションを有効にするには、Elasticsearchクラスターへの複数の接続を設定する必要があります。
 
 接続の問題の診断を支援するために、`com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager`に対するINFOログレベルを追加します。 ログレベルは、コントロールパネル &rarr; サーバー管理 &rarr; ログレベルで追加されます。
-
-<a name="exceptions-during-reindex-retentionleasenotfoundexception-and-indexnotfoundexception" />
 
 ## 再インデックス中の例外：`RetentionLeaseNotFoundException`および`IndexNotFoundException`
 
@@ -43,8 +37,6 @@ org.elasticsearch.index.seqno.RetentionLeaseNotFoundException: retention lease w
 
 > フォロワーは、シャードの履歴保持リースで、リーダーの操作の履歴に、そのフォロワーが現在どこにいるのかをマークすることができます。 リーダーのシャードは、そのマーカーより下の操作はマージしても安全だが、そのマーカーより上の操作は、フォロワーがそれらをレプリケートする機会が得られるまで保持する必要があることを認識します。 これらのマーカーによって、フォロワーが一時的にオフラインになっても、リーダーはまだレプリケートされていない操作を保持することができます。 この履歴を保持するにはリーダー側に追加のストレージが必要なため、これらのマーカーは限られた期間のみ有効であり、その後マーカーは期限切れになり、リーダーのシャードは自由に履歴をマージできるようになります。 この期間の長さは、フォロワーがオフラインになったときに保持する追加ストレージの容量や、リーダーからリブートストラップしなくてはならなくなるまでのフォロワーのオフライン期間をどの程度許容するかによって調整できます。
 
-<a name="elasticsearchsecurityexception-when-setting-up-ccr" />
-
 ## `ElasticsearchSecurityException` CCRを設定する場合
 
 CCRの構成時に、次のエラーが発生する可能性があります。
@@ -53,9 +45,7 @@ CCRの構成時に、次のエラーが発生する可能性があります。
 ElasticsearchSecurityException security_exception current license is non-compliant for [ccr]
 ```
 
-[CCRには](https://www.elastic.co/subscriptions#scalability-&-resiliency) Platinum Elasticsearchライセンスが必要です。 LESサブスクライバーとして、Liferayから提供されたライセンスでCCRにアクセスできます。 ローカルでテストしている場合は、各クラスターで [トライアル](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/start-trial.html) を開始できます。
-
-<a name="local-dxp-node-doesnt-read-from-follower-elasticsearch-cluster" />
+[CCRには](https://www.elastic.co/subscriptions#scalability-&-resiliency) Platinum Elasticsearchライセンスが必要です。 LESサブスクライバーとして、Liferayから提供されたライセンスでCCRにアクセスできます。 ローカルでテストしている場合は、各クラスターで [トライアル](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial.html) を開始できます。
 
 ## ローカルDXPノードがフォロワーElasticsearchクラスターから読み取りを行わない
 
@@ -66,7 +56,7 @@ localhost:9080,ccr
 localhost:9180,ccr
 ```
 
-DXPノードを`localhost`にバインドしていない場合でも、内部クラスタリングコードはそれを使用している各ノードを識別し続けるため、このプロパティで`localhost`をホスト名にする必要があります。 `localhost`以外のホスト名を使用して内部で（CCR構成を含む）DXPノードを識別する場合は、各DXPノードで次の [ポータルプロパティ](./../../../installation-and-upgrades/reference/portal-properties.md) を設定する必要があります。
+DXPノードを`localhost`にバインドしていない場合でも、内部クラスタリングコードはそれを使用している各ノードを識別し続けるため、このプロパティで`localhost`をホスト名にする必要があります。 `localhost`以外のホスト名を使用して内部で（CCR構成を含む）DXPノードを識別する場合は、各DXPノードで次の[ポータルプロパティ](./../../../installation-and-upgrades/reference/portal-properties.md)を設定する必要があります。
 
 ```properties
 portal.instance.protocol=http
@@ -80,11 +70,9 @@ myhostname:9080,ccr
 myhostname:9180,ccr
 ```
 
-<a name="follower-elasticsearch-cluster-with-red-status" />
-
 ## ステータスが赤のフォロワーElasticsearchクラスター
 
-CCR接続を正常にセットアップし、ローカルDXPノードでCCRを有効にすると、フォロワークラスターが [赤のクラスターヘルスステータス](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/cluster-health.html) になる場合があります。 これにより、フォロワーのElasticsearchノードのコンソールで次のようなエラーが発生する可能性があります。
+CCR接続を正常にセットアップし、ローカルDXPノードでCCRを有効にすると、フォロワークラスターが [赤のクラスターヘルスステータス](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/cluster-health.html) になる場合があります。 これにより、フォロワーのElasticsearchノードのコンソールで次のようなエラーが発生する可能性があります。
 
 ```
 [2021-01-08T15:49:25,405][INFO ][o.e.x.c.a.ShardFollowTasksExecutor] [es-follower-node1] [liferay-0][0] Starting to track leader shard [liferay-0][0]
@@ -110,8 +98,6 @@ Caused by: org.elasticsearch.index.snapshots.IndexShardRestoreFailedException: f
 1. リーダーDXPノードから完全なインデックスの再構築を実行します。
 
 1. CCR設定を再度有効にするには、ローカルDXPノードの［システム設定］ &rarr; ［検索］ &rarr; ［クラスター横断レプリケーション］に進みます。 ［**Read from Local Clusters**］ の選択を解除し、 ［**アップデート**］ をクリックしてモジュールを無効にしてから、 ［**Read from Local Clusters**］ を選択し、もう一度 ［**アップデート**］ をクリックして再度有効にします。
-
-<a name="liferay-72-after-deploying-the-ccr-lpkg-and-the-elasticsearchconnectionconfiguration-file-search-is-broken" />
 
 ## Liferay 7.2：CCR LPKGとElasticsearchConnectionConfigurationファイルをデプロイした後、検索ができない
 

@@ -1,6 +1,6 @@
 # Elasticsearch接続のトラブルシューティング
 
-LiferayとElasticsearchの接続を設定する際に遭遇する可能性のある接続上の問題と、それらの問題に対する最も一般的な解決策を以下に列挙します。 [Elasticsearchのトラブルシューティングを参照してください。よくある問題](./troubleshooting-elasticsearch-common-issues.md) を参照してください。
+LiferayとElasticsearchの接続を設定する際に遭遇する可能性のある接続上の問題と、それらの問題に対する最も一般的な解決策を以下に列挙します。 その他の可能性については、[Elasticsearchのトラブルシューティング：よくある問題](./troubleshooting-elasticsearch-common-issues.md)を参照してください。
 
 ## LiferayとElasticsearchのホスト設定の不一致
 
@@ -35,7 +35,7 @@ java.lang.RuntimeException: org.elasticsearch.client.transport.NoNodeAvailableEx
     at com.liferay.portal.search.elasticsearch7.internal.search.engine.adapter.cluster.HealthClusterRequestExecutorImpl.execute(HealthClusterRequestExecutorImpl.java:46)
 ```
 
-Liferay の Elasticsearch コネクタは Elasticsearch ホスト `es-node1-prod` に接続しようとしていますが、利用可能なノードが見つかりません。 Elasticsearchのログで、以下のような行を探します。
+LiferayのElasticsearchコネクターはElasticsearchホスト`es-node1-prod`に接続しようとしていますが、利用可能なノードが見つかりません。 Elasticsearchのログで、以下のような行を探します。
 
 ```
 [2021-06-04T17:31:22,472][INFO ][o.e.t.TransportService   ] [es-node1] publish_address {es-node1/192.168.0.17:9300}, bound_addresses {192.168.0.17:9300}
@@ -43,24 +43,24 @@ Liferay の Elasticsearch コネクタは Elasticsearch ホスト `es-node1-prod
 [2021-06-04T17:31:23,080][INFO ][o.e.h.AbstractHttpServerTransport] [es-node1] publish_address {es-node1/192.168.0.17:9200}, bound_addresses {192.168.0.17:9200}
 ```
 
-与えられたノードの実際のアドレスが表示される。 この例では、Transportアドレスは `es-node1/192.168.0.17:9300` 、HTTPアドレスは `es-node1/192.168.0.17:9200`。
+指定されたノードの実際のアドレスが出力されます。 この例では、トランスポートアドレスは`es-node1/192.168.0.17:9300` 、HTTPアドレスは `es-node1/192.168.0.17:9200`です。
 
-Liferay 7.3 と 7.4 での正しいコネクタ構成は次のとおりです。
+Liferay 7.3と7.4での正しいコネクター構成は次のとおりです。
 
 ```properties
 networkHostAddresses=["http:es-node1:9200"]
 # The value ["es-node1:9200"] also works
 ```
 
-Liferay 7.0-7.2 での正しいコネクタ構成は以下の通りです。
+Liferay 7.0-7.2での正しいコネクター構成は以下の通りです。
 
 ```properties
 transportAddresses=["es-node1:9300"]
 ```
 
-## TLS/SSLは有効ですが、Liferayは暗号化されていないチャネルで通信しようとしています。
+## TLS/SSLは有効だが、Liferayは暗号化されていないチャンネルで通信しようとしている。
 
-Liferay 7.3 と 7.4 では、このログメッセージが表示されます。
+Liferay 7.3と7.4では、このログメッセージが表示されます。
 
 ```
 Caused by: org.apache.http.ConnectionClosedException: Connection is closed
@@ -88,31 +88,31 @@ Caused by: org.apache.http.ConnectionClosedException: Connection is closed
     ... 1 more
 ```
 
-Liferay 7.0-7.2 では、このエラーはより一般的な `org.elasticsearch.client.transport.NoNodeAvailableException`として表示されます。
+Liferay 7.0-7.2では、このエラーはより一般的な `org.elasticsearch.client.transport.NoNodeAvailableException`として表示されます。
 
 Elasticsearchのログには、関連するエラーが表示されます。
 
-Liferay 7.3 と 7.4 では、 [Elasticsearch 7](https://help.liferay.com/hc/ja/articles/360016511651#Liferay-DXP-7.4) のログが出力されます。
+Liferay 7.3 と 7.4 では、 [Elasticsearch](https://help.liferay.com/hc/ja/articles/360016511651#Liferay-DXP-7.4) のログに次のように表示されます。
 
 ```
 [2021-06-04T18:09:11,925][WARN ][o.e.x.s.t.n.SecurityNetty4HttpServerTransport] [es-node1] received plaintext http traffic on an https channel, closing connection Netty4HttpChannel{localAddress=0.0.0.0/0.0.0.0:9200, remoteAddress=/192.168.0.17:41104}
 ```
 
-Liferay 7.0-7.2 では、 [Elasticsearch 6/7](https://help.liferay.com/hc/ja/articles/360016511651#Liferay-DXP-7.2-Elasticsearch) のログが出力されます。
+Liferay 7.0-7.2では、 [Elasticsearch 6/7](https://help.liferay.com/hc/ja/articles/360016511651#Liferay-DXP-7.2-Elasticsearch) のログが以下を出力します。
 
 ```
 [2021-06-04T18:11:13,045][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] received plaintext traffic on an encrypted channel, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:34346}
 ```
 
-Elasticsearchの警告は、サーバーが暗号化されたチャンネルでプレーンテキストのトラフィックを受信したことを示しています。
+Elasticsearchの警告は、暗号化されたチャンネルでサーバーが平文のトラフィックを受信したことを示しています。
 
-`elasticsearch.yml` ファイルに `xpack.security.*` プロパティがトランスポート層および/またはhttp層に設定されている場合（ `xpack.security.enabled: true`も参照）、ElasticsearchはX-Pack Securityを有効にしています。 したがって、Liferay のコネクタもそれに応じて設定する必要があります。
+`elasticsearch.yml`ファイルに`xpack.security.*`プロパティがトランスポート層および/またはhttp層に設定されている場合（ `xpack.security.enabled: true`も参照）、ElasticsearchはX-Pack Securityを有効にしています。 したがって、Liferayのコネクターもそれに応じて設定する必要があります。
 
-正しいコネクタの構成については、 [Elasticsearchの保護](../securing-elasticsearch.md) を参照してください。
+正しいコネクターの構成については、 [Elasticsearchの保護](../securing-elasticsearch.md)を参照してください。
 
-## Elasticsearchのホスト名が証明書のDNS名と一致しない
+## Elasticsearchのホスト名と証明書のDNS名の不一致
 
-Liferay 7.3 と 7.4 では、このログメッセージが表示されます。
+Liferay 7.3と7.4では、このログメッセージが表示されます。
 
 ```
 Caused by: javax.net.ssl.SSLPeerUnverifiedException: Host name 'es-node1' does not match the certificate subject provided by the peer (CN=elastic-nodes)
@@ -130,7 +130,7 @@ Caused by: javax.net.ssl.SSLPeerUnverifiedException: Host name 'es-node1' does n
     ... 1 more
 ```
 
-Liferay 7.0-7.2 では、このエラーは `org.elasticsearch.client.transport.NoNodeAvailableException として表示されます。NoNodeAvailableException` と `java.security.cert.CertificateException.NoNodeAvailableException:No subject alternative DNS name matching found`.
+Liferay 7.0-7.2では、このエラーは`org.elasticsearch.client.transport.NoNodeAvailableException: NoNodeAvailableException`と`java.security.cert.CertificateException: No subject alternative DNS name matching found`として表示されます。
 
 ```
 [2021-06-08T17:09:24,557][WARN ][o.e.c.s.DiagnosticTrustManager] [
@@ -139,22 +139,22 @@ java.security.cert.CertificateException: No subject alternative DNS name matchin
 ```
 
 ```{note}
-Liferay 7.0-7.2 では、`XPackSecurityConfiguration.config`ファイルで `transportSSLVerificationMode="full"` が設定されているときのみ、この現象が発生します。 クライアント（つまりLiferayのコネクタ）は、Elasticsearchノードの証明書が信頼できるCAによって署名されていることを確認するだけでなく、ホスト名/IPアドレスの検証も行っています。
+Liferay 7.0-7.2では、`XPackSecurityConfiguration.config`ファイルで `transportSSLVerificationMode="full"` が設定されているときのみ、この現象が発生します。 クライアント（つまりLiferayのコネクター）は、Elasticsearchノードの証明書が信頼できるCAによって署名されていることを確認するだけでなく、ホスト名/IPアドレスの検証も行っています。
 ```
 
-関連して、Liferay 7.0-7.2で表示されるElasticsearch 6/7のエラーもあります。
+Liferay 7.0-7.2で表示される関連したElasticsearch 6/7のエラーがあります。
 
 ```
 [2021-06-08T17:06:03,540][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:40486}
 ```
 
-これらのエラーは、SSLハンドシェイク中にElasticsearchノードのホストが、クライアント（つまりLiferayのコネクタ）に提示する証明書に見つからないことを知らせるものです。 ホスト名は証明書にサブジェクト代替名として表示されなければなりません。この場合、宣言されたホスト名 `es-node1` は証明書の名前と一致しません（おそらく証明書では `es-node-1` となっているのでしょう）。
+これらのエラーは、Elasticsearchノードのホストが、SSLハンドシェイク中にクライアント（つまりLiferayのコネクター）に提示する証明書に見つからないことを知らせるものです。 ホスト名は証明書にサブジェクト代替名として表示されなければなりません。この場合、宣言されたホスト名 `es-node1` は証明書の名前と一致しません（おそらく証明書では `es-node-1`である可能性があります）。
 
-サーバーの証明書を開きます。 `Subject Alternative Names` 」カテゴリのDNS名/IPアドレスにサーバーホスト名がない場合、証明書を更新してください。
+サーバーの証明書を開きます。 `Subject Alternative Names`カテゴリのDNS名/IPアドレスにサーバーホスト名がない場合、証明書を更新してください。
 
-## X-Packのセキュリティ認証情報が正しくないため、認証に失敗する。
+## X-Packのセキュリティ認証情報が正しくないことによる認証の失敗
 
-Liferay 7.3 と 7.4 で、コネクタの設定で設定されたパスワードが Elasticsearch のパスワードと一致しない場合、ログに例外が表示されるようになりました。
+Liferay 7.3と7.4で、コネクターの構成で設定されたパスワードがElasticsearchのパスワードと一致しない場合、例外がログに表示されます。
 
 ```
 Caused by: java.lang.RuntimeException: org.elasticsearch.ElasticsearchStatusException: ElasticsearchStatusException[method [HEAD], host [https://es-node-1:9200], URI [/liferay-20102-workflow-metrics-processes?ignore_throttled=false&include_type_name=true&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true], status line [HTTP/1.1 401 Unauthorized]]; nested: ResponseException[method [HEAD], host [https://es-node-1:9200], URI [/liferay-20102-workflow-metrics-processes?ignore_throttled=false&include_type_name=true&ignore_unavailable=false&expand_wildcards=open&allow_no_indices=true], status line [HTTP/1.1 401 Unauthorized]];
@@ -177,19 +177,19 @@ java.lang.RuntimeException: org.elasticsearch.ElasticsearchStatusException: Elas
     at org.elasticsearch.client.RestHighLevelClient.bulk(RestHighLevelClient.java:533) ~[?:?]
 ```
 
-Liferay 7.0-7.2 では、エラーは `org.elasticsearch.client.transport.NoNodeAvailableException`のように表示されます。
+Liferay 7.0-7.2では、エラーは`org.elasticsearch.client.transport.NoNodeAvailableException`として表示されます。
 
-Elasticsearchに表示されるエラーに対応するものがあります。
+Elasticsearchに表示される対応するエラーがあります。
 
 ```
 [2021-06-04T18:30:29,114][INFO ][o.e.x.s.a.AuthenticationService] [es-node1] Authentication of [elastic] was terminated by realm [reserved] - failed to authenticate user [elastic]
 ```
 
-Liferayでコネクタの設定を開き、ユーザ名とパスワードがElasticsearchのX-Packユーザの資格情報と一致することを確認します。
+Liferayでコネクターの構成を開き、ユーザ名とパスワードがElasticsearchのX-Packユーザーの認証情報と一致することを確認します。
 
-## Liferayでセキュリティが有効になっているが、Elasticsearchで無効になっている。
+## Liferayでセキュリティが有効になっているが、Elasticsearchで無効になっている
 
-Liferay 7.3 と 7.4 では、以下のログメッセージが表示されることがあります。
+Liferay 7.3と7.4では、以下のログメッセージが表示されることがあります。
 
 ```
 Caused by: javax.net.ssl.SSLException: Unrecognized SSL message, plaintext connection?
@@ -211,7 +211,7 @@ Caused by: javax.net.ssl.SSLException: Unrecognized SSL message, plaintext conne
     at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor$Worker.run(AbstractMultiworkerIOReactor.java:591) ~[httpcore-nio-4.4.12.jar:4.4.12]
 ```
 
-Liferay 7.0-7.2 では、エラーは `org.elasticsearch.client.transport.NoNodeAvailableException`と表示されます。
+Liferay 7.0-7.2では、エラーは`org.elasticsearch.client.transport.NoNodeAvailableException`と表示されます。
 
 対応するElasticsearchのエラーがあります。
 
@@ -219,18 +219,18 @@ Liferay 7.0-7.2 では、エラーは `org.elasticsearch.client.transport.NoNode
 [2021-06-07T17:48:31,554][WARN ][o.e.t.TcpTransport       ] [es-node1] SSL/TLS request received but SSL/TLS is not enabled on this node, got (16,3,3,1), [Netty4TcpChannel{localAddress=/192.168.0.17:9300, remoteAddress=/192.168.0.17:40646}], closing connection
 ```
 
-`elasticsearch.yml` を開き、 `xpack.security.enabled` が `false になっていないことを確認する`. [Elasticsearchの保護](../securing-elasticsearch.md) の記事に従って、HTTP層とTransport層が暗号化通信を使用するように設定されていることを確認してください。
+`elasticsearch.yml`を開き、`xpack.security.enabled`が`false`に設定されていないことを確認します。 [「Elasticsearchの保護」](../securing-elasticsearch.md)の記事に従って、HTTP層とトランスポート層が暗号化通信を使用するように設定されていることを確認してください。
 
 ## LiferayとElasticsearchが異なる認証局で署名された証明書を使用している
 
-`*.ssl.verification_mode` の設定が `certificate` or `full` in `elasticsearch.yml`の場合、Liferay 7.3, 7.4 で以下のエラーが表示されることがあるようです。
+`*.ssl.verification_mode`の設定が`certificate`もしくは`elasticsearch.yml`で`full`の場合、Liferay 7.3と7.4で以下のエラーが表示されることがあります。
 
 ```
 Caused by: javax.net.ssl.SSLHandshakeException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
     at sun.security.ssl.Alert.createSSLException(Alert.java:131) ~[?:?]
 ```
 
-Liferay 7.0-7.2 では、 `transportSSLVerificationMode="certificate"` が `XPackSecurityConfiguration.config` ファイルで設定されている場合、このエラーが表示されることがあるようです。 ,
+Liferay 7.0-7.2では、`transportSSLVerificationMode="certificate"`が`XPackSecurityConfiguration.config`ファイルで設定されている場合、次のエラーが表示されることがあります。
 
 ```
 [2021-06-07T18:18:44,579][WARN ][o.e.c.s.DiagnosticTrustManager] [
@@ -238,21 +238,21 @@ ode_name]failed to establish trust with server at [<unknown host>]; the server p
 sun.security.validator.ValidatorException: PKIX path validation failed: java.security.cert.CertPathValidatorException: Path does not chain with any of the trust anchors
 ```
 
-Liferay 7.0-7.2 で TCP 経由でサーバーに接続すると、対応する Elasticsearch のエラーが表示されます。
+Liferay 7.0-7.2でTCP経由でサーバーに接続すると、対応するElasticsearchのエラーが表示されます。
 
 ```
 [2021-06-07T18:19:49,623][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/192.168.0.17:41820}
 ```
 
-スタック内のすべてのノード（Liferay、Elasticsearch、Kibanaなど）が同じ認証局（CA）で署名された証明書を使用しており、そのCAの証明書（公開鍵）がクライアントの環境に存在することを確認してください。 例えば、 `sslTruststorePath` や `sslCertificateAuthoritiesPath` の設定が [Securing Elasticsearch documentation](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2) に従って設定されていることを確認してください。
+スタック内のすべてのノード（Liferay、Elasticsearch、Kibanaなど）が同じ認証局（CA）で署名された証明書を使用しており、そのCAの証明書（公開鍵）がクライアントの環境に存在することを確認してください。 例えば、 `sslTruststorePath`や`sslCertificateAuthoritiesPath`の設定が [「Elasticsearchの保護」の記事](../securing-elasticsearch.md#configure-a-secure-connection-to-elasticsearch-in-liferay-7.2) に従って設定されていることを確認してください。
 
 ```{tip}
-証明書ファイルを開き、「Issuer Name」または「Issued by」の項目を見つけます。 これらのエントリは、発行者 CA に関する情報を保持する。
+証明書ファイルを開き、「Issuer Name」または「Issued by」エントリーを見つけます。 これらのエントリーには、発行者 CA に関する情報が保持されます。
 ```
 
-## Elasticsearch モニタリングおよび X-Pack モニタリングウィジェットは一時的に使用できません。
+## Elasticsearch MonitoringおよびX-Pack Monitoringウィジェットが一時的に使用できない
 
-[Monitoring Elasticsearch](../../../liferay-enterprise-search.md#monitoring-elasticsearch) は、Kibana が HTTPS を使用するように設定することを実演しています。 セットアップ時の証明書の問題により、Liferay 7.3および7.4でこれらのログメッセージが表示されることがあります。
+[Monitoring Elasticsearch](../../../liferay-enterprise-search.md#monitoring-elasticsearch) は、KibanaがHTTPSを使用するように設定する方法を示しています。 セットアップ時の証明書の問題により、Liferay 7.3および7.4でこれらのログメッセージが表示されることがあります。
 
 ```
 2021-06-08 13:54:53.084 ERROR [http-nio-8080-exec-8][MonitoringProxyServlet:107] java.net.ConnectException: Connection refused (Connection refused)
@@ -291,30 +291,30 @@ javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.pro
  error  [13:24:57.089] [error][client][connection] Error: 139942872246080:error:14094416:SSL routines:ssl3_read_bytes:sslv3 alert certificate unknown:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1544:SSL alert number 46
 ```
 
-これらのエラーは、Kibana サーバーが自己署名証明書を持ち、クライアントのトラストストアファイルに CA が存在しないことを示しています（Liferay DXP は、LES モニタリングアプリを通じて、クライアントです）。 JDKの `cacerts` ファイルは、デフォルトのトラストストアです。
+これらのエラーは、Kibanaサーバーが自己署名証明書を持ち、クライアントのトラストストアファイルにCAが存在しないことを示しています（Liferay DXP は、LESモニタリングアプリを介したクライアントです）。 JDKの`cacerts`ファイルは、デフォルトのトラストストアです。
 
-Liferay の Monitoring ポートレットを Kibana の UI へのプロキシとして使用し、自己署名証明書を使用しているため、アプリケーションサーバーのスタートアップ JVM パラメーターで Kibana の証明書を信頼するように設定する必要があります。 2つのアプローチがあり、ここではTomcatで実証しています。
+LiferayのモニタリングポートレットをKibanaのUIのプロキシとして使用していて、自己署名証明書を使用しているため、Kibanaの証明書を信頼するようにアプリケーションサーバーの起動JVMパラメーターを構成する必要があります。 2つのアプローチがあり、ここではTomcatで実証しています。
 
-1. Elasticsearch コネクタのセキュリティ設定に使用したのと同じファイルを使用して、トラストストアのパス、パスワード、タイプをアプリケーションサーバのスタートアップ JVM パラメータに追加してください。 `setenv.sh/bat` ファイルを通して、Tomcat サーバーの `CATALINA_OPTS` にトラストストアとパスのパラメータを追加する。
+1. Elasticsearchコネクターのセキュリティ設定に使用したのと同じファイルを使用して、トラストストアのパス、パスワード、タイプをアプリケーションサーバのスタートアップJVMパラメーターに追加します。 `setenv.sh/bat`ファイルを通して、Tomcat サーバーの`CATALINA_OPTS`にトラストストアとパスのパラメーターを追加します。
 
    ```
    CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/path/to/elastic-nodes.p12 -Djavax.net.ssl.trustStorePassword=liferay -Djavax.net.ssl.trustStoreType=pkcs12"
    ```
 
-1. より良い方法は、デフォルトの `cacerts` ファイルのコピーを作成し、秘密鍵なしで証明書をインポートし、カスタムのトラストストア・ファイルを使用するようにアプリケーション・サーバーを構成することです。
+1. より良い方法は、デフォルトの `cacerts` ファイルのコピーを作成し、秘密鍵なしで証明書をインポートし、カスタムのトラストストアファイルを使用するようにアプリケーションサーバーを構成することです。
 
-   * Liferay JVM からデフォルトの `cacerts` ファイル（JDK 8 では `JAVA_HOME/jre/lib/security` に、JDK 11 では `JAVA_HOME/lib/security` にある）をコピーして、 `cacerts-custom.jks`に名前を変更します。
-   * `openssl` を使って秘密鍵なしで CA の証明書を取り出す（ `.p12` ファイルが 1 つしかない場合 `elastic-stack-ca.p12`のように）。
-   * Java の `keytool`を使って、証明書をカスタム JKS ファイルにインポートします。
+   * Liferay JVMからデフォルトの`cacerts`ファイル（JDK 8では`JAVA_HOME/jre/lib/security` に、JDK 11では `JAVA_HOME/lib/security` にある）をコピーして、 `cacerts-custom.jks`に名前を変更します。
+   * `openssl`を使って秘密鍵なしでCAの証明書を抽出します（`elastic-stack-ca.p12`のような単一の`.p12`ファイルしかない場合 ）。
+   * Javaの `keytool`を使って、証明書をカスタムJKSファイルにインポートします。
    * カスタムのトラストストアを使用するようにTomcatを設定します。
 
       ```
       CATALINA_OPTS="${CATALINA_OPTS} -Djavax.net.ssl.trustStore=/PATH/TO/cacerts-custom.jks -Djavax.net.ssl.trustStorePassword=changeit"
       ```
 
-## JDK 11とElasticsearch 7.11+を使用するとSSL例外が発生する。
+## JDK 11とElasticsearch 7.11+使用時のSSL例外
 
-Liferay DXP が JDK バージョン 11 を使用し、Kibana バージョン 7.11+ と通信するように設定されている場合、Liferay のログに以下のエラーが表示されることがあります。
+Liferay DXPがJDK バージョン11を使用し、Kibanaバージョン 7.11+ と通信するように設定されている場合、Liferay のログに以下のエラーが表示されることがあります。
 
 ```
 12:24:42,480 ERROR [http-nio-8080-exec-10][XPackMonitoringProxyServlet:108] javax.net.ssl.SSLPeerUnverifiedException: peer not authenticated
@@ -336,7 +336,7 @@ javax.net.ssl.SSLException: No PSK available. Unable to resume.
 
 ## IOExceptionデータがオブジェクトIDでない
 
-`.p12` ファイルが、Liferay JDK よりも高いメジャーバージョンの JDK で生成された場合 ( `keytool`を使用)、Liferay のログにこのエラーが表示されることがあります。
+`.p12`ファイルが、Liferay JDKよりも高いメジャーバージョンのJDKで生成された場合 ( `keytool`を使用)、Liferayのログに次のエラーが表示されることがあります。
 
 ```
 09:30:55,298 ERROR [ServerService Thread Pool -- 106][ElasticsearchConnectionManager:93] bundle com.liferay.portal.search.elasticsearch7.impl:5.0.17 (670)[com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionManager(1656)] : The activate method has thrown an exception
@@ -357,17 +357,17 @@ java.lang.RuntimeException: java.io.IOException: parseAlgParameters failed: Obje
 
 例えば、JDK11を使用して証明書を生成し、JDK8でLiferayを実行すると、この例外が発生することがあります。
 
-次のいずれかを行ってください。
+続行するには、次のいずれかを行ってください。
 
-1. 一致するJDKのバージョンを使用して証明書を再作成する。
+1. 一致するJDKのバージョンを使用して証明書を再作成します。
 
-1. 鍵ストアに `PKCS12` の代わりに `JKS` の形式を使用します。
+1. キーストアに`PKCS12`の代わりに`JKS`の形式を使用します。
 
-1. `keytool` で `-Dkeystore.pkcs12.legacy` オプションを使用して、 `keystore.pkcs12.legacy` システムプロパティを設定し、OpenJDK 11/16 の keytool に古いアルゴリズムを使わせるように強制します。
+1. `keytool`で`-Dkeystore.pkcs12.legacy`オプションを使用して、 `keystore.pkcs12.legacy`システムプロパティを設定し、OpenJDK 11/16のkeytoolに古いアルゴリズムを使用させます。
 
 ## ノード証明書の署名に使用されたCA証明書は信頼されていない
 
-Elasticsearchノード間、またはLiferayとElasticsearch間のSSLハンドシェイクでは、ノード証明書に署名するために使用されるCA証明書が信頼されている必要があります。 すべてのノードの `トラストストア` または `キーストア` に証明書が存在することを確認します。 これは、通常、自己署名証明書を使用する場合に問題となります。
+Elasticsearchノード間、またはLiferayとElasticsearch間のSSLハンドシェイクでは、ノード証明書に署名するために使用されるCA証明書が信頼されている必要があります。 すべてのノードの`truststore`または `keystore`に証明書が存在することを確認します。 これは、通常、自己署名証明書を使用する場合に問題となります。
 
 複数ノードのElasticsearchクラスタにおいて、クライアントのElasticsearchノードからリクエストを受けたElasticsearchサーバノードが、以下のような警告メッセージを投げることがあります。
 
@@ -375,7 +375,7 @@ Elasticsearchノード間、またはLiferayとElasticsearch間のSSLハンド�
 [2022-07-15T11:49:39,361][WARN ][o.e.x.c.s.t.n.SecurityNetty4Transport] [es-node1] client did not trust this server's certificate, closing connection Netty4TcpChannel{localAddress=0.0.0.0/0.0.0.0:9300, remoteAddress=/127.0.0.1:44198, profile=default}
 ```
 
-クライアントのElasticsearchノードでは、エラーが `SunCertPathBuilderException`という形で表示されます。
+クライアントのElasticsearchノードでは、エラーが`SunCertPathBuilderException`で表示されます。
 
 ```
 [2022-07-15T11:49:39,354][WARN ][o.e.t.OutboundHandler    ] [es-node2] send message failed [channel: Netty4TcpChannel{localAddress=/127.0.0.1:44198, remoteAddress=es-node1/127.0.0.1:9300, profile=default}]
@@ -384,12 +384,12 @@ javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.pro
     at sun.security.ssl.TransportContext.fatal(TransportContext.java:368) ~[?:?]
 ```
 
-より詳細なテストを行うことで、根本的な原因を確認することができます。各ノードの `elasticsearch.yml`で`xpack.security.transport.ssl.verification_mode: none`を一時的に設定します。エラーが解消され、接続に成功した場合は、クライアントノードのキーストアまたはトラストストアに証明書が存在しないことになります。
+さらに詳しい検査で、根本的な原因を確認することができます。 各ノードの`elasticsearch.yml`で`xpack.security.transport.ssl.verification_mode: none`を一時的に設定します。 エラーが解消され、接続に成功した場合は、クライアントノードのキーストアまたはトラストストアに証明書は存在しません。
 
 ```{warning}
 本番環境では、SSL検証モードを「none」に設定したままにしないでください。
 
-SSL検証モードの設定については、 [Elasticsearchドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/security-settings.html#transport-tls-ssl-settings) をお読みください。
+SSL検証モードの設定については、 [Elasticsearchドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html#transport-tls-ssl-settings) をお読みください。
 ```
 
 LiferayとElasticsearchのノード間でも同様の問題が発生することがあります。 Liferayは、Elasticsearchノードの証明書が信頼できないCAによって署名されている場合（例えば、自己署名証明書を使用している場合）、このようなエラーを投げます。
@@ -401,8 +401,8 @@ java.lang.RuntimeException: org.elasticsearch.ElasticsearchException: Elasticsea
 
 Elasticsearchのノード証明書に署名したCAの証明書が、Liferayに設定されたトラストストアに存在し、信頼されていることを確認します。
 
-* [セキュリティ設定](../securing-elasticsearch.md) が Elasticsearch 7 コネクタの設定（`com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`）である場合、 `truststorePath` プロパティを使用して Elasticsearch 接続のトラストストアを設定します。
-* セキュリティ設定がLES Securityアプリの設定（`com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config`）にある場合、 `sslTruststorePath` プロパティを使用してトラストストアを設定してください。
+* [セキュリティ設定](../securing-elasticsearch.md) が Elasticsearch コネクタの設定 (`com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConfiguration.config`) にある場合は、 `truststorePath` プロパティを使用して Elasticsearch 接続のトラストストアを設定します。
+* セキュリティ設定がLES Securityアプリの設定（`com.liferay.portal.search.elasticsearch7.configuration.XPackSecurityConfiguration.config`）にある場合、 `sslTruststorePath`プロパティを使用してトラストストアを設定します。
 
 また、ノード証明書にCA証明書（公開鍵）が存在しない場合にも、これらのエラーが表示されることがあります。 この場合、CA証明書とノード証明書の形式（PKCS#12またはPEM）に応じて、Javaの `keytool` または `openssl`などのツールを使用して追加します。
 
@@ -412,14 +412,57 @@ Elasticsearchのノード証明書に署名したCAの証明書が、Liferayに�
 
     `openssl pkcs12 -in ca.p12 -out ca.crt -nokeys`
 
-1. プロンプトが表示されたら、 `ca.p12` のパスワードを入力してください。 これにより、 `ca.crt`というファイルが生成されます。
+1. プロンプトが表示されたら、 `ca.p12` のパスワードを入力します。 これにより、 `ca.crt`というファイルが生成されます。
 
-1. CA証明書を `elastic-nodes.p12`にインポートします。
+1. CA証明書を`elastic-nodes.p12`にインポートします。
 
     `keytool -importcert -keystore elastic-nodes.p12 -trustcacerts -storepass liferay -file ca.crt`
+
+
+## 新しいJDKで作成されたPKCS12 KeystoreをJDK 8で開くことができない。
+
+Elasticsearch 8 はバンドルされている OpenJDK 19 を使用して、 [`elasticsearch-certutil`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/certutil.html) コマンドで証明書と秘密鍵を生成します。 Liferay が JDK 8 で動作している場合、JDK 16 以上で生成された証明書を認識できません。
+
+このようなエラーが起こる可能性がある：
+
+```log
+2023-05-18 21:37:54.085 ERROR [Start Level: Equinox Container: 3f8ebcb7-02d0-40a7-a084-7a89762b9642][ElasticsearchConnectionConfigurationActivationHandler:56] bundle com.liferay.portal.search.elasticsearch7.impl:6.0.84 (270)[com.liferay.portal.search.elasticsearch7.internal.connection.ElasticsearchConnectionConfigurationActivationHandler(666)] : The activate method has thrown an exception
+java.lang.IllegalStateException: could not create the default ssl context
+    at org.elasticsearch.client.RestClientBuilder.createHttpClient(RestClientBuilder.java:328) ~[?:?]
+    at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_292]
+    at org.elasticsearch.client.RestClientBuilder.build(RestClientBuilder.java:278) ~[?:?]
+    at org.elasticsearch.client.RestHighLevelClient.<init>(RestHighLevelClient.java:312) ~[?:?]
+   ...
+Caused by: java.security.NoSuchAlgorithmException: Error constructing implementation (algorithm: Default, provider: SunJSSE, class: sun.security.ssl.SSLContextImpl$DefaultSSLContext)
+    at java.security.Provider$Service.newInstance(Provider.java:1617) ~[?:1.8.0_292]
+    at sun.security.jca.GetInstance.getInstance(GetInstance.java:236) ~[?:1.8.0_292]
+    at sun.security.jca.GetInstance.getInstance(GetInstance.java:164) ~[?:1.8.0_292]
+    at javax.net.ssl.SSLContext.getInstance(SSLContext.java:156) ~[?:1.8.0_292]
+   ...
+Caused by: java.security.KeyStoreException: problem accessing trust store
+    at sun.security.ssl.TrustManagerFactoryImpl.engineInit(TrustManagerFactoryImpl.java:73) ~[?:1.8.0_292]
+    at javax.net.ssl.TrustManagerFactory.init(TrustManagerFactory.java:250) ~[?:1.8.0_292]
+    at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.getTrustManagers(SSLContextImpl.java:1041) ~[?:1.8.0_292]
+    at sun.security.ssl.SSLContextImpl$DefaultManagersHolder.<clinit>(SSLContextImpl.java:1011) ~[?:1.8.0_292]
+   ...
+Caused by: java.io.IOException: Keystore was tampered with, or password was incorrect
+    at sun.security.provider.JavaKeyStore.engineLoad(JavaKeyStore.java:792) ~[?:1.8.0_292]
+    at sun.security.provider.JavaKeyStore$JKS.engineLoad(JavaKeyStore.java:57) ~[?:1.8.0_292]
+    at sun.security.provider.KeyStoreDelegator.engineLoad(KeyStoreDelegator.java:224) ~[?:1.8.0_292]
+    at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(JavaKeyStore.java:71) ~[?:1.8.0_292]
+   ...
+Caused by: java.security.UnrecoverableKeyException: Password verification failed
+    at sun.security.provider.JavaKeyStore.engineLoad(JavaKeyStore.java:790) ~[?:1.8.0_292]
+    at sun.security.provider.JavaKeyStore$JKS.engineLoad(JavaKeyStore.java:57) ~[?:1.8.0_292]
+    at sun.security.provider.KeyStoreDelegator.engineLoad(KeyStoreDelegator.java:224) ~[?:1.8.0_292]
+    at sun.security.provider.JavaKeyStore$DualFormatJKS.engineLoad(JavaKeyStore.java:71) ~[?:1.8.0_292]
+   ...
+```
+
+この問題を解決するには、JDK 11でLiferayを実行します。 詳細は [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829) を参照。
 
 ## 関連トピック
 
 * [Elasticsearchへの接続](../connecting-to-elasticsearch.md)
 * [Elasticsearchインストールのトラブルシューティング](../troubleshooting-elasticsearch-installation.md)
-* [Elasticsearchのトラブルシューティング。よくある問題](./troubleshooting-elasticsearch-common-issues.md)
+* [Elasticsearchのトラブルシューティング：よくある問題](./troubleshooting-elasticsearch-common-issues.md)

@@ -1,10 +1,10 @@
 # 検索機能インフラストラクチャのアップグレード
 
-Liferayをアップグレードする際に、Elasticsearchを使用した場合の検索エクスペリエンスを考慮する必要があります。正確な手順は、既存の検索エンジンのインストールとLiferayのバージョンに依存しますが、[既存のインデックスのバックアップ](./backing-elasticsearch.md)から始める必要があります。 
+Liferayをアップグレードする際には、Elasticsearchを使用する際の検索エクスペリエンスを考慮する必要があります。正確な手順は既存の検索エンジンのインストールとLiferayのバージョンによりますが、まずは[既存のインデックスをバックアップする](./backing-elasticsearch.md)ことから始めましょう。
 
 * [検索エンジン互換性マトリクス](https://help.liferay.com/hc/ja/articles/360016511651) をご参照ください。 : サポートされている最新のElasticsearchバージョンを実行することが常に推奨されています。
 * Liferay 7.4から、LES（Liferay Enterprise Search）アプリケーションはLiferay DXPにバンドルされています。 追加のインストール手順は必要ありません。 詳しくは、 [Liferay Enterprise Searchの有効化](../../../liferay-enterprise-search/activating-liferay-enterprise-search.md) をご覧ください。
-* すでにサポートされているElasticsearchのバージョンをご利用の場合は、既存のElasticsearchインスタンスをアップデートせずに使い続けることも可能です。
+* すでにサポートされているElasticsearchのバージョンをご利用の場合は、既存のElasticsearchインスタンスをアップデートすることなく、そのままご利用いただけます。
 * Liferay 7.4 以降、検索の調整（同義語セットおよび結果ランキング）インデックスはデータベーステーブルでバックアップされます。 Liferayのアップグレード中に検索エンジンがLiferayに接続されると、データがデータベースにプロパゲートされるようになります。 新しいElasticsearchインスタンスをセットアップする場合、 [検索調整インデックスのバックアップと復元](./backing-up-elasticsearch.md)を行い、その後、 [Groovyスクリプト](#importing-the-search-tuning-indexes-in-7-4) を実行してインデックスデータを新しいデータベーステーブルに手動でインポートしなければなりません。
 
 ## アップグレード手順
@@ -13,9 +13,9 @@ Liferayをアップグレードする際に、Elasticsearchを使用した場合
 [Elasticsearchのバックアップ](./backing-up-elasticsearch.md)を行ってから、この手順を進めてください。
 ```
 
-1. Elasticsearch 7の最低限サポートされているバージョンであることを確認してください。 そうでない場合は、 [サポートされている最新のElasticsearch](https://help.liferay.com/hc/ja/articles/360016511651) に[アップグレード](upgrading-to-elasticsearch-7.md)してください。</1>. 新しいElasticsearchクラスタをインストールし、アップグレードしたLiferayに接続することは可能ですが、ElasticsearchクラスタにLiferay DXP 7.2や7.3の検索の調整機能用のインデックスのようにプライマリストレージとして使用するインデックスがあった場合、一部のデータが失われる可能性があります。 [プライマリストレージに使用するインデックスのバックアップとリストア](backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) および [7.4 の検索チューニングインデックスのインポートを参照](#importing-the-search-tuning-indexes-in-7-4) .
+1. お使いのシステムが少なくともElasticsearchの最小サポートバージョンであることを確認してください。 そうでない場合は、 [サポートされている最新のElasticsearch](https://help.liferay.com/hc/ja/articles/360016511651) に[アップグレード](upgrading-to-elasticsearch-8.md)してください。</1>. 新しいElasticsearchクラスタをインストールし、アップグレードしたLiferayに接続することは可能ですが、ElasticsearchクラスタにLiferay DXP 7.2や7.3の検索の調整機能用のインデックスのようにプライマリストレージとして使用するインデックスがあった場合、一部のデータが失われる可能性があります。 [プライマリストレージに使用するインデックスのバックアップとリストア](backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) および [7.4 の検索チューニングインデックスのインポートを参照](#importing-the-search-tuning-indexes-in-7-4) 。
 
-1. [Liferay と Elasticsearch の接続](../connecting-to-elasticsearch.md) と設定 [セキュリティ](../securing-elasticsearch.md).
+1. [LiferayとElasticsearch を接続](../connecting-to-elasticsearch.md)し、[セキュリティ](../securing-elasticsearch.md)を設定します。
 
 1. [Liferayをアップグレードします。](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics.md)
 
@@ -29,7 +29,7 @@ Liferay 7.4でLiferay Enterprise Searchアプリケーションを使用して�
 
 ## Liferay 7.2および7.3でのLiferay Enterprise Searchのアップグレード
 
-LESとそのアプリは Liferay 7.4にバンドルされているため、これらの手順は Liferay 7.2または7.3にアップグレードする場合のみ必要です。 [基本的なアップグレード手順](#upgrading-a-liferay-system-using-elasticsearch-7) の後、以下のオプションの手順を実行します。 
+LESとそのアプリは Liferay 7.4にバンドルされているため、これらの手順は Liferay 7.2または7.3にアップグレードする場合のみ必要です。 [基本的なアップグレード手順](#upgrade-steps) の後、以下のオプションの手順を実行します。 
 
 1. 現在、 [Kibanaとモニタリング](../../../liferay-enterprise-search/monitoring-elasticsearch.md)を使用している場合、Elasticsearchのバージョンと一致するKibanaのバージョンをインストールします。
 
@@ -52,7 +52,7 @@ LESとそのアプリは Liferay 7.4にバンドルされているため、こ�
 | 機能                        | 旧アプリ名                                                             | 新アプリ名                                      | 7.2設定ファイル                                                                                                                  | 7.3/7.4 設定ファイル                                                                                                 |
 |:------------------------- |:----------------------------------------------------------------- |:------------------------------------------ |:-------------------------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------------------------------------------- |
 | Elasticsearchクラスターのモニタリング | Liferay Connector to X-Pack Monitoring \[Elastic Stack 6.x\] (英語) | Liferay Enterprise Search Monitoring       | `com.liferay.portal.search.elasticsearch6.xpack.monitoring.web.internal.configuration.XPackMonitoringConfiguration.config` | `com.liferay.portal.search.elasticsearch.monitoring.web.internal.configuration.MonitoringConfiguration.config` |
-| Elasticsearchクラスターの保護     | Liferay Connector to X-Pack Security [Elastic Stack 6.x]を使用しています。 | Liferay Enterprise Search Security         | アクションは必要ありません。このアプリはDXP 7.4では使用できません。 その機能は、Elasticsearch 7のコネクターに統合されています。                                                |                                                                                                                |
+| Elasticsearchクラスターの保護     | Liferay Connector to X-Pack Security [Elastic Stack 6.x]を使用しています。 | Liferay Enterprise Search Security         | アクションは必要ありません。このアプリはDXP 7.4では使用できません。 その機能は Elasticsearch コネクタに統合されている。                                                    |                                                                                                                |
 | 機械学習を使用した検索アルゴリズムの最適化     | Liferay Connector to Elasticsearch Learning to Rank               | Liferay Enterprise Search Learning to Rank | 変更なし。                                                                                                                      |                                                                                                                |
 
 

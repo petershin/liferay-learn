@@ -1,6 +1,10 @@
 # 同義語セット
 
-> **サブスクライバー**
+{bdg-primary}`サブスクリプション`
+
+```{note}
+この機能は、[Elasticsearchのみ](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md) で機能します。
+```
 
 同義語セットとは、同じ意味を持つ単語やフレーズを集めたものです。 管理者であるユーザーが同義語セットを作成し、検索ページのエンドユーザーがキーワードやフレーズを検索すると、セット内の同義語も検索されます。
 
@@ -54,13 +58,10 @@ Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-
 
 - [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) アナライザーに必要な変更（Synonym graph token filter内のパイプラインを含む）
 
-を加え、デフォルトの再実装をすることで [カスタムアナライザー](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) を作成します。</li> 
-  
-  - コネクタ構成の追加インデックス設定を使用して、カスタム・アナライザー定義をインデックス設定に追加します。
-- コネクタ構成の［タイプマッピングを上書き］設定を使用して、Liferay DXPのデフォルトのタイプマッピングをオーバーライドして、目的のフィールドにカスタム・アナライザーを適用します。
-- 新しい設定を適用するためにインデックスを再作成します。</ul> 
-
-
+- デフォルトの [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) 解析器に必要な変更を加えて再実装し、 [カスタム解析器](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) を作成する（パイプラインに追加の [Synonym graph token filter](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-synonym-graph-tokenfilter.html) を含む）。
+- コネクタ設定の Additional Index Configurations を使用して、カスタム解析器の定義をインデックス設定に追加します。
+- コネクター設定の Override Type Mappings 設定を使用して、Liferay DXP のデフォルトのタイプマッピングをオーバーライドして、目的のフィールドにカスタムアナライザーを適用します。
+- インデックスを再作成して、新しい設定を適用します。
 
 ### 前提条件デフォルトマッピングの取得
 
@@ -80,14 +81,9 @@ Liferay DXP バンドルからマッピングを取得するには。
 1. `modules/apps/portal-search-elasticsearch(6 or 7)/portal-search-elasticsearch(6 or 7)-impl/src/main/resources/META-INF/mappings`に移動します。
 1. ここには、前述のJSONファイル（`liferay-type-mappings.json`）があります。
 
-
-
 ```{warning}
 インデックスのマッピングや設定は、バージョン間で変更されることがあり、場合によっては（Fix PackやService Packによって）マイナーバージョンの中でも変更されることがあります。 マッピングや設定のカスタマイズは、アップグレードや新しいパッチレベルへの移行時に見直し、必要に応じて対応する必要があります。 さらに、Liferayのサーチチームは、将来のバージョンでは、より多くの言語をサポートすることを計画しており、カスタマイズが不要になります。
 ```
-
-
-
 
 ### 言語の追加
 
@@ -96,8 +92,6 @@ Liferay DXP バンドルからマッピングを取得するには。
 1. Elasticsearch接続の「システム設定」エントリ---Elasticsearch 6/7にアクセスしてください。
 
 1. 追加インデックス設定フィールドに、 `の解析` ブロックを追加します。 
-   
-   
 
    ```json
    {
@@ -142,53 +136,46 @@ Liferay DXP バンドルからマッピングを取得するには。
    }
    ```
 
-
 この構成で設定を追加すると、初期設定のインデックス設定で利用できる項目が増えます。 デフォルトのJSON設定は、ソースコードの `index-settings.json` ファイルの中にあります。 ここでは、 `custom_liferay_analyzer_fr` という名前の新しいアナライザーを作成し、新しいフィルター `my-synonym-filter-fr`を使用しています。 `synonyms` の配列は今のところ空です。UIで作成したシノニムセットはここに表示されます。
 
-1. ［タイプマッピングの上書き］フィールドを使用して、 `template_fr` ダイナミックフィールドのアナライザーを変更して、カスタムアナライザー（`custom_liferay_analyzer_fr`）を使用します。 
-   
-   
+1. ［タイプマッピングの上書き］フィールドを使用して、 `template_fr` ダイナミックフィールドのアナライザーを変更して、カスタムアナライザー（`custom_liferay_analyzer_fr`）を使用します。  
 
    ```{important}
    この例は、簡潔にするために切り取られています。 Override Type Mappingsは、Liferayのデフォルトの型マッピングを完全にオーバーライドして無視しますので、オーバーライドされた部分だけでなく、完全なマッピングファイルを提供する必要があります。   
    ```
 
-
-
-
    ```json
     {
-    "LiferayDocumentType": {
-        "date_detection": false,
-        "dynamic_templates": [
-            // (...)
-            {
-                "template_fr": {
-                    "mapping": {
-                        "analyzer": "custom_liferay_analyzer_fr",
-                        "store": true,
-                        "term_vector": "with_positions_offsets",
-                        "type": "text"
-                    },
-                    "match": "\\w+_fr\\b|\\w+_fr_[A-Z]{2}\\b",
-                    "match_mapping_type": "string",
-                    "match_pattern": "regex"
-                }
-            },
-            // (...)
+     "date_detection": false,
+     "dynamic_templates": [
+         // (...)
+         {
+             "template_fr": {
+                 "mapping": {
+                     "analyzer": "custom_liferay_analyzer_fr",
+                     "store": true,
+                     "term_vector": "with_positions_offsets",
+                     "type": "text"
+                 },
+                 "match": "\\w+_fr\\b|\\w+_fr_[A-Z]{2}\\b",
+                 "match_mapping_type": "string",
+                 "match_pattern": "regex"
+             }
+         },
+         // (...)
    ```
 
+   ```{note}
+   Liferay 7.4 U80 以前では、JSON ファイルの最初に `LiferayDocumentType` 宣言を含める必要があります。
+   ```
 
 ここでの重要な変更点は、デフォルトで割り当てられているアナライザー（`french`）が、カスタムアナライザー `custom_liferay_analyzer_fr`に置き換えられていることです。
 
 1. 設定の変更を保存します。 
-   
-   
 
    ```{tip}
    Sidecar Elasticsearch サーバーを使用している場合、コンソールにエラーが表示されることがあります。 Liferay DXPを再起動すると問題が解決します。
    ```
-
 
 1. ここで、「システム設定」の &rarr; 「検索」 &rarr; 「同義語」を選択します。
 

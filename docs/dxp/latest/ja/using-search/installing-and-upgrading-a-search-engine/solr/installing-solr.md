@@ -43,7 +43,8 @@ Solrを使用する際には、重要な制限があります。 インストー
 
 1. 以下のURLの <https://liferay.com> `user.name` を代入してください。
 
-   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions> DXP: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions>
+   CE: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/225525277/versions>
+   DXP: <https://web.liferay.com/web/[user.name]/apps/-/marketplace_apps/182518167/versions>
 
 1. **App** をクリックして、アプリの LPKG ファイルをダウンロードします。
 

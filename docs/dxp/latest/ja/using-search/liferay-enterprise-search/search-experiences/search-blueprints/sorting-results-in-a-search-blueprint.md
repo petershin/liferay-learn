@@ -1,26 +1,26 @@
-# 検索ブループリントで結果をソートする
+# 検索ブループリントの結果の並べ替え
 
-検索ブループリントに [ソート設定](./search-blueprints-configuration-reference.md#sort-configuration) を追加して、検索結果の順序を制御します：
+検索ブループリントに [ソート設定](./search-blueprints-configuration-reference.md#sort-configuration) を追加して、検索結果の順序を制御します。
 
-1. **Global Menu**(![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 **Applications** タブをクリックし、 **Blueprints** を選択します。
+1. **グローバルメニュー**(![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**ブループリント**］ を選択します。
 
-1. [ブループリント](./creating-and-managing-search-blueprints.md) を作成するか、既存のブループリントを開いてください。
+1. [ブループリントを作成する](./creating-and-managing-search-blueprints.md)か、既存のブループリントを開きます。
 
-1. **Configuration** タブをクリックし、Sort Configuration テキストエリアに JSON を入力します。
+1. ［**Configuration**］ タブをクリックし、［Sort Configuration］テキストエリアにJSONを入力します。
 
-![JSONを入力して、ブループリントの結果をソートします。](./sorting-results-in-a-search-blueprint/images/01.png)
+![JSONを入力して、ブループリントの結果を並べ替えます。](./sorting-results-in-a-search-blueprint/images/01.png)
 
 ```{important}
-* 検索ページでソートを設定するために、[Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) と検索ブループリントの両方を使用しないようにします。 Liferayは一貫した動作を保証するものではありません。
+* 検索ページでソートを設定するために、[Sort widget](../../search-pages-and-widgets/search-results/sorting-search-results.md) と検索ブループリントの両方を使用することは避けてください。 Liferayは一貫した動作を保証できません。
 
-* 以下の例は簡単なものです。 堅牢なソート構成は、あらゆるシナリオを考慮する必要があります。 例えば、検索結果文書にソートフィールドが含まれていない場合、 [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html#_missing_values) パラメータを使用してソートの動作を設定することができます。
+* 以下の例は簡単なものです。 堅牢なソート構成は、あらゆるシナリオを考慮する必要があります。 例えば、検索結果ドキュメントにソートフィールドが含まれていない場合、 [`missing`](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html#_missing_values) パラメーターを使用してソートの動作を設定することができます。
 
-   詳しくは [Elasticsearchのソーティングドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/sort-search-results.html) をご覧ください。
+   詳しくは、 [Elasticsearch's sorting documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/sort-search-results.html) をご覧ください。
 ```
 
-## 例1：タイトルでソートする
+## 例1：タイトル順に並べ替える
 
-ソート設定とは、昇順(`asc`）または降順(`desc`）でソートするフィールドを定義する `sorts` 配列を持つJSONオブジェクトです。
+ソート設定とは、昇順（`asc`）または降順（`desc`）で並べ替えるフィールドを定義する `sorts` 配列を持つJSONオブジェクトです。
 
 ```json
 {
@@ -33,18 +33,18 @@
 ```
 
 ```{tip}
-* 特に `title` のようなローカライズされたテキストフィールドでは、類似した名前のフィールドバリエーションが検索文書に含まれることがあります。 ローカライズされ、ソート可能なキーワードのバリエーションとして、`localized_title_en_US_sortable`のようなフィールドを使用してください。 各エンティティのドキュメントを確認し、使用可能なフィールドを探します。 例えば、`title_sortable`は共通のフィールドですが、同じエンティティに`localized_title_en_US_sortable`も含まれることがあります。
+* 特に `title` のようなローカライズされたテキストフィールドでは、類似した名前のフィールドバリエーションが検索ドキュメントに含まれることがあります。 `localized_title_en_US_sortable`など、フィールドのローカライズされ、ソート可能なキーワードのバリエーションを使用します。 各エンティティのドキュメントを確認し、使用可能なフィールドを探します。 例えば、`title_sortable`は共通のフィールドですが、同じエンティティに`localized_title_en_US_sortable`も含まれることがあります。
 
-* 言語IDを直接入力する代わりに、`${context.language_id}` 変数を使用して、4文字の言語コード (例えば `en_US`) を現在の言語で自動入力することができます。
+* 言語IDを直接入力する代わりに、`${context.language_id}` 変数を使用して、4文字の言語コード (例: `en_US`) を現在の言語で自動入力することができます。
 
 * 文書のフィールドを見るには、ブループリントのツールバーの_Preview_をクリックし、検索を実行し、その結果のフィールドを展開します。
 ```
 
-## 例2：構造体フィールドによる並べ替え
+## 例2：ストラクチャー項目による並べ替え
 
-[ウェブコンテンツの構造](../../../../content-authoring-and-management/web-content/web-content-structures.md) フィールドは、検索エンジンのドキュメントにネストされたフィールドとしてインデックスされます。
+[Webコンテンツストラクチャー](../../../../content-authoring-and-management/web-content/web-content-structures.md)フィールドは、検索エンジンのドキュメントにネストされたフィールドとしてインデックスされます。
 
-文書を表示する際、入れ子になったプロパティは `ddmFieldArray`の下に表示されます：
+ドキュメントを表示すると、入れ子になったプロパティは `ddmFieldArray`の下に表示されます。
 
 ```json
 "ddmFieldArray" : [
@@ -57,9 +57,9 @@
 ]
 ```
 
-ドキュメントをネストされたフィールドとともに表示する、
+ネストされたフィールドを含むドキュメントを表示するには、
 
-1. ドキュメント `_source` のフェッチを有効にするには、ブループリントの **Configuration** タブを開き、この JSON を Advanced Configuration ボックスに入力します：
+1. ドキュメント`_source`の取得を有効にするには、ブループリントの ［**設定**］ タブを開き、このJSONを［詳細設定］ボックスに入力します。
 
     ```json
     {
@@ -71,7 +71,7 @@
 
 1. ツールバーの **プレビュー** をクリックし、ネストしたフィールドを持つ結果を検索し、そのフィールドを展開します。
 
-ネストされたフィールドの場合、ソート構成のフィールド宣言はより複雑になります：
+ネストされたフィールドの場合、ソート構成のフィールド宣言はより複雑になります。
 
 ```json
 {
@@ -95,11 +95,11 @@
 }
 ```
 
-## 例3：オブジェクトフィールドでソートする場合
+## 例3：オブジェクトフィールドによる並べ替え
 
-[Object](../../../../building-applications/objects.md) 入力フィールドは、検索エンジンのドキュメントにネストされたフィールドとしてインデックスされます。
+[オブジェクト](../../../../building-applications/objects.md)エントリーフィールドは、検索エンジンドキュメントにネストされたフィールドとしてインデックスされます。
 
-ドキュメントを表示する際、オブジェクトのネストされたプロパティは `nestedFieldArray`の下に表示されます：
+ドキュメントを表示する際、オブジェクトのネストされたプロパティは `nestedFieldArray`の下に表示されます。
 
 ```json
 "nestedFieldArray" : [
@@ -111,9 +111,9 @@
 ]
 ```
 
-ドキュメントをネストされたフィールドとともに表示する、
+ネストされたフィールドを含むドキュメントを表示するには、
 
-1. ドキュメント `_source` のフェッチを有効にするには、ブループリントの **Configuration** タブを開き、この JSON を Advanced Configuration ボックスに入力します：
+1. ドキュメント`_source`の取得を有効にするには、ブループリントの ［**設定**］ タブを開き、このJSONを［詳細設定］ボックスに入力します。
 
     ```json
     {
@@ -125,7 +125,7 @@
 
 1. ツールバーの **プレビュー** をクリックし、ネストしたフィールドを持つ結果を検索し、そのフィールドを展開します。
 
-この例では、オブジェクトの整数フィールドでソートしています：
+この例では、オブジェクトの整数フィールドで並べ替えます。
 
 ```json
 {
@@ -149,5 +149,5 @@
 
 ## 関連トピック
 
-* [検索 ブループリント コンフィギュレーション リファレンス](search-blueprints-configuration-reference.md)
+* [検索ブループリント設定のリファレンス](search-blueprints-configuration-reference.md)
 * [検索結果の並べ替え](../../../search-pages-and-widgets/search-results/sorting-search-results.md)

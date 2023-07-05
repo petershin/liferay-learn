@@ -1,7 +1,7 @@
 # カスタムフィルターの例
 
 ```{note}
-この機能は[Elasticsearchでのみ](../../installing-and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
+この機能は[Elasticsearchでのみ](../../installing and-upgrading-a-search-engine/solr/solr-limitations.md)動作します。
 ```
 
 カスタムフィルターウィジェットは、検索チューニングを強力にサポートします。 カスタムコードを導入することなく、検索エンジンに送信されるクエリをコントロールすることができます。 ここでは、カスタムフィルターウィジェットへのアプローチ方法を理解するために、いくつかの一般的な使用例を紹介します。
@@ -77,7 +77,7 @@
 
 もう一度検索すると、検索結果のブログの順番は、古いブログが最初に表示されます。（新しいブログが設定された時間範囲内に作成され、古いブログがそうでない場合）。
 
-範囲の指定方法については、 [Elasticsearch date-math documentation](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/common-options.html#date-math) を参照してください。
+範囲の指定方法については、 [Elasticsearch date-math documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/common-options.html#date-math) を参照してください。
 
 ### 指定フィールドへの一致をブースト
 
@@ -161,7 +161,7 @@
 
 ## クエリ文字列による複合フィルタ
 
-[サイトIDによるフィルタリング](#filtering-by-site-id) の例のように、 [検索文字列クエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-query-string-query.html) を使用することで、複数のクエリを必要としない場合があります。 以下の設定では、1つのカスタムフィルターウィジェットのみを使用して、検索対象を制限する方法を示しています。
+[サイトIDによるフィルタリング](#filtering-by-site-id) の例のように、 [検索文字列クエリ](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-query-string-query.html) を使用することで、複数のクエリを必要としない場合があります。 以下の設定では、1つのカスタムフィルターウィジェットのみを使用して、検索対象を制限する方法を示しています。
 
 - ドキュメントとメディアファイルを` pdf`または、`jpg`拡張子に一致させる。
 - ウェブコンテンツの記事に合わせる
@@ -186,7 +186,7 @@
 
 {bdg-secondary}`7.2 FP10+、7.3 FP1+、7.4（すべてのアップデート）で利用可能`
 
-カスタムフィルターの設定での [ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) を使用すると、ページの検索に3つのカスタムフィルターウィジェットが必要になります。 必要な子クエリをラップする [ネストされたクエリ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/query-dsl-nested-query.html) がウィジェットの1つに追加されます。1つの子クエリはフィールドの名前と一致し、もう1つは値と一致します。
+カスタムフィルターの設定での [ネストされたフィールド](../../../liferay-internals/reference/7-3-breaking-changes.md#dynamic-data-mapping-fields-in-elasticsearch-have-changed-to-a-nested-document) を使用すると、ページの検索に3つのカスタムフィルターウィジェットが必要になります。 必要な子クエリをラップする [ネストされたクエリ](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-nested-query.html) がウィジェットの1つに追加されます。1つの子クエリはフィールドの名前と一致し、もう1つは値と一致します。
 
 この例では、特定のDDMストラクチャー項目にマッチした場合のブーストを追加しています。
 
@@ -198,7 +198,7 @@
             - **タイプ：** `Boolean`
             - **フィールドラベル：** `Boost?`
         - フィールド 2:
-            - **タイプです：** `テキスト`
+            - **タイプ** `テキスト`
             - **フィールドラベル：** `コンテンツ`
     - ストラクチャーを保存します。
 
@@ -220,9 +220,9 @@
 
     **チェックポイント：** コンテンツフィールドが完全に一致しているため、BoostedされていないWebコンテンツがBoostedされたWebコンテンツよりも先に表示されます。
 
-1. 検索結果ウィジェットの設定で、 **Display Results in Document Form** を有効化する。
+1. 検索結果ウィジェットの設定で、 **結果をドキュメント・フォームに表示** を有効にします。
 
-1. `ddmFieldArray` フィールドを探し、その値をコピーします。 例:
+1. `ddmFieldArray` フィールドを見つけ、その値をコピーする。 例:
 
    ```json
    "ddmFieldArray" : [

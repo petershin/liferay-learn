@@ -1,6 +1,8 @@
 # Elasticsearch 7へのアップグレード
 
-Elasticsearch 7は、最新のLiferay 7.2、7.3、7.4バージョンに標準でサポートされています。 特定のバージョンの互換性の詳細については、 [Search Engine Compatibility Matrix](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
+{bdg-secondary}`7.1および7.2`
+
+Liferay 7.3と7.4はElasticsearch 7をすぐにサポートします。 お使いの Liferay インストールで利用可能な最新の検索エンジンのバージョンは、 [Search Engine Compatibility Matrix](https://help.liferay.com/hc/ja/articles/360016511651) をご覧ください。
 
 Liferay 7.2では、Elasticsearch 7は [Liferay Connector to Elasticsearch 7](https://web.liferay.com/marketplace/-/mp/application/170390307)  (バージョン`3.x`) を介してサポートされています。 Liferay 7.3以降へのアップグレード、または既存の7.2検索エンジンをElasticsearch 7に移行する場合、Elasticsearchサーバーをアップグレードする必要があります。 新しいLiferay7.2システムをセットアップするには、Elasticsearch 7をインストールし、[インストールガイド](../getting-started-with-elasticsearch.md)に従います。
 
@@ -93,4 +95,4 @@ Elasticsearch 6と7は現在2つの別個のインストールであるため、
 
 1.  Elasticsearchサーバーを起動してから、Liferay Connector to Elasticsearch 6を再起動します。
 
-アップグレードが完了したら、 [Liferayのバージョンで利用できる 新しい検索機能](../../../getting-started.html) をご覧ください。 
+アップグレードが完了したら、 [Liferayのバージョンで利用できる 新しい検索機能](../../../getting-started.html) をご覧ください。

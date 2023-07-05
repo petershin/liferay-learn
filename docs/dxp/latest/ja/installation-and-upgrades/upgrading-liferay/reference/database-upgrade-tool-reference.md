@@ -88,7 +88,7 @@ Please enter your database host (localhost):
 
 * `app-server.properties`：サーバーの場所とライブラリを指定します。
 * `portal-upgrade-database.properties`：データベース接続を設定します。
-* `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず[現在のDXPバージョンに合わせて更新してください](../migrating-configurations-and-properties.md#migrating-portal-properties)。
+* `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず [現在のDXPバージョンに合わせて更新してください](../migrating-configurations-and-properties.md#migrating-portal-properties) 。
 
 #### app-server.propertiesの設定
 
@@ -124,14 +124,14 @@ server.detector.server.id=tomcat
 
 #### portal-upgrade-database.propertiesの構成
 
-次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する[JDBCポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)に対応することに注意してください。
+次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する [JDBCポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) に対応することに注意してください。
 
 * `jdbc.default.driverClassName`
 * `jdbc.default.url`
 * `jdbc.default.username`
 * `jdbc.default.password`
 
-これらの値のリファレンスについては、最新の[ポータルプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)を参照してください。
+これらの値のリファレンスについては、最新の [ポータルプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を参照してください。
 
 #### portal-upgrade-ext.propertiesの構成
 
@@ -156,7 +156,7 @@ server.detector.server.id=tomcat
     * `{upgrade.component=framework}`: アップグレードフレームワークのロジックに関連する処理に使用します。
     * `{upgrade.component=<bundleSymblociName>} となります。`モジュールに関連するアップグレード処理用
 
-なお、`upgrade.log.context.enabled`は、立ち上げ時のアップグレードだけでなく、アップグレードツールでも動作します。 また、この機能を利用するには、[`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml)ファイルを`bundles/tomcat/webapps/ROOT/WEB-INF/META-INF`にコピーし、ファイル名を`portal-log4j-ext.xml`に変更する必要があります。 次に、アペンダーの定義を見つけます。
+なお、`upgrade.log.context.enabled`は、立ち上げ時のアップグレードだけでなく、アップグレードツールでも動作します。 また、この機能を利用するには、 [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) ファイルを`bundles/tomcat/webapps/ROOT/WEB-INF/META-INF`にコピーし、ファイル名を`portal-log4j-ext.xml`に変更する必要があります。 次に、アペンダーの定義を見つけます。
 
 ```
 <Appender name="CONSOLE" type="Console">

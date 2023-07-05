@@ -1,6 +1,6 @@
 # Learning to Rank
 
-> **Liferay Enterprise Search(LES）サブスクライバー**
+> **Liferay Enterprise Search（LES）サブスクライバー**
 
 Elasticsearchのような検索エンジンには、一般的な検索目的に適した、適切に調整された関連性アルゴリズムがあります。
 
@@ -12,7 +12,7 @@ LES Learning to Rankには、Liferay Enterprise Searchのサブスクリプシ�
 
 Learning to Rankは、[ソートウィジェット](../search-pages-and-widgets/search-results/sorting-search-results.md)では機能しません。
 
-LES Learning to Rankがデプロイされているが、(おそらくはソートウィジェットを使用するために）特定の検索ページで無効にする必要がある場合、
+LES Learning to Rankがデプロイされているが、（おそらくはソートウィジェットを使用するために）特定の検索ページで無効にする必要がある場合、
 
 1. [低レベル検索オプション](../search-pages-and-widgets/search-results/understanding-low-level-search-options.md)ウィジェットを検索ページに追加します。
 
@@ -30,7 +30,7 @@ LES Learning to Rankがデプロイされているが、(おそらくはソー�
 
 Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエリを再スコアリングするには、いくつかの前提条件があります。
 
-- Learning to Rankには、 [Liferay Enterprise Search](https://www.liferay.com/products/dxp/enterprise-search) (LES）サブスクリプションが必要です。 サブスクリプションを取得したら、 [Liferay Enterprise Search Learning to Rank](https://customer.liferay.com/en/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191013&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKG file and [install it](../../system-administration/installing-and-managing-apps/installing-apps.md)。
+- Learning to Rankには、 [Liferay Enterprise Search](https://www.liferay.com/products/dxp/enterprise-search) （LES）サブスクリプションが必要です。 サブスクリプションを取得したら、 [Liferay Enterprise Search Learning to Rank](https://customer.liferay.com/en/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191013&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191060) LPKGファイルをダウンロードして[インストールします](../../system-administration/installing-and-managing-apps/installing-apps.md)。
 
    ```{note}
    Liferay DXP 7.4より、Liferay Enterprise Search (LES)アプリケーションは、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 詳しくは、[LESの起動](./activating-liferay-enterprise-search.md)を参照してください。
@@ -44,7 +44,7 @@ Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエ�
 
 ## 技術概要
 
-通常の検索では、ユーザーはLiferay DXPの[検索バー](../getting-started/searching-for-content.md)を介して検索エンジンにクエリを送信します。 返される結果の順序は、検索エンジンの [関連性スコアリングアルゴリズム](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/index-modules-similarity.html#bm25) によって決定されます。
+通常の検索では、ユーザーはLiferay DXPの[検索バー](../getting-started/searching-for-content.md)を介して検索エンジンにクエリを送信します。 返される結果の順序は、検索エンジンの [関連性スコアリング・アルゴリズム](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/index-modules-similarity.html#bm25) によって決定される。
 
 ここで、Learning to Rankが介入し、そのプロセスが変わります。
 
@@ -52,7 +52,7 @@ Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエ�
 
 1. LiferayはクエリをElasticsearchに送信し、検索エンジンの関連性アルゴリズムを使用して、通常どおり最初の1000件の結果を取得します。
 
-1. 上位1000件の結果は検索ヒットとして返されませんが、Elasticsearchはそれらの結果を使用して、 [再スコアリング機能](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html#rescore-top-n-with-sltr) を介して [再スコアリング](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/search-request-body.html#request-body-search-rescore) を行います。
+1. 上位 1000 件の結果は検索ヒットとして返されるのではなく、Elasticsearch が [再スコア機能 [を使って](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html#rescore-top-n-with-sltr) を再スコアするために使われます](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/search-request-body.html#request-body-search-rescore) 。
 
 1. 結果は、再スコアリングに使用するキーワードとトレーニング済みモデルを含む [SLTRクエリ](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/searching-with-your-model.html) によって再スコアリングされます。
 
@@ -62,7 +62,7 @@ Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエ�
 
 ## モデルトレーニング
 
-優れた判断リストと優れた機能セットがLearning to Rankアルゴリズムに供給されると、有用なトレーニング済みモデルが生成されます(これはパズルの機械学習の部分です）。 したがって、以下のものを組み立てる必要があります。
+優れた判断リストと優れた機能セットがLearning to Rankアルゴリズムに供給されると、有用なトレーニング済みモデルが生成されます（これはパズルの機械学習の部分です）。 したがって、以下のものを組み立てる必要があります。
 
 - トレーニングモデルの作成に使用するLearning to Rankアルゴリズム。 このデモンストレーションでは、 [RankLib](https://sourceforge.net/p/lemur/wiki/RankLib/) を使用します。
 
@@ -75,10 +75,10 @@ Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエ�
 
 [機能](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/core-concepts.html#features-the-raw-material-of-relevance) は、アルゴリズムが結果をよりスマートな方法でスコアリングできる関数を作成するために使用する変数です。 関連する機能を十分に、あるいは正しく与えなければ、モデルは結果を改善するのに十分な「賢さ」を持ちません。
 
-始める前に、リモート [Elasticsearch](../installing-and-upgrading-a-search-engine.md) クラスタが Liferay と通信していることが必要です。 詳細は、 [検索エンジンの互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
+始める前に、リモートの [Elasticsearch](../installing-and-upgrading-a-search-engine.md) クラスタが Liferay と通信している必要があります。 詳細は、 [検索エンジンの互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
 
 ```{tip}
-[Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md) を使用して、最も一般的なクエリを発見します(これはLearning to Rankモデルを作成するクエリを決定する一つの方法となりえます）。
+[Suggestions](../search-pages-and-widgets/search-results/enabling-search-suggestions.md) を使用して、最も一般的なクエリを発見します（これはLearning to Rankモデルを作成するクエリを決定する一つの方法となりえます）。
 ```
 
 ## ステップ1：ElasticsearchにLearning to Rankプラグインをインストールする
@@ -86,7 +86,7 @@ Learning to Rankを使用して、Elasticsearchに送信されたLiferayクエ�
 Learning to Rankプラグインのインストールについては、 [Elasticsearch Learning to Rankプラグインのドキュメント](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/#installing) を参照してください。
 
 ```{warning}
-Liferay DXP 7.2 with Elasticsearch 7.14+ をお使いの場合、プラグインをインストールする前にJDK8またはJDK11(お使いのLiferayが使用している方）でコンパイルしておく必要があります。 必要な手順や背景については、 [この記事](https://help.liferay.com/hc/ja/articles/5194953858701) を参照してください。
+Liferay DXP 7.2とElasticsearch 7.14+を使用している場合、プラグインをインストールする前にJDK8またはJDK11（Liferayのインストールで使用している方）でコンパイルする必要があります。 必要な手順と追加的な背景情報については、 [この記事](https://help.liferay.com/hc/ja/articles/5194953858701) を参照のこと。
 ```
 
 インストールするプラグインのバージョンに応じて、次のようなコマンドを実行します。
@@ -103,7 +103,7 @@ Liferay DXP 7.2 with Elasticsearch 7.14+ をお使いの場合、プラグイン
 
 ## ステップ3：モデルをLearning to Rankプラグインにアップロードする
 
-`POST`リクエストを使用してモデルをアップロードしますが、最初に`_ltr`インデックスと機能セットがLearning to Rankプラグインにアップロードされていることを確認する必要があります。 ([LESモニタリングウィジェット](./monitoring-elasticsearch.md)から）Kibanaを使用して、これらのタスクを簡単にします。
+`POST`リクエストを使用してモデルをアップロードしますが、最初に`_ltr`インデックスと機能セットがLearning to Rankプラグインにアップロードされていることを確認する必要があります。 （[LESモニタリングウィジェット](./monitoring-elasticsearch.md)から）Kibanaを使用して、これらのタスクを簡単にします。
 
 1. `_ltr`インデックスがまだない場合は、作成してください。
 

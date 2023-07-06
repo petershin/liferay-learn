@@ -18,6 +18,11 @@ Liferay’s portal heritage gives us a unique perspective:
 * Secure data handling
 * Digital agility
 
+```{note}
+* View the [recording](/web/guest/d/l0-4-liferays-unique-value-proposition) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) of the presentation used in the live workshop.
+```
+
 ## Integration Capabilities
 
 Digital experience platforms empower companies to embrace digital transformation. A key to effective digital transformation is providing seamless experiences by breaking down the barriers between disparate systems.
@@ -81,7 +86,3 @@ Congratulations! You have completed this module on Liferay's value proposition.
 
 Next: [The Ideal Customer Profile for Liferay Customers](../the-ideal-customer-profile.md).
 
-## Supporting Assets
-
-* View the [recording](/web/guest/d/l0-4-liferays-unique-value-proposition) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) of the presentation used in the live workshop.

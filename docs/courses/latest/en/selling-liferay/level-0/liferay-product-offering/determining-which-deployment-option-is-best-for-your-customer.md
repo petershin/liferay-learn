@@ -5,6 +5,12 @@ uuid: 88656bc5-f0df-4461-8378-b7b554668954
 
 As already noted, all deployment options are possible, but our Sales approach is SaaS-First. But, what does this really mean, and is this always going to be the right option for your customer?
 
+```{note}
+* View the [recording](/web/guest/d/l0-2a-liferay-offering) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-2a-liferay-offering-pdf) of the presentation used in the live workshop.
+* Download the [Sales Decision Flow](/documents/d/guest/new-customer-new-project-sales-decision-flow) referred to in this module.
+```
+
 ## Solving Business Problems
 
 * Customers' business problems are solved with Liferay DXP
@@ -72,12 +78,6 @@ All of these cases should progressively reduce as the product evolves, and as re
 Liferay has developed a sales decision flow to use with new customers and for new projects with existing customers. Partners can use this flow to help determine the optimal approach for each customer or project. This provides guidance on which deployment approach is right for an opportunity, covering key decision steps that will guide you towards SaaS, PaaS, PaaS with Managed Services, or Self-Hosted - and to guide you to the Solution Concierge Desk for outliers.
 
 ![Sales decision flow for new customers and new projects with existing customers.](../liferay-product-offering/images/06.png)
-
-## Supporting Assets
-
-* View the [recording](/web/guest/d/l0-2a-liferay-offering ) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/l0-2a-liferay-offering-pdf) of the presentation used in the live workshop.
-* Download the [Sales Decision Flow]/documents/d/guest/new-customer-new-project-sales-decision-flow) referred to in this module.
 
 ## What's Next
 

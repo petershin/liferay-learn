@@ -29,11 +29,11 @@ It's important to note four pieces of background information:
 
 ![The Liferay Product line has three capability sets.](./liferay-product-offering/images/01.png)
 
-## Supporting Assets
-
+```{note}
 * View the [recording](/web/guest/d/l0-2a-liferay-offering ) from the live workshop of this module.
 * Download the [PDF](/documents/d/guest/l0-2a-liferay-offering-pdf) of the presentation used in the live workshop.
 * Download the [Sales Decision Flow]/documents/d/guest/new-customer-new-project-sales-decision-flow) referred to in this module.
+```
 
 ## Supporting Every Deployment Approach
 

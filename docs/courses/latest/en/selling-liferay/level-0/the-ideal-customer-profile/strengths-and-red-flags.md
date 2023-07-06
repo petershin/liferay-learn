@@ -20,6 +20,11 @@ To help to summarize this module, there are many needs, buyers, and situations t
 * Product fit?
 * Portal and Commerce alignment?
 
+```{note}
+* View the [recording](/web/guest/d/l0-3-ideal-customer-profile) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-3-ideal-customer-profile-pdf) of the presentation used in the live workshop.
+```
+
 ## Use Cases
 
 If there are multiple use case needs, self-service needs and/or any type of complexity in the play, that is good for Liferay.
@@ -96,7 +101,3 @@ Congratulations! You've completed the module on the ideal customer profile!
 
 Next: the [horizontal challenges Liferay solves for](../what-challenges-does-liferay-solve-horizontal-solutions.md).
 
-## Supporting Assets
-
-* View the [recording](/web/guest/d/l0-3-ideal-customer-profile) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/l0-3-ideal-customer-profile-pdf) of the presentation used in the live workshop.

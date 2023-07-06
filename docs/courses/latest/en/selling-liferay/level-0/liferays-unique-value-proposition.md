@@ -22,10 +22,10 @@ This module explains Liferay’s unique value proposition, as well as the Unique
 
 While competitors claim to deliver the same value, only Liferay has the unique combination of characteristics and traits that set us apart from those competitors to provide more value to our customers.
 
-## Supporting Assets
-
+```{note}
 * View the [recording](/web/guest/d/l0-4-liferays-unique-value-proposition) from the live workshop of this module.
 * Download the [PDF](/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) of the presentation used in the live workshop.
+```
 
 ## What is a Value Proposition anyway?
 

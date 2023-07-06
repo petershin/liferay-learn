@@ -24,7 +24,6 @@ When a customer tries to log in via SSO, Liferay Cloud sends a request to your I
 
 These fields are required:
 
-* **NameID**: the user's email address (as the `idp.subjectNameId`)
 * **email**: the user's email address
 * **firstName**: the user's first name
 * **lastName**: the user's last name

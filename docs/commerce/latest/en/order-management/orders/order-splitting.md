@@ -21,7 +21,7 @@ This creates the object action on the commerce order system object.
 
 After creating the object action, 
 
-1. Open the Global Menu and navigate to *Control Panel* &rarr; *Objects*. 
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *Objects*. 
 
 1. Select the *Commerce Order* object and click *Action*. 
 
@@ -37,11 +37,11 @@ This enables order splitting for all orders that contain products from different
 
 ### Customer Order
 
-For simplicity, let's assume the customer places an order with 2 products, each from a different catalog. It shows up as a single entry in the Placed Orders widget. This is the original customer order. This order gets split only when you accept the order from the Orders application. 
+Assume that a customer places an order with 2 products, each from a different catalog. It shows up as a single entry in the *Placed Orders* page. This is the original customer order. This order gets split only when you accept the order from the *Orders* application. 
 
 ### Supplier Order
 
-Open the Global Menu and navigate to *Commerce* &rarr; *Orders*. You can see a single entry for the customer order. Select the order and click on *Accept Order*. This is when the object action on the commerce order object gets executed. Go back to the Orders page and now you should see three entries. One entry for the customer order and two entries for the supplier orders. If there were three products in the order from three different catalogs, there would be a total of four entries (one customer order + three supplier orders). The customer does not see the supplier orders.
+Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Orders*. You can see a single entry for the customer order. Select the order and click on *Accept Order*. This is when the object action on the commerce order object gets executed. Go back to the Orders page and there are three entries now. One entry denoting the customer order and two entries denoting the supplier orders. If there were three products in the original order from three different catalogs, there would be a total of four entries (one customer order + three supplier orders). The customer does not see the supplier orders.
 
 ### Splitting Discounts
 
@@ -51,7 +51,12 @@ To be fair to all suppliers fulfilling a split order, discounts are split betwee
 
 The original order's total value is $100 and has a fixed order discount of $10. It is split into between two suppliers, A and B, with values $25 and $75 respectively. The discount is split among these two suppliers based on the percentage value of the supplier order with respect to the original order. Here, supplier A's order value of $25 makes up 25% of the original order value. Therefore, supplier A's order gets a discount that is 25% of the original discount. 
 
+```{note}
+The above illustration is valid only for fixed discounts. For percentage discounts, the percentage amounts are deducted from each supplier order. 
+```
+
 ## Fulfilling Split Orders
 
-From a customer perspective, there is no change in how information appears. Only administrators can view the supplier orders from the Placed Orders screen after splitting. A buyer only sees the orders they placed. 
+From a customer perspective, there is no change in how information appears. Only administrators can view the supplier orders from the *Placed Orders* screen after splitting. The customer only sees the orders they placed. 
 
+When the supplier makes changes to the supplier order, it is directed back to the customer order as well. For example, if one supplier ships their order and updates the tracking number for one of the shipments, this is visible to the customer for that product. The order status moves from processing to partially shipped. 

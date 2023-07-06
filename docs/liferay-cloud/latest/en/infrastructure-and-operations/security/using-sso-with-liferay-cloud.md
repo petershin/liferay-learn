@@ -13,13 +13,25 @@ In this scenario, Liferay Cloud functions as the Service Provider, the customer 
 
 To enable SSO for your Liferay Cloud project the following steps need to be taken:
 
+1. [Verify Your IdP Has the Correct User Profile Data Mapping](#configure-the-correct-user-profile-data-mapping-with-your-identity-provider)
 1. [Provide IdP Metadata to the Liferay Cloud Team](#provide-identity-provider-metadata-to-the-liferay-cloud-team)
 1. [Liferay Cloud Team Imports Provided IdP Data and Provides Service Provider (SP) Metadata](#liferay-cloud-team-imports-provided-idp-data-and-provides-service-provider-metadata)
 1. [Import SP Metadata Provided by the Liferay Cloud Team](#import-sp-metadata-provided-by-the-liferay-cloud-team)
 
+### Configure the Correct User Profile Data Mapping with Your Identity Provider
+
+When a customer tries to log in via SSO, Liferay Cloud sends a request to your IdP system and attempts to match its own user profile data with the response it gets. You must configure your IdP so that the user profile data in the response is mapped to fields that match what Liferay Cloud expects.
+
+These fields are required:
+
+* **NameID**: the user's email address (as the `idp.subjectNameId`)
+* **email**: the user's email address
+* **firstName**: the user's first name
+* **lastName**: the user's last name
+
 ### Provide Identity Provider Metadata to the Liferay Cloud Team
 
-Client who wish to enable SSO for their Liferay Cloud project will need to provide their **IdP** system's metadata which must include the following information:
+Client who wish to enable SSO for their Liferay Cloud project will need to provide their IdP system's metadata which must include the following information:
 
 | Field | Description |
 | :--- | :--- |

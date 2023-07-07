@@ -32,8 +32,6 @@ Liferay uses Elasticsearch to search and index content. In a Liferay cluster, El
    docker exec -it elasticsearch bash -c '/usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-icu && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-kuromoji && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-smartcn && /usr/share/elasticsearch/bin/elasticsearch-plugin install analysis-stempel'
    ```
 
-   Note, though not required, these provide additional search support for Unicode and other languages.
-
 The next step is [configuring the DXP cluster](./configuring-the-dxp-cluster.md).
 
 ## Relevant Concepts

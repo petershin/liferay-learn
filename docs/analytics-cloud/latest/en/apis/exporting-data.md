@@ -20,7 +20,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
    For example, a request for page data might look like this:
 
    ```
-   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z'
+   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" https://analytics.liferay.com/api/reports/export/page\?fromDate=2023-01-01'T'00:00:01.000'Z'\&toDate\=2023-03-01'T'23:59:59.000'Z'
    ```
 
 1. After requesting the data, a message like this appears:
@@ -36,7 +36,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
    If you wish to download the data as a JSON file, add `>> [filename.json]` to the end of the request. For example:
 
    ```
-   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" -L http://analytics.liferay.com/api/reports/export/page?fromDate=2022-01-01'T'00:00:01.000'Z'&toDate=2022-01-05'T'23:59:59.000'Z' >> page-data.json
+   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" https://analytics.liferay.com/api/reports/export/page\?fromDate=2023-01-01'T'00:00:01.000'Z'\&toDate\=2023-03-01'T'23:59:59.000'Z' >> page-data.json
    ```
 
    Requests are handled one at a time. If a second request is made while the first request is still running, you will see a message `"status":"PENDING"` until the first request has finished processing.

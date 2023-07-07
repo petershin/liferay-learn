@@ -39,6 +39,8 @@ Liferay provides a variety of solutions to streamline customer experiences for e
 
 * **Integration Platform** : Connect all your data sources, machines, Internet-of-Things (IoT), and back-end systems to provide a unified view of accurate, real-time data on one platform.
 
+## What's Next
+
 Congratulations! You have completed this module on industry solutions. 
 
-[Back to Level 0](../../level-0.md)
+Next, find out who are the [Main Competitors](../main-competitors-faced-by-liferay.md) faced by Liferay.

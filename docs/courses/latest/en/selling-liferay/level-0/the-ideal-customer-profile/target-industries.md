@@ -17,7 +17,7 @@ Liferay is used across almost all industry verticals; however we have particular
 * Government & Public Sector
 * Energy & Utilities
 
-![Liferay has had great success focusing on specific industry verticals.](./the-ideal-customer-profile-target-industries/images/01.png)
+![Liferay has had great success focusing on specific industry verticals.](./the-ideal-customer-profile/target-industries/images/01.png)
 
 ## Financial Services
 

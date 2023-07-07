@@ -21,6 +21,11 @@ Liferay defines a DXP as follows:
 
 ![Digital Experience Platforms provide all the tools necessary to external and internal digital experiences.](./what-is-a-digital-experience-platform/images/01.png)
 
+```{note}
+* View the [recording](/web/guest/d/l0-1-introduction-to-liferay) from the live workshop of this module.
+* Download the [PDF](/documents/d/guest/l0-1-introduction-to-liferay-pdf) of the presentation used in the live workshop.
+```
+
 ## Liferay Portal Heritage
 
 Portal solutions focus on the needs of the long-term relationship between organizations and their customers, employees, partners, suppliers, and so on.
@@ -83,8 +88,3 @@ Some global organizations using Liferay Platform for serving their customers and
 Congratulations! You've now completed the Introduction to Liferay module. 
 
 Next: learn about the [Liferay Product Offering](../liferay-product-offering.md).
-
-## Supporting Assets
-
-* View the [recording](/web/guest/d/l0-1-introduction-to-liferay) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/l0-1-introduction-to-liferay-pdf) of the presentation used in the live workshop.

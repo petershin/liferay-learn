@@ -13,7 +13,8 @@ Liferayでは、Webインターフェイスで利用可能なアクションと�
 
 LiferayのヘッドレスAPIは、Liferay DXPリソースとの [RESTful](https://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#relwwwrest) インタラクションを可能にします。 これらのAPIは、RESTインターフェイスの標準を定義する [OpenAPI仕様](https://swagger.io/docs/specification/about/) に準拠しているため、より簡単な実装と使用が可能です。
 
-`［server］［:port］/o/api`で実行中のLiferay DXPインスタンスの定義にアクセスすると、これらのAPIの詳細情報を確認できます。 最も関連性の高いドキュメントは、`［server］［:port］/o/［api-name］/［api-version］/openapi.［yaml or json］`でraw形式でも入手できます。 ドキュメントは [SwaggerHub](https://app.swaggerhub.com/apis/liferayinc/) で入手できますが、実行中のバージョンと一致しない場合があります。
+`［server］［:port］/o/api`で実行中のLiferay DXPインスタンスの定義にアクセスすると、これらのAPIの詳細情報を確認できます。 最も関連性の高いドキュメントは、`［server］［:port］/o/［api-name］/［api-version］/openapi.［yaml or json］`でraw形式でも入手できます。 ドキュメントは [SwaggerHub](https://app.swaggerhub.com/search?owner=liferayinc
+) で入手できますが、実行中のバージョンと一致しない場合があります。
 
 ### GraphQL API
 

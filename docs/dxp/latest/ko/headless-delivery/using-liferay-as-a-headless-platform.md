@@ -13,7 +13,8 @@ Liferay는 웹 인터페이스에서 사용할 수 있는 것과 동일한 종�
 
 Liferay의 헤드리스 API는 Liferay DXP 리소스와 [RESTful](https://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#relwwwrest) 상호 작용을 허용합니다. 이러한 API는 REST 인터페이스의 표준을 정의하는 [OpenAPI 사양](https://swagger.io/docs/specification/about/) 을 따르므로 보다 간단한 구현 및 사용이 가능합니다.
 
-`[server][:port]/o/api`에서 실행 중인 Liferay DXP 인스턴스의 정의에 액세스하여 이러한 API에 대한 자세한 정보를 찾을 수 있습니다. 가장 관련 있는 문서는 원시 형식으로 `[server][:port]/o/[api-name]/[api-version]/openapi.[yaml 또는 json]` 에서도 사용할 수 있습니다. 설명서는 [SwaggerHub](https://app.swaggerhub.com/apis/liferayinc/) 에서 사용할 수 있지만 실행 중인 버전과 일치하지 않을 수 있습니다.
+`[server][:port]/o/api`에서 실행 중인 Liferay DXP 인스턴스의 정의에 액세스하여 이러한 API에 대한 자세한 정보를 찾을 수 있습니다. 가장 관련 있는 문서는 원시 형식으로 `[server][:port]/o/[api-name]/[api-version]/openapi.[yaml 또는 json]` 에서도 사용할 수 있습니다. 설명서는 [SwaggerHub](https://app.swaggerhub.com/search?owner=liferayinc
+) 에서 사용할 수 있지만 실행 중인 버전과 일치하지 않을 수 있습니다.
 
 ### GraphQL API
 

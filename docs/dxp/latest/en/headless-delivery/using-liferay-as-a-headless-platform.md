@@ -16,7 +16,7 @@ There are three different approaches available for clients to connect to Liferay
 
 Liferay's headless APIs allow [RESTful](https://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#relwwwrest) interaction with Liferay DXP resources. These APIs follow the [OpenAPI specification](https://swagger.io/docs/specification/about/), which defines a standard for REST interfaces, allowing for more straightforward implementation and consumption.
 
-You can find detailed information on these APIs by accessing the definitions on a running Liferay DXP instance at `[server][:port]/o/api`. The most relevant documentation is also available at `[server][:port]/o/[api-name]/[api-version]/openapi.[yaml or json]` in a raw format. The documentation is available on [SwaggerHub](https://app.swaggerhub.com/apis/liferayinc/), but may not match your running version.
+You can find detailed information on these APIs by accessing the definitions on a running Liferay DXP instance at `[server][:port]/o/api`. The most relevant documentation is also available at `[server][:port]/o/[api-name]/[api-version]/openapi.[yaml or json]` in a raw format. The documentation is available on [SwaggerHub](https://app.swaggerhub.com/search?owner=liferayinc), but may not match your running version.
 
 ### GraphQL API
 

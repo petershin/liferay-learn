@@ -49,5 +49,3 @@ When discussing Liferay’s key capabilities for modern intranets, highlight Lif
 That's the final section of this module, congratulations!
 
 Learn about Liferay's target [Industry Solutions](../what-challenges-does-liferay-solve-industry-solutions.md).
-
-Back to [Level 0](../../level-0.md)

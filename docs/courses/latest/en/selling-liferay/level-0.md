@@ -84,10 +84,13 @@ Learn more about the scenarios where Liferay's offerings are strongest.
 :link: ./level-0/what-challenges-does-liferay-solve-horizontal-solutions.md
 
 Learn more about common horizontal solutions built with Liferay.
+:::
+
 :::{grid-item-card} What Challenges Does Liferay Solve - Industry Solutions
 :link: ./level-0/what-challenges-does-liferay-solve-industry-solutions.md
 
 This module covers how Liferay solves some of the common challenges seen in particular industries as well as the most common solutions for each industry.
+:::
 
 :::{grid-item-card} Main Competitors Faced by Liferay
 :link: ./level-0/main-competitors-faced-by-liferay.md

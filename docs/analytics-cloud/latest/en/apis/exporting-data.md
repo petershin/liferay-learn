@@ -31,7 +31,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
 
    It may take some time (i.e. a few minutes to a few hours) for the request to finish processing depending on the size of the data being fetched.
 
-1. Download the export file once the download is ready. Note that if the request is still processing, a message with `"Please come back later.","status":"PENDING"` appears.
+1. When the download is ready, download the export file. If the request is still processing, a message with `"Please come back later.","status":"PENDING"` appears.
 
    Use the `--output` parameter to download the ZIP file. For example:
 

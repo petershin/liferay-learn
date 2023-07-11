@@ -7,7 +7,7 @@ uuid: 819aa6d5-2b61-4438-b0dc-b848e6a25c87
 
 # Deploying Code to LXC
 
-Now that you've accessed and started using the Cloud console, you're ready to deploy a client extension project to you LXC environment.
+Now that you've accessed and started using the Cloud console, you're ready to deploy a client extension project to your LXC environment.
 
 ```{note}
 This module requires a project on Liferay Experience Cloud. If you only have a project on the Self-Managed version (LXC-SM), skip ahead to [Cloud Configuration](./cloud-configuration.md).

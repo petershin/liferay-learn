@@ -18,7 +18,7 @@ First, find your production environment's Ingress load balancer's IP address.
 
 1. In the Liferay Cloud console, navigate to your production environment and click *Network* from the left-side menu. 
 
-1. On the Network page, your load balancer's IP address is shown in the *Ingress Endpoints* section.
+1. On the Network page, your load balancer's IP address is shown in the Ingress Endpoints section.
 
 ![Your load balancer's IP address is shown at the bottom of the Ingress Endpoints section on the Network page.](./configuring-your-sites-domain/images/01.png)
 

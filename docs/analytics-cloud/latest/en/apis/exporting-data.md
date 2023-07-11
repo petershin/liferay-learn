@@ -12,7 +12,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
 1. The data request takes the following format:
 
    ```
-   curl -i -L -H "Authorization: Bearer [token]" -L https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
+   curl -i -L -H "Authorization: Bearer [token]" https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
    ```
 
    Replace `[token]` with your specific access token. Replace `[type]` with `event`, `individual`, `page`, or `segment`. Give a start date and time by replacing `[ISO 8601 date and time]` after `fromDate=`. Give an end date and time by replacing `[ISO 8601 date and time]` after `toDate=`. Make sure to use the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date and time format. Note that the start date and time and end date and time are required in the request.
@@ -31,13 +31,15 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
 
    It may take some time (i.e. a few minutes to a few hours) for the request to finish processing depending on the size of the data being fetched.
 
-1. Run the same command again, and the data is returned in your terminal window. Note that if the request is still processing, a message with `"status":"RUNNING"` appears. Check again later.
+1. Download the export file once the download is ready. Note that if the request is still processing, a message with `"Please come back later.","status":"PENDING"` appears.
 
-   If you wish to download the data as a JSON file, add `>> [filename.json]` to the end of the request. For example:
+   Use the `--output` parameter to download the ZIP file. For example:
 
    ```
-   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" https://analytics.liferay.com/api/reports/export/page\?fromDate=2023-01-01'T'00:00:01.000'Z'\&toDate\=2023-03-01'T'23:59:59.000'Z' >> page-data.json
+   curl -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" https://analytics.liferay.com/api/reports/export/page\?fromDate=2023-01-01'T'00:00:01.000'Z'\&toDate\=2023-03-01'T'23:59:59.000'Z' --output foo.zip
    ```
+
+   Note, do not use the `-i` include parameter when downloading the ZIP file.
 
    Requests are handled one at a time. If a second request is made while the first request is still running, you will see a message `"status":"PENDING"` until the first request has finished processing.
 

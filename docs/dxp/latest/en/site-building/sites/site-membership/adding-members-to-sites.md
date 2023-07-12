@@ -15,7 +15,7 @@ The steps below show how to add Users manually to Sites and how to provide optio
 
 Administrators can manage Site members from that Site's *Site Membership* page.
 
-1. Open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)), click on *Go to Other Site*, and select the site that you want to manage members for.
+1. Open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)), click on *Go to Other Site*, and select the site you want to manage. 
 1. Click on *People* &rarr; *Memberships* in the Product Menu.
 
 From here you can manage Site memberships, Organizations, and User Group associations. You can learn more about those in [Users and Organizations](../../../users-and-permissions.md). On this page, you can see a list of all of the current Users of the Site and you can add or remove user memberships from the Site.

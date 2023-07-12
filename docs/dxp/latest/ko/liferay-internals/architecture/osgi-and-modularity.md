@@ -6,7 +6,7 @@
 * 프레임워크는 [OSGi](https://www.osgi.org/resources/what-is-osgi/) 표준을 사용합니다. 다른 프로젝트에서 OSGi를 사용한 경험이 있는 경우 기존 지식을 적용할 수 있습니다.
 * 모듈은 서비스 레지스트리에 서비스를 게시하고 서비스 레지스트리에서 서비스를 사용합니다. 서비스 계약은 서비스 공급자와 소비자로부터 느슨하게 연결되며 레지스트리는 계약을 자동으로 관리합니다.
 * 모듈의 종속성은 컨테이너에 의해 자동으로 동적으로 관리됩니다(재시작 필요 없음).
-* 컨테이너는 [개의 모듈 수명 주기](./module-lifecycle.md) 을 동적으로 관리합니다. Liferay가 실행되는 동안 모듈을 설치, 시작, 업데이트, 중지 및 제거할 수 있으므로 배포가 간단합니다.
+* 컨테이너는 [모듈 수명 주기](./module-lifecycle.md) 을 동적으로 관리합니다. Liferay가 실행되는 동안 모듈을 설치, 시작, 업데이트, 중지 및 제거할 수 있으므로 배포가 간단합니다.
 * 패키지가 명시적으로 [내보내기](../fundamentals/exporting-packages.md) 인 모듈의 클래스만 공개적으로 표시됩니다. OSGi는 기본적으로 다른 모든 클래스를 숨깁니다.
 * 모듈 및 패키지는 [의미상 버전](../fundamentals/semantic-versioning.md) 이며 다른 패키지의 특정 버전에 대한 종속성을 선언합니다. 이를 통해 동일한 패키지의 서로 다른 버전에 의존하는 두 개의 애플리케이션이 각각 고유한 패키지 버전에 의존할 수 있습니다.
 * 팀 구성원은 모듈을 병렬로 개발, 테스트 및 개선할 수 있습니다.
@@ -37,7 +37,7 @@ Then, follow these steps to deploy the example:
 1. Download and unzip `liferay-r9u2.zip`.
 
     ```bash
-    curl hhttps://learn.liferay.com/dxp/latest/en/liferay-internals/architecture/liferay-r9u2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/architecture/liferay-r9u2.zip -O
     ```
 
     ```bash
@@ -110,7 +110,7 @@ The `build.gradle` file specifies the module's dependencies.
 
 하나의 아티팩트인 Liferay 릴리스 API JAR에 따라 다릅니다. Liferay 제품 릴리스와 관련된 Liferay, Bnd 및 OSGi 아티팩트가 포함된 대형 JAR입니다.
 
-모듈의 이름은 **Acme R9U2 API** 입니다. 그것의 상징적인 이름---유일성을 보장하는 이름---은 `com.acme.r9u2.api`입니다. 다음으로 시맨틱 버전이 선언되고 패키지는 **export** 이며 이는 다른 모듈에서 사용할 수 있음을 의미합니다. 이 모듈의 패키지는 다른 모듈이 구현할 수 있는 API일 뿐입니다.
+모듈의 이름은 *Acme R9U2 API*입니다. 그것의 상징적인 이름---유일성을 보장하는 이름---은 `com.acme.r9u2.api`입니다. 다음으로 시맨틱 버전이 선언되고 패키지는 *export*이며 이는 다른 모듈에서 사용할 수 있음을 의미합니다. 이 모듈의 패키지는 다른 모듈이 구현할 수 있는 API일 뿐입니다.
 
 마지막으로 Java 클래스가 있는데 이 경우에는 인터페이스입니다.
 
@@ -125,7 +125,7 @@ The `build.gradle` file specifies the module's dependencies.
 
 ## 구현
 
-인터페이스는 API만 정의합니다. 무언가를 하려면 구현해야 합니다. 이것이 구현(또는 제공자) 모듈의 용도입니다. Greeter API의 구현 모듈은 다음과 같습니다.
+인터페이스는 API만 정의합니다. 무언가를 하려면 구현해야 합니다. 이것이 구현(또는 제공자) 모듈의 목적입니다. Greeter API의 구현 모듈은 다음과 같습니다.
 
 ```
 [project root]
@@ -211,9 +211,9 @@ Java 클래스가 조금 더 진행됩니다.
 :lines: 8-21
 ```
 
-위의 메서드는 `Greeter`의 `greet` 메서드를 호출합니다. `com.acme.r9u2.Greeter` 은 구현 모듈이 등록하는 OSGi 서비스 유형입니다. 레지스트리에서 `Greeter` 서비스를 받으려면 `Greeter` 필드 `_greeter`에 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 추가해야 합니다.
+위의 메서드는 `Greeter`의 `greet` 메서드를 호출합니다. `com.acme.r9u2.Greeter` 구현 모듈이 등록하는 OSGi 서비스 유형입니다. 레지스트리에서 `Greeter` 서비스를 받으려면 `Greeter` 필드 `_greeter`에 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 추가해야 합니다.
 
-`R9U2OSGiCommands` 클래스는 자체 유형의 OSGi 서비스를 제공합니다. 두 속성은 `r9u2`범위에서 `greet` 이라는 명령 함수로 Gogo 셸 명령을 정의합니다. 배포된 `R9U2OSGiCommands` 구성 요소는 `문자열` 를 입력으로 사용하는 Gogo Shell 명령 `r9u2:greet` 을 제공합니다.
+`R9U2OSGiCommands` 클래스는 자체 유형의 OSGi 서비스를 제공합니다. 두 속성은 `r9u2`범위에서 `greet` 이라는 명령 함수로 Gogo 셸 명령을 정의합니다. 배포된 `R9U2OSGiCommands` 구성 요소는 `문자열` 입력으로 사용하는 Gogo Shell 명령 `r9u2:greet` 을 제공합니다.
 
 이 가장 기본적인 예제는 모듈 기반 개발이 쉽고 간단하다는 것을 분명히 해야 합니다. API-공급자-소비자 계약은 느슨한 결합을 촉진하여 소프트웨어를 쉽게 관리, 향상 및 지원할 수 있도록 합니다.
 
@@ -232,7 +232,7 @@ Liferay 소스의 일반적인 애플리케이션을 보면 일반적으로 최�
 
 당신은 아직 흥분? 개발을 시작할 준비가 되셨습니까? 다음은 자세히 알아볼 수 있는 몇 가지 리소스입니다.
 
-## 관련 주제
+## 관련 항목
 
 * [OSGi 얼라이언스](https://www.osgi.org/)
 * [OSGi EnRoute에서 OSGi 시작하기](https://enroute.osgi.org/)

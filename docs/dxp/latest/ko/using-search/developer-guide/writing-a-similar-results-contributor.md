@@ -2,7 +2,7 @@
 
 > **가입자**
 
-> **가용성:** 이 기능은 Liferay DXP 7.3+와 함께 번들로 제공되는 서비스 공급자 인터페이스(SPI)에 의존합니다. [Liferay Marketplace](https://web.liferay.com/marketplace/-/mp/application/172465398) 의 유사한 결과 위젯 설치를 통해 Fix Pack 5+의 Liferay DXP 7.2에서 사용할 수 있습니다.
+> **가용성:** 이 기능은 Liferay DXP 7.3+와 함께 번들로 제공되는 서비스 공급자 인터페이스(SPI)에 의존합니다. [Liferay Marketplace](https://web.liferay.com/marketplace/-/mp/application/172465398)의 유사한 결과 위젯 설치를 통해 Fix Pack 5+의 Liferay DXP 7.2에서 사용할 수 있습니다.
 
 `SimilarResultsContributor`을 구현하여 [유사한 결과 위젯](../search-pages-and-widgets/similar-results.md) 에 애플리케이션의 사용자 정의 콘텐츠를 표시할 수 있습니다. 기여자가 작동하려면 유사한 결과 위젯이 콘텐츠를 페이지의 주요 자산으로 감지할 수 있어야 합니다. 즉, 지원되는 Liferay DXP 자산(예: 블로그 항목 및 위키 페이지)과 같이 "디스플레이 위젯"의 URL을 통해 표시할 수 있어야 합니다. 유사한 결과 위젯은 사용자 지정 기여자가 없어도 Lifery DXP의 Asset Publisher에 표시된 모든 콘텐츠와 함께 이미 사용할 수 있습니다.
 <!-- I'd like to see the image highlight what someone should be noticing in this image because it is not immediately obvious. -->
@@ -11,16 +11,15 @@
 기술 자료 응용 프로그램은 기본적으로 KB 기사에 대해 `SimilarResultsContributor` 구현하지 않으므로 이 예제에서는 하나를 구현합니다. 간단하게 여기에서는 응용 프로그램의 루트 폴더에 있는 KB 기사만 다룹니다.
 
 ## 기술 자료 문서에 대한 SimilarResultsContributor 배포
-
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계에 따라 Liferay DXP 인스턴스에서 예시 `SimilarResultsContributor`를 시작하고 실행합니다.
+Then, follow these steps to get an example `SimilarResultsContributor` up and running on your Liferay DXP instance:
 
-1. [Acme 유사한 결과 기여자](./liferay-r1s1.zip) 를 다운로드하고 압축을 풉니다.
+1. Download and unzip [Acme Similar Results Contributor](./liferay-r1s1.zip).
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-r1s1.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-r1s1.zip -O
     ```
 
     ```bash
@@ -43,24 +42,23 @@
     STARTED com.acme.r1s1.impl_1.0.0 [1009]
     ```
 
-1. 예제 기여자가 작동하는지 확인합니다. 브라우저를 `https://localhost:8080`로 열어 시작합니다.
+1. 예제 기여자가 작동하는지 확인하십시오. 브라우저를 `https://localhost:8080`로 열어 시작합니다.
 
-1. **사이트 메뉴** &rarr; **콘텐츠** &rarr; **기술 자료** 에 일부 KB 기사 추가 .
+1. _사이트 메뉴_ &rarr; _콘텐츠_ &rarr; _기술 자료_에 일부 KB 기사 추가 .
 
-    유사한 **Title** 및 **Content** 필드가 있는지 확인하십시오. 이 문자열을 사용하여 세 개의 기사를 만들 수 있습니다(제목과 내용에 동일한 문자열 사용).
+    유사한 _Title_ 및 _Content_ 필드가 있는지 확인하십시오. 이 문자열을 사용하여 세 개의 기사를 만들 수 있습니다(제목과 내용에 동일한 문자열 사용).
 
-    **테스트 KB 기사 1**
+    _테스트 KB 기사 1_
 
-    **테스트 KB 문서 2**
+    _테스트 KB 문서 2_
 
-    **테스트 KB 기사 3**
+    _테스트 KB 기사 3_
 
 1. Knowledge Base Display 위젯을 페이지에 추가한 다음 유사한 결과 위젯을 추가합니다.
 
-1. 유사한 결과 위젯의 위젯 구성을 열고 다음 설정에 대해 값을 **1** 로 설정했는지 확인합니다.
+1. 유사한 결과 위젯의 위젯 구성을 열고 다음 설정에 대해 값을 _1_ 로 설정했는지 확인합니다.
 
-    최소 기간 빈도: 1
-    최소 문서 빈도: 1
+    최소 기간 빈도: 1 최소 문서 빈도: 1
 
 1. KB 문서 중 하나를 클릭하여 기본 자산으로 표시하도록 선택합니다.
 
@@ -240,10 +238,10 @@ private KBArticleLocalService _kbArticleLocalService;
 
 유사한 결과 위젯에 애플리케이션의 맞춤 콘텐츠를 제공하는 데 관련된 대부분의 작업은 표시 URL을 사용하는 작업입니다. Liferay의 자체 자산이 표시 URL을 생성하는 방법을 알아보려면 엔티티의 `*AssetRenderer` 클래스의 `getURLView` 메서드를 검사하십시오.
 
-* [`JournalArticleAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/journal/journal-web/src/main/java/com/liferay/journal/web/internal/asset/model/JournalArticleAssetRenderer.java#L352-L383) , Liferay DXP 7.3.2 GA3
-* [`WikiPageAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/wiki/wiki-web/src/main/java/com/liferay/wiki/web/internal/asset/model/WikiPageAssetRenderer.java#L232-L249) , 라이프레이 DXP 7.3.2 GA3
-* [`BlogsEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/blogs/blogs-web/src/main/java/com/liferay/blogs/web/internal/asset/model/BlogsEntryAssetRenderer.java#L202-L218) , Liferay DXP 7.3.2 GA3
-* [`DLFileEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/asset/model/DLFileEntryAssetRenderer.java#L280-L297) , 라이프레이 DXP 7.3.2 GA3
+* [`JournalArticleAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/journal/journal-web/src/main/java/com/liferay/journal/web/internal/asset/model/JournalArticleAssetRenderer.java#L352-L383), Liferay DXP 7.3.2 GA3
+* [`WikiPageAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/wiki/wiki-web/src/main/java/com/liferay/wiki/web/internal/asset/model/WikiPageAssetRenderer.java#L232-L249), 라이프레이 DXP 7.3.2 GA3
+* [`BlogsEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/blogs/blogs-web/src/main/java/com/liferay/blogs/web/internal/asset/model/BlogsEntryAssetRenderer.java#L202-L218), Liferay DXP 7.3.2 GA3
+* [`DLFileEntryAssetRenderer#getURLView`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/document-library/document-library-web/src/main/java/com/liferay/document/library/web/internal/asset/model/DLFileEntryAssetRenderer.java#L280-L297), 라이프레이 DXP 7.3.2 GA3
 
 앞서 언급했듯이 이 예제는 응용 프로그램의 루트 폴더에서 KB 기사와 함께 작동할 `SimilarResultsModelDocumentContributor` 생성을 보여줍니다. KB 폴더에 대한 지원을 추가하는 것이 가능하며 의욕이 있는 독자에게는 흥미로운 연습입니다. 영감을 얻으려면 [`DocumentLibrarySimilarResultsContributor`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/dxp/apps/portal-search-similar-results/portal-search-similar-results-web/src/main/java/com/liferay/portal/search/similar/results/web/internal/contributor/document/library/DocumentLibrarySimilarResultsContributor.java) 의 소스 코드를 살펴보십시오.
 

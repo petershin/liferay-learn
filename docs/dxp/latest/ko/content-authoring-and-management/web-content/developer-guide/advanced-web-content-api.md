@@ -13,10 +13,10 @@ Web Content API에 대한 소개는 [Web Content API 기초](./web-content-api-b
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 [샘플 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) 를 다운로드하고 압축을 풉니다.
+그런 다음 [샘플 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip)를 다운로드하고 압축을 풉니다.
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip -O
 ```
 
 ```bash
@@ -29,8 +29,8 @@ unzip liferay-m7b2.zip
 
 ### 사이트 ID 식별
 
-1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **구성** &rarr; **사이트 설정** 로 이동합니다.
-1. 플랫폼 섹션에서 **사이트 구성** 클릭하십시오. Liferay DXP 버전 7.3 이하의 경우 **일반** 탭을 클릭합니다.
+1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *구성* &rarr; *사이트 설정*로 이동합니다.
+1. 플랫폼 섹션에서 *사이트 구성*클릭하십시오. Liferay DXP 버전 7.3 이하의 경우 *일반* 탭을 클릭합니다.
 1. 사이트 ID 아래에서 사이트 식별자를 찾습니다.
 
    ![사이트 설정 및 사이트 구성 옵션에서 사이트 ID를 식별합니다.](./advanced-web-content-api/images/05.png)
@@ -39,10 +39,10 @@ unzip liferay-m7b2.zip
 
 여기에서는 이미지를 비롯한 다양한 콘텐츠 필드가 포함된 웹 콘텐츠 기사로 작업합니다. 샘플 웹 콘텐츠 기사에 대해 이러한 이미지를 추가하려면 다음 단계를 따르십시오.
 
-1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **콘텐츠 & 데이터** &rarr; **문서 및 미디어** 으로 이동합니다.
-1. **추가** 버튼(![Add](../../../images/icon-add.png))을 클릭하고 **여러 파일 업로드** 선택합니다.
+1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *콘텐츠 & 데이터* &rarr; *문서 및 미디어*으로 이동합니다.
+1. *추가* 버튼(![Add](../../../images/icon-add.png))을 클릭하고 *여러 파일 업로드*선택합니다.
 1. `foo.png`, `bar.png`및 `goo.png` 이미지를 [샘플 프로젝트 폴더](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) 에서 드롭 영역으로 끌어다 놓습니다.
-1. **게시** 클릭합니다.
+1. *게시*클릭합니다.
 
 또는 `Document_POST_ToSite.sh` 스크립트를 사용하여 REST API `문서` 서비스를 사용하여 각 이미지를 개별적으로 게시할 수 있습니다.
 
@@ -84,7 +84,7 @@ JSON 출력에는 `id` 필드에 이미지 식별자가 포함됩니다.
 }
 ```
 
-REST API를 사용하여 문서 작업에 대한 자세한 내용은 [문서 API 기본 사항](../../documents-and-media/developer-guide/document-api-basics.md)을 참조하십시오.
+REST API를 사용한 문서 작업에 대한 자세한 내용은 [문서 API 기본 사항](../../documents-and-media/developer-guide/document-api-basics.md)참조하십시오.
 
 ### 샘플 구조 만들기
 
@@ -92,8 +92,8 @@ REST API를 사용하여 문서 작업에 대한 자세한 내용은 [문서 API
 REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 구조를 생성할 수 없습니다.
 ```
 
-1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 으로 이동합니다.
-1. **Structures** 탭을 선택하고 **Add** 버튼(![Add](../../../images/icon-add.png))을 클릭합니다.
+1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*으로 이동합니다.
+1. *Structures* 탭을 선택하고 *Add* 버튼(![Add](../../../images/icon-add.png))을 클릭합니다.
 1. 다음 정보를 사용하여 새 웹 콘텐츠 구조를 만듭니다.
 
     - 이름: `푸`
@@ -108,7 +108,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 구조를 �
 
 1. 각 구조 필드를 클릭하고 해당 필드 참조 값을 업데이트합니다(아래 표 참조). 사이드바의 고급 섹션에서 필드 참조 값을 찾을 수 있습니다.
 
-1. **저장** 클릭합니다.
+1. *저장*클릭합니다.
 
   | 분야       | 새 필드 참조 값                  |
   |:-------- |:-------------------------- |
@@ -129,38 +129,38 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
 구조의 `이미지` 필드를 포함하는 웹 콘텐츠 템플릿을 만듭니다.
 
-1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 으로 이동합니다.
-1. **템플릿** 탭을 선택하고 **추가** 버튼(![Add](../../../images/icon-add.png))을 클릭합니다.
-1. 템플릿 이름으로 **Foo** 을 입력합니다.
-1. 속성 측면 패널에서 구조 필드 옆에 있는 **추가** 버튼(![Add](../../../images/icon-plus.png))을 클릭합니다.
+1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*으로 이동합니다.
+1. *템플릿* 탭을 선택하고 *추가* 버튼(![Add](../../../images/icon-add.png))을 클릭합니다.
+1. 템플릿 이름으로 _Foo_ 을 입력합니다.
+1. 속성 측면 패널에서 구조 필드 옆에 있는 *추가* 버튼(![Add](../../../images/icon-plus.png))을 클릭합니다.
 
    ![구조 필드 옆에 있는 추가 버튼을 클릭하여 템플릿을 구조에 연결합니다.](./advanced-web-content-api/images/06.png)
 
-1. [이전 섹션](#create-the-structure-sample) 에서 **Foo** 웹 콘텐츠 구조를 선택합니다.
-1. FreeMarker 편집기에 포함된 기본 `<#-- --> ` 블록 주석을 삭제합니다.
-1. 사이드바에서 **요소**(![Elements](../../../images/icon-list-ul.png))을 클릭합니다.
-1. 필드 그룹에서 **텍스트** , **이미지** , **날짜** 및 **단일 선택** 필드를 클릭하여 템플릿에 추가합니다. FreeMarker 편집기에서 각 필드가 새 줄로 시작하는지 확인하십시오.
+1. [이전 섹션](#create-the-structure-sample)에서 _Foo_ 웹 콘텐츠 구조를 선택합니다.
+1. FreeMarker 편집기에 포함된 기본 `<#-- -->` 블록 주석을 삭제합니다.
+1. 사이드바에서 *요소* (![Elements](../../../images/icon-list-ul.png))을 클릭합니다.
+1. 필드 그룹에서 *텍스트*, *이미지*, *날짜*및 *단일 선택* 필드를 클릭하여 템플릿에 추가합니다. FreeMarker 편집기에서 각 필드가 새 줄로 시작하는지 확인하십시오.
 
    ![FreeMarker 편집기에서 웹 콘텐츠 템플릿 필드를 편집합니다.](./advanced-web-content-api/images/07.gif)
 
-1. **저장** 클릭합니다.
+1. *저장*클릭합니다.
 
 구조의 `이미지` 필드 없이 두 번째 웹 콘텐츠 템플릿을 만듭니다.
 
-1. 템플릿 탭에서 **작업** 버튼(![Actions](../../../images/icon-actions.png))을 클릭하고 **복사** 선택합니다.
+1. 템플릿 탭에서 *작업* 버튼(![Actions](../../../images/icon-actions.png))을 클릭하고 *복사*선택합니다.
 
-   ![**작업** 메뉴를 사용하여 첫 번째 템플릿을 복사합니다.](./advanced-web-content-api/images/10.png)
+   ![*작업* 메뉴를 사용하여 첫 번째 템플릿을 복사합니다.](./advanced-web-content-api/images/10.png)
 
-1. 템플릿의 이름을 **Goo** 로 업데이트하고 **Copy** 클릭합니다.
+1. 템플릿의 이름을 _Goo_ 로 업데이트하고 *Copy*클릭합니다.
 
    ![템플릿의 이름을 "Goo"로 업데이트합니다.](./advanced-web-content-api/images/09.png)
 
-1. 템플릿 탭에서 새 **Goo** 템플릿을 클릭합니다.
+1. 템플릿 탭에서 새 _Goo_ 템플릿을 클릭합니다.
 1. 템플릿 편집기에서 FreeMarker 스크립트의 이미지 정보 `<#if (ImageReference.getData())></#if>` 제거합니다.
 
    ![템플릿에서 이미지 정보를 제거합니다.](./advanced-web-content-api/images/11.gif)
 
-1. **저장** 클릭합니다.
+1. *저장*클릭합니다.
 
  자세한 내용은 [웹 콘텐츠 템플릿 만들기](../web-content-templates/creating-web-content-templates.md)을 참조하십시오.
 
@@ -269,7 +269,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
 ## 이미지 ID 가져오기
 
-이전에 게시한 [이미지의 ID를 얻으려면 `Documents_GET_FromSite.sh` 스크립트](#adding-the-images-to-liferay-dxp) 사용하십시오. 이 스크립트는 `GET` HTTP 메서드 및 [사이트 ID](#identify-the-site-id) 매개변수와 함께 `문서` 서비스를 사용합니다.
+이전에 게시한 [이미지의 ID를 얻으려면 `Documents_GET_FromSite.sh` 스크립트](#adding-the-images-to-liferay-dxp)사용하십시오. 이 스크립트는 `GET` HTTP 메서드 및 [사이트 ID](#identify-the-site-id) 매개변수와 함께 `문서` 서비스를 사용합니다.
 
 | 방법 | 서비스        | 끝점                           |
 |:-- |:---------- |:---------------------------- |
@@ -392,7 +392,7 @@ REST API를 사용하여 프로그래밍 방식으로 웹 콘텐츠 템플릿을
 
 ## 웹 콘텐츠 기사 게시
 
-`StructuredContent_POST_ToSite.sh` cURL 스크립트는 `POST` HTTP 메서드와 [이전에 생성한] 샘플 구조(#create-the-sample-structure)를 사용하여 새 웹 콘텐츠 아티클을 생성합니다. 스크립트는 [Site Id](#identifying-the-site-id) , Structure Id 및 foo.png의 [image Id](#getting-the-images-ids) 를 매개변수로 사용합니다.
+`StructuredContent_POST_ToSite.sh` cURL 스크립트는 `POST` HTTP 메서드와 [이전에 생성한] 샘플 구조(#create-the-sample-structure)를 사용하여 새 웹 콘텐츠 아티클을 생성합니다. 스크립트는 [Site Id](#identifying-the-site-id), Structure Id 및 foo.png의 [image Id](#getting-the-images-ids)를 매개변수로 사용합니다.
 
 | 방법 | 서비스                 | 끝점                                         |
 |:-- |:------------------- |:------------------------------------------ |
@@ -410,7 +410,7 @@ cURL 스크립트 매개변수:
 | $2      | `contentStructureId` |
 | $3      | 이미지 `ID`             |
 
-Liferay DXP에서 새 웹 콘텐츠 기사를 찾으려면 **사이트 메뉴**(![Site menu](../../../images/icon-menu.png))를 열고 **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 로 이동합니다.
+Liferay DXP에서 새 웹 콘텐츠 기사를 찾으려면 *사이트 메뉴* (![Site menu](../../../images/icon-menu.png))를 열고 *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*로 이동합니다.
 
 ![POST HTTP 메서드의 웹 콘텐츠 기사.](./advanced-web-content-api/images/08.png)
 
@@ -584,7 +584,7 @@ cURL 스크립트 매개변수:
 | $2      | `contentStructureId` |
 | $3      | 이미지 `ID`             |
 
-## 관련 주제
+## 관련 항목
 
 - [웹 콘텐츠 API 기본 사항](./web-content-api-basics.md)
 - [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

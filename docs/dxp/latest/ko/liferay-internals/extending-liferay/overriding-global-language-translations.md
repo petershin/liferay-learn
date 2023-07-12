@@ -3,7 +3,7 @@
 Liferay DXP/Portal은 언어 번역을 사용하여 기본 로케일 및 기타 여러 로케일에 대한 제목, 레이블 및 메시지를 구현합니다. 모듈의 새 언어 번역 값을 사용하여 모든 로캘에 대해 이러한 번역을 재정의할 수 있습니다.
 
 ```{note}
-[Language Override 도구](../../system-administration/configuring-liferay/changing-language-translations.md)는 언어 번역을 재정의하는 데 권장되는 접근 방식입니다. 이 도구는 Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 사용할 수 있습니다. 이전 방법에 대해 계속 읽으십시오.
+[Language Override 도구](../../system-administration/configuring-liferay/ changing-language-translations.md)는 언어 번역을 재정의하는 데 권장되는 접근 방식입니다. 이 도구는 Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 사용할 수 있습니다. 이전 방법에 대해 계속 읽으십시오.
 ```
 
 ## 글로벌 언어 번역 검토
@@ -12,15 +12,15 @@ Liferay DXP/Portal은 언어 번역을 사용하여 기본 로케일 및 기타 
 
 소스에서:
 
-* [`liferay-[dxp|portal]/portal-impl/src/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-impl/src/content)
-* [`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)
+* [`liferay-[dxp|portal]/portal-impl/src/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-impl/src/content)
+* [`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)
 
 번들:
 
 * `portal-impl.jar#content/Language[_xx_XX].properties`
 * `Liferay Foundation - Liferay Portal Language - Impl.lpkg` &rarr; `com.liferay.portal.language.lang-[version].jar#content/Language[_xx_XX].properties`
 
-다른 언어 및 로캘에 대한 언어 번역은 파일 이름 끝으로 식별할 수 있습니다. 예를 들어 `Language_ja.properties` 은 일본어용입니다.
+다른 언어 및 로케일에 대한 언어 번역은 파일 이름 끝으로 식별할 수 있습니다. 예를 들어 `Language_ja.properties` 은 일본어용입니다.
 
 이러한 언어 번역 파일에는 언어 설정 속성과 같이 재정의할 수 있는 속성이 포함되어 있습니다.
 
@@ -47,7 +47,7 @@ category.cms=Content Management
 
 Liferay DXP/Portal 7.4+에서는 메타데이터를 사용하여 재정의를 선언할 수 있습니다. 이전 버전에서는 Java 클래스가 재정의를 선언합니다.
 
-버전이 7.4 이전인 경우 [이전 버전에서 재정의](#overriding-in-earlier-versions) 로 건너뜁니다. 그렇지 않으면 계속 읽으십시오.
+버전이 7.4 이전인 경우 [이전 버전에서 재정의](#overriding-in-earlier-versions)로 건너뜁니다. 그렇지 않으면 계속 읽으십시오.
 
 ## 7.4+용 예제 배포
 
@@ -65,7 +65,7 @@ Liferay DXP/Portal 7.4+에서는 메타데이터를 사용하여 재정의를 �
 1. `liferay-i2f4.zip` 예제 프로젝트를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-i2f4.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-i2f4.zip -O
     ```
 
     ```bash
@@ -116,13 +116,13 @@ Liferay DXP/Portal 7.4+에서는 메타데이터를 사용하여 재정의를 �
 선언하는 언어 번역 값은 기존 번역 값을 재정의합니다. 다른 모든 기존 언어 번역 설정은 유지됩니다.
 ```
 
-재정의할 번역을 결정했으면 모듈의 `src/main/resources/content` 폴더에 언어 속성 파일을 만듭니다. 파일 이름 `Language.properties` 을 사용하여 기본 로케일의 언어 번역을 대체하십시오. 특정 로케일의 번역을 재정의하려면 언어 속성 파일 명명 규칙을 사용하십시오.
+재정의할 번역을 결정했으면 모듈의 `src/main/resources/content` 폴더에 언어 속성 파일을 만듭니다. 파일 이름 `Language.properties` 사용하여 기본 로케일의 언어 번역을 대체하십시오. 특정 로케일의 번역을 재정의하려면 언어 속성 파일 명명 규칙을 사용하십시오.
 
 ```
 Language[_xx_XX].properties
 ```
 
-예를 들어 일본어를 재정의하는 경우 `Language_ja.properties`을 사용합니다.
+예를 들어 일본어를 재정의하는 경우 `Language_ja.properties`사용합니다.
 
 ## Bnd 파일에서 재정의 선언
 
@@ -153,7 +153,7 @@ Provide-Capability:\
 
 ## 이전 버전에서 재정의
 
-7.4 이전의 Liferay DXP/Portal 버전에서 전역 언어 번역을 재정의하려면 사용자 지정되는 각 번역에 대해 [언어 속성 파일](#create-a-language-properties-file) 과 `java.util.ResourceBundle` 이 필요합니다. 다음 예제를 배포하고 해당 코드를 검토하여 자세히 알아보세요.
+7.4 이전의 Liferay DXP/Portal 버전에서 전역 언어 번역을 재정의하려면 사용자 지정되는 각 번역에 대해 [언어 속성 파일](#create-a-language-properties-file) 과 `java.util.ResourceBundle` 필요합니다. 다음 예제를 배포하고 해당 코드를 검토하여 자세히 알아보세요.
 
 ```{note}
 많은 언어 번역이 전역 언어 번역 파일에 있지만 일부는 특정 응용 프로그램 모듈에 있을 수 있습니다. [이전 버전에서 모듈 언어 번역 재정의](./overriding-module-language-translations.md) 프로세스는 전역 번역 재정의와 다릅니다.
@@ -172,7 +172,7 @@ Provide-Capability:\
 1. `liferay-x8f3.zip` 예제 프로젝트를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-x8f3.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-x8f3.zip -O
     ```
 
     ```bash
@@ -229,7 +229,7 @@ Provide-Capability:\
 
 **`handleGetObject`:** 모듈의 리소스 번들(모듈의 언어 속성 파일을 기반으로 함)에서 번역을 조회하고 키 값을 `Object`로 반환합니다.
 
-**`getKeys`:** 리소스 번들 키의 `열거형` 를 반환합니다.
+**`getKeys`:** 리소스 번들 키의 `열거형` 반환합니다.
 
 리소스 번들 서비스 구성 요소는 기본 언어 번역을 모듈의 언어 번역 재정의로 리디렉션합니다.
 
@@ -253,7 +253,7 @@ Provide-Capability:\
 새 언어 번역 값을 보려면 모듈을 배포하십시오.
 
 ```{note}
-DXP 7.4+로 업그레이드할 준비가 되면 언어 번역 재정의 모듈을 계속 사용할 수 있습니다. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 설명 [above](#declare-the-override-in-the-bnd-file) 으로 지정하여 모듈을 단순화할 수 있습니다. .
+DXP 7.4+로 업그레이드할 준비가 되면 언어 번역 재정의 모듈을 계속 사용할 수 있습니다. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 설명 [above](#declare-the-override-in-the-bnd-file)으로 지정하여 모듈을 단순화할 수 있습니다.
 ```
 
 ## 관련 정보

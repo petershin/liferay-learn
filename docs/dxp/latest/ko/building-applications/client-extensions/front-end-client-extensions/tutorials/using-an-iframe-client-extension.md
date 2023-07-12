@@ -8,7 +8,7 @@ IFrame 클라이언트 확장은 Liferay의 프런트 엔드 인프라를 사용
 IFrame 클라이언트 확장은 개발 중이며 현재 Liferay 7.4에서 지원되지 않습니다.
 ```
 
-[샘플 작업공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace) 에서 클라이언트 확장으로 시작하십시오.
+[샘플 작업공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)에서 클라이언트 확장으로 시작하십시오.
 
 
 ## 전제 조건
@@ -18,7 +18,7 @@ IFrame 클라이언트 확장은 개발 중이며 현재 Liferay 7.4에서 지�
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
    ```{note}
-   지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오.
+   지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오.
    ```
 
 1. 샘플 작업 공간을 다운로드하고 압축을 풉니다.
@@ -51,7 +51,7 @@ liferay-sample-iframe-1-counter-app:
 ## IFrame 클라이언트 확장 프로그램 배포
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 를 사용하여 [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) .
+클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)를 사용하여 [`lcp 배포`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment).
 ```
 ```{include} /_snippets/run-liferay-portal.md
 ```
@@ -80,17 +80,17 @@ STARTED liferay-sample-iframe-1_1.0.0 [1592]
 
 IFrame은 페이지에 위젯으로 추가됩니다.
 
-1. 페이지 상단에서 **편집**(![Edit](../../../../images/icon-edit-pencil.png))을 클릭하십시오.
+1. 페이지 상단에서 _편집_ (![Edit](../../../../images/icon-edit-pencil.png))을 클릭하십시오.
 
-1. 페이지에 위젯을 추가합니다. Fragments and Widgets 사이드바(![Fragments and Widgets](../../../../images/icon-plus.png))에서 **Widgets** 클릭합니다.
+1. 페이지에 위젯을 추가합니다. Fragments and Widgets 사이드바(![Fragments and Widgets](../../../../images/icon-plus.png))에서 _Widgets_클릭합니다.
 
-1. Client Extensions &rarr; Counter App 위젯을 찾아 페이지로 드래그합니다. **게시** 클릭합니다.
+1. Client Extensions &rarr; Counter App 위젯을 찾아 페이지로 드래그합니다. _게시_클릭합니다.
 
    ![카운터 앱을 페이지로 드래그합니다.](./using-an-iframe-client-extension/images/01.png)
 
 일부 항목을 추가하여 카운터 앱이 작동하는지 확인합니다.
 
-## 관련 주제
+## 관련 항목
 
 * [프런트 엔드 클라이언트 확장](../../front-end-client-extensions.md)
 * [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md)

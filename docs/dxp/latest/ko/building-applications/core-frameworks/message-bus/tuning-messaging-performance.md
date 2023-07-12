@@ -42,7 +42,7 @@
 1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3r2.zip -O
     ```
 
     ```bash
@@ -136,7 +136,7 @@
    :lines: 13-56
 ```
 
-`listDestinationStats()` 메서드는 `_messageBus` 인스턴스를 사용하여 `대상` 가져온 다음 대상에서 `DestinationStatistics` 인스턴스를 가져옵니다. 대상은 `DestinationStatistics` 개체를 최신 통계로 채웁니다. 이 메서드는 다음 대상 정보를 기록합니다.
+`listDestinationStats()` 메서드는 `_messageBus` 인스턴스를 사용하여 `대상` 가져온 다음 대상에서 `DestinationStatistics` 인스턴스를 가져옵니다. 대상은 `DestinationStatistics` 객체를 최신 통계로 채웁니다. 이 메서드는 다음 대상 정보를 기록합니다.
 
 * 활성 스레드 수
 * 현재 스레드 수
@@ -181,7 +181,7 @@
 
 직렬 대상을 사용 중이고 메시지가 일부 메시지 수신기에 충분히 빨리 도달하지 않는 경우 최대 스레드 풀 크기(다음에 설명됨)를 늘리거나 병렬 대상 유형으로 전환해 볼 수 있습니다. Message Bus는 스레드 풀의 스레드를 사용하여 병렬 대상 메시지 수신기를 동시에 처리합니다.
 
-현재 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 을 원하는 유형 중 하나로 교체하여 대상 유형을 전환할 수 있습니다. 적용 가능한 `DestinationConfiguration` 메서드를 사용하여 새 병렬 또는 직렬 `DestinationConfiguration` 만듭니다.
+현재 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 원하는 유형 중 하나로 대체하여 대상 유형을 전환할 수 있습니다. 적용 가능한 `DestinationConfiguration` 메서드를 사용하여 새 병렬 또는 직렬 `DestinationConfiguration` 만듭니다.
 
 * `createParallelDestinationConfiguration(String)`
 * `createSerialDestinationConfiguration(String)`
@@ -311,7 +311,7 @@ pending message count 0, sent message count 2
 
 이제 대상에서 메시징을 모니터링하고 대상 설정을 조정하는 방법을 알았습니다. 다양한 설정을 테스트하여 성능을 최적화할 수 있습니다.
 
-## 관련 주제
+## 관련 항목
 
 * [비동기 메시징 사용](./using-asynchronous-messaging.md)
 * [이전 버전에서 기본 동기 메시징 사용](./using-default-synchronous-messaging-in-previous-versions.md)

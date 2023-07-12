@@ -2,11 +2,11 @@
 
 Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니다. 메시지를 보내고 응답을 기다리지 않고 처리를 계속합니다.
 
-비동기 메시지는 **직렬** 또는 **병렬** 대상으로 전송됩니다.
+비동기 메시지는 *직렬* 또는 *병렬* 대상으로 전송됩니다.
 
-****직렬** 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 순차적으로 처리합니다.
+* *직렬* 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 순차적으로 처리합니다.
 
-****병렬** 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지 수신기당 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 동시에 처리합니다.
+* *병렬* 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지 수신기당 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 동시에 처리합니다.
 
 다른 클래스(메시지 수신기)가 수신하는 직렬 대상으로 메시지를 보내는 것으로 시작합니다.
 
@@ -20,7 +20,7 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
 1. 예제를 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-n8k5.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-n8k5.zip -O
    ```
 
    ```bash
@@ -41,8 +41,7 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
     이 명령은 모듈 JAR을 Docker 컨테이너의 `/opt/liferay/osgi/modules`에 복사하는 것과 동일합니다.
     ```
 
-
-    The Docker container console shows that the module started.
+    Docker 컨테이너 콘솔에 모듈이 시작되었음을 표시합니다.
 
     ```bash
     STARTED com.acme.n8k5.able.impl_1.0.0
@@ -58,8 +57,7 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
     ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-
-    The Docker container console shows that the module started.
+    Docker 컨테이너 콘솔에 모듈이 시작되었음을 표시합니다.
 
     ```bash
     STARTED com.acme.n8k5.charlie.impl_1.0.0
@@ -75,8 +73,7 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
     ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-
-    In the Docker container console, confirm `N8K5Baker` sent a message, `N8K5CharlieMessageListener` received a message, and the `n8k5-baker-impl` module started.
+    Docker 컨테이너 콘솔에서 `N8K5Baker`가 메시지를 보냈는지, `N8K5CharlieMessageListener`가 메시지를 받았는지, `n8k5-baker-impl` 모듈이 시작되었는지 확인합니다.
 
    ```bash
    INFO  [pipe-start 2025][N8K5Baker:24] Sent message to acme/n8k5_able
@@ -117,7 +114,7 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
 
 모든 클래스는 대상을 만들고 구성할 수 있지만 [`구성 요소`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 에는 `DestinationFactory`와 같은 종속성이 주입될 수 있습니다. `_destinationFactory` 필드의 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석은 Liferay의 OSGi 프레임워크에 `DestinationFactory` 인스턴스를 주입하도록 신호를 보냅니다.
 
-`_activate` 메서드에서 `N8K5AbleMessagingConfigurator` [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 사용하여 `acme/n8k5_able`라는 **직렬** 대상을 생성합니다. 그런 다음 OSGi 프레임워크 `BundleContext` 사용하여 `대상`에 대한 서비스를 등록합니다. `N8K5AbleMessagingConfigurator` 비활성화되면 `_deactivate` 메서드가 서비스 등록을 취소합니다.
+`_activate` 메서드에서 `N8K5AbleMessagingConfigurator` [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) 및 [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) 사용하여 `acme/n8k5_able`라는 *직렬* 대상을 생성합니다. 그런 다음 OSGi 프레임워크 `BundleContext` 사용하여 `대상`에 대한 서비스를 등록합니다. `N8K5AbleMessagingConfigurator` 비활성화되면 `_deactivate` 메서드가 서비스 등록을 취소합니다.
 
 ## 발신자 조사
 
@@ -140,10 +137,10 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
 | `setResponseDestinationName(String)`  | `대상` 참조하여 응답을 받습니다.       |
 | `setValues(Map<String,Object>)` | `지도`에서 추가 데이터를 제공합니다.     |
 
-`N8K5Baker`는 메시지를 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/ message/Destination.java) 는 [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/를 호출하여 `acme/n8k5_able` 이름을 지정했습니다. liferay/portal/kernel/messaging/MessageBus.java) 의 `sendMessage(String, Message)` 메소드. `MessageBus`는 새 스레드를 시작하고 `Message`를 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com) 로 보냅니다. /liferay/portal/kernel/messaging/MessageListener.java) 인스턴스가 `acme/n8k5_able` `Destination`에 등록되었습니다. `N8K5Baker`의 스레드가 계속됩니다.
+`N8K5Baker`는 메시지를 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/ message/Destination.java)는 [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/를 호출하여 `acme/n8k5_able` 이름을 지정했습니다. liferay/portal/kernel/messaging/MessageBus.java)의 `sendMessage(String, Message)` 메소드. `MessageBus`는 새 스레드를 시작하고 `Message`를 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com)로 보냅니다. /liferay/portal/kernel/messaging/MessageListener.java) 인스턴스가 `acme/n8k5_able` `Destination`에 등록되었습니다. `N8K5Baker`의 스레드가 계속됩니다.
 
 ```{note}
-`Message`에 대한 응답을 받으려면 `Message`에 응답 대상을 설정하고 해당 대상에 `N8K5Baker`와 같은 클래스를 `MessageListener`로 등록하십시오. 자세한 내용은 [메시지 듣기](./listening-for-messages.md)를 참조하십시오.
+`Message`에 대한 응답을 받으려면 `Message`에 응답 대상을 설정하고 해당 대상에 `N8K5Baker`와 같은 클래스를 `MessageListener`로 등록합니다. 자세한 내용은 [메시지 듣기](./listening-for-messages.md)를 참조하십시오.
 ```
 
 ## 응답 처리 추가
@@ -221,7 +218,7 @@ public class N8K5Baker implements MessageListener {
 }
 ```
 
-### 3단계: 메시지에서 응답 대상 전달
+### 3단계: 메시지에 응답 대상 전달
 
 N8K5Baker</code> 가 보내는 메시지 `에서 응답 대상으로 <code>acme/n8k5_baker` 설정합니다. 다음과 같습니다.
 
@@ -290,24 +287,24 @@ INFO  [acme/n8k5_baker-2][N8K5Baker:30] Received message payload N8K5CharlieMess
 `N8K5CharlieMessageListener` `N8K5Baker`의 메시지를 수신한 후 응답 대상으로 응답 메시지를 보냅니다. `N8K5Baker` 응답 메시지를 수신하고 메시지 페이로드를 인쇄합니다.
 
 ```{note}
-클래스에서 메시지를 다시 교환하려면 [Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md에서 모듈(OSGi 번들) 을 다시 시작하면 됩니다. ). 번들을 나열(`lb`)하여 번들 ID를 가져오고, 번들을 중지하고(`stop <id>), 번들을 다시 시작합니다(`start <id>).
+클래스 간에 메시지를 다시 교환하려면 [Gogo Shell](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) 에서 모듈(OSGi 번들)을 다시 시작하면 됩니다. 번들을 나열(`lb`)하여 번들 ID를 가져오고, 번들을 중지하고(`stop <id>`), 번들을 다시 시작합니다(`start <id>`).
 ```
 
 ```{note}
-OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/) 을 사용하여 메시지를 보낼 수 있습니다. 메시징/MessageBusUtil.java) 및 `Destination`, `DestinationConfiguration`, `Message` 및 `MessageListener` 인스턴스.
+OSGi 구성 요소가 아닌 클래스에서는 [MessageBusUtil](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusUtil.java) 및 `Destination`, `DestinationConfiguration`, `Message` 및 `MessageListener` 인스턴스를 사용하여 메시지를 보낼 수 있습니다.
 
 다른 방법으로 `BundleContext`를 가져와야 한다는 점을 제외하면 설명된 대로 `Destination` 서비스를 등록할 수 있습니다(예: `Bundle bundle = FrameworkUtil.getBundle(YourClass.class); BundleContext bundleContext = bundle.getBundleContext( )`).
 ```
 
-축하해요! 두 클래스 간에 비동기적으로 메시지를 교환했습니다.
+축하해요! 두 클래스 간에 비동기식으로 메시지를 교환했습니다.
 
-## 무다음
+## 다음
 
 이제 비동기 메시징에 익숙해졌으므로 최적의 성능을 위해 조정할 수 있습니다. [메시징 성능 조정](./tuning-messaging-performance.md)에서 방법을 알아보십시오.
 
-**기본** 및 **직접** 모드를 사용하여 동기식 메시징을 탐색하려면 자세한 내용은 [이전 버전](./using-direct-synchronous-messaging-in-previous-versions.md) 에서 직접 동기식 메시징 사용 및 [이전 버전](./using-default-synchronous-messaging-in-previous-versions.md) 에서 기본 동기식 메시징 사용을 참조하십시오.
+*기본* 및 *직접* 모드를 사용하여 동기식 메시징을 탐색하려면 자세한 내용은 [이전 버전](./using-direct-synchronous-messaging-in-previous-versions.md) 에서 직접 동기식 메시징 사용 및 [이전 버전](./using-default-synchronous-messaging-in-previous-versions.md) 에서 기본 동기식 메시징 사용을 참조하십시오.
 
-## 관련 주제
+## 관련 항목
 
 * [메시지 버스](../message-bus.md)
 * [메시지 듣기](./listening-for-messages.md)

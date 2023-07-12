@@ -18,7 +18,7 @@ able-theme-css:
 
 이러한 파일의 CSS는 테마에서 이미 사용된 스타일에 추가됩니다. 충돌이 발생하면 클라이언트 확장의 CSS가 페이지에 이미 있는 스타일을 재정의합니다.
 
-[예제 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-css) 에는 완전한 테마 CSS 클라이언트 확장이 포함되어 있습니다.
+[예제 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-css-1) 에는 완전한 테마 CSS 클라이언트 확장이 포함되어 있습니다.
 
 ## YAML 속성
 
@@ -31,7 +31,7 @@ able-theme-css:
 
 모든 프런트 엔드 클라이언트 확장에 공통적인 속성은 [프런트 엔드 클라이언트 확장 속성](../front-end-client-extensions.md#front-end-client-extension-properties) 참조하십시오.
 
-## 관련 주제
+## 관련 항목
 
 * [프런트 엔드 클라이언트 확장](../front-end-client-extensions.md)
 * [클라이언트 확장 작업](../working-with-client-extensions.md)

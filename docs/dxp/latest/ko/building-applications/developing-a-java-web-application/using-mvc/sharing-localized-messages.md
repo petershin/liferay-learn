@@ -3,15 +3,16 @@
 응용 프로그램에서 작업할 때 각각 고유한 언어 키가 있는 여러 모듈이 있을 수 있습니다. 다양한 언어 속성 파일을 다른 사이트에 유지하는 대신 한 사이트로 통합합니다. 이 예제 프로젝트는 여러 모듈에서 언어 키를 공유하는 방법을 보여줍니다.
 
 ## 튜토리얼 코드 실행
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
     ```
 
     ```bash
@@ -41,7 +42,7 @@
 
     ![U8T2 포틀릿을 페이지에 추가하십시오.](./sharing-localized-messages/images/01.png)
 
-    환영 메시지 헤더와 색상 목록이 표시됩니다. 색상의 언어 키는 공유 언어 키에서 가져옵니다. 언어 키 `색상` 은 Liferay의 글로벌 언어 키에서 가져옵니다.
+    환영 메시지 헤더와 색상 목록이 표시됩니다. 색상의 언어 키는 공유 언어 키에서 가져옵니다. 언어 키 `색상` Liferay의 글로벌 언어 키에서 가져옵니다.
 
 1. 이 예제 프로젝트에는 포르투갈어 및 일본어용 로케일도 포함되어 있습니다. 예를 들어 언어 선택기를 사용하여 포르투갈어(브라질) 또는 일본어를 선택하면 환영 메시지와 색상 목록이 표시됩니다.
 
@@ -87,6 +88,6 @@ Bundle-Version: 1.0.0
 
 여전히 개별 모듈에 일부 언어 키를 배치하도록 선택할 수 있습니다. 예를 들어, 예제 프로젝트의 환영 메시지는 `Acme U8T2 Impl`의 공유 키가 아닌 `Acme U8T2 Web` 모듈의 언어 키에서 가져옵니다. 개별 모듈의 언어 키는 `-liferay-aggregate-resource-bundles`로 지정된 공유 키보다 우선합니다.
 
-## 관련 주제
+## 관련 항목
 
 * [리소스 번들 집계](../../core-frameworks/localization/reference/aggregating-resource-bundles.md)

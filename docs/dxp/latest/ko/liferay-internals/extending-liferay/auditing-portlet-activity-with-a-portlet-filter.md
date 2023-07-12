@@ -18,7 +18,7 @@
 1. `@Component` 주석을 사용하여 포틀릿 필터를 OSGi 프레임워크 내의 구성 요소로 선언하고 이를 `PortletFilter.class` 서비스로 식별합니다.
 
    ```{note}
-   포틀릿 필터는 [OSGi 선언적 서비스(DS) 구성 요소](https://enroute.osgi.org/FAQ/300-declarative-services.html) 입니다. 필터는 `portlet.xml` 설명자 또는 `@PortletLifecycleFilter` 주석을 사용하여 포틀릿에 적용할 수도 있습니다. 자세한 내용은 Portlet 3.0 사양을 참조하십시오.
+   포틀릿 필터는 [OSGi 선언적 서비스(DS) 구성 요소](https://enroute.osgi.org/FAQ/300-declarative-services.html)입니다. 필터는 `portlet.xml` 설명자 또는 `@PortletLifecycleFilter` 주석을 사용하여 포틀릿에 적용할 수도 있습니다. 자세한 내용은 Portlet 3.0 사양을 참조하십시오.
    ```
 
 1. `@Component` 선언에 다음 속성을 입력합니다.
@@ -40,7 +40,7 @@
 1. 예제 모듈을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-b4k8.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-b4k8.zip -O
    ```
 
    ```bash
@@ -193,7 +193,7 @@ public class B4K8PortletFilter implements RenderFilter {
 
    렌더링 요청이 있을 때마다 이 `doFilter` 이 호출됩니다.
 
-## 관련 주제
+## 관련 항목
 
 * [포틀릿](../../building-applications/developing-a-java-web-application/reference/portlets.md)
 <!--TASK: Add link to Using Portlet Filters article when finished -->

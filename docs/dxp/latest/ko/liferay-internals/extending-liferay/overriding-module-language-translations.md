@@ -1,7 +1,7 @@
 # 이전 버전에서 모듈 언어 번역 재정의
 
 ```{important}
-Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 [언어 재정의 도구](../../system-administration/configuring-liferay/ changing-language-translations.md)는 권장 접근 방식. Liferay DXP/Portal 7.4+로 작업하는 경우 [전역 언어 번역 재정의](./overriding-global-language-translations.md)에 대한 지침을 따르십시오.
+Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상에서 [언어 재정의 도구](../../system-administration/configuring-liferay/changing-language-translations.md)는 권장 접근 방식. Liferay DXP/Portal 7.4+로 작업하는 경우 [전역 언어 번역 재정의](./overriding-global-language-translations.md)에 대한 지침을 따르십시오.
 ```
 
 이전 버전에서 Liferay 응용 프로그램별 언어 번역을 재정의하는 것은 이전 버전의 전역 언어 번역을 재정의하는 것과 유사하지만 추가 단계가 있습니다.
@@ -64,23 +64,23 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 * Liferay의 [넥서스 저장소](https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/)
 * `[Liferay Home]/osgi/modules`
-* [`liferay- [dxp|portal]/modules/apps`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps) 의 소스 코드.
+* [`liferay-[dxp|portal]/modules/apps`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps)의 소스 코드.
 
 언어 속성 파일은 모듈의 `src/main/resources/content` 폴더에 있습니다. `Language[xx_XX].properties` 파일에서 재정의할 언어 번역을 식별합니다.
 
-다른 언어 및 로캘에 대한 언어 번역은 파일 이름 끝으로 식별할 수 있습니다. 예를 들어 `Language_ja.properties` 은 일본어용입니다.
+다른 언어 및 로케일에 대한 언어 번역은 파일 이름 끝으로 식별할 수 있습니다. 예를 들어 `Language_ja.properties` 은 일본어용입니다.
 
 예제는 기본 `블로그 항목 추가` 언어 번역을 사용자 정의 번역으로 변경합니다. 이제 배포할 시간입니다.
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. `liferay-e6u7.zip`을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-e6u7.zip -O
     ```
 
     ```bash
@@ -107,7 +107,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
     STARTED com.acme.e6u7.impl_1.0.0 [1650]
     ```
 
-1. **콘텐츠 & 데이터** &rarr; **블로그** 로 이동합니다. 추가 아이콘(![Add](../../images/icon-add.png)) 위로 커서를 이동합니다. 이제 메시지에 사용자 정의 언어 번역이 표시됩니다.
+1. *콘텐츠 & 데이터* &rarr; *블로그*로 이동합니다. 추가 아이콘(![Add](../../images/icon-add.png)) 위로 커서를 이동합니다. 이제 메시지에 사용자 정의 언어 번역이 표시됩니다.
 
     ![현재 사용자 정의 언어 번역이 사용되고 있습니다.](./overriding-module-language-translations/images/01.png)
 
@@ -129,7 +129,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 
 ## 언어 리소스 번들 만들기
 
-모듈에서 재정의하려는 로케일에 대해 `java.util.ResourceBundle` 확장하는 클래스를 만듭니다. 다음은 `en_US` 로케일에 대한 예제 리소스 번들 클래스입니다.
+모듈에서 재정의하려는 로캘에 대해 `java.util.ResourceBundle` 확장하는 클래스를 만듭니다. 다음은 `en_US` 로케일에 대한 예제 리소스 번들 클래스입니다.
 
 ```{literalinclude} ./overriding-module-language-translations/resources/liferay-e6u7.zip/e6u7-impl/src/main/java/com/acme/e6u7/internal/language/E6U7EnglishResourceBundle.java
 :language: java
@@ -197,7 +197,7 @@ Liferay DXP 7.4 U4(업데이트 4) 이상 또는 Liferay Portal 7.4 GA8 이상�
 ```
 
 ```{note}
-언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file) .
+언어 키 이름이 동일한 경우 DXP 7.4+에서 언어 번역 재정의를 계속 사용할 수 있습니다. [`/modules/apps/portal-language/portal-language-lang/src/main/resources/content /Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) 파일. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 [Overriding Global Language Translations](./overriding-global-language-translations.md#declare-the-oOverride-in-the-bnd-file).
 ```
 
 순위가 높은 리소스 묶음 집합 서비스에 대한 결과를 검색합니다.

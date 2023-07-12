@@ -15,9 +15,9 @@
 
 그런 다음 다음 단계에 따라 이 자습서의 기본 객체를 [만들기](../../creating-and-managing-objects/creating-objects.md)하십시오.
 
-1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 클릭 **사물** .
+1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
 
-1. **추가** 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
+1. *추가* 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
     | 필드 | 가치 |
     | :--- | :--- |
@@ -25,13 +25,13 @@
     | 복수 라벨 | '에이블스' |
     | 이름 | '가능' |
 
-1. 새 **개체** 초안을 선택하고 **필드** 탭으로 이동한 다음 단일 텍스트 **필드** 를 추가합니다.
+1. 새 *개체* 초안을 선택하고 *필드* 탭으로 이동한 다음 단일 텍스트 *필드*를 추가합니다.
 
     | 라벨 | 필드 이름 | 유형 | 필수 |
     | :--- | :--- | :--- | :--- |
     | 이름 | 이름 | 텍스트 | &#10004; |
 
-1. **세부 정보** 탭으로 이동하여 **게시** 를 클릭합니다.
+1. *세부 정보* 탭으로 이동하여 *게시*를 클릭합니다.
 
    ```{important}
    이 자습서에서는 위의 값을 사용해야 합니다.
@@ -44,7 +44,7 @@
 다음 명령을 실행하여 제공된 샘플 코드를 다운로드하고 압축을 풉니다.
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-t4r3.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-t4r3.zip -O
 ```
 
 ```bash
@@ -219,7 +219,7 @@ GET 메서드는 데모용으로 포함되어 있습니다. 이것은 Liferay �
    :language: bash
 ```
 
-## 관련 주제
+## 관련 항목
 
 * [개체 API 기본 사항](./object-api-basics.md)
 * [`nestedFields` 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md)

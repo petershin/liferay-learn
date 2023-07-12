@@ -9,10 +9,10 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [동적 포함으로 JSP 사용자 지정](./liferay-n3q9.zip) 을 다운로드하고 압축을 풉니다.
+1. [Dynamic Include로 JSP 사용자 지정](./liferay-n3q9.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/customizing-jsps/liferay-n3q9.zip -O
    ```
 
    ```bash

@@ -1,15 +1,15 @@
 ---
 toc:
-- ./elasticsearch/getting-started-with-elasticsearch.md
-- ./elasticsearch/installing-elasticsearch.md
-- ./elasticsearch/connecting-to-elasticsearch.md
-- ./elasticsearch/securing-elasticsearch.md
-- ./elasticsearch/exercise-run-liferay-and-elasticsearch-using-docker.md
-- ./elasticsearch/troubleshooting-elasticsearch-installation.md
-- ./elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md
-- ./elasticsearch/upgrading-elasticsearch.md
-- ./elasticsearch/elasticsearch-connector-configuration-reference.md
-- ./elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
+  - ./elasticsearch/getting-started-with-elasticsearch.md
+  - ./elasticsearch/installing-elasticsearch.md
+  - ./elasticsearch/connecting-to-elasticsearch.md
+  - ./elasticsearch/securing-elasticsearch.md
+  - ./elasticsearch/exercise-run-liferay-and-elasticsearch-using-docker.md
+  - ./elasticsearch/troubleshooting-elasticsearch-installation.md
+  - ./elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md
+  - ./elasticsearch/upgrading-elasticsearch.md
+  - ./elasticsearch/elasticsearch-connector-configuration-reference.md
+  - ./elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
 ---
 # Elasticsearch
 
@@ -31,7 +31,7 @@ elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md
 Elasticsearch는 Liferay가 기본적으로 사용하는 확장성이 뛰어난 전체 텍스트 검색 엔진입니다. Elasticsearch는 비생산 목적으로 Liferay와 함께 번들로 제공됩니다. 프로덕션에서 Liferay는 별도의 원격 서버에서 실행되는 Elasticsearch가 필요합니다.
 
 ```{important}
-Elasticsearch 버전 및 Liferay 버전과 호환되는 서버 구성에 대한 [호환성 매트릭스](https://help.liferay.com/hc/ko/sections/360002103292-Compatibility-Matrix) 를 항상 확인하세요.
+Elasticsearch 버전 및 Liferay 버전과 호환되는 서버 구성에 대한 [호환성 매트릭스](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix)를 항상 확인하세요.
 ```
 
 ```{important}
@@ -47,13 +47,14 @@ Liferay 7.2 및 7.3에는 Elasticsearch 7 지원 및 인증되고 암호화된 E
 - [Elasticsearch 설치 문제 해결](elasticsearch/troubleshooting-elasticsearch-installation.md)
 - [사이드카 또는 임베디드 Elasticsearch 사용](elasticsearch/using-the-sidecar-or-embedded-elasticsearch.md)
 
-- [**Liferay 클러스터링**] [Liferay 클러스터에 검색 엔진 추가](../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md#start-a-search-engine-server)
+- _[Liferay 클러스터링]_ [Liferay 클러스터에 검색 엔진 추가](../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md#start-a-search-engine-server)
 
 ## 업그레이드
 
 - [Elasticsearch 업그레이드](elasticsearch/upgrading-elasticsearch.md)
 - [검색 인프라 업그레이드](elasticsearch/upgrading-elasticsearch/upgrading-search-infrastructure.md)
 - [Elasticsearch 백업](elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md)
+- [Elasticsearch 8로 업그레이드](elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-8.md)
 - [Elasticsearch 7로 업그레이드](elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)
 
 ## 확보

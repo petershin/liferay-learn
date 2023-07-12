@@ -1,11 +1,11 @@
 # 사용자 지정 데이터 공급자 작성
 
-Liferay Forms 필드는 [데이터 공급자](../data-providers/data-providers-overview.md)을 사용하여 채울 수 있습니다. 기본적으로 대부분의 REST 끝점에서 데이터를 소비하는 유연한 방법을 제공하는 REST 데이터 공급자가 있습니다. 자세한 내용은 [REST 데이터 공급자를 사용하여 양식 옵션 채우기](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) 을 참조하십시오.
+Liferay Forms 필드는 [데이터 공급자](../data-providers/data-providers-overview.md)사용하여 채울 수 있습니다. 기본적으로 대부분의 REST 끝점에서 데이터를 소비하는 유연한 방법을 제공하는 REST 데이터 공급자가 있습니다. 자세한 내용은 [REST 데이터 공급자를 사용하여 양식 옵션 채우기](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) 을 참조하십시오.
 
 REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확장점을 사용하여 고유한 확장 지점을 만드십시오.
 
 ```{note}
-여기에서 시연한 예제 데이터 공급자는 [GeoDataSource™ 사이트 검색 웹 서비스](https://www.geodatasource.com/web-service/location-search) 에서 XML 데이터를 사용합니다. Liferay 직원의 API 키는 이 샘플에 하드 코딩되어 있습니다. 샘플을 남용하지 마십시오. 프로덕션 환경에서는 절대 사용하지 마십시오.
+여기에서 시연한 예제 데이터 공급자는 [GeoDataSource™ 사이트 검색 웹 서비스](https://www.geodatasource.com/web-service/location-search)에서 XML 데이터를 사용합니다. Liferay 직원의 API 키는 이 샘플에 하드 코딩되어 있습니다. 샘플을 남용하지 마십시오. 프로덕션 환경에서는 절대 사용하지 마십시오.
 ```
 
 ## 사용자 지정 데이터 공급자 배포
@@ -13,12 +13,12 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. Acme XML 데이터 공급자를 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-b4d8.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-b4d8.zip -O
    ```
 
    ```bash
@@ -49,7 +49,7 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
 
    1. 사이트 메뉴에서 콘텐츠 및 데이터 &rarr; 양식으로 이동합니다.
 
-   1. 데이터 공급자 탭을 열고 **추가** 버튼을 클릭합니다.
+   1. 데이터 공급자 탭을 열고 _추가_ 버튼을 클릭합니다.
 
       ![사용자 지정 데이터 공급자는 Liferay Forms에서 사용할 준비가 되었습니다.](./writing-a-custom-data-provider/images/01.png)
 
@@ -63,7 +63,7 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
 
       ![출력을 지정하여 사용자 지정 데이터 공급자를 구성합니다.](./writing-a-custom-data-provider/images/02.png)
 
-   1. **저장** 을 클릭합니다.
+   1. *저장*클릭합니다.
 
 1. Cities Near Diamond Bar 데이터 공급자를 사용하는 양식을 추가합니다.
 
@@ -112,7 +112,7 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
       :lines: 49-53
    ```
 
-1. `_createDDMDataProviderResponse` 메소드가 호출됩니다. 이것은 응답 객체의 구성이 발생하는 곳입니다. 이 메서드를 호출하려면 데이터 공급자 설정과 원격 API에서 반환된 XML 문서라는 두 가지 매개 변수를 지정합니다. 둘 다에 대한 논리는 별도의 전용 유틸리티 메서드에 있습니다. 중요한 점은 `HttpUtil.URLtoString(url)` 은 URL을 실행하여 XML을 검색하는 호출입니다.
+1. `_createDDMDataProviderResponse` 메소드가 호출됩니다. 이것은 응답 객체의 구성이 발생하는 곳입니다. 이 메서드를 호출하려면 데이터 공급자 설정과 원격 API에서 반환된 XML 문서라는 두 가지 매개 변수를 지정합니다. 둘 다에 대한 논리는 별도의 전용 유틸리티 메서드에 있습니다. 중요한 점은 `HttpUtil.URLtoString(url)` URL을 실행하여 XML을 검색하는 호출입니다.
 
 1. 이제 (데이터 제공자 인스턴스의 출력 매개변수 설정에 따라) 응답을 조건부로 작성하기 위한 조각이 준비되었습니다. 논리에는 다음이 포함됩니다.
    - 정적 내부 `Builder` 클래스의 `newBuilder` 메서드를 사용하여 응답 작성을 시작합니다.
@@ -149,9 +149,9 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
       :lines: 10-25
    ```
 
-   데이터 공급자를 구성하는 모든 필드는 이 `@DDMForm`의 설정 양식에 추가해야 합니다. 이 조각은 현재 `B4D8DDMDataProviderSettings` 클래스가 `DDMDataProviderParameterSettings`를 확장하기 때문에 액세스할 수 있는 상속된 `outputParameters` 필드만 사용합니다. 양식에 더 많은 설정을 추가하는 방법에 대해 알아보려면 [데이터 공급자 설정 추가](writing-a-custom-data-provider.md#add-data-provider-settings) 을 참조하십시오.
+   데이터 공급자를 구성하는 모든 필드는 이 `@DDMForm`의 설정 양식에 추가해야 합니다. 이 조각은 현재 `B4D8DDMDataProviderSettings` 클래스가 `DDMDataProviderParameterSettings`확장하기 때문에 액세스할 수 있는 상속된 `outputParameters` 필드만 사용합니다. 양식에 더 많은 설정을 추가하는 방법에 대해 알아보려면 [데이터 공급자 설정 추가](writing-a-custom-data-provider.md#add-data-provider-settings) 참조하십시오.
 
-1. 클래스 선언 및 본문은 사용 가능한 필드를 결정합니다. 현재 추가 설정이 필요하지 않으므로 클래스 본문이 비어 있습니다.
+1. 클래스 선언과 본문은 사용 가능한 필드를 결정합니다. 현재 추가 설정이 필요하지 않으므로 클래스 본문이 비어 있습니다.
 
    ```{literalinclude} ./writing-a-custom-data-provider/resources/liferay-b4d8.zip/b4d8-impl/src/main/java/com/acme/b4d8/dynamic/data/mapping/data/provider/internal/B4D8DDMDataProviderSettings.java
       :language: java
@@ -201,7 +201,7 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
     import com.liferay.dynamic.data.mapping.annotations.DDMFormField;
     ```
 
-1. 양식 레이아웃을 생성하는 클래스 수준 주석에서 `@DDMFormLayoutColumn` 을 다음으로 바꿉니다.
+1. 양식 레이아웃을 생성하는 클래스 수준 주석에서 `@DDMFormLayoutColumn` 다음으로 바꿉니다.
 
     ```java
     @DDMFormLayoutColumn(
@@ -216,7 +216,7 @@ REST 데이터 공급자가 목적에 맞지 않는 경우 `DDMDataProvider` 확
 이제 `B4D8DDMDataProvider#getData` 메서드를 업데이트해야 합니다.
 
 - 하드 코딩된 String `url` 변수를 제거합니다.
-- 메서드를 리팩터링하여 `B4D8DDMDataProviderSettings` 을 이전에 인스턴스화하고 URL 설정을 검색합니다.
+- 메서드를 리팩터링하여 `B4D8DDMDataProviderSettings` 이전에 인스턴스화하고 URL 설정을 검색합니다.
 - 응답에 URL을 설정합니다.
 
 이러한 편집을 로컬에서 수행하는 경우 다음 설명 단계 아래에 제공된 전체 `시도` 블록을 복사합니다.
@@ -284,7 +284,7 @@ import com.liferay.portal.kernel.util.Http;
    ```
 
 1. 데이터 공급자의 인스턴스를 추가합니다.
-      - **이름: Pernambuco(브라질), Recife 근처의** 인용
+      - **이름: Pernambuco(브라질)의 Recife 인근** 인용
       - **설명:** GeoDataSource 사이트 검색--Liferay의 브라질 사무소에서 20km 이내의 도시를 가져옵니다.
       - **URL:**
         ```

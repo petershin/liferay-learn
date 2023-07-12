@@ -7,19 +7,19 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요:
+그런 다음 다음 단계를 따르십시오.
 
-1. [태그 API 기본 사항](./liferay-r7u9.zip) 을 다운로드하여 압축을 풉니다.
+1. [Tags API 기본 사항](./liferay-r7u9.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
    ```
 
    ```bash
    unzip liferay-r7u9.zip
    ```
 
-1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 아래의 다른 서비스 호출에서 이것을 사용합니다.
+1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 아래의 다른 서비스 호출에서 이것을 사용합니다.
 
 1. cURL 스크립트를 사용하여 사이트에 새 태그를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `Keyword_POST_ToSite.sh` 스크립트를 실행합니다.
 
@@ -49,7 +49,7 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
    }
    ```
 
-1. **관리 메뉴** &rarr; **분류** &rarr; **태그** 로 이동하여 태그 애플리케이션으로 이동합니다. 새 태그가 추가되었는지 확인합니다.
+1. *관리 메뉴* &rarr; *분류* &rarr; *태그*로 이동하여 태그 애플리케이션으로 이동합니다. 새 태그가 추가되었는지 확인합니다.
 
     ![새 태그가 추가되었는지 확인합니다.](./tags-api-basics/images/01.png)
 
@@ -116,7 +116,7 @@ Liferay의 REST API는 Liferay DXP/Portal의 태그에 대한 서비스를 제�
 다른 예제 Java 클래스는 이것과 유사하지만 다른 `KeywordResource` 메소드를 호출합니다.
 
 ```{important}
-[KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) 를 참조하십시오.
+서비스에 대한 자세한 내용은 [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java)를 참조하세요.
 ```
 
 다음은 cURL과 Java를 사용하여 다른 `Keyword` REST 서비스를 호출하는 예입니다.

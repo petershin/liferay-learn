@@ -6,7 +6,7 @@ Talend Open Studio용 Liferay의 구성 요소는 Liferay DXP/Portal과 외부 �
 
 ## 전제 조건
 
-Liferay 구성 요소를 설치하려면 JDK 1.8+, Apache Maven 3.3+ 및 [DXP/Portal 코드](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend) 의 로컬 사본이 필요합니다. 또한 [개의 Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) 과 [구성 요소 API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) 이 이미 설치되어 있어야 합니다.
+Liferay 구성 요소를 설치하려면 JDK 1.8+, Apache Maven 3.3+ 및 [DXP/Portal 코드](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/etl/talend)의 로컬 사본이 필요합니다. 또한 [Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) 과 [구성 요소 API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) 이 이미 설치되어 있어야 합니다.
 
 ## Talend Open Studio 구성
 
@@ -33,7 +33,7 @@ Maven은 최근에 안전하지 않은 리포지토리 연결을 더 이상 사�
 
 ## Talend 구성 요소 구축
 
-Talend 구성 요소를 설치하려면 먼저 로컬 `liferay-portal` 리포지토리의 [module/etl/talend](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend) 폴더에서 `mvn clean install` 을 실행해야 합니다.
+Talend 구성 요소를 설치하려면 먼저 로컬 `liferay-portal` 리포지토리의 [module/etl/talend](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend) 폴더에서 `mvn clean install` 실행해야 합니다.
 
 이렇게 하면 다음 디렉터리/폴더에 jar 번들 파일이 생성됩니다.
 
@@ -41,7 +41,7 @@ Talend 구성 요소를 설치하려면 먼저 로컬 `liferay-portal` 리포지
 * `talend-common/target/`
 * `talend-runtime/target/`
 
-JAR 파일은 다음 로컬 Maven 리포지토리 폴더에도 게시됩니다.
+JAR 파일은 다음 로컬 maven 리포지토리 폴더에도 게시됩니다.
 
 * `$USER_HOME/.m2/repository/com/liferay/com.liferay.talend`
 * `$USER_HOME/.m2/repository/com/liferay/com.liferay.common`
@@ -73,7 +73,7 @@ Maven 빌드가 성공하면 다음 단계에 따라 Talend Open Studio에 Lifer
 
 1. `com.liferay.talend`, `com.liferay.talend.common`및 `com.liferay.talend.runtime` 폴더를 로컬 `$USER_HOME/.m2/repository/com/liferay/` 폴더에서 `$TOS_ROOT/configuration/.m2/repository/com/liferay/` 폴더.
 
-1. Talend Open Studio를 시작합니다. Liferay 구성 요소는 **Palette** 탭의 **Business** &rarr; **Liferay** 아래에 나타납니다.
+1. Talend Open Studio를 시작합니다. Liferay 구성 요소는 *Palette* 탭의 *Business* &rarr; *Liferay* 아래에 나타납니다.
 
    ![구성 요소는 팔레트 탭의 Business &rarr; Liferay 아래에 나타납니다.](liferay-talend-components-overview/images/01.png)
 
@@ -92,7 +92,7 @@ Liferay 구성 요소 코드베이스에 변경 사항이 있는 경우 Talend �
 교체하기 전에 각 구성 요소의 구성을 문서화해야 합니다. 이렇게 하면 작업이 이전과 동일한 기능을 유지할 수 있습니다.
 ```
 
-## 관련 주제
+## 관련 항목
 
 * [Liferay Talend 구성 요소 개요](./liferay-talend-components-overview.md)
 * [Liferay 구성 요소를 사용하여 Talend 작업 설계](./designing-talend-jobs-using-liferay-talend-components.md)

@@ -14,13 +14,13 @@ Elasticsearch 커넥터 구성의 `transportAddresses` 속성 값에는 Elastics
 
 ## 네트워크 호스트 주소
 
-Liferay 7.3+에서 번들로 제공되는 [사이드카 Elasticsearch](../using-the-sidecar-or-embedded-elasticsearch.md) 서버는 기본적으로 포트 `9201` 에서 실행됩니다. 즉, Elasticsearch의 기본 HTTP 포트(`9200`)를 사용하여 원격 Elasticsearch 설치의 `networkHostAddress` 을 설정해도 충돌이 발생하지 않습니다. 전송 주소와 마찬가지로 클러스터의 모든 마스터 및 데이터 노드 주소를 나열해야 합니다.
+Liferay 7.3+에서 번들로 제공된 [사이드카 Elasticsearch](../using-the-sidecar-or-embedded-elasticsearch.md) 서버는 기본적으로 포트 `9201` 에서 실행됩니다. 즉, Elasticsearch의 기본 HTTP 포트(`9200`)를 사용하여 원격 Elasticsearch 설치의 `networkHostAddress` 설정해도 충돌이 발생하지 않습니다. 전송 주소와 마찬가지로 클러스터의 모든 마스터 및 데이터 노드 주소를 나열해야 합니다.
 
 ## 클러스터 스니핑(추가 구성)
 
-Elasticsearch 클러스터는 여러 노드 [유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node) 을 가질 수 있습니다. [Elasticsearch 커넥터에서 기본적으로 활성화된 클러스터 스니핑](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html) 은 `transportAddresses` 속성에 구성된 데이터 노드를 찾습니다. 사용할 수 없는 경우 커넥터는 콘솔 로그에서 `NoNodeAvailableException` 을 발생시킬 수 있습니다. 이 오류를 방지하고 클러스터 스니핑을 계속 사용하려면 하나 이상의 데이터 노드의 전송 주소를 구성하십시오.
+Elasticsearch 클러스터는 여러 노드 [유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/modules-node.html#modules-node)을 가질 수 있습니다. [Elasticsearch 커넥터에서 기본적으로 활성화된 클러스터 스니핑](https://www.elastic.co/guide/en/elasticsearch/client/java-api/7.x/transport-client.html) `transportAddresses` 속성에 구성된 데이터 노드를 찾습니다. 사용할 수 없는 경우 커넥터는 콘솔 로그에서 `NoNodeAvailableException` 발생시킬 수 있습니다. 이 오류를 방지하고 클러스터 스니핑을 계속 사용하려면 하나 이상의 데이터 노드의 전송 주소를 구성하십시오.
 
-클러스터 스니핑을 비활성화하려면 `clientTransportSniff=false` 을 `.config` 파일에 추가하거나 시스템 설정에서 클라이언트 전송 스니핑 속성을 선택 취소합니다.
+클러스터 스니핑을 비활성화하려면 `clientTransportSniff=false` `.config` 파일에 추가하거나 시스템 설정에서 클라이언트 전송 스니핑 속성을 선택 취소합니다.
 
 ## 도커 연결 거부됨
 
@@ -60,9 +60,9 @@ ode_name]SSL configuration [xpack.security.transport.ssl.] relies upon fallback 
 1. 07-16T14:47:05,779][WARN ][o.e.d.c.j.Joda           ] [
 ```
 
-이러한 경고는 기능적 문제를 나타내지 않으며 비활성화할 수 있습니다(방법을 알아보려면 [Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/logging.html#deprecation-logging) 참조).
+이러한 경고는 기능적 문제를 나타내지 않으며 비활성화할 수 있습니다(방법을 알아보려면 [Deprecation Logging](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/logging.html#deprecation-logging) 참조).
 
-## 관련 주제
+## 관련 항목
 
 * [Elasticsearch에 연결](../connecting-to-elasticsearch.md)
 * [Elasticsearch 설치 문제 해결](../troubleshooting-elasticsearch-installation.md)

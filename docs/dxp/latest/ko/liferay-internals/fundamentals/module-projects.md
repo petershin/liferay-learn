@@ -1,12 +1,12 @@
 # 모듈 프로젝트
 
-Liferay 애플리케이션 및 사용자 지정은 Java 코드를 포함하는 [OSGi 모듈](https://www.osgi.org/resources/what-is-osgi/) : `.jar` 파일과 API 게시 및 사용을 위한 일부 추가 구성입니다.
+Liferay 애플리케이션 및 사용자 지정은 Java 코드를 포함하는 [OSGi 모듈](https://www.osgi.org/resources/what-is-osgi/): `.jar` 파일과 API 게시 및 사용을 위한 일부 추가 구성입니다.
 
 모듈 프로젝트는 다음 세 가지로 구성됩니다.
 
 1. **코드:** 이미지, 템플릿 및 추가 설명자와 같은 Java 클래스 및 리소스. Java 패키지는 기본적으로 비공개이지만 다른 모듈에서 사용할 수 있도록 [내보내기](./exporting-packages.md)할 수 있습니다.
-   
-   1 **빌드 스크립트: 모듈 빌드 및 배포를 위한** [Gradle](https://gradle.org/) 파일.
+
+1. **빌드 스크립트:** 모듈을 빌드하고 배포하기 위한 [Gradle](https://gradle.org/) 파일.
 
 1. **메타데이터:** [Bnd](https://bnd.bndtools.org/) 파일은 모듈 아티팩트를 정의하고 모듈이 제공하고 요구하는 패키지 및 기능을 지정합니다.
 
@@ -36,7 +36,6 @@ Liferay 애플리케이션 및 사용자 지정은 Java 코드를 포함하는 [
  └── settings.gradle // Applies Gradle plugins
 ```
 
-
 Liferay는 일반적으로 세 가지 종류의 모듈을 사용합니다.
 
 1. **API** 모듈은 인터페이스를 정의합니다.
@@ -60,12 +59,12 @@ Liferay는 일반적으로 세 가지 종류의 모듈을 사용합니다.
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-k8s2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-k8s2.zip -O
     ```
 
     ```bash
@@ -82,7 +81,7 @@ Liferay는 일반적으로 세 가지 종류의 모듈을 사용합니다.
     ./gradlew jar
     ```
 
-    The JAR file is generated to the module's `build/libs` folder.
+    JAR 파일은 모듈의 `build/libs` 폴더에 생성됩니다.
 
     ```
     k8s2-api/build/libs/com.acme.k8s2.api-1.0.0.jar
@@ -101,11 +100,11 @@ Liferay는 일반적으로 세 가지 종류의 모듈을 사용합니다.
     STARTED com.acme.k8s2.api_1.0.0 [1152]
     ```
 
-`STARTED` 메시지에는 모듈의 ID: `1152`이 포함됩니다.
+`STARTED` 메시지에는 모듈의 ID: `1152`포함됩니다.
 
 1. [Gogo Shell](./using-the-gogo-shell.md)을 엽니다.
 
-1. Gogo Shell 명령 필드에서 `lb` 을 사용하여 ID를 포함한 모듈 정보를 표시합니다. 가장 최근에 추가된 모듈이 마지막에 나타납니다. 모듈 이름의 키워드를 알고 있는 경우 `grep` 을 사용할 수 있습니다. 
+1. Gogo Shell 명령 필드에서 `lb` 사용하여 ID를 포함한 모듈 정보를 표시합니다. 가장 최근에 추가된 모듈이 마지막에 나타납니다. 모듈 이름의 키워드를 알고 있는 경우 `grep` 을 사용할 수 있습니다. 
 
     ```bash
     lb | grep -i "k8s2"
@@ -161,7 +160,6 @@ Liferay 모듈은 Gradle 빌드 인프라에서 개발됩니다. 다음 Gradle �
 | `gradle.properties` | Liferay 제품 버전을 지정합니다.                                                                     |
 | `settings.gradle`   | [Liferay Workspace](../../building-applications/tooling.md) 플러그인을 포함한 Gradle 플러그인을 적용합니다. |
 
-
 예제 프로젝트의 `k8s2-api` 폴더와 같은 새 하위 폴더에 더 많은 모듈을 추가하거나 새 [Liferay Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)에서 만들 수 있습니다.
 
 다음은 프로젝트 루트 컨텍스트의 `k8s2-api` 모듈 구조입니다.
@@ -191,7 +189,7 @@ Liferay 모듈은 Gradle 빌드 인프라에서 개발됩니다. 다음 Gradle �
 :lines: 5-10
 ```
 
-[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) 주석은 서비스 레지스트리에 인터페이스를 구현하는 모든 것이 인터페이스를 제공한다고 알려줍니다(예: `Greeter`). 인터페이스의 한 메서드인 `greet` 은 `String` 을 요청하고 아무 것도 반환하지 않습니다.
+[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) 주석은 서비스 레지스트리에 인터페이스를 구현하는 모든 것이 인터페이스를 제공한다고 알려줍니다(예: `Greeter`). 인터페이스의 한 메서드인 `greet` `String` 요청하고 아무 것도 반환하지 않습니다.
 
 모듈의 `src/main/java` 폴더와 `src/main/resources` 폴더에 고유한 Java 코드와 리소스를 각각 추가합니다.
 
@@ -228,13 +226,13 @@ liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 ```{literalinclude} ./module-projects/resources/liferay-k8s2.zip/k8s2-api/bnd.bnd
 ```
 
-The module's name is **Acme K8S2 API** . Its symbolic name---a name that ensures uniqueness---is `com.acme.k8s2.api`. Its [semantic version](./semantic-versioning.md) is declared next. Lastly, the module [**exports**](./exporting-packages.md) the Java package `com.acme.k8s2`, making the package available to other modules. You confirmed the package export above when you executed the `b [bundle ID]` Gogo Shell command.
+모듈의 이름은 *Acme K8S2 API*입니다. 그것의 상징적인 이름---고유성을 보장하는 이름---은 `com.acme.k8s2.api`입니다. 그 [시맨틱 버전](./semantic-versioning.md)이 다음에 선언됩니다. 마지막으로 모듈 [*exports*](./exporting-packages.md) Java 패키지 `com.acme.k8s2`는 다른 모듈에서 패키지를 사용할 수 있도록 합니다. `b [bundle ID]` Gogo Shell 명령을 실행했을 때 위에서 패키지 내보내기를 확인했습니다.
 
-#### Generated Metadata
+#### 생성된 메타데이터
 
-At build time, Bnd propagates metadata from the `bnd.bnd` file to the JAR file's `META-INF/MANIFEST.MF` and adds metadata based on its inspection.
+빌드 시 Bnd는 `bnd.bnd` 파일에서 JAR 파일의 `META-INF/MANIFEST.MF`로 메타데이터를 전파하고 해당 검사를 기반으로 메타데이터를 추가합니다.
 
-Here's a `META-INF/MANIFEST.MF` file generated for the example module:
+다음은 예제 모듈용으로 생성된 `META-INF/MANIFEST.MF` 파일입니다.
 
 ```properties
 Manifest-Version: 1.0
@@ -251,6 +249,7 @@ Javac-Encoding: UTF-8
 Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
 Tool: Bnd-4.3.0.201909301554
 ```
+
 Bnd는 `bnd.bnd` 파일의 모든 헤더를 전파하고 더 많은 헤더와 세부 정보를 추가했습니다. 예를 들어 내보낸 `com.acme.k8s2` 패키지의 기본 패키지 버전은 `1.0.0`입니다.
 
 ## 결론
@@ -259,13 +258,13 @@ Bnd는 `bnd.bnd` 파일의 모든 헤더를 전파하고 더 많은 헤더와 �
 
 이제 모듈 프로젝트의 모양, 빌드 및 배포 방법, 런타임에 모듈을 검사하는 방법을 알게 되었습니다.
 
-모듈은 `Greeter` API와 같은 API를 통해 서로의 기능을 활용합니다. Liferay는 OSGi 서비스를 사용하여 APIS를 정의, 구현 및 사용합니다. 다음으로 [OSGi 서비스로서의 API](./apis-as-osgi-services.md)는 OSGi 서비스를 사용하여 `Greeter` API를 **구현** 하는 방법을 보여줍니다.
+모듈은 `Greeter` API와 같은 API를 통해 서로의 기능을 활용합니다. Liferay는 OSGi 서비스를 사용하여 APIS를 정의, 구현 및 사용합니다. 다음으로 [OSGi 서비스로서의 API](./apis-as-osgi-services.md)는 OSGi 서비스를 사용하여 `Greeter` API를 *구현*하는 방법을 보여줍니다.
 
-```{note}
+```{참고}
 모듈 수명 주기에 대한 자세한 내용은 [모듈 수명 주기](../architecture/module-lifecycle.md)를 참조하세요.
 ```
 
-## 관련 주제
+## 관련 항목
 
 * [OSGi 서비스로서의 API](./apis-as-osgi-services.md)
 * [OSGi 서비스 사용](./using-an-osgi-service.md)

@@ -3,15 +3,16 @@
 애플리케이션 메뉴에서 [역할 생성 및 관리](../roles-and-permissions/creating-and-managing-roles.md) 를 수행할 수 있지만 Liferay의 REST API를 사용할 수도 있습니다. 이러한 서비스를 호출하여 역할을 관리하십시오.
 
 ## 사용자를 일반 역할에 연결
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [역할 API 기본 사항](./liferay-z3v5.zip) 을 다운로드하고 압축을 풉니다.
+1. [역할 API 기본 사항](./liferay-z3v5.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-z3v5.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-z3v5.zip -O
    ```
 
    ```bash
@@ -20,15 +21,15 @@
 
 1. [Users_GET_FromInstance](./user-account-api-basics.md#get-instance-users) 을 사용하여 사용자 ID 목록을 가져옵니다. 일반 역할과 연결하려는 사용자 ID를 기록해 둡니다.
 
-1. [Roles_GET_FromInstance](#get-roles-from-instance) 을 사용하여 모든 역할 ID 목록을 가져옵니다. 연결하려는 역할 ID `인 roleType: regular`을 기록해 둡니다. 예를 들어 Analytics 관리자 일반 역할 유형입니다.
+1. [Roles_GET_FromInstance](#get-roles-from-instance) 사용하여 모든 역할 ID 목록을 가져옵니다. 연결하려는 역할 ID `인 roleType: regular`기록해 둡니다. 예를 들어 Analytics 관리자 일반 역할 유형입니다.
 
-1. cURL 스크립트를 사용하여 사용자를 일반 역할에 연결합니다. 명령줄에서 `curl` 폴더로 이동합니다. `RoleUserAssociation_POST_ToInstance.sh` 스크립트를 실행합니다. `1234` 을 일반 역할의 ID로 바꿉니다. `5678` 을 사용자 ID로 바꿉니다.
+1. cURL 스크립트를 사용하여 사용자를 일반 역할에 연결합니다. 명령줄에서 `curl` 폴더로 이동합니다. `RoleUserAssociation_POST_ToInstance.sh` 스크립트를 실행합니다. `1234` 일반 역할의 ID로 바꿉니다. `5678` 사용자 ID로 바꿉니다.
 
    ```bash
    ./RoleUserAssociation_POST_ToInstance.sh 1234 5678
    ```
 
-1. **전역 메뉴** &rarr; **제어판** &rarr; **역할** 로 이동합니다. 일반 역할 탭에서 사용자를 연결하는 데 사용한 특정 역할을 클릭합니다. **담당자** 탭을 클릭합니다. 사용자가 선택한 역할과 연결되었는지 확인합니다.
+1. *전역 메뉴* &rarr; *제어판* &rarr; *역할*로 이동합니다. 일반 역할 탭에서 사용자를 연결하는 데 사용한 특정 역할을 클릭합니다. *담당자* 탭을 클릭합니다. 사용자가 선택한 역할과 연결되었는지 확인합니다.
 
    ![사용자가 연결되었는지 확인합니다.](./roles-api-basics/images/01.png)
 
@@ -81,7 +82,7 @@
 
 | 라인(약칭)                                                             | 묘사                                                          |
 |:------------------------------------------------------------------ |:----------------------------------------------------------- |
-| `RoleResource.Builder builder = ...`                               | `RoleResource` 서비스 인스턴스를 생성하기 위한 `빌더` 을 가져옵니다.              |
+| `RoleResource.Builder builder = ...`                               | `RoleResource` 서비스 인스턴스를 생성하기 위한 `빌더` 가져옵니다.                |
 | `RoleResource roleResource = builder.authentication(...).build();` | 기본 인증을 지정하고 `RoleResource` 서비스 인스턴스를 생성합니다.                 |
 | `roleResource.postRoleUserAccountAssociation(...);`                | `postRoleUserAccountAssociation` 메서드를 호출하고 데이터를 게시물에 전달합니다. |
 
@@ -177,7 +178,7 @@ java -classpath .:* -DroleId=1234 Role_GET_ById
 
 ## 사용자를 사이트 역할에 연결
 
-사용자를 특정 사이트 역할과 연결할 수 있습니다. `1234` 을 역할의 ID로 바꿉니다. `5678` 을 사이트 ID로 바꿉니다. `9012` 을 사용자 ID로 바꾸십시오.
+사용자를 특정 사이트 역할과 연결할 수 있습니다. `1234` 역할의 ID로 바꿉니다. `5678` 사이트 ID로 바꿉니다. `9012` 사용자 ID로 바꾸십시오.
 
 ### RoleUserAssociation_POST_ToSite.sh
 
@@ -211,7 +212,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
 
 ## 사용자를 조직 역할에 연결
 
-사용자를 특정 조직 역할과 연결할 수 있습니다. `1234` 을 조직의 ID로 바꿉니다. `5678` 을 역할의 ID로 바꿉니다. `9012` 을 사용자 ID로 바꾸십시오.
+사용자를 특정 조직 역할과 연결할 수 있습니다. `1234` 조직의 ID로 바꿉니다. `5678` 역할의 ID로 바꿉니다. `9012` 사용자 ID로 바꾸십시오.
 
 ### RoleUserAssociation_POST_ToOrganization.sh
 
@@ -245,7 +246,7 @@ java -classpath .:* -DorganizationId=1234 -DroleId=5678 -DuserAccountId=9012 Rol
 
 ## 일반 역할 연결 제거
 
-특정 사용자에서 일반 역할 연결을 제거합니다. `1234` 을 역할의 ID로 바꿉니다. `5678` 을 사용자 ID로 바꿉니다.
+특정 사용자에서 일반 역할 연결을 제거합니다. `1234` 역할의 ID로 바꿉니다. `5678` 사용자 ID로 바꿉니다.
 
 ### RoleUserAssociation_DELETE_FromInstance.sh
 
@@ -279,7 +280,7 @@ java -classpath .:* -DroleId=1234 -DuserAccountId=5678 RoleUserAssociation_DELET
 
 ## 사이트 역할 연결 제거
 
-특정 사용자로부터 사이트 역할 연결을 제거합니다. `1234` 을 역할의 ID로 바꿉니다. `5678` 을 사이트 ID로 바꿉니다. `9012` 을 사용자 ID로 바꾸십시오.
+특정 사용자로부터 사이트 역할 연결을 제거합니다. `1234` 역할의 ID로 바꿉니다. `5678` 사이트 ID로 바꿉니다. `9012` 사용자 ID로 바꾸십시오.
 
 ### RoleUserAssociation_DELETE_FromSite.sh
 
@@ -313,7 +314,7 @@ java -classpath .:* -DroleId=1234 -DsiteId=5678 -DuserAccountId=9012 RoleUserAss
 
 ## 조직 역할 연결 제거
 
-특정 사용자로부터 조직 역할 연결을 제거합니다. `1234` 을 조직의 ID로 바꿉니다. `5678` 을 역할의 ID로 바꿉니다. `9012` 을 사용자 ID로 바꾸십시오.
+특정 사용자로부터 조직 역할 연결을 제거합니다. `1234` 조직의 ID로 바꿉니다. `5678` 역할의 ID로 바꿉니다. `9012` 사용자 ID로 바꾸십시오.
 
 ### RoleUserAssociation_DELETE_FromOrganization.sh
 
@@ -345,4 +346,4 @@ java -classpath .:* -DorganizationId=1234 -DroleId=5678 -DuserAccountId=9012 Rol
    :lines: 8-19
 ```
 
-[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) 은 `Role` 서비스 및 스키마를 모두 보여주고 각 서비스를 시험해 볼 수 있는 인터페이스를 가지고 있습니다.
+[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) `Role` 서비스 및 스키마를 모두 보여주고 각 서비스를 시험해 볼 수 있는 인터페이스를 가지고 있습니다.

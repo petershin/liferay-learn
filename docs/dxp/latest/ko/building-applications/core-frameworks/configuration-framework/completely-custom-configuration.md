@@ -1,25 +1,25 @@
 # 완전 맞춤형 구성
 
-구성 인터페이스를 생성하면 구성 [가 자동으로 생성](./setting-and-accessing-configurations.html#creating-the-configuration-interface) . 그러나 경우에 따라 구성에 대해 완전히 사용자 정의된 UI를 원할 수도 있습니다. 예를 들어 Liferay의 구성 관리자를 사용하는 대신 프로그래밍 방식으로 구성을 처리할 계획입니다. 또는 완전히 사용자 지정 UI를 만드는 유연성을 원할 수도 있습니다. 방법은 다음과 같습니다.
+구성 UI는 [구성 인터페이스 생성](./setting-and-accessing-configurations.html#creating-the-configuration-interface) 시 자동으로 생성됩니다. 그러나 경우에 따라 구성에 대해 완전히 사용자 정의된 UI를 원할 수도 있습니다. 예를 들어 Liferay의 구성 관리자를 사용하는 대신 프로그래밍 방식으로 구성을 처리할 계획입니다. 또는 완전히 사용자 지정 UI를 만드는 유연성을 원할 수도 있습니다. 방법은 다음과 같습니다.
 
 ## 예제 프로젝트 보기
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [Completely Custom Configuration](./liferay-u2g5.zip) 을 다운로드하고 압축을 풉니다.
+1. [완전히 사용자 지정 구성](./liferay-u2g5.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
     ```
 
     ```bash
     unzip liferay-u2g5.zip
     ```
 
-1. 모듈 루트에서 빌드 및 배포합니다.
+1. 모듈 루트에서 빌드 및 배포합니다. 
 
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
@@ -37,7 +37,7 @@
 
 1. 예제 모듈이 작동하는지 확인하십시오. 브라우저에서 `https://localhost:8080`로 엽니다.
 
-1. **제어판** &rarr; **구성** &rarr; **시스템 설정** &rarr; **타사** 으로 이동합니다. **U2G5 구성** 을 클릭합니다.
+1. *제어판* &rarr; *구성* &rarr; *시스템 설정* &rarr; *타사*으로 이동합니다. *U2G5 구성*을 클릭합니다.
 
    ![시스템 설정에서 U2G5 구성으로 이동합니다.](./completely-custom-configuration/images/01.png)
 
@@ -52,10 +52,10 @@
 :lines: 7-24
 ```
 
-`@ExtendedObjectClassDefinition` 주석에서 `generateUI` 은 `false`로 설정됩니다. 이렇게 하면 구성 UI가 자동 생성되지 않습니다.
+`@ExtendedObjectClassDefinition` 주석에서 `generateUI` `false`로 설정됩니다. 이렇게 하면 구성 UI가 자동 생성되지 않습니다.
 
 ```{note}
-DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay) 을 참조하십시오.
+DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay)을 참조하십시오.
 ```
 
 ## 구성 화면 구현
@@ -82,7 +82,7 @@ DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'Configuration
     :lines: 42-45
     ```
 
-1. `render()` 메서드는 `ConfigurationProvider` 을 사용하여 구성을 가져옵니다. 서블릿 컨텍스트는 요청 디스패처에 대한 액세스를 제공하여 사용자 정의 JSP가 구성을 읽을 수 있도록 합니다.
+1. `render()` 메서드는 `ConfigurationProvider` 사용하여 구성을 가져옵니다. 서블릿 컨텍스트는 요청 디스패처에 대한 액세스를 제공하여 사용자 정의 JSP가 구성을 읽을 수 있도록 합니다.
 
     ```{literalinclude} ./completely-custom-configuration/resources/liferay-u2g5.zip/u2g5-web/src/main/java/com/acme/u2g5/web/internal/configuration/admin/display/U2G5ConfigurationScreen.java
     :dedent: 1
@@ -100,7 +100,7 @@ DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'Configuration
 
 ## Web-ContextPath 추가
 
-`bnd.bnd` 파일에서 번들의 `Web-ContextPath` 을 지정합니다. 예를 들어 샘플 프로젝트의 Bnd 파일에는 `Web-ContextPath: /u2g5-web` 이 있습니다. Configuration Screen 파일에 `ServletContext` 객체를 등록하는 것입니다. 서블릿 컨텍스트는 포틀릿에 대해 자동으로 생성되지만 이 샘플에는 포틀릿이 없으므로 이 줄을 Bnd 파일에 추가해야 합니다.
+`bnd.bnd` 파일에서 번들의 `Web-ContextPath` 지정합니다. 예를 들어 샘플 프로젝트의 Bnd 파일에는 `Web-ContextPath: /u2g5-web` 있습니다. Configuration Screen 파일에 `ServletContext` 객체를 등록하는 것입니다. 서블릿 컨텍스트는 포틀릿에 대해 자동으로 생성되지만 이 샘플에는 포틀릿이 없으므로 이 줄을 Bnd 파일에 추가해야 합니다.
 
 ## 사용자 정의 JSP 생성
 
@@ -120,4 +120,4 @@ DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'Configuration
 
 1. 속성 `fontColor()`, `fontFamily()`, `fontSize()` 이제 JSP에서 사용할 수 있습니다.
 
-이 샘플 프로젝트는 `ConfigurationScreen` 을 사용하여 사용자 정의 JSP에서 구성 값을 읽고 표시하는 방법에 대한 기본적인 예를 보여줍니다. 애플리케이션에서 고유한 코드를 작성하고 필요에 맞게 완전히 사용자 지정 구성 UI를 만듭니다.
+이 샘플 프로젝트는 `ConfigurationScreen` 사용하여 사용자 정의 JSP에서 구성 값을 읽고 표시하는 방법에 대한 기본적인 예를 보여줍니다. 애플리케이션에서 고유한 코드를 작성하고 필요에 맞게 완전히 사용자 지정 구성 UI를 만듭니다.

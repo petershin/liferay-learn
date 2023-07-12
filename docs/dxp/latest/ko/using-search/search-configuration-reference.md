@@ -4,7 +4,7 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 * 많은 검색 구성이 시스템 범위에 영향을 미칩니다(예: 재인덱싱 작업 및 검색 엔진 커넥터 구성).
 * 검색 튜닝 구성은 가상 인스턴스에 영향을 미칩니다.
-* 새 검색 페이지를 만들면 사이트 범위의 검색에 영향을 미칩니다.
+* 새 검색 페이지를 만들면 사이트 범위의 검색에 영향을 줍니다.
 * 검색 위젯 구성은 위젯 범위 구성이지만 일부는 페이지 범위 구성으로 생각할 수도 있습니다.
 
 따라서 `구성 검색` 용어는 사용 가능한 모든 범위를 다루므로 매우 광범위합니다. 이것은 기본적으로 구성할 수 있는 검색 동작과 중요한 검색 구성 옵션을 찾을 수 있는 사이트에 대한 높은 수준의 개요입니다.
@@ -17,7 +17,7 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 ### 위젯 검색
 
-검색 위젯의 전용 적용 범위는 [검색 페이지 및 위젯](./getting-started/search-overview.md#search-pages-and-widgets) 을 참조하십시오.
+검색 위젯의 전용 적용 범위는 [검색 페이지 및 위젯](./getting-started/search-overview.md#search-pages-and-widgets)을 참조하십시오.
 
 **검색 결과**: 검색 결과 표시 방법을 설정합니다. 자세한 내용은 [검색 결과 표시](./search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#displaying-search-results) 읽으십시오.
 
@@ -128,7 +128,7 @@ Liferay DXP의 검색은 다양한 방법으로 구성할 수 있습니다. [구
 
 Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
-**`indexCommitImmediately`**: *true* (기본값)인 경우 각 쓰기 요청은 검색 엔진이 인덱스 판독기를 새로 고치도록 강제하여 잠재적으로 트랜잭션을 디스크로 플러시합니다. 이는 검색 엔진 성능에 부정적인 영향을 미칠 수 있습니다. 기본 동작은 개별 자산(예: 블로그 추가, 블로그 업데이트)에 대한 인덱스 쓰기에 대해 즉시 커밋하는 것이지만 모든 항목이 검색 엔진에 전송될 때까지 대량 인덱스 쓰기 작업(예: 모든 사용자 인덱스, 모든 양식 항목 인덱스)에 대한 커밋은 지연됩니다. . 이를 false로 설정하면 개별 인덱스 작업의 동작이 변경되고 새로 추가된 콘텐츠를 표시할 때 Asset Publisher와 같은 애플리케이션이 지연된 응답을 나타낼 수 있습니다. 자세한 내용은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/near-real-time.html) 참조하십시오.
+**`indexCommitImmediately`**: *true* (기본값)인 경우 각 쓰기 요청은 검색 엔진이 인덱스 판독기를 새로 고치도록 강제하여 잠재적으로 트랜잭션을 디스크로 플러시합니다. 이는 검색 엔진 성능에 부정적인 영향을 미칠 수 있습니다. 기본 동작은 개별 자산(예: 블로그 추가, 블로그 업데이트)에 대한 인덱스 쓰기에 대해 즉시 커밋하는 것이지만 모든 항목이 검색 엔진에 전송될 때까지 대량 인덱스 쓰기 작업(예: 모든 사용자 인덱스, 모든 양식 항목 인덱스)에 대한 커밋은 지연됩니다. 이를 false로 설정하면 개별 인덱스 작업의 동작이 변경되고 새로 추가된 콘텐츠를 표시할 때 Asset Publisher와 같은 애플리케이션이 지연된 응답을 나타낼 수 있습니다. 자세한 내용은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/near-real-time.html) 참조하십시오.
 
 ### 인덱서 레지스트리
 
@@ -148,7 +148,7 @@ Index Writer Helper 항목에는 하나의 항목이 포함되어 있습니다.
 
 **구성 파일:** `com.liferay.portal.search.configuration.QueryPreProcessConfiguration.config`
 
-이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 을 통해 정의하는 경우 배열 구문 사용).
+이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)을 통해 정의하는 경우 배열 구문 사용).
 
 **`fieldNamePatterns`**: 여기서 설정한 패턴과 이름이 일치하는 필드는 분석되지 않은 키워드 필드로 처리됩니다. 점수가 매겨진 전체 텍스트 쿼리 대신 점수가 매겨지지 않은 와일드카드 쿼리에 의해 일치가 수행됩니다. 이는 인덱스가 커짐에 따라 검색 엔진 성능을 저하시키는 리소스 집약적인 작업입니다. 하위 문자열 일치의 경우 일반적으로 [ngram 토크나이저](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) 에 의존하는 것이 더 잘 수행됩니다.
 
@@ -194,7 +194,7 @@ Liferay Enterprise Search 구독에서 사용할 수 있는 클러스터 간 복
 
 **구성 파일:** `com.liferay.portal.search.elasticsearch.monitoring.web.internal.configuration.MonitoringConfiguration.config`
 
-Liferay Enterprise Search 구독으로 사용할 수 있는 Liferay Enterprise Search 모니터링 모듈을 배포한 경우 Elasticsearch 모니터링 구성을 사용할 수 있습니다. 이러한 구성 속성은 전용 [Elasticsearch 모니터링](./liferay-enterprise-search/monitoring-elasticsearch.md) 설명서에서 다룹니다.
+Liferay Enterprise Search 구독으로 사용할 수 있는 Liferay Enterprise Search 모니터링 모듈을 배포한 경우 Elasticsearch 모니터링 구성을 사용할 수 있습니다. 이러한 구성 속성은 전용 [Monitoring Elasticsearch](./liferay-enterprise-search/monitoring-elasticsearch.md) 설명서에서 다룹니다.
 
 ### Elasticsearch 7
 
@@ -206,7 +206,7 @@ Liferay와 Elasticsearch 7 간의 연결을 구성합니다. 이러한 속성에
 
 **구성 파일:** `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConnectionConfiguration-[connectionId].config`
 
-Liferay 7.3은 여러 Elasticsearch 클러스터에 연결할 수 있습니다. 연결은 Elasticsearch 연결 항목에서 정의됩니다. 이 기능은 저수준 검색 옵션 및 검색 결과 위젯과 함께 사용하여 Elasticsearch 클러스터를 사용하는 타사 시스템의 결과를 표시할 수 있습니다. [교차 클러스터 복제](./liferay-enterprise-search/cross-cluster-replication/cross-cluster-replication.md) 설명서에도 나와 있습니다.
+Liferay 7.3은 여러 Elasticsearch 클러스터에 연결할 수 있습니다. 연결은 Elasticsearch 연결 항목에서 정의됩니다. 이 기능은 저수준 검색 옵션 및 검색 결과 위젯과 함께 사용하여 Elasticsearch 클러스터를 사용하는 타사 시스템의 결과를 표시할 수 있습니다. [Cross-Cluster Replication](./liferay-enterprise-search/cross-cluster-replication/cross-cluster-replication.md) 설명서에도 나와 있습니다.
 
 ### Learning to Rank
 
@@ -226,9 +226,9 @@ Liferay Enterprise Search 구독에서 사용할 수 있는 Liferay Enterprise S
 
 **구성 파일:** `com.liferay.portal.search.tuning.synonyms.web.internal.configuration.SynonymsConfiguration.config`
 
-이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 을 통해 정의하는 경우 배열 구문 사용).
+이 항목에는 하나의 반복 가능한 속성이 있습니다( [OSGi 구성 파일](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)을 통해 정의하는 경우 배열 구문 사용).
 
-**`synyonymFilterNames`**: 적용할 동의어 필터 이름을 설정합니다. 이러한 필터는 Elasticsearch 인덱스 설정에서 정의해야 합니다. [새 동의어 언어 필터 만들기](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters) 참조하십시오.
+**`synyonymFilterNames`**: 적용할 동의어 필터 이름을 설정합니다. 이러한 필터는 Elasticsearch 인덱스 설정에서 정의해야 합니다. [새 동의어 언어 필터 만들기](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters)참조하십시오.
 
 ### 검색 관리
 

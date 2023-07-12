@@ -9,12 +9,12 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p1z2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p1z2.zip -O
     ```
 
     ```bash
@@ -41,11 +41,11 @@
 
 1. P1Z2 포틀릿을 페이지에 추가하십시오. 샘플 위젯에서 예제 포틀릿을 찾을 수 있습니다. 기본 색상 변수는 파란색으로 설정되어 있습니다.
 
-1. 포틀릿의 옵션 아이콘(![options icon](../../../images/icon-options.png))을 클릭하고 **구성** 를 클릭하십시오. 포틀릿의 기본 설정 창이 열립니다.
+1. 포틀릿의 옵션 아이콘(![options icon](../../../images/icon-options.png))을 클릭하고 *구성*클릭하십시오. 포틀릿의 기본 설정 창이 열립니다.
 
     ![구성을 클릭하여 포틀릿의 기본 설정을 엽니다.](./portlet-preferences/images/01.png)
 
-1. 다른 색상을 선택하고 **저장** 을 클릭합니다. 기본 설정 메뉴를 닫으면 이제 포틀릿에 새 선택 항목이 표시됩니다.
+1. 다른 색상을 선택하고 *저장*클릭합니다. 기본 설정 메뉴를 닫으면 이제 포틀릿에 새 선택 항목이 표시됩니다.
 
 기본 설정이 작동하는 방식은 다음과 같습니다.
 
@@ -86,9 +86,9 @@ JSP 파일은 `<liferay-portlet:actionURL />` 및 `<liferay-portlet:renderURL />
 :lines: 7
 ```
 
-JSP 파일은 선택된 포틀릿 환경 설정을 확인하고 값을 리턴합니다. 아직 값이 저장되지 않은 경우 `파란색` 이 기본값으로 반환됩니다.
+JSP 파일은 선택된 포틀릿 환경 설정을 확인하고 값을 리턴합니다. 아직 값이 저장되지 않은 경우 `파란색` 기본값으로 반환됩니다.
 
-`<portlet:defineObjects />` 태그는 `portletPreferences` 를 사용 가능하게 하며 JSP에서 `색` 환경 설정을 검색하는 데 사용합니다.
+`<portlet:defineObjects />` 태그는 `portletPreferences` 사용 가능하게 하며 JSP에서 `색` 환경 설정을 검색하는 데 사용합니다.
 
 ## 포틀릿의 경로 매개변수 추가
 

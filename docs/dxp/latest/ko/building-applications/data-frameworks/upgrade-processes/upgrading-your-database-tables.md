@@ -2,19 +2,19 @@
 
 {bdg-secondary}`사용 가능한 Liferay DXP 7.4 U10+ 또는 Liferay Portal 7.4 GA14+`
 
-애플리케이션을 업그레이드하려면 데이터베이스 테이블을 변경해야 할 수 있습니다. Liferay의 업그레이드 프레임워크를 사용하면 이러한 변경을 쉽게 수행할 수 있습니다. 이 업그레이드 프로세스를 보려면 샘플 프로젝트를 배포하십시오. 이전 버전의 Liferay는 [모듈](https://help.liferay.com/hc/ko/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 에 대한 업그레이드 프로세스 생성을 참조하십시오.
+애플리케이션을 업그레이드하려면 데이터베이스 테이블을 변경해야 할 수 있습니다. Liferay의 업그레이드 프레임워크를 사용하면 이러한 변경을 쉽게 수행할 수 있습니다. 이 업그레이드 프로세스를 보려면 샘플 프로젝트를 배포하십시오. 이전 버전의 Liferay는 [모듈](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 에 대한 업그레이드 프로세스 생성을 참조하십시오.
 
 ## 버전 1.0.0 배포
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [데이터베이스 테이블 업그레이드](./liferay-p5d2.zip) 을 다운로드하고 압축을 풉니다.
+1. [데이터베이스 테이블 업그레이드](./liferay-p5d2.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-p5d2.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-p5d2.zip -O
    ```
 
    ```bash
@@ -62,7 +62,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. Liferay에 로그인하고 **Control Panel** &rarr; **Gogo Shell** 에서 Gogo shell 콘솔로 이동합니다.
+1. Liferay에 로그인하고 *Control Panel* &rarr; *Gogo Shell*에서 Gogo shell 콘솔로 이동합니다.
 
 1. `upgrade:list com.acme.p5d2.service`명령을 입력하여 2.0.0 업그레이드를 사용할 수 있는지 확인합니다.
 
@@ -89,7 +89,7 @@
 | `foo` (유형: 문자열) | `마디` (유형: 문자열) | 열 이름이 변경됩니다.       |
 | -               | `찰리` (유형: 문자열) | 새 열이 추가됩니다.        |
 
-[1.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/1.0.0/p5d2-service/service.xml) 의 `service.xml` 열 정의를 [2.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/service.xml) 와 비교합니다.
+[1.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/1.0.0/p5d2-service/service.xml) 의 `service.xml` 열 정의를 [2.0.0](./upgrading-your-database-tables/resources/liferay-p5d2.zip/2.0.0/p5d2-service/service.xml)와 비교합니다.
 
 ### UpgradeStepRegistrator 클래스 생성
 
@@ -121,7 +121,7 @@
 | alterTableDropColumn | 열 제거        |
 
 ```{warning}
-`alterTableDropColumn`은 MariaDB에서 작동하지 않습니다. 이는 [알려진 버그](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b) 입니다. 대신 [이전 지침](https://help.liferay.com/hc/ko/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 을 따르십시오.
+`alterTableDropColumn`은 MariaDB에서 작동하지 않습니다. 이는 [알려진 버그](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b)입니다. 대신 [이전 지침](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules)을 따르십시오.
 ```
 
 변경한 후 Service Builder를 다시 실행하십시오. 이제 업그레이드 배포를 빌드할 준비가 되었습니다.
@@ -130,8 +130,8 @@
 
 업그레이드가 여러 단계로 복잡한 경우 `UpgradeProcess` 클래스에서 `getPreUpgradeSteps()` 및 `getPostUpgradeSteps()` 메서드를 사용하는 것을 고려하십시오. 이 접근 방식을 사용하면 업그레이드 프로세스를 더 많이 제어할 수 있습니다. 더 쉬운 디버깅을 위해 각 업그레이드 단계에는 `Release_` 테이블에서 다른 스키마 버전이 제공됩니다. 단계가 실패하고 업그레이드를 다시 실행해야 하는 경우 업그레이드 프로세스는 자동으로 최신 실패 지점에서 업그레이드를 확인하고 다시 시작합니다.
 
-예를 들어 Liferay의 [OpenIdConnectSessionUpgradeProcess](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-security-sso/portal-security-sso-openid-connect-persistence-service/src/main/java/com/liferay/portal/security/sso/openid/connect/persistence/internal/upgrade/v2_0_0/OpenIdConnectSessionUpgradeProcess.java) 은 이 기능을 활용합니다.
+예를 들어 Liferay의 [OpenIdConnectSessionUpgradeProcess](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-security-sso/portal-security-sso-openid-connect-persistence-service/src/main/java/com/liferay/portal/security/sso/openid/connect/persistence/internal/upgrade/v2_0_0/OpenIdConnectSessionUpgradeProcess.java) 이 기능을 활용합니다.
 
-이 예제에서는 `getPreUpgradeSteps()` 이 먼저 실행되며 여기에는 새 열을 추가하는 간단한 단계가 포함됩니다. `doUpgrade()` 메서드에는 새 열을 채우는 작업이 포함됩니다. `doUpgrade()` 메서드가 실패하면 개발자는 디버깅하고 필요한 변경을 수행한 다음 업그레이드를 다시 실행할 수 있습니다. 프로세스는 성공한 첫 번째 단계를 인식하고 자동으로 다음 단계로 이동합니다.
+이 예제에서는 `getPreUpgradeSteps()` 먼저 실행되며 여기에는 새 열을 추가하는 간단한 단계가 포함됩니다. `doUpgrade()` 메서드에는 새 열을 채우는 작업이 포함됩니다. `doUpgrade()` 메서드가 실패하면 개발자는 디버깅하고 필요한 변경을 수행한 다음 업그레이드를 다시 실행할 수 있습니다. 프로세스는 성공한 첫 번째 단계를 인식하고 자동으로 다음 단계로 이동합니다.
 
 업그레이드 단계를 활용하려면 `import com.liferay.portal.kernel.upgrade.UpgradeStep` 클래스를 업그레이드 프로세스로 가져오십시오.

@@ -34,7 +34,7 @@ Forms 애플리케이션에는 고도로 구성 가능한 많은 [필드 유형�
 1. 사용자 정의 양식 필드 유형 프로젝트를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O
     ```
 
     ```bash
@@ -67,11 +67,11 @@ Forms 애플리케이션에는 고도로 구성 가능한 많은 [필드 유형�
 
 1. 브라우저에서 <http://localhost:8080>로 엽니다.
 
-1. **사이트 메뉴** &rarr; **콘텐츠 & 데이터** &rarr; **양식** 의 Forms 애플리케이션으로 이동합니다.
+1. _사이트 메뉴_ &rarr; _콘텐츠 & 데이터_ &rarr; _양식_에서 Forms 애플리케이션으로 이동합니다.
 
-1. **추가** 버튼(![Add](./../../../images/icon-add.png))을 클릭하여 양식 작성기를 엽니다.
+1. *추가* 버튼(![Add](./../../../images/icon-add.png))을 클릭하여 양식 작성기를 엽니다.
 
-1. **C2P9 슬라이더** 필드를 양식에 추가하십시오.
+1. _C2P9 슬라이더_ 필드를 양식에 추가하십시오.
 
 1. 레이블, 미리 정의된 값 및 도움말 텍스트를 입력하고 필드를 필수로 만들 수 있습니다. 이러한 설정은 기본 설정으로 제공되는 많은 기본 [](../creating-and-managing-forms/forms-field-types-reference.md) 과 일치합니다.
 
@@ -81,7 +81,7 @@ Forms 애플리케이션에는 고도로 구성 가능한 많은 [필드 유형�
 
 ## 양식 필드의 코드 이해
 
-기본 양식 필드에는 Java 클래스와 JavaScript 파일이 포함됩니다. C2P9 Slider 필드에서 `C2P9DDMFormFieldType.java` 추상 클래스 `BaseDDMFormFieldType` 를 확장하고 OSGi 구성 요소에서 해당 메타데이터를 정의하여 `DDMFormFieldType` 구현을 제공합니다.
+기본 양식 필드에는 Java 클래스와 JavaScript 파일이 포함되어 있습니다. C2P9 Slider 필드에서 `C2P9DDMFormFieldType.java` 추상 클래스 `BaseDDMFormFieldType` 를 확장하고 OSGi 구성 요소에서 해당 메타데이터를 정의하여 `DDMFormFieldType` 구현을 제공합니다.
 
 ```{literalinclude} ./writing-a-custom-form-field-type/resources/liferay-c2p9.zip/c2p9-impl/src/main/java/com/acme/c2p9/internal/dynamic/data/mapping/form/field/type/C2P9DDMFormFieldType.java
    :dedent: 0
@@ -93,7 +93,7 @@ Forms 애플리케이션에는 고도로 구성 가능한 많은 [필드 유형�
 
 `ddm.form.field.type.display.order`: 정수 또는 부동 소수점 값을 설정하여 Form Builder 사이드바에서 필드가 표시되는 사이트를 결정합니다. 동일한 값을 가진 필드는 무작위로 정렬됩니다.
 
-`ddm.form.field.type.icon`: 필드에 사용할 아이콘 유형을 결정합니다. [점토 아이콘](https://clayui.com/docs/components/icon.html) 선택합니다.
+`ddm.form.field.type.icon`: 필드에 사용할 아이콘 유형을 결정합니다. [Clay Icon](https://clayui.com/docs/components/icon.html)선택합니다.
 
 `ddm.form.field.type.label`: 레이블 텍스트에 대한 언어 키를 제공합니다. 변환된 값이 `Language.properties` 파일에 정의되어 있는지 확인하십시오.
 
@@ -142,7 +142,7 @@ import 문은 Liferay의 기본 양식 필드인 `dynamic-data-mapping-form-fiel
    :lines: 5-17
 ```
 
-이러한 매개변수의 값은 일부 다른 매개변수와 함께 양식 필드에 대한 HTML `<input>` 태그를 정의합니다. 중요한 것은 사용자가 선택할 수 있는 `최대` 및 `최소` 값이 현재 하드 코딩되어 있다는 것입니다. 나중에 [변경할 것입니다](#add-custom-settings-to-the-form-field) . 필드의 `값` 삼항 연산자를 사용하여 정의됩니다. 값이 입력되면 사용하십시오. 그렇지 않으면 미리 정의된 값을 사용합니다.
+이러한 매개변수의 값은 일부 다른 매개변수와 함께 양식 필드에 대한 HTML `<input>` 태그를 정의합니다. 중요한 것은 사용자가 선택할 수 있는 `최대` 및 `최소` 값이 현재 하드 코딩되어 있다는 것입니다. 나중에 [변경할 것입니다](#add-custom-settings-to-the-form-field). 필드의 `값` 삼항 연산자를 사용하여 정의됩니다. 값이 입력되면 사용하십시오. 그렇지 않으면 미리 정의된 값을 사용합니다.
 
 `Main` 구성 요소는 파일 끝에서 내보내집니다. 가져온 `FieldBase`의 하위 요소로 `Slider` 포함합니다. `onChange` 함수는 이벤트가 감지될 때마다(슬라이더가 새 값으로 드래그될 때마다) 슬라이더의 사이트/값을 가져옵니다.
 

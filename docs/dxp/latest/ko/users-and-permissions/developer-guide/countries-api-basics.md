@@ -11,10 +11,10 @@ Liferay의 Rest API를 사용하여 국가를 만들고 관리합니다.
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [국가 API 기본 사항](./liferay-g6m8.zip) 을 다운로드하고 압축을 풉니다.
+1. [국가 API 기본 사항](./liferay-g6m8.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-g6m8.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-g6m8.zip -O
    ```
 
    ```bash
@@ -111,7 +111,7 @@ Liferay의 Rest API를 사용하여 국가를 만들고 관리합니다.
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `CountryResource` 메소드를 호출합니다.
 
 ```{important}
-[CountryResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$(https://github.com/liferay/liferay-portal/blob/[1]/modules/apps/headless/headless-admin-address/headless-admin-address-client/src/main/java/com /liferay/headless/admin/address/client/resource/v1_0/CountryResource.java)를 참조하십시오.
+[CountryResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$(https://github.com/liferay/liferay-portal/blob/[1]/modules/apps/headless/headless-admin-address/headless-admin-address-client/src/main/java/com/liferay/headless/admin/address/client/resource/v1_0/CountryResource.java)를 참조하십시오.
 ```
 
 다음은 cURL과 Java를 사용하여 다른 `국가` REST 서비스를 호출하는 예입니다.
@@ -150,7 +150,7 @@ java -classpath .:* Countries_GET_FromInstance
    :lines: 11-22
 ```
 
-인스턴스의 `Country` 개체가 JSON에 나타납니다.
+인스턴스의 `국가` 개체가 JSON에 나타납니다.
 
 ## 국가를 얻으십시오
 

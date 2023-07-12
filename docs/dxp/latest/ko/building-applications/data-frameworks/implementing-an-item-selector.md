@@ -15,7 +15,7 @@
 1. 샘플 모듈을 다운로드합니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/liferay-f5d5.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/liferay-f5d5.zip -O
    ```
 
    ```bash
@@ -48,7 +48,7 @@
 
    ![포틀릿에는 항목 선택기를 여는 단추가 하나 있습니다.](./implementing-an-item-selector/images/02.png)
 
-1. **선택** 버튼을 클릭하면 항목 선택기가 나타납니다.
+1. _선택_ 버튼을 클릭하면 항목 선택기가 나타납니다.
 
    ![항목 선택기에는 상자를 선택하여 선택할 수 있는 항목이 표시됩니다.](./implementing-an-item-selector/images/03.png)
 
@@ -72,7 +72,7 @@
 
 1. 포틀릿의 `render` 메소드로 스크롤하십시오.
 
-1. 항목 선택기에 표시할 원하는 엔터티를 나타내는 기준 클래스가 생성됩니다. 기준 클래스는 [`ItemSelectorCriterion` 인터페이스](http://docs.liferay.com/portal/7.3-latest/apps/item-selector-3.0.4/javadocs/com/liferay/item/selector/ItemSelectorCriterion.html) 을 구현해야 합니다.
+1. 항목 선택기에 표시할 원하는 엔터티를 나타내는 기준 클래스가 생성됩니다. 기준 클래스는 [`ItemSelectorCriterion` 인터페이스](http://docs.liferay.com/portal/7.3-latest/apps/item-selector-3.0.4/javadocs/com/liferay/item/selector/ItemSelectorCriterion.html)구현해야 합니다.
 
    이 예에서는 역할이 선택기에 표시되도록 [`RoleItemSelectorCriterion`](http://docs.liferay.com/portal/7.3-latest/apps/roles-3.0.4/javadocs/com/liferay/roles/item/selector/RoleItemSelectorCriterion.html) 에 대한 참조를 사용합니다. 클래스의 새 인스턴스를 생성하여 정의됩니다.
 
@@ -85,7 +85,7 @@
    필요한 엔터티 유형에 대한 기준이 없으면 [BaseItemSelectorCriterion])을 확장하여 고유한 `ItemSelectorCriterion`을 정의할 수 있습니다.
    ```
 
-1. 다음으로 사용자가 엔터티를 선택할 때 엔터티가 제공한 정보를 나타내는 반환 유형 클래스가 필요합니다. 반환 유형 클래스는 [`ItemSelectorReturnType` 인터페이스](http://docs.liferay.com/portal/7.3-latest/apps/item-selector-3.0.4/javadocs/com/liferay/item/selector/ItemSelectorReturnType.html) 을 구현해야 합니다. 예를 들어 반환 유형 클래스를 사용하여 엔터티의 URL, UUID 또는 기본 키를 반환할 수 있습니다. 반환 유형 클래스는 이전에 만든 기준 클래스에 추가됩니다.
+1. 다음으로 사용자가 엔터티를 선택할 때 엔터티가 제공한 정보를 나타내는 반환 유형 클래스가 필요합니다. 반환 유형 클래스는 [`ItemSelectorReturnType` 인터페이스](http://docs.liferay.com/portal/7.3-latest/apps/item-selector-3.0.4/javadocs/com/liferay/item/selector/ItemSelectorReturnType.html)구현해야 합니다. 예를 들어 반환 유형 클래스를 사용하여 엔터티의 URL, UUID 또는 기본 키를 반환할 수 있습니다. 반환 유형 클래스는 이전에 만든 기준 클래스에 추가됩니다.
 
    ```{important}
    사용된 모든 기준에는 **반드시** 적어도 하나의 반환 유형이 연결되어 있어야 합니다.
@@ -105,14 +105,14 @@
    ```
 
    ```{tip}
-   필요한 정보 유형에 대한 반환 유형이 없으면 고유한 [ItemSelectorReturnType]을 정의할 수 있습니다(https://github.com/liferay/liferay-portal/blob/7.3.4-ga5/modules/apps/item- selector/item-selector-api/src/main/java/com/liferay/item/selector/ItemSelectorReturnType.java) 구현.
+   필요한 정보 유형에 대한 반환 유형이 없으면 고유한 [ItemSelectorReturnType]정의할 수 있습니다(https://github.com/liferay/liferay-portal/blob/7.3.4-ga5/modules/apps/item- selector/item-selector-api/src/main/java/com/liferay/item/selector/ItemSelectorReturnType.java) 구현.
    ```
 
    항목 선택기는 이 두 클래스를 사용하여 표시할 항목의 선택 보기(탭으로 표시됨)와 각 항목을 식별하는 방법을 결정합니다.
 
 1. 이제 기준을 사용하여 항목 선택기에 대한 URL을 생성할 수 있습니다. 이 URL은 프런트 엔드 코드에서 항목 선택기 대화 상자를 만듭니다.
 
-   [`RequestBackedPortletURLFactory` 클래스](http://docs.liferay.com/portal/7.3-latest/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/RequestBackedPortletURLFactory.html) 은 다음 기준을 사용하여 항목 선택기 URL을 빠르게 생성할 수 있습니다.
+   [`RequestBackedPortletURLFactory` 클래스](http://docs.liferay.com/portal/7.3-latest/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/RequestBackedPortletURLFactory.html) 다음 기준을 사용하여 항목 선택기 URL을 빠르게 생성할 수 있습니다.
 
    ```java
     PortletURL itemSelectorURL = _itemSelector.getItemSelectorURL(
@@ -143,7 +143,7 @@
 
 ## 보기에서 항목 선택기 사용
 
-1. 항목 선택기를 검색하고 프런트 엔드 코드에서 사용하는 방법을 정의해야 합니다. 예제에서 `view.jsp` 을 엽니다.
+1. 항목 선택기를 검색하고 프런트 엔드 코드에서 사용하는 방법을 정의해야 합니다. 예제에서 `view.jsp` 엽니다.
 
    ```jsp
    <%
@@ -162,7 +162,7 @@
    />
    ```
 
-   `clay:button` 태그는 위젯에 버튼(ID `selectRoleButton` 및 레이블 **Select** 가 화면에 표시됨)을 만듭니다. 이 버튼은 String `<portlet:namespace />selectRoleButton`로 식별할 수 있습니다.
+   `clay:button` 태그는 위젯에 버튼(ID `selectRoleButton` 및 레이블 *Select* 가 화면에 표시됨)을 만듭니다. 이 버튼은 String `<portlet:namespace />selectRoleButton`로 식별할 수 있습니다.
 
 1. 항목 선택기를 여는 JavaScript를 삽입하려면 `<script>` 태그를 사용하십시오.
 
@@ -200,7 +200,7 @@
 항목 선택기가 여러 항목 선택을 지원하도록 하려면 `openSelectionModal` 호출에 `multiple: true`를 추가하여 다중 선택을 활성화할 수 있습니다.
 ```
 
-`이벤트`에 저장된 항목 선택을 사용합니다. 결과에 포함된 데이터 유형 및 정보는 Java 코드에서 사용한 반환 유형 클래스에 따라 다릅니다. 이 예제에서는 `UUIDItemSelectorReturnType`을 사용하므로 데이터는 하나 이상의 선택된 항목의 UUID가 있는 문자열 값입니다.
+`이벤트`에 저장된 항목 선택을 사용합니다. 결과에 포함된 데이터 유형 및 정보는 Java 코드에서 사용한 반환 유형 클래스에 따라 다릅니다. 이 예제에서는 `UUIDItemSelectorReturnType`사용하므로 데이터는 하나 이상의 선택된 항목의 UUID가 있는 문자열 값입니다.
 
 선택 기능 내에서 값을 사용하려는 방법을 구현합니다. 이 예는 간단한 JavaScript 경고를 보여줍니다.
 
@@ -210,7 +210,7 @@
 
 항목 선택기를 사용할 때 선택한 값을 양식에 삽입하려고 합니다. 방법은 다음과 같습니다.
 
-1. `view.jsp`을 엽니다.
+1. `view.jsp`엽니다.
 
 1. `<clay:button>` 태그를 찾습니다. 다음과 같은 형식으로 둘러싸십시오.
 
@@ -244,4 +244,4 @@
 
 ## 결론
 
-축하합니다! 이제 항목 선택기를 구현하는 방법을 알았습니다!
+축하해요! 이제 항목 선택기를 구현하는 방법을 알았습니다!

@@ -7,12 +7,12 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [DDM 양식 주석](./liferay-v1d9.zip) 을 다운로드하고 압축을 풉니다.
+1. [DDM 양식 주석](./liferay-v1d9.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-v3d9.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-v1d9.zip -O
     ```
 
     ```bash
@@ -35,7 +35,7 @@
     STARTED com.acme.v1d9.impl_1.0.0 [1650]
     ```
 
-1. 브라우저를 `https://localhost:8080` 로 열고 **제어판** &rarr; **구성** &rarr; **시스템 설정** 로 이동합니다. 플랫폼에서 **Third Party** 을 클릭합니다. 왼쪽에서 **V1D9 구성** 을 클릭합니다.
+1. 브라우저를 `https://localhost:8080` 로 열고 *제어판* &rarr; *구성* &rarr; *시스템 설정*로 이동합니다. 플랫폼에서 *Third Party*클릭합니다. 왼쪽에서 *V1D9 구성* 클릭합니다.
 
     ![UI 레이아웃은 DDM 양식 주석으로 사용자 정의됩니다.](./ddm-form-annotations/images/01.png)
 
@@ -51,7 +51,7 @@
 :lines: 37-58
 ```
 
-사용 가능한 모든 필드 유형에 대해 자세히 알아보려면 [양식 필드 유형 참조](../../../process-automation/forms/creating-and-managing-forms/forms-field-types-reference.md) 을 방문하십시오. 각 필드 유형의 `유형` 변수 이름은 [필드 유형 상수](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dynamic-data-mapping/dynamic-data-mapping-form-field-type-api/src/main/java/com/liferay/dynamic/data/mapping/form/field/type/constants/DDMFormFieldTypeConstants.java) 을 참조하십시오.
+사용 가능한 모든 필드 유형에 대해 자세히 알아보려면 [양식 필드 유형 참조](../../../process-automation/forms/creating-and-managing-forms/forms-field-types-reference.md) 방문하십시오. 각 필드 유형의 `유형` 변수 이름은 [필드 유형 상수](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dynamic-data-mapping/dynamic-data-mapping-form-field-type-api/src/main/java/com/liferay/dynamic/data/mapping/form/field/type/constants/DDMFormFieldTypeConstants.java) 을 참조하십시오.
 
 각 양식 필드에 주석을 추가한 후 클래스 선언 바로 위에 `DDMFormLayout` 주석을 사용하여 양식의 레이아웃을 정의하십시오.
 
@@ -60,7 +60,7 @@
 :lines: 10-34
 ```
 
-`DDMFormLayoutRow` 주석과 `DDMFormLayoutColumn` 을 사용하여 UI에 필요한 행과 열에 양식 필드를 정렬합니다.
+`DDMFormLayoutRow` 주석과 `DDMFormLayoutColumn` 사용하여 UI에 필요한 행과 열에 양식 필드를 정렬합니다.
 
 ## 양식 선언 작성
 
@@ -71,4 +71,4 @@
 :lines: 7-19
 ```
 
-`구성 요소` 주석의 `configurationPid` 은 구성 인터페이스의 정규화된 클래스 이름과 일치해야 합니다.
+`구성 요소` 주석의 `configurationPid` 구성 인터페이스의 정규화된 클래스 이름과 일치해야 합니다.

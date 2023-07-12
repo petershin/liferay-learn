@@ -11,7 +11,7 @@ Liferay의 Headless Delivery 애플리케이션은 [Wiki](../getting-started-wit
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-일단 시작되면 사이트 ID를 검색하십시오. 사이트 ID를 찾으려면 **사이트 메뉴**(![사이트 메뉴](../../../images/icon-menu.png))를 열고 **구성** &rarr; **사이트 설정** &rarr; **사이트 구성** .
+일단 시작되면 사이트 ID를 검색하십시오. 사이트 ID를 찾으려면 *사이트 메뉴*(![사이트 메뉴](../../../images/icon-menu.png))를 열고 *구성* &rarr; *사이트 설정* &rarr; *사이트 구성*.
 
 ![사이트 구성 설정에서 사이트 ID를 찾습니다.](./wiki-api-basics/images/01.png)
 
@@ -19,10 +19,10 @@ Liferay의 Headless Delivery 애플리케이션은 [Wiki](../getting-started-wit
 
 이 자습서에서는 Headless API를 시연하는 샘플 코드를 제공합니다. 이 코드에는 자습서 전체에서 사용할 수 있는 샘플 cURL 및 Java 파일이 모두 포함되어 있습니다.
 
-다음 명령을 실행하여 [샘플 코드](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip) 를 다운로드하고 압축을 풉니다.
+다음 명령을 실행하여 [샘플 코드](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip)를 다운로드하고 압축을 풉니다.
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip -O
 ```
 
 ```bash
@@ -253,7 +253,7 @@ cURL 명령 또는 Java 클래스를 사용하여 `WikiPage` API를 호출할 �
    }
    ```
 
-1. 위의 Wiki 페이지 ID를 매개변수로 사용하여 `WikiPage_POST_ToParent` 실행합니다. 이렇게 하면 지정된 Wiki 페이지에 대한 하위 페이지가 생성됩니다.
+1. 위의 위키 페이지 ID를 매개변수로 사용하여 `WikiPage_POST_ToParent` 실행합니다. 이렇게 하면 지정된 Wiki 페이지에 대한 하위 페이지가 생성됩니다.
 
    **cURL의 경우:**
 
@@ -447,7 +447,7 @@ Wiki 페이지에 POST 및 PUT 메서드를 사용할 때 `headline` 및 `encodi
    :lines: 6-25
 ```
 
-## 관련 주제
+## 관련 항목
 
 * [Liferay를 헤드리스 플랫폼으로 사용](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
 * [휴식 서비스 이용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

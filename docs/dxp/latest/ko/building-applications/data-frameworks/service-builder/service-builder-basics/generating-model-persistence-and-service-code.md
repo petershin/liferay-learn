@@ -7,7 +7,7 @@ Service Builder를 사용하면 모델을 쉽게 정의하고 모델, 지속성 
 예제 프로젝트를 다운로드하고 압축을 풉니다.
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-y7g4.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-y7g4.zip -O
 ```
 
 ```bash
@@ -32,6 +32,7 @@ y7g4-api
 ```
 
 다음은 `bnd.bnd` 파일입니다.
+
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-api/bnd.bnd
 ```
 
@@ -40,7 +41,7 @@ y7g4-api
 `build.gradle` 파일은 DXP/Portal에 대한 모듈의 종속성을 선언합니다.
 
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-api/build.gradle
-:language: groovy
+:언어: 그루비
 ```
 
 ## 서비스 모듈 검사
@@ -55,10 +56,11 @@ y7g4-service
 ```
 
 다음은 `bnd.bnd` 파일입니다.
+
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-service/bnd.bnd
 ```
 
-Once again, the `Bundle-` headers describe the module artifact. Service metadata and a directive follow.
+다시 한 번, `Bundle-` 헤더는 모듈 아티팩트를 설명합니다. 서비스 메타데이터 및 지시어가 뒤따릅니다.
 
 | 메타데이터 | 설명 |
 | :------- | :---------- |
@@ -79,6 +81,7 @@ Once again, the `Bundle-` headers describe the module artifact. Service metadata
 `service.xml` 파일은 `Y7G4Entry` 모델 엔터티를 정의합니다. Service Builder는 `service.xml` 파일의 사양에 따라 모델, 지속성 및 서비스 클래스를 생성합니다.
 
 다음은 `service.xml` 파일입니다.
+
 ```{literalinclude} ./generating-model-persistence-and-service-code/resources/liferay-y7g4.zip/y7g4-service/service.xml
 ```
 
@@ -89,7 +92,7 @@ Once again, the `Bundle-` headers describe the module artifact. Service metadata
 `service-builder` 요소 속성은 `service.xml` 파일의 모든 모델 엔티티에 영향을 미칩니다.
 
 | `서비스 빌더` 속성 | 설명 |
-| :-------------------------- | :---------- |
+| :----------------------------------------- | :---------- |
 | `의존성 인젝터` | 종속성 주입기 유형을 선언합니다. 선언적 서비스(`ds`)가 기본값입니다. |
 | `패키지 경로` | 생성된 클래스의 선행 패키지 경로를 선언합니다. |
 | `짧은-no-such-exception-enabled` | 'true'로 설정하면 'NoSuchY7G4EntryException' 메시지에서 잘린 버전의 엔티티 이름을 사용합니다. 그렇지 않으면 완전한 엔티티 이름을 사용하십시오. |
@@ -117,7 +120,11 @@ Once again, the `Bundle-` headers describe the module artifact. Service metadata
 | `이름` | 인스턴스의 이름(문자열). |
 | `설명` | 인스턴스의 설명(문자열). |
 
-`service.xml` 요소에 대한 자세한 내용은 [Liferay Service Builder DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html) 를 참조하세요. .
+`service.xml` 요소에 대한 자세한 내용은 [Liferay Service Builder DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html)를 참조하세요.
+
+## 지속성 코드 생성
+
+서비스 빌더를 호출하여 지속성 코드 및 데이터베이스 스크립트를 생성합니다.
 
 ## 지속성 코드 생성
 
@@ -221,7 +228,7 @@ SQL 스크립트 및 지속성 구성은 `resources/META-INF` 폴더에 생성�
 </hibernate-mapping>
 ```
 
-`module-hbm.xml` 파일은 `Y7G4EntryImpl` 개체를 `Y7G4_Y7G4Entry` 테이블에 매핑합니다. Hibernate와의 매핑에 대한 자세한 내용은 [Hibernate](https://hibernate.org) 을 참조하십시오.
+`module-hbm.xml` 파일은 `Y7G4EntryImpl` 개체를 `Y7G4_Y7G4Entry` 테이블에 매핑합니다. Hibernate와의 매핑에 대한 자세한 내용은 [Hibernate](https://hibernate.org)참조하십시오.
 
 `tables.sql` 스크립트는 `Y7G4_Y7G4Entry` 테이블을 지정합니다.
 
@@ -233,7 +240,7 @@ create table Y7G4_Y7G4Entry (
 );
 ```
 
-`y7g4EntryId` 은 기본 키입니다. `이름` 및 `설명` 은 속성입니다. 모듈을 배포할 때 DXP/Portal은 `tables.sql` 스크립트를 실행하여 테이블을 생성합니다.
+`y7g4EntryId` 기본 키입니다. `이름` 및 `설명` 속성입니다. 모듈을 배포할 때 DXP/Portal은 `tables.sql` 스크립트를 실행하여 테이블을 생성합니다.
 
 이 `service.xml` 파일의 요소는 인덱스 또는 시퀀스를 지정하지 않으므로 `indexes.sql` 또는 `sequence.sql` 스크립트는 비어 있습니다.
 
@@ -292,7 +299,7 @@ create table Y7G4_Y7G4Entry (
 
 ### 서버 시작
 
-별도의 터미널에서 다음 명령을 사용하여 DXP를 시작합니다. `[IP 주소]` 을 `some-mariadb` 컨테이너 IP 주소로 바꾸십시오.
+별도의 터미널에서 다음 명령을 사용하여 DXP를 시작합니다. `[IP 주소]` `some-mariadb` 컨테이너 IP 주소로 바꾸십시오.
 
 ```bash
 docker run -it \
@@ -396,7 +403,7 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
     **암호:** `테스트`
 
-1. **제어판** &rarr; **서버 관리** &rarr; **스크립트** 에서 스크립트 콘솔로 이동합니다.
+1. *제어판* &rarr; *서버 관리* &rarr; *스크립트*에서 스크립트 콘솔로 이동합니다.
 
 1. 다음 스크립트를 실행하여 항목을 추가합니다.
 
@@ -429,17 +436,17 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
 스크립트가 수행한 작업은 다음과 같습니다.
 
-1. 생성된 정적 유틸리티 클래스 `Y7G4EntryLocalServiceUtil`을 가져왔습니다.
+1. 생성된 정적 유틸리티 클래스 `Y7G4EntryLocalServiceUtil`가져왔습니다.
 1. ID가 (`long`) `1234`인 `Y7G4Entry` 인스턴스를 생성했습니다.
 1. `Y7G4Entry` 인스턴스의 `이름` 및 `설명` 속성을 채웠습니다.
 1. 데이터베이스에 `Y7G4Entry` 을 추가했습니다.
-1. 데이터베이스에서 모든 `Y7G4Entry` 인스턴스를 가져와 인쇄했습니다.
+1. 데이터베이스에서 모든 `개의 Y7G4Entry` 인스턴스를 가져와 인쇄했습니다.
 
 ## 다음
 
 이제 모델을 정의하고 이에 대한 지속성 코드 및 서비스 코드를 생성하는 방법을 알았으므로 생성된 서비스 클래스를 검사해야 합니다. [생성된 클래스 이해 및 확장](./understanding-service-builder-generated-classes.md)에서 계속하십시오.
 
-## 관련 주제
+## 관련 항목
 
 * [로컬에서 서비스 호출](./invoking-a-service-locally.md)
 * [Liferay 작업 영역이란 무엇입니까](../../../tooling/liferay-workspace/what-is-liferay-workspace.md)

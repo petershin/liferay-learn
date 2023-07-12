@@ -17,12 +17,12 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 
 NPM 및 Yarn은 의존하는 툴킷 및 모듈을 설치하는 데 사용할 패키지 관리자입니다.
 
-1. [Node.js LTS](https://nodejs.org/en/download/) 을 통해 NPM 및 Node.js를 설치하는 것으로 시작합니다.
+1. [Node.js LTS](https://nodejs.org/en/download/)을 통해 NPM 및 Node.js를 설치하는 것으로 시작합니다.
 
 1. 예제 JavaScript 프로젝트 ZIP 파일을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
     ```
 
     ```bash
@@ -147,7 +147,7 @@ Fragments 프로젝트 생성을 축하합니다!
     Done in 21.43s.
     ```
 
-1. 조각 세트를 사용할 수 있는지 확인합니다. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png))을 열고 **디자인** &rarr; **조각** 로 이동합니다. 세트가 목록에 나타나야 합니다.
+1. 조각 세트를 사용할 수 있는지 확인합니다. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png))을 열고 *디자인* &rarr; *조각*로 이동합니다. 세트가 목록에 나타나야 합니다.
 
     ![세트를 사용할 수 있습니다.](./using-the-fragments-toolkit/images/01.png)
 
@@ -270,7 +270,7 @@ Fragments Toolkit을 사용하여 이 구조로 프로젝트를 빠르게 생성
     ? Fragment name (required) My Jumbotron
     ```
 
-1. React 또는 다른 JavaScript 프레임워크를 사용할지 여부를 선택합니다. 반응에는 Liferay 7.3 이상이 필요합니다. 이 튜토리얼에서는 React 사용을 거부하십시오.
+1. React 또는 다른 JavaScript 프레임워크를 사용할지 여부를 선택하십시오. 반응에는 Liferay 7.3 이상이 필요합니다. 이 튜토리얼에서는 React 사용을 거부하십시오.
 
     ```bash
     ? Use React (or other JS framework)? No
@@ -325,7 +325,9 @@ Fragment의 일부를 수정하십시오.
 * 조각 속성(`fragment.json`)
 * [구성 옵션](./adding-configuration-options-to-fragments.md) (`configuration.json`).
 
-예를 들어 위의 HTML에서 빌드하고 [Clay](https://clayui.com/) 의 [Bootstrap](https://getbootstrap.com/) 기반 구성 요소를 사용하여 이 `index.html`에서 보여 주는 것처럼 주의를 끄는 제목과 설명이 있는 Fragment를 만들 수 있습니다.
+
+
+예를 들어 위의 HTML에서 빌드하고 [Clay](https://clayui.com/)의 [Bootstrap](https://getbootstrap.com/)기반 구성 요소를 사용하여 이 `index.html`에서 보여 주는 것처럼 주의를 끄는 제목과 설명이 있는 Fragment를 만들 수 있습니다.
 
 ```html
 <div class="component-my-jumbotron">
@@ -368,7 +370,7 @@ Fragment의 일부를 수정하십시오.
 ```
 
 ```{note}
-Liferay 7.2 이하를 사용하는 경우 `data-lfr-editable-[id|type]` 속성을 제거하고 [Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md).
+Liferay 7.2 이하를 사용하는 경우 `data-lfr-editable-[id|type]` 속성을 제거하고 [Fragment-Specific Tags](../ reference/fragments/fragment-specific-tags-reference.md).
 ```
 
 첫 번째 `div` 요소의 `class="component-my-jumbotron"` 속성은 페이지에서 이 조각을 고유하게 식별하려고 시도합니다.
@@ -377,9 +379,9 @@ Liferay 7.2 이하를 사용하는 경우 `data-lfr-editable-[id|type]` 속성�
 Fragment의 HTML 파일에서 기본 래퍼 요소(위 예에서 `<div>`)를 사용하여 Fragment를 고유하게 식별하여 페이지의 다른 구성 요소와 충돌하지 않도록 합니다.
 ```
 
-다음으로 `<div class="jumbotron"/>` 요소는 [Bootstrap](https://getbootstrap.com/) 의 jumbotron 구성 요소를 적용하여 콘텐츠를 래핑합니다. 이 구성 요소는 콘텐츠를 돋보이게 합니다. 콘텐츠 요소는 다음과 같습니다.
+다음으로 `<div class="jumbotron"/>` 요소는 [Bootstrap](https://getbootstrap.com/)의 jumbotron 구성 요소를 적용하여 콘텐츠를 래핑합니다. 이 구성 요소는 콘텐츠를 돋보이게 합니다. 콘텐츠 요소는 다음과 같습니다.
 
-* `<h1 class="display-4" ...>편집 가능한 Jumbotron ...` 조각의 제목을 만듭니다. [Bootstrap](https://getbootstrap.com/) 의 `display-4` 크기 스타일을 사용합니다. `data-lfr-editable-` 속성은 표제 텍스트 [를 편집 가능](../reference/fragments/fragment-specific-tags-reference.md)만듭니다. `data-lfr-editable-id="03-text"` 속성은 요소를 식별하고 `data-lfr-editable-type="rich-text"` 속성은 콘텐츠 유형을 선언합니다.
+* `<h1 class="display-4" ...>편집 가능한 Jumbotron ...` 조각의 제목을 만듭니다. [Bootstrap](https://getbootstrap.com/)의 `display-4` 크기 스타일을 사용합니다. `data-lfr-editable-` 속성은 표제 텍스트 [를 편집 가능](../reference/fragments/fragment-specific-tags-reference.md)만듭니다. `data-lfr-editable-id="03-text"` 속성은 요소를 식별하고 `data-lfr-editable-type="rich-text"` 속성은 콘텐츠 유형을 선언합니다.
 * `<p class="lead" ...>Edit this text ...` Clay의 [`리드`](https://clayui.com/docs/css/content/typography.html#css-lead) 스타일 구성 요소로 구별되는 리드 본문 텍스트입니다. `data-lfr-editable-` 속성은 단락을 편집 가능하게 만듭니다.
 * `<hr/>` 및 다음 `<p ...` 요소는 각각 가로선과 다른 편집 가능한 단락을 생성합니다.
 * `<a class="btn btn-primary btn-lg" ...` 수정 가능한 링크를 지정합니다. `btn-primary` 클래스는 기본 버튼으로 스타일을 지정하고 `btn-lg` 은 크게 만듭니다. `href="#"` 속성은 링크를 클릭할 때 사용자를 페이지 상단으로 이동시킵니다. `data-lfr-editable-type="link"` 속성은 링크를 [편집 가능하게 만듭니다](../reference/fragments/fragment-specific-tags-reference.md).
@@ -400,11 +402,11 @@ Fragment 및 구성 개체는 JavaScript에서 인수로 전달되며 각각 `fr
     yarn run import
     ```
 
-1. 조각 세트를 사용할 수 있는지 확인합니다. **사이트 메뉴**(![Site Menu](../../../images/icon-product-menu.png))을 열고 **디자인** &rarr; **조각** 로 이동합니다. 세트가 목록에 나타나야 합니다.
+1. 조각 세트를 사용할 수 있는지 확인합니다. *사이트 메뉴* (![Site Menu](../../../images/icon-product-menu.png))을 열고 *디자인* &rarr; *조각*로 이동합니다. 세트가 목록에 나타나야 합니다.
 
 ![세트를 사용할 수 있습니다.](./using-the-fragments-toolkit/images/03.png)
 
-엄청난! 이제 Fragments Toolkit을 사용하여 Fragments를 만들고 관리하는 방법을 알았습니다. 자세한 툴킷 명령 정보는 [Fragments Toolkit 명령 참조](../reference/fragments/fragments-toolkit-command-reference.md) 을 참조하십시오.
+엄청난! 이제 Fragments Toolkit을 사용하여 Fragments를 만들고 관리하는 방법을 알았습니다. 자세한 툴킷 명령 정보는 [Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md) 을 참조하십시오.
 
 ## 관련 정보
 

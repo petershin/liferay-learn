@@ -5,7 +5,7 @@
 `nestedFields` 매개변수로 인해 Liferay는 단일 GET 요청에서 여러 수준의 관련 개체 항목을 반환합니다. 쿼리에 포함할 관계 이름과 함께 `nestedFields` 매개 변수를 전달하고 각 관계를 쉼표로 구분합니다: `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. 관계가 여러 수준에 걸쳐 있는 경우 `nestedFieldsDepth` 매개 변수를 필요한 깊이로 설정합니다. 최대 5개 수준을 포함할 수 있습니다(예: `nestedFieldsDepth=5`).
 
 ```{tip}
-`nestedFields` 매개변수는 여러 요청이 필요한 관련 항목이 있는 항목을 검색하여 요청을 최적화합니다. 관련 항목만 반환하기 위해 Liferay는 전용 [관계 API](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) 를 제공합니다. 소개는 [관계 REST API 사용](./using-relationship-rest-apis.md)을 참조하세요.
+`nestedFields` 매개변수는 여러 요청이 필요한 관련 항목이 있는 항목을 검색하여 요청을 최적화합니다. 관련 항목만 반환하기 위해 Liferay는 전용 [관계 API](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis)를 제공합니다. 소개는 [관계 REST API 사용](./using-relationship-rest-apis.md)을 참조하세요.
 ```
 
 계속하려면 [설정](#setting-up-a-liferay-instance) 새 Liferay 7.4 인스턴스 및 [준비](#preparing-the-sample-code) 제공된 튜토리얼 코드. 그런 다음 [스크립트를 실행하여](#creating-and-querying-related-object-entries) 관련 항목을 만들고 `nestedFields` 매개변수를 사용하여 쿼리합니다.
@@ -19,7 +19,7 @@
 
 ### 관련 개체 정의 만들기
 
-1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 클릭 **사물** .
+1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
 
 1. [만들기](../../creating-and-managing-objects/creating-objects.md) 세 개의 개체 초안.
 
@@ -82,7 +82,7 @@
 아래 명령을 실행하여 제공된 샘플 코드를 다운로드하고 압축을 풉니다.
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
 ```
 
 ```bash
@@ -143,9 +143,9 @@ ZIP은 REST API를 사용하여 개체 항목을 생성, 관련 및 쿼리하기
    ./Baker_POST_ToCompany.sh [ableId]
    ```
 
-   이렇게 하면 3개의 Baker 항목이 생성되고 'ableToBaker' 관계를 사용하여 지정된 Able 항목에 연결됩니다.
+    이렇게 하면 3개의 Baker 항목이 생성되고 'ableToBaker' 관계를 사용하여 지정된 Able 항목에 연결됩니다.
 
-   각 Baker 항목에는 `ableToBakerERC`, `r_ableToBaker_c_ableId` 및 `r_ableToBaker_c_ableERC`의 세 가지 `ableToBaker` 관계 필드가 있습니다.
+    각 Baker 항목에는 `ableToBakerERC`, `r_ableToBaker_c_ableId` 및 `r_ableToBaker_c_ableERC`의 세 가지 `ableToBaker` 관계 필드가 있습니다.
 
    ```json
    {
@@ -377,7 +377,7 @@ ZIP은 REST API를 사용하여 개체 항목을 생성, 관련 및 쿼리하기
    ./Able_GET_ByExternalReferenceCode.sh able-one
    ```
 
-   이 GET 요청은 `nestedFields` 매개변수를 사용하여 `o/c/ables` 엔드포인트를 호출합니다.
+   이 GET 요청은 `nestedFields` 매개변수를 사용하여 `o/c/ables` 끝점을 호출합니다.
 
    ```{literalinclude} ./using-nestedfields-to-query-related-entries/resources/liferay-w4s7.zip/curl/Able_GET_ByExternalReferenceCode.sh
       :language: bash
@@ -437,7 +437,7 @@ ZIP은 REST API를 사용하여 개체 항목을 생성, 관련 및 쿼리하기
    :language: bash
 ```
 
-## 관련 주제
+## 관련 항목
 
 * [개체 API 기본 사항](./object-api-basics.md)
 * [배치 API 사용](./using-batch-apis.md)

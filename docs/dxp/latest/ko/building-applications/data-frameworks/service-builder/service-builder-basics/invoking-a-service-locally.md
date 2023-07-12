@@ -1,6 +1,6 @@
 # 로컬에서 서비스 호출
 
-DXP/Portal에 배포된 Service Builder 서비스는 동일한 JVM의 다른 클래스에서 호출할 수 있습니다. 이러한 서비스는 클래스에 대해 **로컬** 입니다.
+DXP/Portal에 배포된 Service Builder 서비스는 동일한 JVM의 다른 클래스에서 호출할 수 있습니다. 이러한 서비스는 클래스에 대해 *로컬* 입니다.
 
 Service Builder 서비스는 선언적 서비스(DS) 구성 요소이므로 컨테이너에서 관리됩니다. 소비자는 컨테이너에서 구성 요소를 요청하고 컨테이너는 일치하는 구성 요소 인스턴스를 제공합니다.
 
@@ -13,12 +13,12 @@ Service Builder 서비스는 선언적 서비스(DS) 구성 요소이므로 컨�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. 예제를 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-t2p5.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-t2p5.zip -O
    ```
 
    ```bash
@@ -47,11 +47,11 @@ Service Builder 서비스는 선언적 서비스(DS) 구성 요소이므로 컨�
     STARTED com.acme.t2p5.web_1.0.0
     ```
 
-1. **Samples** 카테고리의 **T2P5 Portlet** 위젯을 위젯 페이지에 추가하십시오. T2P5 포틀릿이 나타납니다.
+1. *Samples* 카테고리의 *T2P5 Portlet* 위젯을 위젯 페이지에 추가하십시오. T2P5 포틀릿이 나타납니다.
 
    ![페이지에 T2P5 포틀릿을 추가했습니다.](./invoking-a-service-locally/images/01.png)
 
-1. 텍스트 필드에 항목 이름과 설명을 입력하고 **제출** 을 클릭합니다. 예를 들어,
+1. 텍스트 필드에 항목 이름과 설명을 입력하고 *제출*클릭합니다. 예를 들어,
 
     **이름:** `울타리 다듬기`
 
@@ -59,7 +59,7 @@ Service Builder 서비스는 선언적 서비스(DS) 구성 요소이므로 컨�
 
 ![T2P5 포틀릿을 페이지에 추가했습니다.](./invoking-a-service-locally/images/02.png)
 
-이름과 설명이 있는 새 항목이 **T2P5 항목** 목록에 나타납니다.
+이름과 설명이 있는 새 항목이 *T2P5 항목* 목록에 나타납니다.
 
 포틀릿에서 Service Builder 서비스를 호출했습니다. 서비스 API부터 시작하여 작동 방식을 알아보세요.
 
@@ -73,7 +73,7 @@ Service Builder 서비스는 선언적 서비스(DS) 구성 요소이므로 컨�
    :lines: 65-66
 ```
 
-`addT2P5Entry` 메소드는 주어진 설명과 이름으로 `T2P5Entry` 을 생성하고 항목을 유지합니다.
+`addT2P5Entry` 메소드는 주어진 설명과 이름으로 `T2P5Entry` 생성하고 항목을 유지합니다.
 
 ```{note}
 `t2p5-service` 모듈 프로젝트의 `T2P5EntryLocalServiceImpl` 클래스는 `T2P5EntryLocalService` 인터페이스를 구현합니다.
@@ -101,15 +101,15 @@ The `t2p5-web` module's portlet application depends on the `T2P5EntryLocalServic
 :lines: 16-38
 ```
 
-`T2P5Portlet` 은 [`MVCPortlet`](../../../developing-a-java-web-application/using-mvc.md)입니다. 여기에는 `_t2p5EntryLocalService` 이라는 `T2P5EntryLocalService` 필드와 `addT2P5Entry`라는 작업 처리 메서드가 있습니다.
+`T2P5Portlet` [`MVCPortlet`](../../../developing-a-java-web-application/using-mvc.md)입니다. 여기에는 `_t2p5EntryLocalService` 이라는 `T2P5EntryLocalService` 필드와 `addT2P5Entry`라는 작업 처리 메서드가 있습니다.
 
 `_t2p5EntryLocalService` 필드의 `@Reference` 주석은 런타임 프레임워크에 `T2P5EntryLocalService` 구성 요소 인스턴스를 필드에 삽입하라는 신호를 보냅니다.
 
 ```{note}
-`@Reference` 주석을 사용하고 다른 방식으로 서비스에 액세스하는 방법에 대한 자세한 내용은 [핵심 프레임워크](../../../core-frameworks.md) 의 *종속성 주입*을 참조하세요.
+`@Reference` 주석을 사용하고 다른 방식으로 서비스에 액세스하는 방법에 대한 자세한 내용은 [Core Frameworks](../../../core-frameworks.md)의 *종속성 주입*을 참조하세요.
 ```
 
-`addT2P5Entry` 메소드는 `T2P5EntryLocalService`의 `addT2P5Entry` 메소드를 호출하고 `ActionRequest`에서 가져온 설명 및 이름 매개변수를 전달합니다.
+`addT2P5Entry` 메소드는 `T2P5EntryLocalService`의 `addT2P5Entry` 메소드를 호출하여 `ActionRequest`에서 가져온 설명 및 이름 매개변수를 전달합니다.
 
 포틀릿의 `view.jsp` 템플릿(다음)은 `ActionRequest`를 `T2P5Portlet`로 제출합니다.
 
@@ -133,25 +133,25 @@ JSP는 다음 태그 라이브러리의 태그를 사용합니다.
 * `T2P5EntryLocalServiceUtil`
 * `java.util.List`
 
-페이지의 **Add T2P5 Entry** 섹션은 항목을 추가하기 위한 양식을 제공합니다. `<portlet:defineObjects />` 태그는 템플릿에서 표준 포틀릿 개체를 사용할 수 있도록 합니다. `aui` 태그는 이러한 개체를 사용합니다.
+페이지의 *Add T2P5 Entry* 섹션은 항목을 추가하기 위한 양식을 제공합니다. `<portlet:defineObjects />` 태그는 템플릿에서 표준 포틀릿 개체를 사용할 수 있도록 합니다. `aui` 태그는 이러한 개체를 사용합니다.
 
 `<portlet:actionURL name="addT2P5Entry" var="addT2P5EntryURL" />` 태그는 `addT2P5EntryURL` 변수를 `addT2P5Entry`라는 포틀릿 작업에 매핑합니다. 이 `actionURL`로 `ActionRequest`를 제출하면 `actionUrl` 이름 `addT2P5Entry`에 맵핑되기 때문에 포틀릿의 메소드 `addT2P5Entry`를 호출합니다.
 
-`<aui:form>`은 항목 이름 및 설명에 대한 텍스트 필드를 렌더링합니다. 양식을 제출하면 해당 값이 'ActionRequest'와 함께 포틀릿 메소드에 전달됩니다.
+`<aui:form>` 는 항목 이름 및 설명에 대한 텍스트 필드를 렌더링합니다. 양식을 제출하면 해당 값이 `ActionRequest` 과 함께 포틀릿 메소드에 전달됩니다.
 
 ```{note}
-포틀릿 작업에 대한 자세한 내용은 [MVC 포틀릿으로 작업 호출](../../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md)을 참조하세요. ).
+포틀릿 작업에 대한 자세한 내용은 [MVC 포틀릿으로 작업 호출](../../../developing-a-java-web-application/using-mvc/invoking-actions-with-mvc-portlet.md).
 ```
 
-페이지의 **항목** 섹션에는 모든 항목이 나열됩니다. `T2P5EntryLocalServiceUtil.getT2P5Entries(-1, -1)` 을 호출하여 모든 항목을 가져옵니다. 1 `-1` 최소 및 최대 범위 값은 모든 항목을 반환하도록 메서드에 지시합니다.
+페이지의 *항목* 섹션에는 모든 항목이 나열됩니다. `T2P5EntryLocalServiceUtil.getT2P5Entries(-1, -1) 1을 호출하여 모든 항목을 가져옵니다.` `-1` 최소 및 최대 범위 값은 모든 항목을 반환하도록 메서드에 지시합니다.
 
 포틀릿 애플리케이션에서 Service Builder 서비스를 호출했습니다. 이러한 서비스는 MVC Portlet에서 사용하기 쉽습니다.
 
 ## 다음
 
-이제 Service Builder 기본 사항을 알았으므로 [엔터티 정의](../defining-entities.md) 를 탐색하여 엔터티 간의 관계를 생성하고, 엔터티를 지역화하고, 쿼리를 지원하는 등의 작업을 수행할 수 있습니다. 또는 [Service Builder를 사용한 비즈니스 로직](../business-logic-with-service-builder.md)에 대해 자세히 알아볼 수 있습니다.
+이제 Service Builder 기본 사항을 알았으므로 [Defining Entities](../defining-entities.md)를 탐색하여 엔터티 간의 관계를 생성하고, 엔터티를 지역화하고, 쿼리를 지원하는 등의 작업을 수행할 수 있습니다. 또는 [Service Builder를 사용한 비즈니스 로직](../business-logic-with-service-builder.md)에 대해 자세히 알아볼 수 있습니다.
 
-## 관련 주제
+## 관련 항목
 
 * [포틀릿](../../../developing-a-java-web-application/reference/portlets.md)
 * [MVC 사용](../../../developing-a-java-web-application/using-mvc.md)

@@ -11,7 +11,7 @@ xray-oauth-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-[예제 작업공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc) OAuth 사용자 에이전트 클라이언트 확장이 있는 프로젝트가 포함되어 있습니다.
+[예제 작업공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) OAuth 사용자 에이전트 클라이언트 확장이 있는 프로젝트가 포함되어 있습니다.
 
 ## YAML 속성
 
@@ -25,7 +25,7 @@ xray-oauth-user-agent:
 | `privacyPolicyURL` | URL         |                                                  | OAuth2 애플리케이션 프로필의 개인정보 보호정책에 대한 URL입니다. |
 | `scopes`           | 끈[]         | []                                               | OAuth2 애플리케이션 프로필과 연결된 범위의 배열입니다.        |
 
-## 관련 주제
+## 관련 항목
 
 * [마이크로서비스 클라이언트 확장](../microservice-client-extensions.md)
 * [클라이언트 확장 작업](../working-with-client-extensions.md)

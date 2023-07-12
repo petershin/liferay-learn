@@ -5,7 +5,7 @@ Service Builder는 [엔터티에 대한 테이블](./generating-model-persistenc
 예제 프로젝트를 다운로드하고 압축을 풀어 시작하십시오.
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
 ```
 
 ```bash
@@ -84,11 +84,10 @@ API 클래스는 공용 인터페이스, 유틸리티 및 상수를 정의합니
 | `W9B7EntryTable` | 엔터티의 테이블을 나타냅니다. |
 | 'W9B7EntryWrapper' | 래퍼, 'W9B7Entry'를 래핑합니다. 이 클래스는 [엔터티 사용자 정의](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)로 확장됩니다. |
 | 'W9B7EntryPersistence' | `create`, `remove`, `countAll`, `find`, `findAll` 등과 같은 엔터티에 대한 CRUD 메서드를 정의하는 지속성 인터페이스 |
-| `W9B7EntryUtil` | 'W9B7EntryPersistenceImpl'을 래핑하고 CRUD 작업을 위해 데이터베이스에 대한 직접 액세스를 제공하는 지속성 유틸리티 클래스입니다. 이 유틸리티는 서비스 계층에서만 사용해야 합니다. 포틀릿 클래스에서 [`@Reference` 주석](../../../../liferay-internals/fundamentals/using-an-osgi-service. md) . |
+| `W9B7EntryUtil` | 'W9B7EntryPersistenceImpl'을 래핑하고 CRUD 작업을 위해 데이터베이스에 대한 직접 액세스를 제공하는 지속성 유틸리티 클래스입니다. 이 유틸리티는 서비스 계층에서만 사용해야 합니다. 포틀릿 클래스에서 [`@Reference` 주석](../../../../liferay-internals/fundamentals/using-an-osgi-service. md). |
 | `W9B7EntryLocalService` | 로컬 서비스 인터페이스. |
 | `W9B7EntryLocalServiceUtil` | `W9B7EntryLocalServiceImpl`을 래핑하는 로컬 서비스 유틸리티 클래스입니다. |
 | `W9B7EntryLocalServiceWrapper` | 'W9B7EntryLocalService'를 구현하는 로컬 서비스 래퍼입니다. 이 클래스는 [엔터티의 로컬 서비스 사용자 지정](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)으로 확장됩니다. |
-
 
 ## 구현 클래스
 
@@ -96,7 +95,7 @@ API 클래스는 공용 인터페이스, 유틸리티 및 상수를 정의합니
 
 | 구현 클래스                                  | 묘사                                                                                                                                                                                                                   |
 |:--------------------------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `W9B7EntryBaseImpl`                     | `W9B7EntryModelImpl` 을 확장하여 각 열이 `W9B7EntryModel` 속성에 매핑된 `W9B7_W9B7Entry` 데이터베이스 테이블의 행을 나타냅니다.                                                                                                                     |
+| `W9B7EntryBaseImpl`                     | `W9B7EntryModelImpl` 확장하여 각 열이 `W9B7EntryModel` 속성에 매핑된 `W9B7_W9B7Entry` 데이터베이스 테이블의 행을 나타냅니다.                                                                                                                       |
 | `W9B7EntryCacheModel`                   | 캐시의 `W9B7Entry` 엔터티를 나타냅니다.                                                                                                                                                                                          |
 | `W9B7EntryImpl` (**수정 가능**)             | 모델 구현. 이 클래스를 사용하여 모델에 도우미 메서드 및 애플리케이션 논리를 추가할 수 있습니다. 도우미 메서드 또는 애플리케이션 논리를 추가하지 않으면 자동 생성된 필드 getter 및 setter만 사용할 수 있습니다. 이 클래스에서 메서드를 추가하거나 수정할 때마다 Service Builder는 다음에 실행할 때 변경 사항을 `W9B7Entry` 인터페이스에 전파합니다. |
 | `W9B7EntryLocalServiceBaseImpl`         | 로컬 서비스 기반 구현. 이것은 추상 클래스입니다. Service Builder는 다양한 서비스 및 지속성 클래스의 여러 인스턴스를 이 클래스에 주입합니다.                                                                                                                              |
@@ -105,18 +104,13 @@ API 클래스는 공용 인터페이스, 유틸리티 및 상수를 정의합니
 | `W9B7EntryModelImpl`                    | 기본 모델 구현.                                                                                                                                                                                                            |
 | `W9B7EntryPersistenceImpl`              | `W9B7EntryPersistence`을 구현하는 지속성 구현 클래스.                                                                                                                                                                             |
 
-
 `*BaseImpl` 추상 클래스는 구현이 풍부합니다. `W9B7EntryImpl` 및 `W9B7EntryLocalServiceImpl` 클래스는 이를 확장하고 기능을 추가하는 방법을 제공합니다.
-
-
 
 ## 로컬 서비스 방법 추가
 
 주어진 이름과 설명에서 `W9B7Entry` 인스턴스를 생성하기 위한 편리한 방법을 추가하여 로컬 서비스를 확장합니다.
 
 1. `W9B7EntryLocalServiceImpl` 클래스에 다음 편의 메서드를 추가합니다. 
-   
-   
 
     ```java
     public W9B7Entry addW9B7Entry(String description, String name)
@@ -163,7 +157,6 @@ API 클래스는 공용 인터페이스, 유틸리티 및 상수를 정의합니
 Service Builder는 새로운 로컬 서비스 메서드 구현을 지원하도록 로컬 서비스 API를 업데이트했습니다.
 
 1. `w9b7-api` 모듈의 `W9B7EntryLocalService` 클래스에서 새 메소드 서명을 확인하십시오. 
-   
 
     ```java
     public W9B7Entry addW9B7Entry(String description, String name) throws PortalException;
@@ -178,7 +171,7 @@ Service Builder는 새로운 로컬 서비스 메서드 구현을 지원하도�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. 예제를 빌드하고 배포합니다.
 
@@ -221,7 +214,7 @@ Service Builder는 새로운 로컬 서비스 메서드 구현을 지원하도�
 
 항목은 JSON 형식으로 인쇄됩니다.
 
-축하합니다! 새 서비스 방법을 성공적으로 추가했습니다.
+축하해요! 새 서비스 방법을 성공적으로 추가했습니다.
 
 ## 다음
 

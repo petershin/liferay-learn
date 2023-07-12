@@ -3,15 +3,16 @@
 Liferay의 현지화 프레임워크는 MVC 포틀릿에서 현지화된 메시지를 생성하기 위한 것입니다.
 
 ## 샘플 코드 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-b6f5.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-b6f5.zip -O
     ```
 
     ```bash
@@ -76,7 +77,7 @@ JSP 파일을 생성하고 모듈의 `/src/main/resources/META-INF/resources` �
 
 이것은 `Language.properties` 파일에서 그러한 키가 발견되지 않으면 레이블이 대신 나타남을 보여줍니다.
 
-[Liferay 태그 라이브러리 참조](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/index.html) 에서 태그 라이브러리에 대해 자세히 알아보십시오. 각 태그 라이브러리에는 태그에 전달할 수 있는 속성 목록이 있습니다.
+[Liferay 태그 라이브러리 참조](https://learn.liferay.com/reference/latest/en/dxp/taglibs/util-taglib/index.html)에서 태그 라이브러리에 대해 자세히 알아보십시오. 각 태그 라이브러리에는 태그에 전달할 수 있는 속성 목록이 있습니다.
 
 ## 구성 요소 정의 추가
 

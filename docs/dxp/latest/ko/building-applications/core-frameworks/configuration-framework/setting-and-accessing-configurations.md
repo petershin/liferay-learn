@@ -7,12 +7,12 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [설정 및 액세스 구성](./liferay-n2f3.zip) 을 다운로드하고 압축을 풉니다.
+1. [설정 및 액세스 구성](./liferay-n2f3.zip)을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
     ```
 
     ```bash
@@ -43,11 +43,11 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 
     UI는 세 가지 구성 가능한 속성(글꼴 색상, 글꼴 패밀리 및 글꼴 크기)과 함께 환영 메시지를 표시합니다.
 
-1. 구성을 변경하려면 **제어판** &rarr; **구성** &rarr; **시스템 설정** 으로 이동하십시오. 기타에서 **category.n2f3** 을 클릭합니다.
+1. 구성을 변경하려면 *제어판* &rarr; *구성* &rarr; *시스템 설정*으로 이동하십시오. 기타에서 *category.n2f3*클릭합니다.
 
     ![기타 범주에서 category.n2f3을 클릭합니다.](./setting-and-accessing-configurations/images/02.png)
 
-    다른 글꼴 색상, 글꼴 모음 및 글꼴 크기를 입력해 보십시오. **업데이트** 버튼을 클릭하고 게시된 위젯이 있는 페이지로 돌아갑니다. 속성이 변경되었는지 확인합니다.
+    다른 글꼴 색상, 글꼴 모음 및 글꼴 크기를 입력해 보십시오. *업데이트* 버튼을 클릭하고 게시된 위젯이 있는 페이지로 돌아갑니다. 속성이 변경되었는지 확인합니다.
 
 다음은 구성 프레임워크의 작동 방식입니다.
 
@@ -62,7 +62,7 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 :lines: 5-17
 ```
 
-이 예제 인터페이스의 경우 범위는 `Scope.COMPANY`로 설정됩니다. 자세한 내용은 [범위 지정 구성](./scoping-configurations.md) 을 참조하십시오.
+이 예제 인터페이스의 경우 범위는 `Scope.COMPANY`로 설정됩니다. 자세한 내용은 [범위 지정 구성](./scoping-configurations.md) 참조하십시오.
 
 인터페이스에는 글꼴 색상, 글꼴 모음 및 글꼴 크기의 세 가지 구성 가능한 속성이 있습니다. color와 family는 type `string` 이고 size는 type `int`입니다.
 
@@ -72,7 +72,7 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 ID는 구성 인터페이스의 FQCN(정규화된 클래스 이름)이어야 합니다.
 ```
 
-`Meta.AD` 은 기본값 또는 속성이 필수 필드인지 여부와 같은 속성에 대한 선택적 메타데이터 [을 지정](http://bnd.bndtools.org/chapters/210-metatype.html) . 속성 값이 필요하지만 기본값이 설정되지 않은 경우 관리자가 설정에서 값을 설정해야 애플리케이션이 제대로 작동합니다.
+`Meta.AD` 기본값 또는 속성이 필수 필드인지 여부와 같은 속성에 대한 선택적 메타데이터 [](http://bnd.bndtools.org/chapters/210-metatype.html) 지정합니다. 속성 값이 필요하지만 기본값이 설정되지 않은 경우 관리자가 설정에서 값을 설정해야 애플리케이션이 제대로 작동합니다.
 
 다음으로 MVC Portlet에서 구성을 읽는 방법을 확인합니다.
 

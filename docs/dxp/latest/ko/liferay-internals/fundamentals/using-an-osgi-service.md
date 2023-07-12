@@ -1,6 +1,6 @@
 # OSGi 서비스 사용
 
-Liferay API는 OSGi 서비스로 쉽게 사용할 수 있습니다. 다음과 같이 해당 서비스 유형의 필드를 만들고 필드에 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) 주석을 달아 서비스에 액세스할 수 있습니다.
+Liferay API는 OSGi 서비스로 쉽게 사용할 수 있습니다. 다음과 같이 해당 서비스 유형의 필드를 만들고 필드에 [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html)주석을 달아 서비스에 액세스할 수 있습니다.
 
 ```java
 @Reference
@@ -9,9 +9,9 @@ BlogsEntryService _blogsEntryService;
 
 위의 `_blogsEntryService` 필드는 [`BlogsEntryService`](https://docs.liferay.com/ce/apps/blogs/latest/javadocs/com/liferay/blogs/service/BlogsEntryService.html) OSGi 서비스에 액세스합니다.
 
-모든 선언적 서비스 구성 요소( [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 주석이 달린 클래스)는 이러한 방식으로 OSGi 서비스에 액세스할 수 있습니다. 런타임 프레임워크는 구성 요소의 `@Reference`주석 필드에 해당 서비스 유형을 삽입합니다.
+모든 선언적 서비스 구성 요소( [`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)주석이 달린 클래스)는 이러한 방식으로 OSGi 서비스에 액세스할 수 있습니다. 런타임 프레임워크는 구성 요소의 `@Reference`주석 필드에 해당 서비스 유형을 삽입합니다.
 
-다음 예제는 `Greeter`이라는 OSGi 서비스를 사용하는 방법을 보여줍니다. 세 개의 모듈은 OSGi 서비스에서 사용되는 **API-Provider-Consumer** 패턴을 보여줍니다.
+다음 예제는 `Greeter`이라는 OSGi 서비스를 사용하는 방법을 보여줍니다. 세 개의 모듈은 OSGi 서비스에서 사용되는 *API-Provider-Consumer* 패턴을 보여줍니다.
 
 * **API** 모듈은 `Greeter` 서비스 유형을 정의합니다.
 * 구현 모듈 **은** `Greeter` 서비스를 제공합니다.
@@ -23,7 +23,7 @@ BlogsEntryService _blogsEntryService;
 
 모든 Java 클래스에서 OSGi 서비스를 사용할 수 있습니다.
 
-Liferay 서비스 Javadoc은 [여기](https://learn.liferay.com/reference/latest/en/dxp.html) 에서 사용할 수 있습니다.
+Liferay 서비스 Javadoc은 [여기](https://learn.liferay.com/reference/latest/en/dxp.html)에서 사용할 수 있습니다.
 
 ```{note}
 OSGi 서비스를 만드는 방법에 대한 지침은 [OSGi 서비스로서의 API](./apis-as-osgi-services.md)를 참조하세요.
@@ -34,12 +34,12 @@ OSGi 서비스를 만드는 방법에 대한 지침은 [OSGi 서비스로서의 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. `liferay-j1h1.zip`을 다운로드하고 압축을 풉니다.
+1. 'liferay-j1h1.zip'을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-j1h1.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-j1h1.zip -O
     ```
 
     ```bash
@@ -106,7 +106,7 @@ OSGi 서비스를 만드는 방법에 대한 지침은 [OSGi 서비스로서의 
     private Greeter _greeter;
     ```
 
-위의 메서드는 `Greeter`의 `greet` 메서드를 호출합니다. `com.acme.j1h1.Greeter` 은 구현 모듈이 등록하는 OSGi 서비스 유형입니다. 클래스는 OSGi 서비스 레지스트리에서 `Greeter` 인스턴스를 가져와야 합니다.
+위의 메서드는 `Greeter`의 `greet` 메서드를 호출합니다. `com.acme.j1h1.Greeter` 구현 모듈이 등록하는 OSGi 서비스 유형입니다. 클래스는 OSGi 서비스 레지스트리에서 `Greeter` 인스턴스를 가져와야 합니다.
 
 ### 외부 서비스 참조에 주석 달기
 
@@ -118,7 +118,7 @@ OSGi 서비스를 만드는 방법에 대한 지침은 [OSGi 서비스로서의 
 :lines: 18-19
 ```
 
-`J1H1OSGiCommands` 클래스에는 `_greeter`라는 위의 비공개 `Greeter` 필드가 있습니다. `@Reference` 주석은 레지스트리에서 `Greeter` 서비스로 필드를 주입하도록 OSGi 런타임에 지시합니다. `J1H1Greeter` 이 레지스트리에서 가장 잘 일치하는 `Greeter` 서비스 구성 요소인 경우(이 예에서는 유일한 일치 항목임) 런타임은 `_greeter` 를 `J1H1Greeter`과 함께 주입합니다.
+`J1H1OSGiCommands` 클래스에는 `_greeter`라는 위의 비공개 `Greeter` 필드가 있습니다. `@Reference` 주석은 레지스트리에서 `Greeter` 서비스로 필드를 주입하도록 OSGi 런타임에 지시합니다. `J1H1Greeter` 레지스트리에서 가장 잘 일치하는 `Greeter` 서비스 구성 요소인 경우(이 예에서는 유일한 일치 항목임) 런타임은 `_greeter` `J1H1Greeter`과 함께 주입합니다.
 
 ### 클래스를 구성 요소로 만들기
 
@@ -129,7 +129,7 @@ OSGi 서비스를 만드는 방법에 대한 지침은 [OSGi 서비스로서의 
 :lines: 8-12
 ```
 
-`J1H1OSGiCommands` 클래스는 자체 유형의 OSGi 서비스를 제공합니다. 두 속성은 `j1h1`범위에서 `greet` 이라는 명령 함수를 사용하여 Gogo 셸 명령을 정의합니다. 배포된 `J1H1OSGiCommands` 구성 요소는 `문자열` 를 입력으로 사용하는 Gogo Shell 명령 `j1h1:greet` 을 제공합니다.
+`J1H1OSGiCommands` 클래스는 자체 유형의 OSGi 서비스를 제공합니다. 두 속성은 `j1h1`범위에서 `greet` 이라는 명령 함수를 사용하여 Gogo 셸 명령을 정의합니다. 배포된 `J1H1OSGiCommands` 구성 요소는 `문자열` 입력으로 사용하는 Gogo Shell 명령 `j1h1:greet` 을 제공합니다.
 
 ### API에 종속성 추가
 
@@ -139,17 +139,17 @@ OSGi 서비스를 만드는 방법에 대한 지침은 [OSGi 서비스로서의 
 :language: groovy
 ```
 
-`release.portal.api` 아티팩트는 모듈이 현재 Liferay 제품 릴리스에서 필요로 하는 Liferay, Bnd 및 OSGi 서비스를 제공합니다. `[project root]/gradle.properties` 파일의 `liferay.workspace.product` 은 릴리스를 지정합니다.
+`release.portal.api` 아티팩트는 모듈이 현재 Liferay 제품 릴리스에서 필요로 하는 Liferay, Bnd 및 OSGi 서비스를 제공합니다. `[project root]/gradle.properties` 파일의 `liferay.workspace.product` 릴리스를 지정합니다.
 
-로컬 프로젝트 `j1h1-api` 은 `Greeter` 서비스를 제공하므로 `j1h1-osgi-commands` 는 이를 아티팩트가 아닌 프로젝트로 사용할 수 있습니다. [외부 아티팩트에 종속성](./configuring-dependencies/specifying-dependencies.md) 을 지정하는 것도 쉽습니다.
+로컬 프로젝트 `j1h1-api` 은 `Greeter` 서비스를 제공하므로 `j1h1-osgi-commands` 이를 아티팩트가 아닌 프로젝트로 사용할 수 있습니다. [외부 아티팩트에 종속성](./configuring-dependencies/specifying-dependencies.md) 을 지정하는 것도 쉽습니다.
 
 ## 결론
 
 API와 Impl 모듈은 각각 `Greeter` 서비스를 정의하고 제공했습니다. 예제 `j1h1-osgi-commands` 모듈은 서비스를 사용하여 간단한 Gogo Shell 명령을 생성합니다. API-공급자-소비자 계약은 느슨한 결합을 촉진하여 소프트웨어를 쉽게 관리, 향상 및 지원할 수 있도록 합니다.
 
-이제 인접 프로젝트의 OSGi 서비스 사용에 익숙해졌으므로 외부 아티팩트의 OSGi 서비스 사용을 탐색할 수 있습니다. [종속성 구성](./configuring-dependencies.md) 은 모듈을 찾고 종속성으로 구성하는 방법을 보여줍니다.
+이제 인접 프로젝트의 OSGi 서비스 사용에 익숙해졌으므로 외부 아티팩트의 OSGi 서비스 사용을 탐색할 수 있습니다. [종속성 구성](./configuring-dependencies.md) 모듈을 찾고 종속성으로 구성하는 방법을 보여줍니다.
 
-## 관련 주제
+## 관련 항목
 
 * [패키지 가져오기](./importing-packages.md)
 * [패키지 내보내기](./exporting-packages.md)

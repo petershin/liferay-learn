@@ -11,12 +11,12 @@ Liferay는 선택 목록 정의(`ListTypeDefinition`) 및 해당 항목(`ListTyp
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-다음으로 샘플 코드를 준비합니다:
+다음으로 샘플 코드를 준비합니다.
 
-1. [피클릭리스트 API 기본 사항](./liferay-v3n6.zip) 을 다운로드하여 압축을 풉니다.
+1. [Picklists API 기본 사항](./liferay-v3n6.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/picklists/liferay-v3n6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/picklists/liferay-v3n6.zip -O
    ```
 
    ```bash
@@ -42,7 +42,7 @@ Liferay는 선택 목록 정의(`ListTypeDefinition`) 및 해당 항목(`ListTyp
    }
    ```
 
-1. **전역 메뉴** &rarr; **제어판** &rarr; **선택 목록** 로 이동합니다. 새 선택 목록이 나타납니다.
+1. *전역 메뉴* &rarr; *제어판* &rarr; *선택 목록*로 이동합니다. 새 선택 목록이 나타납니다.
 
    ![새 선택 목록이 추가되었는지 확인합니다.](./picklists-api-basics/images/02.png)
 
@@ -106,10 +106,10 @@ Liferay는 선택 목록 정의(`ListTypeDefinition`) 및 해당 항목(`ListTyp
 `main` 메서드의 주석은 클래스 실행을 보여줍니다.
 ```
 
-다른 Java 클래스는 유사하게 다른 `ListTypeDefinitionResource` 메소드를 호출합니다.
+다른 Java 클래스는 유사하게 다른 `ListTypeDefinitionResource` 메서드를 호출합니다.
 
 ```{important}
-[ListTypeDefinitionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-list-type/headless-admin-list-type-client/src/main/java/com/liferay/headless/admin/list/type/client/resource/v1_0/ListTypeDefinitionResource.java) 를 참조하십시오.
+서비스 세부 정보는 [ListTypeDefinitionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-list-type/headless-admin-list-type-client/src/main/java/com/liferay/headless/admin/list/type/client/resource/v1_0/ListTypeDefinitionResource.java) 를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 `ListTypeDefinition` REST 서비스를 호출하는 예입니다.
@@ -144,7 +144,7 @@ java -classpath .:* ListTypeDefinitions_GET_FromInstance
 
 ```{literalinclude} ./picklists-api-basics/resources/liferay-v3n6.zip/java/ListTypeDefinitions_GET_FromInstance.java
    :dedent: 1
-   :language: java
+   :language: 자바
    :lines: 11-25
 ```
 
@@ -306,7 +306,7 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_DELETE_ById
 
 [API 탐색기](../../../headless-delivery/consuming-apis/consuming-rest-services.md) `ListTypeDefinition` 및 `ListTypeEntry` 서비스 및 스키마를 모두 표시하고 각 서비스를 테스트할 수 있는 인터페이스가 있습니다.
 
-## 관련 주제
+## 관련 항목
 
 * [선택 목록 사용](./using-picklists.md)
 * [선택 목록 내보내기 및 가져오기](./exporting-and-importing-picklists.md)

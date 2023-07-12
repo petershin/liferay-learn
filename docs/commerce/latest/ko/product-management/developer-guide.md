@@ -4,19 +4,10 @@ toc:
   - ./developer-guide/option-api-basics.md
   - ./developer-guide/option-value-api-basics.md
   - ./developer-guide/product-api-basics.md
+  - ./developer-guide/product-api-creating-a-product-with-multiple-skus.md
   - ./developer-guide/specification-api-basics.md
 ---
 # 개발자 가이드
-
-```{toctree}
-:maxdepth: 1
-
-developer-guide/catalog-api-basics.md
-developer-guide/option-api-basics.md
-developer-guide/option-value-api-basics.md
-developer-guide/product-api-basics.md
-developer-guide/specification-api-basics.md
-```
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -35,6 +26,10 @@ developer-guide/specification-api-basics.md
 
 :::{grid-item-card}  제품 API 기초
 :link: ./developer-guide/product-api-basics.md
+:::
+
+:::{grid-item-card}  제품 API - 여러 SKU로 제품 만들기
+:link: ./developer-guide/product-api-creating-a-product-with-multiple-skus.md
 :::
 
 :::{grid-item-card}  사양 API 기본 사항

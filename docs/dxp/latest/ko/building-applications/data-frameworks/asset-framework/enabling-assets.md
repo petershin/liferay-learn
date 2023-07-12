@@ -1,18 +1,18 @@
 # 자산 활성화
 
-Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메시지 보드 등)은 즉시 자산을 사용할 수 있습니다. [자산 게시자 위젯](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) 을 사용하여 자산을 게시하거나 [자산 라이브러리](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)를 생성할 수도 있습니다. [서비스 빌더](../service-builder.md) 의 도움으로 맞춤형 애플리케이션을 자산화할 수 있습니다. 자세한 방법은 아래 샘플 프로젝트를 참조하십시오.
+Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메시지 보드 등)은 즉시 자산을 사용할 수 있습니다. [자산 게시자 위젯](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) 사용하여 자산을 게시하거나 [자산 라이브러리](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md)생성할 수도 있습니다. [Service Builder](../service-builder.md)의 도움으로 맞춤형 애플리케이션을 자산화할 수 있습니다. 자세한 방법은 아래 샘플 프로젝트를 참조하세요.
 
 ## 샘플 코드 받기
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [Enabling Assets](./liferay-s5e6.zip) 을 다운로드하고 압축을 풉니다.
+1. [Enabling Assets](./liferay-s5e6.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/asset-framework/liferay-s5e6.zip -O
    ```
 
    ```bash
@@ -59,7 +59,7 @@ Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메�
 
 `*ModelSummaryContributor.java` - 항목에 대한 결과 요약을 구성합니다(예: `com.acme.s5e6.search.S5E6EntryModelSummaryContributor.java` 클래스).
 
-검색 활성화에 대한 자세한 내용은 검색 사용의 [개발자 가이드](../../../using-search/developer-guide.md) 을 참조하세요.
+검색 활성화에 대한 자세한 내용은 검색 사용의 [개발자 가이드](../../../using-search/developer-guide.md) 참조하세요.
 
 ## 서비스 모델 정의 수정
 
@@ -97,7 +97,7 @@ Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메�
 
 ## 서비스 계층 업데이트
 
-사용자 지정 엔터티를 Liferay 자산으로 추가하려면 프로젝트의 `-LocalServiceImpl` Java 클래스에서 `assetEntryLocalService`의 `updateEntry()` 메서드를 호출해야 합니다. `assetEntryLocalService.updateEntry()` 을 호출하면 새 행(응용 프로그램 항목에 해당)이 `AssetEntry` 테이블에 추가됩니다. `updateEntry()` 메서드는 자산 항목이 있는지 확인한 다음 적절한 조치를 취하기 때문에 자산 항목을 추가하고 업데이트합니다.
+사용자 지정 엔터티를 Liferay 자산으로 추가하려면 프로젝트의 `-LocalServiceImpl` Java 클래스에서 `assetEntryLocalService`의 `updateEntry()` 메서드를 호출해야 합니다. `assetEntryLocalService.updateEntry()` 호출하면 새 행(응용 프로그램 항목에 해당)이 `AssetEntry` 테이블에 추가됩니다. `updateEntry()` 메서드는 자산 항목이 있는지 확인한 다음 적절한 조치를 취하기 때문에 자산 항목을 추가하고 업데이트합니다.
 
 
 예제 프로젝트에서 다음과 같이 표시됩니다.
@@ -108,7 +108,7 @@ Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메�
 :lines: 64-73
 ```
 
-[`AssetEntryLocalServiceImpl` 클래스](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-) 에 대한 Javadocs를 확인하면 메서드가 오버로드된 것을 볼 수 있습니다. 자산 항목의 제목을 설정할 수 있도록 `제목` 매개변수를 사용하는 `updateEntry()` 버전을 사용합니다.
+[`AssetEntryLocalServiceImpl` 클래스](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-impl/com/liferay/portlet/asset/service/impl/AssetEntryLocalServiceImpl.html#updateEntry-long-long-java.util.Date-java.util.Date-java.lang.String-long-java.lang.String-long-long:A-java.lang.String:A-boolean-boolean-java.util.Date-java.util.Date-java.util.Date-java.util.Date-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-int-java.lang.Double-)에 대한 Javadocs를 확인하면 메서드가 오버로드된 것을 볼 수 있습니다. 자산 항목의 제목을 설정할 수 있도록 `제목` 매개변수를 사용하는 `updateEntry()` 버전을 사용합니다.
 
 변경 후 Service Builder를 다시 실행하십시오.
 
@@ -146,7 +146,7 @@ Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메�
 
 자산 렌더러를 생성한 후 각 자산 인스턴스에 대한 자산 렌더러를 생성하려면 팩토리 클래스를 생성해야 합니다.
 
-1. 위와 같은 폴더에 Liferay의 `BaseAssetRendererFactory` 클래스를 확장하는 `-AssetRendererFactory` 클래스를 만듭니다. 예를 들어,
+1. 위와 같은 폴더에 Liferay의 `BaseAssetRendererFactory` 클래스를 확장하는 `-AssetRendererFactory` 클래스를 생성합니다. 예를 들어,
 
    ```java
    public class S5E6EntryAssetRendererFactory extends BaseAssetRendererFactory<S5E6Entry> {
@@ -168,7 +168,7 @@ Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메�
    :lines: 24-29
    ```
 
-   다른 자산이 귀하의 자산을 관련 자산으로 선택할 수 있도록 `setLinkable` 을 `true` 으로 설정하십시오. 검색 시 자산을 찾을 수 있도록 `setSearchable` 을 `true` 으로 설정하십시오.
+   다른 자산이 귀하의 자산을 관련 자산으로 선택할 수 있도록 `setLinkable` `true` 으로 설정하십시오. 검색 시 자산을 찾을 수 있도록 `setSearchable` `true` 으로 설정하십시오.
 
 1. 새로운 `S5E6AssetRenderer` 인스턴스를 구성하는 `getAssetRenderer` 메서드를 구현합니다.
 
@@ -196,12 +196,12 @@ Liferay의 많은 애플리케이션(예: 블로그, 문서 및 미디어, 메�
 :lines: 32-46
 ```
 
-`addS5E6Entry` 은 포틀릿 조치 메소드이므로 `ActionRequest` 및 `ActionResponse` 매개변수를 사용합니다. 새 항목을 추가하는 서비스 호출을 수행하려면 요청에서 `제목` 및 `설명` 을 검색해야 합니다. `serviceContext` 도 요청에서 검색하고 서비스 호출에서 인수로 전달해야 합니다.
+`addS5E6Entry` 포틀릿 조치 메소드이므로 `ActionRequest` 및 `ActionResponse` 매개변수를 사용합니다. 새 항목을 추가하는 서비스 호출을 수행하려면 요청에서 `제목` 및 `설명` 을 검색해야 합니다. `serviceContext` 도 요청에서 검색하고 서비스 호출에서 인수로 전달해야 합니다.
 
-포틀릿의 `view.jsp` 에는 포틀릿의 `addS5E6Entry` 메소드를 호출하는 `actionURL` 이 있는 양식이 포함되어 있습니다.
+포틀릿의 `view.jsp` 에는 포틀릿의 `addS5E6Entry` 메소드를 호출하는 `actionURL` 있는 양식이 포함되어 있습니다.
 
 ```{literalinclude} ./enabling-assets/resources/liferay-s5e6.zip/s5e6-web/src/main/resources/META-INF/resources/view.jsp
 :language: jsp
 :lines: 18-28
 ```
-포틀릿은 자산이 사용 가능합니다. 이제 애플리케이션의 항목을 찾아 자산으로 표시할 수 있습니다.
+포틀릿은 자산이 사용 가능합니다. 이제 애플리케이션 항목을 찾아 자산으로 표시할 수 있습니다.

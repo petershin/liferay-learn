@@ -2,15 +2,15 @@
 
 {bdg-secondary}`DXP 7.4 U69+/GA69+`
 
-Liferay의 일부 기능은 **기능 플래그** 뒤에 숨겨져 있습니다. 기능 플래그를 사용하면 Liferay 인스턴스에 도입된 새로운 기능을 제어할 수 있습니다. 새로운 실험적 기능은 기능 플래그를 사용하여 보다 효과적으로 채택하고 검증할 수 있습니다.
+Liferay의 일부 기능은 *기능 플래그*뒤에 숨겨져 있습니다. 기능 플래그를 사용하면 Liferay 인스턴스에 도입된 새로운 기능을 제어할 수 있습니다. 새로운 실험적 기능은 기능 플래그를 사용하여 보다 효과적으로 채택하고 검증할 수 있습니다.
 
-기능 플래그에 액세스하고 관리하려면 **전역 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **인스턴스 설정** 으로 이동합니다. **플랫폼** 아래에서 **기능 플래그** 클릭하십시오. 세 가지 유형의 기능 플래그를 사용할 수 있습니다.
+기능 플래그에 액세스하고 관리하려면 *전역 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *인스턴스 설정*으로 이동합니다. *플랫폼*아래에서 *기능 플래그* 을 클릭하십시오. 세 가지 유형의 기능 플래그를 사용할 수 있습니다.
 
 1. [베타 기능 플래그](#beta-feature-flags)
 
 1. [릴리스 기능 플래그](#release-feature-flags)
 
-1. [개발 기능 플래그](#dev-feature-flags) .
+1. [개발자 기능 플래그](#dev-feature-flags)
 
 ![기능 플래그를 사용하여 기능의 가시성을 제어할 수 있습니다.](./feature-flags/images/01.png)
 
@@ -23,13 +23,13 @@ Liferay DXP uses a badge to highlight beta features. See below: -->
 
 ## 베타 기능 플래그
 
-베타 기능은 비즈니스 검증을 진행 중인 기능적 기능입니다. 이들은 실험적이며 사용하기 전에 신중한 고려가 필요합니다. 베타 기능은 제한된 기간 후에 더 이상 사용되지 않거나 [릴리스 기능](#release-feature-flags) 로 변환될 수 있습니다. Liferay의 [Community Slack](https://liferay.dev/chat) 을 통해 베타 기능에 대한 피드백을 제공할 수 있습니다.
+베타 기능은 비즈니스 검증을 진행 중인 기능적 기능입니다. 이들은 실험적이며 사용하기 전에 신중한 고려가 필요합니다. 베타 기능은 제한된 기간 후에 더 이상 사용되지 않거나 [릴리스 기능](#release-feature-flags)로 변환될 수 있습니다. Liferay의 [Community Slack](https://liferay.dev/chat)을 통해 베타 기능에 대한 피드백을 제공할 수 있습니다.
 
 베타 기능을 활성화하려면
 
-1. **전역 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **인스턴스 설정** 로 이동합니다.
+1. *전역 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *인스턴스 설정*로 이동합니다.
 
-1. 플랫폼에서 **기능 플래그** 클릭한 다음 **베타** 클릭합니다.
+1. 플랫폼에서 *기능 플래그* 클릭한 다음 *베타*클릭합니다.
 
 1. 모든 베타 기능이 나타납니다. 기능을 활성화 또는 비활성화하려면 토글합니다.
 
@@ -43,9 +43,9 @@ Liferay DXP uses a badge to highlight beta features. See below: -->
 
 릴리스 기능을 활성화하려면
 
-1. **전역 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **인스턴스 설정** 로 이동합니다.
+1. *전역 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *인스턴스 설정*로 이동합니다.
 
-1. 플랫폼 아래에서 **기능 플래그** 클릭한 다음 **릴리스** 클릭하십시오.
+1. 플랫폼 아래에서 *기능 플래그* 클릭한 다음 *릴리스*클릭하십시오.
 
 1. 모든 릴리스 기능이 나열됩니다. 기능을 활성화 또는 비활성화하려면 토글합니다.
 
@@ -73,7 +73,7 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEX__UPPERCASEX__UPPERCASEX__MINUS__N
 프로덕션에서 개발 기능을 사용하지 마십시오. Liferay의 불안정성은 dev 기능 플래그를 활성화할 때 예상되는 부작용입니다. 
 ```
 
-## 관련 주제
+## 관련 항목
 
 * [시맨틱 검색](../../using-search/liferay-enterprise-search/search-experiences/semantic-search.md)
-* [베타 기능](https://help.liferay.com/hc/ko/articles/12917247551757-Beta-Features)
+* [베타 기능](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)

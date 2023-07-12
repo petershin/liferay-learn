@@ -1,6 +1,6 @@
 # OSGi 서비스로서의 API
 
-[모듈](./module-projects.md) 이 무엇이고 배포 방법을 배운 후에는 모듈을 사용하여 API를 정의하고 구현할 수 있습니다. Liferay API는 Java 인터페이스에 의해 정의되고 구체적인 Java 클래스에 의해 구현되는 [OSGi 서비스](https://enroute.osgi.org/) 입니다.
+[모듈](./module-projects.md) 이 무엇이고 배포 방법을 배운 후에는 모듈을 사용하여 API를 정의하고 구현할 수 있습니다. Liferay API는 Java 인터페이스에 의해 정의되고 구체적인 Java 클래스에 의해 구현되는 [OSGi 서비스](https://enroute.osgi.org/)입니다.
 
 Liferay는 API, 구현 및 클라이언트를 구성 요소로 노출합니다. [OSGi 선언적 서비스](https://enroute.osgi.org/FAQ/300-declarative-services.html) (DS) 주석은 구성 요소와 해당 관계를 정의합니다.
 
@@ -10,21 +10,22 @@ Liferay는 API, 구현 및 클라이언트를 구성 요소로 노출합니다. 
 
 API 및 구현 문제를 다른 모듈로 분리할 수 있습니다.
 
-* **API** 모듈 **는 Java 인터페이스를 사용하여** 기능을 정의합니다. 모듈은 인터페이스 패키지를 내보냅니다.
-* **구현** 모듈 **는 구체적인 Java 클래스를 사용하여** 기능을 제공합니다.
+* **API** 모듈 *는 Java 인터페이스를 사용하여* 가지 기능을 정의합니다. 모듈은 인터페이스 패키지를 내보냅니다.
+* **구현** 모듈 *는 구체적인 Java 클래스를 사용하여* 가지 기능을 제공합니다.
 
 여기에서 간단한 인사 OSGi 서비스를 생성하는 API 및 구현 모듈을 배포합니다. 또한 구현 모듈과 해당 JAR을 검사하여 구현이 인사 서비스 기능을 제공하는 방법을 알아봅니다. 다음 자습서에서는 UI에서 호출할 수 있는 부분인 클라이언트를 만듭니다.
 
 ## 간단한 API 배포 및 구현
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to start the example modules:
+그런 다음 다음 단계에 따라 예제 모듈을 시작합니다.
 
-1. Download and unzip `liferay-p9g2.zip`.
+1. `liferay-p9g2.zip`을 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-p9g2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/fundamentals/liferay-p9g2.zip -O
     ```
 
     ```bash
@@ -84,7 +85,7 @@ Then, follow these steps to start the example modules:
        component.id = 8462
     ```
 
-Acme P9G2 구현 모듈은 하나의 서비스인 `com.acme.p9g2.Greeter`을 제공합니다. `component.name` 속성은 모듈의 `com.acme.p9g2.internal.P9G2Greeter` 구성 요소가 서비스를 구현함을 나타냅니다.
+Acme P9G2 구현 모듈은 하나의 서비스인 `com.acme.p9g2.Greeter`제공합니다. `component.name` 속성은 모듈의 `com.acme.p9g2.internal.P9G2Greeter` 구성 요소가 서비스를 구현함을 나타냅니다.
 
 `P9G2Greeter` 구성 요소가 `Greeter` 서비스를 제공하는지 확인했습니다.
 
@@ -106,9 +107,9 @@ API는 단 두 단계로 생성됩니다.
 :lines: 5-6
 ```
 
-[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) 주석은 `Greeter` 를 구성 요소가 구현하거나 사용할 수 있는 유형으로 등록합니다.
+[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) 주석은 `Greeter` 구성 요소가 구현하거나 사용할 수 있는 유형으로 등록합니다.
 
-`welcome` 메서드는 이름 `문자열` 을 입력으로 사용합니다.
+`welcome` 메서드는 이름 `문자열` 입력으로 사용합니다.
 
 ```{literalinclude} ./apis-as-osgi-services/resources/liferay-p9g2.zip/p9g2-api/src/main/java/com/acme/p9g2/Greeter.java
 :dedent: 1
@@ -150,7 +151,7 @@ The `P9G2Greeter` class implements the `Greeter` interface:
 
 ### 인터페이스 구현
 
-`Greeter` 인터페이스는 `void` 반환 값을 사용하여 메서드 `greet(String)` 을 정의합니다.
+`Greeter` 인터페이스는 `void` 반환 값을 사용하여 메서드 `greet(String)` 정의합니다.
 
 ```{literalinclude} ./apis-as-osgi-services/resources/liferay-p9g2.zip/p9g2-impl/src/main/java/com/acme/p9g2/internal/P9G2Greeter.java
 :dedent: 1
@@ -172,7 +173,7 @@ The `P9G2Greeter` class implements the `Greeter` interface:
 
 ### 모듈 JAR 검사
 
-`p9g2-impl/build/libs/com.acme.p9g2.impl-1.0.0.jar` 구현 모듈 JAR을 빌드할 때 [Bnd](http://bnd.bndtools.org/) 은 JAR의 `/META-INF/MANIFEST.MF` 파일을 생성했습니다.
+`p9g2-impl/build/libs/com.acme.p9g2.impl-1.0.0.jar` 구현 모듈 JAR을 빌드할 때 [Bnd](http://bnd.bndtools.org/) JAR의 `/META-INF/MANIFEST.MF` 파일을 생성했습니다.
 
 Bnd가 매니페스트에서 생성하는 주요 서비스 관련 헤더는 다음과 같습니다.
 
@@ -199,9 +200,9 @@ Service-Component: OSGI-INF/com.acme.p9g2.internal.P9G2Greeter.xml
 
 ## 결론
 
-'Greeter'라는 서비스 기능을 **정의** 하고 이를 'P9G2Greeter'라는 서비스 구성요소에 **제공** 했습니다. '그리터' 서비스가 진행됩니다. 클라이언트는 서비스에 어떻게 액세스하고 사용합니까? [OSGi 서비스 사용](./using-an-osgi-service.md)에 설명되어 있습니다.
+'Greeter'라는 서비스 기능을 *정의*하고 이를 'P9G2Greeter'라는 서비스 구성요소에 *제공*했습니다. '그리터' 서비스가 진행됩니다. 클라이언트는 서비스에 어떻게 액세스하고 사용합니까? [OSGi 서비스 사용](./using-an-osgi-service.md)에 설명되어 있습니다.
 
-## 관련 주제
+## 관련 항목
 
 * [Gogo 셸 명령](./using-the-gogo-shell/gogo-shell-commands.md)
 * [패키지 내보내기](./exporting-packages.md)

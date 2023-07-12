@@ -20,7 +20,7 @@ zebra-oauth-user-agent:
 
 알림 유형 클라이언트 확장에는 Liferay의 알림에 의해 트리거된 요청을 보호하기 위해 OAuth2 애플리케이션 프로필이 필요합니다. 위의 예는 이 프로필에 대한 추가 [OAuth 사용자 에이전트 클라이언트 확장](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) 을 정의하고 `oAuth2ApplicationExternalReferenceCode` 속성은 해당 `키` 값을 참조합니다.
 
-[샘플 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc) 알림 유형 클라이언트 확장을 추가하는 방법을 보여줍니다.
+[샘플 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) 알림 유형 클라이언트 확장을 추가하는 방법을 보여줍니다.
 
 ## YAML 속성
 
@@ -31,7 +31,7 @@ zebra-oauth-user-agent:
 | `resourcePath`                           | 문자열(부분 URL) | (필수) 알림 처리기의 경로입니다. 이 값은 전체 URL에 대한 OAauth2 애플리케이션 프로필의 `homePageURL` 값과 결합됩니다. |
 | `oAuth2ApplicationExternalReferenceCode` | 끈           | (필수) 요청 보안에 필요한 OAuth2 애플리케이션 프로필의 외부 참조 코드입니다.                                 |
 
-## 관련 주제
+## 관련 항목
 
 * [마이크로서비스 클라이언트 확장](../microservice-client-extensions.md)
 * [클라이언트 확장 작업](../working-with-client-extensions.md)

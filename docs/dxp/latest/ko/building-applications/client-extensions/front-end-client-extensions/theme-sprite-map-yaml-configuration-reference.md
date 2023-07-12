@@ -15,11 +15,11 @@ able-theme-spritemap:
 
 필수 `url` 속성은 `.svg` 스프라이트 맵 파일의 사이트를 정의합니다.
 
-[예제 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-spritemap) 에는 완전한 테마 스프라이트 맵 클라이언트 확장이 포함되어 있습니다.
+[예제 작업 공간](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-theme-spritemap-1) 에는 완전한 테마 스프라이트 맵 클라이언트 확장이 포함되어 있습니다.
 
 ## YAML 속성
 
-이러한 속성은 테마 스프라이트 맵 클라이언트 확장에 따라 다릅니다.
+이러한 속성은 테마 스프라이트 맵 클라이언트 확장에만 적용됩니다.
 
 | 이름    | 데이터 유형 | 묘사                                                                               |
 |:----- |:------ |:-------------------------------------------------------------------------------- |
@@ -27,7 +27,7 @@ able-theme-spritemap:
 
 모든 프런트 엔드 클라이언트 확장에 공통적인 속성은 [프런트 엔드 클라이언트 확장 속성](../front-end-client-extensions.md#front-end-client-extension-properties) 참조하십시오.
 
-## 관련 주제
+## 관련 항목
 
 * [프런트 엔드 클라이언트 확장](../front-end-client-extensions.md)
 * [클라이언트 확장 작업](../working-with-client-extensions.md)

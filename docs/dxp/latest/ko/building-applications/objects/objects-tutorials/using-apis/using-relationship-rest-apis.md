@@ -13,7 +13,7 @@
 
 다음으로 [create](../../creating-and-managing-objects/creating-objects.md) 3개의 관련 사용자 지정 개체:
 
-1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 클릭 **사물** .
+1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
 
 1. 세 개의 개체 초안을 만듭니다.
 
@@ -82,7 +82,7 @@
 다음 명령을 실행하여 제공된 샘플 코드를 다운로드하고 압축을 풉니다.
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-f9m2.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-f9m2.zip -O
 ```
 
 ```bash
@@ -375,7 +375,7 @@ REST API를 사용하여 개체 항목을 추가하고 해당 관계를 관리�
    :language: bash
 ```
 
-## 관련 주제
+## 관련 항목
 
 * [헤드리스 프레임워크 통합](../../understanding-object-integrations/headless-framework-integration.md)
 * [REST API에서 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md)

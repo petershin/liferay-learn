@@ -13,12 +13,12 @@ Liferay DXP는 기본적으로 50개 언어를 지원합니다. 각 로캘에는
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [번역 자동 생성](./liferay-m7d6.zip) 을 다운로드하고 압축을 풉니다.
+1. [번역 자동 생성](./liferay-m7d6.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/localization/liferay-m7d6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/localization/liferay-m7d6.zip -O
    ```
 
    ```bash
@@ -31,7 +31,7 @@ Liferay DXP는 기본적으로 50개 언어를 지원합니다. 각 로캘에는
    microsoft.translator.subscription.key={your unique key}
    ```
 
-   Language Builder가 작동하려면 자신의 [Microsoft Translator 구독 키](https://www.microsoft.com/en-us/translator/business/translator-api/) 를 얻어야 합니다.
+   Language Builder가 작동하려면 자신의 [Microsoft Translator 구독 키](https://www.microsoft.com/en-us/translator/business/translator-api/)를 얻어야 합니다.
 
 1. 모듈 루트에서 Language Builder를 실행합니다.
 
@@ -49,7 +49,7 @@ Liferay DXP는 기본적으로 50개 언어를 지원합니다. 각 로캘에는
 
 샘플 프로젝트에는 `Language.properties` 파일에 하나의 언어 키가 있습니다. 애플리케이션에 필요한 만큼 언어 키를 추가한 다음 Language Builder를 실행합니다.
 
-Liferay에 언어 키를 배포하려면 [글로벌 언어 키 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)을 참조하십시오. 지침은 기존 키를 재정의하든 새 키를 추가하든 동일합니다.
+Liferay에 언어 키를 배포하려면 [글로벌 언어 키 재정의](../../../liferay-internals/extending-liferay/overriding-global-language-translations.md)참조하십시오. 지침은 기존 키를 재정의하든 새 키를 추가하든 동일합니다.
 
 일부 언어가 자동으로 번역되지 않도록 제외하려면 프로젝트의 `build.gradle` 파일에서 `excludeLanguageIds` 속성을 사용하세요. 예를 들어 프랑스어를 포함하려면
 
@@ -59,4 +59,4 @@ buildLang {
 }
 ```
 
-Language Builder 도구 및 추가 구성에 대한 자세한 내용은 [Lang Builder Gradle Plugin](https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-lang-builder) 을 참조하십시오.
+Language Builder 도구 및 추가 구성에 대한 자세한 내용은 [Lang Builder Gradle Plugin](https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-lang-builder)을 참조하십시오.

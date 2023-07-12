@@ -11,10 +11,10 @@ REST Builder를 사용하면 빌드하려는 API를 정의할 수 있으며 REST
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Acme Foo API](./liferay-r3b2.zip) 가 포함된 `.zip` 아카이브를 다운로드하고 압축을 풉니다.
+1. [Acme Foo API](./liferay-r3b2.zip)가 포함된 `.zip` 아카이브를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/apis-with-rest-builder/liferay-r3b2.zip -O
     ```
 
     ```bash
@@ -38,7 +38,7 @@ REST Builder를 사용하면 빌드하려는 API를 정의할 수 있으며 REST
     STARTED com.acme.headless.r3b2.impl_1.0.0
     ```
 
-1. DXP 인스턴스에 로그인하고 **전역 메뉴**( ![Global Menu icon](../../images/icon-applications-menu.png) ) &rarr; **제어판** &rarr; **Gogo Shell로 이동합니다.**
+1. DXP 인스턴스에 로그인하고 _전역 메뉴_ ( ![Global Menu icon](../../images/icon-applications-menu.png) ) &rarr; _제어판_ &rarr; _Gogo Shell로 이동합니다._
 
 1. Gogo Shell 프롬프트에서 다음 명령을 입력합니다.
 
@@ -234,7 +234,7 @@ paths:
 `get`, `post`, `put`, `patch` 및 `delete`를 포함하여 다양한 종류의 요청에 대한 경로를 추가할 수 있습니다.
 ```
 
-경로(`foo/{fooId}`)는 URL 끝에 경로 문자열을 추가하여 이 API(`getFoo`)에 도달할 수 있음을 지정합니다(여기에는 `의 `baseURI` 및 `version` 값도 포함됨). rest-config.yaml` 파일). 예를 들어 이 예제 API는 전체 URL인 `localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}`를 통해 액세스됩니다.
+경로(`foo/{fooId}`)는 URL 끝에 경로 문자열을 추가하여 이 API(`getFoo`)에 도달할 수 있음을 지정합니다(`baseURI` 및 `version` 값도 포함). `rest-config.yaml` 파일). 예를 들어 이 예제 API는 전체 URL인 `localhost:8080/o/headless-r3b2/v1.0/foo/{fooId}`를 통해 액세스됩니다.
 
 `fooId`를 대체하는 값은 이름이 일치하는 매개변수로 사용됩니다.
 

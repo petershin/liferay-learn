@@ -5,15 +5,16 @@
 Liferay의 REST API를 사용하여 지역을 만들고 관리합니다.
 
 ## 지역 추가
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Regions API 기본 사항](./liferay-r2p3.zip) 을 다운로드하고 압축을 풉니다.
+1. [Regions API 기본 사항](./liferay-r2p3.zip)을 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-r2p3.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-r2p3.zip -O
    ```
 
    ```bash
@@ -105,7 +106,7 @@ Liferay의 REST API를 사용하여 지역을 만들고 관리합니다.
 다른 예제 Java 클래스는 이 클래스와 유사하지만 서로 다른 `RegionResource` 메서드를 호출합니다.
 
 ```{important}
-[RegionResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$(https://github.com/liferay/liferay-portal/blob/[1]/modules/apps/headless/headless-admin-address/headless-admin-address-client/src/main/java/com /liferay/headless/admin/address/client/resource/v1_0/RegionResource.java)를 참조하십시오.
+[RegionResource]$LIFERAY_LEARN_PORTAL_GIT_TAG$(https://github.com/liferay/liferay-portal/blob/[1]/modules/apps/headless/headless-admin-address/headless-admin-address-client/src/main/java/com/liferay/headless/admin/address/client/resource/v1_0/RegionResource.java)를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 `개 지역` REST 서비스를 호출하는 예입니다.

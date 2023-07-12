@@ -16,12 +16,12 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
 1. 예제를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-s3z9.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-s3z9.zip -O
     ```
 
     ```bash
@@ -93,41 +93,41 @@
 
 ## `MessageBusEventListener`검사
 
-Message Bus는 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) s가 추가되거나 제거될 때 [`MessageBusEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java) s에 알립니다. 다음은 `MessageBusEventListener` 구현의 예입니다.
+Message Bus는 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)s가 추가되거나 제거될 때 [`MessageBusEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java)s에 알립니다. 다음은 `MessageBusEventListener` 구현의 예입니다.
 
 ```{literalinclude} ./listening-for-registration-events/resources/liferay-s3z9.zip/s3z9-able-impl/src/main/java/com/acme/s3z9/able/internal/messaging/S3Z9AbleMessageBusEventListener.java
 :language: java
 :lines: 10-31
 ```
 
-[`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 주석과 해당 `service = MessageBusEventListener.class` 속성은 런타임 프레임워크에 `S3Z9AbleMessageBusEventListener` 을 `MessageBusEventListener`로 등록하도록 신호를 보냅니다. 구현은 `MessageBusEventListener`의 두 가지 방법을 재정의합니다.
+[`@Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) 주석과 해당 `service = MessageBusEventListener.class` 속성은 런타임 프레임워크에 `S3Z9AbleMessageBusEventListener` `MessageBusEventListener`로 등록하도록 신호를 보냅니다. 구현은 `MessageBusEventListener`의 두 가지 방법을 재정의합니다.
 
-* `destinationAdded(Destination destination)` 은 새로 추가된 `Destination`에 응답합니다.
-* `destinationRemoved(목적지 목적지)` 은 새로 제거된 `목적지`에 응답합니다.
+* `destinationAdded(Destination destination)` 새로 추가된 `Destination`에 응답합니다.
+* `destinationRemoved(목적지 목적지)` 새로 제거된 `목적지`에 응답합니다.
 
 `S3Z9AbleMessageBusEventListener`의 메소드 구현은 대상 이벤트를 기록합니다.
 
 ## `DestinationEventListener`검사
 
-Message Bus는 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 이 `DestinationEventListener`의 지정된 대상에 등록하거나 등록을 취소할 때 [`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java) 에 알립니다. 다음은 `DestinationEventListener` 구현 예입니다.
+Message Bus는 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java)이 `DestinationEventListener`의 지정된 대상에 등록하거나 등록을 취소할 때 [`DestinationEventListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java) 에 알립니다. 다음은 `DestinationEventListener` 구현 예입니다.
 
 ```{literalinclude} ./listening-for-registration-events/resources/liferay-s3z9.zip/s3z9-charlie-impl/src/main/java/com/acme/s3z9/charlie/internal/messaging/S3Z9CharlieDestinationEventListener.java
 :language: java
 :lines: 10-38
 ```
 
-`@Component` 주석의 `속성 = "destination.name=acme/s3z9_baker"` 및 `서비스 = MessageBusEventListener.class` 속성은 `acme/s3z9_baker` 대상에 대해 `S3Z9CharlieDestinationEventListener` 을 `DestinationEventListener` 로 등록하도록 런타임 프레임워크에 신호를 보냅니다. . 구현은 `DestinationEventListener`의 두 메서드를 재정의합니다.
+`@Component` 주석의 `property = "destination.name=acme/s3z9_baker"` 및 `service = MessageBusEventListener.class` 속성은 `acme/s3z9_baker` 대상에 대한 `DestinationEventListener`로 `S3Z9CharlieDestinationEventListener`를 등록하도록 런타임 프레임워크에 신호를 보냅니다. 구현은 `DestinationEventListener`의 두 메서드를 재정의합니다.
 
-* `messageListenerRegistered(String destinationName, MessageListener messageListener)` 은 목적지에 등록된 새로운 메시지 리스너에 응답합니다.
-* `messageListenerUnregistered(String destinationName, MessageListener messageListener)` 은 대상에서 등록되지 않은 새 메시지 수신기에 응답합니다.
+* `messageListenerRegistered(String destinationName, MessageListener messageListener)` 목적지에 등록된 새로운 메시지 리스너에 응답합니다.
+* `messageListenerUnregistered(String destinationName, MessageListener messageListener)` 대상에서 등록되지 않은 새 메시지 수신기에 응답합니다.
 
 `S3Z9CharlieDestinationEventListener`의 메소드 구현은 메시지 리스너 등록 이벤트를 기록합니다.
 
-예제 `MessageBusEventListener` 및 `DestinationEventListener` 이 메시지 버스 수신기 등록 취소 및 대상 제거에 응답하는 것을 보려면 계속 읽으십시오.
+예제 `MessageBusEventListener` 및 `DestinationEventListener` 메시지 버스 수신기 등록 취소 및 대상 제거에 응답하는 것을 보려면 계속 읽으십시오.
 
 ## 다른 이벤트 트리거
 
-모듈을 중지하여 예제 메시지 수신기를 등록 취소하고 예제 대상을 제거할 수 있습니다. `s3z9-dog-impl` 은 메시지 수신기를 배포했고 `s3z9-able-impl` 은 대상을 배포했습니다. 이러한 모듈을 중지하면 해당 클래스는 메시지 수신기와 대상을 각각 등록 취소합니다.
+모듈을 중지하여 예제 메시지 수신기를 등록 취소하고 예제 대상을 제거할 수 있습니다. `s3z9-dog-impl` 메시지 수신기를 배포했고 `s3z9-able-impl` 은 대상을 배포했습니다. 이러한 모듈을 중지하면 해당 클래스는 메시지 수신기와 대상을 각각 등록 취소합니다.
 
 1. `http://localhost:8080` 에서 브라우저로 Liferay 인스턴스를 방문하고 자격 증명을 사용하여 로그인합니다.
 
@@ -166,13 +166,13 @@ Message Bus는 [`MessageListener`](https://github.com/liferay/liferay-portal/blo
     stop 1840
     ```
 
-축하합니다! 모든 메시지 버스 이벤트 리스너 및 대상 이벤트 리스너 이벤트를 트리거했습니다.
+축하해요! 모든 메시지 버스 이벤트 리스너 및 대상 이벤트 리스너 이벤트를 트리거했습니다.
 
 ## 다음
 
-이제 이러한 Message Bus 이벤트를 수신하는 방법을 알았 [새](./tuning-messaging-performance.md) 에서 메시지를 수신하거나 새 등록 관련 활동에 대한 응답으로 메시징 환경을 조정할 수 있습니다.
+이제 이러한 Message Bus 이벤트를 수신하는 방법 [알았으므로 새 대상에서 메시지를 수신하거나 새 등록 관련 활동에 대한 응답으로 메시징 환경](./tuning-messaging-performance.md) 조정할 수 있습니다.
 
-## 관련 주제
+## 관련 항목
 
 * [메시징 성능 조정](./tuning-messaging-performance.md)
 * [메시지 듣기](./listening-for-messages.md)

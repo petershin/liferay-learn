@@ -1,6 +1,6 @@
 # 검색 결과 정렬
 
-[검색 결과](./search-results.md) 위젯에 표시되는 검색 결과는 [관련성 점수](./search-results.md#search-results-relevance) 순으로 정렬됩니다([검색 엔진]에서 계산됨). (https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) 기본적으로 제공됩니다. 정렬 위젯을 사용하여 사용자는 반환된 결과의 순서를 제어할 수 있습니다.
+[검색 결과](./search-results.md) 위젯에 표시되는 검색 결과는 [관련성 점수](./search-results.md#search-results-relevance)순으로 정렬됩니다([검색 엔진]에서 계산됨). (https://www.elastic.co/guide/en/elasticsearch/guide/master/scoring-theory.html)) 기본적으로 제공됩니다. 정렬 위젯을 사용하여 사용자는 반환된 결과의 순서를 제어할 수 있습니다.
 
 [검색 페이지](../working-with-search-pages/search-pages.md) 에 위젯을 추가하여 결과 정렬을 시작합니다.
 
@@ -42,16 +42,15 @@
 
 ![사용자는 정렬 위젯을 사용하여 검색 결과를 재정렬할 수 있습니다.](./sorting-search-results/images/04.gif)
 
-
 ```{note}
 관련성은 켜거나 끌 수 있지만 완전히 제거할 수는 없습니다. 관련성이 활성화되면 기본 검색 엔진 동작이 사용됩니다. 결과는 관련성의 내림차순으로 정렬됩니다(가장 높은 점수 먼저).
 ```
 
-위젯 구성 화면에 액세스하려면 위젯 옵션 메뉴(![Options](../../../images/icon-app-options.png))를 열고 **구성** 클릭합니다.
+위젯 구성 화면에 액세스하려면 위젯 옵션 메뉴(![Options](../../../images/icon-app-options.png))를 열고 _구성_클릭합니다.
 
-각 정렬 옵션에는 **인덱싱된 필드** , **표시 레이블** 및 **순서** 의 세 가지 설정이 있습니다.
+각 정렬 옵션에는 _인덱싱된 필드_, _표시 레이블_및 _순서_의 세 가지 설정이 있습니다.
 
-**인덱스 필드:** 정렬할 인덱스 필드의 `fieldName` 입력합니다. 대부분의 경우 이것은 [키워드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) 필드입니다. 다른 허용 가능한 옵션은 `날짜` 및 [숫자 데이터 유형](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/number.html) 입니다. 정렬 위젯을 사용하여 `텍스트` 필드가 작동하도록 강제하는 방법도 있습니다(아래 참조). 
+**인덱스 필드:** 정렬할 인덱스 필드의 `fieldName` 입력합니다. 대부분의 경우 이것은 [키워드](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/keyword.html) 필드입니다. 다른 허용 가능한 옵션은 `날짜` 및 [숫자 데이터 유형](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/number.html)입니다. 정렬 위젯을 사용하여 `텍스트` 필드가 작동하도록 강제하는 방법도 있습니다(아래 참조). 
 
 **표시 레이블:** 구성 중인 정렬 유형에 대해 표시된 레이블을 설정합니다.
 
@@ -77,7 +76,7 @@
 
 ## 정렬 가능한 필드 찾기
 
-정렬 위젯에서 사용할 수 있는 필드를 찾으려면 적절한 권한이 있는 사용자가 **제어판** &rarr; **구성** &rarr; **검색** 으로 이동할 수 있습니다.  여기에서 필드 매핑 탭을 열고 각 인덱스에 대한 매핑을 찾습니다.  매핑의 `속성` 섹션으로 스크롤하고 `키워드` 필드, `날짜` 필드 또는 숫자 데이터 유형이 있는 필드를 찾습니다. `유형` 필드는 유익합니다.
+정렬 위젯에서 사용할 수 있는 필드를 찾으려면 적절한 권한이 있는 사용자가 *제어판* &rarr; *구성* &rarr; *검색*으로 이동할 수 있습니다.  여기에서 필드 매핑 탭을 열고 각 인덱스에 대한 매핑을 찾습니다.  매핑의 `속성` 섹션으로 스크롤하고 `키워드` 필드, `날짜` 필드 또는 숫자 데이터 유형이 있는 필드를 찾습니다. `유형` 필드는 유익합니다.
 
     "type" : "keyword"
     
@@ -99,7 +98,7 @@
 },
 ```
 
-접미사가 `_sortable`이고 올바른 정렬 유형(`키워드`)이 있는 해당 필드가 있습니다. 정렬 가능한 필드는 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search) 통해 도착했습니다.
+접미사가 `_sortable`이고 올바른 정렬 유형(`키워드`)이 있는 해당 필드가 있습니다. 정렬 가능한 필드는 [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Lucene%20Search)통해 도착했습니다.
 
 ```properties
 index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
@@ -109,13 +108,13 @@ index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 
 ## 새 정렬 옵션 추가
 
-새 필드 또는 적절한 유형의 기존 필드를 기준으로 정렬하려면 **옵션** 추가 버튼을 클릭합니다. 
+새 필드 또는 적절한 유형의 기존 필드를 기준으로 정렬하려면 _옵션_ 추가 버튼을 클릭합니다. 
 
 ```{tip}
 위젯 구성에서 텍스트 필드의 `fieldName_sortable` 버전을 사용해야 합니다. 
 ```
 
-이미 적절한 데이터 유형인 새 정렬 옵션을 추가하려면 옵션의 **필드** 구성 아래에 있는 더하기 기호를 사용하고 필드를 채우십시오. 구성 화면의 옵션 순서는 검색을 위해 위젯을 구성할 때 선택 목록의 순서와 일치합니다.
+이미 적절한 데이터 유형인 새 정렬 옵션을 추가하려면 옵션의 _필드_ 구성 아래에 있는 더하기 기호를 사용하고 필드를 채우십시오. 구성 화면의 옵션 순서는 검색을 위해 위젯을 구성할 때 선택 목록의 순서와 일치합니다.
 
 ## 정렬 옵션 편집 및 삭제
 
@@ -125,15 +124,15 @@ index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 
 ## 클래식 구성에서 정렬 순서 제어
 
-클래식 구성에서 정렬 옵션의 순서를 제어하려면 `fieldName`뒤에 더하기 또는 빼기 기호를 추가하십시오. 작동 방식을 이해하려면 **생성됨** 및 **생성됨(오래된 것부터**) 으로 레이블이 지정된 기존 정렬 옵션이 어떻게 수행되는지 살펴보십시오.
+클래식 구성에서 정렬 옵션의 순서를 제어하려면 `fieldName`뒤에 더하기 또는 빼기 기호를 추가하십시오. 작동 방식을 이해하려면 _생성됨_ 및 _생성됨(오래된 것부터)_ 으로 레이블이 지정된 기존 정렬 옵션이 어떻게 수행되는지 살펴보십시오.
 
-**레이블:** **생성됨_** 필드:** `createDate-`
+**레이블:** _생성됨_ **필드:** `createDate-`
 
 필드 이름 뒤에 오는 `기호는 순서가 <em x-id="4">내림차순</em>임을 나타`.  이 방법으로 정렬하면 가장 최근에 생성된 검색 결과가 목록의 맨 위에 표시됩니다.
 
-**라벨:** **생성됨(오래된 것부터**)**필드:** `createDate+`
+**라벨:** _생성됨(오래된 것부터)_ **필드:** `createDate+`
 
-필드 이름 뒤에 오는 `+` 기호는 순서가 **오름차순** 임을 나타냅니다.  이 방법으로 정렬하면 가장 오래된(만든 날짜 기준) 결과가 목록의 맨 위에 표시됩니다.
+필드 이름 뒤에 오는 `+` 기호는 순서가 _오름차순_ 임을 나타냅니다.  이 방법으로 정렬하면 가장 오래된(만든 날짜 기준) 결과가 목록의 맨 위에 표시됩니다.
 
 ## 중첩된 필드로 정렬
 
@@ -142,6 +141,7 @@ index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 {bdg-secondary}`7.4 U72+/GA72+`
 
 [객체 정의](../../../building-applications/objects.md) 필드는 Elasticsearch에서 중첩 필드로 인덱싱됩니다. 인덱스의 기존 문서에서 개체 필드를 찾으려면 검색 결과 위젯에서 [문서 형식](../search-results/configuring-the-search-results-widget#inspecting-search-engine-documents) 에 결과 표시 설정을 사용합니다.
+
 
 ```json
 "nestedFieldArray" : [
@@ -206,5 +206,4 @@ index.sortable.text.fields=firstName,jobTitle,lastName,name,screenName,title
 | 7.3 모든 업데이트      | &#10004;         |
 | DXP 7.2 SP3/FP8+ | &#10008;         |
 
-동작을 변경하려면 시스템 설정 &rarr; 동적 데이터 매핑 인덱서에서 **레거시 동적 데이터 매핑 인덱스 필드 활성화** 설정을 사용합니다.
-
+동작을 변경하려면 시스템 설정 &rarr; 동적 데이터 매핑 인덱서에서 _레거시 동적 데이터 매핑 인덱스 필드 활성화_ 설정을 사용합니다.

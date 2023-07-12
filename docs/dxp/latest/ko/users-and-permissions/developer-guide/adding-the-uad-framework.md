@@ -2,19 +2,19 @@
 
 Liferay의 UAD(User Associated Data) 관리 도구를 사용하여 [사용자 데이터 관리 및 삭제](../managing-user-data.md)를 할 수 있습니다. 이 도구는 많은 Liferay 응용 프로그램(예: 블로그, 문서 및 미디어, 메시지 보드 등)에서 즉시 사용할 수 있습니다. 이 프레임워크는 맞춤형 애플리케이션에도 적용할 수 있습니다.
 
-이 작업은 [서비스 빌더](../../building-applications/data-frameworks/service-builder.md) 을 사용하면 더 쉬워집니다. Service Builder가 애플리케이션에 대해 UAD를 활성화하는 데 필요한 코드를 자동으로 생성하는 방법을 알아보려면 아래 예를 참조하십시오.
+이 작업은 [Service Builder](../../building-applications/data-frameworks/service-builder.md)을 사용하면 더 쉬워집니다. Service Builder가 애플리케이션에 대해 UAD를 활성화하는 데 필요한 코드를 자동으로 생성하는 방법을 알아보려면 아래 예를 참조하십시오.
 
 ## 예제 코드 다운로드
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [UAD 프레임워크](./liferay-h6d2.zip) 를 다운로드하고 압축을 풉니다.
+1. [UAD 프레임워크](./liferay-h6d2.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
     ```
 
     ```bash
@@ -22,7 +22,6 @@ Liferay의 UAD(User Associated Data) 관리 도구를 사용하여 [사용자 �
     ```
 
 1. 모듈 루트에서 빌드 및 배포합니다. 
-   
 
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
@@ -47,13 +46,13 @@ Liferay의 UAD(User Associated Data) 관리 도구를 사용하여 [사용자 �
    
    ![페이지에 H6D2 포틀릿을 추가합니다.](./adding-the-uad-framework/images/01.png)
 
-1. [테스트를 위해 새 사용자](../users/adding-and-managing-users.md) 을 만듭니다.
+1. [테스트를 위해 새 사용자](../users/adding-and-managing-users.md) 만듭니다.
 
 1. 새 사용자로 로그인하고 H6D2 포틀릿에 일부 콘텐츠를 추가합니다.
 
-1. 관리자로 다시 로그인하고 **제어판** &rarr; **사용자** &rarr; **사용자 및 조직** 로 이동합니다. 
+1. 관리자로 다시 로그인하고 *제어판* &rarr; *사용자* &rarr; *사용자 및 조직*로 이동합니다.
 
-1. 새 사용자의 **작업** 아이콘(![Action](../../images/icon-actions.png)) &rarr; **개인 데이터 삭제** 를 클릭합니다. **확인** 을 클릭하여 사용자 비활성화를 확인합니다.
+1. 새 사용자의 *작업* 아이콘(![Action](../../images/icon-actions.png)) &rarr; *개인 데이터 삭제*클릭합니다. *확인* 클릭하여 사용자 비활성화를 확인합니다.
 
 1. UAD 관리 도구가 나타납니다. 새 사용자가 H6D2 포틀릿에 추가한 데이터를 보거나 익명화하거나 삭제할 수 있습니다.
    
@@ -66,7 +65,6 @@ Liferay의 UAD(User Associated Data) 관리 도구를 사용하여 [사용자 �
 1. `-service` 폴더에서 `service.xml` 파일을 엽니다.
 
 1. UAD를 활성화하기 위한 두 개의 `엔티티` 매개변수가 있습니다.
-
 
    | `엔티티` 속성               | 묘사                            |
    |:---------------------- |:----------------------------- |
@@ -98,7 +96,7 @@ UAD 프레임워크는 사용자 데이터를 추적하고 익명화하기 위�
 
 1. 다음으로 익명화할 데이터 필드를 지정합니다. 이것은 두 가지 속성을 사용하여 수행됩니다.
 
-   * `uad-anonymize-field-name=[fieldName]` 속성은 UAD 자동 익명화 과정에서 익명 사용자의 값으로 대체되는 필드를 나타낸다. 예를 들어 `uad-anonymize-field-name=fullName` 로 설정하면 해당 필드의 값이 익명 사용자의 전체 이름으로 대체됩니다. 익명 사용자에 대한 자세한 내용은 [익명 사용자 구성](../managing-user-data/configuring-the-anonymous-user.md) 을 참조하십시오.
+   * `uad-anonymize-field-name=[fieldName]` 속성은 UAD 자동 익명화 과정에서 익명 사용자의 값으로 대체되는 필드를 나타낸다. 예를 들어 `uad-anonymize-field-name=fullName` 로 설정하면 해당 필드의 값이 익명 사용자의 전체 이름으로 대체됩니다. 익명 사용자에 대한 자세한 내용은 [익명 사용자 구성](../managing-user-data/configuring-the-anonymous-user.md) 참조하십시오.
 
    * `uad-nonanonymizable="true"` 속성은 자동으로 익명화되지 않지만 관리자가 검토해야 하는 데이터를 나타냅니다. 
 
@@ -113,10 +111,10 @@ UAD 프레임워크는 사용자 데이터를 추적하고 익명화하기 위�
 
 1. 모듈에 대한 `bnd.bnd` 파일을 만듭니다.
    
-   ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd   
-    ```
+   ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd 
+   ```
 
-   Make sure to include the `-dsannotations-options: inherit` annotation. OSGi service component classes inherit [OSGi declarative services](../../liferay-internals/fundamentals/module-projects.md) annotations from their class hierarchy.
+   `-dsannotations-options: inherit` 주석을 포함해야 합니다. OSGi 서비스 구성 요소 클래스는 클래스 계층에서 [OSGi 선언적 서비스](../../liferay-internals/fundamentals/module-projects.md) 주석을 상속합니다.
 
 1. Create a `build.gradle` file for the module.
 
@@ -164,9 +162,9 @@ UAD 프레임워크는 사용자 데이터를 추적하고 익명화하기 위�
 :lines: 18-26
 ```
 
-`ActionRequest` 을 `actionURL` 과 함께 제출하면 포틀릿의 `addH6D2Entry` 메소드가 호출됩니다. 
+`ActionRequest` `actionURL` 과 함께 제출하면 포틀릿의 `addH6D2Entry` 메소드가 호출됩니다. 
 
-## 관련 주제
+## 관련 항목
 
 * [사용자 데이터 관리](../managing-user-data.md)
 * [서비스 빌더](../../building-applications/data-frameworks/service-builder.md)

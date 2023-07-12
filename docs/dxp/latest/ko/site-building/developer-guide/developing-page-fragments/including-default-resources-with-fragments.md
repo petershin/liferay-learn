@@ -1,6 +1,6 @@
 # 조각에 기본 리소스 포함
 
-사용할 조각에 대한 조각 세트에 이미지(예: `.gif`, `.jpg`, `.jpeg`또는 `.png`)를 포함할 수 있습니다. 문서 및 미디어 [과 같은 다른 응용 프로그램이 아닌 Fragment에 이미지를 보관하는 것이 편리](../../../content-authoring-and-management/documents-and-media.md). 여기에서는 조각 세트에 이미지 리소스를 포함하고 조각에서 이미지 리소스를 사용하는 방법을 알아봅니다.
+사용할 조각에 대한 조각 세트에 이미지(예: `.gif`, `.jpg`, `.jpeg`또는 `.png`)를 포함할 수 있습니다. [및 미디어](../../../content-authoring-and-management/documents-and-media.md)과 같은 다른 응용 프로그램이 아닌 Fragment에 이미지를 보관하는 것이 편리합니다. 여기서는 조각 세트에 이미지 리소스를 포함하고 조각에서 이미지 리소스를 사용하는 방법을 알아봅니다.
 
 ```{note}
 Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라고 합니다.
@@ -13,10 +13,10 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
 
 그런 다음 다음 단계에 따라 예제 Fragment Set을 가져와 Fragment 리소스가 작동하는 방식을 확인합니다.
 
-1. [example resources Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip) 을 다운로드하고 압축을 풉니다.
+1. [예제 리소스 단편 세트](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O
     ```
 
     ```bash
@@ -59,11 +59,11 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
     Project Imported
     ```
 
-1. 조각 세트를 사용할 수 있는지 확인합니다. 브라우저에서 `https://localhost:8080`을 가리키고 화면 왼쪽의 사이트 메뉴 아래에서 **Design** &rarr; **Fragments** 으로 이동합니다. I6R3 세트는 다른 조각 세트와 함께 나타나야 합니다.
+1. 조각 세트를 사용할 수 있는지 확인합니다. 브라우저에서 `https://localhost:8080`가리키고 화면 왼쪽의 사이트 메뉴 아래에서 *Design* &rarr; *Fragments*으로 이동합니다. I6R3 세트는 다른 단편 세트와 함께 나타나야 합니다.
 
-1. **I6R3 세트** 을 클릭합니다.
+1. *I6R3 세트*을 클릭합니다.
 
-1. **리소스** 탭을 클릭합니다. `books.png` 이미지가 리소스 목록에 나타납니다.
+1. *리소스* 탭을 클릭합니다. `books.png` 이미지가 리소스 목록에 나타납니다.
 
     ![리소스는 Fragment Set에서 사용할 수 있습니다.](./including-default-resources-with-fragments/images/01.png)
 
@@ -110,13 +110,13 @@ Liferay DXP 7.4+의 경우 조각 컬렉션은 Liferay UI에서 조각 세트라
     yarn run import
     ```
 
-1. 조각 세트에 리소스가 포함되어 있는지 확인합니다. UI의 **Fragments** 페이지에서 **I6R3 Set** 을 선택하고 **Resources** 탭을 클릭합니다. 리소스 목록에 새 이미지가 나타나야 합니다.
+1. 조각 세트에 리소스가 포함되어 있는지 확인합니다. UI의 *Fragments* 페이지에서 *I6R3 Set* 선택하고 *Resources* 탭을 클릭합니다. 리소스 목록에 새 이미지가 나타나야 합니다.
 
     ![세트의 자원 목록에 새 이미지가 나타나는지 확인하십시오.](./including-default-resources-with-fragments/images/03.png)
 
-1. Set의 **Fragments** 탭을 선택하고 **I6R3 Card** Fragment를 클릭하여 **I6R3 Card** Fragment를 엽니다. Fragment 소스는 Fragments Editor에 나타납니다.
+1. Set의 *Fragments* 탭을 선택하고 *I6R3 Card* Fragment를 클릭하여 *I6R3 Card* Fragment를 엽니다. Fragment 소스는 Fragments Editor에 나타납니다.
 
-1. 새 이미지 리소스를 사용하도록 Fragment를 업데이트합니다. `img` 요소의 `src="[resources:books.png]"` 속성에서 `books.png` 을 삭제하고 `src="[resources:`뒤에 새 이미지 파일의 이름을 입력하기 시작합니다. 이미지 파일 이름이 있는 속성 값이 커서 아래에 나타납니다. 해당 속성 값을 선택합니다.
+1. 새 이미지 리소스를 사용하도록 Fragment를 업데이트합니다. `img` 요소의 `src="[resources:books.png]"` 속성에서 `books.png` 삭제하고 `src="[resources:`뒤에 새 이미지 파일의 이름을 입력하기 시작합니다. 이미지 파일 이름이 있는 속성 값이 커서 아래에 나타납니다. 해당 속성 값을 선택합니다.
 
     ![Fragments Editor는 일치하는 리소스를 나열합니다.](./including-default-resources-with-fragments/images/04.png)
 

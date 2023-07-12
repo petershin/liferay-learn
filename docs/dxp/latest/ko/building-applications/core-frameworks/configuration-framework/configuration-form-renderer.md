@@ -1,18 +1,18 @@
 # 구성 양식 렌더러
 
-[구성 인터페이스를 생성하면](./setting-and-accessing-configurations.html#creating-the-configuration-interface) 구성 UI가 자동으로 생성됩니다. 그러나 경우에 따라 UI의 모양과 느낌을 사용자 지정해야 합니다. 예를 들어 회사의 디자인 미학과 일치하도록 UI를 수정하려고 합니다. `ConfigurationFormRenderer` 구현으로 수행하는 방법은 다음과 같습니다.
+[구성 인터페이스를 생성하면](./setting-and-accessing-configurations.html#creating-the-configuration-interface)구성 UI가 자동으로 생성됩니다. 그러나 경우에 따라 UI의 모양과 느낌을 사용자 지정해야 합니다. 예를 들어 회사의 디자인 미학과 일치하도록 UI를 수정하려고 합니다. `ConfigurationFormRenderer` 구현으로 수행하는 방법은 다음과 같습니다.
 
 ## 예제 프로젝트 보기
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [구성 양식 렌더러](./liferay-b7r2.zip) 를 다운로드하고 압축을 풉니다.
+1. [구성 양식 렌더러](./liferay-b7r2.zip)를 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
    ```
 
    ```bash
@@ -37,7 +37,7 @@
 
 1. 예제 모듈이 작동하는지 확인하십시오. 브라우저에서 `https://localhost:8080`로 엽니다.
 
-1. **제어판** &rarr; **구성** &rarr; **시스템 설정** &rarr; **타사** 으로 이동합니다. **B7R2 구성** 을 클릭합니다.
+1. *제어판* &rarr; *구성* &rarr; *시스템 설정* &rarr; *타사*으로 이동합니다. *B7R2 구성*을 클릭합니다.
 
    ![시스템 설정에서 U2G5 구성으로 이동합니다.](./configuration-form-renderer/images/01.png)
 
@@ -52,10 +52,10 @@
 :lines: 9-14
 ```
 
-`ConfigurationFormRenderer`을 사용할 때 `generateUI` 주석은 생성된 UI [를 숨기는 데 필요하지](./hiding-the-configuration-ui.md).
+`ConfigurationFormRenderer`를 사용하는 경우 [생성된 UI를 숨기기](./hiding-the-configuration-ui.md) 위해 `generateUI` 주석이 필요하지 않습니다.
 
 ```{note}
-DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay) 을 참조하십시오.
+DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay)을 참조하십시오.
 ```
 
 ## 구성 양식 렌더러 구현
@@ -82,9 +82,9 @@ DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'Configuration
    :lines: 31-42
    ```
 
-1. `render()` 메서드를 재정의합니다. 예제에서 `ConfigurationProvider` 은 구성 개체에 액세스합니다. 서블릿 컨텍스트는 요청 디스패처에 대한 액세스를 제공하여 사용자 정의 JSP가 구성을 읽을 수 있도록 합니다.
+1. `render()` 메서드를 재정의합니다. 예제에서 `ConfigurationProvider` 구성 개체에 액세스합니다. 서블릿 컨텍스트는 요청 디스패처에 대한 액세스를 제공하여 사용자 정의 JSP가 구성을 읽을 수 있도록 합니다.
 
-1. `@Reference` 주석을 사용하여 모듈의 기호 이름을 정의하십시오.
+1. `@Reference` 주석을 사용하여 모듈의 기호 이름을 정의하십시오. 
 
    ```java
    @Reference(
@@ -94,7 +94,7 @@ DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'Configuration
 
 ## Web-ContextPath 추가
 
-`bnd.bnd` 파일에서 번들의 `Web-ContextPath` 을 지정합니다. 예를 들어 샘플 프로젝트에는 Bnd 파일에 `Web-ContextPath: /b7r2-web` 이 있습니다. 구성 양식 렌더러 파일에 `ServletContext` 개체를 등록하는 것입니다. 서블릿 컨텍스트는 포틀릿에 대해 자동으로 생성되지만 이 샘플에는 포틀릿이 없으므로 `bnd.bnd` 파일에 서블릿 컨텍스트를 추가해야 합니다.
+`bnd.bnd` 파일에서 번들의 `Web-ContextPath` 지정합니다. 예를 들어 샘플 프로젝트에는 Bnd 파일에 `Web-ContextPath: /b7r2-web` 있습니다. 구성 양식 렌더러 파일에 `ServletContext` 개체를 등록하는 것입니다. 서블릿 컨텍스트는 포틀릿에 대해 자동으로 생성되지만 이 샘플에는 포틀릿이 없으므로 `bnd.bnd` 파일에 서블릿 컨텍스트를 추가해야 합니다.
 
 ## 사용자 정의 JSP 생성
 

@@ -9,12 +9,12 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계를 따르세요.
+그런 다음 다음 단계를 따르십시오.
 
-1. [멀티스레딩 프로세스](./liferay-j7z3.zip) 를 다운로드하고 압축을 풉니다.
+1. [멀티스레딩 프로세스](./liferay-j7z3.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
     ```
 
     ```bash
@@ -44,7 +44,7 @@
 
 ## 앱에 항목 추가
 
-1. **제어판** &rarr; **서버 관리** &rarr; **스크립트** 에서 스크립트 콘솔로 이동합니다.
+1. *제어판* &rarr; *서버 관리* &rarr; *스크립트*에서 스크립트 콘솔로 이동합니다.
 
 1. 다음 스크립트를 실행하여 일부 항목을 추가합니다.
 
@@ -83,7 +83,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. **제어판** &rarr; **Gogo Shell** 에서 Gogo 셸 콘솔로 이동합니다.
+1. *제어판* &rarr; *Gogo Shell*에서 Gogo 셸 콘솔로 이동합니다.
 
 1. `upgrade:list com.acme.j7z3.service`명령을 입력하여 1.0.1 업그레이드를 사용할 수 있는지 확인합니다. 1.0.1 버전은 출력 창에 등록된 업그레이드 프로세스로 나타납니다.
 
@@ -95,7 +95,7 @@
 
    ![업데이트된 항목은 데이터베이스 테이블에서 확인할 수 있습니다.](./multithreading-process/images/03.png)
 
-## 멀티스레딩 방법 구현
+## 다중 스레딩 방법 구현
 
 애플리케이션의 `UpgradeProcess` 클래스에서 `processConcurrently()` 메서드를 재정의합니다.
 

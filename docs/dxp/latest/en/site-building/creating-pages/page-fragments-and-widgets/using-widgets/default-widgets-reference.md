@@ -58,7 +58,7 @@ Collaboration widgets build sites and communities that foster collaboration and 
 
 ## Commerce
 
-For a list of available commerce widgets, see [Commerce Widget Reference](../../../../../../../commerce/latest/en/creating-store-content/liferay-commerce-widgets/widget-reference.md).
+For a list of available commerce widgets, see [Commerce Widget Reference](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-widgets/widget-reference).
 
 ## Community
 

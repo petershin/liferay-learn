@@ -123,7 +123,7 @@ When customers request a quote, their order has the status *Quote Requested*. Th
 
 ![The order gets added with a status of Quote Requested.](./price-on-application/images/05.png)
 
-After selecting the order, you can add notes or more information that the customer can view from the placed orders screen. After reviewing the quote, you can click *Quote Processed* to process the quote, which converts it into an order. 
+After selecting the order, you can add notes or more information that the customer can view from the placed orders screen. After reviewing the quote, you can click *Quote Processed* to process the quote. 
 
 ![Click on Quote Processed to process the quote.](./price-on-application/images/06.png)
 

@@ -6,7 +6,7 @@ uuid: 2a9553a6-06b7-4379-b6f7-85b2bf5b09a4
 
 Liferay has a lot of experience building a value chain of customer-centered innovation for the modern insurer, which is one of the reasons why it’s a focus industry. Liferay has a proven record of putting customers, agents, and employees at the center of the digital experience.
 
-View Liferay’s Insurance Case Studies [here](https://www.liferay.com/resources/case-studies?industries=financial-services).
+View Liferay’s Insurance Case Studies [here](https://www.liferay.com/resources/case-studies?industries=insurance).
 
 ## Key Challenges for Insurance
 

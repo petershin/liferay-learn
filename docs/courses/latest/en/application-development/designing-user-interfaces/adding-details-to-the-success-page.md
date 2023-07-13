@@ -1,11 +1,9 @@
 # Adding Details to the Success Page
 
-When users submit a distributor application, they're redirected to the success page: Application Submission. Currently, this page only includes a banner image. Delectable Bonsai wants to
+When users submit a distributor application, the success page appears: Application Submission. Currently, this page only includes a banner image. Delectable Bonsai wants to
 
 * Display basic information for the new application
 * Provide links for viewing and editing the application
-
-To do this,
 
 1. Navigate to the Application Submission page and click *Edit* (![Edit Button](../../images/icon-edit.png)).
 
@@ -13,14 +11,18 @@ To do this,
 
 1. Drag and drop the *Success Page* fragment into the empty container at the bottom of the page.
 
+<!-- Same thing here. I'm concerned the naming of these fragments doesn't associate them with the Distributor application. Is it possible to name them in some way to preserve that association? -Rich -->
+
    ![Drag and drop the Success Page fragment into the empty container](./adding-details-to-the-success-page/images/02.png)
 
    This composition includes a Collection Display fragment that uses the Distributor Application's collection provider. The Collection Display also includes sub-fragments that are mapped to these Distributor Application fields:
 
-      * Business Name
-      * ID
-      * Creation Date
-      * Application State
+   * Business Name
+   * ID
+   * Creation Date
+   * Application State
+
+   <!-- The above bullets didn't render in my previewer when they were indented. --Rich --> 
 
    ![The Collection Display fragment is configured to use the Distributor Application's collection provider.](./adding-details-to-the-success-page/images/03.png)
 
@@ -28,8 +30,8 @@ To do this,
 
 1. Click *Publish*.
 
-Great! Now when users are redirected to this success page, it is populated with data from their application. Additionally, they can view or edit their application.
+Great! Now when users see this success page, it is populated with data from their application. Additionally, they can view or edit their application.
 
-Presently, there is no display page for distributor applications, so clicking View Your Application doesn't lead anywhere. Let's fix that.
+Presently, there is no display page for distributor applications, so clicking View Your Application doesn't lead anywhere. You'll fix that next.
 
 Next: [Creating a Display Page for Distributor Applications](./creating-a-display-page-for-distributor-applications.md)

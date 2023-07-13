@@ -30,6 +30,6 @@ Pages are the primary building blocks <!--w/c--> of Liferay sites. Delectable Bo
 
 These pages provide the framework for building the Distributor Application UI.
 
-Currently, they do not include any of the fragments or widgets necessary for creating, viewing, and managing applications. Instead of starting from scratch, import the provided fragment compositions.
+Currently, they're empty. Instead of starting from scratch, you'll import the provided fragment compositions to add the fragments or widgets necessary for creating, viewing, and managing applications. 
 
 Next: [Importing Fragments for the Distributor Application Pages](./importing-fragments-for-the-distributor-application-pages.md)

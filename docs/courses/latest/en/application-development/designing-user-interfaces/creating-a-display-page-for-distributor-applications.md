@@ -1,9 +1,8 @@
 # Creating a Display Page for Distributor Applications
 
-Published objects are integrated with the Info framework, so you can select them as the content type for display page templates. When selected, the object is set as the template's mapping source, so you can easily map fragment fields to object fields to create flexible page displays for individual object entries.
+Published objects are integrated with the Info framework, so you can select them as the content type for display page templates. When selected, the object is set as the template's mapping source, so you can map fragment fields to object fields to create flexible page displays for individual object entries.
 
-Whenever users submit an application, Liferay gives assigns it a friendly URL that users can use to view the application's display page.
-To use this URL to view an application's data, you must create a default display page template for the Distributor Application object. Here you'll create this template and design it using a provided fragment composition.
+When users submit an application, Liferay gives assigns it a friendly URL for viewing the application's display page. To use this URL to view an application's data, you must create a default display page template for the Distributor Application object. Here you'll create this template and design it using a provided fragment composition.
 
 <!-- Refine intro. -->
 
@@ -22,9 +21,11 @@ To use this URL to view an application's data, you must create a default display
 
    ![Enter a name and select Distributor Application for content type.](./creating-a-display-page-for-distributor-applications/images/01.png)
 
-   By selecting the Distributor Application content type, you can easily map page fragments to Distributor Application fields and populate the page with the current application's values.
+   By selecting the Distributor Application content type, you can map page fragments to Distributor Application fields and populate the page with the current application's values.
 
 1. Drag and drop the *Display Page* fragment into the empty template.
+
+<!-- Duh. Please disregard the other comments on this. I can see now from the screenshot that all these fragments are in a Distributor Application category. Sorry about that; carry on! -Rich -->
 
    ![Drag and drop the Display Page fragment into the empty template.](./creating-a-display-page-for-distributor-applications/images/02.png)
 

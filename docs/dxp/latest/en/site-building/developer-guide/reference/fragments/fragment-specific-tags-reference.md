@@ -114,10 +114,13 @@ After you add the `lfr-editable` tag with the type `image` to a fragment, when y
 Most images can be handled like this, but to add an editable background image you must add an additional property to set the background image ID, `data-lfr-background-image-id`. The background image ID is set in the main `div` for the fragment and is the same as your editable image ID.
 
 ```html
-<div data-lfr-background-image-id="unique-id">
-   <lfr-editable id="unique-id" type="image">
-      <img src="...">
-   </lfr-editable>
+<div data-lfr-background-image-id="background-img-unique-id">
+   <h1 data-lfr-editable-id="h1-unique-id" data-lfr-editable-type="text">
+      Placeholder
+   </h1>
+   <p data-lfr-editable-id="p-unique-id" data-lfr-editable-type="text">
+      Placeholder
+   </p>
 </div>
 ```
 

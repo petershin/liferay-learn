@@ -35,15 +35,15 @@ Follow these steps to configure the reporting of log events in Liferay DXP’s l
 
 ![Enable this setting to write audit logs to the database.](./audit-configuration-reference/images/04.png)
 
-Enable this setting to write audit messages to the database. The audit portlet uses data from the database to render audit messages. Disabling it causes the portlet to be empty. 
+Enable this setting to write audit messages to the database. The interface uses data from the database to render audit messages. Disabling it causes the interface to be empty. 
 
 ## Audit Log Context
 
 ![Add additional audit information to Log4J logs.](./audit-configuration-reference/images/05.png)
 
-Use this to add audit information, in JSON format, to every log message written by Log4J. You need to enable it and configure the Log4J logging via an XML file. 
+Use this to add audit information, in JSON format, to every log message written by Log4J. You must enable it and configure the Log4J logging via an XML file. 
 
-When enabling *Use Incoming X-Request-ID*, a client can send the `X-Request-ID` header and Liferay tags every log statement with this value. This allows tracing of specific requests through multiple systems.
+When enabling *Use Incoming X-Request-ID*, a client can send the `X-Request-ID` header, and Liferay tags every log statement with this value. This allows tracing of specific requests through multiple systems.
 
 ## Configuring Audit Events for Scheduled Jobs
 
@@ -57,7 +57,7 @@ By default, Liferay's scheduled jobs don’t trigger audit events. To change it,
 
 1. Enable the checkbox for *Audit Scheduler Job Enabled*. 
 
-1. Click Save.
+1. Click *Save*.
 
 ## Related Topics
 

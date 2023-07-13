@@ -23,7 +23,7 @@ The following collection providers are available out-of-the-box and function the
 Some collection providers are created automatically by Liferay's applications. For example, 
 
 * When an object is published, Liferay creates a collection provider for it. See [Using the Collection Provider for Objects](../../building-applications/objects/displaying-object-entries.md#using-the-collection-provider-for-objects) for more information.
-* [Liferay DXP U81+] When a search blueprint is published, Liferay creates a collection provider for it. See [Collections with Search Blueprints](../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/collections-with-search-blueprints.md) for more information.
+* [Liferay DXP] When a search blueprint is published, Liferay creates a collection provider for it. See [Collections with Search Blueprints](../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/collections-with-search-blueprints.md) for more information.
 
 ## Related Items Collection Providers
 

@@ -3,7 +3,7 @@ uuid: f70fbde9-da00-4de9-b63c-524720b4222c
 ---
 # Collections with Search Blueprints
 
-{bdg-secondary}`7.4 U81+`
+{bdg-secondary}`7.4 U87+`
 {bdg-link-primary}`[Beta Feature](../../../../system-administration/configuring-liferay/feature-flags.md)`
 
 When you create a search blueprint, a [collection provider](../../../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md) is registered automatically. Assets matching the blueprint's query and configuration are added to the collection.
@@ -18,7 +18,7 @@ To use a search blueprint's collection provider,
 
 1. Enable the [beta feature flag](../../../../system-administration/configuring-liferay/feature-flags.md) for LPS-129412.
 
-   A blueprint's collection provider is created only when Liferay starts or the blueprint is published. If you have existing blueprints when you enable the feature flag, you must edit each blueprint and save it to register its collection provider.
+   A blueprint's collection provider is registered only when Liferay starts or the blueprint is published. If you have existing blueprints when you enable the feature flag, you must edit each blueprint and save it to register its collection provider.
 
 1. [Create a blueprint](./creating-and-managing-search-blueprints.md).
 

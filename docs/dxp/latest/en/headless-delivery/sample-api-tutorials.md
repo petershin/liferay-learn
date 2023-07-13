@@ -44,3 +44,8 @@ Follow the links below for sample API tutorials that include example requests an
 * [Custom Objects Using nestedFields to Query Related Entries](../building-applications/objects/objects-tutorials/using-apis/using-nestedfields-to-query-related-entries.md)
 * [Custom Objects Using Relationship REST APIs](../building-applications/objects/objects-tutorials/using-apis/using-relationship-rest-apis.md)
 * [Managing Objects with Headless APIs](../building-applications/objects/objects-tutorials/managing-objects-with-headless-apis.md)
+
+## Headless Delivery
+
+* [Batch Engine API Basics - Importing Data](./consuming-apis/batch-engine-api-basics-importing-data.md)
+* [Batch Engine API Basics - Exporting Data](./consuming-apis/batch-engine-api-basics-exporting-data.md)

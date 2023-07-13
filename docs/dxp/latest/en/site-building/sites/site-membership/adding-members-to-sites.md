@@ -13,12 +13,12 @@ The steps below show how to add users manually to sites and how to provide optio
 
 ## Managing Site Membership
 
-Administrators can manage site members from that site's *Site Membership* page.
+Administrators can manage site members from that site's Memberships page.
 
 1. Open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)), click on *Go to Other Site*, and select the site you want to manage. 
 1. Click on *People* &rarr; *Memberships* in the Product Menu.
 
-From here you can manage site memberships, organizations, and user group associations. You can learn more about those in [Users and Organizations](../../../users-and-permissions.md). On this page, you can see a list of all of the current users of the site and you can add or remove user memberships from the site.
+From here you can manage site memberships, organizations, and user group associations. You can learn more about those in [Users and Organizations](../../../users-and-permissions.md). On this page, you can see a list of all current site members and you can add or remove user memberships from the site.
 
 ![The current members of the site are displayed on the site Memberships page.](./adding-members-to-sites/images/01.png)
 
@@ -58,15 +58,15 @@ Roles grant permissions in Liferay Portal. Roles can be assigned for the entire 
 
 Follow these steps to assign site roles to users:
 
-1. Select a user or users and click *Assign Site Roles* (either through the Actions menu or the menu at the top). This take you to the *Assign Site Roles* screen.
-1. Select the roles that you want to assign to the selected user(s).
+1. Select a user or users and click *Assign Roles* (either through the Actions menu or the menu at the top). This takes you to the *Assign Roles* screen.
+1. Select the roles you want to assign to the selected user(s).
 1. Click *Done*.
 
     ![You can assign site roles to users.](./adding-members-to-sites/images/04.png)
 
 ## Joining Sites with the My Sites Application
 
-The My Sites Directory application lists the sites a user belongs to. This application is added to user [Dashboard pages](../personal-sites.md) by default. You can view the available open and restricted sites by adding the My Sites application to a page and accessing the *Available Sites* tab. You can request access to any of the sites you're not a member of by selecting the site's *Options* button (![Options](../../../images/icon-actions.png)) and clicking *Join*.
+The My Sites Directory application lists the sites a user belongs to. This application is added to User Profile Menu [Dashboard pages](../personal-sites.md) by default. You can view the available open and restricted sites by adding the My Sites application to a page and accessing the *Available Sites* tab. You can request access to any of the sites you're not a member of by selecting the site's *Options* button (![Options](../../../images/icon-actions.png)) and clicking *Join*.
 
 ![The My Sites Application displays the sites you're a member of and the ones you can join.](./adding-members-to-sites/images/05.png)
 

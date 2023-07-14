@@ -129,9 +129,9 @@ Now that you have the default mapping file, make the necessary changes to add th
    }
    ```
 
-   Adding settings in this configuration augment those available in the out of the box index settings. Find the default JSON settings in the source code's `index-settings.json` file. Here you're creating a new analyzer called `custom_liferay_analyzer_fr` which uses a new filter `my-synonym-filter-fr`. The `synonyms` array is empty for now: Synonym Sets created through the UI will appear here.
+   Adding settings in this configuration augments those available in the out-of-the-box index settings. Find the default JSON settings in the source code's `index-settings.json` file. Here you're creating a new analyzer called `custom_liferay_analyzer_fr` which uses a new filter `my-synonym-filter-fr`. The `synonyms` array is empty for now: Synonym Sets created through the UI will appear here.
 
-1. Modify the mappings file you copied. Leave the opening curly brace `{`, but delete lines 2 and 3 entirely (the line with the index name and the line with `mappings`):
+1. Modify the mappings file you copied. Leave the opening curly brace `{`, but delete lines two and three entirely (the line with the index name and the line with `mappings`):
 
    ```json
    "liferay-[COMPANY_ID]": {

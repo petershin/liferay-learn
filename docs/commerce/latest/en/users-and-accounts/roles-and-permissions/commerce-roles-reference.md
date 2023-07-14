@@ -94,7 +94,7 @@ This role is automatically assigned to all users of an account and grants basic 
 
 > Account Role
 
-This is a new account role introduced in Liferay to associate with supplier accounts. This role doesn't have any permissions associated with it but upon assigning this to a user, they also get assigned the regular role of supplier. This role scopes the access of the regular role to the correct channels and catalogs associated with the supplier account. If you directly use the regular role, it grants the supplier access to all catalogs and channels. See [Supplier](#supplier) role below. 
+This is a new account role introduced in Liferay to associate with supplier accounts. The role doesn't have any permissions associated with it, but upon assignment, a user is assigned the regular role of supplier. This role scopes the access of the regular role to the correct channels and catalogs associated with the supplier account. If you directly use the regular role, it grants the supplier access to all catalogs and channels. See [Supplier](#supplier) role below. 
 
 ### Buyer
 
@@ -145,7 +145,7 @@ You can use this role to oversee all the purchases made in the account. If there
 
 > Regular Role
 
-A supplier is associated with a channel and can manage products, catalogs, orders, price lists, promotions, warehouses and inventory associated to that channel. See below for a full list of supplier permissions. 
+A supplier is associated with a channel and can manage products, catalogs, orders, price lists, promotions, warehouses, and inventory associated to that channel. See below for a full list of supplier permissions. 
 
 | Permission                                                             | Description                                                      |
 | :--------------------------------------------------------------------- | :--------------------------------------------------------------- |

@@ -1,15 +1,16 @@
 ---
 uuid: 370f3ac0-72a0-4e7a-a731-36e094f220ac
 ---
+
 # Order Splitting
 
-Sometimes an order may contain multiple product lines or products fulfilled by different suppliers. In such cases, you may want to split the order into sub-orders that are fulfilled independently. 
+Sometimes an order has multiple product lines or products fulfilled by different suppliers. In such cases, you may want to split the order into independently fulfilled sub-orders. 
 
-To do this in Liferay, you can use order splitting. Order splitting splits a customer order into one or more supplier orders based on the catalog to which the order item belongs to. It works in conjunction with supplier roles. See [Supplier Account and Role]() for more information.
+Order splitting splits a customer order into one or more supplier orders based on the order item's catalog. It works in conjunction with supplier roles. See [Supplier Role](../suppliers/supplier-role.md) for more information.
 
 ## Creating the Order Splitting Object Action
 
-There are two ways to create the order splitting object action. The first way is to manually create the object action on the commerce order system object. The other way is to use the commerce health check that creates a pre-configured object action for you automatically. 
+There are two ways to create the order splitting object action. The first way is to create the object action manually on the commerce order system object. The other way is to use the commerce health check that creates a pre-configured object action for you automatically. 
 
 ### Creating the Order Splitting Object Action Manually
 
@@ -17,7 +18,7 @@ There are two ways to create the order splitting object action. The first way is
 
 1. Select *Commerce Order* and click *Actions*. 
 
-1. Click Add (![Add](../../images/icon-add.png)) and enter the following:
+1. Click *Add* (![Add](../../images/icon-add.png)):
 
    **Action Label:** Split Order By Catalog
 
@@ -27,9 +28,9 @@ There are two ways to create the order splitting object action. The first way is
 
 1. Click on the *Action Builder* tab. 
 
-1. Under *Trigger*, choose *On Order Status Update* from the dropdown. 
+1. Under Trigger, choose *On Order Status Update* from the drop-down. 
 
-1. Under *Condition*, activate the toggle and enter the expression: `orderStatus = 10`
+1. Under Condition, activate the toggle and enter the expression: `orderStatus = 10`
 
    Each order status corresponds to an integer. If you want to use a different order status, use any of the following integers: 
 
@@ -51,7 +52,7 @@ There are two ways to create the order splitting object action. The first way is
 
    This expression splits all orders from channel `67890` with the order type ID `12345` when it moves to the processing status.
 
-1. Under *Action*, select *Split Order by Catalog* from the dropdown.
+1. Under Action, select *Split Order by Catalog* from the drop-down.
 
 1. Click *Save*.
 
@@ -81,15 +82,15 @@ This enables order splitting for all orders that contain products from different
 
 ### Customer Order
 
-Customer order is the one placed by the customer containing products from multiple catalogs. Assume that a customer places an order with 2 products, each from a different catalog. It shows up as a single entry in the *Placed Orders* page. This is the customer order. This order gets split only when you accept the order from the *Orders* page. 
+A Customer order is placed by the customer containing products from multiple catalogs. If a customer places an order with two products, each from a different catalog, it appears as a single entry in the *Placed Orders* page. This is the customer order. This order gets split only when you accept the order from the *Orders* page. 
 
 ### Supplier Order
 
 Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Orders*. You can see a single entry for the customer order. 
 
-Select the order and click on *Accept Order*. This is when the object action on the commerce order object gets executed. Go back to the Orders page and you can see three entries now. One entry denoting the customer order and two entries denoting the supplier orders. The supplier orders are linked to their own channel. 
+Select the order and click *Accept Order*. Now the object action on the commerce order object is executed. Go back to the Orders page and you'll now see three entries: one entry for the customer order and two entries for the supplier orders. The supplier orders are linked to their own channel. 
 
-A supplier can only view and manage the supplier orders linked to their channel. If there were three products in the original order from three different catalogs, there would be a total of four entries (one customer order + three supplier orders). The customer does not see the supplier orders in the *Placed Orders* page. 
+Suppliers can only view and manage the supplier orders linked to their channels. If there were three products in the original order from three different catalogs, there would be a total of four entries (one customer order + three supplier orders). The customer does not see the supplier orders in the Placed Orders page. 
 
 ### Splitting Order Level Discounts
 
@@ -105,9 +106,9 @@ The above illustration is valid only for fixed discounts. For percentage discoun
 
 ## Fulfilling Split Orders
 
-From a customer perspective, there is no change in how information appears. Only administrators can view supplier orders from the *Placed Orders* screen after they’re split. The customer only sees the original order they placed and suppliers only see their own supplier orders. 
+From a customer perspective, there is no change in how information appears. Only administrators can view supplier orders from the Placed Orders screen after they’re split. Customers see only the original orders they placed, and suppliers only see their own supplier orders. 
 
-Updates made to the items in the supplier order are propagated back to the particular item in the customer order as well. For example, if one supplier ships their order and updates the tracking number for one of the shipments, this is visible to the customer for that product. The order status moves from processing to partially shipped. When both supplier orders are delivered, the original customer order is completed.
+Updates made to the items in the supplier order are propagated back to the particular item in the customer order as well. For example, if one supplier ships an order and updates the tracking number for one of the shipments, this is visible to the customer for that product. The order status moves from processing to partially shipped. When both supplier orders are delivered, the original customer order is completed.
 
 ## Related Topics
 

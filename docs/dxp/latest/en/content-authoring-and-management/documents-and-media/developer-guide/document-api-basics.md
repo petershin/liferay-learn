@@ -307,7 +307,7 @@ Code:
    :language: bash
 ```
 
-The first form data part (following `-F`) specifies a new value for the `Document`'s `description` field. The second form data part specifies the updated file to upload. Note, both are not required. Just the file itself or just the document's metadata can be patched. 
+The first form data part (following `-F`) specifies a new value for the `Document`'s `description` field. The second form data part specifies the updated file to upload. Note, both are not required. You can patch only the file or only the document's metadata. 
 
 ### Document_PATCH_ById.java
 

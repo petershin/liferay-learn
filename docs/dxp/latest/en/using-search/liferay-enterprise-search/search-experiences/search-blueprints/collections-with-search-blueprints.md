@@ -1,6 +1,7 @@
 ---
 uuid: f70fbde9-da00-4de9-b63c-524720b4222c
 ---
+
 # Collections with Search Blueprints
 
 {bdg-secondary}`7.4 U87+`
@@ -9,7 +10,7 @@ uuid: f70fbde9-da00-4de9-b63c-524720b4222c
 When you create a search blueprint, a [collection provider](../../../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md) is registered automatically. Assets matching the blueprint's query and configuration are added to the collection.
 
 ```{important}
-Only content registered with Liferay's [Asset Framework](link to asset-framework.md) is returned by the blueprints collection provider.
+Only content registered with Liferay's [Asset Framework](../../../../building-applications/data-frameworks/asset-framework.md) is returned by the blueprints collection provider.
 ```
 
 ![Search blueprints are registered as collection providers.](./collections-with-search-blueprints/images/01.png)
@@ -48,7 +49,7 @@ Create calendar events and configure a blueprint to return only events that happ
 
 1. From the Applications menu (![Global Menu](../../../../images/icon-applications-menu.png)), open _Blueprints_. 
 
-1. In the Elements, tab, add a new custom element with this JSON:
+1. In the Elements tab, add a new custom element with this JSON:
 
    ```json
    {
@@ -98,11 +99,11 @@ Create calendar events and configure a blueprint to return only events that happ
 
 1. From the site menu (![Site Menu](../../../../images/icon-product-menu.png)), add a content page called Upcoming Events.
 
-1. Add the Collection Display fragment to the page, and select the _Future Calendar Events Provider_ Collection Provider.
+1. Add the Collection Display fragment to the page and select the _Future Calendar Events Provider_ Collection Provider.
 
    Configure the collection display fragment to show a bullet list.
 
-1. Publish the page and the future calendar events appear.
+1. Publish the page, and the future calendar events appear.
 
 ![Only the future events are displayed in the collection display fragment.](./collections-with-search-blueprints/images/02.png)
 

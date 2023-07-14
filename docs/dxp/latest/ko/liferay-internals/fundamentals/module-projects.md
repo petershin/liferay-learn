@@ -1,6 +1,6 @@
 # 모듈 프로젝트
 
-Liferay 애플리케이션 및 사용자 지정은 Java 코드를 포함하는 [OSGi 모듈](https://www.osgi.org/resources/what-is-osgi/): `.jar` 파일과 API 게시 및 사용을 위한 일부 추가 구성입니다.
+Liferay 애플리케이션 및 사용자 지정은 Java 코드를 포함하는 [OSGi 모듈](https://www.osgi.org/resources/what-is-osgi/) : `.jar` 파일과 API 게시 및 사용을 위한 일부 추가 구성입니다.
 
 모듈 프로젝트는 다음 세 가지로 구성됩니다.
 
@@ -226,7 +226,7 @@ liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 ```{literalinclude} ./module-projects/resources/liferay-k8s2.zip/k8s2-api/bnd.bnd
 ```
 
-모듈의 이름은 *Acme K8S2 API*입니다. 그것의 상징적인 이름---고유성을 보장하는 이름---은 `com.acme.k8s2.api`입니다. 그 [시맨틱 버전](./semantic-versioning.md)이 다음에 선언됩니다. 마지막으로 모듈 [*exports*](./exporting-packages.md) Java 패키지 `com.acme.k8s2`는 다른 모듈에서 패키지를 사용할 수 있도록 합니다. `b [bundle ID]` Gogo Shell 명령을 실행했을 때 위에서 패키지 내보내기를 확인했습니다.
+모듈의 이름은 **Acme K8S2 API** 입니다. 그것의 상징적인 이름---고유성을 보장하는 이름---은 `com.acme.k8s2.api`입니다. 그 [시맨틱 버전](./semantic-versioning.md)이 다음에 선언됩니다. 마지막으로 모듈 [**exports**](./exporting-packages.md) Java 패키지 `com.acme.k8s2`는 다른 모듈에서 패키지를 사용할 수 있도록 합니다. `b [bundle ID]` Gogo Shell 명령을 실행했을 때 위에서 패키지 내보내기를 확인했습니다.
 
 #### 생성된 메타데이터
 
@@ -258,7 +258,7 @@ Bnd는 `bnd.bnd` 파일의 모든 헤더를 전파하고 더 많은 헤더와 �
 
 이제 모듈 프로젝트의 모양, 빌드 및 배포 방법, 런타임에 모듈을 검사하는 방법을 알게 되었습니다.
 
-모듈은 `Greeter` API와 같은 API를 통해 서로의 기능을 활용합니다. Liferay는 OSGi 서비스를 사용하여 APIS를 정의, 구현 및 사용합니다. 다음으로 [OSGi 서비스로서의 API](./apis-as-osgi-services.md)는 OSGi 서비스를 사용하여 `Greeter` API를 *구현*하는 방법을 보여줍니다.
+모듈은 `Greeter` API와 같은 API를 통해 서로의 기능을 활용합니다. Liferay는 OSGi 서비스를 사용하여 APIS를 정의, 구현 및 사용합니다. 다음으로 [OSGi 서비스로서의 API](./apis-as-osgi-services.md)는 OSGi 서비스를 사용하여 `Greeter` API를 **구현** 하는 방법을 보여줍니다.
 
 ```{참고}
 모듈 수명 주기에 대한 자세한 내용은 [모듈 수명 주기](../architecture/module-lifecycle.md)를 참조하세요.

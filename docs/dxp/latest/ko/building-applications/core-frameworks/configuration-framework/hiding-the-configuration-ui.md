@@ -1,6 +1,6 @@
 # 구성 UI 숨기기
 
-Liferay는 [인터페이스가](./setting-and-accessing-configurations.html#creating-the-configuration-interface)된 후 자동으로 구성 UI를 생성합니다. 그러나 UI를 숨기려는 특정 사용 사례가 있을 수 있습니다. 예를 들어 관리자가 특정 구성에 액세스하는 것을 원하지 않거나 특정 기준에 따라 구성을 숨기고 싶을 수 있습니다. 구성 UI를 숨기려면 두 가지 옵션이 있습니다.
+Liferay는 [인터페이스가](./setting-and-accessing-configurations.html#creating-the-configuration-interface) 된 후 자동으로 구성 UI를 생성합니다. 그러나 UI를 숨기려는 특정 사용 사례가 있을 수 있습니다. 예를 들어 관리자가 특정 구성에 액세스하는 것을 원하지 않거나 특정 기준에 따라 구성을 숨기고 싶을 수 있습니다. 구성 UI를 숨기려면 두 가지 옵션이 있습니다.
 
 * `generateUI` 주석 속성 사용
 * 구성 가시성 인터페이스 사용
@@ -49,7 +49,7 @@ Then, follow these steps.
     STARTED com.acme.g8v3.impl_1.0.0 [1650]
     ```
 
-1. 브라우저를 `https://localhost:8080` 로 열고 *제어판* &rarr; *구성* &rarr; *시스템 설정*로 이동합니다. 플랫폼에서 *Third Party*클릭합니다. 왼쪽의 *G8V3 Able Configuration* 을 클릭합니다. Enable G8V3 Baker Configuration의 확인란을 선택합니다. *업데이트* 버튼을 클릭합니다.
+1. 브라우저를 `https://localhost:8080` 로 열고 **제어판** &rarr; **구성** &rarr; **시스템 설정** 로 이동합니다. 플랫폼에서 **Third Party** 클릭합니다. 왼쪽의 **G8V3 Able Configuration** 을 클릭합니다. Enable G8V3 Baker Configuration의 확인란을 선택합니다. **업데이트** 버튼을 클릭합니다.
 
     ![확인란을 클릭하면 다른 구성 UI가 표시됩니다.](./hiding-the-configuration-ui/images/01.png)
 

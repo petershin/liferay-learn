@@ -84,7 +84,7 @@ API 클래스는 공용 인터페이스, 유틸리티 및 상수를 정의합니
 | `W9B7EntryTable` | 엔터티의 테이블을 나타냅니다. |
 | 'W9B7EntryWrapper' | 래퍼, 'W9B7Entry'를 래핑합니다. 이 클래스는 [엔터티 사용자 정의](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)로 확장됩니다. |
 | 'W9B7EntryPersistence' | `create`, `remove`, `countAll`, `find`, `findAll` 등과 같은 엔터티에 대한 CRUD 메서드를 정의하는 지속성 인터페이스 |
-| `W9B7EntryUtil` | 'W9B7EntryPersistenceImpl'을 래핑하고 CRUD 작업을 위해 데이터베이스에 대한 직접 액세스를 제공하는 지속성 유틸리티 클래스입니다. 이 유틸리티는 서비스 계층에서만 사용해야 합니다. 포틀릿 클래스에서 [`@Reference` 주석](../../../../liferay-internals/fundamentals/using-an-osgi-service. md). |
+| `W9B7EntryUtil` | 'W9B7EntryPersistenceImpl'을 래핑하고 CRUD 작업을 위해 데이터베이스에 대한 직접 액세스를 제공하는 지속성 유틸리티 클래스입니다. 이 유틸리티는 서비스 계층에서만 사용해야 합니다. 포틀릿 클래스에서 [`@Reference` 주석](../../../../liferay-internals/fundamentals/using-an-osgi-service. md) . |
 | `W9B7EntryLocalService` | 로컬 서비스 인터페이스. |
 | `W9B7EntryLocalServiceUtil` | `W9B7EntryLocalServiceImpl`을 래핑하는 로컬 서비스 유틸리티 클래스입니다. |
 | `W9B7EntryLocalServiceWrapper` | 'W9B7EntryLocalService'를 구현하는 로컬 서비스 래퍼입니다. 이 클래스는 [엔터티의 로컬 서비스 사용자 지정](../../../../liferay-internals/extending-liferay/creating-service-wrappers.md)으로 확장됩니다. |

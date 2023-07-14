@@ -12,8 +12,8 @@ Liferay DXP/Portal은 언어 번역을 사용하여 기본 로케일 및 기타 
 
 소스에서:
 
-* [`liferay-[dxp|portal]/portal-impl/src/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-impl/src/content)
-* [`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)
+* [`liferay-[dxp|portal]/portal-impl/src/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-impl/src/content)
+* [`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)
 
 번들:
 
@@ -47,7 +47,7 @@ category.cms=Content Management
 
 Liferay DXP/Portal 7.4+에서는 메타데이터를 사용하여 재정의를 선언할 수 있습니다. 이전 버전에서는 Java 클래스가 재정의를 선언합니다.
 
-버전이 7.4 이전인 경우 [이전 버전에서 재정의](#overriding-in-earlier-versions)로 건너뜁니다. 그렇지 않으면 계속 읽으십시오.
+버전이 7.4 이전인 경우 [이전 버전에서 재정의](#overriding-in-earlier-versions) 로 건너뜁니다. 그렇지 않으면 계속 읽으십시오.
 
 ## 7.4+용 예제 배포
 
@@ -253,7 +253,7 @@ Provide-Capability:\
 새 언어 번역 값을 보려면 모듈을 배포하십시오.
 
 ```{note}
-DXP 7.4+로 업그레이드할 준비가 되면 언어 번역 재정의 모듈을 계속 사용할 수 있습니다. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 설명 [above](#declare-the-override-in-the-bnd-file)으로 지정하여 모듈을 단순화할 수 있습니다.
+DXP 7.4+로 업그레이드할 준비가 되면 언어 번역 재정의 모듈을 계속 사용할 수 있습니다. 선택적으로 `ResourceBundle` 클래스를 제거하고 `bnd.bnd` 파일의 `Provide-Capability` 헤더를 설명 [above](#declare-the-override-in-the-bnd-file) 으로 지정하여 모듈을 단순화할 수 있습니다.
 ```
 
 ## 관련 정보

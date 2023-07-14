@@ -2,7 +2,7 @@
 
 테마 기여자는 CSS 및 JavaScript 리소스를 포함하고 모든 페이지에 적용하는 모듈입니다. 특정 테마와 독립적이며 테마 또는 서로 간에 특정 스타일을 재정의하도록 구성할 수 있습니다. 페이지에 별도의 UI 리소스를 포함하고 특정 테마에 포함하려면 대신 [themelet](./bundling-and-installing-resources-into-your-theme-via-themelets.md) 사용하십시오.
 
-Liferay Portal/DXP의 많은 메뉴는 [Site Menu](../../../../../getting-started/navigating-dxp.md#site-menu)과 같은 테마 기여자로 패키징됩니다.
+Liferay Portal/DXP의 많은 메뉴는 [Site Menu](../../../../../getting-started/navigating-dxp.md#site-menu) 과 같은 테마 기여자로 패키징됩니다.
 
 ![사이트 메뉴는 테마 기여자 모듈로 구현됩니다.](./bundling-independent-ui-resources-via-theme-contributors/images/01.png)
 

@@ -8,23 +8,23 @@ OSGi 서비스를 재정의하려면 다음 단계를 따르세요.
 
 1. 다음 서비스 세부 정보를 수집합니다.
 
-   * **서비스 유형**: 재정의 중인 서비스에 의해 구현된 인터페이스
+   * **서비스 유형** : 재정의 중인 서비스에 의해 구현된 인터페이스
 
-   * **서비스의 클래스 이름**: 기존 서비스의 전체 이름
+   * **서비스의 클래스 이름** : 기존 서비스의 전체 이름
 
 1. 해당하는 경우 서비스를 참조하는 구성 요소에 대한 다음 세부 정보를 수집합니다.
 
-   * **구성 요소 이름**: 재정의 중인 서비스를 참조하는 구성 요소의 전체 이름
+   * **구성 요소 이름** : 재정의 중인 서비스를 참조하는 구성 요소의 전체 이름
 
-   * **참조 이름**: 대상 서비스를 참조하는 필드 이름
+   * **참조 이름** : 대상 서비스를 참조하는 필드 이름
 
-   * **참조 정책**: 참조 여부 `정적` 또는 `동적`
+   * **참조 정책** : 참조 여부 `정적` 또는 `동적`
 
-   * **참조 정책-옵션**: `정책-옵션` 이 `욕심` 또는 `꺼림`
+   * **참조 정책-옵션** : `정책-옵션` 이 `욕심` 또는 `꺼림`
 
-   * **Cardinality**: 참조가 바인딩할 수 있고 바인딩해야 하는 서비스 인스턴스의 수
+   * **Cardinality** : 참조가 바인딩할 수 있고 바인딩해야 하는 서비스 인스턴스의 수
 
-   서비스의 [참조 정책](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicy.html), [참조 정책 옵션](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicyOption.html)및 [카디널리티](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferenceCardinality.html) 새 서비스를 채택하기 위한 구성 요소의 조건을 함께 결정합니다.
+   서비스의 [참조 정책](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicy.html) , [참조 정책 옵션](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicyOption.html) 및 [카디널리티](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferenceCardinality.html) 새 서비스를 채택하기 위한 구성 요소의 조건을 함께 결정합니다.
 
 1. 재정의 중인 서비스에서 구현한 것과 동일한 인터페이스를 사용하는 새 서비스를 만듭니다.
 
@@ -114,9 +114,9 @@ References:   (total 0)
 
 이 축약된 출력에는 `S1J6AbleImpl`에 대한 다음 서비스 세부 정보가 나열됩니다.
 
-* **서비스 유형**: `S1J6AbleImpl` 구현 `S1J6` 인터페이스,`com.acme.s1j6.S1J6`.
+* **서비스 유형** : `S1J6AbleImpl` 구현 `S1J6` 인터페이스,`com.acme.s1j6.S1J6`.
 
-* **서비스의 클래스 이름**: 서비스의 전체 이름은 `com.acme.s1j6.able.internal.S1J6AbleImpl`입니다.
+* **서비스의 클래스 이름** : 서비스의 전체 이름은 `com.acme.s1j6.able.internal.S1J6AbleImpl`입니다.
 
 또한 서비스가 `com.acme.s1j6.web:1.0.0` 번들 내의 구성 요소에서 사용됨을 나타냅니다. 구성 요소의 참조 구성 세부 정보를 보려면 구성 요소의 전체 이름과 함께 `scr:info` 명령을 실행합니다.
 
@@ -142,13 +142,13 @@ References:   (total 1)
 
 이 축약된 출력에는 다음 참조 구성 세부 정보가 나열됩니다.
 
-**Reference Name**: `S1J6AbleImpl` 서비스를 참조하는 필드의 이름은 `_s1j6`입니다.
+**Reference Name** : `S1J6AbleImpl` 서비스를 참조하는 필드의 이름은 `_s1j6`입니다.
 
-**참조 정책**: 구성 요소의 정책은 `정적` (기본값)입니다.
+**참조 정책** : 구성 요소의 정책은 `정적` (기본값)입니다.
 
-**참조 정책-옵션**: 구성 요소의 정책 옵션은 `greedy`입니다.
+**참조 정책-옵션** : 구성 요소의 정책 옵션은 `greedy`입니다.
 
-**카디널리티**: 해당 카디널리티는 필수 및 단항입니다(즉, `1..1`).
+**카디널리티** : 해당 카디널리티는 필수 및 단항입니다(즉, `1..1`).
 
 일부 참조 구성은 새롭거나 더 높은 순위의 서비스에 자동으로 바인딩되지만 일부는 서버를 다시 시작해야 합니다. `S1J6Portlet`의 참조 구성은 정적이고 탐욕적이며 필수적이고 단항이므로 새로운 상위 서비스에 바인딩하기 전에 서버를 다시 시작할 필요가 없습니다. 새롭거나 더 높은 순위의 서비스를 사용할 수 있을 때 다양한 참조 구성이 구성 요소의 동작에 미치는 영향에 대한 자세한 내용은 [OSGi 설명서](http://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.component.html#service.component-policy.option.action) 참조하십시오.
 

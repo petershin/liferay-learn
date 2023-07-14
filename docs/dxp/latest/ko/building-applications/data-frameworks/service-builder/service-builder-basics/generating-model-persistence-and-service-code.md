@@ -120,7 +120,7 @@ y7g4-service
 | `이름` | 인스턴스의 이름(문자열). |
 | `설명` | 인스턴스의 설명(문자열). |
 
-`service.xml` 요소에 대한 자세한 내용은 [Liferay Service Builder DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html)를 참조하세요.
+`service.xml` 요소에 대한 자세한 내용은 [Liferay Service Builder DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html) 를 참조하세요.
 
 ## 지속성 코드 생성
 
@@ -228,7 +228,7 @@ SQL 스크립트 및 지속성 구성은 `resources/META-INF` 폴더에 생성�
 </hibernate-mapping>
 ```
 
-`module-hbm.xml` 파일은 `Y7G4EntryImpl` 개체를 `Y7G4_Y7G4Entry` 테이블에 매핑합니다. Hibernate와의 매핑에 대한 자세한 내용은 [Hibernate](https://hibernate.org)참조하십시오.
+`module-hbm.xml` 파일은 `Y7G4EntryImpl` 개체를 `Y7G4_Y7G4Entry` 테이블에 매핑합니다. Hibernate와의 매핑에 대한 자세한 내용은 [Hibernate](https://hibernate.org) 참조하십시오.
 
 `tables.sql` 스크립트는 `Y7G4_Y7G4Entry` 테이블을 지정합니다.
 
@@ -403,7 +403,7 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
     **암호:** `테스트`
 
-1. *제어판* &rarr; *서버 관리* &rarr; *스크립트*에서 스크립트 콘솔로 이동합니다.
+1. **제어판** &rarr; **서버 관리** &rarr; **스크립트** 에서 스크립트 콘솔로 이동합니다.
 
 1. 다음 스크립트를 실행하여 항목을 추가합니다.
 

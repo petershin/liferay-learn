@@ -8,7 +8,7 @@
 
 동의어 집합은 동일한 의미를 가진 단어 또는 구의 그룹입니다. 관리 사용자는 동의어 집합을 생성합니다. 검색 페이지 최종 사용자가 키워드나 구를 검색하면 세트의 동의어도 검색됩니다.
 
-예를 들어 사용자가 "US"라는 단어를 검색할 수 있습니다. 아마도 사용자는 *America*, *USA*, *United States*등과 같은 동의어도 포함된 검색 결과를 원할 것입니다. 동의어 집합을 생성하면 사용자가 검색을 최대한 활용할 수 있습니다.
+예를 들어 사용자가 "US"라는 단어를 검색할 수 있습니다. 아마도 사용자는 **America** , **USA** , **United States** 등과 같은 동의어도 포함된 검색 결과를 원할 것입니다. 동의어 집합을 생성하면 사용자가 검색을 최대한 활용할 수 있습니다.
 
 ## 요구 사항 및 제한 사항
 
@@ -24,19 +24,19 @@ Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/e
 
 새 동의어 집합을 만들려면
 
-1. 전역 메뉴(![Global Menu](../../images/icon-applications-menu.png))에서 *응용 프로그램* &rarr; *검색 조정* &rarr; *동의어*로 이동합니다.
+1. 전역 메뉴(![Global Menu](../../images/icon-applications-menu.png))에서 **응용 프로그램** &rarr; **검색 조정** &rarr; **동의어** 로 이동합니다.
 
    ![애플리케이션 메뉴에서 동의어 섹션으로 이동합니다.](synonym-sets/images/01.png)
 
-1. __ 추가 아이콘(![Click on the add icon](../../images/icon-add.png))을 클릭하여 새 동의어 집합을 추가합니다.
+1. **_** 추가 아이콘(![Click on the add icon](../../images/icon-add.png))을 클릭하여 새 동의어 집합을 추가합니다.
 
-1. 세트에 동의어 목록을 입력하십시오. 동의어 입력은 *Enter* 을 클릭하거나 쉼표를 입력하여 수행됩니다.
+1. 세트에 동의어 목록을 입력하십시오. 동의어 입력은 **Enter** 을 클릭하거나 쉼표를 입력하여 수행됩니다.
 
    ![다른 동의어를 세트에 입력하십시오.](synonym-sets/images/02.png)
 
-1. 동의어 옆에 있는 *X* 을 클릭하면 동의어를 삭제할 수 있습니다. 세트를 마치면 *게시*클릭합니다.
+1. 동의어 옆에 있는 **X** 을 클릭하면 동의어를 삭제할 수 있습니다. 세트를 마치면 **게시** 클릭합니다.
 
-1. 세트를 편집하거나 삭제하려면 _옵션_ 아이콘(![Click on the options icon.](../../images/icon-options.png))을 클릭하고 *편집* 또는 *삭제*클릭합니다.
+1. 세트를 편집하거나 삭제하려면 **옵션** 아이콘(![Click on the options icon.](../../images/icon-options.png))을 클릭하고 **편집** 또는 **삭제** 클릭합니다.
 
    ![변경하려면 편집 또는 삭제를 클릭하십시오.](synonym-sets/images/03.png)
 
@@ -54,7 +54,7 @@ Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/e
 
 > **가용성: Liferay DXP 7.3 FP2+ 및 Liferay DXP 7.2 FP13+**
 
-기본적으로 Synonyms Sets는 동의어를 [영어 및 스페인어로만 지원합니다](#requirements-and-limitations). 다른 언어에 대한 지원을 추가하려면 아래 구성 단계를 사용하십시오.
+기본적으로 Synonyms Sets는 동의어를 [영어 및 스페인어로만 지원합니다](#requirements-and-limitations) . 다른 언어에 대한 지원을 추가하려면 아래 구성 단계를 사용하십시오.
 
 - 기본 [프랑스어](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) 분석기를 필요한 변경 사항으로 다시 구현하여 [사용자 지정 분석기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) 생성합니다(파이프라인의 추가 [동의어 그래프 토큰 필터](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-synonym-graph-tokenfilter.html) 포함).
 - 커넥터 구성의 추가 색인 구성을 사용하여 사용자 정의 분석기 정의를 색인 설정에 추가하십시오.
@@ -73,7 +73,7 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 1. 아카이브 관리자로 추출된 JAR 파일을 열고 `META-INF/mappings`로 이동합니다.
 1. `liferay-type-mappings.json` 이라는 파일이 필요한 리소스입니다. 파일 시스템에 압축을 풉니다.
 
-소스 코드에서 매핑을 가져오려면 Liferay DXP 소스 코드 액세스가 [인 경우](https://help.liferay.com/hc/en-us/articles/360045389291),
+소스 코드에서 매핑을 가져오려면 Liferay DXP 소스 코드 액세스가 [인 경우](https://help.liferay.com/hc/ko/articles/360045389291) ,
 
 1. 소스 코드 저장소에 대한 액세스 권한이 있으면 위 문서의 단계에 따라 수정팩 레벨에 대한 태그를 찾으십시오.
 1. `module/apps/portal-search-elasticsearch(6 또는 7)/portal-search-elasticsearch(6 또는 7)-impl/src/main/resources/META-INF/mappings`로 이동합니다.
@@ -179,7 +179,7 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 
 1. 필터 이름 설정에 사용자 지정 필터 이름(예: `custom-synonym-filter-fr`)을 추가하고 구성을 저장합니다.
 
-1. 전체 재색인 수행: 제어판 &rarr; 검색 &rarr; 색인 작업에서 _모든 검색 색인 재색인을 클릭합니다._
+1. 전체 재색인 수행: 제어판 &rarr; 검색 &rarr; 색인 작업에서 **모든 검색 색인 재색인을 클릭합니다.**
 
    사용자 지정 매핑이 성공적으로 적용되었는지 확인하려면 필드 매핑 탭으로 이동하여 인덱스(예: `liferay-20101`)를 선택하고 오른쪽 패널에서 `template_fr` 찾습니다.
 
@@ -187,13 +187,13 @@ Liferay DXP 번들에서 매핑을 얻으려면,
 
 새 필터가 작동하는지 확인하려면
 
-1. 동의어 애플리케이션으로 이동: 전역 메뉴의 애플리케이션 탭에서 _동의어_ (검색 조정 아래)을 클릭합니다.
+1. 동의어 애플리케이션으로 이동: 전역 메뉴의 애플리케이션 탭에서 **동의어**(검색 조정 아래)을 클릭합니다.
 
 1. 새 동의어 집합 만들기: `maison, logement`.
 
-1. 영어 및 프랑스어 번역으로 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 _maison_ 을 추가합니다.
+1. 영어 및 프랑스어 번역으로 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 **maison** 을 추가합니다.
 
-1. 영어 및 프랑스어 번역으로 또 다른 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 _logement_ 을 추가합니다.
+1. 영어 및 프랑스어 번역으로 또 다른 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 **logement** 을 추가합니다.
 
-1. 프랑스어 로캘로 전환하고 _maison_을 검색합니다. 두 기사 모두 반환됩니다.
+1. 프랑스어 로캘로 전환하고 **maison** 을 검색합니다. 두 기사 모두 반환됩니다.
 

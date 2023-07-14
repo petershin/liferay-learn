@@ -4,7 +4,7 @@
 
 개체 정의에 대한 항목 기록 [](../../creating-and-managing-objects/auditing-object-definition-events.md#enabling-entry-history) 활성화하면 REST API와 함께 `nestedFields` 매개변수를 사용하여 항목 이벤트를 감사할 수 있습니다. GET 요청 경로에 `nestedFields=auditEvents` 추가합니다(예: `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`).
 
-시작하려면 새 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance)하고 제공된 자습서 코드를 [준비](#preparing-the-sample-code)하십시오. 그런 다음 [스크립트를 실행](#using-the-sample-code)하여 항목을 만들고 업데이트하고 `nestedFields` 매개변수를 사용하여 해당 변경 사항을 쿼리합니다.
+시작하려면 새 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance) 하고 제공된 자습서 코드를 [준비](#preparing-the-sample-code) 하십시오. 그런 다음 [스크립트를 실행](#using-the-sample-code) 하여 항목을 만들고 업데이트하고 `nestedFields` 매개변수를 사용하여 해당 변경 사항을 쿼리합니다.
 
 ```{important}
 REST API를 사용하여 항목의 기록을 보려면 항목에 대한 '보기' 및 '객체 항목 기록' 권한이 모두 필요합니다. [권한 프레임워크 통합](../../understanding-object-integrations/permissions-framework-integration.md)을 참조하십시오.
@@ -19,19 +19,19 @@ REST API를 사용하여 항목의 기록을 보려면 항목에 대한 '보기'
 
 ### 영구 감사 메시지 프로세서 활성화
 
-1. *전역 메뉴*(![전역 메뉴](../../../../images/icon-applications-menu.png)))를 엽니다. *제어판* 탭, &rarr; *환경 설정*.
+1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png)))를 엽니다. **제어판** 탭, &rarr; **환경 설정** .
 
-1. 보안에서 *감사*를 클릭하고 *영구 메시지 감사 메시지 프로세서* 탭으로 이동합니다.
+1. 보안에서 **감사** 를 클릭하고 **영구 메시지 감사 메시지 프로세서** 탭으로 이동합니다.
 
-1. *활성화*를 체크합니다.
+1. **활성화** 를 체크합니다.
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
     ![Persistent Message Audit Message Processor 탭으로 이동하여 Enabled를 확인합니다.](./using-nestedfields-to-audit-entry-history/images/01.png)
 
 ### 개체 정의 만들기
 
-1. *글로벌 메뉴*(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 다음 클릭 *사물*.
+1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 클릭 **사물** .
 
 1. [만들기](../../creating-and-managing-objects/creating-objects.md#creating-object-drafts) 개체 초안을 만듭니다.
 
@@ -47,9 +47,9 @@ REST API를 사용하여 항목의 기록을 보려면 항목에 대한 '보기'
     | :--- | :--- | :--- | :--- |
     | `이름` | `이름` | 텍스트 | &#10004; |
 
-1. 세부 정보 탭에서 *Enable Entry History*를 토글합니다.
+1. 세부 정보 탭에서 **Enable Entry History** 를 토글합니다.
 
-1. 개체를 [게시](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)합니다.
+1. 개체를 [게시](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 합니다.
 
 게시되면 Headless API를 통해 개체에 액세스할 수 있습니다.
 

@@ -41,11 +41,11 @@ MVC 렌더링 명령은 렌더링할 페이지를 처리하는 클래스입니�
     STARTED com.acme.a4p1.web_1.0.0
     ```
 
-1. *Samples* 카테고리의 *A4P1 Portlet* 위젯을 위젯 페이지에 추가하십시오. A4P1 포틀릿이 나타납니다.
+1. **Samples** 카테고리의 **A4P1 Portlet** 위젯을 위젯 페이지에 추가하십시오. A4P1 포틀릿이 나타납니다.
    
    ![페이지에 A4P1 포틀릿을 추가했습니다.](./mvc-render-command/images/01.png)
 
-1. *Go to Baker*클릭하여 MVC 렌더링 명령을 호출하여 Baker 보기를 방문하십시오. `A4P1BakerMVCRenderCommand` `render` 메서드 호출을 기록하고 Baker 보기를 렌더링합니다.
+1. **Go to Baker** 클릭하여 MVC 렌더링 명령을 호출하여 Baker 보기를 방문하십시오. `A4P1BakerMVCRenderCommand` `render` 메서드 호출을 기록하고 Baker 보기를 렌더링합니다.
 
     ```bash
     [A4P1BakerMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
@@ -53,7 +53,7 @@ MVC 렌더링 명령은 렌더링할 페이지를 처리하는 클래스입니�
 
 ![Baker 보기를 렌더링하고 있습니다.](./mvc-render-command/images/02.png)
 
-1. 다른 MVC 렌더링 명령을 호출하고 *Go to Able*을 클릭하여 Able 보기를 다시 방문하십시오. `A4P1AbleMVCRenderCommand` `render` 메서드 호출을 기록하고 Able 보기를 다시 렌더링합니다.
+1. 다른 MVC 렌더링 명령을 호출하고 **Go to Able** 을 클릭하여 Able 보기를 다시 방문하십시오. `A4P1AbleMVCRenderCommand` `render` 메서드 호출을 기록하고 Able 보기를 다시 렌더링합니다.
 
     ```bash
     [A4P1AbleMVCRenderCommand:26] Invoking #render(RenderRequest, RenderResponse)
@@ -63,7 +63,7 @@ MVC 렌더 명령이 작동하는 것을 보았습니다. 이제 그들이 어�
 
 ## 포틀릿 검사
 
-`A4P1Portlet` 최소 [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java)입니다.
+`A4P1Portlet` 최소 [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java) 입니다.
 
 ```{literalinclude} ./mvc-render-command/resources/liferay-a4p1.zip/a4p1-web/src/main/java/com/acme/a4p1/web/internal/portlet/A4P1Portlet.java
 :language: java
@@ -88,7 +88,7 @@ MVC 렌더 명령이 작동하는 것을 보았습니다. 이제 그들이 어�
 
 ## MVCRenderCommand 클래스 검사
 
-MVC Render Command 클래스는 [`MVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.java) 직접 구현하거나 [`BaseMVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCRenderCommand.java)확장할 수 있습니다. `A4P1AbleMVCRenderCommand` `MVCRenderCommand`직접 구현합니다. 다음은 `A4P1AbleMVCRenderCommand`입니다.
+MVC Render Command 클래스는 [`MVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.java) 직접 구현하거나 [`BaseMVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCRenderCommand.java) 확장할 수 있습니다. `A4P1AbleMVCRenderCommand` `MVCRenderCommand`직접 구현합니다. 다음은 `A4P1AbleMVCRenderCommand`입니다.
 
 ```{literalinclude} ./mvc-render-command/resources/liferay-a4p1.zip/a4p1-web/src/main/java/com/acme/a4p1/web/internal/portlet/action/A4P1AbleMVCRenderCommand.java
 :language: java

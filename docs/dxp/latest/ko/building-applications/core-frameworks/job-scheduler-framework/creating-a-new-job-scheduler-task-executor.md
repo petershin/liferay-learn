@@ -4,11 +4,11 @@
 
 다음 단계에 따라 `DispatchTaskExecutor` 인터페이스 구현을 직접 만드십시오.
 
-1. **OSGI 구성 요소**: `@Component` 주석을 사용하여 모듈을 OSGi 프레임워크 내의 구성 요소로 선언합니다.
+1. **OSGI 구성 요소** : `@Component` 주석을 사용하여 모듈을 OSGi 프레임워크 내의 구성 요소로 선언합니다.
 
-1. **서비스**: @Component `주석 내에서 모듈을 <code>DispatchTaskExecutor.class` 서비스로 식별</code>.
+1. **서비스** : @Component `주석 내에서 모듈을 <code>DispatchTaskExecutor.class` 서비스로 식별</code>.
 
-1. **OSGi 속성**: `@Component` 주석에 다음 속성을 추가합니다.
+1. **OSGi 속성** : `@Component` 주석에 다음 속성을 추가합니다.
 
    * `dispatch.task.executor.name`: Job Scheduler UI에서 실행기 이름에 사용되는 문자열을 정의합니다.
 
@@ -22,15 +22,15 @@
       올바른 실행기가 일치하도록 하려면 값이 고유해야 합니다. 값이 고유하지 않은 경우 시작 시 로그에 동일한 속성 값이 있는 실행기를 나타내는 오류가 표시됩니다.
       ```
 
-1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java): `DispatchTaskExecutor` 인터페이스를 구현하거나 구현을 확장합니다(예: `BaseDispatchTaskExecutor`).
+1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) : `DispatchTaskExecutor` 인터페이스를 구현하거나 구현을 확장합니다(예: `BaseDispatchTaskExecutor`).
 
       ```{important}
       'DispatchTaskExecutor' 인터페이스의 구현은 Job Scheduler 작업에 대한 상태 로그를 처리해야 합니다. 프레임워크는 작업의 동시 실행을 제어하기 위해 해당 로그에 의존하기 때문입니다.
 
-      귀하의 편의를 위해 Liferay는 `BaseDispatchTaskExecutor` 추상 [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay)을 제공합니다. /dispatch/executor/BaseDispatchTaskExecutor.java) Job Scheduler 작업의 상태를 `IN PROGRESS`, `SUCCESSFUL` 또는 `FAILED`로 기록합니다.
+      귀하의 편의를 위해 Liferay는 `BaseDispatchTaskExecutor` 추상 [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay) 을 제공합니다. /dispatch/executor/BaseDispatchTaskExecutor.java) Job Scheduler 작업의 상태를 `IN PROGRESS`, `SUCCESSFUL` 또는 `FAILED`로 기록합니다.
       ```
 
-1. **방법**: `DispatchTaskExecutor` 인터페이스를 직접 구현하는 경우 `execute()` 메서드를 재정의하여 사용자 지정 논리를 구현합니다. 대신 `BaseDispatchTaskExecutor` 추상 클래스를 확장하는 경우 `doExecute()` 메서드를 재정의합니다.
+1. **방법** : `DispatchTaskExecutor` 인터페이스를 직접 구현하는 경우 `execute()` 메서드를 재정의하여 사용자 지정 논리를 구현합니다. 대신 `BaseDispatchTaskExecutor` 추상 클래스를 확장하는 경우 `doExecute()` 메서드를 재정의합니다.
 
    ```{note}
    `getName()` 메서드는 더 이상 사용되지 않으며 `dispatch.task.executor.name` 속성으로 대체됩니다.
@@ -82,7 +82,7 @@
 
    ![새 템플릿을 사용하여 새 작업 스케줄러 작업을 추가합니다.](./creating-a-new-job-scheduler-task-executor/images/01.png)
 
-   작업을 생성했으면 *지금 실행*클릭합니다.
+   작업을 생성했으면 **지금 실행** 클릭합니다.
 
    ![새 작업 스케줄러 작업에 대해 지금 실행을 클릭합니다.](./creating-a-new-job-scheduler-task-executor/images/02.png)
 
@@ -92,7 +92,7 @@
    INFO [liferay/dispatch/executor-2][S7A3DispatchTaskExecutor:30] Invoking #doExecute(DispatchTrigger, DispatchTaskExecutorOutput)
    ```
 
-   작업을 클릭하고 *Logs* 탭으로 이동하여 모든 이전 실행 목록을 볼 수도 있습니다.
+   작업을 클릭하고 **Logs** 탭으로 이동하여 모든 이전 실행 목록을 볼 수도 있습니다.
 
    ![작업 스케줄러 작업에 대한 로그를 보고 관리합니다.](./creating-a-new-job-scheduler-task-executor/images/03.png)
 

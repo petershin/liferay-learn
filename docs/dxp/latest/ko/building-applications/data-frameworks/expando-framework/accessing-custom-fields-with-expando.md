@@ -9,13 +9,13 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. *제어판*으로 이동합니다. *사용자 및 조직*. 관리자의 옵션 아이콘(![옵션 아이콘](../../../images/icon-actions.png))을 클릭하고 *편집*을 클릭합니다. 일반 탭에서 사용자 정의 필드까지 아래로 스크롤합니다. *추가* 버튼을 클릭합니다.
+1. **제어판** 으로 이동합니다. **사용자 및 조직** . 관리자의 옵션 아이콘(![옵션 아이콘](../../../images/icon-actions.png))을 클릭하고 **편집** 을 클릭합니다. 일반 탭에서 사용자 정의 필드까지 아래로 스크롤합니다. **추가** 버튼을 클릭합니다.
 
-1. 필드 유형으로 *입력 필드*를 선택합니다. 필드 이름으로 `f5a3Text`를 입력합니다. `test`와 같은 시작 값을 입력합니다. *저장*을 클릭합니다.
+1. 필드 유형으로 **입력 필드** 를 선택합니다. 필드 이름으로 `f5a3Text`를 입력합니다. `test`와 같은 시작 값을 입력합니다. **저장** 을 클릭합니다.
 
     ![사용자를 위한 f5a3Text라는 사용자 정의 필드를 생성합니다.](./accessing-custom-fields-with-expando/images/01.png)
 
-1. [Accessing Expando](./liferay-f5a3.zip)를 다운로드하고 압축을 풉니다.
+1. [Accessing Expando](./liferay-f5a3.zip) 를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/expando-framework/liferay-f5a3.zip -O

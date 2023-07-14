@@ -1,6 +1,6 @@
 # MVC 포틀릿으로 작업 호출
 
-포틀릿의 [*Action 단계*](../reference/portlets.md#portlet-phases)는 상태 변경을 적용합니다. *포틀릿 작업 URL*을 사용하여 포틀릿의 작업 처리 메서드를 UI 구성 요소에 바인딩할 수 있습니다. 조치를 수행하기 위해 사용자의 요청을 포틀릿 메소드에 맵핑하는 `portlet:actionURL` JSP 태그입니다.
+포틀릿의 [**Action 단계**](../reference/portlets.md#portlet-phases) 는 상태 변경을 적용합니다. **포틀릿 작업 URL** 을 사용하여 포틀릿의 작업 처리 메서드를 UI 구성 요소에 바인딩할 수 있습니다. 조치를 수행하기 위해 사용자의 요청을 포틀릿 메소드에 맵핑하는 `portlet:actionURL` JSP 태그입니다.
 
 여기서는 액션 URL을 세 가지 방식으로 사용하는 예제 포틀릿을 호출하고 검사하는 방법을 배웁니다.
 
@@ -43,31 +43,31 @@
     STARTED com.acme.u8t2.web_1.0.0
     ```
 
-1. *Samples* 카테고리의 *U8T2 Portlet* 위젯을 위젯 페이지에 추가하십시오. U8T2 포틀릿이 나타납니다.
+1. **Samples** 카테고리의 **U8T2 Portlet** 위젯을 위젯 페이지에 추가하십시오. U8T2 포틀릿이 나타납니다.
 
    ![페이지에 U8T2 포틀릿을 추가했습니다.](./invoking-actions-with-mvc-portlet/images/01.png)
 
    포틀릿에는 세 개의 링크가 있습니다.
 
-   * *뭔가를*
-   * *다른 작업 수행*
-   * *더 많은 작업 수행*
+   * **뭔가를**
+   * **다른 작업 수행**
+   * **더 많은 작업 수행**
 
     각 링크를 클릭하면 다른 작업 처리 방법이 호출됩니다. 학습 목적으로 각 메서드는 자신을 식별하는 메시지를 기록합니다.
 
-1. *작업 수행*클릭합니다. 포틀릿은 `doSomething` 메소드의 호출을 기록합니다.
+1. **작업 수행** 클릭합니다. 포틀릿은 `doSomething` 메소드의 호출을 기록합니다.
 
     ```bash
     [U8T2Portlet:28] Invoke #doSomething(ActionRequest, ActionResponse)
     ```
 
-1. *다른 작업 수행*클릭합니다. 포틀릿은 `doSomethingElse` 메소드의 호출을 기록합니다.
+1. **다른 작업 수행** 클릭합니다. 포틀릿은 `doSomethingElse` 메소드의 호출을 기록합니다.
 
     ```bash
     [U8T2Portlet:36] Invoke #doSomethingElse(ActionRequest, ActionResponse)
     ```
 
-1. *추가 작업*클릭하십시오. 포틀릿은 `doSomethingMore` 메소드의 호출을 기록합니다.
+1. **추가 작업** 클릭하십시오. 포틀릿은 `doSomethingMore` 메소드의 호출을 기록합니다.
 
     ```bash
     [U8T2Portlet:45] Invoke #doSomethingMore(ActionRequest, ActionResponse)
@@ -84,7 +84,7 @@
 :lines: 14-53
 ```
 
-[`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html) 주석은 클래스를 [`포틀릿`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html) 서비스를 제공하는 OSGi 선언적 서비스 구성요소로 표시합니다. 특성은 포틀릿을 *샘플* 위젯 범주에서 사용 가능하게 만들고 포틀릿 이름을 *U8T2 Portlet*으로 지정하고 포틀릿의 기본 보기 템플릿을 `/view.jsp`로 설정합니다.
+[`@Component`](https://osgi.org/javadoc/r6/residential/org/osgi/service/component/annotations/Component.html) 주석은 클래스를 [`포틀릿`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/Portlet.html) 서비스를 제공하는 OSGi 선언적 서비스 구성요소로 표시합니다. 특성은 포틀릿을 **샘플** 위젯 범주에서 사용 가능하게 만들고 포틀릿 이름을 **U8T2 Portlet** 으로 지정하고 포틀릿의 기본 보기 템플릿을 `/view.jsp`로 설정합니다.
 
 각 메소드는 [`ActionRequest`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionRequest.html) 및 [`ActionResponse`](https://docs.liferay.com/portlet-api/3.0/javadocs/javax/portlet/ActionResponse.html) 매개변수를 사용합니다. `ActionRequest` 은 메서드 정보를 제공하고 `ActionResponse` 메서드가 정보를 전달하는 수단을 제공합니다. 각 예제 메서드는 로그 메시지로 자신을 식별합니다.
 

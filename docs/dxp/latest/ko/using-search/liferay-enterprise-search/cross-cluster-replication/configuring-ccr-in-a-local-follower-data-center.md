@@ -11,7 +11,7 @@
 로컬 Elasticsearch 클러스터는 팔로워(복제된, 읽기 전용) 인덱스를 보유해야 하며 Liferay DXP 노드가 읽을 수 있는 로컬 검색 엔진으로 작동합니다.
 
 ```{important}
-**CCR 설치 보안:** [앞서 언급한 바와 같이](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption ) Elasticsearch 클러스터는 동일한 CA에서 서명한 노드 인증서를 사용해야 하며 각 클러스터의 보안 설정이 일치해야 합니다. 다른 접근 방식과 세부 정보는 [Elastic 설명서 참조](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/cross-cluster-configuring.html)를 참조하세요.
+**CCR 설치 보안:** [앞서 언급한 바와 같이](./configuring-an-example-ccr-installation-replicating-between-data-centers.md#prerequisite-for-security-configure-authentication-and-encryption ) Elasticsearch 클러스터는 동일한 CA에서 서명한 노드 인증서를 사용해야 하며 각 클러스터의 보안 설정이 일치해야 합니다. 다른 접근 방식과 세부 정보는 [Elastic 설명서 참조](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/cross-cluster-configuring.html) 를 참조하세요.
 ```
 
 1. `elasticsearch.yml`을 구성합니다.
@@ -100,7 +100,7 @@
    Liferay DXP 7.1 및 7.2의 경우 `Liferay Home/osgi/configs` `com.liferay.portal.search.elasticsearch.cross.cluster.replication.internal.configuration.ElasticsearchConnectionConfiguration-ccr.config`에 구성 파일을 제공합니다.
 
    ```{warning}
-   Liferay 7.2에서 LES 클러스터 간 복제 LPKG의 초기 배포와 동시에 CCR 연결에 대한 구성 파일(예: `ElasticsearchConnectionConfiguration-ccr.config`)을 배포하지 마십시오. 모듈이 완전히 시작되기 전에 구성 파일이 배포되는 경우 Liferay의 검색 기능을 손상시키는 알려진 버그([LPS-127821](https://issues.liferay.com/browse/LPS-127821))가 있습니다. 이 문제가 이미 발생한 경우 [클러스터 간 복제 문제 해결](./troubleshooting-cross-cluster-replication.md#liferay-7-2-after-deploying-the-ccr-lpkg-and-the-elasticsearchconnectionconfiguration을 참조하십시오. -file-search-is-broken) 해결 방법입니다.
+   Liferay 7.2에서 LES 클러스터 간 복제 LPKG의 초기 배포와 동시에 CCR 연결에 대한 구성 파일(예: `ElasticsearchConnectionConfiguration-ccr.config`)을 배포하지 마십시오. 모듈이 완전히 시작되기 전에 구성 파일이 배포되는 경우 Liferay의 검색 기능을 손상시키는 알려진 버그( [LPS-127821](https://issues.liferay.com/browse/LPS-127821) )가 있습니다. 이 문제가 이미 발생한 경우 [클러스터 간 복제 문제 해결](./troubleshooting-cross-cluster-replication.md#liferay-7-2-after-deploying-the-ccr-lpkg-and-the-elasticsearchconnectionconfiguration을 참조하십시오. -file-search-is-broken) 해결 방법입니다.
    ```
 
    ```properties
@@ -133,13 +133,13 @@
 
 LES 클러스터 간 복제 모듈은 리더 클러스터의 다음과 리더 클러스터에서 팔로워 클러스터로 모든 인덱스의 초기 복제를 트리거합니다. 추적 및 복제 트리거는 구성 파일(`.config`)을 통하지 않고 시스템 설정 UI에서 CCR 기능을 활성화하는 데 의존합니다. 데이터 센터의 Liferay DXP 노드에서 CCR을 구성합니다.
 
-1. 전역 메뉴를 열고 _제어판_ &rarr; _시스템 설정_로 이동합니다. _검색_ 범주를 엽니다.
+1. 전역 메뉴를 열고 **제어판** &rarr; **시스템 설정** 로 이동합니다. **검색** 범주를 엽니다.
 
-1. Open _클러스터 간 복제_.
+1. Open **클러스터 간 복제** .
 
-1. _로컬 클러스터에서 읽기_상자를 선택합니다.
+1. **로컬 클러스터에서 읽기** 상자를 선택합니다.
 
-1. _로컬 클러스터 구성_에서 하나의 값 설정 `localhost:9080,ccr`.
+1. **로컬 클러스터 구성** 에서 하나의 값 설정 `localhost:9080,ccr`.
 
    ```{important}
    여기서 값을 원격 데이터 센터로 설정하지 마십시오(이 예에서는 `localhost:8080,remote`). 이를 설정하면 동일한 이름의 리더 인덱스가 이미 상주하는 원격 클러스터에 팔로워 인덱스가 생성됩니다.
@@ -147,15 +147,15 @@ LES 클러스터 간 복제 모듈은 리더 클러스터의 다음과 리더 �
 
    이는 읽기 전용이어야 하는 연결을 정의합니다. 인간 언어로 여기에 있는 각 항목은 "이 주소(`localhost:9080`)의 Liferay 서버가 이 이름(이 예에서는`ccr` )을 사용하여 Elasticsearch 연결에서 읽습니다."라고 말합니다.
 
-1. _업데이트_을 클릭합니다.
+1. **업데이트** 을 클릭합니다.
 
 프로덕션 설정에서 원격 Elasticsearch 클러스터에 대해 다른 전송 주소를 설정하거나(이 예에서는 기본값 사용) 일부 인덱스가 팔로워 Elasticsearch 클러스터에 복제되지 않도록 제외할 수 있습니다. 이러한 목적을 위한 구성 필드가 있습니다.
 
-**원격 클러스터 시드 노드 전송 주소**: 원격 클러스터와 로컬 클러스터 간의 연결을 설정하는 데 사용할 원격 클러스터 노드의 전송 주소입니다. 기본값은 `localhost:9300`입니다.
+**원격 클러스터 시드 노드 전송 주소** : 원격 클러스터와 로컬 클러스터 간의 연결을 설정하는 데 사용할 원격 클러스터 노드의 전송 주소입니다. 기본값은 `localhost:9300`입니다.
 
-**제외된 인덱스**: 클러스터 간 복제에서 제외할 인덱스 이름을 입력합니다. 마침표(.)로 시작하는 인덱스는 항상 제외됩니다. 기본적으로 원격 클러스터의 모든 인덱스는 로컬 클러스터에 복제됩니다. 자동 복제가 활성화되지 않은 경우 이 설정은 무시됩니다.
+**제외된 인덱스** : 클러스터 간 복제에서 제외할 인덱스 이름을 입력합니다. 마침표(.)로 시작하는 인덱스는 항상 제외됩니다. 기본적으로 원격 클러스터의 모든 인덱스는 로컬 클러스터에 복제됩니다. 자동 복제가 활성화되지 않은 경우 이 설정은 무시됩니다.
 
-**자동 복제 활성화됨**: 로컬 클러스터에서 읽기가 활성화된 경우 로컬 Elasticsearch 클러스터에서 팔로워 인덱스 자동 생성을 활성화 또는 비활성화합니다. 복제가 Elasticsearch를 통해 수동으로 관리되는 경우 이 설정을 비활성화합니다. 기본값은 _활성화_입니다.
+**자동 복제 활성화됨** : 로컬 클러스터에서 읽기가 활성화된 경우 로컬 Elasticsearch 클러스터에서 팔로워 인덱스 자동 생성을 활성화 또는 비활성화합니다. 복제가 Elasticsearch를 통해 수동으로 관리되는 경우 이 설정을 비활성화합니다. 기본값은 **활성화** 입니다.
 
 ![시스템 설정에서 CCR을 구성합니다.](./configuring-ccr-in-a-local-follower-data-center/images/02.png)
 
@@ -170,7 +170,7 @@ LES 클러스터 간 복제 모듈은 리더 클러스터의 다음과 리더 �
 
 ## 설정 확인
 
-팔로워 DXP 클러스터 노드에서 제어판 &rarr; 구성 &rarr; 검색으로 이동합니다. Liferay DXP 7.2에서는 _연결_ 탭도 클릭해야 합니다. 연결은 다음과 같습니다.
+팔로워 DXP 클러스터 노드에서 제어판 &rarr; 구성 &rarr; 검색으로 이동합니다. Liferay DXP 7.2에서는 **연결** 탭도 클릭해야 합니다. 연결은 다음과 같습니다.
 
 ![검색 관리 패널에서 Elasticsearch 7 연결을 확인합니다.](./configuring-ccr-in-a-local-follower-data-center/images/01.png)
 

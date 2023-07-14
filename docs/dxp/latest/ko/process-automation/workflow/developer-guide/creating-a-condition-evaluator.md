@@ -41,7 +41,7 @@
    ```
 
 ```{note}
-편의를 위해 'ConditionEvaluator'의 'activate' 메서드는 R6J9 조건부 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition)를 참조하십시오.
+편의를 위해 'ConditionEvaluator'의 'activate' 메서드는 R6J9 조건부 승인자 워크플로 정의를 자동 로드했습니다. 이 코드는 Workflow Process Builder로 이동하여 워크플로 정의를 업로드하는 것과 동일한 작업을 수행했습니다. [새 워크플로 정의 업로드](../designing-and-managing-workflows/managing-workflows.md#uploading-a-new-workflow-definition) 를 참조하십시오.
 ```
 
 ## 조건 평가자 테스트
@@ -52,15 +52,15 @@ Acme R6J9 조건 평가기를 사용하려면 블로그 항목과 함께 사용�
 
 2. 구성 탭에서 R6J9 조건부 승인자 정의를 블로그 항목 자산 유형에 지정하십시오.
 
-3. _저장_클릭합니다.
+3. **저장** 클릭합니다.
 
 4. 기본 관리 사용자 테스트 테스트를 사용하여 사이트 메뉴 &rarr; 콘텐츠 & 데이터 &rarr; 블로그를 엽니다.
 
 5. 추가 버튼(![Add](../../../images/icon-add.png))을 클릭합니다.
 
-6. 제목 및 내용 필드에 내용을 입력한 다음 _Submit for Workflow_을 클릭합니다.
+6. 제목 및 내용 필드에 내용을 입력한 다음 **Submit for Workflow** 을 클릭합니다.
 
-7. 기본 블로그 보기로 돌아가 항목이 표시되고 상태가 _Approved_로 표시되는지 확인합니다.
+7. 기본 블로그 보기로 돌아가 항목이 표시되고 상태가 **Approved** 로 표시되는지 확인합니다.
 
    ```{tip}
    처음에 상태가 '보류 중'으로 표시되면 페이지를 새로고침하세요.
@@ -68,7 +68,7 @@ Acme R6J9 조건 평가기를 사용하려면 블로그 항목과 함께 사용�
 
    ![관리 사용자가 블로그 항목을 제출했기 때문에 워크플로에서 자동 승인되었습니다.](./creating-a-condition-evaluator/images/01.png)
 
-단일 승인자 정의 또는 다른 비관리 사용자로 테스트하는 경우 블로그 항목이 _보류 중_상태로 추가되는 것을 볼 수 있습니다.
+단일 승인자 정의 또는 다른 비관리 사용자로 테스트하는 경우 블로그 항목이 **보류 중** 상태로 추가되는 것을 볼 수 있습니다.
 
 ## R6J9 상태 평가기 이해
 
@@ -104,7 +104,7 @@ Acme R6J9 구현 프로젝트에는 워크플로 사용자에게 관리자 역�
    :lines: 39-41
 ```
 
-`workflowContext` 워크플로우 사용자의 ID를 검색하는 데 사용되고 `serviceContext` 가상 인스턴스의 ID( `companyId`)를 검색하는 데 사용됩니다. 둘 다 사용자가 역할 _관리자_을 가지고 있는지 확인하는 데 필요합니다. 자산은 사용자에게 관리자 역할이 있는 경우 워크플로우에 의해 자동 승인됩니다( _승인_이라는 전환과 함께 전송됨). 그렇지 않으면 _검토_ 전환을 실행합니다.
+`workflowContext` 워크플로우 사용자의 ID를 검색하는 데 사용되고 `serviceContext` 가상 인스턴스의 ID( `companyId`)를 검색하는 데 사용됩니다. 둘 다 사용자가 역할 **관리자** 을 가지고 있는지 확인하는 데 필요합니다. 자산은 사용자에게 관리자 역할이 있는 경우 워크플로우에 의해 자동 승인됩니다(**승인** 이라는 전환과 함께 전송됨). 그렇지 않으면 **검토** 전환을 실행합니다.
 
 ```{literalinclude} ./creating-a-condition-evaluator/resources/liferay-r6j9.zip/r6j9-impl/src/main/java/com/acme/r6j9/internal/kaleo/runtime/condition/R6J9ConditionEvaluator.java
    :dedent: 2
@@ -114,7 +114,7 @@ Acme R6J9 구현 프로젝트에는 워크플로 사용자에게 관리자 역�
 
 ### 워크플로 정의에서 `ConditionEvaluator` 호출
 
-Acme R6J9 구현 프로젝트에 의해 자동 로드된 R6J9 조건부 승인자 워크플로 정의는 Liferay DXP/Portal과 함께 제공되는 단일 승인자 정의와 거의 동일합니다. 첫 번째 차이점은 `created` 상태 노드에 있습니다. 단일 승인자 정의는 항상 검토 전환을 실행하지만 R6J9 조건부 승인자는 '역할 확인' 전환을 실행합니다. 주요 차이점은 _condition node_ 라는 동일한 이름이 추가되었다는 것입니다. 그런 다음 조건 노드는 'R6J9ConditionEvaluator'에 의존하여 조건 로직을 실행합니다.
+Acme R6J9 구현 프로젝트에 의해 자동 로드된 R6J9 조건부 승인자 워크플로 정의는 Liferay DXP/Portal과 함께 제공되는 단일 승인자 정의와 거의 동일합니다. 첫 번째 차이점은 `created` 상태 노드에 있습니다. 단일 승인자 정의는 항상 검토 전환을 실행하지만 R6J9 조건부 승인자는 '역할 확인' 전환을 실행합니다. 주요 차이점은 **condition node** 라는 동일한 이름이 추가되었다는 것입니다. 그런 다음 조건 노드는 'R6J9ConditionEvaluator'에 의존하여 조건 로직을 실행합니다.
 
 ```{literalinclude} ./creating-a-condition-evaluator/resources/liferay-r6j9.zip/r6j9-impl/src/main/resources/com/acme/r6j9/internal/kaleo/runtime/condition/dependencies/r6j9-workflow-definition.xml
    :dedent: 1

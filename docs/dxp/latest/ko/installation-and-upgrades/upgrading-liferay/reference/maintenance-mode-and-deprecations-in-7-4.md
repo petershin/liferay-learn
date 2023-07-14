@@ -1,10 +1,10 @@
 # 7.4의 유지 관리 모드 및 지원 중단
 
-각각의 새로운 Liferay DXP 및 Liferay Portal 릴리스에서는 기능이 지속적인 개선을 보장하지 않거나 더 이상 사용되지 않을 수 있습니다. 기능에 대한 향상을 중지하면 *유지 관리 모드*로 설정됩니다.
+각각의 새로운 Liferay DXP 및 Liferay Portal 릴리스에서는 기능이 지속적인 개선을 보장하지 않거나 더 이상 사용되지 않을 수 있습니다. 기능에 대한 향상을 중지하면 **유지 관리 모드** 로 설정됩니다.
 
 **유지 관리 모드:** 추가 개선 계획이 없는 지원 기능
 
-더 이상 사용되지 않는 기능은 결국 제거되거나 더 새롭고 향상된 기능으로 대체됩니다. 더 이상 사용되지 않는 기능에 대한 지원을 중단하기 전에 Liferay는 해당 기능을 *Deprecated*로 표시합니다.
+더 이상 사용되지 않는 기능은 결국 제거되거나 더 새롭고 향상된 기능으로 대체됩니다. 더 이상 사용되지 않는 기능에 대한 지원을 중단하기 전에 Liferay는 해당 기능을 **Deprecated** 로 표시합니다.
 
 **사용되지 않음:** 다음 마이너 버전 릴리스에서 지원되지 않음
 
@@ -13,7 +13,7 @@
 ```
 
 ```{important}
-자세한 내용은 [유지 관리 모드 및 지원 중단 정책](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation)을 참조하십시오.
+자세한 내용은 [유지 관리 모드 및 지원 중단 정책](https://help.liferay.com/hc/ko/articles/360015767952-Maintenance-Mode-and-Deprecation) 을 참조하십시오.
 ```
 
 ## 더 이상 사용되지 않는 기능 가용성
@@ -41,7 +41,7 @@
 | 상거래 계정 위젯                   | 삭제됨                         | DXP/Portal 계정 위젯으로 대체됨                                                                                                                                                                                                                                    |
 | 중앙 인증 서비스(CAS)              | 보관하는                        | 7.2에서 더 이상 사용되지 않습니다. SAML, OpenID Connect 및 토큰 기반 SSO를 비롯한 다른 솔루션으로 대체됩니다.                                                                                                                                                                               |
 | 상업 카테고리 탐색 위젯               | 번들                          | [디스플레이 페이지 템플릿으로 교체](../../../site-building/displaying-content/using-display-page-templates.md) [메뉴 디스플레이](../../../site-building/site-navigation/configuring-menu-displays.md) 지원.                                                                       |
-| 상거래 BOM(Bill of Materials)  | 삭제됨                         | [Shop By Diagram](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram)로 대체됨.                                                                                                             |
+| 상거래 BOM(Bill of Materials)  | 삭제됨                         | [Shop By Diagram](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram) 로 대체됨.                                                                                                             |
 | 상거래 카테고리 콘텐츠 위젯             | 번들                          | [디스플레이 페이지 템플릿](../../../site-building/displaying-content/using-display-page-templates.md)로 대체되었습니다.                                                                                                                                                      |
 | 다이제스트 인증                    | 번들                          | 다이제스트 인증에는 취약한 암호 해시 저장소가 필요하며 이는 취약점입니다.                                                                                                                                                                                                                 |
 | 다이나믹 데이터 목록                 | 번들                          | 7.3에서 더 이상 사용되지 않습니다. [Liferay Objects](../../../building-applications/objects.md)로 대체됩니다.                                                                                                                                                                |
@@ -52,7 +52,7 @@
 | Liferay 모바일 장치 감지 엔터프라이즈    | 보관하는                        | 7.2에서 더 이상 사용되지 않습니다. 최신 정의는 51Degrees에 문의하십시오.                                                                                                                                                                                                           |
 | Liferay Screens             | 삭제됨. 최종 버전은 7.3에서 릴리스되었습니다. | 직접 교체 없음; 그러나 모바일 SDK 및 헤드리스 API는 모바일 애플리케이션 개발을 지원합니다.                                                                                                                                                                                                   |
 | Liferay 동기화 커넥터 및 동기화 클라이언트 | 보관하는                        | 7.3에서 더 이상 사용되지 않습니다. 직접적인 교체가 없습니다.                                                                                                                                                                                                                      |
-| 라이브 사용자                     | 번들                          | 7.2에서 더 이상 사용되지 않습니다. [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html)로 대체됩니다.                                                                                                                                           |
+| 라이브 사용자                     | 번들                          | 7.2에서 더 이상 사용되지 않습니다. [애널리틱스 클라우드](https://learn.liferay.com/analytics-cloud/latest/ko/index.html) 로 대체됩니다.                                                                                                                                           |
 | 모바일 SDK                     | 삭제됨                         | [Headless Delivery](../../../headless-delivery/using-liferay-as-a-headless-platform.md)로 대체되었습니다.                                                                                                                                                         |
 | NTLM                        | 보관하는                        | 7.2에서 더 이상 사용되지 않습니다. [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)로 대체됩니다. NTLM을 사용하여 Microsoft Windows™ 계정을 인증하는 경우 [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)사용으로 전환하십시오. |
 | OAuth 1.0a                  | 보관하는                        | 7.2에서 더 이상 사용되지 않습니다. OAuth 2.0에 대한 Liferay 커넥터로 대체되었습니다.                                                                                                                                                                                                 |
@@ -66,8 +66,8 @@
 
 * [7.3 지원 중단 및 유지 관리 모드로 이동한 기능](./maintenance-mode-and-deprecations-in-7-3.md)
 * [7.2 지원 중단 및 유지 관리 모드로 이동한 기능](./maintenance-mode-and-deprecations-in-7-2.md)
-* [7.1 지원 중단](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0 지원 중단](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+* [7.1 지원 중단](https://help.liferay.com/hc/ko/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+* [7.0 지원 중단](https://help.liferay.com/hc/ko/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 ## 7.4에서 유지 관리 모드로 이동한 기능
 

@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [완전히 사용자 지정 구성](./liferay-u2g5.zip)을 다운로드하고 압축을 풉니다.
+1. [완전히 사용자 지정 구성](./liferay-u2g5.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
@@ -37,7 +37,7 @@
 
 1. 예제 모듈이 작동하는지 확인하십시오. 브라우저에서 `https://localhost:8080`로 엽니다.
 
-1. *제어판* &rarr; *구성* &rarr; *시스템 설정* &rarr; *타사*으로 이동합니다. *U2G5 구성*을 클릭합니다.
+1. **제어판** &rarr; **구성** &rarr; **시스템 설정** &rarr; **타사** 으로 이동합니다. **U2G5 구성** 을 클릭합니다.
 
    ![시스템 설정에서 U2G5 구성으로 이동합니다.](./completely-custom-configuration/images/01.png)
 
@@ -55,7 +55,7 @@
 `@ExtendedObjectClassDefinition` 주석에서 `generateUI` `false`로 설정됩니다. 이렇게 하면 구성 UI가 자동 생성되지 않습니다.
 
 ```{note}
-DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay)을 참조하십시오.
+DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay) 을 참조하십시오.
 ```
 
 ## 구성 화면 구현

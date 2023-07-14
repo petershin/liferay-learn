@@ -11,7 +11,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Batch Engine API 기본 사항](./liferay-g4j2.zip)을 다운로드하고 압축을 풉니다.
+1. [Batch Engine API 기본 사항](./liferay-g4j2.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
@@ -129,7 +129,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 | `-u "test@liferay.com:learn"`                                                | 기본 인증 자격 증명             |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html)을 통해 사용자를 인증해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](../using-oauth2/using-oauth2-to-authorize-users.md)를 참조하세요.
 ```
 
 ## Java 클래스 검토
@@ -202,7 +202,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTask_GET_ById
 
 ## 사이트에서 데이터 내보내기
 
-다음 cURL 또는 Java 명령을 실행하여 사이트에서 데이터를 내보낼 수 있습니다. 아래 예는 사이트에서 블로그 게시물을 내보냅니다. [사이트의 ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 을 찾아 `1234` 으로 바꿉니다. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 정규화된 클래스 이름 매개 변수도 업데이트해야 합니다.
+다음 cURL 또는 Java 명령을 실행하여 사이트에서 데이터를 내보낼 수 있습니다. 아래 예는 사이트에서 블로그 게시물을 내보냅니다. [REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 을 찾아 `1234` 으로 바꿉니다. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 정규화된 클래스 이름 매개 변수도 업데이트해야 합니다.
 
 ### ExportTask_POST_ToSite.sh
 
@@ -280,7 +280,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) 은 모든 헤드리스 배치 엔진 서비스 및 스키마를 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 은 모든 헤드리스 배치 엔진 서비스 및 스키마를 나열하고 각 서비스를 시도할 수 있는 인터페이스가 있습니다.
 
 ## 관련 항목
 

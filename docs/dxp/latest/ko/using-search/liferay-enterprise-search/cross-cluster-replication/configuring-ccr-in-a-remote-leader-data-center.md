@@ -50,7 +50,7 @@
       ./bin/elasticssearch
       ```
 
-1. 이 작업을 시도 중이고 아직 적절한 라이선스가 없는 경우 [Elasticsearch 평가판 라이선스](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial.html)시작하세요.
+1. 이 작업을 시도 중이고 아직 적절한 라이선스가 없는 경우 [Elasticsearch 평가판 라이선스](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial.html) 시작하세요.
 
    ```
    POST /_license/start_trial?acknowledge=true

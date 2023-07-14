@@ -1,6 +1,6 @@
 # OSGi 서비스로서의 API
 
-[모듈](./module-projects.md) 이 무엇이고 배포 방법을 배운 후에는 모듈을 사용하여 API를 정의하고 구현할 수 있습니다. Liferay API는 Java 인터페이스에 의해 정의되고 구체적인 Java 클래스에 의해 구현되는 [OSGi 서비스](https://enroute.osgi.org/)입니다.
+[모듈](./module-projects.md) 이 무엇이고 배포 방법을 배운 후에는 모듈을 사용하여 API를 정의하고 구현할 수 있습니다. Liferay API는 Java 인터페이스에 의해 정의되고 구체적인 Java 클래스에 의해 구현되는 [OSGi 서비스](https://enroute.osgi.org/) 입니다.
 
 Liferay는 API, 구현 및 클라이언트를 구성 요소로 노출합니다. [OSGi 선언적 서비스](https://enroute.osgi.org/FAQ/300-declarative-services.html) (DS) 주석은 구성 요소와 해당 관계를 정의합니다.
 
@@ -10,8 +10,8 @@ Liferay는 API, 구현 및 클라이언트를 구성 요소로 노출합니다. 
 
 API 및 구현 문제를 다른 모듈로 분리할 수 있습니다.
 
-* **API** 모듈 *는 Java 인터페이스를 사용하여* 가지 기능을 정의합니다. 모듈은 인터페이스 패키지를 내보냅니다.
-* **구현** 모듈 *는 구체적인 Java 클래스를 사용하여* 가지 기능을 제공합니다.
+* **API** 모듈 **는 Java 인터페이스를 사용하여** 가지 기능을 정의합니다. 모듈은 인터페이스 패키지를 내보냅니다.
+* **구현** 모듈 **는 구체적인 Java 클래스를 사용하여** 가지 기능을 제공합니다.
 
 여기에서 간단한 인사 OSGi 서비스를 생성하는 API 및 구현 모듈을 배포합니다. 또한 구현 모듈과 해당 JAR을 검사하여 구현이 인사 서비스 기능을 제공하는 방법을 알아봅니다. 다음 자습서에서는 UI에서 호출할 수 있는 부분인 클라이언트를 만듭니다.
 
@@ -122,25 +122,26 @@ API는 단 두 단계로 생성됩니다.
 ### 인터페이스 패키지 내보내기
 
 API 모듈 `bnd.bnd` 파일은 모듈을 설명하고 `com.acme.p9g2` 인터페이스 패키지를 내보냅니다.
+
 ```{literalinclude} ./apis-as-osgi-services/resources/liferay-p9g2.zip/p9g2-api/bnd.bnd
 ```
 
-The [package export](./exporting-packages.md) shares the `Greeter` interface with other modules.
+[패키지 내보내기](./exporting-packages.md)는 다른 모듈과 `Greeter` 인터페이스를 공유합니다.
 
-The `Greeter` service type is available to implement and use.
+'Greeter' 서비스 유형은 구현 및 사용이 가능합니다.
 
-## Create the Implementation
+## 구현 만들기
 
-The example implementation module contains a concrete Java class that provides the `Greeter` capability. Here are the implementation steps.
+예제 구현 모듈에는 `Greeter` 기능을 제공하는 구체적인 Java 클래스가 포함되어 있습니다. 구현 단계는 다음과 같습니다.
 
-* [Add the Component Annotion Class](#add-the-component-annotation)
-* [Implement the Interface](#implement-the-interface)
-* [Add a Dependency on the API](#add-a-dependency-on-the-api)
-* [Examine the Module JAR](#examine-the-module-jar)
+* [구성 요소 주석 클래스 추가](#add-the-component-annotation)
+* [인터페이스 구현](#implement-the-interface)
+* [API에 종속성 추가](#add-a-dependency-on-the-api)
+* [모듈 JAR 검사](#examine-the-module-jar)
 
-### Add the Component Annotation
+### 구성 요소 주석 추가
 
-The `P9G2Greeter` class implements the `Greeter` interface:
+`P9G2Greeter` 클래스는 `Greeter` 인터페이스를 구현합니다.
 
 ```{literalinclude} ./apis-as-osgi-services/resources/liferay-p9g2.zip/p9g2-impl/src/main/java/com/acme/p9g2/internal/P9G2Greeter.java
 :language: java
@@ -200,7 +201,7 @@ Service-Component: OSGI-INF/com.acme.p9g2.internal.P9G2Greeter.xml
 
 ## 결론
 
-'Greeter'라는 서비스 기능을 *정의*하고 이를 'P9G2Greeter'라는 서비스 구성요소에 *제공*했습니다. '그리터' 서비스가 진행됩니다. 클라이언트는 서비스에 어떻게 액세스하고 사용합니까? [OSGi 서비스 사용](./using-an-osgi-service.md)에 설명되어 있습니다.
+'Greeter'라는 서비스 기능을 **정의** 하고 이를 'P9G2Greeter'라는 서비스 구성요소에 **제공** 했습니다. '그리터' 서비스가 진행됩니다. 클라이언트는 서비스에 어떻게 액세스하고 사용합니까? [OSGi 서비스 사용](./using-an-osgi-service.md)에 설명되어 있습니다.
 
 ## 관련 항목
 

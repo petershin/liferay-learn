@@ -110,7 +110,7 @@ The `build.gradle` file specifies the module's dependencies.
 
 하나의 아티팩트인 Liferay 릴리스 API JAR에 따라 다릅니다. Liferay 제품 릴리스와 관련된 Liferay, Bnd 및 OSGi 아티팩트가 포함된 대형 JAR입니다.
 
-모듈의 이름은 *Acme R9U2 API*입니다. 그것의 상징적인 이름---유일성을 보장하는 이름---은 `com.acme.r9u2.api`입니다. 다음으로 시맨틱 버전이 선언되고 패키지는 *export*이며 이는 다른 모듈에서 사용할 수 있음을 의미합니다. 이 모듈의 패키지는 다른 모듈이 구현할 수 있는 API일 뿐입니다.
+모듈의 이름은 **Acme R9U2 API** 입니다. 그것의 상징적인 이름---유일성을 보장하는 이름---은 `com.acme.r9u2.api`입니다. 다음으로 시맨틱 버전이 선언되고 패키지는 **export** 이며 이는 다른 모듈에서 사용할 수 있음을 의미합니다. 이 모듈의 패키지는 다른 모듈이 구현할 수 있는 API일 뿐입니다.
 
 마지막으로 Java 클래스가 있는데 이 경우에는 인터페이스입니다.
 

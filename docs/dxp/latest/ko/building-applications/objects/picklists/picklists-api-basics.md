@@ -13,7 +13,7 @@ Liferay는 선택 목록 정의(`ListTypeDefinition`) 및 해당 항목(`ListTyp
 
 다음으로 샘플 코드를 준비합니다.
 
-1. [Picklists API 기본 사항](./liferay-v3n6.zip)을 다운로드하고 압축을 풉니다.
+1. [Picklists API 기본 사항](./liferay-v3n6.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/picklists/liferay-v3n6.zip -O
@@ -42,7 +42,7 @@ Liferay는 선택 목록 정의(`ListTypeDefinition`) 및 해당 항목(`ListTyp
    }
    ```
 
-1. *전역 메뉴* &rarr; *제어판* &rarr; *선택 목록*로 이동합니다. 새 선택 목록이 나타납니다.
+1. **전역 메뉴** &rarr; **제어판** &rarr; **선택 목록** 로 이동합니다. 새 선택 목록이 나타납니다.
 
    ![새 선택 목록이 추가되었는지 확인합니다.](./picklists-api-basics/images/02.png)
 

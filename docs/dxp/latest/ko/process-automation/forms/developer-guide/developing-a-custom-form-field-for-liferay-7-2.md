@@ -6,7 +6,7 @@ Liferay 7.3 및 Liferay 7.4용 React 기반 사용자 지정 양식 필드를 �
 
 Liferay 7.2는 사용자 지정 양식 필드에 대해 다른 프런트 엔드 프레임워크를 사용했습니다. Liferay 7.2에서 실행하기 위해 Acme C2P9 슬라이더 필드를 조정하려면,
 
-1. [Custom Forms Field Type 프로젝트](./liferay-c2p9.zip)를 다운로드하고 압축을 풉니다.
+1. [Custom Forms Field Type 프로젝트](./liferay-c2p9.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-c2p9.zip -O

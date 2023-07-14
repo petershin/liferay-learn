@@ -2,7 +2,7 @@
 
 {bdg-link-primary}`[LES 구독](./activating-liferay-enterprise-search.md)`
 
-Liferay Enterprise Search(LES) [구독](https://www.liferay.com/products/dxp/enterprise-search)이 있는 경우 Elastic의 [Kibana 모니터링 UI](https://www.elastic.co/guide/en/kibana/8.8/introduction.html) Liferay DXP와 통합하여 모니터링 활동을 Liferay 자체 내에서 수행할 수 있습니다.
+Liferay Enterprise Search(LES) [구독](https://www.liferay.com/products/dxp/enterprise-search) 이 있는 경우 Elastic의 [Kibana 모니터링 UI](https://www.elastic.co/guide/en/kibana/8.8/introduction.html) Liferay DXP와 통합하여 모니터링 활동을 Liferay 자체 내에서 수행할 수 있습니다.
 
 ![LES 모니터링을 사용하면 Liferay의 UI에서 Liferay의 인덱스를 모니터링할 수 있습니다.](./monitoring-elasticsearch/images/01.png)
 
@@ -30,13 +30,13 @@ Elasticsearch를 다시 시작한 다음 Kibana를 설치합니다.
 
 ## 키바나 설치
 
-Kibana 버전이 Elasticsearch 버전과 일치하는지 확인하십시오. 자세한 내용은 [Liferay 기업 검색 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 확인하십시오.
+Kibana 버전이 Elasticsearch 버전과 일치하는지 확인하십시오. 자세한 내용은 [Liferay 기업 검색 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 확인하십시오.
 
 ```{note}
-Elasticsearch 6.x가 [수명 종료](https://www.elastic.co/support/eol#elasticsearch)에 도달했습니다. 여전히 Elasticsearch 6.x를 사용하는 Liferay 7.2 시스템은 Elasticsearch 7.17로 업그레이드한 다음 8.x로 업그레이드해야 합니다. 시작하려면 [Elasticsearch 7로 업그레이드](./../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)를 참조하세요.
+Elasticsearch 6.x가 [수명 종료](https://www.elastic.co/support/eol#elasticsearch) 에 도달했습니다. 여전히 Elasticsearch 6.x를 사용하는 Liferay 7.2 시스템은 Elasticsearch 7.17로 업그레이드한 다음 8.x로 업그레이드해야 합니다. 시작하려면 [Elasticsearch 7로 업그레이드](./../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)를 참조하세요.
 ```
 
-1. [Kibana](https://www.elastic.co/downloads/kibana) 다운로드하고 압축을 풉니다. 루트 폴더는 *Kibana Home*이라고 합니다.
+1. [Kibana](https://www.elastic.co/downloads/kibana) 다운로드하고 압축을 풉니다. 루트 폴더는 **Kibana Home** 이라고 합니다.
 
 1. `kibana.yml`에서 Elasticsearch의 URL을 설정하여 모니터링 데이터를 보낼 사이트를 Kibana에 알려줍니다.
 
@@ -55,11 +55,11 @@ Elasticsearch 6.x가 [수명 종료](https://www.elastic.co/support/eol#elastics
    elasticsearch.password: "liferay"
    ```
 
-   `kibana_system` 보안 구성의 [사용자 비밀번호](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)사용하십시오. Kibana가 설치되면 *관리* 사용자 인터페이스에서 내장된 사용자 비밀번호를 변경할 수 있습니다.
+   `kibana_system` 보안 구성의 [사용자 비밀번호](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)사용하십시오. Kibana가 설치되면 **관리** 사용자 인터페이스에서 내장된 사용자 비밀번호를 변경할 수 있습니다.
 
 1. 인증서 파일을 제공하여 암호화 구성을 시작하십시오. 자세한 내용은 [Elastic의 가이드](https://www.elastic.co/guide/en/kibana/8.8/using-kibana-with-security.html#using-kibana-with-security) 참조하십시오.
 
-   Elasticsearch용으로 생성된 [파일을 재사용하려면](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md#generate-node-certificates), `[Elasticsearch Home]/config/certs` 폴더를 `[Kibana Home]/config/` 폴더로 복사하십시오.
+   Elasticsearch용으로 생성된 [파일을 재사용하려면](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md#generate-node-certificates) , `[Elasticsearch Home]/config/certs` 폴더를 `[Kibana Home]/config/` 폴더로 복사하십시오.
 
    Kibana 인스턴스에 대해 별도의 인증서를 생성하려면 Elasticsearch 노드 인증서와 동일한 CA에서 서명했는지 확인하십시오.
 
@@ -127,7 +127,7 @@ LES 모니터링 앱을 다운로드하고 LPKG 파일을 `[Liferay Home]/deploy
 
    정확한 구성 값은 Kibana 구성에 따라 다릅니다. 예를 들어 TLS를 활성화하지 않는 경우 `kibanaURL="http://localhost:5601"` 과 같은 URL을 사용합니다.
 
-   또는 [시스템 설정](../../system-administration/configuring-liferay/system-settings.md)에서 모니터링 어댑터를 구성합니다. 전역 메뉴에서 *제어판* &rarr; *구성* &rarr; *시스템 설정* 로 이동하여 검색 카테고리에서 Elasticsearch 모니터링 항목을 찾습니다. 모니터링 커넥터에 대한 모든 구성 옵션이 여기에 나타납니다.
+   또는 [시스템 설정](../../system-administration/configuring-liferay/system-settings.md)에서 모니터링 어댑터를 구성합니다. 전역 메뉴에서 **제어판** &rarr; **구성** &rarr; **시스템 설정** 로 이동하여 검색 카테고리에서 Elasticsearch 모니터링 항목을 찾습니다. 모니터링 커넥터에 대한 모든 구성 옵션이 여기에 나타납니다.
 
 1. 구성 파일을 `Liferay Home/osgi/configs`에 배포하면 실행 중인 인스턴스가 설정을 적용합니다.
 
@@ -185,11 +185,11 @@ Liferay와 Kibana를 다시 시작합니다.
 
 Kibana 및 LES 모니터링이 설치, 구성 및 실행되면 페이지에 Elasticsearch 모니터링 위젯을 추가합니다.
 
-1. 콘텐츠 페이지에서 *조각 및 위젯* 메뉴를 열거나 위젯 페이지에서 위젯 추가 메뉴를 엽니다.
+1. 콘텐츠 페이지에서 **조각 및 위젯** 메뉴를 열거나 위젯 페이지에서 위젯 추가 메뉴를 엽니다.
 
-1. 위젯 검색창을 이용하여 *monitoring* 검색하고 *Elasticsearch Monitoring* 위젯을 검색 카테고리에서 페이지로 드래그합니다. Liferay DXP 7.2의 경우 위젯 이름은 *X-Pack Monitoring*입니다.
+1. 위젯 검색창을 이용하여 **monitoring** 검색하고 **Elasticsearch Monitoring** 위젯을 검색 카테고리에서 페이지로 드래그합니다. Liferay DXP 7.2의 경우 위젯 이름은 **X-Pack Monitoring** 입니다.
 
-> 자세한 내용은 관련 Elasticsearch 설명서를 참조하십시오. * [클러스터 모니터링](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/es-monitoring.html) * [X-Pack 설정---클러스터 환경에서 모니터링 및 보안 모범 사례](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html)
+> 자세한 내용은 관련 Elasticsearch 설명서를 참조하십시오. [**클러스터 모니터링](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/es-monitoring.html**) [X-Pack 설정---클러스터 환경에서 모니터링 및 보안 모범 사례](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/setup-xpack.html)
 
 ## Kibana 구성 예
 
@@ -249,7 +249,7 @@ SSLException: No PSK available. Unable to resume
 
 1. Tomcat의 아웃바운드 연결에 대해 TLS 1.3을 비활성화합니다. Tomcat의 `setenv.bat/sh` 에서 `-Dhttps.protocols=TLSv1.1,TLSv1.2` 설정합니다( `CATALINA_OPTS`에 추가).
 1. `--tls-max-v1.2` `KIBANA_HOME/config/node.options`에 추가하여 Kibana에서 TLS 1.3을 비활성화합니다.
-1. 근본 문제([JDK-8213202](https://bugs.openjdk.java.net/browse/JDK-8213202))가 이미 수정된 [호환 JDK 버전](https://help.liferay.com/hc/en-us/articles/360016511651) 로 전환합니다.
+1. 근본 문제( [JDK-8213202](https://bugs.openjdk.java.net/browse/JDK-8213202) )가 이미 수정된 [호환 JDK 버전](https://help.liferay.com/hc/ko/articles/360016511651) 로 전환합니다.
 
 ## 관련 항목
 

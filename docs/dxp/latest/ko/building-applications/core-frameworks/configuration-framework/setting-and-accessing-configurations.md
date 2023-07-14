@@ -9,7 +9,7 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [설정 및 액세스 구성](./liferay-n2f3.zip)을 다운로드하고 압축을 풉니다.
+1. [설정 및 액세스 구성](./liferay-n2f3.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
@@ -43,11 +43,11 @@ Liferay의 구성 프레임워크를 사용하여 MVC 포틀릿에 대한 설정
 
     UI는 세 가지 구성 가능한 속성(글꼴 색상, 글꼴 패밀리 및 글꼴 크기)과 함께 환영 메시지를 표시합니다.
 
-1. 구성을 변경하려면 *제어판* &rarr; *구성* &rarr; *시스템 설정*으로 이동하십시오. 기타에서 *category.n2f3*클릭합니다.
+1. 구성을 변경하려면 **제어판** &rarr; **구성** &rarr; **시스템 설정** 으로 이동하십시오. 기타에서 **category.n2f3** 클릭합니다.
 
     ![기타 범주에서 category.n2f3을 클릭합니다.](./setting-and-accessing-configurations/images/02.png)
 
-    다른 글꼴 색상, 글꼴 모음 및 글꼴 크기를 입력해 보십시오. *업데이트* 버튼을 클릭하고 게시된 위젯이 있는 페이지로 돌아갑니다. 속성이 변경되었는지 확인합니다.
+    다른 글꼴 색상, 글꼴 모음 및 글꼴 크기를 입력해 보십시오. **업데이트** 버튼을 클릭하고 게시된 위젯이 있는 페이지로 돌아갑니다. 속성이 변경되었는지 확인합니다.
 
 다음은 구성 프레임워크의 작동 방식입니다.
 

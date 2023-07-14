@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Organizations API 기본 사항](./liferay-w2h3.zip)을 다운로드하고 압축을 풉니다.
+1. [Organizations API 기본 사항](./liferay-w2h3.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O
@@ -50,7 +50,7 @@
    }
    ```
 
-1. *전역 메뉴* &rarr; *제어판* &rarr; *사용자 및 조직*로 이동합니다. *조직* 탭을 클릭합니다. 새 조직이 추가되었는지 확인합니다.
+1. **전역 메뉴** &rarr; **제어판** &rarr; **사용자 및 조직** 로 이동합니다. **조직** 탭을 클릭합니다. 새 조직이 추가되었는지 확인합니다.
 
    ![새 조직이 추가되었는지 확인합니다.](./organizations-api-basics/images/01.png)
 
@@ -117,7 +117,7 @@
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `OrganizationResource` 메서드를 호출합니다.
 
 ```{important}
-서비스에 대한 자세한 내용은 [조직 자원](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/OrganizationResource.java)을 참조하십시오.
+서비스에 대한 자세한 내용은 [조직 자원](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/OrganizationResource.java) 을 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 `조직` REST 서비스를 호출하는 예입니다.

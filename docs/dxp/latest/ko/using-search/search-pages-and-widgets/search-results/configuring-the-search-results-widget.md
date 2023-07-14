@@ -1,14 +1,14 @@
 # 검색 결과 위젯 구성
 
-옵션 메뉴(![Options](../../../images/icon-app-options.png))를 열고 *구성*선택하여 검색 결과 위젯을 구성합니다.
+옵션 메뉴(![Options](../../../images/icon-app-options.png))를 열고 **구성** 선택하여 검색 결과 위젯을 구성합니다.
 
 ![검색 결과 표시는 위젯의 구성 화면에서 구성됩니다.](./configuring-the-search-results-widget/images/02.png)
 
-설정은 개념적으로 표시, 페이지 매김 및 통합 검색 설정으로 나눌 수 있습니다. 또한 개발 및 테스트 중에 _Display Results in Document Form_을 체크하여 각 결과에 대한 검색 엔진 문서를 검사할 수 있습니다.
+설정은 개념적으로 표시, 페이지 매김 및 통합 검색 설정으로 나눌 수 있습니다. 또한 개발 및 테스트 중에 **Display Results in Document Form** 을 체크하여 각 결과에 대한 검색 엔진 문서를 검사할 수 있습니다.
 
 ## 검색 결과 표시
 
-**표시 템플릿:** 반환된 검색 결과의 스타일을 지정하는 [위젯 템플릿](./../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) 선택합니다. 기본 표시 스타일은 페이지가 매겨진 목록입니다. 각 목록 항목은 검색 쿼리에 대한 요약된 히트입니다. _템플릿 관리_ 링크를 클릭하여 검색 결과 위젯에 대한 새 위젯 템플릿을 추가합니다.
+**표시 템플릿:** 반환된 검색 결과의 스타일을 지정하는 [위젯 템플릿](./../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) 선택합니다. 기본 표시 스타일은 페이지가 매겨진 목록입니다. 각 목록 항목은 검색 쿼리에 대한 요약된 히트입니다. **템플릿 관리** 링크를 클릭하여 검색 결과 위젯에 대한 새 위젯 템플릿을 추가합니다.
 
 ![카드 레이아웃은 기본 검색 환경의 대안입니다. ](./configuring-the-search-results-widget/images/01.png)
 
@@ -32,15 +32,15 @@
 
 ![페이지당 결과 수와 페이지 매김 동작을 제어하는 데 사용되는 URL 매개변수 이름을 구성할 수 있습니다.](./configuring-the-search-results-widget/images/06.png)
 
-**페이지 매김 시작 매개변수 이름:** 결과 페이지의 URL 매개변수 이름을 설정합니다. 기본값 *start* 이 유지되고 검색이 *test*인 경우 사용자가 두 번째 결과 페이지로 이동할 때 매개변수를 볼 수 있습니다.
+**페이지 매김 시작 매개변수 이름:** 결과 페이지의 URL 매개변수 이름을 설정합니다. 기본값 **start** 이 유지되고 검색이 **test** 인 경우 사용자가 두 번째 결과 페이지로 이동할 때 매개변수를 볼 수 있습니다.
 
 ```
 http://localhost:8080/web/guest/search?q=test&start=2
 ```
 
-**Pagination Delta:** 결과 페이지당 표시할 결과 수를 설정합니다. `portal-ext.properties` 파일에서 `search.container.page.default.delta` [특성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Search%20Container) 사용자 정의하지 않은 경우 기본값은 *20* 입니다.
+**Pagination Delta:** 결과 페이지당 표시할 결과 수를 설정합니다. `portal-ext.properties` 파일에서 `search.container.page.default.delta` [특성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Search%20Container) 사용자 정의하지 않은 경우 기본값은 **20** 입니다.
 
-**페이지 매김 델타 매개변수 이름:** 매김 델타 값을 저장하는 URL 매개변수의 이름을 설정합니다(기본적으로`델타`). 이 매개변수는 사용자가 숫자를 변경하면 브라우저에 표시됩니다. 사용자가 페이지당 10개의 결과를 선택하고 *테스트*검색하면 검색 페이지가 다음 URL로 다시 로드됩니다.
+**페이지 매김 델타 매개변수 이름:** 매김 델타 값을 저장하는 URL 매개변수의 이름을 설정합니다(기본적으로`델타`). 이 매개변수는 사용자가 숫자를 변경하면 브라우저에 표시됩니다. 사용자가 페이지당 10개의 결과를 선택하고 **테스트** 검색하면 검색 페이지가 다음 URL로 다시 로드됩니다.
 
 ```
 http://localhost:8080/web/guest/search?q=test&delta=10
@@ -58,7 +58,7 @@ http://localhost:8080/web/guest/search?q=test&delta=10
 프로덕션 환경에서는 이 옵션을 사용하지 마십시오. 
 ```
 
-**문서 형식으로 결과 표시:** 검색 결과로 표시 [문서](../../developer-guide.md) ~ [인스턴스 관리자](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) (등록된 다른 사용자 및 인증되지 않은 게스트 사용자는 문서 보기를 볼 수 없음). 색인화된 문서 기반 형식으로 검색 응답을 보려면 사이트를 개발하는 동안 이 기능을 사용하십시오. 검색 인덱서 작성의 일부는 검색 엔진 문서(인덱싱되는 개체)를 실제 Java 개체로 변환하고 다시 그 반대로 변환하는 것입니다. 이 설정을 사용하려면 이 설정을 활성화한 다음 검색 결과 요약 아래의 *세부 정보...* 링크를 클릭하십시오. 결과의 문서 보기가 검사를 위해 확장됩니다.
+**문서 형식으로 결과 표시:** 검색 결과로 표시 [문서](../../developer-guide.md) ~ [인스턴스 관리자](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) (등록된 다른 사용자 및 인증되지 않은 게스트 사용자는 문서 보기를 볼 수 없음). 색인화된 문서 기반 형식으로 검색 응답을 보려면 사이트를 개발하는 동안 이 기능을 사용하십시오. 검색 인덱서 작성의 일부는 검색 엔진 문서(인덱싱되는 개체)를 실제 Java 개체로 변환하고 다시 그 반대로 변환하는 것입니다. 이 설정을 사용하려면 이 설정을 활성화한 다음 검색 결과 요약 아래의 **세부 정보...** 링크를 클릭하십시오. 결과의 문서 보기가 검사를 위해 확장됩니다.
 
 ![결과 문서를 보면 인스턴스 관리자가 특정 자산에 대해 인덱싱되는 항목을 정확하게 검사할 수 있습니다. 이것은 한 문서의 작은 부분에 불과합니다.](./configuring-the-search-results-widget/images/05.png)
 

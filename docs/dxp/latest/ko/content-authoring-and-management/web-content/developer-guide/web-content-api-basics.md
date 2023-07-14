@@ -6,7 +6,7 @@ Liferay DXP REST 서비스를 사용하여 사이트에서 구조화된 콘텐�
 [웹 콘텐츠 템플릿](../web-content-templates/creating-web-content-templates.md)과 함께 구조를 사용하여 구조화된 콘텐츠를 렌더링할 수 있지만 구조화된 콘텐츠를 만드는 데 템플릿이 필요하지는 않습니다.
 ```
 
-아래의 구조 및 구조화된 콘텐츠에 대한 cURL 및 Java 샘플을 참조하세요. 구조화된 콘텐츠 관리에 대한 고급 예제는 [Advanced Web Content API](./advanced-web-content-api.md)을 참조하십시오. Liferay DXP에서 REST API 사용에 대한 개요는 [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)참조하십시오.
+아래의 구조 및 구조화된 콘텐츠에 대한 cURL 및 Java 샘플을 참조하세요. 구조화된 콘텐츠 관리에 대한 고급 예제는 [고급 웹 콘텐츠 API](./advanced-web-content-api.md) 을 참조하십시오. Liferay DXP에서 REST API 사용에 대한 개요는 [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)참조하십시오.
 
 ## 환경 설정
 
@@ -46,7 +46,7 @@ Liferay DXP Headless Delivery API에서 다음 서비스를 사용하여 웹 콘
 
 ### 사이트 ID 식별
 
-사이트 ID를 식별하려면 [여기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)지침을 따르십시오.
+사이트 ID를 식별하려면 [여기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 지침을 따르십시오.
 
 ### 사용자 인터페이스에서 기본 웹 콘텐츠 기사 만들기
 
@@ -58,12 +58,12 @@ Liferay DXP Headless Delivery API에서 다음 서비스를 사용하여 웹 콘
 
 이러한 예에서는 단일 텍스트 필드와 기본 기본 웹 콘텐츠 구조가 있는 기본 웹 콘텐츠 기사를 사용합니다. 다음 단계를 사용하여 웹 콘텐츠를 만듭니다.
 
-1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*으로 이동합니다.
-1. *웹 콘텐츠* 탭에서 추가(![Add](../../../images/icon-add.png))를 클릭하고 *기본 웹 콘텐츠*선택합니다.
+1. 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 으로 이동합니다.
+1. **웹 콘텐츠** 탭에서 추가(![Add](../../../images/icon-add.png))를 클릭하고 **기본 웹 콘텐츠** 선택합니다.
 
    ![웹 콘텐츠 패널에서 기본 웹 콘텐츠 기사를 만듭니다.](./web-content-api-basics/images/01.png)
 
-1. New Web Content 이름으로 _Foo_ 입력하고 *Publish*클릭합니다.
+1. New Web Content 이름으로 **Foo** 입력하고 **Publish** 클릭합니다.
 
    ![웹 콘텐츠 기사는 기본적으로 기본 웹 콘텐츠 구조를 사용합니다.](./web-content-api-basics/images/02.png)
 
@@ -289,7 +289,7 @@ java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSite
 |:------- |:-------------------- |
 | $1      | `contentStructureId` |
 
-아래는 JSON 출력입니다. `ID` 및 `이름`으로 Liferay DXP의 기본 웹 콘텐츠 구조를 식별할 수 있습니다. `contentStructureFields` 섹션에는 구조 필드에 대한 설명이 포함되어 있습니다. 이 구조에는 유형 `문자열` 및 이름 `내용`의 단일 컨텐츠 필드가 포함되어 있습니다. [기본 웹 콘텐츠 기사 게시](#post-a-basic-web-content-article)에서 이 콘텐츠 필드에 정보를 추가하는 새 웹 콘텐츠 기사를 만듭니다.
+아래는 JSON 출력입니다. `ID` 및 `이름`으로 Liferay DXP의 기본 웹 콘텐츠 구조를 식별할 수 있습니다. `contentStructureFields` 섹션에는 구조 필드에 대한 설명이 포함되어 있습니다. 이 구조에는 유형 `문자열` 및 이름 `내용`의 단일 컨텐츠 필드가 포함되어 있습니다. [기본 웹 콘텐츠 기사 게시](#post-a-basic-web-content-article) 에서 이 콘텐츠 필드에 정보를 추가하는 새 웹 콘텐츠 기사를 만듭니다.
 
 ```json
 {
@@ -356,7 +356,7 @@ cURL 스크립트 매개변수:
 | $1      | `siteId`             |
 | $2      | `contentStructureId` |
 
-Liferay DXP에서 새 웹 콘텐츠 기사를 찾으려면 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*으로 이동합니다.
+Liferay DXP에서 새 웹 콘텐츠 기사를 찾으려면 사이트 메뉴(![Site menu](../../../images/icon-menu.png))를 열고 **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 으로 이동합니다.
 
 아래는 스크립트에 의해 생성된 부분 JSON 출력입니다. 스크립트는 Structure `contentField` `content` 참조로 사용하여 간단한 `<p>Foo</p>` HTML 문자열을 게시합니다.
 
@@ -539,7 +539,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 
 ## 더 많은 웹 콘텐츠 및 웹 콘텐츠 폴더 서비스
 
-다른 cURL 명령 및 Java 클래스는 더 많은 `StructuredContent` 및 `StructuredContentFolder` 서비스를 보여줍니다. [Web Content API Basics](./liferay-r4h9.zip)에서 찾을 수 있습니다.
+다른 cURL 명령 및 Java 클래스는 더 많은 `StructuredContent` 및 `StructuredContentFolder` 서비스를 보여줍니다. [Web Content API Basics](./liferay-r4h9.zip) 에서 찾을 수 있습니다.
 
 | 파일                                                             | 묘사                       |
 |:-------------------------------------------------------------- |:------------------------ |

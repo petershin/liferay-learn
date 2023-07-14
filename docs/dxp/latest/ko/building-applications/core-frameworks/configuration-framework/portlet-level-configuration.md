@@ -13,7 +13,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [현지화된 메시지 공유](./liferay-x7y2.zip)를 다운로드하고 압축을 풉니다.
+1. [현지화된 메시지 공유](./liferay-x7y2.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-x7y2.zip -O
@@ -43,13 +43,13 @@
 
 1. 페이지에 X7Y2 포틀릿을 배포합니다. 샘플 위젯에서 예제 포틀릿을 찾을 수 있습니다. 기본 색상은 녹색으로 설정되어 있습니다.
 
-1. *제어판* &rarr; *구성* &rarr; *시스템 설정*으로 이동합니다. 기타 섹션 아래 하단에서 X7Y2 구성을 클릭합니다.
+1. **제어판** &rarr; **구성** &rarr; **시스템 설정** 으로 이동합니다. 기타 섹션 아래 하단에서 X7Y2 구성을 클릭합니다.
 
    ![시스템 설정에서 애플리케이션 구성으로 이동합니다.](./portlet-level-configuration/images/01.png)
 
    다른 기본 색상을 선택하고 저장합니다. 배포된 위젯이 있는 페이지로 다시 이동합니다. 이제 색상 변수가 업데이트되었습니다.
 
-1. 포틀릿의 옵션 아이콘(![options icon](../../../images/icon-options.png))을 클릭하고 *구성*클릭하십시오. 포틀릿의 기본 설정 창이 열립니다.
+1. 포틀릿의 옵션 아이콘(![options icon](../../../images/icon-options.png))을 클릭하고 **구성** 클릭하십시오. 포틀릿의 기본 설정 창이 열립니다.
 
    ![구성을 클릭하여 포틀릿의 기본 설정을 엽니다.](./portlet-level-configuration/images/02.png)
 
@@ -70,15 +70,15 @@
 
 이 예제는 더 높은 수준(예: 사이트, 인스턴스, 시스템 범위). 가장 좋은 방법은 포틀릿 환경 설정과 함께 사용할 애플리케이션을 포틀릿 범위로 표시하는 것입니다.
 
-자세한 내용은 [구성 인터페이스 만들기](./setting-and-accessing-configurations.html#Creating-the-Configuration-Interface)참조하십시오.
+자세한 내용은 [구성 인터페이스 만들기](./setting-and-accessing-configurations.html#Creating-the-Configuration-Interface) 참조하십시오.
 
 ```{note}
-DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay)을 참조하십시오.
+DXP 7.4 U51 또는 Portal 7.4 GA51 이전의 Liferay 버전에는 'ConfigurationBeanDeclaration'이 필요합니다. [이전 버전의 Liferay가 포함된 ConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanddeclaration-with-previous-versions-of-liferay) 을 참조하십시오.
 ```
 
 ## PortletDisplay로 구성 읽기
 
-[구성 공급자 API에서 구성 값 읽기](./setting-and-accessing-configurations.html#Reading-the-Configuration-from-the-Application)와 유사하게 포틀릿을 사용하여 애플리케이션의 구성 값에 액세스할 수 있습니다. 디스플레이 API.
+[구성 공급자 API에서 구성 값 읽기](./setting-and-accessing-configurations.html#Reading-the-Configuration-from-the-Application) 와 유사하게 포틀릿을 사용하여 애플리케이션의 구성 값에 액세스할 수 있습니다. 디스플레이 API.
 
 ```{literalinclude} ./portlet-level-configuration/resources/liferay-x7y2.zip/x7y2-web/src/main/java/com/acme/x7y2/web/internal/portlet/X7Y2Portlet.java
 :language: java

@@ -45,7 +45,7 @@ W3E7 예제 애플리케이션은 이 접근 방식을 보여줍니다.
     STARTED com.acme.w3e7.web_1.0.0
     ```
 
-1. *Samples* 카테고리의 *W3E7 Portlet* 위젯을 위젯 페이지에 추가하여 애플리케이션의 가용성을 확인하십시오.
+1. **Samples** 카테고리의 **W3E7 Portlet** 위젯을 위젯 페이지에 추가하여 애플리케이션의 가용성을 확인하십시오.
 
 ![다음은 포틀릿 웹 애플리케이션의 예입니다.](./using-a-jsp-and-mvc-portlet/images/02.png)
 
@@ -72,7 +72,7 @@ W3E7 예제 애플리케이션은 이 접근 방식을 보여줍니다.
 
 ### MVC포틀릿 만들기
 
-모듈의 `src/main/java` 폴더에서 `com.acme.w3e7.web.internal.portlet`이라는 패키지를 만듭니다. 해당 패키지에서 [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java)확장하는 `W3E7Portlet` 이라는 클래스를 추가합니다.
+모듈의 `src/main/java` 폴더에서 `com.acme.w3e7.web.internal.portlet`이라는 패키지를 만듭니다. 해당 패키지에서 [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java) 확장하는 `W3E7Portlet` 이라는 클래스를 추가합니다.
 
 ```{literalinclude} ./using-a-jsp-and-mvc-portlet/resources/liferay-w3e7.zip/w3e7-web/src/main/java/com/acme/w3e7/web/internal/portlet/W3E7Portlet.java
    :language: java
@@ -106,7 +106,7 @@ W3E7 예제 애플리케이션은 이 접근 방식을 보여줍니다.
 
 ## 다음
 
-축하해요! JSP와 하나의 간단한 Java 클래스를 사용하여 웹 애플리케이션을 만들었습니다. 여기에서 갈 수 있는 방향이 많이 있습니다. 더 많은 보기를 추가하려면 [MVC 포틀릿](./rendering-views-with-mvc-portlet.md)을 사용한 렌더링 보기를 참조하십시오. 애플리케이션에 작업을 추가하려면 [MVC 작업 명령](./mvc-action-command.md)참조하십시오. 또는 [Service Builder](../../data-frameworks/service-builder.md)사용하여 백엔드 데이터 모델을 구현합니다.
+축하해요! JSP와 하나의 간단한 Java 클래스를 사용하여 웹 애플리케이션을 만들었습니다. 여기에서 갈 수 있는 방향이 많이 있습니다. 더 많은 보기를 추가하려면 [MVC 포틀릿](./rendering-views-with-mvc-portlet.md)을 사용한 렌더링 보기를 참조하십시오. 애플리케이션에 작업을 추가하려면 [MVC 작업 명령](./mvc-action-command.md)참조하십시오. 또는 [서비스 빌더](../../data-frameworks/service-builder.md) 사용하여 백엔드 데이터 모델을 구현합니다.
 
 ## 관련 항목
 

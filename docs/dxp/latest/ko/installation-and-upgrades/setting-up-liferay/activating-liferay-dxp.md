@@ -8,7 +8,7 @@ Liferay DXP는 XML(`.xml`) 활성화 키를 사용하여 활성화됩니다.  DX
 
 ## 키를 사용하여 DXP 활성화
 
-활성화 키가 있는 경우 [Liferay Home](../reference/liferay-home.md)의 `배포` 폴더에 복사합니다.
+활성화 키가 있는 경우 [Liferay Home](../reference/liferay-home.md) 의 `배포` 폴더에 복사합니다.
 
 ```
 [LIFERAY_HOME]
@@ -35,15 +35,15 @@ DXP를 사용할 준비가 되었습니다.
 
 기업 가입이 있는 경우 [활성화 키](https://customer.liferay.com/activation-key) 페이지를 방문하여 활성화 키를 다운로드하거나 요청하십시오.
 
-DXP를 사용해 보시겠습니까? [30일 평가판 활성화 키를 받으세요](https://www.liferay.com/products/dxp/30-day-trial).
+DXP를 사용해 보시겠습니까? [30일 평가판 활성화 키를 받으세요](https://www.liferay.com/products/dxp/30-day-trial) .
 
 ```{note}
-Liferay DXP 7.2 이하 버전에서 LCS(Liferay Connected Services)를 사용하는 경우 [LCS 문서](https://help.liferay.com/hc/en-us/articles/360017897492-Introduction-to-Managing)를 참조하십시오. -Liferay-DXP-with-Liferay-Connected-Services-)에서 LCS로 DXP 인스턴스를 활성화하는 방법에 대한 지침을 참조하십시오.
+Liferay DXP 7.2 이하 버전에서 LCS(Liferay Connected Services)를 사용하는 경우 [LCS 문서](https://help.liferay.com/hc/ko/articles/360017897492-Introduction-to-Managing) 를 참조하십시오. -Liferay-DXP-with-Liferay-Connected-Services-)에서 LCS로 DXP 인스턴스를 활성화하는 방법에 대한 지침을 참조하십시오.
 ```
 
 ## 라이센스 관리자
 
-라이센스 관리자 페이지에는 서버 및 라이센스 정보가 표시됩니다. 페이지를 보려면 활성화 페이지에서 _라이센스 관리자_ 클릭하십시오. 또는 이전에 Liferay 인스턴스를 활성화한 경우 관리자로 로그인하고 _제어판_ &rarr; _라이선스 관리자_로 이동합니다.
+라이센스 관리자 페이지에는 서버 및 라이센스 정보가 표시됩니다. 페이지를 보려면 활성화 페이지에서 **라이센스 관리자** 클릭하십시오. 또는 이전에 Liferay 인스턴스를 활성화한 경우 관리자로 로그인하고 **제어판** &rarr; **라이선스 관리자** 로 이동합니다.
 
 ![라이센스 관리자 페이지에는 서버 및 라이센스 정보가 표시됩니다.](./activating-liferay-dxp/images/02.png)
 
@@ -57,9 +57,9 @@ Liferay DXP 7.2 이하 버전에서 LCS(Liferay Connected Services)를 사용하
 
 1. 애플리케이션 서버를 중지하십시오.
 
-1. LCS를 사용하여 DXP를 활성화한 경우 [Liferay Home](../reference/liferay-home.md)의 `osgi/marketplace` 폴더에서 Liferay Connected Services Client LPKG 파일(`.lpkg`)을 제거합니다.
+1. LCS를 사용하여 DXP를 활성화한 경우 [Liferay Home](../reference/liferay-home.md) 의 `osgi/marketplace` 폴더에서 Liferay Connected Services Client LPKG 파일(`.lpkg`)을 제거합니다.
 
-1. `[Liferay Home]/data/license` 폴더의 _내용_ 삭제하고 폴더는 보존하십시오.
+1. `[Liferay Home]/data/license` 폴더의 **내용** 삭제하고 폴더는 보존하십시오.
 
 1. `[Liferay Home]/osgi/modules` 폴더에서 `activation-key-[...]` 파일을 모두 제거합니다.
 
@@ -75,4 +75,4 @@ License registered ...
 
 DXP를 계속 사용할 수 있습니다.
 
-엔터프라이즈 구독이 있고 추가 지원이 필요한 경우 [계정 지원](https://help.liferay.com/hc/en-us/articles/360018414031) 에 문의하거나 [지원 티켓](https://help.liferay.com/hc/requests/new)을 만드십시오.
+엔터프라이즈 구독이 있고 추가 지원이 필요한 경우 [계정 지원](https://help.liferay.com/hc/ko/articles/360018414031) 에 문의하거나 [지원 티켓](https://help.liferay.com/hc/requests/new) 을 만드십시오.

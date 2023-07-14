@@ -24,11 +24,11 @@ service-builder/business-logic-with-service-builder.md
 
 `service.xml` 파일에서 모델과 해당 관계를 구성하고 Service Builder를 실행하면 다음과 같은 코드 레이어가 생성됩니다.
 
-* **모델 레이어:** 은 프로젝트의 엔터티를 나타내는 개체를 정의합니다.
+***모델 레이어:** 은 프로젝트의 엔터티를 나타내는 개체를 정의합니다.
 
-* **지속성 계층:** 은 엔티티를 데이터베이스에 저장하고 데이터베이스에서 엔티티를 검색합니다.
+***지속성 계층:** 은 엔티티를 데이터베이스에 저장하고 데이터베이스에서 엔티티를 검색합니다.
 
-* **서비스 계층:** API 및 비즈니스 로직을 생성할 수 있는 빈 계층입니다.
+***서비스 계층:** API 및 비즈니스 로직을 생성할 수 있는 빈 계층입니다.
 
 다음은 몇 가지 주요 기능입니다.
 
@@ -48,11 +48,11 @@ DXP/Portal에서 백엔드 서비스를 위해 Service Builder를 사용할 필�
 
 Service Builder에서 생성된 엔터티에는 다음과 같은 **구현** 클래스가 포함됩니다.
 
-* **엔터티 구현**(`*Impl.java`): 엔터티 커스터마이징을 담당합니다.
+***엔터티 구현**(`*Impl.java`): 엔터티 커스터마이징을 담당합니다.
 
-* **로컬 서비스 구현**(`*LocalServiceImpl.java`): 지속성 계층을 호출하여 데이터 엔터티를 검색하고 저장합니다. 로컬 서비스에는 비즈니스 논리가 포함되어 있으며 지속성 계층에 액세스합니다. 동일한 JVM(Java Virtual Machine)에서 실행되는 클라이언트 코드에 의해 호출될 수 있습니다.
+***로컬 서비스 구현**(`*LocalServiceImpl.java`): 지속성 계층을 호출하여 데이터 엔터티를 검색하고 저장합니다. 로컬 서비스에는 비즈니스 논리가 포함되어 있으며 지속성 계층에 액세스합니다. 동일한 JVM(Java Virtual Machine)에서 실행되는 클라이언트 코드에 의해 호출될 수 있습니다.
 
-* **원격 서비스 구현**(`*ServiceImpl.java`): `service.xml` 가 원격 서비스용으로 구성된 경우 생성됩니다. 원격 서비스에는 일반적으로 권한 확인 코드가 포함되어 있으며 JVM 외부에서 액세스할 수 있습니다. Service Builder는 JSON 또는 SOAP를 통해 원격 서비스를 사용할 수 있도록 하는 코드를 자동으로 생성하며 [REST Builder](../../headless-delivery/apis-with-rest-builder.md)  또는 [JAX-RS](https://help.liferay.com/hc/ko/articles/360031902292-JAX-RS) 을 통해 고유한 원격 API를 생성할 수도 있습니다.
+***원격 서비스 구현**(`*ServiceImpl.java`): `service.xml` 가 원격 서비스용으로 구성된 경우 생성됩니다. 원격 서비스에는 일반적으로 권한 확인 코드가 포함되어 있으며 JVM 외부에서 액세스할 수 있습니다. Service Builder는 JSON 또는 SOAP를 통해 원격 서비스를 사용할 수 있도록 하는 코드를 자동으로 생성하며 [REST Builder](../../headless-delivery/apis-with-rest-builder.md)  또는 [JAX-RS](https://help.liferay.com/hc/ko/articles/360031902292-JAX-RS) 을 통해 고유한 원격 API를 생성할 수도 있습니다.
 
 이러한 클래스는 사용자 정의 비즈니스 로직을 구현하는 곳입니다. 사용자 지정을 위해 Service Builder에서 생성되는 유일한 클래스입니다.
 

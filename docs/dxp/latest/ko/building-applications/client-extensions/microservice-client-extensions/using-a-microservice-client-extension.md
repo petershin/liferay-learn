@@ -1,6 +1,6 @@
 # 마이크로서비스 클라이언트 확장 사용
 
-마이크로서비스 클라이언트 확장은 Liferay와의 통신을 위해 OAuth 2에 의존하는 독립 실행형 서버 프로세스입니다. 마이크로 서비스는 리소스 서버이고 Liferay는 인증 서버입니다. 자세한 내용은 [OAuth 사용 2](../../../headless-delivery/using-oauth2.md) 을 참조하십시오. 이 데모의 샘플 프로젝트는 리소스 서버(마이크로 서비스)의 보호된 경로에서 페이로드를 수집하고 [사용자 지정 요소](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 클라이언트 확장을 기반으로 프런트 엔드 위젯에 표시합니다. 독립 실행형 [Spring Boot 애플리케이션](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started)과 조정하기 위해 이 예제에서는 두 가지 클라이언트 확장 유형이 사용됩니다.
+마이크로서비스 클라이언트 확장은 Liferay와의 통신을 위해 OAuth 2에 의존하는 독립 실행형 서버 프로세스입니다. 마이크로 서비스는 리소스 서버이고 Liferay는 인증 서버입니다. 자세한 내용은 [OAuth 사용 2](../../../headless-delivery/using-oauth2.md) 을 참조하십시오. 이 데모의 샘플 프로젝트는 리소스 서버(마이크로 서비스)의 보호된 경로에서 페이로드를 수집하고 [사용자 지정 요소](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 클라이언트 확장을 기반으로 프런트 엔드 위젯에 표시합니다. 독립 실행형 [Spring Boot 애플리케이션](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started) 과 조정하기 위해 이 예제에서는 두 가지 클라이언트 확장 유형이 사용됩니다.
 
 | 배포 가능하거나 실행 가능한 코드                  | 유형                                                                                                                           | 묘사                                                         | 작업 공간 샘플                        |
 |:----------------------------------- |:---------------------------------------------------------------------------------------------------------------------------- |:---------------------------------------------------------- |:------------------------------- |
@@ -23,7 +23,7 @@
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
    ```{note}
-   지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오.
+   지원되는 JDK, 데이터베이스 및 환경에 대한 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하십시오.
    ```
 
 1. 샘플 작업 공간을 다운로드하고 압축을 풉니다.
@@ -57,7 +57,7 @@ liferay-sample-etc-spring-boot-oauth-application-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-외부 애플리케이션/마이크로서비스는 [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/)에서 사용할 수 있는 `bootJar` 명령으로 생성됩니다. 애플리케이션 JAR은 LXC에 배포하기 위해 LUFFA에 포함되어야 합니다.
+외부 애플리케이션/마이크로서비스는 [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/) 에서 사용할 수 있는 `bootJar` 명령으로 생성됩니다. 애플리케이션 JAR은 LXC에 배포하기 위해 LUFFA에 포함되어야 합니다.
 
 `client-extension.yaml` 의 가장 중요한 부분은 `liferay-sample-etc-spring-boot-oauth-application-user-agent` 정의에 있습니다. 이렇게 하면 Liferay가 인증 서버로 설정되므로 다음에 배포하는 프런트 엔드 클라이언트 확장이 리소스 서버의 보안 엔드포인트를 호출하고 해당 페이로드를 표시할 수 있습니다.
 
@@ -106,7 +106,7 @@ liferay-sample-custom-element-2:
 
    또한 OAuth 사용자 에이전트에 대한 메시지가 기록됩니다.
 
-1. OAuth 애플리케이션 사용자 에이전트가 Liferay에 추가되었는지 확인합니다. _제어판_ &rarr; _OAuth2 관리_로 이동합니다.
+1. OAuth 애플리케이션 사용자 에이전트가 Liferay에 추가되었는지 확인합니다. **제어판** &rarr; **OAuth2 관리** 로 이동합니다.
 
    ![Liferay 샘플 OAuth 애플리케이션 사용자 에이전트는 클라이언트 확장을 배포할 때 추가됩니다.](./using-a-microservice-client-extension/images/01.png)
 

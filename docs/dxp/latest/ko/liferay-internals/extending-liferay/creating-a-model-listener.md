@@ -37,11 +37,11 @@ Then, follow these steps to deploy an example model listener for the `JournalArt
     STARTED com.acme.n4g6.impl_1.0.0
     ```
 
-1. 추가된 로그 메시지를 보고 예제 모델 수신기가 추가되었는지 확인합니다. 브라우저를 `https://localhost:8080` 로 열고 사이트 메뉴 → _콘텐츠 & 데이터_ → _웹 콘텐츠_으로 이동합니다.
+1. 추가된 로그 메시지를 보고 예제 모델 수신기가 추가되었는지 확인합니다. 브라우저를 `https://localhost:8080` 로 열고 사이트 메뉴 → **콘텐츠 & 데이터** → **웹 콘텐츠** 으로 이동합니다.
 
    ![웹 콘텐츠 관리 페이지는 웹 콘텐츠를 만들기 위한 인터페이스입니다.](./creating-a-model-listener/images/01.png)
 
-   추가를 클릭하십시오 ![추가](../../images/icon-add.png) 버튼을 클릭한 다음 _기본 웹 콘텐츠_ 클릭하여 새 기사를 추가합니다. 제목과 내용을 작성하십시오. 그런 다음 _게시_클릭합니다. 콘솔에 경고 메시지가 나타납니다.
+   추가를 클릭하십시오 ![추가](../../images/icon-add.png) 버튼을 클릭한 다음 **기본 웹 콘텐츠** 클릭하여 새 기사를 추가합니다. 제목과 내용을 작성하십시오. 그런 다음 **게시** 클릭합니다. 콘솔에 경고 메시지가 나타납니다.
 
    ```
    2020-03-17 23:14:56.301 WARN  [http-nio-8080-exec-5][N4G6ModelListener:23] Added journal article 20478.
@@ -49,23 +49,23 @@ Then, follow these steps to deploy an example model listener for the `JournalArt
 
 축하해요! `ModelListener`을 구현하는 새 모델 리스너를 성공적으로 구축하고 배포했습니다.
 
-보시다시피 모델 리스너는 특정 *모델*에서 *이벤트* 을 수신합니다. 이 리스너의 경우 이벤트는 `onAfterCreate`입니다. 콘텐츠가 생성되면 리스너는 이벤트를 "듣고" 이벤트가 발생하면 작업이 시작됩니다.
+보시다시피 모델 리스너는 특정 **모델** 에서 **이벤트** 을 수신합니다. 이 리스너의 경우 이벤트는 `onAfterCreate`입니다. 콘텐츠가 생성되면 리스너는 이벤트를 "듣고" 이벤트가 발생하면 작업이 시작됩니다.
 
 이제 다른 이벤트를 수신하도록 예제를 수정합니다.
 
 ## 모델 클래스 및 이벤트 식별
 
-Liferay DXP의 모델 클래스는 [Service Builder](../../building-applications/data-frameworks/service-builder.md)에서 생성됩니다. 모델 인터페이스는 모든 애플리케이션의 `-api` 모듈에서 찾을 수 있습니다. 예를 들어 메시지 보드 메시지에 대한 모델 인터페이스를 찾으려면 Liferay DXP의 소스 코드에서 [`module/apps/message-boards/message-boards-api`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/message-boards/message-boards-api) 프로젝트를 살펴보십시오.
+Liferay DXP의 모델 클래스는 [서비스 빌더](../../building-applications/data-frameworks/service-builder.md) 에서 생성됩니다. 모델 인터페이스는 모든 애플리케이션의 `-api` 모듈에서 찾을 수 있습니다. 예를 들어 메시지 보드 메시지에 대한 모델 인터페이스를 찾으려면 Liferay DXP의 소스 코드에서 [`module/apps/message-boards/message-boards-api`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/message-boards/message-boards-api) 프로젝트를 살펴보십시오.
 
 이 규칙의 예외는 핵심 모델입니다. `User`과 같은 핵심 클래스에 대한 모델 리스너를 생성하려는 경우 Liferay DXP 소스 코드의 [`Portal-kernel`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel) 폴더에서 해당 인터페이스를 찾을 수 있습니다.
 
-생성할 모델 리스너는 Message Boards 메시지용입니다. 메시지가 삭제되면 보고서 로그에 인쇄하는 메시지를 트리거합니다. 가능한 이벤트 목록은 [BaseModelListener](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html)에 대한 Javadoc을 참조하십시오.
+생성할 모델 리스너는 Message Boards 메시지용입니다. 메시지가 삭제되면 보고서 로그에 인쇄하는 메시지를 트리거합니다. 가능한 이벤트 목록은 [BaseModelListener](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html) 에 대한 Javadoc을 참조하십시오.
 
 ## 모델 리스너 동작
 
 모델 리스너는 특정 엔티티에 대한 [`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java) 인터페이스를 구현합니다. 모델 리스너는 해당 엔터티가 생성, 업데이트 또는 제거되기 전이나 후에 실행할 코드를 가질 수 있습니다. 이러한 모든 메서드는 `BasePersistenceImpl` 클래스에서 호출됩니다. 생성되거나 업데이트된 엔터티에 대한 코드는 `BasePersistenceImpl`의 `업데이트` 메서드에서 호출되고 제거된 엔터티에 대한 코드는 `BasePersistenceImpl`의 `제거` 메서드에서 호출됩니다.
 
-모델 수신기에는 다른 종류의 관련 엔터티가 추가되거나 제거되기 전이나 후에 실행할 코드가 있을 수도 있습니다. 이러한 메서드는 [`TableMapperImpl`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/internal/service/persistence/TableMapperImpl.java)의 `_addTableMapping` 메서드에서 호출됩니다.
+모델 수신기에는 다른 종류의 관련 엔터티가 추가되거나 제거되기 전이나 후에 실행할 코드가 있을 수도 있습니다. 이러한 메서드는 [`TableMapperImpl`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/internal/service/persistence/TableMapperImpl.java) 의 `_addTableMapping` 메서드에서 호출됩니다.
 
 이제 `MBMessage` 클래스 및 `onBeforeRemove` 이벤트에서 작동하도록 프로젝트를 수정합니다.
 
@@ -138,15 +138,15 @@ Liferay DXP의 모델 클래스는 [Service Builder](../../building-applications
 
 게시판 메시지를 추가한 다음 삭제하여 수신기를 테스트합니다.
 
-1. Go to *제품 메뉴* &rarr; *콘텐츠 & 데이터* &rarr; *게시판*.
+1. Go to **제품 메뉴** &rarr; **콘텐츠 & 데이터** &rarr; **게시판** .
 
-1. ![Add](../../images/icon-add.png) 추가 버튼을 클릭하고 제목과 본문을 입력한 다음 *게시*클릭합니다.
+1. ![Add](../../images/icon-add.png) 추가 버튼을 클릭하고 제목과 본문을 입력한 다음 **게시** 클릭합니다.
 
-1. 메뉴에서 *게시판* 다시 클릭하면 메시지를 볼 수 있습니다. 동작 ![Action](../../images/icon-actions.png) 버튼을 클릭하고 *삭제*선택합니다. 메시지가 재활용되기만 했기 때문에 아직 로그에 메시지가 표시되지 않습니다.
+1. 메뉴에서 **게시판** 다시 클릭하면 메시지를 볼 수 있습니다. 동작 ![Action](../../images/icon-actions.png) 버튼을 클릭하고 **삭제** 선택합니다. 메시지가 재활용되기만 했기 때문에 아직 로그에 메시지가 표시되지 않습니다.
 
-1. 제품 메뉴에서 *휴지통* 클릭하면 메시지가 표시됩니다.
+1. 제품 메뉴에서 **휴지통** 클릭하면 메시지가 표시됩니다.
 
-1. 작업 ![Action](../../images/icon-actions.png) 버튼을 클릭하고 *삭제*선택합니다. 삭제를 확인합니다.
+1. 작업 ![Action](../../images/icon-actions.png) 버튼을 클릭하고 **삭제** 선택합니다. 삭제를 확인합니다.
 
 1. 로그를 확인하십시오. 메시지가 나타납니다:
 

@@ -6,14 +6,14 @@ Liferay의 Solr 구현에는 제한이 있습니다. Solr를 검색 엔진으로
 
 Elasticsearch 관련 API 및 매핑은 Liferay의 검색 기능에서 활용되고 있습니다. 이러한 기능 중 일부는 Solr에 포함되어 있지 않기 때문에 Solr를 Liferay의 검색 엔진으로 사용할 때 검색 결과의 품질이 낮을 것으로 예상됩니다.
 
-예를 들어 Liferay의 언어 인식 정렬 동작은 [Elasticsearch의 ICU 분석 플러그인](https://www.elastic.co/guide/en/elasticsearch/plugins/8.8/analysis-icu-collation-keyword-field.html). Solr에서 검색할 때 특히 필드 값에 분음 기호가 포함된 경우 최적이 아닌 일부 정렬 동작이 예상됩니다. 
+예를 들어 Liferay의 언어 인식 정렬 동작은 [Elasticsearch의 ICU 분석 플러그인](https://www.elastic.co/guide/en/elasticsearch/plugins/8.8/analysis-icu-collation-keyword-field.html) . Solr에서 검색할 때 특히 필드 값에 분음 기호가 포함된 경우 최적이 아닌 일부 정렬 동작이 예상됩니다. 
 
 ## 최종 사용자 기능 제한
 
 Liferay의 Solr 통합에는 제한이 있습니다. 다음 기능을 사용하려면 Elasticsearch가 필요합니다.
 
 * [Liferay Objects](../../../building-applications/objects.md)
-* [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html)
+* [커머스](https://learn.liferay.com/commerce/latest/ko/index.html)
 * [워크플로 지표](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
 * [사용자 정의 필터 검색 위젯](../../search-pages-and-widgets/search-results/filtering-search-results.md)
 * [낮은 수준의 검색 옵션 위젯](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md)

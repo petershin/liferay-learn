@@ -1,9 +1,9 @@
 # Elasticsearch 보안
 
-Elasticsearch를 보호하기 위해 가장 먼저 해야 할 일은 [enable X-Pack Security](#enable-x-pack-security)입니다. 그런 다음 인증 및 암호화된 통신 구성을 시작할 수 있습니다.
+Elasticsearch를 보호하기 위해 가장 먼저 해야 할 일은 [enable X-Pack Security](#enable-x-pack-security) 입니다. 그런 다음 인증 및 암호화된 통신 구성을 시작할 수 있습니다.
 
 ```{note}
-**Elasticsearch 6.x:** Elasticsearch 6을 사용하는 경우 Elastic의 X-Pack Security를 사용하려면 Liferay Enterprise Search(LES) 구독 및 Liferay Enterprise Search Security 애플리케이션이 필요합니다. Elasticsearch 7에 대한 Liferay 커넥터([고객 다운로드 포털](https://customer.liferay.com/downloads)에서 사용 가능하고 Liferay 7.3+에 번들로 제공됨)부터 기본적으로 Elastic의 X-Pack 보안 지원이 포함됩니다. Elastic의 X-Pack 모니터링과 통합하려면 LES가 필요합니다.
+**Elasticsearch 6.x:** Elasticsearch 6을 사용하는 경우 Elastic의 X-Pack Security를 사용하려면 Liferay Enterprise Search(LES) 구독 및 Liferay Enterprise Search Security 애플리케이션이 필요합니다. Elasticsearch 7에 대한 Liferay 커넥터( [고객 다운로드 포털](https://customer.liferay.com/downloads) 에서 사용 가능하고 Liferay 7.3+에 번들로 제공됨)부터 기본적으로 Elastic의 X-Pack 보안 지원이 포함됩니다. Elastic의 X-Pack 모니터링과 통합하려면 LES가 필요합니다.
 ```
 
 ## X-Pack 보안 활성화
@@ -34,7 +34,7 @@ Elasticsearch 서버에서 [`setup-passwords` 명령](https://www.elastic.co/gui
 ```
 
 ```{note}
-빌트인 사용자 비밀번호를 업데이트하려면 Kibana의 UI 또는 [비밀번호 변경 API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-api-change-password.html)를 사용하세요.
+빌트인 사용자 비밀번호를 업데이트하려면 Kibana의 UI 또는 [비밀번호 변경 API](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-api-change-password.html) 를 사용하세요.
 ```
 
 ## Elasticsearch 통신 암호화
@@ -82,7 +82,7 @@ TLS(전송 계층 보안)를 활성화하려면 노드 인증서 및 키를 생�
    ```
 
    ```{note}
-   Liferay 7.3 이상에서는 [Elasticsearch 커넥터 구성](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html# 키 저장소 유형).
+   Liferay 7.3 이상에서는 [Elasticsearch 커넥터 구성](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html# 키 저장소 유형) .
    ```
 
    여러 호스트에서 작동하는 인증서를 생성하려면(예: 모든 Elasticsearch 및 Liferay 서버에서 동일한 인증서 사용) DNS 이름과 IP 주소를 나열할 때 쉼표로 구분된 목록을 사용하십시오.
@@ -121,7 +121,7 @@ TLS(전송 계층 보안)를 활성화하려면 노드 인증서 및 키를 생�
 
 ### Elasticsearch용 TLS 구성
 
-[ `[Elasticsearch Home]/config/elasticsearch.yml` 파일을 통해 각 노드에서 TLS](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/configuring-tls.html) 활성화합니다.
+[ ` [Elasticsearch Home]/config/elasticsearch.yml` 파일을 통해 각 노드에서 TLS](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/configuring-tls.html) 활성화합니다.
 
 1. 노드 간 통신을 위해 `elasticsearch.yml` 에서 다음 설정으로 전송 계층 TLS를 활성화합니다.
 
@@ -198,7 +198,7 @@ xpack.security.http.ssl.truststore.password: liferay
 
 ## Liferay에서 Elasticsearch에 대한 보안 연결 구성
 
-Liferay에서는 제어판에서 또는 구성 파일을 사용하여 보안을 구성할 수 있습니다. *제어판* &rarr; *구성* &rarr; *시스템 설정*으로 이동합니다. *검색* 카테고리를 찾아 Liferay 7.3+의 *Elasticsearch 7* 항목 또는 Liferay 7.2의 *X-Pack Security* 항목을 클릭합니다. 여기에 속성 값을 입력할 수 있지만 `[Liferay Home]/osgi/configs`에 배포된 구성 파일을 사용하는 것이 더 일반적입니다.
+Liferay에서는 제어판에서 또는 구성 파일을 사용하여 보안을 구성할 수 있습니다. **제어판** &rarr; **구성** &rarr; **시스템 설정** 으로 이동합니다. **검색** 카테고리를 찾아 Liferay 7.3+의 **Elasticsearch 7** 항목 또는 Liferay 7.2의 **X-Pack Security** 항목을 클릭합니다. 여기에 속성 값을 입력할 수 있지만 `[Liferay Home]/osgi/configs`에 배포된 구성 파일을 사용하는 것이 더 일반적입니다.
 
 파일의 정확한 내용은 X-Pack 설정에 따라 다릅니다. `암호` 위의 X-Pack 사용자 암호 설정 중에 설정한 암호와 일치해야 합니다.
 
@@ -211,7 +211,7 @@ TLS를 구성하는 것 외에도 `authenticationEnabled`/`requireAuthentication
 ### Liferay 7.3 및 7.4에서 Elasticsearch에 대한 보안 연결 구성
 
 ```{tip}
-[Installing Elasticsearch](./installing-elasticsearch.md) 및 [Connecting to Elasticsearch](./connecting-to-elasticsearch.md)는 보안 활성화 및 구성을 보여줍니다. 7.3+ 적용 가능한 보안 구성에 대해서는 해당 항목을 참조하십시오.
+[Elasticsearch 설치](./installing-elasticsearch.md) 및 [Elasticsearch에 연결](./connecting-to-elasticsearch.md) 는 보안 활성화 및 구성을 보여줍니다. 7.3+ 적용 가능한 보안 구성에 대해서는 해당 항목을 참조하십시오.
 ```
 
 Liferay 7.3+와 함께 번들로 제공되는 Elasticsearch 커넥터에는 X-Pack Security 지원이 포함됩니다. Elasticsearch 커넥터 구성에서 사용할 수 있는 지원되는 키 저장소 유형 목록은 [Java 11 보안 설명서](https://docs.oracle.com/en/java/javase/11/docs/specs/security/standard-names.html#keystore-types) 참조하십시오.
@@ -308,7 +308,7 @@ transportSSLEnabled="true"
 
 `sslCertificatePath` (_/path/to/instance.crt_): 클라이언트가 연결할 때 제공되는 인증서(또는 인증서 체인)를 포함하는 PEM 인코딩 파일의 경로를 설정합니다. 기본값은 `/path/to/instance.crt`입니다.
 
-`sslCertificateAuthoritiesPaths` (_["/path/to/ca.crt"]_): 신뢰할 수 있는 PEM 인코딩 인증서 파일의 경로 목록을 제공합니다.
+`sslCertificateAuthoritiesPaths` ([**"/path/to/ca.crt"**]): 신뢰할 수 있는 PEM 인코딩 인증서 파일의 경로 목록을 제공합니다.
 
 `certificateFormat` (_PKCS#12_): 인증서 형식을 지정합니다(`PEM` 또는 `PKCS#12`).
 
@@ -318,7 +318,7 @@ transportSSLEnabled="true"
 
 `비밀번호`: 인증 필요가 활성화된 경우 비밀번호가 필요합니다.
 
-`transportSSLVerificationMode` (_인증서_): 중간자 공격 및 인증서 위조로부터 보호하기 위해 LDAP를 사용할 때 확인 유형(`없음`, `인증서`또는 `전체`)을 지정합니다.
+`transportSSLVerificationMode` (**인증서**): 중간자 공격 및 인증서 위조로부터 보호하기 위해 LDAP를 사용할 때 확인 유형(`없음`, `인증서`또는 `전체`)을 지정합니다.
 
 `transportSSLEnabled` (_false_): TLS/SSL을 설정하거나 비활성화합니다.
 

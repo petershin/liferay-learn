@@ -2,7 +2,7 @@
 
 Liferay의 UAD(User Associated Data) 관리 도구를 사용하여 [사용자 데이터 관리 및 삭제](../managing-user-data.md)를 할 수 있습니다. 이 도구는 많은 Liferay 응용 프로그램(예: 블로그, 문서 및 미디어, 메시지 보드 등)에서 즉시 사용할 수 있습니다. 이 프레임워크는 맞춤형 애플리케이션에도 적용할 수 있습니다.
 
-이 작업은 [Service Builder](../../building-applications/data-frameworks/service-builder.md)을 사용하면 더 쉬워집니다. Service Builder가 애플리케이션에 대해 UAD를 활성화하는 데 필요한 코드를 자동으로 생성하는 방법을 알아보려면 아래 예를 참조하십시오.
+이 작업은 [서비스 빌더](../../building-applications/data-frameworks/service-builder.md) 을 사용하면 더 쉬워집니다. Service Builder가 애플리케이션에 대해 UAD를 활성화하는 데 필요한 코드를 자동으로 생성하는 방법을 알아보려면 아래 예를 참조하십시오.
 
 ## 예제 코드 다운로드
 
@@ -11,7 +11,7 @@ Liferay의 UAD(User Associated Data) 관리 도구를 사용하여 [사용자 �
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [UAD 프레임워크](./liferay-h6d2.zip)를 다운로드하고 압축을 풉니다.
+1. [UAD 프레임워크](./liferay-h6d2.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
@@ -50,9 +50,9 @@ Liferay의 UAD(User Associated Data) 관리 도구를 사용하여 [사용자 �
 
 1. 새 사용자로 로그인하고 H6D2 포틀릿에 일부 콘텐츠를 추가합니다.
 
-1. 관리자로 다시 로그인하고 *제어판* &rarr; *사용자* &rarr; *사용자 및 조직*로 이동합니다.
+1. 관리자로 다시 로그인하고 **제어판** &rarr; **사용자** &rarr; **사용자 및 조직** 로 이동합니다.
 
-1. 새 사용자의 *작업* 아이콘(![Action](../../images/icon-actions.png)) &rarr; *개인 데이터 삭제*클릭합니다. *확인* 클릭하여 사용자 비활성화를 확인합니다.
+1. 새 사용자의 **작업** 아이콘(![Action](../../images/icon-actions.png)) &rarr; **개인 데이터 삭제** 클릭합니다. **확인** 클릭하여 사용자 비활성화를 확인합니다.
 
 1. UAD 관리 도구가 나타납니다. 새 사용자가 H6D2 포틀릿에 추가한 데이터를 보거나 익명화하거나 삭제할 수 있습니다.
    

@@ -9,7 +9,7 @@ Service Builder를 사용하여 모델, 지속성 및 서비스 코드 [](./serv
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Service Builder가 포함된 비즈니스 로직](./liferay-e4g5.zip)을 다운로드하고 압축을 풉니다.
+1. [Service Builder가 포함된 비즈니스 로직](./liferay-e4g5.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/liferay-e4g5.zip -O
@@ -43,9 +43,9 @@ Service Builder를 사용하여 모델, 지속성 및 서비스 코드 [](./serv
 
    ![E4G5 포틀릿을 페이지에 추가하십시오.](./business-logic-with-service-builder/images/01.png)
 
-1. 이름과 설명을 입력하여 항목을 추가합니다(예: e4g5_name1 및 e4g5_description1). `추가`클릭하면 `E4G5 항목`아래에 새 항목이 나타납니다. `e4g5EntryId` 번호를 기록해 둡니다.
+1. 이름과 설명을 입력하여 항목을 추가합니다(예: e4g5 **name1 및 e4g5** description1). `추가`클릭하면 `E4G5 항목`아래에 새 항목이 나타납니다. `e4g5EntryId` 번호를 기록해 둡니다.
 
-1. 다음으로 이 항목을 업데이트하되 이전 단계에서 `e4g5EntryId` 입력하고 새 이름과 설명을 입력합니다. (예: 41804, e4g5_name2, e4g5_description2). `업데이트`클릭하면 이제 항목이 업데이트됩니다.
+1. 다음으로 이 항목을 업데이트하되 이전 단계에서 `e4g5EntryId` 입력하고 새 이름과 설명을 입력합니다. (예: 41804, e4g5 **name2, e4g5** description2). `업데이트`클릭하면 이제 항목이 업데이트됩니다.
 
 1. 마지막으로 `e4g5EntryId`입력하여 항목을 삭제합니다. `삭제`클릭하면 항목이 삭제됩니다.
 

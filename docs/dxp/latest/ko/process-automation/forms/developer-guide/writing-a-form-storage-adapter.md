@@ -19,7 +19,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [DDM 스토리지 어댑터 프로젝트](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip)를 다운로드하고 압축을 풉니다.
+1. [DDM 스토리지 어댑터 프로젝트](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
@@ -49,19 +49,19 @@
 
 1. 브라우저에서 <http://localhost:8080>로 엽니다.
 
-1. _사이트 메뉴_ &rarr; _콘텐츠 & 데이터_ &rarr; _양식_에서 Forms 애플리케이션으로 이동합니다.
+1. **사이트 메뉴** &rarr; **콘텐츠 & 데이터** &rarr; **양식** 에서 Forms 애플리케이션으로 이동합니다.
 
-1. *추가* 버튼(![Add](./../../../images/icon-add.png))을 클릭하여 양식 작성기를 엽니다.
+1. **추가** 버튼(![Add](./../../../images/icon-add.png))을 클릭하여 양식 작성기를 엽니다.
 
-1. Form Builder 보기에서 *옵션* 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 *설정* 창을 엽니다.
+1. Form Builder 보기에서 **옵션** 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 **설정** 창을 엽니다.
 
-1. *스토리지 유형 선택*에서 *R2F1 동적 데이터 매핑 스토리지 어댑터* 유형을 선택하고 _완료_클릭합니다.
+1. **스토리지 유형 선택** 에서 **R2F1 동적 데이터 매핑 스토리지 어댑터** 유형을 선택하고 **완료** 클릭합니다.
 
 1. 양식에 [텍스트 필드](../creating-and-managing-forms/creating-forms.md) 추가하고 양식을 게시한 다음 몇 번 제출하십시오.
 
 1. 양식 데이터가 유지되었는지 확인하려면 양식의 레코드로 이동하십시오.
 
-   _Site Menu_ &rarr; _Content_ &rarr; _Forms_에서 Form의 *Actions* 버튼(![Actions](./../../../images/icon-actions.png))을 클릭한 다음 _View Entries_클릭합니다.
+**Site Menu** &rarr; **Content** &rarr; **Forms** 에서 Form의 **Actions** 버튼(![Actions](./../../../images/icon-actions.png))을 클릭한 다음 **View Entries** 클릭합니다.
 
    ![양식 항목이 추가되었는지 확인하십시오.](./writing-a-form-storage-adapter/images/02.png)
 
@@ -122,7 +122,7 @@ public DDMStorageAdapterSaveResponse save(
     throws StorageException;
 ```
 
-각 메소드는 정적 내부 `Builder` 클래스의 `newBuilder` 메소드를 사용하여 구성된 _DDMStorageAdapter[[Save](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java)/[Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java)/[Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java)]Response_ 객체를 반환해야 합니다.
+각 메소드는 정적 내부 `Builder` 클래스의 `newBuilder` 메소드를 사용하여 구성된 **DDMStorageAdapter[ [Save](https://github.com/liferay/liferay-portal/blob/[$LIFERAY** LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java) / [Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java) / [Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java) ]Response_ 객체를 반환해야 합니다.
 
 모든 메소드에는 `DDMStorageAdapter[Save/Delete/Get]Request`이 전달됩니다. 요청 객체에는 유용한 컨텍스트 정보를 반환하는 getter 메서드가 포함되어 있습니다.
 
@@ -294,13 +294,13 @@ private static final Log _log = LogFactoryUtil.getLog(
 
 이제 작동하는지 확인합니다.
 
-1. _사이트 메뉴_ &rarr; _콘텐츠_ &rarr; _양식_의 양식 애플리케이션으로 이동합니다.
+1. **사이트 메뉴** &rarr; **콘텐츠** &rarr; **양식** 의 양식 애플리케이션으로 이동합니다.
 
-1. *추가* 버튼 ![Add](./../../../images/icon-add.png) 을 클릭하여 양식 작성기를 엽니다.
+1. **추가** 버튼 ![Add](./../../../images/icon-add.png) 을 클릭하여 양식 작성기를 엽니다.
 
-1. Form Builder 보기에서 *옵션* 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 *설정* 창을 엽니다.
+1. Form Builder 보기에서 **옵션** 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 **설정** 창을 엽니다.
 
-1. *Select a Storage Type*이라는 선택 목록 필드에서 *R2F1 Dynamic Data Mapping Storage Adapter* 유형을 선택하고 _완료_클릭합니다.
+1. **Select a Storage Type** 이라는 선택 목록 필드에서 **R2F1 Dynamic Data Mapping Storage Adapter** 유형을 선택하고 **완료** 클릭합니다.
 
 1. [텍스트 필드](../creating-and-managing-forms/creating-forms.md) 을 양식에 추가하고 양식을 게시한 다음 몇 번 제출하십시오.
 

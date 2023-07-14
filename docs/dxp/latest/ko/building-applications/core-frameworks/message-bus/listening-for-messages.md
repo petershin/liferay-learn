@@ -9,7 +9,7 @@ DXP/Portal에 내장되어 있거나, 타사에서 정의했거나, 사용자가
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [예제 프로젝트](dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3a4.zip)를 다운로드하고 압축을 풉니다.
+1. [예제 프로젝트](dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3a4.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/message-bus/liferay-w3a4.zip -O
@@ -57,7 +57,7 @@ Documents and Media가 PDF 파일 미리보기 생성을 완료한 후 예제 �
 DestinationNames.DOCUMENT_LIBRARY_PDF_PROCESSOR
 ```
 
-[소스 코드](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$])에서 Liferay의 `*DestinationNames` 클래스를 검색하거나 리스너를 추가할 수 있는 대상에 대한 다른 API를 검색합니다. 메시지 수신기에서 대상 이름을 지정합니다.
+[소스 코드](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]) 에서 Liferay의 `*DestinationNames` 클래스를 검색하거나 리스너를 추가할 수 있는 대상에 대한 다른 API를 검색합니다. 메시지 수신기에서 대상 이름을 지정합니다.
 
 ## `MessageListener` 인터페이스 구현
 

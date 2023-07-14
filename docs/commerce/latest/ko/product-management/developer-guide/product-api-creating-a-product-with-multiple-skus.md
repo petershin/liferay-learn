@@ -13,7 +13,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [제품 API - 여러 SKU가 있는 제품 추가](./liferay-q8t5.zip)를 다운로드하고 압축을 풉니다.
+1. [제품 API - 여러 SKU가 있는 제품 추가](./liferay-q8t5.zip) 를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/commmerce/latest/en/product-management/developer-guide/liferay-q8t5.zip -O
@@ -25,9 +25,9 @@
 
 1. 제품은 카탈로그로 범위가 지정되며 카탈로그 ID는 필수 매개변수 중 하나입니다. 활성 SKU가 여러 개 있으려면 제품에 옵션도 있어야 합니다. 옵션 템플릿을 생성하여 여러 제품에서 재사용할 수 있습니다. 옵션 템플릿을 제품에 연결하려면 옵션 ID가 필요합니다.
 
-   카탈로그 ID를 얻으려면 *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 *상거래* &rarr; *카탈로그*로 이동하십시오. 제품을 추가할 카탈로그를 선택하고 이름 옆에 있는 ID를 기록해 둡니다.
+   카탈로그 ID를 얻으려면 **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **카탈로그** 로 이동하십시오. 제품을 추가할 카탈로그를 선택하고 이름 옆에 있는 ID를 기록해 둡니다.
 
-   옵션 ID를 얻으려면 *글로벌 메뉴*(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png)), *상거래* &rarr; *옵션*로 이동합니다. 제품에 연결할 옵션을 선택하고 이름 옆에 있는 ID를 기록해 둡니다.
+   옵션 ID를 얻으려면 **글로벌 메뉴**(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png)), **상거래** &rarr; **옵션** 로 이동합니다. 제품에 연결할 옵션을 선택하고 이름 옆에 있는 ID를 기록해 둡니다.
 
    ```{important}
    이 예에서는 'Baker'와 'Charlie'라는 두 값을 포함하는 'Able'이라는 이름으로 생성된 옵션 템플릿이 있다고 가정합니다. 
@@ -108,7 +108,7 @@
 
    `skuFormatted` 필드에 `(다중 SKU)` 표시되어 둘 이상의 SKU 생성을 확인합니다.
 
-1. *글로벌 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *상거래* &rarr; *제품*로 이동하여 이를 확인하십시오. *옵션* 탭을 클릭하면 연결된 제품 옵션을 볼 수 있습니다. *SKU* 탭을 클릭하면 승인됨 상태의 새 SKU 2개가 표시됩니다.
+1. **글로벌 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **상거래** &rarr; **제품** 로 이동하여 이를 확인하십시오. **옵션** 탭을 클릭하면 연결된 제품 옵션을 볼 수 있습니다. **SKU** 탭을 클릭하면 승인됨 상태의 새 SKU 2개가 표시됩니다.
 
    ![SKU가 여러 개인 새 제품이 추가되었는지 확인합니다.](./product-api-creating-a-product-with-multiple-skus/images/01.png)
 
@@ -143,7 +143,7 @@
 | `-u "test@liferay.com:learn"`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | 기본 인증 자격 증명             |
 
 ```{note}
-여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html)을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증하기](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html)를 참조하세요. OAuth2를 활용합니다.
+여기서는 데모용으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자를 인증해야 합니다. 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2/using-oauth2-to-authorize-users.html) 를 참조하세요. OAuth2를 활용합니다.
 ```
 
 ## Java 클래스 검토
@@ -224,9 +224,9 @@ JSON에는 총 6개의 필드가 있습니다.
 | `active`         | 제품의 가시성을 변경하려면 true 또는 false로 설정하십시오.                                                                                                                                                                                                                                                      |
 | `catalogId`      | 제품 카탈로그의 ID입니다.                                                                                                                                                                                                                                                                            |
 | `name`           | 제품의 이름입니다.                                                                                                                                                                                                                                                                                 |
-| `productOptions` | 다양한 제품 옵션. [제품 옵션](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/dto/v1_0/ProductOption.java)보기 |
+| `productOptions` | 다양한 제품 옵션. [제품 옵션](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/dto/v1_0/ProductOption.java) 보기 |
 | `productType`    | 제품 유형(단순, 그룹화, 가상 또는 다이어그램).                                                                                                                                                                                                                                                               |
-| `skus`           | 제품 SKU의 배열입니다. [SKU](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/dto/v1_0/Sku.java)참조         |
+| `skus`           | 제품 SKU의 배열입니다. [SKU](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/dto/v1_0/Sku.java) 참조         |
 
 `productOptions` 필드에는 제품에 연결된 옵션에 대한 정보가 포함됩니다.
 
@@ -246,7 +246,7 @@ JSON에는 총 6개의 필드가 있습니다.
 | `published`   | true인 경우 SKU가 상점 첫화면에 표시됩니다.                                                                                                                                                                                                                                                                                                                |
 | `purchasable` | true인 경우 SKU를 구매할 수 있습니다.                                                                                                                                                                                                                                                                                                                   |
 | `sku`         | SKU의 이름입니다.                                                                                                                                                                                                                                                                                                                                 |
-| `skuOptions`  | SKU 옵션의 배열입니다. [SkuOption](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/dto/v1_0/SkuOption.java)을 참조하십시오. `키` 옵션 템플릿의 키이고 `값` 옵션 값 중 하나를 지정합니다. |
+| `skuOptions`  | SKU 옵션의 배열입니다. [SkuOption](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/headless/headless-commerce/headless-commerce-admin-catalog-client/src/main/java/com/liferay/headless/commerce/admin/catalog/client/dto/v1_0/SkuOption.java) 을 참조하십시오. `키` 옵션 템플릿의 키이고 `값` 옵션 값 중 하나를 지정합니다. |
 
 ```{note}
 `skuOptions` 내부의 `key` 및 `value`를 `optionId` 및 `optionValueId`로 대체할 수 있습니다. 

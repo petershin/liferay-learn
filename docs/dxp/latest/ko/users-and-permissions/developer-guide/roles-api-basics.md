@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [역할 API 기본 사항](./liferay-z3v5.zip)을 다운로드하고 압축을 풉니다.
+1. [역할 API 기본 사항](./liferay-z3v5.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-z3v5.zip -O
@@ -29,7 +29,7 @@
    ./RoleUserAssociation_POST_ToInstance.sh 1234 5678
    ```
 
-1. *전역 메뉴* &rarr; *제어판* &rarr; *역할*로 이동합니다. 일반 역할 탭에서 사용자를 연결하는 데 사용한 특정 역할을 클릭합니다. *담당자* 탭을 클릭합니다. 사용자가 선택한 역할과 연결되었는지 확인합니다.
+1. **전역 메뉴** &rarr; **제어판** &rarr; **역할** 로 이동합니다. 일반 역할 탭에서 사용자를 연결하는 데 사용한 특정 역할을 클릭합니다. **담당자** 탭을 클릭합니다. 사용자가 선택한 역할과 연결되었는지 확인합니다.
 
    ![사용자가 연결되었는지 확인합니다.](./roles-api-basics/images/01.png)
 

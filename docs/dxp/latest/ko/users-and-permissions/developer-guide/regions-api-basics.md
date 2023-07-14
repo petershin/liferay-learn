@@ -11,7 +11,7 @@ Liferay의 REST API를 사용하여 지역을 만들고 관리합니다.
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Regions API 기본 사항](./liferay-r2p3.zip)을 다운로드하고 압축을 풉니다.
+1. [Regions API 기본 사항](./liferay-r2p3.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-r2p3.zip -O

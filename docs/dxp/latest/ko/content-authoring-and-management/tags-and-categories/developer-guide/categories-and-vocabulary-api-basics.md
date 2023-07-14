@@ -9,7 +9,7 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Categories and Vocabulary API Basics](./liferay-f5w3.zip)을 다운로드하고 압축을 풉니다.
+1. [Categories and Vocabulary API Basics](./liferay-f5w3.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-f5w3.zip -O
@@ -19,7 +19,7 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
    unzip liferay-f5w3.zip
    ```
 
-1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 아래의 다른 서비스 호출에서 이것을 사용합니다.
+1. [사이트 ID 찾기](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 아래의 다른 서비스 호출에서 이것을 사용합니다.
 
 1. cURL 스크립트를 사용하여 사이트에 새 어휘를 추가하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 사이트 ID를 매개변수로 사용하여 `TaxonomyVocabulary_POST_ToSite.sh` 스크립트를 실행합니다.
 
@@ -51,7 +51,7 @@ Liferay의 REST API는 Liferay의 범주 및 어휘 기능에 대한 서비스�
    }
    ```
 
-1. *관리 메뉴* &rarr; *분류* &rarr; *범주*로 이동하여 범주 애플리케이션으로 이동합니다. 새로운 어휘가 추가되었는지 확인하십시오.
+1. **관리 메뉴** &rarr; **분류** &rarr; **범주** 로 이동하여 범주 애플리케이션으로 이동합니다. 새로운 어휘가 추가되었는지 확인하십시오.
 
    ![새로운 어휘가 추가되었습니다.](./categories-and-vocabulary-api-basics/images/01.png)
 

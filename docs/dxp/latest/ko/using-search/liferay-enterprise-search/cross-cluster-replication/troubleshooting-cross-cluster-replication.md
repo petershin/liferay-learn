@@ -1,6 +1,6 @@
 # 클러스터 간 복제 문제 해결
 
-여기에서는 CCR 설정 중에 발생하는 알려진 일반적인 문제와 일반적인 문제 해결 기술을 다룹니다. 추가 문제 해결을 위해 [Elastic의 CCR 문서](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/ccr-overview.html) 보거나 [Elastic 포럼](https://discuss.elastic.co/tag/ccr-cross-cluster-replication)방문하십시오.
+여기에서는 CCR 설정 중에 발생하는 알려진 일반적인 문제와 일반적인 문제 해결 기술을 다룹니다. 추가 문제 해결을 위해 [Elastic의 CCR 문서](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/ccr-overview.html) 보거나 [Elastic 포럼](https://discuss.elastic.co/tag/ccr-cross-cluster-replication) 방문하십시오.
 
 ## 인덱스 복제 문제 조사
 
@@ -33,7 +33,7 @@ org.elasticsearch.index.seqno.RetentionLeaseNotFoundException: retention lease w
   at org.elasticsearch.index.seqno.ReplicationTracker.renewRetentionLease(ReplicationTracker.java:282) ~[elasticsearch-6.8.6.jar:6.8.6]
 ```
 
-[에서 https://www.elastic.co/blog/follow-the-leader-an-introduction-to-cross-cluster-replication-in-elasticsearch](https://www.elastic.co/blog/follow-the-leader-an-introduction-to-cross-cluster-replication-in-elasticsearch):
+[에서 https://www.elastic.co/blog/follow-the-leader-an-introduction-to-cross-cluster-replication-in-elasticsearch](https://www.elastic.co/blog/follow-the-leader-an-introduction-to-cross-cluster-replication-in-elasticsearch) :
 
 > 샤드 기록 보존 임대를 통해 팔로워는 현재 해당 팔로워가 있는 리더의 작업 기록에 표시할 수 있습니다. 리더 샤드는 해당 마커 아래의 작업이 안전하게 병합된다는 것을 알고 있지만 해당 마커 위의 모든 작업은 추종자가 복제할 기회를 가질 때까지 유지되어야 합니다. 이러한 마커는 추종자가 일시적으로 오프라인 상태가 되더라도 리더가 아직 복제되지 않은 작업을 유지하도록 합니다. 이 기록을 유지하려면 리더에 추가 저장 공간이 필요하므로 이러한 마커는 제한된 기간 동안만 유효하며 그 이후에는 마커가 만료되고 리더 조각이 자유롭게 기록을 병합할 수 있습니다. 팔로워가 오프라인 상태가 되는 경우에 유지하려는 추가 스토리지의 양과 팔로워가 오프라인 상태인 것을 수락할 의사가 있는 기간에 따라 이 기간의 길이를 조정할 수 있습니다. 리더.
 
@@ -97,11 +97,11 @@ Caused by: org.elasticsearch.index.snapshots.IndexShardRestoreFailedException: f
 
 1. Leader DXP 노드에서 전체 재색인을 수행합니다.
 
-1. CCR 구성을 다시 활성화하려면 로컬 DXP 노드에서 시스템 설정 &rarr; 검색 &rarr; 클러스터 간 복제로 이동합니다. _로컬 클러스터_ 에서 읽기를 선택 취소하고 _업데이트_ 클릭하여 모듈을 비활성화한 다음 _로컬 클러스터_ 에서 읽기를 선택하고 _업데이트_ 다시 클릭하여 다시 활성화합니다.
+1. CCR 구성을 다시 활성화하려면 로컬 DXP 노드에서 시스템 설정 &rarr; 검색 &rarr; 클러스터 간 복제로 이동합니다. **로컬 클러스터** 에서 읽기를 선택 취소하고 **업데이트** 클릭하여 모듈을 비활성화한 다음 **로컬 클러스터** 에서 읽기를 선택하고 **업데이트** 다시 클릭하여 다시 활성화합니다.
 
 ## Liferay 7.2: CCR LPKG 및 ElasticsearchConnectionConfiguration 파일을 배포한 후 검색이 중단됨
 
-`ElasticsearchConnectionConfiguration-ccr.config` 파일과 동시에 CCR LPKG 파일을 배포한 후 로그에 아래와 같은 오류가 표시되고 검색 엔진 연결이 끊긴 경우 알려진 버그 [LPS-127821](https://issues.liferay.com/browse/LPS-127821)이 발생한 것입니다. 이 버그를 해결하고 검색 엔진 연결을 수정하려면 Liferay를 다시 시작하거나 다른 파일 하위 이름(예: `-ccr2.config`, `connectionId` 설정도 업데이트)을 사용하여 구성을 복제할 수 있습니다.
+`ElasticsearchConnectionConfiguration-ccr.config` 파일과 동시에 CCR LPKG 파일을 배포한 후 로그에 아래와 같은 오류가 표시되고 검색 엔진 연결이 끊긴 경우 알려진 버그 [LPS-127821](https://issues.liferay.com/browse/LPS-127821) 이 발생한 것입니다. 이 버그를 해결하고 검색 엔진 연결을 수정하려면 Liferay를 다시 시작하거나 다른 파일 하위 이름(예: `-ccr2.config`, `connectionId` 설정도 업데이트)을 사용하여 구성을 복제할 수 있습니다.
 
 ```bash
 2021-02-11 22:08:45.402 ERROR [main][CCRElasticsearchConnection:93] bundle com.liferay.portal.search.elasticsearch7.impl:4.0.10 (207)[com.liferay.portal.search.elasticsearch7.internal.connection.CCRElasticsearchConnection(386)] : The activate method has thrown an exception 

@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [DDM 양식 주석](./liferay-v1d9.zip)을 다운로드하고 압축을 풉니다.
+1. [DDM 양식 주석](./liferay-v1d9.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-v1d9.zip -O
@@ -35,7 +35,7 @@
     STARTED com.acme.v1d9.impl_1.0.0 [1650]
     ```
 
-1. 브라우저를 `https://localhost:8080` 로 열고 *제어판* &rarr; *구성* &rarr; *시스템 설정*로 이동합니다. 플랫폼에서 *Third Party*클릭합니다. 왼쪽에서 *V1D9 구성* 클릭합니다.
+1. 브라우저를 `https://localhost:8080` 로 열고 **제어판** &rarr; **구성** &rarr; **시스템 설정** 로 이동합니다. 플랫폼에서 **Third Party** 클릭합니다. 왼쪽에서 **V1D9 구성** 클릭합니다.
 
     ![UI 레이아웃은 DDM 양식 주석으로 사용자 정의됩니다.](./ddm-form-annotations/images/01.png)
 

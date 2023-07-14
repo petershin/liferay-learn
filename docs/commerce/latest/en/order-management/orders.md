@@ -34,6 +34,10 @@ uuid: 763e2757-c730-4b27-bfcc-8b48c5f26248
 :link: ./orders/order-life-cycle.md
 :::
 
+:::{grid-item-card} Price on Application
+:link: ./orders/price-on-application.md
+:::
+
 :::{grid-item-card} Order Management Statuses Reference Guide
 :link: ./orders/order-management-statuses-reference-guide.md
 :::

@@ -88,6 +88,14 @@ This role is automatically assigned to all users of an account and grants basic 
 | :----------------------------- | :------------------------- |
 | Accounts > Account Entry: View | Ability to view an Account |
 
+### Account Supplier
+
+{bdg-secondary}`Available Liferay DXP 7.4 U84+/GA84+`
+
+> Account Role
+
+This is a new account role introduced in Liferay to associate with supplier accounts. This role doesn't have any permissions associated with it but upon assigning this to a user, they also get assigned the regular role of supplier. This role scopes the access of the regular role to the correct channels and catalogs associated with the supplier account. If you directly use the regular role, it grants the supplier access to all catalogs and channels. See [Supplier](#supplier) role below. 
+
 ### Buyer
 
 > Account Role
@@ -130,6 +138,47 @@ You can use this role to oversee all the purchases made in the account. If there
 | Open Carts > Commerce Orders: Manage Order Delivery Terms            | Ability to manage the delivery terms of an order                                                           |
 | Open Carts > Commerce Orders: Manage Order Payment Terms             | Ability to manage the payment terms of an order                                                            |
 | Open Carts > Commerce Orders: View Billing Address                   | Ability to view the billing address of an order                                                            |
+
+### Supplier
+
+{bdg-secondary}`Available Liferay DXP 7.4 U84+/GA84+`
+
+> Regular Role
+
+A supplier is associated with a channel and can manage products, catalogs, orders, price lists, promotions, warehouses and inventory associated to that channel. See below for a full list of supplier permissions. 
+
+| Permission                                                             | Description                                                      |
+| :--------------------------------------------------------------------- | :--------------------------------------------------------------- |
+| Catalogs: Access in Control Panel                                      | Ability to access the catalogs application in the Global Menu    |
+| Catalogs > Commerce Catalogs: Add Commerce Catalog                     | Ability to add a catalog                                         |
+| Channels: Access in Control Panel                                      | Ability to access the channels application in the Global Menu    |
+| Channels > Commerce Channels: Add Notification Template                | Ability to add a notification template for a channel             |
+| Channels > Commerce Channels: View Notification Queue Entries          | Ability to view notification queue entries for a channel         |
+| Open Carts > Commerce Order Type: View                                 | Ability to view the order type of an order                       |
+| Open Carts > Commerce Orders: Manage Commerce Order Payment Methods    | Ability to manage payment methods of an order                    |
+| Open Carts > Commerce Orders: Manage Commerce Order Shipping Options   | Ability to manage shipping options of an order                   |
+| Open Carts > Commerce Orders: Manage Order Delivery Terms              | Ability to manage delivery terms of an order                     |
+| Open Carts > Commerce Orders: Manage Order Notes                       | Ability to change general order notes                            |
+| Open Carts > Commerce Orders: Manage Order Payment Terms               | Ability to manage payment terms of an order                      |
+| Open Carts > Commerce Orders: Manage Order Prices                      | Ability to change order prices                                   |
+| Open Carts > Commerce Orders: Manage Order Restricted Notes            | Ability to change restricted order notes                         |
+| Options > Commerce Products: Add Commerce Product Specification Option | Ability to add product specifications                            |
+| Options > Commerce Products: Add Option                                | Ability to add options to products                               |
+| Options > Commerce Products: Manage Attachments                        | Ability to manage product attachments                            |
+| Options > Commerce Products: Manage Images                             | Ability to manage product images                                 |
+| Options > Commerce Products: Manage Measurement Units                  | Ability to manage measurement units                              |
+| Options > Commerce Products: View Attachments                          | Ability to view product attachments                              |
+| Options > Commerce Products: View Images                               | Ability to view product images                                   |
+| Orders: Access in Control Panel                                        | Ability to access the orders application in the Global Menu      |
+| Portal: View Control Panel Menu                                        | Ability to access the Global Menu                                |
+| Price Lists: Access in Control Panel                                   | Ability to access the price lists application in the Global Menu |
+| Price Lists > Commerce Price Lists: Add Commerce Price List            | Ability to add a price list                                      |
+| Product Groups > Commerce Pricing: Add Commerce Pricing Class          | Ability to add a pricing class for product groups                |
+| Product Groups > Commerce Product Group: View                          | Ability to view product groups                                   |
+| Products: Access in Control Panel                                      | Ability to access the products application in the Global Menu    |
+| Promotions: Access in Control Panel                                    | Ability to access the promotions application in the Global Menu  |
+| Shipments > Commerce Shipments: Manage Shipments                       | Ability to manage shipments                                      |
+| Tax Categories > Commerce Taxes: View Tax Categories                   | Ability to view tax categories                                   |
 
 ## Roles created by Site Initializers - Minium and Speedwell
 

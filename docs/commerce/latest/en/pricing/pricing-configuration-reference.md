@@ -20,7 +20,7 @@ By default, price lists use priority to apply to eligible accounts. The highest 
 
 ## Promotion Discovery Method
 
-By default, promotion lists use priority to apply to eligible accounts. The highest priority eligible promotion list takes precedence over the others. You can change this by replacing `hierarchy` with `lowest`. This discovery method choses the eligible promotion list with the lowest price among other eligible promotion lists. 
+By default, promotion lists use _priority_ to apply to eligible accounts. The highest priority-eligible promotion list takes precedence over the others. You can change this by replacing `hierarchy` with `lowest`. This discovery method chooses the eligible promotion list with the lowest price among other eligible promotion lists. 
 
 ```{note}
 You can use these discovery methods interchangeably. It is not mandatory to have the same value for both. For instance, you can set the price list discovery method as `lowest` and keep the promotion discovery method as `hierarchy` or vice-versa. 
@@ -29,6 +29,8 @@ You can use these discovery methods interchangeably. It is not mandatory to have
 ## Discount Application Strategy
 
 There are two ways to apply discounts at [multiple levels](./promoting-products/using-discount-levels.md): `additive` and `chaining`. By default, discounts at multiple levels are chained. This means that the subsequent discount gets calculated on the value after applying the previous discount. When it's additive, multiple discounts are grouped together and applied all at once. See the illustration below to understand the difference. 
+
+<!-- I think rather than have core explanation of the feature couched in an image, it would be better to have some textual representation of it as well for those using screen readers. Can you put a text version of the formula here as well? Thanks! -Rich --> 
 
 ![The difference between additive and chaining strategies.](./pricing-configuration-reference/images/01.png)
 

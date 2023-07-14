@@ -21,7 +21,7 @@ Sites are customizable spaces for building personalized digital experiences. Fol
    If [Private Pages](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) are enabled for your system, you, you can determine whether all pages inherited from a site template are private.
    ```
 
-1. Click *Save* to begin creating your site.
+1. Click *Add* to begin creating your site.
 
 Once finished, you are redirected to your new [Site's settings](../site-settings/site-settings-ui-reference.md). You can begin configuring your site, or see [Default Site Applications](./default-site-applications.md) for a full list of applications you can use to build your site.
 

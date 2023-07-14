@@ -25,7 +25,7 @@ Mapping a fragment's fields to an object related to the main object is currently
 
 If the mapped object has a [one-to-many relationship](./creating-and-managing-objects/relationships/defining-object-relationships.md) with another object (where the displayed object has a single related object), you can also display information from the related object's fields.
 
-For example, if you are using a collection provider for a "City" object that has a related "Country" object, you can also choose any of the Country fields to display in embedded fragments.
+For example, if you are using a collection provider for a "City" object that has a related "Country" object, you can also choose any of the Country fields to display in embedded fragments. Here's an example where the relationship is called "cities in country":
 
 ![If your fragment is associated with an object, you can display the object's fields or, if there is a single related object, that related object's fields.](./displaying-object-entries-with-collection-providers/images/02.png)
 

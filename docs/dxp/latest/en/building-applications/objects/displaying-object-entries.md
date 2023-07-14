@@ -35,7 +35,7 @@ Follow these steps:
 
 1. Enter a *name* and select the desired *Object* for Content Type.
 
-   ![Enter a name and select the desired Object for Content Type](./displaying-object-entries/images/07.png)
+   ![Enter a name and select the desired Object for Content Type](./displaying-object-entries/images/01.png)
 
 1. Click *Save*.
 
@@ -43,7 +43,7 @@ Follow these steps:
 
 1. Use page fragments and widgets to create flexible, dynamic displays for Object entries. See [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md) for information.
 
-   ![Map fragment elements to Object fields to dynamically populate Display Pages for individual entries.](./displaying-object-entries/images/08.png)
+   ![Map fragment elements to Object fields to dynamically populate Display Pages for individual entries.](./displaying-object-entries/images/02.png)
 
 1. Add the Page Comments widget so end users can comment on entry display pages.
 
@@ -57,7 +57,7 @@ Follow these steps:
 
    This template is now used to render the Object's entries whenever users visit their friendly URLs.
 
-   ![Click the Actions button for the template and select Mark as Default.](./displaying-object-entries/images/09.png)
+   ![Click the Actions button for the template and select Mark as Default.](./displaying-object-entries/images/03.png)
 
 ### Enabling Comments
 
@@ -67,7 +67,7 @@ Follow these steps:
 
 1. In the Details tab, enable comments and click *Save*.
 
-   ![Enable comments.](./displaying-object-entries/images/10.png)
+   ![Enable comments.](./displaying-object-entries/images/04.png)
 
 ## Creating Information Templates for Objects
 
@@ -77,29 +77,29 @@ Follow these steps:
 
 1. Enter a *name* and select the desired *Object*.
 
-   ![Enter a name and select the desired Object.](./displaying-object-entries/images/11.png)
+   ![Enter a name and select the desired Object.](./displaying-object-entries/images/05.png)
 
 1. Click *Save*. This redirects you to the template design page.
 
 1. (Optional) Click Actions (![Actions Button](../../images/icon-actions.png)) in the Application Bar, select *Import Script*, and choose an `.ftl` file to import. This replaces the current template with the file's FreeMarker script.
 
-   ![Import script from an .ftl file.](./displaying-object-entries/images/12.png)
+   ![Import script from an .ftl file.](./displaying-object-entries/images/06.png)
 
 1. Use [FreeMarker](https://freemarker.apache.org) to design your template.
 
    In the *Elements* side panel (![Elements](../../images/icon-list-ul.png)), you can access available fields from the selected Object's structure.
 
-   ![Select from available fields in the Object's structure.](./displaying-object-entries/images/13.png)
+   ![Select from available fields in the Object's structure.](./displaying-object-entries/images/07.png)
 
 1. (Optional) Add a description or image to the template in the Properties side panel (![Properties](../../images/icon-cog3.png)).
 
-   ![Add a description or image in the Properties panel.](./displaying-object-entries/images/14.png)
+   ![Add a description or image in the Properties panel.](./displaying-object-entries/images/08.png)
 
 1. Click *Save* when finished.
 
 You can now select from the template when mapping Object entries to fragment fields.
 
-![Select the template when mapping fragment elements.](./displaying-object-entries/images/15.png)
+![Select the template when mapping fragment elements.](./displaying-object-entries/images/09.png)
 
 ## Adding Entries to Navigation Menus
 

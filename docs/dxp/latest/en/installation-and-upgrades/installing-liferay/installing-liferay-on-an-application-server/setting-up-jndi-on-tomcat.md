@@ -34,7 +34,7 @@ For example, modify the `tomcat-9.0.56/conf/Catalina/localhost/ROOT.xml` file:
 
 ## Setting the `server.xml` and `context.xml`
 
-Define the data source in your `/conf/server.xml` file within the `GlobalNamingResources` element. For example:
+Define the data source in your `/conf/server.xml` file within the `GlobalNamingResources` element. For example,
 
 ```xml
 <GlobalNamingResources>
@@ -48,12 +48,12 @@ Define the data source in your `/conf/server.xml` file within the `GlobalNamingR
 		driverClassName="oracle.jdbc.OracleDriver"
 		jdbcUrl="jdbc:oracle:thin:@192.168.1.213:1521/liferay"
 		dataSource.user="liferay"
-	dataSource.password="password" />
+	    dataSource.password="password" />
 
 </GlobalNamingResources>
 ```
 
-Define a `ResourceLink` in your `/conf/context.xml` file. For example:
+Define a `ResourceLink` in your `/conf/context.xml` file. For example,
 
 ```xml
 <ResourceLink name="jdbc/liferay" global="jdbc/liferay" type="javax.sql.DataSource" />

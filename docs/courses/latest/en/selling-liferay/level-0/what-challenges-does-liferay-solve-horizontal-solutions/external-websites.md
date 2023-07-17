@@ -15,10 +15,8 @@ The buying audience for External Websites is higher level stakeholders such as t
 * Head of, Director of, VP of, Manager
   * Marketing
   * Digital Experience
-  * Digital Commerce
   * Business Development
   * Digital Channels
-  * eCommerce
 * CIO/Head of IT
 
 ## Key Benefits

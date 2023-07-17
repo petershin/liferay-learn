@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip the Acme Commerce Order Rule.
+1. Acme Commerce 주문 규칙을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/commerce/latest/en/developer-guide/order-management/liferay-x9k1.zip

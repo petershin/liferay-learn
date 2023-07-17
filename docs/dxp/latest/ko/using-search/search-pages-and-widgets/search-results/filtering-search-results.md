@@ -78,8 +78,6 @@ Liferay DXP 색인에 있는 필드를 찾으려면 [제어판의 필드 매핑 
 
 ![Liferay DXP의 인덱싱된 필드를 찾으려면 필드 매핑을 찾아보십시오.](./filtering-search-results/images/04.png)
 
-
-
 ## 중첩 필드 찾기 및 사용
 
 {bdg-secondary}`사용 가능 7.2 FP10+, 7.3 FP1+, 7.4+`

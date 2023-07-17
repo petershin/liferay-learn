@@ -29,12 +29,13 @@ Liferay는 일반적으로 세 가지 종류의 모듈을 사용합니다.
 모듈 프로젝트가 어떤 모습인지 확인하고 Liferay의 모듈식 개발 기능이 작동하는 모습을 볼 시간입니다.
 
 ## Gogo 셸 명령 예제 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to deploy the example:
+그런 다음 다음 단계에 따라 예제를 배포합니다.
 
-1. Download and unzip `liferay-r9u2.zip`.
+1. `liferay-r9u2.zip`을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/architecture/liferay-r9u2.zip -O

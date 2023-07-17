@@ -6,7 +6,7 @@
 
 1. **OSGI 구성 요소** : `@Component` 주석을 사용하여 모듈을 OSGi 프레임워크 내의 구성 요소로 선언합니다.
 
-1. **서비스** : @Component `주석 내에서 모듈을 <code>DispatchTaskExecutor.class` 서비스로 식별</code>.
+1. **서비스**: `@Component` 주석 내에서 모듈을 `DispatchTaskExecutor.class` 서비스로 식별합니다.
 
 1. **OSGi 속성** : `@Component` 주석에 다음 속성을 추가합니다.
 
@@ -27,7 +27,7 @@
       ```{important}
       'DispatchTaskExecutor' 인터페이스의 구현은 Job Scheduler 작업에 대한 상태 로그를 처리해야 합니다. 프레임워크는 작업의 동시 실행을 제어하기 위해 해당 로그에 의존하기 때문입니다.
 
-      귀하의 편의를 위해 Liferay는 `BaseDispatchTaskExecutor` 추상 [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay) 을 제공합니다. /dispatch/executor/BaseDispatchTaskExecutor.java) Job Scheduler 작업의 상태를 `IN PROGRESS`, `SUCCESSFUL` 또는 `FAILED`로 기록합니다.
+      편의를 위해 Liferay는 작업 스케줄러 작업의 상태를 '진행 중', '성공' 또는 '실패'로 기록하는 'BaseDispatchTaskExecutor' 추상 [클래스](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/BaseDispatchTaskExecutor.java) 를 제공합니다.
       ```
 
 1. **방법** : `DispatchTaskExecutor` 인터페이스를 직접 구현하는 경우 `execute()` 메서드를 재정의하여 사용자 지정 논리를 구현합니다. 대신 `BaseDispatchTaskExecutor` 추상 클래스를 확장하는 경우 `doExecute()` 메서드를 재정의합니다.

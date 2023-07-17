@@ -1,6 +1,6 @@
 # 검색 엔진 설치
 
-검색 엔진은 Liferay 설치의 중요한 구성 요소입니다. [예제 클러스터 만들기](./../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md#prepare -a-search-engine) 을 사용하면 설치를 시작할 수 있지만 이 가이드에서는 **프로덕션** 환경 설정을 보여줍니다.
+검색 엔진은 Liferay 설치의 중요한 구성 요소입니다. [예제 클러스터 만들기](./../../installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md#prepare-a-search-engine) 을 사용하면 설치를 시작할 수 있지만 이 가이드에서는 **프로덕션** 환경 설정을 보여줍니다.
 
 <!-- MAKE A DIAGRAM SIMILAR TO THE CCR ONE BUT WITH JUST ONE CONNECTION -->
 

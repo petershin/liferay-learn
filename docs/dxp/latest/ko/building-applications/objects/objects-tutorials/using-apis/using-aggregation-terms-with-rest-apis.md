@@ -33,7 +33,7 @@ REST API를 사용하여 개체 항목을 쿼리할 때 개체의 필드를 항�
 1. **세부 정보** 탭으로 이동하고 [**게시**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 를 클릭합니다.
 
    ```{important}
-   For this tutorial, you must use the above values.
+   이 자습서에서는 위의 값을 사용해야 합니다.
    ```
 
 게시되면 헤드리스 API를 통해 개체에 액세스할 수 있습니다.

@@ -23,7 +23,7 @@ Liferay 엔터프라이즈 검색(LES) 구독은 Liferay DXP 구독으로 즉시
 - [Liferay 엔터프라이즈 검색 활성화](liferay-enterprise-search/activating-liferay-enterprise-search.md)
 
 ```{note}
-LES 고객은 Liferay로부터 [플래티넘 Elasticsearch 라이선스](https://www.elastic.co/subscriptions) 를 받습니다. 구독과 라이선스 수령 사이에 지연이 있을 수 있지만 [30일 평가판](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial. html) 그동안 작업할 수 있습니다.  
+LES 고객은 Liferay로부터 [플래티넘 Elasticsearch 라이선스](https://www.elastic.co/subscriptions) 를 받습니다. 구독과 라이선스 수령 사이에 지연이 있을 수 있지만 [30일 평가판](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/start-trial.html) 그동안 작업할 수 있습니다.
 ```
 
 자세한 설치 및 사용 지침은 각 LES 기능에 대한 문서에서 확인할 수 있습니다.

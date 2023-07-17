@@ -4,9 +4,9 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
 
 비동기 메시지는 **직렬** 또는 **병렬** 대상으로 전송됩니다.
 
-****직렬** 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 순차적으로 처리합니다.
+* **직렬** 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 순차적으로 처리합니다.
 
-****병렬** 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지 수신기당 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 동시에 처리합니다.
+* **병렬** 대상의 경우 메시지 버스는 메시지를 대기열에 넣고 메시지 수신기당 메시지당 하나의 작업자 스레드를 위임합니다. 스레드는 메시지 수신기를 동시에 처리합니다.
 
 다른 클래스(메시지 수신기)가 수신하는 직렬 대상으로 메시지를 보내는 것으로 시작합니다.
 
@@ -137,7 +137,7 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
 | `setResponseDestinationName(String)`  | `대상` 참조하여 응답을 받습니다.       |
 | `setValues(Map<String,Object>)` | `지도`에서 추가 데이터를 제공합니다.     |
 
-`N8K5Baker`는 메시지를 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/ message/Destination.java) 는 [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/를 호출하여 `acme/n8k5_able` 이름을 지정했습니다. liferay/portal/kernel/messaging/MessageBus.java) 의 `sendMessage(String, Message)` 메소드. `MessageBus`는 새 스레드를 시작하고 `Message`를 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com) 로 보냅니다. /liferay/portal/kernel/messaging/MessageListener.java) 인스턴스가 `acme/n8k5_able` `Destination`에 등록되었습니다. `N8K5Baker`의 스레드가 계속됩니다.
+`N8K5Baker`는 [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java)의 `sendMessage(String, Message)` 메서드를 호출하여 `acme/n8k5_able`이라는 이름의 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)에 메시지를 보냅니다. `MessageBus`는 새 스레드를 시작하고 `Message`를 `acme/n8k5_able` `Destination`에 등록된 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인스턴스로 보냅니다. `N8K5Baker`의 스레드가 계속됩니다.
 
 ```{note}
 `Message`에 대한 응답을 받으려면 `Message`에 응답 대상을 설정하고 해당 대상에 `N8K5Baker`와 같은 클래스를 `MessageListener`로 등록합니다. 자세한 내용은 [메시지 듣기](./listening-for-messages.md)를 참조하십시오.

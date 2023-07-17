@@ -95,7 +95,7 @@ Elasticsearch 7.14+와 함께 Liferay DXP 7.2를 실행하는 경우 플러그�
 ./bin/elasticsearch-plugin install https://github.com/o19s/elasticsearch-learning-to-rank/releases/download/v1.5.7-es7.13.4/ltr-plugin-v1.5.7-es7.13.4.zip
 ```
 
-[Elasticsearch 클러스터에서 X-Pack 보안](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)을 사용하는 경우 [추가 단계가 있을 수 있습니다.](https:// elasticsearch-learning-to-rank.readthedocs.io/en/latest/x-pack.html)
+[Elasticsearch 클러스터에서 X-Pack 보안](../installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md)을 사용하는 경우 [추가 단계가 있을 수 있습니다.](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/x-pack.html)
 
 ## 2단계: 모델 교육 및 업로드
 

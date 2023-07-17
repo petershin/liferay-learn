@@ -63,7 +63,7 @@
 
 1. **Group Attribute Statements** 아래에 다음 값을 추가합니다.
 
-   **userGroup(지정되지 않음):**** `Okta` 로 시작(Okta의 사용자 그룹이 접두사 `Okta`로 시작한다고 가정합니다. 예: `Okta-UserGroup-1`)
+   **userGroup(지정되지 않음):** ** `Okta` 로 시작(Okta의 사용자 그룹이 접두사 `Okta`로 시작한다고 가정합니다. 예: `Okta-UserGroup-1`)
 
    ![사용자 및 그룹 특성에 대한 매핑을 만듭니다.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/02.png)
 
@@ -107,7 +107,7 @@ Liferay 인스턴스로 이동하기 전 마지막 단계는 SAML 메타데이�
 
 1. **인증서 생성** 클릭합니다.
 
-1. 새 창에서 **okta-saml***Common Name** 으로 입력하고 **learn***Key Password** 로 입력합니다.
+1. 새 창에서 **okta-saml** **Common Name** 으로 입력하고 **learn** **Key Password** 로 입력합니다.
 
 1. **저장** 클릭합니다.
 

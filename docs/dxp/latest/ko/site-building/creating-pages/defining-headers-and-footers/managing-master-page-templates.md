@@ -12,7 +12,7 @@
 
 **편집:** 마스터 페이지 템플릿을 구성합니다.
 
-**썸네일 변경:****마스터** 탭에서 마스터 페이지 템플릿의 카드에 대해 표시할 썸네일 이미지를 선택합니다.
+**썸네일 변경:** **마스터** 탭에서 마스터 페이지 템플릿의 카드에 대해 표시할 썸네일 이미지를 선택합니다.
 
 **이름 바꾸기:** 마스터 페이지 템플릿의 이름을 변경합니다.
 
@@ -71,7 +71,7 @@
 
 **CSS 클라이언트 확장:** [CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) 추가하여 마스터 페이지 템플릿을 사용하는 콘텐츠 페이지의 CSS 스타일을 재정의합니다.
 
-**JavaScript 코드 및 JavaScript 클라이언트 확장:****고급** 탭에서 페이지 하단에서 실행되는 JavaScript 코드를 추가할 수 있습니다. 이 마스터 페이지 템플릿을 사용하는 페이지를 방문할 때 JavaScript가 실행되도록 [JavaScript 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) 추가할 수 있습니다.
+**JavaScript 코드 및 JavaScript 클라이언트 확장:** **고급** 탭에서 페이지 하단에서 실행되는 JavaScript 코드를 추가할 수 있습니다. 이 마스터 페이지 템플릿을 사용하는 페이지를 방문할 때 JavaScript가 실행되도록 [JavaScript 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) 추가할 수 있습니다.
 
 ```{note}
 테마는 마스터 페이지 템플릿을 통해 콘텐츠 페이지에 적용됩니다. 마스터 페이지 템플릿이 콘텐츠 페이지에 적용되면 콘텐츠 페이지의 모양과 느낌이 마스터 페이지 템플릿에 의해 정의됩니다.

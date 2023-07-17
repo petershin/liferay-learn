@@ -100,7 +100,7 @@ http://localhost:8080/web/guest/search?keyword=data
 http://localhost:8080/web/guest/search?q=data&scope=this-site
 ```
 
-**범위****대상** 으로 변경하면 다음 URL이 생성됩니다.
+**범위** **대상** 으로 변경하면 다음 URL이 생성됩니다.
 
 ```
 http://localhost:8080/web/guest/search?q=data&target=this-site

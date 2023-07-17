@@ -64,7 +64,7 @@ Liferay는 공급자 연결을 위한 새로운 인터페이스에 대한 피드
 
 ### 표준 OpenID Connect 공급자 연결
 
-**Control Panel** &rarr; **Configuration** &rarr; **Instance Settings** &rarr; **Security** &rarr; **SSO** 이동하여 **System Scope** 에서 ***OpenID Connect Provider*** 을 선택합니다.
+**Control Panel** &rarr; **Configuration** &rarr; **Instance Settings** &rarr; **Security** &rarr; **SSO** 이동하여 **System Scope** 에서  ***OpenID Connect Provider*** 을 선택합니다.
 
 ![시스템 설정 메뉴에서 OpenID 구성 찾기.](using-openid-connect/images/01.png)
 
@@ -103,7 +103,7 @@ com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConn
 
 ## OpenID Connect 인증 활성화
 
-1. **Control Panel** &rarr; **Configuration** &rarr; **Instance Settings** &rarr; **Security** &rarr; **SSO** 으로 이동하여 ***OpenID Connect****under** Virtual Instance Scope*를 선택합니다.
+1. **Control Panel** &rarr; **Configuration** &rarr; **Instance Settings** &rarr; **Security** &rarr; **SSO** 으로 이동하여 ***OpenID Connect*** under **Virtual Instance Scope**를 선택합니다.
 
     ![인스턴스 설정에서 OpenID Connect 인증 활성화](using-openid-connect/images/02.png)
 

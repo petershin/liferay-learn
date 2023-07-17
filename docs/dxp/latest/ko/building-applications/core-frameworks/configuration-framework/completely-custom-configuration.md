@@ -19,7 +19,7 @@
     unzip liferay-u2g5.zip
     ```
 
-1. 모듈 루트에서 빌드 및 배포합니다. 
+1. 모듈 루트에서 빌드 및 배포합니다.
 
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)

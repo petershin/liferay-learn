@@ -1,6 +1,6 @@
 # Expandos를 사용하여 사용자 정의 필드에 액세스
 
-애플리케이션에 추가 필드가 필요한 경우 [서비스 모델 정의](../service-builder/service-builder-basics/generating-model-persistence-and-service-code.html#examine -the-service-model-definition) 서비스 빌더를 다시 실행합니다. 이렇게 하면 데이터베이스 테이블에 새 열이 추가됩니다. 이것은 작동하지만 고통스러울 수 있습니다. 이제 사용자를 새 스키마로 마이그레이션하는 업그레이드 프로세스를 작성해야 합니다. 그러나 Liferay의 Expando 기능을 사용하면 데이터베이스를 수정하지 않고도 추가 필드를 추가할 수 있습니다. Expandos는 Java의 개체에 추가 속성을 추가하여 작동합니다. 예제 프로젝트는 사용자에게 사용자 정의 필드에 액세스하는 방법을 보여줍니다.
+애플리케이션에 추가 필드가 필요한 경우 [서비스 모델 정의](../service-builder/service-builder-basics/generating-model-persistence-and-service-code.html#examine-the-service-model-definition) 서비스 빌더를 다시 실행합니다. 이렇게 하면 데이터베이스 테이블에 새 열이 추가됩니다. 이것은 작동하지만 고통스러울 수 있습니다. 이제 사용자를 새 스키마로 마이그레이션하는 업그레이드 프로세스를 작성해야 합니다. 그러나 Liferay의 Expando 기능을 사용하면 데이터베이스를 수정하지 않고도 추가 필드를 추가할 수 있습니다. Expandos는 Java의 개체에 추가 속성을 추가하여 작동합니다. 예제 프로젝트는 사용자에게 사용자 정의 필드에 액세스하는 방법을 보여줍니다.
 
 ## 예제 프로젝트 보기
 

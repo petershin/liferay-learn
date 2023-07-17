@@ -22,7 +22,7 @@
 | 올해 | 번호: 현재 연도 | `${time.current_year}` |
 | 시간 | 시간: 시간 | `${time.time_of_day}` |
 | 시간대 이름 현지화 | 텍스트: 로케일에 맞게 현지화된 시간대 | `${time.time_zone_name_localized}` |
-| | <a href="#user" id="user">**사용자**</a> | |
+| | <a href="#user" id="user">**USER**</a> | |
 | 활성 세그먼트 항목 ID | 번호: 사용자의 세그먼트 ID | `${user.active_segment_entry_ids}` |
 | 나이 | 숫자: 사용자의 연령(년 수) | `${사용자.나이}` |
 | 자산 범주 ID(**Available 7.4 U41+**) | 번호: 사용자 카테고리의 ID | `${user.asset_category_ids}` |
@@ -46,7 +46,7 @@
 | 상위 자산 범주 ID(**Available 7.4 U41+**) | 번호: 사용자 카테고리의 모든 상위 카테고리 ID | `${user.parent_asset_category_ids}` |
 | 일반 역할 ID | 숫자: 사용자의 일반 역할에 대한 역할 ID | `${user.regular_role_ids}` |
 | 사용자 그룹 ID | 번호: 사용자가 속한 사용자 그룹의 ID | `${user.user_group_ids}` |
-| | <a href="#conditional-elements" id="conditional-elements">**조건부 요소**\*</a> | |
+| | <a href="#conditional-elements" id="conditional-elements">**CONDITIONAL ELEMENTS**\*</a> | |
 | IP 스택 시티 | 텍스트: 검색 IP 주소가 발생한 도시 | `${ipstack.city}` |
 | IP 스택 대륙 코드 | 텍스트: 검색 IP 주소가 발생한 대륙 코드(예: 북미의 경우 NA) | `${ipstack.continent_code}` |
 | IP 스택 대륙 이름 | 텍스트: 대륙 이름 | `${ipstack.continent_name}` |

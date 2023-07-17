@@ -144,7 +144,7 @@ java -classpath .:* ListTypeDefinitions_GET_FromInstance
 
 ```{literalinclude} ./picklists-api-basics/resources/liferay-v3n6.zip/java/ListTypeDefinitions_GET_FromInstance.java
    :dedent: 1
-   :language: 자바
+   :language: java
    :lines: 11-25
 ```
 

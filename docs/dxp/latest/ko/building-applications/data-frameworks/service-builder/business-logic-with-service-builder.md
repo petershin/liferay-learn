@@ -1,6 +1,6 @@
 # Service Builder를 사용한 비즈니스 로직
 
-Service Builder를 사용하여 모델, 지속성 및 서비스 코드 [](./service-builder-basics/generating-model-persistence-and-service-code.md) 생성하면 비즈니스 로직 추가를 시작할 수 있습니다. Service Builder에서 생성된 엔터티에는 모델 구현 및 로컬 서비스 구현 클래스가 포함됩니다. 애플리케이션의 비즈니스 논리는 이러한 클래스에서 구현될 수 있습니다. 나중에 생성된 서비스에는 지속성 계층에서 CRUD 작업을 호출하는 기본 메서드가 포함됩니다. 비즈니스 논리가 있으면 Service Builder를 다시 실행하여 응용 프로그램의 인터페이스를 전파하면 새 논리를 호출할 수 있습니다.
+Service Builder를 사용하여 모델, 지속성 및 서비스 코드 [생성된 모델, 지속성 및 서비스 코드](./service-builder-basics/generating-model-persistence-and-service-code.md) 생성하면 비즈니스 로직 추가를 시작할 수 있습니다. Service Builder에서 생성된 엔터티에는 모델 구현 및 로컬 서비스 구현 클래스가 포함됩니다. 애플리케이션의 비즈니스 논리는 이러한 클래스에서 구현될 수 있습니다. 나중에 생성된 서비스에는 지속성 계층에서 CRUD 작업을 호출하는 기본 메서드가 포함됩니다. 비즈니스 논리가 있으면 Service Builder를 다시 실행하여 응용 프로그램의 인터페이스를 전파하면 새 논리를 호출할 수 있습니다.
 
 # 예제 프로젝트 보기
 

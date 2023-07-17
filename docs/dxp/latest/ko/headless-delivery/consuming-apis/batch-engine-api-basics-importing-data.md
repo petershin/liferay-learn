@@ -5,12 +5,13 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 <!-- TASK: Link to Batch Engine Overview in the introduction once it is ready !-->
 
 ## 데이터 가져오기
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then follow these steps:
+그런 다음 다음 단계를 따르십시오.
 
-1. Download and unzip [Batch Engine API Basics](./liferay-g4j2.zip) .
+[Batch Engine API 기본 사항](./liferay-g4j2.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
@@ -154,7 +155,7 @@ Then follow these steps:
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `ImportTaskResource` 메서드를 호출합니다.
 
 ```{important}
-[ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com 참조) /liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java)를 참조하십시오.
+[ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java)를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 Batch Engine 가져오기 REST 서비스를 호출하는 예입니다.

@@ -66,7 +66,7 @@ Follow these steps to assign site roles to users:
 
 ## Joining Sites with the My Sites Application
 
-The My Sites Directory application lists the sites a user belongs to. This application is added to User Profile Menu [Dashboard pages](../personal-sites.md) by default. You can view the available open and restricted sites by adding the My Sites application to a page and accessing the *Available Sites* tab. You can request access to any of the sites you're not a member of by selecting the site's *Options* button (![Options](../../../images/icon-actions.png)) and clicking *Join*.
+The My Sites application lists the sites a user belongs to. This application is added to the User Profile Menu [Dashboard pages](../personal-sites.md) by default. You can view the available open and restricted sites by adding the My Sites application to a page and accessing the *All Sites* tab. You can request access to any of the sites you're not a member of by selecting the site's *Options* button (![Options](../../../images/icon-actions.png)) and clicking *Join*.
 
 ![The My Sites Application displays the sites you're a member of and the ones you can join.](./adding-members-to-sites/images/05.png)
 

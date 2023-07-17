@@ -3,13 +3,13 @@ uuid: dcb71149-fcc2-4d97-bd48-bedc5599bd7b
 ---
 # Creating Site Templates
 
-With Site Templates, you can design and configure templates for creating Sites. Each template is built using the same tools as Sites.
+With site templates, you can design and configure templates for creating sites. Each template is built using the same tools as sites.
 
 ```{tip}
-Site Templates are primarily intended for maintaining Pages across multiple Sites. If you need to create and maintain Web Content and other assets across Sites, use [Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md). Also, if automatic propagation is not necessary for your use case, you can [export and import](./exporting-importing-site-templates.md) Site data to transfer it between environments.
+Site templates are primarily intended for maintaining pages across multiple sites. If you need to create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md). Also, if automatic propagation is not necessary for your use case, you can [export and import](./exporting-importing-site-templates.md) site data to transfer it between environments.
 ```
 
-Follow these steps to create a Site Template:
+Follow these steps to create a site template:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
 
@@ -19,24 +19,24 @@ Follow these steps to create a Site Template:
 
 1. Determine whether the template is active or inactive.
 
-   Only active templates are listed during [Site creation](../adding-a-site.md).
+   Only active templates are listed during [site creation](../adding-a-site.md).
 
-1. Determine whether users can directly modify Pages inherited from this template.
+1. Determine whether users can directly modify pages inherited from this template.
 
 1. Toggle *Ready for Propagation* to enable or disable automatic propagation.
 
    See [Propagating Template Changes](./propagating-template-changes.md) to learn more about automatic propagation.
 
-   ![Name and configure the Site Template.](./creating-site-templates/images/01.png)
+   ![Name and configure the site template.](./creating-site-templates/images/01.png)
 
 1. Click *Save*.
 
 Once saved, you can select the template to begin editing it.
 
-The UI for designing the template is identical with the UI for designing Sites. Just open the *Site Template Menu* (![Site Menu](../../../images/icon-product-menu.png)) to access available applications and begin adding Style Books, Page Templates, Pages, and more.
+The UI for designing the template is identical with the UI for designing sites. Just open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)) to access available applications and begin adding style books, page templates, pages, and more.
 
 ```{important}
-Pages inherited from a template cannot be deleted. You also cannot directly add child Pages to them on the Site level. They can only be added or removed in the Site Template.
+Pages inherited from a template cannot be deleted. You also cannot directly add child pages to them on the site level. They can only be added or removed in the site template.
 ```
 
 ## Related Topics

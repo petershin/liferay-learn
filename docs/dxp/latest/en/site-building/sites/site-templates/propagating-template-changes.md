@@ -3,17 +3,17 @@ uuid: 90b72e72-7d53-4a6c-b39c-e50b46174004
 ---
 # Propagating Template Changes
 
-When Site Template propagation is enabled, you can make changes to the template's Pages and automatically propagate those changes to connected Sites. However, making changes to a Site Page inherited from a template prevents the propagation of template changes to that Page. To restore propagation for the Page, you must discard changes made to it in the Site. If you've edited multiple inherited Pages and you'd like to restore propagation from the Site Template, you must reset changes for each one individually.
+When site template propagation is enabled, you can make changes to the template's pages and automatically propagate those changes to connected sites. However, making changes to a site page inherited from a template prevents the propagation of template changes to that page. To restore propagation for the page, you must discard changes made to it in the site. If you've edited multiple inherited pages and you'd like to restore propagation from the site template, you must reset changes for each one individually.
 
 ```{note}
-By default, propagation is triggered for each connected Site individually, when it is first visited by a user after changes are made. However, you can configure your system to also trigger propagation to connected Sites simultaneously whenever users toggle a template to *Ready for Propagation*. See [Configuring Site Template Propagation](./configuring-site-template-propagation.md) for more information.
+By default, propagation is triggered for each connected site individually, when it is first visited by a user after changes are made. However, you can configure your system to also trigger propagation to connected sites simultaneously whenever users toggle a template to *Ready for Propagation*. See [Configuring Site Template Propagation](./configuring-site-template-propagation.md) for more information.
 ```
 
 ## Which Template Changes are Propagated?
 
-Only changes to a template's Pages and Page elements are propagated to connected Sites. This includes newly created Pages as well as any changes to fragments and widgets in existing Pages. Other application data is only copied at initial Site creation; subsequent changes are not automatically propagated.
+Only changes to a template's pages and page elements are propagated to connected sites. This includes newly created pages as well as any changes to fragments and widgets in existing pages. Other application data is only copied at initial site creation; subsequent changes are not automatically propagated.
 
-For this reason, Site Templates are primarily intended for maintaining Pages across multiple Sites. If you need to create and maintain Web Content and other assets across Sites, use [Asset Libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md).
+For this reason, site templates are primarily intended for maintaining pages across multiple sites. If you need to create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md).
 
 ## Enabling and Disabling Propagation
 
@@ -25,11 +25,11 @@ Follow these steps to enable or disable propagation after template creation:
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Site Templates*.
 
-1. Select the desired *template*.
+1. Select the desired template.
 
 1. Click the *Propagation* button (![Propagation Button](../../../images/icon-merge.png))
 
-   If propagation is enabled, click *Disable Propagation* to prevent template changes from being automatically propagated to connected Site Pages.
+   If propagation is enabled, click *Disable Propagation* to prevent template changes from being automatically propagated to connected site pages.
 
    ![If Propagation is enabled, click Disable Propagation.](./propagating-template-changes/images/02.png)
 
@@ -37,26 +37,26 @@ Follow these steps to enable or disable propagation after template creation:
 
    ![If Propagation is disabled, click Ready for Propagation.](./propagating-template-changes/images/03.png)
 
-Alternatively, you can enable or disable automatic propagation via the Site Templates application page. Just click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired template and select *Disable Propagation* or *Ready for Propagation*.
+Alternatively, you can enable or disable automatic propagation via the site templates application page. Just click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired template and select *Disable Propagation* or *Ready for Propagation*.
 
-![Click the Actions button for the desired Site Template and select Disable Propagation or Ready for Propagation.](./propagating-template-changes/images/04.png)
+![Click the *Actions* button for the desired site template and select *Disable Propagation* or *Ready for Propagation*.](./propagating-template-changes/images/04.png)
 
 ## Reconnecting Inherited Pages to Their Template
 
-If you make changes to a Site Page inherited from a template, it is disconnected from the template's Page and is not automatically propagated. To reconnect the Site Page to the template, you must discard your changes to the Site Page.
+If you make changes to a site page inherited from a template, it is disconnected from the template's page and is not automatically propagated. To reconnect the site page to the template, you must discard your changes to the site page.
 
-Follow these steps to discard changes to a Site Page and resync it with its template:
+Follow these steps to discard changes to a site page and resync it with its template:
 
-1. Navigate to the Site Page.
+1. Navigate to the site page.
 
-1. Click the Information icon (![Information](../../../images/icon-control-menu-information.png)) in the Application Bar.
+1. Click the *Aditional Information* icon (![Information](../../../images/icon-control-menu-information.png)) in the Application bar.
 
-   ![Click the Information icon and select Reset Changes.](./propagating-template-changes/images/05.png)
+   ![Click the *Aditional Information* icon and select *Reset Changes*.](./propagating-template-changes/images/05.png)
 
 1. Click *Reset Changes*.
 
    ```{warning}
-   Resetting changes **reverts any changes made to the Site Page directly**. This can result in data loss. Proceed with caution.
+   Resetting changes **reverts any changes made to the site page directly**. This can result in data loss. Proceed with caution.
    ```
 
 <!-- ## Resolving Propagation Conflicts

@@ -17,4 +17,50 @@ building-a-custom-ticketing-system/deploying-a-custom-application.md
 building-a-custom-ticketing-system/implementing-a-documentation-referral-system.md
 ```
 
-Coming soon!
+Liferay makes it easy for you to build digital solutions. For example, create a custom ticketing system with the styling and features suited for your business.
+
+![See the custom ticketing system sample.](./building-a-custom-icketing-system/images/01.png)
+
+This tutorial series walks you through building a custom ticketing system. You'll learn how to
+
+* Define a custom data schema
+* Apply a custom CSS theme
+* Deploy a custom application
+* Implement a documentation referral system
+
+## Prerequisites
+
+Before starting, download the appropriate files and set up your system.
+
+1. Download all the files from [liferay-ticket-workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-ticket-workspace)
+<!--- Will need to update this once we can get a downloadable zip file --->
+
+1. On the command line, navigate to the `liferay-ticket-workspace` folder.
+
+  ```bash
+  cd liferay-ticket-workspace
+  ```
+
+1. Generate a local Liferay bundle.
+
+  ```bash
+  ./gradlew initBundle
+  ```
+
+1. Run the Liferay bundle.
+
+  ```bash
+  ./bundles/tomcat-9.0.73/bin/catalina.sh run
+  ```
+
+1. Sign in to Liferay at <http://localhost:8080> using the email address _test@liferay.com_ and the password _test_. When prompted, change the password to _learn_.
+
+1. Build all the sample projects.
+
+  ```bash
+  ./gradlew build
+  ```
+
+## Next Step
+
+[Customizing a Data Schema](./building-a-custom-icketing-system/customizing-a-data-schema.md)

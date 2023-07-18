@@ -28,7 +28,7 @@ These rules apply to site hierarchy:
 * A site administrator has no default role in any child sites created by other site administrators.
 
 ```{note}
-If you want a aser to have administrative access to all sites in a site/child site hierarchy, you must create a role based on the site administrator role that has the permission *Manage Subsites*.
+If you want a user to have administrative access to all sites in a site/child site hierarchy, you must create a role based on the site administrator role that has the permission *Manage Subsites*.
 ```
 
 ## Navigating Site Hierarchy with the Sites Directory Application

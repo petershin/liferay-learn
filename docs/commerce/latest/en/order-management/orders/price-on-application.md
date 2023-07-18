@@ -3,7 +3,7 @@ uuid: 902c5c67-4087-49ce-9f79-9bde48fffe86
 ---
 # Price on Application
 
-{bdg-secondary}`Available Liferay DXP 7.4 U83+/GA83+`
+{bdg-secondary}`Available Liferay DXP 7.4 U84+/GA84+`
 
 ```{important}
 Price on Application is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information. 

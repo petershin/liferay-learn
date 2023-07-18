@@ -1,7 +1,5 @@
 # Adding a Custom Workflow Action
 
-Coming Soon!
-
 <!--
 Delectable Bonsai needs to implement a workflow for reviewing application approvals and rejections. The `applicationState` field has a bunch of possible values (e.g., open, underReview, onHold, withdrawn, denied, approved). By default, every state value should be directed to the `approved` node in the workflow except for when the `applicationState` field is set to 'denied' or 'approved'. In this case, the workflow should lead to a single-approval workflow.
 

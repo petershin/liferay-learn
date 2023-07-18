@@ -17,7 +17,7 @@ Adding picklist fields to the Distributor Application object follows the same pr
    | Mandatory     | False          |
    | Mark as State | False          |
 
-   ![Add the Business Type picklist field.](./adding-picklist-fields-to-the-object/images/01.png) <!--UPDATE IMG-->
+   ![Add the Business Type picklist field.](./adding-picklist-fields-to-the-object/images/01.png)
 
 1. Add a Distribution Regions field:
 
@@ -83,12 +83,10 @@ Adding picklist fields to the Distributor Application object follows the same pr
 
    ![Add seven picklist fields to Distributor Application.](./adding-picklist-fields-to-the-object/images/02.png)
 
-Now when users fill out a distributor application, they can select from predefined options for each field. Delectable Bonsai can then use these data points to assess the value of each business opportunity.
+When users fill out a distributor application, they can select from predefined options for each field. Delectable Bonsai can then use these data points to assess the value of each business opportunity.
 
 ![Users select from predefined options.](./adding-picklist-fields-to-the-object/images/03.png)
 
-With over 50 fields, the current user interfaces for Distributor Application are no longer viable for creating and displaying entries. This is because the default layout and view include every object field and display them alphabetically. Before forward with modeling data structures, add a custom layout and view to Distributor Application.
-
-<!-- Move the above paragraph to the beginning of the next step. -Rich -->
+Congratulations! You've added all of the fields necessary for the Distributor Application object. Now you can begin designing the object's form layout and table view.
 
 Next: [Adding a Custom Layout and View to Distributor Application](./adding-a-custom-layout-and-view-to-distributor-application.md)

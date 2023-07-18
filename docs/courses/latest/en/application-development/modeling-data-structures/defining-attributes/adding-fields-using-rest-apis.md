@@ -82,12 +82,12 @@ The `object-admin` service provides REST APIs for performing CRUD operations on 
    | `referenceZIPPostalCode`       | Text |
    | `referenceCountry`             | Text |
 
-When finished, the Distributor Application should have 48 fields. These fields can help Delectable Bonsai collect the data they need for evaluating and vetting each applicant in compliance with KYC policies and AML laws.
+When finished, the Distributor Application should have 48 fields.
 
 ![The Distributor Application object should have 48 fields.](./adding-fields-using-rest-apis/images/01.png)
 
-Now Delectable Bonsai must collect data necessary for assessing the relative value of each business opportunity. In this case, Delectable Bonsai wants applicants to select from predefined options. To achieve this, first create picklists.
+Great! These fields can help Delectable Bonsai collect the data they need for evaluating and vetting each applicant in compliance with KYC policies and AML laws.
 
-<!-- Above paragraph should go in next step. End this one with a congratulatory statement. -Rich -->
+Now the object definition needs to collect information to assess the business value of each potential partnership.
 
 Next: [Creating Picklists for Distributor Applications](./creating-picklists-for-distributor-applications.md)

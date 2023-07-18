@@ -1,9 +1,11 @@
 # Adding a Custom Layout and View to Distributor Application
 
-When you published the Distributor Application object, Liferay created a default [layout](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) and [view](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views). The layout provides a UI for creating and editing object entries, and the view provides a UI for viewing and managing existing entries. Here you'll use cURL scripts to create a custom layout and view.
+With over 50 fields, the current user interfaces for Distributor Application are no longer viable for creating and displaying entries. This is because the default [layout](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) and [view](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views) include every object field and display them alphabetically. The layout provides a UI for creating and editing object entries, and the view provides a UI for viewing and managing existing entries.
+
+Before moving forward with modeling data structures, use cURL scripts to create a custom layout and view for Distributor Application.
 
 ```{note}
-Subsequent lessons will explore how to design engaging, responsive user interfaces with Liferay's page builder features. Object custom layouts and views are only used here during development.
+Subsequent lessons will explore how to design engaging, responsive user interfaces with Liferay's page builder features. Here, the custom layout and view are used for demonstration purposes during development.
 ```
 
 ## Adding the Layout and View

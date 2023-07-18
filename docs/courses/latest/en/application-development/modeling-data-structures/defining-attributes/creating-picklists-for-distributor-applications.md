@@ -1,6 +1,8 @@
 # Creating Picklists for Distributor Applications
 
-Liferay picklists are predefined lists of string values users can choose in single-select and multiple-select fields in objects. Delectable Bonsai needs these lists for the Distributor Application object:
+Delectable Bonsai wants to collect information to help them assess the relative value of each business opportunity. In this case, they want applicants to select from predefined options. You can achieve this using Liferay picklists.
+
+Picklists are predefined lists of string values that determine options in single-select and multiple-select fields. Delectable Bonsai needs these lists for the Distributor Application object:
 
 * Business Types
 * Distribution Regions
@@ -9,6 +11,8 @@ Liferay picklists are predefined lists of string values users can choose in sing
 * Product Types
 * Annual Purchase Volumes
 * Product Labels
+
+Here you'll create the first picklist via the Liferay UI.
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Picklists*.
 
@@ -42,7 +46,7 @@ Liferay picklists are predefined lists of string values users can choose in sing
 
 1. Click *Save*.
 
-Once saved, you can use this picklist as a field in the Distributor application object.
+Once saved, you can use this picklist as a field in the Distributor Application object.
 
 Before you do that, Delectable Bonsai needs six more picklists. But instead of creating these lists manually, you'll create them programmatically using the `headless-admin-list-type` REST APIs.
 

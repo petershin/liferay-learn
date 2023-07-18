@@ -1,6 +1,6 @@
 # Adding Fields to the Distributor Application Object
 
-Your next task is to add fields for collecting applicant and contact information: 
+Here you'll add general fields to the Distributor Application object for gathering additional applicant and contact information:
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
@@ -75,9 +75,9 @@ The new fields also appear in the object's default table view.
 
 ![The default table view includes all custom fields.](./adding-fields-to-the-distributor-application-object/images/03.png)
 
-Delectable Bonsai must collect information from potential distributors for compliance with KYC and AML policies. Rather than these fields manually, you'll add them programmatically using the `object-admin` REST APIs.
+Great! These fields can help Delectable Bonsai follow up with prospective applicants.
 
-<!-- Above paragraph should go in next step; end this one with a congratulatory statement for completing the step. -Rich --> 
+Now the object definition needs additional fields for collecting business information in compliance with KYC and AML policies. Rather than add these fields manually, you'll use the `object-admin` REST APIs to add them programmatically.
 
 Next: [Adding Fields Using REST APIs](./adding-fields-using-rest-apis.md)
 

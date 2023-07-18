@@ -25,8 +25,6 @@ When users submit an application, Liferay gives assigns it a friendly URL for vi
 
 1. Drag and drop the *Display Page* fragment into the empty template.
 
-<!-- Duh. Please disregard the other comments on this. I can see now from the screenshot that all these fragments are in a Distributor Application category. Sorry about that; carry on! -Rich -->
-
    ![Drag and drop the Display Page fragment into the empty template.](./creating-a-display-page-for-distributor-applications/images/02.png)
 
    This composition includes numerous fragments that are mapped to Distributor Application fields.

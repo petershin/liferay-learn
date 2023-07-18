@@ -11,8 +11,6 @@ When users submit a distributor application, the success page appears: Applicati
 
 1. Drag and drop the *Success Page* fragment into the empty container at the bottom of the page.
 
-<!-- Same thing here. I'm concerned the naming of these fragments doesn't associate them with the Distributor application. Is it possible to name them in some way to preserve that association? -Rich -->
-
    ![Drag and drop the Success Page fragment into the empty container](./adding-details-to-the-success-page/images/02.png)
 
    This composition includes a Collection Display fragment that uses the Distributor Application's collection provider. The Collection Display also includes sub-fragments that are mapped to these Distributor Application fields:
@@ -21,8 +19,6 @@ When users submit a distributor application, the success page appears: Applicati
    * ID
    * Creation Date
    * Application State
-
-   <!-- The above bullets didn't render in my previewer when they were indented. --Rich --> 
 
    ![The Collection Display fragment is configured to use the Distributor Application's collection provider.](./adding-details-to-the-success-page/images/03.png)
 

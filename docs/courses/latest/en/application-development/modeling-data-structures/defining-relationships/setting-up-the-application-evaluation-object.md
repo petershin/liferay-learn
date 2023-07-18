@@ -1,8 +1,12 @@
 # Setting Up the Application Evaluation Object
 
-Business development managers must consolidate assessments of prospective applicants. To achieve this, Delectable Bonsai team members created an Application Evaluation object in a separate environment. To migrate this object to the development environment, they exported it as a JSON file.
+When reviewing applications, Delectable Bonsai must store evaluation notes for each distributor application they receive. To achieve this, the Delectable Bonsai development team created an Application Evaluation object and added the necessary fields.
 
-Here you'll import the Application Evaluation object into your Liferay instance. But first, create the object's picklists using the `headless-admin-list-type` REST APIs.
+![Import the Application Evaluation object](./setting-up-the-application-evaluation-object/images/01.png)
+
+However, they created the object in a separate environment. To migrate this object to the environment with the Distributor Application object, they exported their definition as a JSON file.
+
+Here you'll use this JSON file to import the Application Evaluation object into your Liferay instance. But first, create the object's picklists using the `headless-admin-list-type` REST APIs. <!--TASK: Use the batch client extension instead. This way you can add the lists and objects.-->
 
 ## Creating the Picklists
 
@@ -32,7 +36,7 @@ The Application Evaluation object requires these picklists: Assessment Scores, R
 
 1. Verify the picklists appear.
 
-   ![Verify the picklists appear.](./setting-up-the-application-evaluation-object/images/01.png)
+   ![Verify the picklists appear.](./setting-up-the-application-evaluation-object/images/02.png)
 
 With the picklists in place, you can import the Application Evaluation object.
 
@@ -57,11 +61,11 @@ With the picklists in place, you can import the Application Evaluation object.
    | Name | `ApplicationEvaluation` |
    | JSON File | `Object_ApplicationEvaluation.json` |
 
-   ![Import the Object_ApplicationEvaluation.json file.](./setting-up-the-application-evaluation-object/images/02.png)
+   ![Import the Object_ApplicationEvaluation.json file.](./setting-up-the-application-evaluation-object/images/03.png)
 
 1. Begin editing the object definition.
 
-   ![Begin editing the object definition.](./setting-up-the-application-evaluation-object/images/03.png)
+   ![Begin editing the object definition.](./setting-up-the-application-evaluation-object/images/04.png)
 
 1. Verify the object includes these custom fields:
 
@@ -73,7 +77,7 @@ With the picklists in place, you can import the Application Evaluation object.
    * Recommendation Comments
    * Recommendations
 
-   ![Verify the object includes these custom fields.](./setting-up-the-application-evaluation-object/images/04.png)
+   ![Verify the object includes these custom fields.](./setting-up-the-application-evaluation-object/images/05.png)
 
 1. Go to the *Details* tab.
 

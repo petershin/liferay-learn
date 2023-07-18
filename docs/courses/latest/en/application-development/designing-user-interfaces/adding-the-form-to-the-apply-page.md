@@ -10,10 +10,6 @@ Add the provided form fragment composition to the Apply page and configure its e
 
 1. Drag and drop the *Form Page* fragment into the empty Fragment Elements container at the bottom of the page.
 
-<!-- Is it possible to rename the fragments so they make sense within the context of the application? For example, calling the fragment Form Page provides no clue in the UI that it's for the distributor application. This could cause confusion for content creators not knowing what the fragment is for when they're assembling pages. 
-
-There must be a best practice for fragment naming here somewhere. Maybe we could recommend naming it Dist-Form Page or something like that? -Rich -->
-
    ![Drag and drop the Form Page fragment into the empty Fragment Elements container.](./adding-the-form-to-the-apply-page/images/02.png)
 
    This includes a form container that's mapped to the Distributor Application object and its fields. The form organizes form elements into these groups:

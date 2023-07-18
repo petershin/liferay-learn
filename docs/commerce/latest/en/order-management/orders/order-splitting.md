@@ -4,6 +4,12 @@ uuid: 370f3ac0-72a0-4e7a-a731-36e094f220ac
 
 # Order Splitting
 
+{bdg-secondary}`Available Liferay DXP 7.4 U84+/GA84+`
+
+```{important}
+Order splitting is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information. 
+```
+
 Sometimes an order has multiple product lines or products fulfilled by different suppliers. In such cases, you may want to split the order into independently fulfilled sub-orders. 
 
 Order splitting splits a customer order into one or more supplier orders based on the order item's catalog. It works in conjunction with supplier roles. See [Supplier Role](../suppliers/supplier-role.md) for more information.

@@ -27,7 +27,7 @@ Site templates support all site applications except staging, workflow, membershi
 Once you've created a site using a template, you can make changes to the template's pages and automatically propagate those changes to connected sites. See [Propagating Template Changes](./site-templates/propagating-template-changes.md) for more information.
 
 ```{important}
-Site templates are primarily intended for maintaining pages across multiple sites. If you need to create and maintain web content and other assets across sites, use [Asset Libraries](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md).
+Site templates are primarily intended for maintaining pages across multiple sites. If you need to create and maintain web content and other assets across sites, use [asset libraries](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md).
 ```
 
 ::::{grid} 2

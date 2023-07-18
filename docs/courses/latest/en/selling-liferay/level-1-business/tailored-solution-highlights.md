@@ -1,6 +1,11 @@
 ---
 toc:
-  - ./tailored-solution-highlights/.md
+  - ./tailored-solution-highlights/customer-portals.md
+  - ./tailored-solution-highlights/digital-commerce-sites.md
+  - ./tailored-solution-highlights/external-websites.md
+  - ./tailored-solution-highlights/supplier-portals.md
+  - ./tailored-solution-highlights/partner-portals.md
+  - ./tailored-solution-highlights/modern-intranets.md
 uuid: 04c0d21c-dbf1-443e-b097-f053a387e2dd
 ---
 

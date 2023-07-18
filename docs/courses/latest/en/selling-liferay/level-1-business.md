@@ -43,43 +43,43 @@ Start level 1 with [Tailored Solution Highlights](./level-1-business/tailored-so
 :gutter: 3 3 3 3
 
 :::{grid-item-card} Tailored Solution Highlights
-- ./level-1-business/tailored-solution-highlights.md
+:link: ./level-1-business/tailored-solution-highlights.md
 
 This module explores the tailored solutions that have been built on Liferay, showcasing flexibility and possibilities with real examples.
 :::
 
 :::{grid-item-card} Outbound Prospecting 101 for Liferay opportunities
-- ./level-1-business/outbound-prospecting.md
+:link: ./level-1-business/outbound-prospecting.md
 
 This module provides best practices for outbound prospecting for Liferay opportunities.
 :::
 
 :::{grid-item-card} Liferay Pricing
-- ./level-1-business/liferay-pricing.md
+:link: ./level-1-business/liferay-pricing.md
 
 This module explains the pricing model for Liferay Experience Cloud SaaS, PaaS, and DXP Self-Hosted.
 :::
 
 :::{grid-item-card} Liferay Sales Presentations and How to Master Them
-- ./level-1-business/liferay-sales-presentations.md
+:link: ./level-1-business/liferay-sales-presentations.md
 
 The module outlines the types of sales presentations that are available, along with how and when to use them.
 :::
 
 :::{grid-item-card} Sales Funnel and Best Practices for Opportunity Progress
-- ./level-1-business/sales-funnel-best-practices.md
+:link: ./level-1-business/sales-funnel-best-practices.md
 
 This module overviews how a Liferay opportunity progresses through the sales funnel and the typical steps in the buyer journey and sales process.
 :::
 
 :::{grid-item-card} Competitive Intelligence - Battlecards
-- ./level-1-business/battlecards.md
+:link: ./level-1-business/battlecards.md
 
 This module reviews the Battlecards that are available for competitive intelligence.
 :::
 
 :::{grid-item-card} Liferay Contracts
-- ./level-1-business/liferay-contracts.md
+:link: ./level-1-business/liferay-contracts.md
 
 This module provides an overview of Liferay’s customer contracting framework.
 :::

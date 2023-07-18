@@ -69,4 +69,4 @@ For more detailed information see [Klabin](https://www.liferay.com/web/guest/res
 
 Congratulations, you've reached the end of the Tailored Solutions module!
 
-Next: Learn how to run an effective [outbound prospecting](./level-1-business/outbound-prospecting.md) cadence.
+Next: Learn how to run an effective [outbound prospecting](../outbound-prospecting.md) cadence.

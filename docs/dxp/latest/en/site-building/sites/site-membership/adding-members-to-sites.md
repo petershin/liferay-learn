@@ -9,14 +9,14 @@ Users and sites are central concepts in Liferay DXP. Sites are where all your co
 * Configuring Users to Automatically Join a Site
 * [Creating Teams](./creating-teams-for-sites.md) or groups of Site Members for various site functions
 
-The steps below show how to add users manually to sites and how to provide options for self management.
+The steps below show how to add users manually to sites and how to provide options for self-management.
 
 ## Managing Site Membership
 
-Administrators can manage site members from that site's Memberships page.
+Administrators can manage site members from that site's Memberships app.
 
-1. Open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)), click on *Go to Other Site*, and select the site you want to manage. 
-1. Click on *People* &rarr; *Memberships* in the Product Menu.
+1. Open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)), click  the compass icon(![Compass Icon](../../../images/icon-compass.png)), and select the site you want to manage. 
+1. Select *People* &rarr; *Memberships* in the Product Menu.
 
 From here you can manage site memberships, organizations, and user group associations. You can learn more about those in [Users and Organizations](../../../users-and-permissions.md). On this page, you can see a list of all current site members and you can add or remove user memberships from the site.
 
@@ -26,7 +26,7 @@ From here you can manage site memberships, organizations, and user group associa
 
 Follow these steps to make an existing user a member of the site:
 
-1. Click the *New* (![Add User](../../../images/icon-add.png)) button in the top right of the screen.
+1. Click the *Add* (![Add User](../../../images/icon-add.png)) button in the top right of the screen.
 1. Use *Filter and Order* or the *Search* function to locate the user you want to add to the site.
 1. Select the user(s) you want to add and click *Done*.
 

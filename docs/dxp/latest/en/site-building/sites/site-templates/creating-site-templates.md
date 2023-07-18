@@ -33,7 +33,7 @@ Follow these steps to create a site template:
 
 Once saved, you can select the template to begin editing it.
 
-The UI for designing the template is identical with the UI for designing sites. Just open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)) to access available applications and begin adding style books, page templates, pages, and more.
+The UI for designing the template is identical to the UI for designing sites. Just open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)) to access available applications and begin adding style books, page templates, pages, and more.
 
 ```{important}
 Pages inherited from a template cannot be deleted. You also cannot directly add child pages to them on the site level. They can only be added or removed in the site template.

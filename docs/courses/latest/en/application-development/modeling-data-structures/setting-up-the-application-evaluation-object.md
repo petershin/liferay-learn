@@ -4,7 +4,7 @@ When reviewing applications, Delectable Bonsai must store evaluation notes for e
 
 ![Import the Application Evaluation object](./setting-up-the-application-evaluation-object/images/01.png)
 
-However, they created the object in a separate environment. To migrate this object to the environment with the Distributor Application object, they exported their definition as a JSON file.
+They created this object definition in a separate environment, but they exported it as a JSON so you can import it to your environment with the Distributor Application object.
 
 Here you'll use this JSON file to import the Application Evaluation object into your Liferay instance. But first, create the object's picklists using the `headless-admin-list-type` REST APIs. <!--TASK: Use the batch client extension instead. This way you can add the lists and objects.-->
 
@@ -15,7 +15,7 @@ The Application Evaluation object requires these picklists: Assessment Scores, R
 1. Download and unzip the resources for [this exercise](./liferay-w1m9.zip):
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-relationships/setting-up-the-application-evaluation-object/liferay-w1m9.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/setting-up-the-application-evaluation-object/liferay-w1m9.zip -O
    ```
 
    ```bash
@@ -45,14 +45,14 @@ With the picklists in place, you can import the Application Evaluation object.
 1. Download the Application Evaluation JSON file:
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-relationships/setting-up-the-application-evaluation-object/Object_ApplicationEvaluation.json -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/setting-up-the-application-evaluation-object/Object_ApplicationEvaluation.json -O
    ```
 
    This file includes the object's basic schema, including general configurations and custom fields.
 
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
+1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
-1. Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) in the Application Bar and select *Import*.
+1. Click *Actions* ( ![Actions Button](../../images/icon-actions.png) ) in the Application Bar and select *Import*.
 
 1. Enter these details and click *Import*
 

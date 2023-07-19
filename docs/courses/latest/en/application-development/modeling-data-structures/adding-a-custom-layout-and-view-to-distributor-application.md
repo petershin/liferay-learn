@@ -13,7 +13,7 @@ Subsequent lessons will explore how to design engaging, responsive user interfac
 1. Download and unzip the resources for [this exercise](./liferay-t7z2.zip).
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-attributes/adding-a-custom-layout-and-view-to-distributor-application/liferay-t7z2.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/adding-a-custom-layout-and-view-to-distributor-application/liferay-t7z2.zip -O
    ```
 
    ```bash
@@ -76,9 +76,9 @@ Practice creating entries in the Distributor Application object to verify the ob
 
 So far you've added all the fields and picklists Delectable Bonsai needs for following KYC policies, complying with AML laws, and weighing the prospective value of each application.
 
-Now Delectable Bonsai needs a way to store evaluation notes and relate them to specific applications. For this, you'll use object relationships.
+Now Delectable Bonsai needs a way to store evaluation notes and relate them to specific applications. For this, you'll setup the Application Evaluation definition and implement object relationships.
 
-Next: [Defining Relationships](../defining-relationships.md)
+Next: [Setting Up the Application Evaluation Object](./setting-up-the-application-evaluation-object.md)
 
 ## Relevant Concepts
 

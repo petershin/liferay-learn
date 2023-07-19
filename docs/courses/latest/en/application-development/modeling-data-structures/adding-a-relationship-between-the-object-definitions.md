@@ -6,7 +6,7 @@ Delectable Bonsai must relate an application to multiple evaluations. This invol
 
 1. Go to the *Relationships* tab.
 
-1. Click *Add* (![Add Button](../../../images/icon-add.png)) and enter these details:
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and enter these details:
 
    | Field  | Value                      |
    |:-------|:---------------------------|

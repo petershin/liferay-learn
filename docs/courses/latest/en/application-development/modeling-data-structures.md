@@ -1,8 +1,16 @@
 ---
 toc: 
   - ./modeling-data-structures/determining-data-entities.md
-  - ./modeling-data-structures/defining-attributes.md
-  - ./modeling-data-structures/defining-relationships.md
+  - ./modeling-data-structures/adding-fields-to-the-distributor-application-object.md
+  - ./modeling-data-structures/adding-fields-using-rest-apis.md
+  - ./modeling-data-structures/creating-picklists-for-distributor-applications.md
+  - ./modeling-data-structures/creating-picklists-using-rest-apis.md
+  - ./modeling-data-structures/adding-picklist-fields-to-the-object.md
+  - ./modeling-data-structures/adding-a-custom-layout-and-view-to-distributor-application.md
+  - ./modeling-data-structures/setting-up-the-application-evaluation-object.md
+  - ./modeling-data-structures/adding-a-relationship-between-the-object-definitions.md
+  - ./modeling-data-structures/adding-the-relationship-to-custom-layouts.md
+  - ./modeling-data-structures/relating-object-entries.md
 uuid: 34f7d1c1-19eb-43cf-8884-86662c70a342
 ---
 
@@ -35,13 +43,13 @@ Delectable Bonsai needs to store and manage two types of data entities for their
 * Distributor Applications
 * Application Evaluations
 
-<!--![](./modeling-data-structures/images/01.png) -->
+<!--FINISH: ![](./modeling-data-structures/images/01.png) -->
 
-Each distributor application should store the necessary information for verifying each applicant's business identity and credit for Know Your Customer (KYC) best practice and compliance with Anti-Money Laundering (AML) laws. Additionally, they need to collect information that can help them assess the relative value of each prospective distributor.
+Each distributor application should store the necessary business information for verifying each applicant's identity and credit for Know Your Customer (KYC) best practice and compliance with Anti-Money Laundering (AML) laws. Additionally, they need to collect information that can help them assess the relative value of each prospective distributor.
 
-The application evaluations should store notes and recommendations on each applicant during the review process. Finally, users must be able to relate each evaluation to an application, and each application to multiple evaluations.
+Application evaluations should store notes and recommendations made during the review process. Also, users must be able to relate each evaluation to an application and each application to multiple evaluations.
 
-The first step to implementing this solution is to create a Distributor Application object for creating and managing applications submitted by potential distributors.<!--REFINE-->
+The first step to implementing this solution is to create a Distributor Application object for receiving and managing applications from potential distributors.
 
 Ready?
 

@@ -14,15 +14,15 @@ Picklists are predefined lists of string values that determine options in single
 
 Here you'll create the first picklist via the Liferay UI.
 
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Picklists*.
+1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Picklists*.
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ), enter Business Types for name, and click *Save*.
+1. Click *Add* ( ![Add Button](../../images/icon-add.png) ), enter Business Types for name, and click *Save*.
 
    ![Create the Business Types picklist.](creating-picklists-for-distributor-applications/images/01.png)
 
 1. Begin editing the picklist.
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) and add these items to the picklist:
+1. Click *Add* ( ![Add Button](../../images/icon-add.png) ) and add these items to the picklist:
 
    | Name                 | Key                   |
    |:---------------------|:----------------------|

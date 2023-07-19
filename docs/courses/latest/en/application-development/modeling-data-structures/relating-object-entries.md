@@ -7,7 +7,7 @@ After defining an object relationship, you can relate entries in two ways: the L
 1. Download and unzip the resources for [this exercise](./liferay-g2n9.zip):
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-relationships/relating-object-entries/liferay-g2n9.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/relating-object-entries/liferay-g2n9.zip -O
    ```
 
    ```bash
@@ -70,7 +70,7 @@ Now, relate these entries.
 
 1. Go to the *Evaluation Notes* tab.
 
-1. Click *Add* (![Add Button](../../../images/icon-add.png)) and select from existing application evaluations.
+1. Click *Add* (![Add Button](../../images/icon-add.png)) and select from existing application evaluations.
 
    ![Select from existing application evaluations.](./relating-object-entries/images/06.png)
 
@@ -88,7 +88,7 @@ Now, relate these entries.
 
 Congratulations! You have successfully modeled the necessary data structures for Delectable Bonsai's distributor onboarding flow. Now you can start incorporating the business logic necessary for bringing your application to life, such as workflows, validations, notifications. You'll do this in the next module.
 
-Module Two: [Implementing Business Logic](../../implementing-business-logic.md)
+Module Two: [Implementing Business Logic](../implementing-business-logic.md)
 
 ## Relevant Concepts
 

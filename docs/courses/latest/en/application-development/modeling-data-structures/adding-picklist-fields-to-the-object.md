@@ -2,11 +2,11 @@
 
 Adding picklist fields to the Distributor Application object follows the same process as any other field type, though they have some additional configuration options.
 
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
+1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
 1. Begin editing the Distributor Application object and go to the *Fields* tab.
 
-1. Click *Add* (![Add Button](../../../images/icon-add.png)), enter these details, and click *Save*:
+1. Click *Add* (![Add Button](../../images/icon-add.png)), enter these details, and click *Save*:
 
    | Field         | Value          |
    |:--------------|:---------------|

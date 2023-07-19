@@ -5,7 +5,7 @@ The `headless-admin-list-type` service provides REST APIs for performing CRUD op
 1. Download and unzip the resources for [this exercise](./liferay-r5w2.zip).
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-attributes/creating-picklists-for-distributor-applications/liferay-r5w2.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/creating-picklists-for-distributor-applications/liferay-r5w2.zip -O
    ```
 
    ```bash

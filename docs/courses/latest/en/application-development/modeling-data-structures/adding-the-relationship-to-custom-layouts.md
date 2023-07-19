@@ -33,7 +33,7 @@ Here you'll update the custom layout for Distributor Application to include the 
 1. Download and unzip the resources for [this exercise](./liferay-h2x9.zip):
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/defining-relationships/setting-up-the-application-evaluation-object/liferay-h2x9.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/setting-up-the-application-evaluation-object/liferay-h2x9.zip -O
    ```
 
    ```bash

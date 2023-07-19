@@ -1,3 +1,6 @@
+---
+uuid: e886f87b-8f3d-41a5-bbd7-fb870e569cdc
+---
 # Adding a Custom Workflow Action
 
 <!--
@@ -21,7 +24,7 @@ Enable the workflow via the Liferay UI.
 
 -->
 
-Next: [Automating Notifications](../automating-notifications.md)
+Next: [Adding Notification Templates](./adding-notification-templates.md)
 
 ## Relevant Concepts
 

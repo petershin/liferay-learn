@@ -1,16 +1,15 @@
+---
+uuid: 3f4f5c86-c34a-4bf8-b96b-ad2d9795e1cb
+---
 # Validating Fields
 
-Validations set rules for determining whether field values are valid, ensuring user input meets your criteria. By validating data at the point of entry, applications can ensure the data meets the required format, type, and constraints, preventing data errors and reducing the need for manual data cleanup. In this way, validations can improve the integrity and consistency of gathered data (e.g., email addresses, phone numbers). In Liferay, this involves adding validations directly to the object definition.
-
-<!-- Implementation img -->
-
-So far, Delectable Bonsai has no way to ensure applicants provide valid, consistent data for Distributor Application's email, phone number, and URL fields. Here you'll add these validations.
+So far, Delectable Bonsai has no way to ensure applicants provide valid, consistent data in their applications. Here you'll add validations for Distributor Application's email, phone number, and URL fields to improve data integrity and consistency.
 
 ![Add validations for email, phone number, and URL fields.](./validating-fields/images/01.png)
 
 ## Adding Validations for Email Fields
 
-Liferay provides the `isEmailAddress()` function for checking whether a field's value uses standard email elements (e.g., `@gmail`, `.com`).
+Liferay provides the `isEmailAddress()` function for checking whether a field's value uses standard email elements (e.g., @gmail, .com).
 
 Follow these steps to validate the `applicantEmail` and `primaryContactEmail` fields:
 
@@ -65,7 +64,7 @@ Follow these steps to validate the `applicantEmail` and `primaryContactEmail` fi
 
 ## Adding Validation for Phone Number Fields
 
-Liferay provides the `match()` function for checking whether the field's value matches a specified RegEx pattern or string value. In this scenario, Delectable Bonsai wants to use this expression to validate their phone number fields: `^(\+\d{1,3} ?)?((\(\d{1,3}\))|\d{1,3})[- .]?\d{3,4}[- .]?\d{4}$`. <!--REFINE-->
+Liferay provides the `match()` function for checking whether the field's value matches a specified RegEx pattern or string value. In this scenario, Delectable Bonsai wants to use this expression to validate their phone number fields: `^(\+\d{1,3} ?)?((\(\d{1,3}\))|\d{1,3})[- .]?\d{3,4}[- .]?\d{4}$`.
 
 Follow these steps to validate the `primaryContactPhoneNumber`, `businessPhoneNumber`, `bankPhoneNumber`, `referencePhoneNumber` fields:
 
@@ -92,6 +91,8 @@ Follow these steps to validate the `primaryContactPhoneNumber`, `businessPhoneNu
    | Expression Builder | `match(primaryContactPhoneNumber, "^(\+\d{1,3} ?)?((\(\d{1,3}\))|\d{1,3})[- .]?\d{3,4}[- .]?\d{4}$") OR primaryContactPhoneNumber == ""` |
    | Error Message      | Please enter a valid phone number for the primary contact.                                                                               |
 
+   <!--FINISH: Confirm the above regex pattern renders correctly in the site. In my preview, the | character breaks the table. -->
+
    This validation supports a wide range of international phone numbers, allowing for international country codes, area codes, and separators. It also allows for format variations (e.g., spaces, dashes, dots), but enforces a minimum of 7 digits and a maximum of 11 digits. Since the field is optional, this validation also allows for empty values.
 
 1. Click *Save*.
@@ -100,7 +101,9 @@ Follow these steps to validate the `primaryContactPhoneNumber`, `businessPhoneNu
 
 ## Adding Validation for Business Website Field
 
-Liferay provides the `isURL()` function for checking whether the field's value uses standard URL elements (e.g., `http`, `://`, `.com`).
+Liferay provides the `isURL()` function for checking whether the field's value uses standard URL elements (e.g., http, ://, .com).
+
+<!--FINISH: Confirm :// renders correctly in the site. My preview renders :/ as an emoji. -->
 
 Follow these steps to validate the `businessWebsite` field:
 
@@ -129,15 +132,31 @@ Follow these steps to validate the `businessWebsite` field:
 
 1. Click *Save*.
 
+When finished, you should have seven validations.
+
+![You should have seven validations.](./validating-fields/images/07.png)
+
 ## Testing the Validations
 
-Now that you've added these validations, you can begin testing them now.
+Since they are active, you can begin testing your validations:
 
-Liferay validates each field upon entry submission. If the value does not follow validation rules, Liferay displays the validation's error message.
+1. Open Distributor Applications and begin editing an entry.
 
-![Liferay displays the validation's error message.](./validating-fields/images/06.png) <!--ADD IMAGE-->
+1. Update an email field to an invalid value and click *Save*. The validation's error message should appear.
 
-After adding validations, Delectable Bonsai wants to ensure only the intended users have access to application and evaluation data.
+   ![Liferay displays the validation's error message.](./validating-fields/images/08.png)
+
+1. Enter a valid email for the field and click *Save*. It should save successfully.
+
+1. Repeat this process to test the phone number and website validations.
+
+   <!-- ![Liferay displays the validation's error message.](./validating-fields/images/09.png) -->
+
+   <!-- ![Liferay displays the validation's error message.](./validating-fields/images/10.png) -->
+
+Great! Distributors submitting applications must enter valid field values.
+
+Now Delectable Bonsai wants to ensure only the intended users have access to data for the Distributor Application and Application Evaluation objects.
 
 Next: [Managing Access to Data](./managing-access-to-data.md)
 

@@ -1,16 +1,17 @@
-# Adding Notification Actions to Distributor Application
+---
+uuid: 2fb3f112-f8ca-456c-85a3-ac9386a618c0
+---
+# Adding Notification Actions
 
-Delectable Bonsai wants to improve visibility for the applications they receive. The first two actions trigger when an entry is created. The other two depend on status updates. <!--FINISH-->
+Delectable Bonsai wants to improve visibility for new applications. They also want to automate updates for applicants, notifying them when their application is received, approved, or denied. Here you'll add these notification actions to the Distributor Application object.
 
-![Add notifications actions to Distributor Application.](./adding-notification-actions-to-distributor-application/images/01.png)
+![Add notification actions to the Distributor Application object.](./adding-notification-actions/images/01.png)
 
 ## Action for Application Submitted
 
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
-
 1. Begin editing the *Distributer Application* object.
 
-1. Go to the *Actions* tab and click *Add* ( ![Add Button](../../../images/icon-add.png) ).
+1. Go to the *Actions* tab and click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
 1. Enter these values in the Basic Info tab:
 
@@ -21,7 +22,7 @@ Delectable Bonsai wants to improve visibility for the applications they receive.
    | Description  | On After Add, send notifications to administrative users. |
    | Active       | True                                                      |
 
-   ![Enter these values in the Basic Info tab.](./adding-notification-actions-to-distributor-application/images/02.png)
+   ![Enter these values in the Basic Info tab.](./adding-notification-actions/images/02.png)
 
 1. Go to the *Action Builder* tab and set these values:
 
@@ -32,20 +33,20 @@ Delectable Bonsai wants to improve visibility for the applications they receive.
    | Action                | Notification                       |
    | Notification Template | Application Submitted, Admin, User |
 
-   ![Enter these values in the Action Builder tab.](./adding-notification-actions-to-distributor-application/images/03.png)
+   ![Enter these values in the Action Builder tab.](./adding-notification-actions/images/03.png)
 
 1. Click *Save*.
 
 ## Action for Application Received
 
-1. In the *Actions* tab, click *Add* ( ![Add Button](../../../images/icon-add.png) ).
+1. In the *Actions* tab, click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
 1. Enter these values for Basic Info:
 
    | Field        | Value                                           |
    |:-------------|:------------------------------------------------|
    | Action Label | Application Received                            |
-   | Action Name  | applicationReceived                             |
+   | Action Name  | `applicationReceived`                           |
    | Description  | On After Add, send notifications to applicants. |
    | Active       | True                                            |
 
@@ -62,14 +63,14 @@ Delectable Bonsai wants to improve visibility for the applications they receive.
 
 ## Action for Application Approved
 
-1. In the *Actions* tab, click *Add* ( ![Add Button](../../../images/icon-add.png) ).
+1. In the *Actions* tab, click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
 1. Enter these values for Basic Info:
 
    | Field        | Value                                                                       |
    |:-------------|:----------------------------------------------------------------------------|
    | Action Label | Application Approved                                                        |
-   | Action Name  | applicationApproved                                                         |
+   | Action Name  | `applicationApproved`                                                       |
    | Description  | On After Update, send notifications to applicants when state is 'Approved'. |
    | Active       | True                                                                        |
 
@@ -86,14 +87,14 @@ Delectable Bonsai wants to improve visibility for the applications they receive.
 
 ## Action for Application Denied
 
-1. In the *Actions* tab, click *Add* ( ![Add Button](../../../images/icon-add.png) ).
+1. In the *Actions* tab, click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
 1. Enter these values for Basic Info:
 
    | Field        | Value                                                                     |
    |:-------------|:--------------------------------------------------------------------------|
    | Action Label | Application Denied                                                        |
-   | Action Name  | applicationDenied                                                         |
+   | Action Name  | `applicationDenied`                                                       |
    | Description  | On After Update, send notifications to applicants when state is 'Denied'. |
    | Active       | True                                                                      |
 
@@ -112,27 +113,29 @@ Delectable Bonsai wants to improve visibility for the applications they receive.
 
 Now that you've added and activated the notification actions, you can trigger them by adding and updating object entries:
 
-1. Go to the Distributor Application page and create an new entry.
+1. Go to the Distributor Applications page and create an new entry.
 
 1. Verify the Application Submitted and Application Received actions run.
 
-   ![Verify the Application Submitted and Application Received actions run.](./adding-notification-actions-to-distributor-application/images/04.png)
+   ![Verify the Application Submitted and Application Received actions run.](./adding-notification-actions/images/04.png)
 
 1. Update the application's state to *Approved*.
 
 1. Verify the Application Approved action runs.
 
-   ![Verify the Application Approved action runs.](./adding-notification-actions-to-distributor-application/images/05.png)
+   ![Verify the Application Approved action runs.](./adding-notification-actions/images/05.png)
 
 1. Update the application's state to *Denied*.
 
 1. Verify the Application Denied action runs.
 
-   ![Verify the Application Denied action runs.](./adding-notification-actions-to-distributor-application/images/06.png)
+   ![Verify the Application Denied action runs.](./adding-notification-actions/images/06.png)
 
-Congratulations! You've successfully added the business logic necessary for the Distributor Application object. Now you can design a user interface using Liferay's page builder features.
+Great! These notifications can help improve visibility for new applications and keep applicants up to date on the state of their application.
 
-Module Three: [Designing User Interfaces](../../designing-user-interfaces.md)
+Now Delectable Bonsai wants to provide their Business Development Managers with a way to easily create business accounts for approved applicants.
+
+Next: [Automating Account Creation](./automating-account-creation.md)
 
 ## Relevant Concepts
 

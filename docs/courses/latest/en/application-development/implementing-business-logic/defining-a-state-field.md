@@ -1,20 +1,25 @@
-# Adding a State Field to Distributor Application
+---
+uuid: ce494ea9-0891-471c-8add-89d471009f47
+---
+# Defining a State Field
 
-<!-- INTRO -->
+Delectable Bonsai wants to define a custom state field for tracking an application's progress and triggering additional business logic. Here you'll add a picklist that defines these states, use it for a state field in the Distributor Application object, and manage the state field's flow.
 
 ## Adding a Picklist for Application States
 
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Picklists*.
+<!--TASK: Use client extensions or use the Export/Import center when ready. -->
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ).
+1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Picklists*.
+
+1. Click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
 1. For name, enter Application States and click *Save*.
 
 1. Begin editing the picklist.
 
-   ![Create and edit the Application States picklist.](./adding-a-state-field/images/02.png)
+   ![Create and edit the Application States picklist.](./defining-a-state-field/images/01.png)
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) to add these items to the picklist:
+1. Click *Add* ( ![Add Button](../../images/icon-add.png) ) to add these items to the picklist:
 
    | Name         | Key           |
    |:-------------|:--------------|
@@ -36,11 +41,11 @@
    | `APPLICATION_STATE_WITHDRAWN`    |
    | `APPLICATION_STATE_ON_HOLD`      |
 
-   ![Add items to the picklist and update their ERCs.](./adding-a-state-field/images/03.png)
+   ![Add items to the picklist and update their ERCs.](./defining-a-state-field/images/02.png)
 
 1. Change the Picklist's ERC to `LIST_APPLICATION_STATES`.
 
-   ![Update the picklist's ERC.](./adding-a-state-field/images/04.png)
+   ![Update the picklist's ERC.](./defining-a-state-field/images/03.png)
 
 1. Click *Save*.
 
@@ -48,11 +53,11 @@ You can now use the picklist to create a state field in the Distributor Applicat
 
 ## Adding the Application State Field
 
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
+1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
 1. Begin editing the Distributor Application object and go to the *Fields* tab.
 
-1. Click *Add* (![Add Button](../../../images/icon-add.png)), enter these details, and click *Save*:
+1. Click *Add* (![Add Button](../../images/icon-add.png)), enter these details, and click *Save*:
 
    | Field         | Value              |
    |:--------------|:-------------------|
@@ -64,7 +69,7 @@ You can now use the picklist to create a state field in the Distributor Applicat
    | Mark as State | True               |
    | Default Value | Open               |
 
-   ![Add the Application State field to the Distributor Application object.](./adding-a-state-field/images/05.png)
+   ![Add the Application State field to the Distributor Application object.](./defining-a-state-field/images/04.png)
 
 ## Managing State Flow
 
@@ -83,7 +88,7 @@ You can now use the picklist to create a state field in the Distributor Applicat
    | Withdrawn    | Open                                 |
    | On Hold      | Open, Under Review                   |
 
-   ![Set these ](./adding-a-state-field/images/06.png)
+   ![Set these ](./defining-a-state-field/images/05.png)
 
 1. Click *Save*.
 
@@ -99,7 +104,7 @@ To practice using the application state, you must first add the field to the obj
 
 1. In the Info tab, rename the layout to Layout with State Field.
 
-   ![Rename the layout to Layout with State Field.](./adding-a-state-field/images/07.png)
+   ![Rename the layout to Layout with State Field.](./defining-a-state-field/images/06.png)
 
 1. Go to the *Layout* tab
 
@@ -107,7 +112,7 @@ To practice using the application state, you must first add the field to the obj
 
 1. Select the Application State field and click *Save*.
 
-   ![Add the Application State field to the General Details block.](./adding-a-state-field/images/08.png)
+   ![Add the Application State field to the General Details block.](./defining-a-state-field/images/07.png)
 
 1. Click *Save* for the layout.
 
@@ -117,28 +122,41 @@ To practice using the application state, you must first add the field to the obj
 
 1. In the Info tab, rename the view to View with State Field.
 
-   ![Rename the view to View with State Field.](./adding-a-state-field/images/09.png)
+   ![Rename the view to View with State Field.](./defining-a-state-field/images/08.png)
 
 1. Go to the *View Builder* tab.
 
 1. Click *Add*, select the *Application State* field, and click *Save*.
 
-   ![Add the Application State field to the view.](./adding-a-state-field/images/10.png)
+   ![Add the Application State field to the view.](./defining-a-state-field/images/09.png)
+
+1. Drag and drop fields to reorder them:
+
+   * ID
+   * Applicant Name
+   * Business Name
+   * Create Date
+   * Application State
+   * Status
 
 1. Click *Save* for the view.
 
-### Creating Entries
+### Using the Field
 
-Go to the Distributor Application page. Begin editing an existing entry and update the value for Application State. Available options depend on the defined state flow. <!---->
+1. Go to Distributor Applications and begin editing an existing application. Even though the entry was created before the state field was added, it's set to the default value.
 
-![Available options depend on the defined state flow.](./adding-a-state-field/images/11.png)
+1. Update the state field's value and click *Save*. Notice that available options depend on the field's current value.
 
-The state field also appears in the view.
+   ![Available options depend on the state flow.](./defining-a-state-field/images/10.png)
 
-![The state field appears in the view.](./adding-a-state-field/images/12.png)
+1. Begin editing the same application.
+
+1. Update the state field again. Notice that the options are different.
+
+   ![State field options are different.](./defining-a-state-field/images/11.png)
 
 Great! Now that you've added a state field, Delectable Bonsai wants to add a workflow process that requires review for when users update it to 'approved' or 'denied'.
 
-Next: [Adding a Custom Workflow Action](./adding-a-custom-workflow-action.md)
+Next: [Adding a Custom Workflow](./adding-a-custom-workflow.md)
 
 ## Relevant Concepts

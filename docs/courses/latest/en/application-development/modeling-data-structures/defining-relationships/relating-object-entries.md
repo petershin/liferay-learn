@@ -25,40 +25,66 @@ After defining an object relationship, you can relate entries in two ways: the L
 1. Run this command to create three entries for the Distributor Application object:
 
    ```bash
-   
+   ./DistributorApplication_POST_Batch.sh
    ```
 
-1. Verify the entries appear in the Distributor Application application page:
+1. Verify the entries appear in Distributor Applications:
 
-   ![]()
+   ![Verify the entries appear in Distributor Applications.](./relating-object-entries/images/01.png)
 
-1. Create three entries for the Application Evaluation object:
+1. Run this command to create three entries for the Application Evaluation object:
 
    ```bash
-   
+   ./ApplicationEvaluation_POST_Batch.sh
    ```
 
-1. Verify the entries appear in the Application Evaluation application page:
+1. Verify the entries appear in Application Evaluations:
 
-   ![]()
+   ![Verify the entries appear in Application Evaluations.](./relating-object-entries/images/02.png)
 
-Now, practice relating these entries.
+Now, relate these entries.
 
 ## Relating Entries
 
-<!--
-1. Open __.
+1. Begin editing an Application Evaluation entry.
 
-1. Begin editing __ and _ the relationship field.
+1. Select a value for the Application to Evaluations field. Available options for the relationship field include all applications you have permission to view.
 
-   Options are identified using the object's title field. By default, objects identify entires using the ID field. 
+   ![By default, application entries are identified by their IDs.](./relating-object-entries/images/03.png)
 
-1. Set the Distributor Application's title field to Business Name.
+   By default, application entries are identified by their IDs.
 
-1. Return to Application Evaluation, 
+1. Open Objects and begin editing the Distributor Application definition.
 
-1. 
--->
+1. Set the Title Field to *Business Name* and click *Save*. This determines the field used to identify object entries in relationship fields.
+
+   ![Set Title Field to Business Name and click Save.](./relating-object-entries/images/04.png)
+
+1. Return to Application Evaluations and begin editing an entry.
+
+1. Select a value for the Application to Evaluations field. Notice that applications are now identified using the business name field.
+
+   ![Applications are now identified using the business name field.](./relating-object-entries/images/05.png)
+
+1. Open Distributor Applications and begin editing an entry.
+
+1. Go to the *Evaluation Notes* tab.
+
+1. Click *Add* (![Add Button](../../../images/icon-add.png)) and select from existing application evaluations.
+
+   ![Select from existing application evaluations.](./relating-object-entries/images/06.png)
+
+   The relationship table uses the ID and title field to identify each related evaluation.
+
+   ![The relationship table uses the ID and title field to identify each related evaluation.](./relating-object-entries/images/07.png)
+
+1. Update the title field for the Application Evaluation definition to *Author*.
+
+1. Return to Distributor Applications and notice that the relationship table now uses the ID and Author fields to identify related evaluations.
+
+   ![The relationship table now uses the ID and Author fields to identify related evaluations.](./relating-object-entries/images/08.png)
+
+## Conclusion
 
 Congratulations! You have successfully modeled the necessary data structures for Delectable Bonsai's distributor onboarding flow. Now you can start incorporating the business logic necessary for bringing your application to life, such as workflows, validations, notifications. You'll do this in the next module.
 

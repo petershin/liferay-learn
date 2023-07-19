@@ -32,6 +32,10 @@ Map the selected element to a field in an existing asset.
 
 Configure the image displayed in the selected image element.
 
+```{warning}
+Fragments are **not** integrated with Content Delivery Network (CDN) hosts. So, it is not possible to use images with fragments when served through CDN hosts.
+```
+
 | Field | Description |
 | :--- | :--- |
 | Source Selection | Select whether the image element uses *Direct* or *Mapping* for its source. When using Direct, you can select an image from Documents and Media or enter an image URL. When using Mapping, you can select an asset from Documents and Media, Web Content, Blogs, or Categories, and then map the image element to a field from the selected asset. |

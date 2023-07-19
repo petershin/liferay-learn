@@ -3,7 +3,7 @@ uuid: 0ae4dfb4-7b8b-4658-a573-cd97a9a039a3
 ---
 # Exporting Data
 
-Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals/individuals-dashboard.md). Analytics data can also be fetched and exported using Analytics Cloud's APIs. Specifically, you can fetch event data, individual data, segment data, or page data.
+Various analytics data can be accessed through the [Sites dashboard](../touchpoints/sites-dashboard.md) and the [Individuals dashboard](../people/individuals/individuals-dashboard.md). Analytics data can also be fetched and exported using Analytics Cloud's APIs. Specifically, you can fetch event data, identity data, individual data, membership data, page data, or segment data.
 
 ## Requesting a Data Export
 
@@ -15,7 +15,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
    curl -i -L -H "Authorization: Bearer [token]" https://analytics.liferay.com/api/reports/export/[type]?fromDate=[ISO 8601 date and time]&toDate=[ISO 8601 date and time]
    ```
 
-   Replace `[token]` with your specific access token. Replace `[type]` with `event`, `individual`, `page`, or `segment`. Give a start date and time by replacing `[ISO 8601 date and time]` after `fromDate=`. Give an end date and time by replacing `[ISO 8601 date and time]` after `toDate=`. Make sure to use the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date and time format. Note that the start date and time and end date and time are required in the request.
+   Replace `[token]` with your specific access token. Replace `[type]` with `event`, `identity`, `individual`, `membership`, `page`, or `segment`. Give a start date and time by replacing `[ISO 8601 date and time]` after `fromDate=`. Give an end date and time by replacing `[ISO 8601 date and time]` after `toDate=`. Make sure to use the [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) date and time format. Note that the start date and time and end date and time are required in the request.
 
    For example, a request for page data might look like this:
 

@@ -30,87 +30,74 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__N
 
 Follow these steps to generate and search for sample content.
 
-1. Download and unzip [liferay-b9f3.zip](./liferay-b9f3.zip).
+1. Locate your [site ID](../../site-building/site-settings/site-settings-ui-reference.md#site-configuration).
 
-   ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/using-search/developer-guide/liferay-b9f3.zip -O
-   ```
-
-   ```bash
-   unzip liferay-b9f3.zip
-   ```
-
-   Navigate into the `/liferay-b9f3/` folder.
-
-1. Locate the [site ID](../../site-building/site-settings/site-settings-ui-reference.md#site-configuration) for your default site and your global site.
-
-1. Run the `populate_b9f3.sh` script. Replace `1234` with your default site ID and `5678` with your global site ID.
-
-   ```bash
-   ./curl/populate_b9f3.sh 1234 5678
-   ```
-
-### Simple Query
-
-Here is a simple query for the keyword `baker`:
+1. Run the following command to generate a blog post. Replace `1234` with your site's ID.
 
 ```bash
 curl \
 	-H "Content-Type: application/json" \
 	-X POST \
-	"http://localhost:8080/o/portal-search-rest/v1.0/search?search=baker" \
+	"http://localhost:8080/o/headless-delivery/v1.0/sites/1234/blog-postings" \
+	-d "{\"articleBody\": \"Foo\", \"headline\": \"Able\"}" \
+	-u "test@liferay.com:learn" 
+```
+
+### Simple Query
+
+Here is a simple query for the keyword `able`:
+
+```bash
+curl \
+	-H "Content-Type: application/json" \
+	-X POST \
+	"http://localhost:8080/o/portal-search-rest/v1.0/search?search=able" \
 	-d "{}" \
 	-u "test@liferay.com:learn"
 ```
 
-The response returns the search results with two documents.
+The response returns the blog post.
 
 ```bash
 {
   "items" : [ {
-    "dateModified" : "2023-07-19T21:08:29Z",
-    "description" : "Baker",
-    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/documents/35137",
-    "score" : 184.16985,
-    "title" : "Able Document"
-  }, {
-    "dateModified" : "2023-07-19T21:08:32Z",
-    "description" : "Baker",
-    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/documents/35151",
-    "score" : 184.16985,
-    "title" : "Able Document"
+    "dateModified" : "2023-07-20T17:15:32Z",
+    "description" : "Foo",
+    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35384",
+    "score" : 318.95966,
+    "title" : "Able"
   } ],
   "lastPage" : 1,
   "page" : 1,
   "pageSize" : 20,
-  "totalCount" : 2
+  "totalCount" : 1
 }%  
 ```
 
 ### Simple Query with Embedded Items
 
-Here is a simple query for the keyword `baker` and with a request to return embedded items:
+Here is a simple query for the keyword `able` and with a request to return embedded items:
 
 ```bash
 curl \
 	-H "Content-Type: application/json" \
 	-X POST \
-	"http://localhost:8080/o/portal-search-rest/v1.0/search?nestedFields=embedded&&search=baker" \
+	"http://localhost:8080/o/portal-search-rest/v1.0/search?nestedFields=embedded&&search=able" \
 	-d "{}" \
 	-u "test@liferay.com:learn"
 ```
 
-The response returns much more details on the two documents:
+The response returns much more details on the blog post:
 
 ```bash
 {
   "items" : [ {
-    "dateModified" : "2023-07-19T21:08:29Z",
-    "description" : "Baker",
+    "dateModified" : "2023-07-20T17:15:32Z",
+    "description" : "Foo",
     "embedded" : {
       "actions" : { },
-      "adaptedImages" : [ ],
-      "contentUrl" : "/documents/20119/0/b9f3.txt/9e95326a-0b38-fd88-ee50-b5aab5fccfac?version=1.0&t=1689800909228&download=true",
+      "alternativeHeadline" : "",
+      "articleBody" : "Foo",
       "creator" : {
         "additionalName" : "",
         "contentType" : "UserAccount",
@@ -120,81 +107,30 @@ The response returns much more details on the two documents:
         "name" : "Test Test"
       },
       "customFields" : [ ],
-      "dateCreated" : "2023-07-19T21:08:29Z",
-      "dateModified" : "2023-07-19T21:08:29Z",
-      "description" : "Baker",
-      "documentFolderId" : 0,
-      "documentType" : {
-        "availableLanguages" : [ ],
-        "contentFields" : [ ],
-        "description" : "",
-        "name" : "Basic Document"
-      },
-      "encodingFormat" : "text/plain",
-      "externalReferenceCode" : "9e95326a-0b38-fd88-ee50-b5aab5fccfac",
-      "fileExtension" : "txt",
-      "fileName" : "b9f3.txt",
-      "id" : 35137,
+      "dateCreated" : "2023-07-20T17:15:32Z",
+      "dateModified" : "2023-07-20T17:15:32Z",
+      "datePublished" : "2023-07-20T17:15:00Z",
+      "description" : "Foo",
+      "encodingFormat" : "text/html",
+      "externalReferenceCode" : "f73109ce-8db6-36e3-f2c7-4505c6454ed8",
+      "friendlyUrlPath" : "able",
+      "headline" : "Able",
+      "id" : 35384,
       "keywords" : [ ],
       "numberOfComments" : 0,
       "relatedContents" : [ ],
       "renderedContents" : [ ],
       "siteId" : 20119,
-      "sizeInBytes" : 13,
-      "taxonomyCategoryBriefs" : [ ],
-      "title" : "Able Document"
+      "taxonomyCategoryBriefs" : [ ]
     },
-    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/documents/35137",
-    "score" : 184.16985,
-    "title" : "Able Document"
-  }, {
-    "dateModified" : "2023-07-19T21:08:32Z",
-    "description" : "Baker",
-    "embedded" : {
-      "actions" : { },
-      "adaptedImages" : [ ],
-      "contentUrl" : "/documents/20119/35148/b9f3.txt/62c3475f-2344-eaae-adbb-5ea720af25e7?version=1.0&t=1689800912211&download=true",
-      "creator" : {
-        "additionalName" : "",
-        "contentType" : "UserAccount",
-        "familyName" : "Test",
-        "givenName" : "Test",
-        "id" : 20123,
-        "name" : "Test Test"
-      },
-      "customFields" : [ ],
-      "dateCreated" : "2023-07-19T21:08:32Z",
-      "dateModified" : "2023-07-19T21:08:32Z",
-      "description" : "Baker",
-      "documentFolderId" : 35148,
-      "documentType" : {
-        "availableLanguages" : [ ],
-        "contentFields" : [ ],
-        "description" : "",
-        "name" : "Basic Document"
-      },
-      "encodingFormat" : "text/plain",
-      "externalReferenceCode" : "62c3475f-2344-eaae-adbb-5ea720af25e7",
-      "fileExtension" : "txt",
-      "fileName" : "b9f3.txt",
-      "id" : 35151,
-      "keywords" : [ ],
-      "numberOfComments" : 0,
-      "relatedContents" : [ ],
-      "renderedContents" : [ ],
-      "siteId" : 20119,
-      "sizeInBytes" : 13,
-      "taxonomyCategoryBriefs" : [ ],
-      "title" : "Able Document"
-    },
-    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/documents/35151",
-    "score" : 184.16985,
-    "title" : "Able Document"
+    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/blog-postings/35384",
+    "score" : 318.95966,
+    "title" : "Able"
   } ],
   "lastPage" : 1,
   "page" : 1,
   "pageSize" : 20,
-  "totalCount" : 2
+  "totalCount" : 1
 }%   
 ```
 

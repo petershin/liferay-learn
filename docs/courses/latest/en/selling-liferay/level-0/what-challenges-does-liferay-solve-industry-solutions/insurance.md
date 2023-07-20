@@ -12,7 +12,7 @@ View Liferay’s Insurance Case Studies [here](https://www.liferay.com/resources
 
 Much like the financial services industry, each insurer is unique, though they share many common challenges:
 
-* How to serve **digital savvy customers **across **omni-channel experiences**
+* How to serve **digital savvy customers** across **omni-channel experiences**
 * How to **empower employees**
 * How to **integrate legacy systems** to equip **agents** for success
 * How to **remain competitive**

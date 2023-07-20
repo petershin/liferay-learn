@@ -1,3 +1,6 @@
+---
+uuid: 93ab2aac-5957-4b71-97cb-280f6d5cd91c
+---
 # Adding the Form to the Apply Page
 
 By default, each object definition uses a layout for entry creation. Besides layouts, Liferay provides form fragments that you can map to custom objects for creating entries. Using form fragments, Delectable Bonsai can replace their object layout and integrate the form into their site pages.
@@ -6,7 +9,7 @@ Add the provided form fragment composition to the Apply page and configure its e
 
 1. Navigate to the Apply page and click *Edit* (![Edit Button](../../images/icon-edit.png)).
 
-![Navigate to the Apply page.](./adding-the-form-to-the-apply-page/images/01.png)
+   ![Navigate to the Apply page.](./adding-the-form-to-the-apply-page/images/01.png)
 
 1. Drag and drop the *Form Page* fragment into the empty Fragment Elements container at the bottom of the page.
 

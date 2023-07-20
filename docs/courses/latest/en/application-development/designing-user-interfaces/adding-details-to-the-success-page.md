@@ -1,3 +1,6 @@
+---
+uuid: 14f4da75-d838-4acc-b38b-ca7cff71d8b9
+---
 # Adding Details to the Success Page
 
 When users submit a distributor application, the success page appears: Application Submission. Currently, this page only includes a banner image. Delectable Bonsai wants to

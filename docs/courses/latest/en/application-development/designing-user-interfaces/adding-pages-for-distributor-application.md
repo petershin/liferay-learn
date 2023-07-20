@@ -1,6 +1,9 @@
+---
+uuid: dfa8035a-aef3-40b8-9d9e-1caf5fc31168
+---
 # Adding Pages for Distributor Application
 
-Pages are the primary building blocks <!--w/c--> of Liferay sites. Delectable Bonsai's design team has created and exported three placeholder pages for use with the Distributor Application object. Here you'll import these pages as a LAR file: <!--TASK: If you've completed the [Site Design]() course, then you've already added these pages to your site. Otherwise, you can download and import them as a LAR file. -->
+Pages are the primary building blocks of Liferay sites. Delectable Bonsai's design team has created and exported three placeholder pages for use with the Distributor Application object. Here you'll import these pages as a LAR file: <!--TASK: If you've completed the [Site Design]() course, then you've already added these pages to your site. Otherwise, you can download and import them as a LAR file. -->
 
 1. Download the LAR file for this exercise:
 

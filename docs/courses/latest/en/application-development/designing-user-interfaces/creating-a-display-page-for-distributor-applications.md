@@ -1,3 +1,6 @@
+---
+uuid: 206b3e28-078c-421b-816c-a9136cc09fb0
+---
 # Creating a Display Page for Distributor Applications
 
 Published objects are integrated with the Info framework, so you can select them as the content type for display page templates. When selected, the object is set as the template's mapping source, so you can map fragment fields to object fields to create flexible page displays for individual object entries.

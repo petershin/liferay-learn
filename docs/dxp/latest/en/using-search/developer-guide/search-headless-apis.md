@@ -47,5 +47,171 @@ Follow these steps to generate and search for sample content.
 1. Run the `populate_b9f3.sh` script. Replace `1234` with your default site ID and `5678` with your global site ID.
 
    ```bash
-   ./curl/populate_b9f3.sh 1234 5677
+   ./curl/populate_b9f3.sh 1234 5678
    ```
+
+### Simple Query
+
+Here is a simple query for the keyword `baker`:
+
+```bash
+curl \
+	-H "Content-Type: application/json" \
+	-X POST \
+	"http://localhost:8080/o/portal-search-rest/v1.0/search?search=baker" \
+	-d "{}" \
+	-u "test@liferay.com:learn"
+```
+
+The response returns the search results with two documents.
+
+```bash
+{
+  "items" : [ {
+    "dateModified" : "2023-07-19T21:08:29Z",
+    "description" : "Baker",
+    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/documents/35137",
+    "score" : 184.16985,
+    "title" : "Able Document"
+  }, {
+    "dateModified" : "2023-07-19T21:08:32Z",
+    "description" : "Baker",
+    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/documents/35151",
+    "score" : 184.16985,
+    "title" : "Able Document"
+  } ],
+  "lastPage" : 1,
+  "page" : 1,
+  "pageSize" : 20,
+  "totalCount" : 2
+}%  
+```
+
+### Simple Query with Embedded Items
+
+Here is a simple query for the keyword `baker` and with a request to return embedded items:
+
+```bash
+curl \
+	-H "Content-Type: application/json" \
+	-X POST \
+	"http://localhost:8080/o/portal-search-rest/v1.0/search?nestedFields=embedded&&search=baker" \
+	-d "{}" \
+	-u "test@liferay.com:learn"
+```
+
+The response returns much more details on the two documents:
+
+```bash
+{
+  "items" : [ {
+    "dateModified" : "2023-07-19T21:08:29Z",
+    "description" : "Baker",
+    "embedded" : {
+      "actions" : { },
+      "adaptedImages" : [ ],
+      "contentUrl" : "/documents/20119/0/b9f3.txt/9e95326a-0b38-fd88-ee50-b5aab5fccfac?version=1.0&t=1689800909228&download=true",
+      "creator" : {
+        "additionalName" : "",
+        "contentType" : "UserAccount",
+        "familyName" : "Test",
+        "givenName" : "Test",
+        "id" : 20123,
+        "name" : "Test Test"
+      },
+      "customFields" : [ ],
+      "dateCreated" : "2023-07-19T21:08:29Z",
+      "dateModified" : "2023-07-19T21:08:29Z",
+      "description" : "Baker",
+      "documentFolderId" : 0,
+      "documentType" : {
+        "availableLanguages" : [ ],
+        "contentFields" : [ ],
+        "description" : "",
+        "name" : "Basic Document"
+      },
+      "encodingFormat" : "text/plain",
+      "externalReferenceCode" : "9e95326a-0b38-fd88-ee50-b5aab5fccfac",
+      "fileExtension" : "txt",
+      "fileName" : "b9f3.txt",
+      "id" : 35137,
+      "keywords" : [ ],
+      "numberOfComments" : 0,
+      "relatedContents" : [ ],
+      "renderedContents" : [ ],
+      "siteId" : 20119,
+      "sizeInBytes" : 13,
+      "taxonomyCategoryBriefs" : [ ],
+      "title" : "Able Document"
+    },
+    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/documents/35137",
+    "score" : 184.16985,
+    "title" : "Able Document"
+  }, {
+    "dateModified" : "2023-07-19T21:08:32Z",
+    "description" : "Baker",
+    "embedded" : {
+      "actions" : { },
+      "adaptedImages" : [ ],
+      "contentUrl" : "/documents/20119/35148/b9f3.txt/62c3475f-2344-eaae-adbb-5ea720af25e7?version=1.0&t=1689800912211&download=true",
+      "creator" : {
+        "additionalName" : "",
+        "contentType" : "UserAccount",
+        "familyName" : "Test",
+        "givenName" : "Test",
+        "id" : 20123,
+        "name" : "Test Test"
+      },
+      "customFields" : [ ],
+      "dateCreated" : "2023-07-19T21:08:32Z",
+      "dateModified" : "2023-07-19T21:08:32Z",
+      "description" : "Baker",
+      "documentFolderId" : 35148,
+      "documentType" : {
+        "availableLanguages" : [ ],
+        "contentFields" : [ ],
+        "description" : "",
+        "name" : "Basic Document"
+      },
+      "encodingFormat" : "text/plain",
+      "externalReferenceCode" : "62c3475f-2344-eaae-adbb-5ea720af25e7",
+      "fileExtension" : "txt",
+      "fileName" : "b9f3.txt",
+      "id" : 35151,
+      "keywords" : [ ],
+      "numberOfComments" : 0,
+      "relatedContents" : [ ],
+      "renderedContents" : [ ],
+      "siteId" : 20119,
+      "sizeInBytes" : 13,
+      "taxonomyCategoryBriefs" : [ ],
+      "title" : "Able Document"
+    },
+    "itemURL" : "http://localhost:8080/o/headless-delivery/v1.0/documents/35151",
+    "score" : 184.16985,
+    "title" : "Able Document"
+  } ],
+  "lastPage" : 1,
+  "page" : 1,
+  "pageSize" : 20,
+  "totalCount" : 2
+}%   
+```
+
+## Parameters Reference
+
+Query parameters can be used to further filter the results.
+
+| Parameter | Notes |
+| :--- | :--- |
+| `entryClassNames` | A comma separated list of `entryClassNames` to be searched. Defaults to all searchable types. |
+| `fields` | The fields parameter requests only specific fields to be enumerated in each of the elements in the response. |
+| `nestedFields` | Supports `embedded` to get back the embedded with additional data. |
+| `restrictFields` | Excludes the given field(s) from being returned. |
+| `filter` | Filters across different fields. Supported fields are `groupIds`, `taxonomyCategoryIds`, `keywords`, `dateCreated`, `dateModified`, `creatorId`, `description`, and `title`. |
+| `page` | Specify which page to return. |
+| `pageSize` | Specify how many items you want per page. |
+| `search` | Search by keyword(s). |
+| `sort` | Sort by ascending or descending order. |
+
+See [API Query Parameters](../../headless-delivery/consuming-apis/api-query-parameters.md) for more information.

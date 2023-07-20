@@ -20,27 +20,25 @@ uuid: 04c0d21c-dbf1-443e-b097-f053a387e2dd
   * Supplier Portals
   * Partner Portals
   * Modern Intranets
-* Different business problems utilize different sets of Liferay out-of-the-box capabilities
-* Success Stories are available for each Horizontal Solution 
+* Different business problems use different sets of Liferay out-of-the-box capabilities
+* Success stories are available for each horizontal solution 
 
 ## Background
 
-This module provides more detail regarding the most common horizontal solutions for Liferay, and explores the OOTB capabilities utilized by these solutions. 
+Here you'll learn about the most common horizontal solutions for Liferay, along with the OOTB capabilities utilized by these solutions. 
 
-A key success story is provided for each horizontal solution to provide a better understanding of how various capabilities of Liferay are being used by these different solutions.
+With each horizontal solution appears a key success story to show how different solutions use Liferay's capabilities. 
 
-Completion of this module equips the learner with inspirational examples of delivered solutions on top of the Liferay platform in order to discuss endless possibilities with a prospect. This learning helps to paint a picture for the buyer of not just what they need now, but also for years to come. 
+When finished, you'll have discovered several examples of Liferay platform-delivered solutions to inspire endless possibilities with a prospect. You can help paint a picture for the buyer not only of what they need now, but also for the future.
 
 ```{note}
 * View the [recording](/web/guest/d/sa1-1-liferay-tailored-solution-highlights) from the live workshop of this module.
 * Download the [PDF](/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf) of the presentation used in the live workshop.
 ```
-View the recording from the live workshop of this module.
-Download the PDF of the presentation used in the live workshop.
 
 ## Horizontal Solutions
 
-Liferay with its legacy of being a horizontal portal solves many business use cases across multiple industries. Some of the common horizontal solutions are:
+Liferay's horizontal portal legacy solves many business use cases across multiple industries. Some of the common horizontal solutions are
 
 * Customer Portals
 * Digital Commerce Sites
@@ -53,7 +51,7 @@ Liferay with its legacy of being a horizontal portal solves many business use ca
 
 ## Liferay DXP Capabilities
 
-Liferay is an industry leading Digital Experience Platform (DXP) that includes a number of out-of-the-box capabilities. With the latest release Liferay DXP 7.4, the Liferay DXP includes core DXP, Digital Commerce and Analytics features. At a high-level the key capabilities are:
+Liferay's industry leading Digital Experience Platform (DXP) includes many out-of-the-box capabilities. The latest release Liferay DXP 7.4 includes core DXP, Digital Commerce, and Analytics features. Its high-level key capabilities are
 
 * [Design Systems & Experience Management](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 * [Content & Asset Management ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
@@ -71,17 +69,18 @@ Liferay is an industry leading Digital Experience Platform (DXP) that includes a
 * Platform Services
 * [Cloud & Infrastructure ](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 
-All the horizontal solutions mentioned earlier leverage these capabilities. These OOTB capabilities make Liferay a strong player in the DXP space. 
+All the horizontal solutions mentioned earlier leverage these features. These OOTB capabilities make Liferay a strong player in the DXP space. 
 
-For more information on these capabilities please see the [Liferay DXP Product Capabilities](../level-0/liferay-product-overview.md) module.
+For more information, please see the [Liferay DXP Product Capabilities](../level-0/liferay-product-overview.md) module.
 
-Click on each of the tiles to read more about the six most common horizontal solutions for Liferay.  In each case the following is provided:
+Click on each of the tiles to read more about the six most common horizontal solutions for Liferay. In each case is provided
+
 * A solution definition
 * The key Liferay capabilities utilized
 * Details and examples of how those capabilities are incorporated into the solution
 * A Liferay success story
 
-One-by-one, we will deep-dive into these features and capabilities and how these capabilities are being leveraged.
+One-by-one, you'll learn each feature and how it is leveraged.
 
 Don't know where to start? [Start with Customer Portals](./tailored-solution-highlights/customer-portals.md). 
 

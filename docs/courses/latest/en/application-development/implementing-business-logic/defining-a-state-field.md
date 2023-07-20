@@ -157,6 +157,6 @@ To practice using the application state, you must first add the field to the obj
 
 Great! Now that you've added a state field, Delectable Bonsai wants to add a workflow process that requires review for when users update it to 'approved' or 'denied'.
 
-Next: [Adding a Custom Workflow](./adding-a-custom-workflow.md)
+Next: [Adding an Approval Workflow](./adding-an-approval-workflow.md)
 
 ## Relevant Concepts

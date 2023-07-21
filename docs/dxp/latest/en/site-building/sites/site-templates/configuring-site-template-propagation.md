@@ -13,9 +13,9 @@ Automatic propagation can be resource intensive, depending the scope of changes 
 
 To configure site template propagation,
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *System Settings*.
+1. Open the *Applications Menu* (![Applications Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *System Settings* under Configuration.
 
-1. Go to *Infrastructure* settings and click *Site Templates* under Virtual Instance Scope in the side menu.
+1. Under Platform, go to *Infrastructure* settings and click *Site Templates* under Virtual Instance Scope in the side menu.
 
 1. Check *Trigger Propagation*.
 
@@ -27,7 +27,7 @@ To configure site template propagation,
 
 1. Click *Save*.
 
-If propagation is disabled for a Site Template, enabling propagation immediately begins propagating changes to connected Sites simultaneously. While propagation remains enabled for the template, subsequent changes are propagated to sites individually when they’re first visited by a user.
+If propagation is disabled for a site template, enabling propagation immediately begins propagating changes to connected sites simultaneously. While propagation remains enabled for the template, subsequent changes are propagated to sites individually when they’re first visited by a user.
 
 ## Related Topics
 

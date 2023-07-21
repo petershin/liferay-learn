@@ -9,22 +9,37 @@ uuid: 5c79adbb-9deb-459b-9615-71e2941f5cd8
 
 You can [search for content](../../using-search/getting-started/searching-for-content.md) from within Liferay, but you can also use Liferay's REST APIs. 
 
+```{note}
+The search headless APIs only searches across Liferay's Headless Delivery application (e.g. blogs, documents, web content, etc.). It does not search across other headless applications such as users or objects.
+```
+
 ## Enabling Search Headless APIs
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-To enable the search headless APIs using a [portal property](../../installation-and-upgrades/reference/portal-properties.md), add this to `portal-ext.properties`:
+To enable the search headless APIs, set its beta feature flag to `true`. To enable using a [portal property](../../installation-and-upgrades/reference/portal-properties.md), add this to `portal-ext.properties`:
 
 ```properties
 feature.flag.LPS-179669=true
 ```
 
-To enable the search headless APIs using an [environment variable](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables), add this to your configuration:
+To enable using an [environment variable](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables), add this to your configuration:
 
 ```properties
 LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER7__NUMBER9__NUMBER6__NUMBER6__NUMBER9_=true
 ```
+
+Note, there is no service access policy by default. To enable guest access, [create a new service access policy](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md#creating-a-service-access-policy) as follows:
+
+| Field | Entry |
+| :--- | :--- |
+| Name | SEARCH |
+| Enabled | Checked |
+| Default | Checked |
+| Title | Public Access to Search API |
+| Service Class Name | `com.liferay.portal.search.rest.internal.resource.v1_0.SearchResultResourceImpl` |
+| Method Name | `postSearchPage` |
 
 ## Searching for Sample Content
 
@@ -133,6 +148,10 @@ The response returns much more details on the blog post:
   "totalCount" : 1
 }%   
 ```
+
+## Search Query with Facet Configuration
+
+## Search Query with Blueprints
 
 ## Parameters Reference
 

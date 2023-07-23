@@ -32,7 +32,7 @@ public class WorkflowAction1RestController extends BaseRestController {
 
 		log(jwt, _log, json);
 
-		String transition = "approve";
+		String transition = "auto-approve";
 
 		JSONObject payload = new JSONObject(json);
 

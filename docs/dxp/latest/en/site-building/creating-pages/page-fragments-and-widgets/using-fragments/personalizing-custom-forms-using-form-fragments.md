@@ -1,8 +1,8 @@
 # Personalizing Custom Forms Using Form Fragments
 
-Among the out-of-the-box solutions provided with fragments, Liferay includes form fragments for building forms based on custom objects. Users can map their forms automatically using form fragments.
+Liferay DXP includes form fragments for building forms based on custom objects. Users can map their forms automatically using form fragments.
 
-If Liferay's form fragments don't satisfy your use case, you can create custom form fragments and use them to alter the style of your form by [mapping your custom form fragment to a field type](#map-custom-form-fragments-to-form-fields).
+If Liferay's out-of-the-box form fragments don't satisfy your use case, you can create custom form fragments and alter the style of your forms by [mapping your custom form fragment to a field type](#map-custom-form-fragments-to-form-fields).
 
 The custom form fragments use HTML, CSS, and JavaScript code to create an element with customized style and functionalities. This way, you can customize your forms using an existing design system and/or components library. See [Creating Form Fragments](../../../developer-guide/developing-page-fragments/creating-form-fragments.md) for more information.
 
@@ -12,9 +12,11 @@ Form fragments can only be used with custom objects. Therefore, Liferay hides th
 
 ## Map Custom Form Fragments to Form Fields
 
-To alter the style and functions of a form field, you can map a [custom form fragment](../../../developer-guide/developing-page-fragments/creating-form-fragments.md) to a field type:
+To alter the default style and functionality of a form field, you can map a [custom form fragment](../../../developer-guide/developing-page-fragments/creating-form-fragments.md) to a field type:
 
-1. In your Fragments app, click on the *Options* icon (![Options Icon](../../../../images/icon-options.png)) in the applications bar &rarr; select *Configuration*.
+1. Open the *Site Menu* ( ![Site Menu icon](../../../../images/icon-menu.png) ), and click *Design* &rarr; *Fragments*.
+
+1. In the Fragments application, click the *Options* icon (![Options Icon](../../../../images/icon-options.png)) in the applications bar &rarr; *Configuration*.
 
    ![It's possible to map fragments to fields through the Configuration menu in fragments](./personalizing-custom-forms-using-form-fragments/01.png)
 
@@ -22,7 +24,9 @@ To alter the style and functions of a form field, you can map a [custom form fra
 
    ![Apply a custom form fragment to a field type](./personalizing-custom-forms-using-form-fragments/02.png) 
 
-1. Choose the fragment set under your site's tab. The options with a compatible type of field appear. 
+1. Choose the fragment set under your site's tab.
+
+   The options with a compatible type of field appear.
 
 1. Select the custom form fragment you want to apply.
 
@@ -30,7 +34,7 @@ To alter the style and functions of a form field, you can map a [custom form fra
 
 You can check if the custom fragment is applied to the field type by adding a form to a content or template page. See [Using Fragments to Build Forms](../../../../building-applications/objects/using-fragments-to-build-forms.md) to learn more about building forms using fragments.
 
-If the mapping process is successful, the style of the custom form fragment (on the left) should be applied to the field type instead of the out-of-the-box fragment style (on the right).
+Once you've applied the custom form fragment to the field type, the new style (on the left) is applied to the field type instead of the out-of-the-box style (on the right).
 
 ![The fields mapped to the custom form fragments (on the left) look different from the ones created with out-of-the-box fragments (on the right).](./personalizing-custom-forms-using-form-fragments/04.png)
 
@@ -42,3 +46,4 @@ If the mapping process is successful, the style of the custom form fragment (on 
 * [Form Components](./default-fragments-reference.md#form-components)
 * [Form Fragment Options](./configuring-fragments/general-settings-reference.md#form-fragment-options)
 * [Using Fragments to Build Forms](../../../../building-applications/objects/using-fragments-to-build-forms.md)
+

@@ -23,7 +23,7 @@ When [creating a template](./creating-site-templates.md), you determine whether 
 
 Follow these steps to enable or disable propagation after template creation:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Site Templates*.
+1. Open the *Applications Menu* (![Applications Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Site Templates*.
 
 1. Select the desired template.
 
@@ -39,7 +39,7 @@ Follow these steps to enable or disable propagation after template creation:
 
 Alternatively, you can enable or disable automatic propagation via the site templates application page. Just click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired template and select *Disable Propagation* or *Ready for Propagation*.
 
-![Click the *Actions* button for the desired site template and select *Disable Propagation* or *Ready for Propagation*.](./propagating-template-changes/images/04.png)
+![Click the Actions button for the desired site template and select Disable Propagation or Ready for Propagation.](./propagating-template-changes/images/04.png)
 
 ## Reconnecting Inherited Pages to Their Template
 
@@ -51,7 +51,7 @@ Follow these steps to discard changes to a site page and resync it with its temp
 
 1. Click the *Aditional Information* icon (![Information](../../../images/icon-control-menu-information.png)) in the Application bar.
 
-   ![Click the *Aditional Information* icon and select *Reset Changes*.](./propagating-template-changes/images/05.png)
+   ![Click the Aditional Information icon and select Reset Changes.](./propagating-template-changes/images/05.png)
 
 1. Click *Reset Changes*.
 

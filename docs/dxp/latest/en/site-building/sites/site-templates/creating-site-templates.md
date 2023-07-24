@@ -11,7 +11,7 @@ Site templates are primarily intended for maintaining pages across multiple site
 
 Follow these steps to create a site template:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
+1. Open the *Applications Menu* (![Applications Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
 
 1. Click the *Add* button ![Add Button](../../../images/icon-add.png).
 

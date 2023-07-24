@@ -17,7 +17,7 @@ With user group sites, you can dynamically add pages to the personal sites of al
 
 ## Profile Pages and Dashboard Pages
 
-In profile pages, users can share content (e.g., blog, activities) publicly. By default, each profile page displays the user's basic information and provides a download link to the user's vCard (virtual business card).
+In profile pages, users can share content (e.g., blogs, activities) publicly. By default, each profile page displays the user's basic information and provides a download link to the user's vCard (virtual business card).
 
 ![The profile page displays public info for other users to view.](./personal-sites/images/01.png)
 
@@ -31,7 +31,7 @@ To access your personal site pages, follow these steps:
 
 1. Open the *User Profile Menu* icon and select either *My Profile* or *My Dashboard*.
 
-    ![You access your Personal Site pages from the User Profile Menu.](./personal-sites/images/03.png)
+    ![You access your personal site pages from the User Profile Menu.](./personal-sites/images/03.png)
 
 1. Open the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)), expand *Site Builder*, and click *Pages*.
 

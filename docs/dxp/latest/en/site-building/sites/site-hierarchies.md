@@ -7,7 +7,7 @@ Sites can be organized hierarchically, just like organizations, with child sites
 
 ## Content Sharing Between Sites
 
-Content sharing is available for sites within the same hierarchy. For instance, if a parent site has a document type called *Devcon Presentation* and all its child sites should have a copy, the parent site's administrator can enable content sharing to share the document type automatically with its child sites. Also, content sharing privileges can be set to let every site administrator share content across sites they manage. You can share these content types across sites:
+Content sharing is available for sites within the same hierarchy. For instance, if a parent site has a document type called Devcon Presentation and all its child sites should have a copy, the parent site's administrator can enable content sharing to share the document type automatically with its child sites. Also, content sharing privileges can be set to let every site administrator share content across sites they manage. You can share these content types across sites:
 
 * Web Content Structures
 * Web Content Templates
@@ -28,13 +28,13 @@ These rules apply to site hierarchy:
 * A site administrator has no default role in any child sites created by other site administrators.
 
 ```{note}
-If you want a user to have administrative access to all sites in a site/child site hierarchy, you must create a role based on the site administrator role that has the permission *Manage Subsites*.
+If you want a user to have administrative access to all sites in a site/child site hierarchy, you must create a role based on the site administrator role that has the permission Manage Subsites.
 ```
 
 ## Navigating Site Hierarchy with the Sites Directory Application
 
 The sites directory application is a configurable app that shows a hierarchy of sites and child sites. It enables users to navigate to any of the displayed sites. To use this app to display site hierarchies, follow these steps:
 
-1. Add the sites directory application to a page.
+1. Add the *Sites Directory* application to a page.
 1. Open its *Configuration* window.
 1. Select *List Hierarchy* under Display Style.

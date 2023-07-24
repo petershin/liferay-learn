@@ -13,7 +13,7 @@ You can use the Invite Members widget to send invitations to users to join a sit
 
     ![Select users to invite in the new window.](./inviting-members-to-your-site/images/02.png)
 
-1. Click the plus sign next to a user who should receive an invitation. Those who have already been invited but have not yet responded appear with a check mark next to their names. Users that have already accepted an invitation no longer appear in the list.
+1. Click the plus sign next to a user who should receive an invitation. Those who have already been invited but have not yet responded appear with a check mark next to their names. Users that have already accepted an invitation no longer appear on the list.
 
    For others not on the list, you can input an email address under Invite by Email and click *Add Email Address*.
 
@@ -23,6 +23,6 @@ You can use the Invite Members widget to send invitations to users to join a sit
 
 1. The site invitation shows up under the Requests List tab on the user's notifications page. The user can then choose to confirm or ignore the invitation.
 
-    ![The user has an invitation request in their notifications page.](./inviting-members-to-your-site/images/03.png)
+    ![The invited users have an invitation request in their notifications page.](./inviting-members-to-your-site/images/03.png)
 
-    When users confirm an invitation, they become site members assigned with the role you defined.
+    When users confirm an invitation, they become site members assigned with the roles you defined.

@@ -1,7 +1,0 @@
-.DS_Store
-/bundles
-bin
-build
-dist
-node_modules
-node_modules_cache

@@ -1,3 +1,6 @@
+---
+uuid: 6d5cef22-172b-49bf-ae3d-cf89bb6f908b
+---
 # Personalizing Custom Forms Using Form Fragments
 
 Liferay DXP includes form fragments for building forms based on custom objects. Users can map their forms automatically using form fragments.

@@ -41,7 +41,7 @@ For Elasticsearch 8, if there is a firewall or proxy between Liferay and Elastic
 1. Download an Elasticsearch archive from [Elastic's website](https://www.elastic.co).
 
     ```{important}
-    Download the latest Elasticsearch archive [compatible with your Liferay version](./connecting-to-elasticsearch.html#available-liferay-elasticsearch-connectors).
+    Download the latest Elasticsearch archive [compatible with your Liferay version](./connecting-to-elasticsearch.md#available-liferay-elasticsearch-connectors).
     ```
 
 1. Extract the archive contents to a local folder where you want to run Elasticsearch. This folder is your *Elasticsearch Home*.

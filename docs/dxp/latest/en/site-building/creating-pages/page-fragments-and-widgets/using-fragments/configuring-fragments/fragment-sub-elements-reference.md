@@ -33,7 +33,7 @@ Map the selected element to a field in an existing asset.
 Configure the image displayed in the selected image element.
 
 ```{warning}
-Fragments are **not** integrated with Content Delivery Network (CDN) hosts. So, it is not possible to use images with fragments when served through CDN hosts.
+Fragments cannot display images stored on Content Delivery Network (CDN) hosts. Do not reference images served through CDN hosts in your fragments. 
 ```
 
 | Field | Description |

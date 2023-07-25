@@ -106,7 +106,7 @@ Next, test the new widget to make sure it's working properly.
 
 1. Log in as the default [administrator](https://learn.liferay.com/web/guest/w/dxp/getting-started/introduction-to-the-admin-account).
 
-1. Click the edit icon ( ![edit icon](../../../images/icon-edit.png) ) at the top of the page to access a list of widgets.
+1. Click the edit icon ( ![edit icon](../../images/icon-edit.png) ) at the top of the page to access a list of widgets.
 
 1. From the Fragments and Widgets sidebar, click the *Widgets* tab.
 

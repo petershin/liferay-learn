@@ -68,7 +68,7 @@ Deploy the updated configuration to your production environment.
 
 1. Click the *Builds* link at the top-right of the screen to access the Builds page.
 
-1. Click the Actions menu ![Actions menu icon](../../../images/icon-actions.png) for the build corresponding to the commit with your new changes, and select *Deploy build to...*
+1. Click the Actions menu ![Actions menu icon](../../images/icon-actions.png) for the build corresponding to the commit with your new changes, and select *Deploy build to...*
 
    ![Select the build to deploy with your commit message from the Builds page.](./configuring-auto-scaling/images/02.png)
 

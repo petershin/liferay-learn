@@ -52,7 +52,7 @@ Test the hotfix in your UAT environment before applying it to production.
 
 1. In the Cloud console, click *Builds* at the top of the screen.
 
-1. When your new build at the top of the list completes, click *Actions* ( ![Actions menu](../../../images/icon-actions.png) ) &rarr; *Deploy to...*
+1. When your new build at the top of the list completes, click *Actions* ( ![Actions menu](../../images/icon-actions.png) ) &rarr; *Deploy to...*
 
    ![Deploy the build with your hotfix to UAT first.](./installing-a-hotfix/images/03.png)
 

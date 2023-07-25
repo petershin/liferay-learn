@@ -29,10 +29,10 @@ Use Liferay's OAuth2 tools to authorize third-party applications to access data.
 
 ## Deploy the Sample React App
 
-1. Download and unzip the [OAuth2 React App](./liferay-c2b6.zip).
+1. Download and unzip the [OAuth2 React App](https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip).
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O
    ```
 
    ```bash

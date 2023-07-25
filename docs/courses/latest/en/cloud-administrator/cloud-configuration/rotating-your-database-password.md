@@ -64,7 +64,7 @@ Delete and re-deploy the database service for your new password to take effect. 
 
 1. Click *Services* on the left side of the screen.
 
-1. Click *Actions* ( ![Actions icon](../../../images/icon-actions.png) ) for the database service, and click *Delete service*.
+1. Click *Actions* ( ![Actions icon](../../images/icon-actions.png) ) for the database service, and click *Delete service*.
 
    ![You must delete the database service for the password change to take effect.](./rotating-your-database-password/images/04.png)
 
@@ -76,7 +76,7 @@ Delete and re-deploy the database service for your new password to take effect. 
 
 1. Click *Builds* at the top of the screen.
 
-1. Click *Actions* ![Actions icon](../../../images/icon-actions.png) for the latest build, and click *Deploy build to...*
+1. Click *Actions* ![Actions icon](../../images/icon-actions.png) for the latest build, and click *Deploy build to...*
 
 1. From the *Environment* drop-down menu, select your production environment.
 
@@ -96,7 +96,7 @@ Once your services are up and running again (with the `Ready` status), restore t
 
 1. Click *Backups* on the left side of the screen.
 
-1. Click *Actions* ( ![Actions icon](../../../images/icon-actions.png) ) for the manual backup you created previously, and click *Restore to...*
+1. Click *Actions* ( ![Actions icon](../../images/icon-actions.png) ) for the manual backup you created previously, and click *Restore to...*
 
    ![Restore the backup after the database service is back up and running.](./rotating-your-database-password/images/07.png)
 

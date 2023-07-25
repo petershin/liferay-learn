@@ -28,7 +28,7 @@ The backup service is unavailable and the buttons on the page are disabled until
 
 When the backup from production finishes, restore it to your UAT environment.
 
-1. Click _Actions_ ( ![Actions icon](../../../images/icon-actions.png) ) next to the manual backup at the top of the list and click *Restore to...*
+1. Click _Actions_ ( ![Actions icon](../../images/icon-actions.png) ) next to the manual backup at the top of the list and click *Restore to...*
 
    ![Select the backup you want and click Restore to...](./restoring-data-from-a-backup/images/02.png)
 
@@ -54,7 +54,7 @@ Simulate disaster by deleting your default home page from your UAT Liferay insta
 
 1. In the navigation menu on the left side of the screen, click *Site Builder* &rarr; *Pages*.
 
-1. Next to the Home page, open the Actions menu ( ![Actions icon](../../../images/icon-actions.png) ) and click *Delete*.
+1. Next to the Home page, open the Actions menu ( ![Actions icon](../../images/icon-actions.png) ) and click *Delete*.
 
    ![Delete the Home page from the Pages menu.](./restoring-data-from-a-backup/images/04.png)
 
@@ -72,7 +72,7 @@ Kyle realizes after deleting the page that it shouldn't have been deleted, and h
 
 1. Click *Backups*.
 
-1. Click the Actions menu ( ![Actions icon](../../../images/icon-actions.png) ) next to your manual backup and click *Restore to...*
+1. Click the Actions menu ( ![Actions icon](../../images/icon-actions.png) ) next to your manual backup and click *Restore to...*
 
 1. From the *Select environment* drop-down menu, select your UAT environment.
 

@@ -73,7 +73,7 @@ In this example, the scope is set to `PORTLET_INSTANCE`. The interface also defi
 
 Note that this example also works with scope set at higher levels (i.e. Site, Instance, system scope). A best practice is to mark an application that you intend to use with portlet preferences as portlet scope.
 
-To learn more, see [Creating the Configuration Interface](./setting-and-accessing-configurations.html#Creating-the-Configuration-Interface).
+To learn more, see [Creating the Configuration Interface](./setting-and-accessing-configurations.md#Creating-the-Configuration-Interface).
 
 ```{note}
 A `ConfigurationBeanDeclaration` is required for Liferay versions before DXP 7.4 U51 or Portal 7.4 GA51. See [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeandeclaration-with-previous-versions-of-liferay).
@@ -81,7 +81,7 @@ A `ConfigurationBeanDeclaration` is required for Liferay versions before DXP 7.4
 
 ## Read the Configuration with PortletDisplay
 
-Similar to [reading configuration values from the Configuration Provider API](./setting-and-accessing-configurations.html#Reading-the-Configuration-from-the-Application), you can access the configuration values in your application with the Portlet Display API.
+Similar to [reading configuration values from the Configuration Provider API](./setting-and-accessing-configurations.md#Reading-the-Configuration-from-the-Application), you can access the configuration values in your application with the Portlet Display API.
 
 ```{literalinclude} ./portlet-level-configuration/resources/liferay-x7y2.zip/x7y2-web/src/main/java/com/acme/x7y2/web/internal/portlet/X7Y2Portlet.java
 :language: java

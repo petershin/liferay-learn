@@ -3,7 +3,7 @@ uuid: 9685856c-4889-4921-8815-505d9d7096ae
 ---
 # Configuration Form Renderer
 
-When you [create a configuration interface](./setting-and-accessing-configurations.html#creating-the-configuration-interface), a configuration UI is automatically generated. But in some cases you want customize the look and feel of the UI. For example, you want to modify the UI to match the design aesthetics of your company. Here's how to do it with a `ConfigurationFormRenderer` implementation.
+When you [create a configuration interface](./setting-and-accessing-configurations.md#creating-the-configuration-interface), a configuration UI is automatically generated. But in some cases you want customize the look and feel of the UI. For example, you want to modify the UI to match the design aesthetics of your company. Here's how to do it with a `ConfigurationFormRenderer` implementation.
 
 ## See the Example Project
 

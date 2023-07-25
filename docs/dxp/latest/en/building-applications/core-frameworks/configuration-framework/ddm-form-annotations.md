@@ -3,7 +3,7 @@ uuid: ca673055-df2d-4633-a70a-fb55c6fff2b7
 ---
 # DDM Form Annotations
 
-The auto-generated [configuration interface](./setting-and-accessing-configurations.html#creating-the-configuration-interface) UI may be too simplistic for some configurations. You can use the Dynamic Data Mapping (DDM) form annotations to customize your layout's UI.
+The auto-generated [configuration interface](./setting-and-accessing-configurations.md#creating-the-configuration-interface) UI may be too simplistic for some configurations. You can use the Dynamic Data Mapping (DDM) form annotations to customize your layout's UI.
 
 ## See a Sample Configuration UI
 

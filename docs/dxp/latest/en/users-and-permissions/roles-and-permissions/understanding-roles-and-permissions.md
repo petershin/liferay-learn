@@ -45,11 +45,11 @@ Roles have scope, so they apply at different levels.
 
 <!-- ripped out row from above table as per LRODCS-8188: | A single Account | Account   | Control Panel &rarr; Accounts &rarr; Accounts (Select Account) &rarr; Roles | Individual Account Members -->
 
-Individual [Users](./../users/understanding-users.md) can be manually assigned to Roles. This method is less efficient than using collections of Users. Users can also be [automatically](../../system-administration/configuring-liferay/virtual-instances/users.md#default-user-associations) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
+Individual [Users](./../users/understanding-users.md) can be manually assigned to Roles. This method is less efficient than using collections of Users. Users can also be [automatically](../../system-administration/configuring-liferay/virtual-instances.md) assigned to Roles of all scopes through a Virtual Instance Setting called Default User Associations.
 
 ### Regular Roles
 
-Instance scoped Roles are called Regular Roles. These Roles grant permissions globally, or throughout the [Virtual Instance](./../../system-administration/configuring-liferay/virtual-instances.html).
+Instance scoped Roles are called Regular Roles. These Roles grant permissions globally, or throughout the [Virtual Instance](../../system-administration/configuring-liferay/virtual-instances.md).
 
 Several User collections can be assigned to Regular Roles:
 

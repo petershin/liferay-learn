@@ -22,7 +22,7 @@ Then, follow these steps:
    unzip liferay-t5p9.zip
    ```
 
-1. Use the [Accounts_GET_FromInstance](./accounts-api-basics.html#get-an-account) resource to get a list of account IDs. Make note of the account ID you wish to add a user for.
+1. Use the [Accounts_GET_FromInstance](./accounts-api-basics.md#get-an-account) resource to get a list of account IDs. Make note of the account ID you wish to add a user for.
 
 1. Use the cURL script to add a new account user to the account. On the command line, navigate to the `curl` folder. Execute the `AccountUser_POST_ToAccount.sh` script with the account ID as a parameter.
 

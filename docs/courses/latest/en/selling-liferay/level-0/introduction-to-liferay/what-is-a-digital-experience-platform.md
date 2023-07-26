@@ -22,8 +22,8 @@ Liferay defines a DXP as follows:
 ![Digital Experience Platforms provide all the tools necessary to external and internal digital experiences.](./what-is-a-digital-experience-platform/images/01.png)
 
 ```{note}
-* View the [recording](/web/guest/d/l0-1-introduction-to-liferay) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/l0-1-introduction-to-liferay-pdf) of the presentation used in the live workshop.
+* View the [recording](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf) of the presentation used in the live workshop.
 ```
 
 ## Liferay Portal Heritage

@@ -25,8 +25,8 @@ Here, you'll look at some of Liferay’s main competitors.
 After completing this module, you will have a basic understanding of what sets Liferay apart from these competitors.
 
 ```{note}
-* View the [recording](/web/guest/d/l0-6-main-competitors-we-face) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/l0-6-main-competitors-we-face-pdf) of the presentation used in the live workshop.
+* View the [recording](https://learn.liferay.com/web/guest/d/l0-6-main-competitors-we-face) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-6-main-competitors-we-face-pdf) of the presentation used in the live workshop.
 ```
 
 ## Competitor Commonalities

@@ -33,8 +33,8 @@ This does not cover prospecting or outbound prospecting in general; here instead
 * Learning effective cadences
 
 ```{note}
-* View the [recording](/web/guest/d/sa1-3-outbound-prospecting-101-for-liferay-opportunities) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/sa1-3-outbound-prospecting-101-for-liferay-opportunities-pdf) of the presentation used in the live workshop.
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-3-outbound-prospecting-101-for-liferay-opportunities) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-3-outbound-prospecting-101-for-liferay-opportunities-pdf) of the presentation used in the live workshop.
 ```
 
 ## The Purpose of (Outbound) Prospecting

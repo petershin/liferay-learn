@@ -13,7 +13,7 @@ toc:
   - ./reference/maintenance-mode-and-deprecations-in-7-2.md
   - ./reference/renamed-language-keys.md
   - ./reference/troubleshooting-upgrades.md
-  - ./reference/upgrade-reports.md
+  - ./reference/upgrade-report.md
 uuid: 191b6c08-ad23-4240-b9a4-d287b96509c5
 ---
 # Reference
@@ -34,7 +34,7 @@ reference/maintenance-mode-and-deprecations-in-7-3.md
 reference/maintenance-mode-and-deprecations-in-7-2.md
 reference/renamed-language-keys.md
 reference/troubleshooting-upgrades.md
-reference/upgrade-reports.md
+reference/upgrade-report.md
 ```
 
 * [Data Cleanup](./reference/data-cleanup.md)
@@ -50,4 +50,4 @@ reference/upgrade-reports.md
 * [Maintenance Mode and Deprecations in 7.2](./reference/maintenance-mode-and-deprecations-in-7-2.md)
 * [Renamed Language Keys](./reference/renamed-language-keys.md)
 * [Troubleshooting Upgrades](./reference/troubleshooting-upgrades.md)
-* [Upgrade Reports](./reference/upgrade-reports.md)
+* [Upgrade Reports](./reference/upgrade-report.md)

@@ -17,7 +17,9 @@ actions/using-manual-actions.md
 
 Object actions define custom business logic that you can run manually or automatically for object entry events. Examples include delivering entry event data to a webhook URL, sending email notifications after entry updates, and executing custom Groovy scripts after entry creation.
 
-When using automatic triggers, Liferay listens for the event and executes the operation automatically according to predefined conditions. When using the standalone trigger, Liferay adds the action to the Actions menu (![Actions Button](../../../images/icon-actions.png)) for object entries and generates a headless API for triggering it. The action must be run manually.
+When using automatic triggers, Liferay listens for the event and executes the operation automatically according to predefined conditions. 
+
+When using the standalone trigger, Liferay adds the action to the Actions menu (![Actions Button](../../../images/icon-actions.png)) for object entries and generates a headless API for triggering it. You can also map the action to a custom fragment or an out-of-the-box button component. The action must be run manually. See [Using Manual Actions](./actions/using-manual-actions.md), to learn more about manual actions.
 
 ![Add actions to object definitions.](./actions/images/01.png)
 

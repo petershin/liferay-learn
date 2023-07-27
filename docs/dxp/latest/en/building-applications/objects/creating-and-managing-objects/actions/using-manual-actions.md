@@ -48,14 +48,9 @@ Calling either API triggers the action for the specified entry.
 ![Calling the API triggers the action for the specified entry.](./using-manual-actions/images/04.png)
 
 ## Trigger Actions via Pages
-You can map an action to a fragment in a page (e.g. content pages or display page templates). 
+You can map standalone actions to fragment components in pages (e.g. content pages or display page templates). 
 
-Liferay provides out-of-the-box button component ready to be mapped to an object action. If Liferay's out-of-the-box button doesn't satisfy your use case, you can also enable custom fragments to use actions by adding the tags `data-lfr-editable-id="action"`  and `data-lfr-editable-type="action"` to the custom fragment. To learn more about adding tags to fragments, see [Fragment Specific Tags and Attributes Reference](../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md)
-
-<!-- 
-editing-fragment-elements.md should also be added.
-(Once I update this section, I can add this pointer)
- -->
+Liferay provides an out-of-the-box button component ready to be mapped to an object action. If Liferay's out-of-the-box solution doesn't satisfy your use case, you can map actions to custom fragments by adding the tags `data-lfr-editable-id="action"`  and `data-lfr-editable-type="action"` to their HTML code. To learn more about adding tags to fragments, see [Fragment Specific Tags and Attributes Reference](../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md)
 
 Here is an example of an action-ready custom button:
 
@@ -68,78 +63,64 @@ Here is an example of an action-ready custom button:
 
 ### Mapping Out-of-the-box Buttons to Object Actions
 
-* [Create a Page](../../../../site-building/creating-pages.md).
+1. [Create a Page](../../../../site-building/creating-pages.md).
 
-* Add an out-of-the-box *Button* to your layout. See [Adding Elements to Content Pages](../../using-content-pages/adding-elements-to-content-pages.md) to learn how to edit a content page.
+1. Add an out-of-the-box *Button* to your layout. See [Adding Elements to Content Pages](../../using-content-pages/adding-elements-to-content-pages.md) to learn how to edit a content page.
 
-* Click on the *Button* once. In the Parent Configuration menu, under Button Options, select *Action* as the type. This configuration allows you to map actions to the button.
+1. Click on the *Button* once. Under Button Options, select *Action* as the type. This configuration allows you to map actions to the button.
 
-  ![In the parent configuration menu, select Action as the type of button.](./using-manual-actions/images/05.png)
+    ![In the parent configuration menu, select Action as the type of button.](./using-manual-actions/images/05.png)
 
-* Click on the *Button* a second time. An action menu opens on the right.
+1. Click on the *Button* a second time. An action menu opens on the right.
 
-  ![You can configure the mapping process using the Mapping and Action tabs.](./using-manual-actions/images/06.png)
+    ![You can configure the mapping process using the Mapping and Action tabs.](./using-manual-actions/images/06.png)
 
-* Under the Mapping tab, 
+1. Under the Mapping tab, click on the *Item* field or the *Select Item* icon (![Select Item](../../../../images/icon-add-app.png)) right next to the field. 
 
-1. Click on the *Item* field or the *Select Item* icon (![Select Item](../../../../images/icon-add-app.png)) right next to the field. 
-
+    ```note
     If you are editing a display page template, choose your object as the content type when you create the page. This makes your object the default source when mapping the button or the action. To learn more about creating display page templates, see [Creating and Managing Display Page Templates](../../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)
 
-      ![Chose your object as the content type when creating a display page template.](./using-manual-actions/images/07.png)
+        ![Chose your object as the content type when creating a display page template.](./using-manual-actions/images/07.png)
 
-    When you need to choose specific content, go to the *Mapping* or *Action* tabs, click on the *Source* field, select *Specific Content*, and choose the specific *Item*.
+    When you need to choose a specific content, go to the *Mapping* or *Action* tabs, click on the *Source* field, select *Specific Content*, and choose the specific *Item*.
 
-      ![You can use the default object or select a specific content](./using-manual-actions/images/08.png)
+        ![You can use the default object or select a specific content](./using-manual-actions/images/08.png)
+    ```
 
-1. Select your object name from the list at the top. The available object entries appear at the bottom.
+1. Select your object name from the list at the top. The available object entries appear at the bottom. Choose a specific object entry.
 
     ![Select a specific object entry](./using-manual-actions/images/09.png)
 
-1. Choose a specific object entry.
+1. Select the *Field* to be mapped to the button label.
 
-1. Select the field to be mapped to the button label.
-
-* Under the Action tab, 
-
-1. Select a specific object entry.
+1. Under the Action tab, select a specific object entry.
 
 1. Choose an action. This action is triggered once the user clicks on the button.
 
-    ```tip
-    You can use collection display fragments or form fragments with buttons mapped to actions. See [Displaying Collections](../../../../site-building/displaying-content/additional-content-display-options/displaying-collections.md) and [Using Fragments to Build Forms](../../using-fragments-to-build-forms.md) to learn more about using collection displays and form fragments.
-    ```
+1. Set the *Success* and *Error* interactions. See [Managing Success and Error Interactions](#managing-success-and-error-interactions) for more information.
 
-1. Choose what happens with a successful interaction and a failed interaction. See [Managing Success and Error Interactions](#managing-success-and-error-interactions) for more information.
+```tip
+You can use collection display fragments or form fragments with components mapped to actions. See [Displaying Collections](../../../../site-building/displaying-content/additional-content-display-options/displaying-collections.md) and [Using Fragments to Build Forms](../../using-fragments-to-build-forms.md) to learn more about using collection displays and form fragments.
+```
 
 ### Managing Success and Error Interactions
-With Liferay, you can choose what happens if an action succeeds or fails after the user clicks on a button mapped to an action.
+With Liferay, you can choose what happens if an action succeeds or fails after the user clicks on a component mapped to an action.
 
-Under the Action tab, you can configure the *Success* and *Error* interactions.
+Under the Action tab, there are four options available for both interactions:
 
-![You can choose what happens after an action is performed when the user clicks on a button mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/10.png)
+![You can choose what happens after an action is performed when the user clicks on a button or fragment mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/10.png)
 
-There are four options available for both interactions:
-1. **None**: Nothing happens after the action is performed.
-1. **Show Notification**: Shows the user a notification with a custom Success or Error Text message. 
+* **None**: Nothing happens after the action is performed.
 
-    Write your custom success/error message.
-
-    You can preview your notification by toggling *Preview Success Notification*.
-
-    Check the Reload Page After Success/Error to reload the page after the action is performed. Reloading the page is useful if you want to update states and values in your page.
+* **Show Notification**: Notifies the user. You can write your custom success/error message, preview the notification, and configure the page to reload after the action is triggered. 
 
     ![Show the user a custom notification.](./using-manual-actions/images/11.png)
 
-1. **Go to Page**: Navigates to a Success/Error Page in your Site.
-
-    Select the Success/Error Page by clicking on the field or the + sign and selecting your page.
+* **Go to Page**: Navigates to a Success/Error Page in your Site.
 
     ![Redirect the user to a page in your site.](./using-manual-actions/images/12.png)
 
-1. **Go to External URL**: Navigates to an external URL.
-
-    Add the external URL to the Success/Error External URL field.
+* **Go to External URL**: Navigates to an external URL.
 
     ![Redirect the user to an external URL.](./using-manual-actions/images/13.png)
 

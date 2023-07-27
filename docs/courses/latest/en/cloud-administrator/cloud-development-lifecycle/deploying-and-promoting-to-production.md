@@ -17,7 +17,7 @@ Download an example module with a new, simple widget to deploy to your Liferay C
 1. Download and unzip the example's source code into a `modules/` folder.
 
     ```bash
-    curl https://resources.learn.liferay.com/courses/latest/en/liferay-administrators/fundamentals/liferay-e3v7.zip -O
+    curl https://resources.learn.liferay.com/courses/latest/en/cloud-administrator/cloud-development-lifecycle/liferay-e3v7.zip -O
     ```
 
     ```bash

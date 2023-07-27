@@ -3,7 +3,7 @@ uuid: 1cdf71b3-f287-41aa-b007-cc2c8bee13e7
 ---
 # Adding Notification Templates for Distributor Application
 
-To this point, Delectable Bonsai's Distributor Application has no automated notifications for entry events. This means administrators must check the object to learn of new submissions and manually inform applicants on the status of their applications. This strategy does not scale and leaves room for human error, resulting in missed opportunities or poor user experience.
+To this point, Delectable Bonsai's Distributor Application has no automated notifications for entry events. This means administrators must check the object to learn of new submissions and inform applicants on the status of their applications manually. This strategy doesn't scale and leaves room for human error, resulting in missed opportunities or poor user experience.
 
 Here you'll create these notification templates for use with the Distributor Application object:
 
@@ -26,7 +26,7 @@ Here you'll create these notification templates for use with the Distributor App
 
    ![Scroll down to Definition of Terms and select Distributor Application.](./adding-notification-templates/images/02.png)
 
-   You can use these field references in the template to dynamically populate notifications with entry data. In the General Terms section you can find terms for referencing fields for the user that triggers the notification action.
+   You can use these field references in the template to populate notifications dynamically with entry data. In the General Terms section are terms for referencing fields for the user that triggers the notification action.
 
 1. Enter these values for Basic Info:
 
@@ -92,6 +92,8 @@ Here you'll create these notification templates for use with the Distributor App
    | Subject     | Thank you for submitting your application!                                                                                                                                                                                                                                                                                                                                                        |
    | Editor Type | Rich Text                                                                                                                                                                                                                                                                                                                                                                                         |
    | Template    | Click the *Source* button ( ![Source button](../../images/icon-code.png) ). Then, copy and paste the contents of [`ApplicationReceived_Applicant_Email.html`](https://resources.learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/automating-notifications/adding-notification-templates/ApplicationReceived_Applicant_Email.html) into the Template field. |
+
+<!-- Not sure the above will work; we'll have to see. -Rich --> 
 
    ![Enter these values for Content.](./adding-notification-templates/images/08.png)
 

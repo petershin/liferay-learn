@@ -101,7 +101,7 @@ Follow these steps to validate the `primaryContactPhoneNumber`, `businessPhoneNu
 
 ## Adding Validation for Business Website Field
 
-Liferay provides the `isURL()` function for checking whether the field's value uses standard URL elements (e.g., http, ://, .com).
+Liferay provides the `isURL()` function for checking whether the field's value uses standard URL elements (e.g., `http`, `://`, `.com`).
 
 <!--FINISH: Confirm :// renders correctly in the site. My preview renders :/ as an emoji. -->
 
@@ -142,11 +142,11 @@ Since they are active, you can begin testing your validations:
 
 1. Open Distributor Applications and begin editing an entry.
 
-1. Update an email field to an invalid value and click *Save*. The validation's error message should appear.
+1. Update an email field to an invalid value and click *Save*. The validation's error message appears.
 
    ![Liferay displays the validation's error message.](./validating-fields/images/08.png)
 
-1. Enter a valid email for the field and click *Save*. It should save successfully.
+1. Enter a valid email for the field and click *Save*. It saves successfully.
 
 1. Repeat this process to test the phone number and website validations.
 

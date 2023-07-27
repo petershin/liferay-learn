@@ -5,7 +5,7 @@ With over 50 fields, the current user interfaces for Distributor Application are
 Before moving forward with modeling data structures, use cURL scripts to create a custom layout and view for Distributor Application.
 
 ```{note}
-Subsequent lessons will explore how to design engaging, responsive user interfaces with Liferay's page builder features. Here, the custom layout and view are used for demonstration purposes during development.
+Subsequent lessons explore how to design engaging, responsive user interfaces with Liferay's page builder features. Here, the custom layout and view are used for demonstration purposes during development.
 ```
 
 ## Adding the Layout and View
@@ -76,7 +76,7 @@ Practice creating entries in the Distributor Application object to verify the ob
 
 So far you've added all the fields and picklists Delectable Bonsai needs for following KYC policies, complying with AML laws, and weighing the prospective value of each application.
 
-Now Delectable Bonsai needs a way to store evaluation notes and relate them to specific applications. For this, you'll setup the Application Evaluation definition and implement object relationships.
+Now Delectable Bonsai needs a way to store evaluation notes and relate them to specific applications. For this, you'll set up the Application Evaluation definition and implement object relationships.
 
 Next: [Setting Up the Application Evaluation Object](./setting-up-the-application-evaluation-object.md)
 

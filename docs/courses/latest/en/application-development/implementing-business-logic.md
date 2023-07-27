@@ -32,25 +32,25 @@ Use cron...
 
 ## Validations
 
-Validations set rules for determining whether field values are valid, ensuring user input meets your criteria. By validating data at the point of entry, applications can ensure the data meets the required format, type, and constraints, preventing data errors and reducing the need for manual data cleanup. In this way, validations can improve the integrity and consistency of gathered data (e.g., email addresses, phone numbers). In Liferay, this involves adding validation rules directly to your object definition. Liferay uses these rules to check field values upon entry submission. If the value is invalid, Liferay displays an error message.
+Validations set rules for ensuring user input meets your criteria. By validating data at the point of entry, applications can ensure the data meets the required format, type, and constraints, preventing data errors and reducing the need for manual data cleanup. In this way, validations can improve the integrity and consistency of gathered data (e.g., email addresses, phone numbers). Here, you'll add validation rules directly to your object definition. Liferay uses these rules to check field values upon entry submission. If the value is invalid, Liferay displays an error message.
 
 ![Liferay uses validation rules to check field values upon entry submission.](./implementing-business-logic/images/01.png)
 
 ## Permissions
 
-Managing access to data is essential to data privacy and security. In Liferay, you can restrict access to sensitive object data using role permissions and account membership. These permission can be managed at the application and entry levels.
+Managing access to data is essential to data privacy and security. You can restrict access to sensitive object data using role permissions and account membership. These permission can be managed at the application and entry levels.
 
 ![Use permissions and account membership to manage access to object data.](./implementing-business-logic/images/02.png)
 
 ## Workflows
 
-Workflows define approval processes for application entities and can improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks. With Liferay, you can build and enable custom approval processes for custom objects. Additionally, you can use picklists to define custom state fields with their own flow.
+Workflows define approval processes for application entities and can improve task visibility, eliminate bottlenecks in business processes, and reduce the time and resources required to complete tasks. You can build and enable custom approval processes for custom objects. Additionally, you can use picklists to define custom state fields with their own flow.
 
 ![Add state fields to your object.](./implementing-business-logic/images/03.png)
 
 ## Notifications
 
-Notifications can improve visibility in your application by providing real-time updates to users and system administrators for object entry events. With Liferay, this involves creating notification templates and then using those templates with object actions. The template provides the notification content and design, while the object action determines the trigger and conditions for sending the notification (e.g., at entry creation, at entry update).
+Notifications can improve visibility in your application by providing real-time updates to users and system administrators for object entry events. This involves creating notification templates and then using those templates with object actions. The template provides the notification content and design, while the object action determines the trigger and conditions for sending the notification (e.g., at entry creation, at entry update).
 
 ![Use notification templates with object actions to automate notifications for entry events.](./implementing-business-logic/images/04.png)
 

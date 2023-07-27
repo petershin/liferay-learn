@@ -3,7 +3,7 @@ uuid: 2ccbf726-1b2b-42a5-a46f-9cdd4d51985f
 ---
 # Managing Access to Data
 
-Delectable Bonsai wants to ensure that all authorized users can submit distributor applications. They also want to allow a limited number of employees can view all submitted applications and fill out evaluations. Here you'll assign basic Distributor Application permissions to the User role and create an internal role that's responsible for reviewing applications.
+Delectable Bonsai wants to ensure that all authorized users can submit distributor applications. They also want to allow a limited number of employees to view all submitted applications and fill out evaluations. Here you'll assign basic Distributor Application permissions to the User role and create an internal role that's responsible for reviewing applications.
 
 ## Allow Users to Submit Distributor Applications
 

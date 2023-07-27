@@ -3,7 +3,7 @@ uuid: eb92994b-42a8-4dde-b72f-c4be70222308
 ---
 # Automating Account Creation
 
-To complete the onboarding flow, Delectable Bonsai wants to enable managers to easily create business accounts for approved applications. Each account should be named after the application's `businessName` and the applicant should be automatically assigned to the account with the Account Administrator role. Here you'll achieve this using an object action [client extension](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions).
+To complete the onboarding flow, Delectable Bonsai wants to enable managers to create business accounts for approved applications easily. Each account should be named after the application's `businessName` and the applicant should be assigned automatically to the account with the Account Administrator role. Here you'll achieve this using an object action [client extension](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions).
 
 ![Add the Set Up Account action to the Distributor Application object.](./automating-account-creation/images/01.png)
 
@@ -189,7 +189,7 @@ This method performs an asynchronous POST request to a `headless-admin-user` end
    }
 ```
 
-This method performs an asynchronous POST request to a `headless-admin-user` endpoint using the initialized `WebClient` and assigned the user an account role using the `accountERC`, `accountRoleId` and `email` variables. The role id is extracted using the `getRoleId` method. Finally, it returns the response entity and logs the HTTP status.
+This method performs an asynchronous POST request to a `headless-admin-user` endpoint using the initialized `WebClient` and assigns the user an account role using the `accountERC`, `accountRoleId` and `email` variables. The role id is extracted using the `getRoleId` method. Finally, it returns the response entity and logs the HTTP status.
 
 ### Retrieving the Role ID
 
@@ -235,7 +235,7 @@ This method performs a GET request to a `headless-admin-user` endpoint and retur
 
 ## Adding the Object Action
 
-1. Begin editing the *Distributer Application* object.
+1. Begin editing the *Distributor Application* object.
 
 1. Go to the *Actions* tab and click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
@@ -292,7 +292,7 @@ Now business managers can trigger the action via the Distributor Applications pa
 
 1. Go to the Distributor Applications page.
 
-1. Click the *Actions* button ( ![Actions Button](../../images/icon-actions.png) ) for an entry and select *Set Up Account*.
+1. Click *Actions* ( ![Actions Button](../../images/icon-actions.png) ) for an entry and select *Set Up Account*.
 
 1. Open the *Accounts* application and verify the account was created.
 

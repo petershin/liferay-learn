@@ -42,7 +42,7 @@ After defining an object relationship, you can relate entries in two ways: the L
 
    ![Verify the entries appear in Application Evaluations.](./relating-object-entries/images/02.png)
 
-Now, relate these entries.
+Now relate these entries.
 
 ## Relating Entries
 

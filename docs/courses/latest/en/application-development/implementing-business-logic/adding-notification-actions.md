@@ -39,7 +39,7 @@ Delectable Bonsai wants to improve visibility for new applications. They also wa
 
 ## Action for Application Received
 
-1. In the *Actions* tab, click *Add* ( ![Add Button](../../images/icon-add.png) ).
+1. In the Actions tab, click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
 1. Enter these values for Basic Info:
 
@@ -63,7 +63,7 @@ Delectable Bonsai wants to improve visibility for new applications. They also wa
 
 ## Action for Application Approved
 
-1. In the *Actions* tab, click *Add* ( ![Add Button](../../images/icon-add.png) ).
+1. In the Actions tab, click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
 1. Enter these values for Basic Info:
 
@@ -87,7 +87,7 @@ Delectable Bonsai wants to improve visibility for new applications. They also wa
 
 ## Action for Application Denied
 
-1. In the *Actions* tab, click *Add* ( ![Add Button](../../images/icon-add.png) ).
+1. In the Actions tab, click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
 1. Enter these values for Basic Info:
 
@@ -131,9 +131,9 @@ Now that you've added and activated the notification actions, you can trigger th
 
    ![Verify the Application Denied action runs.](./adding-notification-actions/images/06.png)
 
-Great! These notifications can help improve visibility for new applications and keep applicants up to date on the state of their application.
+Great! These notifications can help improve visibility for new applications and keep applicants up to date on the state of their applications.
 
-Now Delectable Bonsai wants to provide their Business Development Managers with a way to easily create business accounts for approved applicants.
+Now Delectable Bonsai wants to provide their Business Development Managers with a way to create business accounts for approved applicants easily.
 
 Next: [Automating Account Creation](./automating-account-creation.md)
 

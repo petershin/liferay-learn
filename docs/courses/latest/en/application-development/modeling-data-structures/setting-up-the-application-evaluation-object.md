@@ -4,7 +4,7 @@ When reviewing applications, Delectable Bonsai must store evaluation notes for e
 
 ![Import the Application Evaluation object](./setting-up-the-application-evaluation-object/images/01.png)
 
-They created this object definition in a separate environment, but they exported it as a JSON so you can import it to your environment with the Distributor Application object.
+They created this object definition in a separate environment, but they exported it as JSON so you can import it to your environment with the Distributor Application object.
 
 Here you'll use this JSON file to import the Application Evaluation object into your Liferay instance. But first, create the object's picklists using the `headless-admin-list-type` REST APIs. <!--TASK: Use the batch client extension instead. This way you can add the lists and objects.-->
 

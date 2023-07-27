@@ -13,6 +13,8 @@ Published objects are integrated with Liferay's core frameworks, so you can map 
 
 1. Download and unzip the [Distributor Application fragment set](./course-fragments.zip):
 
+<!-- I don't believe this will work; we have to name it our usual naming scheme (liferay-[letternumberletternumber].zip) or the script won't make the download available. Also, Brian definitely doesn't want us putting .zip files in the repository, so we wouldn't be able to do this anyway. -Rich -->
+
    ```bash
    curl https://learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/importing-fragments-for-the-distributor-application-pages/course-fragments.zip -O
    ```
@@ -48,7 +50,7 @@ Now you can import the fragment set into your site.
 
 1. Open the *Site Menu* ( ![Site Menu](../../images/icon-product-menu.png) ), expand *Design*, and click *Fragments*.
 
-1. Click the *Actions* button ( ![Actions Button](../../images/icon-actions.png) ) for Fragment Sets and select *Import*.
+1. Click *Actions* ( ![Actions Button](../../images/icon-actions.png) ) for Fragment Sets and select *Import*.
 
    ![Click the Actions button for Fragment Sets and click Import.](./importing-fragments-for-the-distributor-application-pages/images/02.png)
 

@@ -3,11 +3,17 @@ uuid: e886f87b-8f3d-41a5-bbd7-fb870e569cdc
 ---
 # Adding an Approval Workflow
 
-After adding the `applicationState` field, Delectable Bonsai wants to implement a workflow for reviewing and approving changes made to it. Currently, all updates to an application are automatically approved, regardless of the selected state. Since Delectable Bonsai is associating additional business logic with the `approved` and `denied` states, they need a workflow that can check the `applicationState` field and require manager review if one of these values is selected. Here you'll deploy and set up this workflow process using Liferay [client extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions).
+After adding the `applicationState` field, Delectable Bonsai wants to implement a workflow for reviewing and approving changes made to applications. Currently, all updates to an application are approved automatically, regardless of the selected state. Since Delectable Bonsai associates additional business logic with the `approved` and `denied` states, the workflow must check the `applicationState` field and require manager review if one of these values is selected. Here you'll deploy and set up this workflow process using Liferay [client extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions).
 
 ## Deploying the Client Extensions
 
 1. Download and unzip the sample workspace:
+
+<!-- I don't see this workspace in this pull. Did you maybe forget to commit it, or am I missing it somewhere? I wonder also if it might be best to just dump the fragments and the notification templates into this workspace. 
+
+I've now come back to this comment after reviewing the whole file and realize this may need to point to wherever the code is in liferay-portal? Since you didn't do the literalincludes, I'm thinking maybe the link below needs to point to somewhere else. Either way, we need to fix something here. 
+
+-Rich -->
 
    ```bash
    curl -o https://learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/liferay-c6s3.zip
@@ -46,7 +52,7 @@ After adding the `applicationState` field, Delectable Bonsai wants to implement 
    ./../../gradlew bootRun
    ```
 
-1. Once the application finishes starting up, go to `http://localhost:58081/ready`. If the application is ready for use, the page should say "READY."
+1. When the application starts, go to `http://localhost:58081/ready`. If the application is ready for use, the page says "READY."
 
 Now you can enable the workflow for the Distributor Application object.
 
@@ -92,7 +98,7 @@ The provided Workflow Action client extension performs these operations:
    }
 ```
 
-The post method for `WorkflowAction1RestController` has two parameters: the JSON Web Token (JWT) for authenticating its HTTP calls and the request body, which it receives as a string in JSON format.
+The post method for `WorkflowAction1RestController` has two parameters: the JSON Web Token (JWT) and the request body. The token authenticates HTTP calls, and the request body contains data as a string in JSON format.
 
 After logging the request body, the code initializes the `transition` variable and sets its value to `auto-approve`.
 
@@ -163,7 +169,7 @@ This POST request uses the `transitionURL` value from the original response body
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Applications* tab, and click *Process Builder*.
 
-1. Confirm the *Machine Approver* process appears.
+1. Confirm the Machine Approver process appears.
 
    ![Confirm the Machine Approver process appears.](./adding-an-approval-workflow/images/01.png)
 
@@ -207,7 +213,7 @@ This POST request uses the `transitionURL` value from the original response body
 
 Great! You've set up an approval workflow that requires manager review for application.
 
-Now Delectable Bonsai needs to automate notifications for application submissions, approvals, and rejections.
+Now Delectable Bonsai must automate notifications for application submissions, approvals, and rejections.
 
 Next: [Adding Notification Templates](./adding-notification-templates.md)
 

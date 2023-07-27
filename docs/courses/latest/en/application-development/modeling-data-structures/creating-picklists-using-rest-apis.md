@@ -1,6 +1,6 @@
 # Creating Picklists Using REST APIs
 
-The `headless-admin-list-type` service provides REST APIs for performing CRUD operations for picklists. Using these APIs is far more efficient than manually creating picklists through the UI, since you can add lists and items with pre-configured ERCs and localized names all in one step. Here you'll use these APIs to add the remaining picklists for the Distributor Application object.
+The `headless-admin-list-type` service provides REST APIs for performing CRUD operations for picklists. Using these APIs is far more efficient than creating picklists manually through the UI, since you can add lists and items with pre-configured ERCs and localized names all in one step. Here you'll use these APIs to add the remaining picklists for the Distributor Application object.
 
 1. Download and unzip the resources for [this exercise](./liferay-r5w2.zip).
 

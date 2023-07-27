@@ -75,7 +75,7 @@ Configure Distributor Application as follows:
    | Configuration > Enable Comments                | False                  |
    | Configuration > Enable Entry History           | False                  |
 
-   This configures the Distributor Application to store data by instance and appear in the Global Menu ( ![Global Menu](../../images/icon-applications-menu.png) ) according to its panel category key (i.e., Control Panel > Objects). Additionally, users can add the object to site pages as a widget and assign tags and categories to Distributor Application entries.
+   This configures the Distributor Application to store data by instance and appear in the Global Menu ( ![Global Menu](../../images/icon-applications-menu.png) ) according to its panel category key (i.e., Control Panel &rarr; Objects). Additionally, users can add the object to site pages as a widget and assign tags and categories to Distributor Application entries.
 
 1. Click *Save*.
 
@@ -135,7 +135,7 @@ Now that Distributor Application is published, you can begin using it:
 
    ![The application page for Distributor Application uses a default table view.](./determining-data-entities/images/09.png)
 
-1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the entry and select *Delete*.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the entry and select *Delete*.
 
 1. Practice creating, updating, and removing entries before moving forward.
 

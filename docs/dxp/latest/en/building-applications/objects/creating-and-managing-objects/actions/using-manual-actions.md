@@ -48,7 +48,7 @@ Calling either API triggers the action for the specified entry.
 ![Calling the API triggers the action for the specified entry.](./using-manual-actions/images/04.png)
 
 ## Trigger Actions via Pages
-You can map standalone actions to fragment components in pages (e.g. content pages or display page templates). 
+You can map standalone actions to fragment components in pages (e.g. [content pages](#mapping-buttons-to-object-actions-in-content-pages) or [display page templates](#mapping-buttons-to-object-actions-in-display-page-templates)). 
 
 Liferay provides an out-of-the-box button component ready to be mapped to an object action. If Liferay's out-of-the-box solution doesn't satisfy your use case, you can map actions to custom fragments by adding the tags `data-lfr-editable-id="action"`  and `data-lfr-editable-type="action"` to their HTML code. To learn more about adding tags to fragments, see [Fragment Specific Tags and Attributes Reference](../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md)
 
@@ -61,7 +61,7 @@ Here is an example of an action-ready custom button:
 </button>
 ```
 
-### Mapping Out-of-the-box Buttons to Object Actions
+### Mapping Buttons to Object Actions in Content Pages
 
 1. [Create a Page](../../../../site-building/creating-pages.md).
 
@@ -77,19 +77,9 @@ Here is an example of an action-ready custom button:
 
 1. Under the Mapping tab, click on the *Item* field or the *Select Item* icon (![Select Item](../../../../images/icon-add-app.png)) right next to the field. 
 
-    ```note
-    If you are editing a display page template, choose your object as the content type when you create the page. This makes your object the default source when mapping the button or the action. To learn more about creating display page templates, see [Creating and Managing Display Page Templates](../../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)
+1. Select your object from the list at the top. The available object entries appear at the bottom. Choose a specific object entry.
 
-        ![Chose your object as the content type when creating a display page template.](./using-manual-actions/images/07.png)
-
-    When you need to choose a specific content, go to the *Mapping* or *Action* tabs, click on the *Source* field, select *Specific Content*, and choose the specific *Item*.
-
-        ![You can use the default object or select a specific content](./using-manual-actions/images/08.png)
-    ```
-
-1. Select your object name from the list at the top. The available object entries appear at the bottom. Choose a specific object entry.
-
-    ![Select a specific object entry](./using-manual-actions/images/09.png)
+    ![Select a specific object entry](./using-manual-actions/images/07.png)
 
 1. Select the *Field* to be mapped to the button label.
 
@@ -103,10 +93,36 @@ Here is an example of an action-ready custom button:
 You can use collection display fragments or form fragments with components mapped to actions. See [Displaying Collections](../../../../site-building/displaying-content/additional-content-display-options/displaying-collections.md) and [Using Fragments to Build Forms](../../using-fragments-to-build-forms.md) to learn more about using collection displays and form fragments.
 ```
 
+### Mapping Buttons to Object Actions in Display Page Templates
+
+1. [Create a Display Page Template](../../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).
+
+    Choose your object as the content type. This makes your object the default source when mapping the button or the action.
+
+    ![Chose your object as the content type when creating a display page template.](./using-manual-actions/images/08.png)
+
+1. Add an out-of-the-box *Button* to your layout.
+
+1. Click on the *Button* once. Under Button Options, select *Action* as the type. This configuration allows you to map actions to the button.
+
+1. Click on the *Button* a second time. An action menu opens on the right.
+
+1. Under the Mapping and Action tabs, your object is already set as a default source. 
+
+    If you need to choose specific content, click on the *Source* field, select *Specific Content*, and choose the specific *Item*.
+
+    ![You can use the default object or select a specific content](./using-manual-actions/images/09.png)
+
+1. Select the *Field* to be mapped to the button label.
+
+1. Under the Action tab, choose an action. This action is triggered once the user clicks on the button.
+
+1. Set the *Success* and *Error* interactions. See [Managing Success and Error Interactions](#managing-success-and-error-interactions) for more information.
+
 ### Managing Success and Error Interactions
 With Liferay, you can choose what happens if an action succeeds or fails after the user clicks on a component mapped to an action.
 
-Under the Action tab, there are four options available for both interactions:
+There are four options available for both interactions:
 
 ![You can choose what happens after an action is performed when the user clicks on a button or fragment mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/10.png)
 

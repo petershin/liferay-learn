@@ -9,6 +9,7 @@ toc:
   - ./creating-and-managing-objects/views.md
   - ./creating-and-managing-objects/validations.md
   - ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
+  - ./creating-and-managing-objects/using-objects-with-external-data-sources.md
   - ./creating-and-managing-objects/activating-and-deactivating-objects.md
   - >-
     ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
@@ -30,6 +31,7 @@ creating-and-managing-objects/layouts.md
 creating-and-managing-objects/views.md
 creating-and-managing-objects/validations.md
 creating-and-managing-objects/using-system-objects-with-custom-objects.md
+creating-and-managing-objects/using-objects-with-external-data-sources.md
 creating-and-managing-objects/activating-and-deactivating-objects.md
 creating-and-managing-objects/exporting-and-importing-object-definitions.md
 creating-and-managing-objects/auditing-object-definition-events.md
@@ -81,6 +83,10 @@ System objects are default Liferay applications integrated with the objects fram
 
 :::{grid-item-card} Using System Objects with Custom Objects
 :link: ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
+:::
+
+:::{grid-item-card} Using Objects with External Data Sources
+:link: ./creating-and-managing-objects/using-objects-with-external-data-sources.md
 :::
 
 :::{grid-item-card} Activating and Deactivating Objects

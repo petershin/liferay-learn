@@ -4,7 +4,7 @@ toc:
 - ./level-1-business/outbound-prospecting.md
 - ./level-1-business/liferay-pricing.md
 - ./level-1-business/liferay-sales-presentations.md
-- ./level-1-business/sales-funnel-best-practices.md
+- ./level-1-business/sales-funnel-opportunity-progress.md
 - ./level-1-business/battlecards.md
 - ./level-1-business/liferay-contracts.md
 uuid: 7c59dc4a-9174-4c10-b958-4105e0da1a53
@@ -67,7 +67,7 @@ Outlines the types of sales presentations that are available, along with how and
 :::
 
 :::{grid-item-card} Sales Funnel and Best Practices for Opportunity Progress
-:link: ./level-1-business/sales-funnel-best-practices.md
+:link: ./level-1-business/sales-funnel-opportunity-progress.md
 
 Shows how a Liferay opportunity progresses through the sales funnel and the typical steps in the buyer journey and sales process.
 :::

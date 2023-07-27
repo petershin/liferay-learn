@@ -3,14 +3,12 @@ uuid: 6d5cef22-172b-49bf-ae3d-cf89bb6f908b
 ---
 # Personalizing Custom Forms Using Form Fragments
 
-Liferay DXP includes form fragments for building forms based on custom objects. Users can map their forms automatically using form fragments.
+Form fragments auto-generate forms based on custom objects. If Liferay's out-of-the-box form fragments don't satisfy your use case, you can create custom form fragments and alter the style of your forms by [mapping your custom form fragment to a field type](#map-custom-form-fragments-to-form-fields).
 
-If Liferay's out-of-the-box form fragments don't satisfy your use case, you can create custom form fragments and alter the style of your forms by [mapping your custom form fragment to a field type](#map-custom-form-fragments-to-form-fields).
-
-The custom form fragments use HTML, CSS, and JavaScript code to create an element with customized style and functionalities. This way, you can customize your forms using an existing design system and/or components library. See [Creating Form Fragments](../../../developer-guide/developing-page-fragments/creating-form-fragments.md) for more information.
+The custom form fragments use HTML, CSS, and JavaScript code to create an element with customized style and functionality. This way, you can customize your forms using an existing design system and/or components library. See [Creating Form Fragments](../../../developer-guide/developing-page-fragments/creating-form-fragments.md) for more information.
 
 ```{important}
-Form fragments can only be used with custom objects. Therefore, Liferay hides the Form Components fragment set until you have at least one published object. Once published, users with access to the object can view and use the Form Components fragments. See [Creating Objects](../../../../building-applications/objects/creating-and-managing-objects/creating-objects.md) for more information.
+Form fragments can only be used with custom objects. Liferay hides the Form Components fragment set until you have at least one published object. Once published, users with access to the object can view and use the Form Components fragments. See [Creating Objects](../../../../building-applications/objects/creating-and-managing-objects/creating-objects.md) for more information.
 ```
 
 ## Map Custom Form Fragments to Form Fields
@@ -19,21 +17,19 @@ To alter the default style and functionality of a form field, you can map a [cus
 
 1. Open the *Site Menu* ( ![Site Menu icon](../../../../images/icon-menu.png) ), and click *Design* &rarr; *Fragments*.
 
-1. In the Fragments application, click the *Options* icon (![Options Icon](../../../../images/icon-options.png)) in the applications bar &rarr; *Configuration*.
+1. In the Fragments application, click *Options* (![Options Icon](../../../../images/icon-options.png)) in the applications bar &rarr; *Configuration*.
 
-   ![It's possible to map fragments to fields through the Configuration menu in fragments](./personalizing-custom-forms-using-form-fragments/01.png)
+   ![It's possible to map fragments to fields through the Configuration menu in fragments.](./personalizing-custom-forms-using-form-fragments/01.png)
 
 1. Select the *Form Fragment* (on the right column) to be applied to the Field Type (on the left column).
 
-   ![Apply a custom form fragment to a field type](./personalizing-custom-forms-using-form-fragments/02.png) 
+   ![Apply a custom form fragment to a field type.](./personalizing-custom-forms-using-form-fragments/02.png) 
 
-1. Choose the fragment set under your site's tab.
-
-   The options with a compatible type of field appear.
+1. Choose the fragment set under your site's tab. Fragments with a compatible type of field appear.
 
 1. Select the custom form fragment you want to apply.
 
-   ![The options that are compatible with the field can be selected](./personalizing-custom-forms-using-form-fragments/03.png)
+   ![The options that are compatible with the field can be selected.](./personalizing-custom-forms-using-form-fragments/03.png)
 
 You can check if the custom fragment is applied to the field type by adding a form to a content or template page. See [Using Fragments to Build Forms](../../../../building-applications/objects/using-fragments-to-build-forms.md) to learn more about building forms using fragments.
 

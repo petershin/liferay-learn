@@ -69,23 +69,19 @@ Here is an example of an action-ready custom button:
 
 1. Click on the *Button* once. Under Button Options, select *Action* as the type. This configuration allows you to map actions to the button.
 
-    ![In the parent configuration menu, select Action as the type of button.](./using-manual-actions/images/05.png)
-
 1. Click on the *Button* a second time. An action menu opens on the right.
-
-    ![You can configure the mapping process using the Mapping and Action tabs.](./using-manual-actions/images/06.png)
 
 1. Under the Mapping tab, click on the *Item* field or the *Select Item* icon (![Select Item](../../../../images/icon-add-app.png)) right next to the field. 
 
 1. Select your object from the list at the top. The available object entries appear at the bottom. Choose a specific object entry.
 
-    ![Select a specific object entry](./using-manual-actions/images/07.png)
+    ![Select a specific object entry](./using-manual-actions/images/05.png)
 
 1. Select the *Field* to be mapped to the button label.
 
 1. Under the Action tab, select a specific object entry.
 
-1. Choose an action. This action is triggered once the user clicks on the button.
+1. Choose an action.
 
 1. Set the *Success* and *Error* interactions. See [Managing Success and Error Interactions](#managing-success-and-error-interactions) for more information.
 
@@ -93,13 +89,15 @@ Here is an example of an action-ready custom button:
 You can use collection display fragments or form fragments with components mapped to actions. See [Displaying Collections](../../../../site-building/displaying-content/additional-content-display-options/displaying-collections.md) and [Using Fragments to Build Forms](../../using-fragments-to-build-forms.md) to learn more about using collection displays and form fragments.
 ```
 
+The button now executes the selected action when clicked.
+
 ### Mapping Buttons to Object Actions in Display Page Templates
 
 1. [Create a Display Page Template](../../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).
 
     Choose your object as the content type. This makes your object the default source when mapping the button or the action.
 
-    ![Chose your object as the content type when creating a display page template.](./using-manual-actions/images/08.png)
+    ![Chose your object as the content type when creating a display page template.](./using-manual-actions/images/06.png)
 
 1. Add an out-of-the-box *Button* to your layout.
 
@@ -111,40 +109,33 @@ You can use collection display fragments or form fragments with components mappe
 
     If you need to choose specific content, click on the *Source* field, select *Specific Content*, and choose the specific *Item*.
 
-    ![You can use the default object or select a specific content](./using-manual-actions/images/09.png)
-
 1. Select the *Field* to be mapped to the button label.
 
 1. Under the Action tab, choose an action. This action is triggered once the user clicks on the button.
 
 1. Set the *Success* and *Error* interactions. See [Managing Success and Error Interactions](#managing-success-and-error-interactions) for more information.
 
+The button now executes the selected action when clicked.
+
 ### Managing Success and Error Interactions
 With Liferay, you can choose what happens if an action succeeds or fails after the user clicks on a component mapped to an action.
 
 There are four options available for both interactions:
 
-![You can choose what happens after an action is performed when the user clicks on a button or fragment mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/10.png)
+![You can choose what happens after an action is performed when the user clicks on a button or fragment mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/07.png)
 
 * **None**: Nothing happens after the action is performed.
-
 * **Show Notification**: Notifies the user. You can write your custom success/error message, preview the notification, and configure the page to reload after the action is triggered. 
-
-    ![Show the user a custom notification.](./using-manual-actions/images/11.png)
-
 * **Go to Page**: Navigates to a Success/Error Page in your Site.
-
-    ![Redirect the user to a page in your site.](./using-manual-actions/images/12.png)
-
 * **Go to External URL**: Navigates to an external URL.
 
-    ![Redirect the user to an external URL.](./using-manual-actions/images/13.png)
+The selected option is executed after the user triggers the action.
 
 ## Action Permissions
 
 Liferay automatically generates permissions for managing which roles can trigger standalone actions. Each permission follows the `action.[actionName]` naming pattern (e.g., `action.sendReminder`). See [Permissions Framework Integration](../../understanding-object-integrations/permissions-framework-integration.md) for more information on object permissions.
 
-![Standalone permissions use the action.[actionName] naming pattern.](./using-manual-actions/images/14.png)
+![Standalone permissions use the action.[actionName] naming pattern.](./using-manual-actions/images/08.png)
 
 ## Related Topics
 

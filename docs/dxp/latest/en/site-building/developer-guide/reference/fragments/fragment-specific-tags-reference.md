@@ -18,6 +18,7 @@ Page fragments have access to these types of liferay-specific tags and attribute
 - [Embedded Widgets](#including-widgets-within-a-fragment)
 - [Localizable Fragment Fields](#localizing-fragment-configurations)
 - [Date Fragments](#using-date-fragments)
+- [Map Object Actions to Buttons](#making-buttons-action-ready)
 
 ```{tip}
 When you start typing the name of a tag, the [HTML editor](../../developing-page-fragments/using-the-fragments-editor.md) provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
@@ -262,7 +263,7 @@ According to the W3C HTML standards, custom elements can't be self-closing. Ther
 You can localize fragment configuration for a page's target language. For example, on a button fragment you can define one button type when the page language is en-US, and a different button type when the page language is es-ES. To localize a fragment configuration field, use the `localizable` attribute.
 
 ```{note}
-The `localizable` attribute is not available for fragment configuration fields where the `configurationRole` property is set to `style`. 
+The `localizable` attribute is not available for fragment configuration fields where the `configurationRole` property is set to `style`.
 ```
 
 In the following code excerpt, the button fragment configuration sets the `localizable` attribute to `true` for the `fields` section under `fieldSets`. The `localizable` attribute is set at the field level. In the example, there is only one `buttonType` field. If you have a fragment with multiple fields, you can set the `localizable` attribute for each one:
@@ -300,6 +301,7 @@ In the following code excerpt, the button fragment configuration sets the `local
       }
     ]
   }
+]
 ```
 
 You can use this sample code to change the button type depending on the page's target language. In the following example, the _Contact Us_/_Contacto_ button fragment sets the `localizable` attribute to `true` for the `buttonType` field. The example uses this attribute to configure the _Primary_ button type when the page uses the en-US language (A) and the _Outline Primary_ type when the page uses es-ES (B).
@@ -307,7 +309,7 @@ You can use this sample code to change the button type depending on the page's t
 ![Localizable elements in the fragment show the flag icon under the General tab and support different configurations for different languages.](./fragment-specific-tags-reference/images/04.png)
 
 ```{tip}
-The flag icon under the fragment's General settings indicates the configuration field as localizable. 
+The flag icon under the fragment's General settings indicates the configuration field as localizable.
 ```
 
 Fragments with the `localizable` attribute that do not specify a custom configuration for a language use the default page language's configuration.
@@ -349,6 +351,16 @@ Here are some examples:
 
 ```{tip}
 You can localize the date format the same way you [localize fragment configuration fields](#localizing-fragment-configurations).
+```
+
+## Making Buttons Action-ready
+
+You can trigger [object actions](../../../../building-applications/objects/creating-and-managing-objects/actions.md) using button components by including the `data-lfr-editable-id="action"` and `data-lfr-editable-type="action"` attributes to the button fragment. The `data-lfr-editable-id` must be a unique ID, like this example:
+
+```html
+<button class="btn btn-${configuration.buttonSize} btn-${configuration.buttonType}" data-lfr-editable-id="action" data-lfr-editable-type="action">
+    Go Somewhere
+</button>
 ```
 
 ## Related Topics

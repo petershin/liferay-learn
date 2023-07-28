@@ -42,24 +42,18 @@ With the picklists in place, you can import the Application Evaluation object.
 
 ## Importing the Application Evaluation Object
 
-1. Download the Application Evaluation JSON file:
-
-   ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/setting-up-the-application-evaluation-object/Object_ApplicationEvaluation.json -O
-   ```
-
-   This file includes the object's basic schema, including general configurations and custom fields.
-
 1. Open the *Global Menu* ( ![Global Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
 1. Click *Actions* ( ![Actions Button](../../images/icon-actions.png) ) in the Application Bar and select *Import*.
 
-1. Enter these details and click *Import*
+1. Enter these details and click *Import*.
 
    | Field | Value |
    | :--- | :--- |
    | Name | `ApplicationEvaluation` |
    | JSON File | `Object_ApplicationEvaluation.json` |
+
+   The Application Evaluation JSON file is located in the `liferay-w1m9` folder. This file includes the object's basic schema, including general configurations and custom fields.
 
    ![Import the Object_ApplicationEvaluation.json file.](./setting-up-the-application-evaluation-object/images/03.png)
 

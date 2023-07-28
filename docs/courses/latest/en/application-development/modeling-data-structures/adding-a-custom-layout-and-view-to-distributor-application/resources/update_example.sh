@@ -2,4 +2,4 @@
 
 source $(git rev-parse --show-toplevel)/_common.sh
 
-download_nexus_jar "com.liferay.headless.admin.list.type.client"
+download_nexus_jar "com.liferay.object.admin.rest.client"

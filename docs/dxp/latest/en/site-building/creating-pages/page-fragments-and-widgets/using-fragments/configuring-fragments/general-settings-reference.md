@@ -65,7 +65,8 @@ Follow these steps to access a fragment's General settings:
 
 | Field | Description |
 | :--- | :--- |
-| Type | Determine the Button's style: Primary, Secondary, Link, Outline Primary, or Outline Secondary. |
+| Type | Determine the Button's type: Link or Action |
+| Style | Determine the Button's style: Primary, Secondary, Link, Outline Primary, or Outline Secondary. |
 | Size | Determine the Button's size: Small, Normal, or Large. |
 
 ## Card Options

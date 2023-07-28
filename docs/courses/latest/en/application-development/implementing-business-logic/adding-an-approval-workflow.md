@@ -7,13 +7,9 @@ After adding the `applicationState` field, Delectable Bonsai wants to implement 
 
 ## Deploying the Client Extensions
 
+<!--FINISH: Fix commands and client extension names once BChan merges code!!! -->
+
 1. Download and unzip the sample workspace:
-
-<!-- I don't see this workspace in this pull. Did you maybe forget to commit it, or am I missing it somewhere? I wonder also if it might be best to just dump the fragments and the notification templates into this workspace. 
-
-I've now come back to this comment after reviewing the whole file and realize this may need to point to wherever the code is in liferay-portal? Since you didn't do the literalincludes, I'm thinking maybe the link below needs to point to somewhere else. Either way, we need to fix something here. 
-
--Rich -->
 
    ```bash
    curl -o https://learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/liferay-c6s3.zip
@@ -66,14 +62,6 @@ The provided Workflow Action client extension performs these operations:
 
 ### Determining the Workflow Transition
 
-<!--TASK:
-```{literalinclude} ./resources/liferay-c6s3.zip/liferay-course-workspace/client-extensions/liferay-course-etc-spring-boot/src/main/java/com/liferay/course/WorkflowAction1RestController.java
-    :dedent: 1
-    :language: java
-    :lines:
-```
--->
-
 ```java
    @PostMapping
    public ResponseEntity<String> post(
@@ -107,14 +95,6 @@ It then uses the `JSONObject()` constructor and `.getJSONObject()` method to ext
 Finally, it defines a conditional block that updates the `transition` variable to `review` if the state key equals `approved` or `denied`.
 
 ### Making the POST Request
-
-<!--TASK:
-```{literalinclude} ./resources/liferay-c6s3.zip/liferay-course-workspace/client-extensions/liferay-course-etc-spring-boot/src/main/java/com/liferay/course/WorkflowAction1RestController.java
-    :dedent: 1
-    :language: java
-    :lines:
-```
--->
 
 ```java
       try {

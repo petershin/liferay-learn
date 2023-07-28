@@ -9,6 +9,8 @@ To complete the onboarding flow, Delectable Bonsai wants to enable managers to c
 
 ## Setting Up the Client Extension
 
+<!--FINISH: Fix commands and client extension names once BChan merges code!!! -->
+
 When you [deployed](./adding-an-approval-workflow.md#deploying-the-client-extensions) the `liferay-course-etc-spring-boot` project for your workflow, you also deployed a custom object action.
 
 Before proceeding, ensure the Spring Boot application is running. If it isn't, navigate to the `liferay-course-etc-spring-boot` project folder and run this command:
@@ -30,14 +32,6 @@ The provided Object Action client extension performs these operations:
 1. Assigns the applicant the Account Administrator role
 
 ### Receiving the Request Body and Setting Variables
-
-<!--TASK:
-```{literalinclude} ./resources/liferay-c6s3.zip/liferay-course-workspace/client-extensions/liferay-course-etc-spring-boot/src/main/java/com/liferay/course/ObjectAction1RestController.java
-    :dedent: 1
-    :language: java
-    :lines: 
-```
--->
 
 ```java
    @PostMapping
@@ -66,14 +60,6 @@ The post method for `ObjectAction1RestController` has two parameters: the JSON W
 After logging the request body, it parses the JSON request payload and ultimately extracts the `businessName` and `applicantEmail` values. These values are stored in the `accountName` and `email` variables, and `accountName` is then use to set the `accountERC` variable.
 
 ### Executing the POST Requests
-
-<!--TASK:
-```{literalinclude} ./resources/liferay-c6s3.zip/liferay-course-workspace/client-extensions/liferay-course-etc-spring-boot/src/main/java/com/liferay/course/ObjectAction1RestController.java
-    :dedent: 1
-    :language: java
-    :lines: 
-```
--->
 
 ```java
       try {
@@ -113,14 +99,6 @@ After defining variables using the request body (`json`), the code initializes a
 
 ### Creating the Account
 
-<!--TASK:
-```{literalinclude} ./resources/liferay-c6s3.zip/liferay-course-workspace/client-extensions/liferay-course-etc-spring-boot/src/main/java/com/liferay/course/ObjectAction1RestController.java
-    :dedent: 1
-    :language: java
-    :lines: 
-```
--->
-
 ```java
    private Mono<ResponseEntity<String>> createBusinessAccount(
       WebClient webClient, Jwt jwt, String accountERC, String accountName) {
@@ -141,14 +119,6 @@ This method performs an asynchronous POST request to a `headless-admin-user` end
 
 ### Associating the Applicant with the Account
 
-<!--TASK:
-```{literalinclude} ./resources/liferay-c6s3.zip/liferay-course-workspace/client-extensions/liferay-course-etc-spring-boot/src/main/java/com/liferay/course/ObjectAction1RestController.java
-    :dedent: 1
-    :language: java
-    :lines: 
-```
--->
-
 ```java
    private Mono<ResponseEntity<String>> associateUserWithAccount(
       WebClient webClient, Jwt jwt, String accountERC, String email) {
@@ -167,14 +137,6 @@ This method performs an asynchronous POST request to a `headless-admin-user` end
 
 ### Assigning the Account Administrator Role
 
-<!--TASK:
-```{literalinclude} ./resources/liferay-c6s3.zip/liferay-course-workspace/client-extensions/liferay-course-etc-spring-boot/src/main/java/com/liferay/course/ObjectAction1RestController.java
-    :dedent: 1
-    :language: java
-    :lines: 
-```
--->
-
 ```java
    private Mono<ResponseEntity<String>> assignAccountRoleToUser(
       WebClient webClient, Jwt jwt, String accountERC, Integer accountRoleId, String email) {
@@ -192,14 +154,6 @@ This method performs an asynchronous POST request to a `headless-admin-user` end
 This method performs an asynchronous POST request to a `headless-admin-user` endpoint using the initialized `WebClient` and assigns the user an account role using the `accountERC`, `accountRoleId` and `email` variables. The role id is extracted using the `getRoleId` method. Finally, it returns the response entity and logs the HTTP status.
 
 ### Retrieving the Role ID
-
-<!--TASK:
-```{literalinclude} ./resources/liferay-c6s3.zip/liferay-course-workspace/client-extensions/liferay-course-etc-spring-boot/src/main/java/com/liferay/course/ObjectAction1RestController.java
-    :dedent: 1
-    :language: java
-    :lines: 
-```
--->
 
 ```java
    private Mono<Integer> getRoleId(WebClient webClient, Jwt jwt, String accountERC) {

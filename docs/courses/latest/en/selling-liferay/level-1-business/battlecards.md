@@ -1,0 +1,55 @@
+---
+toc:
+  - ./battlecards/current-battlecards.md
+  - ./battlecards/battlecard-format.md
+uuid: 43bd1dc2-d99a-4da0-be59-bbac37d38fe6
+---
+
+# Competitive Intelligence: Battlecards 2023
+
+**At a Glance**
+
+* Liferay’s Battlecards are compiled in a competitive intelligence tool called Kompyte
+* Each Battlecard consists of data scraped from websites and collected manually
+* Feedback from Liferay and Partner sellers is actively encouraged
+* Battlecards are available from Partner Portal for Partners and Alexandria for employees
+* Battlecards are updated and published each quarter
+
+## Background
+
+This module explains how to learn about Liferay’s competitors by using the competitor Battlecards.
+
+The level 0 session on the [main competitors faced by Liferay](../level-0/main-competitors-faced-by-liferay.md) went through, on a fairly detailed level, four of Liferay’s main competitors. This module focuses on Battlecards in general, covering how they are built and maintained, along with where to find them and how they are structured.
+
+The actual content of this module are the Battlecards themselves. In order to learn more about the competitors please download them and study them.
+
+Further to that, anyone with additional information about a competitor can play a part and contribute that information to enhance the Battlecards further. Please provide feedback if there is critical information missing.
+
+```{note}
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-6-competitive-intelligence-battle-cards) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-6-competitive-intelligence-battle-cards-pdf) of the presentation used in the live workshop.
+* Liferay Employees - View the [Battlecards](https://sales.liferay.com/group/library/competitive-intel).
+* Liferay Partners  - View the [Battlecards](https://partner.liferay.com/marketing/marketing-resources/research-analysis/competitive-analysis).
+```
+## Introduction to the Competitor Battlecards
+
+Liferay’s Sales Enablement team uses a leading third party intelligence tool called Kompyte to scrape information of chosen competitors into one central location. This helps to create and update Battlecards with basic data relatively quickly and from public and generally reliable sources.
+
+Additionally feedback and information about competitors gathered internally is incorporated into the Battlecards. Further to this, feedback from partners is highly appreciated. 
+
+The most critical source of these updates comes from sales people because of meetings with buyers, seeing competitors in opportunities, hearing feedback from colleagues, champions and the broader network.
+
+Being vocal and providing that feedback internally or for partners through the CAMs is highly encouraged. This applies both when winning a deal over a competitor, and when losing to a competitor. In both circumstances most likely there was something in particular that either helped to win over a competitor, or that caused the deal to be lost.
+
+New Battlecards are created throughout the year, with existing Battlecards updated on a Quarterly basis. The quarterly update information is located at the top of the Battlecard, and highlights anything new that the competitor has released or announced that may impact your conversations. 
+
+## Where to Access Battlecards
+
+How you can access the Battlecards varies depending on whether you are an Employee or a Partner.
+
+* [Partners](https://partner.liferay.com/marketing/marketing-resources/research-analysis/competitive-analysis)
+* [Employees](https://sales.liferay.com/en/group/library/competitive-intel)
+
+Note that however the Battlecards are accessed, they are confidential and for internal and partner use only. They must not be distributed.
+
+Next: a summary of all of the [currently available Battlecards](./battlecards/current-battlecards.md)

@@ -53,7 +53,7 @@ With the picklists in place, you can import the Application Evaluation object.
    | Name | `ApplicationEvaluation` |
    | JSON File | `Object_ApplicationEvaluation.json` |
 
-   The Application Evaluation JSON file is located in the `liferay-w1m9` folder. This file includes the object's basic schema, including general configurations and custom fields.
+   The Application Evaluation JSON file is in the `liferay-w1m9` folder. This file includes the object's basic schema, including general configurations and custom fields.
 
    ![Import the Object_ApplicationEvaluation.json file.](./setting-up-the-application-evaluation-object/images/03.png)
 

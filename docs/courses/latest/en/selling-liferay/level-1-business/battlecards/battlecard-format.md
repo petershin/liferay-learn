@@ -86,4 +86,4 @@ Note that the example provided for this section is from the OutSystems battlecar
 
 The final section is simply a recent screenshot of and link to the competitors’ Home Page. Note that sometimes the image does not render accurately in the supplied PDF, which is due to the way the competitive intelligence tool collects and renders this image.  Just click on the section to be directed straight to the competitors’ website.
 
-Next: the final module in this learning path covers [Liferay’s Contracts](“../liferay-contracts.md”)
+Next: the final module in this learning path covers [Liferay’s Contracts](../liferay-contracts.md)

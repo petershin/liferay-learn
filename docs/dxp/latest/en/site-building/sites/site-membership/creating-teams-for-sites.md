@@ -28,7 +28,7 @@ The steps below cover these topics:
     You can configure other site membership groupings, such as Users, Organizations, and User Groups in the Memberships app, which is also under People. See [Changing Site Membership Type](../../site-settings/site-users/changing-site-membership-type.md) for more information on how site memberships work.
     ```
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../../images/icon-add.png)).
 
 1. Enter a name and a description and click *Save*. Your new team is displayed in the list.
 
@@ -36,15 +36,15 @@ The steps below cover these topics:
 
 ## Adding Members to a Team
 
-1. Click on the team name link.
+1. Click the team name link.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../../images/icon-add.png)).
 
 1. Select the users to add to the team and click *Add*.
 
 ## Managing Team Permissions
 
-1. Click the *Actions* icon (![Actions](../../../images/icon-actions.png)) next to the team and select *Permissions*.
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) next to the team and select *Permissions*.
 
     ```{note}
     Setting permissions for the team assigns those permissions to all the team's members. Only administrators who can edit/manage the team can manage team permissions.

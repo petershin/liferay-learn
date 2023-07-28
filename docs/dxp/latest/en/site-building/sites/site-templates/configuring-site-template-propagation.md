@@ -13,7 +13,7 @@ Automatic propagation can be resource intensive, depending the scope of changes 
 
 To configure site template propagation,
 
-1. Open the *Applications Menu* (![Applications Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *System Settings* under Configuration.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *System Settings* under Configuration.
 
 1. Under Platform, go to *Infrastructure* settings and click *Site Templates* under Virtual Instance Scope in the side menu.
 

@@ -26,7 +26,7 @@ From here you can manage site memberships, organizations, and user group associa
 
 Follow these steps to make an existing user a member of the site:
 
-1. Click the *Add* (![Add User](../../../images/icon-add.png)) button in the top right of the screen.
+1. Click *Add* (![Add User](../../../images/icon-add.png)) in the top right of the screen.
 1. Use *Filter and Order* or the *Search* function to locate the user you want to add to the site.
 1. Select the user(s) you want to add and click *Done*.
 

@@ -13,7 +13,7 @@ By default, propagation is triggered for each connected site individually, when 
 
 Only changes to a template's pages and page elements are propagated to connected sites. This includes newly created pages as well as any changes to fragments and widgets in existing pages. Other application data is only copied at initial site creation; subsequent changes are not automatically propagated.
 
-For this reason, site templates are primarily intended for maintaining pages across multiple sites. If you need to create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md).
+For this reason, site templates are primarily intended for maintaining pages across multiple sites. If you must create and maintain web content and other assets across sites, use [asset libraries](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md).
 
 ## Enabling and Disabling Propagation
 
@@ -23,7 +23,7 @@ When [creating a template](./creating-site-templates.md), you determine whether 
 
 Follow these steps to enable or disable propagation after template creation:
 
-1. Open the *Applications Menu* (![Applications Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Site Templates*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Site Templates*.
 
 1. Select the desired template.
 
@@ -37,7 +37,7 @@ Follow these steps to enable or disable propagation after template creation:
 
    ![If Propagation is disabled, click Ready for Propagation.](./propagating-template-changes/images/03.png)
 
-Alternatively, you can enable or disable automatic propagation via the site templates application page. Just click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired template and select *Disable Propagation* or *Ready for Propagation*.
+Alternatively, you can enable or disable automatic propagation via the site templates application page. Just click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired template and select *Disable Propagation* or *Ready for Propagation*.
 
 ![Click the Actions button for the desired site template and select Disable Propagation or Ready for Propagation.](./propagating-template-changes/images/04.png)
 

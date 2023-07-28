@@ -9,13 +9,13 @@ You can export and import site templates to share them between Liferay installat
 
 Follow these steps to export a site template:
 
-1. Open the *Applications Menu* (![Applications Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
 
 1. Click the site template you want to export.
 
 1. Open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)), expand *Publishing*, and click *Export*.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) to create a new export process.
+1. Click *Add* (![Add Button](../../../images/icon-add.png)) to create a new export process.
 
    This opens an export template.
 
@@ -35,7 +35,7 @@ Once finished, click the *Download* button (![Download Button](../../../images/i
 
 Follow these steps to import a site template:
 
-1. Open the *Applications Menu* (![Applications Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
 
 1. [Create](./creating-site-templates.md) a site template.
 
@@ -43,7 +43,7 @@ Follow these steps to import a site template:
 
 1. Open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)), expand *Publishing*, and click *Import*.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)) to create a new import process.
+1. Click *Add* (![Add Button](../../../images/icon-add.png)) to create a new import process.
 
 1. Add the desired LAR file and click *Continue*.
 
@@ -61,9 +61,9 @@ Once complete, you can use the imported site template to [create sites](../addin
 
 If needed, follow these steps to perform bulk export/import operations for site templates:
 
-1. Open the *Applications Menu* (![Applications Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel*, and click *Site Templates*.
 
-1. Click the *Options* icon (![Options Icon](../../../images/icon-options.png)) in the Application Bar and select *Export/Import*.
+1. Click *Options* (![Options Icon](../../../images/icon-options.png)) in the Application Bar and select *Export/Import*.
 
    ![Click the *Options* icon in the Application Bar and select *Export/Import*.](./exporting-importing-site-templates/images/05.png)
 

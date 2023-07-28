@@ -29,7 +29,7 @@ Follow these steps to export site pages and content:
 
 1. Open the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)), expand *Publishing*, and click *Export*.
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)) to create a new export process.
+1. Click *Add* (![Add Button](../../images/icon-add.png)) to create a new export process.
 
    This opens an export template.
 
@@ -83,11 +83,11 @@ Instead of manually creating an export process every time you export site pages 
 
 1. Open the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)), expand *Publishing*, and click *Export*.
 
-1. Click the *Options* icon ![Options Icon](../../images/icon-options.png) in the Application Bar and select *Export Templates*.
+1. Click *Options* ![Options Icon](../../images/icon-options.png) in the Application Bar and select *Export Templates*.
 
    ![Click the Actions button in the Application Bar and select Export Templates.](./exporting-importing-site-pages-and-content/images/05.png)
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
 1. Name and configure the export template.
 

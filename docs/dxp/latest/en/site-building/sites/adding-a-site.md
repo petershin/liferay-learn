@@ -9,7 +9,7 @@ Sites are customizable spaces for building personalized digital experiences. Fol
 
     ![Open the Sites application.](./adding-a-site/images/01.png)
 
-1. Click the *Add* button (![Add Button](../../images/icon-add.png)).
+1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
 1. Select a *Site Template*.
 

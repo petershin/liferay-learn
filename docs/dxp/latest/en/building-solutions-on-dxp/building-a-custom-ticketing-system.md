@@ -17,7 +17,7 @@ building-a-custom-ticketing-system/deploying-a-custom-application.md
 building-a-custom-ticketing-system/implementing-a-documentation-referral-system.md
 ```
 
-Liferay makes it easy for you to build digital solutions. For example, create a custom ticketing application with the styling and features needed for your business.
+Liferay makes it easy for you to build digital solutions. For example, you can create a custom ticketing application with the styling and features needed for your business.
 
 ![See the custom ticketing system sample.](./building-a-custom-ticketing-system/images/01.png)
 
@@ -63,4 +63,4 @@ cd liferay-ticket-workspace
 ./gradlew build
 ```
 
-In the first step, we will [customize a data schema](./building-a-custom-icketing-system/customizing-a-data-schema.md)
+In the first step, you'll [customize a data schema](./building-a-custom-icketing-system/customizing-a-data-schema.md)

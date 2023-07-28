@@ -3,11 +3,11 @@ uuid: 81a1b13c-c5c4-4f62-a50c-8462ea8b38e3
 ---
 # Customizing a Data Schema
 
-The ticketing application requires custom data fields and selections. Use Liferay [objects](../../building-applications/objects.md) and [picklists](../../building-applications/objects/picklists.md) to define a custom data schema.
+The ticketing application requires custom data fields and selections. You use Liferay [objects](../../building-applications/objects.md) and [picklists](../../building-applications/objects/picklists.md) to define a custom data schema.
 
 ## Creating Custom Picklists
 
-A picklist is a predetermined list of values that are defined for users to select. Different picklists are needed for custom fields such as ticket status, ticket type, and ticket priority.
+A picklist is a predetermined list of values users can select. Picklists are needed for custom fields such as ticket status, ticket type, and ticket priority.
 
 ### Deploy the Custom Picklists
 
@@ -78,9 +78,9 @@ The custom ticket object is defined in the JSON file located in the `/batch/` fo
 
 ## Generating Ticket Data through APIs
 
-With the custom ticket object created, new ticket entries can be created within Liferay. They can also be imported through the use of the object's REST APIs.
+With the custom ticket object finished, new ticket entries can be created within Liferay. They can also be imported through the use of the object's REST APIs.
 
-Run the following command to generate a ticket entry:
+Run the command below to generate a ticket entry:
 
 ```bash
 ./gradlew :client-extensions:ticket-entry-batch:deploy
@@ -90,4 +90,4 @@ In Liferay, navigate to _Control Panel_ &rarr; _Tickets_. See that a new ticket 
 
 ![A new ticket entry has been created.](./customizing-a-data-schema/images/03.png)
 
-In the next step, we will [apply a custom theme](./applying-a-custom-theme.md) to the ticketing system.
+Next: [apply a custom theme](./applying-a-custom-theme.md) to the ticketing system.

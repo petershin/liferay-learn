@@ -9,7 +9,7 @@ When you use the standalone trigger for object actions, the actions become manua
 
 * [The object's UI](#trigger-actions-via-the-object-entry-ui)
 * [Dedicated action APIs](#trigger-actions-via-apis)
-* [Fragments in pages](#trigger-actions-via-pages)
+* [Buttons in pages](#trigger-actions-via-pages)
 
 This example creates a standalone action for sending notifications.
 
@@ -49,13 +49,13 @@ Calling either API triggers the action for the specified entry.
 
 ## Trigger Actions via Pages
 
-You can map standalone actions to fragments (e.g., buttons) on pages ([content pages](#mapping-buttons-to-object-actions-in-content-pages) or [display page templates](#mapping-buttons-to-object-actions-in-display-page-templates)).
+You can map standalone actions to buttons on pages ([content pages](#mapping-buttons-to-object-actions-in-content-pages) or [display page templates](#mapping-buttons-to-object-actions-in-display-page-templates)).
 
-If Liferay's out-of-the-box button fragment doesn't satisfy your use case, you can map actions to custom fragments by adding the tags `data-lfr-editable-id="action"`  and `data-lfr-editable-type="action"` to their HTML code. To learn more about adding tags to fragments, see [Fragment Specific Tags and Attributes Reference](../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md).
+If Liferay's out-of-the-box button fragment doesn't satisfy your use case, you can map actions to custom buttons by adding the attributes `data-lfr-editable-id="action"`  and `data-lfr-editable-type="action"` to their HTML code. To learn more about adding attributes to fragments, see [Fragment Specific Tags and Attributes Reference](../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md).
 
 Here is an example of an action-ready custom button:
 
-```HTML
+```html
 <button class="btn btn-${configuration.buttonSize} btn-${configuration.buttonType}" 
         data-lfr-editable-id="action" data-lfr-editable-type="action">
     Go Somewhere
@@ -88,9 +88,9 @@ Here is an example of an action-ready custom button:
 
 1. Choose an action.
 
-1. Set the *Success* and *Error* interactions. See [Managing Success and Error Interactions](#managing-success-and-error-interactions) for more information.
+1. Optionally, set the *Success* and *Error* interactions. See [Managing Success and Error Interactions](#managing-success-and-error-interactions) for more information.
 
-```tip
+```{tip}
 You can use collection display fragments or form fragments with components mapped to actions. See [Displaying Collections](../../../../site-building/displaying-content/additional-content-display-options/displaying-collections.md) and [Using Fragments to Build Forms](../../using-fragments-to-build-forms.md) for more information.
 ```
 

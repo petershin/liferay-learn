@@ -19,7 +19,7 @@ Object actions define custom business logic that you can run manually or automat
 
 When using automatic triggers, Liferay listens for the event and executes the operation automatically according to predefined conditions. 
 
-When using the standalone trigger, Liferay adds the action to the Actions menu ( ![Actions Button](../../../images/icon-actions.png) ) for object entries and generates a headless API to trigger it. You can also map the action to a custom fragment or an out-of-the-box button fragment. The action must be run manually. See [Using Manual Actions](./actions/using-manual-actions.md) to learn more about manual actions.
+When using the standalone trigger, Liferay adds the action to the Actions menu ( ![Actions Button](../../../images/icon-actions.png) ) for object entries and generates a headless API to trigger it. You can also map the action to a button fragment. The action must be run manually. See [Using Manual Actions](./actions/using-manual-actions.md) to learn more about manual actions.
 
 ![Add actions to object definitions.](./actions/images/01.png)
 

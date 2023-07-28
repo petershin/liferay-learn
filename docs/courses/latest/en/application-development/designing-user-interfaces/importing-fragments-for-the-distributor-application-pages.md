@@ -9,21 +9,19 @@ Published objects are integrated with Liferay's core frameworks, so you can map 
 
 1. Retrieve the ID for the Distributor Application object and save it for later.
 
-   ![Begin editing the Distributor Application object and copy its ID.](./importing-fragments-for-the-distributor-application-pages/images/02.png)
+   ![Begin editing the Distributor Application object and copy its ID.](./importing-fragments-for-the-distributor-application-pages/images/01.png)
 
-1. Download and unzip the [Distributor Application fragment set](./course-fragments.zip):
-
-<!-- I don't believe this will work; we have to name it our usual naming scheme (liferay-[letternumberletternumber].zip) or the script won't make the download available. Also, Brian definitely doesn't want us putting .zip files in the repository, so we wouldn't be able to do this anyway. -Rich -->
+1. Download and unzip the [Distributor Application fragment set](./liferay-b2m3.zip):
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/importing-fragments-for-the-distributor-application-pages/course-fragments.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/importing-fragments-for-the-distributor-application-pages/liferay-b2m3.zip -O
    ```
 
    ```bash
-   unzip course-fragments.zip
+   unzip liferay-b2m3.zip
    ```
 
-1. Navigate to this folder: `course-fragments/fragment-compositions/application-form`.
+1. Navigate to this folder: `liferay-b2m3/fragment-compositions/application-form`.
 
 1. Open the `fragment-composition-definition.json` file in your code editor.
 
@@ -41,7 +39,7 @@ Published objects are integrated with Liferay's core frameworks, so you can map 
 1. Save the file and zip the fragment set:
 
    ```bash
-   zip distributor-application-fragment-set.zip course-fragments -r
+   zip distributor-application-fragment-set.zip liferay-b2m3 -r
    ```
 
 Now you can import the fragment set into your site.

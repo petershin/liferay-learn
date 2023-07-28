@@ -1,0 +1,5 @@
+{
+    "description": "A form container composition for the Distributor Application object.",
+    "fragmentCompositionDefinitionPath": "fragment-composition-definition.json",
+    "name": "Form Page"
+}

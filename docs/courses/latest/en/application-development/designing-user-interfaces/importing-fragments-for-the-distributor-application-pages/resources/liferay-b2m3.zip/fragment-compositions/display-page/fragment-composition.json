@@ -1,0 +1,5 @@
+{
+    "description": "A container composition for the Distributor Application object's display page.",
+    "fragmentCompositionDefinitionPath": "fragment-composition-definition.json",
+    "name": "Display Page"
+}

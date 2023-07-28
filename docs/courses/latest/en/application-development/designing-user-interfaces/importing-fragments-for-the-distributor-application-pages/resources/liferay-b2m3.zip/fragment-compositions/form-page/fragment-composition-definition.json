@@ -1,0 +1,2694 @@
+{
+    "definition": {
+        "formConfig": {
+            "formReference": {
+                "className": "com.liferay.object.model.ObjectDefinition#[OBJECT_ID]",
+                "classType": 0
+            }
+        },
+        "fragmentStyle": {
+            "paddingLeft": "7",
+            "paddingRight": "7"
+        },
+        "fragmentViewports": [
+            {
+                "fragmentViewportStyle": {
+                    "paddingLeft": "0",
+                    "paddingRight": "0"
+                },
+                "id": "tablet"
+            }
+        ],
+        "indexed": true,
+        "layout": {
+            "widthType": "Fluid"
+        }
+    },
+    "pageElements": [
+        {
+            "definition": {
+                "fragmentStyle": {
+                    "borderWidth": "0",
+                    "paddingLeft": "1",
+                    "paddingRight": "1"
+                },
+                "indexed": true,
+                "layout": {
+                    "borderWidth": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": 0,
+                    "opacity": 100,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "widthType": "Fluid"
+                },
+                "name": "General Details Block"
+            },
+            "pageElements": [
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-heading"
+                        },
+                        "fragmentConfig": {
+                            "headingLevel": "h2"
+                        },
+                        "fragmentFields": [
+                            {
+                                "id": "element-text",
+                                "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                        "value_i18n": {
+                                            "en_US": "General Details"
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_applicantName",
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_applicantEmail",
+                                            "inputRequired": false,
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 3,
+                        "numberOfColumns": 3,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 3
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-multiselect-list"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_productsOfInterest",
+                                            "numberOfOptions": 4,
+                                            "showAllOptions": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 3
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-multiselect-list"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_distributionRegions",
+                                            "numberOfOptions": 4,
+                                            "showAllOptions": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-multiselect-list"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_orderTypesOfInterest",
+                                            "numberOfOptions": 5,
+                                            "showAllOptions": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-select-from-list"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_productLabeling"
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-select-from-list"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_estimatedAnnualPurchaseVolume"
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "INPUTS-textarea"
+                        },
+                        "fragmentConfig": {
+                            "inputFieldId": "ObjectField_comments",
+                            "numberOfLines": 5,
+                            "placeholder": "",
+                            "showCharactersCount": false
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 2
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 7
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-select-from-list"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_applicationState",
+                                            "inputShowLabel": true
+                                        },
+                                        "fragmentFields": [],
+                                        "fragmentStyle": {
+                                            "paddingBottom": "1",
+                                            "paddingLeft": "1",
+                                            "paddingRight": "1",
+                                            "paddingTop": "1"
+                                        },
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 5
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-separator"
+                        },
+                        "fragmentConfig": {
+                            "bottomSpacing": "3",
+                            "separatorColor": "light"
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "marginLeft": "1",
+                            "marginRight": "1",
+                            "marginTop": "2",
+                            "opacity": "90",
+                            "textColor": "brandColor4"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-2"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                }
+            ],
+            "type": "Section"
+        },
+        {
+            "definition": {
+                "fragmentStyle": {
+                    "borderWidth": "0",
+                    "paddingLeft": "1",
+                    "paddingRight": "1"
+                },
+                "indexed": true,
+                "layout": {
+                    "borderWidth": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": 0,
+                    "opacity": 100,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "widthType": "Fluid"
+                },
+                "name": "Primary Contact Block"
+            },
+            "pageElements": [
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-heading"
+                        },
+                        "fragmentConfig": {
+                            "headingLevel": "h2"
+                        },
+                        "fragmentFields": [
+                            {
+                                "id": "element-text",
+                                "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                        "value_i18n": {
+                                            "en_US": "Primary Contact Information"
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_primaryContactName",
+                                            "inputLabel": {
+                                                "en_US": ""
+                                            },
+                                            "inputRequired": false,
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_primaryContactTitle",
+                                            "inputLabel": {
+                                                "en_US": ""
+                                            },
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_primaryContactEmail",
+                                            "inputLabel": {
+                                                "en_US": ""
+                                            },
+                                            "inputRequired": false,
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_primaryContactPhoneNumber",
+                                            "inputLabel": {
+                                                "en_US": ""
+                                            },
+                                            "inputRequired": false,
+                                            "inputShowHelpText": false,
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-separator"
+                        },
+                        "fragmentConfig": {
+                            "bottomSpacing": "3",
+                            "separatorColor": "light"
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "marginLeft": "1",
+                            "marginRight": "1",
+                            "marginTop": "2",
+                            "opacity": "90",
+                            "textColor": "brandColor4"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-2"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                }
+            ],
+            "type": "Section"
+        },
+        {
+            "definition": {
+                "fragmentStyle": {
+                    "borderWidth": "0",
+                    "paddingLeft": "1",
+                    "paddingRight": "1"
+                },
+                "indexed": true,
+                "layout": {
+                    "borderWidth": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": 0,
+                    "opacity": 100,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "widthType": "Fluid"
+                },
+                "name": "Business Details Block"
+            },
+            "pageElements": [
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-heading"
+                        },
+                        "fragmentConfig": {
+                            "headingLevel": "h2"
+                        },
+                        "fragmentFields": [
+                            {
+                                "id": "element-text",
+                                "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                        "value_i18n": {
+                                            "en_US": "Business Details"
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessName",
+                                            "inputRequired": false,
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-select-from-list"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessType"
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessWebsite",
+                                            "inputLabel": {
+                                                "en_US": "Website"
+                                            },
+                                            "inputRequired": false,
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessPhoneNumber",
+                                            "inputLabel": {
+                                                "en_US": "Phone Number"
+                                            },
+                                            "inputRequired": false,
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 3,
+                        "numberOfColumns": 3,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 4
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-date-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessEstablishedDate",
+                                            "inputLabel": {
+                                                "en_US": "Established Date"
+                                            }
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 4
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-numeric-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessEmployeeNumber",
+                                            "placeholder": ""
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 4
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessAnnualRevenue",
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "INPUTS-multiselect-list"
+                        },
+                        "fragmentConfig": {
+                            "inputFieldId": "ObjectField_businessDistributionChannels",
+                            "numberOfOptions": 5,
+                            "showAllOptions": false
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "INPUTS-textarea"
+                        },
+                        "fragmentConfig": {
+                            "inputFieldId": "ObjectField_businessOtherBrandsOffered",
+                            "numberOfLines": 5,
+                            "placeholder": "",
+                            "showCharactersCount": false
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-separator"
+                        },
+                        "fragmentConfig": {
+                            "bottomSpacing": "3",
+                            "separatorColor": "light"
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "marginLeft": "1",
+                            "marginRight": "1",
+                            "marginTop": "2",
+                            "opacity": "90",
+                            "textColor": "brandColor4"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-2"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                }
+            ],
+            "type": "Section"
+        },
+        {
+            "definition": {
+                "fragmentStyle": {
+                    "borderWidth": "0",
+                    "paddingLeft": "1",
+                    "paddingRight": "1"
+                },
+                "indexed": true,
+                "layout": {
+                    "borderWidth": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": 0,
+                    "opacity": 100,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "widthType": "Fluid"
+                },
+                "name": "Business Address Block"
+            },
+            "pageElements": [
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-heading"
+                        },
+                        "fragmentConfig": {
+                            "headingLevel": "h2"
+                        },
+                        "fragmentFields": [
+                            {
+                                "id": "element-text",
+                                "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                        "value_i18n": {
+                                            "en_US": "Business Address"
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "INPUTS-text-input"
+                        },
+                        "fragmentConfig": {
+                            "inputFieldId": "ObjectField_businessAddressLineOne",
+                            "inputLabel": {
+                                "en_US": "Address Line One"
+                            },
+                            "placeholder": "",
+                            "showCharactersCount": false
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "INPUTS-text-input"
+                        },
+                        "fragmentConfig": {
+                            "inputFieldId": "ObjectField_businessAddressLineTwo",
+                            "inputLabel": {
+                                "en_US": "Address Line Two"
+                            },
+                            "placeholder": "",
+                            "showCharactersCount": false
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessCity",
+                                            "inputLabel": {
+                                                "en_US": "City"
+                                            },
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessZIPPostalCode",
+                                            "inputLabel": {
+                                                "en_US": "Zip, Postal Code"
+                                            },
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessStateProvinceRegion",
+                                            "inputLabel": {
+                                                "en_US": "State, Province, Region"
+                                            },
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessCountry",
+                                            "inputLabel": {
+                                                "en_US": "Country"
+                                            },
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-separator"
+                        },
+                        "fragmentConfig": {
+                            "bottomSpacing": "3",
+                            "separatorColor": "light"
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "marginLeft": "1",
+                            "marginRight": "1",
+                            "marginTop": "2",
+                            "opacity": "90",
+                            "textColor": "brandColor4"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-2"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                }
+            ],
+            "type": "Section"
+        },
+        {
+            "definition": {
+                "fragmentStyle": {
+                    "borderWidth": "0",
+                    "paddingLeft": "1",
+                    "paddingRight": "1"
+                },
+                "indexed": true,
+                "layout": {
+                    "borderWidth": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": 0,
+                    "opacity": 100,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "widthType": "Fluid"
+                },
+                "name": "Additional Business Info Block"
+            },
+            "pageElements": [
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-heading"
+                        },
+                        "fragmentConfig": {
+                            "headingLevel": "h2"
+                        },
+                        "fragmentFields": [
+                            {
+                                "id": "element-text",
+                                "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                        "value_i18n": {
+                                            "en_US": "Additional Business Information"
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessLicenseNumber",
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessResaleNumber",
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 2
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 7
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-text-input"
+                                        },
+                                        "fragmentConfig": {
+                                            "inputFieldId": "ObjectField_businessTaxIDNumber",
+                                            "placeholder": "",
+                                            "showCharactersCount": false
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 5
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-separator"
+                        },
+                        "fragmentConfig": {
+                            "bottomSpacing": "3",
+                            "separatorColor": "light"
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "marginLeft": "1",
+                            "marginRight": "1",
+                            "marginTop": "2",
+                            "opacity": "90",
+                            "textColor": "brandColor4"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-2"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                }
+            ],
+            "type": "Section"
+        },
+        {
+            "definition": {
+                "fragmentStyle": {
+                    "borderWidth": "0",
+                    "paddingLeft": "1",
+                    "paddingRight": "1"
+                },
+                "indexed": true,
+                "layout": {
+                    "borderWidth": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": 0,
+                    "opacity": 100,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "widthType": "Fluid"
+                },
+                "name": "Attachments Block"
+            },
+            "pageElements": [
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-heading"
+                        },
+                        "fragmentConfig": {
+                            "headingLevel": "h2"
+                        },
+                        "fragmentFields": [
+                            {
+                                "id": "element-text",
+                                "value": {
+                                    "fragmentLink": {},
+                                    "text": {
+                                        "value_i18n": {
+                                            "en_US": "Attachments"
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-spacer"
+                        },
+                        "fragmentConfig": {
+                            "height": "py-1"
+                        },
+                        "fragmentFields": [],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingLeft": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1"
+                        },
+                        "gutters": true,
+                        "indexed": true,
+                        "modulesPerRow": 2,
+                        "numberOfColumns": 2,
+                        "reverseOrder": false,
+                        "rowViewports": [
+                            {
+                                "id": "landscapeMobile",
+                                "rowViewportDefinition": {
+                                    "modulesPerRow": 1
+                                }
+                            },
+                            {
+                                "id": "portraitMobile",
+                                "rowViewportDefinition": {}
+                            },
+                            {
+                                "id": "tablet",
+                                "rowViewportDefinition": {}
+                            }
+                        ],
+                        "verticalAlignment": "top"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-file-upload"
+                                        },
+                                        "fragmentConfig": {
+                                            "buttonText": "Select File",
+                                            "inputFieldId": "ObjectField_businessLicense",
+                                            "showSupportedFileInfo": true
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        },
+                        {
+                            "definition": {
+                                "columnViewports": [
+                                    {
+                                        "columnViewportDefinition": {
+                                            "size": 12
+                                        },
+                                        "id": "landscapeMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "portraitMobile"
+                                    },
+                                    {
+                                        "columnViewportDefinition": {},
+                                        "id": "tablet"
+                                    }
+                                ],
+                                "size": 6
+                            },
+                            "pageElements": [
+                                {
+                                    "definition": {
+                                        "fragment": {
+                                            "key": "INPUTS-file-upload"
+                                        },
+                                        "fragmentConfig": {
+                                            "buttonText": "Select File",
+                                            "inputFieldId": "ObjectField_businessProofOfInsurance",
+                                            "showSupportedFileInfo": true
+                                        },
+                                        "fragmentFields": [],
+                                        "indexed": true
+                                    },
+                                    "type": "Fragment"
+                                }
+                            ],
+                            "type": "Column"
+                        }
+                    ],
+                    "type": "Row"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-separator"
+                        },
+                        "fragmentConfig": {
+                            "bottomSpacing": "3",
+                            "separatorColor": "light"
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "marginLeft": "1",
+                            "marginRight": "1",
+                            "marginTop": "2",
+                            "opacity": "90",
+                            "textColor": "brandColor4"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                }
+            ],
+            "type": "Section"
+        },
+        {
+            "definition": {
+                "fragmentStyle": {
+                    "borderWidth": "0",
+                    "paddingLeft": "1",
+                    "paddingRight": "1"
+                },
+                "indexed": true,
+                "layout": {
+                    "borderWidth": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "marginTop": 0,
+                    "opacity": 100,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "paddingTop": 0,
+                    "widthType": "Fluid"
+                },
+                "name": "Submit Block"
+            },
+            "pageElements": [
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "INPUTS-submit-button"
+                        },
+                        "fragmentConfig": {
+                            "buttonSize": "nm",
+                            "buttonType": "primary"
+                        },
+                        "fragmentFields": [
+                            {
+                                "id": "submit-button-text",
+                                "value": {
+                                    "fragmentLink": {}
+                                }
+                            }
+                        ],
+                        "fragmentStyle": {
+                            "paddingBottom": "1",
+                            "paddingRight": "1",
+                            "paddingTop": "1",
+                            "textAlign": "right"
+                        },
+                        "fragmentViewports": [
+                            {
+                                "fragmentViewportStyle": {
+                                    "paddingBottom": "1",
+                                    "paddingRight": "1"
+                                },
+                                "id": "tablet"
+                            }
+                        ],
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragment": {
+                            "key": "BASIC_COMPONENT-separator"
+                        },
+                        "fragmentConfig": {
+                            "bottomSpacing": "2",
+                            "separatorColor": "light"
+                        },
+                        "fragmentFields": [],
+                        "fragmentStyle": {
+                            "marginLeft": "10",
+                            "marginRight": "10",
+                            "marginTop": "3",
+                            "opacity": "90",
+                            "paddingLeft": "5",
+                            "paddingRight": "5",
+                            "textColor": "brandColor4"
+                        },
+                        "indexed": true
+                    },
+                    "type": "Fragment"
+                },
+                {
+                    "definition": {
+                        "fragmentStyle": {
+                            "borderWidth": "0",
+                            "paddingBottom": "1",
+                            "paddingTop": "1"
+                        },
+                        "indexed": true,
+                        "layout": {
+                            "borderWidth": 0,
+                            "contentDisplay": "FlexRow",
+                            "justify": "Center",
+                            "marginBottom": 0,
+                            "marginLeft": 0,
+                            "marginRight": 0,
+                            "marginTop": 0,
+                            "opacity": 100,
+                            "paddingBottom": 0,
+                            "paddingLeft": 0,
+                            "paddingRight": 0,
+                            "paddingTop": 0,
+                            "widthType": "Fluid"
+                        },
+                        "name": "Logo"
+                    },
+                    "pageElements": [
+                        {
+                            "definition": {
+                                "fragment": {
+                                    "key": "BASIC_COMPONENT-image"
+                                },
+                                "fragmentConfig": {
+                                    "imageSize": "w-100"
+                                },
+                                "fragmentFields": [
+                                    {
+                                        "id": "image-square",
+                                        "value": {
+                                            "fragmentImage": {
+                                                "url": {
+                                                    "value_i18n": {
+                                                        "en_US": "/documents/d/guest/svgviewer-png-output-2-?download=true"
+                                                    }
+                                                }
+                                            },
+                                            "fragmentLink": {}
+                                        }
+                                    }
+                                ],
+                                "fragmentStyle": {
+                                    "height": "75px",
+                                    "maxHeight": "75px",
+                                    "maxWidth": "75px",
+                                    "minHeight": "75px",
+                                    "minWidth": "75px",
+                                    "width": "75px"
+                                },
+                                "indexed": true
+                            },
+                            "type": "Fragment"
+                        }
+                    ],
+                    "type": "Section"
+                }
+            ],
+            "type": "Section"
+        }
+    ],
+    "type": "Form"
+}

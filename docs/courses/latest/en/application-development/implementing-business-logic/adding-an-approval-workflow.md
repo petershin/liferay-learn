@@ -1,5 +1,5 @@
 ---
-uuid: e886f87b-8f3d-41a5-bbd7-fb870e569cdc
+uuid: 65030216-5a2f-4bdc-af18-51e6ef0f06b4
 ---
 # Adding an Approval Workflow
 

@@ -1,3 +1,6 @@
+---
+uuid: 17bb77b6-534b-4293-b694-6e112dc6a519
+---
 # Adding Fields Using REST APIs
 
 The `object-admin` service provides REST APIs for performing CRUD operations on object definitions, such as adding fields. Here you'll use these APIs to add business and credit reference fields to the Distributor Application object.

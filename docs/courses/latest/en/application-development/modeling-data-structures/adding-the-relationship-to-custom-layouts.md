@@ -1,3 +1,6 @@
+---
+uuid: fc118dba-ef19-4846-8a93-9e5420d10b9c
+---
 # Adding the Relationship to Custom Layouts
 
 Relationship fields appear automatically in an object's default layout; relationship tables do not. To test the relationship, update the custom layout for Distributor Application to include the relationship table.

@@ -1,3 +1,6 @@
+---
+uuid: 3a9734ae-77dd-4dc7-bbeb-6a869917b52a
+---
 # Adding Fields to the Distributor Application Object
 
 Here you'll add general fields to the Distributor Application object for gathering additional applicant and contact information:

@@ -1,3 +1,6 @@
+---
+uuid: 6432050c-d38d-43b4-99a9-a15a61ec38d8
+---
 # Adding Picklist Fields to the Object
 
 Adding picklist fields to the Distributor Application object follows the same process as any other field type, though they have some additional configuration options.

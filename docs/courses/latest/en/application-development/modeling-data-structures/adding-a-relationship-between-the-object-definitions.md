@@ -1,3 +1,6 @@
+---
+uuid: 2e138188-c1a0-49a4-b707-28286aec0461
+---
 # Adding a Relationship Between the Object Definitions
 
 Delectable Bonsai must relate an application to multiple evaluations. This involves adding a one-to-many relationship in the Distributor Application object.

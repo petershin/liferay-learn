@@ -1,3 +1,6 @@
+---
+uuid: 2c424a6d-3a85-49f9-8a15-a11a3e990e8f
+---
 # Creating Picklists for Distributor Applications
 
 Delectable Bonsai wants to collect information to help them assess the relative value of each business opportunity. In this case, they want applicants to select from predefined options. You can achieve this using Liferay picklists.

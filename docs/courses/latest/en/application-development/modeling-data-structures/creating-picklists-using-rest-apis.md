@@ -1,3 +1,6 @@
+---
+uuid: b5ea7966-f0c3-40a6-a5e7-ab8a231d7bea
+---
 # Creating Picklists Using REST APIs
 
 The `headless-admin-list-type` service provides REST APIs for performing CRUD operations for picklists. Using these APIs is far more efficient than creating picklists manually through the UI, since you can add lists and items with pre-configured ERCs and localized names all in one step. Here you'll use these APIs to add the remaining picklists for the Distributor Application object.

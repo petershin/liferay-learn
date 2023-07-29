@@ -1,3 +1,6 @@
+---
+uuid: 96743fbb-e0d1-487d-92a4-5e03b21b9dec
+---
 # Setting Up the Application Evaluation Object
 
 When reviewing applications, Delectable Bonsai must store evaluation notes for each distributor application they receive. To achieve this, the Delectable Bonsai development team created an Application Evaluation object and added the necessary fields.

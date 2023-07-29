@@ -1,3 +1,6 @@
+---
+uuid: 2e20d885-4c1d-4f4b-aec1-15c521527fac
+---
 # Relating Object Entries
 
 After defining an object relationship, you can relate entries in two ways: the Liferay UI or relationship REST APIs. Here you'll practice relating evaluations and applications via the UI.

@@ -1,3 +1,6 @@
+---
+uuid: 4deb6f36-0441-4039-9e1f-d4da746c4e7d
+---
 # Adding a Custom Layout and View to Distributor Application
 
 With over 50 fields, the current user interfaces for Distributor Application are no longer viable for creating and displaying entries. This is because the default [layout](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/layouts) and [view](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/views) include every object field and display them alphabetically. The layout provides a UI for creating and editing object entries, and the view provides a UI for viewing and managing existing entries.

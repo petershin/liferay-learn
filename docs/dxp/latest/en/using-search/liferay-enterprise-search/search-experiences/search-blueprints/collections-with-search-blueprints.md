@@ -4,7 +4,7 @@ uuid: f70fbde9-da00-4de9-b63c-524720b4222c
 
 # Collections with Search Blueprints
 
-{bdg-secondary}`7.4 U87+`
+{bdg-secondary}`7.4 U88+`
 {bdg-link-primary}`[Beta Feature](../../../../system-administration/configuring-liferay/feature-flags.md)`
 
 When you create a search blueprint, a [collection provider](../../../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md) is registered automatically. Assets matching the blueprint's query and configuration are added to the collection.

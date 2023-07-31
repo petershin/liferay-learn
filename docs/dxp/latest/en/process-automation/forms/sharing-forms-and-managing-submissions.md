@@ -5,10 +5,8 @@ toc:
   - ./sharing-forms-and-managing-submissions/form-reports.md
   - ./sharing-forms-and-managing-submissions/configuring-form-notifications.md
   - ./sharing-forms-and-managing-submissions/using-forms-with-a-workflow.md
-  - >-
-    ./sharing-forms-and-managing-submissions/enabling-captcha-on-form-submissions.md
-  - >-
-    ./sharing-forms-and-managing-submissions/redirecting-users-on-form-submission.md
+  - ./sharing-forms-and-managing-submissions/enabling-captcha-on-form-submissions.md
+  - ./sharing-forms-and-managing-submissions/redirecting-users-on-form-submission.md
 uuid: 6836d767-5102-4171-98b7-7a2dff247392
 ---
 # Sharing Forms and Managing Submissions

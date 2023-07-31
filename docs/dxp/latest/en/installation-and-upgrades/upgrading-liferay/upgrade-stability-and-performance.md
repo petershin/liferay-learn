@@ -2,8 +2,7 @@
 toc:
   - ./upgrade-stability-and-performance/database-tuning-for-upgrades.md
   - ./upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md
-  - >-
-    ./upgrade-stability-and-performance/example-removing-intermediate-journal-article-versions.md
+  - ./upgrade-stability-and-performance/example-removing-intermediate-journal-article-versions.md
   - ./upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md
 uuid: e6a89b26-4fcc-4dc2-b300-7a92adb60afd
 ---

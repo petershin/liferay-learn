@@ -3,12 +3,9 @@ toc:
   - ./serving-device-and-screen-optimized-media/how-adaptive-media-works.md
   - ./serving-device-and-screen-optimized-media/adding-image-resolutions.md
   - ./serving-device-and-screen-optimized-media/managing-image-resolutions.md
-  - >-
-    ./serving-device-and-screen-optimized-media/using-adapted-images-in-site-content.md
-  - >-
-    ./serving-device-and-screen-optimized-media/migrating-documents-and-media-thumbnails.md
-  - >-
-    ./serving-device-and-screen-optimized-media/adaptive-media-configuration-reference.md
+  - ./serving-device-and-screen-optimized-media/using-adapted-images-in-site-content.md
+  - ./serving-device-and-screen-optimized-media/migrating-documents-and-media-thumbnails.md
+  - ./serving-device-and-screen-optimized-media/adaptive-media-configuration-reference.md
 uuid: bd2ce0e7-dc9c-40c0-b323-d0a3ca2440d0
 ---
 # Serving Device and Screen Optimized Media

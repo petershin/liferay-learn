@@ -3,8 +3,7 @@ toc:
   - ./additional-content-display-options/using-the-web-content-display-widget.md
   - ./additional-content-display-options/displaying-collections.md
   - ./additional-content-display-options/filtering-collections-on-a-page.md
-  - >-
-    ./additional-content-display-options/styling-widgets-with-widget-templates.md
+  - ./additional-content-display-options/styling-widgets-with-widget-templates.md
   - ./additional-content-display-options/using-the-iframe-widget.md
 uuid: d59e556b-a5bb-435f-89b1-c28645ebdcaf
 ---

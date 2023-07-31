@@ -2,8 +2,7 @@
 toc:
   - ./building-a-responsive-site/building-a-responsive-site.md
   - ./building-a-responsive-site/creating-mobile-device-rules.md
-  - >-
-    ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+  - ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
 uuid: 60f0d6ab-cd15-4649-9af4-00afdcaaf0d1
 ---
 # Building a Responsive Site

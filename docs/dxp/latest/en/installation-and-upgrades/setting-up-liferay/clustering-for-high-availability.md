@@ -1,8 +1,7 @@
 ---
 toc:
   - ./clustering-for-high-availability/example-creating-a-simple-dxp-cluster.md
-  - >-
-    ./clustering-for-high-availability/database-configuration-for-cluster-nodes.md
+  - ./clustering-for-high-availability/database-configuration-for-cluster-nodes.md
   - ./clustering-for-high-availability/configuring-cluster-link.md
   - ./clustering-for-high-availability/configuring-unicast-over-tcp.md
 uuid: e38676bb-0c00-45cb-a1ff-37038f7ad701

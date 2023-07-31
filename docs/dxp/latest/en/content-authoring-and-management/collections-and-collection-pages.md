@@ -1,12 +1,10 @@
 ---
 toc:
-  - collections-and-collection-pages/about-collections-and-collection-pages.md
-  - collections-and-collection-pages/creating-collections.md
-  - >-
-    ../site-building/displaying-content/additional-content-display-options/displaying-collections.md
-  - collections-and-collection-pages/collection-providers.md
-  - >-
-    ../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md
+  - ./collections-and-collection-pages/about-collections-and-collection-pages.md
+  - ./collections-and-collection-pages/creating-collections.md
+  - ../site-building/displaying-content/additional-content-display-options/displaying-collections.md
+  - ./collections-and-collection-pages/collection-providers.md
+  - ../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md
 uuid: 39de6f65-632b-4eb8-b880-55827658f587
 ---
 # Collections and Collection Pages

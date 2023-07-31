@@ -1,5 +1,6 @@
 ---
 toc:
+  - ./integrating-objects-with-third-party-services/managing-data-from-external-systems.md
   - >-
     ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
 uuid: 0a5eb7f9-331f-4a4a-919b-b6f383c1bda0
@@ -9,6 +10,7 @@ uuid: 0a5eb7f9-331f-4a4a-919b-b6f383c1bda0
 ```{toctree}
 :maxdepth: 3
 
+integrating-objects-with-third-party-services/managing-data-from-external-systems.md
 integrating-objects-with-third-party-services/using-google-sheets-with-objects.md
 ```
 
@@ -16,6 +18,10 @@ You can use Liferay Objects with popular data integration tools to create automa
 
 ::::{grid} 2
 :gutter: 3 3 3 3
+
+:::{grid-item-card} Managing Data from External Systems
+:link: ./integrating-objects-with-third-party-services/managing-data-from-external-systems.md
+:::
 
 :::{grid-item-card} Using Google Sheets with Objects
 :link: ./integrating-objects-with-third-party-services/using-google-sheets-with-objects.md

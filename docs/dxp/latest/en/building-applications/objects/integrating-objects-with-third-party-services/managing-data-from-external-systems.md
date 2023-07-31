@@ -1,7 +1,7 @@
 ---
 uuid: f1b85ce0-bfb0-4abd-bf57-534edda1d5f0
 ---
-# Using External Data Sources with Objects
+# Managing Data from External Systems
 
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
@@ -16,9 +16,9 @@ In proxy objects, fields are mapped to existing columns in an external system's 
 ```{important}
 Since this data does not persist in Liferay's database, some limitations are placed on proxy objects. Users cannot 
 
-* Add field [validations](./validations.md)
+* Add field [validations](../creating-and-managing-objects/validations.md)
 
-* Add object [relationships](./relationships.md)
+* Add object [relationships](../creating-and-managing-objects/relationships.md)
 
 * [Index](../../../using-search/search-administration-and-tuning/search-administration.md#index-actions) its data through Liferay
 

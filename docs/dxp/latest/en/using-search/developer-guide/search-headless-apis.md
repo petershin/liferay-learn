@@ -5,7 +5,7 @@ uuid: 5c79adbb-9deb-459b-9615-71e2941f5cd8
 
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-{bdg-secondary}`Available Liferay 7.4 U87+ and GA87+`
+{bdg-secondary}`7.4 U88+ and GA88+`
 
 You can [search for content](../../using-search/getting-started/searching-for-content.md) from a Liferay search page, but you can also use the `portal-search-rest` API endpoint. If you're running Liferay locally, while logged in you can visit <http://localhost:8080/o/api?endpoint=http://localhost:8080/o/portal-search-rest/v1.0/openapi.json> to explore the API.
 
@@ -26,17 +26,6 @@ To enable using an [environment variable](../../installation-and-upgrades/instal
 ```properties
 LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER7__NUMBER9__NUMBER6__NUMBER6__NUMBER9_=true
 ```
-
-To enable guest access to the API, [create a new service access policy](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md#creating-a-service-access-policy) as follows:
-
-| Field | Entry |
-| :--- | :--- |
-| Name | SEARCH |
-| Enabled | Checked |
-| Default | Checked |
-| Title | Public Access to Search API |
-| Service Class Name | `com.liferay.portal.search.rest.internal.resource.v1_0.SearchResultResourceImpl` |
-| Method Name | `postSearchPage` |
 
 ## Searching for Sample Content
 
@@ -162,9 +151,9 @@ Query parameters can be used to further filter the results.
 | :--- | :--- |
 | `entryClassNames` | A comma separated list of `entryClassNames` to be searched. Defaults to all searchable types. |
 | `fields` | The fields parameter requests only specific fields to be enumerated in each of the elements in the response. |
-| `nestedFields` | Supports `embedded` to get back the embedded with additional data. |
+| `nestedFields` | Supports `embedded` to get back nested data. |
 | `restrictFields` | Excludes the given field(s) from being returned. |
-| `filter` | Filters across different fields. Supported fields are `groupIds`, `taxonomyCategoryIds`, `keywords`, `dateCreated`, `dateModified`, `creatorId`, `description`, and `title`. |
+| `filter` | Filters across different fields. Supported fields are `groupIds`, `taxonomyCategoryIds`, `keywords`, `dateCreated`, `dateModified`, `creatorId`, `description`, and `title`. For more filtering options, use a search blueprint (DXP subscription).|
 | `page` | Specify which page to return. |
 | `pageSize` | Specify how many items you want per page. |
 | `search` | Search by keyword(s). |
@@ -178,7 +167,7 @@ Empty requests are allowed (e.g., specify `{}` as the request body), but there a
 
 | Property | Description |
 | :--- | :--- |
-| `attributes` | Set search context attributes. Set the `search.experiences.blueprint.external.reference.code` (preferred) or the `search.experiences.blueprint.id` to set a [search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints.md). Set `search.empty.search` to true to return results even if the `search` parameter is omitted from the request. |
+| `attributes` | Set available search context attributes to configure a search blueprint or enable empty search. See [Available Search Request Attributes for details](#available-search-request-attributes). |
 | `facetConfiguration` | Set the facet configuration to return facets in the response.|
 
 ### Adding Attributes to the Request
@@ -192,6 +181,18 @@ To search with a blueprint, use this request body syntax:
   }
 }
 ```
+
+### Available Search Request Attributes
+
+You can set these `attributes` into the request:
+
+| Property | Description |
+| :--- | :--- |
+| `search.empty.search` | Set this to true to return results even if the `search` parameter is omitted from the request. |
+| DXP Only<br />`search.experiences.blueprint.external.reference.code` | (Preferred) Set a [search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration. |
+| DXP Only<br />`search.experiences.blueprint.id` | Set a [search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the search query and configuration.|
+| DXP Only<br />`search.experiences.ip.address` | Set automatically. Only use this to test blueprints [with geolocation](../liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience.md#building-a-blueprint-to-personalize-search-results) configured, to simulate different locations. |
+| DXP Only<br />`search.experiences.scope.group.id` | Set this when your blueprint uses an [element](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md) that requires it: Limit Search to the Current Site, Boost Contents in a Category for a User Segment, or Staging Aware. |
 
 ### Adding Facet Configurations to the Request
 
@@ -222,3 +223,53 @@ A facet configuration can have several properties:
 | `name` | Set the type of facet: `category`, `custom`, `date-range`, `folder`, `nested`, `site`, `tag`, `type`, or `user`. See the [Search Facets](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/search-facets) documentation for more information on each type.
 | `values` | Post filter the results by selecting values. This is like clicking facet terms in the facet widget. |
 
+## Enabling Guest Access to the API
+
+To enable guest access to the API, [create a new service access policy](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md#creating-a-service-access-policy) as follows:
+
+| Field | Entry |
+| :--- | :--- |
+| Name | SEARCH |
+| Enabled | Checked |
+| Default | Checked |
+| Title | Public Access to Search API |
+| Service Class Name | `com.liferay.portal.search.rest.internal.resource.v1_0.SearchResultResourceImpl` |
+| Method Name | `postSearchPage` |
+
+## Aggregations and Search Facets in the Response
+
+You can see [aggregations](ES) and [search facets](../search-pages-and-widgets/search-facets.md) in the API response. To see aggregations,
+
+1. Add aggregations to a search blueprint.
+1. Set the attribute `search.experiences.blueprint.external.reference.code` in you search request.
+
+Search facets are returned if you add a [facet configuration](#adding-facet-configurations-to-the-request) to the request. For example, this request body asks for a tag facet:
+
+```json
+{
+  "facetConfigurations": [
+    {
+      "name": "tag"
+    }
+  ]
+}
+```
+
+In the response, the returned search facet looks like this:
+
+```json
+"searchFacets": {
+  "tag": [
+    {
+      "displayName": "business",
+      "term": "business",
+      "frequency": 26
+    },
+    {
+      "displayName": "fun",
+      "term": "fun",
+      "frequency": 1
+    }
+  ]
+}
+  ```

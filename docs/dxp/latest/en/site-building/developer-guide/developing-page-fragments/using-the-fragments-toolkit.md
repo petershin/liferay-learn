@@ -22,7 +22,7 @@ The toolkit requires this software:
 * [Yeoman](https://yeoman.io/)
 * [Yarn](https://classic.yarnpkg.com/)
 
-NPM and Yarn are package managers that you'll use to install the the toolkit and modules it depends on.
+NPM and Yarn are package managers that you'll use to install the toolkit and modules it depends on.
 
 1. Start with installing an NPM and Node.js via a [Node.js LTS](https://nodejs.org/en/download/).
 
@@ -124,7 +124,7 @@ The generator creates each project in a folder derived from the project name. Fo
 
 Then, follow these steps to import the sample Fragment Set to Liferay:
 
-1. Import the Fragment Set to your Liferay instance invoking the `yarn run import` command in the project's root folder (e.g., `sample-liferay-fragments`). Alternatively, you can [import the Fragment Set manually](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
+1. Import the Fragment Set to your Liferay instance by invoking the `yarn run import` command in the project's root folder (e.g., `sample-liferay-fragments`). Alternatively, you can [import the Fragment Set manually](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
 
     ```bash
     cd sample-liferay-fragments
@@ -407,7 +407,7 @@ You can import your new Fragment as you did the original example Fragment:
 
 1. Verify the Fragment Set is available. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*. The Set should appear in the list.
 
-![The Set is available.](./using-the-fragments-toolkit/images/03.png)
+![The Set is available.](./using-the-fragments-toolkit/images/02.png)
 
 Great! Now you know how to use the Fragments Toolkit to create and manage Fragments. See the [Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md) for more toolkit command information.
 

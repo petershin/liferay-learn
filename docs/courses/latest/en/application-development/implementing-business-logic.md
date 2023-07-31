@@ -3,7 +3,7 @@ toc:
   - ./implementing-business-logic/validating-fields.md
   - ./implementing-business-logic/managing-access-to-data.md
   - ./implementing-business-logic/defining-a-state-field.md
-  - ./implementing-business-logic/adding-a-custom-workflow.md
+  - ./implementing-business-logic/adding-an-approval-workflow.md
   - ./implementing-business-logic/adding-notification-templates.md
   - ./implementing-business-logic/adding-notification-actions.md
   - ./implementing-business-logic/automating-account-creation.md

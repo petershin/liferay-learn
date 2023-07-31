@@ -1,4 +1,8 @@
 ---
+toc:
+  - ./application-development/modeling-data-structures.md
+  - ./application-development/implementing-business-logic.md
+  - ./application-development/designing-user-interfaces.md
 uuid: 38f72d34-99ad-4e11-b28e-bf41850ee7c7
 ---
 # Application Development

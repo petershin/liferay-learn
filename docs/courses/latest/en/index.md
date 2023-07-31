@@ -2,6 +2,7 @@
 toc:
 - ./cloud-administrator.md
 - ./liferay-administrator.md
+- ./application-development.md
 - ./selling-liferay.md
 uuid: 79dff06d-5aef-4fba-bf17-edbb16e2ed5a
 ---

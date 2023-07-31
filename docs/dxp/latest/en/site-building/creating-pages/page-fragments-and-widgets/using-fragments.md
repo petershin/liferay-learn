@@ -25,6 +25,7 @@ using-fragments/configuring-fragments.md
 using-fragments/mapping-and-linking-fragment-elements.md
 using-fragments/configuring-fragment-visibility.md
 using-fragments/editing-fragment-elements.md
+using-fragments/personalizing-custom-forms-using-form-fragments.md
 using-fragments/creating-dropdown-menus-with-fragments.md
 using-fragments/duplicating-fragments.md
 using-fragments/saving-fragment-compositions.md
@@ -37,6 +38,8 @@ Page fragments are extensible and reusable drag-and-drop elements for building [
 ![Build content pages and templates with fragments.](./using-fragments/images/01.png)
 
 Liferay provides a variety of fragments out-of-the-box, but you can develop custom fragments using the [page fragment editor](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md) or [Fragments Toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md). Additionally, you can [embed Liferay widgets](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#including-widgets-within-a-fragment) into fragments or add editable fields. See [Developing Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn more.
+
+If you are working with forms, you can personalize your form fields by [mapping them to custom form fragments](./using-fragments/personalizing-custom-forms-using-form-fragments.md).
 
 All page fragments are organized into sets, which group related fragments for easier management and use. Each fragment set can include common resources accessible to all the fragments. See [Including Default Resources in Page Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md) for more information.
 
@@ -69,7 +72,7 @@ After adding fragments to a page or template, you can configure and customize th
 :link: ./using-fragments/editing-fragment-elements.md
 :::
 
-:::{grid-item-card} Editing Fragment Elements
+:::{grid-item-card} Personalizing Custom Forms Using Form Fragments
 :link: ./using-fragments/personalizing-custom-forms-using-form-fragments.md
 :::
 

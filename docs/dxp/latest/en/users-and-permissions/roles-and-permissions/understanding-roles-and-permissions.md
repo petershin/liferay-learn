@@ -64,7 +64,7 @@ Organization scoped Roles are called Organization Roles. Permissions for Organiz
 
 ### Site Roles
 
-Site scoped Roles are called Site Roles. Permissions for Site Roles are defined at the global level and are applied to one specific [Site](../../site-building/introduction-to-site-building.md). Individual Users, Organizations, and User Groups can be used both to control Site Membership and assign Site Roles.
+Site scoped Roles are called Site Roles. Permissions for Site Roles are defined at the global level and are applied to one specific [Site](../../site-building/getting-started-with-site-building.md). Individual Users, Organizations, and User Groups can be used both to control Site Membership and assign Site Roles.
 
 ## Permissions
 

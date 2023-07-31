@@ -39,6 +39,6 @@ Liferay [user groups](../../users-and-permissions/user-groups/creating-and-manag
 
 ## Related Topics
 
-* [Introduction to Site Building](../introduction-to-site-building.md)
+* [Getting Started With Site Building](../getting-started-with-site-building.md)
 * [Site Templates](./site-templates.md)
 * [Adding Members to Sites](./site-membership/adding-members-to-sites.md)

@@ -111,7 +111,7 @@ The web-based UI makes content and service functionality available in browsers.
 
 The UI helps people do work, [collaborate](../collaboration-and-social/collaboration-and-social-overview.md), and enjoy content. Here's what the UI consists of:
 
-* [DXP application](../site-building/introduction-to-site-building.md): The web application for managing Portals, Sites, Users, Pages, Widgets, and more. 
+* [DXP application](../site-building/getting-started-with-site-building.md): The web application for managing Portals, Sites, Users, Pages, Widgets, and more. 
 
 * [Applications](../building-applications/developing-a-java-web-application.md): Widgets that provide a user interface for services already deployed. 
 

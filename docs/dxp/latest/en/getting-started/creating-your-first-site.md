@@ -45,4 +45,4 @@ You are taken to the Site's _Home_ page.
 
 Continue our Getting Started guide by learning how to change the look and feel of your site by [Changing Your Site's Theme](./changing-your-sites-appearance.md).
 
-Liferay Sites are flexible, powerful, and can be configured to meet many different needs. See our [Introduction to Site Building](../site-building/introduction-to-site-building.md).
+Liferay Sites are flexible, powerful, and can be configured to meet many different needs. See [Getting Started With Site Building](../site-building/getting-started-with-site-building.md) for more information.

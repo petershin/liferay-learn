@@ -1,13 +1,13 @@
 ---
 uuid: 7fe6add6-690d-4c05-be41-81a2563f9570
 ---
-# Introduction to Site Building
+# Getting Started with Site Building
 
 Sites are a fundamental component of Liferay DXP. Essentially, a site is a collection of pages that contains content applications that provide additional functionality.
 
 When you first start and configure your Liferay DXP instance, a default site is included. By default the instance name is *Liferay*, but this value can be changed through the configuration of the Setup Wizard or the [Instance Settings](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) in the Control Panel.
 
-![You can build powerful sites with Liferay DXP.](./introduction-to-site-building/images/01.png)
+![You can build powerful sites with Liferay DXP.](./getting-started-with-site-building/images/01.png)
 
 ## Creating Sites
 
@@ -31,7 +31,7 @@ You can create and edit content in line with [Fragments](./creating-pages/page-f
 
 Each piece of content has a default landing page, but you can create a [Display Page Template](./displaying-content/using-display-page-templates.md) to customize it. A Display Page Template maps portions of the web content (title, main body, image, etc.) to fragments, so you can create the look you want.
 
-![Display Page Templates let you map web content to page fragments to display your content with the design and layout you want.](./introduction-to-site-building/images/02.png)
+![Display Page Templates let you map web content to page fragments to display your content with the design and layout you want.](./getting-started-with-site-building/images/02.png)
 
 ## Personalizing User Experiences
 

@@ -161,9 +161,9 @@ Add all [portal properties](../../reference/portal-properties.md), such as `port
 
     * `{upgrade.component=portal}`: for upgrade processes related to portal
     * `{upgrade.component=framework}`: for processes related to the upgrade framework logic
-    * `{upgrade.component=<bundleSymblociName>}`: for upgrade processes related to modules
+    * `{upgrade.component=<bundleSymbolicName>}`: for upgrade processes related to modules
 
-Note, `upgrade.log.context.enabled` works for both the upgrade tool as well as upgrades upon startup. To use this feature, you must also copy the [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) file into `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` and rename the file to `portal-log4j-ext.xml`. Then find the appender definition:
+To use this feature, you must copy the [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) file into `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` and rename the file to `portal-log4j-ext.xml`. Then find the appender definition:
 
 ```
 <Appender name="CONSOLE" type="Console">
@@ -179,21 +179,7 @@ Change the definition to include `%X`, which tells Log4j to print the thread con
 </Appender>
 ```
 
-Here are some example log lines that include a tag for upgrade related-lines:
-
-```
-...
-2023-05-24 23:29:31.143 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties {upgrade.component=portal}
-2023-05-24 23:29:31.145 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 3 ms {upgrade.component=portal}
-...
-2023-05-24 23:29:34.012 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions {upgrade.component=framework}
-2023-05-24 23:29:34.029 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 17 ms {upgrade.component=framework}
-...
-2023-05-24 23:30:17.046 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.db.index.IndexUpdaterUtil#lambda$updateIndexes$1#Updating database indexes for com.liferay.wiki.service {upgrade.component=com.liferay.wiki.service}
-2023-05-24 23:30:17.094 INFO  [main][BaseDB:776] Dropping stale indexes {upgrade.component=com.liferay.wiki.service}
-2023-05-24 23:30:17.095 INFO  [main][BaseDB:846] drop index IX_18565130 on WikiPage {upgrade.component=com.liferay.wiki.service}
-...
-```
+See [upgrade log context](./upgrade-log-context.md) for more information.
 
 #### Example Upgrade Configurations
 

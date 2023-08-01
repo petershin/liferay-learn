@@ -14,6 +14,8 @@ toc:
   - ./reference/renamed-language-keys.md
   - ./reference/troubleshooting-upgrades.md
   - ./reference/upgrade-report.md
+  - ./reference/upgrade-log-context.md
+  - ./reference/monitoring-upgrades-with-mbean.md
 uuid: 191b6c08-ad23-4240-b9a4-d287b96509c5
 ---
 # Reference
@@ -35,6 +37,8 @@ reference/maintenance-mode-and-deprecations-in-7-2.md
 reference/renamed-language-keys.md
 reference/troubleshooting-upgrades.md
 reference/upgrade-report.md
+reference/upgrade-log-context.md
+reference/monitoring-upgrades-with-mbean.md
 ```
 
 * [Data Cleanup](./reference/data-cleanup.md)
@@ -51,3 +55,5 @@ reference/upgrade-report.md
 * [Renamed Language Keys](./reference/renamed-language-keys.md)
 * [Troubleshooting Upgrades](./reference/troubleshooting-upgrades.md)
 * [Upgrade Reports](./reference/upgrade-report.md)
+* [Upgrade Log Context](./reference/upgrade-log-context.md)
+* [Monitoring Upgrades with MBean](./reference/monitoring-upgrades-with-mbean.md)

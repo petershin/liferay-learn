@@ -4,7 +4,7 @@
 
 Liferay DXP 인스턴스를 처음 시작하고 구성하면 기본 사이트가 포함됩니다. 기본적으로 인스턴스 이름은 **Liferay** 이지만 이 값은 설정 마법사의 구성 또는 제어판의 [인스턴스 구성](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) 을 통해 변경할 수 있습니다.
 
-![Liferay DXP로 강력한 사이트를 구축할 수 있습니다.](./introduction-to-site-building/images/01.png)
+![Liferay DXP로 강력한 사이트를 구축할 수 있습니다.](./getting-started-with-site-building/images/01.png)
 
 ## 사이트 만들기
 
@@ -28,7 +28,7 @@ Liferay DXP의 콘텐츠 관리 시스템(CMS)은 다양한 유형의 콘텐츠(
 
 각 콘텐츠에는 기본 랜딩 페이지가 있지만 [표시 페이지 템플릿](./displaying-content/using-display-page-templates.md) 을 만들어 사용자 정의할 수 있습니다. 디스플레이 페이지 템플릿은 웹 콘텐츠(제목, 본문, 이미지 등)의 일부를 조각에 매핑하므로 원하는 모양을 만들 수 있습니다.
 
-![디스플레이 페이지 템플릿을 사용하면 웹 콘텐츠를 페이지 조각에 매핑하여 원하는 디자인과 레이아웃으로 콘텐츠를 표시할 수 있습니다.](./introduction-to-site-building/images/02.png)
+![디스플레이 페이지 템플릿을 사용하면 웹 콘텐츠를 페이지 조각에 매핑하여 원하는 디자인과 레이아웃으로 콘텐츠를 표시할 수 있습니다.](./getting-started-with-site-building/images/02.png)
 
 ## 사용자 경험 개인화
 

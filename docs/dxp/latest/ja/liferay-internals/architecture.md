@@ -110,7 +110,7 @@ WebベースのUIにより、コンテンツとサービスの機能がブラウ
 
 UIは、ユーザーが仕事をしたり、[コラボレーション](../collaboration-and-social/collaboration-and-social-overview.md)したり、コンテンツを楽しんだりするのに役立ちます。 UIの構成は以下の通りです。
 
-* [DXPアプリケーション](../site-building/introduction-to-site-building.md)：ポータル、サイト、ユーザー、ページ、ウィジェットなどを管理するためのWebアプリケーション。
+* [DXPアプリケーション](../site-building/getting-started-with-site-building.md)：ポータル、サイト、ユーザー、ページ、ウィジェットなどを管理するためのWebアプリケーション。
 
 * [アプリケーション](../building-applications/developing-a-java-web-application.md)：すでにデプロイされているサービスのユーザーインターフェイスを提供するウィジェット。
 

@@ -4,7 +4,7 @@
 
 Liferay DXPインスタンスを最初に起動して設定すると、デフォルトのサイトが含まれています。 デフォルトでは、インスタンス名は **Liferay** となっていますが、この値はセットアップウィザードの設定や、コントロールパネルの[［インスタンス設定］](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md)で変更することができます。
 
-![Liferay DXPで強力なサイトを構築することができます。](./introduction-to-site-building/images/01.png)
+![Liferay DXPで強力なサイトを構築することができます。](./getting-started-with-site-building/images/01.png)
 
 ## サイトの作成
 
@@ -28,7 +28,7 @@ Liferay DXPのコンテンツ管理システム（CMS）は、さまざまな種
 
 各コンテンツにはデフォルトのランディングページがありますが、 [Display Page Template](./displaying-content/using-display-page-templates.md) を作成し、カスタマイズすることができます。 表示ページテンプレートは、Webコンテンツの一部（タイトル、本文、画像など）をフラグメントにマッピングすることで、思い通りの見た目に仕上げることができます。
 
-![表示ページテンプレートでは、Webコンテンツをページフラグメントにマッピングして、コンテンツを思い通りのデザインやレイアウトで表示することができます。](./introduction-to-site-building/images/02.png)
+![表示ページテンプレートでは、Webコンテンツをページフラグメントにマッピングして、コンテンツを思い通りのデザインやレイアウトで表示することができます。](./getting-started-with-site-building/images/02.png)
 
 ## ユーザーエクスペリエンスのカスタマイズ
 

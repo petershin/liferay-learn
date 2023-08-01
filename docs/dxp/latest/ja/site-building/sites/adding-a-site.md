@@ -39,6 +39,6 @@ Liferay [User Groups](../../users-and-permissions/user-groups/creating-and-manag
 
 ## 関連トピック
 
-* [サイト構築の概要](../introduction-to-site-building.md)
+* [サイト構築の概要](../getting-started-with-site-building.md)
 * [サイトテンプレート](./site-templates.md)
 * [サイトにメンバーを追加する](./site-membership/adding-members-to-sites.md)

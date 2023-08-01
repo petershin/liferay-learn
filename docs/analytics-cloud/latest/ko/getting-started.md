@@ -30,7 +30,7 @@ Liferay Analytics Cloud를 사용하여 누가 귀하의 사이트를 방문하�
 
 ## 귀하의 사이트에 대한 분석
 
-높은 수준에서 Analytics Cloud 보고서는 하나의 포괄적인 대시보드에서 전체 사이트의 데이터를 집계합니다. Liferay DXP에서 [사이트 구축 소개](https://learn.liferay.com/dxp/latest/ko/site-building/introduction-to-site-building.html) 및 [페이지 만들기](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages.html) 을 수행하면 사이트에 대한 트래픽 흐름을 파악할 수 있습니다. 가장 인기 있는 페이지의 순위를 확인할 수 있습니다.
+높은 수준에서 Analytics Cloud 보고서는 하나의 포괄적인 대시보드에서 전체 사이트의 데이터를 집계합니다. Liferay DXP에서 [사이트 구축 소개](https://learn.liferay.com/dxp/latest/ko/site-building/getting-started-with-site-building.html) 및 [페이지 만들기](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages.html) 을 수행하면 사이트에 대한 트래픽 흐름을 파악할 수 있습니다. 가장 인기 있는 페이지의 순위를 확인할 수 있습니다.
 
 ![사이트 전체 보고서는 사이트 분석에 대한 조감도를 제공합니다.](./getting-started/images/01.png)
 

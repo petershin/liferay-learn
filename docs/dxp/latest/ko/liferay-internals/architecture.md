@@ -110,7 +110,7 @@ Liferay 서비스는 [서비스 빌더](../building-applications/data-frameworks
 
 UI는 사람들이 일하고, [](../collaboration-and-social/collaboration-and-social-overview.md)작업하고, 콘텐츠를 즐기는 데 도움이 됩니다. UI 구성은 다음과 같습니다.
 
-* [DXP 애플리케이션](../site-building/introduction-to-site-building.md): 포털, 사이트, 사용자, 페이지, 위젯 등을 관리하기 위한 웹 애플리케이션입니다.
+* [DXP 애플리케이션](../site-building/site-building/getting-started-with-site-building.md): 포털, 사이트, 사용자, 페이지, 위젯 등을 관리하기 위한 웹 애플리케이션입니다.
 
 * [애플리케이션](../building-applications/developing-a-java-web-application.md): 이미 배포된 서비스에 대한 사용자 인터페이스를 제공하는 위젯.
 

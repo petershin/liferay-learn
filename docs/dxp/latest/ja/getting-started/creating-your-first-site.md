@@ -42,4 +42,4 @@
 
 [サイトのテーマを変更する](./changing-your-sites-appearance.md)によって、サイトのルック＆フィールを変更する方法を学び、入門ガイドを続行します。
 
-Liferay Sitesは柔軟かつ強力で、さまざまなニーズに合わせて構成することができます。 [サイト構築の概要](../site-building/introduction-to-site-building.md)を参照してください。
+Liferay Sitesは柔軟かつ強力で、さまざまなニーズに合わせて構成することができます。 [サイト構築の概要](../site-building/getting-started-with-site-building.md)を参照してください。

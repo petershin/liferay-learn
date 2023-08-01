@@ -42,4 +42,4 @@
 
 [사이트 테마 변경](./changing-your-sites-appearance.md)을 통해 사이트의 모양과 느낌을 변경하는 방법을 학습하여 시작하기 가이드를 계속하십시오.
 
-Liferay 사이트는 유연하고 강력하며 다양한 요구 사항을 충족하도록 구성할 수 있습니다. [사이트 구축 소개](../site-building/introduction-to-site-building.md)을 참조하십시오.
+Liferay 사이트는 유연하고 강력하며 다양한 요구 사항을 충족하도록 구성할 수 있습니다. [사이트 구축 소개](../site-building/site-building/getting-started-with-site-building.md)을 참조하십시오.

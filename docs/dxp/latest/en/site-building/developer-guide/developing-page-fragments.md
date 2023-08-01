@@ -4,7 +4,8 @@ toc:
   - ./developing-page-fragments/using-the-fragments-editor.md
   - ./developing-page-fragments/using-the-fragments-toolkit.md
   - ./developing-page-fragments/adding-configuration-options-to-fragments.md
-  - ./developing-page-fragments/best-practices-for-using-fragment-configurations.md
+  - >-
+    ./developing-page-fragments/best-practices-for-using-fragment-configurations.md
   - ./developing-page-fragments/defining-fragment-drop-zones.md
   - ./developing-page-fragments/using-custom-fields-in-page-fragments.md
   - ./developing-page-fragments/creating-a-contributed-fragment-set.md

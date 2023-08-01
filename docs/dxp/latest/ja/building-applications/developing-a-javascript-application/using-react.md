@@ -1,7 +1,9 @@
 ---
 toc:
-  - ./../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md
-  - ./../client-extensions/front-end-client-extensions/tutorials/using-routes-with-custom-elements.md
+  - >-
+    ./../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md
+  - >-
+    ./../client-extensions/front-end-client-extensions/tutorials/using-routes-with-custom-elements.md
   - ./using-react/remote-applications-with-headless-apis.md
   - ./using-react/react-component-utilities-reference.md
 ---

@@ -1,8 +1,10 @@
 ---
 toc:
   - ./page-performance-and-accessibility/about-the-content-performance-tool.md
-  - ./page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
-  - ./page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
+  - >-
+    ./page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
+  - >-
+    ./page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
 uuid: cd8600db-f4da-421b-a2f1-6f738c90ade9
 ---
 # Page Performance and Accessibility

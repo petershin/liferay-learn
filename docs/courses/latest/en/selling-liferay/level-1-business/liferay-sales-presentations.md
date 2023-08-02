@@ -12,8 +12,8 @@ uuid: cda854ee-c766-4354-a093-fd498b936f69
 
 * New Sales decks are aligned with brand messaging
 * Multiple decks are available for each vertical:
-    * Base Deck covers key industry challenges and Liferay overview
-    * Expansion decks cover specific industry challenges and/or target solutions
+  * Base Deck covers key industry challenges and Liferay overview
+  * Expansion decks cover specific industry challenges and/or target solutions
 * Decks for Manufacturing available now
 * Decks for Public Sector coming soon
 * Decks for Horizontal Solutions (e.g. Customer Portals) also coming soon
@@ -25,8 +25,8 @@ This module covers the Liferay Sales Presentations, discussing how they can be u
 The information contained should be most useful for Account Executives and Customer Success Managers. It will allow you to prepare and deliver the right, most impactful, sales pitch.
 
 ```{note}
-* View the [recording](/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) of the presentation used in the live workshop.
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) of the presentation used in the live workshop.
 ```
 
 ## Challenges of the old Sales Decks
@@ -48,9 +48,9 @@ The time taken to remove content not needed for a given opportunity created two 
 * It took too much effort to get the deck ready
 * Or, if used unedited resulted in long and unfocussed customer meetings
 
-Ultimately this created a problem because Account Executives were not able to drive the conversation with prospects in an effective way.   
+Ultimately this created a problem because Account Executives were not able to drive the conversation with prospects in an effective way.
 
-Based on feedback from internal sales teams and partners, a new approach has been introduced, and is being applied to each industry first call desk in turn.   
+Based on feedback from internal sales teams and partners, a new approach has been introduced, and is being applied to each industry first call desk in turn.
 
 ## Positioning for Value
 
@@ -69,17 +69,17 @@ To be able to position for value, the first thing to understand is that each com
 
 ### Qualify Prospect Priorities
 
-Some prospects’ priority is on reducing costs, for others it might be about taking technical complexity or growing their market share.  
+Some prospects’ priority is on reducing costs. For others it might be about taking technical complexity or growing their market share.  
 
 It is important therefore to qualify and quantify these priorities, whether they are reducing operational costs, increasing revenue or margins, or improving the overall customer experience.
 
-### Aligning capabilities with business value
+### Aligning Capabilities with Business Value
 
-Liferay has so many capabilities that can be used to help solve so many different problems that talking about those capabilities without context doesn’t work. It is only possible to align Liferay’s capabilities with business values when those priorities and business outcomes are cataloged and prioritized. 
+Liferay has so many capabilities that can be used to help solve so many different problems that talking about those capabilities without context doesn’t work. It is only possible to align Liferay’s capabilities with business values when those priorities and business outcomes are cataloged and prioritized.
 
 For example, prospects are not evaluating Liferay because they need a message board, but some customers are suffering from problems related to effectively training and growing their workforce, or from an uneven distribution of knowledge, and Liferay’s message boards just might be part of the solution to those problems.
 
-### Identifying influencers and the project owner
+### Identifying Influencers and the Project Owner
 
 Within any organization, there will be many different perceptions of value and many different business outcomes desired. If all of the requirements and outcomes are treated equally, the risk is that they are only given surface-level attention.  
 
@@ -87,7 +87,7 @@ It’s much more effective to identify the key influencers on the project or the
 
 This is not to say that the other team members’ needs should be ignored, but there is always limited time and resources, and focusing on the key influencers and project owner makes the most of that limited time and resources to ensure the greatest chance of success.  
 
-### Quantifying value
+### Quantifying Value
 
 To ensure that it is possible to quantify the value of the solution, it must be in line with the customers' expectations and KPIs. The only way to discover expectations and KPIs is to ask during initial discovery and throughout all interactions with a prospect.
 
@@ -117,8 +117,8 @@ Where the customer is focused on improving customer satisfaction, the following 
 Other prospects are more focused on growing their business through new customer acquisition.  In this case highlight features such as:
 
 * Liferay’s powerful Content Management capabilities allow business users to create and maintain effective content to help attract and educate new prospects.  
-* Personalization can be highlighted as a way to engage and nurture those prospects. By delivering the right content at the right time, those prospects can be moved down the sales funnel and through their customer journey towards conversion.    
-* Analytics is a very important part of ensuring content is working effectively, and determining which customer experiences are most effective. Analytics also plays a role when creating the right segments to provide personalized experiences.  
+* Personalization can be highlighted as a way to engage and nurture those prospects. By delivering the right content at the right time, those prospects can be moved down the sales funnel and through their customer journey towards conversion.
+* Analytics is a very important part of ensuring content is working effectively, and determining which customer experiences are most effective. Analytics also plays a role when creating the right segments to provide personalized experiences.
 * One of the best ways to objectively determine which experiences are the best is through A/B Testing by comparing those experiences with each other; promoting the experience that proves to be the most effective.  
 
 ### Increasing Revenue

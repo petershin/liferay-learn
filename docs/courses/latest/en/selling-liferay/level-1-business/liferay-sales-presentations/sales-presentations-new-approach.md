@@ -2,7 +2,7 @@
 uuid: 153822af-7e5e-4191-81fd-e36b327324b1
 ---
 
-# The New Approach to Liferay Sales Presentations 
+# The New Approach to Liferay Sales Presentations
 
 **At a Glance**
 
@@ -11,7 +11,7 @@ uuid: 153822af-7e5e-4191-81fd-e36b327324b1
 * Expansion decks cover specific industry challenges and/or target solutions
 * The key benefits of the new approach are:
 * Aligned to our overall vision & strategy
-* Specific slide packs for targeted use cases 
+* Specific slide packs for targeted use cases
 * Easier to master
 * Quicker turnaround time
 
@@ -63,7 +63,7 @@ The expansion deck details the specific client needs or challenges for each indu
 
 This deck is useful when the problems and/or key business priorities of the prospect are known. The expansion deck focuses on a topic or related topics, and goes deeper into these business challenges. It also covers Liferay’s offerings, case studies or success stories, followed by a Liferay overview and credentials.
 
-## Benefits of the new approach
+## Benefits of the new Approach
 
 The key benefits of the new approach are:
 
@@ -98,7 +98,7 @@ In this section two scenarios are used to discuss how AEs can select the right c
 
 > “We have been researching automotive suppliers in South America and have found a potential customer, CarCo, SA. based in Chile that fits our target customer profile. Their current public website appears to be old and outdated and it does not appear to offer a ‘logged in’ customer experience. Through some hard work, LinkedIn research, and polite persistence, we have made contact with José, the Digital Product Owner for CarCo and he’s agreed to a 30 minute call to hear about Liferay has helped other manufacturing customers to improve their business.”
 
-A number of key points worth focussing on are :
+A number of key points worth focussing on are:
 
 1. CarCo, SA fits the target customer profile, as discussed in the [Ideal Customer Profile](../../level-0/the-ideal-customer-profile.md).  
 2. CarCo, SA had an outdated public website without a logged in customer experience. Public Websites and Customer Portals are target use cases for Liferay, and the prospect is in the Manufacturing industry, also discussed in the Ideal Customer Profile.

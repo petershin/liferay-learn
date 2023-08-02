@@ -2,18 +2,18 @@
 uuid: b61487f6-f759-4a7d-bd3b-08077c104bb1
 ---
 
-# Base Sales Deck Structure 
+# Base Sales Deck Structure
 
 **At a Glance**
 
 * All Base Sales Decks use the same basic structure:
-    * Preamble, Title, Agenda, Key Statistics
-    * Challenges, Sub-Challenges and Solutions
-    * Case Studies
-    * Technical Challenges and Solutions
-    * Liferay Overview
-    * Tailored Solutions on Liferay
-* This section explains the use of the Manufacturing Base Sales deck for an example scenario 
+  * Preamble, Title, Agenda, Key Statistics
+  * Challenges, Sub-Challenges and Solutions
+  * Case Studies
+  * Technical Challenges and Solutions
+  * Liferay Overview
+  * Tailored Solutions on Liferay
+* This section explains the use of the Manufacturing Base Sales deck for an example scenario
 
 ## Preamble Slide
 

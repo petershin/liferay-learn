@@ -2,7 +2,7 @@
 uuid: ceb8bfd0-8f7f-41eb-b448-0269f251f2f3
 ---
 
-# Mastering the Expansion Decks 
+# Mastering the Expansion Decks
 
 **At a Glance**
 
@@ -11,8 +11,8 @@ uuid: ceb8bfd0-8f7f-41eb-b448-0269f251f2f3
 * Additional Industry and Horizontal Solutions decks are coming soon
 
 ```{note}
-* View the [recording](/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) of the presentation used in the live workshop.
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) of the presentation used in the live workshop.
 ```
 
 ## Scenario 2: Widget Manufacturer
@@ -25,9 +25,9 @@ In this example scenario the prospect had already filled the Contact Us form and
 
 ![Each Expansion Deck contains alternative challenges to the Base Deck.](./sales-presentations-expansion-deck/images/01.png)
 
-The Supplier Portal expansion pack contains just a subset of slides. The idea is to use the base deck as a starting point and then modify the broad challenge, sub-challenge, solutions, and case studies based on the content provided in the expansion deck. 
+The Supplier Portal expansion pack contains just a subset of slides. The idea is to use the base deck as a starting point and then modify the broad challenge, sub-challenge, solutions, and case studies based on the content provided in the expansion deck.
 
-In the case of the Manufacturer Supplier Portal Expansion Slides, there are new challenges that would generally replace the original four challenges from the base deck. The rest of the deck can be used as-is. But remember, at the end of the deck when talking about the types of solutions Liferay provides, focus on the Supplier Portal since that’s what this customer is looking for.  
+In the case of the Manufacturer Supplier Portal Expansion Slides, there are new challenges that would generally replace the original four challenges from the base deck. The rest of the deck can be used as-is. But remember, at the end of the deck when talking about the types of solutions Liferay provides, focus on the Supplier Portal since that’s what this customer is looking for.
 
 ## Additional Manufacturing Expansion Decks
 
@@ -53,7 +53,7 @@ A third expansion deck for Manufacturing covers Headless, Composable Architectur
 
 In addition to these decks for the Manufacturing industry there are already decks for the Financial Services sector, and soon will be publishing decks for the Government or Public Sector.
 
-## Horizontal Solution Sales Decks 
+## Horizontal Solution Sales Decks
 
 In addition to these industry decks, additional decks are being developed that are focused on horizontal solutions and other types of sales assets.
 
@@ -64,12 +64,12 @@ Help us to help you by providing feedback to let us know what is working and wha
 At the time of writing, the following decks are available:
 
 * Manufacturing
-    * Base Deck
-    * Supplier Portal
-    * Growing Revenue
-    * Headless / Composable / MACH Alliance
+  * Base Deck
+  * Supplier Portal
+  * Growing Revenue
+  * Headless / Composable / MACH Alliance
 * Financial Services
-    * Base Deck
+  * Base Deck
 
 For Liferay employees, all decks are available in the Sales Decks section in [Alexandria](https://sales.liferay.com).
 

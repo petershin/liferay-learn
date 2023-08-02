@@ -52,10 +52,6 @@ Name                                  | Default Value | Description  |
 `LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |  | A string of characters that is part of the URL (prefix) of your Dynatrace SaaS account. Use this together with the `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` secret. |
 `LIFERAY_JVM_OPTS` | `-Xms4096m -Xmx12288m` | JVM options that will be appended to `CATALINA_OPTS` to override the default recommended options. The recommendation is to set `-Xms` to 25% of the Liferay service's available memory, and `-Xmx` to 75%. |
 
-```{note}
-If you are still using version `3.x.x` services, then use `LIFERAY_JAVA_OPTS` instead of `LIFERAY_JVM_OPTS` to specify the JVM options. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
-```
-
 ### Secrets
 
 These variables must instead be [defined as Secrets](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) for the Liferay service:

@@ -65,10 +65,6 @@ Here is a basic overview of the steps in the CI build process:
 
 1. Load `ci/Jenkinsfile-post-always`, if it exists. This runs whether the build succeeds or fails.
 
-```{note}
-If you are using version 3.x.x services, then these extensions to the Jenkinsfile are located in the `lcp/ci/` folder instead. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
-```
-
 To see how they are used in the default pipeline, monitor the Jenkins service startup logs. The full default Jenkinsfile is printed out in the startup logs.
 
 ## Extra Pipeline Customization and External Calls
@@ -79,10 +75,6 @@ You can also create your own pipeline by defining your own `Jenkinsfile` in your
 
 ```{warning}
 External services or custom pipelines should be used with discretion and are outside the scope of Liferay Cloud Support. Custom Jenkins plugins are not supported.
-```
-
-```{note}
-If you are using version 3.x.x services and defining your own `Jenkinsfile`, then you should define it at the root of your repository instead. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
 ```
 
 ## Reusing Code Between Different Extension Points
@@ -103,10 +95,6 @@ Then you could insert the following in `ci/Jenkinsfile-before-cloud-build`:
 def util = load("ci/util.groovy")
 
 util.sendSlackMessage("About to create Liferay Cloud build...")
-```
-
-```{note}
-If you are using version 3.x.x services, then these files instead belong in the `lcp/ci/` directory in the repository. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
 ```
 
 ## Environment Variables Reference

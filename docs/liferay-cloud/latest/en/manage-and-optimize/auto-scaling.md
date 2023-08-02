@@ -25,10 +25,6 @@ Set the `liferay` service's `LIFERAY_JVM_OPTS` environment variable to allocate 
 -Xms4096m -Xmx12288m
 ```
 
-```{note}
-If you are still using version `3.x.x` services, then use `LIFERAY_JAVA_OPTS` instead of `LIFERAY_JVM_OPTS` to specify the JVM options. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
-```
-
 The recommended configuration is to set the `-Xms` flag using 25% of the available memory, and to set the `-Xmx` flag using 75% of the available memory. See the following table for reference on recommended values, for different levels of memory available to your `liferay` service:
 
 | **Available Memory** | **Recommended LIFERAY_JAVA_OPTS** |

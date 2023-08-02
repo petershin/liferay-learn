@@ -18,10 +18,6 @@ liferay
 
 With the exception of the `common/` directory, changes added to an environment-specific folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to a `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to all subfolders within the `configs/` directory, for all services.
 
-```{note}
-If you are using version 3.x.x services, then these configuration files instead belong in the appropriate `lcp/liferay/config/{ENV}/` folder. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
-```
-
 ## Portal Properties
 
 [Portal properties](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) are properties saved in a `portal-ext.properties` file. They are used to configure your Liferay DXP environment.
@@ -29,10 +25,6 @@ If you are using version 3.x.x services, then these configuration files instead 
 For an on-premises Liferay DXP instance, this file belongs inside of `$LIFERAY_HOME`. When using Liferay Cloud, place portal properties file into the appropriate `configs/{ENV}/` folder(s) for them to be copied into `$LIFERAY_HOME` for the Liferay DXP instance on deployment.
 
 For example, the properties in a dev environment will result from the property files in the `configs/common` directory and the properties in the `configs/dev` directory. If any files have the same name, the file in the environment specific directory will overwrite the file from the `common` directory.
-
-```{note}
-If you are using version 3.x.x services, then these configuration files instead belong in the appropriate `lcp/liferay/config/{ENV}/` folder. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
-```
 
 ### Splitting Portal Properties into Multiple Files
 
@@ -79,10 +71,6 @@ Portal properties may also be defined as environment variables. See [the environ
 OSGi configurations (`.cfg` or `.config` files) are used to configure OSGi components in Liferay DXP.
 
 These configuration files belong in the `osgi/configs/` folder inside of `$LIFERAY_HOME`. When using Liferay Cloud, place these files into the appropriate `configs/{ENV}/osgi/` folder(s) for them to be copied into `/osgi/configs` for the Liferay DXP instance on deployment.
-
-```{note}
-If you are using version 3.x.x services, then OSGi configuration files instead belong in the appropriate `config/{ENV}/` folder within the Liferay service directory. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
-```
 
 ## Tomcat Configurations
 

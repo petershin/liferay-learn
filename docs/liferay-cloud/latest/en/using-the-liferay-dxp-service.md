@@ -93,10 +93,6 @@ liferay
             └── remove-log-files.sh
 ```
 
-```{note}
-If you are using version 3.x.x services, then scripts instead belong in the `lcp/liferay/script/` folder in the repository. See [Understanding Service Stack Versions](./reference/understanding-service-stack-versions.md) for more information on checking the version.
-```
-
 ## Limitations
 
 Liferay DXP has many powerful features to build, manage, and deploy content to the web. However, some of those features are unavailable on Liferay Cloud:

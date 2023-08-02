@@ -11,40 +11,11 @@ To get started, you first need the [CLI tool](../reference/command-line-tool.md)
 Although the CLI tool provides a quick way to deploy changes to your project, it's best practice to use the CI service and Liferay Cloud console for the majority of deployments. See [Deploying Changes via the Liferay Cloud Console](./deploying-changes-via-the-liferay-cloud-console.md) to learn how.
 ```
 
-If you are using version `3.x.x` services in your project, you must first [prepare](#preparing-lcpjson-files-in-project-version-3) their `LCP.json` files before deploying changes with the CLI tool.
-
 Otherwise, you can skip this step and begin the deployment process:
 
 * [Adding a Portal Property to the Liferay Service](#adding-a-portal-property-to-the-liferay-service)
 * [Deploying Your New Build via the CLI Tool](#deploying-your-new-build-via-the-cli-tool)
 * [Verifying Your Sample Deployment](#verifying-your-sample-deployment)
-
-## Preparing LCP.json Files in Project Version 3
-
-If you are not using version `3.x.x` services in your project, then skip this step and begin [making your change](#adding-a-portal-property-to-the-liferay-service).
-
-Otherwise, open the `gradle.properties` at the root of your repository, and find properties for the Docker image versions for each of your services, like the following properties:
-
-```properties
-liferay.workspace.lcp.backup.image=liferaycloud/backup:3.2.1
-liferay.workspace.lcp.database.image=liferaycloud/database:3.2.1
-liferay.workspace.lcp.search.image=liferaycloud/elasticsearch:6.1.4-3.0.3
-liferay.workspace.lcp.liferay.image=liferaycloud/liferay-dxp:7.2.10-ga1-3.0.10
-liferay.workspace.lcp.webserver.image=liferaycloud/nginx:1.14.2-3.1.1
-liferay.workspace.lcp.jenkins.image=liferaycloud/jenkins:2.176.1-3.1.1
-```
-
-For each of these properties, copy the value and use it to replace the placeholder value for the `image` property in the corresponding service's `LCP.json` file. This allows the CLI to use the correct Docker images when it searches within the `lcp` directory.
-
-For example, use the value from the `liferay.workspace.lcp.search.image` property as the new value in `lcp/search/LCP.json` for this line:
-
-```properties
-"image": "@liferay.workspace.lcp.search.image@",
-```
-
-```{note}
-The `liferay.workspace.lcp.jenkins.image` property corresponds to the `ci` service.
-```
 
 ## Adding a Portal Property to the Liferay Service
 
@@ -62,10 +33,6 @@ Begin the deployment life cycle by adding a portal property to the `dev` environ
 
    ```properties
    web.server.display.node=true
-   ```
-
-   ```{note}
-   If you're using version 3.x.x services, then the appropriate folder path is `lcp/liferay/deploy/dev`. See [Liferay Cloud Project Changes in Version 4](../reference/liferay-cloud-project-changes-in-version-4.md) for more information on the differences in the directory structure, and [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for how to check the version of your services.
    ```
 
 1. Add and commit your changes with the following commands:
@@ -88,20 +55,12 @@ Once you've committed your changes, follow these steps to create a build of your
    cd <project-folder>/liferay
    ```
 
-   ```{important}
-   If you're using version 3.x.x services, you must navigate to the `lcp` directory in your repository before running the CLI tool, so that it can traverse the directory and find your services' `LCP.json` files.
-   ```
-
 1. Run `lcp login`. If you're not already logged in, you are prompted to authenticate your credentials via browser.
 
 1. Run the following commands in sequence to create a Gradle build for your Liferay service:
 
    ```bash
    ./gradlew clean deploy createDockerfile
-   ```
-
-   ```{note}
-   If you are using version `3.x.x` services in your project, then you must instead run `./gradlew distLiferayCloud` from the `lcp/liferay` directory.
    ```
 
    You must first create a Gradle build of the Liferay service before running the `lcp deploy` command. No local build process is required for other services, so you can directly deploy backup, CI, database, search, and webserver services.

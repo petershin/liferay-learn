@@ -32,10 +32,6 @@ Follow these steps to configure a new volume for a service.
 For `StatefulSet` type services, you must delete and then redeploy the service for changes to the volume configuration to take effect.
 ```
 
-```{note}
-If you are using version 3.x.x services, then the `LCP.json` file for the `liferay` service is instead located in the `lcp/liferay/` directory. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
-```
-
 ## Sharing Volumes Between Different Services
 
 Only volumes in `Deployment` type services may be shared with other services in the same environment using NFS. `StatefulSet` type services each have their own volumes which may not be shared.

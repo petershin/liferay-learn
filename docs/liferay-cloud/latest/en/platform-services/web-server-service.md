@@ -22,10 +22,6 @@ Although Liferay Cloud's services are fine-tuned to work well by default, you ma
 
 Files in `/webserver/configs/{ENV}/` will be copied as overrides into /etc/nginx/ in the webserver container in Liferay Cloud. Files in `/webserver/configs/{ENV}/public/` will be copied as overrides into var/www/html/.
 
-```{note}
-If you are using version 3.x.x services, then Nginx configurations instead belong in the appropriate `lcp/webserver/config/{ENV}/` directory. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
-```
-
 ## Environment Variables
 
 These environment variables are available for the web server service:
@@ -60,7 +56,3 @@ place it in this directory structure:
     │       └── scripts
     │           └── remove-log-files.sh
     └── LCP.json
-
-```{note}
-If you are using version 3.x.x services, then webserver scripts instead belong in the appropriate `lcp/webserver/script/{ENV}/` directory. See [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) for more information on checking the version.
-```

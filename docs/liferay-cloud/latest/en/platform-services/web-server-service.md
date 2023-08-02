@@ -22,6 +22,22 @@ Although Liferay Cloud's services are fine-tuned to work well by default, you ma
 
 Files in `/webserver/configs/{ENV}/` will be copied as overrides into /etc/nginx/ in the webserver container in Liferay Cloud. Files in `/webserver/configs/{ENV}/public/` will be copied as overrides into var/www/html/.
 
+## Automatic Log Rotation
+
+{bdg-secondary}`Available web server version 5.3.0+`
+
+Nginx's access and error logs (by default, stored in the Nginx container's `/var/log/nginx/` directory) automatically rotate to prevent the individual files from becoming too large to read. On a regular interval (by default, every midnight), the current access and error log files are rotated and replaced with new files. Automatic rotation also occurs if the files reach a certain maximum size threshold (by default, 50 MB).
+
+The newest files after rotation are created with a `.0` postfix to the file names, and successively older files have postfixes ordered sequentially (`.1`, `.2`, etc.). The rotation is handled smoothly and does not interrupt Nginx or your service's regular function.
+
+You can define these environment variables in your web server service to adjust the rotation behavior:
+
+* `LCP_LOGROTATE_SCHEDULE`: Defines the schedule for automatic rotation (using a Cron schedule syntax).
+
+* `LCP_LOGROTATE_FILE_SIZE`: Defines a maximum size for log files before they are automatically rotated.
+
+* `LCP_LOGROTATE_FILE_COUNT`: Defines the maximum number of rotated log files to keep in the container.
+
 ## Environment Variables
 
 These environment variables are available for the web server service:
@@ -33,6 +49,9 @@ These environment variables are available for the web server service:
 | `LCP_HAPROXY_RESOLVER_TIMEOUT_RESOLVE` | `1` | Configures the [`timeout` configuration](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-timeout) for the HAProxy load balancer (the number of seconds for an event timeout). This configuration is for the `resolve` event.|
 | `LCP_HAPROXY_RESOLVER_TIMEOUT_RETRY` | `1` | Configures the [`timeout` configuration](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-timeout) for the HAProxy load balancer (the number of seconds for an event timeout). This configuration is for the `retry` event.|
 | `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` | `10` | Overrides the maximum number of instances for any service. If you plan to use [auto-scaling](../manage-and-optimize/auto-scaling.md), then set this to the highest value needed. |
+| `LCP_LOGROTATE_FILE_COUNT` | `52` | The maximum number of Nginx access and error logs to keep (for each) after [automatic rotation](#automatic-log-rotation). The oldest files are removed beyond this limit. |
+| `LCP_LOGROTATE_FILE_SIZE` | `50M` | The maximum size an Nginx access or error log can reach before it forces [automatic log rotation](#automatic-log-rotation). |
+| `LCP_LOGROTATE_SCHEDULE` | `0 0 * * *` | A Cron schedule for when [automatic Nginx log rotation](#automatic-log-rotation) occurs. |
 | `LCP_WEBSERVER_LOG_FORMAT` |   | Customizes the format for Nginx logging. See the [official Nginx documentation](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/#setting-up-the-access-log). |
 | `LCP_WEBSERVER_MODSECURITY` | `Off` | Enables or disables ModSecurity. Set this value to `On` to enable and process rules, or to `DetectionOnly` to process rules without executing any disruptive actions. See [Web Application Firewall](../infrastructure-and-operations/security/web-application-firewall.md). |
 

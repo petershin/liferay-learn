@@ -42,7 +42,7 @@ The new sales decks make use of this knowledge and understanding. For each targe
 
 ## The Base Sales Decks
 
-![Each base sales deck outlines broad and sub-challenges for each industy, and includes solutions and Case Studies for those challenges. They also include an overview of Liferay, the product offerings, use cases or horizontal solutions for the industry, key differentiators, and contact details.](./sales-presentations-new-approach/images/02.png)
+![Each base sales deck outlines broad and sub-challenges for each industry, and includes solutions and Case Studies for those challenges. They also include an overview of Liferay, the product offerings, use cases or horizontal solutions for the industry, key differentiators, and contact details.](./sales-presentations-new-approach/images/02.png)
 
 The base sales deck covers the broad challenges faced by the industry. Each broad challenge is further broken down into multiple sub-challenges.
 
@@ -68,7 +68,7 @@ This deck is useful when the problems and/or key business priorities of the pros
 The key benefits of the new approach are:
 
 * Aligned to our overall vision & strategy
-* Specific slide packs for targeted use cases 
+* Specific slide packs for targeted use cases
 * Easier to master
 * Quicker turnaround time
 

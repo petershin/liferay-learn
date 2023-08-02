@@ -7,7 +7,9 @@ uuid: 75ebda3c-3714-4a2a-a07e-84ae00599ff9
 
 To set up JNDI resources, you must put the necessary JDBC drivers in the Tomcat lib folder (i.e. `tomcat-9.0.56/lib`). For example, if you use an Oracle database, copy `ojdbc8.jar` into this folder. If you use the [Hikari Connection Pool](https://github.com/brettwooldridge/HikariCP), you must copy the `hikaricp.jar` and `slf4-api.jar` files as well.
 
-After copying the necessary files, define your JNDI resources.
+After copying the necessary files, define your JNDI resources. Add the definition to a `ROOT.xml` file or a `server.xml` file. Then add a resource link to a `context.xml` file.
+
+## Setting the `ROOT.xml` or `server.xml`
 
 For example, modify the `tomcat-9.0.56/conf/Catalina/localhost/ROOT.xml` file:
 
@@ -32,9 +34,7 @@ For example, modify the `tomcat-9.0.56/conf/Catalina/localhost/ROOT.xml` file:
 </Context>
 ```
 
-## Setting the `server.xml` and `context.xml`
-
-Define the data source in your `/conf/server.xml` file within the `GlobalNamingResources` element. For example,
+Or define the data source in your `/conf/server.xml` file within the `GlobalNamingResources` element. For example,
 
 ```xml
 <GlobalNamingResources>
@@ -52,6 +52,8 @@ Define the data source in your `/conf/server.xml` file within the `GlobalNamingR
 
 </GlobalNamingResources>
 ```
+
+## Setting the `context.xml`
 
 Define a `ResourceLink` in your `/conf/context.xml` file. For example,
 

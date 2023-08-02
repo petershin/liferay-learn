@@ -16,19 +16,19 @@ Under the MBeans tab, select the `com.liferay.portal.upgrade` category. Select `
 The following values are possible for `Result`:
 
 * `pending`: The upgrade process has not started yet.
-* `running`: The upgrade process is being executed during this state.
-* `failure`: The upgrade process finished and some error were logged during the upgrade process.
-* `unresolved`: The upgrade process finished and no errors were logged, but it was not been possible to check the completeness of the upgrades by using OSGi. There may be pending upgrades and/or unresolved dependencies.
-* `warning`: The upgrade process finished and no errors were logged, nor did any OSGi checks fail. But some warning has been logged during the upgrade.
-* `success`: The upgrade process finished and no errors or warnings were logged during the upgrade processes.
+* `running`: The upgrade process is being executed.
+* `failure`: The upgrade process finished and some errors were logged during the upgrade process.
+* `unresolved`: The upgrade process finished and no errors were logged, but it was not possible to check the completeness of the upgrades by using OSGi. There may be pending upgrades and/or unresolved dependencies.
+* `warning`: The upgrade process finished and no errors were logged, nor did any OSGi checks fail. But some warnings has been logged during the upgrade.
+* `success`: The upgrade process finished and no errors or warnings were logged during the upgrade process.
 
 The following values are possible for `Type`:
 
-* `pending`: The upgrade has not finished, so the value has not been calculated yet.
+* `pending`: The upgrade has not finished yet.
 * `no upgrade`: No upgrade processes have been executed at the end of the upgrade process.
-* `major`: At least one upgrade process involved a major change of schemaVersion.
-* `minor`: No major upgrade processes have been executed, but at least one upgrade involving a minor change of schemaVersion has been executed.
-* `micro`: No major or minor upgrade processes have been executed, but at least one upgrade involving a micro change of schemaVersion has been executed.
+* `major`: At least one upgrade involving a major change of schemaVersion.
+* `minor`: At least one upgrade involving a minor change of schemaVersion has been executed.
+* `micro`: At least one upgrade involving a micro change of schemaVersion has been executed.
 
 Note, the information provided by MBeans is updated in real-time and is only available through upgrades performed at startup. Once the final values have been displayed at the end of the startup upgrade, it remains static. 
 

@@ -5,7 +5,7 @@ uuid: f2e66f48-57bc-44aa-94f4-d480c93dbb5a
 
 {bdg-secondary}`Available Liferay DXP 7.4 U72 / Liferay Portal 7.4 GA72`
 
-Enable the upgrade log context to display identifiers for upgrade related processes in your console logs. The possible identifiers are
+Enable the upgrade log context to display identifiers for upgrade related processes in your console logs. The possible identifiers are:
 
    * `{upgrade.component=portal}`: for upgrade processes related to portal
    * `{upgrade.component=framework}`: for processes related to the upgrade framework logic
@@ -13,9 +13,9 @@ Enable the upgrade log context to display identifiers for upgrade related proces
 
 The logs can be enabled through the [upgrade tool](../upgrade-basics/using-the-database-upgrade-tool.md) or at startup with a portal property.
 
-Set `upgrade.log.context.enabled=true` in your `/tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties` file if using the upgrade tool.
+If using the upgrade tool, set `upgrade.log.context.enabled=true` in your `/tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties` file.
 
-Set `upgrade.log.context.enabled=true` in your `{Liferay-Home}/portal-ext.properties` file if enabling upgrade at startup. 
+If enabling upgrade at startup, set `upgrade.log.context.enabled=true` in your `{Liferay-Home}/portal-ext.properties` file. 
 
 Next, copy the [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) file into `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` and rename the file to `portal-log4j-ext.xml`. Then find the appender definition:
 
@@ -51,7 +51,7 @@ Here are some example log lines that include the upgrade identifiers:
 
 ## Enabling Together with the Upgrade Report
 
-If the [upgrade report](./upgrade-report.md) is enabled together with the upgrade log context, the contents of the upgrade report will also be output in your console logs. Note, the report is displayed in a slightly different from than the `upgrade_report.info` files.
+If the [upgrade report](./upgrade-report.md) is enabled together with the upgrade log context, the contents of the upgrade report will also be output in your console logs. Note, the report is displayed in a slightly different format than the `upgrade_report.info` files.
 
 | Upgrade report key | Explanation |
 | :--- | :--- |

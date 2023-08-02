@@ -5,7 +5,7 @@ uuid: f1cec033-e3ec-4ead-b0ea-948c3039e704
 
 {bdg-secondary}`Available 7.4+`
 
-When you upgrade data, it's important to know the changes made and any issues that occurred. The upgrade report captures this information in a report that include these details:
+When you perform upgrades, it is important to know the changes made and any issues that occurred. The upgrade report captures this information in a report that include these details:
 
 * Execution date and time
 * Total execution time of the upgrade

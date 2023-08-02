@@ -11,7 +11,7 @@ See the [Web server service limitations](../reference/platform-limitations.md#we
 
 ## Configurations
 
-Although Liferay Cloud's services are fine-tuned to work well by default, you may need to configure Nginx further. To do this, you can include any CONF file inside the `configs/{ENV}/conf.d/` folder. When you deploy your changes, the file is automatically injected into your service and overwrites the default configuration. Here's an example folder structure of such a file inside the appropriate directory: 
+Although Liferay Cloud's services are fine-tuned to work well by default, you may need to configure Nginx further. To do this, you can include any configuration (`.conf`) file inside the `configs/{ENV}/conf.d/` folder. When you deploy your changes, the file is automatically injected into your service and overwrites the default configuration. Here's an example folder structure with a configuration file inside the appropriate directory: 
 
     webserver
     ├── configs
@@ -20,7 +20,7 @@ Although Liferay Cloud's services are fine-tuned to work well by default, you ma
     │           └── nginx.conf
     └── LCP.json
 
-Files in `/webserver/configs/{ENV}/` will be copied as overrides into /etc/nginx/ in the webserver container in Liferay Cloud. Files in `/webserver/configs/{ENV}/public/` will be copied as overrides into var/www/html/.
+Files in `/webserver/configs/{ENV}/` are copied as overrides into `/etc/nginx/` in the web server container in Liferay Cloud. Files in `/webserver/configs/{ENV}/public/` are copied as overrides into `var/www/html/`.
 
 ## Automatic Log Rotation
 
@@ -61,13 +61,9 @@ All environment variables and other forms of configuration for Nginx are in the 
 
 ## Scripts
 
-You can use scripts for more extensive customizations. However, use caution when 
-doing so. This is the most powerful way to customize the web server service and 
-can cause undesired side effects. 
+You can use scripts for more extensive customizations, but you must use caution when doing so. This is the most powerful way to customize the web server service and can cause undesired side effects. 
 
-Any `.sh` files found in the `configs/{ENV}/scripts/` folder are run prior to starting your 
-service. For example, to include a script that removes all log files, you could 
-place it in this directory structure: 
+Any `.sh` files found in the `configs/{ENV}/scripts/` folder are run prior to starting your service. For example, you can place a script in this directory structure to remove all log files:
 
     webserver
     ├── configs

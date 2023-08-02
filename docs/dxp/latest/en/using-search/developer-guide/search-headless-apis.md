@@ -9,13 +9,9 @@ uuid: 5c79adbb-9deb-459b-9615-71e2941f5cd8
 
 You can [search for content](../../using-search/getting-started/searching-for-content.md) from a Liferay search page, but you can also use the `portal-search-rest` API endpoint. If you're running Liferay locally, while logged in you can visit <http://localhost:8080/o/api?endpoint=http://localhost:8080/o/portal-search-rest/v1.0/openapi.json> to explore the API.
 
-```{important}
-When you search in the UI, the search engine documents are returned in the response. The API response instead returns each entity type according to it's own API's response schema.
-```
-
 ## Enabling Search Headless APIs
 
-To enable the search headless APIs, set its [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md) to `true`. To enable using a [portal property](../../installation-and-upgrades/reference/portal-properties.md), add this to `portal-ext.properties`:
+To enable the search headless API, set its [beta feature flag](../../system-administration/configuring-liferay/feature-flags.md) to `true`. To enable using a [portal property](../../installation-and-upgrades/reference/portal-properties.md), add this to `portal-ext.properties`:
 
 ```properties
 feature.flag.LPS-179669=true
@@ -63,7 +59,7 @@ curl \
 	-u "test@liferay.com:learn"
 ```
 
-The response returns the blog post.
+The response returns a search result with information about the blog post.
 
 ```bash
 {
@@ -83,7 +79,7 @@ The response returns the blog post.
 
 ### Simple Query with Embedded Items
 
-Here is a simple query for the keyword `able` and with a request to return embedded items:
+To return not only the search result, but the returned entity's fields according to its own API schema, set the `nestedField` parameter to `embedded`. This query for the keyword `able` also requests embedded items:
 
 ```bash
 curl \
@@ -94,7 +90,7 @@ curl \
 	-u "test@liferay.com:learn"
 ```
 
-The response returns much more details on the blog post:
+The response returns many more details on the blog post:
 
 ```bash
 {
@@ -153,7 +149,7 @@ Query parameters can be used to further filter the results.
 | `fields` | The fields parameter requests only specific fields to be enumerated in each of the elements in the response. |
 | `nestedFields` | Supports `embedded` to get back nested data. |
 | `restrictFields` | Excludes the given field(s) from being returned. |
-| `filter` | Filters across different fields. Supported fields are `groupIds`, `taxonomyCategoryIds`, `keywords`, `dateCreated`, `dateModified`, `creatorId`, `description`, and `title`. For more filtering options, use a search blueprint (DXP subscription).|
+| `filter` | Filters across different fields. Supported fields are `groupIds`, `taxonomyCategoryIds`, `keywords`, `dateCreated`, `dateModified`, `creatorId`, and `title`. For more filtering options, use a search blueprint (DXP subscription).|
 | `page` | Specify which page to return. |
 | `pageSize` | Specify how many items you want per page. |
 | `search` | Search by keyword(s). |
@@ -168,7 +164,7 @@ Empty requests are allowed (e.g., specify `{}` as the request body), but there a
 | Property | Description |
 | :--- | :--- |
 | `attributes` | Set available search context attributes to configure a search blueprint or enable empty search. See [Available Search Request Attributes for details](#available-search-request-attributes). |
-| `facetConfiguration` | Set the facet configuration to return facets in the response.|
+| `facetConfiguration` | Set the facet configuration to return facets in the response. See [Adding Facet Configurations to the Request](#adding-facet-configurations-to-the-request). |
 
 ### Adding Attributes to the Request
 
@@ -214,14 +210,32 @@ To search with a facet configuration, use this request body syntax:
 
 A facet configuration can have several properties:
 
+
 | Property | Description |
 | :--- | :--- |
-| `aggregationName` | Choose a unique name for the aggregation. This is required if multiple instances of the same type (set in the `name` property) are added. |
-| `attributes` | Some facets require additional attributes. <!-- How will anyone know what these are if we don't document them? --> |
+| `aggregationName` | Choose a unique name for the aggregation. This is required to distinguish between instances of the same type (i.e., with the same `name` property). |
+| `attributes` | Some facets require additional attributes. The `custom`, `date-range`, and `nested` facets require a String attribute called `field` to set the field to aggregate results by. The `date-range` facet also requires a `format` String to specify the date format (e.g., `yyyyMMddHHmmss`) and a `ranges` object array to provide the ranges. The `nested` facet requires a `filterfield` String, a `filtervalue` String, and a `path` String. The `vocabulary` facet requires a String array of `vocabularyIds`. |
 | `frequencyThreshold` | Set the minimum frequency required for terms to appear in the list of facet terms. |
 | `maxTerms` | Set the maximum number of facet terms to display, regardless of how many matching terms are found for the facet. |
 | `name` | Set the type of facet: `category`, `custom`, `date-range`, `folder`, `nested`, `site`, `tag`, `type`, or `user`. See the [Search Facets](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/search-facets) documentation for more information on each type.
 | `values` | Post filter the results by selecting values. This is like clicking facet terms in the facet widget. |
+
+For example, here's a `date-range` facet's `ranges` attribute:
+
+```json
+{
+  "ranges": [
+    {
+      "label": "range-1",
+      "range": "[20220411085757 TO 20230413075757]"
+    },
+    {
+      "label": "range-2",
+      "range": "[20230409085757 TO 20230413075757]"
+    }
+  ]
+}
+```
 
 ## Enabling Guest Access to the API
 
@@ -240,7 +254,7 @@ To enable guest access to the API, [create a new service access policy](../../in
 
 You can see [aggregations](ES) and [search facets](../search-pages-and-widgets/search-facets.md) in the API response. To see aggregations,
 
-1. Add aggregations to a search blueprint.
+1. Add [aggregations to a search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-configuration-reference.md#aggregation-configuration).
 1. Set the attribute `search.experiences.blueprint.external.reference.code` in you search request.
 
 Search facets are returned if you add a [facet configuration](#adding-facet-configurations-to-the-request) to the request. For example, this request body asks for a tag facet:
@@ -272,4 +286,4 @@ In the response, the returned search facet looks like this:
     }
   ]
 }
-  ```
+```

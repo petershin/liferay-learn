@@ -8,7 +8,7 @@ toc:
 uuid: ae0e6976-c175-48db-bfa6-1d62612e8f37
 ---
 
-# Outbound Prospecting 101 for Liferay opportunities
+# Outbound Prospecting 101 for Liferay Opportunities
 
 **At a Glance**
 

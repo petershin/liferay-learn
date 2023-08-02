@@ -6,7 +6,7 @@ toc:
 uuid: 37d59a74-1900-489a-9e52-2ee681c7d886
 ---
 
-# Liferay Pricing - Introduction
+# Liferay Pricing
 
 **At a Glance**
 

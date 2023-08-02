@@ -6,13 +6,6 @@ uuid: 14f72e64-7789-49bc-b658-36935d888251
 ---
 # Developer Guide
 
-```{toctree}
-:maxdepth: 2
-
-developer-guide/writing-a-similar-results-contributor.md
-developer-guide/search-headless-apis.md
-```
-
 - [Contributing Custom Content to the Similar Results Widget](developer-guide/writing-a-similar-results-contributor.md)
 - Aggregations
 - Model Entity Indexing

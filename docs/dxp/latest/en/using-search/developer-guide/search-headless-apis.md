@@ -193,6 +193,7 @@ You can set these `attributes` into the request:
 ### Adding Facet Configurations to the Request
 
 To search with a facet configuration, use this request body syntax:
+
 ```json
 {
   "facetConfigurations": [
@@ -209,7 +210,6 @@ To search with a facet configuration, use this request body syntax:
 ```
 
 A facet configuration can have several properties:
-
 
 | Property | Description |
 | :--- | :--- |

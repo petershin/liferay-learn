@@ -38,6 +38,10 @@ Once saved, you can add Fragments to the Set.
 
 ## Creating a New Fragment
 
+```{important}
+It's not possible to add a React fragment through the Fragments app. You must use the [Fragments Toolkit](./using-the-fragments-toolkit.md) to create one.
+```
+
 Follow these steps to create a Fragment:
 
 1. Go to the desired Fragment Set and click the *Add* button (![Add Button](../../../images/icon-add.png)) to create a new Fragment.

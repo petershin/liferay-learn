@@ -9,10 +9,6 @@ The Fragments Toolkit helps you develop and manage Fragments locally, using your
 For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Liferay UI.
 ```
 
-```important
-It's not possible to add a React fragment through the Fragments app. You must use the Fragments Toolkit to create one. 
-```
-
 ## Setting Up the Toolkit
 
 The toolkit requires this software:

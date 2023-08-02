@@ -7,9 +7,9 @@ uuid: f4de955b-23f6-4a54-b210-003e0594587d
 **At a Glance**
 
 * Liferay provides three deployment approaches, all including Liferay DXP:
-    * Liferay Experience Cloud (SaaS)
-    * Liferay Experience Cloud Self Managed (Paas)
-    * DXP Self-Hosted
+  * Liferay Experience Cloud (SaaS)
+  * Liferay Experience Cloud Self Managed (Paas)
+  * DXP Self-Hosted
 * A new pricing model for DXP Self-Hosted has been introduced for 2023
 * The new model is Plan based, providing a bundle of Instances and Environments
 
@@ -17,26 +17,26 @@ uuid: f4de955b-23f6-4a54-b210-003e0594587d
 
 Sometimes Cloud, in either SaaS or PaaS-mode is not an option for a Customer.
 
-With Liferay DXP Self-Hosted, Liferay provides just the DXP software itself, with the Customer responsible for everything else, either doing it themselves or paying for someone else to do it. 
+With Liferay DXP Self-Hosted, Liferay provides just the DXP software itself, with the Customer responsible for everything else, either doing it themselves or paying for someone else to do it.
 
-The Customer is responsible for the low-value, but often high cost activities, which include taking care of: 
+The Customer is responsible for the low-value, but often high cost activities, which include taking care of:
 
-* Infrastructure, 
+* Infrastructure
 * Platform Software - the Database Server, Search Server, Storage, etc.
 * Designing and implementing a high-availability architecture, if required
 * Designing for higher capacity:
-    * Adding a Cluster of Liferay instances
-    * Replicating the Database
-    * Adding a cluster of Search nodes
-    * Adding a load balancer, often a cluster of Web Servers
-    * etc. 
+  * Adding a Cluster of Liferay instances
+  * Replicating the Database
+  * Adding a cluster of Search nodes
+  * Adding a load balancer, often a cluster of Web Servers
+  * etc.
 * Performing day-to-day activities like:
-    * Upgrades
-    * Updates
-    * Applying Patches, Security Hotfixes, etc.
-    * Software Troubleshooting. 
+  * Upgrades
+  * Updates
+  * Applying Patches, Security Hotfixes, etc.
+  * Software Troubleshooting
 
-In addition to these they are responsible for high-value activities like Application Delivery, also known as Solving Business Problems. 
+In addition to these they are responsible for high-value activities like Application Delivery, also known as Solving Business Problems.
 
 While there are a lot of additional responsibilities, there’s also flexibility because Customers can deploy DXP Self-Hosted where they wish:
 
@@ -45,8 +45,8 @@ While there are a lot of additional responsibilities, there’s also flexibility
 * In their own data-center.
 
 ```{note}
-* View the [recording](/web/guest/d/sa1-2c-liferay-pricing-self-hosted) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/sa1-2c-liferay-pricing-self-hosted-pdf) of the presentation used in the live workshop.
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-2c-liferay-pricing-self-hosted) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2c-liferay-pricing-self-hosted-pdf) of the presentation used in the live workshop.
 ```
 
 ## Liferay DXP Self-Hosted Pricing Model - Summary
@@ -77,7 +77,7 @@ The key principles to the new DXP Self-Hosted pricing model are as follows:
 * Needs based
 * Increase average deal size
 * Harmonize across offerings
-* Add value 
+* Add value
 
 **Simplify**
 
@@ -106,7 +106,7 @@ The new plans-based approach has been used in North America by Liferay’s Direc
 
 **Value**
 
-* The new plans incorporate discounts over buying individual line items, so the buyer gets more value than buying a la carte. 
+* The new plans incorporate discounts over buying individual line items, so the buyer gets more value than buying a la carte.
 
 **Rules**
 
@@ -141,7 +141,7 @@ The Business Plan is expected to be the most popular option for new customers in
 
 The Business Plan includes Gold Support, while the Business+ Plan includes Platinum Support.
 
-For customers needing a 24/7 response SLA but not disaster recovery the Business+ plan is the most appropriate option. 
+For customers needing a 24/7 response SLA but not disaster recovery the Business+ plan is the most appropriate option.
 
 Note that Platinum Support cannot be bought as an add on. Customers needing this level of support must either buy the Business+ or Enterprise Plans.
 
@@ -183,15 +183,15 @@ Three key points with respect to the pricing are:
 
 ### Customer Needs
 
-Of course this is a vital part of any sale, of any Liferay offering: always present what the customer needs rather than running through all of the options.  Start by understanding the buyer’s needs before recommending them a Plan or talking about prices. 
+Of course this is a vital part of any sale, of any Liferay offering: always present what the customer needs rather than running through all of the options.  Start by understanding the buyer’s needs before recommending them a Plan or talking about prices.
 
-The discussion should not focus on the number of instances or the sizing included in the different plans. 
+The discussion should not focus on the number of instances or the sizing included in the different plans.
 
 Particularly when proposing the Pro Plan be very conservative with respect to discounts and do not promise flexibility with legal negotiations.
 
 ### Flexibility
 
-When customers require more flexibility propose the Business, Business+ or Enterprise plans. Remember that Liferay shines when there are complex enterprise needs, so do not be scared of large opportunities with large organziations.
+When customers require more flexibility propose the Business, Business+ or Enterprise plans. Remember that Liferay shines when there are complex enterprise needs, so do not be scared of large opportunities with large organizations.
 
 With larger opportunities begin with a careful pre-sales analysis and define a custom proposal, even as the first quote, by starting with the Enterprise Plan and expanding it with added capacity and higher sizing.
 

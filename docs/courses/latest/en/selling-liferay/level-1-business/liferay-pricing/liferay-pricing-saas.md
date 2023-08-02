@@ -13,21 +13,21 @@ uuid: b030fe90-26bf-4c19-8152-cad0b539077b
 * New pricing model for Liferay Experience Cloud SaaS for 2023
 * New pricing supports Endless Solutions on Liferay Experience Cloud
 * Three plans provide different levels of capabilities:
-    * Pro
-    * Business
-    * Enterprise
+  * Pro
+  * Business
+  * Enterprise
 * Free/Hobby plan proposed to support bottom-up growth
 
 ```{note}
-* View the [recording](/web/guest/d/sa1-2a-liferay-pricing-saas) from the live workshop of this module.
-* Download the [PDF](/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) of the presentation used in the live workshop.
+* View the [recording](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) of the presentation used in the live workshop.
 ```
 
 ## Revised Pricing for 2023
 
 The Liferay Experience Cloud SaaS offering was launched in Q2 2022. A lot of feedback on this pricing has been received, the result of which is the new pricing which was introduced in Q1 2023.
 
-The original model didn’t scale well to cover many common solutions and use cases. For example, when the customer needed multiple simple sites the pricing quickly got prohibitively expensive. 
+The original model didn’t scale well to cover many common solutions and use cases. For example, when the customer needed multiple simple sites the pricing quickly got prohibitively expensive.
 
 Plus, the pricing was confusing, complicated, and the entry level was high, with the lowest option being around EUR/USD 76,000.
 
@@ -52,7 +52,7 @@ The goal is for the pricing to be as easy as possible for Sellers and Buyers ali
 
 **Project Expansion**
 
-The pricing needs to provide opportunities for growth within accounts after the initial purchase - another key characteristic of a Product Led Growth company. 
+The pricing needs to provide opportunities for growth within accounts after the initial purchase - another key characteristic of a Product Led Growth company.
 
 Liferay’s legacy pricing model has been instance based. The drawback of this model is that, for example, if a customer buys 2 production and 2 non-production instances they can build a number of different solutions without needing to purchase more instances.
 
@@ -62,18 +62,17 @@ We wanted to make sure that Liferay and our Partners’ success grows when the c
 
 The pricing model also needs to work with any type of solution that the customer could build. It would work regardless of how many accelerators we build.
 
-
 ## Pricing for Endless Solutions?
 
 Initially the barrier to a flexible price model was explicitly tied to the flexibility of a platform intended to be used for endless solutions.
 
 Liferay can be used as a public website, with a lot of page views. This aligns to a lot of SaaS companies who charge based on page views, because marketers understand the concept of page views.
 
-But if the pricing is based purely on page views there’s a problem when the customer wants to build an internal site like a Customer Portal, instead of a public website, where page views are low, but usage is high. This model is not able to capitalize on a customer’s high usage of the system but with a low number of page views. 
+But if the pricing is based purely on page views there’s a problem when the customer wants to build an internal site like a Customer Portal, instead of a public website, where page views are low, but usage is high. This model is not able to capitalize on a customer’s high usage of the system but with a low number of page views.
 
 To flesh this out in a bit more detail, a customer portal for a utility company would have many users logging in and accessing their own information perhaps every month to check billing or statements, but the amount of page views would remain low. 
 
-An alternative then is to price based on known users, which works well for customer portals and other sites requiring authentication.  However, this model falls down with public sites with heavy traffic but where only the content authors and site builders are known users - probably less than 50 users. 
+An alternative then is to price based on known users, which works well for customer portals and other sites requiring authentication.  However, this model falls down with public sites with heavy traffic but where only the content authors and site builders are known users - probably less than 50 users.
 
 The solution to this challenge was to combine both models, to have metrics for both Page Views and Users, with each lever operating independently of the other.
 

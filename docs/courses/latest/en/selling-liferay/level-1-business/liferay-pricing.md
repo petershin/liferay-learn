@@ -52,7 +52,7 @@ Most Buyers are usually eager to learn the pricing at the beginning of the buyin
 
 Critically, for complex solution selling, it is almost impossible to give an accurate price early in the process because at this stage the needs of the customer will not be fully understood, and without this understanding it is impossible to price correctly.
 
-If the buyer doesn’t understand the _value_ of the product and offering the price is interpreted as **cost**, not as an **investment** they need to make.
+If the buyer doesn’t understand the *value* of the product and offering the price is interpreted as **cost**, not as an **investment** they need to make.
 
 It is not expected that all customer questions can be answered immediately, and it is not required to provide pricing immediately either. What is more important is to understand the customer’s needs and why they might be asking certain questions so that the value of the offering can be built in before the price is provided.
 
@@ -138,15 +138,15 @@ Next: review each of the pricing models, starting with [Liferay Experience Cloud
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Email
+:::{grid-item-card} Liferay Pricing - SaaS
 :link: ./liferay-pricing/liferay-pricing-saas.md
 
 :::
-:::{grid-item-card} Phone
+:::{grid-item-card} Liferay Pricing - PaaS
 :link: ./liferay-pricing/liferay-pricing-paas.md
 
 :::
-:::{grid-item-card} Data Enrichment
+:::{grid-item-card} Liferay Pricing - Self-Hosted
 :link: ./liferay-pricing/liferay-pricing-self-hosted.md
 
 :::

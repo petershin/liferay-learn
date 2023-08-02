@@ -8,7 +8,7 @@ uuid: 8ba99fc4-4a0e-4329-9af4-832365dd438b
 
 * New pricing model for Liferay Experience Cloud SaaS for 2023
 * Add-ons are available as customers grow
-* New features are coming to improve customer experience, provide greater visibility to employees and Partners
+* New features are coming to improve customer experience and to provide greater visibility to employees and Partners
 
 ## Liferay Experience Cloud SaaS Add-ons
 
@@ -23,13 +23,13 @@ In addition to adding more MALUs or more APVs, there are other ways that custome
 
 For customer solutions with the need to store lots of documents, images, or other assets in the Document Library, it is possible to purchase additional storage capacity. 
 
-While the different plans offer different starting storage capacity, when customers  need to add capacity later that can be purchased as an add-on, in addition to moving to a higher plan.
+While the different plans offer different starting storage capacity, when customers need to add capacity later that can be purchased as an add-on, in addition to moving to a higher plan.
 
 ### Project Workspace
 
 Liferay Experience Cloud SaaS introduces the concept of the **Project Workspace**. A project workspace is a way to encapsulate the different types of environments and different types of user bases the customer might need to have.
 
-Each Project Workspace includes Production and UAT environments, which in turn include Liferay DXP and capacity for Extensions.  For the Business and Enterprise plans each Project Workspace also includes a Development environment.
+Each Project Workspace includes Production and UAT environments, which in turn include Liferay DXP and capacity for Extensions. For the Business and Enterprise plans each Project Workspace also includes a Development environment.
 
 Each of the plans provides different numbers of Project Workspaces:
 
@@ -37,7 +37,7 @@ Each of the plans provides different numbers of Project Workspaces:
 * **Business**: 5 Project Workspaces
 * **Enterprise**: 10 Project Workspaces
 
-In addition to moving between plans to increase the number of available project workspaces it is possible to buy additional workspaces for each of the plans. 
+In addition to moving between plans to increase the number of available project workspaces it is possible to buy additional workspaces for each of the plans.
 
 ### Extension Capacity
 
@@ -63,7 +63,7 @@ What’s important to note here is that this is not a private cluster - there ar
 
 The example above shows the pricing for add-ons in US dollars and Euros. For other currencies your Liferay contact persons and your CAMs can provide the exact pricing, but for a guide price, use the normal exchange rates to convert to local prices for each market. 
 
-## Success drives Growth
+## Success Drives Growth
 
 The number of sites a customer needs and uses becomes less relevant with the higher plans because Business includes 15 and Enterprise includes an unlimited number. 
 
@@ -71,7 +71,7 @@ What this means is that adding sites doesn’t become expensive to the customers
 
 This flexibility allows customers to build more and more solutions as they grow, which increases the value for them. As their usage and their end users engagement grows there is an increase in the MALU and APV volume which turns into revenue growth also for Liferay and our partners.
 
-For Partners it is now possible to continue to build new solutions for customers after their initial project is complete without needing to immediately buy a set of new instances. Where the customer has multiple solutions the MALUs and APVs for each solution are added together, and the totals are used to determine the required MALU and APV bands for the 12-month subscription period. 
+For Partners it is now possible to continue to build new solutions for customers after their initial project is complete without needing to immediately buy a set of new instances. Where the customer has multiple solutions the MALUs and APVs for each solution are added together, and the totals are used to determine the required MALU and APV bands for the 12-month subscription period.
 
 This allows both Partners building solutions to grow revenues along with Liferay while the customer gets more value out of their Liferay account.
 
@@ -114,7 +114,7 @@ The free plan will also help to identify new potential customers and to understa
 
 When the new price model was defined, extensive work was done by a large team at Liferay which involved, in part, reviewing numbers and usage metrics of existing customers to understand what implications the new price model would have on them  if they moved from their current model.
 
-In using this real data it was interesting to see that in some cases the pricing for Liferay Experience Cloud SaaS was about the same or even somewhat lower than for Liferay Experience Cloud Self-Managed. While in some cases it was higher, considering the care-free nature of SaaS the differences were quite moderate and well justifiable. 
+In using this real data it was interesting to see that in some cases the pricing for Liferay Experience Cloud SaaS was about the same or even somewhat lower than for Liferay Experience Cloud Self-Managed. While in some cases it was higher, considering the care-free nature of SaaS the differences were quite moderate and well justifiable.
 
 As has been stated a number of times already, with Liferay Experience Cloud SaaS lots of high-cost, but low-value tasks moved from the customer to Liferay. Any price increases are moderate considering the additional value that customers get from SaaS. To find out more about Low Value tasks, please review the modules in [Level 0](https://learn.liferay.com/web/guest/w/courses/selling-liferay/level-0) in particular.
 

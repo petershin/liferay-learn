@@ -8,9 +8,9 @@ uuid: 58c789c2-20fd-487d-b8da-ead53775ced2
 
 * New pricing model for Liferay Experience Cloud SaaS for 2023
 * Primary usage based on:
-    * Monthly Active Logged-in Users (MALUs)
-    * Anonymous Page Views (APVs)
-* Options exist to move between plans when additional capacity is required 
+  * Monthly Active Logged-in Users (MALUs)
+  * Anonymous Page Views (APVs)
+* Options exist to move between plans when additional capacity is required
 
 ## MALU and APV Bands
 
@@ -60,27 +60,27 @@ If there are both use cases for the Liferay solution, with a high amount of anon
 
 ## Calculating MALUs
 
-While anonymous page views are a straightforward metric, the MALU concept requires slightly more explanation. The key here is that this stands for Monthly **Active** Logged-in Users. It is a way to track the number of users that are active, where active means that a user has logged in once or more in a given calendar month. 
+While anonymous page views are a straightforward metric, the MALU concept requires slightly more explanation. The key here is that this stands for Monthly **Active** Logged-in Users. It is a way to track the number of users that are active, where active means that a user has logged in once or more in a given calendar month.
 
-Importantly, this is not the same as Registered Users, and these are not being counted. Understanding how many registered users a Prospect has helps to estimate the number and frequency of authenticated use. For example if there are 1000 registered users but only one of those logs into the system in a calendar month then that counts as one MALU for that month. 
+Importantly, this is not the same as Registered Users, and these are not being counted. Understanding how many registered users a Prospect has helps to estimate the number and frequency of authenticated use. For example if there are 1000 registered users but only one of those logs into the system in a calendar month then that counts as one MALU for that month.
 
-To calculate MALUs therefore depends on how many active users the Prospect has in _each_ month of a twelve-month period. Each monthly value is added together to get to the annual, or aggregate number and in turn the MALU for that 12 month subscription period. 
+To calculate MALUs therefore depends on how many active users the Prospect has in _each_ month of a twelve-month period. Each monthly value is added together to get to the annual, or aggregate number and in turn the MALU for that 12 month subscription period.
 
-It’s important to remember that this is not talking about **average** usage either. In the example in the image below there are a different number of monthly logged in users in each month. In January, February and March it is 500 each month, so at the end of February the year-to-date total is 1000, while at the end of March it is 1500.
+It’s important to remember that this is **not** talking about **average** usage either. In the example in the image below there are a different number of monthly logged in users in each month. In January, February and March it is 500 each month, so at the end of February the year-to-date total is 1000, while at the end of March it is 1500.
 
 For the next six months after that the count increases by a thousand each month, until October when there’s a spike, perhaps indicating a seasonal event, or a campaign, which causes more users to login to the platform. At the end of the 12 month period the total is 11500 which means this customer would need to purchase the MALU band of “up to 15000”.
 
 ![Monthly MALUs are aggregated over the year to determine the required MALU band.](./liferay-pricing-saas/images/04.png)
 
-**Success drives Growth**
+**Success Drives Growth**
 
 In the pricing model Liferay’s growth (and Partner’s for partner opportunities) is tied to the success of the customer. And this is straightforward to explain: if a customer sees a lot of adoption on their sites and a lot of engagement by their users then their usage is increasing and so they will move into higher MALU and/or APV tiers.
 
-And that applies to both Public Websites with increasing traffic or Portals where the customer sees increasing usage by their customers. 
+And that applies to both Public Websites with increasing traffic or Portals where the customer sees increasing usage by their customers.
 
 What is important is to help the customer to succeed with the solutions that are built because that is the primary way that revenue can grow per account beyond adding a second or third solution. The customer’s success is our success, which is both fair and easy to justify.
 
-## Moving To a Higher Plan 
+## Moving to a Higher Plan
 
 ![Needing more sites, a faster response time SLA, or more commerce transactions requires moving to a higher plan.](./liferay-pricing-saas/images/05.png)
 
@@ -102,7 +102,7 @@ Because of these limitations, if the customer needs to use Liferay in a strategi
 
 ### Response SLA
 
-The Response SLAs are also different between the plans: 
+The Response SLAs are also different between the plans:
 
 * **Pro**: Gold (8/5)
 * **Business**: Gold (8/5)
@@ -122,7 +122,7 @@ Once again, the different plans provide different levels usage:
 * **Business**: Unlimited
 * **Enterprise**: Unlimited
 
-The key thing here is that 500 transactions per year is really not enough to provide a real commerce experience for customers. But, it allows Pro customers to try out the commerce functionality for their solution, which might later lead to an upgrade to the  Business or Enterprise plan when a full commerce check-out experience is required.
+The key thing here is that 500 transactions per year is really not enough to provide a real commerce experience for customers. But, it allows Pro customers to try out the commerce functionality for their solution, which might later lead to an upgrade to the Business or Enterprise plan when a full commerce check-out experience is required.
 
 ### Not available as Add-Ons
 

@@ -17,25 +17,25 @@ To alter the default style and functionality of a form field, you can map a [cus
 
 1. Open the *Site Menu* ( ![Site Menu icon](../../../../images/icon-menu.png) ), and click *Design* &rarr; *Fragments*.
 
-1. In the Fragments application, click *Options* (![Options Icon](../../../../images/icon-options.png)) in the applications bar &rarr; *Configuration*.
+1. In the Fragments application, click *Options* ( ![Options Icon](../../../../images/icon-options.png) ) in the applications bar &rarr; *Configuration*.
 
-   ![It's possible to map fragments to fields through the Configuration menu in fragments.](./personalizing-custom-forms-using-form-fragments/01.png)
+   ![It's possible to map fragments to fields through the Configuration menu in fragments.](./personalizing-custom-forms-using-form-fragments/images/01.png)
 
 1. Select the *Form Fragment* (on the right column) to be applied to the Field Type (on the left column).
 
-   ![Apply a custom form fragment to a field type.](./personalizing-custom-forms-using-form-fragments/02.png) 
+   ![Apply a custom form fragment to a field type.](./personalizing-custom-forms-using-form-fragments/images/02.png) 
 
 1. Choose the fragment set under your site's tab. Fragments with a compatible type of field appear.
 
 1. Select the custom form fragment you want to apply.
 
-   ![The options that are compatible with the field can be selected.](./personalizing-custom-forms-using-form-fragments/03.png)
+   ![The options that are compatible with the field can be selected.](./personalizing-custom-forms-using-form-fragments/images/03.png)
 
 You can check if the custom fragment is applied to the field type by adding a form to a content or template page. See [Using Fragments to Build Forms](../../../../building-applications/objects/using-fragments-to-build-forms.md) to learn more about building forms using fragments.
 
 Once you've applied the custom form fragment to the field type, the new style (on the left) is applied to the field type instead of the out-of-the-box style (on the right).
 
-![The fields mapped to the custom form fragments (on the left) look different from the ones created with out-of-the-box fragments (on the right).](./personalizing-custom-forms-using-form-fragments/04.png)
+![The fields mapped to the custom form fragments (on the left) look different from the ones created with out-of-the-box fragments (on the right).](./personalizing-custom-forms-using-form-fragments/images/04.png)
 
 ## Related Topics
 

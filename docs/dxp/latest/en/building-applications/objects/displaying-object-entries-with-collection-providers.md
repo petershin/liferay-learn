@@ -5,7 +5,7 @@ uuid: 3bf64181-9407-4b88-8950-c426e1a05fa4
 
 {bdg-secondary}`Available 7.4+`
 
-When you publish an object, Liferay creates a [collection provider](../../content-authoring-and-management/collections-and-collection-pages/collection-provider.md) for use with the [Collection Display fragment](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) to display multiple object entries. You can then use the Collection Display fragment to display that specific object type, use the fragment's filtering, style, and display options, and embed other fragments in it to customize the information you show for each object entry listed. You can also display the collection of objects with a [collection page](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page).
+When you publish an object, Liferay creates a [collection provider](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md) for use with the [Collection Display fragment](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) to display multiple object entries. You can then use the Collection Display fragment to display that specific object type, use the fragment's filtering, style, and display options, and embed other fragments in it to customize the information you show for each object entry listed. You can also display the collection of objects with a [collection page](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page).
 
 ## Mapping Fragment Fields to Object Fields
 
@@ -69,7 +69,7 @@ After selecting the desired provider, use additional fragment options to determi
 
 {bdg-secondary}`Available 7.4 U77 and GA77+`
 
-If your object has a [relationship with other objects](./creating-and-managing-objects/relationships/defining-object-relationships.md), you can also use a nested Collection Display fragment to show the related objects in that relationship. The embedded Collection Display fragment uses a unique [related items collection provider](../../content-authoring-and-management/collections-and-collection-pages/collection-provider.md#related-items-collections-providers) to form the new collection.
+If your object has a [relationship with other objects](./creating-and-managing-objects/relationships/defining-object-relationships.md), you can also use a nested Collection Display fragment to show the related objects in that relationship. The embedded Collection Display fragment uses a unique [related items collection provider](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md#related-items-collections-providers) to form the new collection.
 
 ```{important}
 Displaying related objects with a related items collection provider is currently behind a release feature flag. Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
@@ -102,5 +102,5 @@ For each item in the top-level Collection Display fragment, the new fragment now
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)
 * [Displaying Object Entires](./displaying-object-entries.md)
 * [About Collections and Collection Pages](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
-* [Collection Providers](../../content-authoring-and-management/collections-and-collection-pages/collection-provider.md)
+* [Collection Providers](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md)
 * [Defining Object Relationships](./creating-and-managing-objects/relationships/defining-object-relationships.md)

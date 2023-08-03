@@ -1,6 +1,7 @@
 ---
 toc:
   - ./style-books/using-a-style-book-to-standardize-site-appearance.md
+  - ./style-books/exporting-and-importing-style-books.md
   - ./style-books/developer-guide.md
 uuid: bee0cd20-1630-41b4-ab3d-6e749149c4d5
 ---
@@ -10,6 +11,7 @@ uuid: bee0cd20-1630-41b4-ab3d-6e749149c4d5
 :maxdepth: 3
 
 style-books/using-a-style-book-to-standardize-site-appearance.md
+style-books/exporting-and-importing-style-books.md
 style-books/developer-guide.md
 ```
 
@@ -18,6 +20,10 @@ style-books/developer-guide.md
 
 :::{grid-item-card} Using a Style Book to Standardize Site Appearance
 :link: ./style-books/using-a-style-book-to-standardize-site-appearance.md
+:::
+
+:::{grid-item-card} Exporting and Importing Style Books
+:link: ./style-books/exporting-and-importing-style-books.md
 :::
 
 :::{grid-item-card} Developer Guide

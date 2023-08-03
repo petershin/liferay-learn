@@ -14,15 +14,15 @@ uuid: e6422a71-939d-413c-831b-9773a1ad536c
 
 ![Research shows that buyer concerns shift in importance through the different buying phases.](./buying-phases/images/01.png)
 
-The diagram above describes various buying phases and the various concerns the buyer has during the three buying phases. Several variations of the same diagram can be found by searching for “shifting buyer concerns”. 
+The diagram above describes various buying phases and the various concerns the buyer has during the three buying phases. Several variations of the same diagram can be found by searching for “shifting buyer concerns”.
 
-There are various possible originators for this diagram, but the most likely original source is Neil Rackham. While the name might not be familiar, many sales people recognize the concept of “Spin Selling”. Neil Rackham is the author of the book “Spin Selling" and the concept itself. 
+There are various possible originators for this diagram, but the most likely original source is Neil Rackham. While the name might not be familiar, many sales people recognize the concept of “Spin Selling”. Neil Rackham is the author of the book “Spin Selling" and the concept itself.
 
-Originally an experimental psychologist, Neil later became known for his books about Spin Selling amongst others, and also as a sales methodology guru. Neil did extensive research on human buying behaviors and successful selling and what successful B2B sellers do to become successful. Even though the first version of the image dates back decades, human buying behavior is essentially unchanged. 
+Originally an experimental psychologist, Neil later became known for his books about Spin Selling amongst others, and also as a sales methodology guru. Neil did extensive research on human buying behaviors and successful selling and what successful B2B sellers do to become successful. Even though the first version of the image dates back decades, human buying behavior is essentially unchanged.
 
 There are some substantial differences between the previous sales process funnel and milestones diagram compared with the buyer process and buying phases.
 
-In the diagram: 
+In the diagram:
 
 * The **X axis** represents the time it takes to move an opportunity from start to finish. 
 * The **Y axis** shows the level of concern the buyer has. This is the relative importance of a factor at a given moment. The higher the line the greater the importance.

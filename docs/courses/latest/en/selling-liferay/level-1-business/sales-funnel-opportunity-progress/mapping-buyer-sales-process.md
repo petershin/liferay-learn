@@ -46,7 +46,7 @@ But, generally, expect that the solution development phase will be the longest o
 
 ![Each buying phase contains one or more pipeline stages and milestones.](./mapping-buyer-sales-process/images/02.png)
 
-Next are some common pipeline stages and milestones. 
+Next are some common pipeline stages and milestones.
 
 They are not representing any particular sales process but they will most likely resonate with your current new business process steps and milestones as they are pretty universal.
 

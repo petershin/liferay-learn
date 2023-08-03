@@ -8,12 +8,12 @@ uuid: ee0b40e0-e912-4f5a-8771-f8a57ec894af
 
 * The buying process can be Seller or Buyer initiated
 * Buyer initiated processes have two flavors:
-    * With a “second” buyer
-    * Without a “preferred” vendor
+  * With a “second” buyer
+  * Without a “preferred” vendor
 * Seller initiated processes have no budget allocated, or requirements defined
 * Buyer initiated processes where there is a preferred vendor typically have requirements defined by that vendor and introduce more risk than where there is no preferred vendor 
 
-## What happens before the buying starts? 
+## What Happens Before the Buying Starts?
 
 In the prospecting 101 module “true prospecting” was described as “making somebody who had not yet recognized a need and decided to start fulfilling a need to actually consider doing something and starting a buying process”. 
 
@@ -44,7 +44,6 @@ The discussions will be more offering-focused, but unless the seller can make an
 In these cases the requirements list was probably compiled by the preferred vendor and the prospect together. When an unexpected RFP or RFQ is received, this is most likely the case. 
 
 When the vendor is presented with strict schedules and a demand to share their prices at an early stage, particularly when the buyer does not really share the business needs, it is worth considering just walking away.
-
 
 ### Buyer Initiated, without a “Preferred” Vendor
 

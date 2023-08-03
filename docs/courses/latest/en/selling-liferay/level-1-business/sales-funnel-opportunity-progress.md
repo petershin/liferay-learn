@@ -13,16 +13,16 @@ uuid: 81455421-067d-40fb-b666-2144de21ed3a
 
 * It is impossible to win every opportunity - focus on strengths
 * Liferay’s flexible platform serves needs of multiple verticals and various horizontal solutions use cases especially when there is:
-    * Complexity in needs, 
-    * High security and access control requirements
-    * Enterprise scalability, extensibility and integration expectations
+  * Complexity in needs
+  * High security and access control requirements
+  * Enterprise scalability, extensibility and integration expectations
 * Typical Enterprise Sales Processes focus on what is important to the seller
 * There are three customer buying phases - Solution Development, Evaluation, and Commitment
 * The buying process can be Seller or Buyer initiated
 
 ## Background
 
-This module provides an overview of 
+This module provides an overview of
 
 1. How an opportunity for Liferay progresses through the funnel 
 2. What the typical concerns are for a buyer
@@ -35,9 +35,9 @@ This module provides an overview of
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress-pdf) of the presentation used in the live workshop.
 ```
 
-## Pursuing major contracts is expensive
+## Pursuing Major Contracts is Expensive
 
-There are direct and indirect costs involved in progressing sales opportunities. The direct costs of a major enterprise opportunity with a value of annual subscription of EUR/USD 150,000 could be tens of thousands of Euros or Dollars. 
+There are direct and indirect costs involved in progressing sales opportunities. The direct costs of a major enterprise opportunity with a value of annual subscription of EUR/USD 150,000 could be tens of thousands of Euros or Dollars.
 
 While this might seem exaggerated, consider the amount of time spent by multiple individuals (Account Executives, Technical Sales Engineers, Architects, Legal Advisors, Leadership Sponsors etc.) This typically amounts to several days across several months to prepare meetings, presentations, demonstrations, etc. to win an opportunity.  Calculating this based on the various hourly salaries and adding travel costs, mileage, per diems, accommodation, meals, and so on, a cost of tens of thousands is likely realistic.
 
@@ -49,19 +49,19 @@ Realism and optimism are not opposites of each other: The chances of winning do 
 
 Facing reality during the various phases of the sales process helps to adjust the strategy to ensure a successful outcome. Alternatively deciding to walk away early allows the time and money to be reallocated to other opportunities that _can_ be won.
 
-To meet the buying criteria of the potential customer, or to change those criteria, those needs must be understood well. It is also important to understand how well the offering can meet those needs.  
+To meet the buying criteria of the potential customer, or to change those criteria, those needs must be understood well. It is also important to understand how well the offering can meet those needs.
 
 Finishing second in a race for a major deal costs almost as much as winning it, but without the reward at the end. In every deal there are two winners: those who are awarded a deal and those who walked away first. Everyone else lost.
 
-## Where is Liferay a good fit
+## Where is Liferay a Good Fit
 
 ![The Solution Matrix summarizes the applicability of the common Liferay solutions across the target industries.](./sales-funnel-opportunity-progress/images/01.png)
 
 This solution matrix summarizes some, but not all, of the ideal solutions industries where Liferay is particularly strong and where there are several references available. Solutions and industries not listed, and having a check mark in brackets, or no check mark at all, does not mean that Liferay DXP could not be a fit. But when building a target list for outbound prospecting it is advisable to concentrate and dedicate resources where there are more potential customers and higher probabilities to win, and where there are more tools and assets pre-built.  
 
-Where Liferay has successful horizontal offerings most mainstream market buyers like to feel that the selling organization understands and has done business in their industry. 
+Where Liferay has successful horizontal offerings most mainstream market buyers like to feel that the selling organization understands and has done business in their industry.
 
-For each industry and each industry-solution combination, having a list of Job Titles and/or Functions will help to find and craft the right messages and approaches. 
+For each industry and each industry-solution combination, having a list of Job Titles and/or Functions will help to find and craft the right messages and approaches.
 
 These titles and example messages are described in the [Level 0 Sales Learning Path](../level-0.md) modules.
 
@@ -71,7 +71,7 @@ In addition to the industry solution matrix, the following provides a summary of
 * Security
 * Enterprise
 
-### Complexity 
+### Complexity
 
 Liferay is in a strong position with a prospect whose needs and requirements are complex. 
 
@@ -82,29 +82,29 @@ Examples of complexity include:
 * Many integrations
 * B2B usage scenarios
 
-### Security 
+### Security
 
-Liferay is a strong option when the prospect has a need for high security and stringent access controls. 
+Liferay is a strong option when the prospect has a need for high security and stringent access controls.
 
-Example industries and scenarios include: 
+Example industries and scenarios include:
 
 * Financial services portals
 * Government sites and other public portals
 * Healthcare portals
-* Any industries or companies with extremely high security expectations, governance expectations and compliance requirements 
+* Any industries or companies with extremely high security expectations, governance expectations and compliance requirements
 * High expectations in the form of account services, for example customer profile management, registration, login and password management capabilities in an authenticated, logged-in experience
 
 ### Enterprise
 
-Liferay is strong in the enterprise landscape. Enterprise customers need scalability. 
+Liferay is strong in the enterprise landscape. Enterprise customers need scalability.
 
 Examples of the scenarios and needs of enterprise prospects include:
 
 * Lots of markets
 * Lots of users
-* Lots of customers 
-* Lots of solution and application needs 
-* Need for flexibility 
+* Lots of customers
+* Lots of solution and application needs
+* Need for flexibility
 
 Enterprise grade digital experience needs cannot be met with non-customizable turnkey solutions - there’s a need for a platform on top of which the enterprise customer can have their solution built and tailored to their needs in a flexible manner.
 

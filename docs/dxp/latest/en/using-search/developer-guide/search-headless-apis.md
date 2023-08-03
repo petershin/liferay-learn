@@ -217,7 +217,7 @@ A facet configuration can have several properties:
 | `attributes` | Some facets require additional attributes. The `custom`, `date-range`, and `nested` facets require a String attribute called `field` to set the field to aggregate results by. The `date-range` facet also requires a `format` String to specify the date format (e.g., `yyyyMMddHHmmss`) and a `ranges` object array to provide the ranges. The `nested` facet requires a `filterfield` String, a `filtervalue` String, and a `path` String. The `vocabulary` facet requires a String array of `vocabularyIds`. |
 | `frequencyThreshold` | Set the minimum frequency required for terms to appear in the list of facet terms. |
 | `maxTerms` | Set the maximum number of facet terms to display, regardless of how many matching terms are found for the facet. |
-| `name` | Set the type of facet: `category`, `custom`, `date-range`, `folder`, `nested`, `site`, `tag`, `type`, or `user`. See the [Search Facets](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/search-facets) documentation for more information on each type.
+| `name` | Set the type of facet: `category`, `custom`, `date-range`, `folder`, `nested`, `site`, `tag`, `type`, or `user`. See the [Search Facets](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/search-facets) documentation for more information on each type. |
 | `values` | Post filter the results by selecting values. This is like clicking facet terms in the facet widget. |
 
 For example, here's a `date-range` facet's `ranges` attribute:

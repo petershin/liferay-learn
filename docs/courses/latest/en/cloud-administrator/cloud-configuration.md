@@ -29,6 +29,8 @@ Each of your development or production environments includes all of these as sep
 
 You also have a [CI service](https://learn.liferay.com/w/liferay-cloud/platform-services/continuous-integration) in a separate `infra` environment, which controls any builds you've created or deployed for your other environments.
 
+For more information on your reponsibilities with an LXC-SM project, see [here](https://help.liferay.com/hc/en-us/articles/360059798531-DXP-Cloud-Shared-Activities).
+
 In LXC-SM, it's your responsibility to configure and manage your environments according to your specific needs. Here, you'll learn how to
 
 * Set up the Git repository to deploy builds for your entire project

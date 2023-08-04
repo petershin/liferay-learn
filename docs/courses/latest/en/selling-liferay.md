@@ -36,7 +36,7 @@ However, this is not a limitation: if you are in Technical or Customer Support, 
 ## Prerequisites
 
 * Learning paths may have prerequisites---which could be prior learning paths.
-* For example Level 0 is a prerequisite for any of the Level 1 learning paths).
+* For example Level 0 is a prerequisite for any of the Level 1 learning paths.
 * There could also be business and/or technical prerequisites and recommendations. These ensure that the content is aligned with your skills and prior knowledge.
 
 Start learning how to Sell Liferay with [Level 0](./selling-liferay/level-0.md).

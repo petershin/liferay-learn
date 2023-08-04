@@ -3,7 +3,7 @@ uuid: 1fad3ffb-9d93-4a8b-baad-20382b53a17d
 ---
 # Generating Content Using AI Creator
 
-Liferay offers a way to integrate Open AI's ChatGPT engine with the [Web Content](adding-a-basic-web-content-article.md) app through a  powerful tool called AI Creator. With an Open AI API key configured for your instance or site, you can use the AI Creator feature straight in your Web Content editor and generate content with a few clicks.
+You can integrate OpenAI's ChatGPT engine with the [Web Content](adding-a-basic-web-content-article.md) app through the powerful AI Creator tool. With an OpenAI API key configured for your instance or site, you can use the AI Creator feature directly in your Web Content editor and generate content with a few clicks.
 
 ## Enabling AI Creator
 
@@ -13,20 +13,21 @@ ChatGPT Integration for Web Content is currently behind a release feature flag. 
 
 You must add an API key to authenticate your access to ChatGPT:
 
-1. Open the *Global Menu*( ![Global Menu](../../../images/icon-applications-menu.png) ) and navigate to the *Control Panel* tab &rarr; select *Instance Settings* under *Configuration*.
+1. Open the *Global Menu*( ![Global Menu](../../../images/icon-applications-menu.png) ) and navigate to the *Control Panel* tab &rarr; *Instance Settings* (under Configuration).
 
 1. Click *AI Creator* under *Content and Data*.
 
-1. Paste your *API Key* and click *Save*.
+1. Paste your OpenAI API key into the *API Key* field.
+
+1. Click *Save*.
 
 ```note
-You can enable or disable the AI Creator button by checking the Enable OpenAI to Create Content box. If you choose to disable the feature, the button does not show in the Web Content editor.
+You can enable or disable the AI Creator button by toggling the Enable OpenAI to Create Content checkbox. If you choose to disable the feature, the button does not appear in the Web Content editor.
 ```
 
 ## Using AI Creator
 
 After [enabling the feature flag and configuring the API Key](#enabling-ai-creator), you can use AI Creator in your web content editor:
-
 
 1. Open the *Global Menu*( ![Global Menu icon](../../../images/icon-applications-menu.png) ) and select your site on the right.
    
@@ -52,4 +53,4 @@ After [enabling the feature flag and configuring the API Key](#enabling-ai-creat
 
 1. Click *Add* to insert the content into your web content article.
 
-You can now publish your web content article.
+You can now publish your automatically generated web content article.

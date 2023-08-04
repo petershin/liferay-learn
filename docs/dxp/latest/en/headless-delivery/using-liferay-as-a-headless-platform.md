@@ -16,7 +16,35 @@ There are three different approaches available for clients to connect to Liferay
 
 Liferay's headless APIs allow [RESTful](https://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#relwwwrest) interaction with Liferay DXP resources. These APIs follow the [OpenAPI specification](https://swagger.io/docs/specification/about/), which defines a standard for REST interfaces, allowing for more straightforward implementation and consumption.
 
-You can find detailed information on these APIs by accessing the definitions on a running Liferay DXP instance at `[server][:port]/o/api`. The most relevant documentation is also available at `[server][:port]/o/[api-name]/[api-version]/openapi.[yaml or json]` in a raw format. The documentation is available on [SwaggerHub](https://app.swaggerhub.com/search?owner=liferayinc), but may not match your running version.
+To view detailed information on these APIs, use your browser and access Liferay's API Explorer at `[server][:port]/o/api` (e.g. http://localhost:8080/o/api). Or in the command line, access the complete list with cURL. For example:
+
+```
+curl \
+	"http://localhost:8080/o/api" \
+	-u "test@liferay.com:learn"
+```
+
+The most relevant documentation is also available at `[server][:port]/o/[api-name]/[api-version]/openapi.[yaml or json]` in a raw format. The documentation is available on [SwaggerHub](https://app.swaggerhub.com/search?owner=liferayinc), but may not match if you are running a previous version.
+
+To view the OpenAPI specifications for all the APIs, use your browser and access `[server][:port]/o/api?endpoint=[server][:port]/o/openapi/openapi.json`. (e.g. http://localhost:8080/o/api?endpoint=http://localhost:8080/o/openapi/openapi.json). Or download the full list in JSON format or YAML format with cURL. For example:
+
+```bash
+curl \
+	"http://localhost:8080/o/openapi/openapi.json" \
+	-o "openapi.json" \
+	-u "test@liferay.com:learn"
+```
+
+```bash
+curl \
+	"http://localhost:8080/o/openapi/openapi.yaml" \
+	-o "openapi.yaml" \
+	-u "test@liferay.com:learn"
+```
+
+```{note}
+Download of this full `openapi.[json|yaml]` file is available in Liferay DXP 7.4 U69/Liferay Portal 7.4 GA69 and above.
+```
 
 ### GraphQL API
 

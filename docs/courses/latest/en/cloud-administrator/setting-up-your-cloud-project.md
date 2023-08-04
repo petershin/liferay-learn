@@ -8,9 +8,11 @@ uuid: 88094a31-939d-4710-bcc3-ee2d3933d721
 
 # Setting Up Your Cloud Project
 
-Your first task after you have an environment provisioned for you on Liferay Cloud, either on Liferay Experience Cloud (LXC) or LXC Self-Managed, is to access the cloud console.
+After you have either an instance of Liferay Experience Cloud (LXC) or an environment on LXC Self-Managed (LXC-SM) provisioned, your first task is to access the cloud console.
 
-In Liferay Experience Cloud Self-Managed (LXC-SM), you use the cloud console to manage each of your environment's services, including the [web server](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service) and [database](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service). In LXC, these services are managed for you, and you work primarily with Liferay's out-of-the-box features, but you still use the console to manage your own [client extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions).
+In Liferay Experience Cloud Self-Managed (LXC-SM), you use the cloud console to manage each of your environment's services, including the [web server](https://learn.liferay.com/w/liferay-cloud/platform-services/web-server-service) and [database](https://learn.liferay.com/w/liferay-cloud/platform-services/database-service/database-service).
+
+In LXC, these services are managed for you, and you work primarily with Liferay's out-of-the-box features, but you still use the console to manage your own [client extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions).
 
 Here, you'll learn how to 
 
@@ -19,6 +21,6 @@ Here, you'll learn how to
 - Invite other team members to access the cloud console
 - Install and use a Command Line Interface (CLI) tool to access your account from your computer
 
-Next you'll help Delectable Bonsai's IT staff, Marcus and Kyle, to access the cloud console and acquire [the tools that you'll need](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to deploy changes to your Cloud environment.
+Next you'll help Delectable Bonsai's IT staff, Marcus and Kyle, to access the cloud console and acquire [the tools that you'll need](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to deploy changes to your Cloud project.
 
 [Let's Go!](./setting-up-your-cloud-project/accessing-the-liferay-cloud-console.md)

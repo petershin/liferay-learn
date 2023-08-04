@@ -69,7 +69,7 @@ Now open your command line in the `liferay-sample-etc-spring-boot/` folder to re
 
    When prompted, choose the number that corresponds to your UAT client extension environment.
 
-The client extension project is deployed to your environment, and it appears in the Cloud console after a delay.
+The client extension project is deployed, and it appears in the Cloud console after a delay.
 
 ## Check the Microservice
 
@@ -135,7 +135,7 @@ The service restarts again after a delay with the new environment variable.
 
 ## Verify the Environment Variable is Present
 
-Use the shell to make sure the variable is in the environment where Spring Boot can detect it. Shell access in the console puts you directly in the environment where your microservice runs.
+Use the shell to make sure the variable is in the environment where Spring Boot can detect it. Shell access in the console puts you directly in the container where your microservice runs.
 
 1. While you're on the service's page, click the *Shell* tab.
 

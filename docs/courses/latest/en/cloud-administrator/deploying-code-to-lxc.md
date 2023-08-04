@@ -7,11 +7,13 @@ uuid: 819aa6d5-2b61-4438-b0dc-b848e6a25c87
 
 # Deploying Code to LXC
 
-Now that you've accessed and started using the Cloud console, you're ready to deploy a client extension project to your LXC environment.
+Now that you've accessed and started using the Cloud console, you're ready to deploy a client extension project to your LXC instance.
 
 ```{note}
 This module requires a project on Liferay Experience Cloud. If you only have a project on the Self-Managed version (LXC-SM), skip ahead to [Cloud Configuration](./cloud-configuration.md).
 ```
+
+With LXC, you don't need to worry about configuring or maintaining the infrastructure outside of Liferay, so you can simply focus on using the tools within Liferay DXP to build and manage your sites. However, when Liferay's out-of-the-box tools aren't enough, you can use client extensions.
 
 [Client extensions](https://learn.liferay.com/w/dxp/building-applications/client-extensions) are the comprehensive means of extending LXC. You can deploy client extensions to [import batch data](https://learn.liferay.com/w/dxp/building-applications/client-extensions/batch-client-extensions), host [static front-end resources for your site](https://learn.liferay.com/w/dxp/building-applications/client-extensions/front-end-client-extensions), or even [integrate with custom microservices running in the cloud](https://learn.liferay.com/w/dxp/building-applications/client-extensions/microservice-client-extensions). Your code and resources don't rely on any of Liferay's code, and you can focus on whatever you're trying to create.
 

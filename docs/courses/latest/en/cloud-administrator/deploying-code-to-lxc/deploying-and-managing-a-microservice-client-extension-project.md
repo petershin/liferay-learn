@@ -41,11 +41,11 @@ The sample Spring Boot project uses an `application.properties` file to register
    com.liferay.lxc.dxp.server.protocol=https
    ```
 
-Now the project is correctly configured for your LXC environment and ready to deploy.
+Now the project is correctly configured for your LXC instance and ready to deploy.
 
 ## Build and Deploy the Project
 
-Build and deploy the project to your LXC environment from the sample Spring Boot project's folder.
+Build and deploy the project to your LXC instance from the sample Spring Boot project's folder.
 
 1. Run this command to build the project into a deployable [LUFFA](https://learn.liferay.com/w/dxp/building-applications/client-extensions/packaging-client-extensions):
 
@@ -195,7 +195,7 @@ Delete the service from the console now that you're done using the sample micros
 
 After a delay, the service is deleted and disappears from the Cloud console.
 
-Now you've successfully tested the sample Spring Boot application in your UAT environment. 
+Now you've successfully tested the sample Spring Boot application in UAT. 
 
 Next: [troubleshoot a problem in the console](./troubleshooting-a-microservice-in-the-cloud-console.md).
 

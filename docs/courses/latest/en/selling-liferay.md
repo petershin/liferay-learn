@@ -1,6 +1,8 @@
 ---
 toc:
   - ./selling-liferay/level-0.md
+  - ./selling-liferay/level-1-business.md
+  - ./selling-liferay/level-1-technical.md
 uuid: def885ec-59c7-4b4d-a194-f9eaff64a82e
 ---
 # Selling Liferay
@@ -46,5 +48,17 @@ Start learning how to Sell Liferay with [Level 0](./selling-liferay/level-0.md).
 :link: ./selling-liferay/level-0.md
 
 Level 0 introduces you to Liferay: the company, product, and the value Liferay's offerings provide.
+:::
+
+:::{grid-item-card} Level 1 Business
+:link: ./selling-liferay/level-1-business.md
+
+Level 1 for Business Sales Roles shows Liferay sellers how to succeed Selling Liferay, from generating prospects to closing deals.
+:::
+
+:::{grid-item-card} Level 1 Technical
+:link: ./selling-liferay/level-1-technical.md
+
+Level 1 for Technical sellers provides the foundation to prepare and run a successful demo of Liferay.
 :::
 ::::

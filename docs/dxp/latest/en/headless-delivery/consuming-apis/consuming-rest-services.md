@@ -18,13 +18,7 @@ You need a running Liferay DXP to call its REST services.
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Liferay DXP's REST services are published at this URL:
-
-```
-http[s]://[hostname]:[port]/o/api
-```
-
-On your Docker instance, you can find them here:
+To view the various API endpoints, use your browser and access Liferay's API Explorer at `[server]:[port]/o/api`. For example, in your Docker instance, you can find them here:
 
 ```
 http://localhost:8080/o/api
@@ -34,9 +28,9 @@ APIs are divided into several categories. This example uses the `BlogPosting` se
 
 1. Select the *Headless Delivery* category. This category contains the `BlogPosting` service. You can use the filter to search for services. 
 
-1. Click the *Show Schemas* button, and on the right side of the screen a list of all the schemas in this category appears. 
+2. Click the *Show Schemas* button, and on the right side of the screen a list of all the schemas in this category appears. 
 
-1. Keep a browser tab open to the schema browser; when you want to PUT a `BlogPosting`, you'll need its schema. 
+3. Keep a browser tab open to the schema browser; when you want to PUT a `BlogPosting`, you'll need its schema. 
 
 ![The schema browser makes it convenient to find and call the service you want. ](./consuming-rest-services/images/01.png)
 

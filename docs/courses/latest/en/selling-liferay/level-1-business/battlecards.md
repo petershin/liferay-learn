@@ -5,7 +5,7 @@ toc:
 uuid: 43bd1dc2-d99a-4da0-be59-bbac37d38fe6
 ---
 
-# Competitive Intelligence: Battlecards 2023
+# Competitive Intelligence: Battlecards
 
 **At a Glance**
 
@@ -31,11 +31,12 @@ Further to that, anyone with additional information about a competitor can play 
 * Liferay Employees - View the [Battlecards](https://sales.liferay.com/group/library/competitive-intel).
 * Liferay Partners  - View the [Battlecards](https://partner.liferay.com/marketing/marketing-resources/research-analysis/competitive-analysis).
 ```
+
 ## Introduction to the Competitor Battlecards
 
 Liferay’s Sales Enablement team uses a leading third party intelligence tool called Kompyte to scrape information of chosen competitors into one central location. This helps to create and update Battlecards with basic data relatively quickly and from public and generally reliable sources.
 
-Additionally feedback and information about competitors gathered internally is incorporated into the Battlecards. Further to this, feedback from partners is highly appreciated. 
+Additionally, feedback and information about competitors gathered internally and from partners is incorporated into the Battlecards.
 
 The most critical source of these updates comes from sales people because of meetings with buyers, seeing competitors in opportunities, hearing feedback from colleagues, champions and the broader network.
 
@@ -52,4 +53,4 @@ How you can access the Battlecards varies depending on whether you are an Employ
 
 Note that however the Battlecards are accessed, they are confidential and for internal and partner use only. They must not be distributed.
 
-Next: a summary of all of the [currently available Battlecards](./battlecards/current-battlecards.md)
+Next: A summary of all of the [currently available Battlecards](./battlecards/current-battlecards.md).

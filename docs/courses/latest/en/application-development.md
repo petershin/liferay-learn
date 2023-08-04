@@ -31,7 +31,7 @@ When finished, you'll have learned how to
 <!--TASK: * Use front-end client extensions to build dynamic user experiences that integrate with object APIs. -->
 <!--TASK: * Promote custom applications from UAT/DEV to PRD environments. -->
 
-Start by [Modeling Data Structures](./application-development/modeling-data-structures.md)! 
+Start by [Modeling Data Structures](./application-development/modeling-data-structures.md)!
 
 ::::{grid} 2
 :gutter: 3 3 3 3

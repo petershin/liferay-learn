@@ -82,7 +82,7 @@ Click on each of the tiles to read more about the six most common horizontal sol
 
 One-by-one, you'll learn each feature and how it is leveraged.
 
-Don't know where to start? [Start with Customer Portals](./tailored-solution-highlights/customer-portals.md). 
+Don't know where to start? [Start with Customer Portals](./tailored-solution-highlights/customer-portals.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3

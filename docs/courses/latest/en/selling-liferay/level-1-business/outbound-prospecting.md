@@ -42,12 +42,12 @@ This does not cover prospecting or outbound prospecting in general; here instead
 At a high level, outbound prospecting has these goals:
 
 1. Introduce prospects into the sales cycle, ultimately to convert them to customers
-2. Increase brand awareness and consideration
-3. Support inbound marketing through
+1. Increase brand awareness and consideration
+1. Support inbound marketing through
   1. Increasing organic traffic to the company website
-  2. Using outbound contacts for ad re-targeting
-  3. Defining the ideal customer profile (ICP)
-  4. Improving go-to-market messaging
+  1. Using outbound contacts for ad re-targeting
+  1. Defining the ideal customer profile (ICP)
+  1. Improving go-to-market messaging
 
 ### Why do we do prospecting?
 

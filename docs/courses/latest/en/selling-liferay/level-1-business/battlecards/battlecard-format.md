@@ -23,13 +23,13 @@ To make this section more meaningful the MACH Alliance battlecard is used.
 
 ### MACH Alliance Battlecard Overview
 
-The MACH Alliance promotes that companies should pick and choose the top solutions from top vendors to build the most effective stack, and in doing so not be locked in with a single vendor. The implication is that by selecting the top solutions the customer achieves the best solution they could build. 
+The MACH Alliance promotes that companies should pick and choose the top solutions from top vendors to build the most effective stack, and in doing so not be locked in with a single vendor. The implication is that by selecting the top solutions the customer achieves the best solution they could build.
 
 Conceptually Liferay embraces some of these concepts, but understands that there are always complications when trying to take multiple tools from multiple companies that were not designed to work together, to actually work together well, as is indeed seen with some of the so-called vendor “platforms”.
 
 While not well known in all territories the MACH Alliance is coming up more frequently in some global regions where companies are being influenced to purchase from vendors that are part of the alliance.
 
-Despite potentially low start-up subscription costs, the amounts the buyer needs to pay for building, integrating and most of all maintaining everything could end up being extremely high. 
+Despite potentially low start-up subscription costs, the amounts the buyer needs to pay for building, integrating and most of all maintaining everything could end up being extremely high.
 
 Coupled with this, the end user and developer experiences are fragmented and the customer might become very dependent on different agencies building each application.
 
@@ -39,7 +39,7 @@ Coupled with this, the end user and developer experiences are fragmented and the
 
 The Company Snapshot section provides information on the company and its product offerings to provide a summary of the company and what they sell.
 
-Each battlecard includes: 
+Each battlecard includes:
 
 * Company overview
 * Product overview
@@ -86,4 +86,4 @@ Note that the example provided for this section is from the OutSystems battlecar
 
 The final section is simply a recent screenshot of and link to the competitors’ Home Page. Note that sometimes the image does not render accurately in the supplied PDF, which is due to the way the competitive intelligence tool collects and renders this image.  Just click on the section to be directed straight to the competitors’ website.
 
-Next: the final module in this learning path covers [Liferay’s Contracts](../liferay-contracts.md)
+Next: The final module in this learning path covers [Liferay’s Contracts](../liferay-contracts.md).

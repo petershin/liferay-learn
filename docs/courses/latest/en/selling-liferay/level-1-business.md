@@ -37,7 +37,7 @@ It's also useful for other roles in the sales process such as Sales Engineers (S
 
 Beyond having a general understanding of and selling Enterprise Software, you should complete [Level 0](./level-0.md) before starting Level 1 modules.
 
-Start level 1 with [Tailored Solution Highlights](./level-1-business/tailored-solution-highlights.md)
+Start Level 1 with [Tailored Solution Highlights](./level-1-business/tailored-solution-highlights.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3

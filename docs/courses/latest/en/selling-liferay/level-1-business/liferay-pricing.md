@@ -133,7 +133,7 @@ And remember, the [Sales Decision Flow](https://learn.liferay.com/documents/d/gu
 
 ![The Liferay New Customer and New Project Sales Decision Flow provides guidance on which deployment model is most appropriate for a new opportunity.](./liferay-pricing/images/02.png)
 
-Next: review each of the pricing models, starting with [Liferay Experience Cloud SaaS](./liferay-pricing/liferay-pricing-saas.md)
+Next: review each of the pricing models, starting with [Liferay Experience Cloud SaaS](./liferay-pricing/liferay-pricing-saas.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3

@@ -132,4 +132,4 @@ For other prospects, the main focus might be on increasing revenue. In that case
 
 While all of Liferay’s features and functionality are a critical part of building solutions, it is important to focus first on the business challenges that each prospect is facing, and on the desired business outcomes.  Once those challenges and outcomes are known, then attention can be turned to how to solve those challenges and achieve those outcomes.
 
-Next: understand the [New Approach](./liferay-sales-presentations/sales-presentations-new-approach.md) to Liferay’s Sales Decks
+Next: Understand the [New Approach](./liferay-sales-presentations/sales-presentations-new-approach.md) to Liferay’s Sales Decks.

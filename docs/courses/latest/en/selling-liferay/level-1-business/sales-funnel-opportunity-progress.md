@@ -45,7 +45,7 @@ Because of this it is important for sellers to understand the strengths and weak
 
 Realism and optimism are not opposites of each other: The chances of winning do not need to be 100%, it is possible to win even if the starting point is at 20 percent probability. 
 
-> “Bad news early is good news.” 
+> “Bad news early is good news.”
 
 Facing reality during the various phases of the sales process helps to adjust the strategy to ensure a successful outcome. Alternatively deciding to walk away early allows the time and money to be reallocated to other opportunities that _can_ be won.
 

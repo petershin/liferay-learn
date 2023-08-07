@@ -13,13 +13,13 @@ Elasticsearch 서버는 다음 URL에서 액세스할 수 있습니다.
 {
   "name" : "liferay",
   "cluster_name" : "LiferayElasticsearchCluster",
-  "cluster_uuid" : "_lcJyLZXQ2WY5No5oW8edg",
+  "cluster_uuid" : "aDsZ5VWTQ96-lT-7WmcoHg",
   "version" : {
-    "number" : "7.17.10",
+    "number" : "7.17.12",
     "build_flavor" : "unknown",
     "build_type" : "unknown",
-    "build_hash" : "bee86328705acaa9a6daede7140defd4d9ec56bd",
-    "build_date" : "2022-01-28T08:36:04.875279988Z",
+    "build_hash" : "e3b0c3d3c5c130e1dc6d567d6baef1c73eeb2059",
+    "build_date" : "2023-07-20T05:33:33.690180787Z",
     "build_snapshot" : false,
     "lucene_version" : "8.11.1",
     "minimum_wire_compatibility_version" : "6.8.0",

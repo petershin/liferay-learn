@@ -17,6 +17,7 @@ Page fragments have access to these types of liferay-specific tags and attribute
 - [Editable HTML (Liferay Portal 7.3 GA3+ and DXP 7.3+)](#creating-editable-html)
 - [Embedded Widgets](#including-widgets-within-a-fragment)
 - [Localizable Fragment Fields](#localizing-fragment-configurations)
+- [Date Fragments](#using-date-fragments)
 
 ```{tip}
 When you start typing the name of a tag, the [HTML editor](../../developing-page-fragments/using-the-fragments-editor.md) provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
@@ -310,6 +311,18 @@ The flag icon under the fragment's General settings indicates the configuration 
 ```
 
 Fragments with the `localizable` attribute that do not specify a custom configuration for a language use the default page language's configuration.
+
+## Using Date Fragments
+
+You can customize and localize date formats using date fragments by including the `data-lfr-editable-id="date-time"` and `data-lfr-editable-type="date-time"` attributes to the fragment. `data-lfr-editable-id` must be a unique ID, like this example:
+
+```html
+<div data-lfr-editable-type="date-time" data-lfr-editable-id="date-time">
+    02/03/11 00:00 AM
+</div>
+```
+
+See [Using Date Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/using-date-fragments.md) for more information.
 
 ## Related Topics
 

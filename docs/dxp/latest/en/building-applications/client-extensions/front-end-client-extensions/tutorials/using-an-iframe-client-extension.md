@@ -3,7 +3,7 @@ uuid: 26cee4e4-07ad-4341-a5d6-ee4c715f7009
 ---
 # Using an IFrame Client Extension
 
-{bdg-secondary}`7.4+`
+{bdg-secondary}`Available Liferay 7.4+`
 
 IFrame client extensions use Liferay's front-end infrastructure to register external applications as `<iframe>` HTML elements. They're added to Liferay pages as widgets. Unlike other front-end client extensions, IFrames do not provide a static resource.
 

@@ -31,7 +31,7 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/remote-applications-ui-reference.md
 ```
 
-{bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
+{bdg-secondary}`Available Liferay 7.4`
 
 Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JavaScript, Theme CSS, Theme JS, Theme Favicon, Custom Element, and IFrame.
 

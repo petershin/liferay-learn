@@ -13,7 +13,7 @@ configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
 configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ```
 
-{bdg-secondary}`7.4 U45+/GA45+`
+{bdg-secondary}`Available Liferay 7.4`
 
 Liferay instance configurations are deployable with client extensions. For example, you can deploy OAuth2 authentication profiles as configuration client extensions, enabling your other client extensions that require authentication.
 

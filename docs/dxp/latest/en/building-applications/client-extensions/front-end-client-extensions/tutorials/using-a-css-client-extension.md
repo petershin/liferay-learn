@@ -31,23 +31,22 @@ Now you have the tools to deploy your first CSS client extension.
 
 ## Examine and Modify the Client Extension
 
-The CSS client extension is in the sample workspace's `client-extensions/sample-global-css/` folder. It's defined in the `client-extension.yaml` file:
+The CSS client extension is in the sample workspace's `client-extensions/liferay-sample-global-css/` folder. It's defined in the `client-extension.yaml` file:
 
 ```yaml
-sample-global-css:
-    name: Sample Global CSS
+liferay-sample-global-css:
+    name: Liferay Sample Global CSS
     type: globalCSS
     url: global.css
 ```
 
-The client extension has the ID `sample-global-css` and contains the key configurations for a CSS client extension, including the `type` and the CSS file to add. See the [CSS YAML configuration reference](../css-yaml-configuration-reference.md) for more information on the available properties.
+The client extension has the ID `liferay-sample-global-css` and contains the key configurations for a CSS client extension, including the `type` and the CSS file to add. See the [CSS YAML configuration reference](../css-yaml-configuration-reference.md) for more information on the available properties.
 
 It also contains the `assemble` block:
 
 ```yaml
 assemble:
     - from: assets
-      include: "**/*"
       into: static
 ```
 
@@ -56,12 +55,14 @@ This specifies that everything in the `assets/` folder should be included as a s
 The `assets/global.css` file contains this CSS:
 
 ```css
-body {
-    color: #0054f0;
+.logo::after {
+   color: #0054f0;
+   content: 'Liferay Sample Global CSS';
+   margin-left: 2rem;
 }
 ```
 
-This modifies the `body` color for the page when the client extension is enabled.
+This modifies the color of the Liferay logo for the home page when the client extension is enabled.
 
 Add CSS to modify the background color for buttons. Open the `global.css` file, add a declaration for the `.btn-primary` class, and specify the `background-color`: 
 

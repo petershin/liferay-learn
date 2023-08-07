@@ -31,23 +31,22 @@ All the necessary tools and a JS client extension are included in the sample wor
 
 ## Examine the Client Extension
 
-The JS client extension is in the workspace's `client-extensions/sample-global-js/` folder. It's defined in the `client-extension.yaml` file:
+The JS client extension is in the workspace's `client-extensions/liferay-sample-global-js/` folder. It's defined in the `client-extension.yaml` file:
 
 ```yaml
-sample-global-js:
-    name: Sample Global JS
+liferay-sample-global-js:
+    name: Liferay Sample Global JS
     type: globalJS
     url: global.js
 ```
 
-The client extension has the ID `sample-global-js` and contains the key configurations for a JS client extension, including the `type` and the JavaScript file to add. See the [JavaScript YAML configuration reference](../javascript-yaml-configuration-reference.md) for more information on the properties.
+The client extension has the ID `liferay-sample-global-js` and contains the key configurations for a JS client extension, including the `type` and the JavaScript file to add. See the [JavaScript YAML configuration reference](../javascript-yaml-configuration-reference.md) for more information on the properties.
 
 It also contains the `assemble` block:
 
 ```yaml
 assemble:
     - from: assets
-      include: "**/*"
       into: static
 ```
 

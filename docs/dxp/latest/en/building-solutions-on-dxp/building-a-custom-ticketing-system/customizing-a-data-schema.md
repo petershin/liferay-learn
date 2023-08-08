@@ -32,6 +32,8 @@ list-type-batch:
     type: batch
 ```
 
+See [batch YAML configuration reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
+
 The client extension makes use of the [batch engine headless API](../../headless-delivery/consuming-apis/batch-engine-api-basics-importing-data.md) and the [picklists headless API](../../building-applications/objects/picklists/picklists-api-basics.md). To make secure API requests, the client extension is configured to use OAuth2 authorization. It is defined as follows:
 
 ```yaml
@@ -70,7 +72,7 @@ In Liferay, navigate to _Control Panel_ &rarr; _Objects_. See that a new ticket 
 ### Examining the Custom Object Code
 
 This `ticket-batch` client extension is also a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. The client extension's YAML file is defined in the same way as the 
-`list-type-batch` client extension.
+`list-type-batch` client extension. See [batch YAML configuration reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
 
 See [client-extension.yaml](https://github.com/LiferayCloud/client-extensions-deep-dive-devcon-2023/blob/main/client-extensions/ticket-batch/client-extension.yaml) for the full definition.
 

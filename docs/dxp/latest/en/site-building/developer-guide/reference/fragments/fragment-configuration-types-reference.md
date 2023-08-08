@@ -489,6 +489,23 @@ Using this sample configuration, collections including both web content and blog
 In addition to the `itemType`, you can specify the `itemSubtype` in the configuration. The `itemSubtype` corresponds to the asset `classPK`.
 ```
 
+By default, all items in the collection are returned if you do not define a limit to the maximum number of items. You can set this limit using `numberOfItems` in your JSON configuration.
+
+```json
+{
+       "label": "Collection",
+       "fields": [
+            {
+                "name": "collection",
+                "type": "collectionSelector",
+                "typeOptions": {
+                    "numberOfItems": 3
+                }
+            }
+        ]
+}
+```
+
 ## Color Palette Configuration
 
 The color palette JSON configuration creates a color selector you can implement for cases where you must select a color. Unlike the [color picker configuration](#color-picker-configuration), it only provides options based on the theme colors configured in the currently used [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)'s color system.

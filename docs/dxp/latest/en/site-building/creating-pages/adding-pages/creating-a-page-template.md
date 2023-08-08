@@ -35,6 +35,12 @@ The steps below show how to create and use Widget and Content Page Templates.
 
 1. You're automatically brought to the new Page Template. Follow the instructions in [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your Widget Page Template. Likewise, see [Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) to configure your Content Page Template.
 
+You can preview your newly created page template:
+
+Navigate back to the *Page Templates* tab, click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) on the page template you want to preview, and select *Preview*.
+
+![You can preview a Page Template before selecting it.](./creating-a-page-template/images/03.png)
+
 ## Creating a Page Template from an Existing Page
 
 You can also create a Page Template from a page while you are editing it. The new Page Template keeps all of the same configurations for Fragments and widgets when it is created. This saves you time making more templates for pages that you may decide to reuse as you expand your Site.
@@ -43,11 +49,11 @@ Follow these steps to make a Page Template from a page:
 
 1. While editing the page, click the *Actions* button (![Actions](../../../images/icon-actions.png)) and select *Convert to Page Template*
 
-    ![Click Convert to Page Template in the Actions menu to turn the page you are editing into a new Page Template.](./creating-a-page-template/images/03.png) 
+    ![Click Convert to Page Template in the Actions menu to turn the page you are editing into a new Page Template.](./creating-a-page-template/images/04.png) 
 
 1. In the modal that appears on the screen, select an existing page set or select *Save in New Set* to create a new Page Template Set for the Page Template.
 
-    ![Here, you can set the basic information for your new Page Template.](./creating-a-page-template/images/04.png)
+    ![Here, you can set the basic information for your new Page Template.](./creating-a-page-template/images/05.png)
 
 1. Click Save.
 
@@ -61,7 +67,7 @@ To give other users access to a newly created page template follow these steps:
 
 1. Select *Permissions* from the Page Template's Actions menu.
 
-    ![Configuring permissions for a page template to allow other users access.](./creating-a-page-template/images/05.png)
+    ![Configuring permissions for a page template to allow other users access.](./creating-a-page-template/images/06.png)
 
 1. Check the *View* permission for the Roles that you want to have access to the Page Template. If you want any user who can create a page to be able to use the Page Template, check the *View* permission for the *User* Role.
 

@@ -15,7 +15,11 @@ You can export and import style books to share them between Liferay installation
 
 1. In the Export / Import modal, select *Export*.
  
-1. You can start a *New Export Process* or you can select the *Current and Previous* tab where you can view a list of previous processes and download exported LAR files.
+1. Start a *New Export Process*.
+   
+    ```{note}
+    You can select the *Current and Previous* tab to view a list of previous processes and download exported LAR files.
+    ```
 
 1. When starting a new export process, you can name the LAR file and [configure the process](#configuring-export-and-import-processes-as-a-lar-file).
 
@@ -27,9 +31,17 @@ You can now share and import your LAR file.
 
 ## Importing Style Books as a LAR File
 
+1. Open the *Product Menu* ( ![Product Menu Icon](../../../images/icon-product-menu.png) ) and select *Design* &rarr; open the *Style Books* app.
+
+1. Select the style book you want to import. On the Applications bar, click *Options* ( ![Options Icon](../../../images/icon-options.png) ) &rarr; select *Export / Import*.
+
 1. In the Export / Import modal, select *Import*.
 
-1. You can start a *New Import Process* or you can select the *Current and Previous* tab where you can view a list of previous processes.
+1. Start a *New Import Process*.
+
+    ```{note}
+    You can select the *Current and Previous* tab to view a list of previous processes.
+    ```
 
 1. Upload the LAR file and click *Continue*.
 
@@ -45,13 +57,13 @@ Liferay provides settings for configuring export and import processes.
 
 | Setting | Description |
 | :--- | :--- |
-| Application | You can choose to export your style book’s configuration settings. |
-| Content | You can select a date range of content that you want to export. Content added to your style book within your specified date range is included in the LAR file. |
-| Deletions | You can choose to export individual deletions. This exports delete operations performed for content types to the LAR file. |
-| Delete Application Data Before Importing (Import) | When checked, all data created by the application is deleted before the import process. Be careful: other applications may reference this data. This process cannot be undone. If you are unsure, please do an export first. |
-| Permissions | You can choose whether to include permissions for your exported content. The permissions assigned for the exported style book are included if you enable the Export Permissions selector. |
-| Update Data (Import) | You can decide how to handle the updated data once it is applied to existing content. |
-| Authorship of the Content (Import) | You can decide about the authorship of the imported content. |
+| Application | Choose to export your style book’s configuration settings. |
+| Content | Select a date range of content that you want to export. Content added to your style book within your specified date range is included in the LAR file. |
+| Deletions | Choose to export individual deletions. This exports delete operations performed for content types to the LAR file. |
+| Delete Application Data Before Importing (Import) | When checked, all data created by the application is deleted before the import process. Be careful: other applications may reference this data. This process cannot be undone. If you are unsure, do an export first. |
+| Permissions | Choose whether to include permissions for your exported content. The permissions assigned for the exported style book are included if you enable the Export Permissions selector. |
+| Update Data (Import) | Decide how to handle the updated data once it is applied to existing content. |
+| Authorship of the Content (Import) | Decide about the authorship of the imported content. |
 
 ![Configure your export/import process](./exporting-and-importing-style-books/images/03.png)
 

@@ -7,7 +7,7 @@ You can integrate OpenAI's ChatGPT engine with the [Web Content](adding-a-basic-
 
 ## Enabling AI Creator
 
-```important
+```{important}
 ChatGPT Integration for Web Content is currently behind a release feature flag. Read [Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md) for more information.
 ```
 
@@ -21,7 +21,13 @@ You must add an API key to authenticate your access to ChatGPT:
 
 1. Click *Save*.
 
-```note
+1. (Optional) Alternatively, you can add an API key by opening the *Product Menu* ( ![Product Menu icon](../../../images/icon-product-menu.png) ) and selecting *Configuration* &rarr; *Site Settings*. 
+
+    The *AI Creator* option is under *Content and Data*.
+        
+    This way, you can use different keys for each site or disable a key in a specific site.
+
+```{note}
 You can enable or disable the AI Creator button by toggling the Enable OpenAI to Create Content checkbox. If you choose to disable the feature, the button does not appear in the Web Content editor.
 ```
 

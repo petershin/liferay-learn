@@ -3,7 +3,7 @@ uuid: 394bfac1-4f63-4799-bb0e-46e9c988512f
 ---
 # Using the Fragments Editor
 
-Liferay DXP includes a built-in [editor](../reference/fragments/page-fragment-editor-interface-reference.md) for developing Content Page Fragments. To access the editor, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*. From here, you can view, manage, and create Fragments and  Fragment Sets.
+Liferay DXP includes a built-in [editor](../reference/fragments/page-fragment-editor-interface-reference.md) for developing Content Page Fragments. To access the editor, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*. From here, you can view, manage, and create Fragments and Fragment Sets.
 
 * [Creating a Fragment Set](#creating-a-fragment-set)
 * [Creating a New Fragment](#creating-a-new-fragment)
@@ -39,7 +39,7 @@ Once saved, you can add Fragments to the Set.
 ## Creating a New Fragment
 
 ```{important}
-It's not possible to add a React fragment through the Fragments app. You must use the [Fragments Toolkit](./using-the-fragments-toolkit.md) to create one.
+To create a React fragment, use the [Fragments Toolkit](./using-the-fragments-toolkit.md).
 ```
 
 Follow these steps to create a Fragment:

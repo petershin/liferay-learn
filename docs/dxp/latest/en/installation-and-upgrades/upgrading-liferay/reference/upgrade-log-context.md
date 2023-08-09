@@ -83,4 +83,4 @@ If the [upgrade report](./upgrade-report.md) is enabled together with the upgrad
 [Using the Upgrade Database Tool](../upgrade-basics/using-the-database-upgrade-tool.md)
 [Upgrade Report](./upgrade-report.md)
 [Database Upgrade Tool Reference](./database-upgrade-tool-reference.md)
-[Monitoring Upgrades with MBean](./monitoring-upgrades-with-mbean.md)
+[Monitoring Upgrades with MBeans](./monitoring-upgrades-with-mbeans.md)

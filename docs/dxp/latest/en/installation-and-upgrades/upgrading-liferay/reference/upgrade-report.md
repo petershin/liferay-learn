@@ -48,9 +48,13 @@ upgrade.report.enabled=true
 
 The upgrade report is generated in the `{liferay-home}/reports` folder. 
 
+## Additional Information
+
 On subsequent upgrades, the tool appends a time stamp to the file name (e.g., `upgrade_report.info.1631029824000`) and then reports new upgrade details to a new `upgrade_report.info` file.
 
 Note, calculating the document library size may require long wait times. Therefore, the timeout period is set to ten seconds by default. To change this duration, modify the `upgrade.report.dl.storage.size.timeout` property in your `portal-ext.properties` file. Increase the time or set the value to `0` to disable the timeout.
+
+## Sample Upgrade Report
 
 Here is an example upgrade report:
 
@@ -104,6 +108,6 @@ Warnings thrown during upgrade process
 * [Upgrade Basics](../upgrade-basics.md)
 * [Running the Database Upgrade Tool](../upgrade-basics/using-the-database-upgrade-tool.md)
 * [Upgrade Log Context](./upgrade-log-context.md)
-* [Monitoring Upgrades with mBean](./monitoring-upgrades-with-mbean.md)
+* [Monitoring Upgrades with MBeans](./monitoring-upgrades-with-mbeans.md)
 * [Database Upgrade Tool Reference](../reference/database-upgrade-tool-reference.md#manual-configuration)
 * [Troubleshooting Upgrades](../reference/troubleshooting-upgrades.md)

@@ -70,11 +70,9 @@ If you installed the new Liferay release on an application server, create a `[Li
     If you're [upgrading to a new Liferay Docker image](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md), make sure to specify your database connection using [Portal Properties](../../reference/portal-properties.md) files instead of Docker env variables. The [Portal Properties reference](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) lists Portal Properties that correspond with each Liferay Env variable.
     ```
 
-1. (Optional) Enable [upgrade reporting](../reference/upgrade-reports.md) to log the environment, changes, and more to a report.
+2. (Optional) To enable [upgrade reporting](../reference/upgrade-report.md), set `upgrade.report.enabled=true` in your `tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties` file.
 
-    ```bash
-    echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties
-    ```
+3. (Optional) To enable [upgrade log context](../reference/upgrade-log-context.md), set `upgrade.log.context.enabled=true` in your `/tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties` file.
 
 ### Batch Insert Property
 
@@ -146,7 +144,7 @@ Here's how to upgrade your database with the upgrade tool:
 
     After configuration completes, the upgrade starts. The tool logs each upgrade process start and completion.
 
-1. After the upgrade completes, check the [upgrade report](../reference/upgrade-reports.md) for any database upgrade failures, errors, or warnings. You can use [Gogo Shell commands](../upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) to troubleshoot issues and finish the upgrade.
+1. After the upgrade completes, check the [upgrade report](../reference/upgrade-report.md) for any database upgrade failures, errors, or warnings. You can use [Gogo Shell commands](../upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) to troubleshoot issues and finish the upgrade.
 
 You have completed the database upgrade and resolved any issues.
 
@@ -177,7 +175,7 @@ You've upgraded your Liferay database using the Database Upgrade Tool.
 
 If this was a trial upgrade and you want to shorten the upgrade time, tune your database for upgrade (if you haven't already) and [remove unnecessary data](../upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md) from the database. Repeat this article's steps as necessary.
 
-If you run into issues, check the [upgrade report](../reference/upgrade-reports.md) and see [Troubleshooting Upgrades](../reference/troubleshooting-upgrades.md).
+If you run into issues, check the [upgrade report](../reference/upgrade-report.md) and see [Troubleshooting Upgrades](../reference/troubleshooting-upgrades.md).
 
 ## Next Steps
 

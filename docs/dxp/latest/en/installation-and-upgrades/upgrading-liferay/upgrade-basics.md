@@ -140,6 +140,14 @@ Here are two ways to upgrade your Liferay database:
 [Database Upgrade Options](./reference/database-upgrade-options.md) describes upgrading the database in the above ways (and upgrading modules using Gogo Shell) with various DXP/Portal installation types.
 ```
 
+## Additional Tools
+
+See these additional tools to assist you:
+
+* [Upgrade Report](./reference/upgrade-report.md) 
+* [Upgrade Log Context](./reference/upgrade-log-context.md)
+* [Monitoring Upgrades with MBeans](./reference/monitoring-upgrades-with-mbeans.md)
+
 ## Conclusion
 
 Once you complete the tasks outlined above, your upgrade is complete. But before using Liferay, you must re-establish desired runtime settings and undo any upgrade-specific tuning. Plus there may be applications that weren't available on your previous Liferay version that are recommended for new Liferay production instances. See the [Post-Upgrade Considerations](./upgrade-basics/post-upgrade-considerations.md) for more information.

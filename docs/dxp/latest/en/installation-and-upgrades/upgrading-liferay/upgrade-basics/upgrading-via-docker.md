@@ -95,9 +95,11 @@ Here are the steps for upgrading with a Docker image:
 
     The `-v new-version:/mnt/liferay` arguments bind mount the host's `new-version` folder to the container's `/mnt/liferay` folder. Please see [Providing Files to the Container](../../installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md) for more information on the mapping files to the container's Liferay Home.
 
-    The parameter `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` triggers the database upgrade.
+    The parameter `-e LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN=true` triggers the database upgrade to run automatically at startup. 
+    
+    Optionally, the [upgrade report](../reference/upgrade-report.md) can be enabled with the parameter `-e LIFERAY_UPGRADE_PERIOD_REPORT_PERIOD_ENABLED=true` and the [upgrade log context](../reference/upgrade-log-context.md) can be enabled with the parameter `LIFERAY_UPGRADE_PERIOD_LOG_PERIOD_CONTEXT_PERIOD_ENABLED=true`. 
 
-1. In the console or log, confirm successful database upgrade and server startup. Upgrade messages report starting and completing each upgrade process. A message like this one indicates server startup completion:
+2. In the console or log, confirm successful database upgrade and server startup. Upgrade messages report starting and completing each upgrade process. A message like this one indicates server startup completion:
 
     ```bash
     org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds
@@ -105,11 +107,13 @@ Here are the steps for upgrading with a Docker image:
 
     If there are any upgrade failures or errors, they're printed to the console and log. You can use [Gogo Shell commands](../upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) to troubleshoot any issues and finish the upgrade.
 
-1. After you have resolved any failures or errors, examine the [Post Upgrade Considerations](./post-upgrade-considerations.md).
+    Additionally, these upgrades performed at startup can be [monitored with MBeans](../reference/monitoring-upgrades-with-mbeans.md).
 
-1. [Update the Portal properties](../migrating-configurations-and-properties.md#migrating-portal-properties) in your new installation.
+3. After you have resolved any failures or errors, examine the [Post Upgrade Considerations](./post-upgrade-considerations.md).
 
-1. Validate your upgraded database.
+4. [Update the Portal properties](../migrating-configurations-and-properties.md#migrating-portal-properties) in your new installation.
+
+5. Validate your upgraded database.
 
     ![Here is the Liferay landing screen.](./upgrading-via-docker/images/01.png)
 

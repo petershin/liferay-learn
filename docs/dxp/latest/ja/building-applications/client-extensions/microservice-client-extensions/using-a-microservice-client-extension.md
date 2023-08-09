@@ -1,18 +1,18 @@
 # マイクロサービスクライアント拡張機能の使用
 
-マイクロサービスクライアントエクステンションは、Liferayとの通信をOAuth 2に依存するスタンドアロンのサーバープロセスです。 マイクロサービスはリソースサーバーであり、Liferayは認可サーバーである。 詳しくは [Using OAuth 2](../../../headless-delivery/using-oauth2.md) をご覧ください。 このデモのサンプルプロジェクトは、リソースサーバー（マイクロサービス）の保護されたルートからペイロードを取り込み、 [カスタム要素](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) クライアント拡張に基づくフロントエンドウィジェットに表示します。 スタンドアロン [Spring Bootアプリケーション](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started) と連携するために、この例では2つのクライアント拡張タイプが使われている：
+マイクロサービスクライアントエクステンションは、Liferayとの通信をOAuth 2に依存するスタンドアロンのサーバープロセスです。 マイクロサービスはリソースサーバーであり、Liferayは認可サーバーである。 詳しくは [Using OAuth 2](../../../headless-delivery/using-oauth2.md) をご覧ください。 このデモのサンプルプロジェクトは、リソースサーバー（マイクロサービス）の保護されたルートからペイロードを取り込み、 [カスタム要素](../front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) クライアント拡張に基づくフロントエンドウィジェットに表示します。 スタンドアロン [Spring Bootアプリケーション](https://docs.spring.io/spring-boot/docs/current/reference/html/getting-started.html#getting-started)と連携するために、この例では2つのクライアント拡張タイプが使われている：
 
 | デプロイ可能または実行可能なコード                            | 種類                                                                                                                                   | 説明                                                             | ワークスペース・サンプル                 |
 |:-------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------ |:-------------------------------------------------------------- |:---------------------------- |
 | Liferay サンプル OAuth アプリケーションユーザーエージェントをデプロイする | Client extension: [`oAuthApplicationUserAgent`](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) | ログインしたユーザーがカスタムエレメント内のマイクロサービスのペイロードを見ることができるように、認可チャネルを設定します。 | liferay-サンプル-etc-spring-boot |
-| Spring Bootマイクロサービスアプリケーションを実行する             | 保護されたエンドポイント `/dad/joke`                                                                                                             | リソース・サーバーへの保護されたエンドポイント。 JWTトークンを受け取り、ペイロードを返す。                | liferay-サンプル-etc-spring-boot |
-| Liferayサンプルカスタム要素2をデプロイする                    | クライアント・エクステンション: [`customElement`](../front-end-client-extensions/custom-element-yaml-configuration-reference.md)                    | カスタム要素を定義し、OAuth 2 クライアントコードを通してリソースサーバーにペイロードを要求します。          | ライフレイ・サンプル・カスタム要素-2          |
+| Spring Bootマイクロサービスアプリケーションを実行する             | 保護されたエンドポイント `/dad/joke`                                                                                                             | リソース・サーバーへの保護されたエンドポイント。 JWTトークンを受け取り、ペイロードを返す。                | liferay サンプル-etc-spring-boot |
+| Liferayサンプルカスタム要素2をデプロイする                    | クライアント・エクステンション: [`カスタムエレメント`](../front-end-client-extensions/custom-element-yaml-configuration-reference.md)                        | カスタム要素を定義し、OAuth 2 クライアントコードを通してリソースサーバーにペイロードを要求します。          | ライフレイ・サンプル・カスタム要素-2          |
 
 ```{note}
 便宜上、このチュートリアルでは、サンプル・ワークスペースにあるすぐにデプロイできるカスタム要素を使用します。 しかし、ここではカスタム・エレメント・クライアントの拡張が焦点ではない。 認可サーバーを呼び出し、リソースサーバーからのペイロードを表示できるフロントエンド技術であれば、カスタム要素の代わりに使用することができます。
 ```
 
-リソースサーバーは保護ルート `/dad/joke`を持っている。 ログインしたユーザーに代わって、クライアント(つまりウィジェット)は認可サーバー(Liferay)に認可コードを要求する。 トークンが付与されると、クライアントはリソースサーバー（Spring Bootアプリケーション）と通信する。
+リソースサーバーは保護されたルート `/dad/joke`を持っている。 ログインしたユーザーに代わって、クライアント(つまりウィジェット)は認可サーバー(Liferay)に認可コードを要求する。 トークンが付与されると、クライアントはリソースサーバー（Spring Bootアプリケーション）と通信する。
 
 `oAuthApplicationUserAgent` タイプの拡張は、クライアントプロファイルUser Agent Applicationを持つものとして登録される。
 
@@ -23,7 +23,7 @@
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
+   対応するJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)を確認してください。 推奨されるJVM設定については、[JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md)を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -37,6 +37,7 @@
    ```
 
 これでマイクロサービスを起動し、クライアント拡張機能をLiferayにデプロイするためのツールが揃いました。
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
@@ -56,7 +57,7 @@ liferay-sample-etc-spring-boot-oauth-application-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-外部アプリケーション/マイクロサービスは、 [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/) から利用できる `bootJar` コマンドで作成します。 LXCでデプロイするためには、アプリケーションJARをLUFFAに含める必要がある。
+外部アプリケーション/マイクロサービスは、 [Spring Boot Gradle Plugin](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/)から利用できる `bootJar` コマンドで作成します。 LXCでデプロイするためには、アプリケーションJARをLUFFAに含める必要がある。
 
 `client-extension.yaml` の最も重要な部分は `liferay-sample-etc-spring-boot-oauth-application-user-agent` の定義です。 これはLiferayを認可サーバーとしてセットアップし、次にデプロイするフロントエンドクライアントエクステンションがリソースサーバーのセキュアエンドポイントを呼び出し、そのペイロードを表示できるようにします。
 
@@ -105,7 +106,7 @@ liferay-sample-custom-element-2:
 
    さらに、OAuthユーザーエージェントに関するメッセージも記録される。
 
-1. OAuth Application User Agent が Liferay に追加されていることを確認します。 **コントロールパネル** &rarr; **OAuth2 管理** にアクセスする。
+1. OAuth Application User Agent が Liferay に追加されていることを確認します。 _コントロールパネル_ &rarr; _OAuth2 管理_ にアクセスする。
 
    ![Liferay Sample OAuth Application User Agent は、クライアントエクステンションをデプロイするときに追加されます。](./using-a-microservice-client-extension/images/01.png)
 
@@ -165,7 +166,7 @@ try {
 }
 ```
 
-この呼び出しはクライアントにトークンを提供する。このトークンは、リソースサーバーの `/dad/joke` ルートからリソースをリクエストするときに、クライアントがベアラートークンとして使用できる。 この情報はOAuth 2アプリケーションにカプセル化されているので、クライアントコードはリクエストするサーバーの場所を気にする必要はない。 セルフホスト環境では、OAuthアプリケーションのユーザーエージェントの `client-extension.yaml` プロパティで、 `.serviceAddress` と `.serviceScheme`として宣言されます。 LXC環境では、リソースサーバーはLiferayによって制御されるので、その場所を宣言する必要はありません。 これにより、クライアントとリソース・サーバーの通信のための認可コード・フローが設定されるので、あとはクライアントがリソース・サーバーのエンドポイントを呼び出すだけです。 `DadJoke.js` このように `/dad/joke` ルートからフェッチする：
+この呼び出しはクライアントにトークンを提供する。このトークンは、リソースサーバーの `/dad/joke` ルートからリソースをリクエストするときに、クライアントがベアラートークンとして使用できる。 この情報はOAuth 2アプリケーションにカプセル化されているので、クライアントコードはリクエストするサーバーの場所を気にする必要はない。 セルフホスト環境では、OAuthアプリケーションのユーザーエージェントの `client-extension.yaml` プロパティで、 `.serviceAddress` と `.serviceScheme`として宣言されます。 LXC環境では、リソースサーバーはLiferayによって制御されるので、その場所を宣言する必要はありません。 これにより、クライアントとリソース・サーバーの通信のための認可コード・フローが設定されるので、あとはクライアントがリソース・サーバーのエンドポイントを呼び出すだけです。 `DadJoke.js` `/dad/joke` ルートからこのようにフェッチする：
 
 ```js
 React.useEffect(() => {

@@ -22,7 +22,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 1. サンプルの JavaScript プロジェクトの ZIP ファイルをダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-x2y6.zip -O
     ```
 
     ```bash
@@ -111,13 +111,12 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 ジェネレータは、プロジェクト名から派生したフォルダに各プロジェクトを作成します。 この例では、プロジェクト名を `Sample Liferay Fragments` としたので、ジェネレータは `sample-liferay-fragments`というプロジェクト フォルダを作成します。
 
 ## サンプルのフラグメントセットをインポートする
-
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順でサンプルのFragment SetをLiferayにインポートしてください：
+Then, follow these steps to import the sample Fragment Set to Liferay:
 
-1. プロジェクトのルートフォルダ（例：`sample-liferay-fragments`）で `yarn run import` コマンドを実行し、Fragment SetをLiferayのインスタンスにインポートします。あるいは、[フラグメントセットを手動でインポートする](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) こともできます。
+1. Import the Fragment Set to your Liferay instance invoking the `yarn run import` command in the project's root folder (e.g., `sample-liferay-fragments`). Alternatively, you can [import the Fragment Set manually](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
 
     ```bash
     cd sample-liferay-fragments
@@ -147,7 +146,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
     Done in 21.43s.
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
 
     ![セットが利用可能です。](./using-the-fragments-toolkit/images/01.png)
 
@@ -180,26 +179,26 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 
     * `configuration.json`(オプション): フラグメントの構成を定義する JSON ファイル。 詳細は、[フラグメントへの構成オプションの追加](./adding-configuration-options-to-fragments.md)を参照してください。
 
-    * `fragment.json`: フラグメントを説明するJSONファイル。 詳しくは [Fragment.json の修正](#modifying-fragmentjson) をご覧ください。
+    * `fragment.json`: フラグメントを説明するJSONファイル。 詳しくは [fragment.jsonの修正](#modifying-fragmentjson) を参照。
 
 * `resources/` (オプション): フラグメントが必要とする追加の画像またはファイルを含むフォルダ。 詳細は、[フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md)を参照してください。
 
-フラグメントツールキットを使えば、この構造で素早くプロジェクトを作成することができます。
+フラグメント・ツールキットを使えば、この構造で素早くプロジェクトを作成できる。
 
-### fragment.jsonを修正する
+### fragment.jsonの修正
 
-`fragment.json` フラグメントの属性が含まれており、フラグメントの機能性や使い勝手を向上させるために変更することができます。
+`fragment.json` には、フラグメントの機能と使いやすさを向上させるために変更できるフラグメントの属性が含まれています。
 
-| キー                     | Description                                                                                                   |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| `cssPath`              | .css, .scss, .sass ファイルを指定します。                                                                                |
-| `configurationPath`    | フラグメントの設定ソースを指定します。                                                                                           |
-| `htmlPath`             | フラグメントのHTMLソースを指定する。                                                                                          |
-| `jsPath`               | フラグメントのJavaScriptソースを指定します。                                                                                   |
-| `name`                 | フラグメントの名前です。                                                                                                  |
-| `type`                 | コンポーネントまたはReactフラグメントを指定します。                                                                                  |
-| `icon`                 | インポートしたフラグメントに粘土のアイコンを追加する。 利用可能なアイコンは、 [クレイアイコンリスト](https://clayui.com/docs/components/icon.html) を参照してください。 |
-| `sass {loadPaths:[]}}` | 外部依存関係を指定する。                                                                                                  |
+| キー                     | Description                                                                                                       |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| `cssPath`              | .css、.scss、または .sass ファイルを指定します。                                                                                  |
+| `configurationPath`    | フラグメントの設定ソースを指定します。                                                                                               |
+| `htmlPath`             | フラグメントの HTML ソースを指定します。                                                                                           |
+| `jsPath`               | フラグメントの JavaScript ソースを指定します。                                                                                     |
+| `name`                 | フラグメントの名前。                                                                                                        |
+| `type`                 | コンポーネントまたはReactフラグメントを指定します。                                                                                      |
+| `icon`                 | インポートしたフラグメントに粘土のアイコンを追加する。 利用可能なアイコンについては、 [クレイアイコンリスト](https://clayui.com/docs/components/icon.html) を参照してください。 |
+| `sass {loadPaths:[]}}` | 外部の依存関係を指定する。                                                                                                     |
 
  ```json
         {
@@ -327,7 +326,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 
 
 
-たとえば、上記の HTML から構築し、 [Clay](https://clayui.com/) の [Bootstrap](https://getbootstrap.com/) ベースのコンポーネントを使用して、次の `index.html` に示すように、注目を集める見出しと説明を持つフラグメントを作成できます。
+たとえば、上記の HTML から構築し、[Clay](https://clayui.com/) の [Bootstrap](https://getbootstrap.com/) ベースのコンポーネントを使用して、次の `index.html` に示すように、注目を集める見出しと説明を持つフラグメントを作成できます。
 
 ```html
 <div class="component-my-jumbotron">
@@ -386,7 +385,7 @@ Liferay 7.2以下を使用している場合は、[フラグメント固有の�
 * `<hr/>` 要素と次の `<p ...` 要素は、それぞれ水平方向の罫線と別の編集可能な段落を生成します。
 * `<a class="btn btn-primary btn-lg" ...` は変更可能なリンクを指定します。 `btn-primary` クラスはそれをメイン ボタンとしてスタイル設定し、`btn-lg` はそれを拡大します。 `href="#"` 属性は、リンクをクリックしたときにユーザーをページの上部に移動します。 `data-lfr-editable-type="link"` 属性は、リンクを[編集可能](../reference/fragments/fragment-specific-tags-reference.md)にします。
 
-フラグメントにリソースを含めることもできます。 詳細は、 [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md) を参照してください。
+フラグメントにリソースを含めることもできます。 詳細は、[Including Default Resources in Fragments](./including-default-resources-with-fragments.md)を参照してください。
 
 ```{note}
 フラグメントと設定オブジェクトは JavaScript の引数として渡され、それぞれ `fragmentElement` と `configuration`パラメーターとして利用できます。
@@ -402,11 +401,11 @@ Liferay 7.2以下を使用している場合は、[フラグメント固有の�
     yarn run import
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
 
 ![セットが利用可能です。](./using-the-fragments-toolkit/images/03.png)
 
-これで、フラグメント ツールキットを使用してフラグメントを作成および管理する方法がわかりました。 ツールキット コマンドの詳細は、 [フラグメントツールキットコマンドリファレンス](../reference/fragments/fragments-toolkit-command-reference.md) を参照してください。
+これで、フラグメント ツールキットを使用してフラグメントを作成および管理する方法がわかりました。 ツールキット コマンドの詳細は、[Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md) を参照してください。
 
 ## 関連情報
 

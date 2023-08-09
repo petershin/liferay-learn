@@ -7,7 +7,7 @@
 サンプルプロジェクトをダウンロードして解凍します。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-y7g4.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-y7g4.zip -O
 ```
 
 ```bash
@@ -117,7 +117,7 @@ y7g4-service
 | `name` | インスタンスの名前（文字列）です。 |
 | `description` | インスタンスの説明 (文字列) です。 |
 
-`service.xml` 要素の詳細については、 [Liferayサービスビルダー DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html) を参照してください。
+`service.xml` 要素の詳細については、[Liferayサービスビルダー DTD](https://learn.liferay.com/reference/latest/en/dxp/definitions/liferay-service-builder_7_4_0.dtd.html)を参照してください。
 
 ## 永続化コードの生成
 
@@ -199,7 +199,7 @@ liferay-y7g4
             └── service.properties // Tracks the service build version
 ```
 
-モデル、永続性、およびサービス実装クラスは、Javaパッケージパス`com.acme.y7g4`に対して生成されました。 クラスについては、[生成されたクラスの理解と拡張](./understanding-service-builder-generated-classes.md)をご覧ください。
+モデル、永続性、およびサービス実装クラスは、Javaパッケージパス`com.acme.y7g4`に対して生成されました。 クラスについては、[Understanding Service Builder Generated Classes](./understanding-service-builder-generated-classes.md)をご覧ください。
 
 SQLスクリプトと永続性構成が`resources/META-INF`フォルダに生成されました。
 
@@ -221,7 +221,7 @@ SQLスクリプトと永続性構成が`resources/META-INF`フォルダに生成
 </hibernate-mapping>
 ```
 
-`module-hbm.xml`ファイルは、`Y7G4EntryImpl`オブジェクトを`Y7G4_Y7G4Entry`テーブルにマップします。 Hibernateでのマッピングの詳細については、 [Hibernate](https://hibernate.org) をご覧ください。
+`module-hbm.xml`ファイルは、`Y7G4EntryImpl`オブジェクトを`Y7G4_Y7G4Entry`テーブルにマップします。 Hibernateでのマッピングの詳細については、[Hibernate](https://hibernate.org)をご覧ください。
 
 `tables.sql`スクリプトは、`Y7G4_Y7G4Entry`テーブルを指定します。
 
@@ -272,7 +272,7 @@ create table Y7G4_Y7G4Entry (
 1. デフォルトのネットワーク（`bridge`）でDockerの`network inspect`](https://docs.docker.com/engine/reference/commandline/network_inspect/)コマンドを呼び出して、MariaDBコンテナのIPアドレスを取得します。
 
     ```bash
-    Dockerネットワークはブリッジを実行します。
+    docker network inspect bridge
     ```
 
 出力例：
@@ -392,11 +392,11 @@ STARTED com.acme.y7g4.api_1.0.0 [1422]
 
 1. デフォルトの認証情報を使用してサインインします。
 
-    **ユーザー名** : `test@liferay.com`
+    **ユーザー名**: `test@liferay.com`
 
     **パスワード：** `test`
 
-1. ［**コントロールパネル**］ &rarr; ［**サーバ管理**］ &rarr; ［**スクリプト**］ でスクリプトコンソールに移動します。
+1. *［コントロールパネル］* &rarr; *［サーバ管理］* &rarr; *［スクリプト］*でスクリプトコンソールに移動します。
 
 1. 次のスクリプトを実行して、エントリーを追加します。
 

@@ -1,6 +1,6 @@
 # 完全なカスタム構成
 
-[構成インターフェースを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface) すると、構成UIが自動的に生成されます。 ただし、構成に完全にカスタムのUIが必要な場合もあります。 たとえば、Liferayの構成管理を使用する代わりに、プログラムで構成を処理するよう計画している場合などです。 または、完全にカスタムのUIを作成する柔軟性が必要な場合もあります。 その方法は以下の通りです。
+[構成インターフェースを作成](./setting-and-accessing-configurations.md#creating-the-configuration-interface)すると、構成UIが自動的に生成されます。 ただし、構成に完全にカスタムのUIが必要な場合もあります。 たとえば、Liferayの構成管理を使用する代わりに、プログラムで構成を処理するよう計画している場合などです。 または、完全にカスタムのUIを作成する柔軟性が必要な場合もあります。 その方法は以下の通りです。
 
 ## サンプルプロジェクトを参照する
 
@@ -9,10 +9,10 @@
 
 次に、以下の手順を実行します。
 
-1. [完全カスタム設定](./liferay-u2g5.zip)  をダウンロードし、解凍してください。
+1. [完全カスタム構成](./liferay-u2g5.zip)をダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
     ```
 
     ```bash
@@ -37,7 +37,7 @@
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
-1. ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**System Settings**］ &rarr; ［**Third Party**］ に移動します。 ［**U2G5 Configuration**］ をクリックします。
+1. *［コントロールパネル］* &rarr; *［設定］* &rarr; *［System Settings］* &rarr; *［Third Party］*に移動します。 *［U2G5 Configuration］*をクリックします。
 
    ![システム設定でU2G5構成に移動します。](./completely-custom-configuration/images/01.png)
 
@@ -55,7 +55,7 @@
 `@ExtendedObjectClassDefinition`アノテーションでは、`generateUI`が`false`に設定されていることに注意してください。 これにより、構成UIが自動生成されなくなります。
 
 ```{note}
-DXP 7.4 U51 または Portal 7.4 GA51 より前の Liferay バージョンでは、`ConfigurationBeanDeclaration` が必要です。 [ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeanandeclaration-with-previous-versions-of-liferay) を参照してください。
+DXP 7.4 U51またはPortal 7.4 GA51より前のLiferayバージョンでは、`ConfigurationBeanDeclaration`が必須です。 [Liferayの以前のバージョンでのConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanandeclaration-with-previous-versions-of-liferay)を参照してください。
 ```
 
 ## 設定画面を実装する
@@ -104,7 +104,7 @@ DXP 7.4 U51 または Portal 7.4 GA51 より前の Liferay バージョンでは
 
 ## カスタムJSPを作成する
 
-1. 構成インターフェイスをJSPにインポートします。
+1. 構成インターフェースをJSPにインポートします。
 
     ```markup
     <%@ page import="com.acme.u2g5.web.internal.configuration.U2G5WebConfiguration" %>

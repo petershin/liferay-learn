@@ -1,35 +1,35 @@
-# ピックリストAPIの基本
+# 候補リストAPIの基本
 
-Liferay は、ピックリストの定義 (`ListTypeDefinition`) とそのエントリ (`ListTypeEntry`) を作成・管理するための [`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) REST APIs を提供します。 Liferay の API Explorer の `[server]:[port]/o/api` (例: `localhost:8080/o/api`) の REST Services メニューで、利用できる API を表示したりテストしたりできます。
+Liferayは、候補リストの定義 (`ListTypeDefinition`)とそのエントリー(`ListTypeEntry`)を作成・管理するための[`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) REST APIを提供します。 RESTサービスメニューの`[server]:[port]/o/api` (例: `localhost:8080/o/api`)にあるLiferayのAPIエクスプローラーで利用できるAPIを表示し、テストすることができます。
 
-![headless-admin-list-typeでpicklistのAPIにアクセスする。](./picklists-api-basics/images/01.png)
+![headless-admin-list-typeで候補リストのAPIにアクセスします。](./picklists-api-basics/images/01.png)
 
-[`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) サービスを呼び出して、ピックリストを作成・管理します。
+[`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json)サービスを呼び出して、候補リストを作成・管理します。
 
-## ピックリストを追加する
+## 候補リストを追加する
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、サンプルコードを用意します：
+次にサンプルコードを用意する：
 
-1. [Picklists API Basics](./liferay-v3n6.zip) をダウンロードし、解凍してください。
+1. [Picklists API Basics](./liferay-v3n6.zip)をダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/picklists/liferay-v3n6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/picklists/liferay-v3n6.zip -O
    ```
 
    ```bash
    unzip liferay-v3n6.zip
    ```
 
-1. cURLスクリプトを使用して、新しいピックリストをインスタンスに追加します。 コマンドラインで、 `curl`フォルダに移動します。 `ListTypeDefinition_POST_ToInstance.sh` スクリプトを実行します。
+1. cURLスクリプトを使用して、新しい候補リストをインスタンスに追加します。 コマンドラインで、 `curl`フォルダに移動します。 `ListTypeDefinition_POST_ToInstance.sh`スクリプトを実行します。
 
    ```bash
    ./ListTypeDefinition_POST_ToInstance.sh
    ```
 
-   JSONレスポンスには、新しいピックリストが追加されたことが示されています：
+   JSONのレスポンスには、新しい候補リストが追加されたことが示されています。
 
    ```json
    "dateCreated" : "2022-11-17T18:42:13Z",
@@ -42,9 +42,9 @@ Liferay は、ピックリストの定義 (`ListTypeDefinition`) とそのエン
    }
    ```
 
-1. **Global Menu** &rarr; **Control Panel** &rarr; **Picklists** に移動します。 新しいピックリストが表示されます。
+1. *［グローバルメニュー］* &rarr; *［コントロールパネル］* &rarr; *［Picklists］*に移動します。 新しい候補リストが表示されます。
 
-   ![新しいピックリストが追加されたことを確認してください。](./picklists-api-basics/images/02.png)
+   ![新しい候補リストが追加されたことを確認します。](./picklists-api-basics/images/02.png)
 
 1. または、Javaクライアントを使用してRESTサービスを呼び出すことができます。 `java`フォルダに移動し、ソースファイルをコンパイルします。
 
@@ -52,7 +52,7 @@ Liferay は、ピックリストの定義 (`ListTypeDefinition`) とそのエン
    javac -classpath .:* *.java
    ```
 
-1. `ListTypeDefinition_POST_ToInstance.java` クラスを実行します：
+1. `ListTypeDefinition_POST_ToInstance.java`クラスを実行します。
 
    ```bash
    java -classpath .:* ListTypeDefinition_POST_ToInstance
@@ -60,7 +60,7 @@ Liferay は、ピックリストの定義 (`ListTypeDefinition`) とそのエン
 
 ## cURLコマンドの検証
 
-`ListTypeDefinition_POST_ToInstance.sh` スクリプトは、cURL を使用して REST サービスを呼び出します。
+`ListTypeDefinition_POST_ToInstance.sh` スクリプトは、cURLでRESTサービスを呼び出します。
 
 ```{literalinclude} ./picklists-api-basics/resources/liferay-v3n6.zip/curl/ListTypeDefinition_POST_ToInstance.sh
    :language: bash
@@ -84,7 +84,7 @@ Liferay は、ピックリストの定義 (`ListTypeDefinition`) とそのエン
 
 ## Javaクラスを調べる
 
-`ListTypeDefinition_POST_ToInstance.java` クラスは、 `ListType`関連サービスを呼び出してピックリストを追加します。
+`ListTypeDefinition_POST_ToInstance.java`クラスは、`ListType`関連サービスを呼び出して候補リストを追加します。
 
 ```{literalinclude} ./picklists-api-basics/resources/liferay-v3n6.zip/java/ListTypeDefinition_POST_ToInstance.java
    :dedent: 1
@@ -92,21 +92,21 @@ Liferay は、ピックリストの定義 (`ListTypeDefinition`) とそのエン
    :lines: 11-30
 ```
 
-このクラスは、3行のコードでRESTサービスを呼び出します：
+このクラスは、3行のコードでRESTサービスを呼び出します。
 
-| 行(省略形）                                                                                                    | 説明                                                                           |
-|:--------------------------------------------------------------------------------------------------------- |:---------------------------------------------------------------------------- |
-| `ListTypeDefinitionResource.Builder builder = ...`                                                        | `Builder` `ListTypeDefinitionResource` サービスインスタンスを生成するためのビルダーを取得する。          |
-| `ListTypeDefinitionResource listTypeDefinitionResource = builder.authentication(...).build();`            | 基本認証を指定し、 `ListTypeDefinitionResource` サービスインスタンスを生成します。                     |
-| `ListTypeDefinition listTypeDefinitionResource = listTypeDefinitionResource.postListTypeDefinition(...);` | `listTypeDefinitionResource.postListTypeDefinition` メソッドを呼び出し、postにデータを渡します。 |
+| 行（省略形）                                                                                                    | 説明                                                                         |
+|:--------------------------------------------------------------------------------------------------------- |:-------------------------------------------------------------------------- |
+| `ListTypeDefinitionResource.Builder builder = ...`                                                        | `ListTypeDefinitionResource`サービスインスタンスを生成するための`Builder`を取得します。             |
+| `ListTypeDefinitionResource listTypeDefinitionResource = builder.authentication(...).build();`            | 基本認証を指定し、`ListTypeDefinitionResource`サービスインスタンスを生成します。                     |
+| `ListTypeDefinition listTypeDefinitionResource = listTypeDefinitionResource.postListTypeDefinition(...);` | `listTypeDefinitionResource.postListTypeDefinition`メソッドを呼び出し、投稿するデータを渡します。 |
 
-プロジェクトには、依存関係として`com.liferay.headless.admin.list.type.client`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存情報は、インストールのAPIエクスプローラで、 `/o/api` (例: <http://localhost:8080/o/api>)から確認できます。
+プロジェクトには、依存関係として`com.liferay.headless.admin.list.type.client`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存情報は、インストール先のAPIエクスプローラーで、`/o/api` (例: <http://localhost:8080/o/api>)から確認できます。
 
 ```{note}
 `main`メソッドのコメントでは、クラスの実行を実演しています。
 ```
 
-他のJavaクラスも同様に、異なる `ListTypeDefinitionResource` メソッドを呼び出します。
+他のJavaクラスも同様に、異なる`ListTypeDefinitionResource`メソッドを呼び出します。
 
 ```{important}
 サービスの詳細は [ListTypeDefinitionResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-list-type-client/src/main/java/com/liferay/headless/admin/list/type/client/resource/v1_0/ListTypeDefinitionResource.java) を参照ください。
@@ -114,9 +114,9 @@ Liferay は、ピックリストの定義 (`ListTypeDefinition`) とそのエン
 
 以下は、cURLとJavaを使用して、他の `ListTypeDefinition` RESTサービスを呼び出す例です。
 
-## インスタンスからピックリストを取得する
+## インスタンスから候補リストを取得する
 
-以下のcURLまたはJavaコマンドを実行することで、ピックリストの一覧を表示することができます。
+以下のcURLまたはJavaコマンドを実行することで、候補リストの一覧を表示することができます。
 
 ### ListTypeDefinitions_GET_FromInstance.sh
 
@@ -148,14 +148,14 @@ java -classpath .:* ListTypeDefinitions_GET_FromInstance
    :lines: 11-25
 ```
 
-インスタンスの `ピックリスト` オブジェクトがJSONで表示されます。
+インスタンスの`Picklist`オブジェクトがJSONで表示されます。
 
-## ピックリストを取得する
+## 候補リストを取得する
 
-以下のcURLまたはJavaコマンドで、特定のピックリストを取得します。
+以下のcURLまたはJavaコマンドで、特定の候補リストを取得します。
 
 ```{tip}
-`ListTypeDefinitions_GET_FromInstance.[java|sh]` を使用して、インスタンス ``Picklist`` のIDを取得します。
+インスタンスの``Picklist`` IDを取得するには、``ListTypeDefinitions_GET_FromInstance.[java|sh]``を使用します。
 ```
 
 ### ListTypeDefinition_GET_ById.sh
@@ -188,11 +188,11 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_GET_ById
    :lines: 8-20
 ```
 
-`ピックリスト` のフィールドがJSONで表示されます。
+`Picklist`フィールドはJSONで表示されます。
 
-## ピックリストのパッチ
+## 候補リストへのパッチ
 
-cURLとJavaパッチコマンドで、既存のピックリストを編集することができます。 `1234` をピックリストのIDに置き換えてください。
+cURLとJavaパッチコマンドで、既存の候補リストを編集します。 `1234`を候補リストのIDに置き換えます。
 
 ### ListTypeDefinition_PATCH_ById.sh
 
@@ -224,9 +224,9 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_PATCH_ById
    :lines: 11-31
 ```
 
-## ピックリストを置く
+## 候補リストを配置する
 
-cURLとJavaの `put` コマンドで、既存のピックリストを完全に上書きする。 `1234` をピックリストのIDに置き換えてください。
+cURLとJavaの `put` コマンドで、既存の候補リストを完全に上書きします。 `1234`を候補リストのIDに置き換えます。
 
 ### ListTypeDefinition_PUT_ById.sh
 
@@ -258,9 +258,9 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_PUT_ById
    :lines: 11-31
 ```
 
-## 選択リストを削除します
+## 候補リストを削除する
 
-cURLとJavaの `delete` コマンドで既存のピックリストを削除することができます。 `1234` をピックリストのIDに置き換えてください。
+cURLとJavaの `delete` コマンドで既存の候補リストを削除します。 `1234`を候補リストのIDに置き換えます。
 
 ### ListTypeDefinition_DELETE_ById.sh
 
@@ -292,21 +292,21 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_DELETE_ById
    :lines: 8-19
 ```
 
-## ピックリストエントリーサービス
+## 候補リストエントリサービス
 
-ピックリストを作成したら、以下のサービスを利用して、ピックリストのエントリーを作成・管理します。 `ListTypeEntry` の cURL コマンドと Java クラスは `ListTypeDefinition`のように動作します。 サービスによっては、ピックリストIDを渡す必要があります。
+候補リストを作成したら、以下のサービスを利用して、候補リストのエントリーを作成・管理します。 `ListTypeEntry`のcURLコマンドとJavaクラスは`ListTypeDefinition`のように機能します。 サービスによっては、候補リストIDを渡す必要があります。
 
-| ファイル                                                     | 説明                             |
-|:-------------------------------------------------------- |:------------------------------ |
-| `ListTypeEntries_GET_FromListTypeDefinition.[java\|sh]` | ピックリストから、ピックリストエントリーのリストを取得する。 |
-| `ListTypeEntry_DELETE_ById.[java\|sh]`                  | ピックリストエントリーを削除する。              |
-| `ListTypeEntry_GET_ById[java\|sh]`                      | IDで特定のピックリストエントリーを取得する。        |
-| `ListTypeEntry_POST_ToListTypeDefinition.[java\|sh]`    | ピックリストにエントリーを投稿する。             |
-| `ListTypeEntry_PUT_ById.[java\|sh]`                     | ピックリストエントリーを置く。                |
+| ファイル                                                     | 説明                          |
+|:-------------------------------------------------------- |:--------------------------- |
+| `ListTypeEntries_GET_FromListTypeDefinition.[java\|sh]` | 候補リストから候補リストエントリーの一覧を取得します。 |
+| `ListTypeEntry_DELETE_ById.[java\|sh]`                  | 候補リストエントリーを削除します。           |
+| `ListTypeEntry_GET_ById[java\|sh]`                      | IDで特定の候補リストエントリーを取得します。     |
+| `ListTypeEntry_POST_ToListTypeDefinition.[java\|sh]`    | 候補リストにエントリーを投稿します。          |
+| `ListTypeEntry_PUT_ById.[java\|sh]`                     | 候補リストエントリーを配置します。           |
 
-[API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) では、 `ListTypeDefinition` と `ListTypeEntry` のすべてのサービスとスキーマを表示し、各サービスをテストするインターフェイスを備えています。
+[APIエクスプローラー](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`ListTypeDefinition`と`ListTypeEntry`のすべてのサービスとスキーマが表示され、各サービスをテストするインターフェースがあります。
 
 ## 関連トピック
 
-* [選択リストの使用](./using-picklists.md)
-* [ピックリストのエクスポートとインポート](./exporting-and-importing-picklists.md)
+* [候補リストの使用](./using-picklists.md)
+* [候補リストのエクスポートとインポート](./exporting-and-importing-picklists.md)

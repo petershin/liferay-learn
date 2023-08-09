@@ -7,19 +7,19 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-その後、以下の手順で進めてください：
+次に、以下の手順を実行します。
 
-1. [Knowledge Base API Basics](./liferay-t3x7.zip) をダウンロードし、解凍してください。
+1. [Knowledge Base API Basics](./liferay-t3x7.zip)をダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/collaboration-and-social/knowledge-base/developer-guide/liferay-t3x7.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/knowledge-base/developer-guide/liferay-t3x7.zip -O
    ```
 
    ```bash
    unzip liferay-t3x7.zip
    ```
 
-1. ログインすると、 [サイトのIDを取得します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 このIDは、いくつかのサービス呼び出しで使用します。
+1. ログインすると、[サイトのIDを取得します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 このIDは、いくつかのサービス呼び出しで使用します。
 
 1. cURLスクリプトを使用して、サイトに新しいナレッジベースの記事を追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`KnowledgeBaseArticle_POST_ToSite.sh`スクリプトを実行します。 例えば、
 
@@ -60,7 +60,7 @@
    }
    ```
 
-1. **メニュー** アイコン(![Menu icon](../../../images/icon-menu.png)）をクリックし、 ［**コンテンツとデータ**］ &rarr; ［**ナレッジベース**］ に移動します。 新しいナレッジベースの記事が追加されたことを確認します。
+1. *メニュー*アイコン（![Menu icon](../../../images/icon-menu.png)）をクリックし、*［コンテンツとデータ］* &rarr; *［ナレッジベース］*に移動します。 新しいナレッジベースの記事が追加されたことを確認します。
 
    ![新しいナレッジベースの記事が追加されたことを確認します。](./knowledge-base-api-basics/images/01.png)
 
@@ -114,7 +114,7 @@
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行(省略形）                                                                                                        | 説明                                                                                |
+| 行（省略形）                                                                                                        | 説明                                                                                |
 |:------------------------------------------------------------------------------------------------------------- |:--------------------------------------------------------------------------------- |
 | `KnowledgeBaseArticleResource.Builder builder = ...`                                                          | `Builder`を取得し、`KnowledgeBaseArticleResource`サービスインスタンスを生成します。                     |
 | `KnowledgeBaseArticleGroupResource knowledgeBaseArticleGroupResource = builder.authentication(...).build();`  | 基本認証を指定し、`KnowledgeBaseArticleResource`</0>サービスインスタンスを生成します。                      |
@@ -129,7 +129,7 @@
 他の例のJavaクラスはこれと類似していますが、異なる`KnowledgeBaseArticle`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、 [KnowledgeBaseArticleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java) を参照してください。
+サービスの詳細は、[KnowledgeBaseArticleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/KnowledgeBaseArticleResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`KnowledgeBaseArticle`RESTサービスを呼び出す例です。

@@ -9,19 +9,19 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-その後、以下の手順で操作してください：
+次に、以下の手順を実行します。
 
-1. [Blog API Basics](./liferay-r3g4.zip) をダウンロードし、解凍する。
+1. [Blog API Basics](./liferay-r3g4.zip)をダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/developer-guide/liferay-r3g4.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/developer-guide/liferay-r3g4.zip -O
    ```
 
    ```bash
    unzip liferay-r3g4.zip
    ```
 
-1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
+1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 1. cURLスクリプトを使用して、サイトに新しいブログ投稿を追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`BlogPosting_POST_ToSite.sh`スクリプトを実行します。
 
@@ -60,7 +60,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
     }
     ```
 
-1. ［**Administration Menu**］ &rarr; ［**Content & Data**］ &rarr; ［**ブログ**］ に移動して、ブログアプリケーションに移動します。 新しいブログ投稿が追加されたことを確認してください。
+1. *［Administration Menu］* &rarr; *［Content & Data］* &rarr; *［ブログ］*に移動して、ブログアプリケーションに移動します。 新しいブログ投稿が追加されたことを確認してください。
 
     ![新しいブログ投稿が追加されたことを確認してください。](./blog-api-basics/images/01.png)
 
@@ -112,7 +112,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行(省略形）                                                                           | 説明                                                              |
+| 行（省略形）                                                                           | 説明                                                              |
 |:-------------------------------------------------------------------------------- |:--------------------------------------------------------------- |
 | `BlogPostingResource.Builder builder = ...`                                      | `Builder`を取得し、`BlogPostingResource`サービスインスタンスを生成します。            |
 | `BlogPostingResource blogPostingResource = builder.authentication(...).build();` | 基本認証を指定し、`BlogPostingResource`サービスインスタンスを生成します。                 |
@@ -127,7 +127,7 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 他の例のJavaクラスはこれと類似していますが、異なる`BlogPostingResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、 [BlogPostingResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/BlogPostingResource.java) を参照してください。
+サービスの詳細は、[BlogPostingResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/BlogPostingResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`BlogPosting` RESTサービスを呼び出す例です。
@@ -138,13 +138,13 @@ LiferayのREST APIは、ブログの投稿や画像を追加、変更、削除�
 
 ### BlogPostings_GET_FromSite.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./BlogPostings_GET_FromSite.sh 1234
 ```
 
-コード:
+コード：
 
 ```{literalinclude} ./blog-api-basics/resources/liferay-r3g4.zip/curl/BlogPostings_GET_FromSite.sh
    :language: bash

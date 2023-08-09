@@ -1,78 +1,78 @@
 # サイトテンプレートのエクスポート/インポート
 
-サイトテンプレートをエクスポート、インポートして、Liferayのインストール間で共有することができます。
+サイトテンプレートをエクスポート、インポートして、Liferayインストール間で共有することができます。
 
-## 個別サイトテンプレートの書き出し
+## 個別サイトテンプレートのエクスポート
 
-以下の手順で、サイトテンプレートをエクスポートします。
+サイトテンプレートをエクスポートするには、以下の手順に従ってください：
 
-1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** を開き、 **サイトテンプレート** をクリックします。
+1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *［コントロールパネル］*に移動し、*［サイトテンプレート］*をクリックします。
 
-1. エクスポートする［サイトテンプレート］をクリックします。
+1. エクスポートしたいサイトテンプレートをクリックします。
 
-1. **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 **パブリッシング** を展開し、 **エクスポート** をクリックします。
+1. *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)) を開き、 *Publishing*を展開し、 *Export*をクリックします。
 
-1. **Add** ボタン (![Add Button](../../../images/icon-add.png)) をクリックして、新しいエクスポートプロセスを作成します。
+1. *Add* (![Add Button](../../../images/icon-add.png)) をクリックして、新しいエクスポート・プロセスを作成します。
 
-   エクスポートテンプレートを開きます。
+   エクスポートテンプレートが開きます。
 
-   ![テンプレートのエクスポート処理に名前を付けて設定する。](./exporting-importing-site-templates/images/01.png)
+   ![テンプレートのエクスポートプロセスに名前を付けて設定します。](./exporting-importing-site-templates/images/01.png)
 
 1. エクスポートプロセスのタイトルを入力します。
 
-1. エクスポートしたいテンプレートPagesとコンテンツを選択し、エクスポートプロセスを設定します。
+1. エクスポートしたいテンプレートページとコンテンツを選択して、エクスポートプロセスを設定します。
 
-1. **Export** をクリックし、エクスポート処理を開始します。
+1. *［Export］*をクリックし、エクスポートプロセスを開始します。
 
-終了後、 **Download** ボタン (![Download Button](../../../images/icon-download.png)) をクリックし、生成された LAR ファイルをダウンロードします。
+終了後、*ダウンロード*ボタン (![Download Button](../../../images/icon-download.png))をクリックし、生成されたLARファイルをダウンロードします。
 
 ![生成されたLARファイルをダウンロードします。](./exporting-importing-site-templates/images/02.png)
 
 ## 個別サイトテンプレートのインポート
 
-以下の手順で、サイトテンプレートをインポートします。
+以下の手順に従って、サイトテンプレートをインポートしてください：
 
-1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** を開き、 **サイトテンプレート** をクリックします。
+1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *［コントロールパネル］*に移動し、*［サイトテンプレート］*をクリックします。
 
-1. [作成](./creating-site-templates.md) サイトテンプレートを作成します。
+1. [](./creating-site-templates.md) サイトテンプレートを作成する。
 
-1. 新しい［サイトテンプレート］をクリックします。
+1. 新しいサイトテンプレートをクリックします。
 
-1. **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 **出版** を展開し、 **輸入** をクリックします。
+1. *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)) を開き、 *Publishing*を展開し、 *Import*をクリックします。
 
-1. **Add** ボタン（![Add Button](../../../images/icon-add.png)）をクリックし、新しいインポートプロセスを作成します。
+1. *Add* (![Add Button](../../../images/icon-add.png)) をクリックして、新しいインポートプロセスを作成する。
 
-1. 希望のLARファイルを追加し、 **Continue** をクリックします。
+1. 希望のLARファイルを追加し、 *［Continue］*をクリックします。
 
-   ![LARファイルを追加し、［続ける］をクリックします。](./exporting-importing-site-templates/images/03.png)
+   ![LARファイルを追加し、 ［Continue］をクリックします。](./exporting-importing-site-templates/images/03.png)
 
-1. インポートプロセスを確認し、設定する。
+1. インポートプロセスを確認し、設定します。
 
-1. **インポート** をクリックすると、インポートが開始されます。
+1. *［Import］*をクリックし、インポートを開始します。
 
-   ![設定し、インポート処理を開始します。](./exporting-importing-site-templates/images/04.png)
+   ![インポートプロセスを設定し、開始します。](./exporting-importing-site-templates/images/04.png)
 
-完了したら、インポートした Site Template を使って、 [Sites](../adding-a-site.md)を作成することができます。
+完了したら、インポートしたサイトテンプレートを使って [サイトを作成することができます](../adding-a-site.md)。
 
-## バルクエクスポート/インポート
+## 一括エクスポート／インポート
 
-必要に応じて、以下の手順でサイトテンプレートの一括エクスポート/インポート操作を実行します。
+必要に応じて、以下の手順に従って、サイト テンプレートの一括エクスポート/インポート操作を実行してください：
 
-1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** を開き、 **サイトテンプレート** をクリックします。
+1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *［コントロールパネル］*に移動し、*［サイトテンプレート］*をクリックします。
 
-1. アプリケーションバーの **アクション** ボタン (![Actions Button](../../../images/icon-actions.png)) をクリックし、 **エクスポート/インポート** を選択します。
+1. アプリケーションバーの *Options* (![Options Icon](../../../images/icon-options.png)) をクリックし、 *Export/Import*を選択する。
 
-   ![アプリケーションバーの「アクション」ボタンをクリックし、「エクスポート/インポート」を選択します。](./exporting-importing-site-templates/images/05.png)
+   ![アプリケーションバーの*オプション*アイコンをクリックし、*エクスポート/インポート*を選択します。](./exporting-importing-site-templates/images/05.png)
 
-1. **Export** または **Import** タブにアクセスし、目的の処理を開始します。
+1. *［Export］*または*［Import］*タブにアクセスし、目的のプロセスを開始します。
 
-   バルクエクスポートの設定オプションは、 [個々のサイトテンプレートをエクスポートするときとほとんど同じです。](#exporting-individual-site-templates) . ただし、各テンプレートに含まれるページやコンテンツは設定できません。 また、個別エクスポートとは異なり、ページテンプレートをエクスポートに含めるかどうかを決定することができます。
+   一括エクスポートの設定オプションは、 [個々のサイトテンプレートをエクスポートする場合とほとんど同じです](#exporting-individual-site-templates)。 ただし、テンプレートごとに含まれるページやコンテンツを設定することはできません。 また、個別のエクスポートとは異なり、ページテンプレートをエクスポートに含めるかどうかを決定することができます。
 
-   ![エクスポート]タブに移動して、インスタンス内のすべてのサイトテンプレートをエクスポートします。](./exporting-importing-site-templates/images/06.png)
+   ![インスタンス内のすべてのサイトテンプレートをエクスポートするには、[*エクスポート*]タブに移動します。](./exporting-importing-site-templates/images/06.png)
 
-   バルクインポートの設定オプションは、 [個々のサイトテンプレートをインポートするときとほとんど同じです。](#importing-individual-site-templates) . ただし、LARファイルに含まれるページテンプレートが、サイトテンプレートと一緒にインポートされるかどうかは、判断できます。
+   一括インポートの設定オプションは、 [個々のサイト・テンプレートをインポートする場合](#importing-individual-site-templates)とほとんど同じです。 ただし、LARファイルに含まれるページ・テンプレートがサイト・テンプレートと一緒にインポートされるかどうかを判断することはできます。
 
-   ![インポートタブに移動して、複数のサイトテンプレートを含むLARファイルをインポートします。](./exporting-importing-site-templates/images/07.png)
+   ![複数のサイトテンプレートを含むLARファイルをインポートするには、*インポート*タブに移動します。](./exporting-importing-site-templates/images/07.png)
 
 ## 関連トピック
 

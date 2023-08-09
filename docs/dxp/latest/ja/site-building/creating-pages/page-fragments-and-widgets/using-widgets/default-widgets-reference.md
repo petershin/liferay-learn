@@ -1,8 +1,8 @@
-# デフォルトウィジェットのリファレンス
+# デフォルトのウィジェットリファレンス
 
-Liferayは様々なウィジェットをすぐに提供するので、すぐにソリューションの構築を始めることができます。 ウィジェットは、コンテンツページ、ウィジェットページ、ページテンプレートに配置することができます。 コンテンツページで利用可能なウィジェットを表示するには、ページの編集を開始し、編集サイドバーメニューの「**フラグメントとウィジェット**(![Fragments and Widgets](../../../../images/icon-plus.png))」を選択し、「**ウィジェット**」タブを選択してください。 ウィジェットページで利用可能なウィジェットを表示するには、 **Add**(![add](../../../../images/icon-plus.png)) をクリックします。
+Liferayには、すぐに使用できるさまざまなウィジェットが用意されているため、ソリューションの構築をすぐに開始できます。 ウィジェットは、コンテントページ、ウィジェットページ、ページテンプレートに配置することができます。 コンテントページで利用可能なウィジェットを表示するには、ページの編集を開始し、編集サイドバーメニューの*［フラグメントとウィジェット］* (![Fragments and Widgets](../../../../images/icon-plus.png))を選択し、*［ウィジェット］*タブを選択します。 ウィジェットページで利用可能なウィジェットを表示するには、 *追加* (![add](../../../../images/icon-plus.png)) をクリックします。
 
-ウィジェットは、このようなセクションで構成されています：
+ウィジェットは、下記のセクションで構成されています。
 
 * [ハイライト](#highlighted)
 * [アカウント](#accounts)
@@ -15,165 +15,150 @@ Liferayは様々なウィジェットをすぐに提供するので、すぐに�
 * [検索](#search)
 * [ソーシャル](#social)
 * [ツール](#tools)
-* [Wikiノード](#wiki)
+* [Wiki](#wiki)
 
 ## ハイライト
 
-ここにあるウィジェットは、ページを作るときによく使われるウィジェットです。
+このウィジェットは、ページの作成時によく使用されるウィジェットです。
 
-| ウィジェット      | 説明                                                                                                                                                                                                                    |
-|:----------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| アセットバプリッシャー | アセットを表示するように設定できる [Asset Publisher ウィジェット](../../../displaying-content/using-the-asset-publisher-widget.md) を追加する。                                                                                                    |
-| ドキュメントとメディア | ドキュメントとメディアの種類を表示するように設定できる [Documents and Media ウィジェット](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-documents-and-media-widget) を追加する。 |
-| メニュー表示      | サイトのページ階層を表示できる「 [Menu Display」ウィジェット](../../../site-navigation/configuring-menu-displays.md#configuring-the-menu-display-widget) を追加します。                                                                             |
-| Webコンテンツの表示 | ウェブコンテンツの記事を表示するウィジェット [ウェブコンテンツ表示ウィジェット](../../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md) を追加する。                                             |
+| ウィジェット      | 説明                                                                                                                                                                                                              |
+|:----------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| アセットバプリッシャー | アセットを表示するように設定できる [［アセットパブリッシャー］ウィジェット](../../../displaying-content/using-the-asset-publisher-widget.md)を追加します。                                                                                                 |
+| ドキュメントとメディア | ドキュメントとメディアのタイプを表示するように設定できる [［ドキュメントとメディア］ウィジェット](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-documents-and-media-widget)を追加します。 |
+| メニュー表示      | サイトのページ階層を表示できる[［メニュー表示］ウィジェット](../../../site-navigation/configuring-menu-displays.md#configuring-the-menu-display-widget)を追加します。                                                                               |
+| Webコンテンツの表示 | Webコンテンツの記事を表示するウィジェット [［Webコンテンツ表示］ウィジェット](../../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md)を追加します。                                     |
 
 ## アカウント
 
-Accountsについて詳しく知りたい方は、こちらをご覧ください： [アカウント](../../../../users-and-permissions/accounts.md)
+アカウントについて詳しく知りたい方は、こちらをご覧ください：[アカウント](../../../../users-and-permissions/accounts.md)
 
 | ウィジェット  | 説明                                                                                                                                |
 |:------- |:--------------------------------------------------------------------------------------------------------------------------------- |
-| アカウント管理 | アカウント情報の管理およびアクセスに使用できる [アカウント管理ウィジェット](../../../../../../../commerce/latest/en/users-and-accounts/account-management.md) を追加します。 |
+| アカウント管理 | アカウント情報の管理およびアクセスに使用できる[［アカウント管理］ウィジェット](../../../../../../../commerce/latest/en/users-and-accounts/account-management.md)を追加します。 |
 
 ## コラボレーション
 
 コラボレーションウィジェットは、他のユーザーとのコラボレーションやコミュニケーションを促進するサイトやコミュニティを構築します。
 
-| ウィジェット          | 説明                                                                                                                                                               |
-|:--------------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ブログ             | Blogs アプリケーションを管理し、アクセスするための [Blogs ウィジェット](../../../../content-authoring-and-management/blogs/displaying-blogs.md#using-the-blogs-widget) を追加する。                |
-| ブログの集約(アグリゲーター） | 複数のソースからブログエントリーを公開する [Blogs Aggregator ウィジェット](../../../../content-authoring-and-management/blogs/aggregating-blogs.md#aggregating-blogs) を追加する。                |
-| カレンダー           | イベントの確認や追加に使用できるカレンダーウィジェットを追加します。                                                                                                                               |
-| 動的データリスト(DDL)表示 | 動的なデータリストを表示するウィジェットを追加する。 動的データリストは、Liferay DXP7.3で非推奨になりました。 [オブジェクト](../../../../building-applications/objects.md)に置き換わっています。                                 |
-| フォーム            | [Form ウィジェット](../../../../process-automation/forms/sharing-forms-and-managing-submissions.md) を追加し、特定のフォームを表示するように設定することができます。                                   |
-| メンバーの招待         | [Invite Members ウィジェット](../../../../site-building/sites/site-membership.md) を追加し、ユーザーをサイトに招待するために使用できます。                                                         |
-| 掲示板             | ページにメッセージボードアプリケーションを追加する [Message Boards ウィジェット](../../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md) を追加します。 |
-| 質問              | メッセージボードのメッセージを質問と回答の形式で表示する「 [Questions」ウィジェット](../../../../collaboration-and-social/questions/using-the-questions-app.md) を追加します。                              |
-| 最近参加したブロガー      | 最新のブログ著者を表示する [Recent Bloggers ウィジェット](../../../../content-authoring-and-management/blogs/highlighting-recent-bloggers.md) を追加します。                               |
+| ウィジェット          | 説明                                                                                                                                               |
+|:--------------- |:------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ブログ             | ブログアプリケーションを管理し、アクセスするための[［ブログ］ウィジェット](../../../../content-authoring-and-management/blogs/displaying-blogs.md#using-the-blogs-widget)を追加します。     |
+| ブログの集約（アグリゲーター） | 複数のソースからブログエントリーを公開する[［ブログの集約（アグリゲーター）］ウィジェット](../../../../content-authoring-and-management/blogs/aggregating-blogs.md#aggregating-blogs)を追加します。 |
+| カレンダー           | イベントの確認や追加に使用できる［カレンダー］ウィジェットを追加します。                                                                                                             |
+| 動的データリスト(DDL)表示 | 動的なデータ一覧を表示するウィジェットを追加します。 動的データリストは、Liferay DXP7.3で非推奨になりました。 [オブジェクト](../../../../building-applications/objects.md)に置き換えられました。                 |
+| フォーム            | 特定のフォームを表示するように設定できる[［フォーム］ウィジェット](../../../../process-automation/forms/sharing-forms-and-managing-submissions.md)を追加します。                        |
+| メンバーの招待         | ユーザーをサイトに招待するために使用できる[［メンバーの招待］ウィジェット](../../../../site-building/sites/site-membership.md)を追加します。                                                |
+| 掲示板             | ページに掲示板アプリケーションを追加する[［掲示板］ウィジェット](../../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md)を追加します。  |
+| 質問              | 掲示板からのメッセージを質問と回答の形式で表示する[［質問］ウィジェット](../../../../collaboration-and-social/questions/using-the-questions-app.md)を追加します。                          |
+| 最近参加したブロガー      | 最新のブログ作成者を表示する[［最近参加したブロガー］ウィジェット](../../../../content-authoring-and-management/blogs/highlighting-recent-bloggers.md)を追加します。                    |
 
 ## コマース
 
-利用可能なコマースウィジェットの一覧は、 [コマースウィジェットリファレンス](../../../../../../../commerce/latest/en/creating-store-content/liferay-commerce-widgets/widget-reference.md)をご覧ください。
+利用可能なコマースウィジェットの一覧は、 [コマースウィジェットリファレンス](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-widgets/widget-reference)をご覧ください。
 
 ## コミュニティ
 
-コミュニティウィジェットは、ページにコメントや評価、フラグを付けることができます。
+コミュニティウィジェットは、ページにコメントや評価、フラグを追加します。
 
-| ウィジェット  | 説明                                                                                                                                                                       |
-|:------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| マイサイト   | ユーザーが所属し、参加できるサイトを一覧表示する「 [マイサイト」ウィジェット](../../../../site-building/sites/site-membership/adding-members-to-sites.md#joining-sites-with-the-my-sites-application) を追加します。 |
-| ページコメント | ページにコメントできる「ページコメント」ウィジェットを追加します。                                                                                                                                        |
-| 不正の報告   | ページを報告できるページフラッグスウィジェットを追加します。                                                                                                                                           |
-| ページの評価  | ページを評価できるページ評価ウィジェットを追加。                                                                                                                                                 |
+| ウィジェット  | 説明                                                                                                                                                                     |
+|:------- |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| マイサイト   | ユーザーが所属し、参加できるサイトを一覧表示する[［マイサイト］ウィジェット](../../../../site-building/sites/site-membership/adding-members-to-sites.md#joining-sites-with-the-my-sites-application)を追加します。 |
+| ページコメント | ページにコメントできる［ページコメント］ウィジェットを追加します。                                                                                                                                      |
+| 不正の報告   | ページを報告できる［ページフラグ］ウィジェットを追加します。                                                                                                                                         |
+| ページの評価  | ページを評価できる［ページ評価］ウィジェットを追加します。                                                                                                                                          |
 
 ## コンテンツ管理
 
 コンテンツ管理ウィジェットは、サイトページ上のコンテンツを作成、管理、表示します。
 
-| ウィジェット          | 説明                                                                                                                                                                                                          |
-|:--------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| アセットバプリッシャー     | アセットを表示する [Asset Publisher ウィジェット](../../../displaying-content/using-the-asset-publisher-widget.md) を追加する。                                                                                                  |
-| パンくずリスト         | 現在のページと同じアクセシビリティレベルのページやサイトを表示するナビゲーションシステムを提供するBreadcrumbウィジェットを追加します。 プライベートページであればプライベートページ、パブリックページであればパブリックページ。                                                                                       |
-| カテゴリフィルター       | カテゴリを選択してアセットをフィルタリングできるカテゴリフィルタウィジェットを追加しました。                                                                                                                                                              |
-| ドキュメントとメディア     | ドキュメントやメディアを表示する [Documents and Media ウィジェット](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-documents-and-media-widget) を追加する。  |
-| 高格付けアセット        | 最高評価の資産を一覧表示する「最高評価資産」ウィジェットを追加しました。                                                                                                                                                                        |
-| ナレッジベースの記事      | 一つの記事の内容を表示する [Knowledge Base Article ウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-article-widget) を追加します。                                    |
-| ナレッジベース・ディスプレイ  | 公開されているナレッジベースの記事を表示する [ナレッジベース表示ウィジェット](../../../../collaboration-and-social/knowledge-base/knowledge-base-display-widget.md) を追加する。                                                                       |
-| ナレッジベース検索       | ナレッジベースの記事を検索するために使用できる [Knowledge Base Search ウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-search-widget) を追加します。                            |
-| ナレッジベースセクション    | 特定のトピック(セクション）に関連する記事を公開できる [ナレッジベースセクションウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-section-widget) を追加する。                                  |
-| メディアギャラリー       | シンプルなギャラリーのようなスタイルでメディアを表示する [Media Gallery ウィジェット](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget) を追加します。 |
-| メニュー表示          | サイトのページ階層を表示する [メニュー表示ウィジェット](../../../site-navigation/configuring-menu-displays.md#configuring-the-menu-display-widget) を追加します。                                                                            |
-| 最もよく見れられているアセット | 再生回数の多いアセットを表示する「Most Viewed Assets」ウィジェットを追加しました。                                                                                                                                                          |
-| 入れ子になったアプリケーション | ウィジェットを入れ子にして、ページ上でのウィジェットの表示方法を設定できる「Nested Applications」ウィジェットを追加します。                                                                                                                                     |
-| 関連するアセット        | 現在のページのメインアセットに関連するアセットを表示する「関連アセット」ウィジェットを追加します。                                                                                                                                                           |
-| サイトマップ          | 現在のサイトのサイトマップを表示する [サイトマップウィジェット](../../../../site-building/sites/site-hierarchies.md#navigating-site-hierarchy-with-the-sites-directory-application) を追加します。                                               |
-| サイトディレクトリ       | サイトと子サイトの階層を表示するSites Directoryウィジェットを追加する。                                                                                                                                                                 |
-| タグクラウド          | タグが何回使われたかを表示するタグクラウドウィジェットを追加します。 タグを選択すると、ページ上のアセットがフィルタリングされるようになります。                                                                                                                                    |
-| タグフィルター         | タグを表示するTag Filterウィジェットを追加します。 タグを選択すると、ページ上のアセットがフィルタリングされるようになります。                                                                                                                                        |
-| Webコンテンツの表示     | ウェブコンテンツの記事を表示するウィジェット [ウェブコンテンツ表示ウィジェット](../../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md) を追加する。                                   |
+| ウィジェット          | 説明                                                                                                                                                                                                     |
+|:--------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| アセットバプリッシャー     | アセットを表示する[［アセットパブリッシャー］ウィジェット](../../../displaying-content/using-the-asset-publisher-widget.md)を追加します。                                                                                                 |
+| パンくずリスト         | 現在のページと同じアクセシビリティレベルのページやサイトを表示するナビゲーションシステムを提供する［パンくずリスト］ウィジェットを追加します。 非公開ページであれば非公開ページ、公開ページであれば公開ページとなります。                                                                                          |
+| カテゴリフィルター       | カテゴリを選択してアセットをフィルタリングできる［カテゴリフィルター］ウィジェットを追加します。                                                                                                                                                       |
+| ドキュメントとメディア     | ドキュメントやメディアを表示する[［ドキュメントとメディア］ウィジェット](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-documents-and-media-widget)を追加します。     |
+| 一番評価されているアセット   | 一番評価されているアセットを一覧表示する［一番評価されているアセット］ウィジェットを追加します。                                                                                                                                                       |
+| ナレッジベースの記事      | 一つの記事のコンテンツを表示する[［ナレッジベースの記事］ウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-article-widget)を追加します。                                         |
+| ナレッジベース表示       | 公開されているナレッジベースの記事を表示する[［ナレッジベース表示］ウィジェット](../../../../collaboration-and-social/knowledge-base/knowledge-base-display-widget.md)を追加します。                                                                 |
+| ナレッジベース検索       | ナレッジベースの記事を検索するために使用できる[［ナレッジベース検索］ウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-search-widget)を追加します。                                    |
+| ナレッジベースセクション    | 特定のトピック（セクション）に関連する記事を公開できる[［ナレッジベースセクション］ウィジェット](../../../../collaboration-and-social/knowledge-base/other-knowledge-base-widgets.md#knowledge-base-section-widget)を追加します。                            |
+| メディアギャラリー       | シンプルなギャラリーのようなスタイルでメディアを表示する[［メディアギャラリー］ウィジェット](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-media-gallery-widget)を追加します。 |
+| メニュー表示          | サイトのページ階層を表示する[［メニュー表示］ウィジェット](../../../site-navigation/configuring-menu-displays.md#configuring-the-menu-display-widget)を追加します。                                                                       |
+| 最もよく見れられているアセット | 最も閲覧数の多いアセットを表示する［最もよく見られているアセット］ウィジェットを追加します。                                                                                                                                                         |
+| 入れ子になったアプリケーション | 入れ子になったアプリケーションを追加して、ウィジェットをネストし、ページ上でのウィジェットの表示方法を設定できるようにします。                                                                                                                                        |
+| 関連するアセット        | 現在のページのメインアセットに関連するアセットを表示する［関連するアセット］ウィジェットを追加します。                                                                                                                                                    |
+| サイトマップ          | 現在のサイトのサイトマップを表示する[［サイトマップ］ウィジェット](../../../../site-building/sites/site-hierarchies.md#navigating-site-hierarchy-with-the-sites-directory-application)を追加します。                                          |
+| サイトディレクトリ       | サイトとサブサイトの階層を表示する［サイトディレクトリ］ウィジェットを追加します。                                                                                                                                                              |
+| タグクラウド          | タグが何回使われたかを表示する［タグクラウド］ウィジェットを追加します。 タグを選択すると、ページ上のアセットをフィルタリングできます。                                                                                                                                   |
+| タグフィルター         | タグを表示する［タグフィルター］ウィジェットを追加します。 タグを選択すると、ページ上のアセットをフィルタリングできます。                                                                                                                                          |
+| Webコンテンツの表示     | Webコンテンツの記事を表示するウィジェット [［Webコンテンツ表示］ウィジェット](../../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md)を追加します。                            |
 
 ## ニュース
 
-ニュースウィジェットは、ユーザーへのメッセージの表示、RSSフィードの表示、最近作成したコンテンツの表示などを行います。
+ニュースウィジェットは、ユーザーへのメッセージ、RSSフィード、最近作成したコンテンツなどを表示します。
 
 | ウィジェット      | 説明                                                                                                                                                                                |
 |:----------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 警告          | [アラートウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加し、優先度の高い情報を赤い **重要** タグで表示します。 |
-| お知らせ        | 赤い **重要** タグがない情報を表示する [お知らせウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) を追加する。     |
-| 最近のコンテンツ    | 最近作成されたアセットを一覧表示する「最近のコンテンツ」ウィジェットを追加しました。                                                                                                                                        |
-| RSS パブリッシャー | RSSフィードからの投稿を一覧表示するRSSパブリッシャーウィジェットを追加しました。                                                                                                                                       |
+| 警告          | 赤の*重要*タグが付いた優先度の高い情報を表示する[［警告］ウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements)を追加します。 |
+| お知らせ        | 赤の*重要*タグがない情報を表示する[［お知らせ］ウィジェット](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements)を追加します。      |
+| 最近のコンテンツ    | 最近作成されたアセットを一覧表示する［最近のコンテンツ］ウィジェットを追加します。                                                                                                                                         |
+| RSS パブリッシャー | RSSフィードからの投稿を一覧表示する［RSSパブリッシャー］ウィジェットを追加します。                                                                                                                                      |
 
 ## サンプル
 
-サンプルウィジェットは、ウィジェットのデモやページ上での表示方法などを説明するために使用します。
+サンプルウィジェットを使用して、ウィジェットやそれがページ上でどのように表示されるかを示します。
 
-| ウィジェット                | 説明                                                                                                                                                                 |
-|:--------------------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| クラシックテーマ スタイルガイド      | Classicテーマのスタイルガイドを表示するウィジェットを追加します。                                                                                                                               |
-| コマース機械学習の予測アラート       | Analytics Cloudの予測を使用して生成された予測を表示するCommerce Machine Learning Forecast Alertウィジェットを追加します。                                                                           |
-| ダイアレクトテーマスタイルガイドのサンプル | Dialectテーマのスタイルガイドを表示するDialectテーマスタイルガイドサンプルウィジェットを追加します。                                                                                                          |
-| Iframe                | [iframe widget](../../../../site-building/displaying-content/additional-content-display-options/using-the-iframe-widget.md) を追加し、Web ページを埋め込んで表示できる iframe を作成します。 |
+| ウィジェット                | 説明                                                                                                                                                              |
+|:--------------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 標準テーマのスタイルガイド         | 標準テーマのスタイルガイドを表示する［標準テーマのスタイルガイド］ウィジェットを追加します。                                                                                                                  |
+| コマース機械学習の予測アラート       | Analytics Cloudの予測を使用して生成された予測を表示する［コマース機械学習予測アラート］ウィジェットを追加します。                                                                                                |
+| ダイアレクトテーマスタイルガイドのサンプル | ダイアレクトテーマのスタイルガイドを表示する［ダイアレクトテーマスタイルガイドのサンプル］ウィジェットを追加します。                                                                                                      |
+| Iframe                | Webページを埋め込んで表示できるiframeを作成する[［iframe］ウィジェット](../../../../site-building/displaying-content/additional-content-display-options/using-the-iframe-widget.md)を追加します。 |
 
 ## 検索機能
 
-検索ウィジェットは、お客様やユーザーによってカスタマイズ可能な、テーラーメイドの検索体験を提供します。
+サンプルウィジェットは、ウィジェットとページ上での表示方法のデモに使用されます。
 
-| ウィジェット | 説明 |
+| ウィジェット
 | :--- | :--- |
-| ブループリント オプション | [ブループリント オプション ウィジェット](../../../../using-search/liferay-enterprise-search/search-experiences/search-blueprints/using-a-search-blueprint-on-a- を追加します 検索ブループリントを適用できる search-page.md)。 |
-| カテゴリ ファセット | 検索結果をカテゴリ別にフィルタリングする [カテゴリ ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/category-facet.md) を追加します。 |
-| カスタム ファセット | グループ化するフィールドを選択できる [カスタム ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/custom-facet.md) を追加します による検索結果。 |
-| カスタムフィルター | クエリを制御できる [カスタム フィルター ウィジェット](../../../../using-search/search-pages-and-widgets/search-results/filtering-search-results.md) を追加します カスタム コードを展開せずに検索エンジンに送信されます。 |
-| Elasticsearch モニタリング | Elasticsearch を監視できる [Elasticsearch 監視ウィジェット](../../../../using-search/liferay-enterprise-search/monitoring-elasticsearch.md) を追加します。 |
-| フォルダー ファセット | [Folder Facet widget](../../../../using-search/search-pages-and-widgets/search-facets/folder-facet.md) を追加して、検索結果をアセットでフィルタリングできるようにします フォルダ。 |
-| 低レベルの検索オプション | [低レベル検索オプション ウィジェット] を追加します (../../../../using-search/search-pages-and-widgets/search-results/understanding-low-level-search-options.md) これにより、低レベルの検索を使用できます。 |
-| 変更されたファセット | [変更された Faced ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/modified-facet.md) を追加して、いつ検索結果をフィルタリングできるようにしますか? アセットが作成または変更されました。 |
-| 検索バー | ユーザーが検索できる検索バー ウィジェットを追加します。 デフォルトでは、検索バー ウィジェットはユーザーをデフォルトの [検索ページ](../../../../using-search/search-pages-and-widgets/working-with-search-pages.md) 。 |
-| 検索インサイト | [検索インサイト ウィジェット](../../../../using-search/search-pages-and-widgets/search-insights.md) を追加して、バックエンドによって作成されたクエリ文字列を検査できるようにします キーボードが入力されたときの検索コードと、検索エンジンから返された応答文字列。 これは、テストおよび開発中にのみ使用することを意図しています。 |
-| 検索オプション | 検索オプション ウィジェットを追加すると、ページで追加の検索オプションを構成できます。 |
-| 検索結果 | [検索結果ウィジェット](../../../../using-search/search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) を追加します。 検索クエリの結果。 |
-| 同様の結果 | [類似結果ウィジェット](../../../../using-search/search-pages-and-widgets/similar-results.md) を追加します。 ページ。 |
-| サイト ファセット | [サイト ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/site-facet.md) を追加して、サイトごとに検索結果をフィルター処理できるようにします . |
-| 並べ替え | [並べ替えウィジェット](../../../../using-search/search-pages-and-widgets/search-results/sorting-search-results.md) を追加して、 の検索結果。 |
-| 提案 | [提案ウィジェット](../../../../using-search/search-pages-and-widgets/search-results/enabling-search-suggestions.md) を追加して、初期の改善を提案できます。 クエリ。 |
-| タグ ファセット | 検索結果をタグでフィルタリングできる [タグ ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/tag-facet.md) を追加します。 . |
-| 型ファセット | [タイプ ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/type-facet.md) を追加して、検索結果をアセットでフィルタリングできるようにします タイプ。 |
-| ユーザー ファセット | [ユーザー ファセット ウィジェット](../../../../using-search/search-pages-and-widgets/search-facets/user-facet.md) を追加して、検索結果をユーザー別にフィルタリングできるようにします。 . |
+| クラシックテーマのスタイルガイド｜クラシックテーマのスタイルガイドを表示するウィジェットを追加します。|
+| Commerce Machine Learning Forecast Alert｜Analytics Cloud の予測を使用して生成された予測を表示する Commerce Machine Learning Forecast Alert ウィジェットを追加します。|
+| 方言テーマスタイルガイドサンプル｜方言テーマのスタイルガイドを表示する方言テーマスタイルガイドサンプルウィジェットを追加します。|
+| iframe｜ウェブページを埋め込んで表示するiframeを作成する[iframeウィジェット](../../../../site-building/displaying-content/additional-content-display-options/using-the-iframe-widget.md)を追加します。|
 
 ## ソーシャル
 
-ソーシャルウィジェットは、ユーザーサイト上でソーシャルメディア体験を実現します。
+［ソーシャル］ウィジェットは、ユーザーサイト上でソーシャルメディアエクスペリエンスを実現します。
 
-| ウィジェット    | 説明                                                                                                                                                                              |
-|:--------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| アクティビティ   | サイト上のユーザーアクティビティを追跡できる [Activities ウィジェット](../../../../collaboration-and-social/social-tools/user-guide/using-the-activities-widget.md) を追加します。                                 |
-| コンタクトセンター | [Contacts Center ウィジェット](../../../../collaboration-and-social/social-tools/user-guide/using-the-contacts-center-widget.md) を追加し、ユーザーが他のユーザーとのつながりを形成したり、フォローしたりすることができるようになります。 |
-| メンバ      | サイトメンバーを表示するMembersウィジェットを追加します。                                                                                                                                                |
-| 自分の連絡先    | 接続先を表示するMy Contactsウィジェットを追加します。 このウィジェットは、プロフィールページにのみ追加することができます。                                                                                                             |
-| プロフィール編集  | プロフィールウィジェットを追加し、写真と説明を表示できるようにしました。 マイプロフィールページにのみ適用可能です。                                                                                                                      |
+| ウィジェット    | 説明                                                                                                                                                                        |
+|:--------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| アクティビティ   | サイト上のユーザーアクティビティを追跡できる[［アクティビティ］ウィジェット](../../../../collaboration-and-social/social-tools/user-guide/using-the-activities-widget.md)を追加します。                               |
+| コンタクトセンター | [［コンタクトセンター］ウィジェット](../../../../collaboration-and-social/social-tools/user-guide/using-the-contacts-center-widget.md)を追加し、ユーザーが他のユーザーとのつながりを形成したり、フォローしたりすることができるようになります。 |
+| メンバー      | サイトメンバーを表示する［メンバー］ウィジェットを追加します。                                                                                                                                           |
+| 自分の連絡先    | つながりを表示する［自分の連絡先］ウィジェットを追加します。 このウィジェットは、プロフィールページにのみ追加することができます。                                                                                                         |
+| プロフィール    | ユーザーの写真や紹介を追加し表示できる［プロフィール］ウィジェットを追加します。 プロフィールページにのみ適用可能です。                                                                                                              |
 
 ## ツール
 
-ツールウィジェットは、ユーザーの体験をカスタマイズするためのウィジェットを提供します。
+［ツール］ウィジェットは、ユーザーのエクスペリエンスをカスタマイズするためのウィジェットを提供します。
 
 | ウィジェット           | 説明                                              |
 |:---------------- |:----------------------------------------------- |
-| Cookie バナー設定     | どのCookieを許可するか設定できるCookieバナー設定ウィジェットを追加します。     |
-| IP Geocoder サンプル | 国番号とIPアドレスを表示できるIP Geocoder Sampleウィジェットを追加します。 |
-| 言語選択             | 表示する言語を設定できるLanguage Selectorウィジェットを追加しました。     |
-| 検索               | 検索ウィジェットを追加し、クエリを調整するための設定を提供します。               |
+| Cookie バナー設定     | どのCookieを許可するか設定できる［Cookieバナー設定］ウィジェットを追加します。   |
+| IP Geocoder サンプル | 国番号とIPアドレスを表示できる［IP Geocoder サンプル］ウィジェットを追加します。 |
+| 言語選択             | 表示する言語を設定できる［言語選択］ウィジェットを追加します。                 |
+| 検索               | クエリを調整するための設定を提供する［検索］ウィジェットを追加します。             |
 
-## Wikiノード
+## Wiki
 
-Wikiウィジェットは、Wikiアプリケーションを表示し、Wikiページを表示します。
+［Wiki］ウィジェットは、Wiki・アプリケーションを表示し、Wikiページを表示します。
 
 | ウィジェット  | 説明                                                                                                                                          |
 |:------- |:------------------------------------------------------------------------------------------------------------------------------------------- |
-| ページメニュー | Wikiページ、サイトページ、外部サイトなど、他のリソースへのリンクを表示する [Page Menu ウィジェット](../../../../collaboration-and-social/wiki/using-the-page-menu-widget.md) を追加します。 |
-| ツリーメニュー | [ツリーメニューウィジェットの追加](../../../../collaboration-and-social/wiki/using-the-tree-menu-widget.md) wikiノードのwikiページと子ページの一覧を表示します。                  |
-| Wikiノード | Wiki アプリケーションを表示する [Wiki ウィジェット](../../../../collaboration-and-social/wiki/wiki-widget-ui-reference.md) を追加する。                              |
-| Wiki表示  | [Wiki表示ウィジェット](../../../../collaboration-and-social/wiki/using-the-wiki-display-widget.md) 特定のWikiページを強調表示するウィジェットを追加します。                   |
+| ページメニュー | Wikiページ、サイトページ、外部Webサイトなど、他のリソースへのリンクを表示する[［ページメニュー］ウィジェット](../../../../collaboration-and-social/wiki/using-the-page-menu-widget.md)を追加します。 |
+| ツリーメニュー | wikiノードのwikiページとサブページの一覧を表示する[［ツリーメニュー］ウィジェット](../../../../collaboration-and-social/wiki/using-the-tree-menu-widget.md)を追加します。              |
+| Wiki    | Wiki・アプリケーションを表示する[［Wiki］ウィジェット](../../../../collaboration-and-social/wiki/wiki-widget-ui-reference.md)を追加します。                              |
+| Wiki表示  | 特定のWikiページをハイライト表示する[［Wiki表示］ウィジェット](../../../../collaboration-and-social/wiki/using-the-wiki-display-widget.md)を追加します。                     |
 
 ## 関連トピック
 

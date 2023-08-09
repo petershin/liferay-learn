@@ -5,15 +5,16 @@
 [アップグレードプロセス](../upgrade-processes.md)では、大規模なデータセットに複雑な変更を加える必要がある場合があります。 パフォーマンスがクリティカルな場合は、アプリケーションの`UpgradeProcess`クラスの`processConcurrently()`メソッドを使用するようにしてください。 このメソッドは複数のスレッドで実行されるため、アップグレードの時間を短縮することができます。
 
 ## バージョン1.0.0をデプロイする
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. [マルチスレッド処理](./liferay-j7z3.zip) をダウンロードし、解凍してください。
+1. [Multithreading Process](./liferay-j7z3.zip)をダウンロードして解凍する。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/upgrade-processes/liferay-j7z3.zip -O
     ```
 
     ```bash
@@ -43,7 +44,7 @@
 
 ## アプリにエントリーを追加する
 
-1. ［**コントロールパネル**］ &rarr; ［**サーバ管理**］ &rarr; ［**スクリプト**］ でスクリプトコンソールに移動します。
+1. *［コントロールパネル］* &rarr; *［サーバ管理］* &rarr; *［スクリプト］*でスクリプトコンソールに移動します。
 
 1. 以下のスクリプトを実行して、いくつかのエントリーを追加してください。
 
@@ -82,7 +83,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. ［**コントロールパネル**］ &rarr; ［**Gogo シェル**］ でGogoシェルコンソールに移動します。
+1. *［コントロールパネル］* &rarr; *［Gogo シェル］*でGogoシェルコンソールに移動します。
 
 1. `upgrade:list com.acme.j7z3.service`というコマンドを入力し、1.0.1へのアップグレードが可能であることを確認します。 1.0.1バージョンは、出力ウィンドウに登録されたアップグレードプロセスとして表示されます。
 
@@ -120,7 +121,7 @@
 
 1. ```java resultSet -> new Object[] { resultSet.getLong("j7z3EntryId"), resultSet.getString("name")
    ```
-   オブジェクトは収集され、`resultSet`配列に格納されます。
+   The objects are gathered and stored in the `resultSet` array.
 
 1. ```java
    columns -> {
@@ -142,4 +143,4 @@
 
 1. 例外は、 `null`に設定されます。
 
-`processConcurrently()`メソッドは2つの異なるシグネチャを持っていることに注意しましょう。 このチュートリアルの例に見られるように、1つのシグネチャはSQLクエリをソースとして渡します。 もう一つのシグネチャはソースとして配列を渡します。 詳細は、 [BaseDBProcess javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-) を参照してください。
+`processConcurrently()`メソッドは2つの異なるシグネチャを持っていることに注意しましょう。 このチュートリアルの例に見られるように、1つのシグネチャはSQLクエリをソースとして渡します。 もう一つのシグネチャはソースとして配列を渡します。 詳細は、[BaseDBProcess javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-)を参照してください。

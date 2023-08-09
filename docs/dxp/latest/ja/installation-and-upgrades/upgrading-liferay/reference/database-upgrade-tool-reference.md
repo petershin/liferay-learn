@@ -1,8 +1,12 @@
 # データベースアップグレードツールのリファレンス
 
+```{important}
+Liferay 7.4 U82/GA82 以降では、`db_upgrade.sh` ファイルの名前が `db_upgrade_client.sh` に変更されました。
+```
+
 ここでは、Liferayのアップグレードツールの概要について説明します。
 
-`［LIFERAY_HOME］/tools/portal-tools-db-upgrade-client`フォルダ（Windowsでは`db_upgrade.bat`）にある`db_upgrade.sh`スクリプトを使用して、アップグレードツールを起動します。
+`[LIFERAY_HOME]/tools/portal-tools-db-upgrade-client` フォルダにある `db_upgrade_client.sh` スクリプトを使用してアップグレードツールを起動します（`db_upgrade_client.bat` Windowsの場合）。
 
 ## 概要
 
@@ -14,7 +18,7 @@
 次のコマンドは、アップグレードツールの使用状況を出力します。
 
 ```bash
-db_upgrade.sh --help
+db_upgrade_client.sh --help
 ```
 
 次に、アップグレードツールのすべてのコマンドラインオプションを示します。
@@ -32,7 +36,7 @@ db_upgrade.sh --help
 `-l`オプションは、ツールのログファイル名を指定します。
 
 ```bash
-db_upgrade.sh -l "output.log"
+db_upgrade_client.sh -l "output.log"
 ```
 
 ### 推奨されるJVMオプション
@@ -47,10 +51,10 @@ db_upgrade.sh -l "output.log"
 * ファイルエンコーディングUTF-8
 * ユーザーの標準時GMT
 
-これらの設定に対応する`db_upgrade.sh`コマンドは次のとおりです。
+これらの設定に対応する `db_upgrade_client.sh` コマンドを以下に示す：
 
 ```bash
-db_upgrade.sh -j "-Xmx8000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
+db_upgrade_client.sh -j "-Xmx8000m -Dfile.encoding=UTF-8 -Duser.timezone=GMT"
 ```
 
 ## アップグレードツールの設定
@@ -88,7 +92,7 @@ Please enter your database host (localhost):
 
 * `app-server.properties`：サーバーの場所とライブラリを指定します。
 * `portal-upgrade-database.properties`：データベース接続を設定します。
-* `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず [現在のDXPバージョンに合わせて更新してください](../migrating-configurations-and-properties.md#migrating-portal-properties) 。
+* `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず[現在のDXPバージョンに合わせて更新してください](../migrating-configurations-and-properties.md#migrating-portal-properties)。
 
 #### app-server.propertiesの設定
 
@@ -124,14 +128,14 @@ server.detector.server.id=tomcat
 
 #### portal-upgrade-database.propertiesの構成
 
-次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する [JDBCポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) に対応することに注意してください。
+次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する[JDBCポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)に対応することに注意してください。
 
 * `jdbc.default.driverClassName`
 * `jdbc.default.url`
 * `jdbc.default.username`
 * `jdbc.default.password`
 
-これらの値のリファレンスについては、最新の [ポータルプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を参照してください。
+これらの値のリファレンスについては、最新の[ポータルプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)を参照してください。
 
 #### portal-upgrade-ext.propertiesの構成
 
@@ -150,13 +154,13 @@ server.detector.server.id=tomcat
 
 * `hibernate.jdbc.batch_size`：パフォーマンスを向上させるために使用されるJDBCバッチサイズ（デフォルトでは_250_に設定）。 _このプロパティを使用するとアップグレードのパフォーマンスが向上しますが、必須ではありません。_
 
-* `upgrade.log.context.enabled`: `true`に設定すると、識別子にタグ付けされたアップグレード関連のログ行が表示されます。 可能な識別子は以下の通りです。
+* `upgrade.log.context.enabled`: `true`に設定すると、識別子にタグ付けされたアップグレード関連のログ行が表示されます。 可能な識別子は
 
-    * `{upgrade.component=portal}`: ポータルに関連するアップグレード処理に使用します。
-    * `{upgrade.component=framework}`: アップグレードフレームワークのロジックに関連する処理に使用します。
-    * `{upgrade.component=<bundleSymblociName>} となります。`モジュールに関連するアップグレード処理用
+    * `{upgrade.component=portal}`: ポータル関連のアップグレード処理用
+    * `{upgrade.component=framework}`: アップグレードフレームワークのロジックに関連する処理用
+    * `{upgrade.component=<bundleSymblociName>}.`モジュールに関するアップグレード処理
 
-なお、`upgrade.log.context.enabled`は、立ち上げ時のアップグレードだけでなく、アップグレードツールでも動作します。 また、この機能を利用するには、 [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) ファイルを`bundles/tomcat/webapps/ROOT/WEB-INF/META-INF`にコピーし、ファイル名を`portal-log4j-ext.xml`に変更する必要があります。 次に、アペンダーの定義を見つけます。
+なお、`upgrade.log.context.enabled`は、立ち上げ時のアップグレードだけでなく、アップグレードツールでも動作します。 また、この機能を利用するには、[`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml)ファイルを`bundles/tomcat/webapps/ROOT/WEB-INF/META-INF`にコピーし、ファイル名を`portal-log4j-ext.xml`に変更する必要があります。 次に、アペンダーの定義を見つけます。
 
 ```
 <Appender name="CONSOLE" type="Console">

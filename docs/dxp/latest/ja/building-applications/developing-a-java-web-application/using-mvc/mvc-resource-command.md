@@ -11,12 +11,12 @@ MVCリソースコマンドを使用するサンプルポートレットをデ�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います:
+次に、以下の手順を実行します。
 
-1. exampleをダウンロードし、解凍してください。
+1. サンプルをダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p8v5.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p8v5.zip -O
    ```
 
    ```bash
@@ -43,13 +43,13 @@ MVCリソースコマンドを使用するサンプルポートレットをデ�
     STARTED com.acme.p8v5.web_1.0.0
     ```
 
-1. ［**P8V5ポートレット**］ ウィジェットを ［**サンプル**］ カテゴリからウィジェットページに追加します。 P8V5ポートレットが表示されます。
+1. *［P8V5ポートレット］*ウィジェットを *［サンプル］*カテゴリからウィジェットページに追加します。 P8V5ポートレットが表示されます。
 
     ![P8V5ポートレットをページに追加しました。](./mvc-resource-command/images/01.png)
 
     リンクはMVCリソースコマンドを呼び出して、単純なテキストファイルをダウンロードします。
 
-1. ［**Download**］ をクリックします。 `p8v5.txt`というファイルがマシンにダウンロードされます。
+1. *［Download］* をクリックします。 `p8v5.txt`というファイルがマシンにダウンロードされます。
 
 1. `p8v5.txt`ファイルを開きます。 コンテンツは次のとおりです。
 
@@ -61,7 +61,7 @@ MVCリソースコマンドを使用してファイルをダウンロードし�
 
 ## ポートレットを調べる
 
-`P8V5Portlet`は最小の [`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java) です。
+`P8V5Portlet`は最小の[`MVCPortlet`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCPortlet.java)です。
 
 ```{literalinclude} ./mvc-resource-command/resources/liferay-p8v5.zip/p8v5-web/src/main/java/com/acme/p8v5/web/internal/portlet/P8V5Portlet.java
 :language: java
@@ -84,14 +84,14 @@ MVCリソースコマンドを使用してファイルをダウンロードし�
 
 ## MVCResourceCommandクラスを調べる
 
-MVCリソースコマンドクラスは、 [`MVCResourceCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCResourceCommand.java) を直接実装することも、 [`BaseMVCResourceCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCResourceCommand.java) を拡張することによって間接的に実装することもできます。  `P8V5DownloadMVCResourceCommand`は、`MVCResourceCommand`を直接実装します。
+MVCリソースコマンドクラスは、[`MVCResourceCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCResourceCommand.java)を直接実装することも、[`BaseMVCResourceCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCResourceCommand.java)を拡張することによって間接的に実装することもできます。  `P8V5DownloadMVCResourceCommand`は、`MVCResourceCommand`を直接実装します。
 
 ```{literalinclude} ./mvc-resource-command/resources/liferay-p8v5.zip/p8v5-web/src/main/java/com/acme/p8v5/web/internal/portlet/action/P8V5DownloadMVCResourceCommand.java
 :language: java
 :lines: 16-47
 ```
 
-`P8V5DownloadMVCResourceCommand`は、`MVCResourceCommand`サービスを提供する [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) です。 コンポーネントプロパティは、`P8V5DownloadMVCResourceCommand`を`com_acme_p8v5_web_internal_portlet_P8V5Portlet`という名前のポートレットに適用し、`P8V5DownloadMVCResourceCommand`をMVCコマンド名`/p8v5/download`にマップします。 ここで指定する名前は、ポートレットで宣言されている名前と一致する必要があります。
+`P8V5DownloadMVCResourceCommand`は、`MVCResourceCommand`サービスを提供する[`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)です。 コンポーネントプロパティは、`P8V5DownloadMVCResourceCommand`を`com_acme_p8v5_web_internal_portlet_P8V5Portlet`という名前のポートレットに適用し、`P8V5DownloadMVCResourceCommand`をMVCコマンド名`/p8v5/download`にマップします。 ここで指定する名前は、ポートレットで宣言されている名前と一致する必要があります。
 
 ```{note}
 ポートレットごとに個別の `javax.portlet.name`プロパティを宣言することにより、`MVCResourceCommand`コンポーネントを複数のポートレットに関連付けることができます。 
@@ -106,7 +106,7 @@ MVCリソースコマンドクラスは、 [`MVCResourceCommand`](https://github
       )
 ```
 
-サンプルの`serveResource`メソッドは、単純なテキストファイルを作成し、 [`PortletResponseUtil`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/PortletResponseUtil.java) を介してユーザーに送信します。 このメソッドは、エラーが発生した場合は`true`を返し、それ以外の場合は`false`を返します。
+サンプルの`serveResource`メソッドは、単純なテキストファイルを作成し、[`PortletResponseUtil`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/portlet/PortletResponseUtil.java)を介してユーザーに送信します。 このメソッドは、エラーが発生した場合は`true`を返し、それ以外の場合は`false`を返します。
 
 次に、ポートレットのJSPがUIコンポーネントアクションをコマンドにマップする方法を学習します。
 
@@ -124,11 +124,11 @@ MVCリソースコマンドクラスは、 [`MVCResourceCommand`](https://github
 |:-------------------------------------------------------------------------------------- |:-------------------------------------------- |
 | `<a href="<portlet:resourceURL id="/p8v5/download" />">Download</a>` | `mvc.command.name=/p8v5/download`            |
 
-ビューの **Download** リンクをクリックすると、`P8V5DownloadMVCResourceCommand` の `serveResource` メソッドを呼び出します。
+ビューの *Download* リンクをクリックすると `P8V5DownloadMVCResourceCommand` の `serveResource` メソッドが呼び出されます。
 
 ## 次のステップ
 
-これで、MVCリソースコマンドの使用方法がわかりました。 ポートレットのコンテンツをローカライズする場合は、[Using Localized Messages](./using-localized-messages-in-an-mvc-portlet.md)を参照してください。 モデルレイヤー、永続レイヤー、およびサービスレイヤーを開発する準備ができている場合は、 [サービスビルダー](../../data-frameworks/service-builder.md) をご覧ください。
+これで、MVCリソースコマンドの使用方法がわかりました。 ポートレットのコンテンツをローカライズする場合は、[Using Localized Messages](./using-localized-messages-in-an-mvc-portlet.md)を参照してください。 モデルレイヤー、永続レイヤー、およびサービスレイヤーを開発する準備ができている場合は、[Service Builder](../../data-frameworks/service-builder.md)をご覧ください。
 
 ## 関連トピック
 

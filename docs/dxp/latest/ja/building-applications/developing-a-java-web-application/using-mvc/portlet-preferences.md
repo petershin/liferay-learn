@@ -2,19 +2,19 @@
 
 管理者とユーザーに、ポートレットのルック&フィールを使用してポートレットをカスタマイズする方法を提供できます。 ポートレットのルック&フィールを任意のMVCポートレットに追加して、ユーザーがプリファレンスにアクセスして設定するためのUIを提供できます。
 
-ポートレットのルック&フィールは、アプリケーションの構成とは別に保存されるプロパティであることに注意してください。 詳細については、[ポートレットレベルの設定s](../../core-frameworks/configuration-framework/portlet-level-configuration.md)を参照してください。
+ポートレットのルック&フィールは、アプリケーションの構成とは別に保存されるプロパティであることに注意してください。 詳細については、[Portlet Level Configuration](../../core-frameworks/configuration-framework/portlet-level-configuration.md)を参照してください。
 
 ## サンプル実装を参照する
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. サンプルをダウンロードして解凍します。
+1. サンプルをダウンロードし、解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-p1z2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-p1z2.zip -O
     ```
 
     ```bash
@@ -41,11 +41,11 @@
 
 1. P1Z2ポートレットをページに追加します。 サンプルポートレットは、サンプルウィジェットの下にあります。 デフォルトのカラー変数が青に設定されていることに注意してください。
 
-1. ポートレットのオプションアイコン（![options icon](../../../images/icon-options.png)）をクリックし、 ［**設定**］ をクリックします。 ポートレットの設定ウィンドウが開きます。
+1. ポートレットのオプションアイコン（![options icon](../../../images/icon-options.png)）をクリックし、*［設定］*をクリックします。 ポートレットの設定ウィンドウが開きます。
 
     ![構成をクリックして、ポートレットの設定を開きます](./portlet-preferences/images/01.png)
 
-1. 別の色を選択し、 ［**保存**］ をクリックします。 設定メニューを閉じると、ポートレットに新しい選択が表示されます。
+1. 別の色を選択し、*［保存］*をクリックします。 設定メニューを閉じると、ポートレットに新しい選択が表示されます。
 
 次に設定の仕組みを確認します。
 

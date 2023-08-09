@@ -1,14 +1,14 @@
-# `nestedFields` を使って関連するエントリーをクエリーする
+# `nestedFields` を使って関連するエントリーをクエリーする。
 
 {bdg-secondary}`Liferay 7.4 U69+/GA69+で利用可能`
 
 `nestedFields` パラメータは、Liferay が1つの GET リクエストで複数のレベルの関連オブジェクトエントリを返すようにします。 `nestedFields` パラメータに、クエリに含めるリレーションシップ名をコンマで区切って渡します： `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. リレーションシップが複数のレベルにまたがる場合は、 `nestedFieldsDepth` パラメータを必要な深さに設定します。 最大5レベルまで含めることができる（例： `nestedFieldsDepth=5`）。
 
 ```{tip}
-`nestedFields` パラメータは、複数のリクエストを必要とするような関連するエントリを取得することで、リクエストを最適化します。 関連するエントリーのみを返すために、Liferayは専用の [関連API](./../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を提供します。 概要については、[関連REST APIの利用](./using-relationship-rest-apis.md)を参照してください。
+nestedFields` パラメータは、複数のリクエストを必要とするような関連するエントリを取得することで、リクエストを最適化します。 関連するエントリーのみを返すために、Liferayは専用の[関連API](./../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を提供します。 概要については、[関連REST APIの利用](./using-relationship-rest-apis.md)を参照してください。
 ```
 
-続行するには、新しいLiferay 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。 次に、 [スクリプトを実行する。](#creating-and-querying-related-object-entries) 関連エントリーを作成し、 `nestedFields` パラメーターを使用してクエリーする。
+続行するには、新しいLiferay 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。 次に、 [スクリプトを実行する。](#creating-and-querying-related-object-entries) 関連エントリーを作成し、 `nestedFields` パラメーターを使用してクエリーする。
 
 ## Liferayインスタンスのセットアップ
 
@@ -19,70 +19,70 @@
 
 ### 関連オブジェクト定義の作成
 
-1. **グローバルメニュー** (![Global Menu](../../../../images/icon-applications-menu.png)) &rarr; **［コントロールパネル］** tab, &rarr; **［システム設定］** の順に開きます。
+1. グローバル・メニュー(![グローバル・メニュー](../../../../images/icon-applications-menu.png))を開き、[コントロール・パネル(*Control Panel*)]タブに移動し、[オブジェクト(*Objects*)]をクリックします。
 
 1. [Create](../../creating-and-managing-objects/creating-objects.md) 3つのオブジェクトドラフトを作成します。
 
    最初のオブジェクト
 
-    | フィールド | 値 |
-    | :--- | :--- |
-    | ラベル | `有能` |
-    | 複数のラベル | `エイブル` |
-    | 名前 | `有能` |
+   | フィールド | 値 |
+   | :--- | :--- |
+   | ラベル | `Able` |
+   | 複数形のラベル | `Ables` |
+   | 名前 | `Able` |
 
    2番目のオブジェクト
 
-    | フィールド | 値 |
-    | :--- | :--- |
-    | ラベル | `ベイカー` |
-    | 複数のラベル | `パン屋` |
-    | 名前 | `ベイカー` |
+   | フィールド | 値 |
+   | :--- | :--- |
+   | ラベル | `Baker` |
+   | 複数形のラベル | `Bakers` |
+   | 名前 | `Baker` |
 
    3番目のオブジェクト
 
-    | フィールド | 値 |
-    | :--- | :--- |
-    | ラベル | チャーリー |
-    | 複数のラベル | チャーリーズ |
-    | 名前 | チャーリー |
+   | フィールド | 値 |
+   | :--- | :--- |
+   | ラベル | `Charlie` |
+   | 複数形のラベル | `Charlies` |
+   | 名前 | `Charlies` |
 
-1. 各オブジェクトのドラフトに「名前」テキストフィールドを追加します。
+1. 各オブジェクトのドラフトに`名前`テキストフィールドを追加する。
 
-    | ラベル | フィールド名 | タイプ | 必須 |
-    | :--- | :--- | :--- | :--- |
-    | `名前` | `名前` | テキスト | &#10004; |
+   | ラベル | フィールド名 | タイプ | 必須 |
+   | :--- | :--- | :--- | :--- |
+   | `名前` | `名前` | &#10004; |
 
-1. 次の関係を定義します。
+1. 以下の関係を定義する。
 
-    アベルの場合:
+   エイブルの場合：
 
-    | ラベル | 関係名 | タイプ | オブジェクト |
-    | :--- | :--- | :--- | :--- |
-    | `パン屋ができる` | `ableToBaker` | 1 対多 | ベイカー |
+   | ラベル | リレーションシップ名 | タイプ | オブジェクト |
+   | :--- | :--- | :--- | :--- |
+   | `Able to Baker` | `ableToBaker` | `1人から多数へ` | Baker |
 
-    ベイカーさんの場合：
+   パン職人の場合
 
-    | ラベル | 関係名 | タイプ | オブジェクト |
-    | :--- | :--- | :--- | :--- |
-    | 「ベイカーからチャーリーへ」 | `パン屋とチャーリー` | 1 対多 | チャーリー |
+   | ラベル | リレーションシップ名 | タイプ | オブジェクト|
+   | :--- | :--- | :--- | :--- |
+   | `Baker to Charlie` | `bakerToCharlie` | 1人から多人数へ | Charlie |
 
-    チャーリーの場合:
+   チャーリーの場合:
 
-    | ラベル | 関係名 | タイプ | オブジェクト |
-    | :--- | :--- | :--- | :--- |
-    | 「チャーリーとエイブル」 | `チャーリートゥアブル` | 多対多 | 有能 |
+   | ラベル | 関係名 | タイプ | オブジェクト |
+   | :--- | :--- | :--- | :--- |
+   | `Charlie to Able` | `charlieToAble` | 多対多 | 有能 |
 
-1. 各オブジェクトを [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) します。
+1. [パブリッシュ](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 各オブジェクト。
 
-パブリッシュされると、Headless API を使って各オブジェクトにアクセスできるようになります。
+公開されると、ヘッドレスAPI経由で各オブジェクトにアクセスできるようになります。
 
 ## サンプルコードの準備
 
-以下のコマンドを実行して、提供されているサンプルコードをダウンロードし、解凍します：
+以下のコマンドを実行して、提供されているサンプルコードをダウンロードし、解凍してください：
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
 ```
 
 ```bash
@@ -145,7 +145,7 @@ ZIPは、REST APIを使用してオブジェクトエントリを作成、関連
 
    これは3つのBakerエントリーを作成し、 `ableToBaker` リレーションシップを使用して、指定されたAbleエントリーに関連付けます。
 
-   各Bakerエントリーには、`ableToBakerERC`、`r_ableToBaker_c_ableId`、`r_ableToBaker_c_ableERC`という3つの`ableToBaker`関係フィールドがあります。
+   それぞれの Baker エントリには 3 つの `ableToBaker` リレーションフィールドがあります： `ableToBakerERC`、`r_ableToBaker_c_ableId`、`r_ableToBaker_c_ableERC` です。
 
    ```json
    {
@@ -182,7 +182,7 @@ ZIPは、REST APIを使用してオブジェクトエントリを作成、関連
    }
    ```
 
-   以下の POST コマンドで使用するために、最初のベーカー・エントリ ID をコピーする。
+   次の POST コマンドで使用するために、最初のベーカー・エントリ ID をコピーする。
 
 1. `baker-one` のIDをパラメータとして、 `Charlie_POST_ToCompany` を実行する。
 
@@ -227,7 +227,7 @@ ZIPは、REST APIを使用してオブジェクトエントリを作成、関連
    }
    ```
 
-   これで、3つのチャーリー・エントリーが1つのベイカー・エントリーに関連し、そのエントリー自体がエイブル・エントリーに関連していることになる。 しかし、基本的なGETリクエストを使ってチャーリーエントリーを問い合わせた場合、レスポンスにはチャーリーエントリーの詳細しか含まれません。 関連するベイカーやエイブルのエントリーの詳細は含まれていない。 これらのエントリの詳細を返すには、 `nestedFields` および `nestedFieldsDepth` パラメータを使用する必要があります。
+   これで、3つのチャーリー・エントリーが1つのベイカー・エントリーに関連し、そのエントリー自体がエイブル・エントリーに関連していることになる。 しかし、基本的なGETリクエストでチャーリーエントリーを問い合わせた場合、レスポンスにはチャーリーエントリーの詳細しか含まれません。 関連するベイカーやエイブルのエントリーの詳細は含まれていない。 これらのエントリの詳細を返すには、 `nestedFields` および `nestedFieldsDepth` パラメータを使用する必要があります。
 
    次のGETコマンドで使用するために、最初のエントリーのIDをコピーします。
 

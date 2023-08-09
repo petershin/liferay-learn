@@ -6,7 +6,7 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
 |:------------------------- |:------------------------- |
 | <ul><li>ストラクチャーとテンプレートの情報収集</li><li>ストラクチャー権限の置換</li></ul> | <ul><li>ストラクチャーやテンプレートの作成</li><li>ストラクチャーやテンプレートの削除</li></ul> |
 
-ここでは、いくつかの [cURL](https://curl.haxx.se/) コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、構造化コンテンツの管理方法について学習していきます。 以下のトピックについて学習することができます。
+ここでは、いくつかの [cURL](https://curl.haxx.se/)コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、構造化コンテンツの管理方法について学習していきます。 以下のトピックについて学習することができます。
 
 - [環境のセットアップ](#setting-up-your-environment)
 - [使用するサービスの特定](#identifying-the-service-to-consume)
@@ -20,12 +20,12 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-その後、以下の手順で操作してください：
+次に、以下の手順を実行します。
 
-1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip) をダウンロードし、解凍する：
+1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip)をダウンロードし、解凍します：
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip -O
     ```
 
     ```bash
@@ -44,9 +44,9 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
 
 ### サイトIDの特定
 
-1. サイトメニュー(![Site menu](../../../images/icon-menu.png)）を開き、 ［**Configuration**］ &rarr; ［**Site Settings**］ に移動します。
-1. プラットフォームセクションで、 ［**Site Configuration**］ をクリックします。
-1. ［サイトID］の下でサイト識別子を見つけます。
+1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、*［Configuration］* &rarr; *［Site Settings］*に移動します。
+1. プラットフォームセクションで、*［Site Configuration］*をクリックします。
+1. ［Site ID］の下でサイト識別子を見つけます。
 
    ![［サイト設定］と［Site Configuration］オプションでサイトIDを特定します。](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
 
@@ -62,8 +62,8 @@ REST APIを使用してプログラム的にストラクチャーとテンプレ
 
 ### サンプルストラクチャーとテンプレートの特定
 
-1. サイトメニュー(![Site menu](../../../images/icon-menu.png)）を開き、 ［**Content & Data**］ &rarr; ［**Web Content**］ に移動します。
-1. ［**ストラクチャー**］ タブをクリックします。
+1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、*［Content & Data］* &rarr; *［Web Content］*に移動します。
+1. *［ストラクチャー］*タブをクリックします。
 1. IDの欄で、ストラクチャーのIDを特定します。
 
    ![［ストラクチャー］タブで、ID欄の下にあるストラクチャーの IDを確認します。](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
@@ -135,7 +135,7 @@ Webコンテンツの管理には、Liferay DXP Headless Delivery API の`Struct
    }
 ```
 
-ストラクチャーには、 `contentStructureFields`の`dataType`セクションで説明される単一のテキストフィールドがあります。 ストラクチャーにさらに要素を含めると、 `contentStructureFields`の下に追加のセクションが表示されます。 以下は、テキストフィールド(`"dataType" : "string"`）と画像フィールド(`"dataType" : "image"`）を持つストラクチャーのJSON出力部分です。
+ストラクチャーには、 `contentStructureFields`の`dataType`セクションで説明される単一のテキストフィールドがあります。 ストラクチャーにさらに要素を含めると、 `contentStructureFields`の下に追加のセクションが表示されます。 以下は、テキストフィールド（`"dataType" : "string"`）と画像フィールド（`"dataType" : "image"`）を持つストラクチャーのJSON出力部分です。
 
 ```json
 {
@@ -279,7 +279,7 @@ JSON出力には、`items`セクションの下に権限が含まれます。 �
 ```
 
 ```{note}
-権限の管理方法については、[Webコンテンツストラクチャーとテンプレートへの権限の割り当て](.../assigning-web-content-structures/assigning-permissions-to-structures and-templates.md） をご覧ください。
+権限の管理方法については、[Webコンテンツストラクチャーとテンプレートへの権限の割り当て]（.../assigning-web-content-structures/assigning-permissions-to-structures and-templates.md） をご覧ください。
 ```
 
 ## ストラクチャー権限の置換

@@ -3,7 +3,7 @@
 モジュール性があることで、特にチームとしてソフトウェアを作成することが楽しくなります。 Liferayでのモジュール開発の利点は次のとおりです。
 
 * Liferayのランタイムフレームワークは、軽量、高速、安全です。
-* このフレームワークは [OSGi](https://www.osgi.org/resources/what-is-osgi/) 規格を使用します。 他のプロジェクトでOSGiを使用した経験がある場合は、既存の知識を生かすことができます。
+* このフレームワークは[OSGi](https://www.osgi.org/resources/what-is-osgi/)規格を使用します。 他のプロジェクトでOSGiを使用した経験がある場合は、既存の知識を生かすことができます。
 * モジュールは、サービスレジストリにサービスを公開し、サービスレジストリからサービスを利用します。 サービス契約はサービス・プロバイダーとコンシューマから疎結合されており、レジストリが契約を自動的に管理します。
 * モジュールの依存関係は、コンテナによって自動的に、かつ動的に管理されます（再起動は必要ありません）。
 * コンテナは[モジュールのライフサイクル](./module-lifecycle.md)を動的に管理します。 Liferayの実行中にモジュールのインストール、開始、更新、停止、およびアンインストールができるため、デプロイメントを簡単に行うことができます。
@@ -18,9 +18,9 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 
 1. **API** モジュールはインターフェイスを定義します。
 
-1. **実装** モジュールは、インターフェイスを実装する具象クラスを提供します。
+1. **実装**モジュールは、インターフェイスを実装する具象クラスを提供します。
 
-1. **クライアント** モジュールはAPIを消費します。
+1. **クライアント**モジュールはAPIを消費します。
 
 [Gogo シェル](../fundamentals/using-the-gogo-shell.md)でユーザーが名前を入力したときにあいさつ文を表示する簡単なコマンドを開発することで、それぞれを作成する方法を学習します。
 
@@ -29,15 +29,16 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 モジュールプロジェクトがどのように見えるかを確認し、Liferayのモジュール開発機能が実際に動作しているのを見てみましょう。
 
 ## Gogo シェルコマンドの例をデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順でサンプルをデプロイします。
+次に、次の手順に従ってサンプルをデプロイします。
 
-1. Download and unzip `liferay-r9u2.zip`.
+1. `liferay-r9u2.zip` をダウンロードして解凍します。
 
     ```bash
-    curl hhttps://learn.liferay.com/dxp/latest/ja/liferay-internals/architecture/liferay-r9u2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/architecture/liferay-r9u2.zip -O
     ```
 
     ```bash
@@ -99,6 +100,7 @@ APIモジュールが最初です。 これは、プロバイダーが実装し�
 `r9u2-api`モジュールフォルダには、`bnd.bnd`メタデータファイル、 `build.gradle` スクリプト、およびJavaコードが含まれています。
 
 非常にシンプルです。 Javaソースファイル以外には、Gradleビルドスクリプト（任意のビルドシステムを使用できます）と`bnd.bnd`という構成ファイルの2つのファイルしかありません。 `bnd.bnd`ファイルは、モジュールの説明と設定を行います。
+
 ```{literalinclude} ./osgi-and-modularity/resources/liferay-r9u2.zip/r9u2-api/bnd.bnd
 ```
 
@@ -110,7 +112,7 @@ The `build.gradle` file specifies the module's dependencies.
 
 これは、LiferayリリースのAPI JARという1つのアーティファクトに依存しています。 これは、Liferay製品のリリースに関連するLiferay、Bnd、OSGiのアーティファクトを詰め込んだ大きなJARです。
 
-モジュールの名前は **Acme R9U2 API** です。 そのシンボリック名（一意性を確保するための名前）は `com.acme.r9u2.api` です。 次にそのセマンティックバージョンが宣言され、そのパッケージが **エクスポート** されます。つまり、他のモジュールで使用できるようになります。 このモジュールのパッケージは、他のモジュールが実装できるAPIに過ぎません。
+モジュールの名前は *Acme R9U2 API* です。 そのシンボリック名（一意性を確保するための名前）は `com.acme.r9u2.api` です。 次にそのセマンティックバージョンが宣言され、そのパッケージが*エクスポート*されます。つまり、他のモジュールで使用できるようになります。 このモジュールのパッケージは、他のモジュールが実装できるAPIに過ぎません。
 
 最後に、Javaクラスがあります。この場合はインターフェイスです。
 
@@ -142,16 +144,17 @@ The `build.gradle` file specifies the module's dependencies.
 ```
 
 APIモジュールと同じ構造、つまりビルドスクリプト、`bnd.bnd`構成ファイル、および実装クラスがあります。 唯一の違いはファイルのコンテンツです。 `bnd.bnd`ファイルが少し異なります。
+
 ```{literalinclude} ./osgi-and-modularity/resources/liferay-r9u2.zip/r9u2-impl/bnd.bnd
 ```
 
-The bundle name, symbolic name, and version are all set similarly to the API. 
+バンドル名、シンボル名、バージョンはすべて API と同様に設定される。
 
-Finally, there's no `Export-Package` declaration. A client (which is the project's third module) just wants to use the API: it doesn't care how its implementation works as long as the API returns what it's supposed to return. The client, then, only needs to declare a dependency on the API; the service registry injects the appropriate implementation at run time. 
+最後に、`Export-Package`宣言はない。クライアント（これはプロジェクトの3番目のモジュールである）はAPIを使いたいだけである。APIが返すべきものを返す限り、その実装がどのように動作するかは気にしない。クライアントはAPIへの依存を宣言するだけでよく、サービスレジストリは実行時に適切な実装を注入する。
 
-Pretty cool, eh? 
+なかなかクールだろう？
 
-All that's left, then, is the class that provides the implementation:
+あとは、実装を提供するクラスだけだ：
 
 ```{literalinclude} ./osgi-and-modularity/resources/liferay-r9u2.zip/r9u2-impl/src/main/java/com/acme/r9u2/internal/R9U2Greeter.java
 :language: java
@@ -191,12 +194,13 @@ All that's left, then, is the class that provides the implementation:
 ```
 
 ここでも、ビルドスクリプト、`bnd.bnd`ファイル、およびJavaクラスがあります。 このモジュールの`bnd.bnd`ファイルは、プロバイダーのものとほとんど同じです。
+
 ```{literalinclude} ./osgi-and-modularity/resources/liferay-r9u2.zip/r9u2-osgi-commands/bnd.bnd
 ```
 
-There's nothing new here: you declare the same things you declared for the provider. 
+プロバイダーで宣言したことと同じことを宣言するのだ。
 
-The client module depends on the API module and the `release.portal.api` artifact. Here's the `r9u2-osgi-commands` module's `build.gradle` file:
+クライアントモジュールはAPIモジュールと `release.portal.api` アーティファクトに依存する。以下は `r9u2-osgi-commands` モジュールの `build.gradle` ファイルである：
 
 ```{literalinclude} ./osgi-and-modularity/resources/liferay-r9u2.zip/r9u2-osgi-commands/build.gradle
 :language: groovy
@@ -209,7 +213,7 @@ Javaクラスでは、もう少し続きがあります。
 :lines: 8-21
 ```
 
-上記のメソッドは、`Greeter`の`greet`メソッドを呼び出します。 `com.acme.r9u2.Greeter`は、実装モジュールが登録するOSGiサービスタイプです。 レジストリから`Greeter`サービスを取得するには、`Greeter`フィールド`_greeter`に [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) アノテーションを追加する必要があります。
+上記のメソッドは、`Greeter`の`greet`メソッドを呼び出します。 `com.acme.r9u2.Greeter`は、実装モジュールが登録するOSGiサービスタイプです。 レジストリから`Greeter`サービスを取得するには、`Greeter`フィールド`_greeter`に[`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) アノテーションを追加する必要があります。
 
 `R9U2OSGiCommands`クラスは、独自のタイプのOSGiサービスを提供します。 2つのプロパティは、`r9u2`というスコープで`greet` というコマンド関数を使用してGogoシェルコマンドを定義します。 デプロイされた`R9U2OSGiCommands`コンポーネントは、`String`を入力として受け取るGogo シェルコマンド`r9u2:greet`を提供します。
 
@@ -232,7 +236,7 @@ Liferayのソースから典型的なアプリケーションを見てみると�
 
 ## 関連トピック
 
-* [OSGi Alliance](https://www.osgi.org/)
+* [OSGiアライアンス](https://www.osgi.org/)
 * [Getting started with OSGi at OSGi EnRoute](https://enroute.osgi.org/)
 * [アプリケーションの構築](../../building-applications/developing-a-java-web-application.md)
 * [開発者ツールの概要](../../building-applications/tooling/developer-tools-overview.md)

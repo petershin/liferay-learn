@@ -1,18 +1,18 @@
 # Liferay Talendコンポーネントのインストール
 
-{bdg-warning}`非対応`
+{bdg-warning}`未対応`
 
-LiferayのTalend Open Studio用コンポーネントは、Liferay DXP/PortalとMySQL、SAP、Salesforceなどの外部システム、あるいはファイルとの間でデータのインポートおよびエクスポートを行うことができます。 これらのコンポーネントを使用するには、Talend Open Studioにコンポーネントを追加する必要があります。
+LiferayのTalend Open Studio用コンポーネントは、Liferay DXP/PortalとMySQL、SAP、Salesforceなどの外部システム、あるいはファイルとの間でデータのインポート/エクスポートが可能です。 これらのコンポーネントを使用するには、Talend Open Studioに追加する必要があります。
 
 ## 前提条件
 
-Liferayコンポーネントをインストールするには、JDK 1.8+、Apache Maven 3.3+、および [DXP/Portalコードのローカルコピー](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend) が必要です。 また、 [Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) 、 [Components API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) 、すでにインストールされている必要があります。
+Liferay コンポーネントのインストールには、JDK 1.8+、Apache Maven 3.3+、および [DXP/Portal コード](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/etl/talend)のローカルコピーが必要です。 また、 [Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) [Components API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) が既にインストールされている必要があります。
 
 ## Talend Open Studioの構成
 
-Talend Open Studioをインストールした後、 `[TOS_ROOT]/configuration/config.ini` ファイルが `maven.repository=global`を設定していないことを確認してください。 存在する場合は、その行を削除するか、コメントアウトしてください。
+Talend Open Studioをインストールした後、 `[TOS_ROOT]/configuration/config.ini` ファイルが `maven.repository=global`を設定していないことを確認します。 存在する場合は、その行を削除するか、コメントアウトする。
 
-Maven は最近、安全でないリポジトリ接続を非推奨としているため、 `[TOS_ROOT]/configuration/maven_user_setting.xml` ファイルに以下のスクリプトを含めます。
+Mavenは最近、安全でないリポジトリ接続を廃止したため、 `[TOS_ROOT]/configuration/maven_user_setting.xml` ファイルに以下のスクリプトを含めます：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -29,19 +29,19 @@ Maven は最近、安全でないリポジトリ接続を非推奨としてい�
 </settings>
 ```
 
-リポジトリミラーの位置は、m2m プラグインがリポジトリに安全に接続できることを保証します。
+リポジトリのミラーの場所は、m2mプラグインがリポジトリに安全に接続できるようにします。
 
 ## Talendコンポーネントの構築
 
-Talendコンポーネントをインストールする前に、ローカルの`liferay-portal`リポジトリの [modules/etl/talend](https://github.com/liferay/liferay-portal/tree/7.4.x/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend) で、`mvn clean install`を実行する必要があります。
+Talendコンポーネントをインストールする前に、ローカルの `liferay-portal` リポジトリの [modules/etl/talend](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/etl/talend/talend-definition/src/main/java/com/liferay/talend) フォルダで `mvn clean install` を実行する必要があります。
 
-これにより、以下のディレクトリ/フォルダーにjarバンドルファイルが生成されます。
+これにより、以下のディレクトリ/フォルダーにjarバンドルファイルが生成される：
 
-* talend-definition/target/`
+* `talend-definition/target/`
 * `talend-common/target/`
 * `talend-runtime/target/`
 
-JARファイルは、これらのローカルMavenリポジトリフォルダにも公開されます。
+JARファイルは、これらのローカルmavenリポジトリフォルダにも公開される：
 
 * `$USER_HOME/.m2/repository/com/liferay/com.liferay.talend`
 * `$USER_HOME/.m2/repository/com/liferay/com.liferay.common`
@@ -49,18 +49,18 @@ JARファイルは、これらのローカルMavenリポジトリフォルダに
 * `$USER_HOME/.m2/repository/com/liferay/com.liferay.talend.runtime`
 
 ```{note}
-Mavenのビルドは、すべてのテストが合格した場合にのみ成功します。 エラーが発生した場合は、`talend-definition`, `talend-common`, `talend-runtime` のサブフォルダで、個別に `mvn clean install -DskipTests` を実行してください。 すべてのビルドが成功したら、`modules/etl/talend` フォルダに戻り、`mvn clean install`を実行してください。
+Mavenのビルドは、すべてのテストがパスした場合にのみ成功する。 エラーが発生した場合は、`talend-definition`、`talend-common`、`talend-runtime` のサブフォルダでそれぞれ `mvn clean install -DskipTests` を実行してほしい。 すべてのビルドが成功したら、`modules/etl/talend` フォルダに戻り、`mvn clean install` を実行する。
 ```
 
-## Talend Studioにコンポーネントを登録する
+## Talend Studioへのコンポーネントの登録
 
-Mavenのビルドが成功したら、以下の手順でTalend Open StudioにLiferay Componentsを登録します。
+Mavenビルドが成功したら、以下の手順に従ってTalend Open StudioにLiferayコンポーネントを登録します。
 
-1. Talend Open Studioを開いている場合は、閉じます。
+1. Talend Open Studioが開いている場合は閉じます。
 
-1. 生成された `com.liferay.talend.definition-x.y.z-SNAPSHOT.jar` バンドルを `liferay-portal/modules/etl/talend/talend-definition/target` フォルダーから `[TOS_ROOT]/plugins` フォルダーにコピーしてください。
+1. 生成された `com.liferay.talend.definition-x.y.z-SNAPSHOT.jar` バンドルを `liferay-portal/modules/etl/talend/talend-definition/target` フォルダから `[TOS_ROOT]/plugins` フォルダにコピーします。
 
-1. `[TOS_ROOT]/configuration/config.ini` ファイル内の `osgi.bundles` キーを更新し、新しく追加された定義バンドルが含まれるようにします。
+1. `[TOS_ROOT]/configuration/config.ini` ファイルの `osgi.bundles` キーを更新して、新しく追加された定義バンドルを含めます。
 
    ```properties
    osgi.bundles=org.eclipse.equinox.common@2:start,org.eclipse.update.configurator@3:start,
@@ -69,27 +69,27 @@ Mavenのビルドが成功したら、以下の手順でTalend Open StudioにLif
    com.liferay.talend.definition-x.y.z-SNAPSHOT.jar@start
     ```
 
-1. `org.eclipse*` ファイルを `[TOS_ROOT]/configuration/` フォルダーから削除します。
+1. `[TOS_ROOT]/configuration/` フォルダから `org.eclipse*` ファイルをすべて削除します。
 
-1. `com.liferay.talend`、 `com.liferay.talend.common`、 `com.liferay.talend.runtime` フォルダをローカル `$USER_HOME/.m2/repository/com/liferay/` から `$TOS_ROOT/configuration/.m2/repository/com/liferay/` にコピーしてください。
+1. `com.liferay.talend`, `com.liferay.talend.common`, and `com.liferay.talend.runtime` フォルダーをローカルの `$USER_HOME/.m2/repository/com/liferay/` フォルダーから `$TOS_ROOT/configuration/.m2/repository/com/liferay/` フォルダーにコピーします。
 
-1. Talend Open Studioを起動します。 Liferay コンポーネントは **Business** &rarr; **Liferay** in **Palette** タブに表示されます。
+1. Talend Open Studioを起動します。 Liferay コンポーネントは *Business* &rarr; *Liferay* *Palette* タブの下に表示されます。
 
-   ![コンポーネントは、パレットタブのビジネス &rarr; Liferayに表示されます。](liferay-talend-components-overview/images/01.png)
+   ![コンポーネントはPaletteタブのBusiness &rarr; Liferayの下に表示されます。](liferay-talend-components-overview/images/01.png)
 
-## Liferayコンポーネントを更新する
+## Liferay コンポーネントのアップデート
 
-Liferayコンポーネントのコードベースに変更があった場合、Talendコンポーネントの構築から上記の手順を繰り返すことで、コンポーネントを最新バージョンに更新することができます。
+Liferayコンポーネントのコードベースに変更があった場合は、Talendコンポーネントのビルドから上記の手順を繰り返すことで、コンポーネントを最新バージョンにアップデートすることができます。
 
-また、古いファイルやフォルダーを削除して置き換える必要があります。
+また、古いファイルやフォルダを削除して置き換える必要があります：
 
-* 古い `.jar` 定義ファイルを `[TOS_ROOT]/plugins フォルダにある`を削除します。
-* `com.liferay.talend`, `com.liferay.talend.common`, `com.liferay.talend.runtime` フォルダを `[TOS_ROOT]/configuration/.m2/repository/com/liferay/`で置き換えてください。
+* `[TOS_ROOT]/pluginsフォルダ`にある古い `.jar` 定義ファイルを削除する。
+* `[TOS_ROOT]/configuration/.m2/repository/com/liferay/`の `com.liferay.talend`、 `com.liferay.talend.common`、 `com.liferay.talend.runtime` フォルダを置き換えます。
 
-コンポーネントの更新が終了したら、古いコンポーネントを使用した既存のTalendジョブを更新する必要があります。 これは、ジョブからLiferayコンポーネントを削除し、再度追加することを意味します。
+コンポーネントの更新が完了したら、古いコンポーネントを使用していた既存のTalendジョブを更新する必要があります。 これはジョブからLiferayコンポーネントを削除し、再度追加することを含みます。
 
 ```{note}
-交換する前に、必ず各コンポーネントの構成を記録してください。 これにより、ジョブが以前と同じ機能を維持することができます。
+交換する前に、各コンポーネントの構成を必ず文書化してください。 これは、あなたの仕事が以前と同じ機能を維持することを保証するのに役立ちます。
 ```
 
 ## 関連トピック

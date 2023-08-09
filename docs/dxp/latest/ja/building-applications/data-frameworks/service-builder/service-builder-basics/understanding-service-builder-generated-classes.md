@@ -5,7 +5,7 @@
 サンプルプロジェクトをダウンロードして解凍することから始めます。
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/ja/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/service-builder-basics/liferay-w9b7.zip -O
 ```
 
 ```bash
@@ -172,9 +172,9 @@ APIクラスは、パブリックインターフェイス、ユーティリテ�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. サンプルをビルドしてデプロイします。
+1. サンプルをビルドしてデプロイする。
 
     ```bash
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)

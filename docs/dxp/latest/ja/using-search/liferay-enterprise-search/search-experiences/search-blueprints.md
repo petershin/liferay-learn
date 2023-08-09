@@ -3,6 +3,7 @@ toc:
   - ./search-blueprints/understanding-search-blueprints.md
   - ./search-blueprints/creating-and-managing-search-blueprints.md
   - ./search-blueprints/using-a-search-blueprint-on-a-search-page.md
+  - ./search-blueprints/collections-with-search-blueprints.md
   - ./search-blueprints/personalizing-the-search-experience.md
   - ./search-blueprints/sorting-results-in-a-search-blueprint.md
   - ./search-blueprints/search-blueprints-configuration-reference.md
@@ -20,6 +21,7 @@ toc:
 ./search-blueprints/understanding-search-blueprints.md
 ./search-blueprints/creating-and-managing-search-blueprints.md
 ./search-blueprints/using-a-search-blueprint-on-a-search-page.md
+./search-blueprints/collections-with-search-blueprints.md
 ./search-blueprints/personalizing-the-search-experience.md
 ./search-blueprints/sorting-results-in-a-search-blueprint.md
 ./search-blueprints/search-blueprints-configuration-reference.md
@@ -27,7 +29,7 @@ toc:
 ./search-blueprints/creating-and-managing-elements.md
 ```
 
-検索ブループリントは、Search Experiencesアプリケーションの最初の機能です。 これを使えば、以下のことができます。
+検索ブループリントは、Search Experiencesアプリケーションの最初の機能です。 これを使えば、次のことができる。
 
 - Liferayのデフォルトの検索ページの動作を微調整します
 - 検索ページの動作を完全にオーバーライドします

@@ -1,32 +1,32 @@
-# OAuthユーザーエージェントYAML設定リファレンス
+# OAuth ユーザーエージェント YAML 設定リファレンス
 
-OAuth ユーザーエージェントクライアント拡張は、 `client-extension.yaml` ファイルで定義することができます。
+OAuth ユーザーエージェントクライアント拡張は、 `client-extension.yaml` ファイルで定義できます。
 
-## 使用方法詳細
+## 使用法の詳細
 
-この `client-extension.yaml` ファイルは、OAuth ユーザーエージェントクライアント拡張を定義しています：
+この `client-extension.yaml` ファイルは、OAuth ユーザーエージェントクライアント拡張を定義します：
 
 ```yaml
 xray-oauth-user-agent:
     type: oAuthApplicationUserAgent
 ```
 
-[ワークスペースの例](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc) 、OAuthユーザーエージェントクライアント拡張を持つプロジェクトが含まれています。
+[サンプル・ワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) には、OAuth ユーザー・エージェント・クライアント拡張を持つプロジェクトが含まれています。
 
 ## YAML プロパティ
 
-これらのプロパティは、OAuthユーザーエージェントクライアントエクステンションに固有のものです：
+これらのプロパティはOAuthユーザーエージェントクライアント拡張に固有のものです：
 
-| 名前                 | データ型        | デフォルト値                                           | 説明                                       |
-|:------------------ |:----------- |:------------------------------------------------ |:---------------------------------------- |
-| `description`      | 文字列         |                                                  | クライアントエクステンションの説明です。                     |
-| `homePageURL`      | 文字列（URLの一部） | `https://$[conf:ext.lxc.liferay.com.mainDomain]` | OAuth2アプリケーションプロファイルのリソースサーバーのベースアドレスです。 |
-| `name`             | 文字列         | (OAuth2アプリケーションプロファイルから派生）。                      | OAuth2アプリケーションプロファイルの名前です。               |
-| `privacyPolicyURL` | URL         |                                                  | OAuth2アプリケーションプロファイルのプライバシーポリシーのURLです。   |
-| `scopes`           | 文字列[]       | []                                               | OAuth2 アプリケーションプロファイルに関連づけられたスコープの配列です。  |
+| 名前                 | データ型        | デフォルト値                                           | 説明                                      |
+|:------------------ |:----------- |:------------------------------------------------ |:--------------------------------------- |
+| `description`      | 文字列         |                                                  | クライアント拡張の説明                             |
+| `homePageURL`      | 文字列（URLの一部） | `https://$[conf:ext.lxc.liferay.com.mainDomain]` | OAuth2 アプリケーションプロファイルのリソースサーバーのベースアドレス。 |
+| `name`             | 文字列         | (OAuth2アプリケーション・プロファイルから派生）。                     | OAuth2 アプリケーションプロファイルの名前。               |
+| `privacyPolicyURL` | URL         |                                                  | OAuth2 アプリケーションプロファイルのプライバシーポリシーの URL。  |
+| `scopes`           | 文字列[]       | []                                               | OAuth2 アプリケーションプロファイルに関連付けられたスコープの配列。   |
 
 ## 関連トピック
 
-* [マイクロサービスクライアント拡張機能](../microservice-client-extensions.md)
-* [クライアントエクステンションの操作](../working-with-client-extensions.md)
-* [OAuth Headless Server YAML 設定リファレンス](./oauth-headless-server-yaml-configuration-reference.md)
+* [マイクロサービスのクライアント拡張](../microservice-client-extensions.md)
+* [クライアント拡張との連携](../working-with-client-extensions.md)
+* [OAuth ヘッドレスサーバー YAML 設定リファレンス](./oauth-headless-server-yaml-configuration-reference.md)

@@ -3,15 +3,16 @@
 アプリケーションで作業するときに、複数のモジュールがあり、それぞれに独自の言語キーが設定されている場合があります。 さまざまな言語プロパティファイルをさまざまな場所に保持するのではなく、それらを1つの場所に統合します。 このサンプルプロジェクトでは、言語キーを異なるモジュール間で共有する方法について示しています。
 
 ## チュートリアルコードを実行する
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. サンプルをダウンロードして解凍します。
+1. サンプルをダウンロードし、解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/developing-a-java-web-application/using-mvc/liferay-u8t2.zip -O
     ```
 
     ```bash

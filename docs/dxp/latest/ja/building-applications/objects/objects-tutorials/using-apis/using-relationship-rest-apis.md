@@ -4,16 +4,16 @@
 
 カスタムオブジェクトやシステムオブジェクトに関連を追加すると、Liferayはそれらの関連にアクセスするためのRESTエンドポイントを生成します。 エントリーの関連付けや関連付けの解除、エントリーの関連エントリーを返すことができます。 これらのエンドポイントは、1対多の関連では親オブジェクトに、多対多の関連では両方のオブジェクトに追加されます。
 
-続行するには、新しいLiferay 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。 その後、スクリプトを実行してオブジェクトエントリーを作成し、互いの関連を管理します。
+続行するには、新しいLiferay 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。 その後、スクリプトを実行してオブジェクトエントリーを作成し、互いの関連を管理します。
 
 ## Liferayインスタンスのセットアップ
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、[作成](../../creating-and-managing-objects/creating-objects.md) 3 つの関連するカスタム オブジェクトを作成します。
+次に、[create](../../creating-and-managing-objects/creating-objects.md) 関連する3つのカスタム・オブジェクトを作成します：
 
-1. **グローバル メニュー**(![グローバル メニュー](../../../../images/icon-applications-menu.png)) を開き、 **コントロール パネル** タブに移動して、 **オブジェクト** 。
+1. [グローバルメニュー](../../../../../images/icon-applications-menu.png))を開き、[コントロールパネル](*Control Panel*)タブに移動し、[オブジェクト](*Objects*)をクリックします。
 
 1. 3 つのオブジェクト ドラフトを作成します。
 
@@ -74,7 +74,7 @@
 | Charlie | PUT         | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putCharlieAbleToCharlieAble`     |
 
 ```{tip}
-サイトおよび会社のオブジェクトに対して生成される API の完全なリストについては、[Objects Headless Framework Integration](../../undering-object-integrations/headless-framework-integration.md) を参照してください。 Liferay API Explorer の`[server]:[port]/o/api` (例: `localhost:8080/o/api`) でカスタム オブジェクト API を表示およびテストできます。 *REST アプリケーション* をクリックし、API を選択します。
+サイトと会社のオブジェクトのために生成されたAPIの完全なリストは、[Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。カスタムオブジェクト API は Liferay API Explorer の `[server]:[port]/o/api` で表示、テストできます（例：`localhost:8080/o/api`）。REST Applications* をクリックし、API を選択します。
 ```
 
 ## サンプルコードを準備する
@@ -82,7 +82,7 @@
 以下のコマンドを実行し、提供されたサンプルコードをダウンロードし、解凍してください：
 
 ```bash
-curl https://learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-f9m2.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-f9m2.zip -O
 ```
 
 ```bash

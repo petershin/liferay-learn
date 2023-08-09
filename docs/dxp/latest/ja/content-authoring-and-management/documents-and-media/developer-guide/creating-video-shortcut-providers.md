@@ -2,21 +2,21 @@
 
 > Liferay DXP 7.4以降で利用可能
 
-デフォルトでは、Liferayの外部ビデオショートカットは、 [YouTube](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/YouTubeDLVideoExternalShortcutProvider.java) 、 [Vimeo](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/VimeoDLVideoExternalShortcutProvider.java) 、 [Facebook](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/FacebookDLVideoExternalShortcutProvider.java) 、および [Twitch](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/TwitchDLVideoExternalShortcutProvider.java) をサポートしています。 ただし、この機能を拡張して、他のビデオソースをサポートすることができます。
+デフォルトでは、Liferayの外部ビデオショートカットは、[YouTube](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/YouTubeDLVideoExternalShortcutProvider.java)、[Vimeo](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/VimeoDLVideoExternalShortcutProvider.java)、[Facebook](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/FacebookDLVideoExternalShortcutProvider.java)、および[Twitch](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider/TwitchDLVideoExternalShortcutProvider.java)をサポートしています。 ただし、この機能を拡張して、他のビデオソースをサポートすることができます。
 
 次の手順に従って、独自のビデオショートカットプロバイダーを作成します。
 
-1. **OSGIコンポーネントアノテーション** ：`@Component`アノテーションを使用して、OSGiフレームワーク内でプロバイダーを`DLVideoExternalShortcutProvider.class`サービスとして宣言します。
+1. **OSGIコンポーネントアノテーション**：`@Component`アノテーションを使用して、OSGiフレームワーク内でプロバイダーを`DLVideoExternalShortcutProvider.class`サービスとして宣言します。
 
-1. [**`DLVideoExternalShortcutProvider`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/provider/DLVideoExternalShortcutProvider.java) ：`DLVideoExternalShortcutProvider`インターフェースを実装します。
+1. [**`DLVideoExternalShortcutProvider`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/provider/DLVideoExternalShortcutProvider.java)：`DLVideoExternalShortcutProvider`インターフェースを実装します。
 
-1. **インターフェイスメソッドのオーバーライド** ：インターフェイスの`getDLVideoExternalShortcut()`メソッドをオーバーライドします。 このメソッドは、 [`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java) インターフェイスのインスタンスを作成し、URL文字列を受け取ります。 実装において次のことが実行されるか確認してください。
+1. **インターフェイスメソッドのオーバーライド**：インターフェイスの`getDLVideoExternalShortcut()`メソッドをオーバーライドします。 このメソッドは、[`DLVideoExternalShortcut`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/document-library/document-library-api/src/main/java/com/liferay/document/library/video/external/shortcut/DLVideoExternalShortcut.java)インターフェイスのインスタンスを作成し、URL文字列を受け取ります。 実装において次のことが実行されるか確認してください。
 
    * 受信したURLが定義済みのURLパターンと一致するかどうかを確認します。
    * URLがパターンに一致しない場合、プログラムは`null`を返す必要があります。 Liferayは、一致するものを探して他の利用可能なプロバイダーをチェックします。
    * URLがパターンと一致する場合は、URLを解析し、外部ソースから追加情報をフェッチして、収集した情報を含む`DLVideoExternalShortcut`インスタンスを返します。
 
-1. **`DLVideoExternalShortcut`メソッドのオーバーライド** ：`getDLVideoExternalShortcut()`メソッドによって返される`DLVideoExternalShortcut`インスタンスに必要なメソッドをオーバーライドします。
+1. **`DLVideoExternalShortcut`メソッドのオーバーライド**：`getDLVideoExternalShortcut()`メソッドによって返される`DLVideoExternalShortcut`インスタンスに必要なメソッドをオーバーライドします。
 
    * `getURL()`：元のビデオURLを取得します。
    * `renderHTML()`：ユーザーインターフェイスにビデオを埋め込みます。 これは通常、`iframe`をレンダリングしますが、ユーザー向けにビデオをレンダリングするHTMLビデオタグにすることもできます。
@@ -27,18 +27,19 @@
    * `getThumbnailURL()`：このメソッドを使用して、ビデオのサムネイルを取得します。デフォルト値は`null`です。
    * `getTitle()`：このメソッドを使用して、元のビデオのタイトルを取得します。デフォルト値は`null`です。
 
-以下は、 [外部のビデオショートカットプロバイダーのサンプル](liferay-g9b6.zip) で、独自に実装するための最低限の要件を示しています。 より複雑な例については、 [既存のプロバイダー](https://github.com/liferay/liferay-portal/tree/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider) を参照してください。
+以下は、[外部のビデオショートカットプロバイダーのサンプル](liferay-g9b6.zip)で、独自に実装するための最低限の要件を示しています。 より複雑な例については、[既存のプロバイダー](https://github.com/liferay/liferay-portal/tree/master/modules/apps/document-library/document-library-video/src/main/java/com/liferay/document/library/video/internal/video/external/shortcut/provider)を参照してください。
 
 ## サンプルビデオプロバイダーのデプロイ
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. サンプルモジュールをダウンロードして解凍します。
+1. サンプルモジュールをダウンロードして解凍する。
 
    ```bash
-   curl https://learn.liferay.com/docs/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9b6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9b6.zip -O
    ```
 
    ```bash
@@ -64,7 +65,7 @@
    STARTED com.acme.G9B6.impl-1.0.0 [1356]
    ```
 
-1. 短いDailymotionのURLで新しい外部動画ショートカットを作成し、モジュールが機能していることを確認します <!--TASK: add link once article is merged--> （例：https://dai.ly/x7szh28）。
+1. 短いDailymotionのURLで新しい外部動画ショートカットを作成し、モジュールが機能していることを確認します<!--TASK: add link once article is merged--> （例：https://dai.ly/x7szh28）。
 
    成功した場合、LiferayはDailymotionをサポートされているプラットフォームとして認識します。
 

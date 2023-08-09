@@ -1,20 +1,20 @@
-# JavaScriptクライアントエクステンションの使用
+# JavaScriptクライアント拡張の使用
 
-{bdg-secondary}`利用可能 Liferay 7.4 U45+/GA45+`
+{bdg-secondary}`Liferay 7.4 U45+/GA45+で利用可能`
 
-JavaScript(JS）クライアントエクステンションを使えば、Liferayのコードへの依存やテーマの開発を気にすることなく、Liferayの任意のページ上で独自のJavaScriptを実行することができます。 ここでは、JavaScriptのクライアントエクステンション( [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/sample-workspace) から）を使って始めます。
+JavaScript（JS）クライアント拡張を使い、Liferayのコードへの依存やテーマの開発を気にすることなく、Liferayの任意のページ上で独自のJavaScriptを実行できます。 ここでは、JavaScriptのクライアント拡張（[サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)）から始めます。
 
 ## 前提条件
 
-クライアントエクステンションの開発を始めるために、
+クライアント拡張の開発を開始するには、
 
-1. Java(JDK8またはJDK11）をインストールする。
+1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM Configuration](../../../installation-and-upgrades/reference/jvm-configuration.md) を参照してください。
+   対応するJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
    ```
 
-1. サンプルワークスペースをダウンロードし、解凍してください：
+1. サンプルワークスペースをダウンロードし、解凍します。
 
    ```bash
    curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
@@ -24,11 +24,11 @@ JavaScript(JS）クライアントエクステンションを使えば、Liferay
    unzip com.liferay.sample.workspace-latest.zip
    ```
 
-必要なツールやJSクライアント拡張機能は、サンプルワークスペースに含まれています。
+必要なツールやJSクライアント拡張は、サンプルワークスペースに含まれています。
 
-## クライアントエクステンションを調べる
+## クライアント拡張の検討
 
-JSクライアント拡張は、ワークスペースの `client-extensions/sample-global-js/` フォルダにあります。 `client-extension.yaml` ファイルに定義されています：
+JSクライアント拡張は、ワークスペースの`client-extensions/sample-global-js/`フォルダにあります。 `client-extension.yaml` ファイルに定義されています。
 
 ```yaml
 sample-global-js:
@@ -37,9 +37,9 @@ sample-global-js:
     url: global.js
 ```
 
-クライアントエクステンションのIDは `sample-global-js` で、 `タイプ` や追加する JavaScript ファイルなど、JS クライアントエクステンションの主要な構成が含まれています。 プロパティの詳細については、 [JavaScript YAML設定リファレンス](../javascript-yaml-configuration-reference.md) を参照してください。
+クライアント拡張のIDは `sample-global-js` で、`type`や追加する JavaScript ファイルなど、JSクライアント拡張の主要な設定項目が含まれています。 プロパティの詳細については、 [JavaScript YAML設定リファレンス](../javascript-yaml-configuration-reference.md) を参照してください。
 
-また、 `アセンブル` ブロックが含まれています：
+また、`assemble`ブロックが含まれています。
 
 ```yaml
 assemble:
@@ -48,9 +48,9 @@ assemble:
       into: static
 ```
 
-これは、 `assets/` フォルダ内のすべてを、ビルドされたクライアント拡張機能 `.zip` ファイルに静的リソースとして含めることを指定します。 JSクライアントエクステンションのJavaScriptコードは、Liferayの静的リソースとして使用されます。
+これは、 `assets/` フォルダ内のすべてを、ビルドされたクライアント拡張`.zip` ファイルに静的リソースとして含めることを指定します。 JSクライアント拡張のJavaScriptコードは、Liferayの静的リソースとして使用されます。
 
-`assets/global.js` ファイルには、この一行が含まれています：
+`assets/global.js`ファイルには、下記のコードが含まれています：
 
 ```js
 window.alert('Sample Global JS deployed.');
@@ -58,7 +58,7 @@ window.alert('Sample Global JS deployed.');
 
 ページを開くと、メッセージとともにアラートボックスが表示されます。 このファイルに追加して、追加のJavaScriptを実行します。
 
-## LiferayにClient Extensionをデプロイする。
+## Liferayにクライアント拡張をデプロイする
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
@@ -68,14 +68,14 @@ Once Liferay starts, run this command from the client extension's folder in the 
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-これはクライアント拡張をビルドし、Liferayの `deploy/` フォルダにzipをデプロイします。
+これにより、クライアント拡張が構築され、Liferayの`deploy/`フォルダにzipをデプロイします。
 
 ```{note}
-クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使って [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloudの[コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)を使って[`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment)を実行します。
 ```
 
 ```{tip}
-ワークスペース内のすべてのクライアント拡張機能を同時に配置するには、`client-extensions/`フォルダからコマンドを実行します。
+ワークスペース内のすべてのクライアント拡張を同時にデプロイするには、`client-extensions/`フォルダからコマンドを実行します。
 ```
 
 Liferayインスタンスのコンソールでデプロイメントを確認します。
@@ -84,38 +84,38 @@ Liferayインスタンスのコンソールでデプロイメントを確認し�
 STARTED sample-global-js_1.0.0
 ```
 
-クライアントエクステンションが正常にデプロイされたら、それを使用するようにLiferayを設定します。
+クライアント拡張が正常にデプロイされたら、それを使用するようにLiferayを設定します。
 
-## ページでクライアントエクステンションを使用する
+## ページでクライアント拡張を使用する
 
-配備したクライアントエクステンションを使用するために、Liferayのページを設定します：
+デプロイされたクライアント拡張を使用するために、Liferayのページを設定します。
 
-1. インスタンスのページで、上部にある **編集** アイコン ![Edit icon](../../../../images/icon-edit-pencil.png) をクリックします。
+1. インスタンスのページで、上部にある*編集*アイコン![Edit icon](../../../../images/icon-edit-pencil.png)をクリックします。
 
-1. サイドバーで「ページデザイン **オプション**」メニュー(![Page Design Options icon](../../../../images/icon-format.png)）を開き、メニュー上部の「**設定**」アイコン(![Configuration icon](../../../../images/icon-cog3.png)）をクリックします。
+1. サイドバーで［Page Design *Options*］メニュー（![Page Design Options icon](../../../../images/icon-format.png)）を開き、メニュー上部の*設定*アイコン（![Configuration icon](../../../../images/icon-cog3.png)）をクリックします。
 
-   ![ページデザインオプションメニューの歯車アイコンをクリックすると、このクライアント拡張機能の設定にアクセスできます。](./using-a-javascript-client-extension/images/01.png)
+   ![［Page Design Options］メニューの歯車アイコンをクリックすると、このクライアント拡張の設定にアクセスできます。](./using-a-javascript-client-extension/images/01.png)
 
-1. **Advanced** タブをクリックし、ページ下部の **JavaScript** セクションを展開すると、 **JavaScript Client Extensions** 設定セクションがあります。
+1. *［詳細設定］*タブをクリックし、ページ下部の *JavaScript* セクションを展開すると、 *［JavaScript Client Extensions］* 設定セクションがあります。
 
-1. **JavaScriptクライアント拡張の追加** をクリックして、新しいクライアント拡張をページの先頭またはページ下に追加します。
+1. *［Add JavaScript Client Extensions］*をクリックして、新しいクライアント拡張をページの先頭またはページ下に追加します。
 
-   ![JavaScriptクライアントエクステンションを追加します。 ページヘッドに追加したか、ページボトムに追加したかに応じて、リストに表示されます。](./using-a-javascript-client-extension/images/02.png)
+   ![JavaScriptクライアント拡張を追加します。 ページ先頭への追加もしくはページ下部への追加に応じて、リストに表示されます。](./using-a-javascript-client-extension/images/02.png)
 
-1. ［**Save**］ をクリックします。
+1. *［Save］* をクリックします。
 
 1. オプションで、編集モード以外のページでJavaScriptが実行されるように、ページを公開することもできます。
 
-これで、クライアントエクステンションが設定され、アクティブになりました。 設定したページでは、クライアント拡張機能のメッセージが表示されたアラートウィンドウがポップアップ表示されるのが確認できます。
+これで、クライアント拡張が設定され、有効になりました。 設定したページでは、クライアント拡張のメッセージを含むアラートウィンドウがポップアップ表示されます。
 
-![この例のクライアント拡張機能は、ページが読み込まれたときに警告メッセージのポップアップを作成します。](./using-a-javascript-client-extension/images/03.png)
+![この例のクライアント拡張は、ページが読み込まれたときに警告メッセージのポップアップを作成します。](./using-a-javascript-client-extension/images/03.png)
 
 ```{tip}
-警告ウィンドウが最初に表示されない場合は、ページをハードリフレッシュしてブラウザのキャッシュをクリアします(ほとんどのブラウザで `CTRL + SHIFT + R` ）。 クライアントエクステンションを変更して再デプロイした場合、変更を確認するためにページからエクステンションを削除して再追加する必要がある場合があります。
+アラートウィンドウが表示されない場合は、ページを更新してブラウザのキャッシュをクリアしてください（ほとんどのブラウザでは、`CTRL + SHIFT + R` ）。 クライアント拡張を変更して再デプロイした場合、変更を確認するには、ページから削除し、再追加する必要があるかもしれません。
 ```
 
 ## 次のステップ
 
-LiferayでJSクライアントエクステンションを使用することに成功しました。 次に、他のクライアントエクステンションタイプのデプロイメントを試してみます。
+LiferayでJSクライアント拡張を使用できるようになりました。 次は他のクライアント拡張タイプのデプロイメントを試してみましょう。
 
-* [CSSクライアントエクステンションの使用](./using-a-css-client-extension.md)
+* [CSSクライアント拡張の使用](./using-a-css-client-extension.md)

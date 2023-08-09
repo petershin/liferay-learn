@@ -6,7 +6,7 @@ Liferay Analytics Cloudのルートエンドポイントは、 <https://analytic
 curl -i -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/reports
 ```
 
-この応答が返ってくるはずです：
+この応答が返されるはずである：
 
 ```json
 {
@@ -43,51 +43,51 @@ curl -i -L -H "Authorization: Bearer {token}" https://analytics.liferay.com/api/
 }
 ```
 
-ここから、さまざまなAPIを呼び出して、さまざまなデータ型のデータを取得することができます。
+ここからさまざまなAPIを呼び出して、さまざまなデータタイプのデータを取得することができる。
 
-アナリティクスデータに対するサーバーの応答は、すべて同じデータ構造に従っています。 レスポンスはLiferay Analytics Cloudで計算されたエンティティのページングされた結果です。 デフォルトでは、各ページに20個の要素が含まれています。 ページクエリパラメータを置き換えることで移動できます。 totalには、使用可能な要素の総数が表示されます。
+アナリティクスデータに対するサーバーの応答は、すべて同じデータ構造に従っています。 レスポンスは、Liferay Analytics Cloudによって計算されたエンティティのページングされた結果です。 デフォルトでは、各ページには20の要素が含まれています。 ページクエリーパラメーターを置き換えることでナビゲートできる。 合計は利用可能な要素の総数を示す。
 
 ## ブログデータへのアクセス
 
-このコマンドを使うと、すべてのBlogデータを取得することができます：
+すべてのブログデータを取得するには、このコマンドを使用します：
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs
 ```
 
-これらのクエリパラメータを利用することができます：
+これらのクエリーパラメーターが利用できる：
 
-* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
-* `page` (integer)：結果のページ番号。
-* `keywords` (string)：アセットのタイトルにマッチするキーワード。
-* `rangeKey` (integer)： データをグループ化する時間範囲を指定します。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
-* `sortMetric`(string)：データをソートするためのメトリックを指定します。 設定可能な値は、 `clicksMetric`, `commentsMetric`, `ratingsMetric`, `readingTimeMetric`, and `viewsMetric`。
-* `sortOrder` (string)：結果を表示する順序を指定します。 指定できる値は、 `asc` または `desc`です。
+* `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
+* `page` (整数)：結果のページ番号。
+* `keywords` (文字列)：アセットのタイトルにマッチするキーワード。
+* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* sortMetric`(string)： データをソートするためのメトリック。指定できる値は `clicksMetric`、`commentsMetric`、`ratingsMetric`、`readingTimeMetric`、`viewsMetric` である。
+* `sortOrder` (文字列)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
 
-特定のブログ記事に関するデータを取得する場合、
+特定のブログ記事に関するデータを取得する、
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/blogs/{blogID}
 ```
 
-## ドキュメントやメディアデータへのアクセス
+## ドキュメントとメディア・データへのアクセス
 
-すべてのDocumentsとMediaのデータを取得するコマンドです：
+すべてのDocumentsとMediaデータを取得するには、このコマンドを使用します：
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media
 ```
 
-これらのクエリパラメータを利用することができます：
+これらのクエリーパラメーターが利用できる：
 
-* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
-* `page` (integer)：結果のページ番号。
-* `keywords` (string)：データ内で一致したキーワード。
-* `rangeKey` (integer)： データをグループ化する時間範囲を指定します。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
-* `sortMetric`(string)：データをソートするためのメトリックを指定します。 可能な値は、 `commentsMetric`, `downloadsMetric`, `previewsMetric`, `ratingsMetrics`.
-* `sortOrder` (string)：結果を表示する順序を指定します。 指定できる値は、 `asc` または `desc`です。
+* `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
+* `page` (整数)：結果のページ番号。
+* `keywords` (文字列)：データ内でマッチしたキーワード。
+* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* `sortMetric`(string)： データをソートするためのメトリック。指定できる値は `commentsMetric`, `downloadsMetric`, `previewsMetric`, `ratingsMetric` である。
+* `sortOrder` (文字列)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
 
-特定の文書に関するデータを取得する場合、
+特定の文書に関するデータを取得する、
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/documents-and-media/{documentId}
@@ -95,22 +95,22 @@ curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/a
 
 ## フォームデータへのアクセス
 
-すべてのフォームデータを取得する場合は、このコマンドを使用します：
+すべてのフォームデータを取得するには、このコマンドを使用します：
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms
 ```
 
-これらのクエリパラメータを利用することができます：
+これらのクエリーパラメーターが利用できる：
 
-* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
-* `page` (integer)：結果のページ番号。
-* `keywords` (string)：データ内で一致したキーワード。
-* `rangeKey` (integer)： データをグループ化するための時間範囲。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
-* `sortMetric`(string)：データをソートするためのメトリックを指定します。 可能な値は、 `abandonmentsMetric`, `completionTimeMetric`, `submissionsMetric`, `viewsMetric`.
-* `sortOrder` (string)：結果を表示する順序を指定します。 指定できる値は、 `asc` または `desc`です。
+* `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
+* `page` (整数)：結果のページ番号。
+* `keywords` (文字列)：データ内でマッチしたキーワード。
+* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* `sortMetric`(string)： データをソートするためのメトリック。指定できる値は `abandonmentsMetric`、`completionTimeMetric`、`submissionsMetric`、`viewsMetric` である。
+* `sortOrder` (文字列)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
 
-特定のフォームに関するデータを取得する場合、
+特定のフォームに関するデータを取得する、
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/forms/{formId}
@@ -118,54 +118,53 @@ curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/a
 
 ## ユーザーデータへのアクセス
 
-このコマンドを使用すると、すべての個別データを取得することができます：
+このコマンドを使用して、すべての個人データを取得する：
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals
 ```
 
-これらのクエリパラメータを利用することができます：
+これらのクエリーパラメーターが利用できる：
 
-* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
-* `page` (integer)：結果のページ番号。
-* `query` （文字列）：個人の `emailAddress`, `firstName`, または `lastName`で検索された任意の単語（複数可） .
+* `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
+* `page` (整数)：結果のページ番号。
+* `query` (文字列)：個人の `emailAddress`, `firstName`, または `lastName`で検索された単語。
 
-特定の個人に関する活動データを取得すること、
+特定の個人に関する活動データを検索する、
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/activities
 ```
 
-特定の個人に関する興味データを取得するため、
+特定の個人に関する利益データを検索する、
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/interests
 ```
 
-特定の個人に関するセグメントデータを取得すること、
+特定の個人に関するセグメントデータを検索する、
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/individuals/{individualsId}/segments
 ```
 
-## ページデータへのアクセス
+## ページ・データへのアクセス
 
-このコマンドを使うと、すべてのページデータを取得することができます：
+このコマンドを使用して、すべてのページデータを取得する：
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages 
 ```
 
-これらのクエリパラメータを利用することができます：
+これらのクエリーパラメーターが利用できる：
 
-* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
-* `page` (integer)：結果のページ番号。
-* `keywords` (string)：データ内で一致したキーワード。
-* `rangeKey` (integer)： データをグループ化するための時間範囲。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
-* `sortMetric` (string)：データをソートするためのメトリックを指定します。 可能な値は `avgTimeOnPageMetric`, `bounceMetric`, `bounceRateMetric`, `ctaClicksMetric`, `directAccessMetric`, `entrancesMetric`、 `exitRateMetric`, `indirectAccessMetric`, `readsMetric`, `sessionsMetric`, `timeOnPageMetric`, `viewsMetric`, `visitorsMetric`.
-* `sortOrder` (string)：結果の表示順を指定します。 指定できる値は、 `asc` または `desc`です。
-
-特定のURLからページデータを取得する場合、
+* `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
+* `page` (整数)：結果のページ番号。
+* `keywords` (文字列)：データ内でマッチしたキーワード。
+* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* `sortMetric` (文字列)： データをソートするためのメトリック。指定できる値は `avgTimeOnPageMetric`, `bounceMetric`, `bounceRateMetric`, `ctaClicksMetric`, `directAccessMetric`, `entrancesMetric`, `exitRateMetric`, `indirectAccessMetric`, `readsMetric`, `sessionsMetric`, `timeOnPageMetric`, `viewsMetric`, `visitorsMetric` である。
+* `sortOrder` (string)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
+特定のURLからページデータを取得する、
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/pages/{pageURL}
@@ -173,41 +172,41 @@ curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/a
 
 ## セグメントデータへのアクセス
 
-すべてのSegmentデータを取得する場合は、このコマンドを使用します：
+すべてのセグメントデータを取得するには、このコマンドを使用します：
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments
 ```
 
-これらのクエリパラメータを利用することができます：
+これらのクエリーパラメーターが利用できる：
 
-* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
-* `page` (integer)：結果のページ番号。
+* `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
+* `page` (整数)：結果のページ番号。
 
-特定のセグメントに属するすべての個人を取得する場合、
+特定のセグメントに属するすべての個人を検索する、
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/segments/{segmentsId}/individuals
 ```
 
-## ウェブコンテンツデータへのアクセス
+## ウェブ・コンテンツ・データへのアクセス
 
-このコマンドを使うと、すべてのWeb Contentsデータを取得できます：
+すべてのウェブコンテンツのデータを取得するには、このコマンドを使用します：
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents
 ```
 
-これらのクエリパラメータを利用することができます：
+これらのクエリーパラメーターが利用できる：
 
-* `channelId` (integer)：Analytics CloudのワークスペースのプロパティIDです。
-* `page` (integer)：結果のページ番号。
-* `keywords` (string)：データ内で一致したキーワード。
-* `rangeKey` (integer)： データをグループ化するための時間範囲。指定できる値は、`0`（24時間以内のデータ）、`1`（昨日のデータ）、`7`（7日以内のデータ）、`28`（28日以内のデータ）、`30`（デフォルト値、30日以内のデータ）、`90`（90日以内のデータ）である。
-* `sortMetric`(string)：データをソートするためのメトリックを指定します。 可能な値は、 `viewsMetric`です。
-* `sortOrder` (string)：結果を表示する順序を指定します。 指定できる値は、 `asc` または `desc`です。
+* `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
+* `page` (整数)：結果のページ番号。
+* `keywords` (文字列)：データ内でマッチしたキーワード。
+* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* `sortMetric`(string)： データをソートするためのメトリック。指定できる値は `viewsMetric` である。
+* `sortOrder` (文字列)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
 
-特定のウェブコンテンツに関するデータを取得すること、
+特定のウェブコンテンツに関するデータを取得する、
 
 ```
 curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/api/reports/web-contents/{webContentsID}

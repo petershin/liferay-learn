@@ -1,24 +1,25 @@
 # カスタムデータプロバイダーの作成
 
-Liferay Formsのフィールドは、 [データプロバイダー](../data-providers/data-providers-overview.md)を使用して入力することができます。 初期設定のRESTデータプロバイダーは、ほとんどのRESTエンドポイントからデータを消費するための柔軟な方法を提供します。 詳細は、、 [RESTデータプロバイダーを使用したフォームオプションの入力](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) を参照してください。
+Liferay Formsのフィールドは、 [データプロバイダー](../data-providers/data-providers-overview.md)を使用して入力することができます。 初期設定のRESTデータプロバイダーは、ほとんどのRESTエンドポイントからデータを消費するための柔軟な方法を提供します。 詳しくは、 [RESTデータプロバイダーを使用してフォームオプションを入力する](../data-providers/using-the-rest-data-provider-to-populate-form-options.md) をご覧ください。
 
 RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvider`拡張ポイントを使用して、独自のデータプロバイダーを作成します。
 
 ```{note}
-このデータプロバイダーの例では、 [GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search) からXMLデータを消費します。 このサンプルには、Liferay社員のAPIキーがハードコードされています。
+このデータプロバイダーの例では、[GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search)からXMLデータを消費します。 このサンプルには、Liferay社員のAPIキーがハードコードされています。
 サンプルを使いすぎないようにしてください。 本番環境では絶対に使用しないでください。
 ```
 
 ## カスタムデータプロバイダーをデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. Acme XML Data Providerをダウンロードし、解凍する。
+1. Acme XML Data Provider をダウンロードし、解凍する。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/process-automation/forms/developer-guide/liferay-b4d8.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-b4d8.zip -O
    ```
 
    ```bash
@@ -47,9 +48,9 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
 1. データプロバイダーのインスタンスを追加します。
 
-   1. サイトメニューの［コンテンツとデータ］&rarr; ［フォーム］を選択します。
+   1. サイトメニューの［コンテンツとデータ］ &rarr; ［フォーム］を選択します。
 
-   1. ［データプロバイダー］タブを開き、 **追加** ボタンをクリックします。
+   1. ［データプロバイダー］タブを開き、_追加_ ボタンをクリックします。
 
       ![カスタムデータプロバイダがLiferay Formsで使用できるようになりました。](./writing-a-custom-data-provider/images/01.png)
 
@@ -63,11 +64,11 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
       ![カスタムデータプロバイダーを設定し、その出力を指定します。](./writing-a-custom-data-provider/images/02.png)
 
-   1. ［**保存**］ をクリックします。
+   1. *［保存］*をクリックします。
 
 1. Diamond Bar付近のデータプロバイダーを使用するフォームを追加します。
 
-   1. サイトメニューの［コンテンツとデータ］&rarr; ［フォーム］を選択します。
+   1. サイトメニューの［コンテンツとデータ］ &rarr; ［フォーム］を選択します。
 
    1. ［フォーム］タブで、［追加］ボタンをクリックします。
 
@@ -79,7 +80,7 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
       1. **データ・プロバイダーを選択してください。** Diamond Bar, CA (USA)周辺の都市
 
-      1. **出力パラメータを選択してください。** 都市
+      1. **出力パラメータを選択：** 都市
 
    1. フォームを公開し、データプロバイダからリストが入力されていることを確認します。
 
@@ -159,7 +160,7 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
    ```
 
    ```{note}
-   `outputParameters` フィールドに加えて、 `inputParameters` フィールドも [DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java) で提供されます。
+   `outputParameters` フィールドに加えて、 `inputParameters` フィールドも[DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java)で提供されます。
    ```
 
 ![データプロバイダー設定フォームは、作業の準備ができています。](./writing-a-custom-data-provider/images/05.png)
@@ -297,7 +298,7 @@ import com.liferay.portal.kernel.util.Http;
 
 1. Cities Near Recife 付近のデータプロバイダを使用するフォームを追加します。
 
-   1. サイトメニューの［コンテンツとデータ］&rarr; ［フォーム］を選択します。
+   1. サイトメニューの［コンテンツとデータ］ &rarr; ［フォーム］を選択します。
 
    1. ［フォーム］タブで、［追加］ボタンをクリックします。
 
@@ -309,7 +310,7 @@ import com.liferay.portal.kernel.util.Http;
 
       1. **データプロバイダーを選択：** レシフェ（ペルナンブコ州、ブラジル）に近い都市
 
-      1. **出力パラメータを選択してください。** 都市
+      1. **出力パラメータを選択：** 都市
 
    1. フォームを公開し、データプロバイダからリストが入力されていることを確認します。
 

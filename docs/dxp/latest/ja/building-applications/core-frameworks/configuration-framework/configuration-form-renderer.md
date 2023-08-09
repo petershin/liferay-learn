@@ -1,6 +1,6 @@
 # 構成フォームレンダラー
 
-[構成インターフェイスを作成](./setting-and-accessing-configurations.html#creating-the-configuration-interface) すると、構成UIが自動的に生成されます。  ただし、UIのルックアンドフィールをカスタマイズしたい場合もあります。 たとえば、会社のデザインの美的感覚に一致するようにUIを変更するとします。 ` ConfigurationFormRenderer`の実装でこれを行う方法は次のとおりです。
+[構成インターフェイスを作成](./setting-and-accessing-configurations.md#creating-the-configuration-interface)すると、構成UIが自動的に生成されます。  ただし、UIのルックアンドフィールをカスタマイズしたい場合もあります。 たとえば、会社のデザインの美的感覚に一致するようにUIを変更するとします。 ` ConfigurationFormRenderer`の実装でこれを行う方法は次のとおりです。
 
 ## サンプルプロジェクトを参照する
 
@@ -9,10 +9,10 @@
 
 次に、以下の手順を実行します。
 
-1. [Configuration Form Renderer](./liferay-b7r2.zip) をダウンロードし、解凍してください。
+1. [Configuration Form Renderer](./liferay-b7r2.zip)をダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-b7r2.zip -O
    ```
 
    ```bash
@@ -37,7 +37,7 @@
 
 1. サンプルのモジュールが機能していることを確認します。 ブラウザで`https://localhost:8080`を開きます。
 
-1. ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**System Settings**］ &rarr; ［**Third Party**］ に移動します。 ［**B7R2 Configuration**］ をクリックします。
+1. *［コントロールパネル］* &rarr; *［設定］* &rarr; *［System Settings］* &rarr; *［Third Party］*に移動します。 *［B7R2 Configuration］*をクリックします。
 
    ![システム設定でU2G5構成に移動します。](./configuration-form-renderer/images/01.png)
 
@@ -55,7 +55,7 @@
 `ConfigurationFormRenderer`を使用する場合、[生成されたUIを非表示にする](./hiding-the-configuration-ui.md)ために`generateUI`アノテーションは必要ないことに注意してください。
 
 ```{note}
-DXP 7.4 U51 または Portal 7.4 GA51 より前の Liferay バージョンでは、`ConfigurationBeanDeclaration` が必要です。 ConfigurationBeanDeclaration with Previous Versions of Liferay](./setting-and-accessing-configurations.md#configurationbeanandeclaration-with-previous-versions-of-liferay) を参照してください。
+DXP 7.4 U51またはPortal 7.4 GA51より前のLiferayバージョンでは、`ConfigurationBeanDeclaration`が必須です。 [Liferayの以前のバージョンでのConfigurationBeanDeclaration](./setting-and-accessing-configurations.md#configurationbeanandeclaration-with-previous-versions-of-liferay)を参照してください。
 ```
 
 ## Configuration Form Rendererを実装する
@@ -98,7 +98,7 @@ DXP 7.4 U51 または Portal 7.4 GA51 より前の Liferay バージョンでは
 
 ## カスタムJSPを作成する
 
-1. 構成インターフェイスをJSPにインポートします。
+1. 構成インターフェースをJSPにインポートします。
 
    ```markup
    <%@ page import="com.acme.u2g5.web.internal.configuration.B7R2WebConfiguration" %>

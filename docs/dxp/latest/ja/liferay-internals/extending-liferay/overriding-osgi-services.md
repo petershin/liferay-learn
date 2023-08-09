@@ -8,23 +8,23 @@ OSGiサービスをオーバーライドするには、次の手順に従いま�
 
 1. 次のサービスの詳細を収集します。
 
-   * **サービスタイプ** ：オーバーライドするサービスによって実装されるインターフェイス
+   * **サービスタイプ**：オーバーライドするサービスによって実装されるインターフェイス
 
-   * **サービスのクラス名** ：既存のサービスのフルネーム
+   * **サービスのクラス名**：既存のサービスのフルネーム
 
 1. 該当する場合は、サービスを参照するコンポーネントについて次の詳細を収集します。
 
-   * **コンポーネント名** ：オーバーライドするサービスを参照するコンポーネントのフルネーム
+   * **コンポーネント名**：オーバーライドするサービスを参照するコンポーネントのフルネーム
 
-   * **参照名** ：ターゲットサービスを参照するフィールド名
+   * **参照名**：ターゲットサービスを参照するフィールド名
 
-   * **参照ポリシー** ：参照が`static`か`dynamic`か
+   * **参照ポリシー**：参照が`static`か`dynamic`か
 
-   * **参照ポリシーオプション** ：`policy-option`が`greedy`か`reluctant`か
+   * **参照ポリシーオプション**：`policy-option`が`greedy`か`reluctant`か
 
-   * **カーディナリティ** ：参照がバインドできるまたはバインドする必要があるサービスインスタンスの数。
+   * **カーディナリティ**：参照がバインドできるまたはバインドする必要があるサービスインスタンスの数。
 
-   サービスの [参照ポリシー](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicy.html) 、 [参照ポリシーオプション](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicyOption.html) 、および [カーディナリティ](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferenceCardinality.html) が一緒になって、新しいサービスを採用するためのコンポーネントの条件を決定します。
+   サービスの[参照ポリシー](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicy.html)、[参照ポリシーオプション](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferencePolicyOption.html)、および[カーディナリティ](https://docs.osgi.org/javadoc/r5/enterprise/org/osgi/service/component/annotations/ReferenceCardinality.html)が一緒になって、新しいサービスを採用するためのコンポーネントの条件を決定します。
 
 1. オーバーライドするサービスによって実装されたものと同じインターフェイスを使用する新しいサービスを作成します。
 
@@ -39,12 +39,12 @@ OSGiサービスをオーバーライドするには、次の手順に従いま�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. サンプルモジュールをダウンロードして解凍します。
+1. サンプルモジュールをダウンロードし、解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/ja/liferay-internals/extending-liferay/liferay-s1j6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-s1j6.zip -O
    ```
 
    ```bash
@@ -114,9 +114,9 @@ References:   (total 0)
 
 この簡略化された出力には、`S1J6AbleImpl`の次のサービスの詳細がリストされています。
 
-* **サービスタイプ** ：`S1J6AbleImpl`は、`S1J6`インターフェース`com.acme.s1j6.S1J6`を実装します。
+* **サービスタイプ**：`S1J6AbleImpl`は、`S1J6`インターフェース`com.acme.s1j6.S1J6`を実装します。
 
-* **サービスのクラス名** ：サービスのフルネームは`com.acme.s1j6.able.internal.S1J6AbleImpl`です。
+* **サービスのクラス名**：サービスのフルネームは`com.acme.s1j6.able.internal.S1J6AbleImpl`です。
 
 また、サービスが`com.acme.s1j6.web:1.0.0`バンドル内のコンポーネントによって使用されていることも示されます。 コンポーネントの参照構成の詳細を表示するには、コンポーネントのフルネームを指定して`scr:info`コマンドを実行します。
 
@@ -142,15 +142,15 @@ References:   (total 1)
 
 この簡略化された出力には、次の参照構成の詳細がリストされています。
 
-**参照名** ：`S1J6AbleImpl`サービスを参照するフィールドの名前は`_s1j6`です。
+**参照名**：`S1J6AbleImpl`サービスを参照するフィールドの名前は`_s1j6`です。
 
-**参照ポリシー** ：コンポーネントのポリシーは`static`です（デフォルト）。
+**参照ポリシー**：コンポーネントのポリシーは`static`です（デフォルト）。
 
-**参照ポリシーオプション** ：コンポーネントのポリシーオプションは `greedy`です。
+**参照ポリシーオプション**：コンポーネントのポリシーオプションは `greedy`です。
 
-**カーディナリティ** ：そのカーディナリティは必須であり、単項です（つまり、`1..1`）。
+**カーディナリティ**：そのカーディナリティは必須であり、単項です（つまり、`1..1`）。
 
-一部の参照構成は、新しいサービスまたは上位のサービスに自動的にバインドされますが、サーバーの再起動が必要なものもあります。 `S1J6Portlet`の参照構成は静的で、欲張りで、必須であり、単項であるため、サーバーを新しい上位のサービスにバインドする前に、サーバーを再起動する必要はありません。 新しいサービスまたは上位のサービスが利用可能になったときに、さまざまな参照構成がコンポーネントの動作にどのように影響するかについて詳しくは、 [OSGiのドキュメンテーション](http://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.component.html#service.component-policy.option.action) を参照してください。
+一部の参照構成は、新しいサービスまたは上位のサービスに自動的にバインドされますが、サーバーの再起動が必要なものもあります。 `S1J6Portlet`の参照構成は静的で、欲張りで、必須であり、単項であるため、サーバーを新しい上位のサービスにバインドする前に、サーバーを再起動する必要はありません。 新しいサービスまたは上位のサービスが利用可能になったときに、さまざまな参照構成がコンポーネントの動作にどのように影響するかについて詳しくは、[OSGiのドキュメンテーション](http://docs.osgi.org/specification/osgi.cmpn/7.0.0/service.component.html#service.component-policy.option.action)を参照してください。
 
 ## 収集した詳細でOSGiサービスを作成する
 

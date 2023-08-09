@@ -9,14 +9,14 @@ LiferayのHeadless Deliveryアプリケーションは、[ドキュメントと�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-サインインしたら、 [サイトのIDを取得](./../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) します。このIDは、いくつかのサービスコールで使用することになります。
+サインインしたら、[サイトのIDを取得する](../../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). このIDはいくつかのサービス呼び出しで使用します。
 
-次に、以下の手順を実行します：
+次に、以下の手順を実行します。
 
-1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip) をダウンロードし、解凍してください：
+1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip)をダウンロードし、解凍します：
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
     ```
 
     ```bash
@@ -101,7 +101,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | 引数                                                                      | 説明                                                                   |
 |:----------------------------------------------------------------------- |:-------------------------------------------------------------------- |
 | `-F "file=@Document_POST_ToSite.sh"`                                    | 投稿するファイル。                                                            |
-| `-H "Content-Type: multipart/form-data"`                                | 投稿されているメディアタイプ( [MIME 種別](https://en.wikipedia.org/wiki/Media_type) ）。 |
+| `-H "Content-Type: multipart/form-data"`                                | 投稿されているメディアタイプ（[MIME 種別](https://en.wikipedia.org/wiki/Media_type)）。 |
 | `-X POST`                                                               | 指定されたエンドポイントで呼び出すHTTPメソッド。                                           |
 | `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | RESTサービスエンドポイント。 サイトIDのパラメーターが`${1}`に置き換わります。                        |
 | `-u "test@liferay.com:learn"`                                           | 基本認証の資格情報。                                                           |
@@ -126,7 +126,7 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行(省略形）                                                                     | 説明                                                                                                                                                                                      |
+| 行（省略形）                                                                     | 説明                                                                                                                                                                                      |
 |:-------------------------------------------------------------------------- |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `DocumentResource.Builder builder = ...`                                   | `Builder`を取得し、`DocumentResource`サービスインスタンスを生成します。                                                                                                                                       |
 | `DocumentResource documentResource = builder.authentication(...).build();` | 基本認証を指定し、`DocumentResource`サービスインスタンスを生成します。                                                                                                                                            |
@@ -240,7 +240,7 @@ java -classpath .:* -DdocumentId=1234 Document_GET_ById
    :language: bash
 ```
 
-最初の引数行は、サービスエンドポイントと認証クレデンシャルをそれぞれ指定します。 URLの`/o/headless-delivery/v1.0/documents/${1}`部分は、IDで`Document`を取得するためのRESTサービスエンドポイントです。 このURLは、`Document_GET_ById.sh`スクリプトのURLと同じです。 `?nestedFields=contentValue`部分は、`Document`の`nestedFields`に埋め込まれた`contentValue`を要求します。 最後に、`&fields=contentValue`部分が`contentValue`フィールドで絞り込みを行い、コンテンツフィールドのみが返されます。 ただし、サービスのみを呼び出すと、次のように、JSONでラップされたBase64でエンコードされたコンテンツが返されます。
+最初の引数行は、サービスエンドポイントと認証クレデンシャルをそれぞれ指定します。 URLの`/o/headless-delivery/v1.0/documents/${1}`部分は、IDで`Document`を取得するためのRESTサービスエンドポイントです。 このURLは、`Document_GET_ById.sh`スクリプトのURLと同じです。 `?nestedFields=contentValue`部分は、`Document`の`nestedFields`に埋め込まれた`contentValue`を要求します。 最後に、`&fields=contentValue`部分が`contentValue`フィールドで絞り込みを行い、コンテンツフィールドのみが返されます。 しかし、サービスだけを呼び出すと、次のようにJSONでラップされたBase64エンコードされたコンテンツが返される：
 
 ```json
 {
@@ -304,7 +304,7 @@ Base64.Decoder decoder = Base64.getDecoder();
    :language: bash
 ```
 
-最初のフォームデータ部分(-Fに続く）は、`Document`の`description`フィールドに新しい値を指定します。 2番目のフォームデータ部分は、アップロードする更新されたファイルを指定します。
+最初のフォームデータ部分（-Fに続く）は、`Document`の`description`フィールドに新しい値を指定します。 2番目のフォームデータ部分は、アップロードする更新されたファイルを指定します。 なお、両方が必要なわけではない。 ファイルのみ、またはドキュメントのメタデータのみにパッチを当てることができます。
 
 ### Document_PATCH_ById.java
 
@@ -425,7 +425,7 @@ java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 
 [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md)には、`Document`および`DocumentFolder`のすべてのサービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 
-[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) および [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) のJavaインターフェースも参照してください。
+[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java)および[DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java)のJavaインターフェースも参照してください。
 
 ## 関連トピック
 

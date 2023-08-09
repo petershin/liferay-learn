@@ -5,15 +5,16 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 この作業は、 [サービスビルダー](../../building-applications/data-frameworks/service-builder.md)を使用することでより簡単に行うことができます。 サービスビルダーがアプリケーションのためにUADを有効にするために必要なコードを自動的に生成する方法については、以下の例を参照してください。
 
 ## サンプルコードをダウンロードする
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従います。
+次に、以下の手順を実行します。
 
-1. Download and unzip [UAD Framework](./liferay-h6d2.zip) .
+1. [UAD Framework](./liferay-h6d2.zip)をダウンロードして解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/users-and-permissions/developer-guide/liferay-h6d2.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-h6d2.zip -O
     ```
 
     ```bash
@@ -49,9 +50,9 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 1. 新規ユーザーとしてログインし、H6D2ポートレットにコンテンツを追加してください。
 
-1. 管理者としてログインし直し、 ［**コントロールパネル**］ &rarr; ［**ユーザー**］ &rarr; ［**ユーザーと組織**］ に移動してください。
+1. 管理者としてログインし直し、 *［コントロールパネル］* &rarr; *［ユーザー］* &rarr; *［ユーザーと組織］*に移動してください。
 
-1. 新しいユーザーの **アクション** アイコン (![Action](../../images/icon-actions.png)) &rarr; ［**個人データの削除**］ をクリックしてください。 ［**OK**］ をクリックして、ユーザーの無効化を確認します。
+1. 新しいユーザーの *アクション* アイコン (![Action](../../images/icon-actions.png)) &rarr; *［個人データの削除］*をクリックしてください。 *［OK］* をクリックして、ユーザーの無効化を確認します。
 
 1. UAD管理ツールが表示されます。 H6D2ポートレットでは、新規ユーザーが追加したデータの表示、匿名化、削除を行うことができます。
 
@@ -103,7 +104,6 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
    :language: xml
    :lines: 20
    ```
-
 ## UADモジュールを生成する
 
 1. `-service` フォルダから移動して、 `-uad` フォルダを新規に作成します。
@@ -111,7 +111,7 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 1. モジュール用の `bnd.bnd` ファイルを作成します。
 
 ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd
-```
+    ```
 
    Make sure to include the `-dsannotations-options: inherit` annotation. OSGi service component classes inherit [OSGi declarative services](../../liferay-internals/fundamentals/module-projects.md) annotations from their class hierarchy.
 

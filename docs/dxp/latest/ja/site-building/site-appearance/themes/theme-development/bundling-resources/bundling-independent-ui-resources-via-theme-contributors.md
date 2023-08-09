@@ -2,22 +2,23 @@
 
 テーマコントリビューターは、CSSおよびJavaScriptリソースを含み、それらを各ページに適用するモジュールです。 これらは特定のテーマから独立しており、テーマの特定のスタイルをオーバーライドしたり、互いにオーバーライドするように設定できます ページに個別のUIリソースを含め、それらを特定のテーマに含める場合は、代わりに[テーマレット](./bundling-and-installing-resources-into-your-theme-via-themelets.md)を使用してください。
 
-Liferay Portal/DXPの多くのメニューは、 [サイトメニュー](../../../../../getting-started/navigating-dxp.md#site-menu) などのテーマコントリビューターとしてパッケージ化されています。
+Liferay Portal/DXPの多くのメニューは、[サイトメニュー](../../../../../getting-started/navigating-dxp.md#site-menu)などのテーマコントリビューターとしてパッケージ化されています。
 
 ![サイトメニューは、テーマコントリビューターモジュールとして実装されています。](./bundling-independent-ui-resources-via-theme-contributors/images/01.png)
 
 サイトメニューなどの標準のUIコンポーネントを編集またはスタイル設定する場合は、テーマコントリビューターで変更をデプロイする必要があります。 テーマコントリビューターを使用して、新しいUIコンポーネントまたはスタイルを追加することもできます。
 
 ## シンプルなテーマコントリビューターをデプロイする
+
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, follow these steps to deploy the example theme contributor:
+次に、以下の手順に従って、サンプルのテーマ投稿者をデプロイしてください：
 
-1. サンプルをダウンロードして解凍します。
+1. サンプルをダウンロードし、解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/en/site-building/site-appearance/themes/theme-development/bundling-resources/bundling-independent-ui-resources-via-theme-contributors/liferay-w9m6.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/site-building/site-appearance/themes/theme-development/bundling-resources/liferay-w9m6.zip -O
     ```
 
     ```bash
@@ -59,24 +60,25 @@ Then, follow these steps to deploy the example theme contributor:
 ### テーマコントリビューターのプロパティを調べる
 
 テーマコントリビューターのプロジェクトには、それを構成するために必要なプロパティが`bnd.bnd`ファイルに追加されています。
+
 ```{literalinclude} ./bundling-independent-ui-resources-via-theme-contributors/resources/liferay-w9m6.zip/w9m6-web/bnd.bnd
 ```
 
-A theme contributor's `bnd.bnd` file must have these properties for it to function:
+テーマ投稿者の `bnd.bnd` ファイルが機能するためには、以下のプロパティが必要です：
 
-`Web-ContextPath`: sets the context for your theme contributor's resources. In the example module, the context path is `w9m6-web`.
+`Web-ContextPath`: テーマ投稿者のリソースのコンテキストを設定します。サンプルモジュールでは、コンテキストパスは `w9m6-web` です。
 
-`Liferay-Theme-Contributor-Type`: indicates that your module adds a theme contributor. このプロパティは任意の値にすることができます。 The example module uses the value `CSS`.
+`Liferay-Theme-Contributor-Type`: あなたのモジュールがテーマ投稿者を追加することを示します。このプロパティには任意の値を指定できます。サンプルモジュールでは `CSS` という値を使用しています。
 
-`Liferay-Theme-Contributor-Weight`: configures the weight of your theme contributor's styles versus other contributors. 値が小さいほど、他のコントリビューターのスタイルを上書きするための優先度が高くなります。 The example module uses a weight of `1` to guarantee that the style has the highest priority of any theme contributor.
+`Liferay-Theme-Contributor-Weight`: テーマ投稿者のスタイルと他の投稿者のスタイルの比重を設定します。値が小さいほど、他のコントリビューターのスタイルを上書きする優先順位が高くなります。サンプルのモジュールでは、スタイルがどのテーマ投稿者よりも高い優先度を持つことを保証するために `1` の重みを使用しています。
 
-Once the `bnd.bnd` file has the necessary properties, the module needs only have the desired customizations.
+`bnd.bnd`ファイルに必要なプロパティがあれば、モジュールは必要なカスタマイズをするだけです。
 
-### Examine the Style Customizations
+### スタイルのカスタマイズを調べる
 
-Any desired CSS or JavaScript files must be added to subfolders within the module. CSS files belong in a `src/main/resources/META-INF/resources/css/` subfolder, and JavaScript files belong in a `src/main/resources/META-INF/resources/js/` subfolder.
+必要なCSSファイルやJavaScriptファイルは、モジュール内のサブフォルダに追加する必要があります。CSSファイルは `src/main/resources/META-INF/resources/css/` サブフォルダに属し、JavaScriptファイルは `src/main/resources/META-INF/resources/js/` サブフォルダに属します。
 
-サンプルのテーマコントリビューターでは、単純なCSSスタイルの変更を使用して、各ページの背景を青色にします。 This is done with a [`custom.css`](./bundling-independent-ui-resources-via-theme-contributors/resources/liferay-w9m6.zip/w9m6-web/src/main/resources/META-INF/resources/custom.css) file in `src/main/resources/META-INF/resources/`:
+テーマ投稿者の例では、各ページの背景を青くするために簡単なCSSスタイル変更を使っています。これは`src/main/resources/META-INF/resources/`にある[`custom.css`](./bundling-independent-ui-resources-via-theme-contributors/resources/liferay-w9m6.zip/w9m6-web/src/main/resources/META-INF/resources/custom.css)ファイルで行います：
 
 ```css
 body, #wrapper {

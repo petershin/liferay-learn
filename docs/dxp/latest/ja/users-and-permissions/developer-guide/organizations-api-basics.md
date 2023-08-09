@@ -1,31 +1,31 @@
-# Organizations API の基礎知識
+# 組織 API の基本
 
-アプリケーションメニューから [Create and Manage Organizations](../organizations/creating-and-managing-organizations.md) を利用できますが、Liferay の REST API を利用することも可能です。 これらのサービスを呼び出して、組織を管理します。
+アプリケーションメニューから [Create and Manage Organizations](../organizations/creating-and-managing-organizations.md) を利用できますが、Liferay の REST API を利用することもできます。 組織を管理するためにこれらのサービスを呼び出す。
 
-## 組織を追加する
+## 組織の追加
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
 次に、以下の手順を実行します。
 
-1. [Organizations API Basics](./liferay-w2h3.zip)  をダウンロードし、解凍してください。
+1. [Organizations API Basics](./liferay-w2h3.zip)をダウンロードして解凍する。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O
    ```
 
    ```bash
    unzip liferay-w2h3.zip
    ```
 
-1. cURLスクリプトを使用して、インスタンスに新しいOrganizationを追加します。 コマンドラインで、 `curl`フォルダに移動します。 `Organization_POST_ToInstance.sh` スクリプトを実行する。
+1. cURL スクリプトを使用して、インスタンスに新しい組織を追加します。 コマンドラインで、 `curl`フォルダに移動します。 `Organization_POST_ToInstance.sh` スクリプトを実行する。
 
    ```bash
    ./Organization_POST_ToInstance.sh
    ```
 
-   JSONレスポンスは、新しい組織が追加されたことを示します：
+   JSON レスポンスは、新しい組織が追加されたことを示している：
 
    ```json
    {
@@ -50,7 +50,7 @@
    }
    ```
 
-1. **グローバルメニュー** &rarr; **コントロールパネル** &rarr; **ユーザーと組織** に移動します。 ［**Organizations**］ タブをクリックします。 新しい組織が追加されたことを確認します。
+1. *Global Menu* &rarr; *Control Panel* &rarr; *User and Organizations*に移動する。 *［Organizations］*タブをクリックします。 新しい組織が追加されたことを確認する。
 
    ![新しい組織が追加されたことを確認する。](./organizations-api-basics/images/01.png)
 
@@ -60,7 +60,7 @@
    javac -classpath .:* *.java
    ```
 
-1. `Organization_POST_ToInstance.java` クラスを以下のコマンドで実行します。
+1. `Organization_POST_ToInstance.java` クラスを以下のコマンドで実行する。
 
    ```bash
    java -classpath .:* Organization_POST_ToInstance
@@ -68,7 +68,7 @@
 
 ## cURLコマンドの検証
 
-`Organization_POST_ToInstance.sh` スクリプトは、cURL コマンドで REST サービスを呼び出します。
+`Organization_POST_ToInstance.sh` スクリプトは、cURLコマンドでRESTサービスを呼び出します。
 
 ```{literalinclude} ./organizations-api-basics/resources/liferay-w2h3.zip/curl/Organization_POST_ToInstance.sh
     :language: bash
@@ -92,7 +92,7 @@
 
 ## Javaクラスを調べる
 
-`Organization_POST_ToInstance.java` クラスは、Organization 関連サービスを呼び出して、組織を追加します。
+`Organization_POST_ToInstance.java` クラスは、Organization 関連サービスを呼び出して組織を追加する。
 
 ```{literalinclude} ./organizations-api-basics/resources/liferay-w2h3.zip/java/Organization_POST_ToInstance.java
    :dedent: 1
@@ -102,11 +102,11 @@
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行(省略形）                                                                             | 説明                                                                |
-|:---------------------------------------------------------------------------------- |:----------------------------------------------------------------- |
-| `OrganizationResource.Builder builder = ...`                                       | `OrganizationResource` サービスインスタンスを生成するための `Builder` を取得する。        |
-| `OrganizationResource organizationResource = builder.authentication(...).build();` | 基本認証を指定し、 `OrganizationResource` サービスインスタンスを生成します。                |
-| `Organization organization = organizationResource.postOrganization(...);`          | `organizationResource.postOrganization` メソッドを呼び出し、post にデータを渡します。 |
+| 行（省略形）                                                                             | 説明                                                              |
+|:---------------------------------------------------------------------------------- |:--------------------------------------------------------------- |
+| `OrganizationResource.Builder builder = ...`                                       | `OrganizationResource` サービスインスタンスを生成するための `Builder` を取得します。     |
+| `OrganizationResource organizationResource = builder.authentication(...).build();` | 基本認証を指定し、 `OrganizationResource` サービスインスタンスを生成します。              |
+| `Organization organization = organizationResource.postOrganization(...);`          | `organizationResource.postOrganization` メソッドを呼び出し、post にデータを渡す。 |
 
 プロジェクトには、依存関係として`com.liferay.headless.admin.user.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
@@ -114,19 +114,19 @@
 `main`メソッドのコメントでは、クラスの実行を実演しています。
 ```
 
-他の例のJavaクラスはこれと似ていますが、異なる `OrganizationResource` のメソッドを呼び出します。
+他のJavaクラスの例もこれと似ていますが、異なる `OrganizationResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は [OrganizationResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/OrganizationResource.java) を参照ください。
+サービスの詳細は [OrganizationResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/OrganizationResource.java) を参照してください。
 ```
 
-以下は、cURLとJavaを使用して、他の `Organization` RESTサービスを呼び出す例です。
+以下は、cURLとJavaを使って他の `Organization` RESTサービスを呼び出す例である。
 
-## インスタンスからオーガニゼーションを取得する
+## インスタンスから組織を取得する
 
-以下のcURLまたはJavaコマンドを実行することで、Organizationを一覧表示することができます。
+以下のcURLまたはJavaコマンドを実行することで、Organizationsをリストアップできる。
 
-### Organizations_GET_FromInstance.sh(オーガニゼーションズ・ゲット・フロムインスタンス）。
+### Organizations_GET_FromInstance.sh
 
 コマンド：
 
@@ -156,17 +156,17 @@ java -classpath .:* Organizations_GET_FromInstance
    :lines: 11-22
 ```
 
-インスタンスの `組織` オブジェクトは、JSON で表示されます。
+インスタンスの `組織` オブジェクトは JSON で表示される。
 
-## 組織化する
+## 組織を作る
 
-以下のcURLまたはJavaコマンドで、特定の組織を取得します。
+以下のcURLまたはJavaコマンドで特定の組織を取得する。
 
 ```{tip}
 インスタンスの ``組織`` ID を取得するには ``Organizations_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### Organization_GET_ById.sh
+### 組織_GET_ById.sh
 
 コマンド:
 
@@ -180,7 +180,7 @@ java -classpath .:* Organizations_GET_FromInstance
    :language: bash
 ```
 
-### Organization_GET_ById.java
+### 組織_GET_ById.java
 
 コマンド：
 
@@ -196,13 +196,13 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
    :lines: 8-18
 ```
 
-`Organization` フィールドは、JSONで表示されます。
+`組織` フィールドはJSONで表示される。
 
-## 組織にパッチを貼る
+## 組織にパッチを当てる
 
-以下のcURLとJavaコマンドで、既存の組織の部分編集を行います。 `1234` をあなたの組織のIDに置き換えてください。
+以下のcURLとJavaコマンドを使用して、既存の組織を部分的に編集する。 `1234` をあなたの組織のIDに置き換えてください。
 
-### Organization_PATCH_ById.sh
+### 組織_PATCH_ById.sh
 
 コマンド：
 
@@ -216,7 +216,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
    :language: bash
 ```
 
-### Organization_PATCH_ById.java
+### 組織_PATCH_ById.java
 
 コマンド：
 
@@ -232,11 +232,11 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
    :lines: 9-25
 ```
 
-## 組織を入れる
+## 組織を置く
 
-以下のcURLとJavaのコマンドで、既存のOrganizationを完全に上書きする。 `1234` をあなたの組織のIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存の組織を完全に上書きする。 `1234` をあなたの組織のIDに置き換えてください。
 
-### Organization_PUT_ById.sh
+### 組織_PUT_ById.sh
 
 コマンド：
 
@@ -250,7 +250,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
    :language: bash
 ```
 
-### Organization_PUT_ById.java
+### 組織_PUT_ById.java
 
 コマンド：
 
@@ -266,11 +266,11 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
    :lines: 9-25
 ```
 
-## 組織を削除する
+## 組織の削除
 
-以下のcURLコマンドとJavaコマンドで、既存の組織を削除する。 `1234` をあなたの組織のIDに置き換えてください。
+以下のcURLコマンドとJavaコマンドを使用して、既存の組織を削除する。 `1234` をあなたの組織のIDに置き換えてください。
 
-### rganization_DELETE_ById.sh
+### 組織_DELETE_ById.sh
 
 コマンド:
 
@@ -284,7 +284,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
    :language: bash
 ```
 
-### Organization_DELETE_ById.java
+### 組織_DELETE_ById.java
 
 コマンド
 
@@ -300,4 +300,4 @@ java -classpath .:* -DorganizationId=1234 Organization_DELETE_ById
    :lines: 8-17
 ```
 
-[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には、 `Organization` のすべてのサービスとスキーマが表示され、各サービスを試すためのインターフェイスが用意されています。
+[API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) には、 `Organization` のすべてのサービスとスキーマが表示され、各サービスを試すためのインターフェイスが用意されている。

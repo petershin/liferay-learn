@@ -9,10 +9,10 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
 次に、以下の手順を実行します。
 
-1. [構成の設定とアクセス](./liferay-n2f3.zip) をダウンロードし、解凍してください。
+1. [設定とアクセス](./liferay-n2f3.zip)をダウンロードし、解凍します。
 
     ```bash
-    curl https://learn.liferay.com/dxp/latest/ja/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-n2f3.zip -O
     ```
 
     ```bash
@@ -43,11 +43,11 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
     UIには、フォントの色、フォントファミリー、フォントサイズの3つの設定可能な属性とともにウェルカムメッセージが表示されます。
 
-1. 構成を変更するには、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**System Settings**］ に移動します。 ［Other］の下の **category.n2f3** をクリックします。
+1. 構成を変更するには、*［コントロールパネル］* &rarr; *［設定］*&rarr; *［System Settings］*に移動します。 ［Other］の下の*category.n2f3*をクリックします。
 
     ![［Other］カテゴリーの下にあるcategory.n2f3をクリックします。](./setting-and-accessing-configurations/images/02.png)
 
-    別のフォントの色、フォントファミリー、およびフォントサイズを入力してみてください。 ［**アップデート**］ ボタンをクリックして、公開されたウィジェットのあるページに戻ります。 属性が変更されたことを確認します。
+    別のフォントの色、フォントファミリー、およびフォントサイズを入力してみてください。 *［アップデート］*ボタンをクリックして、公開されたウィジェットのあるページに戻ります。 属性が変更されたことを確認します。
 
 構成フレームワークの仕組みは次のとおりです。
 
@@ -55,7 +55,7 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
 構成インターフェイスで構成可能な属性を定義するだけで、[システム設定](../../../system-administration/configuring-liferay/system-settings.md)で構成UIを生成できます。
 
-サンプルプロジェクトでは、`N2F3WebConfiguration.java`ファイルが構成インターフェイスです。
+サンプルプロジェクトでは、`N2F3WebConfiguration.java`ファイルが構成インターフェースです。
 
 ```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/configuration/N2F3WebConfiguration.java
 :language: java
@@ -64,7 +64,7 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 
 このサンプルインターフェイスでは、スコープが`Scope.COMPANY`に設定されていることに注意してください。 詳細については、 [スコープ設定](./scoping-configurations.md)を参照してください。
 
-インターフェイスには、フォントの色、フォントファミリー、フォントサイズの3つの設定可能な属性があります。 色とファミリーは`string`型であり、サイズは`int`型であることに注意してください。
+インターフェースには、フォントの色、フォントファミリー、フォントサイズの3つの設定可能な属性があります。 色とファミリーは`string`型であり、サイズは`int`型であることに注意してください。
 
 `Meta.OCD`は、このクラスを特定のIDを持つ構成として登録します。
 
@@ -72,7 +72,7 @@ Liferayの構成フレームワークを使用して、MVCポートレットの�
 IDには、構成インターフェイスの完全修飾クラス名（FQCN）を指定する必要があることに注意してください。
 ```
 
-`Meta.AD`は、デフォルト値や属性が必須項目であるかどうかなど、属性に関する [オプションのメタデータ](http://bnd.bndtools.org/chapters/210-metatype.html) を指定します。 属性値が必要であるがデフォルトが設定されていない場合、管理者はアプリケーションが正しく機能するように設定で値を設定する必要があることに注意してください。
+`Meta.AD`は、デフォルト値や属性が必須項目であるかどうかなど、属性に関する[オプションのメタデータ](http://bnd.bndtools.org/chapters/210-metatype.html)を指定します。 属性値が必要であるがデフォルトが設定されていない場合、管理者はアプリケーションが正しく機能するように設定で値を設定する必要があることに注意してください。
 
 次に、MVCポートレットによって構成がどのように読み取られるかを確認します。
 
@@ -131,13 +131,13 @@ required = false)
 
 これで、フォントファミリー属性はドロップダウン選択になります。
 
-## Liferay の以前のバージョンでの ConfigurationBeanDeclaration。
+## Liferayの以前のバージョンでのConfigurationBeanDeclaration
 
 ```{important}
-Liferay DXP 7.4 U51+ と Liferay Portal 7.4 GA51+ では、`ConfigurationBeanDeclaration`クラスは必要ありません。 Configuration Provider API には、configration インターフェースが自動的に登録される。
+Liferay DXP 7.4 U51+とLiferay Portal 7.4 GA51+では、`ConfigurationBeanDeclaration`クラスは必要ありません。 構成インターフェースは、構成プロバイダーAPIに自動的に登録されます。
 ```
 
-Liferay 7.4 Update/GA 51 以前のバージョンでは、Configuration Provider API で使用するために `ConfigurationBeanDeclaration`で設定クラスを登録する必要があります。 `ConfigurationBeanDeclaration` クラスには、構成インターフェースクラスを返すメソッドが1つあります。 これは、システムが設定の変更を随時把握するのに役立ちます。 例えば、N2F3ポートレットの場合、以下のようなクラスを作成します。
+7.4 Update/GA 51以前のLiferayバージョンでは、構成クラスを構成プロバイダーAPIで使用するためには`ConfigurationBeanDeclaration`で構成クラスを登録する必要があります。 `ConfigurationBeanDeclaration` クラスには、構成インターフェースクラスを返すメソッドが1つあります。 これにより、システムは構成の変更が生じたときにそれを追跡できるようになります。 例えば、N2F3ポートレットの場合、以下のようなクラスを作成します。
 
 ```java
 @Component(service = ConfigurationBeanDeclaration.class)
@@ -152,7 +152,7 @@ public class N2F3WebConfigurationBeanDeclaration
 }
 ```
 
-この例では、クラスを `com.acme.n2f3.web.internal.settings.definition` パッケージに配置します。
+この例では、クラスを`com.acme.n2f3.web.internal.settings.definition`パッケージに配置します。
 
 ## さらなるカスタマイゼーション
 

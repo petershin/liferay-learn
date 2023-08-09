@@ -7,19 +7,19 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-その後、以下の手順で操作してください：
+次に、以下の手順を実行します。
 
-1. [Tags API Basics](./liferay-r7u9.zip) をダウンロードし、解凍する。
+1. [Tags API Basics](./liferay-r7u9.zip)をダウンロードして解凍します。
 
    ```bash
-   curl https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/tags-and-categories/developer-guide/liferay-r7u9.zip -O
    ```
 
    ```bash
    unzip liferay-r7u9.zip
    ```
 
-1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
+1. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 1. cURLスクリプトを使用して、サイトに新しいタグを追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`Keyword_POST_ToSite.sh`スクリプトを実行します。
 
@@ -49,7 +49,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
    }
    ```
 
-1. ［**Administration Menu**］ &rarr; ［**カテゴリー設定**］ &rarr; ［**Tags**］ に移動して、タグアプリケーションに移動します。 新しいタグが追加されたことを確認してください。
+1. *［Administration Menu］* &rarr; *［カテゴリー設定］* &rarr; *［Tags］*に移動して、タグアプリケーションに移動します。 新しいタグが追加されたことを確認してください。
 
     ![新しいタグが追加されたことを確認してください。](./tags-api-basics/images/01.png)
 
@@ -101,7 +101,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 
 このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
 
-| 行(省略形）                                                                   | 説明                                                       |
+| 行（省略形）                                                                   | 説明                                                       |
 |:------------------------------------------------------------------------ |:-------------------------------------------------------- |
 | `KeywordResource.Builder builder = ...`                                  | `Builder`を取得し、`KeywordResource`サービスインスタンスを生成します。         |
 | `KeywordResource keywordResource = builder.authentication(...).build();` | 基本認証を指定し、`KeywordResource`サービスインスタンスを生成します。              |
@@ -116,7 +116,7 @@ LiferayのREST APIは、Liferay DXP/ポータルのタグにサービスを提�
 他の例のJavaクラスはこれと類似していますが、異なる`KeywordResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、 [KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java) を参照してください。
+サービスの詳細は、[KeywordResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-taxonomy/headless-admin-taxonomy-client/src/main/java/com/liferay/headless/admin/taxonomy/client/resource/v1_0/KeywordResource.java)を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`Keyword` RESTサービスを呼び出す例です。

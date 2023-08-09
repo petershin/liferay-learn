@@ -38,6 +38,23 @@ The grid fragment adds multiple drop zone modules to a page or template. These m
 
 ![Grids include standard and unique configuration options.](./using-layout-elements/images/03.png)
 
+
+## Navigating Through the Structure
+
+You can use the breadcrumbs located at the bottom of the page to navigate through its structure:
+
+1. Open the *Product Menu*( ![Product Menu icon](../../../../images/icon-product-menu.png) ) and select *Site Builder* &rarr; *Pages*. 
+   
+1. Click on the page you want to edit;
+
+1. Click on an element. 
+
+    The breadcrumbs show at the bottom. You can select any parent element by clicking on the respective breadcrumb level.
+
+1. You can also select an element and use the shortcut `Shift + Enter` to select its parent.
+
+![Use the breadcrumb system to navigate through the structure and select parent elements](./using-layout-elements/images/04.png)
+
 ## Related Topics
 
 * [Default Fragments Reference](./default-fragments-reference.md)

@@ -8,10 +8,11 @@ uuid: f18aba0c-9da6-4057-a9df-0d610216d651
 ---
 # Cloud Administrator
 
-If you want your website on a secure and reliable enterprise cloud platform, you can build it on Liferay Cloud. There are two major offerings you can have for your project:
+With Liferay Cloud you can build your website on a secure and reliable enterprise cloud platform. Two offerings are available:
 
-* **Liferay Experience Cloud (LXC)**: Work with Liferay DXP and all necessary infrastructure provided and maintained for you, according to your specific needs, where you only have to provide your own code or customizations.
-* **Liferay Experience Cloud Self-Managed (LXC-SM)**: Work with a Liferay Cloud project where you directly control and configure each service in the cloud yourself, including the web server, database, and Elasticsearch server, and where you are responsible for maintaining and updating them.
+* **Liferay Experience Cloud (LXC)**: Includes a Liferay DXP instance running on infrastructure provisioned and maintained by Liferay. Utilize out-of-the-box Liferay DXP features to build your site and deploy your own code or client extensions to achieve customizations, when necessary.
+
+* **Liferay Experience Cloud Self-Managed (LXC-SM)**: Includes a Liferay Cloud project where you directly control and configure each service in the cloud yourself, including Liferay DXP, the web server, database, and Elasticsearch server. You are responsible for maintaining and updating these services.
 
 You'll learn how to
 

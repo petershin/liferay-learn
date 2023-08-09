@@ -1,6 +1,6 @@
 # 관심 주제 관리
 
-Analytics Cloud의 [Recommendation API](../../optimization/content-recommendation-api.md) 은 Liferay DXP 콘텐츠와의 사용자 상호 작용을 기반으로 관심 주제를 제안합니다. 관리자는 추천 API에서 특정 키워드를 제외할 수 있으므로 Analytics Cloud가 해당 키워드를 기반으로 콘텐츠를 제안하지 않도록 할 수 있습니다. 제안된 콘텐츠를 추가로 큐레이팅하는 데 유용합니다.
+Analytics Cloud는 Liferay DXP 콘텐츠와의 사용자 상호 작용을 기반으로 관심 주제를 제안합니다. 관리자는 추천 API에서 특정 키워드를 제외할 수 있으므로 Analytics Cloud가 해당 키워드를 기반으로 콘텐츠를 제안하지 않도록 할 수 있습니다. 제안된 콘텐츠를 추가로 큐레이팅하는 데 유용합니다.
 
 ```{note}
 현재 관심 주제는 영어로만 지원됩니다. 영어가 아닌 콘텐츠는 필터링됩니다.

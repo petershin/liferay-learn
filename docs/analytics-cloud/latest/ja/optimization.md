@@ -1,7 +1,6 @@
 ---
 toc:
 - ./optimization/a-b-testing.md
-- ./optimization/content-recommendation-api.md
 - ./optimization/personalizing-content-with-segments.md
 ---
 # 最適化
@@ -10,10 +9,8 @@ toc:
 :maxdepth: 3
 
 optimization/a-b-testing.md
-optimization/content-recommendation-api.md
 optimization/personalizing-content-with-segments.md
 ```
 
 - [A/Bテスト](./optimization/a-b-testing.md)
-- [コンテンツレコメンデーションAPI](./optimization/content-recommendation-api.md)
 - [セグメントでコンテンツをパーソナライズする](./optimization/personalizing-content-with-segments.md)

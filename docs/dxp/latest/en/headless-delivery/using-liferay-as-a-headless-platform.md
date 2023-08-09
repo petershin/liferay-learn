@@ -24,7 +24,7 @@ curl \
 	-u "test@liferay.com:learn"
 ```
 
-The most relevant documentation is also available at `[server]:[port]/o/[api-name]/[api-version]/openapi.[yaml or json]` in a raw format. The documentation is available on [SwaggerHub](https://app.swaggerhub.com/search?owner=liferayinc), but may not match if you are running a previous version.
+The most relevant documentation is also available at `[server]:[port]/o/[api-name]/[api-version]/openapi.[yaml or json]` in a raw format. Documentation is also available on [SwaggerHub](https://app.swaggerhub.com/search?owner=liferayinc), but may not match if you are running a previous version.
 
 To view the OpenAPI specifications for all the APIs, use your browser and access `[server]:[port]/o/api?endpoint=[server]:[port]/o/openapi/openapi.json`. (e.g. http://localhost:8080/o/api?endpoint=http://localhost:8080/o/openapi/openapi.json). Or download the full list in JSON format or YAML format with cURL. For example:
 
@@ -84,5 +84,5 @@ For specifics on how to use any of these parameters see [API Headers Reference](
 
 ## Related Information
 
-- [Consuming Rest Services](../headless-delivery/consuming-apis/consuming-rest-services.md)
-- [Consuming GraphQL APIs](../headless-delivery/consuming-apis/consuming-graphql-apis.md)
+* [Consuming Rest Services](../headless-delivery/consuming-apis/consuming-rest-services.md)
+* [Consuming GraphQL APIs](../headless-delivery/consuming-apis/consuming-graphql-apis.md)

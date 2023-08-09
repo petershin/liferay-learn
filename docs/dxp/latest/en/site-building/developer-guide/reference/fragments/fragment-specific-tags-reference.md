@@ -141,6 +141,30 @@ There is also a specific syntax for creating editable link elements:
 </a>
 ```
 
+You can associate the link with an e-mail using `mailto:` URI scheme or with a telephone number using `tel:` URI scheme:
+
+```html
+<a
+  href="mailto:email@liferay.com"
+  target="_blank"
+  data-lfr-editable-id="link-to-email"
+  data-lfr-editable-type="link"
+>
+  Send a Message
+</a>
+```
+
+```html
+<a
+  href="tel:555-2368"
+  target="_blank"
+  data-lfr-editable-id="link-to-phone"
+  data-lfr-editable-type="link"
+>
+  Who You Gonna Call?
+</a>
+```
+
 For Liferay Portal 7.3 GA2 and below, use this syntax:
 
 ```html

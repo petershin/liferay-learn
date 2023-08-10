@@ -460,7 +460,9 @@ To reference this collection in the HTML, use the collection `name` in the JSON 
 
 ![You can develop a fragment with a Collection selector using the Collection configuration.](./fragment-configuration-types-reference/images/08.png)
 
-You can also filter the collection selector using `itemType` in the `collectionSelector` configuration. For example, if you have different collections including web content and blogs, you can restrict the collection selector to show only blog collections. This JSON sample illustrates this configuration:
+### Filtering the Collection Selector
+
+You can filter the collection selector using `itemType` in the `collectionSelector` configuration. For example, if you have different collections including web content and blogs, you can restrict the collection selector to show only blog collections. This JSON sample illustrates this configuration:
 
 ```json
 {
@@ -488,6 +490,8 @@ Using this sample configuration, collections including both web content and blog
 ```{tip}
 In addition to the `itemType`, you can specify the `itemSubtype` in the configuration. The `itemSubtype` corresponds to the asset `classPK`.
 ```
+
+### Defining a Maximum Number of Returned Collection Items
 
 By default, all items in the collection are returned if you do not define a limit to the maximum number of items. You can set this limit using `numberOfItems` in your JSON configuration.
 

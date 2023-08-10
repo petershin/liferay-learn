@@ -5,7 +5,7 @@ uuid: bbabbf34-7b53-442e-802f-f7ede39eaf0c
 
 {bdg-secondary}`Available Liferay DXP 7.4 U76 / Liferay Portal 7.4 GA76`
 
-When doing upgrades upon startup, the upgrade process can be monitored with MBeans through a JVM management tool (e.g. JConsole). To enable MBeans monitoring for Liferay, set `upgrade.database.auto.run=true` in your [portal properties](../../reference/portal-properties.md).
+When upgrade upon startup is enabled, the upgrade process can be monitored with MBeans through a JVM management tool (e.g. JConsole). Enable upgrade on startup by setting `upgrade.database.auto.run=true` in your [portal properties](../../reference/portal-properties.md).
 
 In your JVM management tool, create a new connection and select Liferay's java process (e.g. `org.apache.catalina.startup.Bootstrap`).
 
@@ -30,7 +30,9 @@ The following values are possible for `Type`:
 * `minor`: At least one upgrade involving a minor change of schemaVersion has been executed.
 * `micro`: At least one upgrade involving a micro change of schemaVersion has been executed.
 
-Note, the information provided by MBeans is updated in real-time and is only available through upgrades performed at startup. Once the final values have been displayed at the end of the startup upgrade, it remains static. 
+```{note}
+The information provided by MBeans is updated in real-time and is only available for upgrades performed at startup. Once the upgrade on startup completes, the values displayed in MBeans are static and are not updated even if manual upgrades are performed after the upgrade on startup.
+```
 
 ## Related Topics
 

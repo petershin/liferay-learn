@@ -47,6 +47,24 @@ You don't need Blade CLI to create projects. You can create a project folder man
 
 To write code to run on Liferay DXP, you must have a Liferay runtime on which to deploy it. Your first task, therefore, after installing Liferay Workspace should be to add a Liferay bundle to your workspace. 
 
+### Together with the Liferay CLI Tool
+
+The [Liferay CLI](../other-tools/liferay-cli-tool.md) tool can be used together with Liferay workspace. See the article to learn more about installing the tool and generating a project.
+
+```{note}
+Liferay workspace downloads its own node version (i.e. not necessarily your system’s version). If a different node version is needed, declare it in your build.gradle file.
+```
+
+```gradle
+node {
+	nodeVersion = "16.18.1"
+	npmVersion = "8.19.2"
+    ...
+}
+```
+
+Make sure to run gw clean to clean out the build cache.
+
 ## Using the Themes Generator with Liferay Workspace
 
 The Liferay Themes Generator is a node.js-based tool for creating themes to change the look and feel of your site. These projects can also be managed by Liferay Workspace. You can create theme projects with Blade or manually. 

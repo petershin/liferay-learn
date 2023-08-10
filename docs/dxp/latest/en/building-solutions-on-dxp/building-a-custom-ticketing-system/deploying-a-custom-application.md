@@ -29,7 +29,19 @@ The custom ticketing system application is now running on the site page.
 
 ![The custom ticketing system application is now running.](./deploying-a-custom-application/images/01.png)
 
+Note, clicking the _Generate a New Ticket_ button generates additional random ticket entries. You can also create your own ticket object entries from _Control Panel_ &rarr; _Tickets_.
+
 ## Examine the Custom Element Code
+
+The `assemble` block section of the `client-extension.yaml` file looks like this:
+
+```yaml
+assemble:
+    - from: build/assets
+      into: static
+```
+
+Note, the `.js` and `.css` build files of the JavaScript application are copied from the `build/assets` folder and placed into the deployable client extension `.zip` file.
 
 This `current-tickets-custom-element` is a [custom element](../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) type client extension. It is defined as follows in the `client-extension.yaml` file:
 
@@ -50,10 +62,10 @@ current-tickets-custom-element:
 
 See [custom element YAML configuration reference](../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md) for an explanation of each property.
 
-The relevant JavaScript files are contained in the `/src` folder. An explanation of the full implementation of this JavaScript app is beyond the scope of this tutorial, but a few things to note:
+The relevant JavaScript files for the application are contained in the `/src` folder. A full explanation of the JavaScript code is beyond the scope of this tutorial, but a few things to note:
 
-* In the `/src/tickets.js` file, tickets are created and fetched through the use of the `ticket` object that was created when the [data schema](./customizing-a-data-schema.md) was defined.
-* In the `/src/tickets.js` file, the object's headless API calls are authorized with the `Liferay.authToken` object. This object can be used when a web component is running on Liferay and simplifies OAuth2 authorization.
+* In the `/src/tickets.js` file, tickets are created and fetched through the use of the `ticket` object that was created when the [data schema](./customizing-a-data-schema.md) was defined. Note the `generateNewTicket()` function in the `/src/ticket.js` file generates additional ticket entries with random field entries.
+* In the `/src/tickets.js` file, the object's headless API calls are authorized with the `Liferay.authToken` object. This object is available when a web component is running on Liferay and simplifies OAuth2 authorization.
 * The `package.json` file includes a `scripts{}` element that handles the initializing and building of the JavaScript application.
 
 See [understanding custom element and iframe client extensions](../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information.

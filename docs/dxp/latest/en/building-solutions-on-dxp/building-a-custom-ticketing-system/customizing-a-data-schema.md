@@ -23,7 +23,17 @@ In Liferay, navigate to _Control Panel_ &rarr; _Picklists_. See that five new pi
 
 ### Examining the Custom Picklists Code
 
-This `list-type-batch` client extension is a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. It is defined as follows in the `client-extension.yaml` file:
+Each client extension project is defined by the `client-extension.yaml` file. The first section defines the `assemble` block that specifies the files that will be included in the deployable `.zip` file. The `assemble` block for this client extension looks like this:
+
+```yaml
+assemble:
+    - from: batch
+      into: batch
+```
+
+See [assembling client extensions](../../building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions) to learn more.
+
+This `list-type-batch` client extension is a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. It is defined as follows:
 
 ```yaml
 list-type-batch:

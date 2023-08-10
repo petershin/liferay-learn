@@ -28,7 +28,15 @@ Deploy the `tickets-theme-css` client extension.
 
 ## Examine the Custom Theme CSS Code
 
-This `tickets-theme-css` is a [theme CSS](../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) type client extension. It is defined as follows in the `client-extension.yaml` file:
+The `assemble` block section of the `client-extension.yaml` file looks like this:
+
+```yaml
+assemble:
+    - from: build/buildTheme/img
+      into: static/img
+```
+
+This `tickets-theme-css` is a [theme CSS](../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) type client extension. It is defined as follows:
 
 ```yaml
 tickets-theme-css:

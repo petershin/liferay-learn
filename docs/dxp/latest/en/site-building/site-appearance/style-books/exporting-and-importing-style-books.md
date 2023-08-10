@@ -57,13 +57,13 @@ Liferay provides settings for configuring export and import processes.
 
 | Setting | Description |
 | :--- | :--- |
-| Application | Choose to export your style book’s configuration settings. |
+| Application | When checked, your style book’s configuration settings are exported/imported to the LAR file. |
 | Content | Select a date range of content that you want to export. Content added to your style book within your specified date range is included in the LAR file. |
-| Deletions | Choose to export individual deletions. This exports delete operations performed for content types to the LAR file. |
+| Deletions | When checked, the delete operations performed for content types are exported/imported to the LAR file. |
 | Delete Application Data Before Importing (Import) | When checked, all data created by the application is deleted before the import process. Be careful: other applications may reference this data. This process cannot be undone. If you are unsure, do an export first. |
-| Permissions | Choose whether to include permissions for your exported content. The permissions assigned for the exported style book are included if you enable the Export Permissions selector. |
-| Update Data (Import) | Decide how to handle the updated data once it is applied to existing content. |
-| Authorship of the Content (Import) | Decide about the authorship of the imported content. |
+| Permissions | When checked, permissions assigned for your exported/imported entries are included.|
+| Update Data (Import) | Choose one of these options to define what happens to the data once it is updated: **Mirror**: All data and content inside the imported LAR is newly created the first time while maintaining a reference to the source. Subsequent imports from the same source updates entries instead of creating new entries. **Mirror with Overwriting**: Same as mirroring, but if a document or an image with the same name is found, it is overwritten. **Copy as New**: all data and content inside the imported LAR is created nas new entries with the current site every time the LAR is imported. |
+| Authorship of the Content (Import) | Choose one of these options to define the authorship of the content: **Use the Original Author**: keep authorship of imported content whenever possible (this option uses the current user as author if the original one is not found). **Use the Current User as Author**: assign the current user as the author of all imported content. |
 
 ![Configure your export/import process](./exporting-and-importing-style-books/images/03.png)
 

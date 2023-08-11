@@ -24,7 +24,7 @@
 docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 ```
 
-<http://localhost:8080>でLiferayへのサインインします。 メールアドレス _test@liferay.com_ とパスワード _test_ を使用してください。 プロンプトが表示されたら、パスワードを _learn_ に変更します。
+<http://localhost:8080>でLiferayへのサインインします。 メールアドレス **test@liferay.com** とパスワード **test** を使用してください。 プロンプトが表示されたら、パスワードを **learn** に変更します。
 
 次に、以下の手順に従います。
 
@@ -84,7 +84,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 3つのサンプルモジュールクラスは、宛先を管理し、メッセージをリッスンし、メッセージを送信します。
 
-**`m4q7-able-impl`モジュール：**`M4Q7AbleMessagingConfigurator`は、`acme/m4q7_able`という名前のメッセージ宛先を作成し、それをメッセージバスに登録します。
+**`m4q7-able-impl`モジュール：** `M4Q7AbleMessagingConfigurator`は、`acme/m4q7_able`という名前のメッセージ宛先を作成し、それをメッセージバスに登録します。
 
 **`m4q7-baker-impl`モジュール：**
 
@@ -92,7 +92,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 * `M4Q7BakerMessagingConfigurator`は、`acme/m4q7_baker`という名前のメッセージ宛先を作成し、それをメッセージバスに登録します。
 * `M4Q7BakerMessageListener`は、`acme/m4q7_baker`宛先に送信されたメッセージをリッスンし、メッセージペイロードをログに記録します。
 
-**`m4q7-charlie-impl`モジュール：**`M4Q7CharlieMessageListener`は、`acme/m4q7_able`宛先に送信されたメッセージをリッスンし、メッセージペイロードをログに記録し、元のメッセージの応答先に応答メッセージを送信します。
+**`m4q7-charlie-impl`モジュール：** `M4Q7CharlieMessageListener`は、`acme/m4q7_able`宛先に送信されたメッセージをリッスンし、メッセージペイロードをログに記録し、元のメッセージの応答先に応答メッセージを送信します。
 
 イベントフローは次のとおりです。
 
@@ -123,9 +123,9 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
    :lines: 15-45
 ```
 
-どちらのコンフィギュレータも[`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html)クラスです。 これらは[`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html)アノテーションを使用して、`DestinationFactory`インスタンスを挿入します。
+どちらのコンフィギュレータも [`Component`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Component.html) クラスです。 これらは [`@Reference`](https://docs.osgi.org/javadoc/osgi.cmpn/7.0.0/org/osgi/service/component/annotations/Reference.html) アノテーションを使用して、`DestinationFactory`インスタンスを挿入します。
 
-`_activate(BundleContext)`メソッドは、[`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java)と[`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java)を使用して*シリアル*宛先を作成します。 最後に、`_activate(BundleContext)`メソッドは、`BundleContext`を使用して[`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)をOSGiサービスに登録します。
+`_activate(BundleContext)`メソッドは、 [`DestinationFactory`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationFactory.java) と [`DestinationConfiguration`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationConfiguration.java) を使用して **シリアル** 宛先を作成します。 最後に、`_activate(BundleContext)`メソッドは、`BundleContext`を使用して [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) をOSGiサービスに登録します。
 
 ```{warning}
 デフォルトの同期メッセージングでは、シリアルまたはパラレルの宛先のみを使用してください。 それらは、`DestinationConfiguration`の`createSerialDestinationConfiguration(String)`および `createParallelDestinationConfiguration(String)`メソッドを呼び出すことで作成できます。
@@ -137,7 +137,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 ## リスナーを調べる
 
-`m4q7-charlie-impl`モジュールの`M4Q7CharlieMessageListener`クラスは、`acme/m4q7_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)に送信されたメッセージをリッスンします。 [Listening for Messages](./listening-for-messages.md)に示されている方法と同じ方法で登録されます。
+`m4q7-charlie-impl`モジュールの`M4Q7CharlieMessageListener`クラスは、`acme/m4q7_able` [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) に送信されたメッセージをリッスンします。 [メッセージを聞く](./listening-for-messages.md) に示されている方法と同じ方法で登録されます。
 
 `M4Q7CharlieMessageListener`クラス：
 
@@ -172,7 +172,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
    :lines: 12-38
 ```
 
-`M4Q7BakerOSGiCommands`は、独自のクラスタイプのサービス`Component`です。 これは、`@Reference`アノテーションを使用して、*デフォルト*モード（アノテーションの`target = "(mode=DEFAULT)"`属性で指定）に設定された`SynchronousMessageSender`を挿入します。
+`M4Q7BakerOSGiCommands`は、独自のクラスタイプのサービス`Component`です。 これは、`@Reference`アノテーションを使用して、 **デフォルト** モード（アノテーションの`target = "(mode=DEFAULT)"`属性で指定）に設定された`SynchronousMessageSender`を挿入します。
 
 ```{note}
 *デフォルト*モードでは、`SynchronousMessageSender`の`send`メソッドは、応答メッセージが受信されるまで、または送信者がタイムアウトするまで、呼び出し元のクラスをブロックします。
@@ -180,7 +180,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 `M4Q7BakerOSGiCommands`の`@Component`プロパティは、`m4q7`スコープで`sendMessage`と呼ばれるGogoシェルコマンド関数を定義します。 このコマンドは入力`String`を受け取り、`M4Q7BakerOSGiCommands`の`sendMessage(String)`メソッドにマッピングします。
 
-`sendMessage(String)`メソッドは、Gogoシェルコマンドの`String`をペイロードとして、`"acme/m4q7_baker"`を応答先として[`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java)を作成します。
+`sendMessage(String)`メソッドは、Gogoシェルコマンドの`String`をペイロードとして、`"acme/m4q7_baker"`を応答先として [`Message`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Message.java) を作成します。
 
 `sendMessage(String)`メソッドは、`SynchronousMessageSender`の`send(String, Message, long)`メソッドを呼び出してメッセージを送信し、`"acme/m4q7_able"`宛先名、メッセージインスタンス、および`10000`ミリ秒のタイムアウトを渡します。 デフォルトモードでは、`SynchronousMessageSender`はメッセージバススレッドを使用してメッセージをメッセージリスナーに配信します。 元のメッセージの応答IDを持つメッセージが`"acme/m4q7_baker"`応答先で受信されるまで、実行が`M4Q7BakerOSGiCommands`クラスでブロックされます。 レスポンスを受信すると、 `M4Q7BakerOSGiCommands` `sendMessage(String)` メソッドで実行が継続され、メッセージ応答をログに記録します。 一致する応答メッセージを受信する前にタイムアウトが期限切れになると、`SynchronousMessageSender`の`send(String, Message, long)`メソッドは`MessageBusException`をスローします。
 
@@ -244,7 +244,7 @@ docker run -it -m 8g -p 8080:8080 liferay/portal:7.4.3.48-ga48
 
 ## 次のステップ
 
-*direct* モードを使用した同期メッセージングを検討したい場合は、 [旧バージョンでのダイレクト同期メッセージングの使用](./using-direct-synchronous-messaging-in-previous-versions.md)を参照してください。
+**direct** モードを使用した同期メッセージングを検討したい場合は、 [旧バージョンでのダイレクト同期メッセージングの使用](./using-direct-synchronous-messaging-in-previous-versions.md)を参照してください。
 
 メッセージを送信した直後に処理を続行する場合は、[非同期メッセージングの使用](./using-asynchronous-messaging.md)を参照してください。
 

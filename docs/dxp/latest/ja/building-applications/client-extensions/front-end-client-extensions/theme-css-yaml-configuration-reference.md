@@ -29,7 +29,7 @@ able-theme-css:
 | `clayURL` | URL  | (必須）Liferayテーマの`clay.css`ファイルを表すCSSファイルへのパスです。 完全なURIは、`baseURL`の値が先頭に付きます。 |
 | `mainURL` | URL  | (必須）Liferayテーマの`main.css`ファイルを表すCSSファイルへのパスです。 完全なURIは、`baseURL`の値が先頭に付きます。 |
 
-すべてのフロントエンドクライアント拡張に共通するプロパティについては、[フロントエンドのクライアント拡張プロパティ](../front-end-client-extensions.md#front-end-client-extension-properties) を参照してください。
+すべてのフロントエンドクライアント拡張に共通するプロパティについては、 [フロントエンドのクライアント拡張プロパティ](../front-end-client-extensions.md#front-end-client-extension-properties) を参照してください。
 
 ## 関連トピック
 

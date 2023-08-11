@@ -3,7 +3,7 @@
 {bdg-secondary}`利用可能な Liferay DXP 7.4 U84+/GA84+`
 
 ```{important}
-アプリケーション価格は現在、リリース機能フラグの後ろにある。 詳しくは[Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags)をお読みください。 
+アプリケーション価格は現在、リリース機能フラグの後ろにある。 詳しくは [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) をお読みください。
 ```
 
 高価な商品や複雑な商品をカタログに掲載している場合、顧客が手助けなしに購入することを望まないかもしれません。購入前にサポートスタッフのサポートや介入が必要な場合は、そのような製品の価格を非表示にし、顧客に見積もりを依頼するよう求めることができます。これを「申し込み時価格」と呼びます。顧客はオプションで、通常の商品やバスケット商品の見積もりを要求することができます。また、アカウントやアカウントグループに対してこの機能を選択的に適用することもできます。
@@ -11,33 +11,33 @@
 
 商品を作成する際、申し込み時に価格を設定することができます：
 
-1. *グローバルメニュー* (![Global Menu](../../images/icon-applications-menu.png))を開き、*［コマース］* &rarr; *［製品］*に移動します。
+1. **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png))を開き、 ［**コマース**］ &rarr; ［**製品**］ に移動します。
 
-1. *Add* (![Add](../../images/icon-add.png)) をクリックし、新しいシンプルな商品を作成します。
+1. **Add**(![Add](../../images/icon-add.png)) をクリックし、新しいシンプルな商品を作成します。
 
-1. 名前を入力し、カタログを選択して、 *Submit*をクリックする。
+1. 名前を入力し、カタログを選択して、 **Submit** をクリックする。
 
-   製品設定ページが開きます。 *SKUs* タブに移動し、 *デフォルト* SKU をクリックします。
+   製品設定ページが開きます。 **SKUs** タブに移動し、 **デフォルト** SKU をクリックします。
 
-1. SKUを適切な識別子に変更し、 *Pricing* セクションで、 *Price on Application*のトグルを有効にする。
+1. SKUを適切な識別子に変更し、 **Pricing** セクションで、 **Price on Application** のトグルを有効にする。
 
    ![申請時の価格を有効にすると、他の価格欄が無効になります。](./price-on-application/images/01.png)
 
-   これは3つのフィールドを無効にする： *基本価格*、 *プロモーション価格* 、 *コスト*。 また、商品のメディア、添付ファイル、在庫などの追加情報を追加することもできます。
+   これは3つのフィールドを無効にする： **基本価格** 、 **プロモーション価格** 、 **コスト** 。 また、商品のメディア、添付ファイル、在庫などの追加情報を追加することもできます。
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
-1. *詳細* タブに戻り、 *パブリッシュ*をクリックする。
+1. **詳細** タブに戻り、 **パブリッシュ** をクリックする。
 
 ![この製品はPrice on Applicationと表示されている。](./price-on-application/images/02.png)
 
-ストアフロントに行き、作成したばかりの商品を見つける。 定価は *Price on Application* と表示され、新しいボタン *Request a Quote*も表示されます。 商品をカートに入れることはできますが、チェックアウトすることはできません。
+ストアフロントに行き、作成したばかりの商品を見つける。 定価は **Price on Application** と表示され、新しいボタン **Request a Quote** も表示されます。 商品をカートに入れることはできますが、チェックアウトすることはできません。
 
 ## お見積もり依頼
 
 商品詳細ページに見積依頼ボタンが追加されました。
 
-1. 製品詳細ページから *見積依頼* をクリックしてください。 また、この商品を他の商品と組み合わせたい場合は、商品をカートに入れ、ミニカートを開き、 *見積依頼*をクリックしてください。
+1. 製品詳細ページから **見積依頼** をクリックしてください。 また、この商品を他の商品と組み合わせたい場合は、商品をカートに入れ、ミニカートを開き、 **見積依頼** をクリックしてください。
 
    ```{note}
    カートの中の商品が申し込み価格である場合、チェックアウトボタンは使用できず、顧客は見積もりを依頼しなければならない。 
@@ -47,9 +47,9 @@
 
    未決済注文のページが開きます。
 
-1. ご注文内容に問題がなければ、下部にある *見積依頼* をクリックしてください。
+1. ご注文内容に問題がなければ、下部にある **見積依頼** をクリックしてください。
 
-1. 任意のメモを入力し、 *Submit*をクリックします。
+1. 任意のメモを入力し、 **Submit** をクリックします。
 
 ![見積もりを依頼する前に、任意のメモを追加してください。](./price-on-application/images/04.png)
 
@@ -59,13 +59,13 @@ Privateチェックボックスは管理者だけが見ることができます�
 
 顧客と長い付き合いがある場合、カートの中に入っている商品の数や価格から、やはり見積もりを求めるかもしれない。 このような場合、チャネル用のフルプライスカートの見積もり依頼を可能にすることができます。
 
-1. *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Channels*に移動します。
+1. **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Channels** に移動します。
 
 1. チャンネルを選択し、注文セクションまでスクロールダウンしてください。
 
-1. *Allow Request a Quote on the Fully Priced Cart*を有効にするには、トグルを使用します。
+1. **Allow Request a Quote on the Fully Priced Cart** を有効にするには、トグルを使用します。
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 見積りが不要な商品をカートに入れた場合、顧客はチェックアウトするか、ミニカートまたは保留中の注文画面から見積りを依頼することができます。
 
@@ -77,31 +77,31 @@ Privateチェックボックスは管理者だけが見ることができます�
 
 1. 基本価格を入力してください（例：14,999ドル）。
 
-1. *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Price Lists*に移動する。
+1. **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Price Lists** に移動する。
 
-1. *追加* (![Add](../../images/icon-add.png))をクリックし、以下の情報を入力します。
+1. **追加**(![Add](../../images/icon-add.png))をクリックし、以下の情報を入力します。
 
    **名前** 見積もりなし
 
-   **カタログ:**Minium
+   **カタログ:** Minium
 
    **通貨：** USD
 
-1. *［Submit］*をクリックします 。
+1. ［**Submit**］ をクリックします 。
 
-1. *Eligibility* タブをクリックし、Account Eligibility の下にある *Specific Accounts* を選択してください。
+1. **Eligibility** タブをクリックし、Account Eligibility の下にある **Specific Accounts** を選択してください。
 
-1. アカウント（例：CC West）を検索し、 *Select*をクリックします。
+1. アカウント（例：CC West）を検索し、 **Select** をクリックします。
 
-1. *Entries* タブをクリックする。
+1. **Entries** タブをクリックする。
 
-1. 先に作成したSKUを見つけ、 *Select*をクリックする。
+1. 先に作成したSKUを見つけ、 **Select** をクリックする。
 
-1. Entries セクションから、選択した SKU をクリックし、 *Price on Application*を有効にする。
+1. Entries セクションから、選択した SKU をクリックし、 **Price on Application** を有効にする。
 
-1. *［保存］*をクリックします。
+1. ［**保存**］ をクリックします。
 
-1. *［Publish］*をクリックします。
+1. ［**Publish**］ をクリックします。
 
 このアカウント（CC West）は、この製品の見積もりを要求しなければならない。 上記と同じ手順で、プロモーションリストを使ってSKUの価格を申請することができます。 プロモーションの対象となる顧客アカウントは、設定されたSKUの見積もりを依頼する必要があります。 その他のアカウントは、通常通りチェックアウトして注文を出すことができる。
 
@@ -115,14 +115,14 @@ Privateチェックボックスは管理者だけが見ることができます�
 
 ## 注文のライフサイクル 製品は申し込み価格
 
-顧客が見積もりを依頼すると、その注文のステータスは *見積もり依頼済み*となる。 これは、顧客から送信されたメモとともに、発注済み注文画面に表示されます。 これらの注文は、 *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Orders*に移動すると表示できます。
+顧客が見積もりを依頼すると、その注文のステータスは **見積もり依頼済み** となる。 これは、顧客から送信されたメモとともに、発注済み注文画面に表示されます。 これらの注文は、 **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Orders** に移動すると表示できます。
 
 ![注文は「見積依頼済み」のステータスで追加されます。](./price-on-application/images/05.png)
 
-注文を選択した後、メモを追加したり、顧客が発注済み注文画面から見ることができる詳細情報を追加することができます。 見積もりを確認した後、 *Quote Processed* をクリックすると、見積もりが処理されます。
+注文を選択した後、メモを追加したり、顧客が発注済み注文画面から見ることができる詳細情報を追加することができます。 見積もりを確認した後、 **Quote Processed** をクリックすると、見積もりが処理されます。
 
 ![Quote Processedをクリックし、見積もりを処理します。](./price-on-application/images/06.png)
 
 ```{note}
-画像 "[CIFAウォッシュバッチプラント](https://www.cifa.com/en/batching-plants/recycling/cifa-wash)" 
+画像 "[CIFAウォッシュバッチプラント](https://www.cifa.com/en/batching-plants/recycling/cifa-wash)"
 ```

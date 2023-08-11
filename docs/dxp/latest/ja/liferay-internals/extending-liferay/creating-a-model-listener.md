@@ -1,8 +1,8 @@
 # モデルリスナーの作成
 
-モデルリスナーは、指定されたモデルへの変更を通知する永続メソッドの呼び出しをリッスンします（ `update` または `add` メソッドなど）。 モデルリスナーが使用するメソッドのほとんどは、DXPの[`BasePersistenceImpl`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/service/persistence/impl/BasePersistenceImpl.java)クラスから呼び出されます。 すぐに使えるエンティティ（ `JournalArticle` または `AssetEntry`）、または独自のエンティティのモデルリスナーを定義できます。
+モデルリスナーは、指定されたモデルへの変更を通知する永続メソッドの呼び出しをリッスンします（ `update` または `add` メソッドなど）。 モデルリスナーが使用するメソッドのほとんどは、DXPの [`BasePersistenceImpl`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/service/persistence/impl/BasePersistenceImpl.java) クラスから呼び出されます。 すぐに使えるエンティティ（ `JournalArticle` または `AssetEntry`）、または独自のエンティティのモデルリスナーを定義できます。
 
-モデルリスナーを追加するには、 [`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java)インターフェイスを実装します。
+モデルリスナーを追加するには、 [`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java) インターフェイスを実装します。
 
 ## 実行中のモデルリスナーを調べる
 
@@ -37,11 +37,11 @@
     STARTED com.acme.n4g6.impl_1.0.0
     ```
 
-1. 追加されたログメッセージを表示して、サンプルモデルリスナーが追加されたことを確認します。 ブラウザーで `http://localhost/8080` を開き、［サイト］メニュー→ _［コンテンツ & データ］_ → _［Webコンテンツ］_ へ行きます。
+1. 追加されたログメッセージを表示して、サンプルモデルリスナーが追加されたことを確認します。 ブラウザーで `http://localhost/8080` を開き、［サイト］メニュー→ ［**コンテンツ & データ**］ → ［**Webコンテンツ**］ へ行きます。
 
    ![Webコンテンツ管理ページは、Webコンテンツを作成するためのインターフェースです。](./creating-a-model-listener/images/01.png)
 
-   追加ボタンをクリックして、 ![追加](../../images/icon-add.png) _［基本Webコンテンツ］_をクリックして新しい記事を追加します。 タイトルとコンテンツを入力してください。次に、［ _Publish_］をクリックします。 コンソールに警告メッセージが表示されます。
+   追加ボタンをクリックして、 ![追加](../../images/icon-add.png)［**基本Webコンテンツ**］ をクリックして新しい記事を追加します。 タイトルとコンテンツを入力してください。次に、［**Publish**］をクリックします。 コンソールに警告メッセージが表示されます。
 
    ```
    2020-03-17 23:14:56.301 WARN  [http-nio-8080-exec-5][N4G6ModelListener:23] Added journal article 20478.
@@ -49,23 +49,23 @@
 
 　 `ModelListener`を実装する新しいモデルリスナーが正常に構築され、デプロイされました。
 
-ご覧のとおり、モデルリスナーは特定の *モデル**イベント* をリッスンします。 このリスナーの場合、イベントは `onAfterCreate`です。 コンテンツが作成されると、リスナーがイベントを「聞き取り」、イベントが発生するとアクションが発生します。
+ご覧のとおり、モデルリスナーは特定の **モデル***イベント** をリッスンします。 このリスナーの場合、イベントは `onAfterCreate`です。 コンテンツが作成されると、リスナーがイベントを「聞き取り」、イベントが発生するとアクションが発生します。
 
 次に、別のイベントをリッスンするようにサンプルを変更します。
 
 ## モデルクラスとイベントを特定する
 
-Liferay DXPのモデルクラスは、 [サービスビルダー](../../building-applications/data-frameworks/service-builder.md)によって生成されます 。 モデルインターフェイスは、任意のアプリケーションの `-api` モジュールにあります。 例えば、掲示板メッセージのモデルインターフェースを見つけるには、Liferay DXPのソースコードで[`modules/apps/message-boards/message-boards-api`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/message-boards/message-boards-api)プロジェクトを探してください。
+Liferay DXPのモデルクラスは、 [サービスビルダー](../../building-applications/data-frameworks/service-builder.md)によって生成されます 。 モデルインターフェイスは、任意のアプリケーションの `-api` モジュールにあります。 例えば、掲示板メッセージのモデルインターフェースを見つけるには、Liferay DXPのソースコードで [`modules/apps/message-boards/message-boards-api`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/message-boards/message-boards-api) プロジェクトを探してください。
 
-このルールの例外はコアモデルです。 `User`などのコアクラスのモデルリスナーを作成する場合、そのインターフェイスはLiferay DXPのソースコードの[`portal-kernel`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel)フォルダにあります。
+このルールの例外はコアモデルです。 `User`などのコアクラスのモデルリスナーを作成する場合、そのインターフェイスはLiferay DXPのソースコードの [`portal-kernel`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel) フォルダにあります。
 
-作成するモデルリスナーは、掲示板メッセージ用です。 メッセージが削除されると、レポートをログに出力するメッセージをトリガーします。 可能なイベントのリストについては、 [BaseModelListener](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html)のJavadocを参照してください。
+作成するモデルリスナーは、掲示板メッセージ用です。 メッセージが削除されると、レポートをログに出力するメッセージをトリガーします。 可能なイベントのリストについては、 [BaseModelListener](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/model/BaseModelListener.html) のJavadocを参照してください。
 
 ## モデルリスナーの動作
 
-モデルリスナーは、特定のエンティティに対して[`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java)インターフェイスを実装します。 モデルリスナーには、エンティティが作成、更新、または削除される前または後に実行するコードを含めることができます。 これらのメソッドはすべて、 `BasePersistenceImpl` クラスから呼び出されます。作成または更新されたエンティティのコードは `BasePersistenceImpl`の `update` メソッドから呼び出され、削除されたエンティティのコードは `BasePersistenceImpl``remove` メソッドから呼び出されます。
+モデルリスナーは、特定のエンティティに対して [`ModelListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/model/ModelListener.java) インターフェイスを実装します。 モデルリスナーには、エンティティが作成、更新、または削除される前または後に実行するコードを含めることができます。 これらのメソッドはすべて、 `BasePersistenceImpl` クラスから呼び出されます。作成または更新されたエンティティのコードは `BasePersistenceImpl`の `update` メソッドから呼び出され、削除されたエンティティのコードは `BasePersistenceImpl``remove` メソッドから呼び出されます。
 
-モデルリスナーには、他の種類の関連エンティティが追加または削除される前または後に実行するコードを含めることもできます。 これらのメソッドは、 [`TableMapperImpl`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/internal/service/persistence/TableMapperImpl.java)の`_addTableMapping`メソッドから呼び出されます。
+モデルリスナーには、他の種類の関連エンティティが追加または削除される前または後に実行するコードを含めることもできます。 これらのメソッドは、 [`TableMapperImpl`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/internal/service/persistence/TableMapperImpl.java) の`_addTableMapping`メソッドから呼び出されます。
 
 次に、プロジェクトを変更して、プロジェクトが `MBMessage` クラスと `onBeforeRemove` イベントで動作するようにします。
 
@@ -138,15 +138,15 @@ Liferay DXPのモデルクラスは、 [サービスビルダー](../../building
 
 掲示板のメッセージを追加してから削除して、リスナーをテストします。
 
-1. *［プロダクトメニュー］* &rarr; *［コンテンツ & データ］* &rarr; *［掲示板］*に移動します。
+1. ［**プロダクトメニュー**］ &rarr; ［**コンテンツ & データ**］ &rarr; ［**掲示板**］ に移動します。
 
-1. 追加 ![Add](../../images/icon-add.png) ボタンをクリックし、件名と本文を入力して、［ *公開*］をクリックします。
+1. 追加 ![Add](../../images/icon-add.png) ボタンをクリックし、件名と本文を入力して、［**公開**］をクリックします。
 
-1. メニューから［ *掲示板* ］をもう一度クリックして、メッセージを表示します。 Action ![Action](../../images/icon-actions.png) ボタンをクリックし、 *Delete*を選択する。 メッセージはリサイクルされただけなので、まだログにメッセージが表示されていないことに注意してください。
+1. メニューから［**掲示板**］をもう一度クリックして、メッセージを表示します。 Action ![Action](../../images/icon-actions.png) ボタンをクリックし、 **Delete** を選択する。 メッセージはリサイクルされただけなので、まだログにメッセージが表示されていないことに注意してください。
 
-1. ［プロダクトメニュー］から［ *ゴミ箱* ］をクリックすると、メッセージが表示されます。
+1. ［プロダクトメニュー］から［**ゴミ箱**］をクリックすると、メッセージが表示されます。
 
-1. アクション ![Action](../../images/icon-actions.png) ボタンをクリックし、［ *削除*］を選択します。 削除を確認します。
+1. アクション ![Action](../../images/icon-actions.png) ボタンをクリックし、［**削除**］を選択します。 削除を確認します。
 
 1. ログを確認してください。 メッセージが表示されます：
 

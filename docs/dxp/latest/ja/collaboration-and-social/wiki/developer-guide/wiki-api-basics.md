@@ -11,7 +11,7 @@ LiferayのHeadless Deliveryアプリケーションは、[Wiki](../getting-start
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-起動したら、サイトIDを取得します。サイトIDを見つけるには、*サイトメニュー*([サイトメニュー](../../../images/icon-menu.png))を開き、*設定* &rarr; *サイト設定* &rarr; *サイト設定*に進みます。
+起動したら、サイトIDを取得します。サイトIDを見つけるには、 **サイトメニュー**( [サイトメニュー](../../../images/icon-menu.png) )を開き、 **設定** &rarr; **サイト設定** &rarr; **サイト設定** に進みます。
 
 ![サイト構成設定の下でサイトIDを見つけてください](./wiki-api-basics/images/01.png)
 
@@ -19,7 +19,7 @@ LiferayのHeadless Deliveryアプリケーションは、[Wiki](../getting-start
 
 このチュートリアルでは、ヘッドレスAPIをデモするためのサンプルコードを提供します。このコードには、チュートリアル全体で使用するサンプルcURLファイルとJavaファイルの両方が含まれています。
 
-以下のコマンドを実行して、[サンプルコード](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip) をダウンロードし、解凍してください：
+以下のコマンドを実行して、 [サンプルコード](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip) をダウンロードし、解凍してください：
 
 ```bash
 curl https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip -O
@@ -41,7 +41,7 @@ javac -classpath .:* *.java
 
 プロジェクトには、依存関係として`com.liferay.headless.delivery.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
-提供されるコードには、 `WikiNode` と `WikiPage` のサービスのためのAPIが含まれています。 含まれているサンプルAPIの一覧は、[Tutorial Code Reference](#tutorial-code-reference)をご参照ください。
+提供されるコードには、 `WikiNode` と `WikiPage` のサービスのためのAPIが含まれています。 含まれているサンプルAPIの一覧は、 [Tutorial Code Reference](#tutorial-code-reference) をご参照ください。
 
 ```{important}
 提供されるコードは、デモのために基本認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)を使用してユーザーを認証する必要があります。

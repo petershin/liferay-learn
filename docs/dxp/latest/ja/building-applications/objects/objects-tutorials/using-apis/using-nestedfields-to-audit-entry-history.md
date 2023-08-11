@@ -19,7 +19,7 @@ REST APIを使用してエントリーの履歴を表示するには、そのエ
 
 ### 永続監査メッセージプロセッサを有効にする
 
-1. グローバルメニュー* ([グローバルメニュー](../../../../../images/icon-applications-menu.png)) &rarr; *コントロールパネル* タブ、&rarr; *システム設定* を開きます。
+1. グローバルメニュー ( [**グローバルメニュー](../../../../../images/icon-applications-menu.png) ) &rarr;** コントロールパネル **タブ、&rarr;** システム設定* を開きます。
 
 1. セキュリティ]で[監査]をクリックし、[永続メッセージ監査メッセージプロセッサ]タブに進みます。
 
@@ -31,9 +31,9 @@ REST APIを使用してエントリーの履歴を表示するには、そのエ
 
 ### オブジェクト定義の作成
 
-1. グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*コントロールパネル*タブに移動し、*オブジェクト*をクリックします。
+1. グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 **コントロールパネル** タブに移動し、 **オブジェクト** をクリックします。
 
-1. 1.オブジェクトのドラフトを[作成](../../creating-and-managing-objects/creating-objects.md#creating-object-drafts)します。
+1. 1.オブジェクトのドラフトを [作成](../../creating-and-managing-objects/creating-objects.md#creating-object-drafts) します。
 
    | フィールド | 値 |
    | :--- | :--- |
@@ -47,9 +47,9 @@ REST APIを使用してエントリーの履歴を表示するには、そのエ
    | :--- | :--- | :--- | :--- |
    | `名前` | `名前` |テキスト｜ &#10004; |
 
-1. Detailsタブで、*Enable Entry History*をトグルする。
+1. Detailsタブで、 **Enable Entry History** をトグルする。
 
-1. オブジェクトを[Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)します。
+1. オブジェクトを [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) します。
 
 公開されると、Headless API を使ってオブジェクトにアクセスできるようになります。
 

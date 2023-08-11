@@ -54,17 +54,17 @@
 
 {bdg-secondary}`利用可能な Liferay DXP 7.4 U81+/GA81+`
 
-サードパーティシステムの監査イベントを分析するために、LiferayはCSVへの監査イベントのエクスポートをサポートしています。 これを行うには、グローバルメニューを開き、 *コントロールパネル* &rarr; *監査*に移動します。 ページ上部の *Actions* (![Actions](../../images/icon-actions.png)) アイコンをクリックし、 *Export Audit Events*を選択します。
+サードパーティシステムの監査イベントを分析するために、LiferayはCSVへの監査イベントのエクスポートをサポートしています。 これを行うには、グローバルメニューを開き、 **コントロールパネル** &rarr; **監査** に移動します。 ページ上部の **Actions**(![Actions](../../images/icon-actions.png)) アイコンをクリックし、 **Export Audit Events** を選択します。
 
 これはLiferayインスタンスからすべての監査イベントをエクスポートします。 サブセットをエクスポートしたい場合は、シンプル検索またはアドバンスド検索を使用して結果のセットを取得し、エクスポート機能を使用することができます。 例えば、特定のユーザーの `LOGIN` イベントだけを表示したい場合、
 
 1. 検索バーに「 `login` 」と入力し、虫眼鏡のアイコンをクリックします。
 
-1. ページ上部の *Actions* (![Actions](../../images/icon-actions.png)) アイコンをクリックしてください。
+1. ページ上部の **Actions**(![Actions](../../images/icon-actions.png)) アイコンをクリックしてください。
 
    ![ユーザーログインの監査イベントをCSVにエクスポート。](./searching-and-exporting-audits-events/images/01.png)
 
-1. *Export Audit Events*を選択する。
+1. **Export Audit Events** を選択する。
 
 ![CSVファイルには、Liferayによって監査されたログインイベントに関連するすべての情報が含まれています。](./searching-and-exporting-audits-events/images/02.png)
 

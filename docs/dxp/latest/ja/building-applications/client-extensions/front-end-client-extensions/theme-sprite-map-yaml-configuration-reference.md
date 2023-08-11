@@ -25,7 +25,7 @@ able-theme-spritemap:
 |:----- |:---- |:----------------------------------------------------------------------------------- |
 | `url` | URL  | (必須) 既存のLiferayテーマのスプライトマップを置き換える`.svg`スプライトマップへのパスです。 完全なURIは、`baseURL`の値が先頭に付きます。 |
 
-すべてのフロントエンドクライアント拡張に共通するプロパティについては、[フロントエンドのクライアント拡張プロパティ](../front-end-client-extensions.md#front-end-client-extension-properties) を参照してください。
+すべてのフロントエンドクライアント拡張に共通するプロパティについては、 [フロントエンドのクライアント拡張プロパティ](../front-end-client-extensions.md#front-end-client-extension-properties) を参照してください。
 
 ## 関連トピック
 

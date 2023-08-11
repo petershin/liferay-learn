@@ -19,4 +19,4 @@ developer-guide/apis.md
 
 ## API
 
-- [検索API](./developer-guide/apis.md)
+- [API (近日公開！)](./developer-guide/apis.md)

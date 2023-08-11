@@ -9,7 +9,7 @@
 
 次に、以下の手順を実行します。
 
-1. [Roles API Basics](./liferay-z3v5.zip)をダウンロードし、解凍します。
+1. [Roles API Basics](./liferay-z3v5.zip) をダウンロードし、解凍します。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-z3v5.zip -O
@@ -19,7 +19,7 @@
    unzip liferay-z3v5.zip
    ```
 
-1. ユーザーIDのリストを取得するには、 [Users_GET_FromInstance](./user-account-api-basics.md#get-instance-users)。 レギュラー・ロールに関連付けたいユーザーIDをメモしてください。
+1. ユーザーIDのリストを取得するには、 [Users_GET_FromInstance](./user-account-api-basics.md#get-instance-users) 。 レギュラー・ロールに関連付けたいユーザーIDをメモしてください。
 
 1. [Roles_GET_FromInstance](#get-roles-from-instance) を使用して、すべてのロールIDのリストを取得します。 `roleType: regular`関連付けたいロールIDをメモしておくこと。 例えば、アナリティクス管理者の通常の役割タイプ。
 
@@ -29,7 +29,7 @@
    ./RoleUserAssociation_POST_ToInstance.sh 1234 5678
    ```
 
-1. *Global Menu* &rarr; *Control Panel* &rarr; *Roles*に移動する。 Regular Roles]タブで、ユーザの関連付けに使用した特定の[Role]をクリックします。 *Assignees* タブをクリックします。 ユーザが選択したロールに関連付けられたことを確認します。
+1. **Global Menu** &rarr; **Control Panel** &rarr; **Roles** に移動する。 Regular Roles]タブで、ユーザの関連付けに使用した特定の[Role]をクリックします。 **Assignees** タブをクリックします。 ユーザが選択したロールに関連付けられたことを確認します。
 
    ![ユーザが関連付けられたことを確認する。](./roles-api-basics/images/01.png)
 
@@ -95,7 +95,7 @@
 他のJavaクラス例もこれと似ているが、異なる `RoleResource` メソッドを呼び出している。
 
 ```{important}
-サービスの詳細は、 [RoleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)を参照してください。
+サービスの詳細は、 [RoleResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使用して他の `Role` RESTサービスを呼び出す例です。

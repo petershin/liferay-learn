@@ -9,7 +9,7 @@
 
 次に、以下の手順を実行します。
 
-1. [Organizations API Basics](./liferay-w2h3.zip)をダウンロードして解凍する。
+1. [Organizations API Basics](./liferay-w2h3.zip) をダウンロードして解凍する。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O
@@ -50,7 +50,7 @@
    }
    ```
 
-1. *Global Menu* &rarr; *Control Panel* &rarr; *User and Organizations*に移動する。 *［Organizations］*タブをクリックします。 新しい組織が追加されたことを確認する。
+1. **Global Menu** &rarr; **Control Panel** &rarr; **User and Organizations** に移動する。 ［**Organizations**］ タブをクリックします。 新しい組織が追加されたことを確認する。
 
    ![新しい組織が追加されたことを確認する。](./organizations-api-basics/images/01.png)
 
@@ -166,7 +166,7 @@ java -classpath .:* Organizations_GET_FromInstance
 インスタンスの ``組織`` ID を取得するには ``Organizations_GET_FromInstance.[java|sh]`` を使用します。
 ```
 
-### 組織_GET_ById.sh
+### Organization_GET_ById.sh
 
 コマンド:
 
@@ -180,7 +180,7 @@ java -classpath .:* Organizations_GET_FromInstance
    :language: bash
 ```
 
-### 組織_GET_ById.java
+### Organization_GET_ById.java
 
 コマンド：
 
@@ -202,7 +202,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
 
 以下のcURLとJavaコマンドを使用して、既存の組織を部分的に編集する。 `1234` をあなたの組織のIDに置き換えてください。
 
-### 組織_PATCH_ById.sh
+### Organization_PATCH_ById.sh
 
 コマンド：
 
@@ -216,7 +216,7 @@ java -classpath .:* -DorganizationId=1234 Organization_GET_ById
    :language: bash
 ```
 
-### 組織_PATCH_ById.java
+### Organization_PATCH_ById.java
 
 コマンド：
 
@@ -236,7 +236,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
 
 以下のcURLとJavaコマンドで、既存の組織を完全に上書きする。 `1234` をあなたの組織のIDに置き換えてください。
 
-### 組織_PUT_ById.sh
+### Organization_PUT_ById.sh
 
 コマンド：
 
@@ -250,7 +250,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PATCH_ById
    :language: bash
 ```
 
-### 組織_PUT_ById.java
+### Organization_PUT_ById.java
 
 コマンド：
 
@@ -270,7 +270,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
 
 以下のcURLコマンドとJavaコマンドを使用して、既存の組織を削除する。 `1234` をあなたの組織のIDに置き換えてください。
 
-### 組織_DELETE_ById.sh
+### Organization_DELETE_ById.sh
 
 コマンド:
 
@@ -284,7 +284,7 @@ java -classpath .:* -DorganizationId=1234 Organization_PUT_ById
    :language: bash
 ```
 
-### 組織_DELETE_ById.java
+### Organization_DELETE_ById.java
 
 コマンド
 

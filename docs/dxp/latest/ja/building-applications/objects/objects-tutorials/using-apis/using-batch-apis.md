@@ -2,7 +2,7 @@
 
 オブジェクトを公開すると、Liferayは自動的にそのためのREST APIを生成します。 これには、POST、PUT、DELETEの一括操作のためのバッチAPIが含まれます。 ここでは、cURLコマンドを使用して、カスタムオブジェクトのこれらのバッチAPIを呼び出します。
 
-先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。
+先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
 
 ```{tip}
 サイトオブジェクトと会社オブジェクトの両方に対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*［RESTアプリケーション］*の下に表示されます。
@@ -15,9 +15,9 @@
 
 次に、以下の手順に従って、このチュートリアルで使用する基本的なオブジェクトを [作成](../../creating-and-managing-objects/creating-objects.md)してください：
 
-1. グローバルメニュー](../../../../../images/icon-applications-menu.png))を開き、[コントロールパネル](*Control Panel*)タブに移動し、[オブジェクト](*Objects*)をクリックします。
+1. グローバルメニュー](../../../../../images/icon-applications-menu.png))を開き、[コントロールパネル](**Control Panel**)タブに移動し、[オブジェクト](**Objects**)をクリックします。
 
-1. *追加*ボタン(![ボタンの追加](../../../../images/icon-add.png))をクリックし、以下の値を入力します：
+1. **追加** ボタン(![ボタンの追加](../../../../images/icon-add.png))をクリックし、以下の値を入力します：
 
    | フィールド | 値 |
    | :--- | :--- |
@@ -25,19 +25,19 @@
    | 複数形のラベル | `Ables` |
    | 名前 | `Able` |
 
-1. 新しい*オブジェクト*ドラフトを選択し、*フィールド*タブに移動し、単一のテキスト*フィールド*を追加します：
+1. 新しい **オブジェクト** ドラフトを選択し、 **フィールド** タブに移動し、単一のテキスト **フィールド** を追加します：
 
    | ラベル | フィールド名 | タイプ | 必須
    | :--- | :--- | :--- | :--- |
    | フィールド名｜名前｜テキスト｜ &#10004; |.
 
-1. *Details*タブに移動し、*Publish*をクリックします。
+1. **Details** タブに移動し、 **Publish** をクリックします。
 
    ```{important}
    このチュートリアルでは、上記の値を使用する必要があります。
    ```
 
-[オブジェクトの公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 ヘッドレスAPIを介してアクセスできるようになりました。
+[オブジェクトの公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 ヘッドレスAPIを介してアクセスできるようになりました。
 
 ## サンプルコードを準備する
 

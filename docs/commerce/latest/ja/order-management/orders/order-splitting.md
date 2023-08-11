@@ -3,7 +3,7 @@
 {bdg-secondary}`利用可能な Liferay DXP 7.4 U84+/GA84+`
 
 ```{important}
-オーダー分割は現在、リリース機能フラグの後ろにある。 詳しくは[Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags)をお読みください。 
+オーダー分割は現在、リリース機能フラグの後ろにある。 詳しくは [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) をお読みください。 
 ```
 
 1つの注文に複数の製品ラインがあったり、異なるサプライヤーから製品が提供されることもある。 このような場合、注文を独立したサブオーダーに分割することができます。
@@ -16,21 +16,21 @@
 
 ### 注文分割オブジェクトアクションを手動で作成する
 
-1. *グローバルメニュー* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *コントロールパネル* &rarr; *オブジェクト*に移動します。
+1. **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** &rarr; **オブジェクト** に移動します。
 
-1. *Commerce Order* を選択し、 *Actions*をクリックする。
+1. **Commerce Order** を選択し、 **Actions** をクリックする。
 
-1. *Add* (![Add](../../images/icon-add.png)) をクリックする：
+1. **Add**(![Add](../../images/icon-add.png)) をクリックする：
 
    **アクション・レーベル** カタログによる分割注文
 
    **アクション名：** splitOrderByCatalog
 
-1. *Active* トグルを使ってアクションを有効にする。
+1. **Active** トグルを使ってアクションを有効にする。
 
-1. *アクションビルダー* タブをクリックする。
+1. **アクションビルダー** タブをクリックする。
 
-1. Trigger]で、ドロップダウンから[ *On Order Status Update* ]を選択します。
+1. Trigger]で、ドロップダウンから[**On Order Status Update**]を選択します。
 
 1. 条件]でトグルを有効にして式を入力する： `orderStatus = 10`
 
@@ -54,29 +54,29 @@
 
    この式は、処理ステータスに移行すると、チャネル `67890` からのすべての注文を、注文タイプ ID `12345` で分割する。
 
-1. アクション]で、ドロップダウンから[ *カタログによる分割注文* ]を選択します。
+1. アクション]で、ドロップダウンから[**カタログによる分割注文**]を選択します。
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
 ### ヘルスチェックを使用した注文分割オブジェクトアクションの作成
 
 また、商取引注文システムオブジェクトに関連付けられたオブジェクトアクションを作成するために、ヘルスチェックを実行することもできます。
 
-1. *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Health Check*に移動する。
+1. **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Health Check** に移動する。
 
-1. *Order Split by Catalog Action* ヘルスチェックを見つける。
+1. **Order Split by Catalog Action** ヘルスチェックを見つける。
 
-1. *Fix Issue*をクリックする。
+1. **Fix Issue** をクリックする。
 
    ![ヘルスチェックを使用して、コマース注文オブジェクトアクションを自動的に作成します。](./order-splitting/images/01.png)
 
    これは、コマース受注システムオブジェクトのオブジェクトアクションを作成します。 ヘルスチェックで注文を作成した場合、注文分割アクションは無効になります。 作動させる、
 
-1. (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *コントロールパネル* &rarr; *オブジェクト*に移動します。
+1. (![Global Menu](../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** &rarr; **オブジェクト** に移動します。
 
-1. *Commerce Order* を選択し、 *Actions*をクリックする。
+1. **Commerce Order** を選択し、 **Actions** をクリックする。
 
-1. すでにオブジェクト・アクションが作成されているはずだ。 それを選択し、 *Active* トグルを使ってアクションを有効にする。
+1. すでにオブジェクト・アクションが作成されているはずだ。 それを選択し、 **Active** トグルを使ってアクションを有効にする。
 
 これにより、異なるカタログの商品を含むすべての注文の分割が可能になります。
 
@@ -84,13 +84,13 @@
 
 ### お客様のご注文
 
-顧客からの注文は、複数のカタログの商品を含む。 顧客が2つの商品をそれぞれ別のカタログから注文した場合、 *Placed Orders* ページに1つの項目として表示されます。 これは顧客の注文である。 この注文は、 *Orders* ページから注文を承認したときにのみ分割されます。
+顧客からの注文は、複数のカタログの商品を含む。 顧客が2つの商品をそれぞれ別のカタログから注文した場合、 **Placed Orders** ページに1つの項目として表示されます。 これは顧客の注文である。 この注文は、 **Orders** ページから注文を承認したときにのみ分割されます。
 
 ### サプライヤーオーダー
 
-*Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Commerce* &rarr; *Orders*に移動します。 顧客注文の単一エントリが表示されます。
+**Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Orders** に移動します。 顧客注文の単一エントリが表示されます。
 
-注文を選択し、 *Accept Order*をクリックする。 これでコマース注文オブジェクトのオブジェクトアクションが実行される。 Ordersページに戻ると、3つのエントリーが表示されます。1つは顧客オーダー、もう1つはサプライヤーオーダーです。 サプライヤーの注文は、それぞれのチャネルにリンクされている。
+注文を選択し、 **Accept Order** をクリックする。 これでコマース注文オブジェクトのオブジェクトアクションが実行される。 Ordersページに戻ると、3つのエントリーが表示されます。1つは顧客オーダー、もう1つはサプライヤーオーダーです。 サプライヤーの注文は、それぞれのチャネルにリンクされている。
 
 サプライヤーは、自分のチャネルにリンクされているサプライヤー注文のみを表示および管理することができます。 元の注文に3つの異なるカタログから3つの製品があった場合、合計4つのエントリがある（1つの顧客注文+3つのサプライヤー注文）。 顧客は、発注済み注文ページでサプライヤの注文を見ることができません。
 

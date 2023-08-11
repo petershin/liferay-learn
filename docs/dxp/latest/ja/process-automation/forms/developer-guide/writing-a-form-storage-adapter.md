@@ -1,6 +1,6 @@
 # フォームストレージアダプターの書き込み
 
-> 利用可能：[LPS-97208](https://issues.liferay.com/browse/LPS-97208)の修正（Liferay DXP 7.2 SP3で計画）を含むLiferay DXP 7.3およびLiferay DXP 7.2バージョン。
+> 利用可能： [LPS-97208](https://issues.liferay.com/browse/LPS-97208) の修正（Liferay DXP 7.2 SP3で計画）を含むLiferay DXP 7.3およびLiferay DXP 7.2バージョン。
 
 デフォルトでは、フォームはLiferay DXPのデータベースにJSONとして保存されます。 この例では、フォームレコードの永続化イベントにカスタムロジックを挿入するために、新しいストレージアダプターを実装する方法を紹介します。
 
@@ -49,19 +49,19 @@
 
 1. ブラウザで<http://localhost:8080>を開きます。
 
-1. _［サイトメニュー］_ &rarr; _［コンテンツ & データ］_ &rarr; _［フォーム］_のフォームアプリケーションに移動します。
+1. ［**サイトメニュー**］ &rarr; ［**コンテンツ & データ**］ &rarr; ［**フォーム**］ のフォームアプリケーションに移動します。
 
-1. *追加* ボタン（![Add](./../../../images/icon-add.png)）をクリックして、フォームビルダーを開きます。
+1. **追加** ボタン（![Add](./../../../images/icon-add.png)）をクリックして、フォームビルダーを開きます。
 
-1. ［フォームビルダー］ビューで、*オプション* ボタン（![Options](./../../../images/icon-options.png)）をクリックし、*［Settings］*ウィンドウを開きます。
+1. ［フォームビルダー］ビューで、 **オプション** ボタン（![Options](./../../../images/icon-options.png)）をクリックし、 ［**Settings**］ ウィンドウを開きます。
 
-1. *［ストレージの種類を選択する］*で、*［R2F1 Dynamic Data Mapping Storage Adapter］*タイプを選択し、_［Done］_をクリックします。
+1. ［**ストレージの種類を選択する**］ で、 ［**R2F1 Dynamic Data Mapping Storage Adapter**］ タイプを選択し、 ［**Done**］ をクリックします。
 
 1. フォームに[テキストフィールド](../creating-and-managing-forms/creating-forms.md)を追加し、フォームを公開して、何度か送信します。
 
 1. フォームデータが保持されていることを確認するには、フォームのレコードに移動します。
 
-   _［サイトメニュー］_ → _［コンテンツ］_ → _［フォーム］_から、フォームの *アクション* ボタン(![Actions](./../../../images/icon-actions.png))をクリックして、_［エントリの参照］_をクリックします。
+［**サイトメニュー**］ → ［**コンテンツ**］ → ［**フォーム**］ から、フォームの **アクション** ボタン(![Actions](./../../../images/icon-actions.png))をクリックして、 ［**エントリの参照**］ をクリックします。
 
    ![フォームエントリーが追加されたことを確認します。](./writing-a-form-storage-adapter/images/02.png)
 
@@ -122,7 +122,7 @@ public DDMStorageAdapterSaveResponse save(
     throws StorageException;
 ```
 
-各メソッドは _DDMStorageAdapter[[Save](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java)/[Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java)/[Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteResponse.java)]Response_ オブジェクトを返す必要があり、静的なインナー `Builder` クラスの `newBuilder` メソッドを使用して構築されます。
+各メソッドは **DDMStorageAdapter[ [Save](https://github.com/liferay/liferay-portal/blob/[$LIFERAY** LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java) / [Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java) / [Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteResponse.java) ]Response** オブジェクトを返す必要があり、静的なインナー `Builder` クラスの `newBuilder` メソッドを使用して構築されます。
 
 すべてのメソッドに`DDMStorageAdapter［Save/Delete/Get］Request`が渡されます。 リクエストオブジェクトには、有用なコンテキスト情報を返すgetterメソッドが含まれています。
 
@@ -294,13 +294,13 @@ private static final Log _log = LogFactoryUtil.getLog(
 
 以下のように動作を確認します。
 
-1. _サイトメニュー_ &rarr; _コンテンツ_ &rarr; _フォーム_にあるフォームアプリケーションにアクセスします。
+1. **サイトメニュー** &rarr; **コンテンツ** &rarr; **フォーム** にあるフォームアプリケーションにアクセスします。
 
-1. *追加* ボタン![Add](./../../../images/icon-add.png)をクリックして、フォームビルダーを開きます。
+1. **追加** ボタン![Add](./../../../images/icon-add.png)をクリックして、フォームビルダーを開きます。
 
-1. ［フォームビルダー］ビューで、*オプション* ボタン（![Options](./../../../images/icon-options.png)）をクリックし、*［Settings］*ウィンドウを開きます。
+1. ［フォームビルダー］ビューで、 **オプション** ボタン（![Options](./../../../images/icon-options.png)）をクリックし、 ［**Settings**］ ウィンドウを開きます。
 
-1. リストを選択フィールド*［ストレージの種類を選択する］*から、*［R2F1 Dynamic Data Mapping Storage Adapter］*タイプを選択し、_［完了］_をクリックします。
+1. リストを選択フィールド ［**ストレージの種類を選択する**］ から、 ［**R2F1 Dynamic Data Mapping Storage Adapter**］ タイプを選択し、 ［**完了**］ をクリックします。
 
 1. フォームに[テキストフィールド](../creating-and-managing-forms/creating-forms.md)を追加し、フォームを公開して、何度か送信します。
 

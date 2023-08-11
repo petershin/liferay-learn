@@ -1,12 +1,12 @@
 # モジュールプロジェクト
 
-Liferayのアプリケーションやカスタマイズは、[OSGi モジュール](https://www.osgi.org/resources/what-is-osgi/): `.jar`ファイルで、Javaコードと、APIを公開・消費するための追加設定が含まれています。
+Liferayのアプリケーションやカスタマイズは、 [OSGi モジュール](https://www.osgi.org/resources/what-is-osgi/) : `.jar`ファイルで、Javaコードと、APIを公開・消費するための追加設定が含まれています。
 
 モジュールプロジェクトは、次の3つから構成されています。
 
-1. **コード：**Javaクラスと、画像、テンプレート、追加の記述子などのリソース。 Javaパッケージはデフォルトではプライベートですが、他のモジュールが使用できるように[エクスポート](./exporting-packages.md)することができます。
+1. **コード：** Javaクラスと、画像、テンプレート、追加の記述子などのリソース。 Javaパッケージはデフォルトではプライベートですが、他のモジュールが使用できるように[エクスポート](./exporting-packages.md)することができます。
 
-1. **ビルドスクリプト：** モジュールをビルドしてデプロイするための[Gradle](https://gradle.org/)ファイル。
+1. **ビルドスクリプト：** モジュールをビルドしてデプロイするための [Gradle](https://gradle.org/) ファイル。
 
 1. **メタデータ：** [Bnd](https://bnd.bndtools.org/) ファイルは、モジュールのアーティファクトを定義し、モジュールが提供するまたは必要とするパッケージや機能を指定します。
 
@@ -40,9 +40,9 @@ Liferayでは、一般的に3種類のモジュールを使用します。
 
 1. **API** モジュールはインターフェイスを定義します。
 
-1. **実装**モジュールは、インターフェイスを実装する具象クラスを提供します。
+1. **実装** モジュールは、インターフェイスを実装する具象クラスを提供します。
 
-1. **クライアント**モジュールはAPIを消費します。
+1. **クライアント** モジュールはAPIを消費します。
 
 [Gogo シェル](./using-the-gogo-shell.md)でユーザーが名前を入力したときにあいさつ文を表示する簡単なコマンドを開発することで、それぞれを作成する方法を学習します。
 
@@ -190,7 +190,7 @@ Liferayのモジュールは、Gradleのビルドインフラストラクチャ�
 :lines: 5-10
 ```
 
-[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html)アノテーションは、そのインターフェイスを実装しているものがそれを提供することをサービスレジストリに伝えます（すなわち`Greeter`）。 インターフェイスの `greet` という1つのメソッドは、 `String` を要求し、何も返しません。
+[`@ProviderType`](https://docs.osgi.org/javadoc/osgi.annotation/7.0.0/org/osgi/annotation/versioning/ProviderType.html) アノテーションは、そのインターフェイスを実装しているものがそれを提供することをサービスレジストリに伝えます（すなわち`Greeter`）。 インターフェイスの `greet` という1つのメソッドは、 `String` を要求し、何も返しません。
 
 モジュールの `src/main/java` フォルダと `src/main/resources` フォルダに、それぞれ独自のJavaコードとリソースを追加します。
 
@@ -213,7 +213,7 @@ liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 最後に、依存性のあるバージョンはありません。 これは、ワークスペースがリリースに関連するLiferay製品のAPIバージョンを適用するためです。
 
 ```{note}
-詳細については、[Configuring Dependencies](./configuring-dependencies.md)を参照してください。
+詳細については、 [依存関係の構成](./configuring-dependencies.md) を参照してください。
 ```
 
 ### メタデータの指定
@@ -227,7 +227,7 @@ liferay.workspace.product=[$LIFERAY_LEARN_PORTAL_WORKSPACE$]
 ```{literalinclude} ./module-projects/resources/liferay-k8s2.zip/k8s2-api/bnd.bnd
 ```
 
-モジュールの名前は*Acme K8S2 API*である。シンボリック名---一意性を保証する名前---は`com.acme.k8s2.api`である。次に[semantic version](./semantic-versioning.md)を宣言する。最後に、モジュールは `com.acme.k8s2` という Java パッケージを [*exports*](./exporting-packages.md) して、他のモジュールからパッケージを利用できるようにします。上記のパッケージのエクスポートは、`b [bundle ID]` Gogo Shell コマンドを実行したときに確認しました。
+モジュールの名前は **Acme K8S2 API** である。シンボリック名---一意性を保証する名前---は`com.acme.k8s2.api`である。次に[semantic version](./semantic-versioning.md)を宣言する。最後に、モジュールは `com.acme.k8s2` という Java パッケージを [**exports**](./exporting-packages.md) して、他のモジュールからパッケージを利用できるようにします。上記のパッケージのエクスポートは、`b [bundle ID]` Gogo Shell コマンドを実行したときに確認しました。
 
 #### 生成されたメタデータ
 
@@ -259,7 +259,7 @@ Bndは`bnd.bnd`ファイルからすべてのヘッダーをプロパゲート�
 
 これで、モジュールプロジェクトがどのようなものか、ビルドしてデプロイする方法、そしてランタイム時にモジュールを検査する方法をマスターしました。
 
-モジュールは、`Greeter` APIのようなAPIを介して、互いの機能を活用します。 LiferayはOSGiサービスを使用して、APISを定義、実装、消費します。 次に、[APIs as OSGi Services](./apis-as-osgi-services.md)で、OSGiサービスを使用した`Greeter` APIの*実装*について説明します。
+モジュールは、`Greeter` APIのようなAPIを介して、互いの機能を活用します。 LiferayはOSGiサービスを使用して、APISを定義、実装、消費します。 次に、 [OSGiサービスとしてのAPI](./apis-as-osgi-services.md) で、OSGiサービスを使用した`Greeter` APIの **実装** について説明します。
 
 ```{note}
 モジュールのライフサイクルの詳細については、[モジュールのライフサイクル](../architecture/module-lifecycle.md)を参照してください。
@@ -267,7 +267,7 @@ Bndは`bnd.bnd`ファイルからすべてのヘッダーをプロパゲート�
 
 ## 関連トピック
 
-* [APIs as OSGi Services](./apis-as-osgi-services.md)
+* [OSGiサービスとしてのAPI](./apis-as-osgi-services.md)
 * [OSGiサービスの使用](./using-an-osgi-service.md)
 * [依存関係を構成する](./configuring-dependencies.md)
 * [パッケージのインポート](./importing-packages.md)

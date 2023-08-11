@@ -10,7 +10,7 @@ Liferayデータベースアップグレードツールは、Liferay DXPデー�
 6.2以前からアップグレードする場合は、ファイルストアの構成を更新します。 詳細については、[ファイルストアの更新](../reference/file-store-updates.md) を参照してください。
 ```
 
-Liferayインスタンスから切り離された状態でデータベースを変更すると、[データベースをアップグレード操作用に調整](../upgrade-stability-and-performance/database-tuning-for-upgrades.md)し、[不要なデータ（Webコンテンツ、ドキュメントなどの不要なバージョンなど）を削除](../upgrade-stability-and-performance/database-tuning-for-upgrades.md)して、アップグレードのパフォーマンスを向上させ、アップグレードの問題を解決できます。  これらのアクティビティは、DXPをはじめとする大規模で重要なポータル環境を安全かつ迅速にアップグレードするために特に重要です。 データベースの調整と削除を考慮し、[Upgrade Basics ](../upgrade-basics.md)で説明されている関連タスクを完了すると、新しいインストールをセットアップし、アップグレードツールを使用してデータベースをアップグレードする準備が整います。
+Liferayインスタンスから切り離された状態でデータベースを変更すると、[データベースをアップグレード操作用に調整](../upgrade-stability-and-performance/database-tuning-for-upgrades.md)し、[不要なデータ（Webコンテンツ、ドキュメントなどの不要なバージョンなど）を削除](../upgrade-stability-and-performance/database-tuning-for-upgrades.md)して、アップグレードのパフォーマンスを向上させ、アップグレードの問題を解決できます。  これらのアクティビティは、DXPをはじめとする大規模で重要なポータル環境を安全かつ迅速にアップグレードするために特に重要です。 データベースの調整と削除を考慮し、 [アップグレードの基本](../upgrade-basics.md) で説明されている関連タスクを完了すると、新しいインストールをセットアップし、アップグレードツールを使用してデータベースをアップグレードする準備が整います。
 
 [新しいLiferay Dockerイメージにアップグレード](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md)していて、アップグレードツールを使用する場合は、新しいLiferayバージョンの[Liferay Tomcat Bundle](../../installing-liferay/installing-a-liferay-tomcat-bundle.md)からそのツールを使用します。 このツールは、バンドルの`tools/portal-tools-db-upgrade-client`フォルダにあります。
 
@@ -18,14 +18,14 @@ Liferayインスタンスから切り離された状態でデータベースを�
 
 | 編集                     | ダウンロード手順                                                                                                                                                                                                                               |
 |:---------------------- |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Liferay DXP（サブスクリプション） | [*ダウンロード*ページ](https://customer.liferay.com/group/customer/downloads)に移動し、DXPバージョンと_製品/サービスパック_のファイルタイプを選択します。 表示されるリストで、_Liferay DXPアップグレードクライアント_用の_［ダウンロード］_をクリックします。                                                                |
-| Liferay Portal         | [_ダウンロード_ページ](https://www.liferay.com/downloads-community)に移動します。 _［Liferay Portal］_ダウンロードメニューで、_［Other files］_を選択して、_［ダウンロード］_をクリックします。 最新のLiferay PortalのリリースアセットのGitHubページが表示されます。 `liferay-ce-portal-tools-[version].zip`をクリックします。 |
+| Liferay DXP（サブスクリプション） | [**ダウンロード** ページ](https://customer.liferay.com/group/customer/downloads) に移動し、DXPバージョンと **製品/サービスパック** のファイルタイプを選択します。 表示されるリストで、 **Liferay DXPアップグレードクライアント** 用の ［**ダウンロード**］ をクリックします。                                                                |
+| Liferay Portal         | [**ダウンロード** ページ](https://www.liferay.com/downloads-community) に移動します。 ［**Liferay Portal**］ ダウンロードメニューで、 ［**Other files**］ を選択して、 ［**ダウンロード**］ をクリックします。 最新のLiferay PortalのリリースアセットのGitHubページが表示されます。 `liferay-ce-portal-tools-[version].zip`をクリックします。 |
 
 ## 新規インストール時の設定
 
 1. 新しいLiferayインストールの`[Liferay Home]/data`フォルダを[バックアップ](../../maintaining-a-liferay-installation/backing-up.md)の`[Liferay Home]/data`フォルダに置き換えます。
 
-1. DXPアクティベーションキー（Subscription）と[OSGi設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を[バックアップ](../../maintaining-a-liferay-installation/backing-up.md#liferay-home)から新しいインストールにコピーします。
+1. DXPアクティベーションキー（Subscription）と[OSGi設定ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を [バックアップ](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) から新しいインストールにコピーします。
 
 1. 7.2にアップグレードする場合は、新しいインストールの`[Liferay Home]/files/osgi/configigs/`フォルダにある[設定ファイル](../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md)を使って検索インデックスを無効にします。例えば
 
@@ -45,11 +45,11 @@ Liferayインスタンスから切り離された状態でデータベースを�
     DXP/Portal 7.3+ disables/re-enables search indexing automatically.
     ```
 
-1. [Commerce](https://learn.liferay.com/commerce/latest/en/index.html)を使用している場合は、Commerceをアップグレードする準備をしてください。  詳細については、[Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/upgrading-liferay-commerce.html)を参照してください。
+1. [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) を使用している場合は、Commerceをアップグレードする準備をしてください。  詳細については、 [Liferay Commerceのアップグレード](https://learn.liferay.com/commerce/latest/ja/installation-and-upgrades/upgrading-liferay-commerce.html) を参照してください。
 
-1. Liferayデータベースのアップグレードと一緒にマーケットプレイスアプリのデータをアップグレードする場合は、新しいLiferayバージョンの対象となる各アプリの最新バージョンを[ダウンロード](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md)して、`[Liferay Home]/deploy`フォルダにコピーします。 それ以外の場合は、[Post-Upgrade Considerations](./post-upgrade-considerations.md)で説明されているように、データベースのアップグレード後にアプリをインストールし、データをアップグレードできます。
+1. Liferayデータベースのアップグレードと一緒にマーケットプレイスアプリのデータをアップグレードする場合は、新しいLiferayバージョンの対象となる各アプリの最新バージョンを[ダウンロード](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md)して、`[Liferay Home]/deploy`フォルダにコピーします。 それ以外の場合は、 [アップグレード後の考慮事項](./post-upgrade-considerations.md) で説明されているように、データベースのアップグレード後にアプリをインストールし、データをアップグレードできます。
 
-1. [高度なファイルシステムストア](../../../system-administration/file-storage.md)または[簡易ファイルシステムストア](../../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)を使用していて、保存場所を変更している場合は、ファイルストアの設定を[`.config`ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files)にエクスポートして、新しい`[Liferay Home]/osgi/configs/`フォルダにコピーします。 
+1. [高度なファイルシステムストア](../../../system-administration/file-storage.md)または[簡易ファイルシステムストア](../../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md)を使用していて、保存場所を変更している場合は、ファイルストアの設定を [`.config`ファイル](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) にエクスポートして、新しい`[Liferay Home]/osgi/configs/`フォルダにコピーします。 
 
     ```{important}
     [高度なファイルシステムストア](../../../system-administration/file-storage.md)を使用している場合は、データベースをアップグレードする前に、新しいインストールで`.config`ファイルを使って設定する必要があります。
@@ -60,12 +60,12 @@ Liferayインスタンスから切り離された状態でデータベースを�
     `rootDir="data/document_library"`
     ```
 
-1. データベースベンダーが推奨するJDBCドライバーを使用してください。 たとえば、MySQLを使用している場合は、[`portal-ext.properties`](../../reference/portal-properties.md)ファイルで`jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver`を設定し、アプリケーションサーバーが使用するMySQL JDBCドライバーのJARを置き換えます。 詳細は、[データベースドライバー](../migrating-configurations-and-properties.md#database-drivers)を参照してください。
+1. データベースベンダーが推奨するJDBCドライバーを使用してください。 たとえば、MySQLを使用している場合は、[`portal-ext.properties`](../../reference/portal-properties.md)ファイルで`jdbc.default.driverClassName=com.mysql.cj.jdbc.Driver`を設定し、アプリケーションサーバーが使用するMySQL JDBCドライバーのJARを置き換えます。 詳細は、 [データベースドライバー](../migrating-configurations-and-properties.md#database-drivers) を参照してください。
    
-   アップグレードツールのプロンプトに応答するか、[アップグレードプロパティファイルを使用](../reference/database-upgrade-tool-reference.md#manual-configuration)して、アップグレードを構成できます。 
+   アップグレードツールのプロンプトに応答するか、 [アップグレードプロパティファイルを使用](../reference/database-upgrade-tool-reference.md#manual-configuration) して、アップグレードを構成できます。 
 
     ```{note}
-    [新しいLiferay Dockerイメージにアップグレードする](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md)場合は、Docker環境変数の代わりに[ポータルプロパティ](../../reference/portal-properties.md)ファイルを使用してデータベース接続を指定してください。 [ポータルプロパティリファレンス](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html)には、各Liferay環境変数に対応するポータルプロパティが一覧表示されています。
+    [新しいLiferay Dockerイメージにアップグレードする](../../installing-liferay/using-liferay-docker-images/upgrading-to-a-new-docker-image.md)場合は、Docker環境変数の代わりに[ポータルプロパティ](../../reference/portal-properties.md)ファイルを使用してデータベース接続を指定してください。 [ポータルプロパティリファレンス](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) には、各Liferay環境変数に対応するポータルプロパティが一覧表示されています。
     ```
 
 1. （オプション）[アップグレードレポート](../reference/upgrade-reports.md)を有効にして、環境や変更などをレポートに記録します。 
@@ -95,7 +95,7 @@ Liferayインスタンスから切り離された状態でデータベースを�
 Liferay 7.4 U82/GA82 以降では、`db_upgrade.sh` ファイルの名前が `db_upgrade_client.sh` に変更されました。
 ```
 
-アップグレードツールの設定は、コマンドラインインターフェイスで行うか、[プロパティファイル](../reference/database-upgrade-tool-reference.md#manual-configuration)を使って行います。
+アップグレードツールの設定は、コマンドラインインターフェイスで行うか、 [プロパティファイル](../reference/database-upgrade-tool-reference.md#manual-configuration) を使って行います。
 
 `[Liferay Home]/tools/portal-tools-db-upgrade-client` フォルダにある `db_upgrade_client.sh` スクリプトがアップグレードツールを起動します (`db_upgrade_client.bat` on Windows)。 `--help`オプションは、ツールの使用状況を説明します。
 
@@ -156,7 +156,7 @@ Liferay 7.4 U82/GA82 以降では、`db_upgrade.sh` ファイルの名前が `db
 
 1. [アップグレード後の検討事項](./post-upgrade-considerations.md)を調べます。
 
-1. カスタム[Liferay Homeのファイル](../../maintaining-a-liferay-installation/backing-up.md#liferay-home)と[アプリケーションサーバーのファイル](../../maintaining-a-liferay-installation/backing-up.md#application-server)をバックアップから新規インストールにコピーしてマージします。 ファイルには次のものが含まれる場合がありますが、これらに限定されません。
+1. カスタム [Liferay Homeのファイル](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) と [アプリケーションサーバーのファイル](../../maintaining-a-liferay-installation/backing-up.md#application-server) をバックアップから新規インストールにコピーしてマージします。 ファイルには次のものが含まれる場合がありますが、これらに限定されません。
 
     * `/license/*`：アクティベーションキー。 (サブスクリプション)
     * `/log/*`：ログファイル。
@@ -165,7 +165,7 @@ Liferay 7.4 U82/GA82 以降では、`db_upgrade.sh` ファイルの名前が `db
     * アプリケーションサーバーファイル：変更されたスクリプトと設定ファイル。
     * `web.xml`：ポータルWebアプリケーション記述子。
 
-1. 新しいインストール先で[ポータルのプロパティを更新](../migrating-configurations-and-properties.md#migrating-portal-properties)します。
+1. 新しいインストール先で [ポータルのプロパティを更新](../migrating-configurations-and-properties.md#migrating-portal-properties) します。
 
 1. サーバーを起動し、アップグレードしたデータベースでLiferayを検証します。
    

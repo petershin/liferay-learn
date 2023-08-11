@@ -13,7 +13,7 @@
 * アプリケーションディスプレイテンプレート
 * データ定義（動的データリスト）
 
-関連する設定可能なプロパティのリストについては、Liferayの`portal.properties`ファイルの[サイトの管理ポートレット](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Sites%20Admin%20Portlet)のセクションを参照してください。 例えば、 `Sites.content.sharing.with.children.enabled` プロパティは、サイトと子サイト間のコンテンツ共有を無効/有効にすることができ、サイト管理者はサイトごとに設定することができます。
+関連する設定可能なプロパティのリストについては、Liferayの`portal.properties`ファイルの [サイトの管理ポートレット](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Sites%20Admin%20Portlet) のセクションを参照してください。 例えば、 `Sites.content.sharing.with.children.enabled` プロパティは、サイトと子サイト間のコンテンツ共有を無効/有効にすることができ、サイト管理者はサイトごとに設定することができます。
 
 ## サイト階層のロールと権限設定
 
@@ -32,6 +32,6 @@
 
 サイト・ディレクトリ・アプリケーションは、サイトと子サイトの階層を表示する設定可能なアプリケーションです。 これにより、ユーザーは表示されたサイトのいずれかに移動することができる。 このアプリを使ってサイト階層を表示するには、以下の手順に従ってください：
 
-1. *Sites Directory* アプリケーションをページに追加する。
-1. その*設定*ウィンドウを開きます。
-1. ［表示形式］の *［階層リスト］* を選択します。
+1. **Sites Directory** アプリケーションをページに追加する。
+1. その **設定** ウィンドウを開きます。
+1. ［表示形式］の ［**階層リスト**］ を選択します。

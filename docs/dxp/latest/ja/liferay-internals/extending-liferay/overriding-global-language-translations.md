@@ -12,8 +12,8 @@ Liferay DXP/Portalでは、言語ファイルを使用して、デフォルト�
 
 ソースの場合：
 
-* [`liferay-[dxp|portal]/portal-impl/src/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-impl/src/content)
-* [`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language[_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)
+* [`liferay-[dxp|portal]/portal-impl/src/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-impl/src/content)
+* [`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang/src/main/resources/content/Language [_xx_XX].properties`](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content)
 
 バンドルの場合：
 
@@ -47,7 +47,7 @@ category.cms=Content Management
 
 Liferay DXP/Portal 7.4+では、メタデータを使用してオーバーライドを宣言できます。 以前のバージョンでは、Javaクラスがオーバーライドを宣言します。
 
-お使いのバージョンが7.4より前の場合は、[以前のバージョンでのオーバーライド](#overriding-in-earlier-versions)に進んでください。  それ以外の場合は、読み進めてください。
+お使いのバージョンが7.4より前の場合は、 [以前のバージョンでのオーバーライド](#overriding-in-earlier-versions) に進んでください。  それ以外の場合は、読み進めてください。
 
 ## サンプルをデプロイする（7.4以降の場合）
 
@@ -152,7 +152,7 @@ Provide-Capability:\
 
 ## 以前のバージョンでのオーバーライド
 
-7.4より前のLiferay DXP/Portalバージョンでは、標準言語ファイルをオーバーライドするには、カスタマイズする翻訳ごとに[言語プロパティファイル](#create-a-language-properties-file)と`java.util.ResourceBundle`が必要です。 次の例をデプロイしてそのコードを調べることにより、詳細を確認してください。
+7.4より前のLiferay DXP/Portalバージョンでは、標準言語ファイルをオーバーライドするには、カスタマイズする翻訳ごとに [言語プロパティファイル](#create-a-language-properties-file) と`java.util.ResourceBundle`が必要です。 次の例をデプロイしてそのコードを調べることにより、詳細を確認してください。
 
 ```{note}
 言語ファイルの多くは標準言語ファイルにありますが、特定のアプリケーションモジュールにある場合もあります。 [overriding module language translation in earlier versions](./overriding-module-language-translations.md)のプロセスは、標準ファイルをオーバーライドするプロセスとは異なります。
@@ -226,9 +226,9 @@ Provide-Capability:\
 
 クラスは次のメソッドをオーバーライドします。
 
-**`handleGetObject`：**モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）で言語ファイルを検索し、キーの値を`Object`として返します。
+**`handleGetObject`：** モジュールのリソースバンドル（モジュールの言語プロパティファイルに基づく）で言語ファイルを検索し、キーの値を`Object`として返します。
 
-**`getKeys`：**リソースバンドルのキーの`Enumeration`を返します。
+**`getKeys`：** リソースバンドルのキーの`Enumeration`を返します。
 
 リソースバンドルサービスコンポーネントは、デフォルトの言語ファイルをモジュールの言語ファイルオーバーライドにリダイレクトします。
 
@@ -252,7 +252,7 @@ Provide-Capability:\
 モジュールをデプロイして、新しい言語ファイル値を確認します。
 
 ```{note}
-DXP 7.4以降にアップグレードする準備ができたら、言語ファイルオーバーライドモジュールを引き続き使用できます。 オプションとして、[above](#declare-the-override-in-the-bnd-file)で示すように、`ResourceBundle` クラスを削除し、`Provide-Capability` ヘッダーを `bnd.bnd` ファイルで指定することで、モジュールを簡素化することができます。
+DXP 7.4以降にアップグレードする準備ができたら、言語ファイルオーバーライドモジュールを引き続き使用できます。 オプションとして、 [above](#declare-the-override-in-the-bnd-file) で示すように、`ResourceBundle` クラスを削除し、`Provide-Capability` ヘッダーを `bnd.bnd` ファイルで指定することで、モジュールを簡素化することができます。
 ```
 
 ## 関連情報

@@ -1,6 +1,6 @@
 # 構成UIを非表示にする
 
-Liferayは、[構成インターフェイスがデプロイ](./setting-and-accessing-configurations.md#creating-the-configuration-interface)された後、構成UIを自動的に生成します。 ただし、UIを非表示にしたい特定のユースケースがある場合があります。 たとえば、管理者に特定の構成へのアクセスを許可したくない場合や、特定の基準に基づいて構成を非表示にしたい場合です。 構成UIを非表示にするには、2つの異なるオプションがあります。
+Liferayは、 [構成インターフェイスがデプロイ](./setting-and-accessing-configurations.md#creating-the-configuration-interface) された後、構成UIを自動的に生成します。 ただし、UIを非表示にしたい特定のユースケースがある場合があります。 たとえば、管理者に特定の構成へのアクセスを許可したくない場合や、特定の基準に基づいて構成を非表示にしたい場合です。 構成UIを非表示にするには、2つの異なるオプションがあります。
 
 * `generateUI`アノテーションプロパティを使用する
 * 構成の可視性インターフェイスを使用する
@@ -24,7 +24,7 @@ Liferayは、[構成インターフェイスがデプロイ](./setting-and-acces
 
 次に、下記手順に従います。
 
-1. [設定UIの非表示](./liferay-g8v3.zip)をダウンロードして解凍します。
+1. [設定UIの非表示](./liferay-g8v3.zip) をダウンロードして解凍します。
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-g8v3.zip -O
@@ -50,7 +50,7 @@ Liferayは、[構成インターフェイスがデプロイ](./setting-and-acces
     STARTED com.acme.g8v3.impl_1.0.0 [1650]
     ```
 
-1. ブラウザで`https://localhost:8080` を開き、*［コントロールパネル］* &rarr; *［設定］* &rarr; *［システム設定］*に移動します。 ［プラットフォーム］で*［サードパーティー］*をクリックします。 左側の*［G8V3 Able Configuration］*をクリックします 。 ［Enable G8V3 Baker Configuration］のチェックボックスをオンにします。 *［Update］*ボタンをクリックします。
+1. ブラウザで`https://localhost:8080` を開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**システム設定**］ に移動します。 ［プラットフォーム］で ［**サードパーティー**］ をクリックします。 左側の ［**G8V3 Able Configuration**］ をクリックします 。 ［Enable G8V3 Baker Configuration］のチェックボックスをオンにします。 ［**Update**］ ボタンをクリックします。
 
     ![チェックボックスをクリックすると、他の構成UIが表示されます](./hiding-the-configuration-ui/images/01.png)
 

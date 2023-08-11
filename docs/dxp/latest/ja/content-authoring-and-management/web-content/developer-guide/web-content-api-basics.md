@@ -15,7 +15,7 @@ Liferay DXP RESTサービスを使用すると、サイトで構造化コンテ�
 
 次に、以下の手順を実行します。
 
-1. [Web Content API Basics](./liferay-r4h9.zip)ファイルをダウンロードし、解凍します：
+1. [Web Content API Basics](./liferay-r4h9.zip) ファイルをダウンロードし、解凍します：
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-r4h9.zip -O
@@ -46,7 +46,7 @@ Webコンテンツの管理には、Liferay DXP Headless Delivery API で下記�
 
 ### サイトIDの特定
 
-サイトIDの特定は、[こちらの](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)の説明に従ってください。
+サイトIDの特定は、 [こちらの](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) の説明に従ってください。
 
 ### ユーザーインターフェースでの基本Webコンテンツ記事の作成
 
@@ -58,12 +58,12 @@ Webコンテンツを作成するには、Webコンテンツストラクチャ�
 
 これらの例では、単一のテキストフィールドとデフォルトの基本Webコンテンツストラクチャーを持つ基本Webコンテンツ記事を使用しています。 以下の手順で、Webコンテンツを作成します。
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、*［Content & Data］* &rarr; *［Web Content］*に移動します。
-1. *［Web Content］*タブで、追加 (![Add](../../../images/icon-add.png))をクリックし、 *［Basic Web Content］*を選択します。
+1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**Content & Data**］ &rarr; ［**Web Content**］ に移動します。
+1. ［**Web Content**］ タブで、追加 (![Add](../../../images/icon-add.png))をクリックし、 ［**Basic Web Content**］ を選択します。
 
    ![Webコンテンツパネルから基本Webコンテンツ記事を作成する。](./web-content-api-basics/images/01.png)
 
-1. 新しいWebコンテンツの名前として _Foo_ を入力し、 *［Publish］*をクリックします。
+1. 新しいWebコンテンツの名前として **Foo** を入力し、 ［**Publish**］ をクリックします。
 
    ![Webコンテンツ記事は、デフォルトで基本Webコンテンツストラクチャーを使用します。](./web-content-api-basics/images/02.png)
 
@@ -188,14 +188,14 @@ JSON出力で以下の情報を確認します。
 他の例のJavaクラスはこれと類似していますが、異なる`StructuredContentResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、[StructuredContentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/StructuredContentResource.java)を参照してください。
+サービスの詳細は、 [StructuredContentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/StructuredContentResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他のRESTサービスを呼び出す例です。
 
 ## Webコンテンツ記事の取得
 
-[前の手順の](#get-web-content-articles-from-site)スクリプトは、サイトのすべてのWebコンテンツ記事を返します。 特定の記事を取得するには、 `StructuredContent_GET_ById.[java|sh]`スクリプトを使用します。 `1234`をWebコンテンツ記事のIDに置き換えてください。
+[前の手順の](#get-web-content-articles-from-site) スクリプトは、サイトのすべてのWebコンテンツ記事を返します。 特定の記事を取得するには、 `StructuredContent_GET_ById.[java|sh]`スクリプトを使用します。 `1234`をWebコンテンツ記事のIDに置き換えてください。
 
 ### StructuredContent_GET_ById.sh
 
@@ -289,7 +289,7 @@ java -classpath .:* -DsiteId=1234 ContentStructures_GET_FromSite
 |:-------- |:-------------------- |
 | $1       | `contentStructureId` |
 
-以下は、JSON出力です。 Liferay DXPのデフォルトのWebコンテンツストラクチャーは、 `id`と`name`で識別できます。 `contentStructureFields`セクションには、ストラクチャー項目の説明が含まれています。 このストラクチャーには、タイプ `string` と名前 `content`の単一のコンテンツ項目が含まれていることに注目してください。 [基本Webコンテンツの記事の投稿](#post-a-basic-web-content-article)では、このコンテンツ項目に情報を追加して新規Webコンテンツ記事を作成します。
+以下は、JSON出力です。 Liferay DXPのデフォルトのWebコンテンツストラクチャーは、 `id`と`name`で識別できます。 `contentStructureFields`セクションには、ストラクチャー項目の説明が含まれています。 このストラクチャーには、タイプ `string` と名前 `content`の単一のコンテンツ項目が含まれていることに注目してください。 [基本Webコンテンツの記事の投稿](#post-a-basic-web-content-article) では、このコンテンツ項目に情報を追加して新規Webコンテンツ記事を作成します。
 
 ```json
 {
@@ -339,7 +339,7 @@ java -classpath .:* -DcontentStructureId=1234 ContentStructure_GET_ById
 
 ### StructuredContent_POST_ToSite.sh
 
-`StructuredContent_POST_ToSite.sh`cURLスクリプトサンプルは、`POST`HTTPメソッドとデフォルトのWebコンテンツストラクチャーを使って新規Webコンテンツの記事を作成します。 このスクリプトでは、[サイトID](#identifying-the-site-id)とストラクチャー`ID`をパラメーターとして使用しています。
+`StructuredContent_POST_ToSite.sh`cURLスクリプトサンプルは、`POST`HTTPメソッドとデフォルトのWebコンテンツストラクチャーを使って新規Webコンテンツの記事を作成します。 このスクリプトでは、 [サイトID](#identifying-the-site-id) とストラクチャー`ID`をパラメーターとして使用しています。
 
 | メソッド  | サービス                | エンドポイント                                    |
 |:----- |:------------------- |:------------------------------------------ |
@@ -356,7 +356,7 @@ cURLスクリプトのパラメーター：
 | $1       | `siteId`             |
 | $2       | `contentStructureId` |
 
-Liferay DXPで新規Webコンテンツの記事を見つけるには、サイトメニュー (![Site menu](../../../images/icon-menu.png))を開いて、*［コンテンツ & データ］* &rarr; *［Webコンテンツ］*に移動します。
+Liferay DXPで新規Webコンテンツの記事を見つけるには、サイトメニュー (![Site menu](../../../images/icon-menu.png))を開いて、 ［**コンテンツ & データ**］ &rarr; ［**Webコンテンツ**］ に移動します。
 
 以下は、このスクリプトが生成するJSON出力の一部です。 このスクリプトは、ストラクチャー` contentField` `content`を参照として使用し、シンプルな `<p>Foo</p>` HTMLストリングを投稿します。
 
@@ -539,7 +539,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 
 ## その他のWebコンテンツとWebコンテンツフォルダーのサービス
 
-他のcURLコマンドとJavaクラスは、その他の `StructuredContent`と`StructuredContentFolder` サービスの詳細を示しています。 [WebコンテンツAPIの基本](./liferay-r4h9.zip)でそれらを確認できます。
+他のcURLコマンドとJavaクラスは、その他の `StructuredContent`と`StructuredContentFolder` サービスの詳細を示しています。 [WebコンテンツAPIの基本](./liferay-r4h9.zip) でそれらを確認できます。
 
 | ファイル                                                           | 説明                              |
 |:-------------------------------------------------------------- |:------------------------------- |

@@ -1,10 +1,10 @@
 # 候補リストAPIの基本
 
-Liferayは、候補リストの定義 (`ListTypeDefinition`)とそのエントリー(`ListTypeEntry`)を作成・管理するための[`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) REST APIを提供します。 RESTサービスメニューの`[server]:[port]/o/api` (例: `localhost:8080/o/api`)にあるLiferayのAPIエクスプローラーで利用できるAPIを表示し、テストすることができます。
+Liferayは、候補リストの定義 (`ListTypeDefinition`)とそのエントリー(`ListTypeEntry`)を作成・管理するための [`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) REST APIを提供します。 RESTサービスメニューの`[server]:[port]/o/api` (例: `localhost:8080/o/api`)にあるLiferayのAPIエクスプローラーで利用できるAPIを表示し、テストすることができます。
 
 ![headless-admin-list-typeで候補リストのAPIにアクセスします。](./picklists-api-basics/images/01.png)
 
-[`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json)サービスを呼び出して、候補リストを作成・管理します。
+[`headless-admin-list-types`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-list-type/v1.0/openapi.json) サービスを呼び出して、候補リストを作成・管理します。
 
 ## 候補リストを追加する
 
@@ -13,7 +13,7 @@ Liferayは、候補リストの定義 (`ListTypeDefinition`)とそのエント�
 
 次にサンプルコードを用意する：
 
-1. [Picklists API Basics](./liferay-v3n6.zip)をダウンロードして解凍します。
+1. [Picklists API Basics](./liferay-v3n6.zip) をダウンロードして解凍します。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/picklists/liferay-v3n6.zip -O
@@ -42,7 +42,7 @@ Liferayは、候補リストの定義 (`ListTypeDefinition`)とそのエント�
    }
    ```
 
-1. *［グローバルメニュー］* &rarr; *［コントロールパネル］* &rarr; *［Picklists］*に移動します。 新しい候補リストが表示されます。
+1. ［**グローバルメニュー**］ &rarr; ［**コントロールパネル**］ &rarr; ［**Picklists**］ に移動します。 新しい候補リストが表示されます。
 
    ![新しい候補リストが追加されたことを確認します。](./picklists-api-basics/images/02.png)
 

@@ -10,11 +10,11 @@
 
 サイトテンプレートのプロパゲーションを設定するには
 
-1. *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、 *Control Panel* タブを開き、 *System Settings* under Configuration をクリックします。
+1. **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 **Control Panel** タブを開き、 **System Settings** under Configuration をクリックします。
 
-1. Platform」の「 *Infrastructure」の「* settings」を開き、サイドメニューの「Virtual Instance Scope」の「 *Site Templates* 」をクリックします。
+1. Platform」の「**Infrastructure」の**「 settings」を開き、サイドメニューの「Virtual Instance Scope」の「**Site Templates**」をクリックします。
 
-1. Check *Trigger Propagation*.
+1. Check **Trigger Propagation** .
 
    チェックをはずすと、ユーザーが最初にサイトを訪れたときに、変更が個別に反映されます。
 
@@ -22,7 +22,7 @@
 
    ![トリガー伝搬をチェックする。](./configuring-site-template-propagation/images/01.png)
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 サイト テンプレートでプロパゲーションが無効になっている場合、プロパゲーションを有効にすると、接続されているサイトに同時に変更が反映されます。 テンプレートに対するプロパゲーションは有効なままですが、その後の変更は、ユーザーが最初にアクセスしたときに個別にサイトにプロパゲーションされます。
 

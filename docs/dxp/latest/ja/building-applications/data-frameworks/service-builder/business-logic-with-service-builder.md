@@ -9,7 +9,7 @@
 
 次に、以下の手順を実行します。
 
-1. [Business Logic with Service Builder](./liferay-e4g5.zip)をダウンロードして解凍します。
+1. [Business Logic with Service Builder](./liferay-e4g5.zip) をダウンロードして解凍します。
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/data-frameworks/service-builder/liferay-e4g5.zip -O
@@ -43,9 +43,9 @@
 
    ![E4G5ポートレットをページに追加します。](./business-logic-with-service-builder/images/01.png)
 
-1. 名前と説明を入力してエントリーを追加する（例：e4g5_name1 と e4g5_description1）。`Add`をクリックすると、`E4G5 Entries`の下に新しいエントリーが表示されます。`e4g5EntryId` の番号を控えておいてください。
+1. 名前と説明を入力してエントリーを追加する（例：e4g5 **name1 と e4g5** description1）。`Add`をクリックすると、`E4G5 Entries`の下に新しいエントリーが表示されます。`e4g5EntryId` の番号を控えておいてください。
 
-1. 次に、このエントリーを更新し、前のステップで入力した `e4g5EntryId` と新しい名前と説明を入力します。(例：41804、e4g5_name2、e4g5_description2）。`Update`をクリックすると、エントリーが更新されます。
+1. 次に、このエントリーを更新し、前のステップで入力した `e4g5EntryId` と新しい名前と説明を入力します。(例：41804、e4g5 **name2、e4g5** description2）。`Update`をクリックすると、エントリーが更新されます。
 
 1. 最後に、`e4g5EntryId`を入力して、エントリーを削除します。 `［Delete］`をクリックすると、エントリーが削除されます。
 

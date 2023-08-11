@@ -18,11 +18,11 @@ ModSecurityはデフォルトで無効になっています。 これを有効�
 
 これらの値は、 `LCP_WEBSERVER_MODSECURITY`で許可されています。
 
-* **On** : ModSecurityを有効にします。 攻撃検知ルールが処理される。
+***On** : ModSecurityを有効にします。 攻撃検知ルールが処理される。
 
-* **Off** : ModSecurity を無効にします。 ルールが処理されない。
+***Off** : ModSecurity を無効にします。 ルールが処理されない。
 
-* **DetectionOnly** : ModSecurity を有効にします。 ルールは処理されるが、破壊的なアクションは実行されない（ブロック、拒否、ドロップ、許可、プロキシ、リダイレクト）。
+***DetectionOnly** : ModSecurity を有効にします。 ルールは処理されるが、破壊的なアクションは実行されない（ブロック、拒否、ドロップ、許可、プロキシ、リダイレクト）。
 
 ```{tip}
 環境変数`LCP_WEBSERVER_MODSECURITY` は ModSecurity自身の [`SecRuleEngine`ディレクティブ](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine) と同等です。

@@ -34,7 +34,7 @@ Liferay Cloud の多くのログには、このメッセージがサービスの
 
 ![インスタンスのドロップダウンメニューをクリックすると、すべてのインスタンスが表示されます](./reading-liferay-cloud-service-logs/images/01.png)
 
-インスタンスIDの形式は、サービスがどのような配布タイプ（展デプロイまたはステートフルセット）として構成されているかによって異なります。 詳細は、 [Understanding Deployment Types](../build-and-deploy/understanding-deployment-types.md)を参照してください。
+インスタンスIDの形式は、サービスがどのような配布タイプ（展デプロイまたはステートフルセット）として構成されているかによって異なります。 詳細は、 [デプロイタイプについて](../build-and-deploy/understanding-deployment-types.md) を参照してください。
 
 ### 配布タイプログのインスタンスID
 
@@ -92,11 +92,11 @@ Jun 29 07:44:44.676 build-214 [search-0] #  - Creating and Starting rollup jobs 
 
 ![ドロップダウンメニューを使用して、タイプ、サービス、およびサービスインスタンスでフィルタリングします。](./reading-liferay-cloud-service-logs/images/04.png)
 
-日付の範囲でフィルタリングする場合は、右上の日付ピッカーを使用します。 [が有効なログを持たなくなった日](../reference/platform-limitations.md#all-services)を選ぶことはできません。
+日付の範囲でフィルタリングする場合は、右上の日付ピッカーを使用します。 [が有効なログを持たなくなった日](../reference/platform-limitations.md#all-services) を選ぶことはできません。
 
 ![日付ピッカーを使って、特定の日付範囲のログを見ることができます。](./reading-liferay-cloud-service-logs/images/05.png)
 
-特定の用語や正規表現でログを検索することができます。 **Term** または **Regex** をドロップダウンメニューから選択し、検索語または正規表現を入力します。 過去の検索結果に基づいて、検索候補が表示されます。 正規表現では、 [RE2 構文](https://github.com/google/re2/wiki/Syntax).
+特定の用語や正規表現でログを検索することができます。 **Term** または **Regex** をドロップダウンメニューから選択し、検索語または正規表現を入力します。 過去の検索結果に基づいて、検索候補が表示されます。 正規表現では、 [RE2 構文](https://github.com/google/re2/wiki/Syntax) .
 
 ![特定の用語や形式を含むログを探すには、検索を使用します。](./reading-liferay-cloud-service-logs/images/06.png)
 

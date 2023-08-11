@@ -8,7 +8,7 @@
 
 同義語セットとは、同じ意味を持つ単語やフレーズを集めたものです。 管理者であるユーザーが同義語セットを作成し、検索ページのエンドユーザーがキーワードやフレーズを検索すると、セット内の同義語も検索されます。
 
-たとえば、ユーザーが「US」という単語を検索するとします。 ほとんどの場合、ユーザーは*America*、*U.S.A*、*United States*などの同義語も含む検索結果を求めています。 同義語セットを作成することで、ユーザーが検索を最大限に活用できるようになります。
+たとえば、ユーザーが「US」という単語を検索するとします。 ほとんどの場合、ユーザーは **America** 、 **U.S.A** 、 **United States** などの同義語も含む検索結果を求めています。 同義語セットを作成することで、ユーザーが検索を最大限に活用できるようになります。
 
 ## 要求事項と制限事項
 
@@ -16,7 +16,7 @@
 
 同義語セットは現在、すぐに使用可能なロケール（英語またはスペイン語）のいずれかでインデックス付けされたフィールドで機能します。 これら2つの言語のいずれかでローカライズ可能なフィールドを持つLiferayアセットは、同義語セットで機能します。
 
-Elasticsearchでサポートされている[`=>`形式](https://www.elastic.co/guide/en/elasticsearch/guide/current/synonyms.html)は同義語セットUIではサポートされていません。
+Elasticsearchでサポートされている [`=>`形式](https://www.elastic.co/guide/en/elasticsearch/guide/current/synonyms.html) は同義語セットUIではサポートされていません。
 
 ## 同義語セットの作成と管理
 
@@ -24,19 +24,19 @@ Elasticsearchでサポートされている[`=>`形式](https://www.elastic.co/g
 
 新しい同義語セットを作成するには、
 
-1. グローバルメニュー（![Global Menu](../../images/icon-applications-menu.png)）から、 *［アプリケーション］* → *［検索の調整］* → *［同義語］*に移動します。
+1. グローバルメニュー（![Global Menu](../../images/icon-applications-menu.png)）から、 ［**アプリケーション**］ → ［**検索の調整**］ → ［**同義語**］ に移動します。
 
    ![グローバルメニューの［同義語］セクションに移動します](synonym-sets/images/01.png)
 
-1. _追加_ アイコン（![Click on the add icon](../../images/icon-add.png)）をクリックして、新規同義語セットを追加します。
+1. **追加** アイコン（![Click on the add icon](../../images/icon-add.png)）をクリックして、新規同義語セットを追加します。
 
-1. セット内の同義語のリストを入力します。 同義語の入力は、*Enter*をクリックするか、カンマを入力することで行います。
+1. セット内の同義語のリストを入力します。 同義語の入力は、 **Enter** をクリックするか、カンマを入力することで行います。
 
    ![異なる同義語をセットに入力します。](synonym-sets/images/02.png)
 
-1. 同義語の横にある *［X］*をクリックすると、同義語を削除できます。 セットが終わったら、*［公開］*をクリックします。
+1. 同義語の横にある ［**X**］ をクリックすると、同義語を削除できます。 セットが終わったら、 ［**公開**］ をクリックします。
 
-1. セットを編集または削除するには、_オプション_ アイコン（![Click on the options icon.](../../images/icon-options.png)）をクリックし、*［Edit］* または *［Delete］* をクリックします。
+1. セットを編集または削除するには、 **オプション** アイコン（![Click on the options icon.](../../images/icon-options.png)）をクリックし、 ［**Edit**］ または ［**Delete**］ をクリックします。
 
    ![編集または削除をクリックして変更を加えます。](synonym-sets/images/03.png)
 
@@ -54,9 +54,9 @@ Elasticsearchでサポートされている[`=>`形式](https://www.elastic.co/g
 
 > **入手方法Liferay DXP 7.3 FP2およびLiferay DXP 7.2 FP13**
 
-Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-limitations)の同義語をサポートします。 他の言語に対応するためには、以下のような設定が必要です。
+Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-limitations) の同義語をサポートします。 他の言語に対応するためには、以下のような設定が必要です。
 
-- デフォルトの[French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer)解析器に必要な変更を加えて再実装し、[カスタム解析器](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html)を作成する（パイプラインに追加の[Synonym graph token filter](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-synonym-graph-tokenfilter.html)を含む）。
+- デフォルトの [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) 解析器に必要な変更を加えて再実装し、 [カスタム解析器](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) を作成する（パイプラインに追加の [Synonym graph token filter](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-synonym-graph-tokenfilter.html) を含む）。
 - コネクタ設定の Additional Index Configurations を使用して、カスタム解析器の定義をインデックス設定に追加します。
 - コネクター設定の Override Type Mappings 設定を使用して、Liferay DXP のデフォルトのタイプマッピングをオーバーライドして、目的のフィールドにカスタムアナライザーを適用します。
 - インデックスを再作成して、新しい設定を適用します。
@@ -67,8 +67,8 @@ Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-
 
 実行中のLiferayからマッピングを取得する、
 
-1. グローバルメニュー (![Global Menu](../../images/icon-applications-menu.png)) を開き、 _コントロールパネル_ &rarr; _検索_を開きます。
-1. _Field Mappings_ タブをクリックする。
+1. グローバルメニュー (![Global Menu](../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** &rarr; **検索** を開きます。
+1. **Field Mappings** タブをクリックする。
 1. マッピング(![Copy](../../images/icon-copy.png))をコピーして保存する。
 
 ```{warning}
@@ -143,7 +143,7 @@ Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-
    ```
 
    ```{note}
-   Liferay 7.4 U80 以前では、JSON ファイルの最初に `LiferayDocumentType` 宣言を含める必要があります。 例えば、[Liferay 7.4 GA80 mappings](https://github.com/liferay/liferay-portal/blob/7.4.3.80-ga80/modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-impl/src/main/resources/META-INF/mappings/liferay-type-mappings.json) を参照してください。
+   Liferay 7.4 U80 以前では、JSON ファイルの最初に `LiferayDocumentType` 宣言を含める必要があります。 例えば、 [Liferay 7.4 GA80 mappings](https://github.com/liferay/liferay-portal/blob/7.4.3.80-ga80/modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-impl/src/main/resources/META-INF/mappings/liferay-type-mappings.json) を参照してください。
    ```
 
 1. ［タイプマッピングの上書き］フィールドを使用して、 `template_fr` ダイナミックフィールドのアナライザーを変更して、カスタムアナライザー（`custom_liferay_analyzer_fr`）を使用します。 
@@ -185,7 +185,7 @@ Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-
 
 1. カスタムフィルター名（例： `custom-synonym-filter-fr`）をフィルター名の設定に追加し、設定を保存します。
 
-1. 完全な再インデックスを実行します。コントロールパネルの &rarr; 検索 &rarr; インデックスアクションで、 _すべての検索インデックスの再インデックスをクリックします。_ をクリックします。
+1. 完全な再インデックスを実行します。コントロールパネルの &rarr; 検索 &rarr; インデックスアクションで、 **すべての検索インデックスの再インデックスをクリックします。** をクリックします。
    
    カスタムマッピングが正常に適用されたことを確認するには、「フィールドマッピング」タブに移動し、インデックスを選択し（例えば、 `liferay-20101`）、右パネルで `template_fr` を探します。
    
@@ -193,13 +193,13 @@ Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-
 
 新しいフィルターが動作していることを確認するため。 
 
-1. Synonymsアプリケーションに移動します。グローバルメニューのアプリケーションタブから、 _Synonyms_ （「検索チューニング」の下）をクリックします。
+1. Synonymsアプリケーションに移動します。グローバルメニューのアプリケーションタブから、 **Synonyms**（「検索チューニング」の下）をクリックします。
 
 1. 新しいシノニムセットを作成します。 `maison, logement`.
 
-1. 英語とフランス語の翻訳付きのウェブコンテンツ記事を作成します。 フランス語のタイトルに _maison_ を追加します。
+1. 英語とフランス語の翻訳付きのウェブコンテンツ記事を作成します。 フランス語のタイトルに **maison** を追加します。
 
-1. 英語とフランス語の翻訳付きで、別のWebコンテンツ記事を作成します。 フランス語のタイトルに _logement_ を追加します。
+1. 英語とフランス語の翻訳付きで、別のWebコンテンツ記事を作成します。 フランス語のタイトルに **logement** を追加します。
 
-1. フランス語のロケールに切り替えて、 _maison_ を検索します。 両方の記事が返されます。
+1. フランス語のロケールに切り替えて、 **maison** を検索します。 両方の記事が返されます。
 

@@ -1,6 +1,6 @@
 # Reactチャートでのオブジェクトデータの使用
 
-ここでは、[オブジェクト](../../objects.md)、[ヘッドレスAPI](../understanding-object-integrations/headless-framework-integration.md)、[カスタム要素のリモートアプリケーション](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)を使って、データダッシュボード用の動的なグラフを作成する方法を説明します。 まず、オブジェクトAPI 呼び出し用に[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)を有効にして、新しいDXP インスタンスをセットアップします。 次に、データの受信と保存を行うためのオブジェクトを作成します。 REST APIを使ってオブジェクトにデータを追加したら、提供されているReact [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react)アプリケーションをダウンロードし、ビルドしてください。 コードがコンパイルされたら、生成された`.js`ファイルをLiferayドキュメントライブラリーでホストし、そのWebDAV URLをコピーします。 最後に、このURLを使ってReactチャートのリモートアプリケーションを作成し、ページウィジェットとしてデプロイします。
+ここでは、[オブジェクト](../../objects.md)、[ヘッドレスAPI](../understanding-object-integrations/headless-framework-integration.md)、[カスタム要素のリモートアプリケーション](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)を使って、データダッシュボード用の動的なグラフを作成する方法を説明します。 まず、オブジェクトAPI 呼び出し用に [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) を有効にして、新しいDXP インスタンスをセットアップします。 次に、データの受信と保存を行うためのオブジェクトを作成します。 REST APIを使ってオブジェクトにデータを追加したら、提供されているReact [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) アプリケーションをダウンロードし、ビルドしてください。 コードがコンパイルされたら、生成された`.js`ファイルをLiferayドキュメントライブラリーでホストし、そのWebDAV URLをコピーします。 最後に、このURLを使ってReactチャートのリモートアプリケーションを作成し、ページウィジェットとしてデプロイします。
 
 チャートは5秒ごとにヘッドレスAPI経由でオブジェクトを呼び出し、オブジェクトのデータを返してチャートを動的に更新するように構成されています。
 
@@ -11,21 +11,21 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従って、`/o/c/*` URLパターンを*Default Portal CORS Configuration*に追加してください：
+次に、以下の手順に従って、`/o/c/*` URLパターンを **Default Portal CORS Configuration** に追加してください：
 
-1. グローバル・メニュー* (![グローバル・メニュー](../../../images/icon-applications-menu.png))を開き、*コントロール・パネル*タブに移動して、*セキュリティ・ツール*をクリックする。
+1. グローバル・メニュー (**![グローバル・メニュー](../../../images/icon-applications-menu.png))を開き、** コントロール・パネル **タブに移動して、** セキュリティ・ツール*をクリックする。
 
-1. [*Portal Cross-Origin Resource Sharing (CORS)*]タブに移動し、[*Default Portal CORS Configuration*]をクリックします。
+1. [**Portal Cross-Origin Resource Sharing (CORS**)]タブに移動し、[**Default Portal CORS Configuration**]をクリックします。
 
    デフォルト・ポータルCORS構成](./using-object-data-with-react-charts/images/02.png)をクリックします。
 
-1. URL パターン*を `/o/c/*` 値で追加し、*保存* をクリックします。これで、すべてのオブジェクトAPIのCORSが有効になります。
+1. URL パターン **を `/o/c/** ` 値で追加し、 **保存** をクリックします。これで、すべてのオブジェクトAPIのCORSが有効になります。
 
    [オブジェクトAPI用の /o/c/* URLパターンを追加する](./using-object-data-with-react-charts/images/03.png)
 
 ## Reactチャート用オブジェクトの作成
 
-1. グローバルメニュー](../../../images/icon-applications-menu.png))を開き、[コントロールパネル](*Control Panel*)タブに移動し、[オブジェクト](*Objects*)をクリックします。
+1. グローバルメニュー](../../../images/icon-applications-menu.png))を開き、[コントロールパネル](**Control Panel**)タブに移動し、[オブジェクト](**Objects**)をクリックします。
 
 1. Add* ボタン (![Add Button](../../../images/icon-add.png)) をクリックし、以下の値を入力します：
 
@@ -39,20 +39,20 @@
    提供されたReactアプリはこれらの値を使用する。
    ```
 
-1. 新しい*オブジェクト*ドラフトを選択し、 *［フィールド］* タブをクリックして、これらの*フィールド*を追加します。
+1. 新しい **オブジェクト** ドラフトを選択し、 ［**フィールド**］ タブをクリックして、これらの **フィールド** を追加します。
 
    | ラベル | 項目名   | 種類      | 必須       |
    |:--- |:----- |:------- |:-------- |
    | ラベル | label | Text    | &#10004; |
    | 値   | 値     | Integer | &#10004; |
 
-1. *［詳細］*タブをクリックし、 *［公開］*をクリックします。
+1. ［**詳細**］ タブをクリックし、 ［**公開**］ をクリックします。
 
-[オブジェクトの公開](../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 Liferay UIやヘッドレスAPIでアクセスできるようになりました。
+[オブジェクトの公開](../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 Liferay UIやヘッドレスAPIでアクセスできるようになりました。
 
 ## ヘッドレスAPIを使ったオブジェクトへのデータ追加
 
-1. Liferayの*［APIエクスプローラー］*（すなわち `localhost:8080/o/api`）を開き、 *［RESTアプリケーション］*ドロップダウンメニューをクリックして、 *［c/x3j8objects］*をクリックしてください。
+1. Liferayの ［**APIエクスプローラー**］（すなわち `localhost:8080/o/api`）を開き、 ［**RESTアプリケーション**］ ドロップダウンメニューをクリックして、 ［**c/x3j8objects**］ をクリックしてください。
 
 1. このデータをバッチ`POST`APIのリクエストボディに入力してください。
 
@@ -81,7 +81,7 @@
    ]
    ```
 
-1. *［実行］* をクリックして、データエントリーをオブジェクトに追加します。
+1. ［**実行**］ をクリックして、データエントリーをオブジェクトに追加します。
 
 データの追加が終わったら、提供されたReactサーバーを設定します。 これには、X3J8-ObjectにAPI呼び出しを行い、そのデータを表示するFusionChartの実装が含まれます。
 
@@ -89,7 +89,7 @@
 
 以下の手順で、Reactアプリケーションをダウンロードし、ビルドします。
 
-1. [Reactプロジェクト](./liferay-x3j8.zip)をダウンロードし、解凍してください。
+1. [Reactプロジェクト](./liferay-x3j8.zip) をダウンロードし、解凍してください。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/liferay-x3j8.zip -O
@@ -151,15 +151,15 @@
 
 ## アプリケーションの`.js`ファイルをホストする
 
-1. *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［コンテンツ & データ］*と展開して *［Documents and Media］*とクリックします。
+1. **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**コンテンツ & データ**］ と展開して ［**Documents and Media**］ とクリックします。
 
 1. `.js`ファイルをアップロードエリアにドラッグ＆ドロップしてください。
 
    ドキュメントライブラリにアップロードされると、そのファイルには固有のWebDAV URLが割り当てられ、それを使ってリモートアプリケーションを作成することになります。
 
-1. *Info*アイコン (![Info Icon](../../../images/icon-information.png)) をクリックし、*アップロードしたファイル*を選択します。
+1. **Info** アイコン (![Info Icon](../../../images/icon-information.png)) をクリックし、 **アップロードしたファイル** を選択します。
 
-1. ファイルの *［WebDAV URL］*をコピーし、次のステップで使用するために保存してください。
+1. ファイルの ［**WebDAV URL**］ をコピーし、次のステップで使用するために保存してください。
 
    例えば、 `http://localhost:8080/webdav/guest/document_library/main.5a6819d5.js`です。
 
@@ -167,9 +167,9 @@
 
 ## Reactチャートのリモートアプリケーションを作成する
 
-1. *グローバルメニュー* (![Global Menu](../../../images/icon-applications-menu.png)) を開き、*［アプリケーション］*タブをクリックし、*［Remote Apps］*を選択します。
+1. **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**Remote Apps**］ を選択します。
 
-1. *追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
+1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
 
 1. 次の値を入力します。
 
@@ -181,9 +181,9 @@
    | URL          | `.js`ファイルのWebDAV URL  |
    | ポートレットのカテゴリ名 | リモートアプリケーション          |
 
-1. *［保存］* をクリックします。
+1. ［**保存**］ をクリックします。
 
-保存されると、Liferayはリモートアプリケーションのウィジェットを作成し、サイトページにデプロイすることができます。 このウィジェットは、アプリケーションのポートレットカテゴリ名（つまり、このチュートリアルでは、*リモートアプリケーション* ）の下に表示されます。
+保存されると、Liferayはリモートアプリケーションのウィジェットを作成し、サイトページにデプロイすることができます。 このウィジェットは、アプリケーションのポートレットカテゴリ名（つまり、このチュートリアルでは、 **リモートアプリケーション**）の下に表示されます。
 
 ![リモートアプリケーションウィジェットをサイトページにデプロイすることができます。](./using-object-data-with-react-charts/images/06.png)
 

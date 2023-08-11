@@ -10,7 +10,7 @@
 
 以下の手順で、Commerceロールに関連する権限を表示および管理します：
 
-1. *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Control Panel* &rarr; *Users* &rarr; *Roles*に移動する。
+1. **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Control Panel** &rarr; **Users** &rarr; **Roles** に移動する。
 
    ![コントロールパネルのロールをクリックします。](./commerce-roles-reference/images/01.png)
 
@@ -25,17 +25,17 @@
    Liferay 7.3以前のバージョンでは、アカウント管理者はサイトロールであり、アカウントメンバーロールはデフォルトロールではありません。 
    ```
 
-1. *Define Permissions* タブをクリックする。
+1. **Define Permissions** タブをクリックする。
 
    ここから、ロールに割り当てられたすべてのアプリケーションおよびリソースの権限の概要を確認できます。
 
    権限を削除または追加することもできます。
 
-   ![[権限の定義]タブをクリックして、ロールの権限を表示および管理します。](./commerce-roles-reference/images/02.png)
+   ![ [権限の定義]タブをクリックして、ロールの権限を表示および管理します。](./commerce-roles-reference/images/02.png)
 
 ## すぐに使えるロール
 
-以下のロールは、DXPインスタンスですぐに使用できます。 これらはデフォルトのDXPロールに含まれており、必要に応じて変更することができます。 詳細は、[ロール権限の定義](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html)を参照してください。
+以下のロールは、DXPインスタンスですぐに使用できます。 これらはデフォルトのDXPロールに含まれており、必要に応じて変更することができます。 詳細は、 [ロール権限の定義](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照してください。
 
 ### アカウント管理者
 
@@ -260,13 +260,13 @@ accountsパーミッションは、アカウント管理者がB2B設定でアカ
 
 ## カスタムロール
 
-以下のリストには、自身のCommerceインスタンス用に作成した方がいい一般的なカスタムロールが含まれています。 これらの役割は、他のDXPの役割と同じように作成できます。 詳細は、[ロールの作成と管理](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) と [ロール権限の定義](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html)を参照してください。
+以下のリストには、自身のCommerceインスタンス用に作成した方がいい一般的なカスタムロールが含まれています。 これらの役割は、他のDXPの役割と同じように作成できます。 詳細は、 [ロールの作成と管理](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) と [ロール権限の定義](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/defining-role-permissions.html) を参照してください。
 
 ### カタログマネージャー
 
 > 標準ロール
 
-カタログマネージャロールは、特定のカタログ内の製品へのアクセス、作成、編集、および管理の権限を付与します。 この役割は、異なるベンダーや企業チームが別々のカタログで異なる製品を管理するような、複数カタログのシナリオで有用である。 カタログ管理者は在庫を管理できない。 この責任については、 [Inventory Manager](#inventory-manager)を参照してください。
+カタログマネージャロールは、特定のカタログ内の製品へのアクセス、作成、編集、および管理の権限を付与します。 この役割は、異なるベンダーや企業チームが別々のカタログで異なる製品を管理するような、複数カタログのシナリオで有用である。 カタログ管理者は在庫を管理できない。 この責任については、 [Inventory Manager](#inventory-manager) を参照してください。
 
 | 権限の設定                                               | 説明                             |
 |:--------------------------------------------------- |:------------------------------ |
@@ -279,7 +279,7 @@ accountsパーミッションは、アカウント管理者がB2B設定でアカ
 
 上記の権限に加えて、ロールに管理させたい個々のカタログの表示権限と更新権限を割り当てる必要があります。
 
-これを行うには、［*グローバルメニュー*］(![Global Menu](../../images/icon-applications-menu.png))を開き、［*Commerce*］タブをクリックし、*［商品管理］* &rarr; *［カタログ］*に移動します。 次に、目的のカタログの *［Actions］* ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 *［権限設定］*を選択します。 チェックボックスを使用して、ロール *表示* および *アップデート* 許可を割り当てます。
+これを行うには、［**グローバルメニュー**］(![Global Menu](../../images/icon-applications-menu.png))を開き、［**Commerce**］タブをクリックし、 ［**商品管理**］ &rarr; ［**カタログ**］ に移動します。 次に、目的のカタログの ［**Actions**］ ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 ［**権限設定**］ を選択します。 チェックボックスを使用して、ロール **表示** および **アップデート** 許可を割り当てます。
 
 ```{note}
 カタログ管理者にカタログ内の商品を管理させたいが、カタログ自体は変更したくない場合は、`Catalogs：コントロールパネルへのアクセス`と`カタログへのアクセス`を削除してください：View` 権限を削除してください。
@@ -344,7 +344,7 @@ accountsパーミッションは、アカウント管理者がB2B設定でアカ
 
 > 標準ロール
 
-セールスエージェントはLiferayの通常のロールであり、アサイニーは管理者権限を付与することなく、ロールに割り当てられたアカウントを管理することができます。 *Regular Roles* タブの下にあります。
+セールスエージェントはLiferayの通常のロールであり、アサイニーは管理者権限を付与することなく、ロールに割り当てられたアカウントを管理することができます。 **Regular Roles** タブの下にあります。
 
 ![Define Permissions（権限の定義）タブで、デフォルトの販売代理店権限を表示します。](./commerce-roles-reference/images/06.png)
 
@@ -355,7 +355,7 @@ accountsパーミッションは、アカウント管理者がB2B設定でアカ
 
 ## 関連トピック
 
-* [ロールと権限について](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [ロールと権限について](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [注文管理権限のリファレンス](./order-management-permissions.md)
 * [在庫管理権限のリファレンス](./inventory-management-permissions.md)
 * [価格設定権限のリファレンス](./pricing-permissions.md)

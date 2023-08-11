@@ -2,9 +2,9 @@
 
 {bdg-secondary}`DXP 7.4 U69+/GA69+`
 
-Liferay のいくつかの機能は *機能フラグ*の後ろに隠されています。 機能フラグを使うことで、Liferayインスタンスに導入される新しい機能をコントロールすることができます。 新機能や実験的な機能は、機能フラグによってより効果的に採用され、検証される。
+Liferay のいくつかの機能は **機能フラグ** の後ろに隠されています。 機能フラグを使うことで、Liferayインスタンスに導入される新しい機能をコントロールすることができます。 新機能や実験的な機能は、機能フラグによってより効果的に採用され、検証される。
 
-機能フラグにアクセスして管理するには、 *グローバルメニュー* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *コントロールパネル* &rarr; *インスタンス設定*に移動します。 *Platform*の下にある *Feature Flags* をクリックする。 フィーチャー・フラッグには3種類ある：
+機能フラグにアクセスして管理するには、 **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **コントロールパネル** &rarr; **インスタンス設定** に移動します。 **Platform** の下にある **Feature Flags** をクリックする。 フィーチャー・フラッグには3種類ある：
 
 1. [ベータ版の機能フラグ](#beta-feature-flags)
 
@@ -23,13 +23,13 @@ Liferay DXP uses a badge to highlight beta features. See below: -->
 
 ## ベータ機能フラグ
 
-ベータ機能とは、ビジネス検証中の機能的特徴や能力のことである。 これらは実験的なものであり、使用にあたっては慎重な検討が必要である。 ベータ版の機能は、限られた期間の後に非推奨となったり、 [リリースの機能](#release-feature-flags)に変換されることがあります。 Liferayの [Community Slack](https://liferay.dev/chat)を通して、ベータ版の機能に関するフィードバックを行うことができます。
+ベータ機能とは、ビジネス検証中の機能的特徴や能力のことである。 これらは実験的なものであり、使用にあたっては慎重な検討が必要である。 ベータ版の機能は、限られた期間の後に非推奨となったり、 [リリースの機能](#release-feature-flags) に変換されることがあります。 Liferayの [Community Slack](https://liferay.dev/chat) を通して、ベータ版の機能に関するフィードバックを行うことができます。
 
 ベータ機能を有効にするには
 
-1. *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Control Panel* &rarr; *Instance Settings*に移動する。
+1. **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Control Panel** &rarr; **Instance Settings** に移動する。
 
-1. Platform の下にある *Feature Flags* をクリックし、 *Beta*をクリックする。
+1. Platform の下にある **Feature Flags** をクリックし、 **Beta** をクリックする。
 
 1. すべてのベータ機能が表示されます。 機能の有効／無効を切り替える。
 
@@ -43,9 +43,9 @@ Liferay DXP uses a badge to highlight beta features. See below: -->
 
 リリース機能を有効にするには
 
-1. *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) を開き、 *Control Panel* &rarr; *Instance Settings*に移動する。
+1. **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) を開き、 **Control Panel** &rarr; **Instance Settings** に移動する。
 
-1. Platform の下にある *Feature Flags* をクリックし、 *Release*をクリックする。
+1. Platform の下にある **Feature Flags** をクリックし、 **Release** をクリックする。
 
 1. すべてのリリースの特徴がリストアップされている。 機能の有効／無効を切り替える。
 
@@ -76,4 +76,4 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEX__UPPERCASEX__UPPERCASEX__MINUS__N
 ## 関連トピック
 
 * [セマンティック検索](../../using-search/liferay-enterprise-search/search-experiences/semantic-search.md)
-* [ベータ版の特徴](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)
+* [ベータ版の特徴](https://help.liferay.com/hc/ja/articles/12917247551757-Beta-Features)

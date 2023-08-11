@@ -5,7 +5,7 @@ Liferay Formsのフィールドは、 [データプロバイダー](../data-prov
 RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvider`拡張ポイントを使用して、独自のデータプロバイダーを作成します。
 
 ```{note}
-このデータプロバイダーの例では、[GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search)からXMLデータを消費します。 このサンプルには、Liferay社員のAPIキーがハードコードされています。
+このデータプロバイダーの例では、 [GeoDataSource™ Location Search Web Service](https://www.geodatasource.com/web-service/location-search) からXMLデータを消費します。 このサンプルには、Liferay社員のAPIキーがハードコードされています。
 サンプルを使いすぎないようにしてください。 本番環境では絶対に使用しないでください。
 ```
 
@@ -50,7 +50,7 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
    1. サイトメニューの［コンテンツとデータ］ &rarr; ［フォーム］を選択します。
 
-   1. ［データプロバイダー］タブを開き、_追加_ ボタンをクリックします。
+   1. ［データプロバイダー］タブを開き、 **追加** ボタンをクリックします。
 
       ![カスタムデータプロバイダがLiferay Formsで使用できるようになりました。](./writing-a-custom-data-provider/images/01.png)
 
@@ -64,7 +64,7 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
 
       ![カスタムデータプロバイダーを設定し、その出力を指定します。](./writing-a-custom-data-provider/images/02.png)
 
-   1. *［保存］*をクリックします。
+   1. ［**保存**］ をクリックします。
 
 1. Diamond Bar付近のデータプロバイダーを使用するフォームを追加します。
 
@@ -160,7 +160,7 @@ RESTデータプロバイダーが目的に合わない場合は、`DDMDataProvi
    ```
 
    ```{note}
-   `outputParameters` フィールドに加えて、 `inputParameters` フィールドも[DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java)で提供されます。
+   `outputParameters` フィールドに加えて、 `inputParameters` フィールドも [DDMDataProviderParameterSettings](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/data/provider/DDMDataProviderParameterSettings.java) で提供されます。
    ```
 
 ![データプロバイダー設定フォームは、作業の準備ができています。](./writing-a-custom-data-provider/images/05.png)

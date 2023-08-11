@@ -23,7 +23,7 @@ LiferayのHeadless Deliveryアプリケーションは、[掲示板](../../messa
 
 以下は、ヘッドレスAPIをデモするためのサンプルコードです。このコードには、サンプルのcURLファイルとJavaファイルの両方が含まれています。
 
-以下のコマンドを実行して、[サンプルコード](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip)をダウンロードし、解凍してください：
+以下のコマンドを実行して、 [サンプルコード](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip) をダウンロードし、解凍してください：
 
 ```bash
 curl https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip -O
@@ -45,7 +45,7 @@ javac -classpath .:* *.java
 
 プロジェクトには、依存関係として`com.liferay.headless.delivery.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
 
-提供されるコードには、 `MessageBoardSection`、 `MessageBoardThread` 、 `MessageBoardMessage` サービス用のAPIが含まれています。 含まれているサンプルAPIの一覧は、[Tutorial Code Reference](#tutorial-code-reference)をご参照ください。
+提供されるコードには、 `MessageBoardSection`、 `MessageBoardThread` 、 `MessageBoardMessage` サービス用のAPIが含まれています。 含まれているサンプルAPIの一覧は、 [Tutorial Code Reference](#tutorial-code-reference) をご参照ください。
 
 ```{important}
 提供されるコードは、デモのために基本認証を使用しています。 本番環境の場合は、[OAuth2](../../../headless-delivery/using-oauth2.md)を使用してユーザーを認証する必要があります。

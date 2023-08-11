@@ -24,9 +24,9 @@ LARを定期的にエクスポートすることは、バックアップ・ソ�
 
 以下の手順に従って、サイトのページとコンテンツをエクスポートしてください：
 
-1. *Product Menu* (![Product Menu](../../images/icon-product-menu.png)) を開き、 *Publishing*を展開し、 *Export*をクリックします。
+1. **Product Menu**(![Product Menu](../../images/icon-product-menu.png)) を開き、 **Publishing** を展開し、 **Export** をクリックします。
 
-1. *Add* (![Add Button](../../images/icon-add.png)) をクリックして、新しいエクスポート・プロセスを作成します。
+1. **Add**(![Add Button](../../images/icon-add.png)) をクリックして、新しいエクスポート・プロセスを作成します。
 
    エクスポートテンプレートが開きます。
 
@@ -36,15 +36,15 @@ LARを定期的にエクスポートすることは、バックアップ・ソ�
 
 1. エクスポートしたいサイトページとコンテンツを選択して、エクスポートプロセスを設定します。
 
-   *Pages*で、エクスポートに含めるページとページセットを選択できます。 また、テーマ設定、ロゴ、サイトページ設定、サイトテンプレート設定を含めるかどうかを決定することもできます。
+   **Pages** で、エクスポートに含めるページとページセットを選択できます。 また、テーマ設定、ロゴ、サイトページ設定、サイトテンプレート設定を含めるかどうかを決定することもできます。
 
-   *コンテンツ*で、エクスポートに含めるアプリケーションを選択できます。 また、選択したアプリケーションのすべてのデータをエクスポートするか、含まれるアプリケーションデータを日付または時間でフィルタリングするかを決定することもできます。
+   **コンテンツ** で、エクスポートに含めるアプリケーションを選択できます。 また、選択したアプリケーションのすべてのデータをエクスポートするか、含まれるアプリケーションデータを日付または時間でフィルタリングするかを決定することもできます。
 
-   *Permissions*で、エクスポートにページとコンテンツのパーミッションを含めるかどうかを決定します。
+   **Permissions** で、エクスポートにページとコンテンツのパーミッションを含めるかどうかを決定します。
 
-1. *［Export］*をクリックし、エクスポートプロセスを開始します。
+1. ［**Export**］ をクリックし、エクスポートプロセスを開始します。
 
-終了後、*ダウンロード*ボタン (![Download Button](../../images/icon-download.png))をクリックし、生成されたLARファイルをダウンロードします。 これでLARを別のLiferayサイトにインポートできます。
+終了後、 **ダウンロード** ボタン (![Download Button](../../images/icon-download.png))をクリックし、生成されたLARファイルをダウンロードします。 これでLARを別のLiferayサイトにインポートできます。
 
 ![LARファイルをダウンロードする。](./exporting-importing-site-pages-and-content/images/02.png)
 
@@ -60,17 +60,17 @@ LARを定期的にエクスポートすることは、バックアップ・ソ�
 
 以下の手順に従って、サイトのページとコンテンツをインポートしてください：
 
-1. *Product Menu* (![Product Menu](../../images/icon-product-menu.png)) を開き、 *Publishing*を展開し、 *Import*をクリックします。
+1. **Product Menu**(![Product Menu](../../images/icon-product-menu.png)) を開き、 **Publishing** を展開し、 **Import** をクリックします。
 
-1. *追加*ボタン（![Add Button](../../images/icon-add.png)）をクリックし、新規インポートプロセスを作成します。
+1. **追加** ボタン（![Add Button](../../images/icon-add.png)）をクリックし、新規インポートプロセスを作成します。
 
-1. 希望のLARファイルを追加し、 *［Continue］*をクリックします。
+1. 希望のLARファイルを追加し、 ［**Continue**］ をクリックします。
 
    ![LARファイルを追加し、 ［Continue］をクリックします。](./exporting-importing-site-pages-and-content/images/03.png)
 
 1. インポートプロセスを確認し、設定します。
 
-1. *［Import］*をクリックし、インポートを開始します。
+1. ［**Import**］ をクリックし、インポートを開始します。
 
    ![インポートプロセスを設定し、開始します。](./exporting-importing-site-pages-and-content/images/04.png)
 
@@ -78,19 +78,19 @@ LARを定期的にエクスポートすることは、バックアップ・ソ�
 
 サイトページのコンテンツをエクスポートするたびに手動でエクスポートプロセスを作成する代わりに、エクスポートテンプレートを作成してエクスポート設定を保存し、再利用することができます。 エクスポート・テンプレートを作成するには、以下の手順に従ってください：
 
-1. *Product Menu* (![Product Menu](../../images/icon-product-menu.png)) を開き、 *Publishing*を展開し、 *Export*をクリックします。
+1. **Product Menu**(![Product Menu](../../images/icon-product-menu.png)) を開き、 **Publishing** を展開し、 **Export** をクリックします。
 
-1. アプリケーション・バーの *オプション* ![Options Icon](../../images/icon-options.png) をクリックし、 *エクスポート・テンプレート*を選択する。
+1. アプリケーション・バーの **オプション** ![Options Icon](../../images/icon-options.png) をクリックし、 **エクスポート・テンプレート** を選択する。
 
    ![アプリケーションバーのActionsボタンをクリックし、Export Templatesを選択する。](./exporting-importing-site-pages-and-content/images/05.png)
 
-1. *追加* （![Add Button](../../images/icon-add.png)） をクリックします。
+1. **追加**（![Add Button](../../images/icon-add.png)） をクリックします。
 
 1. エクスポート・テンプレートに名前を付け、設定する。
 
-1. *［保存］*をクリックします。
+1. ［**保存**］ をクリックします。
 
-[エクスポート・プロセスの新規作成](#exporting-site-pages-and-content)の際に、テンプレートを選択できるようになりました。
+[エクスポート・プロセスの新規作成](#exporting-site-pages-and-content) の際に、テンプレートを選択できるようになりました。
 
 ## エクスポート/インポート・プロセスの設定
 

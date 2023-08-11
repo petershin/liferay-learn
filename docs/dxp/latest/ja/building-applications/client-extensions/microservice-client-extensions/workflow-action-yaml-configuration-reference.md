@@ -23,7 +23,7 @@ easy-oauth-application-user-agent:
 
 ワークフローアクションクライアント拡張は、Liferayのワークフローアクションによってトリガーされるリクエストを保護するためにOAuth2アプリケーションプロファイルを必要とします。 上記の例では、このプロファイルに対して、追加の[OAuth ユーザーエージェントクライアント拡張](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md)を定義しており、`oAuth2ApplicationExternalReferenceCode`プロパティは、そのクライアント拡張の `key` 値を参照しています。
 
-[サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot)では、ワークフローアクションクライアント拡張の追加を示しています。
+[サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) では、ワークフローアクションクライアント拡張の追加を示しています。
 
 ## YAML プロパティ
 

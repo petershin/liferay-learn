@@ -2,7 +2,7 @@
 
 テーマコントリビューターは、CSSおよびJavaScriptリソースを含み、それらを各ページに適用するモジュールです。 これらは特定のテーマから独立しており、テーマの特定のスタイルをオーバーライドしたり、互いにオーバーライドするように設定できます ページに個別のUIリソースを含め、それらを特定のテーマに含める場合は、代わりに[テーマレット](./bundling-and-installing-resources-into-your-theme-via-themelets.md)を使用してください。
 
-Liferay Portal/DXPの多くのメニューは、[サイトメニュー](../../../../../getting-started/navigating-dxp.md#site-menu)などのテーマコントリビューターとしてパッケージ化されています。
+Liferay Portal/DXPの多くのメニューは、 [サイトメニュー](../../../../../getting-started/navigating-dxp.md#site-menu) などのテーマコントリビューターとしてパッケージ化されています。
 
 ![サイトメニューは、テーマコントリビューターモジュールとして実装されています。](./bundling-independent-ui-resources-via-theme-contributors/images/01.png)
 
@@ -78,7 +78,7 @@ Liferay Portal/DXPの多くのメニューは、[サイトメニュー](../../..
 
 必要なCSSファイルやJavaScriptファイルは、モジュール内のサブフォルダに追加する必要があります。CSSファイルは `src/main/resources/META-INF/resources/css/` サブフォルダに属し、JavaScriptファイルは `src/main/resources/META-INF/resources/js/` サブフォルダに属します。
 
-テーマ投稿者の例では、各ページの背景を青くするために簡単なCSSスタイル変更を使っています。これは`src/main/resources/META-INF/resources/`にある[`custom.css`](./bundling-independent-ui-resources-via-theme-contributors/resources/liferay-w9m6.zip/w9m6-web/src/main/resources/META-INF/resources/custom.css)ファイルで行います：
+テーマ投稿者の例では、各ページの背景を青くするために簡単なCSSスタイル変更を使っています。これは`src/main/resources/META-INF/resources/`にある [`custom.css`](./bundling-independent-ui-resources-via-theme-contributors/resources/liferay-w9m6.zip/w9m6-web/src/main/resources/META-INF/resources/custom.css) ファイルで行います：
 
 ```css
 body, #wrapper {

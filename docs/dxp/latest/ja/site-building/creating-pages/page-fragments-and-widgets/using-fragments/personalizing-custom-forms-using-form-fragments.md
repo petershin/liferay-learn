@@ -1,6 +1,6 @@
 # フォームフラグメントを使ったカスタムフォームのパーソナライズ
 
-フォームフラグメントは、カスタムオブジェクトに基づいてフォームを自動生成します。 Liferay のすぐに使えるフォームフラグメントがあなたのユースケースを満たさない場合、 [カスタムフォームフラグメントをフィールドタイプ](#map-custom-form-fragments-to-form-fields)にマッピングすることで、カスタムフォームフラグメントを作成し、フォームのスタイルを変更することができます。
+フォームフラグメントは、カスタムオブジェクトに基づいてフォームを自動生成します。 Liferay のすぐに使えるフォームフラグメントがあなたのユースケースを満たさない場合、 [カスタムフォームフラグメントをフィールドタイプ](#map-custom-form-fragments-to-form-fields) にマッピングすることで、カスタムフォームフラグメントを作成し、フォームのスタイルを変更することができます。
 
 カスタムフォームフラグメントは、HTML、CSS、JavaScriptコードを使用して、カスタマイズされたスタイルと機能を持つ要素を作成します。 このように、既存のデザインシステムやコンポーネント・ライブラリを使用して、フォームをカスタマイズすることができます。 詳しくは [フォーム・フラグメントの作成](../../../developer-guide/developing-page-fragments/creating-form-fragments.md) を参照してください。
 
@@ -12,13 +12,13 @@
 
 フォームフィールドのデフォルトスタイルと機能を変更するには、 [カスタムフォームフラグメント](../../../developer-guide/developing-page-fragments/creating-form-fragments.md) をフィールドタイプにマッピングします：
 
-1. *Site Menu* ( ![Site Menu icon](../../../../images/icon-menu.png) ) を開き、 *Design* &rarr; *Fragments*をクリックする。
+1. **Site Menu**( ![Site Menu icon](../../../../images/icon-menu.png) ) を開き、 **Design** &rarr; **Fragments** をクリックする。
 
-1. Fragmentsアプリケーションで、アプリケーションバーの *Options* (![Options Icon](../../../../images/icon-options.png)) &rarr; *Configuration*をクリックします。
+1. Fragmentsアプリケーションで、アプリケーションバーの **Options**(![Options Icon](../../../../images/icon-options.png)) &rarr; **Configuration** をクリックします。
 
    ![フラグメントの設定メニューから、フラグメントをフィールドにマッピングすることができる。](./personalizing-custom-forms-using-form-fragments/01.png)
 
-1. フィールドタイプ（左列）に適用する *フォームフラグメント* （右列）を選択する。
+1. フィールドタイプ（左列）に適用する **フォームフラグメント**（右列）を選択する。
 
    ![カスタムフォームフラグメントをフィールドタイプに適用します。](./personalizing-custom-forms-using-form-fragments/02.png)
 

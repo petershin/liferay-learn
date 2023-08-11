@@ -11,7 +11,7 @@ Liferay の REST API を使ってリージョンを作成・管理します。
 
 次に、以下の手順を実行します。
 
-1. [Regions API Basics](./liferay-r2p3.zip)をダウンロードし、解凍します。
+1. [Regions API Basics](./liferay-r2p3.zip) をダウンロードし、解凍します。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-r2p3.zip -O

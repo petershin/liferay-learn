@@ -4,7 +4,7 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
 
 ここでは、 `aggregatedTerms` パラメーターを、基本的なカスタムオブジェクトと一緒に使用します。
 
-先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。
+先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
 
 ## Liferayインスタンスのセットアップ
 
@@ -13,9 +13,9 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
 
 次に、以下の手順に従って、このチュートリアルで使用する基本的なオブジェクトを [作成](../../creating-and-managing-objects/creating-objects.md)してください：
 
-1. [グローバルメニュー](../../../../../images/icon-applications-menu.png))を開き、[コントロールパネル](*Control Panel*)タブに移動し、[オブジェクト](*Objects*)をクリックします。
+1. [グローバルメニュー](../../../../../images/icon-applications-menu.png) )を開き、 [コントロールパネル](**Control Panel**) タブに移動し、 [オブジェクト](**Objects**) をクリックします。
 
-1. *追加*ボタン(![ボタンの追加](../../../../images/icon-add.png))をクリックし、以下の値を入力します：
+1. **追加** ボタン(![ボタンの追加](../../../../images/icon-add.png))をクリックし、以下の値を入力します：
 
    | フィールド | 値 |
    | :--- | :--- |
@@ -23,14 +23,14 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
    | 複数形のラベル | `Ables` |
    | 名前 | `Able` |
 
-1. 新しい*オブジェクト*ドラフトを選択し、*フィールド*タブに移動して、以下のテキストフィールドを追加する：
+1. 新しい **オブジェクト** ドラフトを選択し、 **フィールド** タブに移動して、以下のテキストフィールドを追加する：
 
    | ラベル | フィールド名 | タイプ | 必須
    | :--- | :--- | :--- | :--- |
    | 名前(Name) | テキスト(Text) | &#10004; | 説明(Description)
    | 説明
 
-1. *Details*タブに移動し、[*Publish*](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts)をクリックします。
+1. **Details** タブに移動し、 [**Publish**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) をクリックします。
 
    ```{important}
    このチュートリアルでは、上記の値を使用する必要があります。

@@ -5,7 +5,7 @@
 * [Custom JSON Element](#using-the-custom-json-elements) を使用して、Search Blueprints [Query Builder](../creating-and-managing-search-blueprints.md#using-the-query-builder) から Element を作成します。
 * [Add Element source editor](#using-the-add-element-source-editor) を使用すると、便利なプレビュー機能やシステム内の定義済みテンプレート変数のリストを含む、より堅牢なエレメントエディタを使ってエレメントを記述することができます。
 * [システムエレメント](./managing-elements.md) を複製して、独自のカスタムエレメントを開発しましょう。
-* [Elasticsearch query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl.html)を使い慣れていて、Elasticsearchクエリに基づいて素早く要素を作成する必要がある場合は、[Paste Any Elasticsearch Query system Element](../search-blueprints-elements-reference.md#paste-any-elasticsearch-query) を使ってください。
+* [Elasticsearch query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl.html) を使い慣れていて、Elasticsearchクエリに基づいて素早く要素を作成する必要がある場合は、 [Paste Any Elasticsearch Query system Element](../search-blueprints-elements-reference.md#paste-any-elasticsearch-query) を使ってください。
 
 ## カスタムJSON要素の使用
 

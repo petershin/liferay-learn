@@ -9,7 +9,7 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
 
 次に、以下の手順を実行します。
 
-1. [Categories and Vocabulary API Basics](./liferay-p7s4.zip)をダウンロードして解凍します。
+1. [Categories and Vocabulary API Basics](./liferay-p7s4.zip) をダウンロードして解凍します。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/site-building/site-navigation/developer-guide/liferay-p7s4.zip -O
@@ -19,7 +19,7 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
    unzip liferay-p7s4.zip
    ```
 
-2. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data)。 これは、以下のさまざまなサービス呼び出しで使用します。
+2. [サイトのIDを検索します](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) 。 これは、以下のさまざまなサービス呼び出しで使用します。
 
 3. cURLスクリプトを使用して、サイトに新しいナビゲーションメニューを追加します。 コマンドラインで、`curl`フォルダに移動します。 サイトIDをパラメーターとして使用して、`NavigationMenu_POST_ToSite.sh`スクリプトを実行します。
 
@@ -48,7 +48,7 @@ LiferayのREST APIは、Liferayのナビゲーションメニューにサービ�
    }
    ```
 
-4. *［Administration Menu］* &rarr; *［サイトビルダー］* &rarr; *［Navigation Menus］*に移動して、ナビゲーションメニューアプリケーションに移動します。 新しいナビゲーションメニューが追加されたことを確認してください。
+4. ［**Administration Menu**］ &rarr; ［**サイトビルダー**］ &rarr; ［**Navigation Menus**］ に移動して、ナビゲーションメニューアプリケーションに移動します。 新しいナビゲーションメニューが追加されたことを確認してください。
 
     ![新しいナビゲーションメニューが追加されたことを確認してください。](./navigation-menu-api-basics/images/01.png)
 
@@ -115,7 +115,7 @@ main``メソッドのコメントでは、クラスの実行を実演してい�
 他の例のJavaクラスはこれと類似していますが、異なる`NavigationMenuResource`メソッドを呼び出します。
 
 ```{important}
-サービスの詳細は、[NavigationMenuResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/NavigationMenuResource.java)を参照してください。
+サービスの詳細は、 [NavigationMenuResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/NavigationMenuResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って、他の`NavigationMenu` RESTサービスを呼び出す例です。

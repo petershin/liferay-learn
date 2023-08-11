@@ -21,7 +21,7 @@ easy-oauth-application-user-agent:
 
 オブジェクトアクションクライアント拡張は、Liferayのオブジェクトアクションによって引き起こされるリクエストを保護するためにOAuth2アプリケーションプロファイルを必要とします。 `client-extension.yaml`は、このプロファイルのための追加の[OAuth ユーザーエージェントクライアント拡張](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md)を定義し、`oAuth2ApplicationExternalReferenceCode`プロパティは、そのクライアント拡張の `key`値を参照します。
 
-[サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot)では、オブジェクトアクションクライアント拡張の追加を示しています。
+[サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) では、オブジェクトアクションクライアント拡張の追加を示しています。
 
 ## YAML プロパティ
 

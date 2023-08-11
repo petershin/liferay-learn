@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay 7.4 U45+/GA45+で利用可能`
 
-テーマスプライトマップクライアント拡張機能を使えば、ページ上のアイコンに使われるデフォルトの [Clay](https://clayui.com/docs/components/icon.html) スプライトマップを上書きすることができます。 [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)から、クライアント拡張を構築し、デプロイします。
+テーマスプライトマップクライアント拡張機能を使えば、ページ上のアイコンに使われるデフォルトの [Clay](https://clayui.com/docs/components/icon.html) スプライトマップを上書きすることができます。 [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) から、クライアント拡張を構築し、デプロイします。
 
 ```{note}
 SVGスプライトマップは、いくつかのアイコンがグループ化された画像であり、それぞれ固有のIDを持つ。 SVGを読み込み、IDで個々のアイコンを参照することができる。 これにより、スプライト・マップを一度ダウンロードしてキャッシュすれば、すべてのサイト・アイコンを表示できるため、パフォーマンスが若干向上する。
@@ -15,7 +15,7 @@ SVGスプライトマップは、いくつかのアイコンがグループ化�
 1. Java（JDK8またはJDK11）をインストールします。
 
     ```{note}
-    対応するJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。 
+    対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。 
     ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -41,7 +41,7 @@ liferay-sample-theme-spritemap-1:
     url: spritemap.svg
 ```
 
-クライアント拡張機能のIDは `liferay-sample-theme-spritemap-1` で、追加するスプライトマップファイルの種類など、テーマのスプライトマップクライアント拡張機能の主な設定が含まれています。 利用可能なプロパティの詳細については、 [Theme Sprite Map YAML Configuration Reference](../theme-sprite-map-yaml-configuration-reference.md)。
+クライアント拡張機能のIDは `liferay-sample-theme-spritemap-1` で、追加するスプライトマップファイルの種類など、テーマのスプライトマップクライアント拡張機能の主な設定が含まれています。 利用可能なプロパティの詳細については、 [テーマのスプライトマップYAML設定リファレンス](../theme-sprite-map-yaml-configuration-reference.md) 。
 
 また、以下の`assemble` YAMLブロックも含まれています。
 
@@ -135,17 +135,17 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 
 配置したクライアント拡張機能を使用するようにページを設定します：
 
-1. ページに移動し、上部にある _Edit_ (![Edit icon](../../../../images/icon-edit-pencil.png)) をクリックします。
+1. ページに移動し、上部にある **Edit**(![Edit icon](../../../../images/icon-edit-pencil.png)) をクリックします。
 
-1. サイドバーの「ページデザインオプション」メニュー（![Page Design Options icon](../../../../images/icon-format.png)）に移動し、メニュー上部の「 _設定」_ （![Configuration icon](../../../../images/icon-cog3.png)）をクリックします。
+1. サイドバーの「ページデザインオプション」メニュー（![Page Design Options icon](../../../../images/icon-format.png)）に移動し、メニュー上部の「**設定**」（![Configuration icon](../../../../images/icon-cog3.png)）をクリックします。
 
-1. Theme Sprite Map Client Extensionセクションで、 _Add_ (![Add](../../../../images/icon-duplicate.png)) をクリックします。
+1. Theme Sprite Map Client Extensionセクションで、 **Add**(![Add](../../../../images/icon-duplicate.png)) をクリックします。
 
-1. _Liferay Sample Theme Spritemap 1_.
+1. **Liferay Sample Theme Spritemap 1** .
 
    ![Liferay Sample Theme Spritemap 1 client extensionを選択し、Saveをクリックします。](./using-a-theme-spritemap-client-extension/images/05.gif)
 
-1. 下にスクロールして、_［保存］_をクリックします。
+1. 下にスクロールして、 ［**保存**］ をクリックします。
 
 1. ページに戻ります。 ナビバーでは、編集機能の鉛筆 (![Edit icon](../../../../images/icon-edit-pencil.png)) の代わりに魚のアイコンが追加されました。
 

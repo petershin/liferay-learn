@@ -4,11 +4,11 @@
 
 次の手順に従って、`DispatchTaskExecutor`インターフェースの独自の実装を作成します。
 
-1. **OSGIコンポーネント**：`@Component`アノテーションを使用して、OSGiフレームワーク内でモジュールをコンポーネントとして宣言します。
+1. **OSGIコンポーネント** ：`@Component`アノテーションを使用して、OSGiフレームワーク内でモジュールをコンポーネントとして宣言します。
 
-1. **サービス**：モジュールを`@Component`アノテーション内の`DispatchTaskExecutor.class`サービスとして識別します。
+1. **サービス** ：モジュールを`@Component`アノテーション内の`DispatchTaskExecutor.class`サービスとして識別します。
 
-1. **OSGiプロパティ**：次のプロパティを`@Component`アノテーションに追加します。
+1. **OSGiプロパティ** ：次のプロパティを`@Component`アノテーションに追加します。
 
    * `dispatch.task.executor.name`: ジョブスケジューラーのUIで実行者名に使用される文字列を定義します。
 
@@ -22,7 +22,7 @@
       正しいエグゼキュータが一致するように、値は一意である必要があります。 値が一意でない場合、ログには起動時にエラーが表示され、同じプロパティ値を持つエグゼキュータが示されます。
       ```
 
-1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java)：`DispatchTaskExecutor`インターフェースを実装するか、その実装を拡張します（`BaseDispatchTaskExecutor`など）。
+1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) ：`DispatchTaskExecutor`インターフェースを実装するか、その実装を拡張します（`BaseDispatchTaskExecutor`など）。
 
       ```{important}
       DispatchTaskExecutor` インターフェイスの実装では、ジョブスケジューラタスクのステータスログを扱わなければならない。
@@ -30,7 +30,7 @@
       便宜上、Liferay は `BaseDispatchTaskExecutor` abstract [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/BaseDispatchTaskExecutor.java) を提供し、ジョブスケジューラタスクのステータスを `IN PROGRESS`, `SUCCESSFUL`, `FAILED` のいずれかで記録します。
       ```
 
-1. **メソッド**：`DispatchTaskExecutor`インターフェースを直接実装している場合は、`execute()`メソッドをオーバーライドしてカスタムロジックを実装します。 代わりに、`BaseDispatchTaskExecutor`抽象クラスを拡張する場合は、その`doExecute()`メソッドをオーバーライドします。
+1. **メソッド** ：`DispatchTaskExecutor`インターフェースを直接実装している場合は、`execute()`メソッドをオーバーライドしてカスタムロジックを実装します。 代わりに、`BaseDispatchTaskExecutor`抽象クラスを拡張する場合は、その`doExecute()`メソッドをオーバーライドします。
 
    ```{note}
    `getName()`メソッドは廃止予定となり、`dispatch.task.executor.name`プロパティに置き換えられました。
@@ -82,7 +82,7 @@
 
    ![新しいテンプレートを使って新しいジョブスケジューラタスクを追加します。](./creating-a-new-job-scheduler-task-executor/images/01.png)
 
-   タスクを作成したら、*［Run Now］*をクリックします。
+   タスクを作成したら、 ［**Run Now**］ をクリックします。
 
    ![新しいジョブスケジューラタスクの［今すぐ実行］をクリックします。](./creating-a-new-job-scheduler-task-executor/images/02.png)
 
@@ -92,7 +92,7 @@
    INFO [liferay/dispatch/executor-2][S7A3DispatchTaskExecutor:30] Invoking #doExecute(DispatchTrigger, DispatchTaskExecutorOutput)
    ```
 
-   また、タスクをクリックし、 *Logs* タブに移動して、過去のすべての実行のリストを見ることもできます。
+   また、タスクをクリックし、 **Logs** タブに移動して、過去のすべての実行のリストを見ることもできます。
 
    ![ジョブスケジューラタスクのログを表示、管理します。](./creating-a-new-job-scheduler-task-executor/images/03.png)
 

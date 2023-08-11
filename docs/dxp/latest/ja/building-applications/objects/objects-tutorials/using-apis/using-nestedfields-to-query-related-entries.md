@@ -5,10 +5,10 @@
 `nestedFields` パラメータは、Liferay が1つの GET リクエストで複数のレベルの関連オブジェクトエントリを返すようにします。 `nestedFields` パラメータに、クエリに含めるリレーションシップ名をコンマで区切って渡します： `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. リレーションシップが複数のレベルにまたがる場合は、 `nestedFieldsDepth` パラメータを必要な深さに設定します。 最大5レベルまで含めることができる（例： `nestedFieldsDepth=5`）。
 
 ```{tip}
-nestedFields` パラメータは、複数のリクエストを必要とするような関連するエントリを取得することで、リクエストを最適化します。 関連するエントリーのみを返すために、Liferayは専用の[関連API](./../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を提供します。 概要については、[関連REST APIの利用](./using-relationship-rest-apis.md)を参照してください。
+nestedFields` パラメータは、複数のリクエストを必要とするような関連するエントリを取得することで、リクエストを最適化します。 関連するエントリーのみを返すために、Liferayは専用の [関連API](./../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を提供します。 概要については、[関連REST APIの利用](./using-relationship-rest-apis.md)を参照してください。
 ```
 
-続行するには、新しいLiferay 7.4インスタンスを[セットアップ](#setting-up-a-liferay-instance)し、提供されたチュートリアルコードを[準備](#preparing-the-sample-code)します。 次に、 [スクリプトを実行する。](#creating-and-querying-related-object-entries) 関連エントリーを作成し、 `nestedFields` パラメーターを使用してクエリーする。
+続行するには、新しいLiferay 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。 次に、 [スクリプトを実行する。](#creating-and-querying-related-object-entries) 関連エントリーを作成し、 `nestedFields` パラメーターを使用してクエリーする。
 
 ## Liferayインスタンスのセットアップ
 
@@ -19,7 +19,7 @@ nestedFields` パラメータは、複数のリクエストを必要とするよ
 
 ### 関連オブジェクト定義の作成
 
-1. グローバル・メニュー(![グローバル・メニュー](../../../../images/icon-applications-menu.png))を開き、[コントロール・パネル(*Control Panel*)]タブに移動し、[オブジェクト(*Objects*)]をクリックします。
+1. グローバル・メニュー(![グローバル・メニュー](../../../../images/icon-applications-menu.png))を開き、[コントロール・パネル(**Control Panel**)]タブに移動し、[オブジェクト(**Objects**)]をクリックします。
 
 1. [Create](../../creating-and-managing-objects/creating-objects.md) 3つのオブジェクトドラフトを作成します。
 

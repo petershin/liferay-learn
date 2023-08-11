@@ -6,7 +6,7 @@ LiferayのTalend Open Studio用コンポーネントは、Liferay DXP/PortalとM
 
 ## 前提条件
 
-Liferay コンポーネントのインストールには、JDK 1.8+、Apache Maven 3.3+、および [DXP/Portal コード](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/etl/talend)のローカルコピーが必要です。 また、 [Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) [Components API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) が既にインストールされている必要があります。
+Liferay コンポーネントのインストールには、JDK 1.8+、Apache Maven 3.3+、および [DXP/Portal コード](https://github.com/liferay/liferay-portal/tree/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/etl/talend) のローカルコピーが必要です。 また、 [Talend Open Studio 7.1.1](https://download-mirror2.talend.com/esb/release/V7.1.1/TOS_ESB-20181026_1147-V7.1.1.zip) [Components API v0.25.3](https://artifacts-oss.talend.com/nexus/content/repositories/TalendOpenSourceRelease/org/talend/components/components-api/0.25.3/) が既にインストールされている必要があります。
 
 ## Talend Open Studioの構成
 
@@ -73,7 +73,7 @@ Mavenビルドが成功したら、以下の手順に従ってTalend Open Studio
 
 1. `com.liferay.talend`, `com.liferay.talend.common`, and `com.liferay.talend.runtime` フォルダーをローカルの `$USER_HOME/.m2/repository/com/liferay/` フォルダーから `$TOS_ROOT/configuration/.m2/repository/com/liferay/` フォルダーにコピーします。
 
-1. Talend Open Studioを起動します。 Liferay コンポーネントは *Business* &rarr; *Liferay* *Palette* タブの下に表示されます。
+1. Talend Open Studioを起動します。 Liferay コンポーネントは **Business** &rarr; **Liferay***Palette** タブの下に表示されます。
 
    ![コンポーネントはPaletteタブのBusiness &rarr; Liferayの下に表示されます。](liferay-talend-components-overview/images/01.png)
 

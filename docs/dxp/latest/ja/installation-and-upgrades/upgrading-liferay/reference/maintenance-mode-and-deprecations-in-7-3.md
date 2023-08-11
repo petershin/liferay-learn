@@ -1,10 +1,10 @@
 # 7.3のメンテナンスモードと非推奨
 
-新しいDXPのリリースごとに、機能の継続的な拡張が保証されない場合や、廃止される可能性があります。 機能の拡張を停止すると、その機能は*メンテナンスモード*に入ります。
+新しいDXPのリリースごとに、機能の継続的な拡張が保証されない場合や、廃止される可能性があります。 機能の拡張を停止すると、その機能は **メンテナンスモード** に入ります。
 
 **メンテナンスモード：** この機能はサポートされていますが、拡張は行われません。
 
-廃止された機能は最終的に削除されるか、より新しい、より優れた機能に置き換えられます。 廃止された機能のサポートを終了する前に、Liferayはそれを*廃止予定*とマークします。
+廃止された機能は最終的に削除されるか、より新しい、より優れた機能に置き換えられます。 廃止された機能のサポートを終了する前に、Liferayはそれを **廃止予定** とマークします。
 
 **廃止予定：** この機能は、次のマイナーバージョンのリリースでサポートされなくなります。
 
@@ -53,7 +53,7 @@
 | プロジェクトテンプレート：project-templates-activator          | [GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions) にアーカイブ済み                                                                                        | 置換はありません。                                                                                                                                                                |
 | プロジェクトテンプレート：project-templates-freemarker-portlet | [GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions) にアーカイブ済み                                                                                        | 置換はありません。                                                                                                                                                                |
 | Screens                                           | Github - iOS： [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0) 、Android： [5.1.0](https://github.com/liferay/liferay-screens/releases/tag/5.1.0-android) | [モバイルSDK](https://help.liferay.com/hc/ja/articles/360020447511-Mobile-SDK) および[ヘッドレスAPI](../../../headless-delivery/using-liferay-as-a-headless-platform.md)を使用してください。 |
-| *ツール* カテゴリの検索ウィジェット（クラシック）                        | バンドル                                                                                                                                                                         | 7.1で廃止。 *検索機能*カテゴリの[検索機能ウィジェット](../../../using-search/search-pages-and-widgets/search-results/search-results.md)に置き換えられました。                                              |
+| **ツール** カテゴリの検索ウィジェット（クラシック）                        | バンドル                                                                                                                                                                         | 7.1で廃止。 **検索機能** カテゴリの[検索機能ウィジェット](../../../using-search/search-pages-and-widgets/search-results/search-results.md)に置き換えられました。                                              |
 | SOAP Webサービス                                      | バンドル（無効）                                                                                                                                                                     | Axis サーブレット (例：`http://localhost:8080/api/axis/`にサービスを公開する) は、このポータルプロパティ設定`axis.servlet.enabled`で有効にすることができます。 Liferayの`*SOAP`クラスは廃止されます。                               |
 | テーマ：Fjord                                         | アーカイブ済み                                                                                                                                                                      | 直接の置換はありません。                                                                                                                                                             |
 | テーマ：Hello World                                   | バンドル                                                                                                                                                                         | 直接の置換はありません。                                                                                                                                                             |

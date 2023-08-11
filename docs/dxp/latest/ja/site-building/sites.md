@@ -29,7 +29,7 @@ sites/default-site-applications.md
 ```{note}
 サイトレベルで作成されたページ、コンテンツ、その他のアプリケーション・データは、そのサイトにスコープされ、一般的にサイト間で共有することはできません。 ただし、一部のデータは[階層内のサイト](./sites/site-hierarchies.md)間で共有できる。 
 
-また、サイト・レベルのコンフィギュレーションは、システム・レベルとインスタンス・レベルのコンフィギュレーションをオーバーライドする。 詳しくは [Understanding Configuration Scope](../system-administration/configuring-liferay/understanding-configuration-scope.md) を参照してください。
+また、サイト・レベルのコンフィギュレーションは、システム・レベルとインスタンス・レベルのコンフィギュレーションをオーバーライドする。 詳しくは [設定スコープについて](../system-administration/configuring-liferay/understanding-configuration-scope.md) を参照してください。
 ```
 
 ::::{grid} 2
@@ -66,4 +66,4 @@ sites/default-site-applications.md
 
 ## コマース・サイトの利用
 
-Liferayサイトは、 [チャンネル](https://learn.liferay.com/commerce/latest/en/store-management/channels.html) 、eコマースストアを作成するために使用されます。 各チャネルのサイトタイプ（B2B、B2C、B2Xなど）は、サイトがアカウントとどのように連携するかを決定する。 詳しくは [コマースサイトの種類](https://learn.liferay.com/commerce/latest/en/starting-a-store/sites-and-site-types.html) をご覧ください。
+Liferayサイトは、 [チャンネル](https://learn.liferay.com/commerce/latest/ja/store-management/channels.html) 、eコマースストアを作成するために使用されます。 各チャネルのサイトタイプ（B2B、B2C、B2Xなど）は、サイトがアカウントとどのように連携するかを決定する。 詳しくは [サイトとサイトのタイプ](https://learn.liferay.com/commerce/latest/ja/starting-a-store/sites-and-site-types.html) をご覧ください。

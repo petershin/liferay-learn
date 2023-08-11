@@ -8,7 +8,6 @@ toc:
   - ./using-fragments/editing-fragment-elements.md
   - ./using-fragments/personalizing-custom-forms-using-form-fragments.md
   - ./using-fragments/creating-dropdown-menus-with-fragments.md
-  - ./using-fragments/using-date-fragments.md
   - ./using-fragments/duplicating-fragments.md
   - ./using-fragments/saving-fragment-compositions.md
   - ./using-fragments/managing-fragments.md
@@ -28,7 +27,6 @@ using-fragments/configuring-fragment-visibility.md
 using-fragments/editing-fragment-elements.md
 using-fragments/personalizing-custom-forms-using-form-fragments.md
 using-fragments/creating-dropdown-menus-with-fragments.md
-using-fragments/using-date-fragments.md
 using-fragments/duplicating-fragments.md
 using-fragments/saving-fragment-compositions.md
 using-fragments/managing-fragments.md
@@ -80,10 +78,6 @@ After adding fragments to a page or template, you can configure and customize th
 
 :::{grid-item-card} Creating Dropdown Menus with Fragments
 :link: ./using-fragments/creating-dropdown-menus-with-fragments.md
-:::
-
-:::{grid-item-card} Using Date Fragments
-:link: ./using-fragments/using-date-fragments.md
 :::
 
 :::{grid-item-card} Duplicating Fragments

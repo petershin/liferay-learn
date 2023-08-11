@@ -314,7 +314,7 @@ Fragments with the `localizable` attribute that do not specify a custom configur
 
 ## Using Date Fragments
 
-You can customize and localize date formats using date fragments by including the `data-lfr-editable-id="date-time"` and `data-lfr-editable-type="date-time"` attributes to the fragment. `data-lfr-editable-id` must be a unique ID, like this example:
+Customizing date formats to represent local formats can be a challenge in many contexts. You can customize and localize date formats using date fragments by including the `data-lfr-editable-id="date-time"` and `data-lfr-editable-type="date-time"` attributes in the fragment. `data-lfr-editable-id` must be a unique ID, like this example:
 
 ```html
 <div data-lfr-editable-type="date-time" data-lfr-editable-id="date-time">
@@ -322,7 +322,34 @@ You can customize and localize date formats using date fragments by including th
 </div>
 ```
 
-See [Using Date Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/using-date-fragments.md) for more information.
+### Date Formats
+
+You can choose the most common date formats out-of-the-box or customize your date format following [Oracle's date format rules](https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html).
+
+There are four out-of-the-box options available:
+
+| Date Format | How it looks |
+| :--- | :--- |
+| MM/DD/YY | 08/07/23  |
+| DD/MM/YY | 07/08/23  |
+| YY/MM/DD | 23/08/07  |
+| DD/MM/YYYY | 07/08/2023  |
+
+If you choose to customize your date format, you can include different date and time patterns (e.g. era designator, time zone, and day name in the week).
+
+Here are some examples:
+
+| Date Format | How it looks |
+| :--- | :--- |
+| MMMM dd, YYYY. hh:mm a | August 07, 2023. 11:57 AM  |
+| MM.dd.YY | 08.07.23  |
+| hh 'o''clock' a, zzzz | 11 o'clock AM, Greenwhich Mean Time |
+| KK:mm a, z| 11:57 AM, GMT  |
+| EEE, d MMM yyyy HH:mm:ss Z | Mon, 7 Aug 2023 11:57:00 +0000 |
+
+```{tip}
+You can localize the date format the same way you [localize fragment configuration fields](#localizing-fragment-configurations).
+```
 
 ## Related Topics
 

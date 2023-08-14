@@ -4,7 +4,7 @@
 
 この用語に馴染みのない人のために説明すると、データ充実化ツールは、見込み客のための専門的な電子メールや直通電話番号を提供する。
 
-人気のあるベンダーには、 [ZoomInfo](https://www.zoominfo.com)、 [Lusha](https://www.lusha.com)、 [Cognism](https://www.cognism.com)などがある。
+人気のあるベンダーには、 [ZoomInfo](https://www.zoominfo.com) 、 [Lusha](https://www.lusha.com) 、 [Cognism](https://www.cognism.com) などがある。
 
 ## よくある間違い
 

@@ -56,6 +56,6 @@ GAINクレジットは旧来のソリューションでこうした問題に直�
 
 すぐに使える機能とカスタマイズの両方を備えたLiferayソリューションにより、マーケティング担当者やコンテンツ制作者は、ログインして素早く変更を加えることができます。 別のサーバーにホストされ、ウェブサイトはLiferayのヘッドレスAPIを通じてコンテンツの変更を取得します。 ヘッドレスAPIにより、開発者はLiferayのアーキテクチャを邪魔することなく簡単にカスタマイズすることができます。 マーケティング担当者やコンテンツ制作者は、Liferayのユーザーフレンドリーな編集インターフェイスを使ってコンテンツに変更を加えることができます。
 
-詳しくはliferay.comの [GAIN Credit](https://www.liferay.com/web/guest/resources/case-studies/gain-credit)。
+詳しくはliferay.comの [GAIN Credit](https://www.liferay.com/web/guest/resources/case-studies/gain-credit) 。
 
 次へ [サプライヤーポータル](./supplier-portals.md).

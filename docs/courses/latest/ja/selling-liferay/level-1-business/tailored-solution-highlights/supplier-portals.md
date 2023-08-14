@@ -52,6 +52,6 @@ Liferayは、シンプルなものから複雑なものまで、多くのビジ�
 
 アドバンスト・エナジー社は、Liferayのローコード・ノーコード機能を使用して、多様なサプライヤーのオンボーディング・プロセスを合理化し、Liferayのワークフロー管理ツールを使用して、社内のさまざまな複雑なプロセスを自動化しました。
 
-より詳細な情報については、liferay.comの [Advanced Energy](https://www.liferay.com/resources/case-studies/advanced-energy)。
+より詳細な情報については、liferay.comの [Advanced Energy](https://www.liferay.com/resources/case-studies/advanced-energy) 。
 
 次へ [パートナー・ポータル](./partner-portals.md).

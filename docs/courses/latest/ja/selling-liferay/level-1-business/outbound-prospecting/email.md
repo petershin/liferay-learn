@@ -2,9 +2,9 @@
 
 すべての売り手が習得すべき最初のツールはEメールだ。
 
-コンサルティング会社 [マッキンゼー & カンパニー](https://www.google.com/url?q=https://hbr.org/2019/01/how-to-spend-way-less-time-on-email-every-day%23:~:text%3DThe%2520average%2520professional%2520spends%252028,120%2520messages%2520received%2520per%2520day&sa=D&source=docs&ust=1687919492251304&usg=AOvVaw0uat-Hvtk6TpeCueTEK1G_)によると、平均的な社会人は1日におよそ120通の電子メールを受け取っている。
+コンサルティング会社 [マッキンゼー & カンパニー](https://www.google.com/url?q=https://hbr.org/2019/01/how-to-spend-way-less-time-on-email-every-day%23:~:text%3DThe%2520average%2520professional%2520spends%252028,120%2520messages%2520received%2520per%2520day&sa=D&source=docs&ust=1687919492251304&usg=AOvVaw0uat-Hvtk6TpeCueTEK1G_) によると、平均的な社会人は1日におよそ120通の電子メールを受け取っている。
 
-さらに、営業エンゲージメント・プラットフォーム会社 [Outreach](https://www.google.com/url?q=https://www.outreach.io/assets/resources/Outreach_PersonalizingProspectEmails_Final.pdf?utm_medium%3DWeb%26utm_source%3DWeb%2520Direct&sa=D&source=docs&ust=1687919492261815&usg=AOvVaw0ZLsBsDfg1bfPBfYGSNfYB)のデータサイエンス・チームによると、コールドメールの平均返信率は1％未満だという。
+さらに、営業エンゲージメント・プラットフォーム会社 [Outreach](https://www.google.com/url?q=https://www.outreach.io/assets/resources/Outreach_PersonalizingProspectEmails_Final.pdf?utm_medium%3DWeb%26utm_source%3DWeb%2520Direct&sa=D&source=docs&ust=1687919492261815&usg=AOvVaw0ZLsBsDfg1bfPBfYGSNfYB) のデータサイエンス・チームによると、コールドメールの平均返信率は1％未満だという。
 
 これはLiferayの見込み客にとって何を意味するかというと、彼らは電子メールを浴びせかけられ、売り手として見込み客の注意を引くために何百もの他者と競争しているということです。 そのため、Eメールでのコミュニケーション方法が他と一線を画していることが肝要だ。
 
@@ -52,12 +52,12 @@
 
 次の例は、効果的なEメールメッセージの例です：
 
-* **** \
-  顧客はより多くのことを期待しているが、限られた予算でどのようにサービスを提供できるか？
+* **サービスコストの削減をお手伝いします** \
+顧客はより多くのことを期待していますが、限られた予算でどうやって成果を実現できるでしょうか?
 * **異種システムの痛みを軽減** \
-  買収による成長は多くの課題をもたらす
-* **営業チームを強化する方法を学ぶ** \
-  顧客ポータルは営業チームの代わりではなく、営業チームを成功に導く触媒であるべきだ。
+買収による成長には多くの課題が伴う
+* **営業チームに力を与える方法を学びましょう** \
+カスタマー ポータルは営業チームに代わるものではありません。営業チームの成功を促進する触媒である必要があります。
 
 ### ビジネス課題の解決
 

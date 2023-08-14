@@ -67,8 +67,8 @@
 * 金融サービス
   * ベースデッキ
 
-Liferayの社員向けには、 [Alexandria](https://sales.liferay.com)のSales Decksセクションにすべてのデッキが用意されている。
+Liferayの社員向けには、 [Alexandria](https://sales.liferay.com) のSales Decksセクションにすべてのデッキが用意されている。
 
-パートナーの皆様には、すべてのスライドパックを [パートナーポータル](https://partner.liferay.com)でご覧いただけます。
+パートナーの皆様には、すべてのスライドパックを [パートナーポータル](https://partner.liferay.com) でご覧いただけます。
 
 次のモジュールでは、 [セールスファネルとオポチュニティプログレスのベストプラクティス](../sales-funnel-opportunity-progress.md)について学びます。

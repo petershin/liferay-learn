@@ -56,9 +56,9 @@ Liferayの水平ポータルレガシーは、複数の業界にわたる多く�
 * [ローコード／ノーコード・アプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
 * [データモデリング & プロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
 * [コマース](https://learn.liferay.com/w/commerce/index)
-* [アナリティクス ](https://learn.liferay.com/web/guest/w/analytics-cloud/index) & \[Optimization\](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard)
+* [アナリティクス ](https://learn.liferay.com/web/guest/w/analytics-cloud/index) & \ [Optimization\](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard)
 * [セグメンテーション & パーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [検索](https://learn.liferay.com/w/dxp/using-search) & \[Navigation\](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [検索](https://learn.liferay.com/w/dxp/using-search) & \ [Navigation\](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 * [ヘッドレスAPI & マルチチャンネル](https://learn.liferay.com/w/dxp/headless-delivery)
 * [コラボレーション & 知識共有](https://learn.liferay.com/w/dxp/collaboration-and-social)
 * [アイデンティティ管理 & アクセス・コントロール](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
@@ -69,7 +69,7 @@ Liferayの水平ポータルレガシーは、複数の業界にわたる多く�
 
 先に述べた水平方向のソリューションはすべて、これらの機能を活用している。 これらのOOTB機能により、LiferayはDXP分野における強力なプレーヤーとなっている。
 
-詳細については、 [Liferay DXP Product Capabilities](../level-0/liferay-product-overview.md) モジュールを参照してください。
+詳細については、 [Liferay DXP製品の機能](../level-0/liferay-product-overview.md) モジュールを参照してください。
 
 各タイルをクリックすると、Liferayで最も一般的な6つの水平ソリューションの詳細を読むことができます。 それぞれのケースで
 

@@ -4,7 +4,7 @@ Liferayは長年にわたり、公共部門の顧客が政府のデジタルト�
 
 Liferayは、有権者の期待に応えるデジタル体験を提供することで、省庁がミッションの遂行を改善できるよう支援します。 Liferayプラットフォームは、適切な情報を適切な人に適切なタイミングで提供するソリューションを構築するために必要なすべてを代理店に提供します。
 
-Liferay のガバメントサービスのケーススタディを見る [こちら](https://www.liferay.com/resources/case-studies?industries=government).
+Liferay のガバメントサービスのケーススタディを見る [こちら](https://www.liferay.com/resources/case-studies?industries=government) .
 
 ## 政府にとっての主要課題 & 公共部門
 

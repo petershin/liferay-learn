@@ -30,7 +30,7 @@ toc:
 ```{note}
 * このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering ) をご覧ください。
 * ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) をダウンロードしてください。
-* このモジュールで参照する[Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow)をダウンロードする。
+* このモジュールで参照する [Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) をダウンロードする。
 ```
 
 ## あらゆる展開方法をサポート

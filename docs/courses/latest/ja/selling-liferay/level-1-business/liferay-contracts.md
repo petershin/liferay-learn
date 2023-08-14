@@ -86,6 +86,6 @@ Liferayには、ソフトウェアライセンス料を請求する商業的な�
 
 おめでとうございます - これでビジネス営業職のためのレベル1「Liferayの販売」ラーニングパスが完了しました！
 
-[Level 1 for Technical Sales Roles](../level-1-technical.md)に興味があるかもしれません。  そうでなければ、ただリラックスすればいい！
+[技術営業職レベル1](../level-1-technical.md) に興味があるかもしれません。  そうでなければ、ただリラックスすればいい！
 
 [Liferayの販売に戻る](../../selling-liferay.md)

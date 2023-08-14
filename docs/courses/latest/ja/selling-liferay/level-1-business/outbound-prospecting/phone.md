@@ -19,7 +19,7 @@
 
 ### 留守電を残さない
 
-[Salesloft](https://salesloft.com/resources/blog/5-prospect-channels-your-sales-process-needs/)によると、「ボイスメールの直後にEメールを送ったところ、Eメールのコンバージョンが10％増加した」という報告がある。
+[Salesloft](https://salesloft.com/resources/blog/5-prospect-channels-your-sales-process-needs/) によると、「ボイスメールの直後にEメールを送ったところ、Eメールのコンバージョンが10％増加した」という報告がある。
 
 留守電を残す目的は、電話をかけ直すことではなく、メールの返信率を上げるために見込み客に留守電を残すのです。
 

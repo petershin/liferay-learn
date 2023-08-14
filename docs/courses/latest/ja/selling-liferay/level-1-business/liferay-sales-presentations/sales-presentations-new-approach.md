@@ -100,6 +100,6 @@ Liferayは、これらの業界でデジタルエクスペリエンスのソリ�
 2. CarCo,SAは、ログインした顧客体験のない時代遅れの公開ウェブサイトを持っていた。 公開Webサイトと顧客ポータルは、Liferayのターゲットとなるユースケースであり、理想的な顧客像でも説明した製造業を対象としています。
 3. これはジョゼとのファースト・レベルの通話であるため、CarCo, SAのビジネスの優先順位やユースケースはまだわかっていない。
 
-入手可能な情報に基づくと、このシナリオにおける正しいアプローチは、製造拠点営業デッキを利用することである。 パートナーは [Partner Portal](https://partner.liferay.com)で、従業員は [Alexandria](https://sales.liferay.com)でご覧いただけます。
+入手可能な情報に基づくと、このシナリオにおける正しいアプローチは、製造拠点営業デッキを利用することである。 パートナーは [Partner Portal](https://partner.liferay.com) で、従業員は [Alexandria](https://sales.liferay.com) でご覧いただけます。
 
 次ページ： このシナリオを使って、 [ベースセールスデッキの構造について学ぶ](./sales-presentations-base-deck.md)

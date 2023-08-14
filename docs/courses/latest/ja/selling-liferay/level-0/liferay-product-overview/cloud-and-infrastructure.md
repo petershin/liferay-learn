@@ -12,4 +12,4 @@ Liferayエクスペリエンスクラウドは、強力なカスタマイズ機�
 
 　 Liferay Product Overview モジュールが完了しました！
 
-次のモジュールでは、 [Liferay's Unique Value Proposition](../liferays-unique-value-proposition.md)について学びます。
+次のモジュールでは、 [Liferayのユニークな価値提案](../liferays-unique-value-proposition.md) について学びます。

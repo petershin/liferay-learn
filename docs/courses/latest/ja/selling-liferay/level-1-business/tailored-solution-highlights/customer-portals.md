@@ -74,6 +74,6 @@ Liferayは、人口統計データ（例：国、性別、言語）や行動パ�
 
 Liferayの役割や人口統計、行動属性によってユーザーをセグメント化する機能を活用することで、エアバスは適切なタイミングで適切な情報を表示するカスタマージャーニーを提供しました。 また、Liferayの優れた統合機能を利用して、サードパーティのアプリケーションが顧客ポータルのコンテキストに表示されるようにし、エンドユーザーによりまとまりのある体験を提供しました。
 
-より詳細な情報については、liferay.comの [Airbus Helicopters](https://www.liferay.com/resources/case-studies/m-1)。
+より詳細な情報については、liferay.comの [Airbus Helicopters](https://www.liferay.com/resources/case-studies/m-1) 。
 
 次へ [デジタル・コマース・サイト](./digital-commerce-sites.md). 

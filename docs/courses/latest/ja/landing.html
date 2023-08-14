@@ -1,0 +1,95 @@
+<script type="module">
+	import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.esm.browser.min.js'
+
+	const page = new Vue({
+		el: '#landingPage',
+		data: {
+			cards: [
+				{
+					icon: '#dxp-cloud-logo',
+					sectionName: 'Cloud Administrator',
+					sectionURL: 'cloud-administrator.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Setting Up Your Cloud Project',
+							url: 'cloud-administrator/setting-up-your-cloud-project.html'
+						},
+						{
+							name: 'Deploying Code to LXC',
+							url: 'cloud-administrator/deploying-code-to-lxc.html'
+						},
+						{
+							name: 'Cloud Configuration',
+							url: 'cloud-administrator/cloud-configuration.html'
+						},
+						{
+							name: 'Cloud Development Lifecycle',
+							url: 'cloud-administrator/cloud-development-lifecycle.html'
+						}
+					]
+				},
+				{ 
+					icon: '#developing-applications-logo',
+					sectionName: 'Liferay Administrator',
+					sectionURL: 'liferay-administrator.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Configuration',
+							url: 'liferay-administrator/configuration.html'
+						},
+						{
+							name: 'Users, Accounts, Organizations, and Permissions',
+							url: 'liferay-administrator/users-accounts-organizations.html'
+						},
+						{
+							name: 'Users Data',
+							url: 'liferay-administrator/user-data.html'
+						},
+						{
+							name: 'Clustering',
+							url: 'liferay-administrator/clustering.html'
+						},
+						{
+							name: 'Security',
+							url: 'liferay-administrator/security.html'
+						},
+					]
+				},
+				{ 
+					icon: '#developer-tutorial-logo',
+					sectionName: 'Application Development',
+					sectionURL: 'application-development.html',
+					showAll: false,
+					subsections: [
+						{
+							name: 'Modeling Data Structures',
+							url: 'application-development/modeling-data-structures.html'
+						},
+						{
+							name: 'Implementing Business Logic',
+							url: 'application-development/implementing-business-logic.html'
+						},
+						{
+							name: 'Designing User Interfaces',
+							url: 'application-development/designing-user-interfaces.html'
+						}
+					]
+				},
+				{
+					icon: '#users-and-permissions-logo',
+					sectionName: 'Selling Liferay',
+					sectionURL: 'selling-liferay.html',
+					showAll: false,
+					subsections: [
+						 {
+								name: 'Level 0',
+								url: 'selling-liferay/level-0.html'
+						 },
+					]
+			 },
+		]
+ }
+})
+</script>

@@ -44,7 +44,7 @@ toc:
 
 レベル0にはLiferayの前提条件はありませんが、エンタープライズソフトウェアとエンタープライズソフトウェアの販売に関する一般的な理解をお勧めします。
 
-[Introduction to Liferay](./level-0/introduction-to-liferay.md)から学習を始めてください。
+[Liferay入門](./level-0/introduction-to-liferay.md) から学習を始めてください。
 
 ::::{grid} 2
 :gutter: 3 3 3 3

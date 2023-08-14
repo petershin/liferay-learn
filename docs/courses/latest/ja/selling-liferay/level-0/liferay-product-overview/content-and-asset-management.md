@@ -14,7 +14,7 @@ Liferayのコンテンツおよびアセット管理機能により、実務担�
 ## ドキュメントとメディア
 
 * [文書、画像、ビデオの保存](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
-* [グーグル](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration)、 [マイクロソフト](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/sharepoint-integration)との統合
+* [グーグル](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) 、 [マイクロソフト](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/sharepoint-integration) との統合
 
 ## アセットライブラリ
 
@@ -29,4 +29,4 @@ Liferayのコンテンツおよびアセット管理機能により、実務担�
 
 * [ユーザーとの対話にフォームを使う](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms)
 
-次へ [Low Code and No Code Application Building](./low-code-no-code-application-building.md).
+次へ [ローコードとノーコード](./low-code-no-code-application-building.md) .

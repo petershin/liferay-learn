@@ -4,11 +4,11 @@
 
 他のすべてを結びつけるツールは「永続性」であり、これはおそらく、すべてのツールの中で最も意見の分かれるツールである。
 
-一般的な意見とは裏腹に、 _快く_ しつこくすることは、見込み客と関わる効果的な方法であることが証明されている。
+一般的な意見とは裏腹に、**楽しく** 粘り強く続けることは、見込み顧客と関わる効果的な方法であることが証明されています。
 
 > 「コンバージョンするコンタクトのうち、50％は5回目のタッチの後に起こる。
 
-[Salesloft](https://pages.salesloft.com/rs/432-WAJ-793/images/33%20Tips%20for%20Optimizing%20B2B%20Sales%20Emails%20eBook.pdf?mkt_tok=NDMyLVdBSi03OTMAAAF9m1SHnRS1iDQqLvHu0D3bFwd2pc2WCy-UKAdmmWQOGz-6DViCCgC4OQKpG9r6aChNmAJ2IqiLavPIjflUUTytHTF-WqfNZgIe71uWadA&ref=blog.lavender.ai)によると、「コンタクトとエンゲージする最適な試行回数は15回」。  また、 [ZoomInfo](https://pipeline.zoominfo.com/sales/sales-follow-up-statistics)によると、「コンバージョンに至ったコンタクトのうち、50％は5回目のタッチの後に起こっている」。
+[Salesloft](https://pages.salesloft.com/rs/432-WAJ-793/images/33%20Tips%20for%20Optimizing%20B2B%20Sales%20Emails%20eBook.pdf?mkt_tok=NDMyLVdBSi03OTMAAAF9m1SHnRS1iDQqLvHu0D3bFwd2pc2WCy-UKAdmmWQOGz-6DViCCgC4OQKpG9r6aChNmAJ2IqiLavPIjflUUTytHTF-WqfNZgIe71uWadA&ref=blog.lavender.ai) によると、「コンタクトとエンゲージする最適な試行回数は15回」。  また、 [ZoomInfo](https://pipeline.zoominfo.com/sales/sales-follow-up-statistics) によると、「コンバージョンに至ったコンタクトのうち、50％は5回目のタッチの後に起こっている」。
 
 言い換えれば、売り手として、アカウント、見込み客、ユースケースの調査が済んでいれば、しつこくすることを恐れたり、嫌がったりする理由はない。 分かち合う価値のあるものを持っているなら、決して謝る必要はない。
 
@@ -35,7 +35,7 @@
 
 毎月の終わりに、これらのコンバージョンに対して達成されたパフォーマンスを分析することで、改善すべき領域を発見することができます。 このアウトバウンド生産性向上ツールを使えば、プロスペクティングのためにどれだけの時間を確保しなければならないかを理解できるだけでなく、プロスペクティングの効果を測定し、改善することができる。
 
-ツールのダイナミック・バージョンは、 [こちら](https://learn.liferay.com/documents/d/guest/sdr-productivity-tool)からダウンロードできる。
+ツールのダイナミック・バージョンは、 [こちら](https://learn.liferay.com/documents/d/guest/sdr-productivity-tool) からダウンロードできる。
 
 ## 最終結果
 

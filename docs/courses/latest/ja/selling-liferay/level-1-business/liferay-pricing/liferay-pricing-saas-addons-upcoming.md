@@ -23,15 +23,15 @@ MALUを増やしたりAPVを増やしたりするだけでなく、上位プラ�
 
 ### プロジェクトワークスペース
 
-Liferay Experience Cloud SaaS は **Project Workspace**のコンセプトを導入しています。 プロジェクト・ワークスペースは、顧客が必要とするさまざまなタイプの環境とさまざまなタイプのユーザー・ベースをカプセル化する方法である。
+Liferay Experience Cloud SaaS は **Project Workspace** のコンセプトを導入しています。 プロジェクト・ワークスペースは、顧客が必要とするさまざまなタイプの環境とさまざまなタイプのユーザー・ベースをカプセル化する方法である。
 
 各Project WorkspaceにはProduction環境とUAT環境があり、Liferay DXPとExtensionsのキャパシティが含まれます。 ビジネス・プランとエンタープライズ・プランでは、各プロジェクト・ワークスペースに開発環境も含まれます。
 
 それぞれのプランで、プロジェクト・ワークスペースの数は異なります：
 
-* **プロ**: 1 プロジェクト・ワークスペース
-* **Business**: 5つのプロジェクト・ワークスペース
-* **Enterprise**: 10プロジェクト・ワークスペース
+* **プロ** : 1 プロジェクト・ワークスペース
+* **Business** : 5つのプロジェクト・ワークスペース
+* **Enterprise** : 10プロジェクト・ワークスペース
 
 プラン間を移動して利用可能なプロジェクト・ワークスペースを増やすだけでなく、各プランのワークスペースを追加購入することも可能です。
 
@@ -39,15 +39,15 @@ Liferay Experience Cloud SaaS は **Project Workspace**のコンセプトを導�
 
 ほとんどのオプションと同様に、各プランで提供されるエクステンションの容量は異なります：
 
-* **Pro**: 1 GB RAM / 1 vCPU
-* **ビジネス**: 4 GB / 8 vCPU
-* **エンタープライズ**: 6 GB / 12 vCPU
+* **Pro** : 1 GB RAM / 1 vCPU
+* **ビジネス** : 4 GB / 8 vCPU
+* **エンタープライズ** : 6 GB / 12 vCPU
 
 この場合も、プラン間の移動に加えて、延長容量を追加購入することができる。 エクステンションキャパシティは、お客様がクライアントのエクステンションをホストする場所です。 以前のモジュールで取り上げたように、クライアント・エクステンションは、カスタマイズされたソリューション開発を実装する方法である。  多くの場合、これらのクライアント・エクステンションは、ある程度のコンピューティング・パワーとメモリ容量を必要とし、クライアント・エクステンションの数と性質に応じて、お客様は追加の容量を購入する必要があるかもしれません。
 
 ### 専用リソース
 
-Liferay Experience Cloud SaaSはマルチテナント環境で、各Liferay顧客は他の顧客とLiferayインスタンスを共有します。  技術的な用語で言えば、各顧客は本番環境、UAT環境、そしてもしあれば開発環境用にLiferay "[Virtual Instances](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances)" を手に入れることになります。
+Liferay Experience Cloud SaaSはマルチテナント環境で、各Liferay顧客は他の顧客とLiferayインスタンスを共有します。  技術的な用語で言えば、各顧客は本番環境、UAT環境、そしてもしあれば開発環境用にLiferay " [Virtual Instances](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances) " を手に入れることになります。
 
 お客様が必要な場合、または自分自身からインストールを分離したい場合は、専用のLiferayインスタンスとデータベースを提供するDedicated Resourcesを購入することができます。
 

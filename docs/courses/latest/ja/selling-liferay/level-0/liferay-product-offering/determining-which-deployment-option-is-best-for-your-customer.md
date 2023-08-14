@@ -5,7 +5,7 @@
 ```{note}
 * このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) をご覧ください。
 * ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) をダウンロードしてください。
-* このモジュールで参照する[Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow)をダウンロードする。
+* このモジュールで参照する [Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) をダウンロードする。
 ```
 
 ## ビジネスの問題を解決する
@@ -29,7 +29,7 @@ Liferay Experience Cloud SaaSを導入アプローチとして選択した場合
 * ユーザーとロールの定義
 * など。
 
-しかし、ほとんどの場合、ビジネスのすべての問題がこれらの機能だけで解決するわけではない。 Liferay DXPの主な強みは、常に特定のニーズに合わせてプラットフォームを拡張・カスタマイズできることです。 プラットフォームの拡張には、 [Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions)を作成するのが望ましい。 Client ExtensionsはLiferayのコードに縛られず、どのデプロイアプローチでも使用できます。 クライアント拡張機能により、開発者は慣れ親しんだテクノロジーを使用することができ、コアプラットフォームへのアップグレードを容易に行うことができます。
+しかし、ほとんどの場合、ビジネスのすべての問題がこれらの機能だけで解決するわけではない。 Liferay DXPの主な強みは、常に特定のニーズに合わせてプラットフォームを拡張・カスタマイズできることです。 プラットフォームの拡張には、 [Client Extensions](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) を作成するのが望ましい。 Client ExtensionsはLiferayのコードに縛られず、どのデプロイアプローチでも使用できます。 クライアント拡張機能により、開発者は慣れ親しんだテクノロジーを使用することができ、コアプラットフォームへのアップグレードを容易に行うことができます。
 
 ![クライアント・エクステンションは疎結合で、最新のテクノロジーを使用し、容易なアップグレードをサポートする。](../liferay-product-offering/images/05.png)
 
@@ -37,9 +37,9 @@ Liferay Experience Cloud SaaSを導入アプローチとして選択した場合
 
 ## SaaSが可能かどうかの判断
 
-Liferayは、 __ のすべての顧客が、SaaS展開で独自のビジネス問題を解決できるわけではないことを認識しています。
+Liferayは、すべてのお客様がSaaSの展開で固有のビジネス上の問題を解決できるわけではないことを認識しています。
 
-顧客が _、_ 、SaaSを快適に利用していると仮定した場合、以下のことが当てはまるのであれば、SaaSファーストのアプローチをとるべきである：
+顧客がSaaSに_慣れていると仮定して、もし以下のことが当てはまるなら、SaaSファーストのアプローチに従うべきです：
 
 * ビジネス上の問題は、すぐに使えるLiferayの機能で解決できますか？
 * カスタマイズの要件は、エクステンションの望ましいアプローチで解決できますか？

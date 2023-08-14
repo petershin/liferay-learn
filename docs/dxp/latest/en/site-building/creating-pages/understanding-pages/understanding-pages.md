@@ -73,16 +73,6 @@ This table compares some of the distinctions between a Content Page and a Widget
 
 There are several other page types that are available - each can help to satisfy particular use cases. See [Other Page Types](../understanding-pages/other-page-types.md) for more information.
 
-## Previewing Pages
-
-You can preview pages you create to see how they look before making them live or to identify the ones you need to work on:
-
-Open the *Product Menu* ( ![Product Menu icon](../../../images/icon-product-menu.png) ) and select *Site Builder* &rarr; Pages.
-
-Click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) on the page you want to preview, and select *View*.
-
-![You can preview pages easily before working on them](./understanding-pages/images/04.png)
-
 ## Global Page Templates
 
 When adding a page, you also have the option to choose a Page Template. Page Templates are pre-set pages with applications already deployed to the page. By default, only *Global Templates* are available, but additional collections you create appear as an option as well.
@@ -102,11 +92,21 @@ Learn more about Page Templates:
 
 Pages can also be created in a hierarchical fashion by creating Child Pages. Child Pages can be useful if you have multiple pages that can be organized into categories.
 
-![You can add a child Page to a top-level page to organize pages hierarchically.](./understanding-pages/images/05.png)
+![You can add a child Page to a top-level page to organize pages hierarchically.](./understanding-pages/images/04.png)
 
 ```{tip}
 You can navigate among pages of a Site hierarchy with the Site Map application. A Site Administrator can configure a root page and a display depth. The display depth of the Site Map application determines how many levels of nested pages to display.
 ```
+
+## Previewing Pages
+
+You can preview pages you create to see how they look before making them live or to identify the ones you need to work on:
+
+Open the *Product Menu* ( ![Product Menu icon](../../../images/icon-product-menu.png) ) and select *Site Builder* &rarr; Pages.
+
+Click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) on the page you want to preview, and select *View*.
+
+![You can preview pages easily before working on them](./understanding-pages/images/05.png)
 
 ## Enabling Private Pages
 

@@ -35,11 +35,11 @@ The steps below show how to create and use Widget and Content Page Templates.
 
 1. You're automatically brought to the new Page Template. Follow the instructions in [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your Widget Page Template. Likewise, see [Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) to configure your Content Page Template.
 
-You can preview your newly created page template:
-
-Navigate back to the *Page Templates* tab, click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) on the page template you want to preview, and select *Preview*.
+```{tip}
+You can preview your newly created page template. In the Page Templates page, select the *Actions* menu ( ![Actions Icon](../../../images/icon-actions.png) ) for the template you want to preview, and select *Preview*.
 
 ![You can preview a Page Template before selecting it.](./creating-a-page-template/images/03.png)
+```
 
 ## Creating a Page Template from an Existing Page
 

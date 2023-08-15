@@ -26,13 +26,13 @@ Files in `/webserver/configs/{ENV}/` are copied as overrides into `/etc/nginx/` 
 
 {bdg-secondary}`Available web server version 5.3.0+`
 
-Nginx's access and error logs (by default, stored in the Nginx container's `/var/log/nginx/` directory) automatically rotate to prevent the individual files from becoming too large to read. On a regular interval (by default, every midnight), the current access and error log files are rotated and replaced with new files. Automatic rotation also occurs if the files reach a certain maximum size threshold (by default, 50 MB).
+Nginx's access and error logs (by default, stored in the Nginx container's `/var/log/nginx/` directory) automatically rotate to prevent the individual files from becoming too large to read. On a regular interval (by default, every midnight in UTC), the current access and error log files are rotated and replaced with new files. Automatic rotation also occurs if the files reach a certain maximum size threshold (by default, 50 MB).
 
 The newest files after rotation are created with a `.0` postfix to the file names, and successively older files have postfixes ordered sequentially (`.1`, `.2`, etc.). The rotation is handled smoothly and does not interrupt Nginx or your service's regular function.
 
 You can define these environment variables in your web server service to adjust the rotation behavior:
 
-* `LCP_LOGROTATE_SCHEDULE`: Defines the schedule for automatic rotation (using a Cron schedule syntax).
+* `LCP_LOGROTATE_SCHEDULE`: Defines the schedule for automatic rotation (using a Cron schedule syntax, in UTC±00).
 
 * `LCP_LOGROTATE_FILE_SIZE`: Defines a maximum size for log files before they are automatically rotated.
 

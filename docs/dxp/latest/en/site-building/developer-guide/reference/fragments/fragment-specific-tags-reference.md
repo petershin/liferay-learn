@@ -165,6 +165,8 @@ You can associate the link with an e-mail using `mailto:` URI scheme or with a t
 </a>
 ```
 
+### Creating Editable Links with Liferay Portal 7.3 GA2 and Below
+
 For Liferay Portal 7.3 GA2 and below, use this syntax:
 
 ```html

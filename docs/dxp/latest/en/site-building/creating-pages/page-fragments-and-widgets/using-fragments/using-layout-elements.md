@@ -39,19 +39,17 @@ The grid fragment adds multiple drop zone modules to a page or template. These m
 ![Grids include standard and unique configuration options.](./using-layout-elements/images/03.png)
 
 
-## Navigating Through the Structure
+## Navigating Through Nested Elements Using Breadcrumbs
 
-You can use the breadcrumbs located at the bottom of the page to navigate through its structure:
+Navigating through nested elements while editing a page can get complicated when you are dealing with many elements and their children or parents. To facilitate your navigation, you can use breadcrumbs.
 
-1. Open the *Product Menu*( ![Product Menu icon](../../../../images/icon-product-menu.png) ) and select *Site Builder* &rarr; *Pages*. 
-   
-1. Click on the page you want to edit;
+While [editing a page](../../using-content-pages/adding-elements-to-content-pages.md), select an element and breadcrumbs show at the bottom of the editing page. You can use these breadcrumbs to navigate through the elements and their parents or children.
 
-1. Click on an element. 
+Click on one of the levels in the breadcrumbs hierarchy to select that element.
 
-    The breadcrumbs show at the bottom. You can select any parent element by clicking on the respective breadcrumb level.
-
-1. You can also select an element and use the shortcut `Shift + Enter` to select its parent.
+```{tip}
+You can also select an element and use the shortcut `Shift + Enter` to select its parent.
+```
 
 ![Use the breadcrumb system to navigate through the structure and select parent elements](./using-layout-elements/images/04.png)
 

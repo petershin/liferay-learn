@@ -39,4 +39,3 @@ View and [manage the different data sources](./workspace-data/managing-data-sour
 - [Definitions for Events](./workspace-data/definitions/definitions-for-events.md)
 - [Definitions for Event Attributes](./workspace-data/definitions/definitions-for-event-attributes.md)
 - [Setting a Search Query](./workspace-data/definitions/setting-a-search-query.md)
-- [Managing Interest Topics](./workspace-data/definitions/managing-interest-topics.md)

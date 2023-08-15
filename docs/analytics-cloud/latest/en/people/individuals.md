@@ -2,6 +2,7 @@
 toc:
   - ./individuals/individuals-dashboard.md
   - ./individuals/individual-profiles.md
+  - ./individuals/understanding-interests.md
 uuid: 70d2cb2e-1f8e-48fb-83dd-a129d0fbd727
 ---
 # Individuals
@@ -11,7 +12,9 @@ uuid: 70d2cb2e-1f8e-48fb-83dd-a129d0fbd727
 
 individuals/individuals-dashboard.md
 individuals/individual-profiles.md
+individuals/understanding-interests.md
 ```
 
 - [Individuals Dashboard](./individuals/individuals-dashboard.md)
 - [Individual Profiles](./individuals/individual-profiles.md)
+- [Understanding Interests](./individuals/understanding-interests.md)

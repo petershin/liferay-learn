@@ -57,7 +57,7 @@ Theses topics are derived from the title, description, and keyword tags of your 
 
 To view the full list of interest topics, click *View All Interests* in the panel. Alternatively, click the Interests tab at the top of the page. 
 
-To learn more about interests see [Understanding Interests](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests).
+To learn more about interests see [Understanding Interests](./understanding-interests.md).
 
 ## Breakdown
 

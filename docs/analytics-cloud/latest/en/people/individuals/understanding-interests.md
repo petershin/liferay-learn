@@ -3,41 +3,29 @@ uuid: 8a736460-98bf-4349-958d-f51fc4854404
 ---
 # Understanding Interests
 
-Analytics Cloud suggests topics of interest based on user interactions with content in Liferay DXP. Administrators can exclude certain keywords from the recommendation API, therefore preventing Analytics Cloud from suggesting content based on those keywords. This is useful for further curating suggested content.
+As individuals interact with the pages of a Liferay site, Analytics Cloud notes the topics they contain. The more an individual visits pages that contain a topic, the higher the topic's ranking is for that individual's interests. 
 
 ```{note}
-Currently interest topics are only supported in English. Non-English content is filtered out.
+Interests are based on multiple interactions and multiple sessions on a site. Therefore interests data are presented after an individual has interacted with a site a minimum of five times (e.g. page views, page clicks, etc.). A page interaction is defined as an individual interacting with a page for a minimum of five seconds.
 ```
 
-Finding out topics people are interested in helps you relate your products and services to them. Analytics Cloud's Interests insight empowers you with rich, easy-to-understand visuals that provide this information.
+Interest topics are automatically generated based on a site page's title and description. Therefore using page titles and descriptions that are well defined will lead to more specific interest topics. You can augment the interest topics by [adding keywords](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-settings/configuring-individual-pages#seo) to the configuration of a site page.
 
-As an Individual interacts with the pages and assets, Analytics Cloud notes the topics they contain. The more an Individual visits pages and assets that contain a topic, the higher the topic's ranking is for that Individual's Segments.
+```{note}
+The generated interest topics are only supported in English. Non-English content is filtered out. However, non-English keywords can be added to a page's configuration as a workaround. For example, the Spanish word for sports (i.e. `deportes`) can be added as a keyword. As individuals interact with the page, Analytics Cloud will show `deportes` as an interest topic.
+```
+
+Finding out topics people are interested in helps you relate your products and services to them. Analytics Cloud's interests insight empowers you with rich, easy-to-understand visuals that provide this information.
 
 For example, say your site has pages that mention these topics:
 
 * Clothing
 * Sports
 
-If an Individual named Michael frequents these pages, the Interest ranking for the clothing and sports topics is high. Here are a couple of different ways you could use this information:
+If an individual named Michael frequents these pages, the interest ranking for the clothing and sports topics is high. Here are a couple of different ways you could use this information:
 
 If you sell sports apparel, you could prepare a campaign for selling sports apparel to Michael.
 
-If you don't sell sports apparel, you could use the Interest data to convince sports apparel vendors to advertise on your site.
+If you don't sell sports apparel, you could use the interest data to convince sports apparel vendors to advertise on your site.
 
-Either way, the Interests insight helps generate new business. The Interests insight tells you the most common topics mentioned by the pages and assets customers visit most.
-
-<!--- 
-## Adding Keywords to the Block List
-
-Follow these steps to add a keyword to the block list:
-
-1. In Analytics Cloud, select Settings → Interest Topics. A table lists any existing keywords in the block list.
-
-1. Click Add Keyword and enter one or more keywords in a comma-delimited list.
-
-1. Click Send when you're finished. Your keywords then appear in the table.
-
-To delete a keyword from the block list, click that keyword's trash icon (![Delete](../../images/icon-delete.png)). To delete multiple keywords at once, select the checkbox for each and click the trash icon that appears at the top of the table. You can select all keywords via the checkbox at the top of the table.
-
-![The keyword management screen.](managing-interest-topics/images/01.png)
---->
+Either way, the interests insight helps generate new business. The interests insight tells you the most common topics mentioned by the pages and assets customers visit most.

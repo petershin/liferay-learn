@@ -1,8 +1,8 @@
 ---
 toc:
-- ./using-the-script-engine/invoking-liferay-services-from-scripts.md
-- ./using-the-script-engine/running-scripts-from-the-script-console.md
-- ./using-the-script-engine/script-examples.md
+  - ./using-the-script-engine/invoking-liferay-services-from-scripts.md
+  - ./using-the-script-engine/running-scripts-from-the-script-console.md
+  - ./using-the-script-engine/script-examples.md
 ---
 # スクリプトエンジンの使用
 

@@ -129,3 +129,7 @@ The Cohort Analysis panel shows a [cohort analysis](https://en.wikipedia.org/wik
 Use the selector menus at the top left of the panel to select the visitor type (All, Anonymous, or Known) and time period (Day, Week, or Month).
 
 For example, if you select All Visitors and Day, the percentage of visitors from a given acquisition date that return to your Site appear in the chart for each following day.
+
+## Related Information
+
+[Understanding Interests](../people/individuals/understanding-interests/)

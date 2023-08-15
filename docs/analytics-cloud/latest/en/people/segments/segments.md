@@ -107,3 +107,4 @@ You've completed touring Segment profiles. Creating Segments and analyzing their
 ## Related Information
 
 [Personalizing Content with Segments](../../optimization/personalizing-content-with-segments.md)
+[Understanding Interests](../individuals/understanding-interests.md)

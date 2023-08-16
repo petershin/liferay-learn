@@ -60,8 +60,8 @@ curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/a
 * `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
 * `page` (整数)：結果のページ番号。
 * `keywords` (文字列)：アセットのタイトルにマッチするキーワード。
-* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
-* sortMetric`(string)： データをソートするためのメトリック。指定できる値は `clicksMetric`、`commentsMetric`、`ratingsMetric`、`readingTimeMetric`、`viewsMetric` である。
+* `rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* `sortMetric`(string)： データをソートするためのメトリック。指定できる値は `clicksMetric`、`commentsMetric`、`ratingsMetric`、`readingTimeMetric`、`viewsMetric` である。
 * `sortOrder` (文字列)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
 
 特定のブログ記事に関するデータを取得する、
@@ -83,7 +83,7 @@ curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/a
 * `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
 * `page` (整数)：結果のページ番号。
 * `keywords` (文字列)：データ内でマッチしたキーワード。
-* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* `rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
 * `sortMetric`(string)： データをソートするためのメトリック。指定できる値は `commentsMetric`, `downloadsMetric`, `previewsMetric`, `ratingsMetric` である。
 * `sortOrder` (文字列)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
 
@@ -106,7 +106,7 @@ curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/a
 * `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
 * `page` (整数)：結果のページ番号。
 * `keywords` (文字列)：データ内でマッチしたキーワード。
-* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* `rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
 * `sortMetric`(string)： データをソートするためのメトリック。指定できる値は `abandonmentsMetric`、`completionTimeMetric`、`submissionsMetric`、`viewsMetric` である。
 * `sortOrder` (文字列)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
 
@@ -161,7 +161,7 @@ curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/a
 * `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
 * `page` (整数)：結果のページ番号。
 * `keywords` (文字列)：データ内でマッチしたキーワード。
-* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* `rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
 * `sortMetric` (文字列)： データをソートするためのメトリック。指定できる値は `avgTimeOnPageMetric`, `bounceMetric`, `bounceRateMetric`, `ctaClicksMetric`, `directAccessMetric`, `entrancesMetric`, `exitRateMetric`, `indirectAccessMetric`, `readsMetric`, `sessionsMetric`, `timeOnPageMetric`, `viewsMetric`, `visitorsMetric` である。
 * `sortOrder` (string)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
 特定のURLからページデータを取得する、
@@ -202,7 +202,7 @@ curl -i -L -H "Authorization: Bearer {token}" -L https://analytics.liferay.com/a
 * `channelId` (整数)：Analytics Cloud ワークスペースのプロパティ ID。
 * `page` (整数)：結果のページ番号。
 * `keywords` (文字列)：データ内でマッチしたキーワード。
-* rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
+* `rangeKey` (整数)： データをグループ化する時間範囲。0` (直近24時間のデータ)、`1` (昨日のデータ)、`7` (直近7日間のデータ)、`28` (直近28日間のデータ)、`30` (デフォルト値、直近30日間のデータ)、`90` (直近90日間のデータ) が使用可能。
 * `sortMetric`(string)： データをソートするためのメトリック。指定できる値は `viewsMetric` である。
 * `sortOrder` (文字列)： 結果を表示する順番。指定できる値は `asc` または `desc` である。
 

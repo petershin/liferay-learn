@@ -18,7 +18,7 @@ For Liferay DXP 7.4+, fragment collections are called fragment sets in the Lifer
 
 Then, follow these steps to auto-deploy an example fragment set:
 
-1. Download and unzip the [example auto-deployable fragment set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip):
+1. Download and unzip the [example auto-deployable fragment set](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip):
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O

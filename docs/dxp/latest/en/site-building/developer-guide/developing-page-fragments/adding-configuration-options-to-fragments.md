@@ -24,7 +24,7 @@ For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Lifer
 
 Then, follow these steps to deploy an example to see how Fragment configuration options work:
 
-1. Download and unzip the [example Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip):
+1. Download and unzip the [example Fragment Set](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip):
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip -O

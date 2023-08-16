@@ -31,7 +31,7 @@ For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Lifer
 
 Then, follow these steps to deploy an example to see what a contributed Fragment Set looks like:
 
-1. Download and unzip the [example](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip):
+1. Download and unzip the [example](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip):
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip -O
@@ -106,7 +106,7 @@ The `bnd.bnd` file includes a few properties that must be defined for the Set:
 * The `Web-ContextPath` Header indicates the module folder that contains the Set, so the `ServletContext` is correctly generated.
 * The `-dsannotations-options` enables the Declarative Service annotations found in the class hierarchy of the Component class.
 
-See the example project's [`bnd.bnd`](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip) for a reference of these values.
+See the example project's [`bnd.bnd`](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip) for a reference of these values.
 
 Now you'll modify the project to include another Fragment in the contributed Set.
 

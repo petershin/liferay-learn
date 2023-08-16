@@ -16,7 +16,7 @@ For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Lifer
 
 Then, follow these steps to import an example Fragment Set to see how Fragment resources work:
 
-1. Download and unzip the [example resources Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip):
+1. Download and unzip the [example resources Fragment Set](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip):
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O

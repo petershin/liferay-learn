@@ -14,7 +14,7 @@ To enhance the user's experience, Liferay provides [out-of-the-box solutions](#o
 
 ## Out-of-the-box Utility Pages
 
-The provided out-of-the-box utility pages can be edited, previewed, or copied.
+You can edit, preview, or copy the provided out-of-the-box utility pages.
 
 1. Open the *Product Menu* ( ![Product Menu icon](../../../images/icon-product-menu.png) ) and  navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
 
@@ -23,7 +23,9 @@ The provided out-of-the-box utility pages can be edited, previewed, or copied.
 1. Choose a page and click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) to view and select one of the available options (e.g. *Edit*, *Preview*, or *Make a Copy*).
 
 ```{tip}
-Edit the error utility page the same way you would edit a [content page](../using-content-pages/adding-elements-to-content-pages.md).
+Edit the utility page the same way you would edit a [content page](../using-content-pages/adding-elements-to-content-pages.md).
+
+![You can edit the out-of-the-box utility page directly or create a copy before editing it.](./using-utility-pages/images/02.png)
 ```
 
 ## Creating a New Utility Page
@@ -36,6 +38,10 @@ Edit the error utility page the same way you would edit a [content page](../usin
 
 1. Select *Blank* for an empty content page or choose an available master page template.
 
+1. Name the utility page and click *Save*.
+
+You can edit the newly created utility page the same way you would edit a [content page](../using-content-pages/adding-elements-to-content-pages.md).
+
 ## Selecting a Utility Page as Default
 
 1. Open the *Product Menu* ( ![Product Menu icon](../../../images/icon-product-menu.png) ) and  navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
@@ -44,7 +50,7 @@ Edit the error utility page the same way you would edit a [content page](../usin
 
 1. Select *Mark as Default*. 
 
-![Select a utility page as the default page in the actions menu.](./using-utility-pages/images/02.png)
+![Select a utility page as the default page in the actions menu.](./using-utility-pages/images/03.png)
 
 ```{note}
 If a site contains no pages, the default 404 error page is shown even if a utility page is applied.

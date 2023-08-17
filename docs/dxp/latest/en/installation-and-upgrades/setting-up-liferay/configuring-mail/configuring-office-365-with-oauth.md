@@ -10,7 +10,7 @@ Connect your Microsoft email service to Liferay with the use of OAuth 2.0 author
 ## App Registration in Microsoft
 
 ```{note}
-For additional support or troubleshooting with this process, contact Microsoft.
+For additional support or troubleshooting with this step, contact Microsoft.
 ```
 
 1. [Create a new application in Microsoft Azure](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). 
@@ -41,7 +41,7 @@ For additional support or troubleshooting with this process, contact Microsoft.
 
     Click _Save_.
 
-1. In the left navigation, click _Outlook Auth Connector_. Paste in the tenant ID, client ID, and client secret values into each input box.
+1. In the left navigation, click _Outlook Auth Connector_. Paste in the client ID, client secret, and tenant ID into each input box.
 
     ![Paste in the tenant ID, client ID, and client secret values into each input box.](./configuring-office-365-with-oauth/images/01.png)
 

@@ -5,15 +5,19 @@ uuid: 33c781c1-c24e-44fe-8efc-90c0327abc3f
 
 Sites are customizable spaces for building personalized digital experiences. Follow these steps to create a basic site in your Liferay instance:
 
-1. Open the *Applications Menu* (![Applications Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Sites*.
+1. Open the *Global Menu* ( ![Applications Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Sites*.
 
     ![Open the Sites application.](./adding-a-site/images/01.png)
 
-1. Click *Add* (![Add Button](../../images/icon-add.png)).
+1. Click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
 1. Select a *Site Template*.
+    
+1. Choose between templates *Provided by Liferay* or [*Custom Site Templates*](./site-templates.md) to populate your new site with pages, content, and configurations.
 
-    You can select *Blank* to create a new site without any pages or content. Alternatively, you can select a custom or default [site template](./site-templates.md) to populate your new site with pages, content, and configurations.
+    Under *Provided by Liferay*, you can choose a *Blank Site* to create a new site without any pages or content.
+
+    ![You can select a template provided by Liferay or a custom site template to populate your new site with pages, content, and configurations.](./adding-a-site/images/02.png)
 
 1. Enter a *Name* for the site.
 

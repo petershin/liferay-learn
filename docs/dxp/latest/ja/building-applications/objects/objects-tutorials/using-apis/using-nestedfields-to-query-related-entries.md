@@ -1,4 +1,4 @@
-# `nestedFields` を使って関連するエントリーをクエリーする。
+# `nestedFields` を使って関連するエントリーをクエリーする
 
 {bdg-secondary}`Liferay 7.4 U69+/GA69+で利用可能`
 

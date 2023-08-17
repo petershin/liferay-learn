@@ -111,12 +111,13 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 ジェネレータは、プロジェクト名から派生したフォルダに各プロジェクトを作成します。 この例では、プロジェクト名を `Sample Liferay Fragments` としたので、ジェネレータは `sample-liferay-fragments`というプロジェクト フォルダを作成します。
 
 ## サンプルのフラグメントセットをインポートする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to import the sample Fragment Set to Liferay:
+次に、以下の手順でサンプルのフラグメントセットをLiferayにインポートします：
 
-1. Import the Fragment Set to your Liferay instance invoking the `yarn run import` command in the project's root folder (e.g., `sample-liferay-fragments`). Alternatively, you can [import the Fragment Set manually](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
+1. プロジェクトのルートフォルダ（例：`sample-liferay-fragments`）で `yarn run import` コマンドを実行し、フラグメントセットを Liferay インスタンスにインポートします。あるいは、[手動でフラグメントセットをインポートする](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md)こともできます。
 
     ```bash
     cd sample-liferay-fragments

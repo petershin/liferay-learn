@@ -71,10 +71,11 @@ body {
 ここで、クライアント拡張をデプロイします。
 
 ## Liferayにクライアント拡張をデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once Liferay starts, run this command from the client extension's folder in the sample workspace:
+Liferayが起動したら、サンプルワークスペース内のクライアント拡張のフォルダからこのコマンドを実行します：
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)

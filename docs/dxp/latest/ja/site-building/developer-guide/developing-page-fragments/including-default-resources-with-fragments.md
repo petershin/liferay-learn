@@ -33,8 +33,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     ./setup_tutorial.sh
     ```
 
-
-    Resolve all unmet requirements reported by the script and rerun the script until it reports that your environment is ready.
+    スクリプトによって報告された満たされていない要件をすべて解決し、環境の準備が整ったと報告されるまでスクリプトを再実行する。
 
 1. 以下の `yarn run import` コマンドを使用して、フラグメントツールキットでフラグメントセットをDockerコンテナにインポートします。
 

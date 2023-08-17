@@ -121,7 +121,7 @@
 
 1. ```java resultSet -> new Object[] { resultSet.getLong("j7z3EntryId"), resultSet.getString("name")
    ```
-   The objects are gathered and stored in the `resultSet` array.
+   オブジェクトが集められ、 `resultSet` 配列に格納される。
 
 1. ```java
    columns -> {

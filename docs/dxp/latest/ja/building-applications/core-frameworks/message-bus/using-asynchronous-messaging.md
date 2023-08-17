@@ -55,7 +55,6 @@
     ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-
     Dockerコンテナ・コンソールに、モジュールが起動したことが表示される。
 
     ```bash

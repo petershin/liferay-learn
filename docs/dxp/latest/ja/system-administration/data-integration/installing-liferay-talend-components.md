@@ -73,7 +73,7 @@ Mavenビルドが成功したら、以下の手順に従ってTalend Open Studio
 
 1. `com.liferay.talend`, `com.liferay.talend.common`, and `com.liferay.talend.runtime` フォルダーをローカルの `$USER_HOME/.m2/repository/com/liferay/` フォルダーから `$TOS_ROOT/configuration/.m2/repository/com/liferay/` フォルダーにコピーします。
 
-1. Talend Open Studioを起動します。 Liferay コンポーネントは **Business** &rarr; **Liferay***Palette** タブの下に表示されます。
+1. Talend Open Studioを起動します。 Liferay コンポーネントは **Business** &rarr; **Liferay** **Palette** タブの下に表示されます。
 
    ![コンポーネントはPaletteタブのBusiness &rarr; Liferayの下に表示されます。](liferay-talend-components-overview/images/01.png)
 

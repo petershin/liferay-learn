@@ -110,12 +110,12 @@ Liferayのユーザー関連データ（UAD）管理ツールで[ユーザーデ
 
 1. モジュール用の `bnd.bnd` ファイルを作成します。
 
-```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd
+    ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/bnd.bnd
     ```
 
-   Make sure to include the `-dsannotations-options: inherit` annotation. OSGi service component classes inherit [OSGi declarative services](../../liferay-internals/fundamentals/module-projects.md) annotations from their class hierarchy.
+   必ず `-dsannotations-options: inherit` アノテーションを含めてください。OSGiサービスコンポーネントクラスはクラス階層から[OSGi declarative services](../../liferay-internals/fundamentals/module-projects.md)アノテーションを継承します。
 
-1. Create a `build.gradle` file for the module.
+1. モジュール用の `build.gradle` ファイルを作成します。
 
     ```{literalinclude} ./adding-the-uad-framework/resources/liferay-h6d2.zip/h6d2-uad/build.gradle
     ```

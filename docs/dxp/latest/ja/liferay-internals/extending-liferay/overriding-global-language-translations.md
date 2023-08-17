@@ -56,12 +56,13 @@ Liferay DXP/Portal 7.4+では、メタデータを使用してオーバーライ
 ```{literalinclude} ./overriding-global-language-translations/resources/liferay-i2f4.zip/i2f4-impl/src/main/resources/content/Language_en_US.properties
 :language: properties
 ```
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to deploy the example:
+次に、以下の手順でサンプルをデプロイします。
 
-1. Download and unzip the `liferay-i2f4.zip` example project.
+1. `liferay-i2f4.zip`サンプルプロジェクトをダウンロードして解凍する。
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/liferay-internals/extending-liferay/liferay-i2f4.zip -O

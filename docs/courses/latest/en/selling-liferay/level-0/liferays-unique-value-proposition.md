@@ -24,7 +24,7 @@ While competitors claim to deliver the same value, only Liferay has the unique c
 
 ```{note}
 * View the [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-value-proposition) from the live workshop of this module.
-* Download the [PDF]https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) of the presentation used in the live workshop.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) of the presentation used in the live workshop.
 ```
 
 ## What is a Value Proposition anyway?

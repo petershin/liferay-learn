@@ -3,7 +3,7 @@ uuid: d3f40144-866d-4a66-af04-7d482e06c8c7
 ---
 # Configuring Workflows and Notifications
 
-During channel configuration, you can enable workflows so that all orders go through at least one step of approval before they're placed. Delectable Bonsai’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. To enable this,
+During channel configuration, you can enable workflows so that all orders go through at least one step of approval before they’re placed. Delectable Bonsai’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. To enable this, 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Channels*. 
 
@@ -15,9 +15,11 @@ During channel configuration, you can enable workflows so that all orders go thr
 
 1. Click *Save*.
 
-This enables the single order approver workflow for buyers when they place orders. Buyers placing orders for Almighty Syrup, Marvelous Markets or Posh Petals must get them approved by their order managers. This workflow helps when there’s a budget allocated for buying and requires approvals. 
+This enables the single order approver workflow for buyers when they place orders. A user with the buyer role in the customer account can create an order. But it requires a user with the order manager role in the customer account to approve the order before it can be checked out. A user with the sales agent role can also approve orders. This workflow helps when there’s a budget allocated for buying and requires approvals.
 
-The seller order acceptance workflow, if enabled, requires all orders to go through one step of approval before they're accepted. This takes place after the order has been placed. The Single Approver (Version 1) workflow is the only type of workflow available out-of-the-box, but you can customize it further in the workflow editor. Read [Introduction to Order Workflows](https://learn.liferay.com/w/commerce/order-management/order-workflows/introduction-to-order-workflows) for more information about workflows. 
+The seller order acceptance workflow, if enabled, requires all orders to go through one step of approval before they’re accepted. This is applicable for Delectable Bonsai when they receive an order from a customer and it requires an approval before it’s accepted. 
+
+The Single Approver (Version 1) workflow is the only type of workflow available out-of-the-box, but you can customize it further in the workflow editor. Read [Introduction to Order Workflows](https://learn.liferay.com/w/commerce/order-management/order-workflows/introduction-to-order-workflows) for more information about workflows. 
 
 ## Creating a Notification Template
 
@@ -75,7 +77,7 @@ This creates a notification template for sending notifications whenever an order
 
    `orderStatus=10`
 
-   Each order status corresponds to an integer. See below to learn more.
+   Each [order status](https://learn.liferay.com/web/guest/w/commerce/order-management/orders/order-life-cycle) corresponds to an integer. See below to learn more.
 
    | Order Status      | Integer Value |
    | :---------------- | :------------ |

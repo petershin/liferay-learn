@@ -3,7 +3,7 @@ uuid: ffcc629f-00e3-4e97-88ee-83ca62b73154
 ---
 # Creating and Configuring Catalogs
 
-As Delectable Bonsai caters to businesses and regular customers, Damian, the category manager, wants different catalogs to separate these products. Some products are fulfilled by third-party suppliers and they'll have their own catalogs. 
+Delectable Bonsai caters to businesses and consumers and has a wide range of products. Damian, the category manager, wants to create a catalog to store these products. Some products are fulfilled by third-party suppliers and they’ll have their own catalogs. We’ll cover this in a later module. 
 
 To create a new catalog,
 
@@ -11,7 +11,7 @@ To create a new catalog,
 
 1. Click *Add* (![Add](../../images/icon-add.png)) and enter the following:
 
-   **Name:** Delectable Bonsai B2B
+   **Name:** DB Product Catalog
 
    **Default Language:** English (United States)
 
@@ -21,14 +21,20 @@ To create a new catalog,
 
 1. Click *Submit*.
 
-After creating a catalog, a base price list and a base promotion list is also created for you. There’s an option to add a default catalog image. When you don't have images for products in the catalog, the default catalog image appears as the product image. You also have the option to link the catalog to a supplier account. We’ll cover this in a further module, so for now, you can leave all the defaults as it is. 
+After creating a catalog, a base price list and a base promotion list is also created automatically. There’s an option to add a default catalog image. When you don’t have images for products in the catalog, the default catalog image appears as the product image. 
 
-<!-- Use logo for catalog image and add steps for it -->
+<!-- TASK: Add steps to add catalog image once image is added to library. 
+
+To add the default image, 
+
+1. Click on *Select File* in the *Default Catalog Image* card.
+
+1. Choose ___ from the library.
+
+1. Click *Save*. -->
 
 ![Add a default catalog image.](./creating-and-configuring-catalogs/images/02.png)
 
-Now, follow the same steps to create a catalog named Delectable Bonsai B2C for their regular products. Use the following image as the default catalog image for the B2C catalog.
-
-![Create a B2C catalog and use this image as the default catalog image.](./creating-and-configuring-catalogs/images/03.png)
+You also have the option to link the catalog to a supplier account. We’ll cover this in a later module, so for now, you can leave the rest of the defaults as it is. 
 
 Next: [Creating Products](./creating-products.md)

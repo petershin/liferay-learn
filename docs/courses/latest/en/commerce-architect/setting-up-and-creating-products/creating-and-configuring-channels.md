@@ -3,7 +3,7 @@ uuid: 988eaa6e-32e7-4517-b9df-e98a80c8dd4e
 ---
 # Creating and Configuring Channels
 
-A channel is a place where you sell products. In Liferay, you must link a site to a channel to be able to sell products on that site. Delectable Bonsai operates two online stores, one for B2B customers and one for B2C customers. To support this, you must create two channels and link them to their corresponding sites. 
+A channel is a place where you sell products. In Liferay, you must link a channel to a site to be able to sell products on that site. Delectable Bonsai operates two online stores, one for B2B customers and one for B2C customers. To support this, you must create two channels and link them to their corresponding sites. 
 
 To create a channel,
 
@@ -30,10 +30,10 @@ For the B2B channel, we’ll configure a payment method, shipping method, and en
 In the *Details* section, ensure the *Commerce Site Type* is set to *B2B* for the B2B channel. When the site type is B2B, every account in the site must be a business account. Select the *Type* tab, and click *Select Site*. Choose the *Delectable Bonsai B2B* site and click *Save*. You can now use this channel to accept customer orders from your site. 
 
 ```{note}
-For the B2C channel, you must set the *Commerce Site Type* as *B2C*. There’s also a B2X type that permits both personal and business accounts. See [Site Types](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) for more information.
+For the B2C channel, you must set the *Commerce Site Type* as *B2C*. There’s also a B2X type that permits both personal and business accounts. See [Site Types](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) for more information. You can also use [Liferay’s accelerators](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/accelerators) to jumpstart your online store. 
 ```
 
-Delectable Bonsai offers their B2B customers an option to pay by money order. They ship using a variable shipping rate that is calculated based on the weight of the shipment. You can use Liferay’s out-of-the-box payment and shipping methods to implement both of these. 
+Delectable Bonsai offers their B2B customers an option to pay by money order. They ship using a variable shipping rate that's calculated based on the weight of the shipment. You can use Liferay’s out-of-the-box payment and shipping methods to implement both of these. 
 
 ### Configuring a Payment Method
 
@@ -82,6 +82,6 @@ Delectable Bonsai offers their B2B customers an option to pay by money order. Th
    | Standard Shipping | 10.01       | 20.0      | 5.99        | 3.99                     |
    | Standard Shipping | 20.01       | 30.0      | 6.99        | 4.99                     |
 
-In the next section, we’ll set up order notifications and enable buyer order approval workflows. We’ll see how the order lifecycle changes when there’s a workflow in place and how users are notified at different stages of the order. 
+In the next section, we’ll set up order notifications and enable buyer order approval workflows. We’ll see how the order lifecycle changes when there’s a workflow in place and how users are notified when an order is accepted. 
 
 Next: [Configuring Workflows and Notifications](./configuring-workflows-and-notifications.md)

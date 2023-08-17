@@ -3,9 +3,9 @@ uuid: ab3a83f6-1401-48a2-818b-62f3e8dc0ef7
 ---
 # Creating Products
 
-Delectable Bonsai offers a wide range of products starting from bonsai trees, flavoured syrups to pruning equipment, seedlings, and swag. With Liferay’s out-of-the-box product management capabilities, you can create different kinds of products through a unified interface. Liferay also supports importing products from third party systems. Damian, the category manager, now needs your help to create a few products in the B2B and B2C catalogs. 
+Delectable Bonsai offers a wide range of products starting from bonsai trees, flavored syrups to pruning equipment, seedlings, and swag. With Liferay’s out-of-the-box product management capabilities, you can create different kinds of products through a unified interface. Liferay also supports importing products from third party systems. Damian now needs your help to create a few products in the catalog. 
 
-Let’s start off by creating a simple product in the B2C catalog. We’ll create their signature product, sap infused maple syrup. 
+Let’s start off by creating a simple product in the product catalog. We’ll create Delectable Bonsai’s signature product, sap infused maple syrup. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
@@ -13,7 +13,7 @@ Let’s start off by creating a simple product in the B2C catalog. We’ll creat
 
    **Name:** Sap Infused Maple Syrup
 
-   **Catalog:** Delectable Bonsai B2C
+   **Catalog:** DB Product Catalog
 
    ![Enter the name and catalog for the product.](./creating-products/images/01.png)
 
@@ -61,9 +61,9 @@ Let's add some basic details for the product.
 
 This publishes the product with some basic details. Now, create two more products using the following information. Enable or disable the same toggles as with the product created earlier. 
 
-| Product Name                   | Catalog               | Category | SKU     | Dimensions                       | Weight | Maximum Order Quantity | Low Stock Action   |
-| :----------------------------- | :-------------------- | :------- | :------ | :------------------------------- | :----- | ---------------------- | ------------------ |
-| Sap Infused Orange Maple Syrup | Delectable Bonsai B2C | Syrup    | DBSY002 | Width: 4, Height: 6, Depth: 4    | 0.5    | 10                     | Set as Unpublished |
-| Bougainvillea Bonsai           | Delectable Bonsai B2C | Bonsai   | DBBO001 | Width: 10, Height: 10, Depth: 10 | 12     | 10                     | Set as Unpublished |
+| Product Name                   | Catalog            | Category | SKU     | Dimensions                       | Weight | Maximum Order Quantity | Low Stock Action   |
+| :----------------------------- | :----------------- | :------- | :------ | :------------------------------- | :----- | ---------------------- | ------------------ |
+| Sap Infused Orange Maple Syrup | DB Product Catalog | Syrup    | DBSY002 | Width: 4, Height: 6, Depth: 4    | 0.5    | 10                     | Set as Unpublished |
+| Bougainvillea Bonsai           | DB Product Catalog | Bonsai   | DBBO001 | Width: 10, Height: 10, Depth: 10 | 12     | 10                     | Set as Unpublished |
 
 In the next module, we’ll configure the products and its SKUs, add inventory, prices, and other necessary information to enrich the storefront experience.

@@ -11,12 +11,12 @@ uuid: 55c921fc-97c5-4f6a-b7ae-60fbea19cbd1
 
 Kyle and Damian need your help in setting up the required channels, catalogs and products for the B2B and B2C stores. Kyle, being the administrator, is in charge of creating the channels, while Damian, being the category manager, is responsible for creating the catalogs, products, configuring their prices, and adding inventory.
 
-After completing this module, you should have
+After completing this module, you should have:
 
-* Product catalogs for both B2B and B2C products
-* Channels for the B2B and B2C sites
-* Warehouses fulfilling the B2B and B2C channels
-* Products created in the B2B and B2C catalogs
+* A product catalog containing different products
+* Channels configured and linked to both sites
+* Payment methods and shipping methods set up
+* Warehouses that serve both online stores
 
 Ready?
 

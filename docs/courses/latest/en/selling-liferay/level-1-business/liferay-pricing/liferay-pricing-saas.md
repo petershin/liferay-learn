@@ -1,8 +1,7 @@
 ---
 toc:
-  - ./liferay-pricing/liferay-pricing-saas-introduction.md
-  - ./liferay-pricing/liferay-pricing-saas-malus-apvs.md
-  - ./liferay-pricing/liferay-pricing-saas-addons-upcoming.md
+  - ./liferay-pricing-saas-malus-apvs.md
+  - ./liferay-pricing-saas-addons-upcoming.md
 uuid: b030fe90-26bf-4c19-8152-cad0b539077b
 ---
 

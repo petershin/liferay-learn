@@ -98,16 +98,6 @@ Pages can also be created in a hierarchical fashion by creating Child Pages. Chi
 You can navigate among pages of a Site hierarchy with the Site Map application. A Site Administrator can configure a root page and a display depth. The display depth of the Site Map application determines how many levels of nested pages to display.
 ```
 
-## Previewing Pages
-
-You can preview pages you create to see how they look before making them live or to identify the ones you need to work on:
-
-Open the *Product Menu* ( ![Product Menu icon](../../../images/icon-product-menu.png) ) and select *Site Builder* &rarr; Pages.
-
-Click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) on the page you want to preview, and select *View*.
-
-![You can preview pages easily before working on them](./understanding-pages/images/05.png)
-
 ## Enabling Private Pages
 
 {bdg-secondary}`For Liferay 7.4 U22+ and GA22+`
@@ -120,7 +110,7 @@ By default, new Liferay installations include a release feature flag that preven
 
 1. In the Disabled Features dropdown menu, select *Disable Private Pages*.
 
-   ![Select Disable Private Pages.](./understanding-pages/images/06.png)
+   ![Select Disable Private Pages.](./understanding-pages/images/05.png)
 
 1. Click *Update*.
 

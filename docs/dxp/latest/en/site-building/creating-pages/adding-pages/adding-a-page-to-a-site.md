@@ -85,6 +85,16 @@ Using the Actions Menu (![Actions Menu](../../../images/icon-actions.png)) next 
 
 1. Follow the standard steps for creating a Page, as outlined [above](#adding-a-new-page).
 
+## Previewing Pages
+
+You can preview pages you create to see how they look before making them live or to identify the ones you need to work on:
+
+Open the *Product Menu* ( ![Product Menu icon](../../../images/icon-product-menu.png) ) and select *Site Builder* &rarr; Pages.
+
+Click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) on the page you want to preview, and select *View*.
+
+![You can preview pages easily before working on them](./adding-a-page-to-a-site/images/06.png)
+
 ## Related Information
 
 - [Understanding Pages](../understanding-pages/understanding-pages.md)

@@ -128,7 +128,9 @@ Content mapping connects editable fields in your fragment with fields from an as
 
 ## Creating Editable Links
 
-There is also a specific syntax for creating editable link elements:
+You can make general link elements editable by setting the `data-lfr-editable-type` to `link`. The `data-lfr-editable-id` must be a unique ID.
+
+You can create editable link elements in different ways. Here are some examples:
 
 ```html
 <a
@@ -141,7 +143,7 @@ There is also a specific syntax for creating editable link elements:
 </a>
 ```
 
-You can associate the link with an e-mail using `mailto:` URI scheme or with a telephone number using `tel:` URI scheme:
+Use `mailto:` URI scheme to associate the link with an email:
 
 ```html
 <a
@@ -153,6 +155,8 @@ You can associate the link with an e-mail using `mailto:` URI scheme or with a t
   Send a Message
 </a>
 ```
+
+Use `tel:` URI scheme to associate the link with a telephone number:
 
 ```html
 <a

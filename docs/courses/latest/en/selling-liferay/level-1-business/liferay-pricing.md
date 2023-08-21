@@ -1,6 +1,8 @@
 ---
 toc:
   - ./liferay-pricing/liferay-pricing-saas.md
+  - ./liferay-pricing/liferay-pricing-saas-malus-apvs.md
+  - ./liferay-pricing/liferay-pricing-saas-addons-upcoming.md
   - ./liferay-pricing/liferay-pricing-paas.md
   - ./liferay-pricing/liferay-pricing-self-hosted.md
 uuid: 37d59a74-1900-489a-9e52-2ee681c7d886

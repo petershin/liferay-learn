@@ -5,67 +5,67 @@ toc:
   - ./main-competitors-faced-by-liferay/optimizely.md
   - ./main-competitors-faced-by-liferay/acquia.md
 ---
-# Liferayが直面する主な競合他社
+# Liferayの主な競合他社
 
 **概要**
 
-* Liferayは、主にDXPの分野で多くの競合他社と競争している。
-* 主な競合相手は以下の4つである。
-  * アドビ
-  * サイトコア
-  * オプティマイズリー
-  * アクワイア
+* Liferayには、主にDXPの分野で多くの競合他社がいます。
+* 主な競合他社は以下の4社です。
+  * Adobe社
+  * Sitecore社
+  * Optimizely社
+  * Acquia社
 
 ## 背景
 
-ここでは、Liferayの主な競合について見ていきます。
+ここでは、弊社の主な競合他社を確認します。
 
-このモジュールを完了すると、Liferayがこれらの競合他社と何が違うのか基本的に理解できるようになります。
+このモジュールを完了すると、Liferayと上記の競合他社との相違点について基本的な知識が得られます。
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/l0-6-main-competitors-we-face) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/l0-6-main-competitors-we-face-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-6-main-competitors-we-face) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-6-main-competitors-we-face-pdf)からダウンロードしてください。
 ```
 
 ## 競合他社の共通点
 
-Liferayの競合他社にはいくつかの明確な共通点がある：
+Liferayの競合他社には明確な共通点がいくつかあります。
 
-* この4社はいずれも複数の企業を買収して製品群を構築しており、その結果、システムがバラバラになっている。
+* 上記4社はいずれも複数の企業を買収して製品スイートを構築しているため、バラバラなシステムとなっている。
 * その多くは、明確な戦略やカスタマーサクセスへのコミットメントが欠如していると批判されてきた。
 * ほとんどの場合、カスタマイズ、アップグレード、ホスティングに関連するコストが高い。
-* 多くはCMSのバックグラウンドを持っている。 このように統合されているため、セキュリティ・サービスとアカウント・サービスの機能は限られている。
+* 多くはCMSのバックグラウンドを持つ。 この統合により、セキュリティサービスとアカウントサービスの機能が限られている。
 
 ## Liferayの特徴
 
-![競合他社に対するLiferayの強みは、そのオープンソースとポータルの伝統です。](./main-competitors-faced-by-liferay/images/01.png)
+![競合他社に対するLiferayの強みは、そのオープンソースとポータル製品にあります。](./main-competitors-faced-by-liferay/images/01.png)
 
-### 自社製
+### 自社で開発
 
-Liferayの製品機能にギャップがある場合、その製品や機能を社内で構築します。 Liferayはそのギャップを埋めるために企業を買収することはない。 社内で構築することで、プラットフォーム全体でユーザーと開発者のシームレスな体験を実現します。
+Liferayの製品機能に不足している点がある場合、その製品や機能を社内で構築します。 Liferayはその点を埋めるために企業を買収することはありません。 社内で構築することで、プラットフォーム全体でユーザーと開発者のシームレスなエクスペリエンスを実現します。
 
-### Liferayは拡張性とカスタマイズ性に優れている
+### Liferayの優れた拡張性とカスタマイズ性
 
-LiferayはAPIファーストのインフラを持っています。 アプリケーションのデザインは、まずコードではなくAPIから始まり、ユーザーのコミュニティから有機的に成長する。
+LiferayにはAPIファーストのインフラストラクチャーがあります。 アプリケーションのデザインは、まずコードではなくAPIから始まり、ユーザーのコミュニティから有機的に成長します。
 
-### ポータル技術にルーツを持つことが強み
+### ポータルテクノロジーのルーツが強み
 
-その結果
+その結果、以下を実現しています。
 
-* 強力な統合能力
-* 長期的な顧客関係を重視
-* 企業のサイロを埋める
-* B2Bリレーションシップ・マネジメント
+* 強力な統合機能
+* 長期的な顧客との関係を重視
+* 企業のサイロ化を解消
+* B2Bの関係を管理
 * 安全なデータ処理機能
-* デジタルの敏捷性
+* デジタルの俊敏性
 
-### Liferayならカスタマイズが簡単
+### カスタマイズの容易さ
 
-Liferayのモジュラーアーキテクチャには、動的に拡張したりオーバーライドできるコンポーネントが含まれています。
+Liferayのモジュール式のアーキテクチャには、動的に拡張したりオーバーライドしたりできるコンポーネントが含まれています。
 
-### ライフェレーのデジタル戦略は継続的な業績向上
+### Liferayのデジタル戦略とは業績を継続的に向上させること
 
-これには改善も含まれる。
+これには以下の改善も含まれます。
 
 * 顧客サービス
 * カスタマーサポート
@@ -75,31 +75,32 @@ Liferayのモジュラーアーキテクチャには、動的に拡張したり�
 
 ## Liferayの競合他社
 
-各タイルをクリックすると、Liferayが競合するDXPベンダーのうち、最もよく直面する4社についての詳細を読むことができます。 それぞれのケースで、私たちは以下を提供した：
+各項目をクリックすると、Liferayが競合しているDXPベンダーの主な4社について、以下の詳細を確認できます。 　
 
-* 業界にとっての主要課題
-* その業界でよく見られるソリューション
+* 業界における主要課題
+* 業界でよく見られるソリューション
 
-全部読むつもり？ まずはアドビから。
+　 最初はAdobe社です。
 
-[行こう！](./main-competitors-faced-by-liferay/adobe.md)
+[　](./main-competitors-faced-by-liferay/adobe.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Adobe
+:::{grid-item-card} Adobe社
 :link: ./main-competitors-faced-by-liferay/adobe.md
 :::
 
-:::{grid-item-card} Sitecore
+:::{grid-item-card} Sitecore社
 :link: ./main-competitors-faced-by-liferay/sitecore.md
 :::
 
-:::{grid-item-card} Optimizely
+:::{grid-item-card} Optimizely社
 :link: ./main-competitors-faced-by-liferay/optimizely.md
 :::
 
-:::{grid-item-card} Acquia
+:::{grid-item-card} Acquia社
 :link: ./main-competitors-faced-by-liferay/acquia.md
 :::
 ::::
+

@@ -1,10 +1,10 @@
 # 検索とナビゲーション
 
-Liferay DXPを使えば、ダイナミックなナビゲーション、カテゴリー、検索結果など、オーディエンスに合わせたデジタル体験を構築できます。 その結果、顧客、パートナー、または従業員が簡単にコンテンツを見つけ、関連性の高い他のサービス、製品、またはコンテンツを発見できるユーザーエクスペリエンスが得られます。
+Liferay DXPにより、動的ナビゲーション、カテゴリー、検索結果など、オーディエンスに合わせたデジタルエクスペリエンスを構築できます。 その結果、顧客、パートナー、または従業員は、自身のコンテンツだけでなく、Liferayが提供する関連性の高い他のサービス、製品、またはコンテンツを検索しやすくなるユーザーエクスペリエンスを得られます。
 
-![ダイナミックナビゲーションメニューは、顧客の生活をより良くするLiferay DXPのエキサイティングな機能の一つです。](./search-and-navigation/images/01.png)
+![動的ナビゲーションメニューは、顧客の業務を改善するLiferay DXPの優れた機能の一つです。](./search-and-navigation/images/01.png)
 
-## サイト内検索
+## サイト検索
 
 * [検索機能の概要](https://learn.liferay.com/w/dxp/using-search/getting-started/search-overview)
 * [コンテンツの検索](https://learn.liferay.com/w/dxp/using-search/getting-started/searching-for-content)
@@ -24,4 +24,4 @@ Liferay DXPを使えば、ダイナミックなナビゲーション、カテゴ
 * [ナビゲーションメニュー](https://learn.liferay.com/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
 * [メニュー表示を設定する](https://learn.liferay.com/w/dxp/site-building/site-navigation/configuring-menu-displays)
 
-次へ [ヘッドレスAPIとマルチチャンネル](./headless-apis-and-multichannel.md).
+次：[Headless APIとマルチチャネル](./headless-apis-and-multichannel.md)

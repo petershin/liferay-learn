@@ -18,13 +18,13 @@ toc:
 ---
 # Liferay DXP製品の機能
 
-簡単に復習しておくと、Liferayの製品はLiferay DXPで、Digital Experience Platformのコア機能と、コマースとアナリティクスの機能が含まれている。 **** のすべてのお客様は、導入方法に関係なく、製品のすべての機能と性能をご利用いただけます。
+簡単に復習しておくと、Liferayの製品はLiferay DXPであり、デジタルエクスペリエンスプラットフォームのコア機能と、コマースとアナリティクスの機能が含まれています。 **すべての** お客様は、デプロイ方法に関係なく、すべての機能をご利用いただけます。
 
-![Liferay製品ラインには3つのケイパビリティセットがあります。](./liferay-product-offering/images/01.png)
+![Liferay製品ラインには3つの機能セットがあります。](./liferay-product-offering/images/01.png)
 
-このモジュールが終了する頃には、Liferay DXPの主な機能領域すべてをハイレベルで把握できるようになります。 このレッスンでは、まず Liferay DXP の [Design Systems と Experience Management](./liferay-product-overview/design-systems-and-experience-management.md) の機能について復習します。
+このモジュールを終えるころには、Liferay DXPの主な機能領域の概要を把握できるようになります。 このレッスンでは、まず Liferay DXPの[デザインシステムとエクスペリエンスの管理](./liferay-product-overview/design-systems-and-experience-management.md)の確認から開始します。
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/l0-2b-liferay-overview) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/l0-2b-liferay-overview-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-2b-liferay-overview) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-2b-liferay-overview-pdf)からダウンロードしてください。
 ```

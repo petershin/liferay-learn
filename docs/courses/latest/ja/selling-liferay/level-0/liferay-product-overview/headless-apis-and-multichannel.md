@@ -1,16 +1,16 @@
-# ヘッドレスAPIとマルチチャネル
+# Headless APIとマルチチャネル
 
-すべてのシステム、アプリケーション、データを1つのプラットフォームで接続し、あらゆるチャネルで統一されたデジタル体験を実現します。 より生産性の高いオンライン体験を実現するために、より優れたデジタル体験を提供する。 ヘッドレスAPIを使用して、さまざまなデバイスやチャネルで統一されたデジタル体験を提供し、同時にLiferayソリューションの機能拡張を容易にします。
+すべてのシステム、アプリケーション、データを1つのプラットフォームで接続し、あらゆるチャネルで統一されたデジタルエクスペリエンスを作成します。 より優れたデジタルエクスペリエンスを提供し、より生産性の高いオンラインエクスペリエンスを作成します。 Headless APIを使用して、さまざまなデバイスやチャネルで統一されたデジタルエクスペリエンスを提供し、同時にLiferayソリューションの機能拡張を容易にします。
 
-![Headless Delivery API Explorerは、利用可能なAPIを知るために使用できる。](./headless-apis-and-multichannel/images/01.png)
+![ヘッドレスデリバリーAPIエクスプローラーを使用して、利用可能なAPIを確認できます。](./headless-apis-and-multichannel/images/01.png)
 
-LiferayのヘッドレスAPI
+LiferayのHeadless API
 
-* 標準ベースである（OpenAPIとGraphQLエンドポイント）
-* ほぼすべてのシステム機能をカバー（ヘッドレスCMS、ヘッドレスコマース、システム管理など）
-* マルチチャネルであり、モバイルアプリ、キオスク、その他のシナリオに使用できる。
-* 既存の伝統的なREST APIやJSON APIを補完する
+* 標準ベース（OpenAPIとGraphQLエンドポイント）
+* ほぼすべてのシステム機能（ヘッドレスCMS、ヘッドレスコマース、システム管理など）をカバー
+* マルチチャネルであり、モバイルアプリ、キオスク、その他のシナリオに使用可能
+* 既存かつ従来のREST APIやJSON APIを補完
 
 * [ヘッドレスプラットフォームとしてのLiferayの使用](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform)
 
-次へ [コラボレーションと知識共有](./collaboration-and-knowledge-sharing.md).
+次：[コラボレーションとナレッジ共有](./collaboration-and-knowledge-sharing.md)

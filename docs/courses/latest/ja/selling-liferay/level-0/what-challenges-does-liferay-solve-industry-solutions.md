@@ -7,55 +7,55 @@ toc:
   - ./what-challenges-does-liferay-solve-industry-solutions/healthcare.md
   - ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
 ---
-# Liferayはどのような課題を解決するか - 業界ソリューション
+# Liferayが解決する課題：業界別ソリューション
 
 **概要**
 
-* Liferayは、次のような業界のソリューションに最適です。
+* Liferayは、次のような業界のソリューションとして最適です。
   * 製造
-  * 金融サービス
+  * 財務サービス
   * 政府・公共部門
-  * 保険料
+  * 保険
   * ヘルスケア
-  * エネルギーと公益事業
-* Liferayは、ほとんどの業界で使用できるほど柔軟です。
-* 各業界には、 [水平的ソリューション](./what-challenges-does-liferay-solve-horizontal-solutions) の多くが存在する。
+  * エネルギー産業と公益事業
+* Liferayは、ほぼすべての業界で使用できる柔軟性を備えています。
+* 各業界には、多くの[水平ソリューション](./what-challenges-does-liferay-solve-horizontal-solutions)があります。
 
 ## 背景
 
-ここでは、Liferayが遭遇する主要業界の一般的な課題をどのように解決できるのか、各業界の一般的なソリューションとともにご紹介します。
+ここでは、主要な業界が直面する一般的な課題をLiferayでどのように解決できるのか、各業界の一般的なソリューションとともにご紹介します。
 
-これらは最も一般的な業種ですが、Liferayの強みの1つは、ほとんどすべての業種で使用できることです。
+これらの業界は最も一般的な例ですが、Liferayの強みの1つは、ほぼすべての業界で使用できること、またその使用実績もあるということです。
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/l0-5b-what-challenges-do-we-solve-industry-solutions) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-5b-what-challenges-do-we-solve-industry-solutions) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions-pdf)からダウンロードしてください。
 ```
 
-## 産業別ソリューション
+## 業界別ソリューション
 
-各タイルをクリックすると、Liferayが使用されている最も一般的な6つの業界についての詳細をご覧いただけます。 それぞれのケースで、我々は以下を提供した。
+各項目をクリックすると、Liferayが使用されている最も一般的な6つの業界についての詳細をご覧いただけます。 それぞれの項目では以下について説明しています。
 
-* 業界にとっての主要課題
-* その業界でよく見られるソリューション
+* 業界における主要課題
+* 業界でよく見られるソリューション
 
-全部読むつもり？ まずは製造から。
+　 最初は製造です。
 
-[行こう！](./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md)
+[製造](./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} 製造業
+:::{grid-item-card} 製造
 :link: ./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md
 
-製造業におけるLiferay
+製造におけるLiferay
 :::
 
-:::{grid-item-card} 金融サービス
+:::{grid-item-card} 財務サービス
 :link: ./what-challenges-does-liferay-solve-industry-solutions/financial-services.md
 
-金融サービスにおけるLiferay
+財務サービスにおけるLiferay
 :::
 
 :::{grid-item-card} 政府および公共部門
@@ -76,9 +76,9 @@ toc:
 ヘルスケアにおけるLiferay
 :::
 
-:::{grid-item-card} エネルギーおよび公益事業
+:::{grid-item-card} エネルギー産業と公益事業
 :link: ./what-challenges-does-liferay-solve-industry-solution/energy-and-utilities.md
 
-Liferay in Energy and Utilities
+エネルギー産業と公益事業におけるLiferay
 :::
 ::::

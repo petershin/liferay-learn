@@ -1,6 +1,6 @@
-# 開発ツール
+# 開発者向けツール
 
-Liferayは、標準的なビルドスクリプト、軽量CLIユーティリティ、Eclipseベースの完全なIDEを含む様々な開発者ツールを提供します。 Liferayの開発者ツールは、初心者から長年コードを書いてきたエキスパートまで、すべての開発者に役立ちます。
+Liferayは、標準的なビルドスクリプト、軽量なCLIユーティリティ、Eclipseベースの完全なIDEを含む様々な開発者ツールを提供します。 Liferayの開発者ツールは、初心者から長年コードを書いてきたエキスパートまで、すべての開発者に役立ちます。
 
 ## Liferay Workspace
 
@@ -8,6 +8,6 @@ Liferayは、標準的なビルドスクリプト、軽量CLIユーティリテ�
 
 ## Blade CLI
 
-* [Generating Projects with Blade CLI](https://learn.liferay.com/w/dxp/building-applications/tooling/blade-cli/generating-projects-with-blade-cli)
+* [Blade CLIを使用したプロジェクトの生成](https://learn.liferay.com/w/dxp/building-applications/tooling/blade-cli/generating-projects-with-blade-cli)
 
-次へ [プラットフォーム・サービス](./platform-services.md).
+次：[プラットフォームサービス](./platform-services.md)

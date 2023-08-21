@@ -5,7 +5,7 @@ uuid: 33c781c1-c24e-44fe-8efc-90c0327abc3f
 
 Sites are customizable spaces for building personalized digital experiences. Follow these steps to create a basic site in your Liferay instance:
 
-1. Open the *Global Menu* ( ![Applications Menu](../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Sites*.
+1. Open the *Global Menu* ( ![Applications Menu](../../images/icon-applications-menu.png) ) and go to the *Control Panel* tab &rarr; *Sites*.
 
     ![Open the Sites application.](./adding-a-site/images/01.png)
 

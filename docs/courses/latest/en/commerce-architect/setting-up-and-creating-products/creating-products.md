@@ -61,9 +61,9 @@ Let's add some basic details for the product.
 
 This publishes the product with some basic details. Now, create two more products using the following information. Enable or disable the same toggles as with the product created earlier. 
 
-| Product Name                   | Catalog            | Category | SKU     | Dimensions                       | Weight | Maximum Order Quantity | Low Stock Action   |
-| :----------------------------- | :----------------- | :------- | :------ | :------------------------------- | :----- | ---------------------- | ------------------ |
-| Sap Infused Orange Maple Syrup | DB Product Catalog | Syrup    | DBSY002 | Width: 4, Height: 6, Depth: 4    | 0.5    | 10                     | Set as Unpublished |
-| Bougainvillea Bonsai           | DB Product Catalog | Bonsai   | DBBO001 | Width: 10, Height: 10, Depth: 10 | 12     | 10                     | Set as Unpublished |
+| Product Name                   | Catalog            | Category | SKU     | Dimensions                    | Weight | Maximum Order Quantity | Low Stock Action   |
+| :----------------------------- | :----------------- | :------- | :------ | :---------------------------- | :----- | ---------------------- | ------------------ |
+| Sap Infused Orange Maple Syrup | DB Product Catalog | Syrup    | DBSY002 | Width: 4, Height: 6, Depth: 4 | 0.5    | 10                     | Set as Unpublished |
+| Sap Infused Honey Maple Syrup  | DB Product Catalog | Syrup    | DBSY003 | Width: 4, Height: 6, Depth: 4 | 0.5    | 10                     | Set as Unpublished |
 
 In the next module, we’ll configure the products and its SKUs, add inventory, prices, and other necessary information to enrich the storefront experience.

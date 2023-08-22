@@ -103,6 +103,7 @@ Remember that there are separate lists for different Asset types. More details o
 - [Forms](./touchpoints/assets/forms.md)
 - [Document and Media](./touchpoints/assets/documents-and-media.md)
 - [Tracking Custom Assets](./touchpoints/assets/tracking-custom-assets.md)
+- [Assets in Custom Portlets](./touchpoints/assets/assets-in-custom-portlets.md)
 
 ### Events
 

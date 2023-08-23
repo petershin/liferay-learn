@@ -39,13 +39,13 @@ Let's add some basic details for the product.
 
 1. Navigate to the *Configuration* tab and enter the following values in the *Shipping* card.
 
-   **Width:** 4
+   **Width:** 2
 
    **Height:** 6
 
-   **Depth:** 4
+   **Depth:** 1.5
 
-   **Weight:** 0.5
+   **Weight:** 0.22
 
 1. Disable *Free Shipping* and *Ship Separately*.
 
@@ -61,9 +61,9 @@ Let's add some basic details for the product.
 
 This publishes the product with some basic details. Now, create two more products using the following information. Enable or disable the same toggles as with the product created earlier. 
 
-| Product Name                   | Catalog            | Category | SKU     | Dimensions                    | Weight | Maximum Order Quantity | Low Stock Action   |
-| :----------------------------- | :----------------- | :------- | :------ | :---------------------------- | :----- | ---------------------- | ------------------ |
-| Sap Infused Orange Maple Syrup | DB Product Catalog | Syrup    | DBSY002 | Width: 4, Height: 6, Depth: 4 | 0.5    | 10                     | Set as Unpublished |
-| Sap Infused Honey Maple Syrup  | DB Product Catalog | Syrup    | DBSY003 | Width: 4, Height: 6, Depth: 4 | 0.5    | 10                     | Set as Unpublished |
+| Product Name                   | Catalog            | Category | SKU     | Dimensions                      | Weight | Maximum Order Quantity | Low Stock Action   |
+| :----------------------------- | :----------------- | :------- | :------ | :------------------------------ | :----- | ---------------------- | ------------------ |
+| Sap Infused Orange Maple Syrup | DB Product Catalog | Syrup    | DBSY002 | Width: 2, Height: 6, Depth: 1.5 | 0.22   | 10                     | Set as Unpublished |
+| Sap Infused Honey Maple Syrup  | DB Product Catalog | Syrup    | DBSY003 | Width: 2, Height: 6, Depth: 1.5 | 0.22   | 10                     | Set as Unpublished |
 
 In the next module, we’ll configure the products and its SKUs, add inventory, prices, and other necessary information to enrich the storefront experience.

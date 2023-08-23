@@ -92,6 +92,22 @@ Alternatively, you can specify the remote inline:
 lcp shell -p <project-id> --service <service-id> --remote <remote-alias>
 ```
 
+## Downloading Backups
+
+Use the `lcp backup` command to download a specific backup using its ID.
+
+Run this command to download both the database and document library concurrently:
+
+```bash
+lcp backup download --backupId <ID>
+```
+
+Alternatively, add the `--database` or `--doclib` flags to only download the one specified:
+
+```bash
+lcp backup download <type> --backupId <ID>
+```
+
 ## Showing the Service Logs
 
 Use `lcp log` commands to display logs for specific projects, services, and instances. The following examples include some common commands, though you can see available command options by running `lcp log --help`.

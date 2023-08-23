@@ -63,6 +63,20 @@ A success message appears on the page when the backup is generated and the servi
 
 ![When the backup is finished being added to the list in your environment, a success message appears.](./downloading-and-uploading-backups/images/04.png)
 
+## Downloading Backups via the CLI Tool
+
+> Requires CLI tool version 3.12.0+, backup service version 5.9.0+, and Liferay service version 5.3.0+.
+
+You can use the [CLI tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to directly download backups. This method allows you to concurrently download both the database and document library volume.
+
+Run this command using its ID to download a specific backup's database and document library simultaneously:
+
+```bash
+lcp backup download --backupId {ID}
+```
+
+You can also add the `--database` flag to this command to download only the database, or use the `--doclib` flag to download only the document library.
+
 ## Backup Service APIs
 
 The backup service has APIs that you can also use to download and upload backups. You can invoke these APIs using a command line tool such as `curl`.
@@ -117,7 +131,7 @@ Name | Type     | Required |
 
 ```bash
 curl -X GET \
-  https://backup-<PROJECT-NAME>-<ENV>.lfr.cloud/backup/download/database/id \
+  https://backup-<PROJECT-NAME>-<ENV>.lfr.cloud/backup/download/source/<ID>/database \
   -u user@domain.com:password \
   --output database.gz
 ```
@@ -140,7 +154,7 @@ Name | Type     | Required |
 
 ```bash
 curl -X GET \
-  https://backup-<PROJECT-NAME>-<ENV>.lfr.cloud/backup/download/volume/id \
+  https://backup-<PROJECT-NAME>-<ENV>.lfr.cloud/backup/download/source/<ID>/volume \
   -u user@domain.com:password \
   --output volume.tgz
 ```

@@ -77,9 +77,57 @@ lcp backup download --backupId {ID}
 
 You can also add the `--database` flag to this command to download only the database, or use the `--doclib` flag to download only the document library.
 
+## Preparing the Database and Document Library for Upload
+
+To upload a backup of your environment to Liferay Cloud, you must have the database and document library from that environment prepared in separate archive files.
+
+### Creating the Database File
+
+To create a MySQL dump (as a `.sql` script) and compress it into a `.gz` archive, run these commands:
+
+```bash
+mysqldump -uroot -ppassword --add-drop-database --databases lportal | gzip -c | cat > database.gz
+```
+
+```{note}
+If your Backup service is not updated to at least version `4.2`, you must also run the following command to convert the archive to a `.tgz` file: `tar zcvf database.tgz database.gz`. Then use the resulting `.tgz` archive to upload.
+```
+
+The `databases` and `add-drop-database` options are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
+
+With these options, the resulting dump file contains the following code just before the create table statements.
+
+```sql
+--
+-- Current Database: `lportal`
+--
+
+/*!40000 DROP DATABASE IF EXISTS `lportal`*/;
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `lportal` /*!40100 DEFAULT CHARACTER SET utf8 */;
+
+USE `lportal`;
+```
+
+### Creating the Volume File
+
+```{tip}
+If permissions are not already configured for Liferay Cloud when you upload a backup, then restoring the backup to your environments afterward can take longer to complete. To avoid long restore times, navigate to your `LIFERAY_HOME` folder and run this command before compressing the document library: `chown -R 1000:1000 data/document_library/`.
+```
+
+Run this command to compress the data volume:
+
+```bash
+cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
+```
+
 ## Backup Service APIs
 
-The backup service has APIs that you can also use to download and upload backups. You can invoke these APIs using a command line tool such as `curl`.
+```{important}
+These API routes apply to backup service versions **before 5.9.0**. For versions 5.9.0+, use the [CLI tool](#downloading-backups-via-the-cli-tool) or the [Cloud console](#downloading-backups-via-the-console) instead.
+```
+
+The backup service has APIs that you can also use to download and upload backups before backup version 5.9.0. You can invoke these APIs using a command line tool such as `curl`.
 
 ### Getting the Host Name
 
@@ -154,7 +202,7 @@ Name | Type     | Required |
 
 ```bash
 curl -X GET \
-  https://backup-<PROJECT-NAME>-<ENV>.lfr.cloud/backup/download/source/<ID>/volume \
+  https://backup-<PROJECT-NAME>-<ENV>.lfr.cloud/backup/download/volume/<ID> \
   -u user@domain.com:password \
   --output volume.tgz
 ```
@@ -189,50 +237,6 @@ curl -X POST \
   -F 'database=@/my-folder/database.gz' \
   -F 'volume=@/my-folder/volume.tgz' \
   -u user@domain.com:password
-```
-
-## Preparing the Database and Document Library for Upload
-
-To upload a backup of your environment to Liferay Cloud, you must have the database and document library from that environment prepared in separate archive files.
-
-### Creating the Database File
-
-To create a MySQL dump (as a `.sql` script) and compress it into a `.gz` archive, run these commands:
-
-```bash
-mysqldump -uroot -ppassword --add-drop-database --databases lportal | gzip -c | cat > database.gz
-```
-
-```{note}
-If your Backup service is not updated to at least version `4.2`, you must also run the following command to convert the archive to a `.tgz` file: `tar zcvf database.tgz database.gz`. Then use the resulting `.tgz` archive to upload.
-```
-
-The `databases` and `add-drop-database` options are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
-
-With these options, the resulting dump file contains the following code just before the create table statements.
-
-```sql
---
--- Current Database: `lportal`
---
-
-/*!40000 DROP DATABASE IF EXISTS `lportal`*/;
-
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `lportal` /*!40100 DEFAULT CHARACTER SET utf8 */;
-
-USE `lportal`;
-```
-
-### Creating the Volume File
-
-```{tip}
-If permissions are not already configured for Liferay Cloud when you upload a backup, then restoring the backup to your environments afterward can take longer to complete. To avoid long restore times, navigate to your `LIFERAY_HOME` folder and run this command before compressing the document library: `chown -R 1000:1000 data/document_library/`.
-```
-
-Run this command to compress the data volume:
-
-```bash
-cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 ```
 
 ## Related Topics

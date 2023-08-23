@@ -24,7 +24,7 @@ You can run the `-v` or `--verbose` option at the end of any `lcp` command to se
 
 ### \*nix Systems
 
-Open your terminal, and run the following command:
+Open your terminal, and run this command:
 
 ```bash
 curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
@@ -41,7 +41,7 @@ Download the latest version of the [Windows installer](https://cdn.liferay.cloud
 You must first uninstall your current version before you can install and use version 3. This prevent conflicts with the same binary name.
 
 ```{important}
-The following instructions are specific to uninstalling CLI version 2 and are **not** the same as those for [uninstalling version 3 of the CLI tool](#uninstalling-version-3-of-the-cli-tool).
+These instructions are specific to uninstalling CLI version 2 and are **not** the same as those for [uninstalling version 3 of the CLI tool](#uninstalling-version-3-of-the-cli-tool).
 ```
 
 ### Uninstalling Version 2 on MacOS or Linux
@@ -52,7 +52,9 @@ The following instructions are specific to uninstalling CLI version 2 and are **
 
 ### Uninstalling Version 2 on Windows
 
-1. On Windows 10, go to *Control Panel* &rarr; *Programs* &rarr; *Uninstall a program*. Alternatively, for Windows 7 and 8, go to *Control Panel* &rarr; *Add or Remove Programs*.
+1. On Windows 10, go to *Control Panel* &rarr; *Programs* &rarr; *Uninstall a program*.
+
+	Alternatively, for Windows 7 and 8, go to *Control Panel* &rarr; *Add or Remove Programs*.
 
 1. Select `lcp amd64-installer-0.3`
 
@@ -64,31 +66,33 @@ Verify that CLI version 2 has been uninstalled before installing version 3.
 
 ### Installing Version 3
 
-Once version 2 is uninstalled, you can following the [above instructions](#installing-the-cli-tool) to install version 3 of the CLI tool.
+Once version 2 is uninstalled, you can follow the [above instructions](#installing-the-cli-tool) to install version 3 of the CLI tool.
 
 ## Configuring the CLI Remote
 
-To access Liferay Cloud services via the CLI tool, it must be configured to point to Liferay Cloud's remote URL: `liferay.cloud`. To list the CLI's remotes, run the following command:
+To access Liferay Cloud services via the CLI tool, it must be configured to point to Liferay Cloud's remote URL: `liferay.cloud`.
 
-```shell
+To list the CLI's remotes, run this command:
+
+```bash
 lcp remote
 ```
 
-You can add new remotes to the CLI tool using the following command:
+You can add new remotes to the CLI tool using this command:
 
-```shell
+```bash
 lcp remote set <remote-alias> <remote-url>
 ```
 
 If desired, you can change its default remote:
 
-```shell
+```bash
 lcp remote default <remote-alias>
 ```
 
 Alternatively, you can specify the remote inline:
 
-```shell
+```bash
 lcp shell -p <project-id> --service <service-id> --remote <remote-alias>
 ```
 
@@ -110,23 +114,23 @@ lcp backup download <type> --backupId <ID>
 
 ## Showing the Service Logs
 
-Use `lcp log` commands to display logs for specific projects, services, and instances. The following examples include some common commands, though you can see available command options by running `lcp log --help`.
+Use `lcp log` commands to display logs for specific projects, services, and instances. Below are some common commands, though you can see available command options by running `lcp log --help`.
 
 View all service logs for a project environment:
 
-```shell
+```bash
 lcp log -p <project>-<environment>
 ```
 
 View logs for a single service in a project environment:
 
-```shell
+```bash
 lcp log -p <project>-<environment> -s <service>
 ```
 
 Alternatively, use a service's full URL to view its logs:
 
-```shell
+```bash
 lcp log --url <service>-<project>-<environment>.lfr.cloud
 ```
 
@@ -134,29 +138,29 @@ By default, the `lcp log` command only returns 10,000 lines to reduce network im
 
 View all service logs for a project environment from a specific time to the present:
 
-```shell
+```bash
 lcp log -p <project>-<environment> --since <start_time>
 ```
 
 View all service logs for a project environment from a specific period of time:
 
-```shell
+```bash
 lcp log --since "<start_time>" --until "<end_time>"
 ```
 
 You can also pipe the output of an `lcp log` command into a file by appending `>> "<new-file.txt>"` to the end of the command. When run, the new file is created in your terminal's current path.
 
-```shell
+```bash
 lcp log -p <project>-<environment> -s <service> --since "<start_time>" --until "<end_time>" >> "<new-file.txt>"
 ```
 
 ## Changing the Number of Service Instances
 
-Use `lcp scale` commands to individually scale environment services. The following examples include some common commands, though you can see available command options by running `lcp scale --help`.
+Use `lcp scale` commands to individually scale environment services. These examples include some common commands, though you can see available command options by running `lcp scale --help`.
 
 View all services and their instances for a project environment, and then select a service to scale:
 
-```shell
+```bash
 lcp scale -p <project>-<environment>
 ```
 
@@ -164,63 +168,63 @@ Then, follow the terminal prompts to select a service and determine the number o
 
 Alternatively, specify the target service and desired number of instances as part of the `lcp scale` command:
 
-```shell
+```bash
 lcp scale -p <project>-<environment> -s <service> <instances>
 ```
 
 You can also scale instances using its full URL:
 
-```shell
+```bash
 lcp scale --url <service>-<project>-<environment>.lfr.cloud <instances>
 ```
 
 ## Listing Projects or Services
 
-Use `lcp list` commands to view project services, each with its image and status. The following examples include some common commands, though you can see available command options by running `lcp list --help`.
+Use `lcp list` commands to view project services, each with its image and status. These examples include some common commands, though you can see available command options by running `lcp list --help`.
 
 View a complete list of projects, services, and instances that you either own or collaborate on:
 
-```shell
+```bash
 lcp list
 ```
 
 View the image and status of environment specific services:
 
-```shell
+```bash
 lcp list -p <project>-<environment>
 ```
 
 Check the image and status of a specific service:
 
-```shell
+```bash
 lcp list -p <project>-<environment> --service <serviceID>
 ```
 
 Alternatively, you can check a service by passing its full URL to `lcp list`:
 
-```shell
+```bash
 lcp list --url <service>-<project>-<environment>.lfr.cloud
 ```
 
 ## Restarting a Service
 
-Use `lcp restart` commands to restart an environment service. The following examples include some common commands, though you can see available command options by running `lcp restart --help`.
+Use `lcp restart` commands to restart an environment service. These examples include some common commands, though you can see available command options by running `lcp restart --help`.
 
 View all project environments and services, and then select an environment service to restart:
 
-```shell
+```bash
 lcp restart
 ```
 
 Restart a specific service in a project:
 
-```shell
+```bash
 lcp restart -p <project>-<environment> -s <service>
 ```
 
 Alternatively, restart a service by passing its full URL to `lcp restart`:
 
-```shell
+```bash
 lcp restart --url <serviceID>-<projectID>.lfr.cloud
 ```
 
@@ -228,7 +232,7 @@ lcp restart --url <serviceID>-<projectID>.lfr.cloud
 
 Use the `lcp deploy` command to deploy either a specific service or all of your services to one of your environments:
 
-```shell
+```bash
 lcp deploy
 ```
 
@@ -236,7 +240,7 @@ Running `lcp deploy` from the root directory of your repository deploys all appl
 
 Run the command with `-r` to specify a remote (by its ID) other than the default:
 
-```shell
+```bash
 lcp deploy -r <remote-id>
 ```
 
@@ -244,9 +248,9 @@ See [Deploying Changes via the CLI Tool](../build-and-deploy/deploying-changes-v
 
 ## Accessing a Service's Shell
 
-To access a service container's shell, run the following command:
+To access a service container's shell, run this command:
 
-```shell
+```bash
 lcp shell
 ```
 
@@ -256,7 +260,7 @@ which one to access.
 Alternatively, access the shell of a specific service's container by adding the
 service's project ID and service ID to the `lcp shell` command:
 
-```shell
+```bash
 lcp shell -p <project>-<environment> -s <service>
 ```
 
@@ -266,7 +270,7 @@ Use the `lcp docs` command to access Liferay Cloud resources, including official
 
 ## Uninstalling Version 3 of the CLI Tool
 
-For Mac and Linux, run the following command:
+For Mac and Linux, run this command:
 
 ```bash
 curl https://cdn.liferay.cloud/lcp/stable/latest/uninstall.sh -fsSL | bash

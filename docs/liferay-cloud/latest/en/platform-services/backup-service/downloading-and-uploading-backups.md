@@ -179,7 +179,7 @@ Name | Type     | Required |
 
 ```bash
 curl -X GET \
-  https://backup-<PROJECT-NAME>-<ENV>.lfr.cloud/backup/download/source/<ID>/database \
+  https://backup-<PROJECT-NAME>-<ENV>.lfr.cloud/backup/download/database/<ID> \
   -u user@domain.com:password \
   --output database.gz
 ```

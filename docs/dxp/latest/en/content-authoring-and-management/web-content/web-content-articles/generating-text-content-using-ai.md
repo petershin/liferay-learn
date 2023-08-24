@@ -3,6 +3,8 @@ uuid: 1fad3ffb-9d93-4a8b-baad-20382b53a17d
 ---
 # Generating Text Content Using AI
 
+{bdg-secondary}`7.4 U86+ and GA86+`
+
 Web content provides integration with OpenAI's ChatGPT engine using the AI Creator tool. With an OpenAI API key configured for your instance or site, you can use the AI Creator feature in the Web Content editor. Once configured, you can begin generating content to work with, in a few clicks.
 
 ## Enabling AI Creator

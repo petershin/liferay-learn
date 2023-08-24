@@ -49,11 +49,11 @@ Create the site for Delectable Bonsai's intranet, Grow. With the Delectable Bons
 
 1. In a new browser window or tab, go to <http://grow.delectablebonsai.com:8080>.
 
-NOTE: This screenshot is no good, there amy be a bug in Liferay--this actually redirects tot he users profile (a totally different site) since there's no page. Change of approach needed
+NOTE: This screenshot is no good, there may be a bug in Liferay--this actually redirects tot he users profile (a totally different site) since there's no page. Change of approach needed
 
 ![There's currently no home page for the Grow site.](./adding-the-intranet-site/images/01.png)
 
-The Grow site needs pages so employees can view content and access the site's applications. Pages for training resources, blog posts, and more are required. To begin with, a home page is needed.
+The Grow site needs pages so employees can view content and access the site's applications. Pages for training resources, blog posts, and more are required. To begin, add a home page.
 
 Next: [Adding the Home Page](./adding-the-home-page.md)
 

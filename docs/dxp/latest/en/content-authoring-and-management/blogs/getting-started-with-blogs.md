@@ -27,8 +27,8 @@ Learn how to use the features of the Blogs application:
 
 * [Adding Blog Entries](./adding-blog-entries.md)
 * [Managing Blog Entries](./managing-blog-entries.md)
-* [Displaying Blogs](./displaying-blogs.md)
 * [Configuring the Blogs App](./configuring-the-blogs-app.md)
+* [Displaying Blogs](./displaying-blogs.md)
 * [Highlighting Recent Bloggers](./highlighting-recent-bloggers.md)
 
 ### Reference

@@ -10,7 +10,7 @@ The Blogs application contains a powerful set of tools for customizing how your 
 The fastest way to begin using the _Blogs_ app is to deploy the widget to a [Site Page](../../site-building/creating-pages/understanding-pages/understanding-pages.md).
 
 1. Navigate to the site and page desired (e.g. _Community Blog_).
-1. Click the _Add_ button.
+1. Click the _Add_ ( ![Add Button](../../images/icon-add-widget.png) ) button.
 1. Click _Widgets_ then _Collaboration_ to expand the menu.
 
     ![Adding the Blogs widget to a page](./getting-started-with-blogs/images/01.png)

@@ -36,6 +36,7 @@ blogs/developer-guide.md
 * [Displaying Blogs](./blogs/displaying-blogs.md)
 * [Aggregating Blogs](./blogs/aggregating-blogs.md)
 * [Highlighting Recent Bloggers](./blogs/highlighting-recent-bloggers.md)
+* [Blog Entry Editor Reference](./blogs/blog-entry-editor-reference.md)
 * [Blog Permissions Reference](./blogs/blog-permissions-reference.md)
 
 ## Developer Guide

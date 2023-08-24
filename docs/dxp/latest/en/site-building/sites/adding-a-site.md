@@ -11,11 +11,9 @@ Sites are customizable spaces for building personalized digital experiences. Fol
 
 1. Click *Add* ( ![Add Button](../../images/icon-add.png) ).
 
-1. Select a *Site Template*.
-    
-1. Choose between templates *Provided by Liferay* or [*Custom Site Templates*](./site-templates.md) to populate your new site with pages, content, and configurations.
+1. Select a *Site Template*. Choose between templates *Provided by Liferay* or [*Custom Site Templates*](./site-templates.md) to create your site.
 
-    Under *Provided by Liferay*, you can choose a *Blank Site* to create a new site without any pages or content.
+    Choose the *Blank Site* template, to create a new site without any pages or content.
 
     ![You can select a template provided by Liferay or a custom site template to populate your new site with pages, content, and configurations.](./adding-a-site/images/02.png)
 

@@ -42,41 +42,53 @@ We recommend completion of [Level 0](./level-0.md) before commencing any of the 
 
 Note that this course does not intend to teach someone how to be a Sales Engineer, so some level of Technical Sales experience is recommended before commencing.
 
+Start level 1 with learning what to find out during a [Discovery Call](./level-1-technical/discovery-calls.md).
+
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card} Discovery Call
+:link: ./level-1-technical/discovery-calls.md
+
+This module explores what to find out during a discovery call to support delivering a demo that resonates with the prospect  .
+:::
+
+:::{grid-item-card} Public Pages Experience
+:link: ./level-1-technical/public-pages-experience.md
+
+This module explains how to talk about and demo Liferay before logging in.
+:::
+
+:::{grid-item-card} Liferay Authentication
+:link: ./level-1-technical/liferay-authentication.md
+
+This module introduces the methods that can be used to authenticate to a Liferay application, and how to discuss them with prospects.
+:::
+
+:::{grid-item-card} Experience Management
+:link: ./level-1-technical/experience-management.md
+
+This module runs through the types of experiences users will see after logging in to a Liferay application.
+:::
+
+:::{grid-item-card} Basics of Styling Liferay
+:link: ./level-1-technical/basics-of-styling.md
+
+This module explains the simple tricks that can be used to tailor the look and feel of an existing demo to meet the needs of a given prospect.
+:::
+
+:::{grid-item-card} Constructing a Business Application
+:link: ./level-1-technical/constructing-a-business-application.md
+
+The module promotes the use of Liferay Objects as a way to quickly, without writing any code, add a business application to an existing demo.
+:::
+::::
+
 ## Note
 
-The full content isn’t quite ready yet - watch this space for updates!
+The remaining modules are not quite ready yet - watch this space for updates!
 
 In the meantime, the recordings from the most recent live sessions, along with PDFs of the presentations can be found below.
-
-**Discovery Calls**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-1-discovery-call) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-1-discovery-call-pdf) of the presentation used in the live workshop.
-
-**Public Pages Experience**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) of the presentation used in the live workshop.
-
-**Liferay Authentication**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf) of the presentation used in the live workshop.
-
-**Experience Management**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-4-experience-management) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) of the presentation used in the live workshop.
-
-**Basics of Styling Liferay**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) of the presentation used in the live workshop.
-
-**Constructing a Business Application**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-6-constructing-a-business-application) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-6-constructing-a-business-application-pdf) of the presentation used in the live workshop.
 
 **Extending Liferay**
 

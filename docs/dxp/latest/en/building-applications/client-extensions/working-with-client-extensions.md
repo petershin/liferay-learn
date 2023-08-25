@@ -68,6 +68,10 @@ When you build a client extension, files are created automatically and packaged 
 
 The `assembleClientExtension` Gradle task executes when you run `gradle build` or `gradle deploy` within a client extension project. During execution, the files specified in the project's `assemble` block are placed into a `build/liferay-client-extension-build/` folder in your project. Everything in this folder is used to create the LUFFA (e.g., `dist/my-client-extension-project.zip`).
 
+```{note}
+If your client extension project contains a `package.json` file with a `build` script defined, the script automatically executes when you build your project. This part of the build happens *before* files are copied, so you can specify the task's output location in your `assemble` block.
+```
+
 The `assemble` block is a YAML array that can include multiple instructions for files to include. Each set of instructions follows this pattern:
 
 ```yaml
@@ -107,6 +111,8 @@ The `assemble` array has these properties:
    assemble:
        - fromTask: bootJar
    ```
+
+   You can execute other commands with `fromTask` as part of your build (like building code written in other programming languages) by defining a [Gradle exec task](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.Exec.html) in your project's `build.gradle` file.
 
 ### Example `assemble` Blocks
 

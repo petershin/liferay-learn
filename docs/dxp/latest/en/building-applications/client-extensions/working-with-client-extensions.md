@@ -145,7 +145,7 @@ assemble:
       into: static
 ```
 
-For more details on the creation, structure and contents of a LUFFA, see [Packaging Client Extensions](./packaging-client-extensions.md)
+For more details on the creation, structure and contents of a LUFFA, see [Packaging Client Extensions](./packaging-client-extensions.md).
 
 ## Deploying to Your Liferay Instance
 

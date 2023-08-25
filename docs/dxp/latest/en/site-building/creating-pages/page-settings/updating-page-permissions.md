@@ -11,9 +11,9 @@ Individual Page permissions take priority over Site level configurations.
 
 Follow these steps to update Page permissions:
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), expand *Site Builder*, and click *Pages*.
+1. Open the *Product Menu* ( ![Product Menu](../../../images/icon-product-menu.png) ) and select *Site Builder* &rarr; *Pages*.
 
-1. Click the *Actions* button (![Actions Button](../../../images/icon-options.png)) for the desired Page and select *Permissions*.
+1. Click *Actions* ( ![Actions Button](../../../images/icon-options.png) ) for the desired Page and select *Permissions*.
 
     ![The Page Permissions are found in the Control Panel's Site Builder menu.](./updating-page-permissions/images/01.png)
 
@@ -22,6 +22,17 @@ Follow these steps to update Page permissions:
     ![The Permissions offer a plethora of options for each role.](./updating-page-permissions/images/02.png)
 
 1. Click *Save* to apply the changes.
+
+## Copying a Page with Permissions
+
+To copy a page with its permissions,
+
+1. Open the *Product Menu* ( ![Product Menu](../../../images/icon-product-menu.png) ) and select *Site Builder* &rarr; *Pages*.
+
+1. Click *Actions* ( ![Actions Button](../../../images/icon-options.png) ) for the desired Page and select *Copy* &rarr; *Page With Permissions*.
+
+1. Enter a page name and click *Add* to create a copy with permissions.
+
 
 ## Related Topics
 

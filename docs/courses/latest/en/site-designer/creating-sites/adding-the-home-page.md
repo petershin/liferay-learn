@@ -63,7 +63,8 @@ While logged in as the site administrator, create the home page:
 
 1. Click the _Publish_  Button.
 
-Now there's a home page for Grow Delectable Bonsai. It's blank, but that's okay for now. Users can navigate to <http://grow.delectablebonsai.com:8080> and see the home page.
+Now there's a home page for Grow Delectable Bonsai. It's not fully implemented yet, but users can navigate to <http://grow.delectablebonsai.com:8080> and see the home page.
 
-![There's a home page for Grow, but right now it's not doing much.](./adding-the-home-page/images/01.png)
+![There's a home page for Delectable Bonsai's intranet.](./adding-the-home-page/images/01.png)
 
+Before completing the home page design and moving on to design each additional page separately, Delectable Bonsai wants to create a common header and footer for all its pages.

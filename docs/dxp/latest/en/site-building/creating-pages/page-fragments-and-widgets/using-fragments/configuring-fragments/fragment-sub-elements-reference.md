@@ -24,10 +24,10 @@ Map the selected element to a field in an existing asset.
 | Field | Description |
 | :--- | :--- |
 | Item  | Select an asset from Documents and Media, Web Content, Blogs, or Categories. The selected asset provides fields for mapping. |
-| Field | Map the element to the desired field from the selected item. |
+| Field | Map the element to supported fields from the selected item. |
 
 ```{note}
-You can map the following elements to fields: Text, Select from List, Single Selection, Multiple Selection, Date, Date and Time, Numeric, Boolean, Link to Page, and Rich Text.
+Supported fields include: Text, Select from List, Single Selection, Multiple Selection, Date, Date and Time, Numeric, Boolean, Link to Page, and Rich Text.
 ```
 
 ![Access a sub-element's Mapping settings in the Browser panel of the editing sidebar menu.](./fragment-sub-elements-reference/images/02.png)
@@ -62,7 +62,7 @@ Set a URL, page reference, or asset mapping to add a clickable link to the selec
 | URL (*for URL*) | Enter a localizable URL for the element. To set a URL for other languages, first switch the language for the page or template via the editing bar. Then, enter the desired URL. See [Localizing Fragment Configuration Fields](./localizing-fragment-configuration-fields.md) for more information. |
 | Page (*for Page*) | Select a Liferay page for the element. |
 | Item (*for Mapped URL*) | Select an asset from Documents and Media, Web Content, Blogs, or Categories. The selected asset provides fields for mapping. |
-| Field (*for Mapped URL*) | Map the element to an available URL field from the item. Selecting a valid field automatically populates the URL field. |
+| Field (*for Mapped URL*) | Map the element to an available supported URL field from the item. Selecting a valid field automatically populates the URL field. |
 | URL (*for Mapped URL*) | This field is auto-populated by the mapped URL field. |
 | Open in New Tab | Determine whether clicking the link opens a new tab. |
 

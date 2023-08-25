@@ -1,22 +1,15 @@
 ---
 toc:
-- ./developer-guide/writing-a-similar-results-contributor.md
-- ./developer-guide/apis.md
+  - ./developer-guide/writing-a-similar-results-contributor.md
+  - ./developer-guide/search-headless-apis.md
 ---
 # 개발자 가이드
 
-```{toctree}
-:maxdepth: 2
-
-developer-guide/writing-a-similar-results-contributor.md
-developer-guide/apis.md
-```
-
-- [유사한 결과 위젯에 사용자 지정 콘텐츠 제공](developer-guide/writing-a-similar-results-contributor.md)
+- [유사 결과 위젯에 사용자 지정 콘텐츠 기여하기](developer-guide/writing-a-similar-results-contributor.md)
 - 집계
-- 모델 엔터티 인덱싱
+- 모델 엔티티 인덱싱
 - 검색 쿼리 및 필터
 
-## 아피스
+## API
 
-- [검색 API](./developer-guide/apis.md)
+- [헤드리스 API 검색](./developer-guide/search-headless-apis.md)

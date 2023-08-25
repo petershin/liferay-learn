@@ -1,7 +1,7 @@
 ---
 toc:
-- ./optimization/a-b-testing.md
-- ./optimization/personalizing-content-with-segments.md
+  - ./optimization/a-b-testing.md
+  - ./optimization/personalizing-content-with-segments.md
 ---
 # 최적화
 

@@ -7,7 +7,7 @@ toc:
   - >-
     ./installing-commerce-2-1-and-below/using-the-liferay-commerce-tomcat-bundle.md
 ---
-# Commerce 2.1 이하 설치
+# 커머스 2.1 이하 설치하기
 
 ```{toctree}
 :maxdepth: 1

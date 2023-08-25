@@ -1,16 +1,16 @@
-# 양식 저장 어댑터 작성
+# 양식 저장소 어댑터 작성
 
-> 사용 가능: Liferay DXP 7.3 및 [LPS-97208](https://issues.liferay.com/browse/LPS-97208) 에 대한 수정 사항이 포함된 Liferay DXP 7.2 버전(Liferay DXP 7.2 SP3용으로 계획됨).
+> 사용 가능: 사용 가능: [LPS-97208](https://issues.liferay.com/browse/LPS-97208) (Liferay DXP 7.2 SP3로 예정됨)에 대한 수정이 포함된 Liferay DXP 7.3 및 Liferay DXP 7.2 버전입니다.
 
-기본적으로 양식은 Liferay DXP의 데이터베이스에 JSON으로 저장됩니다. 이 예는 양식 레코드 지속성 이벤트에 사용자 지정 논리를 삽입하기 위해 새 스토리지 어댑터를 구현하는 방법을 보여줍니다.
+기본적으로 양식은 Liferay DXP의 데이터베이스에 JSON으로 저장됩니다. 이 예에서는 양식 레코드 지속성 이벤트에 사용자 지정 로직을 삽입하기 위해 새 저장소 어댑터를 구현하는 방법을 보여 줍니다.
 
-![DDM 스토리지 어댑터를 사용하여 Forms 애플리케이션에 스토리지 유형을 추가하십시오.](./writing-a-form-storage-adapter/images/01.png)
+![DDM 저장소 어댑터를 사용하여 양식 애플리케이션에 저장소 유형을 추가합니다.](./writing-a-form-storage-adapter/images/01.png)
 
-먼저 [기본 스토리지 어댑터](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/DefaultDDMStorageAdapter.java) Liferay DXP 데이터베이스에 양식 레코드를 JSON 콘텐츠로 저장하는 방법을 볼 수 있습니다. 그런 다음 파일 시스템에 각 양식 레코드를 저장하는 논리를 추가합니다.
+먼저 [기본 스토리지 어댑터](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/storage/DefaultDDMStorageAdapter.java) 가 양식 레코드를 Liferay DXP 데이터베이스에 JSON 콘텐츠로 저장하는 방법을 확인할 수 있습니다. 그런 다음 각 양식 레코드를 파일 시스템에 저장하는 로직을 추가합니다.
 
 ## 실행 중인 DDM 스토리지 어댑터 검사
 
-스토리지 어댑터의 작동 방식을 보려면 예제를 배포한 다음 예제 어댑터를 사용하여 일부 양식 데이터를 추가하십시오.
+스토리지 어댑터의 작동 방식을 확인하려면 예제를 배포한 다음 예제 어댑터를 사용하여 양식 데이터를 추가하세요.
 
 ### 예제 배포
 
@@ -19,7 +19,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [DDM 스토리지 어댑터 프로젝트](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) 를 다운로드하고 압축을 풉니다.
+1. [DDM 스토리지 어댑터 프로젝트](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip)를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
@@ -36,7 +36,7 @@
     ```
 
     ```{tip}
-    이 명령은 배포된 jar를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
+    이 명령은 배포된 jars를 Docker 컨테이너의 /opt/liferay/osgi/modules에 복사하는 것과 동일합니다.
     ```
 
 1. Liferay Docker 컨테이너 콘솔에서 배포를 확인합니다.
@@ -47,37 +47,37 @@
 
 ### 배포된 스토리지 어댑터 사용
 
-1. 브라우저에서 <http://localhost:8080>로 엽니다.
+1. 브라우저를 열어 <http://localhost:8080>으로 이동합니다.
 
-1. **사이트 메뉴** &rarr; **콘텐츠 & 데이터** &rarr; **양식** 에서 Forms 애플리케이션으로 이동합니다.
+1. _사이트 메뉴_ &rarr; _콘텐츠 & 데이터_ &rarr; _양식_에서 양식 애플리케이션으로 이동합니다.
 
-1. **추가** 버튼(![Add](./../../../images/icon-add.png))을 클릭하여 양식 작성기를 엽니다.
+1. *추가* 버튼(![Add](./../../../images/icon-add.png))을 클릭하여 양식 작성기를 엽니다.
 
-1. Form Builder 보기에서 **옵션** 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 **설정** 창을 엽니다.
+1. 양식 작성기 보기에서 *옵션* 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 *설정* 창을 엽니다.
 
-1. **스토리지 유형 선택** 에서 **R2F1 동적 데이터 매핑 스토리지 어댑터** 유형을 선택하고 **완료** 클릭합니다.
+1. *에서 스토리지 유형*을 선택하고 *R2F1 동적 데이터 매핑 스토리지 어댑터* 유형을 선택한 후 _완료_를 클릭합니다.
 
-1. 양식에 [텍스트 필드](../creating-and-managing-forms/creating-forms.md) 추가하고 양식을 게시한 다음 몇 번 제출하십시오.
+1. 양식에 [텍스트 필드](../creating-and-managing-forms/creating-forms.md) 를 추가하고 양식을 게시한 후 몇 번 제출합니다.
 
-1. 양식 데이터가 유지되었는지 확인하려면 양식의 레코드로 이동하십시오.
+1. 양식 데이터가 유지되었는지 확인하려면 양식의 기록으로 이동합니다:
 
-**Site Menu** &rarr; **Content** &rarr; **Forms** 에서 Form의 **Actions** 버튼(![Actions](./../../../images/icon-actions.png))을 클릭한 다음 **View Entries** 클릭합니다.
+   _사이트 메뉴_ &rarr; _콘텐츠_ &rarr; _양식_에서 양식의 *작업* 버튼(![Actions](./../../../images/icon-actions.png))을 클릭한 다음 _항목 보기_를 클릭합니다.
 
-   ![양식 항목이 추가되었는지 확인하십시오.](./writing-a-form-storage-adapter/images/02.png)
+   ![양식 항목이 추가되었는지 확인합니다.](./writing-a-form-storage-adapter/images/02.png)
 
-1. 또한 샘플의 메서드가 호출되고 있음을 보여주기 위해 각 CRUD 메서드에 로깅이 제공됩니다.
+1. 또한 샘플의 메서드가 호출되고 있음을 입증하기 위해 각 CRUD 메서드에 로깅이 제공됩니다.
 
    ```bash
    WARN  [http-nio-8080-exec-5][R2F1DDMStorageAdapter:82] Acme storage adapter's save method was invoked
    ```
 
-## 확장점 이해
+## 확장 포인트 이해
 
-이 예에는 양식 항목을 저장하기 위한 논리를 제공하기 위해 `DDMStorageAdapter`를 구현하는 서비스인 `R2F1DDMStorageAdapter` 클래스만 포함되어 있습니다. 배포된 예제는 현재 기본 JSON 구현인 `DefaultDDMStorageAdapter`를 래핑합니다. 나중에 이미 여기에 있는 코드에 파일 시스템 저장소를 추가합니다.
+이 예제에는 하나의 클래스만 포함되어 있습니다: `R2F1DMStorageAdapter`, 양식 항목 저장을 위한 로직을 제공하기 위해 `DDMStorageAdapter` 를 구현하는 서비스입니다. 배포된 예제는 현재 기본 JSON 구현을 래핑하기만 합니다: `DefaultDDMStorageAdapter`. 나중에 이미 여기에 있는 코드에 파일 시스템 스토리지를 추가합니다.
 
-### OSGi 컨테이너에 어댑터 클래스 등록
+### 어댑터 클래스를 OSGi 컨테이너에 등록합니다.
 
-`DDMFileSystemStorageAdapter` `DDMStorageAdapter` 인터페이스를 구현하지만 OSGi 서비스로 등록해야 합니다.
+`DDMFileSystemStorageAdapter` 는 `DDMStorageAdapter` 인터페이스를 구현하지만 OSGi 서비스로 등록해야 합니다:
 
 ```java
 @Component(
@@ -88,12 +88,12 @@ public class R2F1DDMStorageAdapter implements DDMStorageAdapter {
 ```
 
 ```{note}
-`r2f1-ddm-storage-adapter` 키는 `src/main/resources/content/Language.properties` 파일과 `bnd.bnd` 파일.
+r2f1-ddm-storage-adapter` 키는 `src/main/resources/content/Language.properties` 파일과 `bnd.bnd` 파일의 `Provide-Capability` 헤더에 의해 `R2F1 동적 데이터 매핑 스토리지 어댑터` 값으로 현지화됩니다.
 ```
 
-`서비스` 구성 요소 속성은 구현을 `DDMStorageAdapter` 서비스로 등록합니다.
+`서비스` 컴포넌트 속성은 구현을 `DDMStorageAdapter` 서비스로 등록합니다.
 
-속성 `ddm.storage.adapter.type` 서비스가 고유한 `DDMStorageAdapter` 구현으로 등록되도록 식별자를 제공합니다. 이제 다른 서비스에서 다음과 같이 참조할 수 있습니다.
+`ddm.storage.adapter.type` 속성은 서비스가 고유한 `DDMStorageAdapter` 구현으로 등록될 수 있도록 식별자를 제공합니다. 이제 다른 서비스에서도 이와 같이 참조할 수 있습니다:
 
 ```java
 @Reference(target = "(ddm.storage.adapter.type=r2f1-ddm-storage-adapter)")
@@ -102,7 +102,7 @@ private DDMStorageAdapter defaultWrapperDDMStorageAdapter;
 
 ### DDMStorageAdapter 인터페이스 이해
 
-인터페이스에는 양식 레코드에 대한 CRUD 작업을 처리하는 세 가지 메서드( `delete`, `get`, `save` (업데이트 논리도 처리))가 필요합니다.
+`delete`, `get`, `save` (업데이트 로직도 처리)의 세 가지 메서드를 통해 양식 레코드에 대한 CRUD 작업을 처리할 수 있습니다.
 
 ```java
 public DDMStorageAdapterDeleteResponse delete(
@@ -122,17 +122,17 @@ public DDMStorageAdapterSaveResponse save(
     throws StorageException;
 ```
 
-각 메소드는 정적 내부 `Builder` 클래스의 `newBuilder` 메소드를 사용하여 구성된 **DDMStorageAdapter[ [Save](https://github.com/liferay/liferay-portal/blob/[$LIFERAY** LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java) / [Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java) / [Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteSaveResponse.java) ]Response_ 객체를 반환해야 합니다.
+각 메서드는 정적 내부 `Builder` 클래스의 `newBuilder` 메서드를 사용하여 구성한 _DDMStorageAdapter[[저장](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java)/[가져오기](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java)/[삭제](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteResponse.java)]응답_ 객체를 반환해야 합니다.
 
-모든 메소드에는 `DDMStorageAdapter[Save/Delete/Get]Request`이 전달됩니다. 요청 객체에는 유용한 컨텍스트 정보를 반환하는 getter 메서드가 포함되어 있습니다.
+모든 메서드는 `DDMStorageAdapter[저장/삭제/조회]요청`을 전달합니다. 요청 객체에는 유용한 컨텍스트 정보를 반환하는 게터 메서드가 포함되어 있습니다.
 
 ## 파일 시스템 스토리지 구현
 
-예제는 이미 필요한 메서드를 재정의합니다. 기능에 대한 전용 유틸리티 메서드를 만든 다음 재정의된 메서드에서 호출합니다.
+이 예제에서는 이미 필요한 메서드를 재정의합니다. 기능에 대한 비공개 유틸리티 메서드를 생성한 다음 재정의된 메서드에서 호출합니다.
 
 ### 서비스 종속성 선언
 
-이 코드는 OSGi 컨테이너에 배포된 두 서비스에 의존합니다. `org.osgi.service.component.annotations.Reference`에서 제공하는 Declarative Services `@Reference` 주석을 사용하여 클래스 끝에 이러한 선언을 추가합니다.
+이 코드는 OSGi 컨테이너에 배포된 두 가지 서비스에 의존합니다. 선언적 서비스 `@참조` 어노테이션을 사용하여 클래스 끝에 다음 선언을 추가하고, `org.osgi.service.component.annotations.Reference`에서 제공 합니다.
 
 ```java
 @Reference
@@ -142,28 +142,28 @@ private DDMContentLocalService _ddmContentLocalService;
 private DDMFormValuesSerializerTracker _ddmFormValuesSerializerTracker;
 ```
 
-`com.liferay.dynamic.data.mapping.service.DDMContentLocalService` 및 `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializerTracker`가져오기.
+가져 오기 `com.liferay.dynamic.data.mapping.service.DDMContentLocalService` 및 `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializerTracker`.
 
 ### 로거 생성
 
-클래스에 대한 로거를 만들고 `_log` 변수에 설정합니다.
+클래스에 대한 로거를 생성하고 `_log` 변수에 설정합니다:
 
 ```java
 private static final Log _log = LogFactoryUtil.getLog(
     R2F1DDMStorageAdapter.class);
 ```
 
-이것은 CRUD 메소드 중 하나가 호출될 때마다 일부 로그 메시지를 추가하는 데 사용됩니다.
+CRUD 메서드 중 하나가 호출될 때마다 일부 로그 메시지를 추가하는 데 사용됩니다.
 
 ### 파일 삭제 구현
 
-1. 파일이 저장되는 사이트를 제어할 수 있도록 전용 변수 `_PATHNAME` 을 설정합니다. 여기서 경로는 Docker 컨테이너의 Liferay 설치 사이트를 가리킵니다.
+1. 파일이 저장되는 위치를 제어할 수 있도록 비공개 변수 `_PATHNAME` 을 설정합니다. 여기서 경로는 Docker 컨테이너의 Liferay 설치 위치를 가리킵니다.
 
    ```java
    private static final String _PATHNAME = "/opt/liferay/form-records";
    ```
 
-1. `_deleteFile` 유틸리티 메서드를 만듭니다( `java.io.File` 클래스 가져오기).
+1. `_deleteFile` 유틸리티 메서드를 생성합니다( `java.io.File` 클래스 가져오기):
 
    ```java
    private void _deleteFile(long fileId) {
@@ -177,7 +177,7 @@ private static final Log _log = LogFactoryUtil.getLog(
    }
    ```
 
-1. 재정의된 `삭제` 메서드를 찾습니다. `return` 문 바로 앞에 다음을 추가합니다.
+1. 재정의된 `삭제` 메서드를 찾습니다. `반환` 문 바로 앞에 다음을 추가합니다.
 
    ```java
     long fileId = ddmStorageAdapterDeleteRequest.getPrimaryKey();
@@ -185,13 +185,13 @@ private static final Log _log = LogFactoryUtil.getLog(
     _deleteFile(fileId);
    ```
 
-이제 코드는 데이터베이스에서 복사본을 삭제하기 전에 먼저 파일 시스템에서 파일을 삭제합니다.
+이제 코드는 데이터베이스에서 사본을 삭제하기 전에 먼저 파일 시스템에서 파일을 삭제합니다.
 
 ### 파일 검색 구현
 
-`get` 메서드에 대해 동일한 절차를 따릅니다. 개인 유틸리티 메서드를 만든 다음 호출합니다.
+`get` 메서드에 대해서도 동일한 절차를 따릅니다. 비공개 유틸리티 메서드를 만든 다음 호출합니다.
 
-1. `_getFile` 유틸리티 메서드를 추가합니다.
+1. `_getFile` 유틸리티 메서드를 추가합니다:
 
    ```java
     private void _getFile(long fileId) throws IOException {
@@ -208,9 +208,9 @@ private static final Log _log = LogFactoryUtil.getLog(
     }
     ```
 
-   가져오기 `com.liferay.portal.kernel.util.FileUtil` 및 `java.io.IOException`.
+   가져 오기 `com.liferay.portal.kernel.util.FileUtil` 및 `java.io.IOException`.
 
-1. 재정의된 `get` 메서드( `try` 블록 내)에서 `return` 문 바로 앞에 다음을 삽입하여 `storageId` ( `ddmStorageAdapterGetRequest.getPrimaryKey()`에서 검색)을 `fileId` 로 설정하고 다음을 호출합니다. 검색된 콘텐츠를 Liferay 로그에 인쇄하는 `_getFile` 유틸리티 메서드.
+1. 재정의된 `get` 메서드( `try` 블록 내부)에서 `return` 문 바로 앞에 다음을 삽입하고, `storageId` ( `ddmStorageAdapterGetRequest.getPrimaryKey()`에 의해 검색됨)를 `fileId` 로 설정하고 검색된 내용을 Liferay 로그에 인쇄하는 `_getFile` 유틸리티 메서드를 호출합니다.
 
    ```java
    long fileId = ddmStorageAdapterGetRequest.getPrimaryKey();
@@ -220,9 +220,9 @@ private static final Log _log = LogFactoryUtil.getLog(
 
 ### 파일 생성 로직 구현
 
-저장 요청에는 두 가지 유형이 있습니다. 1) 새 레코드가 추가되거나 2) 기존 레코드가 업데이트됩니다. 저장할 때마다 `업데이트` 메서드가 현재 `ddmFormValues` 콘텐츠를 사용하여 기존 파일을 덮어씁니다.
+저장 요청에는 두 가지 유형이 있습니다: 1) 새 레코드가 추가되거나 2) 기존 레코드가 업데이트되는 경우입니다. 저장할 때마다 `update` 메서드가 현재 `ddmFormValues` 콘텐츠를 사용하여 기존 파일을 덮어쓰게 됩니다.
 
-1. `_saveFile` 유틸리티 메서드를 만듭니다.
+1. `_saveFile` 유틸리티 메서드를 생성합니다:
 
    ```java
    private void _saveFile(long fileId, DDMFormValues formValues)
@@ -246,9 +246,9 @@ private static final Log _log = LogFactoryUtil.getLog(
    }
     ```
 
-   가져오기 `com.liferay.dynamic.data.mapping.storage.DDMFormValues` 및 `java.io.File`.
+   가져 오기 `com.liferay.dynamic.data.mapping.storage.DDMFormValues` 및 `java.io.File`.
 
-1. `_serialize` 유틸리티 메서드를 만들어 `DDMFormValues` 개체를 JSON으로 변환합니다.
+1. `_serialize` 유틸리티 메서드를 생성하여 `DDMFormValues` 객체를 JSON으로 변환합니다:
 
     ```java
     private String _serialize(DDMFormValues ddmFormValues) {
@@ -267,9 +267,9 @@ private static final Log _log = LogFactoryUtil.getLog(
     }
     ```
 
-    가져오기 `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializer`, `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializerSerializeRequest`및 `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializerSerializeResponse`.
+    가져 오기 `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializer`, `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializerSerializeRequest`, 및 `com.liferay.dynamic.data.mapping.io.DDMFormValuesSerializerSerializeResponse`.
 
-1. 기존 `return` 문을 대체하여 이 논리와 `_saveFile` 에 대한 호출을 `save` 메서드에 추가합니다.
+1. 기존 `return` 문을 대체하여 `save` 메서드에 이 로직과 `_saveFile` 호출을 추가합니다:
 
    ```java
     DDMStorageAdapterSaveResponse defaultStorageAdapterSaveResponse =
@@ -282,29 +282,29 @@ private static final Log _log = LogFactoryUtil.getLog(
     return defaultStorageAdapterSaveResponse;
    ```
 
-   `_defaultStorageAdapter.save` 호출이 먼저 이루어지므로 새 양식 항목에 대한 기본 키가 생성됩니다. 이 기본 키는 `Response` 객체에서 검색되어 `fielId`생성합니다.
+   `_defaultStorageAdapter.save` 호출을 먼저 수행하여 새 양식 항목에 대한 기본 키를 생성합니다. 이 기본 키는 `응답` 객체에서 검색하여 `fielId`를 생성합니다.
 
 ## 스토리지 어댑터 배포 및 테스트
 
-이전과 동일한 `deploy` 명령을 사용하여 스토리지 어댑터를 배포합니다. 모듈 루트 실행에서
+앞서와 동일한 `deploy` 명령을 사용하여 스토리지 어댑터를 배포합니다. 모듈 루트 실행에서
 
 ```bash
 ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-이제 작동하는지 확인합니다.
+이제 작동하는지 확인합니다:
 
-1. **사이트 메뉴** &rarr; **콘텐츠** &rarr; **양식** 의 양식 애플리케이션으로 이동합니다.
+1. _사이트 메뉴_ &rarr; _콘텐츠_ &rarr; _양식_에서 양식 애플리케이션으로 이동합니다.
 
-1. **추가** 버튼 ![Add](./../../../images/icon-add.png) 을 클릭하여 양식 작성기를 엽니다.
+1. *추가* 버튼 ![Add](./../../../images/icon-add.png) 을 클릭하여 양식 작성기를 엽니다.
 
-1. Form Builder 보기에서 **옵션** 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 **설정** 창을 엽니다.
+1. 양식 작성기 보기에서 *옵션* 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 *설정* 창을 엽니다.
 
-1. **Select a Storage Type** 이라는 선택 목록 필드에서 **R2F1 Dynamic Data Mapping Storage Adapter** 유형을 선택하고 **완료** 클릭합니다.
+1. 선택 목록 필드에서 *스토리지 유형 선택*, *R2F1 동적 데이터 매핑 스토리지 어댑터* 유형을 선택한 후 _완료_를 클릭합니다.
 
-1. [텍스트 필드](../creating-and-managing-forms/creating-forms.md) 을 양식에 추가하고 양식을 게시한 다음 몇 번 제출하십시오.
+1. 양식에 [텍스트 필드](../creating-and-managing-forms/creating-forms.md) 를 추가하고 양식을 게시한 후 몇 번 제출합니다.
 
-1. 양식 레코드가 컨테이너의 파일 시스템에 기록되었는지 확인하려면 로그를 확인하십시오. 다음과 같은 메시지가 표시됩니다.
+1. 양식 레코드가 컨테이너의 파일 시스템에 기록되었는지 확인하려면 로그를 확인합니다. 다음과 같은 메시지가 표시됩니다:
 
    ```bash
    WARN  [http-nio-8080-exec-5][R2F1DDMStorageAdapter:82] Acme storage adapter's save method was invoked
@@ -315,4 +315,4 @@ private static final Log _log = LogFactoryUtil.getLog(
 
 ## 결론
 
-`DDMStorageAdapter`을 구현하면 원하는 저장 형식으로 양식 레코드를 저장할 수 있습니다.
+`DDMStorageAdapter`를 구현하면 원하는 저장 형식으로 양식 레코드를 저장할 수 있습니다.

@@ -7,9 +7,9 @@ uuid: 01f46794-2cd4-4ffc-94d3-e244880f2b6f
 
 Using client extensions, you can extend Liferay without deploying OSGi modules. Just like traditional module development, client extensions live in a [Liferay Workspace](../tooling/liferay-workspace.md). Get started by learning
 
-- The required tools to begin developing client extensions
-- How to define a client extension in its configuration file
-- How to deploy client extensions
+* The required tools to begin developing client extensions
+* How to define a client extension in its configuration file
+* How to deploy client extensions
 
 ## Required Tools and Settings
 

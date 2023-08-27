@@ -22,6 +22,14 @@ Once you've added a container, you can use the grid fragment to customize conten
 When dragging and dropping an element into a container or grid, Liferay highlights the drop zone to indicate where you're placing it. Once added, you can drag and drop elements in the Browser side panel ( ![Browser](../../../../images/icon-hierarchy.png) ) to rearrange them.
 ```
 
+Finally, when you have a variety of nested elements on a page, a breadcrumb appears to assist you with traversing elements in a nested hierarchy.
+
+![Use the breadcrumb system to navigate through the structure and select parent elements](./using-layout-elements/images/04.png)
+
+```{tip}
+You can also select an element and use the shortcut `Shift + Enter` to select its parent.
+```
+
 ## Containers
 
 > Previously called *Panels*
@@ -37,19 +45,6 @@ The container fragment adds a configurable drop zone to a content page. In addit
 The grid fragment adds multiple drop zone modules to a page or template. These modules can be arranged horizontally and vertically. In addition to standard configuration options, you can determine the number of modules for each grid, the number of modules per row, and the vertical alignment of each module's content. You can adjust the width of each module manually and add or remove padding between them. See [Configuring Fragments](./configuring-fragments.md) for more information.
 
 ![Grids include standard and unique configuration options.](./using-layout-elements/images/03.png)
-
-
-## Navigating Through Nested Elements Using Breadcrumbs
-
-You can use breadcrumbs to easily navigate through nested elements and their children or parents while [editing a page](../../using-content-pages/adding-elements-to-content-pages.md).
-
-In the editing page, select an element and breadcrumbs show at the bottom of the editing page. Click on one of the breadcrumb levels to select that element.
-
-```{tip}
-You can also select an element and use the shortcut `Shift + Enter` to select its parent.
-```
-
-![Use the breadcrumb system to navigate through the structure and select parent elements](./using-layout-elements/images/04.png)
 
 ## Related Topics
 

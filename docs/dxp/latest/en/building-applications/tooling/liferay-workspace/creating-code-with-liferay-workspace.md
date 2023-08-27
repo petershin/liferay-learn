@@ -109,7 +109,7 @@ Workspace automates the download and setup of a runtime for your code. When you'
 
    **CE:** Browse [releases-cdn.liferay.com/portal](https://releases-cdn.liferay.com/portal), find the bundle you need, and copy its URL to your clipboard. 
 
-2. Open `gradle.properties` from the root folder of your workspace and set the bundle URL property: 
+1. Open `gradle.properties` from the root folder of your workspace and set the bundle URL property: 
 
    ```properties
    liferay.workspace.bundle.url=[paste the URL from your clipboard]
@@ -125,7 +125,7 @@ Workspace automates the download and setup of a runtime for your code. When you'
 
    Save and close the file. 
 
-3. Ready to download the bundle? Run this command: 
+1. Ready to download the bundle? Run this command: 
 
    ```bash
    ./gradlew initBundle

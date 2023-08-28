@@ -85,7 +85,7 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 | Property       | Type      | Description                                                               |
 |:---------------|:----------|:--------------------------------------------------------------------------|
 | `fieldTypes`   | `string`  | Field type mapped to the input.                                           |
-| `name`         | `string`  | Input's name.                                                             |
+| `name`         | `string`  | Input's name. User must define this field; otherwise, the fragment will not be created.  |
 | `required`     | `boolean` | Whether the input is required.                                            |
 | `value`        | `string`  | Field's value.                                                            |
 | `label`        | `string`  | Input's label.                                                            |

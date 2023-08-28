@@ -68,3 +68,10 @@ Now there's a home page for Grow Delectable Bonsai. It's not fully implemented y
 ![There's a home page for Delectable Bonsai's intranet.](./adding-the-home-page/images/01.png)
 
 Before completing the home page design and moving on to design each additional page separately, Delectable Bonsai wants to create a common header and footer for all its pages.
+
+
+## Relevant Concepts
+
+* [Adding Pages to a Site](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
+* [Page Fragments and Widgets](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets)
+* [Configuring Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments)

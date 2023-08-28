@@ -7,19 +7,19 @@ The Blogs application's editor has a complete set of WYSIWYG controls that appea
 
 The Blogs application contains a powerful set of tools for customizing how your blogs appear. For example, display templates like Abstract or Full Content let you choose how much of a blog post appears on a page. You can leverage the built-in display templates or create your own. You can also add a cover image to each of your blog entries.
 
-The fastest way to begin using the _Blogs_ app is to deploy the widget to a [Site Page](../../site-building/creating-pages/understanding-pages/understanding-pages.md).
+The fastest way to begin using the *Blogs* app is to deploy the widget to a [Site Page](../../site-building/creating-pages/understanding-pages/understanding-pages.md).
 
-1. Navigate to the site and page desired (e.g. _Community Blog_).
-1. Click the _Add_ ( ![Add Button](../../images/icon-add-widget.png) ) button.
-1. Click _Widgets_ then _Collaboration_ to expand the menu.
+1. Navigate to the site and page desired (e.g. *Community Blog*).
+1. Click the *Add* ( ![Add Button](../../images/icon-add-widget.png) ) button.
+1. Click *Widgets* then *Collaboration* to expand the menu.
 
     ![Adding the Blogs widget to a page](./getting-started-with-blogs/images/01.png)
 
-1. Drag and drop the _Blogs_ widget to the desired location on the page.
+1. Drag and drop the *Blogs* widget to the desired location on the page.
 
 ![Adding the Blogs widget to a page](./getting-started-with-blogs/images/02.png)
 
-Site members are able to create blog posts using the _Blogs_ widget. Note that there can be only one _Blogs_ widget per page.
+Site members are able to create blog posts using the *Blogs* widget. Note that there can be only one *Blogs* widget per page.
 
 ## What's Next
 

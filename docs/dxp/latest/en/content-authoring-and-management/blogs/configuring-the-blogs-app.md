@@ -19,7 +19,7 @@ You can control how the app behaves for all blogs in your Site.
 
 **Export/Import:** Export or import a LAR file that contains the Blogs app’s content.
 
-![Configure the entries permissions here.](configuring-the-blogs-app/images/03.png)
+![Configure export/import process.](configuring-the-blogs-app/images/03.png)
 
 **Configuration:** Configure the following options for the Blogs app, in these tabs:
 

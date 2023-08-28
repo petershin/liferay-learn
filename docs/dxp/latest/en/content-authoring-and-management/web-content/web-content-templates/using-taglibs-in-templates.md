@@ -12,25 +12,27 @@ When you're using DXP's template editor, you can find variables on the right sid
 1. In the Web Content Editor, position your cursor where you want the variable placed.
 1. Click the variable name.
 
-If the variable name doesn't give you sufficient information on its functionality, you can hover the information icon ( ![Information icon](../../../images/icon-information.png) ) for a more detailed description.
+If the variable name doesn't give you sufficient information on its functionality, you can hover over the information icon ( ![Information icon](../../../images/icon-information.png) ) for a more detailed description.
 
-![You can hover your pointer over a variable for a more detailed description.](./using-taglibs-in-templates/images/01.png)
+![You can hover your pointer over an information icon next to a variable for a more detailed description of the variable.](./using-taglibs-in-templates/images/01.png)
 
 The interactive template editor is available for the FreeMarker, Velocity, and XSL languages. Depending on the language you select, the variable content changes so you're always adding content in the language you've chosen. Autocomplete can be invoked by typing `*${*` which opens a menu of available variables. The editor inserts the variable into the template editor when it is chosen.
 
 ```{note}
-The `utilLocator`, `objectUtil`, and `staticUtil` variables for FreeMarker are disabled by default. These variables are vulnerable to remote code execution and privilege escalation, and should only be enabled for trusted template developers. 
+The `utilLocator`, `objectUtil`, and `staticUtil` variables for FreeMarker are disabled by default. These variables are vulnerable to remote code execution and privilege escalation, and should only be enabled for trusted template developers.
 ```
 
 After you've saved your template, DXP provides a WebDAV URL and static URL. These values access the XML source of your structure. You can find these URLs by returning to your template after it's been saved and expanding the *Details* section. For more information on WebDAV and the uses of the WebDAV URL, reference the [WebDAV Access](../../documents-and-media/publishing-and-sharing/accessing-documents-with-webdav.md) section.
 
 ## Using Reserved Variables Under Journal
 
-You can also access reserved variables under `Journal` in the variables panel. 
+You can also access reserved variables under `Journal` in the variables panel.
 
-The Freemarker Template Expression structure for those variables is `${.vars["reserved-article-[variable-here]"].data}`. 
+The Freemarker Template Expression structure for those variables is `${.vars["reserved-article-[variable]"].data}`.
 
-So, if you want to get the author's email address, for example, you must use: `${.vars["reserved-article-author-email-address"].data}`
+For example,
+
+To get the article's title, use `${.vars["reserved-article-title"].data}`.
 
 Here is a list of variables you can use:
 

@@ -3,7 +3,7 @@ uuid: 2f337fd8-24fc-4150-b6d8-d417cecd9044
 ---
 # Configuring the Blogs App
 
-You can control how the app behaves for all blogs in your Site. 
+You can control how the app behaves for all blogs in your Site.
 
 1. Navigate to the *Blogs* application.
 
@@ -11,7 +11,7 @@ You can control how the app behaves for all blogs in your Site.
 
     ![Click on the options icon to configure.](configuring-the-blogs-app/images/01.png)
 
-1. Configure the available options below. 
+1. Configure the available options below.
 
 **Entries Permissions:** Configure the permissions for Blogs entries. You can control which Roles can add an entry, configure entry permissions, and subscribe to entries.
 
@@ -31,10 +31,10 @@ You can control how the app behaves for all blogs in your Site.
 
 **Entry Updated Email:** Define a subject and body for the emails sent when a new blog entry has been updated.
 
-**RSS:** Enable RSS subscription and choose how blogs are published to RSS readers. 
+**RSS:** Enable RSS subscription and choose how blogs are published to RSS readers.
 
-*Maximum Items to Display:* Choose the total number of RSS feed entries to display on the initial page. You can choose up to 100 to be displayed. 
+*Maximum Items to Display:* Choose the total number of RSS feed entries to display on the initial page. You can choose up to 100 to be displayed.
 
-*Display Style:* Choose between Full Content, Abstract, and Title for the entry display in the RSS feed. 
+*Display Style:* Choose between Full Content, Abstract, and Title for the entry display in the RSS feed.
 
 *Format:* Choose which format the RSS feed uses to deliver the entries: Atom 1.0, RSS 1.0, or RSS 2.0.

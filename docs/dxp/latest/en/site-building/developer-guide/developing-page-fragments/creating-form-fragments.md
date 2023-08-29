@@ -47,7 +47,6 @@ To specify the supported field types, add the `fieldTypes` property to `typeOpti
 
 ```json
 {
-   "cacheable": false,
    "fragmentEntryKey": "numeric-input",
    "icon": "number",
    "type": "input",

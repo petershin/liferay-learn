@@ -53,6 +53,10 @@ To export multiple sets, click the Fragment Sets *Actions* button (![Actions](..
 
     **Rename**: Change the fragment's name.
 
+    **Mark or Unmark as Cacheable**: Mark the fragment as cacheable to add it to the cache when it is added to a page, improving the performance of pages with those fragments. If the option is enabled, you can unmark it as cacheable.
+
+    **View Usages**: View the fragment usages throughout the site. You can see the page's name, type, version, and the time since the page's last propagation. You can also select a page and propagate it.
+
     **Export**: Download the fragment as a `.zip` file.
 
     **Make a Copy**: Duplicate the fragment. Duplicated fragments share the same name with *(Copy)* appended to the end.

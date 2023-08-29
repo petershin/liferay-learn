@@ -29,7 +29,7 @@ To select Assets to publish in the *Asset Publisher* widget,
 
 You can use different options to select the Assets in the Asset Publisher dialog's Asset Selection section:
 
-- [Collection](#collection-and-collection-provider)
+- [Collection](#collection)
 - [Dynamic](#dynamic)
 - [Manual](#manual)
 

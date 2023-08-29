@@ -27,7 +27,7 @@ The steps below show how to create and use Widget and Content Page Templates.
 
     ![Creating a new Page Template Set.](./creating-a-page-template/images/02.png)
 
-1. Click *Add* (![Add Page Template](../../../images/icon-add.png)) and select either *Widget Page Template* or *Content Page Template*. You can edit the Page Template at any time by clicking the *Actions* button (![Actions](../../../images/icon-actions.png)) next to the Page Template in the Set and selecting *Edit*.
+1. Click *Add* ( ![Add Page Template](../../../images/icon-add.png) ) and select either *Widget Page Template* or *Content Page Template*. You can edit the Page Template at any time by clicking the *Actions* button ( ![Actions](../../../images/icon-actions.png) ) next to the Page Template in the Set and selecting *Edit*.
 
 1. Enter a Name.
 
@@ -36,7 +36,7 @@ The steps below show how to create and use Widget and Content Page Templates.
 1. You're automatically brought to the new Page Template. Follow the instructions in [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your Widget Page Template. Likewise, see [Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) to configure your Content Page Template.
 
 ```{tip}
-You can preview your newly created page template. In the Page Templates page, select the *Actions* menu ( ![Actions Icon](../../../images/icon-actions.png) ) for the template you want to preview, and select *Preview*.
+You can preview your newly created page template. In the Page Templates page, select the *Optoins* menu ( ![Options Icon](../../../images/icon-options.png) ) for the template you want to preview, and select *Preview*.
 ```
 
 ## Creating a Page Template from an Existing Page
@@ -45,7 +45,7 @@ You can also create a Page Template from a page while you are editing it. The ne
 
 Follow these steps to make a Page Template from a page:
 
-1. While editing the page, click the *Actions* button (![Actions](../../../images/icon-actions.png)) and select *Convert to Page Template*
+1. While editing the page, click the *Options* button ( ![Options](../../../images/icon-options.png) ) and select *Convert to Page Template*
 
     ![Click Convert to Page Template in the Actions menu to turn the page you are editing into a new Page Template.](./creating-a-page-template/images/03.png) 
 

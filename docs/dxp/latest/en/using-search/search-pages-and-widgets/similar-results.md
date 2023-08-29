@@ -49,7 +49,7 @@ To configure this example,
 
 1. Go to the Asset Publisher's configuration Display Settings and set Asset Link Behavior to _Show Full Content_.
 
-    This makes a selected asset display its full content inside the Asset Publisher. If you choose _View in Context_, you're redirected to the page where the asset exists natively, making your Similar Results widget useless.
+    This makes a selected asset display its full content inside the Asset Publisher. If you choose _View On New Page_, you're redirected to the page where the asset exists natively, making your Similar Results widget useless.
 
 1. Create multiple similar assets of the types listed below. Make sure they're similar enough that the Similar Results widget would populate results.
 

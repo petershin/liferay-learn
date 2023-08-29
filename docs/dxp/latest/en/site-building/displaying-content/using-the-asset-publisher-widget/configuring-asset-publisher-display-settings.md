@@ -39,13 +39,13 @@ These are the remaining settings for the *Display Settings* section:
 | Setting | Description |
 | :--- | :--- |
 | Abstract Length | Select the number of characters to display for abstracts. The default is `200`. Note this option is only available for the Abstracts display template. |
-| Asset Link Behavior | The default value is *Show Full Content*, which displays the full asset in the current Asset Publisher. *View in Context* displays the asset in the application that it belongs to. For example, a blog entry is displayed in Blogs where it was created. See the section below on display pages for more information. |
+| Asset Link Behavior | The *Show Full Content* value displays the full asset in the current Asset Publisher. The default value *View On New Page* displays the asset in the application that it belongs to. For example, a blog entry is displayed in Blogs where it was created. See the section below on display pages for more information. |
 | Number of Items to Display | the maximum number of assets that can be displayed. If pagination is enabled, this number represents the maximum number of assets that can be displayed per page. |
 | Pagination Type | the type of UI to display for pagination. Three options are available: *None*: displays no pagination controls; *Simple*: adds Previous and Next buttons for browsing through pages of assets; *Regular*: adds more options and information including First and Last buttons, a dropdown selector for pages, the number of items per page, and the total number of results (assets displayed) |
 
 ### Set and Enable Options
 
-Many of these, such as printing, flags, ratings, comments, comment ratings, and social bookmarks work the same way they do in other applications. 
+Many of these, such as printing, flags, ratings, comments, comment ratings, and social bookmarks work the same way they do in other applications.
 
 ![There are several options that you can enable.](./configuring-asset-publisher-display-settings/images/03.png)
 

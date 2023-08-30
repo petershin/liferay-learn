@@ -3,7 +3,7 @@ uuid: 988eaa6e-32e7-4517-b9df-e98a80c8dd4e
 ---
 # Creating and Configuring Channels
 
-A channel is a place where you sell products. In Liferay, you must link a channel to a site to be able to sell products on that site. Delectable Bonsai operates two online stores, one for B2C customers and one for B2B customers. To support this, you must create two channels and link them to their corresponding sites. 
+A channel is a place where you sell products. In Liferay, you must link a channel to a site to be able to sell products on that site. Delectable Bonsai operates two online stores, one for B2C customers and one for B2B customers. To support this, you must help Kyle create two channels and link them to their corresponding sites. 
 
 To create a channel,
 
@@ -31,7 +31,7 @@ After creating both the channels, you must link them to the corresponding Lifera
 
 ## Configuring the B2C Channel
 
-For the B2C channel, we’ll configure a payment method, shipping method, and ensure that the site type is set to B2C. In the *Details* section, set the *Commerce Site Type* to *B2C*. When the site type is B2C, every account in the site must be a personal account. Select the *Type* tab, and click *Select Site*. Choose the *Delectable Bonsai B2C* site and click *Save*. You can now use this channel to accept customer orders from your site. 
+For the B2C channel, we’ll configure a payment method, shipping method, and ensure that the site type is set to B2C. In the *Details* section, set the *Commerce Site Type* to *B2C*. When the [site type](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) is B2C, every account in the site must be a personal account. Select the *Type* tab, and click *Select Site*. Choose the *Delectable Bonsai B2C* site and click *Save*. You can now use this channel to accept customer orders from your site. 
 
 ```{note}
 There’s also a B2X type that permits both personal and business accounts. See [Site Types](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) for more information. You can also use [Liferay’s accelerators](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/accelerators) to jumpstart your online store. 
@@ -63,7 +63,7 @@ To add PayPal as a payment method, follow the instructions [here](https://learn.
 
 ## Configuring the B2B Channel
 
-For the B2B channel, we’ll configure a payment method, shipping method, and ensure that the site type is set to B2B. In the *Details* section, set the *Commerce Site Type* to *B2B*. When the site type is B2B, every account in the site must be a business account. Select the *Type* tab, and click *Select Site*. Choose the *Delectable Bonsai B2B* site and click *Save*. 
+For the B2B channel, we’ll configure a payment method, shipping method, and ensure that the site type is set to B2B. In the *Details* section, set the *Commerce Site Type* to *B2B*. When the [site type](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) is B2B, every account in the site must be a business account. Select the *Type* tab, and click *Select Site*. Choose the *Delectable Bonsai B2B* site and click *Save*. 
 
 Delectable Bonsai offers their B2B customers an option to pay by money order. They ship using a variable shipping rate that's calculated based on the weight of the shipment. You can use Liferay’s out-of-the-box payment and shipping methods to implement both of these. 
 

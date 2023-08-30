@@ -23,7 +23,7 @@ The Single Approver (Version 1) workflow is the only type of workflow available 
 
 ## Creating a Notification Template
 
-Kyle needs your help to set up notifications so that users are notified when an order is accepted. To do this, you must set up a notification template and an object action for the commerce order system object. 
+Kyle, the administrator, needs your help to set up notifications so that users are notified when an order is accepted. To do this, you must set up a notification template and an object action for the commerce order system object. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* → *Templates*. 
 
@@ -54,6 +54,26 @@ Kyle needs your help to set up notifications so that users are notified when an 
 
    Orders @ Delectable Bonsai
    ```
+
+   Here are all the variables you can use in your notification template:
+
+   | Variable                                         | Description                        |
+   | :----------------------------------------------- | :--------------------------------- |
+   | [%COMMERCEORDER_AUTHOR_SUFFIX%]                  | Author Suffix                      |
+   | [%COMMERCEORDER_AUTHOR_PREFIX%]                  | Author Prefix                      |
+   | [%COMMERCEORDER_AUTHOR_FIRST_NAME%]              | Author First Name                  |
+   | [%COMMERCEORDER_AUTHOR_LAST_NAME%]               | Author Last Name                   |
+   | [%COMMERCEORDER_AUTHOR_MIDDLE_NAME%]             | Author Middle Name                 |
+   | [%COMMERCEORDER_AUTHOR_ID%]                      | Author ID                          |
+   | [%COMMERCEORDER_CURRENCYCODE%]                   | Currency Code                      |
+   | [%COMMERCEORDER_EXTERNALREFERENCECODE%]          | External Reference Code            |
+   | [%COMMERCEORDER_ID%]                             | ID                                 |
+   | [%COMMERCEORDER_MODIFIEDDATE%]                   | Modified Date                      |
+   | [%COMMERCEORDER_ORDERSTATUS%]                    | Order Status                       |
+   | [%COMMERCEORDER_ORDERTYPEEXTERNALREFERENCECODE%] | Order Type External Reference Code |
+   | [%COMMERCEORDER_ORDERTYPEID%]                    | Order Type ID                      |
+   | [%COMMERCEORDER_SHIPPINGAMOUNT%]                 | Shipping Amount                    |
+   | [%COMMERCEORDER_STATUS%]                         | Status                             |
 
 1. Click *Save*.
 

@@ -5,13 +5,13 @@ uuid: ab3a83f6-1401-48a2-818b-62f3e8dc0ef7
 
 Delectable Bonsai offers a wide range of flavoured syrups and swag to their customers. With Liferay’s out-of-the-box product management capabilities, you can create different kinds of products through a unified interface. Liferay also supports importing products from third party systems. Damian now needs your help to create a few products in the catalog. 
 
-Let’s start off by creating a simple product in the product catalog. We’ll create Delectable Bonsai’s signature product, sap infused maple syrup. 
+Let’s start off by creating a simple product in the product catalog. We’ll create Delectable Bonsai’s signature product, bonsai sap infused maple syrup. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
 1. Click *Add* (![Add](../../images/icon-add.png)) and enter the following:
 
-   **Name:** Sap Infused Maple Syrup
+   **Name:** Bonsai Sap Infused Maple Syrup
 
    **Catalog:** DB Product Catalog
 

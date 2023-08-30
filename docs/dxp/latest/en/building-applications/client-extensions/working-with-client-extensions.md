@@ -189,28 +189,60 @@ If you must manually deploy the zip files, run
 
 Then copy the archives from each project's `dist/` folder into the server's `[Liferay Home]/osgi/client-extensions/` folder.
 
-## Obtaining Context Sensitive Information
+## Context-Sensitive Information
 
-Client extensions are designed to be made portable in that they should never contain environment specific information in their configuration. With that in mind, how does a client extension find information about it's runtime context, particularly the details specific to DXP?
+Client extensions are designed to be portable such that they should never contain environment specific details such as DXP's domain names, their own network address, domain name, and so on in their configuration or source code. With that being the case, how is a client extension supposed to find context-sensitive information about it's runtime environment, particularly the details about the DXP Virtual Instance it is associated with?
 
-Every client extension workload is automatically provided with a _config tree_  (a directory structure which forms a set of key/value pairs where file names are the keys and file contents are the values) containing information about DXP. This way application logic can always retrieve information relative to the runtime and never have to hard code this information.
+At runtime every client extension workload is automatically provided with a set of ___routes___ containing context-sensitive metadata about DXP in addition to other important context-sensitive information.
+
+### Routes (a.k.a. _`config tree`_)
+
+A ___route___ is defined as a directory structure which forms a set of key/value pairs where file names are the keys, file contents are the values, the directory structure is ignored and the directory path is the value of an environment variable provided to the client extension workload.
+
+There are two types of routes each having its own environment variable:
+
+- `LIFERAY_ROUTES_DXP` - This environment variable contains the directory path to the route which contains context-sensitive metadata specific to the __DXP Virtual Instance__ to which the client extension workload is associated (a.k.a. is _deployed_).
+
+  The following is an example of the `LIFERAY_ROUTES_DXP` route:
+
+  ```shell
+  .
+  # Newline separated list of every domain belonging to the DXP virtual instance
+  ├── com.liferay.lxc.dxp.domains
+  # The primary domain ("Virtual Host" field) of the DXP virtual instance
+  ├── com.liferay.lxc.dxp.main.domain
+  # The protocol with which to communicate with DXP virtual instance (http or https)
+  └── com.liferay.lxc.dxp.server.protocol
+  ```
+
+- `LIFERAY_ROUTES_CLIENT_EXTENSION` - This environment variable contains the directory path to the route which contains context-sensitive metadata specific to the __client extension workload__ itself.
+
+  For examples see:
+  - [OAuth Headless Server Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationheadlessserver)
+  - [OAuth User Agent Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationuseragent)
+
+### Routes in Liferay Experience Cloud
+
+Client extension workloads (containers) in Liferay Experience Cloud have these environment variables set automatically and these routes are automatically mounted into the containers at the path defined by the environment variables.
+
+### Routes On-Premises
+
+For on-premises applications routes are emitted by DXP in `${liferay.home}/routes/<virtualInstanceId|'default'>`. Route paths will take a form specific to each environment variable:
+
+- `LIFERAY_ROUTES_DXP` - the route path for this environment variable must take the form
+
+  `${liferay.home}/routes/<virtualInstanceId|'default'>/dxp`
+
+- `LIFERAY_ROUTES_CLIENT_EXTENSION` - the _route_ path for this environment variable must take the form
+
+  `${liferay.home}/routes/<virtualInstanceId|'default'>/<clientExtensionProjectName>`
 
 
-The following is an example of the _config tree_:
+These two environment variables must be provided to client extension processes when they are invoked in order to have access to the metadata.
 
-```bash
-.
-# the protocol with which to communicate with DXP virtual instance
-├── com.liferay.lxc.dxp.server.protocol
-# newline separated list of every domain belonging to the DXP virtual instance
-├── com.liferay.lxc.dxp.domains
-# the primary domain ("Virtual Host" field) of the DXP virtual instance
-└── com.liferay.lxc.dxp.mainDomain
-```
+### Uniform Application Logic for Routes
 
-Workloads in Liferay Experience Cloud will have this metadata automatically mounted into the workload container at the path `/etc/liferay/lxc/dxp-metadata`.
-
-For on-premises applications this same _config tree_ structure is emitted by DXP in `${liferay.home}/cx-metadata/<virtualInstanceIdOrDefault>/dxp-metadata`. This path can then be provided to client extension microservices to have access to that same metadata.
+With this routes based approach application logic can retrieve context sensitive information in a uniform way regardless of where it is invoked and never has to hard code this information.
 
 ## Related Topics
 

@@ -1,7 +1,7 @@
 ---
 uuid: 81a1b13c-c5c4-4f62-a50c-8462ea8b38e3
 ---
-# Customizing a Data Schema
+# Defining a Custom Data Schema
 
 The ticketing application requires custom data fields and selections. You use Liferay [objects](../../building-applications/objects.md) and [picklists](../../building-applications/objects/picklists.md) to define a custom data schema.
 
@@ -19,7 +19,7 @@ Deploy the `liferay-ticket-batch-list-type-definition` client extension with the
 
 In Liferay, navigate to _Control Panel_ &rarr; _Picklists_. See that five new picklists have been created.
 
-![Five new picklists have been created.](./customizing-a-data-schema/images/01.png)
+![Five new picklists have been created.](./defining-a-custom-data-schema/images/01.png)
 
 ### Examining the Custom Picklists Code
 
@@ -77,7 +77,7 @@ Deploy the `liferay-ticket-batch-object-definition` client extension with the fo
 
 In Liferay, navigate to _Control Panel_ &rarr; _Objects_. See that a new ticket object has been created.
 
-![A new ticket object has been created.](./customizing-a-data-schema/images/02.png)
+![A new ticket object has been created.](./defining-a-custom-data-schema/images/02.png)
 
 ### Examining the Custom Object Code
 
@@ -100,6 +100,6 @@ Run the command below to generate a ticket entry:
 
 In Liferay, navigate to _Control Panel_ &rarr; _Tickets_. See that a new ticket entry has been created.
 
-![A new ticket entry has been created.](./customizing-a-data-schema/images/03.png)
+![A new ticket entry has been created.](./defining-a-custom-data-schema/images/03.png)
 
 Next: [apply a custom theme](./applying-a-custom-theme.md) to the ticketing system.

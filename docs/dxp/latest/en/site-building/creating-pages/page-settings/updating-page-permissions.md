@@ -29,10 +29,9 @@ To copy a page with its permissions,
 
 1. Open the *Product Menu* ( ![Product Menu](../../../images/icon-product-menu.png) ) and select *Site Builder* &rarr; *Pages*.
 
-1. Click *Actions* ( ![Actions Button](../../../images/icon-options.png) ) for the desired Page and select *Copy* &rarr; *Page With Permissions*.
+1. Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) for the desired Page and select *Copy* &rarr; *Page With Permissions*.
 
-1. Enter a page name and click *Add* to create a copy with permissions.
-
+1. Enter a page name and click *Add*.
 
 ## Related Topics
 

@@ -21,11 +21,15 @@ To invite new users to your Analytics Cloud workspace, perform these steps:
 
 1. Enter the email addresses (separated by a space or comma) of the people to invite to the workspace.
 
-1. Click the Send button. The invitation is sent to your lucky teammates.
+1. Click the Send button. The invitation is sent to your teammate.
 
 ![The invitation email provides the workspace number.](managing-users/images/01.png)
 
 You can set the user’s permissions when their invitation acceptance is pending.
+
+```{note}
+Note, the invited user must have a Liferay account to use Analytics Cloud. Direct them to [create a Liferay account](https://login.liferay.com/signin/register) if they do not already have one.
+```
 
 ## Managing Permissions
 

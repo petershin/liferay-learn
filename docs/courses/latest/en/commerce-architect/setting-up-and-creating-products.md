@@ -9,9 +9,11 @@ uuid: 55c921fc-97c5-4f6a-b7ae-60fbea19cbd1
 ---
 # Setting Up and Creating Products
 
-Kyle and Damian need your help in setting up the required channels, catalogs and products for the B2B and B2C stores. Kyle, the administrator, is in charge of creating the channels, while Damian, the category manager, is responsible for creating the catalogs, products, configuring their prices, and adding inventory.
+Kyle and Damian need your help to create the required channels, catalogs, and products for the B2B and B2C stores. Kyle, the administrator, is in charge of creating the channels, while Damian, the category manager, is responsible for creating the catalogs, products, configuring their prices, and adding inventory.
 
-After completing this module, you'll have:
+<!-- A diagram here showing the relationship of channels, catalogs, and products would be helpful, along with an explanation of them as concepts. This is the one place in the training where you can give info; the rest of the files should be step-by-step exercises, with little to no explanation other than pointing to existing documentation. -Rich -->
+
+After completing this module, you'll have
 
 * A product catalog containing different products
 * Channels configured and linked to both sites

@@ -29,35 +29,33 @@ Specify an OAuth headless server client extension in your `client-extension.yaml
 type: oAuthApplicationHeadlessServer
 ```
 
-### The `ext-init-metadata` Dependency Side Effect
+### The Special Behavior of `oAuthApplicationHeadlessServer`
 
-The `oAuthApplicationHeadlessServer` client extension causes a side effect for the host workload. First, an additional dependency is defined for metadata which is provided by DXP as a _config tree_ (a directory structure which forms a set of key/value pairs where file names are the keys and file contents are the values).
+The `oAuthApplicationHeadlessServer` client extension causes a special behavior for the host project when it becomes a workload. An additional dependency is defined on metadata which is emitted by DXP as a route (see [Context Sensitive Information](working-with-client-extensions.md#context-sensitive-information)). Any executable workload deployed with this client extension must wait for this route to be available before it runs.
 
-The following is an example of the _config tree_:
+The following is an example of the route defined by the environment variable `LIFERAY_ROUTES_CLIENT_EXTENSION` when a `oAuthApplicationHeadlessServer` client extension is defined in the project:
 
 ```bash
 .
-# the oauth authorization uri of the DXP virtual instance (no protocol, domain or port)
+# The authorization URI of the DXP virtual instance (no protocol, domain or port)
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.authorization.uri
-# the audience of the oauth headless server application
+# The audience of the OAuth headless server application
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.headless.server.audience
-# the client id of the oauth headless server application
+# The client ID of the OAuth headless server application
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.headless.server.client.id
-# the client secret of the oauth headless server application
+# The client secret of the OAuth headless server application
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.headless.server.client.secret
-# the scopes of the oauth headless server application
+# The scopes of the OAuth headless server application
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.headless.server.scopes
-# the introspection uri of the DXP virtual instance (no protocol, domain or port)
+# The introspection URI of the DXP virtual instance (no protocol, domain or port)
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.introspection.uri
-# the jwks (JSON Web Keys Set) uri of the DXP virtual instance (no protocol, domain or port)
+# The JWKS (JSON Web Keys Set) URI of the DXP virtual instance (no protocol, domain or port)
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.jwks.uri
-# the token uri of the DXP virtual instance (no protocol, domain or port)
+# The token URI of the DXP virtual instance (no protocol, domain or port)
 └── <oAuth2ApplicationExternalReferenceCode>.oauth2.token.uri
 ```
 
-Workloads in Liferay Experience Cloud will have this metadata automatically mounted into the workload container at the path `/etc/liferay/lxc/ext-init-metadata`.
-
-For on-premises applications this same _config tree_ structure is emitted by DXP in `${liferay.home}/cx-metadata/<virtualInstanceIdOrDefault>/<projectId>`. This path can then be provided to client extension microservices to have access to that same metadata.
+Application logic which performs secure communication with DXP using a `oAuthApplicationHeadlessServer` client extension must use the information provided by this route metadata to secure said communication. All necessary OAuth 2 metadata to will be provided this way rather than being hard coded in configuration or source code.
 
 ## OAuth User Agent Client Extensions
 
@@ -71,35 +69,33 @@ Specify an OAuth user agent client extension in your `client-extension.yaml` fil
 type: oAuthApplicationUserAgent
 ```
 
-### The `ext-init-metadata` Dependency Side Effect
+### The Special Behavior of `oAuthApplicationUserAgent`
 
-The `oAuthApplicationUserAgent` client extension causes a side effect for the host workload. First, an additional dependency is defined for metadata which is provided by DXP as a _config tree_ (a directory structure which forms a set of key/value pairs where file names are the keys and file contents are the values).
+The `oAuthApplicationUserAgent` client extension causes a special behavior for the host project when it becomes a workload. An additional dependency is defined on metadata which is emitted by DXP as a _route_ (see [Context Sensitive Information](working-with-client-extensions.md#context-sensitive-information)). Any executable workload deployed with this client extension must wait for this route before it runs.
 
-The following is an example of the _config tree_:
+The following is an example of the route defined by the environment variable `LIFERAY_ROUTES_CLIENT_EXTENSION` when a `oAuthApplicationUserAgent` client extension is defined in the project:
 
 ```bash
 .
-# the oauth authorization uri of the DXP virtual instance (no protocol, domain or port)
+# The authorization URI of the DXP virtual instance (no protocol, domain or port)
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.authorization.uri
-# the introspection uri of the DXP virtual instance (no protocol, domain or port)
+# The introspection URI of the DXP virtual instance (no protocol, domain or port)
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.introspection.uri
-# the jwks (JSON Web Keys Set) uri of the DXP virtual instance (no protocol, domain or port)
+# The JWKS (JSON Web Keys Set) URI of the DXP virtual instance (no protocol, domain or port)
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.jwks.uri
-# newline separated redirect uris of the DXP virtual instance
+# Newline separated redirect URIs of the DXP virtual instance
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.redirect.uris
-# the token uri of the DXP virtual instance
+# The token URI of the DXP virtual instance
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.token.uri (no protocol, domain or port)
-# the audience of the oauth user agent application
+# The audience of the OAuth user agent application
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.user.agent.audience
-# the client id of the oauth user agent application
+# The client ID of the OAuth user agent application
 ├── <oAuth2ApplicationExternalReferenceCode>.oauth2.user.agent.client.id
-# the scopes of the oauth user agent application
+# The scopes of the OAuth user agent application
 └── <oAuth2ApplicationExternalReferenceCode>.oauth2.user.agent.scopes
 ```
 
-Workloads in Liferay Experience Cloud will have this metadata automatically mounted into the workload container at the path `/etc/liferay/lxc/ext-init-metadata`.
-
-For on-premises applications this same _config tree_ structure is emitted by DXP in `${liferay.home}/cx-metadata/<virtualInstanceIdOrDefault>/<projectId>`. This path can then be provided to client extension microservices to have access to that same metadata.
+Application logic which performs secure communication with DXP using a `oAuthApplicationUserAgent` client extension must use the information provided by this route metadata to secure said communication. All necessary OAuth 2 metadata to will be provided this way rather than being hard coded in configuration or source code.
 
 ## Related Topics
 

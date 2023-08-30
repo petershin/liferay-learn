@@ -5,12 +5,12 @@ uuid: dfb6f148-1fa1-4b7e-af5d-26570af773e3
 
 You can use different [front-end client extensions](../../building-applications/client-extensions/front-end-client-extensions.md) to customize the look and feel of your site. Specifically, [theme CSS type](../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) client extension can be used as an alternative to [building custom themes](../../site-building/site-appearance/themes/introduction-to-themes.md).
 
-Deploy the `tickets-theme-css` client extension.
+Deploy the `liferay-ticket-theme-css` client extension.
 
 1. Run the following command:
 
 ```bash
-./gradlew :client-extensions:tickets-theme-css:deploy
+./gradlew :client-extensions:liferay-ticket-theme-css:deploy
 ```
 
 1. In Liferay, click on the _product menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
@@ -36,10 +36,10 @@ assemble:
       into: static/img
 ```
 
-This `tickets-theme-css` is a [theme CSS](../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) type client extension. It is defined as follows:
+This `liferay-ticket-theme-css` is a [theme CSS](../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) type client extension. It is defined as follows:
 
 ```yaml
-tickets-theme-css:
+liferay-ticket-theme-css:
     clayURL: css/clay.css
     mainURL: css/main.css
     name: Tickets Theme CSS

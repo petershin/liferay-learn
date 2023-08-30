@@ -5,12 +5,12 @@ uuid: 44bf360f-45e5-4320-a131-0d70d4ec2b59
 
 You can use a [custom element client extension](../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) to render a JavaScript application as a widget on a Liferay site page. The application is served by Liferay and interacts with Liferay through [headless APIs](../../headless-delivery/using-liferay-as-a-headless-platform.md). 
 
-Deploy the `current-ticket-custom-element` client extension.
+Deploy the `liferay-ticket-custom-element` client extension.
 
 1. Run the following command:
 
 ```bash
-./gradlew :client-extensions:current-tickets-custom-element:deploy
+./gradlew :client-extensions:liferay-ticket-custom-element:deploy
 ```
 
 1. In Liferay, click on the _product menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
@@ -21,7 +21,7 @@ Deploy the `current-ticket-custom-element` client extension.
 
 1. In the left navigation under fragments and widgets, click the _widgets_ tab.
 
-1. Scroll down to the client extension type. Drag the _Current Tickets Custom Element_ widget to the page.
+1. Scroll down to the client extension type. Drag the _Liferay Ticket Custom Element_ widget to the page.
 
 1. Click _Publish.
 
@@ -43,10 +43,10 @@ assemble:
 
 Note, the `.js` and `.css` build files of the JavaScript application are copied from the `build/assets` folder and placed into the deployable client extension `.zip` file.
 
-This `current-tickets-custom-element` is a [custom element](../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) type client extension. It is defined as follows in the `client-extension.yaml` file:
+This `liferay-ticket-custom-element` is a [custom element](../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) type client extension. It is defined as follows in the `client-extension.yaml` file:
 
 ```yaml
-current-tickets-custom-element:
+liferay-ticket-custom-element:
    cssURLs:
       - "*.css"
    friendlyURLMapping: current-tickets-custom-element

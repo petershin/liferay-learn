@@ -11,10 +11,10 @@ A picklist is a predetermined list of values users can select. Picklists are nee
 
 ### Deploy the Custom Picklists
 
-Deploy the `list-type-batch` client extension with the following command:
+Deploy the `liferay-ticket-batch-list-type-definition` client extension with the following command:
 
 ```bash
-./gradlew :client-extensions:list-type-batch:deploy
+./gradlew :client-extensions:liferay-ticket-batch-list-type-definition:deploy
 ```
 
 In Liferay, navigate to _Control Panel_ &rarr; _Picklists_. See that five new picklists have been created.
@@ -36,9 +36,9 @@ See [assembling client extensions](../../building-applications/client-extensions
 This `list-type-batch` client extension is a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. It is defined as follows:
 
 ```yaml
-list-type-batch:
-    name: List Type Batch
-    oAuthApplicationHeadlessServer: list-type-batch-importer
+liferay-ticket-batch-list-type-definition:
+    name: Liferay Ticket Batch List Type Definition
+    oAuthApplicationHeadlessServer: liferay-ticket-batch-list-type-definition-oauth-application-headless-server
     type: batch
 ```
 
@@ -47,10 +47,10 @@ See [batch YAML configuration reference](../../building-applications/client-exte
 The client extension makes use of the [batch engine headless API](../../headless-delivery/consuming-apis/batch-engine-api-basics-importing-data.md) and the [picklists headless API](../../building-applications/objects/picklists/picklists-api-basics.md). To make secure API requests, the client extension is configured to use OAuth2 authorization. It is defined as follows:
 
 ```yaml
-list-type-batch-importer:
+liferay-ticket-batch-list-type-definition-oauth-application-headless-server:
     .serviceAddress: localhost:8080
     .serviceScheme: http
-    name: List Type Batch Importer Application
+    name: Liferay Ticket Batch List Type Definition OAuth Application Headless Server
     scopes:
         - Liferay.Headless.Admin.List.Type.everything
         - Liferay.Headless.Batch.Engine.everything
@@ -59,9 +59,9 @@ list-type-batch-importer:
 
 Note that the `Liferay.Headless.Admin.List.Type` resource and `Liferay.Headless.Batch.Engine` resource are given full CRUD access.
 
-See [`client-extension.yaml`](https://github.com/LiferayCloud/client-extensions-deep-dive-devcon-2023/blob/main/client-extensions/list-type-batch/client-extension.yaml) for the full definition.
+See [`client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-list-type-definition/client-extension.yaml) for the full definition.
 
-The five picklists and their selection items are defined in the JSON file located in the `/batch/` folder of the client extension. See the [`list-type-definition.batch-engine-data.json`](https://github.com/LiferayCloud/client-extensions-deep-dive-devcon-2023/blob/main/client-extensions/list-type-batch/batch/list-type-definition.batch-engine-data.json) file for the full definitions.
+The five picklists and their selection items are defined in the JSON file located in the `/batch/` folder of the client extension. See the [`list-type-definition.batch-engine-data.json`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-list-type-definition/batch/list-type-definition.batch-engine-data.json) file for the full definitions.
 
 ## Creating Custom Objects
 
@@ -69,10 +69,10 @@ Once the picklists are defined, the application's custom object can be created.
 
 ### Deploy the Custom Object
 
-Deploy the `ticket-batch` client extension with the following command:
+Deploy the `liferay-ticket-batch-object-definition` client extension with the following command:
 
 ```bash
-./gradlew :client-extensions:ticket-batch:deploy
+./gradlew :client-extensions:liferay-ticket-batch-object-definition:deploy
 ```
 
 In Liferay, navigate to _Control Panel_ &rarr; _Objects_. See that a new ticket object has been created.
@@ -81,12 +81,12 @@ In Liferay, navigate to _Control Panel_ &rarr; _Objects_. See that a new ticket 
 
 ### Examining the Custom Object Code
 
-This `ticket-batch` client extension is also a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. The client extension's YAML file is defined in the same way as the 
-`list-type-batch` client extension. See [batch YAML configuration reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
+This `liferay-ticket-batch-object-definition` client extension is also a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. The client extension's YAML file is defined in the same way as the 
+`liferay-ticket-batch-list-type-definition` client extension. See [batch YAML configuration reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
 
-See [client-extension.yaml](https://github.com/LiferayCloud/client-extensions-deep-dive-devcon-2023/blob/main/client-extensions/ticket-batch/client-extension.yaml) for the full definition.
+See [client-extension.yaml](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-object-definition/client-extension.yaml) for the full definition.
 
-The custom ticket object is defined in the JSON file located in the `/batch/` folder of the client extension. See the [`ticket-object-definition.batch-engine-data.json`](https://github.com/LiferayCloud/client-extensions-deep-dive-devcon-2023/blob/main/client-extensions/ticket-batch/batch/ticket-object-definition.batch-engine-data.json) file for the full definition.
+The custom ticket object is defined in the JSON file located in the `/batch/` folder of the client extension. See the [`object-definition.batch-engine-data.json`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-object-definition/batch/object-definition.batch-engine-data.json) file for the full definition.
 
 ## Generating Ticket Data through APIs
 
@@ -95,7 +95,7 @@ With the custom ticket object finished, new ticket entries can be created within
 Run the command below to generate a ticket entry:
 
 ```bash
-./gradlew :client-extensions:ticket-entry-batch:deploy
+./gradlew :client-extensions:liferay-ticket-batch-object-entry:deploy
 ```
 
 In Liferay, navigate to _Control Panel_ &rarr; _Tickets_. See that a new ticket entry has been created.

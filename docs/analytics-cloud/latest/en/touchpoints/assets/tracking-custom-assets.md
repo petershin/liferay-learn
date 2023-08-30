@@ -7,7 +7,7 @@ uuid: 8f1f6a94-0db3-4a8a-9f6c-57783ca8ac0e
 Using [event tracking](../events/tracking-events.md) is the recommended way to track your custom assets.
 ```
 
-Liferay Analytics Cloud can detect and analyze built-in Liferay DXP assets like Forms, Blogs, Documents and Media, and Web Content. To analyze assets in your custom app, however, you must tag your app’s HTML so the Analytics Cloud JavaScript plugin can detect and track user interaction with your assets.
+Liferay Analytics Cloud can detect and analyze built-in Liferay DXP assets like blogs, documents and media, forms, and web content. If you are using custom assets on your site and wish to have Analytics Cloud track them as these different types of assets, use html tags. Analytics Cloud's JavaScript plugin will detect these html tags, track user interaction, and display the data in their respective asset type dashboards.
 
 ## Asset Events
 
@@ -25,22 +25,142 @@ The Analytics Cloud JavaScript plugin contains the following events that you can
 
 ## Required Metadata
 
-You must have the following information to enable tracking for a custom entity. You must specify this information in HTML via the attributes listed:
+You must specify the following HTML tags to enable tracking for your custom assets.
 
-**Asset Type (String):** The asset type to track. The HTML attribute for this is data-analytics-asset-type. Note that the value for this attribute is not your entity’s exact type. For custom entities, this value is always custom.
+| name | type | description |
+|:--- |:--- |:--- |
+| `data-analytics-asset-action` | preview or download | Preview - used to send a preview event. Download - used to send a download event. Note, this applies only for documents and media or custom assets.|
+| `data-analytics-asset-id` | string | A unique identifier for each custom asset. The string must not contain spaces. |
+| `data-analytics-asset-title` | string | A title for the custom asset. |
+| `data-analytics-asset-type` | string | The type of asset you wish for Analytics Cloud to track your custom asset as (i.e. either `blog`, `document`, `form`, `webContent`, or `custom`) |
 
-**Asset ID (String):** The asset’s unique identifier. The HTML attribute for this is data-analytics-asset-id.
+```{note}
+You must add these attributes to each individual asset that you want Analytics Cloud to track. However, you can populate the attributes’ values via a script, therefore automating this process for each asset.
+```
 
-**Asset Category (String, Optional):** The category of the custom app that contains the asset. The HTML attribute for this is data-analytics-asset-category. You can use this to identify the custom app by name (e.g., “polls”). Note that within a category, all asset IDs must be unique.
+## Example for Blogs Type
 
-**Asset Title (String, Optional):** The asset’s title. The HTML attribute for this is data-analytics-asset-title.
+If you wish for your custom asset to be tracked as a blogs type asset, use `data-analytics-asset-type="blog"` along with the other required html tags. For example, 
 
-## Tracking Asset Events
+```html
+<div
+  data-analytics-asset-id="myBlogId"
+  data-analytics-asset-title="Blog Title"
+  data-analytics-asset-type="blog"
+>
+  <h3>Bringing Ideas To Life: A Look Into Creative Writing</h3>
 
-For example, if you want to track a poll in a custom Polls app, you might use HTML like this:
+  <p>
+    This blog explores the ways in which we can use creativity to bring our
+    ideas to life. We will be looking at techniques for how to inspire, generate
+    and develop characters and plot lines for compelling stories. We will also
+    look at real-life examples and discuss practical use cases to apply
+    knowledge to real writing.
+  </p>
+</div>
+```
+
+## Example for Documents and Media Type
+
+If you wish for your custom asset to be tracked as a documents and media type asset, use `data-analytics-asset-type="document"` along with the other required html tags. For example,
 
 ```html
 <div>
+  <h3>List of the documents related to Analytics Cloud</h3>
+
+  <ul>
+    <li
+      data-analytics-asset-action="preview"
+      data-analytics-asset-id="myDocumentA"
+      data-analytics-asset-title="Document A"
+      data-analytics-asset-type="document"
+    >
+      <a data-analytics-asset-action="download" href="/document-a.pdf">Document A</a>
+    </li>
+    <li
+      data-analytics-asset-action="preview"
+      data-analytics-asset-id="myDocumentB"
+      data-analytics-asset-title="Document B"
+      data-analytics-asset-type="document"
+    >
+      <a data-analytics-asset-action="download" href="document-b.pdf">Document B</a>
+    </li>
+    <li
+      data-analytics-asset-action="preview"
+      data-analytics-asset-id="myDocumentC"
+      data-analytics-asset-title="Document C"
+      data-analytics-asset-type="document"
+    >
+      <a data-analytics-asset-action="download" href="document-c.pdf">Document C</a>
+    </li>
+  </ul>
+</div>
+```
+
+## Example for Forms Type
+
+If you wish for your custom asset to be tracked as a forms type asset, use `data-analytics-asset-type="form"` along with the other required html tags. For example,
+
+```html
+<form
+  data-analytics-asset-id="myFormId"
+  data-analytics-asset-title="Form Title"
+  data-analytics-asset-type="form"
+>
+  <h3>Create new user</h3>
+
+  <div class="content">
+    <label for="name">Name</label>
+    <input id="name" type="text" />
+  </div>
+
+  <div class="content">
+    <label for="city">City</label>
+    <input id="city" type="text" />
+  </div>
+
+  <div class="content">
+    <label for="age">Age</label>
+    <input id="age" type="text" />
+  </div>
+  
+  <button type="submit">save</button>
+</form>
+```
+
+## Example for Web Content Type
+
+If you wish for your custom asset to be tracked as a web content type asset, use `data-analytics-asset-type="web-content"` along with the other required html tags. For example,
+
+```html
+<div
+  data-analytics-asset-id="myWebContentId"
+  data-analytics-asset-title="Web Content Title"
+  data-analytics-asset-type="web-content"
+>
+  <h3>Bringing Ideas To Life: A Look Into Creative Writing</h3>
+
+  <p>
+    This blog explores the ways in which we can use creativity to bring our
+    ideas to life. We will be looking at techniques for how to inspire, generate
+    and develop characters and plotlines for compelling stories. We will also
+    look at real-life examples and discuss practical use cases to apply
+    knowledge to real writing.
+  </p>
+</div>
+```
+
+## Example for Custom Type
+
+The examples above provide [asset analytic reports](assets.md) according to their asset type (e.g. a blog type asset will display blog related metrics in the dashboard). If you require more flexibility, use the custom type asset. Use `data-analytics-asset-type="custom"` along with the other required html tags.
+
+For example, if you want to track a poll in a custom Polls portlet, you might use HTML like this:
+
+```html
+<div data-analytics-asset-type="custom"
+  data-analytics-asset-id="favorite-food-poll"
+  data-analytics-asset-title="What is your favorite food Poll">
+
 <h1> What's your favorite food? </h1>
 <form action="/submit.php">
 <div>
@@ -57,37 +177,13 @@ For example, if you want to track a poll in a custom Polls app, you might use HT
 </div>
 ```
 
-To track this poll’s events, add the above attributes to the div:
-
-```html
-<div data-analytics-asset-type="custom"
-  data-analytics-asset-id="favorite-food-poll"
-  data-analytics-asset-category="polls"
-  data-analytics-asset-title="What is your favorite food Poll">
-
-<h1> What's your favorite food? </h1>
-...
-</div>
-```
-
-```{note}
-You must add these attributes to each individual asset that you want Analytics Cloud to track. However, you can populate the attributes’ values via a script, therefore automating this process for each asset.
-```
-
-### Tracking Downloads
-
-To track downloads, you must tag the element that triggers the action with this attribute:
-
-```html
-data-analytics-asset-action="download"
-```
+To track downloads, you must tag the element that triggers the action with `data-analytics-asset-action="download"`.
 
 For example, here’s the above poll with a download link for a PDF file that contains the poll’s instructions:
 
 ```html
 <div data-analytics-asset-type="custom"
   data-analytics-asset-id="favorite-food-poll"
-  data-analytics-asset-category="polls"
   data-analytics-asset-title="What is your favorite food Poll">
 
 <a href="/poll-instructions.pdf" data-analytics-asset-action="download">Download the Poll Instructions </a>

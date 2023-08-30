@@ -3,7 +3,7 @@ uuid: 49804344-72f6-4e92-aa84-5b99e2bfd982
 ---
 # Configuring Microsoft Office 365 with OAuth
 
-{bdg-secondary}`Available Liferay DXP 7.4 U79/Liferay Portal 7.4 GA79 and above`
+{bdg-secondary}`Available Liferay DXP 7.4 U79+/Liferay Portal 7.4 GA79+`
 
 Connect your Microsoft email service to Liferay with the use of OAuth 2.0 authorization. Note, Microsoft requires OAuth2 and no longer supports basic authentication (i.e. connecting with email address and password).
 
@@ -13,7 +13,7 @@ Connect your Microsoft email service to Liferay with the use of OAuth 2.0 author
 For additional support or troubleshooting with this step, contact Microsoft.
 ```
 
-1. [Create a new application in Microsoft Azure](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app). 
+1. [Create a new application in Microsoft Azure](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app).
 
 1. [Add a client secret for your application](https://learn.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app#add-a-client-secret).
 
@@ -48,5 +48,3 @@ For additional support or troubleshooting with this step, contact Microsoft.
 1. Check the box for _POP3 Connection Enabled_ and for _SMTP Connection Enabled_.
 
 Liferay is now configured with your Microsoft email service.
-
-

@@ -3,13 +3,13 @@ uuid: ab3a83f6-1401-48a2-818b-62f3e8dc0ef7
 ---
 # Creating Products
 
-Delectable Bonsai offers a wide range of flavoured syrups and swag to their customers. With Liferay’s out-of-the-box product management capabilities, you can create different kinds of products through a unified interface. Liferay also supports importing products from third party systems. Damian now needs your help to create a few products in the catalog. 
+Delectable Bonsai offers a wide range of flavored syrups and swag to their customers. With Liferay’s out-of-the-box product management capabilities, you can create different kinds of products through a unified interface. Liferay also supports importing products from third party systems. Damian now needs your help to create a few products in the catalog. 
 
-Let’s start off by creating a simple product in the product catalog. We’ll create Delectable Bonsai’s signature product, bonsai sap infused maple syrup. 
+Start off by creating a simple product in the product catalog. You’ll create Delectable Bonsai’s signature product, bonsai sap infused maple syrup. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
-1. Click *Add* (![Add](../../images/icon-add.png)) and enter the following:
+1. Click *Add* (![Add](../../images/icon-add.png)) and enter this product:
 
    **Name:** Bonsai Sap Infused Maple Syrup
 
@@ -19,25 +19,25 @@ Let’s start off by creating a simple product in the product catalog. We’ll c
 
 1. Click *Submit*.
 
-This creates the product in draft status. You can publish it as it is, but it is best to do some basic configuration first.
+This creates the product in draft status. You can publish it as it is, but you should do some basic configuration first.
 
 ## Basic Product Configuration
 
-Let's add some basic details for the product. 
+Let's add some details for the product. 
 
 1. Under *Details*, enter the following description:
 
    ```
-   Level up your breakfast game with Delectable Bonsai's bestselling signature sap infused maple syrup. 
+   Level up your breakfast game with Delectable Bonsai's best selling signature sap infused maple syrup. 
    ```
 
-1. Under *Categorization*, click *Select* next to Delectable Bonsai. Choose the *Syrup* category. You can use these categories in facets when building the storefront. 
+1. Under Categorization, click *Select* next to Delectable Bonsai. Choose the *Syrup* category. You can use these categories in facets when building the storefront. 
 
 1. Go to the *SKUs* tab and select the `default` sku. Enter `DBSY001` in the SKU text field. 
 
 1. Click *Publish*.
 
-1. Navigate to the *Configuration* tab and enter the following values in the *Shipping* card.
+1. Navigate to the *Configuration* tab and enter the values below in the *Shipping* card.
 
    **Width:** 2
 
@@ -49,7 +49,7 @@ Let's add some basic details for the product.
 
 1. Disable *Free Shipping* and *Ship Separately*.
 
-1. In the *Inventory* card, set *Low Stock Action* to *Set as Unpublished*.
+1. In the Inventory card, for Low Stock Action choose *Set as Unpublished*.
 
 1. Disable *Allow Back Orders* and enable *Display Availability* and *Display Stock Quantity*. 
 
@@ -59,11 +59,13 @@ Let's add some basic details for the product.
 
 1. Go back to the *Details* tab and click *Publish*.
 
-This publishes the product with some basic details. Now, create two more products using the following information. Enable or disable the same toggles as with the product created earlier. 
+This publishes the product with some basic details. Now create two more products using the information below. Enable or disable the same toggles as with the product created earlier. 
 
 | Product Name                   | Catalog            | Category | SKU     | Dimensions                      | Weight | Maximum Order Quantity | Low Stock Action   |
 | :----------------------------- | :----------------- | :------- | :------ | :------------------------------ | :----- | ---------------------- | ------------------ |
 | Sap Infused Orange Maple Syrup | DB Product Catalog | Syrup    | DBSY002 | Width: 2, Height: 6, Depth: 1.5 | 0.22   | 10                     | Set as Unpublished |
 | Sap Infused Honey Maple Syrup  | DB Product Catalog | Syrup    | DBSY003 | Width: 2, Height: 6, Depth: 1.5 | 0.22   | 10                     | Set as Unpublished |
 
-In the next module, we’ll configure the products and its SKUs, add inventory, prices, and other necessary information to enrich the storefront experience.
+Congratulations! You've completed this module. In the next module, you’ll configure the products and its SKUs, add inventory, prices, and other necessary information to enrich the storefront experience.
+
+[Back to Course](../../cloud-administrator.md)

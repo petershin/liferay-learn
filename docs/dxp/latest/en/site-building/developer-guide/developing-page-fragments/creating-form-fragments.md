@@ -5,17 +5,17 @@ uuid: e1341d2b-d8f6-485d-b8c3-f8f781202d25
 
 {bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
 
-The [Form Components fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) are for building your object's forms in a content page. If Liferay's form fragments don't satisfy your use case, create your own to achieve the desired design and functionality for your forms.
+The [form components fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) are for building your object's forms in a content page. If Liferay's form fragments don't satisfy your use case, create your own to achieve the desired design and functionality for your forms.
 
 To create form fragments,
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ), expand *Design*, and go to *Fragments*.
+1. Open the *Product Menu* ( ![Product Menu](../../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*.
 
-1. Click *Plus* (![Plus Button](../../../images/icon-plus.png)) to create a Fragment Set for organizing your form fragments.
+1. Click *Plus* ( ![Plus Button](../../../images/icon-plus.png) ) to create a Fragment Set for organizing your form fragments.
 
-1. Click *Add* (![Add Button](../../../images/icon-add.png)), select the *Form Fragment* type, and click *Next*.
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ), select the *Form Fragment* type, and click *Next*.
 
-   ![Select the Form Fragment type and click Next.](./creating-form-fragments/images/01.png)
+   ![Select the form fragment type and click Next.](./creating-form-fragments/images/01.png)
 
 1. Enter a name.
 
@@ -31,7 +31,7 @@ To create form fragments,
 
    ![In the Code tab, add HTML, CSS, and JavaScript for your fragment.](./creating-form-fragments/images/03.png)
 
-1. (Optional) In the Configuration tab, use JSON to configure the fragment and add options to it.
+1. (Optional) In the Configuration tab, use JSON to configure the fragment and add options to it. See [Fragment Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md) to learn more about different fragment configuration types.
 
    ![In the Configuration tab, use JSON to configure the fragment and add options to it](./creating-form-fragments/images/04.png)
 

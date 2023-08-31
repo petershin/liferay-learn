@@ -28,7 +28,7 @@ To invite new users to your Analytics Cloud workspace, perform these steps:
 You can set the user’s permissions when their invitation acceptance is pending.
 
 ```{note}
-Note, the invited user must have a Liferay account to use Analytics Cloud. Direct them to [create a Liferay account](https://login.liferay.com/signin/register) if they do not already have one.
+Invited users must have Liferay accounts to use Analytics Cloud. If they don't have Liferay accounts, direct them to [create one](https://login.liferay.com/signin/register).
 ```
 
 ## Managing Permissions

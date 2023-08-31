@@ -3,19 +3,17 @@ uuid: b2e86e6c-c605-49f4-97ae-343e811d775c
 ---
 # Creating and Configuring Warehouses
 
-Delectable Bonsai has a main warehouse in Minnesota that fulfills both their consumer and business orders, while a second warehouse in Oklahoma is solely for business orders. Kyle is setting up these warehouses and requires your help. After setting up the first one, you can follow the same steps to create the second warehouse. 
+Delectable Bonsai has a main warehouse in Minnesota that fulfills both their consumer and business orders, while a second warehouse in Oklahoma is solely for business orders. Kyle must set up these warehouses and requires your help. After the first one, you can follow the same steps to create the second warehouse. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Warehouses*.
 
-1. Click the *Add* (![Add](../../images/icon-add.png)) button to create a new warehouse.
+1. Click *Add* (![Add](../../images/icon-add.png)) to create a new warehouse.
 
 1. Enter the name as *DB Minnesota* and click *Submit*. 
 
    ![Enter a name for the warehouse.](./creating-and-configuring-warehouses/images/01.png)
 
-   ```{note}
    Warehouses are inactive by default. You must set its latitude and longitude coordinates before activating them. 
-   ```
 
 1. In the *Geolocation* card, enter the following coordinates:
 
@@ -23,7 +21,7 @@ Delectable Bonsai has a main warehouse in Minnesota that fulfills both their con
 
    **Longitude:** -93.5477618
 
-1. In the *Address* card, enter the following information:
+1. In the *Address* card, enter this:
 
    **Street 1:** Wolf Pack Path
 

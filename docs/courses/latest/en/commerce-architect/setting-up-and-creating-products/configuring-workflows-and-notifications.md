@@ -3,13 +3,13 @@ uuid: d3f40144-866d-4a66-af04-7d482e06c8c7
 ---
 # Configuring Workflows and Notifications
 
-During channel configuration, you can enable workflows so that all orders go through at least one step of approval before they’re placed. Delectable Bonsai’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. To enable this, 
+During channel configuration, you can enable workflows so all orders go through at least one step of approval before they’re placed. Delectable Bonsai’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Channels*. 
 
 1. Select the B2B channel created earlier. 
 
-1. In the *Orders* section, select *Single Approver (Version 1)* from the *Buyer Order Approval Workflow* dropdown.
+1. In the Orders section, select *Single Approver (Version 1)* from the Buyer Order Approval Workflow drop-down.
 
    ![Select the single approver buyer order approval workflow.](./configuring-workflows-and-notifications/images/01.png)
 
@@ -21,15 +21,17 @@ The seller order acceptance workflow, if enabled, requires all orders to go thro
 
 The Single Approver (Version 1) workflow is the only type of workflow available out-of-the-box, but you can customize it further in the workflow editor. Read [Introduction to Order Workflows](https://learn.liferay.com/w/commerce/order-management/order-workflows/introduction-to-order-workflows) for more information about workflows. 
 
+<!-- Please adapt the explanation above to be at the beginning. Explain about a specific user that's been imported that has (or will have) the buyer role, and another specific user that has the order manager role, how the order must be approved, and how the single approver workflow included out-of-the-box satisfies this requirement. -Rich -->
+
 ## Creating a Notification Template
 
-Kyle, the administrator, needs your help to set up notifications so that users are notified when an order is accepted. To do this, you must set up a notification template and an object action for the commerce order system object. 
+Kyle, the administrator, needs your help to notify users when an order is accepted. To do this, you must set up a notification template and an object action for the commerce order system object. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Control Panel* → *Templates*. 
 
-1. Click the *Add* (![Add](../../images/icon-add.png)) button and select *Email*.
+1. Click *Add* (![Add](../../images/icon-add.png)) and select *Email*.
 
-1. Enter the following details:
+1. Enter these details:
 
    **Name:** Delectable Bonsai - Order Accepted Notification Template
 
@@ -87,13 +89,13 @@ This creates a notification template for sending notifications whenever an order
 
 1. Navigate to the *Actions* tab and click *Add* (![Add](../../images/icon-add.png)).
 
-1. Enter *Order Accepted* as the *Action Label*. The action name gets populated automatically. 
+1. Enter *Order Accepted* as the Action Label. The action name gets populated automatically. 
 
 1. Go to *Action Builder*.
 
-1. Under *Trigger*, select *On Order Status Update* from the dropdown.
+1. Under Trigger, select *On Order Status Update* from the drop-down.
 
-1. Activate the *Enable Condition* toggle, and enter the following expression:
+1. Activate the *Enable Condition* toggle, and enter this expression:
 
    `orderStatus=10`
 
@@ -111,7 +113,9 @@ This creates a notification template for sending notifications whenever an order
    | Partially Shipped | 14            |
    | On Hold           | 20            |
 
-1. Under *Action*, choose *Notification* and select the *Delectable Bonsai Order Accepted* notification template. 
+<!-- This table should also go in the docs and be pointed to. -Rich -->
+
+1. Under Action, choose *Notification* and select the *Delectable Bonsai Order Accepted* notification template. 
 
    ![Enter the trigger, condition, and action for the object action.](./configuring-workflows-and-notifications/images/02.png)
 

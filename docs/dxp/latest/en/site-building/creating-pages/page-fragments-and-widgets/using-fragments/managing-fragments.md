@@ -11,11 +11,11 @@ To share fragments and sets between sites, add them to the Global site or use th
 
 ## Managing Fragment Sets
 
-1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
+1. Open the *Product Menu* ( ![Product Menu](../../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*.
 
 1. Select the desired fragment set.
 
-1. Click the set's *Actions* button (![Actions](../../../../images/icon-actions.png)).
+1. Click the set's *Actions* button ( ![Actions](../../../../images/icon-actions.png) ).
 
    ![Click the fragment set's Actions button to access management options.](./managing-fragments/images/01.png)
 
@@ -30,16 +30,16 @@ To share fragments and sets between sites, add them to the Global site or use th
    **Delete**: Remove the current fragment set and all its contents.
 
 ```{tip}
-To export multiple sets, click the Fragment Sets *Actions* button (![Actions](../../../../images/icon-actions.png)) and select *Export*. Then, check the sets you want to export and click *Export*. Each set is downloaded as a separate `.zip` file.
+To export multiple sets, click the Fragment Sets *Actions* button ( ![Actions](../../../../images/icon-actions.png) ) and select *Export*. Then, check the sets you want to export and click *Export*. Each set is downloaded as a separate `.zip` file.
 ```
 
 ## Managing Individual Page Fragments
 
-1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
+1. Open the *Product Menu* ( ![Product Menu](../../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*.
 
 1. Select the desired fragment set.
 
-1. Click the fragment's *Actions* button (![Actions](../../../../images/icon-actions.png)).
+1. Click the fragment's *Actions* button ( ![Actions](../../../../images/icon-actions.png) ).
 
    ![Click the fragment's Actions button to access fragment management options.](./managing-fragments/images/02.png)
 
@@ -73,11 +73,11 @@ Users cannot edit or copy [saved fragment compositions](./saving-fragment-compos
 
 {bdg-secondary}`For Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+`
 
-1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
+1. Open the *Product Menu* ( ![Product Menu](../../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*.
 
 1. Select the desired fragment set.
 
-1. Click the fragment's *Actions* button (![Actions](../../../../images/icon-actions.png)) and select *Copy To*.
+1. Click the fragment's *Actions* button ( ![Actions](../../../../images/icon-actions.png) ) and select *Copy To*.
 
    ![Click the fragment's Actions button and select Copy To.](./managing-fragments/images/03.png)
 

@@ -37,6 +37,14 @@ Once both ImageMagick and Ghostscript are installed on the server, follow these 
 
 1. Verify the paths to the ImageMagick and Ghostscript executables are correct.
 
+   For example, depending on where you installed them, the correct paths may look like this on a Windows server:
+
+   ```
+   C:\\Program Files\\gs\\gs10.1.0\\bin;C:\\Program Files\\ImageMagick
+   ```
+
+   By default, the executables for both are installed in `/usr/bin/` on Linux.
+
 1. Configure resource limits.
 
 1. Click *Save* when finished.

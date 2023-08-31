@@ -11,7 +11,7 @@ By default for demonstration purposes, Liferay DXP/Portal is configured to use a
 * PostgreSQL
 
 ```{important}
-The [Liferay DXP Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360049238151) lists the supported databases and versions.
+The [Liferay DXP Compatibility Matrix](https://help.liferay.com/hc/en-us/sections/360002103292-Compatibility-Matrix) lists the supported databases and versions.
 ```
 
 ## Configure the database
@@ -28,7 +28,7 @@ The [Liferay DXP Compatibility Matrix](https://help.liferay.com/hc/en-us/article
     Liferay requires reading from and writing to the database. The Liferay database user must therefore have permissions to read and write data.
     ```
 
-1. Install a JDBC Connector. The DXP bundle includes several open source JDBC connectors in the `/lib/ext` folder. Connectors for proprietary database, like Oracle or DB2 (see the table below), must be downloaded from the vendor.
+1. Install a JDBC Connector. The DXP bundle includes several open source JDBC connectors in the `$CATALINA_BASE/webapps/ROOT/WEB-INF/shielded-container-lib` folder (in the `$CATALINA_BASE/lib/ext` folder for previous versions of Liferay). Connectors for proprietary database, like Oracle or DB2 (see the table below), must be downloaded from the vendor.
 
 **Proprietary Databases:**
 

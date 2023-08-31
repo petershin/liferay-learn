@@ -10,7 +10,7 @@ Once you've [selected your assets](./selecting-assets-in-the-asset-publisher-wid
 1. Under the *Display Settings* panel, choose a display template.
 1. Configure the remaining options under the *Display Settings* tab.
 1. Expand the *Set and Enable* panel and check the boxes for the options you want to enable.
-1. Expand the *Metadata* panel and move options from the Available box to the Current box to display the metadata for each asset. For example, you can select tags and categories for display. Then users can click on the tags and categories to filter the displayed assets manually. 
+1. Expand the *Metadata* panel and move options from the Available box to the Current box to display the metadata for each asset. For example, you can select tags and categories for display. Then users can click on the tags and categories to filter the displayed assets manually.
 
   ![You can configure the Asset Publisher to display various kinds of metadata about the displayed assets.](./configuring-asset-publisher-display-settings/images/04.png)
 
@@ -76,7 +76,7 @@ This section specifies what metadata to display with the asset entry. Move metad
 
 ### Grouping
 
-The *Grouping* section specifies what groups to divide the displayed assets into. You can group assets by type or by vocabulary (if you have defined some). 
+The *Grouping* section specifies what groups to divide the displayed assets into. You can group assets by type or by vocabulary (if you have defined some).
 
 ![You can separate assets into different groups.](./configuring-asset-publisher-display-settings/images/05.png)
 

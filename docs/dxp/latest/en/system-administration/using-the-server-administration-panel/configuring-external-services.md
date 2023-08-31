@@ -35,7 +35,7 @@ Once both ImageMagick and Ghostscript are installed on the server, follow these 
 
 1. Check *Enabled* for ImageMagick and Ghostscript.
 
-1. Verify the paths to the ImageMagick and Ghostscript executables are correct.
+1. Verify the *Path* field has the correct path(s) to ImageMagick and Ghostscript executables. Use a semicolon as a separator if they are in separate paths.
 
    For example, depending on where you installed them, the correct paths may look like this on a Windows server:
 
@@ -51,7 +51,7 @@ Once both ImageMagick and Ghostscript are installed on the server, follow these 
 
 ## Enabling Xuggler
 
-By default, Documents and Media doesn't generate previews for audio and video files. Using Liferay's Xuggler integration, you can convert and generate previews for these files. If you don't already have Xuggler installed on your server, you can install it via External Services tab under Server Server Administration.
+By default, Documents and Media doesn't generate previews for audio and video files. Using Liferay's Xuggler integration, you can convert and generate previews for these files. If you don't already have Xuggler installed on your server, you can install it when you enable it in Server Administration.
 
 ```{tip}
 Xuggler requires glibc version 2.6 or later on Linux.
@@ -65,7 +65,9 @@ Follow these steps to install and enable Xuggler for your Liferay instance:
 
 1. Check *Enabled* for Xuggler.
 
-   If Xuggler is not already installed, you'll be prompted to install it. Select the correct JAR for the OS, and click *Install*. Then, restart the server to apply changes. Once installed, you can return to the *External Services* tab to enable Xuggler.
+1. (If Xuggler is not installed) Select the correct JAR for the OS, and click *Install*.
+
+   Then, restart the server to apply changes. Once installed, return to the *External Services* tab to enable Xuggler.
 
    ![If Xuggler isn't installed, you'll be prompted to install it.](./configuring-external-services/images/02.png)
 

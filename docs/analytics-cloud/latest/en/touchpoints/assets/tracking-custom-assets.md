@@ -32,7 +32,7 @@ You must specify the following HTML tags to enable tracking for your custom asse
 | `data-analytics-asset-action` | preview or download | Preview - used to send a preview event. Download - used to send a download event. Note, this applies only for documents and media or custom assets.|
 | `data-analytics-asset-id` | string | A unique identifier for each custom asset. The string must not contain spaces. |
 | `data-analytics-asset-title` | string | A title for the custom asset. |
-| `data-analytics-asset-type` | string | The type of asset you wish for Analytics Cloud to track your custom asset as (i.e. either `blog`, `document`, `form`, `webContent`, or `custom`) |
+| `data-analytics-asset-type` | string | The type of asset you wish for Analytics Cloud to track your custom asset as (i.e. either `blog`, `document`, `form`, `web-content`, or `custom`) |
 
 ```{note}
 You must add these attributes to each individual asset that you want Analytics Cloud to track. However, you can populate the attributes’ values via a script, therefore automating this process for each asset.

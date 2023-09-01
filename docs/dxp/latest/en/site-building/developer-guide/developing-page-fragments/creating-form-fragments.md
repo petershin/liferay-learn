@@ -9,7 +9,7 @@ The [form components fragments](../../creating-pages/page-fragments-and-widgets/
 
 To create form fragments,
 
-1. Open the *Product Menu* ( ![Product Menu](../../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*.
+1. Open the *Site Menu* ( ![Site Menu](../../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Fragments*.
 
 1. Click *Plus* ( ![Plus Button](../../../images/icon-plus.png) ) to create a Fragment Set for organizing your form fragments.
 

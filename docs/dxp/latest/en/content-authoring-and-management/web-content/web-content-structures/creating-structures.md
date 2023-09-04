@@ -30,43 +30,43 @@ To discover additional configuration options for Web Content and Structures (e.g
 
 ## Structure Fields
 
-You can place these fields on a structure: 
+You can place these fields on a structure:
 
 **Boolean:** A checkbox that stores either `true` (checked) or `false` (unchecked). For example, you can use this field to set a display rule for the structure's content.
 
-**Color:** A color picker
+**Color:** A color picker.
 
 **Date:** A pre-formatted text field that displays a date picker. The date format depends on the current locale.
 
-**Decimal:** An input that accepts decimal numbers
-
-**Documents and Media:** A file selector to include a file from the Documents and Media library or your computer
+**Date and Time:** A pre-formatted text field that displays a date and time picker. The date and time format depends on the current locale.
 
 **Geolocation:** A map that displays a configured location. Geolocation provides both the current location and directions to another place.
 
-**HTML:** A WYSIWYG editor to offer more formatting options for writing content
+**Grid:** A table with radio buttons options laid out in rows and columns. One selection can be made per row.
 
-**Image:** An image selector to include an image from the Documents and Media library or your computer
+**Image:** An image selector to include an image from the Documents and Media library or your computer.
 
 ```{note}
 If you upload an image from your computer, the image is only available for that particular article.
 ```
 
-**Integer:** An input that accepts whole numbers
+**Link to Page:** A selector to include a link to another page in the same Site.
 
-**Link to Page:** A selector to include a link to another page in the same Site
+**Multiple Selection:** A list of options to choose from using a check-box list. This field allows multiple selection.
 
-**Numeric:** An input that accepts any type of number based on the selected numeric type. Non-numeric input is not accepted.
+**Numeric:** An input that accepts integer or decimal numbers based on the selected numeric type. Non-numeric input is not accepted.
 
-**Radio:** A list of options to choose from using radio buttons. This field allows one selection only.
+**Rich Text:** A WYSIWYG editor to offer more formatting options for writing content.
 
-**Select:** A selection of options to choose from using a combo box. This field allows multiple selections.
+**Select from List:** A selection of options to choose from using a drop-down list. This field allows multiple selection, if set by user.
 
-**Separator:** A horizontal line to separate fields
+**Separator:** A horizontal line to separate fields.
 
-**Text:** A text input for short entries, such as titles or headings
+**Single Selection:** A list of options to choose from using radio buttons. This field allows one selection only.
 
-**Text Box:** A text input for long entries, such as the body of your content
+**Text:** A text input for short entries, such as titles or headings.
+
+**Upload:** A file selector to include a file from the Documents and Media library or your computer.
 
 **Upload:** A file selector to include a file from the documents and media library or your computer.
 

@@ -25,6 +25,8 @@ After you create a [web content article](../../../content-authoring-and-manageme
 
 1. In the *Select Web Content* dialog, click the web content you want to add.
 
+   If you organize your content using folders, you can visualize all the available content by navigating through the folders. Use the breadcrumbs located on top of the folders section to help your navigation.
+
 1. Setup optional [web content display options](#web-content-display-setup-options).
 
 1. Click *Save* and close the *Web Content Display Configuration* dialog.

@@ -104,7 +104,7 @@ Depending on the option you have chosen for a collection display fragment's list
 
 1. From the *Fragments and Widgets* sidebar panel, drag and drop the components you want to use to show the collection items.
 
-    ![Add fragments or widgets to the collection display and configure the display properties.](./displaying-collections/images/06.gif)
+    ![Add fragments or widgets to the collection display and configure the display properties.](./displaying-collections/images/05.gif)
 
     ```{note}
     If the collection display contains more than one item, you can drag the fragment or widget to any of them. The rest of the items in your collection automatically use the same layout settings.
@@ -114,11 +114,11 @@ Depending on the option you have chosen for a collection display fragment's list
 
 1. In the *Mapping* column, select the *Field* that you want to map to your collection.
 
-    ![Map the fragments and widgets to the collection items](./displaying-collections/images/07.gif)
+    ![Map the fragments and widgets to the collection items](./displaying-collections/images/06.gif)
 
 1. Add more fragments or widgets as necessary and map the content to the content fields.
 
-   ![Add fragments and widgets to the collection display and map the content fields.](./displaying-collections/images/08.gif)
+   ![Add fragments and widgets to the collection display and map the content fields.](./displaying-collections/images/07.gif)
 
 1. Click *Publish*.
 
@@ -151,7 +151,7 @@ To paginate the display items in the collection display,
     * **Maximum Number of Pages to Display**: The maximum number of pages shown in the pagination menu. This option only appears if the Display All Pages checkbox is not selected.
     * **Maximum Number of Items per Page**: The maximum number of items from the Collection to display per page, if pagination is enabled. If no pagination type is selected, this option becomes *Maximum Number of Items to Display* instead.
 
-    ![Choose the pagination options for the collection display items.](./displaying-collections/images/12.png)
+    ![Choose the pagination options for the collection display items.](./displaying-collections/images/08.png)
 
 If you enable pagination, the total number of pages available depends on both the total number of items in the collection and the setting for Maximum Number of Items per Page.
 
@@ -166,7 +166,7 @@ You can find usage statistics for the collections on your site.
 1. Go to *Site Administration* and navigate to *Site Builder* &rarr; *Collections*.
 1. Under the *Collections* tab, click on the Actions ( ![Actions Menu](../../../images/icon-actions.png) ) menu next to the Collection you want to review and select *View Usages*.
 
-  ![Select View Usages to understand how your collections are being used through the site](./displaying-collections/images/05.png)
+  ![Select View Usages to understand how your collections are being used through the site](./displaying-collections/images/09.png)
 
 ## Liferay DXP 7.2
 
@@ -183,7 +183,7 @@ To display the content sets, start with a blank page, and then add the necessary
 1. Click ( ![Options](../../../images/icon-app-options.png) ) &rarr; *Configuration* for the top asset publisher.
 1. Under *Asset Selection* choose *Content Set*.
 
-    ![The asset publisher has a number of options available for selecting its source for content.](./displaying-collections/images/20.png)
+    ![The asset publisher has a number of options available for selecting its source for content.](./displaying-collections/images/10.png)
 
 1. Open *Select Content Set* and click *Select*.
 1. Click on the *Space Program Images* content set.
@@ -198,13 +198,13 @@ Now configure the bottom asset publisher with the other content set.
 1. Open *Select Content Set* and click *Select*.
 1. Click on the *Trending* content set.
 
-    ![Select the content set you want to use.](./displaying-collections/images/21.png)
+    ![Select the content set you want to use.](./displaying-collections/images/11.png)
 
 1. Click *Save*.
 
 Again, you can manage various display settings, but the displayed items and their order are determined by the content set criteria.
 
-![You can see the results as the standard asset publisher output. You can create widget templates to add more style and pizzazz here.](./displaying-collections/images/22.png)
+![You can see the results as the standard asset publisher output. You can create widget templates to add more style and pizzazz here.](./displaying-collections/images/12.png)
 
 #### Adding Items to an Existing Content Set
 
@@ -213,7 +213,7 @@ To demonstrate the management of both static and dynamic content sets, upload a 
 1. Upload a new image, and under *Categorization* tag it as *trending*.
 1. Without lifting another finger, the image is added to the top of the *Trending* content list.
 
-    ![The result is dynamically added to the content list wherever it is displayed.](./displaying-collections/images/23.png)
+    ![The result is dynamically added to the content list wherever it is displayed.](./displaying-collections/images/13.png)
 
 1. To add it to the manual set, go back to *Site Administration* and navigate to *Content & Data* &rarr; *Site Builder*.
 1. Click on *Space Program Images* or select ![Options](../../../images/icon-options.png) &rarr; *Edit* next to *Space Program Images*.

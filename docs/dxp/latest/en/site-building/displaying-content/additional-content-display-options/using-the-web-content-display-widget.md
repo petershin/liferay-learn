@@ -15,17 +15,19 @@ After you create a [web content article](../../../content-authoring-and-manageme
 
 1. Under the *Content Management* category in the *Widgets* tab, drag the *Web Content Display* widget to a place on the page.
 
-    ![Drag-and-drop the web content display widget onto the page](./using-the-web-content-display-widget/images/04.png)
+    ![Drag-and-drop the web content display widget onto the page](./using-the-web-content-display-widget/images/01.png)
 
 1. Click *Options* ( ![Options icon](../../../images/icon-app-options.png) ) at the top right of the widget &rarr; *Configuration*.
 
-    ![Open the configuration options for the Web Content Display widget](./using-the-web-content-display-widget/images/05.gif)
+    ![Open the configuration options for the Web Content Display widget](./using-the-web-content-display-widget/images/02.gif)
 
 1. In the *Web Content Display Configuration*, click *Select* under the *Setup* tab.
 
 1. In the *Select Web Content* dialog, click the web content you want to add.
 
-   If you organize your content using folders, you can visualize all the available content by navigating through the folders. Use the breadcrumbs located on top of the folders section to help your navigation.
+   If you organize your content using folders, you can visualize all the available content by navigating through the folders. Use the breadcrumbs located above the folders and content sections to help your navigation.
+
+   ![When you organize your web content using folders, view all available content by navigating throught the folders.](./using-the-web-content-display-widget/images/03.png)
 
 1. Setup optional [web content display options](#web-content-display-setup-options).
 
@@ -39,7 +41,7 @@ When you have a web content selected, you can configure other options in the web
 
 To access the widget's configuration, hover over the web content display widget and, from the widget's *Options* ( ![Options icon](../../../images/icon-widget-options.png) ), select *Configuration*. The configuration options are under the *Setup* tab.
 
-![Configuration options for the web content display](./using-the-web-content-display-widget/images/07.png)
+![Configuration options for the web content display](./using-the-web-content-display-widget/images/04.png)
 
 ### Template
 
@@ -65,7 +67,7 @@ To access the widget's configuration, hover over the web content display widget 
 | Comments | Allows users to enter comments for the web content display widget's content. By default, guests can't leave comments. See [Enabling Comments for Guest](#enabling-comments-for-guests) to change the default option. |
 | Comment Ratings | Shows a rating option for comments. |
 
-![Configuring related assets for a basic web content entry](./using-the-web-content-display-widget/images/06.png)
+![Configuring related assets for a basic web content entry](./using-the-web-content-display-widget/images/05.png)
 
 ### View Count Increment
 
@@ -101,7 +103,7 @@ You can edit published content directly from the web content display widget when
 
 1. Click the *Actions* ( ![Actions](../../../images/icon-actions.png) ) button for the content you want to edit and Select *Edit*
 
-    ![Open the editing options for the web content display widget](./using-the-web-content-display-widget/images/08.png)
+    ![Open the editing options for the web content display widget](./using-the-web-content-display-widget/images/06.png)
 
 ### Integrating OpenOffice or LibreOffice with the Web Content Display
 

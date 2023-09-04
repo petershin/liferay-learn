@@ -70,7 +70,7 @@ If you upload an image from your computer, the image is only available for that 
 
 **Web Content:** A selector to include an existing Web Content Article
 
-See [Editing and Configuring Structure Fields](./configuring-structure-fields.md) for more information on configuring and editing Structure fields.
+See [Configuring Structure Fields](./configuring-structure-fields.md) for more information on configuring and editing Structure fields.
 
 ## Translating a Structure
 

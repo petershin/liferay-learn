@@ -22,5 +22,5 @@ You create a structure by adding elements such as text fields, text boxes, check
 ## Related Information
 
 * [Creating Structures](./creating-structures.md)
-* [Managing Structures](./managing-structures.md)
 * [Configuring Structure Fields](./configuring-structure-fields.md)
+* [Managing Structures](./managing-structures.md)

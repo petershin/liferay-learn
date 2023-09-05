@@ -308,9 +308,12 @@ in the example below). This example renders the title, description, and body of 
   [/#if]
 </div>
 ```
-Be aware that, when adding a fragment with a itemSelector config type to a collection display, it is automatically mapped to the collection item.
 
 ![The item selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/04.png)
+
+```{note}
+Placing a fragment with an item selector configuration into a collection display widget automatically maps the collection item as the selected content.
+```
 
 ## URL Configuration
 

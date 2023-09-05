@@ -61,5 +61,5 @@ Liferay DXP generates a unique ID for the copied Structure. The new copy inherit
 ## Related Information
 
 * [Creating Structures](./creating-structures.md)
-* [Managing Structures](./managing-structures.md)
-* [Understanding Web Content Structures](./understanding-web-content-structures.md)
+* [Configuring Structure Fields](./configuring-structure-fields.md)
+* [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-structures-and-templates.md)

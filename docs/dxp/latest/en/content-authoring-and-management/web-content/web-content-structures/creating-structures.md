@@ -3,22 +3,22 @@ uuid: ce4f21a1-f104-4587-aaff-2d7af1b10139
 ---
 # Creating Structures
 
-Follow these steps to create a Structure:
+Follow these steps to create a structure:
 
-1. Open the Product Menu and go to the Site Menu heading &rarr; *Content & Data* &rarr; *Web Content*.
+1. Open the *Product Menu* and navigate to *Content & Data* &rarr; *Web Content*.
 1. Select the *Structures* tab.
-1. Click the *Add button* (![Add Structure](../../../images/icon-add.png)) to create a new Structure.
-1. Enter the title of your new Structure.
-1. Drag and drop the [available fields](#structure-fields) onto the Structure and [configure their settings](./configuring-structure-fields.md#configurable-settings) to create the Structure.
+1. Click the *Add button* ( ![Add Structure](../../../images/icon-add.png) ) to create a new structure.
+1. Enter the title of your new structure.
+1. Drag and drop the [available fields](#structure-fields) onto the structure and [configure their settings](./configuring-structure-fields.md#configurable-settings) to create the structure.
 
     ```{tip}
-    When you create or [edit a Structure](./configuring-structure-fields.md), the *View* tab is selected by default. You can switch to the *Source* tab to view the Structure's raw XML and modify it directly.
+    When you create or [edit a Structure](./configuring-structure-fields.md), the *View* tab is selected by default. You can switch to the *Source* tab to view the structure's raw XML and modify it directly.
     ```
 
-1. Optionally, add a *Description* for your Structure.
+1. Optionally, add a *Description* for your structure.
 1. Click *Save*.
 
-![When creating a new Structure, you can drag fields from the palette and drop them on the canvas.](./creating-structures/images/01.png)
+![When creating a new structure, you can drag fields from the palette and drop them on the canvas.](./creating-structures/images/01.png)
 
 ```{warning}
 Due to import/export operations, it's possible to have both a global and a Site-scoped Structure with the same `structureKey`. If this happens, the Site-scoped Structure takes precedence, and you can't access the global Structure from that Site.
@@ -30,9 +30,9 @@ To discover additional configuration options for Web Content and Structures (e.g
 
 ## Structure Fields
 
-You can place these fields on a Structure: 
+You can place these fields on a structure: 
 
-**Boolean:** A checkbox that stores either `true` (checked) or `false` (unchecked). For example, you can use this field to set a display rule for the Structure's content.
+**Boolean:** A checkbox that stores either `true` (checked) or `false` (unchecked). For example, you can use this field to set a display rule for the structure's content.
 
 **Color:** A color picker
 
@@ -56,7 +56,7 @@ If you upload an image from your computer, the image is only available for that 
 
 **Link to Page:** A selector to include a link to another page in the same Site
 
-**Number:** An input that accepts any type of number
+**Numeric:** An input that accepts any type of number based on the selected numeric type. Non-numeric input is not accepted.
 
 **Radio:** A list of options to choose from using radio buttons. This field allows one selection only.
 
@@ -68,28 +68,30 @@ If you upload an image from your computer, the image is only available for that 
 
 **Text Box:** A text input for long entries, such as the body of your content
 
-**Web Content:** A selector to include an existing Web Content Article
+**Upload:** A file selector to include a file from the documents and media library or your computer.
+
+**Web Content:** A selector to include an existing web content article.
 
 See [Configuring Structure Fields](./configuring-structure-fields.md) for more information on configuring and editing Structure fields.
 
 ## Translating a Structure
 
-You can add a translation for the Structure, either while creating it or later.
+You can add a translation for the structure, either while creating it or later.
 
 ![Manage the translations of a Web Content Structure.](./creating-structures/images/02.png)
 
-1. From the Add or Edit Structure screen, open the Language Selector by clicking the locale (e.g.,`en-us`), and then select *Manage Translations*.
-1. Click the *Add button* (![Add](../../../images/icon-add.png)) in the Manage Translations modal and choose the language.
-1. Click _Done_.
+1. From the Add or Edit Structure screen, open the language selector by clicking the locale (e.g.,`en-us`), and then select *Manage Translations*.
+1. Click the *Add button* ( ![Add](../../../images/icon-add.png) ) in the manage translations modal and choose the language.
+1. Click *Done*.
 1. Click the default locale again and select the new locale to begin translating.
-1. Translate as much of the Structure's text as you'd like, then click _Save_.
+1. Translate as much of the Structure's text as you'd like, then click *Save*.
 
-To delete a translation, go back to the Manage Translations modal and click the Trash Icon ![Trash](../../../images/icon-trash.png).
+To delete a translation, go back to the manage translations modal and click the *Trash Icon* ( ![Trash](../../../images/icon-trash.png) ).
 
-To edit a translation, select the translation using the Language Selector, make any changes, and click _Save_.
+To edit a translation, select the translation using the language selector, make any changes, and click *Save*.
 
 ## Related Information
 
 * [Understanding Web Content Structures](./understanding-web-content-structures.md)
-* [Managing Structures](./managing-structures.md)
 * [Configuring Structure Fields](./configuring-structure-fields.md)
+* [Managing Structures](./managing-structures.md)

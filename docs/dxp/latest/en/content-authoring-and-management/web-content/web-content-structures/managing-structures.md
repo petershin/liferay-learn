@@ -16,13 +16,15 @@ You can perform these actions from the Structure's Actions Menu (![Action Menu](
 
 **Edit:** Opens the Structure so you can update it. See [Configuring Structure Fields](./configuring-structure-fields.md) for more information.
 
-**Edit Default Values:** Opens a form to set default values for the Structure's fields. See [below](#editing-default-values) for more information.
+**Manage Templates:** Opens the *Templates* tab with a filtered set of web content templates that use the structure. From here you can manage (edit, copy, delete, and set permissions for) the web content templates. See [Managing Templates](../web-content-templates/creating-web-content-templates.md) for more information.
 
-**Manage Templates:** Opens the *Templates* tab with a filtered set of Web Content Templates that use the Structure. From here you can manage (edit, copy, delete, and set permissions for) the Web Content Templates. See [Managing Templates](../web-content-templates/creating-web-content-templates.md) for more information.
+**Copy:** Opens a form to copy the structure and set its name. See [below](#copying-an-existing-structure) for more information.
 
-**Permissions:** Opens the permissions configuration dialog for the Structure. See [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-structures-and-templates.md) for more information.
+**Export as JSON:** This downloads the structure as a JSON file.
 
-**Copy:** Opens a form to copy the Structure and set its name. See [below](#copying-an-existing-structure) for more information.
+**Import and Override:** This overwrites the existing JSON structure.
+
+**Permissions:** Opens the permissions configuration dialog for the structure. See [Assigning Permissions to Web Content Structures and Templates](./assigning-permissions-to-structures-and-templates.md) for more information.
 
 **Delete:** Deletes the Structure.
 

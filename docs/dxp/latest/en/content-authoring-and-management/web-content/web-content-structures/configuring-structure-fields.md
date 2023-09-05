@@ -14,8 +14,8 @@ You can edit Structure fields and their properties:
     ```
 
 1. Add, [remove](#structure-field-options), or reorganize the fields in the Structure.
-1. Select the field you want to configure and click the *Settings* tab, or hover over the field and click the *Settings* (![Settings icon](../../../images/icon-control-menu-gear.png)) icon in the context menu that appears. You can also perform [other actions](#structure-field-options) in the context menu.
-1. [Configure your desired settings](#configurable-settings) for the field and *Save* the changes.
+1. Select the field you want to configure. You can also perform [other actions](#structure-field-options) in the context menu.
+1. Once the sidebar expands, [configure your desired settings](#configurable-settings) for the selected field and *Save* the changes.
 
 ```{tip}
 When you create or [edit a Structure](./configuring-structure-fields.md), the *View* tab is the default. You can switch to the *Source* tab to view the Structure's raw XML and modify it directly.
@@ -59,11 +59,10 @@ Liferay DXP assigns a random name for each new field in the Structure. Replace t
 
 ## Structure Field Options
 
-When you hover over a Structure field, these options appear in its context menu:
+When you hover over a Structure field and click on the *Actions* ( ![Actions Button](../../../images/icon-app-options.png) ), these options appear in its context menu:
 
-* **Settings** (![Settings](../../../images/icon-settings.png)): Changes the name, label, and other information about the field, like whether or not it is required.
-* **Delete** (![Delete](../../../images/icon-app-trash.png)): Removes the field from the structure.
-* **Duplicate** (![Duplicate](../../../images/icon-duplicate.png)): Duplicates the field and all its settings and iterates the *Name* to avoid conflicts.
+* **Duplicate:** Duplicates the field and all its settings and iterates the *Name* to avoid conflicts.
+* **Delete:** Removes the field from the structure.
 
 ## Related Information
 

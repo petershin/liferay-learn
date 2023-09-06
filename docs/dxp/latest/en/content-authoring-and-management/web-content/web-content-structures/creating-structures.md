@@ -5,7 +5,7 @@ uuid: ce4f21a1-f104-4587-aaff-2d7af1b10139
 
 Follow these steps to create a structure:
 
-1. Open the *Product Menu* and navigate to *Content & Data* &rarr; *Web Content*.
+1. Open the *Product Menu* ( ![Product Menu](../../../images/icon-product-menu.png) ) and navigate to *Content & Data* &rarr; *Web Content*.
 1. Select the *Structures* tab.
 1. Click the *Add button* ( ![Add Structure](../../../images/icon-add.png) ) to create a new structure.
 1. Enter the title of your new structure.

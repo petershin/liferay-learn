@@ -50,13 +50,7 @@ Follow these steps to edit your `portal-ext.properties` file to connect directly
 
 1. Optionally validate the data connections to make sure bad connections are handled gracefully.
 
-1. Enable the read-writer database configuration by copying the default [`spring.configs` and `spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) to your `portal-ext.properties` file and adding the following Spring configuration file paths to them.
-
-    Add to `spring.configs`:
-
-    ```
-    META-INF/dynamic-data-source-spring.xml
-    ```
+1. Enable the read-writer database configuration by copying the default [`spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) to your `portal-ext.properties` file and adding the following Spring configuration file paths to them.
 
     Add to `spring.infrastructure.configs`:
 
@@ -92,13 +86,7 @@ Edit your `portal-ext.properties` file following these steps to connect to your 
 
 1. Optionally validate the data connections to make sure bad connections are handled gracefully.
 
-1. Enable the read-writer database configuration by copying the default [`spring.configs` and `spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) to your `portal-ext.properties` file and add the following Spring configuration file paths to them.
-
-    Add to `spring.configs`:
-
-    ```
-        META-INF/dynamic-data-source-spring.xml
-    ```
+1. Enable the read-writer database configuration by copying the default [`spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) to your `portal-ext.properties` file and adding the following Spring configuration file paths to them.
 
     Add to `spring.infrastructure.configs`:
 

@@ -42,7 +42,7 @@ Follow these steps to edit your `portal-ext.properties` file to connect directly
 
     For example JDBC connection values, please see [Database Templates](../../reference/database-templates.md).
 
-1. Configure DXP to use the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
+1. **(This step is only necessary for DXP 7.4 U69 and below)** Configure DXP to use the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -78,7 +78,7 @@ Edit your `portal-ext.properties` file following these steps to connect to your 
     jdbc.write.password=[place your password here]
     ```
 
-1. Configure DXP to use the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
+1. **(This step is only necessary for DXP 7.4 U69 and below)** Configure DXP to use the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
 
     ```properties
     counter.jdbc.prefix=jdbc.write.

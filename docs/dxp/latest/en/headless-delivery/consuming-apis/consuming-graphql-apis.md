@@ -80,6 +80,10 @@ curl --request POST --url http://localhost:8080/o/graphql \ -u test@liferay.com:
 
 ### Calling a Service Using OAuth2
 
+```{note}
+The use of GraphQL with OAuth2 is supported in Liferay DXP 7.4 U77+/Liferay Portal 7.4 GA77+
+```
+
 For production, create an [OAuth2 application](../using-oauth2/creating-oauth2-applications.md) and use the OAuth2 process to get an authorization token. Once you have the token, provide it in the HTTP header:
 
 ```bash

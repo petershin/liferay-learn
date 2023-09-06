@@ -42,6 +42,24 @@ Follow these steps to edit your `portal-ext.properties` file to connect directly
 
     For example JDBC connection values, please see [Database Templates](../../reference/database-templates.md).
 
+1. Configure the read and write pool timeouts and size settings
+
+    ```properties
+    jdbc.read.connectionTimeout=30000
+    jdbc.read.idleTimeout=600000
+    jdbc.read.maximumPoolSize=100
+    jdbc.read.maxLifetime=0
+    jdbc.read.minimumIdle=10
+    jdbc.read.registerMbeans=true
+
+    jdbc.write.connectionTimeout=30000
+    jdbc.write.idleTimeout=600000
+    jdbc.write.maximumPoolSize=100
+    jdbc.write.maxLifetime=0
+    jdbc.write.minimumIdle=10
+    jdbc.write.registerMbeans=true
+    ```
+
 1. **(This step is only necessary for DXP 7.4 U69 and below)** Configure DXP to use the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.
 
     ```properties
@@ -76,6 +94,24 @@ Edit your `portal-ext.properties` file following these steps to connect to your 
 
     jdbc.write.username=[place your user name here]
     jdbc.write.password=[place your password here]
+    ```
+
+1. Configure the read and write pool timeouts and size settings
+
+    ```properties
+    jdbc.read.connectionTimeout=30000
+    jdbc.read.idleTimeout=600000
+    jdbc.read.maximumPoolSize=100
+    jdbc.read.maxLifetime=0
+    jdbc.read.minimumIdle=10
+    jdbc.read.registerMbeans=true
+
+    jdbc.write.connectionTimeout=30000
+    jdbc.write.idleTimeout=600000
+    jdbc.write.maximumPoolSize=100
+    jdbc.write.maxLifetime=0
+    jdbc.write.minimumIdle=10
+    jdbc.write.registerMbeans=true
     ```
 
 1. **(This step is only necessary for DXP 7.4 U69 and below)** Configure DXP to use the write data source (the data source whose prefix is `jdbc.write.`) to create the [Counter](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) data source. A separate data source is always dedicated to the counter.

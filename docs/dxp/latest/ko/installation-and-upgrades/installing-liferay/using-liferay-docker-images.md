@@ -31,7 +31,7 @@ using-liferay-docker-images/docker-image-versions.md
 * [Liferay DXP 이미지](https://hub.docker.com/r/liferay/dxp)
 * [라이프레이 포털 이미지](https://hub.docker.com/r/liferay/portal)
 
-이러한 컨테이너는 시작 및 중지할 수 있는 표준 Docker 컨테이너입니다. 다음 예제에서는 [도커 CLI (`도커`)](https://docs.docker.com/engine/reference/commandline/docker/)를 사용하지만, 원하는 도커 컨테이너 도구를 사용할 수 있습니다.
+이러한 컨테이너는 시작 및 중지할 수 있는 표준 Docker 컨테이너입니다. 다음 예제에서는 [도커 CLI (`도커`)](https://docs.docker.com/engine/reference/commandline/docker/) 를 사용하지만, 원하는 도커 컨테이너 도구를 사용할 수 있습니다.
 
 ## 처음으로 컨테이너 시작하기
 
@@ -50,10 +50,10 @@ using-liferay-docker-images/docker-image-versions.md
     ```
 
     ```{note}
-    메모리, CPU 및 기타 Docker 컨테이너 리소스를 구성할 수 있습니다. 위의 `-m 8g` 명령 인수는 컨테이너의 메모리 제한을 8기가바이트로 설정합니다. 자세한 내용은 [Docker 런타임 옵션](https://docs.docker.com/config/containers/resource_constraints/)을 참조하세요.
+    메모리, CPU 및 기타 Docker 컨테이너 리소스를 구성할 수 있습니다. 위의 `-m 8g` 명령 인수는 컨테이너의 메모리 제한을 8기가바이트로 설정합니다. 자세한 내용은 [Docker 런타임 옵션](https://docs.docker.com/config/containers/resource_constraints/) 을 참조하세요.
     ```
 
-1. 이메일 주소 _test@liferay.com_ 및 비밀번호 _test_를 사용하여 Liferay( `<http://localhost:8080>` )에 로그인합니다. 메시지가 표시되면 비밀번호를 변경합니다.
+1. 이메일 주소 **test@liferay.com** 및 비밀번호 **test** 를 사용하여 Liferay( `<http://localhost:8080>` )에 로그인합니다. 메시지가 표시되면 비밀번호를 변경합니다.
 
     ![라이프레이의 랜딩 페이지입니다.](./using-liferay-docker-images/images/01.png)
 
@@ -91,8 +91,8 @@ docker cp [container]:/opt/liferay/logs/liferay.[timestamp].log .
 
 | 방법 | 장점 | 단점 |
 | :----- | :--- | :--- |
-| `docker exec [컨테이너] /opt/liferay/tomcat/bin/shutdown.sh` | Liferay, Tomcat 및 기타 앱에서 리소스를 확보할 수 있습니다. 컨테이너 진입점은 [종료 후 스크립트](./using-liferay-docker-images/container-lifecycle-and-api.md#post-shutdown-phase-api)를 실행합니다. | |
-| `-i` 인수로 실행 중인 터미널 세션의 `Ctrl-C`.<br><br>참고: 연결된 컨테이너에 [`SIGINT` 또는 `SIGKILL` 신호](https:/ /docs.docker.com/engine/reference/commandline/attach/#extended-description). | 컨테이너를 중지하는 가장 빠른 방법입니다. | Liferay, Tomcat 및 컨테이너 진입점은 리소스를 해제하지 않고 즉시 중지됩니다. 진입점의 [종료 후 단계](./using-liferay-docker-images/container-lifecycle-and-api.md#post-shutdown-phase-api)를 건너뜁니다. 프로덕션 환경에서는 이 방법을 사용하지 마십시오. |
+| `docker exec [컨테이너] /opt/liferay/tomcat/bin/shutdown.sh` | Liferay, Tomcat 및 기타 앱에서 리소스를 확보할 수 있습니다. 컨테이너 진입점은 [종료 후 스크립트](./using-liferay-docker-images/container-lifecycle-and-api.md#post-shutdown-phase-api) 를 실행합니다. | |
+| `-i` 인수로 실행 중인 터미널 세션의 `Ctrl-C`.<br><br>참고: 연결된 컨테이너에 [`SIGINT` 또는 `SIGKILL` 신호](https:/ /docs.docker.com/engine/reference/commandline/attach/#extended-description) . | 컨테이너를 중지하는 가장 빠른 방법입니다. | Liferay, Tomcat 및 컨테이너 진입점은 리소스를 해제하지 않고 즉시 중지됩니다. 진입점의 [종료 후 단계](./using-liferay-docker-images/container-lifecycle-and-api.md#post-shutdown-phase-api) 를 건너뜁니다. 프로덕션 환경에서는 이 방법을 사용하지 마십시오. |
 
 ## 컨테이너 다시 시작
 
@@ -103,7 +103,7 @@ docker start [container]
 ```
 
 ```{warning}
-컨테이너가 다시 시작되면 해당 엔트리 포인트가 다시 실행됩니다([컨테이너 라이프사이클 및 API](./using-liferay-docker-images/container-lifecycle-and-api.md#lifecycle)를 참조하세요). 엔트리 포인트를 통해 [실행 중인 스크립트](./using-liferay-docker-images/running-scripts-in-containers.md)가 안전하게 다시 실행될 수 있는지 확인합니다.
+컨테이너가 다시 시작되면 해당 엔트리 포인트가 다시 실행됩니다( [컨테이너 라이프사이클 및 API](./using-liferay-docker-images/container-lifecycle-and-api.md#lifecycle) 를 참조하세요). 엔트리 포인트를 통해 [실행 중인 스크립트](./using-liferay-docker-images/running-scripts-in-containers.md)가 안전하게 다시 실행될 수 있는지 확인합니다.
 ```
 
 ```{tip}

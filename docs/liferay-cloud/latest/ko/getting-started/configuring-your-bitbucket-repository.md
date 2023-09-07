@@ -13,19 +13,19 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
 ## Jenkins 서비스 준비하기
 
-젠킨스 파일을 사용자 지정한 경우 이 가이드에 따라 [기본 젠킨스 파일](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)을 확장하세요.
+젠킨스 파일을 사용자 지정한 경우 이 가이드에 따라 [기본 젠킨스 파일](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) 을 확장하세요.
 
 ## Bitbucket 리포지토리 만들기
 
 먼저 새 Bitbucket 리포지토리를 만듭니다.
 
-1. [으로 이동 Bitbucket](https://bitbucket.org).
+1. [으로 이동 Bitbucket](https://bitbucket.org) .
 
 1. 사이드바의 검색 아이콘 아래에서 '+' 아이콘을 클릭합니다.
 
     ![아이콘을 클릭하여 새 BitBucket 리포지토리 만들기를 시작합니다.](./configuring-your-bitbucket-repository/images/01.png)
 
-1. _리포지토리_ 를 클릭하여 새 리포지토리 만들기를 시작합니다.
+1. **리포지토리** 를 클릭하여 새 리포지토리 만들기를 시작합니다.
 
     ![새 리포지토리에 대한 세부 정보를 입력합니다.](./configuring-your-bitbucket-repository/images/02.png)
 
@@ -33,9 +33,9 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
 1. 액세스 수준이 비공개로 설정되어 있는지 확인합니다.
 
-1. 설정 _README 포함?_ 을 _아니요_.
+1. 설정 **README 포함?** 을 **아니요** .
 
-1. _리포지토리 만들기_를 클릭합니다.
+1. **리포지토리 만들기** 를 클릭합니다.
 
 ## GitHub에서 Bitbucket으로 이전하기
 
@@ -57,7 +57,7 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
     `git push bitbucket master`
 
-리포지토리를 만들고, 복제하고, 푸시하는 데 도움이 필요하면 [Bitbucket 설명서](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html)를 참조하세요.
+리포지토리를 만들고, 복제하고, 푸시하는 데 도움이 필요하면 [Bitbucket 설명서](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html) 를 참조하세요.
 
 ## BitBucket용 앱 비밀번호 생성
 
@@ -65,11 +65,11 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
 앱 비밀번호를 생성하려면 다음 단계를 수행합니다:
 
-1. 사용자 설정 페이지의 _액세스 관리_ 아래에서 _앱 비밀번호_를 클릭합니다.
+1. 사용자 설정 페이지의 **액세스 관리** 아래에서 **앱 비밀번호** 를 클릭합니다.
 
     ![사용자 설정 페이지에서 앱 비밀번호를 클릭합니다.](./configuring-your-bitbucket-repository/images/03.png)
 
-1. _앱 비밀번호 생성_을 클릭합니다.
+1. **앱 비밀번호 생성** 을 클릭합니다.
 
     ![나중에 다시 액세스할 수 없는 새 앱 비밀번호를 생성합니다.](./configuring-your-bitbucket-repository/images/04.png)
 
@@ -80,7 +80,7 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
     * `풀 리퀘스트 - 읽기, 쓰기` (리포지토리 - 읽기, 쓰기 플래그도 지정해야 함)
     * `Webhooks -  read, write`
 
-1. _만들기_를 클릭합니다.
+1. **만들기** 를 클릭합니다.
 
 1. 앱 비밀번호를 복사합니다(복사하지 않으면 다시 볼 수 없습니다). 이것은 개인 액세스 토큰에 해당하는 BitBucket의 토큰입니다.
 
@@ -92,7 +92,7 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
 Liferay Cloud가 브랜치에 제대로 연결하려면 리포지토리에서 사용 중인 브랜치 접두사의 전체 목록을 제공해야 합니다. 리포지토리에 사용되는 각 브랜치 유형에는 리포지토리 설정에 정의된 고유한 접두사가 있습니다.
 
-[에서 비트버킷 웹사이트](https://bitbucket.org), 왼쪽 메뉴에서 _리포지토리 설정_ &rarr; _브랜치 모델_ 을 클릭합니다. 그러면 _브랜칭 모델_ 페이지로 이동하여 각 브랜치의 접두사가 나열됩니다. 이러한 접두사 각각을 기록하여 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI 환경 변수에 추가하세요.
+[에서 비트버킷 웹사이트](https://bitbucket.org) , 왼쪽 메뉴에서 **리포지토리 설정** &rarr; **브랜치 모델** 을 클릭합니다. 그러면 **브랜칭 모델** 페이지로 이동하여 각 브랜치의 접두사가 나열됩니다. 이러한 접두사 각각을 기록하여 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI 환경 변수에 추가하세요.
 
 ![Bitbucket 리포지토리의 기본 브랜치 유형(및 접두사)은 버그픽스/, 기능/, 핫픽스/ 및 릴리스/입니다.](./configuring-your-bitbucket-repository/images/05.png)
 
@@ -102,7 +102,7 @@ Liferay Cloud가 브랜치에 제대로 연결하려면 리포지토리에서 �
 
 1. Liferay Cloud 콘솔에 로그인하고 `인프라` 환경에서 Jenkins 서비스로 이동합니다.
 
-1. _환경 변수_ 탭으로 이동합니다.
+1. **환경 변수** 탭으로 이동합니다.
 
 1. 다음 환경 변수를 구성합니다:
 
@@ -115,7 +115,7 @@ Liferay Cloud가 브랜치에 제대로 연결하려면 리포지토리에서 �
 | `LCP_CI_SCM_USERNAME`                  | [인증 사용자 이름] |
 | `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` | [접두사 목록]    |
 
-'LCP_CI_SCM_USERNAME'을 [앱 비밀번호를 생성한](#geneating-app-password-for-bitbucket) 사용자로 정의하세요. `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES`를 공백으로 구분된 모든 [저장소 브랜치에 사용되는 접두사](#checking-branch-types-and-prefixes) 목록으로 정의하세요.
+'LCP **CI** SCM **USERNAME'을 [앱 비밀번호를 생성한](#geneating-app-password-for-bitbucket) 사용자로 정의하세요. `LCP** CI_SCM_BITBUCKET_BRANCH_PREFIXES`를 공백으로 구분된 모든 [저장소 브랜치에 사용되는 접두사](#checking-branch-types-and-prefixes) 목록으로 정의하세요.
 
 이러한 환경 변수를 업데이트하면 Jenkins 서비스가 다시 시작됩니다. 이제 새 리포지토리에 있는 모든 푸시 브랜치와 풀 리퀘스트가 트리거되어야 합니다.
 
@@ -131,7 +131,7 @@ Liferay Cloud가 브랜치에 제대로 연결하려면 리포지토리에서 �
 
 ## 빌드 확인
 
-푸시 브랜치 및 풀 리퀘스트가 빌드를 트리거하여 Liferay Cloud 콘솔의 _빌드_ 탭에서 확인하거나 배포할 수 있습니다. Jenkins 서비스와의 통합을 설정한 후에는 다음 단계로 이러한 빌드를 검증하여 통합이 성공적으로 이루어졌는지 확인하는 것이 좋습니다.
+푸시 브랜치 및 풀 리퀘스트가 빌드를 트리거하여 Liferay Cloud 콘솔의 **빌드** 탭에서 확인하거나 배포할 수 있습니다. Jenkins 서비스와의 통합을 설정한 후에는 다음 단계로 이러한 빌드를 검증하여 통합이 성공적으로 이루어졌는지 확인하는 것이 좋습니다.
 
 ### 푸시된 브랜치에서 빌드 확인
 
@@ -149,9 +149,9 @@ Liferay Cloud가 브랜치에 제대로 연결하려면 리포지토리에서 �
     git push bitbucket branch-name
     ```
 
-1. Liferay Cloud 콘솔에서 _빌드_ 페이지로 이동합니다.
+1. Liferay Cloud 콘솔에서 **빌드** 페이지로 이동합니다.
 
-1. _빌드_ 페이지에서 푸시된 브랜치에 대한 빌드가 표시되는지 확인합니다.
+1. **빌드** 페이지에서 푸시된 브랜치에 대한 빌드가 표시되는지 확인합니다.
 
 ### 풀 리퀘스트에서 빌드 확인
 
@@ -161,7 +161,7 @@ Liferay Cloud가 브랜치에 제대로 연결하려면 리포지토리에서 �
 
 1. 풀 리퀘스트에 대한 새 빌드가 생성되었는지 확인합니다.
 
-1. Liferay Cloud 콘솔에서 _빌드_ 페이지로 이동합니다.
+1. Liferay Cloud 콘솔에서 **빌드** 페이지로 이동합니다.
 
 1. 브랜치에 대한 링크를 클릭하고 적절한 빌드에서 커밋하세요.
 

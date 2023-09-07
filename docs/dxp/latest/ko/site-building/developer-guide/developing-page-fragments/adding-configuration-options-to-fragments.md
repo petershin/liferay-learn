@@ -21,7 +21,7 @@ Liferay DXP 7.4+의 경우, 조각 컬렉션은 Liferay UI에서 조각 세트�
 
 그런 다음 다음 단계에 따라 예제를 배포하여 조각 구성 옵션이 작동하는 방식을 확인하세요.
 
-1. [예제 조각 세트](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip)를 다운로드하고 압축을 풉니다. :
+1. [예제 조각 세트](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip) 를 다운로드하고 압축을 풉니다. :
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip -O

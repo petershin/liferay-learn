@@ -19,7 +19,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [DDM 스토리지 어댑터 프로젝트](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip)를 다운로드하고 압축을 풉니다.
+1. [DDM 스토리지 어댑터 프로젝트](./writing-a-form-storage-adapter/resources/liferay-r2f1.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/process-automation/forms/developer-guide/liferay-r2f1.zip -O
@@ -49,19 +49,19 @@
 
 1. 브라우저를 열어 <http://localhost:8080>으로 이동합니다.
 
-1. _사이트 메뉴_ &rarr; _콘텐츠 & 데이터_ &rarr; _양식_에서 양식 애플리케이션으로 이동합니다.
+1. **사이트 메뉴** &rarr; **콘텐츠 & 데이터** &rarr; **양식** 에서 양식 애플리케이션으로 이동합니다.
 
-1. *추가* 버튼(![Add](./../../../images/icon-add.png))을 클릭하여 양식 작성기를 엽니다.
+1. **추가** 버튼(![Add](./../../../images/icon-add.png))을 클릭하여 양식 작성기를 엽니다.
 
-1. 양식 작성기 보기에서 *옵션* 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 *설정* 창을 엽니다.
+1. 양식 작성기 보기에서 **옵션** 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 **설정** 창을 엽니다.
 
-1. *에서 스토리지 유형*을 선택하고 *R2F1 동적 데이터 매핑 스토리지 어댑터* 유형을 선택한 후 _완료_를 클릭합니다.
+1. **에서 스토리지 유형** 을 선택하고 **R2F1 동적 데이터 매핑 스토리지 어댑터** 유형을 선택한 후 **완료** 를 클릭합니다.
 
 1. 양식에 [텍스트 필드](../creating-and-managing-forms/creating-forms.md) 를 추가하고 양식을 게시한 후 몇 번 제출합니다.
 
 1. 양식 데이터가 유지되었는지 확인하려면 양식의 기록으로 이동합니다:
 
-   _사이트 메뉴_ &rarr; _콘텐츠_ &rarr; _양식_에서 양식의 *작업* 버튼(![Actions](./../../../images/icon-actions.png))을 클릭한 다음 _항목 보기_를 클릭합니다.
+**사이트 메뉴** &rarr; **콘텐츠** &rarr; **양식** 에서 양식의 **작업** 버튼(![Actions](./../../../images/icon-actions.png))을 클릭한 다음 **항목 보기** 를 클릭합니다.
 
    ![양식 항목이 추가되었는지 확인합니다.](./writing-a-form-storage-adapter/images/02.png)
 
@@ -122,7 +122,7 @@ public DDMStorageAdapterSaveResponse save(
     throws StorageException;
 ```
 
-각 메서드는 정적 내부 `Builder` 클래스의 `newBuilder` 메서드를 사용하여 구성한 _DDMStorageAdapter[[저장](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java)/[가져오기](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java)/[삭제](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteResponse.java)]응답_ 객체를 반환해야 합니다.
+각 메서드는 정적 내부 `Builder` 클래스의 `newBuilder` 메서드를 사용하여 구성한 **DDMStorageAdapter[ [저장](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterSaveResponse.java) / [Get](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterGetResponse.java) / [Delete](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/dynamic-data-mapping/dynamic-data-mapping-api/src/main/java/com/liferay/dynamic/data/mapping/storage/DDMStorageAdapterDeleteResponse.java) ]응답** 객체를 반환해야 합니다.
 
 모든 메서드는 `DDMStorageAdapter[저장/삭제/조회]요청`을 전달합니다. 요청 객체에는 유용한 컨텍스트 정보를 반환하는 게터 메서드가 포함되어 있습니다.
 
@@ -294,13 +294,13 @@ CRUD 메서드 중 하나가 호출될 때마다 일부 로그 메시지를 추�
 
 이제 작동하는지 확인합니다:
 
-1. _사이트 메뉴_ &rarr; _콘텐츠_ &rarr; _양식_에서 양식 애플리케이션으로 이동합니다.
+1. **사이트 메뉴** &rarr; **콘텐츠** &rarr; **양식** 에서 양식 애플리케이션으로 이동합니다.
 
-1. *추가* 버튼 ![Add](./../../../images/icon-add.png) 을 클릭하여 양식 작성기를 엽니다.
+1. **추가** 버튼 ![Add](./../../../images/icon-add.png) 을 클릭하여 양식 작성기를 엽니다.
 
-1. 양식 작성기 보기에서 *옵션* 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 *설정* 창을 엽니다.
+1. 양식 작성기 보기에서 **옵션** 버튼(![Options](./../../../images/icon-options.png))을 클릭하고 **설정** 창을 엽니다.
 
-1. 선택 목록 필드에서 *스토리지 유형 선택*, *R2F1 동적 데이터 매핑 스토리지 어댑터* 유형을 선택한 후 _완료_를 클릭합니다.
+1. 선택 목록 필드에서 **스토리지 유형 선택** , **R2F1 동적 데이터 매핑 스토리지 어댑터** 유형을 선택한 후 **완료** 를 클릭합니다.
 
 1. 양식에 [텍스트 필드](../creating-and-managing-forms/creating-forms.md) 를 추가하고 양식을 게시한 후 몇 번 제출합니다.
 

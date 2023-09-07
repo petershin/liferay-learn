@@ -23,13 +23,13 @@ db_upgrade_client.sh --help
 
 업그레이드 도구 명령줄 옵션은 다음과 같습니다:
 
-**--도움말** 또는 **-h**: 도구의 도움말 메시지를 인쇄합니다.
+**--도움말** 또는 **-h** : 도구의 도움말 메시지를 인쇄합니다.
 
-**--jvm-opts** 또는 **-j** + **[arg]**: 업그레이드 프로세스에 대한 JVM 옵션을 설정합니다.
+**--jvm-opts** 또는 **-j** + [**arg**] : 업그레이드 프로세스에 대한 JVM 옵션을 설정합니다.
 
-**--log-file** 또는 **-l** + **[arg]**: 도구의 로그 파일 이름을 지정합니다 -- 기본 이름은 `upgrade.log`입니다.
+**--log-file** 또는 **-l** + [**arg**] : 도구의 로그 파일 이름을 지정합니다 -- 기본 이름은 `upgrade.log`입니다.
 
-**--shell** 또는 **-s**: 업그레이드 프로세스를 완료한 후 [Gogo 셸](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) 로 자동 연결합니다.
+**--shell** 또는 **-s** : 업그레이드 프로세스를 완료한 후 [Gogo 셸](../../../liferay-internals/fundamentals/using-the-gogo-shell.md) 로 자동 연결합니다.
 
 ### 로깅 출력
 
@@ -92,7 +92,7 @@ Please enter your database host (localhost):
 
 * `app-server.properties`: 서버 위치 및 라이브러리를 지정합니다.
 * `portal-upgrade-database.properties`: 데이터베이스 연결을 구성합니다.
-* `portal-upgrade-ext.properties`: 업그레이드에 필요한 나머지 포털 속성을 설정합니다. 현재 DXP 서버를 복제하려면 현재 포털 속성(데이터베이스 속성 제외)을 이 파일에 복사하면 됩니다. 현재 속성을 사용하기 전에 [에서 현재 DXP 버전에 맞게 업데이트하세요](../migrating-configurations-and-properties.md#migrating-portal-properties).
+* `portal-upgrade-ext.properties`: 업그레이드에 필요한 나머지 포털 속성을 설정합니다. 현재 DXP 서버를 복제하려면 현재 포털 속성(데이터베이스 속성 제외)을 이 파일에 복사하면 됩니다. 현재 속성을 사용하기 전에 [에서 현재 DXP 버전에 맞게 업데이트하세요](../migrating-configurations-and-properties.md#migrating-portal-properties) .
 
 #### app-server.properties 구성
 
@@ -152,7 +152,7 @@ server.detector.server.id=tomcat
     dl.store.impl=com.liferay.portal.store.s3.S3Store
     ```
 
-* `hibernate.jdbc.batch_size`: 성능 향상에 사용되는 JDBC 배치 크기(기본적으로 _250_ 로 설정됨). _이 속성은 업그레이드 성능을 향상시킬 수 있지만 필수는 아닙니다._
+* `hibernate.jdbc.batch_size`: 성능 향상에 사용되는 JDBC 배치 크기(기본적으로 **250** 로 설정됨). **이 속성은 업그레이드 성능을 향상시킬 수 있지만 필수는 아닙니다.**
 
 * `upgrade.log.context.enabled`: `true` 로 설정하여 식별자로 태그가 지정된 업그레이드 관련 로그 줄을 확인합니다. 가능한 식별자는 다음과 같습니다.
 

@@ -137,7 +137,7 @@ Message Bus의 비동기식 옵션은 "실행 후 삭제" 동작을 제공합니
 | `setResponseDestinationName(String)`  | `대상` 참조하여 응답을 받습니다.       |
 | `setValues(Map<String,Object>)` | `지도`에서 추가 데이터를 제공합니다.     |
 
-`N8K5Baker`는 [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java)의 `sendMessage(String, Message)` 메서드를 호출하여 `acme/n8k5_able`이라는 이름의 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)에 메시지를 보냅니다. `MessageBus`는 새 스레드를 시작하고 `Message`를 `acme/n8k5_able` `Destination`에 등록된 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인스턴스로 보냅니다. `N8K5Baker`의 스레드가 계속됩니다.
+`N8K5Baker`는 [`MessageBus`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBus.java) 의 `sendMessage(String, Message)` 메서드를 호출하여 `acme/n8k5_able`이라는 이름의 [`Destination`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java) 에 메시지를 보냅니다. `MessageBus`는 새 스레드를 시작하고 `Message`를 `acme/n8k5_able` `Destination`에 등록된 [`MessageListener`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListener.java) 인스턴스로 보냅니다. `N8K5Baker`의 스레드가 계속됩니다.
 
 ```{note}
 `Message`에 대한 응답을 받으려면 `Message`에 응답 대상을 설정하고 해당 대상에 `N8K5Baker`와 같은 클래스를 `MessageListener`로 등록합니다. 자세한 내용은 [메시지 듣기](./listening-for-messages.md)를 참조하십시오.

@@ -1,6 +1,6 @@
 # 헤드리스 API 검색
 
-{bdg-link-primary}`[베타 기능](../../시스템-관리/설정-라이프웨이/기능-플래그.md#베타-기능-플래그)`
+{bdg-link-primary}` [베타 기능](../../시스템-관리/설정-라이프웨이/기능-플래그.md#베타-기능-플래그) `
 
 {bdg-secondary}`7.4 U88+ 및 GA88+`
 
@@ -14,7 +14,7 @@
 feature.flag.LPS-179669=true
 ```
 
-[환경 변수](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables)를 사용하도록 설정하려면 이 변수를 설정에 추가하세요:
+[환경 변수](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables) 를 사용하도록 설정하려면 이 변수를 설정에 추가하세요:
 
 ```properties
 LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER7__NUMBER9__NUMBER6__NUMBER6__NUMBER9_=true
@@ -160,8 +160,8 @@ curl \
 
 | 재산                   | 묘사                                                                                                                            |
 |:-------------------- |:----------------------------------------------------------------------------------------------------------------------------- |
-| `attributes`         | 사용 가능한 검색 컨텍스트 속성을 설정하여 검색 블루프린트를 구성하거나 빈 검색을 활성화합니다. 자세한 내용은 [사용 가능한 검색 요청 속성](#available-search-request-attributes)을 참조하세요. |
-| `facetConfiguration` | 응답에서 패싯을 반환하도록 패싯 구성을 설정합니다. [요청에 패싯 구성 추가하기](#adding-facet-configurations-to-the-request)를 참조하세요.                            |
+| `attributes`         | 사용 가능한 검색 컨텍스트 속성을 설정하여 검색 블루프린트를 구성하거나 빈 검색을 활성화합니다. 자세한 내용은 [사용 가능한 검색 요청 속성](#available-search-request-attributes) 을 참조하세요. |
+| `facetConfiguration` | 응답에서 패싯을 반환하도록 패싯 구성을 설정합니다. [요청에 패싯 구성 추가하기](#adding-facet-configurations-to-the-request) 를 참조하세요.                            |
 
 ### 요청에 속성 추가하기
 
@@ -252,7 +252,7 @@ curl \
 
 API 응답에서 [집계](ES) 및 [검색 패싯](../search-pages-and-widgets/search-facets.md) 을 확인할 수 있습니다. 집계를 보려면,
 
-1. 검색 블루프린트에 [집계를 추가](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-configuration-reference.md#aggregation-configuration).
+1. 검색 블루프린트에 [집계를 추가](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-configuration-reference.md#aggregation-configuration) .
 1. 검색 요청에 `search.experiences.blueprint.external.reference.code` 속성을 설정합니다.
 
 요청에 [패싯 구성](#adding-facet-configurations-to-the-request) 을 추가하면 검색 패싯이 반환됩니다. 예를 들어, 이 요청 본문은 태그 패싯을 요청합니다:

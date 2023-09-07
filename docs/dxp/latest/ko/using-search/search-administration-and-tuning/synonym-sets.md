@@ -8,7 +8,7 @@
 
 동의어 집합은 같은 의미를 가진 단어나 구의 그룹입니다. 관리 사용자가 동의어 집합을 생성하면 검색 페이지 최종 사용자가 키워드 또는 구문을 검색할 때 집합에 있는 동의어도 검색됩니다.
 
-예를 들어 사용자가 'US'라는 단어를 검색할 수 있습니다. 대부분의 경우 사용자는 *미국*, *미국*, *미국*등과 같은 동의어도 포함된 검색 결과를 원할 것입니다. 동의어 집합을 생성하면 사용자가 검색을 최대한 활용할 수 있습니다.
+예를 들어 사용자가 'US'라는 단어를 검색할 수 있습니다. 대부분의 경우 사용자는 **미국** , **미국** , **미국** 등과 같은 동의어도 포함된 검색 결과를 원할 것입니다. 동의어 집합을 생성하면 사용자가 검색을 최대한 활용할 수 있습니다.
 
 ## 요구 사항 및 제한 사항
 
@@ -24,19 +24,19 @@
 
 새 동의어 집합을 만들려면 다음과 같이 하세요,
 
-1. 글로벌 메뉴(![Global Menu](../../images/icon-applications-menu.png))에서 *애플리케이션* &rarr; *튜닝 검색* &rarr; *동의어*로 이동합니다.
+1. 글로벌 메뉴(![Global Menu](../../images/icon-applications-menu.png))에서 **애플리케이션** &rarr; **튜닝 검색** &rarr; **동의어** 로 이동합니다.
 
    ![애플리케이션 메뉴의 동의어 섹션으로 이동합니다.](synonym-sets/images/01.png)
 
-1. _추가_ 아이콘(![Click on the add icon](../../images/icon-add.png))을 클릭하여 새 동의어 집합을 추가합니다.
+1. **추가** 아이콘(![Click on the add icon](../../images/icon-add.png))을 클릭하여 새 동의어 집합을 추가합니다.
 
-1. 세트에 동의어 목록을 입력합니다. 동의어는 *입력* 또는 쉼표를 입력하여 입력할 수 있습니다.
+1. 세트에 동의어 목록을 입력합니다. 동의어는 **입력** 또는 쉼표를 입력하여 입력할 수 있습니다.
 
    ![다른 동의어 단어를 세트에 입력합니다.](synonym-sets/images/02.png)
 
-1. 동의어 옆에 있는 *X* 을 클릭하면 동의어를 삭제할 수 있습니다. 세트를 완료하면 *게시*를 클릭합니다.
+1. 동의어 옆에 있는 **X** 을 클릭하면 동의어를 삭제할 수 있습니다. 세트를 완료하면 **게시** 를 클릭합니다.
 
-1. 세트를 편집하거나 삭제하려면 _옵션_ 아이콘(![Click on the options icon.](../../images/icon-options.png))을 클릭하고 *수정* 또는 *삭제*를 클릭합니다.
+1. 세트를 편집하거나 삭제하려면 **옵션** 아이콘(![Click on the options icon.](../../images/icon-options.png))을 클릭하고 **수정** 또는 **삭제** 를 클릭합니다.
 
    ![변경하려면 수정 또는 삭제를 클릭합니다.](synonym-sets/images/03.png)
 
@@ -54,7 +54,7 @@
 
 > **가용성: Liferay DXP 7.3 FP2+ 및 Liferay DXP 7.2 FP13+**
 
-기본적으로 동의어 세트는 [영어와 스페인어로만 동의어를 지원합니다](#requirements-and-limitations). 다른 언어에 대한 지원을 추가하려면 아래 구성 단계를 따르세요:
+기본적으로 동의어 세트는 [영어와 스페인어로만 동의어를 지원합니다](#requirements-and-limitations) . 다른 언어에 대한 지원을 추가하려면 아래 구성 단계를 따르세요:
 
 - 기본 [프랑스어](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) 분석기를 필요한 변경 사항(파이프라인에 추가 [동의어 그래프 토큰 필터](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-synonym-graph-tokenfilter.html) 포함)으로 다시 구현하여 [사용자 정의 분석기](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) 를 만듭니다.
 - 커넥터 구성의 추가 인덱스 구성을 사용하여 인덱스 설정에 사용자 지정 분석기 정의를 추가합니다.
@@ -67,8 +67,8 @@
 
 실행 중인 Liferay에서 매핑을 가져옵니다,
 
-1. 글로벌 메뉴(![Global Menu](../../images/icon-applications-menu.png))를 열고 _제어판_ &rarr; _검색_으로 이동합니다.
-1. _필드 매핑_ 탭을 클릭합니다.
+1. 글로벌 메뉴(![Global Menu](../../images/icon-applications-menu.png))를 열고 **제어판** &rarr; **검색** 으로 이동합니다.
+1. **필드 매핑** 탭을 클릭합니다.
 1. 매핑(![Copy](../../images/icon-copy.png))을 복사하여 저장합니다.
 
 ```{warning}
@@ -143,7 +143,7 @@
    ```
 
    ```{note}
-   Liferay 7.4 U80 이전 버전의 경우, JSON 파일 시작 부분에 `LiferayDocumentType` 선언을 포함해야 합니다. 예를 들어, [Liferay 7.4 GA80 매핑](https://github.com/liferay/liferay-portal/blob/7.4.3.80-ga80/modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-impl/src/main/resources/META-INF/mappings/liferay-type-mappings.json)을 참조하십시오.
+   Liferay 7.4 U80 이전 버전의 경우, JSON 파일 시작 부분에 `LiferayDocumentType` 선언을 포함해야 합니다. 예를 들어, [Liferay 7.4 GA80 매핑](https://github.com/liferay/liferay-portal/blob/7.4.3.80-ga80/modules/apps/portal-search-elasticsearch7/portal-search-elasticsearch7-impl/src/main/resources/META-INF/mappings/liferay-type-mappings.json) 을 참조하십시오.
    ```
 
 1. 유형 매핑 재정의 필드를 사용하여 `template_fr` 동적 필드에 대한 분석기를 사용자 지정 분석기(`custom_liferay_analyzer_fr`)를 사용하도록 변경합니다:
@@ -185,7 +185,7 @@
 
 1. 필터 이름 설정에 사용자 지정 필터 이름(예: `custom-synonym-filter-fr`)을 추가하고 구성을 저장합니다.
 
-1. 전체 색인 재색인 수행: 제어판 &rarr; 검색 &rarr; 색인 작업, _모든 검색 색인 재색인을 클릭합니다._
+1. 전체 색인 재색인 수행: 제어판 &rarr; 검색 &rarr; 색인 작업, **모든 검색 색인 재색인을 클릭합니다.**
 
    사용자 지정 매핑이 성공적으로 적용되었는지 확인하려면 필드 매핑 탭으로 이동하여 인덱스(예: `liferay-20101`)를 선택한 후 오른쪽 패널에서 `template_fr` 을 찾습니다.
 
@@ -193,13 +193,13 @@
 
 새 필터가 작동하는지 확인합니다,
 
-1. 동의어 애플리케이션으로 이동: 글로벌 메뉴의 애플리케이션 탭에서 _동의어_ (검색 튜닝 아래)를 클릭합니다.
+1. 동의어 애플리케이션으로 이동: 글로벌 메뉴의 애플리케이션 탭에서 **동의어**(검색 튜닝 아래)를 클릭합니다.
 
 1. 새 동의어 집합 만들기: `maison, logement`.
 
-1. 영어 및 프랑스어 번역이 포함된 웹 콘텐츠 문서를 만듭니다. 프랑스어 제목에 _maison_ 을 추가합니다.
+1. 영어 및 프랑스어 번역이 포함된 웹 콘텐츠 문서를 만듭니다. 프랑스어 제목에 **maison** 을 추가합니다.
 
-1. 영어 및 프랑스어 번역이 포함된 다른 웹 콘텐츠 문서를 만듭니다. 프랑스어 제목에 _logement_ 을 추가합니다.
+1. 영어 및 프랑스어 번역이 포함된 다른 웹 콘텐츠 문서를 만듭니다. 프랑스어 제목에 **logement** 을 추가합니다.
 
-1. 프랑스어 로캘로 전환하고 _maison_을 검색합니다. 두 문서가 모두 반환됩니다.
+1. 프랑스어 로캘로 전환하고 **maison** 을 검색합니다. 두 문서가 모두 반환됩니다.
 

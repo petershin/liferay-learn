@@ -2,7 +2,7 @@
 
 CLI 도구를 사용하면 Jenkins 빌드를 트리거하거나 Liferay Cloud 콘솔을 사용하지 않고도 로컬 프로젝트 변경 사항을 직접 배포할 수 있습니다. 이 자습서에서는 CLI 도구를 사용하여 Liferay 서비스에 포털 속성을 추가하고 `dev` 에 배포하는 과정을 안내합니다.
 
-시작하려면 먼저 [CLI 도구](../reference/command-line-tool.md) 를 설치하여 사용할 준비가 되어 있어야 하며, 프로젝트의 Git 리포지토리(예: [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository), [Bitbucket](https://confluence.atlassian.com/bitbucketserver/clone-a-repository-790632786.html), [GitLab](https://docs.gitlab.com/ee/university/training/topics/getting_started.html#instantiate-workflow-with-clone))의 로컬 복사본이 필요합니다.
+시작하려면 먼저 [CLI 도구](../reference/command-line-tool.md) 를 설치하여 사용할 준비가 되어 있어야 하며, 프로젝트의 Git 리포지토리(예: [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) , [Bitbucket](https://confluence.atlassian.com/bitbucketserver/clone-a-repository-790632786.html) , [GitLab](https://docs.gitlab.com/ee/university/training/topics/getting_started.html#instantiate-workflow-with-clone) )의 로컬 복사본이 필요합니다.
 
 ```{note}
 CLI 도구는 프로젝트에 변경 사항을 빠르게 배포할 수 있는 방법을 제공하지만, 대부분의 배포에는 CI 서비스 및 Liferay Cloud 콘솔을 사용하는 것이 가장 좋습니다. 방법을 알아보려면 [Liferay 클라우드 콘솔을 통해 변경 사항 배포](./deploying-changes-via-the-liferay-cloud-console.md)를 참조하세요.
@@ -86,11 +86,11 @@ CLI 도구는 프로젝트에 변경 사항을 빠르게 배포할 수 있는 �
 
 ## 샘플 배포 확인
 
-빌드가 성공적으로 배포되고 `dev` 환경의 Liferay 서비스가 *준비됨*이 되면 다음 단계에 따라 변경 사항을 확인합니다:
+빌드가 성공적으로 배포되고 `dev` 환경의 Liferay 서비스가 **준비됨** 이 되면 다음 단계에 따라 변경 사항을 확인합니다:
 
 1. 프로젝트의 `dev` 환경으로 이동합니다.
 
-1. *웹 서버* 서비스 페이지로 이동하여 해당 URL을 클릭하여 `dev` 환경의 Liferay 인스턴스( `https://webserver-<project-name>-dev.lfr.cloud/`)에 액세스합니다.
+1. **웹 서버** 서비스 페이지로 이동하여 해당 URL을 클릭하여 `dev` 환경의 Liferay 인스턴스( `https://webserver-<project-name>-dev.lfr.cloud/`)에 액세스합니다.
 
    ![웹 서버 URL을 클릭하여 개발 환경의 Liferay 인스턴스에 액세스합니다.](./deploying-changes-via-the-cli-tool/images/02.png)
 

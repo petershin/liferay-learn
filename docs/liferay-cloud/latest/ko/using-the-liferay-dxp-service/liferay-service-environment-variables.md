@@ -1,6 +1,6 @@
 # 라이프레이 서비스 환경 변수
 
-Liferay 서비스에는 [범위의 환경 변수](#environment-variables-reference) 가 있으며, 이 변수는 서비스 구성, 다른 서비스와의 연결 및 DXP 설치 자체에 사용됩니다. Liferay Cloud 전용 환경 변수를 사용하거나 DXP [포털 속성](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html)을 재정의하는 변수를 정의할 수 있습니다.
+Liferay 서비스에는 [범위의 환경 변수](#environment-variables-reference) 가 있으며, 이 변수는 서비스 구성, 다른 서비스와의 연결 및 DXP 설치 자체에 사용됩니다. Liferay Cloud 전용 환경 변수를 사용하거나 DXP [포털 속성](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) 을 재정의하는 변수를 정의할 수 있습니다.
 
 ## 포털 속성 재정의
 
@@ -55,7 +55,7 @@ Liferay 서비스에서 환경 변수를 사용하여 일반적으로 포털 속
 
 | 이름                                           | 기정값 | 묘사                                                                                       |
 |:-------------------------------------------- |:--- |:---------------------------------------------------------------------------------------- |
-| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        |     | *에서 찾을 수 있습니다. Dynatrace 배포* &rarr; *설치 시작* &rarr; *PaaS 모니터링 설정* &rarr; *설치 프로그램 다운로드*. |
+| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        |     | **에서 찾을 수 있습니다. Dynatrace 배포** &rarr; **설치 시작** &rarr; **PaaS 모니터링 설정** &rarr; **설치 프로그램 다운로드** . |
 | `LCP_SECRET_DATABASE_NAME`                   |     | 데이터베이스 연결에 사용되는 데이터베이스 이름(jdbc, jdbc ping 및 읽기 전용 사용자 연결)입니다.                            |
 | `LCP_SECRET_DATABASE_PASSWORD`               |     | jdbc(및 jdbc ping) 구성에만 사용되는 데이터베이스 비밀번호입니다.                                              |
 | `LCP_SECRET_DATABASE_READONLY_USER`          |     | 읽기 전용 사용자의 사용자 이름입니다.                                                                    |

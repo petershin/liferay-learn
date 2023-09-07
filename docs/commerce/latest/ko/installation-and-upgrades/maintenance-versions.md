@@ -2,7 +2,7 @@
 
 수정 팩은 정기적으로 릴리스되며 버그 및 보안 수정 사항이 포함되어 있습니다. 사용자 정의 코드가 배치된 설치에 수정 팩을 설치하는 경우 프로덕션에 설치하기 전에 테스트 환경에서 사용자 정의 코드로 수정 팩을 배치하고 테스트하는 것이 좋습니다.
 
-다양한 유형의 패치에 대해 알아보려면 [이전 DXP 버전 패치](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) 및 [패치 유형 이해](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html) 을 참조하십시오.
+다양한 유형의 패치에 대해 알아보려면 [이전 DXP 버전 패치 적용](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier.html) 및 [패치 유형 이해](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html) 을 참조하십시오.
 
 패치를 적용하는 방법을 알아보려면 [패치 설치](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/installing-patches-for-dxp-7-3-and-earlier.html) 을 참조하십시오.
 

@@ -414,7 +414,7 @@ FreeMarker 컨텍스트에 삽입된 구성 값은 JSON 파일에 지정된 정�
 `collectionSelector` 구성 유형을 사용하여 [컬렉션](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) 또는 컬렉션 공급자를 포함하는 조각을 개발할 수 있습니다. 수동 컬렉션과 동적 컬렉션 모두에 `collectionSelector` 를 사용할 수 있습니다.
 
 ```{note}
-개발자는 컬렉션 공급자를 사용하여 고급 기준을 사용하여 특정 컬렉션을 만들 수 있습니다. 자세한 내용은 [정보 프레임워크](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서에서 [정보 목록 공급자 만들기](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider)에 대한 정보를 참조하세요.
+개발자는 컬렉션 공급자를 사용하여 고급 기준을 사용하여 특정 컬렉션을 만들 수 있습니다. 자세한 내용은 [정보 프레임워크](https://help.liferay.com/hc/ko/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서에서 [정보 목록 공급자 만들기](https://help.liferay.com/hc/ko/articles/360029067271-Creating-an-Information-List-Provider) 에 대한 정보를 참조하세요.
 ```
 
 다음 JSON 구성은 `collectionSelector`를 사용하는 방법을 보여줍니다:
@@ -508,7 +508,7 @@ HTML에서 이 컬렉션을 참조하려면 JSON 구성에서 컬렉션 `이름`
 
 ## 색상 팔레트 구성
 
-색상표 JSON 구성은 색상을 선택해야 하는 경우에 대해 구현할 수 있는 색상 선택기를 생성합니다. [색상 선택기 구성](#color-picker-configuration)과 달리 현재 사용 중인 [스타일북](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)의 색상 시스템에 구성된 테마 색상을 기반으로 하는 옵션만 제공합니다.
+색상표 JSON 구성은 색상을 선택해야 하는 경우에 대해 구현할 수 있는 색상 선택기를 생성합니다. [색상 선택기 구성](#color-picker-configuration) 과 달리 현재 사용 중인 [스타일북](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)의 색상 시스템에 구성된 테마 색상을 기반으로 하는 옵션만 제공합니다.
 
 이 구성은 `textColor`라는 색상 팔레트 필드를 만듭니다:
 

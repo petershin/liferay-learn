@@ -2,7 +2,7 @@
 
 {bdg-secondary}`사용 가능 Liferay 7.4`
 
-자바스크립트(JS) 클라이언트 확장 기능을 사용하면 Liferay 코드에 대한 종속성이나 테마 개발에 대한 걱정 없이 Liferay의 모든 페이지에서 자체 자바스크립트를 실행할 수 있습니다. 여기서는 JavaScript 클라이언트 확장 프로그램( [샘플 워크스페이스](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace))으로 시작합니다.
+자바스크립트(JS) 클라이언트 확장 기능을 사용하면 Liferay 코드에 대한 종속성이나 테마 개발에 대한 걱정 없이 Liferay의 모든 페이지에서 자체 자바스크립트를 실행할 수 있습니다. 여기서는 JavaScript 클라이언트 확장 프로그램( [샘플 워크스페이스](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) )으로 시작합니다.
 
 ## 전제 조건
 
@@ -11,7 +11,7 @@
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
    ```{note}
-   지원되는 JDK, 데이터베이스 및 환경은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)에서 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../설치-업그레이드/참조/jvm-configuration.md)을 참조하세요.
+   지원되는 JDK, 데이터베이스 및 환경은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 에서 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../설치-업그레이드/참조/jvm-configuration.md)을 참조하세요.
    ```
 
 1. 샘플 워크스페이스를 다운로드하여 압축을 풉니다:
@@ -70,7 +70,7 @@ Once Liferay starts, run this command from the client extension's folder in the 
 이렇게 하면 클라이언트 확장 프로그램이 빌드되고 Liferay의 `deploy/` 폴더에 zip이 배포됩니다.
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)를 사용하여 [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment)를 실행합니다.
+클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 를 사용하여 [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) 를 실행합니다.
 ```
 
 ```{tip}
@@ -89,19 +89,19 @@ STARTED sample-global-js_1.0.0
 
 배포된 클라이언트 확장 프로그램을 사용하도록 Liferay에서 페이지를 구성합니다:
 
-1. 인스턴스의 페이지에서 상단의 *수정* 아이콘 ![Edit icon](../../../../images/icon-edit-pencil.png) 을 클릭합니다.
+1. 인스턴스의 페이지에서 상단의 **수정** 아이콘 ![Edit icon](../../../../images/icon-edit-pencil.png) 을 클릭합니다.
 
-1. 사이드바에서 페이지 디자인 *옵션* 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하고 메뉴 상단의 *구성* 아이콘(![Configuration icon](../../../../images/icon-cog3.png))을 클릭합니다.
+1. 사이드바에서 페이지 디자인 **옵션** 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하고 메뉴 상단의 **구성** 아이콘(![Configuration icon](../../../../images/icon-cog3.png))을 클릭합니다.
 
    ![페이지 디자인 옵션 메뉴에서 톱니바퀴 아이콘을 클릭하여 이 클라이언트 확장 기능의 구성에 액세스합니다.](./using-a-javascript-client-extension/images/01.png)
 
-1. *고급* 탭을 클릭하고 페이지 하단의 *자바스크립트* 섹션을 확장하여 *자바스크립트 클라이언트 확장* 구성 섹션을 찾습니다.
+1. **고급** 탭을 클릭하고 페이지 하단의 **자바스크립트** 섹션을 확장하여 **자바스크립트 클라이언트 확장** 구성 섹션을 찾습니다.
 
-1. *자바스크립트 클라이언트 확장 프로그램 추가* 를 클릭하여 페이지 머리글 또는 페이지 하단에 새 클라이언트 확장 프로그램을 추가합니다.
+1. **자바스크립트 클라이언트 확장 프로그램 추가** 를 클릭하여 페이지 머리글 또는 페이지 하단에 새 클라이언트 확장 프로그램을 추가합니다.
 
    ![JavaScript 클라이언트 확장을 추가합니다. 페이지 머리글 또는 페이지 하단에 추가했는지 여부에 따라 목록에 표시됩니다.](./using-a-javascript-client-extension/images/02.png)
 
-1. *저장*을 클릭합니다.
+1. **저장** 을 클릭합니다.
 
 1. 선택 사항으로 페이지를 게시하여 편집 모드 외부의 페이지에서 자바스크립트가 실행되도록 합니다.
 

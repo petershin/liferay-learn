@@ -33,8 +33,8 @@ Elasticsearch 서버는 다음 URL에서 액세스할 수 있습니다:
 
 ```{note}
 지원되는 프로덕션 구성은 아니지만, 번들로 제공되는 Elasticsearch 서버를 모니터링하기 위해 Kibana를 설치하면 개발 및 테스트 중에 유용합니다. 
-- Liferay 7.3에서 [OSS 전용 Kibana 빌드](https://www.elastic.co/downloads/kibana-oss)를 설치합니다.
-- Liferay DXP 7.4 U17+ 및 Liferay Portal 7.4 GA17+에서 [Kibana](https://www.elastic.co/downloads/past-releases#kibana)의 무료 버전을 설치합니다.
+- Liferay 7.3에서 [OSS 전용 Kibana 빌드](https://www.elastic.co/downloads/kibana-oss) 를 설치합니다.
+- Liferay DXP 7.4 U17+ 및 Liferay Portal 7.4 GA17+에서 [Kibana](https://www.elastic.co/downloads/past-releases#kibana) 의 무료 버전을 설치합니다.
 
 설정에 오류가 발생하면 문제 해결 섹션을 참조하세요(#error-connecting-to-the-sidecar-elasticsearch-from-kibana).
 ```
@@ -71,7 +71,7 @@ Elasticsearch 사이드카 서버는 Liferay 7.4(DXP 및 Portal), Liferay DXP 7.
 | 와일드플라이: 7.3+         | Sidecar          | &#10008; | &#10008; (자동 다운로드) |
 | WebSphere: 7.3+      | Sidecar          | &#10008; | &#10004;           |
 | 웹로직: 7.3+            | Sidecar          | &#10008; | &#10004;           |
-| _모든 맛: 7.2/7.3 GA3-_ | _Embedded_       | &#10004; | &#10008;           |
+| **모든 맛: 7.2/7.3 GA3-** | **Embedded** | &#10004; | &#10008;           |
 
 Tomcat 이외의 애플리케이션 서버용 번들을 다운로드한 경우, 서버를 시작할 때 Elasticsearch 배포가 즉석에서 다운로드되어 사이드카 서버로 시작됩니다.
 

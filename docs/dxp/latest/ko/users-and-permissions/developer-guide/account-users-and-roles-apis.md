@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [계정 API 기본 사항](./liferay-t5p9.zip)을 다운로드하고 압축을 풉니다.
+1. [계정 API 기본 사항](./liferay-t5p9.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-t5p9.zip -O
@@ -85,7 +85,7 @@
    }    
    ```
 
-1. *글로벌 메뉴* &rarr; *애플리케이션* &rarr; *계정*으로 이동합니다. 사용자를 만든 계정을 클릭합니다. *사용자* 탭을 클릭하고 생성된 새 사용자를 확인합니다.
+1. **글로벌 메뉴** &rarr; **애플리케이션** &rarr; **계정** 으로 이동합니다. 사용자를 만든 계정을 클릭합니다. **사용자** 탭을 클릭하고 생성된 새 사용자를 확인합니다.
 
   ![새 계정 사용자가 추가되었는지 확인합니다.](./account-users-and-roles-apis/images/01.png)
 
@@ -152,7 +152,7 @@ main` 메서드의 주석은 클래스를 실행하는 것을 보여줍니다.
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 메서드를 호출합니다.
 
 ```{important}
-서비스 세부 정보는 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java)를 참조하세요.
+서비스 세부 정보는 [AccountResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/AccountResource.java) 를 참조하세요.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 관련 REST 서비스를 호출하는 예제입니다.

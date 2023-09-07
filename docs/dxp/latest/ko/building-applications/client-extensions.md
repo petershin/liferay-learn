@@ -19,9 +19,9 @@ toc:
 
 클라이언트 확장 기능을 사용하면 다음을 수행할 수 있습니다.
 
-* [커스텀 자바스크립트 또는 CSS](#front-end-client-extensions)를 적용하면서 Liferay 코드에 대한 종속성을 피합니다.
+* [커스텀 자바스크립트 또는 CSS](#front-end-client-extensions) 를 적용하면서 Liferay 코드에 대한 종속성을 피합니다.
 * 원격으로 호스팅되는 애플리케이션을 Liferay 페이지의 [사용자 지정 요소](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 에 임베드합니다.
-* [클라이언트 확장으로 변환](#configuration-client-extensions)으로 동일한 구성 또는 개체를 여러 환경에 적용합니다.
+* [클라이언트 확장으로 변환](#configuration-client-extensions) 으로 동일한 구성 또는 개체를 여러 환경에 적용합니다.
 * 원하는 프로그래밍 언어 또는 기술을 사용하여 Liferay 외부에서 실행되는 사용자 지정 서비스 또는 [함수(](#microservice-client-extensions) )를 호출합니다(예: REST 엔드포인트).
 
 ## 클라이언트 확장 유형
@@ -37,7 +37,7 @@ toc:
 
 ### 일괄 클라이언트 확장
 
-{bdg-link-primary}`[개발 기능](../시스템-관리/설정-라이파이/기능-플래그.md#개발 기능-플래그)`
+{bdg-link-primary}` [개발 기능](../시스템-관리/설정-라이파이/기능-플래그.md#개발 기능-플래그) `
 
 배치 클라이언트 확장은 Liferay 인스턴스에 데이터 엔티티를 제공합니다(예: [개체 정의](./objects/creating-and-managing-objects/exporting-and-importing-object-definitions.md) 또는 [워크플로 정의](../process-automation/workflow/introduction-to-workflow.md)). [배치 엔진 프레임워크](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md)를 통해 데이터를 내보내 배치 클라이언트 확장을 생성합니다.
 
@@ -47,7 +47,7 @@ toc:
 
 구성 클라이언트 확장은 Liferay 인스턴스 내에서 기능을 변경할 수 있는 특정 구성을 제공합니다.
 
-[마이크로서비스 클라이언트 확장](#microservice-client-extensions)과 같은 다른 클라이언트 확장 프로그램과 함께 사용할 수 있습니다. 예를 들어 OAuth 사용자 에이전트 클라이언트 확장을 사용하여 사용자가 트리거한 작업 이벤트와 함께 작동하는 클라이언트 확장을 인증할 수 있습니다.
+[마이크로서비스 클라이언트 확장](#microservice-client-extensions) 과 같은 다른 클라이언트 확장 프로그램과 함께 사용할 수 있습니다. 예를 들어 OAuth 사용자 에이전트 클라이언트 확장을 사용하여 사용자가 트리거한 작업 이벤트와 함께 작동하는 클라이언트 확장을 인증할 수 있습니다.
 
 특정 유형에 대한 자세한 내용은 [구성 클라이언트 확장](./client-extensions/configuration-client-extensions.md) 을 참조하세요.
 

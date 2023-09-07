@@ -63,7 +63,7 @@
 
 1. **Group Attribute Statements** 아래에 다음 값을 추가합니다.
 
-   **userGroup(지정되지 않음):** ** `Okta` 로 시작(Okta의 사용자 그룹이 접두사 `Okta`로 시작한다고 가정합니다. 예: `Okta-UserGroup-1`)
+   **userGroup(지정되지 않음):** *다음으로 시작* `Okta`(Okta의 사용자 그룹이 `Okta` 접두사로 시작한다고 가정합니다. 예: `Okta-UserGroup-1`)
 
    ![사용자 및 그룹 특성에 대한 매핑을 만듭니다.](./importing-user-group-memberships-from-an-external-idp-through-saml/images/02.png)
 

@@ -18,7 +18,7 @@ patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2.md
 Liferay DXP는 최신 릴리스에 번들 릴리스를 사용합니다. 업데이트를 적용하는 경우 [Liferay 업데이트](./updating-liferay.md)를 참조하세요. 모든 핫픽스는 패치입니다. 핫픽스를 적용하는 경우 계속 읽으세요.
 ```
 
-Liferay가 수정 사항을 릴리스하면 DXP 인스턴스를 최신 상태로 유지해야 합니다. Liferay는 수정 사항을 취합하여 _패치_라는 ZIP 파일로 기업 구독자에게 제공합니다.
+Liferay가 수정 사항을 릴리스하면 DXP 인스턴스를 최신 상태로 유지해야 합니다. Liferay는 수정 사항을 취합하여 **패치** 라는 ZIP 파일로 기업 구독자에게 제공합니다.
 
 ## 패치 유형
 

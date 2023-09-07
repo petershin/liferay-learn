@@ -74,7 +74,7 @@ type: globalCSS
 
 {bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
-[자바스크립트 클라이언트 확장](#javascript-client-extensions)과 마찬가지로 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)에서 제공하는 것을 대체하는 자바스크립트 라이브러리 및 로직을 추가할 수 있습니다.
+[자바스크립트 클라이언트 확장](#javascript-client-extensions) 과 마찬가지로 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)에서 제공하는 것을 대체하는 자바스크립트 라이브러리 및 로직을 추가할 수 있습니다.
 
 `client-extension.yaml` 파일에서 테마 자바스크립트 클라이언트 확장자를 지정합니다:
 
@@ -88,7 +88,7 @@ type: themeJS
 
 [CSS 클라이언트 확장](#css-client-extensions) 은 페이지에 스타일을 추가하지만, 테마 CSS 클라이언트 확장은 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)를 포함하여 페이지의 스타일을 재정의합니다. 클라이언트 확장자는 `clay.css` 파일과 `main.css` 파일을 사용하여 사이트 테마에서 일반적으로 사용되는 동일한 이름의 파일을 대체합니다.
 
-이 유형의 클라이언트 확장은 Liferay 애플리케이션 메뉴의 *클라이언트 확장* 에서 옵션으로 추가할 수 있습니다.
+이 유형의 클라이언트 확장은 Liferay 애플리케이션 메뉴의 **클라이언트 확장** 에서 옵션으로 추가할 수 있습니다.
 
 ![테마 CSS 클라이언트 확장을 추가하여 사이트 테마에서 제공하는 CSS를 대체할 수 있습니다.](./front-end-client-extensions/images/01.png)
 
@@ -106,7 +106,7 @@ type: themeCSS
 
 {bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
-Liferay에서 페이지의 파비콘을 재정의합니다. 배포가 완료되면 제공된 아이콘 파일을 Liferay의 모든 페이지에서 사용할 수 있게 됩니다. 페이지 디자인 옵션 메뉴에서 페이지의 파비콘을 구성할 때 별도의 *클라이언트 확장 기능* 탭에서 액세스할 수 있습니다.
+Liferay에서 페이지의 파비콘을 재정의합니다. 배포가 완료되면 제공된 아이콘 파일을 Liferay의 모든 페이지에서 사용할 수 있게 됩니다. 페이지 디자인 옵션 메뉴에서 페이지의 파비콘을 구성할 때 별도의 **클라이언트 확장 기능** 탭에서 액세스할 수 있습니다.
 
 ![페이지의 파비콘을 구성할 때는 특별한 클라이언트 확장 탭에서 클라이언트 확장 프로그램의 파비콘에 액세스합니다.](./front-end-client-extensions/images/02.png)
 
@@ -130,7 +130,7 @@ type: themeSpritemap
 
 사용자 지정 요소 클라이언트 확장은 Liferay의 프런트엔드 인프라를 사용하여 외부 애플리케이션을 플랫폼과 통합하고 이를 페이지 위젯으로 렌더링합니다. Liferay 외부에서 액세스할 수 있는 모든 도메인의 애플리케이션을 통합할 수 있습니다.
 
-사용자 지정 요소 클라이언트 확장을 사용하려면 회사 수준에서 필요한 URL과 세부 정보가 포함된 항목을 생성하여 Liferay에 등록합니다. 그런 다음 Liferay는 각 항목에 대해 고유한 위젯을 생성하고 애플리케이션을 [사용자 지정 HTML 요소](https://web.dev/custom-elements-v1/)로 렌더링합니다.
+사용자 지정 요소 클라이언트 확장을 사용하려면 회사 수준에서 필요한 URL과 세부 정보가 포함된 항목을 생성하여 Liferay에 등록합니다. 그런 다음 Liferay는 각 항목에 대해 고유한 위젯을 생성하고 애플리케이션을 [사용자 지정 HTML 요소](https://web.dev/custom-elements-v1/) 로 렌더링합니다.
 
 `client-extension.yaml` 파일에서 사용자 지정 요소 클라이언트 확장자를 지정합니다:
 
@@ -146,7 +146,7 @@ type: customElement
 
 > 이전 명칭: IFrame 원격 앱
 
-IFrame 클라이언트 확장은 [사용자 지정 요소 클라이언트 확장](#custom-element-client-extensions)과 같이 작동합니다. 그러나 외부 애플리케이션을 `<iframe>` HTML 요소로 렌더링하므로 호스트 페이지에서 제한된 상호 작용만 허용합니다. 다른 프런트엔드 클라이언트 확장 프로그램과 달리 *은 정적 리소스*를 제공하지 않습니다.
+IFrame 클라이언트 확장은 [사용자 지정 요소 클라이언트 확장](#custom-element-client-extensions) 과 같이 작동합니다. 그러나 외부 애플리케이션을 `<iframe>` HTML 요소로 렌더링하므로 호스트 페이지에서 제한된 상호 작용만 허용합니다. 다른 프런트엔드 클라이언트 확장 프로그램과 달리 **은 정적 리소스** 를 제공하지 않습니다.
 
 `client-extension.yaml` 파일에서 IFrame 클라이언트 확장자를 지정합니다:
 
@@ -162,7 +162,7 @@ type: iframe
 
 | 이름              | 데이터 유형   | 기정값                     | 묘사                                                                                                   |
 |:--------------- |:-------- |:----------------------- |:---------------------------------------------------------------------------------------------------- |
-| `baseURL`       | 문자열      | *사이트 URL에서 파생*          | 클라이언트 확장에 정의된 모든 리소스가 제공되는 기본 경로입니다.                                                                 |
+| `baseURL`       | 문자열      | **사이트 URL에서 파생** | 클라이언트 확장에 정의된 모든 리소스가 제공되는 기본 경로입니다.                                                                 |
 | `description`   | 문자열      |                         | 클라이언트 확장 프로그램의 설명입니다.                                                                                |
 | `name`          | 문자열      |                         | 클라이언트 확장 프로그램의 이름(UI에 표시되는 이름)입니다. 프런트엔드 클라이언트 확장에는 이름이 필요합니다.                                       |
 | `sourceCodeURL` | URL      | https://www.liferay.com | 클라이언트 확장 프로그램의 소스 리포지토리 주소입니다.                                                                       |

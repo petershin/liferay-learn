@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [Field Options Provider](./liferay-z4h3.zip)를 다운로드하고 압축을 풉니다.
+1. [Field Options Provider](./liferay-z4h3.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-z4h3.zip -O
@@ -35,7 +35,7 @@
     STARTED com.acme.z4h3.impl_1.0.0 [1150]
     ```
 
-1. 브라우저를 열고 `https://localhost:8080` 로 이동한 후 *제어판* &rarr; *구성* &rarr; *시스템 설정*으로 이동합니다. 플랫폼에서 *타사*를 클릭합니다. 왼쪽의 *Z4H3 구성* 을 클릭합니다.
+1. 브라우저를 열고 `https://localhost:8080` 로 이동한 후 **제어판** &rarr; **구성** &rarr; **시스템 설정** 으로 이동합니다. 플랫폼에서 **타사** 를 클릭합니다. 왼쪽의 **Z4H3 구성** 을 클릭합니다.
 
     ![설정 UI에는 두 개의 드롭다운 목록이 표시됩니다.](./field-options-provider/images/01.png)
 
@@ -74,4 +74,4 @@
 
 튜토리얼 코드에서는 문자열 배열의 간단한 예제를 사용하지만 더 복잡한 사용 사례도 가능합니다.
 
-[`EnabledClassNamesConfigurationFieldOptionsProvider.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-auto-tagger-service/src/main/java/com/liferay/asset/auto/tagger/internal/configuration/admin/definition/EnabledClassNamesConfigurationFieldOptionsProvider.java)에서 실제 Liferay 예제를 참조하십시오. 이 코드는 `AssetRendererFactory` 오브젝트 목록을 가져와서 목록을 반복하여 에셋의 유형 이름을 레이블로, 클래스 이름을 값으로 사용하여 `Option`s의 새 목록을 채웁니다.
+[`EnabledClassNamesConfigurationFieldOptionsProvider.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-auto-tagger-service/src/main/java/com/liferay/asset/auto/tagger/internal/configuration/admin/definition/EnabledClassNamesConfigurationFieldOptionsProvider.java) 에서 실제 Liferay 예제를 참조하십시오. 이 코드는 `AssetRendererFactory` 오브젝트 목록을 가져와서 목록을 반복하여 에셋의 유형 이름을 레이블로, 클래스 이름을 값으로 사용하여 `Option`s의 새 목록을 채웁니다.

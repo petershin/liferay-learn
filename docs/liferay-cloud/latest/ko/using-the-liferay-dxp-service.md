@@ -43,7 +43,7 @@ liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-sp2-202005120922
 Liferay Cloud 스택이 아직 4.x.x로 업데이트되지 않은 경우, 기본적으로 이 버전은 리포지토리 루트에 있는 `gradle.properties` 파일에 위치합니다. 이 경우 `liferay.workspace.lcp.liferay.image` 속성을 사용하여 버전을 정의합니다(주 버전과 별도로 정의할 필요 없음). 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](./reference/understanding-service-stack-versions.md)를 참조하세요.
 ```
 
-Liferay Cloud의 [서비스 변경 로그](https://help.liferay.com/hc/en-us/sections/360006251311-Services-Changelog)에서 각 새 릴리스에 대한 참조를 확인할 수 있습니다. 각각의 새로운 서비스 업데이트에는 인스턴스에 사용할 수 있는 Docker 이미지가 포함되어 있습니다. [Docker Hub의 DXP 태그](https://hub.docker.com/r/liferay/dxp/tags?page=1)를 직접 확인하여 사용할 Docker 이미지 이름을 찾을 수도 있습니다.
+Liferay Cloud의 [서비스 변경 로그](https://help.liferay.com/hc/ko/sections/360006251311-Services-Changelog) 에서 각 새 릴리스에 대한 참조를 확인할 수 있습니다. 각각의 새로운 서비스 업데이트에는 인스턴스에 사용할 수 있는 Docker 이미지가 포함되어 있습니다. [Docker Hub의 DXP 태그](https://hub.docker.com/r/liferay/dxp/tags?page=1) 를 직접 확인하여 사용할 Docker 이미지 이름을 찾을 수도 있습니다.
 
 릴리스 노트의 새 버전을 사용하여 Docker 이미지 값을 업데이트합니다. 인스턴스가 시작될 때 또는 다음에 리포지토리에서 Liferay 서비스를 배포할 때 새 Docker 이미지가 사용됩니다. 새 릴리스에 대한 Docker 이미지를 사용하여 다른 서비스에 대한 속성을 업그레이드할 수도 있습니다.
 
@@ -51,7 +51,7 @@ Liferay Cloud의 [서비스 변경 로그](https://help.liferay.com/hc/en-us/sec
 
 Liferay DXP에 사용자 지정 추가 사항을 배포하려면 새 모듈, 라이선스 또는 핫픽스를 Git 리포지토리의 적절한 위치에 추가해야 합니다.
 
-`common/` 디렉터리를 제외한 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때 _만_ 전파됩니다. `common/` 디렉터리에 추가된 변경 사항은 대상 배포 환경에 관계없이 _항상_ 배포됩니다. 이는 모든 서비스에 대해 `configs/` 디렉터리 내의 모든 하위 폴더에 적용됩니다.
+`common/` 디렉터리를 제외한 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때 **만** 전파됩니다. `common/` 디렉터리에 추가된 변경 사항은 대상 배포 환경에 관계없이 **항상** 배포됩니다. 이는 모든 서비스에 대해 `configs/` 디렉터리 내의 모든 하위 폴더에 적용됩니다.
 
 Liferay 서비스는 다른 서비스에 비해 더 많은 사용자 지정 수단(예: 핫픽스 추가, 모듈의 소스 코드 빌드)을 제공하기 때문에 서비스를 배포할 때 고려해야 할 사항이 몇 가지 더 있습니다. 자세한 내용은 [Liferay 서비스에 배포하기](./using-the-liferay-dxp-service/deploying-to-the-liferay-service.md) 를 참조하세요. 또한 배포 워크플로 전반에 대한 자세한 내용은 [배포 워크플로 개요](./build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 를 참조하세요. Liferay Cloud에 배포하는 방법에 대한 튜토리얼은 [DCP 클라우드 콘솔을 통해 변경 사항 배포](./build-and-deploy/deploying-changes-via-the-liferay-cloud-console.md)을 참조하십시오.
 
@@ -95,7 +95,7 @@ liferay
 
 Liferay DXP에는 웹에 콘텐츠를 빌드, 관리 및 배포할 수 있는 강력한 기능이 많이 있습니다. 그러나 이러한 기능 중 일부는 Liferay Cloud에서 사용할 수 없습니다:
 
-* [원격 스테이징](https://learn.liferay.com/dxp/latest/en/site-building/publishing-tools/staging/configuring-remote-live-staging.html) 은 현재 Liferay Cloud에서 지원되지 않습니다. 온프레미스 설치에서 Liferay Cloud로 마이그레이션하는 사용자는 스테이징 기능을 계속 사용하려면 로컬 스테이징으로 전환해야 합니다.
+* [원격 라이브 스테이징 구성](https://learn.liferay.com/dxp/latest/ko/site-building/publishing-tools/staging/configuring-remote-live-staging.html) 은 현재 Liferay Cloud에서 지원되지 않습니다. 온프레미스 설치에서 Liferay Cloud로 마이그레이션하는 사용자는 스테이징 기능을 계속 사용하려면 로컬 스테이징으로 전환해야 합니다.
 
 ## 관련 주제
 

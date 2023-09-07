@@ -57,16 +57,16 @@ Liferay Cloud로 마이그레이션하면 [클러스터링](./using-the-liferay-
 
 또한 마이그레이션 단계에 필요한 도구가 로컬 시스템에 있는지 확인해야 합니다:
 
-* [Git](https://git-scm.com/): 마이그레이션하는 동안 변경 사항을 Liferay Cloud에 커밋하고 푸시하는 데 사용할 수 있도록 Git이 설치되어 있어야 합니다.
-* 리포지토리 호스팅 서비스 계정: 이러한 웹사이트 중 하나에 계정이 있어야 변경 사항을 푸시하고 Liferay Cloud 빌드에 제출할 수 있습니다. [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/), 또는 [GitLab](https://about.gitlab.com/)에서 계정을 사용할 수 있습니다.
-* [Liferay 패치 도구](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html): 마이그레이션의 첫 번째 단계에 대한 패치 및 핫픽스 정보를 확인하려면 패치 도구가 필요합니다.
-* 파일 압축 소프트웨어: Windows를 로컬 시스템의 운영체제로 사용하는 경우, 압축 파일을 압축/해제하려면 파일 압축 소프트웨어(예: [7-Zip](https://www.7-zip.org/))도 필요합니다.
+* [Git](https://git-scm.com/) : 마이그레이션하는 동안 변경 사항을 Liferay Cloud에 커밋하고 푸시하는 데 사용할 수 있도록 Git이 설치되어 있어야 합니다.
+* 리포지토리 호스팅 서비스 계정: 이러한 웹사이트 중 하나에 계정이 있어야 변경 사항을 푸시하고 Liferay Cloud 빌드에 제출할 수 있습니다. [GitHub](https://github.com/) , [Bitbucket](https://bitbucket.org/) , 또는 [GitLab](https://about.gitlab.com/) 에서 계정을 사용할 수 있습니다.
+* [패치 도구 설치](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/reference/installing-the-patching-tool.html) : 마이그레이션의 첫 번째 단계에 대한 패치 및 핫픽스 정보를 확인하려면 패치 도구가 필요합니다.
+* 파일 압축 소프트웨어: Windows를 로컬 시스템의 운영체제로 사용하는 경우, 압축 파일을 압축/해제하려면 파일 압축 소프트웨어(예: [7-Zip](https://www.7-zip.org/) )도 필요합니다.
 
 이러한 도구를 설치한 후에는 시간을 내어 도구에 익숙해지는 것이 좋습니다.
 
 예를 들어 Git을 처음 사용하는 경우 마이그레이션에 적용하기 전에 [공식 Git 자료](https://git-scm.com/doc) (참조 문서, 명령 치트 시트 등 포함)를 참조하거나 직접 사용 연습을 해보는 것이 좋습니다. Git은 이 마이그레이션 가이드에서 사용하는 것 이상의 기능을 갖춘 강력한 버전 관리 도구입니다.
 
-Liferay Cloud로 마이그레이션하려면 사용자 지정 코드, 모듈 및 테마를 프로젝트에 맞게 특별히 Liferay Workspace로 이동해야 합니다. Liferay Workspace를 처음 사용하는 경우 효과적인 사용 방법 [여기](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html)에서도 배울 수 있습니다.
+Liferay Cloud로 마이그레이션하려면 사용자 지정 코드, 모듈 및 테마를 프로젝트에 맞게 특별히 Liferay Workspace로 이동해야 합니다. Liferay Workspace를 처음 사용하는 경우 효과적인 사용 방법 [Liferay 작업 공간이란 무엇입니까?](https://learn.liferay.com/dxp/latest/ko/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 에서도 배울 수 있습니다.
 
 ### 환경 준비
 

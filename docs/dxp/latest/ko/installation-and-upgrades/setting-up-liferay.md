@@ -63,7 +63,7 @@ setting-up-liferay/tuning-your-jvm.md
 * [라이프 레이 튜닝](#tune-liferay)
 * [JNDI 설정](#setting-up-jndi)
 
-위의 각 작업은 해당 문서에 대한 참조가 포함된 아래 설명으로 연결됩니다. 첫 번째 작업은 프로덕션 준비가 완료된 모든 Liferay 인스턴스에 필수적입니다. 시스템에 적용되는 *기타 설정 작업* 을 검토하세요. 작업을 완료할 때마다 위의 체크리스트를 다시 확인하세요.
+위의 각 작업은 해당 문서에 대한 참조가 포함된 아래 설명으로 연결됩니다. 첫 번째 작업은 프로덕션 준비가 완료된 모든 Liferay 인스턴스에 필수적입니다. 시스템에 적용되는 **기타 설정 작업** 을 검토하세요. 작업을 완료할 때마다 위의 체크리스트를 다시 확인하세요.
 
 ## 라이프레이 활성화
 
@@ -119,7 +119,7 @@ Liferay DXP를 사용하는 경우 [활성화 키 적용](./setting-up-liferay/a
 
 ## 마켓플레이스에서 앱 설치
 
-[테마](../getting-started/changing-your-sites-appearance.md), 커넥터 및 모든 종류의 애플리케이션 [Liferay 마켓플레이스](https://web.liferay.com/marketplace)로 사이트를 개선하세요. [앱 설치 및 관리(](../system-administration/installing-and-managing-apps/installing-apps.md) )가 그 어느 때보다 쉬워졌습니다.
+[테마](../getting-started/changing-your-sites-appearance.md), 커넥터 및 모든 종류의 애플리케이션 [Liferay 마켓플레이스](https://web.liferay.com/marketplace) 로 사이트를 개선하세요. [앱 설치 및 관리(](../system-administration/installing-and-managing-apps/installing-apps.md) )가 그 어느 때보다 쉬워졌습니다.
 
 ## 역할 및 권한 구성
 

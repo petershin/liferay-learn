@@ -2,7 +2,7 @@
 
 다른 서비스와 마찬가지로 사용자 지정 추가 기능을 배포하려면 구성 또는 파일을 Git 리포지토리의 적절한 위치에 추가해야 합니다. 그러나 Liferay 서비스를 배포하는 것은 다른 서비스를 배포하는 것과 약간 다릅니다.
 
-Liferay 서비스는 [Liferay 워크스페이스](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 를 사용하여 [배포 가능한 파일](#deploying-themes-portlets-and-osgi-modules), [소스 코드](#building-and-deploying-source-code)등을 추가할 수 있는 더 많은 옵션을 제공합니다. 이러한 기능은 [CI 빌드](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)에 쉽게 포함되지만, [CLI 도구](../reference/command-line-tool.md)를 사용하는 경우 Liferay 서비스를 위해 특별히 [추가 단계](#cli-tool-deployment) 가 필요합니다.
+Liferay 서비스는 [Liferay 작업 공간이란 무엇입니까?](https://learn.liferay.com/dxp/latest/ko/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) 를 사용하여 [배포 가능한 파일](#deploying-themes-portlets-and-osgi-modules) , [소스 코드](#building-and-deploying-source-code) 등을 추가할 수 있는 더 많은 옵션을 제공합니다. 이러한 기능은 [CI 빌드](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)에 쉽게 포함되지만, [CLI 도구](../reference/command-line-tool.md)를 사용하는 경우 Liferay 서비스를 위해 특별히 [추가 단계](#cli-tool-deployment) 가 필요합니다.
 
 ## Liferay DXP 도커 이미지 정의하기
 
@@ -18,7 +18,7 @@ Liferay 서비스의 `LCP.json` 파일의 `image` 속성에 정의된 DXP의 메
 
 [CLI 도구(](../reference/command-line-tool.md) )를 사용하여 배포하려면 사용자 지정 및 구성과 함께 배포하는 추가 단계가 필요합니다. 배포하기 전에 생성되는 특별한 `Dockerfile` 이미지에 포함되어야 합니다.
 
-[배포 가능한 파일](#deploying-themes-portlets-and-osgi-modules), [빌드 소스 코드](#building-and-deploying-source-code), [핫픽스](#deploying-hotfixes), [라이선스](#deploying-licenses) 는 CLI 도구를 사용하는 경우 배포에 포함해야 하는 추가 단계가 필요합니다. [CI 서비스](../platform-services/continuous-integration.md) 를 사용하여 리포지토리에서 빌드를 생성하는 경우에는 이러한 추가 단계가 필요하지 않습니다.
+[배포 가능한 파일](#deploying-themes-portlets-and-osgi-modules) , [빌드 소스 코드](#building-and-deploying-source-code) , [핫픽스](#deploying-hotfixes) , [라이선스](#deploying-licenses) 는 CLI 도구를 사용하는 경우 배포에 포함해야 하는 추가 단계가 필요합니다. [CI 서비스](../platform-services/continuous-integration.md) 를 사용하여 리포지토리에서 빌드를 생성하는 경우에는 이러한 추가 단계가 필요하지 않습니다.
 
 **CLI를 사용하여 Liferay 서비스를 정상적으로 배포하는 경우(모든 서비스를 한 번에 배포하는 경우 또는 `liferay/` 디렉토리에서 배포하는 경우), 사용자 지정이 포함되지 않은 기본 버전** 의 Liferay DXP 이미지( `LCP.json`에 정의된 주요 버전 사용)가 배포됩니다. 사용자 지정이 포함되도록 하려면 서비스와 함께 모든 사용자 지정을 구체적으로 빌드하고 배포해야 하기 때문에 이런 일이 발생합니다.
 
@@ -80,7 +80,7 @@ CI 빌드는 이러한 폴더 내에서 소스 코드를 컴파일합니다:
 핫픽스를 적용하려면, 핫픽스 ZIP 파일을 Liferay DXP 서비스 디렉터리 내의 `configs/{ENV}/patching/` 폴더에 추가합니다. 이 변경 사항을 배포하면 Liferay DXP 인스턴스에 핫픽스가 적용됩니다.
 
 ```{note}
-대신 새 [서비스 팩](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)과 같은 새로운 부 버전(예: 새 [서비스 팩])으로 업데이트하려면 [이 지침](./updating-your-dxp-instance-to-a-new-minor-version.md)을 참조하세요.
+대신 새 [패치 유형 이해](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) 과 같은 새로운 부 버전(예: 새 [서비스 팩])으로 업데이트하려면 [이 지침](./updating-your-dxp-instance-to-a-new-minor-version.md)을 참조하세요.
 ```
 
 예를 들어 다음과 같은 구조로 개발 환경에 핫픽스를 배포할 수 있습니다:

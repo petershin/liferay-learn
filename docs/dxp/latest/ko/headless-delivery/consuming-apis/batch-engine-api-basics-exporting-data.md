@@ -21,9 +21,9 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
    unzip liferay-g4j2.zip
    ```
 
-1. 데이터를 내보내려면 내보내는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. *Schemas* 섹션까지 아래로 스크롤하고 내보낼 엔티티의 `x-class-name` 필드를 기록해 둡니다.
+1. 데이터를 내보내려면 내보내는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. **Schemas** 섹션까지 아래로 스크롤하고 내보낼 엔티티의 `x-class-name` 필드를 기록해 둡니다.
 
-1. 다음 cURL 스크립트를 사용하여 Liferay 인스턴스에서 계정을 내보냅니다. 명령줄에서 `curl` 폴더로 이동합니다. *계정* 및 `json` 의 정규화된 클래스 이름을 매개 변수로 사용하여 `ExportTask_POST_ToInstance.sh` 스크립트를 실행합니다. `json` 매개변수는 내보낸 데이터의 형식을 나타냅니다. 또한 `jsonl` 및 `csv` 형식을 지원합니다.
+1. 다음 cURL 스크립트를 사용하여 Liferay 인스턴스에서 계정을 내보냅니다. 명령줄에서 `curl` 폴더로 이동합니다. **계정** 및 `json` 의 정규화된 클래스 이름을 매개 변수로 사용하여 `ExportTask_POST_ToInstance.sh` 스크립트를 실행합니다. `json` 매개변수는 내보낸 데이터의 형식을 나타냅니다. 또한 `jsonl` 및 `csv` 형식을 지원합니다.
 
    ```bash
    ./ExportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account json

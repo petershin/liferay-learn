@@ -1,6 +1,6 @@
 # Liferay DXP 서비스 구성
 
-[DXP 시스템 설정](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html) 및 [config](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) 및 [속성 파일](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)을 사용하여 Liferay DXP를 구성하는 방법에는 여러 가지가 있습니다. Liferay Cloud의 Liferay DXP 인스턴스에 대한 DXP 속성 및 구성 파일은 저장소의 Liferay DXP 서비스 디렉터리에 있는 `configs/` 폴더 중 하나에 배치하여 배포합니다.
+[시스템 설정](https://learn.liferay.com/dxp/latest/ko/system-administration/configuring-liferay/system-settings.html) 및 [구성 파일 사용](https://learn.liferay.com/dxp/latest/ko/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) 및 [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 을 사용하여 Liferay DXP를 구성하는 방법에는 여러 가지가 있습니다. Liferay Cloud의 Liferay DXP 인스턴스에 대한 DXP 속성 및 구성 파일은 저장소의 Liferay DXP 서비스 디렉터리에 있는 `configs/` 폴더 중 하나에 배치하여 배포합니다.
 
 ```
 liferay
@@ -13,11 +13,11 @@ liferay
 └── LCP.json
 ```
 
-`common/` 디렉터리를 제외한 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때 _만_ 전파됩니다. `common/` 디렉터리에 추가된 변경 사항은 대상 배포 환경에 관계없이 _항상_ 배포됩니다. 이는 모든 서비스에 대해 `configs/` 디렉터리 내의 모든 하위 폴더에 적용됩니다.
+`common/` 디렉터리를 제외한 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때 **만** 전파됩니다. `common/` 디렉터리에 추가된 변경 사항은 대상 배포 환경에 관계없이 **항상** 배포됩니다. 이는 모든 서비스에 대해 `configs/` 디렉터리 내의 모든 하위 폴더에 적용됩니다.
 
 ## 문맥 재산
 
-[포털 속성](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) 은 `portal-ext.properties` 파일에 저장된 속성입니다. Liferay DXP 환경을 구성하는 데 사용됩니다.
+[문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 은 `portal-ext.properties` 파일에 저장된 속성입니다. Liferay DXP 환경을 구성하는 데 사용됩니다.
 
 온프레미스 Liferay DXP 인스턴스의 경우, 이 파일은 `$LIFERAY_HOME`에 속합니다. Liferay Cloud를 사용하는 경우, 포털 속성 파일을 적절한 `configs/{ENV}/` 폴더에 배치하여 배포 시 Liferay DXP 인스턴스의 경우 `$LIFERAY_HOME` 에 복사합니다.
 
@@ -57,10 +57,10 @@ liferay
 └── LCP.json
 ```
 
-`portal-ext.properties` 및 `portal-all.properties` 파일은 모든 환경에서 공유됩니다. 여기에 공유 속성을 추가하고 각각의 `portal-env.properties` 파일에 환경별 속성을 추가할 수 있습니다. 자세한 내용은 [포털 자산 우선순위](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html#portal-property-priority)를 참조하세요.
+`portal-ext.properties` 및 `portal-all.properties` 파일은 모든 환경에서 공유됩니다. 여기에 공유 속성을 추가하고 각각의 `portal-env.properties` 파일에 환경별 속성을 추가할 수 있습니다. 자세한 내용은 [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html#portal-property-priority) 를 참조하세요.
 
 ```{note}
-포털 속성은 환경 변수로 정의할 수도 있습니다. 자세한 내용은 [환경 변수 참조](./liferay-service-환경-변수.md#환경-변수-참조)를 참조하세요.
+포털 속성은 환경 변수로 정의할 수도 있습니다. 자세한 내용은 [환경 변수 참조](./liferay-service-환경-변수.md#환경-변수-참조) 를 참조하세요.
 ```
 
 ## OSGi 구성
@@ -83,7 +83,7 @@ Liferay Cloud의 Liferay 컨테이너에는 일반 `tomcat` 폴더와 버전이 
 
 ## 환경 변수
 
-Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정이나 데이터베이스 연결 설정과 같이 온프레미스 인스턴스에서 다르게 수행되는 일부 구성 대신 [환경 변수](../reference/defining-environment-variables.md) (또는 [비밀](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md))를 사용합니다. 환경 변수를 사용하여 [포털 속성을 재정의하거나 대체할 수도 있습니다](./liferay-service-environment-variables.md#overriding-portal-properties).
+Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정이나 데이터베이스 연결 설정과 같이 온프레미스 인스턴스에서 다르게 수행되는 일부 구성 대신 [환경 변수](../reference/defining-environment-variables.md) (또는 [비밀](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md))를 사용합니다. 환경 변수를 사용하여 [포털 속성을 재정의하거나 대체할 수도 있습니다](./liferay-service-environment-variables.md#overriding-portal-properties) .
 
 자세한 내용은 [Liferay 서비스 환경 변수](./liferay-service-environment-variables.md) 를 참조하세요.
 
@@ -91,5 +91,5 @@ Liferay Cloud의 Liferay 서비스는 JVM 메모리 설정이나 데이터베이
 
 * [Liferay DXP 서비스 사용](../using-the-liferay-dxp-service.md)
 * [Liferay Cloud에서 클러스터링 활성화하기](./setting-up-clustering-in-liferay-cloud.md)
-* [문맥 재산](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)
+* [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html)
 * [라이프레이 서비스 환경 변수](./liferay-service-environment-variables.md)

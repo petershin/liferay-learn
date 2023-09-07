@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay DXP 7.4+ 또는 Liferay Portal 7.4+에 적용 가능`
 
-JNDI 리소스를 설정하려면 필요한 JDBC 드라이버를 Tomcat lib 폴더에 넣어야 합니다(예: `tomcat-9.0.56/lib`). 예를 들어 Oracle 데이터베이스를 사용하는 경우 `ojdbc8.jar` 을 이 폴더에 복사합니다. [히카리 연결 풀](https://github.com/brettwooldridge/HikariCP)을 사용하는 경우 `hikaricp.jar` 및 `slf4-api.jar` 파일도 복사해야 합니다.
+JNDI 리소스를 설정하려면 필요한 JDBC 드라이버를 Tomcat lib 폴더에 넣어야 합니다(예: `tomcat-9.0.56/lib`). 예를 들어 Oracle 데이터베이스를 사용하는 경우 `ojdbc8.jar` 을 이 폴더에 복사합니다. [히카리 연결 풀](https://github.com/brettwooldridge/HikariCP) 을 사용하는 경우 `hikaricp.jar` 및 `slf4-api.jar` 파일도 복사해야 합니다.
 
 필요한 파일을 복사한 후 JNDI 리소스를 정의합니다. `ROOT.xml` 파일 또는 `server.xml` 파일에 정의를 추가합니다. 그런 다음 `context.xml` 파일에 리소스 링크를 추가합니다.
 

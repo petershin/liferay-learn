@@ -13,7 +13,7 @@ Liferay DXP 7.4+의 경우, 조각 컬렉션은 Liferay UI에서 조각 세트�
 
 그런 다음 다음 단계에 따라 예제 Fragment Set을 가져와 Fragment 리소스가 작동하는 방식을 확인합니다.
 
-1. [예제 리소스 조각 집합](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip을 다운로드하고 압축을 풉니다. ):
+1. [예제 리소스 조각 집합](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip을 다운로드하고 압축을 풉니다. ) :
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-i6r3.zip -O

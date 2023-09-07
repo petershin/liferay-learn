@@ -102,7 +102,7 @@ React 조각을 생성하려면 [조각 툴킷](./using-the-fragments-toolkit.md
     필드 집합에 `configurationRole` 값을 추가하여(JSON의 `fields` 객체와 함께) 연결된 필드가 표시되는 탭을 지정할 수 있습니다. 값을 '스타일'로 설정하여 필드가 스타일 탭에 표시되도록 하거나 '고급'으로 설정하여 고급 탭에 표시되도록 합니다(*라이프 레이 DXP 버전 U23+ 또는 GA23+*에서만 해당). 구성 역할`이 설정되어 있지 않으면 기본적으로 일반 탭에 표시됩니다.
     ```
 
-1. *게시* 를 클릭하여 조각을 저장하고 [콘텐츠 페이지](../../creating-pages/understanding-pages/understanding-pages.md#content-pages)에서 사용할 수 있도록 합니다.
+1. *게시* 를 클릭하여 조각을 저장하고 [콘텐츠 페이지](../../creating-pages/understanding-pages/understanding-pages.md#content-pages) 에서 사용할 수 있도록 합니다.
 
     ![조각은 콘텐츠 페이지에서 사용할 수 있습니다.](./using-the-fragments-editor/images/07.png)
 

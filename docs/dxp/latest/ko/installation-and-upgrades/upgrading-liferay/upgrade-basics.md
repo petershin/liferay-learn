@@ -34,7 +34,7 @@ Liferay의 도구와 지침을 통해 DXP 및 포털 환경을 안전하고 빠�
 
 ## 준비 및 계획
 
-소규모의 일상적인 설치의 경우 준비 및 계획이 거의 중요하지 않을 수 있지만, 대규모 엔터프라이즈급 설치의 경우 *필수* 입니다.
+소규모의 일상적인 설치의 경우 준비 및 계획이 거의 중요하지 않을 수 있지만, 대규모 엔터프라이즈급 설치의 경우 **필수** 입니다.
 
 ### 사용 가능한 업그레이드 경로 검토
 
@@ -46,12 +46,12 @@ Liferay의 도구와 지침을 통해 DXP 및 포털 환경을 안전하고 빠�
 | Liferay 포털 6.1.x &rarr; DXP/Portal 7.1 &rarr; DXP 7.4               | Liferay 포털 6.1의 지원 기간 종료                            |
 | Liferay 포털 5.x 및 6.0.x &rarr; Liferay 포털 6.2 &rarr; Liferay DXP 7.4 | Liferay Portal 5.0, 5.1, 5.2 및 6.0의 지원 기간이 종료되었습니다. |
 
-동일한 마이너 버전(예: 7.3 GA1에서 GA2로 업그레이드)의 새 GA로 Liferay Portal을 업그레이드하고 데이터 스키마 변경이 없는 경우, 새 GA를 즉시 사용할 수 있습니다. 스키마가 변경된 경우, 시작 메시지에 새 데이터 스키마 버전이 보고되며 [데이터베이스를](#executing-the-database-upgrade)로 업그레이드해야 합니다 - [도커 이미지](./upgrade-basics/upgrading-via-docker.md) 로 업그레이드를 호출하는 것이 가장 쉽습니다.
+동일한 마이너 버전(예: 7.3 GA1에서 GA2로 업그레이드)의 새 GA로 Liferay Portal을 업그레이드하고 데이터 스키마 변경이 없는 경우, 새 GA를 즉시 사용할 수 있습니다. 스키마가 변경된 경우, 시작 메시지에 새 데이터 스키마 버전이 보고되며 [데이터베이스를](#executing-the-database-upgrade) 로 업그레이드해야 합니다 - [도커 이미지](./upgrade-basics/upgrading-via-docker.md) 로 업그레이드를 호출하는 것이 가장 쉽습니다.
 
-라이프레이 포털 6.2로 업그레이드하는 경우, 먼저 [라이프레이 포털 6.2 업그레이드 지침](https://help.liferay.com/hc/en-us/articles/360017903232-Upgrading-Liferay) 을 따르십시오.
+라이프레이 포털 6.2로 업그레이드하는 경우, 먼저 [라이프레이 포털 6.2 업그레이드 지침](https://help.liferay.com/hc/ko/articles/360017903232-Upgrading-Liferay) 을 따르십시오.
 
 ```{note}
-일부 새로운 Liferay 버전에서는 테이블 열의 이름이 변경됩니다. 이러한 열과 연결된 모든 [가상 열](https://en.wikipedia.org/wiki/Virtual_column)은 데이터베이스 업그레이드를 방해하므로 업그레이드하기 전에 제거해야 합니다. 업그레이드 후 동등한 가상 열을 추가할 수 있습니다. 자세한 내용은 [업그레이드 문제 해결](./reference/troubleshooting-upgrades.md)을 참조하세요.
+일부 새로운 Liferay 버전에서는 테이블 열의 이름이 변경됩니다. 이러한 열과 연결된 모든 [가상 열](https://en.wikipedia.org/wiki/Virtual_column) 은 데이터베이스 업그레이드를 방해하므로 업그레이드하기 전에 제거해야 합니다. 업그레이드 후 동등한 가상 열을 추가할 수 있습니다. 자세한 내용은 [업그레이드 문제 해결](./reference/troubleshooting-upgrades.md)을 참조하세요.
 ```
 
 ### 사용 중단 및 기본 설정 변경 검토
@@ -77,7 +77,7 @@ Liferay DXP를 구독 중인 경우, 최신 수정 팩으로 업데이트하거�
 
 ### 커머스 업그레이드 준비
 
-[Commerce](https://learn.liferay.com/commerce/latest/en/index.html)를 사용 중인 경우 Liferay 데이터베이스를 업그레이드하기 전에 업그레이드를 준비하세요. 자세한 내용은 [라이프레이 커머스 업그레이드](https://learn.liferay.com/commerce/latest/en/installation-and-upgrades/upgrading-liferay-commerce.html) 를 참조하세요.
+[커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 를 사용 중인 경우 Liferay 데이터베이스를 업그레이드하기 전에 업그레이드를 준비하세요. 자세한 내용은 [Liferay Commerce 업그레이드](https://learn.liferay.com/commerce/latest/ko/installation-and-upgrades/upgrading-liferay-commerce.html) 를 참조하세요.
 
 ### 마켓플레이스 앱 업데이트
 
@@ -87,11 +87,11 @@ Liferay 데이터베이스를 업그레이드하기 전에 현재 사용 중인 
 데이터베이스 업그레이드 전에 현재 설치에서 이 작업을 수행합니다.
 ```
 
-새 Liferay 버전에 대한 앱의 최신 버전에는 데이터 업그레이드가 필요한 데이터베이스 스키마 변경 사항이 있을 수 있습니다. 앱 데이터 *를* 동안 업그레이드하거나 *에서 Liferay 데이터베이스 업그레이드(* ) 후 업그레이드할 수 있습니다.
+새 Liferay 버전에 대한 앱의 최신 버전에는 데이터 업그레이드가 필요한 데이터베이스 스키마 변경 사항이 있을 수 있습니다. 앱 데이터 **를** 동안 업그레이드하거나 **에서 Liferay 데이터베이스 업그레이드**() 후 업그레이드할 수 있습니다.
 
-**옵션 1:** 데이터베이스 업그레이드 *전에* 최신 앱을 설치하고 데이터베이스 업그레이드의 일부로 앱 데이터를 자동으로 업그레이드합니다. 각 데이터베이스 업그레이드 경로는 앱 설정 세부 정보를 설명합니다.
+**옵션 1:** 데이터베이스 업그레이드 **전에** 최신 앱을 설치하고 데이터베이스 업그레이드의 일부로 앱 데이터를 자동으로 업그레이드합니다. 각 데이터베이스 업그레이드 경로는 앱 설정 세부 정보를 설명합니다.
 
-**옵션 2:** 데이터베이스 업그레이드 *후* 최신 앱을 설치한 다음 [Gogo 셸 명령](./upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md)을 사용하여 업그레이드합니다. 앱 데이터. [업그레이드 후 고려 사항](./upgrade-basics/post-upgrade-considerations.md)에 앱 설정 세부 정보가 설명되어 있습니다.
+**옵션 2:** 데이터베이스 업그레이드 **후** 최신 앱을 설치한 다음 [Gogo 셸 명령](./upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md)을 사용하여 업그레이드합니다. 앱 데이터. [업그레이드 후 고려 사항](./upgrade-basics/post-upgrade-considerations.md)에 앱 설정 세부 정보가 설명되어 있습니다.
 
 ## 사용자 지정 개발 업그레이드
 

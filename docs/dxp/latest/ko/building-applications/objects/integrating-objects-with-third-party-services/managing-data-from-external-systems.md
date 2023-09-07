@@ -1,6 +1,6 @@
 # 외부 시스템에서 데이터 관리
 
-{bdg-link-primary}`[베타 기능](../../../시스템-관리/설정-라이프웨이/기능-플래그.md#베타-기능-플래그)`
+{bdg-link-primary}` [베타 기능](../../../시스템-관리/설정-라이프웨이/기능-플래그.md#베타-기능-플래그) `
 
 Liferay Objects는 데이터 구조를 모델링하고 Liferay DXP와 통합된 비즈니스 로직을 구현하기 위한 로우 코드 기능을 제공합니다. 이 프레임워크를 사용하면 사용자 지정 워크플로, 유효성 검사, 알림 등이 포함된 사용자 경험을 만들 수 있습니다.
 
@@ -13,7 +13,7 @@ Liferay Objects는 데이터 구조를 모델링하고 Liferay DXP와 통합된 
 ```{important}
 이 데이터는 Liferay의 데이터베이스에 지속되지 않으므로 프록시 객체에는 몇 가지 제한이 적용됩니다. 사용자는 
 
-* 필드 추가 [validations](../creating-and-managing-objects/validations.md)
+* 필드 추가 [검증](../creating-and-managing-objects/validations.md)
 
 * 개체 추가 [relationships](../creating-and-managing-objects/relations.md)
 
@@ -30,7 +30,7 @@ Liferay Objects는 데이터 구조를 모델링하고 Liferay DXP와 통합된 
 
 ## 프록시 개체에 대해 지원되는 커넥터
 
-현재 Liferay에는 프록시 개체를 위한 Salesforce에 대한 [베타](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) 커넥터가 포함되어 있습니다. 이를 통해 프록시 개체를 [사용자 지정 Salesforce 개체](https://help.salesforce.com/s/)와 통합하여 Salesforce를 외부 저장 시스템으로 사용할 수 있습니다.
+현재 Liferay에는 프록시 개체를 위한 Salesforce에 대한 [베타](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) 커넥터가 포함되어 있습니다. 이를 통해 프록시 개체를 [사용자 지정 Salesforce 개체](https://help.salesforce.com/s/) 와 통합하여 Salesforce를 외부 저장 시스템으로 사용할 수 있습니다.
 
 이 기능을 사용하려면 프록시 오브젝트(LPS-135430) [기능 플래그](../../../system-administration/configuring-liferay/feature-flags.md)를 활성화하세요.
 

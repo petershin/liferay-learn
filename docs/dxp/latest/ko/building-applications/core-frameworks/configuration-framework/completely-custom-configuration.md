@@ -1,6 +1,6 @@
 # 완전 맞춤형 구성
 
-[구성 인터페이스를 생성하면 구성 UI가 자동으로 생성됩니다](./setting-and-accessing-configurations.md#creating-the-configuration-interface). 하지만 경우에 따라서는 완전히 사용자 정의된 UI를 구성하고 싶을 수도 있습니다. 예를 들어, Liferay의 구성 관리자를 사용하는 대신 프로그래밍 방식으로 구성을 처리할 계획입니다. 또는 완전히 사용자 정의된 UI를 만들 수 있는 유연성을 원할 수도 있습니다. 방법은 다음과 같습니다.
+[구성 인터페이스를 생성하면 구성 UI가 자동으로 생성됩니다](./setting-and-accessing-configurations.md#creating-the-configuration-interface) . 하지만 경우에 따라서는 완전히 사용자 정의된 UI를 구성하고 싶을 수도 있습니다. 예를 들어, Liferay의 구성 관리자를 사용하는 대신 프로그래밍 방식으로 구성을 처리할 계획입니다. 또는 완전히 사용자 정의된 UI를 만들 수 있는 유연성을 원할 수도 있습니다. 방법은 다음과 같습니다.
 
 ## 예제 프로젝트 보기
 
@@ -9,7 +9,7 @@
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [완전히 사용자 지정 구성](./liferay-u2g5.zip)을 다운로드하고 압축을 풉니다.
+1. [완전히 사용자 지정 구성](./liferay-u2g5.zip) 을 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-u2g5.zip -O
@@ -37,7 +37,7 @@
 
 1. 예제 모듈이 작동하는지 확인합니다. 브라우저를 열어 `https://localhost:8080`으로 이동합니다.
 
-1. *제어판* &rarr; *구성* &rarr; *시스템 설정* &rarr; *타사*로 이동합니다. *U2G5 구성*을 클릭합니다.
+1. **제어판** &rarr; **구성** &rarr; **시스템 설정** &rarr; **타사** 로 이동합니다. **U2G5 구성** 을 클릭합니다.
 
    ![시스템 설정에서 U2G5 구성으로 이동합니다.](./completely-custom-configuration/images/01.png)
 

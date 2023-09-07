@@ -66,13 +66,13 @@ VPN 연결에 대한 자세한 내용은 [VPN 연결](../infrastructure-and-oper
 
 프로덕션 환경의 마스터 토큰이 있으면 DR 환경에서 다음 [개의 환경 변수를](../reference/defining-environment-variables.md) 로 설정합니다.
 
-* **LCP_EXTERNAL_PROJECT_ID**: 프로덕션 환경의 프로젝트 ID(예: `acme-prd`)
+* **LCP_EXTERNAL_PROJECT_ID** : 프로덕션 환경의 프로젝트 ID(예: `acme-prd`)
 
-* **LCP_BACKUP_RESTORE_SCHEDULE**: 자동 백업 빈도를 정의하는 [cron 스케줄링](https://crontab.guru/) 값. 자세한 내용은 [자동 백업 및 정리 예약](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) 을 참조하십시오.
+* **LCP_BACKUP_RESTORE_SCHEDULE** : 자동 백업 빈도를 정의하는 [cron 스케줄링](https://crontab.guru/) 값. 자세한 내용은 [자동 백업 및 정리 예약](../platform-services/backup-service/backup-service-overview.md#scheduling-automated-backups-and-cleanups) 을 참조하십시오.
 
 DR 환경에서 이 값을 [비밀](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md) 로 설정합니다.
 
-* **LCP_EXTERNAL_PROJECT_MASTER_TOKEN**: 프로덕션 환경의 마스터 토큰
+* **LCP_EXTERNAL_PROJECT_MASTER_TOKEN** : 프로덕션 환경의 마스터 토큰
 
 ```{warning}
 프로덕션 환경이 **아닌** 재해 복구 환경에서 이러한 환경 변수를 설정하십시오. 프로덕션 환경에서 이러한 변수를 설정하면 예기치 않게 백업이 복원될 수 있습니다.

@@ -17,7 +17,7 @@ Liferay DXP 7.4+의 경우, 조각 컬렉션은 Liferay UI에서 조각 세트�
 
 NPM과 Yarn은 툴킷과 툴킷에 의존하는 모듈을 설치하는 데 사용하는 패키지 관리자입니다.
 
-1. [Node.js LTS](https://nodejs.org/en/download/)를 통해 NPM과 Node.js를 설치하는 것으로 시작하세요.
+1. [Node.js LTS](https://nodejs.org/en/download/) 를 통해 NPM과 Node.js를 설치하는 것으로 시작하세요.
 
 1. 예제 JavaScript 프로젝트 ZIP 파일을 다운로드하여 압축을 풉니다.
 
@@ -323,7 +323,7 @@ NPM과 Yarn은 툴킷과 툴킷에 의존하는 모듈을 설치하는 데 사�
 
 
 
-예를 들어, 위의 HTML을 기반으로 [Clay](https://clayui.com/)의 [부트스트랩](https://getbootstrap.com/)기반 컴포넌트를 사용하여 이 `index.html`에서와 같이 관심을 끄는 헤드라인과 설명이 포함된 조각을 만들 수 있습니다:
+예를 들어, 위의 HTML을 기반으로 [Clay](https://clayui.com/) 의 [부트스트랩](https://getbootstrap.com/) 기반 컴포넌트를 사용하여 이 `index.html`에서와 같이 관심을 끄는 헤드라인과 설명이 포함된 조각을 만들 수 있습니다:
 
 ```html
 <div class="component-my-jumbotron">
@@ -375,9 +375,9 @@ Liferay 7.2 이하를 사용하는 경우, [조각별 태그](../reference/fragm
 조각의 HTML 파일에서 기본 래퍼 요소(위 예시에서는 `<div>`)를 사용하여 조각을 고유하게 식별하여 페이지의 다른 컴포넌트와 충돌하지 않도록 합니다.
 ```
 
-다음으로 `<div class="jumbotron"/>` 요소는 [부트스트랩](https://getbootstrap.com/)의 점보트론 컴포넌트를 적용하여 콘텐츠를 래핑합니다. 이 구성 요소는 콘텐츠를 돋보이게 합니다. 콘텐츠 요소는 다음과 같습니다:
+다음으로 `<div class="jumbotron"/>` 요소는 [부트스트랩](https://getbootstrap.com/) 의 점보트론 컴포넌트를 적용하여 콘텐츠를 래핑합니다. 이 구성 요소는 콘텐츠를 돋보이게 합니다. 콘텐츠 요소는 다음과 같습니다:
 
-* `<h1 class="display-4" ...>편집 가능한 점보트론 ...` 은 조각의 제목을 생성합니다. [부트스트랩](https://getbootstrap.com/)의 `display-4` 크기 스타일을 사용합니다. `data-lfr-editable-` 속성을 사용하면 제목 텍스트 [를 편집할 수 있습니다](../reference/fragments/fragment-specific-tags-reference.md). `data-lfr-editable-id="03-text"` 속성은 요소를 식별하고 `data-lfr-editable-type="rich-text"` 속성은 콘텐츠 유형을 선언합니다.
+* `<h1 class="display-4" ...>편집 가능한 점보트론 ...` 은 조각의 제목을 생성합니다. [부트스트랩](https://getbootstrap.com/) 의 `display-4` 크기 스타일을 사용합니다. `data-lfr-editable-` 속성을 사용하면 제목 텍스트 [를 편집할 수 있습니다](../reference/fragments/fragment-specific-tags-reference.md). `data-lfr-editable-id="03-text"` 속성은 요소를 식별하고 `data-lfr-editable-type="rich-text"` 속성은 콘텐츠 유형을 선언합니다.
 * `<p class="lead" ...>이 텍스트 편집 ...` 은 Clay의 [`리드`](https://clayui.com/docs/css/content/typography.html#css-lead) 스타일 컴포넌트로 구분되는 리드 본문 텍스트입니다. `data-lfr-editable-` 속성을 사용하면 단락을 편집할 수 있습니다.
 * `<hr/>` 및 다음 `<p ...` 요소는 각각 가로 규칙과 편집 가능한 다른 단락을 생성합니다.
 * `<a class="btn btn-primary btn-lg" ...` 수정 가능한 링크를 지정합니다. `btn-primary` 클래스는 메인 버튼으로 스타일을 지정하고 `btn-lg` 클래스는 크게 만듭니다. `href="#"` 속성은 링크를 클릭하면 사용자를 페이지 상단으로 이동시킵니다. `data-lfr-editable-type="link"` 속성을 사용하면 [링크를 편집 가능한](../reference/fragments/fragment-specific-tags-reference.md)으로 만들 수 있습니다.

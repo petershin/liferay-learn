@@ -23,7 +23,7 @@
 
 ### mmap 조정
 
-Elasticsearch는 대부분의 운영 체제에서 기본값보다 더 높은 _mmap 수_ (인덱스가 있는 디렉터리를 메모리에 매핑하기 위해)를 요구합니다. Linux에서 루트 사용자로 다음을 실행합니다.
+Elasticsearch는 대부분의 운영 체제에서 기본값보다 더 높은 **mmap 수**(인덱스가 있는 디렉터리를 메모리에 매핑하기 위해)를 요구합니다. Linux에서 루트 사용자로 다음을 실행합니다.
 
 ```bash
 sysctl -w vm.max_map_count=262144
@@ -35,13 +35,13 @@ Elasticsearch 8의 경우, Liferay와 Elasticsearch 사이에 방화벽 또는 �
 
 ## Elasticsearch 설치
 
-1. [Elastic 웹사이트](https://www.elastic.co)에서 Elasticsearch 아카이브를 다운로드하세요.
+1. [Elastic 웹사이트](https://www.elastic.co) 에서 Elasticsearch 아카이브를 다운로드하세요.
 
     ```{important}
     [Liferay 버전과 호환되는](./connecting-to-elasticsearch.md#available-liferay-elasticsearch-connectors) 최신 Elasticsearch 아카이브를 다운로드하세요.
     ```
 
-1. 아카이브 콘텐츠를 Elasticsearch를 실행하려는 로컬 폴더에 압축을 풉니다. 이 폴더는 *Elasticsearch 홈*입니다.
+1. 아카이브 콘텐츠를 Elasticsearch를 실행하려는 로컬 폴더에 압축을 풉니다. 이 폴더는 **Elasticsearch 홈** 입니다.
 
 1. `[Elasticsearch Home]/bin` 폴더에서 다음 명령을 실행하여 필요한 Elasticsearch 플러그인을 설치합니다:
 

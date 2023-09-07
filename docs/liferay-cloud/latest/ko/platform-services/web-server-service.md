@@ -46,15 +46,15 @@ Nginx의 액세스 및 오류 로그(기본적으로 Nginx 컨테이너의 `/var
 | `LCP_HAPROXY_RESOLVER_TIMEOUT_RESOLVE`    | `1`         | HAProxy 로드밸런서에 대한 [`timeout` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-timeout) (이벤트 타임아웃 시간(초)을 구성합니다. 이 구성은 `resolve` 이벤트용입니다.                                           |
 | `LCP_HAPROXY_RESOLVER_TIMEOUT_RETRY`      | `1`         | HAProxy 로드밸런서에 대한 [`timeout` 구성](https://cbonte.github.io/haproxy-dconv/2.0/configuration.html#5.3.2-timeout) (이벤트 타임아웃 시간(초)을 구성합니다. 이 구성은 `다시 시도` 이벤트용입니다.                                             |
 | `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` | `10`        | 모든 서비스의 최대 인스턴스 수를 재정의합니다. [자동 스케일링](../manage-and-optimize/auto-scaling.md)을 사용하려는 경우 필요한 가장 높은 값으로 설정합니다.                                                                                              |
-| `LCP_LOGROTATE_FILE_COUNT`                | `52`        | [자동 회전](#automatic-log-rotation)이후 보관할 최대 Nginx 액세스 및 오류 로그 수(각각). 가장 오래된 파일은 이 제한을 초과하여 제거됩니다.                                                                                                          |
-| `LCP_LOGROTATE_FILE_SIZE`                 | `50M`       | [자동 로그 로테이션을 강제하기 전에 Nginx 액세스 또는 오류 로그가 도달할 수 있는 최대 크기](#automatic-log-rotation).                                                                                                                       |
+| `LCP_LOGROTATE_FILE_COUNT`                | `52`        | [자동 회전](#automatic-log-rotation) 이후 보관할 최대 Nginx 액세스 및 오류 로그 수(각각). 가장 오래된 파일은 이 제한을 초과하여 제거됩니다.                                                                                                          |
+| `LCP_LOGROTATE_FILE_SIZE`                 | `50M`       | [자동 로그 로테이션을 강제하기 전에 Nginx 액세스 또는 오류 로그가 도달할 수 있는 최대 크기](#automatic-log-rotation) .                                                                                                                       |
 | `LCP_LOGROTATE_SCHEDULE`                  | `0 0 * * *` | [자동 Nginx 로그 회전](#automatic-log-rotation) 이 발생하는 시점에 대한 Cron 일정입니다.                                                                                                                                      |
-| `LCP_WEBSERVER_LOG_FORMAT`                |             | Nginx 로깅 형식을 사용자 정의합니다. [공식 Nginx 문서](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/#setting-up-the-access-log)를 참조하세요.                                                                    |
+| `LCP_WEBSERVER_LOG_FORMAT`                |             | Nginx 로깅 형식을 사용자 정의합니다. [공식 Nginx 문서](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/#setting-up-the-access-log) 를 참조하세요.                                                                    |
 | `LCP_WEBSERVER_MODSECURITY`               | `Off`       | 모드 보안을 활성화 또는 비활성화합니다. 이 값을 `On` 으로 설정하여 규칙을 활성화하고 처리하거나 `DetectionOnly` 로 설정하여 방해 행위를 실행하지 않고 규칙을 처리합니다. [웹 애플리케이션 방화벽](../infrastructure-and-operations/security/web-application-firewall.md)을 참조하십시오. |
 
 [인그레스 로드 밸런서](../infrastructure-and-operations/networking/load-balancer.md) 도 웹 서버 서비스를 통해 구성됩니다. 이 서비스에 환경 변수를 추가하여 로드 밸런서 및 사용자 지정 도메인을 구성할 수 있습니다. 자세한 내용은 [로드 밸런서 환경 변수 참조](../infrastructure-and-operations/networking/load-balancer.md#environment-variables-reference) 를 참조하세요.
 
-모든 환경 변수 및 기타 형태의 Nginx 구성은 [공식 Nginx 문서](https://docs.nginx.com/)에 나와 있습니다. 이러한 구성은 `configs/{ENV}/` 디렉터리에서 설정할 수 있으며, 환경 변수는 서비스의 `LCP.json` 파일에서 설정할 수 있습니다.
+모든 환경 변수 및 기타 형태의 Nginx 구성은 [공식 Nginx 문서](https://docs.nginx.com/) 에 나와 있습니다. 이러한 구성은 `configs/{ENV}/` 디렉터리에서 설정할 수 있으며, 환경 변수는 서비스의 `LCP.json` 파일에서 설정할 수 있습니다.
 
 ## 스크립트
 

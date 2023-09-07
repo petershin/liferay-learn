@@ -7,7 +7,7 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-1. *전역 메뉴*(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** &rarr; **보안** &rarr; **OAuth 2 관리**.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** &rarr; **보안** &rarr; **OAuth 2 관리** .
 
 1. **추가**(![아이콘 추가](../../images/icon-add.png))를 클릭하여 새 OAuth2 애플리케이션을 생성합니다.
 
@@ -27,7 +27,7 @@ OAuth 2.0 인증 프로토콜을 사용하여 Liferay의 헤드리스 REST API�
 
 1. 다음으로 **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 탭을 클릭한 다음 **시스템 설정** 으로 이동합니다. ~ **보안 도구** .
 
-1. **Portal CORS(Cross-Origin Resource Sharing)** 탭으로 이동하고 **Default Portal CORS Configuration** 을 클릭합니다.
+1. **Portal CORS(Cross-Origin Resource Sharing**) 탭으로 이동하고 **Default Portal CORS Configuration** 을 클릭합니다.
 
 1. 값이 `/o/headless-admin-user/*`인 **URL 패턴** 을 추가하고 **저장** 을 클릭합니다. 이렇게 하면 API의 'headless-admin-user' 범주에 대한 CORS가 활성화됩니다.
 

@@ -8,21 +8,21 @@
 
 사용자를 계정 공급업체 역할에 할당하면 자동으로 새 공급업체 역할도 할당됩니다.
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))를 열고 제어판 → 계정으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))를 열고 제어판 → 계정으로 이동합니다.
 
-1. 공급업체 계정을 선택하고 *사용자*을 클릭합니다.
+1. 공급업체 계정을 선택하고 **사용자** 을 클릭합니다.
 
-1. *추가* 를 클릭하고 *사용자 할당*을 선택합니다. [*사용자 초대*](https://learn.liferay.com/web/guest/w/commerce/users-and-accounts/account-management/inviting-users-to-an-account) 옵션을 사용하여 사용자를 초대할 수도 있습니다.
+1. **추가** 를 클릭하고 **사용자 할당** 을 선택합니다. [**사용자 초대**](https://learn.liferay.com/web/guest/w/commerce/users-and-accounts/account-management/inviting-users-to-an-account) 옵션을 사용하여 사용자를 초대할 수도 있습니다.
 
-1. 사용자를 선택하고 *할당*을 클릭합니다.
+1. 사용자를 선택하고 **할당** 을 클릭합니다.
 
-1. 할당된 사용자 옆의 *작업* (![Actions](../../images/icon-actions.png)) 아이콘을 클릭하고 *역할 할당*을 선택합니다.
+1. 할당된 사용자 옆의 **작업**(![Actions](../../images/icon-actions.png)) 아이콘을 클릭하고 **역할 할당** 을 선택합니다.
 
-1. *계정 공급업체*선택
+1. **계정 공급업체** 선택
 
    ![사용자에 대한 계정 공급업체의 새 계정 역할을 선택합니다.](./supplier-role/images/01.png)
 
-1. *클릭 완료*.
+1. **클릭 완료** .
 
 ## 관련 주제
 

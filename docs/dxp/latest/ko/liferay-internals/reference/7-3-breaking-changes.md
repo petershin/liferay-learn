@@ -139,7 +139,7 @@ else {
 - 기존 코드 재평가
 - 기존 서비스 API가 동일한 목표를 달성할 수 있는지 알아보기
 
-##### G_P_N_V 를 포함하는 파인더 방법의 경우
+##### G **P** N_V 를 포함하는 파인더 방법의 경우
 
 `G_P_N_V`으로 끝나는 `AssetCategory` 파인더 메서드를 사용하는 경우 대신 `P_N_V` 로 끝나는 메서드를 사용하십시오.
 
@@ -763,7 +763,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 이러한 속성이 엔터티에 유용하지 않기 때문에 이렇게 변경되었습니다.
 
 ---------------------------------------
-### 포털 속성 이름이 "module.framework.properties.felix.fileinstall.\*" 에서 "module.framework.properties.file.install.\*" 로 변경됨
+### 포털 속성 이름이 "module.framework.properties.felix.fileinstall.\ **" 에서 "module.framework.properties.file.install.\** " 로 변경됨
 - **날짜:** 2020-7-13
 - **JIRA 티켓:** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
 

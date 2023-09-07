@@ -20,7 +20,7 @@
 
 ![애널리틱스 클라우드 세그먼트 설정을 보고 구성합니다.](./segments-admin-settings/images/01.png)
 
-[애널리틱스 클라우드 세그먼트](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html) 는 공통 속성 및 행동을 기반으로 개인을 집계합니다. 이 데이터를 Liferay DXP의 세그먼트와 통합하여 알려진 사용자와 익명 사용자 모두에게 관심 있는 콘텐츠를 제공할 수 있습니다.
+[세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html) 는 공통 속성 및 행동을 기반으로 개인을 집계합니다. 이 데이터를 Liferay DXP의 세그먼트와 통합하여 알려진 사용자와 익명 사용자 모두에게 관심 있는 콘텐츠를 제공할 수 있습니다.
 
 *에서 이러한 설정에 액세스할 수 있습니다. 애널리틱스 클라우드 세그먼트*:
 
@@ -52,5 +52,5 @@
 
 ## 관련 주제
 
-* [애널리틱스 클라우드 세그먼트](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)
+* [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html)
 * [세션 속성 어휘](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

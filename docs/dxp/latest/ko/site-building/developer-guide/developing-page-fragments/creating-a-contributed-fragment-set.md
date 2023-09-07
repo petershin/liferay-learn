@@ -8,7 +8,7 @@
 기여된 조각 세트를 통해 추가된 모든 조각은 모든 사이트에서 전 세계적으로 사용할 수 있습니다.
 ```
 
-기여한 조각 집합을 추가하려면 [`BaseFragmentCollectionContributor` 클래스](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/BaseFragmentCollectionContributor.html)를 확장하고, 이 클래스는 자체적으로 [`FragmentCollectionContributor` 인터페이스](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/FragmentCollectionContributor.html)를 구현합니다.
+기여한 조각 집합을 추가하려면 [`BaseFragmentCollectionContributor` 클래스](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/BaseFragmentCollectionContributor.html) 를 확장하고, 이 클래스는 자체적으로 [`FragmentCollectionContributor` 인터페이스](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/FragmentCollectionContributor.html) 를 구현합니다.
 
 여기서는 조각 집합을 기여하는 방법을 알아봅니다:
 
@@ -28,7 +28,7 @@ Liferay DXP 7.4+의 경우, 조각 컬렉션은 Liferay UI에서 조각 세트�
 
 그런 다음 다음 단계에 따라 예제를 배포하여 제공된 조각 세트가 어떻게 보이는지 확인합니다.
 
-1. [예제](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip)를 다운로드하고 압축을 풉니다.
+1. [예제](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip) 를 다운로드하고 압축을 풉니다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip -O

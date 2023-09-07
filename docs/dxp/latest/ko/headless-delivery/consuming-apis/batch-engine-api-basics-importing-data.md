@@ -21,9 +21,9 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
    unzip liferay-g4j2.zip
    ```
 
-1. 데이터를 가져오려면 가져오는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. *Schemas* 섹션까지 아래로 스크롤하고 가져오려는 엔터티의 `x-class-name` 필드를 기록해 둡니다.
+1. 데이터를 가져오려면 가져오는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api`에 설치된 API 탐색기에서 클래스 이름을 얻을 수 있습니다. **Schemas** 섹션까지 아래로 스크롤하고 가져오려는 엔터티의 `x-class-name` 필드를 기록해 둡니다.
 
-1. 다음 cURL 스크립트를 사용하여 계정을 Liferay 인스턴스로 가져옵니다. 명령줄에서 `curl` 폴더로 이동합니다. *계정* 의 정규화된 클래스 이름을 매개변수로 사용하여 `ImportTask_POST_ToInstance.sh` 스크립트를 실행합니다.
+1. 다음 cURL 스크립트를 사용하여 계정을 Liferay 인스턴스로 가져옵니다. 명령줄에서 `curl` 폴더로 이동합니다. **계정** 의 정규화된 클래스 이름을 매개변수로 사용하여 `ImportTask_POST_ToInstance.sh` 스크립트를 실행합니다.
 
    ```bash
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
@@ -74,7 +74,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 
    `executeStatus` `COMPLETED`이면 가져온 데이터를 확인할 수 있습니다. 그렇지 않은 경우 명령을 다시 실행하여 태스크 실행이 완료되었는지 확인하십시오. `executeStatus` `FAILED`표시되면 `errorMessage` 필드를 확인하여 무엇이 잘못되었는지 확인하십시오.
 
-1. *전역 메뉴* (![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *계정*으로 이동하여 가져온 데이터를 확인합니다. 두 개의 새 계정이 추가되었는지 확인합니다.
+1. **전역 메뉴**(![Applications Menu icon](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **계정** 으로 이동하여 가져온 데이터를 확인합니다. 두 개의 새 계정이 추가되었는지 확인합니다.
 
    ![두 개의 새 계정이 추가되었는지 확인합니다.](./batch-engine-api-basics/images/01.png)
 

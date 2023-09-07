@@ -11,7 +11,7 @@
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
     ```{note}
-    지원되는 JDK, 데이터베이스 및 환경은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)에서 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../설치-업그레이드/참조/jvm-configuration.md)을 참조하세요.
+    지원되는 JDK, 데이터베이스 및 환경은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 에서 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../설치-업그레이드/참조/jvm-configuration.md)을 참조하세요.
     ```
 
 1. 샘플 워크스페이스를 다운로드하여 압축을 풉니다:
@@ -62,7 +62,7 @@ Once Liferay starts, run this command from the client extension's folder in the 
 이렇게 하면 클라이언트 확장 프로그램이 빌드되고 Liferay의 `deploy/` 폴더에 zip이 배포됩니다.
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)를 사용하여 [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment)를 실행합니다.
+클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 를 사용하여 [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) 를 실행합니다.
 ```
 
 ```{tip}
@@ -80,17 +80,17 @@ STARTED liferay-sample-theme-favicon_1.0.0
 <!-- Should we suggest doing this to the pages of a Site Template? -->
 배포된 클라이언트 확장 프로그램을 사용하도록 Liferay에서 페이지를 구성합니다:
 
-1. 페이지에서 상단의 _수정_ (![Edit icon](../../../../images/icon-edit-pencil.png))을 클릭합니다.
+1. 페이지에서 상단의 **수정**(![Edit icon](../../../../images/icon-edit-pencil.png))을 클릭합니다.
 
-1. 사이드바에서 페이지 디자인 옵션 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하여 메뉴 상단에 있는 _구성_ (![Configuration icon](../../../../images/icon-cog3.png))을 클릭합니다.
+1. 사이드바에서 페이지 디자인 옵션 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하여 메뉴 상단에 있는 **구성**(![Configuration icon](../../../../images/icon-cog3.png))을 클릭합니다.
 
-1. _파비콘_ 섹션의 _룩앤필_ 탭에서 _파비콘 변경_을 클릭합니다.
+1. **파비콘** 섹션의 **룩앤필** 탭에서 **파비콘 변경** 을 클릭합니다.
 
-1. _클라이언트 확장 프로그램_ 을 클릭하고 새로 배포된 파비콘( _샘플 테마 파비콘_)을 선택합니다.
+1. **클라이언트 확장 프로그램** 을 클릭하고 새로 배포된 파비콘(**샘플 테마 파비콘**)을 선택합니다.
 
    ![샘플 테마 파비콘 클라이언트 확장을 선택하고 저장을 클릭합니다.](./using-a-theme-favicon-client-extension/images/01.gif)
 
-1. 아래로 스크롤하여 _저장_을 클릭합니다.
+1. 아래로 스크롤하여 **저장** 을 클릭합니다.
 
 1. 페이지로 돌아갑니다. 새 파비콘이 브라우저 탭에 나타납니다.
 

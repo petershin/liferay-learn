@@ -10,7 +10,7 @@
 
 커머스 역할과 관련된 권한을 보고 관리하려면 다음 단계를 따르세요:
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))를 열고 *제어판* &rarr; *사용자* &rarr; *역할*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))를 열고 **제어판** &rarr; **사용자** &rarr; **역할** 으로 이동합니다.
 
    ![제어판에서 역할을 클릭합니다.](./commerce-roles-reference/images/01.png)
 
@@ -25,7 +25,7 @@
    Liferay 7.3 및 이전 버전에서 계정 관리자는 사이트 역할이며 계정 구성원 역할은 기본 역할이 아닙니다. 
    ```
 
-1. *권한 정의* 탭을 클릭합니다.
+1. **권한 정의** 탭을 클릭합니다.
 
    여기에서 역할에 할당된 모든 애플리케이션 및 리소스 권한의 요약을 볼 수 있습니다.
 
@@ -35,7 +35,7 @@
 
 ## 즉시 사용 가능한 역할
 
-다음 역할은 DXP 인스턴스에서 바로 사용할 수 있습니다. 이러한 역할은 기본 DXP 역할에 포함되어 있으며 필요한 경우 수정할 수 있습니다. 자세한 내용은 [역할 권한 정의하기](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 를 참조하세요.
+다음 역할은 DXP 인스턴스에서 바로 사용할 수 있습니다. 이러한 역할은 기본 DXP 역할에 포함되어 있으며 필요한 경우 수정할 수 있습니다. 자세한 내용은 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 를 참조하세요.
 
 ### 계정 관리자
 
@@ -260,13 +260,13 @@
 
 ## 사용자 지정 역할
 
-다음 목록에는 커머스 인스턴스에 대해 생성할 수 있는 일반적인 사용자 지정 역할이 포함되어 있습니다. 이러한 역할은 다른 DXP 역할과 동일한 방식으로 만들 수 있습니다. 자세한 내용은 [역할 만들기 및 관리하기](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) 및 [역할 권한 정의하기](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 를 참조하세요.
+다음 목록에는 커머스 인스턴스에 대해 생성할 수 있는 일반적인 사용자 지정 역할이 포함되어 있습니다. 이러한 역할은 다른 DXP 역할과 동일한 방식으로 만들 수 있습니다. 자세한 내용은 [역할 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) 및 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 를 참조하세요.
 
 ### 카탈로그 관리자
 
 > 일반 역할
 
-카탈로그 관리자 역할은 특정 카탈로그 내에서 제품에 액세스, 생성, 편집 및 관리할 수 있는 권한을 부여합니다. 이 역할은 여러 공급업체 또는 회사 팀에서 서로 다른 제품을 별도의 카탈로그에서 관리하는 다중 카탈로그 시나리오에서 유용합니다. 카탈로그 관리자는 재고를 관리할 수 없습니다. 이 책임에 대해서는 [인벤토리 관리자](#inventory-manager)을 참조하세요.
+카탈로그 관리자 역할은 특정 카탈로그 내에서 제품에 액세스, 생성, 편집 및 관리할 수 있는 권한을 부여합니다. 이 역할은 여러 공급업체 또는 회사 팀에서 서로 다른 제품을 별도의 카탈로그에서 관리하는 다중 카탈로그 시나리오에서 유용합니다. 카탈로그 관리자는 재고를 관리할 수 없습니다. 이 책임에 대해서는 [인벤토리 관리자](#inventory-manager) 을 참조하세요.
 
 | 권한                 | 묘사                             |
 |:------------------ |:------------------------------ |
@@ -279,7 +279,7 @@
 
 위의 권한 외에도 역할이 관리할 개별 카탈로그에 대한 보기 및 업데이트 권한도 할당해야 합니다.
 
-이렇게 하려면 *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))를 열고 *커머스* 탭을 클릭한 다음 *제품 관리* &rarr; *카탈로그*로 이동합니다. 그런 다음 원하는 카탈로그에 대한 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 *권한*을 선택합니다. 확인란을 사용하여 *보기* 및 *업데이트* 권한 역할을 할당합니다.
+이렇게 하려면 **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))를 열고 **커머스** 탭을 클릭한 다음 **제품 관리** &rarr; **카탈로그** 로 이동합니다. 그런 다음 원하는 카탈로그에 대한 **작업** 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 **권한** 을 선택합니다. 확인란을 사용하여 **보기** 및 **업데이트** 권한 역할을 할당합니다.
 
 ```{note}
 카탈로그 관리자가 카탈로그의 제품만 관리하고 카탈로그 자체는 수정하지 않게 하려면 `카탈로그`를 제거하세요: 제어판에서 액세스` 및 `카탈로그: 보기` 권한을 제거합니다.
@@ -344,7 +344,7 @@
 
 > 일반 역할
 
-영업 에이전트는 Liferay의 일반 역할이며, 양수인은 관리 권한을 부여하지 않고도 역할에 할당된 모든 계정을 관리할 수 있습니다. *정규 역할* 탭에서 찾을 수 있습니다.
+영업 에이전트는 Liferay의 일반 역할이며, 양수인은 관리 권한을 부여하지 않고도 역할에 할당된 모든 계정을 관리할 수 있습니다. **정규 역할** 탭에서 찾을 수 있습니다.
 
 ![권한 정의 탭에서 기본 영업 상담원 권한을 확인합니다.](./commerce-roles-reference/images/06.png)
 
@@ -355,7 +355,7 @@
 
 ## 관련 주제
 
-* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
 * [주문 관리 권한 참조](./order-management-permissions.md)
 * [인벤토리 관리 권한 참조](./inventory-management-permissions.md)
 * [가격 책정 권한 참조](./pricing-permissions.md)

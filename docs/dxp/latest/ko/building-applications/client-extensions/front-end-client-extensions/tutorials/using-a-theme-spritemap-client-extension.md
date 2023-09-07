@@ -15,7 +15,7 @@ SVG 스프라이트 맵은 여러 개의 아이콘을 그룹으로 묶은 이미
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
     ```{note}
-    지원되는 JDK, 데이터베이스 및 환경은 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)에서 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../설치-업그레이드/참조/jvm-configuration.md)을 참조하세요. 
+    지원되는 JDK, 데이터베이스 및 환경은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 에서 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../설치-업그레이드/참조/jvm-configuration.md)을 참조하세요. 
     ```
 
 1. 샘플 워크스페이스를 다운로드하여 압축을 풉니다:
@@ -115,7 +115,7 @@ assemble:
 이렇게 하면 클라이언트 확장 프로그램이 빌드되고 Liferay의 `deploy/` 폴더에 zip이 배포됩니다.
 
 ```{note}
-클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)를 사용하여 [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment)를 실행합니다.
+클라이언트 확장을 Liferay Experience Cloud에 배포하려면 Liferay Cloud [명령줄 도구](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) 를 사용하여 [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) 를 실행합니다.
 ```
 
 ```{tip}
@@ -136,17 +136,17 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 
 배포된 클라이언트 확장 프로그램을 사용하도록 페이지를 구성합니다:
 
-1. 페이지로 이동한 다음 상단의 _수정_ (![Edit icon](../../../../images/icon-edit-pencil.png))을 클릭합니다.
+1. 페이지로 이동한 다음 상단의 **수정**(![Edit icon](../../../../images/icon-edit-pencil.png))을 클릭합니다.
 
-1. 사이드바에서 페이지 디자인 옵션 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하여 메뉴 상단의 _구성_ (![Configuration icon](../../../../images/icon-cog3.png))을 클릭합니다.
+1. 사이드바에서 페이지 디자인 옵션 메뉴(![Page Design Options icon](../../../../images/icon-format.png))로 이동하여 메뉴 상단의 **구성**(![Configuration icon](../../../../images/icon-cog3.png))을 클릭합니다.
 
-1. 테마 스프라이트 맵 클라이언트 확장 섹션에서 _추가_ (![Add](../../../../images/icon-duplicate.png))를 클릭합니다.
+1. 테마 스프라이트 맵 클라이언트 확장 섹션에서 **추가**(![Add](../../../../images/icon-duplicate.png))를 클릭합니다.
 
-1. 새로 배포된 스프라이트 맵을 선택합니다. _Liferay 샘플 테마 스프라이트맵 1_.
+1. 새로 배포된 스프라이트 맵을 선택합니다. **Liferay 샘플 테마 스프라이트맵 1** .
 
    ![Liferay 샘플 테마 스프라이트맵 1 클라이언트 확장을 선택하고 저장을 클릭합니다.](./using-a-theme-spritemap-client-extension/images/05.gif)
 
-1. 아래로 스크롤하여 _저장_을 클릭합니다.
+1. 아래로 스크롤하여 **저장** 을 클릭합니다.
 
 1. 페이지로 돌아갑니다. 탐색 모음에서 수정 기능의 연필(![Edit icon](../../../../images/icon-edit-pencil.png))을 물고기 아이콘으로 대체했습니다.
 

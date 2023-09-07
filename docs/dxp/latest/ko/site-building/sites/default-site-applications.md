@@ -33,7 +33,7 @@
 | [문서 및 미디어](../../content-authoring-and-management/documents-and-media.md)          | 사이트의 문서 및 기타 미디어 자산을 업로드하고 관리합니다.                 |
 | [동적 데이터 목록](../../process-automation/forms/dynamic-data-lists.md) (*사용 중단됨*)       | 정의된 필드 집합을 사용하여 양식을 만들고 표시합니다.                    |
 | [양식](../../process-automation/forms.md)                                            | 사용자 데이터 수집을 위한 사이트 양식(예: 피드백, 입사 지원서)을 만들고 관리합니다. |
-| [Knowledge Base](../../collaboration-and-social/knowledge-base.md)                 | 사이트에 대한 공식 문서를 작성하고 표시합니다.                        |
+| [지식 베이스](../../collaboration-and-social/knowledge-base.md)                 | 사이트에 대한 공식 문서를 작성하고 표시합니다.                        |
 | [게시판](../../collaboration-and-social/message-boards.md)                            | 사이트 게시판을 만들고 관리하여 커뮤니케이션과 협업을 촉진하세요.              |
 | [Wiki](../../collaboration-and-social/wiki.md)                                     | 사이트의 위키 노드 및 문서를 만들고 관리합니다.                       |
 | [번역 프로세스](../../content-authoring-and-management/translating-pages-and-content.md) | 사이트 페이지 및 콘텐츠의 번역 프로세스를 관리합니다.                    |

@@ -13,15 +13,15 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
 ## Jenkins 서비스 준비하기
 
-젠킨스 파일을 사용자 지정한 경우 이 가이드에 따라 [기본 젠킨스 파일](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)을 확장하세요.
+젠킨스 파일을 사용자 지정한 경우 이 가이드에 따라 [기본 젠킨스 파일](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) 을 확장하세요.
 
 ## GitLab 리포지토리 만들기
 
 먼저 새 GitLab 리포지토리를 생성합니다:
 
-1. [GitLab](https://gitlab.com)으로 이동합니다.
+1. [GitLab](https://gitlab.com) 으로 이동합니다.
 
-1. _새 프로젝트_를 클릭합니다.
+1. **새 프로젝트** 를 클릭합니다.
 
     ![새 프로젝트를 클릭하여 새 GitLab 리포지토리 만들기를 시작합니다.](./configuring-your-gitlab-repository/images/01.png)
 
@@ -31,9 +31,9 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
 1. 공개 수준을 비공개로 구성합니다(무료 사용자는 무제한 비공개 리포지토리를 사용할 수 있습니다).
 
-1. _리포지토리 초기화(README_ )가 선택 취소되어 있는지 확인합니다.
+1. **리포지토리 초기화(README**)가 선택 취소되어 있는지 확인합니다.
 
-1. _프로젝트 만들기_를 클릭합니다.
+1. **프로젝트 만들기** 를 클릭합니다.
 
 ## GitHub에서 GitLab으로 이전하기
 
@@ -55,13 +55,13 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
     `git push gitlab master`
 
-리포지토리 생성, 복제 및 푸시하는 데 도움이 필요하면 [GitLab의 문서](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)를 참조하세요.
+리포지토리 생성, 복제 및 푸시하는 데 도움이 필요하면 [GitLab의 문서](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) 를 참조하세요.
 
 ## GitLab용 액세스 토큰 생성하기
 
 그런 다음 웹훅에서 Jenkins 빌드를 트리거하는 데 사용할 액세스 토큰을 생성합니다:
 
-1. [개인 액세스 토큰 페이지](https://gitlab.com/profile/personal_access_tokens)로 이동합니다.
+1. [개인 액세스 토큰 페이지](https://gitlab.com/profile/personal_access_tokens) 로 이동합니다.
 
     ![나중에 다시 액세스할 수 없는 GitLab용 개인 액세스 토큰을 만듭니다.](./configuring-your-gitlab-repository/images/03.png)
 
@@ -73,7 +73,7 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
     * 읽기_저장소
     * 쓰기_저장소
 
-1. _개인 액세스 토큰 만들기_를 클릭합니다.
+1. **개인 액세스 토큰 만들기** 를 클릭합니다.
 
 1. 액세스 토큰을 복사하여 어딘가에 저장하세요(그렇지 않으면 다시 볼 수 없습니다).
 
@@ -83,7 +83,7 @@ Liferay Cloud 온보딩 이메일을 받으면 `dxpcloud` 조직에서 호스팅
 
 1. Liferay Cloud 콘솔에 로그인하고 `인프라` 환경에서 Jenkins 서비스로 이동합니다.
 
-1. _환경 변수_ 탭으로 이동합니다.
+1. **환경 변수** 탭으로 이동합니다.
 
 1. 다음 환경 변수를 구성합니다:
 
@@ -112,23 +112,23 @@ Liferay Cloud의 Jenkins 서비스는 선택한 git SCM 공급자에 대한 웹�
 
 1. GitLab 리포지토리로 이동합니다.
 
-1. _설정_ 으로 이동하여 _웹훅_을 선택합니다.
+1. **설정** 으로 이동하여 **웹훅** 을 선택합니다.
 
-1. _프로젝트 후크_에서 생성된 웹후크가 나열되어 있는지 확인합니다.
+1. **프로젝트 후크** 에서 생성된 웹후크가 나열되어 있는지 확인합니다.
 
-1. CI 웹훅의 _수정_ 버튼을 클릭합니다.
+1. CI 웹훅의 **수정** 버튼을 클릭합니다.
 
     ![리포지토리에 대해 자동으로 생성된 웹훅을 편집합니다.](./configuring-your-gitlab-repository/images/04.png)
 
-1. _태그 푸시 이벤트_ 및 _댓글_을 선택 취소합니다.
+1. **태그 푸시 이벤트** 및 **댓글** 을 선택 취소합니다.
 
-1. 확인 _SSL 확인 활성화_.
+1. 확인 **SSL 확인 활성화** .
 
-1. _변경 사항 저장_을 클릭합니다.
+1. **변경 사항 저장** 을 클릭합니다.
 
 ## 빌드 확인
 
-푸시 브랜치 및 병합 요청(GitLab의 풀 리퀘스트에 해당)은 Liferay Cloud 콘솔의 _빌드_ 탭에서 확인하거나 배포할 수 있는 빌드를 트리거합니다. Jenkins 서비스와의 통합을 설정한 후에는 다음 단계로 이러한 빌드를 검증하여 통합이 성공적으로 이루어졌는지 확인하는 것이 좋습니다.
+푸시 브랜치 및 병합 요청(GitLab의 풀 리퀘스트에 해당)은 Liferay Cloud 콘솔의 **빌드** 탭에서 확인하거나 배포할 수 있는 빌드를 트리거합니다. Jenkins 서비스와의 통합을 설정한 후에는 다음 단계로 이러한 빌드를 검증하여 통합이 성공적으로 이루어졌는지 확인하는 것이 좋습니다.
 
 ### 푸시된 브랜치에서 빌드 확인
 
@@ -146,9 +146,9 @@ Liferay Cloud의 Jenkins 서비스는 선택한 git SCM 공급자에 대한 웹�
     git push gitlab branch-name
     ```
 
-1. Liferay Cloud 콘솔에서 _빌드_ 페이지로 이동합니다.
+1. Liferay Cloud 콘솔에서 **빌드** 페이지로 이동합니다.
 
-1. _빌드_ 페이지에서 푸시된 브랜치에 대한 빌드가 표시되는지 확인합니다.
+1. **빌드** 페이지에서 푸시된 브랜치에 대한 빌드가 표시되는지 확인합니다.
 
 ### 병합 요청에서 빌드 확인
 
@@ -158,7 +158,7 @@ Liferay Cloud의 Jenkins 서비스는 선택한 git SCM 공급자에 대한 웹�
 
 1. 병합 요청에 대한 새 빌드가 생성되었는지 확인합니다.
 
-1. Liferay Cloud 콘솔에서 _빌드_ 페이지로 이동합니다.
+1. Liferay Cloud 콘솔에서 **빌드** 페이지로 이동합니다.
 
 1. 브랜치에 대한 링크를 클릭하고 적절한 빌드에서 커밋하세요.
 

@@ -16,6 +16,11 @@ uuid: a3487fe9-c0c2-4e41-bcb1-118a4797e4c0
 * If the use-case is known, use a demo aligned to that use case
 * Always use a demo with engaging look and feel, even if the use case is not known
 
+```{note}
+* View the [recording](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) of the presentation used in the live workshop.
+```
+
 ## Background
 
 When presenting to a room full of decision makers, like CEOs, CTOs, CMOs, Enterprise Architects and so on, the goal is to create a lasting impact.
@@ -35,11 +40,6 @@ To make it easier to follow the different aspects of these public pages, or pre-
 * Navigation and Search
 * Themes and Styles
 * Scalability
-
-```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) of the presentation used in the live workshop.
-```
 
 ## Introducing the demo
 

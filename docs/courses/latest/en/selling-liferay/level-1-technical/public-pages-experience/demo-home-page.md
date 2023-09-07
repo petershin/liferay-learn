@@ -9,10 +9,10 @@ uuid: f8095c49-574d-48d2-b0f9-0b7213808783
 * Never use the Liferay default site or theme for a demo
 * Spend time browsing the home page, don’t jump straight to login
 * Discussing how pages are structured and the different types of content
-    * Static and Dynamic content
-    * Interaction
-    * Targeted content
-    * Third party content
+  * Static and Dynamic content
+  * Interaction
+  * Targeted content
+  * Third party content
 
 ## Demo Home Page
 
@@ -30,7 +30,7 @@ Using the out of the box features provides the opportunity to showcase these fea
 
 ![Masterclass site initializer home page.](./demo-home-page/images/02.png)
 
-In this module the Masterclass template is being used. For the best learning experience create a new site based using Masterclass and use this to follow along. If not using Masterclass, just be sure to use a demo with a similarly rich engaging home page, with different types of content and capabilities.
+In this module the Masterclass template is being used. For the best learning experience create a new site based using Masterclass and use this to follow along. If not using Masterclass, be sure to use a demo with a similarly rich engaging home page, with different types of content and capabilities.
 
 The pre-login home page provides an opportunity to talk about some of Liferay’s features:
 

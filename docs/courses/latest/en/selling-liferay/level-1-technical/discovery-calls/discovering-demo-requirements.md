@@ -7,17 +7,22 @@ uuid: 9511767e-0aa3-40c6-b495-dc352f4e9b2c
 **At a Glance**
 
 * Discovery Calls are used to
-    * Qualify and perform basic discovery
-    * Discover what might be needed to be shown in a subsequent demo
+  * Qualify and perform basic discovery
+  * Discover what might be needed to be shown in a subsequent demo
 * Sales Engineers should be involved in both phases
 * Demo discovery focuses on understanding the
-    * Audience
-    * Personas
-    * Requirements
-    * UX & User Journey mapping
-    * Technology Stack
-    * Current System
-    * Sizing
+  * Audience
+  * Personas
+  * Requirements
+  * UX & User Journey mapping
+  * Technology Stack
+  * Current System
+  * Sizing
+
+```{note}
+* View the [recording](https://learn.liferay.com/web/guest/d/se1-1-discovery-call) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-1-discovery-call-pdf) of the presentation used in the live workshop.
+```
 
 ## Discovering Demo Requirements
 
@@ -69,15 +74,10 @@ A lot depends on the solution architecture, but discussing the technology stack 
 
 In line with the technology stack, the set of questions can be around how seamlessly Liferay could integrate to existing systems. It is important then to learn what the existing technologies that need to be integrated with are, and for the prospect to know how Liferay can fit in.
 
-### Sizing 
+### Sizing
 
 Last but not least is sizing, whether it is SaaS, PaaS, or on-premise, sizing the implementation correctly is very important at the early stages of the opportunity because sizing helps to inform the overall cost and even though it may not be possible to learn everything this early on, it is required at the beginning to progress with the opportunity.
 
 Great, that’s the end of this module - next, learn how to demonstrate the experience for users who’ve not logged on to Liferay.
-
-```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-1-discovery-call) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-1-discovery-call-pdf) of the presentation used in the live workshop.
-```
 
 Next: [Public Pages Experience](../public-pages-experience.md).

@@ -15,7 +15,7 @@ uuid: 7f21c3ef-e3ba-4610-a67d-b6e62e82436c
 
 ![The Masterclass Blogs page displays all blogs that have been authored to date.](./other-public-pages/images/01.png)
 
-Scrolling back up to the top, the Blog link takes the user to a second page,where a different type of content - Blogs - is displayed. This page displays different information to the user, in a different way to the home page, but is still very consistent in look and feel because it is inheriting the styling from the Style Book that is applied to the site as a whole. Style Books are covered in a later module, and can be demonstrated later too, but for now it is useful to mention that Liferay allows different teams, with different skills, to work simultaneously on a site, or any number of sites.
+Scrolling back up to the top, the Blog link takes the user to a second page, where a different type of content - Blogs - is displayed. This page displays different information to the user, in a different way to the home page, but is still very consistent in look and feel because it is inheriting the styling from the Style Book that is applied to the site as a whole. Style Books are covered in a later module, and can be demonstrated later too, but for now it is useful to mention that Liferay allows different teams, with different skills, to work simultaneously on a site, or any number of sites.
 
 Generally a designer, or team of designers will work on the styling, and marketing users and other content authors will design the pages and publish content to them. Separating the styling from the page design means that there’s the consistent look and feel that this site displays, plus any required changes can be easily made site-wide.
 
@@ -63,6 +63,6 @@ Search is another tool to enable users to quickly find the information they need
 * Used for full site search, as well as tailored search experiences
 * Enhanced with tools like Search Blueprints to tailor search results, ordering etc.
 
-If the prospect is particularly interested in Search keep that in mind for later in the demo, after logging in. 
+If the prospect is particularly interested in Search keep that in mind for later in the demo, after logging in.
 
 Next: [Branding and Consistency](./branding-consistency.md).

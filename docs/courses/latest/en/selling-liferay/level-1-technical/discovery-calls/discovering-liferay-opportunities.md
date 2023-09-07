@@ -7,13 +7,13 @@ uuid: 026d1713-d1e7-4258-9a9e-649505c512f4
 **At a Glance**
 
 * Discovery Calls are used to
-    * Qualify and perform basic discovery
-    * Discover what might be needed to be shown in a subsequent demo
+  * Qualify and perform basic discovery
+  * Discover what might be needed to be shown in a subsequent demo
 * Sales Engineers should be involved in both phases
 * Technical qualification in discover calls relates to
-    * Liferay’s position in the overall architecture
-    * Technical Stack preferences
-    * Fit in the overall solution architecture
+  * Liferay’s position in the overall architecture
+  * Technical Stack preferences
+  * Fit in the overall solution architecture
 
 ## Discovering Liferay Opportunities
 

@@ -33,6 +33,14 @@ You will permanently lose analytics data that has been recorded over 7 months ag
 
 Manage and control collected data of individuals with this tool. New requests can be made to access individual data, delete individual data, or suppress individual data. For example, someone may contact you requesting their collected data be shared or deleted.
 
+```{important}
+For a user that is suppressed, their data is pseudonymized (i.e. their activities are no longer associated with the user but are treated as anonymous data.) Therefore, the number of anonymous users may increase (e.g. a suppressed user who visits your site with two different devices would be considered as two anonymous individuals).
+
+When a user is unsuppressed, their data that was previously collected is restored to that user’s profile. But any activities during their suppression remains as anonymous data. 
+
+When a user’s data is deleted, all their historical data is permanently deleted. Later, if they are unsuppressed, they will appear as a new user with no prior data.
+```
+
 To create a new request or view previous requests, click the *Manage* button.
 
 ![Create a new request or view previous requests.](./data-control-and-privacy/images/03.png)
@@ -40,7 +48,7 @@ To create a new request or view previous requests, click the *Manage* button.
 A log of previous requests appears. Use the filter function or search function to find a particular request. To download a ZIP file of a request, click the *Download* button of the request. 
 
 ```{note}
-A request to delete, suppress, or unsuppress a user requires some processing time and takes about 90 minutes for the request to be completed.
+A request to delete a user's data, suppress a user, or unsuppress a user requires some processing time and takes about 90 minutes for the request to be completed.
 ```
 
 To create a new request,

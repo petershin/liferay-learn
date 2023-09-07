@@ -3,7 +3,13 @@ uuid: 02db589d-875c-4d46-a44a-2007e096c382
 ---
 # Data Control and Privacy
 
-Analytics Cloud provides administrative tools for managing individual data and privacy. To access the tools, click *Settings* &rarr; *Data Control & Privacy*.
+Analytics Cloud provides administrative tools for managing individual data and privacy. Use these tools to assist you in meeting the General Data Protection Regulation (GDPR) requirements. Specifically,
+
+* Requesting access for download helps with meeting the right to data portability.
+* Requesting deletion of a user helps with the right to be forgotten. 
+* Requesting suppression of a user helps with the right to restrict processing.
+
+To access the tools, click *Settings* &rarr; *Data Control & Privacy*.
 
 ![Different tools are found in the data control and privacy section of settings.](./data-control-and-privacy/images/01.png)
 
@@ -32,6 +38,10 @@ To create a new request or view previous requests, click the *Manage* button.
 ![Create a new request or view previous requests.](./data-control-and-privacy/images/03.png)
 
 A log of previous requests appears. Use the filter function or search function to find a particular request. To download a ZIP file of a request, click the *Download* button of the request. 
+
+```{note}
+A request to delete, suppress, or unsuppress a user requires some processing time and takes about 90 minutes for the request to be completed.
+```
 
 To create a new request,
 

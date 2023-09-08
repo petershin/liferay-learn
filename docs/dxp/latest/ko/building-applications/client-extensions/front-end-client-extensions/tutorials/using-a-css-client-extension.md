@@ -72,10 +72,11 @@ CSS를 추가하여 버튼의 배경색을 수정합니다. `global.css` 파일�
 이제 클라이언트 확장 프로그램을 배포합니다.
 
 ## Liferay에 클라이언트 확장 프로그램 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once Liferay starts, run this command from the client extension's folder in the sample workspace:
+Liferay가 시작되면 샘플 작업공간의 클라이언트 확장 폴더에서 다음 명령을 실행합니다.
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)

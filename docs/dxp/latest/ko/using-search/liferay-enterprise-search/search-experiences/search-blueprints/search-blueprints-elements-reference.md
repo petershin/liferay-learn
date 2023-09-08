@@ -309,7 +309,7 @@ Elasticsearch DSL 쿼리 본문을 있는 그대로 요소에 붙여넣습니다
 - 연산자는 분석된 모든 검색 키워드가 각 필드에 나타나야 하는지(AND) 또는 각 필드에 하나만 나타나야 하는지(OR)를 결정합니다. 정확한 동작은 일치 유형의 영향을 받습니다.
 - 일치 유형은 Elasticsearch에서 내부적으로 쿼리를 처리하는 방식을 결정합니다. **Most Fields** 지정된 각 필드에 대한 일치 쿼리를 생성하고 점수를 결합하므로 아마도 가장 기본적인 유형일 것입니다.
 - 퍼지는 부정확한 일치에 대한 동작을 설정합니다. 0, 1 또는 2를 설정하면 쿼리가 일치 항목을 반환하도록 허용되는 [Levenshtein 편집 거리](https://en.wikipedia.org/wiki/Levenshtein_distance) 직접 지정합니다. AUTO는 검색되는 용어의 길이를 기준으로 편집 거리를 생성합니다. 자세한 내용은 [Elasticsearch 퍼지 문서](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/common-options.html#fuzziness) 을 참조하십시오.
-- 최소 일치해야 함은 검색에서 반환할 문서에 대해 일치해야 하는 최소 절 수를 설정합니다. 자세한 내용은 [Elasticsearch의 minimum **should** match](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-minimum-should-match.html) 설명서를 참조하십시오.
+- 최소 일치해야 함은 검색에서 반환할 문서에 대해 일치해야 하는 최소 절 수를 설정합니다. 자세한 내용은 [Elasticsearch의 minimum_should_match](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/query-dsl-minimum-should-match.html) 설명서를 참조하십시오.
 - Slop은 구문 및 구문 접두사 검색 유형에서 사용됩니다. 구문이 일치하지 않고 여전히 일치할 수 있는 단어 수를 지정하여 부정확한 구문 일치를 허용합니다. 예를 들어 구문 유형과 슬롭 1을 사용하여 "liferay blogs"를 검색하면 여전히 "liferay dxp blogs"가 포함된 필드와 일치할 수 있습니다.
 - 이 요소에서 제공하는 절과 일치하는 모든 문서를 부스트하도록 부스트를 설정합니다.
 - 쿼리 절과 일치해야 하는 값을 하드코딩하려면 Text to Match를 설정하십시오. 사용자의 키워드로만 검색하려면 이 항목을 공백으로 두십시오.

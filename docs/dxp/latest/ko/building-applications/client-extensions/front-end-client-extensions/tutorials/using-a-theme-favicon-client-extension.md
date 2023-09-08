@@ -50,10 +50,11 @@ assemble:
 이는 `assets/` 폴더의 모든 항목이 빌드된 클라이언트 확장자 `.zip` 파일에 정적 리소스로 포함되도록 지정합니다. 테마 파비콘 클라이언트 확장에 있는 파비콘 파일은 Liferay에서 정적 리소스로 사용됩니다.
 
 ## Liferay에 클라이언트 확장 프로그램 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once Liferay starts, run this command from the client extension's folder in the sample workspace:
+Liferay가 시작되면 샘플 작업공간의 클라이언트 확장 폴더에서 다음 명령을 실행합니다.
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)

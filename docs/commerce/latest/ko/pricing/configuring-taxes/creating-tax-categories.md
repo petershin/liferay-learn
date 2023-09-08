@@ -34,7 +34,7 @@ Liferay Commerce는 세금 범주를 사용하여 채널 제품 및 배송 비�
     * **이름** : 홀리데이 스페셜
     * **내용** : 휴일 세금
 
-      ![새 세금 범주를 추가합니다.](./creating-tax-categories/images/04.png)
+    ![새 세금 범주를 추가합니다.](./creating-tax-categories/images/04.png)
 
 1. **저장** 을 클릭합니다.
 

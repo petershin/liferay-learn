@@ -11,7 +11,7 @@
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
    ```{note}
-   지원되는 JDK, 데이터베이스 및 환경은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 에서 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../설치-업그레이드/참조/jvm-configuration.md)을 참조하세요.
+   지원되는 JDK, 데이터베이스 및 환경은 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 에서 확인하세요. 권장 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md)을 참조하세요.
    ```
 
 1. 샘플 워크스페이스를 다운로드하여 압축을 풉니다:
@@ -58,10 +58,11 @@ window.alert('Sample Global JS deployed.');
 페이지를 열면 메시지와 함께 알림 상자가 나타납니다. 이 파일에 추가하여 추가 JavaScript를 실행합니다.
 
 ## Liferay에 클라이언트 확장 프로그램 배포
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once Liferay starts, run this command from the client extension's folder in the sample workspace:
+Liferay가 시작되면 샘플 작업공간의 클라이언트 확장 폴더에서 다음 명령을 실행합니다.
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)

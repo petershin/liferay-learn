@@ -18,12 +18,13 @@ Liferay는 [구성 인터페이스가](./setting-and-accessing-configurations.md
 구성 UI를 선택적으로 숨기려면 `ConfigurationVisibilityController` 인터페이스를 사용하세요.
 
 ### 구현 예시 보기
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps.
+그런 다음 다음 단계를 따르세요.
 
-1. Download and unzip [Hiding the Configuration UI](./liferay-g8v3.zip)
+1. [구성 UI 숨기기](./liferay-g8v3.zip)를 다운로드하고 압축을 푼다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-g8v3.zip -O

@@ -15,9 +15,9 @@ The Backups page is only available in production environments for backup service
 
 > Requires CLI tool version 3.12.0+, backup service version 5.9.0+, and Liferay service version 5.3.0+.
 
-You can use the [CLI tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to directly download backups. This method allows you to concurrently download both the database and document library volume.
+You can use the [CLI tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to directly download backups, including both the database and document library volume.
 
-Run this command using its ID to download a specific backup's database and document library simultaneously:
+Run this command using a specific backup's ID to download its database and document library simultaneously:
 
 ```bash
 lcp backup download --backupId [ID]
@@ -67,7 +67,7 @@ mysqldump -uroot -ppassword --add-drop-database --databases lportal | gzip -c | 
 If your Backup service is not updated to at least version `4.2`, you must also run the following command to convert the archive to a `.tgz` file: `tar zcvf database.tgz database.gz`. Then use the resulting `.tgz` archive to upload.
 ```
 
-The `databases` and `add-drop-database` options are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
+The `--databases` and `--add-drop-database` flags are necessary for backup restoration to work correctly. You can also use the `/backup/download` API to see how the backup service creates its MySQL dump file.
 
 With these options, the resulting dump file contains the following code just before the create table statements.
 
@@ -105,7 +105,7 @@ cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 You can only download backups via the console **before backup service 5.9.0**. For versions 5.9.0+, use the [CLI tool](#downloading-backups-via-the-cli-tool) instead.
 ```
 
-Follow these steps to download a backup from the *Backups* page in your chosen environment:
+Follow these steps (as an administrator) to download a backup from the *Backups* page in your chosen environment:
 
 1. Click on the *Actions* button ( ⋮ ) for the backup you want to download.
 
@@ -120,10 +120,6 @@ Follow these steps to download a backup from the *Backups* page in your chosen e
     ```
 
     ![Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
-
-```{note}
-Only administrators for the chosen environment can download backups from the Backups page.
-```
 
 ## Uploading Backups via the Console
 

@@ -31,19 +31,57 @@ After creating both channels, you must link them to the corresponding Liferay si
 
 ## Configuring the B2C Channel
 
-For the B2C channel, you’ll configure a payment method, shipping method, and ensure that the site type is set to B2C. In the Details section, set the Commerce Site Type to *B2C*. When the [site type](/w/commerce/starting-a-store/sites-and-site-types#site-types) is B2C, every account in the site must be a personal account. Select the *Type* tab and click *Select Site*. Choose the *Delectable Bonsai B2C* site and click *Save*. You can now use this channel to accept customer orders from your site. 
+For the B2C channel, you’ll configure a payment method, shipping method, and ensure that the site type is set to B2C. 
 
-```{note}
-There’s also a B2X type that permits both personal and business accounts. See [Site Types](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) for more information. You can also use [Liferay’s accelerators](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/accelerators) to jumpstart your online store. 
-```
+1. In the Details section, set the Commerce Site Type to *B2C*. When the [site type](/w/commerce/starting-a-store/sites-and-site-types#site-types) is B2C, every account in the site must be a personal account. 
 
-<!-- In the training, we don't want asides like the above. We should stay focused on the task at hand. All information beyond the task at hand should be in the Relevant Content links at the bottom. Also, every action should be in numbered steps, so please break up the paragraph above to reflect that. -Rich -->
+1. Select the *Type* tab and click *Select Site*. 
+
+1. Choose the *Delectable Bonsai B2C* site 
+
+1. Click *Save*. 
+
+You can now use this channel to accept customer orders from your site. 
 
 Delectable Bonsai offers their B2C customers an option to pay by PayPal. Customer orders are shipped using a flat rate shipping method. You can use Liferay’s out-of-the-box payment and shipping methods to implement both of these. 
 
-To add PayPal as a payment method, follow the instructions [here](https://learn.liferay.com/web/guest/w/commerce/store-management/configuring-payment-methods/paypal).
+### Configuring PayPal
 
-<!-- Don't do this. If they must complete the task, give them the steps to complete the task. The whole point of this is to build the site. -Rich -->
+1. Visit the [PayPal Developer Dashboard](https://developer.paypal.com/dashboard/) and sign up for an account. 
+
+1. Switch to *Sandbox* mode.
+
+   ![Switch to sandbox mode using the toggle.](./creating-and-configuring-channels/images/02.png)
+
+1. Navigate to the *Apps & Credentials* tab.
+
+1. Click *Create App*.
+
+1. Enter *Delectable Bonsai* as the name and set the type as *Merchant*. 
+
+1. Click *Create App*.
+
+This creates the app with a name, client ID, and secret key. 
+
+1. Copy the client ID and secret key.
+
+   ![Copy the client ID and secret key.](./creating-and-configuring-channels/images/03.png)
+
+1. Now, go back to your Liferay instance. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Channels*.
+
+1. Select *Delectable Bonsai B2C*.
+
+1. Scroll down to the *Payment Methods* section and select *PayPal*.
+
+1. Activate it using the toggle.
+
+1. Click *Save*.
+
+1. Go to the *Configuration* tab and paste the client ID and secret key copied from PayPal. 
+
+1. Set the *Mode* to sandbox.
+
+1. Click *Save*. 
 
 ### Configuring Flat Rate Shipping Method
 
@@ -53,7 +91,7 @@ To add PayPal as a payment method, follow the instructions [here](https://learn.
 
 1. Click *Save*.
 
-1. Go to the Shipping Options page, click the *Add* (![Add](../../images/icon-add.png)) button.
+1. Go to the *Shipping Options* page, click the *Add* (![Add](../../images/icon-add.png)) button.
 
 1. Enter the name as *Regular Shipping* and amount as *$9.99*.
 
@@ -67,9 +105,15 @@ To add PayPal as a payment method, follow the instructions [here](https://learn.
 
 ## Configuring the B2B Channel
 
-For the B2B channel, you’ll configure a payment method, shipping method, and ensure that the site type is set to B2B. In the Details section, set the Commerce Site Type to *B2B*. When the [site type](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) is B2B, every account in the site must be a business account. Select the *Type* tab and click *Select Site*. Choose the *Delectable Bonsai B2B* site and click *Save*. 
+For the B2B channel, you’ll configure a payment method, shipping method, and ensure that the site type is set to B2B. 
 
-<!-- Please break the above paragraphs into numbered steps. -Rich --> 
+1. In the Details section, set the Commerce Site Type to *B2B*. When the [site type](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) is B2B, every account in the site must be a business account. 
+
+1. Select the *Type* tab and click *Select Site*. 
+
+1. Choose the *Delectable Bonsai B2B* site.
+
+1. Click *Save*. 
 
 Delectable Bonsai offers their B2B customers an option to pay by money order. They ship using a variable shipping rate that's calculated based on the weight of the shipment. You can use Liferay’s out-of-the-box payment and shipping methods to implement both of these. 
 
@@ -81,9 +125,7 @@ Delectable Bonsai offers their B2B customers an option to pay by money order. Th
 
 1. Click *Save*.
 
-   This should be eligible for all order types. If you want a specific message page to appear during checkout, go to the *Configuration* tab and enable the message page. You can also customize the message that appears in this checkout step. 
-
-<!-- Don't give them a choice like the above "If you want a specific message...." This is another difference between the docs and courses. If there should be a message that appears during checkout, lead them through creating it through steps, and give them the customized message. -Rich -->
+   This should be eligible for all order types. 
 
 ### Configuring Variable Rate Shipping Method
 
@@ -113,7 +155,7 @@ Delectable Bonsai offers their B2B customers an option to pay by money order. Th
 
    **Price per Unit of Weight:** 2.99
 
-   ![Configure the available tiers of variable rate shipping.](./creating-and-configuring-channels/images/02.png)
+   ![Configure the available tiers of variable rate shipping.](./creating-and-configuring-channels/images/04.png)
 
 1. Repeat this two more times with the following details: 
 
@@ -125,3 +167,8 @@ Delectable Bonsai offers their B2B customers an option to pay by money order. Th
 In the next section, you’ll set up order notifications and enable buyer order approval workflows. This shows how the order life cycle changes when there’s a workflow in place, and how users are notified when an order is accepted. 
 
 Next: [Configuring Workflows and Notifications](./configuring-workflows-and-notifications.md)
+
+## Related Topics
+
+* [Site Types](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types)
+* [Accelerators](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/accelerators)

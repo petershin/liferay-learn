@@ -67,7 +67,7 @@ Follow these steps to install and enable Xuggler for your Liferay instance:
 
 1. (If Xuggler is not installed) Select the correct JAR for the OS, and click *Install*.
 
-   Then, restart the server to apply changes. Once installed, return to the *External Services* tab to enable Xuggler.
+   Restart the server to apply changes. Once installed, return to the External Services tab to enable Xuggler.
 
    ![If Xuggler isn't installed, you'll be prompted to install it.](./configuring-external-services/images/02.png)
 

@@ -68,4 +68,4 @@ This publishes the product with some basic details. Now create two more products
 
 Congratulations! You've completed this module. In the next module, you’ll configure the products and its SKUs, add inventory, prices, and other necessary information to enrich the storefront experience.
 
-[Back to Course](../../cloud-administrator.md)
+[Back to Course](../../commerce-architect.md)

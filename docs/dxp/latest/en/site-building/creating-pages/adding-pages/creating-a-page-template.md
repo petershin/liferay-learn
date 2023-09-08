@@ -7,9 +7,9 @@ uuid: 22635fa9-bca6-427c-8e6d-ab9f22b5c4c7
 
 Page templates help you efficiently create pages based on predefined layouts and content. There are several basic page templates available out-of-the-box.
 
-![Basic Page Templates are available.](./creating-a-page-template/images/01.png)
+![Basic page templates are available.](./creating-a-page-template/images/01.png)
 
-You may also create your own [Content Page](../using-content-pages.md) templates and [Widget Page](../understanding-pages/understanding-pages.md#widget-pages) templates, as described below.
+You may also create your own [content page](../using-content-pages.md) templates and [widget page](../understanding-pages/understanding-pages.md#widget-pages) templates, as described below.
 
 ```{note}
 For Liferay DXP 7.4+, page template collections are called page template sets in the Liferay UI.
@@ -17,17 +17,17 @@ For Liferay DXP 7.4+, page template collections are called page template sets in
 
 ## Creating a New Page Template
 
-The steps below show how to create and use Widget and Content Page Templates.
+The steps below show how to create and use widget and content page templates.
 
-1. Open the *Product Menu* ( ![Product Menu icon](../../../images/icon-product-menu.png) ) and  navigate to *Site Builder* &rarr; *Pages*
+1. Open the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and  navigate to *Design* &rarr; *Page Templates*
 
 1. Select the *Page Templates* tab.
 
-1. Click *New* and create a new Page Template Set to organize your page templates.
+1. Click *New* and create a new page template set to organize your page templates.
 
-    ![Creating a new Page Template Set.](./creating-a-page-template/images/02.png)
+    ![Creating a new page template set.](./creating-a-page-template/images/02.png)
 
-1. Click *Add* ( ![Add Page Template](../../../images/icon-add.png) ) and select either *Widget Page Template* or *Content Page Template*. You can edit the page template at any time by clicking the *Actions* button ( ![Actions](../../../images/icon-actions.png) ) next to the Page Template in the Set and selecting *Edit*.
+1. Click *Add* ( ![Add Page Template](../../../images/icon-add.png) ) and select either *Widget Page Template* or *Content Page Template*. You can edit the page template at any time by clicking the *Actions* button ( ![Actions](../../../images/icon-actions.png) ) next to the page template in the set and selecting *Edit*.
 
 1. Enter a Name.
 
@@ -36,7 +36,7 @@ The steps below show how to create and use Widget and Content Page Templates.
 1. You're automatically brought to the new page template. Follow the instructions in [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your widget page template. Likewise, see [Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) to configure your content page template.
 
 ```{tip}
-You can preview your newly created page template. In the Page Templates page, select the *Optoins* menu ( ![Options Icon](../../../images/icon-options.png) ) for the template you want to preview, and select *Preview*.
+You can preview your newly created page template. In the Page Templates page, select the *Action* menu ( ![Action Icon](../../../images/icon-options.png) ) for the template you want to preview, and select *Preview*.
 ```
 
 ## Creating a Page Template from an Existing Page
@@ -45,17 +45,19 @@ You can also create a page template from a page while you are editing it. The ne
 
 Follow these steps to make a page template from a page:
 
-1. While editing the page, click the *Options* button ( ![Options](../../../images/icon-options.png) ) and select *Convert to Page Template*
+1. While editing the page, click *Options* ( ![Options](../../../images/icon-options.png) ) and select *Convert to Page Template*
 
-    ![Click Convert to Page Template in the Actions menu to turn the page you are editing into a new Page Template.](./creating-a-page-template/images/03.png) 
+    ![Click Convert to Page Template in the Options menu to turn the page you are editing into a new page template.](./creating-a-page-template/images/03.png)
 
 1. In the modal that appears on the screen, select an existing page set or select *Save in New Set* to create a new page template set for the page template.
 
     ![Here, you can set the basic information for your new Page Template.](./creating-a-page-template/images/04.png)
 
+    If you do not have a page template set, choose a *Name* and, optionally, a *Description* for a new page template set in the modal that appears on the screen. Click *Save* to save your page as a template in the newly created template set.
+
 1. Click Save.
 
-The chosen page template set now has a new page template based on the page you are currently editing, as a draft. *You must publish this Page Template draft to use it for new pages.*
+The chosen page template set now has a new page template based on the page you are currently editing, as a draft. *You must publish this page template draft to use it for new pages.*
 
 ## Sharing a New Page Template
 
@@ -93,7 +95,7 @@ You can share your page templates with other sites using the same process as you
 Staging functionality is in [maintenance mode](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md) as of 7.3 GA1+.
 ```
 
-If staging has been enabled, changes to the widget page template are automatically propagated to the *staged* page. These changes must still be approved before the page is published to the live site. For this reason, the automatic propagation of Widget Page Template changes to the staged page cannot be turned off and the *Inherit Changes* selector does not appear.
+If staging has been enabled, changes to the widget page template are automatically propagated to the *staged* page. These changes must still be approved before the page is published to the live site. For this reason, the automatic propagation of widget page template changes to the staged page cannot be turned off and the *Inherit Changes* selector does not appear.
 
 ## Related Topics
 

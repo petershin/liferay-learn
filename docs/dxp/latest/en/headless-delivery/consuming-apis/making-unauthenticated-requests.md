@@ -48,6 +48,10 @@ You can use [Service Access Policies](../../installation-and-upgrades/securing-l
 
 1. Click *Save*.
 
+```{note}
+Make sure to use Liferay's external headless API classes versus using Liferay's internal service layer classes in your policies.
+```
+
 ![Service Access Policies define rules for access to APIs.](./making-unauthenticated-requests/images/01.png)
 
 Your Service Access Policy is now active, granting Guests access to the Sites API.

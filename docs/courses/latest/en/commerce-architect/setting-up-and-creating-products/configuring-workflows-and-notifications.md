@@ -3,7 +3,13 @@ uuid: d3f40144-866d-4a66-af04-7d482e06c8c7
 ---
 # Configuring Workflows and Notifications
 
-During channel configuration, you can enable workflows so all orders go through at least one step of approval before they’re placed. Delectable Bonsai’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. 
+Robert Read, the buyer for Almighty Syrup, needs approvals for all placed orders from his order manager, Preston Palmer. Delectable Bonsai’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. This workflow helps when there’s a budget allocated for buying and requires approvals.
+
+```{note}
+There's also a seller order acceptance workflow which when enabled requires all orders to go through one step of approval before they’re **accepted**. This is useful when Delectable Bonsai receives customer orders from Almighty Syrup or Marvelous Markets and requires them to be approved before they're accepted. 
+
+The Single Approver (Version 1) workflow is the only type of workflow available out-of-the-box, but you can customize it further in the workflow editor. Read [Introduction to Order Workflows](https://learn.liferay.com/w/commerce/order-management/order-workflows/introduction-to-order-workflows) for more information about workflows. 
+```
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Channels*. 
 
@@ -14,14 +20,6 @@ During channel configuration, you can enable workflows so all orders go through 
    ![Select the single approver buyer order approval workflow.](./configuring-workflows-and-notifications/images/01.png)
 
 1. Click *Save*.
-
-This enables the single order approver workflow for buyers when they place orders. A user with the buyer role in the customer account can create an order. But it requires a user with the order manager role in the customer account to approve the order before it can be checked out. A user with the sales agent role can also approve orders. This workflow helps when there’s a budget allocated for buying and requires approvals.
-
-The seller order acceptance workflow, if enabled, requires all orders to go through one step of approval before they’re accepted. This is applicable for Delectable Bonsai when they receive an order from a customer and it requires an approval before it’s accepted. 
-
-The Single Approver (Version 1) workflow is the only type of workflow available out-of-the-box, but you can customize it further in the workflow editor. Read [Introduction to Order Workflows](https://learn.liferay.com/w/commerce/order-management/order-workflows/introduction-to-order-workflows) for more information about workflows. 
-
-<!-- Please adapt the explanation above to be at the beginning. Explain about a specific user that's been imported that has (or will have) the buyer role, and another specific user that has the order manager role, how the order must be approved, and how the single approver workflow included out-of-the-box satisfies this requirement. -Rich -->
 
 ## Creating a Notification Template
 
@@ -112,8 +110,6 @@ This creates a notification template for sending notifications whenever an order
    | Cancelled         | 8             |
    | Partially Shipped | 14            |
    | On Hold           | 20            |
-
-<!-- This table should also go in the docs and be pointed to. -Rich -->
 
 1. Under Action, choose *Notification* and select the *Delectable Bonsai Order Accepted* notification template. 
 

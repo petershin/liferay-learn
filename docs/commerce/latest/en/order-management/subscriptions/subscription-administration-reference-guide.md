@@ -63,6 +63,10 @@ The Payment Subscription section tracks the following information:
 | Subscription Length | This refers to the length of the interval between shipments. |
 | Mode | This refers to the date on which the intervals are marked. Users can also select exact days of the month or _The Last Day of the Month_ as options.  |
 
+```{warning}
+If you require this feature to be disabled, [blacklist](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-apps.md) the module. Do not input zero or a negative number for the interval.
+```
+
 ### Delivery Subscription
 
 The _Delivery Subscription_ section tracks the following information:
@@ -76,6 +80,10 @@ The _Delivery Subscription_ section tracks the following information:
 | Subscription Type | This is how the type of the subscription. |
 | Subscription Length | This refers to the length of the interval between shipments. |
 | Mode | This refers to the date on which the intervals are marked. Users can also select exact days of the month or _The Last Day of the Month_ as options.  |
+
+```{warning}
+If you require this feature to be disabled, [blacklist](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-apps.md) the module. Do not input zero or a negative number for the interval.
+```
 
 ### Items
 

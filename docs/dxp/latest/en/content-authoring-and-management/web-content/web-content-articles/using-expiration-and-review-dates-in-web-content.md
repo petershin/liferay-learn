@@ -39,6 +39,10 @@ By default, Web Content checks article expiration and review dates every 15 minu
 
 Now the system checks for expiration or review dates according to the interval you set.
 
+```{warning}
+If you require this feature to be disabled, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-apps.md) the module. Do not input zero or a negative number for the interval.
+```
+
 ## Configuring Notification Emails
 
 When an article expires or requires review, Liferay sends a notification email to the article's owners, reviewers, or any users subscribed to the folder containing the article. There's a default notification message, but you can customize it.

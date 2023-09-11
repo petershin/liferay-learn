@@ -3,13 +3,11 @@ uuid: ba3f3663-f72e-4f18-b220-d9b2e127ef5e
 ---
 # Fragment Specific Tags and Attributes Reference
 
-Along with standard HTML, CSS, and JavaScript, you can use Liferay-specific tags and, since Liferay Portal 7.3 GA3 and Liferay DXP 7.3, attributes, to make editable sections or embed widgets in your fragment. Editable elements can be modified before publication, which means that you can create simple, reusable fragments that have identical formatting, but contain elements that are adaptable to the specific context.
+Along with standard HTML, CSS, and JavaScript, you can use attributes or tags to define elements as editable.
 
-```{warning}
-Nesting editable elements inside of other editable elements in a fragment is not supported.
-```
+Editable elements can be modified before publication, which means that you can create simple, reusable fragments that have identical formatting, but contain elements that are adaptable to the specific context.
 
-Page fragments have access to these types of liferay-specific tags and attributes that add these features:
+Use Liferay-specific tags and attributes to add these features to the fragment:
 
 - [Editable Text](#making-text-editable)
 - [Editable Images](#making-images-editable)
@@ -20,26 +18,42 @@ Page fragments have access to these types of liferay-specific tags and attribute
 - [Date Fragments](#using-date-fragments)
 - [Map Object Actions to Buttons](#making-buttons-action-ready)
 
+Since Liferay Portal 7.3 GA3 and Liferay DXP 7.3, you can use `data-lfr-editable*` attributes to define elements as editable, rather than wrapping editable elements with `lfr-editable` tags.
+
+```{warning}
+Editable elements have a `data-lfr-editable-id` attribute and it must be unique. Do not change the ID after the page fragment has been added to a page, you can lose changes made to the fragment.
+```
+
+The old tags still work for backwards compatibility, but we recommend that you use the newer data attributes if you're running Portal 7.3 GA3+ or Liferay DXP 7.3+, as they are easier to write.
+
 ```{tip}
 When you start typing the name of a tag, the [HTML editor](../../developing-page-fragments/using-the-fragments-editor.md) provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
 ```
 
-The text or images you provide here are the default values for the fields. You may want to display them in the final version of the page, or you may want filler text that should be replaced before publishing the page.
+This reference lists the available editable tags and attributes along with examples of how to use them in your fragments.
 
-All of these work together to help you create dynamic, reusable elements for building a site. For example, if you need a small text box with an image and link to provide a product description, you can create a fragment containing editable filler text, space for an editable image, the appropriate formatting, and an editable link. You can then add the fragment to multiple pages and define the image, text, and link for each product you need to describe.
+## Editable Elements
+
+Create editable sections, dynamic and reusable fragments for building a site, or make a fragment even more dynamic by including a widget embedded to a portlet using editable elements.
+
+Provide text, images, links, and HTML code to these editable elements which become the default values for their fields. You may want to display the editable content in the final version of the page or you may want filler content that should be replaced before publishing the page.
 
 ```{warning}
-IDs of editable elements must be unique. Do not change the ID after the page fragment has been added to a page. Changing the ID of an editable fragment after it's been modified can cause the changes to be lost.
+Freemarker code in editable fields is executed only once when the fragment is added to the page (to set its default value).
+
+Avoid using it if you need the value re-evaluated (for example, if you localize a value using `${languageUtil.get(locale,'word')}`, the word is only localized once you add the fragment to the page and the code does not run again even If you change your portal's language).
 ```
 
-You can make a fragment even more dynamic by including a widget. Currently, portlets are the only embeddable types of widgets, but other options are planned.
+Here is an example of how you can use editable elements,
 
-![The fragment editor provides autocomplete for fragment-specific tags.](./fragment-specific-tags-reference/images/01.png)
+Imagine you need a title, a small text box, an image, and a link to provide a product description. Create a fragment containing editable filler text, space for an editable image, the appropriate formatting, and an editable link.
 
-This reference list the available editable tags and attributes along with examples of how to use them in your fragments.
+You can then add the fragment to multiple pages and define the image, text, and link for each product you need to describe.
 
-```{note}
-Since Liferay Portal 7.3 GA3 and Liferay DXP 7.3, you can use `data-lfr-editable*` attributes to define elements as editable, rather than wrapping editable elements with `lfr-editable` tags. The old tags still work for backwards compatibility, but we recommend that you use the newer data attributes if you're running Portal 7.3 GA3+ or Liferay DXP 7.3, as they are easier to write.
+![You can use editable elements to create a fragment with an editable text, image, and link. This fragment can be edited and reused in different contexts.](./fragment-specific-tags-reference/images/01.png)
+
+```{warning}
+Nesting editable elements inside of other editable elements in a fragment is not supported.
 ```
 
 ## Making Text Editable
@@ -90,7 +104,7 @@ If you want to make text inside an HTML element editable, you must use the `rich
 
 ## Making Images Editable
 
-Images use the same `data-lfr-editable-type` attribute as text, but with the `image` type, like this:
+Images use the same `data-lfr-editable-type` attribute as text, but with the `image` type. The `data-lfr-editable-id` must be a unique ID, like this example:
 
 ```html
 <img

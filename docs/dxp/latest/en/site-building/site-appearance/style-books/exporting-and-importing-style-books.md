@@ -3,20 +3,48 @@ uuid: 616640a4-732c-4cf3-b735-c66ffe1a15c1
 ---
 # Exporting and Importing Style Books
 
-You can export and import style books to share them between Liferay installations. It is possible to export/import your style books as a [Liferay Archive (LAR) file](#exporting-style-books-as-a-lar-file) or a [ZIP file](#exporting-style-books-as-a-zip-file).
+You can export and import style books to share them between Liferay installations. It is possible to export/import your style books as a [ZIP file](#exporting-style-books-as-a-zip-file) or as a [Liferay Archive (LAR) file](#exporting-style-books-as-a-lar-file).
+
+## Exporting Style Books as a ZIP File
+
+1. Open the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Style Books* .
+
+1. Find the style book you want to export and click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) &rarr; select *Export*.
+
+1. A ZIP file is downloaded to your machine. It contains two files:
+
+    * `style-book.json` contains the name of the style book and the path to `frontend-token-values.json`.
+
+    * `frontend-token-values.json` contains a list of the token values of the style book. Each token references the CSS variable name and the value mapped to it.
+
+You can now share and import your ZIP file.
+
+## Importing Style Books as a ZIP File
+
+1. Open the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Style Books* .
+
+1. On the Applications bar, click *Options* ( ![Options icon](../../../images/icon-options.png) ) and select *Import*.
+
+1. Choose the ZIP file you want to import.
+
+    Check the *Overwrite Existing Style Books* to overwrite existing style books with the same name. Unchecking this option and trying to import a style book with the same name as an existing one renders an error message.
+
+1. Click *Import*.
+
+You can now use your imported style guide.
 
 ## Exporting Style Books as a LAR File
 
-1. Open the *Product Menu* ( ![Product Menu Icon](../../../images/icon-product-menu.png) ) and select *Design* &rarr; open the *Style Books* app.
+1. Open the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Style Books* .
 
 1. Select the style book you want to export. On the Applications bar, click *Options* ( ![Options Icon](../../../images/icon-options.png) ) &rarr; select *Export / Import*.
 
     ![To export a Style Book, go to options in the Style Books app](./exporting-and-importing-style-books/images/01.png)
 
 1. In the Export / Import modal, select *Export*.
- 
+
 1. Start a *New Export Process*.
-   
+
     ```{note}
     You can select the *Current and Previous* tab to view a list of previous processes and download exported LAR files.
     ```
@@ -31,7 +59,7 @@ You can now share and import your LAR file.
 
 ## Importing Style Books as a LAR File
 
-1. Open the *Product Menu* ( ![Product Menu Icon](../../../images/icon-product-menu.png) ) and select *Design* &rarr; open the *Style Books* app.
+1. Open the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Style Books* .
 
 1. Select the style book you want to import. On the Applications bar, click *Options* ( ![Options Icon](../../../images/icon-options.png) ) &rarr; select *Export / Import*.
 
@@ -66,31 +94,3 @@ Liferay provides settings for configuring export and import processes.
 | Authorship of the Content (Import) | Choose one of these options to define the authorship of the content: **Use the Original Author**: keep authorship of imported content whenever possible (this option uses the current user as author if the original one is not found). **Use the Current User as Author**: assign the current user as the author of all imported content. |
 
 ![Configure your export/import process](./exporting-and-importing-style-books/images/03.png)
-
-## Exporting Style Books as a ZIP File
-
-1. Find the style book you want to export and click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) &rarr; select *Export*.
-
-1. A ZIP file is downloaded to your machine. It contains two files:
-
-    * `style-book.json` contains the name of the style book and the path to `frontend-token-values.json`.
-
-    * `frontend-token-values.json` contains a list of the token values of the style book. Each token references the CSS variable name and the value mapped to it.
-
-    ```json
-    {"brandColor1":{"cssVariableMapping":"brand-color-1","value":"#F05321"},"bodyBgColor":{"cssVariableMapping":"body-bg","value":"#FCBA21"},"btnPrimaryBackgroundColor":{"cssVariableMapping":"btn-primary-background-color","value":"#024da1"}}
-    ```
-
-    You can now share and import your ZIP file.
-
-## Importing Style Books as a ZIP File
-
-1. On the Applications bar, click *Options* ( ![Options Icon](../../../images/icon-options.png) ) and select *Import*.
-
-1. Choose the ZIP file you want to import. 
-
-    Check the *Overwrite Existing Style Books* to overwrite existing style books with the same name. If you uncheck this option and try to import a style book with the same name as an existing one, an error message is displayed.
-
-1. Click *Import*.
-
-You can now use your imported style guide.

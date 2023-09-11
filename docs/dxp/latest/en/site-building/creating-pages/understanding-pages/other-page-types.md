@@ -3,7 +3,7 @@ uuid: 688335ec-a749-4c33-a940-0b19dd493a9f
 ---
 # Other Page Types
 
-[Content Pages](../using-content-pages.md) are the most commonly used page type, but other page types are available for certain use cases.
+[Content pages](../using-content-pages.md) are the most commonly used page type, but other page types are available for certain use cases.
 
 ## Utility Pages
 
@@ -13,30 +13,30 @@ Utility pages are content pages you can create and apply to system-level pages, 
 
 ## Full Page Application
 
-The *Full Page Application* page type creates a page that displays a single application that fills the entire page. See [Using the Full Page Application Page](../adding-pages/using-the-full-page-application-page-type.md) for more information.
+The full page application page type creates a page that displays a single application that fills the entire page. See [Using the Full Page Application Page](../adding-pages/using-the-full-page-application-page-type.md) for more information.
 
-![A Full Page Application page displays a single application that spans the entire width of the page.](./other-page-types/images/01.png)
+![A full page application page displays a single application that spans the entire width of the page.](./other-page-types/images/01.png)
 
 ## Page Set
 
-The *Page Set* option creates a container for subpages that is not actually a page itself.
+The page set option creates a container for subpages that is not actually a page itself.
 
-![A Page Set page acts as a container for other pages.](./other-page-types/images/02.png)
+![A page set page acts as a container for other pages.](./other-page-types/images/02.png)
 
 ## Link to a Page
 
-The *Link to a Page of this Site* option links to a page within the same Site. This is often used to make a page available in multiple parts of a Sites hierarchy.
+The link to a page of this site option links to a page within the same site. This is often used to make a page available in multiple parts of a sites hierarchy.
 
 ## Panel
 
-The *Panel* option creates a page containing any number of applications as selected by an Administrator, but only one is displayed at a time. Users select the widget they want to display from a menu on the left side of the page. The selected application takes up the entire page.
+The panel option creates a page containing any number of applications as selected by an administrator, but only one is displayed at a time. Users select the widget they want to display from a menu on the left side of the page. The selected application takes up the entire page on the right side.
 
-![A Panel page provides a specified subset of applications to a User on a page.](./other-page-types/images/03.png)
+![A panel page provides a specified subset of applications to a user on a page.](./other-page-types/images/03.png)
 
 ## Embedded
 
-The *Embedded* option displays content from another website inside your instance in an iframe. The website appears in context and within the navigation of your Liferay DXP instance.
+The embedded option displays content from another website inside your instance in an [iframe](../../displaying-content/additional-content-display-options/using-the-iframe-widget.md). The website appears in context and within the navigation of your Liferay DXP instance.
 
 ## Link to URL
 
-The *Link to URL* option adds a link to the provided URL. This can be an external page or a link across Sites in the same Liferay Portal instance.
+The link to URL option adds a link to the provided URL. This can be an external page or a link across sites in the same Liferay Portal instance.

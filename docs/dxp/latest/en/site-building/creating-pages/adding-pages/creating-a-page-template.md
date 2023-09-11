@@ -57,7 +57,11 @@ Follow these steps to make a page template from a page:
 
 1. Click *Save*.
 
-The chosen page template set now has a new page template based on the page you are currently editing, as a draft. *You must publish this page template draft to use it for new pages.*
+The chosen page template set now has a new page template based on the page you are currently editing, as a draft.
+
+```{important}
+You must publish this page template draft to use it for new pages.
+```
 
 ## Sharing a New Page Template
 

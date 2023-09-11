@@ -45,6 +45,10 @@ By default, the Documents and Media application is configured to check file expi
 
 Once saved, the system will automatically check for files that have reached their expiration or review date according to the set interval.
 
+```{warning}
+If you require this feature to be disabled, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-apps.md) the module. Do not input zero or a negative number for the interval.
+```
+
 ## Configuring Notification Emails
 
 When a file expires or requires review, a notification email is sent to the file's owners, reviewers, or any users subscribed to the folder containing the file. Documents and Media provides a default notification message, but you can edit the message if desired.

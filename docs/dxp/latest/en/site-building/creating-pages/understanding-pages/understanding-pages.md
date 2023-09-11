@@ -75,18 +75,13 @@ There are several other page types that are available - each can help to satisfy
 
 ## Global Page Templates
 
-When adding a page, you also have the option to choose a Page Template. Page Templates are pre-set pages with applications already deployed to the page. By default, only *Global Templates* are available, but additional collections you create appear as an option as well.
+When adding a page, you also have the option to choose a page template. Page templates are pre-set pages with applications already deployed to the page. By default, only *Global Templates* are available, but additional collections you create appear as an option as well.
 
-| Global Page Template | Description |
-| :--- | :--- |
-| Blog | Creates a Widget Page with a Blogs widget, a Tag Cloud widget, and a Recent Bloggers widget. |
-| Search | Creates a Widget Page with a Search Bar widget, a Search Results widget, and a Search Options widget. |
-| Wiki | Creates a Widget Page with a Wiki widget, a Category Filter widget, and a Tag Filter widget. |
+| Global Page Template | Description                                                                                                                                                                                                |
+| :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Search               | Creates a widget page with the following widgets: Search Bar, Suggestions, Site Facet, Type Facet, Tag Facet, Category Facet, Folder Facet, User Facet, Modified Facet, Search Results and Search Options. |
 
-Learn more about Page Templates:
-
-* Adding a Page Using a Page Template
-* [Creating a Page Template](../adding-pages/creating-a-page-template.md)
+See [Creating a Page Template](../adding-pages/creating-a-page-template.md) to learn more about page templates.
 
 ## Child Pages and Page Hierarchy
 

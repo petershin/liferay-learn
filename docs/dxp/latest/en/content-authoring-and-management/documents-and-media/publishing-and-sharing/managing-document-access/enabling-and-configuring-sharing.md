@@ -36,7 +36,7 @@ Sharing is enabled globally by default.
 1. Click *Save*.
 
 ```{warning}
-If you require this feature to be disabled, [blacklist](../../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-apps.md) the module. Do not input zero or a negative number for the interval.
+If you require this feature to be disabled, [blacklist](../../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not input zero or a negative number for the interval.
 ```
 
 ## Virtual Instance Sharing Configuration

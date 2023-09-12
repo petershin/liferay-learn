@@ -46,7 +46,7 @@ By default, the Documents and Media application is configured to check file expi
 Once saved, the system will automatically check for files that have reached their expiration or review date according to the set interval.
 
 ```{warning}
-If you require this feature to be disabled, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-apps.md) the module. Do not input zero or a negative number for the interval.
+If you require this feature to be disabled, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not input zero or a negative number for the interval.
 ```
 
 ## Configuring Notification Emails

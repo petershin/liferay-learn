@@ -40,7 +40,7 @@ By default, the exchange rates will be updated every 60 minutes. To increase the
 The Exchange Rate Auto-Update is now enabled and will update currency exchange rates every two hours.
 
 ```{warning}
-If you require this feature to be disabled, [blacklist](https://learn.liferay.com/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-apps.md) the module. Do not input zero or a negative number for the interval.
+If you require this feature to be disabled, [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not input zero or a negative number for the interval.
 ```
 
 ## Setting Exchange Rates Manually

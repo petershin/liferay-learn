@@ -16,7 +16,7 @@ Subsequent lessons explore how to design engaging, responsive user interfaces wi
 1. Download and unzip the resources for [this exercise](./liferay-t7z2.zip).
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/adding-a-custom-layout-and-view-to-distributor-application/liferay-t7z2.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-t7z2.zip -O
    ```
 
    ```bash

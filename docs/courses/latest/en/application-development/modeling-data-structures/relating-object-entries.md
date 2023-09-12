@@ -10,7 +10,7 @@ After defining an object relationship, you can relate entries in two ways: the L
 1. Download and unzip the resources for [this exercise](./liferay-g2n9.zip):
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/relating-object-entries/liferay-g2n9.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-g2n9.zip -O
    ```
 
    ```bash

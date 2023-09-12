@@ -38,6 +38,10 @@ If you want to map several Structure field values to individual Fragments, you m
 
 1. Click *Publish* to save the changes.
 
+```{warning}
+A web content article is reindexed when it is edited and saved, but content pages are reindexed only when published (to conserve resources). So, a web content article mapped to a cached fragment is updated but not in the content page unless you publish the page again or [unmark the fragment as cacheable](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments).
+```
+
 ## Related Topics
 
 - [Using Fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)

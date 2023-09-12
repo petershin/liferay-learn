@@ -23,7 +23,7 @@ A collection page links a page to a collection. Collection pages include collect
 
 Follow these steps to add a collection page:
 
-1. Go to *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Pages*.
+1. Click the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Pages*.
 
 1. Click *New Page* ( ![New Page](../../../images/icon-add.png) ) and select *Collection Page*.
 
@@ -49,17 +49,17 @@ A collection display fragment shows a collection in a content page. It can be co
 
 ![Use a collection display fragment to display a collection in the desired format.](./displaying-collections/images/02.png)
 
-To add an existing collection to a collection display fragment:
+To add an existing collection to a collection display fragment,
 
 1. [Create a new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [start editing a content page](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md).
 
-1. Click the *Add* icon ( ![Add widget icon](../../../images/icon-add-widget.png) ) to open the *Fragments and Widgets* panel.
+1. Click *Add* ( ![Add widget icon](../../../images/icon-add-widget.png) ) to open the *Fragments and Widgets* panel.
 
-1. Under the *Content Display* category in the *Fragments* tab, drag the *Collection Display* fragment to a place on the page.
+1. Under the Content Display category in the Fragments tab, drag the *Collection Display* fragment to a place on the page.
 
-1. Click on the *Collection Display* fragment to show the configuration in the *Selection* panel.
+1. Click on the *Collection Display* fragment to show the configuration in the Selection panel.
 
-1. Click the *Collection* field* to select a collection for the fragment to display in the *General* section of the panel:
+1. Click the *Collection* field* to select a collection for the fragment to display in the General section of the panel:
 
    ![Click the button to select a collection for the collection display fragment.](./displaying-collections/images/03.png)
 
@@ -71,19 +71,24 @@ Whether you added a collection display fragment manually or via a collection pag
 
 Selecting a collection display fragment divides it into sections for each asset in the collection. New options appear under the fragment's General configuration after you've selected a collection:
 
-* **Style Display**: The style used to format the assets in the list (e.g., grid or bulleted list styles). (In versions earlier than 7.4 GA23 or U23, this configuration is called *List Style*.)
-* **Layout**: the number of columns the assets appear in
-* **Show Gutter**: Whether to show the gutter (spacing) between columns. This option only appears when the *Grid* style is chosen with a column layout (in versions 7.4 GA23+ or U23+).
-* **Vertical Alignment**: Whether to align the items in the collection to the top, middle, or bottom of each row. This option only appears when the *Grid* style is chosen (in versions 7.4 GA23+ or U23+).
-* **List item style**: the style used to format each asset. This option may not appear depending on the chosen List style.
-* **Max number of items**: the maximum number of assets the fragment can display at a time
+**Style Display**: Choose the style used to format the assets in the list (e.g., grid or bulleted list styles). (In versions earlier than 7.4 GA23 or U23, this configuration is called *List Style*.)
+
+**Layout**: Choose the number of columns in which to display the assets.
+
+**Show Gutter**: Check the box to show the gutter (spacing) between columns. This option only appears when you choose the Grid style with a column layout (in versions 7.4 GA23+ or U23+).
+
+**Vertical Alignment**: Choose how to align the items: top, middle, or bottom of each row. This option only appears when you choose the *Grid* style (in versions 7.4 GA23+ or U23+).
+
+**List item style**: Choose a style to format each asset. This option applies only to some list styles.
+
+* **Max number of items**: Select the maximum number of assets the fragment can display at a time. 
 
 ![Click on a collection display fragment with a configured collection to reveal more configuration options.](./displaying-collections/images/04.png)
 
 Publish the page when you're ready for the assets in the collection to be displayed as configured.
 
 ```{tip}
-In Liferay 7.4 GA23+ or U23+, if you have chosen the *Grid* style for a collection display fragment, you can configure the layout setting individually for each type of device. Click the device viewport buttons at the top of the screen to set this setting for each device. The tablet setting defaults to the same as the desktop's setting, and the portrait and landscape phone settings default to 1 column.
+In Liferay 7.4 GA23+ or U23+, if you have chosen the Grid style for a collection display fragment, you can configure the layout setting individually for each type of device. Click the device viewport buttons at the top of the screen to set this setting for each device. The tablet setting defaults to the same as the desktop's setting, and the portrait and landscape phone settings default to 1 column.
 ```
 
 <!-- Add reference to developer tutorials to add more options for the List styles/List item styles when available -->
@@ -95,24 +100,24 @@ You can also configure the item style (how each asset is individually displayed)
 Map these elements to the assets in the collection display fragment by dragging them into the cells of the fragment.
 
 ```{note}
-Depending on the option you have chosen for a collection display fragment's list style, you may not be able to drag components into the fragment. If you cannot drag components into the fragment, you can choose a different List style or select a different option under *List Item Style*.
+Depending on the option you chose for a collection display fragment's list style, you may not be able to drag components into the fragment. If you cannot drag components into the fragment, you can choose a different list style or select a different option under List Item Style.
 ```
 
 1. In the page editor, click the *Collection Display* representing your collection.
 
 1. In the tools sidebar, click the *Fragments and Widgets* ( ![Fragment and Widgets](../../../images/icon-add-widget.png) ) button.
 
-1. From the *Fragments and Widgets* sidebar panel, drag and drop the components you want to use to show the collection items.
+1. From the Fragments and Widgets sidebar panel, drag and drop the components you want to use to show the collection items.
 
     ![Add fragments or widgets to the collection display and configure the display properties.](./displaying-collections/images/05.gif)
 
     ```{note}
-    If the collection display contains more than one item, you can drag the fragment or widget to any of them. The rest of the items in your collection automatically use the same layout settings.
+    If the collection display contains more than one item, you can drag the fragment or widget to any of them. The rest of the items in your collection use the same layout settings automatically.
     ```
 
 1. Double-click the *Fragment* or *Widget* on the collection display to access its mapping options.
 
-1. In the *Mapping* column, select the *Field* that you want to map to your collection.
+1. In the Mapping column, select the *Field* that you want to map to your collection.
 
     ![Map the fragments and widgets to the collection items](./displaying-collections/images/06.gif)
 
@@ -138,18 +143,21 @@ In Liferay 7.4 versions earlier than U18 and GA18, fewer pagination options are 
 
 To paginate the display items in the collection display,
 
-1. Click the *Edit* icon ( ![Edit icon](../../../images/icon-edit.png) ) on the content page with the collection display.
+1. Click *Edit* ( ![Edit icon](../../../images/icon-edit.png) ) on the content page with the collection display.
 
-1. Click the *Browser* icon ( ![Browser icon](../../../images/icon-hierarchy.png) ) to open the *Browser* panel.
+1. Click *Browser* ( ![Browser icon](../../../images/icon-hierarchy.png) ) to open the Browser panel.
 
-1. Under the *Elements Browser*, select the collection display fragment you want to paginate. (The chosen fragment must be configured to display an existing collection).
+1. Under the Elements Browser, select the collection display fragment you want to paginate. The chosen fragment must be configured to display an existing collection.
 
 1. In the General Settings, choose the pagination options:
 
-    * **Pagination**: None (no pagination), Numeric, or Simple (Previous/Next controls).
-    * **Display All Pages**: Whether to display the numbers or controls for every page in the pagination menu. If no pagination type is selected, this option becomes *Display All Collection Items* instead.
-    * **Maximum Number of Pages to Display**: The maximum number of pages shown in the pagination menu. This option only appears if the Display All Pages checkbox is not selected.
-    * **Maximum Number of Items per Page**: The maximum number of items from the Collection to display per page, if pagination is enabled. If no pagination type is selected, this option becomes *Maximum Number of Items to Display* instead.
+    **Pagination**: None (no pagination), Numeric, or Simple (Previous/Next controls).
+
+    **Display All Pages**: Check the box to display the numbers or controls for every page in the pagination menu. If no pagination type is selected, this option becomes *Display All Collection Items* instead.
+
+    **Maximum Number of Pages to Display**: The maximum number of pages shown in the pagination menu. This option only appears if the *Display All Pages* checkbox is not selected.
+
+    **Maximum Number of Items per Page**: The maximum number of items from the collection to display per page, if pagination is enabled. If no pagination type is selected, this option becomes *Maximum Number of Items to Display* instead.
 
     ![Choose the pagination options for the collection display items.](./displaying-collections/images/08.png)
 
@@ -172,7 +180,7 @@ You can find usage statistics for the collections on your site.
 
 ### Displaying Content Sets
 
-Content sets are primarily displayed through the asset publisher. It is currently the only method to display them out-of-the-box, but you can develop your own external applications or widgets to utilize content sets. In [Creating Content Sets](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md#creating-content-sets) you created two content sets. Now display them on a page.
+Content sets are primarily displayed through the Asset Publisher. It is currently the only method to display them out-of-the-box, but you can develop your own external applications or widgets to utilize content sets. In [Creating Content Sets](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md#creating-content-sets) you created two content sets. Now display them on a page.
 
 #### Configuring the Asset Publisher for Content Sets
 
@@ -189,7 +197,7 @@ To display the content sets, start with a blank page, and then add the necessary
 1. Click on the *Space Program Images* content set.
 1. Click *Save*.
 
-Now the images will appear at the top of the page. You can manage the way the content is displayed---like what metadata appears---or even create a *Widget Template* to style the content, but the displayed items and the order in which they appear are determined by the content set.
+Now the images appear at the top of the page. You can manage the way the content is displayed---like what metadata appears---or even create a *Widget Template* to style the content, but the displayed items and the order in which they appear are determined by the content set.
 
 Now configure the bottom asset publisher with the other content set.
 
@@ -210,10 +218,10 @@ Again, you can manage various display settings, but the displayed items and thei
 
 To demonstrate the management of both static and dynamic content sets, upload a new image, tag it, and add it to the static set manually.
 
-1. Upload a new image, and under *Categorization* tag it as *trending*.
-1. Without lifting another finger, the image is added to the top of the *Trending* content list.
+1. Upload a new image, and under Categorization tag it as *trending*.
+1. The image is added to the top of the Trending content list.
 
-    ![The result is dynamically added to the content list wherever it is displayed.](./displaying-collections/images/13.png)
+    ![The result is added dynamically to the content list wherever it is displayed.](./displaying-collections/images/13.png)
 
 1. To add it to the manual set, go back to *Site Administration* and navigate to *Content & Data* &rarr; *Site Builder*.
 1. Click on *Space Program Images* or select ![Options](../../../images/icon-options.png) &rarr; *Edit* next to *Space Program Images*.
@@ -221,9 +229,9 @@ To demonstrate the management of both static and dynamic content sets, upload a 
 1. Select the new image and click *Add*.
 1. Navigate back to the *Home* page to see your image added to the list.
 
-Content sets are a powerful feature which provides one place to easily define content and other assets to be displayed all over your site. Their reusability also means less repeated work involved in getting great content delivered to your users.
+Content sets provide one place to define content and other assets to be displayed all over your site. Their reusability also means less repeated work involved in getting great content delivered to your users.
 
-## Related Information
+## Related Topics
 
 * [Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
 * [About Collections and Collection Pages](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)

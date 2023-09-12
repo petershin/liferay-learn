@@ -9,9 +9,9 @@ The *Iframe* widget creates an [iframe](https://www.w3schools.com/html/html_ifra
 
 1. [Create a new page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) or [start editing a content page](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md).
 
-1. Click the *Add* icon ( ![Add widget icon](../../../images/icon-add-widget.png) ) to open the *Fragments and Widgets* panel.
+1. Click *Add* ( ![Add widget icon](../../../images/icon-add-widget.png) ) to open the Fragments and Widgets panel.
 
-1. Under the *Sample* category in the *Widgets* tab, drag the *iFrame* widget to a place on the page.
+1. Under the Sample category in the Widgets tab, drag the *iFrame* widget to a place on the page.
 
 1. Click *Options* ( ![Options icon](../../../images/icon-app-options.png) ) at the top right of the widget &rarr; *Configuration*.
 

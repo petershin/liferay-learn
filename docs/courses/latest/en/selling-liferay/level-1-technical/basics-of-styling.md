@@ -11,10 +11,10 @@ uuid: 0717de7f-94fd-47ce-98ec-59fc294dd26d
 * The key to a successful demo is engaging with the audience
 * Updating the look and feel of an existing demo is an effective way to create engagement
 * Liferay provides simple tools that require no development that change the look and feel:
-    * Style Books
-    * Site Logos
-    * Favicons
-    * Master Pages
+  * Style Books
+  * Site Logos
+  * Favicons
+  * Master Pages
 * A Style Book is a set of visual rules that apply to a Site to provide a consistent visual experience across its pages
 
 ## Background

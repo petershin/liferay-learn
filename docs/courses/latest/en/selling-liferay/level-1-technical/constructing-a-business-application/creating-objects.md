@@ -8,8 +8,8 @@ uuid: 508a4f69-e349-49b4-8ad3-74a2af939aaa
 
 * A high-level Liferay demo should include a demo of a pre-built Object, showcasing the basic features
 * This section includes details on how to create an Object from scratch, which serves two purposes
-    * Provides more detailed learning opportunities about Objects
-    * Provides a framework for a more detailed technical demo with a Prospect
+  * Provides more detailed learning opportunities about Objects
+  * Provides a framework for a more detailed technical demo with a Prospect
 
 ## Learning about Liferay Objects
 
@@ -39,13 +39,13 @@ Before an Object can be published elements must be added and its settings must b
 
 Follow these steps to edit the object draft:
 
-* From the Objects admin page, click the newly created object draft to begin editing it. Object features and configuration options are organized into the following tabs: Details, Fields, Relationships, Layouts, Actions, Views, Validations, and State Manager.
-* Click the **Fields** tab to add custom fields. Each field represents a database column for storing specific types of values. See [Adding Fields to Objects](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects). By default, all objects include these system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status.
-* Select the object scope of ‘Company’. The object determines how the object’s data is stored.
+1. From the Objects admin page, click the newly created object draft to begin editing it. Object features and configuration options are organized into the following tabs: Details, Fields, Relationships, Layouts, Actions, Views, Validations, and State Manager.
+1. Click the **Fields** tab to add custom fields. Each field represents a database column for storing specific types of values. See [Adding Fields to Objects](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects). By default, all objects include these system fields: Author, Create Date, External Reference Code, ID, Modified Date, and Status.
+1. Select the object scope of ‘Company’. The object determines how the object’s data is stored.
     * **Company** (default): When scoped by Company, the object’s data is stored per Liferay instance.
     * **Site**: When scoped by Site, the object’s data is stored per Site.
-* Show the object’s page widget. While enabled, you can add the object’s widget to site pages. See [Deploying Object Widgets in Sites](https://learn.liferay.com/w/dxp/building-applications/objects/deploying-object-widgets-to-sites).
-* Click Save.
+1. Show the object’s page widget. While enabled, you can add the object’s widget to site pages. See [Deploying Object Widgets in Sites](https://learn.liferay.com/w/dxp/building-applications/objects/deploying-object-widgets-to-sites).
+1. Click Save.
 
 Once the configuration and editing is finished the object can be [published](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects).
 
@@ -123,11 +123,11 @@ Liferay Objects provide:
 
 * Quick, easy, no-code approach for creating custom applications.
 * Comprehensive capabilities including:
-    * Define Data Models
-    * Create User Interfaces
-    * Auto-generated APIs
-    * Consume through Client Extensions
-    * Integrate with External Systems
+  * Define Data Models
+  * Create User Interfaces
+  * Auto-generated APIs
+  * Consume through Client Extensions
+  * Integrate with External Systems
 * Standard, modular approach to data management - build better applications faster.
 
 Even though this learning path works towards using a pre-built demo, Objects provides a quick and easy (no code!) way of adding additional capabilities to that demo. Aim to create something that aligns with the requirements that your prospect has - not as a complete application, but to show them how quickly they can extend the platform to fit their specific needs. 

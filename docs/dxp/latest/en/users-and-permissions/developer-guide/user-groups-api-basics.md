@@ -107,7 +107,7 @@ The `main` method's comment demonstrates running the class.
 The other example Java classes are similar to this one, but call different `UserGroupResource` methods.
 
 ```{important}
-See [UserGroupResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserGroupResource.java) for service details.
+See [UserGroupResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserGroupResource.java) for service details.
 ```
 
 Below are examples of calling other `UserGroup` REST services using cURL and Java.

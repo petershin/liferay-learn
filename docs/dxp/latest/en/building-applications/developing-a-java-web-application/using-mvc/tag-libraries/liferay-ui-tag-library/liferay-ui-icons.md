@@ -31,7 +31,7 @@ The Liferay UI taglib also exposes language flag icons. To use a language flag i
 />
 ```
 
-You can achieve the same result in FreeMarker with the following code that uses the available [`init.ftl` variables](https://github.com/liferay/liferay-portal/blob/7.2.x/modules/appsfrontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/templates/init.ftl) and [Liferay DXP macros](https://help.liferay.com/hc/en-us/articles/360029145851-FreeMarker-Taglib-Macros):
+You can achieve the same result in FreeMarker with the following code that uses the available [`init.ftl` variables](https://github.com/liferay/liferay-portal/blob/7.2.x/modules/apps/frontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/templates/init.ftl) and [Liferay DXP macros](https://help.liferay.com/hc/en-us/articles/360029145851-FreeMarker-Taglib-Macros):
 
 ```
 <#assign flag_message>

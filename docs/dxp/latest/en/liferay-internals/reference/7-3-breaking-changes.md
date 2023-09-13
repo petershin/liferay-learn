@@ -234,7 +234,7 @@ This affects anyone deploying EXT plugins via the Auto Deployer.
 
 #### How should I update my code?
 
-There's no direct replacement for the removed feature. If you have an EXT plugin, you must deploy it manually or use [`ant direct-deploy`](https://github.com/liferay/liferay-plugins-ee/blob/7.0.x/ext/build-common-ext.xml#L211).
+There's no direct replacement for the removed feature. If you have an EXT plugin, you must deploy it manually or use [`ant direct-deploy`](https://github.com/liferay/liferay-plugins/blob/7.0.x/ext/build-common-ext.xml#L211).
 
 #### Why was this change made?
 
@@ -284,7 +284,7 @@ This affects anyone using these removed classes.
 
 #### How should I update my code?
 
-Use `PortalCacheHelperUtil` instead of `SingleVMPoolUtil` or `MultiVMPoolUtil`. For example, see [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal-ee/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116).
+Use `PortalCacheHelperUtil` instead of `SingleVMPoolUtil` or `MultiVMPoolUtil`. For example, see [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116).
 
 #### Why was this change made?
 

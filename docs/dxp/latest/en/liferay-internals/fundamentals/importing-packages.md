@@ -74,7 +74,7 @@ To manually import a package in a plugin WAR project, add an `Import-Package` he
 
 ### Java API Packages
 
-Packages for Java APIs, such as Java Portlet, aren't [semantically versioned](./semantic-versioning.md) but have [Portable Java Contracts](https://www.osgi.org/portable-java-contract-definitions/). Each API's contract specifies the JSR it satisfies. Modules that use these APIs must specify requirements on the API contracts. The contract requirement defines the module's relationship with the imported API packages. If the system you're running does *not* provide the exact contract, the module does not resolve. Resolving a missing package is better than handling an incompatibility failure during execution.
+Packages for Java APIs, such as Java Portlet, aren't [semantically versioned](./semantic-versioning.md) but have [Portable Java Contracts](https://docs.osgi.org/reference/portable-java-contracts.html). Each API's contract specifies the JSR it satisfies. Modules that use these APIs must specify requirements on the API contracts. The contract requirement defines the module's relationship with the imported API packages. If the system you're running does *not* provide the exact contract, the module does not resolve. Resolving a missing package is better than handling an incompatibility failure during execution.
 
 [Workspace](../../building-applications/tooling/liferay-workspace/what-is-liferay-workspace.md)-based projects specify Portable Java Contracts automatically! For example, if your module uses the Java Portlet API and you compile against the Java Portlet 2.0 artifact, a contract requirement for the package is added to your module's manifest.
 

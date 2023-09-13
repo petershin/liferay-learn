@@ -27,7 +27,7 @@ The sections below link to vendor-specific information on tuning each database i
 
 ## IBM DB2
 
-Please consult [IBM's official DB2 documentation](https://www.ibm.com/support/pages/db2-database-product-documentation-4).
+Please consult [IBM's official DB2 documentation](https://www.ibm.com/support/pages/db2-database-product-documentation).
 
 ## MariaDB
 

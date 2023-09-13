@@ -59,5 +59,5 @@ However, you can leverage the ability to [customize Collections with Segments](.
 
 - [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
 - [Configuring Content Recommendations](./configuring-content-recommendations.md)
-- [Interests (Analytics Cloud)](https://learn.liferay.com/analytics-cloud/latest/en/people/individuals/understanding-interests.md)
+- [Interests (Analytics Cloud)](https://learn.liferay.com/en/w/analytics-cloud/people/individuals/understanding-interests)
 - [About Collections and Collection Pages](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)

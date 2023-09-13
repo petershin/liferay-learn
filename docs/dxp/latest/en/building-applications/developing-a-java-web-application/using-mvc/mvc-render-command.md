@@ -92,7 +92,7 @@ The portlet's MVC Render Command classes are next.
 
 ## Examine the MVCRenderCommand Classes
 
-MVC Render Command classes can implement [`MVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.java) directly or extend [`BaseMVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCRenderCommand.java). `A4P1AbleMVCRenderCommand` directly implements `MVCRenderCommand`. Here is `A4P1AbleMVCRenderCommand`:
+MVC Render Command classes can implement [`MVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.java) directly. `A4P1AbleMVCRenderCommand` directly implements `MVCRenderCommand`. Here is `A4P1AbleMVCRenderCommand`:
 
 ```{literalinclude} ./mvc-render-command/resources/liferay-a4p1.zip/a4p1-web/src/main/java/com/acme/a4p1/web/internal/portlet/action/A4P1AbleMVCRenderCommand.java
 :language: java

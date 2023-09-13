@@ -19,7 +19,7 @@ uuid: 84ac8d9c-84e2-4c19-aad2-31a5d8da3cd4
 
 ## Authorization
 
-Authentication determines whether a user is allowed to login or not, Authorization:
+Authentication determines whether a user is allowed to login or not. Authorization,
 
 * Determines what an authenticated user can do.
 * Restrict access to assets like sites, pages, content, images, documents and so on.
@@ -52,9 +52,9 @@ An example of the OAuth communication process between Liferay and Client Extensi
 
 * Use an Incognito browser session to simultaneously login as a second user
 * Easily shows how the system can look and behave differently for different users:
-    * A search page that shows different results.
-    * A collection display that has different content.
-    * etc.
+  * A search page that shows different results.
+  * A collection display that has different content.
+  * etc.
 
 **Permissions apply to almost anything**
 
@@ -98,7 +98,7 @@ Protection against unauthorized access is a very important topic to discuss, and
 
 Trust will increase with a proven and secure platform - and that’s something that is core to Liferay’s capabilities.
 
-## Advanced Approaches beyond level 1!
+## Advanced Approaches beyond Level 1!
 
 This section provides some additional approaches that might be utilized in demos, however these are not typically covered in an initial 30-minute demo:
 

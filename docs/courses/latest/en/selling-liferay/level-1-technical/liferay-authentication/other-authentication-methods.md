@@ -2,13 +2,13 @@
 uuid: b7761bee-7211-41c7-ac27-c4d8d5166b96
 ---
 
-# Standards-based approaches to Authentication
+# Standards-Based Approaches to Authentication
 
 **At a Glance**
 
 * Liferay Authentication is supported by standards-based authentication approaches like OpenID Connect, SAML, etc.
 * External identity management systems are often used in conjunction with single-sign on to allow a single authenticated login to be used with multiple applications
-* Multi-factor Authentication extends on basic password-based authentication by adding additional factors to improve security
+* Multi-factor authentication extends on basic password-based authentication by adding additional factors to improve security
 
 ## OpenID Connect
 
@@ -60,9 +60,9 @@ Continuing with the lock analogy, SAML is a different type of Lock to the one us
 
 Password-based security is something everyone is familiar with. The limitations of passwords are also well known, they can be:
 
-* Shared.
-* Easy to guess unless a strong password policy is in place.
-* Even if a strong password is used they may be written down because the user can forget them.
+* Shared
+* Easy to guess unless a strong password policy is in place
+* Even if a strong password is used they may be written down because the user can forget them
 
 Multi-factor authentication (MFA) adds additional authentication factors that are harder, if not impossible to circumvent. Most people are familiar with techniques like time-based one-time PINs - where a code is sent by email or SMS. These expire after a short period of time, and so cannot easily be shared.
 

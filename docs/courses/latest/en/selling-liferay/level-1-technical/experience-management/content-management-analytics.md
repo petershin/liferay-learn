@@ -7,10 +7,10 @@ uuid: e26f8ce0-829e-4527-92d7-d4d729354a72
 **At a Glance**
 
 * The basics of demonstrating Liferay’s experience management capabilities include:
-    * Pages
-    * Segmentation and Personalization
-    * Content Management
-    * Analytics
+  * Pages
+  * Segmentation and Personalization
+  * Content Management
+  * Analytics
 * Content Management offers the ability for non-technical users to add Web Content, Documents, Blogs, and so on. 
 * Liferay’s Analytics capabilities allow administrators and marketers to understand how a Liferay site is performing, and to make improvements to it.
 
@@ -40,7 +40,7 @@ During the demo, a number of benefits can be highlighted:
 * **Integrated with native frameworks**. Talk about the fact that all content (Web Content, Blogs, Documents, etc.) are integrated with core Liferay capabilities like the permission framework, search engine, workflow engine.
 * **Office 365 and Google Drive integration**. If the prospect is interested in document management, mention the native integration offered by Liferay DXP with [Office 365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365) and [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration). These integrations allow users to create documents with the tools they are familiar with inside Liferay with the benefits of leveraging all the mentioned DXP capabilities.
 
-# Analytics
+## Analytics
 
 Liferay’s [Analytics capabilities](https://learn.liferay.com/w/analytics-cloud/getting-started/viewing-the-analytics-dashboard) can help customers understand how their users are interacting with content, and this is a crucial tool that helps them to deliver more relevant and tailored experiences. Liferay Analytics Cloud helps organizations to optimize digital experience outcomes with analytics that identify areas for improvement.
 

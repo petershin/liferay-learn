@@ -15,6 +15,11 @@ uuid: 49c5b81d-46ef-4eb5-88f7-86999cf71e4b
 * Liferay provides its own identity management capabilities
 * Liferay Authentication is sufficient for stand-alone and self-contained customer applications
 
+```{note}
+* View the [recording](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) of the presentation used in the live workshop.
+```
+
 ## Background
 
 Up to this point in a demo only [public pages](./public-pages-experience.md) have been covered. These types of pages are great for applications like Public Websites but for many (if not most) Liferay applications there will be a need to control who can access the system - and what they can do once they get there.
@@ -25,11 +30,6 @@ The module covers capabilities provided by Liferay to support:
 
 * Authentication
 * Authorization
-
-```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) of the presentation used in the live workshop.
-```
 
 ## Authentication vs. Authorization
 

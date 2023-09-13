@@ -11,11 +11,16 @@ uuid: 2233883a-c24c-40f0-a7f2-6df5d518f28c
 
 * Once logged in as an administrator it is possible to demonstrate how pages are constructed.
 * The basics of demonstrating Liferay’s experience management capabilities include:
-    * Pages
-    * Segmentation and Personalization
-    * Content Management
-    * Analytics
+  * Pages
+  * Segmentation and Personalization
+  * Content Management
+  * Analytics
 * Pages provide the primary way that any information in Liferay is presented to site users.
+
+```{note}
+* View the [recording](https://learn.liferay.com/web/guest/d/se1-4-experience-management) from the live workshop of this module.
+* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) of the presentation used in the live workshop.
+```
 
 ## Background
 
@@ -31,11 +36,6 @@ In-order to better understand the different aspects of experience management, th
 * Segmentation and Personalization
 * Content Management
 * Analytics
-
-```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-4-experience-management) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) of the presentation used in the live workshop.
-```
 
 ## Pages
 

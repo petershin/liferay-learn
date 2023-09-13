@@ -7,10 +7,10 @@ uuid: 401a117e-c51b-4525-aa37-82d979410a2c
 **At a Glance**
 
 * The basics of demonstrating Liferay’s experience management capabilities include:
-    * Pages
-    * Segmentation and Personalization
-    * Content Management
-    * Analytics
+  * Pages
+  * Segmentation and Personalization
+  * Content Management
+  * Analytics
 * Segmentation provides the ability to group site users based on what is known about them and what activities they have carried out.
 * Personalization provides the ability to present unique experiences to users belonging to different segments.
 

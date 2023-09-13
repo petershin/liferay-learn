@@ -1,4 +1,12 @@
 ---
+toc:
+- ./level-1-technical/discovery-calls.md
+- ./level-1-technical/public-pages-experience.md
+- ./level-1-technical/liferay-authentication.md
+- ./level-1-technical/experience-management.md
+- ./level-1-technical/basics-of-styling.md
+- ./level-1-technical/constructing-a-business-application.md
+
 uuid: 465dcb4b-dbbb-412e-ac6f-c015fb44df74
 ---
 
@@ -50,7 +58,7 @@ Start level 1 with learning what to find out during a [Discovery Call](./level-1
 :::{grid-item-card} Discovery Call
 :link: ./level-1-technical/discovery-calls.md
 
-This module explores what to find out during a discovery call to support delivering a demo that resonates with the prospect  .
+This module explores what to find out during a discovery call to support delivering a demo that resonates with the prospect.
 :::
 
 :::{grid-item-card} Public Pages Experience
@@ -84,7 +92,7 @@ The module promotes the use of Liferay Objects as a way to quickly, without writ
 :::
 ::::
 
-## Note
+## Coming Soon
 
 The remaining modules are not quite ready yet - watch this space for updates!
 

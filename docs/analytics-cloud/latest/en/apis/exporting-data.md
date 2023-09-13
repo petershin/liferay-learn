@@ -44,3 +44,7 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
    Requests are handled one at a time. If a second request is made while the first request is still running, you will see a message `"status":"PENDING"` until the first request has finished processing.
 
    The requested data will be available to download for 24 hours. After that time, if the same request is made, it will be processed as a new request.
+
+```{note}
+The data in the downloaded JSON file uses the [JSON Lines](https://jsonlines.org/) format, where each line is a valid JSON object. This provides a flexible format that is easy to parse and read, and is supported by various libraries (e.g. [Jackson](https://en.wikipedia.org/wiki/Jackson_(API)) JSON processor for Java.).
+```

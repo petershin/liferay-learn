@@ -3,14 +3,11 @@ uuid: 2300c294-4b2c-480a-8a99-a230ace39c5f
 ---
 # Defining the Pages' Header and Footer
 
-With Liferay's master pages, Delectable Bonsai can define common elements for their pages' headers and footers. Delectable Bonsai has just one page currently, the Home page. Since no master page was defined, the blank master page was automatically associated to the page, meaning there's a default header and footer. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu. 
-<!-- This actually comes in with the classic theme, so revamp it to explain why there's a header and footer by default, when the blank mp doesn't define it. -->
+With [Liferay's master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Delectable Bonsai can define common elements for their pages' headers and footers. Delectable Bonsai has just one page currently, the Home page. Since no master page was defined, the blank master page was automatically associated to the page. The blank master page does not define the default header and footer: instead, the default header and footer are defined in the default Classic theme. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu. 
 
 ![The default header and footer are useful, but replaceable.](./defining-the-pages-header-and-footer/images/01.png)
 
-Delectable Bonsai needs their own design, of course. At first the master page will define the header and footer for just the one page, but Delectable Bonsai will re-use it across the entire site, as more pages are added.
-
-<!-- Step 1 is to actually download the files we're providing--they're currently in a defining-the-pages-header-and-footer/resources folder -->
+Delectable Bonsai needs their own design, of course. At first the master page will define the header and footer for the one page and the utility pages, but Delectable Bonsai will re-use it across the entire site, as more pages are added.
 
 1. Import some logo images. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Content & Data &rarr; Documents and Media.
 
@@ -20,7 +17,10 @@ Delectable Bonsai needs their own design, of course. At first the master page wi
 
    ![The logos are imported and ready to use.](./defining-the-pages-header-and-footer/images/02.png)
 
-1. Import 1 custom fragment and 2 fragment compositions. <!--these are introduced here so briefly explain-->  Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Design &rarr; Fragments.
+1. Import one custom fragment and two fragment compositions. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Design &rarr; Fragments.
+
+   - Custom fragments are fragments that you develop, if none of the [out-of-the-box fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) suit your needs. Often you can start by [copying an existing fragment](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/duplicating-fragments) that contains some of the HTML, CSS, or JS you'll need to create your own fragment.
+   - [Fragment compositions](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) are reusable fragment groups you've added to the content page editor and saved for repeated use.
 
 1. Open the Actions menu (![Actions](../../images/icon-actions.png)) and click _Import_.
 
@@ -68,35 +68,11 @@ The master page is in place, so it's time to configure Liferay to use it on the 
 
 1. Click _Publish_.
 
-Your master page is defining the header and footer of the home page.
+1. Use a similar procedure to configure the default utility pages (404 and 500 error pages) to use the master page. In the Site Menu (![Product Menu](../../images/icon-product-menu.png)), click _Site Builder_ &rarr; _Pages_ &rarr; _Utility Pages_. 
+
+Your master page is defining the header and footer.
 
 ![The header and footer is in place.](./defining-the-pages-header-and-footer/images/07.png)
 
-Even with a header and footer, the look and feel is not polished yet. The Welcome to Liferay image is very blue and doesn't match Delectable Bonsai's brand colors, and the links are all currently blue as well. Instead of spending time manually fixing this, we'll leave it for now since the theme CSS client extension you deploy later will remedy these visual faults, and that Welcome to Liferay content will be removed during our content creation exercises anyway.
-
-FINAL
-
-Requirements for the header:
-
-Container, fixed width, content display: flex row, justify: between, align: center
-Sticky top positioning (Apparently sticky-top containers are not that easy: https://liferay.atlassian.net/browse/PTR-3708)
-Menu Display fragment with horizontal display style, pages hierarchy with no sublevels (default): width, 33.3% (though hurst just displays a hamburger icon and pops out a vertical navbar when clicked)
-Logo in the middle, 33.3% width--can use an image but probably want a link to the home page
-Shopping Cart logo on the right, 33.3% width
-Search bar configured to search the products page?
-
-Requirements for the footer:
-
-Container, fixed width
-Menu display Fragment with stacked display style
-
-Once developed, set it as the default and choose to let it apply to the existing page.
-Note, I had to do it manually in the Page Display Options
-
-1. Site Menu &rarr; Design &rarr; Templates &rarr; Masters.
-
-Add a header container and a footer container
-
-Copied from master-page-templates.md:
-Master Page Templates provide a way to define elements common to every page (e.g. │
-Headers and Footers previously provided by Themes) using Fragments, so you can easily maintain and manage them in Portal without having to deploy a plugin. You can use the same Master Page Template across an entire Site or have a unique one for each page. Each Page and Page Template must have an associated Master Page Template. By default, this is the "Blank" Master, which doesn't provide any common elements.
+Even with a header and footer, the look and feel is not yet well polished. The Welcome to Liferay image is very blue and doesn't match Delectable Bonsai's brand colors, and the links are all currently blue as well. Instead of spending time manually fixing this, we'll leave it for now since the theme CSS client extension you deploy later will remedy these visual faults, and that Welcome to Liferay content will be removed during our content creation exercises anyway.
+<!-- Note: we may want to remove the manual color-setting here, and only do it when the brand colors are loaded in from the Theme CSS CX later -->

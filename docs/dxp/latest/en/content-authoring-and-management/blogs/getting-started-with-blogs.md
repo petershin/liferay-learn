@@ -13,16 +13,16 @@ The fastest way to begin using the blogs app is to [deploy the widget to a site 
 
 1. Click *Add* ( ![Add widget icon](../../images/icon-add-widget.png) ) to open the *Fragments and Widgets* panel.
 
-1. Under the *Collaboration* category in the *Widgets* tab, drag and drop the *Blogs* widget to the desired location on the page.
+1. Under the Collaboration category in the Widgets tab, drag and drop the *Blogs* widget to the desired location on the page.
 
 ![Adding the Blogs widget to a page](./getting-started-with-blogs/images/01.png)
 
-Once you add the widget and publish the page, site members can create blog posts using the *Blogs* widget.
+Once you add the widget and publish the page, site members can create blog posts using the Blogs widget.
 
 ![Adding the Blogs widget to a page](./getting-started-with-blogs/images/02.png)
 
 ```{note}
-There can be only one *Blogs* widget per page.
+There can be only one Blogs widget per page.
 ```
 
 ## What's Next

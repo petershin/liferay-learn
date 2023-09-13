@@ -50,7 +50,7 @@ This vision continues today with our Mission Statement:
 * Head office in Los Angeles
 * Global presence in 22 locations
 * Over 5 Million downloads worldwide
-* 300+ Partners globally
+* 350+ Partners globally
 * 1200+ Enterprise Customers
 * 1000+ Employees Globally
 * 180,000+ Community Members

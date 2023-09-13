@@ -95,7 +95,38 @@ One of the reasons that B2B Commerce opportunities are hard for consumer-focused
 
 ![A summary of positive and negative signs to finding success in pursing a deal.](./strengths-and-red-flags/images/01.png)
 
-Finally, it is important to remember that these lists are not exhaustive, and none of these items alone make it a 100% win or 100% lost case. But the more thumbs up and the less thumbs down, the stronger our chances of winning are.
+It is important to remember that these lists are not exhaustive, and none of these items alone make it a 100% win or 100% lost case. But the more thumbs up and the less thumbs down, the stronger our chances of winning are.
+
+## Liferay Experience Cloud SaaS Ideal Opportunity Learnings
+
+Liferay carries out win-loss interviews with our sales teams, and sometimes also with prospects, so that a good understanding of where Liferay can (and can not) be successful can be obtained.
+
+Liferay Experience Cloud SaaS still a relatively new offering, with more being learned regularly about types of opportunities that are more successful than others. To date the following common elements have been observed:
+
+* Public Sites
+* Commerce capabilities included
+* Integration and low-cde capabilities
+* 50-100K starting point
+
+### Public Sites
+
+Prospects with a goal to renew their critical public facing web site first, with additional needs for future phases are a good match for the SaaS offering.
+
+### Commerce Capabilities
+
+Almost all of the interviews on won opportunities revealed Commerce and Commerce capability needs, such as product catalogue, being very important to the customer in the future to improve and solve their end customers digital self service needs. 
+
+Even though the customers started with a public website project, they appreciated the value that Liferay provides by having native commerce capabilities available and included in the subscription price.
+
+### Integration and Low-Code-Capabilities
+
+The ability to support integrations, inclusion of low-code capabilities, a built-in workflow engine and strong security features were mentioned in several won opportunities.
+
+### 50-100K Starting Point
+
+A common starting point for Liferay Experience Cloud SaaS opportunities appears to be an annual subscription _starting_ at between 50-100 K USD/EUR.  
+
+This list is _not_ exhaustive and it is also not definitive, but it could provide some pointers when attempting to identify Liferay Experience Cloud SaaS deals.
 
 Congratulations! You've completed the module on the ideal customer profile! 
 

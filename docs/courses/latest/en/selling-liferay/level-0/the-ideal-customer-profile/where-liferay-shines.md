@@ -48,6 +48,8 @@ Collaboration and knowledge-sharing functionality are prominent considerations f
 
 B2B is complex even with smaller deals. Compare that to B2C buying where, for example, you're buying a car: you go to a site to browse for a car of your liking, or you might go and do a test drive. If you like the car, you buy it. Providing you have money or sufficient credit rating, the whole process can happen really fast, and you do not need to ask anyone’s opinion, approval or even read the contract (because they would not change it for you anyway).
 
+Sometimes the complexity comes later. The customer or prospect might want to start with a fairly simple project but have a need and plan to evolve later. It is worth inviting them to share their future aspirations to learn if there are in fact more complex needs.
+
 ## Security
 
 Liferay is a strong option when the customer has a need for high security and stringent access controls. Security overall is an area where analyst firms like Gartner have repeatedly given Liferay high scores. We have had lots of success across industries where security is the top requirement. For example in Financial Services, Government sites and other public portals, Healthcare, etc. All these have extremely high security expectations, governance expectations and compliance requirements. Liferay’s account services in the form of customer profile management, registration, login, and password management capabilities in an authenticated, logged-in experience meet those needs and expectations.

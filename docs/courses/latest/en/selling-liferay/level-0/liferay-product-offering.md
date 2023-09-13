@@ -127,7 +127,7 @@ But there are still some time-consuming and relatively low-value activities that
 
 The final product deployment offering is Liferay Experience Cloud. This is a SaaS offering which frees customers to focus on what really matters: creating, launching, and maintaining business applications.
 
-With Liferay Experience Cloud SaaS, Liferay provides and manages all of the infrastructure and all of the low-value activities needed to maintain Liferay DXP. Liferay applies product updates on a weekly basis, testing these against customers' data, and does SAST and DAST security scanning.
+With Liferay Experience Cloud SaaS, Liferay provides and manages all of the infrastructure and all of the low-value activities needed to maintain Liferay DXP. Liferay applies product updates on a quarterly basis, testing these against customers' data, and does SAST and DAST security scanning.
 
 What is important to note is that although the deployment model is SaaS, this is not a turnkey application. Customers have a full Liferay DXP instance to use, with all of the out-of-the-box capabilities DXP provides, and they can build their custom applications on top of that base. Furthermore, they can continue to work with Partners and Liferay's Global Services organization to help them build those applications.
 

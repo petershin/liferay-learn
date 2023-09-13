@@ -61,7 +61,7 @@ Another way to look at what a DXP should provide is to look at the customer life
 
 ## Liferay Deployment Approaches
 
-Our DXP deployment offerings include SaaS, PaaS and self-hosted options. Our SaaS offering---Liferay Experience Cloud---is a flexible, DXP-as-a-Service offering to create, launch, and optimize tailored solutions with the agility and convenience of SaaS.
+Our DXP deployment offerings include SaaS, PaaS and self-hosted options. Our SaaS offering---Liferay Experience Cloud---is a flexible, DXP-as-a-Service offering to create, launch, and optimize digital solutions with the agility and convenience of SaaS.
 
 ## Tailored Solutions
 

@@ -7,19 +7,19 @@ After you [create a content page](../adding-pages/adding-a-page-to-a-site.md), y
 
 To add elements,
 
-1. Navigate to the content page and click the *Edit* button ( ![Edit Button](../../../images/icon-edit.png) ). This opens the [content page editor](./content-page-editor-ui-reference.md).
+1. Navigate to the content page and click *Edit* ( ![Edit Button](../../../images/icon-edit.png) ). This opens the [content page editor](./content-page-editor-ui-reference.md).
 
 1. Open the *Fragments and Widgets* ( ![Fragments and Widgets](../../../images/icon-plus.png) ) side panel and drag the desired elements onto the page.
 
-   You can browse the Fragments and Widgets tabs or use the Search field to find a specific element.
+   You can browse the fragments and widgets tabs or use the search field to find a specific element.
 
    ![Add fragments and widgets from the editing sidebar.](adding-elements-to-content-pages/images/01.png)
 
-1. (Optional) After adding elements, open the *Browser* panel ( ![Browser](../../../images/icon-hierarchy.png) ) to view and manage all elements added to the page. For Liferay 7.4 U37/GA37+, you can drag and drop elements in the Browser panel to reorganize them or double click elements to rename them.
+1. (Optional) After adding elements, open the *Browser* panel ( ![Browser](../../../images/icon-hierarchy.png) ) to view and manage all elements added to the page. For Liferay 7.4 U37/GA37+, you can drag and drop elements in the browser panel to reorganize them or double click elements to rename them.
 
    ![View and manage all elements added to the page in the Browser panel.](adding-elements-to-content-pages/images/02.png)
 
-1. Select and configure each page element in the Configuration sidebar. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
+1. Select and configure each page element in the configuration sidebar. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
    ![Select and configure each page element in the Configuration sidebar.](adding-elements-to-content-pages/images/03.png)
 

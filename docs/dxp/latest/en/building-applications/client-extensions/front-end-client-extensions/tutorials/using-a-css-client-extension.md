@@ -5,7 +5,7 @@ uuid: a8159380-3119-46c5-be6e-d9e24e60c325
 
 {bdg-secondary}`Available Liferay 7.4`
 
-With a CSS client extension, you can override page styles without a theme or dependencies on Liferay's code. Start with a client extension (from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)).
+CSS client extensions introduce new CSS styling to pages. A deployed CSS client extension on a page adds to the page’s existing styling, including theme and style book settings. Start with a client extension (from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)).
 
 ## Prerequisites
 
@@ -109,7 +109,7 @@ Configure a page in Liferay to use your deployed client extension:
 
 1. On a page with at least one button, click the _Edit_ icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu (![Page Design Options icon](../../../../images/icon-format.png)) and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu ( ![Page Design Options icon](../../../../images/icon-format.png) ) and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
    ![Click the cog wheel icon in the Page Design Options menu to access this client extension's configurations.](./using-a-css-client-extension/images/01.png)
 

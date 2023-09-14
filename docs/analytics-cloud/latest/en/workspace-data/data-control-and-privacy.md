@@ -3,9 +3,9 @@ uuid: 02db589d-875c-4d46-a44a-2007e096c382
 ---
 # Data Control and Privacy
 
-Analytics Cloud provides administrative tools for managing individual data and privacy. Use these tools to assist you in meeting the General Data Protection Regulation (GDPR) requirements. Specifically,
+Analytics Cloud provides administrative tools for managing individual data and privacy. Use these tools to assist you in meeting General Data Protection Regulation (GDPR) requirements:
 
-* Requesting access for download helps with meeting the right to data portability.
+* Requesting download of data helps with meeting the right to data portability.
 * Requesting deletion of a user helps with the right to be forgotten. 
 * Requesting suppression of a user helps with the right to restrict processing.
 
@@ -34,11 +34,11 @@ You will permanently lose analytics data that has been recorded over 7 months ag
 Manage and control collected data of individuals with this tool. New requests can be made to access individual data, delete individual data, or suppress individual data. For example, someone may contact you requesting their collected data be shared or deleted.
 
 ```{important}
-For a user that is suppressed, their data is pseudonymized (i.e. their activities are no longer associated with the user but are treated as anonymous data.) Therefore, the number of anonymous users may increase (e.g. a suppressed user who visits your site with two different devices would be considered as two anonymous individuals).
+A suppressed user's data is pseudonymized (i.e. their activities are no longer associated with the user but are treated as anonymous data). Therefore, the number of anonymous users may increase (e.g. a suppressed user who visits your site with two different devices would be considered as two anonymous individuals).
 
-When a user is unsuppressed, their data that was previously collected is restored to that user’s profile. But any activities during their suppression remains as anonymous data. 
+When a user is unsuppressed, data that was previously collected is restored to that user’s profile. But any activities during their suppression remain as anonymous data. 
 
-When a user’s data is deleted, all their historical data is permanently deleted. Later, if they are unsuppressed, they will appear as a new user with no prior data.
+When a user’s data is deleted, all historical data is permanently deleted. Later, if they are unsuppressed, they will appear as a new user with no prior data.
 ```
 
 To create a new request or view previous requests, click the *Manage* button.

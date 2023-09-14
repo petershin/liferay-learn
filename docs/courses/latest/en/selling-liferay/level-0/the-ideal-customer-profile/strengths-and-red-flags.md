@@ -101,7 +101,7 @@ It is important to remember that these lists are not exhaustive, and none of the
 
 Liferay carries out win-loss interviews with our sales teams, and sometimes also with prospects, so that a good understanding of where Liferay can (and can not) be successful can be obtained.
 
-Liferay Experience Cloud SaaS still a relatively new offering, with more being learned regularly about types of opportunities that are more successful than others. To date the following common elements have been observed:
+Liferay Experience Cloud SaaS is a relatively new offering, with more being learned regularly about types of opportunities that are more successful than others. To date the following common elements have been observed:
 
 * Public Sites
 * Commerce capabilities included

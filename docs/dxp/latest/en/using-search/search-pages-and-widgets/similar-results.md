@@ -13,19 +13,23 @@ This feature works [only with Elasticsearch](../installing-and-upgrading-a-searc
 
 The Similar Results widget shows search results similar to the *main asset* that's selected on the page.
 
-The concept of the main asset is important. Certain widgets in DXP display lists of assets: Asset Publisher, Blogs, Wiki, and more. If a user clicks one of the displayed assets and the widget shows its full content on the page, it's now the page's *main asset*. The Similar Results widget, if placed on the same page, shows a list of assets that are similar enough to be returned by a [*More Like This* query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html). The concept of a main asset is synonymous with Elasticsearch's [*input document*](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_how_it_works).
+The concept of the main asset is important. Certain widgets in DXP display lists of assets: Asset Publisher, blogs, wiki, and more. If a user clicks one of the displayed assets and the widget shows its full content on the page, it's now the page's *main asset*. The Similar Results widget, if placed on the same page, shows a list of assets that are similar enough to be returned by a [More Like This query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html). The concept of a main asset is synonymous with Elasticsearch's [input document](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_how_it_works).
 
 Similar Results uses the input document/main asset to construct a query that returns itself as the best match to the query, and then sends this disjunctive query (or `OR`) to the search engine to return matching result documents. This process is configurable: how to process the input document, how to select terms from the processed content, and how to form the query itself. See the Elasticsearch documentation for the [details](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_parameters_2).
 
-## Configuring the Similar Results Widget
+## Configuring the Search Results Widget
 
-1. Click the Add menu (![Add](../../images/icon-add-widget.png)) &rarr; Widgets &rarr; Search and drag the Similar Results widget onto the page.
+1. Create a [new page](../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) or [edit an existing one](../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md)
 
-1. To configure it, open the widget Options menu (![Options](../../images/icon-app-options.png)) and click *Configuration*.
+1. Click *Add* ( ![Add widget icon](../../images/icon-add-widget.png) ) to open the Fragments and Widgets panel.
+
+1. Under the Search category in the Widgets tab, drag the *Similar Results* widget to a place on the page.
+
+1. Click *Actions* ( ![Actions icon.](../../images/icon-actions.png) ) at the top-right corner of the Similar Results widget &rarr; *Configuration*.
 
     ![Configure the Similar Results widget's display settings.](./similar-results/images/01.png)
 
-The full list of available properties is found [below](#similar-results-configurations).
+See [Similar Results Configurations](#similar-results-configurations) for the full list of available properties.
 
 ## Using the Similar Results Widget
 
@@ -33,7 +37,7 @@ What happens when a Similar Results widget is placed on a page depends on the co
 
 *There are no similar results available.*
 
-When a main asset's document is detected, the widget shows similar results of the same asset type, displayed in a format dictated by the configured [Widget Template](#similar-results-widget-templates).
+When a main asset's document is detected, the widget shows similar results of the same asset type, displayed in a format dictated by the configured [widget template](#similar-results-widget-templates).
 
 Learn more by considering two use cases.
 
@@ -45,9 +49,9 @@ To configure this example,
 
 1. Create a widget page. Add an Asset Publisher widget and a Similar Results widget.
 
-    ![Page with an asset publisher widget and similar results widget.](similar-results/images/02.png)
+    ![Page with an Asset Publisher widget and Similar Results widget.](similar-results/images/02.png)
 
-1. Go to the Asset Publisher's configuration Display Settings and set Asset Link Behavior to *Show Full Content*.
+1. Go to the [Asset Publisher's configuration Display Settings](../../site-building/displaying-content/using-the-asset-publisher-widget/configuring-asset-publisher-display-settings.md) and set Asset Link Behavior to *Show Full Content*.
 
     This makes a selected asset display its full content inside the Asset Publisher. If you choose *View On New Page*, you're redirected to the page where the asset exists natively, making your Similar Results widget useless.
 
@@ -82,17 +86,17 @@ These widgets and accompanying assets can display a list of their assets and sel
 | Wiki                | Wiki Pages                                       |
 | Message Boards      | Message Boards Threads, Messages, and Categories |
 
-To configure an example for using Similar Results with Blogs,
+To configure an example for using Similar Results with blogs,
 
 1. Create a widget page. Add a Blogs widget and a Similar Results widget.
 
-1. Create multiple similar Blogs entries. Make sure they're similar enough that the Similar Results widget returns them as results.
+1. Create multiple similar blog entries. Make sure they're similar enough that the Similar Results widget returns them as results.
 
     To create assets that will be returned by the More Like This Query, pay attention to the content of the assets you create and to the [Similar Results widget configuration](#similar-results-configurations).  For testing, it's advisable to set the *Minimum Term Frequency* and the *Minimum Document Frequency* values both to `1`.
 
-1. Click on a Blogs post in the Blogs widget. The Blogs entry is displayed, and the Similar Results widget displays links to similar entries.
+1. Click on a blog post in the Blogs widget. The blog entry is displayed, and the Similar Results widget displays links to similar entries.
 
-1. Click one of the similar results. Its Blog content is now rendered on the Blogs widget on the current page.
+1. Click one of the similar results. Its blog content is now rendered on the Blogs widget on the current page.
 
     ![The similar results widget shows other similar blog posts.](similar-results/images/04.png)
 
@@ -114,36 +118,34 @@ The Card Layout:
 
 To write your own widget template for the Similar Results display,
 
-1. Open the Similar Results widget Options menu (![Options](../../images/icon-app-options.png)) and click *Configuration*.
+1. Open the Similar Results widget *Options* menu ( ![Options icon](../../images/icon-app-options.png) ) and click *Configuration*.
 
 1. Click *Manage Templates* to see the Widget Template screen.
 
-1. Click the Add button (![Add](../../images/icon-add.png)) to open the template creator palette.
+1. Click *Add* ( ![Add icon](../../images/icon-add.png) ) to open the template creator palette.
 
     In addition to the standard [widget template](https://help.liferay.com/hc/en-us/articles/360029132571-Styling-Widgets-with-Widget-Templates) variables, leverage the search-specific variables provided in the template editor.
 
 1. Design the template to your liking. See the [widget template](https://help.liferay.com/hc/en-us/articles/360029132571-Styling-Widgets-with-Widget-Templates) documentation for more details.
 
-The same template editor is accessible from the Widget Templates entry in the Site Menu's *Site Builder* section.
+The same template editor is accessible from the Widget Templates entry in the Site Menu's Site Builder section.
 
 ## Similar Results Configurations
 
-The first configuration options appear in a section called *Display Settings*.
-
-![Configure different options in the similar results configuration.](similar-results/images/01.png)
+The first configuration options appear in a section called Display Settings.
 
 **Display Template:** Choose the widget template to configure how similar results are displayed.
 
 **Maximum Item Display:** Set the maximum number of results to display in the widget.
 
-The *Advanced Configuration* section collects settings for tweaking the
+The Advanced Configuration section collects settings for tweaking the
 behavior of the widget. Many of these settings are used to configure the
 [More Like this Query for Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html).
 
 | Advanced Settings | Definition |
 | :---------------- | :----------|
-| Scope<br />{bdg-secondary}`Available 7.4 U17+`| Choose between This Site (default) and Everything to display similar results from the current site only (*This Site*) or expand the scope of the search to all sites (*Everything*). |
-| Link Behavior<br />{bdg-secondary}`Available 7.4 U18+` | Choose between Show Content (default) and View in Context to display a clicked result in the same display page (*Show Content*) or display it in its context (*View in Context*; for example, in its display widget on another page). |
+| Scope<br />{bdg-secondary}`Available 7.4 U17+`| Choose between This Site (default) and Everything to display similar results from the current site only (This Site) or expand the scope of the search to all sites (Everything). |
+| Link Behavior<br />{bdg-secondary}`Available 7.4 U18+` | Choose between Show Content (default) and View On New Page to display a clicked result in the same display page (Show Content) or display it in its context (View On New Page; for example, in its display widget on another page). |
 | Fields | Use a comma-separated list to specify keyword or text fields whose content is used to determine whether another asset matches the Main Asset. |
 | Maximum Query Terms | Set the maximum number of query terms to extract from the main asset. These are the terms used for matching search results to the main asset. Increasing this value enhances the relevance of returned results at the expense of execution speed. If left blank, this defaults to `25`. |
 | Minimum Term Frequency | Set the minimum threshold for the times a term must appear in the index to be used for matching similar results. If left blank, this defaults to `2`. |

@@ -42,9 +42,24 @@ Since Liferay Portal 7.3 GA2, you can configure permissions for widgets from a c
 When you create a page based on a [page template](../adding-pages/creating-a-page-template.md), permissions are copied too. Permissions for a master page are set in the [master page](../defining-headers-and-footers/managing-master-page-templates.md), not in the pages.
 ```
 
+## Export/Import Widgets on Content Pages
+Follow these steps to export or import a widget on a content page:
+
+1. Hover over the widget.
+1. Open *Actions* ( ![Actions menu icon](../../../images/icon-actions.png) ) and select *Export / Import*.
+1. Select the export or import tab to begin configuring the respective process.
+
+## Configuring Widget Configuration Templates on Content Pages
+Follow these steps to save a widget's configuration template on a content page:
+
+1. Hover over the widget.
+1. Open *Actions* ( ![Actions menu icon](../../../images/icon-actions.png) ) and select *Configuration Templates*.
+1. Click *Save Current Configuration as Template* to save the widget’s current settings.
+1. Enter a name for your template and click *Save*.
+
 ## Content Page Limitations for Widgets
 
-Although you can still access basic configuration options and permissions for widgets on Content Pages, there are still some options that are only available on Widget Pages:
+Although you can still access basic configuration options and permissions for widgets on content pages, there are still some options that are only available on widget pages:
 
 * *Nested applications*: Widgets within widgets are only supported on widget pages.
 * *Look and Feel Configuration*: On widget pages you can access the look and feel configuration menu through the  widget's actions ( ![Actions menu icon](../../../images/icon-actions.png) ), offering fine-grained control over its CSS. This is not available for widgets on content pages, since the look and feel of your content is defined in the theme or by using fragments.

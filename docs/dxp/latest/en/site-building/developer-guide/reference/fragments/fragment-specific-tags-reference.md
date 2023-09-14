@@ -314,7 +314,7 @@ Fragments with the `localizable` attribute that do not specify a custom configur
 
 ## Using Date Fragments
 
-Customizing date formats to represent local formats can be a challenge in many contexts. You can customize and localize date formats using date fragments by including the `data-lfr-editable-id="date-time"` and `data-lfr-editable-type="date-time"` attributes in the fragment. `data-lfr-editable-id` must be a unique ID, like this example:
+Conforming date formats a locality can be a challenge in many contexts. You can customize and localize date formats using date fragments by including the `data-lfr-editable-id="date-time"` and `data-lfr-editable-type="date-time"` attributes in the fragment. `data-lfr-editable-id` must be a unique ID, like this example:
 
 ```html
 <div data-lfr-editable-type="date-time" data-lfr-editable-id="date-time">
@@ -324,7 +324,7 @@ Customizing date formats to represent local formats can be a challenge in many c
 
 ### Date Formats
 
-You can choose the most common date formats out-of-the-box or customize your date format following [Oracle's date format rules](https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html).
+You can choose the most common date formats out-of-the-box or customize your date format following [`SimpleDateFormat`](https://devdocs.io/openjdk~8/java/text/simpledateformat).
 
 There are four out-of-the-box options available:
 
@@ -335,7 +335,7 @@ There are four out-of-the-box options available:
 | YY/MM/DD | 23/08/07  |
 | DD/MM/YYYY | 07/08/2023  |
 
-If you choose to customize your date format, you can include different date and time patterns (e.g. era designator, time zone, and day name in the week).
+If you customize your date format, you can include different date and time patterns (e.g. era designator, time zone, and day name in the week).
 
 Here are some examples:
 

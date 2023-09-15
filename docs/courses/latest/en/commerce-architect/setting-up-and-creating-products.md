@@ -11,7 +11,9 @@ uuid: 55c921fc-97c5-4f6a-b7ae-60fbea19cbd1
 
 Kyle and Damian need your help to create the required channels, catalogs, and products for the B2B and B2C stores. Kyle, the administrator, is in charge of creating the channels, while Damian, the category manager, is responsible for creating the catalogs, products, configuring their prices, and adding inventory.
 
-![The relation between channels, catalogs, products, and warehouses.](./images/01.png)
+![The relation between channels, catalogs, products, and warehouses.](./setting-up-and-creating-products/images/01.png)
+
+<!-- The diagram makes sense, and is a good start! But the reader could still remain confused about channels, because you put all the products in the channel. It would be better if you used the concrete example you're about to create: a catalog containing all the products, including bulk products for distributors, and two channels, one containing consumer-packaged products for the public site, and one containing distributor products for the B2B site. That would illustrate not only what channels are, but how you plan to use them in this concrete example. Also, color in the diagram would be nice. :-) -Rich --> 
 
 **Channels**: Channels are scoped to a Liferay instance. A channel is an avenue for selling products, such as a customer portal, a B2B marketplace, or back office phone sales. To sell products on a Liferay site, you must first link it to a channel. 
 
@@ -21,9 +23,11 @@ Kyle and Damian need your help to create the required channels, catalogs, and pr
 
 **Warehouses**: Warehouses in Liferay represent physical locations that store product inventory. 
 
+<!-- Remember, this is your only opportunity to teach concepts. Tell readers what they'll be doing: setting up catalogs and products for two different stores, one for consumers, and one for distributors (which is what your outline suggests at a high level). Don't focus solely on the features, like channels, etc. Focus on what you're going to build. I can help you with this if it's not coming across clearly. -Rich -->
+
 After completing this module, you'll have
 
-* A product catalog containing different products  
+* A product catalog containing different products
 * Channels configured and linked to both sites
 * Payment methods and shipping methods set up
 * Warehouses that serve both online stores

@@ -9,7 +9,7 @@ The blog entry editor provides context appropriate editing tools for formatting 
 
 The Text view is a WYSIWYG editor that lets you enter and edit text and other types of content.
 
-To style or format text in the _Content_ area, select the text. A toolbar appears above the text that contains the following options:
+To style or format text in the content area, select the text. A toolbar appears above the text that contains the following options:
 
 ![Formatting elements](./blog-entry-editor-reference/images/01.png)
 
@@ -21,7 +21,7 @@ To style or format text in the _Content_ area, select the text. A toolbar appear
 | Link | Link the selected text to a specific URL, or to an item in the portal. |
 | Twitter | Generates a link to tweet the selected text. |
 
-When the cursor hovers in the entry's content area, the Add icon (+) appears. Clicking the Add icon shows controls for inserting an image, video, table, or horizontal line (![Controls](../../images/icon-content-insert-controls.png)).
+When the cursor hovers in the entry's content area, the add icon (+) appears. Clicking the Add icon shows controls for inserting an image, video, table, or horizontal line ( ![Controls](../../images/icon-content-insert-controls.png) ).
 
 ![Add additional elements](./blog-entry-editor-reference/images/02.png)
 
@@ -34,7 +34,7 @@ When the cursor hovers in the entry's content area, the Add icon (+) appears. Cl
 
 ## Using the Editor's Code View
 
-To switch to code view, click the the Source icon (</>) that appears when you place your cursor in the Content area. The following buttons exist at the top-right of code view:
+To switch to code view, click the the source icon (</>) that appears when you place your cursor in the content area. The following buttons exist at the top-right of code view:
 
 ![Using the Code View](./blog-entry-editor-reference/images/03.png)
 

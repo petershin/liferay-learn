@@ -7,16 +7,15 @@ uuid: fd004b31-bf92-45da-a5af-8e9b98b2a7ea
 
 ## Blog Entry Permissions
 
-Navigate to the _Blogs_ widget. Next to a blog entry, click _Actions_ (![Actions](../../images/icon-actions.png)) then _Permissions_.
+Navigate to the Blogs widget. Next to a blog entry, click _Actions_ ( ![Actions](../../images/icon-actions.png) ) then _Permissions_.
 
 ![Blog Entry Permissions](./blog-permissions-reference/images/01.png)
 
 | Permission | Description |
 | :--- | :--- |
-| Update Discussion | Edit another user's comment on the blog entry. |
-| Delete | Move the blog entry to the [Recycle Bin](../recycle-bin/recycle-bin-overview.md). |
+| Add Display Template | Add a display template to the blog entry |
 | Permissions | View and modify the blog entry's permissions. |
-| Delete Discussion | Delete any comments on the blog entry. |
-| Update | Edit and modify the blog entry. |
-| View | View the blog entry. |
-| Add Discussion | Comment on the blog entry. |
+| Preferences | View and modify the blog entry's preferences. |
+| Configuration | Accesse the blog entry's Configuration menu  |
+| View |View the blog entry. |
+| Add to Page | Add a blog entry to a site page |

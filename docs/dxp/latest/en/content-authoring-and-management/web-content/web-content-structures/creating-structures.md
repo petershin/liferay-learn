@@ -6,11 +6,17 @@ uuid: ce4f21a1-f104-4587-aaff-2d7af1b10139
 Follow these steps to create a structure:
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content & Data* &rarr; *Web Content*.
+
 1. Select the *Structures* tab.
+
 1. Click *Add* ( ![Add icon](../../../images/icon-add.png) ) to create a new structure.
+
 1. Enter the title of your new structure.
+
 1. Drag and drop the [available fields](#structure-fields) onto the structure and [configure their settings](./configuring-structure-fields.md#configurable-settings) to create the structure.
+
 1. Optionally, add a *Description* for your structure.
+
 1. Click *Save*.
 
 ![When creating a new structure, you can drag fields from the palette and drop them on the canvas.](./creating-structures/images/01.png)
@@ -47,7 +53,7 @@ If you upload an image from your computer, the image is only available for that 
 
 **Link to Page:** A selector to include a link to another page in the same Site.
 
-**Multiple Selection:** A list of options to choose from using a check-box list. This field allows multiple selection.
+**Multiple Selection:** A list of options to choose from using a checkbox list. This field allows multiple selection.
 
 **Numeric:** An input that accepts integer or decimal numbers based on the selected numeric type. Non-numeric input is not accepted.
 
@@ -79,7 +85,7 @@ You can add a translation for the structure, either while creating it or later.
 1. Click the default locale again and select the new locale to begin translating.
 1. Translate as much of the Structure's text as you'd like, then click *Save*.
 
-To delete a translation, go back to the manage translations modal and click *Trash* ( ![Trash icon](../../../images/icon-trash.png) ).
+To delete a translation, go back to the Manage Translations modal and click *Trash* ( ![Trash icon](../../../images/icon-trash.png) ).
 
 To edit a translation, select the translation using the language selector, make any changes, and click *Save*.
 

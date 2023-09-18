@@ -7,7 +7,7 @@
 ## ID管理
 
 * [ネイティブユーザー管理](https://learn.liferay.com/w/dxp/users-and-permissions/users)
-* [SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml)、OIDC、[LDAP](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)のような[外部IdM](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso)との統合
+* [SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) 、OIDC、 [LDAP](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) のような [外部IdM](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) との統合
 
 ## アクセス管理
 

@@ -4,7 +4,7 @@
 
 Liferayには、こうした企業がデジタルエクスペリエンスソリューションを実現できるよう支援してきた豊富な実績があります。 このエクスペリエンスは、業界特有のニーズをサポートする強力な機能セットに反映されています。
 
-Liferayのエネルギー産業および公益事業の事例は[こちら](https://www.liferay.com/resources/case-studies?industries=energy-utilities)。
+Liferayのエネルギー産業および公益事業の事例は [こちら](https://www.liferay.com/resources/case-studies?industries=energy-utilities) 。
 
 ## エネルギー産業 & 公益事業における主な課題
 

@@ -4,7 +4,7 @@ Liferayは長年にわたり、政府のデジタルトランスフォーメー�
 
 また、市民の期待に応えるデジタルエクスペリエンスを提供することで、政府機関の職務遂行を改善できるよう支援します。 Liferayプラットフォームにて、機関が、適切な情報を適切な人に適切なタイミングで提供するソリューションを構築するために必要なすべてを提供します。
 
-Liferayの政府関連の事例は[こちら](https://www.liferay.com/resources/case-studies?industries=government)。
+Liferayの政府関連の事例は [こちら](https://www.liferay.com/resources/case-studies?industries=government) 。
 
 ## 政府 & 公共部門における主な課題
 

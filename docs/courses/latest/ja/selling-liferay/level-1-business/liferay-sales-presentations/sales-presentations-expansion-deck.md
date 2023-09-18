@@ -7,8 +7,8 @@
 * インダストリー・デッキとホリゾンタル・ソリューション・デッキは近日中に追加予定です。
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) からダウンロードしてください。
 ```
 
 ## シナリオ2：ウィジェットメーカー
@@ -64,7 +64,7 @@
   * サプライヤー・ポータル
   * 成長する収益
   * ヘッドレス／コンポーザブル／MACHアライアンス
-* 金融サービス
+* 財務サービス
   * ベースデッキ
 
 Liferayの社員向けには、 [Alexandria](https://sales.liferay.com) のSales Decksセクションにすべてのデッキが用意されている。

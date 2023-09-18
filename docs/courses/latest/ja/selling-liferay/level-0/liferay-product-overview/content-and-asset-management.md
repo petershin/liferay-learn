@@ -14,7 +14,7 @@ Liferayのコンテンツおよびアセット管理機能により、実務担�
 ## ドキュメントとメディア
 
 * [ドキュメント、画像、動画の保存](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
-* [Google](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration)や[マイクロソフト](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/sharepoint-integration)との統合
+* [Google](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) や [マイクロソフト](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/sharepoint-integration) との統合
 
 ## アセットライブラリ
 

@@ -2,7 +2,7 @@
 
 Liferayは、保険会社向けに顧客中心のイノベーションのバリューチェーンを構築してきた豊富な経験があり、それがこの業界で注目される理由のひとつとなっています。 Liferayは、顧客、代理店、従業員をデジタルエクスペリエンスの中心に据えてきたという実績があります。
 
-Liferayの保険業界における事例は[こちら](https://www.liferay.com/resources/case-studies?industries=insurance)。
+Liferayの保険業界における事例は [こちら](https://www.liferay.com/resources/case-studies?industries=insurance) 。
 
 ## 保険の主な課題
 

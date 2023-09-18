@@ -4,7 +4,7 @@
 
 金融サービスの顧客は通常、従来のテクノロジーを好んで選択します。 IT部門は従来型であっても、ビジネスユーザーは最新かつパーソナライズされたオムニチャネルエクスペリエンスを期待しています。
 
-Liferayの財務サービスの事例は[こちら](https://www.liferay.com/resources/case-studies?industries=financial-services)。
+Liferayの財務サービスの事例は [こちら](https://www.liferay.com/resources/case-studies?industries=financial-services) 。
 
 ## 財務サービスの主な課題
 

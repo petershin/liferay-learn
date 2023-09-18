@@ -5,7 +5,7 @@
 * Liferayは、Liferay DXPを含む3つのデプロイアプローチを提供します：
   * Liferayエクスペリエンスクラウド（SaaS）
   * Liferayエクスペリエンスクラウドセルフマネージド（PaaS）
-  * DXPセルフホスト
+  * DXP Self-Hosted
 * Liferay Experience Cloud SM はインスタンスベースのモデルを採用しています。
 * プレパッケージド・バンドルが最もお得
 * ライフェエクスペリエンスクラウドSMの新価格モデルを検討中
@@ -17,8 +17,8 @@
 LiferayのPaaSでは、DXPのすべての機能が含まれており、DXP 7.4ではコマースとアナリティクスの機能も含まれています。 Liferayはまた、インフラストラクチャーとプラットフォームサービスを提供し、管理しますが、アップグレード、アップデート、パッチ、セキュリティ・ホットフィックス、ソフトウェアのトラブルシューティング、アプリケーションの配信など、その他のほとんどの活動はお客様が責任を負うことになります。
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/sa1-2b-liferay-pricing-paas) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-2b-liferay-pricing-paas-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-2b-liferay-pricing-paas) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-2b-liferay-pricing-paas-pdf) からダウンロードしてください。
 ```
 
 ## Liferay Experience Cloud SM 価格の概要

@@ -2,7 +2,7 @@
 
 ヘルスケア企業は、プロバイダーやユーザー向けにカスタマイズ可能で拡張性の高いソリューションを提供し、デジタルトランスフォーメーションの要求に応えられるビジネスパートナーを求めています。
 
-ヘルスケア分野におけるLiferayの事例は[こちら](https://www.liferay.com/resources/case-studies?industries=healthcare)。
+ヘルスケア分野におけるLiferayの事例は [こちら](https://www.liferay.com/resources/case-studies?industries=healthcare) 。
 
 ## ヘルスケアにおける主な課題
 

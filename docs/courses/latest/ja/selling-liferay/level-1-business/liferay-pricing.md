@@ -1,6 +1,8 @@
 ---
 toc:
   - ./liferay-pricing/liferay-pricing-saas.md
+  - ./liferay-pricing/liferay-pricing-saas-malus-apvs.md
+  - ./liferay-pricing/liferay-pricing-saas-addons-upcoming.md
   - ./liferay-pricing/liferay-pricing-paas.md
   - ./liferay-pricing/liferay-pricing-self-hosted.md
 ---
@@ -11,7 +13,7 @@ toc:
 * Liferayは、Liferay DXPを含む3つのデプロイアプローチを提供します：
   * Liferayエクスペリエンスクラウド（SaaS）
   * Liferayエクスペリエンスクラウドセルフマネージド（PaaS）
-  * DXPセルフホスト
+  * DXP Self-Hosted
 * それぞれの展開方法には、独自の価格モデルがあります。
 * パートナーとの共同販売は、Liferayの販売戦略の重要な要素です。
 * 価格設定モデルを理解することは、機会に対するボールパーク・プライシングを作成するのに役立ちます。
@@ -25,8 +27,8 @@ toc:
 詳細ではあるが、これはまだ **価格の概要** 。 パートナーはLiferayチームの適切なメンバーと協力し、価格設定の詳細を確認してください。 Liferayの社員は、関連するセールスマネージャーと協力してください。
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) からダウンロードしてください。
 ```
 
 ## パートナーとの共同販売
@@ -50,7 +52,7 @@ Liferayは、共同マーケティング、共同デリバリー、共同販売�
 
 なぜなら、この段階では顧客のニーズが十分に理解されておらず、この理解なくして正しい価格をつけることは不可能だからである。
 
-購入者が製品の **価値** を理解しておらず、価格の提示は必要な **投資** ではなく、 **費用** として解釈されます。
+もし買い手が製品の **価値** を理解せず、価格を **コスト** として解釈し、 **投資** として解釈しないのであれば、買い手はそれを行う必要がある。
 
 すべての顧客の質問に即座に答えられることは期待されていませんし、価格を即座に提示する必要もありません。 より重要なのは、顧客のニーズを理解することであり、顧客が特定の質問をする理由を理解することである。
 
@@ -58,7 +60,7 @@ Liferayは、共同マーケティング、共同デリバリー、共同販売�
 
 しかし、真剣な顧客が見積もり価格を要求した場合、それを提示することは可能でなければならない。
 
-投資能力の低い見込み客に見積もり価格を提示することも、早期失格の戦術としては有効である。
+投資能力の低い見込み客に見積もり価格を提示することも、早期の失格戦術としては有効である。
 
 ### ディスカバリーに関する基本的な質問
 
@@ -71,7 +73,7 @@ Liferayは、共同マーケティング、共同デリバリー、共同販売�
 * 保管量、トランザクション数、アクティビティの種類
 * サポート要件
 * ミッションの重要性
-* その他
+* など。
 
 **ソリューション ユースケース**
 
@@ -138,13 +140,14 @@ SaaSであることが不可能なシナリオも考えられる：
 
 :::{grid-item-card} Liferay Pricing - SaaS
 :link: ./liferay-pricing/liferay-pricing-saas.md
-:::
 
-:::{grid-item-card} Liferay Pricing - PaaS
+:::  
+::：{grid-item-card} Liferay Pricing - PaaS  
 :link: ./liferay-pricing/liferay-pricing-paas.md
-:::
 
-:::{grid-item-card} Liferay Pricing - Self-Hosted
+:::  
+::：{grid-item-card} Liferay Pricing - Self-Hosted  
 :link: ./liferay-pricing/liferay-pricing-self-hosted.md
+
 :::
 ::::

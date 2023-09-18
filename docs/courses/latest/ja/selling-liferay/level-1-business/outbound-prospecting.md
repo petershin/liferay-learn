@@ -31,8 +31,8 @@ toc:
 * 効果的なカデンツの習得
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/sa1-3-outbound-prospecting-101-for-liferay-opportunities) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-3-outbound-prospecting-101-for-liferay-opportunities-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-3-outbound-prospecting-101-for-liferay-opportunities) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-3-outbound-prospecting-101-for-liferay-opportunities-pdf) からダウンロードしてください。
 ```
 
 ## アウトバウンド）プロスペクティングの目的
@@ -83,21 +83,22 @@ toc:
 
 :::{grid-item-card} 電子メール
 :link: ./outbound-prospecting/email.md
-:::
 
-:::{grid-item-card} 電話  
+:::
+::：{grid-item-card} 電話
 :link: ./outbound-prospecting/phone.md
-:::
 
-:::{grid-item-card} データエンリッチメント  
+:::
+::：{grid-item-card} データエンリッチメント
 :link: ./outbound-prospecting/data-enrichment.md
-:::
 
-:::{grid-item-card} ソーシャルメディア  
+:::
+::：{grid-item-card} ソーシャルメディア
 :link: ./outbound-prospecting/social-media.md
-:::
 
-:::{grid-item-card} 永続性 & 測定  
+:::
+::：{grid-item-card} 永続性 & 測定
 :link: ./outbound-prospecting/persistence-measurement.md
+
 :::
 ::::

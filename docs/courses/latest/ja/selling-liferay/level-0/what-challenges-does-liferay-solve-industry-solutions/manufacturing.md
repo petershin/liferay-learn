@@ -2,7 +2,7 @@
 
 製造業は、強く、国際的かつ動的な競争環境を有する複雑なB2Bのコンテキストで事業を展開しているため、Liferayにとって理想的な業界です。 流通から販売に至るまで、製品を生み出すバリューチェーンには多くの関係者がいるため、テクノロジーには効率性を向上させ、プロセスを強化する多くのチャンスがあります。
 
-さらに、Liferayの多くの有名メーカーとの豊富な経験は、リファレンスや [ケーススタディ](https://www.liferay.com/resources/case-studies?industries=manufacturing)として利用できます。
+さらに、Liferayの多くの有名メーカーとの豊富な経験は、リファレンスや [ケーススタディ](https://www.liferay.com/resources/case-studies?industries=manufacturing) として利用できます。
 
 ## 製造業界の主な課題
 

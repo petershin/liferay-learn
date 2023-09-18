@@ -19,7 +19,7 @@ toc:
   * ヘルスケア
   * エネルギー産業と公益事業
 * Liferayは、ほぼすべての業界で使用できる柔軟性を備えています。
-* 各業界には、多くの[水平ソリューション](./what-challenges-does-liferay-solve-horizontal-solutions)があります。
+* 各業界には、多くの [水平ソリューション](./what-challenges-does-liferay-solve-horizontal-solutions) があります。
 
 ## 背景
 
@@ -28,8 +28,8 @@ toc:
 これらの業界は最も一般的な例ですが、Liferayの強みの1つは、ほぼすべての業界で使用できること、またその使用実績もあるということです。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-5b-what-challenges-do-we-solve-industry-solutions) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions-pdf)からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-5b-what-challenges-do-we-solve-industry-solutions) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions-pdf) からダウンロードしてください。
 ```
 
 ## 業界別ソリューション

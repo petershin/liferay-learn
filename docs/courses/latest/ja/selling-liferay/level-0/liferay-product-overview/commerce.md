@@ -9,7 +9,7 @@
 * [商品仕様](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/specifications)
 * [コマースBOM](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram)
 * [商品画像](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/product-images)
-* [プロモーション](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-promotions)および[割引](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-discounts)
+* [プロモーション](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-promotions) および [割引](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-discounts)
 * [購読リスト](https://learn.liferay.com/w/commerce/order-management/subscriptions)
 * [ERP/PIMの統合](https://learn.liferay.com/w/commerce/add-ons-and-connectors)
 

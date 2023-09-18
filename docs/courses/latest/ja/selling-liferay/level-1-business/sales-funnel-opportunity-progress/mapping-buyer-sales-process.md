@@ -8,8 +8,8 @@
 * 販売プロセスの各段階には、複数のツールとステップがある。
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress-pdf) からダウンロードしてください。
 ```
 
 ## 購買フェーズのマッピング & 営業プロセス
@@ -74,7 +74,7 @@
 
 **コミットメント**
 
-買い手がコミットする必要もある。 たいていの場合、交渉は1つの業者とのみスタートし、他の業者はまだ優先されないことを知らされていない。
+買い手がコミットする必要もある。 たいていの場合、交渉は1社だけから始まるが、他の業者はまだ優先されないと知らされていない。
 
 この段階で見込み客が黙り込んでしまったら、他の業者との交渉で忙しい証拠だ。
 
@@ -131,7 +131,7 @@ SQLとMQLの生成をサポートするために、以下を使用すること�
 
 評価段階は、買い手と関係者が最良の選択肢と考えるものを決定した時点で終了する。
 
-2 つのベンダーとの交渉は買い手にとって時間がかかるため、最終段階に進むのは通常は 1 つのベンダーです。 一部の市場および状況では、交渉段階に 2 つのベンダーが存在する可能性があります。
+買い手にとって、2つの業者と交渉するのは時間のかかることであり、最終段階に進むのは通常1つの業者である。市場によっては、また状況によっては、交渉段階でベンダーが2社になることもある。
 
 しかし、このように見える場合は、実際にはコミットメント・フェーズが始まっていないことを意味することが多いので注意が必要だ。
 

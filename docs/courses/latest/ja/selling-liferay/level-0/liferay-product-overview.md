@@ -25,6 +25,6 @@ toc:
 このモジュールを終えるころには、Liferay DXPの主な機能領域の概要を把握できるようになります。 このレッスンでは、まず Liferay DXPの[デザインシステムとエクスペリエンスの管理](./liferay-product-overview/design-systems-and-experience-management.md)の確認から開始します。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-2b-liferay-overview) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-2b-liferay-overview-pdf)からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-2b-liferay-overview) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-2b-liferay-overview-pdf) からダウンロードしてください。
 ```

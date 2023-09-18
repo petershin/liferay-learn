@@ -1,9 +1,3 @@
----
-toc:
-  - ./liferay-pricing/liferay-pricing-saas-introduction.md
-  - ./liferay-pricing/liferay-pricing-saas-malus-apvs.md
-  - ./liferay-pricing/liferay-pricing-saas-addons-upcoming.md
----
 # Liferay Experience Cloud SaaSの価格 - 導入とプラン
 
 **概要**
@@ -17,8 +11,8 @@ toc:
 * ボトムアップの成長を支えるフリー/ホビー・プランが提案される
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) からダウンロードしてください。
 ```
 
 ## 2023年価格改定

@@ -13,8 +13,8 @@
 最後に、非常に高いレベルで、契約アプローチにおけるEULA（エンドユーザーライセンス契約）の役割を取り上げている。
 
 ```{note}
-* このモジュールのライブワークショップの [recording](https://learn.liferay.com/web/guest/d/sa1-7-contracts) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-7-contracts-pdf) をダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-7-contracts) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-7-contracts-pdf) からダウンロードしてください。
 ```
 
 ## ライフレイ・エンタープライズサービス契約
@@ -24,7 +24,7 @@ Liferay Enterprise Services Agreement (ESA)はLiferayの顧客契約です。
 ESAは3つの部分から構成されている：
 
 1. 基本合意
-2. 各 Liferay サービス提供タイプのサービス付録
+2. Liferay Services の各オファリングタイプのサービスアペンディックス
 3. オーダーフォーム
 
 これらの部分を合わせると、顧客とベンダーであるLiferayとの間の商取引関係の契約全体が形成されます。
@@ -72,7 +72,7 @@ ESAは3つの部分から構成されている：
 
 このため、発注されないサービスの付録を確認したり、添付したりする必要はない。
 
-これらの各要素とその構成は、基本契約書第2.1節で契約書自体に説明されている。
+これらの各要素とその構成は、基本契約書第2.1節の契約書自体に説明されている。
 
 ### エンドユーザー使用許諾契約書
 
@@ -88,4 +88,4 @@ Liferayには、ソフトウェアライセンス料を請求する商業的な�
 
 [技術営業職レベル1](../level-1-technical.md) に興味があるかもしれません。  そうでなければ、ただリラックスすればいい！
 
-[Liferayの販売に戻る](../../selling-liferay.md)
+[Liferay販売に戻る](../../selling-liferay.md)

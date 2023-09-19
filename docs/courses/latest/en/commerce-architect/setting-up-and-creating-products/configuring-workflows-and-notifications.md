@@ -5,14 +5,6 @@ uuid: d3f40144-866d-4a66-af04-7d482e06c8c7
 
 Preston Palmer, the order manager, wants to review and approve placed by Robert Read, the buyer for Almighty Syrup, for budget reasons. Delectable Bonsai’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. This workflow helps when there’s a budget allocated for buying and requires approvals.
 
-```{note}
-There's also a seller order acceptance workflow which when enabled requires all orders to go through one step of approval before they’re **accepted**. This is useful when Delectable Bonsai receives customer orders from Almighty Syrup or Marvelous Markets and requires them to be approved before they're accepted. 
-
-The Single Approver (Version 1) workflow is the only type of workflow available out-of-the-box, but you can customize it further in the workflow editor. Read [Introduction to Order Workflows](https://learn.liferay.com/w/commerce/order-management/order-workflows/introduction-to-order-workflows) for more information about workflows. 
-```
-
-<!-- Again, we don't want admonitions in here at all. Asides like this are unnecessary in the training. If this is going to be used later, use it later; it's extra information now. -Rich -->
-
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Channels*. 
 
 1. Select the B2B channel created earlier. 

@@ -3,49 +3,49 @@ uuid: c3705221-e68c-4c52-99aa-617e5b365956
 ---
 # Using the Navigation Menus Application
 
-The Navigation Menus application is used to create custom menus for Site Pages and content. With it, you can determine which elements are included in a menu, and how they're organized. Once created, you can display your custom menus using [Page Fragments](../creating-pages/page-fragments-and-widgets/using-fragments.md) or [Widgets](../creating-pages/using-widget-pages/adding-widgets-to-a-page.md).
+The Navigation Menus application is used to create custom menus for site pages and content. With it, you can determine which elements are included in a menu, and how they're organized. Once created, you can display your custom menus using [page fragments](../creating-pages/page-fragments-and-widgets/using-fragments.md) or [widgets](../creating-pages/using-widget-pages/adding-widgets-to-a-page.md).
 
 ```{note}
-For Liferay 7.3 and earlier, Pages are the only entity that can be added to a Navigation Menu. As of Liferay 7.4 U1+, Navigation Menus support adding additional entity types to a Navigation Menu.
+For Liferay 7.3 and earlier, pages are the only entity that can be added to a navigation menu. As of Liferay 7.4 U1+, navigation menus support adding additional entity types to a navigation menu.
 ```
 
-![Creating Custom Menus for Site Pages and content](./using-the-navigation-menus-application/images/01.png)
+![Creating custom menus for site pages and content.](./using-the-navigation-menus-application/images/01.png)
 
 ```{tip}
-On Liferay 7.3+, you can use Custom Fields to add more information to items in Navigation Menus (under *Site Navigation Menu Item* in the *Custom Fields* menu). You can then use this information with Application Display Templates to further customize your navigation menus.
+On Liferay 7.3+, you can use custom fields to add more information to items in navigation menus (under *Site Navigation Menu Item* in the *Custom Fields* menu). You can then use this information with Application Display Templates to further customize your navigation menus.
 ```
 
 ## Creating Navigation Menus
 
 Follow these steps to create a Navigation Menu:
 
-1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) and go to _Site Builder_ &rarr; _Navigation Menus_.
+1. Open the *Site Menu* ( ![Site menu](../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Navigation Menus*.
 
-    ![Access Navigation Menus in the Site Menu.](./using-the-navigation-menus-application/images/02.png)
+    ![Access navigation menus in the site menu.](./using-the-navigation-menus-application/images/02.png)
 
-1. Click the _Add_ button (![Add Button](../../images/icon-add.png)).
+1. Click *Add* ( ![Add button](../../images/icon-add.png) ).
 
-1. Enter a _name_ for the Navigation Menu.
+1. Enter a *Name* for the navigation menu.
 
-    ![Create a Navigation Menu.](./using-the-navigation-menus-application/images/03.png)
+    ![Create a navigation menu.](./using-the-navigation-menus-application/images/03.png)
 
-1. Click _Save_.
+1. Click *Save*.
 
-This redirects you to the new custom menu where you can begin adding elements (e.g., Pages, Documents, Categories).
+This redirects you to the new custom menu where you can begin adding elements (e.g., pages, documents, and categories).
 
 ### Adding New Elements to a Navigation Menu
 
-While editing a Navigation Menu, follow these steps to add an element to the Navigation Menu:
+While editing a navigation menu, follow these steps to add an element to the navigation menu:
 
-1. Click the _Add_ button (![Add Button](../../images/icon-add.png)).
+1. Click *Add* ( ![Add button](../../images/icon-add.png) ).
 
-1. Select the type of element you want to add to the menu (e.g., Page, Document, Category). This opens an item selector window.
+1. Select the type of element you want to add to the menu (e.g., page, document, or category). This opens an item selector window.
 
     You can add multiple elements to the same menu.
 
    ![Select the type of element you want to add to the menu.](./using-the-navigation-menus-application/images/04.png)
 
-1. Select the elements you want to add and click _Select_. 
+1. Select the elements you want to add and click *Select*.
 
     You can select multiple elements.
 
@@ -53,23 +53,23 @@ While editing a Navigation Menu, follow these steps to add an element to the Nav
     When the added element does not have an [associated display page](../displaying-content/using-display-page-templates.md), Liferay shows a warning. Items without a display page do not have links and are hidden from menus.
     ```
 
-    ![When the added element does not have an associated display page](./using-the-navigation-menus-application/images/05.png)
+    ![When the added element does not have an associated display page.](./using-the-navigation-menus-application/images/05.png)
 
 1. Optionally, drag and drop menu elements to reorganize them or arrange them in a hierarchy.
 
     ```{tip}
-    In addition to structuring menu elements into a hierarchy, you can also use the _Submenu_ type to add subsections to a menu. If you delete an element with child elements, the child elements are also removed.
+    In addition to structuring menu elements into a hierarchy, you can also use the *Submenu* type to add subsections to a menu. If you delete an element with child elements, the child elements are also removed.
     ```
 
-    ![Adding Elements to Navigation Menus](./using-the-navigation-menus-application/images/06.png)
+    ![Adding elements to navigation menus.](./using-the-navigation-menus-application/images/06.png)
 
-1. Optionally, define custom display names for each of your menu elements. You can define custom names for page elements, or for any content type elements that use Display Pages (including blog entries, web content articles, documents, Vocabularies, and Categories).
+1. Optionally, define custom display names for each of your menu elements. You can define custom names for page elements, or for any content type elements that use display pages (including blog entries, web content articles, documents, vocabularies, and categories).
 
     ```{note}
-    You can only define custom display names for content type elements using Display Pages on Liferay 7.4 versions U9+ or GA13+.
+    You can only define custom display names for content type elements using display pages on Liferay 7.4 versions U9+ or GA13+.
     ```
 
-    To do this, select a menu element, check *Use Custom Name* in the side panel, enter a name, and click *Save*.  
+    To do this, select a menu element, check *Use Custom Name* in the side panel, enter a name, and click *Save*.
 
     ![Customize the display of menu elements.](./using-the-navigation-menus-application/images/07.png)
 
@@ -77,53 +77,53 @@ All changes to the menu are saved.
 
 ### Using Dynamic Vocabulary Elements
 
-[Vocabulary Navigation Menu elements](./navigation-menu-element-types.md#vocabularies) are dynamic; when one is displayed on a page, it adds all of the Categories and Subcategories in its current hierarchy instead of a single element. Any changes to the Vocabulary's contents are automatically reflected in the menu.
+[Vocabulary navigation menu elements](./navigation-menu-element-types.md#vocabularies) are dynamic; when one is displayed on a page, it adds all of the categories and subcategories in its current hierarchy instead of a single element. Any changes to the vocabulary's contents are automatically reflected in the menu.
 
-Dynamic Vocabulary elements allow you to quickly and easily update your Navigation Menus when you have changing hierarchies of items. For example, you can use Categories to represent types of products in a [Catalog](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html), and then let any updates to your Categories automatically update any menus using the Vocabulary. Then, depending on the [Display Page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) used for those Categories, any changes to the categorization may automatically reflect in the pages and the Navigation Menu.
+Dynamic vocabulary elements allow you to quickly and easily update your navigation menus when you have changing hierarchies of items. For example, you can use categories to represent types of products in a [catalog](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html), and then let any updates to your categories automatically update any menus using the vocabulary. Then, depending on the [display page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) used for those categories, any changes to the categorization may automatically reflect in the pages and the navigation menu.
 
-![Dynamic Vocabulary elements automatically update to reflect their hierarchy of Categories in your Navigation Menus.](./using-the-navigation-menus-application/images/08.png)
+![Dynamic vocabulary elements automatically update to reflect their hierarchy of categories in your navigation menus.](./using-the-navigation-menus-application/images/08.png)
 
 ### Previewing Navigation Menus
 
-You can a preview a Navigation Menu while you are editing it to see how it looks when displayed on a page. Click the eye icon (![Eye icon](../../images/icon-view.png)) to open a popup window with a preview of the Navigation Menu.
+You can a preview a navigation menu while you are editing it to see how it looks when displayed on a page. Click the *Eye icon* ( ![Eye icon](../../images/icon-view.png) ) to open a popup window with a preview of the navigation menu.
 
-![Preview a Navigation Menu to see how it looks when displayed on a page.](./using-the-navigation-menus-application/images/09.png)
+![Preview a navigation menu to see how it looks when displayed on a page.](./using-the-navigation-menus-application/images/09.png)
 
-You can also select different options from the drop-down menu to see different styles the menu can be displayed in, such as the *List* or *Tabs* styles.
+You can also select different options from the drop-down menu to see different styles the menu can be displayed in, such as the List or Tabs styles.
 
 ## Using Menus During Page Creation
 
-When Users are creating Site Pages, they are shown a list of all existing Navigation Menus. You can modify this behavior by hiding specific menus from the list of available menus.
+When users are creating site pages, they are shown a list of all existing navigation menus. You can modify this behavior by hiding specific menus from the list of available menus.
 
-![Select from Existing Navigation Menus](./using-the-navigation-menus-application/images/10.png)
+![Add the new page to an existing navigation menu.](./using-the-navigation-menus-application/images/10.png)
 
 Follow these steps to configure this behavior for a Navigation Menu:
 
-1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) and go to _Site Builder_ &rarr; _Navigation Menus_.
+1. Open the *Site Menu* ( ![Site menu](../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Navigation Menus*.
 
-1. Select the desired _menu_.
+1. Select the desired menu.
 
-1. Click the _Actions_ button (![Actions](../../images/icon-actions.png)).
+1. Click *Actions* ( ![Actions button](../../images/icon-actions.png) ).
 
 1. Uncheck/Check the setting.
 
-    ![You can select from existing Navigation Menus when creating Site Pages](./using-the-navigation-menus-application/images/11.png)
+    ![You can select from existing navigationmenus when creating site pages](./using-the-navigation-menus-application/images/11.png)
 
-1. Click _Save_.
+1. Click *Save*.
 
 ## Configuring Navigation Menu Type
 
-Follow these steps to configure the Navigation Menu's type:
+Follow these steps to configure the navigation menu's type:
 
-1. Open the _Site Menu_ (![Site Menu](../../images/icon-product-menu.png)) and go to _Site Builder_ &rarr; _Navigation Menus_.
+1. Open the *Site Menu* ( ![Site menu](../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Navigation Menus*.
 
-1. Click on the Actions button (![Actions Button](../../images/icon-actions.png)) for the desired menu.
+1. Click *Actions* ( ![Actions button](../../images/icon-actions.png) ) for the desired menu.
 
-1. Select the desired navigation type: _Primary Navigation_, _Secondary Navigation_, or _Social Navigation_.
+1. Select the desired navigation type: Primary Navigation, Secondary Navigation, or Social Navigation.
 
     ![Select the desired navigation type.](./using-the-navigation-menus-application/images/12.png)
 
-    Once selected, each menu's configuration appears in the _Marked As_ column.
+    Once selected, each menu's configuration appears in the Marked As column.
 
 | Navigation Menu Type | Usage |
 | :--- | :--- |
@@ -133,10 +133,13 @@ Follow these steps to configure the Navigation Menu's type:
 
 ## Deleting a Navigation Menu
 
-1. Click the _Actions_ button (![Actions Button](../../images/icon-actions.png)) next to the desired navigation menu (for example, _New Menu_) then _Delete_.
-1. Click _OK_ in the confirmation.
+1. Open the *Site Menu* ( ![Site menu](../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Navigation Menus*.
 
-The Navigation Menu has been deleted.
+1. Click *Actions* ( ![Actions button](../../images/icon-actions.png) ) for the desired menu then click *Delete*.
+
+1. Click *OK* in the confirmation.
+
+The navigation menu is deleted.
 
 ## Related Topics
 

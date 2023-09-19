@@ -13,17 +13,13 @@ Kyle and Damian need your help to create the required channels, catalogs, and pr
 
 ![The relation between channels, catalogs, products, and warehouses.](./setting-up-and-creating-products/images/01.png)
 
-<!-- The diagram makes sense, and is a good start! But the reader could still remain confused about channels, because you put all the products in the channel. It would be better if you used the concrete example you're about to create: a catalog containing all the products, including bulk products for distributors, and two channels, one containing consumer-packaged products for the public site, and one containing distributor products for the B2B site. That would illustrate not only what channels are, but how you plan to use them in this concrete example. Also, color in the diagram would be nice. :-) -Rich --> 
+**Channels**: Channels are scoped to a Liferay instance. A channel is an avenue for selling products, such as a customer portal, a B2B marketplace, or back office phone sales. To sell products on a Liferay site, you must first link it to a channel. Delectable Bonsai has an online store that caters to consumers and another one that caters to business customers. To support this, you'll create two channels and link them to their corresponding sites. Later, you'll also create two supplier channels. This makes it easy for Delectable Bonsai's suppliers to view and manage their own orders. 
 
-**Channels**: Channels are scoped to a Liferay instance. A channel is an avenue for selling products, such as a customer portal, a B2B marketplace, or back office phone sales. To sell products on a Liferay site, you must first link it to a channel. 
+**Catalogs**: A catalog is scoped to a Liferay instance and stores product information. You can set basic parameters for a catalog like its name, default currency, base price list, base promotion list, and also link it to a supplier account if required. You'll create one catalog to hold all the products that Delectable Bonsai has to offer. Later, you'll create two supplier catalogs containing products from two different suppliers. When placing an order containing products from multiple catalogs, it gets split automatically. This allows the suppliers to fulfill their part of the order while Delectable Bonsai can fulfill theirs. 
 
-**Catalogs**: A catalog is scoped to a Liferay instance and stores product information. You can set basic parameters for a catalog like its name, default currency, base price list, base promotion list, and also link it to a supplier account if required.
+**Products**: Products are scoped to a catalog. Since there's no direct relationship between a catalog and channel, you must configure products to display them in the right channel. You can display products from multiple catalogs in the same channel. You'll be creating multiple products, SKUs, configuring them, adding inventory, pricing, and other necessary information. 
 
-**Products**: Products are scoped to a catalog. Since there's not relation between a catalog and channel, you must configure a product to display it in a specific channel. You can display products from multiple catalogs in the same channel. 
-
-**Warehouses**: Warehouses in Liferay represent physical locations that store product inventory. 
-
-<!-- Remember, this is your only opportunity to teach concepts. Tell readers what they'll be doing: setting up catalogs and products for two different stores, one for consumers, and one for distributors (which is what your outline suggests at a high level). Don't focus solely on the features, like channels, etc. Focus on what you're going to build. I can help you with this if it's not coming across clearly. -Rich -->
+**Warehouses**: Warehouses in Liferay represent physical locations that store product inventory. You'll be creating two warehouses for Delectable Bonsai, one, that fulfills both business and consumer orders, and the other that fulfills only business orders. To do this, you'll link the main warehouse to both the B2B and B2C channels and the second one only to the B2B channel. 
 
 After completing this module, you'll have
 

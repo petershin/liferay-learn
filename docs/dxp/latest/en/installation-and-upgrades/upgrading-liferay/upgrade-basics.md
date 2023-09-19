@@ -17,7 +17,7 @@ upgrade-basics/using-the-database-upgrade-tool.md
 upgrade-basics/post-upgrade-considerations.md
 ```
 
-Liferay's tools and instructions facilitate upgrading DXP and Portal environments safely and quickly. Non-clustered environments that have small data sets, for example can be upgraded using a [Docker image](./upgrade-basics/upgrading-via-docker.md). DXP environments and Portal environments that are complex, have larger data sets, or have many customizations are upgraded using the [Database Upgrade Tool](./upgrade-basics/using-the-database-upgrade-tool.md).
+Liferay's tools and instructions facilitate upgrading DXP and Portal environments safely and quickly. Non-clustered environments that have small data sets, for example can be upgraded using a [Docker image](./upgrade-basics/upgrading-via-docker.md). DXP environments and Portal environments that are complex, have larger data sets, or have many customizations are upgraded using the [Database Upgrade Tool](./upgrade-basics/using-the-database-upgrade-tool.md). [Auto upgrade](./upgrade-basics/upgrading-via-auto-upgrade.md) can also be enabled during startup.
 
 ```{warning}
 **Always** [back up](../maintaining-a-liferay-installation/backing-up.md) your database and installation before upgrading. Testing the upgrade process on backup copies is advised.
@@ -134,7 +134,7 @@ Adjusting your database for upgrade operations (more data writes than in product
 
 Here are two ways to upgrade your Liferay database:
 
-* [Upgrade via Docker](./upgrade-basics/upgrading-via-docker.md) involves passing an auto upgrade parameter to the command for starting a Docker image. The image updates the database and then starts up using the upgraded database.
+* [Upgrade via Auto Upgrade](./upgrade-basics/upgrading-via-auto-upgrade.md) can be enabled with a portal property for the upgrade to take place during startup. See [Upgrade via Docker](./upgrade-basics/upgrading-via-docker.md) for an example of this using a Docker image. The image updates the database and then starts up using the upgraded database.
 
 * [Using the Database Upgrade Tool](./upgrade-basics/using-the-database-upgrade-tool.md). The Upgrade Tool is a client program for updating the Liferay database while it's detached from any Liferay instance. It facilitates focusing on the upgrade process, [tuning the database](./upgrade-stability-and-performance/database-tuning-for-upgrades.md) for upgrade operations, and [pruning unnecessary data](./upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md) to quicken the database upgrade.
 
@@ -156,7 +156,7 @@ Once you complete the tasks outlined above, your upgrade is complete. But before
 
 Now that you're familiar with the upgrade components, you can upgrade your Liferay instance. Make sure to do preliminary tasks on your current installation, before upgrading the database. It's common to upgrade custom plugin code and execute the database upgrade in parallel. Since, database upgrade is a popular task to start first, here are links to the two methods:
 
-* [Upgrading Via Docker](./upgrade-basics/upgrading-via-docker.md)
+* [Upgrading via Auto Upgrade](./upgrade-basics/upgrading-via-auto-upgrade.md)
 * [Using the Database Upgrade Tool](./upgrade-basics/using-the-database-upgrade-tool.md)
 
 Additionally, refer to these other upgrade scenarios if they relate to your upgrade:

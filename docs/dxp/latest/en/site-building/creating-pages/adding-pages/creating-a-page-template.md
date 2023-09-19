@@ -5,7 +5,7 @@ uuid: 22635fa9-bca6-427c-8e6d-ab9f22b5c4c7
 
 {bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
-Page templates help you efficiently create pages based on predefined layouts and content. There are several basic page templates available out-of-the-box.
+Page templates help you create pages efficiently based on predefined layouts and content. There are several basic page templates available out-of-the-box.
 
 ![Basic page templates are available.](./creating-a-page-template/images/01.png)
 
@@ -33,7 +33,7 @@ The steps below show how to create and use widget and content page templates.
 
 1. Click *Save*.
 
-1. You're automatically brought to the new page template. Follow the instructions in [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your widget page template. Likewise, see [Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) to configure your content page template.
+1. You're brought automatically to the new page template. Follow the instructions in [Widget Pages](../understanding-pages/understanding-pages.md#widget-pages) to create your widget page template. Likewise, see [Building Content Pages](../using-content-pages/adding-elements-to-content-pages.md) to configure your content page template.
 
 ```{tip}
 You can preview your newly created page template. In the Page Templates page, select the *Action* menu ( ![Action Icon](../../../images/icon-options.png) ) for the template you want to preview, and select *Preview*.
@@ -55,7 +55,7 @@ Follow these steps to make a page template from a page:
 
     If you do not have a page template set, choose a *Name* and, optionally, a *Description* for a new page template set in the modal that appears on the screen. Click *Save* to save your page as a template in the newly created template set.
 
-1. Click Save.
+1. Click *Save*.
 
 The chosen page template set now has a new page template based on the page you are currently editing, as a draft. *You must publish this page template draft to use it for new pages.*
 
@@ -75,27 +75,25 @@ To give other users access to a newly created page template follow these steps:
 
 Users with the roles specified now have access to the page template.
 
-## Related Topics
-
-### Propagating Changes for Widget Pages
+## Propagating Changes for Widget Pages
 
 When creating a page from a widget page template, changes are inherited from the page template by default, so future changes are *automatically* propagated to the pages that use the page template. Site administrators can disable this behavior through the [settings for the individual page](../page-settings/configuring-individual-pages.md#general).
 
-### Propagating Changes for Content Pages
+## Propagating Changes for Content Pages
 
 Changes for content pages **are not automatically propagated** when created using a content page template. However, you can propagate changes to fragments used on a content page. See [Propagating Fragment Changes](../page-fragments-and-widgets/using-fragments/propagating-fragment-changes.md) for more information.
 
-### Sharing Page Templates With Other Sites
+## Sharing Page Templates With Other Sites
 
 You can share your page templates with other sites using the same process as you would for pages. Follow the instructions in [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md) to learn how.
 
-### Staging and Page Templates
+## Staging and Page Templates
 
 ```{important}
 Staging functionality is in [maintenance mode](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-3.md) as of 7.3 GA1+.
 ```
 
-If staging has been enabled, changes to the widget page template are automatically propagated to the *staged* page. These changes must still be approved before the page is published to the live site. For this reason, the automatic propagation of widget page template changes to the staged page cannot be turned off and the *Inherit Changes* selector does not appear.
+If staging has been enabled, changes to the widget page template are propagated automatically to the staged page. These changes must still be approved before the page is published to the live site. For this reason, the automatic propagation of widget page template changes to the staged page cannot be turned off and the *Inherit Changes* selector does not appear.
 
 ## Related Topics
 

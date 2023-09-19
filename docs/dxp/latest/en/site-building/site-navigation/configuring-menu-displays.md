@@ -13,7 +13,7 @@ If you are new to Liferay, use the menu display fragment to get started with bui
 
 {bdg-secondary}`Available 7.4+`
 
-Using Liferay navigation menus application, you can create a navigation menu anywhere in your content page. This navigation menu is based on your site's pages hierarchy, or any other hierarchy you define using Liferay's [navigation menus application](./using-the-navigation-menus-application.md). You can also define the menu display style options and the number of sub-levels to include in the navigation.
+You can create a navigation menu anywhere in your content page. This navigation menu is based on your site's pages hierarchy or any other hierarchy you define using Liferay's [navigation menus application](./using-the-navigation-menus-application.md). You can also define the menu display style options and the number of sub-levels to include in the navigation.
 
 The Menu Display fragment appears under the Fragments and Widget section of your content page. You add and configure this fragment as with other fragments in your content pages. For more information, see [Adding Elements to Content Pages](../creating-pages/using-content-pages/adding-elements-to-content-pages.md) and [Configuring Fragments](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md).
 
@@ -79,13 +79,13 @@ You can configure which pages at what level from the menu appear in the widget. 
 | **Levels to Display:** | Select the number of levels to display in the navigation, from 1 down to Unlimited. |
 | **Expand Sublevels:** | Select *Auto* or *All* from this dropdown menu; this determines if hovering the mouse over the navigation reveals navigation levels one at a time automatically or all the levels at once. |
 
-These are the 3 options under the Start with Menu Items In field:
+These are the three options under the Start with Menu Items In field:
 
-* **Level**: Level 0 starts at the root level and levels 1-4 are for subsequent levels leading up to the current page if any exists (as it is not possible to determine which path to follow from there, further levels are not displayed).
+1. **Level**: Level 0 starts at the root level and levels 1-4 are for subsequent levels leading up to the current page if any exists. Since it's not possible to determine which path to follow from there, further levels are not displayed.
 
-* **Level Relative to the Current**: Here, the order is reversed. Level 0 represents the current page and levels 1-4 represent parent levels starting with the immediate parent (1) up to the furthest possible parent page or the root page.
+1. **Level Relative to the Current**: Here, the order is reversed. Level 0 represents the current page and levels 1-4 represent parent levels starting with the immediate parent (1) up to the furthest possible parent page or the root page.
 
-* **Select Parent**: Manually select the page you want to use as your starting point for the menu.
+1. **Select Parent**: Manually select the page you want to use as your starting point for the menu.
 
 ## Related Topics
 

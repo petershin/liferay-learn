@@ -254,6 +254,45 @@ These are the widgets that can be embedded and their accompanying tags:
 If you have a custom widget that you want to embed in a fragment, you can configure that widget to be embeddable. To embed your widget, it must be an OSGi Component. Inside the `@Component` annotation for the portlet class you want to embed, add this property:
 
 ```properties
+com.liferay.fragment.processor.PortletRegistry
+```
+
+Also, set the `@Activate` and the `@Deactivate` lifecycle methods to register and unregister an alias for the portlet using the `PortletRegistry`:
+
+```java
+public class MySamplePortlet extends MVCPortlet {
+
+	@Activate
+	protected void activate() {
+		_portletRegistry.registerAlias(
+			_ALIAS,
+			MySamplePortletKeys.SAMPLE);
+	}
+
+	@Deactivate
+	protected void deactivate() {
+		_portletRegistry.unregisterAlias(_ALIAS);
+	}
+
+	private static final String _ALIAS = "sample";
+
+	@Reference
+	private PortletRegistry _portletRegistry;
+}
+```
+
+When you deploy your widget, it's available to add. The name you specify in the property must be appended to the `lfr-widget` tag like this:
+
+```markup
+<lfr-widget-app-name>
+</lfr-widget-app-name>
+```
+
+> Available: Liferay DXP/Portal 7.4+ before U60
+
+For previous versions, if you have a custom widget that you want to embed in a fragment, you can configure that widget to be embeddable. To embed your widget, it must be an OSGi Component. Inside the `@Component` annotation for the portlet class you want to embed, add this property:
+
+```properties
 com.liferay.fragment.entry.processor.portlet.alias=app-name
 ```
 

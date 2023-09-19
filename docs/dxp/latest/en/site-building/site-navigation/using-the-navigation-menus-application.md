@@ -63,6 +63,16 @@ While editing a navigation menu, follow these steps to add an element to the nav
 
     ![Adding elements to navigation menus.](./using-the-navigation-menus-application/images/06.png)
 
+1. Optionally, you can add a child navigation menu element from the navigation menu tree.
+
+   Click *Actions* ( ![Actions button](../../images/icon-actions.png) ) for the desired navigation menu element, select *Add Child*, and choose a child element type.
+
+   ![Add child navigation menu elements right from the navigation menu tree](./using-the-navigation-menus-application/images/07.png)
+
+    ```{tip}
+    Click on one of the navigation menu elements and use the keyboard arrows to navigate through the navigation menu tree.
+    ```
+
 1. Optionally, define custom display names for each of your menu elements. You can define custom names for page elements, or for any content type elements that use display pages (including blog entries, web content articles, documents, vocabularies, and categories).
 
     ```{note}
@@ -71,7 +81,7 @@ While editing a navigation menu, follow these steps to add an element to the nav
 
     To do this, select a menu element, check *Use Custom Name* in the side panel, enter a name, and click *Save*.
 
-    ![Customize the display of menu elements.](./using-the-navigation-menus-application/images/07.png)
+    ![Customize the display of menu elements.](./using-the-navigation-menus-application/images/08.png)
 
 All changes to the menu are saved.
 
@@ -81,13 +91,13 @@ All changes to the menu are saved.
 
 Dynamic vocabulary elements allow you to quickly and easily update your navigation menus when you have changing hierarchies of items. For example, you can use categories to represent types of products in a [catalog](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html), and then let any updates to your categories automatically update any menus using the vocabulary. Then, depending on the [display page](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) used for those categories, any changes to the categorization may automatically reflect in the pages and the navigation menu.
 
-![Dynamic vocabulary elements automatically update to reflect their hierarchy of categories in your navigation menus.](./using-the-navigation-menus-application/images/08.png)
+![Dynamic vocabulary elements automatically update to reflect their hierarchy of categories in your navigation menus.](./using-the-navigation-menus-application/images/09.png)
 
 ### Previewing Navigation Menus
 
 You can a preview a navigation menu while you are editing it to see how it looks when displayed on a page. Click the *Eye icon* ( ![Eye icon](../../images/icon-view.png) ) to open a popup window with a preview of the navigation menu.
 
-![Preview a navigation menu to see how it looks when displayed on a page.](./using-the-navigation-menus-application/images/09.png)
+![Preview a navigation menu to see how it looks when displayed on a page.](./using-the-navigation-menus-application/images/10.png)
 
 You can also select different options from the drop-down menu to see different styles the menu can be displayed in, such as the List or Tabs styles.
 
@@ -95,7 +105,7 @@ You can also select different options from the drop-down menu to see different s
 
 When users are creating site pages, they are shown a list of all existing navigation menus. You can modify this behavior by hiding specific menus from the list of available menus.
 
-![Add the new page to an existing navigation menu.](./using-the-navigation-menus-application/images/10.png)
+![Add the new page to an existing navigation menu.](./using-the-navigation-menus-application/images/11.png)
 
 Follow these steps to configure this behavior for a Navigation Menu:
 
@@ -107,7 +117,7 @@ Follow these steps to configure this behavior for a Navigation Menu:
 
 1. Uncheck/Check the setting.
 
-    ![You can select from existing navigationmenus when creating site pages](./using-the-navigation-menus-application/images/11.png)
+    ![You can select from existing navigationmenus when creating site pages](./using-the-navigation-menus-application/images/12.png)
 
 1. Click *Save*.
 
@@ -121,7 +131,7 @@ Follow these steps to configure the navigation menu's type:
 
 1. Select the desired navigation type: Primary Navigation, Secondary Navigation, or Social Navigation.
 
-    ![Select the desired navigation type.](./using-the-navigation-menus-application/images/12.png)
+    ![Select the desired navigation type.](./using-the-navigation-menus-application/images/13.png)
 
     Once selected, each menu's configuration appears in the Marked As column.
 

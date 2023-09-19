@@ -3,7 +3,7 @@ uuid: f027c0b1-a38f-43d1-a1d1-da973281f9b8
 ---
 # Upgrading via Auto Upgrade
 
-Liferay makes it easy to upgrade your database with the auto upgrade feature. Simply enable the feature by setting the portal property to true before starting up your instance.
+Liferay makes it easy to upgrade your database with the auto upgrade feature. Simply enable the feature by setting the portal property before starting up your instance.
 
 ```{important}
 **Always** [back up](../../maintaining-a-liferay-installation/backing-up.md) your database and existing installation before upgrading. Testing the upgrade process on backup copies is advised.
@@ -31,13 +31,17 @@ Here are the steps using Tomcat as an example:
 
 1. Open the file and set `upgrade.database.auto.run=true`.
 
-1. (Optional) To enable [upgrade reporting](../reference/upgrade-report.md), set `upgrade.report.enabled=true`.
+1. (Optional) Set `upgrade.report.enabled=true` to enable [upgrade reporting](../reference/upgrade-report.md).
 
-1. (Optional) To enable [upgrade log context](../reference/upgrade-log-context.md), set `upgrade.log.context.enabled=true`.
+1. (Optional) Set `upgrade.log.context.enabled=true` to enable [upgrade log context](../reference/upgrade-log-context.md).
 
 1. Save the property file and [restart Liferay](../../installing-liferay/running-liferay-for-the-first-time.md#restart-the-server).
 
-1. As Liferay restarts, the database will automatically be updated. View the progress of the update in your console log. If you enabled upgrade reporting, when the upgrade is finished, in the `Liferay_Home/reports` folder.
+1. As Liferay restarts, the database will automatically be updated. View the progress of the update in your console log. If you enabled upgrade reporting, the report will be available in the `Liferay_Home/reports` folder after completion.
+
+```{note}
+Make sure to remove the `upgrade.database.auto.run` property or set the value to `false` to continue using Liferay after the upgrade.
+```
 
 ## Related Topics
 
@@ -46,3 +50,4 @@ Here are the steps using Tomcat as an example:
 * [Using the Database Upgrade Tool](./using-the-database-upgrade-tool.md)
 * [Upgrading Custom Development](../upgrading-custom-development.md)
 * [Troubleshooting Upgrades](../reference/troubleshooting-upgrades.md)
+* [Monitoring Upgrades with MBeans](../reference/monitoring-upgrades-with-mbeans.md)

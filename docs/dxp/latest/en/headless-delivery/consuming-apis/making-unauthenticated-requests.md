@@ -27,7 +27,7 @@ You can use [Service Access Policies](../../installation-and-upgrades/securing-l
 
 1. Sign in using the default credentials:
 
-   **User Name:** `test@liferay.com`  
+   **User Name:** `test@liferay.com` 
    **Password:** `test`
 
 1. Go to Global Menu &rarr; Control Panel &rarr; Security &rarr; Service Access Policy.
@@ -49,7 +49,7 @@ You can use [Service Access Policies](../../installation-and-upgrades/securing-l
 1. Click *Save*.
 
 ```{note}
-Make sure to use Liferay's external headless API classes versus using Liferay's internal service layer classes in your policies.
+Make sure to use Liferay's external headless API classes instead of Liferay's internal service layer classes in your policies.
 ```
 
 ![Service Access Policies define rules for access to APIs.](./making-unauthenticated-requests/images/01.png)

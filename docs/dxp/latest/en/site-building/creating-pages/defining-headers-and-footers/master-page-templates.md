@@ -5,15 +5,15 @@ uuid: 01a62f63-92b8-405b-ab5f-13e4dc52e41f
 
 > Available: Liferay DXP/Portal 7.3+
 
-Master Page Templates provide a way to define elements common to every page (e.g. Headers and Footers previously provided by Themes) using Fragments, so you can easily maintain and manage them in Portal without having to deploy a plugin. You can use the same Master Page Template across an entire Site or have a unique one for each page. Each Page and Page Template must have an associated Master Page Template. By default, this is the "Blank" Master, which doesn't provide any common elements.
+Master page templates provide a way to define elements common to every page (e.g. headers and footers previously provided by themes) using fragments, so you can easily maintain and manage them in portal without having to deploy a plugin. You can use the same master page template across an entire site or have a unique one for each page. Each page and page template must have an associated master page template. By default, this is the Blank master page template, which doesn't provide any common elements.
 
-![The Blank Master Page Template is the default for Pages, and Page Templates.](./master-page-templates/images/01.png)
+![The blank master page template is the default for pages, and page templates.](./master-page-templates/images/01.png)
 
 ## Building Master Page Templates
 
-Building a Master Page Template is similar to the process of creating a Content Page. A Master Page Template can contain any number of Page Fragments, like a Content Page. However, a Master Page Template differs in that it has one key area defined, called a *Drop Zone*, that specifies where you can place Page Fragments. This area can't be removed, but it can be placed somewhere else in the page layout. You can also define which Page Fragments can be added to the Drop Zone. A typical use case for a Master Page Template is to have a Header, a Footer, and a Drop Zone. See [Creating a Master Page Template](./creating-a-master-page-template.md) for more information.
+Building a master page template is similar to the process of creating a content page. A master page template can contain any number of page fragments, like a content page. However, a master page template differs in that it has one key area defined, called a *Drop Zone*, that specifies where you can place page fragments. This area can't be removed, but it can be placed somewhere else in the page layout. You can also define which page fragments can be added to the Drop Zone. A typical use case for a master page template is to have a header, a footer, and a drop zone. See [Creating a Master Page Template](./creating-a-master-page-template.md) for more information.
 
-![A typical use case for a Master Page Template has a Header, a Drop Zone, and a Footer](./master-page-templates/images/02.png) 
+![A typical use case for a master page template has a header, a drop zone, and a footer](./master-page-templates/images/02.png)
 
 ## Related Topics
 

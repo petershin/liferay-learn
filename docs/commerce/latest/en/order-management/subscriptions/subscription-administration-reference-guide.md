@@ -64,7 +64,7 @@ The Payment Subscription section tracks the following information:
 | Mode | This refers to the date on which the intervals are marked. Users can also select exact days of the month or _The Last Day of the Month_ as options.  |
 
 ```{warning}
-If you require this feature to be disabled, [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not input zero or a negative number for the interval.
+If you require this feature to be disabled, [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not enter zero or a negative number for the interval.
 ```
 
 ### Delivery Subscription
@@ -82,7 +82,7 @@ The _Delivery Subscription_ section tracks the following information:
 | Mode | This refers to the date on which the intervals are marked. Users can also select exact days of the month or _The Last Day of the Month_ as options.  |
 
 ```{warning}
-If you require this feature to be disabled, [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not input zero or a negative number for the interval.
+If you require this feature to be disabled, [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not enter zero or a negative number for the interval.
 ```
 
 ### Items

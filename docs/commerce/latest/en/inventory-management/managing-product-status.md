@@ -34,7 +34,7 @@ Follow these steps:
 Once a product reaches its expiration date and time, it remains active until Liferay's next check interval. The default interval is 15 minutes, but you can configure this via system settings. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Control Panel* &rarr; *System Settings*. Once there, navigate to *Catalog* &rarr; *Products*. Change the *Check Interval* value and click *Save*.
 
 ```{warning}
-If you require this feature to be disabled, [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not input zero or a negative number for the interval.
+If you require this feature to be disabled, [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not enter zero or a negative number for the interval.
 ```
 
 After expiring, the product's SKUs no longer appear in the store's catalog and cannot be purchased. To learn how to set expiration dates for individual SKUs along with replacements, see [Replacement Products](../pricing/promoting-products/replacement-products.md).

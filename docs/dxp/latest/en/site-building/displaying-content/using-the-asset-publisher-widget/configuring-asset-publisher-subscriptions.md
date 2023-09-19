@@ -31,7 +31,7 @@ Liferay Portal periodically checks for new assets and sends emails to subscribed
 ![The Check Interval settings specifies how often assets are checked for updates.](./configuring-asset-publisher-subscriptions/images/03.png)
 
 ```{warning}
-If you require this feature to be disabled, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not input zero or a negative number for the interval.
+If you require this feature to be disabled, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not enter zero or a negative number for the interval.
 ```
 
 ## RSS Feed Subscriptions

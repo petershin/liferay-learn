@@ -40,7 +40,7 @@ By default, Web Content checks article expiration and review dates every 15 minu
 Now the system checks for expiration or review dates according to the interval you set.
 
 ```{warning}
-If you require this feature to be disabled, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not input zero or a negative number for the interval.
+If you require this feature to be disabled, [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) the component. Do not enter zero or a negative number for the interval.
 ```
 
 ## Configuring Notification Emails

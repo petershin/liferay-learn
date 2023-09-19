@@ -15,7 +15,7 @@ Field types have been added and improved as part of the move to Data Engine:
 
 - The Select from List field's options can be ordered alphabetically (use the advanced settings of the Select from List field).
 - Configure a Numeric field as an integer or decimal field.
-- The Grid field is a new field type in Web Content and Documents and Media. See the [Forms Field Type Reference](../../../process-automation/forms/creating-and-managing-forms/forms-field-types-reference.md).
+- The Grid field is a new field type in web content and documents and media. See [Forms Field Type Reference](../../../process-automation/forms/creating-and-managing-forms/forms-field-types-reference.md) for more information.
 - The HTML field was replaced by the Rich Text field, which includes a convenient tool bar.
 
 ```{warning}
@@ -36,7 +36,10 @@ Structures backed by DDM could include child structures that inherited all the p
 
 To work with fieldsets,
 
-1. In the web content structure form builder view, click the *Fieldsets* tab.
+1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
+1. Select the *Structures* tab.
+1. Click the *Add button* ( ![Add Structure](../../../images/icon-add.png) ) to create a new structure.
+1. In the web content structure form builder view ( ![Form Builder Icon](../../../images/icon-builder.png) ), click the *Fieldsets* tab.
 1. Click *Create New Fieldset*. Name the fieldset.
 1. Add and configure its fields. Click *Save*.
 
@@ -54,7 +57,7 @@ Be careful working with the JSON structure source as it can be more complicated 
 
 ### Exporting a Structure's JSON
 
-1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) &rarr; *Content and Data* &rarr; *Web Content*.
+1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
 1. Click the *Structures* tab.
 1. If there's no existing structure, create one and save it.
 1. In the main structures list view, open the structure's *Actions* menu ( ![Actions Button](../../../images/icon-actions.png) ) and click *Export as JSON*.
@@ -63,7 +66,7 @@ Be careful working with the JSON structure source as it can be more complicated 
 
 To overwrite an existing structure's JSON,
 
-1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) &rarr; *Content and Data* &rarr; *Web Content*.
+1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
 1. Click the *Structures* tab.
 1. If there's no existing structure, create one and save it.
 1. In the main structures list view, open the structure's *Actions* menu ( ![Actions Button](../../../images/icon-actions.png) ) and click *Import and Override*.
@@ -75,7 +78,7 @@ To overwrite an existing structure's JSON,
 
 To import a new structure,
 
-1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) &rarr; *Content and Data* &rarr; *Web Content*.
+1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
 1. Click the *Structures* tab.
 1. Open the *Options* menu ( ![Options Button](../../../images/icon-actions.png) ) for web content in the upper right corner of the screen.
 1. Click *Import Structure*.
@@ -103,7 +106,7 @@ You can set the structure key manually when creating a new structure (as documen
 
 1. Click *Administration*. Uncheck *Autogenerate Structure Key* and click *Update*.
 
-1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) &rarr; *Content & Data* &rarr; *Web Content*. Open the Structures tab and add a new structure.
+1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*. Open the Structures tab and add a new structure.
 
 1. Add a field and name the structure. To manually set the structure key, open the Properties sidebar by clicking the configuration icon ( ![Configuration](../../../images/icon-cog3.png) ).
 

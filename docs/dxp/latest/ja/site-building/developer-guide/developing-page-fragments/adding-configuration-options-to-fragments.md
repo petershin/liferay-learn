@@ -15,13 +15,12 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 ```
 
 ## 構成可能なフラグメントのデプロイ
-
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順でサンプルをデプロイし、Fragmentの設定オプションがどのように機能するかを確認する：
+Then, follow these steps to deploy an example to see how Fragment configuration options work:
 
-1. [example Fragment Set](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip) をダウンロードして解凍する：
+1. Download and unzip the [example Fragment Set](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip):
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-c7f8.zip -O
@@ -62,7 +61,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     Project imported
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
 
     ![セットが利用可能であることを確認します。](./adding-configuration-options-to-fragments/images/01.png)
 
@@ -70,11 +69,11 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     Liferay DXP 7.1および7.2では、代わりにプロダクトメニューの*サイト* → *サイトビルダー* → *ページ フラグメント*に移動して、フラグメントページを表示します。
     ```
 
-1. コンテントページに移動し、 **編集** アイコン（![Edit icon](../../../images/icon-edit-pencil.png)）をクリックして編集を開始します。
+1. コンテントページに移動し、*編集*アイコン（![Edit icon](../../../images/icon-edit-pencil.png)）をクリックして編集を開始します。
 
-1. [フラグメントとウィジェットパネル](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md#fragments-and-widgets) の **C7F8セット** 見出しを展開し、 **C7F8カード** フラグメントをページにドラッグします。
+1. [フラグメントとウィジェットパネル](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md#fragments-and-widgets)の*C7F8セット*見出しを展開し、*C7F8カード*フラグメントをページにドラッグします。
 
-1. ページで **C7F8カード** を選択して、フラグメント設定メニューを開きます。 ［**一般**］ タブで、コンポーネントのテキスト スタイルを「暗い」または「明るい」に設定します。
+1. ページで*C7F8カード*を選択して、フラグメント設定メニューを開きます。 *［一般］*タブで、コンポーネントのテキスト スタイルを「暗い」または「明るい」に設定します。
 
    ![構成可能なフラグメントには、フラグメントのルック アンド フィールを変更するオプションが用意されています。](./adding-configuration-options-to-fragments/images/02.png)
 
@@ -84,9 +83,9 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 フラグメントの構成オプションは、Liferayに内蔵されている[フラグメントエディタ](./using-the-fragments-editor.md)やテキストファイルで編集することができます。
 
-**フラグメントエディタの使用：** UIで、[フラグメントエディタ](./using-the-fragments-editor.md)を使用してフラグメントを編集し、 ［**設定**］ タブをクリックします。 フラグメントの設定がエディタに表示されます。
+**フラグメントエディタの使用：**UIで、[フラグメントエディタ](./using-the-fragments-editor.md)を使用してフラグメントを編集し、*［設定］*タブをクリックします。 フラグメントの設定がエディタに表示されます。
 
-**フラグメント設定ファイルの編集：** フラグメントファイルがない場合は、フラグメントのアクションメニューを開き、 ［**エクスポート**］ をクリックしてフラグメントからエクスポートします。 フラグメントの`fragment.json`ファイルの`configurationPath`フィールド（オプション）は、`.json`構成ファイルを指定します。 構成ファイルがない場合は、構成ファイルを作成し、`configurationPath`フィールドを構成ファイル名に設定します。
+**フラグメント設定ファイルの編集：**フラグメントファイルがない場合は、フラグメントのアクションメニューを開き、*［エクスポート］*をクリックしてフラグメントからエクスポートします。 フラグメントの`fragment.json`ファイルの`configurationPath`フィールド（オプション）は、`.json`構成ファイルを指定します。 構成ファイルがない場合は、構成ファイルを作成し、`configurationPath`フィールドを構成ファイル名に設定します。
 
 サンプルの`fragment.json`ファイルを開き、フラグメントの構成ファイルを決定します。
 
@@ -134,9 +133,9 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 }
 ```
 
-上記の構成ファイルでは、 **dark** または **light** テキストスタイルをフラグメントに適用するためのセレクタを指定しています。 この構成には、`c7f8TextStyle`という名前のフィールドがあります。 フィールドの`type`は`select`であり、セレクタコンポーネントになります。 詳細は、[Fragment Configuration Types](../reference/fragments/fragment-configuration-types-reference.md)を参照してください。 セレクタの有効な値は、`dark`または`light`です。 `"dataType": "string"`プロパティは、セレクタが文字列データで動作することを意味します。
+上記の構成ファイルでは、*dark*または*light*テキストスタイルをフラグメントに適用するためのセレクタを指定しています。 この構成には、`c7f8TextStyle`という名前のフィールドがあります。 フィールドの`type`は`select`であり、セレクタコンポーネントになります。 詳細は、[Fragment Configuration Types](../reference/fragments/fragment-configuration-types-reference.md)を参照してください。 セレクタの有効な値は、`dark`または`light`です。 `"dataType": "string"`プロパティは、セレクタが文字列データで動作することを意味します。
 
-このセレクタは、 **C7F8** というラベルの付いたフィールド セットの一部です (ラベルはオプションです)。 UIでは、このセレクタは、フラグメントの **C7F8** というラベルが付いた構成セクションにあります。 セレクタは、フィールドの`label`プロパティごとに、`Text Style`とラベル付けされています。 次の図にセレクタを示します。
+このセレクタは、*C7F8*というラベルの付いたフィールド セットの一部です (ラベルはオプションです)。 UIでは、このセレクタは、フラグメントの*C7F8*というラベルが付いた構成セクションにあります。 セレクタは、フィールドの`label`プロパティごとに、`Text Style`とラベル付けされています。 次の図にセレクタを示します。
 
 ![これが C7F8 カード フラグメントのセレクタです。](./adding-configuration-options-to-fragments/images/03.png)
 
@@ -192,15 +191,15 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 構成がどのように機能するかを理解したので、構成を変更できます。
 
-1. **サイトメニュー**（![サイトメニュー](../../../images/icon-product-menu.png)）を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。
+1. *サイトメニュー*（![サイトメニュー](../../../images/icon-product-menu.png)）を開き、*［デザイン］* &rarr; *［フラグメント］*に移動します。
 
     ```{note}
     Liferay DXP 7.1および7.2では、代わりにプロダクトメニューの*サイト* → *サイトビルダー* → *ページ フラグメント*に移動して、フラグメントページを表示します。
     ```
 
-1. ［**C7F8セット**］ を選択し、C7F8 カードの **アクション**(![Actions Icon](../../../images/icon-actions.png)）ボタンをクリックして、 ［**編集**］ を選択します。 フラグメントエディタが開きます。
+1. *［C7F8セット］*を選択し、C7F8 カードの*アクション* (![Actions Icon](../../../images/icon-actions.png)）ボタンをクリックして、*［編集］*を選択します。 フラグメントエディタが開きます。
 
-1. ［**設定**］ タブをクリックし、カードの説明を非表示／表示するチェックボックスフィールドで構成を更新します。 `c7f8TextStyle`フィールドの閉じ括弧とカンマ（`},`) の後の新しい行に次のコードを挿入します。
+1. *［設定］*タブをクリックし、カードの説明を非表示／表示するチェックボックスフィールドで構成を更新します。 `c7f8TextStyle`フィールドの閉じ括弧とカンマ（`},`) の後の新しい行に次のコードを挿入します。
 
     ```json
     {
@@ -216,7 +215,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     フィールドセットに `configurationRole` 値を追加して（JSONの `fields` オブジェクトと一緒に）、関連するフィールドがどのタブに表示されるかを指定することができます。 値を `styles` に設定すると［スタイル］タブにフィールドが表示され、`advanced` に設定すると［詳細設定］タブに表示されます（*Liferay DXP バージョン U23+ または GA23+* でのみ使用可能）。 `configurationRole`が設定されていない場合、デフォルトで［一般］タブに表示されます。
     ```
 
-1. ［**コード**］ タブの ［**HTML**］ ペインに戻り、チェックボックスの値をチェックするための条件付きステートメントで段落要素をラップします。 ［**Publish**］ をクリックして変更を適用します。
+1. *［コード］*タブの*［HTML］*ペインに戻り、チェックボックスの値をチェックするための条件付きステートメントで段落要素をラップします。 *［Publish］*をクリックして変更を適用します。
 
     ```html
     [#if configuration.showDescription]
@@ -235,7 +234,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 これで、更新をテストできます。
 
-1. 変更をプロパゲートして、コンテントページに反映させます。 C7F8カードの **アクション**（![Action Icon](../../../images/icon-actions.png)）をクリックし、 ［**利用数を表示**］ を選択します。
+1. 変更をプロパゲートして、コンテントページに反映させます。 C7F8カードの*アクション*（![Action Icon](../../../images/icon-actions.png)）をクリックし、 *［利用数を表示］*を選択します。
 
 1. コンテントページのボックスをオンにして、(![propagate button](../../../images/icon-propagate.png)) ボタンをクリックします。
 
@@ -243,9 +242,9 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 1. コンテントページに戻り、もう一度 (![Edit icon](../../../images/icon-edit-pencil.png)) アイコンをクリックしてコンテントページを編集します。
 
-1. [**C7F8 カード**] をもう一度選択して、右側に選択パネルを表示します。
+1. *[C7F8 カード]*をもう一度選択して、右側に選択パネルを表示します。
 
-1. ［**一般**］ タブで、 ［**Show Description**］ チェックボックスをオン／オフして、カードのテキストを表示／非表示にします。
+1. *［一般］*タブで、*［Show Description］*チェックボックスをオン／オフして、カードのテキストを表示／非表示にします。
 
     ![フラグメントには、必要な数の構成オプションを設定できます。](./adding-configuration-options-to-fragments/images/05.png)
 

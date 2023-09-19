@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.4以降で利用可能`
 
-オブジェクトをパブリッシュすると、Liferayは [コレクションプロバイダ](../../content-authoring-and-management/collections-and-collection-pages/collection-provider.md) を作成し、 [コレクション表示フラグメント](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) と一緒に使用して、複数のオブジェクトエントリを表示します。 次に、Collection Display フラグメントを使用して、特定のオブジェクトタイプを表示し、フラグメン トのフィルタリング、スタイル、および表示オプションを使用し、他のフラグメントを埋め込んで、リストされた各オブジェクト エントリに対して表示する情報をカスタマイズできます。 [コレクションページ](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) でオブジェクトのコレクションを表示することもできます。
+オブジェクトをパブリッシュすると、Liferayは [コレクションプロバイダ](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md) を作成し、 [コレクション表示フラグメント](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) と一緒に使用して、複数のオブジェクトエントリを表示します。 次に、Collection Display フラグメントを使用して、特定のオブジェクトタイプを表示し、フラグメン トのフィルタリング、スタイル、および表示オプションを使用し、他のフラグメントを埋め込んで、リストされた各オブジェクト エントリに対して表示する情報をカスタマイズできます。 [コレクションページ](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page)を使ってオブジェクトのコレクションを表示することもできます。
 
 ## フラグメント・フィールドからオブジェクト・フィールドへのマッピング
 
@@ -40,33 +40,33 @@
    コレクション・プロバイダを使用してコレクション・ページを作成することもできます。 詳しくは、[コレクションとコレクションページについて](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)をご覧ください。
    ```
 
-1. フラグメントとウィジェット (![Fragments and Widgets](../../images/icon-plus.png)) サイドバーから、 **コレクション表示** フラグメントをページまたはテンプレートにドラッグ＆ドロップします。
+1. フラグメントとウィジェット (![Fragments and Widgets](../../images/icon-plus.png)) サイドバーから、 *コレクション表示* フラグメントをページまたはテンプレートにドラッグ＆ドロップします。
 
-1. ［**コレクション表示フラグメント**］ を選択して設定オプションにアクセスし、［General］タブの ［**Select Collection**］をクリックします。
+1. ［*コレクション表示フラグメント*］ を選択して設定オプションにアクセスし、［General］タブの ［*Select Collection* ］をクリックします。
 
    ![フラグメントを選択し、［コレクションを選択］をクリックします。](../objects/displaying-object-entries-with-collection-providers/images/03.png)
 
-1. モーダルウィンドウで、 **Collection Providers** タブをクリックし、 **オブジェクトのプロバイダ** を選択します。
+1. モーダルウィンドウで、 *Collection Providers* タブをクリックし、 *オブジェクトのプロバイダ*を選択します。
 
    ![Collection Providers タブで、オブジェクトのプロバイダを選択します。](./displaying-object-entries-with-collection-providers/images/04.png)
 
 1. (オプション) 表示されたオブジェクトエントリをフィルタリングする。 オブジェクト内のピックリストやブーリアンフィールドでフィルタリングすることができます：
 
-   **Collection Options**(![Collection Options Button](../../images/icon-actions.png)) をクリックし、 **Filter Collection** を選択する。
+   *Collection Options* (![Collection Options Button](../../images/icon-actions.png)) をクリックし、 *Filter Collection*を選択する。
 
    ![［Collection Options］ボタンをクリックして、［Filter Collection］を選択します。](./displaying-object-entries-with-collection-providers/images/05.png)
 
-   次に、希望する **フィルタ** を選択し、 **適用** をクリックする。
+   次に、希望する *フィルタ* を選択し、 *適用*をクリックする。
 
    ![適用するフィルターを選択します。](./displaying-object-entries-with-collection-providers/images/06.png)
 
-希望するプロバイダを選択した後、 **List Style** や **Pagination** などの追加フラグメントオプションを使用して、オブジェクトエントリの表示方法を決定します。
+希望するプロバイダを選択した後、 *List Style* や *Pagination*など、追加のフラグメントオプションを使用してオブジェクトエントリの表示方法を決定します。
 
 ## 関連オブジェクト情報の表示
 
 {bdg-secondary}`利用可能 7.4 U77 および GA77+`
 
-オブジェクトが他のオブジェクトと [関係を持っている場合](./creating-and-managing-objects/relationships/defining-object-relationships.md)、ネストされたコレクション表示フラグメントを使用して、その関係にある関連オブジェクトを表示することもできます。 埋め込まれたコレクション表示フラグメントは、新しいコレクションを形成するために、ユニークな [関連アイテムコレクションプロバイダ](../../content-authoring-and-management/collections-and-collection-pages/collection-provider.md#related-items-collections-providers) を使用します。
+オブジェクトが他のオブジェクトと [の関係を持っている場合](./creating-and-managing-objects/relationships/defining-object-relationships.md)、ネストされたコレクション表示フラグメントを使用して、その関係にある関連オブジェクトを表示することもできます。 埋め込まれたコレクション表示フラグメントは、新しいコレクションを形成するために、ユニークな [関連アイテムコレクションプロバイダ](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md#related-items-collections-providers) を使用します。
 
 ```{important}
 関連アイテム・コレクション・プロバイダーによる関連オブジェクトの表示は、現在リリース機能フラグの後ろにあります。 詳しくは [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) を読んでください。
@@ -84,9 +84,9 @@
 
    ![コレクション表示フラグメントを適切に埋め込むには、ブラウザタブを使用します。](./displaying-object-entries-with-collection-providers/images/07.png)
 
-1. 新しいコレクション表示フラグメントの構成オプションで、 **Select Collection** をクリックします。
+1. 新しいコレクション表示フラグメントの構成オプションで、 *Select Collection* をクリックします。
 
-1. **Related Items Collection Providers** タブをクリックします。
+1. *Related Items Collection Providers* タブをクリックします。
 
 1. オブジェクトのリレーションシップ名を持つコレクション・プロバイダを選択します。 関連するオブジェクト・タイプは、リレーションシップ名の下に表示されます。
 
@@ -98,6 +98,6 @@
 
 * [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)
 * [オブジェクトの入力を表示する](./displaying-object-entries.md)
-* [コレクションとコレクションページについて](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
-* [コレクションプロバイダー](../../content-authoring-and-management/collections-and-collection-pages/collection-provider.md)
+* [About Collections and Collection Pages](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [コレクションプロバイダー](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md)
 * [オブジェクトリレーションシップの定義](./creating-and-managing-objects/relationships/defining-object-relationships.md)

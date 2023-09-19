@@ -4,8 +4,6 @@ toc:
 ---
 # バッチクライアント拡張機能
 
-{bdg-link-primary}` [Dev Feature](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) `
-
 {bdg-secondary}`Liferay Experience Cloud および Liferay DXP 7.4+ (セルフホスト)`
 
 ```{toctree}
@@ -14,16 +12,16 @@ toc:
 batch-client-extensions/batch-yaml-configuration-reference.md
 ```
 
-バッチクライアント拡張はLiferayの [バッチエンジンフレームワーク](../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) と連携し、Liferayインスタンスにデータエンティティを提供します。 Liferayのインポート/エクスポートセンターから、1つのインスタンスのデータをエクスポートします。 そして、それをバッチクライアントエクステンションに追加し、 [deploy](./working-with-client-extensions.md#deploying-to-your-liferay-instance) 、データを別のLiferayインスタンスに取り込みます。
+バッチクライアント拡張はLiferayの [バッチエンジンフレームワーク](../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) と連携し、Liferayインスタンスにデータエンティティを提供します。 あるインスタンスのデータをエクスポートする（例えば、 `curl` または Export/Import Center 経由）。 そして、それをバッチクライアントエクステンションに追加し、 [deploy](./working-with-client-extensions.md#deploying-to-your-liferay-instance) 、データを別のLiferayインスタンスに取り込みます。
 
-バッチクライアント拡張を有効にするには、Liferay を起動する前にこの [ポータルプロパティ](../../installation-and-upgrades/reference/portal-properties.md) を追加してください：
+バッチクライアント拡張機能で使用するデータをエクスポートするには、アプリケーションメニュー( ![Applications menu icon](../../images/icon-applications-menu.png) )からExport/Import Centerを使用できます。 Export/Import センターを有効にするには、Liferay を起動する前にこの [portal プロパティ](../../installation-and-upgrades/reference/portal-properties.md) を追加してください：
 
 ```properties
 feature.flag.COMMERCE-8087=true
 ```
 
 ```{warning}
-これは [開発中の機能](../../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) です。 本番環境では、開発機能フラグを決して有効にしないでください。
+バッチフレームワークのエクスポート/インポートセンターは[開発中の機能](../../ system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) です。 本番環境では、開発機能フラグを決して有効にしないでください。
 ```
 
 `client-extension.yaml` ファイルにバッチクライアント拡張子を指定します：

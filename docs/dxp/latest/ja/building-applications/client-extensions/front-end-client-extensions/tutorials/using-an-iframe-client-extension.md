@@ -1,6 +1,6 @@
 # IFrameクライアント拡張機能の使用
 
-{bdg-secondary}`7.4+`
+{bdg-secondary}`Liferay 7.4以降で利用可能`
 
 IFrameクライアント拡張は、Liferayのフロントエンドインフラストラクチャを使用して、外部アプリケーションを `<iframe>` HTML要素として登録します。 これらはウィジェットとしてLiferayのページに追加されます。 他のフロントエンドクライアント拡張とは異なり、IFrameは静的リソースを提供しない。
 
@@ -8,7 +8,7 @@ IFrameクライアント拡張は、Liferayのフロントエンドインフラ�
 IFrameクライアント拡張は開発中であり、現在Liferay 7.4ではサポートされていません。
 ```
 
-[サンプル・ワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) にあるクライアント・エクステンションから開始します。
+[サンプル・ワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)にあるクライアント・エクステンションから開始します。
 
 ## 前提条件
 
@@ -17,7 +17,7 @@ IFrameクライアント拡張は開発中であり、現在Liferay 7.4ではサ
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
+   対応するJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -50,12 +50,13 @@ liferay-sample-iframe-1-counter-app:
 ## IFrameクライアント拡張機能の展開
 
 ```{note}
-クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloudの [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使って [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloudの[コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)を使って[`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment)を実行します。
 ```
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、サンプル ワークスペース内のクライアント拡張機能のフォルダーに移動し、次を実行します。
+次に、サンプル・ワークスペースのクライアント・エクステンションのフォルダに移動し、以下を実行する。
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
@@ -64,7 +65,7 @@ liferay-sample-iframe-1-counter-app:
 これでクライアントエクステンションがビルドされ、Liferay の `/deploy` フォルダに zip がデプロイされます。
 
 ```{tip}
-ワークスペースのすべてのクライアントエクステンションを同時にデプロイするには、`/client-extensions` フォルダからコマンドを実行します。
+ワークスペース内のすべてのクライアントエクステンションを同時にデプロイするには、`/client-extensions`フォルダからコマンドを実行します。
 ```
 
 Liferayインスタンスのコンソールでデプロイメントを確認します。
@@ -79,11 +80,11 @@ STARTED liferay-sample-iframe-1_1.0.0 [1592]
 
 IFrameはウィジェットとしてページに追加される。
 
-1. 任意のページの上部にある **Edit**(![Edit](../../../../images/icon-edit-pencil.png)) をクリックします。
+1. 任意のページの上部にある _Edit_ (![Edit](../../../../images/icon-edit-pencil.png)) をクリックします。
 
-1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（![Fragments and Widgets](../../../../images/icon-plus.png)）で、 **ウィジェット** をクリックします。
+1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（![Fragments and Widgets](../../../../images/icon-plus.png)）で、 _ウィジェット_をクリックします。
 
-1. Client Extensions &rarr; Counter Appウィジェットを見つけ、ページにドラッグします。 ［**Publish**］ をクリックします。
+1. Client Extensions &rarr; Counter Appウィジェットを見つけ、ページにドラッグします。 _［Publish］_をクリックします。
 
    ![カウンターアプリをページにドラッグします。](./using-an-iframe-client-extension/images/01.png)
 

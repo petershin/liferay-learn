@@ -121,11 +121,13 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 </div>
 ```
 
-コンテンツマッピングは、フラグメント内の編集可能なフィールドと、ウェブコンテンツやブログなどのアセットタイプのフィールドを結び付けます。 例えば、ウェブコンテンツ記事のプレビュー画像を表示するために、画像フィールドをマッピングすることができます。 マッピングフィールドの詳細については、 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) を参照してください。
+コンテンツマッピングは、フラグメント内の編集可能なフィールドと、ウェブコンテンツやブログなどのアセットタイプのフィールドを結び付けます。 例えば、ウェブコンテンツ記事のプレビュー画像を表示するために、画像フィールドをマッピングすることができます。 マッピングフィールドの詳細については、[Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)を参照してください。
 
 ## 編集可能なリンクの作成
 
-編集可能なリンク要素を作成するための特定の構文もあります。
+`data-lfr-editable-type` を `link`に設定することで、一般的なリンク要素を編集可能にすることができます。 `data-lfr-editable-id` は一意のIDでなければならない。
+
+編集可能なリンク要素は、さまざまな方法で作成できます。 次にいくつかの例を示します。
 
 ```html
 <a
@@ -137,6 +139,34 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
   Go to placeholder
 </a>
 ```
+
+`mailto:` URIスキームを使用して、リンクを電子メールに関連付けます：
+
+```html
+<a
+  href="mailto:email@liferay.com"
+  target="_blank"
+  data-lfr-editable-id="link-to-email"
+  data-lfr-editable-type="link"
+>
+  Send a Message
+</a>
+```
+
+リンクを電話番号に関連付けるには、 `tel:` URIスキームを使用する：
+
+```html
+<a
+  href="tel:555-2368"
+  target="_blank"
+  data-lfr-editable-id="link-to-phone"
+  data-lfr-editable-type="link"
+>
+  Who You Gonna Call?
+</a>
+```
+
+### Liferay Portal 7.3 GA2以下で編集可能なリンクを作成する
 
 Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 
@@ -150,7 +180,7 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 
 ![リンクの外観と動作を定義するためのオプションがいくつかあります。](./fragment-specific-tags-reference/images/03.png)
 
-編集可能なリンクの詳細は、 [Editable Links](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を参照してください。
+編集可能なリンクの詳細は、[Editable Links](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を参照してください。
 
 ## 編集可能な HTML の作成
 
@@ -172,7 +202,7 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 
 ## フラグメント内にウィジェットを含める
 
-各ウィジェットには登録名と対応する `lfr-widget-[name]` タグがあり、フラグメントに埋め込むために使用する必要があります。 例えば、メニュー表示ウィジェットは `nav`として登録されているので、そのタグは `<lfr-widget-nav />`です。 このようにブロックに埋め込むことができる：
+各ウィジェットには、登録名と対応する `lfr-widget-[name]` タグがあり、フラグメントに埋め込むために使用する必要があります。 例えば、メニュー表示ウィジェットは `nav`として登録されているので、そのタグは `<lfr-widget-nav />`です。 このようにブロックに埋め込むことができる：
 
 ```html
 <div class="nav-widget">
@@ -268,9 +298,9 @@ localizable` 属性は、`configurationRole` プロパティが `style` に設�
   }
 ```
 
-このサンプルコードを使って、ページのターゲット言語に応じてボタンの種類を変更することができます。 次の例では、 **Contact Us** / **Contacto** ボタン・フラグメントは、 `localizable` 属性を `true` に設定し、 `buttonType` フィールドを設定しています。 この例では、この属性を使って、ページがen-US言語を使っているときは **Primary** ボタンのタイプを設定し（A）、ページがes-ES言語を使っているときは **Outline Primary** タイプを設定しています（B）。
+このサンプルコードを使って、ページのターゲット言語に応じてボタンの種類を変更することができます。 次の例では、 _Contact Us_/_Contacto_ ボタン・フラグメントは、 `localizable` 属性を `true` に設定し、 `buttonType` フィールドを設定しています。 この例では、この属性を使って、ページがen-US言語を使っているときは _Primary_ ボタンのタイプを設定し（A）、ページがes-ES言語を使っているときは _Outline Primary_ タイプを設定しています（B）。
 
-![フラグメント内のローカライズ可能な要素は、「全般」タブの下に国旗アイコンを表示し、言語ごとに異なる設定をサポートします。](./fragment-specific-tags-reference/images/04.png)
+![フラグメント内のローカライズ可能な要素は、Generalタブの下に国旗アイコンを表示し、言語ごとに異なる設定をサポートします。](./fragment-specific-tags-reference/images/04.png)
 
 ```{tip}
 フラグメントの一般設定の下にある旗のアイコンは、設定フィールドがローカライズ可能であることを示します。 

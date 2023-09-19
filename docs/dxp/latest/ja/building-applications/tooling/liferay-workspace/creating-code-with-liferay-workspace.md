@@ -44,9 +44,27 @@ Liferay Workspaceは、Liferay開発プロジェクトを作成および管理�
 
 Liferay DXPで実行するコードを作成するには、それをデプロイするLiferayランタイムが必要です。 したがって、Liferay Workspaceをインストールした後の最初のタスクは、Liferayバンドルをワークスペースに追加することです。
 
+### Liferay CLIツールでLiferay Workspaceを使う
+
+[Liferay CLI](../other-tools/liferay-cli-tool.md) ツールは Liferay Workspace と一緒に使うことができます。 ツールのインストールとプロジェクトの生成方法についてはLiferay CLIの記事を参照してください。
+
+```{note}
+Liferayワークスペースは独自のノードバージョンをダウンロードします（つまり、あなたのシステムのバージョンとは限りません）。 異なるノードのバージョンが必要な場合は、build.gradleファイルで宣言する。
+```
+
+```gradle
+node {
+    nodeVersion = "16.18.1"
+    npmVersion = "8.19.2"
+    ...
+}
+```
+
+`gw clean` を実行して、ビルド・キャッシュをクリーン・アウトしてください。
+
 ## Liferay WorkspaceでThemes Generatorを使用する
 
-Liferay Themes Generatorは、サイトのルック＆フィールを変更するためのテーマを作成するためのnode.jsベースのツールです。 これらのプロジェクトは、Liferay Workspaceで管理することもできます。 テーマプロジェクトは、Bladeを使用するか手動で作成できます。
+Liferay Themes Generatorはnode.jsベースのツールで、サイトのルックアンドフィールを変更するためのテーマを作成します。 これらのプロジェクトは、Liferay Workspaceで管理することもできます。 テーマプロジェクトは、Bladeを使用するか手動で作成できます。
 
 Bladeを使用してTheme Generatorプロジェクトを作成するには、次のコマンドを使用します。
 
@@ -84,9 +102,9 @@ Workspaceがプロジェクトを認識していることを確認するには�
 
 1. 対象となるLiferayリリースを見つけます。
 
-   **DXP：** [［Liferay Workspace Target Versions］](https://help.liferay.com/hc/ja/articles/360041818312) ページに移動し、バンドルURLをクリップボードにコピーします。
+   **DXP：** [releases-cdn.liferay.com/dxp](https://releases-cdn.liferay.com/dxp)をブラウズして、必要なバンドルを見つけ、そのURLをクリップボードにコピーします。
 
-   **CE：** [releases-cdn.liferay.com/portal](https://releases-cdn.liferay.com/portal) を閲覧し、必要なバンドルを見つけて、そのURLをクリップボードにコピーします。
+   **CE：**[releases-cdn.liferay.com/portal](https://releases-cdn.liferay.com/portal)を閲覧し、必要なバンドルを見つけて、そのURLをクリップボードにコピーします。
 
 1. ワークスペースのルートフォルダから`gradle.properties`を開き、バンドルURLプロパティを設定します。
 
@@ -142,5 +160,5 @@ Liferay Workspaceに追加されたバンドルにコードをデプロイする
 
 ## 関連トピック
 
-* [LiferayのDockerコンテナの設定](./configuring-a-liferay-docker-container.md)
-* [Blade CLIを使用したプロジェクトの生成](../blade-cli/generating-projects-with-blade-cli.md)
+* [Configuring a Liferay Docker Container](./configuring-a-liferay-docker-container.md)
+* [Generating Projects with Blade CLI](../blade-cli/generating-projects-with-blade-cli.md)

@@ -7,13 +7,11 @@
 
 以下のセクションでは、インターフェイスのこれらの部分の使用方法について説明します。 ページ フラグメントの作成方法については、 [Developing Page Fragments](../../developing-page-fragments/developing-fragments-intro.md) を参照してください。
 
-<a name="code-editor" />
-
 ## コードエディタ
 
 コードエディタは 4 つのペインに分割されます。
 
-**HTML:** 動的動作を追加するために使用できる Liferay Portal 固有のタグおよび FreeMarker ( [代替 (角括弧) 構文](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html) を使用) とともに、標準の HTML をサポートします。
+**HTML:** 動的動作を追加するために使用できる Liferay Portal 固有のタグおよび FreeMarker ([代替 (角括弧) 構文](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html)を使用) とともに、標準の HTML をサポートします。
 
 ```{tip}
 `$(`と入力すると、自動補完機能を使って変数名の検索を開始します。 自動補完機能を使用してtaglib名を検索するには、`[@`と入力します。
@@ -26,8 +24,6 @@
 **プレビュー:** コードを記述すると更新されるコンポーネントのライブ プレビューを提供します。 デスクトップ、モバイル、タブレット、および拡張ビューを切り替えることができます。
 
 ![フラグメント エディタは、フラグメントのすべての部分を作成するための環境を提供します。](./page-fragment-editor-interface-reference/images/01.png)
-
-<a name="configuration" />
 
 ## 設定
 
@@ -42,12 +38,6 @@
 ```
 
 構成値は、HTML ペインの FreeMarker コンテキストを介してページ フラグメントで使用できるようになります。 設定オプションを HTML の条件値と組み合わせて、ユーザーに動的なエクスペリエンスを作成できます。 JavaScript を介してこれらの値にアクセスすることもできます。 詳細は、[Making Page Fragments Configurable](../../developing-page-fragments/adding-configuration-options-to-fragments.md) を参照してください。
-
-DXP 7.3 以降では、ページの上部にあるチェックボックスを選択して、フラグメントをキャッシュ可能にすることもできます。 このオプションを有効にすると、フラグメントがページに追加されるときにフラグメントがキャッシュに追加され、これらのフラグメントを含むページのパフォーマンスが向上します。
-
-![フラグメントをキャッシュしてページのパフォーマンスを向上させるには、 [キャッシュ可能] オプションをオンにします。](./page-fragment-editor-interface-reference/images/02.png)
-
-<a name="additional-information" />
 
 ## 関連トピック
 

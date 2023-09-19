@@ -15,7 +15,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 * [Yeoman](https://yeoman.io/)
 * [Yarn](https://classic.yarnpkg.com/)
 
-NPM と Yarn は、依存するツールキットとモジュールをインストールするために使用するパッケージ マネージャーです。
+NPMとYarnは、ツールキットとそれが依存するモジュールをインストールするために使うパッケージ・マネージャーだ。
 
 1. [Node.js LTS](https://nodejs.org/en/download/) を介して NPM と Node.js をインストールすることから始めます。
 
@@ -111,13 +111,12 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 ジェネレータは、プロジェクト名から派生したフォルダに各プロジェクトを作成します。 この例では、プロジェクト名を `Sample Liferay Fragments` としたので、ジェネレータは `sample-liferay-fragments`というプロジェクト フォルダを作成します。
 
 ## サンプルのフラグメントセットをインポートする
-
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順でサンプルのフラグメントセットをLiferayにインポートします：
+Then, follow these steps to import the sample Fragment Set to Liferay:
 
-1. プロジェクトのルートフォルダ（例：`sample-liferay-fragments`）で `yarn run import` コマンドを実行し、フラグメントセットを Liferay インスタンスにインポートします。あるいは、[手動でフラグメントセットをインポートする](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md)こともできます。
+1. Import the Fragment Set to your Liferay instance by invoking the `yarn run import` command in the project's root folder (e.g., `sample-liferay-fragments`). Alternatively, you can [import the Fragment Set manually](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
 
     ```bash
     cd sample-liferay-fragments
@@ -147,17 +146,13 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
     Done in 21.43s.
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
 
     ![セットが利用可能です。](./using-the-fragments-toolkit/images/01.png)
 
     ```{note}
     Liferay DXP 7.1および7.2では、代わりにプロダクトメニューの*サイト* → *サイトビルダー* → *ページ フラグメント*に移動して、*フラグメント*ページを表示します。
     ```
-
-1. フラグメントを選択して、フラグメント エディターで表示します。
-
-    ![React を使用したフラグメントのサンプルです。](./using-the-fragments-toolkit/images/02.png)
 
 フラグメントセットを正常にデプロイしました。
 
@@ -327,7 +322,7 @@ NPM と Yarn は、依存するツールキットとモジュールをインス�
 
 
 
-たとえば、上記の HTML から構築し、 [Clay](https://clayui.com/) の [Bootstrap](https://getbootstrap.com/) ベースのコンポーネントを使用して、次の `index.html` に示すように、注目を集める見出しと説明を持つフラグメントを作成できます。
+たとえば、上記の HTML から構築し、[Clay](https://clayui.com/) の [Bootstrap](https://getbootstrap.com/) ベースのコンポーネントを使用して、次の `index.html` に示すように、注目を集める見出しと説明を持つフラグメントを作成できます。
 
 ```html
 <div class="component-my-jumbotron">
@@ -386,7 +381,7 @@ Liferay 7.2以下を使用している場合は、[フラグメント固有の�
 * `<hr/>` 要素と次の `<p ...` 要素は、それぞれ水平方向の罫線と別の編集可能な段落を生成します。
 * `<a class="btn btn-primary btn-lg" ...` は変更可能なリンクを指定します。 `btn-primary` クラスはそれをメイン ボタンとしてスタイル設定し、`btn-lg` はそれを拡大します。 `href="#"` 属性は、リンクをクリックしたときにユーザーをページの上部に移動します。 `data-lfr-editable-type="link"` 属性は、リンクを[編集可能](../reference/fragments/fragment-specific-tags-reference.md)にします。
 
-フラグメントにリソースを含めることもできます。 詳細は、 [フラグメントにデフォルトのリソースを含める](./including-default-resources-with-fragments.md) を参照してください。
+フラグメントにリソースを含めることもできます。 詳細は、[Including Default Resources in Fragments](./including-default-resources-with-fragments.md)を参照してください。
 
 ```{note}
 フラグメントと設定オブジェクトは JavaScript の引数として渡され、それぞれ `fragmentElement` と `configuration`パラメーターとして利用できます。
@@ -402,11 +397,11 @@ Liferay 7.2以下を使用している場合は、[フラグメント固有の�
     yarn run import
     ```
 
-1. フラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがリストに表示されます。
+1. フラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがリストに表示されます。
 
-![セットが利用可能です。](./using-the-fragments-toolkit/images/03.png)
+![セットが利用可能です。](./using-the-fragments-toolkit/images/02.png)
 
-これで、フラグメント ツールキットを使用してフラグメントを作成および管理する方法がわかりました。 ツールキット コマンドの詳細は、 [フラグメントツールキットコマンドリファレンス](../reference/fragments/fragments-toolkit-command-reference.md) を参照してください。
+これで、フラグメント ツールキットを使用してフラグメントを作成および管理する方法がわかりました。 ツールキット コマンドの詳細は、[Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md) を参照してください。
 
 ## 関連情報
 

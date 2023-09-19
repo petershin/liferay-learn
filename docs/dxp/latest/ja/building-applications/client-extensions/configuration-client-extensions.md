@@ -1,9 +1,9 @@
 ---
 toc:
-- ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
-- ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
+  - ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
+  - ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ---
-# コンフィギュレーション・クライアント拡張機能
+# クライアント拡張の設定
 
 ```{toctree}
 :maxdepth: 3
@@ -12,29 +12,29 @@ configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
 configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ```
 
-{bdg-secondary}`7.4 U45+/GA45+`
+{bdg-secondary}`利用可能な Liferay 7.4`
 
-Liferayのインスタンス構成は、クライアントエクステンションでデプロイ可能です。 例えば、OAuth2認証プロファイルをクライアント拡張設定として導入し、認証を必要とする他のクライアント拡張を有効にすることができます。
+Liferayのインスタンス設定は、クライアント拡張でデプロイ可能です。 例えば、OAuth2認証プロファイルを設定クライアント拡張としてデプロイし、認証を必要とする他のクライアント拡張を有効にできます。
 
-## OAuthヘッドレスサーバ・クライアント拡張機能
+## OAuthヘッドレスサーバークライアント拡張
 
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ (オンプレミス）`
+{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
 
-クライアントエクステンションを使用すると、 `Headless Server` クライアントプロファイルで事前に構成された Liferay OAuth2 アプリケーションを構成することができます。 この種の認証プロファイルは、特定のユーザーによって許可されていないAPI呼び出しに必要です。
+クライアント拡張を使用すると、`Headless Server`クライアントプロファイルで事前に構成されたLiferay OAuth2 アプリケーションを構成することができます。 この種の認証プロファイルは、特定のユーザーによって認証されていないAPI呼び出しに必要です。
 
-`client-extension.yaml` ファイルに OAuth headless server client extension を指定します：
+`client-extension.yaml`ファイルにOAuthヘッドレスサーバークライアント拡張を指定します。
 
 ```yaml
 type: oAuthApplicationHeadlessServer
 ```
 
-## OAuthユーザーエージェントクライアント拡張機能
+## OAuthユーザーエージェントクライアント拡張
 
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ (オンプレミス）`
+{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
 
-クライアントエクステンションを使用すると、 `User Agent Application` クライアントプロファイルで事前に設定された Liferay OAuth2 アプリケーションを構成することができます。 この種の認証プロファイルは、特定のユーザーによって許可されたAPIコール(例えば、他の [マイクロサービスクライアント拡張](./microservice-client-extensions.md)を使用してLiferay APIにRESTコールを行うなど）に必要です。
+クライアント拡張を使用すると、`User Agent Application`クライアントプロファイルで事前に設定された Liferay OAuth2 アプリケーションを構成することができます。 この種の認証プロファイルは、特定のユーザーによって認証されたAPI呼び出し（例えば、他の [マイクロサービスクライアント拡張](./microservice-client-extensions.md)を使用してLiferay APIにREST呼び出しを行うなど）に必要です。
 
-`client-extension.yaml` ファイルに OAuth ユーザーエージェントクライアント拡張を指定します：
+`client-extension.yaml`ファイルにOAuth ユーザーエージェントクライアント拡張を指定します。
 
 ```yaml
 type: oAuthApplicationUserAgent
@@ -42,5 +42,5 @@ type: oAuthApplicationUserAgent
 
 ## 関連トピック
 
-* [クライアントエクステンションの紹介](../client-extensions.md)
-* [`client-extension.yaml`でクライアント拡張機能を設定する。](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)
+* [クライアント拡張の概要](../client-extensions.md)
+* [`client-extension.yaml`でのクライアント拡張の設定](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

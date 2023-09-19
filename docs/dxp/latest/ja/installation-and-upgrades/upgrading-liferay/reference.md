@@ -1,19 +1,21 @@
 ---
 toc:
-- ./reference/data-cleanup.md
-- ./reference/data-removal.md
-- ./reference/database-upgrade-options.md
-- ./reference/database-upgrade-tool-reference.md
-- ./reference/default-setting-changes-in-7-4.md
-- ./reference/default-setting-changes-in-7-3.md
-- ./reference/default-setting-changes-in-7-2.md
-- ./reference/file-store-updates.md
-- ./reference/maintenance-mode-and-deprecations-in-7-4.md
-- ./reference/maintenance-mode-and-deprecations-in-7-3.md
-- ./reference/maintenance-mode-and-deprecations-in-7-2.md
-- ./reference/renamed-language-keys.md
-- ./reference/troubleshooting-upgrades.md
-- ./reference/upgrade-reports.md
+  - ./reference/data-cleanup.md
+  - ./reference/data-removal.md
+  - ./reference/database-upgrade-options.md
+  - ./reference/database-upgrade-tool-reference.md
+  - ./reference/default-setting-changes-in-7-4.md
+  - ./reference/default-setting-changes-in-7-3.md
+  - ./reference/default-setting-changes-in-7-2.md
+  - ./reference/file-store-updates.md
+  - ./reference/maintenance-mode-and-deprecations-in-7-4.md
+  - ./reference/maintenance-mode-and-deprecations-in-7-3.md
+  - ./reference/maintenance-mode-and-deprecations-in-7-2.md
+  - ./reference/renamed-language-keys.md
+  - ./reference/troubleshooting-upgrades.md
+  - ./reference/upgrade-report.md
+  - ./reference/upgrade-log-context.md
+  - ./reference/monitoring-upgrades-with-mbeans.md
 ---
 # リファレンス
 
@@ -33,7 +35,9 @@ reference/maintenance-mode-and-deprecations-in-7-3.md
 reference/maintenance-mode-and-deprecations-in-7-2.md
 reference/renamed-language-keys.md
 reference/troubleshooting-upgrades.md
-reference/upgrade-reports.md
+reference/upgrade-report.md
+reference/upgrade-log-context.md
+reference/monitoring-upgrades-with-mbeans.md
 ```
 
 * [データ初期化](./reference/data-cleanup.md)
@@ -48,5 +52,7 @@ reference/upgrade-reports.md
 * [7.3のメンテナンスモードと非推奨](./reference/maintenance-mode-and-deprecations-in-7-3.md)
 * [7.2のメンテナンスモードと非推奨](./reference/maintenance-mode-and-deprecations-in-7-2.md)
 * [言語キーの名称変更](./reference/renamed-language-keys.md)
-* [アップグレードのトラブルシューティング](./reference/troubleshooting-upgrades.md)
-* [アップグレードのレポート](./reference/upgrade-reports.md)
+* [Troubleshooting Upgrades](./reference/troubleshooting-upgrades.md)
+* [アップグレードレポート](./reference/upgrade-report.md)
+* [アップグレードログコンテキスト](./reference/upgrade-log-context.md)
+* [MBeansによるアップグレードの監視](./reference/monitoring-upgrades-with-mbeans.md)

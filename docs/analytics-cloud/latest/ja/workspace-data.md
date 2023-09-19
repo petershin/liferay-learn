@@ -1,9 +1,9 @@
 ---
 toc:
-- ./workspace-data/managing-api-access.md
-- ./workspace-data/data-control-and-privacy.md
-- ./workspace-data/managing-data-sources.md
-- ./workspace-data/definitions.md
+  - ./workspace-data/managing-api-access.md
+  - ./workspace-data/data-control-and-privacy.md
+  - ./workspace-data/managing-data-sources.md
+  - ./workspace-data/definitions.md
 ---
 # ワークスペース データ
 
@@ -38,4 +38,3 @@ workspace-data/definitions.md
 - [イベントの定義](./workspace-data/definitions/definitions-for-events.md)
 - [イベント属性の定義](./workspace-data/definitions/definitions-for-event-attributes.md)
 - [検索クエリの設定](./workspace-data/definitions/setting-a-search-query.md)
-- [インタレスト・トピックスの管理](./workspace-data/definitions/managing-interest-topics.md)

@@ -23,7 +23,7 @@ Current Totalsパネルには、Analytics Cloudによって追跡された既知
 ![［Current Totals］パネルには、サイトへの訪問者の合計数が表示されます。](./individuals-dashboard/images/01.png)
 
 ```{note}
-ログイン時にメールアドレスがAnalytics Cloudと同期したユーザーデータと照合された時点で、個人が判明したとみなされます。 新規ユーザーがサイトに登録した場合、そのデータがAnalytics Cloudと同期し、既知の個人として表示されるまでに最大2時間かかる場合があります。
+ログイン時にメールアドレスがAnalytics Cloudと同期されたユーザーデータと照合されると、その個人が既知であるとみなされます。 新規ユーザーがサイトに登録すると、そのデータが Analytics Cloud と同期され、既知の個人として表示されるまでに最大 2 時間かかる場合があります。
 ```
 
 また、パネルには、過去30日と比較した総数の変化率も表示されます。
@@ -54,21 +54,21 @@ Current Totalsパネルには、Analytics Cloudによって追跡された既知
 
 興味のあるトピックの全リストを表示するには、パネル内の ［**View All Interests**］ をクリックします。 または、ページ上部の［関心］タブをクリックします。
 
-関心の詳細については、 [Understanding Interests](../../workspace-data/definitions/managing-interest-topics.md#understanding-interests) を参照してください。
+関心の詳細については、 [興味のあるトピックの理解](./understanding-interests.md) を参照してください。
 
 ## 内訳
 
-［内訳］パネルは、訪問者の選択された属性に基づく分布情報を表示します。 これらの属性を利用することができます：
+［内訳］パネルは、訪問者の選択された属性に基づく分布情報を表示します。 これらの属性が利用できる：
 
 * `additionalName`: ミドルネーム
-* `birthDate`: 生年月日
-* `電子メール`: 電子メールアドレス
-* `familyName`: ファミリーネーム
+* `birthDate`: 誕生日
+* `電子メール`: メールアドレス
+* `familyName`: 家族名
 * `givenName`: 与えられた名前
-* `jobTitle`: ジョブタイトル
+* `jobTitle`: 職種
 * `languageId`: 優先言語
 * `modifiedDate`: 最終更新日
-* `screenName`: 画面名
+* `screenName`: スクリーン名
 
 ![Breakdownパネルは、選択された属性に基づいてディストリビューション情報を表示します。](./individuals-dashboard/images/05.png)
 

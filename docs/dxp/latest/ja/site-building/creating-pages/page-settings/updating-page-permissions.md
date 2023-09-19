@@ -1,27 +1,37 @@
 # ページ権限の更新
 
-デフォルトでは、ユーザーがサイトに参加すると、そのサイトのすべてのページが表示されます。 ただし、個々のページに対して、ユーザー [ロール](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)に基づいてアクセスを制限するための権限を設定することは可能です。
+デフォルトでは、ユーザーがサイトに参加すると、そのサイトのすべてのページを見ることができます。 ただし、ユーザー [ロール](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)に基づいてアクセスを制限するために、個々のページに対してパーミッションを設定することができます。
 
 ```{note}
-個々のページの権限は、サイトレベルの設定より優先されます。
+個々のページのパーミッションは、サイトレベルの設定よりも優先されます。
 ```
 
-以下の手順で、ページのアクセス権を更新します。
+以下の手順に従って、ページのパーミッションを更新してください：
 
-1. **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 **サイトビルダー** を展開し、 **ページ** をクリックします。
+1. *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *Site Builder*を展開し、 *Pages*をクリックします。
 
-1. 目的のページの **アクション** ボタン (![Actions Button](../../../images/icon-options.png)) をクリックし、 **アクセス権** を選択します。
+1. *Actions* ( ![Actions Button](../../../images/icon-options.png) ) をクリックし、 *Permissions*を選択する。
 
-    ![ページ権限は、コントロールパネルのサイトビルダーメニューにあります。](./updating-page-permissions/images/01.png)
+    ![ページのパーミッションはコントロールパネルのサイトビルダーメニューにあります。](./updating-page-permissions/images/01.png)
 
-1. 各ロールの権限を更新します。
+1. 各ロールの権限を更新する。
 
-    ![権限設定は、各ロールに応じた豊富なオプションが用意されています。](./updating-page-permissions/images/02.png)
+    ![パーミッションは、各役割に対して多くのオプションを提供する。](./updating-page-permissions/images/02.png)
 
-1. ［**Save**］ をクリックすると、変更が適用されます。
+1. *［Save］*をクリックして変更を適用します。
+
+## 権限付きページのコピー
+
+ページを権限付きでコピーするには
+
+1. *Site Menu* ( ![Product Menu](../../../images/icon-product-menu.png) ) を開き、 *Site Builder* &rarr; *Pages*を選択する。
+
+1. *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) をクリックし、 *Copy* &rarr; *Page With Permissions*を選択する。
+
+1. ページ名を入力し、 *Add*をクリックする。
 
 ## 関連トピック
 
 * [ロールと権限について](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
-* [ユーザーのロールへの割り当て](../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md)
+* [Assigning Users to Roles](../../../users-and-permissions/roles-and-permissions/assigning-users-to-roles.md)
 * [ページセットの設定](./configuring-page-sets.md)

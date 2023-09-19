@@ -1,89 +1,69 @@
 # GitHubリポジトリの設定
 
-Liferay Cloud のオンボーディングメールを受け取ると、 `dxpcloud` の組織でホストされている GitHub リポジトリがプロビジョニングされます。 このリポジトリは、チームの独立したプライベートなLiferay Cloud開発リポジトリのテンプレートであり、通常10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
+Liferay Cloud のオンボーディングメールを受け取ると、 `dxpcloud` 組織でホストされている GitHub リポジトリがプロビジョニングされます。 このリポジトリは、チームの独立したプライベートなLiferay Cloud開発リポジトリのテンプレートで、通常10営業日後に削除されます。 ユーザーは以下のことを行う必要があります：
 
 1. プロビジョニングされたリポジトリを独自のプライベートリポジトリに転送します。
-1. Webhookを使用して、自社のプライベートリポジトリとLiferay CloudのJenkins（CI）サービスを連携させます。
+1. Webhook を使用して、プライベートリポジトリを Liferay Cloud の Jenkins (CI) サービスと統合します。
 
-プロビジョニングされたリポジトリはGitHubにありますが、Jenkinsサービスのバージョン3.2.0以降ではGitLabリポジトリに転送できます。 これは、GitLabリポジトリへの管理者アクセス権で行う必要があります。
+プロビジョニングされたリポジトリはGitHubにありますが、Jenkinsサービスのバージョン3.2.0以降ではGitLabリポジトリに転送できます。 これは、GitLab リポジトリの管理者権限で行う必要があります。
 
 ```{note}
-リポジトリの管理者は、Cloud コンソールのプロジェクトの管理者と *同じ* とは限りません。
+リポジトリの管理者は、クラウドコンソールのプロジェクトの管理者と同じとは限りません。
 ```
 
 ## Jenkinsサービスの準備
 
-すでにLiferay Cloudインスタンスで [バージョン 4.x.x サービス](../reference/understanding-service-stack-versions.md) を使用している場合、Jenkins サービスはすでに GitLab と互換性があります。 アップグレードの詳細については、 [Liferay Cloud Stack のアップグレード](../reference/upgrading-your-liferay-cloud-stack.md) を参照してください。
-
-version 3.x.xのサービスを使用している場合は、 `［LCP.json］` で、 `［ci］` サービスを確認し、以下のJenkinsサービス以上のものを実行していることを確認してください：
-
-```
-liferaycloud/jenkins:2.222.1-3.2.0
-```
-
-そうでない場合は、次の手順に従ってアップグレードします：
-
-1. Jenkinsサービスを`liferaycloud/jenkins：2.222.1-3.2.0`バージョンに更新します。
-
-1. ルートフォルダーにある `［Jenkinsfile］` を削除します。
-
-1. 次の環境変数を追加します： `［LCP_CI_USE_DEFAULT_JENKINSFILE: true］`。
-
-1. Jenkinsサービスをデプロイします。
-
-```{note}
-Jenkinsfileをカスタマイズしている場合は、こちらのガイドに従って [Default Jenkinsfileの拡張](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) _ を行ってください。
-```
+Jenkinsfileをカスタマイズした場合は、このガイドに従って[デフォルトのJenkinsfileを拡張する](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)。
 
 ## GitLabリポジトリの作成
 
 まず、新しいGitLabリポジトリを作成します：
 
-1. [GitLab](https://gitlab.com) に移動します。
+1. [GitLab](https://gitlab.com)に移動します。
 
-1. ［**New project**］ をクリックします。
-
-    ![［新しいプロジェクト］をクリックして、新しいGitLabリポジトリの作成を開始します。](./configuring-your-gitlab-repository/images/01.png)
+1. _［New project］_ をクリックします。
+   
+   ![［新しいプロジェクト］をクリックして、新しいGitLabリポジトリの作成を開始します。](./configuring-your-gitlab-repository/images/01.png)
 
 1. プロジェクトのスラッグ（URL内のリポジトリ名）を提供します。
-
-    ![新しいリポジトリの詳細を入力します。](./configuring-your-gitlab-repository/images/02.png)
+   
+   ![新しいリポジトリの詳細を記入してください。](./configuring-your-gitlab-repository/images/02.png)
 
 1. 表示レベルをプライベートに設定します（無料ユーザーは無制限のプライベートリポジトリを使用できます）。
 
-1. **Initialize repository with a README** がチェックされていないことを確認します。
+1. _Initialize repository with a README_ がチェックされていないことを確認します。
 
-1. ［**Create project**］ をクリックします。
+1. _［Create project］_ をクリックします。
 
 ## GitHubからGitLabへの転送
 
 以下の手順に従って、プロビジョニング済みの GitHub リポジトリを自分の GitLab リポジトリに転送します：
 
 1. プロビジョニング済みのGitHubリポジトリをローカルでクローンします：
-
-    `git clone git@github.com:dxpcloud/example.git`
+   
+   `git clone git@github.com:dxpcloud/example.git` 
 
     ```{note}
     すでに他のプロバイダで作業するためにリポジトリをクローンしている場合は、このステップをスキップして、同じクローン内で作業することができます。
     ```
 
 1. 新しいGitリモートを追加し、GitLabをポイントします：
-
-    `git remote add gitlab git@gitlab.com:USERNAME/REPOSITORYNAME.git`
+   
+   `git remote add gitlab git@gitlab.com:USERNAME/REPOSITORYNAME.git`
 
 1. クローンされたリポジトリを新しいリモートリポジトリにプッシュします：
+   
+   `git push gitlab master`
 
-    `git push gitlab master`
-
-GitHub リポジトリの作成、クローン、プッシュについてのヘルプが必要な場合は、 [GitLab's documentation](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) を参照してください。
+GitHub リポジトリの作成、クローン、プッシュについてのヘルプが必要な場合は、 [GitLab's documentation](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)を参照してください。
 
 ## GitLabのアクセストークンの生成
 
 次に、JenkinsのビルドをトリガーするためにWebhookで使用するアクセストークンを作成します。
 
-1. [パーソナル・アクセストークンのページ](https://gitlab.com/profile/personal_access_tokens) に移動します。
-
-    ![GitLabの個人用アクセストークンを作成します。このトークンは、後で再度アクセスすることはできません。](./configuring-your-gitlab-repository/images/03.png)
+1. [パーソナル・アクセストークンのページ](https://gitlab.com/profile/personal_access_tokens)に移動します。
+   
+   ![GitLabのパーソナルアクセストークンを作成します。](./configuring-your-gitlab-repository/images/03.png)
 
 1. このアクセストークンの名前と有効期限を指定します。
 
@@ -93,7 +73,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
     * read_repository
     * write_repository
 
-1. [**Create personal access token**]をクリックします。
+1. [ _Create personal access token_]をクリックします。
 
 1. アクセストークンをコピーしてどこかに保存します（アクセストークンが再度表示されないためです）。
 
@@ -101,9 +81,9 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 最後に、新しいリポジトリを指すようにJenkinsサービスの環境変数を設定します：
 
-1. Liferay Cloud Console にログインし、 `infra` 環境で Jenkins サービスに移動します。
+1. Liferay Cloud Console にログインし、 `infra` 環境の Jenkins サービスに移動します。
 
-1. ［**環境変数**］ タブに移動します。
+1. _［環境変数］_ タブに移動します。
 
 1. 以下の環境変数を設定します：
 
@@ -128,47 +108,47 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 ## 追加のGitLab Webhook設定
 
-Liferay Cloud の Jenkins サービスは、選択した git SCM プロバイダの webhook を作成しますが、デフォルトのものしか作成されません。 GitLabのデフォルトのWebhookをGitHubやBitBucketのWebhookの機能と一致させるためには追加の設定が必要です。
+Liferay Cloud の Jenkins サービスは、選択した git SCM プロバイダのウェブフックを作成します。 GitLabのデフォルトのWebhookをGitHubやBitBucketのWebhookの機能と一致させるためには追加の設定が必要です。
 
 1. GitLabリポジトリに移動します。
 
-1. **Settings** に移動し ［**Webhooks**］ を選択します。
+1. _Settings_に移動し_［Webhooks］_を選択します。
 
-1. **Project Hooks** で、作成されたWebhookがリストされていることを確認します。
+1. _Project Hooks_で、作成されたWebhookがリストされていることを確認します。
 
-1. CI webhookの[**Edit**]ボタンをクリックします。
+1. CI webhookの[ _Edit_ ]ボタンをクリックします。
+   
+   ![リポジトリ用に自動的に作成されたWebhookを編集します。](./configuring-your-gitlab-repository/images/04.png)
 
-    ![リポジトリ用に自動作成されたWebhookを編集します。](./configuring-your-gitlab-repository/images/04.png)
+1. _［Tags push events］_と_［Comments］_をアンチェックします。
 
-1. ［**Tags push events**］ と ［**Comments**］ をアンチェックします。
+1. _［Enable SSL verification］_にチェックします。
 
-1. ［**Enable SSL verification**］ にチェックします。
-
-1. ［**変更を保存**］ クリックします。
+1. _［変更を保存］_クリックします。
 
 ## ビルドの確認
 
-プッシュされたブランチとマージリクエスト（GitLabのプルリクエストに相当）は、Liferay Cloud Consoleの **Builds** タブから確認またはデプロイできるビルドのトリガーとなります。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
+プッシュされたブランチとマージリクエスト（GitLab のプルリクエストに相当）がビルドのトリガーとなり、Liferay Cloud Console の _Builds_ タブからビルドの確認やデプロイができます。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
 
 ### プッシュされたブランチからのビルドの確認
 
 新しいGitプッシュがJenkinsビルドをトリガーすることを確認します：
 
-1. リポジトリに変更を加え（ファイルの追加など）、ブランチにコミットします：
+1. リポジトリに変更を加え（ファイルの追加など）、ブランチにコミットします： 
 
     ```bash
     git commit -m "Add file to test builds"
     ```
 
-1. ブランチをGitLabにプッシュします：
+1. ブランチをGitLabにプッシュします： 
 
     ```bash
     git push gitlab branch-name
     ```
 
-1. Liferay Cloud Console の **Builds** ページに移動します。
+1. Liferay Cloud Console の _Builds_ ページに移動します。
 
-1. **Builds** ページで、プッシュされたブランチのビルドが表示されることを確認します。
+1. _Builds_ ページで、プッシュされたブランチのビルドが表示されることを確認します。
 
 ### マージリクエストからのビルドの確認
 
@@ -178,11 +158,11 @@ Liferay Cloud の Jenkins サービスは、選択した git SCM プロバイダ
 
 1. マージリクエストに対して新しいビルドが作成されていることを確認します。
 
-1. Liferay Cloud Console の **Builds** ページに移動します。
+1. Liferay Cloud Console の _Builds_ ページに移動します。
 
 1. ブランチのリンクをクリックして、適切なビルドでコミットします。
-
-    ![Buildsページで、ブランチのリンクを確認し、ビルドをコミットします。](./configuring-your-gitlab-repository/images/05.png)
+   
+   ![Buildページで、ブランチのリンクを確認し、ビルドをコミットします。](./configuring-your-gitlab-repository/images/05.png)
 
 1. リンクが正しいGitLabページにリダイレクトすることを確認します。
 

@@ -1,16 +1,9 @@
 ---
 toc:
-- ./developer-guide/writing-a-similar-results-contributor.md
-- ./developer-guide/apis.md
+  - ./developer-guide/writing-a-similar-results-contributor.md
+  - ./developer-guide/search-headless-apis.md
 ---
 # 開発者ガイド
-
-```{toctree}
-:maxdepth: 2
-
-developer-guide/writing-a-similar-results-contributor.md
-developer-guide/apis.md
-```
 
 - [類似結果ウィジェットへのカスタムコンテンツの提供](developer-guide/writing-a-similar-results-contributor.md)
 - 集計
@@ -19,4 +12,4 @@ developer-guide/apis.md
 
 ## API
 
-- [API (近日公開！)](./developer-guide/apis.md)
+- [ヘッドレスAPIを検索する](./developer-guide/search-headless-apis.md)

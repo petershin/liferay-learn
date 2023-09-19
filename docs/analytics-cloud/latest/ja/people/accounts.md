@@ -1,4 +1,3 @@
-
 <!--- # Accounts
 
 If you have a [Salesforce data source](../connecting-data-sources/adding-a-salesforce-data-source.md), Analytics Cloud can import and analyze Salesforce account data. By combining Salesforce account data with data from other sources, Analytics Cloud presents a holistic view of the account and those in it.
@@ -45,7 +44,7 @@ The Activities tab shows the activities of the individuals in the account. A his
 
 ## Interests
 
-The Interests tab shows the topics of interest for the account’s individuals. Analytics Cloud identifies these topics via the same methodology it uses for individuals. For more information, see [Understanding Interests](../../workspace-data/managing-interest-topics.md#understanding-interests).
+The Interests tab shows the topics of interest for the account’s individuals. Analytics Cloud identifies these topics via the same methodology it uses for individuals. For more information, see [Understanding Interests](./individuals/understanding-interests.md).
 
 ## Segments
 

@@ -1,8 +1,8 @@
 # CSSクライアント拡張の使用
 
-{bdg-secondary}`Liferay 7.4 U45+/GA45+で利用可能`
+{bdg-secondary}`利用可能な Liferay 7.4`
 
-CSSクライアント拡張を使えば、テーマやLiferayのコードに依存することなく、ページスタイルをオーバーライドすることができます。 クライアント拡張（ [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) ）から始めます。
+CSSクライアント拡張を使えば、テーマやLiferayのコードに依存することなく、ページスタイルをオーバーライドすることができます。 クライアント拡張（ [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)）から始めます。
 
 ## 前提条件
 
@@ -11,7 +11,7 @@ CSSクライアント拡張を使えば、テーマやLiferayのコードに依�
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
+   対応するJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -28,23 +28,22 @@ CSSクライアント拡張を使えば、テーマやLiferayのコードに依�
 
 ## クライアント拡張の検討と修正
 
-CSSクライアント拡張は、サンプルワークスペースの `client-extensions/sample-global-css/` フォルダにあります。 `client-extension.yaml` ファイルに定義されています。
+CSS クライアント拡張はサンプルワークスペースの `client-extensions/liferay-sample-global-css/` フォルダにあります。 `client-extension.yaml` ファイルに定義されています。
 
 ```yaml
-sample-global-css:
-    name: Sample Global CSS
+liferay-sample-global-css:
+    name: Liferay Sample Global CSS
     type: globalCSS
     url: global.css
 ```
 
-クライアント拡張のIDは`sample-global-css`で、`タイプ`や追加するCSSファイルなど、CSSクライアント拡張の主要な設定項目が含まれています。 利用可能なプロパティの詳細については、[CSS YAML設定リファレンス](../css-yaml-configuration-reference.md) を参照してください。
+クライアントエクステンションのIDは `liferay-sample-global-css` で、 `タイプ` や追加するCSSファイルなど、CSSクライアントエクステンションの主要な設定が含まれています。 利用可能なプロパティの詳細については、[CSS YAML設定リファレンス](../css-yaml-configuration-reference.md) を参照してください。
 
 また、`assemble`ブロックが含まれています。
 
 ```yaml
 assemble:
     - from: assets
-      include: "**/*"
       into: static
 ```
 
@@ -53,12 +52,14 @@ assemble:
 `assets/global.css` ファイルにこのCSSが含まれています。
 
 ```css
-body {
-    color: #0054f0;
+.logo::after {
+   color: #0054f0;
+   content: 'Liferay Sample Global CSS';
+   margin-left: 2rem;
 }
 ```
 
-クライアント拡張が有効な場合の、ページの`body`の色を変更します。
+これは、クライアントエクステンションが有効になっているときに、ホームページのLiferayロゴの色を変更します。
 
 ボタンの背景色を変更するCSSを追加します。 `global.css`ファイルを開き、`.btn-primary`クラスの宣言を追加し、 `background-color`を指定します。
 
@@ -71,11 +72,10 @@ body {
 ここで、クライアント拡張をデプロイします。
 
 ## Liferayにクライアント拡張をデプロイする
-
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Liferayが起動したら、サンプルワークスペース内のクライアント拡張のフォルダからこのコマンドを実行します：
+Once Liferay starts, run this command from the client extension's folder in the sample workspace:
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
@@ -103,19 +103,19 @@ STARTED sample-global-css_1.0.0
 
 デプロイされたクライアント拡張を使用するために、Liferayのページを設定します。
 
-1. 少なくとも1つのボタンがあるページで、上部にある **編集** アイコン ![Edit icon](../../../../images/icon-edit-pencil.png) をクリックします。
+1. 少なくとも1つのボタンがあるページで、上部にある _編集_ アイコン ![Edit icon](../../../../images/icon-edit-pencil.png) をクリックします。
 
 1. サイドバーの［Page Design Options］メニュー（![Page Design Options icon](../../../../images/icon-format.png)）に移動し、メニュー上部にある設定アイコン（![Configuration icon](../../../../images/icon-cog3.png)）をクリックします。
 
    ![［Page Design Options］メニューの歯車アイコンをクリックすると、このクライアント拡張の設定にアクセスできます。](./using-a-css-client-extension/images/01.png)
 
-1. ページ下部の ［**CSS Client Extensions**］ のセクションで、 ［**Add CSS Client Extensions**］ をクリックします。
+1. ページ下部の*［CSS Client Extensions］*のセクションで、*［Add CSS Client Extensions］*をクリックします。
 
    ![リストからCSSクライアント拡張を追加します。](./using-a-css-client-extension/images/02.png)
 
-1. ポップアップモーダルからCSSクライアント拡張を選択し、 ［**追加**］ をクリックします。
+1. ポップアップモーダルからCSSクライアント拡張を選択し、 *［追加］*をクリックします。
 
-1. ［**保存**］ をクリックします。
+1. *［保存］* をクリックします。
 
 これで、クライアント拡張の設定は完了です。 ページエディタで、ボタンの背景色が、CSSで指定した色になりました。 編集モード以外でページにCSSが適用されるのを確認するには、ページを公開する必要があります。
 

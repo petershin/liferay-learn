@@ -9,61 +9,61 @@ toc:
 ---
 # クライアント拡張
 
-{bdg-secondary}`Liferay 7.4 U45+/GA45+で利用可能`
+{bdg-secondary}`利用可能な Liferay 7.4`
 
-クライアントエクステンションは、OSGiモジュールを使用せずにLiferayを拡張します。 クライアントエクステンションは、自社ホスト、Liferay Cloudを問わず、あらゆるLiferay環境に導入することが可能です。 これらは、 [Liferay objects](./objects.md)のような組み込みの設定とともに、Liferay Cloud で Liferay をカスタマイズする主要な方法でもあります。
+クライアント拡張はOSGiモジュールを使わずにLiferayを拡張します。 クライアント拡張機能は、Liferay環境であれば、自社ホストでもLiferayクラウド上でもデプロイできます。 また、 [Liferay objects](./objects.md)のようなビルトインコンフィギュレーションとともに、Liferay CloudでLiferayをカスタマイズする主な方法でもあります。
 
-[OSGiモジュール](../liferay-internals/fundamentals/module-projects.md) や [テーマ](../site-building/site-appearance/themes/introduction-to-themes.md) のような他のLiferay拡張がLiferayそのものを変更したり機能を追加するのに対し、クライアント拡張はLiferayのAPIのみをインターフェースとします。 この疎結合により、クライアント拡張は、バージョン間でほとんど変わらないAPIにのみ依存するため、より柔軟で、アップグレード後の環境に適用しやすくなります。 また、クライアント拡張はLiferayの外部で実行され、オブジェクトと統合されるため、接続に余分なコードは必要なく、好きなプログラミング言語や技術を使用してクライアント拡張を作成することができます。
+[OSGiモジュール](../liferay-internals/fundamentals/module-projects.md) や [テーマ](../site-building/site-appearance/themes/introduction-to-themes.md) のような他のLiferayエクステンションがLiferayそのものを変更したり機能を追加したりするのに対して、クライアントエクステンションはLiferayのAPIだけをインターフェイスにします。 この疎結合により、クライアント拡張はより柔軟になり、バージョン間でほとんど変更されないAPIにのみ依存するため、アップグレード後の環境に適用しやすくなります。 また、クライアント拡張はLiferayの外部で実行され、オブジェクトと統合されるため、接続に余分なコードは必要ありません。
 
-![クライアントエクステンションは、Liferay本体を変更することなく、特定のビジネス要件に対応するために必要な主要なカスタマイズ機能を提供します。](./client-extensions/images/01.png)
+![クライアントエクステンションは、Liferay自体を変更することなく、特定のビジネス要件に対応するために必要な主要なカスタマイズ機能を提供します。](./client-extensions/images/01.png)
 
-クライアントエクステンションを使用すると、次のことができます。
+クライアント・エクステンションを使用すると、次のことが可能になります。
 
-* Liferayのコードに依存することなく、 [カスタムJavaScriptやCSS](#front-end-client-extensions) を適用することができます。
-* Liferay ページの [カスタム要素](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) に、リモートでホストされているアプリケーションを埋め込む。
-* [クライアント拡張に変換することで、同じ設定やオブジェクトを複数の環境に適用することができます](#configuration-client-extensions)
-* カスタムサービスや [関数を呼び出す](#microservice-client-extensions) Liferay の外部で実行される（例えば、REST エンドポイント）、お好みのプログラミング言語や技術を使用する。
+* [カスタムJavaScriptまたはCSS](#front-end-client-extensions)を適用し、Liferayのコードに依存しないようにする。
+* リモートでホストされているアプリケーションを Liferay ページの [カスタムエレメント](./client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) に埋め込む
+* 同じコンフィギュレーションやオブジェクトを、 [クライアント拡張に変換することで、複数の環境に適用](#configuration-client-extensions)
+* カスタムサービスや [関数を呼び出す](#microservice-client-extensions) Liferayの外部（例：RESTエンドポイント）で、お好みのプログラミング言語やテクノロジーを使って実行する。
 
-## クライアントエクステンションの種類
+## クライアント拡張機能の種類
 
-[Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md) を使用して Client エクステンションを開発し、デプロイします。 クライアント拡張は [ヘッドレスAPI](../headless-delivery/using-liferay-as-a-headless-platform.md)を介してLiferayと通信します。
+[Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md) を使用して、クライアント拡張機能を開発・配備します。 クライアント拡張は [ヘッドレス API](../headless-delivery/using-liferay-as-a-headless-platform.md)を介して Liferay と通信します。
 
-以上が、クライアントエクステンションの分類になります：
+これらはクライアント・エクステンションの分類である：
 
 * [バッチクライアント拡張機能](#batch-client-extensions)
-* [コンフィギュレーション・クライアント・エクステンション](#configuration-client-extensions)
-* [フロントエンドクライアントエクステンション](#front-end-client-extensions)
-* [マイクロサービスクライアントの拡張機能](#microservice-client-extensions)
+* [設定クライアントの拡張](#configuration-client-extensions)
+* [フロントエンドクライアントの拡張](#front-end-client-extensions)
+* [マイクロサービスクライアントの拡張](#microservice-client-extensions)
 
 ### バッチクライアント拡張機能
 
-{bdg-link-primary}` [Dev Feature](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) `
+{bdg-link-primary}`[Dev Feature](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags)`
 
-バッチクライアント拡張は、 [オブジェクト定義](./objects/creating-and-managing-objects/exporting-and-importing-object-definitions.md) や [ワークフロー定義](../process-automation/workflow/introduction-to-workflow.md)などのデータエンティティを Liferay インスタンスに提供します。 [バッチエンジンフレームワーク](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md)を介してデータをエクスポートすることで、バッチクライアント拡張機能を作成します。
+バッチクライアント拡張は、 [オブジェクト定義](./objects/creating-and-managing-objects/exporting-and-importing-object-definitions.md) や [ワークフロー定義](../process-automation/workflow/introduction-to-workflow.md)のようなデータエンティティを Liferay インスタンスに提供します。 [バッチエンジンフレームワーク](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md)を介してデータをエクスポートすることで、バッチクライアントの拡張機能を作成します。
 
-この特定のタイプの詳細については、 [バッチクライアント拡張機能](./client-extensions/batch-client-extensions.md) を参照してください。
+このタイプの詳細については [Batch Client Extensions](./client-extensions/batch-client-extensions.md) を参照のこと。
 
-### コンフィギュレーション・クライアント拡張機能
+### クライアント拡張の設定
 
 コンフィギュレーションクライアントエクステンションは、Liferayインスタンス内の機能を変更するための特定のコンフィギュレーションを提供します。
 
-これらは、他のクライアント拡張（ [マイクロサービスクライアント拡張](#microservice-client-extensions) など）と一緒に使用することができます。 例えば、OAuthユーザーエージェントクライアントエクステンションを使用して、ユーザートリガーアクションイベントで動作するクライアントエクステンションを認証することができます。
+これらは、 [マイクロサービスクライアント拡張](#microservice-client-extensions)のような他のクライアント拡張と一緒に使用することができます。 たとえば、OAuth ユーザーエージェントクライアント拡張を使用して、ユーザートリガーのアクションイベントで動作するクライアント拡張を認証することができます。
 
-具体的な種類については、 [コンフィギュレーション・クライアント拡張機能](./client-extensions/configuration-client-extensions.md) をご参照ください。
+特定のタイプの詳細については、 [Configuration Client Extensions](./client-extensions/configuration-client-extensions.md)。
 
-### フロントエンドクライアント拡張機能
+### フロントエンドのクライアント拡張
 
-フロントエンドクライアントエクステンションは、特定のページに表示するリソースを提供します。 テーマリソースやカスタムHTML要素をクライアントエクステンションで提供することができるようになりました。 ほとんどのフロントエンドクライアントエクステンションは、Liferayインスタンスに **静的リソース** を提供します。
+フロントエンドクライアントエクステンションは、特定のページに表示するリソースを提供します。 テーマリソースまたはカスタム HTML 要素をクライアント拡張機能で提供できるようになりました。 ほとんどのフロントエンドクライアントエクステンションは *静的リソース* を Liferay インスタンスに提供します。
 
-具体的な種類については、 [フロントエンドクライアント拡張機能](./client-extensions/front-end-client-extensions.md) をご参照ください。
+特定のタイプの詳細については、 [Front-end Client Extensions](./client-extensions/front-end-client-extensions.md) を参照のこと。
 
-### マイクロサービスクライアント拡張機能
+### マイクロサービスのクライアント拡張
 
-マイクロサービスクライアント拡張は、Liferay内でトリガーするAPIエンドポイント（オブジェクトやワークフローのアクションなど）を提供します。 これらのアクションイベントがAPIを呼び出したら、Liferayの外で好きな機能を別の **マイクロサービス** として実行することができます。
+マイクロサービスクライアント拡張は、Liferay内でトリガーするAPIエンドポイントを提供します（オブジェクトやワークフローのアクションなど）。 これらのアクションイベントがAPIを呼び出すと、Liferayの外部で、 *マイクロサービス*として好きな機能を実行できます。
 
-具体的な種類については、 [マイクロサービスクライアント拡張機能](./client-extensions/microservice-client-extensions.md) をご参照ください。
+特定のタイプの詳細については、 [Microservice Client Extensions](./client-extensions/microservice-client-extensions.md) を参照してください。
 
 ## 関連トピック
 
-* [クライアントエクステンションの操作](./client-extensions/working-with-client-extensions.md)
+* [クライアント拡張との連携](./client-extensions/working-with-client-extensions.md)
 * [Liferay Workspace](./tooling/liferay-workspace/what-is-liferay-workspace.md)

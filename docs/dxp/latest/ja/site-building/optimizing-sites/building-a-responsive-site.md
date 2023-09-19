@@ -1,8 +1,9 @@
 ---
 toc:
-- ./building-a-responsive-site/building-a-responsive-site.md
-- ./building-a-responsive-site/creating-mobile-device-rules.md
-- ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+  - ./building-a-responsive-site/building-a-responsive-site.md
+  - ./building-a-responsive-site/creating-mobile-device-rules.md
+  - >-
+    ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
 ---
 # レスポンシブサイトの構築
 
@@ -21,11 +22,11 @@ building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
 :link: ./building-a-responsive-site/building-a-responsive-site.md
 :::
 
-:::{grid-item-card} モバイルデバイスのルールを作成する
+:::{grid-item-card} モバイルデバイスルールの作成
 :link: ./building-a-responsive-site/creating-mobile-device-rules.md
 :::
 
-:::{grid-item-card} グリッドフラグメントを使用したレスポンシブレイアウトの構築
+:::{grid-item-card} グリッドフラグメントを使ったレスポンシブレイアウトの構築
 :link: ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
-:::  
+:::
 ::::

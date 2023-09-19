@@ -1,6 +1,6 @@
 # 外部サービスの構成
 
-Liferayは、ファイルの変換やファイルのプレビューを生成するための外部サービスとの統合を提供します。 これらのうち3つのサービスは、サーバー管理の設定で有効にすることができます。 [ImageMagick](https://www.imagemagick.org/script/index.php) 、 [Ghostscript](https://www.ghostscript.com/) 、および [Xuggler](http://www.xuggle.com/xuggler/) です。
+Liferayは、ファイルの変換やファイルのプレビューを生成するための外部サービスとの統合を提供します。 これらのうち3つのサービスは、サーバー管理の設定で有効にすることができます。 [ImageMagick](https://www.imagemagick.org/script/index.php)、 [Ghostscript](https://www.ghostscript.com/)、および [Xuggler](http://www.xuggle.com/xuggler/)です。
 
 ```{important}
 Liferay 7.3.xでは、Xugglerの統合は非推奨となっています。 ユーザーはLiferayのFFmpegインテグレーションを代替として使用することをお勧めします。 詳しくは[ドキュメントとメディアのプレビューの構成](../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)をご覧ください。
@@ -26,21 +26,29 @@ Liferay 7.1では、OpenOffice/LibreOfficeは、サーバー管理やポータ�
 
 ImageMagickとGhostscriptの両方がサーバーにインストールされたら、以下の手順でLiferayインスタンスのこれらのサービスを有効にします。
 
-1. **グローバルメニュー**（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**サーバの管理**］ へ行きます。
+1. *グローバルメニュー* （![Global Menu](../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］* &rarr; *［設定］* &rarr; *［サーバの管理］*へ行きます。
 
-1. ［**外部サービス**］ タブをクリックします。
+1. *［外部サービス］* タブをクリックします。
 
-1. ImageMagickとGhostscriptの **有効** をチェックします。
+1. ImageMagickとGhostscriptの *有効* をチェックします。
 
-1. ImageMagickおよびGhostscript実行可能ファイルへのパスが正しいことを確認します。
+1. *Path* フィールドに、ImageMagick および Ghostscript 実行可能ファイルの正しいパスが記述されていることを確認します。 別々のパスにある場合は、セミコロンをセパレーターとして使用する。
+
+   たとえば、インストールした場所によっては、正しいパスはWindowsサーバーでは次のようになる：
+
+   ```
+   C:\\Program Files\\gs\\gs10.1.0\\bin;C:\\Program Files\\ImageMagick
+   ```
+
+   デフォルトでは、両者の実行ファイルは、Linuxでは `/usr/bin/` にインストールされる。
 
 1. リソース制限を構成します。
 
-1. 完了したら、 ［**保存**］ をクリックします。
+1. 完了したら、*［Save］*をクリックします。
 
 ## Xugglerを有効にする
 
-デフォルトでは、［ドキュメントとメディア］では、オーディオファイルやビデオファイルのプレビューは生成されません。 LiferayのXuggler統合を使用して、これらのファイルを変換し、プレビューを生成することができます。 Xugglerがまだサーバーにインストールされていない場合は、［サーバー管理］の［外部サービス］タブからXugglerをインストールできます。
+デフォルトでは、［ドキュメントとメディア］では、オーディオファイルやビデオファイルのプレビューは生成されません。 LiferayのXuggler統合を使用して、これらのファイルを変換し、プレビューを生成することができます。 サーバーにXugglerがまだインストールされていない場合は、サーバー管理でXugglerを有効にするとインストールできます。
 
 ```{tip}
 Xugglerは、Linuxではglibcバージョン2.6以降が必要です。
@@ -48,19 +56,21 @@ Xugglerは、Linuxではglibcバージョン2.6以降が必要です。
 
 以下の手順で、LiferayインスタンスにXugglerをインストールして有効にします。
 
-1. ［**グローバルメニュー**］（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**サーバの管理**］ へ行きます。
+1. *グローバルメニュー* （![Global Menu](../../images/icon-applications-menu.png)）を開き、 *［コントロールパネル］* &rarr; *［設定］* &rarr; *［サーバの管理］*へ行きます。
 
-1. ［**外部サービス**］ タブをクリックします。
+1. *［外部サービス］* タブをクリックします。
 
-1. Xugglerの*有効化をチェックします。</p>
+1. *外部サービス*タブをクリックします。
 
-   Xugglerがまだインストールされていない場合は、インストールするように促されます。 OSに適したJARを選択し、 ［**インストール**］ をクリックします。 その後、サーバーを再起動すると変更が反映されます。 インストールが完了したら、 ［**外部サービス**］ タブに戻り、Xugglerを有効にすることができます。
+1. Xugglerの*Enabled*をチェックする。
 
-   ![Xugglerがインストールされていない場合は、インストールするように促されます。](./configuring-external-services/images/02.png)</li>
+1.（Xugglerがインストールされていない場合）OSに適したJARを選択し、*インストール*をクリックします。
 
-1
+   サーバーを再起動して、変更を適用します。インストールが完了したら、外部サービスタブに戻り、Xugglerを有効にします。
 
-［**保存**］ をクリックします。</ol>
+   ![Xugglerがインストールされていない場合は、インストールするよう促されます](./configuring-external-services/images/02.png)
+
+1. *保存*をクリックします。
 
 ## `portal-ext.properties` ファイルを使用して外部サービスを有効にする。
 

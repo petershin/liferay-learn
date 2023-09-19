@@ -1,18 +1,18 @@
 ---
 toc:
-- ./creating-and-managing-objects/creating-objects.md
-- ./creating-and-managing-objects/extending-system-objects.md
-- ./creating-and-managing-objects/fields.md
-- ./creating-and-managing-objects/relationships.md
-- ./creating-and-managing-objects/actions.md
-- ./creating-and-managing-objects/layouts.md
-- ./creating-and-managing-objects/views.md
-- ./creating-and-managing-objects/validations.md
-- ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
-- ./creating-and-managing-objects/activating-and-deactivating-objects.md
-- ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
-- ./creating-and-managing-objects/auditing-object-definition-events.md
-- ./creating-and-managing-objects/deleting-objects.md
+  - ./creating-and-managing-objects/creating-objects.md
+  - ./creating-and-managing-objects/extending-system-objects.md
+  - ./creating-and-managing-objects/fields.md
+  - ./creating-and-managing-objects/relationships.md
+  - ./creating-and-managing-objects/actions.md
+  - ./creating-and-managing-objects/layouts.md
+  - ./creating-and-managing-objects/views.md
+  - ./creating-and-managing-objects/validations.md
+  - ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
+  - ./creating-and-managing-objects/activating-and-deactivating-objects.md
+  - >-
+    - ./creating-and-managing-objects/auditing-object-definition-events.md
+    - ./creating-and-managing-objects/deleting-objects.md
 ---
 # オブジェクトの作成と管理
 
@@ -95,5 +95,5 @@ Liferay Objectでは、コードを記述することなくビジネスニーズ
 
 :::{grid-item-card} オブジェクトの削除
 :link: ./creating-and-managing-objects/deleting-objects.md
-:::  
+:::
 ::::

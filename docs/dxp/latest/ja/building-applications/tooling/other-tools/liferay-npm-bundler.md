@@ -8,11 +8,9 @@ toc:
   - ./liferay-npm-bundler/how-portal-publishes-npm-packages.md
   - ./liferay-npm-bundler/how-the-bundler-formats-js-modules.md
   - >-
-    ./liferay-npm-bundler/how-the-default-preset-configures-the-liferay-npm-bundler.md
-  - ./liferay-npm-bundler/npmbundlerrc-structure.md
+    - ./liferay-npm-bundler/npmbundlerrc-structure.md
   - >-
-    ./liferay-npm-bundler/the-structure-of-osgi-bundles-containing-npm-packages.md
-  - ./liferay-npm-bundler/bundler-migration-guide.md
+    - ./liferay-npm-bundler/bundler-migration-guide.md
 ---
 # Liferay npm Bundler
 
@@ -43,19 +41,19 @@ liferay-npm-bundler/bundler-migration-guide.md
 :link: ./liferay-npm-bundler/understanding-bundler-loaders.md
 :::
 
-:::{grid-item-card} Bundler 1.x と 2.x の間の変更点
+:::{grid-item-card} Bundler 1.xと2.xの間の変更点
 :link: ./liferay-npm-bundler/changes-between-bundler-1-x-and-2-x.md
 :::
 
-:::{grid-item-card} デフォルトのバンドルローダー
+:::{grid-item-card} デフォルトのバンドラーローダー
 :link: ./liferay-npm-bundler/default-bundler-loaders.md
 :::
 
-:::{grid-item-card} How AMD Loader Configuration is Exported
+:::{grid-item-card} AMDローダー構成のエクスポート方法
 :link: ./liferay-npm-bundler/how-liferay-amd-loader-configuration-is-exported.md
 :::
 
-:::{grid-item-card} AMDローダー構成のエクスポート方法
+:::{grid-item-card} バンドラーがnpmパッケージを公開する方法
 :link: ./liferay-npm-bundler/how-portal-publishes-npm-packages.md
 :::
 
@@ -67,15 +65,15 @@ liferay-npm-bundler/bundler-migration-guide.md
 :link: ./liferay-npm-bundler/how-the-default-preset-configures-the-liferay-npm-bundler.md
 :::
 
-:::{grid-item-card} npmbundlerrc 構造の理解
+:::{grid-item-card} npmbundlerrc 構造について
 :link: ./liferay-npm-bundler/npmbundlerrc-structure.md
 :::
 
-:::{grid-item-card} OSGi バンドルと npm パッケージの構造
+:::{grid-item-card} OSGiバンドルとnpmパッケージ構造
 :link: ./liferay-npm-bundler/the-structure-of-osgi-bundles-containing-npm-packages.md
 :::
 
-:::{grid-item-card} Bundler マイグレーションガイド
+:::{grid-item-card} バンドラー移行ガイド
 :link: ./liferay-npm-bundler/bundler-migration-guide.md
 :::
 ::::

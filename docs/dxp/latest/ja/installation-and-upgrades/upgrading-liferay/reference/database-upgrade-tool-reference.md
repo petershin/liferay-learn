@@ -23,13 +23,13 @@ db_upgrade_client.sh --help
 
 次に、アップグレードツールのすべてのコマンドラインオプションを示します。
 
-**--help** または **-h** ：ツールのヘルプメッセージを出力します。
+**--help**または**-h**：ツールのヘルプメッセージを出力します。
 
-**--jvm-opts** or **-j** + [**arg**] ：アップグレードプロセスのJVMオプションを設定します。
+**--jvm-opts** or **-j** + **[arg]**：アップグレードプロセスのJVMオプションを設定します。
 
-**--log-file** or **-l** + [**arg**] ：ツールのログファイル名を指定します。デフォルト名は`upgrade.log`です。
+**--log-file** or **-l** + **[arg]**：ツールのログファイル名を指定します。デフォルト名は`upgrade.log`です。
 
-**--shell** または **-s** ：アップグレード作業終了後、[Gogoシェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)に自動的に接続します。
+**--shell** または **-s**：アップグレード作業終了後、[Gogoシェル](../../../liferay-internals/fundamentals/using-the-gogo-shell.md)に自動的に接続します。
 
 ### ログ出力
 
@@ -92,7 +92,7 @@ Please enter your database host (localhost):
 
 * `app-server.properties`：サーバーの場所とライブラリを指定します。
 * `portal-upgrade-database.properties`：データベース接続を設定します。
-* `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず [現在のDXPバージョンに合わせて更新してください](../migrating-configurations-and-properties.md#migrating-portal-properties) 。
+* `portal-upgrade-ext.properties`：アップグレードに必要な残りのポータルプロパティを設定します。 現在のDXPサーバーを複製するには、現在のポータルプロパティ（データベースプロパティを除く）をこのファイルにコピーします。 現在のプロパティを使用する前に、必ず[現在のDXPバージョンに合わせて更新してください](../migrating-configurations-and-properties.md#migrating-portal-properties)。
 
 #### app-server.propertiesの設定
 
@@ -128,14 +128,14 @@ server.detector.server.id=tomcat
 
 #### portal-upgrade-database.propertiesの構成
 
-次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する [JDBCポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) に対応することに注意してください。
+次の情報を指定して、アップグレードするデータベースを構成します。 これらのプロパティは、`portal-ext.properties`ファイルで使用する[JDBCポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC)に対応することに注意してください。
 
 * `jdbc.default.driverClassName`
 * `jdbc.default.url`
 * `jdbc.default.username`
 * `jdbc.default.password`
 
-これらの値のリファレンスについては、最新の [ポータルプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) を参照してください。
+これらの値のリファレンスについては、最新の[ポータルプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html)を参照してください。
 
 #### portal-upgrade-ext.propertiesの構成
 
@@ -152,15 +152,15 @@ server.detector.server.id=tomcat
     dl.store.impl=com.liferay.portal.store.s3.S3Store
     ```
 
-* `hibernate.jdbc.batch_size`：パフォーマンスを向上させるために使用されるJDBCバッチサイズ（デフォルトでは **250** に設定）。 **このプロパティを使用するとアップグレードのパフォーマンスが向上しますが、必須ではありません。**
+* `hibernate.jdbc.batch_size`：パフォーマンスを向上させるために使用されるJDBCバッチサイズ（デフォルトでは_250_に設定）。 _このプロパティを使用するとアップグレードのパフォーマンスが向上しますが、必須ではありません。_
 
 * `upgrade.log.context.enabled`: `true`に設定すると、識別子にタグ付けされたアップグレード関連のログ行が表示されます。 可能な識別子は
 
     * `{upgrade.component=portal}`: ポータル関連のアップグレード処理用
     * `{upgrade.component=framework}`: アップグレードフレームワークのロジックに関連する処理用
-    * `{upgrade.component=<bundleSymblociName>}.`モジュールに関するアップグレード処理
+    * `{upgrade.component=<bundleSymbolicName>}.`モジュールに関するアップグレード処理
 
-なお、`upgrade.log.context.enabled`は、立ち上げ時のアップグレードだけでなく、アップグレードツールでも動作します。 また、この機能を利用するには、 [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) ファイルを`bundles/tomcat/webapps/ROOT/WEB-INF/META-INF`にコピーし、ファイル名を`portal-log4j-ext.xml`に変更する必要があります。 次に、アペンダーの定義を見つけます。
+この機能を使用するには、 [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) ファイルを `bundles/tomcat/webapps/ROOT/WEB-INF/META-INF` にコピーし、ファイル名を `portal-log4j-ext.xml`に変更する必要がある。 次に、アペンダーの定義を見つけます。
 
 ```
 <Appender name="CONSOLE" type="Console">
@@ -176,21 +176,7 @@ server.detector.server.id=tomcat
 </Appender>
 ```
 
-以下に、アップグレード関連行のタグを含むログ行の例を示します。
-
-```
-...
-2023-05-24 23:29:31.143 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.verify.VerifyProperties#verifySystemProperties {upgrade.component=portal}
-2023-05-24 23:29:31.145 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.verify.VerifyProperties#verifySystemProperties in 3 ms {upgrade.component=portal}
-...
-2023-05-24 23:29:34.012 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.events.StartupHelperUtil#initResourceActions {upgrade.component=framework}
-2023-05-24 23:29:34.029 INFO  [main][LoggingTimer:44] Completed com.liferay.portal.events.StartupHelperUtil#initResourceActions in 17 ms {upgrade.component=framework}
-...
-2023-05-24 23:30:17.046 INFO  [main][LoggingTimer:83] Starting com.liferay.portal.db.index.IndexUpdaterUtil#lambda$updateIndexes$1#Updating database indexes for com.liferay.wiki.service {upgrade.component=com.liferay.wiki.service}
-2023-05-24 23:30:17.094 INFO  [main][BaseDB:776] Dropping stale indexes {upgrade.component=com.liferay.wiki.service}
-2023-05-24 23:30:17.095 INFO  [main][BaseDB:846] drop index IX_18565130 on WikiPage {upgrade.component=com.liferay.wiki.service}
-...
-```
+詳しくは [アップグレードログコンテキスト](./upgrade-log-context.md) をご覧ください。
 
 #### アップグレード構成の例
 

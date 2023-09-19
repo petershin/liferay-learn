@@ -1,30 +1,24 @@
 ---
 toc:
-- ./configuring-mail/configuring-default-email-senders.md
-- ./configuring-mail/alternative-email-configuration-methods.md
+  - ./configuring-mail/configuring-default-email-senders.md
+  - ./configuring-mail/alternative-email-configuration-methods.md
+  - ./configuring-mail/configuring-office-365-with-oauth.md
 ---
 # メールの設定
-
-```{toctree}
-:maxdepth: 3
-
-configuring-mail/configuring-default-email-senders.md
-configuring-mail/alternative-email-configuration-methods.md
-```
 
 Liferay DXP/Portalは、メールサーバーを使用して、ユーザー登録とパスワード管理、サイトメンバーシップ通知、コンテンツの更新などのさまざまな目的で電子メール通知を送信するように設定できます。 この記事では、デモ目的として、Gmailをメールサーバーとして使用するように組み込みのDXPメールセッションを設定する手順を説明します。
 
 ```{warning}
-カテゴリのメーリングリストに [IMAP](https://support.google.com/mail/answer/7126229?hl=en) プロトコルを使用している場合は、メッセージをメーリングリストのユーザーに送信する電子メールクライアントによってメッセージがプルされたときに [メッセージが削除されるようにIMAP受信トレイを設定](https://support.google.com/mail/answer/78892?hl=en) してください。 そうしないと、サーバーに保持されている各電子メールメッセージは、カテゴリに新しい投稿や更新があるたびにメーリングリストに送信されます。
+カテゴリのメーリングリストに[IMAP](https://support.google.com/mail/answer/7126229?hl=en)プロトコルを使用している場合は、メッセージをメーリングリストのユーザーに送信する電子メールクライアントによってメッセージがプルされたときに[メッセージが削除されるようにIMAP受信トレイを設定](https://support.google.com/mail/answer/78892?hl=en)してください。 そうしないと、サーバーに保持されている各電子メールメッセージは、カテゴリに新しい投稿や更新があるたびにメーリングリストに送信されます。
 ```
 
 ## 組み込みメールセッションの設定
 
 コントロールパネルからメールセッションを設定するには、次の手順に従います。
 
-1. 管理ユーザー（ [基本設定ページ](../installing-liferay/running-liferay-for-the-first-time.md)で指定されたユーザー）でサインインします。
-1. ［**Control Panel］ &rarr; ［Configuration］ &rarr; ［Server Administration］ &rarr; ［Mail**］ に移動します。
-1. [次のフィールド](#mail-configuration-reference) に値を入力します。
+1. 管理ユーザー（ [基本設定ページ](../installing-liferay/running-liferay-for-the-first-time.md)で指定されたユーザー）としてサインインします。
+1. *［Control Panel］ &rarr; ［Configuration］ &rarr; ［Server Administration］ &rarr; ［Mail］*に移動します。
+1. [次のフィールド](#mail-configuration-reference)に値を入力します。
 
     * **［Incoming POP Server］:** pop.gmail.com
     * **［Incoming Port］：** 110
@@ -40,7 +34,7 @@ Liferay DXP/Portalは、メールサーバーを使用して、ユーザー登�
 
     ![メールサーバーの設定](./configuring-mail/images/01.png)
 
-1. ［**保存**］ をクリックします。
+1. *［保存］* をクリックします。
 
 DXPがすぐにメールセッションに接続します。
 
@@ -64,3 +58,4 @@ DXPがすぐにメールセッションに接続します。
 
 * [デフォルトのメール送信者の設定](./configuring-mail/configuring-default-email-senders.md)
 * [代替の電子メールの設定方法](./configuring-mail/alternative-email-configuration-methods.md)
+* [OAuthでOffice 365を設定する](./configuring-mail/configuring-office-365-with-oauth.md)

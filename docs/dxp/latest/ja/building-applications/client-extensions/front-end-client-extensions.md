@@ -30,7 +30,7 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/remote-applications-ui-reference.md
 ```
 
-{bdg-secondary}`Liferay 7.4 U45+/GA45+で利用可能`
+{bdg-secondary}`利用可能な Liferay 7.4`
 
 フロントエンドクライアント拡張は、ページを拡張し、新しい機能を統合します。 CSS、JavaScript、テーマのCSS、テーマのJS、テーマのお気に入りアイコン、カスタム要素、IFrameがあります。
 
@@ -54,7 +54,7 @@ JavaScriptクライアント拡張は、Liferayインスタンス全体にグロ
 type: globalJS
 ```
 
-開始するには、 [JavaScriptクライアントエクステンションの使用](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md) を参照してください。
+開始するには、[Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md)を参照してください。
 
 ## CSS クライアント拡張
 
@@ -68,13 +68,13 @@ CSSクライアント拡張は、ページに新しいCSSスタイリングを�
 type: globalCSS
 ```
 
-開始するには、 [CSSクライアントエクステンションの使用](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) を参照してください。
+開始するには、[Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md)を参照してください。
 
 ## テーマのJavaScriptクライアント拡張
 
 {bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
 
-[JavaScriptクライアント拡張](#javascript-client-extensions) と同様に、サイトの[テーマ](../../site-building/site-appearance/themes/introduction-to-themes.md)が提供するものに代わる JavaScriptライブラリやロジックを追加することができます。
+[JavaScriptクライアント拡張](#javascript-client-extensions)と同様に、サイトの[テーマ](../../site-building/site-appearance/themes/introduction-to-themes.md)が提供するものに代わる JavaScriptライブラリやロジックを追加することができます。
 
 `client-extension.yaml`ファイルに、テーマのJavaScriptクライアント拡張を指定します。
 
@@ -88,7 +88,7 @@ type: themeJS
 
 [CSSクライアント・エクステンション](#css-client-extensions) がページにスタイリングを追加するのに対して、テーマCSSクライアント・エクステンションは、サイトのテーマ [](../../site-building/site-appearance/themes/introduction-to-themes.md)を含むページのスタイリングを上書きする。 クライアント・エクステンションは、 `clay.css` ファイルと、 `main.css` ファイルを使用して、サイトのテーマで通常使用される同じ名前のファイルを置き換えます。
 
-このタイプのクライアント拡張は、Liferay Applications メニューの **Client Extensions** からオプションとして追加できます。
+このタイプのクライアント拡張は、Liferay Applications メニューの *Client Extensions* からオプションとして追加できます。
 
 ![あなたのサイトのテーマによって提供されるCSSを置き換えるために、テーマCSSクライアント拡張機能を追加します。](./front-end-client-extensions/images/01.png)
 
@@ -106,7 +106,7 @@ type: themeCSS
 
 {bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
 
-Liferayのページのお気に入りアイコンをオーバーライドします。 デプロイすると、提供されたアイコンファイルはLiferayのどのページでも利用可能になります。 ページデザインオプションメニューからページのお気に入りアイコンを設定する際に、別の ［**Client Extension**］ ブでアクセスすることができます。
+Liferayのページのお気に入りアイコンをオーバーライドします。 デプロイすると、提供されたアイコンファイルはLiferayのどのページでも利用可能になります。 ページデザインオプションメニューからページのお気に入りアイコンを設定する際に、別の*［Client Extension］*タブでアクセスすることができます。
 
 ![ページのお気に入りアイコンを設定すると、特別なクライアント拡張タブからクライアント拡張のお気に入りアイコンにアクセスすることができます。](./front-end-client-extensions/images/02.png)
 
@@ -130,7 +130,7 @@ type: themeSpritemap
 
 カスタム要素クライアント拡張は、Liferayのフロントエンドインフラストラクチャーを使用して、外部アプリケーションをプラットフォームと統合し、ページウィジェットとしてレンダリングします。 Liferayの外からアクセスできるあらゆるドメインのアプリケーションを統合することができます。
 
-カスタムエレメントクライアント拡張を使用するには、必要なURLと詳細を持つエントリーを会社レベルで作成し、Liferayに登録します。 そして、Liferayは各エントリーにユニークなウィジェットを生成し、アプリケーションを [カスタムHTML要素](https://web.dev/custom-elements-v1/) としてレンダリングします。
+カスタムエレメントクライアント拡張を使用するには、必要なURLと詳細を持つエントリーを会社レベルで作成し、Liferayに登録します。 そして、Liferayは各エントリーにユニークなウィジェットを生成し、アプリケーションを[カスタムHTML要素](https://web.dev/custom-elements-v1/)としてレンダリングします。
 
 `client-extension.yaml`ファイルにカスタム要素のクライアント拡張を指定します。
 
@@ -146,7 +146,7 @@ type: customElement
 
 > 旧名称：IFrameのリモートアプリケーション
 
-IFrameクライアント拡張は、 [カスタム要素クライアント拡張](#custom-element-client-extensions) のように動作します。 しかし、外部アプリケーションを`<iframe>`HTML要素としてレンダリングし、ホストページからのやり取りを制限することができます。 他のフロントエンドクライアント拡張とは異なり、これらの **は静的なリソース** を提供するものではありません。
+IFrameクライアント拡張は、[カスタム要素クライアント拡張](#custom-element-client-extensions)のように動作します。 しかし、外部アプリケーションを`<iframe>`HTML要素としてレンダリングし、ホストページからのやり取りを制限することができます。 他のフロントエンドクライアント拡張とは異なり、これらの*は静的なリソース*を提供するものではありません。
 
 `client-extension.yaml`ファイルに IFrameクライアント拡張を指定します。
 
@@ -162,13 +162,13 @@ type: iframe
 
 | 名前              | データ型  | デフォルト値                  | 説明                                                                                                |
 |:--------------- |:----- |:----------------------- |:------------------------------------------------------------------------------------------------- |
-| `baseURL`       | 文字列   | **サイトURLから派生** | クライアント拡張の定義されたすべてのリソースが提供される基本パスです。                                                               |
+| `baseURL`       | 文字列   | *サイトURLから派生*            | クライアント拡張の定義されたすべてのリソースが提供される基本パスです。                                                               |
 | `description`   | 文字列   |                         | クライアント拡張の説明                                                                                       |
 | `name`          | 文字列   |                         | クライアント拡張の名前（UIに表示されるもの）。 フロントエンドクライアント拡張には名前が必要です。                                                |
 | `sourceCodeURL` | URL   | https://www.liferay.com | クライアント拡張のソースリポジトリへのアドレス。                                                                          |
 | `typeSettings`  | 文字列[] | []                      | Liferayの`UnicodeProperties`の構文で処理される文字列のリスト。 タイプ固有のクライアント拡張のプロパティは、クライアント拡張のビルド時に自動的にこの中にコピーされます。 |
 
-詳しくは、 [`client-extension.yaml`でのクライアント拡張の設定](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) を参照してください。
+詳しくは、[`client-extension.yaml`でのクライアント拡張の設定](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)を参照してください。
 
 ## 関連トピック
 

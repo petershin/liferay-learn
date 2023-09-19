@@ -1,12 +1,12 @@
-# 検索ブループリント付きコレクション
+# 検索ブループリントのコレクション
 
-{bdg-secondary}`7.4 U87+`
+{bdg-secondary}`7.4 U88+`
 {bdg-link-primary}`[ベータ機能](../../../../ system-administration/configuring-liferay/feature-flags.md)`
 
 検索ブループリントを作成すると、 [コレクション・プロバイダ](../../../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md) が自動的に登録されます。 ブループリントのクエリとコンフィギュレーションに一致するアセットがコレクションに追加されます。
 
 ```{important}
-Liferayの [アセットフレームワーク](../../../../building-applications/data-frameworks/asset-framework.md) に登録されたコンテンツだけが、blueprintsコレクションプロバイダから返されます。
+Liferayの[Asset Framework](../../../../building-applications/data-frameworks/asset-framework.md) に登録されたコンテンツだけが、blueprintsコレクションプロバイダから返されます。
 ```
 
 ![検索ブループリントはコレクション・プロバイダとして登録されます。](./collections-with-search-blueprints/images/01.png)
@@ -43,7 +43,7 @@ Liferayの [アセットフレームワーク](../../../../building-applications
 
    ![カレンダーウィジェットに3つのイベントが追加されます。](./collections-with-search-blueprints/images/03.png)
 
-1. アプリケーションメニュー(![Global Menu](../../../../images/icon-applications-menu.png))から、 **ブループリント** を開きます。
+1. アプリケーションメニュー(![Global Menu](../../../../images/icon-applications-menu.png))から、 _ブループリント_を開きます。
 
 1. 要素タブで、このJSONを使って新しいカスタム要素を追加する：
 
@@ -87,15 +87,15 @@ Liferayの [アセットフレームワーク](../../../../building-applications
 
 1. ブループリント] タブで、未来のカレンダー イベントのみに一致するブループリントを作成します：
 
-   * タイトルEnter **Future Calendar Events Provider** .
-   * Query Settings: Searchable Types で **Calendar Events** を選択。
-   * Query Elements: **Limit Results to Future Events** 要素を追加しました。
+   * タイトルEnter _Future Calendar Events Provider_.
+   * Query Settings: Searchable Types で _Calendar Events_ を選択。
+   * Query Elements: _Limit Results to Future Events_ 要素を追加しました。
 
 1. 設計図を保存する。
 
 1. サイトメニュー(![Site Menu](../../../../images/icon-product-menu.png))から、Upcoming Eventsというコンテンツページを追加する。
 
-1. Collection Display フラグメントをページに追加し、 **Future Calendar Events Provider** Collection Provider を選択します。
+1. Collection Display フラグメントをページに追加し、 _Future Calendar Events Provider_ Collection Provider を選択します。
 
    箇条書きリストを表示するようにコレクション表示フラグメントを設定する。
 

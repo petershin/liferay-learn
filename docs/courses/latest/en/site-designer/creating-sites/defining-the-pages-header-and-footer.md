@@ -42,7 +42,7 @@ Delectable Bonsai needs their own design, of course. At first the master page wi
 
 1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag the header-composition above the drop zone, then drag the footer-composition below the drop zone.
 
-1. Map the image fragment in the header to a logo. Open the browser (![Browser](../../../../images/icon-browser.png)) and expand the Header Container element, and continue expanding elements until you get to the middle grid module's image fragment.
+1. Map the image fragment in the header to a logo. Open the browser (![Browser](../../images/icon-browser.png)) and expand the Header Container element, and continue expanding elements until you get to the middle grid module's image fragment.
 
    ![Click the image fragment's inner element to set the source of the image.](./defining-the-pages-header-and-footer/images/04.png)
 
@@ -64,7 +64,7 @@ The master page is in place, so it's time to configure Liferay to use it on the 
 
 1. Go to the Home page and click Edit (![Edit](../../images/icon-edit.png)) in the administrative header.
 
-1. In the content page editor, open the Page Design Options sidebar menu (![Page Design Options](../../../../images/icon-format.png)) and select _Del Bonsai MP_.
+1. In the content page editor, open the Page Design Options sidebar menu (![Page Design Options](../../images/icon-format.png)) and select _Del Bonsai MP_.
 
 1. Click _Publish_.
 

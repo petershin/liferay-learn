@@ -97,6 +97,10 @@ Use the Browser panel ( ![Browser](../../../images/icon-hierarchy.png) ) to view
 When editing a content page, header and footer elements are not included in the Browser panel. You can only edit these elements in [master page templates](../defining-headers-and-footers/master-page-templates.md).
 ```
 
+### Page Design Options
+
+Open the Page Design Options panel ( ![Page Design Options](../../../images/icon-format.png) ) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click the Cog button ( ![Cog Button](../../../images/icon-cog3.png) ) to access additional page design options, including [front-end client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md).
+
 ### Page Content
 
 In the Page Content panel ( ![Page Content](../../../images/icon-paperclip.png) ), you can view and edit content directly added to the page. This can include inline text, images, web content articles, and more. While viewing content, you can search for content items and filter by type. If the page includes a [collection](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md), you can view its items and add new items. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
@@ -104,10 +108,6 @@ In the Page Content panel ( ![Page Content](../../../images/icon-paperclip.png) 
 ```{note}
 Besides collections, mapped content is not listed in the Page Content panel. The panel only includes content added directly to the page.
 ```
-
-### Page Design Options
-
-Open the Page Design Options panel ( ![Page Design Options](../../../images/icon-format.png) ) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click the Cog button ( ![Cog Button](../../../images/icon-cog3.png) ) to access additional page desing options, including [front-end client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md).
 
 ### Comments
 

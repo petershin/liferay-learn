@@ -51,7 +51,7 @@ Calling either API triggers the action for the specified entry.
 
 You can map standalone actions to buttons on pages ([content pages](#mapping-buttons-to-object-actions-in-content-pages) or [display page templates](#mapping-buttons-to-object-actions-in-display-page-templates)).
 
-If Liferay's out-of-the-box button fragment doesn't satisfy your use case, you can map actions to custom buttons by adding the attributes `data-lfr-editable-id="action"`  and `data-lfr-editable-type="action"` to their HTML tag. To learn more about adding attributes to fragments, see [Fragment Specific Tags and Attributes Reference](../../../developer-guide/reference/fragments/fragment-specific-tags-reference.md).
+If Liferay's out-of-the-box button fragment doesn't satisfy your use case, you can map actions to custom buttons by adding the attributes `data-lfr-editable-id="action"`  and `data-lfr-editable-type="action"` to their HTML tag. To learn more about adding attributes to fragments, see [Fragment Specific Tags and Attributes Reference](../../../../site-building/developer-guide/reference/fragments/fragment-specific-tags-reference.md).
 
 Here is an example of an action-ready custom button:
 
@@ -66,7 +66,7 @@ Here is an example of an action-ready custom button:
 
 1. [Create a Page](../../../../site-building/creating-pages.md).
 
-1. Add a *Button* fragment to your layout. See [Adding Elements to Content Pages](../../using-content-pages/adding-elements-to-content-pages.md) to learn how to edit a content page.
+1. Add a *Button* fragment to your layout. See [Adding Elements to Content Pages](../../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) to learn how to edit a content page.
 
 1. Click on the button once. Under Button Options, select *Action* as the type. Now you can map actions to the button.
 

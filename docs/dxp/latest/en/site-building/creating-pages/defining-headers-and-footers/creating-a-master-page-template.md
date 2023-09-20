@@ -5,36 +5,36 @@ uuid: da11494c-c781-41b6-8b91-4e4d117851c3
 
 > Available: Liferay DXP/Portal 7.3+
 
-Although Portal includes default Master Page Templates that you can use to define the look and feel of the Headers and Footers for your Site's pages, you may want a more custom solution. You can create custom Master Page Templates for this.
+Although portal includes default master page templates that you can use to define the look and feel of the headers and footers for your site's pages, you may want a more custom solution. You can create custom master page templates for this.
 
-Follow these steps to create a Master Page Template:
+Follow these steps to create a master page templates:
 
-1. Open Product Menu and go to *Design* &rarr; *Page Templates*.
-1. Under the Masters tab, click *Add* (![Add](./../../../images/icon-add.png)) to create a new Master Page Template.
-1. Enter the *Name* of your new Master Page Template.
-1. In Fragments and Widgets (![Fragments and Widgets](./../../../images/icon-add-widget.png)) on the sidebar, add Fragments for the common elements that you require.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Page Templates*.
+1. Under the masters tab, click *Add* ( ![Add](./../../../images/icon-add.png))  to create a new Master Page Template.
+1. Enter the *Name* of your new master page template.
+1. In fragments and widgets ( ![Fragments and Widgets](./../../../images/icon-add-widget.png) ) on the sidebar, add fragments for the common elements that you require.
 
-    ![Add the Master Page Template's common elements from the Footers and Navigation Bars sections.](./creating-a-master-page-template/images/02.png) 
+    ![Add the master page template's common elements from the footers and navigation bars sections.](./creating-a-master-page-template/images/02.png)
 
-1. Optionally drag and drop the Drop Zone to a new location in the layout. For example, you can add a Grid with two Modules and move the Drop Zone to one Module, so users can only add Page Fragments to that portion of the Grid.
+1. Optionally drag and drop the Drop Zone to a new location in the layout. For example, you can add a grid with two modules and move the drop zone to one module, so users can only add page fragments to that portion of the grid.
 
-    ![You can move the Drop Zone to control where users can add Page Fragments.](./creating-a-master-page-template/images/03.gif) 
+    ![You can move the Drop Zone to control where users can add page fragments.](./creating-a-master-page-template/images/03.gif)
 
-1. Optionally specify which Page Fragments can be added to the Drop Zone by clicking the *Configure Allowed Fragments* button.
+1. Optionally specify which page fragments can be added to the Drop Zone by clicking the *Configure Allowed Fragments* button.
 
-    - Check the Page Fragments you want to allow in this Master Page Template.
+    - Check the page fragments you want to allow in this master page template.
     - Check the *Select New Fragments Automatically* box to include new fragment types in the list of allowed fragments.
 
-    ![Check and uncheck Fragments from the Allowed Fragments dialog to specify whether they can be added to a page that uses this Master Page Template.](./creating-a-master-page-template/images/04.png) 
+    ![Check and uncheck fragments from the allowed fragments dialog to specify whether they can be added to a page that uses this master page template.](./creating-a-master-page-template/images/04.png)
 
-1. Click *Save* to close the *Allowed Fragments* dialog.
-1. To preview your Content Page, click *Actions* (![Actions](../../../images/icon-actions.png)) &rarr; Preview in a New Tab.
-1. Click *Publish Master* to create the Master Page Template.
+1. Click *Save* to close the Allowed Fragments dialog.
+1. To preview your content page, click *Actions* ( ![Actions](../../../images/icon-actions.png) ) &rarr; *Preview in a New Tab*.
+1. Click *Publish Master* to create the master page template.
 
-You can revert any action using the *Undo* (![Preview](../../../images/icon-undo.png)) or *Redo* (![Preview](../../../images/icon-redo.png)) buttons, or you can return to a previous version of your edits using the *History* (![Preview](../../../images/icon-time.png)) button.
+You can revert any action using the *Undo* ( ![Undo icon](../../../images/icon-undo.png) ) or *Redo* ( ![Redo icon](../../../images/icon-redo.png) ) buttons, or you can return to a previous version of your edits using the *History* ( ![History icon](../../../images/icon-time.png) ) button.
 
 ```{note}
-If a custom Master Page Template is used for a page, the Theme for the page is defined through the Master Page Template and can't be changed through the page's settings. See [Changing a Master Page Template's Look and Feel](./managing-master-page-templates.md#changing-a-master-page-templates-look-and-feel) for more information.
+If a custom master page template is used for a page, the theme for the page is defined through the master page template and can't be changed through the page's settings. See [Changing a Master Page Template's Look and Feel](./managing-master-page-templates.md#changing-a-master-page-templates-look-and-feel) for more information.
 ```
 
 ## Related Topics

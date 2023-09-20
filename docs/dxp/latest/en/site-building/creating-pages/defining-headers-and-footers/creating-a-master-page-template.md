@@ -34,7 +34,7 @@ Follow these steps to create a master page templates:
 You can revert any action using the *Undo* ( ![Undo icon](../../../images/icon-undo.png) ) or *Redo* ( ![Redo icon](../../../images/icon-redo.png) ) buttons, or you can return to a previous version of your edits using the *History* ( ![History icon](../../../images/icon-time.png) ) button.
 
 ```{note}
-If a custom master page template is used for a page, the theme for the page is defined through the master page template and can't be changed through the page's settings. See [Changing a Master Page Template's Look and Feel](./managing-master-page-templates.md#changing-a-master-page-templates-look-and-feel) for more information.
+If a custom master page template is used for a page, the theme for the page is defined through the master page template and can't be changed through the page's settings. See [Changing a Master Page Template's Design](./managing-master-page-templates.md#changing-a-master-page-templates-design) for more information.
 ```
 
 ## Related Topics

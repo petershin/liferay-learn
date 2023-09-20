@@ -31,7 +31,7 @@
 **元に戻す**(![Preview](../../../images/icon-undo.png)) や **やり直す**(![Preview](../../../images/icon-redo.png)) ボタンで任意の操作を元に戻したり、 **履歴**(![Preview](../../../images/icon-time.png))で以前のバージョンの編集に戻ったりすることができます。
 
 ```{note}
-カスタムマスターページテンプレートを使用している場合、そのページのテーマはマスターページテンプレートで定義され、ページの設定から変更することはできません。 詳しくは、 [マスターページテンプレートの見た目を変更する](./managing-master-page-templates.md#changing-a-master-page-templates-look-and-feel) を参照してください。
+カスタムマスターページテンプレートを使用している場合、そのページのテーマはマスターページテンプレートで定義され、ページの設定から変更することはできません。 詳しくは、 [マスターページテンプレートの見た目を変更する](./managing-master-page-templates.md#changing-a-master-page-templates-design) を参照してください。
 ```
 
 ## 関連トピック

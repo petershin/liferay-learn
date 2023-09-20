@@ -5,79 +5,81 @@ uuid: 2865b1f7-0d24-498a-9b81-08eb24712ac9
 
 > Available: Liferay DXP/Portal 7.3+
 
-To manage a Master Page Template, follow these steps:
+To manage a master page template, follow these steps:
 
-1. Open the Product Menu and go to *Design* &rarr; *Page Templates*
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Page Templates*
 1. Select the *Masters* tab.
-1. Open the *Actions* (![Actions](./../../../images/icon-actions.png)) Menu for a Master Page Template and select one of the options. 
+1. Open *Actions* ( ![Actions](./../../../images/icon-actions.png) ) for a master page template and select one of the options.
 
-    ![Manage the Master Page Template from the Masters tab of the Page Templates application and opening the Actions Menu.](./managing-master-page-templates/images/01.png)
+    ![Manage the master page template from the masters tab of the page templates application and opening the actions menu.](./managing-master-page-templates/images/01.png)
 
-**Edit:** Configure the Master Page Template.
+**Edit:** Configure the master page template.
 
-**Change Thumbnail:** Select a thumbnail image to display for the Master Page Template's card in the *Masters* tab.
+**Change Thumbnail:** Select a thumbnail image to display for the master page template's card in the *Masters* tab.
 
-**Rename:** Change the name of the Master Page Template.
+**Mark as Default:** This makes the template the default master page for widget pages. This option is available when the master page template is in the approved status.
 
-**Make a Copy:** Duplicate the Master Page Template. The copy uses the same name with "Copy" appended to the end.
+**Rename:** Change the name of the master page template.
 
-**Export:** Export and download the Master Page Template definition. This option is available when the Master Page Template is in the *Approved* status.
+**Export:** Export and download the master page template definition. This option is available when the master page template is in the approved status.
 
-**Permissions:** Define permissions for the Master Page Template.
+**Make a Copy:** Duplicate the master page template. The copy uses the same name with "Copy" appended to the end.
 
-**Delete:** Remove the Master Page Template. You can also delete multiple Master Page Templates at once by checking the box for each template and clicking the `X`, or selecting the *Delete* action from the Management Toolbar.
+**Permissions:** Define permissions for the master page template.
 
-**Discard Draft:** Discard the Master Page Draft. This option is available when the Master Page Template is in the *Draft* status.
+**Delete:** Remove the master page template. You can also delete multiple master page templates at once by checking the box for each template and selecting *Trash* ( ![Trash icon](../../../images/icon-trash.png) ) from the management toolbar.
+
+**Discard Draft:** Discard the master page draft. This option is available when the master page template is in the draft status.
 
 ```{note}
-After changes are made and published, they are propagated to all pages that use the Master Page Template.
+After changes are made and published, they are propagated to all pages that use the master page template.
 ```
 
 ## Changing the Master Page Template of a Page
 
-You can change the Master Page Template of a Page in the [Content Page Editor](../using-content-pages/content-page-editor-ui-reference.md). Follow these steps:
+You can change the master page template of a page in the [content page editor](../using-content-pages/content-page-editor-ui-reference.md). Follow these steps:
 
-1. Navigate to the Page where you want to change the Master Page Template.
-1. Click *Edit* (![Edit icon](../../../images/icon-edit.png))
-1. In the Editing Sidebar, click the *Page Design* menu (![Page Design menu](../../../images/icon-format.png)).
-1. Under the Masters section, click the *Master Page Template* you want to use.
+1. Navigate to the page where you want to change the master page template.
+1. Click *Edit* ( ![Edit icon](../../../images/icon-edit.png) )
+1. In the editing sidebar, click the *Page Design Options* menu ( ![Page Design menu](../../../images/icon-format.png) ).
+1. Under the masters section, click the master page template you want to use.
 
-   ![Click the Master Page Template you want to use through the Page Design menu.](./managing-master-page-templates/images/03.png) 
+   ![Click the master page template you want to use through the page design options menu.](./managing-master-page-templates/images/03.png)
 
-## Changing a Master Page Template's Look and Feel
+## Changing a Master Page Template's Design
 
-To manage a Master Page Templates's Look and Feel and other options, follow these steps:
+To manage a master page templates' design and other options, follow these steps:
 
-1. Open the Product Menu, go to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Page Templates*.
 
 1. Select the *Masters* tab.
 
-1. Open the *Actions* menu (![Actions](./../../../images/icon-actions.png)) &rarr; *Edit* for the Master Page Template you want to configure.
+1. Click *Actions* ( ![Actions](./../../../images/icon-actions.png) ) &rarr; *Edit* for the master page template you want to configure.
 
-1. Click the *Page Design* menu (![Page Design menu](../../../images/icon-format.png)) &rarr; *More Page Design Options*(![More Page Design Options](../../../images/icon-cog3.png))
+1. Click the *Page Design Options* menu ( ![Page Design Options menu](../../../images/icon-format.png) ) &rarr; *More Page Design Options*( ![More Page Design Options](../../../images/icon-cog3.png) )
 
-   ![Click More Page Design Options to access the Master Page Template General Options](./managing-master-page-templates/images/06.png) 
+   ![Click More Page Design Options to access the master page templates general pptions](./managing-master-page-templates/images/06.png)
 
-1. In the Look and Feel tab, is where the styling of the Master Page Template can be tailored to your needs. 
+1. In the design tab, is where the styling of the master page template can be tailored to your needs.
 
-    ![Select a new Master Page Template from the available options.](./managing-master-page-templates/images/05.png)
+    ![Select a new master page template from the available options.](./managing-master-page-templates/images/05.png)
 
-**Favicon:** Change the default Favicon applied from the theme.
+**Theme:** Select whether to use theme from pages of a site or select a specific theme for the current master page template.
 
-**Style Book:** Change the default Style Book applied from the theme.
+**Favicon:** Change the default favicon applied from the theme.
 
-**Theme:** Select whether to use theme from pages of a site or select a specific theme for the current Master Page Template.
+**Style Book:** Change the default style book applied from the theme.
 
-**Settings:** Toggles to determine whether to show aspects of the theme such as the Footer and Header Search bar. Custom CSS can also be applied is loaded after the theme.
+**Theme CSS Client Extension:** Add [theme CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS from a theme without deploying an entire theme.
 
-**Theme CSS Client Extension:** Add [Theme CSS Client Extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS from a theme without deploying an entire theme. 
+**CSS Client Extensions:** Add [CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) to override CSS styling of a content page that uses the master page template.
 
-**CSS Client Extensions:** Add [CSS Client Extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) to override CSS styling of a content page that uses the Master Page Template.
+**Custom CSS:** Custom CSS can also be applied and is loaded after the theme. Custom CSS is disabled when using the inherited theme.
 
-**JavaScript Code and JavaScript Client Extension:** In the *Advanced* tab, JavaScript code can be added that is executed at the bottom of the page. [JavaScript Client Extentions](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this Master Page template is visited.
+**JavaScript Client Extension and Custom JavaScript:** [JavaScript client extentions](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can be added that is executed at the bottom of the page.
 
 ```{note}
-A theme is applied to a content page through a Master Page Template. When a Master Page Template is applied to a content page, the look and feel of the content page is defined by the Master Page Template.
+A theme is applied to a content page through a master page template. When a master page template is applied to a content page, the design of the content page is defined by the master page template.
 ```
 
 ## Related Topics

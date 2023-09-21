@@ -21,7 +21,7 @@ LiferayとElasticsearchは、多くの設定を伴う複雑なシステムです
 - [Elasticsearch接続のトラブルシューティング](./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md)
 - [Elasticsearchのトラブルシューティング：よくある問題](./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md)
 
-Liferayにバンドルされているsidecar Elasticsearchサーバーのトラブルシューティングは、 [Troubleshooting the Sidecar/Embedded Elasticsearch](./using-the-sidecar-or-embedded-elasticsearch.md#troubleshooting-the-sidecar-embedded-elasticsearch)をご覧ください。
+Liferayにバンドルされているsidecar Elasticsearchサーバーのトラブルシューティングは、 [Troubleshooting the Sidecar/Embedded Elasticsearch](./using-the-sidecar-or-embedded-elasticsearch.md#troubleshooting-the-sidecar-embedded-elasticsearch) をご覧ください。
 
 ## 検索バーのElasticsearchクエリを検査する
 

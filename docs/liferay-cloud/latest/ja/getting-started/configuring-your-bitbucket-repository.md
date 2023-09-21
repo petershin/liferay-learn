@@ -13,19 +13,19 @@ Liferay Cloud のオンボーディングメールを受け取ると、 `dxpclou
 
 ## Jenkinsサービスの準備
 
-Jenkinsfileをカスタマイズした場合は、このガイドに従って[デフォルトのJenkinsfileを拡張する](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)。
+Jenkinsfileをカスタマイズした場合は、このガイドに従って [デフォルトのJenkinsfileを拡張する](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) 。
 
 ## Bitbucketリポジトリの作成
 
 まず、新しいBitbucketリポジトリを作成します。
 
-1. [［Bitbucket］](https://bitbucket.org)に移動します。
+1. [［Bitbucket］](https://bitbucket.org) に移動します。
 
 1. サイドバーの検索アイコンの下にある「＋」アイコンをクリックします。
    
    ![アイコンをクリックして、新しいBitBucketリポジトリの作成を開始します。](./configuring-your-bitbucket-repository/images/01.png)
 
-1. _［リポジトリ］_ をクリックして、新しいリポジトリの作成を開始します。
+1. ［**リポジトリ**］ をクリックして、新しいリポジトリの作成を開始します。
    
    ![新しいリポジトリの詳細を記入してください。](./configuring-your-bitbucket-repository/images/02.png)
 
@@ -33,9 +33,9 @@ Jenkinsfileをカスタマイズした場合は、このガイドに従って[�
 
 1. アクセスレベルがプライベートに設定されていることを確認します。
 
-1. _［Include a README?］_の設定を_［No］_にします。
+1. ［**Include a README?**］ の設定を ［**No**］ にします。
 
-1. _［Create repository］_ をクリックします。
+1. ［**Create repository**］ をクリックします。
 
 ## GitHubからBitbucketへの転送
 
@@ -57,19 +57,19 @@ Jenkinsfileをカスタマイズした場合は、このガイドに従って[�
    
    `git push bitbucket master`
 
-リポジトリの作成、複製、およびプッシュに関するヘルプが必要な場合は、 [Bitbucket's documentation](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html)を参照してください。
+リポジトリの作成、複製、およびプッシュに関するヘルプが必要な場合は、 [Bitbucket's documentation](https://confluence.atlassian.com/bitbucket/create-a-git-repository-759857290.html) を参照してください。
 
 ## BitBucketのアプリパスワードの生成
 
-次に、WebhookがBitbucketで認証してJenkinsビルドをトリガーするために使用するアプリパスワードを作成します。 アプリのパスワードを生成するBitbucketユーザーは、リポジトリへの管理者レベルのアクセス権を持っている**必要**があります。
+次に、WebhookがBitbucketで認証してJenkinsビルドをトリガーするために使用するアプリパスワードを作成します。 アプリのパスワードを生成するBitbucketユーザーは、リポジトリへの管理者レベルのアクセス権を持っている **必要** があります。
 
 次の手順を実行して、アプリのパスワードを生成します：
 
-1. ユーザー設定ページから、 _［Access Management］_にある_［App passwords］_をクリックします。
+1. ユーザー設定ページから、 ［**Access Management**］ にある ［**App passwords**］ をクリックします。
    
    ![ユーザー設定ページの［アプリパスワード］をクリックします。](./configuring-your-bitbucket-repository/images/03.png)
 
-1. _［Create app password］_ をクリックします。
+1. ［**Create app password**］ をクリックします。
    
    ![新しいアプリのパスワードを生成し、後で再アクセスできないようにする。](./configuring-your-bitbucket-repository/images/04.png)
 
@@ -80,7 +80,7 @@ Jenkinsfileをカスタマイズした場合は、このガイドに従って[�
     * `Pull request - read, write` （これにより、リポジトリにもフラグが付けられます - 読み取り、書き込み）
     * `Webhooks -  read, write`
 
-1. _［作成］_ をクリックします。
+1. ［**作成**］ をクリックします。
 
 1. アプリのパスワードをコピーします（再度表示されません）。 これはBitBucketの個人用アクセストークンに相当します。
 
@@ -92,7 +92,7 @@ Jenkinsfileをカスタマイズした場合は、このガイドに従って[�
 
 Liferay Cloud がブランチに正しくリンクできるようにするには、リポジトリで使用しているブランチ接頭辞の完全なリストを提供する必要があります。 リポジトリで使用されるブランチタイプには、それぞれ独自の敬称があり、リポジトリの設定で定義されています。
 
-[the Bitbucket website](https://bitbucket.org)で、メニューの左側の _［Repository settings］_ &rarr; _［Branching model］_をクリックします。 これにより、 _Branching model_ のページが表示され、各ブランチの敬称が記載されています。 これらの各敬称をメモして、 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI環境変数に追加してください。
+[the Bitbucket website](https://bitbucket.org) で、メニューの左側の ［**Repository settings**］ &rarr; ［**Branching model**］ をクリックします。 これにより、 **Branching model** のページが表示され、各ブランチの敬称が記載されています。 これらの各敬称をメモして、 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` CI環境変数に追加してください。
 
 ![Bitbucket リポジトリのデフォルトのブランチタイプ（および敬称）は、bugfix/、feature/、hotfix/、release/ です。](./configuring-your-bitbucket-repository/images/05.png)
 
@@ -102,7 +102,7 @@ Liferay Cloud がブランチに正しくリンクできるようにするには
 
 1. Liferay Cloud Console にログインし、 `infra` 環境の Jenkins サービスに移動します。
 
-1. _［環境変数］_ タブに移動します。
+1. ［**環境変数**］ タブに移動します。
 
 1. 以下の環境変数を設定します：
 
@@ -115,7 +115,7 @@ Liferay Cloud がブランチに正しくリンクできるようにするには
 | `LCP_CI_SCM_USERNAME`                  | [auth username]    |
 | `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` | [list of prefixes] |
 
-`LCP_CI_SCM_USERNAME` を、 [アプリのパスワードを生成した](#generating-app-password-for-bitbucket)ユーザーとして定義します。 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` を、[リポジトリのブランチで使用される敬称](#checking-branch-types-and-prefixes)の全てのリストとして、スペースで区切って定義します。
+`LCP_CI_SCM_USERNAME` を、 [アプリのパスワードを生成した](#generating-app-password-for-bitbucket) ユーザーとして定義します。 `LCP_CI_SCM_BITBUCKET_BRANCH_PREFIXES` を、 [リポジトリのブランチで使用される敬称](#checking-branch-types-and-prefixes) の全てのリストとして、スペースで区切って定義します。
 
 これらの環境変数を更新した後、Jenkinsサービスが再起動します。 これで、新しいリポジトリでプッシュされたブランチとプルリクエストがトリガーされます。
 
@@ -131,7 +131,7 @@ Liferay Cloud がブランチに正しくリンクできるようにするには
 
 ## ビルドの確認
 
-プッシュされたブランチとプルリクエストがビルドのトリガーとなり、Liferay Cloud Console の _Builds_ タブからビルドの確認やデプロイができます。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
+プッシュされたブランチとプルリクエストがビルドのトリガーとなり、Liferay Cloud Console の **Builds** タブからビルドの確認やデプロイができます。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
 
 ### プッシュされたブランチからのビルドの確認
 
@@ -149,9 +149,9 @@ Liferay Cloud がブランチに正しくリンクできるようにするには
     git push bitbucket branch-name
     ```
 
-1. Liferay Cloud Console の _Builds_ ページに移動します。
+1. Liferay Cloud Console の **Builds** ページに移動します。
 
-1. _Builds_ ページで、プッシュされたブランチのビルドが表示されることを確認します。
+1. **Builds** ページで、プッシュされたブランチのビルドが表示されることを確認します。
 
 ### プルリクエストからのビルドの確認
 
@@ -161,7 +161,7 @@ Liferay Cloud がブランチに正しくリンクできるようにするには
 
 1. プルリクエストに対して新しいビルドが作成されていることを確認します。
 
-1. Liferay Cloud Console の _Builds_ ページに移動します。
+1. Liferay Cloud Console の **Builds** ページに移動します。
 
 1. ブランチのリンクをクリックして、適切なビルドでコミットします。
    

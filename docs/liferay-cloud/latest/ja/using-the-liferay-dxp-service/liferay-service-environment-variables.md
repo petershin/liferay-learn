@@ -1,6 +1,6 @@
 # Liferayサービス環境変数
 
-Liferayサービスには [環境変数の範囲](#environment-variables-reference) があり、サービスや他のサービスへの接続、DXPのインストール自体を設定するために使用されます。 Liferay Cloud固有の環境変数を使用したり、DXPの [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html)をオーバーライドする変数を定義したりすることができます。
+Liferayサービスには [環境変数の範囲](#environment-variables-reference) があり、サービスや他のサービスへの接続、DXPのインストール自体を設定するために使用されます。 Liferay Cloud固有の環境変数を使用したり、DXPの [ポータルプロパティ](https://docs.liferay.com/dxp/portal/7.3-latest/propertiesdoc/portal.properties.html) をオーバーライドする変数を定義したりすることができます。
 
 ## ポータルプロパティのオーバーライド
 
@@ -20,7 +20,7 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 
 * 前方に `LIFERAY_` という接頭語を付けなければなりません。
 
-* 大文字、数字、アンダースコア（`_`）のみで構成されていなければなりません。 この制約に当てはまらない文字は、対応する [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) または [Unicode](https://unicode-table.com/en/)エンドポイントに変換しなければなりません（10進数に変換）。
+* 大文字、数字、アンダースコア（`_`）のみで構成されていなければなりません。 この制約に当てはまらない文字は、対応する [`CharPool`](https://docs.liferay.com/dxp/portal/7.3-latest/javadocs/modules/core/petra/com.liferay.petra.string/) または [Unicode](https://unicode-table.com/en/) エンドポイントに変換しなければなりません（10進数に変換）。
 
 これらの要件を満たすためには、すべてのポータルプロパティをこのフォーマットに変換する必要があります。 これにより、Liferay Cloudはフルネームを適切に認識し、対応するポータルプロパティと一致させることができます。
 
@@ -55,7 +55,7 @@ Liferayサービスへの追加については、 [環境変数の定義](../ref
 
 | 名前                                           | デフォルト値 | 説明                                                                                                                                         |
 |:-------------------------------------------- |:------ |:------------------------------------------------------------------------------------------------------------------------------------------ |
-| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        |        | Dynatraceアカウントの*［Deploy Dynatrace］* &rarr; *［Start installation］* &rarr; *［Set up PaaS monitoring］* &rarr; *［Installer Download］*にある文字列です。 |
+| `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN`        |        | Dynatraceアカウントの ［**Deploy Dynatrace**］ &rarr; ［**Start installation**］ &rarr; ［**Set up PaaS monitoring**］ &rarr; ［**Installer Download**］ にある文字列です。 |
 | `LCP_SECRET_DATABASE_NAME`                   |        | データベース接続（jdbc、jdbc ping、および読み取り専用のユーザー接続）に使用されるデータベース名です。                                                                                  |
 | `LCP_SECRET_DATABASE_PASSWORD`               |        | jdbc（およびjdbc ping）の設定にのみ使用されるデータベースのパスワードです。                                                                                               |
 | `LCP_SECRET_DATABASE_READONLY_USER`          |        | 読み取り専用ユーザーのユーザー名です。                                                                                                                        |

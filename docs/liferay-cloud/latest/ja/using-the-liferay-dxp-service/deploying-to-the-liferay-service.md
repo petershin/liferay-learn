@@ -2,7 +2,7 @@
 
 他のサービスと同様に、カスタム追加のデプロイには、設定やファイルをGitリポジトリの適切な場所に追加する必要があります。 しかし、Liferayサービスのデプロイは、他のサービスのデプロイとは若干異なります。
 
-Liferayサービスは、 [Liferayワークスペース](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) を利用し、 [配置可能なファイル](#deploying-themes-portlets-and-osgi-modules)、 [ソースコード](#building-and-deploying-source-code)などを追加するオプションを提供します。 これらは [CI ビルド](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)に簡単に含められますが、 [CLI ツール](../reference/command-line-tool.md)を使っている場合は、Liferay サービス専用の [追加ステップ](#cli-tool-deployment) がいくつか必要です。
+Liferayサービスは、 [Liferay Workspaceの概要](https://learn.liferay.com/dxp/latest/ja/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) を利用し、 [配置可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ソースコード](#building-and-deploying-source-code) などを追加するオプションを提供します。 これらは [CI ビルド](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)に簡単に含められますが、 [CLI ツール](../reference/command-line-tool.md)を使っている場合は、Liferay サービス専用の [追加ステップ](#cli-tool-deployment) がいくつか必要です。
 
 ## Liferay DXP Dockerイメージの定義
 
@@ -18,9 +18,9 @@ Liferayサービスの`LCP.json`ファイルの`image`プロパティで定義�
 
 [CLIツール](../reference/command-line-tool.md) を使用してデプロイする場合、カスタマイズや設定を考慮してデプロイするために追加の手順が必要です。 これらは、デプロイする前に生成される特別な `Dockerfile` イメージに含まれている必要があります。
 
-[デプロイ可能なファイル](#deploying-themes-portlets-and-osgi-modules)、 [ビルドされたソースコード](#building-and-deploying-source-code)、 [ホットフィックス](#deploying-hotfixes)、および [ライセンス](#deploying-licenses) は、CLIツールを使用している場合、デプロイに含めるための追加手順が必要です。 これらの追加手順は、 [CIサービス](../platform-services/continuous-integration.md) を使用してリポジトリからビルドを生成する場合には必要ありません。
+[デプロイ可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ビルドされたソースコード](#building-and-deploying-source-code) 、 [ホットフィックス](#deploying-hotfixes) 、および [ライセンス](#deploying-licenses) は、CLIツールを使用している場合、デプロイに含めるための追加手順が必要です。 これらの追加手順は、 [CIサービス](../platform-services/continuous-integration.md) を使用してリポジトリからビルドを生成する場合には必要ありません。
 
-通常通りCLIでLiferayサービスをデプロイした場合（全てのサービスを一度にデプロイした場合や、 `liferay/` ディレクトリからデプロイした場合）、Liferay DXPイメージの **デフォルトバージョン** （ `LCP.json`で定義されているメジャーバージョンを使用）がデプロイされますが、その中にはお客様のカスタマイゼーションは含まれていません。 これは、カスタマイゼーションしたものをサービスに含めるためには、そのサービスを具体的に構築してデプロイする必要があるからです。
+通常通りCLIでLiferayサービスをデプロイした場合（全てのサービスを一度にデプロイした場合や、 `liferay/` ディレクトリからデプロイした場合）、Liferay DXPイメージの **デフォルトバージョン**（ `LCP.json`で定義されているメジャーバージョンを使用）がデプロイされますが、その中にはお客様のカスタマイゼーションは含まれていません。 これは、カスタマイゼーションしたものをサービスに含めるためには、そのサービスを具体的に構築してデプロイする必要があるからです。
 
 以下の手順で、カスタマイゼーションを含んだLiferayサービスをデプロイします：
 
@@ -80,7 +80,7 @@ CIビルドは、これらのフォルダー内のソースコードをコンパ
 ホットフィックスを適用するには、ホットフィックスのZIPファイルをLiferay DXPサービスディレクトリ内の `configs/{ENV}/patching/` フォルダに追加します。 この変更を展開すると、ホットフィックスがLiferay DXPインスタンスに適用されます。
 
 ```{note}
-[これらの指示](./updating-your-dxp-instance-to-a-new-minor-version.md)を参照して、代わりにLiferay DXPの新しいマイナーバージョンにアップデートしてください（新しい[サービスパック](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)など）。
+[これらの指示](./updating-your-dxp-instance-to-a-new-minor-version.md)を参照して、代わりにLiferay DXPの新しいマイナーバージョンにアップデートしてください（新しい [パッチタイプについて](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) など）。
 ```
 
 たとえば、次のような構造を持つホットフィックスを開発環境にデプロイできます：

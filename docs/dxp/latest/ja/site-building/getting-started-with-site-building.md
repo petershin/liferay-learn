@@ -2,7 +2,7 @@
 
 サイトはLiferay DXPの基本的なコンポーネントです。 基本的に、サイトとは、追加機能を提供するコンテンツ・アプリケーションを含むページの集まりである。
 
-Liferay DXPインスタンスを最初に起動し設定するとき、デフォルトのサイトが含まれます。 デフォルトではインスタンス名は *Liferay*ですが、この値はセットアップウィザードの設定やコントロールパネルの [Instance Settings](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) で変更することができます。
+Liferay DXPインスタンスを最初に起動し設定するとき、デフォルトのサイトが含まれます。 デフォルトではインスタンス名は **Liferay** ですが、この値はセットアップウィザードの設定やコントロールパネルの [Instance Settings](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) で変更することができます。
 
 ![Liferay DXPで強力なサイトを構築できます。](./getting-started-with-site-building/images/01.png)
 
@@ -16,13 +16,13 @@ Liferay DXPには、 [サイトの構築](./sites/adding-a-site.md) と [ペー�
 
 ページとサイト [ナビゲーション](./site-navigation/using-the-navigation-menus-application.md) の動作は直感的で柔軟です。 ページを作成すると、自動的にナビゲーション・メニューに追加することができます。 お好みでページを非表示にしたり、ページへのアクセスを有効/制限するためにページパーミッションを設定することができます。
 
-Liferay DXPは、ユーザーエクスペリエンスを中断することなくサイトに変更を加えることを可能にするツールも提供します。 Liferayサイトはステージングすることができ、ユーザーに公開する前にサイト上で変更を加えてテストすることができます。 Liferay DXPの [publications](./publishing-tools/publications.md) 機能がこれを処理します。 Publicationsを使用することで、ユーザーが見る本番サイトに影響を与えることなく、安全な環境でサイトを開発、追跡、更新することができます。
+Liferay DXPは、ユーザーエクスペリエンスを中断することなくサイトに変更を加えることを可能にするツールも提供します。 Liferayサイトはステージングすることができ、ユーザーに公開する前にサイト上で変更を加えてテストすることができます。 Liferay DXPの [パブリケーション](./publishing-tools/publications.md) 機能がこれを処理します。 Publicationsを使用することで、ユーザーが見る本番サイトに影響を与えることなく、安全な環境でサイトを開発、追跡、更新することができます。
 
 ## コンテンツの表示
 
 Liferay DXPのコンテンツ管理システム（CMS）は、さまざまな種類のコンテンツ（ブログ、画像、Webコンテンツ記事など）を作成、管理、および表示するためのさまざまなツールを提供します。 [Webコンテンツの表示ウィジェット](./displaying-content/additional-content-display-options/using-the-web-content-display-widget.md) を使って、任意のWebコンテンツ記事を表示することができます。
 
-様々なタイプのコンテンツを混在して公開したい場合は、 [Asset Publisher](./displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) または [Collections](../site-building/displaying-content/additional-content-display-options/displaying-collections.md)をご利用ください。 アセットパブリッシャーが表示するコンテンツを手動で選択することも、特定の条件に基づいてアセットを動的に表示することもでき、ユーザーの体験を大幅にコントロールできます。 また、 [Iframe ウィジェット](./displaying-content/additional-content-display-options/using-the-iframe-widget.md) を使ったり、 [埋め込みページ](./creating-pages/understanding-pages/other-page-types.md#embedded)を作成することで、他のウェブサイトからコンテンツを埋め込むこともできます。
+様々なタイプのコンテンツを混在して公開したい場合は、 [Asset Publisher](./displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) または [Collections](../site-building/displaying-content/additional-content-display-options/displaying-collections.md)をご利用ください。 アセットパブリッシャーが表示するコンテンツを手動で選択することも、特定の条件に基づいてアセットを動的に表示することもでき、ユーザーの体験を大幅にコントロールできます。 また、 [Iframe ウィジェット](./displaying-content/additional-content-display-options/using-the-iframe-widget.md) を使ったり、 [埋め込みページ](./creating-pages/understanding-pages/other-page-types.md#embedded) を作成することで、他のウェブサイトからコンテンツを埋め込むこともできます。
 
 [Fragments](./creating-pages/page-fragments-and-widgets/using-fragments.md)に沿ってコンテンツを作成・編集することができます。 フラグメントとは、コード（CSS、HTML、JavaScript）の個々の断片のことで、これを並べたり組み合わせたりして、ページを構築することができます。 Liferayはすぐに使える多くのフラグメントを提供します。 [カスタマイズされたソリューションが必要な場合は、独自のフラグメントを修正または作成することができます](./developer-guide/developing-page-fragments/developing-fragments-intro.md)。
 

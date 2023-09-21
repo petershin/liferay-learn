@@ -1,6 +1,6 @@
 # フラグメントエディターの使用
 
-Liferay DXP には、コンテンツページフラグメントを作成するための組み込み[エディター](../reference/fragments/page-fragment-editor-interface-reference.md)が含まれています。 エディターにアクセスするには、*サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 ここから、フラグメントとフラグメントセットの表示、管理、作成ができます。
+Liferay DXP には、コンテンツページフラグメントを作成するための組み込み[エディター](../reference/fragments/page-fragment-editor-interface-reference.md)が含まれています。 エディターにアクセスするには、 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 ここから、フラグメントとフラグメントセットの表示、管理、作成ができます。
 
 * [フラグメントセットの作成](#creating-a-fragment-set)
 * [新しいフラグメントの作成](#creating-a-new-fragment)
@@ -13,23 +13,23 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 新しいフラグメントを作成する前に、最初にそれらを配置する新しいフラグメントセットを作成する必要があります。
 
-1. *サイトメニュー*を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。
+1. **サイトメニュー** を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。
 
     ```{note}
     Liferay DXP 7.1 および 7.2 では、*プロダクトメニュー* を開き、*サイト* → *サイトビルダー* → *ページフラグメント* に移動します。
     ```
 
-1. フラグメントセットの横にある*プラス*ボタン（![Add Button](../../../images/icon-plus.png)）をクリックします。
+1. フラグメントセットの横にある **プラス** ボタン（![Add Button](../../../images/icon-plus.png)）をクリックします。
 
    ![プラスボタンをクリックして、フラグメントセットにネストします。](./using-the-fragments-editor/images/01.png)
 
-1. 新しいセットの*名前*と*説明*を入力します。
+1. 新しいセットの **名前** と **説明** を入力します。
 
     ```{tip}
     機能ごと、またはチームや部門ごとにフラグメントをグループ化するセットを作成します。
     ```
 
-1. *［Save］* をクリックします。
+1. ［**Save**］ をクリックします。
 
 保存したら、フラグメントをセットに追加できます。
 
@@ -41,7 +41,7 @@ Reactフラグメントを作成するには、[Fragments Toolkit](./using-the-f
 
 フラグメントを作成するには、次の手順に従います。
 
-1. 目的のフラグメントセットに移動し、*追加*ボタン（![Add Button](../../../images/icon-add.png)）をクリックして、新しいフラグメントを作成します。
+1. 目的のフラグメントセットに移動し、 **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックして、新しいフラグメントを作成します。
 
    ![目的のフラグメントセットに移動し、追加ボタンをクリックします。](./using-the-fragments-editor/images/02.png)
 
@@ -49,7 +49,7 @@ Reactフラグメントを作成するには、[Fragments Toolkit](./using-the-f
    Liferay DXP 7.3 より前では、フラグメントはセクションまたはコンポーネントのいずれかでした。 Liferay DXP 7.3以降では、ページフラグメントはすべてコンポーネントです。
    ```
 
-1. フラグメントの*名前*を入力し、*［保存］*をクリックします。
+1. フラグメントの **名前** を入力し、 ［**保存**］ をクリックします。
 
     ![新しいフラグメントの名前を入力します。](./using-the-fragments-editor/images/03.png)
 
@@ -103,7 +103,7 @@ Reactフラグメントを作成するには、[Fragments Toolkit](./using-the-f
     （JSONの`fields`オブジェクトと一緒に）どのフィールドセットにも`configurationRole`値を追加して、関連するフィールドがどのタブに表示されるかを指定することができます。 値を `styles` に設定すると［スタイル］タブにフィールドが表示され、`advanced` に設定すると［詳細設定］タブに表示されます（*Liferay DXP バージョン U23+ または GA23+* でのみ使用可能）。 `configurationRole`が設定されていない場合、デフォルトで［一般］タブに表示されます。
     ```
 
-1. *［Publish］* をクリックして、[コンテントページ](../../creating-pages/understanding-pages/understanding-pages.md#content-pages)で使用できるようにします。
+1. ［**Publish**］ をクリックして、 [コンテントページ](../../creating-pages/understanding-pages/understanding-pages.md#content-pages) で使用できるようにします。
 
     ![フラグメントはコンテンツ ページで使用できます。](./using-the-fragments-editor/images/07.png)
 

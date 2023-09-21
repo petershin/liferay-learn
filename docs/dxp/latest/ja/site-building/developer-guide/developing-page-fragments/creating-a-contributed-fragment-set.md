@@ -1,6 +1,6 @@
 # 提供されたフラグメントセットの作成
 
-提供されたフラグメントセットは、ページフラグメントを含むデプロイ可能なモジュールです。 提供されたセットのフラグメントは、通常のフラグメントと同じように使用できますが、データベースには含まれておらず、UI から直接変更することはできません。 Liferay 7.3以降を実行している場合は、圧縮された ZIP セットで作成された[自動デプロイ済みフラグメント](./auto-deploying-fragments.md)を使用することをお勧めします。 これらは[独自のツール](./using-the-fragments-toolkit.md#fragment-set-structure)または[Liferayフラグメントツールキット](./using-the-fragments-toolkit.md)で作成でき、UI から変更して画像リソースを含めることができます。
+提供されたフラグメントセットは、ページフラグメントを含むデプロイ可能なモジュールです。 提供されたセットのフラグメントは、通常のフラグメントと同じように使用できますが、データベースには含まれておらず、UI から直接変更することはできません。 Liferay 7.3以降を実行している場合は、圧縮された ZIP セットで作成された[自動デプロイ済みフラグメント](./auto-deploying-fragments.md)を使用することをお勧めします。 これらは [独自のツール](./using-the-fragments-toolkit.md#fragment-set-structure) または[Liferayフラグメントツールキット](./using-the-fragments-toolkit.md)で作成でき、UI から変更して画像リソースを含めることができます。
 
 次の例は、Liferay 7.3以降で動作します。
 
@@ -8,7 +8,7 @@
 提供されたフラグメントセットを通じて追加されたすべてのフラグメントは、すべてのサイトでグローバルに使用できます。
 ```
 
-提供されたフラグメントセットを追加するには、それ自体が[`FragmentCollectionContributor`インターフェイス](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/FragmentCollectionContributor.html)を実装している[`BaseFragmentCollectionContributor`クラス](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/BaseFragmentCollectionContributor.html)を展開します。
+提供されたフラグメントセットを追加するには、それ自体が [`FragmentCollectionContributor`インターフェイス](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/FragmentCollectionContributor.html) を実装している [`BaseFragmentCollectionContributor`クラス](https://docs.liferay.com/dxp/apps/fragment/latest/javadocs/com/liferay/fragment/contributor/BaseFragmentCollectionContributor.html) を展開します。
 
 ここでは、フラグメントセットを提供する方法を学びます。
 
@@ -28,7 +28,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 次に、以下の手順でサンプルを展開し、コントリビュートされたフラグメントセットがどのようなものかを確認します：
 
-1. [example](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip)をダウンロードして解凍する：
+1. [example](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip) をダウンロードして解凍する：
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-l3m9.zip -O
@@ -58,13 +58,13 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
     INFO  [fileinstall-directory-watcher][BundleStartStopLogger:46] STARTED com.acme.l3m9.impl_1.0.0 [1824]
     ```
 
-1. 提供されたフラグメントセットが利用可能であることを確認します。 *サイトメニュー* (![Site Menu](../../../images/icon-product-menu.png)) を開き、 *［デザイン］* &rarr; *［フラグメント］*に移動します。 セットがデフォルトセットリストに表示されます。
+1. 提供されたフラグメントセットが利用可能であることを確認します。 **サイトメニュー**(![Site Menu](../../../images/icon-product-menu.png)) を開き、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 セットがデフォルトセットリストに表示されます。
 
     ![提供されたフラグメントセットがデフォルトセットリストに表示されていることを確認します。](./creating-a-contributed-fragment-set/images/01.png)
 
 提供されたフラグメントセットを正常にデプロイしました。
 
-ご覧のとおり、提供されたフラグメントセットはデフォルトのフラグメントセットとともに表示され、フラグメントは UI から変更できません。 セットを変更する唯一の方法は、元のモジュールを更新するか、[フラグメントを別のセットにコピー](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments)してフラグメントのコピーを変更することです。
+ご覧のとおり、提供されたフラグメントセットはデフォルトのフラグメントセットとともに表示され、フラグメントは UI から変更できません。 セットを変更する唯一の方法は、元のモジュールを更新するか、 [フラグメントを別のセットにコピー](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments) してフラグメントのコピーを変更することです。
 
 ## 提供されたフラグメントセットのロジックとメタデータ
 
@@ -141,7 +141,7 @@ private ServletContext _servletContext;
     Windows でデプロイに失敗した場合は、[コンテナに Liferay をバインドマウント](../../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/providing-files-to-the-container.md) してモジュール JAR を `.\gradlew jar` でビルドし、JAR を適切なバインドマウントフォルダにコピーする必要がある場合があります。
     ```
 
-1. 更新されたフラグメントが提供されたセットに含まれていることを確認します。 ブラウザで`https://localhost:8080`にアクセスし、画面左側のサイトメニューで、*［デザイン］* &rarr; *［フラグメント］*に移動します。 L3M9 ジャンボトロンフラグメントが L3M9 セットに表示されます。
+1. 更新されたフラグメントが提供されたセットに含まれていることを確認します。 ブラウザで`https://localhost:8080`にアクセスし、画面左側のサイトメニューで、 ［**デザイン**］ &rarr; ［**フラグメント**］ に移動します。 L3M9 ジャンボトロンフラグメントが L3M9 セットに表示されます。
 
     ![カスタムのジャンボトロンフラグメントが提供されたセットに含まれています。](./creating-a-contributed-fragment-set/images/02.png)
 

@@ -1,6 +1,6 @@
 # Liferay DXPサービスの設定　
 
-Liferay DXPを設定するには、 [DXPシステム設定](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/system-settings.html)や、 [config](https://learn.liferay.com/dxp/latest/en/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html)と[propertyファイル](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)を使用するなど、いくつかの方法があります。 Liferay CloudのLiferay DXPインスタンスのDXPプロパティと設定ファイルは、リポジトリ内のLiferay DXP サービスディレクトリの`configs/`フォルダーのいずれかに配置されることでデプロイされます。
+Liferay DXPを設定するには、 [システム設定](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/system-settings.html) や、 [構成ファイルの使用](https://learn.liferay.com/dxp/latest/ja/system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.html) と [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) を使用するなど、いくつかの方法があります。 Liferay CloudのLiferay DXPインスタンスのDXPプロパティと設定ファイルは、リポジトリ内のLiferay DXP サービスディレクトリの`configs/`フォルダーのいずれかに配置されることでデプロイされます。
 
 ```
 liferay
@@ -13,11 +13,11 @@ liferay
 └── LCP.json
 ```
 
-`common/`ディレクトリを除き、特定の環境フォルダ（`dev`、`uat`、`prod`など）に追加された変更は、対応する環境にデプロイするときに_のみ_プロパゲートされます。 `common/`ディレクトリに追加された変更は、ターゲットのデプロイ環境に関係なく、_常に_デプロイされます。 これは、すべてのサービスにおいて、 `configs/` ディレクトリ内のすべてのサブフォルダに適用されます。
+`common/`ディレクトリを除き、特定の環境フォルダ（`dev`、`uat`、`prod`など）に追加された変更は、対応する環境にデプロイするときに **のみ** プロパゲートされます。 `common/`ディレクトリに追加された変更は、ターゲットのデプロイ環境に関係なく、 **常に** デプロイされます。 これは、すべてのサービスにおいて、 `configs/` ディレクトリ内のすべてのサブフォルダに適用されます。
 
 ## ポータルプロパティ
 
-[ポータルプロパティ](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) は、`portal-ext.properties`ファイルに保存されたプロパティです。 これらは、Liferay DXP環境の設定に使用されます。
+[ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) は、`portal-ext.properties`ファイルに保存されたプロパティです。 これらは、Liferay DXP環境の設定に使用されます。
 
 オンプレミスのLiferay DXPインスタンスの場合、このファイルは `$LIFERAY_HOME`の中に属します。 Liferay Cloudを使用する場合、ポータルプロパティファイルを適切な `configs/{ENV}/`フォルダに配置して、デプロイ時にLiferay DXPインスタンスの `$LIFERAY_HOME` にコピーします。
 
@@ -57,10 +57,10 @@ liferay
 └── LCP.json
 ```
 
-`portal-ext.properties` と `portal-all.properties`ファイル は、すべての環境で共有されます。 そこに共有のプロパティを追加し、それぞれの `portal-env.properties` ファイルに環境固有のプロパティを追加することができます。 詳細については、 [Portal Property Priority](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html#portal-property-priority)を参照してください。
+`portal-ext.properties` と `portal-all.properties`ファイル は、すべての環境で共有されます。 そこに共有のプロパティを追加し、それぞれの `portal-env.properties` ファイルに環境固有のプロパティを追加することができます。 詳細については、 [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html#portal-property-priority) を参照してください。
 
 ```{note}
-ポータルプロパティは、環境変数として定義することもできます。 詳しくは [環境変数リファレンス](./liferay-service-environment-variables.md#environment-variables-reference)をご覧ください。
+ポータルプロパティは、環境変数として定義することもできます。 詳しくは [環境変数リファレンス](./liferay-service-environment-variables.md#environment-variables-reference) をご覧ください。
 ```
 
 ## OSGiの構成
@@ -83,7 +83,7 @@ Tomcatのデフォルト設定を上書きする場合、Liferay CloudのLiferay
 
 ## 環境変数
 
-Liferay Cloud の Liferay サービスは、JVM メモリ設定やデータベース接続設定など、オンプレミスインスタンスとは異なる設定の代わりに [環境変数](../reference/defining-environment-variables.md) (または [secret](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)) を使用します。環境変数は[ポータルのプロパティを上書きしたり置き換えたり](./liferay-service-environment-variables.md#overriding-portal-properties)するのにも使えます。
+Liferay Cloud の Liferay サービスは、JVM メモリ設定やデータベース接続設定など、オンプレミスインスタンスとは異なる設定の代わりに [環境変数](../reference/defining-environment-variables.md) (または [secret](../infrastructure-and-operations/security/managing-secure-environment-variables-with-secrets.md)) を使用します。環境変数は [ポータルのプロパティを上書きしたり置き換えたり](./liferay-service-environment-variables.md#overriding-portal-properties) するのにも使えます。
 
 詳しくは[Liferayサービス環境変数](./liferay-service-environment-variables.md)を参照してください。
 
@@ -91,5 +91,5 @@ Liferay Cloud の Liferay サービスは、JVM メモリ設定やデータベ�
 
 * [Liferay DXPサービスの使用](../using-the-liferay-dxp-service.md)
 * [Liferay Cloudでのクラスタリングの有効化](./setting-up-clustering-in-liferay-cloud.md)
-* [ポータルプロパティ](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html)
+* [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html)
 * [Liferayサービス環境変数](./liferay-service-environment-variables.md)

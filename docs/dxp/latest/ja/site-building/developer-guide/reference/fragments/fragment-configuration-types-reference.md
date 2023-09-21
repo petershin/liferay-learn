@@ -113,14 +113,14 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 * 色の16進コードをテキストボックスに入力します。
 
-* *［スタイルブックの値］*ボタンをクリックすると、現在使用している [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)で定義されている色を選択するための定義済みの色のメニューが表示されます。 これにより、再度ボタンを押してリンクが解除されるまで、フィールドの値が選択されたトークンにリンクされます。 トークン値のリンクを解除すると、選択した色が再び同等の16進コード値に変換されます。
+* ［**スタイルブックの値**］ ボタンをクリックすると、現在使用している [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)で定義されている色を選択するための定義済みの色のメニューが表示されます。 これにより、再度ボタンを押してリンクが解除されるまで、フィールドの値が選択されたトークンにリンクされます。 トークン値のリンクを解除すると、選択した色が再び同等の16進コード値に変換されます。
 
-* カラーピッカーにデフォルト値が定義されていない場合は、 *［デフォルト］*ドロップダウンメニューをクリックし、現在使用しているスタイルブックから任意の色を選択します。 これは、値を選択する際の［スタイルブックの値］ボタンと同じように機能します。
+* カラーピッカーにデフォルト値が定義されていない場合は、 ［**デフォルト**］ ドロップダウンメニューをクリックし、現在使用しているスタイルブックから任意の色を選択します。 これは、値を選択する際の［スタイルブックの値］ボタンと同じように機能します。
 
 ![カラーピッカーの設定では、色の値を直接入力したり、範囲から選択したり、スタイルブックから選択することができます。](./fragment-configuration-types-reference/images/02.png)
 
 ```{note}
-使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)がない場合、ページ上のカラーピッカー設定は[カラーパレット](#color-palette configuration) 設定に置き換えられます。
+使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)がない場合、ページ上のカラーピッカー設定は [カラーパレット](#color-palette configuration) 設定に置き換えられます。
 ```
 
 このJSON設定は、`headingColor`というカラーピッカーフィールドを作成します。
@@ -404,7 +404,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 ![ビデオセレクターで、フラグメントに外部ビデオを含めることができます。](./fragment-configuration-types-reference/images/07.png)
 
 ```{note}
-videoSelector`型は [外部ビデオ](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) フラグメントと互換性がありますが、 [ビデオURL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) フラグメントとの互換性はありません。
+`videoSelector`型は [外部ビデオ](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) フラグメントと互換性がありますが、 [ビデオURL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) フラグメントとの互換性はありません。
 ```
 
 ## コレクションセレクター
@@ -414,7 +414,7 @@ videoSelector`型は [外部ビデオ](../../creating-pages/page-fragments-and-w
 `collectionSelector` の設定タイプを使用すると、 [コレクション](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) またはコレクションプロバイダーを含むフラグメントを開発することが可能です。 `collectionSelector` は、手動コレクションと動的コレクションの両方で使用することができます。
 
 ```{note}
-開発者は、コレクションプロバイダーを使用して、より高度な基準を持つ特定のコレクションを作成することができます。 詳しくは、開発者向けドキュメント[Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework)の[Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider)に関する情報をご覧ください。
+開発者は、コレクションプロバイダーを使用して、より高度な基準を持つ特定のコレクションを作成することができます。 詳しくは、開発者向けドキュメント [Info Framework](https://help.liferay.com/hc/ja/articles/360029067251-Introduction-to-The-Info-Framework) の [Creating an Information List Provider](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をご覧ください。
 ```
 
 次のJSON設定は、`collectionSelector`を使用する方法を示しています。
@@ -508,7 +508,7 @@ itemType`に加え、`itemSubtype`をコンフィギュレーションで指定�
 
 ## カラーパレットの設定
 
-カラーパレットJSON 構成は、色を選択する必要がある場合に実装できるカラー セレクターを作成します。 [カラーピッカー設定](#color-picker-configuration)とは異なり、現在使用されている [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)のカラーシステムで設定されているテーマカラーに基づいたオプションのみを提供します。
+カラーパレットJSON 構成は、色を選択する必要がある場合に実装できるカラー セレクターを作成します。 [カラーピッカー設定](#color-picker-configuration) とは異なり、現在使用されている [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)のカラーシステムで設定されているテーマカラーに基づいたオプションのみを提供します。
 
 この設定では、`textColor`というカラーパレットフィールドが作成されます。
 

@@ -34,7 +34,7 @@ developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
 ```
 
 - [フラグメントの開発](./developing-page-fragments/developing-fragments-intro.md)
-- [Using the Fragments Editor](./developing-page-fragments/using-the-fragments-editor.md)
+- [フラグメントエディターの使用](./developing-page-fragments/using-the-fragments-editor.md)
 - [フラグメントツールキットの使用](./developing-page-fragments/using-the-fragments-toolkit.md)
 - [フラグメントへの構成オプションの追加](./developing-page-fragments/adding-configuration-options-to-fragments.md)
 - [フラグメント設定を使用する際のベストプラクティス](./developing-page-fragments/best-practices-for-using-fragment-configurations.md)

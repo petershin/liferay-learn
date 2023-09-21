@@ -11,7 +11,7 @@ OAuth 2.0の認証プロトコルを使用してLiferayのヘッドレスREST AP
 
 1. Add* ( [Add Icon](../../images/icon-add.png) ) をクリックして、新しい OAuth2 アプリケーションを作成します。
 
-1. アプリケーションに名前を付ける（例：foo）。ウェブサイトのURLを `http://localhost:3000` に、コールバックURIを `http://localhost:3000/grant-type-authorization-code` に設定する。*Save*をクリックします。
+1. アプリケーションに名前を付ける（例：foo）。ウェブサイトのURLを `http://localhost:3000` に、コールバックURIを `http://localhost:3000/grant-type-authorization-code` に設定する。 **Save** をクリックします。
 
    ![新しいOAuth2アプリケーションを作成するためのフォームに必要事項を入力してください](./using-oauth2-to-authorize-users/images/01.png)
 

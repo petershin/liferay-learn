@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay DXP 7.4+ または Liferay Portal 7.4+`に適用されます。
 
-JNDIリソースを設定するには、必要なJDBCドライバをTomcatのlibフォルダに置く必要があります（すなわち、 `tomcat-9.0.56/lib`）。 たとえば、Oracleデータベースを使用する場合は、 `ojdbc8.jar` をこのフォルダにコピーします。 [光接続プール](https://github.com/brettwooldridge/HikariCP)を使用する場合は、 `hikaricp.jar` と `slf4-api.jar` ファイルもコピーする必要があります。
+JNDIリソースを設定するには、必要なJDBCドライバをTomcatのlibフォルダに置く必要があります（すなわち、 `tomcat-9.0.56/lib`）。 たとえば、Oracleデータベースを使用する場合は、 `ojdbc8.jar` をこのフォルダにコピーします。 [光接続プール](https://github.com/brettwooldridge/HikariCP) を使用する場合は、 `hikaricp.jar` と `slf4-api.jar` ファイルもコピーする必要があります。
 
 必要なファイルをコピーしたら、JNDIリソースを定義する。 `ROOT.xml` ファイルまたは `server.xml` ファイルに定義を追加する。 次に、 `context.xml` ファイルにリソースリンクを追加する。
 

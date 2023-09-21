@@ -1,6 +1,6 @@
 # Headless API を検索
 
-{bdg-link-primary}`[ベータ機能](../../システム管理/liferay/feature-flags.md#beta-feature-flags)`
+`{bdg-link-primary}` [ベータ機能](../../システム管理/liferay/feature-flags.md#beta-feature-flags) `
 
 {bdg-secondary}`7.4 U88+ および GA88+`
 
@@ -14,7 +14,7 @@
 feature.flag.LPS-179669=true
 ```
 
-[環境変数](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables)を有効にするには、これを設定に追加する：
+[環境変数](../../installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.md#using-liferay-env-variables) を有効にするには、これを設定に追加する：
 
 ```properties
 LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__NUMBER1__NUMBER7__NUMBER9__NUMBER6__NUMBER6__NUMBER9_=true
@@ -160,8 +160,8 @@ curl \
 
 | プロパティ                | 説明                                                                                                                                      |
 |:-------------------- |:--------------------------------------------------------------------------------------------------------------------------------------- |
-| `attributes`         | 利用可能な検索コンテキスト属性を設定し、検索ブループリントを構成するか、空の検索を有効にします。 詳細は [Available Search Request Attributes](#available-search-request-attributes)を参照のこと。 |
-| `facetConfiguration` | レスポンスにファセットを返すようにファセット設定を設定します。 [ファセット設定をリクエストに追加する](#adding-facet-configurations-to-the-request)を参照。                                   |
+| `attributes`         | 利用可能な検索コンテキスト属性を設定し、検索ブループリントを構成するか、空の検索を有効にします。 詳細は [Available Search Request Attributes](#available-search-request-attributes) を参照のこと。 |
+| `facetConfiguration` | レスポンスにファセットを返すようにファセット設定を設定します。 [ファセット設定をリクエストに追加する](#adding-facet-configurations-to-the-request) を参照。                                   |
 
 ### リクエストに属性を追加する
 
@@ -230,7 +230,7 @@ curl \
 
 ## APIへのゲストアクセスを有効にする
 
-APIへのゲスト・アクセスを有効にするには、 [、以下のように新しいサービス・アクセス・ポリシー](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md#creating-a-service-access-policy)：
+APIへのゲスト・アクセスを有効にするには、 [、以下のように新しいサービス・アクセス・ポリシー](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies.md#creating-a-service-access-policy) ：
 
 | 項目        | エントリ                                                                             |
 |:--------- |:-------------------------------------------------------------------------------- |
@@ -245,7 +245,7 @@ APIへのゲスト・アクセスを有効にするには、 [、以下のよう
 
 APIレスポンスに [集計](ES) と [検索ファセット](../search-pages-and-widgets/search-facets.md) を見ることができる。 集合体を見る、
 
-1. [集約を検索ブループリントに追加](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-configuration-reference.md#aggregation-configuration).
+1. [集約を検索ブループリントに追加](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-configuration-reference.md#aggregation-configuration) .
 1. 検索リクエストに属性 `search.experiences.blueprint.external.reference.code` を設定します。
 
 [ファセット設定](#adding-facet-configurations-to-the-request) をリクエストに追加すると、検索ファセットが返されます。 たとえば、このリクエストボディはタグファセットを要求する：

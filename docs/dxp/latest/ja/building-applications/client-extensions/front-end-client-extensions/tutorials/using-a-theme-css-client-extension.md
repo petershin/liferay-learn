@@ -2,14 +2,14 @@
 
 {bdg-secondary}`利用可能な Liferay 7.4`
 
-テーマCSSクライアント拡張機能を使えば、現在のテーマのCSSファイル（`main.css` と `clay.css`）をオーバーライドして、ページのルック＆フィールを変更することができます。 [サンプル・ワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)にあるクライアント・エクステンションから開始します。
+テーマCSSクライアント拡張機能を使えば、現在のテーマのCSSファイル（`main.css` と `clay.css`）をオーバーライドして、ページのルック＆フィールを変更することができます。 [サンプル・ワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) にあるクライアント・エクステンションから開始します。
 
 ## 前提条件
 
 1. Java（JDK8またはJDK11）をインストールします。
 
     ```{note}
-    対応するJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
+    対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
     ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -36,7 +36,7 @@ liferay-sample-theme-css-1:
     type: themeCSS
 ```
 
-クライアントエクステンションのIDは `liferay-sample-theme-css-1` で、2つのCSSリソースファイルのタイプやパスなど、テーマCSSクライアントエクステンションの主要な設定が含まれています。 利用可能なプロパティの詳細については、 [Theme CSS YAML Configuration Reference](../theme-css-yaml-configuration-reference.md)。
+クライアントエクステンションのIDは `liferay-sample-theme-css-1` で、2つのCSSリソースファイルのタイプやパスなど、テーマCSSクライアントエクステンションの主要な設定が含まれています。 利用可能なプロパティの詳細については、 [テーマのCSS YAML設定リファレンス](../theme-css-yaml-configuration-reference.md) 。
 
 また、以下の`assemble` YAMLブロックも含まれています。
 
@@ -118,7 +118,7 @@ Once Liferay starts, run this command from the client extension's folder in the 
 これにより、クライアント拡張が構築され、Liferayの`deploy/`フォルダにzipをデプロイします。
 
 ```{note}
-クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloudの[コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool)を使って[`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment)を実行します。
+クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloudの [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使って [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{tip}
@@ -135,17 +135,17 @@ STARTED liferay-sample-theme-css-1_1.0.0
 
 新しいテーマのCSSを使用するようにページを設定します：
 
-1. ページで、上部にある _編集_ (![Edit icon](../../../../images/icon-edit-pencil.png)) をクリックします。
+1. ページで、上部にある **編集**(![Edit icon](../../../../images/icon-edit-pencil.png)) をクリックします。
 
-1. サイドバーで、 _Page Design Options_ メニュー (![Page Design Options icon](../../../../images/icon-format.png)) に移動し、メニュー上部の _Configuration_ (![Configuration icon](../../../../images/icon-cog3.png)) をクリックします。
+1. サイドバーで、 **Page Design Options** メニュー (![Page Design Options icon](../../../../images/icon-format.png)) に移動し、メニュー上部の **Configuration**(![Configuration icon](../../../../images/icon-cog3.png)) をクリックします。
 
-1. Look and FeelタブのTheme CSS Client Extensionセクションで、 _Add_ (![Add](../../../../images/icon-duplicate.png)) をクリックします。
+1. Look and FeelタブのTheme CSS Client Extensionセクションで、 **Add**(![Add](../../../../images/icon-duplicate.png)) をクリックします。
 
-1. _Liferay Sample Theme CSS 1_を選択します。
+1. **Liferay Sample Theme CSS 1** を選択します。
 
    ![Sample Theme CSS client extensionを選択し、Saveをクリックします。](./using-a-theme-css-client-extension/images/01.png)
 
-1. 下にスクロールして、_［保存］_をクリックします。
+1. 下にスクロールして、 ［**保存**］ をクリックします。
 
 ページエディターでは、ヘッダーの背景が画像になり、カーソルを置くとすべてのリンクの背景とテキストの色が変わる。 編集モード以外でページに変更を反映させるには、ページを公開する必要があります。
 

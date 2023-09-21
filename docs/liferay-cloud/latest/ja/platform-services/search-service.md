@@ -42,7 +42,7 @@ Elasticsearchの設定には、［elasticsearch.yml］設定ファイルを使�
 
 ## 環境変数リファレンス
 
-Elasticsearch のすべての環境変数やその他の設定方法は、 [Elasticsearch 公式ドキュメント](https://www.elastic.co/guide/index.html)に記載されています。 このような設定と環境変数は、それぞれ `［configs/{ENV}/config/］` ディレクトリと `［LCP.json］`で設定できます。 例は次のとおりです：
+Elasticsearch のすべての環境変数やその他の設定方法は、 [Elasticsearch 公式ドキュメント](https://www.elastic.co/guide/index.html) に記載されています。 このような設定と環境変数は、それぞれ `［configs/{ENV}/config/］` ディレクトリと `［LCP.json］`で設定できます。 例は次のとおりです：
 
 | 名前             | 値               | 説明              |
 |:-------------- |:--------------- |:--------------- |

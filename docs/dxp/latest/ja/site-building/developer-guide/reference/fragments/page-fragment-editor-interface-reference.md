@@ -11,7 +11,7 @@
 
 コードエディタは 4 つのペインに分割されます。
 
-**HTML:** 動的動作を追加するために使用できる Liferay Portal 固有のタグおよび FreeMarker ([代替 (角括弧) 構文](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html)を使用) とともに、標準の HTML をサポートします。
+**HTML:** 動的動作を追加するために使用できる Liferay Portal 固有のタグおよび FreeMarker ( [代替 (角括弧) 構文](https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html) を使用) とともに、標準の HTML をサポートします。
 
 ```{tip}
 `$(`と入力すると、自動補完機能を使って変数名の検索を開始します。 自動補完機能を使用してtaglib名を検索するには、`[@`と入力します。

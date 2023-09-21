@@ -1,10 +1,10 @@
 # 7.4のメンテナンスモードと非推奨
 
-新しいLiferay DXPやLiferay Portalのリリースごとに、機能の継続的な拡張が保証されない場合や、廃止される可能性があります。 機能の拡張を停止すると、その機能は*メンテナンスモード*に入ります。
+新しいLiferay DXPやLiferay Portalのリリースごとに、機能の継続的な拡張が保証されない場合や、廃止される可能性があります。 機能の拡張を停止すると、その機能は **メンテナンスモード** に入ります。
 
 **メンテナンスモード：** サポートされている機能で、これ以上の機能強化は予定されていない
 
-時代遅れの機能は最終的に削除されるか、より新しく改良された機能に置き換えられる。 廃止された機能のサポートを終了する前に、Liferayはそれを*廃止予定*とマークします。
+時代遅れの機能は最終的に削除されるか、より新しく改良された機能に置き換えられる。 廃止された機能のサポートを終了する前に、Liferayはそれを **廃止予定** とマークします。
 
 **非推奨：** 次のマイナーバージョンリリースからはサポートされません。
 
@@ -13,7 +13,7 @@
 ```
 
 ```{important}
-詳細は、[Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation)を参照してください。
+詳細は、 [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation) を参照してください。
 ```
 
 ## 廃止予定の機能の利用可能性
@@ -41,7 +41,7 @@
 | コマースアカウントウィジェット                            | 削除済み                    | DXP/Portalアカウントウィジェットに置き換わりました。                                                                                                                                                                                                                      |
 | 中央認証サービス（CAS）                              | アーカイブ済み                 | 7.2で廃止。 SAML、OpenID Connect、Token-based SSOなど、他のソリューションに置き換えられています。                                                                                                                                                                                  |
 | コマースカテゴリ・ナビゲーションウィジェット                     | バンドル                    | [表示ページテンプレート](../../../site-building/displaying-content/using-display-page-templates.md) [メニュー表示](../../../site-building/site-navigation/configuring-menu-displays.md) 対応に置き換わりました。                                                                  |
-| コマースの素材リスト（BOM）について                        | 削除済み                    | Replaceed by [Shop By Diagram](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram).                                                                                                |
+| コマースの素材リスト（BOM）について                        | 削除済み                    | Replaceed by [Shop By Diagram](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram) .                                                                                                |
 | コマースカテゴリーコンテンツウィジェット                       | バンドル                    | [表示ページテンプレート](../../../site-building/displaying-content/using-display-page-templates.md)で置き換えられました。                                                                                                                                                  |
 | ダイジェスト認証                                   | バンドル                    | ダイジェスト認証では、弱いパスワードのハッシュストレージが必要となり、これが脆弱性となります。                                                                                                                                                                                                      |
 | 動的データリスト                                   | バンドル                    | 7.3で廃止。 [Liferay Objects](../../../building-applications/objects.md)によって置き換えられました。                                                                                                                                                                   |
@@ -53,7 +53,7 @@
 | Liferay Mobile Device Detection Enterprise | アーカイブ済み                 | 7.2で廃止。 最新の定義については、51Degreesにお問い合わせください.                                                                                                                                                                                                             |
 | Liferay Screens                            | 削除。 7.3でリリースされた最終バージョン。 | 直接的な代替はないが、モバイルSDKとヘッドレスAPIがモバイルアプリケーション開発をサポートする。                                                                                                                                                                                                   |
 | Liferay SyncコネクターとSyncクライアント               | アーカイブ済み                 | 7.3で廃止。 直接の置換はありません。                                                                                                                                                                                                                                 |
-| ライブユーザー                                    | バンドル                    | 7.2で廃止。  [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/index.html)によって置き換えられました。                                                                                                                                             |
+| ライブユーザー                                    | バンドル                    | 7.2で廃止。  [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) によって置き換えられました。                                                                                                                                             |
 | モバイルSDK                                    | 削除済み                    | [ヘッドレスデリバリー](../../../headless-delivery/using-liferay-as-a-headless-platform.md)に置き換えられました。                                                                                                                                                          |
 | NTLM                                       | アーカイブ済み                 | 7.2で廃止。 [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)に置き換えられました。 Microsoft Windows™ アカウントの認証に NTLM を使用している場合は、 [Kerberos](../../securing-liferay/configuring-sso/authenticating-with-kerberos.md)を使用するように切り替える。 |
 | OAuth 1.0a                                 | アーカイブ済み                 | 7.2で廃止。 これはLiferayコネクターからOAuth 2.0に置き換えられます。                                                                                                                                                                                                         |
@@ -67,8 +67,8 @@
 
 * [7.3の非推奨事項とメンテナンスモードに移行した機能](./maintenance-mode-and-deprecations-in-7-3.md)
 * [7.2の非推奨事項とメンテナンスモードに移行した機能](./maintenance-mode-and-deprecations-in-7-2.md)
-* [7.1の非推奨事項](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0の非推奨事項](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+* [7.1の非推奨事項](https://help.liferay.com/hc/ja/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+* [7.0の非推奨事項](https://help.liferay.com/hc/ja/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 ## 7.4でメンテナンスモードに移行された機能
 

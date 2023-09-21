@@ -2,25 +2,25 @@
 
 サイトは、パーソナライズされたデジタル体験を構築するためのカスタマイズ可能なスペースである。 以下の手順に従って、Liferayインスタンスに基本サイトを作成してください：
 
-1. *グローバルメニュー* ( ![Applications Menu](../../images/icon-applications-menu.png) ) を開き、 *コントロールパネル* タブ &rarr; *サイト*を開きます。
+1. **グローバルメニュー**( ![Applications Menu](../../images/icon-applications-menu.png) ) を開き、 **コントロールパネル** タブ &rarr; **サイト** を開きます。
 
     ![サイト」アプリケーションを開く。](./adding-a-site/images/01.png)
 
-1. *Add* ( ![Add Button](../../images/icon-add.png) ) をクリックする。
+1. **Add**( ![Add Button](../../images/icon-add.png) ) をクリックする。
 
-1. *サイトテンプレートを選択*. テンプレート *Provided by Liferay* または [*Custom Site Templates*](./site-templates.md) のいずれかを選択してサイトを作成します。
+1. **サイトテンプレートを選択** . テンプレート **Provided by Liferay** または [**Custom Site Templates**](./site-templates.md) のいずれかを選択してサイトを作成します。
 
-    *Blank Site* テンプレートを選択し、ページやコンテンツのない新しいサイトを作成します。
+    **Blank Site** テンプレートを選択し、ページやコンテンツのない新しいサイトを作成します。
 
     ![Liferayが提供するテンプレート、またはカスタムサイトテンプレートを選択し、新しいサイトにページ、コンテンツ、設定を入力することができます。](./adding-a-site/images/02.png)
 
-1. *サイトの名前* を入力します。
+1. **サイトの名前** を入力します。
 
    ```{note}
-   [プライベート・ページ](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages)がシステムで有効になっている場合、サイト・テンプレートから継承されたすべてのページがプライベートかどうかを判断することができます。
+   [プライベート・ページ](../creating-pages/understanding-pages/understanding-pages.md#enabling-private-pages) がシステムで有効になっている場合、サイト・テンプレートから継承されたすべてのページがプライベートかどうかを判断することができます。
    ```
 
-1. *Add* をクリックして、サイトの作成を開始します。
+1. **Add** をクリックして、サイトの作成を開始します。
 
 完了すると、新しい [サイトの設定](../site-settings/site-settings-ui-reference.md)にリダイレクトされます。 サイトを構築するために使用できるアプリケーションの完全なリストについては、 [デフォルトのサイトアプリケーション](./default-site-applications.md) を参照してください。
 

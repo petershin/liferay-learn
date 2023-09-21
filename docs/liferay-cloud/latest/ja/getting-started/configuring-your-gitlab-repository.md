@@ -13,15 +13,15 @@ Liferay Cloud のオンボーディングメールを受け取ると、 `dxpclou
 
 ## Jenkinsサービスの準備
 
-Jenkinsfileをカスタマイズした場合は、このガイドに従って[デフォルトのJenkinsfileを拡張する](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile)。
+Jenkinsfileをカスタマイズした場合は、このガイドに従って [デフォルトのJenkinsfileを拡張する](../platform-services/continuous-integration.md#extending-the-default-jenkinsfile) 。
 
 ## GitLabリポジトリの作成
 
 まず、新しいGitLabリポジトリを作成します：
 
-1. [GitLab](https://gitlab.com)に移動します。
+1. [GitLab](https://gitlab.com) に移動します。
 
-1. _［New project］_ をクリックします。
+1. ［**New project**］ をクリックします。
    
    ![［新しいプロジェクト］をクリックして、新しいGitLabリポジトリの作成を開始します。](./configuring-your-gitlab-repository/images/01.png)
 
@@ -31,9 +31,9 @@ Jenkinsfileをカスタマイズした場合は、このガイドに従って[�
 
 1. 表示レベルをプライベートに設定します（無料ユーザーは無制限のプライベートリポジトリを使用できます）。
 
-1. _Initialize repository with a README_ がチェックされていないことを確認します。
+1. **Initialize repository with a README** がチェックされていないことを確認します。
 
-1. _［Create project］_ をクリックします。
+1. ［**Create project**］ をクリックします。
 
 ## GitHubからGitLabへの転送
 
@@ -55,13 +55,13 @@ Jenkinsfileをカスタマイズした場合は、このガイドに従って[�
    
    `git push gitlab master`
 
-GitHub リポジトリの作成、クローン、プッシュについてのヘルプが必要な場合は、 [GitLab's documentation](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)を参照してください。
+GitHub リポジトリの作成、クローン、プッシュについてのヘルプが必要な場合は、 [GitLab's documentation](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) を参照してください。
 
 ## GitLabのアクセストークンの生成
 
 次に、JenkinsのビルドをトリガーするためにWebhookで使用するアクセストークンを作成します。
 
-1. [パーソナル・アクセストークンのページ](https://gitlab.com/profile/personal_access_tokens)に移動します。
+1. [パーソナル・アクセストークンのページ](https://gitlab.com/profile/personal_access_tokens) に移動します。
    
    ![GitLabのパーソナルアクセストークンを作成します。](./configuring-your-gitlab-repository/images/03.png)
 
@@ -73,7 +73,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
     * read_repository
     * write_repository
 
-1. [ _Create personal access token_]をクリックします。
+1. [**Create personal access token**]をクリックします。
 
 1. アクセストークンをコピーしてどこかに保存します（アクセストークンが再度表示されないためです）。
 
@@ -83,7 +83,7 @@ GitHub リポジトリの作成、クローン、プッシュについてのヘ�
 
 1. Liferay Cloud Console にログインし、 `infra` 環境の Jenkins サービスに移動します。
 
-1. _［環境変数］_ タブに移動します。
+1. ［**環境変数**］ タブに移動します。
 
 1. 以下の環境変数を設定します：
 
@@ -112,23 +112,23 @@ Liferay Cloud の Jenkins サービスは、選択した git SCM プロバイダ
 
 1. GitLabリポジトリに移動します。
 
-1. _Settings_に移動し_［Webhooks］_を選択します。
+1. **Settings** に移動し ［**Webhooks**］ を選択します。
 
-1. _Project Hooks_で、作成されたWebhookがリストされていることを確認します。
+1. **Project Hooks** で、作成されたWebhookがリストされていることを確認します。
 
-1. CI webhookの[ _Edit_ ]ボタンをクリックします。
+1. CI webhookの[**Edit**]ボタンをクリックします。
    
    ![リポジトリ用に自動的に作成されたWebhookを編集します。](./configuring-your-gitlab-repository/images/04.png)
 
-1. _［Tags push events］_と_［Comments］_をアンチェックします。
+1. ［**Tags push events**］ と ［**Comments**］ をアンチェックします。
 
-1. _［Enable SSL verification］_にチェックします。
+1. ［**Enable SSL verification**］ にチェックします。
 
-1. _［変更を保存］_クリックします。
+1. ［**変更を保存**］ クリックします。
 
 ## ビルドの確認
 
-プッシュされたブランチとマージリクエスト（GitLab のプルリクエストに相当）がビルドのトリガーとなり、Liferay Cloud Console の _Builds_ タブからビルドの確認やデプロイができます。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
+プッシュされたブランチとマージリクエスト（GitLab のプルリクエストに相当）がビルドのトリガーとなり、Liferay Cloud Console の **Builds** タブからビルドの確認やデプロイができます。 Jenkins サービスとの統合を設定したら、次のステップとして、インテグレーションが成功したかどうかを確認するためにビルドを検証します。
 
 ### プッシュされたブランチからのビルドの確認
 
@@ -146,9 +146,9 @@ Liferay Cloud の Jenkins サービスは、選択した git SCM プロバイダ
     git push gitlab branch-name
     ```
 
-1. Liferay Cloud Console の _Builds_ ページに移動します。
+1. Liferay Cloud Console の **Builds** ページに移動します。
 
-1. _Builds_ ページで、プッシュされたブランチのビルドが表示されることを確認します。
+1. **Builds** ページで、プッシュされたブランチのビルドが表示されることを確認します。
 
 ### マージリクエストからのビルドの確認
 
@@ -158,7 +158,7 @@ Liferay Cloud の Jenkins サービスは、選択した git SCM プロバイダ
 
 1. マージリクエストに対して新しいビルドが作成されていることを確認します。
 
-1. Liferay Cloud Console の _Builds_ ページに移動します。
+1. Liferay Cloud Console の **Builds** ページに移動します。
 
 1. ブランチのリンクをクリックして、適切なビルドでコミットします。
    

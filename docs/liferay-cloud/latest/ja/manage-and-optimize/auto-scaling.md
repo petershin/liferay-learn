@@ -1,6 +1,6 @@
 # オートスケーリング
 
-Liferay Cloudのオートスケーリング機能は、必要に応じてLiferayサービスのインスタンスを自動的に作成・破棄し、パフォーマンスを最適化します。 これは、サーバートラフィックの増加、メモリリーク、またはその他の急な変化に対処します。 デフォルトでは、この機能はすべての Liferay Cloud アカウントで *無効* になっています。
+Liferay Cloudのオートスケーリング機能は、必要に応じてLiferayサービスのインスタンスを自動的に作成・破棄し、パフォーマンスを最適化します。 これは、サーバートラフィックの増加、メモリリーク、またはその他の急な変化に対処します。 デフォルトでは、この機能はすべての Liferay Cloud アカウントで **無効** になっています。
 
 この機能を使用して、サービスはLiferay DXPインスタンスの数を
 
@@ -11,7 +11,7 @@ Liferay Cloudのオートスケーリング機能は、必要に応じてLiferay
 ```
 
 ```{note}
-オートスケーリングは、本番環境のLiferay DXPサービスでのみ利用可能です。 オートスケーリングを有効にすると、サービスのインスタンスが増えるごとに1時間ごとの料金が発生します。 オートスケーリングの課金方法については、[オートスケーリングの課金方法](https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged-)を参照。
+オートスケーリングは、本番環境のLiferay DXPサービスでのみ利用可能です。 オートスケーリングを有効にすると、サービスのインスタンスが増えるごとに1時間ごとの料金が発生します。 オートスケーリングの課金方法については、 [オートスケーリングの課金方法](https://help.liferay.com/hc/ja/articles/360030843592-How-Auto-Scaling-is-charged-) を参照。
 ```
 
 ## JVMメモリ設定
@@ -26,7 +26,7 @@ Liferay Cloudのオートスケーリング機能は、必要に応じてLiferay
 
 推奨される設定は、 `-Xms` フラグを使用可能なメモリの25%を使用して設定し、 `-Xmx` フラグを使用可能なメモリの75%を使用して設定することです。 `Liferay` サービスで使用可能なさまざまなレベルのメモリについて、推奨値のリファレンスについては次の表を参照してください：
 
-| **使用可能なメモリ** | **推奨されるLIFERAY_JAVA_OPTS** |
+| **使用可能なメモリ** | **推奨されるLIFERAY** JAVA **OPTS** |
 |:------------ |:---------------------------- |
 | 8 GB         | -Xms2048m -Xmx6144m          |
 | 16 GB        | -Xms4096m -Xmx12288m         |
@@ -38,15 +38,15 @@ Liferay Cloudのオートスケーリング機能は、必要に応じてLiferay
 `LIFERAY_JAVA_OPTS` 変数は `-Xms` と `-Xmx` だけでなく、他のフラグと一緒に使われることもある。 他のフラグが存在する場合は、他のフラグを削除せずにメモリ引数で環境変数を更新します。
 ```
 
-この環境変数を `Liferay` サービスに追加するためのヘルプについては [Defining Environment Variables](../reference/defining-environment-variables.md) を参照してください。
+この環境変数を `Liferay` サービスに追加するためのヘルプについては [環境変数の定義](../reference/defining-environment-variables.md) を参照してください。
 
 ## オートスケーリングの管理
 
 以下の手順に従って、Liferay Cloud Console でオートスケーリングを有効または無効にします：
 
 1. 本番環境に移動する。
-1. *［Services］* &rarr; *［Liferay］* &rarr; *［Scale］* に移動します。
-1. 自動スケーリングが無効になっている場合は、*［Enable Auto Scaling］* をクリックして有効にします。 オートスケーリングが既に有効になっている場合は、［ *無効にするAuto Scaling* ］をクリックして無効にします。
+1. ［**Services**］ &rarr; ［**Liferay**］ &rarr; ［**Scale**］ に移動します。
+1. 自動スケーリングが無効になっている場合は、 ［**Enable Auto Scaling**］ をクリックして有効にします。 オートスケーリングが既に有効になっている場合は、［**無効にするAuto Scaling**］をクリックして無効にします。
 
 自動スケーリングを有効にすると、Liferay Cloudはサービスを監視し、事前に定義されたしきい値に従って自動的にスケーリングします。
 
@@ -54,11 +54,11 @@ Liferay Cloudのオートスケーリング機能は、必要に応じてLiferay
 
 ## 目標平均稼働率の指定
 
-システム管理者は、 *目標平均利用率*を指定できます。 この値は、Liferay DXPサービス全体のメモリおよびCPU使用率の平均です。 オートスケーリングが開始される前に、その値のしきい値を超えなければなりません。
+システム管理者は、 **目標平均利用率** を指定できます。 この値は、Liferay DXPサービス全体のメモリおよびCPU使用率の平均です。 オートスケーリングが開始される前に、その値のしきい値を超えなければなりません。
 
 たとえば、3つのサービスインスタンスがそれぞれメモリの70％、90％、95％を使用する場合、平均メモリ使用率は85％です。 目標平均使用率が90に設定されている場合、アップスケーリングは必要ありません。 この状況でのアップスケーリングは、平均メモリ使用率がターゲットを超えた場合にのみ発生します。
 
-使用可能なメモリの合計は、 `LCP.json`の [Configuration via LCP.json](../reference/configuration-via-lcp-json.md)で参照される `メモリ` プロパティで指定されます。
+使用可能なメモリの合計は、 `LCP.json`の [LCP.jsonによるコンフィギュレーション](../reference/configuration-via-lcp-json.md) で参照される `メモリ` プロパティで指定されます。
 
 サービスの `LCP.json`の `autoscale` プロパティでターゲットの平均使用率を指定します：
 
@@ -77,7 +77,7 @@ Liferay Cloudのオートスケーリング機能は、必要に応じてLiferay
 
 1. [Web server service](../platform-services/web-server-service.md)の`LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` [environment variable](../reference/defining-environment-variables.md)を必要な最高値に設定します。 `Liferay` サービスは、 `LCP_HAPROXY_SERVER_TEMPLATE_BACKEND_NUM` で定義されているインスタンスの最大数（デフォルトでは10）を超えて拡張することはできません。
 
-1. `Liferay`サービスの`LCP.json`ファイル内で、デフォルドの１０以上のインスタンスが必要な場合、希望の最大インスタンスを指定します。 `maxInstances` フィールドを [`autoscale` オブジェクト](#specifying-target-average-utilization)内に設定します。 
+1. `Liferay`サービスの`LCP.json`ファイル内で、デフォルドの１０以上のインスタンスが必要な場合、希望の最大インスタンスを指定します。 `maxInstances` フィールドを [`autoscale` オブジェクト](#specifying-target-average-utilization) 内に設定します。
 
     ```json
     "autoscale": {

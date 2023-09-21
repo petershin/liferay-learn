@@ -15,10 +15,10 @@ patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2.md
 ```
 
 ```{note}
-Liferay DXPは、最新リリースにバンドルリリースを使用しています。 アップデートを適用する場合は、[Updating Liferay](./updating-liferay.md)を参照してください。 すべてのホットフィックスはパッチです。 ホットフィックスを適用する場合は、このまま読み進めてください。
+Liferay DXPは、最新リリースにバンドルリリースを使用しています。 アップデートを適用する場合は、 [Liferayのアップデート](./updating-liferay.md) を参照してください。 すべてのホットフィックスはパッチです。 ホットフィックスを適用する場合は、このまま読み進めてください。
 ```
 
-Liferayの修正プログラムがリリースされたら、DXPインスタンスを最新の状態にしておきましょう。 Liferayは修正を集約し、 _パッチ_と呼ばれるZIPファイルでエンタープライズサブスクライバーが利用できるようにします。
+Liferayの修正プログラムがリリースされたら、DXPインスタンスを最新の状態にしておきましょう。 Liferayは修正を集約し、 **パッチ** と呼ばれるZIPファイルでエンタープライズサブスクライバーが利用できるようにします。
 
 ## パッチの種類
 
@@ -29,15 +29,15 @@ Liferayの修正プログラムがリリースされたら、DXPインスタン�
 
 **すべてのDXPバージョンで**
 
-* **ホットフィックス：**ビジネスクリティカルなDXP問題を迅速に修正するようにお客様から依頼されました。
+* **ホットフィックス：** ビジネスクリティカルなDXP問題を迅速に修正するようにお客様から依頼されました。
 
 **DXP 7.3 SP3以前のバージョンの場合**
 
 * **フィックスパック：** 最新の問題を解決します。
-* **セキュリティフィックスパック：** 最新のセキュリティ問題に直ちに対処します。 なお、Liferay DXP 7.3 SP3+はセキュリティーアップデートを使用しています。 詳細は、 [Updating Liferay](./updating-liferay.md) を参照してください。
+* **セキュリティフィックスパック：** 最新のセキュリティ問題に直ちに対処します。 なお、Liferay DXP 7.3 SP3+はセキュリティーアップデートを使用しています。 詳細は、 [Liferayのアップデート](./updating-liferay.md) を参照してください。
 * **サービスパック：** より多くのテストを必要とする大きな修正を組み込みます。 Service Packのリリースには、完全なDXP Service Pack Tomcatバンドルも含まれています。
 
-[Understanding Patch Types](./patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md) 上記のパッチオプションについて説明します。
+[パッチタイプについて](./patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.md) 上記のパッチオプションについて説明します。
 
 ## パッチのインストール
 
@@ -58,7 +58,7 @@ Liferayの修正プログラムがリリースされたら、DXPインスタン�
 
 次のトピックでは、DXP 7.2でパッチを管理するためのベストプラクティスを紹介します。
 
-* [Slimming Down Patched Installations](./patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2/slimming-down-patched-installations.md)
+* [パッチを適用したインストールのスリム化](./patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2/slimming-down-patched-installations.md)
 * [スリムバンドルの使用](./patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2/using-slim-bundles.md)
 * [パッチとカスタムプラグイン間の衝突の処理](./patching-dxp-7-3-and-earlier/advanced-patching-for-dxp-7-2/custom-code-and-patch-compatibility.md)
 

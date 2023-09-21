@@ -21,7 +21,7 @@ feature.flag.COMMERCE-8087=true
 ```
 
 ```{warning}
-バッチフレームワークのエクスポート/インポートセンターは[開発中の機能](../../ system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) です。 本番環境では、開発機能フラグを決して有効にしないでください。
+バッチフレームワークのエクスポート/インポートセンターは [開発中の機能](../../ system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) です。 本番環境では、開発機能フラグを決して有効にしないでください。
 ```
 
 `client-extension.yaml` ファイルにバッチクライアント拡張子を指定します：

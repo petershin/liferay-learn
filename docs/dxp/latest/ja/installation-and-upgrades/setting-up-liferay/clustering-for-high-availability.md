@@ -40,7 +40,7 @@ Liferay DXPは、複数のマシンのクラスター（水平クラスター）
 同時実行の問題がなく、マスターノードが正しく選択されていることを確認するため、ノードを順次起動します。
 ```
 
-DXPクラスターを構成したら、それにアプリケーションをデプロイし、ユーザーエクスペリエンスを引き続き改善できます。 詳細は、[Maintaining Clustered Installations](../maintaining-a-liferay-installation/maintaining-clustered-installations.md)を参照してください。
+DXPクラスターを構成したら、それにアプリケーションをデプロイし、ユーザーエクスペリエンスを引き続き改善できます。 詳細は、 [クラスター化されたインストールの維持](../maintaining-a-liferay-installation/maintaining-clustered-installations.md) を参照してください。
 
 ## 次のステップ
 

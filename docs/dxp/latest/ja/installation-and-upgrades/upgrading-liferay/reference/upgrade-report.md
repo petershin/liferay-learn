@@ -36,7 +36,7 @@ echo "upgrade.report.enabled=\"true\"" << tools/portal-tools-db-upgrade-client/p
 
 ## ポータル・プロパティで起動時にレポートをアップグレードする
 
-起動時にアップグレードレポートを有効にするには、 `portal-ext.properties` ファイルで、以下の 2 つの [portal properties](../../reference/portal-properties.md) を設定します：
+起動時にアップグレードレポートを有効にするには、 `portal-ext.properties` ファイルで、以下の 2 つの [ポータルプロパティ](../../reference/portal-properties.md) を設定します：
 
 ```properties
 upgrade.database.auto.run=true
@@ -107,4 +107,4 @@ Warnings thrown during upgrade process
 * [アップグレードログコンテキスト](./upgrade-log-context.md)
 * [MBeansによるアップグレードの監視](./monitoring-upgrades-with-mbeans.md)
 * [データベースアップグレードツールのリファレンス](../reference/database-upgrade-tool-reference.md#manual-configuration)
-* [Troubleshooting Upgrades](../reference/troubleshooting-upgrades.md)
+* [アップグレードのトラブルシューティング](../reference/troubleshooting-upgrades.md)

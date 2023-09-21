@@ -6,11 +6,11 @@
 
 フォームの断片を作る
 
-1. *Site Menu* ( ![Site Menu](../../../../images/icon-product-menu.png) ) を開き、 *Design* &rarr; *Fragments*へ。
+1. **Site Menu**( ![Site Menu](../../../../images/icon-product-menu.png) ) を開き、 **Design** &rarr; **Fragments** へ。
 
-1. *Plus* ( ![Plus Button](../../../images/icon-plus.png) ) をクリックして、フォームのフラグメントを整理するためのフラグメントセットを作成します。
+1. **Plus**( ![Plus Button](../../../images/icon-plus.png) ) をクリックして、フォームのフラグメントを整理するためのフラグメントセットを作成します。
 
-1. *Add* ( ![Add Button](../../../images/icon-add.png) ) をクリックし、 *Form Fragment* タイプを選択し、 *Next*をクリックする。
+1. **Add**( ![Add Button](../../../images/icon-add.png) ) をクリックし、 **Form Fragment** タイプを選択し、 **Next** をクリックする。
 
    ![フォームフラグメントタイプを選択し、Nextをクリックします。](./creating-form-fragments/images/01.png)
 
@@ -22,19 +22,19 @@
 
    ![フラグメントがサポートするフィールドタイプを選択する。](./creating-form-fragments/images/02.png)
 
-1. *［追加］*をクリックします。 これにより、ドラフトフラグメントが作成され、フラグメントの編集ページに移動します。
+1. ［**追加**］ をクリックします。 これにより、ドラフトフラグメントが作成され、フラグメントの編集ページに移動します。
 
 1. コードタブで、フラグメントのHTML、CSS、JavaScriptを追加します。
 
    ![コードタブで、フラグメントのHTML、CSS、JavaScriptを追加します。](./creating-form-fragments/images/03.png)
 
-1. (オプション）Configuration タブで、JSON を使用してフラグメントを構成し、オプションを追加します。 さまざまなフラグメント・コンフィギュレーション・タイプの詳細については、 [Fragment Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md)。
+1. (オプション）Configuration タブで、JSON を使用してフラグメントを構成し、オプションを追加します。 さまざまなフラグメント・コンフィギュレーション・タイプの詳細については、 [フラグメント設定タイプのリファレンス](../reference/fragments/fragment-configuration-types-reference.md) 。
 
    ![コンフィギュレーションタブで、JSONを使用してフラグメントをコンフィギュレーションし、オプションを追加します。](./creating-form-fragments/images/04.png)
 
-1. *［Publish］*をクリックします。
+1. ［**Publish**］ をクリックします。
 
-次に、フォーム・フラグメントを使ってコンテンツ・ページにフォームを作成します。 詳しくは [Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
+次に、フォーム・フラグメントを使ってコンテンツ・ページにフォームを作成します。 詳しくは [フラグメントを使用してフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
 
 フラグメントツールキットを使用している場合は、 `yarn run add-fragment`を実行する際にフラグメントの種類を選択できます。
 

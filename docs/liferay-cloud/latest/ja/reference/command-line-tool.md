@@ -38,7 +38,7 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 バージョン3をインストールして使用するには、まず現在のバージョンをアンインストールする必要があります。 これにより、同じバイナリ名との競合が防止されます。
 
 ```{important}
-これらの手順はCLIバージョン2のアンインストールに特化したものであり、[CLIツールのバージョン3のアンインストール](#uninstalling-version-3-of-cli-tool)の手順とは**異なります。
+これらの手順はCLIバージョン2のアンインストールに特化したものであり、 [CLIツールのバージョン3のアンインストール](#uninstalling-version-3-of-cli-tool) の手順とは**異なります。
 ```
 
 ### MacOSまたはLinuxでのバージョン2のアンインストール
@@ -49,13 +49,13 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 
 ### Windowsでのバージョン2のアンインストール
 
-1. Windows 10では、 *［コントロールパネル］* &rarr; *［プログラム］* &rarr; *［プログラムのアンインストール］*に移動します。
+1. Windows 10では、 ［**コントロールパネル**］ &rarr; ［**プログラム**］ &rarr; ［**プログラムのアンインストール**］ に移動します。
 
-    また、Windows 7および8の場合は、 *［コントロールパネル］* &rarr; *［Add or Remove Programs］*に進みます。
+    また、Windows 7および8の場合は、 ［**コントロールパネル**］ &rarr; ［**Add or Remove Programs**］ に進みます。
 
 1. `lcp amd64-installer-0.3`を選択します。
 
-1. _［アンインストール］_ をクリックして確認します。
+1. ［**アンインストール**］ をクリックして確認します。
 
 1. `lcp` または `lcp.exe`コマンドを実行して、アンインストールが完了したことを確認してください。
 
@@ -241,7 +241,7 @@ lcp deploy
 lcp deploy -r <remote-id>
 ```
 
-詳細については、 [Deploying Changes via the CLI Tool](../build-and-deploy/deploying-changes-via-the-cli-tool.md) を参照してください。
+詳細については、 [CLIツールによる変更点のデプロイ](../build-and-deploy/deploying-changes-via-the-cli-tool.md) を参照してください。
 
 ## サービスのシェルへのアクセス
 
@@ -271,7 +271,7 @@ MacとLinuxの場合は、このコマンドを実行する：
 curl https://cdn.liferay.cloud/lcp/stable/latest/uninstall.sh -fsSL | bash
 ```
 
-Windows 7および8の場合は、 *［コントロールパネル］* &rarr; *［Add or Remove Programs］*に進みます。 Windows 10では、 *［コントロールパネル］* &rarr; *［プログラム］* &rarr; *［プログラムのアンインストール］*に移動します。 次に、 プログラムの一覧から*LCP CLI*を探し、［*アンインストール*］をクリックします。 ウィザードの手順に従います。
+Windows 7および8の場合は、 ［**コントロールパネル**］ &rarr; ［**Add or Remove Programs**］ に進みます。 Windows 10では、 ［**コントロールパネル**］ &rarr; ［**プログラム**］ &rarr; ［**プログラムのアンインストール**］ に移動します。 次に、 プログラムの一覧から **LCP CLI** を探し、［**アンインストール**］をクリックします。 ウィザードの手順に従います。
 
 ## 関連トピック
 

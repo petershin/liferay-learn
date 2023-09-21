@@ -42,7 +42,7 @@ Liferay はすぐに使える様々なフラグメントを提供しますが、
 
 すべてのページ・フラグメントは、管理しやすく使いやすいように、関連するフラグメントをグループ化したセットに編成されている。 各フラグメントセットには、すべてのフラグメントからアクセス可能な共通リソースを含めることができる。 詳細については、[Including Default Resources in Page Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md)を参照してください。
 
-ページやテンプレートにフラグメントを追加した後、フラグメントやそのサブエレメントを設定・カスタマイズすることができます。 これらのオプションは異なる場合がありますが、一部はすべてに共通です。 使用可能なオプションの詳細については、[Configuring Fragments](./using-fragments/configuring-fragments.md)を参照してください。
+ページやテンプレートにフラグメントを追加した後、フラグメントやそのサブエレメントを設定・カスタマイズすることができます。 これらのオプションは異なる場合がありますが、一部はすべてに共通です。 使用可能なオプションの詳細については、 [フラグメントの設定](./using-fragments/configuring-fragments.md) を参照してください。
 
 ::::{grid} 2
 :gutter: 3 3 3 3

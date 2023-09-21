@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay 7.4以降で利用可能`
 
-クライアントエクステンションを使えば、OSGiモジュールをデプロイせずにLiferayを拡張できます。 従来のモジュール開発と同様に、クライアント拡張は [Liferay Workspace](../tooling/liferay-workspace.md)に置かれます。 学ぶことから始めよう
+クライアントエクステンションを使えば、OSGiモジュールをデプロイせずにLiferayを拡張できます。 従来のモジュール開発と同様に、クライアント拡張は [Liferay Workspace](../tooling/liferay-workspace.md) に置かれます。 学ぶことから始めよう
 
 * クライアント拡張機能の開発に必要なツール
 * 設定ファイルでクライアントの拡張子を定義する方法
@@ -15,7 +15,7 @@
 1. Java 8またはJDK 11。
 
     ```{note}
-    サポートされているJDK、データベース、環境については、[互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)を確認してください。 推奨されるJVM設定については、[JVM設定](../../installation-and-upgrades/references/jvm-configuration.html) を参照してください。
+    サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM設定](../../installation-and-upgrades/references/jvm-configuration.html) を参照してください。
     ```
 
 1. Liferayのワークスペース。 クライアント拡張プロジェクトのサンプルがあるワークスペースをダウンロードするには、以下を実行します。
@@ -26,11 +26,11 @@
 
     クライアント拡張プロジェクト（ `client-extensions/` ディレクトリ）を自分のワークスペースにコピーするか、サンプル・ワークスペースを直接使用することができます。
 
-1. Liferay Experience Cloud (LXC) を使用している場合は、 [`lcp` CLI ツール](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool)が必要です。
+1. Liferay Experience Cloud (LXC) を使用している場合は、 [`lcp` CLI ツール](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool) が必要です。
 
 ## 顧客拡張プロジェクト
 
-クライアント・エクステンションの開発は、 _ワークスペース＋プロジェクト_ モデルに従っている。 [Liferay ワークスペース](../tooling/liferay-workspace.md)内で、 `[workspace-root]/client-extensions`の下にクライアント拡張プロジェクトを実装します。 プロジェクトの `client-extension.yaml` ファイルは、そのクライアント拡張機能を定義し、ビルドプロセスの結果、プロジェクトごとに1セットの出力が得られます。 ビルドされたクライアント拡張プロジェクトはデプロイ可能な `*.zip` アーカイブで、Liferay Universal File Format Archive (LUFFA) と呼ばれます。
+クライアント・エクステンションの開発は、 **ワークスペース＋プロジェクト** モデルに従っている。 [Liferay ワークスペース](../tooling/liferay-workspace.md)内で、 `[workspace-root]/client-extensions`の下にクライアント拡張プロジェクトを実装します。 プロジェクトの `client-extension.yaml` ファイルは、そのクライアント拡張機能を定義し、ビルドプロセスの結果、プロジェクトごとに1セットの出力が得られます。 ビルドされたクライアント拡張プロジェクトはデプロイ可能な `*.zip` アーカイブで、Liferay Universal File Format Archive (LUFFA) と呼ばれます。
 
 ## プロジェクト内のクライアント拡張機能のグループ化
 
@@ -141,7 +141,7 @@ assemble:
       into: static
 ```
 
-LUFFAの作成、構造、内容の詳細については、 [Packaging Client Extensions](./packaging-client-extensions.md)をご参照ください。
+LUFFAの作成、構造、内容の詳細については、 [クライアント拡張機能のパッケージ化](./packaging-client-extensions.md) をご参照ください。
 
 ## Liferayインスタンスにデプロイする
 

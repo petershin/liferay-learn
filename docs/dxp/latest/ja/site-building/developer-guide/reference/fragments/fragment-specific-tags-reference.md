@@ -121,7 +121,7 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 </div>
 ```
 
-コンテンツマッピングは、フラグメント内の編集可能なフィールドと、ウェブコンテンツやブログなどのアセットタイプのフィールドを結び付けます。 例えば、ウェブコンテンツ記事のプレビュー画像を表示するために、画像フィールドをマッピングすることができます。 マッピングフィールドの詳細については、[Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)を参照してください。
+コンテンツマッピングは、フラグメント内の編集可能なフィールドと、ウェブコンテンツやブログなどのアセットタイプのフィールドを結び付けます。 例えば、ウェブコンテンツ記事のプレビュー画像を表示するために、画像フィールドをマッピングすることができます。 マッピングフィールドの詳細については、 [Fragment Mapping Settings](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) を参照してください。
 
 ## 編集可能なリンクの作成
 
@@ -180,7 +180,7 @@ Liferay Portal 7.3 GA2 以下では、以下の構文を使用します。
 
 ![リンクの外観と動作を定義するためのオプションがいくつかあります。](./fragment-specific-tags-reference/images/03.png)
 
-編集可能なリンクの詳細は、[Editable Links](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を参照してください。
+編集可能なリンクの詳細は、 [Editable Links](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) を参照してください。
 
 ## 編集可能な HTML の作成
 
@@ -298,7 +298,7 @@ localizable` 属性は、`configurationRole` プロパティが `style` に設�
   }
 ```
 
-このサンプルコードを使って、ページのターゲット言語に応じてボタンの種類を変更することができます。 次の例では、 _Contact Us_/_Contacto_ ボタン・フラグメントは、 `localizable` 属性を `true` に設定し、 `buttonType` フィールドを設定しています。 この例では、この属性を使って、ページがen-US言語を使っているときは _Primary_ ボタンのタイプを設定し（A）、ページがes-ES言語を使っているときは _Outline Primary_ タイプを設定しています（B）。
+このサンプルコードを使って、ページのターゲット言語に応じてボタンの種類を変更することができます。 次の例では、 **Contact Us** / **Contacto** ボタン・フラグメントは、 `localizable` 属性を `true` に設定し、 `buttonType` フィールドを設定しています。 この例では、この属性を使って、ページがen-US言語を使っているときは **Primary** ボタンのタイプを設定し（A）、ページがes-ES言語を使っているときは **Outline Primary** タイプを設定しています（B）。
 
 ![フラグメント内のローカライズ可能な要素は、Generalタブの下に国旗アイコンを表示し、言語ごとに異なる設定をサポートします。](./fragment-specific-tags-reference/images/04.png)
 

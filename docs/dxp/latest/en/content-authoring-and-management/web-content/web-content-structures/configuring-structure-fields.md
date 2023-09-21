@@ -23,13 +23,13 @@ You can edit structure fields and their properties:
 Field settings depend on the type of field. A setting listed below may not apply for a field.
 ```
 
-**Type:** The type of field placed in the definition. This is not editable but is available to reference from a web content template.
+**Type:** The type of field placed in the definition. The type of field is not editable but is available to reference from a web content template.
 
 **Field Label:** The text to display above the field.
 
 **Show Label:** Whether to show the *Field Label.* The default value is *Yes*.
 
-**Required:** Whether to mark the field as required. If a field is required, Users must enter a value for it to submit content using the structure. The default value is *No*.
+**Required:** Indicate whether the field is mandatory. Required fields must be completed in order to submit content using the web content structure. The default value is No.
 
 **Field Reference:** The variable name used in web content templates for this field. You should enter a descriptive name. A default name is automatically generated.
 
@@ -37,15 +37,15 @@ Field settings depend on the type of field. A setting listed below may not apply
 Liferay DXP assigns a random field reference for each new field in the structure. Replace the default value with something more descriptive, so template developers can identify the field to place its data in a web content template or display page.
 ```
 
-**Help Text:** Add a comment to help users understand the field label.
+**Help Text:** Add a comment to help users understand the field label. The help text works as a subheading for your field to provide additional guidance.
 
-**Searchable:** Whether to index the field for search. The default values are *Keyword* or *Text*.
+**Searchable:** Whether to index the field for search. The default values are *Text* or *Keyword*. The [difference between text and keyword](https://liferay.dev/blogs/-/blogs/understanding-search-from-a-developers-perspective#text-vs-keyword) is whether the full text is included or only keywords are included.
 
 **Localizable:** Whether the field can be localized in the user's language. The default value is *Yes*.
 
 **Repeatable:** Whether the user can duplicate the field while creating the web content. For example, you can have a repeatable author field so the user can duplicate the field to enter a second author for an article. The default value is *No*. If set to *Yes*, users can click a `+` icon on the field to duplicate it while creating the web content.
 
-**Allow Multiple Selections:** Whether a select field can have multiple selected options. The default value is *No*.
+**Allow Multiple Selections:** Whether the user can select multiple options. The default value is *No*.
 
 **Order Options Alphabetically:** Whether a select field has alphabetically ordered options. The default value is *No*.
 

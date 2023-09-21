@@ -35,20 +35,22 @@ If you want to map several structure field values to individual fragments, you m
 
 1. On the sidebar panel, click the *Selection* (![Selection](../../../images/icon-pages-tree.png)) button and choose the element in the fragment you want to map.
 
-1. Under the *Mapping* section, [select and map](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) the web content article that contains the value you want to map.
+1. Under the Mapping section, [*select and map*](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) the web content article that contains the value you want to map.
 
-1. Click the *Field* dropdown menu and select the web content template you created before.
+1. Click the *Field* drop-down menu and select the web content template you created before.
 
-    ![Map the field in the web content remplate to your fragment.](./mapping-web-content-templates-to-fragments/images/05.png)
+   ![Map the field in the web content remplate to your fragment.](./mapping-web-content-templates-to-fragments/images/05.png)
 
 1. Click *Publish* to save the changes.
 
 ```{warning}
-A web content article is reindexed when it is edited and saved, but content pages are reindexed only when published (to conserve resources). So, a web content article mapped to a cached fragment is updated but not in the content page unless you publish the page again or [unmark the fragment as cacheable](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments).
+A web content article is reindexed when it is edited and saved, but content pages are reindexed only when published (to conserve resources). Therefore, when a web content article mapped to a cached fragment is updated, the update doesn't appear on the content page until you publish the page again or [unmark the fragment as cacheable](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments).
 ```
 
 ## Related Topics
 
-- [Using Fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)
-- [Understanding Web Content Structures](../../../content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures.md)
-- [Creating Web Content Templates](../../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)
+[Using Fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md)
+
+[Understanding Web Content Structures](../../../content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures.md)
+
+[Creating Web Content Templates](../../../content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates.md)

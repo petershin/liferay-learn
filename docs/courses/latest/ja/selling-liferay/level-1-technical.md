@@ -1,8 +1,17 @@
+---
+toc:
+  - ./level-1-technical/discovery-calls.md
+  - ./level-1-technical/public-pages-experience.md
+  - ./level-1-technical/liferay-authentication.md
+  - ./level-1-technical/experience-management.md
+  - ./level-1-technical/basics-of-styling.md
+  - ./level-1-technical/constructing-a-business-application.md
+---
 # 技術営業職レベル1
 
 技術営業職のためのレベル1「Liferayの販売」ラーニングパスへようこそ！
 
-このモジュールはセールスエンジニアに焦点を当て、 [レベル0](./level-0.md) で学んだ基礎知識をもとに、Liferay のデモを準備し、成功させることができるようにします。
+このモジュールはセールスエンジニアに焦点を当て、 [Level 0](./level-0.md) で学んだ基礎知識をもとに、Liferay のデモを準備し、成功させることができるようにします。
 
 ## 期待される成果
 
@@ -38,41 +47,53 @@
 
 このコースはセールス・エンジニアになる方法を教えるものではないので、テクニカル・セールスの経験があることをお勧めします。
 
-## メモ
+レベル1は、 [ディスカバリー・コール](./level-1-technical/discovery-calls.md)で何を調べるかを学ぶことから始める。
 
-全内容はまだ準備できていない！
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card} ディスカバリー・コール
+:link: ./level-1-technical/discovery-calls.md
+
+このモジュールでは、見込み客の心に響くデモを提供するために、ディスカバリー・コールで何を見つけるべきかを探ります。
+:::
+
+:::{grid-item-card} 公開ページ経験
+:link: ./level-1-technical/public-pages-experience.md
+
+このモジュールでは、ログインする前にLiferayについて話し、デモを行う方法を説明します。
+:::
+
+:::{grid-item-card} Liferay 認証
+:link: ./level-1-technical/liferay-authentication.md
+
+このモジュールでは、Liferay アプリケーションの認証に使用できる方法と、見込み客との話し合い方を紹介します。
+:::
+
+:::{grid-item-card} 経験管理
+:link: ./level-1-technical/experience-management.md
+
+このモジュールでは、Liferayアプリケーションにログインした後、ユーザーがどのような体験をするかを説明します。
+:::
+
+:::{grid-item-card} Liferay スタイリングの基本
+:link: ./level-1-technical/basics-of-styling.md
+
+このモジュールでは、既存のデモのルック＆フィールを特定の見込み客のニーズに合わせて調整するために使用できる簡単なトリックについて説明します。
+:::
+
+:::{grid-item-card} ビジネスアプリケーションの構築
+:link: ./level-1-technical/constructing-a-business-application.md
+
+このモジュールは、コードを書くことなく、既存のデモにビジネスアプリケーションを素早く追加する方法として、Liferay Objectsの使用を促進します。
+:::
+::::
+
+## 近日公開
+
+残りのモジュールはまだ準備が整っていない！
 
 なお、直近のライブ・セッションの録画とプレゼンテーションのPDFは以下をご覧ください。
-
-**ディスカバリー・コール**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-1-discovery-call) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-1-discovery-call-pdf) をダウンロードしてください。
-
-**公共ページでの経験**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) をダウンロードしてください。
-
-**Liferay 認証**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf) をダウンロードしてください。
-
-**エクスペリエンスの管理**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-4-experience-management) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) をダウンロードしてください。
-
-**Liferayのスタイリングの基本**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) をダウンロードしてください。
-
-**ビジネスアプリケーションの構築**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-6-constructing-a-business-application) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-6-constructing-a-business-application-pdf) をダウンロードしてください。
 
 **Liferayの拡張**
 

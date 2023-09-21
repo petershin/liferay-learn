@@ -8,7 +8,7 @@ toc:
 
 * Liferayは、Liferay DXPという単一の製品を開発しています。
 * 以下3つの製品を展開しています。
-  * Liferay Experience Cloud (LXC) [SaaS]
+  * Liferay Experience Cloud（LXC）[SaaS]
   * Liferay Experience Cloud - Self Managed [PaaS]
   * DXP - Self Hosted
 * 弊社の販売アプローチはSaaS第一です。
@@ -28,9 +28,9 @@ toc:
 ![Liferay製品ラインには3つの機能セットがあります。](./liferay-product-offering/images/01.png)
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering ) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) からダウンロードしてください。
-* 本モジュールで参照する資料はこちら [Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) からダウンロードしてください。
+* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering )をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf)からダウンロードしてください。
+* 本モジュールで参照する資料はこちら[Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow)からダウンロードしてください。
 ```
 
 ## あらゆるデプロイ方法に対応
@@ -79,7 +79,7 @@ Liferay Experience Cloudのデプロイ方法はSaaSですが、これはター�
 | 毎週のアップデート                 |          | &#10004; |
 | パッチ、セキュリティホットフィックス        |          | &#10004; |
 | ソフトウェアのトラブルシューティング        |          | &#10004; |
-| セキュリティスキャン / SAST / DAST  |          | &#10004; |
+| セキュリティスキャン／SAST／DAST      |          | &#10004; |
 
 **価値の高いアクティビティ**
 
@@ -113,7 +113,7 @@ Liferayはまた、99.95％のインフラストラクチャ稼働時間SLAを�
 | 毎週のアップデート                 |          | &#10004; |
 | パッチ、セキュリティホットフィックス        |          | &#10004; |
 | ソフトウェアのトラブルシューティング        |          | &#10004; |
-| セキュリティスキャン / SAST / DAST  |          | &#10004; |
+| セキュリティスキャン／SAST／DAST      |          | &#10004; |
 
 **価値の高いアクティビティ**
 
@@ -125,7 +125,7 @@ Liferayはまた、99.95％のインフラストラクチャ稼働時間SLAを�
 
 最終的な製品のデプロイサービスは、Liferay Experience Cloudです。 これは、顧客が本当に重要なこと、つまりビジネスアプリケーションの作成、立ち上げ、保守に集中できるようにするSaaSサービスとなります。
 
-Liferay Experience Cloud SaaSを使用して、Liferay DXPを維持するために必要なインフラストラクチャーと価値の低いアクティビティのすべてをLiferayが提供し、管理します。 Liferayは、週単位で製品のアップデートを適用し、顧客のデータに対してのテストおよびSASTとDASTのセキュリティスキャンを行います。
+Liferay Experience Cloud SaaSを使用して、Liferay DXPを維持するために必要なインフラストラクチャーと価値の低いアクティビティのすべてをLiferayが提供し、管理します。 Liferayは、四半期ごとに製品のアップデートを適用し、顧客のデータに対してのテストおよびSASTとDASTのセキュリティスキャンを行います。
 
 注意すべき点は、デプロイモデルはSaaSですが、これはターンキーアプリケーションではないということです。 顧客は、DXPが提供するすべての標準機能を備えた完全なLiferay DXPインスタンスを使用することができ、そのベースの上にカスタムアプリケーションを構築することができます。 さらに、パートナーやLiferayのグローバルサービス組織と引き続き協力して、アプリケーションの構築を支援できます。
 
@@ -153,4 +153,4 @@ Liferay Experience Cloud SaaSを使用して、Liferay DXPを維持するため�
 
 このような背景を理解すると、どのようなデプロイオプションが顧客に最適かを判断できるようになります。
 
-[続きはこちら](./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md)
+[次：顧客に最適なデプロイオプションを決定する](./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md)

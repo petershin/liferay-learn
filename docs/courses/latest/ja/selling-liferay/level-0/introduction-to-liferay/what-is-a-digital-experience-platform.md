@@ -17,8 +17,8 @@ LiferayではDXPを以下のように定義しています。
 ![デジタルエクスペリエンスプラットフォームは、外部および内部のデジタルエクスペリエンスに必要なすべてのツールを提供します。](./what-is-a-digital-experience-platform/images/01.png)
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf)からダウンロードしてください。
 ```
 
 ## Liferayポータル製品
@@ -50,13 +50,13 @@ LiferayではDXPを以下のように定義しています。
 
 ## カスタマージャーニー全体にわたるソリューション
 
-DXPが提供すべきものを確認するもう一つの方法は、顧客のライフサイクルを確認することです。  一般的に、これは顧客が顧客になるかなり前から始まり、顧客との関わり、顧客の転換、顧客への適切なサービス提供および顧客を成長させることによって顧客を維持するまで続きます。
+DXPが提供すべきものを確認するもう一つの方法は、顧客のライフサイクルを確認することです。 一般的に、これは顧客が顧客になるかなり前から始まり、顧客との関わり、顧客の転換、顧客への適切なサービス提供および顧客を成長させることによって顧客を維持するまで続きます。
 
 ![デジタルエクスペリエンスプラットフォームは、忠実な顧客層を引き付け、成長させ、維持する上で極めて重要な部分です。](./what-is-a-digital-experience-platform/images/03.png)
 
 ## Liferayのデプロイアプローチ
 
-弊社のDXPデプロイサービスには、SaaS、PaaS、セルフホストオプションがあります。 弊社のSaaS製品であるLiferay Experience Cloudは、SaaSの俊敏性と利便性により、カスタマイズされたソリューションを作成、立ち上げ、最適化するための柔軟なDXP-as-a-Serviceです。
+弊社のDXPデプロイサービスには、SaaS、PaaS、セルフホストオプションがあります。 弊社のSaaS製品であるLiferay Experience Cloudは、SaaSの俊敏性と利便性により、デジタルソリューションを作成、立ち上げ、最適化するための柔軟性の高いDXP-as-a-Service製品です。
 
 ## カスタマイズされたソリューション
 
@@ -82,4 +82,4 @@ Liferayは、グローバル企業のお客様の複雑なニーズに応える�
 
 　 これでLiferayの概要は完了です。
 
-次：[Liferayの製品](../liferay-product-offering.md)について
+次：[Liferay製品](../liferay-product-offering.md)

@@ -26,8 +26,8 @@ toc:
 1. 主要なターゲットソリューションと顧客の例
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf)からダウンロードしてください。
 ```
 
 ## 弊社の原点
@@ -48,7 +48,7 @@ Liferayは、世界的な企業に成長し、その技術は単なるオープ�
 * 本社所在地：ロサンゼルス
 * グローバルに展開（22拠点）
 * 全世界で500万以上のダウンロード
-* 世界で300以上のパートナー企業
+* 世界で350以上のパートナー企業
 * 顧客数：1200社以上
 * 従業員数：1000名以上（グローバル）
 * コミュニティメンバー：180,000人以上

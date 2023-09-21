@@ -3,11 +3,11 @@ uuid: ba3f3663-f72e-4f18-b220-d9b2e127ef5e
 ---
 # Fragment Specific Tags and Attributes Reference
 
-Along with standard HTML, CSS, and JavaScript, you can use attributes or tags to define elements as editable.
+Along with standard HTML, CSS, and JavaScript, you can use Liferay-specific tags and attributes to define editable sections, embed widgets, and more.
 
 Editable elements can be modified before publication, which means that you can create simple, reusable fragments that have identical formatting, but contain elements that are adaptable to the specific context.
 
-Use Liferay-specific tags and attributes to add these features to the fragment:
+These Liferay-specific tags and attributes are available: 
 
 - [Editable Text](#making-text-editable)
 - [Editable Images](#making-images-editable)
@@ -21,10 +21,10 @@ Use Liferay-specific tags and attributes to add these features to the fragment:
 Since Liferay Portal 7.3 GA3 and Liferay DXP 7.3, you can use `data-lfr-editable*` attributes to define elements as editable, rather than wrapping editable elements with `lfr-editable` tags.
 
 ```{warning}
-Editable elements have a `data-lfr-editable-id` attribute and it must be unique. Do not change the ID after the page fragment has been added to a page, you can lose changes made to the fragment.
+Editable elements have a `data-lfr-editable-id` attribute, and it must be unique. Do not change the ID after the page fragment has been added to a page; you will lose changes made to the fragment.
 ```
 
-The old tags still work for backwards compatibility, but we recommend that you use the newer data attributes if you're running Portal 7.3 GA3+ or Liferay DXP 7.3+, as they are easier to write.
+The old tags still work for backwards compatibility, but you should use the newer data attributes if you're running Portal 7.3 GA3+ or Liferay DXP 7.3+, as they are easier to write.
 
 ```{tip}
 When you start typing the name of a tag, the [HTML editor](../../developing-page-fragments/using-the-fragments-editor.md) provides auto-completion for `lfr` tags like editable elements and embeddable widgets.
@@ -34,26 +34,24 @@ This reference lists the available editable tags and attributes along with examp
 
 ## Editable Elements
 
-Create editable sections, dynamic and reusable fragments for building a site, or make a fragment even more dynamic by including a widget embedded to a portlet using editable elements.
+Create editable sections, dynamic and reusable fragments for building a site, or bring a fragment to life by including a widget embedded to a portlet using editable elements.
 
-Provide text, images, links, and HTML code to these editable elements which become the default values for their fields. You may want to display the editable content in the final version of the page or you may want filler content that should be replaced before publishing the page.
+Provide text, images, links, and HTML code to these editable elements which become the default values for their fields. You may want to display the editable content in the final version of the page, or you may want filler content that should be replaced before publishing the page.
 
 ```{warning}
 Freemarker code in editable fields is executed only once when the fragment is added to the page (to set its default value).
 
-Avoid using it if you need the value re-evaluated (for example, if you localize a value using `${languageUtil.get(locale,'word')}`, the word is only localized once you add the fragment to the page and the code does not run again even If you change your portal's language).
+Avoid using it if you need the value re-evaluated. For example, if you localize a value using `${languageUtil.get(locale,'word')}`, the word is only localized when you add the fragment to the page. The code does not run again even if you change your portal's language.
 ```
 
-Here is an example of how you can use editable elements,
-
-Imagine you need a title, a small text box, an image, and a link to provide a product description. Create a fragment containing editable filler text, space for an editable image, the appropriate formatting, and an editable link.
+Editable elements have many uses. Imagine you need a title, a small text box, an image, and a link to provide a product description. Create a fragment containing editable filler text, space for an editable image, the appropriate formatting, and an editable link.
 
 You can then add the fragment to multiple pages and define the image, text, and link for each product you need to describe.
 
 ![You can use editable elements to create a fragment with an editable text, image, and link. This fragment can be edited and reused in different contexts.](./fragment-specific-tags-reference/images/01.png)
 
 ```{warning}
-Nesting editable elements inside of other editable elements in a fragment is not supported.
+Nesting editable elements inside other editable elements in a fragment is not supported.
 ```
 
 ## Making Text Editable
@@ -104,7 +102,7 @@ If you want to make text inside an HTML element editable, you must use the `rich
 
 ## Making Images Editable
 
-Images use the same `data-lfr-editable-type` attribute as text, but with the `image` type. The `data-lfr-editable-id` must be a unique ID, like this example:
+Images use the same `data-lfr-editable-type` attribute as text, but with the `image` type. The `data-lfr-editable-id` must be a unique ID:
 
 ```html
 <img

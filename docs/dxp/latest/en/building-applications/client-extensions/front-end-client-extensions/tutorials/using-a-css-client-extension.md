@@ -64,7 +64,7 @@ The `assets/global.css` file contains this CSS:
 
 This modifies the color of the Liferay logo for the home page when the client extension is enabled.
 
-Add CSS to modify the background color for buttons. Open the `global.css` file, add a declaration for the `.btn-primary` class, and specify the `background-color`: 
+Add CSS to modify the background color for buttons. Open the `global.css` file, add a declaration for the `.btn-primary` class, and specify the `background-color`:
 
 ```css
 .btn-primary {
@@ -101,19 +101,19 @@ Confirm the deployment in your Liferay instance's console:
 STARTED sample-global-css_1.0.0
 ```
 
-Now that your client extension is deployed, configure Liferay to use it. 
+Now that your client extension is deployed, configure Liferay to use it.
 
 ## Use the Client Extension on a Page
 
-Configure a page in Liferay to use your deployed client extension: 
+Configure a page in Liferay to use your deployed client extension:
 
-1. On a page with at least one button, click the _Edit_ icon ![Edit icon](../../../../images/icon-edit-pencil.png) at the top.
+1. On a page with at least one button, click the *Edit* ( ![Edit icon](../../../../images/icon-edit-pencil.png) ) at the top.
 
-1. In the sidebar, navigate to the Page Design Options menu ( ![Page Design Options icon](../../../../images/icon-format.png) ) and click the configuration icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
+1. In the sidebar, navigate to the Page Design Options menu ( ![Page Design Options icon](../../../../images/icon-format.png) ) and click the *Configuration* icon (![Configuration icon](../../../../images/icon-cog3.png)) at the top of the menu.
 
-   ![Click the cog wheel icon in the Page Design Options menu to access this client extension's configurations.](./using-a-css-client-extension/images/01.png)
+   ![Click the configuration icon in the Page Design Options menu to access this client extension's configurations.](./using-a-css-client-extension/images/01.png)
 
-1. In the *CSS Client Extensions* section toward the bottom of the page, click *Add CSS Client Extensions*.
+1. In the CSS Client Extensions section toward the bottom of the page, click *Add CSS Client Extensions*.
 
    ![Add the CSS client extension from the list.](./using-a-css-client-extension/images/02.png)
 

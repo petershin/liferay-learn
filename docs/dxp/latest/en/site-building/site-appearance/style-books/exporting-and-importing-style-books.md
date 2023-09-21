@@ -95,4 +95,7 @@ Liferay provides settings for configuring export and import processes.
 
 ![Configure your export/import process](./exporting-and-importing-style-books/images/03.png)
 
-<!-- Add a Related Topics section here. -Rich -->
+## Related Topics
+
+* [Using a Style Book to Standardize Site Appearance](./using-a-style-book-to-standardize-site-appearance.md)
+* [Style Book Token Definitions](./developer-guide/style-book-token-definitions.md)

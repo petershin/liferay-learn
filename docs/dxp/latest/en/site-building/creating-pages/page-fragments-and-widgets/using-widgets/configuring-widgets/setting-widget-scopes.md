@@ -13,13 +13,13 @@ Liferay provides these scope options for page widgets:
 | :--- | :--- |
 | Default | Scope widget data to the current site. |
 | Global | Scope widget data to the Global site. For this scope, you can only manage the widget's content from the Global site. |
-| Page | Scope widget data to an individual page. You must create the scope when configuring a page widget. Once created, other widgets can use it. |
 
 Follow these steps to configure a widget's scope:
 
 1. Begin editing a page.
 
-1. Hover over the desired widget, click its *Options* button ( ![Options Button](../../../../../images/icon-app-options.png) ), and select *Configuration*.
+1. Hover over the desired widget,| Page | Scope widget data to an individual page. You must create the scope when configuring a page widget. Once created, other widgets can use it, including widgets from different pages. |
+ click its *Options* button ( ![Options Button](../../../../../images/icon-app-options.png) ), and select *Configuration*.
 
 1. Go to the *Scope* tab and use the drop-down menu to select a scope.
 
@@ -31,9 +31,13 @@ Follow these steps to configure a widget's scope:
 
 1. Click *Save*.
 
-Once you create a new widget scope, a Scope Configuration button (![Scope Configuration Button](../../../../../images/icon-cog.png)) appears under Content & Data in the Site Menu ( ![Site Menu](../../../../../images/icon-product-menu.png) ). You can use it to select the default scope or available page scopes. Your selection changes the content that appears when you manage each type.
+Once you create a new widget scope, a Scope Configuration button ( ![Scope Configuration Button](../../../../../images/icon-cog.png) ) appears under Content & Data in the Site Menu ( ![Site Menu](../../../../../images/icon-product-menu.png) ). You can use it to select the default scope or available page scopes. Your selection changes the content that appears when you manage each type.
 
 ![Use the Scope Configuration button under Content & Data to determine which scope to manage content for.](./setting-widget-scopes/images/02.png)
+
+```{note}
+In order to delete a scope, you must delete its associated page.
+```
 
 ## Related Topics
 

@@ -13,7 +13,7 @@ Log in as Kyle Klein, [your instance's administrator](https://learn.liferay.com/
 
 1. Access your Liferay instance and log in as Kyle Klein.
 
-1. At the top of the screen, open the Applications menu ( ![Applications menu](../../../images/icon-applications-menu.png) ) and click *Control Panel* &rarr; *Instance Settings*.
+1. At the top of the screen, open the Applications menu ( ![Applications menu](../../images/icon-applications-menu.png) ) and click *Control Panel* &rarr; *Instance Settings*.
 
 1. On the Instance Settings page, click *Instance Configuration*.
 
@@ -29,7 +29,7 @@ Log in as Kyle Klein, [your instance's administrator](https://learn.liferay.com/
     unzip liferay-v6j4.zip
     ```
 
-1. On the Instance Configuration page, click the *Change Logo* button ( ![Change icon](../../../images/icon-change.png) ).
+1. On the Instance Configuration page, click the *Change Logo* button ( ![Change icon](../../images/icon-change.png) ).
 
 1. Upload the image you downloaded (`DBLogo.png`) in the pop-up modal and click *Done*.
 

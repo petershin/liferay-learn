@@ -23,6 +23,12 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
    curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" https://analytics.liferay.com/api/reports/export/page\?fromDate=2023-01-01'T'00:00:01.000'Z'\&toDate\=2023-03-01'T'23:59:59.000'Z'
    ```
 
+   For Windows users:
+
+   ```
+   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" "https://analytics.liferay.com/api/reports/export/page?fromDate=2023-01-01T00:00:01.000Z&toDate=2023-03-01T23:59:59.000Z"
+   ```
+
 1. After requesting the data, a message like this appears:
 
    ```json
@@ -37,6 +43,12 @@ Various analytics data can be accessed through the [Sites dashboard](../touchpoi
 
    ```
    curl -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" https://analytics.liferay.com/api/reports/export/page\?fromDate=2023-01-01'T'00:00:01.000'Z'\&toDate\=2023-03-01'T'23:59:59.000'Z' --output foo.zip
+   ```
+
+   For Windows users:
+
+   ```
+   curl -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" "https://analytics.liferay.com/api/reports/export/page?fromDate=2023-01-01T00:00:01.000Z&toDate=2023-03-01T23:59:59.000Z" --output foo.zip
    ```
 
    Note, do not use the `-i` include parameter when downloading the ZIP file.

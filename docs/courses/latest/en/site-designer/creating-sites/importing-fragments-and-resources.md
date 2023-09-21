@@ -24,9 +24,11 @@ Delectable Bonsai needs fragments and images in the site. With these the site cr
 
 1. Open the Site menu (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Fragments*.
 
-1. Open the Actions menu (![Actions Button](../../images/icon-actions.png)) for Fragment Sets and select *Import*.
+1. Add a fragment set for Delectable Bonsai's custom fragments and compositions. Click the Add button (![](../../images/icon-plus.png)) for Fragment Sets.
 
-   ![Click the Actions button for Fragment Sets and click Import.](./importing-fragments-for-the-distributor-application-pages/images/02.png)
+1. Name the fragment set _Delectable Bonsai Fragments_ and click _Save_.
+
+1. Open the Actions menu (![Actions Button](../../images/icon-actions.png)) for the fragment set and select *Import*.
 
 1. Select a zip file in `liferay-q9c4.zip/fragments` and click *Import*.
 
@@ -38,7 +40,6 @@ Delectable Bonsai needs fragments and images in the site. With these the site cr
    - `banner-composition.zip`
    - `footer-composition.zip`
    - `header-composition.zip`
-   - `master-page.zip`
    - `sign-in-fragment.zip`
    - `user-nav-fragment.zip`
 
@@ -47,7 +48,27 @@ Delectable Bonsai needs fragments and images in the site. With these the site cr
    - Custom fragments are fragments that you develop, if none of the [out-of-the-box fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) suit your needs. Often you can start by [copying an existing fragment](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/duplicating-fragments) that contains some of the HTML, CSS, or JS you'll need to create your own fragment.
    - [Fragment compositions](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) are reusable fragment groups you've added to the content page editor and saved for repeated use.
 
-Next, import some images.
+Next, import some fragment resources.
+
+<!-- using resources requires updates to the articles--the banner image needs to be available for manual configuration, but it's not if it's part of fragment resources (unless you set dl.show.hidden.mount.folders=true, then you can see them as part of docs and media) -->
+## Importing Fragment Resources
+
+1. While viewing the fragment set, click _Resources_. 
+
+1. Click the Add button (![Add](./../../images/icon-add.png)).
+
+1. Select one of the files in `liferay-q9c4.zip/images` and click *Add*.
+
+1. Repeat the procedure for the remaining files in `liferay-q9c4.zip/images`.
+
+These images will appear in Documents and Media:
+
+   <!-- This list will need to be finalized at the end of drafting the module-->
+   - `banner-image.png`
+   - `db-green-1w.svg`
+   - `db-green-3.svg`
+   - `sign-in-image.png`
+
 
 ## Importing the Images
 

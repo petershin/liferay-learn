@@ -15,7 +15,7 @@ Now that the home page is in place and the master page is able to define the hea
 
 1. While logged in with the site administrator, NAME NAME, open the Site menu (![Product Menu](../../images/icon-product-menu.png)), then click _Site Builder_ &rarr; _Pages_.
 
-   ![The Home and Search page are already in the default site.](./completing-the-site-structure/images/02.png)
+   ![The Home and Search page are already in the default site.](./completing-the-site-structure/images/01.png)
 
    By default there are two pages: Home and Search.
 
@@ -39,21 +39,23 @@ Now that the home page is in place and the master page is able to define the hea
 
    ![Configure the search page.](./completing-the-site-structure/images/03.png)
 
-1. Click _Save_ at the bottom of the General settings.
+1. Click _Save_ at the bottom of the settings.
 
 1. Navigate to the home page again. Enter _test_ in the search bar again and click _Enter_. Now you're redirected to the search page. Whether you see [results](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/search-results/search-results) and [facets](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/search-facets) depends on what content is in your system and whether you have permission to view the content.
+
+   <!-- In my most recent test I had to set the destination page, it was blank--what gives? -->
 
    ![The search results and facets are part of the search page template.](./completing-the-site-structure/images/06.png)
 
    Consider why this search worked. You added a search bar widget to the master page's header and a search page in the site. How did the search bar know to redirect you to the search page? It's all in the configuration. The friendly URL of a page named Search defaults to `/search`, and the search bar configuration has a setting called Destination Page, and it also defaults to `/search`. The search page's friendly URL must match its search bar's Destination Page setting.
 
-1. Now create the important e-commerce storefront page, where site visitors can buy Delectable Bonsai's products. Go back to the pages administration page. Click the Add button (![Add](./../../images/icon-add.png)), then click _Page_. Click the _Blank_ page template and enter the name _Shop_.
+1. Now create the important e-commerce storefront page, where site visitors can buy Delectable Bonsai's products. Go back to the pages administration page. Click the Add button (![Add](./../../images/icon-add.png)), then click _Page_. Select the _Del Bonsai_ page template and enter the name _Shop_.
 
-1. In the content page editor, open the Page Design Options sidebar menu (![Page Design Options](../../images/icon-format.png)) and select _Del Bonsai MP_, then publish the page. The header and footer you defined for Delectable Bonsai are now in place.
+1. In the content page editor, click _Publish_. The header and footer you defined for Delectable Bonsai are now in place.
 
    The content for this page is defined in the [Commerce Architect](../../commerce-architect.md) course.
 
-1. Repeat the same page creation procedure to create these blank sites, configured to use the master page:
+1. Repeat the same page creation procedure to create these content pages, configured to use the master page:
 
    - Events
    - FAQ
@@ -77,9 +79,13 @@ Now that the home page is in place and the master page is able to define the hea
 
    ![The default sign in widget clashes with the master page.](./completing-the-site-structure/images/07.png)
 
+   <!-- screenshot is out of date with what I have in my portal after running these steps -->
+
 1. Delectable Bonsai needs a better sign in experience. Next you'll add a custom sign in page.
 
-1. Add the Sign In page as you added the previous pages, but don't configure it to use the master page. Instead, once you've clicked Add and the content page editor is loaded, open the Options menu (![Options](../../images/icon-options.png)) in the administrative bar at the top of the page, and click _Configure_.
+1. Add the Sign In page using the Blank template. Click _Add_ and the content page editor is loaded. 
+
+1. Open the Options menu (![Options](../../images/icon-options.png)) in the administrative bar at the top of the page, and click _Configure_.
 
    ![Configure the sign-in page.](./completing-the-site-structure/images/08.png)
 
@@ -89,9 +95,9 @@ Now that the home page is in place and the master page is able to define the hea
 
 1. Override the inherited theme options by clicking _Define a Custom Theme for this Page_. Un-check these settings: _Show Footer_ and _Show Header_. You do not want the search bar present so you can also un-check _Show Header Search_, but hiding the header entirely accomplishes that as well.
 
-1. Save the configuration.
+1. Scroll down and save the configuration.
 
-1. Back on the content page editor, add the imported fragment called Sign In.
+1. Use the back arrow at the top of the page to go back to the content page editor, then add the imported fragment called Sign In.
 
 1. In the Sign In fragment's Styles configuration, set the background image to use the `sign_in` image from Documents and Media. 
 

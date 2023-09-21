@@ -89,12 +89,12 @@ The following field names are reserved by Liferay and cannot be used. If users a
 | `statusByUserId`        | ID of the assigned user in Workflow.            |
 | `statusByUserName`      | Name of the assigned user in Workflow.          |
 | `statusDate`            | Date when the Workflow status was last updated. |
-| `userEmailAddress`      | Entry author's email address.           |
-| `userFirstName`         | Entry author's first name.               |
-| `userId`                | Entry author's user ID.                       |
-| `userLastName`          | Entry author's Last name.                |
-| `userName`              | Entry author's user name.                |
-| `uuid`                  | Entry's unique universal ID.              |
+| `userEmailAddress`      | Entry author's email address.                   |
+| `userFirstName`         | Entry author's first name.                      |
+| `userId`                | Entry author's user ID.                         |
+| `userLastName`          | Entry author's Last name.                       |
+| `userName`              | Entry author's user name.                       |
+| `uuid`                  | Entry's unique universal ID.                    |
 
 ## Related Topics
 

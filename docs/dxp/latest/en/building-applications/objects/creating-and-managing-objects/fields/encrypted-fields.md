@@ -1,13 +1,13 @@
 # Encrypted Fields
 
-<!--
-{bdg-secondary}`Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted`
--->
+{bdg-primary}`Self-Hosted and Self-Managed Only`
+
+{bdg-secondary}`Available Liferay DXP 7.4 U72/GA72+`
 
 Liferay provides the encrypted field type for storing sensitive user data. To use encrypted fields, first add an encryption algorithm and key to your portal properties. Then add an encrypted field to your object definition. Once data is encrypted, only users with the decryption key can read it.
 
 ```{important}
-Encrypted fields store string values and cannot be used to encrypt images or other files. Filtering, sorting, and indexing are not supported for encrypted fields. Additionally, field encryption is not available for [proxy object definitions](../../integrating-objects-with-third-party-services/managing-data-from-external-systems.md).
+Encrypted fields store string values and cannot be used to encrypt images or file types. Filtering, sorting, and indexing are not supported for encrypted fields. Additionally, field encryption is not available for [proxy object definitions](../../integrating-objects-with-third-party-services/managing-data-from-external-systems.md).
 ```
 
 ## Adding an Encryption Algorithm and Key
@@ -45,18 +45,20 @@ object.encryption.key=D9z5Rwxkn+8SctNWW/q/OA==
 1. Click *Save*.
 
    ```{note}
-   You cannot save encrypted field without an encryption algorithm or key.
+   You cannot save encrypted fields without an encryption algorithm and key.
    ```
 
-You can use this field to store encrypted string values. If desired, you can edit the field to limit the number of characters allowed.
+You can use this field to store encrypted string values. If desired, you can configure the field limit the number of characters allowed.
 
 ## Accessing Encrypted Data
 
-Only users with the decryption key can read encrypted field values. If your Liferay instance has a valid encryption key, authorized users can view the field's data via the Liferay UI or object APIs. However, if an encryption key is removed or becomes invalid, users cannot access entries for any object with an encrypted field. Liferay returns a 400 error and directs users to either insert a valid encryption key or remove the object's encrypted field to access its entries.
+Only users with the decryption key can read encrypted field values. If your Liferay instance has a valid encryption key, authorized users can view and export the field's data via the Liferay UI or REST APIs. However, if an encryption key is lost or becomes invalid, users cannot access or export entries for any object definition with encrypted fields. When attempted, Liferay returns a 400 error and directs users to either insert a valid encryption key or remove the object's encrypted fields to recover your entries.
 
-If your encryption key is ever compromised, first decrypt your data with the key and then encrypt it using a new key.
+```{important}
+Losing your key can result in data loss. Please manage your encryption key with care. You are responsible for ensuring your data and key are backed up and stored in a safe place.
 
-<!--Q: What is this process like?-->
+<!-- If your key is ever compromised, please export your object data using the Import/Export Center, update the `object.encryption.key` property, and reimport your data. -->
+```
 
 ## Related Topics
 

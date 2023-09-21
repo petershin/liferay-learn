@@ -4,6 +4,7 @@ toc:
   - ./fields/adding-and-managing-custom-states.md
   - ./fields/aggregation-fields.md
   - ./fields/attachment-fields.md
+  - ./fields/encrypted-fields.md
 uuid: 4ba9b571-6b88-4ab0-940a-b406a95caa75
 ---
 # Fields
@@ -15,6 +16,7 @@ fields/adding-fields-to-objects.md
 fields/adding-and-managing-custom-states.md
 fields/aggregation-fields.md
 fields/attachment-fields.md
+fields/encrypted-fields.md
 ```
 
 {bdg-secondary}`Available Liferay 7.4 U76+/GA76+`
@@ -32,9 +34,11 @@ Liferay provides these field types that correspond to specific data types in the
 | [Aggregation](./fields/aggregation-fields.md) | String               | Stores read-only values calculated using values from a relationship table. Available functions include `count`, `sum`, `average`, `min`, and `max`.                                                                                                                          |
 | [Attachment](./fields/attachment-fields.md)   | Relationship > Long  | Stores files; by default, uploaded files can be no larger than 100 MB; this field supports all file types accepted by [Documents and Media](../../../content-authoring-and-management/documents-and-media.md).                                                               |
 | Boolean                                       | Boolean              | Stores true or false values. Mandatory Boolean fields always require a true value.                                                                                                                                                                                           |
-| Date                                          | Date                 | Stores date values                                                                                                                                                                                                                                                           |
+| Date                                          | Date                 | Stores date values.                                                                                                                                                                                                                                                          |
+| Date and Time                                 | DateTime             | Stores date and time values.                                                                                                                                                                                                                                                 |
 | Decimal (*previously Double*)                 | Double               | Stores a decimal number value with a limit of 16 digits. <br><br> Example: `999.9999999999999` (16 digits total)                                                                                                                                                             |
-| Integer                                       | Integer              | Stores an integer up to nine digits in length. You can choose to allow only unique values. <br><br> Maximum value: `2147483647` <br><br> Minimum value: `-2147483648`                                                                                                            |
+| [Encrypted](./fields/encrypted-fields.md)     | String               | Stores encrypted string values.                                                                                                                                                                                                                                              |
+| Integer                                       | Integer              | Stores an integer up to nine digits in length. You can choose to allow only unique values. <br><br> Maximum value: `2147483647` <br><br> Minimum value: `-2147483648`                                                                                                        |
 | Long Integer (*previously Long*)              | Long                 | Stores a large integer up to 16 digits in length. <br><br> Maximum value: `9007199254740991` <br><br> Minimum value: `-9007199254740991`                                                                                                                                     |
 | Long Text (*previously Clob*)                 | Clob                 | Stores a text box value that supports up to 65,000 characters; after creating a long text field, you can configure it to limit the number of characters allowed.                                                                                                             |
 | Multiselect Picklist                          | String               | Stores one or more string values from a [picklist](../picklists.md).                                                                                                                                                                                                         |
@@ -61,5 +65,9 @@ Liferay provides these field types that correspond to specific data types in the
 
 :::{grid-item-card} Attachment Fields
 :link: ./fields/attachment-fields.md
+:::
+
+:::{grid-item-card} Encrypted Fields
+:link: ./fields/encrypted-fields.md
 :::
 ::::

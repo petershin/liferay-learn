@@ -23,7 +23,7 @@ A collection page links a page to a collection. Collection pages include collect
 
 Follow these steps to add a collection page:
 
-1. Click *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Pages*.
+1. Click the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Pages*.
 
 1. Click *New Page* ( ![New Page](../../../images/icon-add.png) ) and select *Collection Page*.
 
@@ -57,9 +57,9 @@ To add an existing collection to a collection display fragment,
 
 1. Under the Content Display category in the Fragments tab, drag the *Collection Display* fragment to a place on the page.
 
-1. Click *Collection Display* fragment to show the configuration in the Selection panel.
+1. Click on the *Collection Display* fragment to show the configuration in the Selection panel.
 
-1. Click *Collection* field* to select a collection for the fragment to display in the General section of the panel:
+1. Click the *Collection* field* to select a collection for the fragment to display in the General section of the panel:
 
    ![Click the button to select a collection for the collection display fragment.](./displaying-collections/images/03.png)
 
@@ -77,9 +77,9 @@ Selecting a collection display fragment divides it into sections for each asset 
 
 **Show Gutter**: Check the box to show the gutter (spacing) between columns. This option only appears when you choose the Grid style with a column layout (in versions 7.4 GA23+ or U23+).
 
-**Show Empty Collection Alert**: Whether to show an alert in view mode when no results match the applied filters or the collection is empty.
+**Show Empty Collection Alert**: Check the box to display an alert message when no results match the applied filters or the collection is empty.
 
-**Empty Collection Alert**: If *Show Empty Collection Alert* is on, choose the displayed alert message. This message is localizable.
+**Empty Collection Alert**: If *Show Empty Collection Alert* is enabled, choose the displayed alert message. This message is localizable.
 
 **Vertical Alignment**: Choose how to align the items: top, middle, or bottom of each row. This option only appears when you choose the *Grid* style (in versions 7.4 GA23+ or U23+).
 
@@ -119,9 +119,9 @@ Depending on the option you chose for a collection display fragment's list style
     If the collection display contains more than one item, you can drag the fragment or widget to any of them. The rest of the items in your collection use the same layout settings automatically.
     ```
 
-1. Double-click *Fragment* or *Widget* on the collection display to access its mapping options.
+1. Double-click the *fragment* or *widget* on the collection display to access its mapping options.
 
-1. In the Mapping column, select the *Field* that you want to map to your collection.
+1. In the Mapping column, select the *field* that you want to map to your collection.
 
     ![Map the fragments and widgets to the collection items](./displaying-collections/images/06.gif)
 
@@ -175,7 +175,7 @@ By default, the collection display fragment displays up to 20 items at a time in
 
 You can find usage statistics for the collections on your site.
 
-1. Go to *Site Menu* and navigate to *Site Builder* &rarr; *Collections*.
+1. Go to *Site Menu* ( ![Site Menu](../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Collections*.
 1. Under the *Collections* tab, click Actions ( ![Actions Menu](../../../images/icon-actions.png) ) menu next to the Collection you want to review and select *View Usages*.
 
   ![Select View Usages to understand how your collections are being used through the site](./displaying-collections/images/09.png)
@@ -190,7 +190,7 @@ Content sets are primarily displayed through the Asset Publisher. It is currentl
 
 To display the content sets, start with a blank page, and then add the necessary asset publishers and configure them to display the content sets.
 
-1. Create a new *Home* page for your site as a widget page with a 1 column layout. If you're using a fresh Liferay DXP bundle, you can just remove the *Hello World* widget from the sample *Home* page.
+1. Create a new Home page for your site as a widget page with a 1 column layout. If you're using a fresh Liferay DXP bundle, you can just remove the *Hello World* widget from the sample *Home* page.
 1. Open the *Add* menu and add two *Content Management* &rarr; *Asset Publishers* to the page stacked vertically.
 1. Click ( ![Options](../../../images/icon-app-options.png) ) &rarr; *Configuration* for the top asset publisher.
 1. Under *Asset Selection* choose *Content Set*.
@@ -206,9 +206,9 @@ Now the images appear at the top of the page. You can manage the way the content
 Now configure the bottom asset publisher with the other content set.
 
 1. Click ( ![Options](../../../images/icon-app-options.png) ) &rarr; *Configuration* for the bottom asset publisher.
-1. Under *Asset Selection* choose *Content Set*.
+1. Under Asset Selection choose *Content Set*.
 1. Open *Select Content Set* and click *Select*.
-1. Click  *Trending* content set.
+1. Click  the *Trending* content set.
 
     ![Select the content set you want to use.](./displaying-collections/images/11.png)
 

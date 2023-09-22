@@ -90,7 +90,7 @@ When you define standalone actions for a published object, Liferay generates two
 | PUT         | `/by-external-reference-code/{erc}/object-actions/actionName` | `putObjectNameActionName` |
 | PUT         | `/{entryId}/object-actions/actionName`                        | `putObjectNameActionName` |
 
-For site-scoped objects, the ERC endpoint includes the `/scope/{scopeKey}` prefix (e.g., `/scopes/{scopeKey}/by-external-reference-code/{erc}/object-actions/actionName`). External reference code endpoints are not available for system objects.
+For site-scoped objects, the ERC endpoint includes the `/scope/{scopeKey}` prefix (e.g., `/scopes/{scopeKey}/by-external-reference-code/{erc}/object-actions/actionName`).
 
 <!--TASK: uncomment when GraphQL APIs are better supported, 
 ## GraphQL APIs

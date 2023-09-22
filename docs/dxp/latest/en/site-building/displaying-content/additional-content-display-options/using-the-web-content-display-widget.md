@@ -29,6 +29,10 @@ After you create a [web content article](../../../content-authoring-and-manageme
 
    ![When you organize your web content using folders, view all available content by navigating throught the folders.](./using-the-web-content-display-widget/images/03.png)
 
+   ```{tip}
+   You can search for all content (*) using the search bar. This returns a list with all the available folders and web content on the site.
+   ```
+
 1. Set up optional [web content display options](#web-content-display-setup-options).
 
 1. Click *Save* and close the Web Content Display Configuration dialog.

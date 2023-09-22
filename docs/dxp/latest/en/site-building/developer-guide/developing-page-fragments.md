@@ -13,6 +13,7 @@ toc:
   - ./developing-page-fragments/auto-deploying-fragments.md
   - ./developing-page-fragments/including-default-resources-with-fragments.md
   - ./developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
+  - ./developing-page-fragments/creating-form-fragments.md
 uuid: faecb735-7bbf-4469-a702-fdda8a1b1427
 ---
 # Developing Page Fragments
@@ -33,6 +34,7 @@ developing-page-fragments/adding-validation-rules.md
 developing-page-fragments/auto-deploying-fragments.md
 developing-page-fragments/including-default-resources-with-fragments.md
 developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
+developing-page-fragments/creating-form-fragments.md
 ```
 
 - [Developing Fragments](./developing-page-fragments/developing-fragments-intro.md)
@@ -48,3 +50,4 @@ developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
 - [Auto-Deploying Fragments](./developing-page-fragments/auto-deploying-fragments.md)
 - [Including Default Resources with Fragments](./developing-page-fragments/including-default-resources-with-fragments.md)
 - [Setting the Order of Elements in a Fragment](./developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md)
+- [Creating Form Fragments](./developing-page-fragments/creating-form-fragments.md)

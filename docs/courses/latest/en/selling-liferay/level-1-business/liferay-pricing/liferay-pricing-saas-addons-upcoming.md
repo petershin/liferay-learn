@@ -27,7 +27,11 @@ While the different plans offer different starting storage capacity, when custom
 
 ### Project Workspace
 
-Liferay Experience Cloud SaaS introduces the concept of the **Project Workspace**. A project workspace is a way to encapsulate the different types of environments and different types of user bases the customer might need to have.
+Liferay Experience Cloud SaaS introduces the concept of the **Project Workspace**. A project workspace is a way to encapsulate the different types of environments and different types of user bases the customer might need to have. Most customers will use a single Project Workspace, however some customers might have solutions which require completely segregated user bases.
+
+A possible use case where additional Project Workspaces might be needed could be for a customer with multiple businesses where this fact is preferred to not be known publicly. For example, a manufacturer might produce both premium and economy product lines and sell them under different brands (e.g. luxewidgets.com & basicwidgets.com). In this scenario it is important that a customer who has already registered their email address on the luxewidgets.com website doesn’t see a message warning them that an account already exists with that email address when they also try to sign up for the basicwidgets.com website. 
+
+Because of how Liferay DXP handles email addresses, and how Liferay Experience Cloud is architected, this is only possible if each of these solutions is created in a different Project Workspace.
 
 Each Project Workspace includes Production and UAT environments, which in turn include Liferay DXP and capacity for Extensions. For the Business and Enterprise plans each Project Workspace also includes a Development environment.
 
@@ -38,6 +42,10 @@ Each of the plans provides different numbers of Project Workspaces:
 * **Enterprise**: 10 Project Workspaces
 
 In addition to moving between plans to increase the number of available project workspaces it is possible to buy additional workspaces for each of the plans.
+
+```{note}
+The Project Workspace concept is new and specifically for Liferay Experience Cloud SaaS. For other use cases the Liferay DXP [Virtual Instances](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances) feature can be used to achieve a similar outcome.  
+```
 
 ### Extension Capacity
 
@@ -61,7 +69,9 @@ What’s important to note here is that this is not a private cluster - there ar
 
 ![Available add-ons are Storage, Project Workspaces, Extension Capacity, and Dedicated Resouces](./liferay-pricing-saas/images/06.png)
 
-The example above shows the pricing for add-ons in US dollars and Euros. For other currencies your Liferay contact persons and your CAMs can provide the exact pricing, but for a guide price, use the normal exchange rates to convert to local prices for each market. 
+The example above shows the pricing for add-ons in US dollars and Euros. For other currencies your Liferay contact persons and your CAMs can provide the exact pricing, but for a guide price, use the normal exchange rates to convert to local prices for each market.
+
+The possibility of customers being able to purchase additional Domains as bundles for the Enterprise plan is being investigated as a potential future add-on.
 
 ## Success Drives Growth
 
@@ -114,8 +124,6 @@ The free plan will also help to identify new potential customers and to understa
 
 When the new price model was defined, extensive work was done by a large team at Liferay which involved, in part, reviewing numbers and usage metrics of existing customers to understand what implications the new price model would have on them  if they moved from their current model.
 
-In using this real data it was interesting to see that in some cases the pricing for Liferay Experience Cloud SaaS was about the same or even somewhat lower than for Liferay Experience Cloud Self-Managed. While in some cases it was higher, considering the care-free nature of SaaS the differences were quite moderate and well justifiable.
-
-As has been stated a number of times already, with Liferay Experience Cloud SaaS lots of high-cost, but low-value tasks moved from the customer to Liferay. Any price increases are moderate considering the additional value that customers get from SaaS. To find out more about Low Value tasks, please review the modules in [Level 0](https://learn.liferay.com/web/guest/w/courses/selling-liferay/level-0) in particular.
+The overall feedback from the field since launching this pricing earlier in 2023 has been positive, with some helpful constructive criticims as well.  A number of deals have been closed using the pricing model, which also helps learning with each opportunity. Continued feedback is desired and valued - please keep it coming.
 
 Continue learning about Liferay Pricing, with [pricing for Liferay Experience Cloud Self Managed (PaaS)](./liferay-pricing-paas.md).

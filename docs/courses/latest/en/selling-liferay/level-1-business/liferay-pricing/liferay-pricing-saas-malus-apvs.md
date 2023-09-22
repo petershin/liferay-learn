@@ -46,7 +46,7 @@ If the prospect is implementing a Public Website which allows their customers to
 
 Similarly, for a customer mainly focused on providing content for any visitor on the public site but having some content which is protected, but that needs to be accessed by a large number of users, these users would be authenticated users, and so a potentially large MALU band might be required.
 
-For APVs custom pricing is also employed, in this case where usage exceeds 30 million anonymous page views.
+For APVs custom pricing is also employed, in this case where usage exceeds 300 million anonymous page views.
 
 **MALUs, APVs, or Both?**
 

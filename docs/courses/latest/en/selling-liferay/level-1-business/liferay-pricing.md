@@ -28,11 +28,6 @@ Additionally the module covers what type of questions to ask and conversations t
 
 Although detailed, this is still an *overview* of pricing. Partners should work with the appropriate members of the Liferay team to help with further pricing details. Liferay employees should work with the relevant sales manager.
 
-```{note}
-* View the [recording](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) of the presentation used in the live workshop.
-```
-
 ## Partner Co-Selling
 
 Liferay is committed to a Partner Together strategy which means co-marketing, co-delivering and co-selling. Co-selling means that Liferay works together with Partners on partner opportunities. The structure of the team will vary based on whether the opportunity is for a new or existing customer:

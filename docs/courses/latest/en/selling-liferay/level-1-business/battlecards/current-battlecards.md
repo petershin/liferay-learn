@@ -113,4 +113,24 @@ This Battlecard summarizes some selling points against any Low-Code / No-Code so
 * MACH advocates that companies should be able to pick and choose the top solutions from top vendors to build an incredible stack.
 * Liferay is well aligned with MACH philosophy and features of a MACH platform, and provides many of the features and benefits of MACH, but Liferay advocates the use of one platform. A key point is that a MACH stack will require a UI to be developed from scratch, while Liferay provides a rich UI that can be extended easily with many of the same benefits.
 
+### SAP Hybris
+
+* SAP Hybris is an e-commerce platform with origins in product management and master data management. 
+* Liferay's portal capabilities well exceed those of SAP Hybris. 
+* SAP integrates well with _other_ SAP products, but it is difficult to integrate with other systems.  Since very few companies use SAP exclusively this can create significant challenges.
+
+### Bloomreach
+
+* Bloomreach looks to serve digital commerce and marketing professionals seeking to transform the way they manage commerce experiences across all touchpoints.
+* Bloomreach is _mainly_ focussed on digital commerce oriented use cases for B2C and B2B markets
+* Bloomreach recently rebranded itself and goes to market as a “commerce experience platform.” 
+* Caution may be required when customers try to use Bloomreach in non-transactional scenarios.
+
+### ShopifyPlus
+
+* ShopifyPlus is a user-friendly and scalable enterprise e-commerce platform for high volume merchants
+* ShopifyPlus has evolved from the consumer-focussed Shopify application
+* Shopify is a best fit for digital businesses that need a quick, light, and usable solution
+* ShopifyPlus has significant functional limitations compared with true enterprise platforms
+
 Next: Understand the [structure of the battlecards](./battlecard-format.md).

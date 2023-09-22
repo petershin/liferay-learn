@@ -7,7 +7,7 @@ uuid: 13b4382c-a959-4239-adae-d5a356000004
 
 Many of Liferay's headless API endpoints support the use of an external reference code (ERC). Use the ERC field to access, create, update, or delete various Liferay entities. 
 
-The ERC field is useful in various scenarios. For example, you could keep the unique reference IDs from another system if you were migrating content into Liferay. Or if you wanted human readable keys for your site content. For example, Liferay assigns a unique ID for each created blog post, but you could assign it a human readable key to also be able to reference it. 
+The ERC field is useful in wide range of scenarios. For example, when migrating content into Liferay, you could keep the unique reference IDs from another system for easier management by utilizing ERCs. Or use ERCs to have human readable keys for your site content. For example, Liferay assigns a unique ID for each created blog post, but you could assign human readable keys for easier reference. 
 
 Note, each ERC is unique and the same ERC cannot be used with another entity in the same scope. For example, a blog post and a document on the same site cannot have the same ERC.
 

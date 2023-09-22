@@ -3,7 +3,7 @@ uuid: 6a43907c-f3d6-41f6-996f-a7ab8fc53c53
 ---
 # Changing the Default Site's Name and Logo
 
-Your Liferay instance comes out-of-the-box with a default site, called "Liferay" (with `/guest` as its friendly URL). This site is the default landing page your instance redirects to, so its details are directly tied to the instance's settings. 
+Your Liferay instance comes out-of-the-box with a default site, called "Liferay" (with `/guest` as its friendly URL). This site is the default landing page for your instance, so its details are directly tied to the instance's settings. 
 
 Here, you'll repurpose this site to become the new, public Delectable Bonsai site.
 
@@ -17,23 +17,23 @@ Log in as Kyle Klein, [your instance's administrator](https://learn.liferay.com/
 
 1. On the Instance Settings page, click *Instance Configuration*.
 
-    ![The default site's name and logo are set on the Instance Configuration screen.](./changing-the-default-sites-name-and-logo/images/01.png)
+   ![The default site's name and logo are set on the Instance Configuration screen.](./changing-the-default-sites-name-and-logo/images/01.png)
 
 1. Download and unzip the Delectable Bonsai site logo:
 
-    ```bash
-    curl https://resources.learn.liferay.com/courses/latest/en/liferay-v6j4.zip -O
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/courses/latest/en/liferay-v6j4.zip -O
+   ```
 
-    ```bash
-    unzip liferay-v6j4.zip
-    ```
+   ```bash
+   unzip liferay-v6j4.zip
+   ```
 
 1. On the Instance Configuration page, click the *Change Logo* button ( ![Change icon](../../images/icon-change.png) ).
 
 1. Upload the image you downloaded (`DBLogo.png`) in the pop-up modal and click *Done*.
 
-    ![Use the pop-up modal to upload the Delectable Bonsai logo.](./changing-the-default-sites-name-and-logo/images/02.png)
+   ![Use the pop-up modal to upload the Delectable Bonsai logo.](./changing-the-default-sites-name-and-logo/images/02.png)
 
 1. Click *Save*.
 
@@ -43,9 +43,9 @@ Now change the default "Liferay" to the appropriate site name.
 
 1. While in Instance Configuration, click the *General* scope.
 
-    ![Click the General scope to change the site's name.](./changing-the-default-sites-name-and-logo/images/03.png)
+   ![Click the General scope to change the site's name.](./changing-the-default-sites-name-and-logo/images/03.png)
 
-1. In the *Name* field, enter "Delectable Bonsai".
+1. In the *Name* field, enter *Delectable Bonsai*.
 
 ## Change Other Important Instance Settings
 
@@ -55,7 +55,9 @@ You should also change the home URL and email domain to more appropriate terms f
 
 1. Enter `/web/store` into the *Home URL* field.
 
-    You'll change your site's friendly URL in the next exercise, so you should change the home URL now so that your instance correctly redirects users with the change.
+<!-- As discussed, please change the URL above. -Rich -->
+
+   You'll change your site's friendly URL in the next exercise, so you should change the home URL now so that your instance correctly redirects users with the change.
 
 1. Click *Save* at the bottom of the page.
 

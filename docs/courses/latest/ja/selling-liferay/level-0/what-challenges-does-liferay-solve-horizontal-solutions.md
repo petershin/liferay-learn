@@ -67,7 +67,7 @@ toc:
 :::
 
 :::{grid-item-card} デジタルコマースサイト
-:link: ./what-challenges-does-liferay-solve-horizontal-solutions/デジタルコマースサイト.md
+:link: ./what-challenges-does-liferay-solve-horizontal-solutions/digital-commerce-sites.md
 
 :::
 

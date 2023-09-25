@@ -59,7 +59,7 @@ toc:
 :::
 
 :::{grid-item-card} 政府および公共部門
-:link: ./what-challenges-does-liferay-solve-industry-solution/政府および公共部門.md
+:link: ./what-challenges-does-liferay-solve-industry-solutions/government-and-public-sector.md
 
 政府と公共部門におけるLiferay
 :::
@@ -77,7 +77,7 @@ toc:
 :::
 
 :::{grid-item-card} エネルギー産業と公益事業
-:link: ./what-challenges-does-liferay-solve-industry-solution/energy-and-utilities.md
+:link: ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.mdd
 
 エネルギー産業と公益事業におけるLiferay
 :::

@@ -1,6 +1,6 @@
 ---
 toc:
-- ./site-designer/creating-sites.md
+- ./site-designer/creating-pages.md
 uuid: a6e1bd85-6cb9-49ef-aa35-ea2bda8ad999
 ---
 # Site Designer

@@ -3,12 +3,20 @@ uuid: 52556bc8-a31b-4331-bcd7-317428006384
 ---
 # Extending System Objects
 
-{bdg-secondary}`Available Liferay 7.4 U72+/GA72+`
+{bdg-secondary}`Available Liferay 7.4 U86+/GA86+`
 
-With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework: Account, Commerce Order, Commerce Product, Commerce Product Group, Postal Address, and User.
+With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework:
+
+* Account
+* Commerce Order
+* Commerce Product
+* Commerce Product Group
+* Organization
+* Postal Address
+* User
 
 ```{note}
-The Postal Address object is only used to store account addresses. For this reason, you can only relate it to custom objects that are related to the Accounts object. See [Using System Accounts with Custom Objects](./using-system-objects-with-custom-objects.md) for more information.
+The Postal Address object stores account addresses. For this reason, you can only relate it to custom objects that are related to the Accounts object. See [Using System Accounts with Custom Objects](./using-system-objects-with-custom-objects.md) for more information.
 ```
 
 ![Extend system services integrated with the Objects Framework.](./extending-system-objects/images/01.png)
@@ -68,15 +76,18 @@ See [Defining Object Actions](./actions/defining-object-actions.md) for more inf
 
 You can add Groovy and Expression Builder validations to system objects. When triggered, these validations check for valid field entries and show custom error messages for invalid entries. Currently, Objects only supports validations for a system object's default fields and does not support validations for its custom fields. See [Adding Custom Validations](./validations/adding-custom-validations.md) for more information.
 
-<!--TASK: Uncomment once supported.
 ## Additional Configuration Options
 
 When editing a system object, you can also configure the following settings in the *Details* tab.
 
-| Field | Description |
-| :--- | :--- |
-| Title Field | Determine the field used as the title for object entries. |
-| Widget | Determine whether the object's Page widget is available in sites.| -->
+| Field                            | Description                                                              | Supported in System Objects? |
+|:---------------------------------|:-------------------------------------------------------------------------|------------------------------|
+| Title Field                      | Determine the field used as the title for object entries.                | &#10004;                     |
+| Panel Link                       | Determine where the application appears in the UI.                       | &#10006;                     |
+| Widget in Page Builder           | Determine whether the object's Page widget is available in sites.        | &#10006;                     |
+| Categorization of Object Entries | Determine whether categorization tools are available for object entries. | &#10006;                     |
+| Comments in Page Builder         | Determine whether users can add comments on object entries.              | &#10006;                     |
+| Entry History in Audit Framework | Determine whether object events appear in the audit history.             | &#10006;                     |
 
 ## Related Topics
 

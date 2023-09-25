@@ -39,12 +39,12 @@ If you want to map several structure field values to individual fragments, you m
 
 1. Click the *Field* drop-down menu and select the web content template you created before.
 
-   ![Map the field in the web content remplate to your fragment.](./mapping-web-content-templates-to-fragments/images/05.png)
+   ![Map the field in the web content template to your fragment.](./mapping-web-content-templates-to-fragments/images/05.png)
 
 1. Click *Publish* to save the changes.
 
 ```{warning}
-A web content article is reindexed when it is edited and saved, but content pages are reindexed only when published (to conserve resources). Therefore, when a web content article mapped to a cached fragment is updated, the update doesn't appear on the content page until you publish the page again or [unmark the fragment as cacheable](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments).
+A web content article is reindexed when it is edited and saved, but content pages are reindexed only when published (to conserve resources). Therefore, when a web content article mapped to a cached fragment is updated, the update doesn't appear on the content page until you publish the page again or [unmark the fragment as cacheable](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md#managing-individual-page-fragments).
 ```
 
 ## Related Topics

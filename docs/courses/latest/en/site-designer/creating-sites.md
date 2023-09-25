@@ -5,8 +5,8 @@ toc:
 - ./creating-sites/defining-the-pages-header-and-footer.md
 - ./creating-sites/designing-the-home-page.md
 - ./creating-sites/completing-the-site-structure.md
-- ./creating-sites/creating-site-templates.md
 - ./creating-sites/creating-navigation-menus.md
+- ./creating-sites/creating-site-templates.md
 - ./creating-sites/adding-pages.md
 - ./creating-sites/using-master-pages.md
 - ./creating-sites/adding-the-intranet-site.md

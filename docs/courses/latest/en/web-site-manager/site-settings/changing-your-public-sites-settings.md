@@ -61,13 +61,11 @@ The friendly URL is the part of the URL after the slash (`/`) that directs to yo
 
 1. While on the Site Configuration page, click *Site URL* under Site Scope.
 
-1. In the *Friendly URL* field, replace the default value (`/guest`) with the new value: `/store`.
-
-<!-- Please change the above URL as discussed. -Rich -->
+1. In the *Friendly URL* field, replace the default value (`/guest`) with the new value: `/p`.
 
 1. Click *Save*.
 
-Now `/store` is appended to the URL for this site, and the home page redirects you to it correctly because of [your previous instance setting change](./changing-the-default-sites-name-and-logo.md#change-other-important-instance-settings).
+Now `/p` is appended to the URL for the public site, and the home page redirects you to it correctly because of [your previous instance setting change](./changing-the-default-sites-name-and-logo.md#change-other-important-instance-settings).
 
 ## Examine Cookie Preferences
 

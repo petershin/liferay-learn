@@ -13,7 +13,7 @@ Log in as Kyle Klein, [your instance's administrator](https://learn.liferay.com/
 
 1. Access your Liferay instance and log in as Kyle Klein.
 
-1. At the top of the screen, open the Applications menu ( ![Applications menu](../../images/icon-applications-menu.png) ) and click *Control Panel* &rarr; *Instance Settings*.
+1. At the top of the screen, open the Global menu ( ![Applications menu](../../images/icon-applications-menu.png) ) and click *Control Panel* &rarr; *Instance Settings*.
 
 1. On the Instance Settings page, click *Instance Configuration*.
 
@@ -53,9 +53,7 @@ You should also change the home URL and email domain to more appropriate terms f
 
 1. On the same General configuration page, change the domain in the *Mail Domain* field to `delectablebonsai.com`.
 
-1. Enter `/web/store` into the *Home URL* field.
-
-<!-- As discussed, please change the URL above. -Rich -->
+1. Enter `/web/p` into the *Home URL* field.
 
    You'll change your site's friendly URL in the next exercise, so you should change the home URL now so that your instance correctly redirects users with the change.
 

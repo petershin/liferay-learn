@@ -8,7 +8,9 @@ uuid: 86f08f77-e511-4054-86eb-13cf4b3dd3ba
 Pattern redirects use regular expressions to define patterns for multiple source URLs and their replacements. Consequently, they are best used when you have large groups of URLs to map to new URLs. You can create bulk redirects in a web server like Nginx or Apache, but since this is an out-of-the-box feature, you can set up pattern redirects directly in Liferay.
 
 ```{important}
-Because Liferay interprets redirect patterns as friendly URLs based on the current site's friendly URL, you cannot use redirect patterns with non-friendly URLs (e.g., virtual host names, port numbers) or redirect to pages outside of the current site.
+Because Liferay interprets redirect patterns as friendly URLs based on the current site's friendly URL, you cannot use redirect patterns with non-friendly URLs (e.g., virtual host names, port numbers) or redirect to pages outside of the current Liferay site (i.e., redirect from page A in site A to page B in site B).
+
+However, you can redirect to external websites by adding the protocol before the address. For example, use http://www.externalwebsite.com to redirect to the external website.
 
 Depending on the regular expression you use, pattern redirects can be slower than [alias redirects](./using-alias-redirects.md) and result in more URL matches than intended. For these reasons, alias redirects are recommended when possible. See [Setting Up Redirects and 404 Tracking](../setting-up-redirects-and-404-tracking.md) for more information.
 ```

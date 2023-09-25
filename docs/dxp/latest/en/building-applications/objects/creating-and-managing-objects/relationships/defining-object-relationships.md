@@ -13,8 +13,6 @@ Relationships add fields and tables to object definitions for relating their ent
 
 1. Go to the *Relationships* tab and click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
 
-   ![Enter a label and name, and select both a relationship type and the desired object.](./defining-object-relationships/images/01.png)
-
 1. Enter a *label* and *name*.
 
    **Label**: Identifies the relationship in the Objects UI and can be localized after the relationship is created.
@@ -33,7 +31,7 @@ Relationships add fields and tables to object definitions for relating their ent
 
 1. Select an *object* to relate to the current object. You can relate objects to themselves or other object definitions.
 
-   Beginning with 7.4 U46/GA46, you can define one-to-many and many-to-many relationships that relate an object definition to itself. Previously, you could only use the one-to-many type to relate entries within the same object.
+   ![Enter a label and name, and select both a relationship type and the desired object.](./defining-object-relationships/images/01.png)
 
 1. Click *Save*.
 
@@ -65,7 +63,7 @@ Available options include *Prevent*, *Disassociate*, and *Cascade*.
 
 {bdg-secondary}`For 7.4 U47+/GA47+`
 
-In some scenarios, you may want to make relationship fields mandatory. For example, if you're creating a Ticket object, you may want to define a mandatory relationship field for selecting an 'assignee'. Or if you want to [restrict access to object data](../using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) by account, you should make the object's relationship with the account object mandatory.
+Objects on the child side of a one-to-many relationship inherit relationship fields. In some scenarios, you may want to make these fields mandatory. For example, if you're creating a Ticket object, you may want to define a mandatory relationship field for selecting an 'assignee'. Or if you want to [restrict access to object data](../using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) by account, you should make the object's relationship with the account object mandatory.
 
 Follow these steps to make a relationship field mandatory:
 

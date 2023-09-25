@@ -4,12 +4,12 @@ Liferay AMDローダーは [AMD仕様](https://github.com/amdjs/amdjs-api/wiki/A
 
 - `my-bundle/`
     - `META-INF/`
-        - `リソース/`
+        - `resources/`
             - `package.json`
                 - name: my-bundle-package
-                - バージョン：1.0.0
+                - version: 1.0.0
                 - main: lib/index
-                - 依存関係:
+                - dependencies:
                     - my-bundle-package$isarray: 2.0.0
                     - my-bundle-package$isobject: 2.1.0
                 - ...
@@ -21,22 +21,22 @@ Liferay AMDローダーは [AMD仕様](https://github.com/amdjs/amdjs-api/wiki/A
                 - `my-bundle-package$isobject@2.1.0/`
                     - `package.json`
                         - name: my-bundle-package$isobject
-                        - バージョン：2.1.0
+                        - version: 2.1.0
                         - main: lib/index
-                        - 依存関係:
+                        - dependencies:
                             - my-bundle-package$isarray: 1.0.0
                         - ...
                     - ...
                 - `my-bundle-package$isarray@1.0.0/`
                     - `package.json`
                         - name: my-bundle-package$isarray
-                        - バージョン：1.0.0
+                        - version: 1.0.0
                         - ...
                     - ...
                 - `my-bundle-package$isarray@2.0.0/`
                     - `package.json`
                         - name: my-bundle-package$isarray
-                        - バージョン：2.0.0
+                        - version: 2.0.0
                         - ...
                     - ...
 

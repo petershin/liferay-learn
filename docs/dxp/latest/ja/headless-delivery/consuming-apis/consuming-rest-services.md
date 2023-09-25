@@ -29,7 +29,7 @@ APIはいくつかのカテゴリに分かれている。この例ではBlogsウ
 
 3. `BlogPosting`をPUTしたいときには、そのスキーマが必要になります。
 
-スキーマ・ブラウザを使えば、欲しいサービスを見つけて呼び出すのに便利です。](./consuming-rest-services/images/01.png)
+![スキーマ・ブラウザを使えば、欲しいサービスを見つけて呼び出すのに便利です。](./consuming-rest-services/images/01.png)
 
 ## データを含むサイトを特定する
 

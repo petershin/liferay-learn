@@ -27,7 +27,7 @@ bundler-migration-guide/migrating-to-the-new-mode.md
 :link: ./bundler-migration-guide/migrating-angular-bundler.md
 :::
 
-:::{grid-item-card} Liferay npm Bundler 2.x
+:::{grid-item-card} プレーンJavaScript、Billboard JS、JQuery、Metal JS、React、またはVue JSプロジェクトを移行してLiferay npm Bundler 2.xを使用する
 :link: ./bundler-migration-guide/migrating-plain-js-billboard-jquery-metal-js-react-vue-bundler.md
 :::
 

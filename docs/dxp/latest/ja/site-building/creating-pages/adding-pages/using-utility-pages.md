@@ -19,9 +19,9 @@ Liferayは [、すぐに使えるユーティリティページ](#viewing-utilit
 1. ページを選択し、 **Actions**( ![Actions Icon](../../../images/icon-actions.png) ) をクリックして、利用可能なオプション（例： **Edit** , **Preview** , または **Make a Copy**）を表示し、選択します。
 
 ```{tip}
-コンテンツページ](../using-content-pages/adding-elements-to-content-pages.md)を編集するのと同じ方法で、ユーティリティページを編集してください。
+[コンテンツページ](../using-content-pages/adding-elements-to-content-pages.md)を編集するのと同じ方法で、ユーティリティページを編集してください。
 
-ユーティリティ・ページを直接編集することも、コピーを作成してから編集することもできます](./using-utility-pages/images/02.png)
+![ユーティリティ・ページを直接編集することも、コピーを作成してから編集することもできます](./using-utility-pages/images/02.png)
 ```
 
 ## 新しいユーティリティ・ページの作成

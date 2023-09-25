@@ -141,7 +141,7 @@ liferay
           └── scripts
 ```
 
-バックグラウンドで、XMLライセンスは `$LIFERAY_HOME/ deploy`にコピーされ、AATFライセンスは `$LIFERAY_HOME/ data`コピーされます。
+バックグラウンドで、XMLライセンスは `$LIFERAY_HOME/deploy`にコピーされ、AATFライセンスは `$LIFERAY_HOME/data`コピーされます。
 
 ## 関連トピック
 

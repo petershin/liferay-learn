@@ -113,16 +113,17 @@
 
 ### 例 `アセンブル` ブロック
 
-`assemble` ブロックに</code> の `を複数含めることができます：</p>
+`assemble` ブロックには複数の `from` アイテムを含めることができます：
 
-<pre><code class="yaml">assemble:
+```yaml
+assemble:
     - from: build/folder/aaa
       include: "css/*.css"
       into: folder/aaa
     - from: build/folder/bbb
       include: "css/*.css"
       into: folder/bbb
-`</pre>
+```
 
 のように、ビルドされていないプロジェクトのリソースを含めることもできます。
 

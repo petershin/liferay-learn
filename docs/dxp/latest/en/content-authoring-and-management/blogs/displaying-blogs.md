@@ -21,15 +21,15 @@ Follow these steps to manage a blog entry's friendly URL history:
 
 1. Open the *Site Menu* ( ![Site Menu](../../images/icon-product-menu.png) ), expand *Content & Data*, and go to *Blogs*.
 
-1. Click *Actions* button ( ![Actions Button](../../images/icon-actions.png) ) for the desired entry and select *Edit*.
+1. Click the *Actions* button ( ![Actions Button](../../images/icon-actions.png) ) for the desired entry and select *Edit*.
 
 1. Expand the Configuration section and click the *History* button ( ![History Button](../../images/icon-history.png) ) in the Friendly URL field.
 
    ![Click History button for the Friendly URL field.](./displaying-blogs/images/01.png)
 
-1. Click *Restore* button ( ![Restore Button](../../images/icon-restore2.png) ) to replace the current friendly URL with the selected URL.
+1. Click the *Restore* button ( ![Restore Button](../../images/icon-restore2.png) ) to replace the current friendly URL with the selected URL.
 
-1. Click *Forget URL* button ( ![Forget URL Button](../../images/icon-delete.png) ) to remove the selected URL from the entry's history. Once removed, you can no longer use the URL to access the blog entry.
+1. Click the *Forget URL* button ( ![Forget URL Button](../../images/icon-delete.png) ) to remove the selected URL from the entry's history. Once removed, you can no longer use the URL to access the blog entry.
 
    ![Click Restore or Forget URL buttons.](./displaying-blogs/images/02.png)
 
@@ -37,13 +37,13 @@ Changes to the friendly URL history are automatically saved.
 
 ## Using the Blogs Widget
 
-Adding the blogs widget to a page exposes the blog interface to site members. Similarly, adding the widget to a User's personal site (Profile) creates a blog just for that User. The widget works the same way in both cases. 
+Adding the Blogs widget to a page exposes the blog interface to site members. Similarly, adding the widget to a user's personal site (Profile) creates a blog just for that user. The widget works the same way in both cases. 
 
-Once you've added a blogs widget to a page, there are several display options for configuring the listing to look the way you want. 
+Once you've added a Blogs widget to a page, there are several display options for configuring the listing to look the way you want. 
 
 To configure the widget, click *Options* ( ![Options icon](../../images/icon-app-options.png) ) &rarr; *Configuration*.
 
-![There are different setup options for the blogs widget](displaying-blogs/images/03.png)
+![There are different setup options for the Blogs widget](displaying-blogs/images/03.png)
 
 ### Setup Tab
 

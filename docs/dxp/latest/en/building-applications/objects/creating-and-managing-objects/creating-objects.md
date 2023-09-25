@@ -101,7 +101,7 @@ Follow these steps to edit the object draft:
 
    **Site**: When scoped by Site, the object's data is stored per Site.
 
-1. Select a Panel Category Key to determine where the definition appears in Liferay.
+1. Select a Panel Link to determine where the definition appears in Liferay.
 
    For company-scoped objects, select tab and category in the Global Menu (![Global Menu](../../../images/icon-applications-menu.png)).
 
@@ -109,7 +109,7 @@ Follow these steps to edit the object draft:
 
    You can leave this value blank if you don't want to display the application in a UI menu.
 
-   ![Select a scope and panel category key for the object.](./creating-objects/images/13.png)
+   ![Select a scope and panel link for the object.](./creating-objects/images/13.png)
 
 1. Configure account restriction to restrict access to object entries by account. You can only configure this setting before publishing.
 
@@ -143,7 +143,7 @@ Once you've finished configuring and editing the draft, you can [publish](#publi
 
 ## Publishing Object Drafts
 
-Publishing an object creates and activates your new application. When activated, users can access it in the Liferay UI according to its scope and panel category key. Before publishing your object, review the following information to understand the consequences of publishing a draft.
+Publishing an object creates and activates your new application. When activated, users can access it in the Liferay UI according to its scope and panel link. Before publishing your object, review the following information to understand the consequences of publishing a draft.
 
 ### What Happens During Publishing
 
@@ -177,7 +177,7 @@ To prevent data loss and system conflicts, some configuration options are remove
 
 * Most configuration options for published fields and relationships cannot be changed.
 
-You can still edit and localize labels for objects, fields, and relationships after publishing, but most configuration options are removed. For objects, you can change the Panel Category Key as well as add new fields, relationships, and layouts. For relationships, you can configure its Deletion Type.
+You can still edit and localize labels for objects, fields, and relationships after publishing, but most configuration options are removed. For objects, you can change the Panel Link as well as add new fields, relationships, and layouts. For relationships, you can configure its Deletion Type.
 
 ```{note}
 For Liferay 7.4 U25/GA25 and earlier versions, users cannot delete published object definitions or remove relationships included in an object at the time of publishing.

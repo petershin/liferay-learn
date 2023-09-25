@@ -74,7 +74,7 @@ You can now use the Picklist as a field in the Time Off Request Object.
    | :--- | :--- |
    | Title Field | Start Date |
    | Scope | Company |
-   | Panel Category Key | Applications > Communication |
+   | Panel Link | Applications > Communication |
 
 1. Click *Publish*. This activates the Object.
 
@@ -122,7 +122,7 @@ Next, you'll create an Employee Object and relate it to the Time Off Request Obj
    | :--- | :--- |
    | Title Field | Name |
    | Scope | Company |
-   | Panel Category Key | Control Panel > Users |
+   | Panel Link | Control Panel > Users |
 
 1. Click *Publish*.
 

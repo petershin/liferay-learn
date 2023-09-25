@@ -9,7 +9,7 @@ Published objects are integrated automatically with Liferay's permissions framew
 
 By default, custom object permissions are not assigned to user roles automatically. This is to prevent the accidental exposure of object data. To grant access, manually assign object permissions to the desired roles.
 
-When defining role permissions, active objects appear according to their scope and panel category key.
+When defining role permissions, active objects appear according to their scope and panel link.
 
 ```{tip}
 For site-scoped objects, you can determine whether permissions are granted for all sites or only specific sites.

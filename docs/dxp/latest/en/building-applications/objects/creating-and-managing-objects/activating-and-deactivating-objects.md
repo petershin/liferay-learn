@@ -3,17 +3,13 @@ uuid: 173b877c-0cd6-491d-9af3-25b8b494422f
 ---
 # Activating and Deactivating Objects
 
-By default, objects are *Activated* and available for use when they're first [published](./creating-objects.md#publishing-object-drafts). While active, users can access the object and its entries via the Liferay UI and Headless API calls. However, you can deactivate custom objects at any time.
+Custom objects are *activated* when [published](./creating-objects.md#publishing-object-drafts). While active, you can use the object to create entries via the Liferay UI or dedicated REST APIs. If needed, you can deactivate custom objects at any time.
 
-Deactivating an object removes it from its Panel Category, integrated frameworks, and related objects. While inactive, you can only edit and extend an object in the Objects application. If an object's entries appear in a site or related object at the time it's deactivated, those entries are blank, and their fields no longer appear in any related object layouts.
+This prevents users from creating or accessing its entries. While inactive, its data is unavailable, and you can only edit the object's definition. If the object has relationships, it no longer appears in its related objects' layouts. Additionally, the object does not appear in any [integrated frameworks](../understanding-object-integrations.md) (e.g., permissions, workflow). This means that site elements referencing the object's entries become blank.
 
-You can reactivate any inactive object to make it and its data available for use.
-
-```{important}
 Deactivating an object does not affect its data; it only prevents users from accessing it until the object is reactivated.
-```
 
-To activate or deactivate a custom object,
+To deactivate or reactivate a custom object,
 
 1. Open the Global Menu (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 

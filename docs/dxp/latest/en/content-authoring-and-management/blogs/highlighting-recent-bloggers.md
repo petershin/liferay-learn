@@ -3,17 +3,17 @@ uuid: 4c3af2fb-8fbb-4355-82d5-9788ed9503cd
 ---
 # Highlighting Recent Bloggers
 
-You can use the recent bloggers widget to highlight the work of your most recent blog authors. This widget lists each recent author's name, profile picture, and number of posts. 
+You can use the *Recent Bloggers* widget to highlight the work of your most recent blog authors. This widget lists each recent author's name, profile picture, and number of posts. 
 
 To configure the widget, click *Options* ( ![Options icon](../../images/icon-app-options.png) ) &rarr; *Configuration*.
 
-![There are different setup options for the recent bloggers widget](highlighting-recent-bloggers/images/02.png)
+![There are different setup options for the Recent Bloggers widget](highlighting-recent-bloggers/images/02.png)
 
 ## Setup
 
-The setup tab contains these options:
+The Setup tab contains these options:
 
-**Selection Method:** Set how the widget selects blog authors to highlight. You can choose *Users* or *Scope*. If you select users, the widget aggregates every recent blogger on your system. To refine the aggregation, you can filter the users by selecting an organization. If you select scope, the widget aggregates the recent bloggers in the current scope. This limits the entries to members of the site or organization where the widget resides.
+**Selection Method:** Set how the widget selects blog authors to highlight. You can choose *Users* or *Scope*. If you select Users, the widget aggregates every recent blogger on your system. To refine the aggregation, you can filter the Users by selecting an organization. If you select Scope, the widget aggregates the recent bloggers in the current scope. This limits the entries to members of the site or organization where the widget resides.
 
 **Organization:** Select the organization whose recent bloggers you want to aggregate.
 

@@ -80,10 +80,11 @@ DXP/Portalにデプロイされたサービスビルダーサービスは、同�
 ```
 
 `t2p5-api`モジュールの`bnd.bnd`ファイルは、`com.acme.t2p5.service`パッケージ、`com.acme.t2p5.model`パッケージ、およびコンシューマが使用するその他のパッケージのエクスポートを宣言します。 `bnd.bnd`ファイルは次のとおりです。
+
 ```{literalinclude} ./invoking-a-service-locally/resources/liferay-t2p5.zip/t2p5-api/bnd.bnd
 ```
 
-The `t2p5-web` module's portlet application depends on the `T2P5EntryLocalService` class. The web module's `build.gradle` file declares a dependency on the `t2p5-api` project.
+`t2p5-web` モジュールのポートレットアプリケーションは `T2P5EntryLocalService` クラスに依存している。web モジュールの `build.gradle` ファイルは `t2p5-api` プロジェクトへの依存を宣言している。
 
 ```{literalinclude} ./invoking-a-service-locally/resources/liferay-t2p5.zip/t2p5-web/build.gradle
 ```

@@ -25,7 +25,7 @@
 1. [**`DispatchTaskExecutor`**](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/DispatchTaskExecutor.java) ：`DispatchTaskExecutor`インターフェースを実装するか、その実装を拡張します（`BaseDispatchTaskExecutor`など）。
 
       ```{important}
-      DispatchTaskExecutor` インターフェイスの実装では、ジョブスケジューラタスクのステータスログを扱わなければならない。
+      `DispatchTaskExecutor` インターフェイスの実装では、ジョブスケジューラタスクのステータスログを扱わなければならない。
 
       便宜上、Liferay は `BaseDispatchTaskExecutor` abstract [class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/dispatch/dispatch-api/src/main/java/com/liferay/dispatch/executor/BaseDispatchTaskExecutor.java) を提供し、ジョブスケジューラタスクのステータスを `IN PROGRESS`, `SUCCESSFUL`, `FAILED` のいずれかで記録します。
       ```

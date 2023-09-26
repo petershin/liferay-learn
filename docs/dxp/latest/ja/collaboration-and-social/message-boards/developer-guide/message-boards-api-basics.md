@@ -15,9 +15,9 @@ LiferayのHeadless Deliveryアプリケーションは、[掲示板](../../messa
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-1. オブジェクトドラフトを3つ作成します。開始したら、サイトIDを取得します。サイトIDを見つけるには、*サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、*設定* &rarr; *サイト設定* &rarr; *サイト設定* に進みます。
+起動したら、サイトIDを取得します。サイトIDを見つけるには、*サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、*設定* &rarr; *サイト設定* &rarr; *サイト設定* に進みます。
 
-![サイト構成設定の下にあるサイトIDを見つけてください。](./message-board-api-basics/images/01.png)
+![サイト構成設定の下にあるサイトIDを見つけてください](./message-board-api-basics/images/01.png)
 
 ### チュートリアル・コード
 

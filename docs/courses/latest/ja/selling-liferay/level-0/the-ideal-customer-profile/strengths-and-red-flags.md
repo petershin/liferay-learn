@@ -17,8 +17,8 @@
 * ポータルとコマースの連携はどうか。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf)からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf) からダウンロードしてください。
 ```
 
 ## ユースケース
@@ -41,7 +41,7 @@ Liferayが得意とするのは、複数のユースケースのニーズ、セ�
 
 ## 消費者向けまたは広範囲か
 
-B2B、B2B2C、B2E、G2C、G2B（またはこれら複数）のユースケースは、多くの場合、Liferayに適していますが、 **純粋な** B2Cの場合、最適ではありません。
+B2B、B2B2C、B2E、G2C、G2B（またはこれら複数）のユースケースは、多くの場合、Liferayに適していますが、**純粋な**B2Cの場合、最適ではありません。
 
 ## ターンキーアプリケーションまたはカスタマイズソリューション
 
@@ -120,9 +120,9 @@ Liferay Experience Cloud SaaSは、比較的新しい製品であり、他の製
 
 ### 費用5～10万ドルから開始
 
-Liferay Experience Cloud SaaSの案件における一般的な開始点は、5～10万ドル（ユーロ）から **開始される** 年間サブスクリプション費用にあるようです。
+Liferay Experience Cloud SaaSの案件における一般的な開始点は、5～10万ドルから_開始される_年間サブスクリプション費用にあるようです。
 
-このリストは、網羅的なものでも決定的なものでも **ありません** が、Liferay Experience Cloud SaaS案件を特定する際のヒントになるでしょう。
+このリストは、網羅的なものでも決定的なものでも_ありません_が、Liferay Experience Cloud SaaS案件を特定する際のヒントになるでしょう。
 
 　 これで「求める顧客像」のモジュールは完了です。
 

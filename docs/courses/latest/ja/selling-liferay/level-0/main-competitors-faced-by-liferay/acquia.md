@@ -20,8 +20,8 @@ Acquia社（とDrupal）はB2CとCMSのユースケースに重点を置いて�
 Acquia社は以下のような数多くの買収を行っています。
 
 * Widen Enterprises, Inc
-* AgilOne
-* Cohesion
+* AgilOne社
+* Cohesion社
 
 Acquia社は現在、Vista Equity Partners社により所有されており、長期的な顧客価値に対するベンダーのコミットメントが不安定な状態です。
 
@@ -44,4 +44,4 @@ Drupal（Acquia版ではなくオープンソース版）は「無料」で完�
 
 これでレベル0のLiferay販売に関するラーニングパスが完了しました。 次のレベル1では、ビジネスとテクニカルセールスの両方のロールのオプションがあります。
 
-[Liferay販売に戻る](../../../selling-liferay.md)
+[Liferayの販売](../../../selling-liferay.md)に戻る

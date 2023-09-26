@@ -18,11 +18,11 @@ toc:
 ---
 # Liferay DXP製品の機能
 
-簡単に復習しておくと、Liferayの製品はLiferay DXPであり、デジタルエクスペリエンスプラットフォームのコア機能と、コマースとアナリティクスの機能が含まれています。 **すべての** お客様は、デプロイ方法に関係なく、すべての機能をご利用いただけます。
+簡単に復習しておくと、Liferayの製品はLiferay DXPであり、デジタルエクスペリエンスプラットフォームのコア機能と、コマースとアナリティクスの機能が含まれています。 **すべての**お客様は、デプロイ方法に関係なく、すべての機能をご利用いただけます。
 
 ![Liferay製品ラインには3つの機能セットがあります。](./liferay-product-offering/images/01.png)
 
-このモジュールを終えるころには、Liferay DXPの主な機能領域の概要を把握できるようになります。 このレッスンでは、まず Liferay DXPの[デザインシステムとエクスペリエンスの管理](./liferay-product-overview/design-systems-and-experience-management.md)の確認から開始します。
+このモジュールを終えるころには、Liferay DXPの主な機能領域の概要を把握できるようになります。 このレッスンでは、まず Liferay DXPの[デザインシステムとエクスペリエンス管理](./liferay-product-overview/design-systems-and-experience-management.md)の確認から開始します。
 
 ```{note}
 * 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-2b-liferay-overview) をご覧ください。

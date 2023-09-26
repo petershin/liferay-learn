@@ -6,7 +6,7 @@
 
 ## 商品カタログ
 
-* [商品仕様](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/specifications)
+* [仕様](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/specifications)
 * [コマースBOM](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/product-types/shop-by-diagram)
 * [商品画像](https://learn.liferay.com/w/commerce/product-management/creating-and-managing-products/products/product-images)
 * [プロモーション](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-promotions) および [割引](https://learn.liferay.com/w/commerce/pricing/promoting-products/introduction-to-discounts)
@@ -28,7 +28,7 @@
 
 ## マルチレベル販売
 
-* [購入者、販売者、アカウント、ユーザーロールのサポート](https://learn.liferay.com/w/commerce/users-and-accounts)
+* [ユーザーとアカウント](https://learn.liferay.com/w/commerce/users-and-accounts)
 * [ダッシュボード](https://learn.liferay.com/w/analytics-cloud/commerce/commerce-dashboard)
 * 予測
 

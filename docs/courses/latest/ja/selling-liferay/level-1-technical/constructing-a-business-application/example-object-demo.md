@@ -28,7 +28,7 @@
 
 デモに使える時間が限られていたとしても、このステップを完了する価値はあります。
 
-オブジェクトの表示ページの作成に関する詳細は、 [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries#creating-display-page-templates-for-objects)をご覧ください。
+オブジェクトの表示ページの作成に関する詳細は、 [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries#creating-display-page-templates-for-objects) をご覧ください。
 
 ## オプションのデモ・ステップ
 
@@ -38,6 +38,6 @@
 
 しかし、ここで気をつけなければならないことがある。 Objectsのデモンストレーションの価値の多くは、開発者でないユーザーでも使える使いやすさ、ドラッグ・アンド・ドロップ機能である。 デモがゼロからオブジェクトの作成に踏み込めば踏み込むほど、会話はより技術的なものになるだろう。 聴衆が入り混じっている場合は、作成手順のいくつかを数分話すだけにして、より技術的な聴衆のためにフォローアップのデモを予定して、詳細に入るようにするとよいでしょう。
 
-オブジェクトの作成に関するドキュメントは [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects)から入手できる。
+オブジェクトの作成に関するドキュメントは [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) から入手できる。
 
 次に、学習目的やより詳細な技術デモのために、 [Liferay Object](./creating-objects.md) を作成する方法について詳しく説明します。

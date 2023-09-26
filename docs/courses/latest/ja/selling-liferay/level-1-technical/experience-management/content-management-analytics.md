@@ -11,13 +11,13 @@
 * LiferayのAnalytics機能により、管理者やマーケティング担当者はLiferayサイトのパフォーマンスを把握し、改善を行うことができます。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/se1-4-experience-management) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf)からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-4-experience-management) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) からダウンロードしてください。
 ```
 
 ## コンテンツ管理
 
-Liferayは、技術者でなくてもコンテンツの作成、管理、整理ができる堅牢なコンテンツ管理システム（CMS）を提供します。 Liferay は、 [Web Content](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content)、 [Documents and Media](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)、Collections、 [Blogs](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs) など、さまざまなタイプのコンテンツをサポートしています。
+Liferayは、技術者でなくてもコンテンツの作成、管理、整理ができる堅牢なコンテンツ管理システム（CMS）を提供します。 Liferay は、 [Web Content](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content) 、 [Documents and Media](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media) 、Collections、 [Blogs](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs) など、さまざまなタイプのコンテンツをサポートしています。
 
 デモでは、多くの利点が強調される：
 
@@ -34,7 +34,7 @@ Liferayは、技術者でなくてもコンテンツの作成、管理、整理�
 * **翻訳** . ローカライゼーションが見込み客にとって重要な場合は、コンテンツを手動または自動で翻訳できることを示す。
 * **コンテンツ公開** . Liferayには、スケジュールパブリッシングや自動期限切れなどをサポートするコンテンツパブリッシング機能があります。
 * **ネイティブフレームワークとの統合** . すべてのコンテンツ（ウェブコンテンツ、ブログ、ドキュメントなど）は、パーミッションフレームワーク、検索エンジン、ワークフローエンジンなど、Liferayのコア機能と統合されているという事実について話してください。
-* **Office 365とGoogle Driveの統合** . 見込み客が文書管理に関心がある場合は、Liferay DXP が提供する [Office 365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365) および [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration)とのネイティブな統合について触れてください。 これらの統合により、ユーザーはLiferay内で使い慣れたツールを使ってドキュメントを作成することができ、前述のDXPの機能をすべて活用できるメリットがあります。
+* **Office 365とGoogle Driveの統合** . 見込み客が文書管理に関心がある場合は、Liferay DXP が提供する [Office 365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365) および [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) とのネイティブな統合について触れてください。 これらの統合により、ユーザーはLiferay内で使い慣れたツールを使ってドキュメントを作成することができ、前述のDXPの機能をすべて活用できるメリットがあります。
 
 ## 分析
 

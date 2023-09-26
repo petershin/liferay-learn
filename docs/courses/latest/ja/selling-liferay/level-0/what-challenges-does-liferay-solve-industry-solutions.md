@@ -12,12 +12,12 @@ toc:
 **概要**
 
 * Liferayは、次のような業界のソリューションとして最適です。
-  * 製造
+  * 製造業
   * 財務サービス
-  * 政府・公共部門
+  * 政府および公共部門
   * 保険
   * ヘルスケア
-  * エネルギー産業と公益事業
+  * エネルギー産業および公益事業
 * Liferayは、ほぼすべての業界で使用できる柔軟性を備えています。
 * 各業界には、多くの [水平ソリューション](./what-challenges-does-liferay-solve-horizontal-solutions) があります。
 
@@ -39,14 +39,14 @@ toc:
 * 業界における主要課題
 * 業界でよく見られるソリューション
 
-　 最初は製造です。
+　 最初は製造業です。
 
-[製造](./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md)
+次：[製造業](./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} 製造
+:::{grid-item-card} 製造業
 :link: ./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md
 
 製造におけるLiferay
@@ -61,7 +61,7 @@ toc:
 :::{grid-item-card} 政府および公共部門
 :link: ./what-challenges-does-liferay-solve-industry-solutions/government-and-public-sector.md
 
-政府と公共部門におけるLiferay
+政府および公共部門におけるLiferay
 :::
 
 :::{grid-item-card} 保険
@@ -76,9 +76,9 @@ toc:
 ヘルスケアにおけるLiferay
 :::
 
-:::{grid-item-card} エネルギー産業と公益事業
+:::{grid-item-card} エネルギー産業および公益事業
 :link: ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.mdd
 
-エネルギー産業と公益事業におけるLiferay
+エネルギー産業および公益事業におけるLiferay
 :::
 ::::

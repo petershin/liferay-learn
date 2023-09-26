@@ -14,8 +14,8 @@ toc:
 * Liferay 認証は、スタンドアロンで自己完結型の顧客アプリケーションには十分です。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf)からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) からダウンロードしてください。
 ```
 
 ## 背景

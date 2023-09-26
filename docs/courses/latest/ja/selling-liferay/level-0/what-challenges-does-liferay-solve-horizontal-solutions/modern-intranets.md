@@ -44,4 +44,4 @@
 
 こちらで最後のセクションとなります。
 
-Liferayのターゲットとなる[業界ソリューション](../what-challenges-does-liferay-solve-industry-solutions.md)についてはこちら。
+次：[Liferayが解決する課題：業界別ソリューション](../what-challenges-does-liferay-solve-industry-solutions.md)

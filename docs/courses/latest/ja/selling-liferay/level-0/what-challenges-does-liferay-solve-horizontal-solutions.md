@@ -11,7 +11,7 @@ toc:
 
 **概要**
 
-* Liferayは、次のような水平ソリューションに最適である
+* Liferayは、次のような水平ソリューションに最適です。
   * カスタマーポータル
   * デジタルコマースサイト
   * 外部Webサイト
@@ -19,8 +19,8 @@ toc:
   * パートナーポータル
   * 最新の社内ポータル
   * その他
-* 顧客は多くの場合、1つのプロジェクトから始めて、その後他のプロジェクトを追加する
-* これらのソリューションはいずれも、Liferayのコア機能の多くを利用している
+* 顧客は多くの場合、1つのプロジェクトから始めて、その後他のプロジェクトを追加します。
+* これらのソリューションはいずれも、Liferayのコア機能の多くを利用しています。
 
 ## 背景
 
@@ -56,7 +56,7 @@ toc:
 
 まずは、 カスタマーポータルから開始します。
 
-[　](./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md)
+次：[カスタマーポータル](./what-challenges-does-liferay-solve-horizontal-solutions/customer-portals.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3

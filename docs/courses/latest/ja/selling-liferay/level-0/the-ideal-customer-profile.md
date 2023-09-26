@@ -43,4 +43,4 @@ toc:
 
 まずは、Liferayがどこで能力を発揮しているか把握しておきましょう。
 
-[続きはこちら](./the-ideal-customer-profile/where-liferay-shines.md)
+[次：Liferayの適合性](./the-ideal-customer-profile/where-liferay-shines.md)

@@ -36,14 +36,14 @@ Liferay Objects はデータのコンテナと考えることができます。 
 オブジェクトドラフトを編集するには、次の手順に従います。
 
 1. オブジェクト管理ページから、新しく作成したオブジェクトのドラフトをクリックして、編集を開始します。 オブジェクトの機能と設定オプションは、［Details］、［Fields］、［Relationships］、［Layouts］、［Actions］、［Views］、［Validations］、［State Manager］のタブにまとめられています。
-1. カスタムフィールドを追加するには、 **Fields** タブをクリックします。 各フィールドは、特定のタイプの値を格納するためのデータベースカラムを表します。 [オブジェクトへのフィールドの追加](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects)を参照。 デフォルトでは、すべてのオブジェクトに次のシステムフィールド、［Author］、［Create Date］、［External Reference Code］、［ID］、［Modified Date］および［Status］が含まれます。
+1. カスタムフィールドを追加するには、 **Fields** タブをクリックします。 各フィールドは、特定のタイプの値を格納するためのデータベースカラムを表します。 [オブジェクトへのフィールドの追加](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects) を参照。 デフォルトでは、すべてのオブジェクトに次のシステムフィールド、［Author］、［Create Date］、［External Reference Code］、［ID］、［Modified Date］および［Status］が含まれます。
 1. オブジェクト・スコープを「会社」にする。 オブジェクトは、オブジェクトのデータがどのように保存されるかを決定する。
     * **Company**（デフォルト）：Company によってスコープされた場合、オブジェクトのデータは Liferay インスタンスごとに保存されます。
     * **Site** : Site によってスコープされた場合、オブジェクトのデータは Site ごとに保存されます。
-1. オブジェクトのページ・ウィジェットを表示する。 有効になっている間、オブジェクトのウィジェットをサイトページに追加できます。 [サイトにおけるオブジェクト・ウィジェットの展開](https://learn.liferay.com/w/dxp/building-applications/objects/deploying-object-widgets-to-sites)を参照。
+1. オブジェクトのページ・ウィジェットを表示する。 有効になっている間、オブジェクトのウィジェットをサイトページに追加できます。 [サイトにおけるオブジェクト・ウィジェットの展開](https://learn.liferay.com/w/dxp/building-applications/objects/deploying-object-widgets-to-sites) を参照。
 1. ［Save］をクリックします。
 
-設定と編集が終わると、オブジェクトは [](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects)にパブリッシュできる。
+設定と編集が終わると、オブジェクトは [](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) にパブリッシュできる。
 
 Liferayは、Liferay UIや開発者がすぐに使用できるObjectの要素を大量に作成しているからです。 公開プロセスには、次の操作が含まれます。
 
@@ -89,7 +89,7 @@ LiferayオブジェクトはFormsアプリケーションと統合されてい�
 * ヘッドレスAPIの一般的な使用例は、オブジェクト用のカスタムJavaScriptクライアント拡張UIを開発することです。
 * ヘッドレスAPIは、外部システムとオブジェクトの統合を可能にするために使用することもできる。
 
-LiferayのヘッドレスAPI全般についての詳細は [Consuming REST Services](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#consuming-rest-services)を参照してください。
+LiferayのヘッドレスAPI全般についての詳細は [Consuming REST Services](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#consuming-rest-services) を参照してください。
 
 ## 高度な機能
 

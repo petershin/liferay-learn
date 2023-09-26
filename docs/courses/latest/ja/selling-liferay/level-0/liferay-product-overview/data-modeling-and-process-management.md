@@ -6,13 +6,13 @@
 
 ## オブジェクト
 
-* [オブジェクト概要](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [チュートリアル](https://learn.liferay.com/w/dxp/building-applications/objects/objects-tutorials)
+* [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [オブジェクトのチュートリアル](https://learn.liferay.com/w/dxp/building-applications/objects/objects-tutorials)
 
 ## フォーム
 
 * [オブジェクトでフォームを使用する](https://learn.liferay.com/w/dxp/building-applications/objects/using-forms-with-objects)
-* [フラグメントでフォームを構築する](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms)
+* [フラグメントを使用してフォームを構築する](https://learn.liferay.com/w/dxp/building-applications/objects/using-fragments-to-build-forms)
 * [フォームの概要](https://learn.liferay.com/w/dxp/process-automation/forms/introduction-to-forms)
 
 ## ワークフロー

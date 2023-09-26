@@ -82,7 +82,7 @@ Liferayのモジュール式のアーキテクチャには、動的に拡張し�
 
 　 最初はAdobe社です。
 
-[続きはこちら](./main-competitors-faced-by-liferay/adobe.md)
+次：[Adobe社](./main-competitors-faced-by-liferay/adobe.md)
 
 ::::{grid} 2
 :gutter: 3 3 3 3

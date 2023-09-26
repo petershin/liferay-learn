@@ -25,7 +25,7 @@ Liferay Objects はデータのコンテナと考えることができます。 
     3. **オブジェクト名** : オブジェクトの定義名を決定し、オブジェクトが公開されると変更できません。
 4. **Save** をクリックする。
 
-保存されると、設定やデータ要素のない空白のオブジェクトドラフトが作成されます。 オブジェクト・ドラフトは、オブジェクト管理UIでシステム・オブジェクトと一緒に見ることができる。 作成プロセスを終了するには、オブジェクトドラフトを [](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p **l** back **url=%2Fsearch%3Fq%3DObjects&highlight=Objects#editing-object-drafts) に編集し、 [](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p** l **back** url=%2Fsearch%3Fq%3DObjects&highlight=Objects#publishing-object-drafts) を Liferay インスタンスに公開する必要があります。
+保存されると、設定やデータ要素のない空白のオブジェクトドラフトが作成されます。 オブジェクト・ドラフトは、オブジェクト管理UIでシステム・オブジェクトと一緒に見ることができる。 作成プロセスを終了するには、オブジェクトドラフトを [編集済み](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects#editing-object-drafts) に編集し、 [出版](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects#publishing-object-drafts) を Liferay インスタンスに公開する必要があります。
 
 ## オブジェクトの編集と公開
 
@@ -43,7 +43,7 @@ Liferay Objects はデータのコンテナと考えることができます。 
 1. オブジェクトのページ・ウィジェットを表示する。 有効になっている間、オブジェクトのウィジェットをサイトページに追加できます。 [サイトにおけるオブジェクト・ウィジェットの展開](https://learn.liferay.com/w/dxp/building-applications/objects/deploying-object-widgets-to-sites) を参照。
 1. ［Save］をクリックします。
 
-設定と編集が終わると、オブジェクトは [](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) にパブリッシュできる。
+設定と編集が終わると、オブジェクトは [出版](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) にパブリッシュできる。
 
 Liferayは、Liferay UIや開発者がすぐに使用できるObjectの要素を大量に作成しているからです。 公開プロセスには、次の操作が含まれます。
 

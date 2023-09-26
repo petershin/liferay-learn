@@ -79,7 +79,7 @@ Liferay Objectsのデモを始める前に、様々な機能が提供されて�
 
 どのようなデモでも、現実的なビジネス・アプリケーションを念頭に置くことが重要であり、理想的には見込み客とのセッションが始まる前にデモに加えることである。 Liferay Objectの用語では、オブジェクトを構築し、ルック＆フィールを構築し、表示ページを構築することを意味します。
 
-その他、カバー・フォームやフォーム・コンテナについても説明する。 フォームコンテナは比較的新しい機能で、オブジェクトエントリーのデータキャプチャUIを作成するのに役立ちます。 フォームコンテナに関するドキュメントはこちら [](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms) をご覧ください。
+その他、カバー・フォームやフォーム・コンテナについても説明する。 フォームコンテナは比較的新しい機能で、オブジェクトエントリーのデータキャプチャUIを作成するのに役立ちます。 フォームコンテナに関するドキュメントはこちら [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms) をご覧ください。
 
 **オブジェクト表示ページ**
 

@@ -85,19 +85,19 @@ toc:
 :link: ./outbound-prospecting/email.md
 
 :::
-::：{grid-item-card} 電話
+::: {grid-item-card} 電話
 :link: ./outbound-prospecting/phone.md
 
 :::
-::：{grid-item-card} データエンリッチメント
+::: {grid-item-card} データエンリッチメント
 :link: ./outbound-prospecting/data-enrichment.md
 
 :::
-::：{grid-item-card} ソーシャルメディア
+::: {grid-item-card} ソーシャルメディア
 :link: ./outbound-prospecting/social-media.md
 
 :::
-::：{grid-item-card} 永続性 & 測定
+::: {grid-item-card} 永続性 & 測定
 :link: ./outbound-prospecting/persistence-measurement.md
 
 :::

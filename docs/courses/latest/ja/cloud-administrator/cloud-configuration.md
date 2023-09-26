@@ -27,7 +27,7 @@ LXC で変更をデプロイするためにクラウド コンソールをセッ
 
 また、別の `infra` 環境に [CI サービス](https://learn.liferay.com/w/liferay-cloud/platform-services/continuous-integration) があり、他の環境用に作成またはデプロイしたビルドを制御している。
 
-LXC-SM プロジェクトにおけるあなたの責任については、 [](https://help.liferay.com/hc/ja/articles/360059798531-DXP-Cloud-Shared-Activities) を参照してください。
+LXC-SM プロジェクトにおけるあなたの責任については、 [こちら](https://help.liferay.com/hc/ja/articles/360059798531-DXP-Cloud-Shared-Activities) を参照してください。
 
 LXC-SMでは、特定のニーズに従って環境を構成し、管理するのはあなたの責任です。 ここでは、以下の方法を学ぶことができる。
 

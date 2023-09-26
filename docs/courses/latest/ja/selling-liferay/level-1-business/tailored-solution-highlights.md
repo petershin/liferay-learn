@@ -89,7 +89,8 @@ Liferayの水平ポータルレガシーは、複数の業界にわたる多く�
 :link: ./tailored-solution-highlights/customer-portals.md
 
 :::
-::：{grid-item-card} デジタルコマースサイト
+
+::: {grid-item-card} デジタルコマースサイト
 :link: ./tailored-solution-highlights/digital-commerce-sites.md
 
 :::

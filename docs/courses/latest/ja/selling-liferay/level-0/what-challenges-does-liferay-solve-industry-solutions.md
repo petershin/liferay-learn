@@ -77,7 +77,7 @@ toc:
 :::
 
 :::{grid-item-card} エネルギー産業および公益事業
-:link: ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.mdd
+:link: ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
 
 エネルギー産業および公益事業におけるLiferay
 :::

@@ -43,10 +43,10 @@ Follow these steps:
 
 1. Click *Save*.
 
-After saving fields to an object draft, you can access additional configuration options. For instance, you can determine whether a field is searchable, limit the number of allowed characters for text fields, and more. Available configuration options depend on the field's type. If you publish the draft or add fields to an already published object, configuration options are restricted. See [Configuration Restrictions for Published Objects](../creating-objects.md#configuration-restrictions-for-published-objects) to learn more.
+After saving fields to an object draft, you can access additional configuration options. For instance, you can determine whether a field is searchable, limit the number of allowed characters for text fields, and more. Available configuration options depend on the field's type. If you publish the draft or add fields to an already published object, configuration options are restricted. You can remove custom fields from objects at any time.
 
 ```{important}
-You can remove fields from object drafts at any time. However, you cannot remove published fields. After publishing, you can only remove fields added to the object's side table (i.e., `[Initial_Table_Name]_x`). See [Publishing Object Drafts](../creating-objects.md#publishing-object-drafts) for more information.
+For Liferay 7.4 U85/GA85 and earlier versions, users cannot remove published fields. After publishing, you can only remove fields added to the object's side table (i.e., `[Initial_Table_Name]_x`). See [Publishing Object Drafts](../creating-objects.md#publishing-object-drafts) for more information.
 ```
 
 ## Field Types UI Reference

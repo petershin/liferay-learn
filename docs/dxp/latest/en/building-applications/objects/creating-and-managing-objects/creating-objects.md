@@ -133,10 +133,6 @@ Follow these steps to edit the object draft:
 
    While enabled, Liferay keeps a history of entry events that you can view in the Audit application or via REST API calls. See [Auditing Object Definition Events](./auditing-object-definition-events.md).
 
-   ```{important}
-   For 7.4 U72+/GA72+, you can configure this setting at any time. For prior versions, you can only configure this setting before publishing.
-   ```
-
 1. Click *Save*.
 
 Once you've finished configuring and editing the draft, you can [publish](#publishing-object-drafts) it.
@@ -167,20 +163,19 @@ The publishing process includes the following operations:
 
 ### Configuration Restrictions for Published Objects
 
-{bdg-secondary}`For 7.4 U26+/GA26+`
+{bdg-secondary}`For 7.4 U86+/GA86+`
 
-To prevent data loss and system conflicts, some configuration options are removed for objects after publishing.
+To prevent data loss and system conflicts, Liferay restricts these configuration options for object definitions after publishing:
 
-* The name and scope of a published object cannot be changed.
+* Name
+* Scope
+* Account Restriction (if enabled)
+* Entry Translation
 
-* Any fields included in an object at the time of publishing cannot be removed.
-
-* Most configuration options for published fields and relationships cannot be changed.
-
-You can still edit and localize labels for objects, fields, and relationships after publishing, but most configuration options are removed. For objects, you can change the Panel Link as well as add new fields, relationships, and layouts. For relationships, you can configure its Deletion Type.
+Liferay also restricts some custom field options (e.g., mandatory, unique values).
 
 ```{note}
-For Liferay 7.4 U25/GA25 and earlier versions, users cannot delete published object definitions or remove relationships included in an object at the time of publishing.
+For Liferay 7.4 U85/GA85 and earlier versions, users cannot delete fields included in the object definition at the time of publishing.
 ```
 
 ## Related Topics

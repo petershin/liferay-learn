@@ -18,15 +18,13 @@ This module walks through configuring the site settings for the public Delectabl
 * The site's email domain
 * The accessibility menu
 
-This site will replace the Liferay home site that exists out-of-the-box, so some of the basic settings must be changed in your *instance settings*. The first step is to change those instance settings to repurpose the site for Delectable Bonsai.
-
 As you make these changes, you'll navigate with these menus:
 
 ![The Control Menu, Global Menu, and Site Menu are all key parts of the interface you'll use to change your site's settings.](./site-settings/images/01.png)
 
 * The **Control Menu** is the bar at the top of the screen, which includes context-specific controls for the page you're on. For example, on a site that you have administrative permissions for (like the image above), you can see buttons to edit ( ![Edit icon](../images/icon-edit.png) ) or configure ( ![Configure icon](../images/icon-cog.png) ) the page. It also includes the button to show or hide the Site Menu ( ![Site Menu icon](../images/icon-product-menu-open.png) ) and the Global Menu ( ![Global Menu icon](../images/icon-applications-menu.png) ). If you don't have permission to view the Control Menu menu, you can't access either of these other menus.
 
-* The **Global Menu** ( ![Global Menu icon](../images/icon-applications-menu.png) ) is a group of menus that you can switch between with the tabs at the top: the *Applications Menu*, the *Commerce Menu*, and the *Control Panel*. You can also switch to a different site context via the options on the right.
+* The **Global Menu** ( ![Global Menu icon](../images/icon-applications-menu.png) ) is a group of menus that you can switch between with the tabs at the top: the *Applications Menu*, the *Commerce Menu*, and the *Control Panel*. You can also switch to a different site context via the links on the right.
 
 ![The Global Menu incorporates the Applications Menu, Commerce Menu, and Control Panel.](./site-settings/images/02.png)
 
@@ -34,4 +32,8 @@ As you make these changes, you'll navigate with these menus:
 
 ![You must have permission to see each specific menu option in the Site Menu.](./site-settings/images/03.png)
 
-Once you're familiar with these menus, it's time to start changing your site's settings. [Let's Go!](./site-settings/changing-the-default-sites-name-and-logo.md)
+Once you're familiar with these menus, it's time to start changing your site's settings.
+
+The new public site replaces the Liferay home site that exists out-of-the-box, so some of the basic settings must be changed in your *instance settings*. The first step is to change those instance settings to repurpose the site for Delectable Bonsai.
+
+[Let's Go!](./site-settings/changing-the-default-sites-name-and-logo.md)

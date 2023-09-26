@@ -5,9 +5,9 @@ uuid: 5f0ba6e5-f3ed-42be-9dac-78e3d3dcb889
 
 Now that you've made the first changes to the Delectable Bonsai site, you're ready to change more site-specific settings.
 
-Since the instance settings changes are done, Kyle doesn't need to make the rest of the changes himself. Log out and log back in as your public site administrator before you begin.
+Since the instance settings changes are done, Kyle doesn't need to make the rest of the changes himself. Log out and log back in as NAME NAME, your public site administrator, before you begin.
 
-<!-- The public site administrator should be a defined user that was imported by Makoto. If you don't have one, I think Makoto has a spreadsheet of character names you can use to make one. When you have one, give the info and the permissions needed to Makoto so he can add it to his import routine. -Rich --> 
+<!-- TODO: update with the actual public site administrator's name once it's been added to the imported users -->
 
 ## Add a Site Description
 

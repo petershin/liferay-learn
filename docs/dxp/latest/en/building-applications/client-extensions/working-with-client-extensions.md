@@ -191,58 +191,54 @@ Then copy the archives from each project's `dist/` folder into the server's `[Li
 
 ## Context-Sensitive Information
 
-Client extensions are designed to be portable such that they should never contain environment specific details such as DXP's domain names, their own network address, domain name, and so on in their configuration or source code. With that being the case, how is a client extension supposed to find context-sensitive information about it's runtime environment, particularly the details about the DXP Virtual Instance it is associated with?
+Client extensions are designed to be portable: you should never hard-code environment specific details such as their domain name, their network address, or Liferay's domains. So how does a client extension find context-sensitive information about its Liferay DXP runtime context?
 
-At runtime every client extension workload is automatically provided with a set of ___routes___ containing context-sensitive metadata about DXP in addition to other important context-sensitive information.
+At runtime, every client extension workload is automatically provided with a set of *routes* containing important context-sensitive metadata. With this routes-based approach, application logic can uniformly retrieve context sensitive information, regardless of where it is invoked, and you never have to hard-code this information. You only need to point your client extension projects to it.
 
-### Routes (a.k.a. _`config tree`_)
+### Routes
 
-A ___route___ is defined as a directory structure which forms a set of key/value pairs where file names are the keys, file contents are the values, the directory structure is ignored and the directory path is the value of an environment variable provided to the client extension workload.
+A *route* is a directory structure which contains a set of key/value pairs, where file names are the keys, and the file contents are the values. The directory structure is ignored and the directory path is the value of an environment variable. It follows the same pattern as [Kubernetes configMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-volume).
 
-There are two types of routes each having its own environment variable:
+The environment variable you use can point to one of two types of routes:
 
-- `LIFERAY_ROUTES_DXP` - This environment variable contains the directory path to the route which contains context-sensitive metadata specific to the __DXP Virtual Instance__ to which the client extension workload is associated (a.k.a. is _deployed_).
+* `LIFERAY_ROUTES_DXP`: The directory path to the route with context-sensitive metadata for the *Liferay virtual instance* you deploy it to.
 
-  The following is an example of the `LIFERAY_ROUTES_DXP` route:
+   Here is an example of the `LIFERAY_ROUTES_DXP` route:
 
-  ```shell
-  .
-  # Newline separated list of every domain belonging to the DXP virtual instance
-  ├── com.liferay.lxc.dxp.domains
-  # The primary domain ("Virtual Host" field) of the DXP virtual instance
-  ├── com.liferay.lxc.dxp.main.domain
-  # The protocol with which to communicate with DXP virtual instance (http or https)
-  └── com.liferay.lxc.dxp.server.protocol
-  ```
+   ```shell
+   .
+   # A newline-separated list of every domain belonging to the DXP virtual instance
+   ├── com.liferay.lxc.dxp.domains
+   # The primary domain ("Virtual Host" field) of the DXP virtual instance
+   ├── com.liferay.lxc.dxp.main.domain
+   # The protocol with which to communicate with DXP virtual instance (http or https)
+   └── com.liferay.lxc.dxp.server.protocol
+   ```
 
-- `LIFERAY_ROUTES_CLIENT_EXTENSION` - This environment variable contains the directory path to the route which contains context-sensitive metadata specific to the __client extension workload__ itself.
+* `LIFERAY_ROUTES_CLIENT_EXTENSION`: The directory path to the route which contains context-sensitive metadata for the *client extension project* itself.
 
-  For examples see:
-  - [OAuth Headless Server Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationheadlessserver)
-  - [OAuth User Agent Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationuseragent)
+   See [OAuth Headless Server Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationheadlessserver) and [OAuth User Agent Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationuseragent) for examples.
 
-### Routes in Liferay Experience Cloud
+### Pointing to Routes in Liferay Experience Cloud
 
-Client extension workloads (containers) in Liferay Experience Cloud have these environment variables set automatically and these routes are automatically mounted into the containers at the path defined by the environment variables.
+Containers in Liferay Experience Cloud have these environment variables set automatically. The routes are automatically mounted into the containers at the paths the environment variables define.
 
-### Routes On-Premises
+### Pointing to Routes in Self-Hosted Environments
 
-For on-premises applications routes are emitted by DXP in `${liferay.home}/routes/<virtualInstanceId|'default'>`. Route paths will take a form specific to each environment variable:
+For self-hosted applications, Liferay automatically provides default values for these environment variables, for `Exec`, `JavaExec`, and `NodeExec` Gradle tasks. It uses these default values:
 
-- `LIFERAY_ROUTES_DXP` - the route path for this environment variable must take the form
+| **Environment variable**          | **Default value**                                               |
+| :-------------------------------- | :-------------------------------------------------------------- |
+| `LIFERAY_ROUTES_DXP`              | `[Liferay Home]/routes/default/dxp`                             |
+| `LIFERAY_ROUTES_CLIENT_EXTENSION` | `[Liferay Home]/routes/default/[Client extension project name]` |
 
-  `${liferay.home}/routes/<virtualInstanceId|'default'>/dxp`
+The environment variables use the `liferay.workspace.home.dir` property in your Liferay workspace for your Liferay home directory, and `default` to indicate your Liferay instance's default virtual instance. Define these environment variables with a specific virtual instance ID instead of `default` to point to it instead.
 
-- `LIFERAY_ROUTES_CLIENT_EXTENSION` - the _route_ path for this environment variable must take the form
+```{note}
+If you have a Lifeary workspace version prior to 9.0.2, you *must* define these environment variables yourself, following the same form.
+```
 
-  `${liferay.home}/routes/<virtualInstanceId|'default'>/<clientExtensionProjectName>`
-
-
-These two environment variables must be provided to client extension processes when they are invoked in order to have access to the metadata.
-
-### Uniform Application Logic for Routes
-
-With this routes based approach application logic can retrieve context sensitive information in a uniform way regardless of where it is invoked and never has to hard code this information.
+These two environment variables must be provided to client extension processes when they are invoked in order to access the metadata.
 
 ## Related Topics
 

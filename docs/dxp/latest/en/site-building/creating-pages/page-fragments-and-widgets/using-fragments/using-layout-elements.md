@@ -5,7 +5,7 @@ uuid: ea588e15-3ace-4843-a66b-8d3f61f86f27
 
 {bdg-secondary}`For Liferay 7.4 U22+/GA22+`
 
-Layout Elements define drop zones for designing page or template layouts. By default, Liferay includes two Layout Elements: [Containers](#containers) and [Grids](#grids). Once added, you can drag and drop widgets or other fragments into these drop zones, including additional containers or grids to create even more complex layouts. After designing a layout, you can save layout compositions to reuse them in other pages and templates. See [Saving Fragment Compositions](./saving-fragment-compositions.md) for more information.
+Layout elements define drop zones for designing page or template layouts. By default, Liferay includes two layout elements: [containers](#containers) and [grids](#grids). Once added, you can drag and drop widgets or other fragments into these drop zones, including additional containers or grids to create even more complex layouts. After designing a layout, you can save layout compositions to reuse them in other pages and templates. See [Saving Fragment Compositions](./saving-fragment-compositions.md) for more information.
 
 ![The container and grid fragments are for designing page layouts.](./using-layout-elements/images/01.png)
 

@@ -13,10 +13,10 @@ page-fragments-and-widgets/using-fragments.md
 page-fragments-and-widgets/using-widgets.md
 ```
 <!--TASK: Develop into-->
-Liferay provides Page Fragments and Widgets for building Site Pages and Page Templates.
+Liferay provides page fragments and widgets for building site pages and page templates.
 
 ```{note}
-Fragments cannot be used in Widget Pages. They are only available in Content Pages, Master Page Templates, Page Templates, and Display Page Templates.
+Fragments cannot be used in widget pages. They are only available in content pages, master page templates, page templates, and display page templates.
 ```
 
 ```{raw} html

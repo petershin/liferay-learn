@@ -51,21 +51,21 @@ You can place these fields on a structure:
 If you upload an image from your computer, the image is only available for that particular article.
 ```
 
-**Link to Page:** A selector to include a link to another page in the same Site.
+**Link to Page:** A selector to include a link to another page in the same site.
 
-**Multiple Selection:** A list of options to choose from using a checkbox list. This field allows multiple selection.
+**Multiple Selection:** A list of options to choose from using a checkbox list. This field allows multiple selections.
 
-**Numeric:** An input that accepts integer or decimal numbers based on the selected numeric type. Non-numeric input is not accepted.
+**Numeric:** A field that accepts integer or decimal numbers based on the selected numeric type. Non-numeric input is not accepted.
 
 **Rich Text:** A WYSIWYG editor to offer more formatting options for writing content.
 
-**Select from List:** A selection of options to choose from using a drop-down list. This field allows multiple selection, if set by the user.
+**Select from List:** A selection of options to choose from using a drop-down list. This field optionally allows multiple selections.
 
 **Separator:** A horizontal line to separate fields.
 
 **Single Selection:** A list of options to choose from using radio buttons. This field allows one selection only.
 
-**Text:** A text input for short entries, such as titles or headings.
+**Text:** A text field for short entries, such as titles or headings.
 
 **Upload:** A file selector to include a file from the documents and media library or your computer.
 
@@ -80,7 +80,7 @@ You can add a translation for the structure, either while creating it or later.
 ![Manage the translations of a Web Content Structure.](./creating-structures/images/02.png)
 
 1. From the Add or Edit Structure screen, open the language selector by clicking the locale (e.g.,`en-us`), and then select *Manage Translations*.
-1. Click *Add* ( ![Add icon](../../../images/icon-add.png) ) in the manage translations modal and choose the language.
+1. Click *Add* ( ![Add icon](../../../images/icon-add.png) ) in the Manage Translations modal and choose the language.
 1. Click *Done*.
 1. Click the default locale again and select the new locale to begin translating.
 1. Translate as much of the Structure's text as you'd like, then click *Save*.
@@ -89,7 +89,7 @@ To delete a translation, go back to the Manage Translations modal and click *Tra
 
 To edit a translation, select the translation using the language selector, make any changes, and click *Save*.
 
-## Related Information
+## Related Topics
 
 * [Understanding Web Content Structures](./understanding-web-content-structures.md)
 * [Configuring Structure Fields](./configuring-structure-fields.md)

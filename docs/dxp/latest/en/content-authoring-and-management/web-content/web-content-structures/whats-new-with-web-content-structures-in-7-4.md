@@ -5,7 +5,7 @@ uuid: f69fd720-0df2-4a33-8aeb-ebaa3e0bcfdf
 
 As of Liferay 7.4, web content structures have been migrated from using Dynamic Data Mapping (DDM) to Data Engine (DE) as the back-end framework for building forms.
 
-![Web content structures are built using a form builder backed by the Data Engine framework.](./whats-new-with-web-content-structures-in-7-4/images/04.png)
+![Web content structures are built using a form builder backed by the Data Engine framework.](./whats-new-with-web-content-structures-in-7-4/images/01.png)
 
 The Data Engine framework brings new changes and enhancements to web content structures.
 
@@ -31,21 +31,26 @@ Structures backed by DDM could include child structures that inherited all the p
 
 - If a fieldset or structure is being used in web content, editing produces a warning to users:
 
-   ![Be careful editing structures and fieldsets with content references.](./whats-new-with-web-content-structures-in-7-4/images/09.png)
+   ![Be careful editing structures and fieldsets with content references.](./whats-new-with-web-content-structures-in-7-4/images/02.png)
 ```
 
 To work with fieldsets,
 
 1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
+
 1. Select the *Structures* tab.
-1. Click the *Add button* ( ![Add Structure](../../../images/icon-add.png) ) to create a new structure.
+
+1. Click *Add* ( ![Add Structure](../../../images/icon-add.png) ) to create a new structure.
+
 1. In the web content structure form builder view ( ![Form Builder Icon](../../../images/icon-builder.png) ), click the *Fieldsets* tab.
+
 1. Click *Create New Fieldset*. Name the fieldset.
+
 1. Add and configure its fields. Click *Save*.
 
-![Use structures or dedicated fieldsets in your structure.](./whats-new-with-web-content-structures-in-7-4/images/07.png)
+![Use structures or dedicated fieldsets in your structure.](./whats-new-with-web-content-structures-in-7-4/images/03.png)
 
-When you begin creating a new structure, any existing fieldset or structure can be selected in the Fieldsets tab. The basic web content structure is included as a fieldset out-of-the-box.
+When you begin creating a new structure, any existing fieldset or structure can be selected in the Fieldsets tab. The basic web content structure is included as an out-of-the-box fieldset.
 
 ## Structure Definition Source Changes
 
@@ -58,38 +63,48 @@ Be careful working with the JSON structure source as it can be more complicated 
 ### Exporting a Structure's JSON
 
 1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
+
 1. Click the *Structures* tab.
-1. If there's no existing structure, create one and save it.
-1. In the main structures list view, open the structure's *Actions* menu ( ![Actions Button](../../../images/icon-actions.png) ) and click *Export as JSON*.
+
+1. If there's no existing structure, [create one](./creating-structures.md) and save it.
+
+1. In the main structures list view, open the structure's *Actions* menu ( ![Actions menu](../../../images/icon-actions.png) ) and click *Export as JSON*.
 
 ### Importing a Structure's JSON to Overwrite an Existing Structure
 
 To overwrite an existing structure's JSON,
 
 1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
+
 1. Click the *Structures* tab.
-1. If there's no existing structure, create one and save it.
-1. In the main structures list view, open the structure's *Actions* menu ( ![Actions Button](../../../images/icon-actions.png) ) and click *Import and Override*.
+
+1. If there's no existing structure, [create one](./creating-structures.md) and save it.
+
+1. In the main structures list view, open the structure's *Actions* menu ( ![Actions menu](../../../images/icon-actions.png) ) and click *Import and Override*.
+
 1. Upload the JSON file.
 
-![Export and import the JSON of a web content structure.](./whats-new-with-web-content-structures-in-7-4/images/01.png)
+![Export and import the JSON of a web content structure.](./whats-new-with-web-content-structures-in-7-4/images/04.png)
 
 ### Importing a Structure's JSON to Create a New Structure
 
 To import a new structure,
 
 1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*.
+
 1. Click the *Structures* tab.
+
 1. Open the *Options* menu ( ![Options Button](../../../images/icon-actions.png) ) for web content in the upper right corner of the screen.
+
 1. Click *Import Structure*.
 
-   ![Import JSON structure files.](./whats-new-with-web-content-structures-in-7-4/images/02.png)
+   ![Import JSON structure files.](./whats-new-with-web-content-structures-in-7-4/images/05.png)
 
 ## Flexible Structure Layout
 
 Previously, structure fields could be ordered on the form and nested to create a hierarchical view of the form. The Data Engine representation of the structure adds the ability to define columns.
 
-![Create a structure with two columns per row.](./whats-new-with-web-content-structures-in-7-4/images/08.png)
+![Create a structure with two columns per row.](./whats-new-with-web-content-structures-in-7-4/images/06.png)
 
 Add two form fields next to each other in the structure builder and drag the edge of a field to resize the columns.
 
@@ -131,4 +146,4 @@ To add a custom structure key to the [exported JSON](#structure-definition-sourc
 
 1. [Import](#importing-a-structures-json-to-create-a-new-structure) the structure definition file and verify that the key was imported by checking in the Properties tab.
 
-   ![The Properties tab shows the structure key, whether it's a custom key or autogenerated by Liferay.](./whats-new-with-web-content-structures-in-7-4/images/11.png)
+   ![The Properties tab shows the structure key, whether it's a custom key or autogenerated by Liferay.](./whats-new-with-web-content-structures-in-7-4/images/07.png)

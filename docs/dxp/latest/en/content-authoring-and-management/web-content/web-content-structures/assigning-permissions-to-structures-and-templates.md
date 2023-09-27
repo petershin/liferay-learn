@@ -7,12 +7,13 @@ Web content structures and templates provide direct access to Liferay's API. To 
 
 As a best practice, define two different roles with access to web content structures and templates:
 
-* **Content Developer:** Users with this role have permission to create and edit web content structures or templates.
-* **Content Creator:** Users with this role have permission to view web content structures or templates, so they can use them to create content.
+1. **Content Developer:** Users with this role have permission to create and edit web content structures or templates.
+
+1. **Content Creator:** Users with this role have permission to view web content structures or templates, so they can use them to create content.
 
 For information about how to create roles, see [Creating and Managing Roles](../../../users-and-permissions/roles-and-permissions/creating-and-managing-roles.md).
 
-Consider the following information when you assign permissions to web content structures or templates:
+Consider the information below when you assign permissions to web content structures or templates:
 
 * Determine if your roles must have global permissions for all web content structures or templates across the Liferay DXP instance, or only for specific sites.
 * The View permission only allows users to view web content structures or templates.
@@ -54,7 +55,7 @@ You can disable template creation completely. Once disabled, users can no longer
 
 See [Defining Role Permissions](../../../users-and-permissions/roles-and-permissions/defining-role-permissions.md) for more information on configuring permissions.
 
-## Related Information
+## Related Topics
 
 * [Creating Structures](./creating-structures.md)
 * [Configuring Structure Fields](./configuring-structure-fields.md)

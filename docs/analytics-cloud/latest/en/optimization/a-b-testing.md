@@ -3,7 +3,7 @@ uuid: 551f4c6e-7cc4-4b94-b46f-681f15d265a0
 ---
 # A/B Testing
 
-A/B Testing evaluates the effectiveness of content pages by testing multiple versions of the page at once. This process involves creating page variants, testing them with a metric (e.g., clicks), and publishing the most effective variant. These tests can help you choose the best experience for your site's users.
+A/B Testing evaluates the effectiveness of content pages by testing two versions of a page at once. This process involves creating a page variant, testing them with a metric (e.g., clicks), and publishing the most effective variant. These tests can help you choose the best experience for your site's users.
 
 You can learn more about creating an A/B test and configuring it for a content page in Liferay DXP's [A/B Testing documentation](https://learn.liferay.com/dxp/latest/en/site-building/optimizing-sites/ab-testing/ab-testing.html).
 
@@ -15,8 +15,8 @@ For drafted A/B tests, you can configure these details:
 
 * Target: the experience and user segment.
 * Metric: the goal to track (e.g., bounce rate or click).
-* Variants: the page variants for users to interact with.
-* Traffic Split: the percentage of visitors randomly split between the variants.
+* Variant: the page variant for users to interact with.
+* Traffic Split: the percentage of visitors randomly split between the original and the variant.
 * Confidence Level: the accuracy of the test results.
 
 ![This A/B test is configured and ready to run.](a-b-testing/images/02.png)
@@ -37,9 +37,9 @@ It also provides a quick summary of metric details and the current best performi
 
 ## Variant Report
 
-The Variant Report panel provides a detailed breakdown of variants and how well they're performing.
+The Variant Report panel provides a detailed breakdown of the variant and how well it is performing.
 
-![The Variant Report panel provides a detailed breakdown of variants and how well they're performing.](a-b-testing/images/04.png)
+![The Variant Report panel provides a detailed breakdown of the variant and how well it is performing.](a-b-testing/images/04.png)
 
 Below are the metrics reported for each variant:
 
@@ -49,7 +49,7 @@ Below are the metrics reported for each variant:
 
 **Improvement:** The relative improvement from the control group. This metric may also be known as lift. For example, assume the control page has a 15% retention rate and the variant page has a 16% retention rate. The improvement calculation would be `((16 - 15) / 15) = ~6.67%` improvement. This shows the impact of a change. If there is only a small improvement, it may not be worth implementing that change.
 
-**Probability to Win:** Predicts the likelihood that a variant will beat all other participating variants. This shows how multiple metrics compare to each other. For example, consider a horse racing event: each horse has a generated chance to win posted before a race (i.e., odds of winning), calculated by simulating the race thousands of times. This same method is used for your variants to calculate their probability of winning the A/B test.
+**Probability to Win:** Predicts the likelihood that the variant will beat the control. This shows how multiple metrics compare to each other. For example, consider a horse racing event: each horse has a generated chance to win posted before a race (i.e., odds of winning), calculated by simulating the race thousands of times. This same method is used for your variants to calculate their probability of winning the A/B test.
 
 **Unique Visitors:** The number of visitors contributing to the variant. A visitor randomly assigned a variant always sees the same variant until the end of the test. Besides knowing how much traffic is hitting a page, this metric also helps in determining configuration issues with the A/B test. For example, there could be too much traffic going to one variant (typically caused by a segment misconfiguration).
 
@@ -71,9 +71,9 @@ An A/B test is always characterized with a status after it starts. These include
 
 ### Test is Running
 
-This means that your test is running and needs a larger sample size before reaching the desired confidence level and declaring a winner. You can view the current best variant.
+This means that your test is running and needs a larger sample size before reaching the desired confidence level and declaring a winner. You can view the current results.
 
-![The test is running, though you can view the current best variant.](a-b-testing/images/06.png)
+![The test is running, though you can view the current results.](a-b-testing/images/06.png)
 
 When a test is running, you can terminate it by selecting *Terminate Test* from the Summary bar.
 
@@ -85,10 +85,10 @@ Large amounts of traffic (i.e. several thousand hits a day) is expected for an A
 
 ### Winner Declared
 
-Once your A/B test finishes successfully, a variant is declared a winner. For this state, you can perform these actions:
+Once your A/B test finishes successfully, a winner is declared (i.e. the variant or the control). From here, you can perform these actions:
 
-* Publish the winning variant as your default experience.
-* Complete the test without publishing any variants.
+* Publish the winner as your default experience.
+* Complete the test without publishing any changes.
 
 ![You can publish a winner after the completion of an A/B test.](a-b-testing/images/08.png)
 

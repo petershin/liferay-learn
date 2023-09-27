@@ -14,7 +14,7 @@ Before creating A/B tests, remember these things:
 
    ![When you configure a test without running it, the test is saved as a draft](./creating-ab-tests/images/05.png)
 
-To create the A/B test, [create the test](#creating-the-test) first, and then create one or more [test Variants](#creating-the-test-variant).
+To create the A/B test, [create the test](#creating-the-test) first, and then create a [test variant](#creating-the-test-variant).
 
 ```{important}
 Verify that your environment [meets the requirements](./verifying-ab-test-requirements.md) for A/B Testing before creating the test.
@@ -43,7 +43,7 @@ Verify that your environment [meets the requirements](./verifying-ab-test-requir
 
 ## Creating the Test Variant
 
-A test Variant is a customization of the Experience you want to optimize with A/B Testing. Each A/B Test must have at least one Variant.
+A test variant is a customization of the Experience you want to optimize with A/B Testing. Each A/B Test supports one variant.
 
 1. Open the A/B Test sidebar panel for your Content Page.
 1. If you selected the *Click* goal for the A/B Test, you must also select the element you want to test:
@@ -62,17 +62,17 @@ A test Variant is a customization of the Experience you want to optimize with A/
         ![Click the Set Element as Click Target button to select it](./creating-ab-tests/images/01.png)
 
          ```{note}
-         The click target element applies to the whole A/B Test and must be present in all Variants.
+         The click target element applies to the whole A/B Test and must be present in the variant.
          ```
 
 1. Under the *Variants* section, click *Create Variant*.
 1. Enter a name for the Variant and click *Save*.
-1. Click the *Edit* (![Edit icon](../../../images/icon-edit.png)) button next to the variant's name. The current Content Page opens in editing mode as the baseline for the Variant.
+1. Click the *Edit* (![Edit icon](../../../images/icon-edit.png)) button next to the variant's name. The current Content Page opens in editing mode as the baseline for the variant.
 
-1. Edit the Variant with the changes you want to test. For example, if you want to test different call-to-action text, update the button with the new text.
+1. Edit the variant with the changes you want to test. For example, if you want to test different call-to-action text, update the button with the new text.
 1. Click *Save Variant*.
 
-After creating your test and test Variant, you can [run the test](./running-and-monitoring-ab-tests).
+After creating your test and test variant, you can [run the test](./running-and-monitoring-ab-tests).
 
 ## Related Information
 

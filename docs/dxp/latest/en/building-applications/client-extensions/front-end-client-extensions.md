@@ -96,7 +96,7 @@ You can add this type of client extension as an option from *Client Extensions* 
 ```{note}
 The `clay.css` and `main.css` files must be hosted remotely to use this type of client extension.
 
-As this client extension fully replaces the default CSS contained in the theme, make sure to provide [Clay styling](https://clayui.com/docs/css/index.html) for any out-of-the-box widgets that are used by Liferay. Alternatively, to fix the styling of a particualr Liferay widget, wrap the widget in a container that includes the `cadmin` CSS class under the Advanced tab of the container element.
+As this client extension fully replaces the default CSS contained in the theme, make sure to provide [Clay styling](https://clayui.com/docs/css/index.html) for any out-of-the-box widgets that are used by Liferay. Alternatively, to fix the styling of a particular Liferay widget, wrap the widget in a container that includes the `cadmin` CSS class under the container element's Advanced tab.
 ```
 
 Specify a Theme CSS client extension in your `client-extension.yaml` file:

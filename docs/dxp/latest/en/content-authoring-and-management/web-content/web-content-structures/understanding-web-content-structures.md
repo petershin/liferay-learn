@@ -5,13 +5,13 @@ uuid: b0e28948-2c6e-4024-8d51-0b19da27dc41
 
 Web content structures are the building blocks for web content articles. They determine the information you can include when writing web content. Structures provide these key benefits:
 
-* Improve manageability for administrators of web content.
-* Ensure that web content articles contain the proper information.
-* Make it easier for users to create content.
+* Improve manageability for administrators of web content
+* Ensure web content articles contain the proper information
+* Make it easier for users to create content
 
 To understand these benefits, consider the example of an online news magazine. Each article must contain the same type of information: a title, a subtitle, an author, and one or more pages of text and images that comprise the body of the article.
 
-With only basic content creation, each author may submit articles with different types of information. For example, some authors may include a subtitle, while others may not. This requires the magazine editor to spend time reviewing the articles to make sure they contain the right information.
+With only basic content creation, each author could submit articles with different types of information. For example, some authors may include a subtitle, while others may not. This requires the magazine editor to spend time reviewing the articles to make sure they contain the right information.
 
 To solve this problem, the editor can provide a structure that defines the required information for each article, so writers know exactly what elements a complete article requires.
 
@@ -27,7 +27,7 @@ You drag-and-drop the elements into the structure, choosing the elements and ord
 
 Display page creators can then [map these fields](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) to [editable page fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md) to use custom styles and formatting.
 
-## Related Information
+## Related Topics
 
 * [Creating Structures](./creating-structures.md)
 * [Configuring Structure Fields](./configuring-structure-fields.md)

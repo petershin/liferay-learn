@@ -7,7 +7,7 @@ Pages on Liferay DXP are primarily used to display content and applications to u
 
 ## Page Sets
 
-When private pages are enabled, the site's pages are organized into two [page sets](../page-settings/configuring-page-sets.md): Public Pages and Private Pages.
+When private pages are enabled, the site's pages are organized into two [page sets](../page-settings/configuring-page-sets.md): public pages and private pages.
 
 ```{note}
 For Liferay 7.4 U22+ and GA22+, private pages are disabled for new installations. However, you can enable them if desired. See [Enabling Private Pages](#enabling-private-pages) for more information.
@@ -35,7 +35,7 @@ The page type of the currently viewed page appears at the top of the page to hel
 
 ### Content Pages
 
-Content pages enable users to build professional pages that can be easily managed and have their content edited in-line on the fly. Content pages are primarily built using [page fragments](../page-fragments-and-widgets/using-fragments.md), but also allow widgets.
+With content pages, users can build professional pages that can be easily managed and have their content edited in-line. Content pages are primarily built using [page fragments](../page-fragments-and-widgets/using-fragments.md), but they also allow widgets.
 
 ![Content pages can be composed of multiple fragments.](./understanding-pages/images/02.png)
 
@@ -45,7 +45,7 @@ Using content pages allows access to additional powerful features and benefits:
 * [A/B testing](../../optimizing-sites/ab-testing/ab-testing.md)
 * Approachable content and site building experience
 
-To learn more about content pages, see the [Using Content Pages](../using-content-pages.md). To jump right into building one, see [Adding Elements to Content Pages](../using-content-pages/adding-elements-to-content-pages.md).
+To learn more about content pages, see the [Using Content Pages](../using-content-pages.md). To start building one, see [Adding Elements to Content Pages](../using-content-pages/adding-elements-to-content-pages.md).
 
 ### Widget Pages
 
@@ -61,17 +61,17 @@ This table compares some of the distinctions between a content page and a widget
 
 | Feature                         |  Content Pages | Widget Pages |
 | :------------------------------ | :------------- |------------- |
-| Ability to add widgets          |    &#10004;    |   &#10004;   |
-| Personalized site experiences   |    &#10004;    |              |
-| Access to A/B testing           |    &#10004;    |              |
-| Easy layout and content editing |    &#10004;    |              |
-| Advanced custom layouts         |                |   &#10004;   |
-| User-customizable columns       |                |   &#10004;   |
-| Staging page variations         |                |   &#10004;   |
+| Ability to Add Widgets          |    &#10004;    |   &#10004;   |
+| Personalized Site Experiences   |    &#10004;    |              |
+| Access to A/B Testing           |    &#10004;    |              |
+| Easy Layout and Content Editing |    &#10004;    |              |
+| Advanced Custom Layouts         |                |   &#10004;   |
+| User-Customizable Columns       |                |   &#10004;   |
+| Staging Page Variations         |                |   &#10004;   |
 
 ### Other Page Types
 
-There are several other page types that are available - each can help to satisfy particular use cases. See [Other Page Types](../understanding-pages/other-page-types.md) for more information.
+There are several other available page types - each satisfies particular use cases. See [Other Page Types](../understanding-pages/other-page-types.md) for more information.
 
 ## Global Page Templates
 
@@ -97,7 +97,7 @@ You can navigate among pages of a site hierarchy with the site map application. 
 
 {bdg-secondary}`For Liferay 7.4 U22+ and GA22+`
 
-By default, new Liferay installations include a release feature flag that prevents users from creating private pages. If desired, follow these steps to enable private pages for your Liferay system:
+By default, new Liferay installations include a release feature flag that prevents users from creating private pages. Follow these steps to enable private pages for your Liferay system:
 
 1. Open the *Global Menu* ( ![Global menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *System Settings*.
 
@@ -109,9 +109,7 @@ By default, new Liferay installations include a release feature flag that preven
 
 1. Click *Save*.
 
-```{tip}
-If you ever want to disable private pages again, deselect *Disable Private Pages* and click *Update*.
-```
+   If you ever want to disable private pages again, deselect *Disable Private Pages* and click *Update*.
 
 ## Related Information
 

@@ -67,7 +67,7 @@ More information on Personalization and Segmentation and how to use the features
 Segmentation is not the only way to create personalized experiences. Liferay DXP offers other capabilities to personalize the user experience and the content shown on the pages, including:
 
 * Roles and permissions
-* Content recommendations
+* Product recommendations
 * Catalog and price personalization
 
 **Roles and Permissions**
@@ -76,11 +76,11 @@ Liferay provides sophisticated, granular [permissions](https://learn.liferay.com
 
 When talking about the potential to use Roles and Permissions to personalize Liferay it is important to mention that the best practice is to only restrict access when it is required, and to use segmentation and experiences to provide a guided view, but still allow users to find other content in other ways. See the module on [authentication](./liferay-authentiation.md) for more details.
 
-**Content Recommendations**
+**Product Recommendations**
 
-Another possibility is to use [content recommendations](https://learn.liferay.com/web/guest/w/dxp/site-building/personalizing-site-experience/experience-personalization/understanding-content-recommendations) to show different content depending on users’ interests. Liferay DXP, in combination with Liferay Analytics Cloud, can analyze browsing behavior and show relevant content for users. 
+Another possibility when displaying a digital catalog is to use [product recommendations](https://learn.liferay.com/web/guest/w/commerce/pricing/promoting-products/product-recommendations) to show different content depending on users’ interests. Liferay DXP, in combination with Liferay Analytics Cloud, can analyze this browsing behavior and show relevant products for the users. 
 
-This can be useful to promote certain products or content that users are more likely to buy or consume. For example, when a user visits an online store and shows interest in a particular type of product, [product recommendations](https://learn.liferay.com/en/w/commerce/pricing/promoting-products/product-recommendations) can be used to show the user similar products or related product promotions.
+This can be useful to promote certain products or content that users are more likely to buy or consume. For example, when a user visits an online store and shows interest in a particular type of product, product recommendations can be used to Recommends Products similar to the currently viewed product, or products the customer has bought in the past or similar customers did.
 
 **Catalog and Price Personalization**
 

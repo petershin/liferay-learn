@@ -78,7 +78,7 @@ Finally, they must build their solution on DXP.
 | Platform Services (Database, Search, etc) |  | &#10004; |
 | Architecture and High Availability |  | &#10004; |
 | Upgrades |  | &#10004; |
-| Weekly Updates |  | &#10004; |
+| Updates |  | &#10004; |
 | Patches, Security Hotfixes |  | &#10004; |
 | Software Troubleshooting |  | &#10004; |
 | Security Scanning / SAST / DAST |  | &#10004; |
@@ -112,7 +112,7 @@ But there are still some time-consuming and relatively low-value activities that
 | Platform Services (Database, Search, etc) | &#10004; |  |
 | Architecture and High Availability | &#10004; |  |
 | Upgrades |  | &#10004; |
-| Weekly Updates |  | &#10004; |
+| Updates |  | &#10004; |
 | Patches, Security Hotfixes |  | &#10004; |
 | Software Troubleshooting |  | &#10004; |
 | Security Scanning / SAST / DAST |  | &#10004; |
@@ -142,7 +142,7 @@ What is important to note is that although the deployment model is SaaS, this is
 | Platform Services (Database, Search, etc) | &#10004; |  |
 | Architecture and High Availability | &#10004; |  |
 | Upgrades | &#10004; |  |
-| Weekly Updates | &#10004; |  |
+| Quarterly Updates | &#10004; |  |
 | Patches, Security Hotfixes | &#10004; |  |
 | Software Troubleshooting | &#10004; |  |
 | Security Scanning / SAST / DAST | &#10004; |  |

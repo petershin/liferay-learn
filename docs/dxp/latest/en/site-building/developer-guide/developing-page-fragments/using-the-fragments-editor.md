@@ -3,7 +3,7 @@ uuid: 394bfac1-4f63-4799-bb0e-46e9c988512f
 ---
 # Using the Fragments Editor
 
-Liferay DXP includes a built-in [editor](../reference/fragments/page-fragment-editor-interface-reference.md) for developing Content Page Fragments. To access the editor, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*. From here, you can view, manage, and create Fragments and Fragment Sets.
+Liferay DXP includes a built-in [editor](../reference/fragments/page-fragment-editor-interface-reference.md) for developing content page fragments. To access the editor, open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*. From here, you can view, manage, and create fragments and fragment sets.
 
 * [Creating a Fragment Set](#creating-a-fragment-set)
 * [Creating a New Fragment](#creating-a-new-fragment)
@@ -14,59 +14,63 @@ For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Lifer
 
 ## Creating a Fragment Set
 
-Before creating new Fragments, you must first create a new Fragment Set to put them in:
+Before creating new fragments, you must first create a new fragment set to put them in:
 
-1. Open the *Site Menu*, and go to *Design* &rarr; *Fragments*
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*.
 
     ```{note}
-    In Liferay DXP 7.1 and 7.2, open the *Product Menu*, and go to *Site* → *Site Builder* → *Page Fragments*.
+    In Liferay DXP 7.1 and 7.2, open the *Product Menu*, and go to *Site* &rarr; *Site Builder* &rarr; *Page Fragments*.
     ```
 
-1. Click the *Plus* button (![Add Button](../../../images/icon-plus.png)) next to Fragment Sets.
+1. Click *Add* ( ![Add Button](../../../images/icon-plus.png) ) next to Fragment Sets.
 
-   ![Click the Plus button nest to Fragment Sets.](./using-the-fragments-editor/images/01.png)
+   ![Click the add button next to Fragment Sets.](./using-the-fragments-editor/images/01.png)
 
-1. Enter a *name* and *description* for the new Set.
+1. Enter a *name* and *description* for the new set.
 
     ```{tip}
-    Create Sets that group Fragments by functionality or by teams and departments.
+    Create sets that group fragments by functionality or by teams and departments.
     ```
 
 1. Click *Save*.
 
-Once saved, you can add Fragments to the Set.
+Once saved, you can add fragments to the set.
 
 ## Creating a New Fragment
 
 ```{important}
-To create a React fragment, use the [Fragments Toolkit](./using-the-fragments-toolkit.md).
+To create a React fragment, use the [fragments toolkit](./using-the-fragments-toolkit.md).
 ```
 
-Follow these steps to create a Fragment:
+Follow these steps to create a fragment:
 
-1. Go to the desired Fragment Set and click the *Add* button (![Add Button](../../../images/icon-add.png)) to create a new Fragment.
+1. Go to the desired fragment set and click *Add* ( ![Add button](../../../images/icon-add.png) ) to create a new fragment.
 
-   ![Go to the desired Fragment Set and click the Add Button.](./using-the-fragments-editor/images/02.png)
+   ![Go to the desired fragment set and click the Add button.](./using-the-fragments-editor/images/02.png)
 
    ```{note}
-   Prior to Liferay DXP 7.3, a Fragment could either be a Section or a Component. In Liferay DXP 7.3+, all Page Fragments are Components.
+   Prior to Liferay DXP 7.3, a fragment could either be a Section or a Component. In Liferay DXP 7.3+, all page fragments are Components.
    ```
 
-1. Enter a *name* for the Fragment and click *Save*.
+1. Select the fragment type you want to use (Basic Fragment or [Form Fragment](../developing-page-fragments/creating-form-fragments.md)), and click *Next*.
 
-    ![Enter a name for the new Fragment.](./using-the-fragments-editor/images/03.png)
+    ![Select the fragment type](./using-the-fragments-editor/images/03.png)
 
-1. In the Code tab, use the CSS, HTML, and JavaScript fields to add your Fragment's resources. Here, you can also see a live preview of your Fragment's appearance in different device contexts.
+1. Enter a name for the fragment and click *Add*.
+
+    ![Enter a name for the new fragment.](./using-the-fragments-editor/images/04.png)
+
+1. In the Code tab, use the HTML, CSS, and JavaScript fields to add your fragment's resources. Here, you can also see a live preview of your fragment's appearance in different device contexts.
 
     Here are some HTML editing shortcuts:
 
-    * Enter an open angle bracket (`<`) to access standard HTML tags and Liferay's Fragment-specific tags.
+    * Enter an open angle bracket (`<`) to access standard HTML tags and Liferay's fragment-specific tags.
 
-    * Start an element attribute with `data` to access Liferay's [editable Fragment attributes](../reference/fragments/fragment-specific-tags-reference.md) .
+    * Start an element attribute with `data` to access Liferay's [editable fragment attributes](../reference/fragments/fragment-specific-tags-reference.md) .
 
-    ![Liferay's editable Fragment attributes are available in the editor.](./using-the-fragments-editor/images/04.png)
+    ![Liferay's editable fragment attributes are available in the editor.](./using-the-fragments-editor/images/05.png)
 
-    The example below adds a Card component with editable text:
+    The example below adds a card component with editable text:
 
     ```html
     <div class="marketing-card-fragment-01">
@@ -95,24 +99,24 @@ Follow these steps to create a Fragment:
     }
     ```
 
-    ![Add CSS, HTML, and Javascript resources to the Fragment and see a live preview.](./using-the-fragments-editor/images/05.png)
+    ![Add HTML, CSS, and Javascript resources to the fragment and see a live preview.](./using-the-fragments-editor/images/06.png)
 
-1. In the Configuration tab, use the `JSON` field to add [configuration options](./adding-configuration-options-to-fragments.md) to a Page Fragment.
+1. In the Configuration tab, use the `JSON` field to add [configuration options](./adding-configuration-options-to-fragments.md) to a page fragment.
 
-   ![Add configuration options to a Page Fragment.](./using-the-fragments-editor/images/06.png)
+   ![Add configuration options to a page fragment.](./using-the-fragments-editor/images/07.png)
 
     ```{tip}
     You can add a `configurationRole` value to any field set (alongside the `fields` object in the JSON) to specify which tab the associated fields appear in. Set the value as `styles` to make the fields appear in the Styles tab, or set it to `advanced` to make them appear in the Advanced tab (*only in Liferay DXP versions U23+ or GA23+*). If no `configurationRole` is set, then they appear in the General tab by default.
     ```
 
-1. Click *Publish* to save your Fragment and make it available for use in [Content Pages](../../creating-pages/understanding-pages/understanding-pages.md#content-pages).
+1. Click *Publish* to save your fragment and make it available for use in [content pages](../../creating-pages/understanding-pages/understanding-pages.md#content-pages).
 
-    ![The Fragment can be used in Content Pages.](./using-the-fragments-editor/images/07.png)
+    ![The fragment can be used in content pages.](./using-the-fragments-editor/images/08.png)
 
-While developing a Fragment, changes are automatically saved as a draft until your Fragment is published. Once added to a Set, you can copy, export, edit, and remove a Fragment at any time in the Fragments editor. See [Managing Fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) for more information on available actions for Page Fragments.
+While developing a fragment, changes are automatically saved as a draft until your fragment is published. Once added to a set, you can copy, export, edit, and remove a fragment at any time in the fragments editor. See [Managing Fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) for more information on available actions for page fragments.
 
 ```{note}
-Since Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+, you can create Page Fragments on the *Global* Site to make them available for all Sites. To expose this feature in the initial releases of these versions, you must create a `.config` file named `com.liferay.fragment.web.internal.configuration.FragmentGlobalPanelAppConfiguration.config` and add the `enabled=B"true"` property. Then copy it to your Liferay DXP instance's `osgi/configs` folder. Global Page Fragments are inherited by child Sites and can only be edited from the Global Site. Any resources the Global Page Fragment references from the Global Site are copied to a Site that leverages the Page Fragment.
+Since Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+, you can create page fragments on the *Global* Site to make them available for all Sites. To expose this feature in the initial releases of these versions, you must create a `.config` file named `com.liferay.fragment.web.internal.configuration.FragmentGlobalPanelAppConfiguration.config` and add the `enabled=B"true"` property. Then copy it to your Liferay DXP instance's `osgi/configs` folder. Global page fragments are inherited by child sites and can only be edited from the Global Site. Any resources the Global page fragments references from the Global Site are copied to a site that leverages the page fragment.
 ```
 
 ## Related Topics

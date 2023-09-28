@@ -225,17 +225,17 @@ Containers in Liferay Experience Cloud have these environment variables set auto
 
 ### Pointing to Routes in Self-Hosted Environments
 
-For self-hosted applications, Liferay automatically provides default values for these environment variables, for `Exec`, `JavaExec`, and `NodeExec` Gradle tasks. It uses these default values:
+When using Liferay Workspace's `Exec`, `JavaExec`, and `NodeExec` Gradle tasks, these environment variables are automatically given default values. It uses these default values:
 
 | **Environment variable**          | **Default value**                                               |
 | :-------------------------------- | :-------------------------------------------------------------- |
 | `LIFERAY_ROUTES_DXP`              | `[Liferay Home]/routes/default/dxp`                             |
 | `LIFERAY_ROUTES_CLIENT_EXTENSION` | `[Liferay Home]/routes/default/[Client extension project name]` |
 
-The environment variables use the `liferay.workspace.home.dir` property in your Liferay workspace for your Liferay home directory, and `default` to indicate your Liferay instance's default virtual instance. Define these environment variables with a specific virtual instance ID instead of `default` to point to it instead.
+The environment variables use the `liferay.workspace.home.dir` property in your Liferay workspace for your Liferay home directory, and `default` to indicate your default Liferay virtual instance. Define these environment variables with a specific virtual instance ID instead of `default` to point to it instead.
 
 ```{note}
-If you have a Lifeary workspace version prior to 9.0.2, you *must* define these environment variables yourself, following the same form.
+If you have a Liferay workspace version prior to 9.0.2, you *must* define these environment variables yourself, following the same form.
 ```
 
 These two environment variables must be provided to client extension processes when they are invoked in order to access the metadata.

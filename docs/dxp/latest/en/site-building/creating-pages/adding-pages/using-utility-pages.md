@@ -14,25 +14,23 @@ Liferay provides [out-of-the-box utility pages](#viewing-utility-pages) that are
 
 ## Viewing Utility Pages
 
-You can edit, preview, copy, or export utility pages.
+You can edit, preview, or copy utility pages.
 
-1. Click the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
 
     The out-of-the-box pages are marked with a `PROVIDED BY LIFERAY` tag.
 
-1. Choose a page and click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) to view and select one of the available options (e.g. *Edit*, *Preview*, *Make a Copy*, or *Export*).
+1. Choose a page and click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) to view and select one of the available options (e.g. Edit, Preview, or Make a Copy).
 
 ```{tip}
 Edit the utility page the same way you would edit a [content page](../using-content-pages/adding-elements-to-content-pages.md).
-
-![You can edit the out-of-the-box utility page directly or create a copy before editing it.](./using-utility-pages/images/02.png)
 ```
 
 ## Creating a New Utility Page
 
 To create a new utility page, follow these steps:
 
-1. Click the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and  navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and  navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
 
 1. Select *Add* ( ![Actions Menu](../../../images/icon-add.png) ).
 
@@ -48,13 +46,13 @@ You can edit the newly created utility page the same way you would edit a [conte
 
 To select a new utility page as default, follow these steps:
 
-1. Click the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and  navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
+1. Open the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and  navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
 
-1. Select Actions ( ![Actions Menu](../../../images/icon-actions.png) ) for the utility page.
+1. Select Actions ( ![Actions Menu](../../../images/icon-actions.png) ) for the utility page you want to set as default.
 
 1. Select *Mark as Default*.
 
-![Select a utility page as the default page in the actions menu.](./using-utility-pages/images/03.png)
+![Select a utility page as the default page in the actions menu.](./using-utility-pages/images/02.png)
 
 ```{note}
 If a site contains no pages, the default 404 error page is shown even if a utility page is applied.
@@ -65,7 +63,7 @@ If a site contains no pages, the default 404 error page is shown even if a utili
 Utility pages have permissions that govern their use.
 
 | Permission Name             | Description                                       |
-| --------------------------- | ------------------------------------------------- |
+| :-------------------------- | :------------------------------------------------ |
 | Add Utility Page            | Required to add a utility page.                   |
 | Assign Default Utility Page | Required to assign a utility page a default page. |
 

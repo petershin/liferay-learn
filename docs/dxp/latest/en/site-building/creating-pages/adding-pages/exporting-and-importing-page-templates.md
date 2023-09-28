@@ -15,15 +15,15 @@ For Liferay DXP 7.4+, Page Template Collections are called Page Template Sets in
 
 Follow these steps to export a page template:
 
-1. Click the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
 
-1. Click the *Page Templates* tab.
+1. Select the *Page Templates* tab.
 
 1. Select the Page Template Set that contains the desired template.
 
 1. Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) for the desired content page template and select *Export*.
 
-   ![Click Export to export your page template as a zip.](./exporting-and-importing-page-templates/images/01.png)
+   ![Click Export to export your page template as a ZIP file](./exporting-and-importing-page-templates/images/01.png)
 
 The content page template downloads as a ZIP file to your local machine.
 
@@ -46,11 +46,11 @@ The ZIP file may contain different types of page templates as well, like `displa
 
 Follow these steps to import a page template:
 
-1. Click the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
 
-1. Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) in the Application Bar and select *Import*.
+1. Click *Options* ( ![Options icon](../../../images/icon-options.png) ) in the Application Bar and select *Import*.
 
-   ![The import function is located at the top right options menu.](./exporting-and-importing-page-templates/images/02.png)
+   ![The import function is located in the options menu in the Application Bar.](./exporting-and-importing-page-templates/images/02.png)
 
 1. Select the desired page template file.
 

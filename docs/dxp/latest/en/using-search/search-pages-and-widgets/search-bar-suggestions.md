@@ -19,6 +19,10 @@ Liferay's Search Bar Suggestions provides _search as you type_ functionality. As
 
 ![As you type, search results appear in a drop-down list.](./search-bar-suggestions/images/01.png)
 
+```{important}
+The search bar must be configured to use the default display template (i.e., [widget template](../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)) to work with search bar suggestions.
+```
+
 To learn how to use and configure Search Bar Suggestions, see [Configuring Search Bar Suggestions](./search-bar-suggestions/configuring-search-bar-suggestions.md)
 
 To use [Search Blueprints](../liferay-enterprise-search/search-experiences/search-blueprints.md) to control the query used in Search Bar Suggestions, see [Search Bar Suggestions Blueprints](./search-bar-suggestions/search-bar-suggestions-blueprints.md).

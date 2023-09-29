@@ -81,6 +81,8 @@ When you configure the globally embedded Search Bar widget at the top of one pag
 
 #### Display Settings
 
+**Display Template:** Select the [widget template](./../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) that styles the search bar. There's one alternative template available out-of-the-box: Left Aligned Icon Layout. If using [search bar suggestions](../search-pages-and-widgets/search-bar-suggestions.md), you must use the default display template.
+
 **Keywords Parameter Name:** Edit the parameter name for the keywords entered in the search. For example, the default URL when searching for the keyword term _data_ looks like this:
 
 ```

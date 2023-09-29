@@ -40,6 +40,8 @@ Delectable Bonsai needs fragments and images in the site. With these the site cr
    - `banner-composition.zip`
    - `footer-composition.zip`
    - `header-composition.zip`
+   - `home-page-slider-fragment.zip`
+   - `home-page-slider-composition.zip`
    - `sign-in-fragment.zip`
    - `user-nav-fragment.zip`
 

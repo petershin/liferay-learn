@@ -3,7 +3,7 @@ uuid: c3705221-e68c-4c52-99aa-617e5b365956
 ---
 # Using the Navigation Menus Application
 
-The Navigation Menus application is used to create custom menus for site pages and content. With it, you can determine which elements are included in a menu, and how they're organized. Once created, you can display your custom menus using [page fragments](../creating-pages/page-fragments-and-widgets/using-fragments.md) or [widgets](../creating-pages/using-widget-pages/adding-widgets-to-a-page.md).
+Use the Navigation Menus application to create custom menus for site pages and content. With it, you can determine which elements are included in a menu, and how they're organized. Once created, you can display your custom menus using [page fragments](../creating-pages/page-fragments-and-widgets/using-fragments.md) or [widgets](../creating-pages/using-widget-pages/adding-widgets-to-a-page.md).
 
 ```{note}
 For Liferay 7.3 and earlier, pages are the only entity that can be added to a navigation menu. As of Liferay 7.4 U1+, navigation menus support adding additional entity types to a navigation menu.
@@ -21,47 +21,45 @@ Follow these steps to create a Navigation Menu:
 
 1. Open the *Site Menu* ( ![Site menu](../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Navigation Menus*.
 
-    ![Access navigation menus in the site menu.](./using-the-navigation-menus-application/images/02.png)
+   ![Access navigation menus in the site menu.](./using-the-navigation-menus-application/images/02.png)
 
 1. Click *Add* ( ![Add button](../../images/icon-add.png) ).
 
 1. Enter a *Name* for the navigation menu.
 
-    ![Create a navigation menu.](./using-the-navigation-menus-application/images/03.png)
+   ![Create a navigation menu.](./using-the-navigation-menus-application/images/03.png)
 
 1. Click *Save*.
 
-This redirects you to the new custom menu where you can begin adding elements (e.g., pages, documents, and categories).
+The new custom menu, where you can begin adding elements (e.g., pages, documents, and categories), appears.
 
 ### Adding New Elements to a Navigation Menu
-
-While editing a navigation menu, follow these steps to add an element to the navigation menu:
 
 1. Click *Add* ( ![Add button](../../images/icon-add.png) ).
 
 1. Select the type of element you want to add to the menu (e.g., page, document, or category). This opens an item selector window.
 
-    You can add multiple elements to the same menu.
+   You can add multiple elements to the same menu.
 
-   ![Select the type of element you want to add to the menu.](./using-the-navigation-menus-application/images/04.png)
+  ![Select the type of element you want to add to the menu.](./using-the-navigation-menus-application/images/04.png)
 
 1. Select the elements you want to add and click *Select*.
 
-    You can select multiple elements.
+   You can select multiple elements.
 
-    ```{important}
-    When the added element does not have an [associated display page](../displaying-content/using-display-page-templates.md), Liferay shows a warning. Items without a display page do not have links and are hidden from menus.
-    ```
+   ```{important}
+   When the added element does not have an [associated display page](../displaying-content/using-display-page-templates.md), a warning appears. Items without a display page do not have links and are hidden from menus.
+   ```
 
-    ![When the added element does not have an associated display page.](./using-the-navigation-menus-application/images/05.png)
+   ![A warning appears when the added element does not have an associated display page.](./using-the-navigation-menus-application/images/05.png)
 
 1. Optionally, drag and drop menu elements to reorganize them or arrange them in a hierarchy.
 
-    ```{tip}
-    In addition to structuring menu elements into a hierarchy, you can also use the *Submenu* type to add subsections to a menu. If you delete an element with child elements, the child elements are also removed.
-    ```
+   ```{tip}
+   In addition to structuring menu elements into a hierarchy, you can also use the *Submenu* type to add subsections to a menu. If you delete an element with child elements, the child elements are also removed.
+   ```
 
-    ![Adding elements to navigation menus.](./using-the-navigation-menus-application/images/06.png)
+   ![Adding elements to navigation menus.](./using-the-navigation-menus-application/images/06.png)
 
 1. Optionally, you can add a child navigation menu element from the navigation menu tree.
 
@@ -69,19 +67,19 @@ While editing a navigation menu, follow these steps to add an element to the nav
 
    ![Add child navigation menu elements right from the navigation menu tree](./using-the-navigation-menus-application/images/07.png)
 
-    ```{tip}
-    Click on one of the navigation menu elements and use the keyboard arrows to navigate through the navigation menu tree.
-    ```
+   ```{tip}
+   Click on one of the navigation menu elements, and use the keyboard arrows to navigate through the navigation menu tree.
+   ```
 
-1. Optionally, define custom display names for each of your menu elements. You can define custom names for page elements, or for any content type elements that use display pages (including blog entries, web content articles, documents, vocabularies, and categories).
+1. Optionally, define custom display names for each of your menu elements. You can define custom names for page elements or for any content type elements that use display pages (including blog entries, web content articles, documents, vocabularies, and categories).
 
-    ```{note}
-    You can only define custom display names for content type elements using display pages on Liferay 7.4 versions U9+ or GA13+.
-    ```
+   ```{note}
+   You can only define custom display names for content type elements using display pages on Liferay 7.4 versions U9+ or GA13+.
+   ```
 
-    To do this, select a menu element, check *Use Custom Name* in the side panel, enter a name, and click *Save*.
+   To do this, select a menu element, check *Use Custom Name* in the side panel, enter a name, and click *Save*.
 
-    ![Customize the display of menu elements.](./using-the-navigation-menus-application/images/08.png)
+   ![Customize the display of menu elements.](./using-the-navigation-menus-application/images/08.png)
 
 All changes to the menu are saved.
 

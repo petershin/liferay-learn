@@ -21,7 +21,7 @@ Create multiple personalized variations for a collection, and edit or delete the
 
 ## Creating Personalized Variations
 
-Once you create [segments](../segmentation/creating-and-managing-user-segments.md) for your users, add personalized variations for collections based on those segments.
+After you create [segments](../segmentation/creating-and-managing-user-segments.md) for your users, you can add personalized variations for collections based on those segments.
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-applications-menu.png) ) and navigate to *Site Builder* &rarr; *Collections*.
 
@@ -29,7 +29,7 @@ Once you create [segments](../segmentation/creating-and-managing-user-segments.m
 
 1. Click *Add Personalized Variation*.
 
-    If you already have a personalized variation in place and you have other available segments, add new personalized variations by clicking ![add icon](../../../images/icon-add-app.png) next to Personalized Variations.
+   If you already have a personalized variation in place and you have other available segments, add new personalized variations by clicking *Add* (![add icon](../../../images/icon-add-app.png)) next to Personalized Variations.
 
 1. Choose a Segment and customize the collection accordingly.
 
@@ -52,8 +52,6 @@ Priority is assigned according to the position of each item in the list. The hig
 ## Combining Collection Entries From All Segments
 
 With users that belong to multiple [segments](../segmentation/creating-and-managing-user-segments.md), you can combine and show collection entries from all the segments to which they belong instead of showing only the default entries or the [prioritized](#prioritizing-variations) personalized variation.
-
-To enable this feature,
 
 1. Open the *Global Menu* ( ![Applications Menu icon](../../../images/icon-applications-menu.png) ) and select the *Control Panel* tab &rarr; *System Settings* under Configuration.
 
@@ -87,15 +85,15 @@ First create the default content set and configure it on the Home page using the
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-applications-menu.png) ) and navigate to *Content and Data* &rarr; *Content Sets*.
 
-1. Click Add ( ![Add](../../../images/icon-add.png) ) and choose *Manual Selection*.
+1. Click *Add* ( ![Add](../../../images/icon-add.png) ) and choose *Manual Selection*.
 
-1. Name it "Home Page Content".
+1. Name it *Home Page Content*.
 
 1. For the new content set, click *Select* next to Asset Entries and select *Basic Web Content*.
 
-    ![Click Select to add a new asset entry.](./personalizing-collections/images/05.png)
+   ![Click Select to add a new asset entry.](./personalizing-collections/images/05.png)
 
-1. On the Select Basic Web Content page, check the boxes next to the content you want to add and click *Add*.
+1. On the Select Basic Web Content page, select the content you want to add and click *Add*.
 
 1. Navigate to the Home page and add an Asset Publisher widget to the page.
 
@@ -105,7 +103,7 @@ First create the default content set and configure it on the Home page using the
 
 1. Under Select Content Set click *Select*, choose *Home Page Content*, and click *Save*.
 
-Now the content set that you configured appears in the Asset Publisher widget on the Home Page. Next configure the content set for personalization.
+Now the content set you configured appears in the Asset Publisher widget on the home page. Next configure the content set for personalization.
 
 #### Personalizing the Content Set
 
@@ -115,7 +113,7 @@ Now create the content set for engineers and configure its display.
 
 1. Click *New Personalized Variation* and select the American Engineers segment
 
-    ![Create a new personalized variation.](./personalizing-collections/images/06.png)
+   ![Create a new personalized variation.](./personalizing-collections/images/06.png)
 
 1. Click *Select* next to Asset Entries and select *Basic Web Content*.
 

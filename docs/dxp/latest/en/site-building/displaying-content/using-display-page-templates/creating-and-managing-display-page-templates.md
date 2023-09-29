@@ -19,21 +19,25 @@ See [Using Display Page Templates](../using-display-page-templates.md) to learn 
 
 Follow these steps to create a display page template:
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and click *Design* &rarr; *Page Templates*.
+1. Open *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and click *Design* &rarr; *Page Templates*.
 
 1. Click the *Display Page Templates* tab.
 
-   ![Go to Page Templates, and click on the display page templates tab.](./creating-and-managing-display-page-templates/images/02.png)
+   ![Go to page templates, and click on the display page templates tab.](./creating-and-managing-display-page-templates/images/01.png)
 
-1. Click the *Add* button (![Add Button](./../../../images/icon-add.png)).
+1. Click *Add* ( ![Add button](./../../../images/icon-add.png) ).
 
 1. Enter a *Name* for your template and select a *Content Type* and *Subtype*, if applicable. Then click *Save*.
 
-   ![Select the content type and subtype for your new template.](./creating-and-managing-display-page-templates/images/03.png)
+   ![Select the content type and subtype for your new template.](./creating-and-managing-display-page-templates/images/02.png)
 
 1. Design the template using the same interface and page elements as [content pages](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md).
 
-   ![Build your template using fragments and widgets.](./creating-and-managing-display-page-templates/images/04.png) 
+   ```{note}
+   When creating a display page, it's important to note that it will inherit the visual design and theme of public pages. This remains true even if there is no public page created for that particular site.
+   ```
+
+   ![Build your template using fragments and widgets.](./creating-and-managing-display-page-templates/images/03.png)
 
 1. Once you've added page elements, you can [map](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) them to content structure fields (e.g., title, description) by double-clicking on an editable field. Mapped fields are outlined in purple.
 
@@ -41,7 +45,7 @@ Follow these steps to create a display page template:
    You can use mapped fields when configuring SEO and Open Graph settings for a display page template. See [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md) for more information.
    ```
 
-   ![Map page elements to structure fields.](./creating-and-managing-display-page-templates/images/05.png) 
+   ![Map page elements to structure fields.](./creating-and-managing-display-page-templates/images/04.png)
 
 1. Before publishing, you can preview your editable fields mappings with existing content using the [preview function](#preview-the-display-page-template-content-mappings) (available 7.4+).
 
@@ -57,19 +61,19 @@ While editing, Liferay provides two ways to preview display page templates with 
 
 From the Application Menu, you can click the *Preview With* drop-down menu and choose a content item. If no item appears, click *Select Other Item* and browse for the desired content. This dynamically populates the template with content data according to your field mapping.
 
-![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/07.png) 
+![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/05.png)
 
-Alternatively, from the display page template editor, click the *Actions* menu(![Actions menu](../../../images/icon-actions.png)) button and choose *Preview in a New Tab*.
+Alternatively, from the display page template editor, click *Actions* ( ![Actions menu](../../../images/icon-actions.png) ) and choose *Preview in a New Tab*.
 
-![Click the Preview button to preview your display page template mappings.](./creating-and-managing-display-page-templates/images/08.png) 
+![Click the preview button to preview your display page template mappings.](./creating-and-managing-display-page-templates/images/06.png)
 
 ## Viewing Display Page Template Usage
 
 {bdg-secondary}`Available 7.4+`
 
-You can manage the different display page templates using the *Actions* menu (![Actions](../../../images/icon-actions.png)). From here, the *View Usages* option provides a list of content that uses a specific display page template other than the default template. This option is not available for default templates.
+You can manage the different display page templates using the *Actions* menu ( ![Actions](../../../images/icon-actions.png) ). From here, the *View Usages* option provides a list of content that uses a specific display page template other than the default template. This option is not available for default templates.
 
-![Managing your display page template using the Actions menu](./creating-and-managing-display-page-templates/images/06.png)
+![Managing your display page template using the Actions menu](./creating-and-managing-display-page-templates/images/07.png)
 
 Before you delete a display page template that is in use, you have two ways to unassign the display page template from the content:
 
@@ -78,15 +82,15 @@ Before you delete a display page template that is in use, you have two ways to u
 
 Follow these steps to view your display page template usage and unassign your content:
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
 
 1. Click the *Display Page Templates* tab.
 
-1. Click the display page template's *Actions* menu (![Actions](../../../images/icon-actions.png)) and select *View Usages*.
+1. Click the display page template's *Actions* menu ( ![Actions](../../../images/icon-actions.png) ) and select *View Usages*.
 
 1. Select one or more elements from the list of content using the display page template.
 
-1. Click the *Actions* menu (![Actions](../../../images/icon-actions.png)) in the top-right corner and select *Assign to Default* or *Unassign*.
+1. Click *Actions* ( ![Actions](../../../images/icon-actions.png) ) in the top-right corner and select *Assign to Default* or *Unassign*.
 
 1. Click *OK*.
 

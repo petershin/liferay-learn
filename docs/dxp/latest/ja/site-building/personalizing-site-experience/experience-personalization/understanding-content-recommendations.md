@@ -3,7 +3,7 @@
 ユーザーはWebサイトにアクセスすると、コンテンツと対話し、興味に応じてさまざまな行動を示します。 Liferay DXPは、 [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) と組み合わせて、この閲覧動作を分析し、ユーザーに関連するコンテンツを表示できます。 これは、ユーザーが購入または消費する可能性が高い特定の製品またはコンテンツを宣伝するのに役立ちます。 たとえば、ユーザーがオンラインストアにアクセスして特定の種類の商品に関心を示した場合、コンテンツリコメンデーションを使用して、類似商品や関連商品のプロモーションをユーザーに表示できます。
 
 ```{important}
-コンテンツリコメンデーションをユーザーに提供するには、 [Analytics CloudをLiferay DXPインスタンスに接続する](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 必要があります。
+コンテンツリコメンデーションをユーザーに提供するには、 [Analytics CloudをLiferay DXPインスタンスに接続する](https://learn.liferay.com/analytics-cloud/latest/ja/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 必要があります。
 ```
 
 ## コンテンツリコメンデーションの仕組み

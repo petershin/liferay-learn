@@ -80,5 +80,6 @@ Liferay continues to improve the Staging application, particularly for Remote Li
 
 ## Related Topics
 
-* [7.2 Breaking Changes](../../../liferay-internals/reference/7-2-breaking-changes.md)
-* [7.2 Default Setting Changes](./default-setting-changes-in-7-2.md)
+[7.2 Breaking Changes](../../../liferay-internals/reference/7-2-breaking-changes.md)
+
+[7.2 Default Setting Changes](./default-setting-changes-in-7-2.md)

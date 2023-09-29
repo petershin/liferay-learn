@@ -7,7 +7,7 @@ Along with standard HTML, CSS, and JavaScript, you can use Liferay-specific tags
 
 Editable elements can be modified before publication, which means that you can create simple, reusable fragments that have identical formatting, but contain elements that are adaptable to the specific context.
 
-These Liferay-specific tags and attributes are available: 
+These Liferay-specific tags and attributes are available:
 
 - [Editable Text](#making-text-editable)
 - [Editable Images](#making-images-editable)
@@ -246,7 +246,7 @@ These are the widgets that can be embedded and their accompanying tags:
 | Tag Cloud                  | `<lfr-widget-tag-cloud>`         |
 | Tag Filter                 | `<lfr-widget-tags-nav>`          |
 | Web Content Display        | `<lfr-widget-web-content>`       |
-| RSS Publisher (Deprecated) | `<lfr-widget-rss>`               |
+| RSS Publisher              | `<lfr-widget-rss>`               |
 | Iframe                     | `<lfr-widget-iframe>`            |
 
 ### Enabling Embedding for Your Widget
@@ -416,6 +416,8 @@ You can trigger [object actions](../../../../building-applications/objects/creat
 
 ## Related Topics
 
-- [Fragments Toolkit Command Reference](./fragments-toolkit-command-reference.md)
-- [Page Fragment Editor Interface Reference](./page-fragment-editor-interface-reference.md)
-- [Fragment Configuration Types Reference](./fragment-configuration-types-reference.md)
+[Fragments Toolkit Command Reference](./fragments-toolkit-command-reference.md)
+
+[Page Fragment Editor Interface Reference](./page-fragment-editor-interface-reference.md)
+
+[Fragment Configuration Types Reference](./fragment-configuration-types-reference.md)

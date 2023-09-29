@@ -3,7 +3,7 @@ toc:
 - ./search-experiences/search-blueprints.md
 - ./search-experiences/semantic-search.md
 ---
-# Search Experiences
+# 検索エクスペリエンス
 
 {bdg-primary}`[LES Subscription](./activating-liferay-enterprise-search.md)`
 {bdg-secondary}`DXP 7.4 U5+; 7.3 U6+`

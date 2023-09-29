@@ -98,7 +98,7 @@ public void detectRoute(RouteBuilder routeBuilder, RouteHelper routeHelper);
 エンティティのURLパターンの特徴的な部分を提供するために `detectRoute` を実装して、類似結果ウィジェットがコントリビューターを呼び出す必要があるかどうかを検出できるようにします。 URLパターンは、 `RouteBuilder` オブジェクトの属性として追加されます。 `RouteHelper` は、解析のためにURL文字列全体を取得するのに役立ちます。
 
 ```{note}
-SimilarResultsContributor`は、各表示ウィジェットに対して1つだけサポートされます。
+`SimilarResultsContributor`は、各表示ウィジェットに対して1つだけサポートされます。
 ```
 
 ```java

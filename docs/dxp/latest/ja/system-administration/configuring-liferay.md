@@ -11,7 +11,7 @@ toc:
   - ./configuring-liferay/security-settings.md
   - ./configuring-liferay/common-tasks.md
 ---
-# Configuring Liferay
+# Liferayの設定
 
 ```{toctree}
 :maxdepth: 4

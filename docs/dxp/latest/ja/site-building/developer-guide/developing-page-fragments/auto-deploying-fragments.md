@@ -9,12 +9,13 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 ```
 
 ## 自動デプロイ可能なフラグメントセットをデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Then, follow these steps to auto-deploy an example fragment set:
+次に、以下の手順に従って、例のフラグメントセットを自動デプロイします：
 
-1. Download and unzip the [example auto-deployable fragment set](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip) :
+1. [example auto-deployable fragment set](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip)をダウンロードして解凍します：
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O

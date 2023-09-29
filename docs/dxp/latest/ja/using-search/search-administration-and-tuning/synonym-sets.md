@@ -3,7 +3,7 @@
 {bdg-primary}`サブスクリプション`
 
 ```{note}
-この機能は、[Elasticsearchのみ](../installing and-upgrading-a-search-engine/solr/solr-limitations.md) で機能します。
+この機能は、[Elasticsearchのみ](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md) で機能します。
 ```
 
 同義語セットとは、同じ意味を持つ単語やフレーズを集めたものです。 管理者であるユーザーが同義語セットを作成し、検索ページのエンドユーザーがキーワードやフレーズを検索すると、セット内の同義語も検索されます。

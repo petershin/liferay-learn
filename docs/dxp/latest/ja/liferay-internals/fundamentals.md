@@ -34,7 +34,7 @@ OSGiのパワーの1つは、DXPのAPIにアクセスするプロジェクトを
 
 * **[依存関係の構成](./fundamentals/configuring-dependencies.md)** は、Liferayのアーティファクトとサードパーティのアーティファクトを特定し、それらのJavaパッケージをプロジェクトで使用するように設定する方法を示しています。
 
-* **[Importing](./fundamentals/importing-packages.md) and [パッケージのエクスポート](./fundamentals/exporting-packages.md)** では、他のモジュールの機能を利用する方法と、他のモジュールが利用できるように自分の機能を公開する方法を紹介します。 Liferayのツールは、パッケージの使用を検出し、パッケージのインポートを自動的に指定します。
+* **[インポート](./fundamentals/importing-packages.md) と [パッケージのエクスポート](./fundamentals/exporting-packages.md)** は、他のモジュールの機能を使用したり、他のモジュールが使用できるように機能を公開する方法を示しています。Liferay のツールはパッケージの使用を検出し、パッケージのインポートを自動的に指定します。
 
 * **[セマンティックバージョニング](./fundamentals/semantic-versioning.md)** は、Liferayが新しいバージョンに進化する際に、どのようにコードの依存関係を管理するかについて説明しています。
 

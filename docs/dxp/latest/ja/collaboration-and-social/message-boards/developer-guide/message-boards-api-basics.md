@@ -17,7 +17,7 @@ LiferayのHeadless Deliveryアプリケーションは、[掲示板](../../messa
 
 起動したら、サイトIDを取得します。サイトIDを見つけるには、*サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、*設定* &rarr; *サイト設定* &rarr; *サイト設定* に進みます。
 
-![サイト構成設定の下にあるサイトIDを見つけてください](./message-board-api-basics/images/01.png)
+![サイト構成設定の下にあるサイトIDを見つけてください](./message-boards-api-basics/images/01.png)
 
 ### チュートリアル・コード
 

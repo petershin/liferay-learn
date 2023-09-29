@@ -236,8 +236,9 @@ cURLスクリプトのパラメーター：
 
 `ContentStructure_GET_Permissions.sh` cURLスクリプトは、ストラクチャーの権限を一覧表示します。 このスクリプトは、ストラクチャーIDを唯一のパラメーターとして、`GET` HTTPメソッドで`ContentStructure`サービスを使用します。
 
-| メソッド | サービス               | エンドポイント                                                     |
-|:---- |:------------------ |:----------------------------------------------------------- |
+テーブル
+| メソッド | サービス              | エンドポイント                                |
+|:---- |:----------------- |:-------------------------------------- |
 | PUT  | `ContentStructure` | `/v1.0/content-structures/{contentStructureId}/permissions` |
 
 ```bash
@@ -279,15 +280,16 @@ JSON出力には、`items`セクションの下に権限が含まれます。 �
 ```
 
 ```{note}
-権限の管理方法については、[Webコンテンツストラクチャーとテンプレートへの権限の割り当て]（.../assigning-web-content-structures/assigning-permissions-to-structures and-templates.md） をご覧ください。
+権限の管理方法については、[Webコンテンツストラクチャーとテンプレートへの権限の割り当て](../assigning-web-content-structures/assigning-permissions-to-structures-and-templates.md) をご覧ください。
 ```
 
 ## ストラクチャー権限の置換
 
 `PUT`HTTPメソッドで、 `ContentStructure`サービスを使って、オリジナルのストラクチャー権限を置き換えることができます。 このスクリプトの例では、構造化コンテンツ識別子 `id` を使用して、パワーユーザーロールの `DELETE` と `VIEW` 権限を含んでいます。
 
-| メソッド | サービス               | エンドポイント                                                     |
-|:---- |:------------------ |:----------------------------------------------------------- |
+テーブル
+| メソッド | サービス              | エンドポイント                                |
+|:---- |:----------------- |:-------------------------------------- |
 | PUT  | `ContentStructure` | `/v1.0/content-structures/{contentStructureId}/permissions` |
 
 ```bash

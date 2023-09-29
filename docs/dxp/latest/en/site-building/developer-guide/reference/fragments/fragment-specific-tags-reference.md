@@ -257,7 +257,7 @@ If you have a custom widget that you want to embed in a fragment, you can config
 com.liferay.fragment.processor.PortletRegistry
 ```
 
-Also, set the `@Activate` and the `@Deactivate` lifecycle methods to register and unregister an alias for the portlet using the `PortletRegistry`:
+Also, set the `@Activate` and the `@Deactivate` life cycle methods to register and unregister an alias for the portlet using the `PortletRegistry`:
 
 ```java
 public class MySamplePortlet extends MVCPortlet {
@@ -290,7 +290,7 @@ When you deploy your widget, it's available to add. The name you specify in the 
 
 > Available: Liferay DXP/Portal 7.4+ before U60
 
-For previous versions, if you have a custom widget that you want to embed in a fragment, you can configure that widget to be embeddable. To embed your widget, it must be an OSGi Component. Inside the `@Component` annotation for the portlet class you want to embed, add this property:
+For previous versions, if you have a custom widget that you want to embed in a fragment, you can configure that widget to be embeddable. To embed your widget, it must be an OSGi component. Inside the `@Component` annotation for the portlet class you want to embed, add this property:
 
 ```properties
 com.liferay.fragment.entry.processor.portlet.alias=app-name

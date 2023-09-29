@@ -15,13 +15,13 @@ Settings can be conceptually divided into display, pagination, and federated sea
 
 ![The Card layout is an alternative to the default search experience. ](./configuring-the-search-results-widget/images/01.png)
 
-----
+**Show Default Empty Result Message** (7.4 U82+): Display the default message when there are no search results. Only disable this if using a custom display template that sets an empty results message.
+
+**Show Default Pagination** (7.4 U82+): Use the default pagination. Only disable this if using a custom display template that defines pagination.
 
 **Enable Highlighting:** Highlight the search terms where they appear in the search result's title or summary.
 
 ![With highlighting enabled, matches to the keyword are highlighted in the result summary.](./configuring-the-search-results-widget/images/03.png)
-
-----
 
 **Display Selected Result in Context:** Show clicked assets in their native display widgets, if one is detected on a page in the same Site. For example, if you click on a blog post in the search results, you see the Blogs Entry in the Blogs application. You're no longer in the search context after clicking on a search result.
 

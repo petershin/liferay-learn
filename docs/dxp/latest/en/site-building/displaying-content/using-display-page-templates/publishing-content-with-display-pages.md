@@ -29,7 +29,7 @@ Follow these steps to set the default display page template for a type of conten
 
 Follow these steps to use a display page template for displaying content items:
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to the desired application (e.g., Web Content, Blogs, Categories).
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to the desired application (e.g., web content, blogs, categories).
 
 1. Begin editing or creating a content item.
 

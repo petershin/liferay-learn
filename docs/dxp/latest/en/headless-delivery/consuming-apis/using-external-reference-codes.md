@@ -5,19 +5,17 @@ uuid: 13b4382c-a959-4239-adae-d5a356000004
 
 {bdg-secondary}Liferay DXP/Portal 7.4+
 
-Many of Liferay's headless API endpoints support the use of an external reference code (ERC). Use the ERC field to access, create, update, or delete various Liferay entities. 
+Many of Liferay's headless API endpoints support an external reference code (ERC). The ERC field is useful in wide range of scenarios. For example, when migrating content into Liferay, you could keep the unique reference IDs from another system in the ERC field. Or use ERCs to have human-readable keys for your site content. For example, Liferay assigns a unique ID for each created blog post, but you could assign human readable keys for easier reference. 
 
-The ERC field is useful in wide range of scenarios. For example, when migrating content into Liferay, you could keep the unique reference IDs from another system for easier management by utilizing ERCs. Or use ERCs to have human readable keys for your site content. For example, Liferay assigns a unique ID for each created blog post, but you could assign human readable keys for easier reference. 
-
-Note, each ERC is unique and the same ERC cannot be used with another entity in the same scope. For example, a blog post and a document on the same site cannot have the same ERC.
+Each ERC must be unique, and the same ERC cannot be used with another entity in the same scope. For example, a blog post and a document on the same site cannot have the same ERC. If you try, you'll get a `duplicate entry` error. 
 
 ## Blog Post ERC Example
 
 Create and access a blog post with an ERC.
 
-1. Take note of your [site's ID](./consuming-rest-services.md#identify-the-site-containing-the-data).
+1. Note your [site's ID](./consuming-rest-services.md#identify-the-site-containing-the-data).
 
-1. In terminal, run the following curl command to create a new blog post. Replace `{siteId}` with your site's ID.
+1. Run the following curl command to create a new blog post. Replace `{siteId}` with your site's ID.
 
    ```bash
    curl \

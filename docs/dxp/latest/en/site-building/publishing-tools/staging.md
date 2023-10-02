@@ -57,10 +57,6 @@ As part of Staging configuration, you can select which content groups and applic
 
 When configuring Staging for sites, you can enable the *Page versioning* feature. With this feature, you and your team can simultaneously develop variations of a site's content Pages and widget pages. You can see the complete history of page versions and revert pages to an earlier version if needed. See [Page Versioning](./staging/page-versioning.md) to learn how to create and manage variations and [Managing Staging Permissions](./staging/managing-staging-permissions.md) to learn about managing permissions for each variation.
 
-```{note}
-Starting with Liferay DXP 7.4, 7.3 Fix Pack 1, and 7.2 Fix Pack 11, you can use page versioning in widget pages and content pages. In previous versions, you could only create variations for widget pages. To learn more about variations for each type of page, see [Types of Variations](./staging/page-versioning.md#types-of-variations).
-```
-
 ## Understanding the Publishing Process
 
 From a low level perspective, staging is an equivalence relation where entities are mirrored to a different location. From a high level perspective, the staging process is executed in three sequential phases: Export, Validation, and Import.

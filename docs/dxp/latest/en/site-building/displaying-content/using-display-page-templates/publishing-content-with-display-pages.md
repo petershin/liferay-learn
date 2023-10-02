@@ -13,39 +13,37 @@ Even though you can create multiple display page templates for the same content 
 
 Follow these steps to set the default display page template for a type of content:
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and click *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and click *Design* &rarr; *Page Templates*.
 
 1. Click the *Display Page Templates* tab.
 
-1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired template and select *Mark as Default*
+1. Click *Actions* ( ![Actions](../../../images/icon-actions.png) ) for the desired template and select *Mark as Default*
 
    ```{tip}
-   Each template's content type is listed under its name (A). The blue check (B) indicates which templates are marked as default.
+   Each template's content type is listed under its name (1). The blue check (2) indicates which templates are marked as default.
    ```
 
-   ![Select a display page template as the default one for the content type using the Actions menu.](./publishing-content-with-display-pages/images/05.png)
+   ![Select a display page template as the default one for the content type using the Actions menu.](./publishing-content-with-display-pages/images/01.png)
 
 ## Setting a Display Page Template for Individual Content Items
 
 Follow these steps to use a display page template for displaying content items:
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to the desired application (e.g., Web Content, Blogs, Categories).
+1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to the desired application (e.g., Web Content, Blogs, Categories).
 
 1. Begin editing or creating a content item.
 
-   ![Edit or create a content item.](./publishing-content-with-display-pages/images/03.png)
+   ![Edit or create a content item.](./publishing-content-with-display-pages/images/02.png)
 
-1. In the Properties tab, expand the *Display Page Template* section, click the drop-down menu, and select *Specific Display Page Template*.
+1. In the Properties tab, expand the *Display Page Template* section, click the drop-down menu, and select *Specific*.
 
    ```{note}
    If you don't choose a specific display page template, your content is published using the [default one](#setting-a-default-display-page-template) for the content type.
    ```
 
-   ![Select a specific display page template to configure it.](./publishing-content-with-display-pages/images/01.png)
+   ![Select a specific display page template to configure it.](./publishing-content-with-display-pages/images/03.png)
 
-1. Click *Select*, choose the desired template, and click *Done*.
-
-   You can preview what the display page looks like with the *Preview* button located next to the selected display page template.
+1. Click *Preview*, to preview what the display page looks like.
 
 1. (Optional) In the Properties tab, expand the *Friendly URL* panel and modify the friendly URL. This determines the URL for displaying your content item using the display page template.
 
@@ -53,7 +51,7 @@ Follow these steps to use a display page template for displaying content items:
    For Liferay 7.4 U34+/GA34+, the Display Page Template framework takes into account an asset's friendly URL history. This means all URLs saved in the file's URL history redirect automatically to the file's current URL. The friendly URL history is supported for both [documents](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md) and [blogs](../../../content-authoring-and-management/blogs/displaying-blogs.md).
    ```
 
-   ![You can configure the friendly URL used for your displayed content.](./publishing-content-with-display-pages/images/02.png)
+   ![You can configure the friendly URL used for your displayed content.](./publishing-content-with-display-pages/images/04.png)
 
 1. Click *Publish*.
 
@@ -61,7 +59,7 @@ Once set, Liferay uses the template to display the content item at its unique fr
 
 *Preview* displays the content in the display page template context, while *View Content* redirects you to the content item's friendly URL.
 
-![Preview your content in the context of the display page template or view the Display Page using the content's Action menu.](./publishing-content-with-display-pages/images/04.png)
+![Preview your content in the context of the display page template or view the Display Page using the content's Action menu.](./publishing-content-with-display-pages/images/05.png)
 
 ## Related Topics
 

@@ -40,3 +40,7 @@ The Embedded option uses an [iframe](../../displaying-content/additional-content
 ## Link to URL
 
 The Link to URL option adds a link to the provided URL. This can be an external page or a link across sites in the same Liferay Portal instance.
+
+## Collection Pages
+
+Collection pages are pages that are linked to a collection. These pages simplify the process of displaying and personalizing collections. See [Displaying Collections](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections) for more information.

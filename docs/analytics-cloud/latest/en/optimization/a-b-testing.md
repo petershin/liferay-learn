@@ -3,11 +3,11 @@ uuid: 551f4c6e-7cc4-4b94-b46f-681f15d265a0
 ---
 # A/B Testing
 
-A/B Testing evaluates the effectiveness of content pages by testing two versions of a page at once. This process involves creating a page variant, testing them with a metric (e.g., clicks), and publishing the most effective variant. These tests can help you choose the best experience for your site's users.
+A/B testing evaluates the effectiveness of content pages by testing two versions of a page at once. This process involves creating a page variant, testing them with a metric (e.g., clicks), and publishing the most effective variant. These tests can help you choose the best experience for your site's users.
 
-You can learn more about creating an A/B test and configuring it for a content page in Liferay DXP's [A/B Testing documentation](https://learn.liferay.com/dxp/latest/en/site-building/optimizing-sites/ab-testing/ab-testing.html).
+You can learn more about creating an A/B test and configuring it for a content page in Liferay DXP's [A/B testing documentation](https://learn.liferay.com/dxp/latest/en/site-building/optimizing-sites/ab-testing/ab-testing.html).
 
-Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When created, tests are synced automatically with Analytics Cloud, where you can manage them. To view drafted, running, terminated, and completed A/B tests, go to the *Tests* menu in the left column.
+Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When created, tests are synced automatically with Analytics Cloud. To view the status of your A/B tests, click _Test_ in the menu on the left.
 
 ![The Tests menu displays all A/B tests created and defined for a site.](a-b-testing/images/01.png)
 
@@ -17,7 +17,7 @@ For drafted A/B tests, you can view these details:
 * Metric: the goal to track (e.g., bounce rate or click).
 * Variant: the page variant for users to interact with.
 
-![This A/B test is configured and ready to run.](a-b-testing/images/02.png)
+![The A/B test is configured and ready to run.](a-b-testing/images/02.png)
 
 To see the A/B test page in DXP, click the _Review_ button. To delete the A/B test, click the _Delete_ button.
 
@@ -63,7 +63,7 @@ Next, you'll learn about an A/B test's statuses.
 
 ## Test Status
 
-An A/B test is always characterized with a status after it starts. These include
+Once an A/B test is started, it will have one of the following statuses:
 
 * [Test is Running](#test-is-running)
 * [Winner Declared](#winner-declared)
@@ -76,7 +76,7 @@ This means that your test is running and needs a larger sample size before reach
 
 ![The test is running, though you can view the current results.](a-b-testing/images/06.png)
 
-When a test is running, you can terminate it by selecting *Terminate Test* from the Summary bar.
+When a test is running, you can terminate it by selecting *Terminate Test* from the summary bar.
 
 ![Click on Terminate Test to end a running test.](a-b-testing/images/07.png)
 
@@ -89,22 +89,24 @@ Large amounts of traffic (i.e. several thousand hits a day) is expected for an A
 Once your A/B test finishes successfully, a winner is declared (i.e. the variant or the control). From here, you can perform these actions:
 
 * Publish the winner as your default experience.
-* Complete the test without publishing any changes.
+* Delete the test without publishing any changes.
 
 ![You can publish a winner after the completion of an A/B test.](a-b-testing/images/08.png)
 
 ### No Clear Winner
 
-Sometimes, Analytics Cloud cannot determine a winner because no variant has outperformed significantly over the control page. In this case, you can complete the test without publishing and the control remains the default experience.
+Sometimes, Analytics Cloud cannot determine a winner because the variant has not significantly outperformed the control page. In this case, you can still choose to publish the variant by clicking _Publish_. Or delete the A/B test by clicking _Delete_.
 
 ![Lack of performance by a variant can lead to an A/B test without a clear winner. ](a-b-testing/images/09.png)
 
 ### Test Terminated
 
-The test status will show as terminated if the A/B test is terminated before a winner is declared. The results up until test termination are shown. 
+The test status will show as terminated if the A/B test is terminated before a winner is declared. 
 
 ![A test that is ended early will show as a terminated test.](./a-b-testing/images/10.png)
 
-Note, a terminated A/B test has not reached the specified confidence level and inherently has less reliable results.
+```{note}
+A terminated A/B test did not reach the specified confidence level and inherently has less reliable results.
+```
 
-Choose to publish the change by clicking the _Publish_ button. Or delete the A/B test by clicking _Delete_.
+You can still choose to publish the variant by clicking the _Publish_ button. Or delete the A/B test by clicking _Delete_.

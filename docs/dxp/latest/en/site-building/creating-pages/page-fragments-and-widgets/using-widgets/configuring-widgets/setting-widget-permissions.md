@@ -22,7 +22,7 @@ Here is a list of the available general permissions:
 | Preferences          | View and modify the widget's preferences. |
 | Configuration        | Access the widget's configuration menu.   |
 | View                 | View the widget.                          |
-| Add to Page          | Add a widget to a site page.              |
+| Add to Page          | Add a widget to a page.                   |
 
 ![The permissions matrix makes configuration for a widget convenient.](./setting-widget-permissions/images/01.png)
 

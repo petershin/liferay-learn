@@ -1,3 +1,6 @@
+---
+uuid: e63f1fb0-18dc-4e03-b118-429883b0cbec
+---
 # Encrypted Fields
 
 {bdg-primary}`Self-Hosted and Self-Managed Only`

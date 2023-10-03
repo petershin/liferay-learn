@@ -23,13 +23,15 @@ Verify that your environment [meets the requirements](./verifying-ab-test-requir
 ## Creating the Test
 
 1. Go to the Content Page you want to test. 
-1. In the Control Menu, click *A/B Testing* (![A/B Test icon](../../../images/icon-ab-testing.png)).
-1. If you have other Experiences for the Content Page, select the Experience you want to test.
 
-   ![You can select the Experience where you plan to run your A/B Test](./creating-ab-tests/images/04.png)
+1. In the Control Menu, click *A/B Testing* (![A/B Test icon](../../../images/icon-ab-testing.png)).
 
 1. Click *Create Test*.
+
+   ![Click create test to get started.](./creating-ab-tests/images/04.png)
+
 1. Enter a *Test Name* and optionally, a *Description*.
+
 1. Select the goal to track with your test:
 
    - *Bounce Rate*: Percentage of those who visit, don't exhibit any activity (like *click* or *scroll*), and navigate away without visiting another page.

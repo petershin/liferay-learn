@@ -12,7 +12,7 @@ The *Estimated Time to Declare Winner* provides an estimation of the test durati
 
 ![A/B Test Run Configurations are tunable to your requirements.](running-and-monitoring-ab-tests/images/01.png)
 
-After you create the test, review the test status and the history of completed and terminated A/B Tests by clicking the *A/B Testing* button (![A/B Test icon](../../../images/icon-ab-testing.png)). Starting with Liferay DXP 7.3, you can also view the A/B Test status for an experience through the [experience selection dialog](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md).
+After you create the test, review the test status by clicking the *A/B Testing* button (![A/B Test icon](../../../images/icon-ab-testing.png)).
 
 Liferay DXP only shows your test's status and the winner when the test finishes. You can manage the other aspects of your A/B Test in Analytics Cloud. For more information, see [A/B Testing](https://learn.liferay.com/analytics-cloud/latest/en/optimization/a-b-testing.html) in the the Analytics Cloud documentation.
 
@@ -31,7 +31,7 @@ Before running a test, you must create an A/B Test. For more information, read [
 1. Optionally, configure the *Traffic Split* and *Confidence Level Required* settings for your test.
 1. Click *Run* and then click *OK*.
 
-You can cancel a running test at any time by clicking *Terminate Test*. A record of the tests completed or canceled is available under the History tab. To delete an A/B Test, you must terminate the test first.
+You can cancel a running test at any time by clicking *Terminate Test*. To delete an A/B Test, you must terminate the test first.
 
 ## Related Information
 

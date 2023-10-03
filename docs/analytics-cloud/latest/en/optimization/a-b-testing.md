@@ -11,15 +11,15 @@ Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When c
 
 ![The Tests menu displays all A/B tests created and defined for a site.](a-b-testing/images/01.png)
 
-For drafted A/B tests, you can configure these details:
+For drafted A/B tests, you can view these details:
 
 * Target: the experience and user segment.
 * Metric: the goal to track (e.g., bounce rate or click).
 * Variant: the page variant for users to interact with.
-* Traffic Split: the percentage of visitors randomly split between the original and the variant.
-* Confidence Level: the accuracy of the test results.
 
 ![This A/B test is configured and ready to run.](a-b-testing/images/02.png)
+
+To see the A/B test page in DXP, click the _Review_ button. To delete the A/B test, click the _Delete_ button.
 
 Once your A/B test is running, Analytics Cloud offers these reports to keep you up-to-date on its progress:
 
@@ -68,6 +68,7 @@ An A/B test is always characterized with a status after it starts. These include
 * [Test is Running](#test-is-running)
 * [Winner Declared](#winner-declared)
 * [No Clear Winner](#no-clear-winner)
+* [Test Terminated](#test-terminated)
 
 ### Test is Running
 
@@ -97,3 +98,13 @@ Once your A/B test finishes successfully, a winner is declared (i.e. the variant
 Sometimes, Analytics Cloud cannot determine a winner because no variant has outperformed significantly over the control page. In this case, you can complete the test without publishing and the control remains the default experience.
 
 ![Lack of performance by a variant can lead to an A/B test without a clear winner. ](a-b-testing/images/09.png)
+
+### Test Terminated
+
+The test status will show as terminated if the A/B test is terminated before a winner is declared. The results up until test termination are shown. 
+
+![A test that is ended early will show as a terminated test.](./a-b-testing/images/10.png)
+
+Note, a terminated A/B test has not reached the specified confidence level and inherently has less reliable results.
+
+Choose to publish the change by clicking the _Publish_ button. Or delete the A/B test by clicking _Delete_.

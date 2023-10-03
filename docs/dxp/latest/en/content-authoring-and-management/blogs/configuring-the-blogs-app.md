@@ -17,7 +17,7 @@ You can control how the app behaves for all blogs in your site.
 
 ![Export/import the blogs app's content.](configuring-the-blogs-app/images/02.png)
 
-**Entries Permissions:** Configure the permissions for blog entries. You can control which roles can add an entry, configure entry permissions, and subscribe to entries.
+**Entries Permissions:** Configure the [permissions](./blog-permissions-reference.md) for blog entries. You can control which roles can add an entry, configure entry permissions, and subscribe to entries.
 
 **Configuration:** Configure the following options for the blogs app, in these tabs:
 
@@ -31,8 +31,8 @@ You can control how the app behaves for all blogs in your site.
 
 **RSS:** Enable RSS subscription and choose how blogs are published to RSS readers.
 
-- *Maximum Items to Display:* Choose the total number of RSS feed entries to display on the initial page. You can choose up to 100 to be displayed.
+   * *Maximum Items to Display:* Choose the total number of RSS feed entries to display on the initial page. You can choose up to 100 to be displayed.
 
-- *Display Style:* Choose between Full Content, Abstract, and Title for the entry display in the RSS feed.
+   * *Display Style:* Choose between Full Content, Abstract, and Title for the entry display in the RSS feed.
 
-- *Format:* Choose which format the RSS feed uses to deliver the entries: Atom 1.0, RSS 1.0, or RSS 2.0.
+   * *Format:* Choose which format the RSS feed uses to deliver the entries: Atom 1.0, RSS 1.0, or RSS 2.0.

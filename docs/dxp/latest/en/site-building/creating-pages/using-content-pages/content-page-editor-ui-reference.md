@@ -8,6 +8,7 @@ uuid: 7546c519-0350-4811-9577-635d4d1cddec
 Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in a content page. To open the content page editor, go to a content page and click *Edit* ( ![Edit icon](../../../images/icon-edit.png) ). This reveals the editing toolbar and sidebar, which contain tools and components for building content pages.
 
 - [Editing Toolbar](#editing-toolbar)
+
 - [Editing Sidebar](#editing-sidebar)
 
 ![Click the Edit button to access the editing toolbar and sidebar.](./content-page-editor-ui-reference/images/01.png)
@@ -70,9 +71,13 @@ By default, publishing makes your changes live immediately. However, if [workflo
 Depending on your selected editing mode, you can access these panels in the editing sidebar:
 
 - ![Fragments and Widgets](../../../images/icon-plus.png) - [Fragments and Widgets](#fragments-and-widgets)
+
 - ![Browser](../../../images/icon-hierarchy.png) - [Browser](#browser) (previously *Selection*)
+
 - ![Page Design Options](../../../images/icon-format.png) - [Page Design Options](#page-design-options)
+
 - ![Page Content](../../../images/icon-paperclip.png) - [Page Content](#page-content) (previously *Contents*)
+
 - ![Comments](../../../images/icon-message.png) - [Comments](#comments)
 
 ![The editing sidebar includes these panels.](content-page-editor-ui-reference/images/05.png)
@@ -99,7 +104,7 @@ When editing a content page, header and footer elements are not included in the 
 
 ### Page Design Options
 
-Open the Page Design Options panel ( ![Page Design Options](../../../images/icon-format.png) ) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click the Cog button ( ![Cog Button](../../../images/icon-cog3.png) ) to access additional page design options, including [front-end client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md).
+Open the *Page Design Options panel* ( ![Page Design Options](../../../images/icon-format.png) ) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click *Options* ( ![Options button](../../../images/icon-cog3.png) ) to access additional page design options, including [front-end client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md).
 
 ### Page Content
 
@@ -133,6 +138,8 @@ In the Contents panel ( ![Contents](../../../images/icon-list-ul.png) ), you can
 
 ## Related Topics
 
-- [Using Content Pages](../using-content-pages.md)
-- [Adding Elements to Content Pages](./adding-elements-to-content-pages.md)
-- [Using Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md)
+[Using Content Pages](../using-content-pages.md)
+
+[Adding Elements to Content Pages](./adding-elements-to-content-pages.md)
+
+[Using Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md)

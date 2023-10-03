@@ -15,7 +15,9 @@ To add elements,
 
    ![Add fragments and widgets from the editing sidebar.](adding-elements-to-content-pages/images/01.png)
 
-1. (Optional) After adding elements, open the *Browser* panel ( ![Browser](../../../images/icon-hierarchy.png) ) to view and manage all elements added to the page. For Liferay 7.4 U37/GA37+, you can drag and drop elements in the browser panel to reorganize them or double click elements to rename them.
+1. (Optional) After adding elements, open the *Browser* panel ( ![Browser](../../../images/icon-hierarchy.png) ) to view and manage all elements added to the page.
+
+   For Liferay 7.4 U37/GA37+, you can drag and drop elements in the browser panel to reorganize them or double click elements to rename them.
 
    ![View and manage all elements added to the page in the Browser panel.](adding-elements-to-content-pages/images/02.png)
 
@@ -31,8 +33,10 @@ To add elements,
 While editing the page, Liferay automatically saves your progress as a draft.
 ```
 
-## Related Information
+## Related Topics
 
-- [Using Content Pages](../using-content-pages.md)
-- [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md)
-- [Content Page Editor UI Reference](./content-page-editor-ui-reference.md)
+[Using Content Pages](../using-content-pages.md)
+
+[Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md)
+
+[Content Page Editor UI Reference](./content-page-editor-ui-reference.md)

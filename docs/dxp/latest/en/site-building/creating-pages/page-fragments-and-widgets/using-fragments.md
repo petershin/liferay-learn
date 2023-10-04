@@ -37,7 +37,7 @@ Page fragments are extensible and reusable drag-and-drop elements for building [
 
 ![Build content pages and templates with fragments.](./using-fragments/images/01.png)
 
-Liferay provides a variety of fragments out-of-the-box, but you can develop custom fragments using the [page fragment editor interface](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md) or [fragments toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md). Additionally, you can [embed Liferay widgets](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#including-widgets-within-a-fragment) into fragments or add editable fields. See [Developing Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn more.
+Liferay provides a variety of fragments out-of-the-box, but you can develop custom fragments using the [page fragment editor interface](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md) or the [Fragments Toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md). Additionally, you can [embed Liferay widgets](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#including-widgets-within-a-fragment) into fragments or add [editable fields](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md). See [Developing Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) to learn more.
 
 If you are working with forms, you can personalize your form fields by [mapping them to custom form fragments](./using-fragments/personalizing-custom-forms-using-form-fragments.md).
 

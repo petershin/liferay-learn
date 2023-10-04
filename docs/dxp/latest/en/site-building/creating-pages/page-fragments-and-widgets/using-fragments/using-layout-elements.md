@@ -5,9 +5,9 @@ uuid: ea588e15-3ace-4843-a66b-8d3f61f86f27
 
 {bdg-secondary}`For Liferay 7.4 U22+/GA22+`
 
-Layout elements define drop zones for designing page or template layouts. By default, Liferay includes two layout elements: [containers](#containers) and [grids](#grids). Once added, you can drag and drop widgets or other fragments into these drop zones, including additional containers or grids to create even more complex layouts. After designing a layout, you can save layout compositions to reuse them in other pages and templates. See [Saving Fragment Compositions](./saving-fragment-compositions.md) for more information.
+Layout elements define drop zones for designing page or template layouts. By default, Liferay includes two layout elements: [Containers](#containers) and [Grids](#grids). Once added, you can drag and drop widgets or other fragments into these drop zones, including additional containers or grids to create even more complex layouts. After designing a layout, you can save layout compositions to reuse them in other pages and templates. See [Saving Fragment Compositions](./saving-fragment-compositions.md) for more information.
 
-![The container and grid fragments are for designing page layouts.](./using-layout-elements/images/01.png)
+![The Container and Grid fragments are for designing page layouts.](./using-layout-elements/images/01.png)
 
 When you create a new page or template that supports fragments, a default drop zone appears. You can add any fragment to this area, but using the container fragment as the first element in your composition has important advantages:
 
@@ -48,6 +48,8 @@ The grid fragment adds multiple drop zone modules to a page or template. These m
 
 ## Related Topics
 
-* [Default Fragments Reference](./default-fragments-reference.md)
-* [Saving Fragment Compositions](./saving-fragment-compositions.md)
-* [Configuring Fragments](./configuring-fragments.md)
+[Default Fragments Reference](./default-fragments-reference.md)
+
+[Saving Fragment Compositions](./saving-fragment-compositions.md)
+
+[Configuring Fragments](./configuring-fragments.md)

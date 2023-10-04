@@ -37,7 +37,7 @@ The Styles tab includes standard options for configuring a fragment's style, inc
 
 ## Advanced
 
-The Advanced tab includes more advanced or technical configurations. This includes hiding fragments from search results, changing the HTML generated on a page, or adding your own CSS. See [Advanced Settings Reference](./configuring-fragments/advanced-settings-reference.md) for more information.
+The Advanced tab includes more advanced or technical configurations. This includes hiding fragments from search results, changing the HTML generated on a page, or adding custom CSS. See [Advanced Settings Reference](./configuring-fragments/advanced-settings-reference.md) for more information.
 
 ## Fragment Sub-Element Settings
 

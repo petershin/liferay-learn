@@ -18,19 +18,15 @@ Before creating new fragments, you must first create a new fragment set to put t
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*.
 
-    ```{note}
     In Liferay DXP 7.1 and 7.2, open the *Product Menu*, and go to *Site* &rarr; *Site Builder* &rarr; *Page Fragments*.
-    ```
 
 1. Click *Add* ( ![Add Button](../../../images/icon-plus.png) ) next to Fragment Sets.
 
-   ![Click the add button next to Fragment Sets.](./using-the-fragments-editor/images/01.png)
+    ![Click the add button next to Fragment Sets.](./using-the-fragments-editor/images/01.png)
 
 1. Enter a *name* and *description* for the new set.
 
-    ```{tip}
-    Create sets that group fragments by functionality or by teams and departments.
-    ```
+    You can create sets that group fragments by functionality or by teams and departments, for example.
 
 1. Click *Save*.
 
@@ -39,26 +35,20 @@ Once saved, you can add fragments to the set.
 ## Creating a New Fragment
 
 ```{important}
-To create a React fragment, use the [fragments toolkit](./using-the-fragments-toolkit.md).
+To create a React fragment, use the [Fragments Toolkit](./using-the-fragments-toolkit.md).
 ```
 
 Follow these steps to create a fragment:
 
 1. Go to the desired fragment set and click *Add* ( ![Add button](../../../images/icon-add.png) ) to create a new fragment.
 
-   ![Go to the desired fragment set and click the Add button.](./using-the-fragments-editor/images/02.png)
+    ```{note}
+    Prior to Liferay DXP 7.3, a fragment could either be a Section or a Component. In Liferay DXP 7.3+, all page fragments are components.
+    ```
 
-   ```{note}
-   Prior to Liferay DXP 7.3, a fragment could either be a Section or a Component. In Liferay DXP 7.3+, all page fragments are Components.
-   ```
-
-1. Select the fragment type you want to use (Basic Fragment or [Form Fragment](../developing-page-fragments/creating-form-fragments.md)), and click *Next*.
-
-    ![Select the fragment type](./using-the-fragments-editor/images/03.png)
+1. Choose a fragment type, either Basic or [Form](../developing-page-fragments/creating-form-fragments.md), and click *Next*.
 
 1. Enter a name for the fragment and click *Add*.
-
-    ![Enter a name for the new fragment.](./using-the-fragments-editor/images/04.png)
 
 1. In the Code tab, use the HTML, CSS, and JavaScript fields to add your fragment's resources. Here, you can also see a live preview of your fragment's appearance in different device contexts.
 
@@ -67,8 +57,6 @@ Follow these steps to create a fragment:
     * Enter an open angle bracket (`<`) to access standard HTML tags and Liferay's fragment-specific tags.
 
     * Start an element attribute with `data` to access Liferay's [editable fragment attributes](../reference/fragments/fragment-specific-tags-reference.md) .
-
-    ![Liferay's editable fragment attributes are available in the editor.](./using-the-fragments-editor/images/05.png)
 
     The example below adds a card component with editable text:
 
@@ -99,11 +87,11 @@ Follow these steps to create a fragment:
     }
     ```
 
-    ![Add HTML, CSS, and Javascript resources to the fragment and see a live preview.](./using-the-fragments-editor/images/06.png)
+    ![Add HTML, CSS, and Javascript resources to the fragment and see a live preview.](./using-the-fragments-editor/images/02.png)
 
 1. In the Configuration tab, use the `JSON` field to add [configuration options](./adding-configuration-options-to-fragments.md) to a page fragment.
 
-   ![Add configuration options to a page fragment.](./using-the-fragments-editor/images/07.png)
+    ![Add configuration options to a page fragment.](./using-the-fragments-editor/images/03.png)
 
     ```{tip}
     You can add a `configurationRole` value to any field set (alongside the `fields` object in the JSON) to specify which tab the associated fields appear in. Set the value as `styles` to make the fields appear in the Styles tab, or set it to `advanced` to make them appear in the Advanced tab (*only in Liferay DXP versions U23+ or GA23+*). If no `configurationRole` is set, then they appear in the General tab by default.
@@ -111,7 +99,7 @@ Follow these steps to create a fragment:
 
 1. Click *Publish* to save your fragment and make it available for use in [content pages](../../creating-pages/understanding-pages/understanding-pages.md#content-pages).
 
-    ![The fragment can be used in content pages.](./using-the-fragments-editor/images/08.png)
+    ![The fragment can be used in content pages.](./using-the-fragments-editor/images/04.png)
 
 While developing a fragment, changes are automatically saved as a draft until your fragment is published. Once added to a set, you can copy, export, edit, and remove a fragment at any time in the fragments editor. See [Managing Fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) for more information on available actions for page fragments.
 
@@ -121,5 +109,6 @@ Since Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+, you can create page frag
 
 ## Related Topics
 
-* [Using the Fragments Toolkit](./using-the-fragments-toolkit.md)
-* [Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)
+[Using the Fragments Toolkit](./using-the-fragments-toolkit.md)
+
+[Adding Configuration Options to Fragments](./adding-configuration-options-to-fragments.md)

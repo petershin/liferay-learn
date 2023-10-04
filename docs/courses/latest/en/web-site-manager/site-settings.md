@@ -22,13 +22,13 @@ As you make these changes, you'll navigate with these menus:
 
 ![The Control Menu, Global Menu, and Site Menu are all key parts of the interface you'll use to change your site's settings.](./site-settings/images/01.png)
 
-* The **Control Menu** is the bar at the top of the screen, which includes context-specific controls for the page you're on. For example, on a site that you have administrative permissions for (like the image above), you can see buttons to edit ( ![Edit icon](../images/icon-edit.png) ) or configure ( ![Configure icon](../images/icon-cog.png) ) the page. It also includes the button to show or hide the Site Menu ( ![Site Menu icon](../images/icon-product-menu-open.png) ) and the Global Menu ( ![Global Menu icon](../images/icon-applications-menu.png) ). If you don't have permission to view the Control Menu menu, you can't access either of these other menus.
+* The **Control Menu** is the bar at the top of the screen, which includes context-specific controls for the current page. For example, on a site where you're an administrator (like the image above), you can see buttons to edit ( ![Edit icon](../images/icon-edit.png) ) or configure ( ![Configure icon](../images/icon-cog.png) ) the page. It also includes the button to show or hide the Site Menu ( ![Site Menu icon](../images/icon-product-menu-open.png) ) and the Global Menu ( ![Global Menu icon](../images/icon-applications-menu.png) ). If you don't have permission to view the Control Menu, you can't access either of these other menus.
 
-* The **Global Menu** ( ![Global Menu icon](../images/icon-applications-menu.png) ) is a group of menus that you can switch between with the tabs at the top: the *Applications Menu*, the *Commerce Menu*, and the *Control Panel*. You can also switch to a different site context via the links on the right.
+* The **Global Menu** ( ![Global Menu icon](../images/icon-applications-menu.png) ) groups the *Applications Menu*, the *Commerce Menu*, and the *Control Panel* into tabs. You can also switch to a different site context via the links on the right.
 
 ![The Global Menu incorporates the Applications Menu, Commerce Menu, and Control Panel.](./site-settings/images/02.png)
 
-* The **Site Menu** is broken into various other menus for things on the site you are managing. You must have have the *Access in Site and Asset Library Administration* permission for each type of content or setting to see it in the Site Menu.
+* The **Site Menu** is broken into various other menus for aspects of the current site. You must have the *Access in Site and Asset Library Administration* permission for each type of content or setting to see it in the Site Menu.
 
 ![You must have permission to see each specific menu option in the Site Menu.](./site-settings/images/03.png)
 

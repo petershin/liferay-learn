@@ -7,6 +7,8 @@ Now that you've made the first changes to the public Clarity site, you're ready 
 
 Since the instance settings changes are done, Kyle doesn't need to make the rest of the changes himself. Log out and log back in as Preston Palmer, your public site administrator, before you begin.
 
+<!-- I meant to actually pick a name from that spreadsheet or create one, and then put it here, not put a placeholder in. I'd like to get this published ASAP. -Rich -->
+
 ## Add a Site Description
 
 Now the Clarity site needs a description to match its purpose as a public marketplace.

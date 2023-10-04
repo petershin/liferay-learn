@@ -9,7 +9,7 @@ When you're using DXP's template editor, you can find variables on the right sid
 
 1. Open the *Site Menu*( ![Site Menu](../../../images/icon-product-menu.png) ) and select *Content & Data* &rarr; *Web Content*.
 
-1. Click on the *Templates* tab and click *Add*( ![Add Fremarker(.ftl)](../../../images/icon-add.png) ).
+1. Click the *Templates* tab and click *Add*( ![Add Fremarker(.ftl)](../../../images/icon-add.png) ).
 
 1. Select the *Elements* tab on the right side of the page.
 

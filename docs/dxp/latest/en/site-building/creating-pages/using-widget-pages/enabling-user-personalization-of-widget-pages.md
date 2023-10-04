@@ -3,11 +3,9 @@ uuid: 61ceeffc-f4d1-4ed7-b6da-b6ed011dd710
 ---
 # Enabling User Personalization of Widget Pages
 
-Administrators can designate some or all sections (rows and columns of the page layout) of a widget page as customizable for site members. Page customizations only appear for the user who made the customizations. The steps below cover these topics:
+Administrators can designate some or all sections (rows and columns of the page layout) of a widget page as customizable for site members.
 
-- [Enabling Page Customizations](#enabling-page-customizations)
-- [Customizing Pages](#customizing-pages)
-- [Granting Roles Permission to Customize Pages](#granting-roles-permission-to-customize-pages)
+Page customizations made in those customizable areas only appear for the user who made the customizations.
 
 ## Enabling Page Customizations
 
@@ -19,7 +17,7 @@ Administrators can designate some or all sections (rows and columns of the page 
 
 1. Check the *Customizable* checkbox.
 
-    ![To enable page customizations, click on the Configure Page button next to the page, expand the Customization Settings area, and click on the Customizable button.](./personalizing-pages/images/01.png)
+    ![To enable page customizations, click on the Configure Page button next to the page, expand the Customization Settings area, and check Customizable option.](./personalizing-pages/images/01.png)
 
 1. Toggle the *Not Customizable* option to *Customizable* for each section you want to make customizable.
 
@@ -58,8 +56,6 @@ By default, site members can make page customizations but non-site members and g
 
 1. Scroll down to the Page section under the Resource Permissions heading and check the *Customize* permission.
 
-1. Scroll down and click *Save* to apply the changes.
+    Users can customize the look and feel of apps and import or export app settings with the Customize permission.
 
-```{note}
-The Customize permission also lets users customize the look and feel of apps and import or export app settings.
-```
+1. Scroll down and click *Save* to apply the changes.

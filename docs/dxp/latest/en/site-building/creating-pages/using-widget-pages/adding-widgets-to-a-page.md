@@ -5,6 +5,10 @@ uuid: 73b29e35-51d6-4fd0-822a-62a1fa316430
 
 Widgets are applications. They can be simple, and only used to [display content](../../displaying-content.md), or they can be full-featured collaboration applications, like the [Message Boards widget](../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md).
 
+```{note}
+Widgets are rendered according to [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) on widget pages.
+```
+
 Follow these steps to add a widget to a widget page:
 
 1. Navigate to the widget page and click *Add* ( ![Add](../../../images/icon-add-app.png) ) in the application bar.
@@ -21,12 +25,10 @@ Follow these steps to add a widget to a widget page:
 In DXP 7.3+, you can click the eye icon at the top of any widget page to toggle the widget controls for all widgets. When disabled, the widget controls do not pop up when you hover your cursor over them.
 ```
 
-```{note}
-Widgets are rendered according to [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) on widget pages.
-```
-
 ## Related Topics
 
-- [Converting Widget Pages to Content Pages](./converting-widget-pages-to-content-pages.md)
-- [Enabling User Personalization of Widget Pages](./enabling-user-personalization-of-widget-pages.md)
-- [Analyze Content Metrics Using the Content Performance Tool](../../../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)
+[Converting Widget Pages to Content Pages](./converting-widget-pages-to-content-pages.md)
+
+[Enabling User Personalization of Widget Pages](./enabling-user-personalization-of-widget-pages.md)
+
+[Analyze Content Metrics Using the Content Performance Tool](../../../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)

@@ -5,9 +5,7 @@ uuid: 5f0ba6e5-f3ed-42be-9dac-78e3d3dcb889
 
 Now that you've made the first changes to the Delectable Bonsai site, you're ready to change more site-specific settings.
 
-Since the instance settings changes are done, Kyle doesn't need to make the rest of the changes himself. Log out and log back in as NAME NAME, your public site administrator, before you begin.
-
-<!-- TODO: update with the actual public site administrator's name once it's been added to the imported users -->
+Since the instance settings changes are done, Kyle doesn't need to make the rest of the changes himself. Log out and log back in as Preston Palmer, your public site administrator, before you begin.
 
 ## Add a Site Description
 

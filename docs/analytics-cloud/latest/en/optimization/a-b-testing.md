@@ -3,11 +3,11 @@ uuid: 551f4c6e-7cc4-4b94-b46f-681f15d265a0
 ---
 # A/B Testing
 
-A/B testing evaluates the effectiveness of content pages by testing two versions of a page at once. This process involves creating a page variant, testing them with a metric (e.g., clicks), and publishing the most effective variant. These tests can help you choose the best experience for your site's users.
+A/B testing evaluates the effectiveness of content pages by testing a variant design against the original design (i.e. control). This process involves creating a page variant, testing them with a metric (e.g., clicks), and publishing the most effective variant. These tests can help you choose the best experience for your site's users.
 
 You can learn more about creating an A/B test and configuring it for a content page in Liferay DXP's [A/B testing documentation](https://learn.liferay.com/dxp/latest/en/site-building/optimizing-sites/ab-testing/ab-testing.html).
 
-Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When created, tests are synced automatically with Analytics Cloud. To view the status of your A/B tests, click _Test_ in the menu on the left.
+Analytics Cloud tracks all results from A/B tests running in Liferay DXP. When created, tests are synced automatically with Analytics Cloud. To view your A/B tests, click _Test_ in the menu on the left.
 
 ![The Tests menu displays all A/B tests created and defined for a site.](a-b-testing/images/01.png)
 
@@ -31,19 +31,21 @@ Once your A/B test is running, Analytics Cloud offers these reports to keep you 
 
 The Summary panel provides an overview of test details, including completion percentage, running time (in days), and total visitor sessions.
 
-It also provides a quick summary of metric details and the current best performing variant.
+It also provides a quick summary of metric details and how the variant is performing against the control.
 
-![The Summary panel provides an overview of your test.](a-b-testing/images/03.png)
+![The summary panel provides an overview of your test.](a-b-testing/images/03.png)
 
 ## Variant Report
 
-The Variant Report panel provides a detailed breakdown of the variant and how well it is performing.
+The Variant report panel provides a detailed breakdown of how the variant is performing against the control.
 
-![The Variant Report panel provides a detailed breakdown of the variant and how well it is performing.](a-b-testing/images/04.png)
+![The Variant report panel provides a detailed breakdown of the variant and how well it is performing.](a-b-testing/images/04.png)
 
-Below are the metrics reported for each variant:
+Below are the metrics reported:
 
 **Median:** The middle number in the set of sample values. This estimates a typical user's behavior.
+
+**Bounce Rate or Click Through Rate:** The percentage of bounce rate or click through rate of the control and the variant. The displayed metric is based on which type of A/B test was selected.
 
 **Confidence Interval:** The range of values expected to contain the true mean of the population. For example, a 95% confidence interval is a range of values that the system is 95% sure contains the true mean. This gives the range of possible values that seem plausible for the measured goal.
 
@@ -86,7 +88,7 @@ Large amounts of traffic (i.e. several thousand hits a day) is expected for an A
 
 ### Winner Declared
 
-Once your A/B test finishes successfully, a winner is declared (i.e. the variant or the control). From here, you can perform these actions:
+Once your A/B test finishes successfully, a winner is declared (i.e. the variant or the control won). From here, you can perform these actions:
 
 * Publish the winner as your default experience.
 * Delete the test without publishing any changes.
@@ -101,7 +103,7 @@ Sometimes, Analytics Cloud cannot determine a winner because the variant has not
 
 ### Test Terminated
 
-The test status will show as terminated if the A/B test is terminated before a winner is declared. 
+The test status will show as terminated if the A/B test is terminated before a winner is determined. 
 
 ![A test that is ended early will show as a terminated test.](./a-b-testing/images/10.png)
 

@@ -10,7 +10,7 @@ Publications provides a convenient way to manage changes to your Liferay instanc
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/YNOLwu19oBk
 
 ```{note}
-By default, users can only use the publications they've created. However, they can invite other users to collaborate on their publications. See [Collaborating on Publications](./collaborating-on-publications.md) for more information.
+By default, users can only contribute to publications they've created. However, they can invite other users to collaborate on their publications. See [Collaborating on Publications](./collaborating-on-publications.md) for more information.
 ```
 
 If you haven't already created a publication to track your changes, see [Creating a New Publication](./creating-and-managing-publications.md#creating-a-new-publication) for more information.
@@ -29,15 +29,15 @@ If you're not currently in the desired publication, click on *Select a Publicati
 
 ![Click on Select a Publication and choose the desired publication.](./making-and-publishing-changes/images/01.png)
 
-While working on a publication, any changes made to supported Liferay components are tracked in the publication. This can include changes across multiple Sites.
+While working on a publication, any changes made to supported Liferay components are tracked in the publication. This can include changes across multiple sites.
 
 ```{important}
-When editing different Sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
+When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
 ```
 
 When you add, edit, or remove assets in a publication, your changes are only visible in the publication where they're made.
 
-Each application controls which parts of an asset are trackable by publications. However, even widgets related to applications and content types that don't support Publications can be added to your publication as part of a Page.
+Each application controls which parts of an asset are trackable by publications. However, even widgets related to applications and content types that don't support Publications can be added to your publication as part of a page.
 
 ```{note}
 When you delete an asset in a publication, DXP marks it for deletion and hides it when viewing the publication. The asset remains viewable to production and any other publications, since its removal in a publication is only a logical deletion.
@@ -91,7 +91,7 @@ Once selected, you can view each page version individually or select Split View 
 
 ## Publishing Your Changes
 
-When you've finished making your changes, you can publish them immediately or schedule them to be published at a later time. Once published, a publication is listed in the *History* tab of the Publications application. This maintains a clear audit trail that you can use review and revert Site changes when needed. See [Reverting Changes](./reverting-changes.md) for more information.
+When you've finished making your changes, you can publish them immediately or schedule them to be published at a later time. Once published, a publication is listed in the *History* tab of the Publications application. This maintains a clear audit trail that you can use review and revert site changes when needed. See [Reverting Changes](./reverting-changes.md) for more information.
 
 When you begin the publishing process, Liferay performs a compatibility check to determine if there are any conflicts between the publication and production. If there are conflicts, DXP notifies you. While some conflicts are resolved automatically, others require manual resolution. Resolving all conflicts is necessary for publishing changes. See [Resolving Conflicts](./resolving-conflicts.md) for more information.
 

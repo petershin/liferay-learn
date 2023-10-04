@@ -3,13 +3,15 @@ uuid: faa4a458-c7c6-4b61-a08f-37cb58873c58
 ---
 # Configuring Remote Live Staging
 
-With *Remote Live Staging*, your Staging and Live environments are hosted on separate Liferay servers. When enabled, the Site or Asset Library used to configure Staging becomes your Staging environment, and the remote server becomes your Live environment.
+With Remote Live staging, your staging and live environments are hosted on separate Liferay servers. When enabled, the site or asset library used to configure staging becomes your staging environment, and the remote server becomes your live environment.
 
-Before enabling Remote Live Staging, you must configure the Liferay servers you want to use for your Staging and Live environments. You must also create a new blank Site or Asset Library on your Remote server and use its ID during Staging configuration.
+![Remote staging hosts the environments on separate Liferay servers.](./configuring-remote-live-staging/images/01.png)
+
+Before enabling Remote Live staging, you must configure the Liferay servers you want to use for your staging and live environments. You must also create a new blank site or asset library on your remote server and use its ID during staging configuration.
 
 ## Preparing Your Liferay Servers
 
-If you haven't already, follow these steps to configure your Liferay servers for Remote Live Staging:
+If you haven't already, follow these steps to configure your Liferay servers for Remote Live staging:
 
 1. Specify a shared authentication key for your servers by adding the following properties to a [`portal-ext.properties`](../../../installation-and-upgrades/reference/portal-properties.md) file for both Liferay servers:
 
@@ -46,7 +48,7 @@ If you haven't already, follow these steps to configure your Liferay servers for
 
    Click */api/liferay/do* and insert the additional IP addresses you're using in the *Hosts Allowed* field. When finished, click on *Update*.
 
-   ![Update the remote instance's Tunnel Authentication Verifier Configuration via the Control Panel.](./configuring-remote-live-staging/images/01.png)
+   ![Update the remote instance's Tunnel Authentication Verifier Configuration via the Control Panel.](./configuring-remote-live-staging/images/02.png)
 
    ```{note}
    While it is enabled by default, ensure each Liferay server's tunneling servlet [authentication verifier](../../../installation-and-upgrades/securing-liferay/securing-web-services/using-authentication-verifiers.md) is enabled.
@@ -63,25 +65,25 @@ If you haven't already, follow these steps to configure your Liferay servers for
 
 1. Restart both Liferay servers to implement your changes.
 
-Once restarted, both servers are ready for Staging configuration.
+Once restarted, both servers are ready for staging configuration.
 
 ```{important}
-When applying patches to a remote Staging environment, you must apply them to all your servers. Having servers on different patch levels is not a good practice and can lead to import failures and data corruption. It is essential that all servers are updated to the same patch level to ensure remote Staging works correctly.
+When applying patches to a remote staging environment, you must apply them to all your servers. Having servers on different patch levels is not a good practice and can lead to import failures and data corruption. It is essential that all servers are updated to the same patch level to ensure remote staging works correctly.
 ```
 
 ## Setting Up Remote Live Staging
 
-Once you've prepared your Liferay servers, follow these steps to set up Remote Live Staging for a Site or Asset Library:
+Once you've prepared your Liferay servers, follow these steps to set up Remote Live staging for a site or asset library:
 
-1. Open the Staging application in your Site or Asset Library.
+1. Open the Staging application in your site or asset library.
 
    For Sites, go to *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) &rarr; *Publishing* &rarr; *Staging*.
 
-   For Asset Libraries, go to *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Applications tab* &rarr; *Asset Libraries*. Then open the desired Asset Library and click on *Staging* under Publishing.
+   For asset libraries, go to *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Applications tab* &rarr; *Asset Libraries*. Then open the desired asset library and click on *Staging* under Publishing.
 
 1. Select *Remote Live*. This reveals additional configuration fields.
 
-   ![Select Remote Live Staging.](./configuring-remote-live-staging/images/02.png)
+   ![Select Remote Live staging.](./configuring-remote-live-staging/images/03.png)
 
 1. Enter the following Remote Live Connection details:
 
@@ -96,44 +98,44 @@ Once you've prepared your Liferay servers, follow these steps to set up Remote L
    ```{note}
    If you're configuring an IPv6 address, it must contain brackets when entered into the *Remote Host/IP* field (e.g., [0:0:0:0:0:0:0:1]).
 
-   If the Remote server is a cluster, you can set the Remote Host/IP to the cluster's load balanced IP address to increase the availability of the publishing process. See the [Configuring Remote Staging in a Clustered Environment](https://help.liferay.com/hc/en-us/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment) for details.
+   If the remote server is a cluster, you can set the Remote Host/IP to the cluster's load balanced IP address to increase the availability of the publishing process. See the [Configuring Remote Staging in a Clustered Environment](https://help.liferay.com/hc/en-us/articles/360018175251-Configuring-Remote-Staging-in-a-Clustered-Environment) for details.
    ```
 
-1. Determine whether to use a secure network connection (i.e., HTTPS) for publishing Pages from Staging to Live.
+1. Determine whether to use a secure network connection (i.e., HTTPS) for publishing pages from staging to live.
 
-1. Determine whether to define manually the remote URL used for the Site or Asset Library.
+1. Determine whether to define manually the remote URL used for the site or asset library.
 
-1. (For Sites only) Select whether you want *Page Versioning* enabled.
+1. (For Sites Only) Select whether you want *Page Versioning* enabled.
 
-   ![Enable Page Versioning.](./configuring-local-live-staging/images/03.png)
+   ![Enable Page Versioning.](./configuring-local-live-staging/images/04.png)
 
 1. Select the *data* and *content* types you want to stage.
 
-   Asset Libraries only support staging data for the Documents and Media and Web Content applications.
+   Asset libraries only support staging data for the Documents and Media and Web Content applications.
 
-   With Sites, you can stage data for any of the following applications.
+   With sites, you can stage data for any of the following applications.
 
-   ![Select the data and content types you want to stage.](./configuring-remote-live-staging/images/04.png)
+   ![Select the data and content types you want to stage.](./configuring-remote-live-staging/images/05.png)
 
    ```{warning}
-   When applications are checked, their data is copied, and it may not be possible to edit them directly on the live Site. When unchecking an application, first make sure that any changes in Staging are published, since they may be lost. See [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md) for more information.
+   When applications are checked, their data is copied, and it may not be possible to edit them directly on the live site. When unchecking an application, first make sure that any changes in staging are published, since they may be lost. See [Managing Data and Content Types in Staging](./managing-data-and-content-types-in-staging.md) for more information.
    ```
 
-1. Click *Save* to initiate the Staging process. The duration of this process depends on the size of your Site or Asset Library.
+1. Click *Save* to initiate the staging process. The duration of this process depends on the size of your site or asset library.
 
    ```{note}
-   If your attempt to enable Remote Live Staging fails, please verify that you've properly prepared your servers.
+   If your attempt to enable Remote Live staging fails, please verify that you've properly prepared your servers.
    ```
 
-Once the process is complete, you are ready to use Remote Live Staging. See [Site Staging UI Reference](./site-staging-ui-reference.md) for information about navigating the Staging environment's publishing features.
+Once the process is complete, you are ready to use Remote Live staging. See [Site Staging UI Reference](./site-staging-ui-reference.md) for information about navigating the staging environment's publishing features.
 
 ## Remote Live Staging Permissions
 
-When a User attempts to publish changes from Staging to Live, Liferay passes the User's email address, screen name, or User ID to the remote server to perform a permission check. To succeed, the publishing User must have identical credentials and permissions on both servers.
+When a user attempts to publish changes from staging to live, Liferay passes the user's email address, screen name, or user ID to the remote server to perform a permission check. To succeed, the publishing user must have identical credentials and permissions on both servers.
 
-To give a local User permission to publish changes from staging to production/live, create an identical User account with identical permissions for the User on the remote server.
+To give a local user permission to publish changes from staging to production/live, create an identical user account with identical permissions for the user on the remote server.
 
-To simplify this process, you can use LDAP to copy selected User accounts from your local server to your remote server. See [Connecting to an LDAP Directory](../../../users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) for more information.
+To simplify this process, you can use LDAP to copy selected user accounts from your local server to your remote server. See [Connecting to an LDAP Directory](../../../users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.md) for more information.
 
 ## Configuring Remote Staging's Buffer Size
 
@@ -147,23 +149,23 @@ This property sets the file block sizes for remote staging. If a LAR file used f
 
 ## Disabling Remote Live Staging
 
-Disabling Remote Live Staging disables the connection between your environments without deleting any data. Since no data is erased and no processes are started, disabling Remote Live Staging is almost instantaneous.
+Disabling Remote Live staging disables the connection between your environments without deleting any data. Since no data is erased and no processes are started, disabling Remote Live staging is almost instantaneous.
 
 ```{warning}
-When you disable remote Staging, you must ensure the Live Site or Asset Library is still accessible so both sides can communicate. Do not shut down your Live environment. If the network connection is ever lost between environments, an error message appears and instructs you to forcibly disable Staging.
+When you disable remote staging, you must ensure the live site or asset library is still accessible so both sides can communicate. Do not shut down your live environment. If the network connection is ever lost between environments, an error message appears and instructs you to forcibly disable staging.
 
-Forcibly disabling Staging erases your Staging information from your staging server, not the content. The Live environment remains in a locked state. A possible workaround is to create a new Live Site or Asset Library and import content to it, if necessary.
+Forcibly disabling staging erases your staging information from your staging server, not the content. The live environment remains in a locked state. A possible workaround is to create a new live site or asset library and import content to it, if necessary.
 ```
 
 Follow these steps to disable Remote Live Staging:
 
-1. Open the Staging application in your Site or Asset Library.
+1. Open the Staging application in your site or asset library.
 
 1. Click the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) located in the Application bar and select *Staging Configuration*.
 
-   ![Click the Actions button in the Application bar, and select Staging Configuration](./configuring-remote-live-staging/images/05.png)
+   ![Click the Actions button in the Application bar, and select Staging Configuration](./configuring-remote-live-staging/images/06.png)
 
-1. Select *None* for your Staging configuration and click *Save*.
+1. Select *None* for your configuration and click *Save*.
 
 ## Related Topics
 

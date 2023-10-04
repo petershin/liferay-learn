@@ -8,7 +8,7 @@ Starting with Liferay 7.4, Liferay adopted a rolling release model for deliverin
 | Software | Version |
 | :--- | :--- |
 | Liferay Portal | 7.4.3.XX GAXX |
-| Liferay DXP | DXP YEAR.QUARTER |
+| Liferay DXP | YEAR.QUARTER |
 
 ## Liferay Portal Versioning
 

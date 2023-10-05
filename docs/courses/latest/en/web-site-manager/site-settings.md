@@ -6,7 +6,7 @@ uuid: f77b9dc7-1187-41bb-9af4-a8f5912f532f
 ---
 # Site Settings
 
-To get started managing Clarity's public website, you'll first need to establish some basic settings. Site settings encompass everything from the site's name and logo, to its URL and membership policy. Help Clarity's administrators configure all of these settings to set the foundation for adding in pages and content.
+To get started managing Clarity's public website, you must first establish some basic settings. Site settings encompass everything from the site's name and logo, to its URL and membership policy. Help Clarity's administrators configure all of these settings to set the foundation for adding in pages and content.
 
 Some settings are safe to enable for most kinds of sites, such as enabling an accessibility menu for users. Other settings, such as the site's membership type, must be configured differently for different types of sites. Clarity's private intranet, for example, requires the private membership setting when you add it in a later module.
 

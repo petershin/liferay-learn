@@ -6,7 +6,8 @@ toc:
 - ./level-1-technical/experience-management.md
 - ./level-1-technical/basics-of-styling.md
 - ./level-1-technical/constructing-a-business-application.md
-
+- ./level-1-technical/extending-liferay.md
+- ./level-1-technical/deployment-strategies.md
 uuid: 465dcb4b-dbbb-412e-ac6f-c015fb44df74
 ---
 
@@ -90,6 +91,18 @@ This module explains the simple tricks that can be used to tailor the look and f
 
 The module promotes the use of Liferay Objects as a way to quickly, without writing any code, add a business application to an existing demo.
 :::
+
+:::{grid-item-card} Extending Liferay
+:link: ./level-1-technical/extending-liferay.md
+
+This module outlines all of the approaches that can be used to extend Liferay, and how to talk about them while running a demo.
+:::
+
+:::{grid-item-card} Deployment Strategies
+:link: ./level-1-technical/deployment-strategies.md
+
+This module delves deeply into the three deployment strategies available for Liferay DXP and the questions to ask to start to determine which is right for your prospect.
+:::
 ::::
 
 ## Coming Soon
@@ -97,16 +110,6 @@ The module promotes the use of Liferay Objects as a way to quickly, without writ
 The remaining modules are not quite ready yet - watch this space for updates!
 
 In the meantime, the recordings from the most recent live sessions, along with PDFs of the presentations can be found below.
-
-**Extending Liferay**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) of the presentation used in the live workshop.
-
-**Deployment Strategies**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-8-deployment-strategies) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies-pdf) of the presentation used in the live workshop.
 
 **Success Stories Analysis**
 

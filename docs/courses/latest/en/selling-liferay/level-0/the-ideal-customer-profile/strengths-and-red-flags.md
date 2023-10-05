@@ -110,17 +110,17 @@ Liferay Experience Cloud SaaS is a relatively new offering, with more being lear
 
 ### Public Sites
 
-Prospects with a goal to renew their critical public facing web site first, with additional needs for future phases are a good match for the SaaS offering.
+Prospects with a goal to renew their critical public facing web site first, but where there are additional needs for future phases, are a good match for the SaaS offering.
 
 ### Commerce Capabilities
 
-Almost all of the interviews on won opportunities revealed Commerce and Commerce capability needs, such as product catalogue, being very important to the customer in the future to improve and solve their end customers digital self service needs. 
+Almost all of the interviews on won opportunities revealed that Commerce and Commerce capability requirements, such as the product catalog, would be very important to the customer in the future to help them to improve and solve their end customers' digital self service needs. 
 
 Even though the customers started with a public website project, they appreciated the value that Liferay provides by having native commerce capabilities available and included in the subscription price.
 
 ### Integration and Low-Code-Capabilities
 
-The ability to support integrations, inclusion of low-code capabilities, a built-in workflow engine and strong security features were mentioned in several won opportunities.
+The ability to support integration, inclusion of low-code capabilities, a built-in workflow engine, and strong security features were mentioned in several won opportunities.
 
 ### 50-100K Starting Point
 

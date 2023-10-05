@@ -3,15 +3,15 @@ uuid: 5f0ba6e5-f3ed-42be-9dac-78e3d3dcb889
 ---
 # Changing Your Public Site's Settings
 
-Now that you've made the first changes to the Delectable Bonsai site, you're ready to change more site-specific settings.
+Now that you've made the first changes to the public Clarity site, you're ready to change more site-specific settings.
 
 Since the instance settings changes are done, Kyle doesn't need to make the rest of the changes himself. Log out and log back in as Preston Palmer, your public site administrator, before you begin.
 
 ## Add a Site Description
 
-Now the Delectable Bonsai site needs a description to match its purpose as a public marketplace.
+Now the Clarity site needs a description to match its purpose as a public marketplace.
 
-1. Return to the Delectable Bonsai Site.
+1. Return to the Clarity site.
 
    Visiting `localhost:8080/web/guest` redirects to the default site with a self-hosted instance.
 
@@ -21,7 +21,7 @@ Now the Delectable Bonsai site needs a description to match its purpose as a pub
 
    ![Click Site Configuration to access the general settings for your site.](./changing-your-public-sites-settings/images/01.png)
 
-1. Fill in the *Description* field: "Get your bonsai maple syrup at Delectable Bonsai!"
+1. Fill in the *Description* field: "Find the perfect glasses at Clarity!"
 
 1. Click *Save*.
 
@@ -41,7 +41,7 @@ For this site, keep the default options so any user can register for an account.
 
 Next, you'll restrict access to the site's key menus on your site. Disabling the Control Menu (the menu bar across the top of the screen) for users on your site also prevents access to the Site Menu on the left.
 
-By default, new members joining your site already won't have access to these menus because they won't have [roles with those permissions](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions). However, the Delectable Bonsai public site should still use this setting to carefully select which roles grant access to the menus.
+By default, new members joining your site already won't have access to these menus because they won't have [roles with those permissions](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions). However, the public Clarity site should still use this setting to carefully select which roles grant access to the menus.
 
 1. While on the Site Configuration page, click *Menu Access* under Site Scope.
 
@@ -55,7 +55,7 @@ Now only users with specifically chosen roles on your site (by default, only glo
 
 ## Change the Site URL
 
-The friendly URL is the part of the URL after the slash (`/`) that directs to your specific site. Configure the Delectable Bonsai's friendly URL to one that's more appropriate.
+The friendly URL is the part of the URL after the slash (`/`) that directs to your specific site. Configure the Clarity site's friendly URL to one that's more appropriate.
 
 1. While on the Site Configuration page, click *Site URL* under Site Scope.
 
@@ -79,11 +79,11 @@ Here, the upper checkbox enables a banner and a consent panel, which give users 
 
 The banner notifies users if they have not accepted the site's cookies and explains why they are needed, with an optional *Decline All* button. The consent panel helps users see and choose which types of cookies to opt into.
 
-The Delectable Bonsai site will need a web page with an explanation of the company's privacy policy to properly configure the banner and consent panel. For now, leave the option unchecked.
+The Clarity site will need a web page with an explanation of the company's privacy policy to properly configure the banner and consent panel. For now, leave the option unchecked.
 
 ## Enable the Accessibility Menu
 
-Enable the accessibility menu for the Delectable Bonsai site so users can tweak site behavior for better access and readability.
+Enable the accessibility menu for the Clarity site so users can tweak site behavior for better access and readability.
 
 1. Click the Back button at the top of the page to return to the Site Settings menu.
 

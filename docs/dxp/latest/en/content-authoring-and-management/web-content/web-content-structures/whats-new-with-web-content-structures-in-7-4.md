@@ -42,7 +42,7 @@ To work with fieldsets,
 
 1. Click *Add* ( ![Add Structure](../../../images/icon-add.png) ) to create a new structure.
 
-1. In the web content structure form builder view ( ![Form Builder Icon](../../../images/icon-builder.png) ), click the *Fieldsets* tab.
+1. In the web content structure form builder view (![Form Builder Icon](../../../images/icon-builder.png)), click the *Fieldsets* tab.
 
 1. Click *Create New Fieldset*. Name the fieldset.
 
@@ -80,7 +80,7 @@ To overwrite an existing structure's JSON,
 
 1. If there's no existing structure, [create one](./creating-structures.md) and save it.
 
-1. In the main structures list view, open the structure's *Actions* menu ( ![Actions menu](../../../images/icon-actions.png) ) and click *Import and Override*.
+1. In the main structures list view, open the structure's *Actions* menu (![Actions menu](../../../images/icon-actions.png)) and click *Import and Override*.
 
 1. Upload the JSON file.
 
@@ -94,7 +94,7 @@ To import a new structure,
 
 1. Click the *Structures* tab.
 
-1. Open the *Options* menu ( ![Options Button](../../../images/icon-actions.png) ) for web content in the upper right corner of the screen.
+1. Open the *Options* menu (![Options Button](../../../images/icon-actions.png)) for web content in the upper right corner of the screen.
 
 1. Click *Import Structure*.
 
@@ -115,7 +115,7 @@ In addition to columns, use field groups to lock a subset of the structure's fie
 ```{warning}
 You can set the structure key manually when creating a new structure (as documented below) or when [importing JSON as a new structure](#importing-a-structures-json-to-create-a-new-structure). You cannot update an existing structure's key, even when [importing and overwriting an existing structure](#importing-a-structures-json-to-overwrite-an-existing-structure).
 ```
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ) and go to the *Control Panel* tab.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and go to the *Control Panel* tab.
 
 1. Go to *Configuration* &rarr; *System Settings* &rarr; *Web Content* (under Content and Data).
 
@@ -123,7 +123,7 @@ You can set the structure key manually when creating a new structure (as documen
 
 1. Go to the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Content and Data* &rarr; *Web Content*. Open the Structures tab and add a new structure.
 
-1. Add a field and name the structure. To manually set the structure key, open the Properties sidebar by clicking the configuration icon ( ![Configuration](../../../images/icon-cog3.png) ).
+1. Add a field and name the structure. To set the structure key manually, open the *Properties sidebar* by clicking the configuration icon ( ![Configuration](../../../images/icon-cog3.png) ).
 
 1. Edit the *Structure Key* field, adding your custom value (e.g., `MY_STRUCTURE_KEY`).
 

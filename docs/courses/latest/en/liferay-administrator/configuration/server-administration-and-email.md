@@ -5,7 +5,7 @@ uuid: 453b538b-4220-43d6-9d47-05be5f8527d7
 
 You can manage and monitor your Liferay instance from the server administration console. For example, you can view the current system or portal properties or configure logging and log levels. This is also where you can configure the email server for the whole system. See [Using the Server Administration Panel](https://learn.liferay.com/en/w/dxp/system-administration/using-the-server-administration-panel) to learn more.
 
-Configure a mail server that is used for email notifications (e.g. user registration, password management, etc.). Follow the steps below to configure the mail server for Delectable Bonsai. 
+Configure a mail server that is used for email notifications (e.g. user registration, password management, etc.). Follow the steps below to configure the mail server for Clarity Vision Solutions. 
 
 ### Configuring Mail in LXC
 
@@ -38,12 +38,12 @@ In real life, you'd already have a mail server for Liferay to use. Here, you'll 
    * Incoming POP Server: `localhost`
    * Incoming Port: `110`
    * Use a Secure Network Connection: checked
-   * User Name: `support@delectablebonsai.com`
+   * User Name: `support@clarityvisionsolutions.com`
    * Password: `learn`
    * Outgoing SMTP Server: `localhost`
    * Outgoing Port: `2525`
    * Use a Secure Network Connection: checked
-   * User Name: `support@delectablebonsai.com`
+   * User Name: `support@clarityvisionsolutions.com`
    * Password: `learn`
 
    ![Enter the settings for the mail server.](./server-administration-and-email/images/01.png)
@@ -55,7 +55,7 @@ In real life, you'd already have a mail server for Liferay to use. Here, you'll 
 1. In the left navigation, click _Email Sender_. Set the options below.
 
    * Name: `Support`
-   * Address: `support@delectablebonsai.com`
+   * Address: `support@clarityvisionsolutions.com`
 
    Click _Save_.
 
@@ -64,7 +64,7 @@ In real life, you'd already have a mail server for Liferay to use. Here, you'll 
 1. Enter the following account information:
 
    * Screen Name: `alan`
-   * Email Address: `alan@delectablebonsai.com`
+   * Email Address: `alan@clarityvisionsolutions.com`
    * First Name: `Alan`
    * Last Name: `Adams`
    * Job Title: `Sales & Marketing Manager`

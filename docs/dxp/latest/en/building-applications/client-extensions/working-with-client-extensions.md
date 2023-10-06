@@ -191,21 +191,21 @@ Then copy the archives from each project's `dist/` folder into the server's `[Li
 
 ## Context-Sensitive Information
 
-Client extensions are designed to be portable: you should never hard-code environment specific details such as their domain name, their network address, or Liferay's domains. So how does a client extension find context-sensitive information about its Liferay DXP runtime context?
+Client extensions are portable: you should never hard-code environment-specific details like domain name, network address, or Liferay's domains. Client extensions can find context-sensitive information about its context at runtime. 
 
-At runtime, every client extension workload is automatically provided with a set of *routes* containing important context-sensitive metadata. With this routes-based approach, application logic can uniformly retrieve context sensitive information, regardless of where it is invoked, and you never have to hard-code this information. You only need to point your client extension projects to it.
+Every client extension workload is provided with a set of *routes* containing important context-sensitive metadata automatically. With this routes-based approach, application logic can retrieve context sensitive information uniformly, regardless of where it is invoked. You only need to point your client extension projects to it.
 
 ### Routes
 
-A *route* is a directory structure which contains a set of key/value pairs, where file names are the keys, and the file contents are the values. The directory structure is ignored and the directory path is the value of an environment variable. It follows the same pattern as [Kubernetes configMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-volume).
+A *route* is a directory structure containing a set of key/value pairs. File names are the keys, and the file contents are the values. The directory structure is ignored and the directory path is the value of an environment variable. It follows the same pattern as [Kubernetes configMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-volume).
 
 The environment variable you use can point to one of two types of routes:
 
-* `LIFERAY_ROUTES_DXP`: The directory path to the route with context-sensitive metadata for the *Liferay virtual instance* you deploy it to.
+1. `LIFERAY_ROUTES_DXP`: The directory path to the route with context-sensitive metadata for the *Liferay virtual instance* where it's deployed.
 
    Here is an example of the `LIFERAY_ROUTES_DXP` route:
 
-   ```shell
+   ```properties
    .
    # A newline-separated list of every domain belonging to the DXP virtual instance
    ├── com.liferay.lxc.dxp.domains
@@ -215,17 +215,17 @@ The environment variable you use can point to one of two types of routes:
    └── com.liferay.lxc.dxp.server.protocol
    ```
 
-* `LIFERAY_ROUTES_CLIENT_EXTENSION`: The directory path to the route which contains context-sensitive metadata for the *client extension project* itself.
+1. `LIFERAY_ROUTES_CLIENT_EXTENSION`: The directory path to the route which contains context-sensitive metadata for the *client extension project* itself.
 
    See [OAuth Headless Server Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationheadlessserver) and [OAuth User Agent Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationuseragent) for examples.
 
 ### Pointing to Routes in Liferay Experience Cloud
 
-Containers in Liferay Experience Cloud have these environment variables set automatically. The routes are automatically mounted into the containers at the paths the environment variables define.
+Containers in Liferay Experience Cloud have these environment variables set automatically. The routes are mounted automatically into the containers at the paths the environment variables define.
 
 ### Pointing to Routes in Self-Hosted Environments
 
-When using Liferay Workspace's `Exec`, `JavaExec`, and `NodeExec` Gradle tasks, these environment variables are automatically given default values. It uses these default values:
+When using Liferay Workspace's `Exec`, `JavaExec`, and `NodeExec` Gradle tasks, these environment variables are given default values automatically. It uses these default values:
 
 | **Environment variable**          | **Default value**                                               |
 | :-------------------------------- | :-------------------------------------------------------------- |

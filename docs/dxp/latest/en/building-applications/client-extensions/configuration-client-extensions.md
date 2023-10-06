@@ -31,7 +31,7 @@ type: oAuthApplicationHeadlessServer
 
 ### Special Behavior of `oAuthApplicationHeadlessServer`
 
-OAuth headless server client extensions cause a special behavior for your project when you deploy them. It creates an additional dependency on metadata which Liferay provides as a *route* (see [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information)). Any executable workload deployed with this client extension must wait for this route before it runs.
+OAuth headless server client extensions depend on metadata that Liferay provides as a *route* (see [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information)). Any executable workload deployed with this client extension must wait for this route before it runs.
 
 Here is an example of the route defined by the environment variable `LIFERAY_ROUTES_CLIENT_EXTENSION` when a `oAuthApplicationHeadlessServer` client extension is defined in the project:
 
@@ -55,7 +55,7 @@ Here is an example of the route defined by the environment variable `LIFERAY_ROU
 └── <oAuth2ApplicationExternalReferenceCode>.oauth2.token.uri
 ```
 
-Application logic which communicates with Liferay DXP using an `oAuthApplicationHeadlessServer` client extension must use the information provided by this route metadata to secure the transmitted data. All necessary OAuth 2 metadata is provided this way, so you don't need to hard-code it.
+Application logic that communicates with Liferay DXP using an `oAuthApplicationHeadlessServer` client extension must use the information provided by this route metadata to secure the transmitted data. All necessary OAuth 2 metadata is provided this way, so you don't need to hard-code it.
 
 ## OAuth User Agent Client Extensions
 
@@ -71,7 +71,7 @@ type: oAuthApplicationUserAgent
 
 ### Special Behavior of `oAuthApplicationUserAgent`
 
-OAuth application user agent client extensions cause a special behavior for your project when you deploy them. It creates an additional dependency on metadata which Liferay provides as a *route* (see [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information)). Any executable workload deployed with this client extension must wait for this route before it runs.
+OAuth headless user agent client extensions depend on metadata that Liferay provides as a *route* (see [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information)). Any executable workload deployed with this client extension must wait for this route before it runs.
 
 Here is an example of the route defined by the environment variable `LIFERAY_ROUTES_CLIENT_EXTENSION` when a `oAuthApplicationUserAgent` client extension is defined in the project:
 
@@ -95,7 +95,7 @@ Here is an example of the route defined by the environment variable `LIFERAY_ROU
 └── <oAuth2ApplicationExternalReferenceCode>.oauth2.user.agent.scopes
 ```
 
-Application logic which communicates with Liferay DXP using an `oAuthApplicationUserAgent` client extension must use the information provided by this route metadata to secure the transmitted data. All necessary OAuth 2 metadata is provided this way, so you don't have to hard-code it.
+Application logic that communicates with Liferay DXP using an `oAuthApplicationUserAgent` client extension must use the information provided by this route metadata to secure the transmitted data. All necessary OAuth 2 metadata is provided this way, so you don't have to hard-code it.
 
 ## Related Topics
 

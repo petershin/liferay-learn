@@ -23,14 +23,14 @@ Account and organization roles are only supported in objects with account restri
 
 Application permissions grant access to the published object itself and do not include [resource-related permissions](#resource-permissions). Each object includes these standard application permissions according to their defined scope:
 
-| Permission                                                          | Description                                                                                                  |
-|:--------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------|
-| Access in Control Panel (*Company Scope Only*)                      | Access the object in the Global Menu ( ![Global Menu](../../../images/icon-applications-menu.png) ).         |
-| Access in Site and Asset Library Administration (*Site Scope Only*) | Access the object in the Site Menu ( ![Site Menu](../../../images/icon-product-menu.png) ) or Asset Library. |
-| Configuration                                                       | N/A                                                                                                          |
-| Permissions                                                         | View and modify application permissions for the object.                                                      |
-| Preferences                                                         | N/A                                                                                                          |
-| View                                                                | View the object's application page.                                                                          |
+| Permission                                                          | Description                                                                                                                                                                      |
+|:--------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Access in Control Panel (*Company Scope Only*)                      | Access the object in the Global Menu ( ![Global Menu](../../../images/icon-applications-menu.png) ).                                                                             |
+| Access in Site and Asset Library Administration (*Site Scope Only*) | Access the object in the Site Menu ( ![Site Menu](../../../images/icon-product-menu.png) ) or Asset Library.                                                                     |
+| Configuration                                                       | N/A                                                                                                                                                                              |
+| Permissions                                                         | View and modify application permissions for the object.                                                                                                                          |
+| Preferences                                                         | N/A                                                                                                                                                                              |
+| View                                                                | View the object's application page. This permission is required to view mapped content. Without it, collection and content displays are not displayed in View and Preview modes. |
 
 ## Resource Permissions
 
@@ -38,10 +38,10 @@ Resource permissions grant access to view and act on resources in the object app
 
 ### Creating Entries
 
-| Permission       | Description                                              |
-|:-----------------|:---------------------------------------------------------|
-| Add Object Entry | Create an entry.                                         |
-| Permissions      | View and manage permissions related to creating entries. |
+| Permission       | Description                                                                                                                                                           |
+|:-----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Add Object Entry | Create an entry. This permission is required to view the associated object's form container. Without it, form containers are not displayed in View and Preview modes. |
+| Permissions      | View and manage permissions related to creating entries.                                                                                                              |
 
 ### Acting on Existing Entries
 

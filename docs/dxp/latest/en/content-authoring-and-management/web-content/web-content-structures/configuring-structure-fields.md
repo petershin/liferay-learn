@@ -11,7 +11,7 @@ You can edit structure fields and their properties:
 
 1. Click the name of the structure you want to modify.
 
-    You can also open the Actions Menu ( ![Actions icon](../../../images/icon-actions.png) ) next to the structure and select *Edit*.
+    You can also open the *Actions* Menu ( ![Actions icon](../../../images/icon-actions.png) ) next to the structure and select *Edit*.
 
 1. Add, [remove](#structure-field-options), or reorganize the fields in the structure.
 
@@ -25,7 +25,7 @@ You can edit structure fields and their properties:
 Field settings depend on the type of field. A setting listed below may not apply for a field.
 ```
 
-**Type:** The type of field placed in the definition. It is not editable but is available to reference from a web content template.
+**Type:** The type of field placed in the definition. This is not editable but is available to reference from a web content template.
 
 **Field Label:** The text to display above the field.
 
@@ -33,7 +33,7 @@ Field settings depend on the type of field. A setting listed below may not apply
 
 **Required:** Whether the user must fill the field to submit content using the web content structure. The default value is No.
 
-**Field Reference:** The variable name used in web content templates for this field. You should enter a descriptive name. A default name is automatically generated.
+**Field Reference:** The variable name used in web content templates for this field. You should enter a descriptive name. A default name is generated automatically. 
 
 ```{tip}
 Liferay DXP assigns a random field reference for each new field in the structure. Replace the default value with something more descriptive, so template developers can identify the field to place its data in a web content template or display page.

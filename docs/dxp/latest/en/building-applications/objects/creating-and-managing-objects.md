@@ -8,6 +8,7 @@ toc:
   - ./creating-and-managing-objects/layouts.md
   - ./creating-and-managing-objects/views.md
   - ./creating-and-managing-objects/validations.md
+  - ./creating-and-managing-objects/localizing-object-definitions-and-entries.md
   - ./creating-and-managing-objects/using-system-objects-with-custom-objects.md
   - ./creating-and-managing-objects/activating-and-deactivating-objects.md
   - >-
@@ -29,6 +30,7 @@ creating-and-managing-objects/actions.md
 creating-and-managing-objects/layouts.md
 creating-and-managing-objects/views.md
 creating-and-managing-objects/validations.md
+creating-and-managing-objects/localizing-object-definitions-and-entries.md
 creating-and-managing-objects/using-system-objects-with-custom-objects.md
 creating-and-managing-objects/activating-and-deactivating-objects.md
 creating-and-managing-objects/exporting-and-importing-object-definitions.md
@@ -77,6 +79,10 @@ System objects are default Liferay applications integrated with the objects fram
 
 :::{grid-item-card} Validations
 :link: ./creating-and-managing-objects/validations.md
+:::
+
+:::{grid-item-card} Localizing Object Definitions and Entries
+:link: ./creating-and-managing-objects/localizing-object-definitions-and-entries.md
 :::
 
 :::{grid-item-card} Using System Objects with Custom Objects

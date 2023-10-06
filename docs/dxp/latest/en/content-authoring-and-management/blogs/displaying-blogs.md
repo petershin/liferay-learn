@@ -51,7 +51,7 @@ To add a Blogs widget to a page,
 
 Once you've added a Blogs widget to a page, there are several display options for configuring the listing to look the way you want.
 
-To configure the widget, click *Options* ( ![Options icon](../../images/icon-app-options.png) ) &rarr; *Configuration*.
+To configure the widget, click *Options* (![Options icon](../../images/icon-app-options.png)) &rarr; *Configuration*.
 
 ![There are different setup options for the Blogs widget](displaying-blogs/images/03.png)
 

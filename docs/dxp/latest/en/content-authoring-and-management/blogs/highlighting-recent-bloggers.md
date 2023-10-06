@@ -5,7 +5,7 @@ uuid: 4c3af2fb-8fbb-4355-82d5-9788ed9503cd
 
 You can use the *Recent Bloggers* widget to highlight the work of your most recent blog authors. This widget lists each recent author's name, profile picture, and number of posts.
 
-To configure the widget, click *Options* ( ![Options icon](../../images/icon-app-options.png) ) &rarr; *Configuration*.
+To configure the widget, click *Options* (![Options icon](../../images/icon-app-options.png)) &rarr; *Configuration*.
 
 ![There are different setup options for the Recent Bloggers widget](highlighting-recent-bloggers/images/02.png)
 

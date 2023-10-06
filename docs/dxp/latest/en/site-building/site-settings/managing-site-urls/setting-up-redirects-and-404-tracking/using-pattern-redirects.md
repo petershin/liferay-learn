@@ -45,7 +45,7 @@ Avoid creating circular redirects. These are easy to create when defining redire
 
 ### Creating Pattern Redirects: Changing Domains
 
-If you have two domains: https://www.old-site.com and https://www.new-site.com. You can redirect a page from one domain to the other,
+If you have two domains such as https://www.old-site.com and https://www.new-site.com, you can redirect a page from one domain to the other:
 
 1. Navigate to https://www.old-site.com.
 

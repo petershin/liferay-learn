@@ -71,7 +71,7 @@ Whether you added a collection display fragment manually or via a collection pag
 
 Selecting a collection display fragment divides it into sections for each asset in the collection. New options appear under the fragment's general configuration after you've selected a collection:
 
-**Style Display**: Choose the style used to format the assets in the list (e.g., grid or bulleted list styles). (In versions earlier than 7.4 GA23 or U23, this configuration is called List Style.)
+**Style Display**: Choose the style used to format the assets in the list (e.g., grid or bulleted list styles). In versions earlier than 7.4 GA23 or U23, this configuration is called List Style.
 
 **Layout**: Choose the number of columns in which to display the assets.
 
@@ -109,21 +109,21 @@ Depending on the option you chose for a collection display fragment's list style
 
 1. In the page editor, click the *Collection Display* representing your collection.
 
-1. In the tools sidebar, click *Fragments and Widgets* ( ![Fragment and Widgets](../../../images/icon-add-widget.png) ).
+1. In the tools sidebar, click *Fragments and Widgets* (![Fragment and Widgets](../../../images/icon-add-widget.png)).
 
 1. From the Fragments and Widgets sidebar panel, drag and drop the components you want to use to show the collection items.
 
-    ![Add fragments or widgets to the collection display and configure the display properties.](./displaying-collections/images/05.gif)
+   ![Add fragments or widgets to the collection display and configure the display properties.](./displaying-collections/images/05.gif)
 
-    ```{note}
-    If the collection display contains more than one item, you can drag the fragment or widget to any of them. The rest of the items in your collection use the same layout settings automatically.
-    ```
+   ```{note}
+   If the collection display contains more than one item, you can drag the fragment or widget to any of them. The rest of the items in your collection use the same layout settings automatically.
+   ```
 
 1. Double-click the *fragment* or *widget* on the collection display to access its mapping options.
 
 1. In the Mapping column, select the *field* that you want to map to your collection.
 
-    ![Map the fragments and widgets to the collection items](./displaying-collections/images/06.gif)
+   ![Map the fragments and widgets to the collection items](./displaying-collections/images/06.gif)
 
 1. Add more fragments or widgets as necessary and map the content to the content fields.
 
@@ -155,15 +155,15 @@ To paginate the display items in the collection display,
 
 1. In the General Settings, choose the pagination options:
 
-    **Pagination**: None (no pagination), Numeric, or Simple (Previous/Next controls).
+   **Pagination**: None (no pagination), Numeric, or Simple (Previous/Next controls).
 
-    **Display All Pages**: Check the box to display the numbers or controls for every page in the pagination menu. If no pagination type is selected, this option becomes Display All Collection Items instead.
+   **Display All Pages**: Check the box to display the numbers or controls for every page in the pagination menu. If no pagination type is selected, this option becomes Display All Collection Items instead.
 
-    **Maximum Number of Pages to Display**: The maximum number of pages shown in the pagination menu. This option only appears if the Display All Pages checkbox is not selected.
+   **Maximum Number of Pages to Display**: The maximum number of pages shown in the pagination menu. This option only appears if the Display All Pages checkbox is not selected.
 
-    **Maximum Number of Items per Page**: The maximum number of items from the collection to display per page, if pagination is enabled. If no pagination type is selected, this option becomes Maximum Number of Items to Display instead.
+   **Maximum Number of Items per Page**: The maximum number of items from the collection to display per page, if pagination is enabled. If no pagination type is selected, this option becomes Maximum Number of Items to Display instead.
 
-    ![Choose the pagination options for the collection display items.](./displaying-collections/images/08.png)
+   ![Choose the pagination options for the collection display items.](./displaying-collections/images/08.png)
 
 If you enable pagination, the total number of pages available depends on both the total number of items in the collection and the setting for Maximum Number of Items per Page.
 
@@ -177,9 +177,9 @@ You can find usage statistics for the collections on your site.
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Collections*.
 
-1. Under the Collections tab, click *Actions* ( ![Actions Menu](../../../images/icon-actions.png) ) next to the Collection you want to review and select *View Usages*.
+1. Under the Collections tab, click *Actions* (![Actions Menu](../../../images/icon-actions.png)) &rarr; *View Usages* next to the Collection you want to review. 
 
-  ![Select View Usages to understand how your collections are being used through the site](./displaying-collections/images/09.png)
+![Select View Usages to understand how your collections are being used through the site](./displaying-collections/images/09.png)
 
 ## Liferay DXP 7.2
 
@@ -191,7 +191,7 @@ Content sets are primarily displayed through the Asset Publisher. It is currentl
 
 To display the content sets, start with a blank page, and then add the necessary asset publishers and configure them to display the content sets.
 
-1. Create a new Home page for your site as a widget page with a 1 column layout. If you're using a fresh Liferay DXP bundle, you can just remove the Hello World widget from the sample Home page.
+1. Create a new home page for your site as a widget page with a 1 column layout. If you're using a fresh Liferay DXP bundle, you can just remove the Hello World widget from the sample Home page.
 
 1. Open the *Add* menu and add two *Content Management* &rarr; *Asset Publishers* to the page stacked vertically.
 
@@ -199,7 +199,7 @@ To display the content sets, start with a blank page, and then add the necessary
 
 1. Under Asset Selection choose *Content Set*.
 
-    ![The asset publisher has a number of options available for selecting its source for content.](./displaying-collections/images/10.png)
+   ![The asset publisher has a number of options available for selecting its source for content.](./displaying-collections/images/10.png)
 
 1. Open the *Select Content Set* and click *Select*.
 
@@ -211,7 +211,7 @@ Now the images appear at the top of the page. You can manage the way the content
 
 Now configure the bottom asset publisher with the other content set.
 
-1. Click Options ( ![Options](../../../images/icon-app-options.png) ) &rarr; *Configuration* for the bottom asset publisher.
+1. Click Options (![Options](../../../images/icon-app-options.png)) &rarr; *Configuration* for the bottom asset publisher.
 
 1. Under Asset Selection choose *Content Set*.
 
@@ -219,7 +219,7 @@ Now configure the bottom asset publisher with the other content set.
 
 1. Click on the *Trending* content set.
 
-    ![Select the content set you want to use.](./displaying-collections/images/11.png)
+   ![Select the content set you want to use.](./displaying-collections/images/11.png)
 
 1. Click *Save*.
 
@@ -235,7 +235,7 @@ To demonstrate the management of both static and dynamic content sets, upload a 
 
 1. The image is added to the top of the Trending content list.
 
-    ![The result is added dynamically to the content list wherever it is displayed.](./displaying-collections/images/13.png)
+   ![The result is added dynamically to the content list wherever it is displayed.](./displaying-collections/images/13.png)
 
 1. To add it to the manual set, go back to *Site Menu* and navigate to *Content & Data* &rarr; *Site Builder*.
 
@@ -245,7 +245,7 @@ To demonstrate the management of both static and dynamic content sets, upload a 
 
 1. Select the new image and click *Add*.
 
-1. Navigate back to the Home page to see your image added to the list.
+1. Navigate back to the home page to see your image added to the list.
 
 Content sets provide one place to define content and other assets to be displayed all over your site. Their reusability also means less repeated work involved in getting great content delivered to your users.
 

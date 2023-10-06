@@ -3,7 +3,7 @@ uuid: 471cbdd8-1672-430b-8871-91bebb0665ef
 ---
 # Creating Organizations
 
-Use Liferay to model Delectable Bonsai's organizational hierarchy. See [Understanding Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations) to learn more. 
+Use Liferay to model Clarity Vision Solutions' organizational hierarchy. See [Understanding Organizations](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations) to learn more. 
 
 ## Parent and Child Organizations
 
@@ -12,18 +12,18 @@ Use Liferay to model Delectable Bonsai's organizational hierarchy. See [Understa
    * Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. 
    * Click the _Organizations_ tab. 
    * Click _Add_ (![Add icon](../../images/icon-add.png)). 
-   * Enter `Delectable Bonsai` in the _Name_ field. 
+   * Enter `Clarity Vision Solutions` in the _Name_ field. 
    * Click _Save_.
 
 1. Create a child organization. 
 
    * Click _Back_ (![Back icon](../../images/icon-angle-left.png)) to return to the list of organizations. 
-   * Click on the Delectable Bonsai organization you just created. 
+   * Click on the Clarity Vision Solution organization you just created. 
    * Click _Add_ (![Add icon](../../images/icon-add.png)) and select _New Organization_. 
-   * Input `IT` in the _Name_ field. Note that under the parent organization section, Delectable Bonsai is selected. 
+   * Input `IT` in the _Name_ field. Note that under the parent organization section, Clarity Vision Solution is selected. 
    * Click _Save_.
 
-1. Create another child organization called `Sales & Marketing` under the Delectable Bonsai parent organization using the steps above.
+1. Create another child organization called `Sales & Marketing` under the Clarity Vision Solution parent organization using the steps above.
 
 1. The organizational hierarchy should look like the image below.
 
@@ -48,14 +48,14 @@ New users can also be added within organizations.
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_.
 
    * Click the _Organizations_ tab.
-   * Click _Delectable Bonsai_. 
+   * Click _Clarity Vision Solutions_. 
    * Click _Options_ (![Options icon](../../images/icon-actions.png)) for the Sales & Marketing child organization. 
    * Click _Add User_.
 
 1. Add the following user:
 
    * Screen Name: `lily`
-   * Email Address: `lily@delectablebonsai.com`
+   * Email Address: `lily@clarityvisionsolutions.com`
    * First Name: `Lily`
    * Last Name: `Lewis`
    * Job Title: `Account Manager`
@@ -66,7 +66,7 @@ New users can also be added within organizations.
 
 Next, create an organization site for the Sales & Marketing department to host an internal blog. See [Organization Sites](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites) to learn more.
 
-1. Navigate back to Organizations and click the *Delectable Bonsai* organization. 
+1. Navigate back to Organizations and click the *Clarity Vision Solutions* organization. 
 
 1. Click _Options_ (![Options icon](../../images/icon-actions.png)) for the Sales & Marketing child organization and click _Edit_.
 

@@ -7,7 +7,7 @@ Whether you bring in users from an LDAP or create them within Liferay, use the a
 
 ## Create an Administrator
 
-Instead of continuing to use the default Liferay admin account, create a new Delectable Bonsai administrator account that will go on to create the other users, organizations, and accounts.
+Instead of continuing to use the default Liferay admin account, create a new Clarity Vision Solutions administrator account that will go on to create the other users, organizations, and accounts.
 
 ```{warning}
 In a production environment, you should not use the default admin account. Instead, create admin accounts specific to your business.
@@ -25,7 +25,7 @@ In a production environment, you should not use the default admin account. Inste
 1. Enter the following account information:
 
    * Screen Name: `kyle`
-   * Email Address: `kyle@delectablebonsai.com`
+   * Email Address: `kyle@clarityvisionsolutions.com`
    * First Name: `Kyle`
    * Last Name: `Klein`
    * Job Title: `IT Staff`
@@ -49,7 +49,7 @@ In a production environment, you should not use the default admin account. Inste
 
    * Click the user profile image in the top right and click _Sign Out_.
    * Click _Sign In_ at the top right.
-   * Sign in with `kyle@delectablebonsai.com` as the email address and `test` as the password.
+   * Sign in with `kyle@clarityvisionsolutions.com` as the email address and `test` as the password.
    * In the next page to reset password, set the new password as `learn`.
 
 ## Create an Account for the IT Manager.
@@ -59,7 +59,7 @@ In a production environment, you should not use the default admin account. Inste
 1. Create a user account for Kyle's manager:
 
    * Screen Name: `marcus`
-   * Email Address: `marcus@delectablebonsai.com`
+   * Email Address: `marcus@clarityvisionsolutions.com`
    * First Name: `Marcus`
    * Last Name: `Morgan`
    * Job Title: `IT Manager`

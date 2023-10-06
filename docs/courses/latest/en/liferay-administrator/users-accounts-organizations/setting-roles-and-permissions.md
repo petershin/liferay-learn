@@ -23,7 +23,7 @@ Note, you can also assign users roles from the edit user page (e.g. See [Creatin
 
 ## Creating Roles
 
-Employees at Delectable Bonsai need different permissions based on their work. For example, those in the Sales & Marketing department need access to their organization site blog. They also require access to documents and media for their marketing campaigns.
+Employees at Clarity Vision Solutions need different permissions based on their work. For example, those in the Sales & Marketing department need access to their organization site blog. They also require access to documents and media for their marketing campaigns.
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Roles_. Click _Add_ (![Add icon](../../images/icon-add.png)) under the _Regular Roles_ tab.
 

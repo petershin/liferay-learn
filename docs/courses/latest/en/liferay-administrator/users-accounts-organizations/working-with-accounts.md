@@ -5,7 +5,7 @@ uuid: 9c853de5-3865-4ea6-9f69-7b6cac71a275
 
 Accounts in Liferay can represent individual customers in a B2C (i.e. business to consumer) context. Or they can represent a B2B (i.e. business to business) context with multiple users. See [Accounts](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts) to learn more. 
 
-Marvelous Markets operate supermarkets across the country. Each store purchases maple syrup from Delectable Bonsai. The example below shows how to set up and account for one of the markets and assign an account user.
+Opportune Optics operate eyewear stores across the country. Each store purchases eyewear from Clarity Vision Solutions. The example below shows how to set up and account for one of the markets and assign an account user.
 
 ## Adding Accounts
 
@@ -13,11 +13,11 @@ Create a business type account:
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Accounts_. Click _Add Account_ (![Add icon](../../images/icon-add.png)).
 
-1. In the new window, enter `Marvelous Markets NYC` for account name. Click _Save_.
+1. In the new window, enter `Opportune Optics NYC` for account name. Click _Save_.
 
 1. Click the _Addresses_ tab. Click _Add_ (![Add icon](../../images/icon-add.png)). Enter the following information:
 
-   * Name: `Marvelous Markets NYC`
+   * Name: `Opportune Optics NYC`
    * Country: `United States`
    * Street 1: `123 Anywhere St`
    * City: `New York`
@@ -39,12 +39,12 @@ Create a new user for the account you just made. Note, you can create new users 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Account Users_. 
 
    - Click _Add User_ (![Add icon](../../images/icon-add.png)). 
-   - Click _Choose_ next to Marvelous Markets NYC.
+   - Click _Choose_ next to Opportune Optics NYC.
 
 1. Create the following store manager:
 
    * Screen Name: `Noah`
-   * Email Address: `noah@marvelousmarkets.com`
+   * Email Address: `noah@opportuneoptics.com`
    * First Name: `Noah`
    * Last Name: `Norman`
    * Job Title: `Store Manager`
@@ -59,7 +59,7 @@ Assign Noah Norman the order manager role. In this way, Noah's employees can add
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Accounts_. 
 
-   - Click _Marvelous Markets NYC_. 
+   - Click _Opportune Optics NYC_. 
    - Click the _Roles_ tab. 
    - Click _Order Manager_.
 
@@ -69,46 +69,46 @@ Assign Noah Norman the order manager role. In this way, Noah's employees can add
 
 ## Managing Accounts
 
-Use account groups to help organize and manage multiple accounts. For example, Delectable Bonsai can choose to apply lower pricing for any market that is part of the Marvelous Markets account group.
+Use account groups to help organize and manage multiple accounts. For example, Clarity Vision Solutions can choose to apply lower pricing for any market that is part of the Opportune Optics account group.
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Account Groups_. Click _Add Account Group_ (![Add icon](../../images/icon-add.png)). 
 
-2. Give the name `Marvelous Markets` for the account group name. Click _Save_.
+2. Give the name `Opportune Optics` for the account group name. Click _Save_.
 
 3. Click the _Accounts_ tab. 
 
    - Click _Assign Account_ (![Add icon](../../images/icon-add.png)). 
-   - In the new window, select _Marvelous Markets NYC_ and click _Assign_. 
+   - In the new window, select _Opportune Optics NYC_ and click _Assign_. 
 
-   In this way, different Marvelous markets in other locations can be added to the group.
+   In this way, different Opportune Optics in other locations can be added to the group.
 
-In a larger B2B context with multiple accounts under the same entity, it may make sense to create a dedicated organization. Then you can assign an account manager role over the whole organization. For example, with many locations, all Marvelous Market accounts can be placed under an organization. Then someone from Delectable Bonsai can be assigned an account manager role to oversee all the accounts.
+In a larger B2B context with multiple accounts under the same entity, it may make sense to create a dedicated organization. Then you can assign an account manager role over the whole organization. For example, with many locations, all Opportune Optics accounts can be placed under an organization. Then someone from Clarity Vision Solutions can be assigned an account manager role to oversee all the accounts.
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. 
 
    * Click the _Organizations_ tab. 
    * Click _Add_ (![Add icon](../../images/icon-add.png)). 
-   * Enter `Marvelous Markets` in the _Name_ field. 
+   * Enter `Opportune Optics` in the _Name_ field. 
    * Click _Save_.
 
-1. Navigate to _Control Panel_ &rarr; _Accounts_. Click _Marvelous Markets NYC_. 
+1. Navigate to _Control Panel_ &rarr; _Accounts_. Click _Opportune Optics NYC_. 
 
    * Click the _Organizations_ tab. 
    * Click _Assign Organizations_ (![Add icon](../../images/icon-add.png)). 
 
-1. In the new window, select _Marvelous Markets_ and click _Assign_. The Marvelous Markets NYC account is now part of the Marvelous Markets organization.
+1. In the new window, select _Opportune Optics_ and click _Assign_. The Opportune Optics NYC account is now part of the Opportune Optics organization.
 
-   ![Marvelous Markets NYC is now part of the Marvelous Markets organization.](./working-with-accounts/images/01.png)
+   ![Opportune Optics NYC is now part of the Opportune Optics organization.](./working-with-accounts/images/01.png)
 
 1. Now make Lily Lewis an account manager. Navigate to _Control Panel_ &rarr; _Users and Organizations_. 
 
    * Click on _Lily Lewis_. 
    * Click _Organizations_ in the left navigation. 
    * Click _Select_. 
-   * Click _Choose_ next to Marvelous Markets. 
+   * Click _Choose_ next to Opportune Optics. 
    * Click _Save_. 
 
-   Lily Lewis is now also part of the Marvelous Markets organization.
+   Lily Lewis is now also part of the Opportune Optics organization.
 
 5. Click _Roles_ in the left navigation. 
 
@@ -116,9 +116,9 @@ In a larger B2B context with multiple accounts under the same entity, it may mak
    * Click _Choose_ next to Account Manager. 
    * Click _Save_. 
 
-   ![Lily Lewis is now an account manager for Marvelous Markets.](./working-with-accounts/images/02.png)
+   ![Lily Lewis is now an account manager for Opportune Optics.](./working-with-accounts/images/02.png)
 
-   Lily Lewis is now an account manager for all accounts in the Marvelous Markets organization. The account manager can take actions, such as placing orders on behalf of account users. 
+   Lily Lewis is now an account manager for all accounts in the Opportune Optics organization. The account manager can take actions, such as placing orders on behalf of account users. 
 
 Congratulations! You have completed this module on users, accounts, organizations, and permissions. 
 

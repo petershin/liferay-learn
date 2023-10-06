@@ -16,15 +16,15 @@ Businesses often manage user and organizational data separately on an LDAP direc
 
 But first, you'll create four user accounts assigned across two different organizations. Users must belong to their respective organizations and be assigned appropriate permissions.
 
-![The Delectable Bonsai organization chart shows the first four users.](./users-accounts-organizations/images/01.png)
+![The Clarity Vision Solutions organization chart shows the first four users.](./users-accounts-organizations/images/01.png)
 
-**Kyle Klein:** An IT staffer tasked to help his company, Delectable Bonsai, configure Liferay as their digital experience platform.
+**Kyle Klein:** An IT staffer tasked to help his company, Clarity Vision Solutions, configure Liferay as their digital experience platform.
 
 **Marcus Morgan:** An IT manager and Kyle's boss. 
 
-**Lily Lewis:** An account manager for Marvelous Markets and staff member of Delectable Bonsai's Sales and Marketing department.
+**Lily Lewis:** An account manager for Opportune Optics and staff member of Clarity Vision Solutions' Sales and Marketing department.
 
-**Noah Norman:** A store manager for Marvelous Markets NYC and the order approver for his staff who places orders from Delectable Bonsai.
+**Noah Norman:** A store manager for Opportune Optics NYC and the order approver for his staff who places orders from Clarity Vision Solutions.
 
 The next step is creating the users. Ready? 
 

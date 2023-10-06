@@ -5,7 +5,7 @@ uuid: 9540baaf-7e04-40a2-9a4a-1409d3526092
 
 You can configure an LDAP server at the system level or instance level. If you are on LXC-SM or self-hosted, you can choose the [configuration scope](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) based on your needs. Note, when configuring at the system scope, you must specify each instance ID. If you're on LXC, you must configure LDAP at the instance scope. See [Connecting to an LDAP Directory](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory).
 
-Delectable Bonsai must import user data from a company they just acquired. 
+Clarity Vision Solutions must import user data from a company they just acquired. 
 
 ## Start and Populate an LDAP Directory
 
@@ -13,16 +13,16 @@ Delectable Bonsai must import user data from a company they just acquired.
 
    ```bash
    docker run \
-	   --env LDAP_ORGANISATION="Almighty Syrup" \
-	   --env LDAP_DOMAIN="almightysyrup.com" \
-	   --env LDAP_BASE_DN="dc=almightysyrup,dc=com" \
-	   --name almightysyrupldap \
+	   --env LDAP_ORGANISATION="Almighty Glasses" \
+	   --env LDAP_DOMAIN="almightyglasses.com" \
+	   --env LDAP_BASE_DN="dc=almightyglasses,dc=com" \
+	   --name almightyglassesldap \
 	   -p 389:389 \
 	   -p 636:636 \
 	   osixia/openldap:1.5.0
    ```
 
-1. Find the IP address of the `almightysyrupldap` container. This will be used in the configuration step below.
+1. Find the IP address of the `almightyglassesldap` container. This will be used in the configuration step below.
 
    ```bash
    docker network inspect bridge
@@ -32,7 +32,7 @@ Delectable Bonsai must import user data from a company they just acquired.
 
    ```bash
    cat <<EOT >> sarah.ldif
-   dn: cn=sarah,dc=almightysyrup,dc=com
+   dn: cn=sarah,dc=almightyglasses,dc=com
    objectClass: inetOrgPerson
    objectClass: organizationalPerson
    objectClass: person
@@ -40,28 +40,28 @@ Delectable Bonsai must import user data from a company they just acquired.
    cn: Sarah
    sn: Stanley
    givenName: Sarah
-   mail: sarah@almightysyrup.com
+   mail: sarah@almightyglasses.com
    title: IT Staff
    userPassword: learn
 
-   cn: almightysyrup
-   dn: cn=almightysyrup,dc=almightysyrup,dc=com
+   cn: almightyglasses
+   dn: cn=almightyglasses,dc=almightyglasses,dc=com
    objectClass: groupOfUniqueNames
    objectClass: top
-   uniqueMember: cn=sarah,dc=almightysyrup,dc=com
+   uniqueMember: cn=sarah,dc=almightyglasses,dc=com
    EOT
    ```
 
 1. In your shell, navigate to the same folder as the LDIF file. Copy the file into the container.
 
    ```bash
-   docker cp sarah.ldif almightysyrupldap:/container/service/slapd/assets/test
+   docker cp sarah.ldif almightyglassesldap:/container/service/slapd/assets/test
    ```
 
 1. Add the entry into the OpenLDAP server.
 
    ```bash
-   docker exec almightysyrupldap ldapadd -x -D "cn=admin,dc=almightysyrup,dc=com" -w admin -f /container/service/slapd/assets/test/sarah.ldif -H ldap://localhost
+   docker exec almightyglassesldap ldapadd -x -D "cn=admin,dc=almightyglasses,dc=com" -w admin -f /container/service/slapd/assets/test/sarah.ldif -H ldap://localhost
    ```
 
 ## Connect Liferay to the LDAP Directory
@@ -76,10 +76,10 @@ Delectable Bonsai must import user data from a company they just acquired.
 
 1. In the new page, enter the LDAP connection information.
 
-   * Server Name: `Almighty Syrup`
+   * Server Name: `Almighty Glasses`
    * Base Provider URL: `ldap://[IP address]:389`
-   * Base DN: `dc=almightysyrup,dc=com`
-   * Principal: `cn=admin,dc=almightysyrup,dc=com`
+   * Base DN: `dc=almightyglasses,dc=com`
+   * Principal: `cn=admin,dc=almightyglasses,dc=com`
    * Credentials: `admin`
 
    ![Enter the connection information.](./connecting-to-ldap/images/01.png)
@@ -90,11 +90,11 @@ Delectable Bonsai must import user data from a company they just acquired.
 
    ![Enter the user fields information.](./connecting-to-ldap/images/02.png)
 
-1. In the LDAP groups section, enter `Almighty Syrup` into the _Description_ field. Click _Test LDAP Groups_ to verify that the `almightysyrup` user group is visible.
+1. In the LDAP groups section, enter `Almighty Glasses` into the _Description_ field. Click _Test LDAP Groups_ to verify that the `almightyglasses` user group is visible.
 
 1. Click _Save_.
 
-Delectable Bonsai's Liferay instance is now connected to Almighty Syrup's LDAP directory. 
+Clarity Vision Solutions' Liferay instance is now connected to Almighty Glasses' LDAP directory. 
 
 Next: [Importing and Exporting users](./importing-and-exporting-users.md).
 

@@ -3,14 +3,14 @@ uuid: 5294f291-3bbf-4e59-9c4a-e7358e3f525f
 ---
 # Understanding Pages
 
-Pages on Liferay DXP are primarily used to display content and applications to users of a site.
+Pages display content and applications to users of a site.
 
 ## Page Sets
 
 When private pages are enabled, the site's pages are organized into two [page sets](../page-settings/configuring-page-sets.md): public pages and private pages.
 
 ```{note}
-For Liferay 7.4 U22+ and GA22+, private pages are disabled for new installations. However, you can enable them if desired. See [Enabling Private Pages](#enabling-private-pages) for more information.
+For Liferay 7.4 U22+ and GA22+, private pages are disabled by default for new installations. See [Enabling Private Pages](#enabling-private-pages) if you want to enable them.
 ```
 
 Public and private pages differ in the following ways:
@@ -30,12 +30,12 @@ There are several page types available when you [add a page](../adding-pages/add
 ![You must select a page type when adding pages.](./understanding-pages/images/01.png)
 
 ```{tip}
-The page type of the currently viewed page appears at the top of the page to help you determine the administration options you have and where you need to go to configure the page.
+The currently viewed page's type appears at the top of the page to help you determine the administration options you have and where you need to go to configure the page.
 ```
 
 ### Content Pages
 
-With content pages, users can build professional pages that can be easily managed and have their content edited in-line. Content pages are primarily built using [page fragments](../page-fragments-and-widgets/using-fragments.md), but they also allow widgets.
+With content pages, users can build professional pages that can be easily managed and have their content edited in-line. Content pages are primarily built using [page fragments](../page-fragments-and-widgets/using-fragments.md) and widgets.
 
 ![Content pages can be composed of multiple fragments.](./understanding-pages/images/02.png)
 
@@ -51,7 +51,9 @@ To learn more about content pages, see the [Using Content Pages](../using-conten
 
 <!-- Should there be an article that covers layouts and layout templates? -->
 
-A widget page is a page with a set layout that allows widgets (applications) to be displayed. Widgets can display content or add interactive and dynamic functionality to the page. See [Adding Widgets to a Page](../using-widget-pages/adding-widgets-to-a-page.md) for more information.
+<!-- Yes. -Rich--> 
+
+A widget page has a set layout for displaying widgets (applications). Widgets can display content or add interactive and dynamic functionality to the page. See [Adding Widgets to a Page](../using-widget-pages/adding-widgets-to-a-page.md) for more information.
 
 ![Widget pages can provide a number of functions, such as a dedicated wiki page solution.](./understanding-pages/images/03.png)
 
@@ -75,7 +77,7 @@ There are several other available page types - each satisfies particular use cas
 
 ## Global Page Templates
 
-When adding a page, you also have the option to choose a page template. Page templates are pre-set pages with applications already deployed to the page. By default, only Global Templates are available, but additional collections you create appear as an option as well.
+When adding a page, you can also choose a page template. Page templates are pre-set pages with applications already deployed to the page. By default, only Global Templates are available, but additional collections you create also appear as an option.
 
 | Global Page Template | Description                                                                                                                                                                                                |
 | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -90,7 +92,7 @@ Pages can also be created in a hierarchical fashion by creating child pages. Chi
 ![You can add a child Page to a top-level page to organize pages hierarchically.](./understanding-pages/images/04.png)
 
 ```{tip}
-You can navigate among pages of a site hierarchy with the site map application. A site administrator can configure a root page and a display depth. The display depth of the site map application determines how many levels of nested pages to display.
+You can navigate among pages of a site hierarchy with the Site Map application. A site administrator can configure a root page and a display depth. The display depth of the Site Map application determines how many levels of nested pages to display.
 ```
 
 ## Enabling Private Pages

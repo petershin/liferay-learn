@@ -3,7 +3,7 @@ uuid: 64702f16-ced7-4461-ba21-2235a547e24f
 ---
 # Authorizing with OAuth2
 
-Use Liferay's OAuth2 tools to authorize third-party applications to access data. For example, a Delectable Bonsai partner wants to sell the maple syrup products with up-to-date pricing. They request Delectable Bonsai to provide access to the price list API. Follow the steps below to see this in action.
+Use Liferay's OAuth2 tools to authorize third-party applications to access data. For example, a Clarity Vision Solutions' partner wants to sell the eyewear products with up-to-date pricing. They request Clarity Vision Solutions to provide access to the price list API. Follow the steps below to see this in action.
 
 ## Setting Up OAuth2
 

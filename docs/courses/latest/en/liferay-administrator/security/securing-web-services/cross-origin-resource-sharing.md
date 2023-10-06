@@ -5,7 +5,7 @@ uuid: 6aca0e01-fe8f-4076-8000-50888771a2b5
 
 When a server from a different domain tries to access Liferay web services, the cross-origin resource sharing (CORS) policy allows or denies each request. See [setting up CORS](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors) to learn more.
 
-Delectable Bonsai may choose to create a [Liferay object](https://learn.liferay.com/w/dxp/building-applications/objects) for users to have customized profile fields. Follow the steps below to see an example of this with a React application running locally. 
+Clarity Vision Solutions may choose to create a [Liferay object](https://learn.liferay.com/w/dxp/building-applications/objects) for users to have customized profile fields. Follow the steps below to see an example of this with a React application running locally. 
 
 1. Create a Liferay object.
 

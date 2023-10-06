@@ -7,7 +7,7 @@ Multi-Factor Authentication requires users to both know something and have somet
 
 Liferay supports both one-time codes through email and third-party services that support SMS or authenticator apps. See [using multi-factor-authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication) to learn more.
 
-Delectable Bonsai has come a long way from its days at the farmer's market. Now with many employees and customers, the IT department is requiring MFA as part of its enhanced security efforts.
+Clarity Vision Solutions has come a long way from its days at the farmer's market. Now with many employees and customers, the IT department is requiring MFA as part of its enhanced security efforts.
 
 ## Setting Up MFA
 
@@ -27,7 +27,7 @@ Note, ensure you can successfully receive email through FakeSMTP before proceedi
 
 1. Sign back into Liferay as the administrator (i.e. Kyle Klein). 
 
-1. On the next page, click _Send_ for Liferay to send the one-time password to kyle@delectablebonsai.com. 
+1. On the next page, click _Send_ for Liferay to send the one-time password to kyle@clarityvisionsolutions.com. 
 
 1. Get the one-time password from the sent email.
 

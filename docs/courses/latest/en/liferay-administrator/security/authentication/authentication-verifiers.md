@@ -11,7 +11,7 @@ It's important to note that authentication verifiers _do not_ provide credential
 
 ## Configuring Authentication Verifiers
 
-Delectable Bonsai wants to lock down certain features they won't be using. Since they have no plans for connecting their instance to LibreOffice/OpenOffice for file conversion, they've decided to turn off the Image Request Authentication Verifier. 
+Clarity Vision Solutions wants to lock down certain features they won't be using. Since they have no plans for connecting their instance to LibreOffice/OpenOffice for file conversion, they've decided to turn off the Image Request Authentication Verifier. 
 
 1. Go to _Control Panel_ &rarr; _System Settings_ &rarr; _Security_ &rarr; _API Authentication_. 
 

@@ -15,7 +15,7 @@ Liferay's philosophy is "secure by default." That means a default installation's
 - Single Sign-On
 - AntiSamy
 
-You can tune each of these categories to better match your organization's design, rather than just sticking with the default. Here, you'll configure a Liferay installation to match Delectable Bonsai's needs. 
+You can tune each of these categories to better match your organization's design, rather than just sticking with the default. Here, you'll configure a Liferay installation to match Clarity Vision Solutions' needs. 
 
 First, you'll configure how users log onto the system. Then you'll tune the authentication verifiers configured by default. After that, you'll enable multi-factor authentication. 
 

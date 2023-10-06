@@ -25,7 +25,7 @@ Is your Liferay instance installed? Now what? Whether you're on LXC, LXC-SM, or 
 - How to create OAuth 2.0 profiles for access to web services
 - How to filter JavaScript out of user-submitted HTML
 
-Dive in and begin creating a website for Delectable Bonsai, a (fake) company that combines the (fictitious) health benefits of Bonsai tree sap with maple syrup to create an unbeatable breakfast experience! 
+Dive in and begin creating a website for Clarity Vision Solutions, a (fake) company that sells amazing yet affordable eyewear. 
 
 What are you waiting for? Start by creating your Liferay [configuration](./liferay-administrator/configuration.md). 
 

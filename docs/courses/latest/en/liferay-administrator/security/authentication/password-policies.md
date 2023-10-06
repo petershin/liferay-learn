@@ -14,7 +14,7 @@ Password policies are rules set for everything having to do with passwords:
 
 Password policies can be applied to the whole instance, to organizations, or to individual users. 
 
-Delectable Bonsai needs different password policies for its two instances. For the public website, the defaults work except they want to add some syntax rules to encourage users to choose more secure passwords. For Breakfast, the internal intranet, they want more security: syntax rules, password history, expiration, and lockout. 
+Clarity Vision Solutions needs different password policies for its two instances. For the public website, the defaults work except they want to add some syntax rules to encourage users to choose more secure passwords. For Glance, the internal intranet, they want more security: syntax rules, password history, expiration, and lockout. 
 
 ## Setting the Password Policy for the Public Website
 
@@ -34,9 +34,9 @@ Delectable Bonsai needs different password policies for its two instances. For t
 
 Users must now use passwords that's at least six characters long, has one letter, one lower case letter, one upper case letter, and one number. 
 
-## Setting the Password Policy for Breakfast
+## Setting the Password Policy for Glance
 
-1. From <http://breakfast.delectablebonsai.com:8080>, go to the _Global Menu_ &rarr; _Control Panel_ &rarr; _Security_ &rarr; _Password Policies_. 
+1. From <http://glance.clarityvisionsolutions.com:8080>, go to the _Global Menu_ &rarr; _Control Panel_ &rarr; _Security_ &rarr; _Password Policies_. 
 
 1. Click the _Default Password Policy_. 
 
@@ -64,7 +64,7 @@ Users must now use passwords that's at least six characters long, has one letter
 
 1. Click _Save_. 
 
-Breakfast users must now use six passwords before they can repeat one. Their passwords also expire every six months, two weeks prior to which they receive a warning. After their passwords expire, they can still use it up to a grace limit of five times before they are locked out. If they use the wrong password, they get five chances to log in, after which their accounts are locked. If they don't use all five chances, the failure count is reset after 10 minutes. Only administrators can unlock accounts. 
+Glance users must now use six passwords before they can repeat one. Their passwords also expire every six months, two weeks prior to which they receive a warning. After their passwords expire, they can still use it up to a grace limit of five times before they are locked out. If they use the wrong password, they get five chances to log in, after which their accounts are locked. If they don't use all five chances, the failure count is reset after 10 minutes. Only administrators can unlock accounts. 
 
 Excellent! You have now configured password policies for both instances. 
 

@@ -5,7 +5,7 @@ uuid: c8bad60f-49bf-4002-ae2f-39991aaa5980
 
 When authenticating with SAML, Liferay can serve as either the service provider (SP) or the identity provider (IdP). See [authenticating with SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) to learn more.
 
-Delectable Bonsai has grown by acquiring Almighty Syrup. As they look to the possibility of acquiring another company, the IT team decides to utilize SAML to centralize the storing and managing of user credentials. Follow the steps below to see this in action.
+Clarity Vision Solutions has grown by acquiring Almighty Glasses. As they look to the possibility of acquiring another company, the IT team decides to utilize SAML to centralize the storing and managing of user credentials. Follow the steps below to see this in action.
 
 ## Setting Up an Identity Provider
 
@@ -22,7 +22,7 @@ Delectable Bonsai has grown by acquiring Almighty Syrup. As they look to the pos
    * Navigate to `localhost:7080`.
    * Enter `Support` as the first name.
    * Enter `Support` as the last name.
-   * Enter `support@delectablebonsai.com` as the email.
+   * Enter `support@clarityvisionsolutions.com` as the email.
    * Click `Finish Configuration`.
    * On the next page, set the password to `learn`.
    * Click `Save`.
@@ -105,7 +105,7 @@ In the `liferaysp` container (`localhost:8080`), navigate to _Global Menu_ (![Gl
 
 1. In the `liferaysp` container (i.e. `localhost:8080`), navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Users and Organizations_. Note that the Test Test administrator is the only user listed.
 
-1. Click the user profile image in the top right and click _Sign Out_. Sign in with the credentials `support@delectablebonsai.com:learn`. Note the `liferayidp` container verified the user and provided successful login.
+1. Click the user profile image in the top right and click _Sign Out_. Sign in with the credentials `support@clarityvisionsolutions.com:learn`. Note the `liferayidp` container verified the user and provided successful login.
 
 ```{warning}
 To make working with the rest of the course easier, disable SAML after completing this exercise. 

@@ -5,7 +5,7 @@ uuid: 08ae049f-1024-4ac2-919e-7b0f7f5fa52f
 
 Liferay's sign-in widget is configurable and adjusts to how you've set its options. In a prior step, you configured two [virtual instances](../../configuration/configuring-virtual-instances.md). One of these is for a public-facing, external website. The other is for an internal intranet meant for employees or partners. 
 
-Guest users should be able to access the external site and register for accounts to purchase products, participate in forums, submit recipes, and otherwise interact with Delectable Bonsai. In contrast, no one should have access to the internal website except for users who have been registered by administrators. For this reason, you must adjust authentication differently for the two sites. 
+Guest users should be able to access the external site and register for accounts to purchase products, participate in forums, submit recipes, and otherwise interact with Clarity Vision Solutions. In contrast, no one should have access to the internal website except for users who have been registered by administrators. For this reason, you must adjust authentication differently for the two sites. 
 
 ## Configuring Authentication on the Public Website
 
@@ -15,7 +15,7 @@ Guest users should be able to access the external site and register for accounts
 
 1. Go to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Platform_ &rarr; _User Authentication_. 
 
-1. Make sure all boxes are checked except _Allow strangers to create accounts with a company email address_. Delectable Bonsai wants only members of the Marketing department to have accounts on the public website, and they will be created by administrators. 
+1. Make sure all boxes are checked except _Allow strangers to create accounts with a company email address_. Clarity Vision Solutions wants only members of the Marketing department to have accounts on the public website, and they will be created by administrators. 
 
    ![Having all boxes checked is appropriate for an external site.](./configuring-sign-in/images/01.png)
 
@@ -38,11 +38,11 @@ Excellent! You've now configured authentication for the public website. Now you 
 
 ## Configuring Authentication on the Internal Website
 
-Delectable Bonsai's internal intranet is called Breakfast, at the domain name `breakfast.delectablebonsai.com`. You created it in a [prior step](../../configuration/configuring-virtual-instances.md), and you made Kyle Klein an administrator of that instance. If you didn't follow those instructions, please follow them now and come back here. 
+Clarity Vision Solutions' internal intranet is called Glance, at the domain name `glance.clarityvisionsolutions.com`. You created it in a [prior step](../../configuration/configuring-virtual-instances.md), and you made Kyle Klein an administrator of that instance. If you didn't follow those instructions, please follow them now and come back here. 
 
 Now you can configure authentication on the internal intranet. 
 
-1. Go to <http://breakfast.delectablebonsai.com:8080> in your browser and log in as Kyle Klein. 
+1. Go to <http://glance.clarityvisionsolutions.com:8080> in your browser and log in as Kyle Klein. 
 
 1. Go to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Platform_ &rarr; _User Authentication_. 
 

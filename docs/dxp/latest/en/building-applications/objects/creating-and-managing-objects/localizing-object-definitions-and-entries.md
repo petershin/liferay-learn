@@ -1,3 +1,6 @@
+---
+uuid: 81425f88-d568-492f-8142-852335ac7374
+---
 # Localizing Object Definitions and Entries
 
 Liferay objects are integrated with the localization framework, so you can add translations for definition labels and allow users to input localized values for text fields. With this integration, you can localize objects to better serve your global users.

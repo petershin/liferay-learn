@@ -13,8 +13,6 @@ For Liferay DXP 7.4+, Page Template Collections are called Page Template Sets in
 
 ## Exporting a Page Template
 
-Follow these steps to export a page template:
-
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
 
 1. Select the *Page Templates* tab.
@@ -36,15 +34,13 @@ The last published version of the page template is always exported. If the page 
 The exported ZIP file contains these files:
 
 * `page-template-collection.json`: Includes the name of the set where the page template is saved and any other metadata.
-* An optional thumbnail file.
+* An optional thumbnail file
 * `page-template.json`: Contains the page template name and any other metadata.
 * `page-definition.json`: specifies the structure and content of the Page Template.
 
 The ZIP file may contain different types of page templates as well, like `display-page-template.json`, `master-page.json`, `page-template-collection.json` and `page-template.json`.
 
 ## Importing a Page Template
-
-Follow these steps to import a page template:
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
 

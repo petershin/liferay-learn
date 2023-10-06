@@ -18,7 +18,7 @@ You can edit, preview, or copy utility pages.
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
 
-    The out-of-the-box pages are marked with a `PROVIDED BY LIFERAY` tag.
+   The out-of-the-box pages are marked with a `PROVIDED BY LIFERAY` tag.
 
 1. Choose a page and click *Actions* ( ![Actions Icon](../../../images/icon-actions.png) ) to view and select one of the available options (e.g. Edit, Preview, or Make a Copy).
 
@@ -27,8 +27,6 @@ Edit the utility page the same way you would edit a [content page](../using-cont
 ```
 
 ## Creating a New Utility Page
-
-To create a new utility page, follow these steps:
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and  navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
 
@@ -46,9 +44,9 @@ You can edit the newly created utility page the same way you would edit a [conte
 
 To select a new utility page as default, follow these steps:
 
-1. Open the *Site Menu* ( ![Site Menu icon](../../../images/icon-product-menu.png) ) and  navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
+1. Open the *Site Menu* (![Site Menu icon](../../../images/icon-product-menu.png)) and  navigate to *Site Builder* &rarr; *Pages* &rarr; *Utility Pages* tab.
 
-1. Select Actions ( ![Actions Menu](../../../images/icon-actions.png) ) for the utility page you want to set as default.
+1. Select Actions (![Actions Menu](../../../images/icon-actions.png)) for the utility page you want to set as default.
 
 1. Select *Mark as Default*.
 

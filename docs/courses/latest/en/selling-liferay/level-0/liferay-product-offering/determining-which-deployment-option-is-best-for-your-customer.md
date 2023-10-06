@@ -25,7 +25,7 @@ But for now, discovering more about your prospective customer will help you to s
 
 ## Building Tailored Solutions
 
-Solutions implemented with Liferay are not turnkey applications - even when a customer chooses Liferay Experience Cloud SaaS as their deployment approach. Liferay DXP provides extensive functionality out of the box. In all cases, this will need to be configured to start to build a solution:
+Solutions implemented with Liferay are not turnkey applications - even when a customer chooses Liferay Experience Cloud SaaS as their deployment approach. Liferay DXP provides extensive functionality out-of-the-box. In all cases, this will need to be configured to start to build a solution:
 
 * Pages have to be added
 * Content has to be created

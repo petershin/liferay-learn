@@ -72,7 +72,7 @@ An alternative then is to price based on known users, which works well for custo
 
 The solution to this challenge was to combine both models, to have metrics for both Page Views and Users, with each lever operating independently of the other.
 
-![Liferay Experience Cloud Saas Pricing tracks both users and page views.](./liferay-pricing-saas/images/01.png)
+![Liferay Experience Cloud SaaS Pricing tracks both users and page views.](./liferay-pricing-saas/images/01.png)
 
 ### Anonymous Page Views
 

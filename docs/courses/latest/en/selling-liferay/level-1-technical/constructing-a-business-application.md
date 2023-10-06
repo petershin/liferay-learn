@@ -85,7 +85,7 @@ Other topics to discuss are cover forms and form containers. Form Containers are
 
 **Object Display Pages**
 
-Objects are integrated out of the box into Liferay’s Info framework, and as such Display Page Templates can be created easily to display the Object entries. The completed application using Objects should include the ability to display a list of entries and then individual entries via a Display Page.
+Objects are integrated out-of-the-box into Liferay’s Info framework, and as such Display Page Templates can be created easily to display the Object entries. The completed application using Objects should include the ability to display a list of entries and then individual entries via a Display Page.
 
 Documentation on displaying object entries is available [here](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries).
 

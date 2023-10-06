@@ -5,18 +5,18 @@ toc:
 uuid: fff3c165-26ff-48d7-8937-cdc26f1b0062
 ---
 
-# Ways to Extend Liferay 
+# Extending Liferay
 
 **At a Glance**
 
 * Extending Liferay is a crucial aspect of leveraging the platform's full potential
-* By customizing Liferay with specific business needs in mind, digital experiences which tailored to the needs of the users can be created
+* By customizing Liferay with specific business needs in mind, digital experiences which are tailored to the needs of the users can be created
 * This module coves five key ways to extend Liferay
-    * Editors
-    * Configuration 
-    * Low Code
-    * Integrations
-    * Client-Extensions
+  * Editors
+  * Configuration
+  * Low Code
+  * Integrations
+  * Client-Extensions
 
 ## Background
 
@@ -33,14 +33,14 @@ This module outlines the key approaches that can be used to extend, configure, a
 
 ## Some Traditional Customizations
 
-Up to and including Liferay DXP 7.3 the primary method of extending Liferay was via writing Java OSGi Modules: e.g. portlets, hooks, etc. This enabled developers to add, remove, and modify functionality with ease while achieving a high degree of flexibility and customization. 
+Up to and including Liferay DXP 7.3, the primary method of extending Liferay was via writing Java OSGi Modules: e.g. portlets, hooks, etc. This enabled developers to add, remove, and modify functionality with ease while achieving a high degree of flexibility and customization.
 
 OSGi modules are deployed to, and extend, the core of the platform, which introduces a number of challenges:
 
 * Modifying the core impacts upgrades due to changes in APIs and so on
 * Customers are unable to access new features in the newer releases of Liferay DXP without going through a full upgrade
 
-## Latest version of Liferay DXP
+## Latest Version of Liferay DXP
 
 It is important to note that:
 
@@ -52,7 +52,7 @@ It is important to note that:
 
 ## Extending Liferay - Editors
 
-One way to extend Liferay DXP is via the various Editors that are provided out of the box. For example through using the features provided via Liferay’s Experience Management capabilities.
+One way to extend Liferay DXP is via the various Editors that are provided out-of-the-box. For example through using the features provided via Liferay’s Experience Management capabilities.
 
 These methods allow users a visual way to build and configure pages. Some notable examples are:
 
@@ -74,7 +74,7 @@ Thanks to Liferay's drag-and-drop interface, adding fragments to pages, and conf
 
 ![The Fragment Editor allows developers to create custom fragments by adding HTML and if needed CSS, JavaScript and Freemarker.](./extending-liferay/images/03.png)
 
-Further to this, developers can create new fragments from scratch, through the editor within the UI, or via a CLI tool. Developers use a combination of HTML and optionally CSS, JavaScript and Freemarker to build new fragments to serve almost any purpose.
+In addition to this, developers can create new fragments from scratch, through the editor within the UI, or via a CLI tool. Developers use a combination of HTML and optionally CSS, JavaScript and Freemarker to build new fragments to serve almost any purpose.
 
 See: [Developing Page Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/developer-guide/developing-page-fragments)
 

@@ -2,20 +2,20 @@
 uuid: 33dc0b48-efef-4c05-ab25-149b855b2a76
 ---
 
-# Extending Liferay with Low-Code/No-Code and Integrations 
+# Extending Liferay with Low-Code/No-Code and Integrations
 
 **At a Glance**
 
 * Extending Liferay is a crucial aspect of leveraging the platform's full potential
-* By customizing Liferay with specific business needs in mind, digital experiences which tailored to the needs of the users can be created
-* Low-Code / No-Code capabilities allow the platform to be extended with the need to write little or no code
+* By customizing Liferay with specific business needs in mind, digital experiences tailored to the needs of users can be created
+* Low-Code / No-Code capabilities allow the platform to be extended by writing little to no code
 * Integrations with external systems allows incorporation of data from those systems into a Liferay application
 
 ## Extending Liferay - Low-Code/ No-Code
 
 Using a Low-Code and No-Code approach is becoming increasingly popular as it allows developers and business users to create custom functionality without extensive coding knowledge or experience.
 
-Low-Code and No-Code are actually not new concepts to Liferay as many of the existing features in Liferay DXP are designed with this principle in mind. 
+Low-Code and No-Code are actually not new concepts to Liferay as many of the existing features in Liferay DXP are designed with this principle in mind.
 
 Some quick examples in Liferay DXP are:
 
@@ -58,7 +58,7 @@ Points to note here:
 
 * Entities and processes can be modeled with objects to help create great Digital Experiences
 * From a mortgage simulator, to an e-learning platform, almost any functionality that might need to be included in Liferay can be created with Objects
-* Such out of the box features allow developers to add new capabilities and override native Liferay functions - without modifying the core of Liferay DXP
+* Such out-of-the-box features allow developers to add new capabilities and override native Liferay functions - without modifying the core of Liferay DXP
 
 ## Extending Liferay - Integrations
 
@@ -95,14 +95,14 @@ Liferay can also be integrated with Google Drive in two different ways:
 1. [Enabling Document Creation and Editing with Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration/enabling-document-creation-and-editing-with-google-drive)
 2. [Enabling Links to Google Drive Documents](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration/enabling-links-to-google-drive-documents)
 
-The fundamental difference between these two modes is where the documents are ultimately stored - in both cases the documents are created and edited using Google’s browser-based applications. 
+The fundamental difference between these two modes is where the documents are ultimately stored - in both cases the documents are created and edited using Google’s browser-based applications.
 
 * In the first mode the documents are ultimately stored directly in Liferay’s Documents and Media library
 * In the second they are stored in Google Drive with shortcuts to those documents stored in Liferay
 
 ### Live Chat & Chatbot
 
-Liferay DXP provides comprehensive support for a number of [Live Chat](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems) platforms. Enabling this integration adds a chat window to sites on the Liferay instance and can be used to enable improved support and site experience for your users
+Liferay DXP provides comprehensive support for a number of [Live Chat](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems) platforms. Enabling this integration adds a chat window to sites on the Liferay instance and can be used to enable improved support and site experience for your users.
 
 Liferay also integrates with chatbot services, such as Zendesk or Hubspot, to provide automated chat functionality. This can be useful for providing support to users outside of normal business hours or for handling simple queries.
 
@@ -128,7 +128,7 @@ Examples include customer data, product data, and sales data etc. But, there are
 
 ### Headless APIs
 
-Liferay [Headless integration](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform) provides developers with a flexible and efficient way to integrate Liferay's back-end functionality with their own applications, using modern REST APIs. 
+Liferay [Headless integration](https://learn.liferay.com/w/dxp/headless-delivery/using-liferay-as-a-headless-platform) provides developers with a flexible and efficient way to integrate Liferay's back-end functionality with their own applications, using modern REST APIs.
 
 * This approach provides developers with greater control over the user experience, and enables faster time-to-market for their applications.
 

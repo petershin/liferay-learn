@@ -26,13 +26,13 @@ Certainly for the objectives for this learning path - to prepare to deliver a 30
 
 _If_ the prospect wants to see authentication to Liferay using an external ID it is straightforward to configure Liferay to use OpenID Connect. Note however that the OOTB implementation of OpenID Connect requires the user to click on a link and then manually select their provider.
 
-In many real-world use cases this is perfectly relevant - where the user selects from a list of providers, but if the prospect’s requirements are for all users to authenticate using a _single_ provider, the out of the box UI might not set the right expectations.
+In many real-world use cases this is perfectly relevant - where the user selects from a list of providers, but if the prospect’s requirements are for all users to authenticate using a _single_ provider, the out-of-the-box UI might not set the right expectations.
 
 One of Liferay’s Sales Engineers created a simple custom Fragment to provide a button which makes the process seamless. The source-code for this fragment is available in Github [here](https://github.com/lgdd/openid-connect-single-button).
 
 ## SAML, SSO, IDMS
 
-Another authentication mechanism supported by Liferay out of the box is SAML, which stands for Security Assertion Markup Language. SAML is an open-standard used for authentication.
+Another authentication mechanism supported by Liferay out-of-the-box is SAML, which stands for Security Assertion Markup Language. SAML is an open-standard used for authentication.
 
 SAML works using two separate but tightly linked concepts:
 
@@ -68,7 +68,7 @@ Multi-factor authentication (MFA) adds additional authentication factors that ar
 
 Even more secure is to use a Fast Identity Online 2 - or FIDO2 - device or application - like Google Authenticator - which ties the PIN to a specific device.
 
-Liferay provides support for multi-factor authentication out of the box, with support for the following factors included:
+Liferay provides support for multi-factor authentication out-of-the-box, with support for the following factors included:
 
 * One-Time PIN (OTP)
 * Time-based OTP (TOTP)
@@ -78,6 +78,6 @@ Liferay provides support for multi-factor authentication out of the box, with su
 
 This last option isn’t really Multi-Factor Authentication - it’s more restricting who can even attempt to authenticate - and indeed similar capabilities can be implemented via a Web Application Firewall, or using a Web-tier in front of Liferay - but it’s useful to have available in the product - and to talk about when doing a demo.
 
-Most demos will not include a live demonstration of multi-factor authentication, but it is important to talk about the capabilities that are provided out of the box because doing so builds a high degree of confidence with prospects that any Liferay application will be secure. 
+Most demos will not include a live demonstration of multi-factor authentication, but it is important to talk about the capabilities that are provided out-of-the-box because doing so builds a high degree of confidence with prospects that any Liferay application will be secure. 
 
 Finally in this module learn about how authentication is complemented with [authorization](./authorization.md) to control what users see and can interact with once authenticated.

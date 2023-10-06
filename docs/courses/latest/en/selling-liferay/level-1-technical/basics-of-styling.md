@@ -77,7 +77,7 @@ Liferay allows the creation of any number of Style Books to reflect different de
 
 **Internals of Style Books**
 
-All this information raises a question about how Style Books actually work. Internally each configuration change is setting a CSS variable, which in turn impacts the CSS that is loaded for all pages that the Style Book is applied to. This in turn overrides the default styling that Liferay applies out of the box.
+All this information raises a question about how Style Books actually work. Internally each configuration change is setting a CSS variable, which in turn impacts the CSS that is loaded for all pages that the Style Book is applied to. This in turn overrides the default styling that Liferay applies out-of-the-box.
 
 ### Tips for demonstrating Style Books
 

@@ -6,7 +6,7 @@ uuid: 5fde9803-aa40-48ff-8286-a3d371c52b42
 
 Design Systems and Experience Management work hand-in-hand, allowing designers to create the foundations of what site authors use to build sites and pages. With Design Systems, non-developer users can create the look and feel of Liferay Applications with little, or potentially no developer involvement. Meanwhile Developers can extend the out-of-the-box capabilities which can then be used by non-developer users to further enhance the end-user experience.
 
-![Liferay design systems provide robust out of the box control of site design and composition.](./design-systems-and-experience-management/images/01.png)
+![Liferay design systems provide robust out-of-the-box control of site design and composition.](./design-systems-and-experience-management/images/01.png)
 
 ## Site Design and Composition Experience
 

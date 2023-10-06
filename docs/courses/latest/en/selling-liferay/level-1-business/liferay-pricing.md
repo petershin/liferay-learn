@@ -111,7 +111,7 @@ Liferay supports three deployment models:
 Liferay’s approach is SaaS first. To make it easier to identify whether this is possible there are some straightforward questions that can be discussed within the Sales team:
 
 * Can the customer’s business problem be solved with Liferay’s out-of-the-box features?
-* Or, can the preferred approach to customisations - Client Extensions - be used to meet those requirements?
+* Or, can the preferred approach to customizations - Client Extensions - be used to meet those requirements?
 * Or, could the problem be solved with an upcoming feature - either one that’s already on the roadmap, or one that the customer requests and can be built for them during the sales cycle?
 
 If any of these are true, and the customer is comfortable with SaaS in the first place, then Liferay Experience Cloud SaaS should be proposed.

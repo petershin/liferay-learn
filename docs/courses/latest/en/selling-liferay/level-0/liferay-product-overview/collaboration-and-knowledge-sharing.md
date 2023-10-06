@@ -6,7 +6,7 @@ uuid: 64c9c5a6-7ff9-45c7-bad7-a271bada16b7
 
 Empower users to get answers to questions faster on their own and solve more complex challenges through organized collaboration. Liferay DXP’s collaboration and knowledge sharing tools empower your customers, partners, and employees to find the information they need on their own.
 
-![Liferay provides a rich blogs experience out of the box.](./collaboration-and-knowledge-sharing/images/01.png)
+![Liferay provides a rich blogs experience out-of-the-box.](./collaboration-and-knowledge-sharing/images/01.png)
 
 ## Collaboration
 

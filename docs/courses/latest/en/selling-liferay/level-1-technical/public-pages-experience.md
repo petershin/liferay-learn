@@ -29,7 +29,7 @@ The purpose of this module is to provide the guidance needed to ensure that the 
 
 It is likely that the demo is the first time that the prospective customer has seen Liferay. While it might be tempting to immediately login, the starting point for any Liferay demo should be an engaging, content-rich home or landing page, before logging in. 
 
-Be patient, there is time to get to showing a particular use-case, which will usually be post login, but it is a mistake to breeze past the login stage because the home page provides an excellent opportunity to showcase a lot of Liferay’s out of the box capabilities and help the prospect to become excited about what they’ve seen and the potential that Liferay provides.
+Be patient, there is time to get to showing a particular use-case, which will usually be post login, but it is a mistake to breeze past the login stage because the home page provides an excellent opportunity to showcase a lot of Liferay’s out-of-the-box capabilities and help the prospect to become excited about what they’ve seen and the potential that Liferay provides.
 
 This first impression is always remembered, and while it may not be the make-or-break step in an opportunity, since prospects _remember_ these first pages, do not miss the chance to make them count.
 
@@ -51,9 +51,9 @@ A really important thing to know before beginning the demo is how much time is a
 
 Before showing the first screen use the first minute or two to talk about the demo that is going to be presented. If it is something specific that the prospect has asked to see, make sure that this is reconfirmed to be certain that the time is being used effectively.
 
-Alternatively, it might be that this is an introductory demo, using one of Liferay’s out of the box templates. For this module the Masterclass template is being used, so this can be introduced by saying something like:
+Alternatively, it might be that this is an introductory demo, using one of Liferay’s out-of-the-box templates. For this module the Masterclass template is being used, so this can be introduced by saying something like:
 
-“Today we’re going to use one of the pre-built Liferay templates called Masterclass. Masterclass is a learning management solution built using Liferay’s out of the box features.”
+“Today we’re going to use one of the pre-built Liferay templates called Masterclass. Masterclass is a learning management solution built using Liferay’s out-of-the-box features.”
 
 It is always much better to use a demo which is aligned with the prospect’s requirements, so this is a fall-back position if there hasn’t been an opportunity to discover the problem the customer is trying to solve. If using a non-aligned demo, always explain why, if it’s because the use case hasn’t been shared, say so. If it’s an outbound-generated opportunity and the prospect is interested, but doesn’t yet know if they have a problem to solve, say so. 
 

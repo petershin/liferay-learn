@@ -6,7 +6,7 @@ uuid: d0e6eaad-ccee-4855-b056-f9a8572a43ed
 
 With Liferay’s Content and Asset Management capabilities, practitioners can create, organize, and manage content for personalized digital experiences more efficiently, which simplifies the authoring and approval process for quicker go-to-market. Liferay includes tools for managing product information, promotion, pricing, and inventory which make it easy for your product managers and e-commerce teams to set up and manage single or multiple online storefronts.
 
-![Liferay design systems provide robust out of the box control of site design and composition.](./content-and-asset-management/images/01.png)
+![Liferay design systems provide robust out-of-the-box control of site design and composition.](./content-and-asset-management/images/01.png)
 
 ## Content Management System
 

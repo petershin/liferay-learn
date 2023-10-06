@@ -117,7 +117,7 @@ One of Liferay’s consultants has provided a [blog](https://liferay.dev/blogs/-
 
 Third-party services like Auth0 from Okta can be used to set up SAML or OpenID Connect authentication.
 
-Liferay provides support for these types of services out of the box and requires only basic configuration to make it work.
+Liferay provides support for these types of services out-of-the-box and requires only basic configuration to make it work.
 
 **Azure AD**
 

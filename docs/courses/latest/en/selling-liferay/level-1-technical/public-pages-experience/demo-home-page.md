@@ -20,13 +20,13 @@ A key objective for the demos is to ensure that the prospect remembers Liferay. 
 
 ![Generic Liferay DXP home page.](./demo-home-page/images/01.png)
 
-Ideally create and show a custom demo, or at least a demo tailored for the customer needs. The best way to start is to use one of the Liferay out of the box Site Initializers, or Site Templates for the basis of any demo.
+Ideally create and show a custom demo, or at least a demo tailored for the customer needs. The best way to start is to use one of the Liferay out-of-the-box Site Initializers, or Site Templates for the basis of any demo.
 
 Remember that _custom_ doesn’t mean a demo built from scratch, with custom styling, UI, UX, applications etc. Ideally Liferay’s out-of-the-box features should be used, because this gives a lot of scope to talk about Liferay as a platform, which is where Liferay shines. 
 
 If the demo only shows solving the prospect’s individual problem then theoretically a single application could be built, not even on Liferay, and presented as a proof-of-concept. Liferay is a platform, and should be shown as a platform, so the prospect needs to know that Liferay offers a lot of functionality beyond just their specific use case. 
 
-Using the out of the box features provides the opportunity to showcase these features and capabilities. Even if there is no specific use-case supplied and the prospect is just interested in seeing what Liferay has to offer, do not use the default “Classic” theme but use one of the pre-supplied site initializers.
+Using the out-of-the-box features provides the opportunity to showcase these features and capabilities. Even if there is no specific use-case supplied and the prospect is just interested in seeing what Liferay has to offer, do not use the default “Classic” theme but use one of the pre-supplied site initializers.
 
 ![Masterclass site initializer home page.](./demo-home-page/images/02.png)
 

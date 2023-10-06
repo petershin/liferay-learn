@@ -2,13 +2,13 @@
 uuid: 38169381-8595-42a3-9dba-48e7b5ced927
 ---
 
-# Extending Liferay with Client Extensions 
+# Extending Liferay with Client Extensions
 
 **At a Glance**
 
 * Extending Liferay is a crucial aspect of leveraging the platform's full potential
-* By customizing Liferay with specific business needs in mind, digital experiences which tailored to the needs of the users can be created
-* Client Extensions provides a new way to extend Liferay which is decoupled from the platform core
+* By customizing Liferay with specific business needs in mind, digital experiences tailored to the needs of users can be created
+* Client Extensions provide a new way to extend Liferay that is decoupled from the platform core
 * Decoupling custom code from Liferay’s core ensures quicker and easier upgrades and frees developers to use the languages and frameworks they are familiar with
 
 ```{note}
@@ -60,7 +60,7 @@ With Client Extensions clean separation can be established since APIs are consis
 
 So why is this all important? What does all this mean? And why should prospects be informed of the various methods that are available to extend Liferay?
 
-The core message is that even though Liferay comes with a wide range out of the box capabilities it is important to remember that Liferay is not a turnkey application.
+The core message is that even though Liferay comes with a wide range out-of-the-box capabilities it is important to remember that Liferay is not a turnkey application.
 
 Customers or partners have to implement the solution required to solve their business problems and Liferay provides a wide range of capabilities which make it possible to deliver to those business requirements using customizations and extensions to the platform.
 

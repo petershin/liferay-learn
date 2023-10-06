@@ -17,9 +17,9 @@ Using a Blogs [widget](../../site-building/creating-pages/using-widget-pages/add
 
 1. Under the Entries tab, click *Add* ( ![Add icon](../../images/icon-add.png) ) to add a new blog entry.
 
-    ![Blog entry form editor](./adding-blog-entries/images/01.png)
+   ![Blog entry form editor](./adding-blog-entries/images/01.png)
 
-1. Drag & drop / select a file to upload as an optional cover image for the entry. By default, this cover image is published as part of the blog entry's abstract.
+1. Drag and drop or select a file to upload as an optional cover image for the entry. By default, this cover image is published as part of the blog entry's abstract.
 
 1. Enter a title for the blog entry.
 
@@ -39,9 +39,9 @@ To categorize your entry using categories and tags,
 
 1. Expand the Categorization section.
 
-1. Click  *Select* button to choose an existing category or tag.
+1. Click *Select* to choose an existing category or tag.
 
-    Alternately, you can create a new tag by entering the tag name in the Tags field and pressing Return.
+   Alternately, you can create a new tag by entering the tag name in the Tags field and pressing Return.
 
 To relate an asset to the entry,
 
@@ -53,15 +53,15 @@ To configure the blog entry and how it is displayed, expand the *Configuration* 
 
 | Configuration            | Description |
 | :----------------------- | :------------------------------------------------------------------------------------------------------------------------- |
-| URL                      | Configure the entry's URL: Automatic sets the URL based on the entry's title. Custom lets you add a custom Friendy URL |
-| Abstract                 | Specify the entry's abstract. By default, the blogs application uses the first 400 words. Custom Abstract lets you add a manual description. |
+| URL                      | Configure the entry's URL: *Automatic* sets the URL based on the entry's title. *Custom* prompts for a custom Friendly URL |
+| Abstract                 | Specify the entry's abstract. By default, the Blogs application uses the first 400 words. *Custom Abstract* prompts for a manual description. |
 | Small Image              | Add a small image to be shown as the entry's thumbnail. |
 | Display Date             | Configure the display date to be used for the entry. |
 | Send Email Entry Updated | Send comments about the entry update. |
-| Allow Pingbacks          | When you include a link to another website's content in your post, and if that website supports pingbacks, it will receive a notification or "ping" from your site. Pingbacks use XML-RPC requests to the URL you linked. |
+| Allow Pingbacks          | When you include a link to another website's content in your post, and if that website supports pingbacks, it receives a notification or "ping" from your site. Pingbacks use XML-RPC requests to the URL you linked. |
 | Display Page Template    | Select the default [display page template](../../site-building/displaying-content/using-display-page-templates.md), a specific one, or no display page template to display your blog entry. |
 
-![When creating a blog entry, the Configuration panel lets you control when and where the blog entry appears, and what to use for the entry's abstract.](./adding-blog-entries/images/02.png)
+![When creating a blog entry, use the Configuration panel to control when and where the blog entry appears, and what to use for the entry's abstract.](./adding-blog-entries/images/02.png)
 
 ### Publishing the Blog Entry
 

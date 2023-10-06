@@ -4,10 +4,10 @@ uuid: 1c7ea087-074c-4b44-933b-fb49cb364c0a
 # About the Page Audit Tool
 
 ```{important}
-This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+This feature is currently behind a beta feature flag. Read [Beta Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) for more information.
 ```
 
-The Page Audit tool displays performance-related information about the server render time, component type, component's origin, and cache status as well as warning messages when there are components affecting the page's performance.
+The Page Audit tool displays performance-related information about the server render time, component type, component's origin, and cache status as well as warning messages about potential performance issues.
 
 You need, at least, the following [permissions](../../users-and-permissions/roles-and-permissions.md) to view and use the Page Audit tool:
 

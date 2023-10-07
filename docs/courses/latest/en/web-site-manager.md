@@ -1,5 +1,6 @@
 ---
 toc:
+- ./web-site-manager/site-settings.md
 - ./web-site-manager/creating-pages.md
 uuid: a6e1bd85-6cb9-49ef-aa35-ea2bda8ad999
 ---

@@ -13,7 +13,7 @@ Now that the home page is in place and the master page is able to define the hea
 - About Us
 - Careers
 
-1. While logged in with the site administrator, NAME NAME, open the Site menu (![Product Menu](../../images/icon-product-menu.png)), then click _Site Builder_ &rarr; _Pages_.
+1. While logged in with the site administrator, Preston Palmer, open the Site menu (![Product Menu](../../images/icon-product-menu.png)), then click _Site Builder_ &rarr; _Pages_.
 
    ![The Home and Search page are already in the default site.](./completing-the-site-structure/images/01.png)
 

@@ -13,7 +13,7 @@ Delectable Bonsai needs fragments and images in the site. With these the site cr
 
    <!-- URL needs help -->
    ```bash
-   curl https://resources.learn.liferay.com/courses/latest/en/site-designer/creating-pages/importing-fragments-and-resources/liferay-q9c4.zip -O
+   curl https://resources.learn.liferay.com/courses/latest/en/web-site-manager/creating-pages/importing-fragments-and-resources/liferay-q9c4.zip -O
    ```
 
    ```bash

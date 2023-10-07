@@ -3,7 +3,7 @@ uuid: 4925291c-19c3-411d-9870-7f1768ad6df7
 ---
 # Importing Fragments and Resources
 
-Delectable Bonsai needs fragments and images in the site. With these the site creator has the resources required to create the site to meet the design and branding requirements.
+Clarity needs fragments and images in the site. With these the site creators have the resources required to create the site while meeting design and branding requirements. Log in as Preston Palmer, the site administrator user, for this exercise.
 
 ## Downloading and Importing the Fragments
 
@@ -24,9 +24,9 @@ Delectable Bonsai needs fragments and images in the site. With these the site cr
 
 1. Open the Site menu (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Fragments*.
 
-1. Add a fragment set for Delectable Bonsai's custom fragments and compositions. Click the Add button (![Add](../../images/icon-plus.png)) for Fragment Sets.
+1. Add a fragment set for Clarity's custom fragments and compositions. Click the Add button (![Add](../../images/icon-plus.png)) for Fragment Sets.
 
-1. Name the fragment set _Delectable Bonsai Fragments_ and click _Save_.
+1. Name the fragment set _Clarity Fragments_ and click _Save_.
 
 1. Open the Actions menu (![Actions Button](../../images/icon-actions.png)) for the fragment set and select *Import*.
 
@@ -95,4 +95,4 @@ These images will appear in Documents and Media:
    - `sign-in-image.png`
 
 
-Now that you've imported the fragments and resources, you can use them to create the Delectable Bonsai site.
+Now that you've imported the fragments and resources, you can use them to create the Clarity site.

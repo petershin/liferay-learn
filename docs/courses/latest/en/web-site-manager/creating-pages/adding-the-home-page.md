@@ -8,11 +8,9 @@ Right now, browsing to <http://localhost:8080> loads the default site and the de
 ![The default home page has a header, footer, and some Welcome to Liferay content.](./adding-the-home-page/images/01.png)
 
 <!-- Re-work this for default home page -->
-Delectable Bonsai needs its own home page. Page creation and management is part of the site administration activity, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Any user assigned to the role and a member of the site can act as an administrator in the site. The setup script and the steps completed in the [Liferay Administrator](../../liferay-administrator.md) lessons have your Liferay instance pre-populated with just such a user, Preston Palmer.
+Clarity needs its own home page. Page creation and management is part of the site administration activity, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Any user assigned to the role and a member of the site can act as an administrator in the site. The setup script and the steps completed in the [Liferay Administrator](../../liferay-administrator.md) lessons have your Liferay instance pre-populated with just such a user, Preston Palmer.
 
-<!-- NOTE: must iron this site administrative user out. -->
-
-While logged in as the site administrator, configure the existing home page for Delectable Bonsai:
+While logged in as the site administrator, configure the existing home page for Clarity:
 
 1. Go to the Home page and click Edit (![Edit](../../images/icon-edit.png)) in the administrative header.
 
@@ -24,8 +22,7 @@ While logged in as the site administrator, configure the existing home page for 
 
 1. Click the outermost container's Actions menu (![Actions](../../images/icon-actions.png)), then click _Delete_.
 
-   Now your page is a blank slate. There's still a header and footer (we'll customize that in the next exercise), but the default page content is gone!
-   <!-- Maybe not relevant to the course, but I've observed that there's a section element called content that's still visible (though blank) in the page, but the main-content div is no longer visible. Everything you add in the content page editor goes into this main-content div and provides the actual visible page content. It's useful to know about the content section though, because you can provide styling to the parent of main-content as needed (for example we had to set it to display: flex for our footer to work properly)-->
+   Now your page is a blank slate. There's still a header and footer that need to be changed (in the next exercise), but the default page content is gone!
 
 1. Click the plus icon (![Fragments and Widgets](../../images/icon-plus.png)) to open the Fragments and Widgets sidebar menu.
 
@@ -70,11 +67,11 @@ While logged in as the site administrator, configure the existing home page for 
 
 1. Click the _Publish_ Button.
 
-Now there's a home page for Delectable Bonsai. It's not fully implemented yet, but users can navigate to <http://localhost:8080> and it's clearly for Delectable Bonsai, not Liferay.
+Now there's a home page for Clarity. It's not fully implemented yet, but users can navigate to the site and it's clearly for Clarity, not Liferay.
 
-![There's a home page for Delectable Bonsai's public site.](./adding-the-home-page/images/05.png)
+![There's a home page for Clarity's public site.](./adding-the-home-page/images/05.png)
 
-Before completing the home page design and moving on to design each additional page, Delectable Bonsai wants to create a custom header and footer for all its pages.
+Before completing the home page design and moving on to design each additional page, Clarity wants to [create a custom header and footer for all its pages](./defining-the-pages-header-and-footer.md).
 
 ## Relevant Concepts
 
@@ -90,7 +87,7 @@ Before completing the home page design and moving on to design each additional p
 
    The Site Menu is only visible to site administrators or other users granted the proper permissions. From here users can access applications and configurations scoped to the current site, which is labeled at the top of the menu.
 
-1. Click _Grow Delectable Bonsai_.
+1. Click _Grow Clarity_.
 
 1. Click _Site Builder_, then _Pages_. In a new blank site like Grow, there are no pages.
 

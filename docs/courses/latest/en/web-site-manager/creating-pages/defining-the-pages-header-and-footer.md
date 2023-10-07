@@ -3,11 +3,12 @@ uuid: 2300c294-4b2c-480a-8a99-a230ace39c5f
 ---
 # Defining the Pages' Header and Footer
 
-With [Liferay's master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Delectable Bonsai can define common elements for their pages' headers and footers. Delectable Bonsai has just one page currently, the Home page. Since no master page was defined, the blank master page was automatically associated to the page. The blank master page does not define the default header and footer: instead, the default header and footer are defined in the default Classic theme. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu.
+With [Liferay's master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Clarity can define common elements for their pages' headers and footers. Clarity has just one page currently, the home page. Since no master page was defined, the blank master page was automatically associated to the page. The blank master page does not define the default header and footer: instead, the default header and footer are defined in the default Classic theme. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu.
+<!-- I wonder if this short-changes master pages by focusing on the shared header and footer--master pages are also used for setting a theme/style book or theme css and defining the drop zone, including limiting what widgets and fragments are allowed to be added to the page-->
 
 ![The default header and footer are useful, but replaceable.](./defining-the-pages-header-and-footer/images/01.png)
 
-Delectable Bonsai needs their own design, of course. At first the master page will define the header and footer for the one page and the utility pages, but Delectable Bonsai will re-use it across the entire site, as more pages are added.
+Clarity needs their own design, of course. At first the master page will define the header and footer for the one page and the utility pages, but Clarity will re-use it across the entire site, as more pages are added.
 
 1. Add the Master Page. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Design &rarr; Page Templates.
 
@@ -53,5 +54,6 @@ Your master page is defining the header and footer.
 
 ![The header and footer is in place.](./defining-the-pages-header-and-footer/images/07.png)
 
-Even with a header and footer, the look and feel is not yet well polished. Links are all currently blue and do not match with Delectable Bonsai's brand colors, for example. Instead of spending time manually fixing this, leave it for. The theme CSS client extension you deploy later will remedy these visual faults.
-<!-- Note: we may want to remove the manual color-setting here, and only do it when the brand colors are loaded in from the Theme CSS CX later -->
+Even with a header and footer, the look and feel is not yet well polished. Links are all currently blue and do not match with Clarity's brand colors, for example. Instead of spending time manually fixing this, leave it for. The theme CSS client extension you deploy later will remedy these visual faults. 
+
+Now that the master page is defined, Clarity can [fill out the site with additional pages](./completing-the-site-structure.md).

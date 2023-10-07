@@ -5,11 +5,11 @@ uuid: 9d40c268-3ab6-4358-bcac-a43d706d8a3b
 
 <!-- We could also create a nav menu fragment for the footer: if the user is signed in show some account links like cart, profile, lists, otherwise show the pages hierarchy-->
 
-Delectable Bonsai's navigation menu is getting cluttered, as it shows all the pages by default. The Menu Display fragment's default configuration shows the page hierarchy of the site.. Remembered that you excluded Careers, Sign In, and Search from the default menu display, so those pages aren't showing.
+Clarity's navigation menu is getting cluttered, as it shows all the pages by default. The Menu Display fragment's default configuration shows the page hierarchy of the site. Remember that you excluded Careers, Sign In, and Search from the default menu display, so those pages aren't showing.
 
 ![The default navigation menu displays the site's pages.](./creating-navigation-menus/images/01.png)
 
-To simplify the navigation menu, Delectable Bonsai would like just three items to appear in the navigation menu: Shop (page), Recipes (page), and More (sub-menu with additional page links).
+To simplify the navigation menu, Clarity wants just three items to appear in the navigation menu: Shop (page), Recipes (page), and More (sub-menu with additional page links).
 
 <!-- Notes from outline/meeting w/Evan and Mateo: Linking to DPTs, external URLs are benefits (of having readers create a custom nav menu), etc. Look and feel customization as well (ADTs)-->
 
@@ -25,7 +25,7 @@ First create the navigation menu:
 
 1. Click _New_ &rarr; _Page_.
 
-1. In the Select Pages selector, expand the Delectable Bonsai hierarchy and click _Shop_, then click _Recipes_.
+1. In the Select Pages selector, expand the Clarity hierarchy and click _Shop_, then click _Recipes_.
 
    <!-- For this menu I want Recipes but it wasn't created in the completing the site structure lesson--need to add it -->
 
@@ -75,7 +75,7 @@ The menu display fragment showing the current navigation is added to the master 
 
    In addition to these site menus defined in the Navigation Menus application, you can click Contextual Menus to see some additional dynamic menu options. See [Configuring Menu Displays](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/configuring-menu-displays) for more information.
 
-   Before this lesson, Delectable Bonsai had three pages not appearing in the menu display fragment's page hierarchy menu: Careers, Sign In, and Search. That menu is no longer in use, but those pages were not explicitly added to the new navigation menu, so they continue to remain outside of the navigation.
+   Before this lesson, Clarity had three pages not appearing in the menu display fragment's page hierarchy menu: Careers, Sign In, and Search. That menu is no longer in use, but those pages were not explicitly added to the new navigation menu, so they continue to remain outside of the navigation.
 
-Next Delectable Bonsai wants to control who can access each page.
+Next Clarity's design team has requested a [re-design of the Home page](./designing-the-home-page.md), with new fragments and compositions.
 

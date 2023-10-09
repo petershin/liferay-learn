@@ -1,0 +1,84 @@
+---
+toc:
+  - ./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md
+  - ./what-challenges-does-liferay-solve-industry-solutions/financial-services.md
+  - ./what-challenges-does-liferay-solve-industry-solutions/government-and-public-sector.md
+  - ./what-challenges-does-liferay-solve-industry-solutions/insurance.md
+  - ./what-challenges-does-liferay-solve-industry-solutions/healthcare.md
+  - ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
+---
+# Liferay는 어떤 과제를 해결합니까? - 산업 솔루션
+
+**한눈에**
+
+* Liferay는 다음과 같은 산업 분야의 솔루션에 적합합니다.
+  * 조작
+  * 금융 서비스
+  * 정부 및 공공 부문
+  * 보험
+  * 보건 의료
+  * 에너지 및 유틸리티
+* Liferay는 거의 모든 산업 분야에서 사용할 수 있을 만큼 유연합니다.
+* 각 산업 내에는 [적 솔루션](./what-challenges-does-liferay-solve-horizontal-solutions) 이 많이 존재합니다.
+
+## 배경
+
+여기에서는 Liferay가 각 산업에 대한 공통 솔루션과 함께 직면한 주요 산업의 공통 과제를 어떻게 해결할 수 있는지 알아봅니다.
+
+이것이 가장 일반적인 산업이지만 Liferay의 강점 중 하나는 거의 모든 산업에서 사용될 수 있고 사용되어 왔다는 것입니다.
+
+```{note}
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-5b-what-challenges-do-we-solve-industry-solutions)을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions-pdf)을 다운로드하세요.
+```
+
+## 산업 솔루션
+
+Liferay가 사용되는 가장 일반적인 6가지 산업에 대한 자세한 내용을 보려면 각 타일을 클릭하십시오. 각각의 경우에 우리는 제공했습니다
+
+* 업계의 주요 과제
+* 해당 업계에서 흔히 볼 수 있는 솔루션
+
+모두 읽을 계획이신가요? 제조부터 시작하세요.
+
+[갑시다!](./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md)
+
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card} 제조
+:link: ./what-challenges-does-liferay-solve-industry-solutions/manufacturing.md
+
+제조 분야의 Liferay
+:::
+
+:::{grid-item-card} 금융 서비스
+:link: ./what-challenges-does-liferay-solve-industry-solutions/financial-services.md
+
+금융 서비스 분야의 Liferay
+:::
+
+:::{grid-item-card} 정부 및 공공 부문
+:link: ./what-challenges-does-liferay-solve-industry-solutions/government-and-public-sector.md
+
+정부 및 공공 부문의 Liferay
+:::
+
+:::{grid-item-card} 보험
+:link: ./what-challenges-does-liferay-solve-industry-solutions/insurance.md
+
+보험 의 라이프레이
+:::
+
+:::{grid-item-card} 헬스케어
+:link: ./what-challenges-does-liferay-solve-industry-solutions/healthcare.md
+
+헬스케어 분야의 Liferay
+:::
+
+:::{grid-item-card} 에너지 및 유틸리티
+:link: ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
+
+에너지 및 유틸리티 분야의 Liferay
+:::
+::::

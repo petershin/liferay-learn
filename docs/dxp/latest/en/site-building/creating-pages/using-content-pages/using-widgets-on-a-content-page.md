@@ -6,12 +6,10 @@ uuid: d09834c8-8e44-4e27-8ee6-99e5edf91350
 The widgets section functions just like the [add menu on a widget page](../using-widget-pages/adding-widgets-to-a-page.md). The full list of available widgets appears, and you can add them to the page. The main difference is that only the main configuration options for widgets are available on content pages.
 
 ```{note}
-While widgets are rendered according to [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) on widget pages, this is not true for content pages. Instead, they are rendered in the order they appear on the page (i.e. left to right, top to bottom).
+While widgets are rendered according to [render-weight](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/liferay-portlet-app_7_4_0.dtd.html#render-weight) on widget pages, this is not true for content pages. Instead, they are rendered in the order they appear on the page (i.e. left to right, top to bottom).
 ```
 
 ## Adding Widgets on Content Pages
-
-Follow these steps to add a widget to a content page:
 
 1. While [adding elements to the content page](./adding-elements-to-content-pages.md), open the [widgets panel](./content-page-editor-ui-reference.md) and browse the available widgets or search for widgets by name.
 
@@ -21,13 +19,11 @@ A widget can be a wiki display or a dynamic publishing tool like the asset publi
 
 ## Configuring Widgets on Content Pages
 
-Follow these steps to configure a widget on a content page:
-
 1. Hover over the widget.
 
-1. Click *Actions* ( ![Actions menu icon](../../../images/icon-actions.png) ) and select *Configuration*. From here you have several options, depending on the widget.
+1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) and select *Configuration*. From here you have several options, depending on the widget.
 
-    ![You can configure widgets on content pages through their options menu.](./using-widgets-on-a-content-page/images/01.png)
+   ![You can configure widgets on content pages through their options menu.](./using-widgets-on-a-content-page/images/01.png)
 
 1. Click *Save* to apply the changes.
 
@@ -37,7 +33,7 @@ Since Liferay Portal 7.3 GA2, you can configure permissions for widgets from a c
 
 1. Hover over the widget.
 
-1. Click *Actions* ( ![Actions menu icon](../../../images/icon-actions.png) ) and select *Permissions*.
+1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) and select *Permissions*.
 
 1. Check/uncheck the permissions for the roles in the new window that appears.
 
@@ -48,20 +44,18 @@ When you create a page based on a [page template](../adding-pages/creating-a-pag
 ```
 
 ## Export/Import Widgets on Content Pages
-Follow these steps to export or import a widget on a content page:
 
 1. Hover over the widget.
 
-1. Click *Actions* ( ![Actions menu icon](../../../images/icon-actions.png) ) and select *Export / Import*.
+1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) and select *Export / Import*.
 
 1. Select the export or import tab to begin configuring the respective process.
 
 ## Configuring Widget Configuration Templates on Content Pages
-Follow these steps to save a widget's configuration template on a content page:
 
 1. Hover over the widget.
 
-1. Click *Actions* ( ![Actions menu icon](../../../images/icon-actions.png) ) and select *Configuration Templates*.
+1. Click *Actions* (![Actions menu icon](../../../images/icon-actions.png)) and select *Configuration Templates*.
 
 1. Click *Save Current Configuration as Template* to save the widget’s current settings.
 
@@ -69,11 +63,11 @@ Follow these steps to save a widget's configuration template on a content page:
 
 ## Content Page Limitations for Widgets
 
-Although you can still access basic configuration options and permissions for widgets on content pages, there are still some options that are only available on widget pages:
+Although you can access basic configuration options and permissions for widgets on content pages, there are still some options that are only available on widget pages:
 
 * *Nested applications*: Widgets within widgets are only supported on widget pages.
 
-* *Look and Feel Configuration*: On widget pages you can access the look and feel configuration menu through the  widget's actions ( ![Actions icon](../../../images/icon-actions.png) ), offering fine-grained control over its CSS. This is not available for widgets on content pages, since the look and feel of your content is defined in the theme or by using fragments.
+* *Look and Feel Configuration*: On widget pages you can access the look and feel configuration menu through the widget's actions (![Actions icon](../../../images/icon-actions.png)), offering fine-grained control over its CSS. This is not available for widgets on content pages, since the look and feel of your content is defined in the theme or by using fragments.
 
 ## Related Topics
 

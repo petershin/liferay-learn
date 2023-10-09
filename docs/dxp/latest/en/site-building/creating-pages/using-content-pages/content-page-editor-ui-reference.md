@@ -5,7 +5,7 @@ uuid: 7546c519-0350-4811-9577-635d4d1cddec
 
 {bdg-secondary}`For Liferay 7.4 U37+/GA37+`
 
-Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in a content page. To open the content page editor, go to a content page and click *Edit* ( ![Edit icon](../../../images/icon-edit.png) ). This reveals the editing toolbar and sidebar, which contain tools and components for building content pages.
+Using the content page editor, you can [add](./adding-elements-to-content-pages.md) and configure elements in a content page. To open the content page editor, go to a content page and click *Edit* (![Edit icon](../../../images/icon-edit.png)). This reveals the editing toolbar and sidebar, which contain tools and components for building content pages.
 
 - [Editing Toolbar](#editing-toolbar)
 
@@ -60,7 +60,7 @@ Click *Toggle Sidebars* ( ![Toggle Sidebars](../../../images/icon-view.png) ) to
 
 ### Convert to Page Template
 
-Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) in the application bar and select *Convert to Page Template* ( ![Page Template](../../../images/icon-page-template.png) ) to create a [page template](../adding-pages/creating-a-page-template.md) based on the current page design.
+Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) in the application bar and select *Convert to Page Template* (![Page Template](../../../images/icon-page-template.png)) to create a [page template](../adding-pages/creating-a-page-template.md) based on the current page design.
 
 ### Publish
 
@@ -91,7 +91,7 @@ In the Fragments and Widgets panel ( ![Fragments and Widgets icon](../../../imag
 **Widgets**: Widgets are [applications](../../../building-applications.md) that add dynamic functionality to a page. Examples include blogs, message boards, and calendars. See [Using Widgets on Content Pages](./using-widgets-on-a-content-page.md) for more information.
 
 ```{tip}
-Beginning with Liferay 7.4 U37/GA37, click the Order button ( ![Order Button](../../../images/icon-order.png) ) to reorder sets of fragments and widgets. Click the Star button ( ![Star Button](../../../images/icon-star.png) ) to add a fragment or widget to your list of favorite elements.
+Beginning with Liferay 7.4 U37/GA37, click the Order button (![Order Button](../../../images/icon-order.png)) to reorder sets of fragments and widgets. Click the Star button (![Star Button](../../../images/icon-star.png)) to add a fragment or widget to your list of favorite elements.
 ```
 
 ### Browser
@@ -104,7 +104,7 @@ When editing a content page, header and footer elements are not included in the 
 
 ### Page Design Options
 
-Open the *Page Design Options panel* ( ![Page Design Options](../../../images/icon-format.png) ) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click *Options* ( ![Options button](../../../images/icon-cog3.png) ) to access additional page design options, including [front-end client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md).
+Open the *Page Design Options panel* (![Page Design Options](../../../images/icon-format.png)) to change the page's [master page template](../defining-headers-and-footers/managing-master-page-templates.md) or [style book](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md). Click *Options* (![Options button](../../../images/icon-cog3.png)) to access additional page design options, including [front-end client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md).
 
 ### Page Content
 
@@ -122,7 +122,7 @@ In the Comments panel ( ![Comments](../../../images/icon-message.png) ), you can
 
 {bdg-secondary}`For Liferay 7.3`
 
-In the Selection panel ( ![Selection](../../../images/icon-pages-tree.png) ), you can view a hierarchical outline of all page elements, as well as select, configure, or remove those elements. Similarly, clicking any element on the page while in the design mode opens the Selection panel and highlights the selected page element in the hierarchy. When an element is selected, you can access its general, styles, and link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
+In the Selection panel (![Selection](../../../images/icon-pages-tree.png)), you can view a hierarchical outline of all page elements, as well as select, configure, or remove those elements. Similarly, clicking any element on the page while in the design mode opens the Selection panel and highlights the selected page element in the hierarchy. When an element is selected, you can access its general, styles, and link options, if it has any. See [Configuring Fragments](../page-fragments-and-widgets/using-fragments/configuring-fragments.md) for more information.
 
 ![Selection shows you a hierarchy of your page and contents.](./content-page-editor-ui-reference/images/06.png)
 
@@ -134,7 +134,7 @@ A page's header and footer are not listed in the Selection panel hierarchy, beca
 
 {bdg-secondary}`For Liferay 7.3`
 
-In the Contents panel ( ![Contents](../../../images/icon-list-ul.png) ), you can view, edit, and manage all web content on the page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
+In the Contents panel (![Contents](../../../images/icon-list-ul.png)), you can view, edit, and manage all web content on the page. This includes content displayed in widgets and mapped to content fields. See [Managing Content in Content Pages](./managing-content-in-content-pages.md) for more information.
 
 ## Related Topics
 

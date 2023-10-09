@@ -3,26 +3,26 @@ uuid: 89efcf46-c68b-42f1-b33e-f41ba46002f2
 ---
 # Adding a Basic Web Content Article
 
-Web content is one of the most practical and essential methods for creating site content. Web content articles can be displayed through [widgets](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), [fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).
+When you have a lot of content to publish on your site, Liferay's content management system helps you with practical and essential ways to manage it. Web content articles can be displayed through [widgets](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), [fragments](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), or [display pages](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).
 
 Each web content article is based on a structure that defines its available fields. Liferay includes the Basic Web Content structure out-of-the-box, but you can create your own. See [Understanding Web Content Structures](../web-content-structures/understanding-web-content-structures.md) for more information.
 
 ## Creating a Basic Web Content Article
 
-1. Open the Site Menu ( ![Site Menu](../../../images/icon-menu.png) ) and navigate to *Content & Data* &rarr; *Web Content*.
+1. Open the Site Menu (![Site Menu](../../../images/icon-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
 
-1. Under the Web Content tab, click *Add* ( ![Add icon](../../../images/icon-add.png) ) and select *Basic Web Content*.
+1. Under the Web Content tab, click *Add* (![Add icon](../../../images/icon-add.png)) and select *Basic Web Content*.
 
-    ![The web content administration page.](./adding-a-basic-web-content-article/images/01.png).
+   ![The web content administration page.](./adding-a-basic-web-content-article/images/01.png).
 
 1. Enter a *title* (required) for the new article and add the desired *content* to their respective fields.
 
-    ![The edit screen for a new web content article.](./adding-a-basic-web-content-article/images/02.png)
+   ![The edit screen for a new web content article.](./adding-a-basic-web-content-article/images/02.png)
 
 1. Click *Publish*.
 
 
-You can now display your web content article in a page using the [Web Content Display widget](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), for example.
+You can now display your web content article on a page using the [Web Content Display widget](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), for example.
 
 ## Previewing Web Content Articles
 
@@ -34,7 +34,7 @@ You can preview your content using the selected default template or display page
 
 1. Click *Preview* ( ![Preview](../../../images/icon-preview.png) ).
 
-    ![The default template has a preview button that looks like an eye.](./adding-a-basic-web-content-article/images/04.png)
+   ![The default template has a preview button that looks like an eye.](./adding-a-basic-web-content-article/images/04.png)
 
 ```{note}
  Only web content articles that have been published or saved as a draft can be previewed.
@@ -48,7 +48,7 @@ You can preview web content using a display page template from any site or asset
 
 1. Click*Preview* ( ![Preview](../../../images/icon-preview.png) ).
 
-    ![When you've selected a display page template, use the preview button in the properties tab.](./adding-a-basic-web-content-article/images/05.png)
+   ![When you've selected a display page template, use the preview button in the properties tab.](./adding-a-basic-web-content-article/images/05.png)
 
 ```{note}
 Selecting the Preview button saves a draft of the web content article before displaying the preview.
@@ -56,7 +56,7 @@ Selecting the Preview button saves a draft of the web content article before dis
 
 ## Properties Tab
 
-When creating or editing a Basic Web Content article, you can access the following options via the Properties tab in the sidebar menu:
+When creating or editing a Basic Web Content article, the following options appear in the sidebar menu's Properties tab:
 
 | **Property** | **Purpose** | **Additional Notes** |
 | :--- | :--- | :--- |
@@ -64,9 +64,9 @@ When creating or editing a Basic Web Content article, you can access the followi
 | **Default Template** | Select a default template to display this web content. | See [Creating Web Content Templates](../web-content-templates/creating-web-content-templates.md) for more information. |
 | **Display Page Template** | Select a Display Page Template for this article, if one is desired. | See [Creating and Managing Display Page Templates](../../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md) for more information. |
 | **Featured Image** | Select a small image to use as the article's thumbnail. | The image can come from a URL, uploaded from your system, or from files located in Documents and Media. |
-| **Categorization** | Set any public or prviate categories, tags, or priority for the article. | See [Tagging Content](../../tags-and-categories/tagging-content-and-managing-tags.md) and [Organizing Content with Categories and Tags](../../tags-and-categories/organizing-content-with-categories-and-tags.md) for more information. |
+| **Categorization** | Set any public or private categories, tags, or priority for the article. | See [Tagging Content](../../tags-and-categories/tagging-content-and-managing-tags.md) and [Organizing Content with Categories and Tags](../../tags-and-categories/organizing-content-with-categories-and-tags.md) for more information. |
 | **Friendly URL** | Set a custom friendly URL for this article. | |
-| **Schedule** | Schedule a date to display or expire the article, if desired. | See [Scheduling Web Content](https://help.liferay.com/hc/en-us/articles/360029042011-Scheduling-Web-Content-Publication) for more information. |
+| **Schedule** | Schedule a date to display or expire the article, if desired. | See [Scheduling Web Content](./using-expiration-and-review-dates-in-web-content.md) for more information. |
 | **Search** | Set whether this article will be indexed for search. | |
 | **Related Assets** | Select any related assets, if desired. | |
 

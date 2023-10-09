@@ -51,7 +51,7 @@ To learn more about content pages, see the [Using Content Pages](../using-conten
 
 <!-- Should there be an article that covers layouts and layout templates? -->
 
-<!-- Yes. -Rich--> 
+<!-- LRDOCS-12350 will cover layouts and layout templates-->
 
 A widget page has a set layout for displaying widgets (applications). Widgets can display content or add interactive and dynamic functionality to the page. See [Adding Widgets to a Page](../using-widget-pages/adding-widgets-to-a-page.md) for more information.
 

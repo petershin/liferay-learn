@@ -31,9 +31,7 @@ The Link to a Page of This Site option links to a page within the same site. Thi
 
 The Panel option creates a page containing several applications as selected by an administrator, but only one is displayed at a time. Users select the widget they want to display from a menu on the left side of the page. The selected application takes up the entire page on the right side.
 
-![A panel page provides a specified subset of applications to a user on a page.](./other-page-types/images/04.png)
-
-<!-- A better screenshot would be the actual panel as displayed on the site, rather than the administrative screen for the panel. -Rich --> 
+![A panel page displayed on the site.](./other-page-types/images/04.png)
 
 ## Embedded
 

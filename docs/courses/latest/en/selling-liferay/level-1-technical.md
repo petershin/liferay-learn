@@ -103,20 +103,16 @@ This module outlines all of the approaches that can be used to extend Liferay, a
 
 This module delves deeply into the three deployment strategies available for Liferay DXP and the questions to ask to start to determine which is right for your prospect.
 :::
+
+:::{grid-item-card} Success Stories Analysis
+:link: ./level-1-technical/success-stories-analysis.md
+
+This module explains how Sales Engineers can use the Tailored Solution Highlights to learn about Liferay Success Stories and become confident to talk about them during demos.
+:::
+
+:::{grid-item-card} Demo Ethics
+:link: ./level-1-technical/demo-ethics.md
+
+This module provides the why, when, what and how of demos, along with practical tips and things to do and not to do when demonstrating Liferay.
+:::
 ::::
-
-## Coming Soon
-
-The remaining modules are not quite ready yet - watch this space for updates!
-
-In the meantime, the recordings from the most recent live sessions, along with PDFs of the presentations can be found below.
-
-**Success Stories Analysis**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-9-success-stories-analysis) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analysis-pdf) of the presentation used in the live workshop.
-
-**Demo Ethics**
-
-* View the [recording](https://learn.liferay.com/web/guest/d/se1-10-demo-ethics) from the live workshop of this module.
-* Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-10-demo-ethics-pdf) of the presentation used in the live workshop.

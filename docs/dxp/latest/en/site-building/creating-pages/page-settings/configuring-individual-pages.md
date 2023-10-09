@@ -43,7 +43,7 @@ You can hide a Page from Menu Display widgets and fragments that show the Pages 
 
 ### Page Layout
 
-For basic Widget Pages created using a global template (e.g., blog, wiki, search), determine whether the Page *Inherits Changes* made to the global template. If the Page does not inherit changes, select a custom layout to define row and column containers for its widgets.
+Layout templates dictate where widgets can be placed on a widget page. For basic widget pages created using either a global template or custom page template, the user can determine whether the page *Inherits Changes* made to the chosen template. If the page does not inherit changes, select a custom layout to define row and column containers for its widgets.
 
 ![Select a layout template to define row and column containers for widgets.](./configuring-individual-pages/images/05.png)
 

@@ -3,7 +3,7 @@ uuid: 4925291c-19c3-411d-9870-7f1768ad6df7
 ---
 # Importing Fragments and Resources
 
-Clarity needs fragments and images in the site. With these the site creators have the resources required to create the site while meeting design and branding requirements. Log in as Preston Palmer, the site administrator user, for this exercise.
+Clarity needs fragments and images in the site to aid in building out their pages. With these the site creators have the resources required to create the site while meeting design and branding requirements. Log in as Preston Palmer, the site administrator user, for this exercise.
 
 ## Downloading and Importing the Fragments
 
@@ -41,8 +41,8 @@ Clarity needs fragments and images in the site. With these the site creators hav
    - `banner-composition.zip`
    - `footer-composition.zip`
    - `header-composition.zip`
-   - `home-page-slider-fragment.zip`
    - `home-page-slider-composition.zip`
+   - `home-page-slider-fragment.zip`
    - `sign-in-fragment.zip`
    - `user-nav-fragment.zip`
 

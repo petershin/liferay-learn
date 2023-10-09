@@ -149,4 +149,4 @@ Now Clarity's basic pages are in place. However, the navigation menu is pretty b
 
    ![The navigation menu is okay, but it could use some enhancements.](./completing-the-site-structure/images/05.png)
 
-Clarity next needs a [new navigation menu](./creating-navigation-menus.md) so that it behaves exactly as desired.
+Next, the design team at Clarity would like a new Home page design to replace the basic banner with some better looking and more robust content. Clarity next needs a [new navigation menu](./creating-navigation-menus.md) so that it behaves exactly as desired.

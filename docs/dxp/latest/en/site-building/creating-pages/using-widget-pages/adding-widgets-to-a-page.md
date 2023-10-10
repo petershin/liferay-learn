@@ -3,15 +3,15 @@ uuid: 73b29e35-51d6-4fd0-822a-62a1fa316430
 ---
 # Adding Widgets to a Page
 
-Widgets are applications. They can be simple, and only used to [display content](../../displaying-content.md), or they can be full-featured collaboration applications, like the [Message Boards widget](../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md).
+Widgets are applications. They can be simple and only used to [display content](../../displaying-content.md), or they can be full-featured collaboration applications, like the [Message Boards widget](../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md).
 
 ```{note}
-Widgets are rendered according to [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) on widget pages.
+Widgets are rendered according to [render-weight](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/liferay-portlet-app_7_4_0.dtd.html#render-weight) on widget pages.
 ```
 
 Follow these steps to add a widget to a widget page:
 
-1. Navigate to the widget page and click *Add* ( ![Add](../../../images/icon-add-app.png) ) in the application bar.
+1. Navigate to the widget page and click *Add* (![Add](../../../images/icon-add-app.png)) in the application bar.
 
    ![Click the add button in the application bar.](./adding-widgets-to-a-page/images/01.png)
 

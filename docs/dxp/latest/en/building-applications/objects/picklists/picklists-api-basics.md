@@ -71,13 +71,13 @@ The `ListTypeDefinition_POST_ToInstance.sh` script calls the REST service using 
 
 Here are the command's arguments:
 
-| Arguments | Description |
-| :--- | :--- |
-| `-H "Content-Type: application/json"` | Indicates that the request body format is JSON. |
-| `-X POST` | The HTTP method to invoke at the specified endpoint |
-| `"http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions"` | The REST service endpoint |
-| `-d "{\"name\": \"Foo\", \"name_i18n\": {\"en_US\": \"Foo\"}}"` | The data you are requesting to post |
-| `-u "test@liferay.com:learn"` | Basic authentication credentials |
+| Arguments                                                                       | Description                                         |
+|:--------------------------------------------------------------------------------|:----------------------------------------------------|
+| `-H "Content-Type: application/json"`                                           | Indicates that the request body format is JSON.     |
+| `-X POST`                                                                       | The HTTP method to invoke at the specified endpoint |
+| `"http://localhost:8080/o/headless-admin-list-type/v1.0/list-type-definitions"` | The REST service endpoint                           |
+| `-d "{\"name\": \"Foo\", \"name_i18n\": {\"en_US\": \"Foo\"}}"`                 | The data you are requesting to post                 |
+| `-u "test@liferay.com:learn"`                                                   | Basic authentication credentials                    |
 
 ```{note}
 Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../../headless-delivery/using-oauth2.md).
@@ -97,10 +97,10 @@ The `ListTypeDefinition_POST_ToInstance.java` class adds a picklist by calling t
 
 This class invokes the REST service using three lines of code:
 
-| Line (abbreviated) | Description |
-| :----------------- | :---------- |
-| `ListTypeDefinitionResource.Builder builder = ...` | Gets a `Builder` for generating an `ListTypeDefinitionResource` service instance. |
-| `ListTypeDefinitionResource listTypeDefinitionResource = builder.authentication(...).build();` | Specifies basic authentication and generates a `ListTypeDefinitionResource` service instance. |
+| Line (abbreviated)                                                                                        | Description                                                                                       |
+|:----------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------|
+| `ListTypeDefinitionResource.Builder builder = ...`                                                        | Gets a `Builder` for generating an `ListTypeDefinitionResource` service instance.                 |
+| `ListTypeDefinitionResource listTypeDefinitionResource = builder.authentication(...).build();`            | Specifies basic authentication and generates a `ListTypeDefinitionResource` service instance.     |
 | `ListTypeDefinition listTypeDefinitionResource = listTypeDefinitionResource.postListTypeDefinition(...);` | Calls the `listTypeDefinitionResource.postListTypeDefinition` method and passes the data to post. |
 
 Note that the project includes the `com.liferay.headless.admin.list.type.client` file as a dependency. You can find client JAR dependency information for all REST applications in your installation's API explorer at `/o/api` (e.g., <http://localhost:8080/o/api>).
@@ -299,17 +299,17 @@ Code:
 
 After creating a picklist, use the services below to create and manage picklist entries. The cURL commands and Java classes for `ListTypeEntry` work like `ListTypeDefinition`. Some services require passing the picklist ID.
 
-| Files | Description |
-| :---- | :---------- |
+| Files                                                   | Description                                     |
+|:--------------------------------------------------------|:------------------------------------------------|
 | `ListTypeEntries_GET_FromListTypeDefinition.[java\|sh]` | Get a list of picklist entries from a picklist. |
-| `ListTypeEntry_DELETE_ById.[java\|sh]` | Delete a picklist entry. |
-| `ListTypeEntry_GET_ById[java\|sh]` | Get a specific picklist entry by ID. |
-| `ListTypeEntry_POST_ToListTypeDefinition.[java\|sh]` | Post an entry to a picklist.  |
-| `ListTypeEntry_PUT_ById.[java\|sh]` | Put a picklist entry. |
+| `ListTypeEntry_DELETE_ById.[java\|sh]`                  | Delete a picklist entry.                        |
+| `ListTypeEntry_GET_ById[java\|sh]`                      | Get a specific picklist entry by ID.            |
+| `ListTypeEntry_POST_ToListTypeDefinition.[java\|sh]`    | Post an entry to a picklist.                    |
+| `ListTypeEntry_PUT_ById.[java\|sh]`                     | Put a picklist entry.                           |
 
 The [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all `ListTypeDefinition` and `ListTypeEntry` services and schemas and has an interface to test each service.
 
 ## Related Topics
 
-* [Using Picklists](./using-picklists.md)
+* [Creating Picklists](./creating-picklists.md)
 * [Exporting and Importing Picklists](./exporting-and-importing-picklists.md)

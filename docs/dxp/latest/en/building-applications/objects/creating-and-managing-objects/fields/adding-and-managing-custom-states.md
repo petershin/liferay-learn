@@ -3,7 +3,7 @@ uuid: 0397412a-9f89-464c-9bba-f732178c228a
 ---
 # Adding and Managing Custom States
 
-{bdg-secondary}`Available Liferay 7.4 U41+/GA41+`
+{bdg-secondary}`Liferay 7.4+`
 
 Some use cases may require assigning multiple states to an object entry at the same time. For example, when building an Order application, you may need to assign and manage order, payment, and delivery statuses for the same entry, each with its own flow and associated business logic. Using Liferay picklists with custom objects, you can achieve this functionality.
 
@@ -15,7 +15,7 @@ With [picklists](../../picklists.md), you can define lists of strings and use th
 
 1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
-1. Create a picklist with the desired items. These items define object entry states. See [Creating a Picklist](../../picklists/using-picklists.md#creating-a-picklist) for more detailed steps.
+1. Create a picklist with the desired items. These items define object entry states. See [Creating Picklists](../../picklists/creating-picklists.md) for more detailed steps.
 
    ```{note}
    You can add, remove, or edit picklist items for both draft and published object definitions at any time.

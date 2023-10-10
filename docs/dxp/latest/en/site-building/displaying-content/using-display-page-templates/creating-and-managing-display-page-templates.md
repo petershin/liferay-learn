@@ -21,15 +21,11 @@ See [Using Display Page Templates](../using-display-page-templates.md) to learn 
 
 1. Click the *Display Page Templates* tab and click *Add* ( ![Add Button](./../../../images/icon-add.png) ).
 
-   ![Go to Page Templates, and click on the display page templates tab.](./creating-and-managing-display-page-templates/images/02.png)
-
 1. Enter a *Name* for your template and select a *Content Type* and *Subtype*, if applicable. Then click *Save*.
 
-   ![Select the content type and subtype for your new template.](./creating-and-managing-display-page-templates/images/03.png)
+   ![Select the content type and subtype for your new template.](./creating-and-managing-display-page-templates/images/01.png)
 
 1. Design the template using the same interface and page elements as [content pages](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md).
-
-   ![Build your template using fragments and widgets.](./creating-and-managing-display-page-templates/images/04.png)
 
 1. Once you've added page elements, you can [map](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) them to content structure fields (e.g., title, description) by double-clicking on an editable field. Mapped fields are outlined in purple.
 
@@ -37,15 +33,52 @@ See [Using Display Page Templates](../using-display-page-templates.md) to learn 
    You can use mapped fields when configuring SEO and Open Graph settings for a display page template. See [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md) for more information.
    ```
 
-   ![Map page elements to structure fields.](./creating-and-managing-display-page-templates/images/05.png)
+   ![Map page elements to structure fields.](./creating-and-managing-display-page-templates/images/02.png)
 
-1. Before publishing, you can preview your editable fields mappings with existing content using the [preview function](#preview-the-display-page-template-content-mappings) (available 7.4+).
+1. Before publishing, you can preview your editable fields mappings with existing content using the [preview function](#previewing-the-display-page-template-content-mappings) (available 7.4+).
 
 1. When finished, click *Publish* to save your work.
 
 You can now use the template to [display your content](./publishing-content-with-display-pages.md).
 
-### Preview the Display Page Template Content Mappings
+### Setting a Friendly URL for the Display Page Template
+
+```{important}
+This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+```
+
+You can set a friendly URL for your display page template. The friendly URL is used when the display page template is not marked as default or when it is manually selected for use.
+
+For example, when you link a button in a content page to a Mapped URL, you can select an object connected to a display page template as the item, and select the display page template as the field. In this case, the friendly URL is used for the selected display page template.
+
+![Set a friendly URL for your display page template](./creating-and-managing-display-page-templates/images/03.png)
+![The friendly URL is used when you select a display page template specifically from a list of links](./creating-and-managing-display-page-templates/images/04.png)
+
+To set a friendly URL to your display page template,
+
+1. While editing your display page template, click *Options* ( ![Options icon](../../../images/icon-options.png) ) at the top right corner of the page.
+
+1. Select *Configure*.
+
+1. Under the General section, define your friendly URL.
+
+1. Click *Save*
+
+### Mapping Links to Different Display Page Templates
+
+```{important}
+This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+```
+
+If a content type (e.g., custom object, web content article, or blogs entry) has default and additional display page templates, you can map links to any of the available templates for that content type.
+
+With this feature, you create different display page templates for an object, each corresponding to a step in a mapped form (submission, editing, and approval). Then, you can choose which display page template to use for each stage enabling the creation of multi-step forms.
+
+![Map links to different display page templates](./creating-and-managing-display-page-templates/images/05.png)
+
+This gives you more freedom when dealing with objects and [forms mapped from objects](../../../building-applications/objects/using-fragments-to-build-forms.md) with multiple steps.
+
+### Previewing the Display Page Template Content Mappings
 
 {bdg-secondary}`Available 7.4+`
 
@@ -53,11 +86,9 @@ While editing, Liferay provides two ways to preview display page templates with 
 
 From the Application Menu, you can click the *Preview With* drop-down menu and choose a content item. If no item appears, click *Select Other Item* and browse for the desired content. This dynamically populates the template with content data according to your field mapping.
 
-![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/07.png)
+![Choose the content you want to use to preview your display page template.](./creating-and-managing-display-page-templates/images/06.png)
 
-Alternatively, from the display page template editor, click the *Actions* menu(![Actions menu](../../../images/icon-actions.png)) button and choose *Preview in a New Tab*.
-
-![Click the Preview button to preview your display page template mappings.](./creating-and-managing-display-page-templates/images/08.png)
+Alternatively, from the display page template editor, click the *Options* menu(![Options menu](../../../images/icon-options.png)) button at the top right corner and choose *Preview in a New Tab*.
 
 ## Viewing Display Page Template Usage
 
@@ -65,7 +96,7 @@ Alternatively, from the display page template editor, click the *Actions* menu(!
 
 You can manage the different display page templates using the *Actions* menu (![Actions](../../../images/icon-actions.png)). From here, the *View Usages* option provides a list of content that uses a specific display page template other than the default template. This option is not available for default templates.
 
-![Managing your display page template using the Actions menu](./creating-and-managing-display-page-templates/images/06.png)
+![Managing your display page template using the Actions menu](./creating-and-managing-display-page-templates/images/07.png)
 
 Before you delete a display page template that is in use, you have two ways to unassign the display page template from the content:
 

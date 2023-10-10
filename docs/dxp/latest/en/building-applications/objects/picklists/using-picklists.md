@@ -1,19 +1,19 @@
 ---
 uuid: 648d34f3-b6f8-4569-93a2-92ce758dc3b4
 ---
-# Using Picklists
+# Creating Picklists
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4 U72+/GA72+`
 
 Picklists are lists of name/key pairs stored as string values. Once defined, you can use the lists with object definitions to populate single or multiple selection fields. See [Picklists](../picklists.md) for more picklist use cases.
 
-## Creating a Picklist
+To create a picklist,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
 1. Click *Add* (![Add Button](../../../images/icon-add.png)).
 
-   ![Click Add to create a new picklist.](./using-picklists/images/01.png)
+   ![Click Add to create a new picklist.](./creating-picklists/images/01.png)
 
 1. Name the picklist to identify the list in the UI. You can localize the name after creation.
 
@@ -23,7 +23,7 @@ Picklists are lists of name/key pairs stored as string values. Once defined, you
 
 1. Under Items, click *Add* (![Add](../../../images/icon-add.png)).
 
-   ![Click Add to add a new item to the picklist.](./using-picklists/images/02.png)
+   ![Click Add to add a new item to the picklist.](./creating-picklist/images/02.png)
 
 1. In the modal window, enter a name and key for the item.
 
@@ -31,7 +31,7 @@ Picklists are lists of name/key pairs stored as string values. Once defined, you
 
    **Key**: Determines the standard value understood by applications in the back-end and uses camel case.
 
-   ![Enter a name and key, and then click Save.](./using-picklists/images/03.png)
+   ![Enter a name and key, and then click Save.](./creating-picklist/images/03.png)
 
 1. Click *Save*. The picklist updates immediately with the new item and generates an external reference code (ERC) for it.
 
@@ -39,59 +39,11 @@ Picklists are lists of name/key pairs stored as string values. Once defined, you
 
 1. Repeat the above steps to add additional items to the list.
 
-   ![Add multiple items to a picklist.](./using-picklists/images/04.png)
+   ![Add multiple items to a picklist.](./creating-picklist/images/04.png)
 
-## Adding Picklist Fields to Objects
+Once created, you can select a picklist when creating object fields. Select the *Picklist* (single select) or *Multiselect Picklist* field type and choose the list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) and [Picklist Fields](../creating-and-managing-objects/fields/picklist-fields.md) for more information
 
-{bdg-secondary}`For 7.4 U56+/GA56+`
-
-Once created, you can select a picklist when creating object fields. Select the *Picklist* or *Multiselect Picklist* field type and choose the list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) and [Adding and Managing Custom States](../creating-and-managing-objects/fields/adding-and-managing-custom-states.md) for more information.
-
-![Users can select the picklist when creating new object fields.](./using-picklists/images/05.png)
-
-When users access this field in an object's layout, it appears as a drop-down menu that lists the picklist's items.
-
-![Picklists appear as drop-down menus in an object's layout.](./using-picklists/images/06.png)
-
-```{important}
-You cannot delete a list if it is used by an object field, though you can edit and remove list items at any time.
-
-Updating or deleting a picklist item automatically updates all object entries using the item value.
-```
-
-## Picklist Fields in Object API Calls
-
-{bdg-secondary}`For 7.4 U56+/GA56+`
-
-When making POST, PATCH, and PUT API calls for objects that include a picklist field, you must use the following request payload formats for Picklist and Multiselect Picklist fields, respectively.
-
-### Picklist Field Type
-
-```json
-{ 
-      "picklistExample": {
-        "key": "firstOption",
-        "name": "First Option"
-      }
-}
-```
-
-### Multiselect Picklist Field Type
-
-```json
-{ 
-      "picklistExample": [
-        {
-          "key": "firstOption",
-          "name": "First Option"
-        },
-        {
-          "key": "secondOption",
-          "name": "Second Option"
-        }
-      ]
-}
-```
+![Users can select the picklist when creating new object fields.](./creating-picklist/images/05.png)
 
 ## Related Topics
 

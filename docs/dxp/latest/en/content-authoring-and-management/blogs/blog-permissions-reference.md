@@ -3,7 +3,7 @@ uuid: fd004b31-bf92-45da-a5af-8e9b98b2a7ea
 ---
 # Blog Permissions Reference
 
-This article serves as a guide for all permissions associated with the Blogs application. To configure the permissions for the Blogs widget see [Setting Widget Permissions](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md).
+Here's a list of all permissions associated with the Blogs application. To configure the permissions for the Blogs widget see [Setting Widget Permissions](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md).
 
 ## Blog Entry Permissions
 

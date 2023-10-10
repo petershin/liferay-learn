@@ -7,60 +7,19 @@ toc:
 uuid: 2279c4a7-75df-46e5-8303-b1e6fff61a07
 ---
 
-<!-----
-
-You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
-* ERRORs: 0
-* WARNINGs: 0
-* ALERTS: 1
-
-Conversion time: 1.651 seconds.
-
-
-Using this Markdown file:
-
-1. Paste this output into your source file.
-2. See the notes and action items below regarding this conversion run.
-3. Check the rendered output (headings, lists, code blocks, tables) for proper
-   formatting and use a linkchecker before you publish this page.
-
-Conversion notes:
-
-* Docs to Markdown version 1.0β34
-* Mon Oct 09 2023 16:08:47 GMT-0700 (PDT)
-* Source doc: v23-Q2-1_Demo Ethics - (Part 1)
-* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
-
------>
-
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 1.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
 # Demo Ethics 
 
 **At a Glance**
 
-
-
 * Demos are a vital part of the sales process, and all Sales Engineers should be prepared to deliver demos to prospects.
 * Demos should always resonate with the prospect and be as aligned to their requirements as possible.
 * Learning why demos are done, when they should be done, what they should include, and how they should be delivered will ensure that Sales Engineers can run effective demos that move the sales process forward.
-
 
 ## Background
 
 Demonstrations of Liferay DXP are a common, if not mandatory part of the sales process. It is important to remember that there are good and bad ways to deliver a demo as well as good and bad times to run a demo.
 
 This module provides guidance to Sales Engineers, and anyone else required to deliver demos, on:
-
-
 
 * Why demos are done
 * When demos should be done
@@ -72,13 +31,9 @@ It also covers what should _not_ be included, presented, or covered during a dem
 Each section is presented with a series of possible answers to the main question. It should not be difficult to select the right answer, but the wrong answers should also help Sales Engineers to work more effectively to ensure that demos are valuable to the prospect.
 
 ```{note}
-
 * View the [recording](https://learn.liferay.com/web/guest/d/se1-10-demo-ethics) from the live workshop of this module.
-
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-10-demo-ethics-pdf) of the presentation used in the live workshop.
-
 ```
-
 
 ## Why are demos done?
 

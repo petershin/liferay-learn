@@ -102,7 +102,7 @@ To configure an example for using Similar Results with blogs,
 
 ## Similar Results Widget Templates
 
-By default, similar results render using a *Compact Layout* [widget template](https://help.liferay.com/hc/en-us/articles/360029132571-Styling-Widgets-with-Widget-Templates), showing a list of hyperlinked titles.
+By default, similar results render using a *Compact Layout* [widget template](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md), showing a list of hyperlinked titles.
 
 Two additional widget templates are available out of the box: *List Layout* and *Card Layout*.
 
@@ -124,9 +124,9 @@ To write your own widget template for the Similar Results display,
 
 1. Click *Add* ( ![Add icon](../../images/icon-add.png) ) to open the template creator palette.
 
-   In addition to the standard [widget template](https://help.liferay.com/hc/en-us/articles/360029132571-Styling-Widgets-with-Widget-Templates) variables, leverage the search-specific variables provided in the template editor.
+   In addition to the standard [widget template](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) variables, leverage the search-specific variables provided in the template editor.
 
-1. Design the template to your liking. See the [widget template](https://help.liferay.com/hc/en-us/articles/360029132571-Styling-Widgets-with-Widget-Templates) documentation for more details.
+1. Design the template to your liking. See the [widget template](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md) documentation for more details.
 
 The same template editor is accessible from the Widget Templates entry in the Site Menu's Site Builder section.
 

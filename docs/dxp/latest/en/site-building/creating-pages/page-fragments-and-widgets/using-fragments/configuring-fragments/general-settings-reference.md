@@ -9,7 +9,7 @@ Follow these steps to access a fragment's general settings:
 
 1. Begin editing a page or template that supports fragments.
 
-1. Open the *Browser* panel ( ![Browser](../../../../../images/icon-hierarchy.png) ) in the sidebar menu and select the desired fragment.
+1. Open the *Browser* panel (![Browser](../../../../../images/icon-hierarchy.png)) in the sidebar menu and select the desired fragment.
 
    Alternatively, click the desired fragment in the page or template.
 

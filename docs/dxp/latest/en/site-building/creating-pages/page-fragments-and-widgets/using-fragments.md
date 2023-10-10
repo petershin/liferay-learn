@@ -41,7 +41,7 @@ Liferay provides a variety of fragments out-of-the-box, but you can develop cust
 
 If you are working with forms, you can personalize your form fields by [mapping them to custom form fragments](./using-fragments/personalizing-custom-forms-using-form-fragments.md).
 
-All page fragments are organized into sets, which group related fragments for easier management and use. Each fragment set can include common resources accessible to all the fragments. See [Including Default Resources in Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md) for more information.
+All page fragments are organized into *sets*, which group related fragments for easier management and use. Each fragment set can include common resources accessible to all the fragments. See [Including Default Resources in Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md) for more information.
 
 After adding fragments to a page or template, you can configure and customize them and their sub-elements. These options can vary, though some are common to all. See [Configuring Fragments](./using-fragments/configuring-fragments.md) to learn more about available options.
 

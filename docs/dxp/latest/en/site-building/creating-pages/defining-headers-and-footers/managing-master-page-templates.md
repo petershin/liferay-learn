@@ -3,17 +3,17 @@ uuid: 2865b1f7-0d24-498a-9b81-08eb24712ac9
 ---
 # Managing Master Page Templates
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
 To manage a master page template, follow these steps:
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Page Templates*
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Design* &rarr; *Page Templates*.
 
 1. Select the *Masters* tab.
 
-1. Click *Actions* ( ![Actions](./../../../images/icon-actions.png) ) for a master page template and select one of the options.
+1. Click *Actions* (![Actions](./../../../images/icon-actions.png)) for a master page template and select one of the options.
 
-    ![Manage the master page template from the masters tab of the page templates application and opening the actions menu.](./managing-master-page-templates/images/01.png)
+   ![Manage the master page template from the masters tab of the page templates application and opening the actions menu.](./managing-master-page-templates/images/01.png)
 
 **Edit:** Configure the master page template.
 
@@ -29,7 +29,7 @@ To manage a master page template, follow these steps:
 
 **Permissions:** Define permissions for the template.
 
-**Delete:** Remove the master page template. You can also delete multiple master page templates at once by checking the box for each template and selecting *Trash* ( ![Trash icon](../../../images/icon-trash.png) ) from the management toolbar.
+**Delete:** Remove the master page template. You can also delete multiple master page templates at once by checking the box for each template and selecting *Trash* (![Trash icon](../../../images/icon-trash.png)) from the management toolbar.
 
 **Discard Draft:** Discard the master page draft. This option is available with drafts.
 
@@ -39,35 +39,33 @@ After changes are made and published, they are propagated to all pages that use 
 
 ## Changing the Master Page Template of a Page
 
-You can change the master page template of a page in the [content page editor](../using-content-pages/content-page-editor-ui-reference.md). Follow these steps to change the template of a page:
+You can change a page's master page template in the [content page editor](../using-content-pages/content-page-editor-ui-reference.md). Follow these steps to change the template of a page:
 
 1. Navigate to the page where you want to change the master page template.
 
-1. Click *Edit* ( ![Edit icon](../../../images/icon-edit.png) )
+1. Click *Edit* (![Edit icon](../../../images/icon-edit.png))
 
-1. In the editing sidebar, click the *Page Design Options* menu ( ![Page Design menu](../../../images/icon-format.png) ).
+1. In the editing sidebar, click the *Page Design Options* menu (![Page Design menu](../../../images/icon-format.png)).
 
-1. Under the masters section, select the master page template you want to use.
+1. Under the Masters section, select the master page template you want to use.
 
    ![Select the master page template you want to use through the page design options menu.](./managing-master-page-templates/images/02.png)
 
 ## Changing a Master Page Template's Design
 
-To manage a master page templates' design and other options, follow these steps:
-
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Design* &rarr; *Page Templates*.
 
 1. Select the *Masters* tab.
 
-1. Click *Actions* ( ![Actions](./../../../images/icon-actions.png) ) for the master page template you want to configure &rarr; *Edit*.
+1. Click *Actions* (![Actions](./../../../images/icon-actions.png)) for the master page template you want to configure &rarr; *Edit*.
 
-1. Click the *Page Design Options* menu ( ![Page Design Options menu](../../../images/icon-format.png) ) &rarr; *More Page Design Options*( ![More Page Design Options](../../../images/icon-cog3.png) )
+1. Click the *Page Design Options* menu (![Page Design Options menu](../../../images/icon-format.png)) &rarr; *More Page Design Options*(![More Page Design Options](../../../images/icon-cog3.png))
 
    ![Click More Page Design Options to access the master page templates general pptions](./managing-master-page-templates/images/03.png)
 
 1. In the Design tab, you can alter the style of your master page template.
 
-    ![Select a new master page template from the available options.](./managing-master-page-templates/images/04.png)
+   ![Select a new master page template from the available options.](./managing-master-page-templates/images/04.png)
 
 **Theme:** Select whether to use theme from pages of a site or select a specific theme for the current master page template.
 
@@ -75,7 +73,7 @@ To manage a master page templates' design and other options, follow these steps:
 
 **Style Book:** Change the default style book applied from the theme.
 
-**Theme CSS Client Extension:** Add [theme CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS from a theme without deploying an entire theme.
+**Theme CSS Client Extension:** Add [theme CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) to replace the default CSS fully from a theme without deploying an entire theme.
 
 **CSS Client Extensions:** Add [CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) to override CSS styling of a content page that uses the master page template.
 

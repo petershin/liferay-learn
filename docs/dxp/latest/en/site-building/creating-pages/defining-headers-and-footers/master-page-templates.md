@@ -3,9 +3,9 @@ uuid: 01a62f63-92b8-405b-ab5f-13e4dc52e41f
 ---
 # Master Page Templates
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
-Master page templates provide a way to define elements common to every page (e.g. headers and footers previously provided by themes) using fragments, so you can easily maintain and manage them in portal without having to deploy a plugin. You can use the same master page template across an entire site or have a unique one for each page. Each page and page template must have an associated master page template.
+Master page templates provide a way to define elements common to every page using fragments (e.g. headers and footers previously provided by themes), so you can maintain and manage them easily in portal without having to deploy a plugin. You can use the same master page template across an entire site or have unique templates for each page. Each page and page template must have an associated master page template.
 
 By default, the out-of-the-box Blank master page template doesn't provide any common elements.
 

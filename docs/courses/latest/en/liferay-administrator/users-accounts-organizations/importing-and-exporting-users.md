@@ -3,7 +3,7 @@ uuid: f12d1fae-61aa-4d42-880c-b0d718838530
 ---
 # Importing and Exporting Users
 
-Once LDAP is connected, users are imported as they log in. Clarity Vision Solutions, however, wants to import all of Almighty Glasses' users in one shot. 
+Once LDAP is connected, users are imported as they log in. Clarity Vision Solutions, however, wants to import all of Fabulous Frames's users in one shot. 
 
 ## Importing LDAP Users
 
@@ -43,7 +43,7 @@ If you leave the _Enable _Import_ box unchecked, users are imported individually
 
 1. In the left navigation, click _Servers_. 
 
-1. Click the _Edit_ (![Edit icon](../../images/icon-edit.png)) of the `almightyglasses` LDAP server.
+1. Click the _Edit_ (![Edit icon](../../images/icon-edit.png)) of the `fabulousframes` LDAP server.
 
 1. Scroll down and click _Test LDAP Users_. See that Kyle Klein has been added to the LDAP.
 

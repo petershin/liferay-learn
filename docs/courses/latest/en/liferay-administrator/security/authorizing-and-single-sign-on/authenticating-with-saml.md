@@ -5,7 +5,7 @@ uuid: c8bad60f-49bf-4002-ae2f-39991aaa5980
 
 When authenticating with SAML, Liferay can serve as either the service provider (SP) or the identity provider (IdP). See [authenticating with SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) to learn more.
 
-Clarity Vision Solutions has grown by acquiring Almighty Glasses. As they look to the possibility of acquiring another company, the IT team decides to utilize SAML to centralize the storing and managing of user credentials. Follow the steps below to see this in action.
+Clarity Vision Solutions has grown by acquiring Fabulous Frames. As they look to the possibility of acquiring another company, the IT team decides to utilize SAML to centralize the storing and managing of user credentials. Follow the steps below to see this in action.
 
 ## Setting Up an Identity Provider
 

@@ -5,7 +5,7 @@ uuid: 08ae049f-1024-4ac2-919e-7b0f7f5fa52f
 
 Liferay's sign-in widget is configurable and adjusts to how you've set its options. In a prior step, you configured two [virtual instances](../../configuration/configuring-virtual-instances.md). One of these is for a public-facing, external website. The other is for an internal intranet meant for employees or partners. 
 
-Guest users should be able to access the external site and register for accounts to purchase products, participate in forums, submit recipes, and otherwise interact with Clarity Vision Solutions. In contrast, no one should have access to the internal website except for users who have been registered by administrators. For this reason, you must adjust authentication differently for the two sites. 
+Guest users should be able to access the external site and register for accounts to purchase products, participate in forums, submit pictures, and otherwise interact with Clarity Vision Solutions. In contrast, no one should have access to the internal website except for users who have been registered by administrators. For this reason, you must adjust authentication differently for the two sites. 
 
 ## Configuring Authentication on the Public Website
 

@@ -13,16 +13,16 @@ Clarity Vision Solutions must import user data from a company they just acquired
 
    ```bash
    docker run \
-	   --env LDAP_ORGANISATION="Almighty Glasses" \
-	   --env LDAP_DOMAIN="almightyglasses.com" \
-	   --env LDAP_BASE_DN="dc=almightyglasses,dc=com" \
-	   --name almightyglassesldap \
+	   --env LDAP_ORGANISATION="Fabulous Frames" \
+	   --env LDAP_DOMAIN="fabulousframes.com" \
+	   --env LDAP_BASE_DN="dc=fabulousframes,dc=com" \
+	   --name fabulousframesldap \
 	   -p 389:389 \
 	   -p 636:636 \
 	   osixia/openldap:1.5.0
    ```
 
-1. Find the IP address of the `almightyglassesldap` container. This will be used in the configuration step below.
+1. Find the IP address of the `fabulousframesldap` container. This will be used in the configuration step below.
 
    ```bash
    docker network inspect bridge
@@ -32,7 +32,7 @@ Clarity Vision Solutions must import user data from a company they just acquired
 
    ```bash
    cat <<EOT >> sarah.ldif
-   dn: cn=sarah,dc=almightyglasses,dc=com
+   dn: cn=sarah,dc=fabulousframes,dc=com
    objectClass: inetOrgPerson
    objectClass: organizationalPerson
    objectClass: person
@@ -40,28 +40,28 @@ Clarity Vision Solutions must import user data from a company they just acquired
    cn: Sarah
    sn: Stanley
    givenName: Sarah
-   mail: sarah@almightyglasses.com
+   mail: sarah@fabulousframes.com
    title: IT Staff
    userPassword: learn
 
-   cn: almightyglasses
-   dn: cn=almightyglasses,dc=almightyglasses,dc=com
+   cn: fabulousframes
+   dn: cn=fabulousframes,dc=fabulousframes,dc=com
    objectClass: groupOfUniqueNames
    objectClass: top
-   uniqueMember: cn=sarah,dc=almightyglasses,dc=com
+   uniqueMember: cn=sarah,dc=fabulousframes,dc=com
    EOT
    ```
 
 1. In your shell, navigate to the same folder as the LDIF file. Copy the file into the container.
 
    ```bash
-   docker cp sarah.ldif almightyglassesldap:/container/service/slapd/assets/test
+   docker cp sarah.ldif fabulousframesldap:/container/service/slapd/assets/test
    ```
 
 1. Add the entry into the OpenLDAP server.
 
    ```bash
-   docker exec almightyglassesldap ldapadd -x -D "cn=admin,dc=almightyglasses,dc=com" -w admin -f /container/service/slapd/assets/test/sarah.ldif -H ldap://localhost
+   docker exec fabulousframesldap ldapadd -x -D "cn=admin,dc=fabulousframes,dc=com" -w admin -f /container/service/slapd/assets/test/sarah.ldif -H ldap://localhost
    ```
 
 ## Connect Liferay to the LDAP Directory
@@ -76,10 +76,10 @@ Clarity Vision Solutions must import user data from a company they just acquired
 
 1. In the new page, enter the LDAP connection information.
 
-   * Server Name: `Almighty Glasses`
+   * Server Name: `Fabulous Frames`
    * Base Provider URL: `ldap://[IP address]:389`
-   * Base DN: `dc=almightyglasses,dc=com`
-   * Principal: `cn=admin,dc=almightyglasses,dc=com`
+   * Base DN: `dc=fabulousframes,dc=com`
+   * Principal: `cn=admin,dc=fabulousframes,dc=com`
    * Credentials: `admin`
 
    ![Enter the connection information.](./connecting-to-ldap/images/01.png)
@@ -90,11 +90,11 @@ Clarity Vision Solutions must import user data from a company they just acquired
 
    ![Enter the user fields information.](./connecting-to-ldap/images/02.png)
 
-1. In the LDAP groups section, enter `Almighty Glasses` into the _Description_ field. Click _Test LDAP Groups_ to verify that the `almightyglasses` user group is visible.
+1. In the LDAP groups section, enter `Fabulous Frames` into the _Description_ field. Click _Test LDAP Groups_ to verify that the `fabulousframes` user group is visible.
 
 1. Click _Save_.
 
-Clarity Vision Solutions' Liferay instance is now connected to Almighty Glasses' LDAP directory. 
+Clarity Vision Solutions' Liferay instance is now connected to Fabulous Frames's LDAP directory. 
 
 Next: [Importing and Exporting users](./importing-and-exporting-users.md).
 

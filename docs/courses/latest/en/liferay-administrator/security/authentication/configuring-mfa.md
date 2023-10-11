@@ -7,7 +7,7 @@ Multi-Factor Authentication requires users to both know something and have somet
 
 Liferay supports both one-time codes through email and third-party services that support SMS or authenticator apps. See [using multi-factor-authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication) to learn more.
 
-Clarity Vision Solutions has come a long way from its days at the farmer's market. Now with many employees and customers, the IT department is requiring MFA as part of its enhanced security efforts.
+Clarity Vision Solutions has come a long way from its days selling frames out of a garage. Now with many employees and customers, the IT department is requiring MFA as part of its enhanced security efforts.
 
 ## Setting Up MFA
 

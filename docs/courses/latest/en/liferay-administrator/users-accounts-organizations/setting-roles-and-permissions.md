@@ -30,7 +30,7 @@ Employees at Clarity Vision Solutions need different permissions based on their 
 1. In the new window, enter the following information:
 
    * Title: `Sales & Marketing Staff`
-   * Description: `Staff member of sales & marketing`
+   * Description: `Staff member of Sales & Marketing`
 
    Click _Save_.
 

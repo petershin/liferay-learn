@@ -18,12 +18,12 @@ Use Liferay to model Clarity Vision Solutions' organizational hierarchy. See [Un
 1. Create a child organization. 
 
    * Click _Back_ (![Back icon](../../images/icon-angle-left.png)) to return to the list of organizations. 
-   * Click on the Clarity Vision Solution organization you just created. 
+   * Click on the Clarity Vision Solutions organization you just created. 
    * Click _Add_ (![Add icon](../../images/icon-add.png)) and select _New Organization_. 
-   * Input `IT` in the _Name_ field. Note that under the parent organization section, Clarity Vision Solution is selected. 
+   * Input `IT` in the _Name_ field. Note that under the parent organization section, Clarity Vision Solutions is selected. 
    * Click _Save_.
 
-1. Create another child organization called `Sales & Marketing` under the Clarity Vision Solution parent organization using the steps above.
+1. Create another child organization called `Sales & Marketing` under the Clarity Vision Solutions parent organization using the steps above.
 
 1. The organizational hierarchy should look like the image below.
 

@@ -5,7 +5,7 @@ uuid: 9c853de5-3865-4ea6-9f69-7b6cac71a275
 
 Accounts in Liferay can represent individual customers in a B2C (i.e. business to consumer) context. Or they can represent a B2B (i.e. business to business) context with multiple users. See [Accounts](https://learn.liferay.com/en/w/dxp/users-and-permissions/accounts) to learn more. 
 
-Opportune Optics operate eyewear stores across the country. Each store purchases eyewear from Clarity Vision Solutions. The example below shows how to set up and account for one of the markets and assign an account user.
+Opportune Optics operates eyewear stores across the country. Each store purchases eyewear from Clarity Vision Solutions. The example below shows how to set up and account for one of the markets and assign an account user.
 
 ## Adding Accounts
 

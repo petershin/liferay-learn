@@ -14,10 +14,10 @@ Many settings can be configured at a hierarchy of scopes or levels. A more granu
 
 The finished configuration contains
 
-* Antivirus software to scan uploaded files. 
-* A separate virtual instance used as an internal intranet for its employees.
-* A separate user authentication setting for the virtual instance.
-* A connected mail server.
+* Antivirus software to scan uploaded files 
+* A separate virtual instance for two internal sites: a B2B site for partners and an internal Intranet
+* A separate user authentication setting for the virtual instance
+* A connected mail server
 
 The first step is Configuring System Settings.
 

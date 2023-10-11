@@ -1,3 +1,6 @@
+---
+uuid: 8b2517e5-e747-49f4-b389-a3b3b1f66d0b
+---
 # Using Multiple Display Page Templates to Create Multi-Step Applications
 
 ```{important}

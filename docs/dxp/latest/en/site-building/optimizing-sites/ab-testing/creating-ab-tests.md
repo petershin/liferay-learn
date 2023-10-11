@@ -12,7 +12,7 @@ Before creating A/B tests, remember these things:
 - When you delete a Content Page or Experience that is part of an A/B Test, you also delete the test.
 - If you close the A/B Test side panel without [running the test](./running-and-monitoring-ab-tests.md), the test is saved as a draft.
 
-   ![When you configure a test without running it, the test is saved as a draft](./creating-ab-tests/images/05.png)
+  ![When you configure a test without running it, the test is saved as a draft](./creating-ab-tests/images/05.png)
 
 To create the A/B test, [create the test](#creating-the-test) first, and then create a [test variant](#creating-the-test-variant).
 
@@ -28,7 +28,7 @@ Verify that your environment [meets the requirements](./verifying-ab-test-requir
 
 1. Click *Create Test*.
 
-   ![Click create test to get started.](./creating-ab-tests/images/04.png)
+   ![Click Create Test to get started.](./creating-ab-tests/images/04.png)
 
 1. Enter a *Test Name* and optionally, a *Description*.
 
@@ -51,21 +51,21 @@ A test variant is a customization of the Experience you want to optimize with A/
 1. If you selected the *Click* goal for the A/B Test, you must also select the element you want to test:
     1. Under the *Active Test* tab and *Click Goal* section, click *Select Clickable Element*.
 
-         - You can target links, buttons, and input fields with an Element ID for the *Click* goal.
-         - You can also enter the *Element ID* of the element you want to test.
-         - To highlight the Page element selected, click the Preview (![Preview](../../../images/icon-preview.png)) icon.
-         - While the [test is running](./running-and-monitoring-ab-tests.md), the *Change Clickable Element* button is unavailable and the *Element ID* cannot be changed.
+       - You can target links, buttons, and input fields with an Element ID for the *Click* goal.
+       - You can also enter the *Element ID* of the element you want to test.
+       - To highlight the Page element selected, click the Preview (![Preview](../../../images/icon-preview.png)) icon.
+       - While the [test is running](./running-and-monitoring-ab-tests.md), the *Change Clickable Element* button is unavailable and the *Element ID* cannot be changed.
 
-            ![Click the Content Page Element you want to test or enter its Element ID in the Click Goal section](./creating-ab-tests/images/03.png)
+       ![Click the Content Page Element you want to test or enter its Element ID in the Click Goal section](./creating-ab-tests/images/03.png)
 
     1. Click the element you want to test on the Content Page.
     1. Click *Set Element as Click Target*.
 
-        ![Click the Set Element as Click Target button to select it](./creating-ab-tests/images/01.png)
+       ![Click the Set Element as Click Target button to select it](./creating-ab-tests/images/01.png)
 
-         ```{note}
-         The click target element applies to the whole A/B Test and must be present in the variant.
-         ```
+       ```{note}
+       The click target element applies to the whole A/B Test and must be present in the variant.
+       ```
 
 1. Under the *Variants* section, click *Create Variant*.
 1. Enter a name for the Variant and click *Save*.
@@ -76,7 +76,7 @@ A test variant is a customization of the Experience you want to optimize with A/
 
 After creating your test and test variant, you can [run the test](./running-and-monitoring-ab-tests).
 
-## Related Information
+## Related Topics
 
 - [Running and Monitoring A/B Tests](./running-and-monitoring-ab-tests)
 - [A/B Testing](./ab-testing.md)

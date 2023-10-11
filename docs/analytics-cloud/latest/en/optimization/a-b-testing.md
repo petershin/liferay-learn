@@ -3,7 +3,7 @@ uuid: 551f4c6e-7cc4-4b94-b46f-681f15d265a0
 ---
 # A/B Testing
 
-A/B testing evaluates the effectiveness of content pages by testing a variant design against the original design (i.e. control). This process involves creating a page variant, testing them with a metric (e.g., clicks), and publishing the most effective variant. These tests can help you choose the best experience for your site's users.
+A/B testing evaluates the effectiveness of content pages by testing a variant design against the control design (i.e., the original). This process involves creating a page variant, testing it with a metric (e.g., clicks), and publishing the most effective variant. These tests can help you choose the best experience for your site's users.
 
 You can learn more about creating an A/B test and configuring it for a content page in Liferay DXP's [A/B testing documentation](https://learn.liferay.com/dxp/latest/en/site-building/optimizing-sites/ab-testing/ab-testing.html).
 
@@ -19,7 +19,7 @@ For drafted A/B tests, you can view these details:
 
 ![The A/B test is configured and ready to run.](a-b-testing/images/02.png)
 
-To see the A/B test page in DXP, click the _Review_ button. To delete the A/B test, click the _Delete_ button.
+To see the A/B test page in DXP, click _Review_. To delete the A/B test, click _Delete_.
 
 Once your A/B test is running, Analytics Cloud offers these reports to keep you up-to-date on its progress:
 
@@ -45,13 +45,13 @@ Below are the metrics reported:
 
 **Median:** The middle number in the set of sample values. This estimates a typical user's behavior.
 
-**Bounce Rate or Click Through Rate:** The percentage of bounce rate or click through rate of the control and the variant. The displayed metric is based on which type of A/B test was selected.
+**Bounce Rate or Click Through Rate:** The percentage of bounce rate or click through rate of the control and the variant. The displayed metric is based on the type of A/B test selected.
 
 **Confidence Interval:** The range of values expected to contain the true mean of the population. For example, a 95% confidence interval is a range of values that the system is 95% sure contains the true mean. This gives the range of possible values that seem plausible for the measured goal.
 
 **Improvement:** The relative improvement from the control group. This metric may also be known as lift. For example, assume the control page has a 15% retention rate and the variant page has a 16% retention rate. The improvement calculation would be `((16 - 15) / 15) = ~6.67%` improvement. This shows the impact of a change. If there is only a small improvement, it may not be worth implementing that change.
 
-**Probability to Win:** Predicts the likelihood that the variant will beat the control. This shows how multiple metrics compare to each other. For example, consider a horse racing event: each horse has a generated chance to win posted before a race (i.e., odds of winning), calculated by simulating the race thousands of times. This same method is used for your variants to calculate their probability of winning the A/B test.
+**Probability to Win:** Predicts the likelihood the variant will beat the control. This shows how multiple metrics compare to each other. For example, consider a horse racing event: each horse has a generated chance to win posted before a race (i.e., odds of winning), calculated by simulating the race thousands of times. This same method is used for your variants to calculate their probability of winning the A/B test.
 
 **Unique Visitors:** The number of visitors contributing to the variant. A visitor randomly assigned a variant always sees the same variant until the end of the test. Besides knowing how much traffic is hitting a page, this metric also helps in determining configuration issues with the A/B test. For example, there could be too much traffic going to one variant (typically caused by a segment misconfiguration).
 
@@ -65,7 +65,7 @@ Next, you'll learn about an A/B test's statuses.
 
 ## Test Status
 
-Once an A/B test is started, it will have one of the following statuses:
+When an A/B test is started, it has one of the following statuses:
 
 * [Test is Running](#test-is-running)
 * [Winner Declared](#winner-declared)
@@ -74,7 +74,7 @@ Once an A/B test is started, it will have one of the following statuses:
 
 ### Test is Running
 
-This means that your test is running and needs a larger sample size before reaching the desired confidence level and declaring a winner. You can view the current results.
+Your test is running and needs a larger sample size before reaching the desired confidence level and declaring a winner. You can view the current results.
 
 ![The test is running, though you can view the current results.](a-b-testing/images/06.png)
 
@@ -83,7 +83,7 @@ When a test is running, you can terminate it by selecting *Terminate Test* from 
 ![Click on Terminate Test to end a running test.](a-b-testing/images/07.png)
 
 ```{important}
-Large amounts of traffic (i.e. several thousand hits a day) is expected for an A/B test to run successfully. This makes public facing sites well-suited for testing. It may take significantly longer for a test to finish for an internal website or portal.
+Lots of traffic (i.e. several thousand hits a day) is expected for an A/B test to run successfully. This makes public-facing sites well suited for testing. It may take significantly longer for a test to finish for an internal website or portal.
 ```
 
 ### Winner Declared
@@ -103,9 +103,9 @@ Sometimes, Analytics Cloud cannot determine a winner because the variant has not
 
 ### Test Terminated
 
-The test status will show as terminated if the A/B test is terminated before a winner is determined. 
+The test status shows as terminated if the A/B test is terminated before a winner is determined. 
 
-![A test that is ended early will show as a terminated test.](./a-b-testing/images/10.png)
+![A test that is ended early shows as a terminated test.](./a-b-testing/images/10.png)
 
 ```{note}
 A terminated A/B test did not reach the specified confidence level and inherently has less reliable results.

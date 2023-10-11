@@ -5,16 +5,17 @@ uuid: 5d977089-f1b2-4b3d-b2a5-c5b2a02c21ab
 
 You can configure these parameters when you run the A/B Test:
 
-- *Traffic Split*: The percentage of visitors randomly split between the original and the variant when visiting the page. Visitors are randomly split between the original and the variant and always see the same page until the A/B Test finishes.
-- *Confidence Level Required*: Represents the accuracy of your test. The higher the required confidence level, the longer it takes to declare the winner.
+**Traffic Split:** The percentage of visitors randomly split between the original and the variant when visiting the page. Visitors are randomly split between the original and the variant and always see the same page until the A/B Test finishes.
 
-The *Estimated Time to Declare Winner* provides an estimation of the test duration. This estimation is based on the *Traffic Split* and *Confidence Level Required* configurations, as well as on the estimated page traffic (based on the traffic history provided by Analytics Cloud.)
+**Confidence Level Required:** Represents the accuracy of your test. The higher the required confidence level, the longer it takes to declare the winner.
+
+The *Estimated Time to Declare Winner* provides an estimation of the test duration. This estimation is based on the Traffic Split and Confidence Level Required configurations, as well as on the estimated page traffic (based on the traffic history provided by Analytics Cloud).
 
 ![A/B Test Run Configurations are tunable to your requirements.](running-and-monitoring-ab-tests/images/01.png)
 
-After you create the test, review the test status by clicking the *A/B Testing* button (![A/B Test icon](../../../images/icon-ab-testing.png)).
+After you create the test, review the test status by clicking *A/B Testing* (![A/B Test icon](../../../images/icon-ab-testing.png)).
 
-Liferay DXP only shows your test's status and the winner when the test finishes. You can manage the other aspects of your A/B Test in Analytics Cloud. For more information, see [A/B Testing](https://learn.liferay.com/analytics-cloud/latest/en/optimization/a-b-testing.html) in the the Analytics Cloud documentation.
+Liferay DXP only shows your test's status and the winner when the test finishes. You can manage the other aspects of your A/B Test in Analytics Cloud. For more information, see [A/B Testing](https://learn.liferay.com/analytics-cloud/latest/en/optimization/a-b-testing.html) in the Analytics Cloud documentation.
 
 When the A/B Test finishes, you can review the test results and publish the preferred variant. For more information, read [Reviewing A/B Test Results and Publishing Test Variants](./reviewing-ab-test-results-and-publishing-test-variants.md).
 
@@ -33,7 +34,7 @@ Before running a test, you must create an A/B Test. For more information, read [
 
 You can cancel a running test at any time by clicking *Terminate Test*. To delete an A/B Test, you must terminate the test first.
 
-## Related Information
+## Related Topics
 
 - [A/B Testing](./ab-testing.md)
 - [Verifying A/B Test Requirements](./verifying-ab-test-requirements.md)

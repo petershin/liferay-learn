@@ -14,19 +14,19 @@ For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Lifer
 
 ## Creating a Fragment Set
 
-Before creating new fragments, you must first create a new fragment set to put them in:
+Before creating new fragments, you must create a new fragment set to contain them:
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and navigate to *Design* &rarr; *Fragments*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Design* &rarr; *Fragments*.
 
-    In Liferay DXP 7.1 and 7.2, open the *Product Menu*, and go to *Site* &rarr; *Site Builder* &rarr; *Page Fragments*.
+   In Liferay DXP 7.1 and 7.2, open the *Product Menu*, and go to *Site* &rarr; *Site Builder* &rarr; *Page Fragments*.
 
 1. Click *Add* ( ![Add Button](../../../images/icon-plus.png) ) next to Fragment Sets.
 
-    ![Click the add button next to Fragment Sets.](./using-the-fragments-editor/images/01.png)
+   ![Click the add button next to Fragment Sets.](./using-the-fragments-editor/images/01.png)
 
 1. Enter a *name* and *description* for the new set.
 
-    You can create sets that group fragments by functionality or by teams and departments, for example.
+   You can create sets that group fragments by functionality or by teams and departments, for example.
 
 1. Click *Save*.
 
@@ -40,11 +40,11 @@ To create a React fragment, use the [Fragments Toolkit](./using-the-fragments-to
 
 Follow these steps to create a fragment:
 
-1. Go to the desired fragment set and click *Add* ( ![Add button](../../../images/icon-add.png) ) to create a new fragment.
+1. Go to the desired fragment set and click *Add* (![Add button](../../../images/icon-add.png)) to create a new fragment.
 
-    ```{note}
-    Prior to Liferay DXP 7.3, a fragment could either be a Section or a Component. In Liferay DXP 7.3+, all page fragments are components.
-    ```
+   ```{note}
+   Prior to Liferay DXP 7.3, a fragment could either be a Section or a Component. In Liferay DXP 7.3+, all page fragments are components.
+   ```
 
 1. Choose a fragment type, either Basic or [Form](../developing-page-fragments/creating-form-fragments.md), and click *Next*.
 
@@ -52,59 +52,59 @@ Follow these steps to create a fragment:
 
 1. In the Code tab, use the HTML, CSS, and JavaScript fields to add your fragment's resources. Here, you can also see a live preview of your fragment's appearance in different device contexts.
 
-    Here are some HTML editing shortcuts:
+   Here are some HTML editing shortcuts:
 
-    * Enter an open angle bracket (`<`) to access standard HTML tags and Liferay's fragment-specific tags.
+   * Enter an open angle bracket (`<`) to access standard HTML tags and Liferay's fragment-specific tags.
 
-    * Start an element attribute with `data` to access Liferay's [editable fragment attributes](../reference/fragments/fragment-specific-tags-reference.md) .
+   * Start an element attribute with `data` to access Liferay's [editable fragment attributes](../reference/fragments/fragment-specific-tags-reference.md).
 
-    The example below adds a card component with editable text:
+   The example below adds a card component with editable text:
 
-    ```html
-    <div class="marketing-card-fragment-01">
-      <div class="card">
-        <lfr-editable id="01-card-image" type="image">
-          <img src="https://cdn.dribbble.com/users/1408464/screenshots/9323535/media/a5b9a76256562e878ecc6dc5cd0fadf0.png" class="card-img-top" alt="2020 - Try New Things">
-        </lfr-editable>
-        <div class="card-body">
-          <lfr-editable id="02-card-title" type="rich-text">
-            <h5 class="card-title">Editable Card title</h5>
-          </lfr-editable>
-          <lfr-editable id="03-card-text" type="rich-text">
-            <p class="card-text">Here is some editable text.</p>
-          </lfr-editable>
-          <lfr-editable id="04-card-link" type="link">
-            <a href="#" class="btn btn-primary">Editable link</a>
-          </lfr-editable>
-        </div>
-      </div>
-    </div>
-    ```
+   ```html
+   <div class="marketing-card-fragment-01">
+     <div class="card">
+       <lfr-editable id="01-card-image" type="image">
+         <img src="https://cdn.dribbble.com/users/1408464/screenshots/9323535/media/a5b9a76256562e878ecc6dc5cd0fadf0.png" class="card-img-top" alt="2020 - Try New Things">
+       </lfr-editable>
+       <div class="card-body">
+         <lfr-editable id="02-card-title" type="rich-text">
+           <h5 class="card-title">Editable Card title</h5>
+         </lfr-editable>
+         <lfr-editable id="03-card-text" type="rich-text">
+           <p class="card-text">Here is some editable text.</p>
+         </lfr-editable>
+         <lfr-editable id="04-card-link" type="link">
+           <a href="#" class="btn btn-primary">Editable link</a>
+         </lfr-editable>
+       </div>
+     </div>
+   </div>
+   ```
 
-    ```css
-    .marketing-card-fragment-01 .card img {
-      max-width: 100%;
-    }
-    ```
+   ```css
+   .marketing-card-fragment-01 .card img {
+     max-width: 100%;
+   }
+   ```
 
-    ![Add HTML, CSS, and Javascript resources to the fragment and see a live preview.](./using-the-fragments-editor/images/02.png)
+   ![Add HTML, CSS, and Javascript resources to the fragment and see a live preview.](./using-the-fragments-editor/images/02.png)
 
 1. In the Configuration tab, use the `JSON` field to add [configuration options](./adding-configuration-options-to-fragments.md) to a page fragment.
 
-    ![Add configuration options to a page fragment.](./using-the-fragments-editor/images/03.png)
+   ![Add configuration options to a page fragment.](./using-the-fragments-editor/images/03.png)
 
-    ```{tip}
-    You can add a `configurationRole` value to any field set (alongside the `fields` object in the JSON) to specify which tab the associated fields appear in. Set the value as `styles` to make the fields appear in the Styles tab, or set it to `advanced` to make them appear in the Advanced tab (*only in Liferay DXP versions U23+ or GA23+*). If no `configurationRole` is set, then they appear in the General tab by default.
-    ```
+   ```{tip}
+   You can add a `configurationRole` value to any field set (alongside the `fields` object in the JSON) to specify which tab the associated fields appear in. Set the value as `styles` to make the fields appear in the Styles tab, or set it to `advanced` to make them appear in the Advanced tab (*only in Liferay DXP versions U23+ or GA23+*). If no `configurationRole` is set, then they appear in the General tab by default.
+   ```
 
 1. Click *Publish* to save your fragment and make it available for use in [content pages](../../creating-pages/understanding-pages/understanding-pages.md#content-pages).
 
-    ![The fragment can be used in content pages.](./using-the-fragments-editor/images/04.png)
+   ![The fragment can be used in content pages.](./using-the-fragments-editor/images/04.png)
 
-While developing a fragment, changes are automatically saved as a draft until your fragment is published. Once added to a set, you can copy, export, edit, and remove a fragment at any time in the fragments editor. See [Managing Fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) for more information on available actions for page fragments.
+While developing a fragment, changes are saved automatically as a draft until your fragment is published. Once added to a set, you can copy, export, edit, and remove a fragment at any time in the fragments editor. See [Managing Fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) for more information on available actions for page fragments.
 
 ```{note}
-Since Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+, you can create page fragments on the *Global* Site to make them available for all Sites. To expose this feature in the initial releases of these versions, you must create a `.config` file named `com.liferay.fragment.web.internal.configuration.FragmentGlobalPanelAppConfiguration.config` and add the `enabled=B"true"` property. Then copy it to your Liferay DXP instance's `osgi/configs` folder. Global page fragments are inherited by child sites and can only be edited from the Global Site. Any resources the Global page fragments references from the Global Site are copied to a site that leverages the page fragment.
+Since Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+, you can create page fragments in the *Global* site to make them available for all sites. To expose this feature in the initial releases of these versions, you must create a `.config` file named `com.liferay.fragment.web.internal.configuration.FragmentGlobalPanelAppConfiguration.config` and add the `enabled=B"true"` property. Then copy it to your Liferay DXP instance's `osgi/configs` folder. Global page fragments are inherited by child sites and can only be edited from the Global site. Any resources the Global page fragments references from the Global site are copied to a site that leverages the page fragment.
 ```
 
 ## Related Topics

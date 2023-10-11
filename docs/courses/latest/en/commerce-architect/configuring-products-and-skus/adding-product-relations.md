@@ -3,7 +3,7 @@ uuid: 59b2f172-2138-4e9a-b4e5-8d2edab86fa4
 ---
 # Creating Product Relations
 
-You can use product relations to display products for up-selling, cross-selling, selling spares, accessories, or complementary products based on the product being viewed currently. For instance when viewing a syrup, related products can be other syrups. You can also create new relations apart from the ones available out-of-the-box. 
+You can use product relations to display products for up-selling, cross-selling, selling spares, accessories, or complementary products based on the product being viewed currently. For instance when viewing a syrup, related products can be other syrups in the same price range. You can also create new relations apart from the ones available out-of-the-box. 
 
 Let’s now add a product relation for related products for each product in the catalog.  
 
@@ -23,7 +23,7 @@ Let’s now add a product relation for related products for each product in the 
 
 1. Click *Publish*. 
 
-This creates a product relation between all three products. Repeat this process for the other two products. In the next module, you’ll learn how to display these related products when viewing the main product. 
+This creates a product relation between all three products. Repeat this process for the other two products. You'll use these relations when displaying products in the storefront in module 3. 
 
 Next: [Configuring SKUs](./configuring-skus.md)
 

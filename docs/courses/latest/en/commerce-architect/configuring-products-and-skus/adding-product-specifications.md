@@ -3,7 +3,7 @@ uuid: f61d7526-596d-4885-8ddc-43b5874c9e7c
 ---
 # Adding Product Specifications
 
-Damian wants to enrich the products with attributes that give more information to customers. In Liferay, you can use product specifications to achieve this. Damian wants your help to add the following specifications to the products. 
+Damian, the category manager, wants to enrich the products with attributes that give more information to customers. In Liferay, you can use product specifications to achieve this. He wants your help to add the following specifications to the products. 
 
 * Active Ingredient
 * Country of Origin
@@ -13,7 +13,7 @@ Damian wants to enrich the products with attributes that give more information t
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Specifications*.
 
-1. Click the *Add* (![Add](../../images/icon-add.png)) button under *Specification Labels* and enter the following details:
+1. Click *Add* (![Add](../../images/icon-add.png)) under *Specification Labels* and enter the following details:
 
    **Label:** Active Ingredient
 
@@ -23,15 +23,22 @@ Damian wants to enrich the products with attributes that give more information t
 
 1. Click *Save*.
 
-This creates a new specification called active ingredient. Now, create four more specifications for country of origin, flavor, ingredients, and suitable for vegans. For ingredients, you must disable the *Use in Faceted Navigation* toggle. 
+This creates a new specification called active ingredient. Now, create the following four specifications following the steps above:
+
+* Country of origin
+* Flavor
+* Ingredients
+* Suitable for vegans.
+
+For ingredients, you must disable the *Use in Faceted Navigation* toggle. 
 
 ## Adding Specifications to Products
 
-You must now add these specifications to products after creating them. You can do this through the product configuration page.
+The next step is to add these specifications to products. You can do this through the product configuration page.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
-1. Select *Sap Infused Maple Syrup* created earlier.
+1. Select *Sap Infused Maple Syrup*.
 
 1. Scroll down to the *Specifications* section.
 
@@ -41,9 +48,7 @@ You must now add these specifications to products after creating them. You can d
 
    This adds the specification to the product. Now, you must enter the value for the specification.
 
-1. Click on the added specification.
-
-1. Enter value as Sap Extract. 
+1. Click on the added specification and enter *Sap Extract* as the value. 
 
 1. Click *Save*.
 

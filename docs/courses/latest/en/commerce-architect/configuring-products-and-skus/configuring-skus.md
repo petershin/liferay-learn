@@ -3,11 +3,11 @@ uuid: 434879ec-67ae-43a4-a08a-870a9892488e
 ---
 # Configuring SKUs
 
-Now that we’ve configured all of the basic details for a product, it’s time to configure the SKUs themselves. The SKUs represent the actual physical item in the warehouse and configuring them involves configuring their dimensions, inventory, and pricing. 
+Now that we’ve configured all of the basic details for a product, it’s time to configure the SKUs. The SKUs represent the actual physical item in the warehouse and configuring them involves configuring their dimensions, inventory, and pricing. 
 
 ## Configuring SKU Prices
 
-After creating the catalog, a base price list and a base promotion list is automatically created. We’ll now add the prices for each SKU. There are two ways to do this. The first way is to add pricing information through the product configuration page. The second way is to directly add an entry in the base price list through the Pricing application. The steps below show you how to do it from the product configuration page. 
+After creating the catalog, a base price list and a base promotion list is automatically created. You'll now add prices for each SKU. There are two ways to do this. The first way is to add pricing information from the product configuration page. The second way is to directly add an entry in the base price list through the pricing application. The steps below shows how to add pricing information from the product configuration page. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
@@ -21,7 +21,7 @@ After creating the catalog, a base price list and a base promotion list is autom
 
    ![Enter a base price for the SKU.](./configuring-skus/images/01.png)
 
-Leave the *Promotion Price* and *Cost* fields blank. You can also navigate to the *Price Lists* tab and click on the Actions (![Actions icon](../../images/icon-actions.png)) icon and select *Edit* to enter a price in the base price list. 
+Leave the *Promotion Price* and *Cost* fields blank. You can also navigate to the *Price Lists* tab and click on the *Actions* (![Actions icon](../../images/icon-actions.png)) icon and select *Edit* to enter a price in the base price list. 
 
 ## Configuring SKU Dimensions and Weight
 
@@ -78,7 +78,7 @@ This completes the configuration for one product. Repeat the steps above for the
 
 ## Configuring SKU Inventory
 
-Just as with pricing, there are two ways to add inventory for a SKU. The first way is to add inventory through the product configuration page. The second way is to directly add inventory for each SKU through the Inventory application. The steps below show you how to do it from the product configuration page. 
+Just as with pricing, there are two ways to add inventory for a SKU. The first way is to add inventory through the product configuration page. The second way is to directly add inventory for each SKU through the Inventory application. The steps below shows how to add inventory from the product configuration page. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
@@ -105,5 +105,3 @@ Repeat the same process for each SKU of all products. After adding the inventory
 1. Verify that the inventory is available for all the SKUs. You can also add inventory from here by clicking the *Add* (![Add](../../images/icon-add.png)) button and entering the SKU, warehouse, quantity, and clicking the Submit button.
 
 We’ve completed adding and configuring channels, a catalog, warehouses, and products. It’s now time to build the storefront. In the next module, we'll build out the B2C storefront. 
-
-Ready?

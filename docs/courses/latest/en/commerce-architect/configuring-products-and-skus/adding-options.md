@@ -3,7 +3,7 @@ uuid: 905c41de-03ed-478c-9ebf-0837e515681f
 ---
 # Adding Options
 
-In the first module, we created 3 products all having a single SKU. SKU stands for Stock Keeping Unit. Oftentimes, there may be products that have multiple SKUs. For instance, a product that comes in different quantities. In this lesson, you’ll learn how to edit an existing product and add multiple SKUs to it using options.
+In the first module, we created 3 products all having a single SKU. SKU stands for Stock Keeping Unit. Oftentimes, there may be products that have multiple SKUs. For instance, a product that has different quantities. In this lesson, you’ll learn how to edit an existing product and add multiple SKUs using options.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Options*.
 
@@ -33,11 +33,11 @@ In the first module, we created 3 products all having a single SKU. SKU stands f
 
 1. Click *Save*.
 
-This creates an option template called quantity that you can add to products. You also have the option to directly create options from the product configuration page. 
+This creates an option template called quantity that you can add to multiple products. You also have the option to directly create options from the product configuration page. 
 
 ## Adding Options to a Product
 
-When adding an SKU contributing option to a product, it renders the existing SKU inactive. After adding the option to a product, you have the option to generate all SKU combinations based on the options.
+When adding an SKU contributing option to a product, it renders the existing SKU inactive. After adding the option to a product, you can generate all SKU combinations based on the available options.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 

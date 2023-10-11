@@ -21,7 +21,9 @@ So far, we’ve configured a product and added specifications to give more infor
 
 1. Click *Publish*.
 
-This adds the image to the product. In the section below images, you can also add attachments to a product. This is useful when the product has data sheets or other relevant information in the form of documents. 
+This adds an image for the first product. Repeat the steps above to select images for the remaining two products. 
+
+In the section below images, you can also add attachments to a product. This is useful when the product has data sheets or other relevant information in the form of documents. 
 
 Next: [Adding Product Relations](./adding-product-relations.md)
 

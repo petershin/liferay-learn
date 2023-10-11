@@ -5,6 +5,7 @@ toc:
     ./using-display-page-templates/creating-and-managing-display-page-templates.md
   - ./using-display-page-templates/publishing-content-with-display-pages.md
   - ./using-display-page-templates/displaying-categories-using-display-pages.md
+  - ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
   - ./using-display-page-templates/configuring-seo-and-open-graph.md
 uuid: 978aa7cb-c3e3-4895-91bd-ff8a779cc230
 ---
@@ -16,6 +17,7 @@ uuid: 978aa7cb-c3e3-4895-91bd-ff8a779cc230
 using-display-page-templates/creating-and-managing-display-page-templates.md
 using-display-page-templates/publishing-content-with-display-pages.md
 using-display-page-templates/displaying-categories-using-display-pages.md
+using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
 using-display-page-templates/configuring-seo-and-open-graph.md
 ```
 
@@ -47,7 +49,7 @@ These templates are ideal for displaying a list of elements in a consistent way,
 
 To achieve this goal, you can create a single display page template that maps your web content article fields to fragments in your template. Each article can use the same template. Then, you can link each insurance option in your landing page to the corresponding article's friendly URL. When site visitors click an option, the display page is populated dynamically with information from your web content articles and rendered according to your template design.
 
-If a content type has default and additional display page templates created for it, you can [map links to any of the available templates](./using-display-page-templates/creating-and-managing-display-page-templates.md#mapping-links-to-different-display-page-templates) for that asset type. So, when you're mapping a link to its display page, not only is the default option presented, but you also have the option to choose from any of the other available display page templates, allowing for greater customization and flexibility in how your content is displayed.
+If a content type has default and additional display page templates created for it, you can [map links to any of the available templates](./using-multiple-display-page-templates-to-create-multi-step-applications.md) for that asset type. So, when you're mapping a link to its display page, not only is the default option presented, but you also have the option to choose from any of the other available display page templates, allowing for greater customization and flexibility in how your content is displayed.
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -62,6 +64,10 @@ If a content type has default and additional display page templates created for 
 
 :::{grid-item-card} Displaying Categories Using Display Pages
 :link: ./using-display-page-templates/displaying-categories-using-display-pages.md
+:::
+
+:::{grid-item-card} Displaying Categories Using Display Pages
+:link: ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
 :::
 
 :::{grid-item-card} Configuring SEO and Open Graph

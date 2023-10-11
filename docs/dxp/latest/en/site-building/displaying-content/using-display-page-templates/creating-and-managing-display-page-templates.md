@@ -44,7 +44,7 @@ You can now use the template to [display your content](./publishing-content-with
 ### Setting a Friendly URL for the Display Page Template
 
 ```{important}
-This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 ```
 
 You can set a friendly URL for your display page template. The friendly URL is used when the display page template is not marked as default or when it is manually selected for use.
@@ -67,7 +67,7 @@ To set a friendly URL to your display page template,
 ### Mapping Links to Different Display Page Templates
 
 ```{important}
-This feature is currently behind a release feature flag. Read [Release Feature Flags](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/feature-flags#release-feature-flags) for more information.
+This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 ```
 
 If a content type (e.g., custom object, web content article, or blogs entry) has default and additional display page templates, you can map links to any of the available templates for that content type.

@@ -34,4 +34,10 @@ Start by [setting up some of the basic prerequisites and creating simple product
 
 Learn how to create and configure some of the prerequisite Commerce features before building your storefront. 
 :::
+
+:::{grid-item-card}  Configuring Products and SKUs
+:link: ./commerce-architect/configuring-products-and-skus.md
+
+Learn how to configure products and SKUs.
+:::
 ::::

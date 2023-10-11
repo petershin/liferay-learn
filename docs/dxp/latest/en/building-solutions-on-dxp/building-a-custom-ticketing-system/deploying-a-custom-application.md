@@ -64,8 +64,9 @@ See [custom element YAML configuration reference](../../building-applications/cl
 
 The relevant JavaScript files for the application are contained in the `/src` folder. A full explanation of the JavaScript code is beyond the scope of this tutorial, but a few things to note:
 
-* In the `/src/tickets.js` file, tickets are created and fetched through the use of the `ticket` object that was created when the [data schema](./defining-a-custom-data-schema.md) was defined. Note the `generateNewTicket()` function in the `/src/ticket.js` file generates additional ticket entries with random field entries.
-* In the `/src/tickets.js` file, the object's headless API calls are authorized with the `Liferay.authToken` object. This object is available when a web component is running on Liferay and simplifies OAuth2 authorization.
+* The `/src/pages/TicketApp.tsx` file defines the overall layout of the ticketing system page.
+* In the `/src/services/tickets.ts` file, tickets are created and fetched through the use of the `j3y7ticket` object that was created when the [data schema](./defining-a-custom-data-schema.md) was defined. Note the `generateNewTicket()` function in the `/src/ticket.js` file generates additional ticket entries with random field entries.
+* In the `/src/services/tickets.ts` file, the object's headless API calls are authorized with the `Liferay.authToken` object. This object is available when a web component is running on Liferay and simplifies OAuth2 authorization.
 * The `package.json` file includes a `scripts{ build: }` element that handles the initializing and building of the JavaScript application.
 
 See [understanding custom element and iframe client extensions](../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information.

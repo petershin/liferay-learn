@@ -16,7 +16,7 @@ Deploy the `liferay-ticket-theme-css` client extension.
 1. In Liferay, click on the _product menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
 
 
-1. Click the _options_ icon (![Options icon](../../images/icon-options.png)) in the top right and click _Configuration_.
+1. Click the _options_ icon (![Options icon](../../images/icon-options.png)) in the top right next to the global menu and click _Configuration_.
 
 1. Scroll down to the theme CSS client extension section and click the _add_ icon (![Add icon](../../images/icon-plus.png)). 
 
@@ -52,7 +52,7 @@ The customizations for the theme are contained in the two files in the `/src/css
 
 The `_clay_variables.scss` file provides any CSS clay variables to be overwritten.
 
-The `_custom.scss` file provides any CSS customizations. Note how the logo and background color has been modified.
+The `_custom.scss` file provides any CSS customizations.
 
 See the [Clay CSS](https://clayui.com/docs/css/index.html) documentation to learn more about the variables and customization. And see [using a theme CSS client extension](../../building-applications/client-extensions/front-end-client-extensions/tutorials/using-a-theme-css-client-extension.md) to see another client extension example.
 

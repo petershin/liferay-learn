@@ -3,7 +3,7 @@ uuid: f5b4dd39-457e-4cca-b99f-9dd99a0fff8c
 ---
 # Removing Relationships
 
-{bdg-secondary}`Available Liferay 7.4 U26+/GA26+`
+{bdg-secondary}`Liferay 7.4 U26+/GA26+`
 
 You can remove relationships from both draft and published object definitions. Removing a relationship permanently deletes its field from the related object definitions. For published definitions, this can affect many records.
 

@@ -3,7 +3,7 @@ uuid: 52556bc8-a31b-4331-bcd7-317428006384
 ---
 # Extending System Objects
 
-{bdg-secondary}`Available Liferay 7.4 U86+/GA86+`
+{bdg-secondary}`Liferay 7.4 U86+/GA86+`
 
 With Liferay Objects, you can extend supported system services. Currently, only these services are integrated with the Objects framework:
 

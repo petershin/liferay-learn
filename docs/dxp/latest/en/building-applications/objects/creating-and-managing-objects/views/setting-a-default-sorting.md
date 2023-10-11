@@ -3,7 +3,7 @@ uuid: 5113dd1c-ff37-4164-9bd5-a8fbbdd0a853
 ---
 # Setting a Default Sorting
 
-{bdg-secondary}`Available Liferay 7.4 U18+/GA18+`
+{bdg-secondary}`Liferay 7.4 U18+/GA18+`
 
 With custom views, you can set a default sorting for tables. Follow these steps:
 

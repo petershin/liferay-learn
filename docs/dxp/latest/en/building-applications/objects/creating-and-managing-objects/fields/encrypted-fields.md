@@ -5,7 +5,7 @@ uuid: e63f1fb0-18dc-4e03-b118-429883b0cbec
 
 {bdg-primary}`Self-Hosted and Self-Managed Only`
 
-{bdg-secondary}`Available Liferay DXP 7.4 U72/GA72+`
+{bdg-secondary}`Liferay 7.4 U72+/GA72+`
 
 Liferay provides the encrypted field type for storing sensitive user data. To use encrypted fields, first add an encryption algorithm and key to your portal properties. Then add an encrypted field to your object definition. Once data is encrypted, only users with the decryption key can read it.
 

@@ -3,7 +3,7 @@ uuid: cdc62d39-936c-4e58-aff8-cddcc9eff4e5
 ---
 # Using Automate.io to Sync Object Data with Google Sheets
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Here you'll learn how to use webhooks to trigger sync tasks between Liferay Objects and Google Sheets using [Automate.io](https://automate.io/). Syncing your data in this way requires an premium Automate.io account, Google Spreadsheet, and active DXP 7.4 instance. The DXP instance must also have a published Object with the desired fields for sending or receiving data to the Google Spreadsheet.
 

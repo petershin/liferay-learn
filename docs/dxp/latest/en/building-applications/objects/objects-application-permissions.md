@@ -3,7 +3,7 @@ uuid: 0a1454d8-6845-4d3e-9186-9fb06e2b21e1
 ---
 # Objects Application Permissions
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Like other Liferay applications, the Objects portlet is integrated with the permissions framework. This means you can assign [application](#application-permissions) and [resource](#resource-permissions) permissions to user roles to determine which users have access to the Objects portlet and its data.
 
@@ -50,8 +50,6 @@ Objects has the following resource permissions.
 | View | View an object definition. |
 
 ## Managing Permissions for Individual Object Definitions
-
-{bdg-secondary}`Available Liferay 7.4 U17+ and 7.4 GA17+`
 
 Follow these steps to manage permissions for individual object definitions:
 

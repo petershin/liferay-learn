@@ -3,7 +3,7 @@ uuid: 003032c7-9743-4369-81ce-e1d203016944
 ---
 # Using Make to Sync Object Data with Google Sheets
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Here you'll learn how to use webhooks to trigger sync tasks between Liferay Objects and Google Sheets using [Make](https://www.make.com/) (formerly Integromat). Syncing your data in this way requires a Make account, Google Spreadsheet, and active DXP 7.4 instance. The DXP instance must also have a published Object with the desired fields for sending or receiving data to the Google Spreadsheet.
 

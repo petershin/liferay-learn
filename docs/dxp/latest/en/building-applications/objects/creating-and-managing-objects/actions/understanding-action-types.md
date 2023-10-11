@@ -3,7 +3,7 @@ uuid: 4eea6cd8-f95c-428d-9b9f-ee2292b0e675
 ---
 # Understanding Action Types
 
-{bdg-secondary}`Available Liferay 7.4 U60+/GA60+`
+{bdg-secondary}`Liferay 7.4 U60+/GA60+`
 
 Actions define custom operations triggered by object entry events. Liferay provides these action types:
 

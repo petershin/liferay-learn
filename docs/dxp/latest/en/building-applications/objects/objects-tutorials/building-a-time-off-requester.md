@@ -3,7 +3,7 @@ uuid: 859fbb23-6865-49ab-93a3-8ef9b6362ec5
 ---
 # Building a Time Off Requester
 
-> Available: Liferay DXP/Portal 7.4+
+{bdg-secondary}`Liferay 7.4+`
 
 Liferay Objects empowers you to build entire applications without writing code or deploying modules. Here, you'll create a Time Off Request application using Liferay [Objects](../../objects.md) and [Picklists](../picklists/creating-picklists.md).
 

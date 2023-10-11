@@ -22,7 +22,7 @@ uuid: 88bc27ef-5ac3-4886-a458-83f84967d58b
 ---
 # Using Google Sheets with Objects
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 ```{toctree}
 :maxdepth: 3

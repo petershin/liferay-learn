@@ -3,7 +3,7 @@ uuid: c5fc43c9-42d0-4381-9d92-34fa93b25bcf
 ---
 # Using Integrately to Sync Object Data with Google Sheets
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Here you'll learn how to use webhooks to trigger sync tasks between Liferay Objects and Google Sheets using [Integrately](https://integrately.com/). Syncing your data in this way requires an Integrately account, Google Spreadsheet, and active DXP 7.4 instance. The DXP instance must also have a published Object with the desired fields for sending or receiving data to the Google Spreadsheet.
 

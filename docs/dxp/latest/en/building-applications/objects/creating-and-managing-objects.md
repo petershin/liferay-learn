@@ -38,7 +38,7 @@ creating-and-managing-objects/auditing-object-definition-events.md
 creating-and-managing-objects/deleting-objects.md
 ```
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Liferay Objects provides a convenient UI for [creating](./creating-and-managing-objects/creating-objects.md) custom applications that meet your business needs without writing code. You can also use Objects to manage and extend both system and custom objects. This includes adding [fields](./creating-and-managing-objects/fields.md), [relationships](./creating-and-managing-objects/relationships.md), [actions](./creating-and-managing-objects/actions.md), [layouts](./creating-and-managing-objects/layouts.md), [views](./creating-and-managing-objects/views.md), [validations](./creating-and-managing-objects/validations.md), and [custom states](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md). See [Objects Application Permissions](./objects-application-permissions.md) to learn about the permissions necessary for performing these and other actions related to object definitions.
 

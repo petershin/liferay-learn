@@ -3,7 +3,7 @@ uuid: fa76f937-085e-40aa-9f9f-faf9f7c363eb
 ---
 # Renaming Table Columns
 
-{bdg-secondary}`Available Liferay 7.4 U21+/GA21+`
+{bdg-secondary}`Liferay 7.4 U21+/GA21+`
 
 With custom views, you can change and localize the display name for table columns so you can serve your global users and ensure the table's naming convention is clear. Follow these steps:
 

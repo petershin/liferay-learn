@@ -3,7 +3,7 @@ uuid: 17dfab4d-3c5f-4001-8a65-38a34170aa61
 ---
 # Permissions Framework Integration
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Published objects are integrated automatically with Liferay's permissions framework. You can manage user access to an object and its entries with [application](#application-permissions) and [resource](#resource-permissions) permissions. With role-based access control, you can ensure only appropriate users view and use your application's data.
 

@@ -3,7 +3,7 @@ uuid: 3de2268a-455a-4b8f-be7b-284ea1c1d267
 ---
 # Creating Objects
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Liferay Objects provides development capabilities in the Liferay UI. Using Objects, you can build fully integrated Liferay applications without writing any code or manually deploying modules. This process includes [creating](#creating-object-drafts) an initial draft of the object definition, [editing](#editing-object-drafts) the draft, and finally [publishing](#publishing-object-drafts) it to create the new application. Publishing an object draft creates a fully integrated Liferay application that can be managed and extended at any time via the Objects admin page.
 
@@ -163,7 +163,7 @@ The publishing process includes the following operations:
 
 ### Configuration Restrictions for Published Objects
 
-{bdg-secondary}`For 7.4 U86+/GA86+`
+{bdg-secondary}`Liferay 7.4 U86+/GA86+`
 
 To prevent data loss and system conflicts, Liferay restricts these configuration options for object definitions after publishing:
 

@@ -3,7 +3,7 @@ uuid: 29b299d7-f4aa-4ce7-b016-a16414b6dc83
 ---
 # Using Manual Actions
 
-{bdg-secondary}`Available Liferay 7.4 U60+/GA60+`
+{bdg-secondary}`Liferay 7.4 U60+/GA60+`
 
 When you use the standalone trigger for object actions, the actions become manual instead of automatic. Trigger these actions using these methods:
 

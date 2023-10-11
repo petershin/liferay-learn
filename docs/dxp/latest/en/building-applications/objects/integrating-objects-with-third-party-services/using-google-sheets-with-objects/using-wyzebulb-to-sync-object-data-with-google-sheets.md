@@ -3,7 +3,7 @@ uuid: 7fad70a6-d75c-4284-84f3-6447aadb2049
 ---
 # Using Wyzebulb to Sync Object Data with Google Sheets
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Here you'll learn how to use webhooks to trigger sync tasks between Liferay Objects and Google Sheets using [Wyzebulb](https://www.wyzebulb.com/). Syncing your data in this way requires an Wyzebulb account, Google Spreadsheet, and active DXP 7.4 instance. The DXP instance must also have a published Object with the desired fields for sending or receiving data to the Google Spreadsheet.
 

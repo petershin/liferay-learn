@@ -13,7 +13,7 @@ validations/adding-custom-validations.md
 validations/expression-builder-validations-reference.md
 ```
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Object validations set rules for determining valid field entries and are defined using either [Groovy scripts](./validations/adding-custom-validations.md#using-groovy-validations) or [Liferay expressions](./validations/adding-custom-validations.md#using-expression-builder-validations). When triggered, the validation checks for valid field entries according to defined conditions and displays an error message for invalid entries.
 

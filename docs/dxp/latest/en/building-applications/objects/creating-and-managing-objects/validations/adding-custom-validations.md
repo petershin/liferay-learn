@@ -3,7 +3,7 @@ uuid: 4554a488-5db0-4353-b9d0-a9af05b41200
 ---
 # Adding Custom Validations
 
-{bdg-secondary}`Available Liferay 7.4 U67+/GA67+`
+{bdg-secondary}`Liferay 7.4 U67+/GA67+`
 
 Validations set rules for determining valid field entries. Each validation has its own trigger, conditions, and error text, which you can set via the Objects UI. You can define validations using [Groovy scripts](#using-groovy-validations) or [Liferay expressions](#using-expression-builder-validations).
 

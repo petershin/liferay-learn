@@ -3,7 +3,7 @@ uuid: 5a11638f-6897-4900-ab14-4a38a25cff46
 ---
 # Designing Object Layouts
 
-{bdg-secondary}`For Liferay 7.4 U31+/GA31+`
+{bdg-secondary}`Liferay 7.4 U31+/GA31+`
 
 Layouts define how fields and relationships appear when creating and editing object entries. Each layout can include multiple tabs containing different elements that appear during or after entry creation. When designing a layout, there are two types of tabs:
 

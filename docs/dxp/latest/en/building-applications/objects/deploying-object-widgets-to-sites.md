@@ -3,7 +3,7 @@ uuid: 0c8f393f-6e5a-40ca-9de6-00c833d3dbe6
 ---
 # Deploying Object Widgets to Sites
 
-> Available: Liferay DXP 7.4 U1/Liferay Portal 7.4 GA5
+{bdg-secondary}`Liferay 7.4+`
 
 When an Object is published, Liferay automatically generates a dedicated widget you can deploy to Site Pages. This includes both Site-scoped and Company-scoped Objects, so you can grant access to an Object outside of the Site Menu (![Site Menu](../../images/icon-menu.png)) and Global Menu (![Global Menu](../../images/icon-applications-menu.png)).
 

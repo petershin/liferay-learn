@@ -3,7 +3,7 @@ uuid: 7f5e0f7f-3c70-4429-a0e9-1d47f90d214e
 ---
 # Using Fragments to Build Forms
 
-{bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
+{bdg-secondary}`Liferay 7.4 U45+/GA45+`
 
 Liferay includes form fragments for building object forms in content pages. To build a form, add a form container to a content page or page template and map it to a published object. The container automatically populates fragments mapped to each object field. You can organize, remove, or add fragments manually. Once published, end users can create object entries using the form.
 

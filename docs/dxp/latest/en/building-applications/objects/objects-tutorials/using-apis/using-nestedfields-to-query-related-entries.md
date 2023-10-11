@@ -3,7 +3,7 @@ uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 ---
 # Using `nestedFields` to Query Related Entries
 
-{bdg-secondary}`Available Liferay 7.4 U69+/GA69+`
+{bdg-secondary}`Liferay 7.4 U69+/GA69+`
 
 The `nestedFields` parameter causes Liferay to return multiple levels of related object entries in a single GET request. Pass the `nestedFields` parameter with the relationship names to include in the query, separating each relationship with a comma: `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. If the relationships span multiple levels, set the `nestedFieldsDepth` parameter to the depth you need. You can include up to five levels (e.g., `nestedFieldsDepth=5`).
 

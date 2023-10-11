@@ -3,7 +3,7 @@ uuid: bf481358-5a1a-45af-ab98-a03bddd3044a
 ---
 # Displaying Object Entries
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 With Liferay Objects, you can use existing DXP frameworks to display Object entries dynamically in Sites. This includes collection displays for multiple entries and display pages for individual entries.
 

@@ -3,7 +3,7 @@ uuid: 50529940-7894-40c7-b819-25f3f2a83930
 ---
 # Exporting and Importing Object Definitions
 
-{bdg-secondary}`Available Liferay 7.4 U68+/GA68+`
+{bdg-secondary}`Liferay 7.4 U68+/GA68+`
 
 You can export and import object definitions as `.json` files. These files include the definition's complete schema (e.g., configurations, fields, actions, and relationships).
 

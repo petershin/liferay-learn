@@ -3,7 +3,7 @@ uuid: 8db76b2e-6b09-488e-9e76-82d23b028cca
 ---
 # Headless Framework Integration
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 When you publish a custom object definition, Liferay generates default [REST APIs](../../../headless-delivery/consuming-apis/consuming-rest-services.md) for interacting with the object and its data. These APIs vary depending on the object's scope (i.e., company or site). If the definition includes relationships or standalone actions, Liferay also generates endpoints for calling them.
 
@@ -60,7 +60,7 @@ For the `scopeKey`, use the proper identifier for the desired data scope (e.g., 
 
 ## Relationship REST APIs
 
-{bdg-secondary}`Available Liferay 7.4 U70+/GA70+`
+{bdg-secondary}`Liferay 7.4 U70+/GA70+`
 
 When you define one-to-many and many-to-many relationships between objects, Liferay generates endpoints for querying and managing entry relationships. This includes a GET endpoint for returning related object entries, PUT endpoints for relating entries, and a DELETE endpoint for disassociating related entries. See [Using Relationship APIs](../objects-tutorials/using-apis/using-relationship-rest-apis.md) for more information.
 
@@ -81,7 +81,7 @@ In addition to the dedicated relationship APIs, you can use the `nestedFields` q
 
 ## Standalone Action REST APIs
 
-{bdg-secondary}`Available Liferay 7.4 U60+/GA60+`
+{bdg-secondary}`Liferay 7.4 U60+/GA60+`
 
 When you define standalone actions for a published object, Liferay generates two endpoints for triggering the action on an entry. One uses the entry's ID and the other uses the entry's external reference code (ERC). See [Using Manual Actions](../creating-and-managing-objects/actions/using-manual-actions.md) for more information.
 

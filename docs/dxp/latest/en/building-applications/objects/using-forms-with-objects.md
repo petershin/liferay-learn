@@ -3,7 +3,7 @@ uuid: 1b15f720-c5bd-4b3e-81cc-5dce130a4156
 ---
 # Using Forms with Objects
 
-{bdg-secondary}`Available Liferay DXP 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Liferay objects are integrated with the Forms application, so you can design forms for receiving user input and creating object entries. To do this, first add a new form and configure it to use the objects storage type. Then select the desired object, design your form, and map its fields to the selected object's fields.
 
@@ -86,8 +86,6 @@ Attempting to publish a form with invalid mappings displays an error message tha
 ![Attempting to publish a form with invalid mappings displays an error message.](./using-forms-with-objects/images/05.png)
 
 ## Field Compatibility Reference
-
-{bdg-secondary}`For Liferay 7.4 U20+`
 
 | Object Field Types | Compatible Form Fields |
 | :--- | :--- |

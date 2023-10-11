@@ -3,7 +3,7 @@ uuid: cf990294-69dd-461c-b88d-f1b4ba1401a3
 ---
 # Accessing Accounts Data from Custom Objects
 
-{bdg-secondary}`Available Liferay 7.4 U35+/GA35+`
+{bdg-secondary}`Liferay 7.4 U35+/GA35+`
 
 In some use cases, you may want to access account data from a custom object. For example, if you're building a custom returns application, you may want to prompt users to select their desired account and postal address when creating a return request. In this scenario, users would need access to their existing account and address entries while in the returns application.
 

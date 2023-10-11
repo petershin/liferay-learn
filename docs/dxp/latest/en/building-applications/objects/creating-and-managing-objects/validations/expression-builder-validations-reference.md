@@ -3,7 +3,7 @@ uuid: 2ef89ecc-8c75-43e3-86c1-420d6bbc3a25
 ---
 # Expression Builder Validations Reference
 
-{bdg-secondary}`Available Liferay 7.4 U67+ and GA67+`
+{bdg-secondary}`Liferay 7.4 U67+ and GA67+`
 
 With custom Objects, you can create field validations using Liferay's Expression Builder. This tool provides an integrated editor for quickly defining complex validation rules using predefined fields, operators, and functions. You can browse available elements in the conditions side panel.
 

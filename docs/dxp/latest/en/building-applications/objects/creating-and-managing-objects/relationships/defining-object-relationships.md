@@ -3,7 +3,7 @@ uuid: a9b635be-f464-4e24-b726-6b8f24fd40c3
 ---
 # Defining Object Relationships
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Relationships add fields and tables to object definitions for relating their entries to one another. Follow these steps to add relationships to object definitions:
 
@@ -61,7 +61,7 @@ Available options include *Prevent*, *Disassociate*, and *Cascade*.
 
 ## Making Relationship Fields Mandatory
 
-{bdg-secondary}`For 7.4 U47+/GA47+`
+{bdg-secondary}`Liferay 7.4 U47+/GA47+`
 
 Objects on the child side of a one-to-many relationship inherit relationship fields. In some scenarios, you may want to make these fields mandatory. For example, if you're creating a Ticket object, you may want to define a mandatory relationship field for selecting an 'assignee'. Or if you want to [restrict access to object data](../using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) by account, you should make the object's relationship with the account object mandatory.
 

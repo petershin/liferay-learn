@@ -3,7 +3,7 @@ uuid: 4d712f4d-f49f-4132-bf0d-0bc60a5d279d
 ---
 # Adding Categorization to Fields Tabs
 
-{bdg-secondary}`Available Liferay 7.4 U31+ and GA31+`
+{bdg-secondary}`Liferay 7.4 U31+/GA31+`
 
 You can add categorization blocks to [fields tabs](./designing-object-layouts.md#fields-tabs) so end users can apply tags and categories to object entries. Follow these steps:
 

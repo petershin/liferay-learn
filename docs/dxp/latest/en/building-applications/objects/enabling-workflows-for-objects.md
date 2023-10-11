@@ -3,7 +3,7 @@ uuid: ca5013e4-22f9-4579-a747-9608f04748ec
 ---
 # Enabling Workflow for Objects
 
-> Available: Liferay DXP/Portal 7.4+
+{bdg-secondary}`Liferay 7.4+`
 
 Every published object is integrated automatically with the Workflow framework, so you can direct object entry creation through a defined review and approval process. How you enable a Workflow for an object depends on the object's scope: [Company](#company-scoped-objects) or [Site](#site-scoped-objects).
 
@@ -43,4 +43,4 @@ Follow these steps to enable a custom Workflow for a site-scoped object:
 
 * [Objects](../objects.md)
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)
-* [Custom States](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md)
+* [Adding and Managing Custom States](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md)

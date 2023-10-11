@@ -3,7 +3,7 @@ uuid: 7ec3ffc3-f645-4ee8-86bd-ab6f8697dc3d
 ---
 # Aggregation Fields
 
-{bdg-secondary}`Available Liferay 7.4 U47+/GA47+`
+{bdg-secondary}`Liferay 7.4 U47+/GA47+`
 
 Aggregation fields perform basic calculations on the entries from a relationship table and display the resulting values. Available [aggregation functions](#functions-reference) include count, sum, average, min, and max. Each function determines how values are calculated for the field. Aggregation field values are read-only.
 

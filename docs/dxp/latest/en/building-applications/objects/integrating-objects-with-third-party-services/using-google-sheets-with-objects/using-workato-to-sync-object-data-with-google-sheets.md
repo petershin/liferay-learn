@@ -3,7 +3,7 @@ uuid: 603ac83d-0fce-4a94-bc45-e3d1712e640c
 ---
 # Using Workato to Sync Object Data with Google Sheets
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Here you'll learn how to use webhooks to trigger sync tasks between Liferay Objects and Google Sheets using [Workato](https://www.workato.com/). Syncing your data in this way requires an Workato account, Google Spreadsheet, and active DXP 7.4 instance. The DXP instance must also have a published Object with the desired fields for sending or receiving data to the Google Spreadsheet.
 

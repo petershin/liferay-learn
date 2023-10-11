@@ -16,7 +16,7 @@ uuid: 58767c90-dc9b-4aad-b650-b6beb9dcce77
 ---
 # Objects
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 With Liferay Objects, you can build and deliver applications without having to write code or deploy modules. Each application built with Objects is integrated with Liferay's core frameworks, so you can quickly develop and manage flexible solutions that adapt Liferay DXP to your business needs while maintaining a seamless user experience.
 

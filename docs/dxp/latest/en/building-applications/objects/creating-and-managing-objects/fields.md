@@ -5,6 +5,7 @@ toc:
   - ./fields/aggregation-fields.md
   - ./fields/attachment-fields.md
   - ./fields/encrypted-fields.md
+  - ./fields/picklist-fields.md
 uuid: 4ba9b571-6b88-4ab0-940a-b406a95caa75
 ---
 # Fields
@@ -17,9 +18,10 @@ fields/adding-and-managing-custom-states.md
 fields/aggregation-fields.md
 fields/attachment-fields.md
 fields/encrypted-fields.md
+fields/picklist-fields.md
 ```
 
-{bdg-secondary}`Available Liferay 7.4 U78+/GA78+`
+{bdg-secondary}`Liferay 7.4 U78+/GA78+`
 
 Object fields are data definitions that represent database columns and store different types of values. All objects include default system fields, but you can [add custom fields](./fields/adding-fields-to-objects.md) to both draft and published objects.
 
@@ -69,5 +71,9 @@ Liferay provides these field types that correspond to specific data types in the
 
 :::{grid-item-card} Encrypted Fields
 :link: ./fields/encrypted-fields.md
+:::
+
+:::{grid-item-card} Picklist Fields
+:link: ./fields/picklist-fields.md
 :::
 ::::

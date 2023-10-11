@@ -3,7 +3,7 @@ uuid: 6b1067a0-7fae-4b4b-9e1a-497dd002b824
 ---
 # Restricting Access to Object Data by Account
 
-{bdg-secondary}`Available Liferay 7.4 U58+/GA58+`
+{bdg-secondary}`Liferay 7.4 U58+/GA58+`
 
 In scenarios with multiple business [accounts](../../../../users-and-permissions/accounts.md), you may want to restrict access to object entries by account. To do this, your custom object must have an active [relationship](../relationships/defining-object-relationships.md) with the Account system object, and you must configure the custom object to use this relationship for restricting entry data. Once set up, anyone adding entries to the custom object must select an account. This account becomes the entry's owner. See [Account Restriction and User Roles](#account-restriction-and-user-roles) to learn how role types control access to entries.
 

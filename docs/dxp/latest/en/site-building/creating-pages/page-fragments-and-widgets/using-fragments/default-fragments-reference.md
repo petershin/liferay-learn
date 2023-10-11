@@ -3,7 +3,7 @@ uuid: 1e13195e-4d93-4d50-bc15-910ece4d4e8d
 ---
 # Default Fragments Reference
 
-Liferay provides a variety of fragments out-of-the-box, so you can start building your solution right away. To view available fragments, begin editing a content page or page template. While editing, open the *Fragment and Widgets* tab ( ![Fragments and Widgets](../../../../images/icon-plus.png) ) in the editing sidebar menu.
+Liferay provides a variety of fragments out-of-the-box, so you can start building your solution right away. To view available fragments, begin editing a content page or page template. While editing, open the *Fragments and Widgets* tab ( ![Fragments and Widgets](../../../../images/icon-plus.png) ) in the editing sidebar menu.
 
 Fragments are organized into the following sets:
 
@@ -57,7 +57,7 @@ These are simple design elements that add basic functionality to a page. Example
 | Social                                  | Adds [image elements](./configuring-fragments/fragment-sub-elements-reference.md) with Facebook, Twitter, and LinkedIn icons, which you can link to pages on each platform.                                                                                                                                                                                         |
 | Spacer                                  | Adds a horizontal blank space between fragments on a page. You can configure its height.                                                                                                                                                                                                                                                                            |
 | Tabs                                    | Adds multiple tabs with [simple text elements](./configuring-fragments/fragment-sub-elements-reference.md) and individual drop zones for adding widgets and other fragments.                                                                                                                                                                                        |
-| Video URL (previously *Video Fragment*) | Embeds a video from Youtube or Documents and Media in a page or template. You can set the video to autoplay, loop, mute, or hide controls. You can also hide video controls from end users. See [Embedding Videos](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) for more information. |
+| Video URL (previously *Video Fragment*) | Embeds a video from YouTube or Documents and Media in a page or template. You can set the video to autoplay, loop, mute, or hide controls. You can also hide video controls from end users. See [Embedding Videos](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) for more information. |
 
 ## Form Components
 
@@ -103,7 +103,7 @@ Use content display fragments to display site content individually or as part of
 
 {bdg-secondary}`Available Liferay DXP 7.4 U72+/GA72+`
 
-Use the account selector fragment to easily switch between your accounts when browsing products and creating orders. See [Using the Account Selector Fragment](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-fragments/using-the-account-selector-fragment) for more information.
+Use the account selector fragment to switch easily between your accounts when browsing products and creating orders. See [Using the Account Selector Fragment](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-fragments/using-the-account-selector-fragment) for more information.
 
 ## Cart
 
@@ -113,7 +113,7 @@ Use the mini cart fragment to obtain a detailed overview of your cart. You can u
 
 ## Featured Content
 
-Featured content fragments are complex page elements composed of multiple components. To preview a fragment's layout, switch to *Card View* ( ![Card View](../../../../images/icon-cards2.png) ) in the Fragment's and Widgets panel. Liferay includes the following featured content fragments.
+Featured content fragments are complex page elements composed of multiple components. To preview a fragment's layout, switch to *Card View* ( ![Card View](../../../../images/icon-cards2.png) ) in the Fragments and Widgets panel. Liferay includes the following featured content fragments.
 
 ```{note}
 For Liferay DXP/Portal 7.3, you can preview layouts by hovering over each fragment's *Information* icon (![Information](../../../../images/icon-information.png)).

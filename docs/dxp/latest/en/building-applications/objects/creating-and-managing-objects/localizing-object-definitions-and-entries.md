@@ -3,7 +3,7 @@ uuid: 81425f88-d568-492f-8142-852335ac7374
 ---
 # Localizing Object Definitions and Entries
 
-Liferay objects are integrated with the localization framework, so you can add translations for definition labels and allow users to input localized values for text fields. With this integration, you can localize objects to better serve your global users.
+Liferay objects are integrated with the localization framework, so you can add translations for definition labels, and users can enter localized values for text fields. With this integration, you can localize objects to better serve your global users.
 
 ## Localizing Object Definition Labels
 
@@ -17,9 +17,7 @@ Additionally, you can localize [validation](./validations/adding-custom-validati
 
 ## Enabling Localization for Text Fields
 
-In addition to localizing definition labels, you can enable translation support for custom text [fields](fields.md) so end users can localize their input.
-
-To do this,
+In addition to localizing definition labels, you can enable translation support for custom text [fields](fields.md) so end users can localize their input:
 
 1. Open the Objects application and begin editing the desired definition.
 

@@ -1,6 +1,7 @@
 ---
 toc:
   - ./fields/adding-fields-to-objects.md
+  - ./fields/using-read-only-fields.md
   - ./fields/adding-and-managing-custom-states.md
   - ./fields/aggregation-fields.md
   - ./fields/attachment-fields.md
@@ -14,6 +15,7 @@ uuid: 4ba9b571-6b88-4ab0-940a-b406a95caa75
 :maxdepth: 3
 
 fields/adding-fields-to-objects.md
+fields/using-read-only-fields.md
 fields/adding-and-managing-custom-states.md
 fields/aggregation-fields.md
 fields/attachment-fields.md
@@ -55,6 +57,10 @@ Liferay provides these field types that correspond to specific data types in the
 
 :::{grid-item-card} Adding Fields to Objects
 :link: ./fields/adding-fields-to-objects.md
+:::
+
+:::{grid-item-card} Using Read-Only Fields
+:link: ./fields/using-read-only-fields.md
 :::
 
 :::{grid-item-card} Adding and Managing Custom States

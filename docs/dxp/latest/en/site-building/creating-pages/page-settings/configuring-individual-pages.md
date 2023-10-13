@@ -3,153 +3,182 @@ uuid: f271b7fd-93dd-4692-acce-35d1d8ed2973
 ---
 # Configuring Individual Pages
 
-You can configure individual Pages to meet your needs. All changes made in this way are scoped to the selected Page.
+You can configure individual pages to meet your needs. All changes made in this way are scoped to the selected page.
 
-To configure a Page, open the *Site Menu* and go to *Site Builder* &rarr; *Pages*. Then click the *Actions* button (![Actions button](../../../images/icon-staging-bar-options.png)) for the Page you want to customize and select *Configure*.
+To configure a specific page, open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Site Builder* &rarr; *Pages*. Then click *Actions* (![Actions button](../../../images/icon-staging-bar-options.png)) for the page you want to customize and select *Configure*.
 
-![Click the Actions button for the Page you want to customize, and select Configure](./configuring-individual-pages/images/01.png)
+![Click the Actions button for the page you want to customize, and select Configure](./configuring-individual-pages/images/01.png)
 
-Alternatively, you can access individual Page settings by navigating to the Page you want to customize and clicking the *Configure Page* button ( ![Configure Page Button](./../../../images/icon-cog.png) ) at the top right of the *Application Bar*.
+Alternatively, you can access general page settings by clicking *Actions* (![Actions button](../../../images/icon-staging-bar-options.png)) &rarr; *Configuration* (![Configuration button](./../../../images/icon-cog.png)) at the top right of the Application Bar.
 
 These settings are organized into the following tabs:
 
 * [General](#general)
+* [Design](#design)
 * [SEO](#seo)
 * [Open Graph](#open-graph)
 * [Custom Meta Tags](#custom-meta-tags)
 
 ```{note}
-Many of these settings can be localized to provide translations based on a User's locale. See [Introduction to Localization](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Modifying Localizable Site Fields](../../site-settings/site-localization.md#modifying-localizable-site-fields) for more information.
+Many of these settings can be localized to provide translations based on a user's locale. See [Initial Instance Localization](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) and [Modifying Localizable Site Fields](../../site-settings/site-localization.md#modifying-localizable-site-fields) for more information.
 ```
 
 ## General
 
-Here you can configure the basic information and design of a Page, including its name, friendly URL, layout, and more.
+Here you can configure the basic information of a page, including its name, friendly URL, layout, and more.
 
-### Name and Friendly URL
+### Basic Info
 
-Use the Name field to set a Page's title used for Site navigation and displayed in a browser's title bar. Use the Friendly URL field to set a new URL for a Page, or click the *Restore* icon ( ![Friendly URL Restore icon](./../../../images/icon-restore.png) ) to see and restore a previously used URL. See [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md) for more information.
+Use the name field to set a page's title used for site navigation and displayed in a browser's title bar. You can hide a page from menu display when it is configured to display the page hierarchy. When enabled, a hidden page will still be shown if it is added to any other navigation menu. See [Managing Site Navigation](./../../site-navigation/managing-site-navigation.md) for more information.
 
-![Use the Name field to set a Page's title.](./configuring-individual-pages/images/02.png)
-![Use the Friendly URL field to set a Page's custom URL.](./configuring-individual-pages/images/03.png)
+![Use the name field to set the page's title and check the checkbox to hide it from menu display.](./configuring-individual-pages/images/02.png)
+
+### URL
+
+Use the Friendly URL field to set a new URL for a page, or click the *Restore* icon (![Friendly URL Restore icon](./../../../images/icon-restore.png)) to see and restore a previously used URL. See [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md) for more information.
+
+Use *Query String* to set default parameters for a page when no other parameters are specified. Query strings offer significant advantages within web content templates. Additionally, you can control page link behavior by using the *Target type* field, which allows you to specify attributes like opening the link in a new tab or within a specific frame.
+
+![Use the Friendly URL field to set a page's custom URL.](./configuring-individual-pages/images/03.png)
+
 
 ```{tip}
-While a Page's name and friendly URL are initially defined together at Page creation, they are configured independently afterwards. It is best practice to update them together so that they match.
+While a page's name and friendly URL are initially defined together at page creation, they are configured independently afterwards. It is best practice to update them together so that they match.
 ```
-
-### Menu Displays
-
-You can hide a Page from Menu Display widgets and fragments that show the Pages Hierarchy. When enabled, a hidden Page can still appear in other navigation menus if added to them. See [Configuring Site Navigation](./../../site-navigation/managing-site-navigation.md) for more information.
 
 ### Page Layout
 
 Layout templates dictate where widgets can be placed on a widget page. For basic widget pages created using either a global template or custom page template, the user can determine whether the page *Inherits Changes* made to the chosen template. If the page does not inherit changes, select a custom layout to define row and column containers for its widgets.
 
-![Select a layout template to define row and column containers for widgets.](./configuring-individual-pages/images/05.png)
+![Select a layout template to define row and column containers for widgets.](./configuring-individual-pages/images/04.png)
 
 ### Categorization
 
-Use *Topics* and *Tags* to categorize a Page's content so users can more easily find it. For more information on using tags and categories, see [Organizing Content with Tags and Categories](../../../content-authoring-and-management/tags-and-categories.md).
+Use *Topics* and *Tags* to categorize a page's content so users can more easily find it. For more information on using tags and categories, see [Organizing Content with Tags and Categories](../../../content-authoring-and-management/tags-and-categories.md).
 
-### Look and Feel
+![Use Topics and Tags to categorize a page's content](./configuring-individual-pages/images/05.png)
 
-Here you can use the Page set's theme settings or define a unique look and feel for your Page. When you choose to customize the Page's theme, you can toggle various theme settings.
+### Customization Settings
 
-You can also access a CSS editor where you can add custom CSS code to the Page. Any CSS code added to a Page in this way is loaded after the theme.
+Determine whether a widget page's columns are *Customizable* for users. If customization is enabled, specify the columns users can customize. See [Enabling User Personalization of Widget Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) for more information.
 
-![Determine whether to use the Page set's theme settings or define a unique look and feel for your Page.](./configuring-individual-pages/images/07.png)
+![Determine whether users can customize a widget page.](./configuring-individual-pages/images/06.png)
+
+## Design
+
+Here you can configure the theme of your page and customize its design, CSS and JavaScript. You can also access this editor in a [page set’s configuration page](../../creating-pages/page-settings/configuring-page-sets.md).
+
+### Theme
+
+Here you can use the page set's theme settings or define a custom theme for your page. When you choose to customize the page's theme, you can toggle various theme settings.
+
+![Determine whether to use the page set's theme settings or define a custom theme for your page.](./configuring-individual-pages/images/07.png)
+
+### Basic Settings
+
+Here you can quickly and easily change some areas of your page's design system and styling that can be applied to Liferay.
+
+* **Favicon**: Change the default favicon applied from the theme.
+* **Master**: Change the master page template. See [Master Page Templates](../../creating-pages/defining-headers-and-footers/master-page-templates.md) for more information.
+* **Style Books**: Change the default style book applied from the theme. See [Using a Style Book to Standardize Site Appearance](../../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) for more information.
+* **Icon**: Choose an icon to display along with page's name in the site's navigation menus.
+
+![Determine the favicon, master page template, style book and icon for your page.](./configuring-individual-pages/images/08.png)
 
 ```{note}
-While Widget Pages include the *Look and Feel* tab here, Content Pages include these settings in the *Edit* sidebar menu.
+Content pages also include Master and Style Book settings in the *Edit* (![Edit icon](./../../../images/icon-edit.png)) sidebar menu under *Page Design Options* (![Page Design Options icon](./../../../images/icon-format.png)).
+```
+
+### Customization
+You can also access a CSS and JavaScript editors where you can add custom code to the page.
+
+**Theme CSS Client Extension:** Add [theme CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS contained in the theme.
+
+**CSS Client Extensions:** Add [CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) to extend the page's CSS with client extensions. They will be loaded after the theme CSS and after master extensions.
+
+**Custom CSS:** Custom CSS can be applied and is loaded after the theme.
+
+**JavaScript Client Extension and Custom JavaScript:** [JavaScript client extentions](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can also be added and is executed at the bottom of the page.
+
+![Use CSS and JavaScript editors to add custom code to the page](.//configuring-individual-pages/images/09.png)
+
+```{tip}
+If your site's theme uses JavaScript, it's best to add custom JavaScript code to the theme rather than an individual page or page set. This ensures your site's JavaScript code remains in one place. If your theme does not use JavaScript, place all of your site's JavaScript code here.
 ```
 
 ### Advanced Settings
 
-Access additional settings to customize a Page's content and features, including query strings, [mobile device rules](../../optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md), custom fields, and embedded widgets.
+Access additional settings to customize a page’s content and features.
+
+**Custom Fields**: View and configure the *Custom Fields* you've defined for site pages. See [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) for more information.
+
+**Embedded Widgets**: Access widgets you've embedded in a page using [Web Content Templates](./../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md), [Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md), or [Themes](../../site-appearance/themes/introduction-to-themes.md).
+
+**Mobile Device Rules**: Determine whether a page uses its page set's [rules for mobile devices](../../../site-building/optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md) or is uniquely configured. These rules determine how a page's content renders for different types of mobile devices.
 
 ```{note}
-While Widget Pages include the Advanced tab here, Content Pages include these settings in the Edit sidebar menu under *Look and Feel*.
-```
-
-**Query String**: Use this to provide default parameters for a Page when no others exist. Query strings are useful for web content templates.
-
-**Target**: Use this field to determine Page link behavior using specific target attributes, such as opening the link in a new window, tab, or frameset.
-
-**Icon**: Choose an icon to display along with a Page's name in the Site's navigation menus.
-
-**JavaScript**: Add JavaScript code to a Page. Any added code is executed at the bottom of the Page. You can also access this editor in a Page Set's *Configuration* Page.
-
-```{tip}
-If your Site's theme uses JavaScript, it's best to add custom JavaScript code to the theme rather than an individual Page or Page Set. This ensures your Site's JavaScript code remains in one place. If your theme does not use JavaScript, place all of your Site's JavaScript code here.
-```
-
-**Mobile Device Rules**: Determine whether a Page uses its Page Set's rules for mobile devices or is uniquely configured. These rules determine how a Page's content renders for different types of mobile devices. 
-
-**Customization Settings**: Determine whether a Widget Page's columns are *Customizable* for users. If customization is enabled, specify the columns users can customize. See [Personalizing Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) for more information.
-
-![Determine whether users can customize a Widget Page.](./configuring-individual-pages/images/12.png)
-
-**Custom Fields**: View and configure the *Custom Fields* you've defined for Site Pages. See [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) for more information.
-
-**Embedded Widgets**: Access widgets you've embedded in a Page using [Web Content Templates](./../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md), [Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md), or [Themes](../../site-appearance/themes/introduction-to-themes.md).
-
-```{note}
-The *Custom Fields* and *Embedded Widget* sections only appear once you've created custom fields and embedded widgets in a Page.
+The *Custom Fields* and *Embedded Widget* sections only appear once you've created custom fields and embedded widgets in a page.
 ```
 
 ## SEO
 
-Search engine optimization (SEO) refers to the methods used to improve your Page's ranking in search engine results Pages (SERP). The SEO tab provides easy access to settings you can use to optimize your Page's content. See [Configuring SEO and Open Graph](../../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) for more information about the following settings.
+Search Engine Optimization (SEO) refers to the methods used to improve your page's ranking in Search Engine Results Pages (SERP). The SEO tab provides easy access to settings you can use to optimize your page's content. See [Configuring SEO and Open Graph](../../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) for more information about the following settings.
 
 ### HTML Title
 
-Use the HTML Title field to define a Page's `<title>` tag. This title is used by search engines to rank your Page and serves as the Page's heading in search engine results, though without replacing a Page's [Name](#name-and-friendly-url). The recommended length for an HTML title is under 60 characters.
+Use the HTML title field to define a page's `<title>` tag. This title is used by search engines to rank your page and serves as the page's heading in search engine results, though without replacing a page's [name](#name-and-friendly-url). The recommended length for an HTML title is under 60 characters.
 
 ### Description
 
-Use the Description field to define a Page's `<description>` tag. This description is used by search engines to rank your Page and also appears in search result previews of your Page. The recommended length for a description is under 155 characters.
+Use the description field to define a page's `<description>` tag. This description is used by search engines to rank your page and also appears in search result previews of your page. The recommended length for a description is under 155 characters.
 
 ### Custom Canonical URL
 
-Set a custom canonical URL for a Page. Custom URLs set in this way take precedence over the global and instance level settings.
+Set a custom canonical URL for a page. Custom URLs configured in this manner take precedence over the System Settings configuration.
 
 ### Keywords
 
-List words that people are likely to use when searching for your Page's content. These keywords contribute to your Page's ranking.
+List words that people are likely to use when searching for your page's content. These keywords contribute to your page's ranking.
 
 ```{tip}
-Use keywords often throughout your Page's content, including titles, headings, descriptions, paragraphs, and image alt text.
+Use keywords often throughout your page's content, including titles, headings, descriptions, paragraphs, and image alt text.
 ```
 
-### Preview SERP
+![Set the page's HTML title, description, custom canonical URL and keywords to improve your page's ranking in Search Engine Results Pages (SERP)](./configuring-individual-pages/images/10.png)
 
-Preview how a Page is displayed in search engine results Pages (SERP) based on your configuration of its HTML title, description, and custom URL.
+### Preview
 
-![Preview how a Page is displayed in search engine results.](./configuring-individual-pages/images/13.png)
+Preview how a page is displayed in Search Engine Results Pages (SERP) based on your configuration of its HTML title, description, and custom URL.
+
+![Preview how a page is displayed in search engine results.](./configuring-individual-pages/images/11.png)
 
 ### Robots
 
-Configure `robots.txt` rules for a Page. These rules provide instructions to search engines and other tools crawling and indexing your Site, either blocking or granting a crawler access to a specified path.
+Configure `robots.txt` rules for a page. These rules provide instructions to search engines and other tools crawling and indexing your site, either blocking or granting a crawler access to a specified path.
+
+![Configure robots.txt rules for your page to provide instructions to search engines](./configuring-individual-pages/images/12.png)
 
 ### Sitemap
 
-Determine whether a Page is included in the sitemap used by site crawlers. By excluding a Page, you instruct site crawlers to skip it when crawling and indexing your Site.
+Determine whether a page is included in the sitemap used by site crawlers. By excluding a page, you instruct site crawlers to skip it when crawling and indexing your site.
 
 ### Page Priority
 
-Set a Page's priority from 0.0 to 1.0. This informs tools crawling and indexing your Site how a Page should be prioritized relative to other Pages in your Site.
+Set a page's priority from 0.0 to 1.0. This informs tools crawling and indexing your site how a page should be prioritized relative to other pages in your site.
 
 ### Change Frequency
 
-Use the drop-down menu to inform tools crawling and indexing your Site how frequently a Page is updated.
+Use the drop-down menu to inform tools crawling and indexing your site how frequently a page is updated.
+
+![Determine if the page is included in the sitemap, and set its page priority and change frequency](./configuring-individual-pages/images/13.png)
 
 ## Open Graph
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
-[Open Graph](https://ogp.me/) is an Internet protocol that standardizes previews of Site content when shared in application contexts that support it, such as Facebook, Slack, and Twitter. It does this by embedding structured data in page headers as `<meta>` tags, similar to [RDFa](https://en.wikipedia.org/wiki/RDFa).
+[Open Graph](https://ogp.me/) is an Internet protocol that standardizes previews of site content when shared in application contexts that support it, such as Twitter, Facebook, or LinkedIn. It does this by embedding structured data in page headers as `<meta>` tags, similar to [RDFa](https://en.wikipedia.org/wiki/RDFa).
 
-In the *Open Graph* tab, you can use Open Graph `<meta>` tags to define a Page's metadata and create engaging representations of your content. Values defined here override default values defined at the [Site](../../site-settings/configuring-open-graph.md) level.
+In the *Open Graph* tab, you can use Open Graph `<meta>` tags to define a page's metadata and create engaging representations of your content. Values defined here override default values defined at the [site](../../site-settings/configuring-open-graph.md) level.
 
 ```{note}
 Open Graph `<meta>` tags are only included in page headers to unauthenticated users. They are not included when the user is logged in.
@@ -157,7 +186,7 @@ Open Graph `<meta>` tags are only included in page headers to unauthenticated us
 
 ### Image
 
-Use the Image field to define the following Open Graph `<meta>` properties for a Page:
+Use the image field to define the following Open Graph `<meta>` properties for a page:
 
    ```html
    <meta property="og:image" content="http://example.com/ogp.jpg" />
@@ -169,26 +198,26 @@ Use the Image field to define the following Open Graph `<meta>` properties for a
 
 ### Image Alt Description
 
-Use the Image Alt Description field to define the `og:image:alt` property for a Page. You can also localize an image's alt description via the *Language Flag* button.
+Use the image alt description field to define the `og:image:alt` property for a page. You can also localize an image's alt description via the *Language Flag* button.
 
 ### Custom Title and Description
 
-Use the Title and Description fields to define the `og:title` and `og:description` properties. These properties create custom text used for rich previews in place of a Page's HTML title and description. You can also localize these values via their *Language Flag* buttons.
+Use the custom title and description fields to define the `og:title` and `og:description` properties. These properties create custom text used for rich previews in place of a page's HTML title and description. You can also localize these values via their *Language Flag* buttons.
 
 ### Preview Open Graph Page Representation
 
-Preview your Page's Open Graph configuration. This section displays how your Page's content appears when its URL is shared in contexts supporting the protocol. Though an image's ratio may change depending on where the URL is posted.
+Preview your page's Open Graph configuration. This section displays how your page's content appears when its URL is shared in contexts supporting the protocol. Though an image's ratio may change depending on where the URL is posted.
 
-![Preview your Open Graph configuration.](./configuring-individual-pages/images/23.png)
+![Preview your Open Graph configuration.](./configuring-individual-pages/images/14.png)
 
 ## Custom Meta Tags
 
-Here you can add custom `<meta>` tags to the `<head>` of a Page. These tags are only visible in a Page's HTML source code and are used to describe a Page's data and determine how that data is displayed in different contexts, such as search engine results and social media posts. Each tag is defined using property and content attributes.
+Here you can add custom `<meta>` tags to the `<head>` of a page. These tags are only visible in a page's HTML source code and are used to describe a page's data and determine how that data is displayed in different contexts, such as search engine results and social media posts. Each tag is defined using property and content attributes.
 
-![Add custom meta tags to a Page's head using the Property and Content fields.](./configuring-individual-pages/images/24.png)
+![Add custom meta tags to a page's head using the Property and Content fields.](./configuring-individual-pages/images/15.png)
 
 ## Related Topics
 
-* [Adding Pages to a Site](./../adding-pages/adding-a-page-to-a-site.md)
+* [Adding a Page to a Site](./../adding-pages/adding-a-page-to-a-site.md)
 * [Using Content Pages](../using-content-pages.md)
 * [Configuring Page Sets](./configuring-page-sets.md)

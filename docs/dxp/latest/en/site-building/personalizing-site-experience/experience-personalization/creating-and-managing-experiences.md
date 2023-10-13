@@ -9,7 +9,7 @@ You can customize your content page for different groups of users using *Experie
 
 ## Creating Experiences
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Site Builder* &rarr; *Pages*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Site Builder* &rarr; *Pages*.
 
 1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for an content page and select *Edit*. Alternatively, [create a content page](../../creating-pages/using-content-pages.md).
 
@@ -29,13 +29,17 @@ You can customize your content page for different groups of users using *Experie
 
 1. Click *Publish*.
 
+```{tip}
+If users are logged in and have permission to edit the page, and there are multiple experiences in place, they can select different experiences to [view/preview the page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md#previewing-pages) based on the selected experience.
+```
+
 ## Managing Experiences
 
 When you edit a content page, you can click the experience to manage the options for that page.
 
 ![You can add, edit, delete, or change priority for Experiences.](./creating-and-managing-experiences/images/03.png)
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Site Builder* &rarr; *Pages*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Site Builder* &rarr; *Pages*.
 
 1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for a content page and select *Edit*.
 

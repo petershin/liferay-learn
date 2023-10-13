@@ -16,8 +16,8 @@ toc:
 * 페이지는 Liferay의 모든 정보가 사이트 사용자에게 표시되는 기본 방법을 제공합니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-4-experience-management)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-4-experience-management) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) 을 다운로드하세요.
 ```
 
 ## 배경
@@ -37,7 +37,7 @@ toc:
 
 ## 페이지
 
-페이지는 사용자에게 컨텐츠와 애플리케이션을 표시하기 위해 Liferay DXP에서 사용되는 기본 방법이기 때문에 [페이지](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/understanding-pages/understanding-pages.html) 및 구성 방법을 시연하는 것이 데모의 이 섹션을 시작하는 논리적인 사이트입니다.
+페이지는 사용자에게 컨텐츠와 애플리케이션을 표시하기 위해 Liferay DXP에서 사용되는 기본 방법이기 때문에 [페이지 이해](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/understanding-pages/understanding-pages.html) 및 구성 방법을 시연하는 것이 데모의 이 섹션을 시작하는 논리적인 사이트입니다.
 
 데모를 시작하기 전에 페르소나, 사용자 여정 등 잠재 고객이 보게 될 내용을 소개하세요. 더 많은 맥락을 통해 청중은 데모가 시작될 때 표시되는 내용을 더 잘 이해할 수 있습니다. 이에 대한 팁은 다음과 같습니다.
 
@@ -82,15 +82,15 @@ toc:
 
 ![사용자는 모든 페이지를 지원되는 언어로 번역할 수 있습니다.](./experience-management/images/06.png)
 
-Liferay 애플리케이션을 다른 언어로 현지화해야 하는 경우 상단 표시줄의 아이콘에서 직접 [페이지 번역](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/translating-content-pages) 을 얼마나 쉽게 추가할 수 있는지 보여주세요. 또한 ML 기반 자동 번역 서비스를 사용하여 페이지 콘텐츠를 자동 번역할 [있는 전용 도구가 있다는 점을 언급](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation).
+Liferay 애플리케이션을 다른 언어로 현지화해야 하는 경우 상단 표시줄의 아이콘에서 직접 [페이지 번역](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/translating-content-pages) 을 얼마나 쉽게 추가할 수 있는지 보여주세요. 또한 ML 기반 자동 번역 서비스를 사용하여 페이지 콘텐츠를 자동 번역할 [있는 전용 도구가 있다는 점을 언급](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation) .
 
 마지막으로 게시 버튼을 클릭하여 페이지 변경 사항을 공개합니다.
 
 페이지와 페이지 구성 방법에 대한 자세한 내용은 이 사이트의 다른 곳에서 확인할 수 있습니다.
 
-* [콘텐츠 페이지 사용](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/using-content-pages.html)
-* [콘텐츠 페이지 편집기 UI 참조](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference.html)
-* [조각 사용](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-fragments-and-widgets/using-fragments.html)
+* [콘텐츠 페이지 사용](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/using-content-pages.html)
+* [콘텐츠 페이지 편집기 UI 참조](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference.html)
+* [조각 사용](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/page-fragments-and-widgets/using-fragments.html)
 
 ### 다루어야 할 추가 주제
 

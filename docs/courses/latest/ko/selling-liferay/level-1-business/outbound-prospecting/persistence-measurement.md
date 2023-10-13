@@ -4,11 +4,11 @@
 
 다른 모든 도구를 하나로 묶는 유일한 도구는 지속성이며, 이는 아마도 모든 도구 중에서 가장 의견이 일치하지 않는 도구일 것입니다.
 
-대중의 의견에도 불구하고, _유쾌하게_ 끈질기게 유지하는 것이 잠재 고객과 소통하는 효과적인 방법임이 입증되었습니다.
+대중의 의견에도 불구하고, **유쾌하게** 끈질기게 유지하는 것이 잠재 고객과 소통하는 효과적인 방법임이 입증되었습니다.
 
 > "전환된 연락처 중 50%는 다섯 번째 터치 이후에 발생합니다."
 
-[Salesloft](https://pages.salesloft.com/rs/432-WAJ-793/images/33%20Tips%20for%20Optimizing%20B2B%20Sales%20Emails%20eBook.pdf?mkt_tok=NDMyLVdBSi03OTMAAAF9m1SHnRS1iDQqLvHu0D3bFwd2pc2WCy-UKAdmmWQOGz-6DViCCgC4OQKpG9r6aChNmAJ2IqiLavPIjflUUTytHTF-WqfNZgIe71uWadA&ref=blog.lavender.ai)에 따르면 "연락처에 참여하려는 최적의 시도 횟수는 15회입니다."  그리고 [ZoomInfo](https://pipeline.zoominfo.com/sales/sales-follow-up-statistics)에 따르면 "전환된 연락처 중 50%는 다섯 번째 터치 후에 발생합니다."
+[Salesloft](https://pages.salesloft.com/rs/432-WAJ-793/images/33%20Tips%20for%20Optimizing%20B2B%20Sales%20Emails%20eBook.pdf?mkt_tok=NDMyLVdBSi03OTMAAAF9m1SHnRS1iDQqLvHu0D3bFwd2pc2WCy-UKAdmmWQOGz-6DViCCgC4OQKpG9r6aChNmAJ2IqiLavPIjflUUTytHTF-WqfNZgIe71uWadA&ref=blog.lavender.ai) 에 따르면 "연락처에 참여하려는 최적의 시도 횟수는 15회입니다."  그리고 [ZoomInfo](https://pipeline.zoominfo.com/sales/sales-follow-up-statistics) 에 따르면 "전환된 연락처 중 50%는 다섯 번째 터치 후에 발생합니다."
 
 즉, 판매자로서 계정, 잠재 고객, 사용 사례에 대한 조사가 완료되었다면 끈기를 갖는 것을 두려워하거나 불편할 이유가 없습니다. 공유할 가치가 있는 것이 있다면 사과할 필요가 없습니다.
 
@@ -35,7 +35,7 @@
 
 매월 말에는 이러한 전환에 대해 달성한 실적을 분석하여 개선이 필요한 영역을 찾아낼 수 있습니다. 이 아웃바운드 생산성 도구를 사용하면 잠재 고객 발굴에 얼마나 많은 시간을 할당해야 하는지 이해할 수 있을 뿐만 아니라 잠재 고객 발굴이 얼마나 효과적인지 측정하여 결과적으로 개선이 가능합니다.
 
-도구의 동적 버전은 [여기](https://learn.liferay.com/documents/d/guest/sdr-productivity-tool)에서 다운로드할 수 있습니다.
+도구의 동적 버전은 [여기](https://learn.liferay.com/documents/d/guest/sdr-productivity-tool) 에서 다운로드할 수 있습니다.
 
 ## 최종 결과
 

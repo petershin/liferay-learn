@@ -100,6 +100,6 @@ Liferay는 이러한 산업 분야에서 맞춤형 디지털 경험 솔루션을
 2. CarCo, SA에는 로그인된 고객 경험이 없는 오래된 공개 웹사이트가 있었습니다. 공개 웹사이트와 고객 포털은 Liferay의 대상 사용 사례이며, 잠재 고객은 제조 업계에 있으며 이상적인 고객 프로필에서도 논의됩니다.
 3. 이번 통화는 José와의 1차 통화이기 때문에 CarCo, SA의 비즈니스 우선순위와 사용 사례는 아직 알려지지 않았습니다.
 
-이용 가능한 정보에 따르면 이 시나리오의 올바른 접근 방식은 제조 기반 영업 자료를 활용하는 것입니다. 파트너는 [Partner Portal](https://partner.liferay.com)에서 찾을 수 있고 직원은 [Alexandria](https://sales.liferay.com)에서 찾을 수 있습니다.
+이용 가능한 정보에 따르면 이 시나리오의 올바른 접근 방식은 제조 기반 영업 자료를 활용하는 것입니다. 파트너는 [Partner Portal](https://partner.liferay.com) 에서 찾을 수 있고 직원은 [Alexandria](https://sales.liferay.com) 에서 찾을 수 있습니다.
 
 다음: 이 시나리오를 사용하여 [Base Sales Deck 구조](./sales-presentations-base-deck.md)에 대해 알아봅니다.

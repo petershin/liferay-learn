@@ -12,20 +12,20 @@
 
 ## LXC-SM 및 자체 호스팅의 가상 인스턴스
 
-1. _글로벌 메뉴로 이동_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _가상 인스턴스_.
+1. **글로벌 메뉴로 이동**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **가상 인스턴스** .
 
-1. _Add_ (![Add icon](../../images/icon-add.png))을 클릭하고 다음 정보를 입력하세요.
+1. **Add**(![Add icon](../../images/icon-add.png))을 클릭하고 다음 정보를 입력하세요.
 
    * 웹 ID: `lunch.delectablebonsai.com`
    * 가상 호스트: `lunch.delectablebonsai.com`
    * 메일 도메인: `delectablebonsai.com`
    * 최대 사용자: `0` (참고, 이는 무제한 사용자를 의미함)
    * 활성: 켜짐
-   * 가상 인스턴스 초기화 프로그램: _빈 사이트_을 선택합니다.
+   * 가상 인스턴스 초기화 프로그램: **빈 사이트** 을 선택합니다.
 
    ![가상 인스턴스 정보를 입력하세요.](./configuring-virtual-instances/images/01.png)
 
-   _저장_클릭하세요. 새로운 가상 인스턴스가 준비되었습니다.
+**저장** 클릭하세요. 새로운 가상 인스턴스가 준비되었습니다.
 
 1. 이것은 실제 외부 호스팅 사이트가 아니므로 로컬 시스템의 `/etc/hosts` 파일에 도메인을 추가하세요.
 

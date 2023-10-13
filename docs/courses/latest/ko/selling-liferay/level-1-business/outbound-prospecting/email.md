@@ -2,9 +2,9 @@
 
 모든 판매자가 마스터해야 하는 첫 번째 도구는 이메일입니다.
 
-여기서 문제는 컨설팅 회사 [McKinsey & Company](https://www.google.com/url?q=https://hbr.org/2019/01/how-to-spend-way-less-time-on-email-every-day%23:~:text%3DThe%2520average%2520professional%2520spends%252028,120%2520messages%2520received%2520per%2520day&sa=D&source=docs&ust=1687919492251304&usg=AOvVaw0uat-Hvtk6TpeCueTEK1G_)에 따르면 평균적으로 일하는 전문가가 하루에 대략 120개의 이메일을 받는다는 것입니다.
+여기서 문제는 컨설팅 회사 [McKinsey & Company](https://www.google.com/url?q=https://hbr.org/2019/01/how-to-spend-way-less-time-on-email-every-day%23:~:text%3DThe%2520average%2520professional%2520spends%252028,120%2520messages%2520received%2520per%2520day&sa=D&source=docs&ust=1687919492251304&usg=AOvVaw0uat-Hvtk6TpeCueTEK1G_) 에 따르면 평균적으로 일하는 전문가가 하루에 대략 120개의 이메일을 받는다는 것입니다.
 
-또한 영업 참여 플랫폼 회사 [Outreach](https://www.google.com/url?q=https://www.outreach.io/assets/resources/Outreach_PersonalizingProspectEmails_Final.pdf?utm_medium%3DWeb%26utm_source%3DWeb%2520Direct&sa=D&source=docs&ust=1687919492261815&usg=AOvVaw0ZLsBsDfg1bfPBfYGSNfYB)의 데이터 과학 팀에 따르면 평균 콜드 이메일 응답률은 1% 미만입니다.
+또한 영업 참여 플랫폼 회사 [Outreach](https://www.google.com/url?q=https://www.outreach.io/assets/resources/Outreach_PersonalizingProspectEmails_Final.pdf?utm_medium%3DWeb%26utm_source%3DWeb%2520Direct&sa=D&source=docs&ust=1687919492261815&usg=AOvVaw0ZLsBsDfg1bfPBfYGSNfYB) 의 데이터 과학 팀에 따르면 평균 콜드 이메일 응답률은 1% 미만입니다.
 
 이것이 Liferay의 잠재 고객에게 의미하는 바는 그들이 이메일의 폭격을 받고 있다는 것입니다. 이는 판매자로서 우리가 잠재 고객의 관심을 끌기 위해 수백 명의 다른 사람들과 경쟁한다는 것을 의미합니다. 따라서 이메일을 통한 커뮤니케이션 방식이 다른 방식보다 눈에 띄는 것이 중요합니다.
 

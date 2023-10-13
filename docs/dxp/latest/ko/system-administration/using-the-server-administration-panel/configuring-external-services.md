@@ -1,6 +1,6 @@
 # 외부 서비스 구성
 
-Liferay는 파일 변환 및 파일 미리보기 생성을 위한 외부 서비스와의 통합을 제공합니다. 서버 관리 설정에서 세 가지 서비스( [ImageMagick](https://www.imagemagick.org/script/index.php), [Ghostscript](https://www.ghostscript.com/)및 [Xuggler](http://www.xuggle.com/xuggler/)를 활성화할 수 있습니다.
+Liferay는 파일 변환 및 파일 미리보기 생성을 위한 외부 서비스와의 통합을 제공합니다. 서버 관리 설정에서 세 가지 서비스( [ImageMagick](https://www.imagemagick.org/script/index.php) , [Ghostscript](https://www.ghostscript.com/) 및 [Xuggler](http://www.xuggle.com/xuggler/) 를 활성화할 수 있습니다.
 
 ```{important}
 Liferay 7.3.x부터 Xuggler 통합은 더 이상 사용되지 않습니다. 사용자는 대안으로 Liferay의 FFmpeg 통합을 사용하는 것이 좋습니다. 자세한 내용은 [오디오 및 비디오 미리 보기를 위한 FFmpeg 활성화](../../content-authoring-and-management/documents-and-media/devops/configuring-documents-and-media-previews.md)를 참조하세요.
@@ -26,13 +26,13 @@ OS에 따라 이러한 서비스가 이미 설치되어 있을 수 있습니다.
 
 ImageMagick과 Ghostscript가 모두 서버에 설치되면 다음 단계에 따라 Liferay 인스턴스에 대해 이러한 서비스를 활성화하십시오.
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *구성* &rarr; *서버 관리*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **구성** &rarr; **서버 관리** 으로 이동합니다.
 
-1. *외부 서비스* 탭을 클릭합니다.
+1. **외부 서비스** 탭을 클릭합니다.
 
-1. ImageMagick 및 Ghostscript에 대해 *활성화* 선택하십시오.
+1. ImageMagick 및 Ghostscript에 대해 **활성화** 선택하십시오.
 
-1. *Path* 필드에 ImageMagick 및 Ghostscript 실행 파일에 대한 올바른 경로가 있는지 확인하십시오. 별도의 경로에 있는 경우 세미콜론을 구분 기호로 사용합니다.
+1. **Path** 필드에 ImageMagick 및 Ghostscript 실행 파일에 대한 올바른 경로가 있는지 확인하십시오. 별도의 경로에 있는 경우 세미콜론을 구분 기호로 사용합니다.
 
    예를 들어, 설치한 사이트에 따라 Windows 서버에서 올바른 경로는 다음과 같을 수 있습니다.
 
@@ -44,7 +44,7 @@ ImageMagick과 Ghostscript가 모두 서버에 설치되면 다음 단계에 따
 
 1. 리소스 제한을 구성합니다.
 
-1. 완료되면 *저장* 클릭하세요.
+1. 완료되면 **저장** 클릭하세요.
 
 ## Xuggler 활성화
 
@@ -56,19 +56,19 @@ Xuggler를 사용하려면 Linux에서 glibc 버전 2.6 이상이 필요합니�
 
 Liferay 인스턴스에 대해 Xuggler를 설치하고 활성화하려면 다음 단계를 따르십시오.
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *제어판* &rarr; *구성* &rarr; *서버 관리*으로 이동합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **제어판** &rarr; **구성** &rarr; **서버 관리** 으로 이동합니다.
 
-1. *외부 서비스* 탭을 클릭합니다.
+1. **외부 서비스** 탭을 클릭합니다.
 
-1. Xuggler에 대해 *활성화* 선택하십시오.
+1. Xuggler에 대해 **활성화** 선택하십시오.
 
-1. (Xuggler가 설치되지 않은 경우) OS에 맞는 JAR을 선택하고 *Install*클릭합니다.
+1. (Xuggler가 설치되지 않은 경우) OS에 맞는 JAR을 선택하고 **Install** 클릭합니다.
 
    변경 사항을 적용하려면 서버를 다시 시작하세요. 설치가 완료되면 외부 서비스 탭으로 돌아가서 Xuggler를 활성화하세요.
 
    ![Xuggler가 설치되어 있지 않으면 설치하라는 메시지가 표시됩니다.](./configuring-external-services/images/02.png)
 
-1. *저장*클릭하세요.
+1. **저장** 클릭하세요.
 
 ## `Portal-ext.properties` 파일을 사용하여 외부 서비스 활성화
 

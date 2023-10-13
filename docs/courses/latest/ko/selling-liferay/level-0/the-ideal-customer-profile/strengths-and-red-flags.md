@@ -17,8 +17,8 @@
 * 포털과 커머스의 연계?
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf) 을 다운로드하세요.
 ```
 
 ## 사용 사례
@@ -120,9 +120,9 @@ Liferay Experience Cloud SaaS는 상대적으로 새로운 제품으로, 다른 
 
 ### 50-100K 시작점
 
-Liferay Experience Cloud SaaS 기회의 일반적인 출발점은 50-100K USD/EUR 사이에서 __ 시작하는 연간 구독인 것으로 보입니다.
+Liferay Experience Cloud SaaS 기회의 일반적인 출발점은 50-100,000~100,000 USD/EUR 사이에서 시작되는 연간 구독인 것으로 보입니다.
 
-이 목록은 _이 아닌_ 이며 완전하지는 않지만 Liferay Experience Cloud SaaS 거래를 식별하려고 할 때 몇 가지 지침을 제공할 수 있습니다.
+이 목록은 완전하지 _아님__ 최종적이지도 않지만 Liferay Experience Cloud SaaS 거래를 식별하려고 할 때 몇 가지 지침을 제공할 수 있습니다.
 
 축하해요! 이상적인 고객 프로필에 대한 모듈을 완료했습니다!
 

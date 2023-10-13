@@ -25,7 +25,7 @@ Analytics Cloud 작업 공간에 새 사용자를 초대하려면 다음 단계�
 초대 수락이 보류 중인 경우 사용자의 권한을 설정할 수 있습니다.
 
 ```{note}
-초대된 사용자가 Analytics Cloud를 사용하려면 Liferay 계정이 있어야 합니다. Liferay 계정이 없는 경우 [계정 만들기](https://login.liferay.com/signin/register)로 안내하세요.
+초대된 사용자가 Analytics Cloud를 사용하려면 Liferay 계정이 있어야 합니다. Liferay 계정이 없는 경우 [계정 만들기](https://login.liferay.com/signin/register) 로 안내하세요.
 ```
 
 ## 권한 관리

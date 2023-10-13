@@ -4,9 +4,9 @@
 
 새 카탈로그를 생성하려면,
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png)) 을 열고 *Commerce* &rarr; *Catalogs*로 이동하세요.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png)) 을 열고 **Commerce** &rarr; **Catalogs** 로 이동하세요.
 
-1. *Add* (![Add](../../images/icon-add.png))을 클릭하고 다음 정보를 입력합니다.
+1. **Add**(![Add](../../images/icon-add.png))을 클릭하고 다음 정보를 입력합니다.
 
    **이름:** DB 제품 카탈로그
 
@@ -16,7 +16,7 @@
 
    ![B2B 카탈로그의 이름, 기본 언어 및 통화를 입력합니다.](./creating-and-configuring-catalogs/images/01.png)
 
-1. *제출*클릭하세요.
+1. **제출** 클릭하세요.
 
 카탈로그를 생성하면 기본 가격표와 기본 판촉 목록도 자동으로 생성됩니다. 기본 카탈로그 이미지를 추가하는 옵션이 있습니다. 카탈로그에 제품 이미지가 없으면 기본 카탈로그 이미지가 제품 이미지로 표시됩니다.
 

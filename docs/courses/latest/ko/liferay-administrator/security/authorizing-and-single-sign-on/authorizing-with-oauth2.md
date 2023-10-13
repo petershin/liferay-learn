@@ -4,29 +4,29 @@ Liferay의 OAuth2 도구를 사용하여 타사 애플리케이션에 데이터 
 
 ## OAuth2 설정
 
-1. _글로벌 메뉴*(![Global Menu](../../../images/icon-applications-menu.png))를 열고 _Control Panel_ &rarr; _Security_ &rarr; _OAuth 2 Administration_로 이동합니다.
+1. **글로벌 메뉴*(![Global Menu](../../../images/icon-applications-menu.png))를 열고** Control Panel **&rarr;** Security **&rarr;** OAuth 2 Administration_로 이동합니다.
 
-1. _Add_ (![Add Icon](../../../images/icon-add.png))을 클릭하여 새 OAuth2 애플리케이션을 생성합니다.
+1. **Add**(![Add Icon](../../../images/icon-add.png))을 클릭하여 새 OAuth2 애플리케이션을 생성합니다.
 
-1. 애플리케이션에 이름(예: foo)을 지정합니다. 웹사이트 URL을 `http://localhost:3000` 로 설정하고 콜백 URI를 `http://localhost:3000/grant-type-authorization-code`으로 설정합니다. *저장*클릭하세요.
+1. 애플리케이션에 이름(예: foo)을 지정합니다. 웹사이트 URL을 `http://localhost:3000` 로 설정하고 콜백 URI를 `http://localhost:3000/grant-type-authorization-code`으로 설정합니다. **저장** 클릭하세요.
 
-1. 클라이언트 ID와 클라이언트 비밀번호를 클립보드에 복사하세요. 클라이언트 비밀번호를 얻으려면 *편집*클릭하세요. 팝업 창에서 값을 복사합니다. 이러한 값은 나중에 샘플 React 앱에서 필요합니다.
+1. 클라이언트 ID와 클라이언트 비밀번호를 클립보드에 복사하세요. 클라이언트 비밀번호를 얻으려면 **편집** 클릭하세요. 팝업 창에서 값을 복사합니다. 이러한 값은 나중에 샘플 React 앱에서 필요합니다.
 
-1. 페이지 상단에서 _범위_ 탭을 클릭합니다. 아래로 스크롤하여 _LIFERAY.HEADLESS.COMMERCE.ADMIN.PRICING_클릭한 다음 _사용자 대신 데이터 읽기_확인란을 선택합니다.
+1. 페이지 상단에서 **범위** 탭을 클릭합니다. 아래로 스크롤하여 **LIFERAY.HEADLESS.COMMERCE.ADMIN.PRICING** 클릭한 다음 **사용자 대신 데이터 읽기** 확인란을 선택합니다.
 
    ![LIFERAY.HEADLESS.COMMERCE.ADMIN.PRICING에 대한 읽기 권한을 활성화합니다.](./authorizing-with-oauth2/images/01.png)
 
-   *저장*클릭하세요. 이제 귀하의 OAuth2 애플리케이션에는 상거래 가격 책정 API 카테고리에 대한 읽기 권한이 있습니다.
+   **저장** 클릭하세요. 이제 귀하의 OAuth2 애플리케이션에는 상거래 가격 책정 API 카테고리에 대한 읽기 권한이 있습니다.
 
-1. 그런 다음 *전역 메뉴* (![Global Menu](../../../images/icon-applications-menu.png))을 열고 *제어판* 탭을 클릭한 후 *시스템 설정* &rarr; *보안 도구*로 이동합니다.
+1. 그런 다음 **전역 메뉴**(![Global Menu](../../../images/icon-applications-menu.png))을 열고 **제어판** 탭을 클릭한 후 **시스템 설정** &rarr; **보안 도구** 로 이동합니다.
 
-1. *Portal Cross-Origin Resource Sharing(CORS)* 탭으로 이동하여 *Default Portal CORS Configuration*클릭합니다.
+1. **Portal Cross-Origin Resource Sharing(CORS**) 탭으로 이동하여 **Default Portal CORS Configuration** 클릭합니다.
 
-1. 값이 `/o/headless-commerce-admin-pricing/*` 인 *URL 패턴* 추가하고 *저장*클릭합니다. 이를 통해 `headless-Commerce-admin-pricing` API 카테고리에 대한 CORS가 활성화됩니다.
+1. 값이 `/o/headless-commerce-admin-pricing/*` 인 **URL 패턴** 추가하고 **저장** 클릭합니다. 이를 통해 `headless-Commerce-admin-pricing` API 카테고리에 대한 CORS가 활성화됩니다.
 
 ## 샘플 React 앱 배포
 
-1. [OAuth2 React App](https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip)을 다운로드하고 압축을 푼다.
+1. [OAuth2 React App](https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip) 을 다운로드하고 압축을 푼다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O
@@ -56,15 +56,15 @@ Liferay의 OAuth2 도구를 사용하여 타사 애플리케이션에 데이터 
    yarn install && yarn start
    ```
 
-1. `http://localhost:3000`에서 실행 중인 React 앱을 엽니다. _인증 코드 흐름_클릭합니다.
+1. `http://localhost:3000`에서 실행 중인 React 앱을 엽니다. **인증 코드 흐름** 클릭합니다.
 
-1. Liferay 인증 URL에 `http://localhost:8080/o/oauth2/authorize` 입력합니다. 클립보드에서 클라이언트 ID를 붙여넣습니다. _승인_클릭하세요.
+1. Liferay 인증 URL에 `http://localhost:8080/o/oauth2/authorize` 입력합니다. 클립보드에서 클라이언트 ID를 붙여넣습니다. **승인** 클릭하세요.
 
-1. 아직 로그인하지 않은 경우 인증 페이지로 전송되기 전에 Liferay 로그인 페이지로 리디렉션됩니다. 사용자 이름과 비밀번호(예 *test@liferay.com:learn*)를 입력하고 *로그인*클릭합니다. 인증 페이지에서 *인증*클릭하세요. 이미 로그인한 경우에는 인증 페이지로 바로 이동됩니다.
+1. 아직 로그인하지 않은 경우 인증 페이지로 전송되기 전에 Liferay 로그인 페이지로 리디렉션됩니다. 사용자 이름과 비밀번호(예 **test@liferay.com:learn**)를 입력하고 **로그인** 클릭합니다. 인증 페이지에서 **인증** 클릭하세요. 이미 로그인한 경우에는 인증 페이지로 바로 이동됩니다.
 
-1. Liferay 토큰 URL에 `http://localhost:8080/o/oauth2/token` 을 입력합니다. 클립보드에서 클라이언트 ID와 클라이언트 비밀번호를 붙여넣습니다. _토큰 받기_클릭하세요.
+1. Liferay 토큰 URL에 `http://localhost:8080/o/oauth2/token` 을 입력합니다. 클립보드에서 클라이언트 ID와 클라이언트 비밀번호를 붙여넣습니다. **토큰 받기** 클릭하세요.
 
-1. 요청 URL에 `http://localhost:8080/o/headless-commerce-admin-pricing/v1.0/priceLists` 입력합니다. _데이터 가져오기_클릭하세요.
+1. 요청 URL에 `http://localhost:8080/o/headless-commerce-admin-pricing/v1.0/priceLists` 입력합니다. **데이터 가져오기** 클릭하세요.
 
    ![가격표는 React 앱에 표시됩니다.](./authorizing-with-oauth2/images/02.png)
 

@@ -1,12 +1,12 @@
 # 핫픽스 설치
 
-Liferay 인스턴스를 최신 상태로 유지하는 것은 Liferay Cloud 유지 관리의 중요한 부분입니다. [Liferay의 다음 버전](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/updating-your-dxp)에 문제가 나타나기 전에 문제를 패치해야 하는 경우 -instance-to-a-new-minor-version), 그러나 핫픽스를 배포할 수 있습니다. 핫픽스는 수정된 버전으로 업데이트할 준비가 될 때까지 이러한 문제를 해결하기 위해 Liferay 지원에서 제공하는 임시 솔루션입니다. 
+Liferay 인스턴스를 최신 상태로 유지하는 것은 Liferay Cloud 유지 관리의 중요한 부분입니다. [Liferay의 다음 버전](https://learn.liferay.com/w/liferay-cloud/using-the-liferay-dxp-service/updating-your-dxp) 에 문제가 나타나기 전에 문제를 패치해야 하는 경우 -instance-to-a-new-minor-version), 그러나 핫픽스를 배포할 수 있습니다. 핫픽스는 수정된 버전으로 업데이트할 준비가 될 때까지 이러한 문제를 해결하기 위해 Liferay 지원에서 제공하는 임시 솔루션입니다. 
 
 여기에서는 Kyle에게 핫픽스를 요청하고 설치하는 과정을 안내합니다. 그는 핫픽스를 프로덕션 환경에 배포하고 테스트할 수 있도록 이미 사이트 가동 중지 시간을 예약했습니다. 
 
 ## 핫픽스 요청
 
-Liferay DXP의 특정 문제에 대한 단기 수정이 필요한 경우 핫픽스를 요청하세요. 이는 최근 수정된 알려진 문제일 수도 있고 Liferay 인스턴스에서 발견한 새로운 문제일 수도 있습니다. 두 경우 모두 [Liferay's Help Center](https://help.liferay.com)에 요청을 작성하세요.
+Liferay DXP의 특정 문제에 대한 단기 수정이 필요한 경우 핫픽스를 요청하세요. 이는 최근 수정된 알려진 문제일 수도 있고 Liferay 인스턴스에서 발견한 새로운 문제일 수도 있습니다. 두 경우 모두 [Liferay's Help Center](https://help.liferay.com) 에 요청을 작성하세요.
 
 ![Liferay의 도움말 센터에서 티켓을 생성하여 핫픽스를 요청하세요.](./installing-a-hotfix/images/01.png)
 
@@ -46,9 +46,9 @@ Liferay Cloud는 변경 사항을 감지하고 배포할 수 있는 CI에 새 �
 
 프로덕션에 적용하기 전에 UAT 환경에서 핫픽스를 테스트하세요.
 
-1. Cloud 콘솔의 화면 상단에서 *Builds* 을 클릭합니다.
+1. Cloud 콘솔의 화면 상단에서 **Builds** 을 클릭합니다.
 
-1. 목록 상단의 새 빌드가 완료되면 *작업* ( ![Actions menu](../../images/icon-actions.png) ) &rarr; *배포 대상...*클릭합니다.
+1. 목록 상단의 새 빌드가 완료되면 **작업**( ![Actions menu](../../images/icon-actions.png) ) &rarr; **배포 대상...** 클릭합니다.
    
    ![먼저 핫픽스가 포함된 빌드를 UAT에 배포하세요.](./installing-a-hotfix/images/03.png)
 
@@ -56,7 +56,7 @@ Liferay Cloud는 변경 사항을 감지하고 배포할 수 있는 CI에 새 �
 
 1. 변경 사항의 영향을 확인하려면 배포 확인 아래의 확인란을 선택하세요.
 
-1. *빌드*배포를 클릭하세요.
+1. **빌드** 배포를 클릭하세요.
    
    UAT 환경의 서비스는 지연 후 핫픽스를 사용하여 다시 시작됩니다.
 

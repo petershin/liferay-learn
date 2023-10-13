@@ -7,7 +7,7 @@
 ## 신원 관리
 
 * [기본 사용자 관리](https://learn.liferay.com/w/dxp/users-and-permissions/users)
-* [SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml), OIDC 및 [LDAP](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)와 같은 [외부 IdM](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) 과 통합
+* [SAML](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) , OIDC 및 [LDAP](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) 와 같은 [외부 IdM](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso) 과 통합
 
 ## 액세스 제어
 

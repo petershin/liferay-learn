@@ -6,15 +6,15 @@
 
 ## 배포자 애플리케이션의 레이아웃에 관계 테이블 추가
 
-1. Distributor Application 개체를 편집하는 동안 *레이아웃* 탭으로 이동하여 레이아웃 편집을 시작합니다.
+1. Distributor Application 개체를 편집하는 동안 **레이아웃** 탭으로 이동하여 레이아웃 편집을 시작합니다.
 
-1. 정보 탭에서 레이아웃 이름을 *Layout with Relationship Table*로 바꿉니다.
+1. 정보 탭에서 레이아웃 이름을 **Layout with Relationship Table** 로 바꿉니다.
 
    ![레이아웃 이름을 관계 테이블이 있는 레이아웃으로 바꿉니다.](./adding-the-relationship-to-custom-layouts/images/01.png)
 
-1. *레이아웃* 탭으로 이동합니다.
+1. **레이아웃** 탭으로 이동합니다.
 
-1. *탭 추가*클릭하고 세부 정보를 입력한 후 *저장*클릭합니다.
+1. **탭 추가** 클릭하고 세부 정보를 입력한 후 **저장** 클릭합니다.
 
    | 분야           | 가치           |
    |:------------ |:------------ |
@@ -30,7 +30,7 @@
 
 ## 응용 프로그램 평가의 레이아웃 및 보기에 관계 필드 추가
 
-1. 이 연습 [에 대한 리소스를 다운로드하고 압축](./liferay-h2x9.zip)풉니다.
+1. 이 연습 [에 대한 리소스를 다운로드하고 압축](./liferay-h2x9.zip) 풉니다.
 
    ```bash
    curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-h2x9.zip -O
@@ -56,7 +56,7 @@
 
    ![새 레이아웃에 관계 필드가 포함되어 있는지 확인합니다.](./adding-the-relationship-to-custom-layouts/images/04.png)
 
-1. 조회수 *회* 탭으로 이동합니다.
+1. 조회수 **회** 탭으로 이동합니다.
 
 1. 애플리케이션 평가를 위한 새로운 기본 보기를 생성하려면 다음 스크립트를 실행하세요.
 

@@ -12,13 +12,13 @@
 
 양식 필드의 기본 스타일 및 기능을 변경하려면 [사용자 지정 양식 조각](../../../developer-guide/developing-page-fragments/creating-form-fragments.md) 을 필드 유형에 매핑하면 됩니다:
 
-1. *사이트 메뉴* ( ![Site Menu icon](../../../../images/icon-menu.png) )를 열고 *디자인* &rarr; *조각*을 클릭합니다.
+1. **사이트 메뉴**( ![Site Menu icon](../../../../images/icon-menu.png) )를 열고 **디자인** &rarr; **조각** 을 클릭합니다.
 
-1. 조각 애플리케이션에서 *옵션* ( ![Options Icon](../../../../images/icon-options.png) ) 애플리케이션 표시줄에서 &rarr; *구성*을 클릭합니다.
+1. 조각 애플리케이션에서 **옵션**( ![Options Icon](../../../../images/icon-options.png) ) 애플리케이션 표시줄에서 &rarr; **구성** 을 클릭합니다.
 
    ![조각의 구성 메뉴를 통해 조각을 필드에 매핑할 수 있습니다.](./personalizing-custom-forms-using-form-fragments/images/01.png)
 
-1. 필드 유형(왼쪽 열)에 적용할 *양식 조각* (오른쪽 열)을 선택합니다.
+1. 필드 유형(왼쪽 열)에 적용할 **양식 조각**(오른쪽 열)을 선택합니다.
 
    ![필드 유형에 사용자 지정 양식 조각을 적용합니다.](./personalizing-custom-forms-using-form-fragments/images/02.png)
 

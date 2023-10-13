@@ -16,11 +16,11 @@
 
 1. [처음으로 새 번들을 시작합니다.](../../installing-liferay/running-liferay-for-the-first-time.md). 설치 마법사가 나타납니다.
 
-1. 데이터베이스 섹션에서 _변경_ 클릭하고 Liferay 설치의 데이터베이스 설정을 입력합니다.
+1. 데이터베이스 섹션에서 **변경** 클릭하고 Liferay 설치의 데이터베이스 설정을 입력합니다.
 
    ![설정 마법사의 데이터베이스 섹션에 데이터베이스 설정을 입력합니다.](./upgrading-via-auto-upgrade/images/01.png)
 
-1. _구성 완료_ 클릭합니다. 데이터베이스 설정은 [Liferay 홈 폴더](../../reference/liferay-home.md)의 `Portal-setup-wizard.properties` 파일에 저장됩니다.
+1. **구성 완료** 클릭합니다. 데이터베이스 설정은 [Liferay 홈 폴더](../../reference/liferay-home.md)의 `Portal-setup-wizard.properties` 파일에 저장됩니다.
 
 1. 동일한 Liferay 홈 폴더에서 `Portal-ext.properties` 파일을 만듭니다. 구성 옵션은 이 [포털 속성](../../reference/portal-properties.md) 파일에서 설정됩니다.
 
@@ -30,7 +30,7 @@
 
 1. (선택 사항) `업그레이드.log.context.enabled=true` 설정하여 [업그레이드 로그 컨텍스트](../reference/upgrade-log-context.md)활성화합니다.
 
-1. 속성 파일을 저장하고 [Liferay를 다시 시작](../../installing-liferay/running-liferay-for-the-first-time.md#restart-the-server)합니다.
+1. 속성 파일을 저장하고 [Liferay를 다시 시작](../../installing-liferay/running-liferay-for-the-first-time.md#restart-the-server) 합니다.
 
 1. Liferay가 다시 시작되면 데이터베이스가 자동으로 업데이트되고 콘솔 로그에 진행 상황이 표시됩니다. 업그레이드 보고를 활성화한 경우 보고서는 완료 후 `Liferay_Home/reports` 폴더에 있습니다.
 

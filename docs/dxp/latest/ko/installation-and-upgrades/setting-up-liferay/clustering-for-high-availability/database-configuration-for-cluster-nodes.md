@@ -1,6 +1,6 @@
 # 클러스터 노드에 대한 데이터베이스 구성
 
-최소한 DXP 클러스터의 노드는 [동일한 데이터베이스를 공유하도록 구성](./example-creating-a-simple-dxp-cluster.md#configure-cluster-link-and-the-other-server-connections)되어야 합니다. )(또는 데이터베이스 클러스터)이 작동해야 합니다. 여기에서 논의된 최적화는 DXP 클러스터의 데이터베이스 성능을 더욱 향상시킬 수 있으며 DXP 사용 및 예상 트랜잭션 볼륨을 고려하여 고려해야 합니다.
+최소한 DXP 클러스터의 노드는 [동일한 데이터베이스를 공유하도록 구성](./example-creating-a-simple-dxp-cluster.md#configure-cluster-link-and-the-other-server-connections) 되어야 합니다. )(또는 데이터베이스 클러스터)이 작동해야 합니다. 여기에서 논의된 최적화는 DXP 클러스터의 데이터베이스 성능을 더욱 향상시킬 수 있으며 DXP 사용 및 예상 트랜잭션 볼륨을 고려하여 고려해야 합니다.
 
 ```{warning}
 클러스터링은 내장된 HSQL 데이터베이스에서는 작동하지 않습니다.
@@ -36,7 +36,7 @@
     Liferay는 HikariCP를 연결 풀 공급자로 사용합니다.
     ```
 
-    For example JDBC connection values, please see [Database Templates](../../reference/database-templates.md).
+    For example JDBC connection values, please see [데이터베이스 템플릿](../../reference/database-templates.md) .
 
 1. 읽기 및 쓰기 풀 시간 초과 및 크기 설정 구성 
 
@@ -72,7 +72,7 @@
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring)을 참조하세요.
+자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 을 참조하세요.
 
 ### JNDI
 
@@ -110,7 +110,7 @@ JNDI를 사용하여 앱 서버의 읽기 및 쓰기 데이터 소스에 연결�
     jdbc.write.registerMbeans=true
     ```
 
-1. **(이 단계는 DXP 7.4 U69 이하에만 필요합니다.)** 쓰기 데이터 소스(접두사가 ``인 데이터 소스)를 사용하여 [카운터](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) 데이터 소스를 생성하도록 DXP를 구성합니다. 별도의 데이터 소스는 항상 카운터 전용입니다. 
+1. (**이 단계는 DXP 7.4 U69 이하에만 필요합니다.**) 쓰기 데이터 소스(접두사가 ``인 데이터 소스)를 사용하여 [카운터](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) 데이터 소스를 생성하도록 DXP를 구성합니다. 별도의 데이터 소스는 항상 카운터 전용입니다. 
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -118,7 +118,7 @@ JNDI를 사용하여 앱 서버의 읽기 및 쓰기 데이터 소스에 연결�
 
 1. 선택적으로 데이터 연결의 유효성을 검사하여 잘못된 연결이 정상적으로 처리되는지 확인합니다.
 
-1. **(이 단계는 DXP 7.4 U65 이하 또는 DXP 7.3 U22 이하에만 필요합니다.)** 기본 [`spring.infrastructure.configs` 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) `Portal-ext에 복사하여 읽기 기록기 데이터베이스 구성을 활성화합니다. Properties` 파일에 다음 Spring 구성 파일 경로를 추가합니다.
+1. (**이 단계는 DXP 7.4 U65 이하 또는 DXP 7.3 U22 이하에만 필요합니다.**) 기본 [`spring.infrastructure.configs` 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) `Portal-ext에 복사하여 읽기 기록기 데이터베이스 구성을 활성화합니다. Properties` 파일에 다음 Spring 구성 파일 경로를 추가합니다.
    
    `spring.infrastructure.configs`에 추가: 
 
@@ -126,14 +126,14 @@ JNDI를 사용하여 앱 서버의 읽기 및 쓰기 데이터 소스에 연결�
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring)을 참조하세요.
+자세한 내용은 [Spring 구성 포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 을 참조하세요.
 
 DXP는 다음에 시작할 때 읽기 데이터 소스, 쓰기 데이터 소스 및 카운터 데이터 소스를 사용합니다.
 
 ## 데이터베이스 복제
 
-데이터베이스 클러스터를 사용하면 내결함성과 DXP 성능이 향상됩니다. 데이터베이스 클러스터 인스턴스는 동기화 상태를 유지해야 합니다. 복제는 한 데이터베이스 인스턴스에서 다른 데이터베이스 인스턴스로 변경된 데이터와 변경된 스키마를 복사하는 프로세스입니다. 지원되는 데이터베이스 [모두](https://help.liferay.com/hc/en-us/articles/360049238151) 복제를 지원합니다. 데이터베이스 클러스터를 사용하는 경우 데이터베이스 공급업체의 지침에 따라 복제용 데이터베이스를 설정하세요.
+데이터베이스 클러스터를 사용하면 내결함성과 DXP 성능이 향상됩니다. 데이터베이스 클러스터 인스턴스는 동기화 상태를 유지해야 합니다. 복제는 한 데이터베이스 인스턴스에서 다른 데이터베이스 인스턴스로 변경된 데이터와 변경된 스키마를 복사하는 프로세스입니다. 지원되는 데이터베이스 [모두](https://help.liferay.com/hc/ko/articles/360049238151) 복제를 지원합니다. 데이터베이스 클러스터를 사용하는 경우 데이터베이스 공급업체의 지침에 따라 복제용 데이터베이스를 설정하세요.
 
 ## 다음
 
-이제 클러스터에 대한 데이터베이스를 구성했으므로 계속해서 DXP 클러스터링 요구 사항 [DXP 클러스터링 요구 사항](../clustering-for-high-availability.md#clustering-requirements)해결할 수 있습니다. 다음 요구 사항은 모든 노드에서 [파일 저장소](../../../system-administration/file-storage.md) 에 액세스할 수 있도록 하고 해당 파일 저장소로 각 노드를 구성하는 것입니다.
+이제 클러스터에 대한 데이터베이스를 구성했으므로 계속해서 DXP 클러스터링 요구 사항 [DXP 클러스터링 요구 사항](../clustering-for-high-availability.md#clustering-requirements) 해결할 수 있습니다. 다음 요구 사항은 모든 노드에서 [파일 저장소](../../../system-administration/file-storage.md) 에 액세스할 수 있도록 하고 해당 파일 저장소로 각 노드를 구성하는 것입니다.

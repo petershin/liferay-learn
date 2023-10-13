@@ -13,7 +13,7 @@
 
 ## 배포자 응용 프로그램 개체 추가
 
-1. *전역 메뉴* ( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 *제어판* 탭으로 이동한 다음 *개체*클릭합니다.
+1. **전역 메뉴**( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 **제어판** 탭으로 이동한 다음 **개체** 클릭합니다.
 
 1. ** 추가( ![Add Button](../../images/icon-add.png) )를 클릭합니다.
 
@@ -28,7 +28,7 @@
 
    ![레이블, 복수형 레이블, 개체 이름, 저장소 유형을 입력합니다.](./determining-data-entities/images/02.png)
 
-1. *저장*클릭하세요.
+1. **저장** 클릭하세요.
 
    그러면 다음 시스템 필드를 사용하여 초안 객체 정의가 생성됩니다.
 
@@ -51,11 +51,11 @@
 
 1. 정의의 ERC(외부 참조 코드)를 변경합니다. 일관되고 사람이 읽을 수 있는 ERC는 인스턴스 간에 객체 정의를 이동하고 API를 통해 참조하는 데 도움이 될 수 있습니다.
 
-   * *편집* (![Edit Button](../../images/icon-edit.png))을 클릭합니다.
+   * **편집**(![Edit Button](../../images/icon-edit.png))을 클릭합니다.
    * UUID를 `C_DISTRIBUTOR_APPLICATION`로 바꿉니다.
-   * *저장*클릭하세요.
+   * **저장** 클릭하세요.
 
-   ![정의의 ERC를 C_DISTRIBUTOR_APPLICATION으로 업데이트합니다.](./determining-data-entities/images/04.png)
+   ![정의의 ERC를 C **DISTRIBUTOR** APPLICATION으로 업데이트합니다.](./determining-data-entities/images/04.png)
 
 1. 세부 정보 탭에서 다음 설정을 구성합니다.
 
@@ -73,15 +73,15 @@
 
    이는 인스턴스별로 데이터를 저장하고 해당 패널 범주 키(예: 제어판 &rarr; 개체)에 따라 전역 메뉴( ![Global Menu](../../images/icon-applications-menu.png) )에 표시되도록 배포자 응용 프로그램을 구성합니다. 또한 사용자는 사이트 페이지에 개체를 위젯으로 추가하고 배포자 응용 프로그램 항목에 태그와 범주를 할당할 수 있습니다.
 
-1. *저장*클릭하세요.
+1. **저장** 클릭하세요.
 
 ## 사용자 정의 필드 추가
 
 객체 정의를 게시하려면 먼저 하나 이상의 필드가 있어야 합니다.
 
-1. *필드* 탭으로 이동합니다.
+1. **필드** 탭으로 이동합니다.
 
-1. *추가* ( ![Add Button](../../images/icon-add.png) )을 클릭합니다.
+1. **추가**( ![Add Button](../../images/icon-add.png) )을 클릭합니다.
 
 1. 다음 값을 입력하세요.
 
@@ -95,7 +95,7 @@
 
    ![필드에 다음 값을 추가합니다.](./determining-data-entities/images/05.png)
 
-1. *저장*클릭하세요.
+1. **저장** 클릭하세요.
 
    새 필드는 `Custom` 배지와 함께 필드 탭에 나타납니다.
 
@@ -103,11 +103,11 @@
 
 ## 배포자 애플리케이션 개체 게시
 
-사용자 정의 개체를 게시하면 Liferay는 데이터 항목을 저장하기 위한 데이터베이스 테이블을 만듭니다. 게시는 또한 객체를 OSGi 프레임워크에 등록하고 이를 [Liferay의 핵심 기능](https://learn.liferay.com/w/dxp/building-applications/objects/understanding-object-integrations)(예: 권한, 워크플로, 헤드리스)이며 기본 사용자 인터페이스를 제공합니다.
+사용자 정의 개체를 게시하면 Liferay는 데이터 항목을 저장하기 위한 데이터베이스 테이블을 만듭니다. 게시는 또한 객체를 OSGi 프레임워크에 등록하고 이를 [Liferay의 핵심 기능](https://learn.liferay.com/w/dxp/building-applications/objects/understanding-object-integrations) (예: 권한, 워크플로, 헤드리스)이며 기본 사용자 인터페이스를 제공합니다.
 
 1. 개체의 세부정보 탭으로 이동합니다.
 
-1. *게시*클릭하세요.
+1. **게시** 클릭하세요.
    
    ![세부정보 탭에서 게시를 클릭합니다.](./determining-data-entities/images/07.png)
 
@@ -117,13 +117,13 @@
 
 이제 배포자 애플리케이션이 게시되었으므로 사용을 시작할 수 있습니다.
 
-1. *전역 메뉴* ( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 *제어판* 탭으로 이동한 다음 *Distributor Application*클릭합니다.
+1. **전역 메뉴**( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 **제어판** 탭으로 이동한 다음 **Distributor Application** 클릭합니다.
    
    ![제어판 > 개체 아래의 글로벌 메뉴에서 애플리케이션에 액세스합니다.](./determining-data-entities/images/08.png)
 
 1. ** 추가( ![Add Button](../../images/icon-add.png) )를 클릭합니다.
 
-1. 지원자 이름을 입력하고 *저장*클릭하세요.
+1. 지원자 이름을 입력하고 **저장** 클릭하세요.
 
 1. 성공적으로 항목이 생성되었는지 확인하려면 배포자 애플리케이션 페이지로 돌아갑니다.
    
@@ -131,11 +131,11 @@
    
    ![배포자 애플리케이션의 애플리케이션 페이지는 기본 테이블 보기를 사용합니다.](./determining-data-entities/images/09.png)
 
-1. 항목에 대해 *작업* (![Actions Button](../../images/icon-actions.png))을 클릭하고 *삭제*선택합니다.
+1. 항목에 대해 **작업**(![Actions Button](../../images/icon-actions.png))을 클릭하고 **삭제** 선택합니다.
 
 1. 계속 진행하기 전에 항목 생성, 업데이트 및 제거를 연습하세요.
 
-게시하는 동안 배포자 애플리케이션용으로 생성된 REST API를 사용하여 항목을 생성, 편집, 쿼리 및 제거할 수도 있습니다. 이러한 API는 `c/distributorapplications` 경로에서 사용할 수 있습니다. 사용 가능한 API의 전체 목록은 [헤드리스 프레임워크 통합](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/headless-framework-integration)을, 소개 튜토리얼은 [사용자 지정 객체 API 기본 사항](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics)을 참조하세요.
+게시하는 동안 배포자 애플리케이션용으로 생성된 REST API를 사용하여 항목을 생성, 편집, 쿼리 및 제거할 수도 있습니다. 이러한 API는 `c/distributorapplications` 경로에서 사용할 수 있습니다. 사용 가능한 API의 전체 목록은 [헤드리스 프레임워크 통합](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/headless-framework-integration) 을, 소개 튜토리얼은 [사용자 지정 객체 API 기본 사항](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics) 을 참조하세요.
 
 ![Liferay는 배포자 애플리케이션용 REST API를 생성합니다.](./determining-data-entities/images/10.png)
 

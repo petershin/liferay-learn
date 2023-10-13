@@ -50,7 +50,7 @@
    }
    ```
 
-1. *글로벌 메뉴로 이동합니다.* &rarr; *제어판* &rarr; *사용자 및 조직*. *조직* 탭을 클릭합니다. 새 조직이 추가되었는지 확인하세요.
+1. **글로벌 메뉴로 이동합니다.** &rarr; **제어판** &rarr; **사용자 및 조직** . **조직** 탭을 클릭합니다. 새 조직이 추가되었는지 확인하세요.
 
    ![새 조직이 추가되었는지 확인하세요.](./organizations-api-basics/images/01.png)
 
@@ -126,7 +126,7 @@
 
 다음 cURL 또는 Java 명령을 실행하여 조직을 나열할 수 있습니다.
 
-### 조직_GET_FromInstance.sh
+### Organizations_GET_FromInstance.sh
 
 명령:
 
@@ -140,7 +140,7 @@
    :language: bash
 ```
 
-### 조직_GET_FromInstance.java
+### Organizations_GET_FromInstance.sh
 
 명령:
 

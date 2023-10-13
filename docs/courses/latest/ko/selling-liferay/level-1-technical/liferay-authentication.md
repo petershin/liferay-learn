@@ -14,8 +14,8 @@ toc:
 * Liferay 인증은 독립형 및 독립형 고객 애플리케이션에 충분합니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf) 을 다운로드하세요.
 ```
 
 ## 배경

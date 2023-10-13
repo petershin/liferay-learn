@@ -1,6 +1,6 @@
 # 기본 위젯 참조
 
-Liferay는 다양한 위젯을 기본으로 제공하므로 솔루션 구축을 바로 시작할 수 있습니다. 위젯은 콘텐츠 페이지, 위젯 페이지 및 페이지 템플릿에 배치할 수 있습니다. 콘텐츠 페이지에서 사용 가능한 위젯을 보려면 페이지 편집을 시작하고 편집 사이드바 메뉴에서 *조각 및 위젯* (![Fragments and Widgets](../../../../images/icon-plus.png))을 선택한 다음 *위젯* 탭을 선택합니다. 위젯 페이지에서 사용 가능한 위젯을 보려면 *추가* (![add](../../../../images/icon-plus.png))를 클릭하세요.
+Liferay는 다양한 위젯을 기본으로 제공하므로 솔루션 구축을 바로 시작할 수 있습니다. 위젯은 콘텐츠 페이지, 위젯 페이지 및 페이지 템플릿에 배치할 수 있습니다. 콘텐츠 페이지에서 사용 가능한 위젯을 보려면 페이지 편집을 시작하고 편집 사이드바 메뉴에서 **조각 및 위젯**(![Fragments and Widgets](../../../../images/icon-plus.png))을 선택한 다음 **위젯** 탭을 선택합니다. 위젯 페이지에서 사용 가능한 위젯을 보려면 **추가**(![add](../../../../images/icon-plus.png))를 클릭하세요.
 
 위젯은 이러한 섹션으로 구성되어 있습니다:
 
@@ -99,8 +99,8 @@ Liferay는 다양한 위젯을 기본으로 제공하므로 솔루션 구축을 
 
 | 위젯         | 묘사                                                                                                                                                                                        |
 |:---------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 알림         | 빨간색 *중요* 태그와 함께 우선순위가 높은 정보를 표시하는 [알림 위젯(](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) )을 추가합니다. |
-| 공지         | 빨간색 *중요* 태그 없이 정보를 표시하는 [공지사항 위젯(](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) )을 추가합니다.         |
+| 알림         | 빨간색 **중요** 태그와 함께 우선순위가 높은 정보를 표시하는 [알림 위젯(](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) )을 추가합니다. |
+| 공지         | 빨간색 **중요** 태그 없이 정보를 표시하는 [공지사항 위젯(](../../../../collaboration-and-social/alerts-and-announcements/sending-alerts-and-announcements.md#creating-alerts-and-announcements) )을 추가합니다.         |
 | 내용을 선정하십시요 | 가장 최근에 생성된 에셋을 나열하는 최근 콘텐츠 위젯을 추가합니다.                                                                                                                                                     |
 | RSS 게시자    | RSS 피드의 글을 나열하는 RSS 게시자 위젯을 추가합니다.                                                                                                                                                        |
 

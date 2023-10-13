@@ -28,9 +28,9 @@ toc:
 ![Liferay 제품 라인에는 세 가지 기능 세트가 있습니다.](./liferay-product-offering/images/01.png)
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf)을 다운로드하세요.
-* 이 모듈에 언급된 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) 을 다운로드하세요.
+* 이 모듈에 언급된 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) 을 다운로드하세요.
 ```
 
 ## 모든 배포 접근 방식 지원

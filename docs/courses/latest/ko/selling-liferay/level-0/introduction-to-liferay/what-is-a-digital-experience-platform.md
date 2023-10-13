@@ -17,8 +17,8 @@ Liferay는 DXP를 다음과 같이 정의합니다.
 ![디지털 경험 플랫폼은 외부 및 내부 디지털 경험에 필요한 모든 도구를 제공합니다.](./what-is-a-digital-experience-platform/images/01.png)
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-1-introduction-to-liferay) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-1-introduction-to-liferay-pdf) 을 다운로드하세요.
 ```
 
 ## Liferay 포털 헤리티지

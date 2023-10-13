@@ -31,8 +31,8 @@ toc:
 * 효과적인 케이던스 학습
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-3-outbound-prospecting-101-for-liferay-opportunities)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-3-outbound-prospecting-101-for-liferay-opportunities-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-3-outbound-prospecting-101-for-liferay-opportunities) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-3-outbound-prospecting-101-for-liferay-opportunities-pdf) 을 다운로드하세요.
 ```
 
 ## (아웃바운드) 탐사의 목적
@@ -49,13 +49,13 @@ toc:
 
 ### 우리는 왜 탐사를 하는가?
 
-[Hubspot](https://blog.hubspot.com/sales/effective-sales-prospecting-techniques-you-should-be-using#:~:text=Prospecting%20isn%27t%20easy%20%E2%80%94%20more,conversations%20and%20better%20win%20rates)이 수행한 최근 연구에 따르면 영업사원의 40% 이상이 영업 프로세스에서 잠재 고객 발굴이 가장 어려운 부분이라고 생각합니다. 따라서 자연스러운 질문은 "왜 우리가 이 일을 하는가?"입니다.
+[Hubspot](https://blog.hubspot.com/sales/effective-sales-prospecting-techniques-you-should-be-using#:~:text=Prospecting%20isn%27t%20easy%20%E2%80%94%20more,conversations%20and%20better%20win%20rates) 이 수행한 최근 연구에 따르면 영업사원의 40% 이상이 영업 프로세스에서 잠재 고객 발굴이 가장 어려운 부분이라고 생각합니다. 따라서 자연스러운 질문은 "왜 우리가 이 일을 하는가?"입니다.
 
 어렵다고 해서 불가능하다는 뜻은 아니라는 점을 강조하는 것이 중요합니다. 아웃바운드는 거의 모든 SaaS 및 기술 회사에서 잠재 고객을 판매 주기에 소개하고 유료 고객으로 전환하기 위해 사용됩니다.
 
 아웃바운드 잠재고객 발굴이 전문적으로 고품질로 이루어지면 긍정적인 방식으로 브랜드 인지도를 높이는 중요한 도구입니다. 이는 더 많은 마케팅 리드 생성으로 이어집니다. 아웃바운드는 인바운드 마케팅을 지원하며 그 반대의 경우도 마찬가지입니다.
 
-잠재 고객이 즉시 _예_ 이라고 대답하지 않더라도 이러한 잠재 고객 중 일부는 결국 Liferay 웹 사이트를 탐색하게 되고 이를 통해 유기적인 트래픽이 증가할 가능성이 높습니다. 또한 그다지 인기가 없는 것으로 간주되는 일부 잠재 고객은 다양한 마케팅 중심의 리타겟팅 캠페인에 추가될 수 있습니다.
+잠재 고객이 즉시 **예** 이라고 대답하지 않더라도 이러한 잠재 고객 중 일부는 결국 Liferay 웹 사이트를 탐색하게 되고 이를 통해 유기적인 트래픽이 증가할 가능성이 높습니다. 또한 그다지 인기가 없는 것으로 간주되는 일부 잠재 고객은 다양한 마케팅 중심의 리타겟팅 캠페인에 추가될 수 있습니다.
 
 잠재 고객 발굴이 잘 이루어지면 Liferay 제품을 찾고 있지 않았던 잠재 고객과 이상적인 잠재 고객을 향후 Liferay 제품을 고려할 수 있는 관련 연락처로 전환하는 데 성공합니다.
 

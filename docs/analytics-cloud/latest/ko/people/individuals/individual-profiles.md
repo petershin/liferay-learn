@@ -30,7 +30,7 @@
 
 활동 스트림은 세션별로 구분된 과거 활동을 표시합니다. 각 세션은 타임스탬프 왼쪽에 파란색 점으로 표시됩니다. 세션을 클릭하면 세션의 세부 정보(예: 디바이스 및 브라우저 정보)를 볼 수 있습니다.
 
-각 세션에는 [기본 이벤트](../../workspace-data/definitions/definitions-for-events.md#default-events) 및 [사용자 지정 이벤트](../../workspace-data/definitions/definitions-for-events.md#custom-events)를 모두 포함하여 Analytics Cloud에서 추적하는 [개별 이벤트](../../touchpoints/events.md) 가 나열됩니다. 이벤트를 클릭하면 이벤트의 세부 정보(예: 페이지 타일 및 URL)를 볼 수 있습니다.
+각 세션에는 [기본 이벤트](../../workspace-data/definitions/definitions-for-events.md#default-events) 및 [사용자 지정 이벤트](../../workspace-data/definitions/definitions-for-events.md#custom-events) 를 모두 포함하여 Analytics Cloud에서 추적하는 [개별 이벤트](../../touchpoints/events.md) 가 나열됩니다. 이벤트를 클릭하면 이벤트의 세부 정보(예: 페이지 타일 및 URL)를 볼 수 있습니다.
 
 ![활동 스트림에서 이벤트를 확인합니다.](individual-profiles/images/02.png)
 

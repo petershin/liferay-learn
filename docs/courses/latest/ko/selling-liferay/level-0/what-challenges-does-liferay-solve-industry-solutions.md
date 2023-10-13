@@ -28,8 +28,8 @@ toc:
 이것이 가장 일반적인 산업이지만 Liferay의 강점 중 하나는 거의 모든 산업에서 사용될 수 있고 사용되어 왔다는 것입니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-5b-what-challenges-do-we-solve-industry-solutions)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-5b-what-challenges-do-we-solve-industry-solutions) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-5b-what-challenges-do-we-solve-industry-solutions-pdf) 을 다운로드하세요.
 ```
 
 ## 산업 솔루션

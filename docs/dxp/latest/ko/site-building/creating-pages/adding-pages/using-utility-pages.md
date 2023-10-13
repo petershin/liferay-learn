@@ -12,11 +12,11 @@ Liferay는 쉽게 사용자 정의할 수 있는 기본 유틸리티 페이지 [
 
 유틸리티 페이지를 편집, 미리보기 또는 복사할 수 있습니다.
 
-1. *제품 메뉴* ( ![Product Menu icon](../../../images/icon-product-menu.png) )을 열고 *사이트 빌더* &rarr; *페이지* &rarr; *유틸리티 페이지* 탭으로 이동합니다.
+1. **제품 메뉴**( ![Product Menu icon](../../../images/icon-product-menu.png) )을 열고 **사이트 빌더** &rarr; **페이지** &rarr; **유틸리티 페이지** 탭으로 이동합니다.
 
     기본 페이지에는 `PROVIDED BY LIFERAY` 태그가 표시되어 있습니다.
 
-1. 페이지를 선택하고 *작업* ( ![Actions Icon](../../../images/icon-actions.png) )을 클릭하여 사용 가능한 옵션 중 하나를 보고 선택합니다(예: *편집*, *미리보기*또는 *복사본 만들기*).
+1. 페이지를 선택하고 **작업**( ![Actions Icon](../../../images/icon-actions.png) )을 클릭하여 사용 가능한 옵션 중 하나를 보고 선택합니다(예: **편집** , **미리보기** 또는 **복사본 만들기**).
 
 ```{tip}
 [콘텐츠 페이지](../using-content-pages/adding-elements-to-content-pages.md)를 편집하는 것과 동일한 방식으로 유틸리티 페이지를 편집합니다.
@@ -28,15 +28,15 @@ Liferay는 쉽게 사용자 정의할 수 있는 기본 유틸리티 페이지 [
 
 새 유틸리티 페이지를 만들려면 다음 단계를 따르세요.
 
-1. *제품 메뉴* ( ![Product Menu icon](../../../images/icon-product-menu.png) )을 열고 *사이트 빌더* &rarr; *페이지* &rarr; *유틸리티 페이지* 탭으로 이동합니다.
+1. **제품 메뉴**( ![Product Menu icon](../../../images/icon-product-menu.png) )을 열고 **사이트 빌더** &rarr; **페이지** &rarr; **유틸리티 페이지** 탭으로 이동합니다.
 
-1. *선택하고* ( ![Actions Menu](../../../images/icon-add.png) )을 추가합니다.
+1. **선택하고**( ![Actions Menu](../../../images/icon-add.png) )을 추가합니다.
 
 1. 생성하려는 유틸리티 페이지 유형을 선택합니다.
 
-1. 빈 콘텐츠 페이지의 경우 *공백* 선택하거나 사용 가능한 마스터 페이지 템플릿을 선택합니다.
+1. 빈 콘텐츠 페이지의 경우 **공백** 선택하거나 사용 가능한 마스터 페이지 템플릿을 선택합니다.
 
-1. 유틸리티 페이지의 이름을 지정하고 *저장*클릭합니다.
+1. 유틸리티 페이지의 이름을 지정하고 **저장** 클릭합니다.
 
 [콘텐츠 페이지](../using-content-pages/adding-elements-to-content-pages.md)을 편집하는 것과 동일한 방식으로 새로 생성된 유틸리티 페이지를 편집할 수 있습니다.
 
@@ -44,11 +44,11 @@ Liferay는 쉽게 사용자 정의할 수 있는 기본 유틸리티 페이지 [
 
 새 유틸리티 페이지를 기본값으로 선택하려면 다음 단계를 따르십시오.
 
-1. *제품 메뉴* ( ![Product Menu icon](../../../images/icon-product-menu.png) )을 열고 *사이트 빌더* &rarr; *페이지* &rarr; *유틸리티 페이지* 탭으로 이동합니다.
+1. **제품 메뉴**( ![Product Menu icon](../../../images/icon-product-menu.png) )을 열고 **사이트 빌더** &rarr; **페이지** &rarr; **유틸리티 페이지** 탭으로 이동합니다.
 
 1. 유틸리티 페이지에 대한 작업 메뉴( ![Actions Menu](../../../images/icon-actions.png) )를 선택합니다.
 
-1. *기본값으로 표시*선택합니다.
+1. **기본값으로 표시** 선택합니다.
 
 ![작업 메뉴에서 유틸리티 페이지를 기본 페이지로 선택합니다.](./using-utility-pages/images/03.png)
 

@@ -7,8 +7,8 @@
 * 추가 산업 및 수평적 솔루션 데크가 곧 출시될 예정입니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them)을 확인하세요.
-* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf)을 다운로드하세요. 작업장.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) 을 확인하세요.
+* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) 을 다운로드하세요. 작업장.
 ```
 
 ## 시나리오 2: 위젯 제조업체
@@ -67,8 +67,8 @@
 * 금융 서비스
   * 베이스 데크
 
-Liferay 직원의 경우 모든 자료는 [Alexandria](https://sales.liferay.com)의 Sales Decks 섹션에서 사용할 수 있습니다.
+Liferay 직원의 경우 모든 자료는 [Alexandria](https://sales.liferay.com) 의 Sales Decks 섹션에서 사용할 수 있습니다.
 
-파트너의 경우 모든 슬라이드 팩이 [Partner Portal](https://partner.liferay.com)에서 제공됩니다.
+파트너의 경우 모든 슬라이드 팩이 [Partner Portal](https://partner.liferay.com) 에서 제공됩니다.
 
 다음 모듈에서는 영업 [경로 및 기회 진행 모범 사례](../sales-funnel-opportunity-progress.md)에 대해 알아봅니다.

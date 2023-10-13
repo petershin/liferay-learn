@@ -5,7 +5,7 @@ Liferay Cloud 계정이 프로비저닝된 후 첫 번째 작업은 관리자로
 저장소를 설정하고 첫 번째 푸시를 완료하여 작동하는지 확인하세요.
 
 ```{note}
-이 과정을 계속하려면 [CLI 도구가 설치되어 있어야 합니다](../setting-up-your-cloud-project/using-the-cli-tool.md#install-the-cli-tool).
+이 과정을 계속하려면 [CLI 도구가 설치되어 있어야 합니다](../setting-up-your-cloud-project/using-the-cli-tool.md#install-the-cli-tool) .
 ```
 
 ## GitHub 리포지토리 포크 및 복제
@@ -26,7 +26,7 @@ Liferay Cloud 계정이 프로비저닝된 후 첫 번째 작업은 관리자로
 
 1. [로컬 시스템에서 생성한](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) 를 복제합니다.
 
-1. Git이 설치된 명령 프롬프트에서 포크를 (업스트림) [원격 저장소](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork)로 추가합니다.
+1. Git이 설치된 명령 프롬프트에서 포크를 (업스트림) [원격 저장소](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork) 로 추가합니다.
 
 이제 Liferay Cloud 프로젝트 구조를 로컬 및 GitHub에서 소유한 포크된 저장소가 생겼습니다.
 
@@ -34,29 +34,29 @@ Liferay Cloud 계정이 프로비저닝된 후 첫 번째 작업은 관리자로
 
 다음으로 Liferay Cloud가 저장소에 액세스할 수 있도록 웹후크를 구성합니다.
 
-1. GitHub 웹사이트에서 저장소의 설정 페이지로 이동하여 *Webhooks*클릭하세요.
+1. GitHub 웹사이트에서 저장소의 설정 페이지로 이동하여 **Webhooks** 클릭하세요.
 
    ![GitHub 저장소의 설정 페이지를 통해 웹후크를 구성하세요.](./setting-up-the-github-repository/images/02.png)
 
-1. *웹훅 추가*클릭하세요.
+1. **웹훅 추가** 클릭하세요.
 
-1. *페이로드 URL* 필드에 라이프레이 클라우드 `인프라` 환경의 CI 서비스 도메인을 마지막에 `github-webhook/`로 추가합니다(예: `delectablebonsai` 프로젝트의 경우 `https://ci-delectablebonsai-infra.lfr.cloud/github-webhook/`).
+1. **페이로드 URL** 필드에 라이프레이 클라우드 `인프라` 환경의 CI 서비스 도메인을 마지막에 `github-webhook/`로 추가합니다(예: `delectablebonsai` 프로젝트의 경우 `https://ci-delectablebonsai-infra.lfr.cloud/github-webhook/`).
 
-1. *콘텐츠 유형* 드롭다운 메뉴에서 *application/json*선택합니다.
+1. **콘텐츠 유형** 드롭다운 메뉴에서 **application/json** 선택합니다.
 
-1. *SSL 확인 활성화* 선택되어 있는지 확인하십시오.
+1. **SSL 확인 활성화** 선택되어 있는지 확인하십시오.
 
    ![새 웹후크에 대한 양식을 작성하고 이를 트리거하는 이벤트를 선택하여 완료합니다.](./setting-up-the-github-repository/images/03.png)
 
-1. *미만 이 웹훅을 트리거할 이벤트는 무엇입니까?*, 선택 *개별 이벤트를 선택하겠습니다*.
+1. **미만 이 웹훅을 트리거할 이벤트는 무엇입니까?** , 선택 **개별 이벤트를 선택하겠습니다** .
 
-1. 나타나는 이벤트 목록에서 *Pushes* 및 *Pull Requests* 선택합니다.
+1. 나타나는 이벤트 목록에서 **Pushes** 및 **Pull Requests** 선택합니다.
 
    ![Liferay Cloud 프로젝트에서 빌드를 트리거하도록 푸시 및 풀 요청을 선택하세요.](./setting-up-the-github-repository/images/04.png)
 
-1. *활성* 확인란이 선택되어 있는지 확인하세요.
+1. **활성** 확인란이 선택되어 있는지 확인하세요.
 
-1. *웹훅 추가*클릭하세요.
+1. **웹훅 추가** 클릭하세요.
 
 이제 Liferay Cloud가 저장소에 액세스할 수 있습니다.
 
@@ -66,20 +66,20 @@ Liferay Cloud 계정이 프로비저닝된 후 첫 번째 작업은 관리자로
 
 1. Liferay Cloud 콘솔에 로그인합니다.
 
-1. `infra` 환경으로 이동하여 *Services*을 클릭합니다.
+1. `infra` 환경으로 이동하여 **Services** 을 클릭합니다.
 
 1. CI 서비스를 선택합니다.
 
 1. 환경 변수 탭에서 다음 환경 변수의 값을 추가합니다.
 
-    | **이름**                        | **가치**       |
+    | **이름** | **가치** |
     |:----------------------------- |:------------ |
     | `LCP_CI_SCM_PROVIDER`         | `github`     |
     | `LCP_CI_SCM_REPOSITORY_NAME`  | [저장소 이름]     |
     | `LCP_CI_SCM_REPOSITORY_OWNER` | [저장소 소유자 계정] |
     | `LCP_CI_SCM_TOKEN`            | [개인 액세스 토큰]  |
 
-    *repo* 및 *admin:repo_hook* 카테고리에서 모든 권한이 확인된 [개인 액세스 토큰](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) 사용하십시오.
+    **repo** 및 **admin:repo_hook** 카테고리에서 모든 권한이 확인된 [개인 액세스 토큰](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) 사용하십시오.
 
 CI 서비스가 다시 시작되면 개인 저장소에 대한 푸시 또는 풀 요청이 Liferay Cloud 프로젝트에서 새 빌드를 트리거합니다.
 

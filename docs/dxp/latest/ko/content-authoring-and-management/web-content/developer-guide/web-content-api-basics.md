@@ -552,7 +552,7 @@ java -classpath .:* -DstructuredContentId=1234 StructuredContent_DELETE_ById
 | `StructuredContent_POST_ToStructuredContentFolder.[java\|sh]` | 웹 콘텐츠 기사를 폴더에 게시합니다.     |
 
 ```{important}
-REST API를 사용하여 웹 콘텐츠 폴더를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle- bin/recycle-bin-overview.md).
+REST API를 사용하여 웹 콘텐츠 폴더를 삭제하면 [Liferay DXP 휴지통](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md).
 ```
 
 ## 관련 정보

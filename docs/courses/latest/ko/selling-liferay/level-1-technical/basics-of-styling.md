@@ -29,13 +29,13 @@ toc:
 이는 개발 작업을 수행하지 않고도 데모 스타일을 가장 빠르게 사용자 정의하기 위해 수행할 수 있는 작업이지만 Liferay가 스타일링을 위해 제공하는 유일한 기능은 아닙니다. 이후 모듈에서는 이러한 기능과 고급 기능을 자세히 다룰 것입니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) 을 다운로드하세요.
 ```
 
 ## 스타일 북이란 무엇입니까?
 
-간단히 말해서, 스타일 북은 페이지 전반에 걸쳐 일관된 시각적 경험 **** 제공하기 위해 사이트 **에 적용되는 시각적 규칙 **** 집합**.
+간단히 말해서, 스타일 북은 페이지 전반에 걸쳐 일관된 시각적 경험 ****제공하기 위해 사이트** 에 적용되는 시각적 규칙 ****집합** .
 
 이것이 기본적으로 의미하는 바는 Liferay가 스타일 북이라는 단일 기능에서 색상, 글꼴, 요소 사이의 간격 등을 포함하여 사이트의 모양과 느낌을 제어할 수 있는 방법을 제공한다는 것입니다.
 
@@ -82,7 +82,7 @@ Liferay를 사용하면 다양한 디자인 요구 사항을 반영하는 Style 
 이 모듈의 목표는 사전 구축된 Liferay 데모에 스타일 변경을 쉽게 적용할 수 있도록 충분한 정보를 제공하는 것입니다. 초기 비즈니스 중심 Liferay 데모의 경우 일반적으로 Style Books 작성 또는 편집을 보여줄 필요가 없지만 다음 단계는 Style Books 작업을 시작하는 방법과 필요한 경우 신속하고 간단하게 시연하는 방법에 대한 가이드로 사용할 수 있습니다.
 
 ```{note}
-스타일북 생성 및 편집에 대한 전체 문서는 [here](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book)에서 찾을 수 있습니다. -사이트 외관 표준화).
+스타일북 생성 및 편집에 대한 전체 문서는 [here](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book) 에서 찾을 수 있습니다. -사이트 외관 표준화).
 
 ```
 
@@ -95,7 +95,7 @@ Style Books의 간략한 데모는 다음과 같이 구성됩니다.
 
 **사용 가능한 스타일북 찾아보기**
 
-스타일북은 사이트 범위에서 정의됩니다. 해당 항목에 액세스하려면 _제품 메뉴_ (![Product Menu](../../images/icon-product-menu.png))을 열고 _디자인_ 섹션을 확장한 다음 _스타일 북_선택합니다.
+스타일북은 사이트 범위에서 정의됩니다. 해당 항목에 액세스하려면 **제품 메뉴**(![Product Menu](../../images/icon-product-menu.png))을 열고 **디자인** 섹션을 확장한 다음 **스타일 북** 선택합니다.
 
 새로운 스타일 북을 생성하려면 + 아이콘을 클릭하기만 하면 됩니다.
 
@@ -113,7 +113,7 @@ Style Books의 UI 내에서 사용자는 사이트의 여러 보기를 선택하
 
 잠재 고객이 보고 이해할 수 있는 가장 간단하고 쉬운 사이트 스타일 변경 방법 중 하나는 버튼 색상 변경을 시연하는 것입니다.
 
-Style Book 편집기를 사용하여 오른쪽 패널의 드롭다운 메뉴를 "Color System"으로 변경하고 _Primary Actions_ 까지 아래로 스크롤한 다음 색상 팔레트 선택기를 사용하여 _Color Action Primary Default_을 변경합니다.
+Style Book 편집기를 사용하여 오른쪽 패널의 드롭다운 메뉴를 "Color System"으로 변경하고 **Primary Actions** 까지 아래로 스크롤한 다음 색상 팔레트 선택기를 사용하여 **Color Action Primary Default** 을 변경합니다.
 
 즉각적인 효과를 극대화하려면 기존 색상과 확연히 다른 새로운 색상을 선택하세요.
 
@@ -121,11 +121,11 @@ Style Book 편집기를 사용하여 오른쪽 패널의 드롭다운 메뉴를 
 
 페이지의 스타일 북을 설정하려면 다음 단계를 따르세요.
 
-1. 페이지 상단 근처에 있는 _편집_ (![Edit icon](../../images/icon-edit.png))을 클릭합니다.
-2. 사이드바에서 _페이지 디자인 옵션_ (![Page Design Options](../../images/icon-format.png))을 클릭하세요.
-3. 클릭하여 _Style Book_ 탭을 엽니다.
+1. 페이지 상단 근처에 있는 **편집**(![Edit icon](../../images/icon-edit.png))을 클릭합니다.
+2. 사이드바에서 **페이지 디자인 옵션**(![Page Design Options](../../images/icon-format.png))을 클릭하세요.
+3. 클릭하여 **Style Book** 탭을 엽니다.
 4. 목록에서 원하는 스타일북을 선택하세요.
-5. _게시_클릭하세요.
+5. **게시** 클릭하세요.
 
 페이지는 새로운 Style Book을 사용하여 게시됩니다.
 

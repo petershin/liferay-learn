@@ -14,7 +14,7 @@ Liferay의 컨텐츠 및 자산 관리 기능을 통해 실무자는 개인화�
 ## 문서 및 미디어
 
 * [문서, 이미지, 비디오 저장](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media)
-* [Google](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration), [Microsoft](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/sharepoint-integration)과 통합
+* [Google](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) , [Microsoft](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/sharepoint-integration) 과 통합
 
 ## 애셋 라이브러리
 

@@ -18,7 +18,7 @@ Liferay는 각 조직의 특정 요구 사항에 맞는 비즈니스 애플리�
 
 이 모듈의 제목에 "구성"이라는 단어가 있으면 이러한 맥락에서 코딩이 필요할 수 있다고 가정하는 것이 합리적일 수 있으며, 많은 경우 Liferay 코딩을 사용하면 추가 기능 구축의 일부가 됩니다. 실제로 더 많은 고급 데모에는 사용자 정의 코드 확장도 포함됩니다. 그러나 항상 염두에 두어야 할 현명한 목표는 데모에서만 사용자 정의 코드를 개발하거나 심지어 Liferay의 전체 구현에서만 가능한 유일한 방법인 경우입니다.
 
-이 모듈에서는 LIFeray UI를 통해 맞춤형 비즈니스 애플리케이션을 생성할 수 있는 기능인 Liferay [Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects)을 시연하는 방법을 설명합니다. 데모의 이 시점까지 시연된 모든 기능은 즉시 사용 가능한 기능이었으므로 청중은 역동적인 요구가 있을 경우 무엇을 할 수 있는지 궁금해 할 수 있습니다. Liferay Objects는 이러한 동적 요구 사항을 지원하는 기능을 제공합니다.
+이 모듈에서는 LIFeray UI를 통해 맞춤형 비즈니스 애플리케이션을 생성할 수 있는 기능인 Liferay [Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects) 을 시연하는 방법을 설명합니다. 데모의 이 시점까지 시연된 모든 기능은 즉시 사용 가능한 기능이었으므로 청중은 역동적인 요구가 있을 경우 무엇을 할 수 있는지 궁금해 할 수 있습니다. Liferay Objects는 이러한 동적 요구 사항을 지원하는 기능을 제공합니다.
 
 이는 클라이언트 확장 및 다음 모듈에서 다루는 Liferay를 확장하는 기타 방법을 논의하기 전에 이러한 기능을 소개하는 데모의 이상적인 지점입니다.
 
@@ -32,8 +32,8 @@ Liferay는 각 조직의 특정 요구 사항에 맞는 비즈니스 애플리�
 * 고급 기능에 대한 토론.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-6-constructing-a-business-application)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-6-constructing-a-business-application-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-6-constructing-a-business-application) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-6-constructing-a-business-application-pdf) 을 다운로드하세요.
 ```
 
 ## 로우 코드/노 코드 접근 방식
@@ -60,7 +60,7 @@ Liferay는 각 조직의 특정 요구 사항에 맞는 비즈니스 애플리�
 
 Liferay 개체의 데모를 시작하기 전에 제공되는 다양한 기능이 있다는 점을 기억하십시오. 따라서 데모 시간에 따라 다룰 특정 주제를 나열하는 것이 좋습니다.
 
-소프트웨어를 시연하는 일반적인 방법은 처음부터 시작하여 애플리케이션을 만드는 것입니다. 티켓팅 애플리케이션을 예로 들어 Liferay 개체에서 이 접근 방식을 취한 경우 첫 번째 단계는 _Ticket_ 이라는 개체를 만든 다음 여기에 필드, 데이터 등을 추가하는 것입니다. 따라서 애플리케이션은 단계별로 생성되고 마지막에는 전체 애플리케이션이 표시됩니다.
+소프트웨어를 시연하는 일반적인 방법은 처음부터 시작하여 애플리케이션을 만드는 것입니다. 티켓팅 애플리케이션을 예로 들어 Liferay 개체에서 이 접근 방식을 취한 경우 첫 번째 단계는 **Ticket** 이라는 개체를 만든 다음 여기에 필드, 데이터 등을 추가하는 것입니다. 따라서 애플리케이션은 단계별로 생성되고 마지막에는 전체 애플리케이션이 표시됩니다.
 
 그러나 이 접근 방식에는 문제가 있습니다. 첫째, 단계가 어렵지는 않지만 꽤 많은 단계가 있고 일부는 반복적으로 보일 수 있습니다. 잠재 고객이 하나의 필드가 추가되는 것을 본 후에는 10개 이상의 필드를 추가하면 지루해할 가능성이 높습니다. 실제 응용 프로그램에는 필요할 수 있습니다.
 
@@ -79,24 +79,24 @@ Liferay 개체의 데모를 시작하기 전에 제공되는 다양한 기능이
 
 어떤 데모든 현실적인 비즈니스 애플리케이션을 염두에 두는 것이 중요하며 이상적으로는 잠재 고객과의 세션이 시작되기 전에 데모에 추가하는 것이 좋습니다. Liferay 객체 용어로 이는 객체 구축, 객체의 모양과 느낌 구축, 객체에 대한 디스플레이 페이지 구축, 그리고 잠재적으로 알림 및 다양한 페르소나에 대한 할당 등을 통해 상태 관리자를 사용하는 것을 의미합니다.
 
-논의할 다른 주제는 표지 양식과 양식 컨테이너입니다. 양식 컨테이너는 개체 항목에 대한 데이터 캡처 UI를 만드는 데 도움이 되는 비교적 새로운 기능입니다. 양식 컨테이너에 대한 문서는 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms)에서 확인하세요.
+논의할 다른 주제는 표지 양식과 양식 컨테이너입니다. 양식 컨테이너는 개체 항목에 대한 데이터 캡처 UI를 만드는 데 도움이 되는 비교적 새로운 기능입니다. 양식 컨테이너에 대한 문서는 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms) 에서 확인하세요.
 
 **개체 표시 페이지**
 
 개체는 즉시 Liferay의 정보 프레임워크에 통합되므로 개체 항목을 표시하기 위해 표시 페이지 템플릿을 쉽게 만들 수 있습니다. 개체를 사용하여 완성된 애플리케이션에는 항목 목록을 표시한 다음 표시 페이지를 통해 개별 항목을 표시하는 기능이 포함되어야 합니다.
 
-개체 항목 표시에 대한 문서는 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries)에서 확인할 수 있습니다.
+개체 항목 표시에 대한 문서는 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries) 에서 확인할 수 있습니다.
 
 **객체 생성**
 
 객체를 생성하려면 필드를 추가하고 객체가 Liferay 시스템 객체 또는 기타 사용자 정의 객체와 가질 수 있는 관계를 정의하고 필드에 대한 선택 목록을 생성하고 상태 관리자를 사용하여 객체에 대한 데이터 모델을 정의해야 합니다. 상태 관리는 프로세스를 시작하거나 승인을 위해 개체를 제출하는 등의 방식으로 애플리케이션에 비즈니스 프로세스 관리 유형의 느낌을 추가하는 기능을 제공합니다.
 
-상태 필드 정의 및 상태 관리자 사용에 대한 문서는 여기 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-and-managing-custom-states)볼 수 있습니다.
+상태 필드 정의 및 상태 관리자 사용에 대한 문서는 여기 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-and-managing-custom-states) 볼 수 있습니다.
 
 **객체의 기타 응용**
 
 기본 사항을 다룬 후 마지막 단계는 객체와 함께 제공되는 다른 기능 중 일부를 논의하고 잠재적으로 보여주는 것입니다. 예를 들어, 사용자 정의 개체가 생성되면 Liferay는 외부 응용 프로그램이 개체와 상호 작용하거나 개발자가 클라이언트 확장을 통해 완전히 사용자 정의 UI를 만들 수 있도록 해당 개체에 대한 새로운 헤드리스 API를 자동으로 생성한다고 설명합니다.
 
-개체가 다른 Liferay 프레임워크에 통합되는 방식에 대한 문서는 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/understanding-object-integrations)에서 확인할 수 있습니다.
+개체가 다른 Liferay 프레임워크에 통합되는 방식에 대한 문서는 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/understanding-object-integrations) 에서 확인할 수 있습니다.
 
 다음으로 간단하고 이해하기 쉬운 예제 객체 데모 [필드 유형 참조](./constructing-a-business-application/example-object-demo.md).

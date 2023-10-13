@@ -36,7 +36,7 @@ using-fragments/propagating-fragment-changes.md
 
 ![조각으로 콘텐츠 페이지와 템플릿을 구축하세요.](./using-fragments/images/01.png)
 
-Liferay는 기본적으로 다양한 조각을 제공하지만 [페이지 조각 편집기](../../developer-guide/reference/fragments/page-fragment-editor-interface-를 사용하여 사용자 정의 조각을 개발할 수 있습니다. reference.md) 또는 [Fragments Toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md). 또한 [Liferay 위젯을 포함](../../developer-guide/reference/fragments/fragment-특이적-tags-reference.md#include-widgets-within-a-fragment)하여 조각에 추가하거나 편집 가능한 필드를 추가할 수 있습니다.  자세한 내용은 [페이지 조각 개발](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)을 참조하세요.
+Liferay는 기본적으로 다양한 조각을 제공하지만 [페이지 조각 편집기](../../developer-guide/reference/fragments/page-fragment-editor-interface-를 사용하여 사용자 정의 조각을 개발할 수 있습니다. reference.md) 또는 [Fragments Toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md). 또한 [Liferay 위젯을 포함](../../developer-guide/reference/fragments/fragment-특이적-tags-reference.md#include-widgets-within-a-fragment) 하여 조각에 추가하거나 편집 가능한 필드를 추가할 수 있습니다.  자세한 내용은 [페이지 조각 개발](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)을 참조하세요.
 
 양식 작업을 하는 경우 양식 필드를 사용자 정의 양식 조각에 매핑하여 [개인화할 수 있습니다](./using-fragments/personalizing-custom-forms-using-form-fragments.md).
 

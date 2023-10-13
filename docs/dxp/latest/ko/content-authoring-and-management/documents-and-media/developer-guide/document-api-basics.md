@@ -9,11 +9,11 @@ Liferay의 헤드리스 전송 애플리케이션은 문서와 폴더를 추가�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-로그인하면 [사이트 ID 검색](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data). 여러 서비스 호출에서 이 ID를 사용합니다.
+로그인하면 [사이트 ID 검색](../../../headless-delivery/consuming-apis/consuming-rest-services.md#identify-the-site-containing-the-data) . 여러 서비스 호출에서 이 ID를 사용합니다.
 
 그런 다음 다음 단계를 따르십시오.
 
-1. [예제 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip)를 다운로드하고 압축을 풉니다. ):
+1. [예제 프로젝트](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip) 를 다운로드하고 압축을 풉니다. ):
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O
@@ -101,7 +101,7 @@ cURL 명령과 Java 클래스가 어떻게 작동하는지 계속 읽어보세�
 | 인수                                                                      | 묘사                                                                    |
 |:----------------------------------------------------------------------- |:--------------------------------------------------------------------- |
 | `-F "file=@Document_POST_ToSite.sh"`                                    | 게시할 파일입니다.                                                            |
-| `-H "Content-Type: multipart/form-data"`                                | 게시 중인 미디어 유형([MIME 유형](https://en.wikipedia.org/wiki/Media_type))입니다. |
+| `-H "Content-Type: multipart/form-data"`                                | 게시 중인 미디어 유형( [MIME 유형](https://en.wikipedia.org/wiki/Media_type) )입니다. |
 | `-X POST`                                                               | 지정된 엔드포인트에서 호출할 HTTP 메서드입니다.                                          |
 | `"http://localhost:8080/o/headless-delivery/v1.0/sites/${1}/documents"` | REST 서비스 엔드포인트입니다. 사이트 ID 매개 변수가 `${1}`를 대체합니다.                       |
 | `-u "test@liferay.com:learn"`                                           | 기본 인증 자격 증명.                                                          |
@@ -141,7 +141,7 @@ main` 메서드의 주석은 클래스를 실행하는 것을 보여줍니다.
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `DocumentResource` 메서드를 호출합니다.
 
 ```{important}
-자세한 서비스 내용은 [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-divery/headless-divery-client/src/main/java/com/liferay/headless/divery/client/resource/v1_0/DocumentResource.java)를 참조하세요.
+자세한 서비스 내용은 [DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-divery/headless-divery-client/src/main/java/com/liferay/headless/divery/client/resource/v1_0/DocumentResource.java) 를 참조하세요.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 `문서` REST 서비스를 호출하는 예입니다.

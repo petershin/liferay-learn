@@ -10,17 +10,17 @@ LXC에서는 시스템 설정에 접근할 수 없습니다. 시스템 설정을
 
 ### LXC-SM 및 자체 호스팅의 시스템 설정
 
-Liferay는 오픈 소스 바이러스 백신 솔루션인 [ClamAV](https://www.clamav.net/)을 지원합니다. 시스템 설정에서 ClamAV 바이러스 백신 소프트웨어를 구성할 수 있습니다.
+Liferay는 오픈 소스 바이러스 백신 솔루션인 [ClamAV](https://www.clamav.net/) 을 지원합니다. 시스템 설정에서 ClamAV 바이러스 백신 소프트웨어를 구성할 수 있습니다.
 
 ```{note}
-Liferay 환경에서 사용하려는 플랫폼에 ClamAV를 설치하고 실행하려면 [ClamAV 설명서](https://docs.clamav.net/)를 따르세요.
+Liferay 환경에서 사용하려는 플랫폼에 ClamAV를 설치하고 실행하려면 [ClamAV 설명서](https://docs.clamav.net/) 를 따르세요.
 ```
 
-1. _글로벌 메뉴로 이동_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _시스템 설정_.
+1. **글로벌 메뉴로 이동**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **시스템 설정** .
 
-1. 보안에서 _바이러스 백신_클릭하세요.
+1. 보안에서 **바이러스 백신** 클릭하세요.
 
-1. 왼쪽 탐색에서 _Antivirus Clamd Scanner_을 클릭합니다.
+1. 왼쪽 탐색에서 **Antivirus Clamd Scanner** 을 클릭합니다.
 
 1. 설정을 입력하세요.
 
@@ -30,7 +30,7 @@ Liferay 환경에서 사용하려는 플랫폼에 ClamAV를 설치하고 실행�
 
    ![ClamAV 환경의 설정을 입력하세요.](./configuring-system-settings/images/01.png)
 
-1. _업데이트_을 클릭합니다. 이제 Liferay 환경은 ClamAV를 사용하여 업로드된 파일을 검사합니다. 이것이 어떻게 작동하는지 보려면 아래의 관련 개념을 참조하세요.
+1. **업데이트** 을 클릭합니다. 이제 Liferay 환경은 ClamAV를 사용하여 업로드된 파일을 검사합니다. 이것이 어떻게 작동하는지 보려면 아래의 관련 개념을 참조하세요.
 
 다음 단계는 [가상 인스턴스 구성](./configuring-virtual-instances.md)입니다.
 

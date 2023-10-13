@@ -19,7 +19,7 @@ DXP의 클래스 로더에는 계층 구조가 있으며 다음 컨텍스트에�
 
 * **공통** : 응용 프로그램 서버의 웹 응용 프로그램에 전역적으로 액세스할 수 있는 클래스입니다.
 
-* **웹 애플리케이션(예: DXP/Portal**) : 애플리케이션의 `WEB-INF/classes` 폴더 및 `WEB-INF/lib/*.jar`의 클래스.
+* **웹 애플리케이션(예: DXP/Portal)** : 애플리케이션의 `WEB-INF/classes` 폴더 및 `WEB-INF/lib/*.jar`의 클래스.
 
     DXP/Portal 웹 애플리케이션이 상호 작용하는 유일한 Liferay 클래스는 Liferay의 **Shielded Container** JAR 파일에 있습니다.
 

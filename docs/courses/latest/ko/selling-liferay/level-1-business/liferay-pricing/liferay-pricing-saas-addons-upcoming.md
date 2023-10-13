@@ -23,7 +23,7 @@
 
 ### 프로젝트 작업공간
 
-Liferay Experience Cloud SaaS는 **프로젝트 작업 공간**개념을 도입합니다. 프로젝트 작업 공간은 고객이 필요로 할 수 있는 다양한 유형의 환경과 다양한 유형의 사용자 기반을 캡슐화하는 방법입니다. 대부분의 고객은 단일 프로젝트 작업 영역을 사용하지만 일부 고객은 완전히 분리된 사용자 기반이 필요한 솔루션을 보유할 수도 있습니다.
+Liferay Experience Cloud SaaS는 **프로젝트 작업 공간** 개념을 도입합니다. 프로젝트 작업 공간은 고객이 필요로 할 수 있는 다양한 유형의 환경과 다양한 유형의 사용자 기반을 캡슐화하는 방법입니다. 대부분의 고객은 단일 프로젝트 작업 영역을 사용하지만 일부 고객은 완전히 분리된 사용자 기반이 필요한 솔루션을 보유할 수도 있습니다.
 
 추가 프로젝트 작업 영역이 필요할 수 있는 사용 사례는 이 사실을 공개적으로 알리지 않는 것이 선호되는 여러 비즈니스를 보유한 고객일 수 있습니다. 예를 들어, 제조업체는 프리미엄 제품 라인과 이코노미 제품 라인을 모두 생산하고 이를 서로 다른 브랜드로 판매할 수 있습니다(예: luxewidgets.com & basicwidgets.com). 이 시나리오에서는 이미 luxewidgets.com 웹사이트에 이메일 주소를 등록한 고객이 basicwidgets에 등록하려고 할 때 해당 이메일 주소를 가진 계정이 이미 존재한다는 경고 메시지가 표시되지 않는 것이 중요합니다. com 웹사이트.
 
@@ -33,9 +33,9 @@ Liferay DXP가 이메일 주소를 처리하는 방식과 Liferay Experience Clo
 
 각 계획은 서로 다른 수의 프로젝트 작업 공간을 제공합니다.
 
-* **Pro**: 1 프로젝트 작업공간
-* **비즈니스**: 5 프로젝트 작업 공간
-* **Enterprise**: 10 프로젝트 작업공간
+* **Pro** : 1 프로젝트 작업공간
+* **비즈니스** : 5 프로젝트 작업 공간
+* **Enterprise** : 10 프로젝트 작업공간
 
 사용 가능한 프로젝트 작업 공간 수를 늘리기 위해 계획 간에 이동하는 것 외에도 각 계획에 대해 추가 작업 공간을 구입할 수 있습니다.
 
@@ -47,15 +47,15 @@ Project Workspace 개념은 Liferay Experience Cloud SaaS를 위한 새로운 �
 
 대부분의 옵션과 마찬가지로 각 계획은 확장에 대해 서로 다른 용량을 제공합니다.
 
-* **Pro**: 1GB RAM / 1 vCPU
-* **비즈니스**: 4GB / vCPU 8개
-* **엔터프라이즈**: 6GB/12 vCPU
+* **Pro** : 1GB RAM / 1 vCPU
+* **비즈니스** : 4GB / vCPU 8개
+* **엔터프라이즈** : 6GB/12 vCPU
 
 고객은 요금제 간 이동 외에도 추가 확장 용량을 구매할 수 있습니다. 확장 용량은 고객이 클라이언트 확장을 호스팅하는 곳입니다. 이전 모듈에서 다룬 것처럼 클라이언트 확장은 맞춤형 솔루션 개발을 구현하는 방법입니다.  대부분의 경우 이러한 클라이언트 확장에는 약간의 컴퓨팅 성능과 메모리 용량이 필요하며 클라이언트 확장의 수와 특성에 따라 고객은 추가 용량을 구입해야 할 수도 있습니다.
 
 ### 전용 리소스
 
-Liferay Experience Cloud SaaS는 각 Liferay 고객이 Liferay 인스턴스를 다른 고객과 공유하는 다중 테넌트 환경입니다.  기술적인 측면에서 각 고객은 프로덕션, UAT 및 개발 환경을 위해 Liferay “[가상 인스턴스](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances)”을 얻습니다.
+Liferay Experience Cloud SaaS는 각 Liferay 고객이 Liferay 인스턴스를 다른 고객과 공유하는 다중 테넌트 환경입니다.  기술적인 측면에서 각 고객은 프로덕션, UAT 및 개발 환경을 위해 Liferay “ [가상 인스턴스](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances) ”을 얻습니다.
 
 고객이 자신의 설치를 분리해야 하거나 원하는 경우 전용 Liferay 인스턴스 및 데이터베이스를 제공하는 전용 리소스를 구입할 수 있습니다.
 

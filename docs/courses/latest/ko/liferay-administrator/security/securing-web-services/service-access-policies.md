@@ -16,9 +16,9 @@
 
    금지된 오류 응답이 반환된다는 점에 유의하세요.
 
-1. _글로벌 메뉴로 이동_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _서비스 접근 정책_.
+1. **글로벌 메뉴로 이동**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **서비스 접근 정책** .
 
-1. __ 추가(![Add icon](../../../images/icon-add.png))를 클릭합니다.
+1. **추가**(![아이콘 추가](../../../images/icon-add.png))를 클릭합니다.
 
 1. 다음과 같이 새 정책을 구성합니다.
 
@@ -28,7 +28,7 @@
    * 제목으로 `My User Account Guest Access` 을 입력합니다.
    * 서비스 클래스로 `com.liferay.headless.admin.user.internal.resource.v1_0.UserAccountResourceImpl` 입력합니다.
    * 메소드 이름으로 `getMyUserAccount` 을 입력하십시오.
-   * _저장_클릭하세요.
+   * **저장** 클릭하세요.
 
 1. 동일한 API 요청을 하세요.
 

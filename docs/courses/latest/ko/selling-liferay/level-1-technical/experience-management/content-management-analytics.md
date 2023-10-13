@@ -11,13 +11,13 @@
 * Liferay의 분석 기능을 통해 관리자와 마케팅 담당자는 Liferay 사이트의 성능을 이해하고 개선할 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-4-experience-management)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-4-experience-management) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-4-experience-management-pdf) 을 다운로드하세요.
 ```
 
 ## 만족한 관리
 
-Liferay는 기술적인 지식이 없는 사용자도 콘텐츠를 생성, 관리 및 구성할 수 있는 강력한 콘텐츠 관리 시스템(CMS)을 제공합니다. Liferay는 [웹 콘텐츠](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content), [문서 및 미디어](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media), 컬렉션, [블로그](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs) 등을 포함한 다양한 유형의 콘텐츠를 지원합니다.
+Liferay는 기술적인 지식이 없는 사용자도 콘텐츠를 생성, 관리 및 구성할 수 있는 강력한 콘텐츠 관리 시스템(CMS)을 제공합니다. Liferay는 [웹 콘텐츠](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content) , [문서 및 미디어](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media) , 컬렉션, [블로그](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs) 등을 포함한 다양한 유형의 콘텐츠를 지원합니다.
 
 데모 중에는 다음과 같은 다양한 이점이 강조될 수 있습니다.
 
@@ -29,12 +29,12 @@ Liferay는 기술적인 지식이 없는 사용자도 콘텐츠를 생성, 관�
 
 ### 데모를 위한 팁
 
-* **WYSIWYG 편집기**. 새로운 콘텐츠를 만드는 것보다 미리 만들어진 콘텐츠를 보여주고 내장된 WYSIWYG 편집기를 사용해 어떻게 편집할 수 있는지 보여주는 것이 더 효과적입니다.
-* **다양한 자산에 대한 다양한 디스플레이**. 기사, 사례 연구, 보도 자료 등 다양한 유형의 콘텐츠를 정의하고 다양한 방식으로 표시하는 방법을 보여줍니다.
-* **번역**. 잠재 고객에게 현지화가 중요한 경우 콘텐츠를 수동 또는 자동으로 번역하는 방법을 보여주세요.
-* **콘텐츠 출판**. Liferay에는 예약 게시, 자동 만료 등을 지원하는 콘텐츠 게시 기능이 포함되어 있다는 점을 언급하세요.
-* **기본 프레임워크와 통합**. 모든 콘텐츠(웹 콘텐츠, 블로그, 문서 등)가 권한 프레임워크, 검색 엔진, 워크플로 엔진과 같은 핵심 Liferay 기능과 통합되어 있다는 사실에 대해 이야기해 보세요.
-* 오피스 365 및 구글 드라이브 통합**. 잠재 고객이 문서 관리에 관심이 있는 경우, Liferay DXP가 제공하는 [Office 365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365) 및 [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration)와의 기본 통합을 언급하세요. 이러한 통합을 통해 사용자는 Liferay 내에서 익숙한 도구로 문서를 작성할 수 있으며, 앞서 언급한 모든 DXP 기능을 활용할 수 있는 이점을 누릴 수 있습니다.
+* **WYSIWYG 편집기** . 새로운 콘텐츠를 만드는 것보다 미리 만들어진 콘텐츠를 보여주고 내장된 WYSIWYG 편집기를 사용해 어떻게 편집할 수 있는지 보여주는 것이 더 효과적입니다.
+* **다양한 자산에 대한 다양한 디스플레이** . 기사, 사례 연구, 보도 자료 등 다양한 유형의 콘텐츠를 정의하고 다양한 방식으로 표시하는 방법을 보여줍니다.
+* **번역** . 잠재 고객에게 현지화가 중요한 경우 콘텐츠를 수동 또는 자동으로 번역하는 방법을 보여주세요.
+* **콘텐츠 출판** . Liferay에는 예약 게시, 자동 만료 등을 지원하는 콘텐츠 게시 기능이 포함되어 있다는 점을 언급하세요.
+* **기본 프레임워크와 통합** . 모든 콘텐츠(웹 콘텐츠, 블로그, 문서 등)가 권한 프레임워크, 검색 엔진, 워크플로 엔진과 같은 핵심 Liferay 기능과 통합되어 있다는 사실에 대해 이야기해 보세요.
+* 오피스 365 및 구글 드라이브 통합**. 잠재 고객이 문서 관리에 관심이 있는 경우, Liferay DXP가 제공하는 [Office 365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365) 및 [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) 와의 기본 통합을 언급하세요. 이러한 통합을 통해 사용자는 Liferay 내에서 익숙한 도구로 문서를 작성할 수 있으며, 앞서 언급한 모든 DXP 기능을 활용할 수 있는 이점을 누릴 수 있습니다.
   
 
 ## 해석학

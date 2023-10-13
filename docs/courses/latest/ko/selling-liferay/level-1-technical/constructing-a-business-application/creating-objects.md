@@ -17,15 +17,15 @@ Liferay 객체는 데이터의 컨테이너로 생각할 수 있습니다. 다�
 
 객체를 생성하는 첫 번째 단계는 도면 객체입니다. 개체 초안은 개체 응용 프로그램을 만드는 데 필요한 데이터를 저장하는 응용 프로그램 템플릿입니다. 개체 초안을 작성하려면 다음 단계를 따르십시오.
 
-1. 전역 메뉴를 열고 **Control Panel** 탭으로 이동한 다음 **Objects**을 클릭합니다.
+1. 전역 메뉴를 열고 **Control Panel** 탭으로 이동한 다음 **Objects** 을 클릭합니다.
 2. **추가** 버튼을 클릭하세요.
 3. 개체 초안에 대한 세부 정보를 제공합니다.
-    1. **라벨**: 개체 관리 및 지원되는 응용 프로그램 컨텍스트(예: 작업 흐름, 표시 페이지 템플릿, 양식)에서 개체를 식별합니다.
-    2. **Plural Label**: UI에서 개체 응용 프로그램의 표시 이름을 결정합니다.
-    3. **개체 이름**: 개체의 정의 이름을 결정하며 개체가 게시된 후에는 변경할 수 없습니다.
-4. **저장**클릭하세요.
+    1. **라벨** : 개체 관리 및 지원되는 응용 프로그램 컨텍스트(예: 작업 흐름, 표시 페이지 템플릿, 양식)에서 개체를 식별합니다.
+    2. **Plural Label** : UI에서 개체 응용 프로그램의 표시 이름을 결정합니다.
+    3. **개체 이름** : 개체의 정의 이름을 결정하며 개체가 게시된 후에는 변경할 수 없습니다.
+4. **저장** 클릭하세요.
 
-저장하고 나면 구성이나 데이터 요소 없이 빈 개체 초안이 생성됩니다. 개체 초안은 시스템 개체와 함께 개체 관리 UI에서 볼 수 있습니다. 생성 프로세스를 완료하려면 객체 초안을 [편집]해야 합니다(https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p_l_back_url=% 2Fsearch%3Fq%3DObjects&highlight=Objects#editing-object-drafts) 그런 다음 [게시](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating- object?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects#publishing-object-drafts)를 Liferay 인스턴스에 추가합니다.
+저장하고 나면 구성이나 데이터 요소 없이 빈 개체 초안이 생성됩니다. 개체 초안은 시스템 개체와 함께 개체 관리 UI에서 볼 수 있습니다. 생성 프로세스를 완료하려면 개체 초안을 [편집](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects#editing-object-drafts) 한 다음 Liferay 인스턴스에 [게시](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects?p_l_back_url=%2Fsearch%3Fq%3DObjects&highlight=Objects#publishing-object-drafts) 해야 합니다.
 
 ## 객체 편집 및 게시
 
@@ -36,14 +36,14 @@ Liferay 객체는 데이터의 컨테이너로 생각할 수 있습니다. 다�
 개체 초안을 편집하려면 다음 단계를 따르십시오.
 
 1. 개체 관리 페이지에서 새로 생성된 개체 초안을 클릭하여 편집을 시작합니다. 개체 기능 및 구성 옵션은 세부 정보, 필드, 관계, 레이아웃, 작업, 보기, 유효성 검사 및 상태 관리자 탭으로 구성됩니다.
-1. 사용자 정의 필드를 추가하려면 **필드** 탭을 클릭하세요. 각 필드는 특정 유형의 값을 저장하기 위한 데이터베이스 열을 나타냅니다. [객체에 필드 추가](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects)참조하십시오. 기본적으로 모든 개체에는 작성자, 생성 날짜, 외부 참조 코드, ID, 수정 날짜 및 상태와 같은 시스템 필드가 포함됩니다.
+1. 사용자 정의 필드를 추가하려면 **필드** 탭을 클릭하세요. 각 필드는 특정 유형의 값을 저장하기 위한 데이터베이스 열을 나타냅니다. [객체에 필드 추가](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-fields-to-objects) 참조하십시오. 기본적으로 모든 개체에는 작성자, 생성 날짜, 외부 참조 코드, ID, 수정 날짜 및 상태와 같은 시스템 필드가 포함됩니다.
 1. '회사'의 개체 범위를 선택합니다. 객체는 객체의 데이터가 저장되는 방식을 결정합니다. 
-       * **회사** (기본값): 회사로 범위가 지정되면 개체의 데이터가 Liferay 인스턴스별로 저장됩니다.
-    * **사이트**: 사이트별로 범위가 지정되면 개체의 데이터가 사이트별로 저장됩니다.
-1. 개체의 페이지 위젯을 표시합니다. 활성화된 동안 사이트 페이지에 개체의 위젯을 추가할 수 있습니다. [사이트에 개체 위젯 배포](https://learn.liferay.com/w/dxp/building-applications/objects/deploying-object-widgets-to-sites)참조하십시오.
+    * **회사**(기본값): 회사로 범위가 지정되면 개체의 데이터가 Liferay 인스턴스별로 저장됩니다.
+    * **사이트** : 사이트별로 범위가 지정되면 개체의 데이터가 사이트별로 저장됩니다.
+1. 개체의 페이지 위젯을 표시합니다. 활성화된 동안 사이트 페이지에 개체의 위젯을 추가할 수 있습니다. [사이트에 개체 위젯 배포](https://learn.liferay.com/w/dxp/building-applications/objects/deploying-object-widgets-to-sites) 참조하십시오.
 1. 저장을 클릭합니다.
 
-구성 및 편집이 완료되면 객체를 [할 수 있습니다](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects).
+구성 및 편집이 완료되면 객체를 [할 수 있습니다](https://learn.liferay.com/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) .
 
 Liferay는 Liferay UI를 통해 개발자가 즉시 사용할 수 있는 객체에 대한 상당한 양의 요소를 생성하기 때문에 이 단계는 실제로 많은 마법이 일어나는 곳입니다. 게시 프로세스에는 다음 작업이 포함됩니다.
 
@@ -89,7 +89,7 @@ Headless API에 대한 토론은 청중이 적절하고 주로 기술적 성격�
 * Headless API의 일반적인 사용 사례는 객체에 대한 사용자 정의 JavaScript 클라이언트 확장 UI를 개발하는 것입니다.
 * 헤드리스 API를 사용하여 객체와 외부 시스템 통합을 활성화할 수도 있습니다.
 
-일반적으로 Liferay의 헤드리스 API에 대한 자세한 내용은 [REST 서비스 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#consuming-rest-services)참조하세요.
+일반적으로 Liferay의 헤드리스 API에 대한 자세한 내용은 [REST 서비스 사용](https://learn.liferay.com/w/dxp/headless-delivery/consuming-apis/consuming-rest-services#consuming-rest-services) 참조하세요.
 
 ## 고급 기능
 

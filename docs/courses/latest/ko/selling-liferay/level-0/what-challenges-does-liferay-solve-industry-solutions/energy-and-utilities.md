@@ -4,7 +4,7 @@
 
 Liferay는 이 업계의 기업이 성공적인 디지털 경험 솔루션을 제공할 수 있도록 지원한 강력한 실적을 보유하고 있습니다. 이러한 경험은 업계 고유의 요구 사항을 지원하는 강력한 기능 세트로 해석됩니다.
 
-Liferay의 에너지 및 유틸리티 사례 연구 보기 [여기](https://www.liferay.com/resources/case-studies?industries=energy-utilities).
+Liferay의 에너지 및 유틸리티 사례 연구 보기 [여기](https://www.liferay.com/resources/case-studies?industries=energy-utilities) .
 
 ## 에너지 & 유틸리티의 주요 과제
 

@@ -1,6 +1,6 @@
 # LDAP에 연결 중
 
-시스템 수준이나 인스턴스 수준에서 LDAP 서버를 구성할 수 있습니다. LXC-SM을 사용하거나 자체 호스팅하는 경우 필요에 따라 [구성 범위](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) 선택할 수 있습니다. 시스템 범위에서 구성할 때 각 인스턴스 ID를 지정해야 합니다. LXC를 사용하는 경우 인스턴스 범위에서 LDAP를 구성해야 합니다. [LDAP 디렉토리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)참조하십시오.
+시스템 수준이나 인스턴스 수준에서 LDAP 서버를 구성할 수 있습니다. LXC-SM을 사용하거나 자체 호스팅하는 경우 필요에 따라 [구성 범위](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/understanding-configuration-scope) 선택할 수 있습니다. 시스템 범위에서 구성할 때 각 인스턴스 ID를 지정해야 합니다. LXC를 사용하는 경우 인스턴스 범위에서 LDAP를 구성해야 합니다. [LDAP 디렉토리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory) 참조하십시오.
 
 맛있는 분재는 방금 인수한 회사로부터 사용자 데이터를 가져와야 합니다.
 
@@ -63,13 +63,13 @@
 
 ## Liferay를 LDAP 디렉토리에 연결
 
-1. _글로벌 메뉴로 이동_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _인스턴스 설정_.
+1. **글로벌 메뉴로 이동**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **인스턴스 설정** .
 
-1. 보안 아래에서 _LDAP_클릭하세요.
+1. 보안 아래에서 **LDAP** 클릭하세요.
 
-1. 왼쪽 탐색에서 _서버_클릭하십시오.
+1. 왼쪽 탐색에서 **서버** 클릭하십시오.
 
-1. _추가_클릭합니다.
+1. **추가** 클릭합니다.
 
 1. 새 페이지에서 LDAP 연결 정보를 입력하세요.
 
@@ -81,15 +81,15 @@
 
    ![연결정보를 입력하세요.](./connecting-to-ldap/images/01.png)
 
-   _LDAP 연결 테스트_클릭합니다. 팝업 창에 Liferay가 LDAP 서버에 성공적으로 연결되었음을 표시합니다. _X_ 을 클릭하고 창을 닫습니다.
+**LDAP 연결 테스트** 클릭합니다. 팝업 창에 Liferay가 LDAP 서버에 성공적으로 연결되었음을 표시합니다. **X** 을 클릭하고 창을 닫습니다.
 
-1. LDAP 사용자 정보 섹션에서 LDAP 필드를 적절한 Liferay 필드에 매핑하십시오. _UUID_ 필드에 `uid` 입력하여 Liferay의 UUID 필드를 LDAP의 `uid` 필드에 매핑합니다. 이는 데이터를 LDAP으로 내보내는 데 필요합니다. 사용자 필드 매핑을 미리 보려면 _LDAP 사용자 테스트_ 클릭하세요.
+1. LDAP 사용자 정보 섹션에서 LDAP 필드를 적절한 Liferay 필드에 매핑하십시오. **UUID** 필드에 `uid` 입력하여 Liferay의 UUID 필드를 LDAP의 `uid` 필드에 매핑합니다. 이는 데이터를 LDAP으로 내보내는 데 필요합니다. 사용자 필드 매핑을 미리 보려면 **LDAP 사용자 테스트** 클릭하세요.
 
    ![사용자 필드 정보를 입력합니다.](./connecting-to-ldap/images/02.png)
 
-1. LDAP 그룹 섹션에서 _설명_ 필드에 `Almighty Syrup` 입력합니다. _테스트 LDAP 그룹_ 클릭하여 `almightysyrup` 사용자 그룹이 표시되는지 확인합니다.
+1. LDAP 그룹 섹션에서 **설명** 필드에 `Almighty Syrup` 입력합니다. **테스트 LDAP 그룹** 클릭하여 `almightysyrup` 사용자 그룹이 표시되는지 확인합니다.
 
-1. _저장_클릭하세요.
+1. **저장** 클릭하세요.
 
 Delectable Bonsai의 Liferay 인스턴스가 이제 Almighty Syrup의 LDAP 디렉토리에 연결되었습니다.
 

@@ -8,8 +8,8 @@
 * 각 영업 프로세스 단계에는 여러 도구와 단계가 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress)을 확인하세요.
-* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress-pdf)을 다운로드하세요. 작업장.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress) 을 확인하세요.
+* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-5-sales-funnel-and-best-practices-for-opportunity-progress-pdf) 을 다운로드하세요. 작업장.
 ```
 
 ## 구매 단계 & 판매 프로세스 매핑
@@ -131,7 +131,7 @@ SQL 및 MQL 생성을 지원하려면 다음을 사용할 수 있습니다.
 
 평가 단계는 구매자와 관련된 다른 사람들이 최선의 대안이라고 생각하는 것이 무엇인지 결정하면 종료됩니다.
 
-두 공급업체와 협상하는 것은 구매자에게 시간이 많이 걸리기 때문에 _보통_ 단일 공급업체가 최종 단계로 이동하는 것입니다. 일부 시장과 상황에서는 협상 단계에 두 개의 공급업체가 있을 수 있습니다.
+두 공급업체와 협상하는 것은 구매자에게 시간이 많이 걸리기 때문에 **보통** 단일 공급업체가 최종 단계로 이동하는 것입니다. 일부 시장과 상황에서는 협상 단계에 두 개의 공급업체가 있을 수 있습니다.
 
 그러나 이것이 사실로 보인다면 이는 종종 약속 단계가 실제로 시작되지 않았음을 의미한다는 점에 유의하십시오.
 

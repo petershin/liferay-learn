@@ -2,11 +2,11 @@
 
 여기에서는 추가 지원자 및 연락처 정보를 수집하기 위해 Distributor Application 개체에 일반 필드를 추가합니다.
 
-1. *전역 메뉴* ( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 *제어판* 탭으로 이동한 다음 *개체*클릭합니다.
+1. **전역 메뉴**( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 **제어판** 탭으로 이동한 다음 **개체** 클릭합니다.
 
-1. Distributor Application 개체 편집을 시작하고 *Fields* 탭으로 이동합니다.
+1. Distributor Application 개체 편집을 시작하고 **Fields** 탭으로 이동합니다.
 
-1. *Add* (![Add Button](../../images/icon-add.png))을 클릭하고 세부 정보를 입력한 후 *Save*클릭합니다.
+1. **Add**(![Add Button](../../images/icon-add.png))을 클릭하고 세부 정보를 입력한 후 **Save** 클릭합니다.
 
    | 분야        | 가치               |
    |:--------- |:---------------- |

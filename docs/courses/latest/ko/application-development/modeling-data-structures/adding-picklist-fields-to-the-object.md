@@ -2,11 +2,11 @@
 
 배포자 응용 프로그램 개체에 선택 목록 필드를 추가하는 작업은 몇 가지 추가 구성 옵션이 있지만 다른 필드 유형과 동일한 프로세스를 따릅니다.
 
-1. *전역 메뉴* ( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 *제어판* 탭으로 이동한 다음 *개체*클릭합니다.
+1. **전역 메뉴**( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 **제어판** 탭으로 이동한 다음 **개체** 클릭합니다.
 
-1. Distributor Application 개체 편집을 시작하고 *Fields* 탭으로 이동합니다.
+1. Distributor Application 개체 편집을 시작하고 **Fields** 탭으로 이동합니다.
 
-1. *Add* (![Add Button](../../images/icon-add.png))을 클릭하고 세부 정보를 입력한 후 *Save*클릭합니다.
+1. **Add**(![Add Button](../../images/icon-add.png))을 클릭하고 세부 정보를 입력한 후 **Save** 클릭합니다.
 
    | 분야     | 가치             |
    |:------ |:-------------- |

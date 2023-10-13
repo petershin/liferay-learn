@@ -24,7 +24,7 @@ Liferay는 [구성 인터페이스가](./setting-and-accessing-configurations.md
 
 그런 다음 다음 단계를 따르세요.
 
-1. [구성 UI 숨기기](./liferay-g8v3.zip)를 다운로드하고 압축을 푼다.
+1. [구성 UI 숨기기](./liferay-g8v3.zip) 를 다운로드하고 압축을 푼다.
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/configuration-framework/liferay-g8v3.zip -O

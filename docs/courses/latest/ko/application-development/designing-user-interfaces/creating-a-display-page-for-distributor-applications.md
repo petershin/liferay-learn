@@ -6,13 +6,13 @@
 
 <!-- Refine intro. -->
 
-1. *사이트 메뉴* (![Site Menu](../../images/icon-product-menu.png))을 열고 *디자인*확장한 다음 *페이지 템플릿*클릭합니다.
+1. **사이트 메뉴**(![Site Menu](../../images/icon-product-menu.png))을 열고 **디자인** 확장한 다음 **페이지 템플릿** 클릭합니다.
 
-1. *표시 페이지 템플릿* 탭으로 이동하여 *추가* (![Add Button](../../images/icon-add.png))을 클릭합니다.
+1. **표시 페이지 템플릿** 탭으로 이동하여 **추가**(![Add Button](../../images/icon-add.png))을 클릭합니다.
 
-1. *Blank* 마스터 템플릿을 선택합니다.
+1. **Blank** 마스터 템플릿을 선택합니다.
 
-1. 세부 정보를 입력하고 *저장*클릭하세요.
+1. 세부 정보를 입력하고 **저장** 클릭하세요.
 
    | 분야     | 가치           |
    |:------ |:------------ |
@@ -23,7 +23,7 @@
 
    배포자 애플리케이션 콘텐츠 유형을 선택하면 페이지 조각을 배포자 애플리케이션 필드에 매핑하고 페이지를 현재 애플리케이션의 값으로 채울 수 있습니다.
 
-1. *Display Page* 조각을 빈 템플릿에 끌어다 놓습니다.
+1. **Display Page** 조각을 빈 템플릿에 끌어다 놓습니다.
 
    ![표시 페이지 조각을 빈 템플릿에 끌어다 놓습니다.](./creating-a-display-page-for-distributor-applications/images/02.png)
 
@@ -31,9 +31,9 @@
 
    ![조각은 배포자 애플리케이션 필드에 매핑됩니다.](./creating-a-display-page-for-distributor-applications/images/03.png)
 
-1. *게시*클릭하세요.
+1. **게시** 클릭하세요.
 
-1. 표시 페이지 템플릿에 대해 *작업* 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 *기본값으로 표시*를 선택합니다.
+1. 표시 페이지 템플릿에 대해 **작업** 버튼(![Actions Button](../../images/icon-actions.png))을 클릭하고 **기본값으로 표시** 를 선택합니다.
 
    이를 통해 Liferay는 배포자 애플리케이션용 템플릿을 사용합니다.
 

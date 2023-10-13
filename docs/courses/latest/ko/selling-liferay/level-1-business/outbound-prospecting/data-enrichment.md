@@ -4,7 +4,7 @@
 
 이 용어에 익숙하지 않은 사람들을 위해 데이터 강화 도구는 잠재 고객을 위한 전문 이메일과 직통 전화번호를 제공합니다.
 
-일부 인기 있는 벤더로는 [ZoomInfo](https://www.zoominfo.com), [Lusha](https://www.lusha.com)및 [Cogniism](https://www.cognism.com)가 있습니다.
+일부 인기 있는 벤더로는 [ZoomInfo](https://www.zoominfo.com) , [Lusha](https://www.lusha.com) 및 [Cogniism](https://www.cognism.com) 가 있습니다.
 
 ## 흔한 실수
 

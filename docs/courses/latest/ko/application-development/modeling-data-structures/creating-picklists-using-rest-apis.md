@@ -2,7 +2,7 @@
 
 `headless-admin-list-type` 서비스는 선택 목록에 대한 CRUD 작업을 수행하기 위한 REST API를 제공합니다. 이러한 API를 사용하는 것은 UI를 통해 수동으로 선택 목록을 생성하는 것보다 훨씬 더 효율적입니다. 사전 구성된 ERC와 현지화된 이름이 포함된 목록과 항목을 한 번에 모두 추가할 수 있기 때문입니다. 여기서는 이러한 API를 사용하여 Distributor Application 개체에 대한 나머지 선택 목록을 추가합니다.
 
-1. [이 연습](./liferay-r5w2.zip)에 대한 리소스를 다운로드하고 압축을 풉니다.
+1. [이 연습](./liferay-r5w2.zip) 에 대한 리소스를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-r5w2.zip -O

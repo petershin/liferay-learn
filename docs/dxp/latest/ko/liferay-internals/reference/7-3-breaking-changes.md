@@ -126,7 +126,7 @@ else {
 }
 ```
 
-[7.3.0-ga1 - AssetCategoryLocalServiceImpl.java#L122-L128](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/portal-impl/src/com/liferay/portlet/asset/service/impl/AssetCategoryLocalServiceImpl.java#L122-L128)참조하세요.
+[7.3.0-ga1 - AssetCategoryLocalServiceImpl.java#L122-L128](https://github.com/liferay/liferay-portal/blob/7.3.0-ga1/portal-impl/src/com/liferay/portlet/asset/service/impl/AssetCategoryLocalServiceImpl.java#L122-L128) 참조하세요.
 
 ##### AssetCategoryLocalService#rebuildTree(long, boolean)의 경우
 
@@ -141,7 +141,7 @@ else {
 - 기존 코드를 재평가하세요.
 - 기존 서비스 API가 동일한 목표를 달성할 수 있는지 탐색
 
-##### G_P_N_V와 관련된 파인더 메소드의 경우
+##### G **P** N_V와 관련된 파인더 메소드의 경우
 
 `G_P_N_V`으로 끝나는 `AssetCategory` 파인더 메소드를 사용하는 경우 대신 `P_N_V` 로 끝나는 메소드를 사용하십시오.
 
@@ -231,7 +231,7 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-제거된 기능을 직접 대체할 수는 없습니다. EXT 플러그인이 있는 경우 수동으로 배포하거나 [`ant direct-deploy`](https://github.com/liferay/liferay-plugins/blob/7.0.x/ext/build-common-ext.xml#L211)을 사용해야 합니다.
+제거된 기능을 직접 대체할 수는 없습니다. EXT 플러그인이 있는 경우 수동으로 배포하거나 [`ant direct-deploy`](https://github.com/liferay/liferay-plugins/blob/7.0.x/ext/build-common-ext.xml#L211) 을 사용해야 합니다.
 
 #### 왜 이렇게 변경되었나요?
 
@@ -281,11 +281,11 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-`SingleVMPoolUtil` 또는 `MultiVMPoolUtil`대신 `PortalCacheHelperUtil` 을 사용하십시오. 예를 들어 [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116)참조하세요.
+`SingleVMPoolUtil` 또는 `MultiVMPoolUtil`대신 `PortalCacheHelperUtil` 을 사용하십시오. 예를 들어 [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116) 참조하세요.
 
 #### 왜 이렇게 변경되었나요?
 
-`SingleVMPoolUtil` 및 `MultiVMPoolUtil` 클래스는 원래 [LPS-84138](https://issues.liferay.com/browse/LPS-84138)에서 더 이상 사용되지 않습니다. 해당 클래스는 더 이상 사용되지 않습니다.
+`SingleVMPoolUtil` 및 `MultiVMPoolUtil` 클래스는 원래 [LPS-84138](https://issues.liferay.com/browse/LPS-84138) 에서 더 이상 사용되지 않습니다. 해당 클래스는 더 이상 사용되지 않습니다.
 
 ---------------------------------------
 ### 제거된 캐시 부트스트랩 기능
@@ -459,7 +459,7 @@ Auto Deployer( `liferay-home/deploy 폴더`을 통해)를 사용하여 EXT 플�
 
 타사 라이브러리를 추가하여 코드에서 사용할 고유한 JQuery 버전을 제공하는 전략을 사용하세요.
 
-또한 임시 조치로 *시스템 설정* &rarr; *타사* &rarr; *jQuery* 에서 `jQuery 활성화` 속성을 `true`로 설정하여 이전 동작을 되돌릴 수 있습니다.
+또한 임시 조치로 **시스템 설정** &rarr; **타사** &rarr; **jQuery** 에서 `jQuery 활성화` 속성을 `true`로 설정하여 이전 동작을 되돌릴 수 있습니다.
 
 #### 왜 이렇게 변경되었나요?
 
@@ -663,7 +663,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-코드를 업데이트할 필요가 없습니다. 여전히 `ContentTransformerListener`사용하려면 시스템 설정에서 *Content & Data* &rarr; *Web Content* &rarr; *Virtual Instance Scope* &rarr; *Web Content*아래의 *Enable ContentTransformerListener* 속성을 통해 이를 활성화할 수 있습니다.
+코드를 업데이트할 필요가 없습니다. 여전히 `ContentTransformerListener`사용하려면 시스템 설정에서 **Content & Data** &rarr; **Web Content** &rarr; **Virtual Instance Scope** &rarr; **Web Content** 아래의 **Enable ContentTransformerListener** 속성을 통해 이를 활성화할 수 있습니다.
 
 #### 왜 이렇게 변경되었나요?
 
@@ -788,7 +788,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 
 ---------------------------------------
 
-### 포털 속성 이름이 "module.framework.properties.felix.fileinstall.\*"에서 "module.framework.properties.file.install.\*"로 변경되었습니다.
+### 포털 속성 이름이 "module.framework.properties.felix.fileinstall.\ **"에서 "module.framework.properties.file.install.\** "로 변경되었습니다.
 - **날짜: 2020년 7월 13일** 일
 - **JIRA 티켓:** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
 
@@ -838,13 +838,13 @@ Liferay 코드에는 몇 가지 예가 있습니다. 예를 들어, [DDMIndexerI
 
 시스템 설정에서 레거시 동작을 복원하고 `ddm__keyword__*` 및 `ddm__text__*` 필드를 계속 사용할 수도 있습니다.
 
-1. *시스템 설정* &rarr; *동적 데이터 매핑* &rarr; *동적 데이터 매핑 인덱서*로 이동합니다.
-1. *레거시 동적 데이터 매핑 인덱스 필드 활성화*을 선택합니다.
+1. **시스템 설정** &rarr; **동적 데이터 매핑** &rarr; **동적 데이터 매핑 인덱서** 로 이동합니다.
+1. **레거시 동적 데이터 매핑 인덱스 필드 활성화** 을 선택합니다.
 1. 전체 재색인을 실행합니다.
 
 #### 왜 이렇게 변경되었나요?
 
-이 변경은 *전체 필드 제한이 초과되었습니다* 동적 데이터 매핑 구조가 너무 많은 경우 발생하는 Elasticsearch 오류를 방지하기 위해 이루어졌습니다.
+이 변경은 **전체 필드 제한이 초과되었습니다** 동적 데이터 매핑 구조가 너무 많은 경우 발생하는 Elasticsearch 오류를 방지하기 위해 이루어졌습니다.
 
 ---------------------------------------
 
@@ -895,7 +895,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 #### 왜 이렇게 변경되었나요?
 
-이러한 방법은 [LPS-108525](https://issues.liferay.com/browse/LPS-108525)솔루션의 일부로 제거되었습니다.
+이러한 방법은 [LPS-108525](https://issues.liferay.com/browse/LPS-108525) 솔루션의 일부로 제거되었습니다.
 
 ---------------------------------------
 
@@ -927,7 +927,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 #### 무엇이 바뀌었나요?
 
-전역적으로, 구체적으로 엔터티에 대한 보기 수를 활성화 및 비활성화하는 기능이 포털 속성에서 제거되었으며 이제 시스템 설정으로 구성됩니다. 보기 수는 *시스템 설정* &rarr; *인프라* &rarr; *보기 수* 의 UI에서 구성하거나 `com.liferay.view.count.configuration.ViewCountConfiguration.config`라는 구성 파일을 사용하여 구성할 수 있습니다.
+전역적으로, 구체적으로 엔터티에 대한 보기 수를 활성화 및 비활성화하는 기능이 포털 속성에서 제거되었으며 이제 시스템 설정으로 구성됩니다. 보기 수는 **시스템 설정** &rarr; **인프라** &rarr; **보기 수** 의 UI에서 구성하거나 `com.liferay.view.count.configuration.ViewCountConfiguration.config`라는 구성 파일을 사용하여 구성할 수 있습니다.
 
 포털 속성 변경 사항은 다음과 같습니다.
 
@@ -947,7 +947,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 시스템 설정에서 또는 구성 파일을 사용하여 조회수 동작을 구성합니다.
 
-*시스템 설정* &rarr; *인프라* &rarr; *보기 수* `활성화` ~ `false` 설정하여 보기 수를 전역적으로 비활성화하거나 `활성화` ~ `true` 설정하여 전역적으로 보기 수를 활성화하고 특정 엔터티에 대한 보기 수를 비활성화합니다. `` 클래스 이름 값 목록에 엔터티 클래스 이름을 추가합니다.
+**시스템 설정** &rarr; **인프라** &rarr; **보기 수** `활성화` ~ `false` 설정하여 보기 수를 전역적으로 비활성화하거나 `활성화` ~ `true` 설정하여 전역적으로 보기 수를 활성화하고 특정 엔터티에 대한 보기 수를 비활성화합니다. `` 클래스 이름 값 목록에 엔터티 클래스 이름을 추가합니다.
 
 구성 파일을 사용하려면 시스템 설정에서 보기 수를 구성하고 설정을 저장한 후 이를 `com.liferay.view.count.configuration.ViewCountConfiguration.config` 파일로 내보냅니다. 그런 다음 파일을 `[Liferay Home]/osgi/configs` 폴더에 배치하여 구성을 배포합니다.
 

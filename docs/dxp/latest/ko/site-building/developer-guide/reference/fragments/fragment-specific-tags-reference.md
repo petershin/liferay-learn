@@ -135,7 +135,7 @@ Liferay Portal 7.3 GA2 이하의 경우 다음 구문을 사용하십시오.
 </div>
 ```
 
-콘텐츠 매핑은 조각의 편집 가능한 필드를 웹 콘텐츠 또는 블로그와 같은 자산 유형의 필드와 연결합니다. 예를 들어 이미지 필드를 매핑하여 웹 콘텐츠 기사에 대한 미리 보기 이미지를 표시할 수 있습니다. 매핑 필드에 대한 자세한 내용은 [조각 매핑 설정](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)을 참조하세요.
+콘텐츠 매핑은 조각의 편집 가능한 필드를 웹 콘텐츠 또는 블로그와 같은 자산 유형의 필드와 연결합니다. 예를 들어 이미지 필드를 매핑하여 웹 콘텐츠 기사에 대한 미리 보기 이미지를 표시할 수 있습니다. 매핑 필드에 대한 자세한 내용은 [조각 매핑 설정](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) 을 참조하세요.
 
 ## 편집 가능한 링크 만들기
 
@@ -194,7 +194,7 @@ Liferay Portal 7.3 GA2 이하의 경우 다음 구문을 사용하십시오.
 
 ![링크의 모양과 동작을 정의하는 여러 가지 옵션이 있습니다.](./fragment-specific-tags-reference/images/03.png)
 
-편집 가능한 링크에 대한 자세한 내용은 [편집 가능한 링크](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings)을 참조하세요.
+편집 가능한 링크에 대한 자세한 내용은 [편집 가능한 링크](../../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) 을 참조하세요.
 
 ## 편집 가능한 HTML 만들기
 
@@ -352,7 +352,7 @@ W3C HTML 표준에 따르면 맞춤 요소는 자동으로 닫힐 수 없습니�
 ]
 ```
 
-이 샘플 코드를 사용하여 페이지의 대상 언어에 따라 버튼 유형을 변경할 수 있습니다. 다음 예에서 _Contact Us_/_Contacto_ 버튼 조각은 `버튼 유형` 필드에 대해 `지역화 가능` 속성을 `true` 로 설정합니다. 예제에서는 이 속성을 사용하여 페이지가 en-US 언어(A)를 사용할 때 _기본_ 버튼 유형을 구성하고, 페이지가 es-ES(B)를 사용할 때 _개요 기본_ 유형을 구성합니다.
+이 샘플 코드를 사용하여 페이지의 대상 언어에 따라 버튼 유형을 변경할 수 있습니다. 다음 예에서 **Contact Us** / **Contacto** 버튼 조각은 `버튼 유형` 필드에 대해 `지역화 가능` 속성을 `true` 로 설정합니다. 예제에서는 이 속성을 사용하여 페이지가 en-US 언어(A)를 사용할 때 **기본** 버튼 유형을 구성하고, 페이지가 es-ES(B)를 사용할 때 **개요 기본** 유형을 구성합니다.
 
 ![조각의 지역화 가능한 요소는 일반 탭 아래에 플래그 아이콘을 표시하고 다양한 언어에 대해 다양한 구성을 지원합니다.](./fragment-specific-tags-reference/images/04.png)
 
@@ -374,7 +374,7 @@ W3C HTML 표준에 따르면 맞춤 요소는 자동으로 닫힐 수 없습니�
 
 ### 날짜 형식
 
-기본적으로 가장 일반적인 날짜 형식을 선택하거나 [`SimpleDateFormat`](https://devdocs.io/openjdk~8/java/text/simpledateformat)에 따라 날짜 형식을 사용자 정의할 수 있습니다.
+기본적으로 가장 일반적인 날짜 형식을 선택하거나 [`SimpleDateFormat`](https://devdocs.io/openjdk~8/java/text/simpledateformat) 에 따라 날짜 형식을 사용자 정의할 수 있습니다.
 
 기본적으로 제공되는 네 가지 옵션은 다음과 같습니다.
 
@@ -398,7 +398,7 @@ W3C HTML 표준에 따르면 맞춤 요소는 자동으로 닫힐 수 없습니�
 | EEE, d MMM yyyy HH:mm:ss Z | 2023년 8월 7일 월요일 11:57:00 +0000 |
 
 ```{tip}
-[조각 구성 필드를 현지화](#localizing-fragment-configurations)하는 것과 동일한 방식으로 날짜 형식을 현지화할 수 있습니다.
+[조각 구성 필드를 현지화](#localizing-fragment-configurations) 하는 것과 동일한 방식으로 날짜 형식을 현지화할 수 있습니다.
 ```
 
 ## 버튼을 작동 가능하게 만들기

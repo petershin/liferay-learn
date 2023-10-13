@@ -2,7 +2,7 @@
 
 {bdg-secondary}`사용 가능 Liferay 7.4+`
 
-클라이언트 확장을 사용하면 OSGi 모듈을 배포하지 않고도 Liferay를 확장할 수 있습니다. 기존 모듈 개발과 마찬가지로 클라이언트 확장은 [Liferay Workspace](../tooling/liferay-workspace.md)에 있습니다. 학습부터 시작해 보세요
+클라이언트 확장을 사용하면 OSGi 모듈을 배포하지 않고도 Liferay를 확장할 수 있습니다. 기존 모듈 개발과 마찬가지로 클라이언트 확장은 [Liferay Workspace](../tooling/liferay-workspace.md) 에 있습니다. 학습부터 시작해 보세요
 
 * 클라이언트 확장 개발을 시작하는 데 필요한 도구
 * 구성 파일에서 클라이언트 확장을 정의하는 방법
@@ -15,7 +15,7 @@
 1. 자바 8 또는 JDK 11.
 
     ```{note}
-    지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix)를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../installation-and-upgrades/references/jvm-configuration.html)을 참조하세요.
+    지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 를 확인하세요. 권장 JVM 설정은 [JVM 구성](../../installation-and-upgrades/references/jvm-configuration.html) 을 참조하세요.
     ```
 
 1. 라이프레이 작업공간. 예제 클라이언트 확장 프로젝트가 포함된 작업공간을 다운로드하려면 다음을 실행하세요.
@@ -26,11 +26,11 @@
 
     클라이언트 확장 프로젝트( `client-extensions/` 디렉토리에 있음)를 자신의 작업공간에 복사하거나 샘플 작업공간을 직접 사용할 수 있습니다.
 
-1. Liferay Experience Cloud(LXC)를 사용하는 경우 [`lcp` CLI 도구](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool)이 있어야 합니다.
+1. Liferay Experience Cloud(LXC)를 사용하는 경우 [`lcp` CLI 도구](https://learn.liferay.com/en/w/liferay-cloud/reference/command-line-tool) 이 있어야 합니다.
 
 ## 클라이언트 확장 프로젝트
 
-클라이언트 확장 개발은 _작업 공간과 프로젝트_ 모델을 따릅니다. [Liferay 작업 공간](../tooling/liferay-workspace.md)내에서 `[workspace-root]/client-extensions`아래에 클라이언트 확장 프로젝트를 구현합니다. 프로젝트의 `client-extension.yaml` 파일은 클라이언트 확장을 정의하며, 빌드 프로세스는 각 프로젝트에 대한 단일 출력 세트를 생성합니다. 빌드된 클라이언트 확장 프로젝트는 Liferay Universal File Format Archive(LUFFA)라고 하는 배포 가능한 `*.zip` 아카이브입니다.
+클라이언트 확장 개발은 **작업 공간과 프로젝트** 모델을 따릅니다. [Liferay 작업 공간](../tooling/liferay-workspace.md)내에서 `[workspace-root]/client-extensions`아래에 클라이언트 확장 프로젝트를 구현합니다. 프로젝트의 `client-extension.yaml` 파일은 클라이언트 확장을 정의하며, 빌드 프로세스는 각 프로젝트에 대한 단일 출력 세트를 생성합니다. 빌드된 클라이언트 확장 프로젝트는 Liferay Universal File Format Archive(LUFFA)라고 하는 배포 가능한 `*.zip` 아카이브입니다.
 
 ## 프로젝트에서 클라이언트 확장 그룹화
 

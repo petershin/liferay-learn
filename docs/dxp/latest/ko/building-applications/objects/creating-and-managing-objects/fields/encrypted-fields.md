@@ -30,19 +30,19 @@ object.encryption.key=D9z5Rwxkn+8SctNWW/q/OA==
 
 ## 암호화된 필드 추가
 
-1. *전역 메뉴* ( ![Global Menu](../../../../images/icon-applications-menu.png) )을 열고 *제어판* 탭으로 이동한 다음 *개체*클릭합니다.
+1. **전역 메뉴**( ![Global Menu](../../../../images/icon-applications-menu.png) )을 열고 **제어판** 탭으로 이동한 다음 **개체** 클릭합니다.
 
 1. 원하는 객체 정의 편집을 시작합니다.
 
-1. *Fields* 탭으로 이동하여 *Add* ( ![Add Button](../../../../images/icon-add.png) )을 클릭합니다.
+1. **Fields** 탭으로 이동하여 **Add**( ![Add Button](../../../../images/icon-add.png) )을 클릭합니다.
 
-1. *라벨* 및 *필드 이름*입력합니다.
+1. **라벨** 및 **필드 이름** 입력합니다.
 
-1. *암호화됨* 필드 유형을 선택합니다.
+1. **암호화됨** 필드 유형을 선택합니다.
 
 1. 필드가 필수인지 확인합니다.
 
-1. *저장*클릭하세요.
+1. **저장** 클릭하세요.
 
    ```{note}
    암호화 알고리즘과 키가 없으면 암호화된 필드를 저장할 수 없습니다.

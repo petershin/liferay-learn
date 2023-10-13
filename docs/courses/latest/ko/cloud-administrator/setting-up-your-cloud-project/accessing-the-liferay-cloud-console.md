@@ -6,11 +6,11 @@ Delectable Bonsai 프로젝트가 제공되었지만 Marcus와 그의 직원에�
 
 ## 프로젝트 초대 수락
 
-프로젝트가 프로비저닝되면 **liferay.cloud** 에서 프로젝트에 초대하는 이메일을 받게 됩니다. *초대 수락*클릭하세요.
+프로젝트가 프로비저닝되면 **liferay.cloud** 에서 프로젝트에 초대하는 이메일을 받게 됩니다. **초대 수락** 클릭하세요.
 
 ![Liferay Cloud 콘솔에 액세스하려면 초대에서 초대 수락 링크를 클릭하세요.](./accessing-the-liferay-cloud-console/images/01.png)
 
-링크를 클릭하면 [Liferay Cloud 콘솔](https://console.liferay.cloud/)로 이동됩니다. 초대를 수락하려면 로그인해야 합니다. 아직 계정이 없다면 *가입* 클릭하고 양식을 작성하세요.
+링크를 클릭하면 [Liferay Cloud 콘솔](https://console.liferay.cloud/) 로 이동됩니다. 초대를 수락하려면 로그인해야 합니다. 아직 계정이 없다면 **가입** 클릭하고 양식을 작성하세요.
 
 ![아직 콘솔 계정이 없다면 가입을 클릭하고 양식을 작성하세요.](./accessing-the-liferay-cloud-console/images/02.png)
 

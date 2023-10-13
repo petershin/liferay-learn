@@ -10,7 +10,7 @@
 
 ## 레이아웃 및 보기 추가
 
-1. [이 연습](./liferay-t7z2.zip)에 대한 리소스를 다운로드하고 압축을 풉니다.
+1. [이 연습](./liferay-t7z2.zip) 에 대한 리소스를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-t7z2.zip -O

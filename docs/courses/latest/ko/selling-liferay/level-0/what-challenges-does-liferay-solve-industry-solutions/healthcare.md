@@ -2,7 +2,7 @@
 
 의료 기업은 공급자와 사용자를 위한 맞춤화 가능하고 확장 가능한 솔루션을 통해 디지털 혁신의 요구 사항을 충족할 수 있는 비즈니스 파트너를 원합니다.
 
-의료 부문에 대한 Liferay 사례 연구는 [에서 볼 수 있습니다](https://www.liferay.com/resources/case-studies?industries=healthcare).
+의료 부문에 대한 Liferay 사례 연구는 [에서 볼 수 있습니다](https://www.liferay.com/resources/case-studies?industries=healthcare) .
 
 ## 의료의 주요 과제
 

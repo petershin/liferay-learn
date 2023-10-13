@@ -6,7 +6,7 @@ MuleSoft에 대한 Liferay의 커넥터는 Liferay의 API를 설명하는 OpenAP
 http://[host]:[port]/o/[headless-api-app-name]/[version]/openapi.json
 ```
 
-이러한 문서는 배포된 RESTful 웹 서비스를 기반으로 하므로 API에 대한 가장 정확한 설명입니다. Liferay API [API 소비](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis.html) 에 대해 자세히 알아볼 수 있습니다.
+이러한 문서는 배포된 RESTful 웹 서비스를 기반으로 하므로 API에 대한 가장 정확한 설명입니다. Liferay API [API 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis.html) 에 대해 자세히 알아볼 수 있습니다.
 
 OpenAPI 문서 엔드포인트를 지정하면 커넥터가 OpenAPI 문서에 정의된 경로, 경로/쿼리 매개변수 및 엔티티 메타데이터를 자동으로 구성합니다. 커넥터는 Liferay 표준을 따르고 모든 Liferay API를 지원하는 모든 OpenAPI 3.0 문서와 함께 작동합니다.
 
@@ -85,5 +85,5 @@ XML 구성을 사용하여 이 작업을 수행할 수도 있습니다. `Liferay
 ## 관련 주제
 
 * [노새 흐름 설계](./designing-mule-flows.md)
-* [API 소비](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis.html)
+* [API 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis.html)
 * [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html)

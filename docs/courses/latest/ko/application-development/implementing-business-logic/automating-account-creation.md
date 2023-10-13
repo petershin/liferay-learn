@@ -1,6 +1,6 @@
 # 계정 생성 자동화
 
-온보딩 흐름을 완료하기 위해 Delectable Bonsai는 관리자가 승인된 애플리케이션에 대한 비즈니스 계정을 쉽게 만들 수 있도록 하려고 합니다. 각 계정의 이름은 애플리케이션의 `businessName` 따라 지정되어야 하며 신청자는 계정 관리자 역할이 있는 계정에 자동으로 할당되어야 합니다. 여기서는 개체 작업 [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions)을 사용하여 이를 달성합니다.
+온보딩 흐름을 완료하기 위해 Delectable Bonsai는 관리자가 승인된 애플리케이션에 대한 비즈니스 계정을 쉽게 만들 수 있도록 하려고 합니다. 각 계정의 이름은 애플리케이션의 `businessName` 따라 지정되어야 하며 신청자는 계정 관리자 역할이 있는 계정에 자동으로 할당되어야 합니다. 여기서는 개체 작업 [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) 을 사용하여 이를 달성합니다.
 
 ![배포자 응용 프로그램 개체에 계정 설정 작업을 추가합니다.](./automating-account-creation/images/01.png)
 
@@ -8,7 +8,7 @@
 
 <!--FINISH: Fix commands and client extension names once BChan merges code!!! -->
 
-워크플로에 대한 `liferay-course-etc-spring-boot` 프로젝트를 [배포](./adding-an-approval-workflow.md#deploying-the-client-extensions)할 때 사용자 정의 개체 작업도 배포했습니다.
+워크플로에 대한 `liferay-course-etc-spring-boot` 프로젝트를 [배포](./adding-an-approval-workflow.md#deploying-the-client-extensions) 할 때 사용자 정의 개체 작업도 배포했습니다.
 
 계속하기 전에 Spring Boot 애플리케이션이 실행 중인지 확인하세요. 그렇지 않은 경우 `liferay-course-etc-spring-boot` 프로젝트 폴더로 이동하여 다음 명령을 실행합니다.
 
@@ -186,9 +186,9 @@
 
 ## 개체 작업 추가
 
-1. *Distributor Application* 개체 편집을 시작합니다.
+1. **Distributor Application** 개체 편집을 시작합니다.
 
-1. *작업* 탭으로 이동하여 *추가* ( ![Add Button](../../images/icon-add.png) )을 클릭합니다.
+1. **작업** 탭으로 이동하여 **추가**( ![Add Button](../../images/icon-add.png) )을 클릭합니다.
 
 1. 기본 정보 탭에 다음 값을 입력하세요.
 
@@ -201,7 +201,7 @@
 
    ![계정 설정 작업을 만듭니다.](./automating-account-creation/images/02.png)
 
-1. *Action Builder* 탭으로 이동하여 다음 값을 설정합니다.
+1. **Action Builder** 탭으로 이동하여 다음 값을 설정합니다.
 
    | 분야     | 가치                                                                                |
    |:------ |:--------------------------------------------------------------------------------- |
@@ -211,7 +211,7 @@
 
    ![사용자 정의 작업을 선택합니다.](./automating-account-creation/images/03.png)
 
-1. *저장*클릭하세요.
+1. **저장** 클릭하세요.
 
 저장되면 Liferay는 해당 작업을 각 응용 프로그램의 작업 메뉴에 옵션으로 추가하므로 배포자 응용 프로그램 페이지에서 수동으로 트리거할 수 있습니다.
 
@@ -225,17 +225,17 @@ Liferay는 또한 독립 실행형 작업을 트리거하기 위해 두 개의 �
 
 ## 계정 설정 권한 할당
 
-1. *전역 메뉴* ( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 *제어판* 탭으로 이동한 다음 *역할*클릭합니다.
+1. **전역 메뉴**( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 **제어판** 탭으로 이동한 다음 **역할** 클릭합니다.
 
-1. *비즈니스 개발 관리자* 역할을 편집합니다.
+1. **비즈니스 개발 관리자** 역할을 편집합니다.
 
-1. *권한 정의* 탭으로 이동합니다.
+1. **권한 정의** 탭으로 이동합니다.
 
 1. `배포자 애플리케이션: action.setUpAccount` 권한을 추가합니다.
 
    ![계정 설정 권한을 추가합니다.](./automating-account-creation/images/06.png)
 
-1. *저장*클릭하세요.
+1. **저장** 클릭하세요.
 
 이제 비즈니스 관리자는 배포자 애플리케이션 페이지를 통해 또는 헤드리스 API를 사용하여 작업을 트리거할 수 있습니다.
 
@@ -243,13 +243,13 @@ Liferay는 또한 독립 실행형 작업을 트리거하기 위해 두 개의 �
 
 1. 대리점 신청 페이지로 이동합니다.
 
-1. 항목에 대해 *작업* ( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *계정 설정*선택합니다.
+1. 항목에 대해 **작업**( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 **계정 설정** 선택합니다.
 
-1. *Accounts* 애플리케이션을 열고 계정이 생성되었는지 확인하세요.
+1. **Accounts** 애플리케이션을 열고 계정이 생성되었는지 확인하세요.
 
    ![계정이 생성되었는지 확인합니다.](./automating-account-creation/images/07.png)
 
-1. *사용자* 탭으로 이동하여 신청자가 계정과 연결되어 있고 계정 관리자 역할이 할당되었는지 확인합니다.
+1. **사용자** 탭으로 이동하여 신청자가 계정과 연결되어 있고 계정 관리자 역할이 할당되었는지 확인합니다.
 
    ![신청자가 계정과 연결되어 있고 계정 관리자 역할이 할당되었는지 확인합니다.](./automating-account-creation/images/08.png)
 

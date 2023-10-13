@@ -1,17 +1,17 @@
 # 콘텐츠 추천 이해
 
-사용자는 귀하의 웹사이트를 방문할 때 귀하의 콘텐츠와 상호 작용하고 관심 분야에 따라 다양한 행동을 보입니다. Liferay DXP는 Liferay Analytics Cloud [과 함께 이러한 탐색 행동을 분석하고 사용자에게 관련 콘텐츠를 표시](https://learn.liferay.com/analytics-cloud/latest/en/index.html)수 있습니다. 이는 사용자가 구매하거나 소비할 가능성이 더 높은 특정 제품이나 콘텐츠를 홍보하는 데 유용할 수 있습니다. 예를 들어 사용자가 온라인 상점을 방문하고 특정 유형의 제품에 관심을 보이면 콘텐츠 추천을 사용하여 사용자에게 유사한 제품이나 관련 제품 프로모션을 표시할 수 있습니다.
+사용자는 귀하의 웹사이트를 방문할 때 귀하의 콘텐츠와 상호 작용하고 관심 분야에 따라 다양한 행동을 보입니다. Liferay DXP는 Liferay Analytics Cloud [애널리틱스 클라우드](https://learn.liferay.com/analytics-cloud/latest/ko/index.html) 수 있습니다. 이는 사용자가 구매하거나 소비할 가능성이 더 높은 특정 제품이나 콘텐츠를 홍보하는 데 유용할 수 있습니다. 예를 들어 사용자가 온라인 상점을 방문하고 특정 유형의 제품에 관심을 보이면 콘텐츠 추천을 사용하여 사용자에게 유사한 제품이나 관련 제품 프로모션을 표시할 수 있습니다.
 
 ```{important}
-사용자에게 콘텐츠 추천을 제공하려면 [Liferay DXP 인스턴스에 애널리틱스 클라우드를 연결](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)해야 합니다.
+사용자에게 콘텐츠 추천을 제공하려면 [Liferay DXP 인스턴스에 애널리틱스 클라우드를 연결](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 해야 합니다.
 ```
 
 ## 콘텐츠 추천의 작동 방식
 
-콘텐츠 추천을 구성하는 과정은 2단계로 이루어집니다. 먼저 사용자의 행동을 추적하고 관심 주제를 정의합니다. 이 단계에는 [DXP 인스턴스에 연결된 Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)가 필요합니다. 사이트에서의 이전 사용자 행동을 기반으로 Analytics Cloud는 관심 주제를 정의하고 순위를 매긴 다음 이러한 관심 주제를 사이트의 사용자 식별자에 연결합니다. 둘째, 사용자의 관심사를 기반으로 사용자에게 추천 콘텐츠를 표시합니다. 이 단계에서는 [동적 컬렉션](../../../콘텐츠-작성-관리/컬렉션 및 컬렉션 페이지/컬렉션 및 컬렉션 페이지 정보/컬렉션 및 컬렉션 페이지.md)을 생성하고 웹사이트에 이 컬렉션을 표시해야 합니다. 애널리틱스 클라우드는 사용자의 관심사에 따라 일련의 키워드를 DXP로 전송하며, 이러한 키워드는 컬렉션에서 필터로 작동합니다. 사용자에게 표시할 콘텐츠 유형을 정의하려면 컬렉션이 필요합니다.
+콘텐츠 추천을 구성하는 과정은 2단계로 이루어집니다. 먼저 사용자의 행동을 추적하고 관심 주제를 정의합니다. 이 단계에는 [DXP 인스턴스에 연결된 Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 가 필요합니다. 사이트에서의 이전 사용자 행동을 기반으로 Analytics Cloud는 관심 주제를 정의하고 순위를 매긴 다음 이러한 관심 주제를 사이트의 사용자 식별자에 연결합니다. 둘째, 사용자의 관심사를 기반으로 사용자에게 추천 콘텐츠를 표시합니다. 이 단계에서는 [동적 컬렉션](../../../콘텐츠-작성-관리/컬렉션 및 컬렉션 페이지/컬렉션 및 컬렉션 페이지 정보/컬렉션 및 컬렉션 페이지.md)을 생성하고 웹사이트에 이 컬렉션을 표시해야 합니다. 애널리틱스 클라우드는 사용자의 관심사에 따라 일련의 키워드를 DXP로 전송하며, 이러한 키워드는 컬렉션에서 필터로 작동합니다. 사용자에게 표시할 콘텐츠 유형을 정의하려면 컬렉션이 필요합니다.
 
 ```{note}
-Analytics Cloud에서 관심 분야로 작업하는 방법에 대한 자세한 내용은 [Analytics Cloud 설명서](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)를 참조하세요.
+Analytics Cloud에서 관심 분야로 작업하는 방법에 대한 자세한 내용은 [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html) 를 참조하세요.
 ```
 
 ![Liferay Analytics Cloud의 관심분야 보기](./understanding-content-recommendations/images/01.png)
@@ -27,8 +27,8 @@ Analytics Cloud는 현재 사용자의 관심을 창출하기 위해 영어로 �
 다음 요소가 있는 경우 콘텐츠 추천이 자동으로 작동합니다.
 
 1. 1. [Analytics Cloud가 Liferay DXP 인스턴스에 연결됨](./configuring-content-recommendations.md#connecting-analytics-cloud-to-your-liferay-dxp-instance) 및 사이트 콘텐츠가 동기화됩니다.
-2. 다른 콘텐츠를 포함하는 동적 컬렉션을 Liferay DXP에서 [생성](./configuring-content-recommendations.md#동적 컬렉션 생성)하고 콘텐츠 추천 옵션을 활성화합니다.
-3. 자산 게시자, 컬렉션 표시 조각 또는 컬렉션 페이지를 사용하여 [동적 컬렉션 표시](./configuring-content-recommendations.md#동적 컬렉션 표시)를 표시합니다.
+2. 다른 콘텐츠를 포함하는 동적 컬렉션을 Liferay DXP에서 [생성](./configuring-content-recommendations.md#동적 컬렉션 생성) 하고 콘텐츠 추천 옵션을 활성화합니다.
+3. 자산 게시자, 컬렉션 표시 조각 또는 컬렉션 페이지를 사용하여 [동적 컬렉션 표시](./configuring-content-recommendations.md#동적 컬렉션 표시) 를 표시합니다.
 
 ```{note}
 Liferay DXP 7.2에서는 컬렉션의 이름이 콘텐츠 세트로 지정됩니다.

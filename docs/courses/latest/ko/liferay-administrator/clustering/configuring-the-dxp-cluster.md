@@ -102,18 +102,18 @@
 
 클러스터에서는 콘텐츠가 한 노드에서 생성되거나 수정되므로 다른 노드에서도 사용할 수 있어야 합니다. 이를 실제로 확인하려면 간단한 블로그 게시물을 작성하세요.
 
-1. `Liferay-1` 노드(예: `http://localhost:8080`)에서 _제품 메뉴_ (![Product Menu](../../images/icon-product-menu.png))를 엽니다. _콘텐츠 & 데이터_아래에서 _블로그_ 을 클릭하세요.
+1. `Liferay-1` 노드(예: `http://localhost:8080`)에서 **제품 메뉴**(![Product Menu](../../images/icon-product-menu.png))를 엽니다. **콘텐츠 & 데이터** 아래에서 **블로그** 을 클릭하세요.
 
-1. __ 추가(![Add icon](../../images/icon-add.png))를 클릭합니다.
+1. **추가** (![아이콘 추가](../../images/icon-add.png))를 클릭하세요.
 
 1. 다음 항목을 추가합니다.
 
    * 제목: 푸
    * 내용: 바
 
-   _저장_클릭하세요.
+**저장** 클릭하세요.
 
-1. `Liferay-2` 노드(예: `http://localhost:9080`)로 전환합니다. _제품 메뉴_ (![Product Menu](../../images/icon-product-menu.png))을 엽니다. _콘텐츠 & 데이터_아래에서 _블로그_ 을 클릭하세요.
+1. `Liferay-2` 노드(예: `http://localhost:9080`)로 전환합니다. **제품 메뉴**(![Product Menu](../../images/icon-product-menu.png))을 엽니다. **콘텐츠 & 데이터** 아래에서 **블로그** 을 클릭하세요.
 
 1. `Liferay-1` 노드에서 생성된 블로그 항목은 `Liferay-2` 노드에서 볼 수 있습니다.
 

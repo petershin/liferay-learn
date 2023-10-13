@@ -74,7 +74,6 @@ Unable to add the journal article image {filename} into the file repository
 
 * 사용 가능한 Liferay 앱 및 모듈에서 더 이상 사용되지 않는 데이터. [데이터 제거](../reference/data-removal.md) 도구는 이를 제거합니다.
 
-
 ## 결론
 
 필요한 모든 업그레이드 후 작업을 완료하면 Liferay 서버가 이전과 같이 정상 작동할 준비가 된 것입니다. 축하합니다!

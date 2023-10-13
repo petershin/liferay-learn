@@ -15,8 +15,8 @@ Liferay의 포털 유산은 우리에게 독특한 관점을 제공합니다.
 * 디지털 민첩성
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-value-proposition)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-value-proposition) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) 을 다운로드하세요.
 ```
 
 ## 통합 기능

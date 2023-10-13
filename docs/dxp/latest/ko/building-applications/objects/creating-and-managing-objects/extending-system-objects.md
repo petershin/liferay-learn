@@ -18,7 +18,7 @@ Liferay 개체를 사용하면 지원되는 시스템 서비스를 확장할 수
 
 ![Objects Framework와 통합된 시스템 서비스를 확장합니다.](./extending-system-objects/images/01.png)
 
-시스템 개체를 확장할 때 [필드](#adding-fields), [관계](#adding-relationships), [작업](#adding-actions)및 [유효성 검사](#adding-validations) 추가할 수 있습니다.
+시스템 개체를 확장할 때 [필드](#adding-fields) , [관계](#adding-relationships) , [작업](#adding-actions) 및 [유효성 검사](#adding-validations) 추가할 수 있습니다.
 
 | 특징 | 시스템 개체   | 사용자 정의 개체 |
 |:-- |:-------- |:--------- |
@@ -34,7 +34,7 @@ Liferay 개체를 사용하면 지원되는 시스템 서비스를 확장할 수
 시스템 개체에 필드를 추가할 수 있습니다. 추가 데이터베이스 열은 서비스의 원래 테이블 이름에 `_x` 추가된(예: `AccountEntry_x`) 별도의 데이터베이스 테이블에 추가됩니다. 시스템 객체는 사용 가능한 [필드 유형을 지원합니다](./fields.md). 시스템 개체는 사용자 정의 레이아웃이나 보기를 지원하지 않으므로 Headless API를 통해서만 이러한 사용자 정의 필드에 액세스할 수 있습니다. 자세한 내용은 [개체에 필드 추가](./fields/adding-fields-to-objects.md) 참조하세요.
 
 ```{note}
-Liferay의 [사용자 정의 필드](../../../system-administration/configuring-liferay/adding-custom-fields.md) 애플리케이션은 [Expando](../.. /data-frameworks/expando-framework/accessing-custom-fields-with-expando.md) 프레임워크. 개체는 Expando 기반 사용자 정의 필드를 지원하지 않으므로 개체 기능(예: [relationships](#adding-relationships), [actions](#adding-actions) 및 [validations](#adding-validations))과 함께 사용할 수 없습니다.
+Liferay의 [사용자 정의 필드](../../../system-administration/configuring-liferay/adding-custom-fields.md) 애플리케이션은 [Expando](../.. /data-frameworks/expando-framework/accessing-custom-fields-with-expando.md) 프레임워크. 개체는 Expando 기반 사용자 정의 필드를 지원하지 않으므로 개체 기능(예: [relationships](#adding-relationships) , [actions](#adding-actions) 및 [validations](#adding-validations) )과 함께 사용할 수 없습니다.
 ```
 
 ## 관계 추가
@@ -75,7 +75,7 @@ Liferay의 [사용자 정의 필드](../../../system-administration/configuring-
 
 ## 추가 구성 옵션
 
-시스템 개체를 편집할 때 *세부 정보* 탭에서 다음 설정을 구성할 수도 있습니다.
+시스템 개체를 편집할 때 **세부 정보** 탭에서 다음 설정을 구성할 수도 있습니다.
 
 | 분야               | 묘사                                   | 시스템 개체에서 지원되나요? |
 |:---------------- |:------------------------------------ | --------------- |

@@ -4,7 +4,7 @@
 
 ## 테스트 데이터 추가
 
-1. 이 연습 [에 대한 리소스를 다운로드하고 압축](./liferay-g2n9.zip)풉니다.
+1. 이 연습 [에 대한 리소스를 다운로드하고 압축](./liferay-g2n9.zip) 풉니다.
 
    ```bash
    curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-g2n9.zip -O
@@ -56,7 +56,7 @@
 
 1. 개체를 열고 배포자 응용 프로그램 정의 편집을 시작합니다.
 
-1. 제목 필드를 *Business Name* 로 설정하고 *Save*클릭합니다. 이는 관계 필드에서 개체 항목을 식별하는 데 사용되는 필드를 결정합니다.
+1. 제목 필드를 **Business Name** 로 설정하고 **Save** 클릭합니다. 이는 관계 필드에서 개체 항목을 식별하는 데 사용되는 필드를 결정합니다.
 
    ![제목 필드를 회사 이름으로 설정하고 저장을 클릭합니다.](./relating-object-entries/images/04.png)
 
@@ -68,9 +68,9 @@
 
 1. 배포자 응용 프로그램을 열고 항목 편집을 시작합니다.
 
-1. *평가 노트* 탭으로 이동합니다.
+1. **평가 노트** 탭으로 이동합니다.
 
-1. *Add* (![Add Button](../../images/icon-add.png))을 클릭하고 기존 애플리케이션 평가에서 선택합니다.
+1. **Add**(![Add Button](../../images/icon-add.png))을 클릭하고 기존 애플리케이션 평가에서 선택합니다.
 
    ![기존 애플리케이션 평가 중에서 선택하세요.](./relating-object-entries/images/06.png)
 
@@ -78,7 +78,7 @@
 
    ![관계 테이블은 ID와 제목 필드를 사용하여 관련된 각 평가를 식별합니다.](./relating-object-entries/images/07.png)
 
-1. 애플리케이션 평가 정의의 제목 필드를 *Author*로 업데이트합니다.
+1. 애플리케이션 평가 정의의 제목 필드를 **Author** 로 업데이트합니다.
 
 1. 배포자 애플리케이션으로 돌아가서 이제 관계 테이블이 ID 및 작성자 필드를 사용하여 관련 평가를 식별하는 것을 확인합니다.
 

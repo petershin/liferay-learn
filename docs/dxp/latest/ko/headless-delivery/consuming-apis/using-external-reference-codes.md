@@ -10,7 +10,7 @@ Liferay의 헤드리스 API 엔드포인트 중 다수는 외부 참조 코드(E
 
 ERC를 사용하여 블로그 게시물을 만들고 액세스하세요.
 
-1. 귀하의 [사이트의 ID](./consuming-rest-services.md#identify-the-site-containing-the-data)기록해 두십시오.
+1. 귀하의 [사이트의 ID](./consuming-rest-services.md#identify-the-site-containing-the-data) 기록해 두십시오.
 
 1. 다음 컬 명령을 실행하여 새 블로그 게시물을 만듭니다. `{siteId}` 사이트 ID로 바꾸세요.
 

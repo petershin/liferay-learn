@@ -8,11 +8,11 @@ Liferay의 계정은 B2C(즉, 기업 대 소비자) 컨텍스트에서 개별 �
 
 비즈니스 유형 계정을 만드세요:
 
-1. _글로벌 메뉴로 이동합니다._ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _계정_. _계정 추가_ (![Add icon](../../images/icon-add.png))을 클릭하세요.
+1. **글로벌 메뉴로 이동합니다.**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **계정** . **계정 추가**(![Add icon](../../images/icon-add.png))을 클릭하세요.
 
-1. 새 창에서 계정 이름으로 `Marvelous Markets NYC` 입력합니다. _저장_클릭하세요.
+1. 새 창에서 계정 이름으로 `Marvelous Markets NYC` 입력합니다. **저장** 클릭하세요.
 
-1. _주소_ 탭을 클릭합니다. _추가_ (![Add icon](../../images/icon-add.png))을 클릭합니다. 다음 정보를 입력하세요.
+1. **주소** 탭을 클릭합니다. **추가**(![Add icon](../../images/icon-add.png))을 클릭합니다. 다음 정보를 입력하세요.
 
    * 이름: `Marvelous Markets NYC`
    * 국가: `미국`
@@ -21,22 +21,22 @@ Liferay의 계정은 B2C(즉, 기업 대 소비자) 컨텍스트에서 개별 �
    * 지역: `뉴욕`
    * 우편번호: `10027`
 
-1. _Details_ 탭을 다시 클릭하세요.
+1. **Details** 탭을 다시 클릭하세요.
 
    - 기본 계정 주소 섹션까지 아래로 스크롤합니다.
-   - 청구서 제목 아래에서 _기본 주소 설정_ 클릭하세요.
+   - 청구서 제목 아래에서 **기본 주소 설정** 클릭하세요.
    - 방금 생성한 주소를 선택하세요.
-   - _저장_클릭하세요.
+   - **저장** 클릭하세요.
    - 같은 방법으로 배송지 주소도 기본 주소로 설정하세요.
 
 ## 계정 사용자 추가
 
 방금 만든 계정에 대한 새 사용자를 만듭니다. 참고로, 계정에 대한 새 사용자를 생성하거나 기존 사용자를 계정과 연결할 수 있습니다.
 
-1. _글로벌 메뉴로 이동_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _계정 사용자_.
+1. **글로벌 메뉴로 이동**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **계정 사용자** .
 
-   - _사용자 추가_ (![Add icon](../../images/icon-add.png))을 클릭합니다.
-   - _클릭하세요. Marvelous Markets NYC 옆에 있는_ 선택하세요.
+   - **사용자 추가**(![Add icon](../../images/icon-add.png))을 클릭합니다.
+   - **클릭하세요. Marvelous Markets NYC 옆에 있는** 선택하세요.
 
 1. 다음 매장 관리자를 만듭니다.
 
@@ -46,7 +46,7 @@ Liferay의 계정은 B2C(즉, 기업 대 소비자) 컨텍스트에서 개별 �
    * 성: `노먼`
    * 직위 : `점장`
 
-   _저장_클릭하세요.
+**저장** 클릭하세요.
 
 ## 계정 역할 할당
 
@@ -54,13 +54,13 @@ Liferay의 계정은 B2C(즉, 기업 대 소비자) 컨텍스트에서 개별 �
 
 Noah Norman에게 주문 관리자 역할을 할당합니다. 이러한 방식으로 Noah의 직원은 계정의 장바구니에 항목을 추가할 수 있으며 Noah는 최종 승인을 제공합니다.
 
-1. _글로벌 메뉴로 이동합니다._ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _계정_.
+1. **글로벌 메뉴로 이동합니다.**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **계정** .
 
-   - _Marvelous Markets NYC_을 클릭하세요.
-   - _역할_ 탭을 클릭합니다.
-   - _주문 관리자_클릭하세요.
+   - **Marvelous Markets NYC** 을 클릭하세요.
+   - **역할** 탭을 클릭합니다.
+   - **주문 관리자** 클릭하세요.
 
-2. 다음 창에서 _사용자_ 할당(![Add icon](../../images/icon-add.png))을 클릭합니다. Noah Norman을 선택하고 _Assign_클릭합니다.
+2. 다음 창에서 **사용자** 할당(![Add icon](../../images/icon-add.png))을 클릭합니다. Noah Norman을 선택하고 **Assign** 클릭합니다.
 
    Noah의 직원이 계정에 주문을 추가하면 Noah는 주문을 승인하고 관리할 수 있습니다. 이러한 역할에 대해 자세히 알아보려면 [상거래 역할 참조](https://learn.liferay.com/en/w/commerce/users-and-accounts/roles-and-permissions/commerce-roles-reference) 을 참조하세요.
 
@@ -68,50 +68,50 @@ Noah Norman에게 주문 관리자 역할을 할당합니다. 이러한 방식�
 
 계정 그룹을 사용하면 여러 계정을 구성하고 관리할 수 있습니다. 예를 들어, Delectable Bonsai는 Marvelous Markets 계정 그룹에 속한 모든 시장에 대해 더 낮은 가격을 적용하도록 선택할 수 있습니다.
 
-1. _글로벌 메뉴로 이동_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _계정 그룹_. _계정 그룹 추가_ (![Add icon](../../images/icon-add.png))을 클릭합니다.
+1. **글로벌 메뉴로 이동**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **계정 그룹** . **계정 그룹 추가**(![Add icon](../../images/icon-add.png))을 클릭합니다.
 
-2. 계정 그룹 이름으로 `Marvelous Markets` 이라는 이름을 지정합니다. _저장_클릭하세요.
+2. 계정 그룹 이름으로 `Marvelous Markets` 이라는 이름을 지정합니다. **저장** 클릭하세요.
 
-3. _계정_ 탭을 클릭하세요.
+3. **계정** 탭을 클릭하세요.
 
-   - _계정_ 할당(![Add icon](../../images/icon-add.png))을 클릭합니다.
-   - 새 창에서 _Marvelous Markets NYC_ 선택하고 _Assign_클릭합니다.
+   - **계정** 할당(![Add icon](../../images/icon-add.png))을 클릭합니다.
+   - 새 창에서 **Marvelous Markets NYC** 선택하고 **Assign** 클릭합니다.
 
    이러한 방식으로 다른 사이트의 다양한 Marvelous 시장을 그룹에 추가할 수 있습니다.
 
 동일한 엔터티 아래에 여러 계정이 있는 대규모 B2B 컨텍스트에서는 전용 조직을 만드는 것이 합리적일 수 있습니다. 그런 다음 전체 조직에 계정 관리자 역할을 할당할 수 있습니다. 예를 들어, 여러 사이트에서 모든 Marvelous Market 계정을 조직에 배치할 수 있습니다. 그런 다음 Delectable Bonsai의 누군가에게 계정 관리자 역할을 할당하여 모든 계정을 감독할 수 있습니다.
 
-1. _글로벌 메뉴로 이동_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _사용자 및 조직_.
+1. **글로벌 메뉴로 이동**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **사용자 및 조직** .
 
-   * _조직_ 탭을 클릭합니다.
-   * __ 추가(![Add icon](../../images/icon-add.png))를 클릭합니다.
-   * _이름_ 필드에 `Marvelous Markets` 입력합니다.
-   * _저장_클릭하세요.
+    * **조직** 탭을 클릭하세요.
+    * **추가**(![아이콘 추가](../../images/icon-add.png))를 클릭하세요.
+    * **이름** 필드에 'Marvelous Markets'를 입력하세요.
+    * **저장** 을 클릭하세요.
 
-1. _제어판_ &rarr; _계정_로 이동합니다. _Marvelous Markets NYC_을 클릭하세요.
+1. **제어판** &rarr; **계정** 로 이동합니다. **Marvelous Markets NYC** 을 클릭하세요.
 
-   * _조직_ 탭을 클릭합니다.
-   * _조직 할당_ (![Add icon](../../images/icon-add.png))을 클릭합니다.
+   * **조직** 탭을 클릭합니다.
+   * **조직 할당**(![Add icon](../../images/icon-add.png))을 클릭합니다.
 
-1. 새 창에서 _Marvelous Markets_ 선택하고 _Assign_클릭합니다. Marvelous Markets NYC 계정은 이제 Marvelous Markets 조직의 일부가 되었습니다.
+1. 새 창에서 **Marvelous Markets** 선택하고 **Assign** 클릭합니다. Marvelous Markets NYC 계정은 이제 Marvelous Markets 조직의 일부가 되었습니다.
 
    ![Marvelous Markets NYC는 이제 Marvelous Markets 조직의 일부입니다.](./working-with-accounts/images/01.png)
 
-1. 이제 Lily Lewis를 계정 관리자로 지정하세요. _제어판_ &rarr; _사용자 및 조직_로 이동합니다.
+1. 이제 Lily Lewis를 계정 관리자로 지정하세요. **제어판** &rarr; **사용자 및 조직** 로 이동합니다.
 
-   * _Lily Lewis_을 클릭하세요.
-   * 왼쪽 탐색에서 _조직_ 클릭합니다.
-   * _클릭하고_선택합니다.
-   * _클릭하세요. Marvelous Markets 옆에 있는_ 선택하세요.
-   * _저장_클릭하세요.
+   * **Lily Lewis** 을 클릭하세요.
+   * 왼쪽 탐색에서 **조직** 클릭합니다.
+   * **클릭하고** 선택합니다.
+   * **클릭하세요. Marvelous Markets 옆에 있는** 선택하세요.
+   * **저장** 클릭하세요.
 
    Lily Lewis는 이제 Marvelous Markets 조직의 일원이기도 합니다.
 
-5. 왼쪽 탐색에서 _역할_ 클릭합니다.
+5. 왼쪽 탐색에서 **역할** 클릭합니다.
 
-   * 조직 역할 옆에 있는 _선택_ 클릭합니다.
-   * _클릭하세요. 계정 관리자 옆에 있는_ 선택하세요.
-   * _저장_클릭하세요.
+   * 조직 역할 옆에 있는 **선택** 클릭합니다.
+   * **클릭하세요. 계정 관리자 옆에 있는** 선택하세요.
+   * **저장** 클릭하세요.
 
    ![Lily Lewis는 현재 Marvelous Markets의 계정 관리자입니다.](./working-with-accounts/images/02.png)
 

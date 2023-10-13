@@ -8,9 +8,9 @@ Liferay 인스턴스는 동일한 설치를 공유하지만 다른 도메인 이
 
 1. 이전 단계에서 생성한 `lunch.delectablebonsai.com` 인스턴스로 이동합니다.
 
-1. _글로벌 메뉴로 이동_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _인스턴스 설정_. _플랫폼_에서 _사용자 인증_선택하세요.
+1. **글로벌 메뉴로 이동**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **인스턴스 설정** . **플랫폼** 에서 **사용자 인증** 선택하세요.
 
-1. _낯선 사람이 계정을 만들 수 있도록 허용_이라고 표시된 상자를 선택 취소합니다.
+1. **낯선 사람이 계정을 만들 수 있도록 허용** 이라고 표시된 상자를 선택 취소합니다.
 
    ![낯선 사람이 계정을 만들 수 있도록 허용이 선택 취소되어 있습니다.](./configuring-instance-settings/images/01.png)
 

@@ -13,17 +13,17 @@
 ```
 
 ```{important}
-계정 및 조직 역할은 계정 제한이 활성화된 개체에서만 지원됩니다. 그렇지 않으면 개체 권한 할당에 일반 및 사이트 역할만 사용할 수 있습니다. [계정 제한 및 사용자 역할](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md#account-restriction-and-user-roles)을 참조하세요.
+계정 및 조직 역할은 계정 제한이 활성화된 개체에서만 지원됩니다. 그렇지 않으면 개체 권한 할당에 일반 및 사이트 역할만 사용할 수 있습니다. [계정 제한 및 사용자 역할](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md#account-restriction-and-user-roles) 을 참조하세요.
 ```
 
 ## 애플리케이션 권한
 
-애플리케이션 권한은 게시된 개체 자체에 대한 액세스 권한을 부여하며 [리소스 관련 권한](#resource-permissions)포함하지 않습니다. 각 개체에는 정의된 범위에 따라 다음과 같은 표준 애플리케이션 권한이 포함됩니다.
+애플리케이션 권한은 게시된 개체 자체에 대한 액세스 권한을 부여하며 [리소스 관련 권한](#resource-permissions) 포함하지 않습니다. 각 개체에는 정의된 범위에 따라 다음과 같은 표준 애플리케이션 권한이 포함됩니다.
 
 | 허가                                | 묘사                                                                                      |
 |:--------------------------------- |:--------------------------------------------------------------------------------------- |
-| 제어판에서 액세스 (*회사 범위만*)              | 전역 메뉴( ![Global Menu](../../../images/icon-applications-menu.png) )에서 개체에 액세스합니다.       |
-| 사이트 및 자산 라이브러리 관리에 액세스(*사이트 범위만*) | 사이트 메뉴( ![Site Menu](../../../images/icon-product-menu.png) ) 또는 자산 라이브러리에서 개체에 액세스하세요. |
+| 제어판에서 액세스 (**회사 범위만**)              | 전역 메뉴( ![Global Menu](../../../images/icon-applications-menu.png) )에서 개체에 액세스합니다.       |
+| 사이트 및 자산 라이브러리 관리에 액세스(**사이트 범위만**) | 사이트 메뉴( ![Site Menu](../../../images/icon-product-menu.png) ) 또는 자산 라이브러리에서 개체에 액세스하세요. |
 | 설정                                | N/A                                                                                     |
 | 권한                                | 개체에 대한 응용 프로그램 권한을 보고 수정합니다.                                                            |
 | 환경 설정                             | N/A                                                                                     |
@@ -31,7 +31,7 @@
 
 ## 리소스 권한
 
-리소스 권한은 개체 응용 프로그램의 리소스를 보고 작업할 수 있는 액세스 권한을 부여합니다. 이러한 권한 중 일부는 [객체 항목 생성과 관련이 있고 다른 권한은 [기존 항목](#acting-on-existing-entries) (](#creating-entries): 편집, 삭제)에 대한 작업을 수행하는 데 사용됩니다.
+리소스 권한은 개체 응용 프로그램의 리소스를 보고 작업할 수 있는 액세스 권한을 부여합니다. 이러한 권한 중 일부는 [객체 항목 생성과 관련이 있고 다른 권한은 [기존 항목](#acting-on-existing-entries) (](#creating-entries) : 편집, 삭제)에 대한 작업을 수행하는 데 사용됩니다.
 
 ### 항목 만들기
 
@@ -66,7 +66,7 @@
 
 1. 원하는 사용자 정의 개체로 이동합니다.
 
-1. 원하는 엔터티에 대해 *작업* 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 *권한*선택합니다.
+1. 원하는 엔터티에 대해 **작업** 버튼(![Actions Button](../../../images/icon-actions.png))을 클릭하고 **권한** 선택합니다.
 
    ![원하는 엔터티에 대한 작업 버튼을 클릭하고 권한을 선택합니다.](./permissions-framework-integration/images/01.png)
 
@@ -78,7 +78,7 @@
 
     ![원하는 역할에 권한을 할당하려면 확인란을 사용하세요.](./permissions-framework-integration/images/02.png)
 
-1. *저장*을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 관련 주제
 

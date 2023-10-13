@@ -55,5 +55,5 @@
    요청한 데이터는 24시간 동안 다운로드할 수 있습니다. 그 이후에도 동일한 요청이 들어오면 새로운 요청으로 처리됩니다.
 
 ```{note}
-다운로드한 JSON 파일의 데이터는 [JSON Lines](https://jsonlines.org) 형식을 사용합니다. 여기서 각 줄은 유효한 JSON 개체입니다. 이는 구문 분석 및 읽기가 쉽고 [Jackson](https://github.com/FasterXML/jackson)과 같은 다양한 라이브러리에서 지원되는 유연한 형식을 제공합니다.
+다운로드한 JSON 파일의 데이터는 [JSON Lines](https://jsonlines.org) 형식을 사용합니다. 여기서 각 줄은 유효한 JSON 개체입니다. 이는 구문 분석 및 읽기가 쉽고 [Jackson](https://github.com/FasterXML/jackson) 과 같은 다양한 라이브러리에서 지원되는 유연한 형식을 제공합니다.
 ```

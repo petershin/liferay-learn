@@ -2,7 +2,7 @@
 
 제조업체는 국제적이고 역동적이며 경쟁이 치열한 복잡한 B2B 환경에서 운영되기 때문에 제조는 Liferay에 이상적인 산업입니다. 많은 플레이어가 유통부터 판매까지 제품을 만드는 가치 사슬에 참여하므로 기술에는 효율성을 개선하고 프로세스를 시행할 수 있는 많은 기회가 있습니다.
 
-또한 많은 유명 제조업체에 대한 Liferay의 방대한 경험을 참고 자료 및 [사례 연구](https://www.liferay.com/resources/case-studies?industries=manufacturing)로 확인할 수 있습니다.
+또한 많은 유명 제조업체에 대한 Liferay의 방대한 경험을 참고 자료 및 [사례 연구](https://www.liferay.com/resources/case-studies?industries=manufacturing) 로 확인할 수 있습니다.
 
 ## 제조업체의 주요 과제
 

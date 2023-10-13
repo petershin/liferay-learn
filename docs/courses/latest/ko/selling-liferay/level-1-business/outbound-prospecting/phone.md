@@ -19,7 +19,7 @@
 
 ### 음성 메일을 남기지 않음
 
-[Salesloft](https://salesloft.com/resources/blog/5-prospect-channels-your-sales-process-needs/)에 따르면, "음성 메일과 이메일 직후의 이메일 전환율이 10% 증가한 것으로 보고되었습니다."
+[Salesloft](https://salesloft.com/resources/blog/5-prospect-channels-your-sales-process-needs/) 에 따르면, "음성 메일과 이메일 직후의 이메일 전환율이 10% 증가한 것으로 보고되었습니다."
 
 음성 메일을 남기는 목적은 전화 응답을 받기 위한 것이 아닙니다. 오히려 이메일 응답률을 높이려면 잠재 고객 음성 메일을 남겨야 합니다.
 

@@ -8,7 +8,7 @@
 
    ![Distributor Application 개체 편집을 시작하고 해당 ID를 복사합니다.](./importing-fragments-for-the-distributor-application-pages/images/01.png)
 
-1. [Distributor Application 조각 세트](./liferay-b2m3.zip)을 다운로드하고 압축을 풉니다.
+1. [Distributor Application 조각 세트](./liferay-b2m3.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/importing-fragments-for-the-distributor-application-pages/liferay-b2m3.zip -O
@@ -43,13 +43,13 @@
 
 ## 조각 세트 가져오기
 
-1. *사이트 메뉴* ( ![Site Menu](../../images/icon-product-menu.png) )을 열고 *디자인*확장한 다음 *조각*클릭합니다.
+1. **사이트 메뉴**( ![Site Menu](../../images/icon-product-menu.png) )을 열고 **디자인** 확장한 다음 **조각** 클릭합니다.
 
-1. 조각 세트에 대해 *작업* ( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *가져오기*선택합니다.
+1. 조각 세트에 대해 **작업**( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 **가져오기** 선택합니다.
 
    ![조각 세트에 대한 작업 버튼을 클릭하고 가져오기를 클릭합니다.](./importing-fragments-for-the-distributor-application-pages/images/02.png)
 
-1. `distribution-application-fragment-set.zip` 파일을 선택하고 *Import*클릭합니다.
+1. `distribution-application-fragment-set.zip` 파일을 선택하고 **Import** 클릭합니다.
 
    ![distribution-application-fragment-set.zip 파일을 선택하고 가져오기를 클릭합니다.](./importing-fragments-for-the-distributor-application-pages/images/03.png)
 

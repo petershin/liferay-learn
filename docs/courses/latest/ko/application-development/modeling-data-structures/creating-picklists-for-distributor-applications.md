@@ -14,9 +14,9 @@ Delectable Bonsai는 각 비즈니스 기회의 상대적 가치를 평가하는
 
 여기에서는 Liferay UI를 통해 첫 번째 선택 목록을 만듭니다.
 
-1. *전역 메뉴* ( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 *제어판* 탭으로 이동한 다음 *선택 목록*클릭합니다.
+1. **전역 메뉴**( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 **제어판** 탭으로 이동한 다음 **선택 목록** 클릭합니다.
 
-1. *추가* ( ![Add Button](../../images/icon-add.png) )을 클릭하고 이름에 비즈니스 유형을 입력한 후 *저장*클릭합니다.
+1. **추가**( ![Add Button](../../images/icon-add.png) )을 클릭하고 이름에 비즈니스 유형을 입력한 후 **저장** 클릭합니다.
 
    ![비즈니스 유형 선택 목록을 만듭니다.](creating-picklists-for-distributor-applications/images/01.png)
 
@@ -44,7 +44,7 @@ Delectable Bonsai는 각 비즈니스 기회의 상대적 가치를 평가하는
 
    ![선택 목록의 ERC를 업데이트합니다.](./creating-picklists-for-distributor-applications/images/03.png)
 
-1. *저장*클릭하세요.
+1. **저장** 클릭하세요.
 
 저장한 후에는 이 선택 목록을 배포자 응용 프로그램 개체의 필드로 사용할 수 있습니다.
 

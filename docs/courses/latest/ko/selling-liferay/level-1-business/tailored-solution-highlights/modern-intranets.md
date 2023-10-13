@@ -4,7 +4,7 @@
 
 ## 최신 인트라넷을 위한 주요 Liferay DXP 기능
 
-최신 인트라넷을 위한 Liferay의 주요 기능을 논의할 때 Liferay의 포털 유산과 통합 리소스 세트에 대한 보안 액세스를 제공하는 능력을 강조하십시오.  그러나 Liferay 인트라넷 솔루션의 __ 을 강조하기 위해 다음과 같은 추가 기능을 강조하십시오.
+최신 인트라넷을 위한 Liferay의 주요 기능을 논의할 때 Liferay의 포털 유산과 통합 리소스 세트에 대한 보안 액세스를 제공하는 능력을 강조하십시오.  그러나 Liferay 인트라넷 솔루션의 **_** 을 강조하기 위해 다음과 같은 추가 기능을 강조하십시오.
 
 * [디자인 시스템 및 경험 관리](https://learn.liferay.com/w/dxp/site-building)
 * [콘텐츠 및 자산 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)

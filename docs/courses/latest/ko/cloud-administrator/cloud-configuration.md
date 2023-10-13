@@ -27,7 +27,7 @@ Cloud Console을 설정하고 사용하여 LXC에 변경사항을 배포하는 �
 
 또한 다른 환경을 위해 생성하거나 배포한 모든 빌드를 제어하는 별도의 `인프라` 환경에 [CI 서비스](https://learn.liferay.com/w/liferay-cloud/platform-services/continuous-integration) 이 있습니다.
 
-LXC-SM 프로젝트에 대한 귀하의 책임에 대한 자세한 내용은 [여기](https://help.liferay.com/hc/en-us/articles/360059798531-DXP-Cloud-Shared-Activities)참조하세요.
+LXC-SM 프로젝트에 대한 귀하의 책임에 대한 자세한 내용은 [여기](https://help.liferay.com/hc/ko/articles/360059798531-DXP-Cloud-Shared-Activities) 참조하세요.
 
 LXC-SM에서는 특정 요구 사항에 따라 환경을 구성하고 관리하는 것이 귀하의 책임입니다. 여기에서 다음 방법을 알아보세요.
 

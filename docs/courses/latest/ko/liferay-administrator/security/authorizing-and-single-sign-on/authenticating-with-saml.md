@@ -1,6 +1,6 @@
 # SAML로 인증
 
-SAML로 인증할 때 Liferay는 서비스 공급자(SP) 또는 ID 공급자(IdP) 역할을 할 수 있습니다. 자세한 내용은 SAML [로 인증을 참조](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml).
+SAML로 인증할 때 Liferay는 서비스 공급자(SP) 또는 ID 공급자(IdP) 역할을 할 수 있습니다. 자세한 내용은 SAML [로 인증을 참조](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) .
 
 올마이티 시럽을 획득하여 맛있는 분재가 성장했습니다. 다른 회사를 인수할 가능성을 고려하면서 IT 팀은 SAML을 활용하여 사용자 자격 증명의 저장 및 관리를 중앙 집중화하기로 결정했습니다. 실제로 작동하는 모습을 보려면 아래 단계를 따르세요.
 
@@ -26,15 +26,15 @@ SAML로 인증할 때 Liferay는 서비스 공급자(SP) 또는 ID 공급자(IdP
 
 1. 새 ID 공급자를 구성합니다.
 
-   * _전역 메뉴로 이동합니다._ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _SAML 관리_.
-   * 일반 탭에서 SAML 역할로 ID 공급자 __ 선택합니다.
+   * **전역 메뉴로 이동합니다.**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **SAML 관리** .
+   * 일반 탭에서 SAML 역할로 ID 공급자 **_** 선택합니다.
    * 엔터티 ID를 `liferayidp`로 입력합니다.
-   * _저장_클릭하세요.
-   * 인증서 및 개인 키 섹션에서 _인증서 만들기_ 클릭합니다.
+   * **저장** 클릭하세요.
+   * 인증서 및 개인 키 섹션에서 **인증서 만들기** 클릭합니다.
    * 일반 이름을 `foo`로 입력합니다.
    * 아래로 스크롤하십시오. 키 비밀번호를 `learn`로 입력하세요.
-   * _저장_클릭하세요.
-   * 마지막으로 일반 탭에서 _활성화_ 확인란을 선택하고 _저장_클릭합니다.
+   * **저장** 클릭하세요.
+   * 마지막으로 일반 탭에서 **활성화** 확인란을 선택하고 **저장** 클릭합니다.
 
 ## 서비스 제공자 설정
 
@@ -46,46 +46,46 @@ SAML로 인증할 때 Liferay는 서비스 공급자(SP) 또는 ID 공급자(IdP
 
 1. `localhost:8080` 로 이동하여 관리자로 로그인합니다(예: `test@liferay.com:test`). 참고로, 다른 브라우저에서 각 컨테이너에 액세스해야 할 수도 있습니다.
 
-1. _전역 메뉴로 이동합니다._ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _SAML 관리_.
+1. **전역 메뉴로 이동합니다.**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **SAML 관리** .
 
 1. 새로운 서비스 제공자를 구성합니다.
 
-   * 일반 탭에서 SAML 역할로 _Service Provider_ 선택합니다.
+   * 일반 탭에서 SAML 역할로 **Service Provider** 선택합니다.
    * 엔터티 ID를 `liferaysp`로 입력합니다.
-   * _저장_클릭하세요.
-   * 인증서 및 개인 키 섹션에서 _인증서 만들기_ 클릭합니다.
+   * **저장** 클릭하세요.
+   * 인증서 및 개인 키 섹션에서 **인증서 만들기** 클릭합니다.
    * 일반 이름을 `foo`로 입력합니다.
    * 아래로 스크롤하십시오. 키 비밀번호를 `learn`로 입력하세요.
-   * _저장_클릭하세요.
-   * 마지막으로 일반 탭에서 _활성화_ 확인란을 선택하고 저장을 클릭합니다.
+   * **저장** 클릭하세요.
+   * 마지막으로 일반 탭에서 **활성화** 확인란을 선택하고 저장을 클릭합니다.
 
 ## SP와 IdP 연결
 
-`liferaysp` 컨테이너(`localhost:8080`)에서 _전역 메뉴_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _SAML Admin_로 이동합니다. _ID 공급자 연결_ 탭을 클릭합니다.
+`liferaysp` 컨테이너(`localhost:8080`)에서 **전역 메뉴**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **SAML Admin** 로 이동합니다. **ID 공급자 연결** 탭을 클릭합니다.
 
 1. IdP 연결을 만듭니다.
 
-   * _ID 공급자 추가_클릭합니다.
+   * **ID 공급자 추가** 클릭합니다.
    * 이름을 `liferayidp`로 입력합니다.
    * 엔터티 ID를 `liferayidp`로 입력합니다.
-   * _활성화됨_ 확인란을 선택합니다.
+   * **활성화됨** 확인란을 선택합니다.
    * 메타데이터 URL을 `http://[IP 주소]:7080/c/portal/saml/metadata`로 입력합니다. `[IP 주소]` 컴퓨터의 로컬 IP 주소로 바꾸십시오.
    * 속성 매핑 아래에서 드롭다운 목록을 사용하여 `emailAddress`선택합니다. SAML 속성을 `emailAddress`로 설정하십시오.
    * 다른 항목을 보려면 (![Add icon](../../../images/icon-add.png))을 클릭하세요. 드롭다운 목록을 사용하여 `firstName`선택하세요. SAML 속성을 `firstName`로 설정하십시오.
    * 다른 항목을 보려면 (![Add icon](../../../images/icon-add.png))을 클릭하세요. 드롭다운 목록을 사용하여 `lastName`선택하세요. SAML 속성을 `lastName`로 설정합니다.
    * 다른 항목을 보려면 (![Add icon](../../../images/icon-add.png))을 클릭하세요. 드롭다운 목록을 사용하여 `screenName`선택하세요. SAML 속성을 `screenName`로 설정합니다.
    * 다른 항목을 보려면 (![Add icon](../../../images/icon-add.png))을 클릭하세요. 드롭다운 목록을 사용하여 `UUID`선택합니다. SAML 속성을 `UUID`로 설정합니다.
-   * 페이지 하단에서 _저장_ 클릭하세요.
+   * 페이지 하단에서 **저장** 클릭하세요.
 
-1. 다음으로, `liferayidp` 컨테이너(`localhost:7080`)에서 _전역 메뉴_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _SAML Admin_로 이동합니다. _서비스 공급자 연결_ 탭을 클릭합니다.
+1. 다음으로, `liferayidp` 컨테이너(`localhost:7080`)에서 **전역 메뉴**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **SAML Admin** 로 이동합니다. **서비스 공급자 연결** 탭을 클릭합니다.
 
-   * _서비스 제공자 추가_클릭하십시오.
+   * **서비스 제공자 추가** 클릭하십시오.
    * 이름을 `liferaysp`로 입력합니다.
    * 엔터티 ID를 `liferaysp`로 입력합니다.
-   * _활성화됨_ 확인란을 선택합니다.
+   * **활성화됨** 확인란을 선택합니다.
    * 메타데이터 URL을 `http://[IP 주소]:8080/c/portal/saml/metadata`로 입력합니다. `[IP 주소]` 컴퓨터의 로컬 IP 주소로 바꾸십시오.
    * 이름 식별자 속성 이름을 `emailAddress`로 입력합니다.
-   * _속성 활성화_ 확인란을 선택합니다.
+   * **속성 활성화** 확인란을 선택합니다.
    * 속성 텍스트 상자에 다음 속성을 입력합니다.
 
       ```
@@ -96,13 +96,13 @@ SAML로 인증할 때 Liferay는 서비스 공급자(SP) 또는 ID 공급자(IdP
       uuid
       ```
 
-   * 페이지 하단에서 _저장_ 클릭하세요.
+   * 페이지 하단에서 **저장** 클릭하세요.
 
 ## SAML 연결 테스트
 
-1. `liferaysp` 컨테이너(예: `localhost:8080`)에서 _전역 메뉴_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _사용자 및 조직_로 이동합니다. 테스트 테스트 관리자가 나열된 유일한 사용자라는 점에 유의하십시오.
+1. `liferaysp` 컨테이너(예: `localhost:8080`)에서 **전역 메뉴**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **사용자 및 조직** 로 이동합니다. 테스트 테스트 관리자가 나열된 유일한 사용자라는 점에 유의하십시오.
 
-1. 오른쪽 상단의 사용자 프로필 이미지를 클릭한 후 _로그아웃_클릭하세요. `support@delectablebonsai.com:learn`자격 증명으로 로그인하세요. `liferayidp` 컨테이너가 사용자를 확인하고 성공적인 로그인을 제공했습니다.
+1. 오른쪽 상단의 사용자 프로필 이미지를 클릭한 후 **로그아웃** 클릭하세요. `support@delectablebonsai.com:learn`자격 증명으로 로그인하세요. `liferayidp` 컨테이너가 사용자를 확인하고 성공적인 로그인을 제공했습니다.
 
 ```{warning}
 나머지 과정을 더 쉽게 진행하려면 이 연습을 완료한 후 SAML을 비활성화하세요. 

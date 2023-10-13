@@ -24,9 +24,9 @@ toc:
 또한, 경쟁자에 대한 추가 정보가 있는 사람은 누구나 역할을 수행하고 해당 정보를 제공하여 배틀카드를 더욱 향상시킬 수 있습니다. 중요한 정보가 누락된 경우 피드백을 제공해 주세요.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-6-competitive-intelligence-battle-cards)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-6-competitive-intelligence-battle-cards-pdf)을 다운로드하세요.
-* 라이프레이 직원 - [Battlecards](https://sales.liferay.com/group/library/competitive-intel)을 확인하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-6-competitive-intelligence-battle-cards) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-6-competitive-intelligence-battle-cards-pdf) 을 다운로드하세요.
+* 라이프레이 직원 - [Battlecards](https://sales.liferay.com/group/library/competitive-intel) 을 확인하세요.
 * Liferay 파트너 - [Battlecards]을 확인하세요(https://partner.liferay.com/marketing/marketing-resources/research-analytic/competitive-analytic).
 ```
 

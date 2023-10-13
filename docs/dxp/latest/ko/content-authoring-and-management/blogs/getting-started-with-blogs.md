@@ -6,11 +6,11 @@
 
 블로그 앱 사용을 시작하는 가장 빠른 방법은 사이트 페이지에 위젯을 [하는 것입니다](../../site-building/creating-pages/using-content-pages/using-widgets-on-a-content-page.md).
 
-1. 원하는 사이트와 페이지로 이동합니다(예: *커뮤니티 블로그*).
+1. 원하는 사이트와 페이지로 이동합니다(예: **커뮤니티 블로그**).
 
-1. *Add* ( ![Add widget icon](../../images/icon-add-widget.png) )을 클릭하여 *Fragments and Widgets* 패널을 엽니다.
+1. **Add**( ![Add widget icon](../../images/icon-add-widget.png) )을 클릭하여 **Fragments and Widgets** 패널을 엽니다.
 
-1. 위젯 탭의 협업 카테고리 아래에서 *블로그* 위젯을 페이지의 원하는 사이트로 끌어다 놓습니다.
+1. 위젯 탭의 협업 카테고리 아래에서 **블로그** 위젯을 페이지의 원하는 사이트로 끌어다 놓습니다.
 
 ![페이지에 블로그 위젯 추가](./getting-started-with-blogs/images/01.png)
 

@@ -16,7 +16,6 @@ DXP 클러스터링을 배우는 빠르고 쉬운 방법은 [Docker 컨테이너
 이 예제는 학습용이며 프로덕션 사용 사례에는 적합하지 않습니다. 프로덕션 환경의 경우 DXP 서버에 대한 로드 밸런싱 요청을 위해 HTTP 서버를 포함하고, 읽기 전용 및 읽기-쓰기 작업을 위해 별도의 데이터베이스 서버를 사용하고, 클러스터링 및 로드 밸런싱 데이터베이스 서버, 파일 저장소 서버 및 검색 엔진 서버를 고려해야 합니다. 자세한 내용은 [고가용성을 위한 클러스터링](../clustering-for-high-availability.md) 문서를 모두 읽으십시오.
 ```
 
-
 <!--
 ![DXP cluster environment.](./example-creating-a-simple-dxp-cluster/images/01.png)
 Should we remove this diagram since it includes a load balancer? -->

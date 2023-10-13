@@ -3,9 +3,9 @@
 이미 언급했듯이 모든 배포 옵션이 가능하지만 당사의 영업 접근 방식은 SaaS 우선입니다. 그러나 이것이 실제로 의미하는 바는 무엇이며, 이것이 항상 고객에게 올바른 선택이 될까요?
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf)을 다운로드하세요.
-* 이 모듈에 언급된 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) 을 다운로드하세요.
+* 이 모듈에 언급된 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) 을 다운로드하세요.
 ```
 
 ## 비즈니스 문제 해결
@@ -29,7 +29,7 @@ Liferay로 구현된 솔루션은 고객이 배포 접근 방식으로 Liferay E
 * 사용자와 역할을 정의해야 합니다.
 * 등.
 
-그러나 대부분의 경우 이러한 기능만으로는 비즈니스의 모든 문제가 해결되지는 않습니다. Liferay DXP의 주요 강점은 항상 특정 요구 사항에 맞게 플랫폼을 확장하고 사용자 정의할 수 있는 능력이었습니다. 플랫폼 확장에 대한 선호되는 접근 방식은 [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions)을 생성하는 것입니다. 클라이언트 확장은 Liferay의 코드에 묶여 있지 않으며 모든 배포 접근 방식과 함께 사용할 수 있습니다. 클라이언트 확장을 통해 개발자는 익숙한 기술을 사용할 수 있으며 핵심 플랫폼으로의 업그레이드를 쉽게 수행할 수 있습니다.
+그러나 대부분의 경우 이러한 기능만으로는 비즈니스의 모든 문제가 해결되지는 않습니다. Liferay DXP의 주요 강점은 항상 특정 요구 사항에 맞게 플랫폼을 확장하고 사용자 정의할 수 있는 능력이었습니다. 플랫폼 확장에 대한 선호되는 접근 방식은 [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) 을 생성하는 것입니다. 클라이언트 확장은 Liferay의 코드에 묶여 있지 않으며 모든 배포 접근 방식과 함께 사용할 수 있습니다. 클라이언트 확장을 통해 개발자는 익숙한 기술을 사용할 수 있으며 핵심 플랫폼으로의 업그레이드를 쉽게 수행할 수 있습니다.
 
 ![클라이언트 확장은 느슨하게 결합되어 있으며 최신 기술을 사용하고 쉬운 업그레이드를 지원합니다.](../liferay-product-offering/images/05.png)
 
@@ -37,9 +37,9 @@ Liferay로 구현된 솔루션은 고객이 배포 접근 방식으로 Liferay E
 
 ## SaaS가 가능한지 확인
 
-Liferay는 _고객이 SaaS 배포_ 통해 고유한 비즈니스 문제를 해결할 수는 없다는 것을 인식하고 있습니다.
+Liferay는 **고객이 SaaS 배포** 통해 고유한 비즈니스 문제를 해결할 수는 없다는 것을 인식하고 있습니다.
 
-고객이 SaaS에 _편안하다고_ 가정하고, 다음 사항이 사실이라면 SaaS 우선 접근 방식을 따라야 합니다.
+고객이 SaaS에 **편안하다고** 가정하고, 다음 사항이 사실이라면 SaaS 우선 접근 방식을 따라야 합니다.
 
 * 즉시 사용 가능한 Liferay 기능으로 비즈니스 문제를 해결할 수 있습니까?
 * 확장에 대해 선호하는 접근 방식으로 모든 사용자 정의 요구 사항을 해결할 수 있습니까?

@@ -13,8 +13,8 @@
 마지막으로 매우 높은 수준에서 계약 접근 방식에서 EULA(최종 사용자 사용권 계약)의 역할을 다룹니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-7-contracts)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-7-contracts-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-7-contracts) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-7-contracts-pdf) 을 다운로드하세요.
 ```
 
 ## Liferay 기업 서비스 계약

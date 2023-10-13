@@ -155,7 +155,7 @@ Liferay의 헤드리스 배치 엔진은 데이터를 가져오고 내보내는 
 다른 예제 Java 클래스는 이 클래스와 유사하지만 다른 `ImportTaskResource` 메서드를 호출합니다.
 
 ```{important}
-[ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java)를 참조하십시오.
+[ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java) 를 참조하십시오.
 ```
 
 다음은 cURL 및 Java를 사용하여 다른 Batch Engine 가져오기 REST 서비스를 호출하는 예입니다.

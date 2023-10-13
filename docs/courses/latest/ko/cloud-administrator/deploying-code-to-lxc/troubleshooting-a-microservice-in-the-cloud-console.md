@@ -77,7 +77,7 @@ Cloud 콘솔에 `liferaysampleetcspringboot` 서비스가 나타나는데, 잠�
 
 1. UAT Liferay 인스턴스에 로그인하십시오.
 
-1. 양식에서 *제출* 클릭하여 새 개체 항목을 생성하고 작업을 트리거합니다.
+1. 양식에서 **제출** 클릭하여 새 개체 항목을 생성하고 작업을 트리거합니다.
 
 1. Cloud 콘솔로 돌아가서 `liferaysampleetcspringboot` 서비스를 클릭합니다.
 
@@ -91,9 +91,9 @@ Cloud 콘솔에 `liferaysampleetcspringboot` 서비스가 나타나는데, 잠�
 
 Liferay Cloud 콘솔에서 애플리케이션 로그를 검색하여 마이크로서비스에 문제가 있는 징후를 찾으세요. 필터링 및 검색 도구를 사용하여 관련 정보를 찾을 수 있도록 로그 페이지를 사용하십시오.
 
-1. 왼쪽 메뉴에서 *로그* 선택합니다.
+1. 왼쪽 메뉴에서 **로그** 선택합니다.
 
-1. 로그 페이지의 화면 상단에 있는 드롭다운 메뉴에서 *애플리케이션 로그* 선택되어 있는지 확인하세요.
+1. 로그 페이지의 화면 상단에 있는 드롭다운 메뉴에서 **애플리케이션 로그** 선택되어 있는지 확인하세요.
    
    클라이언트 확장 서비스는 하나만 실행되므로 서비스별로 필터링할 필요가 없습니다.
 
@@ -113,19 +113,19 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'EX
 
 Spring Boot는 컨테이너에 동일한 이름을 가진 환경 변수의 값을 주입할 수 있습니다. 서비스의 환경 변수로 `EXISTING_FEEDBACK` 값을 추가해 보세요.
 
-1. 왼쪽 메뉴에서 *서비스* 클릭하여 `liferaysampleetcspringboot` 서비스가 나타나는 사이트로 돌아갑니다.
+1. 왼쪽 메뉴에서 **서비스** 클릭하여 `liferaysampleetcspringboot` 서비스가 나타나는 사이트로 돌아갑니다.
 
 1. `liferaysampleetcspringboot` 서비스를 클릭합니다.
 
-1. *환경 변수* 탭을 클릭합니다.
+1. **환경 변수** 탭을 클릭합니다.
 
 1. 일반 변수 목록에 새 환경 변수를 추가합니다. 키로 `EXISTING_FEEDBACK` 사용하고 값으로 `2` 추가합니다(지금까지 생성한 두 항목에 대해).
    
    ![Spring Boot가 값 주입에 사용할 수 있는 EXISTING_FEEDBACK 환경 변수를 추가합니다.](./troubleshooting-a-microservice-in-the-cloud-console/images/04.png)
 
-1. *변경 사항 저장*클릭합니다.
+1. **변경 사항 저장** 클릭합니다.
 
-1. 화면 상단의 *Actions* 메뉴( ![Actions menu](../../images/icon-actions.png) )를 클릭하고 *Restart Service* 클릭하면 새 변수가 제대로 초기화됩니다.
+1. 화면 상단의 **Actions** 메뉴( ![Actions menu](../../images/icon-actions.png) )를 클릭하고 **Restart Service** 클릭하면 새 변수가 제대로 초기화됩니다.
 
 새 환경 변수로 인해 지연된 후 서비스가 다시 시작됩니다.
 
@@ -133,7 +133,7 @@ Spring Boot는 컨테이너에 동일한 이름을 가진 환경 변수의 값�
 
 셸을 사용하여 변수가 Spring Boot에서 감지할 수 있는 환경에 있는지 확인하세요. 콘솔에서 셸에 액세스하면 마이크로서비스가 실행되는 컨테이너에 직접 액세스할 수 있습니다.
 
-1. 서비스 페이지에 있는 동안 *Shell* 탭을 클릭하세요.
+1. 서비스 페이지에 있는 동안 **Shell** 탭을 클릭하세요.
 
 1. `printenv` 명령을 사용하여 새 환경 변수가 있는지 확인합니다.
 
@@ -151,7 +151,7 @@ printenv | grep "EXISTING"
 
 1. UAT Liferay 인스턴스로 돌아가서 로그인했는지 확인하세요.
 
-1. 입력 개체 양식에서 *제출* 클릭합니다.
+1. 입력 개체 양식에서 **제출** 클릭합니다.
 
 1. Cloud 콘솔로 다시 돌아가서 `liferaysampleetcspringboot` 서비스 페이지로 이동하여 로그를 확인하세요.
 

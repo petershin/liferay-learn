@@ -1,6 +1,6 @@
 # 기본 사이트 애플리케이션
 
-모든 사이트에는 개인화된 디지털 경험을 구축하기 위한 아래의 핵심 애플리케이션이 포함되어 있습니다. *제품 메뉴* (![Product Menu](../../images/icon-product-menu.png))를 통해 액세스할 수 있습니다. *제품 메뉴* 에는 개체를 사용하여 만든 사용자 지정 애플리케이션도 포함될 수 있습니다. 자세한 내용은 [객체 만들기](../../building-applications/objects/creating-and-managing-objects/creating-objects.md) 를 참조하세요.
+모든 사이트에는 개인화된 디지털 경험을 구축하기 위한 아래의 핵심 애플리케이션이 포함되어 있습니다. **제품 메뉴**(![Product Menu](../../images/icon-product-menu.png))를 통해 액세스할 수 있습니다. **제품 메뉴** 에는 개체를 사용하여 만든 사용자 지정 애플리케이션도 포함될 수 있습니다. 자세한 내용은 [객체 만들기](../../building-applications/objects/creating-and-managing-objects/creating-objects.md) 를 참조하세요.
 
 ```{tip}
 사이트에서 애플리케이션을 사용하면 해당 애플리케이션의 데이터는 해당 사이트로 제한되며 다른 사이트와 공유할 수 없습니다. 그러나 에셋 라이브러리를 사용하여 일부 에셋 유형을 여러 사이트에서 사용할 수 있도록 만들 수 있습니다. 자세한 내용은 [자산 라이브러리](../../콘텐츠 저작 및 관리/자산 라이브러리/자산 라이브러리 개요.md)를 참조하세요.
@@ -31,7 +31,7 @@
 | [웹 콘텐츠](../../content-authoring-and-management/web-content.md)                     | 사이트의 웹 콘텐츠 문서, 구조 및 템플릿을 만들고 관리합니다.               |
 | [블로그](../../content-authoring-and-management/blogs.md)                             | 사이트의 블로그 항목과 이미지를 만들고 관리합니다.                      |
 | [문서 및 미디어](../../content-authoring-and-management/documents-and-media.md)          | 사이트의 문서 및 기타 미디어 자산을 업로드하고 관리합니다.                 |
-| [동적 데이터 목록](../../process-automation/forms/dynamic-data-lists.md) (*사용 중단됨*)       | 정의된 필드 집합을 사용하여 양식을 만들고 표시합니다.                    |
+| [동적 데이터 목록](../../process-automation/forms/dynamic-data-lists.md) (**사용 중단됨**)       | 정의된 필드 집합을 사용하여 양식을 만들고 표시합니다.                    |
 | [양식](../../process-automation/forms.md)                                            | 사용자 데이터 수집을 위한 사이트 양식(예: 피드백, 입사 지원서)을 만들고 관리합니다. |
 | [지식 베이스](../../collaboration-and-social/knowledge-base.md)                 | 사이트에 대한 공식 문서를 작성하고 표시합니다.                        |
 | [게시판](../../collaboration-and-social/message-boards.md)                            | 사이트 게시판을 만들고 관리하여 커뮤니케이션과 협업을 촉진하세요.              |

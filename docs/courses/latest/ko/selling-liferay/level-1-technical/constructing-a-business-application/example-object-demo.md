@@ -10,7 +10,7 @@
 
 ![객체의 좋은 예 애플리케이션은 티켓팅 애플리케이션입니다.](./example-object-demo/images/01.png)
 
-이 모듈의 목적을 위해 간단한 _Ticketing_ 애플리케이션이 사용됩니다. 이 애플리케이션은 일반적으로 거의 모든 사람이 인생의 특정 시점과 비즈니스 상황에서 티켓팅 유형의 애플리케이션을 사용해 왔기 때문에 잠재 고객의 공감을 불러일으킵니다. 이는 개념에 대한 많은 논의 없이 주제를 소개할 수 있음을 의미합니다. 티켓은 생성, 할당, 관리되고 궁극적으로 해결됩니다.
+이 모듈의 목적을 위해 간단한 **Ticketing** 애플리케이션이 사용됩니다. 이 애플리케이션은 일반적으로 거의 모든 사람이 인생의 특정 시점과 비즈니스 상황에서 티켓팅 유형의 애플리케이션을 사용해 왔기 때문에 잠재 고객의 공감을 불러일으킵니다. 이는 개념에 대한 많은 논의 없이 주제를 소개할 수 있음을 의미합니다. 티켓은 생성, 할당, 관리되고 궁극적으로 해결됩니다.
 
 티켓팅이 항상 모든 잠재 고객에게 적합한 것은 아닐 수 있습니다. 이 경우 잠재 고객이 쉽게 이해할 수 있고 이상적으로는 해당 산업 및/또는 구현하려는 솔루션에 존재하는 또 다른 예를 찾으십시오.
 
@@ -28,7 +28,7 @@
 
 데모에 사용할 수 있는 시간이 제한되어 있더라도 시간이 전혀 걸리지 않고 Liferay에서 비즈니스 애플리케이션을 얼마나 빨리 구축할 수 있는지 보여주는 매우 설득력 있는 방법을 제공하므로 이 단계를 완료하는 것은 여전히 가치가 있습니다.
 
-개체 표시 페이지 생성에 대한 자세한 내용은 여기 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries#creating-display-page-templates-for-objects)확인할 수 있습니다.
+개체 표시 페이지 생성에 대한 자세한 내용은 여기 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries#creating-display-page-templates-for-objects) 확인할 수 있습니다.
 
 ## 선택적 데모 단계
 
@@ -38,6 +38,6 @@
 
 하지만 여기서는 조심하세요. 개체의 시연 가치 중 대부분은 개발자가 아닌 사용자도 사용할 수 있는 사용 편의성, 끌어서 놓기 기능입니다. 데모가 처음부터 개체를 생성하는 단계로 진행될수록 대화는 더욱 기술적으로 진행될 가능성이 높습니다. 청중이 혼합된 경우 몇 분만 제작 단계에 대해 이야기하고 좀 더 기술적인 청중이 세부 사항을 알아볼 수 있도록 후속 데모를 예약하십시오.
 
-개체 생성에 대한 문서는 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects)에서 확인할 수 있습니다.
+개체 생성에 대한 문서는 [여기](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects) 에서 확인할 수 있습니다.
 
 다음으로, 학습 목적으로 Liferay 객체 [라이프레이 객체 생성](./creating-objects.md) 생성하는 방법과 더 자세한 기술 데모를 알아보세요.

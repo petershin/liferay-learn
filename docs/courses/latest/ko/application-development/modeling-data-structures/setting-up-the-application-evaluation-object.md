@@ -12,7 +12,7 @@
 
 응용 프로그램 평가 개체에는 평가 점수, 권장 사항 및 결정과 같은 선택 목록이 필요합니다.
 
-1. 이 연습 [에 대한 리소스를 다운로드하고 압축](./liferay-w1m9.zip)풉니다.
+1. 이 연습 [에 대한 리소스를 다운로드하고 압축](./liferay-w1m9.zip) 풉니다.
 
    ```bash
    curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-w1m9.zip -O
@@ -42,11 +42,11 @@
 
 ## 애플리케이션 평가 개체 가져오기
 
-1. *전역 메뉴* ( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 *제어판* 탭으로 이동한 다음 *개체*클릭합니다.
+1. **전역 메뉴**( ![Global Menu](../../images/icon-applications-menu.png) )을 열고 **제어판** 탭으로 이동한 다음 **개체** 클릭합니다.
 
-1. 애플리케이션 표시줄에서 *작업* ( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 *가져오기*선택합니다.
+1. 애플리케이션 표시줄에서 **작업**( ![Actions Button](../../images/icon-actions.png) )을 클릭하고 **가져오기** 선택합니다.
 
-1. 세부 정보를 입력하고 *가져오기*클릭하세요.
+1. 세부 정보를 입력하고 **가져오기** 클릭하세요.
 
    | 분야      | 가치                                  |
    |:------- |:----------------------------------- |
@@ -73,9 +73,9 @@
 
    ![개체에 이러한 사용자 정의 필드가 포함되어 있는지 확인하세요.](./setting-up-the-application-evaluation-object/images/05.png)
 
-1. *세부정보* 탭으로 이동합니다.
+1. **세부정보** 탭으로 이동합니다.
 
-1. *게시*클릭하세요.
+1. **게시** 클릭하세요.
 
 엄청난! 맛있는 분재는 이 개체를 사용하여 잠재 배포자에 대한 메모를 저장할 수 있습니다.
 

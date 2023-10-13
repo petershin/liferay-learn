@@ -24,7 +24,7 @@
 
 ## IBM DB2
 
-[IBM의 공식 DB2 문서를 참조하십시오](https://www.ibm.com/support/pages/db2-database-product-documentation).
+[IBM의 공식 DB2 문서를 참조하십시오](https://www.ibm.com/support/pages/db2-database-product-documentation) .
 
 ## MariaDB
 
@@ -36,11 +36,11 @@ InnoDB 이중 쓰기를 끄고 트랜잭션 커밋 시 InnoDB 플러시 로그�
 
 ## MySQL
 
-[InnoDB 이중 쓰기](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_doublewrite)를 끄고 [트랜잭션 커밋 시 InnoDB 플러시 로그](https:/ /dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit)을 `0`으로 변경합니다.
+[InnoDB 이중 쓰기](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_doublewrite) 를 끄고 [트랜잭션 커밋 시 InnoDB 플러시 로그](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html#sysvar_innodb_flush_log_at_trx_commit) 을 `0`으로 변경합니다.
 
 ## 오라클 데이터베이스
 
-기본 구성이 잘 작동합니다. [디스크에 대한 비동기 I/O](https://docs.oracle.com/database/121/REFRN/GUID-FD8D1BD2-0F85-4844-ABE7-57B4F77D1608.htm#REFRN10048)를 자동으로 구성합니다.
+기본 구성이 잘 작동합니다. [디스크에 대한 비동기 I/O](https://docs.oracle.com/database/121/REFRN/GUID-FD8D1BD2-0F85-4844-ABE7-57B4F77D1608.htm#REFRN10048) 를 자동으로 구성합니다.
 
 ## PostgreSQL
 

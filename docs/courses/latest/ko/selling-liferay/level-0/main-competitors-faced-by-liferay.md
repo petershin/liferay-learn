@@ -23,8 +23,8 @@ toc:
 이 모듈을 완료하면 Liferay가 이러한 경쟁업체와 차별화되는 요소에 대한 기본적인 이해를 갖게 됩니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-6-main-competitors-we-face)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-6-main-competitors-we-face-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-6-main-competitors-we-face) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-6-main-competitors-we-face-pdf) 을 다운로드하세요.
 ```
 
 ## 경쟁사의 공통점

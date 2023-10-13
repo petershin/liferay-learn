@@ -31,7 +31,7 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 
 ### 윈도우 시스템
 
-[Windows 설치 프로그램](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe)의 최신 버전을 다운로드하고 마법사의 단계를 따르십시오.
+[Windows 설치 프로그램](https://cdn.liferay.cloud/lcp/stable/latest/lcp-install.exe) 의 최신 버전을 다운로드하고 마법사의 단계를 따르십시오.
 
 ## CLI 도구를 버전 2에서 3으로 업그레이드
 
@@ -49,13 +49,13 @@ curl https://cdn.liferay.cloud/lcp/stable/latest/install.sh -fsSL | bash
 
 ### Windows에서 버전 2 제거
 
-1. Windows 10에서는 *제어판* &rarr; *프로그램* &rarr; *프로그램 제거*로 이동합니다.
+1. Windows 10에서는 **제어판** &rarr; **프로그램** &rarr; **프로그램 제거** 로 이동합니다.
 
-    또는 Windows 7 및 8의 경우 *제어판* &rarr; *프로그램 추가/제거*로 이동합니다.
+    또는 Windows 7 및 8의 경우 **제어판** &rarr; **프로그램 추가/제거** 로 이동합니다.
 
 1. `lcp amd64-installer-0.3`선택
 
-1. _제거_ 을 클릭한 후 확인하세요.
+1. **제거** 을 클릭한 후 확인하세요.
 
 1. `lcp` 또는 `lcp.exe`명령을 실행하여 제거가 완료되었는지 확인합니다.
 
@@ -271,7 +271,7 @@ Mac 및 Linux의 경우 다음 명령을 실행하세요.
 curl https://cdn.liferay.cloud/lcp/stable/latest/uninstall.sh -fsSL | bash
 ```
 
-Windows 7 및 8의 경우 *제어판* &rarr; *프로그램 추가/제거*로 이동합니다. Windows 10에서는 *제어판* &rarr; *프로그램* &rarr; *프로그램 제거*로 이동합니다. 그런 다음 프로그램 목록에서 *LCP CLI* 찾아 선택하고 *Uninstall*클릭합니다. 마법사의 단계를 따르십시오.
+Windows 7 및 8의 경우 **제어판** &rarr; **프로그램 추가/제거** 로 이동합니다. Windows 10에서는 **제어판** &rarr; **프로그램** &rarr; **프로그램 제거** 로 이동합니다. 그런 다음 프로그램 목록에서 **LCP CLI** 찾아 선택하고 **Uninstall** 클릭합니다. 마법사의 단계를 따르십시오.
 
 ## 관련 주제
 

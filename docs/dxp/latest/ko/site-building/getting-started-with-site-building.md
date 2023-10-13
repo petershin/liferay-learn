@@ -2,7 +2,7 @@
 
 사이트는 Liferay DXP의 기본 구성 요소입니다. 기본적으로 사이트는 추가 기능을 제공하는 콘텐츠 애플리케이션이 포함된 페이지 모음입니다.
 
-Liferay DXP 인스턴스를 처음 시작하고 구성할 때 기본 사이트가 포함되어 있습니다. 기본적으로 인스턴스 이름은 *Liferay*이지만, 이 값은 설정 마법사의 구성 또는 제어판의 [인스턴스 설정](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) 을 통해 변경할 수 있습니다.
+Liferay DXP 인스턴스를 처음 시작하고 구성할 때 기본 사이트가 포함되어 있습니다. 기본적으로 인스턴스 이름은 **Liferay** 이지만, 이 값은 설정 마법사의 구성 또는 제어판의 [인스턴스 설정](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) 을 통해 변경할 수 있습니다.
 
 ![Liferay DXP로 강력한 사이트를 구축할 수 있습니다.](./getting-started-with-site-building/images/01.png)
 

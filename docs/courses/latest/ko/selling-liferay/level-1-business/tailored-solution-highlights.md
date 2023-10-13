@@ -30,8 +30,8 @@ toc:
 완료되면 잠재 고객에게 무한한 가능성을 불러일으키는 Liferay 플랫폼 제공 솔루션의 몇 가지 예를 발견하게 될 것입니다. 귀하는 구매자가 현재 필요한 것뿐 아니라 미래를 위해 필요한 것에 대한 그림을 그리는 데 도움을 줄 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-1-liferay-tailored-solution-highlights)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-1-liferay-tailored-solution-highlights) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf) 을 다운로드하세요.
 ```
 
 ## 수평적 솔루션
@@ -58,7 +58,7 @@ Liferay의 업계 최고의 디지털 경험 플랫폼(DXP)에는 즉시 사용 
 * [커머스 ](https://learn.liferay.com/w/commerce/index)
 * [분석 ](https://learn.liferay.com/web/guest/w/analytics-cloud/index) & \[Optimization\](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard
 * [세분화 & 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [검색](https://learn.liferay.com/w/dxp/using-search) & \[Navigation\](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [검색](https://learn.liferay.com/w/dxp/using-search) & \ [Navigation\](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 * [헤드리스 API & 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
 * [협업 & 지식공유](https://learn.liferay.com/w/dxp/collaboration-and-social)
 * [신원 관리 & 접근 제어](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)

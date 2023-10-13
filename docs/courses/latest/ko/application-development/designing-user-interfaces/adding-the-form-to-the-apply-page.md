@@ -4,11 +4,11 @@
 
 제공된 양식 조각 구성을 적용 페이지에 추가하고 해당 요소를 구성합니다.
 
-1. 적용 페이지로 이동하여 *편집* (![Edit Button](../../images/icon-edit.png))을 클릭합니다.
+1. 적용 페이지로 이동하여 **편집**(![Edit Button](../../images/icon-edit.png))을 클릭합니다.
 
    ![적용 페이지로 이동합니다.](./adding-the-form-to-the-apply-page/images/01.png)
 
-1. *Form Page* 조각을 페이지 하단의 빈 조각 요소 컨테이너에 끌어다 놓습니다.
+1. **Form Page** 조각을 페이지 하단의 빈 조각 요소 컨테이너에 끌어다 놓습니다.
 
    ![양식 페이지 조각을 빈 조각 요소 컨테이너로 끌어다 놓습니다.](./adding-the-form-to-the-apply-page/images/02.png)
 
@@ -58,11 +58,11 @@
 
    ![필드에 대한 자리 표시자 테스트를 설정합니다.](./adding-the-form-to-the-apply-page/images/06.png)
 
-1. Form Container 부분을 선택하고 Success Message를 *Page*로 설정하고 *Application Submission*선택합니다.
+1. Form Container 부분을 선택하고 Success Message를 **Page** 로 설정하고 **Application Submission** 선택합니다.
 
    ![성공 메시지를 페이지로 설정하고 신청서 제출을 선택합니다.](./adding-the-form-to-the-apply-page/images/07.png)
 
-1. *게시*클릭하세요.
+1. **게시** 클릭하세요.
 
 엄청난! 이제 양식을 추가하고 해당 요소를 구성했으므로 Delectable Bonsai의 잠재 유통업체는 이 양식을 사용하여 신청서를 제출할 수 있습니다. 다음으로, 지원서 제출을 위한 성공 페이지를 디자인하세요.
 

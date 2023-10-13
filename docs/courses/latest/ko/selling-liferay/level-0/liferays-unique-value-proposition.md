@@ -21,8 +21,8 @@ toc:
 경쟁업체가 동일한 가치를 제공한다고 주장하는 반면, Liferay만이 고객에게 더 많은 가치를 제공하기 위해 경쟁업체와 차별화되는 특성과 특징의 고유한 조합을 보유하고 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-value-proposition)을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf)을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-4-liferays-unique-value-proposition) 을 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-4-liferays-unique-value-proposition-pdf) 을 다운로드하세요.
 ```
 
 ## 가치 제안이란 무엇입니까?
@@ -33,7 +33,7 @@ toc:
 
 더 간단히 말하면, “무엇을 하시나요?”라는 질문에 답합니다.
 
-**고유 판매 제안** (USP)은 제품과 브랜드를 경쟁업체와 구분하고 공급업체가 제품과 회사를 고유한 방식으로 포지셔닝하여 경쟁 우위를 얻을 수 있도록 하는 차별화 문구입니다.
+**고유 판매 제안**(USP)은 제품과 브랜드를 경쟁업체와 구분하고 공급업체가 제품과 회사를 고유한 방식으로 포지셔닝하여 경쟁 우위를 얻을 수 있도록 하는 차별화 문구입니다.
 
 USP는 가치 제안을 지원하고 대상 고객이 가치 있다고 인식하는 이점을 강조하는 데 도움이 됩니다.
 

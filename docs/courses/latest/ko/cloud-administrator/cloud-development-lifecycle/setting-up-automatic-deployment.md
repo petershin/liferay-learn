@@ -12,17 +12,17 @@ Kyle은 Liferay Cloud를 사용하여 개발 및 테스트를 시작할 수 있�
 
 1. CI 서비스를 클릭하세요.
 
-1. *환경 변수* 탭을 클릭합니다.
+1. **환경 변수** 탭을 클릭합니다.
 
 1. 다음 환경 변수 값을 설정합니다.
 
-   * **LCP_CI_DEPLOY_BRANCH**: `실시간 업데이트`
+   * **LCP_CI_DEPLOY_BRANCH** : `실시간 업데이트`
 
-   * **LCP_CI_DEPLOY_TARGET**: `uat`
+   * **LCP_CI_DEPLOY_TARGET** : `uat`
 
    ![이러한 환경 변수를 사용하여 CI에 자동 배포를 위한 지점 및 대상 환경을 알립니다.](./setting-up-automatic-deployment/images/01.png)
 
-1. *변경 사항 저장*클릭합니다.
+1. **변경 사항 저장** 클릭합니다.
 
 CI 서비스가 새 구성으로 다시 시작됩니다. 백업이 완료되면 해당 시점부터 `live-update` 분기를 통해 생성된 빌드가 UAT 환경에 자동으로 배포됩니다.
 
@@ -58,7 +58,7 @@ CI 서비스가 새 구성으로 다시 시작됩니다. 백업이 완료되면 
    git push origin live-update
    ```
 
-1. Liferay Cloud 콘솔로 돌아가서 *배포*클릭합니다.
+1. Liferay Cloud 콘솔로 돌아가서 **배포** 클릭합니다.
 
    ![UAT 환경에 대한 배포 목록에 새 푸시가 나타납니다.](./setting-up-automatic-deployment/images/02.png)
 

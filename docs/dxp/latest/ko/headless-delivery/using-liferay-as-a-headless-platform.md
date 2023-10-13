@@ -5,13 +5,13 @@ Liferay는 웹 인터페이스에서 사용할 수 있는 것과 동일한 종�
 ## 연결 방법
 
 클라이언트가 웹 API를 통해 Liferay DXP에 연결할 수 있는 세 가지 접근 방식이 있습니다:
-* [__헤드리스 REST API__](#headless-rest-apis), OpenAPI 사양 준수
+* [__헤드리스 REST API__](#headless-rest-apis) , OpenAPI 사양 준수
 * GraphQL 사양을 준수하는 [**_** GraphQL API **_**](#graphql-api)
-* [__일반 웹/REST 서비스__](#plain-webrest-services), 서비스 빌더에 의해 생성됨
+* [__일반 웹/REST 서비스__](#plain-webrest-services) , 서비스 빌더에 의해 생성됨
 
 ### 헤드리스 REST API
 
-Liferay의 헤드리스 API를 사용하면 [RESTful](https://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#relwwwrest) Liferay DXP 리소스와 상호 작용할 수 있습니다. 이러한 API는 REST 인터페이스에 대한 표준을 정의하는 [OpenAPI 사양](https://swagger.io/docs/specification/about/)을 따르므로 보다 간단하게 구현하고 사용할 수 있습니다.
+Liferay의 헤드리스 API를 사용하면 [RESTful](https://www.w3.org/TR/2004/NOTE-ws-arch-20040211/#relwwwrest) Liferay DXP 리소스와 상호 작용할 수 있습니다. 이러한 API는 REST 인터페이스에 대한 표준을 정의하는 [OpenAPI 사양](https://swagger.io/docs/specification/about/) 을 따르므로 보다 간단하게 구현하고 사용할 수 있습니다.
 
 이러한 API에 대한 자세한 정보를 보려면 브라우저를 사용하여 Liferay의 API 탐색기( `[server]:[port]/o/api` (예: http://localhost:8080/o/api)에 접속하세요. 또는 명령줄에서 cURL을 사용하여 전체 목록에 액세스합니다. 예를 들어
 
@@ -21,7 +21,7 @@ curl \
     -u "test@liferay.com:learn"
 ```
 
-가장 관련성이 높은 문서는 `[server]:[port]/o/[api-name]/[api-version]/openapi.[yaml 또는 json]` (원시 형식)에서도 확인할 수 있습니다. 설명서는 [SwaggerHub](https://app.swaggerhub.com/search?owner=liferayinc)에서도 확인할 수 있지만 이전 버전을 실행 중인 경우 일치하지 않을 수 있습니다.
+가장 관련성이 높은 문서는 `[server]:[port]/o/[api-name]/[api-version]/openapi.[yaml 또는 json]` (원시 형식)에서도 확인할 수 있습니다. 설명서는 [SwaggerHub](https://app.swaggerhub.com/search?owner=liferayinc) 에서도 확인할 수 있지만 이전 버전을 실행 중인 경우 일치하지 않을 수 있습니다.
 
 모든 API에 대한 OpenAPI 사양을 보려면 브라우저를 사용하여 `[server]:[port]/o/api?endpoint=[server]:[port]/o/openapi/openapi.json`에 액세스하세요. (예: http://localhost:8080/o/api?endpoint=http://localhost:8080/o/openapi/openapi.json). 또는 cURL을 사용하여 전체 목록을 JSON 형식 또는 YAML 형식으로 다운로드하세요. 예를 들어
 
@@ -47,7 +47,7 @@ curl \
 
 [GraphQL](https://graphql.org/) API는 헤드리스 REST API와 유사한 상호 작용을 지원하지만 조금 더 유연하게 사용할 수 있는 쿼리 언어입니다. Liferay DXP는 이 API를 `[server][:port]/o/graphql`에 노출합니다.
 
-자세한 정보는 [GraphQL 클라이언트](https://graphql.org/graphql-js/graphql-clients/)를 통해 API 또는 해당 설명서를 탐색하여 확인할 수 있습니다. Liferay에는 실행 중인 인스턴스에서 `[server][:port]/o/api` (오른쪽 상단에서 **GraphQL** 선택)에서 찾을 수 있는 기본 제공 클라이언트가 포함되어 있습니다.
+자세한 정보는 [GraphQL 클라이언트](https://graphql.org/graphql-js/graphql-clients/) 를 통해 API 또는 해당 설명서를 탐색하여 확인할 수 있습니다. Liferay에는 실행 중인 인스턴스에서 `[server][:port]/o/api` (오른쪽 상단에서 **GraphQL** 선택)에서 찾을 수 있는 기본 제공 클라이언트가 포함되어 있습니다.
 
 ### 일반 웹/REST 서비스
 

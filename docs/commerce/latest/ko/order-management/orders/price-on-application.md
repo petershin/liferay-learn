@@ -125,5 +125,5 @@
 ![견적 처리됨을 클릭하여 견적을 처리합니다.](./price-on-application/images/06.png)
 
 ```{note}
-이미지: "[CIFA 세척 배치 플랜트](https://www.cifa.com/en/batching-plants/recycling/cifa-wash)" 
+이미지: "[CIFA 세척 배치 플랜트](https://www.cifa.com/en/batching-plants/recycling/cifa-wash)"
 ```

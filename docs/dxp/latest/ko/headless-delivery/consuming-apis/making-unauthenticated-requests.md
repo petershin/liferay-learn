@@ -30,19 +30,19 @@ curl localhost:8080/o/headless-admin-user/v1.0/sites/20122
 
 1. ** 추가(![add](../../images/icon-add.png))를 클릭합니다.
 
-1. 정책에 설명이 포함된 이름을 지정합니다. "SITE_API_GUEST_ACCESS"와 같이 부르는 것이 합리적입니다.
+1. 정책에 설명이 포함된 이름을 지정합니다. "SITE **API** GUEST_ACCESS"와 같이 부르는 것이 합리적입니다.
 
-1. *활성화* 토글을 전환하여 정책을 활성화합니다.
+1. **활성화** 토글을 전환하여 정책을 활성화합니다.
 
-1. *기본값* 로 표시된 토글을 전환하여 인증된 요청뿐만 아니라 인증되지 않은 요청에도 정책을 적용합니다.
+1. **기본값** 로 표시된 토글을 전환하여 인증된 요청뿐만 아니라 인증되지 않은 요청에도 정책을 적용합니다.
 
-1. 정책에 _Grant Guest access to the Site API_과 같은 현지화된 제목을 지정합니다.
+1. 정책에 **Grant Guest access to the Site API** 과 같은 현지화된 제목을 지정합니다.
 
-1. 하단의 *고급 모드로 전환* 클릭하세요.
+1. 하단의 **고급 모드로 전환** 클릭하세요.
 
 1. 위의 오류 메시지에서 메소드 서명을 복사하여 붙여넣습니다: `com.liferay.headless.admin.user.internal.resource.v1_0.SiteResourceImpl#getSite`.
 
-1. *저장*클릭하세요.
+1. **저장** 클릭하세요.
 
 ```{note}
 정책에서 Liferay의 내부 서비스 계층 클래스 대신 Liferay의 외부 헤드리스 API 클래스를 사용해야 합니다.

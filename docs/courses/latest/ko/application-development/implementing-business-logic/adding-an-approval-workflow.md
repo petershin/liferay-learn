@@ -1,6 +1,6 @@
 # 승인 워크플로 추가
 
-`applicationState` 필드를 추가한 후 Delectable Bonsai는 애플리케이션에 대한 변경 사항을 검토하고 승인하기 위한 워크플로를 구현하려고 합니다. 현재 애플리케이션에 대한 모든 업데이트는 선택한 상태에 관계없이 자동으로 승인됩니다. Delectable Bonsai는 추가 비즈니스 로직을 `승인된` 및 `거부된` 상태와 연결하므로 워크플로우는 `applicationState` 필드를 확인하고 이러한 값 중 하나가 선택된 경우 관리자 검토를 요구해야 합니다. 여기에서는 Liferay [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions)을 사용하여 이 워크플로 프로세스를 배포하고 설정합니다.
+`applicationState` 필드를 추가한 후 Delectable Bonsai는 애플리케이션에 대한 변경 사항을 검토하고 승인하기 위한 워크플로를 구현하려고 합니다. 현재 애플리케이션에 대한 모든 업데이트는 선택한 상태에 관계없이 자동으로 승인됩니다. Delectable Bonsai는 추가 비즈니스 로직을 `승인된` 및 `거부된` 상태와 연결하므로 워크플로우는 `applicationState` 필드를 확인하고 이러한 값 중 하나가 선택된 경우 관리자 검토를 요구해야 합니다. 여기에서는 Liferay [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) 을 사용하여 이 워크플로 프로세스를 배포하고 설정합니다.
 
 ## 클라이언트 확장 배포
 
@@ -144,7 +144,7 @@
 
 ## 배포자 애플리케이션을 위한 워크플로 활성화
 
-1. *글로벌 메뉴* (![Global Menu](../../images/icon-applications-menu.png))을 열고 *애플리케이션* 탭으로 이동한 후 *프로세스 빌더*클릭합니다.
+1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **애플리케이션** 탭으로 이동한 후 **프로세스 빌더** 클릭합니다.
 
 1. 기계 승인자 프로세스가 나타나는지 확인합니다.
 
@@ -156,27 +156,27 @@
 
    ![이 프로세스에는 시작, 시스템 검토, 관리자 검토, 업데이트 및 승인의 5개 노드가 포함됩니다.](./adding-an-approval-workflow/images/02.png)
 
-1. *구성* 탭으로 이동합니다.
+1. **구성** 탭으로 이동합니다.
 
-1. Distributor Application에 대해 *Edit* 클릭하고 *Machine Approver*선택한 다음 *Save*클릭합니다.
+1. Distributor Application에 대해 **Edit** 클릭하고 **Machine Approver** 선택한 다음 **Save** 클릭합니다.
 
 ## 워크플로 테스트
 
 1. 배포자 응용 프로그램을 열고 항목 편집을 시작합니다.
 
-1. 상태를 *Under Review* 로 설정하고 *Save*클릭합니다.
+1. 상태를 **Under Review** 로 설정하고 **Save** 클릭합니다.
 
 1. 항목 상태를 확인하세요. 승인되어야 합니다.
 
    ![항목 상태는 승인됨이어야 합니다.](./adding-an-approval-workflow/images/03.png)
 
-1. 항목 상태를 *Approved*로 변경합니다.
+1. 항목 상태를 **Approved** 로 변경합니다.
 
-1. 항목 상태를 확인하세요. *Pending*이어야 합니다.
+1. 항목 상태를 확인하세요. **Pending** 이어야 합니다.
 
    ![항목 상태는 보류 중이어야 합니다.](./adding-an-approval-workflow/images/04.png)
 
-1. *개인 메뉴*열고 *알림*으로 이동한 다음 새 *워크플로 알림*클릭합니다.
+1. **개인 메뉴** 열고 **알림** 으로 이동한 다음 새 **워크플로 알림** 클릭합니다.
 
    ![워크플로 알림을 봅니다.](./adding-an-approval-workflow/images/05.png)
 

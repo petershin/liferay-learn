@@ -4,11 +4,11 @@ FreeMarker에서 템플릿을 개발할 때 Liferay의 taglib에 액세스할 �
 
 DXP의 템플릿 편집기를 사용하는 경우 요소 탭 아래 템플릿 편집기 오른쪽에서 변수를 찾을 수 있습니다. 변수 중 하나를 템플릿 편집기에 배치하려면
 
-1. *사이트 메뉴*( ![Site Menu](../../../images/icon-product-menu.png) ) 을 열고 *콘텐츠 & 데이터* &rarr; *웹 콘텐츠*을 선택하세요.
+1. **사이트 메뉴**( ![Site Menu](../../../images/icon-product-menu.png) ) 을 열고 **콘텐츠 & 데이터** &rarr; **웹 콘텐츠** 을 선택하세요.
 
-1. *템플릿* 탭을 클릭하고 *추가*( ![Add Fremarker(.ftl)](../../../images/icon-add.png) )을 클릭합니다.
+1. **템플릿** 탭을 클릭하고 **추가**( ![Add Fremarker(.ftl)](../../../images/icon-add.png) )을 클릭합니다.
 
-1. 페이지 오른쪽에 있는 *Elements* 탭을 선택합니다.
+1. 페이지 오른쪽에 있는 **Elements** 탭을 선택합니다.
 
 1. 웹 컨텐츠 편집기에서 변수를 배치할 사이트에 커서를 놓습니다.
 
@@ -26,7 +26,7 @@ DXP의 템플릿 편집기를 사용하는 경우 요소 탭 아래 템플릿 �
 FreeMarker의 `utilLocator`, `objectUtil` 및 `staticUtil` 변수는 기본적으로 비활성화되어 있습니다. 이러한 변수는 원격 코드 실행 및 권한 상승에 취약하므로 신뢰할 수 있는 템플릿 개발자만 활성화해야 합니다.
 ```
 
-템플릿을 저장하면 DXP는 WebDAV URL과 정적 URL을 제공합니다. 이러한 값은 구조의 XML 소스에 액세스합니다. 템플릿을 저장한 후 템플릿으로 돌아가서 *세부정보* 섹션을 확장하면 이러한 URL을 찾을 수 있습니다. WebDAV 및 WebDAV URL 사용에 대한 자세한 내용은 [WebDAV 액세스](../../documents-and-media/publishing-and-sharing/accessing-documents-with-webdav.md) 섹션을 참조하세요.
+템플릿을 저장하면 DXP는 WebDAV URL과 정적 URL을 제공합니다. 이러한 값은 구조의 XML 소스에 액세스합니다. 템플릿을 저장한 후 템플릿으로 돌아가서 **세부정보** 섹션을 확장하면 이러한 URL을 찾을 수 있습니다. WebDAV 및 WebDAV URL 사용에 대한 자세한 내용은 [WebDAV 액세스](../../documents-and-media/publishing-and-sharing/accessing-documents-with-webdav.md) 섹션을 참조하세요.
 
 ## 저널 아래의 예약된 변수
 
@@ -38,7 +38,7 @@ FreeMarker의 `utilLocator`, `objectUtil` 및 `staticUtil` 변수는 기본적�
 | 작성자 ID     | 작성자의 ID입니다.                       |
 | 작성자 직위     | 작성자의 직위입니다.                       |
 | 작성자        | 저자의 이름입니다.                        |
-| 댓글         | 계정 설정의 *추가 정보* 아래에 작성자의 의견이 있습니다. |
+| 댓글         | 계정 설정의 **추가 정보** 아래에 작성자의 의견이 있습니다. |
 | 날짜 생성      | 기사 작성일                            |
 | 묘사         | 기사의 설명입니다.                        |
 | 전시 날짜      | 일정 아래에 제공되는 표시 날짜입니다.             |

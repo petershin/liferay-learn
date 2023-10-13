@@ -23,8 +23,8 @@ toc:
 포함된 정보는 계정 담당자 및 고객 성공 관리자에게 가장 유용해야 합니다. 이를 통해 적절하고 가장 영향력 있는 영업 홍보를 준비하고 전달할 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them)을 확인하세요.
-* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf)을 다운로드하세요. 작업장.
+* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) 을 확인하세요.
+* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) 을 다운로드하세요. 작업장.
 ```
 
 ## 기존 영업 덱의 과제

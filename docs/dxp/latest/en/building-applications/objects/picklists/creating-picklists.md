@@ -41,7 +41,7 @@ To create a picklist,
 
    ![Add multiple items to a picklist.](./creating-picklists/images/04.png)
 
-Once created, you can select a picklist when creating object fields. Select the *Picklist* (single select) or *Multiselect Picklist* field type and choose the list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) and [Picklist Fields](../creating-and-managing-objects/fields/picklist-fields.md) for more information
+Once created, you can select a picklist when creating object fields. Select the *Picklist* (single select) or *Multiselect Picklist* field type and choose the list. See [Adding Fields to Objects](../creating-and-managing-objects/fields/adding-fields-to-objects.md) and [Picklist Fields](../creating-and-managing-objects/fields/picklist-fields.md) for more information. 
 
 ![Users can select the picklist when creating new object fields.](./creating-picklists/images/05.png)
 

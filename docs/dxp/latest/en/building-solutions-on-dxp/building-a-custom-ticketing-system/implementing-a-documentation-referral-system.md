@@ -86,8 +86,9 @@ See [object action yaml configuration yaml](../../building-applications/client-e
 The relevant SpringBoot files for the application are contained in the `/src` folder. A full explanation of the Java code is beyond the scope of this tutorial, but a few things to note:
 
 * In the `ObjectActionTicketRestController.java` file, the `@PostMapping` annotation matches the resource path referenced in the YAML file above. When a new ticket object is created, the object action triggers the microservice at this path and the referral results are returned to Liferay.
+
 * The referral search logic also resides in this `ObjectActionTicketRestController.java` file. In the logic, relevant articles from [learn.liferay.com](https://learn.liferay.com/) are found and added to the ticket object entry.
 
 See [developing a Java web application](../../building-applications/developing-a-java-web-application.md) for more information.
 
-Congratulations on completing this solutions tutorial on building a custom ticketing system.
+Next: [ticket management with cron jobs](./ticket-management-with-cron-jobs.md).

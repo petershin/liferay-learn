@@ -3,7 +3,7 @@ uuid: 1411549b-f2fd-473e-b4ef-5f67aa7fdb5e
 ---
 # Making and Publishing Changes
 
-{bdg-secondary}`Available Liferay 7.3+`
+{bdg-secondary}`Liferay 7.3+`
 
 Publications provides a convenient way to manage changes to your Liferay instance. With it, you and your team can create and collaborate on blocks of changes called 'publications'. You can then publish those changes to production when ready.
 
@@ -79,7 +79,7 @@ Click on an individual change to view more details. From here, you can also clic
 
 ### Previewing Changes to Pages
 
-{bdg-secondary}`Available 7.4 U37+ and GA37+`
+{bdg-secondary}`Liferay 7.4 U37+/GA37+`
 
 If a publication includes edits to a page, you can preview those changes alongside the original version of the page. To do this, click the edited page while reviewing changes.
 
@@ -88,6 +88,30 @@ If a publication includes edits to a page, you can preview those changes alongsi
 Once selected, you can view each page version individually or select Split View to see both versions side by side.
 
 ![View each page version individually, or select Split View to see them side by side.](./making-and-publishing-changes/images/07.png)
+
+### Moving Changes Between Publications
+
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+
+{bdg-secondary}`Liferay 7.4 U98+/GA98+`
+
+<!--23.Q4+ or U98+?-->
+
+While reviewing changes, you can move them to different publications. This provides greater flexibility when managing content.
+
+To move changes,
+
+1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired change and select *Move Changes*.
+
+   ![Click the Actions button for the desired change and select Move changes.](./making-and-publishing-changes/images/08.png)
+
+1. Select the desired *publication*.
+
+   <!-- ![]() -->
+
+1. Click *Move*.
+
+Publications moves the change into the selected publication along with its children and removes it from the current publication.
 
 ## Publishing Your Changes
 
@@ -105,15 +129,15 @@ Follow these steps to publish changes immediately:
 
 1. Click *Publish*.
 
-   ![Navigate to the desired publication and click on Publish.](./making-and-publishing-changes/images/08.png)
+   ![Navigate to the desired publication and click on Publish.](./making-and-publishing-changes/images/09.png)
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
-   ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/09.png)
+   ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/10.png)
 
 1. Click *Publish*.
 
-The publication's changes are immediately applied to production, and you are redirected to the History tab. From here, you can view publishing details (e.g., date, publisher, status) and [revert](./reverting-changes.md) a publication's changes if desired..
+The publication's changes are immediately applied to production, and you are redirected to the History tab. From here, you can view publishing details (e.g., date, publisher, status) and [revert](./reverting-changes.md) a publication's changes if desired.
 
 ### Scheduling for Later
 
@@ -125,7 +149,7 @@ Follow these steps to schedule publishing for a later time.
 
 1. Click *Schedule*.
 
-   ![Navigate to the desired publication and click on Schedule.](./making-and-publishing-changes/images/10.png)
+   ![Navigate to the desired publication and click on Schedule.](./making-and-publishing-changes/images/11.png)
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
@@ -135,7 +159,7 @@ Follow these steps to schedule publishing for a later time.
 
 1. Enter a date and time to determine when the changes are published to production.
 
-   ![Set a date and time to publish your changes.](./making-and-publishing-changes/images/11.png)
+   ![Set a date and time to publish your changes.](./making-and-publishing-changes/images/12.png)
 
 1. Click *Schedule* to complete the process.
 
@@ -153,7 +177,7 @@ When reviewing publication changes, file and page previews can accumulate in the
 
 1. Select *Remove DL Preview Change Tracking Store Content Data*.
 
-   ![Check the change tracking options.](./making-and-publishing-changes/images/12.png)
+   ![Check the change tracking options.](./making-and-publishing-changes/images/13.png)
 
 1. Click *Save*.
 

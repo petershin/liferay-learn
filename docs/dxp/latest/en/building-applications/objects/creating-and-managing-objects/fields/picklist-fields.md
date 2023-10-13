@@ -5,9 +5,9 @@ uuid: 0e3e6564-94b9-40d9-b041-a17f28877d0b
 
 {bdg-secondary}`Liferay 7.4 U72+/GA72+`
 
-Picklists define lists of text values that you can use as single select or multi-select fields in object definitions. By default, single select fields appear as drop-down menus, while multi-select fields appear as checkboxes.
+Picklists define lists of text values usable as single select or multi-select fields in object definitions. By default, single select fields appear as drop-down menus, while multi-select fields appear as checkboxes.
 
-When using a single select field, you can configure it to use a default value, which can be static or dynamic. Additionally, you can use single select fields to define custom states for object entries and integrate [validations](../validations/adding-custom-validations.md), [actions](../actions/defining-object-actions.md), and [workflow processes](../../enabling-workflows-for-objects.md) with the object definition to implement complex business logic.
+You can configure a single select field to use a default value, which can be static or dynamic. Additionally, you can use single select fields to define custom states for object entries and integrate [validations](../validations/adding-custom-validations.md), [actions](../actions/defining-object-actions.md), and [workflow processes](../../enabling-workflows-for-objects.md) with the object definition to implement complex business logic.
 
 ## Setting Default Values
 

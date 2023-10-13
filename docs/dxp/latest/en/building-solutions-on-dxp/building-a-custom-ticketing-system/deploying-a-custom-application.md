@@ -21,7 +21,7 @@ Deploy the `liferay-ticket-custom-element` client extension.
 
 1. In the left navigation under fragments and widgets, click the _widgets_ tab.
 
-1. Scroll down to the client extension type. Drag the _Liferay Ticket Custom Element_ widget to the page.
+1. Scroll down to the client extension type widget. Drag the _Liferay Ticket Custom Element_ widget to the page.
 
 1. Click _Publish.
 

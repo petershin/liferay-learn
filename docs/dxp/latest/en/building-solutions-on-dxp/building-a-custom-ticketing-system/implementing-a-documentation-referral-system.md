@@ -22,14 +22,27 @@ Follow the steps to enable and deploy the referral system:
 1. Next, run the following command:
 
 ```bash
-cd client-extensions/liferay-ticket-etc-spring-boot/ && ../../gradlew deploy bootRun
+./gradlew :client-extensions:liferay-ticket-etc-spring-boot:deploy
 ```
 
-The documentation referral system is now running.
+    Check your logs to verify successful deployment.
 
-1. Navigate back to the ticketing system site page. Click _Generate a New Ticket_. Note, now the newly generated ticket includes different links to relevant documentation.
+1. Next, run the following command to start the spring boot application:
 
-   ![Links to relevant documentation are included with the ticket.](./implementing-a-documentation-referral-system/images/02.png)
+```bash
+./gradlew :client-extensions:liferay-ticket-etc-spring-boot:bootRun
+```
+
+    The documentation referral system is now running.
+
+1. Navigate back to the ticketing system site page. Click _Generate a New Ticket_. A new ticket is generated.
+
+1. Navigate to _Global Menu_ &rarr; _Control Panel &rarr; _J3Y7 Tickets_. Scroll to the right of the list of tickets. Click the _options icon_ (![options icon](../../images/icon-options.png)) for the ticket that was just generated and click _View_.
+
+    Scroll down to the suggestions field. See that the referral system has included links to relevant documentation.
+
+    ![See that the referral system has included links to relevant documentation.](./implementing-a-documentation-referral-system/images/02.png)
+
 
 ## Examine the Referral System Code
 
@@ -72,7 +85,7 @@ See [object action yaml configuration yaml](../../building-applications/client-e
 
 The relevant SpringBoot files for the application are contained in the `/src` folder. A full explanation of the Java code is beyond the scope of this tutorial, but a few things to note:
 
-* In the `ObjectActionTicketRestController.java` file, the `@PostMapping` annotation matches the resource path referenced in the YAML file above. When a new ticket object is created, the object action the microservice at this path and the referral results are returned to Liferay.
+* In the `ObjectActionTicketRestController.java` file, the `@PostMapping` annotation matches the resource path referenced in the YAML file above. When a new ticket object is created, the object action triggers the microservice at this path and the referral results are returned to Liferay.
 * The referral search logic also resides in this `ObjectActionTicketRestController.java` file. In the logic, relevant articles from [learn.liferay.com](https://learn.liferay.com/) are found and added to the ticket object entry.
 
 See [developing a Java web application](../../building-applications/developing-a-java-web-application.md) for more information.

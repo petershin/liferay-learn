@@ -29,11 +29,7 @@ First create the navigation menu:
 
 1. In the Select Pages selector, expand the Clarity hierarchy and click _Shop_, then click _Recipes_.
 
-   <!-- For this menu I want Recipes but it wasn't created in the completing the site structure lesson--need to add it -->
-
-   <!-- I haven't been able to come up with an analog for Recipes; if anybody else has any ideas, I'm all for it. -Rich -->
-
-![Add the Shop and Recipes pages to the navigation menu.](./creating-navigation-menus/images/02.png)
+   ![Add the Shop and Recipes pages to the navigation menu.](./creating-navigation-menus/images/02.png)
 
 1. Click _Select_.
 
@@ -83,3 +79,8 @@ The menu display fragment showing the current navigation is added to the master 
 
 Next Clarity's design team has requested a [re-design of the Home page](./designing-the-home-page.md), with new fragments and compositions.
 
+## Relevant Concepts
+
+* [Managing Site Navigation](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/managing-site-navigation)
+* [Configuring Menu Displays](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/configuring-menu-displays)
+* [Using the Navigation Menus Application](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)

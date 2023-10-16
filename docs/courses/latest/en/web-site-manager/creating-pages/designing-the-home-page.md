@@ -57,10 +57,13 @@ SCREENSHOT/GIF
 
 Now Clarity's basic pages are in place and the home page is fleshed out. However, the navigation menu could use some enhancements. 
 
-<!-- We could just configure the Careers page to be excluded from the Menu Display navigation, like we did with search and sign-in-->
-
-<!-- No; people should be able to find the Careers page. In fact, I don't think it should be a child of About Us. -Rich -->
-
    ![The navigation menu is okay, but it could use some enhancements.](./completing-the-site-structure/images/05.png)
 
 Next, create a [new main navigation menu](./creating-navigation-menus.md) for the master page's header.
+
+
+## Relevant Concepts
+
+* [Managing Content in Content Pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/using-content-pages/managing-content-in-content-pages)
+* [Content Page Editor UI Reference](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference)
+* [Using Content Pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/using-content-pages)

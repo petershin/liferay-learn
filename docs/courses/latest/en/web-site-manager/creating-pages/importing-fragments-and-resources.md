@@ -101,4 +101,8 @@ These images appear in Documents and Media:
 
 Now that you've imported the fragments and resources, you can use them to create the Clarity site.
 
-<!-- Add Relevant Concepts from the docs here. This is an important part of the courses. Since we don't explain every feature (only the ones we'll use), you want to link to the full documentation for that feature at the bottom. -Rich -->
+## Relevant Concepts
+
+* [Default Fragments Reference](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference)
+* [Managing Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments)
+* [Including Default Resources with Fragments](https://learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/including-default-resources-with-fragments.html)

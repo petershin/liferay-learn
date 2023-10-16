@@ -3,7 +3,7 @@ uuid: 065ba9d2-8610-4dc8-b8d8-0f68dadda5d5
 ---
 # Creating and Managing Publications
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Liferay DXP/Portal 7.3+`
 
 With Publications, users can create instance-scoped blocks of changes. Because each publication is instance-scoped, they can be accessed anywhere in the Liferay UI and include changes from multiple Sites. By default, users can only view and manage publications they've created. However, users can invite each other to collaborate on their publications. See [Collaborating on Publications](./collaborating-on-publications.md) for more information.
 
@@ -15,9 +15,9 @@ Once Publications is [enabled](./enabling-publications.md), you can create, edit
 Before upgrading your Liferay version, ensure you've published all active publications. After upgrading, active publications are marked as out of date and cannot be published or changed. Also, you cannot revert any publications published before your upgrade. The *Revert* option is removed for these publications.
 ```
 
-## Creating a New Publication
+## Creating a Publication
 
-1. Click the _Publications_ drop-down menu, and select *Create New Publication*.
+1. Click the *Publications* drop-down menu, and select *Create New Publication*.
 
    ![Click Create New Publication in the Publications drop-down menu.](./creating-and-managing-publications/images/01.png)
 

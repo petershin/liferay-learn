@@ -3,7 +3,7 @@ uuid: 50898f75-135c-4b46-ae9d-b32ce3c80351
 ---
 # Using Publication Templates
 
-{bdg-secondary}`Available Liferay 7.4 U73+/GA73+`
+{bdg-secondary}`Liferay 7.4 U73+/GA73+`
 
 To simplify creating publications with shared details and contributors, use publication templates. You can create a list of users to invite and assign roles and use tokens to auto-populate names and descriptions.
 
@@ -61,7 +61,7 @@ The new template appears in the Publication Templates page.
 
 ![Templates appear in the Publication Templates page](./using-publication-templates/images/06.png)
 
-Users can select the template when [creating a publication](./creating-and-managing-publications.md#creating-a-new-publication). Selecting the template automatically populates the name and description fields and invites the default contributors.
+Users can select the template when [creating a publication](./creating-and-managing-publications.md#creating-a-publication). Selecting the template automatically populates the name and description fields and invites the default contributors.
 
 ![Users can select the template when creating a publication.](./using-publication-templates/images/07.png)
 

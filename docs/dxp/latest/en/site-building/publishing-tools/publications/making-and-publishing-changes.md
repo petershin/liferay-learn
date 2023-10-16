@@ -13,7 +13,7 @@ Publications provides a convenient way to manage changes to your Liferay instanc
 By default, users can only contribute to publications they've created. However, they can invite other users to collaborate on their publications. See [Collaborating on Publications](./collaborating-on-publications.md) for more information.
 ```
 
-If you haven't already created a publication to track your changes, see [Creating a New Publication](./creating-and-managing-publications.md#creating-a-new-publication) for more information.
+If you haven't already created a publication to track changes, see [Creating a Publication](./creating-and-managing-publications.md#creating-a-publication) for more information.
 
 Once created, a publication is automatically updated with changes made to production, provided they don't conflict with changes made in the publication. This ensures you and your team are working on the latest version of production.
 
@@ -23,25 +23,27 @@ After upgrading your Liferay version, existing publications cannot be changed, p
 
 ## Making Changes in a Publication
 
-Before making changes to your instance, ensure you're working on the correct publication and not on production or a different publication. You can confirm this via the Publications bar.
-
-If you're not currently in the desired publication, click on *Select a Publication* and choose the correct one.
+Before making changes to your instance, ensure you're working on the correct publication. You can confirm this via the Publications bar. If you're not currently in the desired publication, click *Select a Publication* and choose the correct one.
 
 ![Click on Select a Publication and choose the desired publication.](./making-and-publishing-changes/images/01.png)
 
-While working on a publication, any changes made to supported Liferay components are tracked in the publication. This can include changes across multiple sites.
+When you add, edit, or remove assets in a publication, your changes are only visible in the publication where they're made. When you delete an asset in a publication, DXP marks it for deletion and hides it when viewing the publication. The asset remains viewable to production and other publications, since its removal is only a logical deletion.
+
+While working on a publication, any changes made to supported Liferay components are tracked in the publication. This includes changes across multiple sites.
 
 ```{important}
 When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
 ```
 
-When you add, edit, or remove assets in a publication, your changes are only visible in the publication where they're made.
+If you navigate to an application that does not support Publications, Liferay indicates that changes in the application cannot be saved to a publication.
 
-Each application controls which parts of an asset are trackable by publications. However, even widgets related to applications and content types that don't support Publications can be added to your publication as part of a page.
+* For some applications, you can directly edit production while in a publication.
 
-```{note}
-When you delete an asset in a publication, DXP marks it for deletion and hides it when viewing the publication. The asset remains viewable to production and any other publications, since its removal in a publication is only a logical deletion.
-```
+   ![Directly edit production while in a publication.](./making-and-publishing-changes/images/02.png)
+
+* For other applications, you must switch to production before you can make changes.
+
+   ![Switch to production before making changes in the application.](./making-and-publishing-changes/images/03.png)
 
 ## Making Changes in Parallel Publications
 
@@ -59,23 +61,23 @@ If parallel publications include incompatible changes and one of the publication
 
 Before publishing, you can review a publication's tracked changes to ensure it only includes the desired edits. To do this, open the Publications drop-down menu and select *Review Changes*.
 
-![Open the Publications drop-down menu and select Review Changes.](./making-and-publishing-changes/images/02.png)
+![Open the Publications drop-down menu and select Review Changes.](./making-and-publishing-changes/images/04.png)
 
 Alternatively, you can review any publication's tracked changes via the Publications application. Simply navigate to the *Ongoing* tab, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the desired Publication, and select *Review Changes*.
 
 When reviewing changes, all tracked changes appear in a list that you can order by Change Type, Modified Date, Site, Status, Title, or User.
 
-![View tracked changes in a list.](./making-and-publishing-changes/images/03.png)
+![View tracked changes in a list.](./making-and-publishing-changes/images/05.png)
 
 ### Simple and Advanced Change Summaries
 
 By default, DXP displays a simple summary of tracked changes, but you can toggle the switch to *Show All Items*. This includes all background processes related to your changes.
 
-![Toggle Show All Items to see all changes included in the publications.](./making-and-publishing-changes/images/04.png)
+![Toggle Show All Items to see all changes included in the publications.](./making-and-publishing-changes/images/06.png)
 
 Click on an individual change to view more details. From here, you can also click on the Actions button ( ![Actions button](../../../images/icon-actions.png) ) for the tracked change to Edit or Discard it. Available actions depend on the type of change.
 
-![Click on individual changes to view more details.](./making-and-publishing-changes/images/05.png)
+![Click on individual changes to view more details.](./making-and-publishing-changes/images/07.png)
 
 ### Previewing Changes to Pages
 
@@ -83,11 +85,11 @@ Click on an individual change to view more details. From here, you can also clic
 
 If a publication includes edits to a page, you can preview those changes alongside the original version of the page. To do this, click the edited page while reviewing changes.
 
-![View page versions in the Display tab.](./making-and-publishing-changes/images/06.png)
+![View page versions in the Display tab.](./making-and-publishing-changes/images/08.png)
 
 Once selected, you can view each page version individually or select Split View to see both versions side by side.
 
-![View each page version individually, or select Split View to see them side by side.](./making-and-publishing-changes/images/07.png)
+![View each page version individually, or select Split View to see them side by side.](./making-and-publishing-changes/images/09.png)
 
 ### Moving Changes Between Publications
 
@@ -103,15 +105,15 @@ To move changes,
 
 1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired change and select *Move Changes*.
 
-   ![Click the Actions button for the desired change and select Move changes.](./making-and-publishing-changes/images/08.png)
+   ![Click the Actions button for the desired change and select Move changes.](./making-and-publishing-changes/images/10.png)
 
 1. Select the desired *publication*.
 
-   <!-- ![]() -->
+   <!--BROKEN: ![]() -->
 
 1. Click *Move*.
 
-Publications moves the change into the selected publication along with its children and removes it from the current publication.
+This moves the change into the selected publication along with its children. It also removes the change and its children from the current publication.
 
 ## Publishing Your Changes
 
@@ -129,11 +131,11 @@ Follow these steps to publish changes immediately:
 
 1. Click *Publish*.
 
-   ![Navigate to the desired publication and click on Publish.](./making-and-publishing-changes/images/09.png)
+   ![Navigate to the desired publication and click on Publish.](./making-and-publishing-changes/images/11.png)
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
-   ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/10.png)
+   ![Resolve all conflicts before publishing.](./making-and-publishing-changes/images/12.png)
 
 1. Click *Publish*.
 
@@ -149,7 +151,7 @@ Follow these steps to schedule publishing for a later time.
 
 1. Click *Schedule*.
 
-   ![Navigate to the desired publication and click on Schedule.](./making-and-publishing-changes/images/11.png)
+   ![Navigate to the desired publication and click on Schedule.](./making-and-publishing-changes/images/13.png)
 
 1. If necessary, manually resolve any detected conflicts. Once all conflicts are resolved, you can proceed.
 
@@ -159,7 +161,7 @@ Follow these steps to schedule publishing for a later time.
 
 1. Enter a date and time to determine when the changes are published to production.
 
-   ![Set a date and time to publish your changes.](./making-and-publishing-changes/images/12.png)
+   ![Set a date and time to publish your changes.](./making-and-publishing-changes/images/14.png)
 
 1. Click *Schedule* to complete the process.
 
@@ -177,7 +179,7 @@ When reviewing publication changes, file and page previews can accumulate in the
 
 1. Select *Remove DL Preview Change Tracking Store Content Data*.
 
-   ![Check the change tracking options.](./making-and-publishing-changes/images/13.png)
+   ![Check the change tracking options.](./making-and-publishing-changes/images/15.png)
 
 1. Click *Save*.
 

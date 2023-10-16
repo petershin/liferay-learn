@@ -29,6 +29,14 @@ To clear Property data, click the *Clear Data* button. A new form appears to con
 This results in the complete removal of this property's historical events. You cannot undo this operation.
 ```
 
+## Deleting a Property
+
+To delete the Property click the _Delete_ button. A new form appears to confirm your action. Copy and paste the verification sentence into the text box. This enables the _Delete_ button. Click the button and the property is deleted.
+
+```{warning}
+This results in the complete removal of the property and its historical events. You cannot undo this operation.
+```
+
 ## Adding and Removing Users to a Property
 
 By default all Workspace users have access to the different Properties of a Workspace. To give only selected users access to the property, change the *All Users* selection to *Select Users*. A new form appears to confirm your action. Click the *Okay* button.

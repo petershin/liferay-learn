@@ -3,7 +3,9 @@ uuid: f61d7526-596d-4885-8ddc-43b5874c9e7c
 ---
 # Adding Product Specifications
 
-Damian, the category manager, wants to enrich the products with attributes that give more information to customers. In Liferay, you can use product specifications to achieve this. He wants your help to add the following specifications to the products. 
+Damian, the category manager, wants to enrich the products with attributes that give more information to customers. You can use product specifications to achieve this. You'll add the following specifications to the products. 
+
+<!-- Who is Damian? I don't see his name on the [spreadsheet](https://docs.google.com/spreadsheets/d/1VodP25SdctCb2n1Z3ZfMAroK28lk8fHX2Kj63g4EEaE/edit#gid=0). You should have a first step of logging in as Damian, and he should have a last name that begins with D. -->
 
 * Active Ingredient
 * Country of Origin
@@ -11,9 +13,19 @@ Damian, the category manager, wants to enrich the products with attributes that 
 * Ingredients
 * Suitable for Vegans
 
+<!-- Ah, this stinks. Would've been really cool. What are we going to come up with for Clarity? You may have figured it out already, but here's some brainstorming: 
+
+- Material (steel, bronze, titanium, plastic)
+- Style (rectangle, square, round, aviator, oval, cat-eye, browline, oversized, geometric)
+- Country of Origin
+- Size (adult, child)
+- Comes with case (yes, no)
+
+-Rich -->
+
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Specifications*.
 
-1. Click *Add* (![Add](../../images/icon-add.png)) under *Specification Labels* and enter the following details:
+1. Click *Add* (![Add](../../images/icon-add.png)) under Specification Labels and enter these details:
 
    **Label:** Active Ingredient
 
@@ -58,7 +70,7 @@ The next step is to add these specifications to products. You can do this throug
    | :------------------ | :--------------------------------------------------------------------------------------------- |
    | Country of Origin   | United States                                                                                  |
    | Flavor              | Original                                                                                       |
-   | Ingredients         | Water, Thickeners, Natural Flavouring, Salt, Sap Extract, Sweetener (Sucralose), Preservatives |
+   | Ingredients         | Water, Thickeners, Natural Flavoring, Salt, Sap Extract, Sweetener (Sucralose), Preservatives  |
    | Suitable for Vegans | Yes                                                                                            |
 
 1. Now, add the following specifications to the other two products:
@@ -68,12 +80,12 @@ The next step is to add these specifications to products. You can do this throug
    | Sap Infused Orange Maple Syrup | Active Ingredient: Orange Extract                                                                                                   |
    |                                | Country of Origin: United States                                                                                                    |
    |                                | Flavor: Orange                                                                                                                      |
-   |                                | Ingredients: Water, Thickeners, Natural Flavouring, Salt, Sap Extract, Sweetener (Sucralose), Natural Orange Extract, Preservatives |
+   |                                | Ingredients: Water, Thickeners, Natural Flavoring, Salt, Sap Extract, Sweetener (Sucralose), Natural Orange Extract, Preservatives  |
    |                                | Suitable for Vegans: Yes                                                                                                            |
    | Sap Infused Honey Maple Syrup  | Active Ingredient: Honey                                                                                                            |
    |                                | Country of Origin: Mexico                                                                                                           |
    |                                | Flavor: Honey                                                                                                                       |
-   |                                | Ingredients: Water, Thickeners, Natural Flavouring, Salt, Sap Extract, Sweetener (Sucralose), Natural Honey, Preservatives          |
+   |                                | Ingredients: Water, Thickeners, Natural Flavoring, Salt, Sap Extract, Sweetener (Sucralose), Natural Honey, Preservatives           |
    |                                | Suitable for Vegans: No                                                                                                             |
 
 Next: [Adding Options](./adding-options.md)

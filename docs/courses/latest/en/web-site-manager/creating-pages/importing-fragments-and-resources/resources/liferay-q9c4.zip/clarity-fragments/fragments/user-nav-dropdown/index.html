@@ -1,0 +1,80 @@
+[#assign publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()/]
+
+[#if !themeDisplay.isSignedIn()]
+<a class="user-sign-in" href="${publicFriendlyURL}/sign-in">
+	<span class="user-sign-in-icon">
+		[@clay["icon"] symbol="user"/]
+	</span>
+	<span class="user-sign-in-label">
+		Sign In
+	</span>
+</a>
+
+[#else]
+
+<!--[#assign user_profile = themeDisplay.getPathImage() + '/user_portrait' + '?img_id=63867' + '&img_id_token=BQBDo6gdlCRMgWPrOz2LHzctWrM%3D' + '&t=1693969209178']-->
+<div class="dropdown user-nav-dropdown" style="display: inline-block;">
+	<a 
+		aria-expanded="false"
+		aria-haspopup="true"
+		class="dropdown-toggle user-nav-dropdown-button"
+		data-toggle="liferay-dropdown"
+		role="button"
+	>
+		<span class="user-nav-dropdown-button-icon">
+			[@clay["icon"] symbol="user"/]
+			<!-- <img class="user-nav-dropdown-button-profile-image" src="${user_profile}" /> -->
+		</span>
+	</a>
+
+	<ul
+		aria-labelledby="dropdownAlignment2"
+		class="dropdown-menu dorpdown-menu-right user-nav-dropdown-menu"
+	>
+		<li class="dropdown-header">
+			<span class="user-full-name">
+				${user.getFullName()}
+			</span>
+		</li>
+		<li>
+			<a class="dropdown-item user-nav-dropdown-menu-item" href="/my-account">
+				<span class="user-nav-dropdown-menu-item-icon">
+					[@clay["icon"] symbol="user"/]
+				</span>
+				<span>
+					My Account
+				</span>
+			</a>
+		</li>
+		<li>
+			<a class="dropdown-item user-nav-dropdown-menu-item" href="/my-lists">
+				<span class="user-nav-dropdown-menu-item-icon">
+					[@clay["icon"] symbol="list"/]
+				</span>
+				<span>
+					My Lists
+				</span>
+			</a>
+		</li>
+		<li>
+			<!--[#assign notification_link = themeDisplay.getPathFriendlyURLPrivateUser() + "/" + themeDisplay.getUser().getFirstName() + '/notifications']-->
+			<!--[#assign notification_link = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL() + '/notifications']-->
+			[#assign notification_link = themeDisplay.getPortalURL() + '/group' + themeDisplay.layout.getGroup().friendlyURL + '/manage?p_p_id=com_liferay_notifications_web_portlet_NotificationsPortlet&p_p_lifecycle=0'/]
+			<a class="dropdown-item user-nav-dropdown-menu-item" href="${notification_link}">
+				<span class="user-nav-dropdown-menu-item-icon">
+					[@clay["icon"] symbol="bell-on"/]
+				</span>
+				<span>
+					Notifications
+				</span>
+			</a>
+		</li>
+		<li class="dropdown-divider"></li>
+		<li>
+			<a class="dropdown-item user-nav-dropdown-menu-item" href="${htmlUtil.escape(themeDisplay.getURLSignOut())}?referer=${publicFriendlyURL}">>
+				Sign Out
+			</a>
+		</li>
+	</ul>
+</div>
+[/#if]

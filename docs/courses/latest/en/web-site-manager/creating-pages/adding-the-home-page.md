@@ -3,13 +3,15 @@ uuid: e33a05f2-6716-4fda-a14b-ad6f8221e534
 ---
 # Adding the Home Page
 
+<!-- Note: The fragment settings here work for now, but I have them a bit different in my site. -->
 Right now, browsing to <http://localhost:8080> loads the default site and the default home page, with the option to sign in. In the last module, you changed the instance name and set the logo. This began to give the site a customized look and feel.
 
 ![The default home page has a header, footer, and some Welcome to Liferay content.](./adding-the-home-page/images/01.png)
 
 Clarity needs its own home page. Page creation and management is the work of a site administrator, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Users assigned to the role and who are members of the site can act as an administrator for the site. The setup script and the steps completed in the [Liferay Administrator](../../liferay-administrator.md) course have your Liferay instance pre-populated with just such a user, Preston Palmer.
 
-1. Log in as the site administrator, Preston Palmer: `preston@clarityvisionsolutions.com`. 
+1. Log in as the site administrator, Preston Palmer: `preston@clarityvisionsolutions.com`, password `test`.
+   <!--This password is a guess. Even if it's right, must make sure that it stays correct. -->
 
 1. Go to the Home page and click *Edit* (![Edit](../../images/icon-edit.png)) in the administrative header.
 
@@ -55,13 +57,13 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
 1. Set an image as the banner's background. *Background* is a property for each container element's configuration. Click _Banner Container_ in the browser sidebar.
 
-1. Open the _Styles_ menu in the right sidebar, and set the *Background Image* to `banner-image.png`.
+1. Open the _Styles_ menu in the right sidebar, and set the *Background Image* to `banner-image.jpg`.
 
 1. Change the text on the page by double clicking the element to edit:
 
-   - **Heading:** _See Well. Look Good._
+   - **Heading:** _See Well, Look Good_
    - **Paragraph:** You've never seen yourself this well, looking this good.
-   - **Button:** Shop
+   - **Button:** Learn More
 
 1. Click the _Publish_ Button.
 

@@ -3,7 +3,7 @@ uuid: 988eaa6e-32e7-4517-b9df-e98a80c8dd4e
 ---
 # Creating and Configuring Channels
 
-A channel is an avenue for selling products, such as a customer portal, a B2B marketplace, or back office phone sales. You must link a channel to a site to sell products on that site. Delectable Bonsai operates two online stores, one for B2C customers and one for B2B customers. To support this, you must help Kyle create two channels and link them to their corresponding sites. 
+A channel is an avenue for selling products, such as a customer portal, a B2B marketplace, or back office phone sales. You must link a channel to a site to sell products on that site. Clarity operates two online stores, one for B2C customers and one for B2B customers. To support this, you must help Kyle create two channels and link them to their corresponding sites. 
 
 To create a channel,
 
@@ -11,7 +11,7 @@ To create a channel,
 
 1. Click *Add* (![Add](../../images/icon-add.png)) and enter the following details:
 
-   **Name:** Delectable Bonsai B2C
+   **Name:** Clarity B2C
 
    **Currency:** USD
 
@@ -23,9 +23,9 @@ To create a channel,
 
 This creates a new channel for the B2C store. Repeat the steps to create a B2B channel with the following information. 
 
-| Name                  | Currency | Type |
-| :-------------------- | :------- | :--- |
-| Delectable Bonsai B2B | USD      | Site |
+| Name        | Currency | Type |
+| :---------- | :------- | :--- |
+| Clarity B2B | USD      | Site |
 
 After creating both channels, you must link them to the corresponding Liferay sites and configure them. 
 
@@ -37,13 +37,13 @@ For the B2C channel, you’ll configure a payment method, shipping method, and e
 
 1. Select the *Type* tab and click *Select Site*. 
 
-1. Choose the *Delectable Bonsai B2C* site 
+1. Choose the *Clarity B2C* site 
 
 1. Click *Save*. 
 
 You can now use this channel to accept customer orders from your site. 
 
-Delectable Bonsai offers their B2C customers an option to pay by PayPal. Customer orders are shipped using a flat rate shipping method. You can use Liferay’s out-of-the-box payment and shipping methods to implement both of these. 
+Clarity offers their B2C customers an option to pay by PayPal. Customer orders are shipped using a flat rate shipping method. You can use Liferay’s out-of-the-box payment and shipping methods to implement both of these. 
 
 ### Configuring PayPal
 
@@ -57,7 +57,7 @@ Delectable Bonsai offers their B2C customers an option to pay by PayPal. Custome
 
 1. Click *Create App*.
 
-1. Enter *Delectable Bonsai* as the name and set the type as *Merchant*. 
+1. Enter *Clarity* as the name and set the type as *Merchant*. 
 
 1. Click *Create App*.
 
@@ -69,7 +69,7 @@ This creates the app with a name, client ID, and secret key.
 
 1. Now, go back to your Liferay instance. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Channels*.
 
-1. Select *Delectable Bonsai B2C*.
+1. Select *Clarity B2C*.
 
 1. Scroll down to the *Payment Methods* section and select *PayPal*.
 
@@ -93,13 +93,13 @@ This creates the app with a name, client ID, and secret key.
 
 1. Go to the *Shipping Options* page, click the *Add* (![Add](../../images/icon-add.png)) button.
 
-1. Enter the name as *Regular Shipping* and amount as *$9.99*.
+1. Enter the name as *Regular Shipping* and amount as *$4.99*.
 
 1. Click *Save*.
 
 1. Click *Add* (![Add](../../images/icon-add.png)) once more.
 
-1. Enter the name as *Express Shipping* and amount as *$12.99*.
+1. Enter the name as *Express Shipping* and amount as *$9.99*.
 
 1. Click *Save*.
 
@@ -111,11 +111,11 @@ For the B2B channel, you’ll configure a payment method, shipping method, and e
 
 1. Select the *Type* tab and click *Select Site*. 
 
-1. Choose the *Delectable Bonsai B2B* site.
+1. Choose the *Clarity B2B* site.
 
 1. Click *Save*. 
 
-Delectable Bonsai offers their B2B customers an option to pay by money order. They ship using a variable shipping rate that's calculated based on the weight of the shipment. You can use Liferay’s out-of-the-box payment and shipping methods to implement both of these. 
+Clarity offers their B2B customers an option to pay by money order. They ship using a variable shipping rate that's calculated based on the weight of the shipment. You can use Liferay’s out-of-the-box payment and shipping methods to implement both of these. 
 
 ### Configuring Money Order
 

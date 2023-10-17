@@ -13,13 +13,13 @@ For Liferay DXP 7.4+, Page Template Collections are called Page Template Sets in
 
 ## Exporting a Page Template
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Page Templates*.
 
 1. Select the *Page Templates* tab.
 
 1. Select the Page Template Set that contains the desired template.
 
-1. Click *Actions* ( ![Actions Button](../../../images/icon-actions.png) ) for the desired content page template and select *Export*.
+1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired content page template and select *Export*.
 
    ![Click Export to export your page template as a ZIP file](./exporting-and-importing-page-templates/images/01.png)
 
@@ -42,24 +42,54 @@ The ZIP file may contain different types of page templates as well, like `displa
 
 ## Importing a Page Template
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Page Templates*.
 
-1. Click *Options* ( ![Options icon](../../../images/icon-options.png) ) in the Application Bar and select *Import*.
+1. Click *Options* (![Options icon](../../../images/icon-options.png)) in the Application Bar and select *Import*.
 
    ![The import function is located in the options menu in the Application Bar.](./exporting-and-importing-page-templates/images/02.png)
 
 1. Select the desired page template file.
 
+   Click *Replace File* if you want to change it.
+
 1. Click *Import*.
+
+   If you import an existing page template, see [Importing an Existing Page Template](#importing-an-existing-page-template) for more information.
+
+   To cancel the operation and to be redirected to the Page Templates page, click *Cancel*.
 
    ![Page templates are imported as ZIP files.](./exporting-and-importing-page-templates/images/03.png)
 
-1. Close the *Import* window.
+1. Once the importing process is complete, you are redirected to an [import outcome page](#import-outcome-page).
 
-The page template has been imported into the site.
+1. Click *Upload Another File* to import another file or *Done* to be redirected to the Page Templates page.
+
+### Importing an Existing Page Template
+
+If you import a page template and items from the ZIP file already exist, a modal appears and users can select one of three options:
+
+**Do Not Import Existing Items**: Only new items are imported.
+
+**Overwrite Existing Items**: Duplicated existing items are overwritten.
+
+**Keep Both**: a numbered copy of existing items is imported.
+
+Once the importing process is complete, you are redirected to an [import outcome page](#import-outcome-page).
+
+![Choose one of three options when you import a duplicated page template](./exporting-and-importing-page-templates/images/04.png)
+
+### Import Outcome Page
+
+When users import files, they are redirected to a new page with details about the importing process.
+
+On the import outcome page, users can see the successfully imported entries, warnings (successful imports that could cause malfunctions), and errors (entries that weren't imported).
+
+![The import outcome page shows warnings and errors related to the importing process](./exporting-and-importing-page-templates/images/05.png)
 
 ## Related Topics
 
-* [Creating a Page Template](./creating-a-page-template.md)
-* [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md)
-* [Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
+[Creating a Page Template](./creating-a-page-template.md)
+
+[Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md)
+
+[Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)

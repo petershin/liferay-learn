@@ -531,8 +531,7 @@ This configuration creates a color palette field called `textColor`:
                     "type": "colorPalette",
                     "dataType": "object",
                     "defaultValue": {
-                        "cssClass": "white",
-                        "rgbValue": "rgb(255,255,255)"
+                        "color": "white"
                     }
                 }
             ]
@@ -541,7 +540,7 @@ This configuration creates a color palette field called `textColor`:
 }
 ```
 
-The `colorPalette` type stores an object with two values: `cssClass` and `rgbValue`.
+The `colorPalette` type stores an object with the  value: `color`.
 
 For example, if you implement the snippet above, you can use it in FreeMarker:
 

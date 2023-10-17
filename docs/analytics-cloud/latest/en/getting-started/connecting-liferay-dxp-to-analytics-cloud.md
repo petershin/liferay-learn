@@ -17,7 +17,7 @@ Connecting Liferay DXP to Analytics Cloud has these prerequisites:
 
 1. You need a [liferay.com](https://www.liferay.com) account. If you don't have one, you can [create an account](https://login.liferay.com/signin/register).
 
-1. When you visit [analytics.liferay.com](https://analytics.liferay.com/) for the first time, you must set up multi-factor authentication for the account. See [Multi-Factor Authentication](../workspace-settings/multi-factor-authentication.md) for details.
+1. When you visit [analytics.liferay.com](https://analytics.liferay.com/) for the first time, you must set up multi-factor authentication for the account. See [Multi-Factor Authentication](../reference/multi-factor-authentication.md) for details.
 
 1. Your Liferay DXP installation must meet one of the following minimum versions:
 

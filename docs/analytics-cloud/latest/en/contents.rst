@@ -13,6 +13,7 @@ Contents
    apis
    workspace-data
    workspace-settings
+   reference
    troubleshooting
 
 Indices and tables

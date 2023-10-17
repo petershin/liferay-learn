@@ -3,21 +3,21 @@ uuid: 83cead61-3aee-4d7f-a7c6-c3b2827afb6b
 ---
 # Creating a Catalog Page
 
-The catalog page displays all the products in the catalog. It contains a search bar, different facets, and sorting options. 
+The catalog page displays all the products in the catalog. It contains a search bar, facets, and sorting options. 
 
 ## Creating a New Page
 
 1. Open the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)), and navigate to *Site Builder* &rarr; *Pages*.
 
-1. Click *Add* (![Add](../../images/icon-plus.png)) next to the shop page, to add a child page, and click *Add Page*.
+1. To add a child page, click *Add* (![Add](../../images/icon-plus.png)) next to the shop page and click *Add Page*.
 
 1. Select the master page template.
 
-1. Enter the name as *Catalog* and click *Add*. This opens the new page in edit mode.
+1. Enter the name as `Catalog` and click *Add*. This opens the new page in edit mode.
 
 ## Applying the CSS Client Extension
 
-You must now configure the created page in Liferay to use your deployed client extension:
+You must now configure the created page to use your deployed client extension:
 
 1. Open the catalog page, click on *Edit* (![Edit](../../images/icon-edit.png)) at the top.
 
@@ -37,45 +37,35 @@ You must now configure the created page in Liferay to use your deployed client e
 
 1. From the left-hand browser menu, delete the paragraph and button fragments inside the banner center fragment.
 
-1. Go to the *Styles* section of the fragment and choose *banner_shop_page.png* as the background image.
+1. Go to the Styles section of the fragment and choose *banner_shop_page.png* as the background image.
 
-1. Edit the heading text to “Use Code DELECTABLE20 to get 20% off on Premium Syrup”. This is for a discount that you’ll create later.
+1. Edit the heading text to `Use Code DELECTABLE20 to get 20% off on Premium Syrup`. This is for a discount that you’ll create later.
 
-1. Drag and drop a container on the page. Change the *Container Width* to *Fixed Width*.
+1. Drag and drop a container on the page. Change the Container Width to *Fixed Width*.
 
-1. In the *Advanced* section, give it the CSS class `p-3`.
+1. In the Advanced section, give it the CSS class `p-3`.
 
 1. Drag and drop a *Grid* inside the container. 
 
-1. Set the number of *Modules* to 2.
+1. Set the number of Modules to 2.
 
-1. Resize the grid as shown below. The second module should be thrice the size of the first module. 
+1. Resize the grid as shown below. The second module should be three times the size of the first module. 
 
    ![Resize the grid in the ratio 1:3.](./creating-a-catalog-page/images/01.png)
 
 1. In the first module of the grid, drag and drop the following widgets and configure them as follows:
 
-   | Widget               | Configuration                                                                                          |
-   | :------------------- | :----------------------------------------------------------------------------------------------------- |
-   | Search Options       | 1. Click on the *Actions* (![Actions](../../images/icon-actions.png)) icon and select *Configuration*. |
-   |                      | 1. Check the box to *Allow Empty Searches*.                                                            |
-   |                      | 1. Click *Save*.                                                                                       |
-   |                      | 1. In the left hand layout menu, hide the search options widget.                                       |
-   | Price Range Facet    | 1. Click on the *Actions* (![Actions](../../images/icon-actions.png)) icon and select *Configuration*. |
-   |                      | 1. Paste the following values in the *Ranges JSON Array*:                                              |
-   |                      | ```                                                                                                    |
-   |                      | [                                                                                                      |
-   |                      | {'range': '[0 TO 5]'}\,                                                                                |
-   |                      | {'range': '[5.01 TO 10]'}\,                                                                            |
-   |                      | {'range': '[10.01 TO 15]'}\,                                                                           |
-   |                      | {'range': '[15.01 TO 20]'}\,                                                                           |
-   |                      | {'range': '[20.01 TO 25]'}\,                                                                           |
-   |                      | {'range': '[25.01 TO *]'}                                                                              |
-   |                      | ]                                                                                                      |
-   |                      | ```                                                                                                    |
-   |                      | 1. Click *Save*.                                                                                       |
-   |                      | 1. In the *Advanced* section, give it the CSS class `mt-5`.                                            |
-   | Specifications Facet | No additional configuration required.                                                                  |
+   | Widget               | Configuration                                                                              |
+   |:---------------------|:-------------------------------------------------------------------------------------------|
+   | Search Options       | 1. Click *Actions* (![Actions](../../images/icon-actions.png)) and select *Configuration*. <br/> 2. Check the box to *Allow Empty Searches*.<br/> 3. Click *Save*.<br/> 4. In the left hand layout menu, hide the search options widget.                           |
+   | Price Range Facet    | 1. Click *Actions* (![Actions](../../images/icon-actions.png)) and select *Configuration*. <br/> 2. Paste the following values in the *Ranges JSON Array*: <br/>
+   |                      | `[`<br/> `{'range': '[0 TO 5]'}\,`<br/> `{'range': '[5.01 TO 10]'}\,`<br/>`{'range': '[10.01 TO 15]'}\,`<br/> `{'range': '[15.01 TO 20]'}\,`<br/> `{'range': '[20.01 TO 25]'}\,`<br/>`{'range': '[25.01 TO *]'}`<br/> `]`                                                                                        |
+   |                      |                                                                                            |
+   |                      | 1. Click *Save*.                                                                           |
+   |                      | 1. In the Advanced section, give it the CSS class `mt-5`.                                  |
+   | Specifications Facet | No additional configuration required.                                                      |
+
+<!-- I got this table to look mostly like it should when the Markdown is converted. You may want to consider presenting this material in a different way. -Rich -->
 
 1. In the second module of the grid, drag and drop the following two widgets:
 

@@ -7,15 +7,17 @@ Liferay DXP provides tools for managing fragments in the Liferay UI. With out-of
 
 ```{tip}
 To share fragments and sets between sites, add them to the Global site or use the export/import actions.
+
+You can use the Export/Import actions within the fragment sets and individual page fragments if you have a ZIP file. Alternatively, if you have a LAR file, you can use the Export/Import options in the Options menu located at the Applications Bar.
 ```
 
 ## Managing Fragment Sets
 
-1. Open the *Site Menu* ( ![Site Menu](../../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Fragments*.
+1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
 
 1. Select the desired fragment set.
 
-1. Click the set's *Actions* button ( ![Actions](../../../../images/icon-actions.png) ).
+1. Click the set's *Actions* button (![Actions](../../../../images/icon-actions.png)).
 
    ![Click the fragment set's Actions button to access management options.](./managing-fragments/images/01.png)
 
@@ -25,21 +27,21 @@ To share fragments and sets between sites, add them to the Global site or use th
 
    **Export**: Download the fragment set as a `.zip` file. This file includes the set's `.json`, fragment code, and resources.
 
-   **Import**: Upload fragments and resources to a set as a `.zip` file. During import, check *Overwrite Existing Files* to overwrite existing fragments with the same fragment name. If an imported fragment has invalid rules, it is saved as a draft.
+   **Import**: Upload fragments and resources to a set as a `.zip` file. If an imported fragment has invalid rules, it is saved as a draft. This import process works similarly to the [page template import process](../../adding-pages/exporting-and-importing-page-templates.md#importing-a-page-template).
 
    **Delete**: Remove the current fragment set and all its contents.
 
 ```{tip}
-To export multiple sets, click the Fragment Sets *Actions* button ( ![Actions](../../../../images/icon-actions.png) ) and select *Export*. Then, check the sets you want to export and click *Export*. Each set is downloaded as a separate `.zip` file.
+To export multiple sets, click the Fragment Sets *Actions* button (![Actions](../../../../images/icon-actions.png)) and select *Export*. Then, check the sets you want to export and click *Export*. Each set is downloaded as a separate `.zip` file.
 ```
 
 ## Managing Individual Page Fragments
 
-1. Open the *Site Menu* ( ![Site Menu](../../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Fragments*.
+1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
 
 1. Select the desired fragment set.
 
-1. Click the fragment's *Actions* button ( ![Actions](../../../../images/icon-actions.png) ).
+1. Click the fragment's *Actions* button (![Actions](../../../../images/icon-actions.png)).
 
    ![Click the fragment's Actions button to access fragment management options.](./managing-fragments/images/02.png)
 
@@ -53,7 +55,7 @@ To export multiple sets, click the Fragment Sets *Actions* button ( ![Actions](.
 
     **Rename**: Change the fragment's name.
 
-    **Mark or Unmark as Cacheable**: Mark or unmark the fragment as cacheable. When a fragment is cached, it improves the performance of its pages. 
+    **Mark or Unmark as Cacheable**: Mark or unmark the fragment as cacheable. When a fragment is cached, it improves the performance of its pages.
 
     **View Usages**: View the pages where the fragment is used. You can see the page's name, type, version, and the time since the page's last propagation. You can also select a page and propagate it.
 
@@ -73,11 +75,11 @@ Users cannot edit or copy [saved fragment compositions](./saving-fragment-compos
 
 {bdg-secondary}`For Liferay DXP 7.2 SP1+ and Liferay Portal 7.2 GA2+`
 
-1. Open the *Site Menu* ( ![Site Menu](../../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Fragments*.
+1. Open the *Site Menu* (![Site Menu](../../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
 
 1. Select the desired fragment set.
 
-1. Click the fragment's *Actions* button ( ![Actions](../../../../images/icon-actions.png) ) and select *Copy To*.
+1. Click the fragment's *Actions* button (![Actions](../../../../images/icon-actions.png)) and select *Copy To*.
 
    ![Click the fragment's Actions button and select Copy To.](./managing-fragments/images/03.png)
 
@@ -89,6 +91,8 @@ Users cannot edit [default fragments](./default-fragments-reference.md) directly
 
 ## Related Topics
 
-* [Using Fragments](../using-fragments.md)
-* [Configuring Fragments](./configuring-fragments.md)
-* [Default Fragments Reference](./default-fragments-reference.md)
+[Using Fragments](../using-fragments.md)
+
+[Configuring Fragments](./configuring-fragments.md)
+
+[Default Fragments Reference](./default-fragments-reference.md)

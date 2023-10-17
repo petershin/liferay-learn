@@ -65,31 +65,33 @@ Before publishing, you can review a publication's tracked changes to ensure it o
 
 Alternatively, you can review any publication's tracked changes via the Publications application. Simply navigate to the *Ongoing* tab, click on the *Actions* button ( ![Actions button](../../../images/icon-actions.png) ) for the desired Publication, and select *Review Changes*.
 
-When reviewing changes, all tracked changes appear in a list that you can order by Change Type, Modified Date, Site, Status, Title, or User.
+When reviewing changes, all tracked changes appear in a list that you can order by User, Site, Title, Type, Status, Change Type, or Last Modified.
 
-![View tracked changes in a list.](./making-and-publishing-changes/images/05.png)
+By default, Publications only displays some changes, but you can view all system changes as well. To do this, click the *Actions* button ( ![Action Button](../../../images/icon-actions.png) ) for the publication and select *Show System Changes*. This displays all changes included in the publication.
 
-### Simple and Advanced Change Summaries
+![Select Show System Changes to view all changes included in the publication.](./making-and-publishing-changes/images/05.png)
 
-By default, DXP displays a simple summary of tracked changes, but you can toggle the switch to *Show All Items*. This includes all background processes related to your changes.
+During review, you can select a change to view more details and access additional actions (e.g., edit, discard). Available actions depend on the entity's type.
 
-![Toggle Show All Items to see all changes included in the publications.](./making-and-publishing-changes/images/06.png)
-
-Click on an individual change to view more details. From here, you can also click on the Actions button ( ![Actions button](../../../images/icon-actions.png) ) for the tracked change to Edit or Discard it. Available actions depend on the type of change.
-
-![Click on individual changes to view more details.](./making-and-publishing-changes/images/07.png)
+![Select a change to view more details and access additional actions.](./making-and-publishing-changes/images/06.png)
 
 ### Previewing Changes to Pages
 
-{bdg-secondary}`Liferay 7.4 U37+/GA37+`
+{bdg-secondary}`Liferay 7.4 U98+/GA98+`
 
-If a publication includes edits to a page, you can preview those changes alongside the original version of the page. To do this, click the edited page while reviewing changes.
+<!-- Confirm release; also 23.Q4+ or U98+? -->
 
-![View page versions in the Display tab.](./making-and-publishing-changes/images/08.png)
+If a publication includes edits to a page, you can preview those changes alongside the original version of the page.
 
-Once selected, you can view each page version individually or select Split View to see both versions side by side.
+![View page versions in the Display tab.](./making-and-publishing-changes/images/07.png)
 
-![View each page version individually, or select Split View to see them side by side.](./making-and-publishing-changes/images/09.png)
+When reviewing changes to a page with alternate [user experiences](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md), you can use the experiences drop-down menu to switch between them.
+
+![Select the desired user experience to review.](./making-and-publishing-changes/images/08.png)
+
+Once selected, you can view each page version individually or select Split View to review them side by side.
+
+![Review page versions individually or select Split View to review them side by side.](./making-and-publishing-changes/images/09.png)
 
 ### Moving Changes Between Publications
 
@@ -109,7 +111,7 @@ To move changes,
 
 1. Select the desired *publication*.
 
-   <!--BROKEN: ![]() -->
+   <!--TASK: ![]() -->
 
 1. Click *Move*.
 

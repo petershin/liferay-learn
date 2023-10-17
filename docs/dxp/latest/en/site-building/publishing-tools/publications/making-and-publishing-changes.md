@@ -23,9 +23,9 @@ After upgrading your Liferay version, existing publications cannot be changed, p
 
 ## Making Changes in a Publication
 
-Before making changes to your instance, ensure you're working on the correct publication. You can confirm this via the Publications bar. If you're not currently in the desired publication, click *Select a Publication* and choose the correct one.
+Before making changes to your instance, ensure you're working on the correct publication. You can confirm this via the Publications bar. If you're not currently in a publication, you can create one or select an existing one.
 
-![Click on Select a Publication and choose the desired publication.](./making-and-publishing-changes/images/01.png)
+![Select the desired publication or create one.](./making-and-publishing-changes/images/01.png)
 
 When you add, edit, or remove assets in a publication, your changes are only visible in the publication where they're made. When you delete an asset in a publication, DXP marks it for deletion and hides it when viewing the publication. The asset remains viewable to production and other publications, since its removal is only a logical deletion.
 

@@ -5,7 +5,7 @@ uuid: 3cb502c6-4320-4646-adbb-3a985c248728
 ---
 # Commerce Architect
 
-Liferay’s full-fledged Commerce offering comes with a host of product management, order management, inventory management, and pricing capabilities. This course continues the story of Delectable Bonsai as they plan to sell their products to both regular customers and other businesses. They plan to offer a publicly accessible shop for direct-to-consumer sales and a storefront for businesses that requires a log-in. 
+Liferay’s full-fledged Commerce offering comes with a host of product management, order management, inventory management, and pricing capabilities. This course continues the story of Clarity as they plan to sell their products to both regular customers and other businesses. They plan to offer a publicly accessible shop for direct-to-consumer sales and a storefront for businesses that requires a log-in. 
 
 <!-- Add screenshot of the final stores here -->
 

@@ -3,7 +3,7 @@ uuid: d3f40144-866d-4a66-af04-7d482e06c8c7
 ---
 # Configuring Workflows and Notifications
 
-Preston Palmer, the order manager, wants to review and approve placed by Robert Read, the buyer for Almighty Syrup, for budget reasons. Delectable Bonsai’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. This workflow helps when there’s a budget allocated for buying and requires approvals.
+Preston Palmer, the order manager, wants to review and approve orders placed by Robert Read, the buyer for Almighty Vision, for budget reasons. Clarity’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. This workflow helps when there’s a budget allocated for buying and requires approvals.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Channels*. 
 
@@ -25,15 +25,15 @@ Kyle, the administrator, needs your help to notify users when an order is accept
 
 1. Enter these details:
 
-   **Name:** Delectable Bonsai - Order Accepted Notification Template
+   **Name:** Clarity - Order Accepted Notification Template
 
-   **Description:** Notification template for emails sent when orders are accepted by Delectable Bonsai.
+   **Description:** Notification template for emails sent when orders are accepted by Clarity.
 
    **To:** `[%COMMERCEORDER_AUTHOR_EMAIL_ADDRESS%]`
 
-   **From Address:** `orders@delectablebonsai.com`
+   **From Address:** `orders@clarity.com`
 
-   **From Name:** `Orders @ Delectable Bonsai`
+   **From Name:** `Orders @ Clarity`
 
    **Subject:** `Your Order: [%COMMERCEORDER_ID%] has been accepted`
 
@@ -42,11 +42,11 @@ Kyle, the administrator, needs your help to notify users when an order is accept
    ```
    Hi [%COMMERCEORDER_AUTHOR_FIRST_NAME%] [%COMMERCEORDER_AUTHOR_LAST_NAME%],
 
-   Your recent order from Delectable Bonsai with Order ID: [%COMMERCEORDER_ID%] has been accepted. Visit the orders page from your account to know the latest status of your order. 
+   Your recent order from Clarity with Order ID: [%COMMERCEORDER_ID%] has been accepted. Visit the orders page from your account to know the latest status of your order. 
 
    Thanks,
 
-   Orders @ Delectable Bonsai
+   Orders @ Clarity
    ```
 
    Here are all the variables you can use in your notification template:
@@ -105,7 +105,7 @@ This creates a notification template for sending notifications whenever an order
    | Partially Shipped | 14            |
    | On Hold           | 20            |
 
-1. Under Action, choose *Notification* and select the *Delectable Bonsai Order Accepted* notification template. 
+1. Under Action, choose *Notification* and select the *Clarity Order Accepted* notification template. 
 
    ![Enter the trigger, condition, and action for the object action.](./configuring-workflows-and-notifications/images/02.png)
 

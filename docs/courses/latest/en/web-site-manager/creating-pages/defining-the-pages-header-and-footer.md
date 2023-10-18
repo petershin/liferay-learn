@@ -11,11 +11,13 @@ Clarity needs their own header and footer design, of course. At first the master
 
 1. Add the Master Page. Open the *Site Menu* (![Product Menu](../../images/icon-product-menu.png)), then click *Design* &rarr; *Page Templates*.
 
-1. Click *Add* (![Add](./../../images/icon-add.png)) and name the page _Del Bonsai MP_. <!-- Change this name to something Clarity-based. -Rich -->
+1. Click *Add* (![Add](./../../images/icon-add.png)) and name the page _Clarity MP_.
 
    The content page editor appears. Only one element is currently on the page, a drop zone. Clarity's header and footer should appear above and below the drop zone, respectively.
 
-1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag _header-composition_ above the drop zone, then drag _footer-composition_ below the drop zone.
+1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag _clarity-header-comp_ above the drop zone, then drag _clarity-footer-comp_ below the drop zone.
+
+   You imported these fragment compositions in [Importing Fragments and Resources](./importing-fragments-and-resources.md).
 
 1. Map the image fragment in the header to a logo. Open the browser (![Browser](../../images/icon-hierarchy.png)), expand the Header Container element, and continue expanding elements until you get to the middle grid module's image fragment.
 
@@ -23,11 +25,11 @@ Clarity needs their own header and footer design, of course. At first the master
 
 1. Click the image fragment to open its settings, then click _image-square_ to set the source of the image.
 
-1. Choose direct source selection, then choose the image _DB Green - 1W_. <!-- Looks like all of these need to be changed to Clarity, so I'll stop mentioning it and assume you know. -Rich -->
+1. Choose direct source selection, then choose the image _clarity-logo_.
 
    ![Set the image to use in the header.](./defining-the-pages-header-and-footer/images/05.png)
 
-1. Using the same procedure, add the _DB Green - 3_ image to the footer's image fragment.
+1. Using the same procedure, add the _clarity-logo_ image to the footer's image fragment.
 
    ![Set the image to use in the footer.](./defining-the-pages-header-and-footer/images/06.png)
 
@@ -43,7 +45,7 @@ The master page is in place, so it's time to configure Liferay to use it on the 
 
 1. Go to the Home page and click *Edit* (![Edit](../../images/icon-edit.png)) in the administrative header.
 
-1. In the content page editor, open the *Page Design Options* sidebar menu (![Page Design Options](../../images/icon-format.png)) and select _Del Bonsai MP_.
+1. In the content page editor, open the *Page Design Options* sidebar menu (![Page Design Options](../../images/icon-format.png)) and select _Clarity MP_.
 
 1. Click _Publish_.
 

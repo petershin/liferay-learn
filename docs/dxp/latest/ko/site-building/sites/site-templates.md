@@ -5,7 +5,7 @@ toc:
   - ./site-templates/configuring-site-template-propagation.md
   - ./site-templates/exporting-importing-site-templates.md
 ---
-# 위치 템플렛
+# 사이트 템플렛
 
 ```{toctree}
 :maxdepth: 4

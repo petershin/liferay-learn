@@ -77,6 +77,6 @@
 
 ## 관련 주제
 
-* [위치](../sites.md)
+* [사이트](../sites.md)
 * [사이트 추가](./adding-a-site.md)
 * [사이트 설정 UI 참조](../site-settings/site-settings-ui-reference.md)

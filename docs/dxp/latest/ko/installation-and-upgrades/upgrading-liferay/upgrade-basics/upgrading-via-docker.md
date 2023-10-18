@@ -48,7 +48,7 @@ Docker가 없으신가요? 먼저 여기로 이동하세요:
 
 1. 임베디드 [Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/getting-started-with-elasticsearch.md) 엔진 또는 로컬 [파일 저장소 \(문서 라이브러리\)](../../../system-administration/file-storage.md)를 사용하는 경우 `[Liferay Home]/data` 폴더를 새 `파일` 폴더에 복사하여 `new-version/files/data`를 생성합니다.
 
-1. 백업에서 [Liferay 홈 파일](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) 및 [애플리케이션 서버 파일](../../maintaining-a-liferay-installation/backing-up.md#application-server) 을 복사하여 `파일` 폴더의 해당 위치(새 `[Liferay 홈]`)에 병합합니다. 예를 들어, 활성화 키를 `new-version/files/license/`에 복사합니다. 파일에는 다음이 포함될 수 있지만 이에 국한되지는 않습니다:
+1. 백업에서 [Liferay 홈 파일](../../maintaining-a-liferay-installation/backing-up.md#liferay-home) 및 [애플리케이션 서버 파일](../../maintaining-a-liferay-installation/backing-up.md#application-server) 을 복사하여 `파일` 폴더의 해당 사이트(새 `[Liferay 홈]`)에 병합합니다. 예를 들어, 활성화 키를 `new-version/files/license/`에 복사합니다. 파일에는 다음이 포함될 수 있지만 이에 국한되지는 않습니다:
 
     * `/license/*`: 활성화 키. (구독)
 
@@ -68,7 +68,7 @@ Docker가 없으신가요? 먼저 여기로 이동하세요:
     echo "indexReadOnly=\"true\"" >> new-version/files/osgi/config/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
     ```
 
-1. [고급 파일 시스템 저장소](../../../system-administration/file-storage.md) 또는 [단순 파일 시스템 저장소](../../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) (저장 위치가 수정된 경우)를 사용하는 경우, 파일 저장소 설정을 [`.config` 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 로 내보낸 후 `new-version/osgi/configs` 폴더에 복사합니다. 
+1. [고급 파일 시스템 저장소](../../../system-administration/file-storage.md) 또는 [단순 파일 시스템 저장소](../../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) (저장 사이트가 수정된 경우)를 사용하는 경우, 파일 저장소 설정을 [`.config` 파일](../../../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) 로 내보낸 후 `new-version/osgi/configs` 폴더에 복사합니다. 
 
     ```{important}
     고급 파일 시스템 저장소](../../../시스템-관리/파일 저장소.md)를 사용하는 경우 데이터베이스를 업그레이드하기 전에 새 설치에서 `.config` 파일로 구성해야 합니다.

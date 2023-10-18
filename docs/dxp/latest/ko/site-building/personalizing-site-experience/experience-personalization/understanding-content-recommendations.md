@@ -26,7 +26,7 @@ Analytics Cloud는 현재 사용자의 관심을 창출하기 위해 영어로 �
 
 다음 요소가 있는 경우 콘텐츠 추천이 자동으로 작동합니다.
 
-1. 1. [Analytics Cloud가 Liferay DXP 인스턴스에 연결됨](./configuring-content-recommendations.md#connecting-analytics-cloud-to-your-liferay-dxp-instance) 및 사이트 콘텐츠가 동기화됩니다.
+1. [Analytics Cloud가 Liferay DXP 인스턴스에 연결됨](./configuring-content-recommendations.md#connecting-analytics-cloud-to-your-liferay-dxp-instance) 및 사이트 콘텐츠가 동기화됩니다.
 2. 다른 콘텐츠를 포함하는 동적 컬렉션을 Liferay DXP에서 [생성](./configuring-content-recommendations.md#동적 컬렉션 생성) 하고 콘텐츠 추천 옵션을 활성화합니다.
 3. 자산 게시자, 컬렉션 표시 조각 또는 컬렉션 페이지를 사용하여 [동적 컬렉션 표시](./configuring-content-recommendations.md#동적 컬렉션 표시) 를 표시합니다.
 

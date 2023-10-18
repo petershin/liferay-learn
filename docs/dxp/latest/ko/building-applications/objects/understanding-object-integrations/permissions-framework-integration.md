@@ -72,9 +72,9 @@
 
 1. 확인란을 사용하여 원하는 역할에 [항목에 대한 작업](#acting-on-existing-entries) 권한을 부여합니다.
 
-    ````{참고}
+    ```{note}
     역할 관리 애플리케이션에 정의된 권한은 엔터티 수준에서 정의된 권한보다 우선 적용됩니다.
-    ````
+    ```
 
     ![원하는 역할에 권한을 할당하려면 확인란을 사용하세요.](./permissions-framework-integration/images/02.png)
 

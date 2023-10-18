@@ -157,7 +157,7 @@ CRUD 메서드 중 하나가 호출될 때마다 일부 로그 메시지를 추�
 
 ### 파일 삭제 구현
 
-1. 파일이 저장되는 위치를 제어할 수 있도록 비공개 변수 `_PATHNAME` 을 설정합니다. 여기서 경로는 Docker 컨테이너의 Liferay 설치 위치를 가리킵니다.
+1. 파일이 저장되는 사이트를 제어할 수 있도록 비공개 변수 `_PATHNAME` 을 설정합니다. 여기서 경로는 Docker 컨테이너의 Liferay 설치 사이트를 가리킵니다.
 
    ```java
    private static final String _PATHNAME = "/opt/liferay/form-records";

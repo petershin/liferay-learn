@@ -40,7 +40,7 @@ liferay.workspace.docker.image.liferay=liferay/dxp:7.2.10-sp2-202005120922
 ```
 
 ```{note}
-Liferay Cloud 스택이 아직 4.x.x로 업데이트되지 않은 경우, 기본적으로 이 버전은 리포지토리 루트에 있는 `gradle.properties` 파일에 위치합니다. 이 경우 `liferay.workspace.lcp.liferay.image` 속성을 사용하여 버전을 정의합니다(주 버전과 별도로 정의할 필요 없음). 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](./reference/understanding-service-stack-versions.md)를 참조하세요.
+Liferay Cloud 스택이 아직 4.x.x로 업데이트되지 않은 경우, 기본적으로 이 버전은 리포지토리 루트에 있는 `gradle.properties` 파일에 사이트합니다. 이 경우 `liferay.workspace.lcp.liferay.image` 속성을 사용하여 버전을 정의합니다(주 버전과 별도로 정의할 필요 없음). 버전 확인에 대한 자세한 내용은 [서비스 스택 버전 이해](./reference/understanding-service-stack-versions.md)를 참조하세요.
 ```
 
 Liferay Cloud의 [서비스 변경 로그](https://help.liferay.com/hc/ko/sections/360006251311-Services-Changelog) 에서 각 새 릴리스에 대한 참조를 확인할 수 있습니다. 각각의 새로운 서비스 업데이트에는 인스턴스에 사용할 수 있는 Docker 이미지가 포함되어 있습니다. [Docker Hub의 DXP 태그](https://hub.docker.com/r/liferay/dxp/tags?page=1) 를 직접 확인하여 사용할 Docker 이미지 이름을 찾을 수도 있습니다.
@@ -49,7 +49,7 @@ Liferay Cloud의 [서비스 변경 로그](https://help.liferay.com/hc/ko/sectio
 
 ## 배포(사용자 지정, 패치 및 라이선싱)
 
-Liferay DXP에 사용자 지정 추가 사항을 배포하려면 새 모듈, 라이선스 또는 핫픽스를 Git 리포지토리의 적절한 위치에 추가해야 합니다.
+Liferay DXP에 사용자 지정 추가 사항을 배포하려면 새 모듈, 라이선스 또는 핫픽스를 Git 리포지토리의 적절한 사이트에 추가해야 합니다.
 
 `common/` 디렉터리를 제외한 환경별 폴더(예: `dev`, `uat`, `prod`)에 추가된 변경 사항은 해당 환경에 배포할 때 **만** 전파됩니다. `common/` 디렉터리에 추가된 변경 사항은 대상 배포 환경에 관계없이 **항상** 배포됩니다. 이는 모든 서비스에 대해 `configs/` 디렉터리 내의 모든 하위 폴더에 적용됩니다.
 

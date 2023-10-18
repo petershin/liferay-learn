@@ -66,20 +66,20 @@
 
       log(jwt, _log, json);
 
-      문자열 전환 = "자동 승인";
+      String transition = "auto-approve";
 
-      JSONObject 페이로드 = new JSONObject(json);
+      JSONObject payload = new JSONObject(json);
 
-      JSONObject EntryDTO = payload.getJSONObject("entryDTO");
+      JSONObject entryDTO = payload.getJSONObject("entryDTO");
 
-      JSONObject applicationState = EntryDTO.getJSONObject("applicationState");
+      JSONObject applicationState = entryDTO.getJSONObject("applicationState");
 
-      문자열 applicationStateKey = applicationState.getString("key");
+      String applicationStateKey = applicationState.getString("key");
 
       if (Objects.equals("approved", applicationStateKey) || Objects.equals("denied", applicationStateKey)) {
-         전환 = "검토";
+         transition = "review";
       }
-...
+      ...
    }
 ```
 

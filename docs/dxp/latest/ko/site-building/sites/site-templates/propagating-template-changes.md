@@ -72,5 +72,5 @@ After encountering a conflict, follow these steps to restore automatic propagati
 
 ## 관련 주제
 
-* [위치 템플렛](../site-templates.md)
+* [사이트 템플렛](../site-templates.md)
 * [사이트 템플릿 전파 구성](./configuring-site-template-propagation.md)

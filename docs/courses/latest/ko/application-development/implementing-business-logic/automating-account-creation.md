@@ -37,18 +37,18 @@
 
       log(jwt, _log, json);
 
-      JSONObject 페이로드 = new JSONObject(json);
+      JSONObject payload = new JSONObject(json);
 
       JSONObject jsonApplicationDTO = payload.getJSONObject("objectEntryDTODistributorApplication");
 
       JSONObject jsonProperties = jsonApplicationDTO.getJSONObject("properties");
 
-      문자열 accountName = jsonProperties.getString("businessName");
+      String accountName = jsonProperties.getString("businessName");
 
-      문자열 accountERC = "ACCOUNT_" + accountName.toUpperCase().replace(" ", "_");
+      String accountERC = "ACCOUNT_" + accountName.toUpperCase().replace(" ", "_");
 
-      문자열 이메일 = jsonProperties.getString("applicantEmail");
-...
+      String email = jsonProperties.getString("applicantEmail");
+   ...
    }
 ```
 
@@ -97,18 +97,18 @@
 ### 계정 만들기
 
 ```java
-   개인 모노<ResponseEntity<String>> createBusinessAccount(
-      WebClient webClient, Jwt jwt, 문자열 accountERC, 문자열 accountName) {
+   private Mono<ResponseEntity<String>> createBusinessAccount(
+      WebClient webClient, Jwt jwt, String accountERC, String accountName) {
 
       return webClient.post(
       ).uri(
          "o/headless-admin-user/v1.0/accounts"
-      ). bodyValue(
+      ).bodyValue(
          "{\"externalReferenceCode\": \"" + accountERC + "\", \"name\": \"" + accountName + "\", \"type\": \"business\"}"
       ).header(
          HttpHeaders.AUTHORIZATION, "Bearer " + jwt.getTokenValue()
       )
-...
+      ...
    }
 ```
 
@@ -117,16 +117,16 @@
 ### 지원자와 계정 연결
 
 ```java
-   개인 모노<ResponseEntity<String>> AssociateUserWithAccount(
-      WebClient webClient, Jwt jwt, 문자열 accountERC, 문자열 이메일) {
+   private Mono<ResponseEntity<String>> associateUserWithAccount(
+      WebClient webClient, Jwt jwt, String accountERC, String email) {
 
       return webClient.post(
       ).uri(
-         "o/headless-admin-user/v1.0/accounts/by-external -reference-code/{externalReferenceCode}/user-accounts/by-email-address/{emailAddress}", accountERC, email
+         "o/headless-admin-user/v1.0/accounts/by-external-reference-code/{externalReferenceCode}/user-accounts/by-email-address/{emailAddress}", accountERC, email
       ).header(
          HttpHeaders.AUTHORIZATION, "Bearer " + jwt.getTokenValue()
       )
-...
+      ...
    }
 ```
 
@@ -135,16 +135,16 @@
 ### 계정 관리자 역할 할당
 
 ```java
-   개인 모노<ResponseEntity<String>> 할당AccountRoleToUser(
-      WebClient webClient, Jwt jwt, 문자열 accountERC, 정수 accountRoleId, 문자열 이메일) {
-
+   private Mono<ResponseEntity<String>> assignAccountRoleToUser(
+      WebClient webClient, Jwt jwt, String accountERC, Integer accountRoleId, String email) {
+    
       return webClient.post(
       ).uri(
-         "o/headless-admin-user/v1.0/accounts/ by-external-reference-code/{externalReferenceCode}/account-roles/{accountRoleId}/user-accounts/by-email-address/{emailAddress}", accountERC, accountRoleId, email
+         "o/headless-admin-user/v1.0/accounts/by-external-reference-code/{externalReferenceCode}/account-roles/{accountRoleId}/user-accounts/by-email-address/{emailAddress}", accountERC, accountRoleId, email
       ).header(
-         HttpHeaders.AUTHORIZATION, "Bearer" + jwt. getTokenValue()
+         HttpHeaders.AUTHORIZATION, "Bearer " + jwt.getTokenValue()
       )
-...
+      ...
    }
 ```
 

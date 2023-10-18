@@ -141,7 +141,7 @@ else {
 - 기존 코드를 재평가하세요.
 - 기존 서비스 API가 동일한 목표를 달성할 수 있는지 탐색
 
-##### G **P** N_V와 관련된 파인더 메소드의 경우
+##### G_P_N_V와 관련된 파인더 메소드의 경우
 
 `G_P_N_V`으로 끝나는 `AssetCategory` 파인더 메소드를 사용하는 경우 대신 `P_N_V` 로 끝나는 메소드를 사용하십시오.
 
@@ -152,7 +152,7 @@ else {
 ---------------------------------------
 
 ### liferay.frontend.Slider가 제거되었습니다.
-- **날짜: 2019년 10월 10일** 일
+- **날짜: 2019년 10월 10일
 - **JIRA 티켓:** [LPS-100124](https://issues.liferay.com/browse/LPS-100124)
 
 #### 무엇이 바뀌었나요?
@@ -716,7 +716,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 - `mobile`
 - `other`
 
-또는 Liferay.BrowserSelectors.run() `` 호출하여 아래 코드를 사용하여 이전 클래스를 `<html>` 요소에 적용할 수도 있습니다.
+또는 `Liferay.BrowserSelectors.run()` 호출하여 아래 코드를 사용하여 이전 클래스를 `<html>` 요소에 적용할 수도 있습니다.
 
 ```
 <aui:script use="liferay-browser-selectors">

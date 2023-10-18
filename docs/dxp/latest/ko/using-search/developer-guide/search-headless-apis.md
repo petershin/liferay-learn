@@ -184,7 +184,7 @@ curl \
 | `search.empty.search` | 요청에서 `search` 매개변수가 생략된 경우에도 결과를 반환하려면 이를 true로 설정합니다. |
 | DXP 전용<br />`search.experiences.blueprint.external.reference.code` | (선호) [검색 청사진](../liferay-enterprise-search/search-experiences/search-blueprints.md)을 설정하여 검색 쿼리 및 구성을 제어합니다. |
 | DXP 전용<br />`search.experiences.blueprint.id` | 검색 쿼리 및 구성을 제어하려면 [검색 청사진](../liferay-enterprise-search/search-experiences/search-blueprints.md)을 설정하세요.|
-| DXP 전용<br />`search.experiences.ip.address` | 자동으로 설정합니다. [지리적 위치와 함께] 청사진을 테스트하는 데에만 이것을 사용하십시오(../liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience.md#building-a-blueprint-to-personalize-search- 결과)는 다양한 위치를 시뮬레이션하도록 구성되었습니다. |
+| DXP 전용<br />`search.experiences.ip.address` | 자동으로 설정합니다. [지리적 사이트와 함께] 청사진을 테스트하는 데에만 이것을 사용하십시오(../liferay-enterprise-search/search-experiences/search-blueprints/personalizing-the-search-experience.md#building-a-blueprint-to-personalize-search- 결과)는 다양한 사이트를 시뮬레이션하도록 구성되었습니다. |
 | DXP 전용<br />`search.experiences.scope.group.id` | 청사진이 이를 필요로 하는 [요소](../liferay-enterprise-search/search-experiences/search-blueprints/search-blueprints-elements-reference.md)를 사용할 때 이를 설정하십시오. 검색을 현재 사이트로 제한, Boost 사용자 세그먼트 또는 스테이징 인식에 대한 카테고리의 콘텐츠. |
 
 ### 요청에 패싯 구성 추가하기

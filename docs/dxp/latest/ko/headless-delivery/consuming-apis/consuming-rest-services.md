@@ -15,7 +15,7 @@ REST 서비스를 호출하려면 실행 중인 Liferay DXP가 필요합니다.
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-다양한 API 끝점을 보려면 브라우저를 사용하고 `[server]:[port]/o/api`에서 Liferay의 API 탐색기에 액세스하십시오. 예를 들어 Docker 인스턴스에서 다음 위치에서 찾을 수 있습니다.
+다양한 API 끝점을 보려면 브라우저를 사용하고 `[server]:[port]/o/api`에서 Liferay의 API 탐색기에 액세스하십시오. 예를 들어 Docker 인스턴스에서 다음 사이트에서 찾을 수 있습니다.
 
 ```
 http://로컬호스트:8080/o/api

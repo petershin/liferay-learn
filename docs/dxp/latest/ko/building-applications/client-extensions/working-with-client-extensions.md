@@ -21,7 +21,7 @@
 1. 라이프레이 작업공간. 예제 클라이언트 확장 프로젝트가 포함된 작업공간을 다운로드하려면 다음을 실행하세요.
 
     ```bash
-    컬 -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\= com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=최신\&p\=zip
+    curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
     ```
 
     클라이언트 확장 프로젝트( `client-extensions/` 디렉토리에 있음)를 자신의 작업공간에 복사하거나 샘플 작업공간을 직접 사용할 수 있습니다.
@@ -72,9 +72,9 @@
 `assemble` 블록은 포함할 파일에 대한 여러 명령을 포함할 수 있는 YAML 배열입니다. 각 지침 세트는 다음 패턴을 따릅니다.
 
 ```yaml
-- from: [프로젝트의 일부 폴더]
-  include: [단일 파일 또는 전체 일치]
-  into: [아카이브의 출력 사이트]
+- from: [some folder in your project]
+  include: [single file or glob match]
+  into: [output location in archive]
 ```
 
 `어셈블` 배열에는 다음과 같은 속성이 있습니다.
@@ -86,12 +86,12 @@
    필요한 경우 여러 개의 `포함` 패턴 배열을 사용할 수 있습니다.
 
    ```yaml
-   어셈블:
-       - 시작: 빌드
-         포함:
+   assemble:
+       - from: build
+         include:
            - "vite/js/*.js"
            - "vite/css/*.css"
-         시작: 정적
+         into: static
    ```
 
 * `에서`: 결과 LUFFA에서 일치하는 리소스를 복사할 사이트를 지정합니다.
@@ -105,7 +105,7 @@
    예를 들어 Spring Boot를 사용하는 `마이크로서비스` 클라이언트 확장 프로젝트에서 Gradle 작업 `bootJar` 애플리케이션과 모든 해당 종속성을 포함하는 `.jar` 파일을 생성합니다. 이 경우 `fromTask` 속성을 사용하여 프로젝트의 `bootJar` Gradle 작업 실행을 트리거한 다음 결과 LUFFA의 루트에 작업 출력(즉, 빌드된 `.jar` 파일)을 포함합니다.
 
    ```yaml
-   조립:
+   assemble:
        - fromTask: bootJar
    ```
 
@@ -116,30 +116,30 @@
 `조립` 블록에 여러 개의 `from` 항목을 포함할 수 있습니다.
 
 ```yaml
-어셈블:
-    - 원본: build/folder/aaa
-      포함: "css/*.css"
-      포함: 폴더/aaa
-    - 원본: build/folder/bbb
-      포함: "css/*.css"
-      포함: 폴더 /bbb
+assemble:
+    - from: build/folder/aaa
+      include: "css/*.css"
+      into: folder/aaa
+    - from: build/folder/bbb
+      include: "css/*.css"
+      into: folder/bbb
 ```
 
 다음과 같이 빌드되지 않은 프로젝트의 리소스를 포함할 수도 있습니다.
 
 ```yaml
-조립:
-    - 시작: 자산
-      시작: 정적
+assemble:
+    - from: assets
+      into: static
 ```
 
 이 예에서는 `[project-root]/somewhere/else` 의 `*.ico` 파일을 LUFFA의 `static` 폴더에 배치합니다.
 
 ```yaml
-조립:
-    - 시작: 어딘가/다른
-      포함: "*.ico"
-      시작: 정적
+assemble:
+    - from: somewhere/else
+      include: "*.ico"
+      into: static
 ```
 
 LUFFA의 생성, 구조 및 내용에 대한 자세한 내용은 [패키징 클라이언트 확장](./packaging-client-extensions.md)을 참조하세요.
@@ -157,7 +157,7 @@ LXC용 클라이언트 확장을 배포하려면,
 1. 작업공간의 `client-extensions/` 폴더로 이동하여 실행하세요.
 
    ```bash
-   ../gradlew 클린 빌드
+   ../gradlew clean build
    ```
 
    컴파일된 `.zip` 파일은 각 프로젝트의 `dist/` 폴더에 생성됩니다. 한 번에 하나의 프로젝트를 빌드하려면 프로젝트 폴더에서 명령을 실행하세요.
@@ -165,7 +165,7 @@ LXC용 클라이언트 확장을 배포하려면,
 1. 선택한 환경에 각 클라이언트 확장을 배포하려면 다음 명령을 실행하세요.
 
    ```bash
-   lcp 배포 --확장 [extension-zip-file]
+   lcp deploy --extension [extension-zip-file]
    ```
 
    메시지가 표시되면 프로젝트와 배포 환경을 선택합니다. 명령이 완료되면 zip 파일이 LXC 프로젝트에 업로드됩니다.
@@ -181,7 +181,7 @@ Liferay 설치를 자체 호스팅하는 경우 작업 공간 번들 zip을 사�
 zip 파일을 수동으로 배포해야 하는 경우 다음을 실행합니다.
 
 ```bash
-../gradlew 클린 빌드
+../gradlew clean build
 ```
 
 그런 다음 각 프로젝트의 `dist/` 폴더에 있는 아카이브를 서버의 `[Liferay Home]/osgi/client-extensions/` 폴더에 복사합니다.

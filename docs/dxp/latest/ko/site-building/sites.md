@@ -8,7 +8,7 @@ toc:
   - ./sites/exporting-importing-site-pages-and-content.md
   - ./sites/default-site-applications.md
 ---
-# 위치
+# 사이트
 
 ```{toctree}
 :maxdepth: 4

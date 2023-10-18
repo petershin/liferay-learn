@@ -3,7 +3,7 @@ uuid: 7f5e0f7f-3c70-4429-a0e9-1d47f90d214e
 ---
 # Using Fragments to Build Forms
 
-{bdg-secondary}`Liferay 7.4 U45+/GA45+`
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
 
 Liferay includes form fragments for building object forms in content pages. To build a form, add a form container to a content page or page template and map it to a published object. The container automatically populates fragments mapped to each object field. You can organize, remove, or add fragments manually. Once published, end users can create object entries using the form.
 
@@ -54,6 +54,14 @@ In addition, form fragments can only be used with [custom objects](../objects/cr
    ```
 
    ![Configure the form fragments.](./using-fragments-to-build-forms/images/03.png)
+
+1. {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` (Optional) If draft mode is enabled for the object, configure the Submitted Entry Status for the form's submit button: *Approved* or *Draft*.
+
+   ```{important}
+   When using form fragments to update entries in a display page, you cannot change an entry's status from approved to draft.
+   ```
+
+   ![Configure the Submitted Entry Status for the form's submit button.](./using-fragments-to-build-forms/images/04.png)
 
 1. Click *Publish* when finished.
 

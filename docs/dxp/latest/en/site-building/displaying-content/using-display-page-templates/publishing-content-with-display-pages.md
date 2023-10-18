@@ -3,21 +3,21 @@ uuid: 4e9f73a1-0cdf-450d-b659-3bc01546d755
 ---
 # Publishing Content With Display Pages
 
-You can use display page templates to create reusable dynamic designs for displaying content items at their friendly URLs. After [designing the template](./creating-and-managing-display-page-templates.md), you can make it the default template for displaying its content type, or manually configure only some of your content items to use it. Once set, users can view the content item's display page by visiting its friendly URL. The content is rendered dynamically according to your template design and mappings. See [Using Display Page Templates](../using-display-page-templates.md) for more information.
+You can use display page templates to create reusable dynamic designs for displaying content items at their friendly URLs. After [designing the template](./creating-and-managing-display-page-templates.md), you can make it the default template for displaying its content type or manually configure only some of your content items to use it. Once set, users can view the content item's display page by visiting its friendly URL. The content is rendered dynamically according to your template design and mappings. See [Using Display Page Templates](../using-display-page-templates.md) for more information.
 
 ```{note}
 Even though you can create multiple display page templates for the same content type, you can select only one default template. To use an alternative template as the default, you must assign the template to content items individually.
 ```
 
+<!-- I am not sure how it will be like once we are able to use multi display page templates with the same content type (LRDOCS-12296 and LRDOCS-10860). We may need to adjust the information in the admonition(?) Eric M. -->
+
 ## Setting a Default Display Page Template
 
-Follow these steps to set the default display page template for a type of content:
-
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and click *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and click *Design* &rarr; *Page Templates*.
 
 1. Click the *Display Page Templates* tab.
 
-1. Click *Actions* ( ![Actions](../../../images/icon-actions.png) ) for the desired template and select *Mark as Default*
+1. Click *Actions* (![Actions](../../../images/icon-actions.png)) for the desired template and select *Mark as Default*
 
    ```{tip}
    Each template's content type is listed under its name (1). The blue check (2) indicates which templates are marked as default.
@@ -27,9 +27,7 @@ Follow these steps to set the default display page template for a type of conten
 
 ## Setting a Display Page Template for Individual Content Items
 
-Follow these steps to use a display page template for displaying content items:
-
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to the desired application (e.g., web content, blogs, categories).
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to the desired application (e.g., web content, blogs, categories).
 
 1. Begin editing or creating a content item.
 
@@ -47,6 +45,8 @@ Follow these steps to use a display page template for displaying content items:
 
 1. (Optional) In the Properties tab, expand the *Friendly URL* panel and modify the friendly URL. This determines the URL for displaying your content item using the display page template.
 
+   <!-- The alterations with LRDOCS-12296 also bring the possibility to use friendly URLs with display page templates. We may need to add it here. Eric M. -->
+
    ```{note}
    For Liferay 7.4 U34+/GA34+, the Display Page Template framework takes into account an asset's friendly URL history. This means all URLs saved in the file's URL history redirect automatically to the file's current URL. The friendly URL history is supported for both [documents](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md) and [blogs](../../../content-authoring-and-management/blogs/displaying-blogs.md).
    ```
@@ -63,5 +63,6 @@ Once set, Liferay uses the template to display the content item at its unique fr
 
 ## Related Topics
 
-* [Using Display Page Templates](../using-display-page-templates.md)
-* [Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)
+[Using Display Page Templates](../using-display-page-templates.md)
+
+[Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)

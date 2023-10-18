@@ -21,7 +21,7 @@ using-display-page-templates/configuring-seo-and-open-graph.md
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
-Display page templates define structures for displaying content at a dedicated URL. When you create or upload content items, Liferay automatically generates a unique friendly URL for accessing it. However, you can only use this URL to view the content if you first define a template for displaying it.
+Display page templates define structures for displaying content at a dedicated URL. When you create or upload content items, Liferay generates a unique friendly URL for accessing it. However, you can only use this URL to view the content if you first define a template for displaying it.
 
 ![Create display page templates for displaying content at a dedicated URL.](./using-display-page-templates/images/01.png)
 
@@ -43,7 +43,7 @@ Use display page templates for designing layouts that you want to reuse for mult
 
 These templates are ideal for displaying a list of elements in a consistent way, like business case studies, product or service options, job listings, web articles, and more. For example, on an insurance business website you may want to list the available options. Individual web content articles describe each option. You want a landing page where site visitors can see the options and click the one they want to see the corresponding insurance details from the articles.
 
-![You can apply the same layout to different content of the same type using a single Display Page Template.](./using-display-page-templates/images/02.png)
+![You can apply the same layout to different content of the same type using a single display page template.](./using-display-page-templates/images/02.png)
 
 To achieve this goal, you can create a single display page template that maps your web content article fields to fragments in your template. Each article can use the same template. Then, you can link each insurance option in your landing page to the corresponding article's friendly URL. When site visitors click an option, the display page is populated dynamically with information from your web content articles and rendered according to your template design.
 

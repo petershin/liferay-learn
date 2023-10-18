@@ -28,7 +28,9 @@ First, add an event article to announce the Clarity site going live soon.
 1. In the *Body* field, enter this text:
 
    ```
-   The Clarity site is almost ready to go live! For now, it's currently undergoing construction and maintenance. Some features of the site may not be fully in place yet. If you have any questions about what's missing, ask us at hello@clarityvisionsolutions.com. Thank you!
+   The Clarity site is almost ready to go live! For now, it's currently undergoing construction and maintenance. Some features of the site may not be fully in place yet.
+
+   If you have any questions about what's missing, ask us at hello@clarityvisionsolutions.com. Thank you!
    ```
 
 1. Click *Select* beside the *Banner Image* field, and choose the Clarity logo (`clarity-logo.png`) you used for the site's [header and footer in the previous module](../creating-pages/defining-the-pages-header-and-footer.md).

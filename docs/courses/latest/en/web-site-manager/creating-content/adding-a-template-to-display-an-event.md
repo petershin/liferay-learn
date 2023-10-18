@@ -19,7 +19,7 @@ Here, you'll use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/d
 
    ![Click Manage Templates to specifically add templates for this web content structure.](./adding-a-template-to-display-an-event/images/01.png)
 
-1. Click Add (! [Add icon](../../images/icon-add.png) ) to create a new template.
+1. Click Add ( ![Add icon](../../images/icon-add.png) ) to create a new template.
 
    The new template is automatically associated with the Event structure because you chose to manage templates for it.
 

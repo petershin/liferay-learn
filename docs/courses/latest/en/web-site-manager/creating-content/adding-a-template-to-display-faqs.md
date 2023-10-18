@@ -19,7 +19,7 @@ Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/
 
    ![Click Manage Templates to specifically add templates for this web content structure.](./adding-a-template-to-display-faqs/images/01.png)
 
-1. Click Add (! [Add icon](../../images/icon-add.png) ) to create a new template.
+1. Click Add ( ![Add icon](../../images/icon-add.png) ) to create a new template.
 
    The new template is automatically associated with the FAQs structure because you chose to manage templates for it.
 
@@ -80,7 +80,7 @@ Next, you'll format the way a FAQs article is listed.
 
 Now you have a template that displays each question and answer wherever you display a FAQs article, and you can display both of your new types of web content properly on your site.
 
-Next, you'll start [adding some articles](./adding-the-sites-first-web-content-articles.md) with your new types.
+Next, you'll start [adding some articles](./adding-the-sites-first-web-content.md) with your new types.
 
 ## Relevant Concepts
 

@@ -37,7 +37,7 @@ Acquia, Adobe, Optimizely and Sitecore are the [four main competitors](../../lev
 
 ### Sitecore
 
-* Sitecore is a DXP focussed on marketing driven opportunities.
+* Sitecore is a DXP focused on marketing driven opportunities.
 * Gartner reports that some customers accumulate more technical debt from each version upgrade.
 * Customers report limited out-of-the-box capabilities that require a lot of customization and hidden costs, as well as a lack of direct support to all customers.
 
@@ -122,14 +122,14 @@ This Battlecard summarizes some selling points against any Low-Code / No-Code so
 ### Bloomreach
 
 * Bloomreach looks to serve digital commerce and marketing professionals seeking to transform the way they manage commerce experiences across all touchpoints.
-* Bloomreach is _mainly_ focussed on digital commerce oriented use cases for B2C and B2B markets
+* Bloomreach is _mainly_ focused on digital commerce oriented use cases for B2C and B2B markets
 * Bloomreach recently rebranded itself and goes to market as a “commerce experience platform.” 
 * Caution may be required when customers try to use Bloomreach in non-transactional scenarios.
 
 ### ShopifyPlus
 
 * ShopifyPlus is a user-friendly and scalable enterprise e-commerce platform for high volume merchants
-* ShopifyPlus has evolved from the consumer-focussed Shopify application
+* ShopifyPlus has evolved from the consumer-focused Shopify application
 * Shopify is a best fit for digital businesses that need a quick, light, and usable solution
 * ShopifyPlus has significant functional limitations compared with true enterprise platforms
 

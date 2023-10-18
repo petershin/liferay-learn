@@ -127,7 +127,7 @@ And they can ensure business continuity by:
 * Improving time to restore
 * Preventing data loss
 
-Even with all of these benefits, LifeBank are aware that there are still low-value activities that consume time, resources, and money that could be focussed on solving their business problems.
+Even with all of these benefits, LifeBank are aware that there are still low-value activities that consume time, resources, and money that could be focused on solving their business problems.
 
 In many cases, and in increasing cases - even in traditionally conservative sectors like the one LifeBank is in - Financial Services - there is a push for customers to only pay for what they need and use - which is common with SaaS and other cloud-hosted capabilities.
 

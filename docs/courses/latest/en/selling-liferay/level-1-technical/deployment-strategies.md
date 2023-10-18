@@ -50,7 +50,7 @@ Liferay has always been about preserving customer investment in their chosen sof
 
 Even while offering customers the flexibility of three different Deployment strategies, Liferay’s approach - from both Engineering and Sales perspectives - is SaaS First.
 
-This means that product initiatives are focussed on improving and expanding the experience and available tools and features for the SaaS option.
+This means that product initiatives are focused on improving and expanding the experience and available tools and features for the SaaS option.
 
 The role of any Sales representative, whether Liferay employees or Partners, is to lead the prospect to focus on solving their business problems with Liferay DXP, and start with the assumption that the deployment approach will be SaaS.
 

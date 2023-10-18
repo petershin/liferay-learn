@@ -36,7 +36,7 @@ More information on creating display pages for Objects is available [here](https
 
 ## Optional demo steps
 
-The steps shown above will be typically sufficient for a short, business-focussed demo. If there is more time, and more interest, take the opportunity to show how Objects are created. 
+The steps shown above will be typically sufficient for a short, business-focused demo. If there is more time, and more interest, take the opportunity to show how Objects are created. 
 
 The rest of the module covers these additional steps, mainly as a guide to Sales Engineers learning how to use and create Objects, but the information can also be used for more detailed demo scenarios.
 

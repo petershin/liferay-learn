@@ -8,6 +8,8 @@ toc:
 - ./level-1-technical/constructing-a-business-application.md
 - ./level-1-technical/extending-liferay.md
 - ./level-1-technical/deployment-strategies.md
+- ./level-1-technical/success-stories-analysis.md
+- ./level-1-technical/demo-ethics.md
 uuid: 465dcb4b-dbbb-412e-ac6f-c015fb44df74
 ---
 
@@ -19,7 +21,7 @@ This module focuses on Sales Engineers, taking the base knowledge learned in [Le
 
 ## Expected Outcomes
 
-The singular goal for this learning path is to enable a Sales Engineer to deliver a business-focussed 30-minute demo of Liferay using one of the pre-built demos.
+The singular goal for this learning path is to enable a Sales Engineer to deliver a business-focused 30-minute demo of Liferay using one of the pre-built demos.
 
 By the end of this course you’ll have learned
 

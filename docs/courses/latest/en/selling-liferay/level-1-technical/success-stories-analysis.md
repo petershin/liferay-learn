@@ -15,7 +15,7 @@ uuid: 8a466648-818b-4be9-bbb1-6c3f5c20a6aa
 
 ## Background
 
-In the earlier module in Level 0, [What Challenges Does Liferay Solve - Horizontal Solutions](https://learn.liferay.com/web/guest/w/courses/selling-liferay/level-0/what-challenges-does-liferay-solve-horizontal-solutions) we went through in detail 6 of the horizontal solutions that Liferay is a good fit for:
+In the earlier module in Level 0, [What Challenges Does Liferay Solve - Horizontal Solutions](https://learn.liferay.com/web/guest/w/courses/selling-liferay/level-0/what-challenges-does-liferay-solve-horizontal-solutions) we reviewed, in detail, six of the horizontal solutions that Liferay is a good fit for:
 
 * Customer Portals
 * Digital Commerce Sites

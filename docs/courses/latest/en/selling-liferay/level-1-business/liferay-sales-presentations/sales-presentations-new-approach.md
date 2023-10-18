@@ -78,7 +78,7 @@ The new sales deck approach is aligned with Liferay’s overall vision & strateg
 
 The new sales decks are also aligned to the marketing strategy and overall messaging available on liferay.com. When using the new sales decks, Account Executives can re-emphasised the key USPs and Value Propositions. 
 
-**Targeted and Focussed Decks**
+**Targeted and focused Decks**
 
 Breaking down the large legacy sales deck into smaller and focused use case specific decks provides much needed modularity to the new sales decks. It is easier to pick and choose the use cases required for a sales call, and allows AEs to have more focused discussions with the prospects in a time bound manner.
 

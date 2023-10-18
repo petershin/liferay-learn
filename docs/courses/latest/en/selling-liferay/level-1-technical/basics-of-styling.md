@@ -81,7 +81,7 @@ All this information raises a question about how Style Books actually work. Inte
 
 ### Tips for demonstrating Style Books
 
-The goal of this module is to provide sufficient information so that styling changes can be easily made to any pre-built Liferay demo. For early business-focussed Liferay demos it is not usually needed to show creating or editing Style Books, but the following steps can be used as a guide to how to start working with Style Books, and how to demonstrate them quickly and simply if needed.
+The goal of this module is to provide sufficient information so that styling changes can be easily made to any pre-built Liferay demo. For early business-focused Liferay demos it is not usually needed to show creating or editing Style Books, but the following steps can be used as a guide to how to start working with Style Books, and how to demonstrate them quickly and simply if needed.
 
 ```{note}
 Full documentation on creating and editing Style Books can be found [here](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance).

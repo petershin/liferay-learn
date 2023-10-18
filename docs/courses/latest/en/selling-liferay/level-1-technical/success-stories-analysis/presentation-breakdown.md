@@ -2,16 +2,16 @@
 uuid: 31b4df1f-149b-4882-8eb0-fea2ded0fa3c
 ---
 
-# Breaking down the Horizontal Solutions presentation
+# Breaking Down the Horizontal Solutions Presentation
 
 **At a Glance**
 
 * The Horizontal Solutions learning path presentation provides details of six common solutions where Liferay has been successful.
 * Each Solution is detailed in the same way:
-    * Solution Definition
-    * Key Liferay Capabilities to support that solution
-    * Screenshots from demos for those key capabilities
-    * Case Study from a real Liferay implementation
+  * Solution Definition
+  * Key Liferay Capabilities to support that solution
+  * Screenshots from demos for those key capabilities
+  * Case Study from a real Liferay implementation
 
 ## Introduction Slides
 

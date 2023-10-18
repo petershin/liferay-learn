@@ -10,14 +10,14 @@ uuid: 8d011989-8368-4358-8e72-53ffe7bcea47
 * Different audiences have different requirements: some audiences want to see how the demo was built but others will not.
 * Be careful with persona-based demos because switching from one role to another during the demo can be confusing for prospects.
 
-## How should demos be done?
+## How Should Demos Be Done?
 
 ![Five possible ways to demo might be: following the script from start to finish, showing the same things always shown, focussing on cool new things, showing how everything was built, being adaptive.](./how-to-demo/images/01.png)
 
 The next step is to understand how a live demo with a prospect should be run. Five possible approaches are:
 
 1. Should the demo script be followed from start to finish, to make sure every part of the story is covered?
-2. Maybe the same things that are always shown should be shown?
+2. Maybe the same things that are always shown, should be shown?
 3. Or, maybe focus on the cool new features?
 4. Perhaps show how everything was built, in addition to showing the end result?
 5. Or be adaptive, because not all demos will be the same?
@@ -36,19 +36,19 @@ Often a script will feature multiple personas to showcase different types of use
 
 Remember that it is usually only one person doing the demo, so it can be hard to follow if that one person very abruptly changes persona by saying something like “now I’m going to login as Janet the Development Manager”, and then “now I’m going to login as Julio from Marketing”.
 
-It’s hard for the audience to see the same person in every role, so try and focus on a couple of personas that add value the most. It is also important to have in mind the duration of the demo. There will not be enough time to show everything, and even if the demo takes hours, which it should never do, no one will remember all of it. So the demo needs to be focussed, with the most important elements preselected to be shown.
+It’s hard for the audience to see the same person in every role, so try and focus on a couple of personas that add value the most. It is also important to have in mind the duration of the demo. There will not be enough time to show everything, and even if the demo takes hours, which it should never do, no one will remember all of it. So the demo needs to be focused, with the most important elements preselected to be shown.
 
-## Using the same demo every time
+## Using the Same Demo Every Time
 
 Another key thing is to not just do the same demo every time, to every prospect. Always remember to focus on what matters to this particular prospect.
 
-## Focussing on the cool new stuff
+## Focusing on the Cool New Stuff
 
 As has already been mentioned, just because something is new, and seems to be cool does not mean that it matters to the prospect!
 
-## Showing how the site was built
+## Showing How the Site was Built
 
-The next one is kind of interesting because it will vary. Sometimes the demo has to include how something was built, but unless the audience is very technically focussed, in general the demo should not include showing how the entire demo was built.
+The next one is kind of interesting because it will vary. Sometimes the demo has to include how something was built, but unless the audience is very technically focused, in general the demo should not include showing how the entire demo was built.
 
 There’s a little bit of “magic” in a demo, a bit like how a finished movie looks incredible, but the behind the scenes stuff can dilute that magic.
 

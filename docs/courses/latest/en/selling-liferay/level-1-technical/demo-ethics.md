@@ -7,7 +7,7 @@ toc:
 uuid: 2279c4a7-75df-46e5-8303-b1e6fff61a07
 ---
 
-# Demo Ethics 
+# Demo Ethics
 
 **At a Glance**
 
@@ -35,17 +35,17 @@ Each section is presented with a series of possible answers to the main question
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/se1-10-demo-ethics-pdf) of the presentation used in the live workshop.
 ```
 
-## Why are demos done?
+## Why Are Demos Done?
 
 ![Five possible reasons for doing demos are: because they are cool, to show how much the SE knows about Liferay, to let the SE talk for hours, to build confidence and credibility; because they are always done.](./demo-ethics/images/01.png)
 
 Demonstrating software is a common, if not required, part of most enterprise software sales processes, and it is no different for Liferay. It is important however to think about why demos are given. Here are five possible reasons for giving a demo to a prospective customer:
 
 1. Maybe they are done because demos are cool?
-2. Maybe to allow the Sales Engineer to show how much they know about Liferay DXP?
-3. Maybe to provide an opportunity to talk for hours about Liferay?
-4. Maybe to build confidence and credibility?
-5. Or maybe just because they always are, because every sales opportunity needs a demo?
+1. Maybe to allow the Sales Engineer to show how much they know about Liferay DXP?
+1. Maybe to provide an opportunity to talk for hours about Liferay?
+1. Maybe to build confidence and credibility?
+1. Or maybe just because they always are, because every sales opportunity needs a demo?
 
 The answer here should be pretty clear to most people - demos are done to build confidence and credibility. This is essentially the single key reason for doing demos at all. The prospective customer needs to feel confident that their business problem can be addressed with a Liferay solution. Building credibility that Liferay is the right solution is something that is done throughout the sales process, and an effective demonstration is an important part of that.
 

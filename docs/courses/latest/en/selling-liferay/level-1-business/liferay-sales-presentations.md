@@ -46,7 +46,7 @@ The primary challenge with the sales decks was that they were too long. Each dec
 The time taken to remove content not needed for a given opportunity created two challenges of its own:
 
 * It took too much effort to get the deck ready
-* Or, if used unedited resulted in long and unfocussed customer meetings
+* Or, if used unedited resulted in long and unfocused customer meetings
 
 Ultimately this created a problem because Account Executives were not able to drive the conversation with prospects in an effective way.
 

@@ -60,26 +60,26 @@ Follow these steps to create a fragment:
 
    The example below adds a card component with editable text:
 
-   ```html
-   <div class="marketing-card-fragment-01">
-     <div class="card">
-       <lfr-editable id="01-card-image" type="image">
-         <img src="https://cdn.dribbble.com/users/1408464/screenshots/9323535/media/a5b9a76256562e878ecc6dc5cd0fadf0.png" class="card-img-top" alt="2020 - Try New Things">
-       </lfr-editable>
-       <div class="card-body">
-         <lfr-editable id="02-card-title" type="rich-text">
-           <h5 class="card-title">Editable Card title</h5>
-         </lfr-editable>
-         <lfr-editable id="03-card-text" type="rich-text">
-           <p class="card-text">Here is some editable text.</p>
-         </lfr-editable>
-         <lfr-editable id="04-card-link" type="link">
-           <a href="#" class="btn btn-primary">Editable link</a>
-         </lfr-editable>
-       </div>
-     </div>
-   </div>
-   ```
+    ```html
+    <div class="marketing-card-fragment-01">
+      <div class="card">
+        <data-lfr-editable id="01-card-image" type="image">
+          <img src="https://cdn.dribbble.com/users/1408464/screenshots/9323535/media/a5b9a76256562e878ecc6dc5cd0fadf0.png" class="card-img-top" alt="2020 - Try New Things">
+        </data-lfr-editable>
+        <div class="card-body">
+          <data-lfr-editable id="02-card-title" type="rich-text">
+            <h5 class="card-title">Editable Card title</h5>
+          </data-lfr-editable>
+          <data-lfr-editable id="03-card-text" type="rich-text">
+            <p class="card-text">Here is some editable text.</p>
+          </data-lfr-editable>
+          <data-lfr-editable id="04-card-link" type="link">
+            <a href="#" class="btn btn-primary">Editable link</a>
+          </data-lfr-editable>
+        </div>
+      </div>
+    </div>
+    ```
 
    ```css
    .marketing-card-fragment-01 .card img {

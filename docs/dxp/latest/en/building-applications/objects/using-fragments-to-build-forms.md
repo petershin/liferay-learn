@@ -7,7 +7,7 @@ uuid: 7f5e0f7f-3c70-4429-a0e9-1d47f90d214e
 
 Liferay includes form fragments for building object forms in content pages. To build a form, add a form container to a content page or page template and map it to a published object. The container automatically populates fragments mapped to each object field. You can organize, remove, or add fragments manually. Once published, end users can create object entries using the form.
 
-To build forms in content pages, you must 
+To build forms in content pages,
 
 * Place form fragments only in a mapped form container.
 * Map every form fragment in the form to an object field to prevent data loss.
@@ -15,11 +15,15 @@ To build forms in content pages, you must
 * Make mandatory form fragments visible.
 * Include a visible submit button in the form container.
 
+```{note}
+When mapping an object to a Form Container fragment, a submit button is generated. It allows you to map its text using [mapping settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings).
+
+To create a button with [link settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) for redirection, add `type="button"` to the button fragment.
+```
+
 By default, Liferay includes the [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components) fragment set, but you can create your own. See [Creating Form Fragments](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md) for more information.
 
-```{important}
-Form fragments can only be used with custom objects. Therefore, Liferay hides the Form Components fragment set until you have at least one published object. Once published, users with access to the object can view and use the Form Components fragments. See [Creating Objects](../objects/creating-and-managing-objects/creating-objects.md) for more information.
-```
+In addition, form fragments can only be used with [custom objects](../objects/creating-and-managing-objects/creating-objects.md). Therefore, Liferay hides the Form Components fragment set until you have at least one published object. Once published, users with access to the object can view and use the Form Components fragments.
 
 ## Creating a Form
 
@@ -72,12 +76,15 @@ Each form fragment can support one or more object field types. The default form 
 | Textarea         | Text, Long Text                                   |
 
 ```{tip}
-If categorization is enabled for the object, you can use the Tags and Categories form fragments to add metadata to object entries. 
+If categorization is enabled for the object, you can use the Tags and Categories form fragments to add metadata to object entries.
 ```
 
 ## Related Topics
 
-* [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
-* [Configuring Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)
-* [Form Fragment Options](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options)
-* [Creating Form Fragments](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md)
+[Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
+
+[Configuring Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)
+
+[Form Fragment Options](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options)
+
+[Creating Form Fragments](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md)

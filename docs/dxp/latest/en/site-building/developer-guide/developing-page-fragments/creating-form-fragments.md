@@ -9,11 +9,11 @@ The [form components fragments](../../creating-pages/page-fragments-and-widgets/
 
 To create form fragments,
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Fragments*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Fragments*.
 
-1. Click *Plus* ( ![Plus Button](../../../images/icon-plus.png) ) to create a Fragment Set for organizing your form fragments.
+1. Click *Plus* (![Plus Button](../../../images/icon-plus.png)) to create a Fragment Set for organizing your form fragments.
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ), select the *Form Fragment* type, and click *Next*.
+1. Click *Add* (![Add Button](../../../images/icon-add.png)), select the *Form Fragment* type, and click *Next*.
 
    ![Select the form fragment type and click Next.](./creating-form-fragments/images/01.png)
 
@@ -30,6 +30,12 @@ To create form fragments,
 1. In the Code tab, add HTML, CSS, and JavaScript for your fragment.
 
    ![In the Code tab, add HTML, CSS, and JavaScript for your fragment.](./creating-form-fragments/images/03.png)
+
+   ```{note}
+   The submit button fragment allows you to map its text using [mapping settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings).
+
+   To create a button with [link settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) for redirection, add `type="button"` to the button fragment.
+   ```
 
 1. (Optional) In the Configuration tab, use JSON to configure the fragment and add options to it. See [Fragment Configuration Types Reference](../reference/fragments/fragment-configuration-types-reference.md) to learn more about different fragment configuration types.
 
@@ -129,5 +135,6 @@ Form fragments include the `input` variable for use with each fragment's JavaScr
 
 ## Related Topics
 
-* [Developing Page Fragments](../developing-page-fragments.md)
-* [Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md)
+[Developing Page Fragments](../developing-page-fragments.md)
+
+[Using Fragments to Build Forms](../../../building-applications/objects/using-fragments-to-build-forms.md)

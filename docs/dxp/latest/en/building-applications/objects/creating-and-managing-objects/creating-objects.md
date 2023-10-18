@@ -37,6 +37,8 @@ Once saved, a blank object draft is created without any configurations or data e
 
 ## Editing Object Drafts
 
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
+
 Before publishing an object, you can add elements and configure its settings. This includes adding fields, defining validations, setting a scope for its data, and more.
 
 ```{note}
@@ -132,6 +134,18 @@ Follow these steps to edit the object draft:
 1. Enable or disable history for object entries.
 
    While enabled, Liferay keeps a history of entry events that you can view in the Audit application or via REST API calls. See [Auditing Object Definition Events](./auditing-object-definition-events.md).
+
+1. {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` Enable or disable draft mode for object entries.
+
+   While enabled, users can save entries as a draft and finalize them at a later time. Saving drafts does not trigger custom validations, workflow processes, or actions triggered by entry creation.
+
+   ```{note}
+   You can configure this setting at any time. Disabling draft mode does not change the status of existing entries.
+   ```
+
+1. Enable or disable translation support for custom text [fields](./fields.md).
+
+   While enabled, you can enable translation for custom text fields, so end users can localize their input. See [Localizing Object Definitions and Entries](./localizing-object-definitions-and-entries.md) for more information.
 
 1. Click *Save*.
 

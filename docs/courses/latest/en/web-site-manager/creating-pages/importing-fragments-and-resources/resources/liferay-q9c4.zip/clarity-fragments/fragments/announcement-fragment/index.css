@@ -1,5 +1,6 @@
 .announcement-banner {
 	background-color: var(--color-brand-primary);
+	border-style: solid;
 	position: relative;
 	text-align: center;
 	display: flex;
@@ -9,7 +10,7 @@
 }
 
 .announcement-banner-text{
-	color: #ffffff;
+	color: var(--body-color);
   	font-weight: var(--font-weight-semi-bold);
 	flex-grow: 1;
 	margin-bottom: 0;

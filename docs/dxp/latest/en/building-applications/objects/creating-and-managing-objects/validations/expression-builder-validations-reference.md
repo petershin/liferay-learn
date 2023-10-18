@@ -3,7 +3,7 @@ uuid: 2ef89ecc-8c75-43e3-86c1-420d6bbc3a25
 ---
 # Expression Builder Validations Reference
 
-{bdg-secondary}`Liferay 7.4 U67+ and GA67+`
+{bdg-secondary}`Liferay 7.4 U67+/GA67+`
 
 With custom Objects, you can create field validations using Liferay's Expression Builder. This tool provides an integrated editor for quickly defining complex validation rules using predefined fields, operators, and functions. You can browse available elements in the conditions side panel.
 
@@ -215,19 +215,19 @@ sum([numericField], [numericField])
 
 ## Date Fields
 
-Liferay provides the following operators and functions for Date fields. You can use any Date field as an argument. You can also set date values for comparing with your date field (e.g., `2020-03-19`).
+Liferay provides the following operators and functions for Date fields. You can use any Date field as an argument or parameter. Additionally, you can enter fixed date values (`"yyyy-MM-dd"`) for comparing with your date field (e.g., `2020-03-19`).
 
 ### Compare Dates
 
-Checks if a date field's value is the same as a set value. If the field does not match the date, it returns `false`.
+Checks if a date field's value is the same as the parameter. If the field does not match the parameter, it returns `false`.
 
 ```
-compareDates([dateField], [yyyy-MM-dd])
+compareDates([dateField], [parameter])
 ```
 
 ### Condition (with Date)
 
-Checks if user input meets one or more conditions and returns a Boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `dateFieldName == 2020-01-01`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `dateFieldName == 2020-01-01, dateFieldName != 2022-01-01, true, false`).
+Checks if user input meets one or more conditions and returns a Boolean value. This function works like `if` statements. Each expression includes at least one `condition` (e.g., `dateFieldName == 2020-01-01`) and returns `true` or `false`. You can add multiple conditions to the same expression and determine a return value if none of the conditions are met (e.g., `dateFieldName == 2020-01-01, dateFieldName != 2022-01-01, true, false`). <!--TASK: Update Example-->
 
 ```
 condition([condition], [return-value])
@@ -235,11 +235,23 @@ condition([condition], [return-value])
 
 ### Future Dates
 
-Checks if a date field's value is in the future and returns a Boolean. If the field *is not* a future date, it returns `false`.
+Checks if a date field's value is equal to or after a set parameter. If it *is not*, the function returns `false`.
 
 ```
-futureDates([dateField], "[yyyy-MM-dd]")
+futureDates([dateField], [parameter])
 ```
+
+For example,
+
+```
+futureDates(endDate, startDate)
+```
+
+```
+futureDates(endDate, "2024-01-01")
+```
+
+The first example checks whether the `endDate` is equal to or after the `startDate` value. The second example checks whether the `endDate` value is equal to or after `2024-01-01`.
 
 ### Old Value (with Date)
 
@@ -251,21 +263,43 @@ oldValue([dateField])
 
 ### Past Dates
 
-Checks if a date field's value is in the past and returns a Boolean. If the field *is not* a past date, it returns `false`.
+Checks if a date field's value is equal to or before a set parameter. If it *is not*, the function returns `false`.
 
 ```
-pastDates([dateField], "[yyyy-MM-dd]")
+pastDates([dateField], [parameter])
 ```
+
+For example,
+
+```
+pastDates(startDate, endDate)
+```
+
+```
+pastDates(startDate, "2024-01-01")
+```
+
+The first example checks whether the `startDate` is equal to or before the `endDate` value. The second checks whether the `startDate` value is equal to or before `2024-01-01`.
 
 ### Range
 
-Checks if a date range begins with a past date and ends with a future date. If the field *is not* within the date range, it returns `false`.
+Checks whether date field values begin with a past date and end with a future date. If the dates *are not* within the range, it returns `false`.
 
 ```
-pastDates([dateField], "[yyyy-MM-dd]")
+futureDates([dateField], [parameter])
 AND
-futureDates([dateField], "[yyyy-MM-dd]")
+pastDates([dateField], [parameter])
 ```
+
+For example,
+
+```
+futureDates(endDate, startDate)
+AND
+pastDates(startDate, endDate)
+```
+
+This checks whether the `endDate` value is equal to/after the `startDate` value and whether the `startDate` value is equal to/before the `endDate` value.
 
 ## Math Operators
 

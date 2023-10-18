@@ -35,6 +35,12 @@ While working on a publication, any changes made to supported Liferay components
 When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
 ```
 
+### Navigating to Unsupported Applications
+
+{bdg-link-primary}`[Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
+
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
+
 If you navigate to an application that does not support Publications, Liferay indicates that changes in the application cannot be saved to a publication.
 
 * For some applications, you can directly edit production while in a publication.
@@ -77,9 +83,9 @@ During review, you can select a change to view more details and access additiona
 
 ### Previewing Changes to Pages
 
-{bdg-secondary}`Liferay 7.4 U98+/GA98+`
+{bdg-link-primary}`[Release Feature](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags)`
 
-<!-- Confirm release; also 23.Q4+ or U98+? -->
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
 
 If a publication includes edits to a page, you can preview those changes alongside the original version of the page.
 
@@ -97,9 +103,7 @@ Once selected, you can view each page version individually or select Split View 
 
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
-{bdg-secondary}`Liferay 7.4 U98+/GA98+`
-
-<!--23.Q4+ or U98+?-->
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
 
 While reviewing changes, you can move them to different publications. This provides greater flexibility when managing content.
 

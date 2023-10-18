@@ -23,14 +23,14 @@ Account and organization roles are only supported in objects with account restri
 
 Application permissions grant access to the published object itself and do not include [resource-related permissions](#resource-permissions). Each object includes these standard application permissions according to their defined scope:
 
-| Permission                                                          | Description                                                                                                                                                                      |
-|:--------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Access in Control Panel (*Company Scope Only*)                      | Access the object in the Global Menu ( ![Global Menu](../../../images/icon-applications-menu.png) ).                                                                             |
-| Access in Site and Asset Library Administration (*Site Scope Only*) | Access the object in the Site Menu ( ![Site Menu](../../../images/icon-product-menu.png) ) or Asset Library.                                                                     |
-| Configuration                                                       | N/A                                                                                                                                                                              |
-| Permissions                                                         | View and modify application permissions for the object.                                                                                                                          |
-| Preferences                                                         | N/A                                                                                                                                                                              |
-| View                                                                | View the object's application page. This permission is required to view mapped content. Without it, collection and content displays are not displayed in View and Preview modes. |
+| Permission | Description |
+|:---|:---|
+| Access in Control Panel (*Company Scope Only*) | Access the object in the Global Menu ( ![Global Menu](../../../images/icon-applications-menu.png) ). |
+| Access in Site and Asset Library Administration (*Site Scope Only*) | Access the object in the Site Menu ( ![Site Menu](../../../images/icon-product-menu.png) ) or Asset Library. |
+| Configuration | N/A |
+| Permissions | View and modify application permissions for the object. |
+| Preferences | N/A |
+| View | View the object's application page. It's required to view mapped content, add/modify a form container mapped to the object definition while editing a page, and perform other actions provided users have the required permissions (e.g., creating display page templates, information templates, and site navigation menus). Without it, collection and content displays are not displayed in View and Preview modes. |
 
 ## Resource Permissions
 

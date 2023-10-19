@@ -1,6 +1,10 @@
 .sign-in {
-    display: flex;
-    height: 100%;
+	background-image: url([resources:clarity-sign-in-image5.png]);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	height: 100%;
 }
 
 .form-box {

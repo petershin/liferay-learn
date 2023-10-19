@@ -1,11 +1,15 @@
+---
+uuid: 8a5b9052-7825-496a-a772-8d854eec7a61
+---
 # Adding the Sign In Page
 
-<!-- copied from completing-the-site-structure.md -->
-1. Log out. On any page, click the user icon and choose _Sign Out_ from the drop-down menu. Currently the custom fragment controlling the logout link uses the default Liferay logout URL: `c/portal/logout`.
+Users can currently log into Clarity by clicking _Sign In_ in the user menu in the header. The fragment providing this experience uses the default Liferay login URL, `/c/portal/login`. Clarity needs a custom sign-in page with a consistent look and feel.
 
-1. Test the Sign In page. On any page, click the user icon and _Sign In_ link. Currently the custom fragment controlling the sign-in link uses the default Liferay login URL: `c/portal/login`. This activates the default Sign In widget on any page where it's invoked. However, it's currently ugly with the Clarity master page applied to it:
+1. Log out. On any page, click the user icon and choose _Sign Out_ from the drop-down menu. Currently the custom fragment controlling the logout link uses the default Liferay logout URL: `/c/portal/logout`.
 
-   ![The default sign in widget clashes with the master page.](./completing-the-site-structure/images/07.png)
+1. Test the Sign In page. On any page, click the user icon and _Sign In_ link. Currently the custom fragment controlling the sign-in link uses the default Liferay login URL: `/c/portal/login`. This activates the default Sign In widget on any page where it's invoked. However, it's currently ugly with the Clarity master page applied to it:
+
+   ![The default sign in widget clashes with the master page.](./adding-the-sign-in-page/images/07.png)
 
 1. Clarity needs a better sign in experience. Next you'll add a custom sign in page.
 
@@ -13,7 +17,7 @@
 
 1. Open the *Options* menu (![Options](../../images/icon-options.png)) in the administrative bar at the top of the page and click _Configure_.
 
-   ![Configure the sign-in page.](./completing-the-site-structure/images/08.png)
+   ![Configure the sign-in page.](./adding-the-sign-in-page/images/08.png)
 
 1. On the General page setting screen, once again enable _Hidden from Menu Display_ so the sign in page does not appear in the Menu Display widget's navigation menu. Note the friendly URL, `/sign-in`, and click _Save_.
 
@@ -25,17 +29,13 @@
 
 1. Use the back arrow at the top of the page to go back to the content page editor, then add the imported fragment called Sign In.
 
-1. In the Sign In fragment's Styles configuration, set the background image to use the `sign_in` image from Documents and Media. 
-
-1. Set the logo to use the `DB Green - 1W` image. 
-
 1. Publish the page.
 
-   ![The sign in page is in place.](./completing-the-site-structure/images/09.png)
+   ![The sign in page is in place.](./adding-the-sign-in-page/images/09.png)
 
-1. Now edit the custom user navigation fragment to point to the new login page instead of `c/portal/login`. Go to *Site* menu (![Product Menu](../../images/icon-product-menu.png)) &rarr; *Design* &rarr; *Fragments*. 
+1. Now edit the custom user navigation fragment to point to the new login page instead of `/c/portal/login`. Go to *Site Menu* (![Product Menu](../../images/icon-product-menu.png)) &rarr; *Design* &rarr; *Fragments*.
 
-1. Open the `user-nav_Dropdown` fragment and find the line setting the login URL:
+1. Open the `user-nav_Dropdown` fragment. In the HTML pane, find the line setting the login URL:
 
    ```html
    <a class="user-sign-in" href="/c/portal/login">
@@ -47,13 +47,22 @@
    <a class="user-sign-in" href="${publicFriendlyURL}/sign-in">
    ```
 
+   That `publicFriendlyURL` variable is set in the first line of the HTML using FreeMarker syntax:
+
+   ```html
+   [#assign publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() +
+      themeDisplay.getSiteGroup().getFriendlyURL() /]
+   ```
+
 1. Click _Publish_.
 
-   <!-- The change needs to be propagated to the fragment in use. Requires setting Propagate Fragment Changes Automatically in Instance Settings -> Page Fragments. Alternatively, do the manual propagation method and maybe also mention that there's a setting that can be used in testing/dev scenarios. -->
+1. Propagate the new fragment code to fragments that are in use on a page or master page. Open the fragment's *Actions* (![Actions](../../images/icon-actions.png)) menu and click *View Usages*.
+
+1. Select all the listed usages, then click *Propagate* (![Propagate](../../images/icon-propagate.png)). See [Propagating Fragment Changes](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/propagating-fragment-changes) to learn more.
 
 1. From any page, log out, then click _Sign In_. You're redirected to the new page, where you can sign in.
 
-   ![Sign in using the new page.](./completing-the-site-structure/images/10.png)
+   ![Sign in using the new page.](./adding-the-sign-in-page/images/10.png)
 
 Don't be concerned with the gray background for now. The custom sign-in fragment's CSS styles the `form-box` class like this:
 
@@ -73,7 +82,7 @@ Setting the background color to a brand color variable like this is a good pract
 
 Now Clarity's site structure is in place. However, the navigation menu is pretty basic, and could use some enhancements. 
 
-   ![The navigation menu is okay, but it could use some enhancements.](./completing-the-site-structure/images/05.png)
+   ![The navigation menu is okay, but it could use some enhancements.](./adding-the-sign-in-page/images/05.png)
 
 Clarity next needs a [new navigation menu](./creating-navigation-menus.md) so that it behaves exactly as desired.
 
@@ -82,3 +91,11 @@ Clarity next needs a [new navigation menu](./creating-navigation-menus.md) so th
 * [Adding Pages to a Site](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
 * [Working with Search Pages](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/working-with-search-pages/search-pages)
 * [Searching for Content](https://learn.liferay.com/en/w/dxp/using-search/getting-started/searching-for-content)
+
+<!-- These steps are from an earlier version where the lfr-editable tag was used in the fragment HTML to set the logo, and the background image was simply set using the regular container style setting for background (because the fragment is wrapped in a div
+1. In the Sign In fragment's Styles configuration, set the background image to use the `sign_in` image from Documents and Media. 
+
+1. Set the logo to use the `clarity-logo` image. 
+
+-->
+

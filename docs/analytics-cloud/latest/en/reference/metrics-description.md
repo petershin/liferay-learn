@@ -93,7 +93,7 @@ Index:
 
 **Description:** Calculates the percentage of known individuals that are in a segment who interact with a page or asset.
 
-**How it's calculated:**
+**How it's calculated:** 
 
 **Found in:**
 

@@ -34,8 +34,11 @@ Each of these components are deployable through the use of [client extensions](.
 
 Before starting, download the appropriate files and set up your system.
 
-1. Download all the files from [liferay-ticket-workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-ticket-workspace)
-<!--- Will need to update this once we can get the downloadable zip file --->
+1. To download the example workspace, run the following
+
+```bash
+curl -o com.liferay.ticket.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.ticket.workspace\&\v\=LATEST\&p\=zip
+```
 
 1. On the command line, navigate to the `liferay-ticket-workspace` folder.
 

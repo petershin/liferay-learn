@@ -71,7 +71,7 @@ Follow these steps to remove a collaborator from a publication.
 
 1. Click *Save*.
 
-## Sharing View Access to a Publication
+## Sharing Publications Via Link
 
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 

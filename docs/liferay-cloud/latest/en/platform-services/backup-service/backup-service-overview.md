@@ -122,7 +122,7 @@ See [Configuration via LCP.json](../../reference/configuration-via-lcp-json.md) 
 Determining how frequently backups are created and removed can help protect your data and optimize storage. *Only production environments can have scheduled backups.*
 
 ```{warning}
-Backups created while data is actively changing on your Liferay instance risk creating inconsistent data. Configure your backup schedule to create backups during times with reduced activity to mitigate the risk of data inconsistency. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a [manual backup](./backup-service-overview.md#creating-a-manual-backup).
+Backups created while data is actively changing on your Liferay instance risk creating inconsistent data. Configure your backup schedule to create backups during times with reduced activity to mitigate the risk of data inconsistency. To ensure a completely consistent backup, coordinate with your database administrator to freeze updates while you perform a [manual backup](./backup-service-overview.md#creating-a-manual-backup), and set it to run at *different times* from the cleanup schedule (`LCP_BACKUP_CLEANUP_SCHEDULE`).
 ```
 
 There are two ways to configure an automated backup schedule:
@@ -193,8 +193,8 @@ The following `backup/LCP.json` example creates backups every 12 hours (i.e., 00
 
 Name                          | Default Value              | Description |
 :--- | :--- | :--- |
-`LCP_BACKUP_CLEANUP_SCHEDULE` | 0 1 * * * | This variable schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). Cleanups remove all backups that exceed the backup retention period. |
-`LCP_BACKUP_CREATE_SCHEDULE`  | `[5-55][0-1] * * *`     | This variable schedules automated backups using [cron scheduling syntax](https://crontab.guru/). In versions `3.2.1` and above of the backup service, if no value is specified then a random default will be created. |
+`LCP_BACKUP_CLEANUP_SCHEDULE` | 0 1 * * * | This variable schedules automated cleanups using [cron scheduling syntax](https://crontab.guru/). Cleanups remove all backups that exceed the backup retention period. It must not conflict with `LCP_BACKUP_CREATE_SCHEDULE`. |
+`LCP_BACKUP_CREATE_SCHEDULE`  | `[5-55][0-1] * * *`     | This variable schedules automated backups using [cron scheduling syntax](https://crontab.guru/). It must not conflict with `LCP_BACKUP_CLEANUP_SCHEDULE`. In versions `3.2.1` and above of the backup service, if no value is specified then a random default will be created. |
 `LCP_BACKUP_RESTORE_SCHEDULE` | N/A | This variable schedules automated restores using [cron scheduling syntax](https://crontab.guru/). Intended for use with [Disaster Recovery environments](../../troubleshooting/configuring-cross-region-disaster-recovery.md). |
 `LCP_BACKUP_RESTORE_STRATEGY` | `OVERWRITE` | By default, existing instances are taken down immediately. To start a fresh database instance and volume before taking down existing instances, use the `PREPARE_AND_SWAP` strategy. |
 `LCP_BACKUP_RETENTION_PERIOD` | `30`                       | This variable determines which backups are removed during scheduled cleanups. Select the number of days backups are retained before being removed by cleanups. The maximum retention period is 30 days. |

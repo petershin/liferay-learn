@@ -17,11 +17,11 @@ Follow these steps to invite user to collaborate on a publication.
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), click the *Applications* tab, and go to *Publications*.
 
-1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired publication, and select *Invite Users*.
+1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired publication and select *Invite Users*.
 
-   ![Click the Publication's Actions button and select Invite Users.](./collaborating-on-publications/images/01.png)
+   ![Click the publication's Actions button and select Invite Users.](./collaborating-on-publications/images/01.png)
 
-   Alternatively, click the desired publication, and then click the *Invite Users* button.
+   Alternatively, begin reviewing the publication's changes and click the *Invite Users* button ( ![Invite Users](../../../images/icon-plus.png) ).
 
    ![In publication Changes page, click the Invite Users button.](./collaborating-on-publications/images/02.png)
 
@@ -29,7 +29,7 @@ Follow these steps to invite user to collaborate on a publication.
    This is the only way to invite users to a published publication.
    ```
 
-1. Use the drop-down menu grant *view*, *edit*, *publish*, and *invite* permissions.
+1. Use the drop-down menu to grant *view*, *edit*, *publish*, and *invite* permissions.
 
    ![Use the drop-down menu to determine the users permissions for the publication.](./collaborating-on-publications/images/03.png)
 
@@ -70,6 +70,32 @@ Follow these steps to remove a collaborator from a publication.
    ![Open the permissions drop-down menu and select Remove.](./collaborating-on-publications/images/06.png)
 
 1. Click *Save*.
+
+## Sharing View Access to a Publication
+
+{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
+
+If you need to share publication changes with people who are not site users, you can enable link sharing for the publication.  
+
+To do this,
+
+1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired publication, select *Invite Users*, and go to the *Share Link* tab.
+
+   ![Select Invite Users and go to the Share Link tab.](./collaborating-on-publications/images/07.png)
+
+   Alternatively, begin reviewing the publication's changes and click the *Share* button ( ![Share Button](../../../images/icon-link.png) ).
+
+   ![Click the Share button.](./collaborating-on-publications/images/08.png)
+
+1. Toggle the switch to enable sharing.
+
+1. Copy the link.
+
+   ![Enable sharing and copy the link.](./collaborating-on-publications/images/09.png)
+
+Anyone with the link can view the publication's changes.
 
 ## Related Topics
 

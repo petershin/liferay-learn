@@ -85,9 +85,9 @@ USE `lportal`;
 
 ### Creating the Volume File
 
-If you are uploading a backup (with your backup service at version 5.9.0+), you do not need to create a volume file. The [LCP tool](#uploading-backups-via-the-cli-tool) automatically compresses your document library's files when you run the `lcp backup upload` command.
+If you are uploading a backup with the [LCP tool](#uploading-backups-via-the-cli-tool), you do not need to create a volume file because the tool automatically compresses your document library's files.
 
-For older versions of the backup service, you must compress the document library to upload it. 
+To upload a backup via the Cloud console UI or API, you must compress the document library to upload it. 
 
 ```{tip}
 If permissions are not already configured for Liferay Cloud when you upload a backup, then restoring the backup to your environments afterward can take longer to complete. To avoid long restore times, navigate to your `LIFERAY_HOME` folder and run this command before compressing the document library: `chown -R 1000:1000 data/document_library/`.
@@ -123,10 +123,6 @@ Follow these steps (as an administrator) to download a backup from the *Backups*
 
 ## Uploading Backups via the Console
 
-```{important}
-You can only upload backups via the console **before backup service 5.9.0**. For versions 5.9.0+, use the [CLI tool](#downloading-backups-via-the-cli-tool) instead.
-```
-
 Before you can upload a backup to Liferay Cloud, you must compress the database dump and document library in separate archives. See [Preparing the Database and Document Library for Upload](#preparing-the-database-and-document-library-for-upload) for more information on preparing them for an on-premises environment.
 
 ```{warning}
@@ -150,10 +146,6 @@ A success message appears on the page when the backup is generated and the servi
 ![When the backup is finished being added to the list in your environment, a success message appears.](./downloading-and-uploading-backups/images/04.png)
 
 ## Backup Service APIs
-
-```{important}
-These API routes apply to backup service versions **before 5.9.0**. For versions 5.9.0+, use the [CLI tool](#downloading-backups-via-the-cli-tool) instead.
-```
 
 The backup service has APIs that you can also use to download and upload backups before backup version 5.9.0. You can invoke these APIs using a command line tool such as `curl`.
 

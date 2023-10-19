@@ -31,7 +31,13 @@ Specify the batch client extension in your `client-extension.yaml` file:
 type: batch
 ```
 
-You can export any type of data supported by the [batch engine framework](../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) from your Liferay instance, including [object definitions](../objects/creating-and-managing-objects.md) and [workflow definitions](../../process-automation/workflow/introduction-to-workflow.md). When exporting, choose the JSON file format. Once the `*.batch-engine-data.json` file is added to a [batch client extension](./batch-client-extensions/batch-yaml-configuration-reference.md), deploy the [built archive](./packaging-client-extensions.md) to Liferay Experience Cloud or self-hosted Liferay instances.
+You can export any type of data supported by the [batch engine framework](../../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) from your Liferay instance, including [object definitions](../objects/creating-and-managing-objects.md) and [workflow definitions](../../process-automation/workflow/introduction-to-workflow.md). 
+
+```{important}
+When exporting, use the `jsont` file format. `jsont` is required for `*.batch-engine-dat.json` files when using in conjunction with batch client extensions.
+```
+
+Once the `*.batch-engine-data.json` file is added to a [batch client extension](./batch-client-extensions/batch-yaml-configuration-reference.md), deploy the [built archive](./packaging-client-extensions.md) to Liferay Experience Cloud or self-hosted Liferay instances.
 
 ## Related Topics
 

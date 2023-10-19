@@ -26,7 +26,7 @@ Then, follow these steps:
 
 1. To export data, you must have the fully qualified class name of the entity you are exporting. You can get the class name from the API explorer in your installation at `/o/api`. Scroll down to the *Schemas* section and note down the `x-class-name` field of the entity you want to export.
 
-1. Use the following cURL script to export accounts from your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ExportTask_POST_ToInstance.sh` script with the fully qualified class name of *Account* and `json` as parameters. The `json` parameter denotes the format of the exported data. It also supports `jsonl` and `csv` formats.
+1. Use the following cURL script to export accounts from your Liferay instance. On the command line, navigate to the `curl` folder. Execute the `ExportTask_POST_ToInstance.sh` script with the fully qualified class name of *Account* and `json` as parameters. The `json` parameter denotes the format of the exported data. It also supports `jsont`, `jsonl` and `csv` formats.
 
    ```bash
    ./ExportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account json
@@ -48,6 +48,8 @@ Then, follow these steps:
    ```
 
    ```{important}
+   `jsont` is the required format for `*.batch-engine-dat.json` files when using in conjunction with batch client extensions. 
+   
    When using `json` or `jsonl` as the output format, all fields are exported by default. To specify fields, you must provide an additional query parameter (`fieldNames`) with the fields you want to export. Each field must be separated by a comma (,). When using `csv` as the export format, this is a mandatory query parameter.
    ```
 

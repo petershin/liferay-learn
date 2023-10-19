@@ -3,7 +3,7 @@ uuid: 01f46794-2cd4-4ffc-94d3-e244880f2b6f
 ---
 # Working with Client Extensions
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 Using client extensions, you can extend Liferay without deploying OSGi modules. Just like traditional module development, client extensions live in a [Liferay Workspace](../tooling/liferay-workspace.md). Get started by learning
 
@@ -154,6 +154,10 @@ Client extensions are built into deployable `.zip` archives. Each client extensi
 Deploy client extensions by placing the `.zip` files in the correct location for your Liferay installation. The exact commands you'll use depend on how your Liferay instance is hosted.
 
 ### Deploying to LXC
+
+```{warning}
+You cannot use this method to deploy client extensions to self-managed instances (LXC-SM).
+```
 
 To deploy client extensions for LXC,
 

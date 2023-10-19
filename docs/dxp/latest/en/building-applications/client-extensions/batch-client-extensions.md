@@ -5,7 +5,7 @@ uuid: 601bd5b5-8b5b-4ac6-9030-776439ff9aa7
 ---
 # Batch Client Extensions
 
-{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (self-hosted)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 ```{toctree}
 :maxdepth: 3

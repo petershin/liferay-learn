@@ -13,13 +13,13 @@ configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
 configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ```
 
-{bdg-secondary}`Available Liferay 7.4`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 Liferay instance configurations are deployable with client extensions. For example, you can deploy OAuth2 authentication profiles as configuration client extensions, enabling your other client extensions that require authentication.
 
 ## OAuth Headless Server Client Extensions
 
-{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 You can use a client extension to configure a Liferay OAuth2 application pre-configured with a `Headless Server` client profile. This kind of authentication profile is required for API calls that are not authorized by a specific user.
 
@@ -59,7 +59,7 @@ Application logic that communicates with Liferay DXP using an `oAuthApplicationH
 
 ## OAuth User Agent Client Extensions
 
-{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 You can use a client extension to configure a Liferay OAuth2 application pre-configured with a `User Agent Application` client profile. This kind of authentication profile is required for API calls authorized by a specific user (for example, making a REST call to a Liferay API using your other [microservice client extensions](./microservice-client-extensions.md)).
 

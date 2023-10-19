@@ -8,7 +8,7 @@ uuid: c35ace6c-9e29-4e9e-be37-b4799a8b21d5
 ---
 # Microservice Client Extensions
 
-{bdg-secondary}`7.4 U45+/GA45+`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 Define microservice client extensions to run your own code in response to events in your Liferay instance. How you implement the code is up to you: use the patterns and technologies you like. Microservice client extensions are hosted outside of Liferay and are triggered by cues from Liferay itself.
 
@@ -18,7 +18,7 @@ Microservice client extensions are hosted automatically when deployed within Lif
 
 ## Object Action Client Extensions
 
-{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 Object action client extensions define external action handlers that bind to an [object definition's](../objects.md) action events. Your microservice's handler code is executed when the object action occurs.
 
@@ -30,7 +30,7 @@ type: objectAction
 
 ## Workflow Action Client Extensions
 
-{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 Workflow action client extensions define external workflow action handlers that bind to action events from a [Liferay workflow](../../process-automation/workflow/introduction-to-workflow.md). Your microservice's handler code is executed when the workflow action occurs.
 
@@ -42,7 +42,7 @@ type: workflowAction
 
 ## Notification Type Client Extensions
 
-{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 Notification type client extensions define external notification handlers that bind to [notification events](../../process-automation/notifications.md) in Liferay. Your microservice's handler code is executed when the notification event occurs.
 

@@ -49,9 +49,11 @@ Olivia, the content manager, doesn't have permission to create new page template
 
 1. Click the *Styles* tab from the menu on the right side of the screen.
 
-1. Under *Spacing*, click the top and bottom margins (in the outer rectangle) and set them to use the *Spacer 3* margin.
+1. Under *Spacing*, click the top and bottom margins (in the outer rectangle) and set them to use the *Spacer 3* margin (1 rem).
 
-1. Click the left margin and set it to use the *Spacer 5* margin so the article content is moved further to the right on the page.
+   This creates a buffer of space, above and below where your template is displayed.
+
+1. Click the left margin and set it to use the *Spacer 5* margin (3 rem) so the article content is moved further to the right on the page.
 
    ![Increase the margins using the Spacing menu.](./adding-simple-display-page-templates/images/05.png)
 
@@ -91,7 +93,7 @@ Next, create a template to display a list of FAQs.
 
 1. Click the *Styles* tab in the menu on the right.
 
-1. Set the left margin to *Spacer 5*.
+1. Set the left and right margins to *Spacer 5* (3 rem).
 
 1. Under the *Text* section, change the font size to *Font Size Large*.
 
@@ -101,7 +103,7 @@ Next, create a template to display a list of FAQs.
 
 1. Click the *Styles* tab in the menu on the right.
 
-1. Set the left margin to *Spacer 5*.
+1. Set the left and right margins to *Spacer 5* (3 rem).
 
 1. In the Browser menu on the left, click the *element-text* component inside the Paragraph fragment.
 
@@ -111,7 +113,7 @@ Next, create a template to display a list of FAQs.
 
    ![Map the text in the Paragraph fragment to the Publish Date property of the displayed content.](./adding-simple-display-page-templates/images/07.png)
 
-   Now the publish date displays in a new fragment beneath the body of the FAQs article.
+   Now the article's last publish date displays in a new fragment beneath the body of the FAQs article.
 
 1. Click *Publish* at the top of the screen.
 

@@ -45,17 +45,15 @@ Now you're ready to configure the structure with the necessary fields.
 
 1. Click the *Advanced* tab and change the *Field Reference* value to `QuestionText`.
 
-   Using this instead of the automatically generated reference value makes it easier to reference it in the template later.
+   Using this instead of the automatically generated reference value makes it easier to reference it in templates later.
 
-1. Exit the text field's configuration, and drag a second Text field from the Builder menu onto the first one.
+1. Exit the text field's configuration, and drag a Rich Text field from the Builder menu onto the first one.
 
    This adds both fields into a field group containing them.
 
-1. Set these values in the second text field's configuration:
+1. Set these values in the rich text field's configuration:
 
    * **Label**: Answer
-
-   * **Field Type**: *Multiple Lines*
 
    * Enable the *Required Field* toggle.
 
@@ -63,13 +61,15 @@ Now you're ready to configure the structure with the necessary fields.
 
 1. Click the fields group containing the two text fields to access its configuration, and set these fields:
 
-   * **Label**: Question Group
+   * **Label**: FAQ
+
+   * Enable the *Collapsible* toggle.
 
    * Enable the *Repeatable* toggle.
 
    ![The completed FAQs structure has a repeatable field group, for any number of paired questions and answers.](./adding-a-structure-for-frequently-asked-questions/images/03.png)
 
-1. Click the *Advanced* tab and change the *Field Reference* value to `QuestionGroup`.
+1. Click the *Advanced* tab and change the *Field Reference* value to `FAQ`.
 
 1. Click *Save* at the top of the page.
 

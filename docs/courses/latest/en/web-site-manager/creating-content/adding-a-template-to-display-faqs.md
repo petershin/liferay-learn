@@ -80,7 +80,43 @@ Next, you'll format the way a FAQs article is listed.
 
 Now you have a template that displays each question and answer wherever you display a FAQs article, and you can display both of your new types of web content properly on your site.
 
-Next, you'll start [adding some articles](./adding-the-sites-first-web-content.md) with your new types.
+Next, you'll import a second template for the FAQs structure.
+
+## Import Another Template
+
+While you're still on the Templates page, make sure the top of the page reads "Templates for Structure: FAQs"
+
+1. Still on the Templates page, click Add ( ![Add icon](../../images/icon-add.png) ) to create another new template.
+
+   ```{note}
+   The top of the Templates page reads "Templates for Structure: FAQs" to remind you that adding a new template still associates it with the FAQs template. If you access the Templates tab normally (without clicking "Manage Templates" for the structure), you'll need to manually set the structure when you're creating it.
+   ```
+
+1. Download and unzip the template resource:
+
+   ```bash
+   curl https://resources.learn.liferay.com/courses/latest/en/liferay-c8m2.zip -O
+   ```
+
+   ```bash
+   unzip liferay-c8m2.zip
+   ```
+
+1. At the top of the page, click Actions ( ![Actions icon](../../images/icon-actions.png) ) &rarr; *Import Script*.
+
+   ![Click Import Script to import the FreeMarker template you downloaded.](./adding-a-template-to-display-faqs/images/04.png)
+
+1. Upload the FreeMarker template you downloaded (`faq-web-content-template.ftl`) and click *Open*.
+
+   The template body is filled with the new template's FreeMarker code. This template uses the same techniques as the previous template you added, but it also includes [Clay components](https://learn.liferay.com/web/guest/w/dxp/building-applications/developing-a-java-web-application/using-mvc/tag-libraries/clay-tag-library) and an embedded button component.
+
+1. Enter "Collapsible FAQs" as the new template's name.
+
+1. Click *Save*.
+
+Now you have a template with more components in it, for a cleaner look and feel.
+
+Next, you'll start [adding some articles](./adding-the-sites-first-web-content.md) with your new content types.
 
 ## Relevant Concepts
 

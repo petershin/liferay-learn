@@ -87,6 +87,8 @@ You're brought back to the Web Content page, and now you have an Event article. 
    The site is still undergoing maintenance. Please email hello@clarityvisionsolutions.com with a screenshot of where you found the broken link, and we'll fix it as soon as we can. Thank you!
    ```
 
+1. In the Properties menu on the right side of the screen, ensure that the second template you added, *Collapsible FAQs*, is selected.
+
 1. Click *Publish* at the top of the page.
 
 Now you have a new article for each of the web content structures you've added.

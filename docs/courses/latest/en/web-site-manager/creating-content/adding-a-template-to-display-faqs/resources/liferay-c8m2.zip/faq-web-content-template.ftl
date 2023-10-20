@@ -16,9 +16,9 @@
 					data-toggle="liferay-collapse"
 					type="button"
 				>
-					<#if (cur_FAQ.Question.getData())??>
+					<#if (cur_FAQ.QuestionText.getData())??>
 						<span class="panel-title">
-							${cur_FAQ.Question.getData()}
+							${cur_FAQ.QuestionText.getData()}
 						</span>
 					</#if>
 
@@ -32,8 +32,8 @@
 
 				<div class="panel-collapse collapse" id="${panelCollapseId}">
 					<div class="panel-body">
-						<#if (cur_FAQ.Answer.getData())??>
-							${cur_FAQ.Answer.getData()}
+						<#if (cur_FAQ.AnswerText.getData())??>
+							${cur_FAQ.AnswerText.getData()}
 						</#if>
 					</div>
 				</div>

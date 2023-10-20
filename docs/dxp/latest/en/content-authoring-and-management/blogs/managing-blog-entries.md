@@ -3,7 +3,7 @@ uuid: 857b463d-fe27-4a03-bca1-22a5b8a76bd7
 ---
 # Managing Blog Entries
 
-Bloggers and blog administrators manage blog entries using the Blogs application in the Site Administration menu. To access this app, open the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)) and select *Content & Data* &rarr; *Blogs*.
+Bloggers and blog administrators manage blog entries using the *Blogs* application in the Site Administration menu. To access this app, open the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)) and select *Content & Data* &rarr; *Blogs*.
 
 The Entries tab is selected by default, which lists the site's blog entries. Use the management bar to manage your site's blog entries.
 
@@ -30,7 +30,7 @@ The View Types button is to the left of the Add button. Users can choose how to 
 
 | View Type | Description                                                                                                                                                                                                                                                                  |
 |:----------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cards     | Shows a card-like rendering of the blog entry, with the author's profile picture. Each card also contains the entry's timestamp, title, [workflow](../../process-automation/workflow/introduction-to-workflow.md) status (e.g., Approved, Draft, etc.), and an Actions menu. |
+| Cards     | Shows a card-like rendering of the blog entry, with the author's profile picture. Each card also contains the entry's time stamp, title, [workflow](../../process-automation/workflow/introduction-to-workflow.md) status (e.g., Approved, Draft, etc.), and an Actions menu. |
 | List      | Shows the same information as the Cards view type, in a list with the author's profile picture instead of the blog entry's cover image.                                                                                                                                      |
 | Table     | Shows the same information as the other view types, in a list with no file renderings.                                                                                                                                                                                       |
 
@@ -40,7 +40,7 @@ The View Types button is to the left of the Add button. Users can choose how to 
 
 1. Check the entry or entries you want to delete.
 
-1. Click on the *Trash* icon (![Trash icon](../../images/icon-trash.png)) to move the selected entries to the Recycle Bin.
+1. Click *Trash* (![Trash icon](../../images/icon-trash.png)) to move the selected entries to the Recycle Bin.
 
 ![Select and delete a blog entry](./managing-blog-entries/images/01.png)
 
@@ -49,13 +49,13 @@ The View Types button is to the left of the Add button. Users can choose how to 
 You can also share blog entries from the Blogs app in Site Administration. When you share a blog entry, you invite a user to collaborate with the blog entry. Sharing is enabled by default.
 Sharing blog entries works the same as [sharing files in Documents and Media](../documents-and-media/publishing-and-sharing/managing-document-access/sharing-documents-with-other-users.md).
 
-To share a blog entry:
+To share a blog entry,
 
 1. Click *Actions* (![Actions menu](../../images/icon-actions.png)) for the entry you want to share &rarr; *Share*.
 
 1. Enter the email address of the collaborator. You can enter multiple addresses.
 
-1. To let receiving users share the file, check *Allow the item to be shared with other users*.
+1. To let receiving users share the entry, check *Allow the item to be shared with other users*.
 
 1. Grant users a sharing permission to define what invited collaborators can do with the blog entry: Update (view, comment, and update), comments (view and comment), or view (view only).
 

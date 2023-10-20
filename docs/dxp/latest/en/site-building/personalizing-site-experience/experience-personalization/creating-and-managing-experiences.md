@@ -30,7 +30,7 @@ You can customize your content page for different groups of users using *Experie
 1. Click *Publish*.
 
 ```{tip}
-If users are logged in and have permission to edit the page, and there are multiple experiences in place, they can select different experiences to [view/preview the page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md#previewing-pages) based on the selected experience.
+If users are logged in and have permission to edit the page, and there are multiple experiences in place, they can [view/preview the page](../../creating-pages/adding-pages/adding-a-page-to-a-site.md#previewing-pages) based on the experience they select.
 ```
 
 ## Managing Experiences

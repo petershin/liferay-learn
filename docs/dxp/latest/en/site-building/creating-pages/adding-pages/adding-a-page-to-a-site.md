@@ -96,7 +96,7 @@ You can preview pages you create before making them live or to identify the ones
 ![You can preview pages easily before working on them](./adding-a-page-to-a-site/images/06.png)
 
 ```{tip}
-If users are logged in and have permission to edit the page, and there are multiple [experiences](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) in place, they can select different experiences to view/preview the page based on the selected experience.
+If users are logged in and have permission to edit the page, and there are multiple [experiences](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) in place, they can view/preview the page based on an experience they select.
 ```
 
 ## Related Topics

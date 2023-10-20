@@ -3,7 +3,6 @@ uuid: e33a05f2-6716-4fda-a14b-ad6f8221e534
 ---
 # Adding the Home Page
 
-<!-- Note: The fragment settings here work for now, but I have them a bit different in my site. -->
 Right now, browsing to <http://localhost:8080> loads the default site and the default home page, with the option to sign in. In the last module, you changed the instance name and set the logo. This began to give the site a customized look and feel.
 
 ![The default home page has a header, footer, and some Welcome to Liferay content.](./adding-the-home-page/images/01.png)
@@ -57,7 +56,7 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
 1. Set an image as the banner's background. *Background* is a property for each container element's configuration. Click _Banner Container_ in the browser sidebar.
 
-1. Open the _Styles_ menu in the right sidebar, and set the *Background Image* to `banner-image.jpg`.
+1. Open the _Styles_ menu in the right sidebar, and set the *Background Image* to `clarity-banner-image`.
 
 1. Change the text on the page by double clicking the element to edit:
 

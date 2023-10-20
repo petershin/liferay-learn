@@ -3,17 +3,11 @@ uuid: 9d40c268-3ab6-4358-bcac-a43d706d8a3b
 ---
 # Creating Navigation Menus
 
-<!-- We could also create a nav menu fragment for the footer: if the user is signed in show some account links like cart, profile, lists, otherwise show the pages hierarchy-->
-
 Clarity's navigation menu is getting cluttered, as it shows all the pages by default. The Menu Display fragment's default configuration shows the page hierarchy of the site. Remember that you excluded Careers, Sign In, and Search from the default menu display, so those pages aren't showing.
 
 ![The default navigation menu displays the site's pages.](./creating-navigation-menus/images/01.png)
 
-To simplify the navigation menu, Clarity wants just three items to appear in the navigation menu: Shop (page), Recipes (page), and More (sub-menu with additional page links).
-
-<!-- Notes from outline/meeting w/Evan and Mateo: Linking to DPTs, external URLs are benefits (of having readers create a custom nav menu), etc. Look and feel customization as well (ADTs)-->
-
-<!-- Now that we're Clarity, it should probably be Home, Products, FAQ, Events with About Us and Careers under the More menu. -Rich -->
+To simplify the navigation menu, Clarity wants just three items to appear in the navigation menu: Shop (page), Blog (page), and More (sub-menu with additional page links).
 
 First create the navigation menu:
 
@@ -21,15 +15,13 @@ First create the navigation menu:
 
 1. Click *Add* (![Add Button](../../images/icon-add.png)).
 
-1. Enter _Del Bonsai Navigation_ as the name, then click _Save_.
-
-   ![Add some elements to the new navigation menu.](./creating-navigation-menus/images/01.png)
+1. Enter _Clarity Navigation_ as the name, then click _Save_.
 
 1. Click _New_ &rarr; _Page_.
 
-1. In the Select Pages selector, expand the Clarity hierarchy and click _Shop_, then click _Recipes_.
+1. In the Select Pages selector, expand the Clarity hierarchy and click _Shop_, then click _Blog_.
 
-   ![Add the Shop and Recipes pages to the navigation menu.](./creating-navigation-menus/images/02.png)
+   ![Add the Shop and Blog pages to the navigation menu.](./creating-navigation-menus/images/02.png)
 
 1. Click _Select_.
 
@@ -39,7 +31,7 @@ The main pages are in place. Next you need a sub-menu called More, with links to
 
 1. Enter the name _More_, then click _Add_.
 
-1. Open the More item's Actions menu (![Actions](../../images/icon-actions.png)).
+1. Open the More item's *Actions* menu (![Actions](../../images/icon-actions.png)).
 
 1. Click _Add Child_ &rarr; _Page_.
 
@@ -59,15 +51,15 @@ The main pages are in place. Next you need a sub-menu called More, with links to
 
 The menu display fragment showing the current navigation is added to the master page. Configure it to use the new navigation menu:
 
-1. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click _Design_ &rarr; _Page Templates_.
+1. Open the _Site Menu_ (![Product Menu](../../images/icon-product-menu.png)), then click _Design_ &rarr; _Page Templates_.
 
-1. Click the text _Del Bonsai MP_ and you're taken to the page editor.
+1. Click the text _Clarity MP_ and you're taken to the page editor.
 
 1. Click the area on the page with the current navigation. The Menu Display Options configuration appears in the right sidebar.
 
    ![Configure the menu display fragment's options.](./creating-navigation-menus/images/04.png)
 
-1. Click the _Source_ field, then choose the _Del Bonsai Navigation_ menu.
+1. Click the _Source_ field, then choose the _Clarity Navigation_ menu.
 
 1. Click _Select this Level_. 
 

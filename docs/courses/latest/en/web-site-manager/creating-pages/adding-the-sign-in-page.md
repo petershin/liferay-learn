@@ -91,11 +91,3 @@ Clarity next needs a [new navigation menu](./creating-navigation-menus.md) so th
 * [Adding Pages to a Site](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
 * [Working with Search Pages](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/working-with-search-pages/search-pages)
 * [Searching for Content](https://learn.liferay.com/en/w/dxp/using-search/getting-started/searching-for-content)
-
-<!-- These steps are from an earlier version where the lfr-editable tag was used in the fragment HTML to set the logo, and the background image was simply set using the regular container style setting for background (because the fragment is wrapped in a div
-1. In the Sign In fragment's Styles configuration, set the background image to use the `sign_in` image from Documents and Media. 
-
-1. Set the logo to use the `clarity-logo` image. 
-
--->
-

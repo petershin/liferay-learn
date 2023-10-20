@@ -58,4 +58,4 @@ Clarity wants a [search page](https://learn.liferay.com/en/w/dxp/using-search/se
 
 ![The search page template is used to create the search page.](./creating-pages/images/05.png)
 
-[Let's Go!](./creating-pages/adding-the-home-page.md)
+[Let's Go!](./creating-pages/importing-fragments-and-resources.md)

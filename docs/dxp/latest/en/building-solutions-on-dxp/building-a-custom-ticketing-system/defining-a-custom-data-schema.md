@@ -23,7 +23,7 @@ In Liferay, navigate to _Control Panel_ &rarr; _Picklists_. See that five new pi
 
 ### Examining the Custom Picklists Code
 
-Each client extension project is defined by the `client-extension.yaml` file. The first section defines the `assemble` block that specifies the files that will be included in the deployable `.zip` file. The `assemble` block for this client extension looks like this:
+Each client extension project is defined by the `client-extension.yaml` file. The first section defines the `assemble` block that specifies the files included in the deployable `.zip` file. The `assemble` block for this client extension looks like this:
 
 ```yaml
 assemble:

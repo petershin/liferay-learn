@@ -13,17 +13,17 @@ Deploy the `liferay-ticket-custom-element` client extension.
 ./gradlew :client-extensions:liferay-ticket-custom-element:deploy
 ```
 
-1. In Liferay, click on the _product menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
+1. In Liferay, select the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
 
-1. Click the _add_ icon (![Add icon](../../images/icon-add.png)) and select _Page_. 
+1. Click _Add_ (![Add icon](../../images/icon-add.png)) and select _Page_. 
 
-1. Select the _Blank_ type page. Give the page a name (e.g. "ticketing system"). Click _Add_.
+1. Select the _Blank_ type page. Give the page a name (e.g. `ticketing system`). Click _Add_.
 
-1. In the left navigation under fragments and widgets, click the _widgets_ tab.
+1. In the left navigation under fragments and widgets, click the _Widgets_ tab.
 
 1. Scroll down to the client extension type widget. Drag the _Liferay Ticket Custom Element_ widget to the page.
 
-1. Click _Publish.
+1. Click _Publish_.
 
 The custom ticketing system application is now running on the site page.
 
@@ -62,7 +62,7 @@ liferay-ticket-custom-element:
 
 See [custom element YAML configuration reference](../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md) for an explanation of each property.
 
-The relevant JavaScript files for the application are contained in the `/src` folder. A full explanation of the JavaScript code is beyond the scope of this tutorial, but a few things to note:
+The relevant JavaScript files for the application are contained in the `/src` folder. A full explanation of the JavaScript code is beyond the scope of this tutorial, but there are a few things to note:
 
 * The `/src/pages/TicketApp.tsx` file defines the overall layout of the ticketing system page.
 * In the `/src/services/tickets.ts` file, tickets are created and fetched through the use of the `j3y7ticket` object that was created when the [data schema](./defining-a-custom-data-schema.md) was defined. Note the `generateNewTicket()` function in the `/src/ticket.js` file generates additional ticket entries with random field entries.

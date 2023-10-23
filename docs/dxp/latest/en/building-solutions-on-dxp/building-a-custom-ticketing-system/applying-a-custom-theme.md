@@ -13,18 +13,18 @@ Deploy the `liferay-ticket-theme-css` client extension.
 ./gradlew :client-extensions:liferay-ticket-theme-css:deploy
 ```
 
-1. In Liferay, click on the _product menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
+1. In Liferay, select the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
 
 
-1. Click the _options_ icon (![Options icon](../../images/icon-options.png)) in the top right next to the global menu and click _Configuration_.
+1. Click _Options_ (![Options icon](../../images/icon-options.png)) in the top right next to the global menu and click _Configuration_.
 
-1. Scroll down to the theme CSS client extension section and click the _add_ icon (![Add icon](../../images/icon-plus.png)). 
+1. Scroll down to the theme CSS client extension section and click _Add_ (![Add icon](../../images/icon-plus.png)). 
 
 1. Select the Tickets Theme CSS that was deployed. 
 
 ![Select the ticket theme css client extension.](./applying-a-custom-theme/images/01.png)
 
-1. Scroll to the bottom and click _Save_. In the product menu, click _Home_. See the custom theme has been applied.
+1. Scroll to the bottom and click _Save_. In the product menu, click _Home_. The custom theme has been applied.
 
 ## Examine the Custom Theme CSS Code
 
@@ -48,7 +48,7 @@ liferay-ticket-theme-css:
 
 See [theme CSS YAML configuration reference](../../building-applications/client-extensions/front-end-client-extensions/theme-css-yaml-configuration-reference.md) for an explanation of each property.
 
-The customizations for the theme are contained in the two files in the `/src/css` folder. 
+The theme's customizations appear in the two files in the `/src/css` folder. 
 
 The `_clay_variables.scss` file provides any CSS clay variables to be overwritten.
 

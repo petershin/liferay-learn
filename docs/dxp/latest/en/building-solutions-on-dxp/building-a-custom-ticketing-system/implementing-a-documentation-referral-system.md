@@ -3,7 +3,7 @@ uuid: f36da885-6c54-454e-8380-ef4fc63247ef
 ---
 # Implementing a Documentation Referral System
 
-The ticketing system can be further enhanced with a documentation referral system. The system will automatically search for relevant documentation based on a ticket's content and description, thereby enhancing the customer support workflow.
+The ticketing system can be further enhanced with a documentation referral system. The system searches automatically for relevant documentation based on a ticket's content and description, thereby enhancing the customer support workflow.
 
 Follow the steps to enable and deploy the referral system:
 
@@ -11,9 +11,9 @@ Follow the steps to enable and deploy the referral system:
 
 1. Redeploy the `liferay-ticket-batch-object-definition` client extension with the following command:
 
-```bash
-./gradlew :client-extensions:liferay-ticket-batch-object-definition:deploy
-```
+   ```bash
+   ./gradlew :client-extensions:liferay-ticket-batch-object-definition:deploy
+   ```
 
    Note, the [object action](../../building-applications/objects/creating-and-managing-objects/actions.md) can also be enabled from the UI. In Liferay, navigate to _Control Panel_ &rarr; _Objects_. Click on the _Ticket_ object, and click the _Actions_ tab. See the action is `active`.
 
@@ -21,39 +21,39 @@ Follow the steps to enable and deploy the referral system:
 
 1. Next, run the following command:
 
-```bash
-./gradlew :client-extensions:liferay-ticket-etc-spring-boot:deploy
-```
+   ```bash
+   ./gradlew :client-extensions:liferay-ticket-etc-spring-boot:deploy
+   ```
 
-    Check your logs to verify successful deployment.
+   Check your logs to verify successful deployment.
 
 1. Next, run the following command to start the spring boot application:
 
-```bash
-./gradlew :client-extensions:liferay-ticket-etc-spring-boot:bootRun
-```
+   ```bash
+   ./gradlew :client-extensions:liferay-ticket-etc-spring-boot:bootRun
+   ```
 
-    The documentation referral system is now running.
+   The documentation referral system is now running.
 
 1. Navigate back to the ticketing system site page. Click _Generate a New Ticket_. A new ticket is generated.
 
-1. Navigate to _Global Menu_ &rarr; _Control Panel &rarr; _J3Y7 Tickets_. Scroll to the right of the list of tickets. Click the _options icon_ (![options icon](../../images/icon-options.png)) for the ticket that was just generated and click _View_.
+1. Navigate to _Global Menu_ &rarr; _Control Panel &rarr; _J3Y7 Tickets_. Scroll to the right of the list of tickets. Click _Options_ (![options icon](../../images/icon-options.png)) for the ticket that was just generated and click _View_.
 
-    Scroll down to the suggestions field. See that the referral system has included links to relevant documentation.
+   Scroll down to the suggestions field. See that the referral system has included links to relevant documentation.
 
-    ![See that the referral system has included links to relevant documentation.](./implementing-a-documentation-referral-system/images/02.png)
+   ![See that the referral system has included links to relevant documentation.](./implementing-a-documentation-referral-system/images/02.png)
 
 
 ## Examine the Referral System Code
 
-This documentation referral system is a [microservice](../../building-applications/client-extensions/microservice-client-extensions.md) type client extension. Specifically, this sample is a Spring Boot application that is built with BootJar. The `assemble` block section of the `client-extension.yaml` identifies this as follows:
+The documentation referral system is a [microservice](../../building-applications/client-extensions/microservice-client-extensions.md) type client extension. Specifically, this sample is a Spring Boot application that is built with `BootJar`. The `assemble` block section of the `client-extension.yaml` identifies this as follows:
 
 assemble:
     - fromTask: bootJar
 
 See [assembling client extensions](../../building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions) to learn more.
 
-Microservice client extensions require an OAuth2 user agent configuration to be able to interact with Liferay. Therefore the `client-extension.yaml` file includes both a `oAuthApplicationUserAgent` type client extension along with a `objectAction` type client extension.
+Microservice client extensions require an OAuth2 user agent configuration to interact with Liferay. Therefore the `client-extension.yaml` file includes both a `oAuthApplicationUserAgent` type client extension along with a `objectAction` type client extension.
 
 The `liferay-ticket-etc-spring-boot-oauth-application-user-agent` client extension creates an OAuth2 application within Liferay for the referral system application to use for authorization. It is defined as follows:
 
@@ -83,11 +83,11 @@ Note, the `resourcePath` parameter defines the endpoint at which the microservic
 
 See [object action yaml configuration yaml](../../building-applications/client-extensions/microservice-client-extensions/object-action-yaml-configuration-reference.md) for an explanation of each property.
 
-The relevant SpringBoot files for the application are contained in the `/src` folder. A full explanation of the Java code is beyond the scope of this tutorial, but a few things to note:
+The relevant Spring Boot files for the application are contained in the `/src` folder. A full explanation of the Java code is beyond the scope of this tutorial, but there are a few things to note:
 
 * In the `ObjectActionTicketRestController.java` file, the `@PostMapping` annotation matches the resource path referenced in the YAML file above. When a new ticket object is created, the object action triggers the microservice at this path and the referral results are returned to Liferay.
 
-* The referral search logic also resides in this `ObjectActionTicketRestController.java` file. In the logic, relevant articles from [learn.liferay.com](https://learn.liferay.com/) are found and added to the ticket object entry.
+* The referral search logic also resides in this `ObjectActionTicketRestController.java` file. In the logic, relevant articles from [learn.liferay.com](https://learn.liferay.com) are found and added to the ticket object entry.
 
 See [developing a Java web application](../../building-applications/developing-a-java-web-application.md) for more information.
 

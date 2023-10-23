@@ -1,0 +1,31 @@
+{
+	"fieldSets": [ {
+					"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "Placeholder 2",
+					"label": "First Testimonial",
+					"localizable": true,
+					"name": "firstTestimonial",
+					"type": "text"
+				},
+        {
+					"dataType": "string",
+					"defaultValue": "Placeholder 2",
+					"label": "Second Testimonial",
+					"localizable": true,
+					"name": "secondTestimonial",
+					"type": "text"
+				},
+        {
+					"dataType": "string",
+					"defaultValue": "Placeholder 3",
+					"label": "Third Testimonial",
+					"localizable": true,
+					"name": "thirdTestimonial",
+					"type": "text"
+				},
+			]
+	}
+	]
+}

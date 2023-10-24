@@ -37,10 +37,9 @@ Use the name field to set a page's title used for site navigation and displayed 
 
 Use the Friendly URL field to set a new URL for a page, or click the *Restore* icon (![Friendly URL Restore icon](./../../../images/icon-restore.png)) to see and restore a previously used URL. See [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md) for more information.
 
-Use *Query String* to set default parameters for a page when no other parameters are specified. Query strings offer significant advantages within web content templates. Additionally, you can control page link behavior by using the *Target type* field, which allows you to specify attributes like opening the link in a new tab or within a specific frame.
+Use *Query String* to set default parameters for a page when no other parameters are specified. Query strings offer significant advantages within web content templates. Additionally, you can control page link behavior by using the Target Type field, which has attributes like opening the link in a new tab or within a specific frame.
 
 ![Use the Friendly URL field to set a page's custom URL.](./configuring-individual-pages/images/03.png)
-
 
 ```{tip}
 While a page's name and friendly URL are initially defined together at page creation, they are configured independently afterwards. It is best practice to update them together so that they match.
@@ -76,29 +75,33 @@ Here you can use the page set's theme settings or define a custom theme for your
 
 ### Basic Settings
 
-Here you can quickly and easily change some areas of your page's design system and styling that can be applied to Liferay.
+Here you can quickly and easily change some areas of your page's design system and styling.
 
-* **Favicon**: Change the default favicon applied from the theme.
-* **Master**: Change the master page template. See [Master Page Templates](../../creating-pages/defining-headers-and-footers/master-page-templates.md) for more information.
-* **Style Books**: Change the default style book applied from the theme. See [Using a Style Book to Standardize Site Appearance](../../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) for more information.
-* **Icon**: Choose an icon to display along with page's name in the site's navigation menus.
+**Favicon**: Change the default favicon applied from the theme.
+
+**Master**: Change the master page template. See [Master Page Templates](../../creating-pages/defining-headers-and-footers/master-page-templates.md) for more information.
+
+**Style Books**: Change the default style book applied from the theme. See [Using a Style Book to Standardize Site Appearance](../../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) for more information.
+
+**Icon**: Choose an icon to display along with page's name in the site's navigation menus.
 
 ![Determine the favicon, master page template, style book and icon for your page.](./configuring-individual-pages/images/08.png)
 
 ```{note}
-Content pages also include Master and Style Book settings in the *Edit* (![Edit icon](./../../../images/icon-edit.png)) sidebar menu under *Page Design Options* (![Page Design Options icon](./../../../images/icon-format.png)).
+Content pages also include Master and Style Book settings in the Edit sidebar menu under Page Design Options (![Page Design Options icon](./../../../images/icon-format.png)).
 ```
 
 ### Customization
+
 You can also access a CSS and JavaScript editors where you can add custom code to the page.
 
 **Theme CSS Client Extension:** Add [theme CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) to fully replace the default CSS contained in the theme.
 
-**CSS Client Extensions:** Add [CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) to extend the page's CSS with client extensions. They will be loaded after the theme CSS and after master extensions.
+**CSS Client Extensions:** Add [CSS client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) to extend the page's CSS with client extensions. They are loaded after the theme CSS and after master extensions.
 
 **Custom CSS:** Custom CSS can be applied and is loaded after the theme.
 
-**JavaScript Client Extension and Custom JavaScript:** [JavaScript client extentions](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can also be added and is executed at the bottom of the page.
+**JavaScript Client Extension and Custom JavaScript:** [JavaScript client extensions](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) can be added to have JavaScript run when the page using this master page template is visited. Custom JavaScript code can also be added and is executed at the bottom of the page.
 
 ![Use CSS and JavaScript editors to add custom code to the page](.//configuring-individual-pages/images/09.png)
 
@@ -110,7 +113,7 @@ If your site's theme uses JavaScript, it's best to add custom JavaScript code to
 
 Access additional settings to customize a page’s content and features.
 
-**Custom Fields**: View and configure the *Custom Fields* you've defined for site pages. See [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) for more information.
+**Custom Fields**: View and configure the Custom Fields you've defined for site pages. See [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) for more information.
 
 **Embedded Widgets**: Access widgets you've embedded in a page using [Web Content Templates](./../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md), [Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md), or [Themes](../../site-appearance/themes/introduction-to-themes.md).
 

@@ -9,19 +9,11 @@ Validations set rules for determining valid field entries. Each validation has i
 
 ![Create validations for custom and system object fields.](./adding-custom-validations/images/01.png)
 
-```{important}
-Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
-```
-
 To add a validation,
 
 1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
 
 1. Begin editing an object definition.
-
-   ```{note}
-   For Liferay 7.4 U38+/GA38+, you can add custom validations to system objects.
-   ```
 
 1. Go to the *Validations* tab and click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
 
@@ -67,15 +59,19 @@ To add a validation,
 
 1. Click *Save*.
 
-While activated, the validation runs for all new object entries.
+While activated, the validation runs for all new object entries and is displayed in [layouts](../layouts.md) and [form containers](../../using-fragments-to-build-forms.md)
+
+![Validations are displayed in form containers.](./adding-custom-validations/images/06.png)
 
 ## Using Groovy Validations
 
+{bdg-primary}`Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted`
+
 Groovy validations support all standard [Groovy Script](https://groovy-lang.org/) capabilities. When defining conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
 
-![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/06.png)
+![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/07.png)
 
-For Liferay 7.4 U33+ and GA33+, Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay shows an error message.
+Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay shows an error message.
 
 ## Using Expression Builder Validations
 
@@ -85,9 +81,9 @@ Expression Builder provides predefined fields, operators, and functions that you
 You can only use Expression Builder validations with text, numeric, date, and Boolean field types.
 ```
 
-![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/07.png)
+![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/08.png)
 
-For Liferay 7.4 U33+ and GA33+, Liferay checks your expression for valid syntax when you click Save. If the expression is invalid, Liferay shows an error message.
+Liferay checks your expression for valid syntax when you click Save. If the expression is invalid, Liferay shows an error message.
 
 ### Expression Builder Operators
 
@@ -134,8 +130,6 @@ This table lists available Expression Builder functions with their compatible fi
 See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for more information and examples.
 
 ## Available Fields Reference
-
-{bdg-secondary}`For 7.4 U41+/GA41+`
 
 When constructing conditions, you can use any of the object's custom or system fields. You can also select from relationship fields on the child side of a one-to-many relationship.
 

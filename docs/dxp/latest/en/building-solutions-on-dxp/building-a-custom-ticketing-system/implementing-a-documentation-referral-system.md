@@ -51,7 +51,7 @@ The documentation referral system is a [microservice](../../building-application
 assemble:
     - fromTask: bootJar
 
-See [assembling client extensions](../../building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions) to learn more.
+See [Assembling Client Extensions](../../building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions) to learn more.
 
 Microservice client extensions require an OAuth2 user agent configuration to interact with Liferay. Therefore the `client-extension.yaml` file includes both a `oAuthApplicationUserAgent` type client extension along with a `objectAction` type client extension.
 
@@ -81,7 +81,7 @@ liferay-ticket-etc-spring-boot-object-action-ticket:
 
 Note, the `resourcePath` parameter defines the endpoint at which the microservice is running. The `oAuth2ApplicationExternalReferenceCode` parameter references the previous OAuth2 application configuration.
 
-See [object action yaml configuration yaml](../../building-applications/client-extensions/microservice-client-extensions/object-action-yaml-configuration-reference.md) for an explanation of each property.
+See [Object Action Yaml Configuration](../../building-applications/client-extensions/microservice-client-extensions/object-action-yaml-configuration-reference.md) for an explanation of each property.
 
 The relevant Spring Boot files for the application are contained in the `/src` folder. A full explanation of the Java code is beyond the scope of this tutorial, but there are a few things to note:
 
@@ -89,6 +89,6 @@ The relevant Spring Boot files for the application are contained in the `/src` f
 
 * The referral search logic also resides in this `ObjectActionTicketRestController.java` file. In the logic, relevant articles from [learn.liferay.com](https://learn.liferay.com) are found and added to the ticket object entry.
 
-See [developing a Java web application](../../building-applications/developing-a-java-web-application.md) for more information.
+See [Developing a Java Web Application](../../building-applications/developing-a-java-web-application.md) for more information.
 
-Next: [ticket management with cron jobs](./ticket-management-with-cron-jobs.md).
+Next: [Ticket Management with Cron Jobs](./ticket-management-with-cron-jobs.md).

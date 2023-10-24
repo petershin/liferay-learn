@@ -17,7 +17,7 @@ Deploy the `liferay-ticket-batch-list-type-definition` client extension with the
 ./gradlew :client-extensions:liferay-ticket-batch-list-type-definition:deploy
 ```
 
-In Liferay, navigate to _Control Panel_ &rarr; _Picklists_. See that five new picklists have been created.
+Navigate to _Control Panel_ &rarr; _Picklists_. See that five new picklists have been created.
 
 ![Five new picklists have been created.](./defining-a-custom-data-schema/images/01.png)
 
@@ -31,7 +31,7 @@ assemble:
       into: batch
 ```
 
-See [assembling client extensions](../../building-applications/client-extensions/working-with-client-extensions#assembling-client-extensions) to learn more.
+See [Assembling Client Extensions](../../building-applications/client-extensions/working-with-client-extensions.md#assembling-client-extensions) to learn more.
 
 This `list-type-batch` client extension is a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. It is defined as follows:
 
@@ -42,7 +42,7 @@ liferay-ticket-batch-list-type-definition:
     type: batch
 ```
 
-See [batch YAML configuration reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
+See [Batch YAML Configuration Reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
 
 The client extension makes use of the [batch engine headless API](../../headless-delivery/consuming-apis/batch-engine-api-basics-importing-data.md) and the [picklists headless API](../../building-applications/objects/picklists/picklists-api-basics.md). To make secure API requests, the client extension is configured to use OAuth2 authorization. It is defined as follows:
 
@@ -82,7 +82,7 @@ In Liferay, navigate to _Control Panel_ &rarr; _Objects_. See that a new ticket 
 ### Examining the Custom Object Code
 
 This `liferay-ticket-batch-object-definition` client extension is also a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. The client extension's YAML file is defined in the same way as the 
-`liferay-ticket-batch-list-type-definition` client extension. See [batch YAML configuration reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
+`liferay-ticket-batch-list-type-definition` client extension. See [batch YAML Configuration Reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
 
 See [client-extension.yaml](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-object-definition/client-extension.yaml) for the full definition.
 
@@ -102,4 +102,4 @@ In Liferay, navigate to _Control Panel_ &rarr; _Tickets_. See that a new ticket 
 
 ![A new ticket entry has been created.](./defining-a-custom-data-schema/images/03.png)
 
-Next: [apply a custom theme](./applying-a-custom-theme.md) to the ticketing system.
+Next: [Apply a Custom Theme](./applying-a-custom-theme.md) to the ticketing system.

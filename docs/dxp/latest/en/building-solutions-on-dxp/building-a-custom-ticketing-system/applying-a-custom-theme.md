@@ -9,12 +9,11 @@ Deploy the `liferay-ticket-theme-css` client extension.
 
 1. Run the following command:
 
-```bash
-./gradlew :client-extensions:liferay-ticket-theme-css:deploy
-```
+   ```bash
+   ./gradlew :client-extensions:liferay-ticket-theme-css:deploy
+   ```
 
 1. In Liferay, select the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
-
 
 1. Click _Options_ (![Options icon](../../images/icon-options.png)) in the top right next to the global menu and click _Configuration_.
 
@@ -22,7 +21,7 @@ Deploy the `liferay-ticket-theme-css` client extension.
 
 1. Select the Tickets Theme CSS that was deployed. 
 
-![Select the ticket theme css client extension.](./applying-a-custom-theme/images/01.png)
+   ![Select the ticket theme css client extension.](./applying-a-custom-theme/images/01.png)
 
 1. Scroll to the bottom and click _Save_. In the product menu, click _Home_. The custom theme has been applied.
 
@@ -46,7 +45,7 @@ liferay-ticket-theme-css:
     type: themeCSS
 ```
 
-See [theme CSS YAML configuration reference](../../building-applications/client-extensions/front-end-client-extensions/theme-css-yaml-configuration-reference.md) for an explanation of each property.
+See [Theme CSS YAML Configuration Reference](../../building-applications/client-extensions/front-end-client-extensions/theme-css-yaml-configuration-reference.md) for an explanation of each property.
 
 The theme's customizations appear in the two files in the `/src/css` folder. 
 
@@ -56,4 +55,4 @@ The `_custom.scss` file provides any CSS customizations.
 
 See the [Clay CSS](https://clayui.com/docs/css/index.html) documentation to learn more about the variables and customization. And see [using a theme CSS client extension](../../building-applications/client-extensions/front-end-client-extensions/tutorials/using-a-theme-css-client-extension.md) to see another client extension example.
 
-Next: [deploy the custom ticketing application](./deploying-a-custom-application.md).
+Next: [Deploying the Custom Ticketing Application](./deploying-a-custom-application.md).

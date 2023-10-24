@@ -9,9 +9,9 @@ Deploy the `liferay-ticket-custom-element` client extension.
 
 1. Run the following command:
 
-```bash
-./gradlew :client-extensions:liferay-ticket-custom-element:deploy
-```
+   ```bash
+   ./gradlew :client-extensions:liferay-ticket-custom-element:deploy
+   ```
 
 1. In Liferay, select the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
 
@@ -60,7 +60,7 @@ liferay-ticket-custom-element:
    useESM: true
 ```
 
-See [custom element YAML configuration reference](../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md) for an explanation of each property.
+See [Custom Element YAML Configuration Reference](../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md) for an explanation of each property.
 
 The relevant JavaScript files for the application are contained in the `/src` folder. A full explanation of the JavaScript code is beyond the scope of this tutorial, but there are a few things to note:
 
@@ -69,6 +69,6 @@ The relevant JavaScript files for the application are contained in the `/src` fo
 * In the `/src/services/tickets.ts` file, the object's headless API calls are authorized with the `Liferay.authToken` object. This object is available when a web component is running on Liferay and simplifies OAuth2 authorization.
 * The `package.json` file includes a `scripts{ build: }` element that handles the initializing and building of the JavaScript application.
 
-See [understanding custom element and iframe client extensions](../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information.
+See [Understanding Custom Element and Iframe Client Extensions](../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information.
 
-Next: [implement a documentation referral system](./implementing-a-documentation-referral-system.md).
+Next: [Implement a Documentation Referral System](./implementing-a-documentation-referral-system.md).

@@ -21,7 +21,7 @@ Liferay makes it easy for you to build digital solutions. For example, you can c
 
 ![See the custom ticketing system sample.](./building-a-custom-ticketing-system/images/01.png)
 
-This tutorial series walks you through building a custom ticketing system. You'll learn how to
+Here, you'll learn how custom ticketing system works. You'll learn how to
 
 * Define a custom data schema
 * Apply a custom CSS theme
@@ -34,36 +34,38 @@ Each of these components are deployable through the use of [client extensions](.
 
 Before starting, download the appropriate files and set up your system.
 
-1. To download the example workspace, run the following
+1. To download the example workspace, run this command:
 
-```bash
-curl -o com.liferay.ticket.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.ticket.workspace\&\v\=LATEST\&p\=zip
-```
+   ```bash
+   curl -o com.liferay.ticket.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.ticket.workspace\&\v\=LATEST\&p\=zip
+   ```
 
 1. On the command line, navigate to the `liferay-ticket-workspace` folder.
 
-```bash
-cd liferay-ticket-workspace
-```
+   ```bash
+   cd liferay-ticket-workspace
+   ```
 
 1. Generate a local Liferay bundle.
 
-```bash
-./gradlew initBundle
-```
+   ```bash
+   ./gradlew initBundle
+   ```
 
 1. Run the Liferay bundle.
 
-```bash
-./bundles/tomcat-9.0.73/bin/catalina.sh run
-```
+   ```bash
+   ./bundles/tomcat-9.0.73/bin/catalina.sh run
+   ```
 
 1. Sign in to Liferay at <http://localhost:8080> using the email address _test@liferay.com_ and the password _test_. When prompted, change the password to _learn_.
 
 1. Build all the sample projects.
 
-```bash
-./gradlew build
-```
+   ```bash
+   ./gradlew build
+   ```
 
-In the first step, you'll [define a custom data schema](./building-a-custom-icketing-system/defining-a-custom-data-schema.md)
+In the first step, you'll define a custom data schema. 
+
+[Let's Go!](./building-a-custom-ticketing-system/defining-a-custom-data-schema.md)

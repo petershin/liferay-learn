@@ -13,17 +13,17 @@ Follow the steps to enable and deploy the cron job:
 
 1. Open a command line and run the following command:
 
-```bash
-./gradlew :client-extensions:liferay-ticket-etc-cron:deploy
-```
+   ```bash
+   ./gradlew :client-extensions:liferay-ticket-etc-cron:deploy
+   ```
 
    Check your logs to verify successful deployment.
 
 1. Next, run the following command to start the spring boot application:
 
-```bash
-./gradlew :client-extensions:liferay-ticket-etc-cron:bootRun
-```
+   ```bash
+   ./gradlew :client-extensions:liferay-ticket-etc-cron:bootRun
+   ```
 
    The cron job is now running. Check the logs or refresh the _ticketing system_ site page to verify that a ticket has been deleted.
 
@@ -39,6 +39,6 @@ The relevant Spring Boot files for the application are contained in the `/src` f
 
 * The main logic is found in the `TicketCommandLineRunner.java` file. If the ticket's resolution equals `duplicate` or `done`, the ticket is deleted.
 
-See [developing a Java web application](../../building-applications/developing-a-java-web-application.md) for more information.
+See [Developing a Java Web Application](../../building-applications/developing-a-java-web-application.md) for more information.
 
 Congratulations on completing this solutions tutorial on building a custom ticketing system.

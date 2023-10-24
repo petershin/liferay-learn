@@ -7,7 +7,13 @@ Clarity's navigation menu is getting cluttered, as it shows all the pages by def
 
 ![The default navigation menu displays the site's pages.](./creating-navigation-menus/images/01.png)
 
-To simplify the navigation menu, Clarity wants just three items to appear in the navigation menu: Shop (page), Blog (page), and More (sub-menu with additional page links).
+To simplify the header navigation menu, Clarity wants just three items to appear in the navigation menu: Shop (page), Blog (page), and More (sub-menu with additional page links).
+
+In addition, navigation menus can add dynamic items to the footer. Clarity's footer has these menus to define: SHOP, CLARITY, and RESOURCES.
+
+![The footer menus are defined by the Navigation Menus application.](./creating-navigation-menus/images/06.png)
+
+The SHOP menu will display links to product categories, but it's blank now. See [Commerce Architect](../../commerce-architect.md).
 
 First create the navigation menu:
 
@@ -67,7 +73,61 @@ The menu display fragment showing the current navigation is added to the master 
 
    In addition to these site menus defined in the Navigation Menus application, you can click Contextual Menus to see some additional dynamic menu options. See [Configuring Menu Displays](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/configuring-menu-displays) for more information.
 
-   Before this lesson, Clarity had three pages not appearing in the menu display fragment's page hierarchy menu: Careers, Sign In, and Search. That menu is no longer in use, but those pages were not explicitly added to the new navigation menu, so they continue to remain outside of the navigation.
+   Before this lesson, Clarity had three pages not appearing in the menu display fragment's page hierarchy menu: Careers, Sign In, and Search. That menu is no longer in use, but those pages were not explicitly added to the new header navigation menu, so they continue to remain outside of the navigation.
+
+In addition to the header navigation, Clarity needs the menus for the footer: *Shop*, *Clarity*, and *Resources*.
+
+The Shop menu includes categories for products. These categories must be created in the Global site, so log in with Kyle Klein, the instance administrator.
+
+1. Go to the Global site by clicking *Select Site* (![Select Site](../../images/icon-compass.png)) &rarr; *My Sites* &rarr; *Global*.
+
+1. Open the _Site Menu_ (![Product Menu](../../images/icon-product-menu.png)), then click _Categorization_ &rarr; _Categories_.
+
+1. Add a vocabulary for the categories. Click *Add* (![Add Button](../../images/icon-plus.png)) and name the vocabulary *Clarity Product Categories*.
+
+1. Click *Add Category* (![Add Button](../../images/icon-add.png)), and enter the name *Eyeglasses*. 
+
+1. Create *Sunglasses*, *Contacts*, *Lenses*, and *Sale* using the same procedure.
+
+1. Log out from Kyle Klein's account and back in as Preston Palmer, the site administrator for Clarity.
+
+1. Following the same basic procedure used to create the header menu, create the *Shop* menu, adding the categories you created in the Global site:
+
+   ![The Shop menu has global categories.](./creating-navigation-menus/images/07.png)
+
+1. Create the *Clarity* menu, adding the *About Us* and *Careers* pages.
+
+1. Add an external URL to the Clarity menu: 
+
+   **Name:** *Retail Customer Portal*
+   **URL:** *http://clarityb2b.com:8080*
+   <!-- Update above link to the actual site address -->
+
+   ![Navigation menus can link to external URLs.](./creating-navigation-menus/images/10.png)
+
+   Once finished the Clarity menu contains pages and a URL:
+
+   ![The Clarity menu links to pages and an external URL.](./creating-navigation-menus/images/08.png)
+
+1. Create the *Resources* menu, adding the *Blog* and *Search* pages.
+
+   ![The Resources menu links to the Blog and Search pages.](./creating-navigation-menus/images/09.png)
+
+Now that the menus are created, add them to the footer.
+
+1. Open the Clarity MP master page by opening the _Site Menu_ (![Product Menu](../../images/icon-product-menu.png)) and clicking _Design_ &rarr; _Page Templates_.
+
+1. In the page editor, find the Menu Display widget in the first three grid columns of the footer, under the SHOP, CLARITY, and RESOURCES headings. 
+
+   ![The first three grid columns have Menu display widgets.](./creating-navigation-menus/images/13.png)
+
+1. Open each Menu Display widget's configuration and choose the appropriate menu to display.
+
+   ![Display each menu in a Menu Display widget in the footer.](./creating-navigation-menus/images/11.png)
+
+Now Clarity's header and footer is using navigation menus to show its lists. The SHOP menu contains categories with no display pages, so the categories remain hidden for now. These will be populated in the [Commerce Architect](../../commerce-architect.md) course.
+
+![Clarity's master page uses navigation menus heavily.](./creating-navigation-menus/images/12.png)
 
 Next Clarity's design team has requested a [re-design of the Home page](./designing-the-home-page.md), with new fragments and compositions.
 

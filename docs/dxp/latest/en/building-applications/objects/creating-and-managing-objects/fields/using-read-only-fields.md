@@ -3,7 +3,7 @@ uuid: a50d28b9-ca13-4227-8480-d968dc8fc470
 ---
 # Using Read-Only Fields
 
-Some use cases may require data fields to be read-only. For example, you may need to prevent unauthorized users from changing [state fields](./adding-and-managing-custom-states.md), or data integrity may require some field values to remain immutable. With Liferay Objects, you can configure any custom field to be read-only. This prevents users from directly updating the field's value. You can only update read-only fields using conditions or [actions](../actions.md).
+Some use cases may require data fields to be read-only. For example, data integrity may require some field values to remain immutable, or you may need to prevent unauthorized users from updating specific fields (e.g., [state fields](./adding-and-managing-custom-states.md)). With Liferay Objects, you can configure any custom field to be read-only. This prevents users from directly updating the field's value except under specified conditions. You can also use [actions](../actions.md) to update these field values.
 
 ## Adding a Read-Only Field
 
@@ -33,9 +33,9 @@ Consider an event solution with these requirements:
 
 * Event managers must track when the state field was last updated.
 
-To achieve this, create a picklist for application statuses and an Event Submissions object. Use this picklist for a state field in the object and set the field to read-only. Then, add [standalone actions](../actions/using-manual-actions.md) for manually updating the state field to specific values, according to the desired state flow. Event managers can use these actions to update the state field's value.
+To achieve this, first create a picklist for defining application statuses. Then, create an object for storing submissions and use the picklist as a [state field](./adding-and-managing-custom-states.md). Set this field to read-only and add [standalone actions](../actions/using-manual-actions.md) for manually updating the field to specific values. Only assign the [action permissions](../actions/using-manual-actions.md#action-permissions) to event managers, so only they can update the state field.
 
-For the final requirement, add a read-only date and time field to store when the state was last updated. Then, create an [automatic action](../actions/defining-object-actions.md) that sets this field's value to the current date and time whenever the state field is updated.
+For the final requirement, add a read-only date field. Then, create an [automatic action](../actions/defining-object-actions.md) that updates the field to the `modifiedDate` value whenever the state field is updated.
 
 ## Related Topics
 

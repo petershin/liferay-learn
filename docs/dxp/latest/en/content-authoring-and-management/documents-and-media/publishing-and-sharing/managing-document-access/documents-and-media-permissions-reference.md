@@ -3,29 +3,105 @@ uuid: 0c78ca39-eaf4-43a3-86e2-9a9fabdfc640
 ---
 # Documents and Media Permissions Reference
 
-## Folder Permissions
+Manage access to Documents and Media assets using [application](#general-permissions) and [resource](#resource-permissions) permissions. With role-based access control, you can ensure only the intended users can create, view, download, and manage documents.
 
-| Permission | Description |
-| :--- | :--- |
-| Delete | Move the folder to the Recycle Bin. |
-| Permissions | View and modify the folder's permissions. |
-| Add Subfolder | Create folders within the folder. |
-| Add Shortcut | Create a shortcut (link) to any file in the folder that the role is authorized to view. |
-| Update | Edit the folder's attributes and/or move the folder under a new parent folder. |
-| Add Document | Add a new file to the folder. |
-| Subscribe | Receive email notifications when files are added to or modified in the folder. |
-| View | View the folder. |
-| Access | Access the folder's contents. |
+You can grant these permissions in the Roles application under Content & Data in the permissions side panel.
 
-## File Permissions
+![Grant Documents and Media permissions in the Roles application under Content & Data in the permissions side panel.](./documents-and-media-permissions-reference/images/01.png)
 
-| Permission | Description |
-| :--- | :--- |
-| Update Discussion | Edit a file's comment.  |
-| Delete | Move the file to the Recycle Bin. |
-| Override Checkout | Grants the ability to make changes even when another user has checkout the file.  |
-| Permissions | View and modify the file's permissions. |
-| Delete Discussion | Delete a file's comment. |
-| Update | Edit the file's attributes and/or move the file under a new parent folder.|  
-| View | View the file. |
-| Add Discussion | Add a file's comment.  |
+Alternatively, you can assign individual resource permissions in the Documents and Media application.
+
+![Assign individual resource permissions in the Documents and Media application.](./documents-and-media-permissions-reference/images/02.png)
+
+See [Defining Role Permissions](../../../../users-and-permissions/roles-and-permissions/defining-role-permissions.md) for more information.
+
+## General Permissions
+
+General permissions grant access to the Documents and Media application itself and do not grant [resource-related permissions](#resource-permissions).
+
+| Permission                                      | Description                                                                                                                              |
+|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------|
+| Access in Site and Asset Library Administration | Access the Documents and Media application in the Site Menu ( ![Site Menu](../../../../images/icon-product-menu.png) ) or Asset Library. |
+| Configuration                                   | View and modify configuration options for Documents and Media.                                                                           |
+| Permissions                                     | View and modify application permissions for Documents and Media.                                                                         |
+| Preferences                                     | N/A                                                                                                                                      |
+| View                                            | View the Documents and Media application page.                                                                                           |
+
+## Resource Permissions
+
+Resource permissions grant access to view and act on resources in the Documents and Media application. Some of these permissions are for [creating entities](#documents), while others are for acting on existing entities (e.g., [folders](#documents-folder), [documents](#document)).
+
+### Documents
+
+| Permission        | Description                                                                                    |
+|:------------------|:-----------------------------------------------------------------------------------------------|
+| Add Document      | Add documents in Documents and Media.                                                          |
+| Add Document Type | Add document types in Documents and Media.                                                     |
+| Add Folder        | Add folders in Documents and Media.                                                            |
+| Add Repository    | Add repositories in Documents and Media.                                                       |
+| Add Shortcut      | Add shortcuts (links) to files and external videos in Documents and Media.                     |
+| Add Metadata Set  | Add metadata sets in Documents and Media.                                                      |
+| Permissions       | View and modify permissions related to creating and managing resources (e.g., folders, files). |
+| Subscribe         | Subscribe to receive email notifications for resource events.                                  |
+| Update            | Edit resources in Documents and Media.                                                         |
+| View              | View resources in Documents and Media.                                                         |
+
+### Documents Folder
+
+| Permission    | Description                                                                              |
+|:--------------|:-----------------------------------------------------------------------------------------|
+| Access        | Access folder contents.                                                                  |
+| Add Document  | Add documents to folders.                                                                |
+| Add Shortcut  | Add shortcuts (links) to any file in folders that the role is authorized to view.        |
+| Add Subfolder | Add sub-folders to folders.                                                              |
+| Delete        | Move folders to the recycle bin.                                                         |
+| Permissions   | View and modify folder permissions.                                                      |
+| Subscribe     | Subscribe to receive email notifications when files are added to or modified in folders. |
+| Update        | Edit or move folders.                                                                    |
+| View          | View folders.                                                                            |
+
+### Document
+
+| Permission        | Description                                                            |
+|:------------------|:-----------------------------------------------------------------------|
+| Add Discussion    | Add comments to documents.                                             |
+| Delete            | Move documents to the recycle bin.                                     |
+| Delete Discussion | Delete comments from documents.                                        |
+| Download          | Download documents.                                                    |
+| Override Checkout | Make changes to documents even when it is checked out by another user. |
+| Permissions       | View and modify document permissions.                                  |
+| Update            | Edit or move documents.                                                |
+| Update Discussion | Edit document comments.                                                |
+| View              | View documents.                                                        |
+
+### Shortcut
+
+| Permission  | Description                           |
+|:------------|:--------------------------------------|
+| Delete      | Move shortcuts to the recycle bin.    |
+| Permissions | View and modify shortcut permissions. |
+| Update      | Edit or move shortcuts.               |
+| View        | View shortcuts.                       |
+
+### Document Type
+
+| Permission  | Description                                     |
+|:------------|:------------------------------------------------|
+| Delete      | Permanently remove document types.              |
+| Permissions | View and modify permissions for document types. |
+| Update      | Edit document types.                            |
+| View        | View document types.                            |
+
+### Document Metadata
+
+| Permission  | Description                                    |
+|:------------|:-----------------------------------------------|
+| Delete      | Permanently remove metadata sets.              |
+| Permissions | View and modify permissions for metadata sets. |
+| Update      | Edit metadata sets.                            |
+| View        | View metadata sets.                            |
+
+## Related Topics
+
+* [Managing Document Access](./permissions-and-documents.md)
+* [Defining Role Permissions](../../../../users-and-permissions/roles-and-permissions/defining-role-permissions.md)

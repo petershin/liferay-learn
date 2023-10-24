@@ -23,20 +23,20 @@ You can see an example use case of a Display Context in [Filtering and Sorting I
 
 ## Checkbox and Actions
 
-The `actionItems`, `searchContainerId`, `selectable`, and `totalItems` attributes let you include a checkbox in the toolbar to select all search container results and run bulk actions on them. Actions and total items display when an individual result is checked, or when the master checkbox is checked in the toolbar. 
+The `actionDropdownItems`, `itemsTotal`, `searchContainerId`, and `selectable` attributes let you include a checkbox in the toolbar to select all search container results and run bulk actions on them. Actions and total items display when an individual result is checked, or when the master checkbox is checked in the toolbar. 
 
-`actionItems`: The list of dropdown items to display when a result is checked or the master checkbox in the Management Toolbar is checked. You can select multiple results between pages. The Management Toolbar keeps track of the number of selected results for you.
+`actionDropdownItems`: The list of dropdown items to display when a result is checked or the master checkbox in the Management Toolbar is checked. You can select multiple results between pages. The Management Toolbar keeps track of the number of selected results for you.
+
+`itemsTotal`: The total number of items across pagination. This number displays when one or multiple items are selected.
 
 `searchContainerId`: The ID of the search container connected to the Management Toolbar
 
 `selectable`: Whether to include a checkbox in the Management Toolbar
 
-`totalItems`: The total number of items across pagination. This number displays when one or multiple items are selected.
-
 An example configuration is shown below:
 
 ```jsp
-actionItems="<%=
+actionDropdownItems="<%=
     new JSPDropdownItemList(pageContext) {
         {
           add(
@@ -181,13 +181,13 @@ An example configuration is shown below:
 <clay:management-toolbar
     clearResultsURL="<%= searchURL %>"
     disabled="<%= isDisabled %>"
+    itemsTotal="<%= itemsTotal %>"
     namespace="<%= renderResponse.getNamespace() %>"
     searchActionURL="<%= searchURL %>"
     searchFormName="fm"
     searchInputName="<%= DisplayTerms.KEYWORDS %>"
     searchValue="<%= ParamUtil.getString(request, searchInputName) %>"
     selectable="<%= false %>"
-    totalItems="<%= totalItems %>"
 />
 ```
 

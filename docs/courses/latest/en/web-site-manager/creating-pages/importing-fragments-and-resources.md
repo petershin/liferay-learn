@@ -49,8 +49,6 @@ First zip up the fragment set that was included in the `liferay-q9c4.zip` folder
 
 1. Select `clarity-fragments.zip` and click *Import*.
 
-1. Repeat the procedure for the remaining zip files in `liferay-q9c4.zip/fragments`.
-
    When finished these fragments appear in the fragment set:
 
    <!-- This list will need to be finalized at the end of drafting the module-->

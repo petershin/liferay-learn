@@ -78,7 +78,7 @@ Content Management widgets create, manage, and display content on site pages.
 | Widget | Description |
 | :--- | :--- |
 | Asset Publisher | Adds an [Asset Publisher widget](../../../displaying-content/using-the-asset-publisher-widget.md) that displays assets. |
-| Breadcrumb | Adds a [Breadcrumb](../../../site-navigation/using-the-breadcrumb-widget.md) widget that provides a navigation system that shows pages and sites at the same level of accessibility as the current page. Private pages if on a private page, and public pages if on a public page. |
+| Breadcrumb | Adds a [Breadcrumb](../../../site-navigation/using-the-breadcrumb-widget.md) widget that provides a navigation system that shows pages and sites at the same level of accessibility as the current page. Shows private pages if on a private page and public pages if on a public page. |
 | Category Filter | Adds a Category Filter widget that lets you to select a category to filter assets. |
 | Documents and Media | Adds a [Documents and Media widget](../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md#using-the-documents-and-media-widget) displaying documents and media. |
 | Hightest Rated Assets | Adds a Highest Rated Assets widget listing assets with the highest rating. |

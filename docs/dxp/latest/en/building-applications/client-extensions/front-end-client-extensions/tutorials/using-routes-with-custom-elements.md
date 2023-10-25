@@ -235,4 +235,4 @@ routes
 * [Front-end Client Extensions](../../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
 * [Creating a Basic Custom Element](./creating-a-basic-custom-element.md)
-* [Remote Applications UI Reference](../remote-applications-ui-reference.md)
+* [Remote Applications UI Reference](../client-extensions-ui-reference.md)

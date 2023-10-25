@@ -54,4 +54,4 @@ IFrameアプリがクライアントSDKを使用する場合、Liferayページ�
 
 * [クライアントエクステンションの紹介](../../client-extensions.md)
 * [基本的なカスタム要素の作成](./tutorials/creating-a-basic-custom-element.md)
-* [リモートアプリケーションUIリファレンス](./remote-applications-ui-reference.md)
+* [リモートアプリケーションUIリファレンス](./client-extensions-ui-reference.md)

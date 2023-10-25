@@ -10,7 +10,7 @@ toc:
   - ./front-end-client-extensions/custom-element-yaml-configuration-reference.md
   - ./front-end-client-extensions/iframe-yaml-configuration-reference.md
   - ./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
-  - ./front-end-client-extensions/remote-applications-ui-reference.md
+  - ./front-end-client-extensions/client-extensions-ui-reference.md
 ---
 # 프런트엔드 클라이언트 확장
 
@@ -27,7 +27,7 @@ front-end-client-extensions/theme-sprite-map-yaml-configuration-reference.md
 front-end-client-extensions/custom-element-yaml-configuration-reference.md
 front-end-client-extensions/iframe-yaml-configuration-reference.md
 front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
-front-end-client-extensions/remote-applications-ui-reference.md
+front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
 {bdg-secondary}`사용 가능 라이프레이 7.4`

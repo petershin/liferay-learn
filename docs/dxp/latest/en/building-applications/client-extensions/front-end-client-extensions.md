@@ -10,7 +10,7 @@ toc:
   - ./front-end-client-extensions/custom-element-yaml-configuration-reference.md
   - ./front-end-client-extensions/iframe-yaml-configuration-reference.md
   - ./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
-  - ./front-end-client-extensions/remote-applications-ui-reference.md
+  - ./front-end-client-extensions/client-extensions-ui-reference.md
 uuid: fcdeefe5-64f7-451c-8981-41e1a04290d6
 ---
 # Front-End Client Extensions
@@ -28,14 +28,14 @@ front-end-client-extensions/theme-sprite-map-yaml-configuration-reference.md
 front-end-client-extensions/custom-element-yaml-configuration-reference.md
 front-end-client-extensions/iframe-yaml-configuration-reference.md
 front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md
-front-end-client-extensions/remote-applications-ui-reference.md
+front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
 {bdg-secondary}`Available Liferay 7.4`
 
 Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JavaScript, Theme CSS, Theme JS, Theme Favicon, Custom Element, and IFrame.
 
-You can create and deploy these extensions from your [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md). 
+You can create and deploy these extensions from your [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md).
 
 See [Understanding Custom Element and IFrame Client Extensions](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) to learn more about creating [custom element](#custom-element-client-extensions) and [IFrame](#iframe-client-extensions) client extensions.
 
@@ -47,7 +47,7 @@ You can add JavaScript, CSS, or Theme CSS client extensions to layout sets (i.e.
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-JavaScript client extensions provide global JavaScript libraries and logic throughout your Liferay instance. When you deploy a JavaScript client extension and configure a page to use it, its JavaScript runs automatically each time you visit the page (in the page's header or footer). 
+JavaScript client extensions provide global JavaScript libraries and logic throughout your Liferay instance. When you deploy a JavaScript client extension and configure a page to use it, its JavaScript runs automatically each time you visit the page (in the page's header or footer).
 
 Specify a JavaScript client extension in your `client-extension.yaml` file:
 
@@ -61,7 +61,7 @@ See [Using a JavaScript Client Extension](./front-end-client-extensions/tutorial
 
 {bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
 
-CSS client extensions introduce new CSS styling to pages. A deployed CSS client extension on a page adds to the page's existing styling, including theme and style book settings. 
+CSS client extensions introduce new CSS styling to pages. A deployed CSS client extension on a page adds to the page's existing styling, including theme and style book settings.
 
 Specify a CSS client extension in your `client-extension.yaml` file :
 

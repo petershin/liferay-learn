@@ -94,4 +94,4 @@ IFrame은 페이지에 위젯으로 추가됩니다.
 
 * [프런트엔드 클라이언트 확장](../../front-end-client-extensions.md)
 * [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md)
-* [클라이언트 확장 프로그램 UI 참조](../remote-applications-ui-reference.md)
+* [클라이언트 확장 프로그램 UI 참조](../client-extensions-ui-reference.md)

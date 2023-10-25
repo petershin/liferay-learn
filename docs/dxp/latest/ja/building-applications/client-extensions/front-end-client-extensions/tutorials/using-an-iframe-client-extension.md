@@ -94,4 +94,4 @@ IFrameはウィジェットとしてページに追加される。
 
 * [フロントエンドのクライアント拡張](../../front-end-client-extensions.md)
 * [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md)
-* [クライアント拡張機能UIリファレンス](../remote-applications-ui-reference.md)
+* [クライアント拡張機能UIリファレンス](../client-extensions-ui-reference.md)

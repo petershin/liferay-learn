@@ -172,4 +172,4 @@ File sizes after gzip:
 * [フロントエンドクライアント拡張機能](../../front-end-client-extensions.md)
 * [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md)
 * [カスタム要素でルーティングを使用する](./using-routes-with-custom-elements.md)
-* [リモートアプリケーションUIリファレンス](../remote-applications-ui-reference.md)
+* [リモートアプリケーションUIリファレンス](../client-extensions-ui-reference.md)

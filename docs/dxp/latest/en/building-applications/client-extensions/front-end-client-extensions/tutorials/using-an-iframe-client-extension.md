@@ -78,11 +78,11 @@ Confirm the deployment in your Liferay instance's console:
 STARTED liferay-sample-iframe-1_1.0.0 [1592]
 ```
 
-Now that your client extension is deployed, configure Liferay to use it. 
+Now that your client extension is deployed, configure Liferay to use it.
 
 ## Add the IFrame Client Extension as a Widget
 
-The IFrame is added to a page as a widget. 
+The IFrame is added to a page as a widget.
 
 1. Click _Edit_ (![Edit](../../../../images/icon-edit-pencil.png)) at the top of any page.
 
@@ -92,10 +92,10 @@ The IFrame is added to a page as a widget.
 
    ![Drag the Counter App onto a page.](./using-an-iframe-client-extension/images/01.png)
 
-Confirm the Counter App is working by adding some items. 
+Confirm the Counter App is working by adding some items.
 
 ## Related Topics
 
 * [Front-end Client Extensions](../../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
-* [Client Extensions UI Reference](../remote-applications-ui-reference.md)
+* [Client Extensions UI Reference](../client-extensions-ui-reference.md)

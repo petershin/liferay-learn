@@ -176,4 +176,4 @@ Once saved, Liferay creates a widget named H5V7-Custom-Element, which you can de
 * [Front-end Client Extensions](../../front-end-client-extensions.md)
 * [Understanding Custom Element and IFrame Client Extensions](../understanding-custom-element-and-iframe-client-extensions.md)
 * [Using Routes with Custom Elements](./using-routes-with-custom-elements.md)
-* [Remote Applications UI Reference](../remote-applications-ui-reference.md)
+* [Remote Applications UI Reference](../client-extensions-ui-reference.md)

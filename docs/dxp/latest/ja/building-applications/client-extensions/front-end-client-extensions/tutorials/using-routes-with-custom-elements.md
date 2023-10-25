@@ -232,4 +232,4 @@ routes
 * [フロントエンドクライアント拡張機能](../../front-end-client-extensions.md)
 * [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md)
 * [基本的なカスタム要素の作成](./creating-a-basic-custom-element.md)
-* [リモートアプリケーションUIリファレンス](../remote-applications-ui-reference.md)
+* [リモートアプリケーションUIリファレンス](../client-extensions-ui-reference.md)

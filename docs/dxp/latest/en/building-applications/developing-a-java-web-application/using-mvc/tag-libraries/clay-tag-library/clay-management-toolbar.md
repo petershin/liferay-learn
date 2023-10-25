@@ -19,15 +19,15 @@ If you're using a Display Context---a separate class to configure your display o
 />
 ```
 
-You can see an example use case of a Display Context in [Filtering and Sorting Items with the Management Toolbar](https://help.liferay.com/hc/en-us/articles/360029526932-Filtering-and-Sorting-Items-with-the-Management-Toolbar). A Display Context is not required for a management toolbar's configuration. You  can provide as much or as little of the configuration options for your management toolbar through the Display Context as you like.  
+You can see an example use case of a Display Context in [Filtering and Sorting Items with the Management Toolbar](https://help.liferay.com/hc/en-us/articles/360029526932-Filtering-and-Sorting-Items-with-the-Management-Toolbar). A Display Context is not required for a management toolbar's configuration. You  can provide as much or as little of the configuration options for your management toolbar through the Display Context as you like. 
 
 ## Checkbox and Actions
 
 The `actionDropdownItems`, `itemsTotal`, `searchContainerId`, and `selectable` attributes let you include a checkbox in the toolbar to select all search container results and run bulk actions on them. Actions and total items display when an individual result is checked, or when the master checkbox is checked in the toolbar. 
 
-`actionDropdownItems`: The list of dropdown items to display when a result is checked or the master checkbox in the Management Toolbar is checked. You can select multiple results between pages. The Management Toolbar keeps track of the number of selected results for you.
+`actionDropdownItems`: The list of drop-down items to display when a result is checked or the master checkbox in the Management Toolbar is checked. You can select multiple results between pages. The Management Toolbar keeps track of the number of selected results for you.
 
-`itemsTotal`: The total number of items across pagination. This number displays when one or multiple items are selected.
+`itemsTotal`: The total number of items across pagination. This number appears when one or multiple items are selected.
 
 `searchContainerId`: The ID of the search container connected to the Management Toolbar
 

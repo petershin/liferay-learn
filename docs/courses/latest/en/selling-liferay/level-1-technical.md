@@ -11,6 +11,9 @@ toc:
 - ./level-1-technical/success-stories-analysis.md
 - ./level-1-technical/demo-ethics.md
 uuid: 465dcb4b-dbbb-412e-ac6f-c015fb44df74
+visibility: 
+- Employee
+- Partner
 ---
 
 # Level 1 for Technical Sales Roles

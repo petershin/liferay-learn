@@ -1,5 +1,8 @@
 ---
 uuid: 3d5d3317-3383-4277-a523-b851d2ff8fb3
+visibility: 
+- Employee
+- Partner
 ---
 
 # Target Industries

@@ -6,6 +6,9 @@ toc:
   - ./liferay-pricing/liferay-pricing-paas.md
   - ./liferay-pricing/liferay-pricing-self-hosted.md
 uuid: 37d59a74-1900-489a-9e52-2ee681c7d886
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Pricing

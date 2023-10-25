@@ -1,5 +1,8 @@
 ---
 uuid: b61487f6-f759-4a7d-bd3b-08077c104bb1
+visibility: 
+- Employee
+- Partner
 ---
 
 # Base Sales Deck Structure

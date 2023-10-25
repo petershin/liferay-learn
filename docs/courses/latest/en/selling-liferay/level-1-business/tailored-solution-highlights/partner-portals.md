@@ -1,5 +1,8 @@
 ---
 uuid: 1187f01c-1268-45c9-8473-a87a5f428a4f
+visibility: 
+- Employee
+- Partner
 ---
 
 # Partner Portals

@@ -1,5 +1,8 @@
 ---
 uuid: b030fe90-26bf-4c19-8152-cad0b539077b
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Experience Cloud SaaS Pricing - Introduction and Plans

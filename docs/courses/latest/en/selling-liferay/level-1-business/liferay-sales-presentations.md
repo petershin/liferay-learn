@@ -4,6 +4,9 @@ toc:
   - ./liferay-sales-presentations/sales-presentations-base-deck.md
   - ./liferay-sales-presentations/sales-presentations-expansion-deck.md
 uuid: cda854ee-c766-4354-a093-fd498b936f69
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Sales Presentations and How to Master Them

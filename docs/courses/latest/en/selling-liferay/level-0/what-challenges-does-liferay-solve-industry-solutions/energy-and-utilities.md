@@ -1,5 +1,8 @@
 ---
 uuid: bf3e08db-9f85-42f1-a13a-f493f8c786c3
+visibility: 
+- Employee
+- Partner
 ---
 
 # Energy & Utilities

@@ -1,5 +1,8 @@
 ---
 uuid: d97bb6b4-dd67-48be-845d-ce37a4df5b16
+visibility: 
+- Employee
+- Partner
 ---
 
 # Supplier Portals

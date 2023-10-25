@@ -1,5 +1,8 @@
 ---
 uuid: 7237e38d-208d-4c01-b811-6c89e2d0b5da
+visibility: 
+- Employee
+- Partner
 ---
 
 # Demo Ethics - When to Demo

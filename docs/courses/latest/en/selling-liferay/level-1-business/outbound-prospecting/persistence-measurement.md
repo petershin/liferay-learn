@@ -1,5 +1,8 @@
 ---
 uuid: 069ba990-a8a2-4ec0-b9d0-e2a5662e06dc
+visibility: 
+- Employee
+- Partner
 ---
 
 # Persistence and Measurement

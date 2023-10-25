@@ -1,5 +1,8 @@
 ---
 uuid: 07e23657-6ad5-4c5a-a8a7-c4fcd67cfe14
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Experience Cloud Self-Managed (PaaS) Pricing

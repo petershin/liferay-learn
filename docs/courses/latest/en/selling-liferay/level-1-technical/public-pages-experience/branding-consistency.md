@@ -1,5 +1,8 @@
 ---
 uuid: 280598cf-05e2-43d8-a0fa-7338f66781b7
+visibility: 
+- Employee
+- Partner
 ---
 
 # Branding and Consistency

@@ -2,6 +2,9 @@
 toc:
   - ./basics-of-styling/logos-favicons-masterpages.md
 uuid: 0717de7f-94fd-47ce-98ec-59fc294dd26d
+visibility: 
+- Employee
+- Partner
 ---
 
 # Basics of Styling

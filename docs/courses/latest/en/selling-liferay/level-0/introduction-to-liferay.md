@@ -2,6 +2,9 @@
 toc:
   - ./introduction-to-liferay/what-is-a-digital-experience-platform.md
 uuid: cc59c93a-3ba6-43bb-9c57-e319843170ee
+visibility: 
+- Employee
+- Partner
 ---
 
 # Introduction to Liferay

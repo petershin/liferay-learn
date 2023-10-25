@@ -1,5 +1,8 @@
 ---
 uuid: 0f3a1634-6d0a-417d-9e31-84c691017038
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Contracts

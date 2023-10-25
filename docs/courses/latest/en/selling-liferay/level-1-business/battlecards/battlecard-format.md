@@ -1,5 +1,8 @@
 ---
 uuid: 143c5add-d21f-4080-84c2-47425ff94cf7
+visibility: 
+- Employee
+- Partner
 ---
 
 # Competitive Intelligence: Battlecard Format

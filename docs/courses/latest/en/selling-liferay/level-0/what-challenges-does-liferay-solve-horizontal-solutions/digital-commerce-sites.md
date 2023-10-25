@@ -1,5 +1,8 @@
 ---
 uuid: d5230873-b3fc-44a1-8867-3b3789556a6c
+visibility: 
+- Employee
+- Partner
 ---
 
 # Digital Commerce Sites

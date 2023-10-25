@@ -7,6 +7,9 @@ toc:
 - ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
 - ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
 uuid: b233e18d-2932-426e-9dfc-209670450195
+visibility: 
+- Employee
+- Partner
 ---
 
 # What Challenges Does Liferay Solve - Horizontal Solutions

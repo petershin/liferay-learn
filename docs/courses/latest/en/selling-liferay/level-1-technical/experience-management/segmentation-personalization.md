@@ -1,5 +1,8 @@
 ---
 uuid: 401a117e-c51b-4525-aa37-82d979410a2c
+visibility: 
+- Employee
+- Partner
 ---
 
 # Segmentation and Personalization

@@ -1,5 +1,8 @@
 ---
 uuid: 30a3c86f-e5c8-4f3a-b792-51b16ab41e66
+visibility: 
+- Employee
+- Partner
 ---
 
 # Manufacturing

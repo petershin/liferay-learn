@@ -1,5 +1,8 @@
 ---
 uuid: 9c9b31e6-53a3-4137-bf00-1026d55dc05c
+visibility: 
+- Employee
+- Partner
 ---
 
 # Competitive Intelligence: Current Battlecard Summaries

@@ -1,5 +1,8 @@
 ---
 uuid: 026d1713-d1e7-4258-9a9e-649505c512f4
+visibility: 
+- Employee
+- Partner
 ---
 
 # Discovery Calls - Liferay Opportunities

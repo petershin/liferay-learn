@@ -1,5 +1,8 @@
 ---
 uuid: 76cceaa2-eccf-47fc-ab85-aaac81b4be6e
+visibility: 
+- Employee
+- Partner
 ---
 
 # Target Solutions

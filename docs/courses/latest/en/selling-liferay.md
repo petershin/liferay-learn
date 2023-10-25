@@ -4,6 +4,9 @@ toc:
   - ./selling-liferay/level-1-business.md
   - ./selling-liferay/level-1-technical.md
 uuid: def885ec-59c7-4b4d-a194-f9eaff64a82e
+visibility: 
+- Employee
+- Partner
 ---
 # Selling Liferay
 

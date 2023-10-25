@@ -7,6 +7,9 @@ toc:
   - ./tailored-solution-highlights/partner-portals.md
   - ./tailored-solution-highlights/modern-intranets.md
 uuid: 04c0d21c-dbf1-443e-b097-f053a387e2dd
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Tailored Solution Highlights

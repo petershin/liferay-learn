@@ -3,6 +3,9 @@ toc:
   - ./success-stories-analysis/presentation-breakdown.md
   - ./success-stories-analysis/additional-solutions.md
 uuid: 8a466648-818b-4be9-bbb1-6c3f5c20a6aa
+visibility: 
+- Employee
+- Partner
 ---
 
 # Success Stories - Analysis

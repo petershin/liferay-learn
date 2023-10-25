@@ -1,5 +1,8 @@
 ---
 uuid: 153822af-7e5e-4191-81fd-e36b327324b1
+visibility: 
+- Employee
+- Partner
 ---
 
 # The New Approach to Liferay Sales Presentations

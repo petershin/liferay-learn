@@ -1,5 +1,8 @@
 ---
 uuid: f4de955b-23f6-4a54-b210-003e0594587d
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay DXP Self-Hosted Pricing

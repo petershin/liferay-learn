@@ -1,5 +1,8 @@
 ---
 uuid: 2b61bb50-1e84-482d-8fda-b92ad84c2b55
+visibility: 
+- Employee
+- Partner
 ---
 
 # Sitecore

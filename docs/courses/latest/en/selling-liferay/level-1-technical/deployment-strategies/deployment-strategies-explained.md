@@ -1,5 +1,8 @@
 ---
 uuid: fe74cc65-5c91-4aff-9dcf-0e584a9bc00a
+visibility: 
+- Employee
+- Partner
 ---
 
 # Deployment Strategies Explained

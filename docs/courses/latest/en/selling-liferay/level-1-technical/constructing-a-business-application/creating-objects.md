@@ -1,5 +1,8 @@
 ---
 uuid: 508a4f69-e349-49b4-8ad3-74a2af939aaa
+visibility: 
+- Employee
+- Partner
 ---
 
 # Creating Liferay Objects

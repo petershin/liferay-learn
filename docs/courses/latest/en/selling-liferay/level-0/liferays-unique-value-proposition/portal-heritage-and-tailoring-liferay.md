@@ -1,5 +1,8 @@
 ---
 uuid: 7d48bc6b-f27b-405d-857d-9213dc948937
+visibility: 
+- Employee
+- Partner
 ---
 
 # Portal Heritage and Tailoring Liferay

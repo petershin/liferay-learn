@@ -1,5 +1,8 @@
 ---
 uuid: 10c88c73-4f89-4588-b554-15622f05b52f
+visibility: 
+- Employee
+- Partner
 ---
 
 # Digital Commerce Sites
@@ -14,7 +17,7 @@ Particular focus when talking with prospects about Liferay DXP-based Digital Com
 * [Headless APIs and Multichannel](https://learn.liferay.com/w/dxp/headless-delivery)
 * [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
 * [Data Modeling and Process Automation](https://learn.liferay.com/w/dxp/process-automation)
-* [Content and Asset Management ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Content and Asset Management](https://learn.liferay.com/w/dxp/content-authoring-and-management)
 * [Analytics](https://learn.liferay.com/w/analytics-cloud/index) and [Optimization](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
 * [Segmentation and Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [Search](https://learn.liferay.com/w/dxp/using-search) and [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)

@@ -1,5 +1,8 @@
 ---
 uuid: 15b25572-1b4a-4df4-ba8a-b402dc849916
+visibility: 
+- Employee
+- Partner
 ---
 
 # External Websites

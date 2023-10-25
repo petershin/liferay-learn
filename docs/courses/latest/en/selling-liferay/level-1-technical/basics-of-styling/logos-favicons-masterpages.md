@@ -1,5 +1,8 @@
 ---
 uuid: bfc4f5ea-c367-42cf-b9a8-0396d9f74655
+visibility: 
+- Employee
+- Partner
 ---
 
 # Basics of Styling

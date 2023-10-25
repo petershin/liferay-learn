@@ -5,6 +5,9 @@ toc:
   - ./sales-funnel-opportunity-progress/before-buying-starts.md
   - ./sales-funnel-opportunity-progress/mapping-buyer-sales-process.md
 uuid: 81455421-067d-40fb-b666-2144de21ed3a
+visibility: 
+- Employee
+- Partner
 ---
 
 # Sales Funnel and Best Practices for Opportunity Progress

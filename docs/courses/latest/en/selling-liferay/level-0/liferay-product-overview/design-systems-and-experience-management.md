@@ -1,5 +1,8 @@
 ---
 uuid: 5fde9803-aa40-48ff-8286-a3d371c52b42
+visibility: 
+- Employee
+- Partner
 ---
 
 # Design Systems and Experience Management

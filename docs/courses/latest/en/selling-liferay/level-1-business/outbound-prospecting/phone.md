@@ -1,5 +1,8 @@
 ---
 uuid: 7d492542-45c2-42cf-b2ec-b1b7bebd7ea0
+visibility: 
+- Employee
+- Partner
 ---
 
 # Prospecting Tools - Phone

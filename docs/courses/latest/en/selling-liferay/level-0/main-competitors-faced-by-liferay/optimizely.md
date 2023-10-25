@@ -1,5 +1,8 @@
 ---
 uuid: 08effb19-49a1-4be0-b35e-672b740f02dc
+visibility: 
+- Employee
+- Partner
 ---
 
 # Optimizely

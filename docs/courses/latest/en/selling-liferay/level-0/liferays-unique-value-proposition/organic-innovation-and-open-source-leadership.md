@@ -1,5 +1,8 @@
 ---
 uuid: 0880f89b-c54b-465b-9454-70c6c97ee230
+visibility: 
+- Employee
+- Partner
 ---
 
 # Organic Innovation and Open Source Leadership

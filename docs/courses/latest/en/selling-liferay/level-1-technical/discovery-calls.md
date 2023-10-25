@@ -3,6 +3,9 @@ toc:
   - ./discovery-calls/discovering-liferay-opportunities.md
   - ./discovery-calls/discovering-demo-requirements.md
 uuid: 57e6bcb5-707e-43fb-8f1d-1049182cd8da
+visibility: 
+- Employee
+- Partner
 ---
 
 # Discovery Calls

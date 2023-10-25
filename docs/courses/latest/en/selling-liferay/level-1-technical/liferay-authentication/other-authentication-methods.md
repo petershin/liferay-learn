@@ -1,5 +1,8 @@
 ---
 uuid: b7761bee-7211-41c7-ac27-c4d8d5166b96
+visibility: 
+- Employee
+- Partner
 ---
 
 # Standards-Based Approaches to Authentication

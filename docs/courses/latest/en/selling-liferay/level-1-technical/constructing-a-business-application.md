@@ -3,6 +3,9 @@ toc:
   - ./constructing-a-business-application/example-object-demo.md
   - ./constructing-a-business-application/creating-objects.md
 uuid: e47d248a-5a03-4c22-99f8-1273f7d11a34
+visibility: 
+- Employee
+- Partner
 ---
 
 # Constructing a Business Application in Liferay

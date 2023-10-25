@@ -1,5 +1,8 @@
 ---
 uuid: 2a9553a6-06b7-4379-b6f7-85b2bf5b09a4
+visibility: 
+- Employee
+- Partner
 ---
 
 # Insurance

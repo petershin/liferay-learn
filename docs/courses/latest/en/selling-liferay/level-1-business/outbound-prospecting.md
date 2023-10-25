@@ -6,6 +6,9 @@ toc:
   - ./outbound-prospecting/social-media.md
   - ./outbound-prospecting/persistence-measurement.md
 uuid: ae0e6976-c175-48db-bfa6-1d62612e8f37
+visibility: 
+- Employee
+- Partner
 ---
 
 # Outbound Prospecting 101 for Liferay Opportunities

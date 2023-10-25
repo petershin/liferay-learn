@@ -3,6 +3,9 @@ toc:
   - ./experience-management/segmentation-personalization.md
   - ./experience-management/content-management-analytics.md
 uuid: 2233883a-c24c-40f0-a7f2-6df5d518f28c
+visibility: 
+- Employee
+- Partner
 ---
 
 # Experience Management

@@ -3,6 +3,9 @@ toc:
   - ./deployment-strategies/deployment-strategies-explained.md
   - ./deployment-strategies/choosing-the-right-deployment-strategy.md
 uuid: c83f4e9a-9acc-47df-bc26-07b7d273c65c
+visibility: 
+- Employee
+- Partner
 ---
 
 # Deployment Strategies

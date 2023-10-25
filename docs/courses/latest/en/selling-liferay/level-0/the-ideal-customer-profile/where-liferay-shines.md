@@ -1,5 +1,8 @@
 ---
 uuid: bb678652-ddd9-4e9f-a4ab-d2c1b1c87a91
+visibility: 
+- Employee
+- Partner
 ---
 
 # Where Liferay Shines

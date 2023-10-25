@@ -1,5 +1,8 @@
 ---
 uuid: 38169381-8595-42a3-9dba-48e7b5ced927
+visibility: 
+- Employee
+- Partner
 ---
 
 # Extending Liferay with Client Extensions

@@ -5,6 +5,9 @@ toc:
   - ./demo-ethics/how-to-demo.md
   - ./demo-ethics/demo-preparation.md
 uuid: 2279c4a7-75df-46e5-8303-b1e6fff61a07
+visibility: 
+- Employee
+- Partner
 ---
 
 # Demo Ethics

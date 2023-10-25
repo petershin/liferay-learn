@@ -6,8 +6,10 @@ toc:
 - ./what-challenges-does-liferay-solve-industry-solutions/insurance.md
 - ./what-challenges-does-liferay-solve-industry-solutions/healthcare.md
 - ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
-
 uuid: 1ffe9905-1f97-47be-bb32-347de155cf74
+visibility: 
+- Employee
+- Partner
 ---
 
 # What Challenges Does Liferay Solve - Industry Solutions

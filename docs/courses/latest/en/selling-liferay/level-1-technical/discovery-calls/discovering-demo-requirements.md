@@ -1,5 +1,8 @@
 ---
 uuid: 9511767e-0aa3-40c6-b495-dc352f4e9b2c
+visibility: 
+- Employee
+- Partner
 ---
 
 # Discovery Calls - Demo Discovery

@@ -1,5 +1,8 @@
 ---
 uuid: 8ba99fc4-4a0e-4329-9af4-832365dd438b
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Experience Cloud SaaS Pricing - Add-Ons and Upcoming Features

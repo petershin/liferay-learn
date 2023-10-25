@@ -1,5 +1,8 @@
 ---
 uuid: 3cd9cedc-31fd-4454-a3c0-0e8b42c9cc18
+visibility: 
+- Employee
+- Partner
 ---
 
 # Demo Ethics - Demo Preparation

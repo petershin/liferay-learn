@@ -1,5 +1,8 @@
 ---
 uuid: a54a3d83-50d1-458a-8581-4d4954ec16b1
+visibility: 
+- Employee
+- Partner
 ---
 
 # Customer Portals

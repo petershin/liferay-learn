@@ -9,10 +9,13 @@ toc:
 - ./level-0/what-challenges-does-liferay-solve-industry-solutions.md
 - ./level-0/main-competitors-faced-by-liferay.md
 uuid: 17a3f6d0-bda3-4fc0-84c0-0a6398b36b3c
+visibility: 
+- Employee
+- Partner
 ---
 # Level 0
 
-Welcome to the beginning! This is the entry point for the Selling Liferay learning paths. If you work with Liferay and Liferay's product and offerings, this content is for you, especially if you have a customer-facing role. Regardless of role, however, if you need a basic understanding and foundation, this content benefits you. 
+Welcome to the beginning! This is the entry point for the Selling Liferay learning paths. If you work with Liferay and Liferay's product and offerings, this content is for you, especially if you have a customer-facing role. Regardless of role, however, if you need a basic understanding and foundation, this content benefits you.
 
 ## Expected Outcomes
 

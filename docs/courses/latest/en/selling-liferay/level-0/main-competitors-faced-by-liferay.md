@@ -5,6 +5,9 @@ toc:
 - ./main-competitors-faced-by-liferay/optimizely.md
 - ./main-competitors-faced-by-liferay/acquia.md
 uuid: f27cc155-9321-43ee-bbda-9e0698529f66
+visibility: 
+- Employee
+- Partner
 ---
 
 # Main Competitors faced by Liferay

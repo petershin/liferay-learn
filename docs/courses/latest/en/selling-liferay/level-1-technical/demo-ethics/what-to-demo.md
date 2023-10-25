@@ -1,5 +1,8 @@
 ---
 uuid: f046b172-41f7-4371-a560-95551872f3d0
+visibility: 
+- Employee
+- Partner
 ---
 
 # Demo Ethics - What to Demo

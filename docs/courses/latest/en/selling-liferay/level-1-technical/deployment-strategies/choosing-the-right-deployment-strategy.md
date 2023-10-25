@@ -1,5 +1,8 @@
 ---
 uuid: a0f4eaf8-eee7-449c-854b-0f2786b8f108
+visibility: 
+- Employee
+- Partner
 ---
 
 # Choosing the Right Deployment Strategy

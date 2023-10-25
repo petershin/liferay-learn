@@ -1,5 +1,8 @@
 ---
 uuid: 41a0a931-cfdd-4919-a6db-42145a0fb5fd
+visibility: 
+- Employee
+- Partner
 ---
 
 # Mapping Buying Phases and Sales Processes

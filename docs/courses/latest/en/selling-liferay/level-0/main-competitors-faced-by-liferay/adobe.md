@@ -1,5 +1,8 @@
 ---
 uuid: 691f49bb-449a-4b22-971b-85bb3084d999
+visibility: 
+- Employee
+- Partner
 ---
 
 # Adobe

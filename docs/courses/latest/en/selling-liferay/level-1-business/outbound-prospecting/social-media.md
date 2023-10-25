@@ -1,5 +1,8 @@
 ---
 uuid: 4254ea04-d498-4e80-a969-6beeec5735cc
+visibility: 
+- Employee
+- Partner
 ---
 
 # Prospecting Tools - Social Media

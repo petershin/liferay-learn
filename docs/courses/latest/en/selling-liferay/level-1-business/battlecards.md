@@ -3,6 +3,9 @@ toc:
   - ./battlecards/current-battlecards.md
   - ./battlecards/battlecard-format.md
 uuid: 43bd1dc2-d99a-4da0-be59-bbac37d38fe6
+visibility: 
+- Employee
+- Partner
 ---
 
 # Competitive Intelligence: Battlecards

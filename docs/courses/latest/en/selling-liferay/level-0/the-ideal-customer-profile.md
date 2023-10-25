@@ -5,6 +5,9 @@ toc:
   - ./the-ideal-customer-profile/target-solutions.md
   - ./the-ideal-customer-profile/strengths-and-red-flags.md
 uuid: ab4e99e5-6955-40f6-9037-dd1c67e7827c
+visibility: 
+- Employee
+- Partner
 ---
 
 # The Ideal Customer Profile

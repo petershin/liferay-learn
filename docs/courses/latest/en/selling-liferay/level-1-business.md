@@ -8,6 +8,9 @@ toc:
 - ./level-1-business/battlecards.md
 - ./level-1-business/liferay-contracts.md
 uuid: 7c59dc4a-9174-4c10-b958-4105e0da1a53
+visibility: 
+- Employee
+- Partner
 ---
 
 # Level 1 for Business Sales Roles

@@ -1,5 +1,8 @@
 ---
 uuid: e26f8ce0-829e-4527-92d7-d4d729354a72
+visibility: 
+- Employee
+- Partner
 ---
 
 # Content Management and Analytics

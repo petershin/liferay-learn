@@ -1,5 +1,8 @@
 ---
 uuid: bb21b1db-1899-41cb-a3e7-b034c0582e08
+visibility: 
+- Employee
+- Partner
 ---
 
 # What is a Digital Experience Platform

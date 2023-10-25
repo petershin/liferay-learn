@@ -1,5 +1,8 @@
 ---
 uuid: f8095c49-574d-48d2-b0f9-0b7213808783
+visibility: 
+- Employee
+- Partner
 ---
 
 # Public Pages - Home Page

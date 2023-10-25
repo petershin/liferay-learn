@@ -1,5 +1,8 @@
 ---
 uuid: 91bb1834-90f9-4595-b6dc-47bf462447ec
+visibility: 
+- Employee
+- Partner
 ---
 
 # Example Liferay Object Demo

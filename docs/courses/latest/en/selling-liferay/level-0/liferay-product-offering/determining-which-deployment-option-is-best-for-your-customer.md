@@ -1,5 +1,8 @@
 ---
 uuid: 88656bc5-f0df-4461-8378-b7b554668954
+visibility: 
+- Employee
+- Partner
 ---
 # Determining Which Deployment Option is Best for Your Customer
 

@@ -1,5 +1,8 @@
 ---
 uuid: 9f35874e-7c4a-41d2-8c00-982ed16a483e
+visibility: 
+- Employee
+- Partner
 ---
 
 # Healthcare

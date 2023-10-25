@@ -1,5 +1,8 @@
 ---
 uuid: 7f21c3ef-e3ba-4610-a67d-b6e62e82436c
+visibility: 
+- Employee
+- Partner
 ---
 
 # Other Public Pages

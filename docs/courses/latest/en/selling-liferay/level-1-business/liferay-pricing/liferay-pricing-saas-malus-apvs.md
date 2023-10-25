@@ -1,5 +1,8 @@
 ---
 uuid: 58c789c2-20fd-487d-b8da-ead53775ced2
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Experience Cloud SaaS Pricing - MALUs, APVs, Moving Plans

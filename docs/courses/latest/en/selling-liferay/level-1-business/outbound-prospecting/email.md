@@ -1,5 +1,8 @@
 ---
 uuid: 9f3667ec-2f84-4d34-aace-bb5127ce566a
+visibility: 
+- Employee
+- Partner
 ---
 
 # Prospecting Tools - Email

@@ -1,5 +1,8 @@
 ---
 uuid: 868f1935-0f7d-409e-99a1-56718b99216b
+visibility: 
+- Employee
+- Partner
 ---
 
 # Buyer Process vs. Sales Process

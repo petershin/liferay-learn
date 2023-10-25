@@ -1,5 +1,8 @@
 ---
 uuid: 33dc0b48-efef-4c05-ab25-149b855b2a76
+visibility: 
+- Employee
+- Partner
 ---
 
 # Extending Liferay with Low-Code/No-Code and Integrations

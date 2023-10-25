@@ -1,5 +1,8 @@
 ---
 uuid: 47137572-85e8-47e4-aa2b-d076503364a9
+visibility: 
+- Employee
+- Partner
 ---
 
 # Modern Intranets

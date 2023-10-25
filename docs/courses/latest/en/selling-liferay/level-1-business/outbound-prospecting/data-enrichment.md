@@ -1,5 +1,8 @@
 ---
 uuid: 99bbc247-fbb3-4d44-a4aa-422219806b92
+visibility: 
+- Employee
+- Partner
 ---
 
 # Prospecting Tools - Data Enrichment

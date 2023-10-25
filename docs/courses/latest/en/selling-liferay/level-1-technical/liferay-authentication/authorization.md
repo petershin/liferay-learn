@@ -1,5 +1,8 @@
 ---
 uuid: 84ac8d9c-84e2-4c19-aad2-31a5d8da3cd4
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Authorization

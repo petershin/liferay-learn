@@ -1,5 +1,8 @@
 ---
 uuid: e6422a71-939d-413c-831b-9773a1ad536c
+visibility: 
+- Employee
+- Partner
 ---
 
 # Buying Phases

@@ -1,5 +1,8 @@
 ---
 uuid: 1726bb69-fac1-46eb-a096-94631fd8f788
+visibility: 
+- Employee
+- Partner
 ---
 
 # External Websites
@@ -11,7 +14,7 @@ An external website (or public website) helps drive new opportunities by providi
 For powering an external website, some of the most important capabilities to highlight are
 
 * [Design Systems and Experience Management](https://learn.liferay.com/w/dxp/site-building)
-* [Content and Asset Management ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Content and Asset Management](https://learn.liferay.com/w/dxp/content-authoring-and-management)
 * [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
 * [Segmentation and Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [Analytics](https://learn.liferay.com/w/analytics-cloud/index) and [Optimization](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)

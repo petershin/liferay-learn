@@ -1,5 +1,8 @@
 ---
 uuid: ceb8bfd0-8f7f-41eb-b448-0269f251f2f3
+visibility: 
+- Employee
+- Partner
 ---
 
 # Mastering the Expansion Decks

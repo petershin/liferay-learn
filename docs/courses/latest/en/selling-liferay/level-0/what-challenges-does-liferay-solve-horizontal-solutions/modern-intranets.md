@@ -1,5 +1,8 @@
 ---
 uuid: 2e2bb487-7eb4-483a-a72d-d20b082e2e48
+visibility: 
+- Employee
+- Partner
 ---
 
 # Modern Intranets

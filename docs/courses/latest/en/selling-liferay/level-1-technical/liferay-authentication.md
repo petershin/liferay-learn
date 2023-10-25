@@ -3,6 +3,9 @@ toc:
   - ./liferay-authentication/other-authentication-methods.md
   - ./liferay-authentication/authorization.md
 uuid: 49c5b81d-46ef-4eb5-88f7-86999cf71e4b
+visibility: 
+- Employee
+- Partner
 ---
 
 # Liferay Authentication

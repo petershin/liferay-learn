@@ -1,5 +1,8 @@
 ---
 uuid: 6e2d033e-bb4b-4c04-91a1-641def7b286c
+visibility: 
+- Employee
+- Partner
 ---
 
 # Strengths and Red Flags

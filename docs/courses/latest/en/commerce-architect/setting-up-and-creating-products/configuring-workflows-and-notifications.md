@@ -5,6 +5,8 @@ uuid: d3f40144-866d-4a66-af04-7d482e06c8c7
 
 Preston Palmer, the order manager, wants to review and approve orders placed by Robert Read, the buyer for Almighty Vision, for budget reasons. Clarity’s B2B site employs a buyer order approval workflow using the out-of-the-box single approver workflow. This ensures that all orders placed by buyers are approved by their order managers. This workflow helps when there’s a budget allocated for buying and requires approvals.
 
+<!-- You need to make sure the suppliers, partners, etc. are integrated with the other courses. We changed Almighty Vision to Fabulous Frames in the [administrator course](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/connecting-to-ldap). You are re-introducing them here as a distributor? This all needs to be documented in the spreadsheet somewhere so we don't create inconsistencies (of which one is below; I'll point it out. -Rich -->
+
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Channels*. 
 
 1. Select the B2B channel created earlier. 
@@ -32,6 +34,8 @@ Kyle, the administrator, needs your help to notify users when an order is accept
    **To:** `[%COMMERCEORDER_AUTHOR_EMAIL_ADDRESS%]`
 
    **From Address:** `orders@clarity.com`
+
+   <!-- The domain name used in the administrator course is clarityvisionsolutions.com. See here: https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users -Rich -->
 
    **From Name:** `Orders @ Clarity`
 
@@ -101,7 +105,7 @@ This creates a notification template for sending notifications whenever an order
    | Processing        | 10            |
    | Shipped           | 15            |
    | Completed         | 0             |
-   | Cancelled         | 8             |
+   | Canceled         | 8             |
    | Partially Shipped | 14            |
    | On Hold           | 20            |
 

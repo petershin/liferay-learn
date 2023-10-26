@@ -31,4 +31,3 @@ able-global-js:
 
 * [프런트 엔드 클라이언트 확장](../front-end-client-extensions.md)
 * [클라이언트 확장 작업](../working-with-client-extensions.md)
-* [테마 JS YAML 구성 참조](./theme-js-yaml-configuration-reference.md)

@@ -2,7 +2,6 @@
 toc:
   - ./front-end-client-extensions/tutorials.md
   - ./front-end-client-extensions/javascript-yaml-configuration-reference.md
-  - ./front-end-client-extensions/theme-js-yaml-configuration-reference.md
   - ./front-end-client-extensions/css-yaml-configuration-reference.md
   - ./front-end-client-extensions/theme-css-yaml-configuration-reference.md
   - ./front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
@@ -19,7 +18,6 @@ toc:
 
 front-end-client-extensions/tutorials.md
 front-end-client-extensions/javascript-yaml-configuration-reference.md
-front-end-client-extensions/theme-js-yaml-configuration-reference.md
 front-end-client-extensions/css-yaml-configuration-reference.md
 front-end-client-extensions/theme-css-yaml-configuration-reference.md
 front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
@@ -32,7 +30,7 @@ front-end-client-extensions/client-extensions-ui-reference.md
 
 {bdg-secondary}`사용 가능 라이프레이 7.4`
 
-프런트 엔드 클라이언트 확장은 페이지를 확장하고 새로운 기능을 통합합니다. 사용 가능한 유형에는 CSS, JavaScript, 테마 CSS, 테마 JS, 테마 파비콘, 사용자 정의 요소 및 IFrame이 포함됩니다.
+프런트 엔드 클라이언트 확장은 페이지를 확장하고 새로운 기능을 통합합니다. 사용 가능한 유형에는 CSS, JavaScript, 테마 CSS, 테마 파비콘, 사용자 정의 요소 및 IFrame이 포함됩니다.
 
 [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md)에서 이러한 확장을 생성하고 배포할 수 있습니다.
 
@@ -69,18 +67,6 @@ type: globalCSS
 ```
 
 시작하려면 [CSS 클라이언트 확장 사용](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) 을 참조하세요.
-
-## 테마 JavaScript 클라이언트 확장
-
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
-
-[JavaScript 클라이언트 확장](#javascript-client-extensions) 과 마찬가지로 JavaScript 라이브러리와 로직을 추가하여 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)에서 제공하는 라이브러리를 대체할 수 있습니다.
-
-`client-extension.yaml` 파일에 테마 JavaScript 클라이언트 확장을 지정합니다.
-
-```yaml
-type: themeJS
-```
 
 ## 테마 CSS 클라이언트 확장
 

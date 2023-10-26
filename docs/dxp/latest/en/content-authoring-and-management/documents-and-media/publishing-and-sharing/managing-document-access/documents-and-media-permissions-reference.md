@@ -3,6 +3,8 @@ uuid: 0c78ca39-eaf4-43a3-86e2-9a9fabdfc640
 ---
 # Documents and Media Permissions Reference
 
+{bdg-secondary}`Liferay 7.4 U76+/GA76+`
+
 Manage access to Documents and Media assets using [application](#general-permissions) and [resource](#resource-permissions) permissions. With role-based access control, you can ensure only the intended users can create, view, download, and manage documents.
 
 You can grant these permissions in the Roles application under Content & Data in the permissions side panel.
@@ -62,17 +64,21 @@ Resource permissions grant access to view and act on resources in the Documents 
 
 ### Document
 
-| Permission        | Description                                                            |
-|:------------------|:-----------------------------------------------------------------------|
-| Add Discussion    | Add comments to documents.                                             |
-| Delete            | Move documents to the recycle bin.                                     |
-| Delete Discussion | Delete comments from documents.                                        |
-| Download          | Download documents.                                                    |
-| Override Checkout | Make changes to documents even when it is checked out by another user. |
-| Permissions       | View and modify document permissions.                                  |
-| Update            | Edit or move documents.                                                |
-| Update Discussion | Edit document comments.                                                |
-| View              | View documents.                                                        |
+| Permission        | Description                                                                                                                                                                                                          |
+|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Add Discussion    | Add comments to documents.                                                                                                                                                                                           |
+| Delete            | Move documents to the recycle bin.                                                                                                                                                                                   |
+| Delete Discussion | Delete comments from documents.                                                                                                                                                                                      |
+| Download          | Download documents.                                                                                                                                                                                                  |
+| Override Checkout | Make changes to documents even when it is checked out by another user.                                                                                                                                               |
+| Permissions       | View and modify document permissions.                                                                                                                                                                                |
+| Update            | Edit or move documents.                                                                                                                                                                                              |
+| Update Discussion | Edit document comments.                                                                                                                                                                                              |
+| View              | View documents. Users with this permission can view all document metadata (e.g., title, description, adaptive media images, previews, thumbnails) and anything defined in attached document types and metadata sets. |
+
+```{important}
+For Liferay 7.4 U75/GA75 and earlier version, the view permission grants users the ability to download assets. For 7.4 U76+/GA76+, Documents and Media includes a separate download permission, so you can manage view and download access separately. When upgrading, Liferay automatically assigns the download permission to all roles with the view permission. By default all users, including unauthenticated users, can download files. If you want to limit download access, you must remove this permission from roles that should not be able to download files.
+```
 
 ### Shortcut
 

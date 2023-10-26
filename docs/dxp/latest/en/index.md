@@ -9,6 +9,7 @@ toc:
   - ./users-and-permissions.md
   - ./system-administration.md
   - ./building-applications.md
+  - ./building-solutions-on-liferay.md
   - ./liferay-internals.md
   - ./headless-delivery.md
   - ./installation-and-upgrades.md

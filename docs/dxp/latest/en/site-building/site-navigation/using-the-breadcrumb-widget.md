@@ -1,3 +1,7 @@
+---
+uuid :badfa636-ff2c-49b2-9cea-2038e148b86a
+---
+
 ## Using the Breadcrumb Widget 
 
 This widget provides a way to navigate to related pages or sites through links.
@@ -20,3 +24,6 @@ You can configure the widget via its Options button (![Options button](../../../
 
 **Show Application Breadcrumb:** Toggle to show the Application Breadcrumb.
 
+## Related Topics
+
+* [Using Widgets](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets.md)

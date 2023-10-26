@@ -3,105 +3,75 @@ uuid: aa109d64-1aae-4b1e-a0f9-f71442424b41
 ---
 # Adaptive Media Configuration Reference
 
-To access the Adaptive Media, navigate to the _Global Menu_ &rarr; _Control Panel_ &rarr; _Adaptive Media_.
+With Adaptive Media, you can configure supported media types, determine the resolutions used for previews and thumbnails in the document library, and more. To access these settings,
 
-Users can adapt all images at once using all the existing Image Resolution rules by clicking the (![Actions icon](../../../../images/icon-actions.png)) at the upper right.
+1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *System Settings*.
 
-![Adapt all Images.](./adaptive-media-configuration-reference/images/02.png)
+1. Click *Adaptive Media* under Content and Data.
 
-## Managing Image Resolutions
+    ![Access the System Settings](./adaptive-media-configuration-reference/images/01.png)
 
-The Home screen is where all existing Image Resolution settings are displayed.
+Configuration options appear in four tabs:
 
-| Field | Description |
-| :--- | :--- |
-| Name | This is the name of the Image Resolution. |
-| State | The _State_ field describes whether this setting is enabled or not. |
-| Adapted Images | This status bar tracks the migration progress. |
-| Max Width | This refers to the maximum width of the thumbnail. |
-| Max Height | This refers to the maximum height of the thumbnail. |
+* System Images Resolutions: Configure resolutions used for document library thumbnails and previews.
+* Images: Configure which media types are supported by Adaptive Media.
+* ImageMagick: Configure which media types are generated using ImageMagick.
+* Processes: Configure asynchronous processing.
 
-Users can edit or disable a rule by clicking the (![Actions icon](../../../../images/icon-actions.png)) icon.
+## Systems Images Resolutions
 
-![Adapt all Images.](./adaptive-media-configuration-reference/images/03.png)
+Here you can override Adaptive Media's default behavior for document library previews and thumbnails. By default, Adaptive Media chooses the best image resolution for previews and thumbnails based on the closest dimensions. <!--Q: Closest to what dimensions?--> But you can enter resolution IDs to override this process (e.g., `Preview-1000x0`).
 
-## Creating a New Image Resolution
+![Access the System Settings](./adaptive-media-configuration-reference/images/02.png)
 
-Clicking the (![Add icon](../../../../images/icon-add.png)) icon creates a new Image Resolution.
+| Field                            | Description                                                                                                    |
+|:---------------------------------|:---------------------------------------------------------------------------------------------------------------|
+| Preview Configuration            | Enter a resolution ID to override the default adaptive media behavior for document library previews.           |
+| Thumbnail Configuration          | Enter a resolution ID to override the default adaptive media behavior for document library thumbnails.         |
+| Custom Thumbnail Configuration 1 | Enter a resolution ID to override the default adaptive media behavior for document library custom thumbnail 1. |
+| Custom Thumbnail Configuration 2 | Enter a resolution ID to override the default adaptive media behavior for document library custom thumbnail 2. |
 
-![Create a new Image Resolution.](./adaptive-media-configuration-reference/images/01.png)
+## Images
 
-| Field | Description |
-| :--- | :--- |
-| Name | Enter a name for the Image Resolution. |
-| Description | Enter a description for the Image Resolution. |
-| Max Width | Enter a numeric value in pixels for the maximum width. |
-| Max Height | Enter a numeric value in pixels for the maximum height. |
-| Automatic | Select this to generate an identifier. |
-| Custom | Select this to generate your own identifier. |
-| ID | This field is active only when the _Custom_ option is chosen; users can enter their own identifier for this Image Resolution. |
+Here you can determine the media types processed by Adaptive Media and enable or disable [Gifsicle](https://www.lcdf.org/gifsicle/).
 
-## Advanced Configuration
+![Determine supported media types.](./adaptive-media-configuration-reference/images/03.png)
 
-Adaptive Media's advanced configuration options are available in System Settings:
+| Field               | Description                                                                                                                                                                                                                                                                                  |
+|:--------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Supported MIME Type | Determine the media types processed by Adaptive Media. If an image is uploaded and its media type is not listed, Adaptive Media ignores the image. By default, this list includes `bmp`, `gif`, `jpeg`, `pjpeg`, `png`, `svg+xml`, `x-citrix-jpeg`, `x-citrix-png`, `x-ms-bmp`, and `x-png`. |
 
-1. Navigate to the _Global Menu_ &rarr; _Control Panel_ &rarr; _System Settings_.
+![Enable or disable Gifsicle.](./adaptive-media-configuration-reference/images/04.png)
 
-    ![Access the System Settings](./adaptive-media-configuration-reference/images/04.png)
+| Field    | Description                                                                                                                                                            |
+|:---------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Gifsicle | You can enable Gifsicle to adapt gif files. See [Enabling Optimization of Animated GIFs](../../devops/enabling-optimization-of-animated-gifs.md) for more information. |
 
-1. Click _Adaptive Media_.
+<!--Q: This previously included the Max Image Size option. When was this removed?-->
 
-    ![Access the System Settings](./adaptive-media-configuration-reference/images/05.png)
+## ImageMagick
 
-There are three configurations listed under _SYSTEM SCOPE_:
+Here you can determine which media types are processed using [ImageMagick](http://www.imagemagick.org). To use ImageMagick, you must first install it on your Liferay server. See [Enabling ImageMagick and Ghostscript](../../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-imagemagick-and-ghostscript) for more information.
 
-* System Images Resolutions
-* Images
-* Processes
+![Determine which media types are processed using ImageMagick.](./adaptive-media-configuration-reference/images/05.png)
 
-### Systems Images Resolutions
+| Field               | Description                                                                                                                                                                                                                                                                                                           |
+|:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Supported MIME Type | Determine the media types processed by ImageMagick in Adaptive Media. If an image is uploaded and its media type isn't in this list, Adaptive Media does not use ImageMagick for generating its preview. By default, this list contains  `avif`, `gif`, `heic`, `tiff`, and `webp`, but you can add other MIME types. |
 
-Normally, Adaptive Media choose the best image based on the closet dimensions. The System Images Resolution settings overrides its own heuristics and whichever specified image here will be used. Enter the ID generated (for example: _Preview-1000_).
+## Processes
 
-![Access the System Settings](./adaptive-media-configuration-reference/images/09.png)
+Here you can configure Adaptive Media's asynchronous processing. Modify these values to improve performance.
 
-| Field | Description |
-| :--- | :--- |
-| Preview Configuration | Enter the configuration ID to override the default adaptive media behavior for document library previews. |
-| Thumbnail Configuration | Enter the configuration ID to override the default adaptive media behavior for document library thumbnails. |
-| Custom Thumbnail Configuration 1 | Enter the configuration ID to override the default adaptive media behavior for document library custom thumbnail 1. |
-| Custom Thumbnail Configuration 2 | Enter the configuration ID to override the default adaptive media behavior for document library custom thumbnail 2. |
+![Configure Adaptive Media's image processing.](./adaptive-media-configuration-reference/images/06.png)
 
-### Images
-
-The _Images_ configuration contains the following options:
-
-| Field | Description |
-| :--- | :--- |
-| Supported MIME Types | A list of the image MIME types that Adaptive Media supports. If an image is uploaded and its MIME type isn't in this list, Adaptive Media ignores the image. By default, this list contains many common MIME types. |
-
-![You can also configure Adaptive Media's MIME Types.](./adaptive-media-configuration-reference/images/08.png)
-
-| Field | Description |
-| :--- | :--- |
-| Gifsicle | To scale animated GIFs, Adaptive Media uses an external tool called [Gifsicle](https://www.lcdf.org/gifsicle/). See [Enabling Optimization of Animated GIFs](../../devops/enabling-optimization-of-animated-gifs.md) to learn more. |
-| Max Image Size | Maximum size of the source images that Adaptive Media can use to generate adapted images. Adaptive Media will not generate adapted images for source images larger than this setting. The default value is 10 MB. To generate adapted images for all source images regardless of size, set this to `-1`. Since generating adapted images from large source images requires significant amounts of memory, you can specify a lower *Max Image Size* to avoid out of memory errors. |
-
-![You can configure Gifsicle and the maximum image size for Adaptive Media.](./adaptive-media-configuration-reference/images/06.png)
-
-### Processes
-
-The _Processes_ configuration is related to Adaptive Media's asynchronous processing. These values can be modified to improve performance for specific scenarios or use cases. The following options are available:
-
-![You can also configure Adaptive Media's image processing resources.](./adaptive-media-configuration-reference/images/07.png)
-
-| Field | Description |
-| :--- | :--- |
-| Max Processes | The maximum number of processes for generating adapted media. The default value is `5`. |
-| Core Processes | The number of processes always available for generating adapted media. The default value is `2`. This setting can't exceed the _Max processes_ setting. |
+| Field          | Description                                                                                                                                                    |
+|:---------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Max Processes  | Set the maximum number of processes for generating adapted media. The default value is `5`.                                                                    |
+| Core Processes | Set the number of processes always available for generating adapted media. The default value is `2`. This value cannot exceed the maximum number of processes. |
 
 ```{warning}
-Larger values for Max Processes and Core Processes may cause out of memory errors, as processing more images at once can consume large amounts of memory. Out of memory errors can also occur if the source images Adaptive Media uses to generate adapted images are large. You can restrict the maximum size of such images via the *Max Image Size* setting in the *Adaptive Media Image* configuration, which is described next. You should run performance tests to optimize these settings for the amount of memory available on your system.
+Larger values for Max Processes and Core Processes can consume large amounts of memory and result in out of memory errors. Out of memory errors can also occur if source images are large. You should run performance tests to optimize these settings for the amount of memory available on your system.
 ```
 
 ## Related Topics

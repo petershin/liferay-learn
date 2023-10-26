@@ -11,9 +11,9 @@ If you [disable Adaptive Media for an image](./managing-image-resolutions.md), t
 
 ## Including Adapted Images in Content
 
-When [adding images to Content Pages](../../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings), Adaptive Media works for images you select directly and mapped images. When uploading images in a Blog or Web Content, Adaptive Media works only with images added from the _Blog Images_, _Documents and Media_, and _Upload_ tabs. Additionally, adapted images can only be applied to a blog entry's content, not cover images. Adaptive Media works for images added to a blog entry via drag and drop, as the image is uploaded automatically to the Blog Images repository, adapted, and then included in the blog entry's content. You can see this by inspecting the HTML and checking that the image contains the `<img>` tag and `data-fileentryid` attribute.
+When [adding images to Content Pages](../../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings), Adaptive Media works for images you select directly and mapped images. When uploading images in a Blog or Web Content, Adaptive Media works only with images added from the *Blog Images*, *Documents and Media*, and *Upload* tabs. Additionally, adapted images can only be applied to a blog entry's content, not cover images. Adaptive Media works for images added to a blog entry via drag and drop, as the image is uploaded automatically to the Blog Images repository, adapted, and then included in the blog entry's content. You can see this by inspecting the HTML and checking that the image contains the `<img>` tag and `data-fileentryid` attribute.
 
-For web content articles, Adaptive Media works only with images added from the file selector's _Documents and Media_ tab. Unlike blogs, Adaptive Media doesn't deliver adapted images for images added to web content articles via drag and drop.
+For web content articles, Adaptive Media works only with images added from the file selector's *Documents and Media* tab. Unlike blogs, Adaptive Media doesn't deliver adapted images for images added to web content articles via drag and drop.
 
 For both blog entries and media content articles, Adaptive Media doesn't work with images added from the file selector's *URL* tab. This is because the image is linked directly from the URL and therefore provides no image file for Adaptive Media to copy.
 
@@ -55,11 +55,11 @@ Note the `<img>` tag with a `data-fileentryid` attribute. Adaptive Media uses th
 
 ## Staging Adapted Images
 
-Adaptive Media is fully integrated with DXP's [content staging](../../../../content-authoring-and-management.md) and [export/import](../../../../site-building/sites/exporting-importing-site-pages-and-content.md) functionality. Adaptive Media includes adapted images in staged content when published, and can update those images to match any new resolutions.
+Adaptive Media is integrated with Liferay's [content staging](../../../../content-authoring-and-management.md) and [export/import](../../../../site-building/sites/exporting-importing-site-pages-and-content.md) features. Adapted images are included in staged content when published.
 
-Similarly, when content that contains adapted images is exported, Adaptive Media exports those images in the LAR file. That LAR file can then be imported to restore or transfer that content, along with its adapted images.
+Similarly, when you export content with adapted images, those images are included in the LAR file. You can then import them along with the original image.
 
-Adaptive Media doesn't regenerate adapted images during export/import or the publishing of staged content. To improve performance, Adaptive Media instead reuses the existing adapted images.
+To improve performance, Adaptive Media reuses the existing adapted images during publishing and export/import.
 
 ## Related Topics
 

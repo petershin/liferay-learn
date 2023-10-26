@@ -34,4 +34,3 @@ See [Front-end Client Extension Properties](../front-end-client-extensions.md#fr
 
 * [Front-end Client Extensions](../front-end-client-extensions.md)
 * [Working with Client Extensions](../working-with-client-extensions.md)
-* [Theme JS YAML Configuration Reference](./theme-js-yaml-configuration-reference.md)

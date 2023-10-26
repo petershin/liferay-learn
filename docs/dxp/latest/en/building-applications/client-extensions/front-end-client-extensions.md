@@ -2,7 +2,6 @@
 toc:
   - ./front-end-client-extensions/tutorials.md
   - ./front-end-client-extensions/javascript-yaml-configuration-reference.md
-  - ./front-end-client-extensions/theme-js-yaml-configuration-reference.md
   - ./front-end-client-extensions/css-yaml-configuration-reference.md
   - ./front-end-client-extensions/theme-css-yaml-configuration-reference.md
   - ./front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
@@ -20,7 +19,6 @@ uuid: fcdeefe5-64f7-451c-8981-41e1a04290d6
 
 front-end-client-extensions/tutorials.md
 front-end-client-extensions/javascript-yaml-configuration-reference.md
-front-end-client-extensions/theme-js-yaml-configuration-reference.md
 front-end-client-extensions/css-yaml-configuration-reference.md
 front-end-client-extensions/theme-css-yaml-configuration-reference.md
 front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
@@ -33,7 +31,7 @@ front-end-client-extensions/client-extensions-ui-reference.md
 
 {bdg-secondary}`Available Liferay 7.4`
 
-Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JavaScript, Theme CSS, Theme JS, Theme Favicon, Custom Element, and IFrame.
+Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JavaScript, Theme CSS, Theme Favicon, Custom Element, and IFrame.
 
 You can create and deploy these extensions from your [Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md).
 
@@ -70,18 +68,6 @@ type: globalCSS
 ```
 
 See [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) to get started.
-
-## Theme JavaScript Client Extensions
-
-{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (on-premises)`
-
-As with [JavaScript client extensions](#javascript-client-extensions), you can add JavaScript libraries and logic to replace the ones provided by your site's [theme](../../site-building/site-appearance/themes/introduction-to-themes.md).
-
-Specify a Theme JavaScript client extension in your `client-extension.yaml` file:
-
-```yaml
-type: themeJS
-```
 
 ## Theme CSS Client Extensions
 

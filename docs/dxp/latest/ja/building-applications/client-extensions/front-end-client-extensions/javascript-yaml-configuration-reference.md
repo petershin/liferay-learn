@@ -31,4 +31,3 @@ able-global-js:
 
 * [フロントエンドクライアント拡張機能](../front-end-client-extensions.md)
 * [クライアントエクステンションの操作](../working-with-client-extensions.md)
-* [テーマJSのYAML設定リファレンス](./theme-js-yaml-configuration-reference.md)

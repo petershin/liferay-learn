@@ -2,7 +2,6 @@
 toc:
   - ./front-end-client-extensions/tutorials.md
   - ./front-end-client-extensions/javascript-yaml-configuration-reference.md
-  - ./front-end-client-extensions/theme-js-yaml-configuration-reference.md
   - ./front-end-client-extensions/css-yaml-configuration-reference.md
   - ./front-end-client-extensions/theme-css-yaml-configuration-reference.md
   - ./front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
@@ -19,7 +18,6 @@ toc:
 
 front-end-client-extensions/tutorials.md
 front-end-client-extensions/javascript-yaml-configuration-reference.md
-front-end-client-extensions/theme-js-yaml-configuration-reference.md
 front-end-client-extensions/css-yaml-configuration-reference.md
 front-end-client-extensions/theme-css-yaml-configuration-reference.md
 front-end-client-extensions/theme-favicon-yaml-configuration-reference.md
@@ -32,7 +30,7 @@ front-end-client-extensions/client-extensions-ui-reference.md
 
 {bdg-secondary}`利用可能な Liferay 7.4`
 
-フロントエンドクライアント拡張は、ページを拡張し、新しい機能を統合します。 CSS、JavaScript、テーマのCSS、テーマのJS、テーマのお気に入りアイコン、カスタム要素、IFrameがあります。
+フロントエンドクライアント拡張は、ページを拡張し、新しい機能を統合します。 CSS、JavaScript、テーマのCSS、テーマのお気に入りアイコン、カスタム要素、IFrameがあります。
 
 これらの拡張は、[Liferay Workspace](../tooling/liferay-workspace/what-is-liferay-workspace.md)から作成し、デプロイできます。
 
@@ -69,18 +67,6 @@ type: globalCSS
 ```
 
 開始するには、 [CSSクライアント拡張の使用](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) を参照してください。
-
-## テーマのJavaScriptクライアント拡張
-
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
-
-[JavaScriptクライアント拡張](#javascript-client-extensions) と同様に、サイトの[テーマ](../../site-building/site-appearance/themes/introduction-to-themes.md)が提供するものに代わる JavaScriptライブラリやロジックを追加することができます。
-
-`client-extension.yaml`ファイルに、テーマのJavaScriptクライアント拡張を指定します。
-
-```yaml
-type: themeJS
-```
 
 ## テーマのCSSクライアント拡張
 

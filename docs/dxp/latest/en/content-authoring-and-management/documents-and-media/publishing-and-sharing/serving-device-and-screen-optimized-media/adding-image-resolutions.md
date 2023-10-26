@@ -3,33 +3,45 @@ uuid: 6a806e17-5e0c-4a78-a022-2bf7f8b4a532
 ---
 # Adding Image Resolutions
 
-By default, DXP contains two Image Resolutions: a Preview and Thumbnail. You can always add more Image Resolutions, such as resolutions to cover common device sizes like mobile phones, tablets, laptops, and desktops. For example, if most users use one device (e.g., all Intranet users have the same company mobile phone), you can create a resolution to target that device. Note that generating more images requires additional computational resources and storage space.
+By default, Adaptive Media includes two image resolutions: preview and thumbnail. You can define additional image resolutions to help optimize site performance for common devices (e.g., desktops, laptops, tablets, mobile phones). When you upload an image, Adaptive Media uses the existing resolutions to generate each version of the image automatically. All generated images maintain the original aspect ratio. If images are uploaded before you add custom resolutions, you must [manually generate](./managing-image-resolutions.md#manually-generating-adapted-images) the resolution version for those images.
 
-Here you'll learn how to define the resolutions for the images delivered to users' devices. Once the resolutions are defined, Adaptive Media then generates new images scaled to fit those resolutions and maintains the original aspect ratio.
+```{important}
+Generating additional resolutions requires more computational resources and storage space. To optimize performance, you can configure the max number of asynchronous processes and available core processes. See [Adaptive Media Configuration Reference](./adaptive-media-configuration-reference.md#processes) for more information.
+```
 
-Images uploaded before you create a resolution are _not_ affected and must be adapted separately (see [Generating Missing Adapted Images](./managing-image-resolutions.md#generating-missing-adapted-images)).
-
-![Adaptive Media's image resolutions are listed in a table.](./adding-image-resolutions/images/01.png)
+![Add and manage images resolutions in the Adaptive Media application.](./adding-image-resolutions/images/01.png)
 
 ## Adding a New Image Resolution
 
-1. Navigate to the _Global Menu_ &rarr; _Control Panel_ &rarr; _Adaptive Media_.
-1. Click the *Add* icon (![Add new resolution](../../../../images/icon-add.png)) on the Adaptive Media configuration page and provide the information below. 
-1. Click _Save_ when finished.
+1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Adaptive Media*.
 
-**Name**: Enter a unique name. This can be updated if a custom `Identifier` is defined.
+1. Click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
 
-**Max Width**: The generated image's maximum width. If a *Max Height* is given, this field is optional. This value must be at least `1`.
+1. Enter a unique name and description.
 
-**Maximum Height**: The generated image's maximum height. If a *Max Width* is given, this field is optional. This value must be at least `1`.
+1. Enter a *Max Width* and/or *Max Height* in pixels.
 
-**Add a resolution for high density displays (2x):** Defines a scaled up resolution for HIDPI displays. Selecting this option creates a new resolution double the size of the original with the same name and the suffix `-2x`. For example, if the original resolution is `400px` by `300px` (max width by max height), the high density resolution is `800px` by `600px`.
+   If you leave a measurement blank, its value is set to `auto`.
 
-**Identifier:** The resolution's ID. By default, this is automatically generated from the name. You can specify a custom identifier by selecting the _Custom_ option and entering a new _ID_. Third party applications can use this ID to obtain images for the resolution via Adaptive Media's APIs.
+1. Determine whether to add a resolution for high pixel density displays (HiDPI).
 
-![The form for adding a new Adaptive Media resolution.](./adding-image-resolutions/images/02.png)
+   Selecting this option creates an additional resolution that doubles the set size. This resolution uses the same name as the current resolution and adds the `-2x` suffix to it.
 
-```{tip}
+1. Determine the resolution's identifier:
+
+   **Automatic** (Default): Uses a kebab-case value based on the name field.
+
+   **Custom**: Enter a custom value.
+
+   Third party applications can use this ID to obtain images for the resolution via Adaptive Media's APIs.
+
+   ![Enter a name, description, size, and identifier for the resolution.](./adding-image-resolutions/images/02.png)
+
+1. Click *Save*.
+
+While the resolution is enabled, Adaptive Media uses it to generates images for all new uploads. You can also [manually generate](./managing-image-resolutions.md#manually-generating-adapted-images) adapted images for previously uploaded images.
+
+```{important}
 Image resolutions and their identifiers cannot be updated if the resolution has been used to adapt images. This prevents inconsistencies in generated images.
 ```
 

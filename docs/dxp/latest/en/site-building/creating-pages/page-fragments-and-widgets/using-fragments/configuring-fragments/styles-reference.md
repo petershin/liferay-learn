@@ -26,7 +26,7 @@ Many styles have defined tokens supported by style books. The value of tokens ca
 ![Visual representation of inherited token values with blue dots](./styles-reference/images/07.png)
 
 ```{note}
-For Liferay 7.4 U31+/GA31+, you can configure fragment styles for individual viewports by clicking the device buttons at the top of the screen or setting up [adaptive media](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md) for background images. For earlier versions, you can only configure text and spacing styles for different devices.
+For Liferay 7.4 U31+/GA31+, you can configure fragment styles for individual viewports by clicking the device buttons at the top of the screen or setting up [adaptive media](../../../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/using-adaptive-media.md) for background images. For earlier versions, you can only configure text and spacing styles for different devices.
 ```
 
 ## Spacing

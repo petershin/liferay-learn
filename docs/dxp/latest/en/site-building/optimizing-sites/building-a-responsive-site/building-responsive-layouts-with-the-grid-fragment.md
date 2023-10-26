@@ -26,7 +26,7 @@ When you access this 'Services' Content Page from your computer, the grid layout
     ![Select the screen size you want to customize in the Device Display section.](./building-responsive-layouts-with-the-grid-fragment/images/06.png)
 
 1. In the Configuration Sidebar, under the *General* tab, select the preferred layout options for the screen size. For example, one module per row works much better for the *Portrait Phone* layout option.
-1. Select the image to configure its *Resolution* for the target screen size (available in Liferay DXP 7.4+), or leave the default *Auto* option to use [Adaptive Media](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md) .
+1. Select the image to configure its *Resolution* for the target screen size (available in Liferay DXP 7.4+), or leave the default *Auto* option to use [Adaptive Media](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/using-adaptive-media.md).
 
     ![Select the image resolution for the target screen size or leave the Auto option to use Adaptive Media.](./building-responsive-layouts-with-the-grid-fragment/images/05.png) 
 

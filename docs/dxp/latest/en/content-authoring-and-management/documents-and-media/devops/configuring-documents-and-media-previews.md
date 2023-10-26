@@ -3,7 +3,7 @@ uuid: e1c9c81a-e2a8-492a-b61e-f3eb7b4c6d52
 ---
 # Configuring Documents and Media Previews
 
-By default, Liferay DXP uses [PDFBox](https://pdfbox.apache.org) to generate previews for files added to the Document Library. This is because PDFBox is the only 100% Java-based tool that can be distributed with DXP.
+By default, Liferay uses [PDFBox](https://pdfbox.apache.org) to generate previews for files added to the Document Library. This is because PDFBox is the only 100% Java-based tool that can be distributed with DXP.
 
 However, since PDFBox only supports a limited number of file types, Liferay also provides integration with external services to support additional file types. These services can be used to more quickly generate high quality file previews for more of your files.
 
@@ -24,6 +24,28 @@ Liferay DXP currently supports integration with the following programs.
    ```
 
 With these tools installed and configured, Documents and Media can provide in application previews of most file types.
+
+## Configuring Supported MIME Types for ImageMagick
+
+When using ImageMagick, adaptive media . By Default, ImageMagick supports `avif`, `gif`, `heic`, `tiff`, and `webp`.
+
+To add additional MIME types,
+
+## Regenerating Document Previews
+
+For images, you can use Adaptive Media.
+
+For audio, video, PDF, and OpenOffice files, you can also regenerate document previews at any time via the Control Panel:
+
+Control Panel > System > Server Administration > Resources Tab > Regeneration Options
+
+Click Execute.
+
+Generates previews that have not been created previously.
+
+This process does not delete existing previews and thumbnails. If you want to completely regenerate these files, you must first reset them. (Execute corresponding cleanup action)
+
+Image previews are not affected by any of these processes. These are managed from Control Panel > Configuration > Adaptive Media (Adapt All Images or Adapt Remaining)
 
 ## Related Topics
 

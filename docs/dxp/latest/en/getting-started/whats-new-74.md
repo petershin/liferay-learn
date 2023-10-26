@@ -142,7 +142,7 @@ You can hide a Fragment on one Viewport while keeping it visible on another. Thi
 
 ### Native Support for Adaptive Media in Content Pages and Display Page Templates
 
-You can now use [adaptive media in Content Page images](../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings) to adjust the image resolution dynamically, based on the target screen size. After you [add an image resolution in Adaptive Media](../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/adding-image-resolutions.md), the resolution appears in the Resolution drop-down menu for your Content Page image.
+You can now use [adaptive media in Content Page images](../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings) to adjust the image resolution dynamically, based on the target screen size. After you [add an image resolution in Adaptive Media](../content-authoring-and-management/documents-and-media/publishing-and-sharing/using-adaptive-media/adding-image-resolutions.md), the resolution appears in the Resolution drop-down menu for your Content Page image.
 
 ![Adaptive Media can now adjust image resolutions dynamically based on screen size.](./whats-new-74/images/13.gif)
 

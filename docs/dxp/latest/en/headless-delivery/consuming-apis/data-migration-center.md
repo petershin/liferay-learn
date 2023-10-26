@@ -115,7 +115,7 @@ To import object definitions,
 
 1. The pop up window will show the progress of the import. Click _Close_ when completed. Note, if an error occurs in the import process, return to the main data migration page and click the _options_ (![Options icon](../../images/icon-options.png)) icon to download an error report.
 
-1.  Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Objects_ to verify the imported object.
+1.  Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Objects_ to verify the imported object definition.
 
 ## Importing Object Entries
 
@@ -139,7 +139,7 @@ Make sure your object exists before attempting to import its entries.
 
 1. Under update strategy, select an option to either _Update Changed Record Fields_ or _Overwrite Records_. Note, when _Overwrite Records_ is selected, the whole entity will be updated. When _Update Changed Record Fields_ is selected, only the fields defined in the import file is updated while the rest of the existing values are left alone.
 
-1. Under file settings, click _Choose File_ and locate the JSON file that contains the object definitions to import.
+1. Under file settings, click _Choose File_ and locate the JSON file that contains the object entries to import.
 
 1. Under import mappings, make any mapping changes you wish by selecting the drop-down list under source file field. 
 
@@ -148,6 +148,8 @@ Make sure your object exists before attempting to import its entries.
 1. Click _Next_ to continue the import. In the pop up window, click _Start Import_.
 
 1. The pop up window will show the progress of the import. Click _Close_ when completed. Note, if an error occurs in the import process, return to the main data migration page and click the _options_ (![Options icon](../../images/icon-options.png)) icon to download an error report.
+
+1. If your [published object](../../building-applications/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) has a panel link, navigate to the object to verify the imported object entries.
 
 ## Related Topics
 

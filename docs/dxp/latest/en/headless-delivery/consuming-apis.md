@@ -2,7 +2,7 @@
 toc:
   - ./consuming-apis/consuming-rest-services.md
   - ./consuming-apis/consuming-graphql-apis.md
-  - ./consuming-apis/import-export-center.md
+  - ./consuming-apis/data-migration-center.md
   - ./consuming-apis/api-query-parameters.md
   - ./consuming-apis/batch-engine-api-basics-importing-data.md
   - ./consuming-apis/batch-engine-api-basics-exporting-data.md
@@ -18,7 +18,7 @@ uuid: 31e2f6fc-5394-4d53-bc3d-d098eda6adb5
 
 consuming-apis/consuming-rest-services.md
 consuming-apis/consuming-graphql-apis.md
-consuming-apis/import-export-center.md
+consuming-apis/data-migration-center.md
 consuming-apis/api-query-parameters.md
 consuming-apis/batch-engine-api-basics-importing-data.md
 consuming-apis/batch-engine-api-basics-exporting-data.md
@@ -29,7 +29,7 @@ consuming-apis/api-headers-reference.md
 
 * [Consuming Rest Services](./consuming-apis/consuming-rest-services.md)
 * [Consuming GraphQL Apis](./consuming-apis/consuming-graphql-apis.md)
-* [Import Export Center](./consuming-apis/import-export-center.md)
+* [Data Migration Center](./consuming-apis/data-migration-center.md)
 * [API Query Parameters](./consuming-apis/api-query-parameters.md)
 * [Batch Engine API Basics - Importing Data](./consuming-apis/batch-engine-api-basics-importing-data.md)
 * [Batch Engine API Basics - Exporting Data](./consuming-apis/batch-engine-api-basics-exporting-data.md)

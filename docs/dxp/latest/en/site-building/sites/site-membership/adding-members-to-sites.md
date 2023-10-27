@@ -16,7 +16,7 @@ The steps below show how to add users manually to sites and how to provide optio
 Administrators can manage site members from that site's Memberships app.
 
 1. Open the *Product Menu* (![Product Menu](../../../images/icon-product-menu.png)), click  the compass icon(![Compass Icon](../../../images/icon-compass.png)), and select the site you want to manage. 
-1. Select *People* &rarr; *Memberships* in the Product Menu. If you do not see this option, Manual Membership is disabled. To enable Manual Membership, select *Site Settings* &rarr; *Site Configuration*. In the *Details* tab, enable the *Allow Manual Membership Management* option.
+1. Select *People* &rarr; *Memberships* in the Product Menu. If you don't see this option, Manual Membership is disabled. To enable Manual Membership, select *Site Settings* &rarr; *Site Configuration*. In the *Details* tab, toggle *Allow Manual Membership Management*.
 
 From here you can manage site memberships, organizations, and user group associations. You can learn more about those in [Users and Organizations](../../../users-and-permissions.md). On this page, you can see a list of all current site members and you can add or remove user memberships from the site.
 

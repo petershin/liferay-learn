@@ -19,7 +19,7 @@ See [Using Display Page Templates](../using-display-page-templates.md) to learn 
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and click *Design* &rarr; *Page Templates*.
 
-1. Click the *Display Page Templates* tab and click *Add* ( ![Add Button](./../../../images/icon-add.png) ).
+1. Click the *Display Page Templates* tab and click *Add* (![Add Button](./../../../images/icon-add.png)).
 
 1. Enter a *Name* for your template and select a *Content Type* and *Subtype*, if applicable. Then click *Save*.
 
@@ -56,7 +56,7 @@ For example, when you link a button in a content page to a Mapped URL, you can s
 
 To set a friendly URL to your display page template,
 
-1. While editing your display page template, click *Options* ( ![Options icon](../../../images/icon-options.png) ) at the top right corner of the page.
+1. While editing your display page template, click *Options* (![Options icon](../../../images/icon-options.png)) at the top right corner of the page.
 
 1. Select *Configure*.
 
@@ -72,7 +72,7 @@ This feature is currently behind a release feature flag. Read [Release Feature F
 
 If a content type (e.g., custom object, web content article, or blogs entry) has default and additional display page templates, you can map links to any of the available templates for that content type.
 
-With this feature, you create different display page templates for an object, each corresponding to a step in a mapped form (submission, editing, and approval). Then, you can choose which display page template to use for each stage enabling the creation of multi-step forms.
+With this feature, create different display page templates for an object, each corresponding to a step in a mapped form (e.g., submission, editing, and approval). Then, you can choose which display page template to use for each stage, enabling the creation of multi-step forms.
 
 ![Map links to different display page templates](./creating-and-managing-display-page-templates/images/05.png)
 
@@ -105,15 +105,15 @@ Before you delete a display page template that is in use, you have two ways to u
 
 Follow these steps to view your display page template usage and unassign your content:
 
-1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-product-menu.png) ) and go to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Page Templates*.
 
 1. Click the *Display Page Templates* tab.
 
-1. Click the display page template's *Actions* menu ( ![Actions](../../../images/icon-actions.png) ) and select *View Usages*.
+1. Click the display page template's *Actions* menu (![Actions](../../../images/icon-actions.png)) and select *View Usages*.
 
 1. Select one or more elements from the list of content using the display page template.
 
-1. Click the *Actions* menu ( ![Actions](../../../images/icon-actions.png) ) in the top-right corner and select *Assign to Default* or *Unassign*.
+1. Click the *Actions* menu (![Actions](../../../images/icon-actions.png)) in the top-right corner and select *Assign to Default* or *Unassign*.
 
 1. Click *OK*.
 

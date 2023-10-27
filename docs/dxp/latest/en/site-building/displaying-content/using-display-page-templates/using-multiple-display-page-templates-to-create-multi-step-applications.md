@@ -13,9 +13,9 @@ Generally, a default display page template is set for a specific content type in
 
 ## Creating Multi-Step Applications Using Multiple Display Page Templates
 
-You can use multiple display page templates to your advantage and create applications with multiple steps and link each step to a different display page template.
+You can use multiple display page templates, create applications with multiple steps, and link each step to a different display page template.
 
-Using display page templates, objects, and Form Container fragments you can create a page that allows users to add an object entry and edit it in a different page. To do that, it is necessary to create a [custom object](#tasks-custom-object), a [display page template](#edit-display-page-template) to edit the object entry, and a [content page](#content-page-to-display-the-application) where the user can enter a new object entry and view a list of existing object entries.
+Using display page templates, objects, and Form Container fragments, you can create a page that allows users to add an object entry and edit it in a different page. To do that, it is necessary to create a [custom object](#tasks-custom-object), a [display page template](#edit-display-page-template) to edit the object entry, and a [content page](#content-page-to-display-the-application) where the user can enter a new object entry and view a list of existing object entries.
 
 ### Tasks Custom Object
 
@@ -29,15 +29,15 @@ Using display page templates, objects, and Form Container fragments you can crea
 
 1. Under Action Builder, select *Standalone* as the Trigger.
 
-   This allows this action to be mapped to a button.
+   This option allows the [action to be mapped to a button](../../../building-applications/objects/creating-and-managing-objects/actions/using-manual-actions.md#mapping-buttons-to-object-actions-in-content-pages).
 
 1. Select *Update an Object Entry* as the Action.
 
-   This updates the object entry using a selected value whenever the trigger is activated.
+   This option updates the object entry using a selected value whenever the trigger is activated.
 
 1. Click *Add* in Values and choose the Description field. Under New Value, enter *description* (the name of our field).
 
-   This replaces the object entry's Description field value with the new value.
+   This option replaces the object entry's Description field value with the new value.
 
    ![Create the Edit action to update the object description value](./using-multiple-display-page-templates-to-create-multi-step-applications/images/01.png)
 
@@ -79,7 +79,7 @@ Your object is now published and it can be used to generate a form using a Form 
 
 1. Add a *Heading* fragment to the left grid module in your collection display and click on it twice. Under the Mapping tab, choose Description as the field.
 
-   This maps the text added to the Description field as the Heading content.
+   This action maps the text added to the Description field as the Heading content.
 
 1. Add a *Button* fragment to the right grid module in your collection display and click on the text twice to edit it. Change the text to *Edit*.
 
@@ -109,19 +109,17 @@ Although you can view the page, add an object entry, and see the list of tasks u
 
 1. Click on the *Submit* button twice. Under Field, select the *Edit* action.
 
-   Once users click on the submit button, not only are they redirected to the List of Tasks page, but they also activate the Edit action that replaces the previous value with the newly added one.
+   Once users click on the submit button, not only are they redirected to the List of Tasks page, but they also activate the Edit action that replaces the previous Description value with the newly added one.
 
 ```{tip}
-Not only are Form Container fragments enabled in display page templates, but you can also edit the Form Container fragment and leave a subset of input fragments. Then, when the object entry is updated, only the available fields are updated.
+Not only are Form Container fragments enabled in display page templates, but you can also edit the Form Container fragment and use only a subset of input fragments. Then, when the object entry is updated, only the available fields are updated.
 
-You can edit the fragments as you see fit and save the Form Container fragment as a composition to be used in both content pages and display pages.
+Edit the fragments as you see fit and save the Form Container fragment as a composition to be used in both content pages and display pages.
 ```
 
 ![Creating the Edit display page template](./using-multiple-display-page-templates-to-create-multi-step-applications/images/05.gif)
 
 ### SEO Considerations About the Display Page Templates
-
-<!-- I was not sure if I was supposed to add this information here... but here it is anyways. -->
 
 If the display page is marked as default:
 
@@ -140,6 +138,8 @@ These changes are made automatically if the display page is not marked as defaul
    - When another page has a link to the display page template, add the attribute `rel="nofollow"` to the `<a>` tag on the template.
 
    - If a display page marked as default exists for the same object, a `<link>` element is added with the attribute `rel="canonical"` to the `<head>` section, pointing to the default display page template as the canonical page.
+
+![SEO configuration page for the display page template.](./using-multiple-display-page-templates-to-create-multi-step-applications/images/06.png)
 
 ### Resulting Application
 
@@ -161,7 +161,7 @@ If you click on the Edit button, you are redirected to the Edit display page whe
 You can create a display page template as an initial step and configure the Form Container's Success Interaction to Go to Entry Display Page pointing to the next display page template creating a chained multi-step form.
 ```
 
-![This is how the application should work](./using-multiple-display-page-templates-to-create-multi-step-applications/images/06.gif)
+![Testing your resulting application.](./using-multiple-display-page-templates-to-create-multi-step-applications/images/07.gif)
 
 ## Related Topics
 

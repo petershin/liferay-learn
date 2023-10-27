@@ -57,22 +57,22 @@ Liferay's horizontal portal legacy solves many business use cases across multipl
 Liferay's industry leading Digital Experience Platform (DXP) includes many out-of-the-box capabilities. The latest release Liferay DXP 7.4 includes core DXP, Digital Commerce, and Analytics features. Its high-level key capabilities are
 
 * [Design Systems & Experience Management](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
-* [Content & Asset Management ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [Content & Asset Management](https://learn.liferay.com/w/dxp/content-authoring-and-management)
 * [Low-Code / No-Code Application Building](https://learn.liferay.com/w/dxp/building-applications/objects)
 * [Data Modeling & Process Automation](https://learn.liferay.com/w/dxp/process-automation)
 * [Commerce](https://learn.liferay.com/w/commerce/index)
-* [Analytics ](https://learn.liferay.com/web/guest/w/analytics-cloud/index) & [Optimization](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard
+* [Analytics](https://learn.liferay.com/web/guest/w/analytics-cloud/index) & [Optimization](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard)
 * [Segmentation & Personalization](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [Search](https://learn.liferay.com/w/dxp/using-search) & [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation
+* [Search](https://learn.liferay.com/w/dxp/using-search) & [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 * [Headless APIs & Multichannel](https://learn.liferay.com/w/dxp/headless-delivery)
 * [Collaboration & Knowledge Sharing](https://learn.liferay.com/w/dxp/collaboration-and-social)
 * [Identity Management & Access Control](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
 * Integration & Interoperability
 * [Developer Tooling](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 * Platform Services
-* [Cloud & Infrastructure ](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
+* [Cloud & Infrastructure](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 
-All the horizontal solutions mentioned earlier leverage these features. These OOTB capabilities make Liferay a strong player in the DXP space. 
+All the horizontal solutions mentioned earlier leverage these features. These OOTB capabilities make Liferay a strong player in the DXP space.
 
 For more information, please see the [Liferay DXP Product Capabilities](../level-0/liferay-product-overview.md) module.
 

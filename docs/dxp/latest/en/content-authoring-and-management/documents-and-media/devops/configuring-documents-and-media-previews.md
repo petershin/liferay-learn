@@ -3,15 +3,15 @@ uuid: e1c9c81a-e2a8-492a-b61e-f3eb7b4c6d52
 ---
 # Configuring Documents and Media Previews
 
-By default, Liferay uses [PDFBox](https://pdfbox.apache.org) to generate previews for files added to the Document Library. This is because PDFBox is the only 100% Java-based tool that can be distributed with DXP.
+By default, Liferay uses [PDFBox](https://pdfbox.apache.org) to generate previews for files added to the document library. This is because PDFBox is the only 100% Java-based tool that can be distributed with DXP.
 
-However, since PDFBox only supports a limited number of file types, Liferay also provides integration with external services to support additional file types. These services can be used to more quickly generate high quality file previews for more of your files.
+However, since PDFBox only supports a limited number of file types, Liferay also provides integration with third-party services to support additional file types. These services can be used to more quickly generate high quality file previews for more of your files.
 
 ```{important}
-To be used for generating previews, the service must first be installed on the server running the Liferay DXP instance. 
+To use third-party services to generate previews, you must first install them on the server running your Liferay instance. 
 ```
 
-Liferay DXP currently supports integration with the following programs.
+Liferay currently supports integration with these services:
 
 * [OpenOffice](http://www.openoffice.org) or [LibreOffice](http://www.libreoffice.org): These programs can be used in server mode to generate thumbnails and previews for supported file types (`.pdf`, `.docx`, `.odt`, `.ppt`, `.odp`, etc.). You can also use them to convert documents and view them in your browser. See [Enabling OpenOffice/LibreOffice Integration](./enabling-openoffice-libreoffice-integration.md) to learn more.
 
@@ -23,29 +23,33 @@ Liferay DXP currently supports integration with the following programs.
    Liferay 7.3.x and earlier versions use [Xuggler](http://www.xuggle.com/xuggler) for generating audio and video previews. See [Enabling Xuggler](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-xuggler) for more information.
    ```
 
-With these tools installed and configured, Documents and Media can provide in application previews of most file types.
+With these services installed and configured, Documents and Media can provide in application previews of most file types.
 
-## Configuring Supported MIME Types for ImageMagick
+## Configuring Supported Media Types for ImageMagick
 
-When using ImageMagick, adaptive media . By Default, ImageMagick supports `avif`, `gif`, `heic`, `tiff`, and `webp`.
+If you've installed ImageMagick, Adaptive Media can use it to generate alternative resolutions for images stored in the document library. By default, ImageMagick supports `avif`, `gif`, `heic`, `tiff`, and `webp` files, but you can add additional media types if needed. See [Adaptive Media Configuration Reference](../publishing-and-sharing/using-adaptive-media/adaptive-media-configuration-reference.md#imagemagick) for more information.
 
-To add additional MIME types,
+## Manually Generating Previews and Thumbnails
 
-## Regenerating Document Previews
+Once you've enabled third-party services, Liferay automatically uses them to generate previews and thumbnails for supported media types. However, if you've uploaded assets before enabling these services, you must generate the thumbnails and previews manually.
 
-For images, you can use Adaptive Media.
+To generate them for image files, you can use Adaptive Media. See [Managing Image Resolutions](../publishing-and-sharing/using-adaptive-media/managing-image-resolutions.md) for more information.
 
-For audio, video, PDF, and OpenOffice files, you can also regenerate document previews at any time via the Control Panel:
+For audio, video, PDF, and OpenOffice files, you can regenerate previews and thumbnails via the Server Administration application. To do this,
 
-Control Panel > System > Server Administration > Resources Tab > Regeneration Options
+1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *System Administration*.
 
-Click Execute.
+1. Go to the *Resources* tab.
 
-Generates previews that have not been created previously.
+1. Under Regeneration Options, click *Execute* for the desired media type.
 
-This process does not delete existing previews and thumbnails. If you want to completely regenerate these files, you must first reset them. (Execute corresponding cleanup action)
+   ![Under Regeneration Options, execute the desired media type.](./configuring-documents-and-media-previews/images/01.png)
 
-Image previews are not affected by any of these processes. These are managed from Control Panel > Configuration > Adaptive Media (Adapt All Images or Adapt Remaining)
+This begins generating any missing images for the documents. Running this process does not affect existing previews and thumbnails. If you want to completely regenerate them, first execute this clean-up action: *Reset preview and thumbnail files for documents and media*.
+
+![Execute Reset preview and thumbnail files for documents and media.](./configuring-documents-and-media-previews/images/02.png)
+
+This process does not affect Adaptive Media previews and thumbnails for image files. To manage them, use [Adaptive Media](../publishing-and-sharing/using-adaptive-media.md).
 
 ## Related Topics
 

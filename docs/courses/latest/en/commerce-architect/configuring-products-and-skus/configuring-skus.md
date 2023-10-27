@@ -11,70 +11,91 @@ After creating the catalog, a base price list and a base promotion list are crea
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
-1. Select *Sap Infused Maple Syrup*.
+1. Select *Maliyah*.
 
 1. Click the *SKUs* tab.
 
-1. Select the SKU corresponding to the 100ml option.
+1. Select the *CLA-EYE-FR-0001A* SKU.
 
-1. Under the Pricing section, enter the *Base Price* as `$12.99`.
+1. Under the Pricing section, enter the *Base Price* as `$30.99`.
 
    ![Enter a base price for the SKU.](./configuring-skus/images/01.png)
 
-Leave the Promotion Price and Cost fields blank. You can also navigate to the *Price Lists* tab, click *Actions* (![Actions icon](../../images/icon-actions.png)), and select *Edit* to enter a price in the base price list. 
+   Leave the Promotion Price and Cost fields blank. You can also navigate to the *Price Lists* tab, click *Actions* (![Actions icon](../../images/icon-actions.png)), and select *Edit* to enter a price in the base price list. 
+
+1. Enter the pricing information for the remaining SKUs as follows:
+
+   | SKU              | Price  |
+   | :--------------- | :----- |
+   | CLA-EYE-FR-0001B | $35.99 |
+   | CLA-EYE-FR-0001C | $49.99 |
+   | CLA-EYE-FR-0001D | $55.99 |
+   | CLA-EYE-FR-0001E | $59.99 |
+   | CLA-EYE-FR-0001F | $64.99 |
+
+1. Next, repeat the same steps to set prices for all SKUs of the other 2 products. 
+
+   | SKU              | Price  |
+   | :--------------- | :----- |
+   | CLA-EYE-FR-0002A | $35.99 |
+   | CLA-EYE-FR-0002B | $39.99 |
+   | CLA-EYE-FR-0002C | $45.99 |
+   | CLA-EYE-FR-0002D | $49.99 |
+   | CLA-EYE-FR-0002E | $54.99 |
+   | CLA-EYE-FR-0002F | $59.99 |
+   | CLA-EYE-FR-0003A | $40.99 |
+   | CLA-EYE-FR-0003B | $45.99 |
+   | CLA-EYE-FR-0003C | $49.99 |
+   | CLA-EYE-FR-0003D | $55.99 |
+   | CLA-EYE-FR-0003E | $59.99 |
+   | CLA-EYE-FR-0003F | $64.99 |
 
 ## Configuring SKU Dimensions and Weight
 
-Remember adding the dimensions and weight for the products on the configuration page? These dimensions are applied automatically to all SKUs in the product as well. In our example, there are three SKUs for one product, each of varying quantity. The dimensions and weight of each of these differ. To change it for each SKU, 
+Remember adding the dimensions and weight for the products on the configuration page? These dimensions are applied automatically to all SKUs in the product as well. In our example, there are six SKUs for one product. The weight of each of these differ since they have different lenses and coatings. To change it for each SKU, 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
-1. Select *Sap Infused Maple Syrup*.
+1. Select *Maliyah*.
 
 1. Click on the *SKUs* tab.
 
-1. Don't change the dimensions for the 100ml SKU. 
+1. Don't change the dimensions for the CLA-EYE-FR-0001A SKU. 
 
-1. Select the SKU corresponding to the 180ml option.
-
-1. Under the *Shipping Override* section, enter the following values:
-
-   **Width:** 2.0
-
-   **Height:** 7.0
-
-   **Depth:** 1.5
-
-   **Weight:** 0.4
-
-   ![Add the dimensions and weight for the SKU.](./configuring-skus/images/02.png)
-
-1. Click *Publish*.
-
-1. Select the SKU corresponding to the 250ml option.
+1. Select the *CLA-EYE-FR-0001B* SKU.
 
 1. Under the *Shipping Override* section, enter the following values:
 
-   **Width:** 6.0
+   **Weight:** 0.26
 
-   **Height:** 7.8
+   ![Add the weight for the SKU.](./configuring-skus/images/02.png)
 
-   **Depth:** 6.0
+1. Enter the shipping information for the remaining SKUs as follows:
 
-   **Weight:** 0.5
+   | SKU              | Weight |
+   | :--------------- | :----- |
+   | CLA-EYE-FR-0001B | 0.26   |
+   | CLA-EYE-FR-0001C | 0.27   |
+   | CLA-EYE-FR-0001D | 0.28   |
+   | CLA-EYE-FR-0001E | 0.28   |
+   | CLA-EYE-FR-0001F | 0.30   |
 
 1. Click *Publish*.
 
 This completes the configuration for one product. Repeat the steps above for the other two products with the following information. 
 
-   | Product                        | SKU Dimensions and Weight                                 |
-   | :----------------------------- | :-------------------------------------------------------- |
-   | Sap Infused Orange Maple Syrup | DBSY002A - Width: 2, Height: 6, Depth: 1.5, Weight: 0.22  |
-   |                                | DBSY002B - Width: 2, Height: 7, Depth: 1.5, Weight: 0.4   |
-   |                                | DBSY002C - Width: 2, Height: 7.8, Depth: 1.5, Weight: 0.5 |
-   | Sap Infused Honey Maple Syrup  | DBSY003A - Width: 2, Height: 6, Depth: 1.5, Weight: 0.22  |
-   |                                | DBSY003B - Width: 2, Height: 7, Depth: 1.5, Weight: 0.4   |
-   |                                | DBSY003C - Width: 2, Height: 7.8, Depth: 1.5, Weight: 0.5 |
+   | Product   | SKU Weight                      |
+   | :-------- | :------------------------------ |
+   | Fleurette | CLA-EYE-FR-0002B - Weight: 0.26 |
+   |           | CLA-EYE-FR-0002C - Weight: 0.27 |
+   |           | CLA-EYE-FR-0002D - Weight: 0.28 |
+   |           | CLA-EYE-FR-0002E - Weight: 0.28 |
+   |           | CLA-EYE-FR-0002F - Weight: 0.30 |
+   | Lateefah  | CLA-EYE-FR-0003B - Weight: 0.26 |
+   |           | CLA-EYE-FR-0003C - Weight: 0.27 |
+   |           | CLA-EYE-FR-0003D - Weight: 0.28 |
+   |           | CLA-EYE-FR-0003D - Weight: 0.28 |
+   |           | CLA-EYE-FR-0003D - Weight: 0.30 |
 
 ## Configuring SKU Inventory
 
@@ -82,19 +103,19 @@ Just as with pricing, there are two ways to add inventory for a SKU. The first w
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
-1. Select *Sap Infused Maple Syrup*.
+1. Select *Maliyah*.
 
 1. Click on the *SKUs* tab.
 
-1. Select the SKU corresponding to the 100ml option.
+1. Select the *CLA-EYE-FR-0001A* SKU.
 
 1. Click the *Inventory* tab.
 
    Only the warehouse in Minnesota serves consumer orders and business orders whereas the warehouse in Oklahoma solely fulfills business orders. 
 
-1. Enter the quantity as 870 for the Minnesota warehouse. 
+1. Enter the quantity as 100 for the Minnesota warehouse. 
 
-   ![Add inventory for the SKU.](./configuring-skus/images/02.png)
+   ![Add inventory for the SKU.](./configuring-skus/images/03.png)
 
 1. Click *Save*. 
 

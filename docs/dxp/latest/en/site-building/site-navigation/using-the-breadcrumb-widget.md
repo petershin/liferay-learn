@@ -1,5 +1,5 @@
 ---
-uuid :badfa636-ff2c-49b2-9cea-2038e148b86a
+uuid: badfa636-ff2c-49b2-9cea-2038e148b86a
 ---
 
 ## Using the Breadcrumb Widget 

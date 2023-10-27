@@ -7,7 +7,7 @@ So far, you've configured a product and added specifications to give more inform
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Products*.
 
-1. Select *Sap Infused Maple Syrup*.
+1. Select *Maliyah*.
 
 1. Click on the *Media* tab.
 
@@ -15,9 +15,9 @@ So far, you've configured a product and added specifications to give more inform
 
 1. Click on *Select File* and choose the image from the library. 
 
-   ![Choose the sap infused maple syrup image from the library.](./adding-media/images/01.png)
+   ![Choose the image, Maliyah.png, from the library.](./adding-media/images/01.png)
 
-1. Enter title as *Sap Infused Maple Syrup*.
+1. Enter title as *Maliyah*.
 
 1. Click *Publish*.
 

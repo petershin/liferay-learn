@@ -69,6 +69,9 @@ The relevant JavaScript files for the application are contained in the `/src` fo
 * In the `/src/services/tickets.ts` file, the object's headless API calls are authorized with the `Liferay.authToken` object. This object is available when a web component is running on Liferay and simplifies OAuth2 authorization.
 * The `package.json` file includes a `scripts{ build: }` element that handles the initializing and building of the JavaScript application.
 
-See [Understanding Custom Element and Iframe Client Extensions](../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) for more information.
-
 Next: [Implement a Documentation Referral System](./implementing-a-documentation-referral-system.md).
+
+## Relevant Concepts
+
+- [Creating a Basic Custom Element](../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)
+- [Understanding Custom Element and Iframe Client Extensions](../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)

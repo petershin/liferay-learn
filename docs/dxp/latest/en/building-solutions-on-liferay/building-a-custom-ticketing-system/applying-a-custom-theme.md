@@ -56,3 +56,8 @@ The `_custom.scss` file provides any CSS customizations.
 See the [Clay CSS](https://clayui.com/docs/css/index.html) documentation to learn more about the variables and customization. And see [using a theme CSS client extension](../../building-applications/client-extensions/front-end-client-extensions/tutorials/using-a-theme-css-client-extension.md) to see another client extension example.
 
 Next: [Deploying the Custom Ticketing Application](./deploying-a-custom-application.md).
+
+## Relevant Concepts
+
+- [Introduction to Themes](../../site-building/site-appearance/themes/introduction-to-themes.md)
+- [Front-end Client Extensions](../../building-applications/client-extensions/front-end-client-extensions.md)

@@ -11,6 +11,6 @@ uuid: 8a02cea6-7ad8-477c-96c6-acb74887a886
 building-solutions-on-liferay/building-a-custom-ticketing-system.md
 ```
 
-Use Liferay's features and tools to build real-world solutions for your business needs. See samples of custom applications and learn how they are made.
+Use Liferay's various features and tools to build real-world solutions for your business needs. See samples of custom applications and learn how they are made.
 
 - [Building a Custom Ticketing System](./building-solutions-on-liferay/building-a-custom-ticketing-system.md)

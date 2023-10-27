@@ -43,7 +43,6 @@ Follow the steps to enable and deploy the referral system:
 
    ![See that the referral system has included links to relevant documentation.](./implementing-a-documentation-referral-system/images/02.png)
 
-
 ## Examine the Referral System Code
 
 The documentation referral system is a [microservice](../../building-applications/client-extensions/microservice-client-extensions.md) type client extension. Specifically, this sample is a Spring Boot application that is built with `BootJar`. The `assemble` block section of the `client-extension.yaml` identifies this as follows:
@@ -89,6 +88,9 @@ The relevant Spring Boot files for the application are contained in the `/src` f
 
 * The referral search logic also resides in this `ObjectActionTicketRestController.java` file. In the logic, relevant articles from [learn.liferay.com](https://learn.liferay.com) are found and added to the ticket object entry.
 
-See [Developing a Java Web Application](../../building-applications/developing-a-java-web-application.md) for more information.
-
 Next: [Ticket Management with Cron Jobs](./ticket-management-with-cron-jobs.md).
+
+## Relevant Concepts
+
+- [Developing a Java Web Application](../../building-applications/developing-a-java-web-application.md)
+- [Microservice Client Extensions](../../building-applications/client-extensions/microservice-client-extensions.md)

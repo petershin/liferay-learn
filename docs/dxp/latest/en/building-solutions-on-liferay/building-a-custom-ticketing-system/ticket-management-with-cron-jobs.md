@@ -39,6 +39,9 @@ The relevant Spring Boot files for the application are contained in the `/src` f
 
 * The main logic is found in the `TicketCommandLineRunner.java` file. If the ticket's resolution equals `duplicate` or `done`, the ticket is deleted.
 
-See [Developing a Java Web Application](../../building-applications/developing-a-java-web-application.md) for more information.
-
 Congratulations on completing this solutions tutorial on building a custom ticketing system.
+
+## Relevant Concepts
+
+- [Developing a Java Web Application](../../building-applications/developing-a-java-web-application.md)
+- [Microservice Client Extensions](../../building-applications/client-extensions/microservice-client-extensions.md)

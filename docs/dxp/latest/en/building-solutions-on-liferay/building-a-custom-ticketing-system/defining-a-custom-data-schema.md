@@ -103,3 +103,9 @@ In Liferay, navigate to _Control Panel_ &rarr; _Tickets_. See that a new ticket 
 ![A new ticket entry has been created.](./defining-a-custom-data-schema/images/03.png)
 
 Next: [Apply a Custom Theme](./applying-a-custom-theme.md) to the ticketing system.
+
+## Relevant Concepts
+
+- [Creating and Managing Objects](../../building-applications/objects/creating-and-managing-objects.md)
+- [Creating Picklists](../../building-applications/objects/picklists/creating-picklists.md)
+- [Batch Client Extensions](../../building-applications/client-extensions/batch-client-extensions.md)

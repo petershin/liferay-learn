@@ -3,7 +3,7 @@ uuid: edc2986a-e270-4064-ac4a-2b7109745b74
 ---
 # Data Migration Center
 
-{bdg-secondary}Liferay DXP/Portal 7.4+
+{bdg-secondary}Liferay DXP 2023.Q4+/Portal 7.4 GA98+
 {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 ```{important}
@@ -12,25 +12,21 @@ The data migration center is a beta feature that currently only supports the imp
 
 The data migration center makes it easy for you to move your object definitions and object entries between Liferay installations. 
 
-To enable the data migration center, add the following [portal properties](../../installation-and-upgrades/reference/portal-properties.md) to your `portal-ext.properties` file:
+To enable the data migration center, 
 
-```properties
-feature.flag.COMMERCE-8087=true
-```
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
 
-Or enable it in Docker with the following environment property:
+1. Click _Feature Flags_ under _Platform_.
 
-```properties
-LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEC__UPPERCASEO__UPPERCASEM__UPPERCASEM__UPPERCASEE__UPPERCASER__UPPERCASEC__UPPERCASEE__MINUS__NUMBER8__NUMBER0__NUMBER8__NUMBER7_=true
-```
+1. Select _Beta_ in the left navigation. Enable the _Data Migration Center_ toggle on.
 
-Start up Liferay and navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Applications_ &rarr; _Data Migration Center_.
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Applications_ &rarr; _Data Migration Center_.
 
-![The data migration center is found in the data migration center.](./data-migration-center/images/01.png)
+   ![The data migration center is found under applications.](./data-migration-center/images/01.png)
 
-Click the _Import and Export_ tab to see a list of import and export tasks and their status. Click the _options_ (![Options icon](../../images/icon-options.png)) icon to download files from previous tasks.
+1. Click the _Import and Export_ tab to see a list of import and export tasks and their status. Click the _options_ (![Options icon](../../images/icon-options.png)) icon to download files from previous tasks.
 
-Click the _Templates_ tab to see a list of import and export templates.
+1. Click the _Templates_ tab to see a list of import and export templates.
 
 ## Exporting Object Definitions 
 

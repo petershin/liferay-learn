@@ -57,4 +57,4 @@ The object definition begins importing in the background and can take a few minu
 
 * [Creating Objects](./creating-objects.md)
 * [Activating and Deactivating Objects](./activating-and-deactivating-objects.md)
-* [Exporting and Importing Object Definitions](./exporting-and-importing-object-definitions.md)
+* [Data Migration Center](../../../headless-delivery/consuming-apis/data-migration-center.md)

@@ -56,17 +56,17 @@ The ZIP file may contain different types of page templates as well, like `displa
 
    If you import an existing page template, see [Importing an Existing Page Template](#importing-an-existing-page-template) for more information.
 
-   To cancel the operation and to be redirected to the Page Templates page, click *Cancel*.
+   To cancel the operation and go back to the Page Templates page, click *Cancel*.
 
    ![Page templates are imported as ZIP files.](./exporting-and-importing-page-templates/images/03.png)
 
 1. Once the importing process is complete, you are redirected to an [import outcome page](#import-outcome-page).
 
-1. Click *Upload Another File* to import another file or *Done* to be redirected to the Page Templates page.
+1. Click *Upload Another File* to import another file or *Done* to go back to the Page Templates page.
 
 ### Importing an Existing Page Template
 
-If you import a page template and items from the ZIP file already exist, a modal appears and users can select one of three options:
+If you import a page template and items from the ZIP file already exist, you can select one of three options:
 
 **Do Not Import Existing Items**: Only new items are imported.
 

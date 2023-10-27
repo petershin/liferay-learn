@@ -45,27 +45,27 @@ To export multiple sets, click the Fragment Sets *Actions* button (![Actions](..
 
    ![Click the fragment's Actions button to access fragment management options.](./managing-fragments/images/02.png)
 
-1. Select an action:
+1. Select an action below.
 
-    **Edit**: Modify the fragment's code or configuration.
+**Edit**: Modify the fragment's code or configuration.
 
-    **Change Thumbnail**: Change the fragment's thumbnail image.
+**Change Thumbnail**: Change the fragment's thumbnail image.
 
-    **Remove Thumbnail**: Remove the fragment's thumbnail image and use the default fragment type icon.
+**Remove Thumbnail**: Remove the fragment's thumbnail image and use the default fragment type icon.
 
-    **Rename**: Change the fragment's name.
+**Rename**: Change the fragment's name.
 
-    **Mark or Unmark as Cacheable**: Mark or unmark the fragment as cacheable. When a fragment is cached, it improves the performance of its pages.
+**Mark or Unmark as Cacheable**: Mark or unmark the fragment as cacheable. When a fragment is cached, it improves the performance of its pages.
 
-    **View Usages**: View the pages where the fragment is used. You can see the page's name, type, version, and the time since the page's last propagation. You can also select a page and propagate it.
+**View Usages**: View the pages where the fragment is used. You can see the page's name, type, version, and the time since the page's last propagation. You can also select a page and propagate it.
 
-    **Export**: Download the fragment as a `.zip` file.
+**Export**: Download the fragment as a `.zip` file.
 
-    **Make a Copy**: Duplicate the fragment. Duplicated fragments share the same name with *(Copy)* appended to the end.
+**Make a Copy**: Duplicate the fragment. Duplicated fragments share the same name with *(Copy)* appended to the end.
 
-    **Move**: Move the fragment to a different fragment set.
+**Move**: Move the fragment to a different fragment set.
 
-    **Delete**: Remove the fragment.
+**Delete**: Remove the fragment.
 
 ```{important}
 Users cannot edit or copy [saved fragment compositions](./saving-fragment-compositions.md).

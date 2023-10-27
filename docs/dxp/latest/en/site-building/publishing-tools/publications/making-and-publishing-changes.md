@@ -29,7 +29,7 @@ Before making changes to your instance, ensure you're working on the correct pub
 
 When you add, edit, or remove assets in a publication, your changes are only visible in the publication where they're made. When you delete an asset in a publication, DXP marks it for deletion and hides it when viewing the publication. The asset remains viewable to production and other publications, since its removal is only a logical deletion.
 
-While working on a publication, any changes made to supported Liferay components are tracked in the publication. This includes changes across multiple sites.
+While working on a publication, changes made to supported Liferay components are tracked in the publication. This includes changes across multiple sites.
 
 ```{important}
 When editing different sites in the same publication, keep in mind that all tracked changes are applied to production when the publication is published.
@@ -43,13 +43,13 @@ When editing different sites in the same publication, keep in mind that all trac
 
 If you navigate to an application that does not support Publications, Liferay indicates that changes in the application cannot be saved to a publication.
 
-* For some applications, you can directly edit production while in a publication.
+For some applications, you can directly edit production while in a publication.
 
-   ![Directly edit production while in a publication.](./making-and-publishing-changes/images/02.png)
+![Directly edit production while in a publication.](./making-and-publishing-changes/images/02.png)
 
-* For other applications, you must switch to production before you can make changes.
+For other applications, you must switch to production before you can make changes.
 
-   ![Switch to production before making changes in the application.](./making-and-publishing-changes/images/03.png)
+![Switch to production before making changes in the application.](./making-and-publishing-changes/images/03.png)
 
 ## Making Changes in Parallel Publications
 
@@ -73,7 +73,7 @@ Alternatively, you can review any publication's tracked changes via the Publicat
 
 When reviewing changes, all tracked changes appear in a list that you can order by User, Site, Title, Type, Status, Change Type, or Last Modified.
 
-By default, Publications only displays some changes, but you can view all system changes as well. To do this, click the *Actions* button ( ![Action Button](../../../images/icon-actions.png) ) for the publication and select *Show System Changes*. This displays all changes included in the publication.
+By default, Publications only displays some changes, but you can view all system changes as well. Click *Actions* (![Action Button](../../../images/icon-actions.png)) for the publication and select *Show System Changes*. This displays all changes included in the publication.
 
 ![Select Show System Changes to view all changes included in the publication.](./making-and-publishing-changes/images/05.png)
 
@@ -91,7 +91,7 @@ If a publication includes edits to a page, you can preview those changes alongsi
 
 ![View page versions in the Display tab.](./making-and-publishing-changes/images/07.png)
 
-When reviewing changes to a page with alternate [user experiences](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md), you can use the experiences drop-down menu to switch between them.
+When reviewing changes to a page with alternate [user experiences](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md), you can use the Experiences drop-down menu to switch between them.
 
 ![Select the desired user experience to review.](./making-and-publishing-changes/images/08.png)
 
@@ -105,17 +105,13 @@ Once selected, you can view each page version individually or select Split View 
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
 
-While reviewing changes, you can move them to different publications. This provides greater flexibility when managing content.
-
-To move changes,
+While reviewing changes, you can move them to different publications. This provides greater flexibility when managing content:
 
 1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired change and select *Move Changes*.
 
    ![Click the Actions button for the desired change and select Move changes.](./making-and-publishing-changes/images/10.png)
 
 1. Select the desired *publication*.
-
-   <!--TASK: ![]() -->
 
 1. Click *Move*.
 

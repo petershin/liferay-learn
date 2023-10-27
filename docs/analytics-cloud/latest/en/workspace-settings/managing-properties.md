@@ -31,7 +31,7 @@ This results in the complete removal of this property's historical events. You c
 
 ## Deleting a Property
 
-To delete the property click the _Delete_ button. A new form appears to confirm your action. Copy and paste the verification sentence into the text box. This enables the _Delete_ button. Click the button and the property is deleted.
+To delete the property click the _Delete_ button. A new form appears to confirm your action. Copy and paste the verification sentence into the text box. This enables the _Delete_ button. Click the button and the property is deleted. Note, a property cannot be deleted until all sites and commerce channels have been disconnected from your Liferay instance settings. 
 
 ```{warning}
 This results in the complete removal of the property and its historical events. You cannot undo this operation.

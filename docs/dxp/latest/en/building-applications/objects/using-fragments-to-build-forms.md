@@ -16,7 +16,7 @@ To build forms in content pages,
 * Include a visible submit button in the form container.
 
 ```{note}
-When mapping an object to a Form Container fragment, a submit button is generated. It allows you to map its text using [mapping settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings).
+When mapping an object to a Form Container fragment, a submit button is generated. You can map its text using [mapping settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings).
 
 To create a button with [link settings](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) for redirection, add `type="button"` to the button fragment.
 ```

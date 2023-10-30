@@ -8,9 +8,9 @@ This widget provides a way to navigate to related pages or sites through links.
 
 1. From Fragments and Widgets, add the *Breadcrumb* widget to a page. You'll find it in the Content Management category. 
 
-You can configure the widget via its Options button (![Options button](../../../images/icon-options.png)): 
+You can configure the widget via its Options button (![Options button](../../images/icon-options.png)): 
 
-![The configuration window has four different tabs.](using-the-breadcrumb-widget/01.png)
+![The configuration window has four different tabs.](./using-the-breadcrumb-widget/images/01.png)
 
 **Display Template:** Select the desired display alignment for the navigation options.
 

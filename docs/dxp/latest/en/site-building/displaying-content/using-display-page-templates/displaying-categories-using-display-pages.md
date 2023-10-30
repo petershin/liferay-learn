@@ -44,7 +44,7 @@ The following example shows how to modify a default display page template. To av
 
 1. [Create a new vocabulary](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-vocabularies) named Vehicle Ownership.
 
-1. [Create a new category](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-categories) named Car Insurance. And click *Save*.
+1. [Create a new category](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-categories) named Car Insurance. Click *Save*.
 
 1. In the categories application, click *Actions* (![Actions](../../../images/icon-actions.png)) for your new category and select *Edit*.
 
@@ -66,13 +66,13 @@ Starting with Liferay DXP 7.4, the display page template includes an option to u
 
 1. Select the master page template you want to use for this display page template.
 
-    ```{tip}
-    Every page or page template requires a master page template. To learn more, read [Master Page Templates](../../creating-pages/defining-headers-and-footers/master-page-templates.md).
-    ```
+   ```{tip}
+   Every page or page template requires a master page template. To learn more, read [Master Page Templates](../../creating-pages/defining-headers-and-footers/master-page-templates.md).
+   ```
 
 1. Enter the *Name* of your display page template and in the Content Type drop-down menu, select *Category*.
 
-    ![Select category as the content type of your new display page template.](./displaying-categories-using-display-pages/images/03.png)
+   ![Select category as the content type of your new display page template.](./displaying-categories-using-display-pages/images/03.png)
 
 1. Click *Save*.
 
@@ -90,7 +90,7 @@ This example shows how to map the category fields using a [card fragment](../../
 
 1. On top of the container fragment, drag and drop a new card fragment.
 
-1. Click on the *Browser* (![Browser](../../../images/icon-hierarchy.png)) button and then click the card's title to open the mapping options.
+1. Click the *Browser* (![Browser](../../../images/icon-hierarchy.png)) button and then click the card's title to open the mapping options.
 
 1. In the Mapping tab, click the *Source* drop-down menu and select *Specific Content*
 
@@ -102,9 +102,9 @@ This example shows how to map the category fields using a [card fragment](../../
 
 1. Repeat the same mapping process for the card description. This list summarizes the card fragment to category field mappings in the example:
 
-    - Title &rarr; Name
-    - Content &rarr; Description
-    - Image &rarr; Main Image
+   - Title &rarr; Name
+   - Content &rarr; Description
+   - Image &rarr; Main Image
 
 1. Click *Publish*.
 
@@ -122,7 +122,7 @@ The display page uses your display page template mappings to show the category f
 
 ![The display page template shows the category fields and provides a unique URL.](./displaying-categories-using-display-pages/images/07.png)
 
-## Related Information
+## Related Topics
 
 [Creating and Managing Display Page Templates](./creating-and-managing-display-page-templates.md)
 

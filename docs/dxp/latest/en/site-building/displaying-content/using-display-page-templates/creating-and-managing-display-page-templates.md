@@ -31,8 +31,6 @@ See [Using Display Page Templates](../using-display-page-templates.md) to learn 
 
 1. Design the template using the same interface and page elements as [content pages](../../creating-pages/using-content-pages/content-page-editor-ui-reference.md).
 
-   <!-- I reverted the rest of the alterations here as I made other alterations to this file in LRDOCS-12296 and LRDOCS-10860. So, I am just going to pass this admonition and merge it with the rest of the alterations that are going to appear later. Eric M. -->
-
    ```{important}
    Display page templates inherit the design and theme of public pages. This remains true even if there is no public page created for that particular site.
    ```

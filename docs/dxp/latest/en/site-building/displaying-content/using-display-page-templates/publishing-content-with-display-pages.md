@@ -9,8 +9,6 @@ You can use display page templates to create reusable dynamic designs for displa
 Even though you can create multiple display page templates for the same content type, you can select only one default template. To use an alternative template as the default, you must assign the template to content items individually.
 ```
 
-<!-- I am not sure how it will be like once we are able to use multi display page templates with the same content type (LRDOCS-12296 and LRDOCS-10860). We may need to adjust the information in the admonition(?) Eric M. -->
-
 ## Setting a Default Display Page Template
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and click *Design* &rarr; *Page Templates*.
@@ -44,8 +42,6 @@ Even though you can create multiple display page templates for the same content 
 1. Click *Preview*, to preview what the display page looks like.
 
 1. (Optional) In the Properties tab, expand the *Friendly URL* panel and modify the friendly URL. This determines the URL for displaying your content item using the display page template.
-
-   <!-- The alterations with LRDOCS-12296 also bring the possibility to use friendly URLs with display page templates. We may need to add it here. Eric M. -->
 
    ```{note}
    For Liferay 7.4 U34+/GA34+, the Display Page Template framework takes into account an asset's friendly URL history. This means all URLs saved in the file's URL history redirect automatically to the file's current URL. The friendly URL history is supported for both [documents](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md) and [blogs](../../../content-authoring-and-management/blogs/displaying-blogs.md).

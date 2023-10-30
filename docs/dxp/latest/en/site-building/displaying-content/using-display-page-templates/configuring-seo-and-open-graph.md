@@ -3,9 +3,9 @@ uuid: 7a0e16df-8768-499c-aa23-f033f973ee70
 ---
 # Configuring SEO and Open Graph
 
-> Available DXP/Portal 7.3+
+{bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
-Display page templates are custom layouts used to display individual content items at a dedicated URL. These layouts are built using both fragments and widgets and can be created for web content articles, documents, blog entries, and more. Each template has its own SEO and Open Graph settings that can be filled manually and dynamically.
+Display page templates are custom layouts that display individual content items at a dedicated URL. These layouts use both fragments and widgets and can be created for web content articles, documents, blog entries, and more. Each template has its own SEO and Open Graph settings that can be filled manually or dynamically.
 
 Follow these steps to configure SEO and Open Graph settings for a display page template:
 
@@ -25,7 +25,7 @@ Follow these steps to configure SEO and Open Graph settings for a display page t
    Unsaved changes are lost when navigating between the SEO and Open Graph tabs.
    ```
 
-When configuring SEO and Open Graph settings, you can enter values directly and use field mapping to add values dynamically. Available mapping options depend on the template's content type and subtype. To map a field, simply click on the *field selector* button (![Mapping button](../../../images/icon-map.png)) and select from available fields. As of Liferay DXP 7.4 U1 and Portal 7.4 GA5, fields added this way are represented as `${}` placeholders with two parts: a field reference ID and field label (`${fieldReferenceID:Field Label}`).
+When configuring SEO and Open Graph settings, you can enter values directly and use field mapping to add values dynamically. Available mapping options depend on the template's content type and subtype. To map a field, click on the *field selector* button (![Mapping button](../../../images/icon-map.png)) and select from available fields. As of Liferay DXP 7.4 U1 and Portal 7.4 GA5, fields added this way are represented as `${}` placeholders with two parts: a field reference ID and field label (`${fieldReferenceID:Field Label}`).
 
 For earlier versions, mapping placeholders only include the field reference ID (e.g., `${title}`, `${authorName}`, `${Text84981642}`).
 
@@ -79,7 +79,7 @@ Determine whether to include a display page in your `sitemap.xml` file, as well 
 
 ## Open Graph Settings Reference
 
-> Available: Liferay DXP/Portal 7.3+.
+{bdg-secondary}`Available: Liferay DXP/Portal 7.3+`
 
 [Open Graph](https://ogp.me/) is an internet protocol that standardizes previews of site content when shared in application contexts that support it, such as Facebook, Slack, and Twitter. It does this by embedding structured data in page headers as `<meta>` tags, similar to [RDFa](https://en.wikipedia.org/wiki/RDFa).
 

@@ -42,7 +42,7 @@ These are the remaining settings for the Display Settings section:
 | :--- | :--- |
 | Abstract Length | Select the number of characters to display for abstracts. The default is `200`. Note this option is only available for the Abstracts display template. |
 | Asset Link Behavior | The default value is View On New Page, which displays the asset in the application that it belongs to. For example, a blog entry is displayed in Blogs where it was created. The Show Full Content value displays the full asset in the current Asset Publisher. |
-| Number of Items to Display | The maximum number of assets that can be displayed. If pagination is enabled, this number represents the maximum number of assets that can be displayed per page. If no value is given, the default value is `200`.|
+| Number of Items to Display | The maximum number of assets that can be displayed. If pagination is enabled, this number represents the maximum number of assets that can be displayed per page. If no value is given, the default value is `20`.It is recomended to set the number of assets below `200`, so the performance can be dynamic.|
 | Pagination Type | The type of UI to display for pagination. Three options are available: *None* displays no pagination controls; *Simple* adds Previous and Next buttons for browsing through pages of assets; *Regular* adds more options and information including First and Last buttons, a drop-down selector for pages, the number of items per page, and the total number of results (assets displayed) |
 
 ![Several display settings are available for the Asset Publisher.](./configuring-asset-publisher-display-settings/images/01.png)

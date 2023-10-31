@@ -19,7 +19,7 @@ rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfig
 
 Re-indexing search indexes is required for major version upgrades. When moving to a new update, applying a service pack, or upgrading to a new GA (rolling release) within the same Liferay version, consult the release highlights for the version to determine if a re-index is required. Here's how to re-index search indexes:
 
-1. Click on the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) and select the *Control Panel* tab. The Control Panel appears.
+1. Click *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Control Panel*. 
 
 1. Click on *Search* in the Configuration section, select the *Index Actions* tab, and click *Reindex* for All Search Indexes. The re-index executes and displays a success message.
 
@@ -49,21 +49,23 @@ Features and behaviors change with new Liferay versions. Review how the followin
 
 Prior to 7.1, all users could view web content articles by default. Now view permissions are checked by default. Here are the main options for opening view permissions:
 
-**Option 1 (7.4+):** If few Web Content articles exist, then edit view permissions for each Web Content article per role.
+**Option 1 (7.4+):** If only a few web content articles exist, edit view permissions for each web content article per role.
 
 **Option 2 (Prior to 7.4):** Open view permissions for all web content articles by navigating to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Web Content* &rarr; *Virtual Instance Scope* &rarr; *Web Content* and de-selecting *Article view permissions check enabled*.
+
+<!-- This makes no sense to me. You only explain what to do on 7.4+ if there are only a few articles. If you're on 7.4+ and you have lots of web content articles, what do you do? Is there a bulk way to deal with them? -Rich -->
 
 ![Disable the permissions check for viewing web content by scrolling down in the Web Content menu in the System Settings.](./post-upgrade-considerations/images/02.png)
 
 ### Check Web Content Images
 
-Upgrading to 7.2 moves web content images to the [File Storage](../../../system-administration/file-storage.md) (also known as the Document Library) and then deletes their former table, `JournalArticleImage`. If an image can't be migrated, Liferay reports the failure:
+Upgrading to 7.2 moves web content images to the [File Store](../../../system-administration/file-storage.md) (also known as the Document Library) and then deletes their former table, `JournalArticleImage`. If an image can't be migrated, Liferay reports the failure:
 
 ```
 Unable to add the journal article image {filename} into the file repository
 ```
 
-If there aren't any messages, your images should now be in your File Storage. Preview your web content articles to verify the images.
+If there aren't any messages, your images should now be in your file store. Preview your web content articles to verify the images.
 
 ## Account for Deprecations and Features in Maintenance Mode
 

@@ -3,7 +3,7 @@ uuid: 81a1b13c-c5c4-4f62-a50c-8462ea8b38e3
 ---
 # Defining a Custom Data Schema
 
-The ticketing application requires custom data fields and selections. You use Liferay [objects](../../building-applications/objects.md) and [picklists](../../building-applications/objects/picklists.md) to define a custom data schema.
+The ticketing application requires custom data fields and selections. You use Liferay [objects](../../../building-applications/objects.md) and [picklists](../../../building-applications/objects/picklists.md) to define a custom data schema.
 
 ## Creating Custom Picklists
 
@@ -31,9 +31,9 @@ assemble:
       into: batch
 ```
 
-See [Assembling Client Extensions](../../building-applications/client-extensions/working-with-client-extensions.md#assembling-client-extensions) to learn more.
+See [Assembling Client Extensions](../../../building-applications/client-extensions/working-with-client-extensions.md#assembling-client-extensions) to learn more.
 
-This `list-type-batch` client extension is a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. It is defined as follows:
+This `list-type-batch` client extension is a [batch type](../../../building-applications/client-extensions/batch-client-extensions.md) client extension. It is defined as follows:
 
 ```yaml
 liferay-ticket-batch-list-type-definition:
@@ -42,9 +42,9 @@ liferay-ticket-batch-list-type-definition:
     type: batch
 ```
 
-See [Batch YAML Configuration Reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
+See [Batch YAML Configuration Reference](../../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
 
-The client extension makes use of the [batch engine headless API](../../headless-delivery/consuming-apis/batch-engine-api-basics-importing-data.md) and the [picklists headless API](../../building-applications/objects/picklists/picklists-api-basics.md). To make secure API requests, the client extension is configured to use OAuth2 authorization. It is defined as follows:
+The client extension makes use of the [batch engine headless API](../../../headless-delivery/consuming-apis/batch-engine-api-basics-importing-data.md) and the [picklists headless API](../../../building-applications/objects/picklists/picklists-api-basics.md). To make secure API requests, the client extension is configured to use OAuth2 authorization. It is defined as follows:
 
 ```yaml
 liferay-ticket-batch-list-type-definition-oauth-application-headless-server:
@@ -81,8 +81,8 @@ In Liferay, navigate to _Control Panel_ &rarr; _Objects_. See that a new ticket 
 
 ### Examining the Custom Object Code
 
-This `liferay-ticket-batch-object-definition` client extension is also a [batch type](../../building-applications/client-extensions/batch-client-extensions.md) client extension. The client extension's YAML file is defined in the same way as the 
-`liferay-ticket-batch-list-type-definition` client extension. See [batch YAML Configuration Reference](../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
+This `liferay-ticket-batch-object-definition` client extension is also a [batch type](../../../building-applications/client-extensions/batch-client-extensions.md) client extension. The client extension's YAML file is defined in the same way as the 
+`liferay-ticket-batch-list-type-definition` client extension. See [batch YAML Configuration Reference](../../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) for an explanation of each property.
 
 See [client-extension.yaml](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-ticket-workspace/client-extensions/liferay-ticket-batch-object-definition/client-extension.yaml) for the full definition.
 
@@ -106,6 +106,6 @@ Next: [Apply a Custom Theme](./applying-a-custom-theme.md) to the ticketing syst
 
 ## Relevant Concepts
 
-- [Creating and Managing Objects](../../building-applications/objects/creating-and-managing-objects.md)
-- [Creating Picklists](../../building-applications/objects/picklists/creating-picklists.md)
-- [Batch Client Extensions](../../building-applications/client-extensions/batch-client-extensions.md)
+* [Creating and Managing Objects](../../../building-applications/objects/creating-and-managing-objects.md)
+* [Creating Picklists](../../../building-applications/objects/picklists/creating-picklists.md)
+* [Batch Client Extensions](../../../building-applications/client-extensions/batch-client-extensions.md)

@@ -1,6 +1,7 @@
 ---
 toc:
   - ./building-applications/objects.md
+  - ./building-applications/tutorials.md
   - ./building-applications/client-extensions.md
   - ./building-applications/developing-a-javascript-application.md
   - ./headless-delivery/apis-with-rest-builder.md
@@ -18,6 +19,7 @@ uuid: c7a717b4-ea54-4ca6-a16a-51f3e0f47d24
 :maxdepth: 4
 
 building-applications/objects.md
+building-applications/tutorials.md
 building-applications/client-extensions.md
 building-applications/developing-a-javascript-application.md
 headless-delivery/apis-with-rest-builder.md

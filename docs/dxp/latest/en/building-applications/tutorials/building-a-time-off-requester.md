@@ -5,7 +5,7 @@ uuid: 859fbb23-6865-49ab-93a3-8ef9b6362ec5
 
 {bdg-secondary}`Liferay 7.4+`
 
-With Liferay Objects, you can build entire applications without writing code or deploying modules. Here, you'll create a Time Off Request application using Liferay [Objects](../../objects.md) and [Picklists](../picklists/creating-picklists.md).
+With Liferay Objects, you can build entire applications without writing code or deploying modules. Here, you'll create a Time Off Request application using Liferay [Objects](../objects.md) and [Picklists](../objects/picklists/creating-picklists.md).
 
 First, you'll [add a Picklist](#adding-a-department-picklist) for defining department values. Then, you'll create two Objects, one for [Time Off Requests](#adding-a-time-off-request-object) and another for [Employees](#adding-an-employee-object). During this process, you'll relate these Objects to one another and add a webhook to the Time Off Request Object. Finally, you'll [design custom layouts](#designing-custom-object-layouts) to display the relationship fields.
 
@@ -22,11 +22,11 @@ Because of limitations with extending system Objects, you must create an Employe
 
 Your Picklist represents company departments:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Picklists*.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)), enter *Department* for name, and click *Save*.
+1. Click the *Add* button (![Add Button](../../images/icon-add.png)), enter *Department* for name, and click *Save*.
 
-1. Select the new *Picklist* and use the *Add* button (![Add Button](../../../images/icon-add.png)) to add items to it (e.g., Marketing, Human Resources, Sales).
+1. Select the new *Picklist* and use the *Add* button (![Add Button](../../images/icon-add.png)) to add items to it (e.g., Marketing, Human Resources, Sales).
 
    ![Add items to the Department Picklist.](./building-a-time-off-requester/images/02.png)
 
@@ -34,9 +34,9 @@ You can now use the Picklist as a field in the Time Off Request Object.
 
 ## Adding a Time Off Request Object
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Click the *Add* button ( ![Add Button](../../../images/icon-actions.png) ) and enter these values.
+1. Click the *Add* button ( ![Add Button](../../images/icon-actions.png) ) and enter these values.
 
    | Field | Value |
    | :--- | :--- |
@@ -64,7 +64,7 @@ You can now use the Picklist as a field in the Time Off Request Object.
    | Then | Webhook |
    | URL | Enter a test webhook URL from either your app or a site like, https://webhook.site. |
 
-   This action sends data to an external system whenever Time Off Request entries are added. See [Defining Actions](../creating-and-managing-objects/actions/defining-object-actions.md) for more information.
+   This action sends data to an external system whenever Time Off Request entries are added. See [Defining Actions](../objects/creating-and-managing-objects/actions/defining-object-actions.md) for more information.
 
    ![Create a webhook action that's triggered after requests are added.](./building-a-time-off-requester/images/04.png)
 
@@ -82,9 +82,9 @@ Next, you'll create an Employee Object and relate it to the Time Off Request Obj
 
 ## Adding an Employee Object
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Click the *Add* button ( ![Add Button](../../../images/icon-actions.png) ) and enter these values.
+1. Click the *Add* button ( ![Add Button](../../images/icon-actions.png) ) and enter these values.
 
    | Field | Value |
    | :--- | :--- |
@@ -136,7 +136,7 @@ Object layouts determine how fields are organized when creating and editing Obje
 
 1. Navigate to the *Objects* application and select the *Time Off Request* Object.
 
-1. Click the *Layouts* tab, click the *Add* button ( ![Add Button](../../../images/icon-actions.png) ), enter *Request* for name, and click *Save*.
+1. Click the *Layouts* tab, click the *Add* button ( ![Add Button](../../images/icon-actions.png) ), enter *Request* for name, and click *Save*.
 
 1. Select the new Layout and check the *Mark as Default* box.
 
@@ -169,7 +169,7 @@ Once saved, the new layout is used in the Liferay UI for creating and editing Ti
 
 1. Navigate to the *Objects* application and select the *Employee* Object.
 
-1. Click the *Layouts* tab, click the *Add* button ( ![Add Button](../../../images/icon-actions.png) ), enter *Employee Info* for name, and click *Save*.
+1. Click the *Layouts* tab, click the *Add* button ( ![Add Button](../../images/icon-actions.png) ), enter *Employee Info* for name, and click *Save*.
 
 1. Select the new Layout and check the *Mark as Default* box.
 
@@ -233,20 +233,20 @@ This adds three entries to the Employee Object.
 
 Follow these steps to add request entries via the Liferay UI:
 
-1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and select *Time Off Requests*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), click the *Applications* tab, and select *Time Off Requests*.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-actions.png)) and fill out the form
+1. Click the *Add* button (![Add Button](../../images/icon-actions.png)) and fill out the form
 
 1. Click *Save*.
 
 After saving an entry, you see the entry's edit screen. To add more entries, return to the Time Off Requests main page. When time requests are added, the Object's webhook is triggered and posts the entry's data to the set URL.
 
-Once requests are added and related to employee entries, you can view them in the Employees application. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Employees*. Select the related *entry* and click the *Time Off Requests* tab.
+Once requests are added and related to employee entries, you can view them in the Employees application. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Employees*. Select the related *entry* and click the *Time Off Requests* tab.
 
 ![View an employee's related requests in the Time Off Requests tab.](./building-a-time-off-requester/images/12.png)
 
 ## Related Topics
 
-* [Objects Overview](../../objects.md)
-* [Creating Objects](../creating-and-managing-objects/creating-objects.md)
-* [Creating Picklists](../picklists/creating-picklists.md)
+* [Objects Overview](../objects.md)
+* [Creating Objects](../objects/creating-and-managing-objects/creating-objects.md)
+* [Creating Picklists](../objects/picklists/creating-picklists.md)

@@ -4,6 +4,7 @@ toc:
   - ./building-a-custom-ticketing-system/applying-a-custom-theme.md
   - ./building-a-custom-ticketing-system/deploying-a-custom-application.md
   - ./building-a-custom-ticketing-system/implementing-a-documentation-referral-system.md
+  - ./building-a-custom-ticketing-system/ticket-management-with-cron-jobs.md
 uuid: e0218ddf-a7b1-4cc2-8f5d-ccc930d0704c
 ---
 # Building a Custom Ticketing System
@@ -15,6 +16,7 @@ building-a-custom-ticketing-system/defining-a-custom-data-schema.md
 building-a-custom-ticketing-system/applying-a-custom-theme.md
 building-a-custom-ticketing-system/deploying-a-custom-application.md
 building-a-custom-ticketing-system/implementing-a-documentation-referral-system.md
+building-a-custom-ticketing-system/ticket-management-with-cron-jobs.md
 ```
 
 Liferay makes it easy for you to build digital solutions. For example, you can create a custom ticketing application with the styling and features needed for your business.
@@ -28,7 +30,7 @@ Here, you'll learn how custom ticketing system works. You'll learn how to
 * Deploy a custom application
 * Implement a documentation referral system
 
-Each of these components are deployable through the use of [client extensions](../building-applications/client-extensions.md). The configuration of each client extension is defined by its [`client-extension.yaml`](../building-applications/client-extensions/working-with-client-extensions.md#configuring-client-extensions) file. 
+Each of these components are deployable through the use of [client extensions](../../building-applications/client-extensions.md). The configuration of each client extension is defined by its [`client-extension.yaml`](../../building-applications/client-extensions/working-with-client-extensions.md#configuring-client-extensions) file.
 
 ## Prerequisites
 
@@ -66,6 +68,6 @@ Before starting, download the appropriate files and set up your system.
    ./gradlew build
    ```
 
-In the first step, you'll define a custom data schema. 
+In the first step, you'll define a custom data schema.
 
 [Let's Go!](./building-a-custom-ticketing-system/defining-a-custom-data-schema.md)

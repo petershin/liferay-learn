@@ -3,7 +3,7 @@ uuid: 44bf360f-45e5-4320-a131-0d70d4ec2b59
 ---
 # Deploying a Custom Application
 
-You can use a [custom element client extension](../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) to render a JavaScript application as a widget on a Liferay site page. The application is served by Liferay and interacts with Liferay through [headless APIs](../../headless-delivery/using-liferay-as-a-headless-platform.md). 
+You can use a [custom element client extension](../../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) to render a JavaScript application as a widget on a Liferay site page. The application is served by Liferay and interacts with Liferay through [headless APIs](../../../headless-delivery/using-liferay-as-a-headless-platform.md).
 
 Deploy the `liferay-ticket-custom-element` client extension.
 
@@ -13,9 +13,9 @@ Deploy the `liferay-ticket-custom-element` client extension.
    ./gradlew :client-extensions:liferay-ticket-custom-element:deploy
    ```
 
-1. In Liferay, select the _Product Menu_ (![Product Menu](../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
+1. In Liferay, select the _Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) and navigate to _Site Builder_ &rarr; _Pages_.
 
-1. Click _Add_ (![Add icon](../../images/icon-add.png)) and select _Page_. 
+1. Click _Add_ (![Add icon](../../../images/icon-add.png)) and select _Page_. 
 
 1. Select the _Blank_ type page. Give the page a name (e.g. `ticketing system`). Click _Add_.
 
@@ -43,7 +43,7 @@ assemble:
 
 Note, the `.js` and `.css` build files of the JavaScript application are copied from the `build/assets` folder and placed into the deployable client extension `.zip` file.
 
-This `liferay-ticket-custom-element` is a [custom element](../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) type client extension. It is defined as follows in the `client-extension.yaml` file:
+This `liferay-ticket-custom-element` is a [custom element](../../../building-applications/client-extensions/front-end-client-extensions.md#custom-element-client-extensions) type client extension. It is defined as follows in the `client-extension.yaml` file:
 
 ```yaml
 liferay-ticket-custom-element:
@@ -60,7 +60,7 @@ liferay-ticket-custom-element:
    useESM: true
 ```
 
-See [Custom Element YAML Configuration Reference](../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md) for an explanation of each property.
+See [Custom Element YAML Configuration Reference](../../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md) for an explanation of each property.
 
 The relevant JavaScript files for the application are contained in the `/src` folder. A full explanation of the JavaScript code is beyond the scope of this tutorial, but there are a few things to note:
 
@@ -73,5 +73,5 @@ Next: [Implement a Documentation Referral System](./implementing-a-documentation
 
 ## Relevant Concepts
 
-- [Creating a Basic Custom Element](../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)
-- [Understanding Custom Element and Iframe Client Extensions](../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)
+* [Creating a Basic Custom Element](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)
+* [Understanding Custom Element and Iframe Client Extensions](../../../building-applications/client-extensions/front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)

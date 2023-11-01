@@ -15,7 +15,7 @@ Olivia, the content manager, doesn't have permission to create new page template
 
 1. Click the *Display Page Templates* tab.
 
-1. Click *Add* ( ![Add icon](../../images/icon-add.png) ).
+1. Click *Add* (![Add icon](../../images/icon-add.png)).
 
 1. Choose the master page template you created previously, *Clarity MP*.
 
@@ -59,7 +59,7 @@ Olivia, the content manager, doesn't have permission to create new page template
 
 1. Click *Publish* at the top of the page.
 
-1. Back on the Display Page Templates page, click the Actions menu ( ![Actions icon](../../images/icon-actions.png) ) for your new Single-Event Display template and click *Mark as Default*.
+1. Back on the Display Page Templates page, click the Actions menu (![Actions icon](../../images/icon-actions.png)) for your new Single-Event Display template and click *Mark as Default*.
 
    Now any Event articles automatically use this template by default on their display pages.
 
@@ -69,7 +69,7 @@ Next, create a template to display a list of FAQs.
 
 ## Add the FAQs Display Page Template
 
-1. While on the Display Page Templates page, click *Add* ( ![Add icon](../../images/icon-add.png) ).
+1. While on the Display Page Templates page, click *Add* (![Add icon](../../images/icon-add.png)).
 
 1. Select the *Clarity MP* master page template again.
 
@@ -117,7 +117,7 @@ Next, create a template to display a list of FAQs.
 
 1. Click *Publish* at the top of the screen.
 
-1. Back on the Display Page Templates page, click the Actions menu ( ![Actions icon](../../images/icon-actions.png) ) for your new Single-Event Display template and click *Mark as Default*.
+1. Back on the Display Page Templates page, click the Actions menu (![Actions icon](../../images/icon-actions.png)) for your new Single-Event Display template and click *Mark as Default*.
 
    This makes the new FAQs Page template the default for any FAQs articles. Notice that the Single-Event Display template is still the default for Event articles.
 

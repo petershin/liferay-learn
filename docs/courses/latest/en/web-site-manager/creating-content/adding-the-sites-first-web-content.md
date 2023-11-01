@@ -13,7 +13,7 @@ First, add an event article to announce the Clarity site going live soon.
 
 1. Navigate to the Site Menu &rarr; *Content & Data* &rarr; *Web Content*.
 
-1. Click *Add* ( ![Add icon](../../images/icon-add.png) ) &rarr; *Event*.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) &rarr; *Event*.
 
    ![Click Event to add an article with the structure you added previously.](./adding-the-sites-first-web-content/images/01.png)
 
@@ -43,13 +43,13 @@ You're brought back to the Web Content page, and now you have an Event article. 
 
 ## Create a FAQs Article
 
-1. While on the Web Content page, click *Add* ( ![Add icon](../../images/icon-add.png) ) &rarr; *FAQs*.
+1. While on the Web Content page, click *Add* (![Add icon](../../images/icon-add.png)) &rarr; *FAQs*.
 
    ![Click FAQs to add an article with the structure you added previously.](./adding-the-sites-first-web-content/images/03.png)
 
 1. At the top of the page, title the Article "Clarity Site FAQs".
 
-1. Click *Add* ( ![Add icon](../../images/icon-add.png) ) at the top-right of the Question Group to create two more sets of questions and answers (for 3 total).
+1. Click *Add* (![Add icon](../../images/icon-add.png)) at the top-right of the Question Group to create two more sets of questions and answers (for 3 total).
 
 1. In the first *Question* field, enter this question:
 

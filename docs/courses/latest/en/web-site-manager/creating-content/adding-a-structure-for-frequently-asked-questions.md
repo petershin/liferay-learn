@@ -15,19 +15,19 @@ Here, you'll create a structure with a *repeatable field* to allow creating arti
 
 1. Click the *Structures* tab.
 
-1. Click Add ( ![Add icon](../../images/icon-add.png) ) to add a new structure.
+1. Click Add (![Add icon](../../images/icon-add.png)) to add a new structure.
 
    ![Add a new structure alongside the Event structure.](./adding-a-structure-for-frequently-asked-questions/images/01.png)
 
 1. Click into the title field at the top of the page, and name the structure "FAQs".
 
-1. Click the *Properties* button ( ![Properties icon](../../images/icon-cog3.png) ) to access the structure's properties, and enter this description: "Generic structure for a set of common questions and answers."
+1. Click the *Properties* button (![Properties icon](../../images/icon-cog3.png)) to access the structure's properties, and enter this description: "Generic structure for a set of common questions and answers."
 
 Now you're ready to configure the structure with the necessary fields.
 
 ## Configure the FAQs Structure's Fields
 
-1. Click the *Builder* button ( ![Builder icon](../../images/icon-builder.png) ) to reopen the Builder menu.
+1. Click the *Builder* button (![Builder icon](../../images/icon-builder.png)) to reopen the Builder menu.
 
 1. From the Builder menu, drag a *Text* field into the body of the structure.
 
@@ -77,7 +77,7 @@ Now the structure is ready to use, and you can add FAQs or Event web content art
 
 These types of content can't be displayed properly without templates for them though. You'll add a [template for your Event structure](./adding-a-template-to-display-an-event.md) next.
 
-## Relevant Concepts 
+## Relevant Concepts
 
 * [Assigning Permissions to Web Content Structures and Templates](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-structures/assigning-permissions-to-structures-and-templates)
 * [Configuring Structure Fields](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields)

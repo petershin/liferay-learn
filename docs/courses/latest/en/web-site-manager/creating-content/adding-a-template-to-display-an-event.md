@@ -15,11 +15,11 @@ Here, you'll use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/d
 
 1. Click the *Structures* tab to get to the structures you created previously.
 
-1. Select *Manage Templates* in the Event structure's Actions menu ( ![Actions icon](../../images/icon-actions.png) ).
+1. Select *Manage Templates* in the Event structure's Actions menu (![Actions icon](../../images/icon-actions.png)).
 
    ![Click Manage Templates to specifically add templates for this web content structure.](./adding-a-template-to-display-an-event/images/01.png)
 
-1. Click Add ( ![Add icon](../../images/icon-add.png) ) to create a new template.
+1. Click Add (![Add icon](../../images/icon-add.png)) to create a new template.
 
    The new template is automatically associated with the Event structure because you chose to manage templates for it.
 
@@ -29,9 +29,9 @@ Here, you'll use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/d
 
 ## Configure the Template's Fields
 
-Now you'll arrange the order and format to display each of the field contents that an Event article can have. 
+Now you'll arrange the order and format to display each of the field contents that an Event article can have.
 
-1. Click the *Elements* button ( ![Elements icon](../../images/icon-list-ul.png) ) to reopen the Elements menu.
+1. Click the *Elements* button (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
 
 1. Click into the body of the template, and delete the placeholder text.
 

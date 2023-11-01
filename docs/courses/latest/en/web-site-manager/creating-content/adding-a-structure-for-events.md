@@ -17,19 +17,19 @@ First, Clarity needs a structure for content that describes a specific event or 
 
 1. Click the *Structures* tab.
 
-1. Click Add ( ![Add icon](../../images/icon-add.png) ) to add a new structure.
+1. Click Add (![Add icon](../../images/icon-add.png)) to add a new structure.
 
 1. Click into the title field at the top of the page, and name the structure "Event".
 
    ![Name the new structure "Event".](./adding-a-structure-for-events/images/02.png)
 
-1. Click the *Properties* button ( ![Properties icon](../../images/icon-cog3.png) ) to access the structure's properties, and enter this description: "Generic structure for internal and external announcements."
+1. Click the *Properties* button (![Properties icon](../../images/icon-cog3.png)) to access the structure's properties, and enter this description: "Generic structure for internal and external announcements."
 
 Now you are ready to configure the structure with the necessary fields.
 
 ## Configure the Event Structure's Fields
 
-1. Click the *Builder* button ( ![Builder icon](../../images/icon-builder.png) ) to reopen the Builder menu.
+1. Click the *Builder* button (![Builder icon](../../images/icon-builder.png)) to reopen the Builder menu.
 
 1. From the Builder menu, drag a *Text* field into the body of the structure.
 

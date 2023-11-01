@@ -15,11 +15,11 @@ Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/
 
 1. Click the *Structures* tab to get to the structures you created previously.
 
-1. Select *Manage Templates* in the FAQs structure's Actions menu ( ![Actions icon](../../images/icon-actions.png) ).
+1. Select *Manage Templates* in the FAQs structure's Actions menu (![Actions icon](../../images/icon-actions.png)).
 
    ![Click Manage Templates to specifically add templates for this web content structure.](./adding-a-template-to-display-faqs/images/01.png)
 
-1. Click Add ( ![Add icon](../../images/icon-add.png) ) to create a new template.
+1. Click Add (![Add icon](../../images/icon-add.png)) to create a new template.
 
    The new template is automatically associated with the FAQs structure because you chose to manage templates for it.
 
@@ -31,7 +31,7 @@ Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/
 
 Next, you'll format the way a FAQs article is listed.
 
-1. Click the *Elements* button ( ![Elements icon](../../images/icon-list-ul.png) ) to reopen the Elements menu.
+1. Click the *Elements* button (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
 
 1. Click into the body of the template, and delete the placeholder text.
 
@@ -86,7 +86,7 @@ Next, you'll import a second template for the FAQs structure.
 
 While you're still on the Templates page, make sure the top of the page reads "Templates for Structure: FAQs"
 
-1. Still on the Templates page, click Add ( ![Add icon](../../images/icon-add.png) ) to create another new template.
+1. Still on the Templates page, click Add (![Add icon](../../images/icon-add.png)) to create another new template.
 
    ```{note}
    The top of the Templates page reads "Templates for Structure: FAQs" to remind you that adding a new template still associates it with the FAQs template. If you access the Templates tab normally (without clicking "Manage Templates" for the structure), you'll need to manually set the structure when you're creating it.
@@ -102,7 +102,7 @@ While you're still on the Templates page, make sure the top of the page reads "T
    unzip liferay-c8m2.zip
    ```
 
-1. At the top of the page, click Actions ( ![Actions icon](../../images/icon-actions.png) ) &rarr; *Import Script*.
+1. At the top of the page, click Actions (![Actions icon](../../images/icon-actions.png)) &rarr; *Import Script*.
 
    ![Click Import Script to import the FreeMarker template you downloaded.](./adding-a-template-to-display-faqs/images/04.png)
 

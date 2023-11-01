@@ -81,6 +81,8 @@ Index:
 
 **Found in:** individuals
 
+
+
 ### Audience Report - Views
 
 **Description:** Calculates the anonymous and known individuals who interact with the page or asset.

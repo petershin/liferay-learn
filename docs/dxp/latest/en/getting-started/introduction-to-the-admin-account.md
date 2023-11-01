@@ -21,6 +21,8 @@ The Admin User account is created by default in any new installation of Liferay 
 
     * Email address: `test@liferay.com`
     * Password: `test`
+  
+    Note, if you used the setup wizard and set a different admin user email, input that email address instead. The default password will still be `test`.
 
 1. Upon first sign in, you will be required to change your password. Input a new password (e.g. _learn_) and click _Save.
 
@@ -64,7 +66,7 @@ To create a new admin account follow these steps:
 
 1. See [configuring mail](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) to set up Liferay with your email service. Liferay sends an email to the new user's email address upon account creation. 
 
-    To skip this step, disable the feature to require strangers to verify their email address. Navigate to _Control Panel_ &rarr; _Instance Settings_ &rarr; _User Authentication_. Uncheck the box for _Require strangers to verify their email address?_.
+    To skip this step, disable the feature to require strangers to verify their email address. Navigate to _Control Panel_ &rarr; _Instance Settings_ &rarr; _User Authentication_. Uncheck the box for _Require strangers to verify their email address?_. Note, this is not recommended to be disabled for a production environment.
 
     ![Uncheck require strangers to verify their email address.](./introduction-to-the-admin-account/images/07.png)
 

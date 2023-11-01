@@ -15,6 +15,7 @@ toc:
     ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
   - ./creating-and-managing-objects/auditing-object-definition-events.md
   - ./creating-and-managing-objects/deleting-objects.md
+  - ./creating-and-managing-objects/managing-objects-with-headless-apis.md
 uuid: d42bd20c-4087-4203-9aee-d254c5bc2346
 ---
 # Creating and Managing Objects
@@ -36,6 +37,7 @@ creating-and-managing-objects/activating-and-deactivating-objects.md
 creating-and-managing-objects/exporting-and-importing-object-definitions.md
 creating-and-managing-objects/auditing-object-definition-events.md
 creating-and-managing-objects/deleting-objects.md
+creating-and-managing-objects/managing-objects-with-headless-apis.md
 ```
 
 {bdg-secondary}`Liferay 7.4+`
@@ -103,5 +105,9 @@ System objects are default Liferay applications integrated with the objects fram
 
 :::{grid-item-card} Deleting Objects
 :link: ./creating-and-managing-objects/deleting-objects.md
+:::
+
+:::{grid-item-card} Managing Objects with Headless APIs
+:link: ./creating-and-managing-objects/managing-objects-with-headless-apis.md
 :::
 ::::

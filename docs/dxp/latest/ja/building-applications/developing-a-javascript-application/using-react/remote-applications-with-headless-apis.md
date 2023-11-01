@@ -138,4 +138,4 @@
 
 ## 関連トピック
 
-[基本的なカスタム要素の作成](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) [ヘッドレスフレームワークの統合](../../objects/understanding-object-integrations/headless-framework-integration.md)
+[基本的なカスタム要素の作成](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) [ヘッドレスフレームワークの統合](../../objects/understanding-object-integrations/using-custom-object-apis.md)

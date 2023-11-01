@@ -135,7 +135,7 @@
 
 1. 계속 진행하기 전에 항목 생성, 업데이트 및 제거를 연습하세요.
 
-게시하는 동안 배포자 애플리케이션용으로 생성된 REST API를 사용하여 항목을 생성, 편집, 쿼리 및 제거할 수도 있습니다. 이러한 API는 `c/distributorapplications` 경로에서 사용할 수 있습니다. 사용 가능한 API의 전체 목록은 [헤드리스 프레임워크 통합](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/headless-framework-integration) 을, 소개 튜토리얼은 [사용자 지정 객체 API 기본 사항](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics) 을 참조하세요.
+게시하는 동안 배포자 애플리케이션용으로 생성된 REST API를 사용하여 항목을 생성, 편집, 쿼리 및 제거할 수도 있습니다. 이러한 API는 `c/distributorapplications` 경로에서 사용할 수 있습니다. 사용 가능한 API의 전체 목록은 [헤드리스 프레임워크 통합](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis) 을, 소개 튜토리얼은 [사용자 지정 객체 API 기본 사항](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics) 을 참조하세요.
 
 ![Liferay는 배포자 애플리케이션용 REST API를 생성합니다.](./determining-data-entities/images/10.png)
 

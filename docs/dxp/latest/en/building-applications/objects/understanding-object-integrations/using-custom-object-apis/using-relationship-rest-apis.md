@@ -77,7 +77,7 @@ Once published, you can access their REST APIs, including the following relation
 | Charlie | PUT         | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putCharlieAbleToCharlieAble`     |
 
 ```{tip}
-For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
+For a complete list of APIs generated for site and company objects, see [Objects Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). Click *REST Applications* and select an API.
 ```
 
 ## Preparing the Sample Code
@@ -380,6 +380,6 @@ Use the REST APIs to add object entries and manage their relationships:
 
 ## Related Topics
 
-* [Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md)
+* [Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md)
 * [Using Nested Fields with REST APIs](./using-nestedfields-to-query-related-entries.md)
 * [Defining Object Relationships](../../creating-and-managing-objects/relationships/defining-object-relationships.md)

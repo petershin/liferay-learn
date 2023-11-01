@@ -154,4 +154,4 @@ Liferay automatically generates permissions for managing which roles can trigger
 
 * [Defining Object Actions](./defining-object-actions.md)
 * [Understanding Action Types](./understanding-action-types.md)
-* [Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md)
+* [Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md)

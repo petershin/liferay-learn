@@ -36,4 +36,4 @@
 ## 関連コンセプト
 
 * [関連](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/relationships)
-* [リレーションシップREST API](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/headless-framework-integration#relationship-rest-apis)
+* [リレーションシップREST API](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis#relationship-rest-apis)

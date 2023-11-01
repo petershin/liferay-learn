@@ -3,7 +3,7 @@ uuid: 47e8890e-1dde-4c95-bb3a-56eb09f18b1a
 ---
 # Using Object Data with React Charts
 
-Here you'll use [Objects](../objects.md), [Headless APIs](../objects/understanding-object-integrations/headless-framework-integration.md), and [custom element remote applications](../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) to create a dynamic chart for data dashboards. First, you'll set up a new DXP instance with [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) enabled for Object API calls. Then, you'll create an Object for receiving and storing data. After adding data to the Object using REST APIs, you'll download and build the provided React [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) application. Once the code is compiled, you'll host the generated `.js` file in the Liferay Document Library and copy its WebDAV URL. Finally, you'll use this URL to create a remote app for the React chart and deploy it as a Page widget.
+Here you'll use [Objects](../objects.md), [Headless APIs](../objects/understanding-object-integrations/using-custom-object-apis.md), and [custom element remote applications](../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md) to create a dynamic chart for data dashboards. First, you'll set up a new DXP instance with [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) enabled for Object API calls. Then, you'll create an Object for receiving and storing data. After adding data to the Object using REST APIs, you'll download and build the provided React [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) application. Once the code is compiled, you'll host the generated `.js` file in the Liferay Document Library and copy its WebDAV URL. Finally, you'll use this URL to create a remote app for the React chart and deploy it as a Page widget.
 
 The chart is configured to call the Object via Headless API every five seconds, which returns the Object's data and updates the chart dynamically.
 
@@ -193,5 +193,5 @@ Once Saved, Liferay creates a widget for the remote app that you can deploy to S
 ## Related Topics
 
 * [Objects Overview](../objects.md)
-* [Headless Framework Integration](../objects/understanding-object-integrations/headless-framework-integration.md)
+* [Headless Framework Integration](../objects/understanding-object-integrations/using-custom-object-apis.md)
 * [Setting Up CORS](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors.md)

@@ -53,4 +53,4 @@ Liferayは、どのロールがスタンドアロンアクションをトリガ�
 
 * [オブジェクトアクションの定義](./defining-object-actions.md)
 * [アクションの種類について](./understanding-action-types.md)
-* [ヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)
+* [ヘッドレスフレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md)

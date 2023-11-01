@@ -6,7 +6,7 @@
 
 これらのヘッドレス・サービスのパスは、 `c/[pluralobjectlabel]` の命名パターンに従う（例えば、 `/o/c/timeoffrequests`）。 `[server]:[port]/o/api` (例: `localhost:8080/o/api`) にある Liferay API Explorer から利用可能なオブジェクト API を表示し、テストすることができます。 **REST Applications** をクリックすると、APIのドロップダウンリストが表示されます。
 
-![各オブジェクトはREST Applicationsの下に表示される。](./headless-framework-integration/images/01.png)
+![各オブジェクトはREST Applicationsの下に表示される。](./using-custom-object-apis/images/01.png)
 
 オブジェクトがアクティブな間は、これらのAPIを使用して、基本的なCRUD操作の実行、 [集約項](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) と [ネストされたフィールド](../objects-tutorials/using-apis/using-nestedfields-to-query-related-entries.md)を使用した複雑なクエリの実行、スタンドアロン・アクションのトリガー、エントリーのリレーションシップの管理などを行うことができます。 オブジェクトAPIのチュートリアルについては、 [APIの使用](../objects-tutorials/using-apis.md) を参照してください。
 
@@ -94,7 +94,7 @@ HTTP エンドポイントでは、 `relationshipName` をリレーションシ�
 
 With the GraphQL APIs, you can both query and mutate object data. All APIs for custom objects are listed under `c` in Liferay's GraphQL schema. You can use Liferay's integrated Graph*i*QL IDE to search object schemas, draft queries, run requests, and more. To access it, go to Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) and click *GraphQL*.
 
-![Use Liferay's GraphiQL explorer to search object schemas and run your requests.](./headless-framework-integration/images/02.png)
+![Use Liferay's GraphiQL explorer to search object schemas and run your requests.](./using-custom-object-apis/images/02.png)
 
 See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) for more information.
 -->

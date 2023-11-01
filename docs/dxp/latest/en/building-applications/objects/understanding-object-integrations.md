@@ -1,7 +1,7 @@
 ---
 toc:
   - ./understanding-object-integrations/permissions-framework-integration.md
-  - ./understanding-object-integrations/headless-framework-integration.md
+  - ./understanding-object-integrations/using-custom-object-apis.md
   - ./understanding-object-integrations/assets-framework-integration.md
 uuid: d5bab8bf-972f-49d9-98f1-f77e13ca3428
 ---
@@ -11,7 +11,7 @@ uuid: d5bab8bf-972f-49d9-98f1-f77e13ca3428
 :maxdepth: 3
 
 understanding-object-integrations/permissions-framework-integration.md
-understanding-object-integrations/headless-framework-integration.md
+understanding-object-integrations/using-custom-object-apis.md
 understanding-object-integrations/assets-framework-integration.md
 ```
 
@@ -22,7 +22,7 @@ Published custom objects are integrated with Liferay's core frameworks, so you c
 | Asset                      | Use the [Attachment field](./creating-and-managing-objects/fields/attachment-fields.md) to upload files to your instance's document library.                                                                                                                                                                                                                                                                                                                                  |
 | Audit                      | Enable and audit entry history for custom object definitions using the [Audit application](./creating-and-managing-objects/auditing-object-definition-events.md) or REST APIs.                                                                                                                                                                                                                                                                                                |
 | Categorization             | Add categorization tools to custom object layouts so users can add [tags and categories](./creating-and-managing-objects/layouts/designing-object-layouts.md#adding-categorization) to entries.                                                                                                                                                                                                                                                                               |
-| Headless                   | Liferay generates a [headless endpoint](./understanding-object-integrations/headless-framework-integration.md) for each published object, so you can make REST calls. <!-- TASK: Add GraphQL when supported.-->                                                                                                                                                                                                                                                               |
+| Headless                   | Liferay generates a [headless endpoint](./understanding-object-integrations/using-custom-object-apis.md) for each published object, so you can make REST calls. <!-- TASK: Add GraphQL when supported.-->                                                                                                                                                                                                                                                               |
 | Info Framework             | Use object data with [Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md), [Fragments](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), [Navigation Menus](../../site-building/site-navigation/using-the-navigation-menus-application.md). Liferay also creates a [Collection Provider](../../content-authoring-and-management/collections-and-collection-pages.md) for displaying its entries. |
 | Localization               | Localize fields for object definitions to better serve your global users.                                                                                                                                                                                                                                                                                                                                                                                                     |
 | Permissions                | Manage application and resource permissions to control access to object definitions and their data.                                                                                                                                                                                                                                                                                                                                                                           |

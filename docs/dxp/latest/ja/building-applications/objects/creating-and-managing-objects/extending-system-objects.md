@@ -39,7 +39,7 @@ Liferayの[カスタムフィールド](../../system-administration/configuring-
 
 ### リレーションシップAPI
 
-システムオブジェクトが多対多の関係にある場合、または1対多の関係の親側にある場合、Liferayは関係の問い合わせと管理のために [RESTエンドポイント](../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) を生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれます。
+システムオブジェクトが多対多の関係にある場合、または1対多の関係の親側にある場合、Liferayは関係の問い合わせと管理のために [RESTエンドポイント](../understanding-object-integrations/using-custom-object-apis.md#relationship-rest-apis) を生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれます。
 
 この例では、Userシステムオブジェクトは、カスタムオブジェクト（`timeOffRequest`）と1対多の関係（`userRequests`）になっています。 これらのエンドポイントは、 [`headless-admin-user`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-user/v1.0/openapi.json) サービスに表示されます。
 

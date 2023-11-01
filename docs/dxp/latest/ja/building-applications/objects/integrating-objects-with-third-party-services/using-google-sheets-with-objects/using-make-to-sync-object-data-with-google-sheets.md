@@ -118,7 +118,7 @@
 
 1. 新しいモジュールを選択し、 **追加** をクリックして、基本認証情報を追加します。
 
-1. 追加されたら、オブジェクトのHeadless APIのURLを入力し、次のフォーマット：`https://<your-domain>/o/c/<objectname>/`を使用します。  詳細は、 [ヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md) を参照してください。
+1. 追加されたら、オブジェクトのHeadless APIのURLを入力し、次のフォーマット：`https://<your-domain>/o/c/<objectname>/`を使用します。  詳細は、 [ヘッドレスフレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md) を参照してください。
 
 1. **post** 方式タイプを選択します。
 

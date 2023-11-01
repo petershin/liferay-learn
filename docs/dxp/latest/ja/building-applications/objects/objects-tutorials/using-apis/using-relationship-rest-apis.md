@@ -74,7 +74,7 @@
 | Charlie | PUT         | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putCharlieAbleToCharlieAble`     |
 
 ```{tip}
-サイトと会社のオブジェクトのために生成されたAPIの完全なリストは、[Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。カスタムオブジェクト API は Liferay API Explorer の `[server]:[port]/o/api` で表示、テストできます（例：`localhost:8080/o/api`）。REST Applications* をクリックし、API を選択します。
+サイトと会社のオブジェクトのために生成されたAPIの完全なリストは、[Objects Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md)を参照してください。カスタムオブジェクト API は Liferay API Explorer の `[server]:[port]/o/api` で表示、テストできます（例：`localhost:8080/o/api`）。REST Applications* をクリックし、API を選択します。
 ```
 
 ## サンプルコードを準備する
@@ -377,6 +377,6 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
 
 ## 関連トピック
 
-* [ヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)
+* [ヘッドレスフレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md)
 * [REST APIでネストしたフィールドの使用](./using-nestedfields-to-query-related-entries.md)
 * [オブジェクトリレーションの定義](../../creating-and-managing-objects/relationships/defining-object-relationships.md)

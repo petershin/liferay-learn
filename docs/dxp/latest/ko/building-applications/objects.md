@@ -23,7 +23,7 @@ Liferay Objects를 사용하면 코드를 작성하거나 모듈을 배포할 �
 
 게시하기 전에 각 개체의 데이터 범위를 회사 또는 사이트로 지정하고 Liferay UI에서 표시되는 사이트를 결정할 수 있습니다.
 
-모든 오브젝트는 생성 시점부터 Liferay의 [핵심 프레임워크(](./core-frameworks.md) )와 완전히 통합되어 플랫폼 전반에 걸쳐 통합된 경험을 제공하고 Liferay의 모든 기능을 활용할 수 있습니다. 여기에는 모든 오브젝트에 대해 [헤드리스 REST API](./objects/understanding-object-integrations/headless-framework-integration.md) 를 자동으로 생성하여 정의된 엔드포인트를 통해 오브젝트와 상호 작용할 수 있는 기능이 포함됩니다. 이러한 API는 [Job Scheduler](./core-frameworks/job-scheduler-framework/using-job-scheduler.md) 통합과 함께 사용하여 외부 시스템과 객체 데이터를 동적으로 동기화하도록 Talend 작업을 구성할 수도 있습니다.
+모든 오브젝트는 생성 시점부터 Liferay의 [핵심 프레임워크(](./core-frameworks.md) )와 완전히 통합되어 플랫폼 전반에 걸쳐 통합된 경험을 제공하고 Liferay의 모든 기능을 활용할 수 있습니다. 여기에는 모든 오브젝트에 대해 [헤드리스 REST API](./objects/understanding-object-integrations/using-custom-object-apis.md) 를 자동으로 생성하여 정의된 엔드포인트를 통해 오브젝트와 상호 작용할 수 있는 기능이 포함됩니다. 이러한 API는 [Job Scheduler](./core-frameworks/job-scheduler-framework/using-job-scheduler.md) 통합과 함께 사용하여 외부 시스템과 객체 데이터를 동적으로 동기화하도록 Talend 작업을 구성할 수도 있습니다.
 
 모든 개체는 [워크플로](./objects/enabling-workflows-for-objects.md)와 통합되어 있으므로 정의된 검토 및 승인 프로세스를 통해 개체 항목 생성을 안내할 수 있습니다. 객체는 [양식](objects/using-forms-with-objects.md)과도 통합되어 있으므로 객체 필드에 매핑되는 양식을 디자인하고 객체 항목 생성을 위한 사용자 입력을 받을 수 있습니다.
 

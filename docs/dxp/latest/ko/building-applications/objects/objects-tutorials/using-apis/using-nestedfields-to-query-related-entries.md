@@ -5,7 +5,7 @@
 `nestedFields` 매개변수로 인해 Liferay는 단일 GET 요청에서 여러 수준의 관련 개체 항목을 반환합니다. 쿼리에 포함할 관계 이름과 함께 `nestedFields` 매개 변수를 전달하고 각 관계를 쉼표로 구분합니다: `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. 관계가 여러 수준에 걸쳐 있는 경우 `nestedFieldsDepth` 매개 변수를 필요한 깊이로 설정합니다. 최대 5개 수준을 포함할 수 있습니다(예: `nestedFieldsDepth=5`).
 
 ```{tip}
-`nestedFields` 매개변수는 여러 요청이 필요한 관련 항목이 있는 항목을 검색하여 요청을 최적화합니다. 관련 항목만 반환하기 위해 Liferay는 전용 [관계 API](../../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) 를 제공합니다. 소개는 [관계 REST API 사용](./using-relationship-rest-apis.md)을 참조하세요.
+`nestedFields` 매개변수는 여러 요청이 필요한 관련 항목이 있는 항목을 검색하여 요청을 최적화합니다. 관련 항목만 반환하기 위해 Liferay는 전용 [관계 API](../../understanding-object-integrations/using-custom-object-apis.md#relationship-rest-apis) 를 제공합니다. 소개는 [관계 REST API 사용](./using-relationship-rest-apis.md)을 참조하세요.
 ```
 
 계속하려면 [설정](#setting-up-a-liferay-instance) 새 Liferay 7.4 인스턴스 및 [준비](#preparing-the-sample-code) 제공된 튜토리얼 코드. 그런 다음 [스크립트를 실행하여](#creating-and-querying-related-object-entries) 관련 항목을 만들고 `nestedFields` 매개변수를 사용하여 쿼리합니다.
@@ -92,7 +92,7 @@ unzip liferay-w4s7.zip
 ZIP은 REST API를 사용하여 개체 항목을 생성, 관련 및 쿼리하기 위한 cURL 명령을 실행하는 셸 스크립트를 제공합니다. 여기에는 관련 항목을 쿼리하기 위한 두 개의 GET 명령이 포함됩니다.
 
 ```{tip}
-사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택합니다.
+사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [Objects Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택합니다.
 ```
 
 ## 관련 개체 항목 생성 및 쿼리

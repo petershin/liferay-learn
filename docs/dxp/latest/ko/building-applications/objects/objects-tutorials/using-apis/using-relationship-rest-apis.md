@@ -74,7 +74,7 @@
 | Charlie | PUT         | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putCharlieAbleToCharlieAble`     |
 
 ```{tip}
-사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [Objects Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 객체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택합니다.
+사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [Objects Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 객체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택합니다.
 ```
 
 ## 샘플 코드 준비
@@ -377,6 +377,6 @@ REST API를 사용하여 개체 항목을 추가하고 해당 관계를 관리�
 
 ## 관련 항목
 
-* [헤드리스 프레임워크 통합](../../understanding-object-integrations/headless-framework-integration.md)
+* [헤드리스 프레임워크 통합](../../understanding-object-integrations/using-custom-object-apis.md)
 * [REST API에서 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md)
 * [개체 관계 정의](../../creating-and-managing-objects/relationships/defining-object-relationships.md)

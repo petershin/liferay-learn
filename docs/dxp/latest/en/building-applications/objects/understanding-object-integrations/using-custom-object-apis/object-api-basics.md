@@ -8,7 +8,7 @@ When you publish an Object, Liferay automatically generates REST APIs for it. Th
 Here you'll use cURL commands to perform basic CRUD operations for a custom Object. Before proceeding, [set up](#setting-up-a-liferay-instance) a new Liferay DXP/Portal 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code.
 
 ```{tip}
-For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They are listed under *REST Applications*.
+For a complete list of APIs generated for both Site and Company Objects, see [Object's Headless Framework Integration](../using-custom-object-apis.md). You can view and test custom Object APIs via the Liferay API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`). They are listed under *REST Applications*.
 ```
 
 ## Setting Up a Liferay Instance

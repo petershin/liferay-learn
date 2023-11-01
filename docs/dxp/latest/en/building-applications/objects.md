@@ -1,7 +1,6 @@
 ---
 toc:
   - ./objects/creating-and-managing-objects.md
-  - ./objects/objects-tutorials.md
   - ./objects/using-forms-with-objects.md
   - ./objects/using-fragments-to-build-forms.md
   - ./objects/deploying-object-widgets-to-sites.md
@@ -24,7 +23,7 @@ When creating an Object, you can define its data [fields](./objects/creating-and
 
 Before publishing, you can scope each Object's data to Company or Site and determine where it's displayed in the Liferay UI.
 
-From the time of creation, all Objects are fully integrated with Liferay's [core frameworks](./core-frameworks.md) to provide a unified experience across the platform and leverage all of Liferay's capabilities. This includes automatically generating [Headless REST APIs](./objects/understanding-object-integrations/headless-framework-integration.md) for every Object, so you can interact with your Objects through defined endpoints. These APIs can also be used with the [Job Scheduler](./core-frameworks/job-scheduler-framework/using-job-scheduler.md) integration to configure Talend jobs to sync Object data dynamically with external systems.
+From the time of creation, all Objects are fully integrated with Liferay's [core frameworks](./core-frameworks.md) to provide a unified experience across the platform and leverage all of Liferay's capabilities. This includes automatically generating [Headless REST APIs](./objects/understanding-object-integrations/using-custom-object-apis.md) for every Object, so you can interact with your Objects through defined endpoints. These APIs can also be used with the [Job Scheduler](./core-frameworks/job-scheduler-framework/using-job-scheduler.md) integration to configure Talend jobs to sync Object data dynamically with external systems.
 
 Every Object is integrated with [Workflows](./objects/enabling-workflows-for-objects.md), so you can guide Object entry creation through a defined review and approval process. Objects are also integrated with [Forms](objects/using-forms-with-objects.md), so you can design forms that map to Object fields and receive user input for creating Object entries.
 

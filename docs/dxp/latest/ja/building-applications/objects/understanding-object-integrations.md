@@ -1,7 +1,7 @@
 ---
 toc:
   - ./understanding-object-integrations/permissions-framework-integration.md
-  - ./understanding-object-integrations/headless-framework-integration.md
+  - ./understanding-object-integrations/using-custom-object-apis.md
   - ./understanding-object-integrations/assets-framework-integration.md
 ---
 # オブジェクト統合を理解する
@@ -10,7 +10,7 @@ toc:
 :maxdepth: 3
 
 understanding-object-integrations/permissions-framework-integration.md
-understanding-object-integrations/headless-framework-integration.md
+understanding-object-integrations/using-custom-object-apis.md
 understanding-object-integrations/assets-framework-integration.md
 ```
 
@@ -21,7 +21,7 @@ understanding-object-integrations/assets-framework-integration.md
 | アセット           | [添付ファイルフィールド](./creating-and-managing-objects/fields/attachment-fields.md)を使用して、インスタンスのドキュメントライブラリにファイルをアップロードします。                                                                                                                                                                                                                                                                                                              |
 | 監査             | [Audit アプリケーション](./creating-and-managing-objects/auditing-object-definition-events.md) または REST API を使用して、カスタムオブジェクト定義の入力履歴を有効にして監査します。                                                                                                                                                                                                                                                                                         |
 | カテゴリー設定        | カスタムオブジェクトレイアウトにカテゴリー化ツールを追加し、ユーザーがエントリーに [タグやカテゴリー](./creating-and-managing-objects/layouts/designing-object-layouts.md#adding-categorization) を追加できるようにしました。                                                                                                                                                                                                                                                                  |
-| ヘッドレス          | Liferay は各公開オブジェクトに対して [ヘッドレスエンドポイント](./understanding-object-integrations/headless-framework-integration.md) を生成するので、REST 呼び出しを行うことができます。 <!-- TASK: Add GraphQL when supported.-->                                                                                                                                                                                                                                                               |
+| ヘッドレス          | Liferay は各公開オブジェクトに対して [ヘッドレスエンドポイント](./understanding-object-integrations/using-custom-object-apis.md) を生成するので、REST 呼び出しを行うことができます。 <!-- TASK: Add GraphQL when supported.-->                                                                                                                                                                                                                                                               |
 | 情報フレームワーク      | [表示ページ・テンプレート](../../site-building/displaying-content/using-display-page-templates.md), [フラグメント](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments.md), [ナビゲーション・メニュー](../../site-building/site-navigation/using-the-navigation-menus-application.md)でオブジェクト・データを使用する。 また、Liferayはそのエントリーを表示するために、[コレクションプロバイダー](../../content-authoring-and-management/collections-and-collection-pages.md)を作成します。 |
 | ローカライズ         | オブジェクト定義のフィールドをローカライズすることで、グローバルユーザーにより良いサービスを提供できます。                                                                                                                                                                                                                                                                                                                                                                           |
 | 権限設定           | アプリケーションとリソースのアクセス許可を管理し、オブジェクト定義とそのデータへのアクセスを制御します。                                                                                                                                                                                                                                                                                                                                                                            |

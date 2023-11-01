@@ -68,7 +68,7 @@ unzip liferay-g4m3.zip
 サンプル・コードには、オブジェクト・エントリーを作成、更新、照会するためのシェル・スクリプトが含まれています。
 
 ```{tip}
-サイトオブジェクトと会社オブジェクトに対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/headless-framework-integration.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 *RESTアプリケーション*をクリックし、APIを選択します。
+サイトオブジェクトと会社オブジェクトに対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 *RESTアプリケーション*をクリックし、APIを選択します。
 ```
 
 ## サンプルコードを使用する

@@ -134,7 +134,7 @@
 
 1. 先に進む前に、エントリーの作成、更新、削除を練習する。
 
-また、パブリッシング中にディストリビューター・アプリケーション用に生成されたREST APIを使用して、エントリーの作成、編集、クエリ、および削除を行うこともできます。 これらのAPIは、 `c/distributorapplications` パスで利用できる。 利用可能な API の完全なリストは [Headless Framework Integration](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/headless-framework-integration) を、入門チュートリアルは [Custom Object API Basics](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics) を参照してください。
+また、パブリッシング中にディストリビューター・アプリケーション用に生成されたREST APIを使用して、エントリーの作成、編集、クエリ、および削除を行うこともできます。 これらのAPIは、 `c/distributorapplications` パスで利用できる。 利用可能な API の完全なリストは [Headless Framework Integration](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis) を、入門チュートリアルは [Custom Object API Basics](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics) を参照してください。
 
 ![LiferayはDistributor ApplicationのREST APIを生成します。](./determining-data-entities/images/10.png)
 

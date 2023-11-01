@@ -121,7 +121,7 @@ Follow these steps to sync Google Sheet data to an Object:
 
 1. Select the new module and click *Add* to add basic authentication credentials.
 
-1. Once added, enter the Object's Headless API URL, which uses this format: `https://<your-domain>/o/c/<objectname>/`. See [Headless Framework Integration](../../understanding-object-integrations/headless-framework-integration.md) for more information.
+1. Once added, enter the Object's Headless API URL, which uses this format: `https://<your-domain>/o/c/<objectname>/`. See [Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md) for more information.
 
 1. Select the *post* method type.
 

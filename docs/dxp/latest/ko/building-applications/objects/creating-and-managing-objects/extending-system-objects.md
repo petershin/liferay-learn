@@ -47,7 +47,7 @@ Liferay의 [사용자 정의 필드](../../../system-administration/configuring-
 
 ### 관계 API
 
-시스템 개체가 다대다 관계에 있거나 일대다 관계의 상위 측에 있는 경우 Liferay는 관계를 쿼리하고 관리하기 위해 [REST 끝점](../understanding-object-integrations/headless-framework-integration.md#relationship-rest-apis) 생성합니다. 여기에는 관련 객체 항목을 반환하기 위한 GET 엔드포인트, 항목 관련 PUT 엔드포인트, 관련 항목 연결 해제를 위한 DELETE 엔드포인트가 포함됩니다.
+시스템 개체가 다대다 관계에 있거나 일대다 관계의 상위 측에 있는 경우 Liferay는 관계를 쿼리하고 관리하기 위해 [REST 끝점](../understanding-object-integrations/using-custom-object-apis.md#relationship-rest-apis) 생성합니다. 여기에는 관련 객체 항목을 반환하기 위한 GET 엔드포인트, 항목 관련 PUT 엔드포인트, 관련 항목 연결 해제를 위한 DELETE 엔드포인트가 포함됩니다.
 
 이 예에서 사용자 시스템 객체는 사용자 정의 객체(`timeOffRequest`)와 일대다 관계(`userRequests`)에 있습니다. 이러한 엔드포인트는 [`headless-admin-user`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-user/v1.0/openapi.json) 서비스에 나타납니다.
 

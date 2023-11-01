@@ -151,4 +151,4 @@ Liferay는 독립 실행형 작업을 트리거할 수 있는 역할을 관리�
 
 * [개체 작업 정의](./defining-object-actions.md)
 * [작업 유형 이해](./understanding-action-types.md)
-* [헤드리스 프레임워크 통합](../../understanding-object-integrations/headless-framework-integration.md)
+* [헤드리스 프레임워크 통합](../../understanding-object-integrations/using-custom-object-apis.md)

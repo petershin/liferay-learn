@@ -1,6 +1,6 @@
 # Reactチャートでのオブジェクトデータの使用
 
-ここでは、[オブジェクト](../../objects.md)、[ヘッドレスAPI](../understanding-object-integrations/headless-framework-integration.md)、[カスタム要素のリモートアプリケーション](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)を使って、データダッシュボード用の動的なグラフを作成する方法を説明します。 まず、オブジェクトAPI 呼び出し用に [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) を有効にして、新しいDXP インスタンスをセットアップします。 次に、データの受信と保存を行うためのオブジェクトを作成します。 REST APIを使ってオブジェクトにデータを追加したら、提供されているReact [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) アプリケーションをダウンロードし、ビルドしてください。 コードがコンパイルされたら、生成された`.js`ファイルをLiferayドキュメントライブラリーでホストし、そのWebDAV URLをコピーします。 最後に、このURLを使ってReactチャートのリモートアプリケーションを作成し、ページウィジェットとしてデプロイします。
+ここでは、[オブジェクト](../../objects.md)、[ヘッドレスAPI](../understanding-object-integrations/using-custom-object-apis.md)、[カスタム要素のリモートアプリケーション](../../client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md)を使って、データダッシュボード用の動的なグラフを作成する方法を説明します。 まず、オブジェクトAPI 呼び出し用に [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) を有効にして、新しいDXP インスタンスをセットアップします。 次に、データの受信と保存を行うためのオブジェクトを作成します。 REST APIを使ってオブジェクトにデータを追加したら、提供されているReact [FusionCharts](https://www.fusioncharts.com/dev/getting-started/react/your-first-chart-using-react) アプリケーションをダウンロードし、ビルドしてください。 コードがコンパイルされたら、生成された`.js`ファイルをLiferayドキュメントライブラリーでホストし、そのWebDAV URLをコピーします。 最後に、このURLを使ってReactチャートのリモートアプリケーションを作成し、ページウィジェットとしてデプロイします。
 
 チャートは5秒ごとにヘッドレスAPI経由でオブジェクトを呼び出し、オブジェクトのデータを返してチャートを動的に更新するように構成されています。
 
@@ -190,5 +190,5 @@
 ## 関連トピック
 
 * [オブジェクト概要](../../objects.md)
-* [ヘッドレスフレームワークの統合](../understanding-object-integrations/headless-framework-integration.md)
+* [ヘッドレスフレームワークの統合](../understanding-object-integrations/using-custom-object-apis.md)
 * [CORSの設定](../../../installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors.md)

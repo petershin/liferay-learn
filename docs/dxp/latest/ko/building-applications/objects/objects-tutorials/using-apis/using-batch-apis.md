@@ -5,7 +5,7 @@
 진행하기 전에 [설정](#setting-up-a-liferay-instance) 새 Liferay DXP/Portal 7.4 인스턴스 및 [준비](#preparing-the-sample-code) 제공된 튜토리얼 코드.
 
 ```{tip}
-사이트 및 회사 개체 모두에 대해 생성된 API의 전체 목록은 [객체의 헤드리스 프레임워크 통합](../../understanding-object-integrations/headless-framework-integration.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션* 아래에 나타납니다.
+사이트 및 회사 개체 모두에 대해 생성된 API의 전체 목록은 [객체의 헤드리스 프레임워크 통합](../../understanding-object-integrations/using-custom-object-apis.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션* 아래에 나타납니다.
 ```
 
 ## Liferay 인스턴스 설정

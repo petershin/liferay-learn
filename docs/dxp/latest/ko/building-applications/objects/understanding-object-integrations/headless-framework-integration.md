@@ -6,7 +6,7 @@
 
 이러한 헤드리스 서비스의 경로는 `c/[pluralobjectlabel]` 이름 지정 패턴(예: `/o/c/timeoffrequests`)을 따릅니다. `[server]:[port]/o/api` (예: `localhost:8080/o/api`)의 Liferay API Explorer를 통해 사용 가능한 개체 API를 보고 테스트할 수 있습니다. API의 드롭다운 목록을 보려면 **REST 애플리케이션** 클릭하세요.
 
-![각 개체는 REST 애플리케이션 아래에 나타납니다.](./headless-framework-integration/images/01.png)
+![각 개체는 REST 애플리케이션 아래에 나타납니다.](./using-custom-object-apis/images/01.png)
 
 객체가 활성화된 동안 이러한 API를 사용하여 기본 CRUD 작업을 수행하고, 집계 용어 [및 [중첩 필드](../objects-tutorials/using-apis/using-nestedfields-to-query-related-entries.md)을 사용하여 복잡한 쿼리를 실행하고, 독립](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md) 형 작업을 트리거하고, 항목 관계를 관리하는 등의 작업을 수행할 수 있습니다. 객체 API 튜토리얼은 [API 사용](../objects-tutorials/using-apis.md) 참조하세요.
 
@@ -94,7 +94,7 @@ HTTP 엔드포인트의 경우 `RelationName` 관계 이름으로 바꿉니다(�
 
 With the GraphQL APIs, you can both query and mutate object data. All APIs for custom objects are listed under `c` in Liferay's GraphQL schema. You can use Liferay's integrated Graph*i*QL IDE to search object schemas, draft queries, run requests, and more. To access it, go to Liferay's API Explorer at `[server]:[port]/o/api` (e.g., `localhost:8080/o/api`) and click *GraphQL*.
 
-![Use Liferay's GraphiQL explorer to search object schemas and run your requests.](./headless-framework-integration/images/02.png)
+![Use Liferay's GraphiQL explorer to search object schemas and run your requests.](./using-custom-object-apis/images/02.png)
 
 See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) for more information.
 -->

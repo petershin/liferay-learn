@@ -2,8 +2,7 @@
 toc:
   - ./using-liferay-docker-images/container-lifecycle-and-api.md
   - ./using-liferay-docker-images/configuring-containers.md
-  - >-
-    ./using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md
+  - ./using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md
   - ./using-liferay-docker-images/licensing-dxp-in-docker.md
   - ./using-liferay-docker-images/patching-dxp-in-docker.md
   - ./using-liferay-docker-images/running-scripts-in-containers.md
@@ -55,9 +54,15 @@ The containers listens on port `8080` and starts like all Docker containers.
     Memory, CPUs, and other Docker container resources are configurable. The `-m 8g` command arguments above set the container's memory limit to eight gigabytes. See the [Docker runtime options](https://docs.docker.com/config/containers/resource_constraints/) for details.
     ```
 
-1. Sign in to Liferay at `<http://localhost:8080>` using the email address _test@liferay.com_ and the password _test_. When prompted, change your password.
+1. Sign in to Liferay at `<http://localhost:8080>` using the email address _test@liferay.com_ and the password _test_. 
 
-    ![Here is Liferay's landing page.](./using-liferay-docker-images/images/01.png)
+1. When prompted, change your password (e.g. _learn_) and click _Save_.
+
+    ![Change your password upon first login.](./using-liferay-docker-images/images/01.png)
+
+```{warning}
+In a production environment, you should not use the default admin account. Instead, [create admin accounts](./introduction-to-the-admin-account.md#creating-a-new-admin-user) specific to your business. 
+```
 
 Liferay is ready to use.
 

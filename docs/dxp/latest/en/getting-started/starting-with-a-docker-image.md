@@ -30,12 +30,12 @@ Liferay Portal is the open source and community supported platform for building 
 
 1. Sign in to Liferay at `<http://localhost:8080>` using the email address _test@liferay.com_ and the password _test_. 
 
-1. When prompted, change your password (e.g. _learn_) and click _Save.
+1. When prompted, change your password (e.g. _learn_) and click _Save_.
 
     ![Change your password upon first login.](./starting-with-a-docker-image/images/01.png)
 
 ```{warning}
-In a production environment, you should not use the default admin account. Instead, create admin accounts specific to your business.
+In a production environment, you should not use the default admin account. Instead, [create admin accounts](./introduction-to-the-admin-account.md#creating-a-new-admin-user) specific to your business.
 ```
 
 ## Get Started With Liferay DXP
@@ -50,12 +50,12 @@ Liferay DXP is the commercially supported and enterprise ready platform used aro
 
 1. Sign in to Liferay at `<http://localhost:8080>` using the email address _test@liferay.com_ and the password _test_.
 
-1. When prompted, change your password (e.g. _learn_) and click _Save.
+1. When prompted, change your password (e.g. _learn_) and click _Save_.
 
     ![Change your password upon first login.](./starting-with-a-docker-image/images/01.png)
 
 ```{warning}
-In a production environment, you should not use the default admin account. Instead, create admin accounts specific to your business.
+In a production environment, you should not use the default admin account. Instead, [create admin accounts](./introduction-to-the-admin-account.md#creating-a-new-admin-user) specific to your business. 
 ```
 
 ## What's Next

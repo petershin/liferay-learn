@@ -64,7 +64,7 @@ To create a new admin account follow these steps:
 
 1. See [configuring mail](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) to set up Liferay with your email service. Liferay sends an email to the new user's email address upon account creation. 
 
-    To skip this step, disable the feature to require strangers to verify their email address". Navigate to _Control Panel_ &rarr; _Instance Settings_ &rarr; _User Authentication_. Uncheck the box for _Require strangers to verify their email address?_.
+    To skip this step, disable the feature to require strangers to verify their email address. Navigate to _Control Panel_ &rarr; _Instance Settings_ &rarr; _User Authentication_. Uncheck the box for _Require strangers to verify their email address?_.
 
     ![Uncheck require strangers to verify their email address.](./introduction-to-the-admin-account/images/07.png)
 

@@ -14,9 +14,9 @@ Here you'll create two simple time off management applications with App Builder,
 
 ## Creating a Custom Object
 
-1. Open the Applications Menu (![Applications Menu](../../images/icon-applications-menu.png)) and navigate to Control Panel &rarr; App Builder &rarr; Custom Objects.
+1. Open the Applications Menu (![Applications Menu](../../../images/icon-applications-menu.png)) and navigate to Control Panel &rarr; App Builder &rarr; Custom Objects.
 
-1. Click the add button (![Add](../../images/icon-add.png)).
+1. Click the add button (![Add](../../../images/icon-add.png)).
 
 1. Enter the name: _Time Off Request_.
 
@@ -75,11 +75,11 @@ Even though it's not in the table view, the Comment field still appears in the D
 
 Deploying an application makes it accessible to users. There are several deployment options. See the [App Builder](../app-builder.md#deployment) overview to learn about them.
 
-The Time Off Request has two apps to deploy: a widget application for adding to a page, and an administrative application in the [Product Menu](../../getting-started/navigating-dxp.md#product-menu), where requests can be managed by those with additional permissions.
+The Time Off Request has two apps to deploy: a widget application for adding to a page, and an administrative application in the [Product Menu](../../../getting-started/navigating-dxp.md#product-menu), where requests can be managed by those with additional permissions.
 
 1. Open the Time Off Request (Control Panel &rarr; App Builder &rarr; Custom Objects).
 
-1. From the _Apps_ tab, click the Add button (![Add](../../images/icon-add.png)).
+1. From the _Apps_ tab, click the Add button (![Add](../../../images/icon-add.png)).
 
    ```{note}
    If you want to create a `Workflow Powered` app for the object (available to DXP subscribers), you must create and deploy the app from the Apps entry in the Application Menu. See [Creating a Workflow Powered Application](./creating-a-workflow-powered-application.md) for details.

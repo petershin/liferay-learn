@@ -17,13 +17,13 @@ app-builder/creating-the-role-change-request-object.md
 app-builder/creating-the-role-change-request-app.md
 ```
 
-> Available: Liferay CE/DXP 7.3 ([deprecated and removed in 7.4](../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4))
+> Available: Liferay CE/DXP 7.3 ([deprecated and removed in 7.4](../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md#features-deprecated-in-7-4))
 
 App Builder is a low-code application development solution for Liferay DXP. Build a data model, define the application's forms (for entering data) and tables (for viewing and managing data records), then deploy your application to a Site or as a completely standalone application. With App Builder, you can create functional business applications with dedicated user interfaces and data separation without a single line of code.
 
 ![Two separate applications are deployed for this App Builder object.](./app-builder/images/01.png)
 
-Why use App Builder when the [Liferay Forms](../process-automation/forms/introduction-to-forms.md) application includes similar form-building capabilities? Here's an overview of the differences:
+Why use App Builder when the [Liferay Forms](../../process-automation/forms/introduction-to-forms.md) application includes similar form-building capabilities? Here's an overview of the differences:
 
 | Capability | Liferay Forms | App Builder |
 |------------|:-------------:|:-----------:|
@@ -90,7 +90,7 @@ A Standalone or Product Menu application always includes both the form and table
 * [Creating a Workflow Powered Application](./app-builder/creating-a-workflow-powered-application.md)
 
 ```{raw} html
-:file: ../landingpage_template.html
+:file: ../../landingpage_template.html
 ```
 
 ```{raw} html

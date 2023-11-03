@@ -31,6 +31,12 @@ Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/
 
 Next, you'll format the way a FAQs article is listed.
 
+<!-- I don't think tip this is necessary. I added it because I saw references to using Enter in order to tell the user to skip lines to add the new lines of code. I am also not sure if this is needed as there are pictures showing how the code will look like in the end. - Eric
+
+```{tip}
+To organize your code, use returns and empty lines to separate blocks of code. In HTML, empty lines are not rendered on screen. If you want to render an empty line between elements, use the <br> tag.
+``` -->
+
 1. Click the *Elements* button (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
 
 1. Click into the body of the template, and delete the placeholder text.
@@ -45,32 +51,34 @@ Next, you'll format the way a FAQs article is listed.
    <h2>${.vars["reserved-article-title"].data}</h2>
    ```
 
-1. Press Enter twice to add two new lines and, from the list of fields in the Elements menu, click *Question Group**.
+1. Add an HTML tag for a new line (`<br>`) to separate the title from the list of FAQs.
 
-   Because the Question Group is a repeatable field, this adds a FreeMarker list that iterates over each instance in the displayed content.
+1. From the list of fields in the Elements menu, click *FAQ*.
+   <!-- this question group was called sth else when created -->
+   <!-- I altered the code here to reflect the name used in the field reference (FAQ). --Eric -->
+
+   Because the FAQ group is a repeatable field, this adds a FreeMarker list that iterates over each instance in the displayed content.
 
    ![Clicking a repeatable field adds FreeMarker tags that iterate over each instance in the content.](./adding-a-template-to-display-faqs/images/02.png)
 
-1. Copy this segment in the middle of the inner FreeMarker tags:
+1. Copy this segment in the middle of the inner FreeMarker `<#list></#list>` tags:
 
    ```html
-   <#if (cur_QuestionGroup.QuestionText.getData())??>
-      ${cur_QuestionGroup.QuestionText.getData()}
+   <#if (cur_FAQ.QuestionText.getData())??>
+      ${cur_FAQ.QuestionText.getData()}
    </#if>
-   <#if (cur_QuestionGroup.AnswerText.getData())??>
-      Answer: ${cur_QuestionGroup.AnswerText.getData()}
+   <#if (cur_FAQ.AnswerText.getData())??>
+      ${cur_FAQ.AnswerText.getData()}
    </#if>
    ```
 
-   This is similar to clicking both the *Question* and *Answer* fields from the fields list, but it uses `cur_QuestionGroup` to reference each specific question and answer in the list, each time it iterates.
+   This is similar to clicking both the *Question* and *Answer* fields from the fields list, but it uses `cur_FAQ` to reference each specific question and answer in the list, each time it iterates.
 
-1. Surround the whole line with the question field's text (`${cur_QuestionGroup.QuestionText.getData()}`) in *bold* text HTML tags (`<b>`)), like this example:
+1. Surround the whole line with the question field's text (`${cur_FAQ.QuestionText.getData()}`) in *bold* text HTML tags (`<b>`), like this example:
 
    ```html
-   <b>${cur_QuestionGroup.QuestionText.getData()}</b>
+   <b>${cur_FAQ.QuestionText.getData()}</b>
    ```
-
-1. Surround the word *Answer* on the line with the answer field's text with bold text HTML tags.
 
 1. Add an HTML tag for a new line (`<br>`) after each of the question and answer blocks of FreeMarker tags.
 
@@ -79,6 +87,10 @@ Next, you'll format the way a FAQs article is listed.
 1. Click *Save*.
 
 Now you have a template that displays each question and answer wherever you display a FAQs article, and you can display both of your new types of web content properly on your site.
+
+<!-- I'm not sure if the screenshots were needed, but I thought it would be nice if the user could see what the code looked like once it was rendered on screen. - Eric -->
+
+![The Simple FAQ List template applied to a FAQ web content article.](./adding-a-template-to-display-faqs/images/04.png)
 
 Next, you'll import a second template for the FAQs structure.
 
@@ -94,6 +106,8 @@ While you're still on the Templates page, make sure the top of the page reads "T
 
 1. Download and unzip the template resource:
 
+<!-- This link is not working yet. - Eric -->
+
    ```bash
    curl https://resources.learn.liferay.com/courses/latest/en/liferay-c8m2.zip -O
    ```
@@ -104,7 +118,7 @@ While you're still on the Templates page, make sure the top of the page reads "T
 
 1. At the top of the page, click Actions (![Actions icon](../../images/icon-actions.png)) &rarr; *Import Script*.
 
-   ![Click Import Script to import the FreeMarker template you downloaded.](./adding-a-template-to-display-faqs/images/04.png)
+   ![Click Import Script to import the FreeMarker template you downloaded.](./adding-a-template-to-display-faqs/images/05.png)
 
 1. Upload the FreeMarker template you downloaded (`faq-web-content-template.ftl`) and click *Open*.
 
@@ -115,6 +129,8 @@ While you're still on the Templates page, make sure the top of the page reads "T
 1. Click *Save*.
 
 Now you have a template with more components in it, for a cleaner look and feel.
+
+![The Collapsible FAQs template applied to a FAQ web content article.](./adding-a-template-to-display-faqs/images/06.png)
 
 Next, you'll start [adding some articles](./adding-the-sites-first-web-content.md) with your new content types.
 

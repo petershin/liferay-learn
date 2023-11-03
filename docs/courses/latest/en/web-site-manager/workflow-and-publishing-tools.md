@@ -9,7 +9,15 @@ uuid: 2784080b-e770-4715-b844-7fcca38e50b0
 ---
 # Workflow and Publishing Tools
 
-Define workflow
+| User           | Job Title                  | Role                   | Function                                                                                       |
+|----------------|----------------------------|------------------------|------------------------------------------------------------------------------------------------|
+| Rex Randle     | Custom Advocacy Specialist | Content Creator        | Rex receives customer emails and turns them into FAQ entries.                                  |
+| Olivia O'Neal  | Content Manager            | Site Content Reviewer  | Olivia reviews Rex's FAQ submissions.                                                          |
+| Preston Palmer | Site Administrator         | Site Administrator     | Preston configures workflow at the site level.                                                 |
+| Kyle Klein     | IT Manager                 | Instance Administrator | Kyle manages workflows at the instance level (e.g., importing or creating workflow processes). |
+<!-- We'll need a role for Rex, like Site Content Creator or something. Just to access and create Web Content Articles -->
+
+Define workflow, explain the single approver, show a diagram view of it
 
    Talk about how you can enable workflow at different scopes. Clarity just needs it at the site scope. However, it will apply to all structures, so maybe we don't want this. We could use folders perhaps? Is there a way to restrict a structure to a folder? We'd need that. You can also get the structure ID/key in the workflow and review only if it matches the FAQ key, but that's probably not good since it wouldn't work in LXC. Anyway, we should address it.
 

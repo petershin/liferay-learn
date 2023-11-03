@@ -95,8 +95,36 @@ Now you have a new article for each of the web content structures you've added.
 
 <!-- TODO: Add one more section to import more events and content -->
 
+## Import More Articles
+
+You can populate your site with more content by importing it.
+
+1. Download and unzip the LAR file with the other web content articles:
+
+   ```bash
+   curl https://resources.learn.liferay.com/courses/latest/en/liferay-s7z9.zip -O
+   ```
+
+   ```bash
+   unzip liferay-s7z9.zip
+
+1. Still on the Web Content page, click *Options* (![Options icon](../../images/icon-options.png)) at the top right corner of the page and select *Import/Export*.
+
+1. In the modal that opened, select the *Import* tab.
+
+1. Click *Select File*, select the `web-content-articles.lar` file you downloaded and unzipped, and click *Continue*.
+
+1. Use the default settings and click *Import*.
+
+   <!-- there is no exporting/importing web content article. This one has a similar setting. - Eric -->
+
+   To learn more about the import process and its options see [Exporting/Importing Widget Data](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/exporting-importing-widget-data#importing-widget-data) that has a similar import process.
+
+1. Once the import process is complete, close the modal. All the web content articles, structures, and templates created in this module are imported.
+
 Next, you'll [add templates to show your events and FAQs on specific display pages](./adding-simple-display-page-templates.md).
 
 ## Relevant Concepts
 
 * [Creating a Basic Web Content Article](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article)
+* [Exporting/Importing Widget Data](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/exporting-importing-widget-data)

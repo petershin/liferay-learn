@@ -3,7 +3,7 @@ uuid: 9c1e9fef-de32-4b3e-ba5d-9732218e2616
 ---
 # Adding the Site's First Web Content
 
-Now that you have structures and templates for two new types of content, you're ready to add some articles. Here, you'll add content to the site for both of these types (Event and FAQs).
+Now that you have structures and templates for two new types of content, you're ready to add some articles. Here, add content to the site for both of these types (Event and FAQs).
 
 The site administrator doesn't need to work on adding individual content articles. Log out and log back in as your site's content manager, Olivia O'Neal, before you begin.
 
@@ -11,7 +11,7 @@ The site administrator doesn't need to work on adding individual content article
 
 First, add an event article to announce the Clarity site going live soon.
 
-1. Navigate to the Site Menu &rarr; *Content & Data* &rarr; *Web Content*.
+1. Navigate to the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) &rarr; *Event*.
 
@@ -122,7 +122,7 @@ You can populate your site with more content by importing it.
 
 1. Once the import process is complete, close the modal. All the web content articles, structures, and templates created in this module are imported.
 
-Next, you'll [add templates to show your events and FAQs on specific display pages](./adding-simple-display-page-templates.md).
+Next, [add templates to show your events and FAQs on specific display pages](./adding-simple-display-page-templates.md).
 
 ## Relevant Concepts
 

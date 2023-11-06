@@ -5,15 +5,17 @@ uuid: a5817034-132b-4ded-93b6-b082022eb2ce
 
 You should have a web content template for each new type of structure you add. Liferay needs them to know how to order and arrange each field in the structure.
 
-Here, you'll use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/dgui.html) to format the fields for an Event article.
+Here, use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/dgui.html) to format the fields for an Event article.
 
 ## Start Creating the Template
 
 1. Log in as Preston Palmer, your public site administrator (if you haven't already).
 
-1. Navigate to the Site Menu &rarr; *Content & Data* &rarr; *Web Content*.
+1. Navigate to the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
 1. Click the *Structures* tab to get to the structures you created previously.
+
+   <!-- I guess we can also add the template straight from the templates tab and select a structure in basic information. Is it necessary to document the alternative way to do the same here in courses? -- Eric -->
 
 1. Select *Manage Templates* in the Event structure's Actions menu (![Actions icon](../../images/icon-actions.png)).
 
@@ -21,7 +23,7 @@ Here, you'll use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/d
 
 1. Click Add (![Add icon](../../images/icon-add.png)) to create a new template.
 
-   The new template is automatically associated with the Event structure because you chose to manage templates for it.
+   The new template is associated automatically with the Event structure because you chose to manage templates for it.
 
 1. At the top of the page, enter "Simple Event Format" as the title.
 
@@ -29,7 +31,7 @@ Here, you'll use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/d
 
 ## Configure the Template's Fields
 
-Now you'll arrange the order and format to display each of the field contents that an Event article can have.
+Now, arrange the order and format to display each of the field contents that an Event article can have.
 
 1. Click the *Elements* button (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
 
@@ -65,9 +67,9 @@ Now you'll arrange the order and format to display each of the field contents th
 
 ![The completed Event template displays the title, the summary, the banner image, and then the article body beneath a separator line.](./adding-a-template-to-display-an-event/images/04.png)
 
-Now your Event template is complete, and you can display an Event article with a presentable format. You'll see this later when you display an article on a page.
+Now your Event template is complete, and you can display an Event article with a presentable format. You can see this later when you display an article on a page.
 
-Next, you'll need [a template for the other structure you created, FAQs](./adding-a-template-to-display-faqs.md).
+Next, create [a template for the other structure you created, FAQs](./adding-a-template-to-display-faqs.md).
 
 ## Relevant Concepts
 

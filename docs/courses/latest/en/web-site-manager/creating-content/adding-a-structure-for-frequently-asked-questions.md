@@ -3,15 +3,15 @@ uuid: d5d5954a-f1e1-4097-a24a-a87ad52a0fbf
 ---
 # Adding a Structure for Frequently Asked Questions
 
-It's always helpful to have a list of answers to frequently asked questions on your site, but you'll need to group many questions together. You also need to be able to easily add or remove questions from the list.
+It's always helpful to have a list of answers to frequently asked questions on your site, but you need to group many questions together. You also need to be able to easily add or remove questions from the list.
 
-Here, you'll create a structure with a *repeatable field* to allow creating articles with any number of questions. A repeatable field is one that you can have as many instances of as you want. In this case, you'll add a repeatable pair of text fields (the question and answer).
+In this lesson, create a structure with a *repeatable field* to allow creating articles with any number of questions. A repeatable field is one that you can have as many instances of as you want. In this case, add a repeatable pair of text fields (a question and its answer).
 
 ## Start Creating the FAQs Structure
 
 1. Log in as Preston Palmer, your public site administrator, if you haven't already.
 
-1. Navigate to the Site Menu &rarr; *Content & Data* &rarr; *Web Content*.
+1. Navigate to the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
 1. Click the *Structures* tab.
 
@@ -75,7 +75,7 @@ Now you're ready to configure the structure with the necessary fields.
 
 Now the structure is ready to use, and you can add FAQs or Event web content articles to your site.
 
-These types of content can't be displayed properly without templates for them though. You'll add a [template for your Event structure](./adding-a-template-to-display-an-event.md) next.
+These types of content can't be displayed properly without templates for them though. Add a [template for your Event structure](./adding-a-template-to-display-an-event.md) next.
 
 ## Relevant Concepts
 

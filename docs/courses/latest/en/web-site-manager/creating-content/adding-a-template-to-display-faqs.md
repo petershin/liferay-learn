@@ -3,15 +3,15 @@ uuid: 33c99765-2c6a-43a5-bb90-f29aaa1079ec
 ---
 # Adding a Template to Display FAQs
 
-The template for FAQs needs to be able to not only display each field you added, but every repetition of a question and answer the article could have.
+The template for FAQs needs to be able to display not only each field you added, but also every repetition of a question and answer the article could have.
 
-Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/ref_directive_list.html) to ensure every question and answer is shown.
+Here, make use of a [FreeMarker list](https://freemarker.apache.org/docs/ref_directive_list.html) to ensure every question and answer is shown.
 
 ## Start Creating the Template
 
 1. Log in as Preston Palmer, your public site administrator (if you haven't already).
 
-1. Navigate to the Site Menu &rarr; *Content & Data* &rarr; *Web Content*.
+1. Navigate to the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
 1. Click the *Structures* tab to get to the structures you created previously.
 
@@ -21,7 +21,7 @@ Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/
 
 1. Click Add (![Add icon](../../images/icon-add.png)) to create a new template.
 
-   The new template is automatically associated with the FAQs structure because you chose to manage templates for it.
+   The new template is associated automatically with the FAQs structure because you chose to manage templates for it.
 
 1. At the top of the page, enter "Simple FAQ list" as the title.
 
@@ -29,13 +29,9 @@ Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/
 
 ## Configure the Template's Fields
 
-Next, you'll format the way a FAQs article is listed.
+Next, format the way a FAQs article is listed.
 
-<!-- I don't think tip this is necessary. I added it because I saw references to using Enter in order to tell the user to skip lines to add the new lines of code. I am also not sure if this is needed as there are pictures showing how the code will look like in the end. - Eric
-
-```{tip}
-To organize your code, use returns and empty lines to separate blocks of code. In HTML, empty lines are not rendered on screen. If you want to render an empty line between elements, use the <br> tag.
-``` -->
+<!-- I saw references to using Enter in order to tell the user to skip lines to add the new lines of code. I am not sure if this is needed as there are pictures showing how the code will look like in the end. Initially, I had eliminated them, but I brought them back for now. - Eric -->
 
 1. Click the *Elements* button (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
 
@@ -51,9 +47,9 @@ To organize your code, use returns and empty lines to separate blocks of code. I
    <h2>${.vars["reserved-article-title"].data}</h2>
    ```
 
-1. Add an HTML tag for a new line (`<br>`) to separate the title from the list of FAQs.
+1. Press Enter twice to add two new lines and, add an HTML tag for a new line (`<br>`) to separate the title from the list of FAQs.
 
-1. From the list of fields in the Elements menu, click *FAQ*.
+1. Press Enter twice to add two new lines and, from the list of fields in the Elements menu, click *FAQ*.
    <!-- this question group was called sth else when created -->
    <!-- I altered the code here to reflect the name used in the field reference (FAQ). --Eric -->
 
@@ -67,6 +63,7 @@ To organize your code, use returns and empty lines to separate blocks of code. I
    <#if (cur_FAQ.QuestionText.getData())??>
       ${cur_FAQ.QuestionText.getData()}
    </#if>
+
    <#if (cur_FAQ.AnswerText.getData())??>
       ${cur_FAQ.AnswerText.getData()}
    </#if>
@@ -80,7 +77,7 @@ To organize your code, use returns and empty lines to separate blocks of code. I
    <b>${cur_FAQ.QuestionText.getData()}</b>
    ```
 
-1. Add an HTML tag for a new line (`<br>`) after each of the question and answer blocks of FreeMarker tags.
+1. Press Enter twice to add two new lines and, add an HTML tag for a new line (`<br>`) after each of the question and answer blocks of FreeMarker tags. Wrap up by pressing Enter once again.
 
    ![The completed template iterates over each question and answer with new lines between each.](./adding-a-template-to-display-faqs/images/03.png)
 
@@ -92,7 +89,7 @@ Now you have a template that displays each question and answer wherever you disp
 
 ![The Simple FAQ List template applied to a FAQ web content article.](./adding-a-template-to-display-faqs/images/04.png)
 
-Next, you'll import a second template for the FAQs structure.
+Next, import a second template for the FAQs structure.
 
 ## Import Another Template
 
@@ -101,7 +98,7 @@ While you're still on the Templates page, make sure the top of the page reads "T
 1. Still on the Templates page, click Add (![Add icon](../../images/icon-add.png)) to create another new template.
 
    ```{note}
-   The top of the Templates page reads "Templates for Structure: FAQs" to remind you that adding a new template still associates it with the FAQs template. If you access the Templates tab normally (without clicking "Manage Templates" for the structure), you'll need to manually set the structure when you're creating it.
+   The top of the Templates page reads "Templates for Structure: FAQs" to remind you that adding a new template still associates it with the FAQs template. If you access the Templates tab normally (without clicking "Manage Templates" for the structure), you need to manually set the structure when you're creating it.
    ```
 
 1. Download and unzip the template resource:
@@ -132,7 +129,7 @@ Now you have a template with more components in it, for a cleaner look and feel.
 
 ![The Collapsible FAQs template applied to a FAQ web content article.](./adding-a-template-to-display-faqs/images/06.png)
 
-Next, you'll start [adding some articles](./adding-the-sites-first-web-content.md) with your new content types.
+Next, [add some articles](./adding-the-sites-first-web-content.md) with your new content types.
 
 ## Relevant Concepts
 

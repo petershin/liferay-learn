@@ -5,7 +5,7 @@ uuid: 00b94392-cc0a-4a9b-9808-d1a99a0cdb3a
 
 Liferay comes with just one out-of-the-box web content structure, *Basic Web Content*. This structure works fine for standard articles, but Clarity needs structures that are specific to more specialized types of content: *event* articles and *FAQs*.
 
-Here, you'll create the structure for an event, such as a new announcement or bulletin.
+Heres, create the structure for an event, such as a new announcement or bulletin.
 
 ## Start Creating the Event Structure
 
@@ -13,7 +13,7 @@ First, Clarity needs a structure for content that describes a specific event or 
 
 1. Log in as Preston Palmer, your public site administrator, if you haven't already.
 
-1. Navigate to the Site Menu &rarr; *Content & Data* &rarr; *Web Content*.
+1. Navigate to the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
 1. Click the *Structures* tab.
 
@@ -71,6 +71,8 @@ Now you are ready to configure the structure with the necessary fields.
 
 1. Drag another Image field into the structure onto the existing image field so it creates another field group.
 
+   <!-- card image is not used in the template. should this be kept ? -- eric -->
+
 1. Enter "Card Image" into the second image field's Label in the configuration menu.
 
 1. Click the fields group containing the image fields and change these settings in its configuration:
@@ -85,7 +87,7 @@ Now you are ready to configure the structure with the necessary fields.
 
 Now you have a web content structure you can use for any event or announcement on your site.
 
-Next, you'll make a web content structure for a variable number of [frequently asked questions](./adding-a-structure-for-frequently-asked-questions.md).
+Next, make a web content structure for a variable number of [frequently asked questions](./adding-a-structure-for-frequently-asked-questions.md).
 
 ## Relevant Concepts
 

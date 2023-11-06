@@ -5,13 +5,13 @@ uuid: 41120219-8547-430a-833f-a74c794dcb08
 
 Display page templates are page templates used to display a specific piece of content. Use them if you want somewhere where you can look at a specific article in its own context.
 
-Here, you'll create a display page template specific to each of your web content types (Event and FAQs), and then you'll use them to add new pages to your site.
+Here, you can create a display page template specific to each of your web content types (Event and FAQs), and then use them to add new pages to your site.
 
 Olivia, the content manager, doesn't have permission to create new page templates. Log in as your site administrator, Preston Palmer, before you begin.
 
 ## Add the Event Display Page Template
 
-1. Navigate to the Site Menu &rarr; *Design* &rarr; *Page Templates*.
+1. Navigate to the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Design* &rarr; *Page Templates*.
 
 1. Click the *Display Page Templates* tab.
 
@@ -125,7 +125,7 @@ Now you have a template to display any Event or FAQs articles you want on your s
 
 ## Add Display Pages to the Site's Navigation
 
-1. Navigate to the Site Menu &rarr; *Site Builder* &rarr; *Navigation Menus*.
+1. Navigate to the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Site Builder* &rarr; *Navigation Menus*.
 
 1. Click the Clarity Header Menu.
 

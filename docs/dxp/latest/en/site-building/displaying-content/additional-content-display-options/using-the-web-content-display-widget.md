@@ -25,7 +25,7 @@ After you create a [web content article](../../../content-authoring-and-manageme
 
 1. In the Select Web Content dialog, click the web content you want to add.
 
-   If you organize your content using folders, you can visualize all available content by navigating through the folders. Use the breadcrumbs above the folders and content sections to help your navigation.
+   If you organize your content using folders, you can visualize all available content by navigating through the folders. Use the breadcrumbs above the folders and content sections to help your navigation. The available content to be displayed on Sites and Libraries is determined by the selected scope for the widget.
 
    ![When you organize your web content using folders, view all available content by navigating throught the folders.](./using-the-web-content-display-widget/images/03.png)
 

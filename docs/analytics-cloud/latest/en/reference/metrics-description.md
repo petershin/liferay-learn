@@ -3,250 +3,94 @@ uuid: 5dd686af-6ef7-43f3-960e-7630d26ded8a
 ---
 # Metrics Description
 
-See the description of various metrics used by Analytics Cloud and the way they are calculated.
+See the description of various metrics used by Analytics Cloud and how they are calculated.
 
 Index:
-- [%](./metrics-description.md#%)
-- [A](./metrics-description.md#a)
-- [B](./metrics-description.md#b)
-- [C](./metrics-description.md#c)
-- [D](./metrics-description.md#d)
-- [E](./metrics-description.md#e)
-- [I](./metrics-description.md#i)
-- [K](./metrics-description.md#k)
-- [P](./metrics-description.md#p)
-- [R](./metrics-description.md#r)
-- [S](./metrics-description.md#s)
-- [T](./metrics-description.md#t)
-- [U](./metrics-description.md#u)
-- [V](./metrics-description.md#v)
+- [Acquisitions - Percentage of Sessions](./metrics-description.md#acquisitions---percentage-of-sessions)
+- [Bounce Rate](./metrics-description.md#bounce-rate)
+- [Entrances](./metrics-description.md#entrances)
+- [Exit Rate](./metrics-description.md#exit-rate)
+- [Interests - Percentage of Sessions](./metrics-description.md#interests---percentage-of-sessions)
+- [Search - Percentage of Sessions](./metrics-description.md#search---percentage-of-sessions)
+- [Session Duration](./metrics-description.md#session-duration)
+- [Sessions by Location](./metrics-description.md#sessions-by-location)
+- [Sessions by Technology](./metrics-description.md#sessions-by-technology)
+- [Sessions per Visitor](./metrics-description.md#sessions-per-visitor)
+- [Unique Visitors](./metrics-description.md#unique-visitors)
+- [Visitors by Day and Time](./metrics-description.md#visitors-by-day-and-time)
 
-## %
+## Acquisitions - Percentage of Sessions
 
-### % of Active Members for Interests
+The percentage of sessions for acquisitions shows the breakdown in percentage of the top traffic sources of how visitors arrive to your site. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
 
-**Description:** Calculates the number of members of a segment that were interested in a topic for the last thirty days.
+```
+(The acquisition traffic source) ÷ (The total number of sessions) * 100
+```
 
-**How it's calculated:** The number of segment members interested in a topic (not including the current day) ÷ the total number of active members in the segment * 100
+## Bounce Rate
 
-**Found in:** segments.
+The bounce rate shows the percentage of sessions in which an individual visits a page on your site but has no further interactions before the session ends. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
 
-### % of Sessions for Acquisitions 
+```
+(Total number of bounced sessions) ÷ (The total number of sessions) * 100
+```
 
-**Description:** Calculates where unique users visiting your site came from. This information is presented in three levels: channels, source/medium, and referrers.
+## Entrances 
 
-**How it's calculated:** Number of sessions by an acquisition ÷ total number of sessions * 100
+Entrances show the most common pages that visitors view first upon entering your site and the number of entrances for each.
 
-**Found in:** sites
+## Exit Rate
 
-### % of Sessions for Interest s
+The percentage of visitors who interacted with the page (such as scrolling or clicking) and then left the site. It does not include bounce rate. For a given time range, the rate is calculated as,
 
-**Description:** Calculates how many sessions had that interest in a given time range.
+```
+(Total number of sessions of the page in which visitors left the site) ÷ (The total number of sessions of the page) * 100
+```
 
-**How it's calculated:** Number of sessions during the selected date range with that interest topic ÷ total number of sessions during the selected date range * 100
+## Interests - Percentage of Sessions
 
-**Found in:** sites
-  
-### % of Total Individuals for Interests
-  
-**Description:** Calculates the number of individuals that were interested in a topic in the last 30 days.
+The percentage of sessions for interests shows what percent of sessions contained that interest in the given time range. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
 
-**How it's calculated:** The number of individuals interested in a topic (not including the current day) ÷ total number of individuals * 100
+```
+(Total number of sessions of that contained that interest) ÷ (The total number of sessions) * 100
+```
 
-**Found in:** individuals
+## Search - Percentage of Sessions
 
-## A
+The percentage of sessions for search shows what percent of searches contained that search query term in the given time range. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
 
-### Abandonment
+```
+(Total number of sessions of that contained that search query term) ÷ (The total number of sessions) * 100
+```
 
-**Description:** Calculates the percentage of users who left a form or custom asset without submitting. 
+## Session Duration
 
-**How it's calculated:** (Total number of times a form or asset was viewed - total number of times the asset was submitted) ÷ total number of times the form or asset was viewed * 100
+The length of time an average session lasts. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
 
-**Found in:** forms and custom assets
+## Sessions by Location
 
-### Active Individuals
+Sessions by location shows the top countries from which visitors access your site. The top five countries are listed along with their percentage value they represent across all sessions. The remaining countries that are not in the top five are combined as a single percentage value. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
 
-**Description:** A user who interacted with the site in a given time range.
+## Sessions by Technology
 
-**How it's calculated:** The total number of unique users who interacted with the site in a given time range.
+Sessions by technology shows the devices, operating systems, and browsers used to visit your site. A breakdown by session percentages are shown for different device types, different operating system types, and different browser types. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
 
-**Found in:** individuals
+## Sessions per Visitor
 
-### Anonymous Individuals
+An average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
 
-**Description:** A user who's email address is not known (i.e. does not match with any synced contacts). 
+```
+(Total number of sessions across all visitors) ÷ (The total number of visitors) * 100
+```
 
-**How it's calculated:** The total number of users who are not known by Analytics Cloud.
+## Unique Visitors
 
-**Found in:** individuals
+This is the total number of individuals that are identified by a unique `userId` (i.e. user ID). 
 
+A visitor to your site is assigned a unique `userId`. When the visitor logs in with their email, their analytics data will continue to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data will be associated with this previously assigned `userId` instead.
 
+A new `userId` is assigned if the visitor uses a different browser, logs in with a different email address, or clears their browser cookies. 
 
-### Audience Report - Views
+## Visitors by Day and Time
 
-**Description:** Calculates the anonymous and known individuals who interact with the page or asset.
-
-**How it's calculated:** The total number of anonymous and known individuals who interacted with the page or asset. The percentage is calculated by the number of known individuals ÷ the total number of unique visitors.
-
-**Found in:** blogs, site pages, web content, 
-
-### Audience Report - Segmented Views
-
-**Description:** Calculates the percentage of known individuals that are in a segment who interact with a page or asset.
-
-**How it's calculated:** 
-
-**Found in:**
-
-### Audience Report - Viewer Segments
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-Audience Report Metrics 
-
-
-Total # of known individuals*: unique_visitor_1 which fired that primary asset event or viewed that page + unique_visitor_2 which fired that primary asset event or viewed that page + ...
-Percentage: total # of known individuals / total # of unique_visitors who fired that asset primary event or viewed that page * 100
-*counts userIds associated with emails
-Total # of anonymous individuals*: unique_visitor_3 which fired that primary asset event or viewed that page + unique_visitor_5 which fired that primary asset event or viewed that page + ...
-Percentage: total # of anonymous individuals / total # of unique_visitors who fired that asset primary event or viewed that page * 100
-*counts userIds not associated with emails
-How it's calculated for segmented / not segmented individuals:
-Total # of segmented known individuals: unique_visitor_1 which fired that primary asset event or viewed that page and belongs to any segment + unique_visitor_2 which fired that primary asset event or viewed that page and belongs to any segment + ...
-Percentage: total # of segmented known individuals / total # of known individuals that fired that asset primary event or viewed that page * 100
-Total # of not segmented known individuals: unique_visitor_3 which fired that primary asset event or viewed that page and does not belong to any segment + unique_visitor_4 which fired that primary asset event or viewed that page and does not belong to any segment + ...
-Percentage: total # of not segmented known individuals / total # of known individuals that fired that asset primary event or viewed that page * 100
-How it's calculated for audience segments with individual:
-Total # for a segment in the top 5: unique_visitor_1 which fired that primary asset event or viewed that page and belongs to segment_A + unique_visitor_2 which fired that primary asset event or viewed that page and belongs to segment_A + ...
-Percentage: total # for a segment in the top 5 / total # of segmented known individuals that fired that asset primary event or viewed that page * 100
-Total # for remaining segments not listed in the top 5 segments: (unique_visitor_5 which fired that primary asset event or viewed that page and belongs to segment_F + unique_visitor_6 which fired that primary asset event or viewed that page and belongs to segment_F + ...) + (unique_visitor_7 which fired that primary asset event or viewed that page and belongs to segment_G + unique_visitor_8 which fired that primary asset event or viewed that page and belongs to segment_G + ...) + ...
-Percentage: Total # for remaining segments not listed in the top 5 segments / total # of segmented known individuals that fired that asset primary event or viewed that page * 100
-Associated Events:  identity , documentsDownloaded , blogViewed , formSubmitted ,webContentViewed 
-It’s Used On: 
-
- 
-
-## B
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## C
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## D
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## E
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## I
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## K
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## P
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## R
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## S
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## T
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## U
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
-
-## V
-
-### asdf
-
-**Description:**
-
-**How it's calculated:**
-
-**Found in:**
+This is a calculation of the number of unique visitors for the 24 hours of each day of the week in a given time range. Tooltips for each cell show the number of visitors for that day and time.

@@ -3,13 +3,13 @@ uuid: 195deacf-e16c-4594-b075-082b9c8a25ef
 ---
 # Sites Dashboard
 
-Liferay Analytics Cloud provides a Sites dashboard for each Property in your Workspace. For example, when [Creating a Property](../workspace-settings/scoping-sites-and-individuals-using-properties.md#creating-a-property) each Property can be associated with one site or can be set to aggregate data from multiple sub-sites.
+Liferay Analytics Cloud provides a sites dashboard for each Property in your Workspace. For example, when [Creating a Property](../workspace-settings/scoping-sites-and-individuals-using-properties.md#creating-a-property) each Property can be associated with one site or can be set to aggregate data from multiple sub-sites.
 
 To view the dashboard,
 
 1. Click *Sites* in the Touchpoints section of the menu.
 
-1. Click the *Overview* tab (this tab is selected by default when you click Sites). 
+1. Click the *Overview* tab (this tab is selected by default when you click sites). 
 
 The dashboard contains the following data panels:
 
@@ -42,15 +42,19 @@ Some metrics such as bounce rate, time on page, exits, etc. rely on a visitor’
 
 ## Site Activities
 
-The Site Activities panel presents a summary of how visitors interact with your Site. This panel contains the following metrics:
+The Site Activities panel presents a summary of how visitors interact with your site. This panel contains the following metrics:
 
-**Unique Visitors:** Total unique visitors.
+**Unique Visitors:** This is the total number of individuals that are identified by a unique `userId` (i.e. user ID). 
 
-**Sessions per Visitor:** An average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session ends after 30 minutes of inactivity, or at midnight.
+A visitor to your site is assigned a unique `userId`. When the visitor logs in with their email, their analytics data will continue to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data will be associated with this previously assigned `userId` instead.
+
+A new `userId` is assigned if the visitor uses a different browser, logs in with a different email address, or clears their browser cookies. 
+
+**Sessions per Visitor:** An average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
 
 **Session Duration:** The length of time an average session lasts.
 
-**Bounce Rate:** The percentage of visitors who view your Site's first page, but do nothing else before the session ends.
+**Bounce Rate:** The percentage of sessions in which an individual visits a page on your site but has no further interactions before the session ends. 
 
 ![Site Activities include a visualization of data points over a period of time.](./sites-dashboard/images/01.png)
 
@@ -64,17 +68,17 @@ The Top Pages panel shows visited pages, entrance pages, and exit pages:
 
 ![The Top Pages screen provides a list of pages in order of most visited.](./sites-dashboard/images/02.png)
 
-**Visited Pages:** Your Site's most visited pages and the number of visitors for each.
+**Visited Pages:** Your site's most visited pages and the number of visitors for each.
 
-**Entrance Pages:** The most common pages that visitors view first upon entering your Site and the number of entrances for each.
+**Entrance Pages:** The most common pages that visitors view first upon entering your site and the number of entrances for each.
 
-**Exit Pages:** The most common pages that visitors view when leaving your Site and the exit percentage for each. The exit percentage is the percentage of visitors for which the page is the last page in their session.
+**Exit Pages:** The most common pages that visitors view when leaving your site and the exit percentage for each. The exit percentage is the percentage of visitors who interacted with the page (such as scrolling or clicking) and then left your site. It does not include bounce rate.
 
 To view more detailed page analytics, click *View Pages* at the bottom of the panel. Alternatively, click the *Pages* tab at the top of the screen. Both take you to the page analytics discussed in [Viewing Page Data](../touchpoints.md#viewing-page-data).
 
 ## Acquisitions
 
-The Acquisitions panel gives a comprehensive overview of how visitors arrive to your Site. The data is presented from a more high level view (i.e. Channels) down to a more granular level (i.e. Referrers). Having an understanding at these different levels leads to more informed business decisions. 
+The Acquisitions panel gives a comprehensive overview of how visitors arrive to your site. The data is presented from a more high level view (i.e. Channels) down to a more granular level (i.e. Referrers). The percentage of sessions shows an actual percentage of each traffic source. Having an understanding at these different levels leads to more informed business decisions. 
 
 ![See the different sources of traffic to your site with this Acquisitions panel.](./sites-dashboard/images/03.png)
 
@@ -88,11 +92,11 @@ The reporting works best if your marketing campaign uses UTM parameters. UTM par
 
 ## Visitors by Day and Time
 
-The Visitors by Day and Time panel visualizes the days and times when visitors come to your Site. This helps you understand when your Site is most active. You can use this information, for example, to know when to release important information or launch an advertising campaign.
+The Visitors by Day and Time panel visualizes the days and times when visitors come to your site. This helps you understand when your site is most active. You can use this information, for example, to know when to release important information or launch an advertising campaign.
 
 ![A specialized chart identifies when your site is most heavily visited.](./sites-dashboard/images/04.png)
 
-The panel contains a grid with the days of the week on one axis and the time of day on the other axis. Darker cells in the grid indicate heavier Site traffic at the corresponding day and time. Tooltips for each cell show the number of visitors for that day and time.
+The panel contains a grid with the days of the week on one axis and the time of day on the other axis. Darker cells in the grid indicate heavier site traffic at the corresponding day and time. Tooltips for each cell show the number of visitors for that day and time.
 
 ```{note}
 This panel is not affected by the timezone setting but is based on the Analytics Cloud user's timezone.
@@ -100,7 +104,9 @@ This panel is not affected by the timezone setting but is based on the Analytics
 
 ## Search Terms and Interests
 
-The Search Terms and Interests panels show your visitors' most common search terms and the topics they're interested in, respectively. Search terms are collected from the search query parameter in your Site's URL. Interest topics are derived from the keyword metadata of the pages that visitors view. 
+The Search Terms and Interests panels show your visitors' most common search terms and the topics they're interested in, respectively. Search terms are collected from the search query parameter in your site's URL. Interest topics are derived from the keyword metadata of the pages that visitors view. 
+
+The percentage of searches shows what percent of searches contained that search query term in the given time range. The percentage of sessions shows what percent of sessions contained that interest in the given time range.
 
 ![Commonly used search terms are presented over a period time.](./sites-dashboard/images/05.png)
 
@@ -110,26 +116,26 @@ To view the full list of interest topics, click *All Interests* at the bottom of
 
 ## Sessions by Location
 
-The Sessions by Location panel shows the countries from which visitors access your Site. Countries with more visitors are shaded darker on the map. The country names appear below the map along with the number and percentage of visitors for each.
+The Sessions by Location panel shows the top countries from which visitors access your site. Countries with more visitors are shaded darker on the map. The country names appear below the map along with the number and percentage of visitors for each. The top five countries are listed along with their percentage value they represent across all sessions. The remaining countries that are not in the top five are combined as a single percentage value.
 
 ![Colored shading on a map diagram quickly identifies your users' country of origin.](./sites-dashboard/images/06.png)
 
 ## Session Technology
 
-The Session Technology panel shows the devices, operating systems, and browsers visiting your Site. Tooltips for each graph element display more detailed data for that element. On the Devices tab, for example, mouse over each bar on the bar graph to see the operating system data for that device.
+The Session Technology panel shows the devices, operating systems, and browsers used to visit your site. A breakdown by percentages are shown for different device types, different operating system types, and different browser types. Tooltips for each graph element display more detailed data for that element. On the Devices tab, for example, mouse over each bar on the bar graph to see the operating system data for that device.
 
 ![You can use this screen to identify the distribution of users across operating systems.](./sites-dashboard/images/07.png)
 
 ## Cohort Analysis
 
-The Cohort Analysis panel shows a [cohort analysis](https://en.wikipedia.org/wiki/Cohort_analysis) based on visitors from a specific acquisition date (the cohort) and whether they return to your Site over a given time period. 
+The Cohort Analysis panel shows a [cohort analysis](https://en.wikipedia.org/wiki/Cohort_analysis) based on visitors from a specific acquisition date (the cohort) and whether they return to your site over a given time period. 
 
 ![Identify usage patterns for groups of users over a period of time using Cohort Analysis.](./sites-dashboard/images/08.png)
 
 Use the selector menus at the top left of the panel to select the visitor type (All, Anonymous, or Known) and time period (Day, Week, or Month).
 
-For example, if you select All Visitors and Day, the percentage of visitors from a given acquisition date that return to your Site appear in the chart for each following day.
+For example, if you select All Visitors and Day, the percentage of visitors from a given acquisition date that return to your site appear in the chart for each following day.
 
 ## Related Information
 
-[Understanding Interests](../people/individuals/understanding-interests/)
+- [Understanding Interests](../people/individuals/understanding-interests/)

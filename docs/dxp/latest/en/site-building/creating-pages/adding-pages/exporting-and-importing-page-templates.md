@@ -13,13 +13,13 @@ For Liferay DXP 7.4+, Page Template Collections are called Page Template Sets in
 
 ## Exporting a Page Template
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Design* &rarr; *Page Templates*.
 
 1. Select the *Page Templates* tab.
 
-1. Select the Page Template Set that contains the desired template.
+1. Select the page template set that contains the desired template.
 
-1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired content page template and select *Export*.
+1. Click *Actions* (![Actions button](../../../images/icon-actions.png)) for the desired content page template and select *Export*.
 
    ![Click Export to export your page template as a ZIP file](./exporting-and-importing-page-templates/images/01.png)
 
@@ -42,7 +42,7 @@ The ZIP file may contain different types of page templates as well, like `displa
 
 ## Importing a Page Template
 
-1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and go to *Design* &rarr; *Page Templates*.
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) and navigate to *Design* &rarr; *Page Templates*.
 
 1. Click *Options* (![Options icon](../../../images/icon-options.png)) in the Application Bar and select *Import*.
 
@@ -56,13 +56,17 @@ The ZIP file may contain different types of page templates as well, like `displa
 
    If you import an existing page template, see [Importing an Existing Page Template](#importing-an-existing-page-template) for more information.
 
-   To cancel the operation and go back to the Page Templates page, click *Cancel*.
+   To cancel the operation and go back to the page templates page, click *Cancel*.
 
    ![Page templates are imported as ZIP files.](./exporting-and-importing-page-templates/images/03.png)
 
 1. Once the importing process is complete, you are redirected to an [import outcome page](#import-outcome-page).
 
-1. Click *Upload Another File* to import another file or *Done* to go back to the Page Templates page.
+1. Click *Upload Another File* to import another file or *Done* to go back to the page templates page.
+
+```{Important}
+To transfer page templates between DXP environments, use the LAR export and import method.
+```
 
 ### Importing an Existing Page Template
 
@@ -72,7 +76,7 @@ If you import a page template and items from the ZIP file already exist, you can
 
 **Overwrite Existing Items**: Duplicated existing items are overwritten.
 
-**Keep Both**: a numbered copy of existing items is imported.
+**Keep Both**: A numbered copy of existing items is imported.
 
 Once the importing process is complete, you are redirected to an [import outcome page](#import-outcome-page).
 
@@ -88,8 +92,6 @@ On the import outcome page, users can see the successfully imported entries, war
 
 ## Related Topics
 
-[Creating a Page Template](./creating-a-page-template.md)
-
-[Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md)
-
-[Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
+* [Creating a Page Template](./creating-a-page-template.md)
+* [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md)
+* [Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)

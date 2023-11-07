@@ -3,7 +3,7 @@ uuid: 9d40c268-3ab6-4358-bcac-a43d706d8a3b
 ---
 # Creating Navigation Menus
 
-Clarity's navigation menu is getting cluttered, as it shows all the pages by default. The Menu Display fragment's default configuration shows the page hierarchy of the site. Remember that you excluded Careers, Sign In, and Search from the default menu display, so those pages aren't showing.
+Clarity's navigation menu is getting cluttered, as it shows all the pages by default. The Menu Display fragment's default configuration shows the site's page hierarchy. Remember that you excluded Careers, Sign In, and Search from the default menu display, so those pages don't appear.
 
 ![The default navigation menu displays the site's pages.](./creating-navigation-menus/images/01.png)
 
@@ -73,11 +73,13 @@ The menu display fragment showing the current navigation is added to the master 
 
    In addition to these site menus defined in the Navigation Menus application, you can click Contextual Menus to see some additional dynamic menu options. See [Configuring Menu Displays](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/configuring-menu-displays) for more information.
 
-   Before this lesson, Clarity had three pages not appearing in the menu display fragment's page hierarchy menu: Careers, Sign In, and Search. That menu is no longer in use, but those pages were not explicitly added to the new header navigation menu, so they continue to remain outside of the navigation.
+   Before this exercise, Clarity had three pages hidden from the menu display fragment's page hierarchy menu: Careers, Sign In, and Search. That menu is no longer in use, but those pages were not explicitly added to the new header navigation menu, so they continue to remain outside of the navigation.
 
 In addition to the header navigation, Clarity needs the menus for the footer: *Shop*, *Clarity*, and *Resources*.
 
 The Shop menu includes categories for products. These categories must be created in the Global site, so log in with Kyle Klein, the instance administrator.
+
+<!-- We should not configure the Shop menu in this course. It should all be done in the Commerce course. I definitely don't want to introduce categories here; they're reserved for the next course (Content Manager). -Rich -->
 
 1. Go to the Global site by clicking *Select Site* (![Select Site](../../images/icon-compass.png)) &rarr; *My Sites* &rarr; *Global*.
 
@@ -125,11 +127,11 @@ Now that the menus are created, add them to the footer.
 
    ![Display each menu in a Menu Display widget in the footer.](./creating-navigation-menus/images/11.png)
 
-Now Clarity's header and footer is using navigation menus to show its lists. The SHOP menu contains categories with no display pages, so the categories remain hidden for now. These will be populated in the [Commerce Architect](../../commerce-architect.md) course.
+Now Clarity's header and footer uses navigation menus to show its lists. The SHOP menu contains categories with no display pages, so the categories remain hidden for now. These are populated in the [Commerce Architect](../../commerce-architect.md) course.
 
 ![Clarity's master page uses navigation menus heavily.](./creating-navigation-menus/images/12.png)
 
-Next Clarity's design team has requested a [re-design of the Home page](./designing-the-home-page.md), with new fragments and compositions.
+Next: Clarity's design team has requested a [re-design of the Home page](./designing-the-home-page.md), with new fragments and compositions.
 
 ## Relevant Concepts
 

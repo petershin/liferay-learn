@@ -3,7 +3,7 @@ uuid: 4925291c-19c3-411d-9870-7f1768ad6df7
 ---
 # Importing Fragments and Resources
 
-Clarity needs fragments and images in the site to aid in building out their pages. With these the site creators have the resources required to create the site while meeting design and branding requirements. Log in as Preston Palmer, the site administrator user, for this exercise.
+Next, you'll import fragments and images created by their designers to aid in building out their pages. With these the site creators have the resources required to create the site while meeting Clarity's design and branding requirements. Log in as Preston Palmer, the site administrator user, for this exercise.
 
 ## Downloading the Fragments and Images
 
@@ -22,7 +22,7 @@ Clarity needs fragments and images in the site to aid in building out their page
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and click *Documents and Media*.
 
-1. Open the *Add* menu, (![Add](./../../images/icon-add.png)), then click *Multiple Files*.
+1. Click *Add*, (![Add](./../../images/icon-add.png)), then click *Multiple Files*.
 
 1. Select all the files in `liferay-q9c4.zip/images` and click *Publish*.
 
@@ -37,6 +37,8 @@ These images appear in Documents and Media:
 
 First zip up the fragment set that was included in the `liferay-q9c4.zip` folder, then import the fragments, compositions, and resources into Liferay.
 
+<!-- Wouldn't it be easier for students if we had two .zips; one with images, and one already properly formatted for the fragments, compositions, and resources? -Rich -->
+
 1. Go to `liferay-q9c4.zip` and enter
 
    ```bash
@@ -45,7 +47,7 @@ First zip up the fragment set that was included in the `liferay-q9c4.zip` folder
 
 1. In Liferay, open the Site menu (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Fragments*.
 
-1. Open the fragment set *Actions* menu (![Actions Button](../../images/icon-actions.png)) and select *Import*.
+1. Click *Actions* next to the fragment set (![Actions Button](../../images/icon-actions.png)) and select *Import*.
 
 1. Select `clarity-fragments.zip` and click *Import*.
 
@@ -60,12 +62,12 @@ First zip up the fragment set that was included in the `liferay-q9c4.zip` folder
    - `sign-in-fragment`
    - `user-nav-fragment`
 
-   There are fragment compositions and custom fragments in this folder. In addition, `sign-in-image.png` was included as a fragment resource. See the Resources tab of the fragment set to confirm.
+   There are fragment compositions and custom fragments in this folder. In addition, `sign-in-image.png` was included as a fragment resource. See the fragment set's Resources tab to confirm.
 
    - Custom fragments are developed by you, if none of the [out-of-the-box fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) suit your needs. Often you can start by [copying an existing fragment](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/duplicating-fragments) that contains some of the HTML, CSS, or JavaScript you'll need to create your own fragment.
    - [Fragment compositions](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) are reusable fragment groups you've added to the content page editor and saved for repeated use.
 
-Now that you've imported the required fragments and resources, you can use them to [create the Clarity site](./adding-the-home-page.md).
+Next: [add the home page](./adding-the-home-page.md) using these fragments.
 
 ## Relevant Concepts
 

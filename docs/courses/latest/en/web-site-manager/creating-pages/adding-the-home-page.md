@@ -3,7 +3,7 @@ uuid: e33a05f2-6716-4fda-a14b-ad6f8221e534
 ---
 # Adding the Home Page
 
-Right now, browsing to <http://localhost:8080> loads the default site and the default home page, with the option to sign in. In the last module, you changed the instance name and set the logo. This began to give the site a customized look and feel.
+Right now, browsing to <http://localhost:8080> still shows the default site. In the last module, you changed the instance name and set the logo. This began to give the site a customized look and feel.
 
 ![The default home page has a header, footer, and some Welcome to Liferay content.](./adding-the-home-page/images/01.png)
 
@@ -12,6 +12,8 @@ Clarity needs its own home page. Page creation and management is the work of a s
 1. Log in as the site administrator, Preston Palmer: `preston@clarityvisionsolutions.com`, password `test`.
    <!--This password is a guess. Even if it's right, must make sure that it stays correct. -->
 
+   <!-- I don't see this user in the [previous course](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users); where was he added? Is he in Makoto's site initializer? -Rich -->
+
 1. Go to the Home page and click *Edit* (![Edit](../../images/icon-edit.png)) in the administrative header.
 
    The content page editor appears. This is where you add content, functionality, and structure to the page.
@@ -19,6 +21,8 @@ Clarity needs its own home page. Page creation and management is the work of a s
 1. Open the browser (![Browser](../../images/icon-hierarchy.png)) and expand all the elements to get a snapshot of the page's structure: 
 
    ![The default home page has some content defined already.](./adding-the-home-page/images/02.png)
+
+   <!-- Above image shows up as huge; remember images have to be halved in size if taken on a HIDPI display. -Rich --> 
 
 1. Click the outermost container's *Actions* menu (![Actions](../../images/icon-actions.png)), then click _Delete_.
 
@@ -38,15 +42,19 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
    ![These elements were added with the container fragment and the banner fragment.](./adding-the-home-page/images/03.png)
 
+   <!-- This image is also huge. -Rich -->
+
 1. Rename the Banner's top level container. In the Browser sidebar, open the *Actions* menu (![Actions](../../images/icon-actions.png)) and click _Rename_.
 
    ![Rename the banner's container for readability.](./adding-the-home-page/images/04.png)
 
+   <!-- As is this image. From here, I'll just say please review all your images in a Markdown preview to determine if they need to be resized. -Rich -->
+
 1. Enter _Banner Container_.
 
-1. Click _Banner Container_ in the browser sidebar and open its settings (in the right sidebar menu). In the General section, set the minimum height of the banner to 80VH. This ensures the banner takes up much of the home page's space.
+1. Click _Banner Container_ in the browser sidebar and open its settings (in the right sidebar menu). In the General section, set the minimum height of the banner to 80VH. This ensures the banner takes up 80% of the Viewport Height of the current device.
 
-1. Configure the banner so its inner container is centered.  Set the Banner Container's Content Display to _Flex Column_ and Justify Content to _Center_.
+1. Configure the banner so its inner container is centered. Set the Banner Container's Content Display to _Flex Column_ and Justify Content to _Center_.
 
 1. Configure the inner container and its elements (heading, paragraph, and button) to have some padding around them. Click the innermost _Container_ in the sidebar to open its settings, then click _Styles_.
 
@@ -59,11 +67,16 @@ Clarity needs its own home page. Page creation and management is the work of a s
 1. Open the _Styles_ menu in the right sidebar, and set the *Background Image* to `clarity-banner-image`.
 
 <!-- The text is white, so it doesn't appear with this very light image background. Need to change this and verify it will look good with the dialect/clarity style book combo too. -->
+
+<!-- Or change the text color. -Rich -->
+
 1. Change the text on the page by double clicking the element to edit:
 
    - **Heading:** _See Well, Look Good_
    - **Paragraph:** You've never seen yourself this well, looking this good.
    - **Button:** Learn More
+
+   <!-- I love the slogan. -Rich -->
 
 1. Click the _Publish_ Button.
 
@@ -71,7 +84,7 @@ Now there's a home page for Clarity. It's not fully implemented yet, but users c
 
 ![There's a home page for Clarity's public site.](./adding-the-home-page/images/05.png)
 
-Before completing the home page design and moving on to design each additional page, Clarity wants to [create a custom header and footer for all its pages](./defining-the-pages-header-and-footer.md).
+Next: [create a custom header and footer for all pages](./defining-the-pages-header-and-footer.md).
 
 ## Relevant Concepts
 

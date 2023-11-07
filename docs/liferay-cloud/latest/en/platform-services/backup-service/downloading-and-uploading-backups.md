@@ -13,9 +13,9 @@ The Backups page is only available in production environments for backup service
 
 ## Downloading Backups via the CLI Tool
 
-> Requires CLI tool version 3.12.0+, backup service version 5.9.0+, and Liferay service version 5.3.0+.
+{bdg-secondary}`Requires CLI tool version 3.12.0+, backup service version 5.9.0+, and Liferay service version 5.3.0+`
 
-You can use the [CLI tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to directly download backups, including both the database and document library volume.
+You can use the [CLI tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) to download backups directly, including both the database and document library volume.
 
 Run this command using a specific backup's ID to download its database and document library simultaneously:
 
@@ -23,9 +23,15 @@ Run this command using a specific backup's ID to download its database and docum
 lcp backup download --backupId [ID]
 ```
 
-Optionally, add the `--database` flag to this command to download only the database, or use the `--doclib` flag to download only the document library.
+There are three optional command line switches: 
 
-You can also optimize your speed downloading the document library using the `--concurrency` flag to define the number of files to download in parallel (up to 10,000), like this example:
+`--database` specifies downloading only the database. 
+
+`--doclib` specifies downloading only the document library.
+
+`--concurrency` defines the number of files to download in parallel (up to 10,000).
+
+Here's an example of using multiple switches: 
 
 ```bash
 lcp backup download --backupId [ID] --doclib --concurrency 500
@@ -35,7 +41,7 @@ The optimal number of files to download concurrently varies depending on your sy
 
 ## Uploading Backups via the CLI Tool
 
-> Requires CLI tool version 3.12.0+, backup service version 5.9.0+, and Liferay service version 5.3.0+
+{bdg-secondary}`Requires CLI tool version 3.12.0+, backup service version 5.9.0+, and Liferay service version 5.3.0+`
 
 ```{warning}
 Database table and column names are case sensitive in Liferay Cloud. Ensure that the table names are in Pascal case before uploading your database. See [Ensuring Correct Table Capitalization](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) for more information.
@@ -107,19 +113,19 @@ You can only download backups via the console **before backup service 5.9.0**. F
 
 Follow these steps (as an administrator) to download a backup from the *Backups* page in your chosen environment:
 
-1. Click on the *Actions* button ( ⋮ ) for the backup you want to download.
+1. Click *Actions* ( ⋮ ) for the backup you want to download.
 
 1. Click on *Download*.
 
    ![Click on the Actions button, and then click Download.](./downloading-and-uploading-backups/images/01.png)
 
-1. Click on the *Database* (`.gz`) or *Liferay* (`.tgz`) file to start downloading. Together, these zip archives comprise the environment backup.
+1. Click the *Database* (`.gz`) or *Liferay* (`.tgz`) file to start downloading. Together, these zip archives comprise the environment backup.
 
-    ```{note}
-    If your Backup service is not yet updated to version `4.2` or above, then the Database volume is downloaded as a `.tgz` archive instead of `.gz`.
-    ```
+   ```{note}
+   If your Backup service is not yet updated to version `4.2` or above, then the Database volume is downloaded as a `.tgz` archive instead of `.gz`.
+   ```
 
-    ![Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
+   ![Click to download the database and Liferay data volume files.](./downloading-and-uploading-backups/images/02.png)
 
 ## Uploading Backups via the Console
 
@@ -129,19 +135,19 @@ Before you can upload a backup to Liferay Cloud, you must compress the database 
 Database table and column names are case sensitive in Liferay Cloud. Ensure that the table names are in Pascal case before uploading your database. See [Ensuring Correct Table Capitalization](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) for more information.
 ```
 
-Follow these steps from the *Backups* page:
+Follow these steps from the Backups page:
 
 1. Click *Upload Backup...* near the top of the screen.
 
 1. On the Upload Backup page, expand the appropriate environment, and then click the `+` icons for both the database and document library to upload them.
 
-    ![Click the icons to upload both the database and document library as .gz archives.](./downloading-and-uploading-backups/images/03.png)
+   ![Click the icons to upload both the database and document library as .gz archives.](./downloading-and-uploading-backups/images/03.png)
 
 1. When both the database dump and document library are uploaded, click *Initiate Upload*.
 
-Liferay Cloud begins using the files you uploaded to generate a backup and add it to the list you can restore to your environments. While the backup is being generated, other backups cannot be generated or restored.
+Liferay Cloud begins using the files you uploaded to generate a backup and adds it to the list you can restore to your environments. While the backup is being generated, other backups cannot be generated or restored.
 
-A success message appears on the page when the backup is generated and the service resumes normal operation.
+A success message appears on the page when the backup is generated, and the service resumes normal operation.
 
 ![When the backup is finished being added to the list in your environment, a success message appears.](./downloading-and-uploading-backups/images/04.png)
 

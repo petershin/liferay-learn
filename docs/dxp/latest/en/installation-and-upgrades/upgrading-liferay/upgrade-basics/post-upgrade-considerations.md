@@ -19,7 +19,7 @@ rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfig
 
 Re-indexing search indexes is required for major version upgrades. When moving to a new update, applying a service pack, or upgrading to a new GA (rolling release) within the same Liferay version, consult the release highlights for the version to determine if a re-index is required. Here's how to re-index search indexes:
 
-1. Click *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Control Panel*. 
+1. Click *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Control Panel*.
 
 1. Click on *Search* in the Configuration section, select the *Index Actions* tab, and click *Reindex* for All Search Indexes. The re-index executes and displays a success message.
 
@@ -47,13 +47,15 @@ Features and behaviors change with new Liferay versions. Review how the followin
 
 ### Enable Web Content View Permissions
 
-Prior to 7.1, all users could view web content articles by default. Now view permissions are checked by default. Here are the main options for opening view permissions:
+Prior to 7.1, all users could view web content articles by default. Now view permissions are checked by default. You can edit view permissions for each web content article per role.
 
-**Option 1 (7.4+):** If only a few web content articles exist, edit view permissions for each web content article per role.
-
-**Option 2 (Prior to 7.4):** Open view permissions for all web content articles by navigating to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Web Content* &rarr; *Virtual Instance Scope* &rarr; *Web Content* and de-selecting *Article view permissions check enabled*.
+```{note}
+Prior to 7.4, you could open view permissions for all web content articles by navigating to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Web Content* &rarr; *Virtual Instance Scope* &rarr; *Web Content* and de-selecting *Article view permissions check enabled*.
+```
 
 <!-- This makes no sense to me. You only explain what to do on 7.4+ if there are only a few articles. If you're on 7.4+ and you have lots of web content articles, what do you do? Is there a bulk way to deal with them? -Rich -->
+
+<!-- I talked to Lourdes Besada and she said there are initiatives to offer this bulk functionality in the UI. Russ also mentioned that we should document only one way to do this, so I should refactor the section a little. So, I decided to add this note to keep the method used prior to 7.4 and I did not offer other options as Lourdes mentioned that this is the only option throught the UI. Eric -->
 
 ![Disable the permissions check for viewing web content by scrolling down in the Web Content menu in the System Settings.](./post-upgrade-considerations/images/02.png)
 

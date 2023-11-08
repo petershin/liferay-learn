@@ -47,7 +47,7 @@ To add a validation,
    Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
    ```
 
-1. Enter a localizable *error message*. This message appears whenever the validation is triggered and field entries do not meet one or more of the defined conditions.
+1. Enter a localizable *error message*. This message appears whenever the validation is triggered, and field entries do not meet one or more of the defined conditions.
 
 1. Select an output validation type to determine where the error message appears.
 

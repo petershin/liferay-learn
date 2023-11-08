@@ -3,7 +3,7 @@ uuid: a50d28b9-ca13-4227-8480-d968dc8fc470
 ---
 # Using Read-Only Fields
 
-Some use cases may require data fields to be read-only. For example, data integrity may require some field values to remain immutable, or you may need to prevent unauthorized users from updating specific fields (e.g., [state fields](./adding-and-managing-custom-states.md)). With Liferay Objects, you can configure any custom field to be read-only. This prevents users from directly updating the field's value except under specified conditions. You can also use [actions](../actions.md) to update these field values.
+Some use cases may require data fields to be read-only. For example, data integrity may require some field values to remain immutable, or you may need to prevent unauthorized users from updating specific fields (e.g., [state fields](./adding-and-managing-custom-states.md)). You can configure any custom field to be read-only. This prevents users from directly updating the field's value except under specified conditions. You can also use [actions](../actions.md) to update these field values.
 
 ## Adding a Read-Only Field
 
@@ -15,7 +15,7 @@ Some use cases may require data fields to be read-only. For example, data integr
 
    **True**: Mark the field as read-only.
 
-   **False**: Allow users to directly edit the field.
+   **False**: Allow users to change the field's value.
 
    **Conditional**: Use expression builder to set conditions for when the field is read-only.
 

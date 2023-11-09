@@ -56,7 +56,7 @@ In this example, the User system object is in a one-to-many relationship (`userR
 
 ![Liferay generates REST endpoints for querying and managing the relationship.](./extending-system-objects/images/02.png)
 
-See [Using Relationships REST APIs](../objects-tutorials/using-apis/using-relationship-rest-apis.md) for an introductory tutorial.
+See [Using Relationships REST APIs](../understanding-object-integrations/using-custom-object-apis.md#using-relationship-rest-apis) for an introductory tutorial.
 
 ## Adding Actions
 

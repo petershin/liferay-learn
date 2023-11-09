@@ -13,7 +13,7 @@ To add and manage these extensions,
 
 1. Choose your client extension type.
 
-![Client extensions' user interface page for viewing, editing, and adding client extensions to the site](./client-extensions-ui-reference/01.png)
+![Client extensions' user interface page for viewing, editing, and adding client extensions to the site](./client-extensions-ui-reference/images/01.png)
 
 ## Widget Client Extensions
 

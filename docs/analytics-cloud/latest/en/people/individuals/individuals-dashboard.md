@@ -53,7 +53,7 @@ The Interests panel presents the top 5 most popular topics.
 
 ![The Interests panel presents a chart of popular topics.](./individuals-dashboard/images/04.png)
 
-Theses topics are derived from the title, description, and keyword tags of your pages' HTML.
+The percentage of total individuals for interests shows what percent of individuals are interested in a specific topic. Theses topics are derived from the title, description, and keyword tags of your pages' HTML.
 
 To view the full list of interest topics, click *View All Interests* in the panel. Alternatively, click the Interests tab at the top of the page. 
 

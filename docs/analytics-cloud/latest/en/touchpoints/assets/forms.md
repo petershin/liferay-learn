@@ -36,7 +36,7 @@ Useful with the time period filter, Views is the number of views for a Form in a
 
 ### Abandonment
 
-Abandonment is the daily (or hourly if Yesterday or Last 24 Hours is selected) percentage of users that interacted with the form but stopped short of submitting an entry over the selected time period.
+Abandonment is the percentage rate of individuals who left a form without submitting it. The rate is shown for the selected time period (e.g. Last 30 days).
 
 ### Completion Time
 

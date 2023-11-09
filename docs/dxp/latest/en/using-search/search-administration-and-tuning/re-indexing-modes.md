@@ -47,7 +47,10 @@ In earlier Liferay versions, re-indexing always deleted content from the live pr
 In general, choosing concurrent or sync re-indexing mode is recommended, to avoid downtime during a re-index. However, there are considerations to account for when deciding which mode is right in your situation.
 
 ### Concurrent Mode Requires More Disk Space for Elasticsearch
-<!-- Add a short paragraph about this-->
+
+Because concurrent re-indexing mode creates a new index alongside the old one, it requires more disk space in the Elasticsearch system's infrastructure than the other modes. To avoid errors due to insufficient disk space, Liferay estimates whether the available space is sufficient and warns you if it isn't:
+
+![You're warned if Liferay estimates insufficient disk space for a concurrent re-index.](./re-indexing-modes/images/03.png)
 
 ### Sync Mode cannot Account for Mappings and Index Settings Changes
 <!-- Verify -->

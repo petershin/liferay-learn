@@ -83,6 +83,34 @@ Follow these steps to create a product bundle:
 
 ![Customers can select an option from the bundle.](./creating-product-bundles/images/04.png)
 
+## Editing Bundles from the Mini Cart
+
+After adding a product bundle to the mini cart, you can edit it before checking out.
+
+1. Add the product bundle to your cart.
+
+1. Open the mini cart.
+
+   You can click on *Show Product Options* to view the currently selected option from the bundle. You can click on it again to hide the options.
+
+   ![You can view the selected option of a bundle in the mini cart.](./creating-product-bundles/images/05.png)
+
+1. Click the *Actions* (![Actions icon](../../../images/icon-actions.png)) icon next to the product and select *Edit*.
+
+   ![Click the Actions icon to edit or delete the bundle.](./creating-product-bundles/images/06.png)
+
+1. Choose one of the other available options.
+
+   ![Choose one of the available options and click save.](./creating-product-bundles/images/07.png)
+
+1. Click *Save*.
+
+The price of the cart automatically updates if the selected option is configured with a different price. 
+
+```{important}
+The option to edit the bundle isn't available if you add the base product to cart. 
+```
+
 ## Related Topics
 
 * [Using Product Options](./using-product-options.md)

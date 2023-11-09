@@ -21,26 +21,26 @@ In the first module, you created three products all having a single SKU, or Stoc
 
 1. Enable all three toggles: *Use in Faceted Navigation*, *Required*, *SKU Contributor*.
 
-1. In the *Values* section, click *Add* (![Add](../../images/icon-add.png)).
+1. In the Values section, click *Add* (![Add](../../images/icon-add.png)).
 
-1. Enter name as *Single Vision* and position as 0.
+1. Enter name as *Single Vision* and position as *0*.
 
 1. Click *Submit*. 
 
-1. Repeat the same for two more values: *Progressive* with position 1 and *Bifocal* with position 2. 
+1. Repeat the same for two more values: *Progressive* with position *1* and *Bifocal* with position *2*. 
 
    ![Enter selectable values for the option.](./adding-options/images/02.png)
 
 1. Click *Save*.
 
-This creates an option template called *Lens Type* that you can add to multiple products. You also have the option to directly create options from the product configuration page. Repeat the steps for another option, *Lens Coating*, with the following values.
+This creates an option template called Lens Type that you can add to multiple products. You can also create options directly from the product configuration page. Repeat the steps for another option, *Lens Coating*, with the following values:
 
 * Blue Light Filter
 * Blue Light Filter + UV Protection
 
 ## Adding Options to a Product
 
-When adding an SKU contributing option to a product, it renders the existing SKU inactive. After adding the option to a product, you can generate all SKU combinations based on the available options. Since you've created two options, one with 3 values and one with 2 values, it adds 6 SKUs for a single product. 
+When adding an SKU-contributing option to a product, it renders the existing SKU inactive. After adding the option to a product, you can generate all SKU combinations based on the available options. Since you've created two options, one with three values and one with two values, it adds six SKUs for a single product. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 

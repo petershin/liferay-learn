@@ -26,7 +26,7 @@ Log in as Damian Dunne, the category manager for Clarity. Damian wants to enrich
 
 1. Click *Save*.
 
-This creates a new specification called frame color. Now, create the remaining specifications following the steps above. 
+This creates a new specification called frame color. Now, use the steps above to create the remaining specifications: 
 
 * Frame Dimensions
 * Frame Width
@@ -37,6 +37,8 @@ This creates a new specification called frame color. Now, create the remaining s
 * Sunglass Style
 
 For *Frame Dimensions*, *Frame Width*, and *Frame Size*, you must disable the *Use in Faceted Navigation* toggle. 
+
+<!-- Why? Don't leave the student hanging; you didn't explain this in the intro. -Rich -->
 
 ## Adding Specifications to Products
 

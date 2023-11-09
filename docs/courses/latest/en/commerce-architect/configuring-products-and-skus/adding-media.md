@@ -5,15 +5,15 @@ uuid: 2f2264fa-b842-4372-88be-88ab19840a94
 
 So far, you've configured a product and added specifications to give more information about the product to customers. One of the main components of product information is the product image itself. In this lesson, you'll learn how to add a product image to an existing product. 
 
-1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* → *Products*.
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
 1. Select *Maliyah*.
 
-1. Click on the *Media* tab.
+1. Click the *Media* tab.
 
 1. Click *Add* (![Add](../../images/icon-add.png)) or *Add Image*.
 
-1. Click on *Select File* and choose the image from the library. 
+1. Click *Select File* and choose the image from the library. 
 
    ![Choose the image, Maliyah.png, from the library.](./adding-media/images/01.png)
 

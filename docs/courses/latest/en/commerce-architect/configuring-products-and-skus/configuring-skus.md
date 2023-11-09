@@ -3,11 +3,11 @@ uuid: 434879ec-67ae-43a4-a08a-870a9892488e
 ---
 # Configuring SKUs
 
-Now that you've configured all of the basic details for a product, it’s time to configure the SKUs. The SKUs represent the actual physical item in the warehouse and configuring them involves configuring their dimensions, inventory, and pricing. 
+Now that you've configured all of the basic details for a product, it’s time to configure the SKUs. The SKUs represent the actual physical item in the warehouse. Configuring them involves setting their dimensions, inventory, and pricing. 
 
 ## Configuring SKU Prices
 
-After creating the catalog, a base price list and a base promotion list are created automatically. You'll now add prices for each SKU. There are two ways to do this. The first way is to add pricing information from the product configuration page. The second way is to add an entry in the base price list directly through the pricing application. The steps below show how to add pricing information from the product configuration page. 
+After creating the catalog, a base price list and a base promotion list are generated automatically. You'll now add prices for each SKU. There are two ways to do this. The first way is to add pricing information from the product configuration page. The second way is to add an entry in the base price list directly through the pricing application. The steps below show how to add pricing information from the product configuration page. 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
@@ -52,7 +52,7 @@ After creating the catalog, a base price list and a base promotion list are crea
 
 ## Configuring SKU Dimensions and Weight
 
-Remember adding the dimensions and weight for the products on the configuration page? These dimensions are applied automatically to all SKUs in the product as well. In our example, there are six SKUs for one product. The weight of each of these differ since they have different lenses and coatings. To change it for each SKU, 
+Remember adding the dimensions and weight for the products on the configuration page? These dimensions are applied automatically to all SKUs in the product as well. In this example, there are six SKUs for one product. The weight of each of these differ since they have different lenses and coatings. To change it for each SKU, 
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
@@ -82,7 +82,7 @@ Remember adding the dimensions and weight for the products on the configuration 
 
 1. Click *Publish*.
 
-This completes the configuration for one product. Repeat the steps above for the other two products with the following information. 
+This completes the configuration for one product. Use the following information to repeat the steps above for the other two products. 
 
    | Product   | SKU Weight                      |
    | :-------- | :------------------------------ |
@@ -111,7 +111,7 @@ Just as with pricing, there are two ways to add inventory for a SKU. The first w
 
 1. Click the *Inventory* tab.
 
-   Only the warehouse in Minnesota serves consumer orders and business orders whereas the warehouse in Oklahoma solely fulfills business orders. 
+   Only the warehouse in Minnesota serves both consumer orders and business orders. The warehouse in Oklahoma fulfills only business orders. 
 
 1. Enter the quantity as 100 for the Minnesota warehouse. 
 
@@ -123,6 +123,8 @@ Repeat the same process for each SKU of all products. After adding the inventory
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*. 
 
-1. Verify that the inventory is available for all the SKUs. You can also add inventory from here by clicking *Add* (![Add](../../images/icon-add.png)) and entering the SKU, warehouse, quantity, and clicking *Submit*.
+1. Verify that the inventory is available for all the SKUs. You can also add inventory from here by clicking *Add* (![Add](../../images/icon-add.png)) and entering the SKU, warehouse, and quantity. Click *Submit*.
 
 You completed adding and configuring channels, a catalog, warehouses, and products. It’s now time to build the storefront. In the next module, you'll build out the B2C storefront. 
+
+<!-- Add link to next module. -Rich -->

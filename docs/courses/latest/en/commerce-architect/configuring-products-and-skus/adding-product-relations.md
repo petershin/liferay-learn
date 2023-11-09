@@ -5,7 +5,7 @@ uuid: 59b2f172-2138-4e9a-b4e5-8d2edab86fa4
 
 You can use product relations to display products for up-selling, cross-selling, selling spares, accessories, or complementary products based on the product being viewed currently. For instance when viewing eyeglasses, related products can be other eyeglasses in the same price range. You can also create new relations apart from the ones available out-of-the-box. 
 
-Let’s now add a product relation for related products for each product in the catalog.
+For each product in the catalog, you can now add a product relation:
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 

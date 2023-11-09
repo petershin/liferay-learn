@@ -77,7 +77,7 @@ Segmentation is not the only way to create personalized experiences. Liferay DXP
 
 Liferay provides sophisticated, granular [permissions](https://learn.liferay.com/web/guest/w/dxp/users-and-permissions/roles-and-permissions) settings, so a content article or a page might not be shown to a user if they do not have the appropriate permission to see the content or page. For example an internal document is only accessible to HR people within an employee portal.
 
-When talking about the potential to use Roles and Permissions to personalize Liferay it is important to mention that the best practice is to only restrict access when it is required, and to use segmentation and experiences to provide a guided view, but still allow users to find other content in other ways. See the module on [authentication](./liferay-authentiation.md) for more details.
+When talking about the potential to use Roles and Permissions to personalize Liferay it is important to mention that the best practice is to only restrict access when it is required, and to use segmentation and experiences to provide a guided view, but still allow users to find other content in other ways. See the module on [authentication](../liferay-authentication.md) for more details.
 
 **Product Recommendations**
 

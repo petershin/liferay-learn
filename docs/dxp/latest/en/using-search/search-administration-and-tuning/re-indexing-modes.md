@@ -1,3 +1,6 @@
+---
+uuid: 3d46420e-a962-45c7-bd72-ef0f209003e8
+---
 # Re-Indexing Modes
 
 {bdg-secondary}`Liferay 7.4 2023.Q4+/GA98+`
@@ -33,8 +36,6 @@ You must use full mode to index all content when connecting to a new, empty Elas
 Use concurrent mode for high availability re-indexing of all content using a blue/green re-indexing strategy, as long as primary disk space for Elasticsearch is not an issue. Concurrent mode cannot be used for single model re-indexing. See [Additional Considerations](#additional-considerations) for more information.
 
 Use sync mode for high availability re-indexing when primary disk space for Elasticsearch is a concern, or for all high availability single model re-indexing needs. There are scenarios when sync mode can't properly account for system changes, and one of the other modes must be used. See [Additional Considerations](#additional-considerations) for more information.
-
-When to re-index: change in how data is indexed, a failed staging publication, or outages in the connection between Liferay and Elasticsearch result in stale index data, requiring a re-index.
 
 ![Choose from Full, Concurrent, or Sync re-index modes, depending on your needs.](./re-indexing-modes/images/01.png)
 

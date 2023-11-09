@@ -21,7 +21,7 @@ Follow these steps to create a product bundle:
 
 1. In the *Add Options* field, enter a *name* for your new bundle option, and click on *Create New*.
 
-   A new option template is created and applied to your product using the default option settings.
+   This creates a new option template and applies it to your product using the default option settings.
 
    ```{tip}
    Alternatively, you can create an option template via the *Options* page. This method is best for commonly used types of bundles. See [Using Product Options](./using-product-options.md) for more information.
@@ -41,17 +41,17 @@ Follow these steps to create a product bundle:
    * **Field Type**: Choose the type of field used for the option.
    * **Price Type**: Choose whether to use *Static* or *Dynamic* pricing for option values.
 
-      ```{note}
-      *Dynamic* uses the linked SKU's price for a value, while *Static* uses a fixed price set directly in the value field. Dynamic and static prices are added to the current product's base price.
+   ```{note}
+   *Dynamic* uses the linked SKU's price for a value, while *Static* uses a fixed price set directly in the value field. Dynamic and  static prices get added to the current product's base price.
 
-      Also, since product bundles use the *Price Type* attribute, they can only use the *Single Selection* and *Select from List* field types.
-      ```
+   Also, since product bundles use the *Price Type* attribute, they can only use the *Single Selection* and *Select from List* field types. 
+   ```
 
-   ![This form is used to configure the option's settings.](./creating-product-bundles/images/02.png)
+   ![Use this form to configure the option's settings.](./creating-product-bundles/images/02.png)
 
 1. Scroll down to the *Values* section, click *Add* (![Add Button](../../../images/icon-add.png)), and enter the following details for your value:
 
-   * **Name**: Set the display name used for the value. If SKU Contributor is enabled, this name is used for the value's SKU.
+   * **Name**: Set the display name used for the value. If you enable SKU Contributor, the option value's SKU uses this name.
    * **Position**: Set the value's priority to determine its placement in the option's field.
    * **Key**: This field is auto-generated to match the name field, though you can set it independently.
 
@@ -66,12 +66,12 @@ Follow these steps to create a product bundle:
    * **Product**: Link an existing SKU to the value and specify its quantity.
 
    ```{important}
-   Each of the option's values must be unique. This means the same product+quantity combination cannot be used for multiple values in the same option. However, the same value can be used in other options added to the product.
+   Each of the option's values must be unique. This means you cannot use the same product+quantity combination for multiple values in the same option. However, you can use the same value in other options added to the product.
 
    Also bundle values cannot link to other product bundles, to products with a *required* option, or to products with *subscription* enabled. If the bundle uses *dynamic* pricing, it can only link to *APPROVED* product instances.
    ```
 
-1. (Optional) If SKU Contributor is enabled for your option, go to the *SKUs* tab in the product's page, click *Add* (![Add Button](../../../images/icon-add.png)), and select *Generate All SKU Combinations*.
+1. (Optional) If you've enabled SKU Contributor for your option, go to the *SKUs* tab in the product's page, click *Add* (![Add Button](../../../images/icon-add.png)), and select *Generate All SKU Combinations*.
 
    This generates a new SKU for each option value, which you can edit in the SKUs tab.
 

@@ -263,7 +263,7 @@ You can use Elasticsearch's [snapshot and restore](https://www.elastic.co/guide/
 
    where `indices` sets the snapshotted index names to restore from. The indexes from the above call would be restored as `restored_liferay-20101-search-tuning-rankings` and `restored_liferay-20101-search-tuning-synonyms`, following the `rename_pattern` and `rename_replacement` regular expressions.
 
-If you've added search tuning configurations (i.e., synonym sets or results rankings) while running in Sidecar/Embedded mode, they'll disappear once you configure a production mode connection to Elasticsearch and perform a full re-index.
+If you've added search tuning configurations (i.e., synonym sets or results rankings) while running in Sidecar/Embedded mode, they'll disappear once you configure a production mode connection to Elasticsearch and re-index.
 
 To restore your existing search tuning index documents, you can use the Elasticsearch's [Reindex API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-reindex.html#docs-reindex), like this:
 

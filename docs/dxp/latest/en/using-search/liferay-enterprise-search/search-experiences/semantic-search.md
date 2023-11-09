@@ -73,7 +73,7 @@ To configure semantic search,
 
 1. [Choose a model or create your own.](#choosing-a-model)
 1. [Enable a text embedding provider and configure it in Liferay.](./semantic-search/setting-up-a-text-embedding-provider.md)
-1. [Re-index the text embeddings.](#re-indexing-the-text-embeddings)
+1. [Index the text embeddings.](#indexing-the-text-embeddings)
 1. [Create a Search Blueprint to perform a similarity search between the vectorized search terms and documents.](./semantic-search/creating-a-search-blueprint-for-semantic-search.md)
 
 ### Choosing a Model

@@ -50,7 +50,7 @@ Display categories under their vocabulary by selecting the Vocabulary Layout in 
 Select the vocabularies and categories to display in the facet. To enable this, switch the configuration in System Settings &rarr; Search &rarr; Category Facet Field from the default field, `assetCategoryIds`, to the `assetVocabularyCategoryIds` field. This setting specifies the field used to create the aggregations in the Category Facet. Setting `assetVocabularyCategoryIds` activates the vocabulary settings within the Category Facet widget's configuration screen. 
 
 ```{important}
-If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, perform a full re-index to include the necessary `assetVocabularyCategoryIds` field in the search documents.
+If you're upgrading from a Liferay version or update prior to 7.4 Update/GA 48 and there are already categorized assets in the system, re-index all search indexes to include the necessary `assetVocabularyCategoryIds` field in the search documents.
 ```
 
 ![Select the vocabulary.](./category-facet/images/06.png)

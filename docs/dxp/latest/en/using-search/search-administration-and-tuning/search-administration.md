@@ -26,11 +26,10 @@ Information about the search engine connection(s) is displayed here. For example
 
 In Index Actions, re-index at one of these levels:
 
-   * All indexable assets
-   * An individual indexable assets
-   * All spell check dictionaries
+**Global:** re-index all indexes and types, or all spell check dictionaries.
+**Individual Indexable Types:** re-index an indexable type individually.
 
-Beginning in Liferay 7.4, Server Administrators can also limit the scope of the re-index actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md). To choose which instances the index actions apply to,
+Beginning in Liferay 7.4, Server Administrators can limit the scope of the re-index actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md). To choose which instances the index actions apply to,
 
 1. Open Global Menu &rarr; Control Panel &rarr; Search and click the Index Actions tab.
 1. Use the Execution Scope tab to choose the instances to re-index.
@@ -41,9 +40,11 @@ Beginning in Liferay 7.4, Server Administrators can also limit the scope of the 
 [Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) are re-indexed via the application's dedicated settings menu. In the Global Menu, click _Metrics_ in the Applications &rarr; Workflow section, then open the Settings window (![Options](../../images/icon-actions.png)). See [Re-Indexing Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) for more information.
 ```
 
+In Liferay 7.4 2023.Q4 and later (Update/GA98+), you can configure the mode of the re-index to avoid search downtime. To learn about the introduced _Concurrent_ and _Sync_ modes, see [Re-Indexing Modes](./re-indexing-modes.md).
+
 ### Re-Indexing All Content
 
-When you perform a full re-index, all search engine documents in the [system and company indexes](./elasticsearch-indexes-reference.md) are dropped and recreated from the database. Elasticsearch's log prints `update_mapping` messages:
+When you re-index all content, all search engine documents in the [system and company indexes](./elasticsearch-indexes-reference.md) are dropped and recreated from the database. Elasticsearch's log prints `update_mapping` messages:
 
 ```json
 {"type": "server", "timestamp": "2023-01-10T14:33:04,513Z", "level": "INFO", "component": "o.e.c.m.MetadataMappingService", "cluster.name": "LiferayElasticsearchCluster", "node.name": "lr-es", "message": "[liferay-20097/mc59Scl8TJeuvcDR3y2W-g] update_mapping [LiferayDocumentType]", "cluster.uuid": "QnWxrpxaSUKF2upHDNWKkQ", "node.id": "thpwCzS_TvGgfVxQ-P_l9g"
@@ -82,7 +83,7 @@ In Liferay 7.4 U45+/GA45+ and Liferay DXP 7.3 U14+, Liferay's log reports when t
 
 ### Re-Indexing Spell Check Dictionaries
 
-When you re-index the spell check dictionaries, the content of Liferay's dictionary file for each language (e.g., `com/liferay/portal/search/dependencies/spellchecker/en_US.txt`) is re-indexed for the [system and company index](./elasticsearch-indexes-reference.md). Elasticsearch's log prints an `update_mapping` message:
+Re-index the spell check dictionaries every time you re-index all content. When you re-index the spell check dictionaries, the content of Liferay's dictionary file for each language (e.g., `com/liferay/portal/search/dependencies/spellchecker/en_US.txt`) is re-indexed for the [system and company index](./elasticsearch-indexes-reference.md). Elasticsearch's log prints an `update_mapping` message:
 
 ```json
 {"type": "server", "timestamp": "2023-01-10T14:33:14,991Z", "level": "INFO", "component": "o.e.c.m.MetadataMappingService", "cluster.name": "LiferayElasticsearchCluster", "node.name": "lr-es", "message": "[liferay-0/9ZIx-bT6TyiekzarKELQkA] update_mapping [LiferayDocumentType]", "cluster.uuid": "QnWxrpxaSUKF2upHDNWKkQ", "node.id": "thpwCzS_TvGgfVxQ-P_l9g"  }

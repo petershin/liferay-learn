@@ -100,7 +100,7 @@ Use content display fragments to display site content individually or as part of
 <!--| Knowledge Base Article Navigation (Available 7.4 U_+/GA_+) | |-->
 
     ```{note}
-    Collection Filter fragments used in Collection Display fragments will only work if mapped to object collection providers or blueprint collection providers. 
+    Collection Filter fragments used in Collection Display fragments only work if mapped to object collection providers or blueprint collection providers. 
     ```
 
 ## Account

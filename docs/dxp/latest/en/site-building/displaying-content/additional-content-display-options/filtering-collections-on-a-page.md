@@ -30,7 +30,7 @@ Follow these steps to add and configure a Collection Filter Fragment to a page (
 The Collection Filter fragment's behavior changes depending on whether you configured the Keywords, Category, or Tags filter type.
 
     ```{note}
-    Collection Filter fragments used in Collection Display fragments will only work if mapped to object collection providers or blueprint collection providers. 
+    Collection Filter fragments used in Collection Display fragments only work if mapped to object collection providers or blueprint collection providers. 
     ```
 
 ### Filtering by Keyword

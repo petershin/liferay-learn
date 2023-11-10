@@ -22,9 +22,9 @@ The Admin User account is created by default in any new installation of Liferay 
     * Email address: `test@liferay.com`
     * Password: `test`
   
-    Note, if you used the setup wizard and set a different admin user email, input that email address instead. The default password will still be `test`.
+    Note, if you used the setup wizard and set a different admin user email, enter that email address instead. The default password is still `test`.
 
-1. Upon first sign in, you will be required to change your password. Input a new password (e.g. _learn_) and click _Save.
+1. Upon first sign in, you are required to change your password. Enter a new password (e.g. _learn_) and click _Save_.
 
 ```{warning}
 In a production environment, you should not use the default admin account. Instead, create admin accounts specific to your business. See the steps below.
@@ -66,7 +66,7 @@ To create a new admin account follow these steps:
 
 1. See [configuring mail](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) to set up Liferay with your email service. Liferay sends an email to the new user's email address upon account creation. 
 
-    To skip this step, disable the feature to require strangers to verify their email address. Navigate to _Control Panel_ &rarr; _Instance Settings_ &rarr; _User Authentication_. Uncheck the box for _Require strangers to verify their email address?_. Note, this is not recommended to be disabled for a production environment.
+    To skip this step (for example, if you are just testing Liferay), disable the feature to require strangers to verify their email address. Navigate to _Control Panel_ &rarr; _Instance Settings_ &rarr; _User Authentication_. Uncheck the box for _Require strangers to verify their email address?_. Note, this is not recommended to be disabled for a production environment.
 
     ![Uncheck require strangers to verify their email address.](./introduction-to-the-admin-account/images/07.png)
 
@@ -80,7 +80,7 @@ To create a new admin account follow these steps:
 
 1. Select the *Administrator* Role from the list (click *Choose*). The dialog box disappears and the Role is added to the list of Roles associated with your account. Scroll to the bottom and click _Save_.
 
-1. (Optional) If you did not [configure mail](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) in the step above, set an initial password for this new user. Click the _Password_ link in the left navigation pane. Input a password for the user, reenter the password, and click _Save_.
+1. (Optional) If you did not [configure mail](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) in the step above, set an initial password for this new user. Click the _Password_ link in the left navigation pane. Enter a password for the user, reenter the password, and click _Save_.
 
 The user is now a portal administrator. Log out and then log back in with your new user account.
 

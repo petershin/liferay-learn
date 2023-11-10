@@ -13,7 +13,7 @@ Using client extensions, you can extend Liferay without deploying OSGi modules. 
 
 ## Required Tools and Settings
 
-Install the three prerequisites for developing client extensions: 
+Install the three prerequisites for developing client extensions:
 
 1. Java 8 or JDK 11.
 
@@ -191,7 +191,7 @@ Then copy the archives from each project's `dist/` folder into the server's `[Li
 
 ## Context-Sensitive Information
 
-Client extensions are portable: you should never hard-code environment-specific details like domain name, network address, or Liferay's domains. Client extensions can find context-sensitive information about its context at runtime. 
+Client extensions are portable: you should never hard-code environment-specific details like domain name, network address, or Liferay's domains. Client extensions can find context-sensitive information about its context at runtime.
 
 Every client extension workload is provided with a set of *routes* containing important context-sensitive metadata automatically. With this routes-based approach, application logic can retrieve context sensitive information uniformly, regardless of where it is invoked. You only need to point your client extension projects to it.
 
@@ -217,7 +217,7 @@ The environment variable you use can point to one of two types of routes:
 
 1. `LIFERAY_ROUTES_CLIENT_EXTENSION`: The directory path to the route which contains context-sensitive metadata for the *client extension project* itself.
 
-   See [OAuth Headless Server Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationheadlessserver) and [OAuth User Agent Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationuseragent) for examples.
+   See [OAuth Headless Server Client Extensions](configuration-client-extensions.md#oauth-headless-server-client-extensions) and [OAuth User Agent Client Extensions](configuration-client-extensions.md#oauth-user-agent-client-extensions) for examples.
 
 ### Pointing to Routes in Liferay Experience Cloud
 

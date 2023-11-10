@@ -19,7 +19,7 @@ picklists/picklists-api-basics.md
 
 {bdg-secondary}`Liferay 7.4+`
 
-Liferay Picklists are predefined lists of string values that consist of a name/key pair and can include any number of items. Once a list is [created](./picklists/creating-picklists.md), you can use it to add a single select or multi-select field to Object definitions. You can use these fields to [filter displayed entries](./displaying-object-entries.md), [define custom entry states](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md), and more. When using picklists to define states, you can use [validations](./creating-and-managing-objects/validations/adding-custom-validations.md), [actions](./creating-and-managing-objects/actions/defining-object-actions.md), and [workflow processes](./enabling-workflows-for-objects.md) to implement complex business logic for each state.
+Liferay *picklists* are predefined lists of string values that consist of a name/key pair and can include any number of items. Once a list is [created](./picklists/creating-picklists.md), you can use it to add a single select or multi-select field to Object definitions. You can use these fields to [filter displayed entries](./displaying-object-entries.md), [define custom entry states](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md), and more. When using picklists to define states, you can use [validations](./creating-and-managing-objects/validations/adding-custom-validations.md), [actions](./creating-and-managing-objects/actions/defining-object-actions.md), and [workflow processes](./enabling-workflows-for-objects.md) to implement complex business logic for each state.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

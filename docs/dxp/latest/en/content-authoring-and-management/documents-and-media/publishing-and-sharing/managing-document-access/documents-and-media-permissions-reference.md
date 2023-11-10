@@ -70,14 +70,14 @@ Resource permissions grant access to view and act on resources in the Documents 
 | Delete            | Move documents to the recycle bin.                                                                                                                                                                                   |
 | Delete Discussion | Delete comments from documents.                                                                                                                                                                                      |
 | Download          | Download documents.                                                                                                                                                                                                  |
-| Override Checkout | Make changes to documents even when it is checked out by another user.                                                                                                                                               |
+| Override Checkout | Make changes to documents even when checked out by another user.                                                                                                                                               |
 | Permissions       | View and modify document permissions.                                                                                                                                                                                |
 | Update            | Edit or move documents.                                                                                                                                                                                              |
 | Update Discussion | Edit document comments.                                                                                                                                                                                              |
 | View              | View documents. Users with this permission can view all document metadata (e.g., title, description, adaptive media images, previews, thumbnails) and anything defined in attached document types and metadata sets. |
 
 ```{important}
-For Liferay 7.4 U75/GA75 and earlier version, the view permission grants users the ability to download assets. For 7.4 U76+/GA76+, Documents and Media includes a separate download permission, so you can manage view and download access separately. When upgrading, Liferay automatically assigns the download permission to all roles with the view permission. By default all users, including unauthenticated users, can download files. If you want to limit download access, you must remove this permission from roles that should not be able to download files.
+For Liferay 7.4 U75/GA75 and earlier versions, the view permission grants users permission to download assets. For 7.4 U76+/GA76+, Documents and Media includes a separate download permission, so you can manage view and download access separately. When upgrading, Liferay automatically assigns the download permission to all roles with the view permission. By default all users, including unauthenticated users, can download files. If you want to limit download access, you must remove this permission from roles that should not be able to download files.
 ```
 
 ### Shortcut

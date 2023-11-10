@@ -9,7 +9,7 @@ With Liferay's permissions framework, you can control which users can create, vi
 
 1. Navigate to the *Documents and Media* application. 
 
-1. Click the Actions button (![Actions Button](../../../../images/icon-actions.png)) for the desired file and select *Permissions*.
+1. Click *Actions* (![Actions Button](../../../../images/icon-actions.png)) for the desired file and select *Permissions*.
 
    ![Click the Actions button for the desired file and select Permissions.](permissions-and-documents/images/01.png)
 
@@ -21,7 +21,7 @@ With Liferay's permissions framework, you can control which users can create, vi
 
 1. Navigate to the *Documents and Media* application. 
 
-1. Click the Actions button (![Actions Button](../../../../images/icon-actions.png)) for the desired folder and select *Permissions*. See [Using Folders](../../uploading-and-managing/using-folders.md) for more information.
+1. Click *Actions* (![Actions Button](../../../../images/icon-actions.png)) for the desired folder and select *Permissions*. See [Using Folders](../../uploading-and-managing/using-folders.md) for more information.
 
    ![Click the Actions button for the desired folder and select Permissions.](permissions-and-documents/images/01.png)
 
@@ -35,7 +35,7 @@ With Liferay's permissions framework, you can control which users can create, vi
 
    ![Click the Document Types tab.](permissions-and-documents/images/03.png)
 
-1. Click the Actions button (![Actions Button](../../../../images/icon-actions.png)) for the desired document type and select *Permissions*. See [Defining Document Types](../../uploading-and-managing/managing-metadata/defining-document-types.md) for more information. 
+1. Click *Actions* (![Actions Button](../../../../images/icon-actions.png)) for the desired document type and select *Permissions*. See [Defining Document Types](../../uploading-and-managing/managing-metadata/defining-document-types.md) for more information. 
 
    ![Click the Actions button for the desired document type and select Permissions.](permissions-and-documents/images/04.png)
 

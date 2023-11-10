@@ -32,7 +32,7 @@ To enable the data migration center,
 
 To export object definitions,
 
-1. Click _add_ (![Add icon](../../images/icon-add.png)) and select _Export File_.
+1. Click _Add_ (![Add icon](../../images/icon-add.png)) and select _Export File_.
 
 1. (Optional) In the next page, select an export template if using a previously saved template.
 
@@ -41,10 +41,11 @@ To export object definitions,
 1. Select one of the export file formats. 
 
    ```{note}
-   Note that the data migration center only supports the JSON and JSONL file format for importing.
+   The data migration center only supports the JSON and JSONL file format for importing.
 
    If exporting to use in conjunction with batch client extensions, select the JSONT file format. JSONT is required for `*.batch-engine-dat.json` files.
    ```
+
 1. Under the fields section, select the object definition fields you wanted included in the export.
 
    ![Select the object definition fields you wish to export.](./data-migration-center/images/02.png)
@@ -53,7 +54,7 @@ To export object definitions,
 
 1. Finally, click _Export_ to export the object definitions.
 
-1. A window will pop up to display the export process. When the job is completed, click _Download_ to download a zip file.
+1. A window appears to display the export process. When the job is completed, click _Download_ to download a zip file.
 
    ![Click download to download a zip file.](./data-migration-center/images/03.png)
 
@@ -63,7 +64,7 @@ To export object definitions,
 
 To export object entries,
 
-1. Click _add_ (![Add icon](../../images/icon-add.png)) and select _Export File_.
+1. Click _Add_ (![Add icon](../../images/icon-add.png)) and select _Export File_.
 
 1. (Optional) In the next page, select an export template if using a previously saved template.
 
@@ -77,15 +78,15 @@ To export object entries,
 
 1. Finally, click _Export_ to export the object entries.
 
-1. A window will pop up to display the export process. When the job is completed, click _Download_ to download a zip file. The zip file is downloaded to your local machine.
+1. A window appears to display the export process. When the job is completed, click _Download_ to download a zip file. The zip file is downloaded to your local machine.
 
 ## Importing Object Definitions
 
 To import object definitions,
 
-1. Click _add_ (![Add icon](../../images/icon-add.png)) and select _Import File_.
+1. Click _Add_ (![Add icon](../../images/icon-add.png)) and select _Import File_.
 
-1. In the next page, input a name for the new import task.
+1. In the next page, enter a name for the new import task.
 
 1. (Optional) Select an import template if using a previously saved template.
 
@@ -93,9 +94,9 @@ To import object definitions,
 
 1. Use the checkbox to select whether to have the import task stop or continue upon error.
 
-1. Under import strategy, select an option to either _Add or Update Records_ or _Only Add New Records_. Note, when _Only Add New Records_ is selected, if the entity already exists, the import task will result in an error. Select _Add or Update Records_ instead to have the data migration center overwrite the existing entity.
+1. Under import strategy, select an option to _Add or Update Records_ or _Only Add New Records_. Note, when _Only Add New Records_ is selected, if an entity already exists, the import task fails with an error. Select _Add or Update Records_ instead to have the data migration center overwrite the existing entity.
 
-1. Under update strategy, select an option to either _Update Changed Record Fields_ or _Overwrite Records_. Note, when _Overwrite Records_ is selected, the whole entity will be updated. When _Update Changed Record Fields_ is selected, only the fields defined in the import file is updated while the rest of the existing values are left alone.
+1. Under update strategy, select an option to _Update Changed Record Fields_ or _Overwrite Records_. Note, when _Overwrite Records_ is selected, the whole entity is updated. When _Update Changed Record Fields_ is selected, only the fields defined in the import file are updated, and the rest of the existing values are left alone.
 
 1. Under file settings, click _Choose File_ and locate the JSON file that contains the object definitions to import.
 
@@ -109,7 +110,7 @@ To import object definitions,
 
 1. Click _Next_ to continue the import. In the pop up window, click _Start Import_.
 
-1. The pop up window will show the progress of the import. Click _Close_ when completed. Note, if an error occurs in the import process, return to the main data migration page and click the _options_ (![Options icon](../../images/icon-options.png)) icon to download an error report.
+1. The pop up window shows the progress of the import. Click _Close_ when completed. Note, if an error occurs in the import process, return to the main data migration page and click _Options_ (![Options icon](../../images/icon-options.png)) to download an error report.
 
 1.  Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Objects_ to verify the imported object definition.
 
@@ -117,13 +118,13 @@ To import object definitions,
 
 To import object entries,
 
-1. Click _add_ (![Add icon](../../images/icon-add.png)) and select _Import File_.
+1. Click _Add_ (![Add icon](../../images/icon-add.png)) and select _Import File_.
 
 ```{note}
 Make sure your object exists before attempting to import its entries.
 ```
 
-1. In the next page, input a name for the new import task.
+1. In the next page, enter a name for the new import task.
 
 1. (Optional) Select an import template if using a previously saved template.
 
@@ -131,9 +132,9 @@ Make sure your object exists before attempting to import its entries.
 
 1. Use the checkbox to select whether to have the import task stop or continue upon error.
 
-1. Under import strategy, select an option to either _Add or Update Records_ or _Only Add New Records_. Note, when _Only Add New Records_ is selected, if the entity already exists, the import task will result in an error. Select _Add or Update Records_ instead to have the data migration center overwrite the existing entity.
+1. Under import strategy, select an option to _Add or Update Records_ or _Only Add New Records_. Note, when _Only Add New Records_ is selected, if the entity already exists, the import task fails with an error. Select _Add or Update Records_ instead to have the data migration center overwrite the existing entity.
 
-1. Under update strategy, select an option to either _Update Changed Record Fields_ or _Overwrite Records_. Note, when _Overwrite Records_ is selected, the whole entity will be updated. When _Update Changed Record Fields_ is selected, only the fields defined in the import file is updated while the rest of the existing values are left alone.
+1. Under update strategy, select an option to _Update Changed Record Fields_ or _Overwrite Records_. Note, when _Overwrite Records_ is selected, the whole entity is updated. When _Update Changed Record Fields_ is selected, only the fields defined in the import file are updated, and the rest of the existing values are left alone.
 
 1. Under file settings, click _Choose File_ and locate the JSON file that contains the object entries to import.
 
@@ -143,7 +144,7 @@ Make sure your object exists before attempting to import its entries.
 
 1. Click _Next_ to continue the import. In the pop up window, click _Start Import_.
 
-1. The pop up window will show the progress of the import. Click _Close_ when completed. Note, if an error occurs in the import process, return to the main data migration page and click the _options_ (![Options icon](../../images/icon-options.png)) icon to download an error report.
+1. The pop up window shows the progress of the import. Click _Close_ when completed. Note, if an error occurs in the import process, return to the main data migration page and click _Options_ (![Options icon](../../images/icon-options.png)) to download an error report.
 
 1. If your [published object](../../building-applications/objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) has a panel link, navigate to the object to verify the imported object entries.
 

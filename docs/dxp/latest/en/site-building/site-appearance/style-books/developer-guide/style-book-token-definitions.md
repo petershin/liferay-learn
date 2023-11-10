@@ -11,7 +11,7 @@ When you assign a theme to your Site's Pages, the token definition included with
 
 ## Defining Tokens for Your Style Book
 
-Since the token definition is tied to your theme, token definitions must correspond to a CSS variable contained within your theme module. Specify the token definitions themselves in a `.json` file within your theme module's `src/WEB-INF/` folder, named `frontend-token-definition.json`. 
+Since the token definition is tied to your theme, token definitions must correspond to a CSS variable contained within your theme module. Specify the token definitions themselves in a `.json` file within your theme module's `src/WEB-INF/` folder, named `frontend-token-definition.json`.
 
 ### Token Categories
 
@@ -84,6 +84,8 @@ Define all of the tokens within each token set's `frontendTokens` field. Here is
 `type`: The type of data that the token displays. Use `"Integer"`, `"Float"`, or `"String"` to display a text field holding those types of values. Use `"Boolean"` to display a checkbox. Use `"Length"` to provide customizable units of measurement, like pixels, ems, or percentages.
 
 `validValues`: Optional property that lists available options for the User in the UI. This field must contain a nested list of `label` and `value` pairs (`value` is the field's value in CSS). This property cannot be used together with `editorType`. Defining a value for `validValues` makes the input type automatically a select input.
+
+The JSON schema for token definitions is publicly available in [Liferay's repository](https://github.com/liferay/liferay-portal/blob/master/modules/apps/frontend-token/frontend-token-definition-api/src/main/resources/com/liferay/frontend/token/definition/frontend-token-definition.schema.json).
 
 Here is an example list of tokens within a token set:
 

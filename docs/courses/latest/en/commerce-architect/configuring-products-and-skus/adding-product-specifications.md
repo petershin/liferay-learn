@@ -38,7 +38,7 @@ This creates a new specification called frame color. Now, use the steps above to
 
 For *Frame Dimensions*, *Frame Width*, and *Frame Size*, you must disable the *Use in Faceted Navigation* toggle. 
 
-<!-- Why? Don't leave the student hanging; you didn't explain this in the intro. -Rich -->
+Unlike the other specifications with fixed values, there can be a wide range of frame dimensions, frame widths, and frame sizes for different eyeglasses. Enabling this option can lead to a large number of facets in the storefront that degrades user experiences. 
 
 ## Adding Specifications to Products
 

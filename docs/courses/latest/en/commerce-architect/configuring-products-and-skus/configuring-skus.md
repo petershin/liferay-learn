@@ -127,4 +127,4 @@ Repeat the same process for each SKU of all products. After adding the inventory
 
 You completed adding and configuring channels, a catalog, warehouses, and products. It’s now time to build the storefront. In the next module, you'll build out the B2C storefront. 
 
-<!-- Add link to next module. -Rich -->
+[Building the B2C Storefront](../building-the-b2c-storefront.md)

@@ -3,7 +3,7 @@ toc:
   - ./products/products-overview.md
   - ./products/using-product-options.md
   - ./products/creating-skus-for-product-variants.md
-  - ./products/using-categories-as-a-collection-provider-for-skus-as-options.md
+  - ./products/defining-skus-as-option-values-using-a-collection-provider.md
   - ./products/product-images.md
   - ./products/specifications.md
   - ./products/product-attachments.md

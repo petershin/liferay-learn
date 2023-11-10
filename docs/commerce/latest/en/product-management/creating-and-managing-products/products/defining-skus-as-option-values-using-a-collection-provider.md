@@ -1,9 +1,9 @@
 ---
 uuid: 36f5e761-fae3-4504-8cd1-ecd93524aa1f
 ---
-# Specifying a Category as a Collection Provider for SKUs as Options
+# Defining SKUs as Option Values using a Collection Provider
 
-You can specify one or more categories as a collection provider when defining options on a product. This allows you to define your own custom logic to link a group of SKUs as options to a product. 
+You can specify one or more categories as a collection provider when configuring an option on a product. This allows you to define your own custom logic to link a group of SKUs as option values to a product. 
 
 For instance, consider two products that don't have a direct relationship with each other. To add them as product options, you can create a category and link it to these two products and use that category as a collection provider on a new product. 
 

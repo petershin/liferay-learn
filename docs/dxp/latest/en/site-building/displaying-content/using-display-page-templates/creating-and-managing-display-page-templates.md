@@ -49,12 +49,12 @@ This feature is currently behind a release feature flag. Read [Release Feature F
 
 You can set a friendly URL for your display page template. The friendly URL is used when the display page template is not marked as default or when it is manually selected for use.
 
-For example, when you link a button in a content page to a Mapped URL, you can select an object connected to a display page template as the item, and select the display page template as the field. In this case, the friendly URL is used for the selected display page template.
+For example, when you link a button in a content page to a mapped URL, you can select an object connected to a display page template as the item and select the display page template as the field. In this case, the friendly URL is used for the selected display page template.
 
 ![Set a friendly URL for your display page template](./creating-and-managing-display-page-templates/images/03.png)
 ![The friendly URL is used when you select a display page template specifically from a list of links](./creating-and-managing-display-page-templates/images/04.png)
 
-To set a friendly URL to your display page template,
+To set a friendly URL for your display page template,
 
 1. While editing your display page template, click *Options* (![Options icon](../../../images/icon-options.png)) at the top right corner of the page.
 
@@ -70,9 +70,9 @@ To set a friendly URL to your display page template,
 This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 ```
 
-If a content type (e.g., custom object, web content article, or blogs entry) has default and additional display page templates, you can map links to any of the available templates for that content type.
+If a content type (e.g., custom object, web content article, or blogs entry) more than one display page template, you can map links to any available template for that content type.
 
-With this feature, create different display page templates for an object, each corresponding to a step in a mapped form (e.g., submission, editing, and approval). Then, you can choose which display page template to use for each stage, enabling the creation of multi-step forms.
+For example, you can create different display page templates for an object, each corresponding to a step in a mapped form (e.g., submission, editing, and approval). Then, you can choose which display page template to use for each stage, enabling the creation of multi-step forms.
 
 ![Map links to different display page templates](./creating-and-managing-display-page-templates/images/05.png)
 

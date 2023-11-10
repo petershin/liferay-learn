@@ -49,7 +49,7 @@ These templates are ideal for displaying a list of elements in a consistent way,
 
 To achieve this goal, you can create a single display page template that maps your web content article fields to fragments in your template. Each article can use the same template. Then, you can link each insurance option in your landing page to the corresponding article's friendly URL. When site visitors click an option, the display page is populated dynamically with information from your web content articles and rendered according to your template design.
 
-If a content type has default and additional display page templates created for it, you can [map links to any of the available templates](./using-multiple-display-page-templates-to-create-multi-step-applications.md) for that asset type. So, when you're mapping a link to its display page, not only is the default option presented, but you also have the option to choose from any of the other available display page templates, allowing for greater customization and flexibility in how your content is displayed.
+If a content type has multiple display page templates created for it, you can [map links to any of the available templates](./using-multiple-display-page-templates-to-create-multi-step-applications.md) for that asset type. When mapping a link to its display page, you can choose the default option or any of the other available display page templates, allowing for greater customization and flexibility in how your content is displayed.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

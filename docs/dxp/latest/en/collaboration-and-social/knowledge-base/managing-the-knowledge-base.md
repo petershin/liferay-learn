@@ -3,61 +3,130 @@ uuid: d1a3b011-1eb7-4a09-a379-847e3fdbaf69
 ---
 # Managing the Knowledge Base
 
-You can manage the Knowledge Base from the Knowledge Base app. To navigate to the app, click the _Menu_ icon (![Menu icon](../../images/icon-menu.png)) and navigate to *Content and Data* &rarr; *Knowledge Base.*
+With Knowledge Base, you can quickly draft product documentation and organize it into hierarchies that end users can navigate. Add folders and nested articles to create the desired structure and order. Additionally, manage article and folder permissions to ensure only intended users can access your content.
 
-![From the app you can manage Knowledge Base articles, templates, and suggestions](./managing-the-knowledge-base/images/01.png)
+![Add folders and nested articles to create the desired structure and order.](./managing-the-knowledge-base/images/01.png)
 
-## Setting the Knowledge Base's Options
+## Adding Folders
 
-   At the top-right, click the Options menu (![Options icon](../../images/icon-options.png)) to configure the Knowledge Base: 
+1. Open the *Site Menu* (![Site Menu](../../images/icon-menu.png)) and go to *Content and Data* &rarr; *Knowledge Base*.
 
-**Subscribe:** Get notified when Knowledge Base articles are created, updated, or deleted.
+1. In the Folders and Articles section (![Folders and Articles](../../images/icon-pages-tree.png)), click *Add* (![Add Button](../../images/icon-add.png)) and select *Folder*.
 
-**Home Folder Permissions:** Define detailed permissions for the Knowledge Base app. You can choose Roles to perform the following tasks:
+1. Enter a name and description.
 
-* Add/delete articles, folders, and templates
-* Change the Knowledge Base app’s permissions
-* Subscribe to articles
-* View templates and suggestions
+1. Configure the folder's permissions. By default, the View permission is assigned to the Guest role, meaning anyone can view the folder.
 
-**Export/Import:** Export or import the Knowledge Base app's configuration.
+   ![Enter a name, description, and configure permissions.](./managing-the-knowledge-base/images/02.png)
 
-**Configuration:** Configure email notifications for article subscriptions and suggestions. You can also make the Knowledge Base app's articles available via RSS (enabled by default) and configure the RSS feed's options.
+1. Click *Save*.
 
-## Managing Knowledge Base Articles
+## Managing Folders and Articles
 
-Articles have a priority value that determines their position in the [Knowledge Base Display widget’s navigation](knowledge-base-display-widget.md). Each article’s priority value appears beneath the article’s title. The Knowledge Base Display widget’s navigation arranges articles in ascending priority. Priority 1 is the highest priority. The higher an article’s priority, the higher it appears in the navigation. Articles are assigned the next lowest priority by default. This behavior can be changed via [Knowledge Base System Settings](knowledge-base-system-settings.md).
+<!-- Folders appear alphabetically, while articles can be reordered. -->
 
-To assign articles a new priority value, 
+After adding folders and articles, you can drag and drop them in the left side panel to organize and order your documentation. You can also click the Actions button (![Actions Button](../../images/icon-actions.png)) to access additional management options.
 
-1. Select *Move* from the Actions menu (![Actions icon](../../images/icon-actions.png)) next to the article.
+![Drag and drop folders and articles to organize and order your documentation.](./managing-the-knowledge-base/images/03.png)
 
-1. Enter a new priority value for the article.
+```{note}
+For 7.4 U71/GA71 and earlier versions, Knowledge Base articles include a priority value. This value appears beneath the article’s title and determines its order in the Knowledge Base Display widget. You can configure this behavior via [Knowledge Base System Settings](knowledge-base-system-settings.md).
+```
 
-1. Click *Move* to apply the new priority.
+### Folder Options
 
-To organize articles with folders,
+![Click the Actions button for a folder to access these management options.](./managing-the-knowledge-base/images/04.png)
 
-1. Click the _Add_ icon (![Add icon](../../images/icon-add.png)) and select *Folder*. This opens a form for creating the new folder.
+**Edit** (![Edit](../../images/icon-edit.png)): Update the article's name and description.
 
-1. Enter a name and an optional description.
+**Import** (![Import](../../images/icon-import.png)): Import a ZIP archive of Markdown files and image attachments. See [Importing Knowledge Base Articles](./importing-knowledge-base-articles.md) for more information.
 
-   By default, anyone can view the folder. You can manage this setting along with the other permissions in the form’s *Permissions* section.
+**Move** (![Move](../../images/icon-move-folder.png)): Relocate the folder.
 
-1. Click *Save*. The folder appears in a table in the Articles tab.
+**Subscribe** (Home folder only): Get notified when Knowledge Base articles are created, updated, or deleted.
 
-The text immediately below the *Filter and Order* selector at the top of the app shows your position in the folder hierarchy. Click a folder’s name in the hierarchy to navigate to it. You can also move articles into folders and create child articles. Knowledge Base also supports nested folders.
+**Permissions** (![Permissions](../../images/icon-permissions.png)): Assign resource permissions to different roles.
 
-![Click the action menu of a folder for different options.](./managing-the-knowledge-base/images/03.png)
+**Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the folder and its contents.
 
-Each folder’s Actions menu (![Actions icon](../../images/icon-actions.png)) contains these actions:
+Additionally, you can click the *Info* button (![Info Button](../../images/icon-information.png)) to toggle the information panel for the current folder.
 
-**Edit:** Change the folder’s name and description.
+### Article Options
 
-**Move:** Relocate the folder under a new parent folder or update its priority.
+![Click the Actions button for an article to access these management options.](./managing-the-knowledge-base/images/05.png)
 
-**Delete:** Remove the folder and its articles from the Knowledge Base.
+**Edit** (![Edit](../../images/icon-edit.png)): Change the folder’s name and description.
 
-**Permissions:** Grant or revoke the following permissions: add an article to the folder, add a sub-folder to the folder, delete the folder, move the folder, set permissions on the folder, edit (update) the folder, and view the folder.
+**Add Child Article** (![Page](../../images/icon-document.png)): Create a sub-article.
 
-You can also delete multiple articles or folders at once. To do this, select the checkbox for each item that you want to delete and click the X button that appears in the Management Bar. You can also see the info for selected items by clicking the Info icon (![Info icon](../../images/icon-information.png)) in the Management Bar.
+**Expire** (![Time](../../images/icon-time.png)): Mark an article as expired and notify reviewers, owners, and subscribers. Expired articles cannot be displayed in sites. See [Setting Review and Expiration Dates for Articles](#setting-review-and-expiration-dates-for-articles) for more information
+
+**Subscribe** (![Subscribe](../../images/icon-bell.png)): Sign up to receive updates to the article.
+
+**History** (![History](../../images/icon-history-calendar.png)): View and compare different versions of the article.
+
+**Print** (![Print](../../images/icon-print.png)): Open a dialogue to print the article.
+
+**Move** (![Move](../../images/icon-move-folder.png)): Relocate an article to a different folder or parent article.
+
+**Permissions** (![Permissions](../../images/icon-permissions.png)): Manage permissions for the article.
+
+**Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the article along with its child articles.
+
+While viewing an article, you can also click the *Info* button (![Info Button](../../images/icon-information.png)) to view article details and versions.
+
+## Setting Review and Expiration Dates for Articles
+
+Sometimes Knowledge Base articles are only valid for a period of time. For these situations, you can set expiration and review dates for Knowledge Base articles to help insure the integrity of your documentation. While set, Liferay checks Knowledge Base articles at a set interval for any articles that have reached their expiration or review date. It then sends notifications to the reviewers, owners, and subscribers. When an expiration date is approaching, Liferay notifies users that the article is expiring soon.
+
+By default, articles are set to never expire or require review, but you can change this while creating or editing an article.
+
+![Set review and expiration dates for articles.](./managing-the-knowledge-base/images/06.png)
+
+The default value is one year in the future, but you can select the desired date and hour. Users receive notifications for the article based on system mail and notification settings.
+
+When an expiration date is reached, the Knowledge Base article cannot be used in sites. Users accessing the Knowledge Base article through a URL receive the 404 HTTP status. Additionally, an expired article cannot be modified unless the expiration date is set to a future value or expiration is disabled.
+
+Reaching the review date does not affect the article. It only reminds users to review the article's content.
+
+### Configuring Review and Expiration Notifications
+
+1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *System Settings*.
+
+1. Under Content and Data, click *Knowledge Base*.
+
+   ![Set the check interval and when to notify users of articles expiring soon. ](./managing-the-knowledge-base/images/07.png)
+
+1. In the Service tab under System Scope, enter a check interval. This value determines the number of minutes between checks. By default, the value is 15 minutes.
+
+1. Determine the number of weeks before expiration to send notification. Articles within this range are assigned an "Expiring Soon" label in Knowledge Base. The default value is 1 week.
+
+1. Click *Save*.
+
+1. Go to the *Service* tab under Site Scope.
+
+1. Enable/Disable review and expiration emails.
+
+1. Determine the content of review and expiration emails.
+
+   ![Configure review and expiration emails.](./managing-the-knowledge-base/images/08.png)
+
+1. Click *Save*.
+
+## Reviewing Article History
+
+When viewing an article's history, you can view version details, compare content, and revert to an earlier version.
+
+![View, compare, and revert article versions.](./managing-the-knowledge-base/images/09.png)
+
+To compare version content, select two articles and click *Compare Versions*.
+
+![Compare changes between two versions of an article.](./managing-the-knowledge-base/images/10.png)
+
+This highlights all additions, deletions, and formatting changes between versions.
+
+## Related Topics
+
+* [Creating Knowledge Base Articles](./creating-knowledge-base-articles.md)
+* [Importing Knowledge Base Articles](./importing-knowledge-base-articles.md)
+* [Knowledge Base System Settings](./knowledge-base-system-settings.md)

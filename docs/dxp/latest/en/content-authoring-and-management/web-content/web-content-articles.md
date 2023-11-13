@@ -1,6 +1,7 @@
 ---
 toc:
   - ./web-content-articles/adding-a-basic-web-content-article.md
+  - ./web-content-articles/managing-web-content-articles.md
   - ./web-content-articles/filtering-and-sorting-web-content-articles.md
   - ./web-content-articles/using-expiration-and-review-dates-in-web-content.md
   - ./web-content-articles/generating-text-content-using-ai.md
@@ -18,6 +19,7 @@ web-content-articles/generating-text-content-using-ai.md
 ```
 
 - [Adding a Basic Web Content Article](./web-content-articles/adding-a-basic-web-content-article.md)
+- [Managing Web Content Articles](./web-content-articles/managing-web-content-articles.md)
 - [Filtering and Sorting Web Content Articles](./web-content-articles/filtering-and-sorting-web-content-articles.md)
 - [Using Expiration and Review Dates in Web Content](./web-content-articles/using-expiration-and-review-dates-in-web-content.md)
 - [Generating Text Content Using AI](./web-content-articles/generating-text-content-using-ai.md)

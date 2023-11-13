@@ -12,7 +12,6 @@ The marketing team at Clarity wants more from the home page. They want to add
 1. A list of traits that highlight the uniqueness of the company
 1. A customer testimonials slider
 
-<!--  Redundant with the intro? -->
 [Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) are reusable snippets of HTML, JavaScript (if necessary), and CSS you can use to build the look and feel of the site pages. You'll combine both built-in fragments and custom fragments to compose the page with very little custom code.
 
 <!--Re-using my stuff from Delectable Bonsai for now, but will re-design with Abel's concepts later. -->
@@ -41,8 +40,6 @@ The last section of content shows customer testimonials. In this case the text i
    ```html
    "Wow, 4K is way cooler when I have my Clarity glasses on. Let's be honest, I'm way cooler too."<br /><br />Scott, Almuerzo, TX
    ```
-
-   <!-- I changed HD above to 4K, because, well, we're not in the 00s anymore. :-) I think that means your screenshot should be changed. -Rich -->
 
    **Second Testimonial:** 
 

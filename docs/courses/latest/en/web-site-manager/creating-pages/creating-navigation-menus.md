@@ -77,27 +77,7 @@ The menu display fragment showing the current navigation is added to the master 
 
 In addition to the header navigation, Clarity needs the menus for the footer: *Shop*, *Clarity*, and *Resources*.
 
-The Shop menu includes categories for products. These categories must be created in the Global site, so log in with Kyle Klein, the instance administrator.
-
-<!-- We should not configure the Shop menu in this course. It should all be done in the Commerce course. I definitely don't want to introduce categories here; they're reserved for the next course (Content Manager). -Rich -->
-
-1. Go to the Global site by clicking *Select Site* (![Select Site](../../images/icon-compass.png)) &rarr; *My Sites* &rarr; *Global*.
-
-1. Open the _Site Menu_ (![Product Menu](../../images/icon-product-menu.png)), then click _Categorization_ &rarr; _Categories_.
-
-1. Add a vocabulary for the categories. Click *Add* (![Add Button](../../images/icon-plus.png)) and name the vocabulary *Clarity Product Categories*.
-
-1. Click *Add Category* (![Add Button](../../images/icon-add.png)), and enter the name *Eyeglasses*. 
-
-1. Create *Sunglasses*, *Contacts*, *Lenses*, and *Sale* using the same procedure.
-
-1. Log out from Kyle Klein's account and back in as Preston Palmer, the site administrator for Clarity.
-
-1. Following the same basic procedure used to create the header menu, create the *Shop* menu, adding the categories you created in the Global site:
-
-   ![The Shop menu has global categories.](./creating-navigation-menus/images/07.png)
-
-1. Create the *Clarity* menu, adding the *About Us* and *Careers* pages.
+1. Following the same basic procedure used to create the header menu, create the *Clarity* menu, adding the *About Us* and *Careers* pages.
 
 1. Add an external URL to the Clarity menu: 
 
@@ -115,6 +95,8 @@ The Shop menu includes categories for products. These categories must be created
 
    ![The Resources menu links to the Blog and Search pages.](./creating-navigation-menus/images/09.png)
 
+The SHOP menu will display links to product categories. Leave it blank now, as it will be created in [Commerce Architect](../../commerce-architect.md).
+
 Now that the menus are created, add them to the footer.
 
 1. Open the Clarity MP master page by opening the _Site Menu_ (![Product Menu](../../images/icon-product-menu.png)) and clicking _Design_ &rarr; _Page Templates_.
@@ -127,7 +109,7 @@ Now that the menus are created, add them to the footer.
 
    ![Display each menu in a Menu Display widget in the footer.](./creating-navigation-menus/images/11.png)
 
-Now Clarity's header and footer uses navigation menus to show its lists. The SHOP menu contains categories with no display pages, so the categories remain hidden for now. These are populated in the [Commerce Architect](../../commerce-architect.md) course.
+Now Clarity's header and footer uses navigation menus to show its lists. The SHOP menu is populated in the [Commerce Architect](../../commerce-architect.md) course.
 
 ![Clarity's master page uses navigation menus heavily.](./creating-navigation-menus/images/12.png)
 

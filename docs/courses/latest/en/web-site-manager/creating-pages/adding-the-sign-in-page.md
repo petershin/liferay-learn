@@ -82,7 +82,7 @@ Setting the background color to a brand color variable like this is a good pract
 
 Now Clarity's site structure is in place. The navigation menu, however, could use some enhancements. 
 
-   ![The navigation menu is okay, but it could use some enhancements.](./adding-the-sign-in-page/images/05.png)
+![The navigation menu is okay, but it could use some enhancements.](./adding-the-sign-in-page/images/05.png)
 
 Next: create a [new navigation menu](./creating-navigation-menus.md).
 

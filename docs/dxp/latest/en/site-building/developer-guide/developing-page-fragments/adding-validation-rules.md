@@ -151,7 +151,7 @@ When using backslashes to escape characters in regex values (e.g., `\d`), you mu
                       "validation": {
                         "errorMessage": "Enter a valid 10 digit phone number.",
                         "type": "pattern",
-                        "regexp": "([0-9]{3})[.-]?([0-9]{3})[.-]?([0-9]{4})"
+                        "regexp": "([0-9]{3})[.\\-]?([0-9]{3})[.\\-]?([0-9]{4})"
                       }
                     }
                 }

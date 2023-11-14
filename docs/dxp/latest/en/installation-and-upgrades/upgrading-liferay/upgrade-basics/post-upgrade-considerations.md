@@ -53,10 +53,6 @@ Prior to 7.1, all users could view web content articles by default. Now view per
 Prior to 7.4, you could open view permissions for all web content articles by navigating to *Control Panel* &rarr; *Configuration* &rarr; *System Settings* &rarr; *Web Content* &rarr; *Virtual Instance Scope* &rarr; *Web Content* and de-selecting *Article view permissions check enabled*.
 ```
 
-<!-- This makes no sense to me. You only explain what to do on 7.4+ if there are only a few articles. If you're on 7.4+ and you have lots of web content articles, what do you do? Is there a bulk way to deal with them? -Rich -->
-
-<!-- I talked to Lourdes Besada and she said there are initiatives to offer this bulk functionality in the UI. Russ also mentioned that we should document only one way to do this, so I should refactor the section a little. So, I decided to add this note to keep the method used prior to 7.4 and I did not offer other options as Lourdes mentioned that this is the only option throught the UI. Eric -->
-
 ![Disable the permissions check for viewing web content by scrolling down in the Web Content menu in the System Settings.](./post-upgrade-considerations/images/02.png)
 
 ### Check Web Content Images

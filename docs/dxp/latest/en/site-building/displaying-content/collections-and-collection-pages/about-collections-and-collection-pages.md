@@ -7,11 +7,11 @@ uuid: ddacd910-361b-4e3f-a44f-8d8c33a01b13
 This information applies to Liferay DXP 7.3+. In previous Liferay versions, collections were called content sets. For information on content sets, see [Liferay DXP 7.2](#liferay-dxp-72).
 ```
 
-Collections are sets of content items that you can use to group and filter information. Collections can include many different types of content or just one specific type of content. You can then display them on a [collection page](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page), which you can present in your desired format using page fragments.
+Collections are sets of content items that you can use to group and filter information. Collections can include many different types of content or just one specific type of content. You can then display them on a [collection page](./displaying-collections.md#displaying-collections-on-a-collection-page), which you can present in your desired format using page fragments.
 
 ![Use a collection page to quickly present a specific collection in your desired format.](./about-collections-and-collection-pages/images/01.png)
 
-Consider the following example. You plan to create a new section in your product web page with customer success stories. You want this section to show new success stories automatically as these stories are published. In this case, you can create a collection that groups all your success stories with a collection page that shows the collection's content. In addition to collection pages, you can show this collection in other content pages using a Collection Display fragment (for more information, see [Displaying Collections](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page).)
+Consider the following example. You plan to create a new section in your product web page with customer success stories. You want this section to show new success stories automatically as these stories are published. In this case, you can create a collection that groups all your success stories with a collection page that shows the collection's content. In addition to collection pages, you can show this collection in other content pages using a Collection Display fragment (for more information, see [Displaying Collections](./displaying-collections.md#displaying-collections-on-a-collection-page).)
 
 There are two types of collections in Liferay:
 
@@ -33,7 +33,7 @@ For information about how to create manual or dynamic collections, see [Creating
 
 ## Displaying Collections
 
-You can display collections using a [collection page](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) or a [Collection Display fragment](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page).
+You can display collections using a [collection page](./displaying-collections.md#displaying-collections-on-a-collection-page) or a [Collection Display fragment](./displaying-collections.md#adding-a-collection-display-fragment-to-a-page).
 
 A collection page is a type of page linked to a collection. Collection pages ease the task of showing and customizing collections. For example, you can quickly add new items to your collection using a collection page.
 
@@ -43,19 +43,19 @@ A Collection Display fragment is a type of fragment that shows a collection. You
 
 ![You can show the collection's content using a Collection Display fragment](./about-collections-and-collection-pages/images/04.png)
 
-For more information, see [Displaying Collections](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md).
+For more information, see [Displaying Collections](./displaying-collections.md).
 
 ## Customizing Collections
 
-You can associate a Liferay segment with your collection to display different collection items based on the [segment configuration](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md).
+You can associate a Liferay segment with your collection to display different collection items based on the [segment configuration](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md).
 
 Consider the following example. You want to increase sales in your Kitchenware Store by offering exclusive promotions to registered users. You create a collection including promotions for registered users and news about your products. You want everyone to see the news about your products, but you want to restrict the promotions to registered users. You can create a new segment for registered users and link the segment to a new *Personalized Variation* that filters the promotional content.
 
-For information, read [Personalizing Collections](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md).
+For information, read [Personalizing Collections](../../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md).
 
 ## Converting Asset Publisher Configurations to Collections
 
-You can create collections directly or from an [Asset Publisher widget](../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md). The Asset Publisher option is useful when you want to use your customization as a collection in other pages. For more information, read [Creating Collections](./creating-collections.md#creating-a-collection-from-an-asset-publisher).
+You can create collections directly or from an [Asset Publisher widget](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md). The Asset Publisher option is useful when you want to use your customization as a collection in other pages. For more information, read [Creating Collections](./creating-collections.md#creating-a-collection-from-an-asset-publisher).
 
 ## Liferay DXP 7.2
 
@@ -71,11 +71,11 @@ In previous versions of Liferay DXP, you used the Asset Publisher to define and 
 
 Content sets are created through the Site Administration interface. All the features for creating and managing content sets are contained here. They are displayed using Liferay's widgets or your own custom applications. Read our
 guides for information on [Creating Content Sets](./creating-collections.md#creating-content-sets) and
-[Displaying Content Sets](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-content-sets).
+[Displaying Content Sets](./displaying-collections.md#displaying-content-sets).
 
 ### Content Set Personalization
 
-Content sets can have variations driven by Liferay DXP's personalization engine. After you create a content set, if you have at least one user segment created, you can create a personalized experience of the content set for that segment. To learn to harness the power of experience personalization for content sets, see [Content Set Personalization](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md#content-set-personalization).
+Content sets can have variations driven by Liferay DXP's personalization engine. After you create a content set, if you have at least one user segment created, you can create a personalized experience of the content set for that segment. To learn to harness the power of experience personalization for content sets, see [Content Set Personalization](../../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md#content-set-personalization).
 
 ### Converting Asset Publisher Configurations to Content Sets
 
@@ -84,5 +84,5 @@ You may have already gone through a great deal of work to create a perfect, cura
 ## Related Information
 
 - [Creating Collections](./creating-collections.md)
-- [Displaying Collections](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md)
-- [Personalizing Collections](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)
+- [Displaying Collections](./displaying-collections.md)
+- [Personalizing Collections](../../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)

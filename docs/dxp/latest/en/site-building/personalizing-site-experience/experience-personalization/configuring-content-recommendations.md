@@ -23,7 +23,7 @@ To learn how to connect Analytics Cloud to Liferay DXP and synchronize the site'
 
 To show users content recommendations based on their browsing behavior, you must use a Dynamic Collection. The Collection is the component that connects the users' interests in Analytics Cloud with the content recommendations in your site. Using a Collection, you define what type of content you want to recommend and, optionally, to what audiences.
 
-To create the Dynamic Collection, follow the instructions in [Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection).
+To create the Dynamic Collection, follow the instructions in [Creating Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection).
 
 ![Managing Collections in Liferay DXP](./configuring-content-recommendations/images/01.png)
 
@@ -57,9 +57,9 @@ Collections are named Content Sets in Liferay DXP 7.2.
 
 > Liferay DXP 7.3+
 
-A Collection Display Fragment is a type of Fragment that shows a Collection. You can use this Fragment to show your Collection on any Content Page, Page Template, or Display Page. To configure the Collection Display Fragment, see the section [Configuring a Collection Display Fragment](../../displaying-content/additional-content-display-options/displaying-collections.md#configuring-a-collection-display-fragment).
+A Collection Display Fragment is a type of Fragment that shows a Collection. You can use this Fragment to show your Collection on any Content Page, Page Template, or Display Page. To configure the Collection Display Fragment, see the section [Configuring a Collection Display Fragment](../../displaying-content/collections-and-collection-pages/displaying-collections.md#configuring-a-collection-display-fragment).
 
-A Collection Page is a type of page linked to a Collection. To show the Collection using a Collection page, see the [Displaying Collections on a Collection Page](../../displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) section in the [Displaying Collections](../../displaying-content/additional-content-display-options/displaying-collections.md) topic.
+A Collection Page is a type of page linked to a Collection. To show the Collection using a Collection page, see the [Displaying Collections on a Collection Page](../../displaying-content/collections-and-collection-pages/displaying-collections.md#displaying-collections-on-a-collection-page) section in the [Displaying Collections](../../displaying-content/collections-and-collection-pages/displaying-collections.md) topic.
 
 ### Display the Collection or Content Set in a Display Page Using the Asset Publisher
 
@@ -68,11 +68,11 @@ A Collection Page is a type of page linked to a Collection. To show the Collecti
 To display the Collection using a Display Page and the Asset Publisher, you must complete the following steps:
 
 1. [Create a Display Page Template](../../displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md).
-1. Configure an Asset Publisher with the Collection (Liferay 7.3+) or Content Set (Liferay 7.2). See [Displaying Collections](../../displaying-content/additional-content-display-options/displaying-collections.md) for more information.
+1. Configure an Asset Publisher with the Collection (Liferay 7.3+) or Content Set (Liferay 7.2). See [Displaying Collections](../../displaying-content/collections-and-collection-pages/displaying-collections.md) for more information.
 
 ## Related Information
 
 - [Understanding Content Recommendations](./understanding-content-recommendations.md)
 - [Connecting Liferay DXP to Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
-- [Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection)
+- [Creating Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection)
 - [Creating and Managing Display Page Templates](../../displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)

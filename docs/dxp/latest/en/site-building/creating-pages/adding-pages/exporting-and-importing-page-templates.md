@@ -94,4 +94,4 @@ On the import outcome page, users can see the successfully imported entries, war
 
 * [Creating a Page Template](./creating-a-page-template.md)
 * [Exporting/Importing Site Pages and Content](../../sites/exporting-importing-site-pages-and-content.md)
-* [Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
+* [Creating Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)

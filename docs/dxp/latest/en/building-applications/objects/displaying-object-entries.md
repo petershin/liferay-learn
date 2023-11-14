@@ -7,7 +7,7 @@ uuid: bf481358-5a1a-45af-ab98-a03bddd3044a
 
 With Liferay Objects, you can use existing DXP frameworks to display Object entries dynamically in Sites. This includes collection displays for multiple entries and display pages for individual entries.
 
-When an Object is published, Liferay creates a Collection Provider for use with the [Collection Display fragment](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) to display multiple Object entries. You can also configure the fragment to style, filter, and paginate the collection. See [Displaying Object Entries with Collection Providers](./displaying-object-entries-with-collection-providers.md) for more information.
+When an Object is published, Liferay creates a Collection Provider for use with the [Collection Display fragment](../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) to display multiple Object entries. You can also configure the fragment to style, filter, and paginate the collection. See [Displaying Object Entries with Collection Providers](./displaying-object-entries-with-collection-providers.md) for more information.
 
 And since published Objects are integrated with the Info framework, you can select them as the content type for [Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md). When selected, the Object is set as the template's mapping source, so you can easily map fragment fields to Object fields to create flexible page displays for individual Object entries.
 
@@ -109,5 +109,5 @@ Since Objects are integrated with the info framework, you can add Object entries
 
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)
 * [Displaying Object Entries with Collection Providers](./displaying-object-entries-with-collection-providers.md)
-* [About Collections and Collection Pages](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
 * [Using Display Page Templates](../../site-building/displaying-content/using-display-page-templates.md)

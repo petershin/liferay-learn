@@ -12,7 +12,7 @@ You can create *Manual* or *Dynamic* Collections. For information about the diff
 ## Creating a Manual Collection
 
 1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Collections*.
-1. Click on the *New* button (![Add](../../images/icon-add.png)) and select *Manual Collection*.
+1. Click on the *New* button (![Add](../../../images/icon-add.png)) and select *Manual Collection*.
 1. Add a *Title* for your Manual Collection and click *Save*.
 1. In the *Item Type* drop-down menu, select the item type you want to include in the Collection.
     - If you want to include only one item type
@@ -48,7 +48,7 @@ While Documents and Media and Web Content folders can be added to a collection, 
 ## Creating a Dynamic Collection
 
 1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Collections*.
-1. Click on the *New* button (![Add](../../images/icon-add.png)) and select *Dynamic Collection*.
+1. Click on the *New* button (![Add](../../../images/icon-add.png)) and select *Dynamic Collection*.
 1. Add a *Title* for your Manual Collection and click *Save*.
 1. In the *Item Type* drop-down menu, select the item type you want to include in the Collection.
     - If you want to include only one item type,
@@ -79,7 +79,7 @@ While Documents and Media and Web Content folders can be added to a collection, 
     You can add multiple rules to your Filter clicking on the Add button. The final content in the Dynamic Collection is the result of adding all the rules.
     ```
 
-   **Content Recommendation:** Enable this option to display content based on user behavior. For more information, see [Configuring Content Recommendations](../../site-building/personalizing-site-experience/experience-personalization/configuring-content-recommendations.md).
+   **Content Recommendation:** Enable this option to display content based on user behavior. For more information, see [Configuring Content Recommendations](../../../site-building/personalizing-site-experience/experience-personalization/configuring-content-recommendations.md).
 
    ```{note}
    The Content Recommendation option is available when you connect the DXP instance to Analytics Cloud and synchronize the content.
@@ -91,16 +91,16 @@ While Documents and Media and Web Content folders can be added to a collection, 
 
 ## Creating a Collection from an Asset Publisher
 
-You can create a new Collection from an [Asset Publisher Widget](../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md). This is useful when you have an Asset Publisher customization that you want to use as a Collection in other pages.
+You can create a new Collection from an [Asset Publisher Widget](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md). This is useful when you have an Asset Publisher customization that you want to use as a Collection in other pages.
 
 ![You can transform an Asset Publisher widget into a Collection.](./creating-collections/images/06.png)
 
 1. Go to *Site Administration* &rarr; *Site Builder* &rarr; *Pages*.
-1. Click the *Actions* button (![Add](../../images/icon-actions.png)) next to the page that contains the Asset Publisher and select *Edit*.
+1. Click the *Actions* button (![Add](../../../images/icon-actions.png)) next to the page that contains the Asset Publisher and select *Edit*.
 
    ![Edit the page which contains your Asset Publisher.](./creating-collections/images/11.png)
 
-1. Hover over the *Asset Publisher*, click the *Options* icon (![Options](../../images/icon-app-options.png)) in the widget's menu, and select *Configuration*.
+1. Hover over the *Asset Publisher*, click the *Options* icon (![Options](../../../images/icon-app-options.png)) in the widget's menu, and select *Configuration*.
 
    ![Configure the Asset Publisher Widget.](./creating-collections/images/07.png)
 
@@ -117,7 +117,7 @@ You can create a new Collection from an [Asset Publisher Widget](../../site-buil
 
 ### Creating Content Sets
 
-You can create Content Sets through the Content Sets interface in Site Administration. Content Sets can use either Manual or Dynamic selection. You can create any number of Content Sets and display them through the Asset Publisher or custom applications. Content Sets can also have [personalized variations](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md#content-set-personalization) that provide different experiences for different users based on criteria that you specify. Criteria management is shared with the Asset Publisher. For more information on each option, see [Selecting Assets in the Asset Publisher](../../site-building/displaying-content/using-the-asset-publisher-widget/selecting-assets-in-the-asset-publisher-widget.md).
+You can create Content Sets through the Content Sets interface in Site Administration. Content Sets can use either Manual or Dynamic selection. You can create any number of Content Sets and display them through the Asset Publisher or custom applications. Content Sets can also have [personalized variations](../../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md#content-set-personalization) that provide different experiences for different users based on criteria that you specify. Criteria management is shared with the Asset Publisher. For more information on each option, see [Selecting Assets in the Asset Publisher](../../site-building/displaying-content/using-the-asset-publisher-widget/selecting-assets-in-the-asset-publisher-widget.md).
 
 #### Creating a Manual Content Set
 
@@ -127,7 +127,7 @@ To demonstrate the creation of a Manual Content Set, create a Content Set that c
 
     ![Content Sets is found in the Content & Data section of Site Administration.](./creating-collections/images/20.png)
 
-2. Click ![Add](../../images/icon-add.png) and select *Manual Selection*.
+2. Click ![Add](../../../images/icon-add.png) and select *Manual Selection*.
 3. Name your Content Set *Space Program Images*.
 
 On the next screen, you can select the assets to include in the Content Set.
@@ -144,7 +144,7 @@ Now this Content Set can be displayed anywhere on the site where it was created.
 
 To demonstrate the creation of a Dynamic Content Set, create a Content Set that contains a number of varied assets that are tagged as "trending." In order for this to work, you will need some number of existing assets with the appropriate tag.
 
-1. From the *Content Sets* page, click ![Add](../../images/icon-add.png) &rarr; *Dynamic Selection*.
+1. From the *Content Sets* page, click ![Add](../../../images/icon-add.png) &rarr; *Dynamic Selection*.
 2. Enter *Trending* for the name and click *Save*.
 
 With Dynamic Content Sets, you can choose the *Source*, *Scope*, *Filter*, and *Ordering* for the items in the set.
@@ -160,16 +160,16 @@ With Dynamic Content Sets, you can choose the *Source*, *Scope*, *Filter*, and *
 This will create a Content Set which will contain any items that are currently tagged as *trending* and any future items with the *trending* tag will be added to the Content Set automatically.
 
 Now that you have your Content Sets created, you can
-[display them on a page](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-content-sets).
+[display them on a page](./displaying-collections.md#displaying-content-sets).
 
 ### Converting Asset Publisher Configurations to Content Sets
 
 In the previous two guides in this section, you've seen [Creating Content Sets](./creating-collections.md#creating-content-sets)
-and [Displaying Content Sets](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-content-sets) demonstrated. Next, try out converting an existing Asset Publisher configuration to a Content Set.
+and [Displaying Content Sets](./displaying-collections.md#displaying-content-sets) demonstrated. Next, try out converting an existing Asset Publisher configuration to a Content Set.
 
 In this case, you have an Asset Publisher on a page, which is configured to display images tagged as *trending* in reverse alphabetical order by title. This might not be too hard to reproduce in the *Content Set* creator, but it's even easier to create the Content Set definition directly from the Asset Publisher.
 
-1. Go to ![Options](../../images/icon-app-options.png) &rarr; *Configuration* for the Asset Publisher.
+1. Go to ![Options](../../../images/icon-app-options.png) &rarr; *Configuration* for the Asset Publisher.
 2. Click *Create a content set from this configuration*.
 
     ![You can generate a Content Set directly from the Asset Publisher configuration.](./creating-collections/images/23.png)
@@ -185,5 +185,5 @@ Great! You converted your Asset Publisher configuration to a Content Set.
 ## Related Information
 
 - [About Collections and Collection Pages](./about-collections-and-collection-pages.md)
-- [Displaying Collections](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md)
-- [Personalizing Collections](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)
+- [Displaying Collections](./displaying-collections.md)
+- [Personalizing Collections](../../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)

@@ -5,12 +5,12 @@ uuid: 54108c82-b29d-4dcc-8734-ea3d941f4328
 
 {bdg-secondary}`Available Liferay Portal 7.4 GA6+, DXP 7.3 GA1+`
 
-You can display a collection by adding a collection page, or a collection display fragment. For more information about these display options, see [About Collections and Collection Pages](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections).
+You can display a collection by adding a collection page, or a collection display fragment. For more information about these display options, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections).
 
-By default, any user can see a collection's content. However, you can [personalize how users see this content using segments](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#customizing-collections).
+By default, any user can see a collection's content. However, you can [personalize how users see this content using segments](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#customizing-collections).
 
 ```{note}
-You must [create a collection](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md) before displaying it on a page.
+You must [create a collection](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md) before displaying it on a page.
 ```
 
 ## Displaying Collections on a Page
@@ -29,7 +29,7 @@ Follow these steps to add a collection page:
 
    ![Create a new collection page from the pages administration.](./displaying-collections/images/01.png)
 
-1. From the Collections tab, select one of your collections or click *Add* ( ![Add Icon](../../../images/icon-add.png) ) to [create a new collection](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md).
+1. From the Collections tab, select one of your collections or click *Add* ( ![Add Icon](../../../images/icon-add.png) ) to [create a new collection](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md).
 
 1. Select the *Master Page* you want to use.
 
@@ -189,7 +189,7 @@ You can find usage statistics for the collections on your site.
 
 ### Displaying Content Sets
 
-Content sets are primarily displayed through the Asset Publisher. It is currently the only method to display them out-of-the-box, but you can develop your own external applications or widgets to utilize content sets. In [Creating Content Sets](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md#creating-content-sets) you created two content sets. Now display them on a page.
+Content sets are primarily displayed through the Asset Publisher. It is currently the only method to display them out-of-the-box, but you can develop your own external applications or widgets to utilize content sets. In [Creating Content Sets](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-content-sets) you created two content sets. Now display them on a page.
 
 #### Configuring the Asset Publisher for Content Sets
 
@@ -255,6 +255,6 @@ Content sets provide one place to define content and other assets to be displaye
 
 ## Related Topics
 
-[Creating Collections](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
-[About Collections and Collection Pages](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
+[Creating Collections](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)
+[About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
 [Personalizing Collections](../../personalizing-site-experience/experience-personalization/personalizing-collections.md)

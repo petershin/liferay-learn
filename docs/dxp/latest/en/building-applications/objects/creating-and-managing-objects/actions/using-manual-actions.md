@@ -91,7 +91,7 @@ Here is an example of an action-ready custom button:
 1. Optionally, set the Success and Error interactions. See [Managing Success and Error Interactions](#managing-success-and-error-interactions) for more information.
 
 ```{tip}
-You can use collection display fragments or form fragments with components mapped to actions. See [Displaying Collections](../../../../site-building/displaying-content/additional-content-display-options/displaying-collections.md) and [Using Fragments to Build Forms](../../using-fragments-to-build-forms.md) for more information.
+You can use collection display fragments or form fragments with components mapped to actions. See [Displaying Collections](../../../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md) and [Using Fragments to Build Forms](../../using-fragments-to-build-forms.md) for more information.
 ```
 
 The button now executes the selected action when clicked.

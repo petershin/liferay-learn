@@ -5,14 +5,14 @@ uuid: 3bf64181-9407-4b88-8950-c426e1a05fa4
 
 {bdg-secondary}`Liferay 7.4 U77+/GA77+`
 
-When you publish an object definition, Liferay creates a [collection provider](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md) for it. You can use this provider with the [Collection Display fragment](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) and [collection pages](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) to display its entries. Objects support all collection display features, including filtering, styling, and display options.
+When you publish an object definition, Liferay creates a [collection provider](../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) for it. You can use this provider with the [Collection Display fragment](../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) and [collection pages](../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#displaying-collections-on-a-collection-page) to display its entries. Objects support all collection display features, including filtering, styling, and display options.
 
 ## Using an Object's Collection Provider
 
 1. Create a new [content page](../../site-building/creating-pages/using-content-pages.md) or [display page template](../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md). Alternatively, begin editing ( ![Edit Button](../../images/icon-edit-pencil.png) ) an existing one.
 
    ```{note}
-   You can also create a collection page using the collection provider. See [Collections and Collection Pages](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
+   You can also create a collection page using the collection provider. See [Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
    ```
 
 1. Drag and drop the *Collection Display* fragment into the page or template from the Fragments and Widgets (![Fragments and Widgets](../../images/icon-plus.png)) sidebar.
@@ -51,7 +51,7 @@ For example, you can embed a button in a Collection Display fragment mapped to a
 Mapping fragment elements to related object fields is behind a release feature flag. Read [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 ```
 
-If the mapped object is on the child side of a [one-to-many relationship](./creating-and-managing-objects/relationships/defining-object-relationships.md), you can map fragment elements to fields in the parent object. The embedded Collection Display fragment uses a unique [related items collection provider](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md#related-items-collections-providers) to form the new collection.
+If the mapped object is on the child side of a [one-to-many relationship](./creating-and-managing-objects/relationships/defining-object-relationships.md), you can map fragment elements to fields in the parent object. The embedded Collection Display fragment uses a unique [related items collection provider](../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md#related-items-collections-providers) to form the new collection.
 
 For example, if a `City` object (child) is related to a `Country` object (parent), you can map fragments to fields in the `Country` object.
 
@@ -83,6 +83,6 @@ Now you can embed fragments in the new Collection Display and map them to fields
 
 * [Creating Objects](./creating-and-managing-objects/creating-objects.md)
 * [Displaying Object Entires](./displaying-object-entries.md)
-* [About Collections and Collection Pages](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
-* [Collection Providers](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md)
+* [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [Collection Providers](../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md)
 * [Defining Object Relationships](./creating-and-managing-objects/relationships/defining-object-relationships.md)

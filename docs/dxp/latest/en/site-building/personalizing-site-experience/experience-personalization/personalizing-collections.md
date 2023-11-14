@@ -25,7 +25,7 @@ After you create [segments](../segmentation/creating-and-managing-user-segments.
 
 1. Open the *Site Menu* ( ![Site Menu](../../../images/icon-applications-menu.png) ) and navigate to *Site Builder* &rarr; *Collections*.
 
-1. Create a [collection](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md) or select an existing one.
+1. Create a [collection](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md) or select an existing one.
 
 1. Click *Add Personalized Variation*.
 
@@ -77,7 +77,7 @@ For example, there are three segments: Registered Users, Brazilian Users, and Ca
 
 Now, you'll use [segments](../segmentation/creating-and-managing-user-segments.md) to demonstrate content set personalization. For this example, create a content set to be the default displayed on the Home page. Then you'll modify it to create a personalized variation containing technical articles for members of the American Engineers segment.
 
-If you're not familiar with content sets, see the [Creating Content Sets](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md#creating-content-sets) article before you get started here.
+If you're not familiar with content sets, see the [Creating Content Sets](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md#creating-content-sets) article before you get started here.
 
 #### Creating and Setting the Default Content Set
 
@@ -124,6 +124,6 @@ Now anytime a member of the American Engineers segment views this content set be
 ## Related Information
 
 - [Content Page Personalization](./content-page-personalization.md)
-- [About Collections and Collection Pages](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
+- [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
 - [Creating User Segments](../segmentation/creating-and-managing-user-segments.md)
 - [Assigning Roles to User Segments](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)

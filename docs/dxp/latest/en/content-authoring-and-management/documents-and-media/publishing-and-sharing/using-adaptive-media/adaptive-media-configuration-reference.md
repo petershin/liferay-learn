@@ -20,7 +20,7 @@ Configuration options appear in four tabs:
 
 ## Systems Images Resolutions
 
-Here you can override Adaptive Media's default behavior for document library previews and thumbnails. By default, Adaptive Media chooses the best image resolution for previews and thumbnails based on the closest dimensions. <!--Q: Closest to what dimensions?--> But you can enter resolution IDs to override this process (e.g., `Preview-1000x0`).
+Here you can override Adaptive Media's default behavior for document library previews and thumbnails. By default, Adaptive Media chooses the best image resolution for previews and thumbnails based on the closest dimensions to user's screen type and resolution. But you can enter resolution IDs to override this process (e.g., `Preview-1000x0`).
 
 ![Access the System Settings](./adaptive-media-configuration-reference/images/02.png)
 
@@ -47,8 +47,6 @@ Here you can determine the media types processed by Adaptive Media and enable or
 |:---------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Gifsicle | You can enable Gifsicle to adapt gif files. See [Enabling Optimization of Animated GIFs](../../devops/enabling-optimization-of-animated-gifs.md) for more information. |
 
-<!--Q: This previously included the Max Image Size option. When was this removed?-->
-
 ## ImageMagick
 
 Here you can determine which media types are processed using [ImageMagick](http://www.imagemagick.org). To use ImageMagick, you must first install it on your Liferay server. See [Enabling ImageMagick and Ghostscript](../../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-imagemagick-and-ghostscript) for more information.
@@ -57,7 +55,7 @@ Here you can determine which media types are processed using [ImageMagick](http:
 
 | Field               | Description                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Supported MIME Type | Determine the media types processed by ImageMagick in Adaptive Media. If an image is uploaded and its media type isn't in this list, Adaptive Media does not use ImageMagick for generating its preview. By default, this list contains  `avif`, `gif`, `heic`, `tiff`, and `webp`, but you can add other MIME types. |
+| Supported MIME Type | Determine the media types processed by ImageMagick in Adaptive Media. If an image is uploaded and its media type isn't in this list, Adaptive Media does not use ImageMagick for generating its preview. By default, this list contains  `avif`, `gif`, `heic`, `tiff`, and `webp`, but you can add other media types. See [ImageMagick documentation](https://imagemagick.org/script/formats.php) for a list of supported media types. |
 
 ## Processes
 

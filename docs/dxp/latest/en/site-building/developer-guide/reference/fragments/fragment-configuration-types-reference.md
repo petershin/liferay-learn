@@ -19,7 +19,7 @@ These are the configurable fragment types available to implement:
 - `colorPalette`
 
 ```{note}
-Configuration values inserted into the FreeMarker context honor the defined `datatype` value specified in the JSON file. For example, if the `dataType` is String, `configuration.[name-value]?is_string` is `true`.
+Configuration values inserted into the FreeMarker context honor the defined `dataType` value specified in the JSON file. For example, if the `dataType` is String, `configuration.[name-value]?is_string` is `true`.
 ```
 
 ## Text Configuration
@@ -160,13 +160,13 @@ When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is repla
 
 * If you chose a color directly, it is replaced with the corresponding hex code value.
 * If you chose a color from the current style book, it's replaced with a CSS variable for the linked token (for example, `var(--danger)`).
-* If the current theme does not have any token definitions to use (so a [color palette](#color-palette-configuration) is used instead), it is replaced with a CSS Color (for example, `rgb(255, 0, 0)`).
+* If the current theme does not have any token definitions to use (so a [color palette](#color-palette-configuration) is used instead), it is replaced with a CSS color (for example, `rgb(255, 0, 0)`).
 
 ## Length Configuration
 
 {bdg-secondary}`Available Liferay 7.4 U44 and GA44+`
 
-The `length` configuration type creates a field where you can enter a number and choose predefined units or specify your own units for settings like width, margins, and padding. 
+The `length` configuration type creates a field where you can enter a number and choose predefined units or specify your own units for settings like width, margins, and padding.
 
 This JSON sample shows a field using the `length` configuration type. It includes properties defining the name, label, and default value.
 
@@ -296,7 +296,7 @@ You can then render the content in your fragment with this HTML snippet for the 
 </div>
 ```
 
-If you need access to specific portions of the content, you can also access the Java object in your fragment under the key `[name-of-field]Object` (`itemSelector1Object` 
+If you need access to specific portions of the content, you can also access the Java object in your fragment under the key `[name-of-field]Object` (`itemSelector1Object`
 in the example below). This example renders the title, description, and body of the web content article:
 
 ```html
@@ -317,7 +317,7 @@ Placing a fragment with an item selector configuration into a collection display
 
 This configuration adds a field specifically for a URL to use in your fragment's markup:
 
-```json
+```html
 {
     "fieldSets": [
         {
@@ -333,7 +333,7 @@ This configuration adds a field specifically for a URL to use in your fragment's
 }
 ```
 
-When you configure a fragment with this configuration, you can choose from a drop-down menu to enter a URL manually (`URL`) or to select another page from the same site and use its complete URL (`Page`).
+When you set a fragment with this configuration, you can choose from a drop-down menu to enter a URL manually (`URL`) or to select another page from the same site and use its complete URL (`Page`).
 
 Here is an example of fragment HTML that uses the URL configuration in the above JSON to create a hyperlink:
 
@@ -550,7 +550,7 @@ For example, if you implement the snippet above, you can use it in FreeMarker:
 <h3 class="text-${configuration.textColor.color}">Example</h3>
 ```
 
-If you were to choose the color white, the `h3` tag heading would have the class `text-white'`.
+If you were to choose the color white, the `h3` tag heading would have the class `text-white`.
 
 ![The color palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/03.png)
 

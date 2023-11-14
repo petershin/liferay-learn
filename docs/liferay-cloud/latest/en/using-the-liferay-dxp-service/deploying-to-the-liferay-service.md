@@ -9,7 +9,7 @@ The Liferay service makes use of a [Liferay workspace](https://learn.liferay.com
 
 ## Defining the Liferay DXP Docker Image
 
-The Liferay service image (defined in the `LCP.json` file, like other services) is not the same as the Liferay DXP Docker image. The Liferay DXP Docker image determines the exact version (including the fix pack) of Liferay that runs in your Liferay service. This is defined in your repository's `liferay/gradle.properties` file, with the `liferay.workspace.docker.image.liferay` property. 
+The Liferay service image (defined in the `LCP.json` file, like other services) is not the same as the Liferay DXP Docker image. The Liferay DXP Docker image determines the exact version (including the fix pack) of Liferay that runs in your Liferay service. This is defined in your repository's `liferay/gradle.properties` file, with the `liferay.workspace.docker.image.liferay` property.
 
 Check the [Liferay DXP Docker tags](https://hub.docker.com/r/liferay/dxp/tags) to find the right image for your version of DXP.
 
@@ -100,24 +100,24 @@ liferay
           └── scripts
 ```
 
-Note that the hotfix must be re-applied each time the server starts up. For this reason, updating to the latest Fix Pack or Service pack of the Liferay DXP Docker image in your `LCP.json` file is better than adding a hotfix into this folder for the long term; you can update the Docker version by replacing the `image` environment variable in this file (in the `liferay/` directory.
+Note that the hotfix must be re-applied each time the server starts up. For this reason, updating to the latest Fix Pack or Service pack of the Liferay DXP Docker image in your `LCP.json` file is better than adding a hotfix into this folder for the long term; you can update the Docker version by replacing the `image` environment variable in this file (in the `liferay/` directory).
 
 ### Patching via Environment Variable
 
 You can also install hotfixes as part of the CI build process instead of directly committing them to your Git repository. This approach is ideal for large hotfixes so you can avoid keeping large files in your repository.
 
-Add a comma-delimited list of hotfixes to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply them during the build process.
+Add a hotfix to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply it during the build process. If you need multiple bug fixes, ask support to package them into a single hotfix.
 
 ```{note}
 If you add this environment variable to the `LCP.json` for your `ci` service, then you must deploy the `ci` service to your **infra environment** to complete the update.
 ```
 
-See the following example of defining hotfixes through in the `LCP.json` file:
+See the following example of defining hotfixes in the `LCP.json` file:
 
 ```
 "env": {
-    "LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON": "liferay-hotfix-10-7210,liferay-hotfix-17-7210",
-    "LCP_CI_LIFERAY_DXP_HOTFIXES_DEV": "liferay-hotfix-15-7210,liferay-hotfix-33-7210",
+    "LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON": "liferay-hotfix-17-7210",
+    "LCP_CI_LIFERAY_DXP_HOTFIXES_DEV": "liferay-hotfix-33-7210"
 }
 ```
 

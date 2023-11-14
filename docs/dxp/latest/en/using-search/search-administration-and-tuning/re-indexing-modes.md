@@ -15,18 +15,23 @@ uuid: 3d46420e-a962-45c7-bd72-ef0f209003e8
 
 A full re-index works in any scenario, whether for all content and indexes or a single model. However, it's not always the best choice. To avoid downtime due to a long running full re-index process, use concurrent or sync mode whenever possible.
 
+
 | Re-Index Scenario                     | Full     | Concurrent (![Beta](../../images/icon-beta-feature.png)) | Sync (![Beta](../../images/icon-beta-feature.png)) |
 |:--------------------------------------|:---------|:---------|:---------|
-| New Elasticsearch installation        | &#10004; |          |          |
-| Index creation or deletion            | &#10004; | &#10004; |          |
-| Field mappings update                 | &#10004; | &#10004; |          |
-| Index settings update                 | &#10004; | &#10004; |          |
-| Liferay upgrade: quarterly release    | &#10004; | &#10004; | &#10004; |
-| Liferay upgrade: major version change | &#10004; | &#10004; | &#10004; |
-| After upgrading Elasticsearch         | &#10004; | &#10004; | &#10004; |
-| After other uptime issues             | &#10004; | &#10004; | &#10004; |
-| Single model re-indexing[^1]          | &#10004; |          | &#10004; |
-| After connection interruptions        |          | &#10004; | &#10004; |
+| New Elasticsearch installation        | &#10004; | &#10007; | &#10007; |
+| Index creation or deletion            | &#10003; | &#10004; | &#10007; |
+| Field mappings update                 | &#10003; | &#10004; | &#10007; |
+| Index settings update                 | &#10003; | &#10004; | &#10007; |
+| Liferay upgrade: quarterly release    | &#10003; | &#10004; | &#10003; |
+| Liferay upgrade: major version change | &#10003; | &#10004; | &#10003; |
+| After upgrading Elasticsearch         | &#10003; | &#10004; | &#10003; |
+| After other uptime issues             | &#10003; | &#10004; | &#10003; |
+| Single model re-indexing[^1]          | &#10003; | &#10007; | &#10004; |
+| After connection interruptions        | &#10007; | &#10004; | &#10003; |
+
+* &#10003; The mode is available for this action
+* &#10004; The mode is recommended for this action
+* &#10007; The mode is not available for the action
 
 [^1]: Re-indexing a single model is occasionally required. For example, using certain elements while [creating a search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints/creating-and-managing-search-blueprints.md#adding-elements-to-the-blueprint) and [enabling semantic search](../liferay-enterprise-search/search-experiences/semantic-search.md) require re-indexing individual model types.
 

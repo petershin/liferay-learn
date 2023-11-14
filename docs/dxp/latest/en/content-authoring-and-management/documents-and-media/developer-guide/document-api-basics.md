@@ -16,7 +16,7 @@ When signed in, [retrieve the site's ID](../../../headless-delivery/consuming-ap
 
 Then, follow these steps:
 
-1. Download and unzip the [example project](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip):
+1. Download and unzip the [example project](https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip):
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/documents-and-media/developer-guide/liferay-g9i6.zip -O

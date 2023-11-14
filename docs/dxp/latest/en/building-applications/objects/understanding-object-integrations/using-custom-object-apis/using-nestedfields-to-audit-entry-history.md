@@ -61,7 +61,7 @@ Once published, you can access the object via Headless APIs.
 Download and unzip the sample code:
 
 ```bash
-curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-g4m3.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/understanding-object-integrations/using-custom-object-apis/liferay-g4m3.zip -O
 ```
 
 ```bash

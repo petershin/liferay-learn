@@ -16,7 +16,7 @@ For an introduction to the Web Content API, see [Web Content API Basics](./web-c
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-Then, download and unzip the [sample project](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip):
+Then, download and unzip the [sample project](https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip):
 
 ```bash
 curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip -O
@@ -44,7 +44,7 @@ Here, you'll work with a Web Content article containing different content fields
 
 1. Open the Site menu (![Site menu](../../../images/icon-menu.png)) and go to *Content & Data* &rarr; *Documents and Media*.
 1. Click the *Add* button (![Add](../../../images/icon-add.png)) and select *Multiple Files Upload*.
-1. Drag and drop the `foo.png`, `bar.png`, and `goo.png` images from the [sample project folder](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) onto the drop area.
+1. Drag and drop the `foo.png`, `bar.png`, and `goo.png` images from the [sample project folder](https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) onto the drop area.
 1. Click *Publish*.
 
 Alternatively, you can use the `Document_POST_ToSite.sh` script to post each image separately using the REST API `Document` service.

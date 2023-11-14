@@ -17,7 +17,7 @@ Then, follow these steps:
 1. Download and unzip the provided sample code:
 
    ```bash
-   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/liferay-r4g6.zip -O
+   curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/creating-and-managing-objects/liferay-r4g6.zip -O
    ```
 
    ```bash

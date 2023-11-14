@@ -85,7 +85,7 @@ Once published, you can access each object via Headless APIs.
 Run the commands below to download and unzip the provided sample code:
 
 ```bash
-curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/understanding-object-integrations/using-custom-object-apis/liferay-w4s7.zip -O
 ```
 
 ```bash

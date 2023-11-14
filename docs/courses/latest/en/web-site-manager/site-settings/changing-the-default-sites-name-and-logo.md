@@ -22,7 +22,7 @@ Log in as Kyle Klein, [your instance's administrator](https://learn.liferay.com/
 1. Download and unzip the Clarity site logo:
 
    ```bash
-   curl https://resources.learn.liferay.com/courses/latest/en/liferay-v6j4.zip -O
+   curl https://resources.learn.liferay.com/courses/latest/en/web-site-manager/site-settings/liferay-v6j4.zip -O
    ```
 
    ```bash

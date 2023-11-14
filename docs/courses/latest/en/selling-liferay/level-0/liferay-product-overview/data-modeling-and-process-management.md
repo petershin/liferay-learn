@@ -14,7 +14,7 @@ Business users can define the fields required for business applications and form
 ## Objects
 
 * [Objects Overview](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Tutorials](https://learn.liferay.com/w/dxp/building-applications/objects/objects-tutorials)
+* [Tutorials](https://learn.liferay.com/w/dxp/building-applications/objects)
 
 ## Forms
 

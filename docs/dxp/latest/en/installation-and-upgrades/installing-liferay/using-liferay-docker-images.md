@@ -61,7 +61,7 @@ The containers listens on port `8080` and starts like all Docker containers.
     ![Change your password upon first login.](./using-liferay-docker-images/images/01.png)
 
 ```{warning}
-In a production environment, you should not use the default admin account. Instead, [create admin accounts](./introduction-to-the-admin-account.md#creating-a-new-admin-user) specific to your business. 
+In a production environment, you should not use the default admin account. Instead, [create admin accounts](../../getting-started/introduction-to-the-admin-account.md#creating-a-new-admin-user) specific to your business. 
 ```
 
 Liferay is ready to use.

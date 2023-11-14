@@ -26,7 +26,7 @@ Once started, retrieve the site ID. To find your site ID, open the *Site Menu* (
 
 Below is sample code to demonstrate the Headless API. This code includes both sample cURL and Java files.
 
-Run the following command to download and unzip the [sample code](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip):
+Run the following command to download and unzip the [sample code](https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip):
 
 ```bash
 curl https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/message-boards/developer-guide/liferay-y3a6.zip -O

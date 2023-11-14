@@ -66,7 +66,7 @@ Library that contains general purpose JSF utilities to support many of the sub-p
 
 |Branch|Example Artifact|&nbsp;&nbsp;JSF API|
 |------|----------------|:-------:|
-|[4.x](https://github.com/liferay/liferay-faces-util/tree/4.x)|com.liferay.faces.util-3.1.0.jar|2.3|
+|[master](https://github.com/liferay/liferay-faces-util)|com.liferay.faces.util-3.1.0.jar|2.3|
 |[3.x](https://github.com/liferay/liferay-faces-util/tree/3.x)|com.liferay.faces.util-3.1.0.jar|2.2|
 |[2.x](https://github.com/liferay/liferay-faces-util/tree/2.x)|com.liferay.faces.util-2.1.0.jar|2.1|
 |[1.x](https://github.com/liferay/liferay-faces-util/tree/1.x)|com.liferay.faces.util-1.1.0.jar|1.2|

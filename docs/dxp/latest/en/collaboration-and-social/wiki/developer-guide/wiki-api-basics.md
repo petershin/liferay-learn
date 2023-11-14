@@ -22,7 +22,7 @@ Once started, retrieve the Site ID. To find your Site ID, open the *Site Menu* (
 
 This tutorial provides sample code to demonstrate the Headless API. This code includes both sample cURL and Java files for use throughout the tutorial.
 
-Run the following command to download and unzip the [sample code](https://learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip):
+Run the following command to download and unzip the [sample code](https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip):
 
 ```bash
 curl https://resources.learn.liferay.com/dxp/latest/en/collaboration-and-social/wiki/developer-guide/liferay-q8u2.zip -O

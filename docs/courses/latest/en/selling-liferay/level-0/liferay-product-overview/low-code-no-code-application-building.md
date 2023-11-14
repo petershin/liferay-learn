@@ -14,7 +14,7 @@ Liferay’s Low-Code and No-Code tools make it possible for non-developers to bu
 ## Objects
 
 * [Objects Overview](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Tutorials](https://learn.liferay.com/w/dxp/building-applications/objects/objects-tutorials)
+* [Tutorials](https://learn.liferay.com/w/dxp/building-applications/objects)
 
 ## Forms
 

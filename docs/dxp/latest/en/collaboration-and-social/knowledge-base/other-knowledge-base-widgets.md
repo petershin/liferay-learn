@@ -5,11 +5,11 @@ uuid: 86d92a49-c9a6-4d2f-8ed8-faf4aab615c2
 
 There are other Knowledge Base widgets you can add to pages besides the [Knowledge Base Display widget](knowledge-base-display-widget.md):
 
-**Knowledge Base Article widget:** Display a single article’s content.
+**Knowledge Base Article**: Display a single article’s content.
 
-**Knowledge Base Section widget:** Publish articles associated with a specific topic (section).
+**Knowledge Base Section**: Publish articles associated with a specific topic (section).
 
-**Knowledge Base Search widget:** Search for articles.
+**Knowledge Base Search**: Search for articles.
 
 You can add these widgets from *Add* (![Add icon](../../images/icon-add.png)) &rarr; *Widgets* &rarr; *Content Management*.
 
@@ -17,13 +17,17 @@ You can add these widgets from *Add* (![Add icon](../../images/icon-add.png)) &r
 
 The Knowledge Base Article widget displays a single article’s content. It even shows abstracts of child articles. You can add multiple Knowledge Base article instances to a page, and each one can show a different article.
 
-After adding the Knowledge Base Article widget to a Site page,
+After adding the Knowledge Base Article widget to a site page,
 
-1. Click _Options_ (![Options icon](../../images/icon-options.png)) &rarr; click *Configuration*.
+1. Click the *Options* button (![Options Button](../../images/icon-options.png)) and select *Configuration*.
 
-1. In the *Setup* &rarr; *General* tab, click *Select*. Choose an article, click *Save*, and close the Configuration window.
+1. In the *Setup* tab, click *Select*.
 
-    ![Use the Knowledge Base Article widget to display an individual article](./other-knowledge-base-widgets/images/01.png)
+1. Select an article.
+
+1. Click *Save* and close the Configuration window.
+
+    ![Use the Knowledge Base Article widget to display an individual article.](./other-knowledge-base-widgets/images/01.png)
 
 The Knowledge Base Article widget shares the same UI as the Knowledge Base Display widget to display and manage its articles. Refer to the [Knowledge Base Display widget](knowledge-base-display-widget.md) documentation for a detailed description of the widget’s UI.
 
@@ -33,7 +37,7 @@ The Knowledge Base Article widget shares the same UI as the Knowledge Base Displ
 As of Knowledge Base 3.0.0, the Knowledge Base Sections widget is deprecated and replaced by [categories](../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md).
 ```
 
-The Knowledge Base Section widget can publish articles associated with a specific topic (section). For example, a Site about the Summer Olympics might have the sections Team Sports, Water Sports and Martial Arts.
+The Knowledge Base Section widget can publish articles associated with a specific topic (section). For example, a site about the Summer Olympics might have the sections Team Sports, Water Sports and Martial Arts.
 
 ![The widget displays articles based on specific sections.](./other-knowledge-base-widgets/images/02.png)
 
@@ -47,9 +51,9 @@ You can add multiple instances of the Knowledge Base Section widget to a page. E
 
 To configure the Knowledge Base Section widget,
 
-1. Select *Configuration* from the Knowledge Base Section widget’s *Options* menu (![Options icon](../../images/icon-options.png)). This opens the widget’s Configuration window.
+1. Click the *Options* button (![Options Button](../../images/icon-options.png)) and select *Configuration*.
 
-    ![Customize the widget in this configuration window.](./other-knowledge-base-widgets/images/04.png)
+    ![Customize the widget in the Configuration window.](./other-knowledge-base-widgets/images/04.png)
 
 1. In *Setup* &rarr; *General* tab, select the section or sections that you want to use and click *Save*.
 
@@ -77,10 +81,16 @@ Enter your search term and press the *Search* button. The results are displayed 
 
 After adding the widget to a page,
 
-1. Click _Options_ (![Options icon](../../images/icon-options.png)) &rarr; *Configuration*.
+1. Click the *Options* button (![Options Button](../../images/icon-options.png)) and select *Configuration*.
 
    ![Choose the criteria to display for the search results.](./other-knowledge-base-widgets/images/06.png)
 
 1. In the *Setup* &rarr; *General* tab, select the criteria to display in the search results.
 
 1. Click *Save*, and close the Configuration window.
+
+## Related Topics
+
+* [Creating Knowledge Base Articles](./creating-knowledge-base-articles.md)
+* [Managing the Knowledge Base](./managing-the-knowledge-base.md)
+* [Knowledge Base Display Widget](./knowledge-base-display-widget.md)

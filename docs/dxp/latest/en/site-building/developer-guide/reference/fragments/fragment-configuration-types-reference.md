@@ -123,7 +123,7 @@ The color picker JSON configuration creates a flexible color selector where any 
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/02.png)
 
 ```{note}
-If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette configuration) configurations.
+If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette-configuration) configurations.
 ```
 
 This JSON configuration creates a color picker field called `headingColor`:
@@ -197,7 +197,7 @@ In the user interface, you can choose from the available units or specify a cust
 
 {bdg-secondary}`Available Liferay 7.3+`
 
-This configuration creates a selector for selecting one existing piece of content (a web content article, blog entry, or document by default) to include in the fragment.
+This configuration creates a selector for selecting one existing piece of content (a web content article, document, blog entry, category, product, or knowledge base article by default) to include in the fragment.
 
 ```json
 {
@@ -240,7 +240,7 @@ You can provide a more advanced configuration that lets authors select only a sp
 }
 ```
 
-This example specifies that only a document with the `img` or `jpg` MIME type that uses the structure `metadataset-structure-key-2` can be selected:
+This example specifies that only a document with the `image/jpg` MIME type (`.jpg` file) that uses the structure `metadataset-structure-key-2` can be selected:
 
 ```json
 {
@@ -255,7 +255,7 @@ This example specifies that only a document with the `img` or `jpg` MIME type th
             "itemType": "com.liferay.portal.kernel.repository.model.FileEntry",
             "itemSubtype": "metadataset-structure-key-2",
             "mimeTypes": [
-              "img/jpg"
+              "image/jpg"
             ]
           }
         }
@@ -286,7 +286,7 @@ This example specifies that only blog entries can be selected:
 }
 ```
 
-You can then render the content in your fragment with this HTML snippet for the web content article:
+You can then render the content in your fragment with this HTML snippet for the blog content:
 
 ```html
 <div class="fragment_name">
@@ -492,7 +492,7 @@ Using this sample configuration, collections including both web content and blog
 ![A collection including web content and blog entries corresponds to the asset type.](./fragment-configuration-types-reference/images/09.png)
 
 ```{tip}
-In addition to the `itemType`, you can specify the `itemSubtype` in the configuration. The `itemSubtype` corresponds to the asset `classPK`.
+In addition to the `itemType`, you can specify the `itemSubtype` in the configuration.
 ```
 
 ### Defining a Maximum Number of Returned Collection Items
@@ -501,16 +501,20 @@ By default, all items in the collection are returned if you do not define a limi
 
 ```json
 {
-       "label": "Collection",
-       "fields": [
-            {
-                "name": "collection",
-                "type": "collectionSelector",
-                "typeOptions": {
-                    "numberOfItems": 3
+    "fieldSets": [
+        {
+            "label": "Collection",
+            "fields": [
+                {
+                    "name": "collection",
+                    "type": "collectionSelector",
+                    "typeOptions": {
+                        "numberOfItems": 3
+                    }
                 }
-            }
-        ]
+            ]
+        }
+    ]
 }
 ```
 
@@ -545,7 +549,7 @@ The `colorPalette` type stores an object with the  value: `color`.
 For example, if you implement the snippet above, you can use it in FreeMarker:
 
 ```html
-<h3 class="text-${configuration.textColor.cssClass}">Example</h3>
+<h3 class="text-${configuration.textColor.color}">Example</h3>
 ```
 
 If you were to choose the color white, the `h3` tag heading would have the class `text-white'`.

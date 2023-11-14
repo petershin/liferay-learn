@@ -11,3 +11,5 @@ uuid: 3d15a19a-8321-4f41-8dd0-7672f71fa99f
 # Creating Content
 
 Coming soon!
+
+<!-- The time is now. It is time to write the intro. :-) -Rich -->

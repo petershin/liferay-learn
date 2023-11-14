@@ -3,9 +3,7 @@ uuid: 00b94392-cc0a-4a9b-9808-d1a99a0cdb3a
 ---
 # Adding a Structure for Events
 
-Liferay comes with just one out-of-the-box web content structure, *Basic Web Content*. This structure works fine for standard articles, but Clarity needs structures that are specific to more specialized types of content: *event* articles and *FAQs*.
-
-Heres, create the structure for an event, such as a new announcement or bulletin.
+Liferay comes with just one out-of-the-box web content structure, *Basic Web Content*, which isn't appropriate for what Clarity wants. Clarity needs structures specific to more specialized types of content: *event* articles and *FAQs*.
 
 ## Start Creating the Event Structure
 
@@ -17,19 +15,19 @@ First, Clarity needs a structure for content that describes a specific event or 
 
 1. Click the *Structures* tab.
 
-1. Click Add (![Add icon](../../images/icon-add.png)) to add a new structure.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) to add a new structure.
 
-1. Click into the title field at the top of the page, and name the structure "Event".
+1. Click into the title field at the top of the page and name the structure `Event`.
 
    ![Name the new structure "Event".](./adding-a-structure-for-events/images/02.png)
 
-1. Click the *Properties* button (![Properties icon](../../images/icon-cog3.png)) to access the structure's properties, and enter this description: "Generic structure for internal and external announcements."
+1. Click *Properties* (![Properties icon](../../images/icon-cog3.png)) to access the structure's properties and enter this description: `Generic structure for internal and external announcements.`
 
 Now you are ready to configure the structure with the necessary fields.
 
 ## Configure the Event Structure's Fields
 
-1. Click the *Builder* button (![Builder icon](../../images/icon-builder.png)) to reopen the Builder menu.
+1. Click *Builder* (![Builder icon](../../images/icon-builder.png)) to reopen the Builder menu.
 
 1. From the Builder menu, drag a *Text* field into the body of the structure.
 
@@ -59,21 +57,23 @@ Now you are ready to configure the structure with the necessary fields.
 
    * Enable the *Required Field* toggle.
 
-1. Click the fields group containing the two text fields to access its configuration, and enter "Content" into its Label field.
+1. Click the fields group containing the two text fields to access its configuration and enter `Content` into its Label field.
 
 1. Exit the field group's configuration and drag an *Image* field into the structure, below the Content field group.
 
-   Look for the blue bar indicating where you're placing the field, and make sure it shows at the very bottom of the structure to make sure it's placed outside of the field group.
+   Look for the blue bar indicating where you're placing the field and make sure it shows at the very bottom of the structure so it's placed outside of the field group.
 
    ![Place the Image outside of the existing field group.](./adding-a-structure-for-events/images/04.png)
 
-1. Enter "Banner Image" into the image field's Label in the configuration menu.
+1. Enter `Banner Image` into the image field's Label in the configuration menu.
 
 1. Drag another Image field into the structure onto the existing image field so it creates another field group.
 
    <!-- card image is not used in the template. should this be kept ? -- eric -->
 
-1. Enter "Card Image" into the second image field's Label in the configuration menu.
+   <!-- Maybe it's used later? Check with Alec. If it's not used, no, we shouldn't have it. -Rich -->
+
+1. Enter `Card Image` into the second image field's Label in the configuration menu.
 
 1. Click the fields group containing the image fields and change these settings in its configuration:
 
@@ -87,7 +87,7 @@ Now you are ready to configure the structure with the necessary fields.
 
 Now you have a web content structure you can use for any event or announcement on your site.
 
-Next, make a web content structure for a variable number of [frequently asked questions](./adding-a-structure-for-frequently-asked-questions.md).
+Next: make a structure for [frequently asked questions](./adding-a-structure-for-frequently-asked-questions.md).
 
 ## Relevant Concepts
 

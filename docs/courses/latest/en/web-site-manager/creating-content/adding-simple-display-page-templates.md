@@ -3,9 +3,9 @@ uuid: 41120219-8547-430a-833f-a74c794dcb08
 ---
 # Adding Simple Display Page Templates
 
-Display page templates are page templates used to display a specific piece of content. Use them if you want somewhere where you can look at a specific article in its own context.
+Display page templates display a specific piece of content. Use them to show a specific article in its own context.
 
-Here, you can create a display page template specific to each of your web content types (Event and FAQs), and then use them to add new pages to your site.
+Next, you'll create a display page template specific to each of your web content types (Event and FAQs), and then use them to add new pages to your site.
 
 Olivia, the content manager, doesn't have permission to create new page templates. Log in as your site administrator, Preston Palmer, before you begin.
 
@@ -21,7 +21,7 @@ Olivia, the content manager, doesn't have permission to create new page template
 
    ![Choose Clarity MP as the master page template to base your new template on.](./adding-simple-display-page-templates/images/01.png)
 
-1. In the *Name* field, enter "Single-Event Display".
+1. In the *Name* field, enter `Single-Event Display`.
 
 1. From the *Content Type* drop-down menu, select *Web Content Article*.
 
@@ -35,11 +35,11 @@ Olivia, the content manager, doesn't have permission to create new page template
 
    You automatically begin editing a display page based on the Clarity MP master page.
 
-1. In the Fragments menu on the left, scroll down to the *Content Display* fragment group, and drag a *Content Display* fragment onto the drop zone.
+1. In the Fragments menu on the left, scroll down to the Content Display fragment group, and drag a *Content Display* fragment onto the drop zone.
 
    ![Drag the Content Display fragment onto the page to display the page's web content.](./adding-simple-display-page-templates/images/03.png)
 
-   By default, this fragment automatically displays whatever content the page is being used for.
+   By default, this fragment automatically displays the content type selected for the page.
 
 1. Click the Content Display fragment you added.
 
@@ -49,7 +49,7 @@ Olivia, the content manager, doesn't have permission to create new page template
 
 1. Click the *Styles* tab from the menu on the right side of the screen.
 
-1. Under *Spacing*, click the top and bottom margins (in the outer rectangle) and set them to use the *Spacer 3* margin (1 rem).
+1. Under Spacing, click the top and bottom margins (in the outer rectangle) and set them to use the *Spacer 3* margin (1 rem).
 
    This creates a buffer of space, above and below where your template is displayed.
 
@@ -59,9 +59,9 @@ Olivia, the content manager, doesn't have permission to create new page template
 
 1. Click *Publish* at the top of the page.
 
-1. Back on the Display Page Templates page, click the Actions menu (![Actions icon](../../images/icon-actions.png)) for your new Single-Event Display template and click *Mark as Default*.
+1. Back on the Display Page Templates page, click the *Actions* menu (![Actions icon](../../images/icon-actions.png)) for your new Single-Event Display template and select *Mark as Default*.
 
-   Now any Event articles automatically use this template by default on their display pages.
+   Now Event articles automatically use this template by default on their display pages.
 
 You have a basic page to display a single Event. Later, you'll create a better page that can display more events dynamically.
 
@@ -73,9 +73,9 @@ Next, create a template to display a list of FAQs.
 
 1. Select the *Clarity MP* master page template again.
 
-1. In the *Name* field, enter "FAQs Page".
+1. In the *Name* field, enter `FAQs Page`.
 
-1. From the *Content Type* drop-down menu, select *Web Content Article*.
+1. From the Content Type drop-down menu, select *Web Content Article*.
 
    The *Subtype* drop-down menu appears once you make the selection.
 
@@ -85,7 +85,7 @@ Next, create a template to display a list of FAQs.
 
 1. Click *Save*.
 
-1. In the Fragments menu on the left, scroll down to the *Content Display* fragment group, and drag a *Content Display* fragment onto the drop zone.
+1. In the Fragments menu on the left, scroll down to the Content Display fragment group, and drag a *Content Display* fragment onto the drop zone.
 
 1. Click the Content Display fragment you added.
 
@@ -95,7 +95,7 @@ Next, create a template to display a list of FAQs.
 
 1. Set the left and right margins to *Spacer 5* (3 rem).
 
-1. Under the *Text* section, change the font size to *Font Size Large*.
+1. Under the Text section, change the font size to *Font Size Large*.
 
 1. Scroll up to *Basic Components* in the Fragments menu, and drag a *Paragraph* fragment under the Content Display fragment.
 
@@ -107,31 +107,31 @@ Next, create a template to display a list of FAQs.
 
 1. In the Browser menu on the left, click the *element-text* component inside the Paragraph fragment.
 
-   The menu on the right changes again to the text configuration. Now you can map the paragraph's text to something related to the page's content.
+   The menu on the right changes again to the text configuration. Now you can map the paragraph's text to data related to the page's content.
 
 1. From the *Field* drop-down menu on the right side of the screen, select *Publish Date*.
 
    ![Map the text in the Paragraph fragment to the Publish Date property of the displayed content.](./adding-simple-display-page-templates/images/07.png)
 
-   Now the article's last publish date displays in a new fragment beneath the body of the FAQs article.
+   Now the article's last publish date appears in a new fragment beneath the body of the FAQs article.
 
 1. Click *Publish* at the top of the screen.
 
-1. Back on the Display Page Templates page, click the Actions menu (![Actions icon](../../images/icon-actions.png)) for your new Single-Event Display template and click *Mark as Default*.
+1. Back on the Display Page Templates page, click the *Actions* menu (![Actions icon](../../images/icon-actions.png)) for your new Single-Event Display template and click *Mark as Default*.
 
-   This makes the new FAQs Page template the default for any FAQs articles. Notice that the Single-Event Display template is still the default for Event articles.
+   This makes the new FAQs Page template the default for FAQs articles. Notice that the Single-Event Display template is still the default for Event articles.
 
-Now you have a template to display any Event or FAQs articles you want on your site, on their own pages. Next, let's add a couple of them to the site.
+Now you have a template to display any Event or FAQs articles you want on your site, on their own pages. Next, you'll add some to the site.
 
 ## Add Display Pages to the Site's Navigation
 
 1. Navigate to the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Site Builder* &rarr; *Navigation Menus*.
 
-1. Click the Clarity Header Menu.
+1. Click the *Clarity* Header Menu.
 
-1. Click *Add*, and select the Event article you created previously, *Clarity Site Going Live Soon*.
+1. Click *Add* and select the Event article you created previously, *Clarity Site Going Live Soon*.
 
-1. Click *Add*, and select the FAQs article you created previously, *Clarity Site FAQs*.
+1. Click *Add* and select the FAQs article you created previously, *Clarity Site FAQs*.
 
 1. Drag both of the new articles so they are both under the *More* submenu, before the About Us page.
 
@@ -143,7 +143,7 @@ Now you have a template to display any Event or FAQs articles you want on your s
 
 1. On the navigation menu, click each of the display pages to see how they look.
 
-   Each of these pages shows the content for their respective articles. The article's contents automatically display using the web content templates you created, and they are positioned on the page using the display page templates.
+   Each of these pages shows the content for their respective articles. The article's contents automatically appear using the web content templates you created, and they are positioned on the page using the display page templates.
 
    ![The FAQs page displays a list of FAQs as you configured it in the web content template.](./adding-simple-display-page-templates/images/09.png)
 

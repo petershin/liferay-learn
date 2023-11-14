@@ -3,9 +3,9 @@ uuid: a5817034-132b-4ded-93b6-b082022eb2ce
 ---
 # Adding a Template to Display an Event
 
-You should have a web content template for each new type of structure you add. Liferay needs them to know how to order and arrange each field in the structure.
+You should have a web content template for each new type of structure you add. They define how to order and arrange each field in the structure.
 
-Here, use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/dgui.html) to format the fields for an Event article.
+Here, you'll use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/dgui.html) to format the fields for an Event article.
 
 ## Start Creating the Template
 
@@ -17,29 +17,31 @@ Here, use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/dgui.htm
 
    <!-- I guess we can also add the template straight from the templates tab and select a structure in basic information. Is it necessary to document the alternative way to do the same here in courses? -- Eric -->
 
+   <!-- Feel free to change these instructions to whatever makes pedagogical sense to you. Maybe to show both, you do it this way here, and then for the next one, you can do it from the templates tab. -Rich -->
+
 1. Select *Manage Templates* in the Event structure's Actions menu (![Actions icon](../../images/icon-actions.png)).
 
    ![Click Manage Templates to specifically add templates for this web content structure.](./adding-a-template-to-display-an-event/images/01.png)
 
-1. Click Add (![Add icon](../../images/icon-add.png)) to create a new template.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) to create a new template.
 
    The new template is associated automatically with the Event structure because you chose to manage templates for it.
 
-1. At the top of the page, enter "Simple Event Format" as the title.
+1. At the top of the page, enter `Simple Event Format` as the title.
 
-1. In the Properties menu (on the right side of the screen), enter this into the *Description* field: "A generic template to display an event."
+1. In the Properties menu (on the right side of the screen), enter this into the *Description* field: `A generic template to display an event.`
 
 ## Configure the Template's Fields
 
-Now, arrange the order and format to display each of the field contents that an Event article can have.
+Now, arrange the order and format to display field data for Event articles.
 
-1. Click the *Elements* button (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
+1. Click *Elements* (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
 
-1. Click into the body of the template, and delete the placeholder text.
+1. Click into the body of the template and delete the placeholder text.
 
-1. In the Elements menu, scroll down to the fields under *Journal* and click *Title*.
+1. In the Elements menu, scroll down to the fields under Journal and click *Title*.
 
-   This automatically fills in code that uses the title value.
+   This automatically adds code that uses the title value.
 
    ![Clicking one of the fields in the Elements menu automatically fills in code to reference the field's contents (if they exist).](./adding-a-template-to-display-an-event/images/02.png)
 
@@ -49,9 +51,9 @@ Now, arrange the order and format to display each of the field contents that an 
    <h1>${.vars["reserved-article-title"].data}</h1>
    ```
 
-   Now displaying Event articles with this template begins with the title as an H1 header.
+   Event articles published with this template start with the title as an H1 header.
 
-1. In the Elements menu, scroll up to the fields under *Fields* and click *Summary*.
+1. In the Elements menu, scroll up to *Fields* and click *Summary*.
 
    This adds a reference to the Summary contents, as long as it exists. It uses the FreeMarker `<#if>` tag to do this.
 
@@ -67,9 +69,9 @@ Now, arrange the order and format to display each of the field contents that an 
 
 ![The completed Event template displays the title, the summary, the banner image, and then the article body beneath a separator line.](./adding-a-template-to-display-an-event/images/04.png)
 
-Now your Event template is complete, and you can display an Event article with a presentable format. You can see this later when you display an article on a page.
+Now your Event template is complete, and you can display an Event article with a presentable format. You'll see this later when you display an article on a page.
 
-Next, create [a template for the other structure you created, FAQs](./adding-a-template-to-display-faqs.md).
+Next: create [a template for the other structure you created, FAQs](./adding-a-template-to-display-faqs.md).
 
 ## Relevant Concepts
 

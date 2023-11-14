@@ -3,9 +3,9 @@ uuid: 33c99765-2c6a-43a5-bb90-f29aaa1079ec
 ---
 # Adding a Template to Display FAQs
 
-The template for FAQs needs to be able to display not only each field you added, but also every repetition of a question and answer the article could have.
+The template for FAQs needs to be able to display not only each field you added, but also every repetition of a question and answer the article *could* have.
 
-Here, make use of a [FreeMarker list](https://freemarker.apache.org/docs/ref_directive_list.html) to ensure every question and answer is shown.
+Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/ref_directive_list.html) to ensure every question and answer appears.
 
 ## Start Creating the Template
 
@@ -15,29 +15,33 @@ Here, make use of a [FreeMarker list](https://freemarker.apache.org/docs/ref_dir
 
 1. Click the *Structures* tab to get to the structures you created previously.
 
+<!-- Eric, here's where you'd change the navigation if you want to do it differently for the two templates. -Rich -->
+
 1. Select *Manage Templates* in the FAQs structure's Actions menu (![Actions icon](../../images/icon-actions.png)).
 
-   ![Click Manage Templates to specifically add templates for this web content structure.](./adding-a-template-to-display-faqs/images/01.png)
+   ![Click Manage Templates to add templates for this specific web content structure.](./adding-a-template-to-display-faqs/images/01.png)
 
-1. Click Add (![Add icon](../../images/icon-add.png)) to create a new template.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) to create a new template.
 
    The new template is associated automatically with the FAQs structure because you chose to manage templates for it.
 
-1. At the top of the page, enter "Simple FAQ list" as the title.
+1. At the top of the page, enter `Simple FAQ list` as the title.
 
-1. In the Properties menu (on the right side of the screen), enter this into the *Description* field: "A simple template to list each question and answer."
+1. In the Properties menu (on the right side of the screen), enter this into the *Description* field: `A simple template to list each question and answer.`
 
 ## Configure the Template's Fields
 
-Next, format the way a FAQs article is listed.
+Next, format the list of FAQ articles.
 
 <!-- I saw references to using Enter in order to tell the user to skip lines to add the new lines of code. I am not sure if this is needed as there are pictures showing how the code will look like in the end. Initially, I had eliminated them, but I brought them back for now. - Eric -->
 
-1. Click the *Elements* button (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
+<!-- I think that's just to format the code. It's good practice. -Rich -->
 
-1. Click into the body of the template, and delete the placeholder text.
+1. Click *Elements* (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
 
-1. From the Elements menu, scroll down to the fields under *Journal* and click *Title*.
+1. Click into the body of the template and delete the placeholder text.
+
+1. From the Elements menu, scroll down to the fields under Journal and click *Title*.
 
    This automatically fills in code that uses the title value.
 
@@ -47,9 +51,10 @@ Next, format the way a FAQs article is listed.
    <h2>${.vars["reserved-article-title"].data}</h2>
    ```
 
-1. Press Enter twice to add two new lines and, add an HTML tag for a new line (`<br>`) to separate the title from the list of FAQs.
+1. Press Enter twice to add two new lines and add an HTML tag for a new line (`<br>`) to separate the title from the list of FAQs.
 
 1. Press Enter twice to add two new lines and, from the list of fields in the Elements menu, click *FAQ*.
+
    <!-- this question group was called sth else when created -->
    <!-- I altered the code here to reflect the name used in the field reference (FAQ). --Eric -->
 
@@ -77,7 +82,7 @@ Next, format the way a FAQs article is listed.
    <b>${cur_FAQ.QuestionText.getData()}</b>
    ```
 
-1. Press Enter twice to add two new lines and, add an HTML tag for a new line (`<br>`) after each of the question and answer blocks of FreeMarker tags. Wrap up by pressing Enter once again.
+1. Press Enter twice to add two new lines and add an HTML tag for a new line (`<br>`) after each of the question and answer blocks of FreeMarker tags. Wrap up by pressing Enter once again.
 
    ![The completed template iterates over each question and answer with new lines between each.](./adding-a-template-to-display-faqs/images/03.png)
 
@@ -95,10 +100,10 @@ Next, import a second template for the FAQs structure.
 
 While you're still on the Templates page, make sure the top of the page reads "Templates for Structure: FAQs"
 
-1. Still on the Templates page, click Add (![Add icon](../../images/icon-add.png)) to create another new template.
+1. Still on the Templates page, click *Add* (![Add icon](../../images/icon-add.png)) to create another new template.
 
    ```{note}
-   The top of the Templates page reads "Templates for Structure: FAQs" to remind you that adding a new template still associates it with the FAQs template. If you access the Templates tab normally (without clicking "Manage Templates" for the structure), you need to manually set the structure when you're creating it.
+   The top of the Templates page reads "Templates for Structure: FAQs" to remind you that adding a new template still associates it with the FAQs template. If you access the Templates tab normally (without clicking *Manage Templates* for the structure), you need to set the structure manually when you're creating it.
    ```
 
 1. Download and unzip the template resource:
@@ -113,7 +118,7 @@ While you're still on the Templates page, make sure the top of the page reads "T
    unzip liferay-c8m2.zip
    ```
 
-1. At the top of the page, click Actions (![Actions icon](../../images/icon-actions.png)) &rarr; *Import Script*.
+1. At the top of the page, click *Actions* (![Actions icon](../../images/icon-actions.png)) &rarr; *Import Script*.
 
    ![Click Import Script to import the FreeMarker template you downloaded.](./adding-a-template-to-display-faqs/images/05.png)
 
@@ -125,11 +130,11 @@ While you're still on the Templates page, make sure the top of the page reads "T
 
 1. Click *Save*.
 
-Now you have a template with more components in it, for a cleaner look and feel.
+Now you have a template that collapses the answers by default, for a cleaner look and feel.
 
 ![The Collapsible FAQs template applied to a FAQ web content article.](./adding-a-template-to-display-faqs/images/06.png)
 
-Next, [add some articles](./adding-the-sites-first-web-content.md) with your new content types.
+Next: [add some articles](./adding-the-sites-first-web-content.md) with your new content types.
 
 ## Relevant Concepts
 

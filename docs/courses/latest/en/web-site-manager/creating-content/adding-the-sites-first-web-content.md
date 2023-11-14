@@ -5,7 +5,7 @@ uuid: 9c1e9fef-de32-4b3e-ba5d-9732218e2616
 
 Now that you have structures and templates for two new types of content, you're ready to add some articles. Here, add content to the site for both of these types (Event and FAQs).
 
-The site administrator doesn't need to work on adding individual content articles. Log out and log back in as your site's content manager, Olivia O'Neal, before you begin.
+The site administrator doesn't add individual content articles. Log out and log back in as your site's content manager, Olivia O'Neal, before you begin.
 
 ## Add an Event Article
 
@@ -17,7 +17,7 @@ First, add an event article to announce the Clarity site going live soon.
 
    ![Click Event to add an article with the structure you added previously.](./adding-the-sites-first-web-content/images/01.png)
 
-1. At the top of the page, title the article "Clarity Site Going Live Soon".
+1. At the top of the page, title the article `Clarity Site Going Live Soon`.
 
 1. In the *Summary* field, enter this text:
 

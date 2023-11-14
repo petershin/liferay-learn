@@ -14,7 +14,7 @@ Published objects are integrated with Liferay's core frameworks, so you can map 
 1. Download and unzip the [Distributor Application fragment set](./liferay-b2m3.zip):
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/importing-fragments-for-the-distributor-application-pages/liferay-b2m3.zip -O
+   curl https://resources.learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/importing-fragments-for-the-distributor-application-pages/liferay-b2m3.zip -O
    ```
 
    ```bash

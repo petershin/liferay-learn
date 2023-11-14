@@ -8,7 +8,7 @@ Pages are the primary building blocks of Liferay sites. Delectable Bonsai's desi
 1. Download the LAR file for this exercise:
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/adding-pages-for-distributor-application/distributor-application-pages.lar -O
+   curl https://resources.learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/adding-pages-for-distributor-application/distributor-application-pages.lar -O
    ```
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)), expand *Publishing*, and click *Import*.

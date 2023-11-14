@@ -8,7 +8,7 @@ The `object-admin` service provides REST APIs for performing CRUD operations on 
 1. Download and unzip [the resources](./liferay-p6k3.zip) for this exercise.
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-p6k3.zip -O
+   curl https://resources.learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-p6k3.zip -O
    ```
 
    ```bash

@@ -12,7 +12,7 @@ After adding the `applicationState` field, Delectable Bonsai wants to implement 
 1. Download and unzip the sample workspace:
 
    ```bash
-   curl -o https://learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/liferay-c6s3.zip
+   curl -o https://resources.learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/liferay-c6s3.zip
    ```
 
    ```bash

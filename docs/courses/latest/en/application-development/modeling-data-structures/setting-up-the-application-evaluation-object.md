@@ -18,7 +18,7 @@ The Application Evaluation object requires these picklists: Assessment Scores, R
 1. Download and unzip the resources for [this exercise](./liferay-w1m9.zip):
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-w1m9.zip -O
+   curl https://resources.learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-w1m9.zip -O
    ```
 
    ```bash

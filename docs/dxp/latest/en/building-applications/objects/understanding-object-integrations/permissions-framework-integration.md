@@ -32,7 +32,7 @@ Application permissions grant access to the published object itself and do not i
 | Preferences | N/A |
 | View* | View the object's display page. |
 
-\* The view permission is also required to view mapped content, add/modify a form container mapped to the object definition while editing a page, and perform other actions provided users have the required permissions (e.g., creating display page templates, information templates, and site navigation menus). Without it, collection and content displays are not displayed in View and Preview modes.
+\* The view permission is also required to view mapped content, add/modify a form container mapped to the object definition while editing a page, and perform other actions provided users have additional required permissions (e.g., creating display page templates, information templates, and site navigation menus). Without it, collection and content displays are not displayed in View and Preview modes.
 
 ## Resource Permissions
 

@@ -132,7 +132,7 @@ Then, follow these steps:
 
 ## Creating an API Application
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_ &rarr; _API Builder_.
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _API Builder_.
 
 1. Click the _Add_ (![Add icon](../../images/icon-add.png)) icon. Input the following for the new API application.
 

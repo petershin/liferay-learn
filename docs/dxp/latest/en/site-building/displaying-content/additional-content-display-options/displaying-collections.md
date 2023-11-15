@@ -66,7 +66,7 @@ To add an existing collection to a collection display fragment,
 The collection display fragment is now on the page and displaying the selected collection.
 
 ```{important}
-When adding a Collection Display Fragment to a page, the available collections are the ones those can be mapped to editable fragments (Blog Entries, Documents, Knowledge Base Articles, Web Content Articles, and Custom Object Entries).
+When adding a Collection Display Fragment to a page, only collections that can be mapped to editable fragments are available (Blog Entries, Documents, Knowledge Base Articles, Web Content Articles, and Custom Object Entries).
 ```
 
 ## Configuring a Collection Display Fragment

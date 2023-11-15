@@ -5,7 +5,7 @@ uuid: 3d46420e-a962-45c7-bd72-ef0f209003e8
 
 {bdg-secondary}`Liferay 7.4 2023.Q4+/GA98+`
 
-*Re-indexing* is regenerating all or part of the search index that's used for searching, and in some cases displaying, Liferay's content. Execute a re-index from the [search administration panel](./search-administration.md) in Global Menu &rarr; Control Panel &rarr; Search &rarr; Index Actions. Choose from the 3 available re-indexing modes:
+*Re-indexing* is refreshing all or part of the search index that's used for searching, and in some cases displaying, Liferay's content. Execute a re-index from the [search administration panel](./search-administration.md) in Global Menu &rarr; Control Panel &rarr; Search &rarr; Index Actions. Choose from the 3 available re-indexing modes:
 
 | Re-Index Mode     | Description                                                                                                     | Avoids Downtime | Supported Actions                                                                                              |
 |:------------------|:----------------------------------------------------------------------------------------------------------------|:----------------|:---------------------------------------------------------------------------------------------------------------|
@@ -13,29 +13,29 @@ uuid: 3d46420e-a962-45c7-bd72-ef0f209003e8
 | Concurrent (![Beta](../../images/icon-beta-feature.png)) | Creates a new index, leaving the old index in place (i.e., a blue/green re-index) until the new index is ready. | &#10004;        | &#10004; Global: all indexes<br>&#10008; Global: spell check dictionaries<br>&#10008; Single model re-indexing |
 | Sync (![Beta](../../images/icon-beta-feature.png))       | Updates existing search index documents, and deletes stale documents when finished.                             | &#10004;        | &#10004; Global: all indexes<br>&#10008; Global: spell check dictionaries<br>&#10004; Single model re-indexing |
 
-## Re-Indexing Scenarios
+```{note}
+Concurrent and Sync mode are only available [with Elasticsearch](../installing-and-upgrading-a-search-engine/solr/solr-limitations.md).
+```
+
+## Choosing the Re-Index Mode
 
 A full re-index works in any scenario, whether for all content and indexes or a single model. However, it's not always the best choice. To avoid downtime due to a long running full re-index process, use concurrent or sync mode whenever possible.
 
-
-| Re-Index Scenario                     | Full     | Concurrent (![Beta](../../images/icon-beta-feature.png)) | Sync (![Beta](../../images/icon-beta-feature.png)) |
+| Re-Index when:                        | Full     | Concurrent (![Beta](../../images/icon-beta-feature.png)) | Sync (![Beta](../../images/icon-beta-feature.png)) |
 |:--------------------------------------|:---------|:---------|:---------|
-| New Elasticsearch installation        | &#10004; | - | - |
-| Index creation or deletion            | &#10003; | &#10004; | - |
-| Field mappings update                 | &#10003; | &#10004; | - |
-| Index settings update                 | &#10003; | &#10004; | - |
-| Liferay upgrade: quarterly release    | &#10003; | &#10004; | &#10003; |
-| Liferay upgrade: major version change | &#10003; | &#10004; | &#10003; |
-| After upgrading Elasticsearch         | &#10003; | &#10004; | &#10003; |
-| After other uptime issues             | &#10003; | &#10004; | &#10003; |
-| Single model re-indexing[^1]          | &#10003; | - | &#10004; |
-| After connection interruptions        | - | &#10004; | &#10003; |
+| [Installing a new Elasticsearch cluster](../installing-and-upgrading-a-search-engine/elasticsearch/installing-elasticsearch.md) | &#10004; | -        | -        |
+| [Updating field mappings](../installing-and-upgrading-a-search-engine/elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md) | &#10003; | &#10004; | -        |
+| [Updating index settings](../installing-and-upgrading-a-search-engine/elasticsearch/advanced-configuration-of-the-liferay-elasticsearch-connector.md) | &#10003; | &#10004; | -        |
+| [Upgrading Liferay](../../installation-and-upgrades/upgrading-liferay.md) | &#10003; | &#10004; | &#10003; |
+| [Upgrading Elasticsearch](../installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch.md) | &#10003; | &#10004; | &#10003; |
+| Re-indexing after a connection outage | &#10003; | &#10004; | &#10003; |
+| Re-indexing a single model[^1]        | &#10003; | -        | &#10004; |
 
-&#10004; The mode is recommended for this action
+&#10004; The mode is recommended for the scenario
 
-&#10003; The mode is available for this action
+&#10003; The mode is available for the scenario
 
-\- The mode is not available for the action
+\- The mode is not available for the scenario
 
 [^1]: Re-indexing a single model is occasionally required, and sync mode is recommended in these cases. For example, using certain elements while [creating a search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints/creating-and-managing-search-blueprints.md#adding-elements-to-the-blueprint) and [enabling semantic search](../liferay-enterprise-search/search-experiences/semantic-search.md) require re-indexing individual model types.
 
@@ -49,11 +49,11 @@ Whenever possible, choose concurrent or sync mode to avoid downtime during a re-
 
 ### ![Full](../../images/icon-globe-meridians.png) Full Re-Index Mode
 
-You must use _full_ mode to index all content when connecting to a new, empty Elasticsearch cluster. In this scenario, high availability (i.e., avoiding downtime) is not a consideration. You can also use full mode for single model re-indexing when sync mode will not suffice, but sync mode is recommended. See [Additional Considerations](#additional-considerations) for more information. 
+You must use _full_ mode to index all content when connecting to a new, empty Elasticsearch cluster. In this scenario, high availability is not a consideration. You can also use full mode for single model re-indexing when sync mode will not suffice, but sync mode is recommended.
 
 ### ![Concurrent](../../images/icon-concurrent.png) Concurrent Re-Index Mode
 
-Use _concurrent_ mode for high availability re-indexing of all content using a blue/green re-indexing strategy, as long as primary disk space for Elasticsearch is not an issue. Concurrent mode cannot be used for single model re-indexing. See [Additional Considerations](#additional-considerations) for more information.
+Use _concurrent_ mode for high availability re-indexing of all content using a blue/green re-indexing strategy, as long as primary disk space for Elasticsearch is not an issue. Concurrent mode cannot be used for single model re-indexing.
 
 Because concurrent re-indexing creates a new index alongside the old one, it requires more disk space in the Elasticsearch system's infrastructure than the other modes. To avoid errors due to insufficient disk space, Liferay estimates whether the available space is sufficient and warns you if it isn't:
 
@@ -61,7 +61,7 @@ Because concurrent re-indexing creates a new index alongside the old one, it req
 
 ### ![Sync](../../images/icon-restore2.png) Sync Re-Index Mode
 
-Use _sync_ mode for high availability re-indexing when primary disk space for Elasticsearch is a concern, or for all high availability single model re-indexing needs. There are scenarios when sync mode can't properly account for system changes, and one of the other modes must be used. See [Additional Considerations](#additional-considerations) for more information.
+Use _sync_ mode for high availability re-indexing when primary disk space for Elasticsearch is a concern, or for all high availability single model re-indexing needs. There are scenarios when sync mode can't properly account for system changes, and one of the other modes must be used.
 
 <!-- Verify, then document that sync mode cannot account for mappings and index settings changes -->
 

@@ -24,6 +24,7 @@ Liferay's Solr integration has limitations. Elasticsearch is required to use the
 * [Search Tuning: Synonyms](../../search-administration-and-tuning/synonym-sets.md)
 * [Content Dashboard](../../../content-authoring-and-management/content-dashboard.md)
 * [Similar Results](../../search-pages-and-widgets/similar-results.md)
+* [Concurrent and Sync Re-Indexing Modes](../../search-administration-and-tuning/re-indexing-modes.md)
 * All [Liferay Enterprise Search](../../liferay-enterprise-search.md) applications, including
    * Cross-Cluster Replication
    * Search Experiences

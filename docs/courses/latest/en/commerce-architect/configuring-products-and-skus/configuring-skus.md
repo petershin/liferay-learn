@@ -125,6 +125,6 @@ Repeat the same process for each SKU of all products. After adding the inventory
 
 1. Verify that the inventory is available for all the SKUs. You can also add inventory from here by clicking *Add* (![Add](../../images/icon-add.png)) and entering the SKU, warehouse, and quantity. Click *Submit*.
 
-You completed adding and configuring channels, a catalog, warehouses, and products. It’s now time to build the storefront. In the next module, you'll build out the B2C storefront. 
+You completed adding and configuring channels, a catalog, warehouses, and products. In the next module, you'll build out the B2C storefront. 
 
 [Building the B2C Storefront](../building-the-b2c-storefront.md)

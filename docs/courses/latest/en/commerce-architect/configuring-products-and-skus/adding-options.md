@@ -3,7 +3,7 @@ uuid: 905c41de-03ed-478c-9ebf-0837e515681f
 ---
 # Adding Options
 
-In the first module, you created three products all having a single SKU, or Stock Keeping Unit. Often, there may be products that have multiple SKUs. For instance, a product that has different quantities. In this lesson, you’ll learn how to edit an existing product and add multiple SKUs using options.
+In the first module, you created three products all having a single SKU, or Stock Keeping Unit. Often, products have multiple SKUs. For instance, a product that has different quantities. In this lesson, you’ll learn how to edit an existing product and add multiple SKUs using options.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Options*.
 

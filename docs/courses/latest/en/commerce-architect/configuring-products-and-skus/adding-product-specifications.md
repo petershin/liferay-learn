@@ -36,9 +36,7 @@ This creates a new specification called frame color. Now, use the steps above to
 * Comes with Case
 * Sunglass Style
 
-For *Frame Dimensions*, *Frame Width*, and *Frame Size*, you must disable the *Use in Faceted Navigation* toggle. 
-
-Unlike the other specifications with fixed values, there can be a wide range of frame dimensions, frame widths, and frame sizes for different eyeglasses. Enabling this option can lead to a large number of facets in the storefront that degrades user experiences. 
+For Frame Dimensions, Frame Width, and Frame Size, you must disable the *Use in Faceted Navigation* toggle. Unlike the other specifications with fixed values, there can be a wide range of frame dimensions, frame widths, and frame sizes for different eyeglasses. Enabling this option can lead to a large number of facets in the storefront that degrades user experiences. 
 
 ## Adding Specifications to Products
 
@@ -54,7 +52,7 @@ The next step is to add these specifications to products. You can do this throug
 
    ![Search for the specification to add it to a product.](./adding-product-specifications/images/02.png)
 
-   This adds the specification to the product. Now, you must enter the value for the specification.
+   This adds the specification to the product. Now you must enter the specification's value. 
 
 1. Click on the added specification and enter *Black* as the value. 
 

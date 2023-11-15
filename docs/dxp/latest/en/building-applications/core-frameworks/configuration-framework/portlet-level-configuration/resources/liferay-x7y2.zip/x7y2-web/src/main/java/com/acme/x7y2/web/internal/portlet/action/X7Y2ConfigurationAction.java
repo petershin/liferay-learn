@@ -9,10 +9,8 @@ import javax.portlet.ActionResponse;
 import javax.portlet.PortletConfig;
 
 import org.osgi.service.component.annotations.Component;
-import org.osgi.service.component.annotations.ConfigurationPolicy;
 
 @Component(
-	configurationPolicy = ConfigurationPolicy.OPTIONAL,
 	property = "javax.portlet.name=com_acme_x7y2_web_internal_portlet_X7Y2Portlet",
 	service = ConfigurationAction.class
 )

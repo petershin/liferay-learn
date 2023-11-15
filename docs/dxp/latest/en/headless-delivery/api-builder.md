@@ -38,7 +38,7 @@ API schemas specify what entities are returned (or received) by your API. To man
 
 ![See a list of your custom schemas](./api-builder/images/02.png)
 
-To create a new schema, click the _Add_ (![Add icon](../images/icon-add.png)) icon and input your details. Then click the _Properties_ tab of the new schema and select the entities you want included. Select from the various entities that are available from your Liferay object.
+To create a new schema, click the _Add_ (![Add icon](../images/icon-add.png)) icon and input your details. Then click the _Properties_ tab of the new schema and select the entities you want included. Select from the various entities that are available from your [Liferay object](../building-applications/objects/creating-and-managing-objects.md). If the object has [object relationships](../building-applications/objects/creating-and-managing-objects/relationships.md), the entities from those objects are also available for selection.
 
 ![Select the entities you want included in your schema.](./api-builder/images/03.png)
 

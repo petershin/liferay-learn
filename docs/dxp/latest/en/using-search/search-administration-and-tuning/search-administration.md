@@ -29,18 +29,27 @@ In Index Actions, re-index at one of these levels:
 **Global:** re-index all indexes and types, or all spell check dictionaries.
 **Individual Indexable Types:** re-index an indexable type individually.
 
-Beginning in Liferay 7.4, Server Administrators can limit the scope of the re-index actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md). To choose which instances the index actions apply to,
-
 1. Open Global Menu &rarr; Control Panel &rarr; Search and click the Index Actions tab.
-1. Use the Execution Scope tab to choose the instances to re-index.
+
+1. [Liferay 2023.Q4+/GA 102+] Choose the Re-Indexing Mode.
+
+   ![Choose the re-indexing mode.](./re-indexing-modes/images/01.png)
+
+   In Liferay 7.4 2023.Q4 and later (Update/GA 102+), you can configure the mode of the re-index to avoid search downtime. To learn about the introduced _Concurrent_ and _Sync_ modes, see [Re-Indexing Modes](./re-indexing-modes.md).
+
+1. [Liferay 7.4] Use the Execution Scope tab to choose the instances to re-index.
 
    ![Select the instances to re-index.](./search-administration/images/03.png)
+
+   Beginning in Liferay 7.4, you can limit the scope of the re-index actions to specific [Virtual Instances](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md).
+
+1. [Liferay 2023.Q4+/GA 102+] Click _Execute_ in the dialog to confirm the re-index.
+
+   ![Confirm that you'd like to re-index.](./search-administration/images/04.png)
 
 ```{note}
 [Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) are re-indexed via the application's dedicated settings menu. In the Global Menu, click _Metrics_ in the Applications &rarr; Workflow section, then open the Settings window (![Options](../../images/icon-actions.png)). See [Re-Indexing Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) for more information.
 ```
-
-In Liferay 7.4 2023.Q4 and later (Update/GA98+), you can configure the mode of the re-index to avoid search downtime. To learn about the introduced _Concurrent_ and _Sync_ modes, see [Re-Indexing Modes](./re-indexing-modes.md).
 
 ### Re-Indexing All Content
 

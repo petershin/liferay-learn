@@ -156,7 +156,7 @@ Deploy client extensions by placing the `.zip` files in the correct location for
 ### Deploying to LXC
 
 ```{warning}
-You cannot use this method to deploy client extensions to self-managed instances (LXC-SM).
+This method does not allow you to deploy client extensions to self-managed instances (LXC-SM).
 ```
 
 To deploy client extensions for LXC,

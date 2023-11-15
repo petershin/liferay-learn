@@ -12,11 +12,11 @@ import com.liferay.portal.kernel.util.LocaleUtil;
 import com.liferay.portal.kernel.util.LocalizationUtil;
 import com.liferay.portal.kernel.util.Portal;
 import com.liferay.portal.kernel.workflow.WorkflowConstants;
-import com.liferay.portal.kernel.workflow.WorkflowDefinitionManager;
 import com.liferay.portal.workflow.kaleo.model.KaleoCondition;
 import com.liferay.portal.workflow.kaleo.runtime.ExecutionContext;
 import com.liferay.portal.workflow.kaleo.runtime.condition.ConditionEvaluator;
 import com.liferay.portal.workflow.kaleo.service.KaleoDefinitionLocalService;
+import com.liferay.portal.workflow.manager.WorkflowDefinitionManager;
 
 import java.io.Serializable;
 

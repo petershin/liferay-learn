@@ -10,14 +10,15 @@ import com.liferay.portal.kernel.util.LocaleUtil;
 import com.liferay.portal.kernel.util.LocalizationUtil;
 import com.liferay.portal.kernel.util.Portal;
 import com.liferay.portal.kernel.workflow.WorkflowConstants;
-import com.liferay.portal.kernel.workflow.WorkflowDefinitionManager;
 import com.liferay.portal.kernel.workflow.WorkflowException;
-import com.liferay.portal.kernel.workflow.WorkflowStatusManager;
+import com.liferay.portal.kernel.workflow.WorkflowStatusManagerUtil;
+import com.liferay.portal.workflow.kaleo.definition.ActionType;
 import com.liferay.portal.workflow.kaleo.model.KaleoAction;
 import com.liferay.portal.workflow.kaleo.runtime.ExecutionContext;
 import com.liferay.portal.workflow.kaleo.runtime.action.executor.ActionExecutor;
 import com.liferay.portal.workflow.kaleo.runtime.action.executor.ActionExecutorException;
 import com.liferay.portal.workflow.kaleo.service.KaleoDefinitionLocalService;
+import com.liferay.portal.workflow.manager.WorkflowDefinitionManager;
 
 import java.io.Serializable;
 
@@ -46,15 +47,15 @@ public class E5C9ActionExecutor implements ActionExecutor {
 			if (Objects.equals(
 					workflowContext.get("transitionName"), "reject")) {
 
-				_workflowStatusManager.updateStatus(
+				WorkflowStatusManagerUtil.updateStatus(
 					WorkflowConstants.STATUS_DENIED, workflowContext);
-				_workflowStatusManager.updateStatus(
+				WorkflowStatusManagerUtil.updateStatus(
 					WorkflowConstants.STATUS_PENDING, workflowContext);
 			}
 			else if (Objects.equals(
 						workflowContext.get("transitionName"), "approve")) {
 
-				_workflowStatusManager.updateStatus(
+				WorkflowStatusManagerUtil.updateStatus(
 					WorkflowConstants.STATUS_APPROVED, workflowContext);
 			}
 		}
@@ -63,6 +64,11 @@ public class E5C9ActionExecutor implements ActionExecutor {
 
 			throw new ActionExecutorException(workflowException);
 		}
+	}
+
+	@Override
+	public String getActionExecutorKey() {
+		return ActionType.UPDATE_STATUS.name();
 	}
 
 	@Activate
@@ -94,8 +100,5 @@ public class E5C9ActionExecutor implements ActionExecutor {
 
 	@Reference
 	private WorkflowDefinitionManager _workflowDefinitionManager;
-
-	@Reference
-	private WorkflowStatusManager _workflowStatusManager;
 
 }

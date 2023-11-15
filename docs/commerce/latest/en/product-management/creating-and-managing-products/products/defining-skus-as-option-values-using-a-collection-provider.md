@@ -3,9 +3,9 @@ uuid: 36f5e761-fae3-4504-8cd1-ecd93524aa1f
 ---
 # Defining SKUs as Option Values using a Collection Provider
 
-You can specify one or more categories as a collection provider when configuring an option on a product. This allows you to define your own custom logic to link a group of SKUs as option values to a product. 
+You can specify one or more categories as a collection provider when configuring an option on a product. You can use this to define your own custom logic, linking a group of SKUs as option values for a product. 
 
-For instance, consider two products that don't have a direct relationship with each other. To add them as product options, you can create a category and link it to these two products and use that category as a collection provider on a new product. 
+For instance, consider two products that aren't related to each other. To add them as product options, you can create a category, link it to these two products, and use that category as a collection provider on a new product. 
 
 ```{note}
 You must create categories in the global scope so that they're available to products.
@@ -19,7 +19,7 @@ Once you have your categories created and assigned to products,
 
 1. Open the *Global Menu* (![Applications Menu icon](../../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*. 
 
-1. Find and select the product to which you want to add a category as a collection provider.
+1. Find and select the product where you want to add a category as a collection provider.
 
 1. Click on the *Options* tab.
 
@@ -31,17 +31,17 @@ Once you have your categories created and assigned to products,
 
 1. Activate the *Define Externally* toggle. 
 
-1. Set the *Price Type* dropdown to *Dynamic*.
+1. Set the *Price Type* drop-down to *Dynamic*.
 
 1. Click *Save*. 
 
-   This adds two new dropdowns below the *Price Type* dropdown to define a collection provider and categories. 
+   This adds two new drop-downs below the *Price Type* drop-down to define a collection provider and categories. 
 
 1. Choose *SKUs by Categories* as the collection provider.
 
 1. Click *Save*.
 
-1. From the categories dropdown, choose one or more categories. 
+1. From the categories drop-down, choose one or more categories. 
 
    ![Choose the categories to add associated SKUs as option values.](./using-categories-as-a-collection-provider-for-skus-as-options/images/02.png)
 

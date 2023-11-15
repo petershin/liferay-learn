@@ -41,7 +41,7 @@ These properties are specific to custom element client extensions:
 | `portletCategoryName` | String | `category.client-extensions` | The menu category of the custom element widget. |
 | `properties` | String[] | `[]` | Properties to append as attributes to the custom HTML element. They use a newline as a separator and are processed as Java properties. |
 | `urls` | String[] (partial URLs) | | (Required) List of paths to JavaScript resources that are added to the HTML head when the widget is used on a page. One of these resources must contain the custom element initialization code. This combines with `baseURL` to form a complete URL. |
-| `useSM` | True/false | `false` | Whether the JavaScript code uses [ESM](https://nodejs.org/api/esm.html#modules-ecmascript-modules) format. When `true`, the JavaScript is added to the page with the `type="module"` property. |
+| `useESM` | True/false | `false` | Whether the JavaScript code uses [ESM](https://nodejs.org/api/esm.html#modules-ecmascript-modules) format. When `true`, the JavaScript is added to the page with the `type="module"` property. |
 
 See [Front-end Client Extension Properties](../front-end-client-extensions.md#front-end-client-extension-properties) for properties common to all front-end client extensions.
 

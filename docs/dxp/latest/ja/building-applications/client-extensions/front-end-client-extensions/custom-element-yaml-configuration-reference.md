@@ -38,7 +38,7 @@ able-custom-element:
 | `portletCategoryName` | 文字列              | `category.client-extensions` | カスタム要素ウィジェットのメニューカテゴリを指定します。                                                                                                                             |
 | `properties`          | 文字列[]            | `[]`                         | カスタム HTML 要素の属性として追加するプロパティです。 改行を区切り文字として使用し、Javaのプロパティとして処理されます。                                                                                       |
 | `urls`                | String[](URLの一部） |                              | (必須）ウィジェットがページ上で使用される際に、HTMLヘッドに追加されるJavaScriptリソースへのパスのリストです。 これらのリソースのうち1つには、カスタム要素の初期化コードが含まれている必要があります。 これが `baseURL` と組み合わさって、完全なURLを形成する。          |
-| `useSM`               | 真／偽              | `false`                      | JavaScript コードが [ESM](https://nodejs.org/api/esm.html#modules-ecmascript-modules) 形式を使用しているかどうか。 `true`の場合、JavaScriptは `type="module"` プロパティでページに追加されます。 |
+| `useESM`               | 真／偽              | `false`                      | JavaScript コードが [ESM](https://nodejs.org/api/esm.html#modules-ecmascript-modules) 形式を使用しているかどうか。 `true`の場合、JavaScriptは `type="module"` プロパティでページに追加されます。 |
 
 すべてのフロントエンドクライアントエクステンションに共通するプロパティについては、 [フロントエンドクライアントエクステンションのプロパティ](../front-end-client-extensions.md#front-end-client-extension-properties) を参照してください。
 

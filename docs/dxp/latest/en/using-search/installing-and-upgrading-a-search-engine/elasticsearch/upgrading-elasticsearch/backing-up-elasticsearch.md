@@ -7,7 +7,7 @@ uuid: 35f429b3-aadb-4c7f-844f-e389410ea935
 
 ## Backing Up Indexes Before Upgrading
 
-It's best practice to back up the indexes under all upgrade scenarios, even if the indexed data can be restored by re-indexing from Liferay's database. Taking a [snapshot of your app-specific indexes](#backing-up-and-restoring-indexes-used-for-primary-storage) (like Liferay's Search Tuning indexes in Liferay DXP 7.2 and 7.3) is essential if your data is stored only in the search index. The snapshot can be used to restore your previous data (e.g., Synonym Sets and Result Rankings) when you set up a new Elasticsearch server. Make sure to read the Elasticsearch documentation on [snapshot and restore version compatibility](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshot-restore.html#snapshot-restore-version-compatibility) before attempting this approach.
+It's best practice to back up the indexes under all upgrade scenarios, even if the indexed data can be restored by re-indexing from Liferay's database. Taking a [snapshot of your app-specific indexes](#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) (like Liferay's Search Tuning indexes in Liferay DXP 7.2 and 7.3) is essential if your data is stored only in the search index. The snapshot can be used to restore your previous data (e.g., Synonym Sets and Result Rankings) when you set up a new Elasticsearch server. Make sure to read the Elasticsearch documentation on [snapshot and restore version compatibility](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshot-restore.html#snapshot-restore-version-compatibility) before attempting this approach.
 
 Here are some representative upgrade scenarios:
 

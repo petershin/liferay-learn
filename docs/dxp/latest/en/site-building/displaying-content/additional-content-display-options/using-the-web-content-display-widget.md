@@ -25,7 +25,7 @@ After you create a [web content article](../../../content-authoring-and-manageme
 
 1. In the Select Web Content dialog, click the web content you want to add.
 
-   If you organize your content using folders, you can visualize all available content by navigating through the folders. Use the breadcrumbs above the folders and content sections to help your navigation. The available content to be displayed on Sites and Libraries is determined by the selected scope for the widget.
+   If you organize your content using folders, you can visualize all available content by navigating through the folders. Use the breadcrumbs above the folders and content sections to help your navigation.
 
    ![When you organize your web content using folders, view all available content by navigating throught the folders.](./using-the-web-content-display-widget/images/03.png)
 
@@ -38,6 +38,30 @@ After you create a [web content article](../../../content-authoring-and-manageme
 1. Click *Save* and close the Web Content Display Configuration dialog.
 
 1. If you want to publish the Content Page, click *Publish*.
+
+## Using Scopes in the Web Content Display Widget
+
+After adding a Web Conent Display Widget to a page, it is possible to set its scope to define the sites and libraries where the content avaliable to be displayed in the widget can be found. For more information about scopes, see [Setting Widget Scopes](../../creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-scopes.md)
+
+1. Click *Options* ( ![Options icon](../../../images/icon-app-options.png) ) at the top right of the widget &rarr; *Configuration*.
+
+1. In Web Content Display Configuration, click *Scope* on the tab.
+
+1. Click *Liferay DXP* to open the Scope menu. Here you can select the desired scope for the widget. Click *Save*.
+
+1. Click *Setup* on the tab.
+
+1. Click *Select* to open the Select Web Content Menu.
+
+1. Click *Sites and Libraries* on the breadcrumb menu. 
+
+![Click on Sites and Libraries option in the breadcrumb menu.](./using-the-web-content-display-widget/images/07.png)
+
+The avaliable content to be displayed is defined according to the selected scope.
+
+  ```{note}
+   For Liferay DXP 7.3 and earlier, selecting a scope for the Web Content Display Widget does not affect the available content to be displayed in the widget.
+   ```
 
 ## Web Content Display Setup Options
 
@@ -116,6 +140,7 @@ If you [enable the OpenOffice / LibreOffice integration](../../../content-author
 ## Related Topics
 
 - [Adding a Basic Web Content Article](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+- [Setting Widget Scopes](../../creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-scopes.md)
 - [Using Content Pages](../../../site-building/creating-pages/using-content-pages.md)
 - [Displaying Content on Display Pages Templates](../using-display-page-templates.md)
 - [Displaying Assets](../using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md)

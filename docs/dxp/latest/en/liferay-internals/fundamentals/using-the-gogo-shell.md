@@ -38,6 +38,10 @@ The Control Panel is the safest, most secure way to access Gogo shell:
 
 1. Enter a Gogo shell command in the *g!* text field. For example, enter `lb | grep "Liferay Announcements API"` to list information about the Announcements API bundle.
 
+   ```{note}
+   Commands run in the Control Panel's Gogo shell only affect the node to which the user is connected.
+   ```
+
 1. Click *Execute*.
 
     The command result output appears.

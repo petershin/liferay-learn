@@ -7,7 +7,7 @@ uuid: f03aec85-6c18-42e5-b46f-217d3229d6f1
 {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 ```{important}
-The API builder is a beta feature that currently only supports one Liferay object (and any relationships) at a time.
+The API builder is a beta feature that currently only supports Liferay objects.
 ```
 
 Follow the steps below to see a mock API application example.
@@ -178,35 +178,10 @@ Then, follow these steps:
 
 1. Click the _Configuration_ tab in the newly created API endpoint. Under _Response Body Schema_, select the _Course Registrations_ schema that was created in the previous step. Click _Publish_ in the top right of the page.
 
-1. The new API Application is ready to use. On the command line, run the following.
+1. Test out the new API application by navigating to the API explorer (e.g. [http://localhost:8080/o/api?endpoint=http://localhost:8080/o/c/registration/openapi.json](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/c/registration/openapi.json)).
 
-    ```bash
-    curl \
-	    -H "Content-Type: application/json" \
-	    "http://localhost:8080/o/c/registration/courses" \
-	    -u "test@liferay.com:learn"
-    ```
-    
-    The following response is returned.
+  Click the _GET courses_ endpoint and click _Execute_.
 
-    ```json
-    {
-      "actions" : { },
-      "facets" : [ ],
-      "items" : [ {
-        "First Name" : [ "John" ],
-        "Last Name" : [ "Liferay" ],
-        "Course Name" : "History 101"
-      }, {
-        "First Name" : [ "Mary" ],
-        "Last Name" : [ "Liferay" ],
-        "Course Name" : "Math 101"
-      } ],
-      "lastPage" : 1,
-      "page" : 1,
-      "pageSize" : 20,
-      "totalCount" : 2
-    }% 
-    ```
+  ![Execute the Get courses endpoint.](./building-a-sample-api-application/images/03.png)
 
-    The custom API application returns a list of courses and the students taking the courses.
+  The custom API application returns a list of courses and the students taking the courses.

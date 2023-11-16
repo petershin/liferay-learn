@@ -20,11 +20,9 @@ The Gogo shell provides a way to interact with the module framework. Among other
 * Examine extension points
 * List service references
 
-The Control Panel is the safest, most secure way to access Gogo shell:
+The control panel is the safest, most secure way to access Gogo shell:
 
-1. Open the *Global Menu* (![icon](../../images/icon-applications-menu.png)).
-
-1. Select the *Control Panel* tab.
+1. Open the *Global Menu* (![icon](../../images/icon-applications-menu.png)) and select the *Control Panel* tab.
 
 1. Click *Gogo Shell* in the System section.
 

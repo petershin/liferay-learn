@@ -201,7 +201,7 @@ DELETE /restored_liferay-20116index_3
 
 Nobody likes catastrophic failure on a production system, but Elasticsearch's API for taking snapshots and restoring indexes can help you rest easy knowing that your search cluster can be restored if disaster strikes. For more details and options, read Elastic's [Snapshot and Restore documentation](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshot-restore.html).
 
-## Backing Up and Restoring Indexes Used for Primary Storage
+## Backing Up and Restoring Search Tuning Indexes for Liferay 7.2 and 7.3
 
 Creating a snapshot of your Elasticsearch indexes is highly recommended, especially for indexes that act as the primary storage format: for example, [Synonym Sets](../../../search-administration-and-tuning/synonym-sets.md) and [Result Rankings](../../../search-administration-and-tuning/result-rankings.md) on Liferay DXP 7.2 and 7.3. There are no records for these applications in the database.
 

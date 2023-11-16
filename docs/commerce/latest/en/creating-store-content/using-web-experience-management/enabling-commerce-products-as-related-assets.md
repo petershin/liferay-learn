@@ -27,7 +27,7 @@ Performing a search reindex may be necessary for Commerce Products to appear as 
 Execute a reindex to ensure that the Related Assets are populated in the filter.
 
 1. Navigate to the _Control Panel_ &rarr; _Configuration_ &rarr; _Search_.
-1. Click _Execute_ next to Reindex all search indexes.
+1. Click _Reindex_ next to All Search Indexes.
 
 ## Verify the Availability of Commerce Products
 

@@ -188,7 +188,7 @@ Now that you have the default mapping file, make the necessary changes to add th
 
 1. Add the custom filter name (e.g., `custom-synonym-filter-fr`) to the Filter Names setting and save the configuration.
 
-1. Perform a full re-index: in Control Panel &rarr; Search &rarr; Index Actions, click _Reindex all search indexes._
+1. Perform a full re-index: in Control Panel &rarr; Search &rarr; Index Actions, click _Reindex_ for All Search Indexes.
 
    To verify that the custom mapping has been applied successfully, go to the Field Mappings tab, choose your index (for example `liferay-20101`) and look for `template_fr` in the right panel.
 

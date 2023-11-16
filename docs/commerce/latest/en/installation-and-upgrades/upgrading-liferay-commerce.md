@@ -31,7 +31,7 @@ After upgrading to DXP 7.4, execute a full search re-index.
 
    ![Go to Search in the Control Panel tab.](./upgrading-liferay-commerce/images/02.png)
 
-1. Under the _Index Actions_ tab, click _Execute_ for _Reindex all search indexes_.
+1. Under the _Index Actions_ tab, click _Reindex_ for _All search indexes_.
 
 Once the reindex has finished, verify it was successful by going to _Commerce_ &rarr; _Products_ in the Global Menu and confirming that all products are displayed.
 

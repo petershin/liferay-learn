@@ -254,8 +254,8 @@ Initiate indexing DXP content:
 
 1. In the Index Actions tab, click these options:
 
-    * *Reindex all search indexes*
-    * *Reindex all spell check indexes*
+    * *Reindex* &rarr; *All Search Indexes*
+    * *Reindex* &rarr; *All Spell Check Dictionaries*
 
 Content indexes into the search engine. Please see [Search Overview](../../../using-search/getting-started/search-overview.md) for more information.
 

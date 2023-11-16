@@ -17,11 +17,13 @@ If you disabled search indexing for upgrading to 7.2, re-enable it by removing t
 rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
 ```
 
-Re-indexing search indexes is required for major version upgrades. When upgrading to a new quarterly release (e.g., `Liferay DXP 2023.Q3` to `Liferay DXP 2023.Q4`), you must execute a re-index. When moving to a new update, applying a service pack, or upgrading to a new GA (rolling release) within the same Liferay version, consult the release highlights for the version to determine if a re-index is required. To re-index,
+Re-indexing search indexes is required after all Liferay upgrades. To re-index,
 
 1. Click *Global Menu* (![Global Menu icon](./post-upgrade-considerations/images/01.png)) and open the *Control Panel* tab.
 
-1. Click *Search* in the Configuration section, select the *Index Actions* tab, and click *Execute* for *Re-index all search indexes.* The re-index executes and displays a success message when done.
+1. Click *Search* in the Configuration section and select the *Index Actions* tab. 
+
+1. Select either [Concurrent or Full re-indexing mode](../../../using-search/search-administration-and-tuning/re-indexing-modes.md), then click *Reindex* for *All search indexes.* The re-index executes and displays a success message when done.
 
 ![You can re-index your search indexes in the Control Panel.](./post-upgrade-considerations/images/01.png)
 

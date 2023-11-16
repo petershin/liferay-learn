@@ -41,7 +41,7 @@ To begin using Liferay Commerce:
     ```
 
 1. On first startup, execute a reindex to populate the Liferay Commerce default content; navigate to the _Control Panel_ &rarr; _Configuration_ &rarr; _Search_.
-1. Click _Execute_ next to _Reindex all search indexes_.
+1. Click _Reindex_ next to _All search indexes_.
 
 Liferay Commerce has been deployed and is ready for use. Store administrators can begin building a storefront and populating their catalog.
 

@@ -24,7 +24,11 @@ Information about the search engine connection(s) is displayed here. For example
 
 ## Index Actions
 
-In Index Actions, re-index at one of these levels:
+In Index Actions you can re-index Liferay's data.
+
+![Re-index using the Index Actions user interface.](./search-administration/images/05.png)
+
+You can re-index at one of these levels:
 
 **Global:** re-index all indexes and types, or all spell check dictionaries.
 **Individual Indexable Types:** re-index an indexable type individually.

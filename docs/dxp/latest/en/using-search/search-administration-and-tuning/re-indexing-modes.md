@@ -3,7 +3,7 @@ uuid: 3d46420e-a962-45c7-bd72-ef0f209003e8
 ---
 # Re-Indexing Modes
 
-{bdg-secondary}`Liferay 2023.Q4+/GA98+`
+{bdg-secondary}`Liferay 2023.Q4+/GA102+`
 
 *Re-indexing* is refreshing all or part of the search index that's used for searching, and in some cases displaying, Liferay's content. Execute a re-index from the [search administration panel](./search-administration.md) in Global Menu &rarr; Control Panel &rarr; Search &rarr; Index Actions. New re-indexing modes are included in the 2023.Q4/GA102 release: _Concurrent_ and _Sync_. These provide high availability re-indexing, so that the re-index process can run while your users continue to search the site's content, eliminating downtime. Choose from the 3 available re-indexing modes:
 

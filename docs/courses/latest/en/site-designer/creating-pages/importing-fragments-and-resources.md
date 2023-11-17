@@ -24,7 +24,7 @@ Delectable Bonsai needs fragments and images in the site. With these the site cr
 
 1. Open the Site menu (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Fragments*.
 
-1. Add a fragment set for Delectable Bonsai's custom fragments and compositions. Click the Add button (![Add](../../images/icon-plus.png)) for Fragment Sets.
+1. Add a fragment set for Delectable Bonsai's custom fragments and compositions. Click the Add button (![](../../images/icon-plus.png)) for Fragment Sets.
 
 1. Name the fragment set _Delectable Bonsai Fragments_ and click _Save_.
 
@@ -37,7 +37,6 @@ Delectable Bonsai needs fragments and images in the site. With these the site cr
    When finished these fragments will appear in the fragment set:
 
    <!-- This list will need to be finalized at the end of drafting the module-->
-   <!-- Find out how to import the whole set instead of one-by-one -->
    - `banner-composition.zip`
    - `footer-composition.zip`
    - `header-composition.zip`
@@ -69,12 +68,9 @@ These images will appear in Documents and Media:
    <!-- This list will need to be finalized at the end of drafting the module-->
    - `banner-image.png`
    - `db-green-1w.svg`
-   - `db-green-3w.png`
    - `db-green-3.svg`
-   - `marketing-slider-1.png`
-   - `marketing-slider-2.png`
-   - `marketing-slider-3.png`
    - `sign-in-image.png`
+
 
 ## Importing the Images
 

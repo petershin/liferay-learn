@@ -5,7 +5,12 @@ uuid: 4925291c-19c3-411d-9870-7f1768ad6df7
 
 Clarity needs fragments and images in the site to aid in building out their pages. With these the site creators have the resources required to create the site while meeting design and branding requirements. Log in as Preston Palmer, the site administrator user, for this exercise.
 
+<!-- You haven't explained what a fragment is or what students will do with it. That needs to go into the intro article. -Rich -->
+
 ## Downloading the Fragments and Images
+
+<!--This will be the site administrator user--maybe add a story about being handed these resources from the development team? -->
+<!-- Sounds good to me. Students should also understand why that is: because fragments are HTML, CSS, and JavaScript, and you explained this in the intro. -Rich -->
 
 1. Download and unzip the fragment set:
 
@@ -35,6 +40,7 @@ These images appear in Documents and Media:
 
 ## Importing the Fragments and Compositions
 
+<!-- Zip up the inner folder of the fragments, import the whole set -->
 First zip up the fragment set that was included in the `liferay-q9c4.zip` folder, then import the fragments, compositions, and resources into Liferay.
 
 1. Go to `liferay-q9c4.zip` and enter
@@ -54,6 +60,7 @@ First zip up the fragment set that was included in the `liferay-q9c4.zip` folder
    When finished these fragments appear in the fragment set:
 
    <!-- This list will need to be finalized at the end of drafting the module-->
+   <!-- Find out how to import the whole set instead of one-by-one -->
    - `banner-composition`
    - `footer-composition`
    - `header-composition`
@@ -67,7 +74,7 @@ First zip up the fragment set that was included in the `liferay-q9c4.zip` folder
    - Custom fragments are developed by you, if none of the [out-of-the-box fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) suit your needs. Often you can start by [copying an existing fragment](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/duplicating-fragments) that contains some of the HTML, CSS, or JavaScript you'll need to create your own fragment.
    - [Fragment compositions](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) are reusable fragment groups you've added to the content page editor and saved for repeated use.
 
-Now that you've imported the required fragments and resources, you can use them to [create the Clarity site](./adding-the-home-page.md).
+Now that you've imported the required fragments and resources, you can use them to create the Clarity site.
 
 ## Relevant Concepts
 

@@ -3,7 +3,7 @@ uuid: 3f541371-f8ed-4848-8906-58a82baaf5ec
 ---
 # Adding the Intranet Site
 
-Create the site for Delectable Bonsai's intranet, Grow. With the Delectable Bonsai instance running,
+Create the site for Delectable Bonsai's intranet. With the Delectable Bonsai instance running,
 
 1. Log in with the instance administrator user, Kyle Klein: 
 
@@ -15,7 +15,7 @@ Create the site for Delectable Bonsai's intranet, Grow. With the Delectable Bons
 
 1. Click the Add button (![Add](../../images/icon-add.png)) and select _Blank Site_.
 
-1. Enter the name _Grow Delectable Bonsai_.
+1. Enter the name _Grow_.
 
 1. Click _Add_.
 
@@ -49,10 +49,9 @@ Create the site for Delectable Bonsai's intranet, Grow. With the Delectable Bons
 
 1. In a new browser window or tab, go to <http://grow.delectablebonsai.com:8080>.
 
-NOTE: This screenshot is no good, there amy be a bug in Liferay--this actually redirects tot he users profile (a totally different site) since there's no page. Change of approach needed
+   NOTE: What will happen depends on whether this is the default site (has a home page) or an added site, as written currently. In an added blank site you'll get an error message since there's no page.
 
 ![There's currently no home page for the Grow site.](./adding-the-intranet-site/images/01.png)
-
 The Grow site needs pages so employees can view content and access the site's applications. Pages for training resources, blog posts, and more are required. To begin with, a home page is needed.
 
 Next: [Adding the Home Page](./adding-the-home-page.md)

@@ -3,7 +3,7 @@ uuid: d5d5954a-f1e1-4097-a24a-a87ad52a0fbf
 ---
 # Adding a Structure for Frequently Asked Questions
 
-Clarity wants a way to manage its Frequently Asked Questions page that empowers its site maintainers to add questions, remove questions, and group them together easily. 
+Clarity wants a way to manage its Frequently Asked Questions page that empowers its site maintainers to add questions, remove questions, and group them together easily.
 
 Here, you'll create a structure with a *repeatable field* to allow creating articles with any number of questions. A repeatable field is one that you can have as many instances of as you want. In this case, add a repeatable pair of text fields (a question and its answer).
 
@@ -73,7 +73,7 @@ Now you're ready to configure the structure with the necessary fields.
 
 1. Click *Save* at the top of the page.
 
-Now the structure is ready to use, and you can add FAQs or Event web content articles to your site. Content structures, however, require display templates to go with them. 
+Now the structure is ready to use, and you can add FAQs or Event web content articles to your site. Content structures, however, require display templates to go with them.
 
 Next: add a [template for your Event structure](./adding-a-template-to-display-an-event.md).
 

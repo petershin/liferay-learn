@@ -3,6 +3,8 @@ uuid: 241798cf-f23b-47c9-af0f-23d3f231a1f4
 ---
 # Completing the Site Structure
 
+<!-- This exercise is too long; we should break it up into two. -Rich --> 
+
 Now that the home page is in place and the master page is able to define the header and footer, Clarity needs some additional pages to fill out its site structure: 
 
 - Home

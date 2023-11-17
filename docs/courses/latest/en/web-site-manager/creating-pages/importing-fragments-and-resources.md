@@ -9,7 +9,6 @@ First, you'll import fragments and images created by their designers to aid in b
 
 1. Download and unzip the images:
 
-   <!-- URL needs help -->
    ```bash
    curl https://resources.learn.liferay.com/courses/latest/en/web-site-manager/creating-pages/importing-fragments-and-resources/liferay-q9c4.zip -O
    ```
@@ -28,7 +27,6 @@ First, you'll import fragments and images created by their designers to aid in b
 
 These images appear in Documents and Media:
 
-   <!-- This list will need to be finalized at the end of drafting the module-->
    - `clarity-banner-image.png`
    - `clarity-logo.png`
    - `clarity-sign-in-image.png`
@@ -37,7 +35,6 @@ These images appear in Documents and Media:
 
 1. Download the fragment set:
 
-   <!-- URL needs help -->
    ```bash
    curl https://resources.learn.liferay.com/courses/latest/en/web-site-manager/creating-pages/importing-fragments-and-resources/liferay-j2b6.zip -O
    ```
@@ -52,7 +49,6 @@ These images appear in Documents and Media:
 
    When finished these fragments appear in the fragment set:
 
-   <!-- This list will need to be finalized at the end of drafting the module-->
    - `banner-composition`
    - `footer-composition`
    - `header-composition`

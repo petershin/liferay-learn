@@ -51,8 +51,6 @@ The main pages are in place. Next you need a sub-menu called More, with links to
 
    Disable the configuration for adding new pages to the menu during page creation, then click _Save_.
 
-   <!--If this configuration text is changed it will require a new screenshot: see https://liferay.slack.com/archives/CL9RTSZ52/p1695737943028559 -->
-
    ![Don't let users add pages to the menu during page creation.](./creating-navigation-menus/images/05.png)
 
 The menu display fragment showing the current navigation is added to the master page. Configure it to use the new navigation menu:
@@ -83,7 +81,6 @@ In addition to the header navigation, Clarity needs the menus for the footer: *S
 
    **Name:** *Retail Customer Portal*
    **URL:** *http://clarityb2b.com:8080*
-   <!-- Update above link to the actual site address -->
 
    ![Navigation menus can link to external URLs.](./creating-navigation-menus/images/10.png)
 

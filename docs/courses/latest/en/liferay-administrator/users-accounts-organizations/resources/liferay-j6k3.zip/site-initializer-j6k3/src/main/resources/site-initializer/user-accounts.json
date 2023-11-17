@@ -76,26 +76,5 @@
 				"name": "Marvelous Markets"
 			}
 		]
-	},
-	{
-		"accountBriefs": [
-			{
-				"externalReferenceCode": "DBACCOUNT-003",
-				"roleBriefs": [
-					"Site Administrator"
-				]
-			}
-		],
-		"alternateName": "Preston",
-		"emailAddress": "preston.palemr@clarityvisionsolutions.com",
-		"externalReferenceCode": "DBUSER-005",
-		"familyName": "Palmer",
-		"givenName": "Preston",
-		"jobTitle": "Site Administrator",
-		"organizationBriefs": [
-			{
-				"name": "IT"
-			}
-		]
 	}
 ]

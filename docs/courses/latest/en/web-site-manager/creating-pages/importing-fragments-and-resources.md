@@ -5,9 +5,9 @@ uuid: 4925291c-19c3-411d-9870-7f1768ad6df7
 
 Next, you'll import fragments and images created by their designers to aid in building out their pages. With these the site creators have the resources required to create the site while meeting Clarity's design and branding requirements. Log in as Preston Palmer, the site administrator user, for this exercise.
 
-## Downloading the Images
+## Downloading the Fragments and Images
 
-1. Download and unzip the images:
+1. Download and unzip the fragment set:
 
    <!-- URL needs help -->
    ```bash
@@ -33,22 +33,23 @@ These images appear in Documents and Media:
    - `clarity-logo.png`
    - `clarity-sign-in-image.png`
 
-## Downloading the Fragment Set
+## Importing the Fragments and Compositions
 
-1. Download the fragment set:
+First zip up the fragment set that was included in the `liferay-q9c4.zip` folder, then import the fragments, compositions, and resources into Liferay.
 
-   <!-- URL needs help -->
+<!-- Wouldn't it be easier for students if we had two .zips; one with images, and one already properly formatted for the fragments, compositions, and resources? -Rich -->
+
+1. Go to `liferay-q9c4.zip` and enter
+
    ```bash
-   curl https://resources.learn.liferay.com/courses/latest/en/web-site-manager/creating-pages/importing-fragments-and-resources/liferay-j2b6.zip -O
+   zip clarity-fragments.zip clarity-fragments -r
    ```
-
-## Importing the Fragment Set
 
 1. In Liferay, open the Site menu (![Site Menu](../../images/icon-product-menu.png)), expand *Design*, and click *Fragments*.
 
 1. Click *Actions* next to the fragment set (![Actions Button](../../images/icon-actions.png)) and select *Import*.
 
-1. Select `liferay-j2b6.zip` and click *Import*.
+1. Select `clarity-fragments.zip` and click *Import*.
 
    When finished these fragments appear in the fragment set:
 

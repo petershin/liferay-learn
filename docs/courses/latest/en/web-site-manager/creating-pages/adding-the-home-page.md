@@ -22,6 +22,7 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
    ![The default home page has some content defined already.](./adding-the-home-page/images/02.png)
 
+   <!-- Above image shows up as huge; remember images have to be halved in size if taken on a HIDPI display. -Rich --> 
 
 1. Click the outermost container's *Actions* menu (![Actions](../../images/icon-actions.png)), then click _Delete_.
 
@@ -41,11 +42,13 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
    ![These elements were added with the container fragment and the banner fragment.](./adding-the-home-page/images/03.png)
 
+   <!-- This image is also huge. -Rich -->
 
 1. Rename the Banner's top level container. In the Browser sidebar, open the *Actions* menu (![Actions](../../images/icon-actions.png)) and click _Rename_.
 
    ![Rename the banner's container for readability.](./adding-the-home-page/images/04.png)
 
+   <!-- As is this image. From here, I'll just say please review all your images in a Markdown preview to determine if they need to be resized. -Rich -->
 
 1. Enter _Banner Container_.
 

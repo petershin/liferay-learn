@@ -14,6 +14,7 @@ The marketing team at Clarity wants more from the home page. They want to add
 
 [Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) are reusable snippets of HTML, JavaScript (if necessary), and CSS you can use to build the look and feel of the site pages. You'll combine both built-in fragments and custom fragments to compose the page with very little custom code.
 
+<!--Re-using my stuff from Delectable Bonsai for now, but will re-design with Abel's concepts later. -->
 First, add a fragment composition highlighting the uniqueness of Clarity:
 
 1. Open the Home page in editing mode.

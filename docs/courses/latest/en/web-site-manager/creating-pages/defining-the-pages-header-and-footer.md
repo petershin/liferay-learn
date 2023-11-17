@@ -39,6 +39,7 @@ Because Clarity needs their own header and footer design, you'll create a master
 
    ![Logged in users see a menu with links to important pages.](./defining-the-pages-header-and-footer/images/03.png)
 
+<!-- replace 06 and 07 images, they show the footer with the nave menus that aren't yet created. -->
 The master page is in place. Right now the header and footer both contain menus that show the page hierarchy of the site. This will be improved in [Creating Navigation Menus](./creating-navigation-menus.md). Right now it's time to configure Liferay to use the master page on the existing Home page and in all widget pages (e.g., the existing Search page).
 
 1. Open the master page's *Actions* menu (![Actions](../../images/icon-actions.png)) and click _Mark as Default_. Confirm that you want to use this master page as the default for all widget pages.

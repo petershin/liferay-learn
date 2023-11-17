@@ -1,7 +1,7 @@
 [#assign publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()/]
 
 [#if !themeDisplay.isSignedIn()]
-<a class="user-sign-in" href="/c/portal/login">
+<a class="user-sign-in" href="${publicFriendlyURL}/sign-in">
 	<span class="user-sign-in-icon">
 		[@clay["icon"] symbol="user"/]
 	</span>

@@ -7,9 +7,9 @@ Now that the home page is in place and the master page is able to define the hea
 
 - Home
 - Shop
-- Blogs
+- Events
+- FAQ
 - About Us
-- Contact Us
 - Careers
 
 1. While logged in as the site administrator, Preston Palmer, open the Site menu (![Product Menu](../../images/icon-product-menu.png)), then click _Site Builder_ &rarr; _Pages_.
@@ -20,7 +20,7 @@ Now that the home page is in place and the master page is able to define the hea
 
 1. Open the *Actions* menu next to the Search page, then click _Delete_. Confirm the deletion when the warning menu appears.
 
-1. Test search after deleting the page. Navigate to the home page and click _Search_ (![Search](../../images/icon-search.png)).
+1. Test search after deleting the page. Navigate to the home page and enter _test_ in the search bar.
 
    Nothing happens. You deleted the search page, and now the search bar can't function properly.
 
@@ -44,9 +44,9 @@ Now that the home page is in place and the master page is able to define the hea
 
    ![The search results and facets are part of the search page template.](./completing-the-site-structure/images/06.png)
 
-   Consider why this search worked. You added a search bar widget to the master page's header and a search page in the site. How did the search bar know to send you to the search page? It's all in the configuration. The friendly URL of a page named Search defaults to `/search`, and the search bar configuration uses the same value in its Destination Page setting. The search page's friendly URL must match its search bar's Destination Page setting.
+   Consider why this search worked. You added a search bar widget to the master page's header and a search page in the site. How did the search bar know to send you to the search page? It's all in the configuration. The friendly URL of a page named Search defaults to `/search`, and the search bar configuration has a setting called Destination Page, and it also defaults to `/search`. The search page's friendly URL must match its search bar's Destination Page setting.
 
-1. Now create the important e-commerce storefront page, where site visitors can buy Clarity's products. Go back to the pages administration page. Click *Add* (![Add](./../../images/icon-add.png)), then click _Page_. Select the _Clarity MP_ page template and enter the name _Shop_.
+1. Now create the important e-commerce storefront page, where site visitors can buy Clarity's products. Go back to the pages administration page. Click *Add* (![Add](./../../images/icon-add.png)), then click _Page_. Select the _Del Bonsai_ page template and enter the name _Shop_.
 
 1. In the content page editor, click _Publish_. The header and footer you defined for Clarity are now in place.
 
@@ -54,9 +54,9 @@ Now that the home page is in place and the master page is able to define the hea
 
 1. Repeat the same procedure to create these content pages, configured to use the master page:
 
+   - Events
+   - FAQ
    - About Us
-   - Blog
-   - Contact Us
 
 1. Create a [child page](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/managing-page-hierarchies) of the About Us page, called Careers. Click *Add* (![Add](../../images/icon-plus.png)) next to About Us, and then follow the same page creation procedure. You can also drag existing top-level pages onto other pages to nest them.
 

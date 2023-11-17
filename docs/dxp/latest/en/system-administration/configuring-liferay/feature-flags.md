@@ -87,7 +87,7 @@ As described above, beta features are experimental and require careful considera
 Some beta features are added behind a [beta feature flag](#beta-feature-flags).
 
 
-As of Liferay 2023.Q4, some beta features are included out-of-the-box, but are marked with a tag in the UI to highlight their beta status (![Beta](../../images/icon-beta-feature.png)).
+As of Liferay 2023.Q4, some beta features are enabled out-of-the-box, but are marked with a tag in the UI to highlight their beta status (![Beta](../../images/icon-beta-feature.png)).
 
 ![Some beta features are included out-of-the-box, clearly marked in the UI.](./feature-flags/images/05.png)
 

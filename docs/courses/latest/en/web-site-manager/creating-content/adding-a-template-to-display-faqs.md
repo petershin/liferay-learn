@@ -13,21 +13,19 @@ Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/
 
 1. Navigate to the Site Menu (![Site Menu](../../images/icon-product-menu.png)) &rarr; *Content & Data* &rarr; *Web Content*.
 
-1. Click the *Structures* tab to get to the structures you created previously.
+1. Select the *Templates* tab and click *Add* (![Add icon](../../images/icon-add.png)).
+
+1. In the Properties menu (![Properties icon](../../images/icon-cog.png)) (on the right side of the screen), click *Select Structure* beside the Structure field and select the FAQs structure.
+
+   The new template is associated with the FAQs structure. Use this alternative method or the one mentioned in the previous exercise to create a template and associate it with a structure.
+
+   ![Select a structure when creating a template to associate them.](./adding-a-template-to-display-faqs/images/01.png)
 
 <!-- Eric, here's where you'd change the navigation if you want to do it differently for the two templates. -Rich -->
 
-1. Select *Manage Templates* in the FAQs structure's Actions menu (![Actions icon](../../images/icon-actions.png)).
+1. Still in the Properties menu, enter this into the *Description* field: `A simple template to list each question and answer.`
 
-   ![Click Manage Templates to add templates for this specific web content structure.](./adding-a-template-to-display-faqs/images/01.png)
-
-1. Click *Add* (![Add icon](../../images/icon-add.png)) to create a new template.
-
-   The new template is associated automatically with the FAQs structure because you chose to manage templates for it.
-
-1. At the top of the page, enter `Simple FAQ list` as the title.
-
-1. In the Properties menu (on the right side of the screen), enter this into the *Description* field: `A simple template to list each question and answer.`
+1. At the top of the page, enter `Simple FAQ List` as the title.
 
 ## Configure the Template's Fields
 

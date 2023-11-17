@@ -6,29 +6,23 @@ uuid: 2300c294-4b2c-480a-8a99-a230ace39c5f
 With Liferay's master pages, Delectable Bonsai can define common elements for their pages' headers and footers. Delectable Bonsai has just one page currently, the Home page. Since no master page was defined, the blank master page was automatically associated to the page, meaning there's a default header and footer. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu. 
 <!-- This actually comes in with the classic theme, so revamp it to explain why there's a header and footer by default, when the blank mp doesn't define it. -->
 
-![The default header and footer are useful, but replaceable.](./defining-the-pages-header-and-footer/images/01.png)
+LIFERAY/BLANK
 
 Delectable Bonsai needs their own design, of course. At first the master page will define the header and footer for just the one page, but Delectable Bonsai will re-use it across the entire site, as more pages are added.
 
-<!-- Step 1 is to actually download the files we're providing--they're currently in a defining-the-pages-header-and-footer/resources folder -->
-
-1. Import some logo images. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Content & Data &rarr; Documents and Media.
+1. Import some logo images. <!-- TODO: resources folder?--> Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Content & Data &rarr; Documents and Media.
 
 1. Click *Add* (![Add](./../../images/icon-add.png)) &rarr; Multiple Files.
 
-1. Choose `DB Green - 1w.svg` and `DB Green - 3.svg`, and click _Publish_. <!-- I'm getting errors in the log about unsupported image types--should I not use SVG files? -->
+1. Choose `DB Green - 1w.svg` and `DB Green - 3.svg`, and click _Publish_.
 
-   ![The logos are imported and ready to use.](./defining-the-pages-header-and-footer/images/02.png)
+   <!-- SCREENSHOT-->
 
 1. Import 1 custom fragment and 2 fragment compositions. <!--these are introduced here so briefly explain-->  Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Design &rarr; Fragments.
 
 1. Open the Actions menu (![Actions](../../images/icon-actions.png)) and click _Import_.
 
 1. Choose `user-nav-menu.zip`.
-
-   This custom fragment uses HTML and CSS to create a menu for logged in users. For logged out users, they see a user icon and the words SIGN IN, which they can click on to access the sign in page.
-
-   ![Logged in users see a menu with links to important pages.](./defining-the-pages-header-and-footer/images/03.png)
 
 1. Now import `header-composition.zip` and `footer-composition.zip`.
 
@@ -44,17 +38,15 @@ Delectable Bonsai needs their own design, of course. At first the master page wi
 
 1. Map the image fragment in the header to a logo. Open the browser (![Browser](../../../../images/icon-browser.png)) and expand the Header Container element, and continue expanding elements until you get to the middle grid module's image fragment.
 
-   ![Click the image fragment's inner element to set the source of the image.](./defining-the-pages-header-and-footer/images/04.png)
+   <!--SCREENSHOT-->
 
 1. Click the image fragment to open its settings, then click _image-square_ to set the source of the image.
 
 1. Choose direct source selection, then choose the image _DB Green - 1W_.
 
-   ![Set the image to use in the header.](./defining-the-pages-header-and-footer/images/05.png)
-
 1. Using the same procedure, add the _DB Green - 3_ image to the footer's image fragment.
 
-   ![Set the image to use in the footer.](./defining-the-pages-header-and-footer/images/06.png)
+   <!--SCREENSHOT-->
 
 1. Click _Publish Master_.
 
@@ -70,7 +62,7 @@ The master page is in place, so it's time to configure Liferay to use it on the 
 
 Your master page is defining the header and footer of the home page.
 
-![The header and footer is in place.](./defining-the-pages-header-and-footer/images/07.png)
+<!-- SCREENSHOT-->
 
 Even with a header and footer, the look and feel is not polished yet. The Welcome to Liferay image is very blue and doesn't match Delectable Bonsai's brand colors, and the links are all currently blue as well. Instead of spending time manually fixing this, we'll leave it for now since the theme CSS client extension you deploy later will remedy these visual faults, and that Welcome to Liferay content will be removed during our content creation exercises anyway.
 

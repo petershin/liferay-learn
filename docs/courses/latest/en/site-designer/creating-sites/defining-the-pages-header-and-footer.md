@@ -3,7 +3,7 @@ uuid: 2300c294-4b2c-480a-8a99-a230ace39c5f
 ---
 # Defining the Pages' Header and Footer
 
-With [Liferay's master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Delectable Bonsai can define common elements for their pages' headers and footers. Delectable Bonsai has just one page currently, the Home page. Since no master page was defined, the blank master page was automatically associated to the page. The blank master page does not define the default header and footer: instead, the default header and footer are defined in the default Classic theme. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu.
+With [Liferay's master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Delectable Bonsai can define common elements for their pages' headers and footers. Delectable Bonsai has just one page currently, the Home page. Since no master page was defined, the blank master page was automatically associated to the page. The blank master page does not define the default header and footer: instead, the default header and footer are defined in the default Classic theme. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu. 
 
 ![The default header and footer are useful, but replaceable.](./defining-the-pages-header-and-footer/images/01.png)
 
@@ -15,9 +15,9 @@ Delectable Bonsai needs their own design, of course. At first the master page wi
 
    The content page editor appears. Only one element is currently on the page, a drop zone. Your header and footer appear above and below the drop zone, respectively.
 
-1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag _header-composition_ above the drop zone, then drag _footer-composition_ below the drop zone.
+1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag the header-composition above the drop zone, then drag the footer-composition below the drop zone.
 
-1. Map the image fragment in the header to a logo. Open the browser (![Browser](../../images/icon-hierarchy.png)) and expand the Header Container element, and continue expanding elements until you get to the middle grid module's image fragment.
+1. Map the image fragment in the header to a logo. Open the browser (![Browser](../../images/icon-browser.png)) and expand the Header Container element, and continue expanding elements until you get to the middle grid module's image fragment.
 
    ![Click the image fragment's inner element to set the source of the image.](./defining-the-pages-header-and-footer/images/04.png)
 
@@ -53,5 +53,5 @@ Your master page is defining the header and footer.
 
 ![The header and footer is in place.](./defining-the-pages-header-and-footer/images/07.png)
 
-Even with a header and footer, the look and feel is not yet well polished. Links are all currently blue and do not match with Delectable Bonsai's brand colors, for example. Instead of spending time manually fixing this, leave it for. The theme CSS client extension you deploy later will remedy these visual faults.
+Even with a header and footer, the look and feel is not yet well polished. The Welcome to Liferay image is very blue and doesn't match Delectable Bonsai's brand colors, and the links are all currently blue as well. Instead of spending time manually fixing this, we'll leave it for now since the theme CSS client extension you deploy later will remedy these visual faults, and that Welcome to Liferay content will be removed during our content creation exercises anyway.
 <!-- Note: we may want to remove the manual color-setting here, and only do it when the brand colors are loaded in from the Theme CSS CX later -->

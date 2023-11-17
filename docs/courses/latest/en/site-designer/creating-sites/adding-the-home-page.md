@@ -55,26 +55,27 @@ While logged in as the site administrator, configure the existing home page for 
 
 1. Change the padding to be 1 REM all around. In the Spacing settings, choose _Spacer 3_ for the padding on the right, left, top, and bottom of the element.
 
-   The value for each spacer setting is defined by the [Style Book](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books).
+   The value for each spacer setting is defined by the Style Book.
    <!-- Is it the style book, the theme, the theme CSS CX? -->
 
-1. Set an image as the banner's background. Each container element's configuration lets you configure the background. Click _Banner Container_ in the browser sidebar.
+1. Set and image as the banner's background. Each container element's configuration lets you configure the background. Click _Banner Container_ in the browser sidebar.
 
 1. Open the _Styles_ menu in the right sidebar, and set the Background Image to `banner-image.png`.
 
 1. Change the text on the page by double clicking the element to edit:
 
-   - **Heading:** _Delectably Delightful_
-   - **Paragraph:** Good things come in small packages. Great things come in tiny trees.
+   - **Heading:** _Delectable_
+   - **Paragraph:** Good things come in small trees
    - **Button:** Shop
 
 1. Click the _Publish_ Button.
 
-Now there's a home page for Delectable Bonsai. It's not fully implemented yet, but users can navigate to <http://localhost:8080> and it's clearly for Delectable Bonsai, not Liferay.
+Now there's a home page for Grow Delectable Bonsai. It's not fully implemented yet, but users can navigate to <http://localhost:8080> and it's clearly for Delectable Bonsai, not Liferay.
 
-![There's a home page for Delectable Bonsai's public site.](./adding-the-home-page/images/05.png)
+![There's a home page for Delectable Bonsai's intranet.](./adding-the-home-page/images/05.png)
 
 Before completing the home page design and moving on to design each additional page, Delectable Bonsai wants to create a custom header and footer for all its pages.
+
 
 ## Relevant Concepts
 

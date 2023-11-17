@@ -1,5 +1,6 @@
 ---
 toc:
+- ./creating-sites/adding-the-intranet-site.md
 - ./creating-sites/adding-the-home-page.md
 - ./creating-sites/defining-the-pages-header-and-footer.md
 - ./creating-sites/desiging-the-home-page.md
@@ -8,7 +9,6 @@ toc:
 - ./creating-sites/creating-navigation-menus.md
 - ./creating-sites/adding-pages.md
 - ./creating-sites/using-master-pages.md
-- ./creating-sites/adding-the-intranet-site.md
 uuid: 30c0c2ed-18a3-460f-a7e3-48cb46b608d1
 ---
 # Creating Sites

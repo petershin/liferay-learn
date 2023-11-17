@@ -13,13 +13,11 @@ To simplify the navigation menu, Clarity wants just three items to appear in the
 
 <!-- Notes from outline/meeting w/Evan and Mateo: Linking to DPTs, external URLs are benefits (of having readers create a custom nav menu), etc. Look and feel customization as well (ADTs)-->
 
-<!-- Now that we're Clarity, it should probably be Home, Products, FAQ, Events with About Us and Careers under the More menu. -Rich -->
-
 First create the navigation menu:
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and go to _Site Builder_ &rarr; _Navigation Menus_.
+1. Open the Site Menu (![Site Menu](../../images/icon-product-menu.png)) and go to _Site Builder_ &rarr; _Navigation Menus_.
 
-1. Click *Add* (![Add Button](../../images/icon-add.png)).
+1. Click the Add button (![Add Button](../../images/icon-add.png)).
 
 1. Enter _Del Bonsai Navigation_ as the name, then click _Save_.
 
@@ -30,8 +28,6 @@ First create the navigation menu:
 1. In the Select Pages selector, expand the Clarity hierarchy and click _Shop_, then click _Recipes_.
 
    <!-- For this menu I want Recipes but it wasn't created in the completing the site structure lesson--need to add it -->
-
-   <!-- I haven't been able to come up with an analog for Recipes; if anybody else has any ideas, I'm all for it. -Rich -->
 
 ![Add the Shop and Recipes pages to the navigation menu.](./creating-navigation-menus/images/02.png)
 
@@ -53,7 +49,7 @@ The main pages are in place. Next you need a sub-menu called More, with links to
 
    The menu is ready to use.
 
-1. The pages you want to show are in place. To make sure new pages are not added to the menu unless the navigation menu is updated intentionally, click *Configuration* (![Cog](../../images/icon-cog3.png)).
+1. The pages you want to show are in place. To make sure new pages are not added to the menu unless the navigation menu is updated intentionally, click the configuration icon (![Cog](../../images/icon-cog3.png)).
 
    Disable the configuration for adding new pages to the menu during page creation, then click _Save_.
 

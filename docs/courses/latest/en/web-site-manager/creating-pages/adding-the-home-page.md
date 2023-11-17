@@ -7,11 +7,11 @@ Right now, browsing to <http://localhost:8080> loads the default site and the de
 
 ![The default home page has a header, footer, and some Welcome to Liferay content.](./adding-the-home-page/images/01.png)
 
-Clarity needs its own home page. Page creation and management is the work of a site administrator, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Users assigned to the role and who are members of the site can act as an administrator for the site. The setup script and the steps completed in the [Liferay Administrator](../../liferay-administrator.md) course have your Liferay instance pre-populated with just such a user, Preston Palmer.
+Clarity needs its own home page. Page creation and management is part of the site administration activity, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Any user assigned to the role and a member of the site can act as an administrator in the site. The setup script and the steps completed in the [Liferay Administrator](../../liferay-administrator.md) lessons have your Liferay instance pre-populated with just such a user, Preston Palmer.
 
-1. Log in as the site administrator, Preston Palmer: `preston@clarityvisionsolutions.com`. 
+While logged in as the site administrator, configure the existing home page for Clarity:
 
-1. Go to the Home page and click *Edit* (![Edit](../../images/icon-edit.png)) in the administrative header.
+1. Go to the Home page and click Edit (![Edit](../../images/icon-edit.png)) in the administrative header.
 
    The content page editor appears. This is where you add content, functionality, and structure to the page.
 
@@ -19,9 +19,9 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
    ![The default home page has some content defined already.](./adding-the-home-page/images/02.png)
 
-1. Click the outermost container's *Actions* menu (![Actions](../../images/icon-actions.png)), then click _Delete_.
+1. Click the outermost container's Actions menu (![Actions](../../images/icon-actions.png)), then click _Delete_.
 
-   Now your page is a blank slate. There's still a header and footer that must be changed (in the next exercise), but the default page content is gone!
+   Now your page is a blank slate. There's still a header and footer that need to be changed (in the next exercise), but the default page content is gone!
 
 1. Click the plus icon (![Fragments and Widgets](../../images/icon-plus.png)) to open the Fragments and Widgets sidebar menu.
 
@@ -29,7 +29,7 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
    Containers define configurable drag and drop zones for fragments and widgets. Adding all content page elements to a container makes styling the page more convenient.
 
-1. Add a banner to the container. Search for _Banner_ in the Fragments and Widgets sidebar menu and drag it into the container you already added.
+1. Add a banner to the container. Search for _Banner_ in the Fragments and Widgets sidebar menu, and drag it into the container you already added.
 
    The banner consists of two containers, a heading, a paragraph, and a button.
 
@@ -37,7 +37,7 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
    ![These elements were added with the container fragment and the banner fragment.](./adding-the-home-page/images/03.png)
 
-1. Rename the Banner's top level container. In the Browser sidebar, open the *Actions* menu (![Actions](../../images/icon-actions.png)) and click _Rename_.
+1. Rename the Banner's top level container. In the Browser sidebar, open the Actions menu (![Actions](../../images/icon-actions.png)) and click _Rename_.
 
    ![Rename the banner's container for readability.](./adding-the-home-page/images/04.png)
 
@@ -53,9 +53,9 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
    The value for each spacer setting is defined by the page's [Style Book](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books).
 
-1. Set an image as the banner's background. *Background* is a property for each container element's configuration. Click _Banner Container_ in the browser sidebar.
+1. Set an image as the banner's background. Each container element's configuration lets you configure the background. Click _Banner Container_ in the browser sidebar.
 
-1. Open the _Styles_ menu in the right sidebar, and set the *Background Image* to `banner-image.png`.
+1. Open the _Styles_ menu in the right sidebar, and set the Background Image to `banner-image.png`.
 
 1. Change the text on the page by double clicking the element to edit:
 

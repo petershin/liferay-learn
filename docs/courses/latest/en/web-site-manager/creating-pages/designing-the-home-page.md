@@ -14,9 +14,9 @@ The design team at Clarity wants more from the home page:
 1. Show off some specific products.
 1. Display customer testimonials.
 
-In Liferay you can use [Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments), which are reusable snippets of HTML, JavaScript (if necessary), and CSS to build the look and feel of the site pages. Clarity's design team doesn't have the expertise to develop the custom fragments needed to build a nifty home page, but they can use the built-in fragments and any custom fragments given to them by the development team to compose the home page.
+In Liferay you can use [Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments), reusable snippets of HTML, JavaScript (if necessary), and CSS to build the look and feel of the site pages. Clarity's design team doesn't have the expertise to develop the custom fragments needed to build a nifty home page, but they can use the built-in fragments and any custom fragments given to them by the development team to compose the home page.
 
-The first piece of content after the header is similar to the current banner, but instead of the large image as a background it features a series of images implemented as a slider, so that every 5 seconds a new image appears.
+The first piece of content after the header is similar to the current banner, but instead of the large image as a background it will feature a series of images implemented as a slider, so that every 5 seconds a new image appears.
 
 1. Open the Home page in editing mode.
 
@@ -29,8 +29,6 @@ The first piece of content after the header is similar to the current banner, bu
 The slider images can be updated, as can the number of slides. Each slide has a title and paragraph text. These are created with web content.
 
 <!-- Should the Web Content come in with this lesson or be imported already, in ./importing-fragments-and-resources.md -->
-
-<!-- I think since you don't go over Web Content until a later module, it should have been imported. You may also want to say here that Web Content is covered later. -Rich -->
 
 After the slider comes a list of points highlighting the uniqueness of Clarity and its products. 
 
@@ -58,8 +56,6 @@ SCREENSHOT/GIF
 Now Clarity's basic pages are in place and the home page is fleshed out. However, the navigation menu could use some enhancements. 
 
 <!-- We could just configure the Careers page to be excluded from the Menu Display navigation, like we did with search and sign-in-->
-
-<!-- No; people should be able to find the Careers page. In fact, I don't think it should be a child of About Us. -Rich -->
 
    ![The navigation menu is okay, but it could use some enhancements.](./completing-the-site-structure/images/05.png)
 

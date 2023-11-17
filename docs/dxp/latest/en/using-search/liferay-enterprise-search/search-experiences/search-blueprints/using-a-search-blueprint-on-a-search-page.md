@@ -21,12 +21,13 @@ Now the blueprint's functionality is applied to the page.
 
 Administrative users can instead use the [Low Level Search Options](../../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md) widget to apply a blueprint to a search page. Open the widget's configuration. In the Attributes section, add
 
-- Key: `search.experiences.blueprint.id`
-- Value: `[the blueprint ID]`
+- Key: `search.experiences.blueprint.erc` \*
+- Value: `[the blueprint's external reference code (ERC)]`
 
-You can find the blueprint ID from the Blueprints application (Global Menu &rarr; Applications &rarr; Blueprints (Search Experiences).
 
-![The blueprint ID is listed in the Blueprints application.](./using-a-search-blueprint-on-a-search-page/images/01.png)
+\* On versions before Liferay 2023.Q4/GA102, you must instead use the ID: `search.experiences.blueprint.id`. You can find the blueprint ID or ERC from the Blueprints application (Global Menu &rarr; Applications &rarr; Blueprints (Search Experiences). Click the blueprint to open its editor.
+
+![The blueprint ID and ERC are listed in the blueprint editor.](./using-a-search-blueprint-on-a-search-page/images/01.png)
 
 Unless you're already using the Low Level Search Options widget on your search page, the Blueprints Options widget is more convenient for setting a blueprint. If you must set other Search Context Attributes, perhaps for testing a blueprint, use the Low Level Search Options widget.
 

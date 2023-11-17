@@ -232,6 +232,16 @@ Now only the uncategorized Web Content Article is returned. The other one has be
 
 This example uses an Element that reads the context variable `user.is_signed_in`. By setting a value manually, you override the existing value so the Blueprint can demonstrate a certain behavior. Because a value already exists in the search context, setting it manually is optional. Other Elements have required custom parameters that do not exist within a normal search request's context. These must be passed manually into the search context for the Element/Blueprint to function properly, whether testing the Blueprint from the preview sidebar or setting the Blueprint for use on a search page.
 
+## Setting the External Reference Code (ERC)
+
+{bdg-secondary}`Liferay 2023.Q4+/GA102+`
+
+You can refer to the blueprint by its editable ERC, and this is recommended whenever possible. For convenience you can set the ERC to something memorable and human readable. From the blueprint editor, click _Edit_ ![Edit](../../../../images/icon-edit-pencil.png) next to the ERC:
+
+![Edit the ERC to be memorable and readable.](./creating-and-managing-search-blueprints/images/15.png)
+
+This human readable ERC comes in handy when setting the blueprint [on a search page](./using-a-search-blueprint-on-a-search-page.md) or in a [headless search request](../../../developer-guide/search-headless-apis.md).
+
 ## What's Next
 
 - [Using a Search Blueprint on a Search Page](./using-a-search-blueprint-on-a-search-page.md)

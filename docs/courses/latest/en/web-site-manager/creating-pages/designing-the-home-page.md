@@ -34,26 +34,6 @@ The last section of content shows customer testimonials. In this case the text i
 
 1. Add the _clarity-testimonials-composition_ to the page.
 
-1. In the fragment configuration sidebar on the right, provide a quote for each *Testimonial* field:
-
-   **First Testimonial:** 
-
-   ```html
-   "Wow, HD is way cooler when I have my Clarity glasses on. Let's be honest, I'm way cooler too."<br /><br />Scott, Almuerzo, TX
-   ```
-
-   **Second Testimonial:** 
-
-   ```html
-   "I look good, and I never knew it!"<br /><br />Cherise, Mittagessen SD
-   ```
-
-   **Third Testimonial:** 
-
-   ```html
-   "If looks could kill, my mirror would be serving ten life sentences."<br /><br />Bran, Ranchi OR
-   ```
-
 1. Publish the page.
 
 ![Customer Testimonials are displayed.](./designing-the-home-page/images/04.png)

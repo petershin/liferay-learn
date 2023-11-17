@@ -1,10 +1,12 @@
-const editMode = layoutMode === 'edit';
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
@@ -20,8 +22,7 @@ function showSlides(n) {
   
 }
 window.onload= function () {
-	setInterval(function(){ 
-	 
-	 plusSlides(1);
+ setInterval(function(){ 
+     plusSlides(1);
  }, 4000);
-}
+ }

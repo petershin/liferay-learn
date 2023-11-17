@@ -3,15 +3,40 @@ uuid: 9d40c268-3ab6-4358-bcac-a43d706d8a3b
 ---
 # Creating Navigation Menus
 
-<!-- We could also create a nav menu fragment for the footer: if the user is signed in show some account links like cart, profile, lists, otherwise show the pages hierarchy-->
+The menu we want has three items only: 
 
-Delectable Bonsai's navigation menu is getting cluttered, as it shows all the pages by default. The Menu Display fragment's default configuration shows the page hierarchy of the site.. Remembered that you excluded Careers, Sign In, and Search from the default menu display, so those pages aren't showing.
+1. Shop (link to shop page on click, on hover shows a product card for some featured product: ADT for this)
+1. Recipes (link to recipes page)
+1. More (drop down Events, FAQ, About Us)
 
-![The default navigation menu displays the site's pages.](./creating-navigation-menus/images/01.png)
+Note: set the new nav menu to not automatically include all new pages
 
-To simplify the navigation menu, Delectable Bonsai would like just three items to appear in the navigation menu: Shop (page), Recipes (page), and More (sub-menu with additional page links).
+Notes from outline/meeting w/Evan and Mateo: Linking to DPTs, external URLs are benefits (of having readers create a custom nav menu), etc. Look and feel customization as well (ADTs)
 
-<!-- Notes from outline/meeting w/Evan and Mateo: Linking to DPTs, external URLs are benefits (of having readers create a custom nav menu), etc. Look and feel customization as well (ADTs)-->
+When you add blank pages to a blank site in Liferay, a navigation menu is provided by default: the page hierarchy of your site's pages are added to this default navigation menu.
+
+Delectable Bonsai's header currently uses this menu as well.
+
+NOTE: The reader can't see this in their site, it's really a made-up screenshot to show something--is that okay or must all screenshots show the current state of the site?
+
+![The default navigation menu displays the site's pages.](./creating-site-templates/images/01.png)
+
+From Managing Site Navigation:
+See [Using the Navigation Menu Application] to learn how to create Navigation Menus and deploy them on a Page. See [Configuring Menu Displays] to learn more about how to configure the [Menu Display Fragment]  (available in Liferay DXP 7.4+) and [Menu Display Widget].
+
+Add a navigation menu to link to some common resources in both the B2B and B2C sites:
+
+NOTE: Provide steps for adding a Common Resources navigation menu, linking to the wikipedia Bonsai entry and a Web Content article's DPT.  Should we demonstrate the dynamic vocabulary element?
+
+We want to create a different style then the ones available, so style the navigation menu with a widget template.
+NOTE: Separate lesson? Is this the right module for it? We can put it off until later. "The navigation menu you created earlier is ugly, so style it..."
+
+1. Create the navigation menu
+
+1. Add it to the Display Menu widget and fragment
+
+1. Change the look and feel using a widget template (too much? An additional lesson in Styling the Site, module 6?)
+
 
 First create the navigation menu:
 
@@ -33,7 +58,7 @@ First create the navigation menu:
 
 1. Click _Select_.
 
-The main pages are in place. Next you need a sub-menu called More, with links to the remaining pages.
+The main pages are in place. Next you need a sub-menu called More, with link to the remaining pages.
 
 1. Click _Add_ &rarr; _Sub-menu_.
 
@@ -49,14 +74,6 @@ The main pages are in place. Next you need a sub-menu called More, with links to
 
    The menu is ready to use.
 
-1. The pages you want to show are in place. To make sure new pages are not added to the menu unless the navigation menu is updated intentionally, click the configuration icon (![Cog](../../images/icon-cog3.png)).
-
-   Disable the configuration for adding new pages to the menu during page creation, then click _Save_.
-
-   <!--If this configuration text is changed it will require a new screenshot: see https://liferay.slack.com/archives/CL9RTSZ52/p1695737943028559 -->
-
-   ![Don't let users add pages to the menu during page creation.](./creating-navigation-menus/images/05.png)
-
 The menu display fragment showing the current navigation is added to the master page. Configure it to use the new navigation menu:
 
 1. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click _Design_ &rarr; _Page Templates_.
@@ -67,15 +84,4 @@ The menu display fragment showing the current navigation is added to the master 
 
    ![Configure the menu display fragment's options.](./creating-navigation-menus/images/04.png)
 
-1. Click the _Source_ field, then choose the _Del Bonsai Navigation_ menu.
-
-1. Click _Select this Level_. 
-
-   For a hierarchical structure, you can choose a different level to display in the widget, if it suits your needs. Click _More_ and see that its sub-menu items are shown.
-
-   In addition to these site menus defined in the Navigation Menus application, you can click Contextual Menus to see some additional dynamic menu options. See [Configuring Menu Displays](https://learn.liferay.com/en/w/dxp/site-building/site-navigation/configuring-menu-displays) for more information.
-
-   Before this lesson, Delectable Bonsai had three pages not appearing in the menu display fragment's page hierarchy menu: Careers, Sign In, and Search. That menu is no longer in use, but those pages were not explicitly added to the new navigation menu, so they continue to remain outside of the navigation.
-
-Next Delectable Bonsai wants to control who can access each page.
 

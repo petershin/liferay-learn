@@ -61,3 +61,4 @@ Next: [Adding the Home Page](./adding-the-home-page.md)
 
 * [Adding a Site](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/adding-a-site)
 * [Default Site Applications](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/default-site-applications)
+

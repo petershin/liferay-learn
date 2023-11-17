@@ -7,6 +7,7 @@ Right now, browsing to <http://localhost:8080> loads the default site and the de
 
 ![The default home page has a header, footer, and some Welcome to Liferay content.](./adding-the-home-page/images/01.png)
 
+<!-- Re-work this for default home page -->
 Clarity needs its own home page. Page creation and management is part of the site administration activity, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Any user assigned to the role and a member of the site can act as an administrator in the site. The setup script and the steps completed in the [Liferay Administrator](../../liferay-administrator.md) lessons have your Liferay instance pre-populated with just such a user, Preston Palmer.
 
 While logged in as the site administrator, configure the existing home page for Clarity:
@@ -51,7 +52,8 @@ While logged in as the site administrator, configure the existing home page for 
 
 1. Change the padding to be 1 REM all around. In the Spacing settings, choose _Spacer 3_ for the padding on the right, left, top, and bottom of the element.
 
-   The value for each spacer setting is defined by the page's [Style Book](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books).
+   The value for each spacer setting is defined by the [Style Book](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books).
+   <!-- Is it the style book, the theme, the theme CSS CX? -->
 
 1. Set an image as the banner's background. Each container element's configuration lets you configure the background. Click _Banner Container_ in the browser sidebar.
 
@@ -59,8 +61,8 @@ While logged in as the site administrator, configure the existing home page for 
 
 1. Change the text on the page by double clicking the element to edit:
 
-   - **Heading:** _See Well. Look Good._
-   - **Paragraph:** You've never seen yourself this well, looking this good.
+   - **Heading:** _Delectably Delightful_
+   - **Paragraph:** Good things come in small packages. Great things come in tiny trees.
    - **Button:** Shop
 
 1. Click the _Publish_ Button.
@@ -76,3 +78,23 @@ Before completing the home page design and moving on to design each additional p
 * [Adding Pages to a Site](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
 * [Page Fragments and Widgets](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets)
 * [Configuring Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments)
+
+ <!--
+
+1. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click the compass icon (![Compass](../../images/icon-compass.png)) to browse the sites you have access to.
+
+   ![The site menu contains site-scoped applications and configurations.](./adding-the-home-page/images/02.png)
+
+   The Site Menu is only visible to site administrators or other users granted the proper permissions. From here users can access applications and configurations scoped to the current site, which is labeled at the top of the menu.
+
+1. Click _Grow Clarity_.
+
+1. Click _Site Builder_, then _Pages_. In a new blank site like Grow, there are no pages.
+
+1. Click _New_ &rarr; _Page_.
+
+1. Choose the _Blank_ template, and name the page _Home_.
+
+   You created a content page by choosing the blank template. Content pages are the default in Liferay, as they offer the most page building features. You can add fragments and widgets to a content page.
+
+-->

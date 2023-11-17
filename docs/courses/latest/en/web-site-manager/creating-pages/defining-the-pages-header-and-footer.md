@@ -3,18 +3,18 @@ uuid: 2300c294-4b2c-480a-8a99-a230ace39c5f
 ---
 # Defining the Pages' Header and Footer
 
-With [master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Clarity can define common elements for their pages' headers and footers. Clarity has just one page currently, the home page. Since this was created before any master page was available, the blank master page was automatically associated to the page. The blank master page does not define the default header and footer: instead, the default header and footer are defined in the default Classic theme. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu.
+With [Liferay's master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Clarity can define common elements for their pages' headers and footers. Clarity has just one page currently, the home page. Since no master page was defined, the blank master page was automatically associated to the page. The blank master page does not define the default header and footer: instead, the default header and footer are defined in the default Classic theme. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu.
 <!-- I wonder if this short-changes master pages by focusing on the shared header and footer--master pages are also used for setting a theme/style book or theme css and defining the drop zone, including limiting what widgets and fragments are allowed to be added to the page-->
 
 ![The default header and footer are useful, but replaceable.](./defining-the-pages-header-and-footer/images/01.png)
 
-Clarity needs their own header and footer design, of course. At first the master page will define the header and footer for the one page and the utility pages, but Clarity will re-use it across the entire site, as more pages are added.
+Clarity needs their own design, of course. At first the master page will define the header and footer for the one page and the utility pages, but Clarity will re-use it across the entire site, as more pages are added.
 
 1. Add the Master Page. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Design &rarr; Page Templates.
 
 1. Click the Add button (![Add](./../../images/icon-add.png)) and name the page _Del Bonsai MP_.
 
-   The content page editor appears. Only one element is currently on the page, a drop zone. Clarity's header and footer should appear above and below the drop zone, respectively.
+   The content page editor appears. Only one element is currently on the page, a drop zone. Your header and footer appear above and below the drop zone, respectively.
 
 1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag _header-composition_ above the drop zone, then drag _footer-composition_ below the drop zone.
 

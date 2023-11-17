@@ -26,7 +26,7 @@ The first piece of content after the header is similar to the current banner, bu
 
 ![The slider is in place.](./designing-the-home-page/images/02.gif)
 
-The slider images can be updated, as can the number of slides. Each slide has a title and paragraph text. These are created with web content.
+The slider images can be updated, as can the number of slides. Each slide has a title and paragraph text. These are created with web content. There's a structure 
 
 <!-- Should the Web Content come in with this lesson or be imported already, in ./importing-fragments-and-resources.md -->
 
@@ -51,12 +51,3 @@ The last piece of content is for showing customer testimonials. In this case the
 1. Publish the page.
 
 SCREENSHOT/GIF
-<!-- Oops, though I finished this article! This is about when I learned of the switch to Clarity -->
-
-Now Clarity's basic pages are in place and the home page is fleshed out. However, the navigation menu could use some enhancements. 
-
-<!-- We could just configure the Careers page to be excluded from the Menu Display navigation, like we did with search and sign-in-->
-
-   ![The navigation menu is okay, but it could use some enhancements.](./completing-the-site-structure/images/05.png)
-
-Next, create a [new main navigation menu](./creating-navigation-menus.md) for the master page's header.

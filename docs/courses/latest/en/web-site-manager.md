@@ -4,7 +4,7 @@ toc:
 - ./web-site-manager/creating-pages.md
 uuid: a6e1bd85-6cb9-49ef-aa35-ea2bda8ad999
 ---
-# Website Manager
+# Site Designer
 
 Placeholder for intro material to be added as part of [LRDOCS-12121](https://liferay.atlassian.net/browse/LRDOCS-12121).
 

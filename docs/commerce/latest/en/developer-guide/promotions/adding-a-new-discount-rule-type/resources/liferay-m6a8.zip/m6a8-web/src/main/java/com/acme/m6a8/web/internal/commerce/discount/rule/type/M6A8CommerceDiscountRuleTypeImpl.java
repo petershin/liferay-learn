@@ -66,4 +66,9 @@ public class M6A8CommerceDiscountRuleTypeImpl
 			resourceBundle, "has-a-minimum-number-of-items");
 	}
 
+	@Override
+	public boolean validate(String typeSettings) {
+		return true;
+	}
+
 }

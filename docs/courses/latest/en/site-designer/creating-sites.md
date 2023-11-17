@@ -1,10 +1,6 @@
 ---
 toc:
-- ./creating-sites/adding-the-intranet-site.md
-- ./creating-sites/adding-the-home-page.md
-- ./creating-sites/defining-the-pages-header-and-footer.md
-- ./creating-sites/desiging-the-home-page.md
-- ./creating-sites/completing-the-site-structure.md
+- ./creating-sites.md
 - ./creating-sites/creating-site-templates.md
 - ./creating-sites/creating-navigation-menus.md
 - ./creating-sites/adding-pages.md

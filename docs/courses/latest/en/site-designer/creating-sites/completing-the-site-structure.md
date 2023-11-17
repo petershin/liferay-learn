@@ -111,7 +111,7 @@ Now that the home page is in place and the master page is able to define the hea
 
 1. Change the `href` value to `"/sign-in"` and click Publish.
 
-   <!-- The change needs to be propagated to the fragment in use. Requires setting Propagate Fragment Changes Automatically in Instance Settings -> Page Fragments. Alternatively, do the manual propagation method and maybe also mention that there's a setting that can be used in testing/dev scenarios. -->
+   <!-- Requires setting Propagate Fragment Changes Automatically in Instance Settings -> Page Fragments -->
 
 1. From any page, log out, then click _Sign In_. You're redirected to the new page, where you can sign in.
 

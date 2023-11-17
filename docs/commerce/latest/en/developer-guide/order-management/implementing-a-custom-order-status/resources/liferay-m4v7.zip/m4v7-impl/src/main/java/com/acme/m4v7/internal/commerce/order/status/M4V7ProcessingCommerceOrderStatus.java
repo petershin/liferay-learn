@@ -23,7 +23,8 @@ import org.osgi.service.component.annotations.Reference;
 public class M4V7ProcessingCommerceOrderStatus implements CommerceOrderStatus {
 
 	@Override
-	public CommerceOrder doTransition(CommerceOrder commerceOrder, long userId)
+	public CommerceOrder doTransition(
+			CommerceOrder commerceOrder, long userId, boolean secure)
 		throws PortalException {
 
 		commerceOrder.setOrderStatus(

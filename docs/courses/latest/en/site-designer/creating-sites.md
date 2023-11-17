@@ -1,9 +1,8 @@
 ---
 toc:
-- ./creating-sites/importing-fragments-and-resources.md
 - ./creating-sites/adding-the-home-page.md
 - ./creating-sites/defining-the-pages-header-and-footer.md
-- ./creating-sites/designing-the-home-page.md
+- ./creating-sites/desiging-the-home-page.md
 - ./creating-sites/completing-the-site-structure.md
 - ./creating-sites/creating-site-templates.md
 - ./creating-sites/creating-navigation-menus.md

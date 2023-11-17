@@ -5,7 +5,9 @@ uuid: 3de2268a-455a-4b8f-be7b-284ea1c1d267
 
 {bdg-secondary}`Liferay 7.4+`
 
-Liferay Objects provides development capabilities in the Liferay UI. Using Objects, you can build fully integrated Liferay applications without writing any code or manually deploying modules. This process includes [creating](#creating-object-drafts) an initial draft of the object definition, [editing](#editing-object-drafts) the draft, and finally [publishing](#publishing-object-drafts) it to create the new application. Publishing an object draft creates a fully integrated Liferay application that can be managed and extended at any time via the Objects admin page.
+Liferay Objects provides development capabilities in the Liferay UI. Using Objects, you can build fully integrated Liferay applications without writing any code or manually deploying modules. This process includes [creating](#creating-object-drafts) object drafts, [editing](#editing-object-drafts) the draft, and finally [publishing](#publishing-object-drafts) it to create the new application.
+
+Here you'll learn how to create object definitions using the default Objects UI, but you can also create, manage, and extend object definitions using the Model Builder GUI. See [Using the Objects Model Builder](./using-the-objects-model-builder.md) for more information.
 
 ```{important}
 Liferay creates database tables when you publish object definitions, so you cannot use Objects with the high security database practices described in [Database Configurations](../../../installation-and-upgrades/reference/database-configurations.md#high-security-database-user-practices).
@@ -13,19 +15,19 @@ Liferay creates database tables when you publish object definitions, so you cann
 
 ## Creating Object Drafts
 
-Object drafts are application templates that store the necessary data for creating an object application. Follow these steps to create an object draft:
+Object drafts are application templates that store the necessary data for creating an object application. To create a draft object,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-1. Click the *Add* button (![Add Button](../../../images/icon-add.png)).
+1. Go to the desired [object folder](./organizing-objects-with-folders.md) and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 
-1. Provide these details for your object draft.
+1. Provide these details for the draft.
 
    **Label**: Identifies the object in the Objects admin and supported application contexts (e.g., Workflow, Display Page Templates, Forms).
 
    **Plural Label**: Determines the display name for the object application in the UI.
 
-   **Object Name**: Determines the object's `definition.name` and cannot be changed once the object is published.
+   **Object Name**: Determines the object's `definition.name` and cannot be changed after publishing.
 
    ![Enter a Label, Plural Label, and Name for the object draft.](./creating-objects/images/01.png)
 

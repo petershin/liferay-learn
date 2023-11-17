@@ -3,7 +3,7 @@ uuid: 241798cf-f23b-47c9-af0f-23d3f231a1f4
 ---
 # Completing the Site Structure
 
-Now that the home page is in place and the master page is able to define the header and footer, Clarity needs some additional pages to fill out its site structure. These pages will comprise the initial site structure:
+Now that the home page is in place and the master page is able to define the header and footer, Delectable Bonsai needs some additional pages to fill out its site structure. These pages will comprise the initial site structure:
 
 - Home
 - Search
@@ -49,9 +49,9 @@ Now that the home page is in place and the master page is able to define the hea
 
    Consider why this search worked. You added a search bar widget to the master page's header and a search page in the site. How did the search bar know to redirect you to the search page? It's all in the configuration. The friendly URL of a page named Search defaults to `/search`, and the search bar configuration has a setting called Destination Page, and it also defaults to `/search`. The search page's friendly URL must match its search bar's Destination Page setting.
 
-1. Now create the important e-commerce storefront page, where site visitors can buy Clarity's products. Go back to the pages administration page. Click the Add button (![Add](./../../images/icon-add.png)), then click _Page_. Select the _Del Bonsai_ page template and enter the name _Shop_.
+1. Now create the important e-commerce storefront page, where site visitors can buy Delectable Bonsai's products. Go back to the pages administration page. Click the Add button (![Add](./../../images/icon-add.png)), then click _Page_. Select the _Del Bonsai_ page template and enter the name _Shop_.
 
-1. In the content page editor, click _Publish_. The header and footer you defined for Clarity are now in place.
+1. In the content page editor, click _Publish_. The header and footer you defined for Delectable Bonsai are now in place.
 
    The content for this page is defined in the [Commerce Architect](../../commerce-architect.md) course.
 
@@ -75,11 +75,13 @@ Now that the home page is in place and the master page is able to define the hea
 
 1. Log out. On any page, click the user icon and choose _Sign Out_ from the drop-down menu. Currently the custom fragment controlling the logout link uses the default Liferay logout URL: `c/portal/logout`.
 
-1. Test the Sign In page. On any page, click the user icon and _Sign In_ link. Currently the custom fragment controlling the sign-in link uses the default Liferay login URL: `c/portal/login`. This activates the default Sign In widget on any page where it's invoked. However, it's currently ugly with the Clarity master page applied to it:
+1. Test the Sign In page. On any page, click the user icon and _Sign In_ link. Currently the custom fragment controlling the sign-in link uses the default Liferay login URL: `c/portal/login`. This activates the default Sign In widget on any page where it's invoked. However, it's currently ugly with the Delectable Bonsai master page applied to it:
 
    ![The default sign in widget clashes with the master page.](./completing-the-site-structure/images/07.png)
 
-1. Clarity needs a better sign in experience. Next you'll add a custom sign in page.
+   <!-- screenshot is out of date with what I have in my portal after running these steps -->
+
+1. Delectable Bonsai needs a better sign in experience. Next you'll add a custom sign in page.
 
 1. Add the Sign In page using the Blank template. Click _Add_ and the content page editor is loaded. 
 
@@ -113,19 +115,15 @@ Now that the home page is in place and the master page is able to define the hea
    <a class="user-sign-in" href="/c/portal/login">
    ```
 
-1. Replace the line so it points at the Sign In page's priendly URL, `sign-in`:
-
-   ```html
-   <a class="user-sign-in" href="${publicFriendlyURL}/sign-in">
-   ```
-
-1. Click _Publish_.
+1. Change the `href` value to `"/sign-in"` and click Publish.
 
    <!-- The change needs to be propagated to the fragment in use. Requires setting Propagate Fragment Changes Automatically in Instance Settings -> Page Fragments. Alternatively, do the manual propagation method and maybe also mention that there's a setting that can be used in testing/dev scenarios. -->
 
 1. From any page, log out, then click _Sign In_. You're redirected to the new page, where you can sign in.
 
    ![Sign in using the new page.](./completing-the-site-structure/images/10.png)
+
+   <!-- We might want to define the redirect behavior so the user ends up wherever they were-- right now we model it after Masterclass and redirect to the home page in a <script> tag. Maybe that's fine though. -->
 
 Don't be concerned with the gray background for now. The custom sign-in fragment's CSS styles the `form-box` class like this:
 
@@ -143,10 +141,10 @@ Don't be concerned with the gray background for now. The custom sign-in fragment
 
 Setting the background color to a brand color variable like this is a good practice, because it can be influenced later when styling the site. For now, the `brand-color-2` variable resolves to a gray that doesn't look right, but hard coding the color to fix it isn't a good solution, so leave it gray for now.
 
-Now Clarity's basic pages are in place. However, the navigation menu is pretty basic, and could use some enhancements. 
+Now Delectable Bonsai's basic pages are in place. However, the navigation menu is pretty basic, and could use some enhancements. 
 
 <!-- We could just configure the Careers page to be excluded from the Menu Display navigation, like we did with search and sign-in-->
 
    ![The navigation menu is okay, but it could use some enhancements.](./completing-the-site-structure/images/05.png)
 
-Clarity next needs a [new navigation menu](./creating-navigation-menus.md) so that it behaves exactly as desired.
+Design a new navigation menu so that it behaves exactly how you want.

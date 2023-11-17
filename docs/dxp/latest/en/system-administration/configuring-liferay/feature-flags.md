@@ -1,7 +1,9 @@
 ---
 uuid: ad6474da-2b03-4a47-ac04-d8be427ed0f3
 ---
-# Feature Flags
+# Beta Features and Feature Flags
+
+## Feature Flags
 
 {bdg-secondary}`DXP 7.4 U69+/GA69+`
 
@@ -75,6 +77,19 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEX__UPPERCASEX__UPPERCASEX__MINUS__N
 ```{warning}
 Never use dev features in production. Instabilities in Liferay are expected side effects of enabling dev feature flags. 
 ```
+
+## Out-of-the-Box Beta Features
+
+{bdg-secondary}`Liferay 2023.Q4+/GA102+`
+
+As described above, beta features are experimental and require careful consideration before usage. Beta features may be deprecated after a limited time period or converted into a [release feature](#release-feature-flags). You can give feedback on beta features through Liferay's [Community Slack](https://liferay.dev/chat).
+
+Some beta features are added behind a [beta feature flag](#beta-feature-flags).
+
+
+As of Liferay 2023.Q4, some beta features are included out-of-the-box, but are marked with a tag in the UI to highlight their beta status (![Beta](../../images/icon-beta-feature.png)).
+
+![Some beta features are included out-of-the-box, clearly marked in the UI.](./feature-flags/images/05.png)
 
 ## Related Topics
 

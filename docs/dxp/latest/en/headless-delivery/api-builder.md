@@ -24,7 +24,7 @@ To enable the API builder,
 
 Each custom API application can house multiple endpoints and schemas. This is similar to Liferay's out-of-the-box API applications. For example, the `headless-admin-user` API application houses endpoints for `accounts`, `organizations`, `roles`, `user-accounts`, etc. 
 
-To manage your custom API applications, navigate to _Global Menu_ (![Global Menu](..images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _API Builder_. See a list of your custom API applications. The title, URL, description, last update, and status are shown for each API application.
+To manage your custom API applications, navigate to _Global Menu_ (![Global Menu](../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _API Builder_. See a list of your custom API applications. The title, URL, description, last update, and status are shown for each API application.
 
 ![See a list of your custom API applications.](./api-builder/images/01.png)
 
@@ -56,7 +56,7 @@ To create a new endpoint, click the _Add_ (![Add icon](../images/icon-add.png)) 
 
 JSON filtering can be incorporated into the endpoint. For example, `filter=lastName eq 'Smith'` could be used to filter the endpoint for entries that contain a last name Smith. 
 
-JSON sorting can also be incorporated. For example `sort=firstName:asc` could be used to sort the entries alphabetically be first name.
+JSON sorting can also be incorporated. For example `sort=firstName:asc` could be used to sort the entries alphabetically by first name.
 
 See [API query parameters](./consuming-apis/api-query-parameters.md) to learn more about filtering and sorting.
 

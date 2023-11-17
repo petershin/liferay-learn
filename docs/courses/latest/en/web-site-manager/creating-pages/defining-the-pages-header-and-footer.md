@@ -3,21 +3,21 @@ uuid: 2300c294-4b2c-480a-8a99-a230ace39c5f
 ---
 # Defining the Pages' Header and Footer
 
-With [master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), you can define common elements for pages' headers and footers. Clarity has just one page currently, the home page. Since this was created before any master page was available, the blank master page was associated to the page automatically. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu.
+With [master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Clarity can define common elements for their pages' headers and footers. Clarity has just one page currently, the home page. Since this was created before any master page was available, the blank master page was associated to the page automatically. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu.
 
 ![The default header and footer are useful, but replaceable.](./defining-the-pages-header-and-footer/images/01.png)
 
-Because Clarity needs their own header and footer design, you'll create a master page to define the header and footer and re-use it across the entire site for all pages. 
+Clarity needs their own header and footer design, of course. At first the master page will define the header and footer for the one page and the utility pages, but Clarity will re-use it across the entire site, as more pages are added.
 
-1. Open the *Site Menu* (![Product Menu](../../images/icon-product-menu.png)), then click *Design* &rarr; *Page Templates*.
+1. Add the Master Page. Open the *Site Menu* (![Product Menu](../../images/icon-product-menu.png)), then click *Design* &rarr; *Page Templates*.
 
 1. Click *Add* (![Add](./../../images/icon-add.png)) and name the page _Clarity MP_.
 
-   The content page editor appears. By default, the page has only one element: a drop zone. Clarity's header and footer should appear above and below the drop zone. 
+   The content page editor appears. Only one element is currently on the page, a drop zone. Clarity's header and footer should appear above and below the drop zone, respectively.
 
 1. In the Fragments and Widgets (![Fragments and Widgets](./../../images/icon-add-widget.png)) menu on the sidebar, drag _clarity-header-comp_ above the drop zone, then drag _clarity-footer-comp_ below the drop zone.
 
-   You imported these fragment compositions in the previous step, [Importing Fragments and Resources](./importing-fragments-and-resources.md).
+   You imported these fragment compositions in [Importing Fragments and Resources](./importing-fragments-and-resources.md).
 
 1. Map the image fragment in the header to a logo. Open the browser (![Browser](../../images/icon-hierarchy.png)), expand the Header Container element, and continue expanding elements until you get to the middle grid module's image fragment.
 
@@ -35,12 +35,12 @@ Because Clarity needs their own header and footer design, you'll create a master
 
 1. Click _Publish Master_.
 
-   The user menu is a custom fragment: `user-nav-fragment.zip`. It uses HTML and CSS to create a menu for logged in users. For logged out users, they see a user icon and the words SIGN IN, which they can click to access the sign in page.
+   The user menu is a custom fragment: `user-nav-fragment.zip`. It uses HTML and CSS to create a menu for logged in users. For logged out users, they see a user icon and the words SIGN IN, which they can click on to access the sign in page.
 
    ![Logged in users see a menu with links to important pages.](./defining-the-pages-header-and-footer/images/03.png)
 
 <!-- replace 06 and 07 images, they show the footer with the nave menus that aren't yet created. -->
-The master page is in place. Right now the header and footer both contain menus that show the page hierarchy of the site. This will be improved in [Creating Navigation Menus](./creating-navigation-menus.md). Right now it's time to configure Liferay to use the master page on the existing Home page and in all widget pages (e.g., the existing Search page).
+The master page is in place. Right now the header and footer contain menus that are all displaying the page hierarchy of the site. This will be improved in [Creating Navigation Menus](./creating-navigation-menus.md). Right now it's time to configure Liferay to use the master page on the existing Home page and in all widget pages (e.g., the existing Search page).
 
 1. Open the master page's *Actions* menu (![Actions](../../images/icon-actions.png)) and click _Mark as Default_. Confirm that you want to use this master page as the default for all widget pages.
 
@@ -52,13 +52,13 @@ The master page is in place. Right now the header and footer both contain menus 
 
 1. Use a similar procedure to configure the default utility pages (404 and 500 error pages) to use the master page. In the Site Menu (![Product Menu](../../images/icon-product-menu.png)), click _Site Builder_ &rarr; _Pages_ &rarr; _Utility Pages_. 
 
-Your master page now defines the header and footer.
+Your master page is defining the header and footer.
 
 ![The header and footer is in place.](./defining-the-pages-header-and-footer/images/07.png)
 
 Even with a header and footer, the look and feel is not yet well polished. Links are all currently blue and do not match with Clarity's brand colors, for example. Instead of spending time manually fixing this, leave it for now. The theme CSS client extension you deploy later will remedy these visual faults. 
 
-Next: [create the rest of the site's pages](./completing-the-site-structure.md).
+Now that the master page is defined, Clarity can [fill out the site with additional pages](./completing-the-site-structure.md).
 
 ## Relevant Concepts
 

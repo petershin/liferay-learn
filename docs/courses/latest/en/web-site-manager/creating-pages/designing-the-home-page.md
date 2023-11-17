@@ -3,44 +3,64 @@ uuid: d9288065-04a0-4a6e-953c-e70a84ba3ac8
 ---
 # Designing the Home Page
 
-Clarity's current home page is a bit sparse. Right now it has just a single banner in addition to the header and footer:
+<!-- Tell a story about this process? An it-savvy marketing manager found Liferay's documentation on using fragments to build out a page, and made a nice banner that serves as a simple version 1 of the home page. But the design team wants more from the page. -->
+Clarity's home page is simple. It contains the header and footer defined in the master page, and a simple banner that links to the Shop page:
 
-![The home page's content consists of a simple banner.](./designing-the-home-page/images/01.png)
+![The home page's content consists of a simple banner linking to the Shop page.](./designing-the-home-page/images/01.png)
 
-The marketing team at Clarity wants more from the home page. They'd like to add
+The design team at Clarity wants more from the home page:
 
-1. A list of traits that highlight the uniqueness of the company.
-1. A customer testimonials slider.
+1. Highlight the uniqueness of the company.
+1. Show off some specific products.
+1. Display customer testimonials.
 
-<!--  Redundant with the intro? -->
-In Liferay you can use [Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments), which are reusable snippets of HTML, JavaScript (if necessary), and CSS to build the look and feel of the site pages. Clarity's design team doesn't have the expertise to develop the custom fragments needed to build a nifty home page, but with their designs and the development team's effort, they can use the built-in fragments and any custom fragments to compose the page with very little custom code.
+In Liferay you can use [Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments), which are reusable snippets of HTML, JavaScript (if necessary), and CSS to build the look and feel of the site pages. Clarity's design team doesn't have the expertise to develop the custom fragments needed to build a nifty home page, but they can use the built-in fragments and any custom fragments given to them by the development team to compose the home page.
 
-<!--Re-using my stuff from Delectable Bonsai for now, but will re-design with Abel's concepts later. -->
-First, add a fragment composition highlighting the uniqueness of Clarit:
+The first piece of content after the header is similar to the current banner, but instead of the large image as a background it features a series of images implemented as a slider, so that every 5 seconds a new image appears.
 
 1. Open the Home page in editing mode.
 
-1. Add the _clarity-uniqueness-composition_ to the page.
+1. Add the _home-page-slider-composition_ to the page.
+
+1. Publish the page.
+
+![The slider is in place.](./designing-the-home-page/images/02.gif)
+
+The slider images can be updated, as can the number of slides. Each slide has a title and paragraph text. These are created with web content.
+
+<!-- Should the Web Content come in with this lesson or be imported already, in ./importing-fragments-and-resources.md -->
+
+<!-- I think since you don't go over Web Content until a later module, it should have been imported. You may also want to say here that Web Content is covered later. -Rich -->
+
+After the slider comes a list of points highlighting the uniqueness of Clarity and its products. 
+
+<!-- Note: the link to the bullet style probably needs to be updated. Could use a custom fragment/resource so it's there on import. -->
+
+1. Open the Home page in editing mode.
+
+1. Add the _home-page-uniqueness-composition_ to the page.
 
 1. Publish the page.
 
 ![The uniqueness of Clarity is highlighted.](./designing-the-home-page/images/03.png)
 
-The uniqueness composition is made entirely from out-of-the-box fragments and a Clarity-supplied image, combined to provide the content and the look-and-feel Clarity wants.
-
-The last section of content shows customer testimonials. In this case the text is changed to display customer quotes.
+The last piece of content is for showing customer testimonials. In this case the image remains the same, but the text is changed to display customer quotes.
 
 1. Open the Home page in editing mode.
 
-1. Add the _clarity-testimonials-composition_ to the page.
+1. Add the _home-page-testimonials-composition_ to the page.
 
 1. Publish the page.
 
-![Customer Testimonials are displayed.](./designing-the-home-page/images/04.png)
+SCREENSHOT/GIF
+<!-- Oops, though I finished this article! This is about when I learned of the switch to Clarity -->
 
-The behavior for rotating through three customer quotes is defined in a custom fragment called _Testimonials Slider_, imported in [Importing Fragments and Resources](./importing-fragments-and-resources).
+Now Clarity's basic pages are in place and the home page is fleshed out. However, the navigation menu could use some enhancements. 
 
-Now Clarity's basic pages are in place and the home page is fleshed out. Most of the site pages have no content. Next, get started [creating content](../creating-content.md).
+   ![The navigation menu is okay, but it could use some enhancements.](./completing-the-site-structure/images/05.png)
+
+Next, create a [new main navigation menu](./creating-navigation-menus.md) for the master page's header.
+
 
 ## Relevant Concepts
 

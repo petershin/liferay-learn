@@ -106,7 +106,7 @@ Note that the hotfix must be re-applied each time the server starts up. For this
 
 You can also install hotfixes as part of the CI build process instead of directly committing them to your Git repository. This approach is ideal for large hotfixes so you can avoid keeping large files in your repository.
 
-Add a hotfix to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to automatically apply it during the build process. If you need multiple bug fixes, ask support to package them into a single hotfix.
+Add a hotfix to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to apply it automatically during the build process. If you need multiple bug fixes, ask support to package them into a single hotfix.
 
 ```{note}
 If you add this environment variable to the `LCP.json` for your `ci` service, then you must deploy the `ci` service to your **infra environment** to complete the update.

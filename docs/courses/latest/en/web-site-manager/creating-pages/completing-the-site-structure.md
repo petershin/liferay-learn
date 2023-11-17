@@ -8,6 +8,7 @@ uuid: 241798cf-f23b-47c9-af0f-23d3f231a1f4
 Now that the home page is in place and the master page is able to define the header and footer, Clarity needs some additional pages to fill out its site structure: 
 
 - Home
+- Search
 - Shop
 - Events
 - FAQ
@@ -43,6 +44,8 @@ Now that the home page is in place and the master page is able to define the hea
 1. Click _Save_ at the bottom of the settings.
 
 1. Navigate to the home page again. Enter _test_ in the search bar again and click _Enter_. The search page appears. Whether you see [results](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/search-results/search-results) and [facets](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/search-facets) depends on what content is in your system and whether you have permission to view the content.
+
+   <!-- In my most recent test I had to set the destination page, it was blank--what gives? -->
 
    ![The search results and facets are part of the search page template.](./completing-the-site-structure/images/06.png)
 
@@ -114,7 +117,7 @@ Now that the home page is in place and the master page is able to define the hea
    <a class="user-sign-in" href="/c/portal/login">
    ```
 
-1. Replace the line so it points at the Sign In page's friendly URL, `sign-in`:
+1. Replace the line so it points at the Sign In page's priendly URL, `sign-in`:
 
    ```html
    <a class="user-sign-in" href="${publicFriendlyURL}/sign-in">
@@ -150,10 +153,4 @@ Now Clarity's basic pages are in place. However, the navigation menu is pretty b
 
    ![The navigation menu is okay, but it could use some enhancements.](./completing-the-site-structure/images/05.png)
 
-Clarity next needs a [new navigation menu](./creating-navigation-menus.md) so that it behaves exactly as desired.
-
-## Relevant Concepts
-
-* [Adding Pages to a Site](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/adding-pages/adding-a-page-to-a-site)
-* [Working with Search Pages](https://learn.liferay.com/en/w/dxp/using-search/search-pages-and-widgets/working-with-search-pages/search-pages)
-* [Searching for Content](https://learn.liferay.com/en/w/dxp/using-search/getting-started/searching-for-content)
+Next, the design team at Clarity would like a new Home page design to replace the basic banner with some better looking and more robust content. Clarity next needs a [new navigation menu](./creating-navigation-menus.md) so that it behaves exactly as desired.

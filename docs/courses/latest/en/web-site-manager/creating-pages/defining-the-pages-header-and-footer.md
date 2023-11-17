@@ -3,7 +3,10 @@ uuid: 2300c294-4b2c-480a-8a99-a230ace39c5f
 ---
 # Defining the Pages' Header and Footer
 
-With [master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Clarity can define common elements for their pages' headers and footers. Clarity has just one page currently, the home page. Since this was created before any master page was available, the blank master page was associated to the page automatically. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu.
+With [master pages](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates), Clarity can define common elements for their pages' headers and footers. Clarity has just one page currently, the home page. Since this was created before any master page was available, the blank master page was associated to the page automatically. The header has the Liferay logo and label, a page-based navigation menu, the search bar widget, and the Sign In/personal menu. You can't change the header and footer on the blank master page because it's defined in the default Classic theme, so you'll have to define a new master page for Clarity. 
+<!-- I wonder if this short-changes master pages by focusing on the shared header and footer--master pages are also used for setting a theme/style book or theme css and defining the drop zone, including limiting what widgets and fragments are allowed to be added to the page-->
+
+<!-- I don't know; I almost deleted the explanatory sentence talking about the Classic theme, because I thought it would be confusing to new users. It might still be, but rather than delete it, I tried rewording it to make it more clear. Let me know what you think. We may not want to mention themes at all, since we're supposed to be showing the "new" way of doing everything. -Rich -->
 
 ![The default header and footer are useful, but replaceable.](./defining-the-pages-header-and-footer/images/01.png)
 
@@ -56,9 +59,3 @@ Your master page is defining the header and footer.
 Even with a header and footer, the look and feel is not yet well polished. Links are all currently blue and do not match with Clarity's brand colors, for example. Instead of spending time manually fixing this, leave it for now. The theme CSS client extension you deploy later will remedy these visual faults. 
 
 Now that the master page is defined, Clarity can [fill out the site with additional pages](./completing-the-site-structure.md).
-
-## Relevant Concepts
-
-* [Master Page Templates](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates)
-* [Creating a Master Page Template](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/creating-a-master-page-template)
-* [Managing Master Page Templates](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/defining-headers-and-footers/managing-master-page-templates)

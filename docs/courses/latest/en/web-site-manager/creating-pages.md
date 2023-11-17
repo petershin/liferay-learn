@@ -24,15 +24,6 @@ Once you're done with the lessons here, Clarity's public site will have this str
 
 The Home and Search pages will be usable and have content, while most of the others will be populated during the Content Management module. The Shop page will be blank until the Commerce Architect course. Begin by repurposing the default Home page of the site.
 
-## Creating Pages
-## Defining Common Page Elements/Creating Master Pages
-## Navigating the Site/Site Navigation Menus
-## Configuring a Search Page
-## Designing Pages with Fragments
-
-<!-- You haven't explained what a fragment is or what students will do with it. That needs to go into the intro article. -Rich -->
-<!-- Sounds good to me. Students should also understand why that is: because fragments are HTML, CSS, and JavaScript, and you explained this in the intro. -Rich -->
-
 <!-- Should we import the commerce B2C solution so the Shop Page is good? We probably do need some products if we want some sort of better product slider on the home page, which only makes sense. -->
 
 <!-- Yes, by the end of the course, or maybe by the start of the next one you can import this site as well as the Shop page. --Rich -->

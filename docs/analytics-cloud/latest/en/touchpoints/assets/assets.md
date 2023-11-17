@@ -21,5 +21,3 @@ Metrics for these Assets are currently reported in Analytics Cloud:
 ![Each Asset has its own table.](assets/images/01.png)
 
 Clicking an individual asset leads to an overview page showing analytics data for the asset. Clicking on the Known Individuals tab shows a list of known visitors who have interacted with the asset.
-
-It is also possible to display related assets when creating a new entry. Related Assets are assets connected to other assets, even if they don’t share any tags and aren’t in the same category. To relate an asset to the entry, expand the Related Assets section and click Select to select an asset and link it to the entry.

@@ -9,11 +9,11 @@ Clarity's navigation menu is getting cluttered, as it shows all the pages by def
 
 To simplify the header navigation menu, Clarity wants just three items to appear in the navigation menu: Shop (page), Blog (page), and More (sub-menu with additional page links).
 
-In addition, navigation menus can add dynamic items to the footer. Clarity's footer has these menus to define: Shop, Clarity, and Resources.
+In addition, navigation menus can add dynamic items to the footer. Clarity's footer has these menus to define: SHOP, CLARITY, and RESOURCES.
 
 ![The footer menus are defined by the Navigation Menus application.](./creating-navigation-menus/images/06.png)
 
-The Shop menu is blank for now, as it's configured in [Commerce Architect](../../commerce-architect.md).
+The SHOP menu will display links to product categories, but it's blank now. See [Commerce Architect](../../commerce-architect.md).
 
 First create the navigation menu:
 
@@ -95,7 +95,7 @@ In addition to the header navigation, Clarity needs the menus for the footer: *S
 
    ![The Resources menu links to the Blog and Search pages.](./creating-navigation-menus/images/09.png)
 
-The Shop menu displays links to product categories. Leave it blank now, as it's created in [Commerce Architect](../../commerce-architect.md).
+The SHOP menu will display links to product categories. Leave it blank now, as it will be created in [Commerce Architect](../../commerce-architect.md).
 
 Now that the menus are created, add them to the footer.
 

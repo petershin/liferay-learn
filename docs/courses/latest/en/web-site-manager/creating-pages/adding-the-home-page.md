@@ -9,19 +9,20 @@ Right now, browsing to <http://localhost:8080> still shows the default site. In 
 
 Clarity needs its own home page. Page creation and management is the work of a site administrator, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Users assigned to the role and who are members of the site can act as an administrator for the site. The setup script and the steps completed in the [Liferay Administrator](../../liferay-administrator.md) course have your Liferay instance pre-populated with just such a user, Preston Palmer.
 
+<!-- The import should be a step in the beginning of the first module. -Rich -->
+
 1. Log in as the site administrator, Preston Palmer: `preston@clarityvisionsolutions.com`, password `test`.
    <!--This password is a guess. Even if it's right, must make sure that it stays correct. -->
 
    <!-- I don't see this user in the [previous course](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users); where was he added? Is he in Makoto's site initializer? -Rich -->
 
-1. Go to the Home page and click *Edit* (![Edit](../../images/icon-edit.png)) in the administrative header.
+1. Go to the home page and click *Edit* (![Edit](../../images/icon-edit.png)) in the administrative header.
 
    The content page editor appears. This is where you add content, functionality, and structure to the page.
 
 1. Open the browser (![Browser](../../images/icon-hierarchy.png)) and expand all the elements to get a snapshot of the page's structure: 
 
    ![The default home page has some content defined already.](./adding-the-home-page/images/02.png)
-
 
 1. Click the outermost container's *Actions* menu (![Actions](../../images/icon-actions.png)), then click _Delete_.
 
@@ -41,11 +42,9 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
    ![These elements were added with the container fragment and the banner fragment.](./adding-the-home-page/images/03.png)
 
-
 1. Rename the Banner's top level container. In the Browser sidebar, open the *Actions* menu (![Actions](../../images/icon-actions.png)) and click _Rename_.
 
    ![Rename the banner's container for readability.](./adding-the-home-page/images/04.png)
-
 
 1. Enter _Banner Container_.
 

@@ -58,7 +58,14 @@ While logged in as the site administrator, configure the existing home page for 
    The value for each spacer setting is defined by the Style Book.
    <!-- Is it the style book, the theme, the theme CSS CX? -->
 
-1. Set and image as the banner's background. Each container element's configuration lets you configure the background. Click _Banner Container_ in the browser sidebar.
+1. Click the _Publish_ Button.
+
+1. Import an image for the banner's background. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Content & Data &rarr; Documents and Media.
+   <!-- Breaks the flow--import this first or have it already imported at the beginning of the module-->
+
+1. Click the Add button (![Add](./../../images/icon-add.png)) and choose _File Upload_. Select the `banner-image.png` file and publish it.
+
+1. Back in the Home page's editor, set the image as the banner's background. Each container element's configuration lets you configure the background. Click _Banner Container_ in the browser sidebar.
 
 1. Open the _Styles_ menu in the right sidebar, and set the Background Image to `banner-image.png`.
 

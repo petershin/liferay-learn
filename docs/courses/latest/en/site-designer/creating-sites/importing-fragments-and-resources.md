@@ -42,16 +42,10 @@ Delectable Bonsai needs fragments and images in the site. With these the site cr
    - `sign-in-fragment.zip`
    - `user-nav-fragment.zip`
 
-   There are fragment compositions and custom fragments in this folder.
 
-   - Custom fragments are fragments that you develop, if none of the [out-of-the-box fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) suit your needs. Often you can start by [copying an existing fragment](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/duplicating-fragments) that contains some of the HTML, CSS, or JS you'll need to create your own fragment.
-   - [Fragment compositions](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) are reusable fragment groups you've added to the content page editor and saved for repeated use.
-
-Next, import some images.
+Now that you've imported the fragments, you can use them to create the Delectable Bonsai site.
 
 ## Importing the Images
-
-<!-- Documents and Media versus fragment resources? -->
 
 1. Open the Site menu (![Site Menu](../../images/icon-product-menu.png)), expand *Content & Data*, and click *Documents and Media*.
 

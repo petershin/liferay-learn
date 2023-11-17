@@ -9,9 +9,34 @@ With [Liferay's master pages](https://learn.liferay.com/en/w/dxp/site-building/c
 
 Delectable Bonsai needs their own design, of course. At first the master page will define the header and footer for the one page and the utility pages, but Delectable Bonsai will re-use it across the entire site, as more pages are added.
 
+1. Import some logo images. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Content & Data &rarr; Documents and Media.
+
+1. Click *Add* (![Add](./../../images/icon-add.png)) &rarr; Multiple Files.
+
+1. Choose `DB Green - 1w.svg` and `DB Green - 3.svg`, and click _Publish_. <!-- I'm getting errors in the log about unsupported image types--should I not use SVG files? -->
+
+   ![The logos are imported and ready to use.](./defining-the-pages-header-and-footer/images/02.png)
+
+1. Import one custom fragment and two fragment compositions. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Design &rarr; Fragments.
+
+   - Custom fragments are fragments that you develop, if none of the [out-of-the-box fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) suit your needs. Often you can start by [copying an existing fragment](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/duplicating-fragments) that contains some of the HTML, CSS, or JS you'll need to create your own fragment.
+   - [Fragment compositions](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) are reusable fragment groups you've added to the content page editor and saved for repeated use.
+
+1. Open the Actions menu (![Actions](../../images/icon-actions.png)) and click _Import_.
+
+1. Choose `user-nav-menu.zip`.
+
+   This custom fragment uses HTML and CSS to create a menu for logged in users. For logged out users, they see a user icon and the words SIGN IN, which they can click on to access the sign in page.
+
+   ![Logged in users see a menu with links to important pages.](./defining-the-pages-header-and-footer/images/03.png)
+
+1. Now import `header-composition.zip` and `footer-composition.zip`.
+
+   The resources and the fragments needed for the site's header and footer are now in place.
+
 1. Add the Master Page. Open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click Design &rarr; Page Templates.
 
-1. Click the Add button (![Add](./../../images/icon-add.png)) and name the page _Del Bonsai MP_.
+1. Click *Add* (![Add](./../../images/icon-add.png)) and name the page _Del Bonsai MP_.
 
    The content page editor appears. Only one element is currently on the page, a drop zone. Your header and footer appear above and below the drop zone, respectively.
 
@@ -32,10 +57,6 @@ Delectable Bonsai needs their own design, of course. At first the master page wi
    ![Set the image to use in the footer.](./defining-the-pages-header-and-footer/images/06.png)
 
 1. Click _Publish Master_.
-
-   The user menu is a custom fragment: `user-nav-fragment.zip`. It uses HTML and CSS to create a menu for logged in users. For logged out users, they see a user icon and the words SIGN IN, which they can click on to access the sign in page.
-
-   ![Logged in users see a menu with links to important pages.](./defining-the-pages-header-and-footer/images/03.png)
 
 The master page is in place, so it's time to configure Liferay to use it on the existing Home page and in all widget pages (e.g., the existing Search page).
 

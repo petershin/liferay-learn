@@ -4,7 +4,6 @@ toc:
 - ./liferay-administrator.md
 - ./application-development.md
 - ./commerce-architect.md
-- ./site-designer.md
 - ./selling-liferay.md
 uuid: 79dff06d-5aef-4fba-bf17-edbb16e2ed5a
 ---

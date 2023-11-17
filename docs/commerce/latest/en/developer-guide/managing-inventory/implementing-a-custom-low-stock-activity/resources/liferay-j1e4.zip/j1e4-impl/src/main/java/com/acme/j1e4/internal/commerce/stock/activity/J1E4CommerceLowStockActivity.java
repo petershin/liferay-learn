@@ -8,7 +8,9 @@ import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.util.ResourceBundleUtil;
 
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 import java.util.ResourceBundle;
 
 import org.osgi.service.component.annotations.Component;
@@ -41,6 +43,17 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
 
 		return LanguageUtil.get(
 			resourceBundle, "j1e4-commerce-low-stock-activity");
+	}
+
+	@Override
+	public Map<Locale, String> getLabelMap() {
+		Map<Locale, String> labelMap = new HashMap<>();
+
+		for (Locale locale : LanguageUtil.getAvailableLocales()) {
+			labelMap.put(locale, getLabel(locale));
+		}
+
+		return labelMap;
 	}
 
 	private static final Log _log = LogFactoryUtil.getLog(

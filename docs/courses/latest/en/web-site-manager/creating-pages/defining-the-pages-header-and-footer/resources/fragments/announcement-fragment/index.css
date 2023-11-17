@@ -5,14 +5,26 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px 40px;
+	transition: height 0.3s ease, visibility 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+}
+
+.announcement-banner-hidden {
+	height: 0;
+	visibility: hidden;
+	padding: 0;
+}
+
+.announcement-banner-visible {
+	height: 52px;
+	visibility: visible;
+	padding: 10px, 40px, 10px, 40px;
 }
 
 .announcement-banner-text{
 	color: #ffffff;
-  	font-weight: var(--font-weight-semi-bold);
+  font-weight: var(--font-weight-semi-bold);
 	flex-grow: 1;
-	margin-bottom: 0;
+	transform: translateY(26%)
 }
 
 .announcement-banner a,
@@ -22,7 +34,7 @@
     color: var(--color-action-primary-inverted);
     font-weight: var(--font-weight-bold);
     font-size: 14px;
-	cursor: pointer;
+		cursor: pointer;
 }
 
 .announcement-banner-close-button {

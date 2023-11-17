@@ -8,7 +8,7 @@ Right now, browsing to <http://localhost:8080> loads the default site and the de
 ![The default home page has a header, footer, and some Welcome to Liferay content.](./adding-the-home-page/images/01.png)
 
 <!-- Re-work this for default home page -->
-Delectable Bonsai needs its own home page. Page creation and management is part of the site administration activity, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Any user assigned to the role and a member of the site can act as an administrator in the site. The setup script and the steps completed in the [Liferay Administrator](../../liferay-administrator.md) lessons have your Liferay instance pre-populated with just such a user, Preston Palmer.
+Delectable Bonsai needs its own home page. Page creation and management is part of the site administration activity, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Any user assigned to the role and a member of the site can act as an administrator in the site. The setup script and the steps completed in the [Liferay Administrator](../../liferay-administrator.md) lessons have your Liferay instance pre-populated with just such a user, NAME NAME.
 
 <!-- NOTE: must iron this site administrative user out. -->
 

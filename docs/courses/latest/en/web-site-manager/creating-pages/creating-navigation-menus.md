@@ -41,9 +41,9 @@ The main pages are in place. Next you need a sub-menu called More, with links to
 
 1. Click _Add Child_ &rarr; _Page_.
 
-1. Add About Us and Contact Us to the sub-menu.
+1. Add About Us, Events, and FAQ to the sub-menu.
 
-   ![About Us and Contact Us are in the sub-menu.](./creating-navigation-menus/images/03.png)
+   ![About Us, Events, and FAQ are in the sub-menu.](./creating-navigation-menus/images/03.png)
 
    The menu is ready to use.
 

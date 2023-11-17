@@ -16,12 +16,12 @@ Now that Clarity's public site settings are configured, it's time to add and con
 Once you're done with the lessons here, Clarity's public site will have this structure:
 
 - Home
-- About Us
-   - Careers
 - Search
 - Shop
-- Blog
-- Contact Us
+- Events
+- FAQ
+- About Us
+   - Careers
 
 The Home and Search pages will be usable and have content, while most of the others will be populated during the Content Management module. The Shop page will be blank until the Commerce Architect course. Begin by repurposing the default Home page of the site, then move into creating and configuring the site's pages.
 

@@ -3,7 +3,7 @@ uuid: 241798cf-f23b-47c9-af0f-23d3f231a1f4
 ---
 # Completing the Site Structure
 
-Now that the home page is in place and the master page is able to define the header and footer, Delectable Bonsai needs some additional pages to fill out its site structure. These pages will comprise the initial site structure:
+Now that the home page is in place and the master page is able to define the header and footer, Delectable Bonsai needs some additional pages to fill out its site structure. Once completed these pages will be in the site:
 
 - Home
 - Search
@@ -13,7 +13,7 @@ Now that the home page is in place and the master page is able to define the hea
 - About Us
 - Careers
 
-1. While logged in with the site administrator, NAME NAME, open the Site menu (![Product Menu](../../images/icon-product-menu.png)), then click _Site Builder_ &rarr; _Pages_.
+1. While logged in with the site administrator, NAME NAME, open the Site Menu (![Product Menu](../../images/icon-product-menu.png)), then click _Site Builder_ &rarr; _Pages_.
 
    ![The Home and Search page are already in the default site.](./completing-the-site-structure/images/02.png)
 
@@ -21,7 +21,7 @@ Now that the home page is in place and the master page is able to define the hea
 
 1. Open the Actions menu next to the Search page, then click _Delete_. Confirm the deletion when the warning menu appears.
 
-1. Test search after deleting the page. Navigate to the home page and enter _test_ in the search bar.
+1. Now navigate to the home page and enter _test_ in the search bar.
 
    Nothing happens. You deleted the search page, and now the search bar can't function properly.
 
@@ -35,7 +35,7 @@ Now that the home page is in place and the master page is able to define the hea
 
    Leave the Inherit Changes setting enabled, so that any changes made to the template will be reflected on the search page. 
 
-   The friendly URL can be changed, but leave it as `/search`. The Search Bar widget is configured to use this friendly URL as its destination page, redirecting the user to the search page after a search is executed.
+   The friendly URL can be changed, but leave it as `/search`. The Search Bar widget should be configured to match this friendly URL, so that it can redirect the user to the search page after entering search terms.
 
    ![Configure the search page.](./completing-the-site-structure/images/03.png)
 
@@ -47,7 +47,7 @@ Now that the home page is in place and the master page is able to define the hea
 
    Consider why this search worked. You added a search bar widget to the master page's header and a search page in the site. How did the search bar know to redirect you to the search page? It's all in the configuration. The friendly URL of a page named Search defaults to `/search`, and the search bar configuration has a setting called Destination Page, and it also defaults to `/search`. The search page's friendly URL must match its search bar's Destination Page setting.
 
-1. Now create the important e-commerce storefront page, where site visitors can buy Delectable Bonsai's products. Go back to the pages administration page. Click the Add button (![Add](./../../images/icon-add.png)), then click _Page_. Click the _Blank_ page template and enter the name _Shop_.
+1. Now create the important Shop page, where site visitors can buy Delectable Bonsai's products. Go back to the pages administration page. Click the Add button (![Add](./../../images/icon-add.png)), then click _Page_. Click the _Blank_ page template and enter the name _Shop_.
 
 1. In the content page editor, open the Page Design Options sidebar menu (![Page Design Options](../../images/icon-format.png)) and select _Del Bonsai MP_, then publish the page. The header and footer you defined for Delectable Bonsai are now in place.
 
@@ -68,8 +68,7 @@ Now that the home page is in place and the master page is able to define the hea
    Now go to the Home page and observe that these pages are automatically added to the navigation menu provided by the site header's Menu Display widget:
 
    ![The navigation menu displays all the pages except Search.](./completing-the-site-structure/images/05.png)
-
-   Recall that you excluded the search page from appearing in the page hierarchy menu of the Menu Display widget. That's why it doesn't appear in the navigation.
+   Recall that you excluded the search page from appearing the page hierarchy menu of the Menu Display widget. That's why it doesn't appear in the navigation.
 
 1. Log out. On any page, click the user icon and choose _Sign Out_ from the drop-down menu. Currently the custom fragment controlling the logout link uses the default Liferay logout URL: `c/portal/logout`.
 
@@ -81,7 +80,7 @@ Now that the home page is in place and the master page is able to define the hea
 
 1. Add the Sign In page as you added the previous pages, but don't configure it to use the master page. Instead, once you've clicked Add and the content page editor is loaded, open the Options menu (![Options](../../images/icon-options.png)) in the administrative bar at the top of the page, and click _Configure_.
 
-   ![Configure the sign-in page.](./completing-the-site-structure/images/08.png)
+   ![Configure the page.](./completing-the-site-structure/images/08.png)
 
 1. On the General page setting screen, once again enable _Hidden from Menu Display_ so the sign in page does not appear in the Menu Display widget's navigation menu. Note the friendly URL, `/sign-in`, and click _Save_.
 
@@ -93,7 +92,7 @@ Now that the home page is in place and the master page is able to define the hea
 
 1. Back on the content page editor, add the imported fragment called Sign In.
 
-1. In the Sign In fragment's Styles configuration, set the background image to use the `sign_in` image from Documents and Media. 
+1. In the Sign In fragment's Styles configuration, set the background image to use the `sign_in` image from Document and Media. 
 
 1. Set the logo to use the `DB Green - 1W` image. 
 
@@ -101,9 +100,9 @@ Now that the home page is in place and the master page is able to define the hea
 
    ![The sign in page is in place.](./completing-the-site-structure/images/09.png)
 
-1. Now edit the custom user navigation fragment to point to the new login page instead of `c/portal/login`. Go to Site menu (![Product Menu](../../images/icon-product-menu.png)) &rarr; Design &rarr; Fragments. 
+   <!-- Also configure it: need the background image to be imported so it can be set, need to specify the logo image. -->
 
-1. Open the `user-nav_Dropdown` fragment and find the line setting the login URL:
+1. Now edit the custom user navigation fragment to point to the new login page instead of `c/portal/login`. Open the `user-nav_Dropdown` fragment and find the line setting the login URL:
 
    ```html
    <a class="user-sign-in" href="/c/portal/login">
@@ -133,7 +132,7 @@ Don't be concerned with the gray background for now. The custom sign-in fragment
 }
 ```
 
-Setting the background color to a brand color variable like this is a good practice, because it can be influenced later when styling the site. For now, the `brand-color-2` variable resolves to a gray that doesn't look right, but hard coding the color to fix it isn't a good solution, so leave it gray for now.
+Setting the background color to a brand color variable like this is convenient, because it can be influenced later when styling the site. For now, the `brand-color-2` variable resolves to a gray that doesn't look right, but hard coding the color to fix it isn't a good solution, so leave it gray for now.
 
 Now Delectable Bonsai's basic pages are in place. However, the navigation menu is pretty basic, and could use some enhancements. 
 

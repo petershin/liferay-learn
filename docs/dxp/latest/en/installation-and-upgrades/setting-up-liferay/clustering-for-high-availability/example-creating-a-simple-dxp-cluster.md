@@ -25,10 +25,10 @@ Should we remove this diagram since it includes a load balancer? -->
 
 Here are the main steps:
 
-1. [Start a Database Server](#prepare-a-database-server)
-1. [Start a File Store Server](#prepare-a-file-store-server)
-1. [Start a Search Engine Server](#prepare-a-search-engine-server)
-1. [Configure the Search Engine for Each Node](#configure-the-search-engine-for-each-node)
+1. [Start a Database Server](#start-a-database-server)
+1. [Start a File Store Server](#start-a-file-store-server)
+1. [Start a Search Engine Server](#start-a-search-engine-server)
+1. [Configure the Search Engine for Each Node](#configure-the-search-engine-server-for-each-node)
 1. [Start the DXP Cluster](#start-the-dxp-cluster)
 1. [Test the DXP Cluster](#test-the-dxp-cluster)
 

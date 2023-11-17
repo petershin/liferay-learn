@@ -25,7 +25,7 @@ While logged in as the site administrator, create the home page:
 
 1. Choose the _Blank_ template, and name the page _Home_.
 
-   You created a content page by choosing the blank template. Content pages are the default in Liferay, as they offer the most page building features. You can add fragments and widgets to a content page.
+   You've created a content page by choosing the blank template. Content pages are the default in Liferay, offering the most page building features, such as the fragments toolbox.
 
 1. Click _Add_.
 

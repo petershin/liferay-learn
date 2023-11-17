@@ -58,7 +58,6 @@ Clarity needs its own home page. Page creation and management is the work of a s
 
 1. Open the _Styles_ menu in the right sidebar, and set the *Background Image* to `clarity-banner-image`.
 
-<!-- The text is white, so it doesn't appear with this very light image background. Need to change this and verify it will look good with the dialect/clarity style book combo too. -->
 1. Change the text on the page by double clicking the element to edit:
 
    - **Heading:** _See Well, Look Good_

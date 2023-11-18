@@ -1,3 +1,6 @@
+---
+uuid: 755f1298-6046-44b1-83ce-5683121b40fe
+---
 # Using the Objects Model Builder
 
 Liferay Objects provides the Model Builder GUI for designing complex object structures. This graphical tool displays each object definition as a card and visualizes relationships between object definitions. With it, you can create, manage, and extend data models in the Objects application and quickly configure definitions, fields, and relationships.

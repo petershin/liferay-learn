@@ -1,3 +1,6 @@
+---
+uuid: 0b20f635-3b4f-40ff-8974-e6c72f408be9
+---
 # Organizing Objects with Folders
 
 By default, object definitions are grouped in the Uncategorized folder, but you can add object folders to organize data models and manage access to definitions.

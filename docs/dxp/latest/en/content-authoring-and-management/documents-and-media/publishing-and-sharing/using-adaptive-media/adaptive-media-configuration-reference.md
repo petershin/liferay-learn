@@ -3,6 +3,8 @@ uuid: aa109d64-1aae-4b1e-a0f9-f71442424b41
 ---
 # Adaptive Media Configuration Reference
 
+{bdg-secondary}`Liferay 7.3 U28+/GA28+ and 7.4 U78+/GA78+`
+
 With Adaptive Media, you can configure supported media types, determine the resolutions used for previews and thumbnails in the document library, and more. To access these settings,
 
 1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *System Settings*.

@@ -3,6 +3,8 @@ uuid: 5aad8656-6334-4204-84fb-9b86f995ea61
 ---
 # Knowledge Base Display Widget
 
+{bdg-secondary}`Liferay 7.4 U72+/GA72+`
+
 You can use the Knowledge Base Display widget to display published articles in site pages with built-in navigation, comments, ratings, and social media links. By default, this widget displays articles from the Knowledge Base’s Home folder. You can customize which articles are included.
 
 You can find the widget under *Content Management* in the Fragments and Widgets side panel.

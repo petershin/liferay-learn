@@ -3,6 +3,8 @@ uuid: c563bcd7-0d0a-423a-83f1-d9163601db3c
 ---
 # Knowledge Base Templates
 
+{bdg-secondary}`Liferay 7.4 U72+/GA72+`
+
 Templates give authors a starting point with default headers or other content for articles. Templates help foster consistent formatting and content organization for articles. You can create and manage templates in the Knowledge Base application.
 
 ![Create and manage templates in the Knowledge Base application.](./knowledge-base-templates/images/01.png)

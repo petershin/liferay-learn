@@ -3,6 +3,8 @@ uuid: 3b4fac54-c4f1-4bc3-9a8e-af19101daf0e
 ---
 # Creating Knowledge Base Articles
 
+{bdg-secondary}`Liferay 7.4 U72+/GA72+`
+
 Knowledge Base provides tools for creating and managing a repository of articles. You can create articles using the application's WYSIWYG editor or by importing them as Markdown files (`.markdown`, `.md`) in a ZIP archive.
 
 ![Create and manage a repository of articles.](./creating-knowledge-base-articles/images/01.png)

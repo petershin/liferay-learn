@@ -3,6 +3,8 @@ uuid: 24c2f691-1998-4f23-acc3-99ae1c1959c2
 ---
 # Responding to Knowledge Base Feedback
 
+{bdg-secondary}`Liferay 7.4 U72+/GA72+`
+
 You can view and manage article feedback in the Knowledge Base application. To do this,
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-menu.png)) and go to *Content and Data* &rarr; *Knowledge Base*.

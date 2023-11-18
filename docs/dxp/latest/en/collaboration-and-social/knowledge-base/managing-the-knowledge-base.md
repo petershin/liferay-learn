@@ -3,6 +3,8 @@ uuid: d1a3b011-1eb7-4a09-a379-847e3fdbaf69
 ---
 # Managing the Knowledge Base
 
+{bdg-secondary}`Liferay 7.4 U72+/GA72+`
+
 With Knowledge Base, you can quickly draft product documentation and organize it into hierarchies that end users can navigate. Add folders and nested articles to create the desired structure and order. Additionally, manage article and folder permissions to ensure only intended users can access your content.
 
 ![Add folders and nested articles to create the desired structure and order.](./managing-the-knowledge-base/images/01.png)

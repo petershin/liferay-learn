@@ -3,6 +3,8 @@ uuid: 56f75c04-f12d-4ca2-82b6-b94e9c201e06
 ---
 # Importing Knowledge Base Articles
 
+{bdg-secondary}`Liferay 7.4 U72+/GA72+`
+
 You can draft Knowledge Base articles as [Markdown](https://www.markdownguide.org/) files and import them to Liferay. To do this, you must ensure each Markdown file is properly formatted and packaged in a ZIP archive. Imported articles are automatically converted to HTML and appear in the Knowledge Base UI.
 
 This way you can use external tools to draft, host, and collaborate on articles before publishing them to Liferay.

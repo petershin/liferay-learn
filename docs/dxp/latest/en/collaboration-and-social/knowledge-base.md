@@ -28,6 +28,8 @@ knowledge-base/knowledge-base-system-settings.md
 knowledge-base/developer-guide.md
 ```
 
+{bdg-secondary}`Liferay 7.4 U72+/GA72+`
+
 Knowledge Base provides tools for creating and managing product documentation. With it, you can write articles in the Liferay UI or import existing Markdown files. Additionally, you can create [templates](./knowledge-base/knowledge-base-templates.md) to standardize article structures and content. Enabling [workflow](../process-automation/workflow/introduction-to-workflow.md) ensures articles go through an approval process before publishing.
 
 ![Create and manage product documentation.](./knowledge-base/images/01.png)

@@ -36,7 +36,7 @@ Application permissions grant access to the published object itself and do not i
 
 ## Resource Permissions
 
-Resource permissions grant access to view and act on resources in the object application. Some of these permissions [relate to creating object entries](#creating-entries), while others are for [performing actions on existing entries](#acting-on-existing-entries) (e.g., edit, delete).
+Resource permissions grant access to view, create, and act on entries for custom object definitions. Some of these permissions [relate to creating object entries](#creating-entries), while others are for [performing actions on existing entries](#acting-on-existing-entries) (e.g., edit, delete).
 
 ### Creating Entries
 

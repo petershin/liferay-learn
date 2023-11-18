@@ -23,13 +23,13 @@ Knowledge Base provides tools for creating and managing a repository of articles
 
    ![Enter content for the article.](./creating-knowledge-base-articles/images/03.png)
 
-1. (Optional) Add attachments to the article. <!--Q: Are the supported file types determined by document library configurations?-->
+1. (Optional) Add attachments to the article.
 
 1. (Optional) Select a [display page template](../../site-building/displaying-content/using-display-page-templates.md) for the article. This configuration overrides the default display page template for Knowledge Base articles.
 
 1. (Optional) Add [tags](../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags.md) or [categories](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) to the article to improve visibility and organization.
 
-1. (Optional) Set expiration and review dates. By default, articles are set to never expire or require review. See [Managing the Knowledge Base](./managing-the-knowledge-base.md) for more information. <!--OR SETTINGS ARTICLE?-->
+1. (Optional) Set expiration and review dates. By default, articles are set to never expire or require review. See [Managing the Knowledge Base](./managing-the-knowledge-base.md) for more information.
 
 1. (Optional) Relate assets to the article.
 

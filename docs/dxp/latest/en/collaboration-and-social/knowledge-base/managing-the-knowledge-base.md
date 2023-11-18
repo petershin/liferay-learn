@@ -23,8 +23,6 @@ With Knowledge Base, you can quickly draft product documentation and organize it
 
 ## Managing Folders and Articles
 
-<!-- Folders appear alphabetically, while articles can be reordered. -->
-
 After adding folders and articles, you can drag and drop them in the left side panel to organize and order your documentation. You can also click the Actions button (![Actions Button](../../images/icon-actions.png)) to access additional management options.
 
 ![Drag and drop folders and articles to organize and order your documentation.](./managing-the-knowledge-base/images/03.png)
@@ -63,7 +61,7 @@ Additionally, you can click the *Info* button (![Info Button](../../images/icon-
 
 **Subscribe** (![Subscribe](../../images/icon-bell.png)): Sign up to receive updates to the article.
 
-**History** (![History](../../images/icon-history-calendar.png)): View and compare different versions of the article.
+**History** (![History](../../images/icon-date-time.png)): View and compare different versions of the article.
 
 **Print** (![Print](../../images/icon-print.png)): Open a dialogue to print the article.
 
@@ -99,7 +97,7 @@ Reaching the review date does not affect the article. It only reminds users to r
 
 1. In the Service tab under System Scope, enter a check interval. This value determines the number of minutes between checks. By default, the value is 15 minutes.
 
-1. Determine the number of weeks before expiration to send notification. Articles within this range are assigned an "Expiring Soon" label in Knowledge Base. The default value is 1 week.
+1. Determine the number of weeks before expiration to send notification. Articles within this range are assigned an Expiring Soon label. The default value is 1 week.
 
 1. Click *Save*.
 

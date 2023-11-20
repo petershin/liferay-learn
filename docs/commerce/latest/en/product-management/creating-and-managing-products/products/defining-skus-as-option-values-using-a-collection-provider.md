@@ -3,7 +3,7 @@ uuid: 36f5e761-fae3-4504-8cd1-ecd93524aa1f
 ---
 # Defining SKUs as Option Values using a Collection Provider
 
-<!-- Yet to finalize the version -->
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
 
 You can specify one or more categories as a collection provider when configuring an option on a product. You can use this to define your own custom logic, linking a group of SKUs as option values for a product. 
 

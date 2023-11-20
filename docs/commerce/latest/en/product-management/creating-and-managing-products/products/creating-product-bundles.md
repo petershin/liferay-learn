@@ -85,6 +85,8 @@ Follow these steps to create a product bundle:
 
 ## Editing Bundles from the Mini Cart
 
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
+
 Once added to the mini cart, you can always edit a product bundle before checking out. 
 
 1. Add the product bundle to your cart.

@@ -3,7 +3,7 @@ uuid: 86a0350d-04cd-467a-a01e-c916cacf6835
 ---
 # Units of Measure (UOM)
 
-<!-- Yet to finalize the version -->
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
 
 Businesses can have different ways of maintaining and selling their stock. This is commonly known as ***Units of Measure*** (UOM). Some of the commonly used units of measure are:
 

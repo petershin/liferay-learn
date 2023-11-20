@@ -30,7 +30,7 @@ Follow these steps to deploy the Liferay service with your customizations:
 1. From the command-line in the `liferay/` directory, run:
 
    ```bash
-   gw clean createDockerfile deploy
+   ./gradlew clean createDockerfile deploy
    ```
 
   This builds all of your customizations, and arranges them into a `build/liferay/` subfolder. It also adds a `Dockerfile` specifically for a customized version of DXP.

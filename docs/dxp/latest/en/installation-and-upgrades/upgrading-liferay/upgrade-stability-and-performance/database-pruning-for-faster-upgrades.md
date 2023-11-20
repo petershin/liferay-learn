@@ -118,7 +118,11 @@ Check these object types:
 * **Roles**: Remove any Roles you don't need. Deleting them also deletes
     related `ResourceBlockPermission` and `ResourcePermission` objects.
 
-* **Users:** Remove Users that are inactive and no longer needed.
+* **Users:** Remove users that are inactive and no longer needed.
+
+```{warning}
+Note that the deletion of a user may affect some content on your site if any dependencies exist. For example, deleting a user who had created various site pages might cause some site errors. The site content may need to be recreated by an existing user to correct these errors. [Anonymizing users](../../../users-and-permissions/managing-user-data/sanitizing-user-data.md) is an alternative option to deleting a user.
+```
 
 * **Vocabularies**: Remove any unused vocabularies. Note that removing a vocabulary also removes its categories.
 

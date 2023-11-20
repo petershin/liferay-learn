@@ -60,6 +60,10 @@ Once all data is reviewed, deleted, edited, and/or anonymized as appropriate, de
 
 Now the User's data is anonymized or deleted, and the User is also deleted.
 
+```{warning}
+The user management tool assists you in anonymizing or deleting user generated content. However, some dependencies may still exist that can affect your site. For example, deleting a user who had created various site pages might cause some site errors. The site content may need to be recreated by an existing user to correct these errors. Anonymizing users is an alternative option to deleting a user.
+```
+
 ## Manual Anonymization
 
 Anonymizing just the User's identification fields and deleting the User is often not enough. For example, if a User named John Smith inputs personally identifiable information into a form, the text input fields are not anonymized by the UAD framework. 

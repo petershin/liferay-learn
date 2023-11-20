@@ -61,7 +61,7 @@ Once all data is reviewed, deleted, edited, and/or anonymized as appropriate, de
 Now the User's data is anonymized or deleted, and the User is also deleted.
 
 ```{warning}
-The user management tool assists you in anonymizing or deleting user generated content. However, some dependencies may still exist that can affect your site. For example, deleting a user who had created various site pages might cause some site errors. The site content may need to be recreated by an existing user to correct these errors. Anonymizing users is an alternative option to deleting a user.
+The user management tool assists you in anonymizing or deleting user generated content. However, some dependencies may still persist after deletion that can affect your site. For example, deleting a user who had created various site pages might cause some site errors. The site content may need to be recreated by an existing user to correct these errors. Anonymizing users is an alternative option to deleting users.
 ```
 
 ## Manual Anonymization

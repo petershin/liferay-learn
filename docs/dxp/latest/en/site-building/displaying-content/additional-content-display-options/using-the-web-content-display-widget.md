@@ -41,7 +41,7 @@ After you create a [web content article](../../../content-authoring-and-manageme
 
 ## Using Scopes in the Web Content Display Widget
 
-After adding a Web Conent Display Widget to a page, it is possible to set its scope to define the sites and libraries where the content avaliable to be displayed in the widget can be found. For more information about scopes, see [Setting Widget Scopes](../../creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-scopes.md)
+After adding a Web Content Display Widget to a page, you can set its scope to define the sites and libraries where the content available to be displayed in the widget can be found. For more information about scopes, see [Setting Widget Scopes](../../creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-scopes.md)
 
 1. Click *Options* ( ![Options icon](../../../images/icon-app-options.png) ) at the top right of the widget &rarr; *Configuration*.
 
@@ -57,7 +57,7 @@ After adding a Web Conent Display Widget to a page, it is possible to set its sc
 
 ![Click on Sites and Libraries option in the breadcrumb menu.](./using-the-web-content-display-widget/images/07.png)
 
-The avaliable content to be displayed is defined according to the selected scope.
+The available content to be displayed is defined according to the selected scope.
 
   ```{note}
    For Liferay DXP 7.3 and earlier, selecting a scope for the Web Content Display Widget does not affect the available content to be displayed in the widget.

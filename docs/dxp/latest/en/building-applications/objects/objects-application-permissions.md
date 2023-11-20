@@ -3,7 +3,7 @@ uuid: 0a1454d8-6845-4d3e-9186-9fb06e2b21e1
 ---
 # Objects Application Permissions
 
-{bdg-secondary}`Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
 
 The Objects application is integrated with the permissions framework, so you can assign [application](#application-permissions) and [resource](#resource-permissions) permissions to user roles to determine which users can access the application and its data.
 
@@ -26,6 +26,10 @@ Objects has the following application permissions:
 | Permissions             | View and modify Objects permissions.                               |
 | Preferences             | View and modify preferences for the Objects application.           |
 | View                    | View the Objects application.                                      |
+
+```{important}
+For Liferay 7.4 2023.Q4+/GA102+, users must have the *Object Folder > View* permission to use the Objects UI. 
+```
 
 ## Resource Permissions
 

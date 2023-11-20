@@ -3,7 +3,7 @@ uuid: 3de2268a-455a-4b8f-be7b-284ea1c1d267
 ---
 # Creating Objects
 
-{bdg-secondary}`Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
 
 Liferay Objects provides development capabilities in the Liferay UI. Using Objects, you can build fully integrated Liferay applications without writing any code or manually deploying modules. This process includes [creating](#creating-object-drafts) object drafts, [editing](#editing-object-drafts) the draft, and finally [publishing](#publishing-object-drafts) it to create the new application.
 
@@ -18,6 +18,10 @@ Liferay creates database tables when you publish object definitions, so you cann
 Object drafts are application templates that store the necessary data for creating an object application. To create a draft object,
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+
+   ```{note}
+   For Liferay 7.4 2023.Q4+/GA102+, you must also have the *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
+   ```
 
 1. Go to the desired [object folder](./organizing-objects-with-folders.md) and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 

@@ -3,9 +3,15 @@ uuid: 755f1298-6046-44b1-83ce-5683121b40fe
 ---
 # Using the Objects Model Builder
 
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
+
 Liferay Objects provides the Model Builder GUI for designing complex object structures. This graphical tool displays each object definition as a card and visualizes relationships between object definitions. With it, you can create, manage, and extend data models in the Objects application and quickly configure definitions, fields, and relationships.
 
 ![Use the Model Builder GUI to design complex data structures.](./using-the-objects-model-builder/images/01.png)
+
+```{note}
+For Liferay 7.4 2023.Q4+/GA102+, you must also have the *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
+```
 
 To access the Model Builder view,
 

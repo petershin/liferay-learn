@@ -28,9 +28,29 @@ You can use these discovery methods interchangeably. It is not mandatory to have
 
 ## Discount Application Strategy
 
-There are two ways to apply discounts at [multiple levels](./promoting-products/using-discount-levels.md): `additive` and `chaining`. By default, discounts at multiple levels are chained. This means that the subsequent discount gets calculated on the value after applying the previous discount. When it's additive, multiple discounts are grouped together and applied all at once. See the illustration below to understand the difference. 
+There are two ways to apply discounts at [multiple levels](./promoting-products/using-discount-levels.md): `additive` and `chaining`. By default, discounts at multiple levels are chained. This means that the subsequent discount gets calculated on the value after applying the previous discount. When it's additive, multiple discounts are grouped together and applied all at once. See below to understand the difference. 
 
-<!-- I think rather than have core explanation of the feature couched in an image, it would be better to have some textual representation of it as well for those using screen readers. Can you put a text version of the formula here as well? Thanks! -Rich --> 
+### Chaining Discounts Example
+
+Product Price - $100
+
+L1 Discount - 10% 
+
+Discounted Price - $100 - 10% Discount = $90
+
+L2 Discount - 5%
+
+Discounted Price - $90 - 5% = $85.5
+
+### Additive Discounts Example
+
+Product Price - $100
+
+L1 Discount - 10% 
+
+L2 Discount - 5%
+
+Discounted Price - $90 - (10% + 5%) = $85
 
 ![The difference between additive and chaining strategies.](./pricing-configuration-reference/images/01.png)
 

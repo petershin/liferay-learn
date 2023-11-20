@@ -4,6 +4,7 @@ toc:
   - ./products/using-product-options.md
   - ./products/creating-skus-for-product-variants.md
   - ./products/defining-skus-as-option-values-using-a-collection-provider.md
+  - ./products/units-of-measure.md
   - ./products/product-images.md
   - ./products/specifications.md
   - ./products/product-attachments.md

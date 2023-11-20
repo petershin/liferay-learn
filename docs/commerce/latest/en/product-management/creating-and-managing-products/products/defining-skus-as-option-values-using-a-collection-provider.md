@@ -3,6 +3,8 @@ uuid: 36f5e761-fae3-4504-8cd1-ecd93524aa1f
 ---
 # Defining SKUs as Option Values using a Collection Provider
 
+<!-- Yet to finalize the version -->
+
 You can specify one or more categories as a collection provider when configuring an option on a product. You can use this to define your own custom logic, linking a group of SKUs as option values for a product. 
 
 For instance, consider two products that aren't related to each other. To add them as product options, you can create a category, link it to these two products, and use that category as a collection provider on a new product. 
@@ -25,7 +27,7 @@ Once you have your categories created and assigned to products,
 
 1. Enter a name for the option and click on *Create New*. 
 
-   ![Create a new option on the selected product.](./using-categories-as-a-collection-provider-for-skus-as-options/images/01.png)
+   ![Create a new option on the selected product.](./defining-skus-as-option-values-using-a-collection-provider/images/01.png)
 
    This creates a new option and assigns it to the product. Now, select the new option. Alternatively, if you already have an option template created, select that.
 
@@ -43,7 +45,7 @@ Once you have your categories created and assigned to products,
 
 1. From the categories drop-down, choose one or more categories. 
 
-   ![Choose the categories to add associated SKUs as option values.](./using-categories-as-a-collection-provider-for-skus-as-options/images/02.png)
+   ![Choose the categories to add associated SKUs as option values.](./defining-skus-as-option-values-using-a-collection-provider/images/02.png)
 
 1. Click *Save*. 
 

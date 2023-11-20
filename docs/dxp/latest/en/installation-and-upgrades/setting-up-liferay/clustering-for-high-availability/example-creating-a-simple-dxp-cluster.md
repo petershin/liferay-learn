@@ -91,7 +91,7 @@ Create and configure an Elasticsearch server:
 1. Start an Elasticsearch container named `elasticsearch`.
 
     ```bash
-    docker run -it --name elasticsearch -p 9200:9200 -p 9300:9300 -e cluster.name=LiferayElasticsearchCluster -e ES_JAVA_OPTS="-Xms512m -Xmx512m" -v $(pwd)/elasticsearch/es_data_volume:/usr/share/elasticsearch/data elasticsearch:6.8.7
+    docker run -it --name elasticsearch -p 9200:9200 -p 9300:9300 -e cluster.name=LiferayElasticsearchCluster -e ES_JAVA_OPTS="-Xms512m -Xmx512m" -v $(pwd)/elasticsearch/es_data_volume:/var/lib/elasticsearch/data elasticsearch:6.8.7
     ```
 
     ```{note}
@@ -187,7 +187,7 @@ Start the DXP containers.
       -p 8009:8009 \
       -p 8080:8080 \
       -v $(pwd)/dxp-1:/mnt/liferay \
-      liferay/portal:7.3.2-ga3
+      [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
     ```
 
     Command condensed to one line:
@@ -220,7 +220,7 @@ Start the DXP containers.
       -p 9009:8009 \
       -p 9080:8080 \
       -v $(pwd)/dxp-2:/mnt/liferay \
-      liferay/portal:7.3.2-ga3
+      [$LIFERAY_LEARN_PORTAL_DOCKER_IMAGE$]
     ```
 
     Command condensed to one line:

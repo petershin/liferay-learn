@@ -144,19 +144,6 @@ The `docker run --add-host elasticsearch:[ip] ...` commands used later for the D
 
 ## Start the DXP Cluster
 
-The DXP cluster node containers will have these unique settings:
-
-| Configuration | dxp-1 | dxp-2 |
-| :------------ | :---- | :---- |
-| AJP port mapping | `8009:8009` | `9009:8009` |
-| HTTP port mapping | `8080:8080` | `9080:8080` |
-| OSGi container port mapping | ``11311:11311`` | `11312:11311` |
-| Bind mount | `$(pwd)/dxp-1:/mnt/liferay` | `$(pwd)/dxp-2:/mnt/liferay` |
-| Cluster Link control channel logic name | control-channel-logic-name-1 | control-channel-logic-name-2 |
-| Cluster Link transport channel logic name | transport-channel-logic-name-1 | transport-channel-logic-name-2 |
-
-Start the DXP containers.
-
 1. Get the container IP addresses for the `elasticsearch` and `some-mariadb` containers by executing the [`docker network inspect bridge`](https://docs.docker.com/engine/reference/commandline/network_inspect/) command. The `bridge` network is the default network.
 
     ```{important}
@@ -232,6 +219,17 @@ Start the DXP containers.
 The `--add-host [domain]:[IP address]` options [add `/etc/hosts` file entries](https://docs.docker.com/engine/reference/run/#managing-etchosts) that map the domain names to the IP addresses. This enables configurations (such as environment variables, Portal Properties, and `.config` files) to refer to the servers by domain name.
 
 The `-e [variable]=[value]` options set the DXP container environment variables. See [Appendix A: Environment Settings](#appendix-a-environment-settings) for more information.
+
+The DXP cluster node containers have these unique settings:
+
+| Configuration | dxp-1 | dxp-2 |
+| :------------ | :---- | :---- |
+| AJP port mapping | `8009:8009` | `9009:8009` |
+| HTTP port mapping | `8080:8080` | `9080:8080` |
+| OSGi container port mapping | ``11311:11311`` | `11312:11311` |
+| Bind mount | `$(pwd)/dxp-1:/mnt/liferay` | `$(pwd)/dxp-2:/mnt/liferay` |
+| Cluster Link control channel logic name | control-channel-logic-name-1 | control-channel-logic-name-2 |
+| Cluster Link transport channel logic name | transport-channel-logic-name-1 | transport-channel-logic-name-2 |
 
 ### Visit the DXP Nodes
 

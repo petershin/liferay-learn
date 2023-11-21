@@ -189,8 +189,6 @@ This JSON sample shows a field using the `length` configuration type. It include
 
 In the user interface, you can choose from the available units or specify a custom unit.
 
-<!-- The below screenshot is way too big. Please reduce. -Rich --> 
-
 ![A field labeled 'Size' from a custom fragment uses the length configuration to show a drop-down of available units.](./fragment-configuration-types-reference/images/10.png)
 
 ## Item Selector Configuration
@@ -217,6 +215,8 @@ This configuration creates a selector for selecting one existing piece of conten
     ]
 }
 ```
+
+![The item selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/04.png)
 
 You can provide a more advanced configuration that lets authors select only a specific type of content. The configuration below specifies that only web content articles can be selected. The optional `itemSubtype` property specifies that the selected web content article must use the structure `article-structure-key-15` to be selected:
 
@@ -308,8 +308,6 @@ in the example below). This example renders the title, description, and body of 
   [/#if]
 </div>
 ```
-
-![The item selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/04.png)
 
 ```{note}
 Placing a fragment with an item selector configuration into a collection display widget automatically maps the collection item as the selected content.

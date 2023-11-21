@@ -419,7 +419,7 @@ The `videoSelector` type is compatible with the [external video](../../../creati
 
 {bdg-secondary}`Available Liferay 7.3+`
 
-Using the `collectionSelector` configuration type, you can develop a fragment that includes a [collection](../../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) or collection provider. You can use the `collectionSelector` with both manual and dynamic collections.
+Using the `collectionSelector` configuration type, you can develop a fragment that includes a [collection](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) or [collection provider](../../../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md). You can use the `collectionSelector` with both manual and dynamic collections.
 
 ```{note}
 Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
@@ -428,17 +428,17 @@ Developers can use collection providers to create specific collections with more
 The following JSON configuration shows how to use the `collectionSelector`:
 
 ```json
-{ 
-    "fieldSets": [   
-        {            
-        "label": "Collection",            
-        "fields": [                
-            {                    
-                "name": "collection",                    
-                "type": "collectionSelector"                
-            }            
-        ]        
-        } 
+{
+    "fieldSets": [
+        {
+        "label": "Collection",
+        "fields": [
+            {
+                "name": "collection",
+                "type": "collectionSelector"
+            }
+        ]
+        }
     ]
 }
 ```

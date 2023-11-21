@@ -135,3 +135,9 @@ Starting from Liferay DXP 7.4 U42+/GA42+, the following property is also availab
 > Available: Liferay DXP/Portal 7.3+.
 
 The Segments property provides a way to combine existing segments into a new compound segment. The compound segment inherits the properties from the segments it is based on, and updates the members automatically. For more information, see [Compound Segments](./creating-and-managing-user-segments.md#compound-segments).
+
+## Related Information
+
+* [Creating and Managing User Segments](./creating-and-managing-user-segments.md)
+* [Segmentation By Geolocation](./segmentation-by-geolocation.md)
+* [Creating and Managing Experiences](../experience-personalization/creating-and-managing-experiences.md)

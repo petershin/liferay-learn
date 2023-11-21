@@ -1,0 +1,36 @@
+[#assign publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() +
+themeDisplay.getSiteGroup().getFriendlyURL() /]
+
+<div class="sign-in vh-100">
+	<div class="form-box">
+		<a href="${themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()}">
+			<div class="sign-in-logo">
+					<img
+						alt="Clarity Logo"
+						src="[resources:clarity-logo-small.png]"
+					/>
+			</div>
+		</a>
+		<div class="sign-in-form">
+			<h1 class="font-weight-normal sign-in-text">
+				See and be seen. Sign in.
+			</h1>
+
+			<div class="sign-in-widget">
+				[@liferay_portlet.runtime
+				portletName="com_liferay_login_web_portlet_LoginPortlet" /]
+			</div>
+		</div>
+	</div>
+	<div class="right-panel">
+	</div>
+</div>
+<script>
+	const redirect = document.querySelector(
+		'#_com_liferay_login_web_portlet_LoginPortlet_redirect'
+	);
+
+	if (redirect) {
+		redirect.setAttribute('value', '${publicFriendlyURL}/home');
+	}
+</script>

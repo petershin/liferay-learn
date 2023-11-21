@@ -84,4 +84,4 @@ Once in the virtual instance, create the site template and use it to create othe
 
 1. Once the process is finished, click *Done*. You can use the custom fragments and compositions thoughout the site template now.
 
-Next, let's [create the master page]().
+Next, let's [create the master page template](./creating-the-master-page-template.md).

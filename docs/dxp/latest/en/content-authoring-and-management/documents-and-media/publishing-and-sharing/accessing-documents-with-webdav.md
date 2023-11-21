@@ -9,7 +9,7 @@ To access the Document Library folder from a file browser, you must use your log
 
 ## Generating WebDAV Password for Liferay DXP 2023.Q4+/Portal 7.4 GA98+
 
-For Liferay DXP 2023.Q4+/Portal 7.4 GA98+, you must generate a WebDAV password from your account settings to use in your WebDAV client. This is to mitigate security issues introduced through digest authentication used by WebDAV. When trying to access a document through WebDAV for the first time, you'll be prompted to generate a WebDAV password. 
+For Liferay DXP 2023.Q4+/Portal 7.4 GA98+, you must generate a WebDAV password from your account settings to use in your WebDAV client. This is to avoid storing weak hashes used in digest authentication by WebDAV. Digest authentication is insecure and deprecated in Liferay. When trying to access a document through WebDAV for the first time, you'll be prompted to generate a WebDAV password. 
 
 ![You must generate a WebDAV password before using it for the first time.](./accessing-documents-with-webdav/images/03.png)
 

@@ -69,6 +69,10 @@ User properties are user attributes you want to capture. This is made up of user
 | User Group    | Select a user group that the user is a member of.                                                             |
 | User Name     | The full name of the user.                                                                                    |
 
+```{note}
+To display content for guest users through segment experiences, select the *Signed In* session property and set its value to *False*. This action effectively represents an unlogged user, fulfilling the same purpose as the guest role.
+```
+
 Since Liferay DXP 7.2 SP2+, these properties are also available for Users:
 
 | Property      | Description                                                                                 |

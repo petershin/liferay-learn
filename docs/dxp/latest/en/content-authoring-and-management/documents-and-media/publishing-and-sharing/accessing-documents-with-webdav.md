@@ -5,7 +5,29 @@ uuid: 5d20bacf-bf93-4c17-86b7-fc55128da63d
 
 You can access the Document Library from your desktop file manager via [WebDAV](https://en.wikipedia.org/wiki/WebDAV). WebDAV is a protocol based on HTTP for managing files stored on web servers. WebDAV is supported by most major operating systems and desktop environments, including Linux, macOS, and Windows.
 
-To access the Document Library folder from a file browser, you must use your log-in credentials and the WebDAV URL of the folder you want to access. Follow these steps:
+To access the Document Library folder from a file browser, you must use your log-in credentials and the WebDAV URL of the folder you want to access.
+
+## Generating WebDAV Password for Liferay DXP 2023.Q4+/Portal 7.4 GA98+
+
+For Liferay DXP 2023.Q4+/Portal 7.4 GA98+, you must generate a WebDAV password from your account settings to use in your WebDAV client. This is to mitigate security issues introduced through digest authentication used by WebDAV. When trying to access a document through WebDAV for the first time, you'll be prompted to generate a WebDAV password. 
+
+![You must generate a WebDAV password before using it for the first time.](./accessing-documents-with-webdav/images/03.png)
+
+To generate a WebDAV password,
+
+1. Click on the user-icon from your site's homepage and select *Account Settings*.
+
+1. Select *Password* from the left-menu.
+
+1. Scroll down to the *WEBDAV PASSWORD* section and click *Generate WebDAV Password*.
+
+   ![Generate a WebDAV password to use with your client.](./accessing-documents-with-webdav/images/04.png)
+
+   This displays your WebDAV username and an auto-generated password. This is a read-only field, so you must copy it for future use. If you click on the button to generate the WebDAV password again, it generates a new one rendering the existing one useless. 
+
+Now, follow the instructions below and use the WebDAV username and password when prompted. 
+
+## For Liferay DXP 2023.Q3/Portal 7.4 GA97 and Below
 
 1. Open the Documents and Media application in the desired Site or Asset Library.
 

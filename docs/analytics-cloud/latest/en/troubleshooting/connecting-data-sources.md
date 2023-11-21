@@ -95,3 +95,9 @@ Your Liferay DXP installation must meet the following fix pack minimum requireme
 ## Logged In Users Showing Up Anonymous
 
 When [Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md), Analytics Cloud depends on user records existing within Liferay DXP. Therefore if you are using [SSO](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/securing-liferay/configuring-sso.html) or [LDAP](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html), make sure to import or map all your users to Liferay DXP before syncing contacts with Analytics Cloud.
+
+## Syncing Users Taking a Long Time
+
+Liferay DXP's batch engine is utilized for syncing users. Increase the batch size if syncing a very large number of users. In Liferay DXP, navigate to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_. Set the _Export Batch Size_ and _Import Batch Size_ to `1000`.
+
+![Increase batch size in Liferay DXP.](./connecting-data-sources/images/03.png)

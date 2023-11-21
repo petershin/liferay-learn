@@ -55,6 +55,10 @@ To sync contacts to a property:
 
 1. Select the users or groups you want to sync and click *Save*.
 
+```{note}
+Liferay DXP's batch engine is utilized for syncing users. Increase the batch size if syncing a very large number of users. In Liferay DXP, navigate to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_. Set the _Export Batch Size_ and _Import Batch Size_ to `1000`.
+```
+
 Learn more about [syncing contact data from Liferay DXP](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
 ## Email Reports

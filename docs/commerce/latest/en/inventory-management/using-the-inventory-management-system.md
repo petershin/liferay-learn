@@ -20,7 +20,9 @@ If you're using Commerce 2.0 or 2.1, the Inventory Management option is located 
 
 ## Adding Inventory for SKUs
 
-Inventory is tracked at the SKU level. When creating an inventory entry, you must specify an SKU, warehouse, and quantity. Without an SKU, you cannot add inventory to a product.
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you've a unit of measure configured for the SKU, inventory is tracked by that unit for the SKU. Otherwise, inventory is tracked at the SKU level. 
+
+When creating an inventory entry, you must specify an SKU, warehouse, and quantity. Without an SKU, you cannot add inventory to a product.
 
 Follow these steps:
 

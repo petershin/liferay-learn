@@ -3,7 +3,7 @@ uuid: 5673b1a0-1aa1-444e-88ee-9f54f0c67608
 ---
 # Setting Inventory by Warehouse
 
-Stores with multiple warehouses can manage product inventory on a per warehouse basis. The Inventory menu is where you can manage the number of products available to buy in each warehouse.
+Stores with multiple warehouses can manage product inventory on a per warehouse basis. The inventory menu is where you can manage the number of products available to buy in each warehouse.
 
 To set inventory by warehouse,
 
@@ -15,7 +15,9 @@ To set inventory by warehouse,
 
 1. Click the *Inventory* tab.
 
-1. Enter a quantity for the available warehouses.
+1. Enter a quantity for the available warehouses. 
+
+   {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you have a unit of measure configured for the SKU, you can enter a quantity for each unit per warehouse.
 
    ![Enter the quantity of available units for an SKU in each warehouse.](./setting-inventory-by-warehouse/images/01.png)
 
@@ -27,7 +29,9 @@ Each warehouse now has the correct quantity available for sale.
 
 ## Transferring Stock Between Warehouses
 
-If your store has multiple warehouses, you can transfer stock from one warehouse to another. Inventory is tracked at the SKU level and reflected on the Inventory page.
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you have a unit of measure configured for the SKU, inventory is tracked by the configured unit for the SKU. Otherwise, inventory is tracked at the SKU level. This information is available on the inventory page. 
+
+If your store has multiple warehouses, you can transfer stock from one warehouse to another.
 
 To transfer stock between warehouses,
 
@@ -83,7 +87,7 @@ To transfer stock between warehouses,
 
 1. Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Inventory*.
 
-1. Click an SKU.
+1. Select an SKU.
 
 1. Click the *Add* (![Add icon](../images/icon-add.png)) button, then *Create a Transfer*.
 

@@ -7,15 +7,16 @@ To access inventory settings, open the *Global Menu* (![Global Menu](../images/i
 
 ![Navigate to the inventory settings from the Global Menu.](./inventory-management-reference-guide/images/01.png)
 
-The page displays product SKUs and their availability.
+The page displays product SKUs, their units, and their availability.
 
 ![This page tracks all catalog SKUs and displays their availability.](./inventory-management-reference-guide/images/02.png)
 
 | Field     | Description                                                                                                                                                                                               |
 | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SKU       | Primary identifier for the inventory system.                                                                                                                                                              |
+| UOM       | Unit of measure configured for the SKU. {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`                                                                                                                |
 | On Hand   | Total number of available units for an SKU from all warehouses.                                                                                                                                           |
-| Available | Number of purchaseable units for an SKU. Liferay's calculation: [Quantity Available] = [Quantity on Hand] - [Quantity on Order] - [Safety Stock Quantity].                               |
+| Available | Number of purchaseable units for an SKU. Liferay's calculation: [Quantity Available] = [Quantity on Hand] - [Quantity on Order] - [Safety Stock Quantity].                                                |
 | On Order  | Number of units allocated to open orders for an SKU. These quantities are consumed when an order is shipped.                                                                                              |
 | Incoming  | Number of units scheduled as replenishment for an SKU, but not yet received. Values are informative only and not based on any calculations. Administrators can use it to keep track of future quantities. |
 

@@ -14,21 +14,6 @@ uuid: 0af96bfe-53b9-4ae1-bd1f-a372afb783a2
 ---
 # Inventory Management
 
-```{toctree}
-:maxdepth: 1
-
-inventory-management/setting-up-warehouses.md
-inventory-management/setting-inventory-by-warehouse.md
-inventory-management/low-stock-action.md
-inventory-management/availability-estimates.md
-inventory-management/managing-product-status.md
-inventory-management/using-the-inventory-management-system.md
-inventory-management/inventory-management-reference-guide.md
-inventory-management/warehouse-reference-guide.md
-inventory-management/product-inventory-configuration-reference-guide.md
-inventory-management/developer-guide.md
-```
-
 {bdg-secondary}`Available Commerce 2.1+`
 
 Liferay's inventory management tools can support a wide range of commerce use cases, from a single storefront with one warehouse to multiple sales channels with geographically distributed warehouses.
@@ -39,12 +24,13 @@ Here are Liferay's inventory management features:
 * Set availability estimates
 * Configure low stock actions
 * Set SKU inventory by warehouse
+* Set inventory by unit of measure {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
 
 You can use the inventory management system to track your inventory in a single place. See [Using the Inventory Management System](./inventory-management/using-the-inventory-management-system.md) for more information.
 
 ## Warehouses
 
-Warehouses represent physical locations where you can manage product inventory and source them for order fulfillment. A single SKU may be available in more than one warehouse, and inventory is managed on a per-warehouse basis.
+Warehouses represent physical locations where you can manage product inventory and source them for order fulfillment. A single SKU or unit of measure may be available in more than one warehouse, and inventory is managed on a per-warehouse basis.
 
 See [Setting Up Commerce Warehouses](./inventory-management/setting-up-warehouses.md) and [Warehouse Reference Guide](./inventory-management/warehouse-reference-guide.md) for more information on managing warehouses.
 
@@ -52,7 +38,13 @@ For a store to accept orders, the related channel must have a warehouse associat
 
 ## Setting Inventory by Warehouse
 
-In Liferay, inventory is managed per SKU. Read [Setting Inventory by Warehouse](./inventory-management/setting-inventory-by-warehouse.md) for more information.
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
+
+If you have a unit of measure configured for the SKU, inventory is managed by that unit. 
+
+{bdg-secondary}`Liferay DXP 2023.Q3/Portal 7.4 GA97 and Below`
+
+Inventory is managed per SKU. Read [Setting Inventory by Warehouse](./inventory-management/setting-inventory-by-warehouse.md) for more information.
 
 ```{important}
 Each product in the inventory must be associated to at least one SKU.

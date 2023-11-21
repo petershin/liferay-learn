@@ -26,7 +26,7 @@ Follow these steps:
    ![Set the product's expiration date.](./managing-product-status/images/01.png)
 
    ```{tip}
-   Expiration dates and times are based on the Liferay instance's time zone.To view or change the time zone, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings*. Then, navigate to *Localization* &rarr; *Time Zone*.
+   Expiration dates and times are based on the Liferay instance's time zone. To view or change the time zone, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Instance Settings*. Then, navigate to *Localization* &rarr; *Time Zone*.
    ```
 
 1. Click *Publish*.

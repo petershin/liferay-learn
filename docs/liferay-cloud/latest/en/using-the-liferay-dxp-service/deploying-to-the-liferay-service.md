@@ -5,7 +5,7 @@ uuid: 5cc0862d-ae06-4a61-ac47-953fd1e914c3
 
 As with other services, deploying custom additions involves adding your configurations or files to the appropriate locations in your Git repository. However, deploying the Liferay service slightly differs from deploying other services.
 
-The Liferay service makes use of a [Liferay workspace](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) to give you more options to add [deployable files](#deploying-themes-portlets-and-osgi-modules), [source code](#building-and-deploying-source-code), and more. These are easily included with a [CI build](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md), but if you are using the [CLI tool](../reference/command-line-tool.md), then some [extra steps](#cli-tool-deployment) are necessary specifically for the Liferay service.
+The Liferay service makes use of a [Liferay workspace](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) to give you more options to add [deployable files](#deploying-themes-portlets-and-osgi-modules), [source code](#building-and-deploying-source-code), and more. These are easily included with a [CI build](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md), but if you are using the [CLI tool](../reference/command-line-tool.md), some [extra steps](#cli-tool-deployment) are necessary specifically for the Liferay service.
 
 ## Defining the Liferay DXP Docker Image
 
@@ -19,11 +19,9 @@ The major version number of DXP defined in the `image` property of the Liferay s
 
 ## CLI Tool Deployment
 
-Deploying with the [CLI tool](../reference/command-line-tool.md) requires extra steps to deploy with your customizations and configurations. These must be included in a special `Dockerfile` image that is generated before you deploy.
+To add [deployable files](#deploying-themes-portlets-and-osgi-modules), [built source code](#building-and-deploying-source-code), [hotfixes](#deploying-hotfixes), and [licenses](#deploying-licenses) using the [CLI tool](../reference/command-line-tool.md), you must include them in a special `Dockerfile` image that is generated before you deploy. These extra steps are not necessary if you deploy a build via the [CI service](../platform-services/continuous-integration.md).
 
-[Deployable files](#deploying-themes-portlets-and-osgi-modules), [built source code](#building-and-deploying-source-code), [hotfixes](#deploying-hotfixes), and [licenses](#deploying-licenses) require extra steps to include with your deployment if you are using the CLI tool. These extra steps are not necessary if you are using the [CI service](../platform-services/continuous-integration.md) to generate a build from your repository.
-
-If you deploy the Liferay service with the CLI normally (when deploying all services at once, or from the `liferay/` directory), then a **default version** of the Liferay DXP image (using the major version defined in `LCP.json`) will deploy, that does not contain your customizations. This happens because you must specifically build and deploy any customizations with the service for them to be included.
+If you deploy the Liferay service with the CLI normally (when deploying all services at once, or from the `liferay/` directory), a **default version** of the Liferay DXP image (using the major version defined in `LCP.json`) that does not contain your customizations is deployed. This happens because you must specifically build and deploy any customizations with the service for them to be included.
 
 Follow these steps to deploy the Liferay service with your customizations:
 
@@ -33,7 +31,7 @@ Follow these steps to deploy the Liferay service with your customizations:
    ./gradlew clean createDockerfile deploy
    ```
 
-  This builds all of your customizations, and arranges them into a `build/liferay/` subfolder. It also adds a `Dockerfile` specifically for a customized version of DXP.
+   This builds all of your customizations, and arranges them into a `build/liferay/` subfolder. It also adds a `Dockerfile` specifically for a customized version of DXP.
 
 1. Copy the `LCP.json` file into the newly generated `build/docker/` subfolder.
 
@@ -68,9 +66,9 @@ Certain files and configurations are forced to be present when an image is deplo
 
 ## Building and Deploying Source Code
 
-The source code for new additions can also be included in a CI build. When the build starts, it will automatically compile the source code.
+The source code for new additions can also be included in a CI build. When the build starts, it compiles the source code automatically.
 
-A CI build will compile source code within these folders:
+CI builds compile source code within these folders:
 
 * The `liferay/modules` folder for new modules
 * The `liferay/themes` folder for custom themes
@@ -83,7 +81,7 @@ Once deployed, the deployable `.jar` or `.war` files are copied to the `$LIFERAY
 To apply a hotfix, add the hotfix ZIP file to a `configs/{ENV}/patching/` folder within the Liferay DXP service directory. When you deploy this change, the hotfix is applied to the Liferay DXP instance.
 
 ```{note}
-See [these instructions](./updating-your-dxp-instance-to-a-new-minor-version.md) to update to a new minor version of Liferay DXP instead (such as a new [service pack](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)).
+See [Updating Your DXP Instance to a New Minor Version](./updating-your-dxp-instance-to-a-new-minor-version.md) to update to a new minor version of Liferay DXP instead (such as a new [service pack](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs)).
 ```
 
 For example, you can deploy a hotfix to your development environment with a structure like the following:
@@ -109,7 +107,7 @@ You can also install hotfixes as part of the CI build process instead of directl
 Add a hotfix to the `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` environment variable (either through the `Environment Variables` tab in the Liferay Cloud console, or in the `ci` service's `LCP.json` file) for the CI service to apply it automatically during the build process. If you need multiple bug fixes, ask support to package them into a single hotfix.
 
 ```{note}
-If you add this environment variable to the `LCP.json` for your `ci` service, then you must deploy the `ci` service to your **infra environment** to complete the update.
+If you add this environment variable to the `LCP.json` for your `ci` service, you must deploy the `ci` service to your **infra environment** to complete the update.
 ```
 
 See the following example of defining hotfixes in the `LCP.json` file:

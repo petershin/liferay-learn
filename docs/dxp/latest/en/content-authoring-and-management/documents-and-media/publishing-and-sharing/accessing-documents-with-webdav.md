@@ -25,9 +25,9 @@ To generate a WebDAV password,
 
    This displays your WebDAV username and an auto-generated password. This is a read-only field, so you must copy it for future use. If you click on the button to generate the WebDAV password again, it generates a new one rendering the existing one useless. 
 
-Now, follow the instructions below and use the WebDAV username and password when prompted. 
+Now, [follow the instructions below](#using-the-webdav-client-to-access-documents) and use the WebDAV username and password when prompted. 
 
-## For Liferay DXP 2023.Q3/Portal 7.4 GA97 and Below
+## Using the WebDAV Client to Access Documents
 
 1. Open the Documents and Media application in the desired Site or Asset Library.
 

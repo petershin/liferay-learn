@@ -3,17 +3,15 @@ uuid: 12082068-33ec-40bc-aa4f-aced8a430727
 ---
 # Segments Editor UI Reference
 
-An overview of the segments editor UI is discussed here. To access the segments editor follow these steps:
+You can use segments to organize users into different groups with common sets of properties. Follow these steps to access the segments editor UI.
 
 1. Go to *Site Administration* and select the site that you wish to create segments for.
 
 1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)), and navigate to *People* &rarr; *Segments*.
 
-1. Click *Add User Segment* (![Add](../../../images/icon-add.png)).
+1. Click *Add* (![Add](../../../images/icon-add.png)) to add new user segment.
 
-At the top of the editor you can set the name, view the current members of the segment as it is defined, and choose to *Save* the segments or *Cancel* to discard changes.
-
-![The top portion of the segment editor has the segment name and its members.](./segments-editor-ui-reference/images/01.png)
+At the top of the editor you can set the name, and choose to *Save* the segments or *Cancel* to discard the changes. On the conditions section, you can view the current members of the segment as it is defined.
 
 On the right side of the page, there's a *Properties* menu with these options:
 
@@ -22,13 +20,13 @@ On the right side of the page, there's a *Properties* menu with these options:
 - Session
 - Segments
 
-![You use the segment editor to create new segments.](./segments-editor-ui-reference/images/02.png)
+![You use the segment editor to create new segments.](./segments-editor-ui-reference/images/01.png)
 
 Operations and conjunctions are combined with the properties to define criteria.
 
 ## Operations and Conjunctions
 
-Several types of information can be collected by the user segment interface. Some data is entered in text boxes, while others use selectors to select specific criteria or tools like a date picker. Some fields use an operator, which, depending on the specific context lets you select the relationship between the User or agent data and the criteria:
+Several types of information can be collected by the user segment interface. Some data is entered in text boxes, while others use selectors to select specific criteria or tools like a date picker. Some fields use an operator, which, depending on the specific context lets you select the relationship between the user or agent data and the criteria.
 
 * *equals*
 
@@ -48,7 +46,7 @@ Several types of information can be collected by the user segment interface. Som
 
 Depending on the nature of the criteria, the operator selection may contain different combinations. For example, the *Date* selection described below contains all the previously listed options except *contains* and *does not contain*, whereas the *Email Address* selection has *equals*, *not equals*, *contains* and *does not contain*.
 
-In between each criteria and each category, you can define an "and" or "or" conjunction. For "and" all criteria must be true in order for the criteria to be satisfied. With "or" it will be true if any of the defined criteria are true. You can also mix operators to create complex cases.
+In between each criteria and each category, you can define an 'And/Or' conjunction. For 'And', all criteria must be true in order for the criteria to be satisfied. With 'Or', it will be true if any of the defined criteria are true. You can also mix operators to create complex cases.
 
 ## User Properties
 
@@ -73,7 +71,7 @@ User properties are user attributes you want to capture. This is made up of user
 To display content for guest users through segment experiences, select the *Signed In* session property and set its value to *False*. This action effectively represents an unlogged user, fulfilling the same purpose as the guest role.
 ```
 
-Since Liferay DXP 7.2 SP2+, these properties are also available for Users:
+Since Liferay DXP 7.2 SP2+, these properties are also available for users:
 
 | Property      | Description                                                                                 |
 |:--------------|:--------------------------------------------------------------------------------------------|
@@ -93,7 +91,7 @@ Organization properties is a selectable list of organizations to include in your
 | Parent Organization | Select a specific parent organization.                                    |
 | Type                | Select the type of organization, if organization types have been defined. |
 
-Since Liferay DXP 7.2 SP2+, these properties are also available for Organizations:
+Since Liferay DXP 7.2 SP2+, these properties are also available for organizations:
 
 | Property | Description                                                      |
 |:---------|:-----------------------------------------------------------------|
@@ -113,13 +111,13 @@ Session properties contains criteria based on the user's activity, browser, and 
 | Device Model                    | Enter the model name of the device being used.     |
 | Device Screen Resolution Height | Enter the screen resolution height value.          |
 | Device Screen Resolution Width  | Enter the screen resolution width value.           |
-| Language                        | Select the current Language.                       |
-| Last Sign In Date               | Select the date of the User's last sign in.        |
-| Local Date                      | Select the current date where the User is located. |
+| Language                        | Select the current language.                       |
+| Last Sign In Date               | Select the date of the user's last sign in.        |
+| Local Date                      | Select the current date where the user is located. |
 | Referrer URL                    | Enter the URL that the user last visited.          |
 | Signed In                       | Select whether the user is signed in.              |
 | URL                             | Enter the current URL.                             |
-| User Agent                      | Enter a User Agent property.                       |
+| User Agent                      | Enter a user agent property.                       |
 
 Since Liferay DXP 7.2 SP2+, these properties are also available for the session:
 
@@ -138,7 +136,7 @@ Starting from Liferay DXP 7.4 U42+/GA42+, the following property is also availab
 
 > Available: Liferay DXP/Portal 7.3+.
 
-The Segments property provides a way to combine existing segments into a new compound segment. The compound segment inherits the properties from the segments it is based on, and updates the members automatically. For more information, see [Compound Segments](./creating-and-managing-user-segments.md#compound-segments).
+With the segments property, you can combine existing segments into a new compound segment. The compound segment inherits the properties from the segments it is based on, and updates the members automatically. For more information, see [Compound Segments](./creating-and-managing-user-segments.md#compound-segments).
 
 ## Related Information
 

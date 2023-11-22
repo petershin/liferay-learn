@@ -108,7 +108,7 @@ Name                                          | Default Value   | Description |
 `LCP_CI_BUILD_DAYS_TO_KEEP`           | `14`            | Number of days that builds are stored |
 `LCP_CI_BUILD_NUM_TO_KEEP`            | `10`            | Number of builds that are stored |
 `LCP_CI_BUILD_TIMEOUT_MINUTES`        | `30`            | Set a timeout period for the Pipeline run, after which Jenkins should abort the Pipeline  |
-`LCP_CI_CLI_LOG_LEVEL`                |                 | If set to `verbose`, CI service will use the \--verbose flag when performing lcp commands. This provides more information as the commands are run for debugging. |
+`LCP_CI_CLI_LOG_LEVEL`                |                 | If set to `verbose`, the CI service will use the \--verbose flag when performing lcp commands. This provides more information for debugging when the commands are run. |
 `LCP_CI_DEPLOY_BRANCH`                | `develop`       | Specify the branch to use for [automatic deployment](../build-and-deploy/automatically-deploying-ci-service-builds.md). If not set to a valid branch name, automatic deployment is disabled. |
 `LCP_CI_DEPLOY_TARGET`                |                 | Sets the environment [automatic deployment](../build-and-deploy/automatically-deploying-ci-service-builds.md) will deploy to. Only used if `LCP_CI_DEPLOY_BRANCH` is set. |
 `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}`   |                 | The name of a hotfix (without the `.zip` extension) for CI to apply automatically when deploying the Liferay service. Replace `{ENV}` with the environment name (in all-caps), or `COMMON`. |

@@ -28,7 +28,7 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
-{bdg-secondary}`사용 가능 라이프레이 7.4`
+{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
 프런트 엔드 클라이언트 확장은 페이지를 확장하고 새로운 기능을 통합합니다. 사용 가능한 유형에는 CSS, JavaScript, 테마 CSS, 테마 파비콘, 사용자 정의 요소 및 IFrame이 포함됩니다.
 
@@ -42,8 +42,6 @@ front-end-client-extensions/client-extensions-ui-reference.md
 
 ## JavaScript 클라이언트 확장
 
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
-
 JavaScript 클라이언트 확장은 Liferay 인스턴스 전반에 걸쳐 글로벌 JavaScript 라이브러리와 논리를 제공합니다. JavaScript 클라이언트 확장을 배포하고 이를 사용하도록 페이지를 구성하면 페이지를 방문할 때마다 해당 JavaScript가 자동으로 실행됩니다(페이지의 머리글 또는 바닥글).
 
 `client-extension.yaml` 파일에 JavaScript 클라이언트 확장을 지정합니다.
@@ -56,8 +54,6 @@ type: globalJS
 
 ## CSS 클라이언트 확장
 
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
-
 CSS 클라이언트 확장은 페이지에 새로운 CSS 스타일을 도입합니다. 페이지에 배포된 CSS 클라이언트 확장은 테마 및 스타일 북 설정을 포함하여 페이지의 기존 스타일에 추가됩니다.
 
 `client-extension.yaml` 파일에 CSS 클라이언트 확장을 지정합니다.
@@ -69,8 +65,6 @@ type: globalCSS
 시작하려면 [CSS 클라이언트 확장 사용](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) 을 참조하세요.
 
 ## 테마 CSS 클라이언트 확장
-
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
 [CSS 클라이언트 확장](#css-client-extensions) 페이지에 스타일을 추가하는 반면, 테마 CSS 클라이언트 확장은 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md)을 포함하여 페이지의 스타일을 재정의합니다. 클라이언트 확장은 `clay.css` 파일과 `main.css` 파일을 사용하여 사이트 테마에서 일반적으로 사용되는 동일한 이름의 파일을 대체합니다.
 
@@ -92,15 +86,11 @@ type: themeCSS
 
 ## 테마 Favicon 클라이언트 확장
 
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
-
 Liferay에서 페이지의 파비콘을 재정의하세요. 배포되면 제공된 아이콘 파일을 Liferay의 모든 페이지에서 사용할 수 있게 됩니다. 페이지 디자인 옵션 메뉴에서 페이지에 대한 파비콘을 구성할 때 별도의 **클라이언트 확장** 탭에서 액세스할 수 있습니다.
 
 ![페이지에 대한 파비콘을 구성할 때 특수 클라이언트 확장 탭의 클라이언트 확장에서 파비콘에 액세스하세요.](./front-end-client-extensions/images/02.png)
 
 ## 테마 스프라이트 맵 클라이언트 확장
-
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
 테마 스프라이트 맵 클라이언트 확장은 사이트 페이지의 스프라이트 맵을 재정의합니다. 스프라이트 맵을 `` 이미지로 정의하면 사이트의 현재 테마에서 사용되는 이미지를 대체합니다.
 
@@ -111,8 +101,6 @@ type: themeSpritemap
 ```
 
 ## 사용자 정의 요소 클라이언트 확장
-
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
 > 이전 이름은 Custom Element Remote App입니다.
 
@@ -129,8 +117,6 @@ type: customElement
 자세한 내용은 [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md) 을 참조하세요.
 
 ## IFrame 클라이언트 확장
-
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
 
 > 이전에는 IFrame 원격 앱으로 명명되었습니다.
 

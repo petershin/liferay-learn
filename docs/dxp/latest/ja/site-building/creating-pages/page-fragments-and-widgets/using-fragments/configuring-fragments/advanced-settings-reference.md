@@ -92,8 +92,6 @@ CSSクラス]テキストボックスには、自分で追加したCSSクラス�
 
 ### コンテンツの可視性を自動に設定
 
-{bdg-secondary}`利用可能 7.4 U37+/GA37+`
-
 デフォルトでは、Liferayはページ内のすべてのコンテナを自動的にレンダリングします。 しかし、コンテナの [`content-visibility`](https://drafts.csswg.org/css-contain/#propdef-content-visibility) プロパティを `auto` に設定すると、必要なときだけ要素がレンダリングされるようになります。 これにより、ページの読み込み性能を向上させることができます。
 
 ![コンテナのcontent-visibilityをautoに設定することで、ページロードのパフォーマンスを向上させることができます。](./advanced-settings-reference/images/06.png)

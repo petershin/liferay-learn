@@ -3,9 +3,9 @@ uuid: 916e394b-8115-4639-b465-d849ede6475b
 ---
 # Using a Theme Sprite Map Client Extension
 
-{bdg-secondary}`Available Liferay 7.4`
+{bdg-secondary}`Liferay 7.4`
 
-With a theme sprite map client extension, you can override the default [Clay](https://clayui.com/docs/components/icon.html) sprite map used for icons on a page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension. 
+With a theme sprite map client extension, you can override the default [Clay](https://clayui.com/docs/components/icon.html) sprite map used for icons on a page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension.
 
 ```{note}
 An SVG sprite map is an image that contains several icons grouped together, each with a unique ID. You can load the SVG and reference the individual icons by ID. This provides a slight performance improvement, as you can download and cache the sprite map once to display all the site icons.
@@ -13,29 +13,29 @@ An SVG sprite map is an image that contains several icons grouped together, each
 
 ## Prerequisites
 
-To start developing client extensions, 
+To start developing client extensions,
 
-1. Install Java (JDK 8 or JDK 11). 
+1. Install Java (JDK 8 or JDK 11).
 
     ```{note}
-    Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings. 
+    Check the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) for supported JDKs, databases, and environments. See [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) for recommended JVM settings.
     ```
 
 1. Download and unzip the sample workspace:
 
    ```bash
-   curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip 
+   curl -o com.liferay.sample.workspace-latest.zip https://repository.liferay.com/nexus/service/local/artifact/maven/content\?r\=liferay-public-releases\&g\=com.liferay.workspace\&a\=com.liferay.sample.workspace\&\v\=LATEST\&p\=zip
    ```
 
    ```bash
    unzip com.liferay.sample.workspace-latest.zip
    ```
 
-Now you have the tools to deploy your first theme sprite map client extension. 
+Now you have the tools to deploy your first theme sprite map client extension.
 
 ## Examine the Theme Sprite Map Project
 
-The theme sprite map client extension is in the sample workspace's `client-extensions/liferay-sample-theme-spritemap-1/` folder. It is defined in the `client-extension.yaml` file: 
+The theme sprite map client extension is in the sample workspace's `client-extensions/liferay-sample-theme-spritemap-1/` folder. It is defined in the `client-extension.yaml` file:
 
 ```yaml
 liferay-sample-theme-spritemap-1:
@@ -54,21 +54,21 @@ assemble:
       into: static
 ```
 
-This specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The SVG sprite map in a theme sprite map client extension is used as a static resource in Liferay. 
+This specifies that everything in the `assets/` folder should be included as a static resource in the built client extension `.zip` file. The SVG sprite map in a theme sprite map client extension is used as a static resource in Liferay.
 
 ```{important}
-The sample project's `assets/spritemap.svg` is a copy of the [Clay icons](https://clayui.com/docs/components/icon.html) sprite map used in Liferay. You won't notice any changes in the UI as all the icons used in Liferay are present in the example sprite map. 
+The sample project's `assets/spritemap.svg` is a copy of the [Clay icons](https://clayui.com/docs/components/icon.html) sprite map used in Liferay. You won't notice any changes in the UI as all the icons used in Liferay are present in the example sprite map.
 
-Since a sprite map client extension replaces the entire sprite map on the selected page, make sure that you have all the necessary icons with their corresponding IDs to avoid missing icons. 
+Since a sprite map client extension replaces the entire sprite map on the selected page, make sure that you have all the necessary icons with their corresponding IDs to avoid missing icons.
 ```
 
 ## Modify the Sprite Map
 
-To change a specific icon, you must find the ID of the icon. You can inspect the HTML element to find this. 
+To change a specific icon, you must find the ID of the icon. You can inspect the HTML element to find this.
 
 ![The navbar contains nine icons.](./using-a-theme-spritemap-client-extension/images/01.png)
 
-Given below are the IDs of the icons used on the top navbar. 
+Given below are the IDs of the icons used on the top navbar.
 
 | Number | Icon                                                                          | ID                     |
 | :----- | :---------------------------------------------------------------------------- | :--------------------- |
@@ -82,9 +82,9 @@ Given below are the IDs of the icons used on the top navbar.
 | 8      | ![Search icon](./using-a-theme-spritemap-client-extension/images/03.png)      | search                 |
 | 9      | ![User icon](./using-a-theme-spritemap-client-extension/images/04.png)        | user                   |
 
-To swap the pencil icon for a fish, 
+To swap the pencil icon for a fish,
 
-1. Find the `<symbol>` tag corresponding to the ID of `pencil` inside `assets/spritemap.svg`. You must open the SVG file in a text editor to view this. 
+1. Find the `<symbol>` tag corresponding to the ID of `pencil` inside `assets/spritemap.svg`. You must open the SVG file in a text editor to view this.
 
    ```html
    <symbol id="pencil" viewBox="0 0 512 512">

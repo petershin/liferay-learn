@@ -3,7 +3,7 @@ uuid: e1341d2b-d8f6-485d-b8c3-f8f781202d25
 ---
 # Creating Form Fragments
 
-{bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
+{bdg-secondary}`Liferay 7.4 U45+/GA45+`
 
 The [form components fragments](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) are for building your object's forms in a content page. If Liferay's form fragments don't satisfy your use case, create your own to achieve the desired design and functionality for your forms.
 

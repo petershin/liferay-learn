@@ -3,7 +3,7 @@ uuid: 65b4cc84-7474-473a-a399-1fa6231051ed
 ---
 # Using the Account Selector Fragment
 
-{bdg-secondary}`Available Liferay DXP 7.4 U72+/GA72+`
+{bdg-secondary}`Liferay DXP 7.4 U72+/GA72+`
 
 The Account Selector fragment provides an easy way for users to switch between their accounts when browsing products and creating orders.
 
@@ -21,7 +21,7 @@ The fragment works best when you have the [catalog](../commerce-storefront-pages
 
 1. Drag and drop the fragment onto the page. Do not mistake this fragment with the [Account Management widget](https://learn.liferay.com/dxp/latest/en/users-and-permissions/accounts/account-management-widget.html).
 
-1. Click _Publish_. 
+1. Click _Publish_.
 
    ![Click the account icon to open the account selector.](./using-the-account-selector-fragment/images/02.png)
 

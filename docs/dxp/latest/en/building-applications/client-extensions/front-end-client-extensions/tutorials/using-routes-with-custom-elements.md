@@ -3,7 +3,7 @@ uuid: 16455895-2b77-463c-bc0c-ed767b740b02
 ---
 # Using Routes with Custom Elements
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Custom element client extensions use Liferay's front-end infrastructure to register external applications with the Liferay platform and render them as widgets. For applications that include multiple routes (e.g., [React Router](https://reactrouter.com/), you can define remote application properties to determine which routes are used for a widget at runtime. These properties can be set for an application via the Remote Apps menu in Liferay or the widget's configuration options once deployed.
 

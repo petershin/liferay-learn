@@ -90,7 +90,7 @@ This role is automatically assigned to all users of an account and grants basic 
 
 ### Account Supplier
 
-{bdg-secondary}`Available Liferay DXP 7.4 U84+/GA84+`
+{bdg-secondary}`Liferay DXP 7.4 U84+/GA84+`
 
 > Account Role
 
@@ -141,7 +141,7 @@ You can use this role to oversee all the purchases made in the account. If there
 
 ### Supplier
 
-{bdg-secondary}`Available Liferay DXP 7.4 U84+/GA84+`
+{bdg-secondary}`Liferay DXP 7.4 U84+/GA84+`
 
 > Regular Role
 

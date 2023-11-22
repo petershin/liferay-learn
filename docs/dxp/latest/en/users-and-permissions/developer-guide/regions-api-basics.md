@@ -3,7 +3,7 @@ uuid: 2bc23521-81a7-40c4-b83a-4a6a10d9b1a5
 ---
 # Regions API Basics
 
-{bdg-secondary}`Available Liferay 7.4 U24+ and GA24+`
+{bdg-secondary}`Liferay 7.4 U24+ and GA24+`
 
 Use Liferay's REST APIs to create and manage regions.
 
@@ -24,7 +24,7 @@ Then, follow these steps:
    unzip liferay-r2p3.zip
    ```
 
-1. Use the cURL script to add a new region to a country. On the command line, navigate to the `curl` folder. Execute the `Region_POST_ToCountry.sh` script. 
+1. Use the cURL script to add a new region to a country. On the command line, navigate to the `curl` folder. Execute the `Region_POST_ToCountry.sh` script.
 
    ```bash
    ./Region_POST_ToCountry.sh 1234
@@ -52,7 +52,7 @@ Then, follow these steps:
    javac -classpath .:* *.java
    ```
 
-1. Run the `Region_POST_ToCountry.java` class: 
+1. Run the `Region_POST_ToCountry.java` class:
 
    ```bash
    java -classpath .:* -DcountryId=1234 Region_POST_ToCountry

@@ -3,13 +3,13 @@ uuid: 203429af-623b-4ad7-b5b1-0ffd147c7e06
 ---
 # Creating and Managing Display Page Templates
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
+{bdg-secondary}`Liferay DXP/Portal 7.3+`
 
 Display page templates define structures for displaying content at a dedicated friendly URL. These templates currently support the following content types:
 
 * [Blog Entries](../../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
-* [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`Available 7.4+`
-* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`Available 7.4+`
+* [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`7.4+`
+* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`7.4+`
 * [Documents](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
 * [Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
 
@@ -80,7 +80,7 @@ This gives you more freedom when dealing with objects and [forms mapped from obj
 
 ### Previewing the Display Page Template Content Mappings
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`7.4+`
 
 While editing, Liferay provides two ways to preview display page templates with content items.
 
@@ -92,7 +92,7 @@ Alternatively, from the display page template editor, click the *Options* menu(!
 
 ## Viewing Display Page Template Usage
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`7.4+`
 
 You can manage the different display page templates using the *Actions* menu (![Actions](../../../images/icon-actions.png)). From here, the *View Usages* option provides a list of content that uses a specific display page template other than the default template. This option is not available for default templates.
 

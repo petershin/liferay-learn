@@ -3,7 +3,7 @@ uuid: db94b834-100e-44a6-8d45-0f1ab870f547
 ---
 # Segmentation By Geolocation
 
-{bdg-secondary}`Available Liferay DXP 7.4 U44+/GA44+`
+{bdg-secondary}`Liferay DXP 7.4 U44+/GA44+`
 
 You can configure *Segments* by geolocation to display different pages dynamically or content based on the user's country. To display different pages, you can use [Experiences](../experience-personalization/content-page-personalization.md#understanding-how-experiences-work), and to display specific content on the page, you can use [Collections](../experience-personalization/personalizing-collections.md).
 

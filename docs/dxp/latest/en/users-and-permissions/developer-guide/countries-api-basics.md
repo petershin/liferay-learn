@@ -3,7 +3,7 @@ uuid: ad872c2b-d276-432f-8765-4658dfce1977
 ---
 # Countries API Basics
 
-{bdg-secondary}`Available Liferay 7.4 U24+ and GA24+`
+{bdg-secondary}`Liferay 7.4 U24+ and GA24+`
 
 Use Liferay's Rest APIs to create and manage countries.
 

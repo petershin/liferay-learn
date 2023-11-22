@@ -100,18 +100,18 @@ Use content display fragments to display site content individually or as part of
 <!--| Knowledge Base Article Navigation (Available 7.4 U_+/GA_+) | |-->
 
     ```{note}
-    Collection Filter fragments used in Collection Display fragments only work if mapped to object collection providers or blueprint collection providers. 
+    Collection Filter fragments used in Collection Display fragments only work if mapped to object collection providers or blueprint collection providers.
     ```
 
 ## Account
 
-{bdg-secondary}`Available Liferay DXP 7.4 U72+/GA72+`
+{bdg-secondary}`Liferay DXP 7.4 U72+/GA72+`
 
 Use the account selector fragment to switch easily between your accounts when browsing products and creating orders. See [Using the Account Selector Fragment](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-fragments/using-the-account-selector-fragment) for more information.
 
 ## Cart
 
-{bdg-secondary}`Available Liferay DXP 7.4 U69+/GA69+`
+{bdg-secondary}`Liferay DXP 7.4 U69+/GA69+`
 
 Use the mini cart fragment to obtain a detailed overview of your cart. You can use it to adjust the product quantity, remove items, start the checkout process, or easily search for and add products to your cart. See [Using the Mini Cart Fragment](https://learn.liferay.com/w/commerce/creating-store-content/liferay-commerce-fragments/using-the-mini-cart-fragment) for more information.
 
@@ -143,7 +143,7 @@ Use the highlights fragment to add image, text, and link elements to a content p
 
 ## Footers
 
-{bdg-secondary}`Available Liferay 7.3+`
+{bdg-secondary}`Liferay 7.3+`
 
 Use footer fragments to add a custom footer to [master page templates](../../defining-headers-and-footers/master-page-templates.md). Each footer includes a navigation menu, sign-in link, image element, and copyright text. Liferay provides the following layouts for footer fragments:
 
@@ -151,7 +151,7 @@ Use footer fragments to add a custom footer to [master page templates](../../def
 
 ## Navigation Bars
 
-{bdg-secondary}`Available Liferay 7.3+`
+{bdg-secondary}`Liferay 7.3+`
 
 Use navigation bar fragments to add a custom header to [master page templates](../../defining-headers-and-footers/master-page-templates.md). Each navigation bar includes a navigation menu, sign-in link, and image element for your logo. Liferay provides the following layouts for navigation bar fragments:
 
@@ -159,13 +159,13 @@ Use navigation bar fragments to add a custom header to [master page templates](.
 
 ## Menu Display
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Using the menu display fragment, you can add menus to your content pages. Once deployed, you can select from any predefined [navigation menu](../../../site-navigation/using-the-navigation-menus-application.md). To learn more about how to configure the menu display fragment for your site navigation, see Configuring the Menu Display Widget in [Configuring Menu Displays](../../../site-navigation/configuring-menu-displays.md).
 
 <!--## Product-->
 
-<!-- {bdg-secondary}`Available Liferay 7.4 U_+/GA_+` -->
+<!-- {bdg-secondary}`Liferay 7.4 U_+/GA_+` -->
 
 <!--
 | Since this was a recent implementation, Commerce team will explain how to properly use these fragments. This will be documented in the Commerce section, and we'll link it to this article.
@@ -178,4 +178,3 @@ Using the menu display fragment, you can add menus to your content pages. Once d
 [Content Page Editor UI Reference](../../using-content-pages/content-page-editor-ui-reference.md)
 
 [Using Fragments](../using-fragments.md)
-

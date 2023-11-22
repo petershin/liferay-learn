@@ -3,11 +3,11 @@ uuid: 2231e20c-7ceb-4f94-9d14-182576f0928f
 ---
 # Using Order Importer
 
-{bdg-secondary}`Available Liferay DXP 7.4 U1+/GA5+`
+{bdg-secondary}`Liferay DXP 7.4 U1+/GA5+`
 
-There are two ways to create a new order on a Minium site: 
+There are two ways to create a new order on a Minium site:
 
-1. Click the _Account Selector_ from the top right and select *Create New Order*. 
+1. Click the _Account Selector_ from the top right and select *Create New Order*.
 
 1. Go to the *Pending Orders* screen and click *Add Order*.
 

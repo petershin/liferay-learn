@@ -3,7 +3,7 @@ uuid: fdced878-aea0-40b8-9959-828e9787d373
 ---
 # Creating a Basic Custom Element
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Custom element client extensions use Liferay's front-end infrastructure to register external, remote applications with the Liferay platform and render them as widgets.
 

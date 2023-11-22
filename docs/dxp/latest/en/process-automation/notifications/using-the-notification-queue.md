@@ -3,13 +3,13 @@ uuid: 355cd01a-1910-4066-8b7f-fff359cc14f5
 ---
 # Using the Notification Queue
 
-{bdg-secondary}`Available Liferay 7.4 U75+/GA75+`
+{bdg-secondary}`Liferay 7.4 U75+/GA75+`
 
-Liferay provides the Notification Queue application for reviewing email notifications triggered by an Object action. You can verify the status of notifications and resend them if needed. 
+Liferay provides the Notification Queue application for reviewing email notifications triggered by an Object action. You can verify the status of notifications and resend them if needed.
 
 ![Review email notifications in the Notification Queue application.](./using-the-notification-queue/images/01.png)
 
-The application lists the following details for each notification: 
+The application lists the following details for each notification:
 
 | Column     | Description                                                                                                                                                                                 |
 |:-----------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

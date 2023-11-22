@@ -3,7 +3,7 @@ uuid: f2b9e469-c8cc-44ca-a7e6-cff4d6dbe2b4
 ---
 # Translating Content Pages
 
-{bdg-secondary}`Available Liferay 7.4 U15+ and GA15+`
+{bdg-secondary}`Liferay 7.4 U15+ and GA15+`
 
 Liferay provides integrated tools for translating *Content Pages*, so you can create engaging, localized experiences for your global users. With these tools, you can manually translate Content Page experiences or import translations as XLIFF files.
 

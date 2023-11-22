@@ -3,7 +3,7 @@ uuid: 4f659a0a-7b7b-4798-8c88-21222e42ab81
 ---
 # Web Application Firewall
 
-{bdg-secondary}`Available in Liferay Cloud 5.x.x`
+{bdg-secondary}`Liferay Cloud 5.x.x`
 
 Liferay Cloud includes a web application firewall called [ModSecurity](https://github.com/SpiderLabs/ModSecurity). It inspects requests sent to the web server against a predefined set of custom rules. This step prevents typical web application real time L7 attacks, like XSS, SQL Injection, and other forms of hijacking attempts that might lead to loss of sensitive information.
 

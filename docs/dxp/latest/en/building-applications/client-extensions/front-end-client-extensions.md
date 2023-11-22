@@ -29,7 +29,7 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Available Liferay Experience Cloud (SaaS)`
+{bdg-secondary}`Liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Liferay Experience Cloud (SaaS)`   {bdg-unsupported}`Liferay Cloud: Self-Managed`
 
 Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JavaScript, Theme CSS, Theme Favicon, Custom Element, and IFrame.
 

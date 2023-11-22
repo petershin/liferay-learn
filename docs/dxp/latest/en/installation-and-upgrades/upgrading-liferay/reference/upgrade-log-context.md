@@ -3,7 +3,7 @@ uuid: f2e66f48-57bc-44aa-94f4-d480c93dbb5a
 ---
 # Upgrade Log Context
 
-{bdg-secondary}`Available Liferay DXP 7.4 U72 / Liferay Portal 7.4 GA72`
+{bdg-secondary}`Liferay DXP 7.4 U72 / Liferay Portal 7.4 GA72`
 
 Enable the upgrade log context to display identifiers for upgrade related processes in your console logs. The possible identifiers are:
 
@@ -15,7 +15,7 @@ The logs can be enabled through the [upgrade tool](../upgrade-basics/using-the-d
 
 If using the upgrade tool, set `upgrade.log.context.enabled=true` in your `/tools/portal-tools-db-upgrade-client/portal-upgrade-ext.properties` file.
 
-If enabling upgrade at startup, set `upgrade.log.context.enabled=true` in your `{Liferay-Home}/portal-ext.properties` file. 
+If enabling upgrade at startup, set `upgrade.log.context.enabled=true` in your `{Liferay-Home}/portal-ext.properties` file.
 
 Next, copy the [`portal-impl/src/META-INF/portal-log4j.xml`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/META-INF/portal-log4j.xml) file into `bundles/tomcat/webapps/ROOT/WEB-INF/classes/META-INF` and rename the file to `portal-log4j-ext.xml`. Then find the appender definition:
 

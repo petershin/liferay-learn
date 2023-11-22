@@ -108,7 +108,7 @@ This JSON configuration creates a checkbox you can implement for cases where a b
 
 ## Color Picker Configuration
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 The color picker JSON configuration creates a flexible color selector where any color can be selected. You can use any of these methods to select a color:
 
@@ -164,7 +164,7 @@ When the fragment is rendered, the token `${configuration.OBJECT_NAME}` is repla
 
 ## Length Configuration
 
-{bdg-secondary}`Available Liferay 7.4 U44 and GA44+`
+{bdg-secondary}`Liferay 7.4 U44 and GA44+`
 
 The `length` configuration type creates a field where you can enter a number and choose predefined units or specify your own units for settings like width, margins, and padding.
 
@@ -193,7 +193,7 @@ In the user interface, you can choose from the available units or specify a cust
 
 ## Item Selector Configuration
 
-{bdg-secondary}`Available Liferay 7.3+`
+{bdg-secondary}`Liferay 7.3+`
 
 This configuration creates a selector for selecting one existing piece of content (a document, web content article, blog entry, category, product, or knowledge base article by default) to include in the fragment.
 
@@ -343,7 +343,7 @@ Here is an example of fragment HTML that uses the URL configuration in the above
 
 ## Video Selector
 
-{bdg-secondary}`Available Liferay 7.4+`
+{bdg-secondary}`Liferay 7.4+`
 
 Using the `videoSelector` type, you can create a video selector to incorporate an [external video](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) fragment in another fragment.
 
@@ -413,7 +413,7 @@ The `videoSelector` type is compatible with the [external video](../../../creati
 
 ## Collection Selector
 
-{bdg-secondary}`Available Liferay 7.3+`
+{bdg-secondary}`Liferay 7.3+`
 
 Using the `collectionSelector` configuration type, you can develop a fragment that includes a [collection](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) or [collection provider](../../../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md). You can use the `collectionSelector` with both manual and dynamic collections.
 

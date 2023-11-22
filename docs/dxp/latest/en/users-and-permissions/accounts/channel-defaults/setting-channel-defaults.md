@@ -3,10 +3,10 @@ uuid: a36c0089-84d7-49a1-a928-5332fc1a970c
 ---
 # Setting Channel Defaults
 
-{bdg-secondary}`Available Liferay 7.4 U49+/GA49+`
+{bdg-secondary}`Liferay 7.4 U49+/GA49+`
 
-Users with the necessary account management permissions can set channel defaults for business accounts. 
-<!-- Link to Channel Defaults Permission Guide when published --> 
+Users with the necessary account management permissions can set channel defaults for business accounts.
+<!-- Link to Channel Defaults Permission Guide when published -->
 
 1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ) and navigate to *Control Panel* &rarr; *Accounts*.
 
@@ -15,18 +15,18 @@ Users with the necessary account management permissions can set channel defaults
 Here you can set the following defaults.
 
 ```{note}
-If you set defaults for individual channels and all other channels, the individual defaults takes priority if eligible. 
+If you set defaults for individual channels and all other channels, the individual defaults takes priority if eligible.
 ```
 
 ## Default Billing and Shipping Addresses
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Billing Addresses or Shipping Addresses. 
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Billing Addresses or Shipping Addresses.
 
-1. Select *All Channels* or an individual channel. 
+1. Select *All Channels* or an individual channel.
 
-1. Select an address. 
+1. Select an address.
 
-1. Click *Save*. 
+1. Click *Save*.
 
    ![Set default billing and shipping addresses for all or individual channels.](./setting-channel-defaults/images/01.png)
 
@@ -36,9 +36,9 @@ Only users with account management permissions can manage channel defaults. Howe
 
 ## Default Terms and Conditions
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Delivery Terms and Conditions or Payment Terms and Conditions. 
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Delivery Terms and Conditions or Payment Terms and Conditions.
 
-1. Select *All Channels* or an individual channel. 
+1. Select *All Channels* or an individual channel.
 
 1. (Optional) Enable the *Override Eligibility* toggle to override eligibility set for the terms and conditions.
 
@@ -46,9 +46,9 @@ Only users with account management permissions can manage channel defaults. Howe
    Payment terms are linked to a payment method and delivery terms are linked to a shipping option. When there are multiple eligible terms and conditions for a payment method or shipping option, overriding eligibility sets the selected terms and conditions as the default, regardless of eligibility. See [Understanding Eligibility and Channel Defaults](../channel-defaults.md#understanding-eligibility-and-channel-defaults) to learn more.
    ```
 
-1. Select a *term*. 
+1. Select a *term*.
 
-1. Click *Save*. 
+1. Click *Save*.
 
    ![Set default terms and conditions for all or individual channels.](./setting-channel-defaults/images/02.png)
 
@@ -56,53 +56,53 @@ Only users with account management permissions can manage channel defaults. Howe
 
 The default shipping value is determined by existing priority settings for the channel. If other shipping options are available, you can select one of them as the default:
 
-1. Go to *Shipping Options* and click *Edit* for the desired channel. 
+1. Go to *Shipping Options* and click *Edit* for the desired channel.
 
-1. Select a shipping option. 
+1. Select a shipping option.
 
-1. Click *Save*. 
+1. Click *Save*.
 
    ![Set a default shipping option for individual channels.](./setting-channel-defaults/images/03.png)
 
 ## Default Price Lists and Discounts
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Price Lists or Discounts. 
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Price Lists or Discounts.
 
-1. Select *All Channels* or an individual channel. 
+1. Select *All Channels* or an individual channel.
 
-1. (Optional) Enable the *Override Eligibility* toggle to override existing eligibility criteria configured for price lists. 
+1. (Optional) Enable the *Override Eligibility* toggle to override existing eligibility criteria configured for price lists.
 
-1. Select a *price list* or *discount*. 
+1. Select a *price list* or *discount*.
 
-1. Click *Save*. 
+1. Click *Save*.
 
    ![Set a default price list or discount for all or individual channels.](./setting-channel-defaults/images/04.png)
 
 ## Default Currencies
 
-1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Currencies. 
+1. Click *Add* ( ![Add Button](../../../images/icon-add.png) ) under Currencies.
 
-1. Select *All Channels* or an individual channel. 
+1. Select *All Channels* or an individual channel.
 
-1. Select a *currency*. 
+1. Select a *currency*.
 
    ```{important}
-   This sets the default channel currency for the account during navigation only. Product pages and the catalog use the currency set here. The currency set for the channel at the time of creation is not modified. 
+   This sets the default channel currency for the account during navigation only. Product pages and the catalog use the currency set here. The currency set for the channel at the time of creation is not modified.
    ```
 
-1. Click *Save*. 
+1. Click *Save*.
 
    ![Set a default currency for all or individual channels.](./setting-channel-defaults/images/05.png)
 
 ## Default Payment Methods
 
-The default payment method is determined by existing priority settings for the channel. If other payment methods are available, you can select one of them as the default: 
+The default payment method is determined by existing priority settings for the channel. If other payment methods are available, you can select one of them as the default:
 
-1. Go to *Payment Methods* and click *Edit* for the desired channel. 
+1. Go to *Payment Methods* and click *Edit* for the desired channel.
 
-1. Select a payment method. 
+1. Select a payment method.
 
-1. Click *Save*. 
+1. Click *Save*.
 
    ![Set a default payment method for individual channels.](./setting-channel-defaults/images/06.png)
 

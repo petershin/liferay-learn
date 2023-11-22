@@ -3,7 +3,7 @@ uuid: 10493643-7970-49b1-89a8-2363bc7a390a
 ---
 # Asset Library Content
 
-{bdg-secondary}`Available for Liferay DXP/Portal 7.3+`
+{bdg-secondary}`Liferay DXP/Portal 7.3+`
 
 Asset Libraries provide a convenient way to share content across Liferay Sites while streamlining content collaboration and reducing the risk of data duplication. To add, view, and manage an Asset Library's content, first navigate to the Library's menu page.
 

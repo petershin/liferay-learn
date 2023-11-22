@@ -11,7 +11,7 @@ By default, all styles (including color, spacing, etc.) are applied to the entir
 
 ## Changing How Styles are Applied
 
-{bdg-secondary}`Available Liferay 7.4 U31+ and GA31+`
+{bdg-secondary}`Liferay 7.4 U31+ and GA31+`
 
 You must change the fragment's HTML configuration to change how styles apply to it. Add the `data-lfr-styles` attribute to an element contained in the fragment to make any styles applied to them instead apply to that specific element. *Only one `data-lfr-styles` attribute is allowed per fragment.*
 

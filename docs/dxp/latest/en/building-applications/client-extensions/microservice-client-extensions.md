@@ -9,7 +9,7 @@ uuid: c35ace6c-9e29-4e9e-be37-b4799a8b21d5
 ---
 # Microservice Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Available Liferay Experience Cloud (SaaS)`
+{bdg-secondary}`Liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Liferay Experience Cloud (SaaS)`   {bdg-unsupported}`Liferay Cloud: Self-Managed`
 
 Define microservice client extensions to run your own code in response to events in your Liferay instance. How you implement the code is up to you: use the patterns and technologies you like. Microservice client extensions are hosted outside of Liferay and are triggered by cues from Liferay itself.
 

@@ -3,7 +3,7 @@ uuid: 630e4176-d453-436c-978a-0f1fad059614
 ---
 # Configuring Site Template Propagation
 
-{bdg-secondary}`Available for Liferay 7.4 U23+/GA23+`
+{bdg-secondary}`Liferay 7.4 U23+/GA23+`
 
 By default, site template changes are propagated automatically to a connected site when a user visits the site after the template is updated. However, you can configure an additional manual trigger that propagates to all connected sites simultaneously. To enable manual propagation, use the Trigger Propagation setting. When enabled, clicking the [Ready for Propagation](./propagating-template-changes.md#enabling-and-disabling-propagation) button in the site template editor triggers propagation to all connected sites. Enabling this setting does not stop the automatic propagation of template changes that occurs when users visit connected sites.
 

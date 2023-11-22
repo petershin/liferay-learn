@@ -3,7 +3,7 @@ uuid: bc607275-9efe-4dee-9199-22ccc118a821
 ---
 # Using a Theme CSS Client Extension
 
-{bdg-secondary}`Available Liferay 7.4`
+{bdg-secondary}`Liferay 7.4`
 
 With a theme CSS client extension, you can override the current theme's CSS files (`main.css` and `clay.css`) to change the look and feel of a page. Start with a client extension from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace).
 

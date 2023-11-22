@@ -3,7 +3,7 @@ uuid: bf0d7ce5-eba6-44af-b58c-48c0c80bfcfb
 ---
 # Channel Defaults Permissions Reference
 
-{bdg-secondary}`Available Liferay DXP 7.4 U75+/GA75+`
+{bdg-secondary}`Liferay DXP 7.4 U75+/GA75+`
 
 Setting channel defaults for an account ensures that addresses, shipping options, terms and conditions, and payment methods are pre-selected for checkout. This can provide a smoother checkout experiences and faster order creation.
 

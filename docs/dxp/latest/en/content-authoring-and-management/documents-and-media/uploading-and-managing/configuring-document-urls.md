@@ -3,12 +3,12 @@ uuid: a266c23a-5c23-4de6-a818-21e83f79cb1e
 ---
 # Configuring Document URLs
 
-{bdg-secondary}`Available Liferay 7.4 U27+/GA27+`
+{bdg-secondary}`Liferay 7.4 U27+/GA27+`
 
 When a file is uploaded, Liferay automatically generates a friendly URL for accessing it. This URL uses the following structure: `[server-address]/documents/d/[site's friendly url]/[file-friendly-URL]`. Unless specified during upload, Liferay uses the file's name for the friendly URL, but you can change this value at any time. Once set, you can access the latest version of the file at its friendly URL.
 
 ```{note}
-For 7.4 U26/GA26 and earlier versions, Liferay generates file URLs using the following structure: `[server-address]/documents/[site-id]/[folder-id]/[file-name]/[UUID]`. If you're updating to U27+/GA27+, existing files continue to use their old URLs based on this pattern. If, however, a user updates an existing file, Liferay converts its URL to use the new structure. Until updated, you can continue to access your files using their old URLs. 
+For 7.4 U26/GA26 and earlier versions, Liferay generates file URLs using the following structure: `[server-address]/documents/[site-id]/[folder-id]/[file-name]/[UUID]`. If you're updating to U27+/GA27+, existing files continue to use their old URLs based on this pattern. If, however, a user updates an existing file, Liferay converts its URL to use the new structure. Until updated, you can continue to access your files using their old URLs.
 ```
 
 ## Setting Friendly URLs for Documents
@@ -16,7 +16,7 @@ For 7.4 U26/GA26 and earlier versions, Liferay generates file URLs using the fol
 You can configure a file's friendly URL manually during [file upload](./uploading-files.md) or whenever editing the file.
 
 ```{note}
-When uploading multiple files, each file's friendly URL is generated automatically using its name. 
+When uploading multiple files, each file's friendly URL is generated automatically using its name.
 ```
 
 Follow these steps to set a file's friendly URL:

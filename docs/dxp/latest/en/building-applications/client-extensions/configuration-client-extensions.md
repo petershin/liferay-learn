@@ -7,7 +7,7 @@ uuid: 654223de-17be-4786-a90d-775f986c0911
 ---
 # Configuration Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Available Liferay Experience Cloud (SaaS)`
+{bdg-secondary}`Liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Liferay Experience Cloud (SaaS)`   {bdg-unsupported}`Liferay Cloud: Self-Managed`
 
 Liferay instance configurations are deployable with client extensions. For example, you can deploy OAuth2 authentication profiles as configuration client extensions, enabling your other client extensions that require authentication.
 

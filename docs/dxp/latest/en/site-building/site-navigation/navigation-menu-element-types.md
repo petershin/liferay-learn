@@ -41,7 +41,7 @@ If a Category added as a Navigation Menu element contains Subcategories, changes
 
 ## Vocabularies
 
-{bdg-secondary}`Available in Liferay Portal 7.4 GA26+, DXP 7.4 U26+`
+{bdg-secondary}`Liferay Portal 7.4 GA26+, DXP 7.4 U26+`
 
 You can add entire [Vocabularies](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md#defining-vocabularies) as menu elements. Vocabularies dynamically update so that all changes to the Categories within them and their hierarchies reflect in the Navigation Menu itself. However, this does not allow you to reorder or change the hierarchy of the contained Categories; if you want to create a different hierarchy of Categories, then [add the Categories individually outside of the Vocabulary](#categories) instead.
 

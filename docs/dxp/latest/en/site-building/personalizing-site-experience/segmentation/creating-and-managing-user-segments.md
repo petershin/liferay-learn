@@ -7,9 +7,9 @@ Using *Segments* you can create different groups of users based on a common set 
 
 ## Compound Segments
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
+{bdg-secondary}`Liferay DXP/Portal 7.3+`
 
-You can combine existing Segments to create a new _Compound Segment_. The Compound Segment inherits the properties from the Segments it's based on and updates the members automatically. You can add additional properties to further customize the Compound Segment. 
+You can combine existing Segments to create a new _Compound Segment_. The Compound Segment inherits the properties from the Segments it's based on and updates the members automatically. You can add additional properties to further customize the Compound Segment.
 
 To understand how Compound Segments work, consider the following example. Visitors from the USA and Canada have different needs, so you create two Segments with different properties, one Segment for each country. Later, you create a new standard Segment for North America visitors, where you manually copy the properties of the USA and Canada Segments. When you change the properties of the USA or Canada Segments, the North America Segment doesn't inherit the changes. You must manually update the North America segment to reflect these changes. However, if you create the North America segment as a Compound Segment, this Compound Segment automatically updates its definition and members when you change the USA or Canada Segments.
 
@@ -37,7 +37,7 @@ These steps describe how to create a new Segment:
 
 1. From the *Properties* area, select the group and property to define your Segment. Drag and drop the *Property* to the *Conditions* area.
 
-1. Configure the Conditions for your segment (see [Configuring Segment's Conditions](#configuring-segment-conditions) below). 
+1. Configure the Conditions for your segment (see [Configuring Segment's Conditions](#configuring-segment-conditions) below).
 
 1. Click *Save*.
 

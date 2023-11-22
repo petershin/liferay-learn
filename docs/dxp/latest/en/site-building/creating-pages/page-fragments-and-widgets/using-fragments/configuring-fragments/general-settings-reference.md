@@ -215,7 +215,7 @@ This fragment is only displayed when a filter is applied to the target collectio
 
 ## Form Fragment Options
 
-{bdg-secondary}`Available Liferay 7.4 U45+/GA45+`
+{bdg-secondary}`Liferay 7.4 U45+/GA45+`
 
 Form fragments include unique configuration options. To access them, you must map the fragment to an object field.
 

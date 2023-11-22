@@ -3,7 +3,7 @@ uuid: 49804344-72f6-4e92-aa84-5b99e2bfd982
 ---
 # Configuring Microsoft Office 365 with OAuth
 
-{bdg-secondary}`Available Liferay DXP 7.4 U79+/Liferay Portal 7.4 GA79+`
+{bdg-secondary}`Liferay DXP 7.4 U79+/Liferay Portal 7.4 GA79+`
 
 Connect your Microsoft email service to Liferay with the use of OAuth 2.0 authorization. Note, Microsoft requires OAuth2 and no longer supports basic authentication (i.e. connecting with email address and password).
 
@@ -23,7 +23,7 @@ For additional support or troubleshooting with this step, contact Microsoft.
 
 ## Mail Configuration in Liferay
 
-1. Navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_. 
+1. Navigate to _Global Menu_ (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Instance Settings_.
 
 1. Click _Email_.
 

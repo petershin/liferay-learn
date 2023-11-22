@@ -3,7 +3,7 @@ uuid: bbabbf34-7b53-442e-802f-f7ede39eaf0c
 ---
 # Monitoring Upgrades with MBeans
 
-{bdg-secondary}`Available Liferay DXP 7.4 U76 / Liferay Portal 7.4 GA76`
+{bdg-secondary}`Liferay DXP 7.4 U76 / Liferay Portal 7.4 GA76`
 
 When upgrade upon startup is enabled, the upgrade process can be monitored with MBeans through a JVM management tool (e.g. JConsole). Enable upgrade on startup by setting `upgrade.database.auto.run=true` in your [portal properties](../../reference/portal-properties.md).
 

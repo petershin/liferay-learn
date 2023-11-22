@@ -3,7 +3,7 @@ uuid: 1154e55c-8ca4-471a-b20c-04230bba01ab
 ---
 # Using Workflow with Accounts
 
-{bdg-secondary}`Available Liferay 7.4 U49+/GA49+`
+{bdg-secondary}`Liferay 7.4 U49+/GA49+`
 
 Accounts are fully integrated with Liferay's [workflow engine](../../process-automation/workflow/introduction-to-workflow.md) so you can enable an approval process for account creation.
 

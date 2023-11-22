@@ -3,7 +3,7 @@ uuid: 5f12dd5f-aceb-4923-b761-bcb2906d8b9a
 ---
 # Personalizing Collections
 
-{bdg-secondary}`Available Liferay Portal 7.3 GA6 / DXP 7.3+`
+{bdg-secondary}`Liferay Portal 7.3 GA6 / DXP 7.3+`
 
 By default, any user can see all the collection's content and is part of the Anyone personalized variation. However, you can create a personalized variation of the collection's items using [segments](../segmentation/creating-and-managing-user-segments.md). When you use a personalized variation, the items that are part of your collection don't change, but the collection page, collection display fragment, or asset display widget show the items filtered for the segment.
 
@@ -37,7 +37,7 @@ You can now control what users can see by [prioritizing personalized variations]
 
 ## Prioritizing Variations
 
-{bdg-secondary}`Available for Liferay DXP 7.4+`
+{bdg-secondary}`for Liferay DXP 7.4+`
 
 For situations where a user may belong to multiple segments, you can [combine collections entries](#combining-collection-entries-from-all-segments) from all the segments to which the users belong or prioritize a personalized variation to determine which personalized variation is displayed to a user.
 

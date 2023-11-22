@@ -14,7 +14,7 @@ uuid: 0af96bfe-53b9-4ae1-bd1f-a372afb783a2
 ---
 # Inventory Management
 
-{bdg-secondary}`Available Commerce 2.1+`
+{bdg-secondary}`Commerce 2.1+`
 
 Liferay's inventory management tools can support a wide range of commerce use cases, from a single storefront with one warehouse to multiple sales channels with geographically distributed warehouses.
 

@@ -3,7 +3,7 @@ uuid: 92b925e3-498f-4d02-be44-40d5252f30e1
 ---
 # Upgrading Your Database Tables
 
-{bdg-secondary}`Available Liferay DXP 7.4 U10+ or Liferay Portal 7.4 GA14+`
+{bdg-secondary}`Liferay DXP 7.4 U10+ or Liferay Portal 7.4 GA14+`
 
 An upgrade of your application may require making changes to your database tables. Liferay's Upgrade framework makes it easy to make these changes. Deploy the sample project to see this upgrade process. See [Creating Upgrade Processes for Modules](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules) for previous versions of Liferay.
 

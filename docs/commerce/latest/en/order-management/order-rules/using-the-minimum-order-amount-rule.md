@@ -3,9 +3,9 @@ uuid: 55828537-580c-403d-9e16-e178230bb2f7
 ---
 # Using the Minimum Order Amount Rule
 
-{bdg-secondary}`Available Liferay DXP 7.4 U1+/GA5+`
+{bdg-secondary}`Liferay DXP 7.4 U1+/GA5+`
 
-Because of the cost to fulfill an order, you may want to accept only orders above a certain amount. You can do this through Order Rules by setting a minimum order amount below which customer checkout is prevented. 
+Because of the cost to fulfill an order, you may want to accept only orders above a certain amount. You can do this through Order Rules by setting a minimum order amount below which customer checkout is prevented.
 
 ## Order Rules Overview
 
@@ -36,4 +36,4 @@ This opens a configuration view for the Order Rule. The *Priority* decides which
 
 ![You can set the Order Rule eligibility for Accounts, Account Groups, Channels or Order Types.](./using-the-minimum-order-amount-rule/images/03.png)
 
-Under the eligibility tab, you can set the Order Rule eligibility for Accounts, Account Groups, Channels or Order Types. By default it is applicable to all of these. If you want to associate it with a specific entity, choose it by clicking the radio button and using the search bar. 
+Under the eligibility tab, you can set the Order Rule eligibility for Accounts, Account Groups, Channels or Order Types. By default it is applicable to all of these. If you want to associate it with a specific entity, choose it by clicking the radio button and using the search bar.

@@ -3,7 +3,7 @@ uuid: 00bb067c-b489-4ebd-9ba2-767303b21401
 ---
 # Web Server Service (Nginx)
 
-The Nginx web server functions as a gateway from the open internet to your Liferay Cloud services. It handles all traffic from your users and acts as a high-performance web server. 
+The Nginx web server functions as a gateway from the open internet to your Liferay Cloud services. It handles all traffic from your users and acts as a high-performance web server.
 
 ![The web server is one of several services available in Liferay Cloud.](./web-server-service/images/01.png)
 
@@ -11,7 +11,7 @@ See the [Web server service limitations](../reference/platform-limitations.md#we
 
 ## Configurations
 
-Although Liferay Cloud's services are fine-tuned to work well by default, you may need to configure Nginx further. To do this, you can include any configuration (`.conf`) file inside the `configs/{ENV}/conf.d/` folder. When you deploy your changes, the file is automatically injected into your service and overwrites the default configuration. Here's an example folder structure with a configuration file inside the appropriate directory: 
+Although Liferay Cloud's services are fine-tuned to work well by default, you may need to configure Nginx further. To do this, you can include any configuration (`.conf`) file inside the `configs/{ENV}/conf.d/` folder. When you deploy your changes, the file is automatically injected into your service and overwrites the default configuration. Here's an example folder structure with a configuration file inside the appropriate directory:
 
     webserver
     ├── configs
@@ -24,7 +24,7 @@ Files in `/webserver/configs/{ENV}/` are copied as overrides into `/etc/nginx/` 
 
 ## Automatic Log Rotation
 
-{bdg-secondary}`Available web server version 5.3.0+`
+{bdg-secondary}`Web server version 5.3.0+`
 
 Nginx's access and error logs (by default, stored in the Nginx container's `/var/log/nginx/` directory) automatically rotate to prevent the individual files from becoming too large to read. On a regular interval (by default, every midnight in UTC), the current access and error log files are rotated and replaced with new files. Automatic rotation also occurs if the files reach a certain maximum size threshold (by default, 50 MB).
 
@@ -61,7 +61,7 @@ All environment variables and other forms of configuration for Nginx are in the 
 
 ## Scripts
 
-You can use scripts for more extensive customizations, but you must use caution when doing so. This is the most powerful way to customize the web server service and can cause undesired side effects. 
+You can use scripts for more extensive customizations, but you must use caution when doing so. This is the most powerful way to customize the web server service and can cause undesired side effects.
 
 Any `.sh` files found in the `configs/{ENV}/scripts/` folder are run prior to starting your service. For example, you can place a script in this directory structure to remove all log files:
 

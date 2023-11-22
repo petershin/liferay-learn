@@ -3,7 +3,7 @@ uuid: 5a7cb3ee-21ea-4d58-ab1b-1d4d9af4916f
 ---
 # Session Property Vocabularies
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
+{bdg-secondary}`Liferay DXP/Portal 7.3+`
 
 With a *Session Property Vocabulary*, you can create [session-based Segment properties](../../site-building/personalizing-site-experience/segmentation/segments-editor-ui-reference.md#session-properties) using predefined values. This option is useful when you don't want the Segment editor to enter the properties' values manually while creating a new Segment; instead, you want the user to select them from a list of predefined values. Session Property Vocabularies facilitate the task of defining Segments and eliminate manual entry errors.
 

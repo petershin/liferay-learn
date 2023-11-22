@@ -3,7 +3,7 @@ uuid: 7db077d3-aec1-400b-8475-62390f01bd47
 ---
 # Using the Mini Cart Fragment
 
-{bdg-secondary}`Available Liferay DXP 7.4 U69+/GA69+`
+{bdg-secondary}`Liferay DXP 7.4 U69+/GA69+`
 
 The Mini Cart fragment provides a detailed overview of your cart. You can use it to increase or decrease product quantity, delete products, submit the cart for checkout, or search and quickly add products to the cart.
 
@@ -19,7 +19,7 @@ For the fragment to work correctly, your site must have [catalog](../commerce-st
 
 1. Drag and drop the fragment onto the page. Do not mistake this fragment with the [Mini Cart](../liferay-commerce-widgets/using-the-mini-cart-widget.md) widget.
 
-1. Click _Publish_. 
+1. Click _Publish_.
 
    ![Click the cart icon to open the Mini Cart.](./using-the-mini-cart-fragment/images/02.png)
 
@@ -44,7 +44,7 @@ After adding the Mini Cart fragment to a page,
 
    ![The Mini Cart fragment gives a detailed overview of the current cart status.](./using-the-mini-cart-fragment/images/04.png)
 
-The header area contains two buttons: 
+The header area contains two buttons:
 
 **View Details:** Go to the Open Carts page to view more details about the open order.
 

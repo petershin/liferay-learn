@@ -3,7 +3,7 @@ uuid: a8159380-3119-46c5-be6e-d9e24e60c325
 ---
 # Using a CSS Client Extension
 
-{bdg-secondary}`Available Liferay 7.4`
+{bdg-secondary}`Liferay 7.4`
 
 CSS client extensions introduce new CSS styling to pages. A deployed CSS client extension on a page adds to the page’s existing styling, including theme and style book settings. Start with a client extension (from the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace)).
 

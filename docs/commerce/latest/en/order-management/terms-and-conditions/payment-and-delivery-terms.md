@@ -3,11 +3,11 @@ uuid: 8ab41411-16bc-4600-96bd-0808f9459d1f
 ---
 # Payment and Delivery Terms
 
-{bdg-secondary}`Available Liferay DXP 7.4 U16+/GA16+`
+{bdg-secondary}`Liferay DXP 7.4 U16+/GA16+`
 
 ## Payment Terms
 
-Payment Terms govern the terms of a transaction between a buyer and seller. You can specify different Payment Terms for different customers. Liferay provides an editable text field for defining the conditions below, as well as ones you create. 
+Payment Terms govern the terms of a transaction between a buyer and seller. You can specify different Payment Terms for different customers. Liferay provides an editable text field for defining the conditions below, as well as ones you create.
 
 * The number of days the buyer has to clear their dues.
 * Late fees, if any, for failing to pay on the due date.
@@ -70,7 +70,7 @@ If there are multiple Payment Terms linked to a payment method, the one with the
 
 ## Delivery Terms
 
-Delivery Terms define the conditions for the delivery of an order between a buyer and a seller. You can specify different Delivery Terms for different customers. Delivery Terms can have the conditions below and any you create: 
+Delivery Terms define the conditions for the delivery of an order between a buyer and a seller. You can specify different Delivery Terms for different customers. Delivery Terms can have the conditions below and any you create:
 
 * Anticipated delivery time for an order
 * Conditions surrounding delayed deliveries

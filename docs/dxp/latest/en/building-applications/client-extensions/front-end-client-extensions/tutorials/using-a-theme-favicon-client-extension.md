@@ -1,9 +1,9 @@
 ---
-uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed   
+uuid: 75c87280-d934-43a4-b1e1-59d7a3b054ed
 ---
 # Using a Theme Favicon Client Extension
 
-{bdg-secondary}`Available Liferay 7.4`
+{bdg-secondary}`Liferay 7.4`
 
 With a theme favicon client extension, you can override the theme's favicon on the selected page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension.
 

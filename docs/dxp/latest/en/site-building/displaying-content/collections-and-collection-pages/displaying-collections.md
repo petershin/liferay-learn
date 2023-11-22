@@ -3,7 +3,7 @@ uuid: 54108c82-b29d-4dcc-8734-ea3d941f4328
 ---
 # Displaying Collections
 
-{bdg-secondary}`Available Liferay Portal 7.4 GA6+, DXP 7.3 GA1+`
+{bdg-secondary}`Liferay Portal 7.4 GA6+, DXP 7.3 GA1+`
 
 You can display a collection by adding a collection page, or a collection display fragment. For more information about these display options, see [About Collections and Collection Pages](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections).
 
@@ -137,7 +137,7 @@ Depending on the option you chose for a collection display fragment's list style
 
 ## Paginating Display Items
 
-{bdg-secondary}`Available 7.4+`
+{bdg-secondary}`7.4+`
 
 You can paginate the collection items using the pagination configuration. This option provides two important advantages:
 

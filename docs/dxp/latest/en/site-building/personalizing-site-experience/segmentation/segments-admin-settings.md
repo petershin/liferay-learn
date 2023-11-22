@@ -3,7 +3,7 @@ uuid: adfd0b75-2a15-4b64-8d27-ea2746d25357
 ---
 # Segments Admin Settings
 
-{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
+{bdg-secondary}`Liferay DXP/Portal 7.3+`
 
 You can configure Segments behavior at the system or instance level. With these settings, you can enable/disable segmentation, set the interval for syncing Analytics Cloud segments with Liferay DXP, create session-based segment properties, and more.
 

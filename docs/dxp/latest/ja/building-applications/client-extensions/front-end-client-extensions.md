@@ -28,7 +28,7 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
-{bdg-secondary}`利用可能な Liferay 7.4`
+{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
 
 フロントエンドクライアント拡張は、ページを拡張し、新しい機能を統合します。 CSS、JavaScript、テーマのCSS、テーマのお気に入りアイコン、カスタム要素、IFrameがあります。
 
@@ -42,8 +42,6 @@ front-end-client-extensions/client-extensions-ui-reference.md
 
 ## JavaScriptクライアント拡張
 
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
-
 JavaScriptクライアント拡張は、Liferayインスタンス全体にグローバルなJavaScriptライブラリとロジックを提供します。 JavaScriptクライアント拡張をデプロイし、それを使用するようにページを設定すると、そのページにアクセスするたびに（ページのヘッダーやフッターで）そのJavaScriptが自動的に実行されます。
 
 `client-extension.yaml`ファイルにJavaScriptクライアント拡張を指定します。
@@ -56,8 +54,6 @@ type: globalJS
 
 ## CSS クライアント拡張
 
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
-
 CSSクライアント拡張は、ページに新しいCSSスタイリングを導入します。 ページ上にデプロイされたCSSクライアント拡張は、テーマやスタイルブックの設定を含む、ページの既存のスタイルに追加されます。
 
 `client-extension.yaml`ファイルにCSSクライアント拡張を指定します。
@@ -69,8 +65,6 @@ type: globalCSS
 開始するには、 [CSSクライアント拡張の使用](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) を参照してください。
 
 ## テーマのCSSクライアント拡張
-
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
 
 [CSSクライアント・エクステンション](#css-client-extensions) がページにスタイリングを追加するのに対して、テーマCSSクライアント・エクステンションは、サイトのテーマ [](../../site-building/site-appearance/themes/introduction-to-themes.md)を含むページのスタイリングを上書きする。 クライアント・エクステンションは、 `clay.css` ファイルと、 `main.css` ファイルを使用して、サイトのテーマで通常使用される同じ名前のファイルを置き換えます。
 
@@ -90,15 +84,11 @@ type: themeCSS
 
 ## テーマのお気に入りアイコンクライアント拡張
 
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
-
 Liferayのページのお気に入りアイコンをオーバーライドします。 デプロイすると、提供されたアイコンファイルはLiferayのどのページでも利用可能になります。 ページデザインオプションメニューからページのお気に入りアイコンを設定する際に、別の ［**Client Extension**］ タブでアクセスすることができます。
 
 ![ページのお気に入りアイコンを設定すると、特別なクライアント拡張タブからクライアント拡張のお気に入りアイコンにアクセスすることができます。](./front-end-client-extensions/images/02.png)
 
 ## テーマのスプライトマップクライアント拡張機能
-
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
 
 テーマのスプライトマップクライアント拡張は、サイトページのスプライトマップをオーバーライドします。 スプライトマップを`.svg`の画像として定義すると、サイトの現在のテーマで使用されているものを置き換えます。
 
@@ -109,8 +99,6 @@ type: themeSpritemap
 ```
 
 ## カスタム要素クライアント拡張
-
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
 
 > 旧名称：カスタム要素のリモートアプリケーション
 
@@ -127,8 +115,6 @@ type: customElement
 詳しくは、[カスタム要素とIFrameクライアント拡張機能を理解する](./front-end-client-extensions/understanding-custom-element-and-iframe-client-extensions.md)をご参照ください。
 
 ## IFrameクライアント拡張
-
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
 
 > 旧名称：IFrameのリモートアプリケーション
 

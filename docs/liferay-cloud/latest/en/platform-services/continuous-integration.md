@@ -19,23 +19,9 @@ See the [CI service limitations](../reference/platform-limitations.md#continuous
 
 ## Using the Default Jenkinsfile
 
-Starting with CI service version `liferaycloud/jenkins:2.222.1-3.2.0`, a default Jenkinsfile is available when it is not overridden. The default Jenkinsfile is always available for projects [using version 4.x.x services](../reference/understanding-service-stack-versions.md).
-
-The default Jenkinsfile encapsulates all the logic that was previously stored on the Jenkinsfile and moves it to a Jenkins plugin. This means that all bug fixes, security fixes, and improvements can be applied without requiring any CI configuration.
+The CI service includes a default Jenkinsfile used for your project's builds. The default Jenkinsfile encapsulates all the logic that was previously stored on the Jenkinsfile and moves it to a Jenkins plugin. This means that all bug fixes, security fixes, and improvements can be applied without requiring any CI configuration.
 
 Additionally, extension points are available to customize every step of the CI pipeline.
-
-### Enable the Default Jenkinsfile
-
-If your project is updated to [version 4.x.x](../reference/understanding-service-stack-versions.md), the default Jenkinsfile is already enabled. Otherwise, follow these steps in your project's repository:
-
-1. Update your CI service to version `liferaycloud/jenkins:2.222.1-3.2.0`.
-
-1. Delete the `Jenkinsfile` located in the root folder.
-
-1. Add the following environment variable to the CI service's `LCP.json` file: `LCP_CI_USE_DEFAULT_JENKINSFILE: true`.
-
-1. [Deploy the CI service](../build-and-deploy/deploying-changes-via-the-cli-tool.md).
 
 ### Extending the Default Jenkinsfile
 
@@ -126,5 +112,3 @@ Name                                          | Default Value   | Description |
 * [Logging into your Liferay Cloud Services](../getting-started/logging-into-your-liferay-cloud-services.md)
 * [Configuring Your GitLab Repository](../getting-started/configuring-your-gitlab-repository.md)
 * [Configuring Your Bitbucket Repository](../getting-started/configuring-your-bitbucket-repository.md)
-* [Liferay Cloud Project Changes in Version 4](../reference/liferay-cloud-project-changes-in-version-4.md)
-<!-- While Version 3 is still supported, because of the fact a large part of this article hinges on the project version, this link may be helpful. This link should likely be removed once version 3 is no longer supported. -->

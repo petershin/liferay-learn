@@ -95,8 +95,6 @@ Choose the HTML tag generated for the container fragment: `div`, `header`, `nav`
 
 ### Set Content Visibility to Auto
 
-{bdg-secondary}`Available 7.4 U37+/GA37+`
-
 By default, Liferay automatically renders all containers in a page. However, setting the container's [`content-visibility`](https://drafts.csswg.org/css-contain/#propdef-content-visibility) property to `auto` causes elements to render only when needed. This can improve the page's load performance.
 
 ![Improve page load performance by setting the container's content-visibility to auto.](./advanced-settings-reference/images/06.png)

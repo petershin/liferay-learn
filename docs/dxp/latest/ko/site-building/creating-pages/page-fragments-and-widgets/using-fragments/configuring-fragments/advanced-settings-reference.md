@@ -93,8 +93,6 @@ framgent의 고급 설정을 구성하려면 페이지에 대한 업데이트 - 
 
 ### 콘텐츠 가시성을 자동으로 설정
 
-{bdg-secondary}`사용 가능 7.4 U37+/GA37+`
-
 기본적으로 Liferay는 페이지의 모든 컨테이너를 자동으로 렌더링합니다. 그러나 컨테이너의 [`content-visibility`](https://drafts.csswg.org/css-contain/#propdef-content-visibility) 속성을 `auto` 로 설정하면 요소가 필요할 때만 렌더링됩니다. 이렇게 하면 페이지의 로드 성능이 향상될 수 있습니다.
 
 ![컨테이너의 콘텐츠 가시성을 자동으로 설정하여 페이지 로드 성능을 개선합니다.](./advanced-settings-reference/images/06.png)

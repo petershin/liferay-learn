@@ -29,7 +29,7 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Available Liferay Experience Cloud (SaaS)`
 
 Front-end client extensions augment your pages and integrate new functionality. Available types include CSS, JavaScript, Theme CSS, Theme Favicon, Custom Element, and IFrame.
 
@@ -43,7 +43,6 @@ You can add JavaScript, CSS, or Theme CSS client extensions to layout sets (i.e.
 
 ## JavaScript Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 JavaScript client extensions provide global JavaScript libraries and logic throughout your Liferay instance. When you deploy a JavaScript client extension and configure a page to use it, its JavaScript runs automatically each time you visit the page (in the page's header or footer).
 
@@ -57,7 +56,6 @@ See [Using a JavaScript Client Extension](./front-end-client-extensions/tutorial
 
 ## CSS Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 CSS client extensions introduce new CSS styling to pages. A deployed CSS client extension on a page adds to the page's existing styling, including theme and style book settings.
 
@@ -71,7 +69,6 @@ See [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using
 
 ## Theme CSS Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 While [CSS client extensions](#css-client-extensions) add styling to pages, theme CSS client extensions override styling on the page, including from the site's [theme](../../site-building/site-appearance/themes/introduction-to-themes.md). The client extension uses a `clay.css` file and a `main.css` file to replace the identically named files normally used in your site's theme.
 
@@ -93,15 +90,11 @@ type: themeCSS
 
 ## Theme Favicon Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
-
 Override the favicon for your pages in Liferay. When deployed, the provided icon file becomes available for any page in Liferay. You can access it in a separate *Client Extensions* tab when you configure the favicon for a page from the Page Design Options menu.
 
 ![When you configure the favicon for a page, access the favicon from your client extension from a special Client Extensions tab.](./front-end-client-extensions/images/02.png)
 
 ## Theme Sprite Map Client Extensions
-
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 Theme sprite map client extensions override the sprite map for site pages. Define the sprite map as an `.svg` image, and it replaces the one used by your site's current theme.
 
@@ -113,7 +106,6 @@ type: themeSpritemap
 
 ## Custom Element Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 > Previously named Custom Element Remote App
 
@@ -131,7 +123,6 @@ See [Understanding Custom Element and IFrame Client Extensions](./front-end-clie
 
 ## IFrame Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 > Previously named IFrame Remote Apps
 

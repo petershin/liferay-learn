@@ -8,7 +8,7 @@ toc:
     - ./developing-page-fragments/defining-fragment-drop-zones.md
     - ./developing-page-fragments/using-custom-fields-in-page-fragments.md
     - ./developing-page-fragments/creating-a-contributed-fragment-set.md
-    - ./developing-page-fragments/adding-validation-rules.md
+    - ./developing-page-fragments/validating-fragment-configurations.md
     - ./developing-page-fragments/auto-deploying-fragments.md
     - ./developing-page-fragments/including-default-resources-with-fragments.md
     - ./developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
@@ -28,7 +28,7 @@ developing-page-fragments/applying-styles-to-fragments.md
 developing-page-fragments/defining-fragment-drop-zones.md
 developing-page-fragments/using-custom-fields-in-page-fragments.md
 developing-page-fragments/creating-a-contributed-fragment-set.md
-developing-page-fragments/adding-validation-rules.md
+developing-page-fragments/validating-fragment-configurations.md
 developing-page-fragments/auto-deploying-fragments.md
 developing-page-fragments/including-default-resources-with-fragments.md
 developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
@@ -44,7 +44,7 @@ developing-page-fragments/creating-form-fragments.md
 - [조각 드롭 영역 정의](./developing-page-fragments/defining-fragment-drop-zones.md)
 - [페이지 조각에서 사용자 정의 필드 사용](./developing-page-fragments/using-custom-fields-in-page-fragments.md)
 - [기여된 조각 세트 만들기](./developing-page-fragments/creating-a-contributed-fragment-set.md)
-- [검증 규칙 추가](./developing-page-fragments/adding-validation-rules.md)
+- [검증 규칙 추가](./developing-page-fragments/validating-fragment-configurations.md)
 - [조각 자동 배포](./developing-page-fragments/auto-deploying-fragments.md)
 - [조각에 기본 리소스 포함](./developing-page-fragments/including-default-resources-with-fragments.md)
 - [조각의 요소 순서 설정](./developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md)

@@ -1,12 +1,12 @@
 ---
 uuid: 481ee5b0-0ab8-4cb6-831b-2f30348ad736
 ---
-# Adding Validation Rules
+# Validating Fragment Configurations
 
 When defining fragment [configuration options](./adding-configuration-options-to-fragments.md), you can add `validation` properties to `text` type fields that determine rules for valid entries. Determine what type of data each field accepts by specifying the rule's type: `text`, `number`, `email`, `url`, or `pattern`. You can also add custom error messages to notify users of invalid entries.
 
 ```{important}
-Fragments are for composing pages, and their validation is only applicable in the settings panel on the page editor view. To validate user inputs, you can use JavaScript validation or [object validations](./../../../building-applications/objects/creating-and-managing-objects/validations.md).
+The validations addressed in this article are for validating fragment configuration fields. To validate user inputs, you can use form fragments with [object validations](./../../../building-applications/objects/creating-and-managing-objects/validations.md) or JavaScript validation.
 ```
 
 ## Text Validation Rules

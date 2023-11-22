@@ -9,7 +9,7 @@ toc:
   - ./developing-page-fragments/defining-fragment-drop-zones.md
   - ./developing-page-fragments/using-custom-fields-in-page-fragments.md
   - ./developing-page-fragments/creating-a-contributed-fragment-set.md
-  - ./developing-page-fragments/adding-validation-rules.md
+  - ./developing-page-fragments/validating-fragment-configurations.md
   - ./developing-page-fragments/auto-deploying-fragments.md
   - ./developing-page-fragments/including-default-resources-with-fragments.md
   - ./developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
@@ -30,7 +30,7 @@ developing-page-fragments/applying-styles-to-fragments.md
 developing-page-fragments/defining-fragment-drop-zones.md
 developing-page-fragments/using-custom-fields-in-page-fragments.md
 developing-page-fragments/creating-a-contributed-fragment-set.md
-developing-page-fragments/adding-validation-rules.md
+developing-page-fragments/validating-fragment-configurations.md
 developing-page-fragments/auto-deploying-fragments.md
 developing-page-fragments/including-default-resources-with-fragments.md
 developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md
@@ -46,7 +46,7 @@ developing-page-fragments/creating-form-fragments.md
 - [Defining Fragment Drop Zones](./developing-page-fragments/defining-fragment-drop-zones.md)
 - [Using Custom Fields in Page Fragments](./developing-page-fragments/using-custom-fields-in-page-fragments.md)
 - [Creating a Contributed Fragment Set](./developing-page-fragments/creating-a-contributed-fragment-set.md)
-- [Adding Validation Rules](./developing-page-fragments/adding-validation-rules.md)
+- [Validating Fragment Configurations](./developing-page-fragments/validating-fragment-configurations.md)
 - [Auto-Deploying Fragments](./developing-page-fragments/auto-deploying-fragments.md)
 - [Including Default Resources with Fragments](./developing-page-fragments/including-default-resources-with-fragments.md)
 - [Setting the Order of Elements in a Fragment](./developing-page-fragments/setting-the-order-of-elements-in-a-fragment.md)

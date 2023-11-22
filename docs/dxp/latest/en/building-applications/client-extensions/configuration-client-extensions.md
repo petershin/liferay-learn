@@ -7,7 +7,7 @@ uuid: 654223de-17be-4786-a90d-775f986c0911
 ---
 # Configuration Client Extensions
 
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary}`Available Liferay Experience Cloud (SaaS)`
 
 Liferay instance configurations are deployable with client extensions. For example, you can deploy OAuth2 authentication profiles as configuration client extensions, enabling your other client extensions that require authentication.
 
@@ -24,8 +24,6 @@ type: instanceSettings
 ```
 
 ## OAuth Headless Server Client Extensions
-
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 You can use a client extension to configure a Liferay OAuth2 application pre-configured with a `Headless Server` client profile. This kind of authentication profile is required for API calls that are not authorized by a specific user.
 
@@ -64,8 +62,6 @@ Here is an example of the route defined by the environment variable `LIFERAY_ROU
 Application logic that communicates with Liferay DXP using an `oAuthApplicationHeadlessServer` client extension must use the information provided by this route metadata to secure the transmitted data. All necessary OAuth 2 metadata is provided this way, so you don't need to hard-code it.
 
 ## OAuth User Agent Client Extensions
-
-{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 You can use a client extension to configure a Liferay OAuth2 application pre-configured with a `User Agent Application` client profile. This kind of authentication profile is required for API calls authorized by a specific user (for example, making a REST call to a Liferay API using your other [microservice client extensions](./microservice-client-extensions.md)).
 

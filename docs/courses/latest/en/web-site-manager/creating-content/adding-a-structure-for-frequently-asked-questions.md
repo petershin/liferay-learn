@@ -5,7 +5,7 @@ uuid: d5d5954a-f1e1-4097-a24a-a87ad52a0fbf
 
 Clarity wants a way to manage its Frequently Asked Questions page that empowers its site maintainers to add questions, remove questions, and group them together easily.
 
-Here, you'll create a structure with a *repeatable field* to allow creating articles with any number of questions. A repeatable field is one that you can have as many instances of as you want. In this case, add a repeatable pair of text fields (a question and its answer).
+Here, you'll create a structure with a repeatable field to allow creating articles with any number of questions. A repeatable field is one that you can have as many instances of as you want. In this case, you'll add a repeatable pair of text fields (a question and its answer).
 
 ## Start Creating the FAQs Structure
 

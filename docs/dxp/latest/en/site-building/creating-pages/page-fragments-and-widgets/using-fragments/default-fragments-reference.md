@@ -161,7 +161,7 @@ Use navigation bar fragments to add a custom header to [master page templates](.
 
 {bdg-secondary}`Available Liferay 7.4+`
 
-Using the menu display fragment, you can add menus to your content pages. Once deployed, you can select from any predefined [navigation menu](../../../site-navigation/using-the-navigation-menus-application.md). To learn more about how to configure the menu display fragment for your site navigation, see [Managing Site Navigation](../../../site-navigation/managing-site-navigation.md).
+Using the menu display fragment, you can add menus to your content pages. Once deployed, you can select from any predefined [navigation menu](../../../site-navigation/using-the-navigation-menus-application.md). To learn more about how to configure the menu display fragment for your site navigation, see Configuring the Menu Display Widget in [Configuring Menu Displays](../../../site-navigation/configuring-menu-displays.md).
 
 <!--## Product-->
 
@@ -179,4 +179,3 @@ Using the menu display fragment, you can add menus to your content pages. Once d
 
 [Using Fragments](../using-fragments.md)
 
-[Managing Site Navigation](../../../site-navigation/managing-site-navigation.md)

@@ -1,6 +1,5 @@
 ---
 toc:
-  - ./site-navigation/managing-site-navigation.md
   - ./site-navigation/managing-page-hierarchies.md
   - ./site-navigation/using-the-navigation-menus-application.md
   - ./site-navigation/configuring-menu-displays.md
@@ -23,10 +22,6 @@ site-navigation/developer-guide.md
 
 ::::{grid} 2
 :gutter: 3 3 3 3
-
-:::{grid-item-card} Managing Site Navigation
-:link: ./site-navigation/managing-site-navigation.md
-:::
 
 :::{grid-item-card} Managing Page Hierarchies
 :link: ./site-navigation/managing-page-hierarchies.md

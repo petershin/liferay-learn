@@ -36,7 +36,7 @@ If you created a content page, you're redirected to the draft content page where
 If you created a widget page, you're redirected to the page's configuration options.
 
 ```{tip}
-By default, new pages are included in the navigation menu for the site. To configure this navigation menu, see [Managing Site Navigation](../../site-navigation/managing-site-navigation.md).
+By default, new pages are included in the navigation menu for the site. To configure this navigation menu, see [Using the Navigation Menus Application](../../site-navigation/configuring-menu-displays.md).
 ```
 
 ### Adding a New Page from the Page Tree Menu
@@ -105,4 +105,3 @@ If users are logged in and have permission to edit the page, and there are multi
 
 [Using Content Pages](../using-content-pages.md)
 
-[Managing Site Navigation](../../site-navigation/managing-site-navigation.md)

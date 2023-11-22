@@ -117,6 +117,14 @@ Using email notifications requires a connected mail server. See `Configuring Mai
 
 ![Compose the email sent when existing documents are updated.](./documents-and-media-ui-reference/images/16.png)
 
+**Document Needs Review Email**: Enable/Disable email notifications for when existing documents are submitted for review, and compose the email's subject and content body.
+
+![Compose the email sent when existing documents are submitted for review.](./documents-and-media-ui-reference/images/17.png)
+
+**Document Expired Email**: Enable/Disable email notifications for when existing documents have reached their expiration date, and compose the email's subject and content body.
+
+![Compose the email sent when existing documents have expired.](./documents-and-media-ui-reference/images/18.png)
+
 ## Related Topics
 
 * [Documents and Media](../documents-and-media.md)

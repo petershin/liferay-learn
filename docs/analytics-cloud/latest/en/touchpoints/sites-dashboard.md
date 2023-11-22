@@ -46,7 +46,7 @@ The Site Activities panel presents a summary of how visitors interact with your 
 
 **Unique Visitors:** This is the total number of individuals that are identified by a unique `userId` (i.e. user ID). 
 
-A visitor to your site is assigned a unique `userId`. When the visitor logs in with their email, their analytics data will continue to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data will be associated with this previously assigned `userId` instead.
+A visitor to your site is assigned a unique `userId`. When the visitor logs in with their email address, their analytics data will continue to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data will be associated with this previously assigned `userId` instead.
 
 A new `userId` is assigned if the visitor uses a different browser, logs in with a different email address, or clears their browser cookies. 
 

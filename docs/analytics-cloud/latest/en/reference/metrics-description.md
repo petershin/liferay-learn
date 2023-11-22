@@ -6,7 +6,9 @@ uuid: 5dd686af-6ef7-43f3-960e-7630d26ded8a
 See the description of various metrics used by Analytics Cloud and how they are calculated.
 
 Index:
+- [A/B Testing - Estimated Time to Declare Winner](./metrics-description.md#ab-testing---estimated-time-to-declare-winner)
 - [A/B Testing - Improvement](./metrics-description.md#ab-testing---improvement)
+- [A/B Testing - Probability to Win](./metrics-description.md#ab-testing---probability-to-win)
 - [Acquisitions - Percentage of Sessions](./metrics-description.md#acquisitions---percentage-of-sessions)
 - [Active Individuals](./metrics-description.md#active-individuals)
 - [Anonymous Individuals](./metrics-description.md#anonymous-individuals)
@@ -27,6 +29,7 @@ Index:
 - [Downloads](./metrics-description.md#downloads)
 - [Entrances](./metrics-description.md#entrances)
 - [Exit Rate](./metrics-description.md#exit-rate)
+- [Forms - Abandonment](./metrics-description.md#forms---abandonment)
 - [Interests - Percent of Active Members]()
 - [Interests - Percentage of Sessions](./metrics-description.md#interests---percentage-of-sessions)
 - [Interests - Percentage of Total Individuals](./metrics-description.md#interests---percentage-of-total-individuals)
@@ -40,14 +43,17 @@ Index:
 - [Sessions per Visitor](./metrics-description.md#sessions-per-visitor)
 - [Submissions](./metrics-description.md#submissions)
 - [Time on Page](./metrics-description.md#time-on-page)
-- [Total Individuals](./metrics-description.md#total-individuals)
-- [Unique Visitors](./metrics-description.md#unique-visitors)
+- [Total Individuals or Unique Visitors](./metrics-description.md#total-individuals-or-unique-visitors)
 - [Views](./metrics-description.md#views)
 - [Visitors by Day and Time](./metrics-description.md#visitors-by-day-and-time)
 
+## A/B Testing - Estimated Time to Declare Winner
+
+This is the duration the A/B test needs to run to determine a winner.  Note, this is only available for a bounce rate type A/B test. 
+
 ## A/B Testing - Improvement
 
-The relative improvement from the control. For example, if the control had a 15% retention rate but the variant had a 16% retention rate. The improvement is calculated as,
+This shows the relative improvement from the control. For example, if the control had a 15% retention rate but the variant had a 16% retention rate. The improvement is calculated as,
 
 ```
 ((16 - 15) / 15) * 100 = ~6.67% improvement.
@@ -55,9 +61,13 @@ The relative improvement from the control. For example, if the control had a 15%
 
 This metric is also be known as lift. 
 
+## A/B Testing - Probability to Win
+
+This is the likelihood in percentage of whether a variant will beat the control.
+
 ## Acquisitions - Percentage of Sessions
 
-The percentage of sessions for acquisitions shows the breakdown in percentage of the top traffic sources of how visitors arrive to your site. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
+This shows the breakdown in percentage of the top traffic sources of how visitors arrive to your site. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
 
 ```
 (The acquisition traffic source) ÷ (The total number of sessions) * 100
@@ -65,15 +75,15 @@ The percentage of sessions for acquisitions shows the breakdown in percentage of
 
 ## Active Individuals
 
-The total number of visitors who interacted with your site within the selected time range.
+This is the total number of visitors who interacted with your site within the selected time range.
 
 ## Anonymous Individuals
 
-The total number of visitors who are identified by a unique `userId` (i.e. user ID) but are not associated with an email address. Every visitor to your site is assigned a new `userId`, except for an individual who logs in with an email address. Visitors who have previously logged in are associated with the `userId` they were previously assigned.
+This is the total number of visitors who are identified by a unique `userId` (i.e. user ID) but are not associated with an email address. Every visitor to your site is assigned a new `userId`, except for an individual who logs in with an email address. Visitors who have previously logged in are associated with the `userId` they were previously assigned.
 
 ## Audience - Downloaded Segments
 
-The top segments who downloaded the document or media. Each bar in the chart shows the total number of individuals that downloaded the document or media who are part of that segment. The bar also gives a value of what percent of the known individuals who downloaded the document or media are part of that segment. For a given time range, the percentage is calculated as,
+This is the top segments who downloaded the document or media. Each bar in the chart shows the total number of individuals that downloaded the document or media who are part of that segment. The bar also gives a value of what percent of the known individuals who downloaded the document or media are part of that segment. For a given time range, the percentage is calculated as,
 
 ```
 (The number of individuals that are part of that segment who downloaded the document or media) ÷ (The total number of known individuals who downloaded that document or media) * 100
@@ -81,31 +91,31 @@ The top segments who downloaded the document or media. Each bar in the chart sho
 
 ## Audience - Downloads
 
-The total number of visitors who downloaded the document or media in the given time range. A percentage breakdown is shown of anonymous individuals and known individuals.
+This is the total number of visitors who downloaded the document or media in the given time range. A percentage breakdown is shown of anonymous individuals and known individuals.
 
 ## Audience - Segmented Downloads
 
-The total number of known individuals who downloaded the document or media in the given time range. A percentage breakdown is shown of segmented and unsegmented individuals.
+This is the total number of known individuals who downloaded the document or media in the given time range. A percentage breakdown is shown of segmented and unsegmented individuals.
 
 ## Audience - Segmented Submissions
 
-The total number of known individuals who submitted the form in the given time range. A percentage breakdown is shown of segmented and unsegmented individuals.
+This is the total number of known individuals who submitted the form in the given time range. A percentage breakdown is shown of segmented and unsegmented individuals.
 
 ## Audience - Segmented Viewers
 
-The total number of known individuals who viewed the page in the given time range. A percentage breakdown is shown of segmented and unsegmented individuals.
+This is the total number of known individuals who viewed the page in the given time range. A percentage breakdown is shown of segmented and unsegmented individuals.
 
 ## Audience - Segmented Views
 
-The total number of known individuals who viewed the asset in the given time range. A percentage breakdown is shown of segmented and unsegmented individuals.
+This is the total number of known individuals who viewed the asset in the given time range. A percentage breakdown is shown of segmented and unsegmented individuals.
 
 ## Audience - Submissions
 
-The total number of visitors who submitted the form in a given time range. A percentage breakdown is shown of anonymous individuals and known individuals.
+This is the total number of visitors who submitted the form in a given time range. A percentage breakdown is shown of anonymous individuals and known individuals.
 
 ## Audience - Submitter Segments
 
-The top segments who submitted the form. Each bar in the chart shows the total number of individuals that submitted the form who are part of that segment. The bar also gives a value of what percent of the known individuals who submitted the form are part of that segment. For a given time range, the percentage is calculated as,
+These are the top segments who submitted the form. Each bar in the chart shows the total number of individuals that submitted the form who are part of that segment. The bar also gives a value of what percent of the known individuals who submitted the form are part of that segment. For a given time range, the percentage is calculated as,
 
 ```
 (The number of individuals that are part of that segment who submitted the form) ÷ (The total number of known individuals who submitted the form) * 100
@@ -113,7 +123,7 @@ The top segments who submitted the form. Each bar in the chart shows the total n
 
 ## Audience - Viewer Segments
 
-The top segments who viewed the page or asset. Each bar in the chart shows the total number of individuals that viewed the page or asset who are part of that segment. The bar also gives a value of what percent of the known individuals who viewed that page or asset are part of that segment.
+Theses are the top segments who viewed the page or asset. Each bar in the chart shows the total number of individuals that viewed the page or asset who are part of that segment. The bar also gives a value of what percent of the known individuals who viewed that page or asset are part of that segment.
 
 For a given time range, the percentage is calculated as,
 
@@ -123,11 +133,11 @@ For a given time range, the percentage is calculated as,
 
 ## Audience - Views
 
-The total number of visitors who viewed the asset in the given time range. A percentage breakdown is shown of anonymous individuals and known individuals.
+This is the total number of visitors who viewed the asset in the given time range. A percentage breakdown is shown of anonymous individuals and known individuals.
 
 ## Audience - Visitors
 
-The total number of visitors who visited the page in the given time range. A percentage breakdown is shown of anonymous individuals and known individuals.
+This is the total number of visitors who visited the page in the given time range. A percentage breakdown is shown of anonymous individuals and known individuals.
 
 ## Bounce Rate
 
@@ -139,15 +149,15 @@ The bounce rate shows the percentage of sessions in which an individual visits a
 
 ## Clicks
 
-The total number of clicks on an A/B test, web content, or custom asset in a given time range.
+This is the total number of clicks on an A/B test, web content, or custom asset in a given time range.
 
 ## Comments
 
-The total number of comments posted on a blog or document and media in a given time range. 
+This is the total number of comments posted on a blog or document and media in a given time range. 
 
 ## Downloads
 
-The total number of downloads of a document and media or custom asset in a given time range.
+This is the total number of downloads of a document and media or custom asset in a given time range.
 
 ## Entrances 
 
@@ -155,7 +165,7 @@ Entrances show the most common pages that visitors view first upon entering your
 
 ## Exit Rate
 
-The percentage of visitors who interacted with the page (such as scrolling or clicking) and then left the site. It does not include bounce rate. For a given time range, the rate is calculated as,
+This is the percentage of visitors who interacted with the page (such as scrolling or clicking) and then left the site. It does not include bounce rate. For a given time range, the rate is calculated as,
 
 ```
 (Total number of sessions of the page in which visitors left the site) ÷ (The total number of sessions of the page) * 100
@@ -195,11 +205,11 @@ The percentage of total individuals for interests shows what percent of individu
 
 ## Known Individuals
 
-The total number of visitors who are identified by a unique `userId` (i.e. user ID) and are associated with an email address. Visitors who have previously logged in are associated with the `userId` they were previously assigned.
+This is the total number of visitors who are identified by a unique `userId` (i.e. user ID) and are associated with an email address. Visitors who have previously logged in are associated with the `userId` they were previously assigned.
 
 ## Preview
 
-The number of times a document or media was previewed in a given time range.
+This is the number of times a document or media was previewed in a given time range.
 
 ## Reading Time
 
@@ -219,7 +229,7 @@ The percentage of sessions for search shows what percent of searches contained t
 
 ## Session Duration
 
-The length of time an average session lasts. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
+This is the length of time an average session lasts. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
 
 ## Sessions by Location
 
@@ -231,7 +241,7 @@ Sessions by technology shows the devices, operating systems, and browsers used t
 
 ## Sessions per Visitor
 
-An average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
+This is an average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
 
 ```
 (Total number of sessions across all visitors) ÷ (The total number of visitors) * 100
@@ -249,21 +259,13 @@ Time on page is the average time spent on that page. For a given time range, the
 (Total time spent on the page across all views) ÷ (The total number of views) * 100
 ```
 
-## Total Individuals
+## Total Individuals or Unique Visitors
 
 This is the total number of individuals that are identified by a unique `userId` (i.e. user ID). 
 
-A visitor to your site is assigned a unique `userId`. When the visitor logs in with their email, their analytics data will continue to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data will be associated with this previously assigned `userId` instead.
+A visitor to your site is assigned a unique `userId`. When the visitor logs in with their email address, their analytics data will continue to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data will be associated with this previously assigned `userId` instead.
 
 A new `userId` is assigned if the visitor uses a different browser, logs in with a different email address, or clears their browser cookies.
-
-## Unique Visitors
-
-This is the total number of individuals that are identified by a unique `userId` (i.e. user ID). 
-
-A visitor to your site is assigned a unique `userId`. When the visitor logs in with their email, their analytics data will continue to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data will be associated with this previously assigned `userId` instead.
-
-A new `userId` is assigned if the visitor uses a different browser, logs in with a different email address, or clears their browser cookies. 
 
 ## Views
 
@@ -271,4 +273,4 @@ Views is the total number of views of a page or asset in a given time range.
 
 ## Visitors by Day and Time
 
-This is a calculation of the number of unique visitors for the 24 hours of each day of the week in a given time range. Tooltips for each cell show the number of visitors for that day and time.
+This is the total number of unique visitors for the 24 hours of each day of the week in a given time range. Tooltips for each cell show the number of visitors for that day and time.

@@ -39,15 +39,13 @@ A full re-index works in any scenario, whether for all content and indexes or a 
 
 [^1]: Re-indexing a single model is occasionally required, and sync mode is recommended in these cases. For example, using certain elements while [creating a search blueprint](../liferay-enterprise-search/search-experiences/search-blueprints/creating-and-managing-search-blueprints.md#adding-elements-to-the-blueprint) and [enabling semantic search](../liferay-enterprise-search/search-experiences/semantic-search.md) require re-indexing individual model types.
 
-## Understanding Re-Index Modes
-
 In earlier Liferay versions, re-indexing always uses full mode, deleting content from the live production index before regenerating it. This can result in significant search index downtime. With concurrent and sync re-index modes, re-indexing is accomplished without deleting the index first. Sync mode updates the index in place, while concurrent mode builds a new index in the background, preserving the old one until it's ready. High availability of the search index means minimal downtime, which means your site's users can browse and search your site while you re-index the site's content.
 
 ![Choose from Full, Concurrent, or Sync re-index modes, depending on your needs.](./re-indexing-modes/images/01.png)
 
 Whenever possible, choose concurrent or sync mode to avoid downtime during a re-index. However, there are considerations to account for when deciding which mode is right in your situation.
 
-### ![Full](../../images/icon-globe-meridians.png) Full Re-Index Mode
+## ![Full](../../images/icon-globe-meridians.png) Full Re-Index Mode
 
 You must use _full_ mode to index all content when connecting to a new, empty Elasticsearch cluster. In this scenario, high availability is not a consideration. You can also use full mode for single model re-indexing when sync mode will not suffice, but sync mode is recommended. For high availability re-indexing of all indexes, use concurrent mode instead.
 
@@ -57,7 +55,7 @@ A full re-index proceeds this way:
 1. A new index is created with the latest index settings and field mappings.
 1. Documents are regenerated in the index.
 
-### ![Concurrent](../../images/icon-concurrent.png) Concurrent Re-Index Mode
+## ![Concurrent](../../images/icon-concurrent.png) Concurrent Re-Index Mode
 
 Use _concurrent_ mode for high availability re-indexing of all content using a blue/green re-indexing strategy. Concurrent mode cannot be used for single model re-indexing: instead use sync mode. Concurrent mode serves as a replacement for full re-indexing mode when re-indexing all content.
 
@@ -71,7 +69,7 @@ Because concurrent re-indexing creates a new index alongside the old one, it req
 
 ![You're warned if Liferay estimates insufficient disk space for a concurrent re-index.](./re-indexing-modes/images/03.png)
 
-### ![Sync](../../images/icon-restore2.png) Sync Re-Index Mode
+## ![Sync](../../images/icon-restore2.png) Sync Re-Index Mode
 
 Use _sync_ mode for high availability re-indexing when primary disk space for Elasticsearch is a concern, or for all high availability single model re-indexing needs. There are scenarios when sync mode can't properly account for system changes, and one of the other modes must be used.
 

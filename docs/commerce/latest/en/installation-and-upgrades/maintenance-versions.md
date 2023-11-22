@@ -43,8 +43,7 @@ Updating to a new maintenance version is very similar to upgrading to a new majo
 
 ### Clear Stale Data and Restart the Server
 
-1. Delete the `${liferay.home}/osgi/state` folder.
-    > To learn more about OSGi folders, see [Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps).
+1. Delete the `${liferay.home}/osgi/state` folder. To learn more about OSGi folders, see [Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps).
 1. Start the application server.
 1. Verify that the the upgrade process has begun by looking for messages similar to this in your application server console logs:
 

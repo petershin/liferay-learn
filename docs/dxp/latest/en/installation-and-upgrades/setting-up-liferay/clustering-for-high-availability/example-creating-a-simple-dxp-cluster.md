@@ -19,10 +19,6 @@ Here are the server containers you'll create:
 This example is for learning purposes and is not suitable for production use cases. For production environments, you should include an HTTP server for load balancing requests to the DXP servers, use separate database servers for read only and read-write operations, and consider clustering and load balancing database servers, file store servers, and search engine servers. Please read all of the [Clustering for High Availability](../clustering-for-high-availability.md) articles for more information.
 ```
 
-<!--
-![DXP cluster environment.](./example-creating-a-simple-dxp-cluster/images/01.png)
-Should we remove this diagram since it includes a load balancer? -->
-
 Here are the main steps:
 
 1. [Start a Database Server](#start-a-database-server)
@@ -240,7 +236,7 @@ The DXP cluster nodes are available at the following URLs:
 
 The figure below shows the cluster node home pages.
 
-![DXP cluster nodes.](./example-creating-a-simple-dxp-cluster/images/02.png)
+![DXP cluster nodes.](./example-creating-a-simple-dxp-cluster/images/01.png)
 
 Each node's container ID and port (`Node: [id]:[port]`) appear at the bottom of each page. The `LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=true` environment setting enabled this display feature. You can find a container's ID using the [`docker container ls`](https://docs.docker.com/engine/reference/commandline/container_ls/) command.
 
@@ -269,7 +265,7 @@ Test data synchronization between the nodes:
 
 Both nodes show the same new content.
 
-![Content is synchronized between the cluster nodes.](./example-creating-a-simple-dxp-cluster/images/03.png)
+![Content is synchronized between the cluster nodes.](./example-creating-a-simple-dxp-cluster/images/02.png)
 
 Congratulations on creating a working DXP cluster!
 

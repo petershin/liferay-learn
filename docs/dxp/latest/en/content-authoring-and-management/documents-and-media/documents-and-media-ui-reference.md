@@ -65,7 +65,13 @@ Once created, Metadata Sets can be added to custom Document Types. See [Defining
 
 ![Access these Documents and Media settings in the Application Bar.](./documents-and-media-ui-reference/images/09.png)
 
-You can access the following Documents and Media settings in the Application Bar.
+You can use the following documents and media settings in the Application Bar:
+
+* [Access from Desktop](#access-from-desktop)
+* [Edit](#edit)
+* [Home Folder Permissions](#home-folder-permissions)
+* [Export/Import](#exportimport)
+* [Configuration](#configuration)
 
 ### Access from Desktop
 

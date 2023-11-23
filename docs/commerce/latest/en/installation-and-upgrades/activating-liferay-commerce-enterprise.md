@@ -3,7 +3,7 @@ uuid: 292bac86-29c0-4fbc-9f11-908a0ecc011c
 ---
 # Activating Liferay Commerce Enterprise
 
-Starting with Liferay DXP/Portal 7.3, Commerce ships with all Liferay bundles and Docker containers and does not require separate installation. However, to access and use the enterprise features of Commerce, the process differs depending on the DXP version you're running. For Liferay DXP 7.4 GA1+, all Commerce modules are enabled by default and ready for use. For DXP 7.3 SP3+, Commerce is activated using a [portal property](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html), while earlier versions use a Commerce license file. This property doesn't affect Liferay Portal bundles/images since they don't include the enterprise features.
+Starting with Liferay DXP/Portal 7.3, Commerce ships with all Liferay bundles and Docker containers doesn't require a separate installation. However, to access and use the enterprise features of Commerce, the process differs depending on the DXP version you're running. For Liferay DXP 7.4 GA1+, all Commerce modules are enabled by default and ready for use. For DXP 7.3 SP3+, Commerce is activated using a [portal property](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html), while earlier versions use a Commerce license file. This property doesn't affect Liferay Portal bundles/images since they don't include the enterprise features.
 
 ```{important}
 In Liferay 7.4 U48+/GA48+, the portal property for disabling Commerce modules (`enterprise.product.commerce.enabled`) was removed. Commerce features are now available and supported for all customers with valid DXP 7.4 subscriptions. Disabling Commerce can cause inconsistencies with other Liferay DXP modules.
@@ -25,10 +25,10 @@ enterprise.product.commerce.enabled=false
 
 After adding the property, restart the Liferay server to apply your changes.
 
-If a `portal-ext.properties` file does not already exist, create one in the `[LIFERAY_HOME]` or `[USER_HOME]` folder.
+If a `portal-ext.properties` file does not already exist, create one in the `[Liferay Home]` or `[User Home]` folder.
 
 ```{note}
-If you used the Setup Wizard for your bundle, portal properties are set using the `portal-setup-wizard.properties` file in the `[LIFERAY_HOME]` folder. Since this file takes priority over the `portal-ext.properties` file, ensure it doesn't have a conflicting value for the `enterprise.product.commerce.enabled` property. See [Portal Properties](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) to learn more.
+If you used the Setup Wizard for your bundle, portal properties are set using the `portal-setup-wizard.properties` file in the `[Liferay Home]` folder. Since this file takes priority over the `portal-ext.properties` file, ensure it doesn't have a conflicting value for the `enterprise.product.commerce.enabled` property. See [Portal Properties](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) to learn more.
 ```
 
 ### Disabling Commerce for Docker Containers
@@ -67,7 +67,7 @@ enterprise.product.commerce.enabled=true
 
 After adding the property, restart the Liferay server to apply your changes.
 
-If a `portal-ext.properties` file does not already exist, create one in the `[LIFERAY_HOME]` or `[USER_HOME]` folder.
+If a `portal-ext.properties` file does not already exist, create one in the `[Liferay Home]` or `[User Home]` folder.
 
 ### Activating Commerce for Docker Containers
 
@@ -87,7 +87,7 @@ LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=true
 
 ### Verifying Successful Activation
 
-To verify the property was added successfully, start Liferay DXP and open the Global Menu (![Global Menu](../images/icon-applications-menu.png)). If successful, you can view and access Commerce modules in the Commerce tab. Alternatively, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Server Administration* &rarr; *Properties* &rarr; *Portal Properties*. The new property appears with other properties.
+To verify the property was added successfully, start Liferay DXP and open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)). If successful, you can view and access Commerce modules in the Commerce tab. Alternatively, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and go to *Control Panel* &rarr; *Server Administration* &rarr; *Properties* &rarr; *Portal Properties*. The new property appears with other properties.
 
 ## Activating Liferay Commerce Enterprise for Liferay DXP 7.1-7.3 FP2
 
@@ -98,9 +98,9 @@ For Liferay DXP 7.1-7.3 FP2, Commerce requires a valid license for use. This lic
 Commerce licenses use many of the same parameters as DXP licenses, including `product-version`, `license-type`, and `expiration-date`. However, restrictions based on system resources (e.g., processor cores) or product version are not implemented in Commerce licenses.
 
 ```{important}
-Both the DXP and Commerce activation keys must be of the same `license-type` (e.g., `production`, `developer`, or `enterprise`). A warning is thrown in the server startup log if the license types do not match. 
-   
-*Production* licenses also require a matching hostname, IP address, or mac address for validation.
+Both the DXP and Commerce activation keys must be of the same `license-type` (e.g., `production`, `developer`, or `enterprise`). A warning is thrown in the server startup log if the license types do not match.
+
+Production licenses also require a matching hostname, IP address, or mac address for validation.
 ```
 
 * [Obtaining Commerce Activation Keys](#obtaining-commerce-activation-keys)
@@ -111,7 +111,7 @@ Both the DXP and Commerce activation keys must be of the same `license-type` (e.
 
 If you've already [purchased](https://www.liferay.com/contact-sales) a Commerce subscription, you can obtain your activation key as a download in one of the following ways:
 
-* Open a [Help Center](https://liferay-support.zendesk.com/agent/) ticket with the *Activation Key/Project Administration* component.
+* Open a [Help Center](https://liferay-support.zendesk.com/agent/) ticket with the activation key/project administration component.
 
 * Send a request by email to your regional Provisioning team (i.e., provisioning-[region]@liferay.com).
 
@@ -127,7 +127,7 @@ As of Liferay 7.3 SP1, users are no longer required to re-index their instance a
 
 #### Deploying to DXP Bundles
 
-Copy your XML file to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) folder for your DXP instance. While processing the activation key, Liferay relocates this file to the `${liferay.home}/osgi/modules` folder and generates a license file (`.li`) in the `${liferay.home}/data/license` folder. See [Activating Liferay DXP](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html) for more information.
+Copy your XML file to the [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) folder of your DXP instance. While processing the activation key, Liferay relocates this file to the `${liferay.home}/osgi/modules` folder and generates a license file (`.li`) in the `${liferay.home}/data/license` folder. See [Activating Liferay DXP](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html) for more information.
 
 #### Deploying to Docker Containers
 
@@ -135,15 +135,15 @@ Copy your XML file to the container's `/opt/liferay/deploy` folder. While proces
 
 #### Deploying to Liferay Cloud
 
-Copy your key to the [`liferay/configs/{ENV}/deploy/`](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) folder in your Project's central Git repository, and commit your changes. Then, trigger a Jenkins build for your Liferay service, and deploy it to the desired Project environment. See [Overview of the Liferay Cloud Deployment Workflow](https://learn.liferay.com/liferay-cloud/latest/en/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) for more information about deploying files to an environment's Liferay service.
+Copy your key to the [`liferay/configs/{ENV}/deploy`](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) folder in your project's central Git repository, and commit your changes. Then, trigger a Jenkins build for your Liferay service, and deploy it to the desired project environment. See [Overview of the Liferay Cloud Deployment Workflow](https://learn.liferay.com/liferay-cloud/latest/en/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) for more information about deploying files to an environment's Liferay service.
 
 ```{important}
-If you've purchased Commerce through a Liferay Cloud contract, then the Liferay Cloud team manages the activation key through the cloud infrastructure, and there is no need to manage the key yourself. However, if you are adding Commerce to an existing Liferay Cloud project, you must manually deploy the licence yourself.
+If you've purchased Commerce through a Liferay Cloud contract, then the Liferay Cloud team manages the activation key through the cloud infrastructure, and there is no need to manage the key yourself. However, if you are adding Commerce to an existing Liferay Cloud project, you must manually deploy the licence.
 ```
 
 #### Verifying Deployment
 
-Verify your key has successfully deployed via the console:
+Verify your key has successfully been deployed via the console:
 
    ```bash
    INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:271] Processing activation-key-commercesubscriptiondevelopment-1-developeractivationkeys.xml
@@ -180,7 +180,7 @@ Remove the expired XML key from the `opt/liferay/osgi/modules` folder and the ex
 
 #### Updating the Liferay Service in Liferay Cloud Projects
 
-The Liferay Cloud team manages both DXP and Commerce licenses, and there is no need for users to manually update them for themselves.
+The Liferay Cloud team manages both DXP and Commerce licenses, and there is no need for users to manually update them.
 
 ## Related Topics
 

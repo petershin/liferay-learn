@@ -26,7 +26,7 @@ Liferay Portal periodically checks for new assets and sends emails to subscribed
 1. Open the Product Menu and go to *Control Panel* &rarr; *Configuration* &rarr; *System Settings*.
 1. Select *Assets* under the *Content and Data* heading.
 1. Go to *System Scope* &rarr; *Asset Publisher*. 
-1. Change the *Check Interval* setting to the interval (in hours) that you want to check for new assets and notify subscribed users, and click *Save* to apply the changes.
+1. Change the *Check Cron Expression* or *Check Interval* setting to the interval (in hours) that you want to check for new assets and notify subscribed users, and click *Save* to apply the changes.
 
 ![The Check Interval settings specifies how often assets are checked for updates.](./configuring-asset-publisher-subscriptions/images/03.png)
 

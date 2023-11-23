@@ -26,7 +26,9 @@ The following summarizes some distinguishing characteristics between the `Deploy
 | **Type** | **Purpose** | **Resource Usage and Startup Time** | **Dedicated SSD for Local Volumes** | **Access to NFS** | **Ordered Startup / Scaling** |
 | :--- | :--- | :--- | :---: | :---: | :---: |
 | **Deployment** | Stateless applications with the use of NFS | Consumes less resources and starts up faster than `StatefulSet` type | X | ✓ | X |
-| **StatefulSet** | Stateful applications | Consumes more resources and starts up slower than `Deployment` type | ✓ | X | ✓ |
+| **StatefulSet** | Stateful applications | Consumes more resources and starts up slower than `Deployment` type | ✓ | ✓* | ✓ |
+
+*StatefulSets can use NFS volumes if mounted as additional volumes, not the dedicated volume that serves as Liferay's home directory.
 
 In general, the `Deployment` type is more lightweight and allows for faster deployments, as well as shared volumes between services (for shared files, like the document library). The `StatefulSet` type is more costly for deployments and resource usage (including the total memory and CPUs allocated for your project), but persists data through deployments and gains improved file access performance by using a dedicated SSD.
 

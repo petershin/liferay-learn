@@ -31,7 +31,7 @@ You can view the selected availability estimate whenever the product runs out of
 
 To create a new availability estimate,
 
-1. Navigate to the *Control Panel* → *Commerce* → *Settings*.
+1. Navigate to the *Control Panel* &rarr; *Commerce* &rarr; *Settings*.
 
 1. Click the *Availability Estimates* tab.
 
@@ -44,7 +44,7 @@ To create a new availability estimate,
 
 This creates the new availability estimate. The priority value of 4.0 means that the new estimate appears below the existing availability estimates in the drop-down menu. Only estimates of priority 5.0 or higher can appear below it.
 
-![New Availability Estimate](./availability-estimates/images/04.png)
+![Creating a new availability estimate.](./availability-estimates/images/04.png)
 
 To use it, navigate to a product's *Configuration* tab, enable the *Display Availability* option, select the desired *Availability Estimate* from the dropdown, and click *Publish*.
 

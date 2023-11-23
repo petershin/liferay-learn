@@ -24,7 +24,7 @@ Here are Liferay's inventory management features:
 * Set availability estimates
 * Configure low stock actions
 * Set SKU inventory by warehouse
-* Set inventory by unit of measure {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
+* Set inventory by [unit of measure](./product-management/creating-and-managing-products/products/units-of-measure.md) {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
 
 You can use the inventory management system to track your inventory in a single place. See [Using the Inventory Management System](./inventory-management/using-the-inventory-management-system.md) for more information.
 
@@ -40,19 +40,21 @@ For a store to accept orders, the related channel must have a warehouse associat
 
 {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
 
-If you have a unit of measure configured for the SKU, inventory is managed by that unit. 
+If you have a unit of measure configured for the SKU, inventory is managed by that unit for the SKU.
 
 {bdg-secondary}`Liferay DXP 2023.Q3/Portal 7.4 GA97 and Below`
 
-Inventory is managed per SKU. Read [Setting Inventory by Warehouse](./inventory-management/setting-inventory-by-warehouse.md) for more information.
+Inventory is tracked at the SKU level. 
 
 ```{important}
 Each product in the inventory must be associated to at least one SKU.
 ```
 
+Read [Setting Inventory by Warehouse](./inventory-management/setting-inventory-by-warehouse.md) for more information.
+
 ## Low Stock Actions
 
-A low stock action performs an action when available product inventory reaches a specific threshold. Read [Low Stock Action](./inventory-management/low-stock-action.md) to learn how to configure the action that is executed when inventory reaches a minimum threshold.
+A low stock action performs an action when available product inventory reaches a specific threshold. Read [Low Stock Action](./inventory-management/low-stock-action.md) to learn how to configure the executed action when inventory reaches a minimum threshold.
 
 Developers interested in creating their own custom low stock action can read [Implementing a Custom Low Stock Activity](./developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md).
 

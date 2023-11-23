@@ -14,10 +14,10 @@ The page displays product SKUs, their units, and their availability.
 | Field     | Description                                                                                                                                                                                               |
 | :-------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SKU       | Primary identifier for the inventory system.                                                                                                                                                              |
-| UOM       | Unit of measure configured for the SKU. {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`                                                                                                                |
-| On Hand   | Total number of available units for an SKU from all warehouses.                                                                                                                                           |
-| Available | Number of purchaseable units for an SKU. Liferay's calculation: [Quantity Available] = [Quantity on Hand] - [Quantity on Order] - [Safety Stock Quantity].                                                |
-| On Order  | Number of units allocated to open orders for an SKU. These quantities are consumed when an order is shipped.                                                                                              |
+| UOM       | [Unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU. {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`                                                                                                            |
+| On Hand   | Total number of available units for an SKU or a unit of measure from all warehouses.                                                                                                                                           |
+| Available | Number of purchaseable units for an SKU or unit of measure. Liferay's calculation: [Quantity Available] = [Quantity on Hand] - [Quantity on Order] - [Safety Stock Quantity].                                                |
+| On Order  | Number of units allocated to open orders for an SKU or unit of measure. These quantities are consumed when an order is shipped.                                                                                              |
 | Incoming  | Number of units scheduled as replenishment for an SKU, but not yet received. Values are informative only and not based on any calculations. Administrators can use it to keep track of future quantities. |
 
 ## SKU Details
@@ -58,8 +58,8 @@ Click *Add* (![Add Button](../images/icon-add.png)) to create an incoming entry 
 
 ![Add a quantity for a particular warehouse.](./inventory-management-reference-guide/images/07.png)
 
-| Field                  | Description                                        |
-| :--------------------- | :------------------------------------------------- |
+| Field                  | Description                                    |
+| :--------------------- | :--------------------------------------------- |
 | Quantity               | Quantity of items incoming.                    |
 | Destination            | Warehouse where the incoming items are stored. |
 | Expected Delivery Date | Scheduled date of delivery.                    |

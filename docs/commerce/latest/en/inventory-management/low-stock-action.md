@@ -3,7 +3,7 @@ uuid: ed5aa0f9-5de5-46a4-90ea-b66937d43880
 ---
 # Low Stock Action
 
-Low stock actions trigger when SKU inventory falls below a specific threshold. By default, Liferay includes the Set as Unpublished low stock action, which removes the product from the store when its inventory falls below the threshold. You can also create custom low stock actions. See [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) for more information.
+Low stock actions trigger when SKU inventory falls below a specific threshold. By default, Liferay includes the *Set as Unpublished* low stock action, which removes the product from the store when its inventory falls below the threshold. You can also create custom low stock actions. See [Implementing a Custom Low Stock Activity](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) for more information.
 
 To set up a low stock action for a product,
 

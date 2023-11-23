@@ -3,7 +3,7 @@ uuid: 292bac86-29c0-4fbc-9f11-908a0ecc011c
 ---
 # Activating Liferay Commerce Enterprise
 
-Starting with Liferay DXP/Portal 7.3, Commerce ships with all Liferay bundles and Docker containers and does not require separate installation. However, to access and use the enterprise features of Commerce, the process differs depending on the DXP version you're running. For Liferay DXP 7.4 GA1+, all Commerce modules are enabled by default and ready for use. For DXP 7.3 FP3/SP2+, Commerce is activated using a [portal property](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html), while earlier versions use a Commerce license file. This property doesn't affect Liferay Portal bundles/images since they don't include the enterprise features.
+Starting with Liferay DXP/Portal 7.3, Commerce ships with all Liferay bundles and Docker containers and does not require separate installation. However, to access and use the enterprise features of Commerce, the process differs depending on the DXP version you're running. For Liferay DXP 7.4 GA1+, all Commerce modules are enabled by default and ready for use. For DXP 7.3 SP3+, Commerce is activated using a [portal property](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html), while earlier versions use a Commerce license file. This property doesn't affect Liferay Portal bundles/images since they don't include the enterprise features.
 
 ```{important}
 In Liferay 7.4 U48+/GA48+, the portal property for disabling Commerce modules (`enterprise.product.commerce.enabled`) was removed. Commerce features are now available and supported for all customers with valid DXP 7.4 subscriptions. Disabling Commerce can cause inconsistencies with other Liferay DXP modules.
@@ -51,11 +51,11 @@ See [Configuring Containers](https://learn.liferay.com/dxp/latest/en/installatio
 
 If successful, the Commerce modules no longer appear in the Global Menu (![Global Menu](../images/icon-applications-menu.png)).
 
-## Activating Liferay Commerce Enterprise for Liferay DXP 7.3 FP3/SP3+
+## Activating Liferay Commerce Enterprise for Liferay DXP 7.3 SP3+
 
 {bdg-primary}`Liferay DXP and Commerce Subscriptions Required`
 
-For DXP 7.3 FP3/SP2+, activate Commerce by setting the `enterprise.product.commerce.enabled` portal property to `true`.
+For DXP 7.3 SP3+, activate Commerce by setting the `enterprise.product.commerce.enabled` portal property to `true`.
 
 ### Activating Commerce for Liferay Bundles
 

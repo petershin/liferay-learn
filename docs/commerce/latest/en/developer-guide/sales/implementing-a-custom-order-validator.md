@@ -98,7 +98,7 @@ public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commer
 ```java
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem) throws PortalException;
 ```
-> This is the second validation method where we can add custom validation logic. This method is called for items already in the cart, whenever a customer proceeds to a new step in checkout.
+> This is the second validation method where we can add custom validation logic. This method is called for items already in the cart, whenever the order transitions to `In Progress` or `Pending`.
 
 ### Complete the Order Validator
 

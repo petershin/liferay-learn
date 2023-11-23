@@ -17,7 +17,7 @@ To set inventory by warehouse,
 
 1. Enter a quantity for the available warehouses. 
 
-   {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you have a unit of measure configured for the SKU, you can enter a quantity for each unit per warehouse.
+   {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, you can enter a quantity for each unit per warehouse.
 
    ![Enter the quantity of available units for an SKU in each warehouse.](./setting-inventory-by-warehouse/images/01.png)
 
@@ -29,7 +29,7 @@ Each warehouse now has the correct quantity available for sale.
 
 ## Transferring Stock Between Warehouses
 
-{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you have a unit of measure configured for the SKU, inventory is tracked by the configured unit for the SKU. Otherwise, inventory is tracked at the SKU level. This information is available on the inventory page. 
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, inventory is tracked by the configured unit for the SKU. Otherwise, inventory is tracked at the SKU level. This information is available on the inventory page. 
 
 If your store has multiple warehouses, you can transfer stock from one warehouse to another.
 

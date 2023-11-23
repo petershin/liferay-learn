@@ -10,7 +10,7 @@ You can use Liferay's inventory management system to manage inventory for produc
 * Add a safety stock
 * View historical changes
 
-Before adding inventory for a product SKU, you must create at least one warehouse for storing the inventory. See [Setting Up Warehouses](./setting-up-warehouses.md) for more information.
+Before adding inventory for a product SKU or a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md), you must create at least one warehouse for storing the inventory. See [Setting Up Warehouses](./setting-up-warehouses.md) for more information.
 
 To access the inventory page, open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
@@ -20,7 +20,7 @@ If you're using Commerce 2.0 or 2.1, the Inventory Management option is located 
 
 ## Adding Inventory for SKUs
 
-{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you've a unit of measure configured for the SKU, inventory is tracked by that unit for the SKU. Otherwise, inventory is tracked at the SKU level. 
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you've a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, inventory is tracked by that unit for the SKU. Otherwise, inventory is tracked at the SKU level. 
 
 When creating an inventory entry, you must specify an SKU, warehouse, and quantity. Without an SKU, you cannot add inventory to a product.
 

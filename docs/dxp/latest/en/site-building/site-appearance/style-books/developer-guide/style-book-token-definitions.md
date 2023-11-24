@@ -3,11 +3,11 @@ uuid: 28fd229f-2eb5-4c12-bc0b-cc33b2a0e859
 ---
 # Style Book Token Definitions
 
-> Available: Liferay DXP/Portal 7.3+
+{bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
-Style Books have options grouped into various categories that are defined per theme. Each option is defined with a *token*. The collection of all tokens defined for a theme is a *token definition*.
+Style books have options grouped into various categories that are defined per theme. Each option is defined with a token. The collection of all tokens defined for a theme is a *token definition*.
 
-When you assign a theme to your Site's Pages, the token definition included with that theme is used when creating a Style Book for the Site.
+When you assign a theme to your site's pages, the token definition included with that theme is used when creating a style book for the site.
 
 ## Defining Tokens for Your Style Book
 
@@ -15,9 +15,9 @@ Since the token definition is tied to your theme, token definitions must corresp
 
 ### Token Categories
 
-Tokens defining the options for configuring your Style Book are grouped into categories. Each category appears as one of the options in the drop-down menu when you are editing your Style Book.
+Tokens defining the options for configuring your style book are grouped into categories. Each category appears as one of the options in the drop-down menu when you are editing your style book.
 
-![Each of the options in the drop-down menu corresponds to one category of Style Book tokens.](./style-book-token-definitions/images/01.png)
+![Each of the options in the drop-down menu corresponds to one category of style book tokens.](./style-book-token-definitions/images/01.png)
 
 Define each of these categories within a `frontendTokenCategories` field within your theme's `frontend-token-definition.json` file in `src/WEB-INF/`:
 
@@ -37,9 +37,9 @@ Define a `label` and a `name` for each of your token categories. The `label` val
 
 ### Token Sets
 
-Each category is further organized into token sets. Token sets correspond to the collapsible groups of options that appear when you are editing a Style Book.
+Each category is further organized into *token sets*. Token sets correspond to the collapsible groups of options that appear when you are editing a style book.
 
-For example, using the default Classic theme, the *Button Primary* token set (within the *Buttons* category) includes all tokens for standard button color options:
+For example, using the default Classic theme, the Button Primary token set (within the Buttons category) includes all tokens for standard button color options:
 
 ![The Button Primary token set includes all of the customizable colors for the main buttons in the Classic theme.](./style-book-token-definitions/images/02.png)
 

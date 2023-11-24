@@ -19,7 +19,7 @@
 	selectRoleButton.addEventListener(
 		'click',
 		function(event) {
-			new Liferay.Util.openSelectionModal(
+			Liferay.Util.openSelectionModal(
 				{
 					onSelect: function (event) {
 						alert(event.value);

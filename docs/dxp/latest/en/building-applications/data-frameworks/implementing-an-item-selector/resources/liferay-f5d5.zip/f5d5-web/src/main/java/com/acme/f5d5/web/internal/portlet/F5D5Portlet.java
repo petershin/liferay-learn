@@ -24,7 +24,8 @@ import org.osgi.service.component.annotations.Reference;
 	property = {
 		"com.liferay.portlet.display-category=category.sample",
 		"javax.portlet.display-name=F5D5 Portlet",
-		"javax.portlet.init-param.view-template=/view.jsp"
+		"javax.portlet.init-param.view-template=/view.jsp",
+        "javax.portlet.version=3.0"
 	},
 	service = Portlet.class
 )

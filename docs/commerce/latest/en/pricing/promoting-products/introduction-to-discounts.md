@@ -15,15 +15,17 @@ Discounts are price reductions you can apply to products and orders to offer inc
 | Subtotal        | Applies to order subtotals, usually before applying taxes and other fees.                                                                                     |
 | Total           | Applies to order totals.                                                                                                                                      |
 
-Once created, you can both determine which channels, accounts, and order types are eligible for receiving the discount and define rules to specify requirements for qualifying. By default, Commerce applies discounts automatically, but you can make them available to customers as coupon codes. Also, when configuring discounts, you can schedule when they take effect and expire.
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you have [units of measure](../../product-management/creating-and-managing-products/products/units-of-measure.md) configured for SKUs, you can target discounts at each unit of measure specifically. 
 
-See [Creating Discounts](./creating-a-discount.md) to get started or [Introduction to Pricing](../introduction-to-pricing.md) to learn how discounts contribute to Commerce's pricing engine.
+Once created, you can both determine which channels, accounts, and order types are eligible for receiving the discount and define rules to specify requirements for qualifying. By default, Liferay applies discounts automatically, but you can make them available to customers as coupon codes. Also, when configuring discounts, you can schedule when they take effect and expire.
+
+See [Creating Discounts](./creating-a-discount.md) to get started or [Introduction to Pricing](../introduction-to-pricing.md) to learn how discounts contribute to Liferay's pricing engine.
 
 ## Coupon Codes
 
 Regardless of the discount type you choose, you can ask users to enter a coupon code to qualify for the discount. After enabling a coupon code, you can share it through emails, newsletters, or ads.
 
-![Activate the Coupon Code feature and enter a coupon code for this discount type.](./introduction-to-discounts/images/01.png)
+![Activate the coupon code feature and enter a coupon code for this discount type.](./introduction-to-discounts/images/01.png)
 
 To accept coupon codes, you must add the *Coupon Code Entry* widget on a store's [Checkout](../../creating-store-content/commerce-storefront-pages/checkout.md) page. The checkout page is available out-of-the-box on the [Minium site](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md).
 

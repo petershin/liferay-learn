@@ -3,13 +3,31 @@ uuid: 765551fb-f76c-4fe8-9b30-35e25a0e8fc8
 ---
 # Setting a Product's Base Price
 
-Product SKUs are created without a set base price. So, you'll need to add one before it's added to the Catalog's Base Price List. Once added, this price serves as the default price for the SKU when no overrides (e.g., other Price Lists or Promotions) are applied to it.
+When you create a SKU, it doesn't have a base price. A price entry for the SKU is automatically created in the catalog's base price list, but you must change it to the SKU's actual price. Once added, this price serves as the default price for the SKU when no overrides (e.g., other price lists or promotions) are applicable.
 
-## Setting a Product's Base Price
+## Setting the Base Price
 
-Follow these steps to assign a price to a SKU:
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` To assign the base price or promotion price for an SKU or a unit of measure:
 
-1. Open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Products*.
+1. Open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
+
+1. Click on the desired product.
+
+1. Go to the *SKUs* tab, and click on the desired *SKU*.
+
+1. Go to the *Price* tab.
+
+1. Select the base price list or base promotion list.
+
+1. Enter the desired value in the *Price List Price* field.
+
+1. Click *Save*.
+
+If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, the base price list and base promotion list appears as a separate entry for each unit. You can configure different prices for each of the available units of measure.
+
+{bdg-secondary}`Liferay DXP 2023.Q3/Portal GA97 and Below` To assign a SKU's base price:
+
+1. Open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
 1. Click on the desired product.
 
@@ -27,7 +45,7 @@ Follow these steps to assign a price to a SKU:
 
 1. Click on *Publish*.
 
-The SKU’s base price and any other entered values are now set. You can directly edit this amount at any time or modify it using Price Lists, promotion prices, and discounts.
+The SKU’s base price and any other entered values are now set. You can directly edit this amount at any time or modify it using price lists, promotion prices, and discounts.
 
 ## Commerce 2.1 and Below
 

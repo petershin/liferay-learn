@@ -3,13 +3,13 @@ uuid: 3caf47dd-49d5-477c-8334-7a985adc57b2
 ---
 # Creating a Promotion
 
-You can follow the steps below to create a *Promotion* that reduces the price of all products in the *Catalog* by 20% on the 4th of July. All *Accounts*, *Account Groups*, *Channels*, and *Order Types* are eligible for this promotion.
+You can follow the steps below to create a promotion that reduces the price of all products in the catalog by 20% on the 4th of July. All accounts, account groups, channels, and order types are eligible for this promotion.
 
-1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and click on *Commerce* &rarr; *Promotions*.
+1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Promotions*.
 
-   ![Click on Promotions from the Global Menu and create a new promotion.](./creating-a-promotion/images/01.png)
+   ![Click on promotions from the Global Menu and create a new promotion.](./creating-a-promotion/images/01.png)
 
-1. Click *Add* button (![Add icon](../../images/icon-add.png)) and enter the following information.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) and enter the following information.
 
    **Name:** 4th of July Promotion
 
@@ -21,15 +21,15 @@ You can follow the steps below to create a *Promotion* that reduces the price of
 
 1. Click *Submit*.
 
-This creates a new Promotion on the selected Catalog. Notice how there is a *Base Promotion List* for the catalog already available. Read [Using the Promotion Base List](./using-the-promotion-base-list.md) for more information.
+This creates a new promotion on the selected catalog. Notice how there is a *Base Promotion List* for the catalog already available. Read [Using the Promotion Base List](./using-the-promotion-base-list.md) for more information.
 
-![You can change the name of the promotion, assign a priority, select the *Parent Price List*, and the *Price Type*.](./creating-a-promotion/images/03.png)
+![You can change the name of the promotion, assign a priority, select the Parent Price List, and the Price Type.](./creating-a-promotion/images/03.png)
 
-In the Details section, you can change the name of the promotion, assign a priority, and select the Parent Price List and the Price Type. Since the Promotion is for the 4th of July, you can set a schedule by selecting a Publish Date and Expiration Date from the Schedule section. Click *Publish* to activate the Promotion. If there are multiple Promotions applicable for an Account, the Promotion with higher priority has precedence over the others. See [Promotions Reference](./promotions-reference.md) for more information on specific fields.
+In the *Details* section, you can change the name of the promotion, assign a priority, and select the Parent Price List and the Price Type. Since the promotion is for the 4th of July, you can set a schedule by selecting a *Publish Date* and *Expiration Date* from the *Schedule* section. Click *Publish* to activate the promotion. If there are multiple promotions applicable for an account, the promotion with higher priority has precedence over the others. See [Promotions Reference](./promotions-reference.md) for more information on specific fields.
 
 ## Adding a Price Modifier
 
-In this example, the Promotion reduces the price of all Products in the Catalog by 20%. To do this, you must add a Price Modifier.
+In this example, the promotion reduces the price of all products in the catalog by 20%. To do this, you must add a price modifier.
 
 1. Click the *Price Modifiers* tab.
 
@@ -46,10 +46,10 @@ In this example, the Promotion reduces the price of all Products in the Catalog 
 1. Click *Submit*.
 
 ```{note}
-You need not set an expiration date for the price modifier if you have already set an expiration date for the Promotion itself.
+You need not set an expiration date for the price modifier if you have already set an expiration date for the promotion itself.
 ```
 
-You must now configure the new Price Modifier. Click the entry from the list and enter the percentage amount as -20. Then activate it using the *Active* toggle. After that, click *Save* and click *Publish*. See [Price Modifiers Reference](./promotions-reference.md#price-modifiers-reference) for more information.
+You must now configure the new price modifier. Click the entry from the list and enter the percentage amount as -20. Then activate it using the *Active* toggle. After that, click *Save* and click *Publish*. See [Price Modifiers Reference](./promotions-reference.md#price-modifiers-reference) for more information.
 
 ![Configure the price modifier and activate it.](./creating-a-promotion/images/05.png)
 

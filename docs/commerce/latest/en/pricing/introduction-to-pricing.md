@@ -5,17 +5,23 @@ uuid: 32a5f0dd-4431-4261-b354-efe41ffd6b04
 
 Liferay provides a robust pricing system to fine-tune product prices. You can define multiple price entries for a single product SKU and determine which accounts, account groups, and channels are eligible to receive each price. If multiple price entities exist for the same SKU, the Commerce pricing engine calculates which entities should be used for each channel customer.
 
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, you can define multiple price entries for each unit of measure and determine the same eligibility criteria as with regular SKUs. 
+
 ```{note}
-The following overview describes the Commerce Pricing Engine v2.0+. This engine version is the default algorithm used for Commerce 3.0+ and Portal/DXP 7.3+. Commerce 2.1.x and earlier versions use Commerce's [Pricing Engine v1.0](#pricing-engine-v1-0-reference) by default. If desired, you can [change the Pricing Engine version](#enabling-pricing-engine-v2-0-in-commerce-2-1-x) used for the instance.
+The following overview describes Commerce Pricing Engine v2.0+. This is the default pricing algorithm used for Commerce 3.0+ and Portal/DXP 7.3+. Commerce 2.1.x and earlier versions use [Pricing Engine v1.0](#pricing-engine-v1-0-reference) by default. If desired, you can [change the pricing engine version](#enabling-pricing-engine-v2-0-in-commerce-2-1-x) used for the instance.
 ```
 
 ## Components of Commerce's Pricing System
 
-In Liferay, every product is stored in a catalog, and each catalog has its own default [base price list](#base-price-list) and [base promotion list](#base-promotion-list). These lists are used to store base price entries for all product SKUs contained in the catalog and are made available to all customers. You can also create custom [price lists](#price-lists) and [promotion lists](#promotion-lists) to define more targeted and configurable price entities. As part of each entry, you can also define [price tiers](#price-tiers) that set special prices for products based on quantity. Finally, create [discounts](#discounts) that are applied on top of price entries without overriding them.
+You store products in catalogs, and each catalog has its own default [base price list](#base-price-list) and [base promotion list](#base-promotion-list). These lists store base price entries for all product SKUs contained in the catalog and are available to all customers. You can also create custom [price lists](#price-lists) and [promotion lists](#promotion-lists) to define more targeted and configurable price entities. As part of each entry, you can also define [price tiers](#price-tiers) that set special prices for products based on quantity. Finally, create [discounts](#discounts) that are applied on top of price entries without overriding them.
+
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, you'll have entries for each unit in the base price list, base promotion list, custom price lists, and custom promotion lists. 
+
+![The base price list also stores the starting price for every unit configured for an SKU.](./introduction-to-pricing/images/09.png)
 
 ### Base Price List
 
-The base price list stores the starting price entry for every product SKU in a catalog. These entries set the standard currency and price used for each SKU when no overrides are applied to it. This list is automatically created for every catalog and is available to all accounts and channels. See [Setting a Product's Base Price](./setting-a-products-base-price.md) to learn more.
+The base price list stores the starting price for every product SKU in a catalog. These entries set the standard currency and price used for each SKU when no overrides are applied to it. This list is automatically created for every catalog and is available to all accounts and channels. See [Setting a Product's Base Price](./setting-a-products-base-price.md) to learn more.
 
 ![The base price list stores the starting price entry for every product SKU in a catalog.](./introduction-to-pricing/images/02.png)
 
@@ -54,6 +60,8 @@ Discounts are applied on top of the price and modify it without superseding it. 
 ## How the Pricing Engine Calculates Product Prices
 
 The pricing engine determines how each pricing component contributes to an SKU's price in a channel. When the engine receives a price request, it first calculates the product's *unit price* and *promotion price*. These prices are then used to determine the *final price* made available to the customer.
+
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` The pricing engine calculates the unit price, promotion price, final price, and order price the same way for an SKU with [units of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured in comparison to a SKU that doesn't have any units of measure.
 
 <!--TASK: Consider adding details about net/gross price types and how taxes are calculated-->
 

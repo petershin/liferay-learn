@@ -3,42 +3,42 @@ uuid: aa12ca7c-9806-414a-9e6b-d403131e089c
 ---
 # Introduction to Product Groups
 
-Product Groups are static groups of products you can use for targeted discounts or pricing. Product Groups are ideal in two scenarios:
+Product groups are static groups of products you can use for targeted discounts or pricing. Product groups are ideal in two scenarios:
 
 1. If you have products that are not part of a single category and want them to be priced differently for specific customers.
 
 1. If you have products that are not part of a single category and want them to be discounted differently for specific customers.
 
 ```{note}
-Product Groups don’t change the way Products are grouped or displayed for the buyer and are used for administrative purposes. 
+Product groups don’t change the way Products are grouped or displayed for the buyer and are used for administrative purposes. 
 ```
 
 ## Creating a Product Group
 
-1. Open the Applications Menu ![Applications Menu](../../images/icon-applications-menu.png), click on the _Commerce_ tab, and go to _Pricing_ &rarr; _Product Groups_.
+1. Open the Applications Menu ![Applications Menu](../../images/icon-applications-menu.png), and navigate to _Commerce_ &rarr; _Product Groups_.
 
-1. Click _Add_ (![Add](../../images/icon-add.png)) and enter a name and description for the Product Group.
+1. Click _Add_ (![Add](../../images/icon-add.png)) and enter a name and description for the product group.
 
-    ![Enter details for the Product Group.](./introduction-to-product-groups/images/01.png)
+    ![Enter details for the product group.](./introduction-to-product-groups/images/01.png)
 
 1. Click _Submit_.
 
-This creates a Product Group. 
+This creates a product group. 
 
 ## Adding Products to a Product Group
 
-Once the Product Group is created, you must add products to it. Below you'll select two products and add them to the Product Group so they can be used for targeted pricing or discounts.
+Once the product group is created, you must add products to it. Below you'll select two products and add them to the product group so they can be used for targeted pricing or discounts.
 
 1. Use the _Add Products_ search bar to find the products you want to add. The options appear automatically based on what you type.
 
-   ![Search for products to be added to the Product Group.](./introduction-to-product-groups/images/02.png)
+   ![Search for products to be added to the product group.](./introduction-to-product-groups/images/02.png)
 
 1. Click _Select_ next to the product of your choice to add it to the group.
 
-This Product Group can now be linked to a _Price List_ or _Discount_.
+This product group can now be linked to a _Price List_ or _Discount_.
 
 ```{note}
-Apart from adding Products to a Product Group, you can also link a Product Group to a Product. To do this, select the Product of your choice from the Products list, select the Product Groups tab, and search for the Product Group you created. Click *Select* next to the Product Group of your choice to link the Product Group with the Product.
+Apart from adding Products to a product group, you can also link a product group to a Product. To do this, select the Product of your choice from the Products list, select the product groups tab, and search for the product group you created. Click *Select* next to the product group of your choice to link the product group with the Product.
 ```
 
 ## Linking a Discount to a Product Group
@@ -57,35 +57,35 @@ Apart from adding Products to a Product Group, you can also link a Product Group
 
 1. Click _Submit_.
 
-    This creates a new Discount and can be applied to Product Groups.
+    This creates a new Discount and can be applied to product groups.
 
-    In the Details page of the Discount, you can alter the type, add an amount, and set the active status and level for your discount. Read [Introduction to Discounts](./introduction-to-discounts.md) for more information. Once the discount is created, you must link it to the Product Group you created earlier.
+    In the Details page of the Discount, you can alter the type, add an amount, and set the active status and level for your discount. Read [Introduction to Discounts](./introduction-to-discounts.md) for more information. Once the discount is created, you must link it to the product group you created earlier.
 
 1. Scroll down to the Select Product Group section on the Discount's Details page.
 
-    ![Search for the Product Group to be added to the Discount.](./introduction-to-product-groups/images/04.png)
+    ![Search for the product group to be added to the Discount.](./introduction-to-product-groups/images/04.png)
 
-1. Type the name of the Product Group you created earlier. It automatically populates the results based on what you type.
+1. Type the name of the product group you created earlier. It automatically populates the results based on what you type.
 
-1. Click _Select_ next to the Product Group. Once added, click _Publish_ to activate the discount for your Product Group.
+1. Click _Select_ next to the product group. Once added, click _Publish_ to activate the discount for your product group.
 
 You can validate it by checking the Product in your catalog to view the discount.
 
-![The discount is applied to the product in the Product Group.](./introduction-to-product-groups/images/05.png)
+![The discount is applied to the product in the product group.](./introduction-to-product-groups/images/05.png)
 
 ## Linking a Price List to a Product Group
 
-To link a Price List to a Product Group, you must first create a Price List and then create a Price Modifier that targets the Product Group you created.
+To link a price list to a product group, you must first create a price list and then create a price modifier that targets the product group you created.
 
 1. Open the Applications Menu ![Applications Menu](../../images/icon-applications-menu.png), &rarr; _Commerce_ tab and go to _Pricing_ &rarr; _Price Lists_.
 
-1. Click _Add_ (![Add](../../images/icon-add.png)) and enter a name, catalog, and currency for your Price List.
+1. Click _Add_ (![Add](../../images/icon-add.png)) and enter a name, catalog, and currency for your price list.
 
-    ![Configure the Price List.](./introduction-to-product-groups/images/06.png)
+    ![Configure the price list.](./introduction-to-product-groups/images/06.png)
 
 1. Click _Submit_ when done.
 
-1. Click _Add_ (![Add](../../images/icon-add.png)) under the Price Modifiers section and enter the following information.
+1. Click _Add_ (![Add](../../images/icon-add.png)) under the price modifiers section and enter the following information.
 
     __Name__: Wheels Modifier
 
@@ -93,33 +93,33 @@ To link a Price List to a Product Group, you must first create a Price List and 
 
     __Modifier__: Percentage/Replace/Fixed Amount
 
-    ![Configure the Price Modifier.](./introduction-to-product-groups/images/07.png)
+    ![Configure the price modifier.](./introduction-to-product-groups/images/07.png)
 
 1. Click *Submit* when done.
 
-    ![Detailed configuration view of the Price Modifier.](./introduction-to-product-groups/images/08.png)
+    ![Detailed configuration view of the price modifier.](./introduction-to-product-groups/images/08.png)
 
-    This creates the Price Modifier and opens a more detailed view to configure it.
+    This creates the price modifier and opens a more detailed view to configure it.
 
     ```{note}
-    The amount mentioned in a Price Modifier is not considered as a discount. For instance, if you select the Percentage modifier and set the amount to 10, it raises the price of the product by 10%. To reduce the price, use a negative percentage.
+    The amount mentioned in a price modifier is not considered as a discount. For instance, if you select the Percentage modifier and set the amount to 10, it raises the price of the product by 10%. To reduce the price, use a negative percentage.
     ```
 
     ```{important}
-    If there are two Price Lists that target the same product, you must create the new price list with a higher priority for the changes to take effect.
+    If there are two price lists that target the same product, you must create the new price list with a higher priority for the changes to take effect.
     ```
 
-    ![Search for the Product Group to be added to the Price Modifier.](./introduction-to-product-groups/images/09.png)
+    ![Search for the product group to be added to the price modifier.](./introduction-to-product-groups/images/09.png)
 
-1. Under the Product Groups section, search for the Product Group you created. It auto-populates the results based on what you type.
+1. Under the product groups section, search for the product group you created. It auto-populates the results based on what you type.
 
-1. Click _Select_ next to the Product Group. Once added, click _Publish_ to activate the price list for your Product Group.
+1. Click _Select_ next to the product group. Once added, click _Publish_ to activate the price list for your product group.
 
 You can validate it by checking the product in your catalog to view the updated price.
 
-![The Price Modifier is applied to the product in the Product Group.](./introduction-to-product-groups/images/10.png)
+![The price modifier is applied to the product in the product group.](./introduction-to-product-groups/images/10.png)
 
-To view whether a discount or price list has been linked to a Product Group, click the _Applications Menu_ ![Applications Menu](../../images/icon-applications-menu.png), click the _Commerce_ tab, and go to _Pricing_ &rarr; _Product Groups_. Under Price Lists and Discounts, you can see the associated entities.
+To view whether a discount or price list has been linked to a product group, click the _Applications Menu_ ![Applications Menu](../../images/icon-applications-menu.png), click the _Commerce_ tab, and go to _Pricing_ &rarr; _Product Groups_. Under price lists and discounts, you can see the associated entities.
 
 ## Related Topics
 

@@ -3,32 +3,32 @@ uuid: 23fd9ec3-6981-429b-adf7-60f62aea992e
 ---
 # Using Price Modifiers
 
-Price modifiers are defined at the Price List level and modify the price of list entities according to set conditions. <!--TASK: Improve introduction-->
+Price modifiers target the prices set in a price list and modify them based on the criteria configured. Price modifiers can target catalogs, product groups, categories, and products. You can use modifiers to replace the amount, modify it by a percentage, or modify it by a fixed value. 
 
 ## Adding Price Modifiers to a Price List
 
-Follow these steps to add a new price modifier to a Price List:
+To add a new price modifier to a price list:
 
-1. Open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)), click on the *Commerce* tab, and go to *Pricing* &rarr; *Price Lists*.
+1. Open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Price Lists*.
 
-1. Click on the *Price List* you want to configure, and go to the *Price Modifiers* tab.
+1. Select the *Price List* you want to configure, and go to the *Price Modifiers* tab.
 
-1. Click on the *Add* button (![Add icon](../images/icon-add.png)).
+1. Click *Add* (![Add icon](../images/icon-add.png)).
 
 1. Enter a *Name* for the modifier.
 
 1. Determine a *Target* for the price modifier:
 
-   * **Catalog**: Apply the modifier to all Products in the current Catalog.
-   * **Categories**: Apply the modifier to all Products within a specific Category.
-   * **Products**: Apply the modifier to Products individually.
-   * **Product Groups**: Apply the modifier to all Products within specific Product Groups.
+   * **Catalog**: Apply the modifier to all products in the current catalog.
+   * **Categories**: Apply the modifier to all products within a specific category.
+   * **Products**: Apply the modifier to products individually.
+   * **Product Groups**: Apply the modifier to all products within specific product groups.
 
 1. Determine the type of *modifier* used:
 
    * **Percentage**: Modify targeted prices by a certain percentage.
    * **Fixed Amount**: Modify targeted prices by a fixed amount.
-   * **Replace**: Override targeted priced with a fixed value.
+   * **Replace**: Override targeted prices with a fixed value.
 
 1. Click on *Submit* when finished.
 
@@ -46,11 +46,11 @@ Follow these steps to configure a Price Modifier's general details:
 
 1. Enter an *Amount* to use for the selected type of modifier.
 
-1. Optionally, manually enter the Price Modifier's Priority, which is used as a tie breaker in the case of multiple matches.
+1. Optionally, manually enter the price modifier's Priority, which is used as a tie breaker in the case of multiple matches.
 
 1. Slide the *Active* toggle to *YES*.
 
-1. Optionally, you can *schedule* when the Price Modifier takes effect, as well as if and when it expires.
+1. Optionally, you can *schedule* when the price modifier takes effect, as well as if and when it expires.
 
 1. Click on *Save* when finished.
 
@@ -58,9 +58,9 @@ Follow these steps to configure a Price Modifier's general details:
 
 ## Configuring a Modifier's Target
 
-Once you've determined a Price Modifier's general details, additional configuration options are available based on the modifier's target. Each modifier can target Products, Product Groups, or Categories.
+Once you've determined a price modifier's general details, additional configuration options are available based on the modifier's target. Each modifier can target products, product groups, or categories.
 
-Follow these steps to configure a Price Modifier's target:
+Follow these steps to configure a price modifier's target:
 
 1. Click on the *Price List* you want to configure, and go to the *Price Modifiers* tab.
 

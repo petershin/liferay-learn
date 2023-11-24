@@ -7,7 +7,7 @@ Follow the steps below to create a discount by selecting the discount type, the 
 
 To create a new discount:
 
-1. Go to the _Global Applications_ → _Commerce_ → _Discounts_.
+1. Go to the _Global Applications_ &rarr; _Commerce_ &rarr; _Discounts_.
 1. Click the (![Add](../../images/icon-add.png)) button to add a new Discount.
 1. Enter a name: _Spring Sale_.
 1. Select a discount type (for example, _Apply to Subtotal_) from the _Apply to_ drop down. (See [Discount Types](./introduction-to-discounts.md#types-of-discounts) to learn more about the different discount types.)
@@ -21,7 +21,7 @@ To create a new discount:
 
 You can specify a discount's details, such as the percentage (if using a percentage based discount), the maximum discount amount, the [discount level](./introduction-to-discounts.md#tiered-discounts), and then activate it.
 
-In the Details section:
+In the *Details* section:
 
 1. Enter the following:
 
@@ -29,11 +29,11 @@ In the Details section:
     * **Maximum Discount Amount**: 20.00
     * **Level**: L1
 
-1. Slide the _Active_ toggle to _YES_.
+1. Enable the _Active_ toggle.
 
    ![Set the percentage and maximum discount account.](./creating-a-discount/images/04.png)
 
-1. Click _Publish_ when finished.
+1. Click _Publish_.
 
 The discount is now active. Configure the discount's rules and eligibility.
 
@@ -41,16 +41,16 @@ The discount is now active. Configure the discount's rules and eligibility.
 
 If using a coupon code,
 
-1. Switch the _Use Coupon Code_ toggle to _Yes_.
+1. Enable the _Use Coupon Code_ toggle.
 1. Enter the following:
 
     * **Coupon Code**: spring-sale
     * **Maximum Total Uses**: 1
     * **Maximum Uses Per Account**: 1
 
-1. Click _Publish_ when finished.
+1. Click _Publish_.
 
-The coupon code has been added.
+The coupon code is now active for the discount.
 
 ## Adding Rules to a Discount
 
@@ -61,7 +61,7 @@ If using more than one rule, you can either aggregate the rules or decide which 
 To add a new discount rule:
 
 1. Once the rule has been created, scroll down to the _Rules_ section.
-1. Click (![Add icon](../../images/icon-add.png)) button to add a new Discount Rule.
+1. Click _Add_ (![Add icon](../../images/icon-add.png)).
 1. Enter a name: _Spring Sales_.
 1. Select _Cart Total_ from the _Rule Type_ drop down menu.
 
@@ -73,16 +73,15 @@ To add a new discount rule:
 
    ![Enter a value in the Cart Total Minium Amount field.](./creating-a-discount/images/06.png)
 
-1. Click _Save_.
-1. Close the window.
+1. Click _Save_ and close the window.
 
-The discount rule has been configured.
+The discount rule is now active.
 
 ## Configure Discount's Eligibility Rules
 
-You can make this discount available for all accounts or specific accounts or account groups.
+You can make this discount available for all accounts or specific accounts, account groups, or order types.
 
-To specify which accounts and account groups are eligible for this discount:
+To specify which accounts, account groups, and order types are eligible for this discount:
 
 1. Click the _Eligibility_ tab.
 1. Click the [Select Account Groups](../../users-and-accounts/account-management/creating-a-new-account-group.md) radio button.
@@ -103,25 +102,25 @@ You can make this discount available on all channels or specific ones. To specif
 
 1. Click _Publish_ when finished.
 
-Your store now has an active discount with 20% off selected goods for those in the specified Account Group.
+Your store now has an active discount with 20% off selected goods for those in the specified account group. You can further customize this by adding an order type eligibility to apply the discount only to specific [order types](../../order-management/order-types.md). 
 
 ## Understanding Discount Specificity
 
 Discount rules and eligibility determine whether an order qualifies for one or many discounts. See the table below to understand discount specificity for the given eligibility.
 
 | **Specific Accounts** | **Specific Account Groups** | **Specific Channels** | **Specific Order Types** | **Rank** |
-| :--- | :--- | :--- | :--- | :--- |
-| &#10004; | | &#10004; | &#10004; | 1 |
-| &#10004; | | | &#10004; | 2 |
-| &#10004; | | &#10004; | | 3 |
-| &#10004; | | | | 4 |
-|  | &#10004; | &#10004; | &#10004; | 5 |
-|  | &#10004; | | &#10004; | 6 |
-|  | &#10004; | &#10004; | | 7 |
-|  | &#10004; | | | 8 |
-|  | | &#10004; | &#10004; | 9 |
-|  | | | &#10004; | 10 |
-|  | | &#10004; | | 11 |
+| :-------------------- | :-------------------------- | :-------------------- | :----------------------- | :------- |
+| &#10004;              |                             | &#10004;              | &#10004;                 | 1        |
+| &#10004;              |                             |                       | &#10004;                 | 2        |
+| &#10004;              |                             | &#10004;              |                          | 3        |
+| &#10004;              |                             |                       |                          | 4        |
+|                       | &#10004;                    | &#10004;              | &#10004;                 | 5        |
+|                       | &#10004;                    |                       | &#10004;                 | 6        |
+|                       | &#10004;                    | &#10004;              |                          | 7        |
+|                       | &#10004;                    |                       |                          | 8        |
+|                       |                             | &#10004;              | &#10004;                 | 9        |
+|                       |                             |                       | &#10004;                 | 10       |
+|                       |                             | &#10004;              |                          | 11       |
 
 A discount that applies to all accounts, account groups, channels and order types is the least specific. For instance, consider Account Group A has a discount of 50% on shipping and another discount of 60% on shipping that is eligible to all accounts, account groups, channels and order types. Here, Account Group A is only eligible for the discount of 50% since it is the most specific. If there are multiple discounts of the same rank and an active OR discount rule, the highest discount has precedence.
 

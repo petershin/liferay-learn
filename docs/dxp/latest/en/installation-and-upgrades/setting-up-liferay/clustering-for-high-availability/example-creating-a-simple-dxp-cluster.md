@@ -3,9 +3,7 @@ uuid: f1e685a5-2fbd-4b1c-8398-f7f3973d6171
 ---
 # Example: Creating a Simple DXP Cluster
 
-A fast, easy way to learn DXP clustering is to set up a two node DXP cluster environment on one machine using [Docker containers](https://docs.docker.com/get-started/overview/). Here you'll create two DXP server containers along with server containers for a database, search engine, and file store.
-
-Here are the server containers you'll create:
+A fast, easy way to learn DXP clustering is to set up a two node DXP cluster environment on one machine using [Docker containers](https://docs.docker.com/get-started/overview/). This example creates two DXP server containers along with server containers for a database, search engine, and file store.:
 
 | Server Type | Implementation | Container Name |
 | :---------- | :------- | :---------- |
@@ -16,7 +14,7 @@ Here are the server containers you'll create:
 | DXP Server | Tomcat | `dxp-2` |
 
 ```{warning}
-This example is for learning purposes and is not suitable for production use cases. For production environments, you should include an HTTP server for load balancing requests to the DXP servers, use separate database servers for read only and read-write operations, and consider clustering and load balancing database servers, file store servers, and search engine servers. Please read all of the [Clustering for High Availability](../clustering-for-high-availability.md) articles for more information.
+This example is for learning purposes and is not suitable for production use cases. For production environments, you should include an HTTP server for load balancing requests to the DXP servers, use separate database servers for read only and read-write operations, and consider clustering and load balancing database servers, file store servers, and search engine servers. See [Clustering for High Availability](../clustering-for-high-availability.md) for more information.
 ```
 
 Here are the main steps:
@@ -30,7 +28,7 @@ Here are the main steps:
 
 ## Start a Database Server
 
-A DXP cluster requires a data source that's accessible to all of the DXP cluster nodes. The data source can be a JNDI data source or a direct connection to a database server or a database server cluster. Please see the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for the database servers your DXP version supports. Please see [Database Configuration for Cluster Nodes](./database-configuration-for-cluster-nodes.md) for more information.
+A DXP cluster requires a data source that's accessible to all of the DXP cluster nodes. The data source can be a JNDI data source or a direct connection to a database server or a database server cluster. See the [compatibility matrix](https://help.liferay.com/hc/en-us/articles/360049238151) for the database servers your DXP version supports.
 
 Create the database server and DXP database:
 
@@ -66,15 +64,15 @@ Create the database server and DXP database:
     exit
     ```
 
-Your database server is ready for DXP.
+Your database server is ready for DXP. See [Database Configuration for Cluster Nodes](./database-configuration-for-cluster-nodes.md) for more information.
 
 ## Start a File Store Server
 
-A DXP cluster requires a File Store accessible to all of the DXP cluster nodes. For convenience, this example uses a [DBStore File Store](../../../system-administration/file-storage/other-file-store-types/dbstore.md) configured on the DXP database. The database server already started in this example includes the File Store. Please see [Configuring File Storage](../../../system-administration/file-storage.md) for information on configuring all File Store types.
+A DXP cluster requires a File Store accessible to all of the DXP cluster nodes. For convenience, this example uses a [DBStore File Store](../../../system-administration/file-storage/other-file-store-types/dbstore.md) configured on the DXP database. The database server already started in this example includes the File Store. See [Configuring File Storage](../../../system-administration/file-storage.md) for information on configuring all File Store types.
 
 ## Start a Search Engine Server
 
-A DXP cluster requires a search engine (running as a separate process) accessible to all of the DXP cluster nodes. Please see [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md) for more information.
+A DXP cluster requires a search engine (running as a separate process) accessible to all of the DXP cluster nodes. See [Installing a Search Engine](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md) for more information.
 
 Create and configure an Elasticsearch server:
 
@@ -132,7 +130,7 @@ Use [Configuration Files](../../../system-administration/configuring-liferay/con
     EOT
     ```
 
-You'll make these configuration files accessible to the cluster nodes via bind mounts on the DXP server containers.
+This makes the configuration files accessible to the cluster nodes via bind mounts on the DXP server containers.
 
 ```{note}
 The `docker run --add-host elasticsearch:[ip] ...` commands used later for the DXP servers add `/etc/hosts/` entries that map the name `elasticsearch` to the Elasticsearch server host IP address.
@@ -143,7 +141,7 @@ The `docker run --add-host elasticsearch:[ip] ...` commands used later for the D
 1. Get the container IP addresses for the `elasticsearch` and `some-mariadb` containers by executing the [`docker network inspect bridge`](https://docs.docker.com/engine/reference/commandline/network_inspect/) command. The `bridge` network is the default network.
 
     ```{important}
-    In the `docker run` commands that follow, you'll replace `[IP address]` with the `elasticsearch` and `some-mariadb` container IP addresses.
+    In the `docker run` commands that follow, replace `[IP address]` with the `elasticsearch` and `some-mariadb` container IP addresses.
     ```
 
 1. Start `dxp-1`.
@@ -242,24 +240,20 @@ Each node's container ID and port (`Node: [id]:[port]`) appear at the bottom of 
 
 ### Index the Content into the Search Engine
 
-Initiate indexing DXP content:
-
-1. Navigating to *Control Panel &rarr; Configuration &rarr; Search*.
+1. Navigate to *Control Panel &rarr; Configuration &rarr; Search*.
 
 1. In the Index Actions tab, click these options:
 
     * *Reindex* &rarr; *All Search Indexes*
     * *Reindex* &rarr; *All Spell Check Dictionaries*
 
-Content indexes into the search engine. Please see [Search Overview](../../../using-search/getting-started/search-overview.md) for more information.
+Content indexes into the search engine. See [Search Overview](../../../using-search/getting-started/search-overview.md) for more information.
 
 ## Test the DXP Cluster
 
 Test data synchronization between the nodes:
 
-1. Add content to one of the cluster nodes.
-
-    For example, add a new Widget Page called _New Stuff_ and add the Language Selector widget to it.
+1. Add content to one of the cluster nodes. For example, add a new Widget Page called _New Stuff_ and add the Language Selector widget to it.
 
 1. Refresh the UI on the other cluster node.
 
@@ -271,7 +265,7 @@ Congratulations on creating a working DXP cluster!
 
 ## What's Next
 
-Configure your [database](./database-configuration-for-cluster-nodes.md) for your DXP cluster.
+[Configure your database](./database-configuration-for-cluster-nodes.md) for your DXP cluster.
 
 ## Appendix A: Environment Settings
 
@@ -291,7 +285,7 @@ The example DXP server containers uses these settings.
 | LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=\\<br>true | Displays the server address and web server port |
 | LIFERAY_DL_PERIOD_STORE_PERIOD_IMPL=\\<br>com.liferay.portal.store.db.DBStore | File Store (Document Library Store) class |
 
-Please see the Env/[Portal Property](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) definitions for more information.
+See the Env/[Portal Property](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html) definitions for more information.
 
 ## Related Topics
 

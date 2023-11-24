@@ -121,4 +121,4 @@ Liferay was designed from the ground up to be responsive and adapt to any device
 
 ## Related Topics
 
-* [Building a Responsive Site](./building-a-responsive-site.md)
+* [Building a Responsive Site](../building-a-responsive-site.md)

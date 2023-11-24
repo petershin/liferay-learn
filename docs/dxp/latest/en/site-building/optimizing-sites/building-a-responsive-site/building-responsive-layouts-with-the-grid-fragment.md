@@ -5,7 +5,7 @@ uuid: 7ff35121-6281-42cc-873d-c0a1c94d4eae
 <!--TASK: Reconsider article.-->
 > Availability: Liferay DXP 7.3+.
 
-Liferay DXP [uses responsive design](./building-a-responsive-site.md) by default, but there are situations where you want additional and more granular control of the content layout. By using the [Grid Fragment](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md) in your Content Page, you gain precise control of the content layout for the different screen sizes in desktop and mobile devices. When you [edit a Content Page](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md), you can use the Grid Fragment (1) to outline your content and define customized layout styles (2) for the different target devices in the Device Display section (3). For example, you can customize the number of modules per row or the grid padding options for smartphone-size screens only.
+Liferay DXP [uses responsive design](../building-a-responsive-site.md) by default, but there are situations where you want additional and more granular control of the content layout. By using the [Grid Fragment](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md) in your Content Page, you gain precise control of the content layout for the different screen sizes in desktop and mobile devices. When you [edit a Content Page](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md), you can use the Grid Fragment (1) to outline your content and define customized layout styles (2) for the different target devices in the Device Display section (3). For example, you can customize the number of modules per row or the grid padding options for smartphone-size screens only.
 
 ![Using the Grid Fragment you can customize the layout options for different screen sizes.](./building-responsive-layouts-with-the-grid-fragment/images/04.png) 
 
@@ -39,6 +39,6 @@ You can save and reuse the Grid Fragment configuration of your choice in other C
 
 ## Related Topics
 
-- [Building a Responsive Site Overview](./building-a-responsive-site.md)
+- [Building a Responsive Site](../building-a-responsive-site.md)
 - [Saving Fragment Compositions](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md)
 - [Using Layout Elements](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md)

@@ -1,6 +1,6 @@
 ---
 toc:
-  - ./building-a-responsive-site/building-a-responsive-site.md
+  - ../building-a-responsive-site.md
   - ./building-a-responsive-site/creating-mobile-device-rules.md
   - >-
     ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
@@ -19,7 +19,7 @@ building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
 :gutter: 3 3 3 3
 
 :::{grid-item-card} 반응형 사이트 구축
-:link: ./building-a-responsive-site/building-a-responsive-site.md
+:link: ../building-a-responsive-site.md
 :::
 
 :::{grid-item-card} 모바일 디바이스 규칙 만들기

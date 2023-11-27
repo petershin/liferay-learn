@@ -48,7 +48,7 @@ This JSON configuration creates an input text field you can implement for cases 
 }
 ```
 
-![The text configuration is useful when an input text option is necessary.](./fragment-configuration-types-reference/images/06.png)
+![The text configuration is useful when an input text option is necessary.](./fragment-configuration-types-reference/images/01.png)
 
 ## Select Configuration
 
@@ -80,7 +80,7 @@ This JSON configuration creates a selector you can implement for cases where you
 }
 ```
 
-![The select configuration is useful when an option choice is necessary.](./fragment-configuration-types-reference/images/05.png)
+![The select configuration is useful when an option choice is necessary.](./fragment-configuration-types-reference/images/02.png)
 
 ## Checkbox Configuration
 
@@ -104,7 +104,7 @@ This JSON configuration creates a checkbox you can implement for cases where a b
 }
 ```
 
-![The Checkbox configuration is useful when a boolean selection is necessary.](./fragment-configuration-types-reference/images/01.png)
+![The checkbox configuration is useful when a boolean selection is necessary.](./fragment-configuration-types-reference/images/03.png)
 
 ## Color Picker Configuration
 
@@ -120,7 +120,7 @@ The color picker JSON configuration creates a flexible color selector where any 
 
 * If the color picker has no default value defined, click the *Default* drop-down menu to select any color from your currently used style book. This works the same as the Value from Stylebook button when you select a value.
 
-![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/02.png)
+![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/04.png)
 
 ```{note}
 If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette-configuration) configurations.
@@ -189,13 +189,13 @@ This JSON sample shows a field using the `length` configuration type. It include
 
 In the user interface, you can choose from the available units or specify a custom unit.
 
-![A field labeled 'Size' from a custom fragment uses the length configuration to show a drop-down of available units.](./fragment-configuration-types-reference/images/10.png)
+![A field labeled 'Size' from a custom fragment uses the length configuration to show a drop-down of available units.](./fragment-configuration-types-reference/images/05.png)
 
 ## Item Selector Configuration
 
 {bdg-secondary}`Available Liferay 7.3+`
 
-This configuration creates a selector for selecting one existing piece of content (a web content article, document, blog entry, category, product, or knowledge base article by default) to include in the fragment.
+This configuration creates a selector for selecting one existing piece of content (a document, web content article, blog entry, category, product, or knowledge base article by default) to include in the fragment.
 
 ```json
 {
@@ -216,7 +216,7 @@ This configuration creates a selector for selecting one existing piece of conten
 }
 ```
 
-![The item selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/04.png)
+![The item selector configuration is useful when an option choice to display existing content is necessary.](./fragment-configuration-types-reference/images/06.png)
 
 You can provide a more advanced configuration that lets authors select only a specific type of content. The configuration below specifies that only web content articles can be selected. The optional `itemSubtype` property specifies that the selected web content article must use the structure `article-structure-key-15` to be selected:
 
@@ -240,7 +240,7 @@ You can provide a more advanced configuration that lets authors select only a sp
 }
 ```
 
-This example specifies that only a document with the `image/jpg` MIME type (`.jpg` file) that uses the structure `metadataset-structure-key-2` can be selected:
+This example specifies that only a document with the `image/png` MIME type (`.png` file) can be selected:
 
 ```json
 {
@@ -253,9 +253,8 @@ This example specifies that only a document with the `image/jpg` MIME type (`.jp
           "type": "itemSelector",
           "typeOptions": {
             "itemType": "com.liferay.portal.kernel.repository.model.FileEntry",
-            "itemSubtype": "metadataset-structure-key-2",
             "mimeTypes": [
-              "image/jpg"
+              "image/png"
             ]
           }
         }
@@ -286,7 +285,7 @@ This example specifies that only blog entries can be selected:
 }
 ```
 
-You can then render the content in your fragment with this HTML snippet for the blog content:
+You can then render the content in your fragment with this HTML snippet for the blog entry:
 
 ```html
 <div class="fragment_name">
@@ -296,8 +295,7 @@ You can then render the content in your fragment with this HTML snippet for the 
 </div>
 ```
 
-If you need access to specific portions of the content, you can also access the Java object in your fragment under the key `[name-of-field]Object` (`itemSelector1Object`
-in the example below). This example renders the title, description, and body of the web content article:
+If you need access to specific portions of the content, you can also access the Java object in your fragment using the `name` attribute and the `Object` suffix (`itemSelector1Object`, in this case). The example below renders the title, description, and content body of the blog entry.
 
 ```html
 <div class="fragment_name">
@@ -317,7 +315,7 @@ Placing a fragment with an item selector configuration into a collection display
 
 This configuration adds a field specifically for a URL to use in your fragment's markup:
 
-```html
+```json
 {
     "fieldSets": [
         {
@@ -460,7 +458,7 @@ To reference this collection in the HTML, use the collection `name` in the JSON 
 </div>
 ```
 
-![You can develop a fragment with a Collection selector using the Collection configuration.](./fragment-configuration-types-reference/images/08.png)
+![You can develop a fragment with a collection selector using the collection configuration.](./fragment-configuration-types-reference/images/08.png)
 
 ### Filtering the Collection Selector
 
@@ -518,7 +516,7 @@ By default, all items in the collection are returned if you do not define a limi
 
 ## Color Palette Configuration
 
-The color palette JSON configuration creates a color selector you can implement for cases where you must select a color. Unlike the [color picker configuration](#color-picker-configuration), it only provides options based on the theme colors configured in the currently used [Style Book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)'s color system.
+The color palette JSON configuration creates a color selector you can implement for cases where you must select a color. Unlike the [color picker configuration](#color-picker-configuration), it only provides options based on the theme colors configured in the currently used [style book](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)'s color system.
 
 This configuration creates a color palette field called `textColor`:
 
@@ -552,7 +550,7 @@ For example, if you implement the snippet above, you can use it in FreeMarker:
 
 If you were to choose the color white, the `h3` tag heading would have the class `text-white`.
 
-![The color palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/03.png)
+![The color palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/10.png)
 
 ## Related Topics
 

@@ -13,31 +13,31 @@ To access documents and media in an asset library, navigate to any library where
 
 ![Click on Documents and Media in the asset library.](./documents-and-media-ui-reference/images/02.png)
 
-The documents and media application has three main tabs: [Documents and Media](#documents-and-media-tab), [Document Types](#document-types-tab), and [Metadata Sets](#metadata-sets-tab).
+The documents and media application has three main tabs: [Files](#files-tab), [Document Types](#document-types-tab), and [Metadata Sets](#metadata-sets-tab).
 
-You can access additional settings by clicking on *Actions* (![Actions Button](../../images/icon-actions.png)) in the [Application Bar](#application-bar-settings).
+You can access additional settings by clicking on *Actions* (![Actions button](../../images/icon-actions.png)) in the [Application Bar](#application-bar-settings).
 
 ```{note}
 The documents and media UI is the same for asset libraries and sites.
 ```
 
-## Documents and Media Tab
+## Files Tab
 
-![The Documents and Media tab provides access to the application's primary features.](./documents-and-media-ui-reference/images/03.png)
+![The Files tab provides access to the application's primary features.](./documents-and-media-ui-reference/images/03.png)
 
-The *Documents and Media* tab provides access to the application's primary features. Here you can view, search, add, and manage all digital assets, folders, and connected repositories.
+The Files tab provides access to the application's primary features. Here you can view, search, add, and manage all digital assets, folders, and connected repositories.
 
 ```{note}
 The Home folder serves as the root folder for the documents and media application.
 ```
 
-Click *Add* (![Add Button](../../images/icon-add.png)) to access these actions: File Upload, Multiple Files Upload, Folder, Repository, Shortcut, External Video Shortcut. See [Using Folders](./uploading-and-managing/using-folders.md) and [Uploading Files](./uploading-and-managing/uploading-files.md) for more information.
+Click *Add* (![Add button](../../images/icon-add.png)) to access these actions: file upload, multiple files upload, folder, repository, shortcut, external video shortcut. See [Using Folders](./uploading-and-managing/using-folders.md) and [Uploading Files](./uploading-and-managing/uploading-files.md) for more information.
 
 ![Click Add to create a new folder or digital asset.](./documents-and-media-ui-reference/images/04.png)
 
 If you've created any custom [document types](#document-types-tab), they are listed here as available options.
 
-Click *Actions* button (![Actions Button](../../images/icon-actions.png)) of any file or folder to download, edit, move, or remove it. You can also checkout or checkin files to create file versions.
+Click *Actions* (![Actions button](../../images/icon-actions.png)) of any file or folder to download, edit, move, or remove it. You can also checkout or checkin files to create file versions.
 
 ## Document Types Tab
 
@@ -68,10 +68,10 @@ Once created, metadata sets can be added to custom document types. See [Defining
 You can use the following documents and media settings in the Application Bar:
 
 * [Access from Desktop](#access-from-desktop)
-* [Edit](#edit)
-* [Home Folder Permissions](#home-folder-permissions)
-* [Export/Import](#exportimport)
-* [Configuration](#configuration)
+* [Edit](#edit) (![Edit icon](../../images/icon-edit.png))
+* [Home Folder Permissions](#home-folder-permissions) (![Permissions icon](../../images/icon-permissions.png))
+* [Export/Import](#exportimport) (![Export/Import icon](../../images/icon-sort.png))
+* [Configuration](#configuration) (![Configuration icon](../../images/icon-cog.png))
 
 ### Access from Desktop
 

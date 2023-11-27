@@ -96,7 +96,7 @@ This is the second validation method where we can add custom validation logic. T
 The order validator is comprised of validation logic for both adding a product to the cart and proceeding to a new checkout step. Do the following:
 
 * [Add validation logic for adding a product to cart.](#add-validation-logic-for-adding-a-product-to-cart)
-* [Add validation logic for proceeding to checkout.](#add-validation-logic-for-proceeding-in-checkout)
+* [Add validation logic for proceeding to checkout.](#add-validation-logic-for-proceeding-to-checkout)
 * [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
 
 The two `validate` methods are where we define the custom validation logic for our order validator. In our example, we will add logic to reject orders with more than ten of an item over a certain price.
@@ -121,7 +121,7 @@ The main validation in the example checks if both the price (stored as a `BigDec
 It is best practice to include a localized message explaining why the validation failed for the main validation checks.
 ```
 
-#### Add Validation Logic for Proceeding in Checkout
+#### Add Validation Logic for Proceeding to Checkout
 
 ```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
    :dedent: 1

@@ -3,7 +3,7 @@ uuid: 925c6ffe-5305-404c-b509-34b8b096ec9c
 ---
 # Understanding Deployment Types
 
-The deployment type of a service determines many different facets of how the service functions, including performance, memory usage, and access to files or volumes. Liferay Cloud provides two deployment types for its services: `Deployment` and `StatefulSet`.
+The deployment type of a service determines many different facets of how it functions, including performance, memory usage, and access to files or volumes. Liferay Cloud provides two deployment types for its services: `Deployment` and `StatefulSet`.
 
 ## Differences Between Deployment Types
 
@@ -21,14 +21,12 @@ Meanwhile, the **StatefulSet** type features the following:
 * Deployment and scaling are ordered
 * Automated rolling updates are ordered
 
-The following summarizes some distinguishing characteristics between the `Deployment` and `StatefulSet` types:
-
 | **Type** | **Purpose** | **Resource Usage and Startup Time** | **Dedicated SSD for Local Volumes** | **Access to NFS** | **Ordered Startup / Scaling** |
 | :--- | :--- | :--- | :---: | :---: | :---: |
 | **Deployment** | Stateless applications with the use of NFS | Consumes less resources and starts up faster than `StatefulSet` type | X | ✓ | X |
 | **StatefulSet** | Stateful applications | Consumes more resources and starts up slower than `Deployment` type | ✓ | ✓* | ✓ |
 
-*StatefulSets can use NFS volumes if mounted as additional volumes, not the dedicated volume that serves as Liferay's home directory.
+*StatefulSets can use NFS volumes, but they cannot use the same dedicated volume used for Liferay's home directory.
 
 In general, the `Deployment` type is more lightweight and allows for faster deployments, as well as shared volumes between services (for shared files, like the document library). The `StatefulSet` type is more costly for deployments and resource usage (including the total memory and CPUs allocated for your project), but persists data through deployments and gains improved file access performance by using a dedicated SSD.
 
@@ -38,7 +36,7 @@ The Network File System (NFS) is available to all `Deployment` type services. NF
 
 The volumes stored in NFS are also available to all `Deployment` type services. NFS is used out-of-the-box for the `Liferay` and `Backup` services to share access to the document library. See [Configuring Persistent File System Volumes](./configuring-persistent-file-storage-volumes.md) for more information on configuring volumes for NFS.
 
-`StatefulSet` type services instead have a dedicated SSD for all volume storage. The dedicated SSD available to `StatefulSet` type services is not accessible to other services. Volumes stored on the SSD also persist on re-deployment and after service deletion. In clustered `StatefulSet` services, each instance has a different volume.
+`StatefulSet` type services have a dedicated SSD for all volume storage. The dedicated SSD available to `StatefulSet` type services is not accessible to other services. Volumes stored on the SSD also persist on re-deployment and after service deletion. In clustered `StatefulSet` services, each instance has a different volume.
 
 ## How Liferay Cloud's Services are Configured
 
@@ -64,7 +62,7 @@ By default, the services in Liferay Cloud are pre-configured in order to fit a m
 ```
 
 ```{note}
-The deployment type of the services in Liferay Cloud must only be changed with caution, as it may result in data loss or impacted performance.
+Change the deployment type with caution, as it may result in data loss or impacted performance.
 ```
 
 ## Related Topics

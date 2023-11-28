@@ -98,21 +98,18 @@ When you are editing colors from a Style Book on a specific page, you have the s
 ```
 
 
-## Using the Color Picker in Style Book
+### Using the Color Picker in Style Book
 
-Click *Value from Style Book* (![Value from Style Book icon](../../../images/icon-theme.png)) to access the Color Picker. The color system can be filtered so you can find a specific result when using the search bar. You may search by:
+Click *Value from Style Book* (![Value from Style Book icon](../../../images/icon-theme.png)) to access the Color Picker. Existing colors are divided by categories and their tokens can be filtered by the search bar. You may search by:
 
-* Category 
-* [Token Set and Value](./developer-guide/style-book-token-definitions.md)
+* [Category](./developer-guide/style-book-token-definitions.md#token-categories) 
+* [Token Set](./developer-guide/style-book-token-definitions.md#token-sets)
+* [Token Value](./developer-guide/style-book-token-definitions.md#token-definitions)
 * [Hexadecimal Code](https://www.w3schools.com/html/html_colors_hex.asp)
     
-You can also see the color's token value by hovering the cursor above it.
+You can also see the color's token value by hovering the cursor over it.
 
 ![Using the filter in the Color Picker with hovering cursor.](./using-a-style-book-to-standardize-site-appearance/images/10.png)
-
-```{note}
-When no color is found, a screen is displayed saying that there are no results.
-```
 
 ## Default Classic Theme Categories
 

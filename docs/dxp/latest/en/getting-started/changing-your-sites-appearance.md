@@ -7,20 +7,25 @@ Liferay has many ways to customize your site's appearance. Your site's favicon a
 
 ## Changing Your Site's Favicon
 
-```{include} /_snippets/run-liferay-portal.md
+Start a new Liferay instance by running
+
+```bash
+docker run -it -m 8g -p 8080:8080 liferay/portal:latest
 ```
+
+Sign in to Liferay at http://localhost:8080. Use the email address test@liferay.com and the password test. When prompted, change the password to learn.
 
 Then, follow these steps:
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)) and go to *Site Builder* &rarr; *Pages*.
+1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages*.
 
-1. Click the *Actions* button (![Action Button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
+1. Click *Actions* (![Action button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
 
-   ![Open the Pages application, click the Actions button in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
+   ![Open the pages application, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
-1. Under Favicon, click *Change Favicon*.
+1. Under Favicon, click *Select Favicon* (![Select Favicon button](../images/icon-switch.png)).
 
-   ![Click the Change Favicon button.](./changing-your-sites-appearance/images/02.png)
+   ![Click the Select Favicon button.](./changing-your-sites-appearance/images/02.png)
 
 1. Select or upload an image.
 
@@ -34,19 +39,25 @@ By default, Liferay instances use the Classic theme, but you can deploy and use 
 
 ### Deploy a New Theme
 
-1. Download the WAR containing the [Acme Sample Blue Theme](./liferay-5b2v-theme.war):
+1. Download and unzip the Acme Sample Blue Theme WAR file:
 
     ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/getting-started/changing-your-sites-appearance/liferay-5b2v-theme.war -O
+    curl https://resources.learn.liferay.com/dxp/latest/en/getting-started/changing-your-sites-appearance/resources/liferay-5b2v.zip -O
     ```
 
-1. Deploy the WAR containing the theme:
+   ```bash
+   unzip liferay-5b2v.zip
+   ```
 
-    <!-- ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq) -->
+1. Go to the folder where the .war file is placed and deploy it:
 
     ```bash
-    docker cp liferay-5b2v-theme.war docker-container:[path-to-deploy-folder]
+    docker cp liferay-5b2v-theme.war [docker-container-id]:[path-to-deploy-folder]
     ```
+
+```{note}
+To replace `[docker-container-id]`, use `docker ps` to find the ID for liferay/portal:latest. The `[path-to-deploy-folder]` is generally `opt/liferay/deploy`.
+```
 
 This loads the sample theme into your DXP instance. You can check your console for the following message to confirm the theme successfully deployed:
 
@@ -58,13 +69,13 @@ This loads the sample theme into your DXP instance. You can check your console f
 
 1. Open your browser to `https://localhost:8080` and [log in as an administrator](./introduction-to-the-admin-account.md).
 
-1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)) and go to *Site Builder* &rarr; *Pages*.
+1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages*.
 
-1. Click the *Actions* button (![Action Button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
+1. Click *Actions* (![Action button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
 
-   ![Open the Pages screen, click the Actions button in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
+   ![Open the pages screen, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
-1. Expand the *Look And Feel* section and click *Change Current Theme*:
+1. Under Theme, click *Change Current Theme*:
 
    ![Click Change Current Theme to select a new theme.](./changing-your-sites-appearance/images/03.png)
 

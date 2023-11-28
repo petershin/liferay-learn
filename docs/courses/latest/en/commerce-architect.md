@@ -1,6 +1,8 @@
 ---
 toc:
 - ./commerce-architect/setting-up-and-creating-products.md
+- ./commerce-architect/configuring-products-and-skus.md
+- ./commerce-architect/building-the-b2c-storefront.md
 uuid: 3cb502c6-4320-4646-adbb-3a985c248728
 ---
 # Commerce Architect
@@ -39,5 +41,11 @@ Learn how to create and configure some of the prerequisite Commerce features bef
 :link: ./commerce-architect/configuring-products-and-skus.md
 
 Learn how to configure products and SKUs.
+:::
+
+:::{grid-item-card}  Building the B2C Storefront
+:link: ./commerce-architect/building-the-b2c-storefront.md
+
+Learn how to build the B2C storefront using out-of-the-box widgets and fragments.
 :::
 ::::

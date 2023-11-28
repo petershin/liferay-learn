@@ -18,7 +18,7 @@ To enable the API builder,
 
 1. Click _Feature Flags_ under _Platform_.
 
-1. Select _Beta_ in the left navigation. Enable the _API Builder_ toggle on. The API builder is now enabled.
+1. Select _Beta_ in the left navigation. Toggle _API Builder_ on. The API builder is now enabled.
 
 ## Adding Sample Objects and Entries
 
@@ -27,7 +27,7 @@ To enable the API builder,
 
 Then, follow these steps:
 
-1. On the command line, run the following to create a `Student` object.
+1. On the command line, run the following script to create a `Student` object.
 
 	```bash
 	student=$(curl \
@@ -60,7 +60,7 @@ Then, follow these steps:
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Objects_. Verify that a new `Student` object was created.
 
-1. On the command line, run the following to create a `Course` object.
+1. On the command line, run the following script to create a `Course` object.
 
 	```bash
 	course=$(curl \
@@ -78,11 +78,11 @@ Then, follow these steps:
 	  -u "test@liferay.com:learn"
 	```
 
-1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Objects_. Click on the `Course` object was just created.
+1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _Objects_. Click on the `Course` object that was just created.
 
-1. Click on the _Relationships_ tab. Click the _Add_ (![Add icon](../../images/icon-add.png)) icon.
+1. Click the _Relationships_ tab. Click _Add_ (![Add icon](../../images/icon-add.png)).
 
-1. Input the following for the new relationship.
+1. Enter the following valuses to define the new relationship.
 
    | Field | Value |
    | :--- | :--- |
@@ -98,7 +98,7 @@ Then, follow these steps:
 
 ## Adding Sample Courses and Students
 
-1. On the command line, run the following to create two courses and two students.
+1. On the command line, run the following script to create two courses and two students.
 
 	```bash
 	math101=$(curl \
@@ -134,7 +134,7 @@ Then, follow these steps:
 
 1. Navigate to _Global Menu_ (![Global Menu](../../images/icon-applications-menu.png)) &rarr; _Control Panel_ &rarr; _API Builder_.
 
-1. Click the _Add_ (![Add icon](../../images/icon-add.png)) icon. Input the following for the new API application.
+1. Click _Add_ (![Add icon](../../images/icon-add.png)). Enter the title, URL, and description for the new API application.
 
    ![Create a new API application](./building-a-sample-api-application/images/01.png)
 
@@ -146,9 +146,9 @@ Then, follow these steps:
 
    Click _Create_.
 
-1.  Click the _Schemas_ tab. Click the _Add_ (![Add icon](../../images/icon-add.png)) icon.
+1. Click the _Schemas_ tab. Click _Add_ (![Add icon](../../images/icon-add.png)).
 
-1. Input the following for the new schema.
+1. Enter the name, description, and object for the new schema.
 
    | Field | Value |
    | :--- | :--- |
@@ -158,15 +158,15 @@ Then, follow these steps:
 
    Click _Create_.
 
-1. Click the _Properties_ tab of the newly created schema. Add the `Course Name` field by clicking on _Course Name_ in the left menu.
+1. Click the newly created schema's _Properties_ tab. Add the `Course Name` field by clicking on _Course Name_ in the left menu.
 
    ![Add the course name field to the schema.](./building-a-sample-api-application/images/02.png)
 
 1. In the left menu, click _View Related Objects_. Click _Student_ to expand the attributes. Add the `First Name` and `Last Name` fields by clicking on _First Name_ and _Last Name_ in the left menu. Click _Save_ in the top right corner.
 
-1. Next, click the _Endpoints_ tab. Click the _Add_ (![Add icon](../../images/icon-add.png)) icon.
+1. Next, click the _Endpoints_ tab. Click _Add_ (![Add icon](../../images/icon-add.png)).
 
-1. Input the following for the new API endpoint.
+1. Enter the scope, path, and description for the new API endpoint.
 
    | Field | Value |
    | :--- | :--- |
@@ -176,12 +176,12 @@ Then, follow these steps:
 
 	Click _Create_.
 
-1. Click the _Configuration_ tab in the newly created API endpoint. Under _Response Body Schema_, select the _Course Registrations_ schema that was created in the previous step. Click _Publish_ in the top right of the page.
+1. Click the _Configuration_ tab in the newly created API endpoint. Under Response Body Schema, select the _Course Registrations_ schema you created in the previous step. Click _Publish_ in the top right of the page.
 
-1. Test out the new API application by navigating to the API explorer (e.g. [http://localhost:8080/o/api?endpoint=http://localhost:8080/o/c/registration/openapi.json](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/c/registration/openapi.json)).
+1. Test out the new API application by navigating to the API explorer (e.g. <http://localhost:8080/o/api?endpoint=http://localhost:8080/o/c/registration/openapi.json>).
 
-	Click the _GET courses_ endpoint and click _Execute_.
+   Click the _GET courses_ endpoint and click _Execute_.
 
-	![Execute the Get courses endpoint.](./building-a-sample-api-application/images/03.png)
+   ![Execute the Get courses endpoint.](./building-a-sample-api-application/images/03.png)
 
-	The custom API application returns a list of courses and the students taking the courses.
+   The custom API application returns a list of courses and the students taking the courses.

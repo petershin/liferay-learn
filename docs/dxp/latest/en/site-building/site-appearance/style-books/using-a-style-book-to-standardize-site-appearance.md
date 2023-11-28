@@ -97,6 +97,23 @@ Click the *Clear Selection* button on the right side to reset the color back to 
 When you are editing colors from a Style Book on a specific page, you have the same options to choose a color. However, clicking the *Clear Selection* button instead resets the color value to the default defined in the chosen *Style Book*.
 ```
 
+
+## Using the Color Picker in Style Book
+
+Click *Value from Style Book* (![Value from Style Book icon](../../../images/icon-theme.png)) to access the Color Picker. The color system can be filtered so you can find a specific result when using the search bar. You may search by:
+
+* Category 
+* [Token Set and Value](./developer-guide/style-book-token-definitions.md)
+* [Hexadecimal Code](https://www.w3schools.com/html/html_colors_hex.asp)
+    
+You can also see the color's token value by hovering the cursor above it.
+
+![Using the filter in the Color Picker with hovering cursor.](./using-a-style-book-to-standardize-site-appearance/images/10.png)
+
+```{note}
+When no color is found, a screen is displayed saying that there are no results.
+```
+
 ## Default Classic Theme Categories
 
 When you are editing a Style Book, the categories available from the drop-down box show different options for styling your pages. The options available in each category are defined by the theme.

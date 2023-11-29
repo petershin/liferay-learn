@@ -19,7 +19,7 @@ First, Clarity needs a structure for content that describes a specific event or 
 
 1. Click into the title field at the top of the page and name the structure `Event`.
 
-   ![Name the new structure "Event".](./adding-a-structure-for-events/images/02.png)
+   ![Name the new structure "Event".](./adding-a-structure-for-events/images/01.png)
 
 1. Click *Properties* (![Properties icon](../../images/icon-cog3.png)) to access the structure's properties and enter this description: `Generic structure for internal and external announcements.`
 
@@ -33,7 +33,7 @@ Now you are ready to configure the structure with the necessary fields.
 
    The text field is added to the structure, and the menu on the right automatically changes to its configuration.
 
-   ![Adding a new field automatically shows its configuration in the menu on the right.](./adding-a-structure-for-events/images/03.png)
+   ![Adding a new field automatically shows its configuration in the menu on the right.](./adding-a-structure-for-events/images/02.png)
 
 1. Set these values in the text field's configuration:
 
@@ -47,7 +47,7 @@ Now you are ready to configure the structure with the necessary fields.
 
 1. Exit the text field's configuration and drag a *Rich Text* field onto the existing text field.
 
-   This adds both fields into a field group containing them.
+   This adds both fields into a fields group containing them.
 
 1. Set these values in the rich text field's configuration:
 
@@ -57,31 +57,17 @@ Now you are ready to configure the structure with the necessary fields.
 
    * Enable the *Required Field* toggle.
 
-1. Click the fields group containing the two text fields to access its configuration and enter `Content` into its Label field.
+1. Exit the rich text field's configuration and drag an *Image* field onto the existing fields group, under the rich text field.
 
-1. Exit the field group's configuration and drag an *Image* field into the structure, below the Content field group.
+   ![Place the Image field in the same fields group but under the Rich Text field.](./adding-a-structure-for-events/images/03.png)
 
-   Look for the blue bar indicating where you're placing the field and make sure it shows at the very bottom of the structure so it's placed outside of the field group.
-
-   ![Place the Image outside of the existing field group.](./adding-a-structure-for-events/images/04.png)
+   ```{note}
+   You can place fields groups inside fields groups. In this exercise, if you drop the image field onto the rich field (instead of under it), you'll create a fields group with the rich text and the image fields inside the existing group.
+   ```
 
 1. Enter `Banner Image` into the image field's Label in the configuration menu.
 
-1. Drag another Image field into the structure onto the existing image field so it creates another field group.
-
-   <!-- card image is not used in the template. should this be kept ? -- eric -->
-
-   <!-- Maybe it's used later? Check with Alec. If it's not used, no, we shouldn't have it. -Rich -->
-
-1. Enter `Card Image` into the second image field's Label in the configuration menu.
-
-1. Click the fields group containing the image fields and change these settings in its configuration:
-
-   * **Label**: Images
-
-   * Enable the *Collapsible* toggle.
-
-   ![The completed structure has a separate field group for text fields and images.](./adding-a-structure-for-events/images/05.png)
+1. Click the fields group containing the fields to access its configuration and enter `Content` into its Label field.
 
 1. Click *Save* at the top of the page.
 

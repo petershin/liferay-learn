@@ -15,10 +15,6 @@ Here, you'll use HTML and [FreeMarker tags](https://freemarker.apache.org/docs/d
 
 1. Click the *Structures* tab to get to the structures you created previously.
 
-   <!-- I guess we can also add the template straight from the templates tab and select a structure in basic information. Is it necessary to document the alternative way to do the same here in courses? -- Eric -->
-
-   <!-- Feel free to change these instructions to whatever makes pedagogical sense to you. Maybe to show both, you do it this way here, and then for the next one, you can do it from the templates tab. -Rich -->
-
 1. Select *Manage Templates* in the Event structure's Actions menu (![Actions icon](../../images/icon-actions.png)).
 
    ![Click Manage Templates to specifically add templates for this web content structure.](./adding-a-template-to-display-an-event/images/01.png)

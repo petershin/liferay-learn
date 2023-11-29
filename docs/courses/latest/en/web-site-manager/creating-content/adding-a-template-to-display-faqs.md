@@ -21,8 +21,6 @@ Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/
 
    ![Select a structure when creating a template to associate them.](./adding-a-template-to-display-faqs/images/01.png)
 
-<!-- Eric, here's where you'd change the navigation if you want to do it differently for the two templates. -Rich -->
-
 1. Still in the Properties menu, enter this into the *Description* field: `A simple template to list each question and answer.`
 
 1. At the top of the page, enter `Simple FAQ List` as the title.
@@ -30,10 +28,6 @@ Here, you'll make use of a [FreeMarker list](https://freemarker.apache.org/docs/
 ## Configure the Template's Fields
 
 Next, format the list of FAQ articles.
-
-<!-- I saw references to using Enter in order to tell the user to skip lines to add the new lines of code. I am not sure if this is needed as there are pictures showing how the code will look like in the end. Initially, I had eliminated them, but I brought them back for now. - Eric -->
-
-<!-- I think that's just to format the code. It's good practice. -Rich -->
 
 1. Click *Elements* (![Elements icon](../../images/icon-list-ul.png)) to reopen the Elements menu.
 
@@ -52,9 +46,6 @@ Next, format the list of FAQ articles.
 1. Press Enter twice to add two new lines and add an HTML tag for a new line (`<br>`) to separate the title from the list of FAQs.
 
 1. Press Enter twice to add two new lines and, from the list of fields in the Elements menu, click *FAQ*.
-
-   <!-- this question group was called sth else when created -->
-   <!-- I altered the code here to reflect the name used in the field reference (FAQ). --Eric -->
 
    Because the FAQ group is a repeatable field, this adds a FreeMarker list that iterates over each instance in the displayed content.
 
@@ -88,8 +79,6 @@ Next, format the list of FAQ articles.
 
 Now you have a template that displays each question and answer wherever you display a FAQs article, and you can display both of your new types of web content properly on your site.
 
-<!-- I'm not sure if the screenshots were needed, but I thought it would be nice if the user could see what the code looked like once it was rendered on screen. - Eric -->
-
 ![The Simple FAQ List template applied to a FAQ web content article.](./adding-a-template-to-display-faqs/images/04.png)
 
 Next, import a second template for the FAQs structure.
@@ -105,8 +94,6 @@ While you're still on the Templates page, make sure the top of the page reads "T
    ```
 
 1. Download and unzip the template resource:
-
-<!-- This link is not working yet. - Eric -->
 
    ```bash
    curl https://resources.learn.liferay.com/courses/latest/en/liferay-c8m2.zip -O

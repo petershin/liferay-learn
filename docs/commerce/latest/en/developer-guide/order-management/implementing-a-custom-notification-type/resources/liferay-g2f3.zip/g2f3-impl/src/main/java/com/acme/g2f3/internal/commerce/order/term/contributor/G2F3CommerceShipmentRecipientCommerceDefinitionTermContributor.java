@@ -1,7 +1,6 @@
 package com.acme.g2f3.internal.commerce.order.term.contributor;
 
-import com.liferay.commerce.account.constants.CommerceAccountConstants;
-import com.liferay.commerce.account.model.CommerceAccount;
+import com.liferay.account.model.AccountEntry;
 import com.liferay.commerce.constants.CommerceDefinitionTermConstants;
 import com.liferay.commerce.model.CommerceShipment;
 import com.liferay.commerce.order.CommerceDefinitionTermContributor;
@@ -44,14 +43,10 @@ public class G2F3CommerceShipmentRecipientCommerceDefinitionTermContributor
 		}
 
 		if (term.equals(_SHIPMENT_CREATOR_EMAIL)) {
-			CommerceAccount commerceAccount =
-				commerceShipment.getCommerceAccount();
+			AccountEntry accountEntry = commerceShipment.getAccountEntry();
 
-			if (commerceAccount.getType() ==
-					CommerceAccountConstants.ACCOUNT_TYPE_PERSONAL) {
-
-				User user = _userLocalService.getUser(
-					commerceAccount.getUserId());
+			if (accountEntry.isPersonalAccount()) {
+				User user = _userLocalService.getUser(accountEntry.getUserId());
 
 				return String.valueOf(user.getUserId());
 			}

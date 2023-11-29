@@ -1,7 +1,6 @@
 package com.acme.g2f3.internal.commerce.order.term.contributor;
 
-import com.liferay.commerce.account.constants.CommerceAccountConstants;
-import com.liferay.commerce.account.model.CommerceAccount;
+import com.liferay.account.model.AccountEntry;
 import com.liferay.commerce.constants.CommerceDefinitionTermConstants;
 import com.liferay.commerce.model.CommerceAddress;
 import com.liferay.commerce.model.CommerceShipment;
@@ -41,19 +40,15 @@ public class G2F3CommerceShipmentCommerceDefinitionTermContributor
 		CommerceShipment commerceShipment = (CommerceShipment)object;
 
 		if (term.equals(_SHIPMENT_CREATOR_NAME)) {
-			CommerceAccount commerceAccount =
-				commerceShipment.getCommerceAccount();
+			AccountEntry accountEntry = commerceShipment.getAccountEntry();
 
-			if (commerceAccount.getType() ==
-					CommerceAccountConstants.ACCOUNT_TYPE_PERSONAL) {
-
-				User user = _userLocalService.getUser(
-					commerceAccount.getUserId());
+			if (accountEntry.isPersonalAccount()) {
+				User user = _userLocalService.getUser(accountEntry.getUserId());
 
 				return user.getFullName(true, true);
 			}
 
-			return commerceAccount.getName();
+			return accountEntry.getName();
 		}
 
 		if (term.equals(_ORDER_SHIPPING_ADDRESS)) {

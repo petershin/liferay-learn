@@ -22,7 +22,7 @@ Configuration options appear in four tabs:
 
 ## Systems Images Resolutions
 
-Here you can override Adaptive Media's default behavior for document library previews and thumbnails. By default, Adaptive Media chooses the best image resolution for previews and thumbnails based on the closest dimensions to user's screen type and resolution. But you can enter resolution IDs to override this process (e.g., `Preview-1000x0`).
+Here you can override Adaptive Media's default behavior for document library previews and thumbnails. By default, Adaptive Media chooses the best image resolution for previews and thumbnails based on the closest dimensions to the user's screen type and resolution. But you can enter resolution IDs to override this process (e.g., `Preview-1000x0`).
 
 ![Access the System Settings](./adaptive-media-configuration-reference/images/02.png)
 

@@ -1,27 +1,33 @@
-const editMode = layoutMode === 'edit';
+let slideIndex = 0;
 
-var slideIndex = 1;
-showSlides(slideIndex);
+const slides = fragmentElement.querySelectorAll('.quotes');
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+const numberOfSlides = slides.length;
+
+function getNextSlideIndex() {
+	slideIndex = slideIndex + 1;
+
+	if (slideIndex >= numberOfSlides) {
+		slideIndex = 0;
+	}
+
+	return slideIndex;
 }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("quotes");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  
-  slides[slideIndex-1].style.display = "block";  
-  
+function showSlide(index) {
+	slides.forEach(slide => {
+		slide.classList.add('d-none');
+	});
+
+	const nextSlide = slides[index];
+
+	nextSlide.classList.remove('d-none');
 }
-window.onload= function () {
-	setInterval(function(){ 
-	 
-	 plusSlides(1);
- }, 4000);
+
+function main() {
+	setInterval(function () {
+		showSlide(getNextSlideIndex());
+	}, 4000);
 }
+
+main();

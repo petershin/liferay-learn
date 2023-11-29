@@ -1,11 +1,11 @@
-const announcementBanner = document.getElementById("announcement");
-const closeButton = document.getElementById("closeAnnouncement");
+const announcementBanner = fragmentElement.querySelector('.announcement-banner');
+const closeButton = fragmentElement.querySelector('.announcement-banner-close-button');
 
-if (localStorage.getItem("announcementClosed") !== "true") {
-    announcementBanner.classList.remove("hide");
+if (localStorage.getItem('announcementClosed') !== 'true') {
+    announcementBanner.classList.remove('d-none');
 }
 
-closeButton.addEventListener("click", function() {
-    announcementBanner.classList.add("hide");
-    localStorage.setItem("announcementClosed", "true");
+closeButton.addEventListener('click', function () {
+    announcementBanner.classList.add('d-none');
+    localStorage.setItem('announcementClosed', 'true');
 });

@@ -1,21 +1,3 @@
-.announcement-banner {
-	background-color: var(--color-brand-primary);
-	border-style: solid;
-	position: relative;
-	text-align: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 10px 40px;
-}
-
-.announcement-banner-text{
-	color: var(--body-color);
-  	font-weight: var(--font-weight-semi-bold);
-	flex-grow: 1;
-	margin-bottom: 0;
-}
-
 .announcement-banner a,
 .announcement-banner a:hover,
 .announcement-banner a:visited,
@@ -27,12 +9,7 @@
 }
 
 .announcement-banner-close-button {
-	background-color: transparent;
-	border: none;
-	color: var(--color-action-neutral-inverted);
 	cursor: pointer;
-	font-size: var(--text-paragraph-font-size);
-	position: absolute;
 	right: var(--spacer-3);
 	top: 50%;
 	transform: translateY(-50%);

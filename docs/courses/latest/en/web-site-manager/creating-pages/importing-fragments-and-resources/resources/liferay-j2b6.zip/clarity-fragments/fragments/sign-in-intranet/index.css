@@ -1,39 +1,13 @@
 .sign-in {
-	background-image: url([resources:clarity-sign-in-image5.png]);
+	background-image: url([resources:clarity-sign-in-image.png]);
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: flex;
-	height: 100%;
-}
-
-.form-box {
-    align-items: flex-start;
-    background-color: var(--brand-color-2);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: var(--spacer-6) var(--spacer-7) var(--spacer-4);
-    width: 35%;
-}
-
-.sign-in-form .form-control {
-	background-color: var(--white) !important;
 }
 
 .sign-in-form .sign-in-text {
 	font-family: var(--font-family-base);
 	line-height: 1.25;
-	margin-bottom: var(--spacer-5);
-	margin-top: var(--spacer-5)
-}
-
-.sign-in-widget {
-	margin-bottom: 30%;
-}
-
-.sign-in-logo {
-	width: 250px;
 }
 
 @media (max-width: 1340px) {

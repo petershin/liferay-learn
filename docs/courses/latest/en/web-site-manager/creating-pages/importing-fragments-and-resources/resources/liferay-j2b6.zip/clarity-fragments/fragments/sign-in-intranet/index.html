@@ -1,22 +1,22 @@
 [#assign publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() +
 themeDisplay.getSiteGroup().getFriendlyURL() /]
 
-<div class="sign-in vh-100">
-	<div class="form-box">
+<div class="d-flex vh-100 sign-in">
+	<div class="align-items-start c-pb-4 c-pl-7 c-pr-7 c-pt-6 flex-column form-box justify-content-between w-33">
 		<a href="${themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()}">
-			<div class="sign-in-logo">
+			<div class="sign-in-logo w-50">
 					<img
 						alt="Clarity Logo"
 						src="[resources:clarity-logo-small.png]"
 					/>
 			</div>
 		</a>
-		<div class="sign-in-form">
-			<h1 class="font-weight-normal sign-in-text">
+		<div class="bg-white sign-in-form">
+			<h1 class="c-mb-5 c-mt-5 font-weight-normal sign-in-text">
 				See and be seen. Sign in.
 			</h1>
 
-			<div class="sign-in-widget">
+			<div class="c-mb-1 sign-in-widget">
 				[@liferay_portlet.runtime
 				portletName="com_liferay_login_web_portlet_LoginPortlet" /]
 			</div>

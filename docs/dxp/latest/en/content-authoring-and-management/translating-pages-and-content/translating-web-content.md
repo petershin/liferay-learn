@@ -41,6 +41,10 @@ To manually translate web content, users must have either View and Update permis
 
 1. Enter your translation for the available fields.
 
+   ```{note}
+   The friendly URL for translations remains empty unless filled by the user. In cases where the friendly URL is empty, it uses the friendly URL set for the default language.
+   ```
+
 1. Click *Publish* to create a new version of the web content or initiate a workflow, if it's enabled.
 
    Alternatively, click *Save as Draft* to save and publish your translation later.

@@ -5,17 +5,17 @@ uuid: 28fd229f-2eb5-4c12-bc0b-cc33b2a0e859
 
 {bdg-secondary}`Available Liferay DXP/Portal 7.3+`
 
-Style books have options grouped into various categories that are defined per theme. Each option is defined with a token. The collection of all tokens defined for a theme is a *token definition*.
+Style books have options grouped into categories defined per theme. Each option is defined with a token. The collection of all tokens defined for a theme is a *token definition*.
 
 When you assign a theme to your site's pages, the token definition included with that theme is used when creating a style book for the site.
 
 ## Defining Tokens for Your Style Book
 
-Since the token definition is tied to your theme, token definitions must correspond to a CSS variable contained within your theme module. Specify the token definitions themselves in a `.json` file within your theme module's `src/WEB-INF/` folder, named `frontend-token-definition.json`.
+Since the token definition is tied to your theme, token definitions must correspond to a CSS variable contained within your theme module. Specify the token definitions in a `.json` file within your theme module's `src/WEB-INF/` folder, named `frontend-token-definition.json`.
 
 ### Token Categories
 
-Tokens defining the options for configuring your style book are grouped into categories. Each category appears as one of the options in the drop-down menu when you are editing your style book.
+Tokens defining the options for configuring your style book are grouped into categories. They appear as options in the drop-down menu when you are editing your style book.
 
 ![Each of the options in the drop-down menu corresponds to one category of style book tokens.](./style-book-token-definitions/images/01.png)
 
@@ -37,7 +37,7 @@ Define a `label` and a `name` for each of your token categories. The `label` val
 
 ### Token Sets
 
-Each category is further organized into *token sets*. Token sets correspond to the collapsible groups of options that appear when you are editing a style book.
+Each category is further organized into *token sets* which correspond to the collapsible groups of options that appear when you are editing a style book.
 
 For example, using the default Classic theme, the Button Primary token set (within the Buttons category) includes all tokens for standard button color options:
 
@@ -69,21 +69,17 @@ Define a `label` and `name` for each token set just like with each category.
 
 Finally, all tokens in each token set contain properties for configuring each option.
 
-Define all of the tokens within each token set's `frontendTokens` field. Here is a list of all of the properties you can use for your tokens:
+Define the tokens within each token set's `frontendTokens` field. Here is a list of all the properties you can use for your tokens:
 
-`defaultValue`: The default value displayed for the option. This field must match the default value used in the CSS.
-
-`editorType`: Use this field if you want to use a color picker editor for the field. The only supported value is `"ColorPicker"`. If no value is set, a text input is used. If a select input is needed, use the `validValues` property instead (the two properties cannot be used together).
-
-`mappings`: The mapping between the token definition name to the corresponding CSS variable name (must contain `type` and `value` as nested fields). Use `"cssVariable"` as the `type` and define the `value` as the CSS variable name.
-
-`label`: The language key that appears for the option when editing a Style Book.
-
-`name`: The token's name.
-
-`type`: The type of data that the token displays. Use `"Integer"`, `"Float"`, or `"String"` to display a text field holding those types of values. Use `"Boolean"` to display a checkbox. Use `"Length"` to provide customizable units of measurement, like pixels, ems, or percentages.
-
-`validValues`: Optional property that lists available options for the User in the UI. This field must contain a nested list of `label` and `value` pairs (`value` is the field's value in CSS). This property cannot be used together with `editorType`. Defining a value for `validValues` makes the input type automatically a select input.
+| Property | Description |
+| :--- | :--- |
+| `defaultValue` | The default value displayed for the option. This field must match the default value used in the CSS. |
+| `editorType` | Use this field if you want to use a color picker editor for the field. The only supported value is `"ColorPicker"`. If no value is set, a text input is used. If a select input is needed, use the `validValues` property instead (the two properties cannot be used together). |
+| `mappings` | The mapping between the token definition name to the corresponding CSS variable name (must contain `type` and `value` as nested fields). Use `"cssVariable"` as the `type` and define the `value` as the CSS variable name. |
+| `label` | The language key that appears for the option when editing a Style Book. |
+| `name` | The token's name. |
+| `type` | The type of data that the token displays. Use `"Integer"`, `"Float"`, or `"String"` to display a text field holding those types of values. Use `"Boolean"` to display a checkbox. Use `"Length"` to provide customizable units of measurement, like pixels, ems, or percentages. |
+| `validValues` | Optional property that lists available options for the User in the UI. This field must contain a nested list of `label` and `value` pairs (`value` is the field's value in CSS). This property cannot be used together with `editorType`. Defining a value for `validValues` makes the input type automatically a select input. |
 
 The JSON schema for token definitions is publicly available in [Liferay's repository](https://github.com/liferay/liferay-portal/blob/master/modules/apps/frontend-token/frontend-token-definition-api/src/main/resources/com/liferay/frontend/token/definition/frontend-token-definition.schema.json).
 

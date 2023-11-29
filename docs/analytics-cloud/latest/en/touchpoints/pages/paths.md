@@ -3,7 +3,7 @@ uuid: d05594ae-9ab2-442c-a894-cb28372fe1da
 ---
 # Paths
 
-Path analytics identifies how visitors are arriving to a site page and where they are exiting to. Knowing how your users are coming and going can empower you to better tailor your site's content to meet your users' needs.
+Path analytics identifies how visitors are arriving to a site page and where they are navigating to. Knowing how your users are coming and going can empower you to better tailor your site's content to meet your users' needs. Make informed decisions to optimize your page content and keep users engaged on your site.
 
 ## Viewing Page Path Analytics
 

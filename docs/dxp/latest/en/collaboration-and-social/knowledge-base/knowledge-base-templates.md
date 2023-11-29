@@ -17,7 +17,7 @@ Templates give authors a starting point with default headers or other content fo
 
 1. Enter a title for the template.
 
-1. Use the WYSIWYG editor to design the template. To view or edit the article’s HTML source, click the *Source* button (![Source](../../images/icon-code.png)) in the editor. You can also set the template’s permissions via the form’s *Permissions* section.
+1. Use the WYSIWYG editor to design the template. To view or edit the article’s HTML source, click the *Source* button (![Source](../../images/icon-code.png)) in the editor. You can also set the template’s permissions via the form’s Permissions section.
 
    ![Enter a title and content.](./knowledge-base-templates/images/02.png)
 

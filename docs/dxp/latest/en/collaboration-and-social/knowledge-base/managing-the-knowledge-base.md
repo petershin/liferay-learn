@@ -5,7 +5,7 @@ uuid: d1a3b011-1eb7-4a09-a379-847e3fdbaf69
 
 {bdg-secondary}`Liferay 7.4 U72+/GA72+`
 
-With Knowledge Base, you can quickly draft product documentation and organize it into hierarchies that end users can navigate. Add folders and nested articles to create the desired structure and order. Additionally, manage article and folder permissions to ensure only intended users can access your content.
+With Knowledge Base, you can draft product documentation quickly and organize it into hierarchies that end users can navigate. Add folders and nested articles to create the desired structure and order. Additionally, manage article and folder permissions to ensure only intended users can access your content.
 
 ![Add folders and nested articles to create the desired structure and order.](./managing-the-knowledge-base/images/01.png)
 
@@ -25,7 +25,7 @@ With Knowledge Base, you can quickly draft product documentation and organize it
 
 ## Managing Folders and Articles
 
-After adding folders and articles, you can drag and drop them in the left side panel to organize and order your documentation. You can also click the Actions button (![Actions Button](../../images/icon-actions.png)) to access additional management options.
+After adding folders and articles, you can drag and drop them in the left side panel to organize and order your documentation. You can also click Actions (![Actions Button](../../images/icon-actions.png)) to access additional management options.
 
 ![Drag and drop folders and articles to organize and order your documentation.](./managing-the-knowledge-base/images/03.png)
 
@@ -49,7 +49,7 @@ For 7.4 U71/GA71 and earlier versions, Knowledge Base articles include a priorit
 
 **Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the folder and its contents.
 
-Additionally, you can click the *Info* button (![Info Button](../../images/icon-information.png)) to toggle the information panel for the current folder.
+Additionally, you can click *Info* (![Info Button](../../images/icon-information.png)) to toggle the information panel for the current folder.
 
 ### Article Options
 
@@ -61,7 +61,7 @@ Additionally, you can click the *Info* button (![Info Button](../../images/icon-
 
 **Expire** (![Time](../../images/icon-time.png)): Mark an article as expired and notify reviewers, owners, and subscribers. Expired articles cannot be displayed in sites. See [Setting Review and Expiration Dates for Articles](#setting-review-and-expiration-dates-for-articles) for more information
 
-**Subscribe** (![Subscribe](../../images/icon-bell.png)): Sign up to receive updates to the article.
+**Subscribe** (![Subscribe](../../images/icon-bell.png)): Sign up to receive updates to the article. Users receive notifications for the article based on system mail and notification settings.
 
 **History** (![History](../../images/icon-date-time.png)): View and compare different versions of the article.
 
@@ -73,13 +73,13 @@ Additionally, you can click the *Info* button (![Info Button](../../images/icon-
 
 **Delete** (![Delete](../../images/icon-app-trash.png)): Immediately delete the article along with its child articles.
 
-While viewing an article, you can also click the *Info* button (![Info Button](../../images/icon-information.png)) to view article details and versions.
+While viewing an article, you can also click *Info* (![Info Button](../../images/icon-information.png)) to view article details and versions.
 
 ## Setting Review and Expiration Dates for Articles
 
 Sometimes Knowledge Base articles are only valid for a period of time. For these situations, you can set expiration and review dates for Knowledge Base articles to help insure the integrity of your documentation. While set, Liferay checks Knowledge Base articles at a set interval for any articles that have reached their expiration or review date. It then sends notifications to the reviewers, owners, and subscribers. When an expiration date is approaching, Liferay notifies users that the article is expiring soon.
 
-By default, articles are set to never expire or require review, but you can change this while creating or editing an article.
+By default, articles are set never to expire or require review, but you can change this while creating or editing an article.
 
 ![Set review and expiration dates for articles.](./managing-the-knowledge-base/images/06.png)
 

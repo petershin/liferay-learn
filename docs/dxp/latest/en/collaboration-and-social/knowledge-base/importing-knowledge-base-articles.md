@@ -5,7 +5,7 @@ uuid: 56f75c04-f12d-4ca2-82b6-b94e9c201e06
 
 {bdg-secondary}`Liferay 7.4 U72+/GA72+`
 
-You can draft Knowledge Base articles as [Markdown](https://www.markdownguide.org/) files and import them to Liferay. To do this, you must ensure each Markdown file is properly formatted and packaged in a ZIP archive. Imported articles are automatically converted to HTML and appear in the Knowledge Base UI.
+You can draft Knowledge Base articles as [Markdown](https://www.markdownguide.org/) files and import them to Liferay. To do this, you must ensure each Markdown file is formatted properly and packaged in a ZIP archive. Imported articles are converted to HTML automatically and appear in the Knowledge Base UI.
 
 This way you can use external tools to draft, host, and collaborate on articles before publishing them to Liferay.
 
@@ -15,7 +15,7 @@ You must have the *Knowledge Base > Knowledge Base: Import Articles* permission 
 
 ## Preparing Markdown Files for Import
 
-Knowledge Base supports a Markdown dialect known as [Multi-Markdown](https://fletcherpenney.net/multimarkdown). This dialect extends basic Markdown with features like table formatting, image captions, and footnotes. As a language, Markdown is readable, intuitive, and versatile. Using services like GitHub, you and others can easily review and collaborate on documentation.
+Knowledge Base supports the [Multi-Markdown](https://fletcherpenney.net/multimarkdown) dialect, which extends basic Markdown with features like table formatting, image captions, and footnotes. As a language, Markdown is readable, intuitive, and versatile. Using services like GitHub, you and others can review and collaborate on documentation.
 
 ### File Requirements
 
@@ -26,7 +26,7 @@ To import Markdown files, they must
 * Begin with an H1 (e.g., `# Some Heading`) to set the article's title.
 * Include a unique ID after the H1 (e.g., `# Some Heading [](id=some-heading)`) to set the article’s friendly URL.
 
-For example, an article named `modern-pentathlon.md` could include this content,
+For example, an article named `modern-pentathlon.md` could include this content:
 
 ```markdown
 # Modern Pentathlon [](id=modern-pentathlon)
@@ -60,7 +60,7 @@ You can view and configure Knowledge Base import settings via system setting. Se
 
 ### Setting a Source URL
 
-If you're hosting your Markdown files on a service like [Github](https://github.com/), you can set a source URL that specifies the repository location. To use this feature, first enable source URLS in the [Knowledge Base System Settings](knowledge-base-system-settings.md). Then, add a `.METADATA` file to the root of the ZIP file with the base URL for the desired repository. The importer appends each file's path in the ZIP archive to this base URL to form the complete source URL (`[base URL]/[article file path]`).
+If you're hosting your Markdown files on a service like [GitHub](https://github.com), you can set a source URL that specifies the repository location. To use this feature, first enable source URLs in the [Knowledge Base System Settings](knowledge-base-system-settings.md). Then, add a `.METADATA` file to the root of the ZIP file with the base URL for the desired repository. The importer appends each file's path in the ZIP archive to this base URL to form the complete source URL (`[base URL]/[article file path]`).
 
 For example, consider a scenario with this base URL:
 
@@ -97,14 +97,14 @@ https://github.com/clarity/clarity-guide/blob/master/docs/latest/en/folder-01/fi
 Once saved, the importer converts each file’s Markdown to HTML and the resulting articles are published.
 
 ```{important}
-Imported articles are independent of the workflow settings. This means that imported articles are automatically approved.
+Imported articles are independent of the workflow settings. This means that imported articles are approved automatically.
 ```
 
 ## Understanding the Import Process
 
 When initiated, the Markdown importer checks whether each file's H1 and ID match any existing Knowledge Base articles. If a match is found, the importer replaces the existing article's content. If no match is found, a new article is created.
 
-The importer only creates and updates articles. It does not delete any existing articles. To delete an article, you must manually do so.
+The importer only creates and updates articles. It does not delete any existing articles. You must manually delete articles. 
 
 ```{tip}
 You can update a file's numerical prefix to update its order in Liferay (e.g., changing `00-file.md` to `01-file.md`).

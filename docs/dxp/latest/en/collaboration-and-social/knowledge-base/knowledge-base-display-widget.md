@@ -29,7 +29,7 @@ You can find the widget under *Content Management* in the Fragments and Widgets 
 
    ![Click Select for the desired article or folder, or click Select this Folder to select the current folder.](./knowledge-base-display-widget/images/04.png)
 
-1. Under Set and Enable, determine which features to use in the widget. Options include:
+1. Under Set and Enable, determine which features to use in the widget. Options include
 
    * Enable Description
    * Enable Ratings

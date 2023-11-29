@@ -15,7 +15,7 @@ Knowledge Base provides tools for creating and managing a repository of articles
 
 1. In the Folders and Articles section (![Folders and Articles](../../images/icon-pages-tree.png)), click *Add* (![Add Button](../../images/icon-add.png)) and select *Basic Article*.
 
-   If you have created an [article template](./knowledge-base-templates.md), you can select it instead.
+   If you created an [article template](./knowledge-base-templates.md), you can select it instead.
 
    ![Click Add and select the desired article template.](./creating-knowledge-base-articles/images/02.png)
 
@@ -31,7 +31,7 @@ Knowledge Base provides tools for creating and managing a repository of articles
 
 1. (Optional) Add [tags](../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags.md) or [categories](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) to the article to improve visibility and organization.
 
-1. (Optional) Set expiration and review dates. By default, articles are set to never expire or require review. See [Managing the Knowledge Base](./managing-the-knowledge-base.md) for more information.
+1. (Optional) Set expiration and review dates. By default, articles are set never to expire or require review. See [Managing the Knowledge Base](./managing-the-knowledge-base.md) for more information.
 
 1. (Optional) Relate assets to the article.
 

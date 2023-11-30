@@ -6,7 +6,7 @@ uuid: b3381541-1f04-4c33-9a38-a2ac20bfee5c
 
 > Available: Liferay DXP/Portal 7.4+
 
-Use Liferay's REST APIs to manage Postal Addresses.
+Use Liferay's REST APIs to manage postal addresses.
 
 ## Adding a Postal Address to an Account
 
@@ -25,15 +25,15 @@ Then, follow these steps:
    unzip liferay-n8y7.zip
    ```
 
-1. Use [Accounts_GET_FromInstance](./accounts-api-basics.md#get-accounts-from-instance) to get a list of Accounts. Note the ID of the Account to which you will add a Postal Address. You can also navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Accounts* to see the list of Accounts.
+1. Use [Accounts_GET_FromInstance](./accounts-api-basics.md#get-accounts-from-instance) to get a list of accounts. Note the ID of the account to which you will add a postal address. You can also navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Accounts* to see the list of accounts.
 
-1. Use the cURL script to add a new Postal Address to your chosen Account. On the command line, navigate to the `curl` folder. Execute the `PostalAddress_POST_ToAccount.sh` script. Replace `1234` with an Account ID.
+1. Use the cURL script to add a new postal address to your chosen account. On the command line, navigate to the `curl` folder. Execute the `PostalAddress_POST_ToAccount.sh` script. Replace `1234` with an account ID.
 
    ```bash
    ./PostalAddress_POST_ToAccount.sh 1234
    ```
 
-   The JSON response shows a new Postal Address has been added:
+   The JSON response shows a new postal address has been added:
 
    ```json
     {
@@ -51,9 +51,9 @@ Then, follow these steps:
     }
    ```
 
-1. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Accounts*. Select the Account you chose in Step 2 and navigate to *Addresses*. See that a new Postal Address has been added to the Account.
+1. Navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Accounts*. Select the account you chose in Step 2 and navigate to *Addresses*. See that a new postal address has been added to the account.
 
-   ![See that a new Postal Address has been added.](./postal-address-api-basics/images/01.png)
+   ![See that a new postal address has been added.](./postal-address-api-basics/images/01.png)
 
 1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
 
@@ -61,7 +61,7 @@ Then, follow these steps:
     javac -classpath .:* *.java
     ```
 
-1. Run the `PostalAddress_POST_ToAccount.java` class with the following command. Replace `1234` with an Account ID.
+1. Run the `PostalAddress_POST_ToAccount.java` class with the following command. Replace `1234` with an account ID.
 
     ```bash
     java -classpath .:* -DaccountId=1234 PostalAddress_POST_ToAccount
@@ -93,7 +93,7 @@ The other cURL commands use similar JSON arguments.
 
 ## Examine the Java Class
 
-The `PostalAddress_POST_ToAccount.java` class adds a Postal Address by calling the postal-address-related service.
+The `PostalAddress_POST_ToAccount.java` class adds a postal address by calling the postal-address-related service.
 
 ```{literalinclude} ./postal-address-api-basics/resources/liferay-n8y7.zip/java/PostalAddress_POST_Account.java
    :dedent: 1
@@ -125,7 +125,7 @@ Below are examples of calling other `PostalAddress` REST services using cURL and
 
 ## Get Postal Addresses from Account
 
-Get a list of Postal Addresses from an Account with the following cURL or Java command. Replace `1234` with the Account's ID.
+Get a list of postal addresses from an account with the following cURL or Java command. Replace `1234` with the account's ID.
 
 ### PostalAddresses_GET_FromAccount.sh
 
@@ -158,11 +158,11 @@ Code:
    :lines: 8-18
 ```
 
-The Account's Postal Addresses are returned in the JSON response.
+The account's postal addresses are returned in the JSON response.
 
 ## Get Postal Addresses from Organization
 
-Get a list of Postal Addresses from an Organization with the following cURL or Java command. Replace `1234` with the Organization's ID.
+Get a list of postal addresses from an organization with the following cURL or Java command. Replace `1234` with the organization's ID.
 
 ### PostalAddresses_GET_FromOrganization.sh
 
@@ -194,11 +194,11 @@ Code:
    :lines: 8-18
 ```
 
-The Organization's Postal Addresses are returned in the JSON response.
+The organization's postal addresses are returned in the JSON response.
 
 ## Get Postal Addresses from User
 
-Get a list of Postal Addresses from a User with the following cURL or Java command. Replace `1234` with the User's ID.
+Get a list of postal addresses from a user with the following cURL or Java command. Replace `1234` with the user's ID.
 
 ### PostalAddresses_GET_FromUser.sh
 
@@ -230,18 +230,18 @@ Code:
    :lines: 8-18
 ```
 
-The User's Postal Addresses are returned in the JSON response.
+The user's postal addresses are returned in the JSON response.
 
 ## Get a Postal Address
 
-Get a specific Postal Address with the following cURL or Java command. Replace `1234` with the Postal Address's ID.
+Get a specific postal address with the following cURL or Java command. Replace `1234` with the postal address's ID.
 
 ```{tip}
-Use ``PostalAddress_GET_FromAccount.[java|sh]`` to get Account ``Postal Address`` IDs.
+Use ``PostalAddress_GET_FromAccount.[java|sh]`` to get account ``postal address`` IDs.
 
-Use ``PostalAddress_GET_FromOrganization.[java|sh]`` to get Organization ``Postal Address`` IDs.
+Use ``PostalAddress_GET_FromOrganization.[java|sh]`` to get organization ``postal address`` IDs.
 
-Use ``PostalAddress_GET_FromUser.[java|sh]`` to get User ``Postal Address`` IDs.
+Use ``PostalAddress_GET_FromUser.[java|sh]`` to get user ``postal address`` IDs.
 ```
 
 ### PostalAddress_GET_ById.sh
@@ -274,11 +274,11 @@ Code:
    :lines: 8-18
 ```
 
-The Postal Address is returned in the JSON response.
+The postal address is returned in the JSON response.
 
 ## Patch a Postal Address
 
-Partially edit an existing Postal Address with the following cURL or Java command. Replace `1234` with the Postal Address's ID.
+Partially edit an existing postal address with the following cURL or Java command. Replace `1234` with the postal address's ID.
 
 ### PostalAddress_PATCH_ById.sh
 
@@ -312,7 +312,7 @@ Code:
 
 ## Put a Postal Address
 
-Completely overwrite an existing Postal Address with the following cURL or Java command. Replace `1234` with the Postal Address's ID.
+Completely overwrite an existing postal address with the following cURL or Java command. Replace `1234` with the postal address's ID.
 
 ### PostalAddress_PUT_ById.sh
 
@@ -346,7 +346,7 @@ Code:
 
 ## Delete a Postal Address
 
-Delete an existing Postal Address with the following cURL or Java command. Replace `1234` with the Postal Address's ID.
+Delete an existing postal address with the following cURL or Java command. Replace `1234` with the postal address's ID.
 
 ### PostalAddress_DELETE_ById.sh
 

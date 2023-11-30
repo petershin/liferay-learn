@@ -15,13 +15,13 @@ Once users are invited to a publication, you can use the integrated comments fea
 
 Follow these steps to invite user to collaborate on a publication.
 
-1. Open the *Global Menu* ( ![Global Menu](../../../images/icon-applications-menu.png) ), click the *Applications* tab, and go to *Publications*.
+1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), click the *Applications* tab, and go to *Publications*.
 
-1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired publication and select *Invite Users*.
+1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for the desired publication and select *Invite Users*.
 
    ![Click the publication's Actions button and select Invite Users.](./collaborating-on-publications/images/01.png)
 
-   Alternatively, begin reviewing the publication's changes and click the *Invite Users* button ( ![Invite Users](../../../images/icon-plus.png) ).
+   Alternatively, begin reviewing the publication's changes and click *Invite Users* (![Invite Users](../../../images/icon-plus.png)).
 
    ![In publication Changes page, click the Invite Users button.](./collaborating-on-publications/images/02.png)
 
@@ -79,13 +79,11 @@ Follow these steps to remove a collaborator from a publication.
 
 If you need to share publication changes with people who are not site users, you can enable link sharing for the publication.  
 
-To do this,
-
-1. Click the *Actions* button ( ![Actions Button](../../../images/icon-actions.png) ) for the desired publication, select *Invite Users*, and go to the *Share Link* tab.
+1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for the desired publication, select *Invite Users*, and go to the *Share Link* tab.
 
    ![Select Invite Users and go to the Share Link tab.](./collaborating-on-publications/images/07.png)
 
-   Alternatively, begin reviewing the publication's changes and click the *Share* button ( ![Share Button](../../../images/icon-link.png) ).
+   Alternatively, begin reviewing the publication's changes and click *Share* (![Share Button](../../../images/icon-link.png)).
 
    ![Click the Share button.](./collaborating-on-publications/images/08.png)
 

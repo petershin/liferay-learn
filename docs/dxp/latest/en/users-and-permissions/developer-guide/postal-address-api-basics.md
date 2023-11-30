@@ -8,7 +8,7 @@ uuid: b3381541-1f04-4c33-9a38-a2ac20bfee5c
 
 Use Liferay's REST APIs to manage postal addresses.
 
-## Adding a Postal Address to an Account
+## Add Postal Address to Account
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```

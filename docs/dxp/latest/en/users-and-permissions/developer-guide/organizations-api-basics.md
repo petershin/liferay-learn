@@ -304,3 +304,7 @@ Code:
 ```
 
 The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `Organization` services and schemas and has an interface to try out each service.
+
+```{note}
+Get organization postal addresses with [PostalAddresses_GET_FromOrganization](./postal-address-api-basics.md#get-postal-addresses-from-organization)
+```

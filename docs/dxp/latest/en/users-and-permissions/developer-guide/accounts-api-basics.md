@@ -298,3 +298,7 @@ Code:
 ```
 
 The [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) shows all of the `Account` services and schemas and has an interface to try out each service.
+
+```{note}
+Create and get account postal addresses with [PostalAddress_POST_ToAccount](./postal-address-api-basics.md#add-postal-address-to-account) and [PostalAddresses_GET_FromAccount](./postal-address-api-basics.md#get-postal-addresses-from-account)
+```

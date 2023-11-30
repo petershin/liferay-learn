@@ -304,6 +304,12 @@ Note that in the example the previous data has now been replaced with Able Goo a
 
 ![The previous user data has been replaced with the Patch service.](./user-account-api-basics/images/03.png)
 
+```{tip}
+Use ``User_PATCH_ById.[java|sh]`` or ``User_PUT_ById.[java|sh]`` to activate or deactivate a user by changing the ``"status"`` field to ``"Active"`` or ``"Inactive"``.
+
+To change the status of a user with a workflow active, you must use the ``headless-admin-workflow`` API instead. Find usage details in the [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md).
+```
+
 ## Delete a User
 
 Delete an existing User with the following cURL and Java commands. Note, replace `1234` with your User's ID.
@@ -343,3 +349,7 @@ The Users Able Goo and Baker Goo have now been deleted.
 ## Related Topics
 
 Check out the [API Explorer](../../headless-delivery/consuming-apis/consuming-rest-services.md) to see the list of all User related REST services.
+
+```{note}
+Get user postal addresses with [PostalAddresses_GET_FromUser](./postal-address-api-basics.md#get-postal-addresses-from-user)
+```

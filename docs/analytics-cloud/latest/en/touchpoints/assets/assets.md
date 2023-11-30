@@ -18,6 +18,8 @@ Metrics for these Assets are currently reported in Analytics Cloud:
 * [Web Content](./tracking-custom-assets.md)
 * [Custom](./tracking-custom-assets.md)
 
+A CSV report is also available for download for each asset type. See [downloading reports](../reference/downloading-reports.md) to learn more.
+
 ![Each Asset has its own table.](assets/images/01.png)
 
 Clicking an individual asset leads to an overview page showing analytics data for the asset. Clicking on the Known Individuals tab shows a list of known visitors who have interacted with the asset.

@@ -53,6 +53,8 @@ The metrics for ordering the Page list are calculated based on the time period s
 * More Preset Periods (Yesterday, Last 28 days, Last 180 days, Last Year)
 * Custom Range
 
+To download this list of site page data as a CSV file, click _Download Report_. See [downloading reports](./reference/downloading-reports.md) to learn more.
+
 ```{note}
 Page data is based on canonical URL. Learn more about [canonicalization](https://moz.com/learn/seo/canonicalization) or [how to set a custom canonical URL in DXP](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo).
 ```

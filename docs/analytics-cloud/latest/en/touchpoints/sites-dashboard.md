@@ -22,6 +22,8 @@ The dashboard contains the following data panels:
 * [Session Technology](#session-technology)
 * [Cohort Analysis](#cohort-analysis)
 
+To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../reference/downloading-reports.md) to learn more.
+
 Each panel in the dashboard has a time period selector that recalculates the metrics for the selected time period. The following time periods are available:
 
 ```{note}

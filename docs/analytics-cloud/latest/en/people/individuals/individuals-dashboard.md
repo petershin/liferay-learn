@@ -19,6 +19,8 @@ The Individuals dashboard contains the following panels:
 * [Interests](#interests)
 * [Breakdown](#breakdown)
 
+To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+
 ## Current Totals
 
 The Current Totals panel presents the total number of individuals, known and anonymous, that have been tracked by Analytics Cloud. 

@@ -36,6 +36,8 @@ The Overview tab's main area shows membership growth. As a marketer, you might w
 
 The Overview tab also gives you a glimpse of the Segment's criteria, interests, and distribution. Each one links to more details, or you can click on their respective tabs.
 
+To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+
 ### Segment Membership Panel
 
 The Segment Membership panel displays the breakdown of the segment for known and anonymous individuals. It shows data for the previous 30 days. Place your mouse over the graph to see the breakdown at specific dates in the 30 days. 

@@ -9,6 +9,14 @@ Analytics Cloud does the following for pages:
 * Queries pages on a schedule for up-to-date data.
 * Reports on pages with the metrics described here.
 
+To view analytics on a specific page,
+
+1. Click _Sites_ in the left navigation menu. Click the _Pages_ tab. A listing of your site's pages is shown.
+
+   Note, to download this list of site pages as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+
+1. Select a page from the list to see detailed analytics.
+
 ## Data Time Periods
 
 All Page data in Analytics Cloud appears for a specified time period. The time period selector recalculates the metrics for the selected time period. You must specify a time period to view the metrics. The default is 30 days, but this is configurable. The following time periods are available:
@@ -44,7 +52,7 @@ Select the time period for the data displayed. Select _Compare to Previous_ to s
 
 ![Trends can be identified over selected periods of time.](pages/images/01.png)
 
-So what are these metrics in the Visitor Behavior chart?
+To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
 ### Unique Visitors
 

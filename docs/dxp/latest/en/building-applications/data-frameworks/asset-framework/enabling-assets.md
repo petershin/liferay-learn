@@ -56,7 +56,11 @@ Then, follow these steps:
 
 This tutorial assumes that you have a Service Builder application that is already search enabled. At minimum, your application needs:
 
-`*SearchRegistrar.java` - registers the search services to the search framework for the application's entities (e.g., the `com.acme.s5e6.search.S5E6SearchRegistrar.java` class).
+`*ModelSearchConfigurator.java` - registers the search services to the search framework for the application's entities (e.g., the `com.acme.s5e6.search.S5E6EntryModelSearchConfigurator.java` class).
+
+```{note}
+The `ModelSearchConfigurator` pattern applies to Liferay 2023.Q4+ and GA/Update 100+. Earlier versions used a `SearchRegistrar`. See [the Liferay 7.2 documentation](https://help.liferay.com/hc/en-us/articles/360032611231-Search-Service-Registration) to implement a `SearchRegistrar`.
+```
 
 `*ModelIndexerWriterContributor.java` - configures the re-indexing and batch re-indexing behavior of entries (e.g., the `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` class).
 

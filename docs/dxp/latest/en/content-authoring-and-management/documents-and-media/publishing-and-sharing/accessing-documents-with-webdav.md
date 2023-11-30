@@ -7,15 +7,17 @@ You can access the Document Library from your desktop file manager via [WebDAV](
 
 To access the Document Library folder from a file browser, you must use your log-in credentials and the WebDAV URL of the folder you want to access.
 
-## Generating WebDAV Password for Liferay DXP 2023.Q4+/Portal 7.4 GA98+
+## Generating WebDAV Password 
 
-For Liferay DXP 2023.Q4+/Portal 7.4 GA98+, you must generate a WebDAV password from your account settings to use in your WebDAV client. This is to avoid storing weak hashes used in digest authentication by WebDAV. Digest authentication is insecure and deprecated in Liferay. When trying to access a document through WebDAV for the first time, you'll be prompted to generate a WebDAV password. 
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+`
+
+In the latest Liferay versions, you must generate a WebDAV password from your account settings to use in your WebDAV client. This is to avoid storing weak hashes used in digest authentication by WebDAV. Digest authentication is insecure and deprecated in Liferay. When trying to access a document through WebDAV for the first time, you're prompted to generate a WebDAV password. 
 
 ![You must generate a WebDAV password before using it for the first time.](./accessing-documents-with-webdav/images/03.png)
 
 To generate a WebDAV password,
 
-1. Click on the user-icon from your site's homepage and select *Account Settings*.
+1. Click on the user-icon from your site's home page and select *Account Settings*.
 
 1. Select *Password* from the left-menu.
 
@@ -23,7 +25,7 @@ To generate a WebDAV password,
 
    ![Generate a WebDAV password to use with your client.](./accessing-documents-with-webdav/images/04.png)
 
-   This displays your WebDAV username and an auto-generated password. This is a read-only field, so you must copy it for future use. If you click on the button to generate the WebDAV password again, it generates a new one rendering the existing one useless. 
+   This displays your WebDAV username and an auto-generated password. This is a read-only field, so you must copy it for future use. If you click the button to generate the WebDAV password again, it generates a new one, rendering the existing one useless. 
 
 Now, [follow the instructions below](#using-the-webdav-client-to-access-documents) and use the WebDAV username and password when prompted. 
 

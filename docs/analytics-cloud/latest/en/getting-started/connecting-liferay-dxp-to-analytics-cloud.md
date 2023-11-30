@@ -29,7 +29,7 @@ Connecting Liferay DXP to Analytics Cloud has these prerequisites:
 
 1. You must have access to at least one Analytics Cloud workspace. As a paid Analytics Cloud user, you should see your workspace upon login. If you don't, contact support through [help.liferay.com](https://help.liferay.com/).
 
-2. (Optional) Liferay DXP's batch engine is utilized for syncing users. Increase the batch size if syncing a very large number of users. In Liferay DXP, navigate to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_. Set the _Export Batch Size_ and _Import Batch Size_ to `1000`.
+2. (Optional) Liferay DXP's batch engine is used for syncing users. Increase the batch size if syncing a very large number of users. In Liferay DXP, navigate to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_. Set the _Export Batch Size_ and _Import Batch Size_ to `1000`.
 
 ## Using the Onboarding Guide
 

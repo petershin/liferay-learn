@@ -98,6 +98,6 @@ When [Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-c
 
 ## Syncing Users Taking a Long Time
 
-Liferay DXP's batch engine is utilized for syncing users. Increase the batch size if syncing a very large number of users. In Liferay DXP, navigate to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_. Set the _Export Batch Size_ and _Import Batch Size_ to `1000`.
+Liferay DXP's batch engine is used for syncing users. Increase the batch size if syncing a very large number of users. In Liferay DXP, navigate to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_. Set the _Export Batch Size_ and _Import Batch Size_ to `1000`.
 
 ![Increase batch size in Liferay DXP.](./connecting-data-sources/images/03.png)

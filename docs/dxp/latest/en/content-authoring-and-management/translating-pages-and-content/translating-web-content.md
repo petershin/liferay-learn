@@ -51,7 +51,7 @@ To manually translate web content, users must have either View and Update permis
 
 ## Publishing Translated Web Content Using Localizable Fields
 
-Sometimes when translating a web content using localizable fields, the content displayed in the translated language can be different from the content displayed in the original language. This is a behavior that Liferay offers so your editions to the web content won't override the content that has been already translated. To assert this behavior, follow these setps:
+Sometimes when translating a web content using localizable fields, the content displayed in the translated language can be different from the content displayed in the original language. This is a behavior that Liferay offers so your editions to the web content won't override the content that has been already translated. To assert this behavior, follow these steps:
 
 1. In Web Content, go to Structures and Click *Add*.
 

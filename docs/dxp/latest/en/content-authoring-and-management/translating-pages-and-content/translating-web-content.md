@@ -19,7 +19,7 @@ The languages available for translation are determined by your instance's locali
 To manually translate web content, users must have either View and Update permissions for the asset or Translation permissions for one or more languages. See [Managing Permissions for Translation](./managing-translation-permissions.md) for more information.
 ```
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and expand *Content & Data* &rarr; *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
 
 1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) for the content you want to translate and select *Translate*.
 
@@ -29,7 +29,7 @@ To manually translate web content, users must have either View and Update permis
 
    ![Selecting translate redirects you to the translation interface.](./translating-web-content/images/01.png)
 
-1. Select the *language* you want to translate.
+1. Select the language you want to translate.
 
    ```{important}
    Users with content Update permissions can translate the original text into any language.
@@ -63,15 +63,15 @@ Liferay supports both XLIFF 1.2 and 2.0 files. However, it may not support all f
 
 ### Exporting Content for Translation
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and expand *Content & Data* &rarr; *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
 
 1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) for the content you want to translate and select *Export for Translation*. This opens a modal window for configuring your export.
 
-   ![Select Export for Translation.](./translating-web-content/images/03.png)
+   ![Select Export for translation.](./translating-web-content/images/03.png)
 
    In Liferay Portal 7.4 GA26+, you can select multiple articles and click the *Export for Translation* button.
 
-   ![Select multiple articles and click Export for Translation](./translating-web-content/images/04.png)
+   ![Select multiple articles and click Export for translation](./translating-web-content/images/04.png)
 
 1. Select an export format: *XLIFF 1.2* or *XLIFF 2.0*.
 
@@ -87,7 +87,7 @@ Liferay generates a ZIP archive that contains an XLIFF file for each selected la
 
 ### Importing Content Translations
 
-1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and expand *Content & Data* &rarr; *Web Content*.
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and navigate to *Content & Data* &rarr; *Web Content*.
 
 1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) for the translated web content and select *Import Translation*.
 
@@ -117,7 +117,7 @@ Liferay generates a ZIP archive that contains an XLIFF file for each selected la
 
 ## Translating Web Content Using Third Party Services
 
-If you've enabled Liferay's integration with [Google Cloud Translation](https://cloud.google.com/translate/docs/setup), [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html), or [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/), you can use them to automatically translate Web Content. See [Using Third Parties for Translation](./using-third-parties-for-translation.md) for more information.
+If you've enabled Liferay's integration with [Google Cloud Translation](https://cloud.google.com/translate/docs/setup), [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html), or [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/), you can use them to automatically translate web content. See [Using Third Parties for Translation](./using-third-parties-for-translation.md) for more information.
 
 ## Related Topics
 

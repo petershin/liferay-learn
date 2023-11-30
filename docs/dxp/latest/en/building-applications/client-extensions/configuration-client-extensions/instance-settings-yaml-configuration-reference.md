@@ -3,7 +3,7 @@ uuid: 57ce5bc2-3e8a-4c7a-b379-bbcc42ae6784
 ---
 # Instance Settings YAML Configuration Reference
 
-You can use an instance settings client extension to configure a wide variety of Liferay configurations. Each configuration is referenced by its PID (Persistent IDentity).
+You can use an instance settings client extension to configure a [wide variety of Liferay configurations](#currently-supported-instance-settings-pids). Each configuration is referenced by its PID (Persistent IDentity).
 
 You can define an instance settings client extension with a `client-extension.yaml` file.
 

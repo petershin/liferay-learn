@@ -1,7 +1,7 @@
 ---
 uuid: e22547b1-aef3-4f4c-8c8d-4a3e721ef393
 ---
-# Creating a Site Template
+# Creating a Site Template and Uploading Files
 
 Before you start creating your site template, there are some steps you have to take in order to set up the environment.
 
@@ -15,13 +15,13 @@ Before you start creating your site template, there are some steps you have to t
 
    If you have just created the virtual instance, it has no user accounts in it. Create one for Kyle Klein so he can administer this instance as well. Follow the steps in [Create an Administrator](../../liferay-administrator/users-accounts-organizations/managing-users.md#create-an-administrator) to register Kyle and make him an administrator of this instance.
 
-## Create a Site Template
+## Creating a Site Template
 
 Once in the virtual instance, create the site template and use it to create other sites.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Site Templates* under Sites.
 
-   ![Create a site template through Site Templates in the Control Panel](./setting-up-the-environment/images/01.png)
+   ![Create a site template through Site Templates in the Control Panel](./creating-a-site-template-and-uploading-files/images/01.png)
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)).
 
@@ -35,13 +35,13 @@ Once in the virtual instance, create the site template and use it to create othe
    | Allow site administrators to modify pages associated with this site template | Toggle On |
    | Ready for Propagation | Toggle On |
 
-   ![Add information about the site template](./setting-up-the-environment/images/02.png)
+   ![Add information about the site template](./creating-a-site-template-and-uploading-files/images/02.png)
 
 <!-- Are there permissions to be given to users? -->
 
 1. Once you create the site template, click on its *Name*. The site template opens in a new tab. You can start editing the template now.
 
-## Upload Custom Components and Files
+## Importing Custom Components and Files
 
 1. Download the resources for [this exercise](./liferay-h2a2.zip).
 
@@ -64,7 +64,7 @@ Once in the virtual instance, create the site template and use it to create othe
 
 1. In the Export/Import modal, select the *Import* tab.
 
-   ![Import the documents and media .lar file](./setting-up-the-environment/images/03.png)
+   ![Import the documents and media .lar file](./creating-a-site-template-and-uploading-files/images/03.png)
 
 1. Click *Select File* and select the `01-images.lar` file &rarr; click *Continue*.
 
@@ -72,13 +72,13 @@ Once in the virtual instance, create the site template and use it to create othe
 
 1. Use the default configurations and click *Import*. Once the process is finished, close the modal. You can use the imported images throughout the site template now.
 
-### Import Custom Fragments and Compositions
+### Importing Custom Fragments and Compositions
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Design* &rarr; *Fragments* (1).
 
 1. Next to Fragment Sets, Click *Actions* (![Actions icon](../../images/icon-actions.png)) &rarr; *Import* (2).
 
-   ![Import the custom fragments and compositions](./setting-up-the-environment/images/04.png)
+   ![Import the custom fragments and compositions](./creating-a-site-template-and-uploading-files/images/04.png)
 
 1. Click *Select File* and select the `02-custom-fragments-and-compositions.zip` file &rarr; click *Import*.
 

@@ -3,50 +3,6 @@ uuid: 4a98f594-0570-4088-bb91-fab978358780
 ---
 # Resource Types and Structure
 
-## Accounts
-
-Account represents a company or organization that is interacting with your websites. It contains firmographic information about the company, and it also contains all of the individuals who belong in the same account. The account resource is described below.
-
-```json
-{ 
-   "activeIndividualsCount":0,
-   "dateCreated":"2019-12-27T19:17:49.924Z",
-   "dateModified":"2019-12-27T19:17:49.924Z",
-   "id":"386700295379617992",
-   "individualsCount":5,
-   "properties":{ 
-      "shippingCity":"Jasminport",
-      "website":"https://www.gino-jacobs.org",
-      "accountName":"Lesch, Walsh and Stracke",
-      "shippingStreet":"51189 Gina Drive",
-      "accountType":"Customer",
-      "description":"Open-architected scalable archive",
-      "industry":"Semiconductors",
-      "billingState":"New York",
-      "shippingPostalCode":"53050-7467",
-      "yearStarted":1911,
-      "numberOfEmployees":65391,
-      "accountId":"1e3c7cf2-fde6-465f-8bb6-fa8ca86d80ce",
-      "ownership":"Private",
-      "phone":"1-842-175-3034",
-      "billingStreet":"51087 Vi Fields",
-      "billingPostalCode":"11427",
-      "shippingCountry":"Guinea-Bissau",
-      "billingCountry":"British Indian Ocean Territory (Chagos Archipelago)",
-      "shippingState":"Ohio",
-      "currencyIsoCode":"GBP",
-      "fax":"1-507-906-4658",
-      "annualRevenue":83200000,
-      "billingCity":"Bayerborough"
-   },
-   "_links":{ 
-      "self":{ 
-         "href":"http://192.168.108.90:9090/api/reports/accounts/386700295379617992"
-      }
-   }
-} 
-```
-
 **Properties**
 
 * `activeIndividualsCount` (Number): Number of active individuals belonging to the account.

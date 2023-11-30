@@ -1,15 +1,15 @@
 ---
 uuid: 57ce5bc2-3e8a-4c7a-b379-bbcc42ae6784
 ---
-# Instance settings YAML Configuration Reference
+# Instance Settings YAML Configuration Reference
 
-You can use an Instance settings client extension to configure a wide variety of Liferay configurations. Each configuration is referenced by its PID (Persistent IDentity).
+You can use an instance settings client extension to configure a wide variety of Liferay configurations. Each configuration is referenced by its PID (Persistent IDentity).
 
-You can define an Instance settings client extension with a `client-extension.yaml` file.
+You can define an instance settings client extension with a `client-extension.yaml` file.
 
 ## Usage Details
 
-This `client-extension.yaml` file defines an Instance settings client extension:
+This `client-extension.yaml` file defines an instance settings client extension:
 
 ```yaml
 yoke-instance-settings:
@@ -18,15 +18,15 @@ yoke-instance-settings:
 
 ## YAML Properties
 
-These properties are specific to Instance settings client extensions:
+These properties are specific to instance settings client extensions:
 
 | Name | Data Type | Default Value | Description |
 | :--- | :--- | :--- | :--- |
 | `description` | String | | The client extension's description. |
 | `name` | String | (Derived) | The client extension's name. |
-| `pid` | String | | The PID (Persistent IDentity) of the Instance setting being configured. (Selected from the list of [currently supported Instance settings PIDs](#currently-supported-instance-settings-pids).) |
+| `pid` | String | | The PID (Persistent IDentity) of the configured instance setting (from the [currently supported instance settings PIDs](#currently-supported-instance-settings-pids).) |
 
-### Additional Properties
+## Additional Properties
 
 Instance settings client extensions are accompanied by additional properties which are defined by the schema for the PID (a Java class).
 
@@ -37,24 +37,28 @@ The schema PID is defined in the annotation property `@Meta.OCD.id` as follows:
 	id = "com.liferay.foo.FooConfiguration"
 )
 ```
-Which becomes the following:
+
+Configure this property in a client extension definition like this:
+
 ```yaml
 yoke-instance-settings:
     pid: com.liferay.foo.FooConfiguration
     type: instanceSettings
 ```
 
-The following are examples of the types of properties you might find in the schema classes and how they should be included in the client extension definition.
+The following sections are examples of the types of properties in the schema classes and how to include them in the client extension definition.
 
-#### Scalar Properties
-_(String | integer | long | float | double | byte | short | character | boolean)_
+### Scalar Properties
 
 Given the following scalar schema property definition, in this case an `int` (integer):
+
 ```java
 @Meta.AD(...)
 public int invitationTokenExpirationTime();
 ```
-The client extension property would be configured as a scalar YAML property:
+
+Configure the `invitationTokenExpirationTime` client extension property as a scalar YAML property:
+
 ```yaml
 yoke-instance-settings:
     invitationTokenExpirationTime: 600
@@ -62,13 +66,29 @@ yoke-instance-settings:
     type: instanceSettings
 ```
 
-#### Array Property Example
+Scalar properties include these data types:
+
+* `int` (integer)
+* `short`
+* `long`
+* `byte`
+* `float` (decimal number)
+* `double` (double-precision decimal number)
+* `character`
+* `boolean`
+* `String`
+
+### Array Property Example
+
 Given the following array schema property definition:
+
 ```java
 @Meta.AD(...)
 public String[] customTLDs();
 ```
-The client extension property would be configured as a YAML array:
+
+Configure the `customTLDs` client extension property as a YAML array:
+
 ```yaml
 yoke-instance-settings:
     customTLDs:
@@ -78,13 +98,17 @@ yoke-instance-settings:
     type: instanceSettings
 ```
 
-#### LocalizedValuesMap Property Example
+### LocalizedValuesMap Property Example
+
 Given the following `LocalizedValuesMap` schema property definition:
+
 ```java
 @Meta.AD(...)
 public LocalizedValuesMap invitationEmailBody();
 ```
-The client extension property would be configured as a YAML object where each object key is a specific locale string:
+
+Configure the `invitationEmailBody` client extension property as a YAML object, where each object key is a specific locale string:
+
 ```yaml
 yoke-instance-settings:
     invitationEmailBody:
@@ -99,13 +123,13 @@ yoke-instance-settings:
     type: instanceSettings
 ```
 
-### Currently Supported Instance settings PIDs
+## Currently Supported Instance settings PIDs
 
-The following is the list of PIDs that can be referenced in an Instance settings client extension:
+Here are all of the PIDs that you can reference in an instance setting client extension, scoped by [virtual instance](#virtual-instance-scoped-pids) or by [site](#site-scoped-pids).
 
-#### Virtual Instance Scoped PIDs:
+### Virtual Instance Scoped PIDs:
 
-The following PIDs allow for the configuration of Virtual instance scoped settings.
+These PIDs allow for the configuration of virtual instance-scoped settings.
 
 <!--
 ```bash
@@ -208,11 +232,11 @@ for o in $(git -P grep -l 'scope = ExtendedObjectClassDefinition.Scope.COMPANY' 
 <li><a href='https://github.com/liferay/liferay-portal/blob/HEAD/modules/dxp/apps/sharepoint-rest/sharepoint-rest-repository/src/main/java/com/liferay/sharepoint/rest/repository/internal/configuration/SharepointRepositoryConfiguration.java'><code>com.liferay.sharepoint.rest.repository.internal.configuration.SharepointRepositoryConfiguration</code></a></li>
 </ul>
 
-#### Site Scoped PIDs:
+### Site Scoped PIDs:
 
-The following PIDs allow for the configuration of Site scoped settings.
+These PIDs allow for the configuration of site-scoped settings.
 
-Specifying Site settings in this bare form will set the default for all sites in the Virtual Instance.
+Specifying site settings in this bare form sets the default for all sites in the virtual instance.
 
 <!--
 ```bash
@@ -277,3 +301,4 @@ for o in $(git -P grep -l 'scope = ExtendedObjectClassDefinition.Scope.GROUP' --
 ## Related Topics
 
 * [Working with Client Extensions](../working-with-client-extensions.md)
+* [Configuration CLient Extensions](../configuration-client-extensions.md)

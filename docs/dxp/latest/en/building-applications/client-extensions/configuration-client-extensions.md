@@ -1,30 +1,23 @@
 ---
 toc:
+  - ./configuration-client-extensions/instance-settings-yaml-configuration-reference.md
   - ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
   - ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 uuid: 654223de-17be-4786-a90d-775f986c0911
 ---
 # Configuration Client Extensions
 
-```{toctree}
-:maxdepth: 3
-
-configuration-client-extensions/instance-settings-yaml-configuration-reference.md
-configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
-configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
-```
-
 {bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
 Liferay instance configurations are deployable with client extensions. For example, you can deploy OAuth2 authentication profiles as configuration client extensions, enabling your other client extensions that require authentication.
 
-## Instance settings Client Extension
+## Instance Settings Client Extensions
 
 {bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`
 
-You can use an Instance settings client extension to configure a wide variety of Liferay configurations. Each configuration is referenced by its PID (Persistent IDentity).
+You can use an instance settings client extension to configure a wide variety of Liferay configurations. Each configuration is referenced by its PID (Persistent IDentity).
 
-Specify an Instance settings client extension in your `client-extension.yaml` file:
+Specify an instance settings client extension in your `client-extension.yaml` file:
 
 ```yaml
 type: instanceSettings

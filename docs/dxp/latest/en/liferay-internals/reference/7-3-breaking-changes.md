@@ -63,7 +63,7 @@ This change was made to save bandwidth and increase performance of your sites by
 
 #### What changed?
 
-The legacy metal+soy `liferay.frontend.ProgressBar` component, used as a temporary bridge for legacy behaviour, was removed.
+The legacy metal+soy `liferay.frontend.ProgressBar` component, used as a temporary bridge for legacy behavior, was removed.
 
 #### Who is affected?
 
@@ -160,7 +160,7 @@ This change was made to improve the hierarchical tree implementation for AssetCa
 
 #### What changed?
 
-The legacy metal+soy `liferay.frontend.Slider` component, used as a temporary bridge for legacy behaviour, was removed.
+The legacy metal+soy `liferay.frontend.Slider` component, used as a temporary bridge for legacy behavior, was removed.
 
 #### Who is affected?
 
@@ -394,8 +394,8 @@ The placement and structure of the Control and Product Menus has changed to addr
 These changes have been applied to the Control and Product menus:
 
 - The Product Menu has been moved outside of the Control Menu
-- The Control Menu now uses `position:sticky` to control its behaviour
-- Styles of the menus inside the Control Menu have been updated to account for the new sticky behaviour
+- The Control Menu now uses `position:sticky` to control its behavior
+- Styles of the menus inside the Control Menu have been updated to account for the new sticky behavior
 
 #### Who is affected?
 
@@ -462,7 +462,7 @@ This affects any developer who used `AUI.$` or `window.$` in their custom script
 
 Use any of the strategies to add third party libraries to provide your own version of JQuery to use in your code.
 
-Additionally, as a temporary measure, you can bring back the old behaviour by setting the `Enable jQuery` property in *System Settings* &rarr; *Third Party* &rarr; *jQuery* to `true`.
+Additionally, as a temporary measure, you can bring back the old behavior by setting the `Enable jQuery` property in *System Settings* &rarr; *Third Party* &rarr; *jQuery* to `true`.
 
 #### Why was this change made?
 

@@ -46,7 +46,7 @@ Liferay offers more advanced features such as search blueprints which can
 * Override the search page behavior completely
 * Configure context-aware search results based on attributes of the search user
 
-![Search blueprints is a feature that allows users to modify Liferay search behaviour without needing to write code.](./modern-intranets/images/02.png)
+![Search blueprints is a feature that allows users to modify Liferay search behavior without needing to write code.](./modern-intranets/images/02.png)
 
 On the navigation front, Liferay provides powerful tools for creating and organizing pages. Everything from a simple, flat site navigation to a complex hierarchical tree of sub-pages nested down many levels can be built easily. 
 

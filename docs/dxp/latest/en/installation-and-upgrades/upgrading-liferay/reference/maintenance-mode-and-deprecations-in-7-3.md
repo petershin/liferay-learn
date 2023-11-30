@@ -45,7 +45,7 @@ Here are the features deprecated in 7.3:
 | Flash widget | Removed | No direct replacement. [FlashPlayer end-of-life](https://www.adobe.com/products/flashplayer/end-of-life.html) is Dec 31, 2020. |
 | Internet Explorer 11 (IE11) browser support | Bundled | Switch to Microsoft Edge with IE11 support enabled. |
 | JAAS support | Bundled | No direct replacement. |
-| JQuery default global Liferay variables | Bundled (disabled) | You can bring back the old behaviour by setting the `Enable jQuery` property to `true` in the jQuery third-party [System Settings](../../../system-administration/configuring-liferay/system-settings.md). |
+| JQuery default global Liferay variables | Bundled (disabled) | You can bring back the old behavior by setting the `Enable jQuery` property to `true` in the jQuery third-party [System Settings](../../../system-administration/configuring-liferay/system-settings.md). |
 | Liferay Bookmarks | Archived | No direct replacement. |
 | Liferay Mobile Device Detection Lite | Archived | No direct replacement. |
 | Liferay Push | Marketplace | Replaced by [Headless Delivery](../../../headless-delivery/using-liferay-as-a-headless-platform.md). |

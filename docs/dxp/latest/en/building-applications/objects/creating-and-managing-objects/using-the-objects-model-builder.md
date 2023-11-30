@@ -9,9 +9,8 @@ Liferay Objects provides the Model Builder GUI for designing complex object stru
 
 ![Use the Model Builder GUI to design complex data structures.](./using-the-objects-model-builder/images/01.png)
 
-```{note}
-For Liferay 7.4 2023.Q4+/GA102+, you must also have the *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
-```
+!!! note 
+    For Liferay 7.4 2023.Q4+/GA102+, you must also have the *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
 
 To access the Model Builder view,
 
@@ -23,9 +22,8 @@ To access the Model Builder view,
 
 From here you can create, edit, and manage object definitions.
 
-```{tip}
-The Model Builder view is great for quickly configuring multiple object definitions and their attributes. It is especially helpful for visualizing and managing object relationships.
-```
+!!! tip 
+    The Model Builder view is great for quickly configuring multiple object definitions and their attributes. It is especially helpful for visualizing and managing object relationships.
 
 ## Creating Objects
 
@@ -63,15 +61,15 @@ You can also add fields and relationships to object definitions. However, you mu
 
 1. Enter a *Label* and *Field Name*.
 
-   **Label**: This value identifies the field in the Objects UI and can be localized after the field is created.
+   **Label**: Identifies the field in the Objects UI and can be localized after the field is created.
 
-   **Field Name**: This value determines the field's name in the back-end and uses camel case. Once a field is published, this value cannot be changed.
+   **Field Name**: Determines the field's name in the back-end and uses camel case. Once a field is published, this value cannot be changed.
 
 1. Select a field *Type*. See [Field Types Reference](./fields/adding-fields-to-objects.md#field-types-ui-reference) for more information about available field types and configuration options.
 
 1. Click *Save*.
 
-The field is immediately added to the definition. By default, object cards display five fields, but you can click *Show All Fields* to view others. Additionally, you can select a field in the object card to access its configuration options in the right side panel.
+The field is added immediately to the definition. By default, object cards display five fields, but you can click *Show All Fields* to view others. Additionally, you can select a field in the object card to access its configuration options in the right side panel.
 
 ![Select a field to access its configuration options in the right side panel.](./using-the-objects-model-builder/images/06.png)
 
@@ -105,11 +103,9 @@ If you define relationships with object definitions in other folders, the diagra
 
 You can drag and drop object cards in the Model Builder diagram area to reorganize them visually. Liferay saves position updates automatically. Additionally, you can move object definitions between folders.
 
-To do this,
-
 1. Go to the desired destination folder.
 
-1. Click the *Actions* button (![Actions Button](../../../images/icon-actions.png)) for an object from another folder in the left sidebar.
+1. Click *Actions* (![Actions Button](../../../images/icon-actions.png)) for an object from another folder in the left sidebar.
 
 1. Select *Move to Current Folder*.
 
@@ -119,7 +115,7 @@ This moves the definition to the current folder. Moving an object definition doe
 
 ![Move object definitions between folders.](./using-the-objects-model-builder/images/11.png)
 
-You can access additional management options by clicking the Actions button (![Actions Button](../../../images/icon-actions.png)) for an object card. Available options include,
+You can access additional management options by clicking Actions (![Actions Button](../../../images/icon-actions.png)) for an object card. Available options include
 
 * Edit in Page View: Switch to the default Objects UI.
 * Edit ERC: Update the object's external reference code (ERC).
@@ -130,7 +126,7 @@ You can access additional management options by clicking the Actions button (![A
 
 ### Publishing Object Drafts
 
-While using Model Builder, you can publish individual object definitions as well as complex data models that include multiples objects. To do this,
+While using Model Builder, you can publish individual object definitions as well as complex data models that include multiple objects. 
 
 1. Go to the folder with the object drafts.
 

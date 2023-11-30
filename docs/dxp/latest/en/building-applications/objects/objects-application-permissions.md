@@ -27,9 +27,8 @@ Objects has the following application permissions:
 | Preferences             | View and modify preferences for the Objects application.           |
 | View                    | View the Objects application.                                      |
 
-```{important}
-For Liferay 7.4 2023.Q4+/GA102+, users must have the *Object Folder > View* permission to use the Objects UI. 
-```
+!!! important
+    For Liferay 7.4 2023.Q4+/GA102+, users must have the *Object Folder > View* permission to use the Objects UI. 
 
 ## Resource Permissions
 
@@ -82,9 +81,8 @@ Objects has the following resource permissions.
 
 1. Use the checkboxes to grant [object definition](#object-definition-for-existing-custom-definitions) permissions to the desired roles.
 
-   ```{note}
-   Permissions defined at the roles admin level override permissions defined at the individual level.
-   ```
+   !!! note
+       Permissions defined at the roles admin level override permissions defined at the individual level.
 
    ![Use the checkboxes to assign permissions to the desired roles.](./objects-application-permissions/images/07.png)
 
@@ -94,15 +92,14 @@ Objects has the following resource permissions.
 
 1. Open the *Objects* application via the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)).
 
-1. Click the *Actions* button (![Actions Button](../../images/icon-actions.png)) for the desired object folder and select *Permissions*.
+1. Click *Actions* (![Actions Button](../../images/icon-actions.png)) for the desired object folder and select *Permissions*.
 
    ![Click the Actions button for the desired object folder and select Permissions.](./objects-application-permissions/images/08.png)
 
 1. Use the checkboxes to grant [object folder](#object-folder-for-existing-object-folders) permissions to the desired roles.
 
-   ```{note}
-   Permissions defined at the roles admin level override permissions defined at the individual level.
-   ```
+   !!! note
+       Permissions defined at the roles admin level override permissions defined at the individual level.
 
    ![Use the checkboxes to assign permissions to the desired roles.](./objects-application-permissions/images/09.png)
 

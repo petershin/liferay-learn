@@ -46,11 +46,10 @@ creating-and-managing-objects/managing-objects-with-headless-apis.md
 
 {bdg-secondary}`Liferay 7.4+`
 
-Liferay Objects provides a convenient UI for [creating](./creating-and-managing-objects/creating-objects.md) custom applications that meet your business needs without writing code. You can also use Objects to manage and extend both system and custom objects. This includes adding [fields](./creating-and-managing-objects/fields.md), [relationships](./creating-and-managing-objects/relationships.md), [actions](./creating-and-managing-objects/actions.md), [layouts](./creating-and-managing-objects/layouts.md), [views](./creating-and-managing-objects/views.md), [validations](./creating-and-managing-objects/validations.md), and [custom states](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md). You can also use the Model Builder GUI to design complex object structures. This graphical tool displays object definitions as cards and visualizes relationships between definitions. See [Using the Objects Model Builder](./creating-and-managing-objects/using-the-objects-model-builder.md) for more information.
+Liferay Objects provides a convenient UI for [creating](./creating-and-managing-objects/creating-objects.md) custom applications that meet your business needs without writing code. You can also use Objects to manage and extend both system and custom objects. This includes adding [fields](./creating-and-managing-objects/fields.md), [relationships](./creating-and-managing-objects/relationships.md), [actions](./creating-and-managing-objects/actions.md), [layouts](./creating-and-managing-objects/layouts.md), [views](./creating-and-managing-objects/views.md), [validations](./creating-and-managing-objects/validations.md), and [custom states](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md). You can also use the Model Builder GUI to design complex object structures. This graphical tool shows object definitions as cards and visualizes relationships between definitions. See [Using the Objects Model Builder](./creating-and-managing-objects/using-the-objects-model-builder.md) for more information.
 
-```{note}
-System objects are default Liferay applications integrated with the objects framework, while custom objects are definitions created and published by a user.
-```
+!!! note 
+    System objects are default Liferay applications integrated with the objects framework, while custom objects are definitions created and published by a user.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

@@ -5,13 +5,12 @@ uuid: 3de2268a-455a-4b8f-be7b-284ea1c1d267
 
 {bdg-secondary}`Liferay 7.4 2023.Q4+/GA102+`
 
-Liferay Objects provides development capabilities in the Liferay UI. Using Objects, you can build fully integrated Liferay applications without writing any code or manually deploying modules. This process includes [creating](#creating-object-drafts) object drafts, [editing](#editing-object-drafts) the draft, and finally [publishing](#publishing-object-drafts) it to create the new application.
+Liferay Objects provides development capabilities in the Liferay UI. Using Objects, you can build fully integrated Liferay applications without writing any code or manually deploying modules. This process includes [creating](#creating-object-drafts) object drafts, [editing](#editing-object-drafts) them, and finally [publishing](#publishing-object-drafts) them to create the new application.
 
 Here you'll learn how to create object definitions using the default Objects UI, but you can also create, manage, and extend object definitions using the Model Builder GUI. See [Using the Objects Model Builder](./using-the-objects-model-builder.md) for more information.
 
-```{important}
-Liferay creates database tables when you publish object definitions, so you cannot use Objects with the high security database practices described in [Database Configurations](../../../installation-and-upgrades/reference/database-configurations.md#high-security-database-user-practices).
-```
+!!! important 
+    Liferay creates database tables when you publish object definitions, so you cannot use Objects with the high security database practices described in [Database Configurations](../../../installation-and-upgrades/reference/database-configurations.md#high-security-database-user-practices).
 
 ## Creating Object Drafts
 
@@ -19,9 +18,8 @@ Object drafts are application templates that store the necessary data for creati
 
 1. Open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
 
-   ```{note}
-   For Liferay 7.4 2023.Q4+/GA102+, you must also have the *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
-   ```
+   !!! note
+       For Liferay 7.4 2023.Q4+/GA102+, you must also have the *Object Folder > View* permissions to access the Objects UI. See [Objects Application Permissions](../objects-application-permissions.md) for more information.
 
 1. Go to the desired [object folder](./organizing-objects-with-folders.md) and click the *Add* button (![Add Button](../../../images/icon-add.png)).
 

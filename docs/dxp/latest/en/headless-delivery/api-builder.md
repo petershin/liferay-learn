@@ -4,7 +4,7 @@ uuid: b93373b0-493b-4aa6-96f1-4809d4ea5567
 # API Builder
 
 {bdg-secondary}Liferay DXP 2023.Q4+/Portal 7.4 GA96+
-{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Beta Feature](../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 ```{important}
 The API builder is a beta feature that currently only supports Liferay objects. API endpoints currently support retrieving collections of entities.

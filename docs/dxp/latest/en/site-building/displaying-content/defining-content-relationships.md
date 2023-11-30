@@ -57,8 +57,5 @@ Filter options set minimum requirements for displaying assets by their categorie
 
 ## Related Topics
 
-* [Using the Asset Publisher Widget](../../../../../dxp/latest/en/site-building/displaying-content/using-the-asset-publisher-widget.md)
-* [Assets](assets.md)
-* [Configuring Widgets](../../../../../dxp/latest/en/site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets.md)
-
-
+* [Using the Asset Publisher Widget](./using-the-asset-publisher-widget.md)
+* [Configuring Widgets](../creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets.md)

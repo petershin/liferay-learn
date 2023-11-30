@@ -4,7 +4,7 @@ uuid: f03aec85-6c18-42e5-b46f-217d3229d6f1
 # Building a Sample API Application
 
 {bdg-secondary}Liferay DXP 2023.Q4+/Portal 7.4 GA96+
-{bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 ```{important}
 The API builder is a beta feature that currently only supports Liferay objects.

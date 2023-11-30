@@ -15,7 +15,7 @@ So far, you've configured a product and added specifications to give more inform
 
 1. Click *Select File* and choose the image from the library. 
 
-   ![Choose the image, Maliyah.png, from the library.](./adding-media/images/01.png)
+   ![Choose the image, Maliyah.png, from the library.](./adding-media/images/01.jpg)
 
 1. Enter title as *Maliyah*.
 

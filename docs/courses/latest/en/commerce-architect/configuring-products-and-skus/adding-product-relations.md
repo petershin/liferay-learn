@@ -19,7 +19,7 @@ For each product in the catalog, you can now add a product relation:
 
 1. Click *Add*.
 
-   ![Add two related products for the Maliyah eyeglasses.](./adding-media/images/01.png)
+   ![Add two related products for the Maliyah eyeglasses.](./adding-media/images/01.jpg)
 
 1. Click *Publish*. 
 

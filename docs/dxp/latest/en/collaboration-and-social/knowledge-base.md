@@ -1,6 +1,5 @@
 ---
 toc:
-  - ./knowledge-base/using-the-knowledge-base.md
   - ./knowledge-base/importing-knowledge-base-articles.md
   - ./knowledge-base/creating-knowledge-base-articles.md
   - ./knowledge-base/managing-the-knowledge-base.md

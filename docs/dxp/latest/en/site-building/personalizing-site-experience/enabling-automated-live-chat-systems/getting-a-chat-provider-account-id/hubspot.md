@@ -3,9 +3,11 @@ uuid: 11528b7a-fea8-47e1-b45c-a7e5306d70d6
 ---
 # Hubspot
 
-[Hubspot](https://www.hubspot.com/) is a CRM platform that includes live chat functionality. To [enable integration](../../enabling-automated-live-chat-systems.md) with your Liferay instance, use your Hubspot User Account ID.
+[Hubspot](https://www.hubspot.com/) is a CRM platform that includes live chat functionality. [Enabling integration](../../enabling-automated-live-chat-systems.md) with Hubspot requires the creation of a live chat and your Hubspot User Account ID.
 
-To create and configure a live chat, follow the steps in [Hubspot's Knowledge Base](https://knowledge.hubspot.com/chatflows/create-a-live-chat).
+```{important}
+You must have an active live chat to enable integration with Hubspot. To create and configure a live chat, follow the steps in [Hubspot's Knowledge Base](https://knowledge.hubspot.com/chatflows/create-a-live-chat).
+```
 
 ## Locating Your Hubspot User Account ID
 

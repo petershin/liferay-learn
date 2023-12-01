@@ -9,10 +9,7 @@ uuid: e2304f66-dc1a-4a87-96f5-dbec9d0e90ba
 ---
 # Site Navigation
 
-Liferay DXP provides extensive support for customizing your site's navigation and powerful tools to make content easy to acsess. There are two main ways to define and customize site navigation:
-1. In the site's theme. This is the primary and most powerful way to manage site navigation. Themes in Liferay DXP can customize any aspect of a site, including its navigation. Defining site navigation in the theme provides a uniform look and feel across the site.
-1. With widgets. Content management widgets can define navigation on a page-by-page basis; for example, the Breadcrumb widget which displays the trail of pages in the hierarchy that lead to the current page. 
-These two ways of defining site navigation can be used together to help users traverse page hierarchies and make the navigation through complex page hierarchies a better experience.
+Liferay DXP provides extensive support for customizing your site's navigation and powerful tools to make content easy to access. Here, you can learn how to use these tools, such as widgets and navigation menu elements, the concept of page hierarchies, how to navigate through them quickly using navigation menus, and more so your content is accessible and ready to be consumed.
 
 ```{toctree}
 :maxdepth: 3

@@ -5,50 +5,50 @@ uuid: 1027ea78-102b-444b-8a99-cc54d7290a8a
 
 > Available: Liferay DXP 7.2 SP2+, Liferay CE 7.3.1 GA2
 
-User Segments are dynamically assigned User collections. If a [Segment can be well-defined with the available criteria](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), the administrative overhead of User management can be greatly reduced. On top of this, you can define [personalized experiences](../../site-building/personalizing-site-experience.md) for User Segments created at the Site scope, ensuring that Users see the most relevant content in your Site.
+User segments are dynamically assigned user collections. If a [segment can be well-defined with the available criteria](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md), the administrative overhead of user management can be greatly reduced. On top of this, you can define [personalized experiences](../../site-building/personalizing-site-experience.md) for user segments created at the site scope, ensuring that users see the most relevant content in your site.
 
-| Where Do I Create User Segments? | What Are They For? | Where Do I Assign Roles To a Segment? |
-| :--- | :--- | :--- |
-| Site Segments (Site Menu &rarr; People &rarr; Segments)                     | Create personalized experiences for a Site's Users             | Site Menu &rarr; People &rarr; Segments (Actions) |
-| Instance Segments (Control Panel &rarr; Users &rarr; Roles (Regular Roles)) | Efficiently and dynamically manage Users and their permissions | Control Panel &rarr; Users &rarr; Roles (Regular Roles) |
+| Where do I create user segments?                                            | What are they for?                                              | Where do I assign roles to a segment?                   |
+|:----------------------------------------------------------------------------|:--------------------------------------------------------------- |:--------------------------------------------------------|
+| Site Segments (Site Menu &rarr; People &rarr; Segments)                     | Create personalized experiences for a site's users.             | Site Menu &rarr; People &rarr; Segments (Actions)       |
+| Instance Segments (Control Panel &rarr; Users &rarr; Roles (Regular Roles)) | Efficiently and dynamically manage users and their permissions. | Control Panel &rarr; Users &rarr; Roles (Regular Roles) |
 
 ## Assigning a Regular Role to a User Segment
 
 > Available: Liferay DXP 7.2 SP2+
 
-Regular Roles can be assigned to User Segments created at the Global scope. To assign Regular Roles to a User Segment,
+Regular roles can be assigned to user segments created at the Global scope. To assign regular roles to a user segment,
 
-1. Open the Product Menu and go to *Control Panel* &rarr; *Users* &rarr; *Roles*.
+1. Open the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)) and navigate to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 
-1. Open the Actions Menu (![Actions](../../images/icon-actions.png)) next to the Regular Role and select *Edit*.
+1. Click Actions (![Actions](../../images/icon-actions.png)) next to the regular role and select *Edit*.
 
-    ![Edit a Role to assign the User Segment to it.](./assigning-roles-to-user-segments/images/01.png)
+    ![Edit a role to assign the user segment to it.](./assigning-roles-to-user-segments/images/01.png)
 
-1. Select the *Assignees* &rarr; *Segments* tab, and click the (![Add Button](../../images/icon-add.png)) to select a User Segment.
+1. Select *Assignees* &rarr; *Segments* tab, and click (![Add button](../../images/icon-add.png)) to select a user segment.
 
-    ![Go to the Segments tab under Assignees to assign the Role.](./assigning-roles-to-user-segments/images/02.png)
+    ![Go to the Segments tab under Assignees to assign the role.](./assigning-roles-to-user-segments/images/02.png)
 
-1. Check the box next to an existing User Segment and click *Add* to assign the Role to it. If the User Segment doesn't exist, click the (![Add Button](../../images/icon-add.png)) to create a new User Segment.
+1. Check the box next to an existing user segment and click *Add* to assign the role to it. If the user segment doesn't exist, click (![Add button](../../images/icon-add.png)) to create a new user segment.
 
-    ![Check the box next to the User Segment you want to assign the Role to.](./assigning-roles-to-user-segments/images/03.png)
+    ![Check the box next to the user segment you want to assign the role to.](./assigning-roles-to-user-segments/images/03.png)
 
-The selected User Segment(s) appear(s) in the list of assignees for the Role.
+The selected user segment(s) appear(s) in the list of assignees for the role.
 
-![The User Segment appears under the list of Assignees for the Role.](./assigning-roles-to-user-segments/images/04.png)
+![The user segment appears under the list of assignees for the role.](./assigning-roles-to-user-segments/images/04.png)
 
 ## Assigning a Site Role to a User Segment
 
 > Available: Liferay DXP 7.2 SP3+
 
-[Site Roles](./understanding-roles-and-permissions.md) can be assigned to Segments, with two exceptions: Site Administrator and Site Owner.
+[Site roles](./understanding-roles-and-permissions.md) can be assigned to segments, with two exceptions: Site Administrator and Site Owner.
 
-1. Open the Product Menu and go to *People* &rarr; *Segments* in the Site Menu.
+1. Open the Product Menu (![Product Menu](../../images/icon-product-menu.png)) and navigate to *People* &rarr; *Segments*.
 
-1. Open the Segment's Actions menu (![Actions](../../images/icon-actions.png)) and click _Assign Site Roles_.
+1. Open the segment's actions (![Actions](../../images/icon-actions.png)) and click *Assign Site Roles*.
 
-1. Assign Site Roles to the Segment, then click _Add_.
+1. Assign site roles to the segment, then click *Add*.
 
-   ![Site Roles can be assigned to Segments.](./assigning-roles-to-user-segments/images/05.png)
+   ![Site roles can be assigned to segments.](./assigning-roles-to-user-segments/images/05.png)
 
 ## Related Information
 

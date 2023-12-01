@@ -29,7 +29,7 @@ Here you can configure the basic information of a page, including its name, frie
 
 ### Basic Info
 
-Use the name field to set a page's title used for site navigation and displayed in a browser's title bar. You can hide a page from menu display when it is configured to display the page hierarchy. When enabled, a hidden page still appears in other navigation menus if added to them. See [Managing Page Hierarchies](./../../site-navigation/managing-page-hierarchies.md) for more information.
+Use the name field to set a page's title used for site navigation and displayed in a browser's title bar. You can hide a page from menu display when it is configured to display the page hierarchy. When enabled, a hidden page still appears in other navigation menus if added to them. See [Managing Page Hierarchies](../../site-navigation/managing-page-hierarchies.md) for more information.
 
 ![Use the name field to set the page's title and check the checkbox to hide it from menu display.](./configuring-individual-pages/images/02.png)
 

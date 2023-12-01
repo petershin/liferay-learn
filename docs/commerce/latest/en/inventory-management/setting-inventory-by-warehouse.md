@@ -37,7 +37,7 @@ To transfer stock between warehouses,
 
 1. Open the *Global Menu* (![Global Menu](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Inventory*.
 
-1. Select a SKU.
+1. Select an SKU.
 
 1. Click *Add* (![Add Button](../images/icon-add.png)), then select *Create a Transfer*.
 

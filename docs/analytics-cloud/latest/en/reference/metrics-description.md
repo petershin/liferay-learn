@@ -49,25 +49,25 @@ Index:
 
 ## A/B Testing - Estimated Time to Declare Winner
 
-This is the duration the A/B test needs to run to determine a winner.  Note, this is only available for a bounce rate type A/B test. 
+This is the duration the A/B test needs to run to determine a winner.  Note, this is only available for a bounce rate-type A/B test. 
 
 ## A/B Testing - Improvement
 
-This shows the relative improvement from the control. For example, if the control had a 15% retention rate but the variant had a 16% retention rate. The improvement is calculated as,
+This shows the relative improvement from the control. For example, a control may have had a 15% retention rate, but the variant had a 16% retention rate. The improvement is calculated as
 
 ```
 ((16 - 15) / 15) * 100 = ~6.67% improvement.
 ```
 
-This metric is also be known as lift. 
+This metric is also known as lift. 
 
 ## A/B Testing - Probability to Win
 
-This is the likelihood in percentage of whether a variant will beat the control.
+This is a prediction in percentage that a variant beats the control.
 
 ## Acquisitions - Percentage of Sessions
 
-This shows the breakdown in percentage of the top traffic sources of how visitors arrive to your site. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
+This shows the breakdown in percentage of the top traffic sources of how visitors arrive to your site. A session is considered a new session if 30 minutes of inactivity passed since the previous session, or it's the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as
 
 ```
 (The acquisition traffic source) ÷ (The total number of sessions) * 100
@@ -83,7 +83,7 @@ This is the total number of visitors who are identified by a unique `userId` (i.
 
 ## Audience - Downloaded Segments
 
-This is the top segments who downloaded the document or media. Each bar in the chart shows the total number of individuals that downloaded the document or media who are part of that segment. The bar also gives a value of what percent of the known individuals who downloaded the document or media are part of that segment. For a given time range, the percentage is calculated as,
+This is the top segments who downloaded the document or media. Each bar in the chart shows the total number of individuals part of that segment that downloaded the document or media. The bar also gives a value of what percent of the known individuals who downloaded the document or media are part of that segment. For a given time range, the percentage is calculated as
 
 ```
 (The number of individuals that are part of that segment who downloaded the document or media) ÷ (The total number of known individuals who downloaded that document or media) * 100
@@ -115,7 +115,7 @@ This is the total number of visitors who submitted the form in a given time rang
 
 ## Audience - Submitter Segments
 
-These are the top segments who submitted the form. Each bar in the chart shows the total number of individuals that submitted the form who are part of that segment. The bar also gives a value of what percent of the known individuals who submitted the form are part of that segment. For a given time range, the percentage is calculated as,
+These are the top segments who submitted the form. Each bar in the chart shows the total number of individuals that submitted the form who are part of that segment. The bar also gives a value of what percent of the known individuals who submitted the form are part of that segment. For a given time range, the percentage is calculated as
 
 ```
 (The number of individuals that are part of that segment who submitted the form) ÷ (The total number of known individuals who submitted the form) * 100
@@ -123,9 +123,9 @@ These are the top segments who submitted the form. Each bar in the chart shows t
 
 ## Audience - Viewer Segments
 
-Theses are the top segments who viewed the page or asset. Each bar in the chart shows the total number of individuals that viewed the page or asset who are part of that segment. The bar also gives a value of what percent of the known individuals who viewed that page or asset are part of that segment.
+These are the top segments who viewed the page or asset. Each bar in the chart shows the total number of individuals that viewed the page or asset who are part of that segment. The bar also gives a value of what percent of the known individuals who viewed that page or asset are part of that segment.
 
-For a given time range, the percentage is calculated as,
+For a given time range, the percentage is calculated as
 
 ```
 (The number of individuals that are part of that segment who viewed the page or asset) ÷ (The total number of known individuals who viewed the page or asset) * 100
@@ -141,7 +141,7 @@ This is the total number of visitors who visited the page in the given time rang
 
 ## Bounce Rate
 
-The bounce rate shows the percentage of sessions in which an individual visits a page on your site but has no further interactions before the session ends. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
+The bounce rate shows the percentage of sessions in which an individual visits a page on your site but has no further interactions before the session ends. A session is considered a new session if 30 minutes of inactivity passed since the previous session, or it's the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as
 
 ```
 (Total number of bounced sessions) ÷ (The total number of sessions) * 100
@@ -165,7 +165,7 @@ Entrances show the most common pages that visitors view first upon entering your
 
 ## Exit Rate
 
-This is the percentage of visitors who interacted with the page (such as scrolling or clicking) and then left the site. It does not include bounce rate. For a given time range, the rate is calculated as,
+This is the percentage of visitors who interacted with the page (such as scrolling or clicking) and then left the site. It does not include bounce rate. For a given time range, the rate is calculated as
 
 ```
 (Total number of sessions of the page in which visitors left the site) ÷ (The total number of sessions of the page) * 100
@@ -173,7 +173,7 @@ This is the percentage of visitors who interacted with the page (such as scrolli
 
 ## Forms - Abandonment
 
-Abandonment is the percentage rate of individuals who left a form without submitting it. For a given time range, the rate is calculated as,
+Abandonment is the percentage rate of individuals who left a form without submitting it. For a given time range, the rate is calculated as
 
 ```
 (Total number of individuals who viewed a form without submitting) ÷ (The total number of individuals who viewed the form) * 100
@@ -181,7 +181,7 @@ Abandonment is the percentage rate of individuals who left a form without submit
 
 ## Interests - Percentage of Active Members
 
-The percentage of active members for interests shows what percent of the active members in a segment is interested in that interest topic. A member of a segment is considered active if they have interacted with your site within the last thirty days. The rate is calculated as,
+The percentage of active members for interests shows what percent of the active members in a segment is interested in that interest topic. Members of a segment are considered active if they have interacted with your site within the last thirty days. The rate is calculated as
 
 ```
 (The total number of active segment members who were interested in that topic) ÷ (The total number of active segment members) * 100
@@ -189,7 +189,7 @@ The percentage of active members for interests shows what percent of the active 
 
 ## Interests - Percentage of Sessions
 
-The percentage of sessions for interests shows what percent of sessions contained that interest topic in the given time range. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
+The percentage of sessions for interests shows what percent of sessions contained that interest topic in the given time range. A session is considered a new session if 30 minutes of inactivity passed since the previous session, or it's the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as
 
 ```
 (Total number of sessions that contained that interest topic) ÷ (The total number of sessions) * 100
@@ -197,7 +197,7 @@ The percentage of sessions for interests shows what percent of sessions containe
 
 ## Interests - Percentage of Total Individuals
 
-The percentage of total individuals for interests shows what percent of individuals are interested in a specific topic. For a given time range, the rate is calculated as,
+The percentage of total individuals for interests shows what percent of individuals are interested in a specific topic. For a given time range, the rate is calculated as
 
 ```
 (Total number of individuals interested in that interest topic) ÷ (The total number of individuals) * 100
@@ -213,7 +213,7 @@ This is the number of times a document or media was previewed in a given time ra
 
 ## Reading Time
 
-Reading time is the average time spent on a blog entry. For a given time range, the rate is calculated as,
+Reading time is the average time spent on a blog entry. For a given time range, the rate is calculated as
 
 ```
 (Total time spent on the blog entry across all views) ÷ (The total number of views) * 100
@@ -221,7 +221,7 @@ Reading time is the average time spent on a blog entry. For a given time range, 
 
 ## Search - Percentage of Sessions
 
-The percentage of sessions for search shows what percent of searches contained that search query term in the given time range. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
+The percentage of sessions for search shows what percent of searches contained that search query term in the given time range. A session is considered a new session if 30 minutes of inactivity passed since the previous session, or it's the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as
 
 ```
 (Total number of sessions that contained that search query term) ÷ (The total number of sessions) * 100
@@ -229,19 +229,19 @@ The percentage of sessions for search shows what percent of searches contained t
 
 ## Session Duration
 
-This is the length of time an average session lasts. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
+This is the length of time an average session lasts. A session is considered a new session if 30 minutes of inactivity passed since the previous session, or it's the start of a new day (i.e. past midnight).
 
 ## Sessions by Location
 
-Sessions by location shows the top countries from which visitors access your site. The top five countries are listed along with their percentage value they represent across all sessions. The remaining countries that are not in the top five are combined as a single percentage value. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
+Sessions by location shows the top countries from which visitors access your site. The top five countries appear along with the percentage value they represent across all sessions. The remaining countries not in the top five are combined as a single percentage value. A session is considered a new session if 30 minutes of inactivity passed since the previous session, or it's the start of a new day (i.e. past midnight).
 
 ## Sessions by Technology
 
-Sessions by technology shows the devices, operating systems, and browsers used to visit your site. A breakdown by session percentages are shown for different device types, different operating system types, and different browser types. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
+Sessions by technology shows the devices, operating systems, and browsers used to visit your site. A breakdown by session percentages appears for different device types, different operating system types, and different browser types. A session is considered a new session if 30 minutes of inactivity passed since the previous session or it's the start of a new day (i.e. past midnight).
 
 ## Sessions per Visitor
 
-This is an average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as,
+This is an average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session is considered a new session if 30 minutes of inactivity passed since the previous session or it's the start of a new day (i.e. past midnight). For a given time range, the rate is calculated as
 
 ```
 (Total number of sessions across all visitors) ÷ (The total number of visitors) * 100
@@ -253,7 +253,7 @@ Submissions is the total number of forms submitted in a given time range.
 
 ## Time on Page
 
-Time on page is the average time spent on that page. For a given time range, the rate is calculated as,
+Time on page is the average time spent on that page. For a given time range, the rate is calculated as
 
 ```
 (Total time spent on the page across all views) ÷ (The total number of views) * 100
@@ -261,11 +261,11 @@ Time on page is the average time spent on that page. For a given time range, the
 
 ## Total Individuals or Unique Visitors
 
-This is the total number of individuals that are identified by a unique `userId` (i.e. user ID). 
+This is the total number of individuals identified by a unique `userId` (i.e. user ID). 
 
-A visitor to your site is assigned a unique `userId`. When the visitor logs in with their email address, their analytics data will continue to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data will be associated with this previously assigned `userId` instead.
+Visitors to your site are assigned a unique `userId`. When visitors log in with their email address, their analytics data continues to be associated with this `userId`. If visitors previously logged in and were already assigned a `userId`, the analytics data is associated with this previously assigned `userId` instead.
 
-A new `userId` is assigned if the visitor uses a different browser, logs in with a different email address, or clears their browser cookies.
+A new `userId` is assigned if visitors use a different browser, log in with a different email address, or clear their browser cookies.
 
 ## Views
 

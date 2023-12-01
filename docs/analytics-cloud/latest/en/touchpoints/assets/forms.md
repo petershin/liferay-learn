@@ -36,7 +36,7 @@ Useful with the time period filter, Views is the number of views for a Form in a
 
 ### Abandonment
 
-Abandonment is the percentage rate of individuals who left a form without submitting it. The rate is shown for the selected time period (e.g. Last 30 days).
+Abandonment is the percentage rate of individuals who left a form without submitting it. The rate is shown for the selected time period (e.g. last 30 days).
 
 ### Completion Time
 

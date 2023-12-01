@@ -44,13 +44,13 @@ Some metrics such as bounce rate, time on page, exits, etc. rely on a visitor’
 
 The Site Activities panel presents a summary of how visitors interact with your site. This panel contains the following metrics:
 
-**Unique Visitors:** This is the total number of individuals that are identified by a unique `userId` (i.e. user ID). 
+**Unique Visitors:** The total number of individuals identified by a unique `userId` (i.e. user ID). 
 
-A visitor to your site is assigned a unique `userId`. When the visitor logs in with their email address, their analytics data will continue to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data will be associated with this previously assigned `userId` instead.
+Visitors to your site are assigned unique `userId`s. When visitors log in with their email address, their analytics data continues to be associated with this `userId`. If the visitor previously logged in and was already assigned a `userId`, the analytics data is instead associated with this previously assigned `userId`.
 
-A new `userId` is assigned if the visitor uses a different browser, logs in with a different email address, or clears their browser cookies. 
+A new `userId` is assigned if visitors use a different browser, log in with a different email address, or clear their browser cookies. 
 
-**Sessions per Visitor:** An average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session is considered a new session if there has been 30 minutes of inactivity since the previous session, or is the start of a new day (i.e. past midnight).
+**Sessions per Visitor:** An average of the number of sessions for each unique visitor. A single visitor can open multiple sessions. A session is considered a new session if 30 minutes of inactivity pass since the previous session, or is the start of a new day (i.e. past midnight).
 
 **Session Duration:** The length of time an average session lasts.
 
@@ -78,7 +78,7 @@ To view more detailed page analytics, click *View Pages* at the bottom of the pa
 
 ## Acquisitions
 
-The Acquisitions panel gives a comprehensive overview of how visitors arrive to your site. The data is presented from a more high level view (i.e. Channels) down to a more granular level (i.e. Referrers). The percentage of sessions shows an actual percentage of each traffic source. Having an understanding at these different levels leads to more informed business decisions. 
+The Acquisitions panel gives a comprehensive overview of how visitors arrive to your site. The data is presented from a high level view (i.e. Channels) down to a granular level (i.e. Referrers). The percentage of sessions shows an actual percentage of each traffic source. Having an understanding at these different levels leads to more informed business decisions. 
 
 ![See the different sources of traffic to your site with this Acquisitions panel.](./sites-dashboard/images/03.png)
 
@@ -116,7 +116,7 @@ To view the full list of interest topics, click *All Interests* at the bottom of
 
 ## Sessions by Location
 
-The Sessions by Location panel shows the top countries from which visitors access your site. Countries with more visitors are shaded darker on the map. The country names appear below the map along with the number and percentage of visitors for each. The top five countries are listed along with their percentage value they represent across all sessions. The remaining countries that are not in the top five are combined as a single percentage value.
+The Sessions by Location panel shows the top countries from which visitors access your site. Countries with more visitors are shaded darker on the map. The country names appear below the map along with the number and percentage of visitors for each. The top five countries appear along with the percentage value they represent across all sessions. The remaining countries not in the top five are combined as a single percentage value.
 
 ![Colored shading on a map diagram quickly identifies your users' country of origin.](./sites-dashboard/images/06.png)
 
@@ -136,6 +136,6 @@ Use the selector menus at the top left of the panel to select the visitor type (
 
 For example, if you select All Visitors and Day, the percentage of visitors from a given acquisition date that return to your site appear in the chart for each following day.
 
-## Related Information
+## Related Topics
 
 - [Understanding Interests](../people/individuals/understanding-interests/)

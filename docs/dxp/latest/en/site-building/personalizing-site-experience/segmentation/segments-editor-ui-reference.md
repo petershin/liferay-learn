@@ -11,7 +11,7 @@ You can use segments to organize users into different groups with common sets of
 
 1. Click *Add* (![Add](../../../images/icon-add.png)) to add new user segment.
 
-At the top of the editor you can set the name, and choose to *Save* the segments or *Cancel* to discard the changes. On the conditions section, you can view the current members of the segment as it is defined.
+At the top of the editor you can set the name, choose to *Save* the segments, or *Cancel* to discard the changes. In the Conditions section, you can view the current members of the segment as it is defined.
 
 On the right side of the page, there's a *Properties* menu with these options:
 
@@ -26,7 +26,7 @@ Operations and conjunctions are combined with the properties to define criteria.
 
 ## Operations and Conjunctions
 
-Several types of information can be collected by the user segment interface. Some data is entered in text boxes, while others use selectors to select specific criteria or tools like a date picker. Some fields use an operator, which, depending on the specific context lets you select the relationship between the user or agent data and the criteria.
+Several types of information can be collected by the User Segment interface. Some data is entered in text boxes, while others use selectors to select specific criteria or tools like a date picker. Some fields use an operator, which, depending on the specific context lets you select the relationship between the user or agent data and the criteria.
 
 * *equals*
 
@@ -46,7 +46,7 @@ Several types of information can be collected by the user segment interface. Som
 
 Depending on the nature of the criteria, the operator selection may contain different combinations. For example, the *Date* selection described below contains all the previously listed options except *contains* and *does not contain*, whereas the *Email Address* selection has *equals*, *not equals*, *contains* and *does not contain*.
 
-In between each criteria and each category, you can define an 'And/Or' conjunction. For 'And', all criteria must be true in order for the criteria to be satisfied. With 'Or', it will be true if any of the defined criteria are true. You can also mix operators to create complex cases.
+In between each criteria and each category, you can define an *And/Or* conjunction. For *And*, all criteria must be true for the criteria to be satisfied. With *Or*, it is true if any of the defined criteria are true. You can also mix operators to create complex cases.
 
 ## User Properties
 
@@ -67,9 +67,8 @@ User properties are user attributes you want to capture. This is made up of user
 | User Group    | Select a user group that the user is a member of.                                                             |
 | User Name     | The full name of the user.                                                                                    |
 
-```{note}
-To display content for guest users through segments, select the *Signed In* session property and set its value to *False*. This action effectively represents an unlogged user, fulfilling the same purpose as the guest role.
-```
+!!! note
+    To display content for guest users through segments, select the *Signed In* session property and set its value to *False*. This action effectively represents an anonymous user, fulfilling the same purpose as the guest role.
 
 Since Liferay DXP 7.2 SP2+, these properties are also available for users:
 
@@ -95,8 +94,8 @@ Since Liferay DXP 7.2 SP2+, these properties are also available for organization
 
 | Property | Description                                                      |
 |:---------|:-----------------------------------------------------------------|
-| Country  | Select a specific country that the organization is connected to. |
-| Region   | Select a specific region that the organization is connected to.  |
+| Country  | Select a specific country connected to the organization. |
+| Region   | Select a specific region connected to organization.  |
 | Tag      | Enter the tags that apply to the organization.                   |
 
 ## Session Properties
@@ -138,7 +137,7 @@ Starting from Liferay DXP 7.4 U42+/GA42+, the following property is also availab
 
 With the segments property, you can combine existing segments into a new compound segment. The compound segment inherits the properties from the segments it is based on, and updates the members automatically. For more information, see [Compound Segments](./creating-and-managing-user-segments.md#compound-segments).
 
-## Related Information
+## Related Topics
 
 * [Creating and Managing User Segments](./creating-and-managing-user-segments.md)
 * [Segmentation By Geolocation](./segmentation-by-geolocation.md)

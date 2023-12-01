@@ -2,6 +2,9 @@
 uuid: 71e441a1-8c7c-468f-a758-b4e1cb9d185d
 ---
 # Configuring Locked Pages
+{bdg-secondary}`Liferay DXP 2023.Q3+/Portal 7.4 GA98+`
+
+<!-- The feature flag had been removed, but the commit was reverted: https://github.com/liferay/liferay-portal/commit/6313e4d18f4610d6c45009b33932d666113adfd7 - Eric -->
 
 ```{important}
 This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
@@ -9,7 +12,7 @@ This feature is currently behind a release feature flag. Read [Release Feature F
 
 Liferay locks pages during editing to avoid conflicts when multiple users try to edit the same page.
 
-This feature works with [content](../using-content-pages.md), [master](../defining-headers-and-footers/master-page-templates.md), [utility](../adding-pages/using-utility-pages.md), and [collection pages](../../../content-authoring-and-management/collections-and-collection-pages.md), along with [page](../adding-pages/creating-a-page-template.md) and [display page](../../displaying-content/using-display-page-templates.md) templates. 
+This feature works with [content](../using-content-pages.md), [master](../defining-headers-and-footers/master-page-templates.md), [utility](../adding-pages/using-utility-pages.md), and [collection pages](../../../content-authoring-and-management/collections-and-collection-pages.md), along with [page](../adding-pages/creating-a-page-template.md) and [display page](../../displaying-content/using-display-page-templates.md) templates.
 
 ## Locking the Page
 
@@ -23,15 +26,20 @@ Users can only discard drafts of unlocked pages.
 
 ![Trying to access locked pages redirects the user to a generic error page](./configuring-locked-pages/images/01.png)
 
-Not all events lock a page: 
+Not all events lock a page:
 
-- You can still modify a page's [master page](../defining-headers-and-footers/managing-master-page-templates.md) or its [stylebook](../../site-appearance/style-books.md) without locking the page. 
-- You can propagate [Fragments](../page-fragments-and-widgets/using-fragments.md), even if a page is locked. 
+- You can still modify a page's [master page](../defining-headers-and-footers/managing-master-page-templates.md) or its [stylebook](../../site-appearance/style-books.md) without locking the page.
+- You can propagate [Fragments](../page-fragments-and-widgets/using-fragments.md), even if a page is locked.
 - You can [import a page's page template](../adding-pages/exporting-and-importing-page-templates.md), even if a page is locked.
+
+```{tip}
+If you are working with [Publications](../../publishing-tools/publications.md), the page and its publications are locked and unlocked together.
+```
 
 ## Unlocking a Page
 
-Most of the time, you don't have to worry about unlocking a page, as the system unlocks it automatically. 
+Most of the time, you don't have to worry about unlocking a page, as the system unlocks it automatically.
+
 For example, when a user changes a page from edit mode to view mode, when the user logs out, or when the user closes the tab with the page, Liferay unlocks the page.
 
 If a user leaves a page open in Edit mode for a long time without making changes, the system automatically unlocks the page. The amount of time can be configured:

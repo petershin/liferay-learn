@@ -1,17 +1,19 @@
 .user-sign-in .user-sign-in-label {
 	opacity: 0;
-	transition: opacity 0.2s, transform 0.2s;
+	transition:
+		opacity 0.2s,
+		transform 0.2s;
 }
 
 .user-sign-in:hover .user-sign-in-label {
 	opacity: 1;
 }
 
-.user-nav-dropdown-button-icon{
+.user-nav-dropdown-button-icon {
 	cursor: pointer;
 }
 
-.user-nav-dropdown-menu-item:hover{
+.user-nav-dropdown-menu-item:hover {
 	background-color: var(--color-brand-primary-lighten-3);
 	transition: background 0.4s;
 }

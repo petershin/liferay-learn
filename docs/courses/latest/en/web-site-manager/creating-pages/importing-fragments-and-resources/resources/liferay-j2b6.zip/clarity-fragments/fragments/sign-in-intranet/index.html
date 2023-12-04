@@ -2,15 +2,14 @@
 themeDisplay.getSiteGroup().getFriendlyURL() /]
 
 <div class="d-flex vh-100 sign-in">
-	<div class="align-items-start c-pb-4 c-pl-7 c-pr-7 c-pt-6 c-pb-lg-3 c-pl-lg-5 c-pr-lg-5 c-pt-lg-5 c-p-sm-3 flex-column form-box justify-content-between w-33">
+	<div
+		class="align-items-start c-pb-4 c-pl-7 c-pr-7 c-pt-6 c-pb-lg-3 c-pl-lg-5 c-pr-lg-5 c-pt-lg-5 c-p-sm-3 flex-column form-box justify-content-between w-33"
+	>
 		<a href="${publicFriendlyURL}">
 			<div class="w-50">
-	            <lfr-editable id="img01" type="image">
-                    <img
-						alt=""
-						src="[resources:clarity-logo-small.png]"
-					/>
-                </lfr-editable>
+				<lfr-editable id="img01" type="image">
+					<img alt="" src="[resources:clarity-logo-small.png]" />
+				</lfr-editable>
 			</div>
 		</a>
 		<div class="bg-white sign-in-form c-mb-sm-4">
@@ -24,15 +23,14 @@ themeDisplay.getSiteGroup().getFriendlyURL() /]
 			</div>
 		</div>
 	</div>
-	<div class="right-panel">
-	</div>
+	<div class="right-panel"></div>
 </div>
 <script>
 	const redirect = document.querySelector(
-		'#_com_liferay_login_web_portlet_LoginPortlet_redirect'
+		"#_com_liferay_login_web_portlet_LoginPortlet_redirect",
 	);
 
 	if (redirect) {
-		redirect.setAttribute('value', '${publicFriendlyURL}/home');
+		redirect.setAttribute("value", "${publicFriendlyURL}/home");
 	}
 </script>

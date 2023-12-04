@@ -10,7 +10,7 @@ const INTERVAL = 5000;
 
 const editMode = layoutMode === 'edit';
 const indicators = [].slice.call(
-	fragmentElement.querySelectorAll('.carousel-navigation button')
+	fragmentElement.querySelectorAll('.carousel-navigation button'),
 );
 const items = [].slice.call(fragmentElement.querySelectorAll('.carousel-item'));
 
@@ -58,8 +58,7 @@ function move(movement, index = null) {
 
 	if (index !== null) {
 		this.nextItemIndex = index;
-	}
-	else if (movement === MOVE_RIGHT) {
+	} else if (movement === MOVE_RIGHT) {
 		this.nextItemIndex =
 			indexActiveItem >= items.length - 1 ? 0 : indexActiveItem + 1;
 	}
@@ -82,8 +81,7 @@ function createInterval() {
 		intervalId = setInterval(() => {
 			if (document.contains(items[0])) {
 				move(MOVE_RIGHT);
-			}
-			else {
+			} else {
 				clearInterval(intervalId);
 			}
 		}, INTERVAL);
@@ -97,7 +95,7 @@ function createInterval() {
 
 	if (this.nextItemIndex && this.nextItemIndex < items.length) {
 		const activeItem = fragmentElement.querySelector(
-			'.carousel-item.active'
+			'.carousel-item.active',
 		);
 		const nextItem = items[this.nextItemIndex];
 
@@ -119,15 +117,13 @@ function createInterval() {
 
 	indicators.forEach((indicator, index) => {
 		indicator.addEventListener('click', () => {
-			const indexActiveIndicator = indicators.indexOf(
-				getActiveIndicator()
-			);
+			const indexActiveIndicator =
+				indicators.indexOf(getActiveIndicator());
 
 			if (index !== indexActiveIndicator) {
 				if (index < indexActiveIndicator) {
 					move(MOVE_LEFT, index);
-				}
-				else {
+				} else {
 					move(MOVE_RIGHT, index);
 				}
 			}

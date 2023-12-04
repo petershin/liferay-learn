@@ -1,9 +1,9 @@
 {
-  "configurationPath": "configuration.json",
-  "jsPath": "index.js",
-  "htmlPath": "index.html",
-  "cssPath": "index.css",
-  "icon": "code",
-  "name": "Marketing Slider",
-  "type": "component"
+	"configurationPath": "configuration.json",
+	"jsPath": "index.js",
+	"htmlPath": "index.html",
+	"cssPath": "index.css",
+	"icon": "code",
+	"name": "Marketing Slider",
+	"type": "component"
 }

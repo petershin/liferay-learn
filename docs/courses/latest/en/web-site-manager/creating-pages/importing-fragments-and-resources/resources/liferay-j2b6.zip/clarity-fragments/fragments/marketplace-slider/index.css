@@ -35,13 +35,13 @@
 }
 
 .carousel-caption {
-    color: var(--color-neutral-1);
-    background-color: black;
-    display: inline;
-    padding: 0.5rem;
-  
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+	color: var(--color-neutral-1);
+	background-color: black;
+	display: inline;
+	padding: 0.5rem;
+
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
 }
 
 .component-slider .carousel {

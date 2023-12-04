@@ -17,7 +17,7 @@ You can display content in various ways. The option you choose depends on the ty
 
 ## Collection Display Fragment
 
-The Collection Display Fragment displays a single [Collection](../../../en/site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) of assets. This Fragment gives you all the flexibility of Collections, which can manually or dynamically include assets (from one or multiple asset types). Read [Displaying Collections](./additional-content-display-options/displaying-collections.md) to learn more.
+The Collection Display Fragment displays a single [Collection](./collections-and-collection-pages/about-collections-and-collection-pages.md) of assets. This Fragment gives you all the flexibility of Collections, which can manually or dynamically include assets (from one or multiple asset types). Read [Displaying Collections](./collections-and-collection-pages/displaying-collections.md) to learn more.
 
 ## Web Content Display Widget
 

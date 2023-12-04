@@ -11,7 +11,7 @@ You can use [display page templates](../../site-building/displaying-content/usin
 
 The blog's friendly URL is appended to the display page's URL (i.e., `display-page-url/blog-friendly-url`) and can be edited at any time. If you change it, Liferay stores the previous URL in the entry's friendly URL history. As long as the old URL remains in this history, users can access the latest version of the blog entry. See [Publishing Content with Display Pages](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) for more instructions on setting up templates for displaying blog entries.
 
-Once you've set up display pages for your blog entries, you can use collections to list them in your content pages. See [About Collections and Collection Pages](./../collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
+Once you've set up display pages for your blog entries, you can use collections to list them in your content pages. See [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
 
 <!-- It would be a good idea do include use cases here to exemplify what was said -->
 

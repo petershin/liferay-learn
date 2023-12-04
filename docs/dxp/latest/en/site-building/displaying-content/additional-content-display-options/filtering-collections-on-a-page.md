@@ -11,7 +11,7 @@ There are two Page Fragments you can add to your pages to help Users filter cont
 
 The Collection Filter Fragment is used to filter the content displayed in a chosen Collection on the page. Users can search for keywords, or select categories and tags to filter the Collection associated with the filter Fragment.
 
-Follow these steps to add and configure a Collection Filter Fragment to a page (that is already displaying a Collection in a [Collection Display Fragment](./displaying-collections.md#configuring-a-collection-display-fragment)):
+Follow these steps to add and configure a Collection Filter Fragment to a page (that is already displaying a Collection in a [Collection Display Fragment](../collections-and-collection-pages/displaying-collections.md#configuring-a-collection-display-fragment)):
 
 1. While editing the page, add a Collection Filter Fragment anywhere on the page.
 
@@ -77,4 +77,4 @@ Now, when the User filters content with the Collection Filter Fragment, the Appl
 
 ## Related Topics
 
-* [Displaying Collections](./displaying-collections.md)
+* [Displaying Collections](../collections-and-collection-pages/displaying-collections.md)

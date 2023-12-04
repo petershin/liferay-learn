@@ -3,8 +3,7 @@ uuid: e7769e8b-2afa-411c-bb53-413bddea507e
 ---
 # Configuring Menu Displays
 
-To display and configure a [menu display](./using-the-navigation-menus-application.md), you can use the [enu display fragment](#configuring-the-menu-display-fragment) or a [menu display widget](#configuring-the-menu-display-widget). With either of these two options, you can define the menu display options, levels, and behavior for your site.
-
+To display and configure a [menu display](./using-the-navigation-menus-application.md), you can use the [Menu display fragment](#configuring-the-menu-display-fragment) or a [menu display widget](#configuring-the-menu-display-widget). With either of these two options, you can define the menu display options, levels, and behavior for your site.
 ```{tip}
 If you are new to Liferay, use the menu display fragment to get started with building your site's navigation menus. The menu display fragment provides preview options that work with [master page templates](../creating-pages/defining-headers-and-footers/creating-a-master-page-template.md) and ease of configuration that menu display widgets do not provide.
 ```
@@ -21,7 +20,7 @@ The Menu Display fragment appears under the Fragments and Widget section of your
 
 You can build the hierarchy of pages and subpages in the Menu Display fragment using two methods:
 
-- **Site Navigation Menus** (A) uses the menus you define using the Liferay DXP navigation menu for [site navigation](./managing-site-navigation.md). By default, Liferay DXP provides two site menus based on the pages hierarchy in your site.
+- **Site Navigation Menus** (A) uses the menus you define using the Liferay DXP navigation menu for site navigation. By default, Liferay DXP provides two site menus based on the pages hierarchy in your site.
 - **Contextual Menus** (B) shows a menu that is based on the page context. For example, you can create a more advanced navigation by combining a first-level Menu Display fragment linked to one of your site menus with a second-level Menu Display fragment that only shows the child pages. This way, when the user clicks through the different pages in the first-level menu, the second-level menu changes dynamically to show the children pages.
 
 ![You can define the hierarchy of the Menu Display fragment from your site menus or from contextual menus.](./configuring-menu-displays/images/02.png)
@@ -90,6 +89,5 @@ These are the three options under the Start with Menu Items In field:
 ## Related Topics
 
 - [Using the Navigation Menus Application](./using-the-navigation-menus-application.md)
-- [Managing Site Navigation](./managing-site-navigation.md)
 - [Adding Elements to Content Pages](../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
 - [Content Page Editor User Interface Reference](../creating-pages/using-content-pages/content-page-editor-ui-reference.md)

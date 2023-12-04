@@ -151,6 +151,5 @@ The navigation menu is deleted.
 
 ## Related Topics
 
-* [Managing Site Navigation](./managing-site-navigation.md)
 * [Navigation Menu Element Types](./navigation-menu-element-types.md)
 * [Configuring Menu Displays](./configuring-menu-displays.md)

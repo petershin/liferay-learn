@@ -9,7 +9,7 @@ More than half of all page views in the world come from mobile devices like phon
 
 Out-of-the-box, Liferay uses responsive layouts:
 
-* DXP widgets and custom widgets that use Liferay's UI frameworks automatically scale to fit the screen size.
+* DXP widgets and custom widgets using Liferay's UI frameworks automatically scale to fit the screen size.
 
     ![Adjust the widget's size.](./building-a-responsive-site/building-a-responsive-site/images/01.png)
 
@@ -23,7 +23,7 @@ Out-of-the-box, Liferay uses responsive layouts:
 
 * For web developers, theme tools help ensure optimum mobile performance.
 
-If you're using the default theme, all you need to do to display pages on mobile devices is create a page. There are also tools to verify that everything displays as intended. The device simulator (![Simulation](../../images/icon-simulation.png)) shows you how pages look on different devices.
+If you're using the default theme, your pages already adjust to fit mobile devices. There are also tools to verify that everything appears as intended. The device simulator (![Simulation](../../images/icon-simulation.png)) shows you how pages look on different devices.
 
 ```{tip}
 In Liferay 7.2 you can create mobile device rules that govern site behavior on detection of a mobile device. For more information on creating mobile device rules, see [Creating Mobile Device Rules](./building-a-responsive-site/creating-mobile-device-rules.md).

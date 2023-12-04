@@ -2,21 +2,21 @@
 
 [#if !themeDisplay.isSignedIn()]
 <a class="align-items-center d-flex flex-row position-relative user-sign-in" href="/c/portal/login">
-	<span class="user-sign-in-icon text-7">
+	<span class="text-7">
 		[@clay["icon"] symbol="user"/]
 	</span>
 	<span class="align-items-center border-0 c-ml-1 text-primary text-3 user-sign-in-label">
-		Sign In
+        [@liferay_ui["message"] key="sign-in" /]
 	</span>
 </a>
 
 [#else]
 
-<div class="dropdown c-mr-3 user-nav-dropdown" style="display: inline-block;">
+<div class="dropdown c-mr-3" style="display: inline-block;">
 	<a 
 		aria-expanded="false"
 		aria-haspopup="true"
-		class="dropdown-toggle user-nav-dropdown-button"
+		class="dropdown-toggle"
 		data-toggle="liferay-dropdown"
 		role="button"
 	>
@@ -26,49 +26,48 @@
 	</a>
 
 	<ul
-		aria-labelledby="dropdownAlignment2"
-		class="dropdown-menu dropdown-menu-right text-3 c-p-2 user-nav-dropdown-menu"
+		class="dropdown-menu dropdown-menu-right text-3 c-p-2"
 	>
 		<li class="dropdown-header">
-			<span class="text-weight-bolder text-brand-primary-darken-1 text-uppercase user-full-name">
+			<span class="text-weight-bolder text-brand-primary-darken-1 text-uppercase">
 				${user.getFullName()}
 			</span>
 		</li>
 		<li>
 			<a class="c-mt-2 c-mb-2 c-mr-0 c-ml-0 dropdown-item user-nav-dropdown-menu-item" href="/my-account">
-				<span class="c-mr-3 user-nav-dropdown-menu-item-icon">
+				<span class="c-mr-3">
 					[@clay["icon"] symbol="user"/]
 				</span>
 				<span>
-					My Account
+                    [@liferay_ui["message"] key="my-account" /]
 				</span>
 			</a>
 		</li>
 		<li>
 			<a class="dropdown-item user-nav-dropdown-menu-item" href="/my-lists">
-				<span class="c-mr-3 user-nav-dropdown-menu-item-icon">
+				<span class="c-mr-3">
 					[@clay["icon"] symbol="list"/]
 				</span>
 				<span>
-					My Lists
+                    [@liferay_ui["message"] key="my-lists" /]
 				</span>
 			</a>
 		</li>
 		<li>
 			[#assign notification_link = themeDisplay.getPortalURL() + '/group' + themeDisplay.layout.getGroup().friendlyURL + '/manage?p_p_id=com_liferay_notifications_web_portlet_NotificationsPortlet&p_p_lifecycle=0'/]
 			<a class="dropdown-item user-nav-dropdown-menu-item" href="${notification_link}">
-				<span class="c-mr-3 user-nav-dropdown-menu-item-icon">
+				<span class="c-mr-3">
 					[@clay["icon"] symbol="bell-on"/]
 				</span>
 				<span>
-					Notifications
+                    [@liferay_ui["message"] key="notifications" /]
 				</span>
 			</a>
 		</li>
 		<li class="dropdown-divider"></li>
 		<li>
 			<a class="dropdown-item user-nav-dropdown-menu-item" href="${htmlUtil.escape(themeDisplay.getURLSignOut())}?referer=${publicFriendlyURL}">>
-				Sign Out
+                [@liferay_ui["message"] key="sign-out" /]
 			</a>
 		</li>
 	</ul>

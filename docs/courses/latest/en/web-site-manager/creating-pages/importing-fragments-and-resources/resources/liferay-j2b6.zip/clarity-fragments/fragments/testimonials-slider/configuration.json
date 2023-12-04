@@ -3,7 +3,7 @@
 					"fields": [
 				{
 					"dataType": "string",
-					"defaultValue": "Placeholder 2",
+					"defaultValue": "Placeholder 1",
 					"label": "First Testimonial",
 					"localizable": true,
 					"name": "firstTestimonial",
@@ -24,7 +24,7 @@
 					"localizable": true,
 					"name": "thirdTestimonial",
 					"type": "text"
-				},
+				}
 			]
 	}
 	]

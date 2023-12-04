@@ -2,21 +2,23 @@
 themeDisplay.getSiteGroup().getFriendlyURL() /]
 
 <div class="d-flex vh-100 sign-in">
-	<div class="align-items-start c-pb-4 c-pl-7 c-pr-7 c-pt-6 flex-column form-box justify-content-between w-33">
-		<a href="${themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()}">
-			<div class="sign-in-logo w-50">
-					<img
-						alt="Clarity Logo"
+	<div class="align-items-start c-pb-4 c-pl-7 c-pr-7 c-pt-6 c-pb-lg-3 c-pl-lg-5 c-pr-lg-5 c-pt-lg-5 c-p-sm-3 flex-column form-box justify-content-between w-33">
+		<a href="${publicFriendlyURL}">
+			<div class="w-50">
+	            <lfr-editable id="img01" type="image">
+                    <img
+						alt=""
 						src="[resources:clarity-logo-small.png]"
 					/>
+                </lfr-editable>
 			</div>
 		</a>
-		<div class="bg-white sign-in-form">
+		<div class="bg-white sign-in-form c-mb-sm-4">
 			<h1 class="c-mb-5 c-mt-5 font-weight-normal sign-in-text">
 				See and be seen. Sign in.
 			</h1>
 
-			<div class="c-mb-1 sign-in-widget">
+			<div class="c-mb-1">
 				[@liferay_portlet.runtime
 				portletName="com_liferay_login_web_portlet_LoginPortlet" /]
 			</div>

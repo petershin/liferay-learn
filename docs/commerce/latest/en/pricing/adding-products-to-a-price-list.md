@@ -9,9 +9,9 @@ Follow these steps to add price entries to a price list for product SKUs:
 
 1. Open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)) and navigate to *Pricing* &rarr; *Price Lists*.
 
-1. Select the *Price List* you want to configure, and go to the *Entries* tab.
+1. Select the *Price List* you want to configure and go to the *Entries* tab.
 
-1. Search for the desired products and click on *Select* to add them to the selected price list.
+1. Search for the desired products and click *Select* to add them to the selected price list.
 
    When searching for products, you can use an SKU or keywords and phrases. Using a keyword or phrase returns all the applicable products by their SKU.
 

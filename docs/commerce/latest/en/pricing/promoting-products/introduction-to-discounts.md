@@ -17,7 +17,7 @@ Discounts are price reductions you can apply to products and orders to offer inc
 
 {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` If you have [units of measure](../../product-management/creating-and-managing-products/products/units-of-measure.md) configured for SKUs, you can target discounts at each unit of measure specifically. 
 
-Once created, you can both determine which channels, accounts, and order types are eligible for receiving the discount and define rules to specify requirements for qualifying. By default, Liferay applies discounts automatically, but you can make them available to customers as coupon codes. Also, when configuring discounts, you can schedule when they take effect and expire.
+Once created, you can determine eligible channels, accounts, and order types for receiving the discount and define the requirements for qualifying. By default, Liferay applies discounts automatically, but you can make them available to customers as coupon codes. Also, when configuring discounts, you can schedule when they begin and expire.
 
 See [Creating Discounts](./creating-a-discount.md) to get started or [Introduction to Pricing](../introduction-to-pricing.md) to learn how discounts contribute to Liferay's pricing engine.
 

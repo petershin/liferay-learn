@@ -7,8 +7,6 @@ Price modifiers target the prices set in a price list and modify them based on t
 
 ## Adding Price Modifiers to a Price List
 
-To add a new price modifier to a price list:
-
 1. Open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Price Lists*.
 
 1. Select the *Price List* you want to configure, and go to the *Price Modifiers* tab.

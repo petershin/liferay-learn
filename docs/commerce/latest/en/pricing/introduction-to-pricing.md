@@ -13,9 +13,9 @@ The following overview describes Commerce Pricing Engine v2.0+. This is the defa
 
 ## Components of Commerce's Pricing System
 
-You store products in catalogs, and each catalog has its own default [base price list](#base-price-list) and [base promotion list](#base-promotion-list). These lists store base price entries for all product SKUs contained in the catalog and are available to all customers. You can also create custom [price lists](#price-lists) and [promotion lists](#promotion-lists) to define more targeted and configurable price entities. As part of each entry, you can also define [price tiers](#price-tiers) that set special prices for products based on quantity. Finally, create [discounts](#discounts) that are applied on top of price entries without overriding them.
+Catalogs contain products, and each catalog has its own default [base price list](#base-price-list) and [base promotion list](#base-promotion-list). These lists store base price entries for all product SKUs in the catalog and are available to all customers. You can also create custom [price lists](#price-lists) and [promotion lists](#promotion-lists) to define more targeted and configurable price entities. As part of each entry, you can also define [price tiers](#price-tiers) that set special prices for products based on quantity. Finally, [discounts](#discounts) are applied on top of price entries without overriding them.
 
-{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, you'll have entries for each unit in the base price list, base promotion list, custom price lists, and custom promotion lists. 
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` If you have a [unit of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured for the SKU, you have entries for each unit in the base price list, base promotion list, custom price lists, and custom promotion lists. 
 
 ![The base price list also stores the starting price for every unit configured for an SKU.](./introduction-to-pricing/images/09.png)
 
@@ -61,7 +61,7 @@ Discounts are applied on top of the price and modify it without superseding it. 
 
 The pricing engine determines how each pricing component contributes to an SKU's price in a channel. When the engine receives a price request, it first calculates the product's *unit price* and *promotion price*. These prices are then used to determine the *final price* made available to the customer.
 
-{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` The pricing engine calculates the unit price, promotion price, final price, and order price the same way for an SKU with [units of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) configured in comparison to a SKU that doesn't have any units of measure.
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` The pricing engine calculates the unit price, promotion price, final price, and order price the same way for an SKU containing [units of measure](../product-management/creating-and-managing-products/products/units-of-measure.md) as an SKU without units of measure.
 
 <!--TASK: Consider adding details about net/gross price types and how taxes are calculated-->
 

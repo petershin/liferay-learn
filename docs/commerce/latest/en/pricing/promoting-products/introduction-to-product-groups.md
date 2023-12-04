@@ -35,10 +35,10 @@ Once the product group is created, you must add products to it. Below you'll sel
 
 1. Click _Select_ next to the product of your choice to add it to the group.
 
-This product group can now be linked to a _Price List_ or _Discount_.
+This product group can now be linked to a Price List or Discount.
 
 ```{note}
-Apart from adding Products to a product group, you can also link a product group to a Product. To do this, select the Product of your choice from the Products list, select the product groups tab, and search for the product group you created. Click *Select* next to the product group of your choice to link the product group with the Product.
+Apart from adding products to a product group, you can also link a product group to a product. To do this, select the product of your choice from the products list, select the product groups tab, and search for the product group you created. Click *Select* next to the product group of your choice to link the product group with the product.
 ```
 
 ## Linking a Discount to a Product Group

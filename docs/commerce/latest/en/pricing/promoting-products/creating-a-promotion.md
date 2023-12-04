@@ -3,7 +3,7 @@ uuid: 3caf47dd-49d5-477c-8334-7a985adc57b2
 ---
 # Creating a Promotion
 
-You can follow the steps below to create a promotion that reduces the price of all products in the catalog by 20% on the 4th of July. All accounts, account groups, channels, and order types are eligible for this promotion.
+The example below creates a promotion that reduces the price of all products in the catalog by 20% on the 4th of July. All accounts, account groups, channels, and order types are eligible for this promotion.
 
 1. Open the *Global Menu* (![Applications Menu icon](../../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Promotions*.
 
@@ -23,9 +23,9 @@ You can follow the steps below to create a promotion that reduces the price of a
 
 This creates a new promotion on the selected catalog. Notice how there is a *Base Promotion List* for the catalog already available. Read [Using the Promotion Base List](./using-the-promotion-base-list.md) for more information.
 
-![You can change the name of the promotion, assign a priority, select the Parent Price List, and the Price Type.](./creating-a-promotion/images/03.png)
+![You can change the name of the promotion, assign a priority, and select the Parent Price List and the Price Type.](./creating-a-promotion/images/03.png)
 
-In the *Details* section, you can change the name of the promotion, assign a priority, and select the Parent Price List and the Price Type. Since the promotion is for the 4th of July, you can set a schedule by selecting a *Publish Date* and *Expiration Date* from the *Schedule* section. Click *Publish* to activate the promotion. If there are multiple promotions applicable for an account, the promotion with higher priority has precedence over the others. See [Promotions Reference](./promotions-reference.md) for more information on specific fields.
+In the Details section, you can change the name of the promotion, assign a priority, and select the Parent Price List and the Price Type. Since the promotion is for the 4th of July, you can set a schedule by selecting a *Publish Date* and *Expiration Date* from the Schedule section. Click *Publish* to activate the promotion. If there are multiple promotions applicable for an account, the promotion with higher priority has precedence over the others. See [Promotions Reference](./promotions-reference.md) for more information on specific fields.
 
 ## Adding a Price Modifier
 

@@ -21,9 +21,9 @@ To create a new discount:
 
 You can specify a discount's details, such as the percentage (if using a percentage based discount), the maximum discount amount, the [discount level](./introduction-to-discounts.md#tiered-discounts), and then activate it.
 
-In the *Details* section:
+In the Details section,
 
-1. Enter the following:
+1. Enter the following data:
 
     * **Amount**: 20%
     * **Maximum Discount Amount**: 20.00
@@ -42,7 +42,7 @@ The discount is now active. Configure the discount's rules and eligibility.
 If using a coupon code,
 
 1. Enable the _Use Coupon Code_ toggle.
-1. Enter the following:
+1. Enter the following data:
 
     * **Coupon Code**: spring-sale
     * **Maximum Total Uses**: 1
@@ -81,7 +81,7 @@ The discount rule is now active.
 
 You can make this discount available for all accounts or specific accounts, account groups, or order types.
 
-To specify which accounts, account groups, and order types are eligible for this discount:
+To specify which accounts, account groups, and order types are eligible for this discount,
 
 1. Click the _Eligibility_ tab.
 1. Click the [Select Account Groups](../../users-and-accounts/account-management/creating-a-new-account-group.md) radio button.
@@ -126,7 +126,7 @@ A discount that applies to all accounts, account groups, channels and order type
 
 ## Commerce 2.1 and Below
 
-To create a discount:
+To create a discount,
 
 1. Navigate to the _Control Panel_ &rarr; _Commerce_ &rarr; _Discounts_.
 1. Click Add (![Add](../../images/icon-add.png)) and enter a name: _Spring Sale_.

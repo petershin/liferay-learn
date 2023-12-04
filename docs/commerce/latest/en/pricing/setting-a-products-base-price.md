@@ -3,17 +3,17 @@ uuid: 765551fb-f76c-4fe8-9b30-35e25a0e8fc8
 ---
 # Setting a Product's Base Price
 
-When you create a SKU, it doesn't have a base price. A price entry for the SKU is automatically created in the catalog's base price list, but you must change it to the SKU's actual price. Once added, this price serves as the default price for the SKU when no overrides (e.g., other price lists or promotions) are applicable.
+When you create an SKU, it doesn't have a base price. A price entry for the SKU is created automatically in the catalog's base price list, but you must change it to the SKU's actual price. Once added, this price serves as the default price for the SKU when no overrides (e.g., other price lists or promotions) are applicable.
 
 ## Setting the Base Price
 
-{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` To assign the base price or promotion price for an SKU or a unit of measure:
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal GA98+` To assign the base price or promotion price for an SKU or a unit of measure,
 
 1. Open the *Global Menu* (![Applications Menu icon](../images/icon-applications-menu.png)) and navigate to *Commerce* &rarr; *Products*.
 
 1. Click on the desired product.
 
-1. Go to the *SKUs* tab, and click on the desired *SKU*.
+1. Go to the *SKUs* tab and click on the desired *SKU*.
 
 1. Go to the *Price* tab.
 

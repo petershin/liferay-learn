@@ -130,7 +130,7 @@ Use [Configuration Files](../../../system-administration/configuring-liferay/con
    EOT
    ```
 
-This makes the configuration files accessible to the cluster nodes via bind mounts on the DXP server containers.
+You'll make these configuration files accessible to the cluster nodes via bind mounts on the DXP server containers.
 
 ```{note}
 The `docker run --add-host elasticsearch:[ip] ...` commands used later for the DXP servers add `/etc/hosts/` entries that map the name `elasticsearch` to the Elasticsearch server host IP address.
@@ -240,7 +240,7 @@ Each node's container ID and port (`Node: [id]:[port]`) appear at the bottom of 
 
 ### Index the Content into the Search Engine
 
-1. Navigate to *Control Panel &rarr; Configuration &rarr; Search*.
+1. Navigate to *Control Panel* &rarr; *Configuration* &rarr; *Search*.
 
 1. In the Index Actions tab, click *Reindex all search indexes* and *Reindex all spell check indexes*.
 

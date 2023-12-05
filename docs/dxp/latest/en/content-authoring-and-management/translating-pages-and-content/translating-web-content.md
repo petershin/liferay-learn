@@ -42,7 +42,7 @@ To manually translate web content, users must have either View and Update permis
 1. Enter your translation for the available fields.
 
    ```{note}
-   The friendly URL for translations remains empty unless filled by the user. In cases where the friendly URL is empty, it uses the friendly URL set for the default language.
+   The friendly URL for translations remains empty unless filled in by the user. If the friendly URL is left empty, the default language's friendly URL is used.
    ```
 
 1. Click *Publish* to create a new version of the web content or initiate a workflow, if it's enabled.
@@ -67,11 +67,11 @@ Liferay supports both XLIFF 1.2 and 2.0 files. However, it may not support all f
 
 1. Click *Actions* (![Actions icon](../../images/icon-actions.png)) for the content you want to translate and select *Export for Translation*. This opens a modal window for configuring your export.
 
-   ![Select Export for translation.](./translating-web-content/images/03.png)
+   ![Select Export for Translation.](./translating-web-content/images/03.png)
 
    In Liferay Portal 7.4 GA26+, you can select multiple articles and click the *Export for Translation* button.
 
-   ![Select multiple articles and click Export for translation](./translating-web-content/images/04.png)
+   ![Select multiple articles and click Export for Translation](./translating-web-content/images/04.png)
 
 1. Select an export format: *XLIFF 1.2* or *XLIFF 2.0*.
 

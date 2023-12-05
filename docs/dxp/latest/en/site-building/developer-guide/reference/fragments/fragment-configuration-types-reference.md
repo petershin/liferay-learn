@@ -563,15 +563,15 @@ Using the menu display configuration type, you can access FreeMarker variables i
 
     ```json
     "fieldSets": [
-      {
+        {
         "fields": [
-          {
+            {
             "label": "source",
             "name": "source",
             "type": "navigationMenuSelector"
-          }
+            }
         ]
-      }
+        }
     ]
     ```
 
@@ -579,7 +579,7 @@ Using the menu display configuration type, you can access FreeMarker variables i
 
     In this example, use `sourceObject`, since `source` was the name used in the configuration.
 
-    ```markup
+    ```freemarker
     [#assign
         entries = sourceObject.navItems
         branchNavItems = sourceObject.branchNavItems

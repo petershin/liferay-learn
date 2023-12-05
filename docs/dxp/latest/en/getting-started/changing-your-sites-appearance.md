@@ -13,7 +13,7 @@ Start a new Liferay instance by running
 docker run -it -m 8g -p 8080:8080 liferay/portal:latest
 ```
 
-Sign in to Liferay at http://localhost:8080. Use the email address test@liferay.com and the password test. When prompted, change the password to learn.
+Sign in to Liferay at http://localhost:8080. Use the email address `test@liferay.com` and the password `test`. When prompted, change the password to `learn`.
 
 Then, follow these steps:
 
@@ -21,7 +21,7 @@ Then, follow these steps:
 
 1. Click *Actions* (![Action button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
 
-   ![Open the pages application, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
+   ![Open the Pages application, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
 1. Under Favicon, click *Select Favicon* (![Select Favicon button](../images/icon-switch.png)).
 
@@ -56,7 +56,7 @@ By default, Liferay instances use the Classic theme, but you can deploy and use 
     ```
 
 ```{note}
-To replace `[docker-container-id]`, use `docker ps` to find the ID for liferay/portal:latest. The `[path-to-deploy-folder]` is generally `opt/liferay/deploy`.
+To replace `[docker-container-id]`, use `docker ps` to find the ID for liferay/portal:latest. The `[path-to-deploy-folder]` is `opt/liferay/deploy`.
 ```
 
 This loads the sample theme into your DXP instance. You can check your console for the following message to confirm the theme successfully deployed:
@@ -73,7 +73,7 @@ This loads the sample theme into your DXP instance. You can check your console f
 
 1. Click *Actions* (![Action button](../images/icon-actions.png)) in the Application Bar and select *Configuration*.
 
-   ![Open the pages screen, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
+   ![Open the Pages screen, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
 1. Under Theme, click *Change Current Theme*:
 

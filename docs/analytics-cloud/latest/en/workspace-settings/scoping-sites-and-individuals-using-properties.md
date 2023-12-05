@@ -31,13 +31,17 @@ You have to sync sites to a property in order to see their data on Analytics Clo
     If you do not see the message `Your DXP instance is connected to Analytics Cloud.`, please review [Connecting Liferay DXP Sites to Analytics Cloud](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
     ```
 
-1. In your Analytics Cloud workspace, click on *Synced Sites*. A list of available properties that you created on Analytics Cloud appears. Create a new property here for the sites you would like to track.
+1. If your Liferay instance is connected to Analytics Cloud but is not assigned a property, click the _Next_ button. 
 
-    ![Creating a new property to track sites.](scoping-sites-and-individuals-using-properties/images/03.png)
+    ![Select the property to sync your sites with.](scoping-sites-and-individuals-using-properties/images/03.png)
 
-1. Select the property you created. A list of sites on your Liferay DXP instance appears. Select the sites you wish to sync to this property and click *Save*. Your sites are now synced to Analytics Cloud using the selected property.
+    Click the _Assign_ button next to the property you wish to sync your sites with. A new window will pop open.
 
-    ![Selecting sites to sync with a property.](scoping-sites-and-individuals-using-properties/images/04.png)
+1. A list of your sites is displayed. Select the sites you wish to assign to the property.
+
+    ![Select the sites to assign to the property.](scoping-sites-and-individuals-using-properties/images/04.png)
+
+    Click _Assign_. Then click _Next_ to finish the connection process.. 
 
     ```{important}
     You cannot sync a DXP site with multiple properties. If one of your sites is already synced to another property. It will be greyed out here, and not selectable.

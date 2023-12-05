@@ -24,7 +24,7 @@ Configuration values inserted into the FreeMarker context honor the defined `dat
 
 ## Text Configuration
 
-This JSON configuration creates an input text field you can implement for cases where you must input a text option manually:
+This JSON configuration creates an input text field you can implement for cases where you must enter a text option manually:
 
 ```json
 {

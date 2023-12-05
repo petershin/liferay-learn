@@ -30,19 +30,22 @@ You can display content in various ways. The option you choose depends on the ty
 
 :::{grid-item-card} Using Collections
 :link:  ./displaying-content/using-collections.md
+:::
 
 :::{grid-item-card} Using the Asset Publisher Widget
 :link: ./displaying-content/using-the-asset-publisher-widget.md
+:::
 
 :::{grid-item-card} Using Display Page Templates
 :link: ./displaying-content/using-display-page-templates.md
+:::
 
 :::{grid-item-card} Additional Content Display Options
 :link:  ./displaying-content/additional-content-display-options.md
+:::
 
 :::{grid-item-card} Using Information Templates
 :link:  ./displaying-content/using-information-templates.md
-
 :::
 
 ::::

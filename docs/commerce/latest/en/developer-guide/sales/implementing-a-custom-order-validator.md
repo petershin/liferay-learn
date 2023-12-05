@@ -7,6 +7,14 @@ This tutorial explains how to add a custom order validator by implementing the [
 
 An order validator is a class that validates items in a customer's cart when proceeding through checkout. Liferay provides multiple out-of-the-box order validators, including a [default](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java), as well as validators to check [item versions](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) and [recurring items (subscriptions)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java).
 
+The order validator has validation logic for both adding a product to the cart and proceeding to a new checkout step. There are three parts:
+
+* [Validation logic for adding a product to cart.](#validation-logic-for-adding-a-product-to-cart)
+* [Validation logic for proceeding to checkout.](#validation-logic-for-proceeding-to-checkout)
+* [Language keys added to `Language.properties`.](#language-keys-added-to-languageproperties)
+
+The two `validate` methods are where you define the custom validation logic for the order validator. This example adds logic to reject orders with more than ten of an item over a certain price.
+
 ## Deploy the Sample Order Validator
 
 ```{include} /_snippets/run-liferay-portal.md
@@ -83,18 +91,6 @@ public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem co
 
 This is the second validation method where you can add custom validation logic. This method is called for items already in the cart, whenever the order transitions to `In Progress` or `Pending`.
 
-## How the Sample Order Validator Works
-
-The order validator has validation logic for both adding a product to the cart and proceeding to a new checkout step. There are three parts: 
-
-* [Validation logic for adding a product to cart.](#validation-logic-for-adding-a-product-to-cart)
-* [Validation logic for proceeding to checkout.](#validation-logic-for-proceeding-to-checkout)
-* [Language keys added to `Language.properties`.](#language-keys-added-to-languageproperties)
-
-The two `validate` methods are where you define the custom validation logic for the order validator. This example adds logic to reject orders with more than ten of an item over a certain price.
-
-<!-- The above description of what this does should be at the top of this article. People should know what it does right away. -Rich -->
-
 ### Validation Logic for Adding a Product to Cart
 
 ```{literalinclude} ./implementing-a-custom-order-validator/resources/liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java
@@ -136,7 +132,13 @@ this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximu
 
 See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
-<!-- Here's where you'd add a new section where the reader changes some of the existing code to do things slightly differently. In this case, I suggest you have him/her change either the price or the number of items that are checked for in the code. -Rich --> 
+## Modifying the Custom Order Validator
+
+If you wish to change what your order validator does, you can edit your java file. Make the validator reject orders worth over $200 by changing the value of `_MAX_ITEM_PRICE`. Redeploy your custom order validator to send these changes to Liferay.
+
+Back in your browser, try adding 10 items worth between $100 and $200. You can add these items to your cart because your validator no longer rejects orders over $100.
+
+Now, try adding 10 items worth over $200. If you cannot add these items to your cart, your validator is working!
 
 ## Conclusion
 

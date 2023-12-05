@@ -5,7 +5,7 @@ uuid: 57ce5bc2-3e8a-4c7a-b379-bbcc42ae6784
 
 You can use an instance settings client extension to configure a [wide variety of Liferay configurations](#currently-supported-instance-settings-pids). Each configuration is referenced by its PID (Persistent IDentity).
 
-You can define an instance settings client extension with a `client-extension.yaml` file.
+Use the `client-extension.yaml` file to define an instance settings client extension. 
 
 ## Usage Details
 
@@ -21,7 +21,7 @@ yoke-instance-settings:
 These properties are specific to instance settings client extensions:
 
 | Name | Data Type | Default Value | Description |
-| :--- | :--- | :--- | :--- |
+|:-|:-|:-|:-|
 | `description` | String | | The client extension's description. |
 | `name` | String | (Derived) | The client extension's name. |
 | `pid` | String | | The PID (Persistent IDentity) of the configured instance setting (from the [currently supported instance settings PIDs](#currently-supported-instance-settings-pids).) |
@@ -30,7 +30,7 @@ These properties are specific to instance settings client extensions:
 
 Instance settings client extensions are accompanied by additional properties which are defined by the schema for the PID (a Java class).
 
-The schema PID is defined in the annotation property `@Meta.OCD.id` as follows:
+The schema PID is defined in the annotation property `@Meta.OCD.id`:
 
 ```java
 @Meta.OCD(
@@ -46,11 +46,11 @@ yoke-instance-settings:
     type: instanceSettings
 ```
 
-The following sections are examples of the types of properties in the schema classes and how to include them in the client extension definition.
+Below are examples of the types of properties in the schema classes and how to include them in the client extension definition.
 
 ### Scalar Properties
 
-Given the following scalar schema property definition, in this case an `int` (integer):
+Given the scalar schema property definition below, in this case an `int` (integer),
 
 ```java
 @Meta.AD(...)
@@ -80,7 +80,7 @@ Scalar properties include these data types:
 
 ### Array Property Example
 
-Given the following array schema property definition:
+Given the array schema property definition below,
 
 ```java
 @Meta.AD(...)
@@ -100,7 +100,7 @@ yoke-instance-settings:
 
 ### LocalizedValuesMap Property Example
 
-Given the following `LocalizedValuesMap` schema property definition:
+Given the `LocalizedValuesMap` schema property definition below, 
 
 ```java
 @Meta.AD(...)

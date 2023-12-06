@@ -1,6 +1,7 @@
 ---
 toc:
   - ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+  - ./building-a-responsive-site/using-the-simulation-panel.md
 uuid: 60f0d6ab-cd15-4649-9af4-00afdcaaf0d1
 ---
 # Building a Responsive Site
@@ -33,17 +34,17 @@ In Liferay 7.2 you can create mobile device rules that govern site behavior on d
 :maxdepth: 3
 
 building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+building-a-responsive-site/using-the-simulation-panel.md
 ```
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-<!-- Eric is working on LRDOCS-11987, when he is finished, he will add the documentation link here
-:::{grid-item-card} Using the Simulation Panel
-:link: ./building-a-responsive-site/
-::: -->
-
 :::{grid-item-card} Building Responsive Layouts with the Grid Fragment
 :link: ./building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+:::
+
+:::{grid-item-card} Using the Simulation Panel
+:link: ./building-a-responsive-site/using-the-simulation-panel.md
 :::
 ::::

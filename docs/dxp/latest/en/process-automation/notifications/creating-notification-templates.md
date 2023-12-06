@@ -83,6 +83,10 @@ Once created, you can use notification templates with object actions. See [Defin
 
    You can use defined terms, user names, or user roles. To add multiple recipients, separate values with a comma or space (e.g., `[%TICKET_AUTHOR_ID%]`, `[%TICKET_R_ASSIGNEE_USERID%]`).
 
+   ```{important}
+   If you set the recipients dynamically, only users with [permission to add object entries](../../building-applications/objects/understanding-object-integrations/permissions-framework-integration.md#creating-entries) can receive the notification.
+   ```
+
    ![Determine recipients by entering terms, individual user names, or user roles.](./creating-notification-templates/images/10.png)
 
 1. In the Content section, enter the notification's message.

@@ -33,7 +33,7 @@ You must select a [notification template](../../../../process-automation/notific
 
 ![Select a notification template.](./understanding-action-types/images/01.png)
 
-<!--TASK: include this content when client extensions documentation is updated, "If the out-of-the-box notification types don't meet your needs, you can use client extensions to create your own. See []() for more information or []() for a tutorial.." -->
+If the out-of-the-box notification types don't meet your needs, you can create custom notification types using client extensions. See [Microservice Client Extensions](../../building-applications/client-extensions/microservice-client-extensions.md) for more information.
 
 ## Add an Object Entry
 

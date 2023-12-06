@@ -2,6 +2,9 @@
 toc:
   - ./discovery-calls/discovering-liferay-opportunities.md
   - ./discovery-calls/discovering-demo-requirements.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 발견 통화
 

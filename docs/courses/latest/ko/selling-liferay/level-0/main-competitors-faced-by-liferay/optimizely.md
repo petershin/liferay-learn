@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 최적으로
 
 **한눈에**

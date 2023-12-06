@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 확장 데크 마스터하기
 
 **한눈에**

@@ -4,7 +4,7 @@
 
 独自のサイト、ユーザー、組織を持つ別のLiferay環境が必要なビジネスユースケースがあるかもしれません。 新しいサーバーを立ち上げるのではなく、仮想インスタンスを作成することができる。
 
-例えば、Delectable Bonsaiは、社外向けの一般向けウェブサイトと、Breakfastと呼ぶ従業員向けの社内イントラネットの両方を持っている。 これらは仮想インスタンスを使って構築される。
+例えば、クラリティ・ビジョン・ソリューションズ社では、社外向けの一般向けウェブサイトと、「Glance」と呼ぶ従業員向けの社内イントラネットの両方を持っている。 これらは仮想インスタンスを使って構築される。
 
 ## LXCの仮想インスタンス
 
@@ -16,9 +16,9 @@
 
 1. **追加** ボタン (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
 
-   * Web ID: `breakfast.delectablebonsai.com`
-   * バーチャルホスト： `breakfast.delectablebonsai.com`
-   * メールドメイン: `delectablebonsai.com`
+   * Web ID: `glance.clarityvisionsolutions.com`
+   * バーチャルホスト： `glance.clarityvisionsolutions.com`
+   * メールドメイン: `clarityvisionsolutions.com`
    * 最大ユーザー数 `0` (注、これは無制限ユーザーを意味します)
    * アクティブ：トグル・オン
    * 仮想インスタンス・イニシャライザ： **ブランク・サイト** を選択する。
@@ -29,13 +29,13 @@
 
 1. これは本当の外部ホスト・サイトではないので、ローカル・システムの `/etc/hosts` ファイルにドメインを追加する。
 
-   `127.0.0.1 breakfast.delectablebonsai.com`
+   `127.0.0.1 glance.clarityvisionsolutions.com`
 
    ```{note}
-   docker コンテナを使用する場合は、実行コマンドに `--add-host breakfast.delectablebonsai.com:127.0.0.1` エントリを含める必要があります。
+   docker コンテナを使用する場合は、--add-host glance.clarityvisionsolutions.com:127.0.0.1` エントリを run コマンドに含める必要があります。
    ```
 
-1. 仮想インスタンスが正常に追加されたら、 `http://breakfast.delectablebonsai.com:8080/`に移動します。
+1. 仮想インスタンスが正常に追加されたら、 `http://glance.clarityvisionsolutions.com:8080/`に移動します。
 
    ![新しい仮想インスタンスは使用可能です。](./configuring-virtual-instances/images/02.png)
 

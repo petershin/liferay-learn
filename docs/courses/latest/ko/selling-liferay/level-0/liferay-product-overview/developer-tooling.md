@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 개발자 도구
 
 Liferay는 표준 빌드 스크립팅, 경량 CLI 유틸리티 및 Eclipse 기반 전체 IDE를 포함하는 다양한 개발자 도구를 제공합니다. Liferay의 개발자 도구는 초보자부터 수년간 코드를 작성해 온 전문가까지 모든 개발자에게 서비스를 제공합니다.

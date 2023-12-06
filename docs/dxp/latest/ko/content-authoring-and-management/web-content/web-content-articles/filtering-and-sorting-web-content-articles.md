@@ -6,9 +6,9 @@
 
 모든 자산, 특정 폴더의 자산 또는 웹 콘텐츠 검색 결과 자산을 볼 때 세 가지 다른 필터 및 정렬 옵션을 사용할 수 있습니다.
 
-- [내비게이션으로 필터링](#filter-by-navigation)
-- [상태로 필터링](#filter-by-status)
-- [주문](#order-by)
+* [내비게이션으로 필터링](#filter-by-navigation)
+* [상태로 필터링](#filter-by-status)
+* [주문](#order-by)
 
 이러한 필터 및 정렬 옵션을 결합할 수 있습니다. 예를 들어, [**Mine** 필터](#filter-by-navigation) 을 [**Draft**](#filer-by-status) 및 [**Modified Date**](#order-by) 필터로 정렬하면 수정된 날짜별로 정렬된 Draft 상태의 기사 목록이 표시됩니다.
 
@@ -54,6 +54,6 @@
 
 ## 관련 정보
 
-- [기본 웹 콘텐츠 기사 추가](./adding-a-basic-web-content-article.md)
-- [웹 콘텐츠 구조 이해](../web-content-structures/understanding-web-content-structures.md)
-- [웹 콘텐츠 템플릿 만들기](../web-content-templates/creating-web-content-templates.md)
+* [기본 웹 콘텐츠 기사 추가](./adding-a-basic-web-content-article.md)
+* [웹 콘텐츠 구조 이해](../web-content-structures/understanding-web-content-structures.md)
+* [웹 콘텐츠 템플릿 만들기](../web-content-templates/creating-web-content-templates.md)

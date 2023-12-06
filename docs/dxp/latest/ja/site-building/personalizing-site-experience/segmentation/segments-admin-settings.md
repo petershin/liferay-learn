@@ -26,7 +26,7 @@
 
 **Anonymous User Segments Cache Expiration Time** : 匿名セグメントキャッシュを保存する時間制限（秒）を設定します。 時間が経過すると、キャッシュはクリアされる。
 
-**Interest Terms Cache Expiration Time** : 利息条件キャッシュを保存する時間制限（秒）を設定します。 時間が経過すると、キャッシュはクリアされる。 詳しくは [Understanding Interests](https://learn.liferay.com/analytics-cloud/latest/en/people/individuals/understanding-interests.md) 。
+**Interest Terms Cache Expiration Time** : 利息条件キャッシュを保存する時間制限（秒）を設定します。 時間が経過すると、キャッシュはクリアされる。 詳しくは [興味のあるトピックの理解](https://learn.liferay.com/analytics-cloud/latest/ja/people/individuals/understanding-interests.html) 。
 
 **Update Interval** : Analytics Cloudセグメントからの更新を受信する間隔（分）を設定します。 この設定はシステム設定の下にのみ表示されます。
 

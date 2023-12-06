@@ -1,6 +1,6 @@
 # 組織を作る
 
-Liferayを使って、Delectable Bonsaiの組織階層をモデル化する。 詳しくは [組織を理解する](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations) を参照。
+Liferay を使用して、クラリティ・ビジョン・ソリューションズの組織階層をモデル化します。 詳しくは [組織を理解する](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations) を参照。
 
 ## 親子団体
 
@@ -9,18 +9,18 @@ Liferayを使って、Delectable Bonsaiの組織階層をモデル化する。 �
    * **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **Control Panel** &rarr; **Users and Organizations** に移動する。
    * ［**Organizations**］ タブをクリックします。
    * **追加**（![Add icon](../../images/icon-add.png)） をクリックします。
-   * **名前** の欄に `Delectable Bonsai` と入力してください。
+   * **名前** フィールドに `Clarity Vision Solutions` と入力します。
    * ［**保存**］ をクリックします。
 
 1. 子組織を作る。
 
    * **戻る**(![Back icon](../../images/icon-angle-left.png)) をクリックして、組織のリストに戻ります。
-   * 作成したDelectable Bonsai組織をクリックしてください。
+   * 作成したクラリティ ビジョン ソリューション組織をクリックします。
    * **Add**(![Add icon](../../images/icon-add.png)) をクリックし、 **New Organization** を選択する。
-   * **名前** フィールドに `IT` と入力する。 親組織の項目で「Delectable Bonsai」が選択されていることに注意。
+   * **名前** フィールドに `IT` と入力する。 親組織セクションでClarity Vision Solutionsが選択されていることに注意してください。
    * ［**保存**］ をクリックします。
 
-1. 上記の手順で、Delectable Bonsaiの親組織の下に、 `Sales & Marketing` という別の子組織を作成します。
+1. 上記の手順を使用して、クラリティ ビジョン ソリューションの親組織の下に `Sales & Marketing` という別の子組織を作成します。
 
 1. 組織階層は下の画像のようになるはずだ。
 
@@ -45,14 +45,14 @@ ITマネージャーとITスタッフはどの組織にも属していない。 
 1. **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **Control Panel** &rarr; **Users and Organizations** に移動する。
 
    * ［**Organizations**］ タブをクリックします。
-   * クリック **おいしい盆栽** .
+   * クリック **クラリティ・ビジョン・ソリューション** .
    * **オプション**(![Options icon](../../images/icon-actions.png)) 営業 & マーケティングの子組織をクリックします。
    * **Add User** をクリックする。
 
 1. 以下のユーザーを追加する：
 
    * スクリーン名： `lily`
-   * メールアドレス： `lily@delectablebonsai.com`
+   * メールアドレス： `lily@clarityvisionsolutions.com`
    * ファーストネーム `リリー`
    * ラストネーム `ルイス`
    * 役職名 `アカウントマネージャー`
@@ -63,13 +63,13 @@ ITマネージャーとITスタッフはどの組織にも属していない。 
 
 次に、社内ブログをホストするために、セールス & マーケティング部門用の組織サイトを作成する。 詳しくは [組織サイト](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites) を参照。
 
-1. 組織に戻り、 **Delectable Bonsai** 組織をクリックします。
+1. 組織に戻り、 **Clarity Vision Solutions** 組織をクリックします。
 
-1. **オプション**(![Options icon](../../images/icon-actions.png)) 営業 & マーケティングの子組織をクリックし、 **編集** をクリックします。
+1. **オプション**(![Options icon](../../images/icon-actions.png)) の営業 & マーケティング子組織をクリックし、 **編集** をクリックする。
 
 1. 左のナビゲーションで、 **組織サイト** をクリックする。
    * トグルをクリックしてサイトを作成する。
-   ［* **保存**］ をクリックします。
+   * ［**保存**］ をクリックします。
 
    新しい組織サイトが作成された。
 

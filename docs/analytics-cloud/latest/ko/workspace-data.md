@@ -28,13 +28,13 @@ workspace-data/definitions.md
 
 ## 다음 단계
 
-- [API 액세스 관리](./workspace-data/managing-api-access.md)
-- [데이터 제어 및 개인정보 보호](./workspace-data/data-control-and-privacy.md)
-- [데이터 소스 관리](./workspace-data/managing-data-sources.md)
+* [API 액세스 관리](./workspace-data/managing-api-access.md)
+* [데이터 제어 및 개인정보 보호](./workspace-data/data-control-and-privacy.md)
+* [데이터 소스 관리](./workspace-data/managing-data-sources.md)
 
 ### 정의
 
-- [개인에 대한 정의](./workspace-data/definitions/definitions-for-individuals.md)
-- [이벤트에 대한 정의](./workspace-data/definitions/definitions-for-events.md)
-- [이벤트 속성 정의](./workspace-data/definitions/definitions-for-event-attributes.md)
-- [검색 쿼리 설정](./workspace-data/definitions/setting-a-search-query.md)
+* [개인에 대한 정의](./workspace-data/definitions/definitions-for-individuals.md)
+* [이벤트에 대한 정의](./workspace-data/definitions/definitions-for-events.md)
+* [이벤트 속성 정의](./workspace-data/definitions/definitions-for-event-attributes.md)
+* [검색 쿼리 설정](./workspace-data/definitions/setting-a-search-query.md)

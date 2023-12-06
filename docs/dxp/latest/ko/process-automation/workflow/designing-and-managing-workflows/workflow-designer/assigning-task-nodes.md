@@ -5,7 +5,7 @@
 작업 노드에는 사람들의 상호 작용이 필요합니다. 올바른 사람과 작업을 경고하고 연결하려면 각각 [알림](./configuring-workflow-actions-and-notifications.md#adding-notifications) 및 할당을 사용합니다. 다음에 작업 노드를 할당할 수 있습니다.
 
 - 특정 역할
-- [역할 유형](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) 의 여러 역할(조직, 사이트, 자산 라이브러리, 계정 또는 일반 역할 유형)
+* [역할 유형](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) 의 여러 역할(조직, 사이트, 자산 라이브러리, 계정 또는 일반 역할 유형)
 - 콘텐츠 제작자
 - 리소스 작업
 - 특정 사용자

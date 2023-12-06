@@ -19,4 +19,4 @@ Liferay 작업 공간의 `impl` 모듈에서 Gradle 작업 `buildREST` 을 사�
 
 ## 다음 단계
 
-- [REST 빌더로 API 생성 및 구현하기](./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md)
+* [REST 빌더로 API 생성 및 구현하기](./apis-with-rest-builder/producing-and-implementing-apis-with-rest-builder.md)

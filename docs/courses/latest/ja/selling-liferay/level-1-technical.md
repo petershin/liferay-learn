@@ -6,6 +6,8 @@ toc:
   - ./level-1-technical/experience-management.md
   - ./level-1-technical/basics-of-styling.md
   - ./level-1-technical/constructing-a-business-application.md
+  - ./level-1-technical/extending-liferay.md
+  - ./level-1-technical/deployment-strategies.md
 ---
 # 技術営業職レベル1
 
@@ -87,6 +89,18 @@ toc:
 
 このモジュールは、コードを書くことなく、既存のデモにビジネスアプリケーションを素早く追加する方法として、Liferay Objectsの使用を促進します。
 :::
+
+:::{grid-item-card} Liferay の拡張
+:link: ./level-1-technical/extending-liferay.md
+
+このモジュールでは、Liferayを拡張するために使用できるすべてのアプローチと、デモを実行しながらそれらについてどのように話すかを概説します。
+:::
+
+:::{grid-item-card} デプロイメント戦略
+:link: ./level-1-technical/deployment-strategies.md
+
+このモジュールでは、Liferay DXPで利用可能な3つの導入戦略について深く掘り下げ、どれがあなたの見込みに合っているかを判断するために始めるべき質問について説明します。
+:::
 ::::
 
 ## 近日公開
@@ -94,16 +108,6 @@ toc:
 残りのモジュールはまだ準備が整っていない！
 
 なお、直近のライブ・セッションの録画とプレゼンテーションのPDFは以下をご覧ください。
-
-**Liferayの拡張**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) をダウンロードしてください。
-
-**展開戦略**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-8-deployment-strategies) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies-pdf) をダウンロードしてください。
 
 **サクセスストーリー分析**
 

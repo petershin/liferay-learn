@@ -1,6 +1,11 @@
+---
+visibility:
+  - eMployee
+  - pArtner
+---
 # Liferay Experience Cloud SaaS 가격 - 소개 및 계획
 
-**한눈에**
+**한눈에 보기**
 
 * 2023년 Liferay Experience Cloud SaaS의 새로운 가격 모델
 * 새로운 가격은 Liferay Experience Cloud의 Endless Solutions를 지원합니다.
@@ -11,8 +16,8 @@
 * 상향식 성장을 지원하는 자유/취미 플랜 제안
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas)를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf)를 다운로드하세요.
 ```
 
 ## 2023년 가격 수정
@@ -50,7 +55,7 @@ Liferay의 레거시 가격 모델은 인스턴스 기반이었습니다. 이 �
 
 우리는 사용량 기반의 가격 모델을 가짐으로써 고객이 성장함에 따라 성장함으로써 고객이 더 성공할 때 Liferay와 파트너의 성공도 함께 성장할 수 있기를 원했습니다.
 
-**솔루션에 구애받지 마십시오**
+**솔루션에 구애받지 않음**
 
 가격 책정 모델은 고객이 구축할 수 있는 모든 유형의 솔루션에서도 작동해야 합니다. 우리가 구축하는 가속기 수에 관계없이 작동합니다.
 
@@ -68,7 +73,7 @@ Liferay는 페이지 조회수가 많은 공개 웹사이트로 사용될 수 �
 
 이 문제에 대한 해결책은 두 모델을 결합하여 페이지 조회수와 사용자 모두에 대한 지표를 확보하고 각 레버가 서로 독립적으로 작동하는 것이었습니다.
 
-![Liferay Experience Cloud Saas 가격은 사용자와 페이지 조회수를 모두 추적합니다.](./liferay-pricing-saas/images/01.png)
+![Liferay Experience Cloud SaaS Pricing tracks both users and page views.](./liferay-pricing-saas/images/01.png)
 
 ### 익명 페이지 조회수
 
@@ -102,7 +107,7 @@ Enterprise 플랜은 Liferay 고객에게 흔히 발생하는 비즈니스 핵�
 
 핵심 원칙은 모든 고객이 Pro, Business 또는 Enterprise 요금제 중 하나를 보유해야 한다는 것입니다.
 
-![Liferay Experience Cloud SaaS에는 Pro, Business, Enterprise의 세 가지 계획이 있으며 각각 서로 다른 수준의 사용량과 용량을 제공합니다.](./liferay-pricing-saas/images/02.png)
+![There are three plans for Liferay Experience Cloud SaaS - Pro, Business, and Enterprise, each offering different levels of usage and capacity.](./liferay-pricing-saas/images/02.png)
 
 **무료/취미 등급**
 
@@ -112,4 +117,4 @@ Enterprise 플랜은 Liferay 고객에게 흔히 발생하는 비즈니스 핵�
 
 취미 계획의 세부 사항과 일정은 아직 확정되지 않았습니다.
 
-[MALU, APV 및 이동 계획을 포함한 Liferay SaaS 가격에 대해 계속 알아보세요](./liferay-pricing-saas-malus-apvs.md).
+[MALU, APV 및 이동 계획](./liferay-pricing-saas-malus-apvs.md)을 통해 Liferay SaaS 가격에 대해 계속 알아보세요.

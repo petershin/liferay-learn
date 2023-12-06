@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 지속성과 측정
 
 ## 고집

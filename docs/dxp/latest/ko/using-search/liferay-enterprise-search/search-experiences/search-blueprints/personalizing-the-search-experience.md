@@ -44,9 +44,9 @@
 
 경우에 따라 사용자의 사이트를 기반으로 결과를 표시해야 할 수 있습니다. 이렇게 하려면 다음을 수행해야 합니다.
 
-- [사용자의 IP 주소( <https://ipstack.com>를 지리적으로 지정하는 서비스를 구성합니다.](#configure-the-ipstack-service)
-- [Liferay 자산의 지리적 사이트를 찾습니다.](#configure-a-geolocated-asset)
-- [지리적 사이트 서비스와 통신하는 요소로 Blueprint를 생성합니다.](#configure-a-geolocation-aware-blueprint)
+* [사용자의 IP 주소( <https://ipstack.com>를 지리적으로 지정하는 서비스를 구성합니다.](#configure-the-ipstack-service)
+* [Liferay 자산의 지리적 사이트를 찾습니다.](#configure-a-geolocated-asset)
+* [지리적 사이트 서비스와 통신하는 요소로 Blueprint를 생성합니다.](#configure-a-geolocation-aware-blueprint)
 
 ### Ipstack 서비스 구성
 

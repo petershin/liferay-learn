@@ -20,16 +20,16 @@ Liferay Forms 응용 프로그램에는 양식에 추가할 수 있는 많은 �
 모든 양식 필드에는 기본 및 고급의 두 가지 이상의 구성 유형이 있습니다. 많은 양식은 다음과 같은 것을 포함하는 기본 구성만으로 [생성](../creating-and-managing-forms/creating-forms.md) 될 수 있습니다.
 
 - 라벨
-- [자리 표시자 텍스트](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
+* [자리 표시자 텍스트](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
 - 필수(및 필수 메시지 내용)
-- [도움말 텍스트](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
+* [도움말 텍스트](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
 
 추가 필드별 기본 구성도 있습니다.
 
 ![목록에서 선택 필드에는 몇 가지 기본 구성이 있습니다.](./forms-field-types-reference/images/15.png)
 
 고급 구성에는 다음이 포함됩니다.
-- [미리 정의된 값](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
+* [미리 정의된 값](../creating-and-managing-forms/providing-help-text-and-predefined-values.md)
 - 검색 구성
 - 필드가 반복 가능한지 여부
 - 시스템/프로그래매틱 필드 참조
@@ -142,11 +142,11 @@ Liferay 7.4에 추가된 사용자는 한 필드에 날짜와 시간을 모두 �
 
 숫자 필드에 대한 몇 가지 흥미로운 고급 필드 설정이 있습니다.
 
-- [**Require Confirmation**](#field-confirmation) 은 사용자가 데이터를 올바르게 입력했는지 확인합니다.
-- [**유효성 검사](./validating-text-and-numeric-field-entries.md**) 사전 구성된 요구 사항에 대한 사용자 입력을 제한합니다. 
+* **[Require Confirmation](#field-confirmation)** 은 사용자가 데이터를 올바르게 입력했는지 확인합니다.
+* **[유효성 검사](./validating-text-and-numeric-field-entries.md)** 사전 구성된 요구 사항에 대한 사용자 입력을 제한합니다.
       ![숫자 입력을 확인합니다.](./forms-field-types-reference/images/25.png)
 
-- [**입력 마스크](./validating-text-and-numeric-field-entries.md#masking-numeric-fields**) 을 사용하면 사용자가 숫자 데이터를 입력할 때 올바른 형식을 표시할 수 있습니다.
+* **[입력 마스크](./validating-text-and-numeric-field-entries.md#masking-numeric-fields)** 을 사용하면 사용자가 숫자 데이터를 입력할 때 올바른 형식을 표시할 수 있습니다.
 
 ### 업로드
 
@@ -218,4 +218,4 @@ Liferay 7.4+의 검색 사이트 필드를 사용하여 양식 사용자로부�
 
 ## 관련 주제
 
-- [양식 만들기](./creating-forms.md)
+* [양식 만들기](./creating-forms.md)

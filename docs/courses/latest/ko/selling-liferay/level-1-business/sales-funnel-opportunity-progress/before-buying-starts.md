@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 구매가 시작되기 전
 
 **한눈에**

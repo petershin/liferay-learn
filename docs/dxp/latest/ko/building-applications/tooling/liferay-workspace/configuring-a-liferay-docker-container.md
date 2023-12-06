@@ -16,8 +16,8 @@
 
 Liferay의 Docker 이미지는 [Docker Hub](https://hub.docker.com/r/liferay/portal/tags) 에 있습니다. 두 가지 범주로 나뉩니다.
 
-- [라이프레이/포털](https://hub.docker.com/r/liferay/portal)
-- [라이프레이/DXP](https://hub.docker.com/r/liferay/dxp)
+* [라이프레이/포털](https://hub.docker.com/r/liferay/portal)
+* [라이프레이/DXP](https://hub.docker.com/r/liferay/dxp)
 
 1. 위의 링크를 사용하여 필요한 Liferay 컨테이너 버전을 찾으십시오.
 1. 컨테이너의 전체 태그 이름을 나열하는 `docker pull` 명령에 유의하십시오. 태그 이름은 `liferay/dxp:7.3.10-ga1` 또는 `liferay/portal:7.3.6-ga7`과 같습니다.

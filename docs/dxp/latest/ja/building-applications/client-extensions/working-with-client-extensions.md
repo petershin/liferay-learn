@@ -4,7 +4,7 @@
 
 クライアントエクステンションを使えば、OSGiモジュールをデプロイせずにLiferayを拡張できます。 従来のモジュール開発と同様に、クライアント拡張は [Liferay Workspace](../tooling/liferay-workspace.md) に置かれます。 学ぶことから始めよう
 
-* クライアント拡張機能の開発に必要なツール
+* クライアント・エクステンションの開発に必要なツール
 * 設定ファイルでクライアントの拡張子を定義する方法
 * クライアント・エクステンションの導入方法
 
@@ -43,7 +43,7 @@
 * 同じタイプのクライアント拡張（例：複数のバッチクライアント拡張）
 * バッチクライアント拡張機能による構成クライアント拡張機能
 * フロントエンドクライアント拡張機能によるクライアント拡張機能の構成
-* マイクロサービスクライアント拡張機能による構成クライアント拡張機能
+* マイクロサービスクライアント拡張による構成クライアント拡張
 
 互換性のないクライアント・エクステンションのグループ（例：フロントエンドとマイクロサービス）を持つプロジェクトのビルドがエラーで失敗する。
 
@@ -77,7 +77,7 @@
   into: [output location in archive]
 ```
 
-`assemble` 配列には以下の特性がある：
+`assemble` 配列は以下の特性を持つ：
 
 * `from`: クライアント拡張アーカイブにファイルをコピーするフォルダを指定します。
 
@@ -94,9 +94,9 @@
          into: static
    ```
 
-* `into`: 結果のLUFFAのどこに一致するリソースをコピーするかを指定する。
+* `into`: 結果のLUFFAのどこにマッチするリソースをコピーするかを指定する。
 
-   フロントエンドクライアント拡張用の静的リソースは、 `static/` ディレクトリにコピーする必要があります。 Liferayはこれらを静的リソースとしてセルフホストインスタンスで、またはLXCのコンテナから提供します。
+   フロントエンドクライアント拡張用の静的リソースは、 `static/` ディレクトリにコピーする必要があります。 Liferayはこれらを静的リソースとしてセルフホストインスタンスで、またはLXCのコンテナから提供する。
 
    バッチクライアント拡張用のJSONリソースは、 `batch/` ディレクトリにコピーする必要があります。
 
@@ -113,7 +113,7 @@
 
 ### 例 `アセンブル` ブロック
 
-`assemble` ブロックには複数の `from` アイテムを含めることができます：
+`assemble` ブロックに</code> の `を複数含めることができます：</p>
 
 ```yaml
 assemble:
@@ -142,13 +142,13 @@ assemble:
       into: static
 ```
 
-LUFFAの作成、構造、内容の詳細については、 [クライアント拡張機能のパッケージ化](./packaging-client-extensions.md) をご参照ください。
+LUFFAの作成、構造、内容の詳細については、 [クライアント拡張機能のパッケージ化](./packaging-client-extensions.md) を参照してください。
 
 ## Liferayインスタンスにデプロイする
 
 クライアント拡張機能は、配備可能な `.zip` アーカイブに組み込まれています。 各クライアント拡張機能のアーカイブには、クライアント拡張機能の設定を含むJSONファイルが含まれています。
 
-`.zip` ファイルをLiferayのインストールに適した場所に配置し、クライアント拡張機能をデプロイします。 正確なコマンドは、Liferayインスタンスがどのようにホストされているかによって異なります。
+`.zip` ファイルをLiferayのインストールに適した場所に配置し、クライアント拡張機能をデプロイします。 使用するコマンドは、Liferayインスタンスがどのようにホストされているかによって異なります。
 
 ### LXCへのデプロイ
 
@@ -160,7 +160,7 @@ LXC用のクライアント拡張機能をデプロイする、
    ../gradlew clean build
    ```
 
-   コンパイルされた `.zip` ファイルは、各プロジェクトの `dist/` フォルダーに作成されます。 プロジェクトを1つずつビルドするには、プロジェクトのフォルダからコマンドを実行する。
+   コンパイルされた `.zip` ファイルは、各プロジェクトの `dist/` フォルダーに作成されます。 一度に1つのプロジェクトをビルドするには、プロジェクトのフォルダからコマンドを実行する。
 
 1. このコマンドを実行して、各クライアント拡張機能を選択した環境にデプロイします：
 
@@ -185,6 +185,57 @@ zipファイルを手動でデプロイする必要がある場合は、以下�
 ```
 
 次に、各プロジェクトの `dist/` フォルダにあるアーカイブをサーバーの `[Liferay Home]/osgi/client-extensions/` フォルダにコピーします。
+
+## 状況に応じた情報
+
+クライアント拡張はポータブルです。ドメイン名、ネットワークアドレス、Liferayのドメインなど、環境固有の詳細をハードコードすべきではありません。 クライアント・エクステンションは、実行時にコンテキストに関する情報を見つけることができる。
+
+各クライアント拡張ワークロードには、重要な文脈依存メタデータを含む **ルートセット** が自動的に提供される。 このルートベースのアプローチにより、アプリケーションロジックは、どこで呼び出されたかに関係なく、一様にコンテキストに敏感な情報を取得することができる。 クライアントのエクステンション・プロジェクトをそこに向けるだけでいい。
+
+### ルート
+
+**ルート** は、キーと値のペアのセットを含むディレクトリ構造です。 ファイル名がキーで、ファイルの内容が値となる。 ディレクトリ構造は無視され、ディレクトリパスは環境変数の値となる。 [Kubernetes configMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-volume) と同じパターンです。
+
+使用する環境変数は、2種類のルートのいずれかを指すことができる：
+
+1. `LIFERAY_ROUTES_DXP`: デプロイされている **Liferay 仮想インスタンス** のコンテキスト依存のメタデータを持つルートへのディレクトリパス。
+
+   `LIFERAY_ROUTES_DXP` ルートの例です：
+
+   ```properties
+   .
+   # A newline-separated list of every domain belonging to the DXP virtual instance
+   ├── com.liferay.lxc.dxp.domains
+   # The primary domain ("Virtual Host" field) of the DXP virtual instance
+   ├── com.liferay.lxc.dxp.main.domain
+   # The protocol with which to communicate with DXP virtual instance (http or https)
+   └── com.liferay.lxc.dxp.server.protocol
+   ```
+
+1. `LIFERAY_ROUTES_CLIENT_EXTENSION`: **クライアント拡張プロジェクト** 自体のコンテキスト依存メタデータを含むルートへのディレクトリパス。
+
+   例については [OAuth Headless Server Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationheadlessserver) および [OAuth User Agent Client Extensions](configuration-client-extensions.md#the-special-behavior-of-oauthapplicationuseragent) を参照してください。
+
+### Liferayエクスペリエンスクラウドのルートへのポインティング
+
+Liferay Experience Cloud のコンテナでは、これらの環境変数が自動的に設定されます。 ルートは、環境変数が定義するパスでコンテナに自動的にマウントされる。
+
+### セルフ・ホスト環境におけるルートへのポインティング
+
+Liferay Workspace の `Exec`、 `JavaExec`、 `NodeExec` Gradle タスクを使用する場合、これらの環境変数にはデフォルト値が自動的に与えられます。 これらのデフォルト値を使用する：
+
+| **環境変数** | **デフォルト値** |
+|:--------------------------------- |:--------------------------------------------------------------- |
+| `LIFERAY_ROUTES_DXP`              | `[Liferay Home]/routes/default/dxp`                             |
+| `LIFERAY_ROUTES_CLIENT_EXTENSION` | `[Liferay Home]/routes/default/[Client extension project name]` |
+
+環境変数は、Liferayワークスペースの `liferay.workspace.home.dir` プロパティをLiferayのホームディレクトリに、 `default` をデフォルトのLiferay仮想インスタンスに使用します。 これらの環境変数を特定の仮想インスタンスIDで定義する代わりに、 `デフォルトの`。
+
+```{note}
+Liferayワークスペースのバージョンが9.0.2より前の場合は、同じ形式に従って自分で環境変数を定義する必要があります。
+```
+
+これら2つの環境変数は、クライアント拡張プロセスがメタデータにアクセスするために呼び出される際に提供されなければならない。
 
 ## 関連トピック
 

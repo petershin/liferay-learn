@@ -232,4 +232,4 @@ routes
 * [프런트 엔드 클라이언트 확장](../../front-end-client-extensions.md)
 * [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md)
 * [기본 맞춤 요소 만들기](./creating-a-basic-custom-element.md)
-* [원격 애플리케이션 UI 참조](../client-extensions-ui-reference.md)
+* [원격 애플리케이션 UI 참조](../remote-applications-ui-reference.md)

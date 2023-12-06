@@ -28,7 +28,7 @@ Elasticsearch 6.x는 Liferay 7.3+에서 지원되지 않습니다.
 
 업그레이드를 계획하기 전에 [검색 인프라 업그레이드](./upgrading-elasticsearch/upgrading-search-infrastructure.md)읽으십시오. 이전 Liferay/Elasticsearch 시스템을 지원되는 최신 검색 스택으로 업그레이드하는 데 필요한 단계에 대한 개요를 제공합니다. 항상 [Elasticsearch를 업그레이드하기 전에 [검색 색인을 백업하십시오](./upgrading-elasticsearch/upgrading-to-elasticsearch-8.md)](./upgrading-elasticsearch/backing-up-elasticsearch.md).
 
-- [검색 인프라 업그레이드](upgrading-elasticsearch/upgrading-search-infrastructure.md)
-- [Elasticsearch 8로 업그레이드](upgrading-elasticsearch/upgrading-to-elasticsearch-8.md)
-- [Elasticsearch 7로 업그레이드](upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)
-- [Elasticsearch 백업](upgrading-elasticsearch/backing-up-elasticsearch.md)
+* [검색 인프라 업그레이드](upgrading-elasticsearch/upgrading-search-infrastructure.md)
+* [Elasticsearch 8로 업그레이드](upgrading-elasticsearch/upgrading-to-elasticsearch-8.md)
+* [Elasticsearch 7로 업그레이드](upgrading-elasticsearch/upgrading-to-elasticsearch-7.md)
+* [Elasticsearch 백업](upgrading-elasticsearch/backing-up-elasticsearch.md)

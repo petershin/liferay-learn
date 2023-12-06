@@ -20,9 +20,9 @@
 
 **Content Performance**(![Content Performance](../../images/icon-analytics.png)) 버튼을 사용하여 Content Performance 도구를 열 수 있습니다.
 
-- [웹 콘텐츠, 문서 및 미디어 또는 블로그 항목과 같은 표시 페이지 템플릿](#accessing-the-content-performance-tool-from-content-based-on-a-display-page-template) 기반 콘텐츠.
-- [콘텐츠 또는 위젯 페이지](#accessing-the-content-performance-tool-from-content-or-widget-pages) (Liferay DXP 7.4+).
-- [콘텐츠 대시보드](#accessing-the-content-performance-tool-from-the-content-dashboard) .
+* [웹 콘텐츠, 문서 및 미디어 또는 블로그 항목과 같은 표시 페이지 템플릿](#accessing-the-content-performance-tool-from-content-based-on-a-display-page-template) 기반 콘텐츠.
+* [콘텐츠 또는 위젯 페이지](#accessing-the-content-performance-tool-from-content-or-widget-pages) (Liferay DXP 7.4+).
+* [콘텐츠 대시보드](#accessing-the-content-performance-tool-from-the-content-dashboard) .
 
 ### 디스플레이 페이지 템플릿을 기반으로 하는 콘텐츠에서 콘텐츠 성능 도구에 액세스
 
@@ -62,6 +62,6 @@
 
 ## 관련 정보
 
-- [콘텐츠 성능 도구를 사용하여 콘텐츠 지표 분석](./analyze-content-metrics-using-content-performance-tool.md)
-- [콘텐츠 대시보드 정보](../content-dashboard/about-the-content-dashboard.md)
-- [콘텐츠의 범주 및 어휘 정의](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)
+* [콘텐츠 성능 도구를 사용하여 콘텐츠 지표 분석](./analyze-content-metrics-using-content-performance-tool.md)
+* [콘텐츠 대시보드 정보](../content-dashboard/about-the-content-dashboard.md)
+* [콘텐츠의 범주 및 어휘 정의](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)

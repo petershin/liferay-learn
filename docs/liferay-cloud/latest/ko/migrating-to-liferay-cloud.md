@@ -30,14 +30,14 @@ Liferay Cloud는 고가용성, 확장성 및 성능을 위해 구축된 안전�
 
 Liferay Cloud로의 마이그레이션의 주요 단계는 다음과 같습니다:
 
-- [1단계: DXP 버전 일치하기](./migrating-to-liferay-cloud/matching-dxp-versions.md)
-- [2단계: 데이터 백업 파일 만들기](./migrating-to-liferay-cloud/creating-data-backup-files.md)
-- [3단계: 데이터 백업 업로드 및 복원](./migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.md)
-- [4단계: DXP 구성 및 사용자 지정 마이그레이션](./migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.md)
-- [5단계: 웹 서버 구성 마이그레이션](./migrating-to-liferay-cloud/migrating-web-server-configurations.md)
-- [6단계: 검색 구성 마이그레이션](./migrating-to-liferay-cloud/migrating-search-configurations.md)
-- [7단계: VPN 연결](./migrating-to-liferay-cloud/connecting-the-vpn.md)
-- [8단계: 마이그레이션 후 다음 단계](./migrating-to-liferay-cloud/next-steps-after-migration.md)
+* [1단계: DXP 버전 일치하기](./migrating-to-liferay-cloud/matching-dxp-versions.md)
+* [2단계: 데이터 백업 파일 만들기](./migrating-to-liferay-cloud/creating-data-backup-files.md)
+* [3단계: 데이터 백업 업로드 및 복원](./migrating-to-liferay-cloud/uploading-and-restoring-the-data-backup.md)
+* [4단계: DXP 구성 및 사용자 지정 마이그레이션](./migrating-to-liferay-cloud/migrating-dxp-configurations-and-customizations.md)
+* [5단계: 웹 서버 구성 마이그레이션](./migrating-to-liferay-cloud/migrating-web-server-configurations.md)
+* [6단계: 검색 구성 마이그레이션](./migrating-to-liferay-cloud/migrating-search-configurations.md)
+* [7단계: VPN 연결](./migrating-to-liferay-cloud/connecting-the-vpn.md)
+* [8단계: 마이그레이션 후 다음 단계](./migrating-to-liferay-cloud/next-steps-after-migration.md)
 
 ## Liferay Cloud로 마이그레이션해야 하는 이유는 무엇인가요?
 

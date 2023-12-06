@@ -33,6 +33,6 @@
 
 ## 관련 정보
 
-- [휴지통 개요](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md)
-- [휴지통 구성](../../../content-authoring-and-management/recycle-bin/configuring-the-recycle-bin.md)
-- [사이트 설정 UI 참조](../../site-settings/site-settings-ui-reference.md)
+* [휴지통 개요](../../../content-authoring-and-management/recycle-bin/recycle-bin-overview.md)
+* [휴지통 구성](../../../content-authoring-and-management/recycle-bin/configuring-the-recycle-bin.md)
+* [사이트 설정 UI 참조](../../site-settings/site-settings-ui-reference.md)

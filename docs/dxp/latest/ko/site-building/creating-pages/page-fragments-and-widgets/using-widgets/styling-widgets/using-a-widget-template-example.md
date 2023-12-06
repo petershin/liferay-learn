@@ -26,5 +26,5 @@
 
 ## 관련 주제
 
-- [템플릿에 위젯 포함](../../../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md)
-- [위젯 템플릿으로 위젯 스타일 지정](../../../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)
+* [템플릿에 위젯 포함](../../../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md)
+* [위젯 템플릿으로 위젯 스타일 지정](../../../../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md)

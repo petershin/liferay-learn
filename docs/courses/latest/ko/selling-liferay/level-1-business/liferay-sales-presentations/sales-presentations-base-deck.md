@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 기본 영업 데크 구조
 
 **한눈에**

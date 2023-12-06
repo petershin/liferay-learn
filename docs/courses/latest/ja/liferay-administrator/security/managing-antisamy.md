@@ -2,7 +2,7 @@
 
 LiferayではデフォルトでAntiSamyサニタイザーが有効になっています。 このサニタイザーは、ユーザーが様々なLiferayアプリケーションでHTMLやCSSを使用する際に、悪意のあるJavaScriptコードがシステムに注入されるのを防ぎます。 詳しくは [AntiSamy](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/using-antisamy) 。
 
-悪意のある活動を防ぐため、「美味しんぼ」のIT部門は、ウェブコンテンツにJavaScriptコードを設置することを禁止することを決定した。 以下、その様子をご覧いただきたい。
+悪意のある活動を防止するため、クラリティ ビジョン ソリューションズの IT 部門は、ウェブ コンテンツに JavaScript コードを配置することを禁止することを決定しました。 以下、その様子をご覧いただきたい。
 
 ## AntiSamyの構成
 
@@ -50,7 +50,7 @@ LiferayではデフォルトでAntiSamyサニタイザーが有効になって�
    * セキュリティセクションの下にある **セキュリティツール** をクリックする。
    * 左のナビゲーションで、 **AntiSamy Sanitizer** をクリックします。
    * マイナスボタンをクリックして、 `com.liferay.journal.model.JournalArticle` ホワイトリストエントリーを削除します。
-   ［* **保存**］ をクリックします。
+   * ［**保存**］ をクリックします。
 
 1. 除菌剤が効果を発揮するのを見る。
 
@@ -59,7 +59,7 @@ LiferayではデフォルトでAntiSamyサニタイザーが有効になって�
    * 以前に作成したフーウェブコンテンツをクリックします。
    * **Source**(![Code icon](../../images/icon-code.png)) をクリックしてコードビューに切り替える。
    * 内容に少し変更を加える。 例えば、 `Hello World!` を `Hello Foo！`.
-   ［* **Publish**］ をクリックします。
+   * ［**Publish**］ をクリックします。
    * クリックしてウェブコンテンツに戻る。 Javascriptのコードが削除され、コンテンツがサニタイズされていることを確認してください。
 
    ![ウェブコンテンツはAntiSamyによってサニタイズされます。](./managing-antisamy/images/02.png)

@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Liferay DXP 자체 호스팅 가격
 
 **한눈에**

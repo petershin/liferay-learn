@@ -107,5 +107,5 @@ LAR 파일이 업로드되고 검토를 위해 표시됩니다. **계속** 클�
 
 ## 관련 주제
 
-- [위젯 간 통신](./communication-between-widgets.md)
-- [사이트 페이지 및 콘텐츠 내보내기/가져오기](../../../../sites/exporting-importing-site-pages-and-content.md)
+* [위젯 간 통신](./communication-between-widgets.md)
+* [사이트 페이지 및 콘텐츠 내보내기/가져오기](../../../../sites/exporting-importing-site-pages-and-content.md)

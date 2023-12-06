@@ -24,8 +24,7 @@ curl localhost:8080/o/headless-admin-user/v1.0/sites/20122
 
 1. デフォルトの認証情報を使用してサインインします。
 
-   **ユーザ名：** `test@liferay.com`  
-   **パスワード：** `test`
+   **ユーザー名：** `test@liferay.com` **パスワード：** `test`
 
 1. ［グローバルメニュー］ &rarr; ［コントロールパネル］ &rarr; ［セキュリティ］ &rarr; ［サービス・アクセス・ポリシー］に移動します。
 
@@ -44,6 +43,10 @@ curl localhost:8080/o/headless-admin-user/v1.0/sites/20122
 1. 上のエラーメッセージからメソッドシグネチャをコピー＆ペーストします：`com.liferay.headless.admin.user.internal.resource.v1_0.SiteResourceImpl#getSite`
 
 1. ［**Save**］ をクリックします。
+
+```{note}
+ポリシーの中で、Liferayの内部サービスレイヤークラスの代わりにLiferayの外部ヘッドレスAPIクラスを使うようにしてください。
+```
 
 ![サービス・アクセス・ポリシーは、APIへのアクセスのルールを定義します。](./making-unauthenticated-requests/images/01.png)
 

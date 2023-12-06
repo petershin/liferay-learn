@@ -3,10 +3,13 @@ toc:
   - ./liferay-sales-presentations/sales-presentations-new-approach.md
   - ./liferay-sales-presentations/sales-presentations-base-deck.md
   - ./liferay-sales-presentations/sales-presentations-expansion-deck.md
+visibility:
+  - Employee
+  - Partner
 ---
 # Liferay 영업 프레젠테이션 및 이를 마스터하는 방법
 
-**한눈에**
+**한눈에 보기**
 
 * 새로운 영업 자료는 브랜드 메시지와 일치합니다.
 * 각 업종에 대해 여러 데크를 사용할 수 있습니다.
@@ -23,8 +26,8 @@ toc:
 포함된 정보는 계정 담당자 및 고객 성공 관리자에게 가장 유용해야 합니다. 이를 통해 적절하고 가장 영향력 있는 영업 홍보를 준비하고 전달할 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) 을 확인하세요.
-* 라이브에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) 을 다운로드하세요. 작업장.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) 보기 .
+* 에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf)를 다운로드하세요. 라이브 워크숍.
 ```
 
 ## 기존 영업 덱의 과제
@@ -93,7 +96,7 @@ Liferay에는 다양한 문제를 해결하는 데 사용할 수 있는 기능�
 
 ## 비즈니스 가치에 맞춰 기능 조정
 
-![세 가지 일반적인 고객 목표는 고객 만족도 향상, 고객 확보 증대, 수익 증대입니다.](./liferay-sales-presentations/images/01.png)
+![Three common client objectives are to improve customer satisfaction, grow customer acquisition, and increase revenue.](./liferay-sales-presentations/images/01.png)
 
 고객이 솔루션에서 기대하는 비즈니스 결과에 대한 더 깊은 이해가 이루어지면 Liferay의 기능이 해당 목표에 맞춰질 수 있습니다. 세 가지 공통 목표는 다음과 같습니다.
 
@@ -130,4 +133,4 @@ Liferay에는 다양한 문제를 해결하는 데 사용할 수 있는 기능�
 
 Liferay의 모든 특징과 기능은 솔루션 구축의 중요한 부분이지만 먼저 각 잠재 고객이 직면하고 있는 비즈니스 과제와 원하는 비즈니스 결과에 초점을 맞추는 것이 중요합니다.  이러한 과제와 결과가 알려지면 해당 과제를 해결하고 결과를 달성하는 방법에 관심을 돌릴 수 있습니다.
 
-다음: Liferay의 영업 자료에 대한 새로운 접근 방식 [새로운 접근 방식](./liferay-sales-presentations/sales-presentations-new-approach.md) 이해합니다.
+다음: Liferay 영업 자료에 대한 [새로운 접근 방식](./liferay-sales-presentations/sales-presentations-new-approach.md)을 이해하세요.

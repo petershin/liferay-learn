@@ -131,7 +131,7 @@
 
 ## 관련 내용
 
-- [양식 게시](../creating-and-managing-forms/creating-forms.md#publishing-a-form)
-- [데이터 공급자 개요](../data-providers/data-providers-overview.md)
-- [자동 채우기 규칙 사용](./using-the-autofill-rule.md)
-- [양식 필드 유형 참조](../creating-and-managing-forms/forms-field-types-reference.md)
+* [양식 게시](../creating-and-managing-forms/creating-forms.md#publishing-a-form)
+* [데이터 공급자 개요](../data-providers/data-providers-overview.md)
+* [자동 채우기 규칙 사용](./using-the-autofill-rule.md)
+* [양식 필드 유형 참조](../creating-and-managing-forms/forms-field-types-reference.md)

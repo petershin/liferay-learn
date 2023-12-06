@@ -86,6 +86,6 @@ Liferay DXP 7.4부터 슬라이더 및 탭 조각은 해당 요소를 순서대�
 
 ## 관련 정보
 
-- [조각 툴킷 사용](./using-the-fragments-toolkit.md)
-- [조각 편집기 사용](./using-the-fragments-editor.md)
-- [조각 개발](./developing-fragments-intro.md)
+* [조각 툴킷 사용](./using-the-fragments-toolkit.md)
+* [조각 편집기 사용](./using-the-fragments-editor.md)
+* [조각 개발](./developing-fragments-intro.md)

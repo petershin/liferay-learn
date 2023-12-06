@@ -78,6 +78,6 @@ Asset Publisher를 통해 완벽하고 선별된 콘텐츠 목록을 만들기 �
 
 ## 관련 정보
 
-- [컬렉션 만들기](./creating-collections.md)
-- [컬렉션 표시](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md)
-- [컬렉션 개인화](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)
+* [컬렉션 만들기](./creating-collections.md)
+* [컬렉션 표시](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md)
+* [컬렉션 개인화](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)

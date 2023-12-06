@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Liferay Experience Cloud SaaS 가격 - 추가 기능 및 향후 기능
 
 **한눈에**

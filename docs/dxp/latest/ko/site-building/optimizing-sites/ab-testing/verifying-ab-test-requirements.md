@@ -23,7 +23,7 @@
 
 ## 관련 정보
 
-- [A/B 테스트](./ab-testing.md)
-- [A/B 테스트 만들기](./creating-ab-tests.md)
-- [A/B 테스트 실행 및 모니터링](./running-and-monitoring-ab-tests)
-- [A/B 테스트 결과 검토 및 테스트 변형 게시](./reviewing-ab-test-results-and-publishing-test-variants.md)
+* [A/B 테스트](./ab-testing.md)
+* [A/B 테스트 만들기](./creating-ab-tests.md)
+* [A/B 테스트 실행 및 모니터링](./running-and-monitoring-ab-tests)
+* [A/B 테스트 결과 검토 및 테스트 변형 게시](./reviewing-ab-test-results-and-publishing-test-variants.md)

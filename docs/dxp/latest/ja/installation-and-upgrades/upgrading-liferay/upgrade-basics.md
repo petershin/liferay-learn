@@ -1,5 +1,6 @@
 ---
 toc:
+  - ./upgrade-basics/upgrading-via-auto-upgrade.md
   - ./upgrade-basics/upgrading-via-docker.md
   - ./upgrade-basics/using-the-database-upgrade-tool.md
   - ./upgrade-basics/post-upgrade-considerations.md
@@ -9,12 +10,13 @@ toc:
 ```{toctree}
 :maxdepth: 2
 
+upgrade-basics/upgrading-via-auto-upgrade.md
 upgrade-basics/upgrading-via-docker.md
 upgrade-basics/using-the-database-upgrade-tool.md
 upgrade-basics/post-upgrade-considerations.md
 ```
 
-Liferayのツールや説明書は、DXPやポータル環境を安全かつ迅速にアップグレードするのに役立ちます。 小さなデータセットを持つ非クラスター環境などは、[Dockerイメージ](./upgrade-basics/upgrading-via-docker.md)を使ってアップグレードすることができます。 複雑で、より大きなデータセットを持つ、または多くのカスタマイズがあるDXP環境およびポータル環境は、[データベースアップグレードツール](./upgrade-basics/using-the-database-upgrade-tool.md)を使用してアップグレードします。
+Liferayのツールや説明書は、DXPやポータル環境を安全かつ迅速にアップグレードするのに役立ちます。 小さなデータセットを持つ非クラスター環境などは、[Dockerイメージ](./upgrade-basics/upgrading-via-docker.md)を使ってアップグレードすることができます。 複雑で、より大きなデータセットを持つ、または多くのカスタマイズがあるDXP環境およびポータル環境は、[データベースアップグレードツール](./upgrade-basics/using-the-database-upgrade-tool.md)を使用してアップグレードします。 [自動アップグレード](./upgrade-basics/upgrading-via-auto-upgrade.md) は、起動時に有効にすることもできます。
 
 ```{warning}
 アップグレードする前に、**必ず**データベースとインストールを[バックアップ](../../maintaining-a-liferay-installation/backing-up.md)してください。 バックアップコピーでアップグレードプロセスをテストすることをお勧めします。
@@ -131,7 +133,7 @@ Liferayサーバーに不要なインスタンス、サイト、ページ、ま�
 
 Liferayデータベースをアップグレードするには、2つの方法があります。
 
-* [Dockerによるアップグレード](./upgrade-basics/upgrading-via-docker.md)では、Dockerイメージを起動するためのコマンドに自動アップグレードパラメータを渡します。 イメージはデータベースを更新し、アップグレードされたデータベースを使用して起動します。
+* [自動アップグレードによるアップグレード](./upgrade-basics/upgrading-via-auto-upgrade.md) は、起動中にアップグレードが行われるように、ポータルのプロパティで有効にすることができます。 Dockerイメージを使用したアップグレードの例については、 [Dockerによるアップグレード](./upgrade-basics/upgrading-via-docker.md) を参照してください。 イメージはデータベースを更新し、アップグレードされたデータベースを使用して起動します。
 
 * [データベースアップグレードツールの使用](./upgrade-basics/using-the-database-upgrade-tool.md) 。 アップグレードツールは、Liferayインスタンスから切り離された状態でLiferayデータベースを更新するためのクライアントプログラムです。 これにより、アップグレードプロセスに重点が置かれ、アップグレード操作のための[データベースの調整](./upgrade-stability-and-performance/database-tuning-for-upgrades.md)、[不要なデータのプルーニング](./upgrade-stability-and-performance/database-pruning-for-faster-upgrades.md)が容易になり、データベースのアップグレードが迅速化されます。
 
@@ -153,7 +155,7 @@ Liferayデータベースをアップグレードするには、2つの方法が
 
 アップグレードコンポーネントについて理解したので、Liferayインスタンスをアップグレードできます。 データベースをアップグレードする前に、現在のインストールで準備作業を必ず行ってください。 カスタムプラグインコードのアップグレードとデータベースのアップグレードを並行して実行するのが一般的です。 データベースのアップグレードは最初に開始する一般的なタスクであるため、以下に2つの方法へのリンクを示します。
 
-* [Docker経由のアップグレード](./upgrade-basics/upgrading-via-docker.md)
+* [オートアップグレードによるアップグレード](./upgrade-basics/upgrading-via-auto-upgrade.md)
 * [データベースアップグレードツールの使用](./upgrade-basics/using-the-database-upgrade-tool.md)
 
 さらに、アップグレードに関連する以下のアップグレードシナリオを参照してください。

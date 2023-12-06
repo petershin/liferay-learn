@@ -79,6 +79,6 @@
 
 ## 관련 정보
 
-- [콘텐츠의 범주 및 어휘 정의](./defining-categories-and-vocabularies-for-content.md)
-- [콘텐츠 태깅 및 태그 관리](./tagging-content-and-managing-tags.md)
-- [컨텐츠 대시보드](../content-dashboard/about-the-content-dashboard.md)
+* [콘텐츠의 범주 및 어휘 정의](./defining-categories-and-vocabularies-for-content.md)
+* [콘텐츠 태깅 및 태그 관리](./tagging-content-and-managing-tags.md)
+* [컨텐츠 대시보드](../content-dashboard/about-the-content-dashboard.md)

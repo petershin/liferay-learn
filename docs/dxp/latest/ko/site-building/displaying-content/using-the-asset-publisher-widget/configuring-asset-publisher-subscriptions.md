@@ -57,6 +57,6 @@ RSS 피드는 Liferay Portal 7.2 이상에서는 더 이상 사용되지 않으�
 
 ## 관련 정보
 
-- [메일 구성](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
-- [자산 게시자 위젯을 사용하여 자산 표시](./displaying-assets-using-the-asset-publisher-widget.md)
-- [자산 게시자 표시 설정 구성](./configuring-asset-publisher-display-settings.md)
+* [메일 구성](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
+* [자산 게시자 위젯을 사용하여 자산 표시](./displaying-assets-using-the-asset-publisher-widget.md)
+* [자산 게시자 표시 설정 구성](./configuring-asset-publisher-display-settings.md)

@@ -1,11 +1,11 @@
 ---
 toc:
-- ./tooling/developer-tools-overview.md
-- ./tooling/liferay-workspace.md
-- ./tooling/blade-cli.md
-- ./tooling/poshi-test-automation.md
-- ./tooling/other-tools.md
-- ./tooling/reference.md
+  - ./tooling/developer-tools-overview.md
+  - ./tooling/liferay-workspace.md
+  - ./tooling/blade-cli.md
+  - ./tooling/poshi-test-automation.md
+  - ./tooling/other-tools.md
+  - ./tooling/reference.md
 ---
 # 압형
 

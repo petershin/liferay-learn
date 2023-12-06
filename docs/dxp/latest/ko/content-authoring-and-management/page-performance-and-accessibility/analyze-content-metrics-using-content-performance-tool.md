@@ -14,9 +14,9 @@
 
 콘텐츠 성능 도구에는 세 가지 영역이 있습니다.
 
-- [콘텐츠 정보](#reviewing-content-information)
-- [약속](#analyzing-content-engagement)
-- [트래픽 채널](#analyzing-traffic-channels)
+* [콘텐츠 정보](#reviewing-content-information)
+* [약속](#analyzing-content-engagement)
+* [트래픽 채널](#analyzing-traffic-channels)
 
 ## 콘텐츠 정보 검토
 
@@ -95,6 +95,6 @@ Engagement 차트가 특정 기간 동안 0 값을 표시하면 해당 기간 �
 
 ## 관련 정보
 
-- [콘텐츠 성능 도구 정보](./about-the-content-performance-tool.md)
-- [콘텐츠 대시보드 정보](../content-dashboard/about-the-content-dashboard.md)
-- [콘텐츠의 범주 및 어휘 정의](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)
+* [콘텐츠 성능 도구 정보](./about-the-content-performance-tool.md)
+* [콘텐츠 대시보드 정보](../content-dashboard/about-the-content-dashboard.md)
+* [콘텐츠의 범주 및 어휘 정의](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)

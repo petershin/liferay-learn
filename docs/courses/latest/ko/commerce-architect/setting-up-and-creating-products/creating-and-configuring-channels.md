@@ -1,28 +1,28 @@
 # 채널 생성 및 구성
 
-채널은 고객 포털, B2B 마켓플레이스, 백오피스 전화 판매 등 제품을 판매하기 위한 수단입니다. 해당 사이트에서 제품을 판매하려면 해당 사이트에 채널을 연결해야 합니다. Delectable Bonsai는 B2C 고객을 위한 온라인 매장과 B2B 고객을 위한 온라인 매장을 운영하고 있습니다. 이를 지원하려면 Kyle이 두 개의 채널을 만들고 해당 사이트에 연결하도록 도와야 합니다.
+채널은 고객 포털, B2B 마켓플레이스, 백오피스 전화 판매 등 제품을 판매하기 위한 수단입니다. 해당 사이트에서 제품을 판매하려면 해당 사이트에 채널을 연결해야 합니다. Clarity는 B2C 고객을 위한 온라인 매장과 B2B 고객을 위한 온라인 매장을 운영하고 있습니다. 이를 지원하려면 Kyle이 두 개의 채널을 만들고 해당 사이트에 연결하도록 도와야 합니다.
 
 채널을 생성하려면,
 
-1. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **Commerce** → **Channels** 으로 이동합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../../images/icon-applications-menu.png))를 열고 **커머스** → **채널** 로 이동합니다.
 
-1. **Add**(![Add](../../images/icon-add.png))을 클릭하고 다음 세부 정보를 입력합니다.
+1. **추가**(![Add](../../images/icon-add.png))를 클릭하고 다음 세부 정보를 입력합니다.
 
-   **이름: 맛있는 분재 B2C** 개
+   **이름:** 클래리티 B2C
 
    **통화:** USD
 
    **유형:** 사이트
 
-   ![채널의 이름, 통화, 유형을 입력합니다.](./creating-and-configuring-channels/images/01.png)
+   ![Enter the name, currency, and type for the channel.](./creating-and-configuring-channels/images/01.png)
 
-1. **추가** 클릭합니다.
+1. **추가** 를 클릭하세요.
 
 그러면 B2C 스토어를 위한 새 채널이 생성됩니다. 다음 정보를 사용하여 단계를 반복하여 B2B 채널을 만듭니다.
 
-| 이름         | 통화  | 유형  |
-|:---------- |:--- |:--- |
-| 맛있는 분재 B2B | USD | 사이트 |
+| 이름      | 통화  | 유형  |
+| :------ | :-- | :-- |
+| 선명도 B2B | USD | 사이트 |
 
 두 채널을 모두 생성한 후 해당 Liferay 사이트에 연결하고 구성해야 합니다.
 
@@ -30,113 +30,113 @@
 
 B2C 채널의 경우 결제 방법, 배송 방법을 구성하고 사이트 유형이 B2C로 설정되어 있는지 확인합니다.
 
-1. 세부사항 섹션에서 상거래 사이트 유형을 **B2C** 로 설정하십시오. [사이트 유형](/w/commerce/starting-a-store/sites-and-site-types#site-types) 이 B2C인 경우 사이트의 모든 계정은 개인 계정이어야 합니다.
+1. 세부 정보 섹션에서 상거래 사이트 유형을 **B2C** 로 설정합니다. [사이트 유형](/w/commerce/starting-a-store/sites-and-site-types#site-types)이 B2C인 경우 사이트의 모든 계정은 개인 계정이어야 합니다.
 
-1. **Type** 탭을 선택하고 **Select Site** 클릭합니다.
+1. **유형** 탭을 선택하고 **사이트 선택** 을 클릭하세요.
 
-1. **맛있는 분재 B2C** 사이트를 선택하세요
+1. **Clarity B2C** 사이트를 선택하세요
 
-1. **저장** 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 이제 이 채널을 사용하여 사이트에서 고객 주문을 수락할 수 있습니다.
 
-Delectable Bonsai는 B2C 고객에게 PayPal로 결제할 수 있는 옵션을 제공합니다. 고객 주문은 정액 배송 방법을 사용하여 배송됩니다. Liferay의 기본 결제 및 배송 방법을 사용하여 이 두 가지를 모두 구현할 수 있습니다.
+Clarity는 B2C 고객에게 PayPal로 결제할 수 있는 옵션을 제공합니다. 고객 주문은 정액 배송 방법을 사용하여 배송됩니다. Liferay의 기본 결제 및 배송 방법을 사용하여 이 두 가지를 모두 구현할 수 있습니다.
 
 ### PayPal 구성
 
-1. [PayPal 개발자 대시보드](https://developer.paypal.com/dashboard/) 방문하여 계정을 등록하세요.
+1. [PayPal 개발자 대시보드](https://developer.paypal.com/dashboard/)를 방문하여 계정을 등록하세요.
 
-1. **샌드박스** 모드로 전환합니다.
+1. **샌드박스** 모드로 전환하세요.
 
-   ![토글을 사용하여 샌드박스 모드로 전환합니다.](./creating-and-configuring-channels/images/02.png)
+   ![Switch to sandbox mode using the toggle.](./creating-and-configuring-channels/images/02.png)
 
-1. **앱 & 자격 증명** 탭으로 이동합니다.
+1. **앱 및 자격 증명** 탭으로 이동합니다.
 
-1. **앱 만들기** 클릭하세요.
+1. **앱 만들기** 를 클릭하세요.
 
-1. 이름으로 **Delectable Bonsai** 입력하고 유형을 **Merchant** 으로 설정합니다.
+1. 이름으로 **Clarity** 를 입력하고 유형을 **Merchant** 로 설정합니다.
 
-1. **앱 만들기** 클릭하세요.
+1. **앱 만들기** 를 클릭하세요.
 
 그러면 이름, 클라이언트 ID, 비밀 키가 포함된 앱이 생성됩니다.
 
 1. 클라이언트 ID와 비밀 키를 복사합니다.
 
-   ![클라이언트 ID와 비밀 키를 복사합니다.](./creating-and-configuring-channels/images/03.png)
+   ![Copy the client ID and secret key.](./creating-and-configuring-channels/images/03.png)
 
-1. 이제 Liferay 인스턴스로 돌아갑니다. **글로벌 메뉴**(![Global Menu](../../images/icon-applications-menu.png))을 열고 **Commerce** → **Channels** 으로 이동합니다.
+1. 이제 Liferay 인스턴스로 돌아갑니다. **글로벌 메뉴**(![글로벌 메뉴](../../images/icon-applications-menu.png))를 열고 **커머스** → **채널** 로 이동합니다.
 
-1. **맛있는 분재 B2C** 선택하세요.
+1. **Clarity B2C** 를 선택하세요.
 
-1. **결제 방법** 섹션까지 아래로 스크롤한 후 **PayPal** 선택합니다.
+1. **결제 방법** 섹션까지 아래로 스크롤하고 **PayPal** 을 선택합니다.
 
 1. 토글을 사용하여 활성화하십시오.
 
-1. **저장** 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 1. **구성** 탭으로 이동하여 PayPal에서 복사한 클라이언트 ID와 비밀 키를 붙여넣습니다.
 
-1. **모드** 을 샌드박스로 설정합니다.
+1. **모드** 를 샌드박스로 설정하세요.
 
-1. **저장** 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ### 정액 배송 방법 구성
 
-1. 배송 방법 섹션으로 이동하여 **균일 요금** 선택하세요.
+1. 배송 방법 섹션으로 이동하여 **정액 요금** 을 선택하세요.
 
 1. 토글을 사용하여 활성화하십시오.
 
-1. **저장** 클릭하세요.
+1. **저장** 을 클릭하세요.
 
-1. **배송 옵션** 페이지로 이동하여 ** (![Add](../../images/icon-add.png)) 버튼을 클릭하세요.
+1. **배송 옵션** 페이지로 이동하여 **추가**(![Add](../../images/icon-add.png)) 버튼을 클릭하세요.
 
-1. 이름을 **Regular Shipping** 로 입력하고 금액을 **$9.99** 으로 입력합니다.
+1. 이름을 **일반 배송** 으로, 금액을 **$4.99** 로 입력하세요.
 
-1. **저장** 클릭하세요.
+1. **저장** 을 클릭하세요.
 
-1. **Add**(![Add](../../images/icon-add.png))을 한 번 더 클릭하세요.
+1. **추가**(![Add](../../images/icon-add.png))를 한 번 더 클릭하세요.
 
-1. 이름을 **Express Shipping** 로 입력하고 금액을 **$12.99** 으로 입력합니다.
+1. 이름을 **Express Shipping** 으로 입력하고 금액을 **$9.99** 로 입력합니다.
 
-1. **저장** 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## B2B 채널 구성
 
 B2B 채널의 경우 결제 방법, 배송 방법을 구성하고 사이트 유형이 B2B로 설정되어 있는지 확인합니다.
 
-1. 세부사항 섹션에서 상거래 사이트 유형을 **B2B** 로 설정하십시오. [사이트 유형](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) 이 B2B인 경우 사이트의 모든 계정은 비즈니스 계정이어야 합니다.
+1. 세부 정보 섹션에서 상거래 사이트 유형을 **B2B** 로 설정합니다. [사이트 유형](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types)이 B2B인 경우, 사이트는 비즈니스 계정이어야 합니다.
 
-1. **Type** 탭을 선택하고 **Select Site** 클릭합니다.
+1. **유형** 탭을 선택하고 **사이트 선택** 을 클릭하세요.
 
-1. **맛있는 분재 B2B** 사이트를 선택하세요.
+1. **Clarity B2B** 사이트를 선택하세요.
 
-1. **저장** 클릭하세요.
+1. **저장** 을 클릭하세요.
 
-Delectable Bonsai는 B2B 고객에게 우편환으로 결제할 수 있는 옵션을 제공합니다. 배송 중량을 기준으로 계산되는 가변 배송료를 사용하여 배송됩니다. Liferay의 기본 결제 및 배송 방법을 사용하여 이 두 가지를 모두 구현할 수 있습니다.
+Clarity는 B2B 고객에게 우편환으로 결제할 수 있는 옵션을 제공합니다. 배송 중량을 기준으로 계산되는 가변 배송료를 사용하여 배송됩니다. Liferay의 기본 결제 및 배송 방법을 사용하여 이 두 가지를 모두 구현할 수 있습니다.
 
 ### 우편환 구성
 
-1. 결제 방법 섹션으로 이동하여 **우편환** 선택하세요.
+1. 결제 방법 섹션으로 이동하여 **우편환** 을 선택하세요.
 
 1. 토글을 사용하여 활성화하십시오.
 
-1. **저장** 클릭하세요.
+1. **저장** 을 클릭하세요.
 
    이는 모든 주문 유형에 적합해야 합니다.
 
 ### 변동률 배송 방법 구성
 
-1. 이제 배송 방법 섹션으로 이동하여 **변동율** 선택하세요.
+1. 이제 배송 방법 섹션으로 이동하여 **가변 요금** 을 선택하세요.
 
 1. 토글을 사용하여 활성화하십시오.
 
-1. **저장** 클릭하세요.
+1. **저장** 을 클릭하세요.
 
-1. 배송 옵션 페이지로 이동하여 ** 추가(![Add](../../images/icon-add.png))를 클릭하세요.
+1. 배송 옵션 페이지로 이동하여 **추가**(![Add](../../images/icon-add.png))를 클릭하세요.
 
-1. 이름을 **Standard Shipping** 로 입력하고 **Save** 클릭합니다.
+1. 이름을 **Standard Shipping** 으로 입력하고 **저장** 을 클릭하세요.
 
-1. **배송 옵션 설정** 로 이동하여 **추가**(![Add](../../images/icon-add.png))을 클릭합니다.
+1. **배송 옵션 설정** 으로 이동하여 **추가**(![Add](../../images/icon-add.png))를 클릭하세요.
 
 1. 드롭다운에서 이전에 생성한 배송 옵션을 선택합니다.
 
@@ -144,20 +144,20 @@ Delectable Bonsai는 B2B 고객에게 우편환으로 결제할 수 있는 옵�
 
    **배송 옵션:** 표준 배송
 
-   **무게:** 0.0
+   **가중치:** 0.0
 
-   **중량:** 10.0
+   **가중치:** 10.0
 
    **고정 가격:** 4.99
 
    **중량 단위당 가격:** 2.99
 
-   ![사용 가능한 변동 요금 배송 등급을 구성합니다.](./creating-and-configuring-channels/images/04.png)
+   ![Configure the available tiers of variable rate shipping.](./creating-and-configuring-channels/images/04.png)
 
 1. 다음 세부정보를 사용하여 이를 두 번 더 반복합니다.
 
    | 배송 옵션 | 무게 시작 | 무게 대상 | 고정 가격 | 중량당 가격 |
-   |:----- |:----- |:----- |:----- |:------ |
+   | :---- | :---- | :---- | :---- | :----- |
    | 표준 배송 | 10.01 | 20.0  | 5.99  | 3.99   |
    | 표준 배송 | 20.01 | 30.0  | 6.99  | 4.99   |
 
@@ -168,4 +168,4 @@ Delectable Bonsai는 B2B 고객에게 우편환으로 결제할 수 있는 옵�
 ## 관련 주제
 
 * [사이트 유형](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types)
-* [가속기](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/accelerators)
+* [Accelerators](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/accelerators)

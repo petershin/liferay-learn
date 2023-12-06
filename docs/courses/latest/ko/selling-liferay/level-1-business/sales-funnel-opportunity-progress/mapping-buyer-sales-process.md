@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 구매 단계 및 판매 프로세스 매핑
 
 **한눈에**

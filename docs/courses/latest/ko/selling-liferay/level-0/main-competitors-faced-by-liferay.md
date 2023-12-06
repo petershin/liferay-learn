@@ -4,6 +4,9 @@ toc:
   - ./main-competitors-faced-by-liferay/sitecore.md
   - ./main-competitors-faced-by-liferay/optimizely.md
   - ./main-competitors-faced-by-liferay/acquia.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 라이프레이가 직면한 주요 경쟁사
 

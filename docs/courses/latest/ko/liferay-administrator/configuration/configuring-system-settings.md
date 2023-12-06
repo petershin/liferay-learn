@@ -36,5 +36,5 @@ Liferay 환경에서 사용하려는 플랫폼에 ClamAV를 설치하고 실행�
 
 ## 관련 개념
 
-- [시스템 설정](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/system-settings)
-- [업로드된 파일에 대한 바이러스 백신 검사 활성화](https://learn.liferay.com/en/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files)
+* [시스템 설정](https://learn.liferay.com/en/w/dxp/system-administration/configuring-liferay/system-settings)
+* [업로드된 파일에 대한 바이러스 백신 검사 활성화](https://learn.liferay.com/en/w/dxp/system-administration/file-storage/enabling-antivirus-scanning-for-uploaded-files)

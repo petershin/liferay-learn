@@ -124,5 +124,5 @@ Privateチェックボックスは管理者だけが見ることができます�
 ![Quote Processedをクリックし、見積もりを処理します。](./price-on-application/images/06.png)
 
 ```{note}
-画像 "[CIFAウォッシュバッチプラント](https://www.cifa.com/en/batching-plants/recycling/cifa-wash)"
+画像 " [CIFAウォッシュバッチプラント](https://www.cifa.com/en/batching-plants/recycling/cifa-wash) "
 ```

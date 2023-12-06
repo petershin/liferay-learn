@@ -49,4 +49,4 @@ Commerce Products はデフォルトですべての Liferay DXP サイトで利�
 ## 関連トピック
 
 * [コンテンツ関連の定義](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
-* [基本的なWebコンテンツの記事の追加](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)
+* [基本Webコンテンツ記事の追加](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)

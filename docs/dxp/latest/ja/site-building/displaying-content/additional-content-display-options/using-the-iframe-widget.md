@@ -2,13 +2,15 @@
 
 **Iframe** ウィジェットは、Webページを埋め込んで表示できる [iframe](https://www.w3schools.com/html/html_iframe.asp) です。
 
-<a name="setting-up-the-iframe-widget" />
-
 ## IFrameウィジェットのセットアップ
 
-1. iFrameウィジェットをページに追加します。
+1. [新しいページの作成](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) または [コンテンツページの編集を開始](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md).
 
-1. ウィジェットの左上にある **オプション** アイコン（![Click on the options icon of the widget.](../../../images/icon-app-options.png)）をクリックします。 ［**Configuration**］ をクリックします。
+1. **Add**( ![Add widget icon](../../../images/icon-add-widget.png) ) をクリックして、Fragments and Widgets パネルを開きます。
+
+1. ウィジェットタブのサンプルカテゴリで、 **iFrame** ウィジェットをページ上の任意の場所にドラッグします。
+
+1. ウィジェット &rarr; **設定** の右上にある **オプション**( ![Options icon](../../../images/icon-app-options.png) ) をクリックする。
 
     ![構成オプションをクリックします。](iframe-widget/images/02.png)
 
@@ -16,11 +18,9 @@
 
    ![ [ソースURL] フィールドに URL を入力します。](iframe-widget/images/03.png)
 
-   ［**保存**］ をクリックします。
+   ［**Save**］ をクリックします。
 
    すべてのWebサイトで **Iframe** ウィジェットにページを表示できるわけではないことに注意してください。
-
-<a name="using-the-iframe-widget-1" />
 
 ## iframeウィジェットの使用
 

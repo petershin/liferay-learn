@@ -7,6 +7,9 @@ toc:
   - ./level-1-business/sales-funnel-opportunity-progress.md
   - ./level-1-business/battlecards.md
   - ./level-1-business/liferay-contracts.md
+visibility:
+- Employee
+- Partner
 ---
 # 비즈니스 영업 역할의 경우 레벨 1
 

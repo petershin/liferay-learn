@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 세분화 및 개인화
 
 **한눈에**

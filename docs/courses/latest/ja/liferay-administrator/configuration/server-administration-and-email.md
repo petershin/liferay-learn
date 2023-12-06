@@ -1,8 +1,8 @@
 # サーバー管理と電子メール
 
-サーバー管理コンソールからLiferayインスタンスを管理・監視できます。 例えば、現在のシステムやポータルのプロパティを表示したり、ロギングやログレベルを設定することができます。 ここで、システム全体のメールサーバーを設定することもできる。 詳しくは、 [Using Server Administration Panel](https://learn.liferay.com/en/w/dxp/system-administration/using-the-server-administration-panel) を参照してください。
+サーバー管理コンソールからLiferayインスタンスを管理・監視できます。 例えば、現在のシステムやポータルのプロパティを表示したり、ロギングやログレベルを設定したりできます。 ここで、システム全体のメールサーバーを設定することもできる。 詳しくは、 [Using Server Administration Panel](https://learn.liferay.com/en/w/dxp/system-administration/using-the-server-administration-panel) を参照してください。
 
-電子メール通知（ユーザー登録、パスワード管理など）に使用するメールサーバーを設定します。 以下の手順で、Delectable Bonsai用のメールサーバーを設定してください。
+電子メール通知（ユーザー登録、パスワード管理など）に使用するメールサーバーを設定します。 以下の手順に従って、クラリティ ビジョン ソリューションのメール サーバーを設定してください。
 
 ### LXCでメールを設定する
 
@@ -27,7 +27,6 @@
    --env LIFERAY_MAIL_PERIOD_SESSION_PERIOD_MAIL_PERIOD_SMTP_PERIOD_HOST=172.17.0.1 \
    ```
 
-
 1. Liferay で **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **Control Panel** &rarr; **Server Administration** に移動します。 **Mail** タブをクリックします。
 
 1. 以下のコンフィギュレーションを設定する。
@@ -35,12 +34,12 @@
    * 受信POPサーバー： `localhost`
    * 受信ポート： `110`
    * 安全なネットワーク接続を使用する：チェック
-   * ユーザー名： `support@delectablebonsai.com`
+   * ユーザー名： `support@clarityvisionsolutions.com`
    * パスワード： ``。
    * 送信SMTPサーバー： `localhost`
    * 発信ポート： `2525`
    * 安全なネットワーク接続を使用する：チェック
-   * ユーザー名： `support@delectablebonsai.com`
+   * ユーザー名： `support@clarityvisionsolutions.com`
    * パスワード： ``。
 
    ![メールサーバーの設定を入力します。](./server-administration-and-email/images/01.png)
@@ -52,7 +51,7 @@
 1. 左側のナビゲーションで、 **メール送信者** をクリックします。 以下のオプションを設定する。
 
    * 名前 `サポート`
-   * アドレス： `support@delectablebonsai.com`
+   * アドレス： `support@clarityvisionsolutions.com`
 
 ［**保存**］ をクリックします。
 
@@ -61,7 +60,7 @@
 1. 以下のアカウント情報を入力してください：
 
    * スクリーン名： `alan`
-   * メールアドレス： `alan@delectablebonsai.com`
+   * メールアドレス： `alan@clarityvisionsolutions.com`
    * ファーストネーム `アラン`
    * ラストネーム `アダムス`
    * 役職名 `Sales & Marketing Manager`

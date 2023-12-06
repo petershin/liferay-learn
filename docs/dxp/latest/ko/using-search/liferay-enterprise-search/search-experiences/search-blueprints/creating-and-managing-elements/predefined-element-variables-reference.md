@@ -69,6 +69,6 @@
 
 ## 관련 주제
 
-- [요소 만들기](./creating-elements.md)
-- [청사진 구성 참조 검색](../search-blueprints-configuration-reference.md)
-- [요소 관리](./managing-elements.md)
+* [요소 만들기](./creating-elements.md)
+* [청사진 구성 참조 검색](../search-blueprints-configuration-reference.md)
+* [요소 관리](./managing-elements.md)

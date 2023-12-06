@@ -5,7 +5,7 @@
 - 컨텍스트 인식 검색 페이지를 만듭니다. 예를 들어 검색 사용자와의 근접성으로 웹 콘텐츠 기사를 홍보합니다.
 - 검색할 필드를 명시적으로 선언합니다. 예를 들어 `userName` 필드를 선언하지 않도록 선택할 수 있습니다.
 - 특정 기간 동안 특정 범주의 자산을 부스트합니다. 예를 들어 카테고리별로 Liferay Commerce 제품을 홍보하는 계절별 캠페인을 만듭니다.
-- [Custom Filter 위젯](../../../search-pages-and-widgets/search-results/custom-filter-examples.md) 에서 제공하는 모든 사용 사례는 Blueprint로 만족할 수 있습니다. 예를 들어 검색된 키워드와 일치하는 특정 필드를 부스트합니다.
+* [Custom Filter 위젯](../../../search-pages-and-widgets/search-results/custom-filter-examples.md) 에서 제공하는 모든 사용 사례는 Blueprint로 만족할 수 있습니다. 예를 들어 검색된 키워드와 일치하는 특정 필드를 부스트합니다.
 
 무엇을 검색해야 하는지 또는 검색 작동 방식을 제어해야 하는 경우 검색 청사진이 필요한 기능입니다.
 
@@ -143,4 +143,4 @@ Blueprint를 사용하여 검색 솔루션을 생성하려면 Elements를 Bluepr
 
 ## 다음?
 
-- [검색 Blueprint 생성 및 관리](./creating-and-managing-search-blueprints.md).
+* [검색 Blueprint 생성 및 관리](./creating-and-managing-search-blueprints.md).

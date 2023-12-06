@@ -1,6 +1,6 @@
 # Elastic.ioを使用して、オブジェクトデータをGoogle シートと同期する
 
-{bdg-secondary}`7.4以降で利用可能`
+{bdg-secondary}`Liferay 7.4+`
 
 Liferay Objectをデータ統合ツールと併用することで、Objectのデータを外部サービスと同期するための自動タスクを作成することができます。 これらのタスクは、Webhooksを使用してトリガーされ、GoogleアプリケーションやMicrosoft Officeなどと接続することができます。
 
@@ -88,6 +88,6 @@ Liferay Objectをデータ統合ツールと併用することで、Objectのデ
 
 ## 関連トピック
 
-* [オブジェクト](../../../objects.md)
+* [オブジェクト概要](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
 * [オブジェクト統合を理解する](../../understanding-object-integrations.md)

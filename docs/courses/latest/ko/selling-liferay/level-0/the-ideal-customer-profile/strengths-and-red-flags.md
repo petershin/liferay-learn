@@ -1,3 +1,8 @@
+---
+visibility:
+  - eMployee
+  - pArtner
+---
 # 강점과 위험 신호
 
 이 모듈을 요약하는 데 도움이 되도록 Liferay 제품에 특히 적합한 많은 요구 사항, 구매자 및 상황과 주의해야 할 위험 신호를 제기하는 일부가 있습니다.
@@ -17,8 +22,8 @@
 * 포털과 커머스의 연계?
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/l0-3-ideal-customer-profile)를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/l0-3-ideal-customer-profile-pdf)를 다운로드하세요.
 ```
 
 ## 사용 사례
@@ -41,7 +46,7 @@
 
 ## 소비자 또는 광범위한 범위
 
-B2B, B2B2C, B2E, G2C, G2B(또는 이들 중 여러 개) 사용 사례는 Liferay에 좋은 경우가 많지만 **순수** B2C인 경우 우리는 가장 강력한 플레이어가 아닙니다.
+B2B, B2B2C, B2E, G2C, G2B(또는 이들 중 여러 가지) 사용 사례는 Liferay에 유용한 경우가 많지만 **순수한** B2C인 경우 우리는 가장 강력한 플레이어가 아닙니다.
 
 ## 턴키 애플리케이션 또는 맞춤형 솔루션
 
@@ -73,7 +78,7 @@ Liferay의 통합 및 상호 운용성 기능은 강력하므로 복잡하고 �
 
 투자 기대에 대한 논의는 기회 초기에 이루어져야 합니다.
 
-## 거버넌스 & 보안
+## 거버넌스 및 보안
 
 복잡한 거버넌스 요구 사항이나 다양한 사용자 그룹이 많고 세분화된 액세스 권한과 관리 및 보안에 대한 요구 사항이 있는 경우 이는 Liferay에 적합한 지표입니다.
 
@@ -89,7 +94,7 @@ Liferay의 통합 및 상호 운용성 기능은 강력하므로 복잡하고 �
 
 ## 개요
 
-![거래를 성공적으로 추진하는 데 있어 긍정적인 신호와 부정적인 신호를 요약한 것입니다.](./strengths-and-red-flags/images/01.png)
+![A summary of positive and negative signs to finding success in pursing a deal.](./strengths-and-red-flags/images/01.png)
 
 이 목록은 완전한 것이 아니며 이러한 항목 중 어느 것도 100% 승리 또는 100% 패자가 될 수 없다는 점을 기억하는 것이 중요합니다. 그러나 엄지손가락을 위로 표시하는 수가 많을수록, 반대하는 표시가 적을수록 승리할 확률은 더욱 높아집니다.
 
@@ -106,25 +111,24 @@ Liferay Experience Cloud SaaS는 상대적으로 새로운 제품으로, 다른 
 
 ### 공개 사이트
 
-중요한 공개 웹 사이트를 먼저 갱신하고 향후 단계에 대한 추가 요구 사항을 목표로 하는 잠재 고객은 SaaS 제품과 잘 어울립니다.
+중요한 공개 웹 사이트를 먼저 갱신하려는 목표를 가지고 있지만 향후 단계에 대한 추가 요구 사항이 있는 잠재 고객은 SaaS 제품과 잘 어울립니다.
 
 ### 상거래 기능
 
-수주 기회에 대한 거의 모든 인터뷰에서 제품 카탈로그와 같은 상거래 및 상거래 기능 요구 사항이 향후 최종 고객의 디지털 셀프 서비스 요구 사항을 개선하고 해결하기 위해 고객에게 매우 중요하다는 사실이 밝혀졌습니다.
+획득한 기회에 대한 거의 모든 인터뷰에서 제품 카탈로그와 같은 상거래 및 상거래 기능 요구 사항이 최종 고객의 디지털 셀프 서비스 요구 사항을 개선하고 해결하는 데 도움이 되는 미래의 고객에게 매우 중요할 것이라는 사실이 밝혀졌습니다.
 
 고객은 공개 웹 사이트 프로젝트로 시작했지만 기본 상거래 기능을 사용하고 구독 가격에 포함함으로써 Liferay가 제공하는 가치를 높이 평가했습니다.
 
 ### 통합 및 로우 코드 기능
 
-통합 지원 능력, 로우 코드 기능 포함, 내장된 워크플로 엔진 및 강력한 보안 기능이 여러 번의 성공 기회에서 언급되었습니다.
+통합 지원 능력, 로우 코드 기능 포함, 내장된 워크플로 엔진, 강력한 보안 기능 등이 여러 번의 성공 기회에서 언급되었습니다.
 
 ### 50-100K 시작점
 
 Liferay Experience Cloud SaaS 기회의 일반적인 출발점은 50-100,000~100,000 USD/EUR 사이에서 시작되는 연간 구독인 것으로 보입니다.
 
-이 목록은 완전하지 _아님__ 최종적이지도 않지만 Liferay Experience Cloud SaaS 거래를 식별하려고 할 때 몇 가지 지침을 제공할 수 있습니다.
+이 목록은 완전하지 **아님** 최종적이지도 않지만 Liferay Experience Cloud SaaS 거래를 식별하려고 할 때 몇 가지 지침을 제공할 수 있습니다.
 
 축하해요! 이상적인 고객 프로필에 대한 모듈을 완료했습니다!
 
-다음: Liferay가 해결하는 [가지 수평적 과제](../what-challenges-does-liferay-solve-horizontal-solutions.md).
-
+다음: [Liferay가 해결하는 수평적 과제](../what-challenges-does-liferay-solve-horizontal-solutions.md).

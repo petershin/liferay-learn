@@ -1,29 +1,31 @@
 # ページへのウィジェットの追加
 
-ウィジェットはアプリケーションです。 シンプルで、 [コンテンツを表示](../../displaying-content.md)するだけのものから、 [掲示板ウィジェット](../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md)のように、フル機能のコラボレーションアプリケーションにすることもできます。
+ウィジェットはアプリケーションです。 これらのアプリケーションは、 [コンテンツの表示](../../displaying-content.md)に使用されるだけのシンプルなものから、 [メッセージボードウィジェット](../../../collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards.md)のようなフル機能のコラボレーションアプリケーションまであります。
 
-次の手順に従って、ウィジェットページにウィジェットを追加します。
+```{note}
+ウィジェットは、ウィジェットページの [render-weight](https://resources.learn.liferay.com/reference/latest/en/dxp/definitions/liferay-portlet-app_7_4_0.dtd.html#render-weight) に従ってレンダリングされます。
+```
 
-1. アプリケーションバーの **追加** ボタン (![Add](../../../images/icon-add-app.png)) をクリックします。
+ウィジェットページにウィジェットを追加するには、以下の手順に従ってください：
 
-   ![アプリケーションバーの［追加ボタン］をクリックします。](./adding-widgets-to-a-page/images/01.png)
+1. ウィジェット・ページに移動し、アプリケーション・バーの **Add**(![Add](../../../images/icon-add-app.png)) をクリックする。
+
+   ![アプリケーションバーの追加ボタンをクリックします。](./adding-widgets-to-a-page/images/01.png)
 
 1. **ウィジェット** パネルを開き、利用可能なウィジェットのカテゴリを検索または閲覧して、目的のウィジェットを見つけます。
 
-   ![ウィジェットパネルには、ページに機能を追加するために使用できるいくつかのデフォルトウィジェットが含まれています。](./adding-widgets-to-a-page/images/02.png)
+   ![ウィジェットパネルには、ページに機能を追加するために使用できるデフォルトのウィジェットがいくつか含まれています。](./adding-widgets-to-a-page/images/02.png)
 
 1. ウィジェットをページレイアウトの配置したい列と行にドラッグします。
 
 ```{tip}
-DXP 7.3以降では、ウィジェットページの上部にある目のアイコンをクリックすると、すべてのウィジェットのウィジェットコントロールを切り替えることができます。 無効にすると、ウィジェットコントロールにカーソルを合わせてもポップアップしなくなります。
-```
-
-```{note}
-ウィジェットはウィジェットページの、 [render-weight](https://docs.liferay.com/dxp/portal/7.3-latest/definitions/liferay-portlet-app_7_3_0.dtd.html#render-weight) に従ってレンダリングされます。
+DXP 7.3+では、ウィジェットページの上部にある目のアイコンをクリックすると、すべてのウィジェットのウィジェットコントロールを切り替えることができます。 無効にすると、ウィジェットコントロールにカーソルを合わせてもポップアップしなくなります。
 ```
 
 ## 関連トピック
 
-- [ウィジェットページのユーザーパーソナライズの有効化](./enabling-user-personalization-of-widget-pages.md)
-- [ウィジェットページをコンテントページに変換する](./converting-widget-pages-to-content-pages.md)
-- [コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析](../../../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)
+[ウィジェットページをコンテントページに変換する](./converting-widget-pages-to-content-pages.md)
+
+[ウィジェットページのユーザーパーソナライズの有効化](./enabling-user-personalization-of-widget-pages.md)
+
+[コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析](../../../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)

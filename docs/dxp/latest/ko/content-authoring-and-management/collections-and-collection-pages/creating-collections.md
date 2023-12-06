@@ -179,6 +179,6 @@
 
 ## 관련 정보
 
-- [컬렉션 및 컬렉션 페이지 정보](./about-collections-and-collection-pages.md)
-- [컬렉션 표시](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md)
-- [컬렉션 개인화](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)
+* [컬렉션 및 컬렉션 페이지 정보](./about-collections-and-collection-pages.md)
+* [컬렉션 표시](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md)
+* [컬렉션 개인화](../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)

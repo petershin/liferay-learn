@@ -12,23 +12,19 @@ Liferayは [、すぐに使えるユーティリティページ](#viewing-utilit
 
 ユーティリティページの編集、プレビュー、コピーができます。
 
-1. **Product Menu**( ![Product Menu icon](../../../images/icon-product-menu.png) ) を開き、 **Site Builder** &rarr; **Pages** &rarr; **Utility Pages** タブに移動します。
+1. **Site Menu**( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 **Site Builder** &rarr; **Pages** &rarr; **Utility Pages** タブに移動します。
 
-    すぐに使えるページには、 `PROVIDED BY LIFERAY` タグがついています。
+   すぐに使えるページには、 `PROVIDED BY LIFERAY` タグがついています。
 
-1. ページを選択し、 **Actions**( ![Actions Icon](../../../images/icon-actions.png) ) をクリックして、利用可能なオプション（例： **Edit** , **Preview** , または **Make a Copy**）を表示し、選択します。
+1. ページを選択し、 **Actions**( ![Actions Icon](../../../images/icon-actions.png) ) をクリックして、利用可能なオプション（編集、プレビュー、コピーを作成など）を表示し、選択します。
 
 ```{tip}
 [コンテンツページ](../using-content-pages/adding-elements-to-content-pages.md)を編集するのと同じ方法で、ユーティリティページを編集してください。
-
-![ユーティリティ・ページを直接編集することも、コピーを作成してから編集することもできます](./using-utility-pages/images/02.png)
 ```
 
 ## 新しいユーティリティ・ページの作成
 
-新しいユーティリティ・ページを作成するには、以下の手順に従ってください：
-
-1. **Product Menu**( ![Product Menu icon](../../../images/icon-product-menu.png) ) を開き、 **Site Builder** &rarr; **Pages** &rarr; **Utility Pages** タブに移動します。
+1. **Site Menu**( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 **Site Builder** &rarr; **Pages** &rarr; **Utility Pages** タブに移動します。
 
 1. **Add**( ![Actions Menu](../../../images/icon-add.png) ) を選択する。
 
@@ -44,13 +40,13 @@ Liferayは [、すぐに使えるユーティリティページ](#viewing-utilit
 
 新しいユーティリティ・ページをデフォルトとして選択するには、以下の手順に従います：
 
-1. **Product Menu**( ![Product Menu icon](../../../images/icon-product-menu.png) ) を開き、 **Site Builder** &rarr; **Pages** &rarr; **Utility Pages** タブに移動します。
+1. **Site Menu**(![Site Menu icon](../../../images/icon-product-menu.png)) を開き、 **Site Builder** &rarr; **Pages** &rarr; **Utility Pages** タブに移動します。
 
-1. ユーティリティページのアクションメニュー( ![Actions Menu](../../../images/icon-actions.png) )を選択します。
+1. デフォルトに設定したいユーティリティ・ページのアクション（![Actions Menu](../../../images/icon-actions.png)）を選択します。
 
 1. **Mark as Default** を選択する。
 
-![アクション・メニューで、ユーティリティ・ページをデフォルト・ページとして選択する。](./using-utility-pages/images/03.png)
+![アクションメニューでユーティリティページをデフォルトページとして選択する。](./using-utility-pages/images/02.png)
 
 ```{note}
 サイトにページがない場合、ユーティリティ・ページが適用されていても、デフォルトの404エラー・ページが表示されます。
@@ -61,7 +57,7 @@ Liferayは [、すぐに使えるユーティリティページ](#viewing-utilit
 ユーティリティ・ページには、その使用を管理するパーミッションがあります。
 
 | 権限名                    | Description                       |
-| ---------------------- | --------------------------------- |
+|:---------------------- |:--------------------------------- |
 | ユーティリティページを追加          | ユーティリティページの追加に必要。                 |
 | デフォルトのユーティリティページを割り当てる | ユーティリティ・ページをデフォルト・ページに割り当てるために必要。 |
 

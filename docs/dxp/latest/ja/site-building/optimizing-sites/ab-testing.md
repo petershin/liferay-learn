@@ -39,5 +39,5 @@ ab-testing/reviewing-ab-test-results-and-publishing-test-variants.md
 
 :::{grid-item-card} A/Bテスト結果の確認とテストバリアントの公開
 :link: ./ab-testing/reviewing-ab-test-results-and-publishing-test-variants.md
-:::  
+:::
 ::::

@@ -101,7 +101,7 @@ optimizing-sites/building-a-responsive-site.md
 :gutter: 3 3 3 3
 
 :::{grid-item-card} 반응형 사이트 구축
-:link: ./optimizing-sites/building-a-responsive-site.md
+:link: ./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md
 :::
 
 :::{grid-item-card} 모바일 장치 규칙 만들기

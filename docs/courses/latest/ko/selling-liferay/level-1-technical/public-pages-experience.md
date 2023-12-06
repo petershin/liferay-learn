@@ -3,10 +3,13 @@ toc:
   - ./public-pages-experience/demo-home-page.md
   - ./public-pages-experience/other-public-pages.md
   - ./public-pages-experience/branding-consistency.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 사전 로그인 경험
 
-**한눈에**
+**한눈에 보기**
 
 * 데모에서는 첫인상이 중요합니다
 * 잠재 고객이 이전에 Liferay를 본 적이 없을 때 공개 페이지로 시작하십시오.
@@ -15,8 +18,8 @@ toc:
 * 사용 사례가 알려지지 않은 경우에도 항상 매력적인 모양과 느낌을 갖춘 데모를 사용하십시오.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-2-public-pages-experience)를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-2-public-pages-experience-pdf)를 다운로드하세요.
 ```
 
 ## 배경
@@ -27,9 +30,9 @@ CEO, CTO, CMO, 엔터프라이즈 설계자 등과 같은 의사 결정자가 �
 
 잠재 고객이 Liferay를 본 것은 이번 데모가 처음일 가능성이 높습니다. 즉시 로그인하고 싶은 유혹이 있을 수 있지만 Liferay 데모의 시작점은 로그인하기 전 매력적이고 콘텐츠가 풍부한 홈 또는 랜딩 페이지여야 합니다.
 
-인내심을 가지세요. 일반적으로 로그인 후인 특정 사용 사례를 보여줄 시간이 있지만, 홈 페이지는 Liferay의 많은 기능을 선보일 수 있는 훌륭한 기회를 제공하기 때문에 로그인 단계를 쉽게 지나치는 것은 실수입니다. 상자 기능을 제공하고 잠재 고객이 본 내용과 Liferay가 제공하는 잠재력에 대해 흥미를 갖도록 돕습니다.
+인내심을 가지십시오. 일반적으로 로그인 후 특정 사용 사례를 보여줄 시간이 있지만 홈 페이지는 Liferay의 많은 기능을 선보일 수 있는 훌륭한 기회를 제공하기 때문에 로그인 단계를 쉽게 지나치는 것은 실수입니다. 즉시 사용 가능한 기능을 제공하고 잠재 고객이 본 내용과 Liferay가 제공하는 잠재력에 흥미를 갖도록 돕습니다.
 
-이 첫인상은 항상 기억되며 이것이 기회의 성패를 좌우하는 단계는 아닐 수 있지만 잠재 고객 **이** 페이지를 기억하므로 이를 중요하게 만들 기회를 놓치지 마십시오.
+이 첫인상은 항상 기억되며 기회의 성패를 좌우하는 단계는 아닐 수 있지만 잠재 고객은 이 첫 페이지를 **기억** 하므로 이를 중요하게 만들 기회를 놓치지 마십시오.
 
 이러한 공개 페이지의 다양한 측면을 더 쉽게 따르거나 로그인 전 환경을 경험할 수 있도록 데모 중에 다룰 주제가 다음 섹션으로 그룹화되었습니다.
 

@@ -1,6 +1,11 @@
+---
+visibility:
+  - Employee
+  - Partner
+---
 # 라이프레이 인증
 
-**한눈에**
+**한눈에 보기**
 
 * 인증은 애플리케이션에 로그인할 수 있는 사람을 결정합니다.
 * 인증은 로그인 후 수행할 수 있는 작업을 결정합니다.
@@ -9,8 +14,8 @@
 * 강력한 보안은 OWASP 상위 10대 고려 사항 중 1위이므로 매우 중요합니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication)를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf)를 다운로드하세요.
 ```
 
 ## 인증
@@ -24,7 +29,7 @@
 
 Liferay의 인증 기능은 사용자가 볼 수 있는 것뿐만 아니라 자산 편집, 새 자산 생성, 기존 자산 삭제 등을 수행할 수 있는지 여부도 제어할 수 있다는 점을 잠재 고객에게 알리는 것이 중요합니다.
 
-Liferay는 시스템의 거의 모든 측면, 하나 이상의 역할에 다양한 권한(보기, 편집, 생성 등)을 부여하고 사용자가 하나 이상의 역할에 속할 수 있도록 하는 세분화된 모델을 제공합니다.
+Liferay는 다양한 권한(보기, 편집, 생성 등)을 부여하는 세분화된 모델을 제공합니다. 시스템의 거의 모든 측면, 하나 이상의 역할에 적용하고 사용자가 하나 이상의 역할에 속하도록 허용합니다.
 
 이를 통해 다양한 유형의 사용자가 동일한 자산과 다르게 상호 작용할 수 있습니다. 일반 사용자는 페이지를 볼 수 있지만 관리자는 해당 페이지를 편집하고 삭제하는 등의 작업을 수행할 수 있습니다.
 
@@ -40,7 +45,7 @@ Liferay 데모에 Liferay의 OAuth 2.0 기능 데모가 포함되어야 할 가�
 
 Liferay와 클라이언트 확장 간의 OAuth 통신 프로세스의 예는 다음과 같습니다.
 
-![Liferay와 클라이언트 확장 간의 OAuth 통신 프로세스 예.](./authorization/images/01.png)
+![Example OAuth communication process between Liferay and Client Extensions.](./authorization/images/01.png)
 
 ## 승인 표시를 위한 팁
 
@@ -52,12 +57,12 @@ Liferay와 클라이언트 확장 간의 OAuth 통신 프로세스의 예는 다
   * 다양한 콘텐츠가 포함된 컬렉션 디스플레이입니다.
   * 등.
 
-**권한은 거의 모든 것에 적용됩니다.**
+**권한은 거의 모든 것에 적용됩니다**
 
 * 특정 애플리케이션(위젯)에 대한 권한을 제거하면 완전히 다른 모습의 페이지가 표시될 수 있습니다.
 * 사용자에게 특정 페이지를 볼 수 있는 권한이 없으면 탐색에도 표시되지 않습니다.
 
-**API에도 권한이 적용됩니다.**
+**권한은 API에도 적용됩니다**
 
 * 권한 및 승인은 Liferay UI를 통한 액세스에 적용됩니다.
 * 권한은 Liferay의 Headless API를 통해 이루어진 모든 액세스에도 적용됩니다.
@@ -70,11 +75,11 @@ Liferay와 클라이언트 확장 간의 OAuth 통신 프로세스의 예는 다
 * 대부분의 경우 사용자에게 보여주고 싶은 내용을 안내하기 위해 특정 정보를 특정 시간에 표시해야 할 수도 있지만 액세스를 완전히 차단할 필요는 없을 수도 있습니다.
 * 개인화는 사용자 세그먼트를 생성한 다음 세그먼트에 연결된 페이지에 대한 경험을 구축함으로써 이를 지원하는 방법을 제공합니다.
 * 각 경험은 귀하가 원하는 것 또는 해당 세그먼트에 속한 사용자와 관련이 있을 수 있는 것을 정확하게 표시할 수 있습니다.
-* 필요하지 않은 경우 액세스를 차단하기 위해 권한을 사용하지 않는 것이 중요합니다. 대부분의 애플리케이션에는 권한 **과** 개인화의 조합이 필요합니다.
+* 필요하지 않은 경우 액세스를 차단하기 위해 권한을 사용하지 않는 것이 중요합니다. 대부분의 애플리케이션에는 권한 **및** 개인화의 조합이 필요합니다.
 
 ## 인증 및 권한 부여가 적합한 경우
 
-![Liferay의 높은 수준의 아키텍처는 보안이 필요한 모든 것이 가능하도록 인증 및 권한 부여 기능을 제공합니다.](./authorization/images/02.png)
+![Liferay's high-level architecture provides authentication and authorization capabilities to ensure that anything that needs to be secured can be.](./authorization/images/02.png)
 
 인증 및 권한 부여에 대한 데모를 진행하는 동안 인증 및 권한 부여 수준이 어디에 있는지에 대한 높은 수준의 개요를 보여주는 것이 좋습니다.
 
@@ -107,7 +112,7 @@ Liferay와 클라이언트 확장 간의 OAuth 통신 프로세스의 예는 다
 
 Single Sign-On을 시연해야 하고 Okta와 같은 서비스를 사용할 수 없는 경우 Keycloak 인스턴스를 실행할 수 있습니다. Keycloak은 ID 및 액세스 관리를 통해 Single Sign-On을 허용하는 오픈 소스 소프트웨어 제품입니다.
 
-Liferay의 컨설턴트 중 한 명이 Keycloak의 설정 단계를 다루는 [블로그](https://liferay.dev/blogs/-/blogs/liferay-sso-step-by-step) 제공했습니다.
+Liferay의 컨설턴트 중 한 명이 Keycloak의 설정 단계를 다루는 [blog](https://liferay.dev/blogs/-/blogs/liferay-sso-step-by-step)을 제공했습니다.
 
 **인증0**
 
@@ -131,8 +136,8 @@ Liferay는 기본적으로 이러한 유형의 서비스를 지원하며 이를 
 
 일부 고객의 경우 Liferay의 기본 인증 및 권한 부여 기능으로 충분합니다.
 
-그러나 다른 많은 경우 Single Sign-On을 구현하기 위해 SAML을 사용하여 인트라넷을 구축해야 하거나 사용자가 OpenID Connect를 통해 이미 존재하는 자격 증명을 사용할 수 있도록 허용해야 하는 경우 Liferay가 제공하는 광범위한 기능에 대해 논의하는 것이 중요합니다. - 즉시 사용 가능.
+그러나 다른 많은 경우 Single Sign-On을 구현하기 위해 SAML을 사용하여 인트라넷을 구축해야 하거나 사용자가 OpenID Connect를 통해 이미 존재하는 자격 증명을 사용할 수 있도록 허용해야 하는 경우 Liferay가 제공하는 광범위한 기능에 대해 논의하는 것이 중요합니다. * 즉시 사용 가능.
 
 일단 인증되면 기본적이고 세분화된 역할 및 권한 기능이 제공하는 유연성과 OAuth 2.0을 사용하여 외부 리소스에 대한 액세스 권한을 부여하는 기능이 결합되어 고객은 자신의 애플리케이션이 안전하고 접근 가능하다는 확신을 가질 수 있습니다.
 
-다음: [경험관리](../experience-management.md).
+다음: [경험 관리](../experience-management.md).

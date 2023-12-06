@@ -9,7 +9,7 @@ MVCレンダーコマンドは、レンダリングするページを処理す�
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順を実行します。
+その後、以下の手順に従ってください：
 
 1. サンプルをダウンロードし、解凍します。
 
@@ -89,7 +89,7 @@ MVCレンダーコマンドの動作を見てきました。 次に、それら�
 
 ## MVCRenderCommandクラスを調べる
 
-MVCレンダーコマンドのクラスは、 [`MVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.java) を直接実装することも、 [`BaseMVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/BaseMVCRenderCommand.java) を拡張することもできます。  `A4P1AbleMVCRenderCommand`は、`MVCRenderCommand`を直接実装します。  `A4P1AbleMVCRenderCommand`は次のとおりです。
+MVC Render Command クラスは [`MVCRenderCommand`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/portal-kernel/src/com/liferay/portal/kernel/portlet/bridges/mvc/MVCRenderCommand.java) を直接実装できます。 `A4P1AbleMVCRenderCommand`は、`MVCRenderCommand`を直接実装します。  `A4P1AbleMVCRenderCommand`は次のとおりです。
 
 ```{literalinclude} ./mvc-render-command/resources/liferay-a4p1.zip/a4p1-web/src/main/java/com/acme/a4p1/web/internal/portlet/action/A4P1AbleMVCRenderCommand.java
 :language: java

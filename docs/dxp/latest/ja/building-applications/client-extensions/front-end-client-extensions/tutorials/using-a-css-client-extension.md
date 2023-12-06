@@ -2,7 +2,7 @@
 
 {bdg-secondary}`利用可能な Liferay 7.4`
 
-CSSクライアント拡張を使えば、テーマやLiferayのコードに依存することなく、ページスタイルをオーバーライドすることができます。 クライアント拡張（ [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) ）から始めます。
+CSSクライアント拡張は、ページに新しいCSSスタイリングを導入します。 ページ上に配置されたCSSクライアント・エクステンションは、テーマやスタイルブックの設定を含む、ページの既存のスタイルに追加されます。 クライアント拡張（ [サンプルワークスペース](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) ）から始めます。
 
 ## 前提条件
 
@@ -72,10 +72,11 @@ assemble:
 ここで、クライアント拡張をデプロイします。
 
 ## Liferayにクライアント拡張をデプロイする
+
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-Once Liferay starts, run this command from the client extension's folder in the sample workspace:
+Liferayが起動したら、サンプルのワークスペースにあるクライアントエクステンションのフォルダからこのコマンドを実行します：
 
 ```bash
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
@@ -103,13 +104,13 @@ STARTED sample-global-css_1.0.0
 
 デプロイされたクライアント拡張を使用するために、Liferayのページを設定します。
 
-1. 少なくとも1つのボタンがあるページで、上部にある **編集** アイコン ![Edit icon](../../../../images/icon-edit-pencil.png) をクリックします。
+1. 少なくとも1つのボタンがあるページで、上部にある **Edit**( ![Edit icon](../../../../images/icon-edit-pencil.png) ) をクリックします。
 
-1. サイドバーの［Page Design Options］メニュー（![Page Design Options icon](../../../../images/icon-format.png)）に移動し、メニュー上部にある設定アイコン（![Configuration icon](../../../../images/icon-cog3.png)）をクリックします。
+1. サイドバーの「ページデザインオプション」メニュー( ![Page Design Options icon](../../../../images/icon-format.png) )に移動し、メニュー上部の「**設定**」 アイコン(![Configuration icon](../../../../images/icon-cog3.png))をクリックします。
 
-   ![［Page Design Options］メニューの歯車アイコンをクリックすると、このクライアント拡張の設定にアクセスできます。](./using-a-css-client-extension/images/01.png)
+   ![このクライアントエクステンションの設定にアクセスするには、ページデザインオプションメニューの設定アイコンをクリックします。](./using-a-css-client-extension/images/01.png)
 
-1. ページ下部の ［**CSS Client Extensions**］ のセクションで、 ［**Add CSS Client Extensions**］ をクリックします。
+1. ページ下部の［CSS Client Extensions］のセクションで、 ［**Add CSS Client Extensions**］ をクリックします。
 
    ![リストからCSSクライアント拡張を追加します。](./using-a-css-client-extension/images/02.png)
 

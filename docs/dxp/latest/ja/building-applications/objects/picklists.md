@@ -1,39 +1,41 @@
 ---
 toc:
-- ./picklists/using-picklists.md
-- ./picklists/exporting-and-importing-picklists.md
-- ./picklists/managing-picklist-permissions.md
-- ./picklists/picklists-api-basics.md
+  - ./picklists/creating-picklists.md
+  - ./picklists/exporting-and-importing-picklists.md
+  - ./picklists/managing-picklist-permissions.md
+  - ./picklists/picklists-api-basics.md
 ---
-# 選択リスト
+# 候補リスト
 
 ```{toctree}
 :maxdepth: 3
 
-picklists/using-picklists.md
+picklists/creating-picklists.md
 picklists/exporting-and-importing-picklists.md
 picklists/managing-picklist-permissions.md
 picklists/picklists-api-basics.md
 ```
 
-Liferay Picklistsは、名前とキーのペアからなる文字列値の定義済みリストで、任意の数のアイテムを含めることができます。リストを [作成](./picklists/using-picklists.md#creating-a-picklist) したら、 [Picklist field type](./picklists/using-picklists.md#adding-picklist-fields-to-objects) を使ってオブジェクト定義に追加することができます。このフィールドを使用して、[表示エントリーのフィルタリング](./displaying-object-entries.md)や[カスタムエントリー状態の定義](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md) を行うことが可能です。また、状態の定義に使用する場合、[validation](./creating-and-managing-objects/validations/adding-field-validations.md)と [actions](./creating-and-managing-objects/actions/defining-object-actions.md) により各状態にカスタムビジネスロジックを関連付けることができます。
+{bdg-secondary}`Liferay 7.4+`
+
+Liferay の **picklists** はあらかじめ定義された文字列のリストで、名前とキーのペアで構成され、任意の数の項目を含むことができます。リストが[作成](./picklists/creating-picklists.md)されると、それを使ってオブジェクト定義に単一選択フィールドや複数選択フィールドを追加することができます。これらのフィールドは、[表示されるエントリーをフィルタリングする](./displaying-object-entries.md)、[カスタムエントリー状態を定義する](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md)などに使用できます。ピックリストを使用して状態を定義する場合、[validation](./creating-and-managing-objects/validations/adding-field-validations.md)、[actions](./creating-and-managing-objects/actions/defining-object-actions.md)、[workflow processes](./enabling-workflow-for-objects.md)を使用して、各状態に対して複雑なビジネスロジックを実装できます。
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} ピックリストの使用
-:link: ./picklists/using-picklists.md
-:::  
+:::{grid-item-card} ピックリストの作成
+:link: ./picklists/creating-picklists.md
+:::
 
-:::{grid-item-card} ピックリストのエクスポートとインポート
+:::{grid-item-card} 候補リストのエクスポートとインポート
 :link: ./picklists/exporting-and-importing-picklists.md
-::: 
+:::
 
-:::{grid-item-card} ピックリストのパーミッションの管理
+:::{grid-item-card} 候補リスト権限の管理
 :link: ./picklists/managing-picklist-permissions.md
 :::
 
-:::{grid-item-card} ピックリストAPIの基本
+:::{grid-item-card} 候補リストAPIの基本
 :link: ./picklists/picklists-api-basics.md
 :::
 ::::

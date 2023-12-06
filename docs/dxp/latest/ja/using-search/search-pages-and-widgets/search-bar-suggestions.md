@@ -3,7 +3,7 @@ toc:
   - ./search-bar-suggestions/configuring-search-bar-suggestions.md
   - ./search-bar-suggestions/search-bar-suggestions-blueprints.md
 ---
-# 検索バー サジェスチョン
+# 検索バーの提案
 
 ```{toctree}
 :maxdepth: 2
@@ -12,12 +12,16 @@ search-bar-suggestions/configuring-search-bar-suggestions.md
 search-bar-suggestions/search-bar-suggestions-blueprints.md
 ```
 
-{bdg-secondary}`7.4 U36+とGA36+`
+{bdg-secondary}`7.4 U36+およびGA36+`
 
-Liferayの検索バーの候補は、 **search as you type** 機能を提供します。検索キーワードを検索バーウィジェットに入力すると、そのクエリは検索エンジンで処理され、結果がドロップダウンリストに表示されます。リストから結果を1つクリックするか、虫眼鏡アイコンまたはエンターキーをクリックして通常通り検索を実行し、検索結果ウィジェットに結果を表示することができます。
+**LiferayのSearch Bar Suggestionsは、** 機能を入力しながら検索できます。 検索バーウィジェットに検索キーワードを入力すると、検索エンジンによってクエリが処理され、結果がドロップダウンリストで返されます。 リストから検索結果の1つをクリックするか、虫眼鏡アイコンまたはEnterキーをクリックして通常どおり検索を実行すると、検索結果ウィジェットに検索結果が表示されます。
 
 ![入力すると、検索結果がドロップダウンリストに表示されます。](./search-bar-suggestions/images/01.png)
 
-検索バーサジェストの使い方や設定方法については、 [検索バーサジェストを設定する](./search-bar-suggestions/configuring-search-bar-suggestions.md)を参照してください。
+```{important}
+検索バーのサジェストを使用するには、検索バーがデフォルトの表示テンプレート([ウィジェットテンプレート](../../site-building/displaying-content/additional-content-display-options/styling-widgets-with-widget-templates.md))を使用するように設定する必要があります。
+```
 
-[ブループリントの検索](../liferay-enterprise-search/search-experiences/search-blueprints.md) を使用して、Search Bar Suggestions で使用するクエリを制御するには、 [検索バー サジェスチョン ブループリント](./search-bar-suggestions/search-bar-suggestions-blueprints.md) を参照してください。
+検索バーのサジェスチョンの使用および設定方法については、 [検索バーのサジェスチョンの設定](./search-bar-suggestions/configuring-search-bar-suggestions.md)を参照してください。
+
+[ブループリントの検索](../liferay-enterprise-search/search-experiences/search-blueprints.md) を使用して、検索バーのサジェスチョンで使用されるクエリを制御するには、 [検索バー サジェスチョン ブループリント](./search-bar-suggestions/search-bar-suggestions-blueprints.md) を参照してください。

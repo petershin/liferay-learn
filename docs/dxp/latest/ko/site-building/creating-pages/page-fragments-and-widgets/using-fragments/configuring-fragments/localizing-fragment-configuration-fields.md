@@ -32,6 +32,6 @@ Liferay Fragments를 사용할 때 대상 고객의 언어와 일치하도록 �
 
 ## 관련 주제
 
-- [콘텐츠 페이지 사용](../../../using-content-pages.md)
-- [콘텐츠 페이지 편집기 UI 참조](../../../using-content-pages/content-page-editor-ui-reference.md)
-- [조각 사용](../../using-fragments.md)
+* [콘텐츠 페이지 사용](../../../using-content-pages.md)
+* [콘텐츠 페이지 편집기 UI 참조](../../../using-content-pages/content-page-editor-ui-reference.md)
+* [조각 사용](../../using-fragments.md)

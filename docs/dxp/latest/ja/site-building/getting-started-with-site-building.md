@@ -44,4 +44,4 @@ Liferay DXPの [パーソナライゼーションとセグメンテーション]
 
 ## サイトの最適化
 
-Liferay DXP は、サイトの [検索エンジン最適化（SEO）ランキング](../site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)の向上から、 [各デバイスに最適化されたレスポンシブページ](./optimizing-sites/building-a-responsive-site.md) の作成、 [A/B テスト](../site-building/optimizing-sites/ab-testing/ab-testing.md)によるメッセージングキャンペーンの磨き上げまで、サイトを最適化するための複数のツールと機能を提供します。 A/Bテストは、ページの現在のデフォルトのバリエーションとページのバリアント（複数可）を比較し、特定のゴール（直帰率、クリック数など）に対してどのページがより良いパフォーマンスを示すかを確認します。 これにより、データに基づいてサイトに関するより良い判断ができるようになり、ユーザーや顧客にこれまで以上に迅速にサービスを提供できるようになります。
+Liferay DXP は、サイトの [検索エンジン最適化（SEO）ランキング](../site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)の向上から、 [各デバイスに最適化されたレスポンシブページ](./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md) の作成、 [A/B テスト](../site-building/optimizing-sites/ab-testing/ab-testing.md)によるメッセージングキャンペーンの磨き上げまで、サイトを最適化するための複数のツールと機能を提供します。 A/Bテストは、ページの現在のデフォルトのバリエーションとページのバリアント（複数可）を比較し、特定のゴール（直帰率、クリック数など）に対してどのページがより良いパフォーマンスを示すかを確認します。 これにより、データに基づいてサイトに関するより良い判断ができるようになり、ユーザーや顧客にこれまで以上に迅速にサービスを提供できるようになります。

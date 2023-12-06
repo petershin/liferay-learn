@@ -16,7 +16,7 @@ Liferay DXP는 광역 네트워크(WAN) 프로토콜을 통해 서로 다른 사
 
 클러스터 간 복제를 설정하려면 다음을 수행해야 합니다.
 
-- [LES 활성화](../activating-liferay-enterprise-search.md)
+* [LES 활성화](../activating-liferay-enterprise-search.md)
 - Liferay 7.2 및 7.3에서, 팔로워 Elasticsearch 인덱스에서 읽는 Liferay DXP 노드에 CCR 모듈을 설치합니다.
 - 리더 클러스터에서 복제할 인덱스를 선택합니다.
 - Elasticsearch 클러스터 구성하기

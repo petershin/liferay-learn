@@ -1,40 +1,38 @@
 # ブログを始める
 
-ブログアプリケーションのエディターには、必要なときに必要な場所に表示されるWYSIWYGコントロールの完全なセットがあります。 ソースモードに切り替えて、コンテンツのHTMLコードを編集することもできます。
+ブログアプリケーションのエディタには、必要なときに必要な場所に表示されるWYSIWYGコントロールの完全なセットがあります。 また、ソースモードに切り替えて、コンテンツのHTMLコードを編集することもできます。
 
-ブログアプリケーションには、ブログの表示方法をカスタマイズするための強力なツールセットが含まれています。 たとえば、概要やすべてのコンテンツなどの表示テンプレートを使用すると、ページに表示するブログ投稿の数を選択できます。 組み込みの表示テンプレートを活用するか、独自の表示テンプレートを作成できます。 各ブログエントリにカバー画像を追加することもできます。
+ブログアプリケーションには、ブログの表示方法をカスタマイズするための強力なツールセットが含まれています。 たとえば、概要やすべてのコンテンツなどの表示テンプレートを使用すると、ページに表示するブログ投稿の数を選択できます。 内蔵の表示テンプレートを活用することも、独自に作成することもできる。 また、ブログの各エントリーにカバー画像を追加することもできる。
 
-**ブログ** アプリの使用を開始する最も早い方法は、ウィジェットを[サイトページ](../../site-building/creating-pages/understanding-pages/understanding-pages.md)にデプロイすることです。
+ブログアプリを使い始める最も早い方法は、 [ウィジェットをサイトページ](../../site-building/creating-pages/using-content-pages/using-widgets-on-a-content-page.md)にデプロイすることです。
 
-1.  目的のサイトとページに移動します（例： **Community Blog**）。
+1. 希望のサイトとページに移動する（例： **Community Blog**）。
 
-2. [**Add**] ボタンをクリックします。
+1. **Add**( ![Add widget icon](../../images/icon-add-widget.png) ) をクリックして、 **Fragments and Widgets** パネルを開きます。
 
-3. [**Widgets**] をクリックし、次に [**Collaboration**] をクリックしてメニューを展開します。
+1. ウィジェットタブのコラボレーションカテゴリで、 **ブログ** ウィジェットをページの希望の場所にドラッグ＆ドロップします。
 
-    ![ [Blogs]ウィジェットをページに追加する](./getting-started-with-blogs/images/01.png)
+![［Blogs］ウィジェットをページに追加する](./getting-started-with-blogs/images/01.png)
 
-4. [**Blogs**] ウィジェットをページ上の目的の場所にドラッグアンドドロップします。
+ウィジェットを追加してページを公開すると、サイト・メンバーはブログ・ウィジェットを使ってブログ記事を作成できます。
 
-![ [Blogs]ウィジェットをページに追加する](./getting-started-with-blogs/images/02.png)
+![［Blogs］ウィジェットをページに追加する](./getting-started-with-blogs/images/02.png)
 
-サイトのメンバーは、 [**Blogs**] ウィジェットを使用してブログ投稿を作成できます。 1ページあたりに設定できる [**Blogs**] ウィジェットの数は1つだけであることに注意してください。
-
-<a name="whats-next" />
+```{note}
+ブログ・ウィジェットは1ページに1つだけです。
+```
 
 ## 次のステップ
 
-ブログアプリケーションの機能の使用方法を学習します。
+ブログアプリケーションの機能の使い方を学ぶ：
 
-  - [ブログエントリの追加](./adding-blog-entries.md)
-  - [ブログエントリの管理](./managing-blog-entries.md)
-  - [ブログの表示](./displaying-blogs.md)
-  - [ブログアプリの設定](./configuring-the-blogs-app.md)
-  - [最近のブログ作成者を強調表示する](./highlighting-recent-bloggers.md)
+* [ブログエントリの追加](./adding-blog-entries.md)
+* [ブログエントリの管理](./managing-blog-entries.md)
+* [ブログアプリの設定](./configuring-the-blogs-app.md)
+* [ブログの表示](./displaying-blogs.md)
+* [最近のブログ作成者を強調表示する](./highlighting-recent-bloggers.md)
 
-<a name="reference" />
+### 参考
 
-### 参照
-
-  - [ブログエントリエディターのリファレンス](./blog-entry-editor-reference.md)
-  - [ブログ権限リファレンス](./blog-permissions-reference.md)
+* [ブログエントリエディターのリファレンス](./blog-entry-editor-reference.md)
+* [ブログ権限リファレンス](./blog-permissions-reference.md)

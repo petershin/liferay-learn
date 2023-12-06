@@ -14,7 +14,7 @@ Liferay의 철학은 "기본적으로 안전하다"입니다. 이는 기본 설�
 - 싱글 사인온(SSO)
 - 안티사미
 
-기본값을 고수하는 대신 조직의 디자인에 더 잘 맞도록 이러한 각 범주를 조정할 수 있습니다. 여기에서는 Delectable Bonsai의 요구 사항에 맞게 Liferay 설치를 구성합니다.
+기본값을 고수하는 대신 조직의 디자인에 더 잘 맞도록 이러한 각 범주를 조정할 수 있습니다. 여기에서는 Clarity Vision Solutions의 요구 사항에 맞게 Liferay 설치를 구성합니다.
 
 먼저 사용자가 시스템에 로그온하는 방법을 구성합니다. 그런 다음 기본적으로 구성된 인증 확인자를 조정합니다. 그런 다음 다단계 인증을 활성화합니다.
 
@@ -22,10 +22,10 @@ Liferay의 철학은 "기본적으로 안전하다"입니다. 이는 기본 설�
 
 그런 다음 Single Sign-On을 살펴보고 사용자가 Liferay를 사용하여 여러 시스템에 로그인할 수 있도록 SAML(보안 주장 마크업 언어)을 구성합니다. 마지막으로 OAuth 2를 사용하여 앱 승인을 구성합니다.
 
-구성할 마지막 기능은 HTML 또는 CSS만 허용되는 사이트에 JavaScript 코드를 삽입하려는 사용자로부터 설치를 보호하는 [AntiSamy](https://owasp.org/www-project-antisamy) 살균제입니다.
+구성할 마지막 기능은 HTML 또는 CSS만 허용되는 사이트에 JavaScript 코드를 삽입하려는 사용자로부터 설치를 보호하기 위한 [AntiSamy](https://owasp.org/www-project-antisamy) 살균제입니다.
 
-이 주제에서는 Liferay의 다양한 보안 기능을 둘러볼 수 있습니다. 자세한 내용은 Liferay Learn의 보안 문서 [보안 문서](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay) 검토하세요.
+이 주제에서는 Liferay의 다양한 보안 기능을 둘러볼 수 있습니다. 자세히 알아보려면 Liferay Learn에서 [보안 문서](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay) 를 검토하세요.
 
 준비가 된?
 
-[갑시다!](./security/authentication.md)
+[가자!](./security/authentication.md)

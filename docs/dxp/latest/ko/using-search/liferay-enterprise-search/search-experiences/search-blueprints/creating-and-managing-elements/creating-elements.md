@@ -245,4 +245,4 @@ UI 구성의 각 필드에 대해 추가할 수 있는 몇 가지 구성 속성�
 
 - [검색 Blueprint 생성 및 관리](../creating-and-managing-search-blueprints.md)
 - [청사진 요소 참조 검색](../search-blueprints-elements-reference.md)
-- [청사진 구성 참조 검색](../search-blueprints-configuration-reference.md) 
+- [청사진 구성 참조 검색](../search-blueprints-configuration-reference.md)

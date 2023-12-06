@@ -6,11 +6,11 @@
 
 사용자 정의 필터 위젯은 검색 조정 노력에 강력한 도움이 됩니다. 사용자 지정 코드를 배포하지 않고도 검색 엔진에 전송되는 쿼리를 제어할 수 있습니다. 다음은 사용자 정의 필터 위젯에 접근하는 방법을 이해하는 데 도움이 되는 몇 가지 일반적인 사용 사례입니다.
 
-- [검색 결과에서 콘텐츠 제외](#excluding-certain-content)
-- [검색 결과에서 콘텐츠 부스팅](#boosting-fields)
-- [여러 사이트 ID로 필터링](#filtering-by-site-id)
-- [Elasticsearch의 쿼리 문자열 쿼리 사용](#complex-filter-with-query-string)
-- [중첩된 필드에 대한 일치 부스팅](#boosting-matches-to-nested-fields)
+* [검색 결과에서 콘텐츠 제외](#excluding-certain-content)
+* [검색 결과에서 콘텐츠 부스팅](#boosting-fields)
+* [여러 사이트 ID로 필터링](#filtering-by-site-id)
+* [Elasticsearch의 쿼리 문자열 쿼리 사용](#complex-filter-with-query-string)
+* [중첩된 필드에 대한 일치 부스팅](#boosting-matches-to-nested-fields)
 
 사용자 정의 필터 위젯에 대한 자세한 설명은 [검색 결과 필터링](./filtering-search-results.md) 참조하십시오.
 
@@ -268,6 +268,6 @@
 
 ## 관련 내용
 
-- [검색 결과 필터링](./filtering-search-results.md)
-- [결과 순위](../../search-administration-and-tuning/result-rankings.md)
-- [동의어 세트](../../search-administration-and-tuning/synonym-sets.md)
+* [검색 결과 필터링](./filtering-search-results.md)
+* [결과 순위](../../search-administration-and-tuning/result-rankings.md)
+* [동의어 세트](../../search-administration-and-tuning/synonym-sets.md)

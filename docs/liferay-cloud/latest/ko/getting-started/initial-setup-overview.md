@@ -2,11 +2,11 @@
 
 Liferay Cloud를 시작하려면 모든 계정, 환경 및 서비스가 성공적으로 프로비저닝되고 인스턴스에 배포되었는지 확인해야 합니다. 다음 단계로 시작하십시오.
 
-- [설정 이메일 확인](#check-setup-emails)
-- [Liferay 클라우드 콘솔에 액세스](#access-the-liferay-cloud-console)
-- [프로비저닝된 프로젝트 소스 코드에 액세스](#access-the-provisioned-project-source-code)
-- [CI 및 Liferay 서비스에 로그인](#log-in-to-your-ci-and-liferay-services)
-- [설정 확인](#verifying-setup)
+* [설정 이메일 확인](#check-setup-emails)
+* [Liferay 클라우드 콘솔에 액세스](#access-the-liferay-cloud-console)
+* [프로비저닝된 프로젝트 소스 코드에 액세스](#access-the-provisioned-project-source-code)
+* [CI 및 Liferay 서비스에 로그인](#log-in-to-your-ci-and-liferay-services)
+* [설정 확인](#verifying-setup)
 
 ## 설정 이메일 확인
 
@@ -98,6 +98,6 @@ Liferay Cloud 스택 서비스가 올바르게 배포되었는지 확인합니�
 
 ## 관련 주제
 
-- [GitHub 리포지토리 구성](./configuring-your-github-repository.md)
-- [Liferay 클라우드 환경 이해](./understanding-liferay-cloud-environments.md)
-- [Liferay 클라우드 서비스에 로그인](./logging-into-your-liferay-cloud-services.md)
+* [GitHub 리포지토리 구성](./configuring-your-github-repository.md)
+* [Liferay 클라우드 환경 이해](./understanding-liferay-cloud-environments.md)
+* [Liferay 클라우드 서비스에 로그인](./logging-into-your-liferay-cloud-services.md)

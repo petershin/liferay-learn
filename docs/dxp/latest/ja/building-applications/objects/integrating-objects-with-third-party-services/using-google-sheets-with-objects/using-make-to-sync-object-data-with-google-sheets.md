@@ -1,6 +1,6 @@
 # Makeを使用して、オブジェクトデータをGoogle シートと同期する
 
-{bdg-secondary}`7.4以降で利用可能`
+{bdg-secondary}`Liferay 7.4+`
 
 ここでは、 [Make](https://www.make.com/) （旧称：Integromat）を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Makeのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
 
@@ -41,7 +41,7 @@
    ![オブジェクトのデータ構造が正常に決定されたことを確認します。](./using-make-to-sync-object-data-with-google-sheets/images/07.png)
 
    ```{note}
-   オブジェクトの構造が変更された場合は、Webhookモジュールの編集に戻り、*［Redetermine data structure］*をクリックします。
+   オブジェクトの構造が変更された場合は、Webhookモジュールの編集に戻り、［**Redetermine data structure**］**をクリックします。
    ```
 
 1. ［**Add new module**］ ボタンをクリックし、 ［**Google Sheets**］ モジュールを選択し、 ［**Add a Row**］ アクションを選びます。
@@ -142,6 +142,6 @@
 
 ## 関連トピック
 
-* [オブジェクト](../../../objects.md)
+* [オブジェクト概要](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
 * [オブジェクト統合を理解する](../../understanding-object-integrations.md)

@@ -16,8 +16,8 @@
 ## 주요 변경 사항 목록
 
 ### 테마에서 JSP 템플릿에 대한 지원 제거
-- **날짜:** 2018-11-14
-- **JIRA 티켓:** [LPS-87064](https://issues.liferay.com/browse/LPS-87064)
+* **날짜:** 2018-11-14
+* **JIRA 티켓:** [LPS-87064](https://issues.liferay.com/browse/LPS-87064)
 
 #### 무엇이 바뀌었나요?
 
@@ -39,8 +39,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### Lodash는 더 이상 기본적으로 포함되지 않습니다.
-- **날짜:** 2018-11-27
-- **JIRA 티켓:** [LPS-87677](https://issues.liferay.com/browse/LPS-87677)
+* **날짜:** 2018-11-27
+* **JIRA 티켓:** [LPS-87677](https://issues.liferay.com/browse/LPS-87677)
 
 #### 무엇이 바뀌었나요?
 
@@ -62,8 +62,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### 두 개의 스테이징 포털 속성을 OSGi 구성으로 이동했습니다.
-- **날짜:** 2018-Dec-12
-- **JIRA 티켓:** [LPS-88018](https://issues.liferay.com/browse/LPS-88018)
+* **날짜:** 2018-Dec-12
+* **JIRA 티켓:** [LPS-88018](https://issues.liferay.com/browse/LPS-88018)
 
 #### 무엇이 바뀌었나요?
 
@@ -88,8 +88,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### 페이지 기능에 대한 애플리케이션 URL 링크 제거
-- **날짜:** 2018-Dec-14
-- **JIRA 티켓:** [LPS-85948](https://issues.liferay.com/browse/LPS-85948)
+* **날짜:** 2018-Dec-14
+* **JIRA 티켓:** [LPS-85948](https://issues.liferay.com/browse/LPS-85948)
 
 #### 무엇이 바뀌었나요?
 
@@ -109,8 +109,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### TermOfUseContentProvider를 kernel.util에서 이동했습니다.
-- **날짜:** 2019-Jan-07
-- **JIRA 티켓:** [LPS-88869](https://issues.liferay.com/browse/LPS-88869)
+* **날짜:** 2019-Jan-07
+* **JIRA 티켓:** [LPS-88869](https://issues.liferay.com/browse/LPS-88869)
 
 #### 무엇이 바뀌었나요?
 
@@ -142,8 +142,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### HibernateConfigurationConverter 및 변환기 제거됨
-- **날짜:** 2019-Jan-07
-- **JIRA 티켓:** [LPS-88870](https://issues.liferay.com/browse/LPS-88870)
+* **날짜:** 2019-Jan-07
+* **JIRA 티켓:** [LPS-88870](https://issues.liferay.com/browse/LPS-88870)
 
 #### 무엇이 바뀌었나요?
 
@@ -163,8 +163,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### JDK 기능 및 공급업체 사용으로 전환
-- **날짜:** 2019년 1월 08일
-- **JIRA 티켓:** [LPS-88911](https://issues.liferay.com/browse/LPS-88911)
+* **날짜:** 2019년 1월 08일
+* **JIRA 티켓:** [LPS-88911](https://issues.liferay.com/browse/LPS-88911)
 
 #### 무엇이 바뀌었나요?
 
@@ -184,8 +184,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### com.liferay.portal.service.InvokableService 인터페이스가 더 이상 사용되지 않음
-- **날짜:** 2019년 1월 08일
-- **JIRA 티켓:** [LPS-88912](https://issues.liferay.com/browse/LPS-88912)
+* **날짜:** 2019년 1월 08일
+* **JIRA 티켓:** [LPS-88912](https://issues.liferay.com/browse/LPS-88912)
 
 #### 무엇이 바뀌었나요?
 
@@ -205,8 +205,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### ServiceLoaderCondition 지원 중단
-- **날짜:** 2019년 1월 08일
-- **JIRA 티켓:** [LPS-88913](https://issues.liferay.com/browse/LPS-88913)
+* **날짜:** 2019년 1월 08일
+* **JIRA 티켓:** [LPS-88913](https://issues.liferay.com/browse/LPS-88913)
 
 #### 무엇이 바뀌었나요?
 
@@ -226,8 +226,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### JDK 술어 사용으로 전환됨
-- **날짜:** 2019년 1월 14일
-- **JIRA 티켓:** [LPS-89139](https://issues.liferay.com/browse/LPS-89139)
+* **날짜:** 2019년 1월 14일
+* **JIRA 티켓:** [LPS-89139](https://issues.liferay.com/browse/LPS-89139)
 
 #### 무엇이 바뀌었나요?
 
@@ -254,8 +254,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### com.liferay.portal.kernel.util 패키지에서 안전하지 않은 기능 인터페이스 제거
-- **날짜:** 2019년 1월 15일
-- **JIRA 티켓:** [LPS-89223](https://issues.liferay.com/browse/LPS-89223)
+* **날짜:** 2019년 1월 15일
+* **JIRA 티켓:** [LPS-89223](https://issues.liferay.com/browse/LPS-89223)
 
 #### 무엇이 바뀌었나요?
 
@@ -279,8 +279,8 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 ---------------------------------------
 ### 포털 배포에서 더 이상 사용되지 않는 NTLM
-- **날짜:** 2019년 1월 21일
-- **JIRA 티켓:** [LPS-88300](https://issues.liferay.com/browse/LPS-88300)
+* **날짜:** 2019년 1월 21일
+* **JIRA 티켓:** [LPS-88300](https://issues.liferay.com/browse/LPS-88300)
 
 #### 무엇이 바뀌었나요?
 
@@ -300,8 +300,8 @@ NTLM을 인증 시스템으로 계속 사용하려면 Liferay Marketplace에서 
 
 ---------------------------------------
 ### 포털 배포에서 더 이상 사용되지 않는 OpenID
-- **날짜:** 2019년 1월 21일
-- **JIRA 티켓:** [LPS-88906](https://issues.liferay.com/browse/LPS-88906)
+* **날짜:** 2019년 1월 21일
+* **JIRA 티켓:** [LPS-88906](https://issues.liferay.com/browse/LPS-88906)
 
 #### 무엇이 바뀌었나요?
 
@@ -321,8 +321,8 @@ OpenID를 인증 시스템으로 계속 사용하려면 Liferay Marketplace에�
 
 ---------------------------------------
 ### 포털 배포에서 더 이상 사용되지 않는 Google SSO
-- **날짜:** 2019년 1월 21일
-- **JIRA 티켓:** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
+* **날짜:** 2019년 1월 21일
+* **JIRA 티켓:** [LPS-88905](https://issues.liferay.com/browse/LPS-88905)
 
 #### 무엇이 바뀌었나요?
 
@@ -342,8 +342,8 @@ Google SSO를 인증 시스템으로 계속 사용하려면 Liferay Marketplace�
 
 ---------------------------------------
 ### liferay-amd-loader에서 Liferay.Loader.addModules를 제거했습니다.
-- **날짜:** 2019-2-01
-- **JIRA 티켓:** [LPS-83949](https://issues.liferay.com/browse/LPS-83949)
+* **날짜:** 2019-2-01
+* **JIRA 티켓:** [LPS-83949](https://issues.liferay.com/browse/LPS-83949)
 
 #### 무엇이 바뀌었나요?
 
@@ -365,8 +365,8 @@ Liferay.Loader.addModules를 직접 대체할 수 없습니다.
 
 ---------------------------------------
 ### 업데이트된 AlloyEditor v2.0에는 React의 새로운 주요 버전이 포함되어 있습니다.
-- **날짜:** 2019-2-04
-- **JIRA 티켓:** [LPS-90079](https://issues.liferay.com/browse/LPS-90079)
+* **날짜:** 2019-2-04
+* **JIRA 티켓:** [LPS-90079](https://issues.liferay.com/browse/LPS-90079)
 
 #### 무엇이 바뀌었나요?
 
@@ -382,7 +382,7 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 
 다음 두 가지 방법 중 하나로 코드를 업데이트해야 합니다.
 
-- [React 문서](https://reactjs.org/docs/react-component.html) 에 설명된 대로 `React.createClass` API에서 ES6 `class` API를 사용하도록 사용자 지정 버튼을 포팅합니다. 예를 들어 [ES6 클래스 기반 버튼](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx) 으로 이동하면서 변경된 사항을 확인하세요. [이전 `createClass` 기반 구현](https://github.com/liferay/alloy-editor/blob/2826ab9ceabe17c6ba0d38985baf8a787c23db43/src/ui/react/src/components/buttons/button-ol.jsx) .
+* [React 문서](https://reactjs.org/docs/react-component.html) 에 설명된 대로 `React.createClass` API에서 ES6 `class` API를 사용하도록 사용자 지정 버튼을 포팅합니다. 예를 들어 [ES6 클래스 기반 버튼](https://github.com/liferay/alloy-editor/blob/b082c312179ae6626cb2ddcc04ad3ebc5b355e1b/src/components/buttons/button-ol.jsx) 으로 이동하면서 변경된 사항을 확인하세요. [이전 `createClass` 기반 구현](https://github.com/liferay/alloy-editor/blob/2826ab9ceabe17c6ba0d38985baf8a787c23db43/src/ui/react/src/components/buttons/button-ol.jsx) .
 
 - 호환 어댑터를 제공하십시오. [create-react-class 패키지](https://www.npmjs.com/package/create-react-class) ( [여기](https://reactjs.org/docs/react-without-es6. html) )을 페이지에 삽입하여 `createClass` API를 복원할 수 있습니다.
 
@@ -393,8 +393,8 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 ---------------------------------------
 ### dl.tabs.visible Portal 속성이 더 이상 사용되지 않음
 
-- **날짜:** 2019-4월-10
-- **JIRA 티켓:** [LPS-93948](https://issues.liferay.com/browse/LPS-93948)
+* **날짜:** 2019-4월-10
+* **JIRA 티켓:** [LPS-93948](https://issues.liferay.com/browse/LPS-93948)
 
 #### 무엇이 바뀌었나요?
 
@@ -415,8 +415,8 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 ---------------------------------------
 ### 제품 메뉴에서 사용자 메뉴 이동
 
-- **날짜:** 2019-4월-19
-- **JIRA 티켓:** [LPS-87868](https://issues.liferay.com/browse/LPS-87868)
+* **날짜:** 2019-4월-19
+* **JIRA 티켓:** [LPS-87868](https://issues.liferay.com/browse/LPS-87868)
 
 #### 무엇이 바뀌었나요?
 
@@ -437,8 +437,8 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 ---------------------------------------
 ### 국가 목록에서 홍콩 및 마카오 제거
 
-- **날짜:** 2019-4-26
-- **JIRA 티켓:** [LPS-82203](https://issues.liferay.com/browse/LPS-82203)
+* **날짜:** 2019-4-26
+* **JIRA 티켓:** [LPS-82203](https://issues.liferay.com/browse/LPS-82203)
 
 #### 무엇이 바뀌었나요?
 
@@ -459,8 +459,8 @@ AlloyEditor는 React v15에서 v16으로의 주요 업그레이드를 포함하�
 ---------------------------------------
 ### JGroups가 3.6.16에서 4.1.1로 업그레이드되었습니다.
 
-- **날짜:** 2019-8-15
-- **JIRA 티켓:** [LPS-97897](https://issues.liferay.com/browse/LPS-97897)
+* **날짜:** 2019-8-15
+* **JIRA 티켓:** [LPS-97897](https://issues.liferay.com/browse/LPS-97897)
 
 #### 무엇이 바뀌었나요?
 
@@ -481,8 +481,8 @@ JGroups는 버전 3.6.16에서 4.1.1로 업그레이드되었습니다.
 ---------------------------------------
 ### Liferay AssetEntries_AssetCategories는 더 이상 사용되지 않습니다.
 
-- **날짜:** 2019-9-11
-- **JIRA 티켓:** [LPS-99973](https://issues.liferay.com/browse/LPS-99973) , [LPS-76488](https://issues.liferay.com/browse/LPS-76488)
+* **날짜:** 2019-9-11
+* **JIRA 티켓:** [LPS-99973](https://issues.liferay.com/browse/LPS-99973) , [LPS-76488](https://issues.liferay.com/browse/LPS-76488)
 
 #### 무엇이 바뀌었나요?
 
@@ -536,8 +536,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### 자동 태그 추가는 수동으로 재구성해야 함
 
-- **날짜:** 2019-Oct-02
-- **JIRA 티켓:** [LPS-97123](https://issues.liferay.com/browse/LPS-97123)
+* **날짜:** 2019-Oct-02
+* **JIRA 티켓:** [LPS-97123](https://issues.liferay.com/browse/LPS-97123)
 
 #### 무엇이 바뀌었나요?
 
@@ -558,8 +558,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### 블로그 이미지 포털 속성을 시스템 설정으로 이동했습니다.
 
-- **날짜:** 2019-Oct-02
-- **JIRA 티켓:** [LPS-95298](https://issues.liferay.com/browse/LPS-95298)
+* **날짜:** 2019-Oct-02
+* **JIRA 티켓:** [LPS-95298](https://issues.liferay.com/browse/LPS-95298)
 
 #### 무엇이 바뀌었나요?
 
@@ -580,8 +580,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### 캐시 부트스트랩 기능 제거
 
-- **날짜:** 2020년 1월 8일
-- **JIRA 티켓:** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
+* **날짜:** 2020년 1월 8일
+* **JIRA 티켓:** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
 
 #### 무엇이 바뀌었나요?
 
@@ -604,8 +604,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### 기본적으로 비활성화된 ContentTransformerListener
 
-- **날짜:** 2020-5-25
-- **JIRA 티켓:** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
+* **날짜:** 2020-5-25
+* **JIRA 티켓:** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
 
 #### 무엇이 바뀌었나요?
 
@@ -626,8 +626,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### DDMDataProvider에서 대체된 메소드
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 무엇이 바뀌었나요?
 
@@ -648,8 +648,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### DDMDataProviderRequest에서 제거된 생성자
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 무엇이 바뀌었나요?
 
@@ -670,18 +670,18 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### DDMDataProviderRequest에서 제거된 메서드
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 무엇이 바뀌었나요?
 
 이러한 메서드는 `com.liferay.dynamic.data.mapping.data.provider.DDMDataProviderRequest`에서 제거되었습니다.
 
-- `getDDMDataProviderContext`
-- `setDDMDataProviderContext`
-- `getHttpServletRequest`
-- `getParameter`
-- `queryString`
+* `getDDMDataProviderContext`
+* `setDDMDataProviderContext`
+* `getHttpServletRequest`
+* `getParameter`
+* `queryString`
 
 #### 누가 영향을 받습니까?
 
@@ -701,8 +701,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 ---------------------------------------
 ### DDMDataProviderRequest에서 대체된 메소드
-- **날짜:** 2020년 7월 14일
-- **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+* **날짜:** 2020년 7월 14일
+* **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 무엇이 바뀌었나요?
 
@@ -723,8 +723,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### DDMDataProviderResponse에서 제거된 메소드
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 무엇이 바뀌었나요?
 
@@ -751,8 +751,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### DDMDataProviderResponse에서 메소드 대체
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 무엇이 바뀌었나요?
 
@@ -773,8 +773,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### DDMDataProviderResponse에서 Enum을 교체했습니다.
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 무엇이 바뀌었나요?
 
@@ -795,8 +795,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### 삭제된 DDMDataProviderResponseOutput
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 무엇이 바뀌었나요?
 
@@ -817,8 +817,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### DDMDataProviderTracker에서 메소드 제거
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-81563](https://issues.liferay.com/browse/LPS-81563)
 
 #### 무엇이 바뀌었나요?
 
@@ -839,8 +839,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### DDMFormInstanceRecordLocalService에서 메소드 교체
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-81564](https://issues.liferay.com/browse/LPS-81564)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-81564](https://issues.liferay.com/browse/LPS-81564)
 
 #### 무엇이 바뀌었나요?
 
@@ -863,8 +863,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### DDMStructureService에서 제거된 메서드
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 #### 무엇이 바뀌었나요?
 
@@ -899,8 +899,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### 동적 데이터 매핑 지속성 클래스에서 제거된 메서드
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 #### 무엇이 바뀌었나요?
 
@@ -939,8 +939,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### 동적 데이터 매핑 유틸리티 클래스에서 제거된 메서드
 
-- **날짜:** 2020-7-14
-- **JIRA 티켓:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
+* **날짜:** 2020-7-14
+* **JIRA 티켓:** [LPS-91760](https://issues.liferay.com/browse/LPS-91760)
 
 #### 무엇이 바뀌었나요?
 
@@ -970,10 +970,10 @@ private AssetEntryLocalService _assetEntryLocalService;
 `getBadColumnNames` 은 지속성 유틸리티(예: `com.liferay.dynamic.data.mapping.service.persistence.DDMContentUtil`)에서 자동으로 제거되었으며 지속성 구현(예: `com.liferay.dynamic.data.mapping.service)에 보관되었습니다. .persistence.impl.DDMContentPersistenceImpl`) Service Builder에서 클래스를 생성한 경우.
 
 ---------------------------------------
-### module.framework.properties.felix.fileinstall.\ **포털 속성의 이름을 module.framework.properties.file.install.\** 으로 변경했습니다.
+### module.framework.properties.felix.fileinstall.\* 포털 속성의 이름을 module.framework.properties.file.install.\* 으로 변경했습니다.
 
-- **날짜:** 2020-Aug-08
-- **JIRA 티켓:** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
+* **날짜:** 2020-Aug-08
+* **JIRA 티켓:** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
 
 #### 무엇이 바뀌었나요?
 
@@ -994,8 +994,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### buffered.increment.enabled 포털 속성을 대체했습니다.
 
-- **날짜:** 2020-10-21
-- **JIRA 티켓:** [LPS-122159](https://issues.liferay.com/browse/LPS-122159)
+* **날짜:** 2020-10-21
+* **JIRA 티켓:** [LPS-122159](https://issues.liferay.com/browse/LPS-122159)
 
 #### 무엇이 바뀌었나요?
 
@@ -1024,8 +1024,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### module.framework.properties.file.install.optionalImportRefreshScope 포털 속성을 제거했습니다.
 
-- **날짜: 2021년 2월 3일** 일
-- **JIRA 티켓:** [LPS-122008](https://issues.liferay.com/browse/LPS-122008)
+* **날짜: 2021년 2월 3일** 일
+* **JIRA 티켓:** [LPS-122008](https://issues.liferay.com/browse/LPS-122008)
 
 #### 무엇이 바뀌었나요?
 
@@ -1046,8 +1046,8 @@ private AssetEntryLocalService _assetEntryLocalService;
 ---------------------------------------
 ### .cfg 파일에 .cfg 형식 사용
 
-- **날짜: 2021년 2월** 일-21일
-- **JIRA 티켓:** [LPS-128031](https://issues.liferay.com/browse/LPS-128031)
+* **날짜: 2021년 2월** 일-21일
+* **JIRA 티켓:** [LPS-128031](https://issues.liferay.com/browse/LPS-128031)
 
 #### 무엇이 바뀌었나요?
 

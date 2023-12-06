@@ -87,22 +87,22 @@ Analytics Cloud는 전체 사이트에 대한 포괄적인 보고서를 제공�
 
 ## 다음 단계
 
-- [사이트 대시보드](./touchpoints/sites-dashboard.md)
+* [사이트 대시보드](./touchpoints/sites-dashboard.md)
 
 ### 페이지
 
-- [페이지](./touchpoints/pages/pages.md)
-- [경로](./touchpoints/pages/paths.md)
+* [페이지](./touchpoints/pages/pages.md)
+* [경로](./touchpoints/pages/paths.md)
 
 ### 자산
 
-- [자산](./touchpoints/assets/assets.md)
-- [웹 콘텐츠](./touchpoints/assets/web-content.md)
-- [블로그](./touchpoints/assets/blogs.md)
-- [양식](./touchpoints/assets/forms.md)
-- [문서 및 미디어](./touchpoints/assets/documents-and-media.md)
-- [사용자 정의 자산 추적](./touchpoints/assets/tracking-custom-assets.md)
+* [자산](./touchpoints/assets/assets.md)
+* [웹 콘텐츠](./touchpoints/assets/web-content.md)
+* [블로그](./touchpoints/assets/blogs.md)
+* [양식](./touchpoints/assets/forms.md)
+* [문서 및 미디어](./touchpoints/assets/documents-and-media.md)
+* [사용자 정의 자산 추적](./touchpoints/assets/tracking-custom-assets.md)
 
 ### 이벤트
 
-- [이벤트 분석](./touchpoints/events/events-analysis.md)
+* [이벤트 분석](./touchpoints/events/events-analysis.md)

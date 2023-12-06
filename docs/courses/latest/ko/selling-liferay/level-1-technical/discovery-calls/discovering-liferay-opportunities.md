@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 발견 통화 - Liferay 기회
 
 **한눈에**

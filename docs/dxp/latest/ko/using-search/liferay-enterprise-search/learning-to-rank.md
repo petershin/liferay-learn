@@ -38,7 +38,7 @@ Elasticsearch로 전송된 Liferay 쿼리를 다시 채점하기 위해 Learning
 
 - 데이터가 인덱싱된 원격 Elasticsearch 서버.
 
-- [Elasticsearch Learning to Rank](https://github.com/o19s/elasticsearch-learning-to-rank) 플러그인의 해당 버전이 Elasticsearch에 설치되었습니다.
+* [Elasticsearch Learning to Rank](https://github.com/o19s/elasticsearch-learning-to-rank) 플러그인의 해당 버전이 Elasticsearch에 설치되었습니다.
 
 - Learning to Rank 플러그인에 업로드된 [훈련된 모델](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/training-models.html) .
 

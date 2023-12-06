@@ -2,7 +2,7 @@
 <!--TASK: Reconsider article.-->
 > 対応可能：Liferay DXP 7.3以降
 
-Liferay DXPではデフォルトで[レスポンシブデザインが使用](../building-a-responsive-site.md)されますが、コンテンツレイアウトをさらに細かく制御したい場合があります。 コンテントページで[グリッドフラグメント](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md)を使用することにより、デスクトップデバイスとモバイルデバイスのさまざまなスクリーンサイズに対してコンテンツレイアウトを正確に制御できます。 [Content Page](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)を編集すると、Grid Fragment (1) を使ってコンテンツのアウトラインを描き、Device Display セクション (3) で異なるターゲットデバイス用にカスタマイズしたレイアウトスタイル (2) を定義することができます。 たとえば、1行のモジュール数をカスタマイズしたり、グリッドパッディングオプションをスマートフォンサイズの画面専用にカスタマイズすることが可能です。
+Liferay DXPではデフォルトで[レスポンシブデザインが使用](./building-a-responsive-site.md)されますが、コンテンツレイアウトをさらに細かく制御したい場合があります。 コンテントページで[グリッドフラグメント](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md)を使用することにより、デスクトップデバイスとモバイルデバイスのさまざまなスクリーンサイズに対してコンテンツレイアウトを正確に制御できます。 [Content Page](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)を編集すると、Grid Fragment (1) を使ってコンテンツのアウトラインを描き、Device Display セクション (3) で異なるターゲットデバイス用にカスタマイズしたレイアウトスタイル (2) を定義することができます。 たとえば、1行のモジュール数をカスタマイズしたり、グリッドパッディングオプションをスマートフォンサイズの画面専用にカスタマイズすることが可能です。
 
 ![グリッドフラグメントを使用すると、さまざまなスクリーンサイズのレイアウトオプションをカスタマイズできます。](./building-responsive-layouts-with-the-grid-fragment/images/04.png)
 
@@ -36,6 +36,6 @@ Liferay DXPではデフォルトで[レスポンシブデザインが使用](../
 
 ## 関連トピック
 
-- [レスポンシブサイトの構築の概要](../building-a-responsive-site.md)
+- [レスポンシブサイトの構築の概要](./building-a-responsive-site.md)
 - [フラグメント構成の保存](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md)
 - [レイアウト要素の使用](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md)

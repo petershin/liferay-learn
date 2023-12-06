@@ -44,7 +44,7 @@
 
 ## 관련 주제
 
-- [조각 개발](./developing-fragments-intro.md)
-- [조각 편집기 사용](./using-the-fragments-editor.md)
-- [조각 툴킷 사용](./using-the-fragments-toolkit.md)
-- [조각의 요소 순서 설정](./setting-the-order-of-elements-in-a-fragment.md)
+* [조각 개발](./developing-fragments-intro.md)
+* [조각 편집기 사용](./using-the-fragments-editor.md)
+* [조각 툴킷 사용](./using-the-fragments-toolkit.md)
+* [조각의 요소 순서 설정](./setting-the-order-of-elements-in-a-fragment.md)

@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Liferay Experience Cloud 자체 관리형(PaaS) 가격
 
 **한눈에**

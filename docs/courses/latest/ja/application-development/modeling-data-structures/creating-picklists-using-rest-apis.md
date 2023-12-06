@@ -5,7 +5,7 @@
 1. [この演習のリソースをダウンロードし、解凍してください](./liferay-r5w2.zip) 。
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/creating-picklists-for-distributor-applications/liferay-r5w2.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-r5w2.zip -O
    ```
 
    ```bash
@@ -75,9 +75,9 @@
 
    **候補リスト**
 
-   | 名前    | 外部参照コード            |
-   |:----- |:------------------ |
-   | 注文タイプ | `LIST_ORDER_TYPES` |
+   | 名前         | 外部参照コード            |
+   |:---------- |:------------------ |
+   | コマースの注文タイプ | `LIST_ORDER_TYPES` |
 
    **ピックリスト項目**
 
@@ -107,7 +107,7 @@
    | メープルシロップ        | `mapleSyrup`         | `PRODUCT_TYPE_MAPLE_SYRUP`         |
    | オーガニック・メープルシロップ | `organicMapleSyrup`  | `PRODUCT_TYPE_ORGANIC_MAPLE_SYRUP` |
    | メープルバター         | `mapleButter`        | `PRODUCT_TYPE_MAPLE_BUTTER`        |
-   | メープルシュガー        | `メープルシュガー`           | `PRODUCT_TYPE_MAPLE_SUGAR`         |
+   | メープルシュガー        | `mapleSugar`         | `PRODUCT_TYPE_MAPLE_SUGAR`         |
    | メープル・フォンダン      | `mapleFondant`       | `PRODUCT_TYPE_MAPLE_FONDANT`       |
    | メープルゼリー         | `mapleJelly`         | `PRODUCT_TYPE_MAPLE_JELLY`         |
    | 樹木              | `trees`              | `PRODUCT_TYPE_TREES`               |
@@ -115,7 +115,7 @@
    | 教育コンテンツ         | `educationalContent` | `PRODUCT_TYPE_EDUCATIONAL_CONTENT` |
    | その他             | `other`              | `PRODUCT_TYPE_OTHER`               |
 
-1. 年間購入数量のピックリストを作成します：
+1. 年間購入ボリュームのピックリストを作成します：
 
    ```bash
    ./ListTypeDefinition_POST_AnnualPurchaseVolumes_ToInstance.sh

@@ -73,6 +73,6 @@
 
 ## 관련 정보
 
-- [콘텐츠의 범주 및 어휘 정의](./defining-categories-and-vocabularies-for-content.md)
-- [사용자 세그먼트 생성 및 관리](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md#creating-user-segments)
-- [세그먼트 편집기 UI 참조](../../site-building/personalizing-site-experience/segmentation/segments-editor-ui-reference.md)
+* [콘텐츠의 범주 및 어휘 정의](./defining-categories-and-vocabularies-for-content.md)
+* [사용자 세그먼트 생성 및 관리](../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md#creating-user-segments)
+* [세그먼트 편집기 UI 참조](../../site-building/personalizing-site-experience/segmentation/segments-editor-ui-reference.md)

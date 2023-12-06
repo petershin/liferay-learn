@@ -13,10 +13,10 @@ Liferay DXP 7.4부터 사이트 설정 애플리케이션 레이아웃은 인스
 
 다음 구성 영역을 찾을 수 있습니다.
 
-- [커머스](#commerce)
-- [플랫폼](#platform)
-- [컨텐츠 및 데이터](#content-and-data)
-- [기타](#other)
+* [커머스](#commerce)
+* [플랫폼](#platform)
+* [컨텐츠 및 데이터](#content-and-data)
+* [기타](#other)
 
 ![사이트 설정은 네 영역으로 구성됩니다.](./site-settings-ui-reference/images/20.png)
 
@@ -37,12 +37,12 @@ Liferay DXP 7.4부터 사이트 설정 애플리케이션 레이아웃은 인스
 
 기본적으로 플랫폼 영역에는 다음 설정이 포함됩니다.
 
-- [해석학](#analytics)
-- [지역화](#localization)
-- [사이트 환경 설정](#site-configuration)
-- [써드파티](#third-party)
-- [타사 애플리케이션](#third-party-applications)
-- [사용자](#users)
+* [해석학](#analytics)
+* [지역화](#localization)
+* [사이트 환경 설정](#site-configuration)
+* [써드파티](#third-party)
+* [타사 애플리케이션](#third-party-applications)
+* [사용자](#users)
 
 ### 해석학
 
@@ -102,16 +102,16 @@ Liferay Commerce에 대한 PunchOut2Go 사이트 설정을 구성합니다. 자�
 
 기본적으로 콘텐츠 및 데이터 영역에는 다음 설정이 포함됩니다.
 
-- [자산](#assets)
-- [채팅하기 위해 클릭합니다.](#click-to-chat)
-- [커뮤니티 도구](#community-tools)
-- [디지탈 서명](#digital-signature)
-- [문서 및 미디어](#documents-and-media)
-- [게시판](#message-boards)
-- [페이지](#pages)
-- [휴지통](#recycle-bin)
-- [보고서](#reports)
-- [나누는](#sharing)
+* [자산](#assets)
+* [채팅하기 위해 클릭합니다.](#click-to-chat)
+* [커뮤니티 도구](#community-tools)
+* [디지탈 서명](#digital-signature)
+* [문서 및 미디어](#documents-and-media)
+* [게시판](#message-boards)
+* [페이지](#pages)
+* [휴지통](#recycle-bin)
+* [보고서](#reports)
+* [나누는](#sharing)
 
 ### 자산
 
@@ -349,5 +349,5 @@ Liferay DXP를 DocuSign과 통합하여 전자 서명을 관리할 수 있습니
 
 ## 관련 주제
 
-- [페이지 구성 UI 참조](../creating-pages/page-settings/configuring-individual-pages.md)
-- [페이지 세트 구성](../creating-pages/page-settings/configuring-page-sets.md)
+* [페이지 구성 UI 참조](../creating-pages/page-settings/configuring-individual-pages.md)
+* [페이지 세트 구성](../creating-pages/page-settings/configuring-page-sets.md)

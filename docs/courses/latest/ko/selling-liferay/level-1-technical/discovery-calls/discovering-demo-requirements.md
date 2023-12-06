@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 디스커버리 통화 - 데모 디스커버리
 
 **한눈에**

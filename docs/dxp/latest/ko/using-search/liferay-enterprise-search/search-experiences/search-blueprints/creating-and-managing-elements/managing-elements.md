@@ -24,6 +24,6 @@
 
 ## 관련 주제
 
-- [요소 생성](./creating-elements.md)
-- [미리 정의된 요소 변수 참조](./predefined-element-variables-reference.md)
-- [검색 Blueprint 생성 및 관리](../creating-and-managing-search-blueprints.md)
+* [요소 생성](./creating-elements.md)
+* [미리 정의된 요소 변수 참조](./predefined-element-variables-reference.md)
+* [검색 Blueprint 생성 및 관리](../creating-and-managing-search-blueprints.md)

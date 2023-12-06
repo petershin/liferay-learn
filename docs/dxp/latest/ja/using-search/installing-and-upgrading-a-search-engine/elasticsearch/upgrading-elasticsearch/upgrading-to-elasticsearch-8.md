@@ -1,6 +1,6 @@
 # Elasticsearch 8へのアップグレード
 
-{bdg-secondary}`7.4 U81+`
+{bdg-secondary}`7.4 u81+、7.3 u31+`
 
 Elasticsearch 8は、最新のLiferay 7.4アップデートとGAリリースでサポートされ、推奨されています。 特定のバージョンの互換性の詳細については、 [Search Engine Compatibility Matrix](https://help.liferay.com/hc/ja/articles/360016511651) を参照してください。
 
@@ -18,7 +18,7 @@ Elasticsearchをアップグレードする前に、既存のデータをバッ�
 
 1. [Elasticsearchをアップグレードします](#upgrading-elasticsearch)
 
-1. X-Packセキュリティを使っている場合、Elasticsearch 8ではデフォルトで有効になっています。 無効にするには、このプロパティを追加する：
+1. X-Packセキュリティを使用している場合、Elasticsearch 8ではデフォルトで有効になっています。 無効にするには、このプロパティを追加する：
 
    ```yaml
    xpack.security.enabled: false

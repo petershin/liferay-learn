@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 경쟁 정보: 배틀카드 형식
 
 **한눈에**

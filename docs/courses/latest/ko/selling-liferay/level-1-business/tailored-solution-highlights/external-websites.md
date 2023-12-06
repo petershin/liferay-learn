@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 외부 웹사이트
 
 외부 웹사이트(또는 공개 웹사이트)는 조직이 제공해야 하는 정보에 대한 정보를 잠재 고객에게 제공하여 새로운 기회를 창출하는 데 도움이 됩니다. Liferay DXP는 이러한 유형의 심층 개인화된 옴니채널 경험을 구축하는 데 매우 적합합니다.
@@ -7,7 +12,7 @@
 외부 웹사이트를 강화하기 위해 강조해야 할 가장 중요한 기능 중 일부는 다음과 같습니다.
 
 * [디자인 시스템 및 경험 관리](https://learn.liferay.com/w/dxp/site-building)
-* [콘텐츠 및 자산 관리 ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [콘텐츠 및 자산 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
 * [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
 * [세분화 및 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [분석](https://learn.liferay.com/w/analytics-cloud/index) 및 [최적화](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)

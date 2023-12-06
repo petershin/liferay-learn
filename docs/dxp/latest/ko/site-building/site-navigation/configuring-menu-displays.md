@@ -86,7 +86,7 @@ Liferay를 처음 사용하는 경우 메뉴 표시 조각을 사용하여 사�
 
 ## 관련 주제
 
-- [탐색 메뉴 애플리케이션 사용](./using-the-navigation-menus-application.md)
-- [사이트 탐색 관리](./managing-site-navigation.md)
-- [콘텐츠 페이지에 요소 추가](../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
-- [콘텐츠 페이지 편집기 사용자 인터페이스 참조](../creating-pages/using-content-pages/content-page-editor-ui-reference.md)
+* [탐색 메뉴 애플리케이션 사용](./using-the-navigation-menus-application.md)
+* [사이트 탐색 관리](./managing-site-navigation.md)
+* [콘텐츠 페이지에 요소 추가](../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
+* [콘텐츠 페이지 편집기 사용자 인터페이스 참조](../creating-pages/using-content-pages/content-page-editor-ui-reference.md)

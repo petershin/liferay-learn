@@ -18,6 +18,6 @@
 
 ## 관련 주제
 
-- [Wiki 시작하기](./getting-started-with-wikis.md)
-- [위키 페이지 만들기](./creating-wiki-pages.md)
-- [Wiki 노드 만들기](./creating-a-node.md)
+* [Wiki 시작하기](./getting-started-with-wikis.md)
+* [위키 페이지 만들기](./creating-wiki-pages.md)
+* [Wiki 노드 만들기](./creating-a-node.md)

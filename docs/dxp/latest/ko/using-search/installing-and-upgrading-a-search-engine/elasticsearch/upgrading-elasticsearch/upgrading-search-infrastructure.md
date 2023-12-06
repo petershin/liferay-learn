@@ -39,9 +39,9 @@ LES 및 해당 앱은 Liferay 7.4와 함께 번들로 제공되기 때문에 이
 
 업그레이드된 검색 환경을 수동으로 테스트하여 의존하는 기능이 예상대로 작동하는지 확인하세요. 무언가가 작동하지 않거나 예상과 다르게 작동하는 경우 주요 변경 사항 문서를 검토하십시오.
 
-- [Liferay 7.4 주요 변경 사항](./../../../../liferay-internals/reference/7-4-breaking-changes.md)
-- [Liferay 7.3 주요 변경 사항](./../../../../liferay-internals/reference/7-3-breaking-changes.md)
-- [Liferay 7.2 주요 변경 사항](./../../../../liferay-internals/reference/7-2-breaking-changes.md)
+* [Liferay 7.4 주요 변경 사항](./../../../../liferay-internals/reference/7-4-breaking-changes.md)
+* [Liferay 7.3 주요 변경 사항](./../../../../liferay-internals/reference/7-3-breaking-changes.md)
+* [Liferay 7.2 주요 변경 사항](./../../../../liferay-internals/reference/7-2-breaking-changes.md)
 
 ## Liferay 7.2 이후 이름이 변경된 LES 애플리케이션
 

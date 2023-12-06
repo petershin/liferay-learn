@@ -28,14 +28,14 @@ search-facets/custom-facet.md
 
 검색창에 키워드를 입력하고 검색 버튼을 클릭합니다. 기본 검색 환경은 오른쪽에 결과가 있고 왼쪽에 **패싯** 컬렉션이 있는 페이지로 리디렉션됩니다.
 
-- [사이트 페이셋](search-facets/site-facet.md)
-- [유형 페이셋](search-facets/type-facet.md)
-- [분류 페이셋](search-facets/category-facet.md)
-- [태그 페이셋](search-facets/tag-facet.md)
-- [폴더 페이셋](search-facets/folder-facet.md)
-- [사용자 패싯](search-facets/user-facet.md)
-- [수정 페이셋](search-facets/modified-facet.md)
-- [커스텀 페이셋](search-facets/custom-facet.md)
+* [사이트 페이셋](search-facets/site-facet.md)
+* [유형 페이셋](search-facets/type-facet.md)
+* [분류 페이셋](search-facets/category-facet.md)
+* [태그 페이셋](search-facets/tag-facet.md)
+* [폴더 페이셋](search-facets/folder-facet.md)
+* [사용자 패싯](search-facets/user-facet.md)
+* [수정 페이셋](search-facets/modified-facet.md)
+* [커스텀 페이셋](search-facets/custom-facet.md)
 
 ![검색 결과의 예시 페이지.](./search-facets/images/01.png)
 

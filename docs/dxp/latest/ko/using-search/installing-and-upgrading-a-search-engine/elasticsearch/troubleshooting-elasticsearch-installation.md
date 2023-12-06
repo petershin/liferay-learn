@@ -18,8 +18,8 @@ Liferay와 Elasticsearch는 구성으로 가득 찬 복잡한 시스템입니다
 
 몇 가지 일반적인 문제와 해결 방법에 대해 알아보려면 다음을 참조하세요.
 
-- [Elasticsearch 연결 문제 해결](./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md)
-- [Elasticsearch 문제 해결: 일반적인 문제](./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md)
+* [Elasticsearch 연결 문제 해결](./troubleshooting-elasticsearch-installation/troubleshooting-the-elasticsearch-connection.md)
+* [Elasticsearch 문제 해결: 일반적인 문제](./troubleshooting-elasticsearch-installation/troubleshooting-elasticsearch-common-issues.md)
 
 Liferay와 함께 번들로 제공되는 사이드카 Elasticsearch 서버의 문제를 해결하려면 [사이드카/임베디드 Elasticsearch 문제 해결](./using-the-sidecar-or-embedded-elasticsearch.md#troubleshooting-the-sidecar-embedded-elasticsearch) 을 참조하세요.
 

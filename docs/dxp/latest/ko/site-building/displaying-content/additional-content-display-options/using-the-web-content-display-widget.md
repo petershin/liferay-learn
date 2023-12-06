@@ -112,7 +112,7 @@
 
 ## 관련 주제
 
-- [기본 웹 콘텐츠 기사 추가](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
-- [콘텐츠 페이지 사용](../../../site-building/creating-pages/using-content-pages.md)
-- [디스플레이 페이지 템플릿에 콘텐츠 표시](../using-display-page-templates.md)
-- [자산 표시](../using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md)
+* [기본 웹 콘텐츠 기사 추가](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
+* [콘텐츠 페이지 사용](../../../site-building/creating-pages/using-content-pages.md)
+* [디스플레이 페이지 템플릿에 콘텐츠 표시](../using-display-page-templates.md)
+* [자산 표시](../using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md)

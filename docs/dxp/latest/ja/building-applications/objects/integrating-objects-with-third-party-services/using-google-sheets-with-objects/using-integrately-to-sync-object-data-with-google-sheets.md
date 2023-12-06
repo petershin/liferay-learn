@@ -1,6 +1,6 @@
 # Integratelyを使用して、オブジェクトデータをGoogle シートと同期する
 
-{bdg-secondary}`7.4以降で利用可能`
+{bdg-secondary}`Liferay 7.4+`
 
 ここでは、 [Integrately](https://integrately.com/) を使用して、Liferay Objectと Google シート間の同期タスクをトリガーするWebhooksの使用方法について説明します。 この方法でデータを同期するには、Integratelyのアカウント、Googleスプレッドシート、およびアクティブなDXP 7.4インスタンスが必要です。 DXPインスタンスには、Googleスプレッドシートにデータを送受信するための必要なフィールドを持つ公開オブジェクトも必要です。
 
@@ -22,7 +22,7 @@
 
 1. オートメーションのトリガーとアクションを定義し、 ［**Go**］ をクリックします。
 
-   ![フローを定義し、［*Go］をクリックします。](./using-integrately-to-sync-object-data-with-google-sheets/images/04.png)
+   ![フローを定義し、*Goをクリックする。](./using-integrately-to-sync-object-data-with-google-sheets/images/04.png)
 
 1. 生成された **Webhook URL** をコピーします。
 
@@ -64,6 +64,6 @@
 
 ## 関連トピック
 
-* [オブジェクト](../../../objects.md)
+* [オブジェクト概要](../../../objects.md)
 * [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
 * [オブジェクト統合を理解する](../../understanding-object-integrations.md)

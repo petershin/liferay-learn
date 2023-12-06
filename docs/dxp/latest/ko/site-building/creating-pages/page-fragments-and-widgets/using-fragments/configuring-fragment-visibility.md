@@ -85,6 +85,6 @@
 
 ## 관련 정보
 
-- [조각 관리](./managing-fragments.md)
-- [단편 구성 저장](../using-fragments/saving-fragment-compositions.md)
-- [기본 조각 참조](../using-fragments/default-fragments-reference.md)
+* [조각 관리](./managing-fragments.md)
+* [단편 구성 저장](../using-fragments/saving-fragment-compositions.md)
+* [기본 조각 참조](../using-fragments/default-fragments-reference.md)

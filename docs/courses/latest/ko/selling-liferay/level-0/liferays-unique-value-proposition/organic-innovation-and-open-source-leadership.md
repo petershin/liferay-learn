@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 유기적 혁신과 오픈 소스 리더십
 
 **한눈에**

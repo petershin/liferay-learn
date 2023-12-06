@@ -86,4 +86,4 @@
 
 ## 관련 주제
 
-- [위젯 데이터 내보내기/가져오기](../configuring-widgets/exporting-importing-widget-data.md)
+* [위젯 데이터 내보내기/가져오기](../configuring-widgets/exporting-importing-widget-data.md)

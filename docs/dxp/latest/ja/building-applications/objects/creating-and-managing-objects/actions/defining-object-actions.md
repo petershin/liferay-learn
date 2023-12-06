@@ -1,6 +1,6 @@
 # オブジェクトアクションの定義
 
-{bdg-secondary}`Liferay 7.4 U60+/GA60+で利用可能`
+{bdg-secondary}`Liferay 7.4 U60+/GA60+`
 
 オブジェクトアクションは、オブジェクトエントリーイベントに対して手動または自動で実行できる操作を定義します。
 
@@ -34,17 +34,13 @@
    | 更新後            | エントリーが更新されたとき          |
    | スタンドアロン        | 手動でトリガーする              |
 
-   スタンドアロン以外のトリガーはすべて自動です。 スタンドアロントリガーは、任意のタイプのアクションを手動で実行するためのものです。 詳しくは、 [マニュアルアクションの使用](./using-manual-actions.md) をご覧ください。
+   スタンドアロン以外のトリガーはすべて自動です。 スタンドアロントリガーは、任意のタイプのアクションを手動で実行するためのものです。 詳しくは、 [手動アクションの使用](./using-manual-actions.md) をご覧ください。
 
    ![アクションが実行されるタイミングを決定します。](./defining-object-actions/images/03.png)
 
 1. (オプション) 自動トリガーの条件を有効にします。 **コード**( ![Code](../../../../images/icon-code.png) ) をクリックすると、利用可能な式が表示されます。
 
-   Liferay 7.4 U33以降とGA33以降では、 ［**完了**］ をクリックすると、Liferayは条件が有効な構文であるか検証します。 式が無効な場合、Liferayはエラーメッセージを表示します。 利用可能なフィールド、演算子、関数の詳細については、「 [Expression Builder Validations Reference」](../validations/expression-builder-validations-reference.md) を参照してください。
-
-   <!--TASK: See \[Using Action Conditions\]() for more information. -->
-
-   ![トリガーの追加条件を設定するには、式を使用します。](./defining-object-actions/images/04.png)
+   Liferay 7.4 U33以降とGA33以降では、 ［**完了**］ をクリックすると、Liferayは条件が有効な構文であるか検証します。 式が無効な場合、Liferayはエラーメッセージを表示します。 使用可能なフィールド、演算子、関数の詳細については、 [Expression Builder Validations Reference](../validations/expression-builder-validations-reference.md) を参照してください。 <!--TASK: See \[Using Action Conditions\]() for more information. --> ![トリガーの追加条件を設定するには、式を使用します。](./defining-object-actions/images/04.png)
 
 1. 実行するアクションのタイプを選択し、すべての追加フィールドに入力します。
 

@@ -71,4 +71,4 @@ Liferay DXP/Portal 7.4+의 경우 위젯 템플릿은 FreeMarker만 지원합니
 
 ## 관련 주제
 
-- [위젯 템플릿 예](./using-a-widget-template-example.md)
+* [위젯 템플릿 예](./using-a-widget-template-example.md)

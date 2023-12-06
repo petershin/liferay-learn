@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 구매자 프로세스와 판매 프로세스
 
 **한눈에**

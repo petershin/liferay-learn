@@ -1,6 +1,6 @@
 # ユーザーのインポートとエクスポート
 
-LDAPが接続されると、ユーザーはログイン時にインポートされる。 しかし、デレクタブル・ボンサイは、オールマイティ・シロップの全ユーザーを一挙に輸入しようとしている。
+LDAPが接続されると、ユーザーはログイン時にインポートされる。 しかし、クラリティ・ビジョン・ソリューションズは、Fabulous Framesの全ユーザーを一度にインポートしたいと考えている。
 
 ## LDAPユーザーのインポート
 
@@ -17,7 +17,7 @@ LDAPが接続されると、ユーザーはログイン時にインポートさ�
    ![LDAPユーザーがインポートされました。](./importing-and-exporting-users/images/01.png)
 
 ```{note}
-Enable _Import_]ボックスのチェックを外したままにすると、ユーザはログイン時に個別にインポートされます。 LDAPから一括インポートを行う場合は、インポートを使用する。 
+Enable _Import_]ボックスのチェックを外したままにしておくと、ユーザはログイン時に個別にインポートされます。 LDAPから一括インポートを行う場合は、インポートを使用する。 
 ```
 
 ## LDAPユーザーのエクスポート
@@ -40,19 +40,7 @@ Enable _Import_]ボックスのチェックを外したままにすると、ユ�
 
 1. 左のナビゲーションで、 **Servers** をクリックする。
 
-1. almightysyrup LDAP サーバーの **Edit**(![Edit icon](../../images/icon-edit.png)) をクリックします。
-
-1. 下にスクロールして、 **Test LDAP Users** をクリックする。 カイル・クラインがLDAPに追加されたことを確認する。
-
-   ![カイル・クラインがLDAPに追加された。](./importing-and-exporting-users/images/02.png)
-
-1. 彼の個人情報を変更する。 例えば、彼の生年を1970年から1971年に変更する。 ［**保存**］ をクリックします。
-
-1. LDAPサーバーの設定に戻る。 **Global Menu**(![Global Menu](../../images/icon-applications-menu.png)) &rarr; **Control Panel** &rarr; **Instance Settings** に移動する。
-
-1. 左のナビゲーションで、 **Servers** をクリックする。
-
-1. **Edit**(![Edit icon](../../images/icon-edit.png)) for `almightysyrup` LDAP directoryをクリックします。
+1. `fabulousframes` LDAP サーバーの **Edit**(![Edit icon](../../images/icon-edit.png)) をクリックします。
 
 1. 下にスクロールして、 **Test LDAP Users** をクリックする。 カイル・クラインがLDAPに追加されたことを確認する。
 

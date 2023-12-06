@@ -6,6 +6,9 @@ toc:
   - ./what-challenges-does-liferay-solve-industry-solutions/insurance.md
   - ./what-challenges-does-liferay-solve-industry-solutions/healthcare.md
   - ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
+visibility:
+  - Employee
+  - Partner
 ---
 # Liferay는 어떤 과제를 해결합니까? - 산업 솔루션
 

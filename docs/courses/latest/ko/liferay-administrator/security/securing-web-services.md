@@ -17,5 +17,5 @@ CORS(교차 원본 리소스 공유)는 브라우저에 대해 Liferay 시스템
 
 ## 관련 개념
 
-- [서비스 액세스 정책 설정](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies)
-- [CORS 설정](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors)
+* [서비스 액세스 정책 설정](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-service-access-policies)
+* [CORS 설정](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors)

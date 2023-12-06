@@ -33,7 +33,7 @@
 1. [この演習のリソースをダウンロードし、解凍してください](./liferay-h2x9.zip) ：
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/setting-up-the-application-evaluation-object/liferay-h2x9.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-h2x9.zip -O
    ```
 
    ```bash

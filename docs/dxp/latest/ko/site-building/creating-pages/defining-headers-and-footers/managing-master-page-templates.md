@@ -1,83 +1,89 @@
 # 마스터 페이지 템플릿 관리
 
-> 사용 가능: Liferay DXP/Portal 7.3+
+{bdg-secondary}`사용 가능: Liferay DXP/Portal 7.3+`
 
-마스터 페이지 템플릿을 관리하려면 다음 단계를 따르십시오.
+마스터 페이지 템플릿을 관리하려면 다음 단계를 따르세요.
 
-1. 제품 메뉴를 열고 **디자인** &rarr; **페이지 템플릿** 로 이동합니다.
-1. **마스터** 탭을 선택합니다.
-1. 마스터 페이지 템플릿에 대한 **작업**(![Actions](./../../../images/icon-actions.png)) 메뉴를 열고 옵션 중 하나를 선택합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 **디자인** &rarr; **페이지 템플릿** 으로 이동합니다.
 
-    ![페이지 템플릿 애플리케이션의 마스터 탭에서 작업 메뉴를 열어 마스터 페이지 템플릿을 관리합니다.](./managing-master-page-templates/images/01.png)
+1. **마스터** 탭을 선택하세요.
+
+1. 마스터 페이지 템플릿에 대해 **작업**(![Actions](./../../../images/icon-actions.png))을 클릭하고 옵션 중 하나를 선택합니다.
+
+   ![Manage the master page template from the masters tab of the page templates application and opening the actions menu.](./managing-master-page-templates/images/01.png)
 
 **편집:** 마스터 페이지 템플릿을 구성합니다.
 
-**썸네일 변경:** **마스터** 탭에서 마스터 페이지 템플릿의 카드에 대해 표시할 썸네일 이미지를 선택합니다.
+**썸네일 변경:** 마스터 페이지 템플릿 카드에 표시할 썸네일 이미지를 선택합니다.
 
-**이름 바꾸기:** 마스터 페이지 템플릿의 이름을 변경합니다.
+**기본값으로 표시:** 템플릿을 위젯 페이지의 기본 마스터 페이지로 만듭니다. 이 옵션은 승인된 마스터 페이지 템플릿에서 사용할 수 있습니다.
+
+**이름 바꾸기:** 템플릿 이름을 변경합니다.
+
+**내보내기:** 마스터 페이지 템플릿 정의를 내보내고 다운로드합니다. 이 옵션은 승인된 마스터 페이지 템플릿에서 사용할 수 있습니다.
 
 **사본 만들기:** 마스터 페이지 템플릿을 복제합니다. 복사본은 끝에 "Copy"가 추가된 동일한 이름을 사용합니다.
 
-**내보내기:** 마스터 페이지 템플릿 정의를 내보내고 다운로드합니다. 이 옵션은 마스터 페이지 템플릿이 **승인됨** 상태일 때 사용할 수 있습니다.
+**권한:** 템플릿에 대한 권한을 정의합니다.
 
-**권한:** 마스터 페이지 템플릿에 대한 권한을 정의합니다.
+**삭제:** 마스터 페이지 템플릿을 제거합니다. 각 템플릿에 대한 확인란을 선택하고 관리에서 **휴지통**(![휴지통 아이콘](../../../images/icon-trash.png))을 선택하여 여러 마스터 페이지 템플릿을 한 번에 삭제할 수도 있습니다. 도구 모음.
 
-**삭제:** 마스터 페이지 템플릿을 제거합니다. 또한 각 템플릿의 확인란을 선택하고 `X`클릭하거나 관리 도구 모음에서 **삭제** 작업을 선택하여 여러 마스터 페이지 템플릿을 한 번에 삭제할 수 있습니다.
-
-**초안 폐기:** 마스터 페이지 초안을 폐기합니다. 이 옵션은 마스터 페이지 템플릿이 **초안** 상태일 때 사용할 수 있습니다.
+**초안 삭제:** 마스터 페이지 초안을 삭제합니다. 이 옵션은 초안에서 사용할 수 있습니다.
 
 ```{note}
-변경하고 게시한 후에는 마스터 페이지 템플릿을 사용하는 모든 페이지에 전파됩니다.
+변경 사항을 적용하고 게시한 후에는 마스터 페이지 템플릿을 사용하는 모든 페이지에 전파됩니다.
 ```
 
 ## 페이지의 마스터 페이지 템플릿 변경
 
-[Content Page Editor](../using-content-pages/content-page-editor-ui-reference.md)에서 페이지의 마스터 페이지 템플릿을 변경할 수 있습니다. 다음과 같이하세요:
+[콘텐츠 페이지 편집기](../using-content-pages/content-page-editor-ui-reference.md)에서 페이지의 마스터 페이지 템플릿을 변경할 수 있습니다. 페이지 템플릿을 변경하려면 다음 단계를 따르세요.
 
 1. 마스터 페이지 템플릿을 변경하려는 페이지로 이동합니다.
-1. 클릭 **편집**(![Edit icon](../../../images/icon-edit.png))
-1. 편집 사이드바에서 **페이지 디자인** 메뉴(![Page Design menu](../../../images/icon-format.png))를 클릭합니다.
-1. 마스터 섹션에서 사용하려는 **마스터 페이지 템플릿** 클릭합니다.
 
-   ![페이지 디자인 메뉴를 통해 사용하려는 마스터 페이지 템플릿을 클릭합니다.](./managing-master-page-templates/images/03.png)
+1. **편집**(![아이콘 편집](../../../images/icon-edit.png))을 클릭합니다.
 
-## 마스터 페이지 템플릿의 모양과 느낌 변경
+1. 편집 사이드바에서 **페이지 디자인 옵션** 메뉴(![페이지 디자인 메뉴](../../../images/icon-format.png))를 클릭합니다.
 
-마스터 페이지 템플릿의 모양과 느낌 및 기타 옵션을 관리하려면 다음 단계를 따르십시오.
+1. 마스터 섹션에서 사용하려는 마스터 페이지 템플릿을 선택합니다.
 
-1. 제품 메뉴를 열고 **디자인** &rarr; **페이지 템플릿** 로 이동합니다.
+   ![Select the master page template you want to use through the page design options menu.](./managing-master-page-templates/images/02.png)
 
-1. **마스터** 탭을 선택합니다.
+## 마스터 페이지 템플릿 디자인 변경
 
-1. 구성하려는 마스터 페이지 템플릿에 대해 **작업** 메뉴(![Actions](./../../../images/icon-actions.png)) &rarr; **편집** 엽니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 **디자인** &rarr; **페이지 템플릿** 으로 이동합니다.
 
-1. **페이지 디자인** 메뉴 클릭 (![Page Design menu](../../../images/icon-format.png)) &rarr; **기타 페이지 디자인 옵션**(![More Page Design Options](../../../images/icon-cog3.png))
+1. **마스터** 탭을 선택하세요.
 
-   ![추가 페이지 디자인 옵션을 클릭하여 마스터 페이지 템플릿 일반 옵션에 액세스합니다.](./managing-master-page-templates/images/06.png)
+1. 구성하려는 마스터 페이지 템플릿에 대해 **작업**(![Actions](./../../../images/icon-actions.png))을 클릭합니다. &rarr; **편집** .
 
-1. 모양 및 느낌 탭에서 마스터 페이지 템플릿의 스타일을 필요에 맞게 조정할 수 있습니다.
+1. **페이지 디자인 옵션** 메뉴를 클릭합니다(![페이지 디자인 옵션 메뉴](../../../images/icon-format.png)) &rarr; **추가 페이지 디자인 옵션**(![추가 페이지 디자인 옵션] (../../../images/icon-cog3.png))
 
-    ![사용 가능한 옵션에서 새 마스터 페이지 템플릿을 선택합니다.](./managing-master-page-templates/images/05.png)
+   ![Click More Page Design Options to access the master page templates general pptions](./managing-master-page-templates/images/03.png)
 
-**파비콘:** 테마에서 적용되는 기본 파비콘을 변경합니다.
+1. 디자인 탭에서 마스터 페이지 템플릿의 스타일을 변경할 수 있습니다.
 
-**Style Book:** 테마에서 적용된 기본 Style Book을 변경합니다.
+   ![Select a new master page template from the available options.](./managing-master-page-templates/images/04.png)
 
-**테마:** 사이트의 페이지에서 테마를 사용할지 또는 현재 마스터 페이지 템플릿에 대한 특정 테마를 선택할지 선택합니다.
+**테마:** 사이트 페이지의 테마를 사용할지 아니면 현재 마스터 페이지 템플릿에 대한 특정 테마를 선택할지 선택합니다.
 
-**설정:** 바닥글 및 머리글 검색 막대와 같은 테마 측면을 표시할지 여부를 결정하도록 토글합니다. 사용자 지정 CSS는 테마가 로드된 후 적용할 수도 있습니다.
+**파비콘:** 테마에 적용되는 기본 파비콘을 변경합니다.
 
-**테마 CSS 클라이언트 확장:** 전체 테마를 배포하지 않고 테마의 기본 CSS를 완전히 교체하려면 [테마 CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) 추가합니다.
+**스타일북:** 테마에서 적용되는 기본 스타일북을 변경합니다.
 
-**CSS 클라이언트 확장:** [CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) 추가하여 마스터 페이지 템플릿을 사용하는 콘텐츠 페이지의 CSS 스타일을 재정의합니다.
+**테마 CSS 클라이언트 확장:** [테마 CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client- 추가 확장) 전체 테마를 배포하지 않고 테마에서 기본 CSS를 완전히 교체합니다.
 
-**JavaScript 코드 및 JavaScript 클라이언트 확장:** **고급** 탭에서 페이지 하단에서 실행되는 JavaScript 코드를 추가할 수 있습니다. 이 마스터 페이지 템플릿을 사용하는 페이지를 방문할 때 JavaScript가 실행되도록 [JavaScript 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) 추가할 수 있습니다.
+**CSS 클라이언트 확장:** 재정의하려면 [CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) 을 추가하세요. 마스터 페이지 템플릿을 사용하는 콘텐츠 페이지의 CSS 스타일입니다.
+
+**맞춤 CSS:** 맞춤 CSS도 적용할 수 있으며 테마 다음에 로드됩니다. 상속된 테마를 사용하면 맞춤 CSS가 비활성화됩니다.
+
+**JavaScript 클라이언트 확장 및 사용자 정의 JavaScript:** [JavaScript 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) 이 마스터 페이지 템플릿을 사용하는 페이지를 방문할 때 JavaScript가 실행되도록 추가할 수 있습니다. 페이지 하단에서 실행되는 사용자 정의 JavaScript 코드를 추가할 수 있습니다.
 
 ```{note}
-테마는 마스터 페이지 템플릿을 통해 콘텐츠 페이지에 적용됩니다. 마스터 페이지 템플릿이 콘텐츠 페이지에 적용되면 콘텐츠 페이지의 모양과 느낌이 마스터 페이지 템플릿에 의해 정의됩니다.
+테마는 마스터 페이지 템플릿을 통해 콘텐츠 페이지에 적용됩니다. 마스터 페이지 템플릿이 콘텐츠 페이지에 적용되면 콘텐츠 페이지의 디자인은 마스터 페이지 템플릿에 의해 정의됩니다.
 ```
 
 ## 관련 주제
 
-- [마스터 페이지 템플릿](./master-page-templates.md)
-- [마스터 페이지 템플릿 만들기](./creating-a-master-page-template.md)
+[마스터 페이지 템플릿](./master-page-templates.md)
+
+[마스터 페이지 템플릿 만들기](./creating-a-master-page-template.md)

@@ -30,7 +30,7 @@
 
 ## 관련 정보
 
-- [사이트 회원 유형 변경](./changing-site-membership-type.md)
-- [사이트 설정 UI 참조](../site-settings-ui-reference.md)
-- [역할 및 권한](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
-- [고급 사이트 회원 관리를 위한 팀 만들기](../../sites/site-membership/creating-teams-for-sites.md)
+* [사이트 회원 유형 변경](./changing-site-membership-type.md)
+* [사이트 설정 UI 참조](../site-settings-ui-reference.md)
+* [역할 및 권한](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
+* [고급 사이트 회원 관리를 위한 팀 만들기](../../sites/site-membership/creating-teams-for-sites.md)

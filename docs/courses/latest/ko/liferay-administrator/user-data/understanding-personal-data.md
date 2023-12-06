@@ -77,4 +77,4 @@
 
 ## 관련 개념
 
-- [사용자 데이터 관리](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)
+* [사용자 데이터 관리](https://learn.liferay.com/w/dxp/users-and-permissions/managing-user-data)

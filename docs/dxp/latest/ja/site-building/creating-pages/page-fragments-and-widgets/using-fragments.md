@@ -32,15 +32,15 @@ using-fragments/managing-fragments.md
 using-fragments/propagating-fragment-changes.md
 ```
 
-ページ・フラグメントは、 [コンテンツページ](../using-content-pages.md) と、それらに関連するテンプレート（すなわち、 [マスターズ](../defining-headers-and-footers/master-page-templates.md)、 [ページ](../adding-pages/creating-a-page-template.md)、 [ディスプレイページ](../../displaying-content/using-display-page-templates.md)）を構築するための、拡張可能で再利用可能なドラッグ＆ドロップ要素です。 CSS、HTML、JavaScriptを使用して構築され、ページに構造と機能の両方を提供することができます。
+ページ・フラグメントは、 [コンテンツ・ページ](../using-content-pages.md) と、それらに関連するテンプレート（すなわち、 [マスター](../defining-headers-and-footers/master-page-templates.md)、 [ページ](../adding-pages/creating-a-page-template.md)、 [表示ページ](../../displaying-content/using-display-page-templates.md)）を構築するための、拡張可能で再利用可能なドラッグ・アンド・ドロップ要素です。 HTML、CSS、JavaScriptを使用して構築され、ページに構造と機能の両方を提供することができます。
 
 ![フラグメントを使ってコンテンツページやテンプレートを構築](./using-fragments/images/01.png)
 
-Liferay はすぐに使える様々なフラグメントを提供しますが、 [page fragment editor](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md) または [Fragments Toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md)を使ってカスタムフラグメントを開発することができます。 さらに、 [Liferay ウィジェット](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#including-widgets-within-a-fragment) をフラグメントに埋め込んだり、編集可能なフィールドを追加したりすることもできます。 詳細については、[Developing Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)を参照してください。
+Liferay はすぐに使える様々なフラグメントを提供しますが、 [page fragment editor interface](../../developer-guide/reference/fragments/page-fragment-editor-interface-reference.md) や [Fragments Toolkit](../../developer-guide/developing-page-fragments/using-the-fragments-toolkit.md)を使ってカスタムフラグメントを開発することができます。 さらに、 [Liferay ウィジェット](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md#including-widgets-within-a-fragment) をフラグメントに埋め込んだり、 [編集可能なフィールド](../../developer-guide/reference/fragments/fragment-specific-tags-reference.md)を追加することもできます。 詳細については、[Developing Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md)を参照してください。
 
 フォームを使用している場合、 [カスタムフォームフラグメント](./using-fragments/personalizing-custom-forms-using-form-fragments.md)にマッピングすることで、フォームフィールドをパーソナライズすることができます。
 
-すべてのページ・フラグメントは、管理しやすく使いやすいように、関連するフラグメントをグループ化したセットに編成されている。 各フラグメントセットには、すべてのフラグメントからアクセス可能な共通リソースを含めることができる。 詳細については、[Including Default Resources in Page Fragments](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md)を参照してください。
+すべてのページ・フラグメントは、 **セット** にまとめられている。 各フラグメントセットには、すべてのフラグメントからアクセス可能な共通リソースを含めることができる。 詳細は、[フラグメントにデフォルトのリソースを含める](../../developer-guide/developing-page-fragments/including-default-resources-with-fragments.md)を参照してください。
 
 ページやテンプレートにフラグメントを追加した後、フラグメントやそのサブエレメントを設定・カスタマイズすることができます。 これらのオプションは異なる場合がありますが、一部はすべてに共通です。 使用可能なオプションの詳細については、 [フラグメントの設定](./using-fragments/configuring-fragments.md) を参照してください。
 
@@ -93,5 +93,5 @@ Liferay はすぐに使える様々なフラグメントを提供しますが、
 
 :::{grid-item-card} フラグメントの変更の伝播
 :link: ./using-fragments/propagating-fragment-changes.md
-:::  
+:::
 ::::

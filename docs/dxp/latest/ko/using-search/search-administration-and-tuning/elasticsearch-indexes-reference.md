@@ -57,4 +57,4 @@ Liferay 7.2 인덱스 이름은 패치가 인덱스 명명 패턴에 변경 사�
 
 ## 관련 정보
 
-- [다중 테넌트 색인 이름](../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names)
+* [다중 테넌트 색인 이름](../getting-started/whats-new-in-search-for-73.md#multi-tenant-index-names)

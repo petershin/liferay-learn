@@ -26,18 +26,13 @@ toc:
 
 詳細ではあるが、これはまだ **価格の概要** 。 パートナーはLiferayチームの適切なメンバーと協力し、価格設定の詳細を確認してください。 Liferayの社員は、関連するセールスマネージャーと協力してください。
 
-```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-2a-liferay-pricing-saas) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-2a-liferay-pricing-saas-pdf) からダウンロードしてください。
-```
-
 ## パートナーとの共同販売
 
 Liferayは、共同マーケティング、共同デリバリー、共同販売を意味するPartner Together戦略に取り組んでいます。 Co-sellingとは、Liferayがパートナーと共にパートナーの機会を提供することです。 新規顧客か既存顧客かによって、チームの構成は異なる：
 
 **新しいロゴの機会：**
 
-* チャネルアカウントマネージャー(CAM)および/またはLiferayアカウントエグゼクティブ(AE)が販売をサポートします。
+* チャネルアカウントマネージャー（CAM）および/またはLiferayアカウントエグゼクティブ（AE）が販売をサポートします。
 * イネーブルメント・チームのセールス・エンジニアやソリューション・アーキテクトがサポートすることもあります。
 
 **既存顧客の機会：**
@@ -124,16 +119,16 @@ SaaSであることが不可能なシナリオも考えられる：
 * 顧客はSaaSは選択肢にないと言うかもしれない。
 * データをめぐる懸念があるかもしれない：
   * 保管場所
-  * どのように保護されているか
+  * セキュリティの確保
   * 誰が管理しているのか
 
-このような場合、PaaS - Liferay Experience Cloud Self-Managedが選択肢になるかもしれませんし、Liferayのクラウド全般が選択肢にない場合は、DXP Self-Hostedが利用できます。
+このような場合、PaaSであるLiferay Experience Cloud Self-Managedが選択肢となり得ますし、Liferayのクラウド全般が選択肢とならない場合は、DXP Self-Hostedが利用できます。
 
-また、 [営業決定フロー](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) も、このステップを支援するために使用できることを忘れないでください。
+また、 [「セールス決定フロー」](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) 、このステップに役立てることもできる。
 
 ![Liferay の新規顧客と新規プロジェクトの販売決定フローは、新規のオポチュニティにどの展開モデルが最も適しているかのガイダンスを提供します。](./liferay-pricing/images/02.png)
 
-次に、 [Liferay Experience Cloud SaaS](./liferay-pricing/liferay-pricing-saas.md)。
+[Liferay Experience Cloud SaaS](./liferay-pricing/liferay-pricing-saas.md).
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -142,11 +137,11 @@ SaaSであることが不可能なシナリオも考えられる：
 :link: ./liferay-pricing/liferay-pricing-saas.md
 
 :::
-:::{grid-item-card} Liferay Pricing - PaaS
+::：{grid-item-card} Liferay Pricing - PaaS
 :link: ./liferay-pricing/liferay-pricing-paas.md
 
 :::
-:::{grid-item-card} Liferay Pricing - Self-Hosted
+::：{grid-item-card} Liferay Pricing - Self-Hosted
 :link: ./liferay-pricing/liferay-pricing-self-hosted.md
 
 :::

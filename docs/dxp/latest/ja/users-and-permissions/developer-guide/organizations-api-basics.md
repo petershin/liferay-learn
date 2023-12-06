@@ -7,9 +7,9 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+その後、以下の手順に従ってください：
 
-1. [Organizations API Basics](./liferay-w2h3.zip) をダウンロードして解凍する。
+1. [Organizations API Basics](./liferay-w2h3.zip) をダウンロードして解凍します。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/users-and-permissions/developer-guide/liferay-w2h3.zip -O
@@ -117,7 +117,7 @@
 他のJavaクラスの例もこれと似ていますが、異なる `OrganizationResource` メソッドを呼び出しています。
 
 ```{important}
-サービスの詳細は [OrganizationResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/OrganizationResource.java) を参照してください。
+サービスの詳細は [OrganizationResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/OrganizationResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使って他の `Organization` RESTサービスを呼び出す例である。

@@ -50,7 +50,7 @@
 
 1. 定義のERC（外部参照コード）を変更する。 一貫性があり、人間が読めるERCは、インスタンス間でオブジェクト定義を移動したり、API経由で参照したりするのに役立ちます。
 
-   *  **Edit**(![Edit Button](../../images/icon-edit.png)) をクリックします。
+   * **Edit**(![Edit Button](../../images/icon-edit.png)) をクリックします。
    * UUID を `C_DISTRIBUTOR_APPLICATION`で置き換える。
    * ［**Save**］ をクリックします。
 

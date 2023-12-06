@@ -1,6 +1,6 @@
 # オブジェクトウィジェットのサイトへのデプロイ
 
-> 利用可能：Liferay DXP 7.4 U1/Liferay Portal 7.4 GA5
+{bdg-secondary}`Liferay 7.4+`
 
 オブジェクトが公開されると、Liferayはサイトページにデプロイできる専用のウィジェットを自動的に生成します。 これには、サイトに範囲設定されたオブジェクトと会社に範囲設定されたオブジェクトの両方が含まれるため、サイトメニュー(![Site Menu](../../images/icon-menu.png)) とグローバルメニュー (![Global Menu](../../images/icon-applications-menu.png)) 以外のオブジェクトにもアクセスを許可することが可能です。
 
@@ -10,7 +10,7 @@
 
 ## オブジェクトウィジェットの表示・非表示
 
-1. **グローバルメニュー**（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**オブジェクト**］ をクリックします。
+1. ［**グローバルメニュー**］（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**オブジェクト**］ をクリックします。
 
 1. 目的の **オブジェクト** を選択します。
 
@@ -45,4 +45,4 @@
 ## 関連トピック
 
 * [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)
-* [オブジェクトエントリの表示](./displaying-object-entries.md)
+* [オブジェクトエントリーの表示](./displaying-object-entries.md)

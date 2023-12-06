@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 대상 솔루션
 
 **한눈에**

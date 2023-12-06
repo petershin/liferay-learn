@@ -29,8 +29,8 @@ toc:
 これらは、開発作業をすることなくデモのスタイリングを最も素早くカスタマイズするためにできることですが、Liferayのスタイリング機能はこれだけではありません。 後のモジュールでは、これらの機能やより高度な機能について詳しく説明する。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf)からダウンロードしてください。
 ```
 
 ## スタイルブックとは何か？
@@ -69,20 +69,20 @@ toc:
 
 その他の利点として、Liferayはユーザーや管理者が値を変更し、その変更をリアルタイムで確認できるエディタを提供しているため、変更が行われるとダウンタイムなしでサイトに適用されます。
 
-**様々なスタイルブックをサポート**
+**さまざまなスタイルブックをサポート**
 
 Liferayでは、異なるデザイン要件を反映するために、いくつでもスタイルブックを作成することができます。例えば、顧客は公開ウェブサイトと顧客セルフサービスポータルで異なるカラーパレットを持つかもしれません。
 
 **スタイルブック内部**
 
-これらの情報は、スタイルブックが実際にどのように機能するのかという疑問を提起する。 内部的には、各設定変更は CSS 変数を設定し、それがスタイル・ブックが適用されるすべてのページに読み込まれる CSS に影響します。 これはLiferayがデフォルトで適用するスタイルを上書きします。
+これらの情報は、スタイルブックが実際にどのように機能するのかという疑問を提起する。 内部的には、各設定変更は CSS 変数を設定し、それがスタイル・ブックが適用されるすべてのページに読み込まれる CSS に影響します。 これはLiferayがすぐに適用するデフォルトのスタイルを上書きします。
 
 ### スタイルブックを実演するためのヒント
 
 このモジュールのゴールは、構築済みのLiferayデモにスタイリングの変更を簡単に加えられるよう、十分な情報を提供することです。 ビジネスに特化したLiferayの初期のデモでは、スタイルブックの作成や編集を見せる必要は通常ありませんが、スタイルブックの使い始め方や、必要に応じて素早く簡単にデモを行う方法については、以下の手順を参考にしてください。
 
 ```{note}
-スタイル・ブックの作成と編集に関する完全なドキュメントは、 [here](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) にあります。
+スタイル・ブックの作成と編集に関する完全な文書は、 [here](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance)にあります。
 
 ```
 

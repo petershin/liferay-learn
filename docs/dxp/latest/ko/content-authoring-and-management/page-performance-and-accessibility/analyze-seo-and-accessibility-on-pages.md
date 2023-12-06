@@ -119,7 +119,7 @@ SEO 문제:
 
   ![페이지 감사 도구의 플래그 버튼을 사용하여 감사하려는 페이지 언어를 변경할 수 있습니다.](./analyze-seo-and-accessibility-on-pages/images/06.gif)
 
-- [원격 라이브 스테이징](../../site-building/publishing-tools/staging.md) 을 사용하여 페이지를 게시하고 스테이징 환경이 인터넷에 연결되어 있지 않은 경우 라이브 환경에서 페이지 감사 도구를 사용할 수 있지만 스테이징 환경에서만 문제를 해결할 수 있습니다.
+* [원격 라이브 스테이징](../../site-building/publishing-tools/staging.md) 을 사용하여 페이지를 게시하고 스테이징 환경이 인터넷에 연결되어 있지 않은 경우 라이브 환경에서 페이지 감사 도구를 사용할 수 있지만 스테이징 환경에서만 문제를 해결할 수 있습니다.
 
 ## 페이지 감사 패널 오류 문제 해결
 
@@ -135,6 +135,6 @@ SEO 문제:
 
 ## 관련 주제
 
-- [구글 페이지 스피드 인사이트](https://developers.google.com/speed/pagespeed/insights/)
-- [PageSpeed Insights API 시작하기](https://developers.google.com/speed/docs/insights/v5/get-started)
-- [구성 범위 이해](../../system-administration/configuring-liferay/understanding-configuration-scope.md)
+* [구글 페이지 스피드 인사이트](https://developers.google.com/speed/pagespeed/insights/)
+* [PageSpeed Insights API 시작하기](https://developers.google.com/speed/docs/insights/v5/get-started)
+* [구성 범위 이해](../../system-administration/configuring-liferay/understanding-configuration-scope.md)

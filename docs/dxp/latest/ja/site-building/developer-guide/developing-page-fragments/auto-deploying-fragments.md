@@ -15,7 +15,7 @@ Liferay DXP 7.4以降の場合、フラグメントコレクションはLiferay 
 
 次に、以下の手順に従って、例のフラグメントセットを自動デプロイします：
 
-1. [example auto-deployable fragment set](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip)をダウンロードして解凍します：
+1. [example auto-deployable fragment set](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip) をダウンロードして解凍します：
 
     ```bash
     curl https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/developing-page-fragments/liferay-a2f8.zip -O

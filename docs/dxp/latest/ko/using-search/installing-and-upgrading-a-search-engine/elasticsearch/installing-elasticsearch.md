@@ -122,11 +122,11 @@ xpack.security.enabled: false
 
 관련 Elasticsearch 문서:
 
-- [중요한 Elasticsearch 구성](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/important-settings.html)
+* [중요한 Elasticsearch 구성](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/important-settings.html)
 
-- [Elasticsearch의 보안 설정](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html)
+* [Elasticsearch의 보안 설정](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/security-settings.html)
 
-- [부트스트랩 검사, 개발 대 프로덕션 모드](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/bootstrap-checks.html)
+* [부트스트랩 검사, 개발 대 프로덕션 모드](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/bootstrap-checks.html)
 ```
 
 ```{important}

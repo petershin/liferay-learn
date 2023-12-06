@@ -1,6 +1,9 @@
 ---
 toc:
   - ./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md
+visibility:
+  - Employee
+  - Partner
 ---
 # Liferay 제품 제공
 
@@ -21,35 +24,35 @@ toc:
 
 1. Liferay DXP에는 핵심 디지털 경험 플랫폼, 상거래 및 분석이라는 세 가지 주요 기능 세트가 포함되어 있습니다.
 
-1. **현재 Liferay DXP에 가입한 고객은 이제** 가지 기능을 모두 사용할 수 있습니다. 이전에는 세 가지 기능 세트가 별도의 제품이었습니다.
+1. **모든** 기능은 현재 Liferay DXP에 가입한 고객이 사용할 수 있습니다. 이전에는 세 가지 기능 세트가 별도의 제품이었습니다.
 
 1. 선택한 배포 접근 방식은 제공되는 기능에 영향을 주지 않습니다.
 
-![Liferay 제품 라인에는 세 가지 기능 세트가 있습니다.](./liferay-product-offering/images/01.png)
+![The Liferay Product line has three capability sets.](./liferay-product-offering/images/01.png)
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) 을 다운로드하세요.
-* 이 모듈에 언급된 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering )를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf)를 다운로드하세요.
+* 이 모듈에 언급된 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow)을 다운로드하세요.
 ```
 
 ## 모든 배포 접근 방식 지원
 
 Liferay는 항상 선택한 소프트웨어 스택 및 인프라에 대한 고객 투자를 보호해 왔습니다. 결과적으로 Liferay는 고객이 자신의 요구 사항에 맞는 접근 방식을 선택할 수 있도록 세 가지 제품 배포 서비스를 제공합니다.
 
-1. **Liferay Experience Cloud** 은 SaaS(Software-as-a-Service) 배포 모델을 제공합니다.
+1. **Liferay Experience Cloud** 는 SaaS(Software-as-a-Service) 배포 모델을 제공합니다.
 
-1. **Liferay Experience Cloud 자체 관리형** PaaS(Platform-as-a-Service) 배포 모델을 제공합니다.
+1. **Liferay Experience Cloud 자체 관리형** 은 PaaS(Platform-as-a-Service) 배포 모델을 제공합니다.
 
-1. **Liferay DXP 셀프 호스팅** 통해 고객은 Liferay DXP 구현을 호스팅하는 방법과 사이트를 정확히 선택할 수 있습니다.
+1. **Liferay DXP 셀프 호스팅** 을 통해 고객은 Liferay DXP 구현을 호스팅하는 방법과 사이트를 정확히 선택할 수 있습니다.
 
 이러한 배포 유연성은 SaaS 배포 옵션 외에는 아무것도 제공하지 않는 많은 경쟁업체에 비해 중요한 차별화 요소입니다.
 
 ```{note}
-Liferay Experience Cloud의 배포 방법은 SaaS이지만 이는 턴키 애플리케이션이 아닙니다. 이는 고객, 파트너 및 GS가 고객의 비즈니스 문제를 해결하는 데 필요한 맞춤형 솔루션을 구축하는 완전한 디지털 경험 플랫폼입니다.
+Liferay Experience Cloud의 배포 방법은 SaaS이지만 턴키 애플리케이션은 아닙니다. 이는 고객, 파트너 및 GS가 고객의 비즈니스 문제를 해결하는 데 필요한 맞춤형 솔루션을 구축하는 완전한 디지털 경험 플랫폼입니다.
 ```
 
-![Liferay에는 세 가지 제품 배포 서비스가 있습니다.](./liferay-product-offering/images/02.png)
+![Liferay has three product deployment offerings.](./liferay-product-offering/images/02.png)
 
 일상적인 활동은 각 배포 접근 방식에 따라 다릅니다. 각 활동이 중요하지만 실제 비즈니스 애플리케이션을 제공하는 것이 가장 큰 가치를 갖습니다. 이와 대조적으로 가치가 낮은 활동 중 일부는 시간이 많이 걸리고 어려울 수 있습니다. 선택한 배포 접근 방식에 따라 이러한 활동을 Liferay로 오프로드하여 고객이 가장 중요한 작업에 집중할 수 있습니다.
 
@@ -63,37 +66,37 @@ Liferay Experience Cloud의 배포 방법은 SaaS이지만 이는 턴키 애플�
 
 마지막으로 DXP를 기반으로 솔루션을 구축해야 합니다.
 
-![Liferay DXP 인프라에는 자체 호스팅 시 많은 유지 관리가 필요한 여러 구성 요소가 포함되어 있습니다.](./liferay-product-offering/images/03.png)
+![Liferay DXP Infrastructure contains several components that when self-hosted, require much maintenance.](./liferay-product-offering/images/03.png)
 
 **가치가 낮은 활동**
 
-| 책임                    | 라이프레이    | 고객       |
-| --------------------- | -------- | -------- |
-| 제품                    | &#10004; |          |
-| 구독(지원, 보증, 면책 등)      | &#10004; |          |
-| 인프라(SLA 포함 가동 시간)     |          | &#10004; |
-| 애플리케이션 가동 시간 SLA      |          | &#10004; |
-| 플랫폼 서비스(데이터베이스, 검색 등) |          | &#10004; |
-| 아키텍처 및 고가용성           |          | &#10004; |
-| 업그레이드                 |          | &#10004; |
-| 주간 업데이트               |          | &#10004; |
-| 패치, 보안 핫픽스            |          | &#10004; |
-| 소프트웨어 문제 해결           |          | &#10004; |
-| 보안 스캐닝 / SAST / DAST  |          | &#10004; |
+| 책임                    | 라이프레이 | 고객 |
+| --------------------- | ----- | -- |
+| 제품                    | ✔     |    |
+| 구독(지원, 보증, 면책 등)      | ✔     |    |
+| 인프라(SLA 포함 가동 시간)     |       | ✔  |
+| 애플리케이션 가동 시간 SLA      |       | ✔  |
+| 플랫폼 서비스(데이터베이스, 검색 등) |       | ✔  |
+| 아키텍처 및 고가용성           |       | ✔  |
+| 업그레이드                 |       | ✔  |
+| 업데이트                  |       | ✔  |
+| 패치, 보안 핫픽스            |       | ✔  |
+| 소프트웨어 문제 해결           |       | ✔  |
+| 보안 스캐닝 / SAST / DAST  |       | ✔  |
 
-**고부가가치 활동**
+**가치 높은 활동**
 
-| 책임        | 라이프레이 | 고객       |
-| --------- | ----- | -------- |
-| 애플리케이션 전달 |       | &#10004; |
+| 책임        | 라이프레이 | 고객 |
+| --------- | ----- | -- |
+| 애플리케이션 전달 |       | ✔  |
 
 ### Liferay Experience Cloud 자체 관리형
 
-Liferay Experience Cloud 자체 관리형(이전 DXP Cloud)은 서비스로서의 플랫폼(Platform-as-a-Service) 제품입니다. Liferay는 소프트웨어 자체는 물론 인프라, 모든 플랫폼 서비스 등을 제공합니다.
+Liferay Experience Cloud 자체 관리(이전 DXP Cloud)는 서비스로서의 플랫폼(Platform-as-a-Service) 제품입니다. Liferay는 소프트웨어 자체는 물론 인프라, 모든 플랫폼 서비스 등을 제공합니다.
 
 또한 Liferay Experience Cloud 자체 관리형에는 백업 및 VPN 서비스 등을 포함하는 사전 정의된 제안이 있습니다. 또한 OOTB 고가용성, 자동 확장 기능, 자동 장애 조치 기능을 통해 확장되며 로드 밸런싱을 제공합니다.  이러한 활동은 매우 중요하지만 구현하기가 어렵거나 비용이 많이 들 수 있습니다.
 
-![Liferay Experience Cloud Self Managed는 고객에게 다양한 인프라 서비스를 제공합니다.](./liferay-product-offering/images/04.png)
+![Liferay Experience Cloud Self Managed provides many infrastructure services to the customer.](./liferay-product-offering/images/04.png)
 
 Liferay는 또한 99.95%의 인프라 가동 시간 SLA를 제공하고, 플랫폼 서비스에 대한 정기적인 업데이트를 수행하며, 빌드 관리와 함께 전체 DevSecOps CI/CD 파이프라인을 제공합니다.
 
@@ -101,25 +104,25 @@ Liferay는 또한 99.95%의 인프라 가동 시간 SLA를 제공하고, 플랫�
 
 **가치가 낮은 활동**
 
-| 책임                    | 라이프레이    | 고객       |
-| --------------------- | -------- | -------- |
-| 제품                    | &#10004; |          |
-| 구독(지원, 보증, 면책 등)      | &#10004; |          |
-| 인프라(SLA 포함 가동 시간)     | &#10004; |          |
-| 애플리케이션 가동 시간 SLA      | &#10004; |          |
-| 플랫폼 서비스(데이터베이스, 검색 등) | &#10004; |          |
-| 아키텍처 및 고가용성           | &#10004; |          |
-| 업그레이드                 |          | &#10004; |
-| 주간 업데이트               |          | &#10004; |
-| 패치, 보안 핫픽스            |          | &#10004; |
-| 소프트웨어 문제 해결           |          | &#10004; |
-| 보안 스캐닝 / SAST / DAST  |          | &#10004; |
+| 책임                    | 라이프레이 | 고객 |
+| --------------------- | ----- | -- |
+| 제품                    | ✔     |    |
+| 구독(지원, 보증, 면책 등)      | ✔     |    |
+| 인프라(SLA 포함 가동 시간)     | ✔     |    |
+| 애플리케이션 가동 시간 SLA      | ✔     |    |
+| 플랫폼 서비스(데이터베이스, 검색 등) | ✔     |    |
+| 아키텍처 및 고가용성           | ✔     |    |
+| 업그레이드                 |       | ✔  |
+| 업데이트                  |       | ✔  |
+| 패치, 보안 핫픽스            |       | ✔  |
+| 소프트웨어 문제 해결           |       | ✔  |
+| 보안 스캐닝 / SAST / DAST  |       | ✔  |
 
-**고부가가치 활동**
+**가치 높은 활동**
 
-| 책임        | 라이프레이 | 고객       |
-| --------- | ----- | -------- |
-| 애플리케이션 전달 |       | &#10004; |
+| 책임        | 라이프레이 | 고객 |
+| --------- | ----- | -- |
+| 애플리케이션 전달 |       | ✔  |
 
 ### Liferay Experience Cloud
 
@@ -131,26 +134,26 @@ Liferay Experience Cloud SaaS를 통해 Liferay는 Liferay DXP를 유지하는 �
 
 **가치가 낮은 활동**
 
-| 책임                    | 라이프레이    | 고객 |
-| --------------------- | -------- | -- |
-| 제품                    | &#10004; |    |
-| 구독(지원, 보증, 면책 등)      | &#10004; |    |
-| 인프라(SLA 포함 가동 시간)     | &#10004; |    |
-| 애플리케이션 가동 시간 SLA      | &#10004; |    |
-| 플랫폼 서비스(데이터베이스, 검색 등) | &#10004; |    |
-| 아키텍처 및 고가용성           | &#10004; |    |
-| 업그레이드                 | &#10004; |    |
-| 주간 업데이트               | &#10004; |    |
-| 패치, 보안 핫픽스            | &#10004; |    |
-| 소프트웨어 문제 해결           | &#10004; |    |
-| 보안 스캐닝 / SAST / DAST  | &#10004; |    |
+| 책임                    | 라이프레이 | 고객 |
+| --------------------- | ----- | -- |
+| 제품                    | ✔     |    |
+| 구독(지원, 보증, 면책 등)      | ✔     |    |
+| 인프라(SLA 포함 가동 시간)     | ✔     |    |
+| 애플리케이션 가동 시간 SLA      | ✔     |    |
+| 플랫폼 서비스(데이터베이스, 검색 등) | ✔     |    |
+| 아키텍처 및 고가용성           | ✔     |    |
+| 업그레이드                 | ✔     |    |
+| 분기별 업데이트              | ✔     |    |
+| 패치, 보안 핫픽스            | ✔     |    |
+| 소프트웨어 문제 해결           | ✔     |    |
+| 보안 스캐닝 / SAST / DAST  | ✔     |    |
 
-**고부가가치 활동**
+**가치 높은 활동**
 
-| 책임        | 라이프레이 | 고객       |
-| --------- | ----- | -------- |
-| 애플리케이션 전달 |       | &#10004; |
+| 책임        | 라이프레이 | 고객 |
+| --------- | ----- | -- |
+| 애플리케이션 전달 |       | ✔  |
 
 이러한 배경 지식을 바탕으로 고객에게 가장 적합한 배포 옵션을 결정하는 방법을 배울 수 있습니다.
 
-[갑시다!](./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md)
+[가자!](./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md)

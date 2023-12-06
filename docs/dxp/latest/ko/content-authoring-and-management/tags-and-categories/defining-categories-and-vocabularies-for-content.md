@@ -116,7 +116,7 @@
 
 ## 관련 정보
 
-- [범주 및 태그로 콘텐츠 구성](./organizing-content-with-categories-and-tags.md)
-- [콘텐츠 태깅 및 태그 관리](./tagging-content-and-managing-tags.md)
-- [컨텐츠 대시보드](../content-dashboard/about-the-content-dashboard.md)
-- [표시 페이지를 사용하여 범주 표시](../../site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.md)
+* [범주 및 태그로 콘텐츠 구성](./organizing-content-with-categories-and-tags.md)
+* [콘텐츠 태깅 및 태그 관리](./tagging-content-and-managing-tags.md)
+* [컨텐츠 대시보드](../content-dashboard/about-the-content-dashboard.md)
+* [표시 페이지를 사용하여 범주 표시](../../site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.md)

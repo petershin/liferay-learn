@@ -77,5 +77,5 @@
 
 ## 관련 정보
 
-- [다른 사용자와 문서 공유](./sharing-documents-with-other-users.md)
-- [사이트 설정 UI 참조](../../../../site-building/site-settings/site-settings-ui-reference.md)
+* [다른 사용자와 문서 공유](./sharing-documents-with-other-users.md)
+* [사이트 설정 UI 참조](../../../../site-building/site-settings/site-settings-ui-reference.md)

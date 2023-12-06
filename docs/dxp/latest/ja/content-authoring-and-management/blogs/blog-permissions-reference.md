@@ -1,12 +1,12 @@
 # ブログ権限リファレンス
 
-<!-- Really missing an introductory statement here -->
+Blogsアプリケーションに関連するすべてのパーミッションのリストです。 Blogsウィジェットのパーミッションを設定するには、 [ウィジェット権限を設定する](../../site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/setting-widget-permissions.md) を参照。
 
-## ブログエントリの権限
+## ブログエントリーの権限
 
-［**ブログ**］ ウィジェットに移動します。 ブログエントリーの横にある **アクション**（![Actions](../../images/icon-actions.png)）をクリックし、次に ［**Permissions**］ をクリックします。
+1. サイトメニュー( ![Site Menu](../../images/icon-product-menu.png) )を開き、コンテンツとデータ &rarr; ブログにアクセスする。
 
-![ブログエントリーの権限](./blog-permissions-reference/images/01.png)
+1. ブログエントリーの横にある、 **アクション**( ![Actions](../../images/icon-actions.png)) &rarr; **アクセス許可** をクリックします。
 
 | 権限        | Description                                                    |
 |:--------- |:-------------------------------------------------------------- |
@@ -17,3 +17,11 @@
 | 更新        | ブログエントリーを編集および変更します。                                           |
 | 表示        | ブログエントリーを表示します。                                                |
 | コメントを追加する | ブログエントリーにコメントします。                                              |
+
+![ブログのエントリー許可](./blog-permissions-reference/images/01.png)
+
+## 関連トピック
+
+[ブログエントリの追加](./adding-blog-entries.md)
+
+[ブログアプリの設定](./configuring-the-blogs-app.md)

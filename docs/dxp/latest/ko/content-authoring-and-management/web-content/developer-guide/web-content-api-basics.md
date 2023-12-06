@@ -557,6 +557,6 @@ REST API를 사용하여 웹 콘텐츠 폴더를 삭제하면 [Liferay DXP 휴�
 
 ## 관련 정보
 
-- [고급 웹 콘텐츠 API](./advanced-web-content-api.md)
-- [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-- [웹 콘텐츠 구조 이해](../web-content-structures/understanding-web-content-structures.md)
+* [고급 웹 콘텐츠 API](./advanced-web-content-api.md)
+* [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+* [웹 콘텐츠 구조 이해](../web-content-structures/understanding-web-content-structures.md)

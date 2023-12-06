@@ -41,6 +41,6 @@
 
 ## 관련 내용
 
-- [사이트 설정 UI 참조](../../../site-building/site-settings/site-settings-ui-reference.md)
-- [양식 만들기](creating-forms.md)
-- [REST 데이터 공급자를 사용하여 양식 옵션 채우기](../data-providers/using-the-rest-data-provider-to-populate-form-options.md)
+* [사이트 설정 UI 참조](../../../site-building/site-settings/site-settings-ui-reference.md)
+* [양식 만들기](creating-forms.md)
+* [REST 데이터 공급자를 사용하여 양식 옵션 채우기](../data-providers/using-the-rest-data-provider-to-populate-form-options.md)

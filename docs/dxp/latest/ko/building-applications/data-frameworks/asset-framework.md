@@ -18,4 +18,4 @@ asset-framework/enabling-assets.md
 
 ## 다음 단계
 
-- [자산 활성화](./asset-framework/enabling-assets.md)
+* [자산 활성화](./asset-framework/enabling-assets.md)

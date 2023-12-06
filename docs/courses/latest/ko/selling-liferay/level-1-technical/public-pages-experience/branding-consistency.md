@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 브랜딩 및 일관성
 
 **한눈에**

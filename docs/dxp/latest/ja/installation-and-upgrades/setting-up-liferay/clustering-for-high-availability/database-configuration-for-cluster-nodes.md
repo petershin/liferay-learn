@@ -1,6 +1,6 @@
-#クラスタノードのデータベース構成
+# クラスタノードのデータベース構成
 
-DXPクラスタのノードが機能するためには、最低限、 [同じデータベースを共有するように設定](./example-creating-a-simple-dxp-cluster.md#configure-cluster-link-and-the-other-server-connections) (またはデータベースクラスタ）である必要があります。ここで説明する最適化は、DXPクラスタのデータベース性能をさらに向上させることができるので、DXPの使用状況や予想されるトランザクション量を考慮した上で検討する必要があります。
+最低限、DXPクラスタのノードが機能するためには、 [同じデータベースを共有するように構成されている](./example-creating-a-simple-dxp-cluster.md#configure-cluster-link-and-the-other-server-connections) (またはデータベースクラスタ)必要があります。ここで説明する最適化により、DXP クラスタのデータベース パフォーマンスをさらに向上させることができます。
 
 ```{warning}
 クラスタリングは、組み込みHSQLデータベースでは機能しません。
@@ -8,17 +8,17 @@ DXPクラスタのノードが機能するためには、最低限、 [同じデ
 
 ## 読み書きデータベース構成
 
-データベースのパフォーマンスを向上させるために、読み取り/書き込みデータベース構成を使用できます。 この戦略では、読み取り操作と読み取り/書き込み操作に同じデータソースを使用する代わりに、操作の種類ごとに個別のデータソースを使用します。 DXPのアスペクト指向プログラミング(AOP）トランザクションインフラストラクチャは、読み取りトランザクションを読み取りデータソースに送信し、読み取り/書き込みトランザクションを書き込みデータソースに送信します。
+データベースのパフォーマンスを向上させるために、読み取り/書き込みデータベース構成を使用できます。 この戦略では、読み取り操作と読み取り/書き込み操作に同じデータソースを使用する代わりに、操作の種類ごとに個別のデータソースを使用します。 DXPのアスペクト指向プログラミング（AOP）トランザクションインフラストラクチャは、読み取りトランザクションを読み取りデータソースに送信し、読み取り/書き込みトランザクションを書き込みデータソースに送信します。
 
 ![読み書きデータベースの相互作用](./database-configuration-for-cluster-nodes/images/01.png)
 
-次のセクションで説明するように、読み取りと読み取り/書き込み [データソース](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) を分離する接続は、JDBCまたはJNDI [ポータルプロパティ](../../reference/portal-properties.md) (たとえば、 [`portal-ext.properties` ファイル](../../reference/portal-properties.md)）を使用して構成されます。 データソースは、DXPデータベースの個別のインスタンスを使用する必要があります。この場合、読み取り/書き込みデータベースインスタンスが読み取りデータベースインスタンスに複製されます。
+次のセクションで説明するように、読み取りと読み取り/書き込み [データソース](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) を分離する接続は、JDBCまたはJNDI [ポータルプロパティ](../../reference/portal-properties.md) （たとえば、 [`portal-ext.properties` ファイル](../../reference/portal-properties.md)）を使用して構成されます。 データソースは、DXPデータベースの個別のインスタンスを使用する必要があります。この場合、読み取り/書き込みデータベースインスタンスが読み取りデータベースインスタンスに複製されます。
 
 ### JDBC
 
-`portal-ext.properties` ファイルを編集し、 [JDBC](../../installing-liferay/configuring-a-database.md)を使用して別々の読み取りおよび書き込みデータソースに直接接続するには、以下の手順に従います：
+次の手順に従って、`portal-ext.properties`ファイルを編集し、[JDBC](../../installing-liferay/configuring-a-database.md)を使用して別々の読み取りおよび書き込みデータソースに直接接続します。
 
-1. 読み取りと書き込みのデータソースを分けるために、JDBC接続を構成する。 詳しくは、 [JDBC properties reference](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) を参照してください。 以下に例を示します。 
+1. 個別の読み取りおよび書き込みデータソースへのJDBC接続を構成します。 詳しくは、 [JDBCプロパティリファレンス](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JDBC) を参照してください。 以下に例を示します。 
 
     ```properties
     jdbc.read.driverClassName=[place your driver name here]
@@ -33,12 +33,30 @@ DXPクラスタのノードが機能するためには、最低限、 [同じデ
     ```
 
     ```{note}
-    Liferayでは、コネクションプールプロバイダーとしてHikariCPを使用しています。
+    Liferayでは、接続プールプロバイダーとしてHikariCPを使用しています。
     ```
 
-    JDBC接続値の例については、[データベーステンプレート](../../reference/database-templates.md)を参照してください。
+    JDBC接続値の例については、[データベース・テンプレート](../../reference/database-templates.md)を参照してください。
 
-1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して [カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
+1. 読み取りプールと書き込みプールのタイムアウトとサイズの設定 
+
+    ```properties
+    jdbc.read.connectionTimeout=30000
+    jdbc.read.idleTimeout=600000
+    jdbc.read.maximumPoolSize=100
+    jdbc.read.maxLifetime=0
+    jdbc.read.minimumIdle=10
+    jdbc.read.registerMbeans=true
+
+    jdbc.write.connectionTimeout=30000
+    jdbc.write.idleTimeout=600000
+    jdbc.write.maximumPoolSize=100
+    jdbc.write.maxLifetime=0
+    jdbc.write.minimumIdle=10
+    jdbc.write.registerMbeans=true
+    ```
+
+1. (**この手順は、DXP 7.4 U69 以下でのみ必要です**） DXP が書き込みデータソース（接頭辞が `jdbc.write.`であるデータソース）を使用して、 [カウンター](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) データソースを作成するように構成します。 別のデータソースは常にカウンター専用です。 
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -46,21 +64,15 @@ DXPクラスタのノードが機能するためには、最低限、 [同じデ
 
 1. オプションで、データ接続を検証して、不正な接続が適切に処理されることを確認します。
 
-1. デフォルトの [`spring.configs` および `spring.infrastructure.configs`ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) を `portal-ext.properties` ファイルにコピーし、次のSpring構成ファイルのパスをそれらに追加して、読み取り/書き込みデータベース構成を有効にします。
+1. (**この手順は、DXP 7.3 U22、DXP 7.4 U65以下の場合のみ必要です。**) デフォルトの [`spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) を `portal-ext.properties` ファイルにコピーし、以下のSpring構成ファイルのパスを追加することで、リードライターのデータベース構成を有効にします。
    
-   `spring.configs`に追加します。 
-
-    ```
-    META-INF/dynamic-data-source-spring.xml
-    ```
-
-`spring.infrastructure.configs`に追加します。 
+   `spring.infrastructure.configs`に追加します。 
 
     ```
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-詳細は、 [Spring configuration Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 参照してください。
+詳細は、 [Spring構成のポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) を参照してください。
 
 ### JNDI
 
@@ -80,7 +92,25 @@ DXPクラスタのノードが機能するためには、最低限、 [同じデ
     jdbc.write.password=[place your password here]
     ```
 
-1. 書き込みデータソース(プレフィックスが`jdbc.write.`のデータソース)を使用して [カウンタ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) データソースを作成するようにDXPを設定します。 別のデータソースは常にカウンター専用です。 
+1. 読み取りプールと書き込みプールのタイムアウトとサイズの設定 
+
+    ```properties
+    jdbc.read.connectionTimeout=30000
+    jdbc.read.idleTimeout=600000
+    jdbc.read.maximumPoolSize=100
+    jdbc.read.maxLifetime=0
+    jdbc.read.minimumIdle=10
+    jdbc.read.registerMbeans=true
+
+    jdbc.write.connectionTimeout=30000
+    jdbc.write.idleTimeout=600000
+    jdbc.write.maximumPoolSize=100
+    jdbc.write.maxLifetime=0
+    jdbc.write.minimumIdle=10
+    jdbc.write.registerMbeans=true
+    ```
+
+1. (**この手順は、DXP 7.4 U69 以下でのみ必要です**） DXP が書き込みデータソース（接頭辞が `jdbc.write.`であるデータソース）を使用して、 [カウンター](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Counter) データソースを作成するように構成します。 別のデータソースは常にカウンター専用です。 
 
     ```properties
     counter.jdbc.prefix=jdbc.write.
@@ -88,21 +118,15 @@ DXPクラスタのノードが機能するためには、最低限、 [同じデ
 
 1. オプションで、データ接続を検証して、不正な接続が適切に処理されることを確認します。
 
-1. デフォルトの [`spring.configs` および `spring.infrastructure.configs`ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) を `portal-ext.properties` ファイルにコピーし、次のSpring構成ファイルのパスをそれらに追加して、読み取り/書き込みデータベース構成を有効にします。
+1. (**この手順は、DXP 7.4 U65以下またはDXP 7.3 U22以下の場合のみ必要です**） デフォルトの [`spring.infrastructure.configs` Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) を `portal-ext.properties` ファイルにコピーし、以下のSpring構成ファイルのパスを追加して、リードライターのデータベース構成を有効にします。
    
-   `spring.configs`に追加します。 
-
-    ```
-        META-INF/dynamic-data-source-spring.xml
-    ```
-
-`spring.infrastructure.configs`に追加します。 
+   `spring.infrastructure.configs`に追加します。 
 
     ```
     META-INF/dynamic-data-source-infrastructure-spring.xml
     ```
 
-詳細は、 [Spring configuration Portal Properties](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) 参照してください。
+詳細は、 [Spring構成のポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Spring) を参照してください。
 
 DXPは、次回の起動時に、読み取りデータソース、書き込みデータソース、およびカウンターデータソースを使用します。
 

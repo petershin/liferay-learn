@@ -1,11 +1,19 @@
 # システムオブジェクトの拡張
 
-{bdg-secondary}`利用可能 Liferay 7.4 U72+/GA72+`
+{bdg-secondary}`Liferay 7.4 U86+/GA86+`
 
-Liferay Objectを使用すると、サポートされているシステムサービスを拡張することができます。 現在、オブジェクトフレームワークと統合されているのは、次のサービスのみです：［Account］、［Commerce Order］、［Commerce Product］、［Commerce Product Group］、［Postal Address］、［User］。
+Liferay Objectを使用すると、サポートされているシステムサービスを拡張することができます。 現在、これらのサービスだけがオブジェクトズ・フレームワークと統合されている：
+
+* アカウント
+* コマース注文
+* コマース製品
+* コマース製品グループ
+* 組織
+* 住所
+* ユーザー
 
 ```{note}
-［Postal Address］オブジェクトは、アカウントアドレスを格納するためにのみ使用されます。 このため、［Accounts］オブジェクトに関連するカスタムオブジェクトにのみ関連付けることができます。 詳しくは、[カスタムオブジェクトでシステムアカウントを使う](./using-system-objects-with-custom-objects.md)を参照してください。
+Postal Address オブジェクトは口座の住所を保存する。 このため、［Accounts］オブジェクトに関連するカスタムオブジェクトにのみ関連付けることができます。 詳しくは、[カスタムオブジェクトでシステムアカウントを使う](./using-system-objects-with-custom-objects.md)を参照してください。
 ```
 
 ![オブジェクトフレームワークと統合されたシステムサービスを拡張します。](./extending-system-objects/images/01.png)
@@ -31,25 +39,25 @@ Liferayの[カスタムフィールド](../../system-administration/configuring-
 
 ## リレーションシップの追加
 
-システムオブジェクトとカスタムオブジェクトの間にリレーションシップを追加して、その実体をリンクさせることができます。 システムオブジェクトは、1対多と多対多の両方のリレーションシップをサポートしています。 詳細については、[オブジェクトリレーションシップの定義](./relationships/defining-object-relationships.md)を参照してください。
+システム・オブジェクトとカスタム・オブジェクトの間にリレーションシップを追加して、それらのエンティティをリンクすることができます。 システムオブジェクトは、1対多と多対多の両方のリレーションシップをサポートしています。 詳細については、[オブジェクトリレーションシップの定義](./relationships/defining-object-relationships.md)を参照してください。
 
 ```{important}
-システムオブジェクトはカスタム [layouts](./layouts/designing-object-layouts.md) 、 [views](./views/designing-object-views.md) をサポートしていないため、システムオブジェクトのUIにリレーションを追加することはできない。 ヘッドレスAPIを経由してのみ対話が可能です。 
+システム・オブジェクトはカスタム [layouts]（./layouts/designing-object-layouts.md）と [views]（./views/designing-object-views.md）をサポートしていないので、システム・オブジェクトのUIにリレーションシップを追加することはできません。 ヘッドレスAPIを介してのみ、それらのAPIと対話することができる。 
 ```
 
 ### リレーションシップAPI
 
-システムオブジェクトが多対多の関係にある場合、または1対多の関係の親側にある場合、Liferayは関係の問い合わせと管理のために [RESTエンドポイント](../understanding-object-integrations/using-custom-object-apis.md#relationship-rest-apis) を生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれます。
+システムオブジェクトが多対多のリレーションシップにある場合、または1対多のリレーションシップの親側にある場合、Liferayはリレーションシップのクエリと管理のために [RESTエンドポイント](../understanding-object-integrations/using-custom-object-apis.md#relationship-rest-apis) を生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、および関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれる。
 
-この例では、Userシステムオブジェクトは、カスタムオブジェクト（`timeOffRequest`）と1対多の関係（`userRequests`）になっています。 これらのエンドポイントは、 [`headless-admin-user`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-user/v1.0/openapi.json) サービスに表示されます。
+この例では、User システム・オブジェクトは、カスタム・オブジェクト (`timeOffRequest`) と一対多の関係 (`userRequests`) にあります。 これらのエンドポイントは [`headless-admin-user`](http://localhost:8080/o/api?endpoint=http://localhost:8080/o/headless-admin-user/v1.0/openapi.json) サービスに表示される。
 
-![Liferayは、リレーションシップを照会・管理するためのRESTエンドポイントを生成します。](./extending-system-objects/images/02.png)
+![Liferay はリレーションシップのクエリと管理のための REST エンドポイントを生成します。](./extending-system-objects/images/02.png)
 
-[Relationships REST APIs の使用](../objects-tutorials/using-apis/using-relationship-rest-apis.md) を参照してください。
+入門チュートリアルについては [Using Relationships REST API](../objects-tutorials/using-apis/using-relationship-rest-apis.md) を参照。
 
 ## アクションの追加
 
-システムオブジェクトにアクションを追加し、エントリーの追加、更新、削除などのイベントをトリガーにすることができます。 下の表は、システムオブジェクトがサポートするアクションを示したものです。
+システムオブジェクトにアクションを追加し、エントリーの追加、更新、削除などのイベントをトリガーすることができます。 下の表は、システムオブジェクトがサポートするアクションを示したものです。
 
 | アクションの種類                                                                      | システムオブジェクトでのサポートの有無 |
 |:----------------------------------------------------------------------------- |:------------------- |
@@ -65,15 +73,18 @@ Liferayの[カスタムフィールド](../../system-administration/configuring-
 
 Groovyおよびエクスプレッションビルダーの検証機能をシステムオブジェクトに追加できます。 トリガーされると、これらのバリデーションは、フィールドエントリーが有効かどうかを確認し、無効なエントリーに対してはカスタムエラーメッセージを表示します。 現在、オブジェクトはシステムオブジェクトのデフォルトフィールドに対する検証のみをサポートし、そのカスタムフィールドに対する検証はサポートしていません。 詳細は、[カスタムバリデーションの追加](./validations/adding-field-validations.md)を参照してください。
 
-<!--TASK: Uncomment once supported.
-## Additional Configuration Options
+## 追加設定オプション
 
-When editing a system object, you can also configure the following settings in the *Details* tab.
+システム・オブジェクトを編集する際、 **詳細** タブで以下の設定を行うこともできます。
 
-| Field | Description |
-| :--- | :--- |
-| Title Field | Determine the field used as the title for object entries. |
-| Widget | Determine whether the object's Page widget is available in sites.| -->
+| 項目                | 説明                                   | システムオブジェクトでのサポートの有無 |
+|:----------------- |:------------------------------------ | ------------------- |
+| タイトルフィールド         | オブジェクトエントリーのタイトルとして使用されるフィールドを決定する。  | &#10004;            |
+| パネルリンク            | アプリケーションがUIのどこに表示されるかを決定する。          | &#10006;            |
+| ページビルダーのウィジェット    | オブジェクトのページ・ウィジェットがサイトで利用可能かどうかを判断する。 | &#10006;            |
+| オブジェクト・エントリーの分類   | オブジェクトエントリに分類ツールが使用可能かどうかを判断する。      | &#10006;            |
+| ページビルダーのコメント      | ユーザがオブジェクトエントリにコメントを追加できるかどうかを決定する。  | &#10006;            |
+| 監査フレームワークのエントリー履歴 | オブジェクトイベントが監査履歴に表示されるかどうかを決定する。      | &#10006;            |
 
 ## 関連トピック
 

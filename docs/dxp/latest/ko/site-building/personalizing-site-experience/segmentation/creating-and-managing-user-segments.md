@@ -69,7 +69,7 @@ Liferay DXP 7.4 U42+/GA42+부터 지리적 사이트별로 세그먼트를 생�
 
 ## 관련 정보
 
-- [사용자 세그먼트에 역할 할당](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)
-- [사용자 세그먼트에 대한 분석 얻기](./getting-analytics-for-user-segments.md)
-- [컨텐츠 페이지 개인화](../experience-personalization/content-page-personalization.md)
-- [세션 속성 어휘](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)
+* [사용자 세그먼트에 역할 할당](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)
+* [사용자 세그먼트에 대한 분석 얻기](./getting-analytics-for-user-segments.md)
+* [컨텐츠 페이지 개인화](../experience-personalization/content-page-personalization.md)
+* [세션 속성 어휘](../../../content-authoring-and-management/tags-and-categories/session-property-vocabularies.md)

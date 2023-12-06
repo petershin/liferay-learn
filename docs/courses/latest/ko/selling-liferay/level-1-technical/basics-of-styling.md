@@ -1,10 +1,13 @@
 ---
 toc:
   - ./basics-of-styling/logos-favicons-masterpages.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 스타일링의 기초
 
-**한눈에**
+**한눈에 보기**
 
 * 성공적인 데모의 핵심은 청중의 참여입니다
 * 기존 데모의 모양과 느낌을 업데이트하는 것은 참여를 유도하는 효과적인 방법입니다.
@@ -29,13 +32,13 @@ toc:
 이는 개발 작업을 수행하지 않고도 데모 스타일을 가장 빠르게 사용자 정의하기 위해 수행할 수 있는 작업이지만 Liferay가 스타일링을 위해 제공하는 유일한 기능은 아닙니다. 이후 모듈에서는 이러한 기능과 고급 기능을 자세히 다룰 것입니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-5-basics-of-styling-in-liferay)를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-5-basics-of-styling-in-liferay-pdf)를 다운로드하세요.
 ```
 
 ## 스타일 북이란 무엇입니까?
 
-간단히 말해서, 스타일 북은 페이지 전반에 걸쳐 일관된 시각적 경험 ****제공하기 위해 사이트** 에 적용되는 시각적 규칙 ****집합** .
+간단히 말해서, 스타일 북은 페이지 전반에 걸쳐 **일관된 시각적 경험** 을 제공하기 위해 **사이트** 에 적용되는 일련의 **시각적 규칙** 입니다.
 
 이것이 기본적으로 의미하는 바는 Liferay가 스타일 북이라는 단일 기능에서 색상, 글꼴, 요소 사이의 간격 등을 포함하여 사이트의 모양과 느낌을 제어할 수 있는 방법을 제공한다는 것입니다.
 
@@ -43,7 +46,7 @@ toc:
 
 **방문 페이지**
 
-![Style Books는 코드를 작성하지 않고도 Liferay 애플리케이션의 모양과 느낌을 변경할 수 있는 강력한 방법을 제공합니다.](./basics-of-styling/images/01.png)
+![Style Books provide a powerful way of changing the look and feel of a Liferay application without writing code.](./basics-of-styling/images/01.png)
 
 Style Books의 높은 수준의 이점은 다음과 같습니다.
 
@@ -61,11 +64,11 @@ Style Books는 맞춤형 개발을 수행할 필요 없이 고객의 디자인 �
 
 구현 시 디자이너는 코드를 작성하고 변경 사항을 배포하고 적용을 기다릴 필요 없이 이러한 변경 사항을 쉽게 구현할 수 있습니다.
 
-**일관된 모양과 느낌 보장**
+**일관적인 모양과 느낌 보장**
 
 스타일 북을 통해 사이트 전체에 디자인을 적용하면 해당 사이트의 모든 페이지에 일관된 모양과 느낌이 적용됩니다.
 
-**실시간으로 변경하세요.**
+**실시간으로 변경하세요**
 
 다른 이점은 Liferay가 사용자와 관리자가 값을 변경하고 해당 변경 사항을 실시간으로 확인할 수 있는 편집기를 제공하므로 변경 사항이 발생하면 가동 중지 시간 없이 사이트에 적용된다는 것입니다.
 
@@ -73,7 +76,7 @@ Style Books는 맞춤형 개발을 수행할 필요 없이 고객의 디자인 �
 
 Liferay를 사용하면 다양한 디자인 요구 사항을 반영하는 Style Book을 원하는 만큼 생성할 수 있습니다. 예를 들어 고객은 공개 웹 사이트와 고객 셀프 서비스 포털에 대해 서로 다른 색상 팔레트를 사용할 수 있습니다.
 
-**스타일 북의 내부**
+**스타일북 내부**
 
 이 모든 정보는 Style Books가 실제로 어떻게 작동하는지에 대한 의문을 제기합니다. 내부적으로 각 구성 변경은 CSS 변수를 설정하며, 이는 Style Book이 적용되는 모든 페이지에 대해 로드되는 CSS에 영향을 줍니다. 이는 Liferay가 기본적으로 적용하는 기본 스타일을 재정의합니다.
 
@@ -82,8 +85,7 @@ Liferay를 사용하면 다양한 디자인 요구 사항을 반영하는 Style 
 이 모듈의 목표는 사전 구축된 Liferay 데모에 스타일 변경을 쉽게 적용할 수 있도록 충분한 정보를 제공하는 것입니다. 초기 비즈니스 중심 Liferay 데모의 경우 일반적으로 Style Books 작성 또는 편집을 보여줄 필요가 없지만 다음 단계는 Style Books 작업을 시작하는 방법과 필요한 경우 신속하고 간단하게 시연하는 방법에 대한 가이드로 사용할 수 있습니다.
 
 ```{note}
-스타일북 생성 및 편집에 대한 전체 문서는 [here](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book) 에서 찾을 수 있습니다. -사이트 외관 표준화).
-
+_Enable _Import_ 상자를 선택하지 않은 상태로 두면 사용자가 로그인할 때 Style Book 생성 및 편집에 대한 전체 문서를 [여기]https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance)에서 찾을 수 있습니다. 개별적으로 가져올 수 있습니다. LDAP에서 대량 가져오기를 수행하려면 가져오기를 사용하세요.
 ```
 
 Style Books의 간략한 데모는 다음과 같이 구성됩니다.
@@ -93,15 +95,15 @@ Style Books의 간략한 데모는 다음과 같이 구성됩니다.
 * 색상 변경 사항 적용
 * 페이지에 스타일 북 적용
 
-**사용 가능한 스타일북 찾아보기**
+**사용 가능한 스타일 북 찾아보기**
 
-스타일북은 사이트 범위에서 정의됩니다. 해당 항목에 액세스하려면 **제품 메뉴**(![Product Menu](../../images/icon-product-menu.png))을 열고 **디자인** 섹션을 확장한 다음 **스타일 북** 선택합니다.
+스타일북은 사이트 범위에서 정의됩니다. 해당 항목에 액세스하려면 **제품 메뉴**(![제품 메뉴](../../images/icon-product-menu.png))를 열고 **디자인** 섹션을 확장한 다음 **스타일 북** 을 선택하세요.
 
 새로운 스타일 북을 생성하려면 + 아이콘을 클릭하기만 하면 됩니다.
 
 **변경 사항 테스트**
 
-![Style Book UI는 모든 사이트 페이지의 변경 사항을 미리 볼 수 있는 기능을 제공합니다.](./basics-of-styling/images/02.png)
+![The Style Book UI provides the ability to preview changes on any site page.](./basics-of-styling/images/02.png)
 
 Style Books의 UI 내에서 사용자는 사이트의 여러 보기를 선택하여 변경 내용을 미리 볼 수 있습니다. 가장 즉각적인 효과는 변경 사항을 미리 보는 데 사용할 사이트 페이지를 선택하는 것입니다.
 
@@ -109,11 +111,11 @@ Style Books의 UI 내에서 사용자는 사이트의 여러 보기를 선택하
 
 **색상 변경**
 
-![데모에서 변경 사항의 영향을 쉽게 표시하려면 버튼 색상을 변경하세요.](./basics-of-styling/images/03.png)
+![To easily show the impact of changes in a demo change the color of the buttons.](./basics-of-styling/images/03.png)
 
 잠재 고객이 보고 이해할 수 있는 가장 간단하고 쉬운 사이트 스타일 변경 방법 중 하나는 버튼 색상 변경을 시연하는 것입니다.
 
-Style Book 편집기를 사용하여 오른쪽 패널의 드롭다운 메뉴를 "Color System"으로 변경하고 **Primary Actions** 까지 아래로 스크롤한 다음 색상 팔레트 선택기를 사용하여 **Color Action Primary Default** 을 변경합니다.
+Style Book 편집기를 사용하여 오른쪽 패널의 드롭다운 메뉴를 "색상 시스템"으로 변경하고 **기본 작업** 까지 아래로 스크롤한 다음 색상 팔레트 선택기를 사용하여 **색상 작업 기본 기본값** 을 변경합니다.
 
 즉각적인 효과를 극대화하려면 기존 색상과 확연히 다른 새로운 색상을 선택하세요.
 
@@ -121,11 +123,11 @@ Style Book 편집기를 사용하여 오른쪽 패널의 드롭다운 메뉴를 
 
 페이지의 스타일 북을 설정하려면 다음 단계를 따르세요.
 
-1. 페이지 상단 근처에 있는 **편집**(![Edit icon](../../images/icon-edit.png))을 클릭합니다.
-2. 사이드바에서 **페이지 디자인 옵션**(![Page Design Options](../../images/icon-format.png))을 클릭하세요.
-3. 클릭하여 **Style Book** 탭을 엽니다.
-4. 목록에서 원하는 스타일북을 선택하세요.
-5. **게시** 클릭하세요.
+1. 페이지 상단 근처의 **편집**(![편집 아이콘](../../images/icon-edit.png))을 클릭합니다.
+1. 사이드바에서 **페이지 디자인 옵션**(![페이지 디자인 옵션](../../images/icon-format.png))을 클릭하세요.
+1. **스타일 북** 탭을 열려면 클릭하세요.
+1. 목록에서 원하는 스타일북을 선택하세요.
+1. **게시** 를 클릭하세요.
 
 페이지는 새로운 Style Book을 사용하여 게시됩니다.
 

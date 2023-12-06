@@ -24,7 +24,7 @@
 
 ## IBM DB2
 
-[IBMの公式DB2ドキュメント](https://www.ibm.com/support/pages/db2-database-product-documentation-4) を参照してください。
+[IBMの公式DB2ドキュメント](https://www.ibm.com/support/pages/db2-database-product-documentation) を参照してください。
 
 ## MariaDB
 

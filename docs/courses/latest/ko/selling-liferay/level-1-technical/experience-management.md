@@ -2,6 +2,9 @@
 toc:
   - ./experience-management/segmentation-personalization.md
   - ./experience-management/content-management-analytics.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 경험관리
 

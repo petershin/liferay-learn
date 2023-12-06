@@ -45,6 +45,6 @@
 
 ## 관련 정보
 
-- [사이트 설정 UI 참조](../../../site-building/site-settings/site-settings-ui-reference.md)
-- [알림 및 요청 관리](./managing-notifications-and-requests.md)
-- [사용자 언급](./mentioning-users.md)
+* [사이트 설정 UI 참조](../../../site-building/site-settings/site-settings-ui-reference.md)
+* [알림 및 요청 관리](./managing-notifications-and-requests.md)
+* [사용자 언급](./mentioning-users.md)

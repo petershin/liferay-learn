@@ -6,6 +6,9 @@ toc:
   - ./what-challenges-does-liferay-solve-horizontal-solutions/supplier-portals.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
+visibility:
+  - Employee
+  - Partner
 ---
 # Liferay는 어떤 과제를 해결합니까 - 수평적 솔루션
 

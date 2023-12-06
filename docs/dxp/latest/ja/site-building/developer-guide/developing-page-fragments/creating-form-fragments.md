@@ -6,7 +6,7 @@
 
 フォームの断片を作る
 
-1. **Site Menu**( ![Site Menu](../../../../images/icon-product-menu.png) ) を開き、 **Design** &rarr; **Fragments** へ。
+1. **Site Menu**( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 **Design** &rarr; **Fragments** へ。
 
 1. **Plus**( ![Plus Button](../../../images/icon-plus.png) ) をクリックして、フォームのフラグメントを整理するためのフラグメントセットを作成します。
 
@@ -34,7 +34,7 @@
 
 1. ［**Publish**］ をクリックします。
 
-次に、フォーム・フラグメントを使ってコンテンツ・ページにフォームを作成します。 詳しくは [フラグメントを使用してフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
+次に、フォーム・フラグメントを使ってコンテンツ・ページにフォームを作成します。 詳しくは [フラグメントでフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md) を参照してください。
 
 フラグメントツールキットを使用している場合は、 `yarn run add-fragment`を実行する際にフラグメントの種類を選択できます。
 
@@ -79,18 +79,18 @@
 
 ## 入力変数のプロパティのリファレンス
 
-| プロパティ          | 種類        | 説明                                         |
-|:-------------- |:--------- |:------------------------------------------ |
-| `fieldTypes`   | `string`  | 入力にマッピングされたフィールドタイプ。                       |
-| `name`         | `string`  | 入力の名前                                      |
-| `required`     | `boolean` | 入力が必要かどうか。                                 |
-| `value`        | `string`  | フィールドの値。                                   |
-| `label`        | `string`  | 入力のラベル                                     |
-| `showLabel`    | `boolean` | ラベルの視認性。                                   |
-| `errorMessage` | `string`  | フォーム送信エラー。                                 |
-| `helpText`     | `string`  | フォームフィールドのUIヘルプメッセージ。 未定義の場合、このプロパティは空である。 |
-| `showHelpText` | `boolean` | ヘルプテキストの表示。                                |
-| `attributes`   | `object`  | 特定の入力タイプのためにフラグメントに追加されるオプション。             |
+| プロパティ          | 種類        | 説明                                            |
+|:-------------- |:--------- |:--------------------------------------------- |
+| `fieldTypes`   | `string`  | 入力にマッピングされたフィールドタイプ。                          |
+| `name`         | `string`  | 入力の名前 フラグメントを作成するには、ユーザーはこのプロパティを定義しなければならない。 |
+| `required`     | `boolean` | 入力が必要かどうか。                                    |
+| `value`        | `string`  | フィールドの値。                                      |
+| `label`        | `string`  | 入力ラベル                                         |
+| `showLabel`    | `boolean` | ラベルの視認性。                                      |
+| `errorMessage` | `string`  | フォーム送信エラー。                                    |
+| `helpText`     | `string`  | フォームフィールドのUIヘルプメッセージ。 未定義の場合、このプロパティは空である。    |
+| `showHelpText` | `boolean` | ヘルプテキストの表示。                                   |
+| `attributes`   | `object`  | 特定の入力タイプのためにフラグメントに追加されるオプション。                |
 
 ### `ファイルの属性` 入力
 

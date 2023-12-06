@@ -50,4 +50,4 @@ Liferay DXP 7.3 및 이전 버전의 경우 채널 설정에서 기본 범주 �
 
 ## 관련 주제
 
-- [디스플레이 페이지를 사용하여 카테고리 표시](https://learn.liferay.com/dxp/latest/ko/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.html)
+* [표시 페이지를 사용하여 카테고리 표시](https://learn.liferay.com/dxp/latest/ko/site-building/displaying-content/using-display-page-templates/displaying-categories-using-display-pages.html)

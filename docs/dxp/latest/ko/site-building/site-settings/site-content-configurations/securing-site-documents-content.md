@@ -32,5 +32,5 @@
 
 ## 관련 정보
 
-- [전역적으로 콘텐츠 공유 관리](./managing-content-sharing-across-sites.md)
-- [사이트 설정 UI 참조](../site-settings-ui-reference.md)
+* [전역적으로 콘텐츠 공유 관리](./managing-content-sharing-across-sites.md)
+* [사이트 설정 UI 참조](../site-settings-ui-reference.md)

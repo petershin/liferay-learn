@@ -5,6 +5,9 @@ toc:
   - ./outbound-prospecting/data-enrichment.md
   - ./outbound-prospecting/social-media.md
   - ./outbound-prospecting/persistence-measurement.md
+visibility:
+  - Employee
+  - Partner
 ---
 # Liferay 기회를 위한 아웃바운드 전망 101
 

@@ -20,6 +20,12 @@
    curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" https://analytics.liferay.com/api/reports/export/page\?fromDate=2023-01-01'T'00:00:01.000'Z'\&toDate\=2023-03-01'T'23:59:59.000'Z'
    ```
 
+   Windowsユーザー向け：
+
+   ```
+   curl -i -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" "https://analytics.liferay.com/api/reports/export/page?fromDate=2023-01-01T00:00:01.000Z&toDate=2023-03-01T23:59:59.000Z"
+   ```
+
 1. データを要求すると、次のようなメッセージが表示されます。
 
    ```json
@@ -36,8 +42,18 @@
    curl -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" https://analytics.liferay.com/api/reports/export/page\?fromDate=2023-01-01'T'00:00:01.000'Z'\&toDate\=2023-03-01'T'23:59:59.000'Z' --output foo.zip
    ```
 
+   Windowsユーザー向け：
+
+   ```
+   curl -L -H "Authorization: Bearer 100dnsjvw78q2p3a5zsxxa61a0x7o8wtfx8z39z8gm2fvdq5lp7dfen" "https://analytics.liferay.com/api/reports/export/page?fromDate=2023-01-01T00:00:01.000Z&toDate=2023-03-01T23:59:59.000Z" --output foo.zip
+   ```
+
    なお、ZIPファイルをダウンロードする際には、 `-i` includeパラメータは使わないこと。
 
    リクエストは1つずつ処理されます。 最初のリクエストの実行中に2番目のリクエストが行われた場合、最初のリクエストの処理が終了するまで、 `"status": "PENDING"` というメッセージが表示されます。
 
    リクエストされたデータは、24時間ダウンロード可能です。 それ以降に同じリクエストがあった場合は、新たなリクエストとして処理されます。
+
+```{note}
+ダウンロードされたJSONファイルのデータは [JSON Lines](https://jsonlines.org) 形式を使用し、各行は有効なJSONオブジェクトです。 これは、解析や読み取りが容易な柔軟なフォーマットを提供し、 [Jackson](https://github.com/FasterXML/jackson) などのさまざまなライブラリでサポートされている。
+```

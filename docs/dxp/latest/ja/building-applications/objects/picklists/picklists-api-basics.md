@@ -42,7 +42,7 @@ Liferayは、候補リストの定義 (`ListTypeDefinition`)とそのエント�
    }
    ```
 
-1. ［**グローバルメニュー**］ &rarr; ［**コントロールパネル**］ &rarr; ［**Picklists**］ に移動します。 新しい候補リストが表示されます。
+1. *［グローバルメニュー］* &rarr; *［コントロールパネル］* &rarr; *［Picklists］*に移動します。 新しい候補リストが表示されます。
 
    ![新しい候補リストが追加されたことを確認します。](./picklists-api-basics/images/02.png)
 
@@ -308,5 +308,5 @@ java -classpath .:* -DlistTypeDefinitionId=1234 ListTypeDefinition_DELETE_ById
 
 ## 関連トピック
 
-* [候補リストの使用](./using-picklists.md)
+* [ピックリストの作成](./creating-picklists.md)
 * [候補リストのエクスポートとインポート](./exporting-and-importing-picklists.md)

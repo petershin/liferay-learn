@@ -4,7 +4,7 @@
 
 レイアウト要素は、ページやテンプレートのレイアウトをデザインするためのドロップゾーンを定義します。 デフォルトでは、Liferayは2つのレイアウト要素を含んでいます： [Containers](#containers) と [Grids](#grids) です。 一度追加すれば、ウィジェットや他のフラグメントをこれらのドロップゾーンにドラッグ＆ドロップすることができ、さらに複雑なレイアウトを作成するための追加コンテナやグリッドも含まれます。 レイアウトをデザインしたら、レイアウト構成を保存して、他のページやテンプレートで再利用できます。 詳細については、 [フラグメント構成の保存](./saving-fragment-compositions.md) を参照してください。
 
-![コンテナとグリッドのフラグメントは、ページのレイアウトをデザインするためのものです。](./using-layout-elements/images/01.png)
+![ContainerとGridフラグメントは、ページのレイアウトをデザインするためのものです。](./using-layout-elements/images/01.png)
 
 フラグメントをサポートする新しいページやテンプレートを作成すると、デフォルトのドロップゾーンが表示されます。 この領域にはどのフラグメントを追加してもよいが、コンポジションの最初の要素としてコンテナ・フラグメントを使用すると、重要な利点がある：
 
@@ -45,6 +45,8 @@
 
 ## 関連トピック
 
-* [デフォルトのフラグメントリファレンス](./default-fragments-reference.md)
-* [フラグメント構成の保存](./saving-fragment-compositions.md)
-* [フラグメントの設定](./configuring-fragments.md)
+[デフォルトのフラグメントリファレンス](./default-fragments-reference.md)
+
+[フラグメント構成の保存](./saving-fragment-compositions.md)
+
+[フラグメントの設定](./configuring-fragments.md)

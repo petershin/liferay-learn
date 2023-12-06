@@ -5,10 +5,13 @@ toc:
   - ./liferay-pricing/liferay-pricing-saas-addons-upcoming.md
   - ./liferay-pricing/liferay-pricing-paas.md
   - ./liferay-pricing/liferay-pricing-self-hosted.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 라이프레이 가격
 
-**한눈에**
+**한눈에 보기**
 
 * Liferay는 Liferay DXP를 포함한 세 가지 배포 접근 방식을 제공합니다.
   * Liferay Experience Cloud(SaaS)
@@ -37,7 +40,7 @@ Liferay는 공동 마케팅, 공동 제공 및 공동 판매를 의미하는 Par
 
 **기존 고객 기회:**
 
-* Liferay 고객 성공 관리자(CSM)가 고객과 파트너를 지원합니다.
+- Liferay 고객 성공 관리자(CSM)가 고객과 파트너를 지원합니다.
 
 이러한 팀 구조로 인해 파트너가 스스로 가격을 결정해야 하는 상황이 있어서는 안 됩니다.
 
@@ -47,7 +50,7 @@ Liferay는 공동 마케팅, 공동 제공 및 공동 판매를 의미하는 Par
 
 중요한 것은 복잡한 솔루션 판매의 경우 프로세스 초기에 정확한 가격을 제공하는 것이 거의 불가능하다는 것입니다. 이 단계에서는 고객의 요구 사항을 완전히 이해하지 못하고 이러한 이해 없이는 정확한 가격을 책정하는 것이 불가능하기 때문입니다.
 
-구매자가 제품의 '가치'를 이해하지 못하고 가격을 제시하는 경우, 이는 구매자가 해야 할 '투자'가 아니라 '비용'으로 해석됩니다.
+구매자가 제품의 **가치** 를 이해하지 못하고 가격을 제시하는 것이 **투자** 가 아닌 **비용** 으로 해석되는 경우에는 구매자가 해야 할 일입니다.
 
 모든 고객 질문에 즉시 답변할 수 있을 것으로 기대되지 않으며 가격을 즉시 제공할 필요도 없습니다. 더 중요한 것은 가격이 제공되기 전에 제품의 가치가 구축될 수 있도록 고객의 요구 사항과 고객이 특정 질문을 하는 이유를 이해하는 것입니다.
 
@@ -64,7 +67,7 @@ Liferay는 공동 마케팅, 공동 제공 및 공동 판매를 의미하는 Par
 * 솔루션 사용 사례
 * 성공 지표
 * 맞춤/맞춤화 요구 사항
-* 최종 사용자 유형 & 수량: 등록됨/익명
+* 최종 사용자 유형 및 수량: 등록됨/익명
 * 저장량 거래 번호; 활동 유형
 * 지원 요구 사항
 * 임무의 중요성
@@ -86,11 +89,11 @@ Liferay는 공동 마케팅, 공동 제공 및 공동 판매를 의미하는 Par
 
 익명 트래픽의 경우 사용자 수는 페이지 조회 수보다 관련성이 낮으므로 이 정보를 사용할 수 있으면 가격 책정에도 도움이 됩니다.
 
-**지원 및 임무 중요성**
+**지원 및 임무의 중요성**
 
 애플리케이션의 미션 또는 비즈니스 크리티컬 정도는 일반적으로 필요한 지원 수준과 직접적으로 연관됩니다. 미션 또는 비즈니스에 중요한 애플리케이션의 경우 고객은 일반적으로 문제에 대한 연중무휴 지원이 필요합니다.
 
-**기타 고려 사항**
+**기타 고려사항**
 
 기타 고려 사항으로는 솔루션에 필요한 스토리지 용량, 필요한 조정 유형, 필요할 수 있는 사용자 정의 수 등이 있습니다.
 
@@ -102,15 +105,15 @@ Liferay는 세 가지 배포 모델을 지원합니다.
 * Liferay Experience Cloud 자체 관리형(PaaS)
 * Liferay DXP 셀프 호스팅(DXP SH)
 
-![Liferay의 세 가지 배포 모델은 Liferay Experience Cloud SaaS, Liferay Experience Cloud 자체 관리형(PaaS) 및 DXP 자체 호스팅입니다.](./liferay-pricing/images/01.png)
+![Liferay's three deployment models are Liferay Experience Cloud SaaS, Liferay Experience Cloud Self-Managed (PaaS) and DXP Self-Hosted.](./liferay-pricing/images/01.png)
 
 ### SaaS 우선
 
 Liferay의 접근 방식은 SaaS 우선입니다. 이것이 가능한지 더 쉽게 식별할 수 있도록 영업팀 내에서 논의할 수 있는 몇 가지 간단한 질문이 있습니다.
 
 * Liferay의 기본 기능으로 고객의 비즈니스 문제를 해결할 수 있습니까?
-* 아니면 사용자 정의에 대한 기본 접근 방식인 클라이언트 확장을 사용하여 이러한 요구 사항을 충족할 수 있습니까?
-* 아니면 이미 로드맵에 있는 기능이나 고객이 요청하여 판매 주기 동안 구축할 수 있는 기능 등 곧 출시될 기능으로 문제를 해결할 수 있습니까?
+* 아니면 사용자 지정에 대한 기본 접근 방식인 클라이언트 확장을 사용하여 이러한 요구 사항을 충족할 수 있습니까?
+- 아니면 이미 로드맵에 있는 기능이나 고객이 요청하여 판매 주기 동안 구축할 수 있는 기능 등 곧 출시될 기능으로 문제를 해결할 수 있습니까?
 
 이들 중 하나라도 해당되고 고객이 우선 SaaS에 익숙하다면 Liferay Experience Cloud SaaS를 제안해야 합니다.
 
@@ -124,23 +127,23 @@ SaaS가 불가능할 수 있는 몇 가지 시나리오가 있습니다.
 
 이러한 경우 PaaS - Liferay Experience Cloud 자체 관리가 옵션일 수 있으며, 일반적으로 Liferay의 클라우드가 옵션이 아닌 경우 DXP 자체 호스팅을 사용할 수 있습니다.
 
-그리고 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) 도 이 단계를 돕기 위해 사용될 수 있다는 점을 기억하십시오.
+그리고 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow)을 사용하여 이 단계를 도울 수도 있다는 점을 기억하세요.
 
-![Liferay 신규 고객 및 신규 프로젝트 판매 결정 흐름은 새로운 기회에 가장 적합한 배포 모델에 대한 지침을 제공합니다.](./liferay-pricing/images/02.png)
+![The Liferay New Customer and New Project Sales Decision Flow provides guidance on which deployment model is most appropriate for a new opportunity.](./liferay-pricing/images/02.png)
 
 다음: [Liferay Experience Cloud SaaS](./liferay-pricing/liferay-pricing-saas.md)부터 시작하여 각 가격 모델을 검토합니다.
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} Liferay 가격 - SaaS
+:::{grid-item-card} Liferay 가격-SaaS
 :link: ./liferay-pricing/liferay-pricing-saas.md
 
-:::  
+:::
 :::{grid-item-card} Liferay 가격 - PaaS
 :link: ./liferay-pricing/liferay-pricing-paas.md
 
-:::  
+:::
 :::{grid-item-card} Liferay 가격 - 자체 호스팅
 :link: ./liferay-pricing/liferay-pricing-self-hosted.md
 

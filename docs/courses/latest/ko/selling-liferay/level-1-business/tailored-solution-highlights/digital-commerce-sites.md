@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 디지털 상거래 사이트
 
 디지털 상거래 솔루션을 사용하면 사람이나 회사가 인터넷을 통해 실제 상품, 서비스 및 디지털 제품을 구매할 수 있습니다. 이러한 디지털 상거래 사이트는 기업 구매자가 제조업체, 유통업체, 딜러와 직접 연결하여 상품과 서비스를 구매할 수 있는 B2B(Business to Business) 솔루션이 될 수 있습니다. 최종 사용자가 구매하는 B2C(Business to Consumer)일 수도 있습니다. 이러한 솔루션에는 B2B2C 또는 G2C(정부 대 시민)와 같은 고급 시나리오도 포함됩니다.
@@ -10,7 +15,7 @@ Liferay DXP 기반 디지털 상거래 사이트에 대해 잠재 고객과 대�
 * [헤드리스 API 및 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
 * [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
 * [데이터 모델링 및 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [콘텐츠 및 자산 관리 ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [콘텐츠 및 자산 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
 * [분석](https://learn.liferay.com/w/analytics-cloud/index) 및 [최적화](https://learn.liferay.com/w/dxp/site-building/optimizing-sites)
 * [세분화 및 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [검색](https://learn.liferay.com/w/dxp/using-search) 및 [탐색](https://learn.liferay.com/w/dxp/site-building/site-navigation)

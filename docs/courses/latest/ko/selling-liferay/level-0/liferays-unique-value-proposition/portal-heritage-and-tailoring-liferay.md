@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Portal Heritage 및 Tailoring Liferay
 
 **한눈에**

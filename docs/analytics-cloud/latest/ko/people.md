@@ -26,11 +26,11 @@ people/segments.md
 
 ### 개인
 
-- [개인 대시보드](./people/individuals/individuals-dashboard.md)
-- [개인 프로필](./people/individuals/individual-profiles.md)
-- [관심사 이해](./people/individuals/understanding-interests.md)
+* [개인 대시보드](./people/individuals/individuals-dashboard.md)
+* [개인 프로필](./people/individuals/individual-profiles.md)
+* [관심사 이해](./people/individuals/understanding-interests.md)
 
 ### 세그먼트
 
-- [세그먼트](./people/segments/segments.md)
-- [세그먼트 만들기](./people/segments/creating-segments.md)
+* [세그먼트](./people/segments/segments.md)
+* [세그먼트 만들기](./people/segments/creating-segments.md)

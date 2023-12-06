@@ -34,6 +34,6 @@
 
 ## 관련 정보
 
-- [사용자 그룹으로 사이트 구성원 및 권한 관리](../../../users-and-permissions/user-groups/managing-site-membership-and-permissions-with-user-groups)
-- [사이트 회원](../../sites/site-membership.md)
-- [사이트 설정 UI 참조](../site-settings-ui-reference.md)
+* [사용자 그룹으로 사이트 구성원 및 권한 관리](../../../users-and-permissions/user-groups/managing-site-membership-and-permissions-with-user-groups)
+* [사이트 회원](../../sites/site-membership.md)
+* [사이트 설정 UI 참조](../site-settings-ui-reference.md)

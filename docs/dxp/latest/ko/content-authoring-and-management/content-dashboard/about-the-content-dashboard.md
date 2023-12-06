@@ -36,6 +36,6 @@
 
 ## 관련 정보
 
-- [콘텐츠 대시보드 인터페이스](./content-dashboard-interface.md)
-- [콘텐츠 성능 도구 정보](../page-performance-and-accessibility/about-the-content-performance-tool.md)
-- [콘텐츠의 범주 및 어휘 정의](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)
+* [콘텐츠 대시보드 인터페이스](./content-dashboard-interface.md)
+* [콘텐츠 성능 도구 정보](../page-performance-and-accessibility/about-the-content-performance-tool.md)
+* [콘텐츠의 범주 및 어휘 정의](../tags-and-categories/defining-categories-and-vocabularies-for-content.md)

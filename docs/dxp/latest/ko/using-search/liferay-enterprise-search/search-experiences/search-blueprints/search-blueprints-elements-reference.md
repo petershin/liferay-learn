@@ -318,6 +318,6 @@ Elasticsearch DSL 쿼리 본문을 있는 그대로 요소에 붙여넣습니다
 
 ## 관련 항목
 
-- [검색 Blueprint 생성 및 관리](./creating-and-managing-search-blueprints.md)
-- [검색 경험 개인화](./personalizing-the-search-experience.md)
-- [수입 카테고리 탐색](../../../search-pages-and-widgets/search-results.md)
+* [검색 Blueprint 생성 및 관리](./creating-and-managing-search-blueprints.md)
+* [검색 경험 개인화](./personalizing-the-search-experience.md)
+* [수입 카테고리 탐색](../../../search-pages-and-widgets/search-results.md)

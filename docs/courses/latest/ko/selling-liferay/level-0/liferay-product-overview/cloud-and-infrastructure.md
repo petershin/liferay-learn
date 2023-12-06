@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 클라우드 및 인프라
 
 Liferay Experience Cloud는 강력한 사용자 정의 기능을 제공하는 동시에 고객이 비즈니스 프로세스 및 가치 창출 시간에 집중할 수 있도록 지원하는 Liferay의 SaaS 제품입니다. Liferay Experience Cloud 자체 관리형은 Liferay의 PaaS 제품으로, 고객이 내장된 CI/CD, 자동 백업, 모니터링 및 경고를 통해 솔루션 수명 주기를 직접 관리할 수 있습니다.

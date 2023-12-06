@@ -1,80 +1,80 @@
-# フラグメントを使用してフォームを構築する
+# フラグメントでフォームを構築する
 
-{bdg-secondary}`Liferay 7.4 U45+/GA45+で利用可能`
+{bdg-secondary}`Liferay 7.4 U45+/GA45+`
 
-Liferayには、コンテンツページでオブジェクトフォームを構築するためのフォームフラグメントがあります。 フォームを構築するには、コンテンツページまたはページテンプレートにフォームコンテナを追加し、それを公開オブジェクトにマッピングします。 コンテナには、各オブジェクトフィールドにマッピングされたフラグメントが自動的に入力されます。 手動でフラグメントを整理、削除、追加することができます。 公開されると、エンドユーザーはフォームを使用してオブジェクトエントリーを作成することができます。
+Liferayには、コンテンツページにオブジェクトフォームを構築するためのフォームフラグメントがあります。 フォームを作成するには、コンテンツページまたはページテンプレートにフォームコンテナを追加し、公開オブジェクトにマッピングします。 コンテナは、各オブジェクト・フィールドにマッピングされたフラグメントを自動的に入力する。 手動でフラグメントを整理、削除、追加することができます。 公開されると、エンドユーザーはフォームを使ってオブジェクト・エントリーを作成できる。
 
-コンテンツページでフォームを構築するためには
+コンテンツページにフォームを作成するには
 
-* フォームの破片は、マッピングされたフォームコンテナにのみ入れてください。
-* フォーム内のすべてのフォームフラグメントをオブジェクトフィールドにマッピングして、データの損失を防ぐ。
-* すべての必須オブジェクトフィールドに対して、フォームコンテナにフラグメントを含める。
-* 必須のフォームフラグメントを可視化する。
-* フォームコンテナ内に可視化された送信ボタンを含める。
+* フォームの断片は、マッピングされたフォームコンテナにのみ配置します。
+* フォーム内のすべてのフォームフラグメントをオブジェクトフィールドにマッピングし、データの損失を防ぐ。
+* すべての必須オブジェクト・フィールドのフラグメントをフォーム・コンテナに含める。
+* 必須フォームの断片を見えるようにする。
+* フォームコンテナ内に送信ボタンを表示する。
 
-デフォルトでは、Liferayには [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components) のフラグメントセットが含まれていますが、自分で作成することも可能です。 詳しくは [フォームフラグメントの作成](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md) をご覧ください。
+デフォルトでは、Liferayには [Form Components](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components) フラグメントセットが含まれていますが、自分で作成することもできます。 詳しくは [フォーム・フラグメントの作成](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md) を参照してください。
 
 ```{important}
-フォームフラグメントは、カスタムオブジェクトでのみ使用可能です。 そのため、Liferayは少なくとも1つの公開オブジェクトができるまで、Form Componentsのフラグメントセットを非表示にします。 公開されると、オブジェクトへのアクセス権を持つユーザーは、フォームコンポーネントフラグメントを閲覧、使用することができます。 詳しくは[オブジェクトの作成](../objects/creating-and-managing-objects/creating-objects.md) をご参照ください。
+フォームフラグメントはカスタムオブジェクトでのみ使用できます。 そのため、Liferayは少なくとも1つの公開オブジェクトができるまで、Form Componentsフラグメントセットを非表示にします。 公開されると、オブジェクトへのアクセス権を持つユーザーは、フォームコンポーネントのフラグメントを表示、使用することができます。 詳しくは[オブジェクトの作成](../objects/creating-and-managing-objects/creating-objects.md)を参照。
 ```
 
-## フォームを作成する
+## フォームの作成
 
-1. コンテンツページやページテンプレートの編集を開始します。
+1. コンテンツページまたはページテンプレートの編集を開始します。
 
-   表示ページテンプレートは、フォームフラグメントに対応していません。
+   表示ページテンプレートはフォームフラグメントをサポートしていません。
 
-1. (オプション) フラグメントを使ったレイアウトをデザインする。 [フラグメントでレスポンシブレイアウトを構築する](../../site-building/optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) をご参照ください。
+1. (オプション）フラグメントを使ってレイアウトをデザインする。 詳しくは [Building Responsive Layouts with Fragments](../../site-building/optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) を参照してください。
 
 1. **フォームコンテナ** フラグメントをページに追加し、オブジェクトにマッピングします。
 
-   コンテナは、すべてのオブジェクトフィールドに対して、Submitボタンとフラグメントを自動的に生成します。 五十音順で表示されます。 必須項目には適宜マークが付きます。
+   コンテナは、すべてのオブジェクトフィールドに対して、送信ボタンとフラグメントを自動的に生成します。 アルファベット順に並んでいる。 必須項目には適宜マークが付きます。
 
-   ![フォームコンテナを追加し、オブジェクトにマッピングします。](./using-fragments-to-build-forms/images/01.png)
+   ![フォームコンテナを追加し、それをオブジェクトにマッピングする。](./using-fragments-to-build-forms/images/01.png)
 
 1. フォームに不要な非必須フィールドを削除する。
 
-1. フォームフラグメントをドラッグ＆ドロップで再編成。 デフォルトでは、フォームの要素はアルファベット順に整理されています。
+1. フォームの断片をドラッグ・アンド・ドロップして再編成する。 デフォルトでは、フォーム要素はアルファベット順に整理されます。
 
-1. (オプション) フォームコンテナに基本フラグメントを追加します。 基本的なコンポーネント（グリッド、セパレータ、段落、画像など）を使って、フォームコンテナに構造とスタイルを提供することができます。
+1. (オプション）フォームコンテナに基本フラグメントを追加する。 基本的なコンポーネント（グリッド、セパレーター、段落、画像など）を使って、フォームコンテナに構造とスタイルを与えることができます。
 
-   ![フォームコンテナに基本的なフラグメントを追加し、ページ要素を再編成して目的の構造を作り出します。](./using-fragments-to-build-forms/images/02.png)
+   ![フォームコンテナに基本的なフラグメントを追加し、ページ要素を再編成して希望の構造を作りましょう。](./using-fragments-to-build-forms/images/02.png)
 
-1. フラグメントを設定する。 フォームフラグメントには、 [標準の](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md) と [独自の](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options) の両方の構成オプションがあります。
+1. フラグメントを設定する。 フォームの断片には、 [標準の](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md) と、 [ユニークな](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options) の両方の設定オプションがあります。
 
    ```{note}
-   フォームフラグメントの設定オプションは、フラグメントをオブジェクトフィールドにマッピングした後に利用可能になります。
+   フォーム・フラグメントの設定オプションは、フラグメントをオブジェクト・フィールドにマッピングした後に利用可能になります。
    ```
 
-   ![フォームフラグメントを設定する。](./using-fragments-to-build-forms/images/03.png)
+   ![フォームの断片を設定する。](./using-fragments-to-build-forms/images/03.png)
 
 1. 完了したら、 ［**公開**］ をクリックします。
 
 ## フォームコンポーネントでサポートされているフィールドタイプ
 
-各フォームフラグメントは、1つまたは複数のオブジェクトフィールドタイプをサポートすることができます。 デフォルトのフォームコンポーネントは、これらのフィールドをサポートしています。
+各フォーム・フラグメントは、1つ以上のオブジェクト・フィールド・タイプをサポートすることができる。 デフォルトのフォームコンポーネントはこれらのフィールドをサポートしています。
 
-| フォームフラグメント | オブジェクト項目タイプ        |
-|:---------- |:------------------ |
-| キャプチャ      | 該当なし               |
-| チェックボックス   | ブール値               |
-| 日付         | 日付                 |
-| ファイルアップロード | 添付ファイル             |
-| 複数選択のリスト   | 複数のピックリスト          |
-| 数値入力       | 整数、長整数、10進数、精密10進数 |
-| リッチテキスト    | リッチテキスト            |
-| プルダウン      | リレーションシップ、ピックリスト   |
-| 送信ボタン      | 該当なし               |
-| テキスト入力     | テキスト、ロングテキスト       |
-| テキスト領域     | テキスト、ロングテキスト       |
+| フォームフラグメント | オブジェクト項目タイプ         |
+|:---------- |:------------------- |
+| キャプチャ      | 該当なし                |
+| チェックボックス   | ブール値                |
+| 日付         | 日付                  |
+| ファイルアップロード | 添付ファイル              |
+| 複数選択のリスト   | 複数のピックリスト           |
+| 数値入力       | 整数、長整数、10進数、高精度10進数 |
+| リッチテキスト    | リッチテキスト             |
+| プルダウン      | リレーションシップ, ピックリスト   |
+| 送信ボタン      | 該当なし                |
+| テキスト入力     | テキスト、長文             |
+| テキスト領域     | テキスト、長文             |
 
 ```{tip}
-オブジェクトのカテゴリ分けが有効になっている場合、タグとカテゴリのフォームフラグメントを使用して、オブジェクトエントリにメタデータを追加することができます。 
+オブジェクトのカテゴリ分けが有効になっている場合、Tags and Categories フォームフラグメントを使用してオブジェクトエントリにメタデータを追加することができます。 
 ```
 
 ## 関連トピック
 
 * [フォームコンポーネント](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#form-components)
 * [フラグメントの設定](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md)
-* [フォームフラグメントのオプション](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options)
-* [フォームフラグメントを作成する](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md)
+* [フォーム・フラグメント・オプション](../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/general-settings-reference.md#form-fragment-options)
+* [フォーム・フラグメントの作成](../../site-building/developer-guide/developing-page-fragments/creating-form-fragments.md)

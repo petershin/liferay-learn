@@ -58,6 +58,6 @@ Liferay 7.4 U22+ 및 GA22+의 경우, 새로운 Liferay 설치에는 대시보�
 
 ## 관련 주제
 
-- [사이트 추가](./adding-a-site.md)
-- [사이트 템플릿](./site-templates.md)
-- [사용자 그룹 사이트](../../users-and-permissions/user-groups/user-group-sites.md)
+* [사이트 추가](./adding-a-site.md)
+* [사이트 템플릿](./site-templates.md)
+* [사용자 그룹 사이트](../../users-and-permissions/user-groups/user-group-sites.md)

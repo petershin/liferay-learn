@@ -120,7 +120,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 ![カラーピッカーの設定では、色の値を直接入力したり、範囲から選択したり、スタイルブックから選択することができます。](./fragment-configuration-types-reference/images/02.png)
 
 ```{note}
-使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)がない場合、ページ上のカラーピッカー設定は [カラーパレット](#color-palette configuration) 設定に置き換えられます。
+使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)がない場合、ページ上のカラーピッカー設定は [color palette](#color-palette configuration) 設定に置き換えられます。
 ```
 
 このJSON設定は、`headingColor`というカラーピッカーフィールドを作成します。
@@ -307,6 +307,10 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ![アイテム セレクターの設定は、既存のコンテンツを表示するオプションの選択が必要な場合に役立ちます。](./fragment-configuration-types-reference/images/04.png)
 
+```{note}
+アイテムセレクタ構成のフラグメントをコレクション表示ウィジェットに配置すると、コレクションアイテムが選択コンテンツとして自動的にマップされます。
+```
+
 ## URL設定
 
 このコンフィギュレーションは、フラグメントのマークアップで使用するURL専用のフィールドを追加します：
@@ -404,7 +408,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 ![ビデオセレクターで、フラグメントに外部ビデオを含めることができます。](./fragment-configuration-types-reference/images/07.png)
 
 ```{note}
-`videoSelector`型は [外部ビデオ](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) フラグメントと互換性がありますが、 [ビデオURL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) フラグメントとの互換性はありません。
+videoSelector`型は [外部ビデオ](../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) フラグメントと互換性がありますが、 [ビデオURL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) フラグメントとの互換性はありません。
 ```
 
 ## コレクションセレクター
@@ -484,7 +488,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 ![Webコンテンツやブログエントリーを含むコレクションは、アセットタイプに対応します。](./fragment-configuration-types-reference/images/09.png)
 
 ```{tip}
-itemType`に加え、`itemSubtype`をコンフィギュレーションで指定することができる。 `itemSubtype`はアセット`classPK`に対応します。
+`itemType`に加え、`itemSubtype`をコンフィギュレーションで指定することができる。 `itemSubtype`はアセット`classPK`に対応します。
 ```
 
 ### 返却されたコレクション項目の最大数の定義

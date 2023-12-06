@@ -5,7 +5,7 @@
 1. [この練習のためのリソース](./liferay-p6k3.zip) をダウンロードして解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/adding-fields-using-rest-apis/liferay-p6k3.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-p6k3.zip -O
    ```
 
    ```bash

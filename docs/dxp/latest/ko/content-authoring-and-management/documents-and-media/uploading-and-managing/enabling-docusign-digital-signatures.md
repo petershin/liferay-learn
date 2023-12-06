@@ -98,4 +98,4 @@ DocuSign은 **봉투** 이라는 용어를 사용하여 서명할 문서 또는 
 
 ## 관련 주제
 
-- [구성 범위 이해](../../../system-administration/configuring-liferay/understanding-configuration-scope.md)
+* [구성 범위 이해](../../../system-administration/configuring-liferay/understanding-configuration-scope.md)

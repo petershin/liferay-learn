@@ -46,4 +46,4 @@ Netvibes는 사용자가 로그인하여 자신만의 개인 대시보드를 만
 
 ## 관련 주제
 
-- [위젯 권한 설정](./setting-widget-permissions.md)
+* [위젯 권한 설정](./setting-widget-permissions.md)

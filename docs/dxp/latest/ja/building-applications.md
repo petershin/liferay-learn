@@ -1,6 +1,7 @@
 ---
 toc:
   - ./building-applications/objects.md
+  - ./building-applications/tutorials.md
   - ./building-applications/client-extensions.md
   - ./building-applications/developing-a-javascript-application.md
   - ./headless-delivery/apis-with-rest-builder.md

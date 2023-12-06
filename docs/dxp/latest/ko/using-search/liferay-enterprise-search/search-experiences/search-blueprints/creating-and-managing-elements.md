@@ -18,6 +18,6 @@ creating-and-managing-elements/predefined-element-variables-reference.md
 
 ![Blueprints 애플리케이션에서 요소를 만들고 관리합니다.](./creating-and-managing-elements/creating-elements/images/01.png)
 
-- [요소 생성](./creating-and-managing-elements/creating-elements.md)
-- [요소 관리](./creating-and-managing-elements/managing-elements.md)
-- [미리 정의된 요소 변수 참조](./creating-and-managing-elements/predefined-element-variables-reference.md)
+* [요소 생성](./creating-and-managing-elements/creating-elements.md)
+* [요소 관리](./creating-and-managing-elements/managing-elements.md)
+* [미리 정의된 요소 변수 참조](./creating-and-managing-elements/predefined-element-variables-reference.md)

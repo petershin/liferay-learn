@@ -1,7 +1,7 @@
 ---
 toc:
-- ./page-fragments-and-widgets/using-fragments.md
-- ./page-fragments-and-widgets/using-widgets.md
+  - ./page-fragments-and-widgets/using-fragments.md
+  - ./page-fragments-and-widgets/using-widgets.md
 ---
 # ページフラグメントとウィジェット
 
@@ -15,7 +15,7 @@ page-fragments-and-widgets/using-widgets.md
 Liferayは、サイトページとページテンプレートを構築するためのページフラグメントとウィジェットを提供します。
 
 ```{note}
-フラグメントはウィジェットページでは使用できません。 これらは、コンテントページ、マスターページテンプレート、ページテンプレート、および表示ページテンプレートでのみ使用できます。
+フラグメントはウィジェット・ページでは使用できません。 コンテンツページ、マスターページテンプレート、ページテンプレート、表示ページテンプレートでのみ利用可能です。
 ```
 
 ```{raw} html

@@ -34,5 +34,5 @@ Liferay는 MySQL, MariaDB 또는 PostgreSQL과 같은 많은 데이터베이스�
 
 ## 관련 개념
 
-- [데이터베이스 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database)
-- [클러스터 노드에 대한 데이터베이스 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/database-configuration-for-cluster-nodes)
+* [데이터베이스 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/installing-liferay/configuring-a-database)
+* [클러스터 노드에 대한 데이터베이스 구성](https://learn.liferay.com/w/dxp/installation-and-upgrades/setting-up-liferay/clustering-for-high-availability/database-configuration-for-cluster-nodes)

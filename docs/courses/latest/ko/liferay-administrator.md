@@ -24,9 +24,9 @@ Liferay 인스턴스가 설치되어 있습니까? 이제 뭐? LXC, LXC-SM 또�
 - 웹 서비스에 액세스하기 위해 OAuth 2.0 프로필을 만드는 방법
 - 사용자가 제출한 HTML에서 JavaScript를 필터링하는 방법
 
-분재 나무 수액의 (가상) 건강상의 이점과 메이플 시럽을 결합하여 탁월한 아침 식사 경험을 선사하는 (가짜) 회사인 Delectable Bonsai의 웹사이트 제작을 시작해 보세요!
+놀랍지만 저렴한 안경을 판매하는 (가짜) 회사인 Clarity Vision Solutions의 웹사이트를 만들어 보세요.
 
-당신은 무엇을 기다리고 있습니까? Liferay [구성을 생성하여 시작하십시오](./liferay-administrator/configuration.md).
+당신은 무엇을 기다리고 있습니까? Liferay [설정](./liferay-administrator/configuration.md) 을 생성하여 시작하세요.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

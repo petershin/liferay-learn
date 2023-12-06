@@ -1,4 +1,4 @@
-# コラボレーションとナレッジ共有
+# コラボレーションとナレッジの共有
 
 ユーザーが自分自身でより早く答えを見つけ、組織的なコラボレーションを通じてより複雑な課題を解決できるようにします。 Liferay DXPのコラボレーションとナレッジ共有ツールにより、顧客、パートナー、従業員は自ら必要な情報を見つけられるようになります。
 
@@ -17,8 +17,8 @@
 
 ## ソーシャル
 
-* [評価システムの使用](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/user-guide/using-the-ratings-system)
+* [評価](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/user-guide/using-the-ratings-system)
 * [掲示板のディスカッション](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/using-page-comments)
 * [自分について書かれた記事/コメント](https://learn.liferay.com/w/dxp/collaboration-and-social/notifications-and-requests/user-guide/mentioning-users)
 
-次：[ID管理とアクセス管理](./identity-management-and-access-control.md)
+次：[アイデンティティ管理とアクセスコントロール](./identity-management-and-access-control.md)

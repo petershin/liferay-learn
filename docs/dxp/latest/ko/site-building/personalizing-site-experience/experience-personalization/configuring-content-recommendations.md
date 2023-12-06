@@ -69,7 +69,7 @@ Collection Display Fragment는 Collection을 표시하는 Fragment 유형입니�
 
 ## 관련 정보
 
-- [콘텐츠 추천 이해](./understanding-content-recommendations.md)
-- [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
-- [컬렉션 만들기](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection)
-- [표시 페이지 템플릿 생성 및 관리](../../displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)
+* [콘텐츠 추천 이해](./understanding-content-recommendations.md)
+* [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
+* [컬렉션 만들기](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md#creating-a-dynamic-collection)
+* [표시 페이지 템플릿 생성 및 관리](../../displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)

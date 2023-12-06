@@ -1,11 +1,16 @@
+---
+visibility:
+  - Employee
+  - Partner
+---
 # 고객에게 가장 적합한 배포 옵션 결정
 
 이미 언급했듯이 모든 배포 옵션이 가능하지만 당사의 영업 접근 방식은 SaaS 우선입니다. 그러나 이것이 실제로 의미하는 바는 무엇이며, 이것이 항상 고객에게 올바른 선택이 될까요?
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) 을 다운로드하세요.
-* 이 모듈에 언급된 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering)를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf)를 다운로드하세요.
+* 이 모듈에 언급된 [판매 결정 흐름](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow)을 다운로드하세요.
 ```
 
 ## 비즈니스 문제 해결
@@ -29,15 +34,15 @@ Liferay로 구현된 솔루션은 고객이 배포 접근 방식으로 Liferay E
 * 사용자와 역할을 정의해야 합니다.
 * 등.
 
-그러나 대부분의 경우 이러한 기능만으로는 비즈니스의 모든 문제가 해결되지는 않습니다. Liferay DXP의 주요 강점은 항상 특정 요구 사항에 맞게 플랫폼을 확장하고 사용자 정의할 수 있는 능력이었습니다. 플랫폼 확장에 대한 선호되는 접근 방식은 [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) 을 생성하는 것입니다. 클라이언트 확장은 Liferay의 코드에 묶여 있지 않으며 모든 배포 접근 방식과 함께 사용할 수 있습니다. 클라이언트 확장을 통해 개발자는 익숙한 기술을 사용할 수 있으며 핵심 플랫폼으로의 업그레이드를 쉽게 수행할 수 있습니다.
+그러나 대부분의 경우 이러한 기능만으로는 비즈니스의 모든 문제가 해결되지는 않습니다. Liferay DXP의 주요 강점은 항상 특정 요구 사항에 맞게 플랫폼을 확장하고 사용자 정의할 수 있는 능력이었습니다. 플랫폼 확장에 대해 선호되는 접근 방식은 [클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions)을 생성하는 것입니다. 클라이언트 확장은 Liferay의 코드에 묶여 있지 않으며 모든 배포 접근 방식과 함께 사용할 수 있습니다. 클라이언트 확장을 통해 개발자는 익숙한 기술을 사용할 수 있으며 핵심 플랫폼으로의 업그레이드를 쉽게 수행할 수 있습니다.
 
-![클라이언트 확장은 느슨하게 결합되어 있으며 최신 기술을 사용하고 쉬운 업그레이드를 지원합니다.](../liferay-product-offering/images/05.png)
+![Client extensions are loosely-coupled, use modern technologies, and support easy upgrades.](../liferay-product-offering/images/05.png)
 
 매우 복잡한 사용자 정의가 필요한 일부 상황에서 고객은 대체 Java 기반 개발 접근 방식을 사용하여 OSGi 모듈을 핵심 플랫폼에 배포할 수 있지만 이를 위해서는 SaaS가 아닌 배포 접근 방식이 필요합니다.
 
 ## SaaS가 가능한지 확인
 
-Liferay는 **고객이 SaaS 배포** 통해 고유한 비즈니스 문제를 해결할 수는 없다는 것을 인식하고 있습니다.
+Liferay는 **모든** 고객이 SaaS 배포를 통해 고유한 비즈니스 문제를 해결할 수는 없다는 점을 인식하고 있습니다.
 
 고객이 SaaS에 **편안하다고** 가정하고, 다음 사항이 사실이라면 SaaS 우선 접근 방식을 따라야 합니다.
 
@@ -74,10 +79,10 @@ Liferay Experience Cloud SaaS는 기본 옵션이어야 하지만 고객에게 �
 
 Liferay는 신규 고객 및 기존 고객과의 신규 프로젝트에 사용할 판매 결정 흐름을 개발했습니다. 파트너는 이 흐름을 사용하여 각 고객 또는 프로젝트에 대한 최적의 접근 방식을 결정할 수 있습니다. 이는 SaaS, PaaS, 관리형 서비스가 포함된 PaaS 또는 셀프 호스팅을 안내하는 주요 결정 단계를 다루고, 기회에 적합한 배포 접근 방식에 대한 지침을 제공하고 이상값에 대한 솔루션 컨시어지 데스크로 안내합니다.
 
-![신규 고객 및 기존 고객과의 신규 프로젝트에 대한 영업 의사결정 흐름.](../liferay-product-offering/images/06.png)
+![Sales decision flow for new customers and new projects with existing customers.](../liferay-product-offering/images/06.png)
 
 ## 다음
 
 훌륭한! Liferay 제품 제공의 기본 사항에 대한 모듈을 완료했습니다.
 
-[다음 모듈](../liferay-product-overview.md) 을 시작하여 Liferay DXP의 기능에 대한 개요와 고객 요구 사항을 충족하는 방법을 알아보세요.
+[다음 모듈을 시작](../liferay-product-overview.md)하여 Liferay DXP의 기능에 대한 개요와 고객 요구 사항을 충족하는 방법을 알아보세요.

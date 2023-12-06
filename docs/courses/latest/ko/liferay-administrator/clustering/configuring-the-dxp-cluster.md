@@ -104,7 +104,7 @@
 
 1. `Liferay-1` 노드(예: `http://localhost:8080`)에서 **제품 메뉴**(![Product Menu](../../images/icon-product-menu.png))를 엽니다. **콘텐츠 & 데이터** 아래에서 **블로그** 을 클릭하세요.
 
-1. **추가** (![아이콘 추가](../../images/icon-add.png))를 클릭하세요.
+1. **추가**(![아이콘 추가](../../images/icon-add.png))를 클릭하세요.
 
 1. 다음 항목을 추가합니다.
 
@@ -123,4 +123,4 @@
 
 ## 관련 개념
 
-- [클러스터된 설치 유지 관리](https://learn.liferay.com/en/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/maintaining-clustered-installations)
+* [클러스터된 설치 유지 관리](https://learn.liferay.com/en/w/dxp/installation-and-upgrades/maintaining-a-liferay-installation/maintaining-clustered-installations)

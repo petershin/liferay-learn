@@ -120,7 +120,7 @@
 
 ## 관련 정보
 
-- [컨텐츠 페이지 개인화](./content-page-personalization.md)
-- [컬렉션 및 컬렉션 페이지 정보](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
-- [사용자 세그먼트 생성](../segmentation/creating-and-managing-user-segments.md)
-- [사용자 세그먼트에 역할 할당](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)
+* [컨텐츠 페이지 개인화](./content-page-personalization.md)
+* [컬렉션 및 컬렉션 페이지 정보](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [사용자 세그먼트 생성](../segmentation/creating-and-managing-user-segments.md)
+* [사용자 세그먼트에 역할 할당](../../../users-and-permissions/roles-and-permissions/assigning-roles-to-user-segments.md)

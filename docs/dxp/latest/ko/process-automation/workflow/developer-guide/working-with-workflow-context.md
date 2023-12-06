@@ -4,9 +4,9 @@
 
 예를 들어 워크플로 컨텍스트를 사용하여 다음을 수행할 수 있습니다.
 
-- [워크플로 스크립트, 사용자 정의 코드 또는 FreeMarker 템플릿에서 사용하기 위해 기존 속성에 액세스합니다.](#accessing-workflow-context-attributes-in-workflow-definitions)
-- [워크플로 스크립트, 사용자 지정 코드 또는 FreeMarker 템플릿에서 액세스하기 위해 워크플로 프로세스의 한 단계에서 새 속성을 설정합니다.](#setting-workflow-context-attributes-in-a-workflow-process-definition)
-- [`ServiceContext` 속성을 설정하고 워크플로 스크립트 및 알림 템플릿에서 액세스합니다.](#setting-service-context-attributes-for-access-in-workflow-definitions)
+* [워크플로 스크립트, 사용자 정의 코드 또는 FreeMarker 템플릿에서 사용하기 위해 기존 속성에 액세스합니다.](#accessing-workflow-context-attributes-in-workflow-definitions)
+* [워크플로 스크립트, 사용자 지정 코드 또는 FreeMarker 템플릿에서 액세스하기 위해 워크플로 프로세스의 한 단계에서 새 속성을 설정합니다.](#setting-workflow-context-attributes-in-a-workflow-process-definition)
+* [`ServiceContext` 속성을 설정하고 워크플로 스크립트 및 알림 템플릿에서 액세스합니다.](#setting-service-context-attributes-for-access-in-workflow-definitions)
 
 ```{note}
 `ServiceContext`를 사용하여 `workflowContext`를 사용할 수 없는 컨텍스트에서 속성을 설정합니다. 예를 들어 사용자 지정 코드가 `BlogsEntryLocalService#addEntry`를 호출하는 경우 `ServiceContext` 개체를 제공해야 합니다. 'ServiceContext#setAttribute'를 사용하여 워크플로에서 액세스하려는 데이터를 전달할 수 있습니다. 
@@ -126,6 +126,6 @@ serviceContext.getAttribute("customAttributeKey");
 
 ## 관련 정보
 
-- [워크플로 알림 템플릿 변수](./workflow-notification-template-variables.md)
-- [워크플로에서 스크립트 엔진 사용](./using-the-script-engine-in-workflow.md)
+* [워크플로 알림 템플릿 변수](./workflow-notification-template-variables.md)
+* [워크플로에서 스크립트 엔진 사용](./using-the-script-engine-in-workflow.md)
 

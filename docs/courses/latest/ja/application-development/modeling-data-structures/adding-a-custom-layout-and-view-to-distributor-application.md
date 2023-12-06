@@ -13,7 +13,7 @@
 1. [この演習のリソースをダウンロードし、解凍してください](./liferay-t7z2.zip) 。
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/adding-a-custom-layout-and-view-to-distributor-application/liferay-t7z2.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-t7z2.zip -O
    ```
 
    ```bash

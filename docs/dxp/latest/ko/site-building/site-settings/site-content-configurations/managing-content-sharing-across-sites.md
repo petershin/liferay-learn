@@ -51,5 +51,5 @@ Liferay DXP 하위 사이트가 상위 사이트의 콘텐츠를 표시하도록
 
 ## 관련 내용
 
-- [사이트 문서 콘텐츠 보안](./securing-site-documents-content.md)
-- [사이트 설정 UI 참조](../site-settings-ui-reference.md)
+* [사이트 문서 콘텐츠 보안](./securing-site-documents-content.md)
+* [사이트 설정 UI 참조](../site-settings-ui-reference.md)

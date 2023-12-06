@@ -1,7 +1,8 @@
 ---
 toc:
-- ./style-books/using-a-style-book-to-standardize-site-appearance.md
-- ./style-books/developer-guide.md
+  - ./style-books/using-a-style-book-to-standardize-site-appearance.md
+  - ./style-books/exporting-and-importing-style-books.md
+  - ./style-books/developer-guide.md
 ---
 # スタイルブック
 
@@ -9,17 +10,22 @@ toc:
 :maxdepth: 3
 
 style-books/using-a-style-book-to-standardize-site-appearance.md
+style-books/exporting-and-importing-style-books.md
 style-books/developer-guide.md
 ```
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} スタイルブックを使用してサイトの外観を標準化する
+:::{grid-item-card} スタイルブックを使ってサイトの外観を標準化する
 :link: ./style-books/using-a-style-book-to-standardize-site-appearance.md
 :::
 
-:::{grid-item-card} デベロッパーガイド
+:::{grid-item-card} スタイルブックのエクスポートとインポート
+:link: ./style-books/exporting-and-importing-style-books.md
+:::
+
+:::{grid-item-card} 開発者ガイド
 :link: ./style-books/developer-guide.md
-:::  
+:::
 ::::

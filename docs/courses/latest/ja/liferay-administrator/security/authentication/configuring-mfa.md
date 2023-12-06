@@ -4,7 +4,7 @@
 
 Liferayは、電子メールによるワンタイムコードと、SMSや認証アプリをサポートするサードパーティサービスの両方をサポートしています。 詳しくは、 [using multi-factor authentication](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication) をご覧ください。
 
-ファーマーズ・マーケットに出店していた頃とは比べものにならない。 今や多くの従業員と顧客を抱えるIT部門は、セキュリティ強化の一環としてMFAを要求している。
+クラリティ・ビジョン・ソリューションズは、ガレージでフレームを販売していた時代から長い道のりを歩んできた。 今や多くの従業員と顧客を抱えるIT部門は、セキュリティ強化の一環としてMFAを要求している。
 
 ## MFAの設定
 
@@ -24,7 +24,7 @@ Liferayは、電子メールによるワンタイムコードと、SMSや認証�
 
 1. 管理者としてLiferayにサインバックする（つまり カイル・クライン）。
 
-1. 次のページで、 **Send** for Liferay をクリックし、kyle@delectablebonsai.com にワンタイムパスワードを送信します。
+1. 次のページで、 **Send** for Liferay をクリックし、kyle@clarityvisionsolutions.com にワンタイムパスワードを送信します。
 
 1. 送信されたメールからワンタイムパスワードを取得する。
 

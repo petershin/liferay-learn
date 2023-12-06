@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 기타 공개 페이지
 
 **한눈에**

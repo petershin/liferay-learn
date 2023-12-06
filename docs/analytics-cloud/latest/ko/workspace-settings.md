@@ -34,10 +34,10 @@ workspace-settings/contact-sync-data-reference.md
 
 ## 다음 단계
 
-- [사용자 관리](./workspace-settings/managing-users.md)
-- [속성 관리](./workspace-settings/managing-properties.md)
-- [사용량 추적](./workspace-settings/tracking-usage.md)
-- [작업 공간 관리](./workspace-settings/managing-workspaces.md)
-- [다단계 인증](./workspace-settings/multi-factor-authentication.md)
-- [속성을 사용하여 사이트 및 개인 범위 지정](./workspace-settings/scoping-sites-and-individuals-using-properties.md)
-- [연락처 동기화 데이터 참조](./workspace-settings/contact-sync-data-reference.md)
+* [사용자 관리](./workspace-settings/managing-users.md)
+* [속성 관리](./workspace-settings/managing-properties.md)
+* [사용량 추적](./workspace-settings/tracking-usage.md)
+* [작업 공간 관리](./workspace-settings/managing-workspaces.md)
+* [다단계 인증](./workspace-settings/multi-factor-authentication.md)
+* [속성을 사용하여 사이트 및 개인 범위 지정](./workspace-settings/scoping-sites-and-individuals-using-properties.md)
+* [연락처 동기화 데이터 참조](./workspace-settings/contact-sync-data-reference.md)

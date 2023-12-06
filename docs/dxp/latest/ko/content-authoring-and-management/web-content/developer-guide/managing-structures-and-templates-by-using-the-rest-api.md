@@ -8,12 +8,12 @@
 
 여기서는 여러 [cURL](https://curl.haxx.se/) 코드 샘플과 함께 미리 빌드된 Liferay DXP Docker 이미지를 사용하여 구조화된 콘텐츠를 관리하는 방법을 알아봅니다. 다음 항목에 대해 알아볼 수 있습니다.
 
-- [환경 설정](#setting-up-your-environment)
-- [사용할 서비스 식별](#identifying-the-service-to-consume)
-- [사이트 구조 가져오기](#getting-the-site-structures)
-- [사이트 템플릿 얻기](#getting-the-site-templates)
-- [구조 권한 얻기](#getting-the-structure-permissions)
-- [구조 권한 바꾸기](#replacing-the-structure-permissions)
+* [환경 설정](#setting-up-your-environment)
+* [사용할 서비스 식별](#identifying-the-service-to-consume)
+* [사이트 구조 가져오기](#getting-the-site-structures)
+* [사이트 템플릿 얻기](#getting-the-site-templates)
+* [구조 권한 얻기](#getting-the-structure-permissions)
+* [구조 권한 바꾸기](#replacing-the-structure-permissions)
 
 ## 환경 설정
 

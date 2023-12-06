@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Liferay Experience Cloud SaaS 가격 - MALU, APV, 이동 계획
 
 **한눈에**

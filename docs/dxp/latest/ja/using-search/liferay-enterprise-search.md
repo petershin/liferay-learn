@@ -31,7 +31,7 @@ LESをご利用のお客様には、Liferayより [プラチナElasticsearchラ�
 - [クラスター横断レプリケーション](liferay-enterprise-search/cross-cluster-replication.md)
 - [Learning to Rank](liferay-enterprise-search/learning-to-rank.md)
 - [Elasticsearchのモニタリング](liferay-enterprise-search/monitoring-elasticsearch.md)
-- [Search Experiences](liferay-enterprise-search/search-experiences.md)
+- [検索エクスペリエンス](liferay-enterprise-search/search-experiences.md)
 - [Elasticsearchの保護](installing-and-upgrading-a-search-engine/elasticsearch/securing-elasticsearch.md) [Elasticsearch 7を使用したLiferay CEとDXPのLESなしで無料]
 
 ```{important}

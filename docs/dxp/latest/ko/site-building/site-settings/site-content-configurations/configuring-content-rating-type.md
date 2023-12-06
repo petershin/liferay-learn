@@ -34,5 +34,5 @@
 
 ## 관련 정보
 
-- [사이트에 대한 자산 휴지통 구성](./configuring-the-asset-recycle-bin-for-sites.md)
-- [사이트 설정 UI 참조](../site-settings-ui-reference.md)
+* [사이트에 대한 자산 휴지통 구성](./configuring-the-asset-recycle-bin-for-sites.md)
+* [사이트 설정 UI 참조](../site-settings-ui-reference.md)

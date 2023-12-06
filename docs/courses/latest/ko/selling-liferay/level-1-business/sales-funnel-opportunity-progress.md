@@ -4,6 +4,9 @@ toc:
   - ./sales-funnel-opportunity-progress/buying-phases.md
   - ./sales-funnel-opportunity-progress/before-buying-starts.md
   - ./sales-funnel-opportunity-progress/mapping-buyer-sales-process.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 기회 진행을 위한 판매 유입 경로 및 모범 사례
 

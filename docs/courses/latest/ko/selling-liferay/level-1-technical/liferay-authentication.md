@@ -2,6 +2,9 @@
 toc:
   - ./liferay-authentication/other-authentication-methods.md
   - ./liferay-authentication/authorization.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 라이프레이 인증
 

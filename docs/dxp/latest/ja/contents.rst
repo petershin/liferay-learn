@@ -15,6 +15,7 @@
    users-and-permissions
    system-administration
    building-applications
+   building-solutions-on-liferay
    liferay-internals
    headless-delivery
    installation-and-upgrades

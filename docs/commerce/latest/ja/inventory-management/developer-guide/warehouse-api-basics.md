@@ -147,7 +147,7 @@ Liferayが起動したら。
 
 cURLまたはJavaコマンドで、Liferayインスタンスのすべての倉庫をリストアップします。
 
-### ウェアハウス_GET_FromInstance.sh
+### Warehouses_GET_FromInstance.sh
 
 コマンド：
 
@@ -161,7 +161,7 @@ cURLまたはJavaコマンドで、Liferayインスタンスのすべての倉�
    :language: bash
 ```
 
-### Warehouses_GET_FromInstance.javaの場合
+### Warehouses_GET_FromInstance.java
 
 コマンド：
 
@@ -213,7 +213,7 @@ cURL または Java `get` コマンドで特定の倉庫を取得します。 `1
 `Warehouses_GET_FromInstance.[java|sh]`を使用して、すべての倉庫のリストを取得し、特に欲しい倉庫の `id` をメモします。
 ```
 
-### ウェアハウス_GET_ById.sh
+### Warehouse_GET_ById.sh
 
 コマンド：
 
@@ -249,7 +249,7 @@ java -classpath .:* -DwarehouseId=1234 Warehouse_GET_ById
 
 cURLとJava `patch` コマンドで既存の倉庫を更新します。 `1234` を倉庫のIDに置き換えてください。
 
-### ウェアハウス_PATCH_ById.sh
+### Warehouse_PATCH_ById.java
 
 コマンド：
 
@@ -283,7 +283,7 @@ java -classpath .:* -DwarehouseId=1234 Warehouse_PATCH_ById
 
 cURL と Java `delete` コマンドで既存の倉庫を削除する。 `1234` を倉庫のIDに置き換えてください。
 
-### ウェアハウス_DELETE_ById.sh
+### Warehouse_DELETE_ById.sh
 
 コマンド：
 

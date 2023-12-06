@@ -18,4 +18,4 @@
 
 ## 관련 주제
 
-- [다른 사이트와 애플리케이션 공유](./sharing-widgets-with-other-sites.md)
+* [다른 사이트와 애플리케이션 공유](./sharing-widgets-with-other-sites.md)

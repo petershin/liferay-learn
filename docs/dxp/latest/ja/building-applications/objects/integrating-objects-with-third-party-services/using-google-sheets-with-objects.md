@@ -21,7 +21,7 @@ toc:
 ---
 # オブジェクトでのGoogle シートの使用
 
-{bdg-secondary}`7.4以降で利用可能`
+{bdg-secondary}`Liferay 7.4+`
 
 ```{toctree}
 :maxdepth: 3

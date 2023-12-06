@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 대상산업
 
 **한눈에**

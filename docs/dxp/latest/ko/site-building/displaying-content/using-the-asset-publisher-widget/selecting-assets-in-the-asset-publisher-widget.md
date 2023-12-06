@@ -30,9 +30,9 @@ Liferay 7.2 이하에서는 컬렉션을 [콘텐츠 세트](../../../content-aut
 
 다양한 옵션을 사용하여 자산 게시자 대화상자의 자산 선택 섹션에서 자산을 선택할 수 있습니다.
 
-- [콜렉션](#collection)
-- [동](#dynamic)
-- [손으로 하는](#manual)
+* [콜렉션](#collection)
+* [동](#dynamic)
+* [손으로 하는](#manual)
 
 ### 콜렉션
 
@@ -88,6 +88,6 @@ Liferay 7.2 이하에서는 컬렉션을 [콘텐츠 세트](../../../content-aut
 
 ## 관련 주제
 
-- [자산 게시자 위젯을 사용하여 자산 표시](./displaying-assets-using-the-asset-publisher-widget.md)
-- [자산 게시자 표시 설정 구성](./configuring-asset-publisher-display-settings.md)
-- [컬렉션 및 컬렉션 페이지 정보](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [자산 게시자 위젯을 사용하여 자산 표시](./displaying-assets-using-the-asset-publisher-widget.md)
+* [자산 게시자 표시 설정 구성](./configuring-asset-publisher-display-settings.md)
+* [컬렉션 및 컬렉션 페이지 정보](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)

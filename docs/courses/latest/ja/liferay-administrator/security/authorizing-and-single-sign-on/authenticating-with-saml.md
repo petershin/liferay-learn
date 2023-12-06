@@ -2,7 +2,7 @@
 
 SAMLで認証する場合、Liferayはサービスプロバイダ（SP）またはIDプロバイダ（IdP）の役割を果たすことができる。 詳細は、 [SAML による認証](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) を参照のこと。
 
-デレクタブル・ボンサイは、オールマイティ・シロップを買収して成長した。 他の企業を買収する可能性を検討する中で、ITチームは、SAMLを利用してユーザー資格情報の保存と管理を一元化することを決定した。 以下の手順で、実際に見てみよう。
+クラリティ・ビジョン・ソリューションズは、ファビュラス・フレームを買収することで成長を遂げました。 他の企業を買収する可能性を検討する中で、ITチームは、SAMLを利用してユーザー資格情報の保存と管理を一元化することを決定した。 以下の手順で、実際に見てみよう。
 
 ## アイデンティティ・プロバイダーの設定
 
@@ -19,7 +19,7 @@ SAMLで認証する場合、Liferayはサービスプロバイダ（SP）また�
    * `localhost:7080`に移動する。
    * ファーストネームに「 `Support` 」と入力。
    * 苗字に `Support` と入力。
-   * メールには `support@delectablebonsai.com` と入力してください。
+   * メールには `support@clarityvisionsolutions.com` と入力してください。
    * `［Finish Configuration］`をクリックします。
    * 次のページで、パスワードを `learn`に設定する。
    * `Save`をクリックする。
@@ -53,13 +53,13 @@ SAMLで認証する場合、Liferayはサービスプロバイダ（SP）また�
    * general タブで、SAML の役割として **Service Provider** を選択する。
    * エンティティIDを `liferaysp`と入力する。
    * ［**保存**］ をクリックします。
-   * 証明書と秘密鍵のセクションで、 **Create Certificate** をクリックする。
+   * 証明書と秘密鍵セクションの下にある **Create Certificate** をクリックする。
    * コモンネームは `foo`と入力する。
    * 下までスクロールしてください。 キーとなるパスワードを `learn`と入力する。
    * ［**保存**］ をクリックします。
    * 最後に、generalタブの下にある **Enabled** チェックボックスにチェックを入れ、Saveをクリックします。
 
-## SPとIdPのリンク
+## SPとIdPの連携
 
 `liferaysp` コンテナ (`localhost:8080`) で、 **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **Control Panel** &rarr; **SAML Admin** に移動する。 **Identity Provider Connections** タブをクリックする。
 
@@ -74,7 +74,7 @@ SAMLで認証する場合、Liferayはサービスプロバイダ（SP）また�
    * (![Add icon](../../../images/icon-add.png)) をクリックすると別のエントリーが表示されます。 ドロップダウンリストを使用し、 `firstName`を選択します。 SAML 属性を `firstName`として設定する。
    * (![Add icon](../../../images/icon-add.png)) をクリックすると別のエントリーが表示されます。 ドロップダウンリストを使用して、 `lastName`を選択します。 SAML 属性を `lastName`として設定する。
    * (![Add icon](../../../images/icon-add.png)) をクリックすると別のエントリーが表示されます。 ドロップダウンリストを使用し、 `screenName`を選択する。 SAML 属性を `screenName`として設定する。
-   * (![Add icon](../../../images/icon-add.png)) をクリックすると別のエントリーが表示されます。 ドロップダウンリストを使用し、 `UUID`を選択します。 SAML 属性を `UUID`として設定する。
+   * (![Add icon](../../../images/icon-add.png)) をクリックすると別のエントリーが表示されます。 ドロップダウンリストを使用して、 `UUID`を選択します。 SAML 属性を `UUID`として設定する。
    * ページの下部にある ［**保存**］ をクリックします。
 
 1. 次に、 `liferayidp` コンテナ (`localhost:7080`) で、 **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **Control Panel** &rarr; **SAML Admin** に移動する。 **Service Provider Connections** タブをクリックします。
@@ -102,7 +102,7 @@ SAMLで認証する場合、Liferayはサービスプロバイダ（SP）また�
 
 1. `liferaysp` コンテナ（すなわち `localhost:8080`）で、 **Global Menu**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **Control Panel** &rarr; **Users and Organizations** に移動する。 テスト管理者が唯一のユーザーであることに注意してください。
 
-1. 右上のユーザープロフィール画像をクリックし、 **サインアウト** をクリックします。 認証情報 `support@delectablebonsai.com:learn`でサインインする。 `liferayidp` コンテナがユーザーを検証し、ログインに成功したことに注意。
+1. 右上のユーザープロフィール画像をクリックし、 **サインアウト** をクリックします。 認証情報でサインイン `support@clarityvisionsolutions.com:learn`. `liferayidp` コンテナがユーザーを検証し、ログインに成功したことに注意。
 
 ```{warning}
 コースの残りの作業を容易にするために、この演習を完了したら SAML を無効にしてください。 

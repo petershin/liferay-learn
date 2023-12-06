@@ -4,7 +4,7 @@
 
 5つのフィールドがあります。
 
-| Field   | Description                           |
+| 項目      | 説明                                    |
 |:------- |:------------------------------------- |
 | ID      | これはサブスクリプションのIDです。                    |
 | ステータス   | ステータスは注文のステータスを表示します                  |
@@ -16,7 +16,7 @@
 
 サブスクリプションは **コントロールパネル** の **サブスクリプションメニュー** で[管理](./managing-subscriptions.md)されています。
 
-［**コントロールパネル**］ → ［**commerce**］ → ［**サブスクリプション**］ に移動します。
+［**コントロールパネル**］ → ［**コマース**］ → ［**サブスクリプション**］ に移動します。
 
 ![サブスクリプション管理](./subscription-administration-reference-guide/images/01.png)
 
@@ -25,7 +25,7 @@
 | 項目      | 説明                                    |
 |:------- |:------------------------------------- |
 | ID      | これはサブスクリプションのIDです。                    |
-| 状態      | ステータスは注文のステータスを表示します                  |
+| ステータス   | ステータスは注文のステータスを表示します                  |
 | オーダーID  | これは、サブスクリプションに基づく注文IDです。              |
 | アカウントID | アカウントIDは、サブスクリプションを作成したアカウントに対応しています。 |
 | アカウント名  | アカウント名はアカウント名に対応します。                  |
@@ -42,10 +42,9 @@
 
 ### 注文の参照
 
-**注文の参照** セクションには、[注文情報](../orders/order-information.md)が表示されます：
+参照オーダー_セクションには、[オーダーに関する情報](../orders/order-information.md)が表示されます：
 
 ![支払いセクション](./subscription-administration-reference-guide/images/02.png)
-
 
 ### 支払のサブスクリプション
 
@@ -61,6 +60,9 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 | サブスクリプション期間  | これは、出荷の間隔を指します。                                                      |
 | モード          | これは、間隔がマークされた日付を指します。 ユーザーは、オプションとして月の正確な日または **月の最後の日** を選択することもできます。 |
 
+```{warning}
+この機能を無効にしたい場合は、 [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 。 インターバルにゼロや負の数を入力しないでください。
+```
 
 ### 配送のサブスクリプション
 
@@ -70,13 +72,17 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 
 | 項目           | 説明                                                                   |
 |:------------ |:-------------------------------------------------------------------- |
-| 状態           | これはサブスクリプションのワークフローステータスです。                                          |
+| ステータス        | これはサブスクリプションのワークフローステータスです。                                          |
 | 次の繰り返し日      | これは、 [出荷](../shipments/introduction-to-shipments.md) が発送された翌日です。     |
 | サブスクリプションタイプ | これは、サブスクリプションのタイプです。                                                 |
 | サブスクリプション期間  | これは、出荷の間隔を指します。                                                      |
 | モード          | これは、間隔がマークされた日付を指します。 ユーザーは、オプションとして月の正確な日または **月の最後の日** を選択することもできます。 |
 
-### 項目
+```{warning}
+この機能を無効にしたい場合は、 [blacklist](https://learn.liferay.com/web/guest/w/dxp/system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) 。 インターバルにゼロや負の数を入力しないでください。
+```
+
+### 項目数
 
 **アイテム** セクションには、サブスクリプション内の[商品](../../product-management/creating-and-managing-products/products/products-overview.md)がすべてリストされます。
 
@@ -88,16 +94,14 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 
 ![出荷](./subscription-administration-reference-guide/images/06.png)
 
-5つの項目があります。
-
-| 項目 | 説明 |
+| フィールド | 説明 |
 | :--- | :--- |
-| 作成日 | 注文が[作成された](../orders/processing-an-order.md)日付。 |
-| 出荷ID | この番号は[出荷](../shipments/introduction-to-shipments.md)IDとして生成されます |
-| ステータス | [注文](../orders/orders-menu-reference-guide.md)のステータス。 |
-| 注文ID | これは、サブスクリプションの基礎となる注文を指します。 |
-| 配送先 | アカウントの配送先住所。 |
-| 追跡 | 配送業者の追跡番号。 | 
+| 作成日 | これは注文が[作成された]日付(../orders/processing-an-order.md)です。 |
+| 出荷ID | この番号は、[発送](../shipments/introduction-to-shipments.md) ID | として生成されます。
+| ステータス | [注文](../orders/orders-menu-reference-guide.md)のステータスです。 |
+| 注文ID | これは、サブスクリプションの基本的な注文を指します。 |
+| 送信先 | これはアカウントの配送先住所です。 |
+| 追跡 | これは配送業者の追跡番号です。 |
 
 ## 支払いタブ
 
@@ -107,10 +111,10 @@ Payment Subscriptionセクションでは、次の情報を追跡します。
 
 | 項目     | 説明                                                    |
 |:------ |:----------------------------------------------------- |
-| タイプ    | これは、支払いが正常に行われたかどうかを示します。                             |
-| Date   | これは、注文が[作成された日です ](../orders/processing-an-order.md)。 |
+| 種類     | これは、支払いが正常に行われたかどうかを示します。                             |
+| 日付     | これは、注文が[作成された日です ](../orders/processing-an-order.md)。 |
 | TXN ID | これはトランザクションIDです。                                      |
-| 量      | これは注文の合計金額を指します。                                      |
+| 総量     | これは注文の合計金額を指します。                                      |
 
 ## 関連トピック
 

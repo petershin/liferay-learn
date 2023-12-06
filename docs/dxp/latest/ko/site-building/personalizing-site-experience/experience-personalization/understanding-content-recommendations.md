@@ -54,7 +54,7 @@ DXP에서는 수저류, 조리기구, 식품 보관함, 커피 액세서리 등 
 
 ## 관련 정보
 
-- [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
-- [콘텐츠 추천 구성](./configuring-content-recommendations.md)
-- [관심분야(분석 클라우드)](https://learn.liferay.com/en/w/analytics-cloud/people/individuals/understanding-interests)
-- [컬렉션 및 컬렉션 페이지 정보](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [Liferay DXP를 Analytics Cloud에 연결](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
+* [콘텐츠 추천 구성](./configuring-content-recommendations.md)
+* [관심분야(분석 클라우드)](https://learn.liferay.com/en/w/analytics-cloud/people/individuals/understanding-interests)
+* [컬렉션 및 컬렉션 페이지 정보](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)

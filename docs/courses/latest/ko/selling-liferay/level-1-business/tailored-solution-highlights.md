@@ -6,10 +6,13 @@ toc:
   - ./tailored-solution-highlights/supplier-portals.md
   - ./tailored-solution-highlights/partner-portals.md
   - ./tailored-solution-highlights/modern-intranets.md
+visibility:
+  - Employee
+  - Partner
 ---
 # Liferay 맞춤형 솔루션 하이라이트
 
-**한눈에**
+**한눈에 보기**
 
 * Liferay는 다음과 같은 비즈니스 문제를 해결합니다.
   * 고객 포털
@@ -30,8 +33,8 @@ toc:
 완료되면 잠재 고객에게 무한한 가능성을 불러일으키는 Liferay 플랫폼 제공 솔루션의 몇 가지 예를 발견하게 될 것입니다. 귀하는 구매자가 현재 필요한 것뿐 아니라 미래를 위해 필요한 것에 대한 그림을 그리는 데 도움을 줄 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [recording](https://learn.liferay.com/web/guest/d/sa1-1-liferay-tailored-solution-highlights) 을 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션 [PDF](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf) 을 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-1-liferay-tailored-solution-highlights)를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf)를 다운로드하세요.
 ```
 
 ## 수평적 솔루션
@@ -45,27 +48,27 @@ Liferay의 수평적 포털 레거시는 여러 산업 분야에 걸쳐 많은 �
 * 파트너 포털
 * 인트라넷
 
-![Liferay의 대상 솔루션에는 고객 포털, 디지털 상거래 사이트, 외부 웹사이트, 공급업체 포털, 파트너 포털, 인트라넷이 포함됩니다.](./tailored-solution-highlights/images/01.png)
+![Liferay's Target Solutions include Customer Portals, Digital Commerce Sites, External Websites, Supplier Portals, Partner Portals, Intranets.](./tailored-solution-highlights/images/01.png)
 
 ## Liferay DXP 기능
 
 Liferay의 업계 최고의 디지털 경험 플랫폼(DXP)에는 즉시 사용 가능한 다양한 기능이 포함되어 있습니다. 최신 릴리스 Liferay DXP 7.4에는 핵심 DXP, 디지털 상거래 및 분석 기능이 포함되어 있습니다. 높은 수준의 핵심 기능은 다음과 같습니다.
 
-* [디자인 시스템 & 경험 관리](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
-* [콘텐츠 & 자산관리 ](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [디자인 시스템 및 경험 관리](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
+* [콘텐츠 및 자산 관리](https://learn.liferay.com/w/dxp/content-authoring-and-management)
 * [로우코드/노코드 애플리케이션 구축](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [데이터 모델링 & 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
-* [커머스 ](https://learn.liferay.com/w/commerce/index)
-* [분석 ](https://learn.liferay.com/web/guest/w/analytics-cloud/index) & \[Optimization\](https://learn.liferay.com/w/dxp/content-authoring-and-management/content-dashboard
-* [세분화 & 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
-* [검색](https://learn.liferay.com/w/dxp/using-search) & \ [Navigation\](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [헤드리스 API & 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
-* [협업 & 지식공유](https://learn.liferay.com/w/dxp/collaboration-and-social)
-* [신원 관리 & 접근 제어](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
-* 통합 & 상호 운용성
+* [데이터 모델링 및 프로세스 자동화](https://learn.liferay.com/w/dxp/process-automation)
+* [Commerce](https://learn.liferay.com/w/commerce/index)
+* [Analytics](https://learn.liferay.com/web/guest/w/analytics-cloud/index) 및 [Optimization](https://learn.liferay.com/w/dxp/content-authoring-and-management/content) -계기반)
+* [세분화 및 개인화](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
+* [Search](https://learn.liferay.com/w/dxp/using-search) 및 [Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
+* [헤드리스 API 및 다중 채널](https://learn.liferay.com/w/dxp/headless-delivery)
+* [협업 및 지식 공유](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [ID 관리 및 액세스 제어](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay)
+* 통합 및 상호 운용성
 * [개발자 도구](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 * 플랫폼 서비스
-* [클라우드 & 인프라 ](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
+* [클라우드 및 인프라](https://learn.liferay.com/w/dxp/building-applications/tooling/liferay-workspace)
 
 앞서 언급한 모든 수평적 솔루션은 이러한 기능을 활용합니다. 이러한 OOTB 기능은 Liferay를 DXP 공간에서 강력한 플레이어로 만듭니다.
 
@@ -88,9 +91,9 @@ Liferay의 가장 일반적인 6가지 수평 솔루션에 대해 자세히 알�
 :::{grid-item-card} 고객 포털
 :link: ./tailored-solution-highlights/customer-portals.md
 
-:::  
-::: 디지털 상거래 사이트{grid-item-card}
-:link: ./tailored-solution-highlights/digital-Commerce-sites.md
+:::
+:::{grid-item-card} 디지털 상거래 사이트
+:link: ./tailored-solution-highlights/digital-commerce-sites.md
 
 :::
 

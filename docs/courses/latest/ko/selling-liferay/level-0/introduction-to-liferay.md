@@ -1,6 +1,9 @@
 ---
 toc:
   - ./introduction-to-liferay/what-is-a-digital-experience-platform.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 라이프레이 소개
 

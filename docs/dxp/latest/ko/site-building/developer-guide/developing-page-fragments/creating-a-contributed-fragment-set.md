@@ -12,10 +12,10 @@
 
 여기서는 조각 집합을 기여하는 방법을 알아봅니다:
 
-- [기여한 조각 세트 배포](#deploy-a-contributed-fragment-set)
-- [기여한 조각 세트 로직 및 메타데이터](#contributed-fragment-set-logic-and-metadata)
-- [조각 리소스 추가](#add-fragment-resources)
-- [관련 정보](#related-information)
+* [기여한 조각 세트 배포](#deploy-a-contributed-fragment-set)
+* [기여한 조각 세트 로직 및 메타데이터](#contributed-fragment-set-logic-and-metadata)
+* [조각 리소스 추가](#add-fragment-resources)
+* [관련 정보](#related-information)
 
 ```{note}
 Liferay DXP 7.4+의 경우, 조각 컬렉션은 Liferay UI에서 조각 세트라고 합니다.

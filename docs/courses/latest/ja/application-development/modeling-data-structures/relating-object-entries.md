@@ -7,7 +7,7 @@
 1. [この演習のリソースをダウンロードし、解凍してください](./liferay-g2n9.zip) ：
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/relating-object-entries/liferay-g2n9.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-g2n9.zip -O
    ```
 
    ```bash
@@ -62,7 +62,7 @@
 
 1. アプリケーション評価に戻り、エントリーの編集を開始する。
 
-1. Application to Evaluationsフィールドの値を選択します。 アプリケーションがビジネス名フィールドを使用して識別されるようになったことに注意してください。
+1. Application to Evaluationsフィールドの値を選択します。 アプリケーションは、ビジネス名フィールドを使用して識別されるようになったことに注意してください。
 
    ![アプリケーションは、ビジネス名フィールドを使用して識別されるようになりました。](./relating-object-entries/images/05.png)
 

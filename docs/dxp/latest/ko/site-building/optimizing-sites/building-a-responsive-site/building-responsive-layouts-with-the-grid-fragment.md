@@ -2,7 +2,7 @@
 <!--TASK: Reconsider article.-->
 > 가용성: 라이프레이 DXP 7.3+.
 
-Liferay DXP [은 기본적으로 반응형 디자인](../building-a-responsive-site.md) 을 사용하지만 콘텐츠 레이아웃을 추가로 보다 세밀하게 제어하려는 경우가 있습니다. 콘텐츠 페이지에서 [그리드 조각](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md) 사용하면 데스크톱 및 모바일 장치의 다양한 화면 크기에 대한 콘텐츠 레이아웃을 정밀하게 제어할 수 있습니다. 콘텐츠 페이지를 편집할 때 [그리드 조각(](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md))을 사용하여 콘텐츠를 요약하고 장치 디스플레이 섹션(3)에서 다양한 대상 장치에 대한 사용자 정의 레이아웃 스타일(2)을 정의할 수 있습니다. 예를 들어 행당 모듈 수 또는 스마트폰 크기 화면 전용 그리드 패딩 옵션을 사용자 지정할 수 있습니다.
+Liferay DXP [은 기본적으로 반응형 디자인](./building-a-responsive-site.md) 을 사용하지만 콘텐츠 레이아웃을 추가로 보다 세밀하게 제어하려는 경우가 있습니다. 콘텐츠 페이지에서 [그리드 조각](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md) 사용하면 데스크톱 및 모바일 장치의 다양한 화면 크기에 대한 콘텐츠 레이아웃을 정밀하게 제어할 수 있습니다. 콘텐츠 페이지를 편집할 때 [그리드 조각(](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md))을 사용하여 콘텐츠를 요약하고 장치 디스플레이 섹션(3)에서 다양한 대상 장치에 대한 사용자 정의 레이아웃 스타일(2)을 정의할 수 있습니다. 예를 들어 행당 모듈 수 또는 스마트폰 크기 화면 전용 그리드 패딩 옵션을 사용자 지정할 수 있습니다.
 
 ![Grid Fragment를 사용하여 다양한 화면 크기에 대한 레이아웃 옵션을 사용자 정의할 수 있습니다.](./building-responsive-layouts-with-the-grid-fragment/images/04.png)
 
@@ -36,6 +36,6 @@ Liferay DXP [은 기본적으로 반응형 디자인](../building-a-responsive-s
 
 ## 관련 주제
 
-- [반응형 사이트 구축 개요](../building-a-responsive-site.md)
-- [단편 구성 저장](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md)
-- [레이아웃 요소 사용](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md)
+* [반응형 사이트 구축 개요](./building-a-responsive-site.md)
+* [단편 구성 저장](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md)
+* [레이아웃 요소 사용](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md)

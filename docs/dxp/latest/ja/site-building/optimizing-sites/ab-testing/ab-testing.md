@@ -12,15 +12,13 @@ A/Bテストを実行するには、Liferay DXPインスタンスを [Liferay An
 
 * Liferay DXPでA/Bテストを作成します。
 * A/BテストはAnalytics Cloudと自動的に同期します。
-* Liferay DXPまたはAnalytics CloudでA/Bテストを開始または終了します。
-* Liferay DXPとAnalytics Cloudは、テストが終了すると、テストのステータスと勝利したバリアントを表示します。
-* Analytics CloudでA/Bテストの他の側面（テスト履歴、統計、バリアント比較など）を管理します。
+* Liferay DXPでA/Bテストを開始または終了します。
+* Liferay DXP と Analytics Cloud はテストのステータスとバリアントの結果を表示します。
+* Analytics Cloud で A/B テストの他の側面を管理します（テスト履歴、統計、バリアント パフォーマンスなど）。
 
 Analytics CloudでA/Bテストを行う詳細は、 [A/Bテスト](https://learn.liferay.com/analytics-cloud/latest/ja/optimization/a-b-testing.html) を参照してください。
 
-<a name="related-information" />
-
-## 関連情報
+## 関連トピック
 
 - [A/Bテスト要件の確認](./verifying-ab-test-requirements.md)
 - [A/Bテストの作成](./creating-ab-tests.md)

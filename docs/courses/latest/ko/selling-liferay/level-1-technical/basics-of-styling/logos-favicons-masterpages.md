@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 스타일링의 기초
 
 **한눈에**

@@ -4,11 +4,11 @@
 
 구성 가능한 옵션을 사용하면 조각을 유연하게 만들 수 있으므로 유사한 조각을 많이 유지 관리할 필요가 없습니다. 예를 들어, 스타일 A의 제목이 있는 조각과 스타일 B의 제목이 있는 조각이 있는 대신, 스타일 A와 B에 대한 옵션을 사용하여 제목에 대해 구성 가능한 스타일을 가진 하나의 조각을 만들 수 있습니다. 여기서는 조각에 구성 옵션을 추가하는 방법에 대해 알아봅니다:
 
-- [구성 가능한 조각 배포](#deploy-a-configurable-fragment)
-- [구성 검토](#examine-the-configuration)
-- [구성 수정](#modify-the-configuration)
-- [변경 사항 전파 및 테스트](#propagate-the-changes-and-test)
-- [관련 정보](#related-information)
+* [구성 가능한 조각 배포](#deploy-a-configurable-fragment)
+* [구성 검토](#examine-the-configuration)
+* [구성 수정](#modify-the-configuration)
+* [변경 사항 전파 및 테스트](#propagate-the-changes-and-test)
+* [관련 정보](#related-information)
 
 ```{note}
 Liferay DXP 7.4+의 경우, 조각 컬렉션은 Liferay UI에서 조각 세트라고 합니다.

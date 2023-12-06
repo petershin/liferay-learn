@@ -102,7 +102,7 @@ optimizing-sites/building-a-responsive-site.md
 :gutter: 3 3 3 3
 
 :::{grid-item-card} レスポンシブサイトの構築
-:link: ./optimizing-sites/building-a-responsive-site.md
+:link: ./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md
 :::
 
 :::{grid-item-card} モバイルデバイスのルールを作成する

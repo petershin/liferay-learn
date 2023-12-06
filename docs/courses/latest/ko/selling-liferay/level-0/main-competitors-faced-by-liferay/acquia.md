@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 아퀴아
 
 **한눈에**

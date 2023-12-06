@@ -39,7 +39,7 @@ Liferay 7.2 사용자의 경우 컬렉션을 [콘텐츠 세트](../../../content
 
 ## 관련 정보
 
-- [사용자 지정 사용자 필드 만들기](../../../users-and-permissions/users/adding-custom-fields-to-users.md)
-- [세그먼트 편집기 UI 참조](../segmentation/segments-editor-ui-reference.md)
-- [컬렉션 만들기](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
-- [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html)
+* [사용자 지정 사용자 필드 만들기](../../../users-and-permissions/users/adding-custom-fields-to-users.md)
+* [세그먼트 편집기 UI 참조](../segmentation/segments-editor-ui-reference.md)
+* [컬렉션 만들기](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
+* [세그먼트](https://learn.liferay.com/analytics-cloud/latest/ko/people/segments/segments.html)

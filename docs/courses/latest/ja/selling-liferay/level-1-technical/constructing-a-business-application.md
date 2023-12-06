@@ -16,9 +16,9 @@ toc:
 
 Liferayは、各組織の特定のニーズに合わせたビジネスアプリケーションなど、デジタルエクスペリエンスを構築・管理するための強力なプラットフォームを提供します。
 
-このモジュールのタイトルに "構築する "という言葉があることから、この文脈ではコーディングが必要になると考えるのが妥当かもしれません。 しかし、常に念頭に置くべき賢いゴールは、デモ、あるいはLiferayの完全な実装においてでさえ、それが絶対に可能な唯一の方法である場合にのみ、カスタムコードを開発することです。
+このモジュールのタイトルに "constructing "という言葉があることから、この文脈ではコーディングが必要になると考えるのが妥当かもしれません。 しかし、常に念頭に置くべき賢いゴールは、デモ、あるいはLiferayの完全な実装においてでさえ、それが絶対に可能な唯一の方法である場合にのみ、カスタムコードを開発することです。
 
-このモジュールはLiferay [Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects) のデモの方法を教えます。 ここまでのデモでは、すべての機能が既成概念にとらわれないものであった。 Liferay Objectsは、このような動的な要件をサポートする機能を提供します。
+このモジュールはLiferay [Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects)のデモの方法を教えます。 ここまでのデモでは、すべての機能が既成概念にとらわれないものであった。 Liferay Objectsは、このような動的な要件をサポートする機能を提供します。
 
 次のモジュールでカバーするクライアント拡張やLiferayを拡張する他の方法を説明する前に、デモでこれらの機能を紹介する理想的なポイントです。
 
@@ -32,8 +32,8 @@ Liferayは、各組織の特定のニーズに合わせたビジネスアプリ�
 * 高度な機能についての議論。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-6-constructing-a-business-application) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-6-constructing-a-business-application-pdf) からダウンロードしてください。
+* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/se1-6-constructing-a-business-application) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-6-constructing-a-business-application-pdf)からダウンロードしてください。
 ```
 
 ## ローコード／ノーコード・アプローチ
@@ -50,7 +50,7 @@ Low-CodeとNo-Codeには様々な定義があるが、単純にLow-Codeとは次
 
 つまり、必要なアプリケーションを作成するために開発する必要のあるコード量の削減である。
 
-このデモの時点で、見込み客はすでにLiferayが提供するLow-Code/No-Code機能のいくつかを使っているのを見ている。 Liferayはその柔軟性で知られており、完全でカスタマイズ可能、拡張可能なプラットフォームを提供してきた長い歴史があります。 Liferayは顧客が望む言語でコードを書くことでプラットフォームを拡張する様々な方法を提供し続けていますが、Liferayはプラットフォームを拡張するための強化されたLow-Code/No-Code機能を提供することで急速に進歩しています。
+このデモの時点で、見込み客はすでにLiferayが提供するLow-Code/No-Code機能のいくつかを使っていることを確認しています。ページの構築、コンテンツの作成、エクスペリエンスの定義などはすべてコードを書かずに行われます。 Liferayはその柔軟性で知られており、完全でカスタマイズ可能、拡張可能なプラットフォームを提供してきた長い歴史があります。 Liferayは顧客が望む言語でコードを書くことでプラットフォームを拡張する様々な方法を提供し続けていますが、Liferayはプラットフォームを拡張するための強化されたLow-Code/No-Code機能を提供することで急速に進歩しています。
 
 見込み客が抱く典型的な質問は、"Liferayのすぐに使える機能と、実際に提供する必要のあるアプリケーションとのギャップをどう埋めるか？"というものです。 これに答える良い方法は、Liferayが提供するLow-CodeやNo-Codeの機能について話し、プラットフォームとしてのLiferayが彼らが必要とするアプリケーションを構築する能力を持っているという自信を与えることです。LiferayのLow-Code/No-Codeの能力の大部分は、特にビジネスアプリケーションの構築に関しては、Liferay Objectsが提供する機能です。
 
@@ -66,7 +66,7 @@ Liferay Objectsのデモを始める前に、様々な機能が提供されて�
 
 本当に効果的なのは、基本的に順番を完全に逆にすることだ。 ステップ・バイ・ステップで構築するのではなく、まず完全なアプリケーションを紹介し、次にそれを構築するために必要な要素のいくつかを示す。
 
-このような "リバースエンジニアリング "のアプローチは、高いレベルでは以下の4つのトピックをカバーしている：
+このような "リバース・エンジニアリング "のアプローチは、高いレベルでは以下の4つのトピックをカバーしている：
 
 * 以前に記入した申請書から始める
 * オブジェクトの表示ページ
@@ -79,24 +79,24 @@ Liferay Objectsのデモを始める前に、様々な機能が提供されて�
 
 どのようなデモでも、現実的なビジネス・アプリケーションを念頭に置くことが重要であり、理想的には見込み客とのセッションが始まる前にデモに加えることである。 Liferay Objectの用語では、オブジェクトを構築し、ルック＆フィールを構築し、表示ページを構築することを意味します。
 
-その他、カバー・フォームやフォーム・コンテナについても説明する。 フォームコンテナは比較的新しい機能で、オブジェクトエントリーのデータキャプチャUIを作成するのに役立ちます。 フォームコンテナに関するドキュメントはこちら [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms) をご覧ください。
+その他、カバー・フォームやフォーム・コンテナについても説明する。 フォームコンテナは比較的新しい機能で、オブジェクトエントリーのデータキャプチャUIを作成するのに役立ちます。 フォームコンテナに関するドキュメントはこちら [](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms)をご覧ください。
 
 **オブジェクト表示ページ**
 
-ObjectsはLiferayのInfoフレームワークにそのまま統合されているので、Objectのエントリーを表示するためのDisplay Page Templatesを簡単に作成することができます。 オブジェクトを使用して完成したアプリケーションには、エントリーのリストを表示する機能と、表示ページを通じて個々のエントリーを表示する機能が含まれていなければならない。
+オブジェクトはLiferayのInfoフレームワークにすぐに統合されるので、オブジェクトのエントリーを表示するための表示ページテンプレートを簡単に作成することができます。 オブジェクトを使用して完成したアプリケーションには、エントリーのリストを表示する機能と、表示ページを通じて個々のエントリーを表示する機能が含まれていなければならない。
 
-オブジェクト・エントリーの表示に関するドキュメントは [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries) から入手できる。
+オブジェクト・エントリーの表示に関するドキュメントは [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/displaying-object-entries)から入手できる。
 
 **オブジェクトの作成**
 
 オブジェクトを作成するには、フィールドを追加してオブジェクトのデータモデルを定義し、オブジェクトが Liferay システムオブジェクトや他のカスタムオブジェクトと持つ可能性のあるリレーションシップを定義し、フィールドのピックリストを作成し、State Manager を使用します。 State Manageは、プロセスを開始したり、オブジェクトを承認に出したりすることで、アプリケーションにビジネスプロセス管理タイプのフィーリングを追加する機能を提供する。
 
-ステート・フィールドの定義とステート・マネージャーの使用に関するドキュメントは、 [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-and-managing-custom-states) から入手できる。
+ステート・フィールドの定義とステート・マネージャーの使用に関するドキュメントは、 [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/fields/adding-and-managing-custom-states)から入手できる。
 
 **オブジェクトのその他の用途**
 
-基本的なことを学んだら、最後のステップとして、オブジェクトに備わっているその他の機能について説明し、実際にお見せすることになります。 例えば、カスタムオブジェクトが作成されると、Liferayは自動的にそのオブジェクトのための新しいヘッドレスAPIを生成し、外部アプリケーションがオブジェクトと対話したり、開発者がClient Extensionsを介して完全にカスタムUIを作成できるようにすることを説明します。
+基本的なことを学んだら、最後のステップとして、オブジェクトに備わっているその他の機能について説明し、それを紹介することになる。 例えば、カスタムオブジェクトが作成されると、Liferayは自動的にそのオブジェクトのための新しいヘッドレスAPIを生成し、外部アプリケーションがオブジェクトと対話したり、開発者がClient Extensionsを介して完全にカスタムUIを作成できるようにすることを説明します。
 
-Objectsを他のLiferayフレームワークに統合する方法についてのドキュメントは [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/understanding-object-integrations) から入手できます。
+Objectsを他のLiferayフレームワークに統合する方法についてのドキュメントは [こちら](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/understanding-object-integrations)から入手できます。
 
 次に、シンプルで分かりやすい [オブジェクトのデモ](./constructing-a-business-application/example-object-demo.md)。

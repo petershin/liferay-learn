@@ -2,8 +2,8 @@
 
 페이지 조각 편집기의 인터페이스는 두 개의 탭으로 구성됩니다.
 
-- [코드 편집기](#code-editor)
-- [설정](#configuration)
+* [코드 편집기](#code-editor)
+* [설정](#configuration)
 
 아래 섹션에서는 인터페이스의 이러한 부분을 사용하는 방법을 다룹니다. 페이지 조각 개발 방법을 알아보려면 [페이지 조각 개발](../../developing-page-fragments/developing-fragments-intro.md) 참조하세요.
 
@@ -41,6 +41,6 @@
 
 ## 관련 주제
 
-- [조각 개발](../../developing-page-fragments/developing-fragments-intro.md)
-- [조각에 구성 옵션 추가](../../developing-page-fragments/adding-configuration-options-to-fragments.md)
-- [조각 구성 유형 참조](./fragment-configuration-types-reference.md)
+* [조각 개발](../../developing-page-fragments/developing-fragments-intro.md)
+* [조각에 구성 옵션 추가](../../developing-page-fragments/adding-configuration-options-to-fragments.md)
+* [조각 구성 유형 참조](./fragment-configuration-types-reference.md)

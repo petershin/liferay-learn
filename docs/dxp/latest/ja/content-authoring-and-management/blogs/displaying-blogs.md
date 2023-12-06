@@ -1,40 +1,50 @@
 # ブログの表示
 
-Liferay はブログエントリーを表示するために2つの方法を提供します: [表示ページテンプレート](#using-display-page-templates) と [ブログウィジェット](#using-the-blogs-widget) 。
+Liferayはブログエントリーを表示する2つの方法を提供します: [表示ページテンプレート](#using-display-page-templates) と [ブログウィジェット](#using-the-blogs-widget) 。
 
 ## 表示ページテンプレートの使用
 
-[表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates.md) を使って、ブログのエントリーをフレンドリーな URL で表示するための再利用可能なダイナミックデザインを作成することができます。 デフォルトでは、すべてのブログエントリーに一意のフレンドリーURLが自動的に割り当てられます。 ブログエントリーに使用する表示ページテンプレートを選択している場合、このURLを使用して表示ページでブログエントリーを表示することができます。
+[表示ページ・テンプレート](../../site-building/displaying-content/using-display-page-templates.md) を使って、ブログ・エントリーをフレンドリーなURLで表示するための再利用可能なダイナミック・デザインを作成できる。 デフォルトでは、すべてのブログ・エントリーに一意のフレンドリーURLが自動的に割り当てられる。 このURLを使って、ブログのエントリーを表示ページで見ることができる。
 
-ブログのフレンドリーURLは表示ページのURLに付加され（例： `display-page-url/blog-friendly-url`）、いつでも編集することが可能です。 もし変更した場合、Liferayは以前のURLをエントリーのフレンドリーURLの履歴に保存します。 この履歴に旧URLが残っている限り、最新版のブログエントリーにアクセスすることができる仕組みになっています。 ブログエントリーを表示するためのテンプレートの設定方法については、「 [表示ページによるコンテンツの公開」（](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) ）を参照してください。
+ブログのフレンドリーURLは表示ページのURLに付加され（例： `display-page-url/blog-friendly-url`）、いつでも編集可能です。 変更した場合、LiferayはエントリーのフレンドリーURL履歴に以前のURLを保存します。 この履歴に古いURLが残っている限り、ユーザーは最新版のブログエントリーにアクセスできる。 ブログエントリーを表示するテンプレートの設定方法については、 [表示ページによるコンテンツの公開](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) を参照してください。
 
-ブログエントリーの表示ページを設定したら、コレクションを利用してコンテンツページに一覧表示することができます。 詳しくは、 [コレクションとコレクションページについて](./../collections-and-collection-pages/about-collections-and-collection-pages.md) をご覧ください。
+ブログエントリーの表示ページを設定したら、コレクションを使ってコンテンツページにそれらをリストすることができます。 詳しくは [コレクションとコレクション・ページについて](./../collections-and-collection-pages/about-collections-and-collection-pages.md) をご覧ください。
 
-### フレンドリURL履歴
+<!-- It would be a good idea do include use cases here to exemplify what was said -->
 
-古いブログエントリーのURLがフレンドリーURL履歴に表示されると、同じサイト内の他のエントリーで使用することができません。 新しいエントリーに使用する前に、まずエントリーのフレンドリーURLの履歴から削除する必要があります。
+### フレンドリURLの履歴
 
-ブログエントリーのフレンドリーURLの履歴を管理するには、次の手順に従います。
+古いブログエントリーのURLがフレンドリーURL履歴に表示された場合、同じサイト内の他のエントリーに使用することはできません。 新しいエントリーに使用する前に、まずエントリーのフレンドリーURL履歴から削除しなければならない。
 
-1. **サイトメニュー**( ![Site Menu](../../images/icon-product-menu.png) ) を開き、 **コンテンツ & データ** を展開し、 **ブログ** へ進む。
+ブログエントリーのフレンドリーURL履歴を管理するには、以下の手順に従ってください：
 
-1. 目的のエントリーの **アクション** ボタン ( ![Actions Button](../../images/icon-actions.png) ) をクリックし、 **編集** を選択します。
+1. **サイトメニュー**( ![Site Menu](../../images/icon-product-menu.png) ) を開き、 **コンテンツ & データ** を展開し、 **ブログ** にアクセスする。
 
-1. 設定」セクションを展開し、「フレンドリーURL」フィールドの「**History**」 ボタン ( ![History Button](../../images/icon-history.png) ) をクリックします。
+1. 希望するエントリーの **Actions** ボタン ( ![Actions Button](../../images/icon-actions.png) ) をクリックし、 **Edit** を選択する。
 
-   ![Friendly URL]フィールドの [History]ボタンをクリックします。](./displaying-blogs/images/01.png)
+1. 設定]セクションを展開し、[フレンドリーURL]フィールドの[**履歴**] ボタン( ![History Button](../../images/icon-history.png) )をクリックします。
 
-1. **Restore** ボタン( ![Restore Button](../../images/icon-restore2.png) )をクリックすると、現在のフレンドリ ーURLを選択したURLで置き換えることができます。
+   ![［フレンドリURL］フィールドの［履歴］ボタンをクリックします。](./displaying-blogs/images/01.png)
 
-1. ** URLを忘れる」ボタン( )をクリックすると、選択したURLがエントリーの履歴から削除されます。 ![Forget URL Button](../../images/icon-delete.png) 削除されると、そのURLを使ってブログエントリーにアクセスすることはできなくなります。
+1. **復元** ボタン ( ![Restore Button](../../images/icon-restore2.png) ) をクリックすると、現在のフレンドリURLが選択したURLに置き換えられます。
 
-   ![リストア］または［URLを忘れる］ボタンをクリックします。](./displaying-blogs/images/02.png)
+1. **URLを忘れる**ボタン ( ![URLを忘れるボタン](../../images/icon-delete.png))をクリックすると、エントリーの履歴から選択したURLが削除されます。一度削除されると、そのURLを使ってブログエントリーにアクセスすることはできなくなります。
 
-フレンドリーURLの履歴の変更は、自動的に保存されます。
+   ![復元またはURL忘れボタンをクリック](./displaying-blogs/images/02.png)
 
-## ブログウィジェットを利用する
+フレンドリーURL履歴の変更は自動的に保存されます。
 
-ブログウィジェットをページに追加すると、ブログインターフェイスがサイトメンバーに公開されます。 同様に、ウィジェットをユーザーの個人サイト（プロフィール）に追加すると、そのユーザー専用のブログが作成されます。 ウィジェットはどちらの場合も同じように機能します。
+## ブログ・ウィジェットの使用
+
+Blogsウィジェットをページに追加すると、サイト・メンバーにブログ・インターフェイスが公開されます。 同様に、ウィジェットをユーザの個人サイト（プロフィール）に追加すると、そのユーザ専用のブログが作成されます。 ウィジェットはどちらの場合も同じように機能します。
+
+Blogsウィジェットをページに追加するには、
+
+1. [新規ページの作成](../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) または [コンテンツページの編集を開始](../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md).
+
+1. **Add**( ![Add widget icon](../../images/icon-add-widget.png) ) をクリックして、Fragments and Widgets パネルを開きます。
+
+1. ウィジェットタブのコラボレーションカテゴリで、 **ブログ** ウィジェットをページ上の任意の場所にドラッグします。
 
 ブログウィジェットをページに追加すると、リストを希望どおりに表示するように設定するためのいくつかの表示オプションがあります。
 
@@ -82,11 +92,12 @@ Liferay はブログエントリーを表示するために2つの方法を提�
 
 **コミュニケーション：** ウィジェットがページ上の他のウィジェットに公開するパブリックレンダーパラメータを一覧表示します。 他のウィジェットは、これらを読み取ってアクションを実行できます。 共有パラメーターごとに、パラメーターを使用してコミュニケーションを許可するかどうかを指定し、パラメーターを設定できる受信パラメーターを選択できます。
 
-**Sharing:** ウィジェットインスタンスを任意のWebサイト、Facebook、Netvibesにウィジェットとして、またはOpenSocialガジェットとして埋め込みます。
+**共有：** ウィジェットインスタンスを、任意のウェブサイト、Facebook、Netvibes、またはOpenSocialガジェットのウィジェットとして埋め込みます。
 
 **スコープ：** ウィジェットが表示するブログインスタンスを、現在のサイトのブログ（デフォルト）、グローバルブログ、またはページのブログから指定します。
 
 ## 関連トピック
 
-* [ブログエントリの追加](./adding-blog-entries.md)
-* [表示ページテンプレートの使用](../../site-building/displaying-content/using-display-page-templates.md)
+[ブログエントリの追加](./adding-blog-entries.md)
+
+[表示ページテンプレートの使用](../../site-building/displaying-content/using-display-page-templates.md)

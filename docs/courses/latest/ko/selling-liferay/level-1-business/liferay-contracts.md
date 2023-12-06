@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 라이프레이 계약
 
 **한눈에**

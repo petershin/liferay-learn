@@ -88,7 +88,7 @@ JSPでアイコンを直接使用している開発者は、上記で説明し�
 
 これは、`AssetCategory`および関連するAPIで左右のカテゴリーIDを使用するすべてのユーザーに影響します。
 
-左右のカテゴリーIDは、主に`AssetCategory`の内部階層ツリーに使用されていました。 
+左右のカテゴリーIDは、主に`AssetCategory`の内部階層ツリーに使用されていました。
 
 削除された`AssetCategoryLocalService::rebuildTree(long groupId, boolean force)`を除いて、既存の`AssetCategory`サービスAPIは同じままです。
 
@@ -141,7 +141,7 @@ else {
 - 既存のコードを再評価する
 - 既存のサービスAPIが同じ目標を達成できるかどうかを検討する
 
-##### G **P** N_Vを含むFinderメソッドの場合
+##### G_P_N_Vを含むFinderメソッドの場合
 
 `G_P_N_V`で終わる`AssetCategory` Finderメソッドを使用する場合は、代わりに`P_N_V`で終わるメソッドを使用してください。
 
@@ -231,7 +231,7 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 
 #### コードの更新方法
 
-削除された機能を直接置き換えるものはありません。 EXTプラグインがある場合は、手動でデプロイするか、 [`ant direct-deploy`](https://github.com/liferay/liferay-plugins-ee/blob/7.0.x/ext/build-common-ext.xml#L211) 使用する必要があります。
+削除された機能を直接置き換えるものはありません。 EXTプラグインがある場合は、手動でデプロイするか、 [`ant direct-deploy`](https://github.com/liferay/liferay-plugins/blob/7.0.x/ext/build-common-ext.xml#L211) 使用する必要があります。
 
 #### 変更が行われた理由
 
@@ -267,25 +267,25 @@ Auto Deployerを使用して（ `liferay-home/deploy folder`を介して）EXT�
 
 ---------------------------------------
 
-### SingleVMPoolUtilとMultiVMPoolUtilのクラスを削除しました。
+### SingleVMPoolUtilおよびMultiVMPoolUtilクラスの削除
 - **日付：** 2020年1月7日
 - **JIRAチケット：** [LPS-106315](https://issues.liferay.com/browse/LPS-106315)
 
 #### 変更点
 
-`SingleVMPoolUtil` および `MultiVMPoolUtil` クラスは削除されました。
+`SingleVMPoolUtil` および `MultiVMPoolUtil` クラスは削除された。
 
 #### 影響を受ける人
 
-これは、これらの削除されたクラスを使用している人に影響します。
+これは、これらの削除されたクラスを使用するすべての人に影響する。
 
 #### コードの更新方法
 
-`PortalCacheHelperUtil` の代わりに、 `SingleVMPoolUtil` または `MultiVMPoolUtil`を使用します。 例えば、 [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal-ee/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116) をご覧ください。
+`SingleVMPoolUtil` または `MultiVMPoolUtil`の代わりに `PortalCacheHelperUtil` を使用する。 たとえば、 [SQLQueryTableNamesUtil](https://github.com/liferay/liferay-portal/blob/7.3.x/portal-impl/src/com/liferay/portal/dao/orm/hibernate/SQLQueryTableNamesUtil.java#L113-L116) を参照。
 
 #### 変更が行われた理由
 
-`SingleVMPoolUtil` と `MultiVMPoolUtil` クラスは、もともと [LPS-84138](https://issues.liferay.com/browse/LPS-84138) で非推奨とされていたものです。 クラスは廃止されました。
+`SingleVMPoolUtil` および `MultiVMPoolUtil` クラスは、もともと [LPS-84138](https://issues.liferay.com/browse/LPS-84138) で非推奨とされていました。 このクラスはもう使われていない。
 
 ---------------------------------------
 ### キャッシュブートストラップ機能を削除
@@ -501,7 +501,7 @@ Headless Delivery APIで、ContentFieldスキーマ内のプロパティ名の`v
 
 これは、ContentField `value`プロパティ名に応じてRESTクライアントに影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 RESTクライアントでプロパティ名を`contentFieldValue`に変更します。
 
@@ -523,11 +523,11 @@ RESTクライアントでプロパティ名を`contentFieldValue`に変更しま
 
 これは、プラグインを直接使用するカスタムソリューションに影響します。
 
-### コードを更新するにはどうすればよいですか？
+### コードの更新方法
 
 `liferay-editor-image-uploader`プラグインに直接置き換わるものはありません。 それに依存するコンポーネントがある場合は、古い実装のコピーを同じ場所に配置して、モジュール内でローカルに使用できます。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 この変更により、CKEditorでの画像のドラッグアンドドロップ処理が可能になり、Alloy EditorとCKEditorの両方に共通の画像アップローダが提供されます。
 
@@ -545,7 +545,7 @@ RESTクライアントでプロパティ名を`contentFieldValue`に変更しま
 
 これはTinyMCEを使用するすべてのユーザーに影響します。
 
-### コードを更新するにはどうすればよいですか？
+### コードの更新方法
 
 TinyMCEを使用するようにLiferayポータルを構成している場合は、これらの構成を削除できます。 それでもTinyMCEを使用したい場合は、次の手順を実行する必要があります。
 
@@ -555,7 +555,7 @@ TinyMCEを使用するようにLiferayポータルを構成している場合は
 - `com.liferay.frontend.editor.tinymce.web` モジュールの.jarファイルをダウンロードします。
 - ダウンロードした.jarファイルをliferay-portalインスタレーションにデプロイします。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 この変更は、1つのエディターを中心にリッチテキストコンテンツを作成するためのすべてのUXを統合して、よりまとまりのある包括的なエクスペリエンスを提供するために行われました。
 
@@ -573,7 +573,7 @@ TinyMCEを使用するようにLiferayポータルを構成している場合は
 
 これは、LiferayフロントエンドエディターのシンプルなWebモジュールを使用するすべてのユーザーに影響します。
 
-### コードを更新するにはどうすればよいですか？
+### コードの更新方法
 
 Simple Editorを使用するようにLiferay Portalを構成している場合は、これらの構成を削除できます。 Simple Editorを引き続き使用する場合は、次の手順を実行する必要があります。
 
@@ -583,7 +583,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 - `com.liferay.frontend.editor.simple.web` モジュールの.jarファイルをダウンロードします。
 - ダウンロードした.jarファイルをliferay-portalインストールにデプロイします。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 この変更は、1つのエディターを中心にリッチテキストコンテンツを作成するためのすべてのUXを統合して、よりまとまりのある包括的なエクスペリエンスを提供するために行われました。
 
@@ -601,7 +601,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 
 これは、プロパティを上書きするすべてのユーザーに影響します。
 
-### コードを更新するにはどうすればよいですか？
+### コードの更新方法
 
 プロパティが上書きされない場合は、コードを変更する必要はありません。 プロパティが上書きされ、指定されたキーが見つからない場合、提供されたテキストはデフォルトの語彙の名前として使用されます。
 
@@ -699,7 +699,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 - `opera`
 - `presto`
 - `safari`
-- `保護`
+- `secure`
 - `touch`
 - `trident`
 - `webkit`
@@ -713,8 +713,8 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 - `edge`
 - `firefox`
 - `ie`
-- `モバイル`
-- `その他`
+- `mobile`
+- `other`
 
 または、`Liferay.BrowserSelectors.run()`を呼び出して、以下のコードで古いクラスを`<html>`要素に適用することもできます。
 
@@ -788,7 +788,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 
 ---------------------------------------
 
-### ポータルプロパティの名前を"module.framework.properties.felix.fileinstall.\ **"から"module.framework.properties.file.install.\** "に変更
+### ポータルプロパティの名前を"module.framework.properties.felix.fileinstall.\*"から"module.framework.properties.file.install.\*"に変更
 - **日付：** 2020年7月13日
 - **JIRAチケット：** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
 
@@ -830,7 +830,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 
 これは、`ddm__keyword__*`および`ddm__text__*`フィールドを使用してElasticsearchインデックスでクエリを実行するカスタム開発を行っているすべてのユーザーに影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 Elasticsearchクエリで新しいネストされたドキュメント`ddmFieldArray`を使用する必要があります。
 
@@ -842,7 +842,7 @@ Liferayコードにはいくつかの例があります。 たとえば、 [DDMI
 1. ［**旧形式の動的データマッピングインデックスフィールドを有効にする**］ を選択します。
 1. 完全なインデックスの再構築を実行します。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 この変更は、動的データマッピング・ストラクチャーの数が多すぎる場合に発生するElasticsearchエラーで **合計フィールド数の制限を超えない** ようにするために行われました。
 
@@ -860,11 +860,11 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 これは、Lexiconアイコンパスを直接使用するカスタムソリューションに影響します。 `lexicon`パスにアイコンを作成するためのGradleタスクは削除されます。
 
-### コードを更新するにはどうすればよいですか？
+### コードの更新方法
 
 `lexicon`の代わりに`clay`を参照するようにパスを更新します
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 この変更は、アイコンスプライトマップへの参照を統合するために行われました。
 
@@ -889,11 +889,11 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 これは、これらのメソッドのいずれかを使用するすべてのユーザーに影響します。
 
-### コードを更新するにはどうすればよいですか？
+### コードの更新方法
 
 他のファインダーとカウンターのメソッドを使用できます。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 これらのメソッドは、 [LPS-108525](https://issues.liferay.com/browse/LPS-108525) のソリューションの一部として削除されました。
 
@@ -911,7 +911,7 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 これは、このメソッドを使用するすべてのユーザーに影響します。
 
-### コードを更新するにはどうすればよいですか？
+### コードの更新方法
 
 このメソッドの代わりに`isShowAddButton(Group scopeGroup)`メソッドを使用できます。
 
@@ -969,11 +969,11 @@ Lexiconアイコンのパスが`themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 これは、ポータルプロパティ`module.framework.properties.file.install.optionalImportRefreshScope`を設定しているすべてのユーザーに影響します。
 
-#### コードを更新するにはどうすればよいですか？
+#### コードの更新方法
 
 `module.framework.properties.file.install.optionalImportRefreshScope`プロパティを削除します。 他の動作を使用するようにファイルのインストールを構成することはできません。
 
-#### なぜこの変更が行われたのですか？
+#### 変更が行われた理由
 
 代替動作が望まれるケースはほとんどありません。 ファイルのインストールは、バンドルをLiferayにインストールする主な方法であるため、バンドル管理のデフォルトになりました。 古い機能とその分岐ロジックを削除すると、コードの保守性と可読性が向上します。
 

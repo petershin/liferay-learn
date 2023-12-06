@@ -6,8 +6,7 @@
 
 彼らはこのオブジェクト定義を別の環境で作成しましたが、それをJSONとしてエクスポートしたため、Distributor Applicationオブジェクトを使ってあなたの環境にインポートすることができます。
 
-ここでは、このJSONファイルを使ってアプリケーション評価オブジェクトをLiferayインスタンスにインポートします。 その前に、 `headless-admin-list-type` REST APIを使ってオブジェクトのピックリストを作成する。
-<!--TASK: Use the batch client extension instead. This way you can add the lists and objects.-->
+ここでは、このJSONファイルを使ってアプリケーション評価オブジェクトをLiferayインスタンスにインポートします。 その前に、 `headless-admin-list-type` REST APIを使ってオブジェクトのピックリストを作成する。 <!--TASK: Use the batch client extension instead. This way you can add the lists and objects.-->
 
 ## ピックリストの作成
 
@@ -16,7 +15,7 @@ Application Evaluationオブジェクトは以下のピックリストを必要�
 1. [この演習のリソースをダウンロードし、解凍してください](./liferay-w1m9.zip) ：
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/setting-up-the-application-evaluation-object/liferay-w1m9.zip -O
+   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-w1m9.zip -O
    ```
 
    ```bash

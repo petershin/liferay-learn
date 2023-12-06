@@ -60,8 +60,8 @@ Liferay는 개인 사용자 데이터를 관리하고 삭제하기 위한 사용
 
 ## 관련 개념
 
-- [사용자 데이터 내보내기](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/exporting-user-data)
+* [사용자 데이터 내보내기](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/exporting-user-data)
 
-- [사용자 데이터 삭제](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/sanitizing-user-data)
+* [사용자 데이터 삭제](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/sanitizing-user-data)
 
-- [익명 사용자 구성](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/configuring-the-anonymous-user)
+* [익명 사용자 구성](https://learn.liferay.com/en/w/dxp/users-and-permissions/managing-user-data/configuring-the-anonymous-user)

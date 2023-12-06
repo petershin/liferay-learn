@@ -36,6 +36,6 @@ Audience Targeting 사용자 세그먼트와 Liferay DXP 7.2+ 세그먼트 간�
 
 ## 관련 정보
 
-- [잠재고객 타겟팅에서 세분화 및 개인화로 마이그레이션](./migrating-to-segmentation-and-personalization.md)
-- [잠재고객 타겟팅에서 수동으로 마이그레이션](./manually-migrating-from-audience-targeting.md)
-- [사용자 세그먼트 생성 및 관리](../segmentation/creating-and-managing-user-segments.md)
+* [잠재고객 타겟팅에서 세분화 및 개인화로 마이그레이션](./migrating-to-segmentation-and-personalization.md)
+* [잠재고객 타겟팅에서 수동으로 마이그레이션](./manually-migrating-from-audience-targeting.md)
+* [사용자 세그먼트 생성 및 관리](../segmentation/creating-and-managing-user-segments.md)

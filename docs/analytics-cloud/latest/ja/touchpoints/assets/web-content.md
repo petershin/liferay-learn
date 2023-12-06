@@ -1,6 +1,6 @@
 # Webコンテンツ
 
-[基本的なWebコンテンツの記事の追加](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html) は、サイト訪問者に情報を提示するための重要なアセットです。 Analytics Cloudでは、サイト ユーザーがどのようにコンテンツを利用しているかについて、重要な洞察を得ることができます。
+[基本Webコンテンツ記事の追加](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html) は、サイト訪問者に情報を提示するための重要なアセットです。 Analytics Cloudでは、サイト ユーザーがどのようにコンテンツを利用しているかについて、重要な洞察を得ることができます。
 
 ![Webコンテンツのアナリティクスデータを表形式で見ることができます。](web-content/images/01.png)
 

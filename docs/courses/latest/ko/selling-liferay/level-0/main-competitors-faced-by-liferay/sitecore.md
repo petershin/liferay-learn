@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 사이트코어
 
 **한눈에**

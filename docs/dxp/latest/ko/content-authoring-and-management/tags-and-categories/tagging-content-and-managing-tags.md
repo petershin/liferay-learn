@@ -44,5 +44,5 @@
 
 ## 관련 정보
 
-- [범주 및 태그로 콘텐츠 구성](./organizing-content-with-categories-and-tags.md)
-- [콘텐츠의 범주 및 어휘 정의](./defining-categories-and-vocabularies-for-content.md)
+* [범주 및 태그로 콘텐츠 구성](./organizing-content-with-categories-and-tags.md)
+* [콘텐츠의 범주 및 어휘 정의](./defining-categories-and-vocabularies-for-content.md)

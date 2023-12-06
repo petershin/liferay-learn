@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 라이프레이가 빛나는 곳
 
 **한눈에**

@@ -11,21 +11,21 @@ GraphQL APIを呼び出すには、実行中のLiferay DXPが必要です。
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-## 消費するサービスを特定する
+## 利用するサービスを特定する
 
-以下の手順で行ってください。
+以下の手順に従ってください：
 
-1. http://localhost:8080/o/api`に移動します。
+1. http://localhost:8080/o/api`にアクセスする。
 
-1. 表示された画面の左上で、セレクタから **headless-delivery** を選びます。これは、Blog投稿APIを含むカテゴリーである。
+1. 表示された画面の左上で、セレクタから **headless-delivery** を選ぶ。これは、ブログ投稿APIを含むカテゴリです。
 
-1. 画面右上の **Show GraphQL** ボタンをクリックすると、Liferay の [GraphiQL](https://github.com/graphql/graphiql) ブラウザが起動します。
+1. 画面右上の **Show GraphQL** ボタンをクリックし、Liferayの [GraphiQL](https://github.com/graphql/graphiql) ブラウザを開きます。
 
-1. 先ほどクリックしたボタンの下にある **Docs** リンクをクリックします。これでAPIを閲覧することができます。
+1. ボタンの下にある **Docs** リンクをクリックします。これでAPIをブラウズできます。
 
-1. GraphQLでは、最初の操作を **query** 、次の操作を **mutation** と呼んで、読み込みと書き込みの操作を分離しています。最初にやりたいことはブログエントリーを投稿することなので、 **mutation** をクリックします。
+1. GraphQL では、最初の操作を **query** 、2 番目の操作を **mutation** と呼ぶことで、読み取りと書き込みの操作を分けています。最初にしたいことはブログのエントリーを投稿することなので、 **mutation** をクリックします。
 
-1. API全体のリストが表示されるので、上部の検索を利用するか、スクロールダウンして`createSiteBlogPosting`の呼び出しを見つけます。
+1. API全体のリストが表示されるので、一番上の検索を使うか、下にスクロールして`createSiteBlogPosting`の呼び出しを見つける：
 
     ```graphql
     createSiteBlogPosting(
@@ -49,15 +49,15 @@ APIでは、エントリが投稿されるブログを含むサイトを把握�
 
 ## データを含むサイトを特定する
 
-次に、Site IDを見つける必要があります。
+次に、サイトIDを見つける必要があります。
 
 1. `http://localhost:8080`にアクセスしてください。
 
-1. **グローバルメニュー** ![Global Menu](../../images/icon-applications-menu.png)を開き、 **コントロールパネル** タブをクリックし、 **サイト** &rarr; サイトに移動します。
+1. **グローバルメニュー** ![Global Menu](../../images/icon-applications-menu.png)を開き、 ［**コントロールパネル**］ タブをクリックし、 ［**サイト**］ &rarr;［サイト］に移動します。
 
-1. Liferay Site の隣にある **Actions** ボタン ![Actions Button](../../images/icon-actions.png) をクリックし、 **Go to Site Settings** を選択します。
+1. Liferayサイトの隣にある **アクション** ボタン![Actions Button](../../images/icon-actions.png) をクリックし、 ［**Go to Site Settings**］ を選択します。
 
-1. **サイト構成** にアクセスしてください。
+1. **サイト設定** にアクセスしてください。
 
 サイトIDが［Details］セクションの上部に表示されます。 `20122`のような整数になります。
 
@@ -76,6 +76,10 @@ curl --request POST --url http://localhost:8080/o/graphql \ -u test@liferay.com:
 ```
 
 ### OAuth2を使用してサービスを呼び出す
+
+```{note}
+OAuth2を使用したGraphQLの使用は、Liferay DXP 7.4 U77+/Liferay Portal 7.4 GA77+でサポートされています。
+```
 
 本番環境では、[OAuth2アプリケーション](../using-oauth2/creating-oauth2-applications.md)を作成し、OAuth2プロセスを使用して認証トークンを取得します。 トークンを取得したら、それをHTTPヘッダーに指定します。
 
@@ -102,7 +106,7 @@ query {blogPostings(filter:"",page:1,pageSize:10,search:"",siteKey:"20122",sort:
 }
 ```
 
-再生ボタンをクリックして実行すると、ブログエントリが表示されません。
+再生ボタンをクリックして実行すると、ブログエントリーが表示されません。
 
 ```json
 {"data":{"blogPostings":{"page":1,"items":[]}}}
@@ -110,11 +114,11 @@ query {blogPostings(filter:"",page:1,pageSize:10,search:"",siteKey:"20122",sort:
 
 次に、ブログエントリを投稿します。
 
-### ブログエントリの投稿
+### ブログエントリーの投稿
 
-GraphQLスキーマによって、ブログエントリを投稿するために行う必要がある呼び出しが明らかになりました。
+GraphQLスキーマによって、ブログエントリーを投稿するために行う必要がある呼び出しが明らかになりました。
 
-1. 公開したいエントリを含むJSONドキュメントを作成します。
+1. 公開したいエントリーを含むJSONドキュメントを作成します。
 
    ```json
    {
@@ -151,7 +155,7 @@ GraphQLスキーマによって、ブログエントリを投稿するために�
 
 ![GraphQLクライアントを使用すると、ブラウザから直接GraphQLサービスを簡単に呼び出すことができます。](./consuming-graphql-apis/images/02.png)
 
-Liferay DXPは、ミューテーションでリクエストされたフィールドを含むブログエントリのJSON表現を返します。
+Liferay DXPは、ミューテーションでリクエストされたフィールドを含むブログエントリーのJSON表現を返します。
 
 ```json
 {
@@ -191,7 +195,7 @@ query {blogPostings(filter:"",page:1,pageSize:10,search:"",siteKey:"20122",sort:
 }
 ```
 
-Liferay DXPは、投稿したブログエントリを含むJSONを返します。
+Liferay DXPは、投稿したブログエントリーを含むJSONを返します。
 
 ```json
 {
@@ -215,7 +219,7 @@ Liferay DXPは、投稿したブログエントリを含むJSONを返します�
 
 ### 単一のブログエントリを取得する
 
-単一のブログエントリを取得するためのGraphQLスキーマからのAPI呼び出しには、パラメーターが1つしかありません。
+単一のブログエントリーを取得するためのGraphQLスキーマからのAPI呼び出しには、パラメーターが1つしかありません。
 
 ```
 blogPosting(
@@ -233,7 +237,7 @@ query {blogPosting(blogPostingId: 35541)
 }
 ```
 
-これをクライアントの左上のウィンドウに貼り付け、［**再生**］ボタンをクリックします。 同じブログエントリを返します。
+これをクライアントの左上のウィンドウに貼り付け、 ［**再生**］ ボタンをクリックします。 同じブログエントリーを返します。
 
 ```json
 {
@@ -247,9 +251,9 @@ query {blogPosting(blogPostingId: 35541)
 }
 ```
 
-### ブログエントリの削除
+### ブログエントリーの削除
 
-ブログエントリの削除は、作成と同様にミューテーションです。 その呼び出しは、単一のブログエントリを取得するのとほぼ同じです。
+ブログエントリーの削除は、作成と同様にミューテーションです。 その呼び出しは、単一のブログエントリーを取得するのとほぼ同じです。
 
 ```
 deleteBlogPosting(

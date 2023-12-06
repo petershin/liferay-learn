@@ -586,6 +586,6 @@ cURL 스크립트 매개변수:
 
 ## 관련 항목
 
-- [웹 콘텐츠 API 기본 사항](./web-content-api-basics.md)
-- [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-- [웹 콘텐츠 구조 이해](../web-content-structures/understanding-web-content-structures.md)
+* [웹 콘텐츠 API 기본 사항](./web-content-api-basics.md)
+* [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+* [웹 콘텐츠 구조 이해](../web-content-structures/understanding-web-content-structures.md)

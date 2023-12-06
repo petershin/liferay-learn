@@ -2,7 +2,7 @@
 
 異なるドメインのサーバーがLiferayのWebサービスにアクセスしようとすると、CORS（Crossorigin Resource Sharing）ポリシーが各リクエストを許可または拒否します。 詳しくは、 [settings up CORS](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors) をご覧ください。
 
-Delectable Bonsaiは、 [Liferayオブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects) 、ユーザーがカスタマイズされたプロフィールフィールドを持つことができます。 以下の手順に従って、ローカルで実行するReactアプリケーションの例をご覧ください。
+クラリティ・ビジョン・ソリューションズは、ユーザーがカスタマイズされたプロファイル・フィールドを持てるように、 [Liferay オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects) を作成することを選択できます。 以下の手順に従って、ローカルで実行するReactアプリケーションの例をご覧ください。
 
 1. Liferay オブジェクトを作成します。
 
@@ -61,8 +61,8 @@ Delectable Bonsaiは、 [Liferayオブジェクト](https://learn.liferay.com/w/
 1. オブジェクトのCORSポリシーを追加する。
 
    * **セキュリティツール** をクリックする。
-   * 左ナビゲーションの **Portal Cross-Origin Resource Sharing (CORS)**をクリックします。
-   * **Add** をクリックします。
+   * 左ナビゲーションの **Portal Cross-Origin Resource Sharing (CORS)** をクリックします。
+   * ［**Add**］ をクリックします。
    * 名前は **Foo** と入力してください。
    * `/o/c/j4x7objects/*` の値で **URLパターン** を追加し、 **更新** をクリックする。
 

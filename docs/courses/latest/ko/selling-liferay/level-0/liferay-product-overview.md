@@ -16,6 +16,9 @@ toc:
   - ./liferay-product-overview/developer-tooling.md
   - ./liferay-product-overview/platform-services.md
   - ./liferay-product-overview/cloud-and-infrastructure.md
+visibility:
+  - Employee
+  - Partner
 ---
 # Liferay DXP 제품 기능
 

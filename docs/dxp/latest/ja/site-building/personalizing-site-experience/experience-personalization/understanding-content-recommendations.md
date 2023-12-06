@@ -8,7 +8,7 @@
 
 ## コンテンツリコメンデーションの仕組み
 
-コンテンツリコメンデーションの構成は、2段階のプロセスです。 まず、ユーザーの行動を追跡し、関心のあるトピックを定義します。 この手順では、 [Analytics CloudがDXPインスタンスに接続されている](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 必要があります。 Analytics Cloudは、サイトでの以前のユーザーの行動に基づいて、関心のあるトピックを定義およびランク付けし、これらの関心をサイトのユーザーIDに関連付けます。 次に、ユーザーの興味に基づいて、ユーザーに推奨するコンテンツを表示します。 この手順では、[動的コレクション](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)を作成し、このコレクションをWebサイトに表示する必要があります。 Analytics Cloudは、ユーザーの関心に基づいて一連のキーワードをDXPに送信し、これらのキーワードはコレクション内のフィルターとして機能します。 ユーザーに表示するコンテンツの種類を定義するには、コレクションが必要です。
+コンテンツリコメンデーションの構成は、2段階のプロセスです。 まず、ユーザーの行動を追跡し、関心のあるトピックを定義します。 この手順では、 [Analytics CloudがDXPインスタンスに接続されている](https://learn.liferay.com/analytics-cloud/latest/ja/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html) 必要があります。 Analytics Cloudは、サイトでの以前のユーザーの行動に基づいて、関心のあるトピックを定義およびランク付けし、これらの関心をサイトのユーザーIDに関連付けます。 次に、ユーザーの興味に基づいて、ユーザーに推奨するコンテンツを表示します。 この手順では、[動的コレクション](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)を作成し、このコレクションをWebサイトに表示する必要があります。 Analytics Cloudは、ユーザーの関心に基づいて一連のキーワードをDXPに送信し、これらのキーワードはコレクション内のフィルターとして機能します。 ユーザーに表示するコンテンツの種類を定義するには、コレクションが必要です。
 
 ```{note}
 Analytics Cloudで興味を操作する方法の詳細については、 [セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html) を参照してください。
@@ -26,9 +26,10 @@ Analytics Cloudは現在、ユーザーの興味を引くためのタイトル�
 
 次の要素が設定されていれば、コンテンツ推薦は自動的に機能します。
 
-1. [アナリティクス クラウドが Liferay DXP インスタンスに接続されている](./configuring-content-recommendations.md#connecting-analytics-cloud-to-your-liferay-dxp-instance) 、サイトのコンテンツが同期されている。
-2. 2. Liferay DXP で異なるコンテンツを含むダイナミックコレクションを作成し、コンテンツレコメンデーションオプションを有効にする(./configuring-content-recommendations.md#creating-a-dynamic-collection)。
-3. 3.アセットパブリッシャー、コレクション表示フラグメント、またはコレクションページを使用して、ダイナミックコレクションを [表示](./configuring-content-recommendations.md#displaying-the-dynamic-collection) します。
+1. [Analytics CloudがLiferay DXPインスタンスに接続され](./configuring-content-recommendations.md#connecting-analytics-cloud-to-your-liferay-dxp-instance) 、サイトコンテンツが同期されている。
+2. 異なるコンテンツを含むLiferay DXPの[動的コレクションを作成](./configuring-content-recommendations.md#creating-a-dynamic-collection)し、コンテンツ推薦オプションを有効にします。
+   
+3. アセットパブリッシャー、コレクション表示フラグメント、またはコレクションページを使用して、 [動的コレクションを表示](./configuring-content-recommendations.md#displaying-the-dynamic-collection) する。
 
 ```{note}
 コレクションは、Liferay DXP 7.2ではコンテンツセットと呼ばれています。
@@ -54,7 +55,7 @@ DXPでは、動的コレクションを作成し、カトラリー、調理器�
 
 ## 関連情報
 
-- [Liferay DXPをAnalytics Cloudに接続する](https://learn.liferay.com/analytics-cloud/latest/en/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
+- [Liferay DXPをAnalytics Cloudに接続する](https://learn.liferay.com/analytics-cloud/latest/ja/connecting-data-sources/connecting-liferay-dxp-to-analytics-cloud.html)
 - [コンテンツのリコメンデーションの設定](./configuring-content-recommendations.md)
-- [Interests (Analytics Cloud)](https://learn.liferay.com/analytics-cloud/latest/en/people/individuals/understanding-interests.md)
+- [Interests (Analytics Cloud)](https://learn.liferay.com/ja/w/analytics-cloud/people/individuals/understanding-interests)
 - [コレクションとコレクションページについて](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)

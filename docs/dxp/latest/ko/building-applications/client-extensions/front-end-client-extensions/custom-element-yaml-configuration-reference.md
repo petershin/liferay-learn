@@ -38,7 +38,7 @@ able-custom-element:
 | `portletCategoryName` | 끈                | `category.client-extensions` | 맞춤 요소 위젯의 메뉴 카테고리입니다.                                                                                                                                    |
 | `properties`          | 끈[]              | `[]`                         | 사용자 정의 HTML 요소에 속성으로 추가할 속성입니다. 줄 바꿈을 구분 기호로 사용하고 Java 속성으로 처리됩니다.                                                                                       |
 | `urls`                | String [](부분 URL) |                              | (필수) 위젯이 페이지에서 사용될 때 HTML 헤드에 추가되는 JavaScript 리소스에 대한 경로 목록입니다. 이러한 리소스 중 하나는 사용자 지정 요소 초기화 코드를 포함해야 합니다. 이는 `baseURL` 과 결합하여 완전한 URL을 형성합니다.            |
-| `useESM`               | 허위 사실            | `false`                      | JavaScript 코드가 [ESM](https://nodejs.org/api/esm.html#modules-ecmascript-modules) 형식을 사용하는지 여부. `true`인 경우 `type="module"` 속성이 있는 페이지에 JavaScript가 추가됩니다. |
+| `useSM`               | 허위 사실            | `false`                      | JavaScript 코드가 [ESM](https://nodejs.org/api/esm.html#modules-ecmascript-modules) 형식을 사용하는지 여부. `true`인 경우 `type="module"` 속성이 있는 페이지에 JavaScript가 추가됩니다. |
 
 모든 프런트 엔드 클라이언트 확장에 공통적인 속성은 [프런트 엔드 클라이언트 확장 속성](../front-end-client-extensions.md#front-end-client-extension-properties) 참조하십시오.
 

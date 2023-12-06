@@ -1,17 +1,18 @@
 ---
 toc:
-- ./getting-started.md
-- ./site-building.md
-- ./content-authoring-and-management.md
-- ./process-automation.md
-- ./using-search.md
-- ./collaboration-and-social.md
-- ./users-and-permissions.md
-- ./system-administration.md
-- ./building-applications.md
-- ./liferay-internals.md
-- ./headless-delivery.md
-- ./installation-and-upgrades.md
+  - ./getting-started.md
+  - ./site-building.md
+  - ./content-authoring-and-management.md
+  - ./process-automation.md
+  - ./using-search.md
+  - ./collaboration-and-social.md
+  - ./users-and-permissions.md
+  - ./system-administration.md
+  - ./building-applications.md
+  - ./building-solutions-on-liferay.md
+  - ./liferay-internals.md
+  - ./headless-delivery.md
+  - ./installation-and-upgrades.md
 ---
 # DXP
 

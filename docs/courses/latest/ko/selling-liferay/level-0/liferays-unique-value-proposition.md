@@ -2,6 +2,9 @@
 toc:
   - ./liferays-unique-value-proposition/organic-innovation-and-open-source-leadership.md
   - ./liferays-unique-value-proposition/portal-heritage-and-tailoring-liferay.md
+visibility:
+  - Employee
+  - Partner
 ---
 # Liferay의 고유한 가치 제안
 

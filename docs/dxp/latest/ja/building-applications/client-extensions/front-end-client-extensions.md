@@ -28,7 +28,9 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
+{bdg-secondary}`Liferay DXP 7.4 (self-hosted)`   
+{bdg-secondary}`Liferay Experience Cloud (SaaS)`   
+{bdg-unsupported}`Liferay Cloud: Self-Managed`
 
 フロントエンドクライアント拡張は、ページを拡張し、新しい機能を統合します。 CSS、JavaScript、テーマのCSS、テーマのお気に入りアイコン、カスタム要素、IFrameがあります。
 
@@ -66,7 +68,7 @@ type: globalCSS
 
 ## テーマのCSSクライアント拡張
 
-[CSSクライアント・エクステンション](#css-client-extensions) がページにスタイリングを追加するのに対して、テーマCSSクライアント・エクステンションは、サイトのテーマ [](../../site-building/site-appearance/themes/introduction-to-themes.md)を含むページのスタイリングを上書きする。 クライアント・エクステンションは、 `clay.css` ファイルと、 `main.css` ファイルを使用して、サイトのテーマで通常使用される同じ名前のファイルを置き換えます。
+[CSSクライアント拡張機能](#css-client-extensions)がページにスタイルを追加するのに対して、テーマCSSクライアント拡張機能はサイトの[テーマ](../../site-building/site-appearance/themes/introduction-to-themes.md)を含むページのスタイルを上書きします。クライアント拡張機能では、`clay.css`ファイルと`main.css`ファイルを使用して、サイトのテーマで通常使用される同じ名前のファイルを置き換えます。
 
 このタイプのクライアント拡張は、Liferay Applications メニューの **Client Extensions** からオプションとして追加できます。
 
@@ -74,6 +76,8 @@ type: globalCSS
 
 ```{note}
 このタイプのクライアント拡張機能を使用するには、`clay.css` と `main.css` ファイルをリモートでホストする必要があります。
+
+このクライアントエクステンションはテーマに含まれるデフォルトのCSSを完全に置き換えるので、Liferayで使用するアウトオブボックスウィジェットには必ず [Clay styling](https://clayui.com/docs/css/index.html) を指定してください。 あるいは、特定の Liferay ウィジェットのスタイルを固定するには、コンテナ要素の Advanced タブで `cadmin` CSS クラスを含むコンテナでウィジェットをラップします。
 ```
 
 `client-extension.yaml`ファイルにテーマのCSSクライアント拡張を指定します。

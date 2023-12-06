@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Liferay 객체 생성
 
 **한눈에**

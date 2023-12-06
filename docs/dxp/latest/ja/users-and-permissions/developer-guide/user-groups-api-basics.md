@@ -7,7 +7,7 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+その後、以下の手順に従ってください：
 
 1. [User Groups API Basics](./liferay-y6f2.zip) をダウンロードして解凍します。
 
@@ -37,7 +37,7 @@
    }
    ```
 
-1. **Global Menu** &rarr; **Control Panel** &rarr; **User Groups** に移動する。 新しいユーザーグループが追加されていることを確認してください。
+1. *Global Menu* &rarr; *Control Panel* &rarr; *User Groups*に移動する。 新しいユーザーグループが追加されていることを確認してください。
 
    ![新しいユーザーグループが追加されていることを確認してください。](./user-groups-api-basics/images/01.png)
 
@@ -104,7 +104,7 @@
 他のJavaクラス例もこれと似ているが、異なる `UserGroupResource` メソッドを呼び出している。
 
 ```{important}
-サービスの詳細は [UserGroupResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserGroupResource.java) を参照してください。
+サービスの詳細は [UserGroupResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/UserGroupResource.java) を参照してください。
 ```
 
 以下は、cURLとJavaを使用して、他の `UserGroup` RESTサービスを呼び出す例です。
@@ -221,7 +221,7 @@ java -classpath .:* -DuserGroupId=1234 UserGroup_PATCH_ById
 
 ## ユーザーグループを作る
 
-以下のcURLとJavaコマンドで、既存のユーザーグループを完全に上書きする。 `1234` をユーザーグループのIDに置き換えてください。
+以下のcURLとJavaコマンドで、既存のユーザー・グループを完全に上書きする。 `1234` をユーザーグループのIDに置き換えてください。
 
 ### UserGroup_PUT_ById.sh
 

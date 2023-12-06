@@ -14,9 +14,9 @@
 
 1. Blueprint 계획에 따라 다음 메뉴를 사용하여 [Blueprint](./understanding-search-blueprints.md#what-is-a-blueprint) 빌드를 계속합니다.
 
-   - [Query Builder](#using-the-query-builder) : Query Elements 섹션에서 Blueprint에 대한 요소를 선택하거나 구성하여 검색에 새 쿼리 절을 추가합니다. 쿼리 설정 섹션에서 쿼리에 대한 추가 설정(예: 검색할 자산 및 개체 유형)을 구성합니다.
+   * [Query Builder](#using-the-query-builder) : Query Elements 섹션에서 Blueprint에 대한 요소를 선택하거나 구성하여 검색에 새 쿼리 절을 추가합니다. 쿼리 설정 섹션에서 쿼리에 대한 추가 설정(예: 검색할 자산 및 개체 유형)을 구성합니다.
 
-   - [구성](#adding-configurations) : 검색에서 고급 설정(예: 정렬 또는 집계)을 구성합니다.
+   * [구성](#adding-configurations) : 검색에서 고급 설정(예: 정렬 또는 집계)을 구성합니다.
 
 1. Blueprint를 빌드하고 구성하면서 테스트합니다. **미리보기** 클릭하고 검색어를 입력하세요.
 
@@ -231,4 +231,4 @@ Liferay의 백엔드 코드(및 잠재적으로 Liferay 인스턴스에 배포�
 
 ## 다음
 
-- [검색 페이지에서 검색 청사진 사용](./using-a-search-blueprint-on-a-search-page.md)
+* [검색 페이지에서 검색 청사진 사용](./using-a-search-blueprint-on-a-search-page.md)

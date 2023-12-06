@@ -44,4 +44,4 @@ Liferay DXP의 [개인화 및 세분화](./personalizing-site-experience.md) 프
 
 ## 사이트 최적화
 
-Liferay DXP는 사이트의 [검색 엔진 최적화(SEO) 순위](../site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)높이기, [각 디바이스에 최적화된 반응형 페이지](./optimizing-sites/building-a-responsive-site.md) 만들기, [A/B 테스트를 통한 메시징 캠페인 개선](../site-building/optimizing-sites/ab-testing/ab-testing.md)등 사이트 최적화를 위한 다양한 도구와 기능을 제공합니다. A/B 테스트는 페이지의 현재 기본 변형과 페이지 변형을 비교하여 어떤 페이지가 주어진 목표(이탈률, 클릭 수 등)에 대해 더 나은 성과를 내는지 확인합니다. 이를 통해 사이트에 대해 데이터에 기반한 더 나은 의사 결정을 내릴 수 있으므로 그 어느 때보다 빠르게 사용자와 고객에게 서비스를 제공할 수 있습니다.
+Liferay DXP는 사이트의 [검색 엔진 최적화(SEO) 순위](../site-building/displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)높이기, [각 디바이스에 최적화된 반응형 페이지](./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md) 만들기, [A/B 테스트를 통한 메시징 캠페인 개선](../site-building/optimizing-sites/ab-testing/ab-testing.md)등 사이트 최적화를 위한 다양한 도구와 기능을 제공합니다. A/B 테스트는 페이지의 현재 기본 변형과 페이지 변형을 비교하여 어떤 페이지가 주어진 목표(이탈률, 클릭 수 등)에 대해 더 나은 성과를 내는지 확인합니다. 이를 통해 사이트에 대해 데이터에 기반한 더 나은 의사 결정을 내릴 수 있으므로 그 어느 때보다 빠르게 사용자와 고객에게 서비스를 제공할 수 있습니다.

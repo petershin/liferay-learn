@@ -83,6 +83,6 @@ Asset Publisher 위젯을 사용할 때 여러 표시 설정을 구성하여 사
 
 ## 관련 주제
 
-- [자산 게시자 위젯을 사용하여 자산 표시](./displaying-assets-using-the-asset-publisher-widget.md)
-- [자산 게시자 위젯에 대한 자산 선택](./selecting-assets-in-the-asset-publisher-widget.md)
-- [지리적으로 현지화된 자산](../../site-settings/site-content-configurations/configuring-geolocation-for-assets.md)
+* [자산 게시자 위젯을 사용하여 자산 표시](./displaying-assets-using-the-asset-publisher-widget.md)
+* [자산 게시자 위젯에 대한 자산 선택](./selecting-assets-in-the-asset-publisher-widget.md)
+* [지리적으로 현지화된 자산](../../site-settings/site-content-configurations/configuring-geolocation-for-assets.md)

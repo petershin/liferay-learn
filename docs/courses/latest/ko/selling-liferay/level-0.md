@@ -8,6 +8,9 @@ toc:
   - ./level-0/what-challenges-does-liferay-solve-horizontal-solutions.md
   - ./level-0/what-challenges-does-liferay-solve-industry-solutions.md
   - ./level-0/main-competitors-faced-by-liferay.md
+visibility:
+- Employee
+- Partner
 ---
 # 레벨 0
 

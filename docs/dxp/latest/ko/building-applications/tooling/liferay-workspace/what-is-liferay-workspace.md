@@ -2,10 +2,10 @@
 
 Liferay Workspace는 전체 개발 수명 주기를 처리하는 Liferay의 독창적인 방식을 나타내는 폴더 및 Gradle 스크립트 세트입니다.
 
-- [프로젝트 생성](#creating-projects)
-- [건축 프로젝트](#building-projects)
-- [프로젝트 배포](#deploying-projects)
-- [테스트 프로젝트](#testing-projects)
+* [프로젝트 생성](#creating-projects)
+* [건축 프로젝트](#building-projects)
+* [프로젝트 배포](#deploying-projects)
+* [테스트 프로젝트](#testing-projects)
 
 ## 프로젝트 생성
 
@@ -25,4 +25,4 @@ Gradle 또는 Blade CLI를 사용하여 Liferay Workspace에서 쉽게 프로젝
 
 Liferay Workspace는 Docker를 사용하여 개발, 사용자 승인 테스트 및 프로덕션 구성을 구성하여 코드를 테스트할 환경을 시뮬레이션합니다. 환경은 폴더로 구분되며 각 폴더는 자체 데이터베이스, `Portal-ext.properties` 파일, Elasticsearch 구성 등을 제공할 수 있습니다. 이러한 구성은 Liferay DXP 또는 CE의 Workspace 제어 설치를 오버레이합니다.
 
-[Blade CLI](../blade-cli/installing-and-updating-blade-cli.md)을 사용하거나 사용하지 않고 Workspace를 사용할 수 있습니다. </a> 번째 Workspace를 생성하는 방법을 알아보려면 계속 읽으십시오. </p> 
+[Blade CLI](../blade-cli/installing-and-updating-blade-cli.md)를 사용하거나 사용하지 않고 Workspace를 사용할 수 있습니다. 첫 번째 Liferay Workspace를 [생성](./creating-a-liferay-workspace.md)하는 방법을 알아보려면 계속 읽어보세요.

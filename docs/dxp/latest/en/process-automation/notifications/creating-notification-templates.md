@@ -3,7 +3,7 @@ uuid: 23945a81-3dac-4a80-a0e3-a05b113bba7e
 ---
 # Creating Notification Templates
 
-{bdg-secondary}`Available Liferay 7.4 U75+/GA75+`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+`
 
 With Notification Templates, you can design automated email and user notifications for Liferay services. Each template identifies a sender, recipients, and message content. While designing the template, you can search supported entities and add field references that insert their data dynamically into emails.
 
@@ -36,6 +36,14 @@ To use email notifications, your instance must have a configured [mail server](.
    To add multiple recipients, separate email addresses with a comma or space (e.g., `test@liferay.com,learn@liferay.com`, `[%TICKET_AUTHOR_EMAIL_ADDRESS%] [%CURRENT_USER_EMAIL_ADDRESS%]`).
 
    ![Under Settings, enter details for the sender and desired recipients.](./creating-notification-templates/images/04.png)
+
+1. Determine whether to send emails separately or together.
+
+   When sent together, emails include the full list of recipients from the To field. Sending emails separately hides the list of recipients.
+
+   ```{tip}
+   Sending emails together can facilitate transparency and collaboration, while sending emails separately can help preserve privacy.
+   ```
 
 1. In Content, enter a subject, select an editor type, and create the body of the email.
 

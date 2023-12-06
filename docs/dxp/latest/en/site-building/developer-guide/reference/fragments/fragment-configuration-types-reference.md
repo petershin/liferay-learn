@@ -553,13 +553,13 @@ If you were to choose the color white, the `h3` tag heading would have the class
 
 ![The color palette configuration is useful when a color selection is necessary.](./fragment-configuration-types-reference/images/10.png)
 
-## Menu Display Configuration
+## Navigation Menu Selector Configuration
 
 {bdg-secondary}`Liferay DXP 2024.Q1`
 
-Using the menu display configuration type, you can access FreeMarker variables in the fragment editor to create custom display styles for the fragment.
+Using the `navigationMenuSelector` configuration type, you can access FreeMarker variables through the fragment HTML editor and define markup for rendering custom navigation menus.
 
-To use FreeMarker variables in the fragment HTML editor, set `navigationMenuSelector` as the configuration type.
+To use FreeMarker variables in the fragment HTML editor, start by setting `navigationMenuSelector` as the [configuration type](../../developing-page-fragments/adding-configuration-options-to-fragments.md#modify-the-configuration). You can use the JSON snippet below as a model.
 
 ```json
 "fieldSets": [
@@ -575,29 +575,19 @@ To use FreeMarker variables in the fragment HTML editor, set `navigationMenuSele
 ]
 ```
 
-Now you can create the variables and assign values to them in the fragment HTML editor. In FreeMarker, use the `#assign` directive to do that. These variables can be found under `[name]Object`.
+Now, you can access the FreeMarker variables, which can be found under `[name]Object`. In this example, `sourceObject.navItems` would return the `navItems` list located under `sourceObject`. The object is called `sourceObject` since `source` was the name used in the configuration.
 
-In this example, use `sourceObject`, since `source` was the name used in the configuration.
+These are the available variables for the navigation menu selector configuration type:
 
-```markup
-[#assign
-    entries = sourceObject.navItems
-    branchNavItems = sourceObject.branchNavItems
-]
-```
+| Variable          | Use                                                                                                         |
+|:------------------|:------------------------------------------------------------------------------------------------------------|
+| `branchNavItems`  | Represents the hierarchical strcuture of the navigation menu.                                               |
+| `navItems`        | A list of `NavItem` objects, each representing a navigation item to be displayed.                           |
+| `rootLayoutLevel` | Defines the level in the hierarchy.                                                                         |
+| `rootLayoutType`  | Specifies how to interpret the root layout in relation to the current page (absolute, relative, or select). |
 
-The following variables are available within menu displays:
-
-| Variable          | Use                                                                                                       |
-|:------------------|:----------------------------------------------------------------------------------------------------------|
-| `branchNavItems`  | Represents the hierarchical strcuture of the navigation menu.                                             |
-| `navItems`        | Represents the actual navigation items to be displayed.                                                   |
-| `rootLayoutLevel` | Defines the level in the hierarchy.                                                                       |
-| `rootLayoutType`  | Defines how to interpret the root layout in relation to the current page (absolute, relative, or select). |
-
-```{tip}
-Import the [`navigation-menu.zip`](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference/navigation-menu.zip) fragment example into a fragment set to get a better look at the `navigationMenuSelector` type usage. To learn more about importing a fragment, see [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md)
-```
+!!! tip
+    Import the [`navigation-menu`](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference/navigation-menu.zip) fragment example into a fragment set to get a better look at the `navigationMenuSelector` type usage. To learn more about importing a fragment, see [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md)
 
 <!-- There is still no article dedicated exclusively to exporting/importing fragments. It would be easier to just point to one. A section could probably be added to managing-fragments.md and this reference should be replaced. - Eric -->
 

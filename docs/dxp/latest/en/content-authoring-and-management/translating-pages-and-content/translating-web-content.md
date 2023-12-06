@@ -51,39 +51,41 @@ To manually translate web content, users must have either View and Update permis
 
 ## Publishing Translated Web Content Using Localizable Fields
 
-Sometimes when translating a web content using localizable fields, the content displayed in the translated language can be different from the content displayed in the original language. This is a behavior that Liferay offers so your editions to the web content won't override the content that has been already translated. To assert this behavior, follow these steps:
+Translated web content in localizable fields can be different structurally from the content displayed in the original language. Liferay does this so your changes don't override content that has been already translated. To see how this works, follow these steps:
 
 1. In Web Content, go to Structures and Click *Add*.
 
-1. Create a structure using a repeatable fieldset. To do that, add a Text and an Image field to your fieldset. Make them both required and click *Save*.
+1. Create a structure using a repeatable fieldset. For example, add a Text and an Image field to your fieldset. Make them both required and click *Save*.
 
 1. Add the fieldset to your new structure and make it repeatable.
 
-1. On the upper left corner, click the flag icon and click *Manage Translations*.
+1. In the upper left corner, click the flag icon and click *Manage Translations*.
 
-1. Click the *Add* icon (![Add icon.](../../images/icon-add.png)) and add a language of your choice. Click *Done*.
+1. Click *Add* (![Add icon.](../../images/icon-add.png)) and add a language of your choice. Click *Done*.
 
-1. Name your structure and click *Save* to finish creating it.
+1. Name your structure and click *Save*. 
 
-1. Now navigate to Web Content and click *New*. Now click your structure created before.
+1. Now navigate to Web Content and click *New*. Select the structure you just created.
 
 1. Enter a value for your text field and select an image. 
 
-1. On the upper left corner, click the flag icon and click the language previously chosen as your translation. Notice that the content in the fieldset has not changed. The same happens when you duplicate the fieldset using the default language; the content doesn't change using the secondary language. Now change the translation back to the default language and name your web content. Click *Publish*.
+1. In the upper left corner, click the flag icon and click the language previously chosen as your translation. Notice that the content in the fieldset has not changed. The same happens when you duplicate the fieldset using the default language; the secondary language's content doesn't change. Now change the translation back to the default language and name your web content. Click *Publish*.
 
-1.  Click the kebab menu (![Actions icon](../../images/icon-actions.png)) next to your web content and click *Translate*.
+1.  Click *Actions* (![Actions icon](../../images/icon-actions.png)) next to your web content and click *Translate*.
 
-1. On Translate From on the upper corner, select the language chosen in the structure creation. Click *Publish*.
+1. On Translate From in the upper corner, select the language chosen in the structure creation. Click *Publish*.
 
-1. Click your web content to enter edition mode.
+1. Click your web content to enter edit mode.
 
-1.  On the upper left corner, click the flag icon. See that the secondary language has the Translated message next to it.
+1. In the upper left corner, click the flag icon. See that the secondary language has the Translated message next to it.
 
 ![See the Translated message next to the language.](./translating-web-content/images/011.png)
 
 1. Using your default language, click *Duplicate* (![Actions icon.](../../images/icon-actions.png)) once more and enter a value for the text field and select an image.
 
-1. On the upper left corner, click the flag icon and select the translated language. You can see that the content selected for the duplicated fieldset is not present when using this translation.
+1. In the upper left corner, click the flag icon and select the translated language. You can see that the content selected for the duplicated fieldset is not present when using this translation.
+
+This behavior frees you to manage your translations independently from the original language.
 
 ## Exporting and Importing Translations
 

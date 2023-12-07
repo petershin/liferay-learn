@@ -55,7 +55,7 @@ You can call Liferay's [Headless](../../../../../headless-delivery/using-liferay
 You can only call GET endpoints with the `restClient` object.
 ```
 
-For example, you can use `restClient` to retrieve a site's blog postings and then print out their headlines with the following template:
+For example, you can use `restClient` to retrieve a site's blog postings and then print out their headlines with the following FreeMarker script:
 
 ```
 <#assign 
@@ -66,6 +66,20 @@ For example, you can use `restClient` to retrieve a site's blog postings and the
 	<h1>${blogPosting.headline}</h1>
 </#list>
 ```
+
+You can filter, sort, search, and paginate your API responses the same way you would with a standard cURL request. For example:
+
+```
+<#assign 
+	blogPostings = restClient.get("/headless-delivery/v1.0/sites/{siteId}/blog-postingssort=dateCreated:asc&filter=creatorId+eq+20126").items
+/>
+
+<#list blogPostings as blogPosting>
+	<h1>${blogPosting.headline}</h1>
+</#list>
+```
+
+See [API Query Parameters](../../../../../headless-delivery/consuming-apis/api-query-parameters.md) for more information on filtering APIs.
 
 Use the [API Explorer](../../../../../headless-delivery/consuming-apis/consuming-rest-services.md) to find API endpoints and schemas for Headless resources.
 

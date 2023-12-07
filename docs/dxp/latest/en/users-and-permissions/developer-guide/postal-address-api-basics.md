@@ -4,7 +4,7 @@ uuid: b3381541-1f04-4c33-9a38-a2ac20bfee5c
 
 # Postal Address API Basics
 
-> Available: Liferay DXP/Portal 7.4+
+{bdg-secondary}`Liferay DXP/Portal 7.4+`
 
 Use Liferay's REST APIs to manage postal addresses.
 
@@ -25,7 +25,7 @@ Then, follow these steps:
    unzip liferay-n8y7.zip
    ```
 
-1. Use [Accounts_GET_FromInstance](./accounts-api-basics.md#get-accounts-from-instance) to get a list of accounts. Note the ID of the account to which you will add a postal address. You can also navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Accounts* to see the list of accounts.
+1. Use [Accounts_GET_FromInstance](./accounts-api-basics.md#get-accounts-from-instance) to get a list of accounts. Note the ID of the account where you'll add a postal address. You can also navigate to *Global Menu* &rarr; *Control Panel* &rarr; *Accounts* to see the list of accounts.
 
 1. Use the cURL script to add a new postal address to your chosen account. On the command line, navigate to the `curl` folder. Execute the `PostalAddress_POST_ToAccount.sh` script. Replace `1234` with an account ID.
 
@@ -55,13 +55,13 @@ Then, follow these steps:
 
    ![See that a new postal address has been added.](./postal-address-api-basics/images/01.png)
 
-1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files with the following command:
+1. The REST service can also be called using the Java client. Navigate out of the `curl` folder and into the `java` folder. Compile the source files: 
 
     ```bash
     javac -classpath .:* *.java
     ```
 
-1. Run the `PostalAddress_POST_ToAccount.java` class with the following command. Replace `1234` with an account ID.
+1. Run the `PostalAddress_POST_ToAccount.java` class. Replace `1234` with an account ID.
 
     ```bash
     java -classpath .:* -DaccountId=1234 PostalAddress_POST_ToAccount
@@ -85,9 +85,8 @@ Here are the command's arguments:
 | `-d "{\"addressCountry\": \"United States\", \"addressLocality\": \"Diamond Bar\", \"addressRegion\": \"California\", \"addressType\": \"shipping\", \"name\": \"Able Address\", \"postalCode\": \"12345\", \"primary\": false, \"streetAddressLine1\": \"123 Foo St\", \"streetAddressLine2\": \"\", \"streetAddressLine3\": \"\"}"` | The data you are requesting to post |
 | `-u "test@liferay.com:learn"` | Basic authentication credentials |
 
-```{note}
-Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
-```
+!!! note
+    Basic authentication is used here for demonstration purposes. For production, you should authorize users via [OAuth2](../../headless-delivery/using-oauth2.md). See [Using OAuth2 to Authorize Users](../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) for a sample React application that uses OAuth2.
 
 The other cURL commands use similar JSON arguments.
 
@@ -111,15 +110,13 @@ This class invokes the REST service using only three lines of code:
 
 Note that the project includes the `com.liferay.headless.admin.user.client.jar` file as a dependency. You can find client JAR dependency information for all REST applications in the API explorer in your installation at `/o/api`.
 
-```{note}
-The `main` method's comment demonstrates running the class.
-```
+!!! note
+    The `main` method's comment demonstrates running the class.
 
 The other example Java classes are similar to this one, but call different `PostalAddressResource` methods.
 
-```{important}
-See [PostalAddressResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/PostalAddressResource.java) for service details.
-```
+!!! important
+    See [PostalAddressResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-admin-user/headless-admin-user-client/src/main/java/com/liferay/headless/admin/user/client/resource/v1_0/PostalAddressResource.java) for service details.
 
 Below are examples of calling other `PostalAddress` REST services using cURL and Java.
 
@@ -236,13 +233,12 @@ The user's postal addresses are returned in the JSON response.
 
 Get a specific postal address with the following cURL or Java command. Replace `1234` with the postal address's ID.
 
-```{tip}
-Use ``PostalAddress_GET_FromAccount.[java|sh]`` to get account ``postal address`` IDs.
+!!! tip
+    Use ``PostalAddress_GET_FromAccount.[java|sh]`` to get account ``postal address`` IDs.
 
-Use ``PostalAddress_GET_FromOrganization.[java|sh]`` to get organization ``postal address`` IDs.
+    Use ``PostalAddress_GET_FromOrganization.[java|sh]`` to get organization ``postal address`` IDs.
 
-Use ``PostalAddress_GET_FromUser.[java|sh]`` to get user ``postal address`` IDs.
-```
+    Use ``PostalAddress_GET_FromUser.[java|sh]`` to get user ``postal address`` IDs.
 
 ### PostalAddress_GET_ById.sh
 

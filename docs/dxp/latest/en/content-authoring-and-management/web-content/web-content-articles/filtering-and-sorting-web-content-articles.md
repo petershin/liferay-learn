@@ -24,9 +24,9 @@ When you filter by navigation, you filter all the web content you have permissio
 | All           | All web content articles and folders.                                                                      |
 | Mine          | Items that the currently logged-on user created.                                                           |
 | Recent        | Assets that have recently been modified. You cannot use the [order by](#order-by) option with this filter. |
-| Structures    | Filters web content articles based on web content structure.                                               |
-
-![Using the structures filter, you can filter the web content articles based on a specific web content structure.](./filtering-and-sorting-web-content-articles/images/02.png)
+| Structures    | Filters web content articles based on web content structure. |
+| Categories   | Filters web content based on its category. |
+| Tags             | Filters web content based on any tags assigned to it.                                              |
 
 ## Filter by Status
 

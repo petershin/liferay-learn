@@ -21,6 +21,10 @@ Each web content article is based on a structure that defines its available fiel
 
 1. Click *Publish*.
 
+Now your new article is created! If it is located inside a folder, an interactive path is displayed for easier navigation.
+
+ ![Interactive path.](./adding-a-basic-web-content-article/images/06.png)
+
 
 You can now display your web content article on a page using the [Web Content Display widget](../../../site-building/displaying-content/additional-content-display-options/using-the-web-content-display-widget.md), for example.
 

@@ -45,6 +45,8 @@ Follow these steps to create an Info Template:
 
 Once created, Info Templates can be used in Content Display fragments and any other fragment with [sub-elements](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md) that can be mapped, such as text and rich text. When selected, they determine how an item is rendered in Content Pages and Display Page Templates.
 
+Liferay's [Headless](../../headless-delivery/using-liferay-as-a-headless-platform.md) API services are available in the template editor through the `restClient` object. See [Calling Headless APIs in the Template Editor](../creating-pages/page-fragments-and-widgets/using-widgets/styling-widgets/creating-a-widget-template.md#calling-headless-apis-in-the-template-editor) for usage details.
+
 ## Importing and Exporting Scripts
 
 When editing an Info Template, you can import and export FreeMarker scripts to reuse in other contexts:

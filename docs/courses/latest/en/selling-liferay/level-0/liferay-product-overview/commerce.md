@@ -36,7 +36,7 @@ With digital commerce capabilities designed to support complex ordering workflow
 ## Multi-level Selling
 
 * [Support for buyers, sellers, accounts, user roles](https://learn.liferay.com/w/commerce/users-and-accounts)
-* [Dashboards](https://learn.liferay.com/w/analytics-cloud/commerce/commerce-dashboard)
+ <!--* [Dashboards](https://learn.liferay.com/w/analytics-cloud/commerce/commerce-dashboard)-->
 * Forecasting
 
 Next: [Analytics and Optimization](./analytics-and-optimization.md).

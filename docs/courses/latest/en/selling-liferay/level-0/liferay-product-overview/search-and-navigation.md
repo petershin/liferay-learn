@@ -24,7 +24,7 @@ With Liferay DXP, you can build digital experiences with dynamic navigation, cat
 ## Basic Navigation
 
 * [Site Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
-* [Managing Site Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation/managing-site-navigation)
+* [Managing Site Navigation](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 
 ## Enhanced Navigation
 

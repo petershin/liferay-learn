@@ -32,7 +32,7 @@ Further to that, anyone with additional information about a competitor can play 
 * View the [recording](https://learn.liferay.com/web/guest/d/sa1-6-competitive-intelligence-battle-cards) from the live workshop of this module.
 * Download the [PDF](https://learn.liferay.com/documents/d/guest/sa1-6-competitive-intelligence-battle-cards-pdf) of the presentation used in the live workshop.
 * Liferay Employees - View the [Battlecards](https://sales.liferay.com/group/library/competitive-intel).
-* Liferay Partners  - View the [Battlecards](https://partner.liferay.com/marketing/marketing-resources/research-analysis/competitive-analysis).
+<!-- * Liferay Partners  - View the [Battlecards](https://partner.liferay.com/marketing/marketing-resources/research-analysis/competitive-analysis). -->
 ```
 
 ## Introduction to the Competitor Battlecards
@@ -51,7 +51,7 @@ New Battlecards are created throughout the year, with existing Battlecards updat
 
 How you can access the Battlecards varies depending on whether you are an Employee or a Partner.
 
-* [Partners](https://partner.liferay.com/marketing/marketing-resources/research-analysis/competitive-analysis)
+<!-- * [Partners](https://partner.liferay.com/marketing/marketing-resources/research-analysis/competitive-analysis) -->
 * [Employees](https://sales.liferay.com/en/group/library/competitive-intel)
 
 Note that however the Battlecards are accessed, they are confidential and for internal and partner use only. They must not be distributed.

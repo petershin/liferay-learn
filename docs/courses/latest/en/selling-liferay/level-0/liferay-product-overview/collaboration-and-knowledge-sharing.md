@@ -19,7 +19,7 @@ Empower users to get answers to questions faster on their own and solve more com
 
 ## Knowledge Sharing
 
-* [Knowledge Base](https://learn.liferay.com/w/dxp/collaboration-and-social/knowledge-base/using-the-knowledge-base)
+* [Knowledge Base](https://learn.liferay.com/w/dxp/collaboration-and-social/knowledge-base)
 * [Web Content Structures](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures)
 
 ## Social

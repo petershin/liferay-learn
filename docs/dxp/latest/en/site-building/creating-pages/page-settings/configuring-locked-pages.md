@@ -6,9 +6,8 @@ uuid: 71e441a1-8c7c-468f-a758-b4e1cb9d185d
 
 <!-- The feature flag had been removed, but the commit was reverted: https://github.com/liferay/liferay-portal/commit/6313e4d18f4610d6c45009b33932d666113adfd7 - Eric -->
 
-```{important}
-This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-```
+!!! important
+    This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
 
 Liferay locks pages during editing to avoid conflicts when multiple users try to edit the same page.
 
@@ -20,9 +19,8 @@ Whenever a user starts editing a page and adds new content to it, the page locks
 
 If users try to access a locked page, a Page in Use message appears instead. This page shows a Go Back or a Go To [Previous Page Name] depending on whether the previous page exists.
 
-```{note}
-Users can only discard drafts of unlocked pages.
-```
+!!! note
+    Users can only discard drafts of unlocked pages.
 
 ![Trying to access locked pages redirects the user to a generic error page](./configuring-locked-pages/images/01.png)
 
@@ -32,9 +30,8 @@ Not all events lock a page:
 - You can propagate [Fragments](../page-fragments-and-widgets/using-fragments.md), even if a page is locked.
 - You can [import a page's page template](../adding-pages/exporting-and-importing-page-templates.md), even if a page is locked.
 
-```{tip}
-If you are working with [Publications](../../publishing-tools/publications.md), the page and its publications are locked and unlocked together.
-```
+!!! tip
+    If you are working with [Publications](../../publishing-tools/publications.md), the page and its publications are locked and unlocked together.
 
 ## Unlocking a Page
 

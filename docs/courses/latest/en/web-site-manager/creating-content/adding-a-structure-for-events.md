@@ -61,9 +61,9 @@ Now you are ready to configure the structure with the necessary fields.
 
    ![Place the Image field in the same fields group but under the Rich Text field.](./adding-a-structure-for-events/images/03.png)
 
-   ```{note}
-   You can place fields groups inside fields groups. In this exercise, if you drop the image field onto the rich field (instead of under it), you'll create a fields group with the rich text and the image fields inside the existing group.
-   ```
+   !!! note
+
+      You can place fields groups inside fields groups. In this exercise, if you drop the image field onto the rich field (instead of under it), you'll create a fields group with the rich text and the image fields inside the existing group.
 
 1. Enter `Banner Image` into the image field's Label in the configuration menu.
 
@@ -77,6 +77,8 @@ Next: make a structure for [frequently asked questions](./adding-a-structure-for
 
 ## Relevant Concepts
 
-* [Assigning Permissions to Web Content Structures and Templates](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-structures/assigning-permissions-to-structures-and-templates)
-* [Configuring Structure Fields](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields)
-* [Understanding Web Content Structures](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures)
+- [Assigning Permissions to Web Content Structures and Templates](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-structures/assigning-permissions-to-structures-and-templates)
+
+- [Configuring Structure Fields](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-structures/configuring-structure-fields)
+
+- [Understanding Web Content Structures](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures)

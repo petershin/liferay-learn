@@ -122,5 +122,6 @@ Next, [add templates to show your events and FAQs on specific display pages](./a
 
 ## Relevant Concepts
 
-* [Creating a Basic Web Content Article](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article)
-* [Exporting/Importing Widget Data](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/exporting-importing-widget-data)
+- [Creating a Basic Web Content Article](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article)
+
+- [Exporting/Importing Widget Data](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-widgets/configuring-widgets/exporting-importing-widget-data)

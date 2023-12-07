@@ -89,9 +89,9 @@ While you're still on the Templates page, make sure the top of the page reads "T
 
 1. Still on the Templates page, click *Add* (![Add icon](../../images/icon-add.png)) to create another new template.
 
-   ```{note}
-   The top of the Templates page reads "Templates for Structure: FAQs" to remind you that adding a new template still associates it with the FAQs template. If you access the Templates tab normally (without clicking *Manage Templates* for the structure), you need to set the structure manually when you're creating it.
-   ```
+   !!! note
+
+      The top of the Templates page reads "Templates for Structure: FAQs" to remind you that adding a new template still associates it with the FAQs template. If you access the Templates tab normally (without clicking *Manage Templates* for the structure), you need to set the structure manually when you're creating it.
 
 1. Download and unzip the template resource:
 
@@ -123,5 +123,6 @@ Next: [add some articles](./adding-the-sites-first-web-content.md) with your new
 
 ## Relevant Concepts
 
-* [Creating Web Content Templates](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates)
-* [Mapping Web Content Templates to Fragments](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/mapping-web-content-templates-to-fragments)
+- [Creating Web Content Templates](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/creating-web-content-templates)
+
+- [Mapping Web Content Templates to Fragments](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content/web-content-templates/mapping-web-content-templates-to-fragments)

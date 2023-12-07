@@ -28,6 +28,20 @@ Use the `type` value in your `client-extension.yaml` file to specify an object a
 type: objectAction
 ```
 
+## Object Validation Rule Client Extension
+
+Object Validation Rule client extensions define custom [validations](../objects/creating-and-managing-objects/validations.md) that you can add to object definitions. They work by defining external event handlers that bind to object entry submission events and execute when users create or update entries. When creating these client extensions, you can use any number of conditions for determining valid field inputs, but each condition must set and return the `validationCriteriaMet` key as either `true` or `false`. See [ObjectValidationRule1RestController](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot/src/main/java/com/liferay/sample/ObjectValidationRule1RestController.java) for a basic example.
+
+To use this type of client extension, add the `objectValidationRule` type to your `client-extension.yaml` file:
+
+```yaml
+type: objectValidationRule
+```
+
+Once deployed, these client extensions appear as options when adding validations to an object definition. See [Adding Custom Validations](../objects/creating-and-managing-objects/validations/adding-custom-validations.md) for more information.
+
+![These client extensions appear as options when adding validations to an object definition.](./microservice-client-extensions/images/01.png)
+
 ## Workflow Action Client Extensions
 
 {bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)`   {bdg-secondary} `Available Liferay Experience Cloud (SaaS)`

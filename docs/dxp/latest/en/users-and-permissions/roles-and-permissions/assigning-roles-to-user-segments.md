@@ -16,7 +16,7 @@ User segments are dynamically assigned user collections. If a [segment can be we
 
 > Available: Liferay DXP 7.2 SP2+
 
-Regular roles can be assigned to user segments created at the Global scope. To assign regular roles to a user segment,
+Analytics Administrator, Portal Content Reviewer, Power User, Publications User and any other regular roles you create can be assigned to user segments created at the Global scope. To assign regular roles to a user segment,
 
 1. Open the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)) and navigate to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 

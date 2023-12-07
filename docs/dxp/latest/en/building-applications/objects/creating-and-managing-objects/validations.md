@@ -15,9 +15,11 @@ validations/expression-builder-validations-reference.md
 
 {bdg-secondary}`Liferay 7.4+`
 
-Object validations set rules for determining valid field entries and are defined using either [Groovy scripts](./validations/adding-custom-validations.md#using-groovy-validations) or [Liferay expressions](./validations/adding-custom-validations.md#using-expression-builder-validations). When triggered, the validation checks for valid field entries according to defined conditions and displays an error message for invalid entries.
+Object validations set rules for determining valid field inputs and are defined using either [Groovy scripts](./validations/adding-custom-validations.md#using-groovy-validations) or [Liferay expressions](./validations/adding-custom-validations.md#using-expression-builder-validations). When triggered, the validation checks for valid field inputs according to defined conditions and displays an error message for invalid inputs.
 
 ![Add field validations to object definitions.](./validations/images/01.png)
+
+If out-of-the-box validations don't meet your needs, you can create custom validations using the `objectValidationRule` client extension. See [Microservice Client Extensions](../../client-extensions/microservice-client-extensions.md) for more information.
 
 ::::{grid} 2
 :gutter: 3 3 3 3

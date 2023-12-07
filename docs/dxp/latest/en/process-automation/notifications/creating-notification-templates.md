@@ -9,9 +9,8 @@ With Notification Templates, you can design automated email and user notificatio
 
 Currently, notification templates only support [object actions](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md). However, Commerce Channels include built-in notification template capabilities for channel events. See [Store Emails](https://learn.liferay.com/commerce/latest/en/store-management/sending-emails.html) for more information.
 
-```{important}
-To use email notifications, your instance must have a configured [mail server](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md). Once configured, you can access additional [email notification settings](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) at the instance level.
-```
+!!! important
+    To use email notifications, your instance must have a configured [mail server](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md). Once configured, you can access additional [email notification settings](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) at the instance level.
 
 If the out-of-the-box notification types don't meet your needs, you can create custom notification types using client extensions. See [Microservice Client Extensions](../../building-applications/client-extensions/microservice-client-extensions.md) for more information.
 
@@ -41,9 +40,8 @@ If the out-of-the-box notification types don't meet your needs, you can create c
 
    When sent together, emails include the full list of recipients from the To field. Sending emails separately hides the list of recipients.
 
-   ```{tip}
-   Sending emails together can facilitate transparency and collaboration, while sending emails separately can help preserve privacy.
-   ```
+   !!! tip
+       Sending emails together can facilitate transparency and collaboration. Sending emails separately can help preserve privacy.
 
 1. In Content, enter a subject, select an editor type, and create the body of the email.
 
@@ -83,9 +81,8 @@ Once created, you can use notification templates with object actions. See [Defin
 
    You can use defined terms, user names, or user roles. To add multiple recipients, separate values with a comma or space (e.g., `[%TICKET_AUTHOR_ID%]`, `[%TICKET_R_ASSIGNEE_USERID%]`).
 
-   ```{important}
-   If you set the recipients dynamically, only users with [permission to add object entries](../../building-applications/objects/understanding-object-integrations/permissions-framework-integration.md#creating-entries) can receive the notification.
-   ```
+   !!! important
+       If you set the recipients dynamically, only users with [permission to add object entries](../../building-applications/objects/understanding-object-integrations/permissions-framework-integration.md#creating-entries) can receive the notification.
 
    ![Determine recipients by entering terms, individual user names, or user roles.](./creating-notification-templates/images/10.png)
 
@@ -107,9 +104,8 @@ Consider a scenario with a custom Ticket object that is on the child side of a o
 
 Terms are available for both custom and default object fields.
 
-```{important}
-You can only reference fields for entries and users directly involved in the event that triggers the notification action. 
-```
+!!! important
+   You can only reference fields for entries and users directly involved in the event that triggers the notification action. 
 
 ### Default Terms for Current Entry
 

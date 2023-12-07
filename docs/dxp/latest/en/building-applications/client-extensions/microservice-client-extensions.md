@@ -2,6 +2,7 @@
 toc:
   - ./microservice-client-extensions/using-a-microservice-client-extension.md
   - ./microservice-client-extensions/object-action-yaml-configuration-reference.md
+  - ./microservice-client-extensions/object-validation-rule-yaml-configuration-reference.md
   - ./microservice-client-extensions/workflow-action-yaml-configuration-reference.md
   - ./microservice-client-extensions/notification-type-yaml-configuration-reference.md
 uuid: c35ace6c-9e29-4e9e-be37-b4799a8b21d5

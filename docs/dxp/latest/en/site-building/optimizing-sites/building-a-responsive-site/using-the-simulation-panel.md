@@ -44,7 +44,7 @@ You have five options when simulating the screen size, three pre-defined values 
 
 ## Simulation Panel: Page Content
 
-If you have segments or experiences in place, you can also simulate the content based on segment or experience applied. With the simulation panel, you can visualize how the experiences and segments look in a simulated screen. 
+If you have segments or experiences in place, you can also simulate the content based on segment or experience applied. With the simulation panel, you can visualize how the experiences and segments look in a simulated screen.
 
 1. In the first selector, choose *Segments* or *Experiences* under Preview By to see the available segments and experiences in the second selector.
 
@@ -54,3 +54,11 @@ If you have segments or experiences in place, you can also simulate the content 
     A message on top of the simulated content provides information about the applied segment/experience.
 
 ![Selecting different experiences using the Page Content selectors.](./using-the-simulation-panel/images/03.gif)
+
+## Related Topics
+
+[Building a Responsive Site](../building-a-responsive-site.md)
+
+[Creating and Managing User Segments ](../../personalizing-site-experience/segmentation/creating-and-managing-user-segments.md)
+
+[Creating and Managing Experiences](../../personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md)

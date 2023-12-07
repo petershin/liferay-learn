@@ -24,9 +24,9 @@ Meanwhile, the **StatefulSet** type features the following:
 | **Type** | **Purpose** | **Resource Usage and Startup Time** | **Dedicated SSD for Local Volumes** | **Access to NFS** | **Ordered Startup / Scaling** |
 | :--- | :--- | :--- | :---: | :---: | :---: |
 | **Deployment** | Stateless applications with the use of NFS | Consumes less resources and starts up faster than `StatefulSet` type | X | ✓ | X |
-| **StatefulSet** | Stateful applications | Consumes more resources and starts up slower than `Deployment` type | ✓ | ✓* | ✓ |
+| **StatefulSet** | Stateful applications | Consumes more resources and starts up slower than `Deployment` type | ✓ | ✓[^1] | ✓ |
 
-*StatefulSets can use NFS volumes, but they cannot use the same dedicated volume used for Liferay's home directory.
+[^1]: `StatefulSets` can use NFS volumes, but they cannot use the same dedicated volume used for Liferay's home directory.
 
 In general, the `Deployment` type is more lightweight and allows for faster deployments, as well as shared volumes between services (for shared files, like the document library). The `StatefulSet` type is more costly for deployments and resource usage (including the total memory and CPUs allocated for your project), but persists data through deployments and gains improved file access performance by using a dedicated SSD.
 
@@ -61,9 +61,8 @@ By default, the services in Liferay Cloud are pre-configured in order to fit a m
 }
 ```
 
-```{note}
-Change the deployment type with caution, as it may result in data loss or impacted performance.
-```
+!!! note
+    Change the deployment type with caution, as it may result in data loss or impacted performance.
 
 ## Related Topics
 

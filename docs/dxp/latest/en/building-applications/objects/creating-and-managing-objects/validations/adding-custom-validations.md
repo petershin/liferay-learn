@@ -9,6 +9,9 @@ Validations set rules for determining valid field entries. Each validation has i
 
 ![Create validations for custom and system object fields.](./adding-custom-validations/images/01.png)
 
+!!! note
+    If out-of-the-box validations don't meet your needs, you can create custom validations using the `objectValidationRule` client extension. See [Microservice Client Extensions](../../../client-extensions/microservice-client-extensions.md) for more information.
+
 To add a validation,
 
 1. Open the *Global Menu* ( ![Global Menu](../../../../images/icon-applications-menu.png) ), go to the *Control Panel* tab, and click *Objects*.
@@ -18,6 +21,8 @@ To add a validation,
 1. Go to the *Validations* tab and click *Add* ( ![Add Button](../../../../images/icon-add.png) ).
 
 1. Enter a *label* and select a validation type: *Groovy* or *Expression Builder*.
+
+   If you've deployed object validation rule client extensions to your instance, they also appear as options.
 
    ![Enter a label and select a validation type.](./adding-custom-validations/images/02.png)
 
@@ -43,9 +48,8 @@ To add a validation,
 
    When using Expression Builder, you can browse and add fields, operators, and functions to your conditions via the side panel. See [Using Expression Builder Validations](#using-expression-builder-validations) for more information.
 
-   ```{important}
-   Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
-   ```
+   !!! important
+       Groovy script validations are only available for Liferay Experience Cloud Self-Managed and Liferay DXP Self-Hosted.
 
 1. Enter a localizable *error message*. This message appears whenever the validation is triggered, and field entries do not meet one or more of the defined conditions.
 
@@ -77,9 +81,8 @@ Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/ap
 
 Expression Builder provides predefined fields, operators, and functions that you can access in the Elements side panel. Clicking an element adds it to the conditions editor. These functions return a Boolean value. See [Expression Builder Validations Reference](./expression-builder-validations-reference.md) for a complete list of provided operators and functions.
 
-```{important}
-You can only use Expression Builder validations with text, numeric, date, and Boolean field types.
-```
+!!! important
+    You can only use Expression Builder validations with text, numeric, date, and Boolean field types.
 
 ![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/08.png)
 
@@ -89,14 +92,14 @@ Liferay checks your expression for valid syntax when you click Save. If the expr
 
 This table lists available operators for Expression Builder validations:
 
-| Operator | Description |
-| :--- | :--- |
-| And ( `AND` ) | Coordinating conjunction used to indicate a dependent relationship |
-| Divided By ( `/` ) | Mathematical operator for division |
-| Minus ( `-` ) | Mathematical operator for subtraction |
-| Or ( `OR` ) | Coordinating conjunction used to indicate an independent relationship |
-| Plus ( `+` ) | Mathematical operator for addition |
-| Multiply ( `*` ) | Mathematical operator for multiplication |
+| Operator           | Description                                                           |
+|:-------------------|:----------------------------------------------------------------------|
+| And ( `AND` )      | Coordinating conjunction used to indicate a dependent relationship    |
+| Divided By ( `/` ) | Mathematical operator for division                                    |
+| Minus ( `-` )      | Mathematical operator for subtraction                                 |
+| Or ( `OR` )        | Coordinating conjunction used to indicate an independent relationship |
+| Plus ( `+` )       | Mathematical operator for addition                                    |
+| Multiply ( `*` )   | Mathematical operator for multiplication                              |
 
 ### Expression Builder Functions
 
@@ -135,24 +138,24 @@ When constructing conditions, you can use any of the object's custom or system f
 
 Below are all default fields available for custom objects:
 
-| Field | Description |
-| :--- | :--- |
-| `companyId` | Portal instance where the entry was created |
-| `createDate` | When the entry was created |
-| `externalReferenceCode` | External reference code for the entry |
-| `groupId` | Site ID in where the entry was created |
-| `lastPublishDate` | Date when the entry was last published |
-| `modifiedDate` | Date when the entry was last modified |
-| `mvccVersion` | MVCC version of the entry |
-| `objectDefinitionId` | ID of the entry's object |
-| `objectEntryId` | ID for the entry |
-| `status` | Workflow status for the entry |
-| `statusByUserId` | ID of the assigned user in Workflow |
-| `statusByUserName` | Name of the assigned user in Workflow |
-| `statusDate` | Date when the Workflow status was last updated |
-| `userId` | ID of the entry's author |
-| `userName` | User name of the entry's author |
-| `uuid` | Unique universal ID for the entry |
+| Field                   | Description                                    |
+|:------------------------|:-----------------------------------------------|
+| `companyId`             | Portal instance where the entry was created    |
+| `createDate`            | When the entry was created                     |
+| `externalReferenceCode` | External reference code for the entry          |
+| `groupId`               | Site ID in where the entry was created         |
+| `lastPublishDate`       | Date when the entry was last published         |
+| `modifiedDate`          | Date when the entry was last modified          |
+| `mvccVersion`           | MVCC version of the entry                      |
+| `objectDefinitionId`    | ID of the entry's object                       |
+| `objectEntryId`         | ID for the entry                               |
+| `status`                | Workflow status for the entry                  |
+| `statusByUserId`        | ID of the assigned user in Workflow            |
+| `statusByUserName`      | Name of the assigned user in Workflow          |
+| `statusDate`            | Date when the Workflow status was last updated |
+| `userId`                | ID of the entry's author                       |
+| `userName`              | User name of the entry's author                |
+| `uuid`                  | Unique universal ID for the entry              |
 
 System objects have their own default fields, though there is some overlap with the above chart.
 

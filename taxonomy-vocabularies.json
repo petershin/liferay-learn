@@ -1,0 +1,346 @@
+{
+	"taxonomyVocabularies": [
+		{
+			"name": "Capabilities",
+			"taxonomyCategories": [
+				{
+					"name": "Cloud"
+				},
+				{
+					"name": "Commerce"
+				},
+				{
+					"name": "Content Management System"
+				},
+				{
+					"name": "Development and Tooling"
+				},
+				{
+					"name": "Digital Asset Management"
+				},
+				{
+					"name": "DXP Self-Hosted Installation, Maintenance, and Administration"
+				},
+				{
+					"name": "Integration"
+				},
+				{
+					"name": "Personalization"
+				},
+				{
+					"name": "Platform"
+				},
+				{
+					"name": "Search"
+				},
+				{
+					"name": "Security"
+				},
+				{
+					"name": "Sites"
+				}
+			]
+		},
+		{
+			"name": "Deployment Approach",
+			"taxonomyCategories": [
+				{
+					"name": "DXP - Self Hosted"
+				},
+				{
+					"name": "Liferay Experience Cloud"
+				},
+				{
+					"name": "Liferay Experience Cloud - Self Managed"
+				}
+			]
+		},
+		{
+			"name": "Features",
+			"taxonomyCategories": [
+				{
+					"name": "A/B Testing"
+				},
+				{
+					"name": "Accessibility"
+				},
+				{
+					"name": "Add-ons and Connectors"
+				},
+				{
+					"name": "Alerts and Announcements"
+				},
+				{
+					"name": "Analytics Cloud Administration"
+				},
+				{
+					"name": "API Development"
+				},
+				{
+					"name": "Asset Analytics"
+				},
+				{
+					"name": "Asset Libraries"
+				},
+				{
+					"name": "Blogs"
+				},
+				{
+					"name": "Catalogs"
+				},
+				{
+					"name": "Categories and Tags"
+				},
+				{
+					"name": "Channels"
+				},
+				{
+					"name": "Client Extensions"
+				},
+				{
+					"name": "Cloud Platform Administration"
+				},
+				{
+					"name": "Content Configurations"
+				},
+				{
+					"name": "Content Dashboard"
+				},
+				{
+					"name": "Content Pages"
+				},
+				{
+					"name": "Content Performance"
+				},
+				{
+					"name": "Content Translations"
+				},
+				{
+					"name": "Core Frameworks"
+				},
+				{
+					"name": "Currencies"
+				},
+				{
+					"name": "Data Frameworks"
+				},
+				{
+					"name": "Data Integration"
+				},
+				{
+					"name": "Developer Tools"
+				},
+				{
+					"name": "Display Page Templates"
+				},
+				{
+					"name": "Documents and Media"
+				},
+				{
+					"name": "DXP Configuration"
+				},
+				{
+					"name": "Email Notifications and Notification Templates"
+				},
+				{
+					"name": "Experience Personalization"
+				},
+				{
+					"name": "Forms"
+				},
+				{
+					"name": "Forums and Message Boards"
+				},
+				{
+					"name": "Fragments"
+				},
+				{
+					"name": "Frameworks"
+				},
+				{
+					"name": "Frontend Client Extensions"
+				},
+				{
+					"name": "Identity Management and Authentication"
+				},
+				{
+					"name": "Information Templates"
+				},
+				{
+					"name": "Installation"
+				},
+				{
+					"name": "Inventory"
+				},
+				{
+					"name": "Java Development"
+				},
+				{
+					"name": "Javascript Development"
+				},
+				{
+					"name": "Knowledge Base"
+				},
+				{
+					"name": "Liferay Enterprise Search"
+				},
+				{
+					"name": "Localization"
+				},
+				{
+					"name": "Low-Code Custom Data Models"
+				},
+				{
+					"name": "Maintenance"
+				},
+				{
+					"name": "Master Page Templates"
+				},
+				{
+					"name": "Multi-Channel Experiences (Headless Delivery)"
+				},
+				{
+					"name": "Objects"
+				},
+				{
+					"name": "Order Processing"
+				},
+				{
+					"name": "Order Workflows"
+				},
+				{
+					"name": "Orders and Fulfillment"
+				},
+				{
+					"name": "Page Templates"
+				},
+				{
+					"name": "Pages and Composition"
+				},
+				{
+					"name": "Payment"
+				},
+				{
+					"name": "Personal Data Management"
+				},
+				{
+					"name": "Pricing"
+				},
+				{
+					"name": "Product Information"
+				},
+				{
+					"name": "Products"
+				},
+				{
+					"name": "Promotions and Discounts"
+				},
+				{
+					"name": "Publications"
+				},
+				{
+					"name": "Publishing Tools"
+				},
+				{
+					"name": "Reference"
+				},
+				{
+					"name": "Search"
+				},
+				{
+					"name": "Search Administration and Tuning"
+				},
+				{
+					"name": "Search Engine Installation and Maintenance"
+				},
+				{
+					"name": "Search Experiences and Blueprints"
+				},
+				{
+					"name": "Search Pages and Widgets"
+				},
+				{
+					"name": "SEO"
+				},
+				{
+					"name": "Service Access Policies"
+				},
+				{
+					"name": "Shipments"
+				},
+				{
+					"name": "Shipping Methods"
+				},
+				{
+					"name": "Site Administration"
+				},
+				{
+					"name": "Site Analytics"
+				},
+				{
+					"name": "Site Appearance and Design"
+				},
+				{
+					"name": "Site Navigation"
+				},
+				{
+					"name": "Social Tools and User Engagement"
+				},
+				{
+					"name": "Staging"
+				},
+				{
+					"name": "Static and Dynamic User Segments"
+				},
+				{
+					"name": "Storefronts"
+				},
+				{
+					"name": "Style Books"
+				},
+				{
+					"name": "Subscription Management"
+				},
+				{
+					"name": "Taxes"
+				},
+				{
+					"name": "Themes"
+				},
+				{
+					"name": "Traffic and Path Analysis"
+				},
+				{
+					"name": "Upgrade"
+				},
+				{
+					"name": "User Interests and Content Recommendations"
+				},
+				{
+					"name": "User Invitations"
+				},
+				{
+					"name": "User, Organization, and Account Management"
+				},
+				{
+					"name": "Users and Account Analysis"
+				},
+				{
+					"name": "Web Content and Structures"
+				},
+				{
+					"name": "Widget Pages"
+				},
+				{
+					"name": "Widgets"
+				},
+				{
+					"name": "Wiki"
+				},
+				{
+					"name": "Workflow"
+				}
+			]
+		}
+	]
+}

@@ -47,6 +47,28 @@ You can also use the autocomplete feature to add variables to your template. It 
 
 You can also embed same-type templates into other templates. For example, suppose you have an existing Wiki widget template and want to create another Wiki widget template. Instead of starting from scratch, you can import the existing Wiki widget template into your new one and build from it. In other words, you can use widget templates as generic templates to reuse code imported by Velocity or FreeMarker templates in the system.
 
+## Calling Headless APIs in the Template Editor
+
+You can call Liferay's [Headless](../../../../../headless-delivery/using-liferay-as-a-headless-platform.md) API services directly in the template editor. Use the `restClient` object with the relative URL of an API endpoint to inject Headless resources into your templates. 
+
+```{note}
+You can only call GET endpoints with the `restClient` object.
+```
+
+For example, you can use `restClient` to retrieve a site's blog postings and then print out their headlines with the following template:
+
+```
+<#assign 
+	blogPostings = restClient.get("/headless-delivery/v1.0/sites/{siteId}/blog-postings").items
+/>
+
+<#list blogPostings as blogPosting>
+	<h1>${blogPosting.headline}</h1>
+</#list>
+```
+
+Use the [API Explorer](../../../../../headless-delivery/consuming-apis/consuming-rest-services.md) to find API endpoints and schemas for Headless resources.
+
 ## Configuring Widget Templates
 
 After you've saved your widget template, you can manage it through its Actions button (![Actions Button](../../../../../images/icon-actions.png)). This provides several options:

@@ -157,6 +157,52 @@ The following are examples of the tutorial's cURL commands.
    :language: bash
 ```
 
+## Managing Object Tags and Categories
+
+You can use the Object APIs to read, set, and update tags and categories for object entries that have categorization enabled. See [Tags and Categories](../../../../content-authoring-and-management/tags-and-categories.md) for more information. 
+
+Tags are represented by the `keywords` property. You can set or update tags by adding a `keywords` array to the body of any POST, PUT, or PATCH request.
+
+```json
+"keywords" : [
+   "tag1", "tag2", "tag3"
+]
+```
+After making a GET request for an object entry, you can read its tags in the same `keywords` array.
+
+You can set and update categories for an object entry by adding the `taxonomyCategoryIds` array to any POST, PUT, or PATCH request. 
+
+```json
+"taxonomyCategoryIds" : [
+   1234, 5678
+]
+```
+
+```note
+You must have an existing vocabulary of categories to assign categories to an object entry. See [Defining Categories and Vocabularies for Content](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) for more information.
+```
+
+After making a GET request for an object entry, you can read its categories in the `taxonomyCategoryBriefs` array, which contains the `taxonomyCategoryId` and `taxonomyCategoryName`  for each assigned category.
+
+```json
+"taxonomyCategoryBriefs": [
+   {
+      "taxonomyCategoryId": 1234,
+      "taxonomyCategoryName": "Category A"
+   },
+   {
+      "taxonomyCategoryId": 5678,
+      "taxonomyCategoryName": "Category B"
+   }
+]
+```
+
+You can filter object entries by `keywords` and `taxonomyCategoryIds` following the rules described in [API Query Parameters](../../../../headless-delivery/consuming-apis/api-query-parameters.md). Example filter strings may look like the following:
+
+- `keywords/any(k:k in ('tag1','tag2'))` will retrieve all object entries tagged with `tag1` or `tag2`.
+
+- `taxonomyCategoryIds/any(k:k in (1234,5678))` will retrieve all entries linked to the category with ID `1234` or `5678`.
+
 ## Related Topics
 
 * [Using Batch APIs](./using-batch-apis.md)

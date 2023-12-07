@@ -19,9 +19,9 @@ These are the configurable fragment types available to implement:
 - `colorPalette`
 - `navigationMenuSelector` (Available Liferay 7.4+)
 
-```{note}
-Configuration values inserted into the FreeMarker context honor the defined `dataType` value specified in the JSON file. For example, if the `dataType` is String, `configuration.[name-value]?is_string` is `true`.
-```
+!!! note
+
+    Configuration values inserted into the FreeMarker context honor the defined `datatype` value specified in the JSON file. For example, if the `dataType` is String, `configuration.[name-value]?is_string` is `true`.
 
 ## Text Configuration
 
@@ -123,9 +123,9 @@ The color picker JSON configuration creates a flexible color selector where any 
 
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/04.png)
 
-```{note}
-If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette-configuration) configurations.
-```
+!!! note
+
+    If the theme you are using has no [token definitions for style books](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md), color picker configurations on the page are replaced with [color palette](#color-palette configuration) configurations.
 
 This JSON configuration creates a color picker field called `headingColor`:
 
@@ -308,9 +308,9 @@ If you need access to specific portions of the content, you can also access the 
 </div>
 ```
 
-```{note}
-Placing a fragment with an item selector configuration into a collection display widget automatically maps the collection item as the selected content.
-```
+!!! note
+
+    Placing a fragment with an item selector configuration into a collection display widget automatically maps the collection item as the selected content.
 
 ## URL Configuration
 
@@ -408,9 +408,9 @@ This is useful when you want a fragment that has an embedded video by default. T
 
 ![With the video selector you can include external videos in fragments](./fragment-configuration-types-reference/images/07.png)
 
-```{note}
-The `videoSelector` type is compatible with the [external video](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) fragment, but not with the [video URL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) fragment.
-```
+!!! note
+
+    The `videoSelector` type is compatible with the [external video](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md#external-video) fragment, but not with the [video URL](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) fragment.
 
 ## Collection Selector
 
@@ -418,9 +418,9 @@ The `videoSelector` type is compatible with the [external video](../../../creati
 
 Using the `collectionSelector` configuration type, you can develop a fragment that includes a [collection](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) or [collection provider](../../../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md). You can use the `collectionSelector` with both manual and dynamic collections.
 
-```{note}
-Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
-```
+!!! note
+
+    Developers can use collection providers to create specific collections with more advanced criteria. To learn more, read the information about [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) in the [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) developer documentation.
 
 The following JSON configuration shows how to use the `collectionSelector`:
 
@@ -488,9 +488,9 @@ Using this sample configuration, collections including both web content and blog
 
 ![A collection including web content and blog entries corresponds to the asset type.](./fragment-configuration-types-reference/images/09.png)
 
-```{tip}
-In addition to the `itemType`, you can specify the `itemSubtype` in the configuration.
-```
+!!! tip
+
+    In addition to the `itemType`, you can specify the `itemSubtype` in the configuration. The `itemSubtype` corresponds to the asset `classPK`.
 
 ### Defining a Maximum Number of Returned Collection Items
 
@@ -587,7 +587,8 @@ These are the available variables for the navigation menu selector configuration
 | `rootLayoutType`  | Specifies how to interpret the root layout in relation to the current page (absolute, relative, or select). |
 
 !!! tip
-    Import the [`navigation-menu`](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference/navigation-menu.zip) fragment example into a fragment set to get a better look at the `navigationMenuSelector` type usage. To learn more about importing a fragment, see [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md)
+
+    Import the [`navigation-menu`](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference/navigation-menu.zip) fragment example into a fragment set to get a better look at the `navigationMenuSelector` type usage. To learn more about importing a fragment, see [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
 
 <!-- There is still no article dedicated exclusively to exporting/importing fragments. It would be easier to just point to one. A section could probably be added to managing-fragments.md and this reference should be replaced. - Eric -->
 

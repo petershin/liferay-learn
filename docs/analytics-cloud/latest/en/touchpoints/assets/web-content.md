@@ -21,7 +21,7 @@ The number of views per day (or hour, if yesterday or last 24 hours are selected
 
 ## Audience
 
-The audience report uses charts to present information about the audience interaction with the asset. It answers these questions:
+The Audience report uses charts to present information about the audience interaction with the asset. It answers these questions:
 
 * How many users are interacting with my content?
 * Of these users, how many are known or anonymous?
@@ -32,9 +32,8 @@ Here are the charts in the audience report:
 
 **Views:** A donut chart that presents the percentage of total unique visitors who are known or anonymous. The center shows the total number of unique visitors. Tooltips show the number of users for that section (e.g, the number of known or anonymous users).
 
-```{note}
-Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
-```
+!!! note
+    Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
 
 **Segmented Views:** A donut chart that presents the percentage of known individuals who belong or do not belong to one or more Analytics Cloud segments. The center shows the total number of known individuals. Note that only the known individuals are used to calculate this chart.
 
@@ -46,13 +45,13 @@ Note that the segmentation data presented about your audience is based on an ind
 
 ## Views by Location
 
-The map in the views by location panel shows the number of views by country in the selected time period.
+The map in the Views by Location panel shows the number of views by country in the selected time period.
 
 ![A map chart identifies users by geography.](web-content/images/04.png)
 
 ## Views by Technology
 
-View a stacked bar graph of the Page's views by operating system (grouped by device type) in the default _Devices_ tab.
+View a stacked bar graph of the page's views by operating system (grouped by device type) in the default Devices tab.
 
 ![Users can also be viewed by device.](web-content/images/05.png)
 
@@ -60,6 +59,6 @@ Click _Browsers_ to see a donut chart displaying up to the top eight web browser
 
 ## Asset Appears On
 
-The asset appears On table includes a page name and URL. Like any page data in Analytics Cloud, only pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page analytics view of the page. From there you can click the URL to the actual page.
+The asset appears On table includes a page name and URL. Like any page data in Analytics Cloud, only pages site visitors interacted with in some way are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page analytics view of the page. From there you can click the URL to the actual page.
 
 ![A table lists where the assets appear.](web-content/images/06.png)

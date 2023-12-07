@@ -9,7 +9,7 @@ Analytics Cloud gives you important insights into how engaged readers are with y
 
 ![Analytics data for blog entries can be viewed in a table format.](blogs/images/01.png)
 
-A list of your site's blog posts are presented along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+A list of your site's blog posts is presented along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
 ## Visitor Behavior
 
@@ -31,7 +31,7 @@ The views plot shows the trend-line for the number of times a blogs entry was vi
 
 ### Reading Time
 
-Reading time is the average reading time per view of a blogs entry. The daily (or hourly, if yesterday or last 24 hours are selected) average reading time per view is plotted for the time period.
+Reading time is the average reading time per view of a blog entry. The daily (or hourly, if yesterday or last 24 hours are selected) average reading time per view is plotted for the time period.
 
 ### Shares
 
@@ -39,11 +39,11 @@ The count of total shares per day is plotted to establish the shares trend-line.
 
 ### Comments
 
-The comments trend-line plots the total number of comments on a blogs entry per day (or hour, if yesterday or last 24 hours are selected) over the selected time period.
+The comments trend-line plots the total number of comments on a blog entry per day (or hour, if yesterday or last 24 hours are selected) over the selected time period.
 
 ### Rating
 
-Readers can rate blogs. Whether the rating is a simple thumb up/thumbs down, or a stars rating (0-5 stars), the rating in Analytics Cloud lets you compare blog posts to each other. A blog post announcing free swag may have a higher rating than a blog post announcing that prices are increasing. The rating is reported as a number out of 10.
+Readers can rate blogs. Whether the rating is a simple thumbs up/thumbs down or a stars rating (0-5 stars), you can use the rating in Analytics Cloud to compare blog posts. A blog post announcing free swag may have a higher rating than a blog post announcing that prices are increasing. The rating is reported as a number out of 10.
 
 ## Audience
 
@@ -58,9 +58,8 @@ Here are the charts in the Audience report:
 
 **View:** A donut chart that presents the percentage of total unique visitors who are known or anonymous. The center shows the total number of unique visitors. Tooltips show the number of users for that section (e.g, the number of known or anonymous users).
 
-```{note}
-Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
-```
+!!! note
+    Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
 
 **Segmented Views:** A donut chart that presents the percentage of individuals who belong or do not belong to one or more Analytics Cloud segments. The center shows the total number of known individuals. Tooltips show the number of known individuals for that section (e.g. the number of known individuals belonging to one or more segments).
 
@@ -72,7 +71,7 @@ Note that the segmentation data presented about your audience is based on an ind
 
 ## Views by Location
 
-The map in the views by location panel shows the number of views by country in the selected time period.
+The map in the Views by Location panel shows the number of views by country in the selected time period.
 
 ![A map chart identifies users by geography.](blogs/images/04.png)
 
@@ -86,6 +85,6 @@ Click _Browsers_ to see a donut chart displaying up to the top eight web browser
 
 ## Asset Appears On
 
-The asset appears on table includes a page name and URL. Like any page data in Analytics Cloud, only pages that were interacted with in some way by site visitors are tracked and reported. It's important to note that the link doesn't take you to the actual Page with the asset on it. Instead, it leads to the page analytics view of the page. From there you can click the URL to the actual page.
+The Asset Appears On table includes a page name and URL. Like any page data in Analytics Cloud, only pages site visitors interacted with in some way are tracked and reported. It's important to note that the link doesn't take you to the actual page with the asset on it. Instead, it leads to the page's analytics view. From there you can click the URL to the actual page.
 
 ![A table lists where the assets appear.](blogs/images/06.png)

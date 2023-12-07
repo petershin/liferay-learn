@@ -11,9 +11,9 @@ Analytics Cloud does the following for pages:
 
 To view analytics on a specific page,
 
-1. Click _Sites_ in the left navigation menu. Click the _Pages_ tab. A listing of your site's pages is shown.
+1. Click _Sites_ in the left navigation menu. Click the _Pages_ tab. A listing of your site's pages appears.
 
-   Note, to download this list of site pages as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+   To download this list of site pages as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
 1. Select a page from the list to see detailed analytics.
 

@@ -7,7 +7,7 @@ Documents and media files are assets you want site users to look at or download.
 
 ![Analytics data for documents can be viewed in a table format.](documents-and-media/images/01.png)
 
-A list of your site's documents and media are presented along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+A list of your site's documents and media appear along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
 ## Visitor Behavior
 
@@ -15,20 +15,20 @@ The Overview tab of an asset's detail presents several data presentations. To do
 
 The first chart, called visitor behavior, contains four important metrics:
 
-* Total Downloads
-* Total Previews
-* Total Comments
-* Average Rating
+1. Total Downloads
+1. Total Previews
+1. Total Comments
+1. Average Rating
 
 ![User engagement with blog entries can be viewed in a chart over time.](documents-and-media/images/02.png)
 
 ### Downloads
 
-The downloads trend-line shows the total number of downloads per day (or hour, if yesterday or last 24 hours are selected) over the selected time period.
+The Downloads trend-line shows the total number of downloads per day (or hour, if Yesterday or Last 24 Hours are selected) over the selected time period.
 
 ### Previews
 
-Documents and media files can be previewed. Even if not ultimately downloaded, previewing shows interaction with the file and is therefore an important metric. The previews trend line shows the total number of previews per day (or hour, if yesterday or last 24 hours are selected) for the selected time period.
+Documents and Media files can be previewed. Even if not ultimately downloaded, previewing shows interaction with the file and is therefore an important metric. The previews trend line shows the total number of previews per day (or hour, if yesterday or last 24 hours are selected) for the selected time period.
 
 ### Comments
 
@@ -36,7 +36,7 @@ Comments can be enabled on documents and media files. If enabled, the comments t
 
 ### Rating
 
-Ratings can be enabled on documents and media. Whether the rating is a simple thumb up/thumbs down, or a stars rating (0-5 Stars), the rating in Analytics Cloud is a calculation that lets you compare how users evaluate the site's documents and media files.
+Ratings can be enabled on documents and media. Whether the rating is a simple thumbs up/thumbs down or a stars rating (0-5 Stars), you can use the rating to compare how users evaluate the site's documents and media files.
 
 ## Audience
 
@@ -51,9 +51,8 @@ Here are the charts in the audience report:
 
 **Downloads:** A donut chart that presents the percentage of total unique visitors who are known or anonymous. The center shows the total number of unique visitors. Tooltips show the number of users for that section (e.g, the number of known or anonymous users).
 
-```{note}
-Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
-```
+!!! note
+    Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
 
 **Segmented Downloads:** A donut chart that presents the percentage of known individuals who belong or do not belong to one or more Analytics Cloud segments. The center shows the total number of known individuals. Tooltips show the number of known individuals for that section (e.g, the number of known individuals belonging to one or more segments).
 

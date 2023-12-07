@@ -7,18 +7,18 @@ uuid: ea56f3d5-74f0-4eb3-84b5-0f4d9ef8d4fe
 
 ![Forms metrics are presented in a table with submission, view, abandonment, and completion time statistics.](forms/images/01.png)
 
-A list of your site's forms are presented along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+A list of your site's forms appears along with different metrics. To download this data as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
 ## Visitor Behavior
 
-As with all asset types, the visitors behavior chart is at the top of its page and provides a line graph with several trend lines. To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+As with all asset types, the Visitors Behavior Chart is at the top of its page and provides a line graph with several trend lines. To download this dashboard view as a PDF file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
 The first chart, called visitor behavior, contains four important metrics:
 
-* Total Submissions
-* Total Views
-* Abandonment rate
-* Average Completion Time
+1. Total Submissions
+1. Total Views
+1. Abandonment rate
+1. Average Completion Time
 
 ![Behavior is charted using a line graph to identify trends across a variety of metrics.](forms/images/02.png)
 
@@ -32,7 +32,7 @@ The submissions trend line shows the number of times the submit button was click
 
 Views is a common metric among all assets (and Pages).
 
-Useful with the time period filter, views is the number of views for a form in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. So over the last 30 days, one visitor (IP address) could come back to the page 100 times. That means there are 100 page views, but only one visitor (assuming the same device was used to access the Page each time). However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the page passes before the user interacts with the page again.
+Useful with the time period filter, Views is the number of views for a form in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. So over the last 30 days, one visitor (IP address) could come back to the page 100 times. That means there are 100 page views, but only one visitor (assuming the same device was used to access the page each time). However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the page passes before the user interacts with the page again.
 
 ### Abandonment
 
@@ -40,26 +40,25 @@ Abandonment is the daily (or hourly if yesterday or last 24 hours is selected) p
 
 ### Completion Time
 
-Completion time is a daily average (or hourly if yesterday or last 24 hours is selected) of the time it took for form users to go from their first interaction with the form until they hit the submit button.
+Completion time is a daily average (or hourly if Yesterday or Last 24 Hours is selected) of the time it took for form users to go from their first interaction with the form until they hit the submit button.
 
-The time series metrics displayed in the visitors behavior chart are paramount to understanding asset performance over time. But there's more to asset analytics.
+The time series metrics displayed in the Visitors Behavior Chart are paramount to understanding asset performance over time. But there's more to asset analytics.
 
 ## Audience
 
-The audience report uses charts to present information about the audience interaction with the asset. It answers these questions:
+The Audience report uses charts to present information about the audience interaction with the asset. It answers these questions:
 
 * How many users are interacting with my content?
 * Of these users, how many are known or anonymous?
 * Of the known users who interacted with my content, how many belong to Analytics Cloud Segments?
 * Of the users in Segments, what are the top 15 segments?
 
-Here are the charts in the audience report:
+Here are the charts in the Audience report:
 
 **Submissions:** A donut chart that presents the percentage of total unique visitors who are known or anonymous. The center shows the total number of unique visitors. Tooltips show the number of users for that section (e.g, the number of known or anonymous users).
 
-```{note}
-Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
-```
+!!! note
+    Individuals are considered known when their email addresses are matched at login with user data synced with Analytics Cloud. When new users register on your site, it may take up to two hours for their data to sync with Analytics Cloud and appear as known individuals.
 
 **Segmented Submissions:** A donut chart that presents the percentage of known individuals who belong or do not belong to one or more Analytics Cloud segments. The center shows the total number of known individuals. Tooltips show the number of known individuals for that section (e.g. the number of known individuals belonging to one or more segments).
 
@@ -77,7 +76,7 @@ The map in this panel shows the number of submissions by country in the selected
 
 ## Submissions by Technology
 
-View a stacked bar graph of the page's submissions by operating system (grouped by device type) in the default _Devices_ tab.
+View a stacked bar graph of the page's submissions by operating system (grouped by device type) in the default Devices tab.
 
 ![Forms users can also be viewed by technology.](forms/images/05.png)
 

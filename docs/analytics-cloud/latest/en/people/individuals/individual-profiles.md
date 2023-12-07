@@ -9,7 +9,7 @@ Here's how to view Individual profiles:
 
 1. Click _Individuals_ in the left navigation panel. Click the _Known Individuals_ tab. A listing of individual users appears, so you can page through, search for, and select them to learn more about them.
 
-    Note, to download this list of individuals as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
+   To download this list of individuals as a CSV file, click _Download Report_. See [downloading reports](../../reference/downloading-reports.md) to learn more.
 
 1. Select an Individual to view these things about the person:
 

@@ -22,7 +22,7 @@ easy-oauth-application-user-agent:
 
 The required `resourcePath` property defines the Object Validation Rule handler's location. Point to any implementation of an Object Validation Rule handler that's accessible as an external application (for example, a Java Spring Boot application). This value is combined with the `homePageURL` value of the associated OAuth2 application profile to form the complete URL.
 
-Object Validation Rule client extensions require OAuth2 application profiles to secure requests triggered by them in Liferay. The `client-extension.yaml` defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
+Object Validation Rule client extensions require OAuth2 application profiles to secure the requests they trigger in Liferay. The `client-extension.yaml` defines an additional [OAuth user agent client extension](../configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md) for this profile, and the `oAuth2ApplicationExternalReferenceCode` property references that client extension's `key` value.
 
 The [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) demonstrates how to use an Object Validation Rule client extension with Spring Boot application.
 

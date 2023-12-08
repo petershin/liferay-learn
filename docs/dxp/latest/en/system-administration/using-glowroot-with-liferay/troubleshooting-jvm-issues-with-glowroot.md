@@ -27,7 +27,7 @@ If a thread leak is suspected, a possible indicator is a `java.lang.OutOfMemory`
 
 A database deadlock occurs when two or more processes, or transactions, are waiting for each other to release a resource.
 
-Check the trace of a transaction in Glowroot for slow transactions. Click the _Transactions_ tab. Under the web transactions, click _Slow traces_. Use the chart to identify any transactions that are taking too long.
+Check the trace of a transaction in Glowroot for slow transactions. Click the _Transactions_ tab. Under the transactions panel, click _Slow traces_. Use the chart to identify any transactions that are taking too long.
 
 ![Click slow traces to see transactions that take a long time.](./troubleshooting-jvm-issues-with-glowroot/images/03.png)
 
@@ -36,3 +36,9 @@ Check the trace of a transaction in Glowroot for slow transactions. Click the _T
 A database connection leak occurs when a program or application fails to properly release or close a database connection after it is no longer needed. This can lead to the depletion of available database connections and cause a slowdown of the system.
 
 In Glowroot, click the _Errors_ tab to check for any connection pool timeout errors. Or check the status of the database connections. Click the _JVM_ tab and click _Mbean tree_ in the left navigation. Scroll down to the `com.zaxxer.hikari` section and click `Pool (HikariPool-1)`. See the number of active connections and threads awaiting connections. You may need to increase the pool size depending on your use cases.
+
+To add the Hikari connection pool to the gauges dashboard, navigate to _Configuration_ &rarr; _Gauges_. Click _Add new_ and search for `com.zaxxer.hikari:type=Pool (HikariPool-1)`. Select all the Mbean attributes and click _Add_.
+
+![Add the Hikari connection pool to the gauges dashboard.](./troubleshooting-jvm-issues-with-glowroot/images/04.png)
+
+Click the _JVM_ tab and click _Gauges_ in the left menu. The Hikari connection pool can now be monitored on the gauges dashboard.

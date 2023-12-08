@@ -27,25 +27,23 @@ You have to sync sites to a property in order to see their data on Analytics Clo
 
 1. Verify that your Liferay DXP instance is syncing with Analytics Cloud by viewing *Instance Settings* &rarr; *Analytics Cloud* in your Liferay DXP instance. The message `Your DXP instance is connected to Analytics Cloud` confirms that your Liferay DXP instance is correctly connected to Analytics Cloud.
 
-    ```{important}
-    If you do not see the message `Your DXP instance is connected to Analytics Cloud.`, please review [Connecting Liferay DXP Sites to Analytics Cloud](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
-    ```
+    !!! important
+        If you do not see the message `Your DXP instance is connected to Analytics Cloud.`, please review [Connecting Liferay DXP Sites to Analytics Cloud](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
-1. If your Liferay instance is connected to Analytics Cloud but is not assigned a property, click the _Next_ button. 
+1. If your Liferay instance is connected to Analytics Cloud but is not assigned a property, click _Next_. 
 
     ![Select the property to sync your sites with.](scoping-sites-and-individuals-using-properties/images/03.png)
 
-    Click the _Assign_ button next to the property you wish to sync your sites with. A new window will pop open.
+    Click _Assign_ next to the property you wish to sync your sites with. 
 
-1. A list of your sites is displayed. Select the sites you wish to assign to the property.
+1. A list of your sites appears. Select the sites you wish to assign to the property.
 
     ![Select the sites to assign to the property.](scoping-sites-and-individuals-using-properties/images/04.png)
 
     Click _Assign_. Then click _Next_ to finish the connection process.. 
 
-    ```{important}
-    You cannot sync a DXP site with multiple properties. If one of your sites is already synced to another property. It will be greyed out here, and not selectable.
-    ```
+    !!! important
+        You cannot sync a DXP site with multiple properties. If one of your sites is already synced to another property, it is disabled and not selectable.
 
 ## Syncing Contacts to a Property
 

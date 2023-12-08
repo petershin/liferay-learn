@@ -97,9 +97,8 @@ Use content display fragments to display site content individually or as part of
 | Collection Filter (Available 7.4+) | Adds an element for filtering a collection display using a vocabulary or category.                                                                                                                                                                                                                                                                                                                                |
 | Content Ratings                    | Adds an element for rating a content item.                                                                                                                                                                                                                                                                                                                                                                        |
 
-    ```{note}
-    Collection Filter fragments used in Collection Display fragments only work if mapped to object collection providers or blueprint collection providers.
-    ```
+    !!! note
+        Collection Filter fragments used in Collection Display fragments only work if mapped to object collection providers or blueprint collection providers.
 
 <!--| Knowledge Base Article Navigation (Available 7.4 U_+/GA_+) | I moved this comment because it was breaking the admonition. It was on top of it originally. |-->
 

@@ -575,22 +575,19 @@ To use FreeMarker variables in the fragment HTML editor, start by setting `navig
 ]
 ```
 
-Now, you can access the FreeMarker variables, which can be found under `[name]Object`. In this example, `sourceObject.navItems` would return the `navItems` list located under `sourceObject`. The object is called `sourceObject` since `source` was the name used in the configuration.
+Now you can access the FreeMarker variables, which can be found under `[name]Object`. In this example, `sourceObject.navItems` would return the `navItems` list located under `sourceObject`. The object is called `sourceObject` since `source` was the name used in the configuration.
 
 These are the available variables for the navigation menu selector configuration type:
 
 | Variable          | Use                                                                                                         |
-|:------------------|:------------------------------------------------------------------------------------------------------------|
-| `branchNavItems`  | Represents the hierarchical strcuture of the navigation menu.                                               |
+|:-|:-|
+| `branchNavItems`  | Represents the hierarchical structure of the navigation menu.                                               |
 | `navItems`        | A list of `NavItem` objects, each representing a navigation item to be displayed.                           |
 | `rootLayoutLevel` | Defines the level in the hierarchy.                                                                         |
 | `rootLayoutType`  | Specifies how to interpret the root layout in relation to the current page (absolute, relative, or select). |
 
 !!! tip
-
     Import the [`navigation-menu`](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference/navigation-menu.zip) fragment example into a fragment set to get a better look at the `navigationMenuSelector` type usage. To learn more about importing a fragment, see [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md).
-
-<!-- There is still no article dedicated exclusively to exporting/importing fragments. It would be easier to just point to one. A section could probably be added to managing-fragments.md and this reference should be replaced. - Eric -->
 
 ## Related Topics
 

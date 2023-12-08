@@ -5,6 +5,13 @@ uuid: 9b2c9b01-3a91-48da-b947-8225fc78f9b2
 
 Here are all of the breaking changes for Liferay 7.4, starting with the first quarterly release (2023 Q3). These changes break or significantly alter existing functionality or code structure. As the product changes and improves, we try our best to minimize these disruptions, but sometimes they are unavoidable.
 
+<!-- So what's your vision for this? This looks different from what I was thinking. My expectation was to see an H2 heading like this: 
+        ## 7.4 2023 Q3
+
+        (other stuff here)
+
+    That way, the quarterly releases (and I think this is for Q4, not Q3), all get listed on the right side in Learn, enabling people to jump right to the release (with the latest release on top) they need to see. -Rich -->
+
 ## Changes in Liferay DXP
 
 Here is a list of changes that break or significantly alter existing functionality within Liferay.
@@ -17,7 +24,11 @@ Here is a list of changes that break or significantly alter existing functionali
 
 Here are changes to Liferay's individual source code files that can break other code leveraging them, in chronological order.
 
+<!-- I'm not sure the document in liferay-portal is going to be used anymore. -Rich --> 
+
 Read more about 7.4 Breaking Changes directly in the [Liferay source code](https://github.com/liferay/liferay-portal/blob/master/readme/BREAKING_CHANGES.markdown). 
+
+<!-- So you converted Alberto's HTML back into Markdown? Did you use something like Pandoc, or did you do it manually? -Rich --> 
 
 ### Modules
 

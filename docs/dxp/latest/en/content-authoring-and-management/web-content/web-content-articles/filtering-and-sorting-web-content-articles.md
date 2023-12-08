@@ -26,7 +26,7 @@ When you filter by navigation, you filter all the web content you have permissio
 | Recent        | Assets that have recently been modified. You cannot use the [order by](#order-by) option with this filter. |
 | Structures    | Filters web content articles based on web content structure. |
 | Categories   | Filters web content based on its category. |
-| Tags             | Filters web content based on any tags assigned to it.                                              |
+| Tags             | Filters web content based on its assigned tags.                                              |
 
 ## Filter by Status
 

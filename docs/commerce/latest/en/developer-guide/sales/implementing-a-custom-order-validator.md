@@ -9,9 +9,9 @@ An order validator is a class that validates items in a customer's cart when pro
 
 The order validator has validation logic for both adding a product to the cart and proceeding to a new checkout step. There are three parts:
 
-* [Validation logic for adding a product to cart.](#validation-logic-for-adding-a-product-to-cart)
-* [Validation logic for proceeding to checkout.](#validation-logic-for-proceeding-to-checkout)
-* [Language keys added to `Language.properties`.](#language-keys-added-to-languageproperties)
+1. [Validation logic for adding a product to cart.](#validation-logic-for-adding-a-product-to-cart)
+1. [Validation logic for proceeding to checkout.](#validation-logic-for-proceeding-to-checkout)
+1. [Language keys added to `Language.properties`.](#language-keys-added-to-languageproperties)
 
 The two `validate` methods are where you define the custom validation logic for the order validator. This example adds logic to reject orders with more than ten of an item over a certain price.
 

@@ -9,7 +9,7 @@ uuid: e2304f66-dc1a-4a87-96f5-dbec9d0e90ba
 ---
 # Site Navigation
 
-Liferay DXP provides extensive support for customizing your site's navigation and powerful tools to make content easy to access. Here, you can learn how to use these tools, such as widgets and navigation menu elements, the concept of page hierarchies, how to navigate through them quickly using navigation menus, and more so your content is accessible and ready to be consumed.
+Liferay DXP separates your site's navigation menus from its page hierarchy to give you the flexibility you need, along with powerful tools to make content easy to access. Here, you can learn how to manage page hierarchies, use the Navigation Menus application, configure menu displays, and more, so you can make your content accessible and easy to consume.
 
 ```{toctree}
 :maxdepth: 3

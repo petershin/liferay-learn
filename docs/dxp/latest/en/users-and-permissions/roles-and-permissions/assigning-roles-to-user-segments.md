@@ -14,23 +14,23 @@ User segments are dynamically assigned user collections. If a [segment can be we
 
 ## Assigning a Regular Role to a User Segment
 
-> Available: Liferay DXP 7.2 SP2+
+{bdg-secondary}`Liferay DXP 7.2 SP2+`
 
-Analytics Administrator, Portal Content Reviewer, Power User, Publications User and any other regular roles you create can be assigned to user segments created at the Global scope. To assign regular roles to a user segment,
+Analytics Administrator, Portal Content Reviewer, Power User, Publications User and any other regular roles you create can be assigned to user segments created at the global scope. To assign regular roles to a user segment,
 
 1. Open the *Product Menu* (![Product Menu](../../images/icon-product-menu.png)) and navigate to *Control Panel* &rarr; *Users* &rarr; *Roles*.
 
-1. Click Actions (![Actions](../../images/icon-actions.png)) next to the regular role and select *Edit*.
+1. Click *Actions* (![Actions](../../images/icon-actions.png)) next to the regular role and select *Edit*.
 
-    ![Edit a role to assign the user segment to it.](./assigning-roles-to-user-segments/images/01.png)
+   ![Edit a role to assign the user segment to it.](./assigning-roles-to-user-segments/images/01.png)
 
-1. Select *Assignees* &rarr; *Segments* tab, and click (![Add button](../../images/icon-add.png)) to select a user segment.
+1. Select *Assignees* &rarr; *Segments* tab, and click *Add* (![Add button](../../images/icon-add.png)) to select a user segment.
 
-    ![Go to the Segments tab under Assignees to assign the role.](./assigning-roles-to-user-segments/images/02.png)
+   ![Go to the Segments tab under Assignees to assign the role.](./assigning-roles-to-user-segments/images/02.png)
 
-1. Check the box next to an existing user segment and click *Add* to assign the role to it. If the user segment doesn't exist, click (![Add button](../../images/icon-add.png)) to create a new user segment.
+1. Check the box next to an existing user segment and click *Add* to assign the role to it. If the user segment doesn't exist, click *Add* (![Add button](../../images/icon-add.png)) to create a new user segment.
 
-    ![Check the box next to the user segment you want to assign the role to.](./assigning-roles-to-user-segments/images/03.png)
+   ![Check the box next to the user segment you want to assign the role to.](./assigning-roles-to-user-segments/images/03.png)
 
 The selected user segment(s) appear(s) in the list of assignees for the role.
 
@@ -38,13 +38,13 @@ The selected user segment(s) appear(s) in the list of assignees for the role.
 
 ## Assigning a Site Role to a User Segment
 
-> Available: Liferay DXP 7.2 SP3+
+{bdg-secondary}`Liferay DXP 7.2 SP3+`
 
 [Site roles](./understanding-roles-and-permissions.md) can be assigned to segments, with two exceptions: Site Administrator and Site Owner.
 
 1. Open the Product Menu (![Product Menu](../../images/icon-product-menu.png)) and navigate to *People* &rarr; *Segments*.
 
-1. Open the segment's actions (![Actions](../../images/icon-actions.png)) and click *Assign Site Roles*.
+1. Open the segment's *Actions* (![Actions](../../images/icon-actions.png)) and click *Assign Site Roles*.
 
 1. Assign site roles to the segment, then click *Add*.
 

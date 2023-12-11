@@ -111,7 +111,7 @@ For the HTTP endpoints, replace `relationshipName` with the name of your relatio
 For site-scoped objects, the ERC endpoint includes the `/scope/{scopeKey}` prefix (e.g., `/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`). External reference code endpoints are not available for system objects.
 
 ```{tip}
-In addition to the dedicated relationship APIs, you can use the `nestedFields` query parameter with the object's other GET APIs to return an entry with its related entries. When using this parameter, you must provide the name of the relationship you want to include in the output (e.g., `nestedFields=ticketAssignee`). See [Using `nestedFields` to Query Related Entries](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) for more information and an introductory tutorial.
+In addition to the dedicated relationship APIs, you can use the `nestedFields` query parameter with the object's other GET APIs to return an entry with its related entries. When using this parameter, you must provide the name of the relationship you want to include in the output (e.g., `nestedFields=ticketAssignee`). See [Using nestedFields to Query Related Entries](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) for more information and an introductory tutorial.
 ```
 
 ## Standalone Action REST APIs

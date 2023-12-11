@@ -1,7 +1,7 @@
 ---
 uuid: 5febb86a-2b56-454d-ae87-81757e82fa00
 ---
-# Using `nestedFields` to Query Related Entries
+# Using nestedFields to Query Related Entries
 
 {bdg-secondary}`Liferay 7.4 U69+/GA69+`
 

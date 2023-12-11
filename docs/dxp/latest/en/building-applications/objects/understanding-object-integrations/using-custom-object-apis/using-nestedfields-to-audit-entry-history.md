@@ -1,7 +1,7 @@
 ---
 uuid: 902fc6f9-716c-4d56-8aeb-752a222ee882
 ---
-# Using `nestedFields` to Audit Entry History
+# Using nestedFields to Audit Entry History
 
 {bdg-secondary}`Liferay 7.4 U72+/GA72+`
 
@@ -288,4 +288,4 @@ These GET requests include the `nestedFields=auditEvents` parameter in their URL
 ## Related Topics
 
 * [Auditing Object Definition Events](../../creating-and-managing-objects/auditing-object-definition-events.md)
-* [Using `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
+* [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)

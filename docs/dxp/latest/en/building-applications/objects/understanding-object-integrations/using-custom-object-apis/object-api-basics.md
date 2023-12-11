@@ -160,5 +160,5 @@ The following are examples of the tutorial's cURL commands.
 ## Related Topics
 
 * [Using Batch APIs](./using-batch-apis.md)
-* [Using `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
+* [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
 * [Using Aggregation Terms with REST APIs](./using-aggregation-terms-with-rest-apis.md)

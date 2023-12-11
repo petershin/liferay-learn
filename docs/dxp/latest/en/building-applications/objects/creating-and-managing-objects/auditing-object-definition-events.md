@@ -35,7 +35,7 @@ Object entry events use the `ObjectDefinition#[ObjectID]` naming pattern.
 
 ## Using REST APIs
 
-You can use the `nestedFields` parameter with the `auditEvents` value to return an entry's history in GET API calls (e.g., `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`). See [Using `nestedFields` to Audit Entry History](../understanding-object-integrations/using-custom-object-apis/using-nestedfields-to-audit-entry-history.md) for a basic tutorial.
+You can use the `nestedFields` parameter with the `auditEvents` value to return an entry's history in GET API calls (e.g., `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`). See [Using nestedFields to Audit Entry History](../understanding-object-integrations/using-custom-object-apis/using-nestedfields-to-audit-entry-history.md) for a basic tutorial.
 
 ```{important}
 Using REST APIs to view an entry's history requires both the `View` and `Object Entry History` permissions for the entry. See [Permissions Framework Integration](../understanding-object-integrations/permissions-framework-integration.md) for more information.

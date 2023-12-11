@@ -350,7 +350,7 @@ Use the REST APIs to add object entries and manage their relationships:
    }
    ```
 
-   See [Using `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md) for more information on the `nestedFields` parameter.
+   See [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md) for more information on the `nestedFields` parameter.
 
 ## Examining the Code
 

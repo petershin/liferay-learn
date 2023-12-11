@@ -1,29 +1,34 @@
-# 最新のイントラネット
+---
+visibility:
+  - Employee
+  - Partner
+---
+# 最新の社内ポータル
 
 最新のイントラネットは、従業員が1つの一貫したプラットフォーム上で共有、コラボレーション、コミュニケーションを行うことを支援します。 Liferay DXPは、さまざまなシステムからコンテンツや機能を統合し、集約することができるため、パーソナライズされたエクスペリエンスを提供することで、従業員の時間を節約することができます。
 
-## 最新のイントラネットのためのLiferay DXPの主な機能
+## 最新の社内ポータルのためのLiferay DXPの主な機能
 
-最新のイントラネットのためのLiferayの主な機能を説明するときは、Liferayのポータルの伝統と、統合された一連のリソースへの安全なアクセスを提供する能力を強調します。  しかし、Liferayイントラネットソリューションの **モダン** 性質を強調するために、次のような追加機能を強調します。
+最新の社内ポータル向けのLiferayの主な機能を説明する際は、Liferayのポータル機能と統合された一連のリソースへの安全なアクセスを提供する機能について強調します。  しかし、Liferayのイントラネットソリューションの現代的な性質を強調するために、以下のような追加機能を強調します。
 
 * [デザイン・システムとエクスペリエンス・マネジメント](https://learn.liferay.com/w/dxp/site-building)
-* [コンテンツと資産管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
+* [コンテンツおよび資産管理](https://learn.liferay.com/w/dxp/content-authoring-and-management)
 * [ローコード／ノーコード・アプリケーション構築](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [コラボレーションと知識の共有](https://learn.liferay.com/w/dxp/collaboration-and-social)
+* [コラボレーションと知識共有](https://learn.liferay.com/w/dxp/collaboration-and-social)
 * [データモデリングとプロセスオートメーション](https://learn.liferay.com/w/dxp/process-automation)
 * [セグメンテーションとパーソナライゼーション](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience)
 * [検索](https://learn.liferay.com/w/dxp/using-search) と [ナビゲーション](https://learn.liferay.com/w/dxp/site-building/site-navigation)
 
 特に
 
-* コラボレーションと知識の共有
+* コラボレーションとナレッジの共有
 * 検索とナビゲーション
 
-## コラボレーションと知識の共有
+## コラボレーションとナレッジの共有
 
 Liferay DXPのコラボレーションは、ブログ、フォーラム、メッセージボードなどのアプリケーションでサポートされています。 コラボレーション活動をさらにサポートするソーシャルネットワーキング機能も利用できる。
 
-![liferay.devではコミュニティメンバーが質問をすることができ、他のコミュニティメンバーやLiferay社員、Liferayパートナーなどが回答することができます。](./modern-intranets/images/01.png)
+![liferay.dev enables community members to ask questions which can be answered by other community members, Liferay employees, Liferay partners, etc.](./modern-intranets/images/01.png)
 
 ## 検索とナビゲーション
 
@@ -39,7 +44,7 @@ Liferayは、検索ブループリントのような、より高度な機能を�
 * 検索ページの動作を完全にオーバーライドします
 * 検索ユーザーの属性に応じたコンテキストアウェアな検索結果の構成
 
-![Search blueprintsは、ユーザーがコードを書かずにLiferayの検索動作を変更できる機能です。](./modern-intranets/images/02.png)
+![Search blueprints is a feature that allows users to modify Liferay search behavior without needing to write code.](./modern-intranets/images/02.png)
 
 ナビゲーションの面では、Liferayはページの作成と整理のための強力なツールを提供します。 シンプルでフラットなサイトナビゲーションから、何階層にもネストされたサブページの複雑な階層ツリーまで、簡単に構築することができます。
 
@@ -49,7 +54,7 @@ Liferayは、検索ブループリントのような、より高度な機能を�
 
 ## ケーススタディ - クラビン
 
-![Klabinのケーススタディでは、課題と主な目的を明らかにし、解決策を説明し、主な成功指標を示します。](./modern-intranets/images/03.png)
+![The Klabin Case Study highlights the challenges and key objectives, describes the solution, and provides key success metrics.](./modern-intranets/images/03.png)
 
 クラビンはブラジルで最大の包装用紙生産・輸出業者である。 23,000人を超える直接雇用の従業員を抱えるKlabinは、多様な従業員の集合的な知識と経験を活用できる最新のイントラネット・ソリューションが必要だと考えていました。 さらに、ブラジルとアルゼンチンに24の工場を持つクラビンは、企業文化をデジタルで維持し、従業員のコミュニケーションを機敏かつ組織的に促進する方法を必要としていた。
 

@@ -7,6 +7,7 @@ Liferayは、 [商品オプション](./using-product-options.md) を使用し�
 ```{note}
 商品バンドルに加え、Liferayは複数のSKUを組み合わせて販売するためのグループ化された商品を提供します。 この製品タイプは、顧客の利便性や特別なプロモーションのためにSKUをグループ化します。 製品バンドルとは異なり、グループ化された各製品は、独自のSKUを持ち、その最終コストは、独自の価格エントリによって決定される。 詳しくは [グループ化された商品の作成](../product-types/creating-a-grouped-product.md) をご覧ください。
 ```
+
 製品バンドルを作成するには、以下の手順に従ってください：
 
 1. *グローバルメニュー* (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Products_に移動します。
@@ -22,6 +23,7 @@ Liferayは、 [商品オプション](./using-product-options.md) を使用し�
    ```{tip}
    または、*Options*ページでオプションテンプレートを作成することもできます。 この方法は、よく使われるタイプのバンドルに適しています。 詳しくは、 [「製品オプションの使用」](./using-product-options.md) をご覧ください。
    ```
+
    ![Go to the product's options tab, and create a new option for your bundle.](./creating-product-bundles/images/01.png)
 
 1. 新しいオプションを選択して、その詳細と値を編集する。
@@ -31,7 +33,7 @@ Liferayは、 [商品オプション](./using-product-options.md) を使用し�
    * **Description**（オプション）：ローカライズされた**説明**を追加します。
    * **Position**：オプションの優先順位を設定し、他のオプションとの相対的な表示順を決定する。
    * **ファセット・ナビゲーション**で使用する：オプションが商品検索結果のフィルタリングに使用できるかどうかを決定します。
-   * **必須**:製品をカートに追加する前に、ユーザーがオプション値を選択する必要があるかどうかを決定します。
+   * **必須製品をカートに追加する前に、ユーザーがオプション値を選択する必要があるかどうかを決定します。
    * **SKU貢献者**：オプションの値がユニークな製品 SKU を生成するために使用されるかどうかを判断する。
    * **フィールド・タイプ**：オプションに使用するフィールドのタイプを選択します。
    * **価格タイプ**：オプション値に_Static_または_Dynamic_のどちらの価格設定を使用するかを選択します。
@@ -40,8 +42,8 @@ Liferayは、 [商品オプション](./using-product-options.md) を使用し�
    *Dynamic*はリンクされたSKUの価格を値に使用し、*Static*は値フィールドに直接設定された固定価格を使用します。 動的価格と静的価格は、現在の商品の基本価格に加算されます。
 
    また、商品バンドルはPrice Type属性を使用するため、Single SelectionとSelect from Listフィールド・タイプしか使用できません。
-
    ```
+
    ![Use this form to configure the option's settings.](./creating-product-bundles/images/02.png)
 
 1. Valuesセクションまでスクロールダウンし、_Add_ (![Add Button](../../../images/icon-add.png)) をクリックし、値の詳細を以下のように入力します：
@@ -56,7 +58,7 @@ Liferayは、 [商品オプション](./using-product-options.md) を使用し�
 
 1. 作成したら、値をクリックして以下の追加設定にアクセスします：
 
-   * **デフォルト**：オプションのデフォルトを選択した値にするかどうかを決定する。
+   * **デフォルト**： オプションのデフォルトを選択した値にするかどうかを決定する。
    * **デルタ価格**（スタティックのみ）：値に特定の価格を設定します。
    * **製品**：既存のSKUを値にリンクし、その数量を指定します。
 
@@ -64,8 +66,8 @@ Liferayは、 [商品オプション](./using-product-options.md) を使用し�
    オプションの値はそれぞれ一意でなければならない。 つまり、同じオプションの複数の値に対して、同じ商品＋数量の組み合わせを使用することはできません。 ただし、製品に追加された他のオプションに同じ値を使用することができます。
 
    また、バンドル値は、他の製品バンドル、_必須_オプションのある製品、またはサブスクリプションが有効な製品にリンクすることはできません。 バンドルがダイナミックプライシングを使用する場合、_APPROVED_商品インスタンスにのみリンクできます。
-
    ```
+
 1. (オプション)オプションのSKU Contributorを有効にした場合、商品ページの_SKUs_タブに移動し、_Add_ (![Add Button](../../../images/icon-add.png)) をクリックし、_Generate All SKU Combinations_を選択します。
 
    これにより、各オプション値に新しいSKUが生成され、SKUsタブで編集することができます。
@@ -73,11 +75,14 @@ Liferayは、 [商品オプション](./using-product-options.md) を使用し�
    ```{important}
    有効にすると、Requiredがオプションで有効になっていなくても、顧客は必ず*値を選択しなければならない。
    ```
+
 1. 商品詳細ページでバンドル内容をご確認ください。
 
 ![Customers can select an option from the bundle.](./creating-product-bundles/images/04.png)
 
 ## ミニカートからのバンドル編集
+
+{bdg-secondary}`liferay DXP 2023.Q4+/Portal 7.4 GA98+`.
 
 一度ミニカートに追加した商品バンドルは、チェックアウト前にいつでも編集することができます。
 
@@ -85,7 +90,7 @@ Liferayは、 [商品オプション](./using-product-options.md) を使用し�
 
 1. ミニカートを開ける。
 
-   *商品オプションを表示*をクリックすると、バンドルから現在選択されているオプションが表示されます。 もう一度クリックするとオプションが非表示になります。
+   商品オプションを表示*をクリックすると、バンドルから現在選択されているオプションが表示されます。 もう一度クリックするとオプションが非表示になります。
 
    ![You can view the selected option of a bundle in the mini cart.](./creating-product-bundles/images/05.png)
 
@@ -97,13 +102,14 @@ Liferayは、 [商品オプション](./using-product-options.md) を使用し�
 
    ![Choose one of the available options and click save.](./creating-product-bundles/images/07.png)
 
-1. ［_Save_］をクリックします。
+1. ［_保存_］をクリックします。
 
 カートの価格は、選択したオプションによって価格が変更された場合、自動的に更新されます。
 
 ```{important}
-ベース商品をカートに入れた場合、バンドルを編集するオプションは利用できません。 
+ベース商品をカートに入れた場合、バンドルを編集するオプションは利用できません。
 ```
+
 ## 関連トピック
 
 * [商品オプションの使用](./using-product-options.md) 

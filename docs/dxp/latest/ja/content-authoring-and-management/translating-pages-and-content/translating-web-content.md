@@ -1,6 +1,6 @@
 # ウェブコンテンツの翻訳
 
-{bdg-secondary}`Liferay DXP/Portal 7.3+が利用可能です。`
+{bdg-secondary}`liferay DXP/Portal 7.3+が利用可能です。
 
 Liferayは、ウェブコンテンツの記事を翻訳するための統合ツールを提供しているので、グローバルなユーザーのために魅力的でローカライズされたコンテンツを作成することができます。 これらのツールを使用すると、手動でWebコンテンツを翻訳したり、XLIFFファイルとして翻訳をインポートすることができます。
 
@@ -16,7 +16,7 @@ Liferayは、ウェブコンテンツの記事を翻訳するための統合ツ�
 手動でウェブコンテンツを翻訳するために、ユーザーは1つまたは複数の言語の資産または翻訳許可のための表示および更新許可のどちらかを持っている必要があります。 詳細については、 [Managing Permissions for Translation](./managing-translation-permissions.md) を参照してください。
 ```
 
-1. *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) を開き、_Content & Data_ &rarr; _Web Content_ を展開します。
+1. *サイトメニュー* (![サイトメニュー](../../images/icon-product-menu.png))を開き、_コンテンツ＆データ_ &rarr; _ウェブコンテンツ_ に移動します。
 
 1. 翻訳したいコンテンツの_アクション_ (![アクションアイコン](../../images/icon-actions.png))をクリックし、_翻訳_を選択します。
 
@@ -26,12 +26,12 @@ Liferayは、ウェブコンテンツの記事を翻訳するための統合ツ�
 
    ![Selecting translate redirects you to the translation interface.](./translating-web-content/images/01.png)
 
-1. 翻訳したい*言語*を選択してください。
+1. 翻訳したい言語を選択します。
 
    ```{important}
    コンテンツの更新権限を持つユーザーは、原文を任意の言語に翻訳することができます。
 
-   翻訳権限を持つユーザーは、原文の翻訳を、権限を持つ言語にのみ行うことができます。
+   翻訳権限を持つユーザーは、元のテキストを権限が割り当てられている言語にのみ翻訳できます。
 
    ```
 
@@ -39,14 +39,56 @@ Liferayは、ウェブコンテンツの記事を翻訳するための統合ツ�
 
 1. 利用可能なフィールドに翻訳を入力します。
 
+   ```{note}
+   翻訳用のフレンドリーURLは、ユーザーが入力しない限り空のままです。 フレンドリURLが空の場合、デフォルト言語のフレンドリURLが使用されます。
+   ```
+
 1. ウェブコンテンツの新バージョンを作成したり、ワークフローが有効な場合はそれを開始するには、_公開_をクリックします。
 
    または、_下書きとして保存_をクリックして、翻訳を保存し、後で公開することもできます。
 
+## ローカライズ可能なフィールドを使用して翻訳されたWebコンテンツを公開する
+
+ローカライズ可能なフィールドで翻訳されたウェブコンテンツは、元の言語で表示されるコンテンツとは構造的に異なる場合があります。 Liferayは、あなたの変更がすでに翻訳されたコンテンツを上書きしないようにこれを行います。 これがどのように機能するかは、以下のステップに従ってください：
+
+1. ウェブ・コンテンツ]の[構造]に移動し、[_追加_]をクリックします。
+
+1. 繰り返し可能なフィールドセットを使用して構造を作成します。 例えば、フィールドセットにTextフィールドとImageフィールドを追加します。 両方とも必須にして、_Save_をクリックする。
+
+1. フィールドセットを新しい構造体に追加し、繰り返し使用できるようにします。
+
+1. 左上の旗のアイコンをクリックし、_翻訳を管理_をクリックします。
+
+1. *追加* ([アイコンを追加](../../images/icon-add.png))をクリックし、お好みの言語を追加します。 完了*をクリックする。
+
+1. 構造体に名前を付け、_保存_をクリックします。
+
+1. 次に「Web Content」に移動し、「New*」をクリックする。 先ほど作成した構造を選択する。
+
+1. テキストフィールドに値を入力し、画像を選択します。
+
+1. 左上隅にある国旗のアイコンをクリックし、以前に翻訳として選択した言語をクリックします。 フィールドセットの内容が変更されていないことに注目してください。 デフォルトの言語を使ってフィールドセットを複製しても同じことが起こります。 ここで、翻訳をデフォルトの言語に戻し、ウェブコンテンツに名前を付けます。 *［公開］*をクリックします。
+
+1. ウェブコンテンツの横にある_アクション_ ([アクションアイコン](../../images/icon-actions.png))をクリックし、_翻訳_をクリックします。
+
+1. 上部にあるTranslate Fromで、構造作成で選択した言語を選択します。 *［公開］*をクリックします。
+
+1. ウェブコンテンツをクリックして編集モードに入ります。
+
+1. 左上にある旗のアイコンをクリックします。 第二言語の横に「翻訳済み」のメッセージがあることを確認してください。
+
+![See the Translated message next to the language.](./translating-web-content/images/011.png)
+
+1. デフォルトの言語を使って、もう一度_Duplicate_ (![Actions icon.](../../images/icon-actions.png)) をクリックし、テキストフィールドに値を入力し、画像を選択します。
+
+1. 左上の国旗アイコンをクリックし、翻訳言語を選択します。 この翻訳を使うとき、複製されたフィールドセットのために選択されたコンテンツが存在しないことがわかります。
+
+この動作により、元の言語から独立して翻訳を管理することができます。
+
 ## 翻訳のエクスポートとインポート
 
 ```{note}
-コンテンツページのエクスペリエンスを手動で翻訳するには、コンテンツページの表示および更新権限か、1つまたは複数の言語の翻訳権限を持っている必要があります。 詳細は [Managing Translation Permissions](./managing-translation-permissions.md) を参照してください。
+コンテンツページの経験を手動で翻訳するには、ユーザーはコンテンツページの表示および更新権限、または1つまたは複数の言語の翻訳権限のいずれかを持っている必要があります。 詳細は [Managing Translation Permissions](./managing-translation-permissions.md) を参照してください。
 ```
 
 Liferay では、翻訳用の Web コンテンツを `.xliff` または `.xlf` ファイルとしてエクスポートできます。 これらのファイルを翻訳者に送り、`.zip`ファイルとしてまとめてインポートすることもできますし、`.xliff`ファイルや`.xlf`ファイルとして個別にインポートすることもできます。
@@ -57,7 +99,7 @@ Liferay は XLIFF 1.2 と 2.0 の両方のファイルをサポートしてい�
 
 ### 翻訳用のコンテンツのエクスポート
 
-1. *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) を開き、_Content & Data_ &rarr; _Web Content_ を展開します。
+1. サイトメニュー* (![サイトメニュー](../../images/icon-product-menu.png))を開き、_コンテンツ＆データ_ &rarr; _ウェブコンテンツ_ に移動します。
 
 1. 翻訳したいコンテンツの_アクション_ (![アクションアイコン](../../images/icon-actions.png))をクリックし、_翻訳用にエクスポート_を選択します。 エクスポートの設定を行うためのモーダルウィンドウが表示されます。
 
@@ -75,13 +117,13 @@ Liferay は XLIFF 1.2 と 2.0 の両方のファイルをサポートしてい�
 
    ![Select the languages you want to translate the content into.](./translating-web-content/images/05.png)
 
-1. エクスポート*をクリックします。
+1. *エクスポート*をクリックします。
 
 Liferayは、選択された各言語のXLIFFファイルを含むZIPアーカイブを生成します。 これらのファイルは、対応する翻訳ソフトウェアで使用することができます。
 
 ### コンテンツ翻訳のインポート
 
-1. *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) を開き、_Content & Data_ &rarr; _Web Content_ を展開します。
+1. *サイトメニュー* (![サイトメニュー](../../images/icon-product-menu.png))を開き、_コンテンツ＆データ_ &rarr; _ウェブコンテンツ_ に移動します。
 
 1. 翻訳されたウェブコンテンツの_アクション_ (![アクションアイコン](../../images/icon-actions.png))をクリックし、_インポート翻訳_を選択します。
 
@@ -111,7 +153,7 @@ Liferayは、選択された各言語のXLIFFファイルを含むZIPアーカ�
 
 ## サードパーティーのサービスを利用したWebコンテンツの翻訳
 
-[Google Cloud Translation](https://cloud.google.com/translate/docs/setup) , [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) , または [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/) とLiferayの統合を有効にした場合、それらを使用してWebコンテンツを自動的に翻訳することが可能です。 詳しくは、 [翻訳にかかるサードパーティーの利用](./using-third-parties-for-translation.md) をご覧ください。
+[Google Cloud Translation](https://cloud.google.com/translate/docs/setup) , [Amazon Translate](https://docs.aws.amazon.com/translate/latest/dg/what-is.html) , [Microsoft Translator](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/) とLiferayの統合を有効にした場合、それらを使ってウェブコンテンツを自動的に翻訳することができます。 詳しくは、 [翻訳にかかるサードパーティーの利用](./using-third-parties-for-translation.md) をご覧ください。
 
 ## 関連トピック
 

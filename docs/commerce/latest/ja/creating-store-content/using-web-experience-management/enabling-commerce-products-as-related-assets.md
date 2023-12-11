@@ -1,52 +1,56 @@
-# commerce製品を関連するアセットとして利用可能に
+# コマース製品を関連するアセットとして利用可能に
 
-commerce製品は、 [関連するアセット](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships) の関係を使用して、Liferay Commerceの他のアセットに接続できます。
+コマース製品は、 [関連するアセット](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships) の関係を使用して、Liferay Commerceの他のアセットに接続できます。
 
 ```{note}
-Liferay DXP 7.4+ は、関連資産としての Commerce Products をサポートしていません。 
+Liferay DXP 7.4+は、関連資産としてのコマース製品をサポートしていません。
 ```
 
 ## データベースの検索のためにアセットブラウザーを設定する
 
-1. `[Liferay Home]\osgi\marketplace\` へ移動します。 `Liferay Home`フォルダーについての詳細は、 [Liferay Home](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) を参照してください。
-1. `Liferay Web Experience - Liferay Asset - Impl.lpkg`を検索し、アーカイブマネージャーで開きます。
-1. アーカイブマネージャーウインドウで、`com.liferay.asset.browser.web.jar`を開きます。
-1. テキストエディターを使用して、`portlet.properties`ファイルを開きます。
-1. `search.with.database=true`を設定し、jarを更新します。
+1. [Liferay Home]に移動します。 `Liferay Home` フォルダの詳細については、[Liferay Home](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) を参照してください。
+1. Liferay Web Experience - Liferay Asset - Impl.lpkg` を探し、アーカイブマネージャで開きます。
+1. アーカイブマネージャーウィンドウで、`com.liferay.asset.browser.web.jar`を開きます。
+1. テキストエディタを使って、`portlet.properties`ファイルを開きます。
+1. search.with.database=true`を設定し、jarを更新する。
 1. アプリケーションサーバーを再起動します。
 
 ```{note}
-コンテンツの編集時に、関連するアセットのオプションとしてcommerce製品を表示するには、検索のインデックスの再構築が必要な場合があります。
+コンテンツ編集時にコマース製品を関連資産オプションとして表示するには、検索の再インデックスが必要な場合があります。
 ```
 
 ## インデックスの再構築
 
 インデックスの再構築を行い、関連するアセットがフィルターに入力されていることを確認します。
 
-1. ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索機能**］ へ移動します。
-1. ［すべての検索インデックスを再構築］の横にある ［**実行**］ をクリックします。
+1. _コントロールパネル_ &rarr; _設定_ &rarr; _検索_ に移動します。
+1. All Search Indexesの隣にある_Reindex_をクリックする。
 
-## commerce製品の在庫状況の確認
+## コマース製品の在庫状況の確認
 
-Commerce Products はデフォルトですべての Liferay DXP サイトで利用可能なので、Filter を **Global** に変更する必要があります。
+コマース製品はデフォルトではすべてのLiferay DXPサイトで利用可能なので、フィルタを_Global_に変更する必要があります。
 
-1. ［**サイト管理**］ &rarr; ［**コンテンツ**］ &rarr; ［**Webコンテンツ**］ をクリックします。
-1. （![Add icon](../../images/icon-add.png)）アイコンをクリックし、次に ［**基本Webコンテンツ**］ をクリックします。
-1. **関連するアセット** のセクションまでスクロールします。
-1. **選択** をクリックします。
-1. ［**Commerce Product**］ をクリックします。
+1. サイト管理_ &rarr; _コンテンツ_ &rarr; _ウェブコンテンツ_をクリックしてください。
 
-     ![［関連するアセット］セクションでcommerce製品を選択します。](./enabling-commerce-products-as-related-assets/images/01.png)
+1. (![アイコンの追加](../../images/icon-add.png))アイコンをクリックし、次に_基本ウェブコンテンツ_をクリックします。
 
-1. ［**Filter and Order**］ そして ［**Globa**］ をクリックします。
+1. 「関連資産」セクションまでスクロールダウンしてください。
 
-     ![グローバルフィルターを選択すると、commerce製品が表示されます。](./enabling-commerce-products-as-related-assets/images/02.png)
+1. 「選択」をクリックする。
+
+1. コマース商品_をクリックします。
+
+   ![Select Commerce Product in the Related Assets section.](./enabling-commerce-products-as-related-assets/images/01.png)
+
+1. フィルタとオーダー」をクリックし、次に「グローバル」をクリックする。
+
+   ![Select the Global filter to view Commerce products.](./enabling-commerce-products-as-related-assets/images/02.png)
 
 1. 商品をクリックします。
 
-これで、commerce製品を関連するアセットとして利用できるようになります。
+これで、コマース製品を関連するアセットとして利用できるようになります。
 
 ## 関連トピック
 
-* [コンテンツ関連の定義](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
-* [基本Webコンテンツ記事の追加](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)
+* [コンテンツの関係の定義](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
+* [基本的なウェブコンテンツ記事の追加](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)

@@ -1,12 +1,12 @@
 # ナビゲーションメニューアプリケーションの使用
 
-ナビゲーションメニューアプリケーションを使用して、サイトページやコンテンツのカスタムメニューを作成します。 これを使えば、メニューにどの要素が含まれ、どのように構成されるかを決めることができる。 一度作成したカスタムメニューは、 [ページフラグメント](../creating-pages/page-fragments-and-widgets/using-fragments.md) または [ウィジェット](../creating-pages/using-widget-pages/adding-widgets-to-a-page.md)を使って表示することができます。
+ナビゲーションメニューアプリケーションを使用して、サイトページやコンテンツのカスタムメニューを作成します。 これを使えば、メニューにどの要素が含まれ、どのように構成されるかを決めることができる。 一度作成したカスタムメニューは、 [ページフラグメント](../creating-pages/page-fragments-and-widgets/using-fragments.md) または [ウィジェット](../creating-pages/using-widget-pages/adding-widgets-to-a-page.md) を使って表示することができます。
 
 ```{note}
 Liferay 7.3以前では、ナビゲーションメニューに追加できるエンティティはページだけです。 Liferay 7.4 U1+では、ナビゲーションメニューにエンティティタイプを追加することができます。
 ```
 
-![サイトページやコンテンツのカスタムメニューの作成。](./using-the-navigation-menus-application/images/01.png)
+![Creating custom menus for site pages and content.](./using-the-navigation-menus-application/images/01.png)
 
 ```{tip}
 Liferay 7.3+では、カスタムフィールドを使ってナビゲーションメニューの項目に詳細な情報を追加することができます（*Custom Fields*メニューの*Site Navigation Menu Item*の下）。 この情報をApplication Display Templatesを使用して、ナビゲーションメニューをさらにカスタマイズすることができます。
@@ -16,39 +16,39 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
 
 ナビゲーションメニューを作成するには、以下の手順に従ってください：
 
-1. **Site Menu**( ![Site menu](../../images/icon-product-menu.png) ) を開き、 **Site Builder** &rarr; **Navigation Menus** に移動する。
+1. *サイトメニュー* ( ![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ナビゲーションメニュー_ に移動します。
 
-   ![サイトメニューのナビゲーションメニューにアクセスする。](./using-the-navigation-menus-application/images/02.png)
+   ![Access navigation menus in the site menu.](./using-the-navigation-menus-application/images/02.png)
 
-1. **Add**( ![Add button](../../images/icon-add.png) ) をクリックする。
+1. *追加* ( ![追加ボタン](../../images/icon-add.png))をクリックします。
 
-1. **ナビゲーションメニューの名前** を入力する。
+1. ナビゲーションメニューの _名前_ を入力します。
 
-   ![ナビゲーション・メニューを作成する。](./using-the-navigation-menus-application/images/03.png)
+   ![Create a navigation menu.](./using-the-navigation-menus-application/images/03.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_保存_］をクリックします。
 
 新しいカスタムメニューが表示され、エレメント（ページ、ドキュメント、カテゴリーなど）を追加することができます。
 
 ### ナビゲーション・メニューに新しい要素を追加する
 
-1. **Add**( ![Add button](../../images/icon-add.png) ) をクリックする。
+1. *追加* ( ![追加ボタン](../../images/icon-add.png))をクリックします。
 
 1. メニューに追加したい要素の種類（ページ、ドキュメント、カテゴリーなど）を選択します。 項目選択ウィンドウが開きます。
 
    同じメニューに複数の要素を追加することができます。
 
-  ![メニューに追加したい要素の種類を選択します。](./using-the-navigation-menus-application/images/04.png)
+![Select the type of element you want to add to the menu.](./using-the-navigation-menus-application/images/04.png)
 
-1. 追加したい要素を選択し、 **Select** をクリックする。
+1. 追加したい要素を選択し、_選択_をクリックします。
 
    複数の要素を選択できる。
 
    ```{important}
-   追加された要素が[関連する表示ページ](../displaying-content/using-display-page-templates.md)を持っていない場合、警告が表示されます。 この項目には表示ページがありません。表示ページのない項目はリンクがないため、メニューに表示されません。
+   追加された要素が [関連する表示ページ](../displaying-content/using-display-page-templates.md) を持っていない場合、警告が表示されます。 この項目には表示ページがありません。表示ページのない項目はリンクがないため、メニューに表示されません。
    ```
 
-   ![追加された要素に関連する表示ページがない場合、警告が表示されます。](./using-the-navigation-menus-application/images/05.png)
+   ![A warning appears when the added element does not have an associated display page.](./using-the-navigation-menus-application/images/05.png)
 
 1. オプションで、メニュー要素をドラッグ・アンド・ドロップして再編成したり、階層構造に並べたりすることもできます。
 
@@ -56,13 +56,13 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
    メニュー要素を階層構造にすることに加えて、*Submenu*タイプを使ってメニューにサブセクションを追加することもできます。 子要素を持つ要素を削除すると、子要素も削除されます。
    ```
 
-   ![ナビゲーションメニューに要素を追加する](./using-the-navigation-menus-application/images/06.png)
+   ![Adding elements to navigation menus.](./using-the-navigation-menus-application/images/06.png)
 
 1. オプションで、ナビゲーション・メニュー・ツリーから子ナビゲーション・メニュー要素を追加することができます。
 
-   必要なナビゲーション・メニュー・エレメントの **アクション**( ![Actions button](../../images/icon-actions.png) ) をクリックし、 **子エレメントの追加** を選択し、子エレメント・タイプを選択します。
+   必要なナビゲーション・メニュー・エレメントの_Actions_ ( ![アクション・ボタン](../../images/icon-actions.png))をクリックし、_Add Child_を選択し、子エレメントのタイプを選択します。
 
-   ![ナビゲーション・メニュー・ツリーから子ナビゲーション・メニュー要素を直接追加する](./using-the-navigation-menus-application/images/07.png)
+   ![Add child navigation menu elements right from the navigation menu tree](./using-the-navigation-menus-application/images/07.png)
 
    ```{tip}
    ナビゲーション・メニューの要素の一つをクリックし、キーボードの矢印を使ってナビゲーション・メニュー・ツリーを移動する。
@@ -74,9 +74,9 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
    Liferay 7.4のバージョンU9+またはGA13+では、表示ページを使用するコンテンツタイプ要素にのみカスタム表示名を定義できます。
    ```
 
-   これを行うには、メニュー要素を選択し、サイドパネルで **Use Custom Name** をチェックし、名前を入力し、 **Save** をクリックします。
+   これを行うには、メニュー要素を選択し、サイドパネルで_Use Custom Name_をチェックし、名前を入力し、_Save_をクリックします。
 
-   ![メニュー要素の表示をカスタマイズする。](./using-the-navigation-menus-application/images/08.png)
+   ![Customize the display of menu elements.](./using-the-navigation-menus-application/images/08.png)
 
 メニューの変更はすべて保存される。
 
@@ -84,70 +84,69 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
 
 [ボキャブラリー・ナビゲーション・メニュー・エレメント](./navigation-menu-element-types.md#vocabularies) は動的です。1つのエレメントがページに表示されると、1つのエレメントではなく、現在の階層にあるすべてのカテゴリーとサブカテゴリーが追加されます。 語彙の内容を変更すると、自動的にメニューに反映される。
 
-ダイナミック・ボキャブラリー・エレメントを使えば、アイテムの階層が変化しても、素早く簡単にナビゲーション・メニューを更新することができます。 例えば、 [新しいカタログを作成する](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html) の中で、商品のタイプを表すためにカテゴリーを使用することができます。そして、カテゴリーを更新すると、語彙を使用しているすべてのメニューが自動的に更新されます。 そして、それらのカテゴリーに使われている [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) に応じて、カテゴリー分けの変更が自動的にページやナビゲーションメニューに反映されることがある。
+ダイナミック・ボキャブラリー・エレメントを使えば、アイテムの階層が変化しても、素早く簡単にナビゲーション・メニューを更新することができます。 例えば、 [カタログ](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html) の中で、商品のタイプを表すためにカテゴリーを使用することができます。そして、カテゴリーを更新すると、語彙を使用しているすべてのメニューが自動的に更新されます。 そして、それらのカテゴリーに使われている [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) に応じて、カテゴリー分けの変更が自動的にページやナビゲーションメニューに反映されることがある。
 
-![動的な語彙要素は、ナビゲーションメニューのカテゴリ階層を反映して自動的に更新されます。](./using-the-navigation-menus-application/images/09.png)
+![Dynamic vocabulary elements automatically update to reflect their hierarchy of categories in your navigation menus.](./using-the-navigation-menus-application/images/09.png)
 
 ### ナビゲーション・メニューのプレビュー
 
-ナビゲーションメニューを編集中にプレビューして、ページ上に表示されたときの見え方を確認することができます。 **Eye アイコン**( ![Eye icon](../../images/icon-view.png) ) をクリックすると、ナビゲーションメニューのプレビューを表示するポップアップウィンドウが開きます。
+ナビゲーションメニューを編集中にプレビューして、ページ上に表示されたときの見え方を確認することができます。 目のアイコン\* ( ![目のアイコン](../../images/icon-view.png))をクリックすると、ナビゲーション・メニューのプレビューがポップアップ・ウィンドウで開きます。
 
-![ナビゲーションメニューをプレビューして、ページ上に表示したときの見え方を確認できます。](./using-the-navigation-menus-application/images/10.png)
+![Preview a navigation menu to see how it looks when displayed on a page.](./using-the-navigation-menus-application/images/10.png)
 
 また、ドロップダウンメニューからさまざまなオプションを選択し、リストやタブスタイルなど、メニューの表示スタイルを変更することもできます。
 
-## ページ作成時にメニューを使用する
+## ページ作成時のメニューの使用
 
-ユーザーがサイトページを作成する際、既存のすべてのナビゲーション・メニューのリストが表示されます。 利用可能なメニューリストから特定のメニューを非表示にすることで、この動作を変更することができる。
+ユーザーがサイトページを作成する際、既存のすべてのナビゲーションメニューのリストが表示されます。 利用可能なメニューリストから特定のメニューを非表示にすることで、この動作を変更することができる。
 
-![既存のナビゲーションメニューに新しいページを追加します。](./using-the-navigation-menus-application/images/11.png)
+![Add the new page to an existing navigation menu.](./using-the-navigation-menus-application/images/11.png)
 
-ナビゲーションメニューにこの動作を設定するには、以下の手順に従います：
+ナビゲーションメニューにこの動作を設定するには、以下の手順に従ってください：
 
-1. **Site Menu**( ![Site menu](../../images/icon-product-menu.png) ) を開き、 **Site Builder** &rarr; **Navigation Menus** に移動する。
+1. *サイトメニュー* ( ![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ナビゲーションメニュー_ に移動します。
 
 1. 希望のメニューを選択する。
 
-1. **アクション**( ![Actions button](../../images/icon-actions.png) ) をクリックしてください。
+1. *Actions*（[Actionsボタン](../../images/icon-actions.png)）をクリックします。
 
 1. チェックを外す／チェックする
 
-    ![サイトページを作成する際に、既存のナビゲーションメニューから選択することができます。](./using-the-navigation-menus-application/images/12.png)
+   ![You can select from existing navigationmenus when creating site pages](./using-the-navigation-menus-application/images/12.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_保存_］をクリックします。
 
 ## ナビゲーションメニュータイプの設定
 
 以下の手順に従って、ナビゲーション・メニューのタイプを設定してください：
 
-1. **Site Menu**( ![Site menu](../../images/icon-product-menu.png) ) を開き、 **Site Builder** &rarr; **Navigation Menus** に移動する。
+1. *サイトメニュー* ( ![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ナビゲーションメニュー_ に移動します。
 
-1. **Actions**( ![Actions button](../../images/icon-actions.png) ) をクリックします。
+1. 必要なメニューの _アクション_ ( ![アクションボタン](../../images/icon-actions.png) ) をクリックします。
 
 1. 希望のナビゲーション・タイプを選択します：プライマリーナビゲーション、セカンダリーナビゲーション、またはソーシャルナビゲーション。
 
-    ![ご希望のナビゲーション・タイプを選択してください。](./using-the-navigation-menus-application/images/13.png)
+   ![Select the desired navigation type.](./using-the-navigation-menus-application/images/13.png)
 
-    一度選択されると、各メニューの設定はMarked As欄に表示されます。
+   一度選択されると、各メニューの設定はMarked As欄に表示されます。
 
-| ナビゲーションメニューのタイプ    | 使用法                                                               |
-|:------------------ |:----------------------------------------------------------------- |
-| **プライマリ ナビゲーション** | プライマリ ナビゲーションは、ページのメインナビゲーションです。                                  |
+| ナビゲーションメニューのタイプ    | 使用量                                                               |
+| :----------------- | :---------------------------------------------------------------- |
+| **プライマリ ナビゲーション**  | プライマリ ナビゲーションは、ページのメインナビゲーションです。                                  |
 | **セカンダリー・ナビゲーション** | セカンダリーナビゲーションは、ナビゲーションの第2レベルであり、ページ内のサイドバーまたは個別のメニューが考えられます。      |
-| **ソーシャルナビゲーション** | ソーシャルナビゲーションは、ソーシャルメディアまたは同様のタスクでコンテンツを共有するためのリンクを含むメニューのためのものです。 |
+| **ソーシャルナビゲーション**   | ソーシャルナビゲーションは、ソーシャルメディアまたは同様のタスクでコンテンツを共有するためのリンクを含むメニューのためのものです。 |
 
 ## ナビゲーションメニューの削除
 
-1. **Site Menu**( ![Site menu](../../images/icon-product-menu.png) ) を開き、 **Site Builder** &rarr; **Navigation Menus** に移動する。
+1. *サイトメニュー* ( ![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ナビゲーションメニュー_ に移動します。
 
-1. **アクション**( ![Actions button](../../images/icon-actions.png) ) をクリックし、 **削除** をクリックします。
+1. [アクションボタン](../../images/icon-actions.png)をクリックし、*削除*をクリックします。
 
-1. 確認ウィンドウで [**OK**] をクリックします。
+1. 確認で*OK*をクリックします。
 
 ナビゲーションメニューが削除される。
 
 ## 関連トピック
 
-* [サイトナビゲーションの管理](./managing-site-navigation.md)
 * [ナビゲーション・メニュー要素の種類](./navigation-menu-element-types.md)
-* [メニュー表示を設定する](./configuring-menu-displays.md)
+* [メニュー表示の設定](./configuring-menu-displays.md)

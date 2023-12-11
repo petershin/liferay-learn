@@ -1,5 +1,5 @@
 コンテンツ
-=========
+==========
 
 .. toctree::
    :glob:
@@ -13,6 +13,7 @@
    apis
    workspace-data
    workspace-settings
+   reference
    troubleshooting
 
 索引と表

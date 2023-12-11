@@ -1,14 +1,14 @@
 # その他のナレッジベースウィジェット
 
-[ナレッジベース表示ウィジェット](knowledge-base-display-widget.md)以外にも、ページに追加できるナレッジベースのウィジェットがあります。
+[ナレッジベース表示ウィジェット](knowledge-base-display-widget.md) 以外にも、ページに追加できるナレッジベースのウィジェットがあります。
 
-**ナレッジベース記事ウィジェット:** 1つの記事のコンテンツを表示します。
+**知識ベース記事**：一つの記事の内容を表示します。
 
-**ナレッジベースセクションウィジェット:** 特定のトピック（セクション）に関連する記事を公開します。
+**Knowledge Base Section**：特定のトピック（セクション）に関連する記事を公開する。
 
-**ナレッジベース検索ウィジェット:** 記事を検索します。
+**知識ベース検索**：記事を検索します。
 
-これらのウィジェットは、 ［**追加**］(![Add icon](../../images/icon-add.png)) &rarr; ［**ウィジェット**］ &rarr; ［**コンテンツ管理**］ から追加できます。
+これらのウィジェットは、_Add_ ([Add icon](../../images/icon-add.png)) から追加できます。 &rarr; _ウィジェット_ &rarr; _コンテンツ管理_.
 
 ## ナレッジベース記事ウィジェット
 
@@ -16,52 +16,57 @@
 
 ナレッジベース記事ウィジェットをサイトページに追加した後、
 
-1. ［**オプション**］（![Options icon](../../images/icon-options.png)）&rarr; ［**設定**］ の順にクリックします。
+1. *オプション* ([オプションボタン](../../images/icon-options.png))をクリックし、_設定_を選択します。
 
-1. ［**セットアップ**］ &rarr; ［**一般**］ タブで、 ［**選択**］ をクリックします。 記事を選択し、 ［**保存**］ をクリックして、設定ウィンドウを閉じます。
+1. *Setup*タブで、_Select_をクリックする。
 
-    ![ナレッジベースの記事ウィジェットを使用して、個々の記事を表示します](./other-knowledge-base-widgets/images/01.png)
+1. 記事を選択してください。
 
-ナレッジベース記事ウィジェットは、ナレッジベース表示ウィジェットと同じUIを共有して、記事を表示および管理します。 ウィジェットのUIの詳細は、[ナレッジベース表示ウィジェット](knowledge-base-display-widget.md)のドキュメンテーションを参照してください。
+1. *Save*をクリックし、Configurationウィンドウを閉じます。
+
+   ![Use the Knowledge Base Article widget to display an individual article.](./other-knowledge-base-widgets/images/01.png)
+
+ナレッジベース記事ウィジェットは、ナレッジベース表示ウィジェットと同じUIを共有して、記事を表示および管理します。 ウィジェットのUIの詳細は、 [ナレッジベース表示ウィジェット](knowledge-base-display-widget.md) のドキュメンテーションを参照してください。
 
 ## ナレッジベースセクションウィジェット
 
 ```{note}
-Knowledge Base 3.0.0では、Knowledge Base Sectionsウィジェットは非推奨となり、 [categories](../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md) に置き換えられました。
+Knowledge Base 3.0.0 では、Knowledge Base Sections ウィジェットは非推奨となり、 [categories](../../content-authoring-and-management/tags-and-categories/organizing-content-with-categories-and-tags.md) に置き換えられました。
 ```
 
-ナレッジベースセクションウィジェットは、特定のトピック（セクション）に関連する記事を公開できます。 たとえば、夏季オリンピックに関するサイトには、Team Sports、Water Sports、Martial Artsなどのセクションが考えられます。
+ナレッジベースセクションウィジェットは、特定のトピック（セクション）に関連する記事を公開できます。 たとえば、夏のオリンピックに関するサイトには、チームスポーツ、ウォータースポーツ、マーシャルアーツのセクションがあるかもしれない。
 
-![ウィジェットは、特定のセクションに基づいて記事を表示します。](./other-knowledge-base-widgets/images/02.png)
+![The widget displays articles based on specific sections.](./other-knowledge-base-widgets/images/02.png)
 
-セクションを使用するには、最初にシステム設定で機能を設定し、ナレッジベースセクションウィジェットで使用するセクション名を作成する必要があります。 このプロセスは、[ナレッジベースシステム設定](knowledge-base-system-settings.md)で詳しく説明しています。
+セクションを使用するには、最初にシステム設定で機能を設定し、ナレッジベースセクションウィジェットで使用するセクション名を作成する必要があります。 このプロセスは、 [ナレッジベースシステム設定](knowledge-base-system-settings.md) で詳しく説明しています。
 
 ナレッジベースの記事を作成または編集するときに、作成者は［設定］ → ［Sections ］フィールドで記事のセクションを選択できます。
 
-![記事の特定のセクションを選択します。](./other-knowledge-base-widgets/images/03.png)
+![Select a specific section for your article.](./other-knowledge-base-widgets/images/03.png)
 
 ナレッジベースセクションウィジェットの複数のインスタンスをページに追加できます。 各ウィジェットは、任意の数のセクションの記事を表示できます。 記事のタイトルまたは概要を表示するようにウィジェットを設定できます。 また、ページネーションやセクションタイトルを表示するかどうかも定義できます。
 
 ナレッジベースセクションウィジェットを設定するには、
 
-1. ナレッジベースセクションウィジェットの ［**オプション**］ メニュー（![Options icon](../../images/icon-options.png)）から ［**設定**］ を選択します。 ウィジェットの［設定］ウィンドウが開きます。
+1. *オプション* ([オプションボタン](../../images/icon-options.png))をクリックし、_設定_を選択します。
 
-    ![この設定ウィンドウでウィジェットをカスタマイズします。](./other-knowledge-base-widgets/images/04.png)
+   ![Customize the widget in the Configuration window.](./other-knowledge-base-widgets/images/04.png)
 
-1. Setup **&rarr;** General **タブで、使用するセクションを選択し、** Save* をクリックします。
+1. *Setup* &rarr; _General_タブで、使用したいセクションを選択し、_Save_をクリックします。
 
-1. Configuration ウィンドウを閉じると、更新内容が表示されます。
+1. ［設定］ウィンドウを閉じて、更新を確認します。
+
 一致する記事がアプリのセクション見出しの下に表示されます。
 
 ## ナレッジベース検索ウィジェット
 
 ```{note}
-ナレッジベース3.0.0以降、ナレッジベース検索ウィジェットは廃止され、Liferay検索に置き換えられました。
+Knowledge Base 3.0.0では、Knowledge Base Searchウィジェットは廃止され、Liferay Searchに置き換えられました。
 ```
 
 ナレッジベースは記事の構造を表示できますが、閲覧して探しているものを正確に見つけるのは難しい場合があります。 そのため、検索には、ナレッジベース検索ウィジェットを使用できます。
 
-検索語を入力し、 ［**Search**］ ボタンを押します。 結果は、一致する記事ごとに次の基準でテーブルに表示されます。
+検索語を入力し、_検索_ボタンを押してください。 結果は、一致する記事ごとに次の基準でテーブルに表示されます。
 
 * タイトル
 * 作成者
@@ -69,14 +74,20 @@ Knowledge Base 3.0.0では、Knowledge Base Sectionsウィジェットは非推�
 * 編集日時
 * 閲覧数
 
-![アプリを使用して、ナレッジベースの記事の検索結果を取得します。](./other-knowledge-base-widgets/images/05.png)
+![Use the app to get search results for Knowledge Base articles.](./other-knowledge-base-widgets/images/05.png)
 
 ウィジェットをページに追加した後、
 
-1. ［**オプション**］（![Options icon](../../images/icon-options.png)）&rarr; ［**設定**］ の順にクリックします。
+1. オプション* ([オプションボタン](../../images/icon-options.png))をクリックし、_設定_を選択します。
 
-   ![検索結果に表示する条件を選択します。](./other-knowledge-base-widgets/images/06.png)
+   ![Choose the criteria to display for the search results.](./other-knowledge-base-widgets/images/06.png)
 
-1. ［**Setup**］ &rarr; ［**General**］ タブで、検索結果に表示する基準を選択します。
+1. *設定* &rarr; _全般_ タブで、検索結果に表示する条件を選択します。
 
-1. ［**Save**］ をクリックして、［設定］ウィンドウを閉じます。
+1. *Save*をクリックし、Configurationウィンドウを閉じます。
+
+## 関連トピック
+
+* [ナレッジ・ベース記事の作成](./creating-knowledge-base-articles.md)
+* [ナレッジベースの管理](./managing-the-knowledge-base.md)
+* [ナレッジベース表示ウィジェット](./knowledge-base-display-widget.md)

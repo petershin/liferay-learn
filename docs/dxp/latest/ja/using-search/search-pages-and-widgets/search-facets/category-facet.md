@@ -1,139 +1,142 @@
-# カテゴリファセット
+# カテゴリーファセット
 
-Category Facetは、検索クエリのキーワードに合致するカテゴリに分類されたアセットの検索結果を絞り込みます。 各マッチング結果のカテゴリは、ファセット項として集約される。
+カテゴリーファセットは、検索クエリのキーワードに一致するカテゴリーに分類されたアセットの検索結果を絞り込みます。 一致する各結果のカテゴリーは、ファセット用語として集約されます。
 
-![カテゴリファセットの結果の例。](./category-facet/images/02.png)
+![Example of category facet results.](./category-facet/images/02.png)
 
-## カテゴリファセットを設定する
+## カテゴリーファセットの設定
 
-Category Facet を設定するには、Facet の **Options** メニュー (![Options](../../../images/icon-app-options.png)) を開き、 **Configuration** をクリックします。
+カテゴリー・ファセットを設定するには、ファセットの_Options_メニュー（[Options](../../../images/icon-app-options.png) ）を開き、_Configuration_をクリックします。
 
-![ [設定]オプションをクリックします。](./category-facet/images/03.png)
+![Click the Configuration option.](./category-facet/images/03.png)
 
-最初に表示されるのは「ディスプレイ設定」です。
+［表示設定］が最初に表示されます。
 
-**表示テンプレート。****Default** , **Cloud Layout** , **Compact Layout** , **Label Layout** , **Vocabulary Layout**(7.4 Update/GA 48+ で使用可能) から選択します。 Defaultレイアウトでは、各項目の横にチェックボックスが表示されますが、Compactレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。 [Vocabulary Layout](#display-facet-terms-categories-by-vocabulary) には、ファセット用語（カテゴリー）が語彙ごとに整理されて表示されます。
+**表示テンプレート:**_Default_, _Cloud Layout_, _Compact Layout_, _Label Layout_, _Vocabulary Layout_ (7.4 Update/GA 48+ で使用可能)から選択。 デフォルトのレイアウトでは、各用語の横にチェックボックスが表示されますが、コンパクトレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。 [ボキャブラリレイアウト](#display-facet-terms-categories-by-vocabulary) では、ボキャブラリごとに整理されたファセット用語（カテゴリー）が表示されます。
 
 ［詳細設定］セクションには、追加のオプションが含まれています。
 
-**Category Parameter Name（カテゴリー・パラメーター名）。** FacetのURLのパラメータ名を変更します。 デフォルトは **カテゴリ** 。
+**カテゴリ・パラメータ名:** ファセットのURLのパラメータ名を変更します。 デフォルトは_category_である。
 
 ```{important}
-ファセットウィジェット間のANDスタイル選択を実現するためには、各ウィジェットに対して異なるカテゴリパラメータ名を設定する必要があります。 デフォルトでは、すべてのカテゴリファセットウィジェットは、このフィールドを_category_に設定します。 [以下の例](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) は、その使用例を示しています。 
+ファセットウィジェット間のANDスタイル選択を実現するためには、各ウィジェットに対して異なるカテゴリーパラメータ名を設定する必要があります。 デフォルトでは、すべてのカテゴリーファセットウィジェットで、このフィールドが_category_に設定されています。  以下の <a href="#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies">の例は使用例を示している。 
 ```
 
-**最大ターム数：** ファセットに一致する用語がいくつ見つかったかに関係なく、表示するファセット用語の最大数を設定します。
+**最大用語数:** ファセットに一致する用語の数に関係なく、表示するファセット用語の最大数を設定します。
 
-**頻度しきい値（Frequency Threshold）。** ファセット用語リストに用語を表示するために必要な最小頻度を設定する。 たとえば、ファセットの頻度しきい値が3に設定されている場合、一致する結果が2件の用語は、用語結果リストに表示されない。
+**頻度のしきい値：** ファセット用語リストに用語を表示するために必要な最小頻度を設定する。 たとえば、ファセットの頻度の閾値が3に設定されている場合、一致する結果が2つの用語は用語結果リストに表示されません。
 
-**頻度を表示する。** 用語の頻度を表示するかどうかを選択します。
+**頻度を表示する：** 項目の頻度を表示するかどうかを選択する。
 
-**Order Terms By:** Liferay 7.4 U56+/GA56+では、ファセットのタームソート戦略を選択することができます。Term Frequency Descending（デフォルト）、Term Frequency Ascending、Term Value Ascending、またはTerm Value Descendingです。 デフォルトのソートでは、ファセット用語のマッチ数が多いものから少ないものへと並べ替えられます。 用語値オプションは、ファセット用語をアルファベット順に並べる。
+**Order Terms By:** Liferay 7.4 U56+/GA56+では、ファセット用語のソート戦略を選択できます：用語頻度降順（デフォルト）、用語頻度昇順、用語値昇順、用語値降順。 デフォルトのソートでは、ファセット用語のマッチ数が多いものから少ないものへと並べ替えられます。 用語の値オプションでは、ファセット用語をアルファベット順に並べます。
 
-### 語彙によるファセット用語の表示とフィルタリング
+### ボキャブラリごとのファセット用語の表示とフィルタリング
 
-{bdg-secondary}`7.4 U48+およびGA48+`
+{bdg-secondary}`7.4 U48+とGA48+について`
 
-デフォルトでは、Category Facetウィジェットは、サイト内のすべての語彙から一致する結果のカテゴリを収集し、フラットなリストで表示します。 Update 48の機能強化により、新たな表示やフィルタリングの動作が可能になりました。
+デフォルトでは、カテゴリーファセットウィジェットは、サイト内のすべてのボキャブラリから一致する結果のカテゴリを収集し、フラットリストで表示します。 アップデート48における機能拡張により、新たな表示やフィルタリングの動作が可能になりました。
 
-#### ファセット用語（カテゴリー）を語彙で表示する
+#### ファセット用語（カテゴリー）をボキャブラリ別に表示する
 
-Category Facetの設定画面でVocabulary Layoutを選択することで、カテゴリーをその語彙の下に表示することができます。
+カテゴリーファセットの設定画面でボキャブラリレイアウトを選択することで、カテゴリーをそのボキャブラリ下に表示できます。
 
-![カテゴリーはその語彙の下に表示されます。](./category-facet/images/04.png)
+![Categories are displayed under their vocabulary.](./category-facet/images/04.png)
 
-#### 語彙によるファセット用語（カテゴリー）の絞り込み
+#### ファセット用語（カテゴリー）をボキャブラリ別に絞り込む
 
-ファセットに表示する語彙とカテゴリーを選択する。 これを有効にするには、システム設定 &rarr; 検索 &rarr; カテゴリファセットフィールドの設定を、デフォルトフィールド `assetCategoryIds`、から `assetVocabularyCategoryIds` フィールドに切り替えてください。 この設定は、Category Facetで集計を作成するために使用されるフィールドを指定します。 `assetVocabularyCategoryIds` を設定すると、Category Facetウィジェットの設定画面内の語彙の設定が有効になります。
+ファセットに表示するボキャブラリとカテゴリーを選択します。 これを有効にするには、System Settings &rarr; Search &rarr; Category Facet Field の設定を、デフォルトのフィールド `assetCategoryIds` から `assetVocabularyCategoryIds` フィールドに切り替えます。 この設定は、カテゴリーファセットで集計を作成するために使用されるフィールドを指定します。 assetVocabularyCategoryIds`を設定すると、Category Facetウィジェットの設定画面内の語彙設定が有効になります。
 
 ```{important}
-7.4 Update/GA 48以前のLiferayのバージョンやアップデートからアップグレードする場合で、システム内に既に分類されたアセットがある場合は、検索ドキュメントに必要な `assetVocabularyCategoryIds` フィールドを含めるためにフルリインデックスを実行します。
+Liferay 7.4 Update/GA 48より前のバージョンやアップデートからアップグレードする場合で、システム内にすでにカテゴリー化されたアセットがある場合は、すべての検索インデックスのインデックスを再作成して、検索ドキュメントに必要な`assetVocabularyCategoryIds`フィールドを含めてください。
 ```
 
-![語彙を選択する。](./category-facet/images/06.png)
+![Select the vocabulary.](./category-facet/images/06.png)
 
 この動作により、強力な検索ファセット体験を提供することができます。 [以下の使用例](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) をご参照ください。
 
+## 例：ボキャブラリーを使用してカテゴリーファセットで階層型フィルタリングエクスペリエンスを作成する
 
-## 例ボキャブラリーを使ったCategory Facetでの階層的なフィルタリング体験の作成
+自動車部品を購入するためのコマースポータルを考えてみます。 各パーツは、異なるボキャブラリーで分類されたコマース製品です。
 
-自動車部品を購入するためのコマースポータルを検討する。 各パーツは、異なるボキャブラリーで分類された商材である。
+- ボキャブラリ：Vehicle System
 
-- ボキャブラリー車両システム
+  カテゴリー：
 
-   カテゴリ:
-   - ブレーキシステム
-    - エンジン
-    - 排気系
-    - サスペンション
-    - トランスミッション
-    - ターボチャージャー
+  - Brake System
+  - Engine
+  - Exhaust System
+  - Suspension
+  - Transmission
+  - Turbocharger
 
-- ボキャブラリー品質
+- ボキャブラリー：Quality
 
-   カテゴリ:
-   - プレミアム
-   - 標準
+  カテゴリー：
 
-ユーザーが「エンジン」と「排気系」を選択した場合、どちらかのカテゴリーに該当する製品が表示されることを期待します。 そして、「品質」の語彙から「プレミアム」を選択すると、エンジンや排気系の高級自動車部品だけに絞られることが予想される。 7.4 Update/GA 48時点では、すぐにでも実現可能です。
+  - Premium
+  - 標準
 
-上記のユースケースを構成するために
+ユーザーは、「エンジン」と「排気システム」を選択した場合に、いずれかのカテゴリーに一致する製品が表示されることを期待します。 さらに、「Quality」のボキャブラリから「Premium」を選択した場合、エンジンや排気システムのプレミアムな自動車部品だけに絞られることを期待します。 7.4 アップデート/GA 48バージョンでは、すぐにそれを実現することができます。
 
-1. Global Menu &rarr; Control Panel &rarr; Sites から新しいサイトを作成します。 プロンプトが表示されたら、Miniumサイトテンプレートを選択します。
-1. サイト名をFooとし、 **Add** をクリックします。
-1. Globalサイトのメニュー &rarr; Categorization &rarr; Categoriesに移動します。 Qualityという語彙を追加し、2つのカテゴリを作成します。PremiumとStandardの2つのカテゴリを作成する。
+上記のユースケースを設定するには、
+
+1. グローバルメニュー &rarr; ［コントロールパネル］&rarr; ［サイト］で新規サイトを作成します。 プロンプトが表示されたら、Miniumサイトテンプレートを選択します。
+
+1. サイト名をFooとし、_Add_をクリックしてください。
+
+1. グローバル サイトのメニュー &rarr; ［カテゴリー設定］&rarr; ［カテゴリー］に移動します。 「Quality」というボキャブラリ名を追加し、「Premium」と「Standard」という2つのカテゴリーを作成します。
 
    ```{important}
-   Fooサイトのサイトカテゴリではなく、Globalサイトのグローバルカテゴリを作成する必要があります。
+   Fooサイトのサイトカテゴリーではなく、グローバルサイトのグローバルカテゴリーを作成する必要があります。
    ```
 
    ```{note}
-   サイトの初期化時にサイト テンプレートによって作成された既存の語彙があります (サイトの名前にちなんで Foo と名付けられました)。構築する例に合わせ、_Vehicle Systems_ という名前を付けて、カテゴリをより明確にした方が良いでしょう (例: Brake System)。 ただし、Foo語彙のカテゴリは既存のCommerce製品から参照されるため、編集することはできません。 
+   サイトの初期化時にサイトテンプレートによって作成された既存のボキャブラリがあります（サイト名にちなみFooとされています）。構築する例に合わせ、_Vehicle Systems_ という名前を付けて、カテゴリーをより明確にした方が良いでしょう （例: Brake System）。 ただし、Fooボキャブラリのカテゴリーは既存のコマース製品から参照されるため、編集することはできません。 
    ```
 
-   ![グローバルサイトにQuality vocabularyを作成します。](./category-facet/images/07.png)
+   ![Create a Quality vocabulary in the global site.](./category-facet/images/07.png)
 
-1. Global Menu &rarr; Commerce &rarr; Products (Product Managementセクション)で、既存のCommerce Productsの一部を分類する。
+1. グローバルメニュー &rarr; コマース &rarr; ［Products］（製品管理セクション下）で、既存のコマース製品の一部を分類します。
 
-   プレミアムカテゴリーを追加
+   「Premium」カテゴリーを以下に追加します。
 
-   - プレミアムブレーキフルード
-   - プレミアムブレーキパッド
+   - Premium Brake Fluid
+   - Premium Brake Pad
 
-   など、いくつかの追加製品にStandardカテゴリを追加します。
+   以下のように、いくつかの追加製品に「Standard」カテゴリを追加します。
 
-   - ABSセンサー
-   - ブレーキフルード
-   - ウェアセンサー
-   - ブレーキパッド
-   - ブレーキローター
+   - ABS Sensor
+   - Brake Fluid
+   - Wear Sensors
+   - Brake Pads
+   - Brake Rotors
 
-   ![既存製品の一部をプレミアムとスタンダードに分類する。](./category-facet/images/09.png)
+   ![Categorize some existing products as Premium or Standard.](./category-facet/images/09.png)
 
-1. Fooサイトのトップページに移動します。 Miniumサイトのトップページは、デフォルトで製品カタログとなっており、基本的には空白検索を許可した検索ページとなっています。
+1. Fooサイトのホームページに移動します。 Miniumサイトのホームページは、デフォルトで製品カタログとなっており、基本的には［空の検索を許可する］を有効にした検索ページとなっています。
 
-   Category Facetウィジェットでは、両方の語彙のカテゴリが1つのフラットなリストで表示されます。 複数のファセット・ターム（例：SuspensionとStandard）を選択すると、ページ上の結果が拡張される。これは、ファセット・ターム間のOR演算子の動作を示している。
+   カテゴリーファセットウィジェットでは、両方のボキャブラリのカテゴリーが1つのフラットリストに表示されます。 複数のファセット用語（例：「Suspension」と「Standard」など）を選択すると、ページ上に結果が展開されます。これは、ファセット用語間のOR演算子の動作を示しています。
 
-   ![利用可能なすべてのボキャブラリーのカテゴリが集約されている。](./category-facet/images/08.png)
+   ![The categories of all available vocabularies are aggregated.](./category-facet/images/08.png)
 
-   このページのウィジェットの中には、Commerceに特化したウィジェット（Specification Facetなど）もありますが、Category Facetは標準の検索ウィジェットになります。
+   このページのウィジェットの中には、コマースに特化したウィジェット（仕様ファセットなど）もありますが、カテゴリーファセットは標準の検索ウィジェットになります。
 
-1. Category Facet ウィジェットで、 `assetVocabularyCategoryIds` フィールドを使用して集約を作成するように変更します。 システム設定 &rarr; 「検索」にアクセスします。 Category Facet Field の項目で、Category Facet Field のセレクタで `assetVocabularyCategoryIds` を選択し、設定を更新します。
+1. `assetVocabularyCategoryIds`フィールドを使用して集約を作成するように、Category Facetウィジェットを変更します。 ［システム設定］&rarr; ［検索］に移動します。 Category Facet Field項目で、Category Facet Fieldセレクタで`assetVocabularyCategoryIds`を選択し、設定を更新する。
 
-1. Fooサイトのホームページに、Foo語彙のカテゴリのみを表示するように設定されたCategory Facetウィジェットを追加します。
+1. Fooサイトのホームページに、Fooボキャブラリのカテゴリーのみを表示するように設定されたカテゴリーファセットウィジェットを追加します。
 
-   - ページ上部の **プラスアイコン**(![Plus](../../../images/icon-plus.png)) をクリックします。
-   - **Category Facet** ウィジェットを既存のウィジェットの直上または直下にドラッグします。
-   - **Widget Configuration** 画面(![App Options](../../../images/icon-app-options.png))を開いてください。
-   - 表示テンプレートのセレクタを開き、 **語彙レイアウト** を選択します。
-   - Category Parameter Name を **foocategories** に変更します。
-   - **Select Vocabularies** ラジオボタンをクリックします。 **Global** を展開し、 **Foo** を選択します。
-   - ［**保存**］ をクリックします。
+   - ページ上部の_プラスアイコン_をクリックします（！[Plus](../../../images/icon-plus.png) ）。
+   - カテゴリファセット*ウィジェットを既存のウィジェットの真上または真下にドラッグします。
+   - ウィジェット設定*画面を開く(![アプリオプション](../../../images/icon-app-options.png))。
+   - 表示テンプレートのセレクタを開き、_語彙レイアウト_を選択します。
+   - Categoryパラメータ名を_foocategories_に変更する。
+   - ボキャブラリーの選択」ラジオボタンをクリックします。 Global_を展開し、_Foo_を選択する。
+   - 保存」をクリックする。
 
-1. 同様の手順で、オリジナルのCategory Facetウィジェットを構成し、Qualityボキャブラリーのカテゴリのみを表示し、Vocabulary Layoutテンプレートを使用します。 新しいCategory FacetウィジェットのCategory Parameter Nameはすでに変更されているので、既存のウィジェットのデフォルト値のままでよい。
+1. 同様の手順で、オリジナルのカテゴリーファセットウィジェットを設定し、「Quality」ボキャブラリのカテゴリーのみを表示し、ボキャブラリレイアウトテンプレートを使用します。 新しいカテゴリーファセットウィジェットのカテゴリーパラメータ名はすでに変更されているので、既存ウィジェットのデフォルト値のままにしておくことができます。
 
-1. ページを更新してください。 Foo語彙を表示するCategory FacetウィジェットでBrake SystemとSuspensionのカテゴリを選択すると、表示される製品がBrake System OR Suspensionのカテゴリと一致するようになります。
+1. ページを更新します。 Fooボキャブラリを表示するカテゴリーファセットウィジェットで「Brake System」と「Suspension」のカテゴリーを選択すると、表示される製品が「Brake System OR Suspension」のカテゴリーと一致するようになります。
 
-   品質カテゴリーを表示するカテゴリーファセットで「標準」を選択すると、ブレーキシステムまたはサスペンションと標準に分類される製品のみに結果が絞り込まれます。
+   「Quality」カテゴリーを表示するカテゴリーファセットで「Standard」を選択すると、「Brake System OR Suspension AND Standard」に分類される製品のみに結果が絞り込まれます。
 
-![Category Facetに階層的なフィルタリングを設定する。](./category-facet/images/10.png)
+![Configure hierarchic filtering in the Category Facet.](./category-facet/images/10.png)

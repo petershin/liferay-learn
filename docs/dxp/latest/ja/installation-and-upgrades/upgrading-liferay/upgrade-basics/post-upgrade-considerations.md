@@ -14,27 +14,31 @@
 rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfiguration.config
 ```
 
-メジャーバージョンアップの際には、検索インデックスの再作成が必要です。 新しいアップデートに移行したり、サービスパックを適用したり、同じLiferayバージョン内で新しいGA（ローリングリリース）にアップグレードする場合は、そのバージョンのリリースハイライトを参照して、再インデックスが必要かどうかを判断してください。 ここでは、検索インデックスの再インデックス方法を説明する：
+検索インデックスの再インデックスは、すべてのLiferayのアップグレード後に必要です。 インデックスを再作成する、
 
-1. *グローバルメニュー* (![グローバルメニュー](../../../images/icon-applications-menu.png))をクリックします。 &rarr; _コントロールパネル_。
+1. *グローバルメニュー*([グローバルメニューアイコン](./post-upgrade-considerations/images/01.png))をクリックし、_コントロールパネル_タブを開きます。
 
-1. 設定セクションの_Search_をクリックし、_Index Actions_タブを選択し、All Search Indexesの_Reindex_をクリックします。 再インデックスが実行され、成功メッセージが表示される。
+1. Configurationセクションの_Search_をクリックし、_Index Actions_タブを選択します。
+
+1. [再インデックス作成モード](../../../using-search/search-administration-and-tuning/re-indexing-modes.md) を選択し、*All search indexes* の *Reindex* をクリックします。
 
 ![You can re-index your search indexes in the Control Panel.](./post-upgrade-considerations/images/01.png)
 
 ```{note}
 古いバージョン（7.1以下）からアップグレードした場合は、検索インデックスを処理するために、 [Elasticsearch](../../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md) をインストールすることを検討してください。
 ```
+
 ### データベース設定
 
-アップグレード前にアップグレード用にデータベースをチューニングした場合は（ [データベース・チューニング・アップグレード](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) を参照）、本番用データベースの設定を復元してください。
+アップグレード前にアップグレード用にデータベースをチューニングした場合は（ [データベース・チューニング・アップグレード](../upgrade-stability-and-performance/database-tuning-for-upgrades.md) を参照）、本番用データベースの設定を復元します。
 
 ```{note}
 データのアップグレード中にシャード環境から移行した場合は、仮想インスタンスへの移行を完了するために、さらに構成を調整する必要があります。 詳細については、 [アップグレードと更新のプロパティ](../other-upgrade-scenarios/upgrading-a-sharded-environment.md#Upgrade-and-Update-Properties) セクションを参照してください。
 ```
+
 ## 最新のマーケットプレイスアプリのインストール
 
-新しい Liferay バージョンに対応した [Marketplace アプリの最新バージョン](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md) をインストールし、 [Gogo シェルコマンド](../upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) を使用して、必要なデータベースのアップグレードを確認し、実行します。
+新しい Liferay バージョンに対応した [Marketplace アプリ](../../../system-administration/installing-and-managing-apps/installing-apps/downloading-apps.md) の最新バージョンをインストールし、 [Gogo シェルコマンド](../upgrade-stability-and-performance/upgrading-modules-using-gogo-shell.md) を使用して、必要なデータベースのアップグレードを確認し、実行します。
 
 ## 機能変更の考慮
 
@@ -47,6 +51,7 @@ rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfig
 ```{note}
 7.4より前のバージョンでは、*コントロールパネル* &rarr; *設定* &rarr; *システム設定* &rarr; *ウェブコンテンツ* &rarr; *仮想インスタンススコープ* &rarr; *ウェブコンテンツ*に移動し、*記事の表示許可チェック有効*の選択を解除することで、すべてのウェブコンテンツ記事の表示許可を開くことができました。
 ```
+
 ![Disable the permissions check for viewing web content by scrolling down in the Web Content menu in the System Settings.](./post-upgrade-considerations/images/02.png)
 
 ### Webコンテンツの画像チェック

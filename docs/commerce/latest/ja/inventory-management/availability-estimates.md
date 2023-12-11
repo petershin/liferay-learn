@@ -1,53 +1,53 @@
 # 在庫数の見積もり
 
-商品の在庫がなくなった場合、再入荷の見込みをお客様に提示することができます。 MiniumやSpeedwellのようなアクセラレータを使用している場合、3つの可用性推定値が自動的に作成されます。 それ以外の場合は、自分で作成することができます。
+商品の在庫がなくなった場合、再入荷の見込みをお客様に提示することができます。 MiniumやSpeedwellのようなアクセラレータを使用している場合、3つの在庫数の見積もりが自動的に作成されます。 それ以外の場合は、自分で作成することができます。
 
-## 可用性の見積もり作成
+## 在庫数の見積もりの作成
 
-1. **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Availability Estimates** に移動します。
+1. [グローバルメニュー](../images/icon-applications-menu.png)を開き、_Commerce_ &rarr; _Availability Estimates_に移動します。
 
-1. **追加**（![Add Button](../images/icon-add.png)） をクリックします。
+1. *追加* (![追加ボタン](../images/icon-add.png))をクリックします。
 
-    ![追加]ボタンをクリックすると、新しい稼働率見積りが作成されます。](./availability-estimates/images/01.png)
+   ![Click the Add button to create a new availability estimate.](./availability-estimates/images/01.png)
 
-1. **Title** を入力します。 これは、製品が再び利用可能になるまでの推定時間（例：3-5日、3-4週間、2-3ヶ月）を記載する必要があります。
+1. *タイトル*を入力してください。 これには、商品が再入荷するまでの推定時間（例：3-5日、3-4週間、2-3ヶ月）を記載する必要があります。
 
-1. **Priority** を入力し、見積書の表示順を決定します。
+1. 見積もりの表示順を決定するために_優先順位_を入力してください。
 
-1. ［**Save**］ をクリックします。
+1. ［_保存_］をクリックします。
 
-一度作成すると、 **表示可否** を有効にした商品に追加することができます。 製品の **Configuration** タブを開き、ドロップダウンから希望の **Availability Estimate** を選択し、 **Publish** をクリックします。
+一度作成すると、_Display Availability_を有効にした商品に追加することができます。 製品の_Configuration_タブに移動し、ドロップダウンから必要な_Availability Estimate_を選択し、_Publish_をクリックします。
 
-![希望する稼働率の目安を選択します。](./availability-estimates/images/02.png)
+![Select the desired availability estimate.](./availability-estimates/images/02.png)
 
-選択した在庫予測は、商品の在庫がなくなったときにいつでも表示することができます。
+選択した在庫数の見積もりは、商品の在庫がなくなったときにいつでも表示することができます。
 
-![商品の在庫がなくなるたびに、選択した見積もりが商品ページに表示されます](./availability-estimates/images/03.png)
+![The selected estimate appears on the product page whenever the product runs out of stock](./availability-estimates/images/03.png)
 
 ## Commerce 2.1以前
 
-新規に稼働率の見積もりを作成する場合。
+新規に在庫数の見積もりを作成するには：
 
-1. **コントロールパネル** → **コマース** → **設定** に移動します。
+1. *コントロールパネル* &rarr; _Commerce_ &rarr; _Settings_に移動します。
 
-1. ［**在庫数の見積もり**］ タブをクリックします。
+1. *稼働率見積もり*タブをクリックします。
 
-1. **追加**(![Add Button](../images/icon-add.png)) をクリックし、以下の情報を入力します。
+1. *追加* (![追加ボタン](../images/icon-add.png))をクリックし、以下の情報を入力します：
 
    * **タイトル：** 15-21日
-   * **［Priority：**］ 4.0
+   * **優先度：** 4.0
 
-1. ［**保存**］ をクリックします。
+1. ［_保存_］をクリックします。
 
-これにより、新しい稼働率の見積もりが作成されます。 優先順位の値が4.0であれば、ドロップダウンメニューにおいて、新しい見積りが既存の稼働率の見積りの下に表示されることを意味します。 その下に表示できるのは、優先度5.0以上の見積もりだけです。
+これにより、新規の在庫数の見積もりが作成されます。 優先度値が4.0であれば、ドロップダウンメニューにおいて、新しい見積りが既存の在庫数の見積もりの下に表示されます。 その下に表示できるのは、優先度5.0以上の見積もりだけです。
 
-![新しい入荷見積り](./availability-estimates/images/04.png)
+![Creating a new availability estimate.](./availability-estimates/images/04.png)
 
-これを使用するには、製品の **設定** タブを開き、 **可用性の表示** オプションを有効にし、ドロップダウンから希望の **可用性見積もり** を選択し、 **Publish** をクリックしてください。
+これを使用するには、製品の_Configuration_タブに移動し、_Display Availability_オプションを有効にし、ドロップダウンから必要な_Availability Estimate_を選択し、_Publish_をクリックします。
 
-![ [可用性の表示]トグルを有効にし、ドロップダウンから可用性の見積もりを選択します。](./availability-estimates/images/05.png)
+![Activate the Display Availability toggle and select an availability estimate from the drop-down.](./availability-estimates/images/05.png)
 
 ## 関連トピック
 
 * [在庫管理](../inventory-management.md)
-* [商品の在庫設定のリファレンス](./product-inventory-configuration-reference-guide.md)
+* [製品在庫構成リファレンス](./product-inventory-configuration-reference-guide.md)

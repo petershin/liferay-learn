@@ -1,17 +1,18 @@
 # ページテンプレートのエクスポートとインポート
 
-コードエディタでテンプレートを編集する方が簡単な場合があります。 一旦 [ページテンプレート](./creating-a-page-template.md) を作成したら、 [輸出](../../sites/exporting-importing-site-pages-and-content.md) をエクスポートし、ローカルで好きなエディタで編集し、テンプレートをLiferayにインポートし直すことができます。 テンプレートはシステム上のどのサイトにもインポートできます。
+コードエディタでテンプレートを編集する方が簡単な場合があります。 [ページテンプレート](./creating-a-page-template.md) を作成したら、 [](../../sites/exporting-importing-site-pages-and-content.md) をエクスポートし、ローカルで好きなエディタで編集し、テンプレートをLiferayにインポートし直すことができます。 テンプレートはシステム上のどのサイトにもインポートできる。
 
 エクスポート／インポート・フレームワークの一般的な情報については、 [サイト・ページとコンテンツのエクスポート／インポート](../../sites/exporting-importing-site-pages-and-content.md) を参照。
 
 ```{note}
 Liferay DXP 7.4+では、ページテンプレートコレクションはLiferay UIではページテンプレートセットと呼ばれています。
 ```
+
 ## ページテンプレートのエクスポート
 
 1. [サイトメニュー](../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _ページテンプレート_に移動します。
 
-1. *ページテンプレート*タブを選択します。
+1.  *ページテンプレート*タブを選択します。
 
 1. 必要なテンプレートを含むページテンプレートセットを選択します。
 
@@ -24,6 +25,7 @@ Liferay DXP 7.4+では、ページテンプレートコレクションはLiferay
 ```{tip}
 一度に複数のコンテンツページテンプレートをエクスポートできます。
 ```
+
 ページテンプレートの最後に公開されたバージョンは常にエクスポートされる。 ページテンプレートが一度も公開されていない場合は、エクスポートできません。
 
 エクスポートされたZIPファイルには次のファイルが含まれています。
@@ -37,7 +39,7 @@ ZIPファイルには、`display-page-template.json`、`master-page.json`、`pag
 
 ## ページテンプレートのインポート
 
-1. ![サイトメニュー](../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _ページテンプレート_に移動します。
+1. [サイトメニュー](../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _ページテンプレート_に移動します。
 
 1. アプリケーションバーの_オプション_ (![オプションアイコン](../../../images/icon-options.png))をクリックし、_インポート_を選択します。
 
@@ -47,7 +49,7 @@ ZIPファイルには、`display-page-template.json`、`master-page.json`、`pag
 
    変更したい場合は、_ファイルを置き換える_をクリックしてください。
 
-1. インポート*をクリックします。
+1. *インポート*をクリックします。
 
    既存のページテンプレートをインポートする場合は、 [既存のページテンプレートをインポートする](#importing-an-existing-page-template) を参照してください。
 
@@ -62,6 +64,7 @@ ZIPファイルには、`display-page-template.json`、`master-page.json`、`pag
 ```{Important}
 DXP環境間でページテンプレートを転送するには、LARエクスポートとインポートを使用します。
 ```
+
 ### 既存のページテンプレートのインポート
 
 ページテンプレートをインポートし、ZIPファイルのアイテムがすでに存在する場合、3つのオプションのいずれかを選択できます：
@@ -88,4 +91,4 @@ DXP環境間でページテンプレートを転送するには、LARエクス�
 
 * [ページテンプレートの作成](./creating-a-page-template.md) 
 * [サイトページとコンテンツのエクスポート/インポート](../../sites/exporting-importing-site-pages-and-content.md) 
-* [コレクションの作成](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md) 
+* [コレクションの作成](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)

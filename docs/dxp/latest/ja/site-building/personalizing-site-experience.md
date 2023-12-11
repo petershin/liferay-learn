@@ -23,6 +23,7 @@ Liferay DXPは、ユーザーを理解し、パーソナライズされた体験
 ```{tip}
 ユーザーが複数のセグメントに属している場合、 [特定のパーソナライズされたバリエーション](./personalizing-site-experience/experience-personalization/personalizing-collections.md#creating-personalized-variations) を優先するか、 [すべてのセグメントからコレクションエントリを組み合わせることができます](./personalizing-site-experience/experience-personalization/personalizing-collections.md#combining-collection-entries-from-all-segments) 。
 ```
+
 ## セグメンテーション
 
 セグメントビルダーを使用すると、ユーザープロファイルの属性、行動、サイトの役割などによって類似ユーザーをグループ化することができます。
@@ -55,7 +56,7 @@ Analytics Cloudとの統合により、機械学習による詳細なデータ�
 
 ### コレクション
 
-[コレクション](../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) は、コンテンツを整理して表示します。 [コレクション・パーソナライゼーション](./personalizing-site-experience/experience-personalization/personalizing-collections.md) ユーザー・セグメントに基づいたコレクションの選択を提供します。 つまり、与えられたコンテキストに表示されるコンテンツセットは、 [ユーザーセグメント](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) の基準によって決定される。 例えば、コレクションを使って、ページの一番上に「特集」記事を表示することができます。 そして、デフォルトではなく、より専門的なコンテンツを受け取るべきユーザーを含むユーザーセグメントを作成することができます。 そのようなセグメントには、デフォルトではなく、彼らの興味に合わせてパーソナライズされたコンテンツが表示される。 詳しくは、 [コレクションのパーソナライズ](./personalizing-site-experience/experience-personalization/personalizing-collections.md) をご覧ください。
+[コレクション](./displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) は、コンテンツを整理して表示します。 [コレクション・パーソナライゼーション](./personalizing-site-experience/experience-personalization/personalizing-collections.md) ユーザー・セグメントに基づいたコレクションの選択を提供します。 つまり、与えられたコンテキストに表示されるコンテンツセットは、 [ユーザーセグメント](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) の基準によって決定される。 例えば、コレクションを使って、ページの一番上に「特集」記事を表示することができます。 そして、デフォルトではなく、より専門的なコンテンツを受け取るべきユーザーを含むユーザーセグメントを作成することができます。 そのようなセグメントには、デフォルトではなく、彼らの興味に合わせてパーソナライズされたコンテンツが表示される。 詳しくは、 [コレクションのパーソナライズ](./personalizing-site-experience/experience-personalization/personalizing-collections.md) をご覧ください。
 
 ![You can personalize content sets to display assets for specific user segments.](./personalizing-site-experience/images/04.png)
 

@@ -1,6 +1,6 @@
 # パブリケーションでのコラボレーション
 
-{bdg-secondary}`Liferay 7.4以降で利用可能`
+{bdg-secondary}`liferay 7.4+が利用可能です。`
 
 デフォルトでは、パブリケーションには制作者のみがアクセスできます。 ただし、パブリケーションの制作者は、他のユーザーを招待して、パブリケーションを表示、編集、および公開することができます。 進行中、スケジュール済み、および公開済みのパブリケーションにユーザーを追加できます。
 
@@ -12,31 +12,31 @@
 
 次の手順に従って、ユーザーをパブリケーションでの共同作業に招待します。
 
-1. **グローバルメニュー**( ![Global Menu](../../../images/icon-applications-menu.png) ) を開き、 **アプリケーション** タブをクリックし、 **出版物** に進みます。
+1. グローバル・メニュー(![グローバル・メニュー](../../../images/icon-applications-menu.png))を開き、_アプリケーション_タブをクリックし、_出版物_に進みます。
 
-1. 目的の出版物の **アクション** ボタン( ![Actions Button](../../../images/icon-actions.png) )をクリックし、 **ユーザー招待** を選択します。
+1. 目的のパブリケーションの_Actions_ボタン（[Actions Button](../../../images/icon-actions.png)）をクリックし、_Invite Users_を選択します。
 
-   ![PublicationのActionsボタンをクリックし、Invite Usersを選択します。](./collaborating-on-publications/images/01.png)
+   ![Click the publication's Actions button and select Invite Users.](./collaborating-on-publications/images/01.png)
 
-   または、目的の出版物をクリックし、 **Invite Users** ボタンをクリックします。
+   または、パブリケーションの変更を確認し始め、_Invite Users_ (![Invite Users](../../../images/icon-plus.png)) をクリックします。
 
-   ![出版物変更ページで、「ユーザーを招待する」ボタンをクリックします。](./collaborating-on-publications/images/02.png)
+   ![In publication Changes page, click the Invite Users button.](./collaborating-on-publications/images/02.png)
 
    ```{note}
-   これは、公開されたパブリケーションにユーザーを招待する唯一の方法です。
+   これは、公開された出版物にユーザーを招待する唯一の方法です。
    ```
 
-1. ドロップダウンメニューを使用して、 **表示** 、 **編集** 、 **公開** 、および **招待** の権限を付与します。
+1. ドロップダウンメニューを使用して、_view_、_edit_、_publish_、_invite_の権限を付与する。
 
-   ![ドロップダウンメニューを使用して、パブリケーションのユーザー権限を決定します。](./collaborating-on-publications/images/03.png)
+   ![Use the drop-down menu to determine the users permissions for the publication.](./collaborating-on-publications/images/03.png)
 
-1. 目的の **ユーザー** を検索して選択します。
+1. *ユーザー*を検索し、選択します。
 
    各ユーザーには選択した権限が割り当てられますが、招待状を送信する前と後にその権限を編集できます。
 
-   ![目的のユーザーを検索して選択します。](./collaborating-on-publications/images/04.png)
+   ![Search for and select the desired users.](./collaborating-on-publications/images/04.png)
 
-1. **送信** をクリックして、ユーザーを出版物に追加します。
+1. *送信*をクリックして、ユーザーをパブリケーションに追加します。
 
 招待されたユーザーには通知が届き、パブリケーションでの共同作業を開始できます。
 
@@ -44,15 +44,15 @@
 
 共同作業を行うユーザーは、［Changes］ページからパブリケーションにコメントを追加できます。 各コメントは、それらが作成されたパブリケーションにスコープされます。
 
-1. **グローバルメニュー**( ![Global Menu](../../../images/icon-applications-menu.png) ) を開き、 **アプリケーション** タブをクリックし、 **出版物** に進みます。
+1. [グローバルメニュー](../../../images/icon-applications-menu.png) を開き、[アプリケーション] タブをクリックし、[出版物] に進みます。
 
-1. 目的の **出版物** をクリックします。
+1. ご希望の出版物をクリックしてください。
 
-1. **コメント** ボタン ( ![Comments Button](../../../images/icon-comments-w.png) ) をクリックします。
+1. *コメント*ボタン( ![コメントボタン](../../../images/icon-comments-w.png))をクリックします。
 
-1. チャットウィンドウで、コメントを入力し、 **返信** をクリックします。
+1. チャットウィンドウにコメントを入力し、_返信_をクリックします。
 
-   ![コメントボタンをクリックし、コメントを入力し、返信をクリックします。](./collaborating-on-publications/images/05.png)
+   ![Click the Comments button, enter your comment, and click Reply.](./collaborating-on-publications/images/05.png)
 
 共同作業しているすべてのユーザーにコメントが通知され、返信することもできます。
 
@@ -60,16 +60,40 @@
 
 パブリケーションからコラボレーターを削除するには、次の手順に従います。
 
-1. 目的のパブリケーションの ［**Invite Users**］ モーダルウィンドウを開きます。
+1. 目的の出版物の_Invite User_モーダルウィンドウを開きます。
 
-1. 目的のユーザーのドロップダウンメニューをクリックし、 **削除** を選択します。
+1. 目的のユーザーのドロップダウンメニューをクリックし、_Remove_を選択します。
 
-   ![［権限］ドロップダウンメニューを開き、［削除］を選択します。](./collaborating-on-publications/images/06.png)
+   ![Open the permissions drop-down menu and select Remove.](./collaborating-on-publications/images/06.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_保存_］をクリックします。
+
+## リンクによる出版物の共有
+
+{bdg-link-primary}`[ベータ版特集](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+
+{bdg-secondary}`liferay 7.4 2023.Q3+/GA98+`.
+
+パブリケーションの変更をサイト・ユーザ以外の人と共有する必要がある場合、パブリケーションのリンク共有を有効にすることができます。
+
+1. 目的のパブリケーションの_Actions_ (![Actions Button](../../../images/icon-actions.png)) をクリックし、_Invite Users_ を選択して、_Share Link_ タブに移動します。
+
+   ![Select Invite Users and go to the Share Link tab.](./collaborating-on-publications/images/07.png)
+
+   または、出版物の変更を確認し始め、_共有_ (![共有ボタン](../../../images/icon-link.png))をクリックします。
+
+   ![Click the Share button.](./collaborating-on-publications/images/08.png)
+
+1. スイッチを切り替えて共有を有効にする。
+
+1. リンクをコピーしてください。
+
+   ![Enable sharing and copy the link.](./collaborating-on-publications/images/09.png)
+
+リンクがあれば、誰でも出版物の変更点を見ることができる。
 
 ## 関連トピック
 
-* [パブリケーションの作成と管理](./creating-and-managing-publications.md)
+* [出版物の作成と管理](./creating-and-managing-publications.md)
 * [変更の作成と公開](./making-and-publishing-changes.md)
-* [競合の解決](./resolving-conflicts.md)
+* [コンフリクトの解決](./resolving-conflicts.md)

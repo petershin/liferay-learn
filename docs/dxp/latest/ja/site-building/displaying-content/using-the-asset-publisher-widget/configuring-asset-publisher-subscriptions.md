@@ -1,4 +1,4 @@
-# アセットパブリッシャー購読の設定
+# Configuring Asset Publisher Subscriptions
 
 アセットパブリッシャーは、メール購読とRSSフィード購読の2種類のサブスクリプションをサポートしています。
 
@@ -6,29 +6,30 @@
 
 ユーザーは、アセットパブリッシャーを購読して、新しいアセットが公開されたときに電子メール通知を受け取ることができます。 最初にこの通知を有効にする必要があります。 次の手順を実行します：
 
-1. アセットパブリッシャーの上にカーソルを置き、ウィジェットのメニューでオプションアイコン（![Options](../../../images/icon-app-options.png)）をクリックし、 ［**Configuration**］ を選択します。
-1. ［**Enable Email Subscription**］ セレクターを［Yes］に切り替えます。
-1. フォームに入力し、 ［**保存**］ をクリックして変更を適用します。
+1. アセットパブリッシャーにカーソルを合わせ、ウィジェットのメニューにあるオプションアイコン(![Options](../../../images/icon-app-options.png)) をクリックし、_設定_を選択します。
 
-    ![メール購読は、新しいアセットが公開されたときにユーザーに通知します。](./configuring-asset-publisher-subscriptions/images/01.png)
+1. *電子メール購読を有効にする* セレクターをはいに切り替えます。
+1. フォームに記入し、_保存_をクリックして変更を適用します。
 
-1. 有効になっていない場合は、［表示設定］タブで**［変更通知を受け取る（購読する）］**機能を有効にします。ユーザーは、**［Subscribe］** ボタンをクリックして、新しく公開されたアセットの電子メール通知を受け取ることができます。
+   ![An email subscription notifies users when new assets are published.](./configuring-asset-publisher-subscriptions/images/01.png)
 
-![メールの購読を有効にすると、変更通知を受け取る（購読する）リンクがアセットパブリッシャーに追加されます。](./configuring-asset-publisher-subscriptions/images/02.png)
+1. もし有効になっていなければ、「表示設定」タブの「_購読_」機能を有効にしてください。 ユーザーは、_Subscribe_ボタンをクリックして、新しく公開されたアセットのEメール通知を受け取ることができます。
+
+![Enabling Email Subscription adds a Subscribe link to the Asset Publisher.](./configuring-asset-publisher-subscriptions/images/02.png)
 
 ### アセットチェック間隔の設定
 
 Liferay Portalは定期的に新しいアセットをチェックし、購読しているユーザーに新しいアセットを通知するメールを送信します。 デフォルトでは、アセットは 24 時間ごとにチェックされます。 システム設定からチェック間隔を変更できます。 次の手順を実行します：
 
-1. プロダクトメニューを開き、 ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**System Settings**］ に移動します。
-1. [**コンテンツとデータ**] 見出しの下にある ［**Assets**］ を選択します。
-1. ［**System Scope**］ &rarr; ［**Asset Publisher**］ に移動します。
-1. ［**Check Interval**］ 設定を、新しいアセットをチェックして購読しているユーザーに通知する間隔 (時間単位) に変更し、 ［**保存**］ をクリックして変更内容を適用します。
+1. Product Menuを開き、_Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_に進みます。
+1. コンテンツとデータ」の見出しの下にある「資産」を選択します。
+1. *システム スコープ* に移動します &rarr; *アセット パブリッシャー*。
+1. *Check Cron Expression*または*Check Interval*設定を、新しいアセットをチェックしてサブスクライブしたユーザーに通知する間隔（時間単位）に変更し、_Save_をクリックして変更を適用します。
 
-![チェック間隔設定は、アセットの更新をチェックする頻度を指定します。](./configuring-asset-publisher-subscriptions/images/03.png)
+![The Check Interval settings specifies how often assets are checked for updates.](./configuring-asset-publisher-subscriptions/images/03.png)
 
 ```{warning}
-この機能を無効にする必要がある場合は、 [blacklist](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md)を参照してください。 インターバルにゼロや負の数を入力しないでください。
+この機能を無効にする必要がある場合は、 [ブラックリスト](../../../system-administration/installing-and-managing-apps/managing-apps/blacklisting-osgi-components.md) コンポーネント。 インターバルにゼロや負の数を入力しないでください。
 ```
 
 ## RSSフィード購読
@@ -39,24 +40,28 @@ RSSフィードはLiferay Portal 7.2以降では廃止予定であり、デフ�
 
 アセットパブリッシャーのRSSフィード購読を有効にするには、次の手順を実行します。
 
-1. プロダクトメニューを開き、 ［**Control Panel**］ &rarr; ［**Configuration**］ &rarr; ［**System Settings**］ に移動します。
-1. ［**コンテンツとデータ**］ 見出しの下にある ［**Webコンテンツ**］ を選択します。
-1. ［**システムスコープ**］ &rarr; ［**管理**］ タブで、 ［**Show Feeds**］ ボックスをオンにします。 廃止予定のアプリの詳細は、[こちらの記事](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md)を参照してください。
+1. Product Menuを開き、_Control Panel_ &rarr; _Configuration_ &rarr; _System Settings_に進みます。
 
-    ![システム設定でRSSフィードを有効にします。](./configuring-asset-publisher-subscriptions/images/04.png)
+1. コンテンツとデータ」の見出しの下にある「ウェブコンテンツ」を選択します。
 
-1. アセットパブリッシャーウィジェットに戻り、ウィジェットの上にカーソルを置き、ウィジェットのメニューのオプションアイコン（![Options](../../../images/icon-app-options.png)）をクリックして、 ［**設定**］ を選択します。
-1. ［**Enable RSS Subscription**］ セレクターを［Yes］に切り替えます。
-1. フォームに入力し、 ［**保存**］ をクリックして変更を適用します。
+1. *System Scope* &rarr; _Administration_ タブで、_Show Feeds_ ボックスをチェックする。 廃止予定のアプリの詳細は、 [こちらの記事](../../../installation-and-upgrades/upgrading-liferay/reference/maintenance-mode-and-deprecations-in-7-4.md) を参照してください。
 
-    ![RSS購読は、RSSフィードを購読者のRSSリーダーに送信します。](./configuring-asset-publisher-subscriptions/images/05.png)
+   ![Enable RSS feeds through System Settings.](./configuring-asset-publisher-subscriptions/images/04.png)
 
-1. 有効になっていない場合は、［表示設定］タブで**［変更通知を受け取る（購読する）］** 機能を有効にします。ユーザーは **［RSS］**リンクをクリックしてRSSフィードを購読できます。
+1. Asset Publisherウィジェットに戻り、ウィジェットにカーソルを合わせて、ウィジェットのメニューにあるOptionsアイコン(![Options](../../../images/icon-app-options.png)) をクリックし、_Configuration_を選択します。
 
-![RSS購読を有効にすると、アセットパブリッシャーにRSSリンクが追加されます。](./configuring-asset-publisher-subscriptions/images/06.png)
+1. *RSS購読を有効にする*セレクタを「はい」に切り替えます。
+
+1. フォームに記入し、_保存_をクリックして変更を適用します。
+
+   ![An RSS subscription sends RSS feeds to subscribers' RSS readers.](./configuring-asset-publisher-subscriptions/images/05.png)
+
+1. もし有効になっていなければ、「表示設定」タブの「_購読_」機能を有効にしてください。 ユーザーは_RSS_リンクをクリックしてRSSフィードを購読することができます。
+
+![Enabling RSS Subscription adds a RSS link to the Asset Publisher.](./configuring-asset-publisher-subscriptions/images/06.png)
 
 ## 関連情報
 
-- [メールの設定](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
-- [アセットパブリッシャーウィジェットを使用したアセットの表示](./displaying-assets-using-the-asset-publisher-widget.md)
-- [アセットパブリッシャー表示設定の構成](./configuring-asset-publisher-display-settings.md)
+* [メールの設定](../../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
+* [アセットパブリッシャーウィジェットを使用したアセットの表示](./displaying-assets-using-the-asset-publisher-widget.md)
+* [アセットパブリッシャー表示設定の設定](./configuring-asset-publisher-display-settings.md)

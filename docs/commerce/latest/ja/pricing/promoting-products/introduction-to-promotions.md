@@ -1,43 +1,45 @@
 # プロモーションについて
 
-Liferay で **Promotions** を作成し、すべての顧客または一連の顧客にプロモーション価格を提供することができます。 プロモーションは、商品の定価とプロモーション価格の差額を視覚的に表示します。 これは、顧客が受けている割引を強調したり、個人または顧客のグループに対して複数の価格をサポートするのに便利です。
+Liferayで_Promotions_を作成し、すべての顧客または一組の顧客にプロモーション価格を提供することができます。 プロモーションでは、商品の定価とプロモーション価格の差額を視覚的に表示する。 これは、顧客が受けている割引を強調し、個人または顧客のグループに対して複数の価格をサポートするのに便利です。
 
-![商品の定価とプロモーション価格の差額を示すプロモーション。](./introduction-to-promotions/images/01.png)
+![A Promotion showing difference between a product's list price and its promotion price](./introduction-to-promotions/images/01.png)
 
 ```{note}
-Liferay DXP 7.4 U42/GA42以前では、Promotion PriceはSale Priceと呼ばれていました。
+Liferay DXP 7.4 U42/GA42以前では、プロモーション価格はセール価格と呼ばれていました。
 ```
 
 ## 適合性
 
-**Eligibility** タブをクリックし、適切なオプションを選択することで、すべての顧客または特定の顧客のセットに対してプロモーション価格を定義することができます。 **アカウント** , **アカウントグループ** , **チャンネル** または **オーダータイプ** に基づいて、プロモーションを絞り込むことができます。
+*対象者*タブをクリックし、適切なオプションを選択して、すべての顧客または特定の顧客に対するプロモーション価格を定義します。 アカウント、アカウントグループ、チャネル、または注文タイプに基づいてプロモーションを絞り込むことができます。
 
-![適格性タブを使用して、プロモーションを特定のアカウント、アカウントグループ、チャンネル、または注文タイプに絞り込むことができます。](./introduction-to-promotions/images/02.png)
+![Use the eligibility tab to narrow down your promotion to specific accounts, account groups, channels, or order types.](./introduction-to-promotions/images/02.png)
 
 ## お知らせ一覧
 
-**Entries** タブを使用して、特定の SKU のプロモーションを定義することができます。 **Entries** タブをクリックし、SKUを検索し、Selectをクリックします。 選択したら、EntriesセクションからSKUをクリックし、Promotion Priceを追加してください。 詳しくは、 [エントリーの追加](./using-the-promotion-base-list.md#adding-entries) をご覧ください。
+Entriesタブを使用して、特定のSKUのプロモーションを定義することができます。 *Entries*タブをクリックし、SKUを検索し、_Select_をクリックします。 選択したら、EntriesセクションからSKUをクリックし、プロモーション価格を追加します。 詳しくは [エントリーの追加](./using-the-promotion-base-list.md#adding-entries) を参照のこと。
+
+{bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA98+` SKU に [単位](../../product-management/creating-and-managing-products/products/units-of-measure.md) を設定している場合、該当する場合は各単位ごとにプロモーション価格を入力できます。
 
 ## 価格修飾子
 
-**Price Modifiers** 一連の製品の価格を一定量または割合で調整することができます。 Price Modifiersは、商品の基本価格を使ってプロモーション価格を計算することで、プロモーションを簡単に維持することができます。 同じSKUを対象とするプライスモディファイアとエントリーがある場合、エントリーの価格がプライスモディファイアより優先されます。
+_価格修正_は、一定額またはパーセンテージで製品範囲の価格を調整することができます。 価格修飾子は、製品の基本価格を使用してプロモーション価格を計算することにより、プロモーションを簡単に維持することができます。 同じSKUを対象とした価格修正とエントリーがある場合、価格修正よりもエントリーの価格が優先されます。
 
-Price Modifiers は、 **Catalog** , **Category** , **Product Group** , **Product** を対象に使用することができます。 価格修正機能は、対象グループ内の全商品に適用されます。 これは、各SKUを具体的にターゲットにしなければならないEntriesセクションとは異なります。 詳しくは、 [Price Modifier の追加](./creating-a-promotion.md#adding-a-price-modifier) をご覧ください。
+価格修飾子を使用すると、カタログ、カテゴリー、商品グループ、または商品をターゲットにすることができます。 価格修正は、対象グループの全商品に適用される。 これは、各SKUを具体的にターゲットにしなければならないエントリーのセクションとは異なる。 詳細は、 [価格修正記号の追加](./creating-a-promotion.md#adding-a-price-modifier) を参照。
 
 ## プロモーションと価格表
 
-プロモーションは、機能的には価格表と似ていますが、割引価格を決定するために一緒に使用されます。 下図を参照し、計算を理解してください。
+プロモーションは、機能的には価格表に似ているが、割引価格を決定するために併用される。 下図を参照して計算方法を理解してください。
 
-![商品のアクティブプライスを算出する。](./introduction-to-promotions/images/03.png)
+![Calculation of a product's active price.](./introduction-to-promotions/images/03.png)
 
-商品の有効価格が決定されると、その有効価格に対して割引が適用されます。 詳しくは、 [割引の紹介](./introduction-to-discounts.md) をご覧ください。
+商品の有効価格が決定されると、その有効価格に対して割引が適用される。 詳しくは [割引の紹介](./introduction-to-discounts.md) を参照。
 
-他の顧客に対して通常価格よりも安い特別価格を提供したい場合、価格表とプロモーションの両方を使用できますが、価格表では価格の引き下げが表示されません。 下の画像をご覧ください。
+ある顧客に対して、他の顧客の通常価格よりも安い特別価格を提供したい場合、価格リストとプロモーションの両方を使用できますが、価格リストでは価格の引き下げは表示されません。 下の画像をご覧ください。
 
-![プロモーションとプライスリストによる商品価格の比較。](./introduction-to-promotions/images/04.png)
+![Comparison of a product's price with a promotion and a price list.](./introduction-to-promotions/images/04.png)
 
 ## 関連トピック
 
-* [プロモーションを作成する](./creating-a-promotion.md)
-* [プロモーションベースリストの活用](./using-the-promotion-base-list.md)
-* [プロモーション参照](./promotions-reference.md)
+* [プロモーションの作成](./creating-a-promotion.md)
+* [プロモーション・ベース・リストの使用](./using-the-promotion-base-list.md)
+* [プロモーション・リファレンス](./promotions-reference.md)

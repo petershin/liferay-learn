@@ -1,28 +1,32 @@
 # アニメーションGIFの最適化を有効にする
-<!--TASK: Relocate to Adaptive Media section. -->
-アニメーションGIFをスケーリングするために、アダプティブメディアは [Gifsicle](https://www.lcdf.org/gifsicle/) と呼ばれる外部ツールを使用します。 Gifsicleがインストールされておらず、`image/gif`がサポートされている MIME種別として含まれている場合、アダプティブメディアはGIFの1フレームのみをスケーリングし、静的GIFを作成します。
 
-アダプティブメディアを使用してアニメーションGIFを最適化するには、3つの手順が必要です。DXPが実行されているローカルサーバーにGifsicleをインストールし、`PATH`環境変数を設定してから、DXPの **システム設定** でGifsicleを有効にします。
+<!--TASK: Relocate to Adaptive Media section. -->
+
+アニメーションGIFをスケーリングするために、アダプティブメディアは [Gifsicle](https://www.lcdf.org/gifsicle/) と呼ばれる外部ツールを使用します。 Gifsicleがインストールされておらず、`image/gif`がサポートされているMIMEタイプとして含まれている場合、Adaptive MediaはGIFの1フレームだけをスケーリングし、静的なGIFを作成します。
+
+Adaptive Mediaを使用してアニメーションGIFを最適化するには、DXPが動作しているローカルサーバーにGifsicleをインストールし、環境変数`PATH`を設定し、DXPの_システム設定_でGifsicleを有効にするという3つのステップが必要です。
 
 1. [Gifsicle](https://www.lcdf.org/gifsicle/) をインストールし、サーバー環境のパスに追加します。
 
-1. ［**グローバルメニュー**］ &rarr; ［**Control Panel**］ に移動します。
+1. _グローバルメニュー_ &rarr; _コントロールパネル_ に移動します。
 
-    ![コントロールパネルに移動します。](./enabling-optimization-of-animated-gifs/images/01.png)
+   ![Navigate to the Control Panel.](./enabling-optimization-of-animated-gifs/images/01.png)
 
-1. ［**System Settings**］ をクリックします。
-1. ［**Adaptive Media**］ をクリックします。
+1. システム設定_をクリックします。
 
-   ![アダプティブメディアのシステム設定にアクセスします。](./enabling-optimization-of-animated-gifs/images/02.png)
+1. アダプティブ・メディア」をクリックする。
 
-1. ［**システムスコープ**］ の下の左側のナビゲーションにある ［**Images**］ をクリックします。
-1. 下にスクロールして、 ［**Gifsicle Enabled**］ の横にあるボックスをクリックします。
+   ![Access the Adaptive Media system settings.](./enabling-optimization-of-animated-gifs/images/02.png)
 
-    ![Gifsicleを有効にします。](./enabling-optimization-of-animated-gifs/images/03.png)
+1. 左ナビゲーションの「システム・スコープ」の下にある「画像」をクリックします。
 
-1. 完了したら、 ［**Save**］ をクリックします。
+1. 下にスクロールし、_Gifsicle Enabled_の横のボックスをクリックします。
+
+   ![Enable Gifsicle.](./enabling-optimization-of-animated-gifs/images/03.png)
+
+1. 終了したら_Save_をクリックする。
 
 ## 関連トピック
 
-* [アダプティブメディアの仕組み](../publishing-and-sharing/serving-device-and-screen-optimized-media/how-adaptive-media-works.md)
-* [サイトコンテンツでの適用された画像の使用](../publishing-and-sharing/serving-device-and-screen-optimized-media/using-adapted-images-in-site-content.md)
+* [アダプティブ・メディアの使用](../publishing-and-sharing/using-adaptive-media.md)
+* [サイト・コンテンツにおける画像の使用](../publishing-and-sharing/using-adaptive-media/using-adapted-images-in-site-content.md)

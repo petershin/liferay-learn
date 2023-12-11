@@ -3,7 +3,7 @@
 以下のステップでは、サイトに新しいページを追加し、一般的なオプションを設定する方法を説明します。 残りのページ設定の構成方法については、 [個別ページの構成](../page-settings/configuring-individual-pages.md) を参照するか、 [ページセットの構成](../page-settings/configuring-page-sets.md) を参照して、 [ページセットのオプションを構成する](../understanding-pages/understanding-pages.md#page-sets) 。
 
 ```{note}
-Liferay 7.4 U22+とGA22+では、新規インストール時にプライベートページが無効になります。 これらを有効にするには、 [プライベートページを有効にする](../understanding-pages/understanding-pages.md#enabling-private-pages) を参照してください。
+Liferay 7.4 U22+とGA22+では、新規インストール時にプライベートページが無効になります。 これを有効にするには、 [プライベートページを有効にする](../understanding-pages/understanding-pages.md#enabling-private-pages) を参照してください。
 ```
 
 ## 新しいページを追加する
@@ -20,7 +20,7 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 
 1. ページテンプレートセットで、基本テンプレートまたはグローバルテンプレートを選択します。
 
-   空の [コンテンツ・ページ](../understanding-pages/understanding-pages.md#page-types) から始めるには、 _Blank_ [マスター・ページ・テンプレート](../defining-headers-and-footers/master-page-templates.md) を選択します。
+   空の [コンテンツページ](../understanding-pages/understanding-pages.md#page-types) から始めるには、 _Blank_ [マスターページテンプレート](../defining-headers-and-footers/master-page-templates.md) を選択します。
 
    または、他の利用可能なテンプレートから選択します。
 
@@ -33,13 +33,14 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 ウィジェットページを作成した場合、ページの設定オプションにリダイレクトされます。
 
 ```{tip}
-デフォルトでは、新しいページはサイトのナビゲーション・メニューに含まれます。 このナビゲーション・メニューを設定するには、 [サイト・ナビゲーションの管理](../../site-navigation/managing-site-navigation.md) を参照してください。
+デフォルトでは、新しいページはサイトのナビゲーション・メニューに含まれます。 このナビゲーション・メニューを設定するには、 [ナビゲーション・メニュー・アプリケーションを使う](../../site-navigation/configuring-menu-displays.md) を参照。
 ```
+
 ### ページツリーメニューから新しいページを追加する
 
-{bdg-secondary}`利用可能です：Liferay DXP/Portal 7.3+`.
+{bdg-secondary}利用可能です：Liferay DXP/Portal 7.3+\`.
 
-1. サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、_ページツリー_ (![ページツリー](../../../../images/icon-page-tree.png))をクリックします。
+1. *サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、_ページツリー_ (![ページツリー](../../../../images/icon-page-tree.png))をクリックします。
 
 1. *追加*([ボタン追加](../../../images/icon-add-app.png))をクリックし、_ページ追加_を選択します。
 
@@ -50,6 +51,7 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 ```{tip}
 下書きステータスのページには、ページツリーの名前の横にアスタリスク(*)が付いています。
 ```
+
 ## サブページを追加する
 
 子ページはページ管理画面またはページツリー（Liferay DXP 7.3+のみ）から追加できます。
@@ -67,6 +69,7 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 ```{tip}
 ページの横にあるアクションメニュー（！[アクションメニュー](../../../images/icon-actions.png)）を使って、コンテンツページのドラフトをプレビューすることができます（Liferay DXP 7.2+）。 これらのオプションは、下書きステータスのページと、ページ編集権限を持つユーザーに利用可能です。
 ```
+
 ### ページツリーからサブページを追加する
 
 {bdg-secondary}`利用可能です：Liferay DXP/Portal 7.3+`.
@@ -98,5 +101,3 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 [ページについて](../understanding-pages/understanding-pages.md) 
 
 [コンテンツページの使用](../using-content-pages.md) 
-
-[サイトナビゲーションの管理](../../site-navigation/managing-site-navigation.md) 

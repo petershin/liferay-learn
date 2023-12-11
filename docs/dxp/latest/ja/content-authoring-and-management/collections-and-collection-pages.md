@@ -1,11 +1,10 @@
 ---
 toc:
-  - collections-and-collection-pages/about-collections-and-collection-pages.md
-  - collections-and-collection-pages/creating-collections.md
-  - >-
-    - collections-and-collection-pages/collection-providers.md
-  - >-
-    ../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md
+  - ../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md
+  - ../site-building/displaying-content/collections-and-collection-pages/creating-collections.md
+  - ../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md
+  - ../site-building/displaying-content/collections-and-collection-pages/collection-providers.md
+  - ../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md
 ---
 # コレクションとコレクションページ
 
@@ -14,14 +13,14 @@ toc:
 
 collections-and-collection-pages/about-collections-and-collection-pages.md
 collections-and-collection-pages/creating-collections.md
-../site-building/displaying-content/additional-content-display-options/displaying-collections.md
+../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md
 collections-and-collection-pages/collection-providers.md
 ../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md
 
 ```
 
-* [コレクションとコレクションページについて](./collections-and-collection-pages/about-collections-and-collection-pages.md)
-* [コレクションの作成](./collections-and-collection-pages/creating-collections.md)
-* [コレクションの表示](./../site-building/displaying-content/additional-content-display-options/displaying-collections.md)
-* [コレクションプロバイダー](./collections-and-collection-pages/collection-providers.md)
-* [コレクションのパーソナライズ](./../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)
+* [コレクションとコレクション・ページについて](../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [コレクションの作成](../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)
+* [コレクションの表示](./../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md)
+* [コレクション・プロバイダー](./../site-building/displaying-content/collections-and-collection-pages/collection-providers.md)
+* [パーソナライズ・コレクション](./../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md)

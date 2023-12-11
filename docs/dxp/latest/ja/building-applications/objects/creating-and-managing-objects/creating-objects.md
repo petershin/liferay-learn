@@ -1,31 +1,36 @@
 # オブジェクトの作成
 
-{bdg-secondary}`Liferay 7.4+`
+{bdg-secondary}`liferay 7.4 2023.Q4+/GA102+`.
 
-Liferay Objectは、Liferay UIの開発機能を提供します。 オブジェクトを使用すると、コードを記述したり、モジュールを手動でデプロイしたりすることなく、完全に統合されたLiferayアプリケーションを構築できます。 このプロセスには、オブジェクト定義の初期ドラフトの [作成](#creating-object-drafts) 、オブジェクトドラフトの [編集](#editing-object-drafts) 、最後にドラフトを [公開](#publishing-object-drafts) して新しいアプリケーションを作成することが含まれます。 オブジェクトドラフトを公開すると、完全に統合されたLiferayアプリケーションが作成され、オブジェクト管理ページを介していつでも管理および拡張できます。
+Liferay Objectは、Liferay UIの開発機能を提供します。 オブジェクトを使用すると、コードを記述したり、モジュールを手動でデプロイしたりすることなく、完全に統合されたLiferayアプリケーションを構築できます。 このプロセスには、 [](#creating-object-drafts) オブジェクトドラフトを作成し、 [](#editing-object-drafts) を編集し、最後に [](#publishing-object-drafts) をパブリッシュして新しいアプリケーションを作成する。
 
-```{important}
-Liferay はオブジェクト定義を公開するときにデータベーステーブルを作成するので、 [Database Configurations](../../../installation-and-upgrades/reference/database-configurations.md#high-security-database-user-practices) で説明されている高セキュリティのデータベースプラクティスで Objects を使用することはできません。
-```
+ここでは、デフォルトのオブジェクト UI を使用してオブジェクト定義を作成する方法を学びますが、モデル・ビルダー GUI を使用してオブジェクト定義を作成、管理、拡張することもできます。 詳しくは [Using Objects Model Builder](./using-the-objects-model-builder.md) を参照してください。
+
+!!! 重要
+Liferayはオブジェクト定義を公開する際にデータベーステーブルを作成するので、 [Database Configurations](../../../installation-and-upgrades/reference/database-configurations.md#high-security-database-user-practices) で説明されている高セキュリティのデータベースプラクティスでObjectsを使用することはできません。
+
 ## オブジェクトドラフトの作成
 
-オブジェクトドラフトは、オブジェクトアプリケーションを作成するために必要なデータを格納するアプリケーションテンプレートです。 次の手順に従って、オブジェクトドラフトを作成します。
+オブジェクトドラフトは、オブジェクトアプリケーションを作成するために必要なデータを格納するアプリケーションテンプレートです。 ドラフト・オブジェクトを作成する、
 
 1. _グローバルメニュー_ (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
 
-2. *追加*ボタン(![追加ボタン](../../../images/icon-add.png))をクリックします。
+   !!! note
+   Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには _Object Folder > View_ 権限も必要です。 詳細は [Objects Application Permissions](../objects-application-permissions.md) を参照。
 
-3. オブジェクトドラフトのこれらの詳細を提供します。
+1. 目的の [オブジェクトフォルダ](./organizing-objects-with-folders.md) に移動し、_追加_ ボタン (![追加ボタン](../../../images/icon-add.png))をクリックします。
 
-   **ラベル**Objects admin およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
+1. ドラフトにこれらの詳細を提供する。
+
+   **ラベル**:Objects admin およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
 
    **Plural Label**：UIにおけるオブジェクト・アプリケーションの表示名を決定します。
 
-   **オブジェクト名**：オブジェクトの `definition.name` を決定し、オブジェクトが公開されると変更できません。
+   **オブジェクト名**：オブジェクトの `definition.name` を決定し、公開後に変更することはできません。
 
    ![Enter a Label, Plural Label, and Name for the object draft.](./creating-objects/images/01.png)
 
-4. ［_Save_］をクリックします。
+1. ［_保存_］をクリックします。
 
 保存されると、設定やデータ要素のない空白のオブジェクトドラフトが作成されます。 ドラフトは、オブジェクト管理でシステムオブジェクトと一緒に表示できます。 作成プロセスを完了するには、ドラフトを [編集](#editing-object-drafts) してから、Liferayインスタンスに [公開](#publishing-object-drafts) する必要があります。
 
@@ -33,13 +38,14 @@ Liferay はオブジェクト定義を公開するときにデータベーステ
 
 ## オブジェクトドラフトの編集
 
-{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`.
+{bdg-secondary}`liferay 7.4 2023.Q3+/GA98+`.
 
 オブジェクトを公開する前に、要素の追加や設定を行うことができます。 これには、フィールドの追加、バリデーションの定義、データ範囲の設定などが含まれます。
 
 ```{note}
 フィールド、リレーションシップ、またはレイアウトを追加するたびに、オブジェクトドラフトが自動的に保存されます。 ただし、他のタブに移動すると、［Details］タブで保存されていない変更はすべて失われます。
 ```
+
 オブジェクトドラフトを編集するには、次の手順に従います。
 
 1. オブジェクト管理ページから、新しく作成したオブジェクトのドラフトをクリックして、編集を開始します。
@@ -96,7 +102,7 @@ Liferay はオブジェクト定義を公開するときにデータベーステ
 
     **Company**（デフォルト）：Companyでスコープされた場合、オブジェクトのデータはLiferayインスタンスごとに保存されます。
 
-    **サイト**：Site**：Siteによってスコープされた場合、オブジェクトのデータはSiteごとに保存されます。
+    **サイト**：Siteによってスコープされた場合、オブジェクトのデータはSiteごとに保存されます。
 
 1. パネルリンクを選択し、Liferayのどこに定義が表示されるかを決定します。
 
@@ -130,19 +136,19 @@ Liferay はオブジェクト定義を公開するときにデータベーステ
 
    有効になっている間、Liferayはエントリーイベントの履歴を保持し、AuditアプリケーションまたはREST APIコールで見ることができます。[オブジェクト定義イベントの監査](./auditing-object-events.md) を参照してください。
 
-1. {bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` オブジェクトエントリーのドラフトモードを有効または無効にします。
+1. {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` オブジェクトエントリーのドラフトモードを有効または無効にする。
 
    有効にすると、ユーザはエントリを下書きとして保存し、後で確定することができます。下書きを保存しても、カスタムバリデーション、ワークフロープロセス、エントリー作成時にトリガーされるアクションはトリガーされません。
 
    ```{note}
-   この設定はいつでも行うことができます。下書きモードを無効にしても、既存のエントリーのステータスは変更されません。
+   この設定はいつでも行うことができます。ドラフトモードを無効にしても既存のエントリーの状態は変わりません。
    ```
 
-1. カスタムテキスト[fields](./fields.md)の翻訳サポートを有効または無効にします。
+1. [カスタムテキスト[フィールド](./fields.md)の翻訳サポートを有効または無効にします。
 
     有効にすると、カスタムテキストフィールドの翻訳を有効にすることができます。 詳しくは [Object Definitions and Entriesのローカライズ](./localizing-object-definitions-and-entries.md) を参照してください。
 
-1. ［_Save_］をクリックします。
+1. ［_保存_］をクリックします。
 
 ドラフトの設定と編集が終わったら、 [公開](#publishing-object-drafts) できます。
 
@@ -172,7 +178,7 @@ Liferay はオブジェクト定義を公開するときにデータベーステ
 
 ### 公開されたオブジェクトの構成制限
 
-{bdg-secondary}`Liferay 7.4 U86+/GA86+`.
+{bdg-secondary}`liferay 7.4 U86+/GA86+`.
 
 データの損失やシステムの競合を防ぐため、Liferayは公開後のオブジェクト定義に対してこれらの設定オプションを制限しています：
 
@@ -186,6 +192,7 @@ Liferayはまた、いくつかのカスタムフィールドオプションを�
 ```{note}
 Liferay 7.4 U85/GA85以前のバージョンでは、公開時にオブジェクト定義に含まれるフィールドを削除することはできません。
 ```
+
 ## 関連トピック
 
 * [オブジェクトの概要](../../objects.md) 

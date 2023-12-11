@@ -1,35 +1,17 @@
 # Hubspot
 
-[Hubspot](https://www.hubspot.com/) は、ライブチャット機能を含むCRMプラットフォームです。 Hubspotとの統合を有効にするには、ライブチャットを作成し、Hubspotアカウントから取得できる2つの値（HubspotユーザーアカウントIDとHubspot APIトークン）の組み合わせを作成する必要があります。
+[Hubspot](https://www.hubspot.com/) は、ライブチャット機能を含む CRM プラットフォームです。 [ハブスポットとの統合](../../enabling-automated-live-chat-systems.md) を有効にするには、ライブチャットの作成とハブスポットユーザーアカウントIDが必要です。
 
-ライブチャットを作成し設定するには、 [Hubspotのナレッジベース](https://knowledge.hubspot.com/chatflows/create-a-live-chat) の手順に従ってください。
+```{important}
+ハブスポットとの統合を有効にするには、アクティブなライブチャットが必要です。 ライブチャットを作成し設定するには、 [Hubspotのナレッジベース](https://knowledge.hubspot.com/chatflows/create-a-live-chat) の手順に従ってください。
+```
 
 ## HubspotユーザーアカウントIDを見つける
 
 1. [Hubspotアカウント](https://app.hubspot.com/login) にログインします。
 
-1. 右上隅にあるプロフィールに移動します。
+2. 右上隅にあるプロフィールに移動します。
 
-    使用するチャネルに対応するアカウント番号をコピーします。 この番号は、Liferay Portalで［クリックでチャット］を有効にするときに使用されるアカウントIDに対応しています。
+   使用するチャネルに対応するアカウント番号をコピーします。 この番号は、Liferay PortalでClick to Chatを有効にする際に使用するチャットプロバイダアカウントIDに対応します。
 
-    ![右上隅にあるプロフィールに移動し、使用するチャンネルへのアカウント番号をコピーします。](./hubspot/images/01.png)
-
-## Hubspot APIトークンを取得する
-
-Hubspotアカウントにログインしている状態で、
-
-1. **Settings** ボタンをクリックします。
-
-    ![［Settings］ボタンをクリックします。](./hubspot/images/02.png)
-
-1. ページの左側にある ［**Integrations**］ &rarr; ［**API Key**］ をクリックします。
-
-    ![［Integrations］をクリックして、APIキーにアクセスします。](./hubspot/images/03.png)
-
-1. ［**Show**］ をクリックして、APIトークンキーを表示します。
-
-    ![［Show］をクリックして、APIトークンキーを表示します。](./hubspot/images/04.png)
-
-## まとめ
-
-ユーザーアカウントIDとAPIトークンを取得したら、それらを組み合わせて、Liferayインスタンスとの[ライブチャットを有効にする](../../enabling-automated-live-chat-systems.md)ときにチャットプロバイダーアカウントIDとして使用します。 チャットプロバイダーアカウントIDは、`[Hubspot Account ID]/[Hubspot API Token]`の形式に従います。
+   ![Go to your profile in the top right corner and copy the account number to the channel you want to use.](./hubspot/images/01.png)

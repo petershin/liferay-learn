@@ -1,61 +1,61 @@
 # プロモーションを作成する
 
-以下の手順で、 **Promotion** を作成し、 **Catalog** の全製品の価格を7月4日に20％引き下げることができます。 **アカウント** , **アカウントグループ** , **チャンネル** , **オーダータイプ** のすべてがこのプロモーションの対象となります。
+以下の例では、7月4日にカタログの全商品を20％値下げするプロモーションを作成しています。 すべてのアカウント、アカウントグループ、チャネル、注文タイプが対象となります。
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 **commerce** &rarr; **プロモーション** をクリックします。
+1. *グローバルメニュー* ([アプリケーションメニューアイコン](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Promotions_に移動します。
 
-   ![グローバルメニューの「プロモーション」をクリックし、新しいプロモーションを作成します。](./creating-a-promotion/images/01.png)
+   ![Click on promotions from the Global Menu and create a new promotion.](./creating-a-promotion/images/01.png)
 
-1. **追加** ボタン (![Add icon](../../images/icon-add.png)) をクリックし、次の情報を入力します。
+1. *Add* (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力する。
 
-   **名称** 4th of Julyプロモーション
+   **名称：**7月4日プロモーション
 
    **カタログ:** Minium
 
-   **通貨：** USD
+   **通貨：**米ドル
 
-   ![新しいプロモーションの名前、カタログ、通貨を入力します。](./creating-a-promotion/images/02.png)
+   ![Enter a name, catalog, and currency for the new promotion.](./creating-a-promotion/images/02.png)
 
-1. ［**Submit**］ をクリックします 。
+1. *Submit*をクリックしてください。
 
-選択したカタログに新しいプロモーションが作成されます。 **ベースプロモーションリスト** というカタログがすでに用意されていることに注目してください。 詳しくは、 [プロモーションベースリストの使用](./using-the-promotion-base-list.md) をお読みください。
+これにより、選択したカタログに新しいプロモーションが作成される。 すでにカタログの_ベース・プロモーション・リスト_が用意されていることに注目してほしい。 詳しくは [Using Promotion Base List](./using-the-promotion-base-list.md) をお読みください。
 
-![プロモーション名の変更、優先順位の割り当て、 **親価格表** の選択、 **価格タイプ** の選択が可能です。](./creating-a-promotion/images/03.png)
+![You can change the name of the promotion, assign a priority, and select the Parent Price List and the Price Type.](./creating-a-promotion/images/03.png)
 
-詳細」では、プロモーション名の変更、優先度の割り当て、親価格表と価格タイプの選択が可能です。 7月4日のプロモーションなので、Scheduleの項目からPublish DateとExpiration Dateを選択し、スケジュールを設定することができます。 **Publish** をクリックし、プロモーションを有効にします。 1つのアカウントに複数のプロモーションが適用される場合、より優先順位の高いプロモーションが優先されます。 特定のフィールドの詳細については、 [プロモーション参照](./promotions-reference.md) を参照してください。
+詳細セクションでは、プロモーション名の変更、優先順位の割り当て、親価格リストと価格タイプの選択ができます。 7月4日のプロモーションなので、スケジュールセクションから_公開日_と_有効期限_を選択してスケジュールを設定することができます。 プロモーションを有効にするには、_Publish_をクリックしてください。 1つのアカウントに複数のプロモーションが適用される場合、優先順位の高いプロモーションが優先されます。 特定のフィールドの詳細については、 [Promotions Reference](./promotions-reference.md) 。
 
-## プライスモディファイアの追加
+## 価格修正の追加
 
-この例では、プロモーションによって、カタログに掲載されているすべての商品の価格が20％引き下げられます。 そのためには、Price Modifierを追加する必要があります。
+この例では、カタログに掲載されている全商品の価格を20％引き下げるプロモーションである。 そのためには、価格修正を加える必要がある。
 
-1. **Price Modifiers** タブをクリックします。
+1. *価格修正*タブをクリックします。
 
-1. **追加** ボタン (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
+1. *Add* (![Add icon](../../images/icon-add.png)) をクリックし、以下の情報を入力する。
 
-   **名称** 20％オフ
+   **名称：** 20％オフ
 
-   **ターゲット：** カタログ
+   **カタログ
 
-   **修飾子：** パーセント
+   **モディファイア:**パーセンテージ
 
-   ![新しい価格修正項目の名前、ターゲット、修正項目を入力します。](./creating-a-promotion/images/04.png)
+   ![Enter a name, target, and modifier for the new price modifier.](./creating-a-promotion/images/04.png)
 
-1. ［**送信**］ をクリックします 。
+1. *Submit*をクリックしてください。
 
 ```{note}
-プロモーション自体に有効期限が設定されている場合は、価格修飾子に有効期限を設定する必要はありません。
+すでにプロモーション自体に有効期限を設定している場合は、価格修飾子に有効期限を設定する必要はありません。
 ```
 
-ここで、新しいPrice Modifierを設定する必要があります。 リストから項目をクリックし、パーセンテージの金額を「-20」と入力します。 その後、 **Active** のトグルでアクティブにします。 その後、 **保存** をクリックし、 **公開** をクリックします。 詳しくは、 [Price Modifiers Reference](./promotions-reference.md#price-modifiers-reference) をご覧ください。
+新しい価格修飾子を設定する必要があります。 リストからエントリーをクリックし、パーセンテージを-20と入力する。 その後、_Active_トグルを使ってアクティブにする。 その後、_Save_をクリックし、_Publish_をクリックします。 詳細については、 [価格修正条項リファレンス](./promotions-reference.md#price-modifiers-reference) を参照のこと。
 
-![プライスモディファイアを設定し、アクティベートする。](./creating-a-promotion/images/05.png)
+![Configure the price modifier and activate it.](./creating-a-promotion/images/05.png)
 
-これによりキャンペーンが発動し、予定日にカタログ掲載の全商品が20％値下げされます。 有効な割引がある場合は、割引後の価格に計算されます。 特定の製品を対象としたプロモーションを行う場合は、「Entries」タブでエントリーを追加し、その価格を設定します。 また、 [Tiered Pricing または Bulk Pricing](./../using-price-tiers.md#bulk-pricing-vs-tier-pricing) をここで設定することができます。 詳しくは、 [エントリーの追加](./using-the-promotion-base-list.md#adding-entries) をご覧ください。
+これにより、プロモーションが有効になり、カタログに掲載されている全商品の価格が、予定日に20％値下げされます。 有効な割引がある場合は、割引後の価格で計算されます。 特定の商品をターゲットにプロモーションを行う場合は、「エントリー」タブでエントリーを追加し、価格を設定します。 また、 [Tiered PricingまたはBulk Pricing](./../using-price-tiers.md#bulk-pricing-vs-tier-pricing) 。 詳しくは [エントリーの追加](./using-the-promotion-base-list.md#adding-entries) を参照のこと。
 
-![予定日にカタログ掲載の全商品を20％値下げします](./creating-a-promotion/images/06.png)
+![The prices of all products in the catalog are reduced by 20% on the scheduled date](./creating-a-promotion/images/06.png)
 
 ## 関連トピック
 
-* [プロモーションについて](./introduction-to-promotions.md)
-* [プロモーションベースリストの活用](./using-the-promotion-base-list.md)
-* [プロモーション参照](./promotions-reference.md)
+* [プロモーション入門](./introduction-to-promotions.md)
+* [プロモーション・ベース・リストの使用](./using-the-promotion-base-list.md)
+* [プロモーション・リファレンス](./promotions-reference.md)

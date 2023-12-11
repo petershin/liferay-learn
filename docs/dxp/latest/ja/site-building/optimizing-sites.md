@@ -1,7 +1,7 @@
 ---
 toc:
-- ./optimizing-sites/ab-testing.md
-- ./optimizing-sites/building-a-responsive-site.md
+  - ./optimizing-sites/ab-testing.md
+  - ./optimizing-sites/building-a-responsive-site.md
 ---
 # サイトの最適化
 
@@ -19,11 +19,11 @@ optimizing-sites/building-a-responsive-site.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} あなたのページのフレンドリーURLを設定する
+:::{grid-item-card} ページのフレンドリURLの設定
 :link: ./creating-pages/page-settings/configuring-your-pages-friendly-url.md
 :::
 
-:::{grid-item-card} あなたのサイトのフレンドリーURLを設定する
+:::{grid-item-card} サイトのフレンドリURLを設定する
 :link: ./site-settings/managing-site-urls/configuring-your-sites-friendly-url.md
 :::
 
@@ -35,19 +35,19 @@ optimizing-sites/building-a-responsive-site.md
 :link: ./site-settings/managing-site-urls/configuring-virtual-hosts-site-urls.md
 :::
 
-:::{grid-item-card} リダイレクトツールの使用
+:::{grid-item-card} リダイレクションツールの使用
 :link: ./site-settings/managing-site-urls/setting-up-redirects-and-404-tracking.md
 :::
 
-:::{grid-item-card} 表示ページテンプレートのSEOとOpen Graphの設定
+:::{grid-item-card} 表示ページテンプレートのSEOとオープングラフの設定
 :link: ./displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md
 :::
 
-:::{grid-item-card} サイト用オープングラフの設定
+:::{grid-item-card} サイトのオープングラフを設定する
 :link: ./site-settings/configuring-open-graph.md
 :::
 
-:::{grid-item-card} Hreflangメタデータの設定
+:::{grid-item-card} Hreflangメタデータの構成
 :link: ./site-settings/configuring-hreflang-meta-data.md
 :::
 ::::
@@ -57,15 +57,15 @@ optimizing-sites/building-a-responsive-site.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} コンテンツパフォーマンスツールについて
-:link: ../content-authoring and-management/page-performance and-accessibility/about-the-content-performance-tool.md
+:::{grid-item-card} コンテンツパフォーマンスツールの説明
+:link: ../content-authoring and-management/page-performance-and-accessibility/about-the-content-performance-tool.md
 :::
 
-:::{grid-item-card} コンテンツパフォーマンスツールを使用したコンテンツメトリクスの分析
-:link: ../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
+:::{grid-item-card} コンテンツ・パフォーマンス・ツールを使ってコンテンツの指標を分析する
+:link: ../content-authoring and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
 :::
 
-:::{grid-item-card} SEOとアクセシビリティをページ上で分析する
+:::{grid-item-card} Analyze SEO and Accessibility on Pages
 :link: ../content-authoring and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
 :::
 ::::
@@ -79,7 +79,7 @@ optimizing-sites/building-a-responsive-site.md
 :link: ./optimizing-sites/ab-testing/ab-testing.md
 :::
 
-:::{grid-item-card} A/Bテスト要件の検証
+:::{grid-item-card} A/Bテスト要件の確認
 :link: ./optimizing-sites/ab-testing/verifying-ab-test-requirements.md
 :::
 
@@ -87,13 +87,13 @@ optimizing-sites/building-a-responsive-site.md
 :link: ./optimizing-sites/ab-testing/creating-ab-tests.md
 :::
 
-:::{grid-item-card} A/Bテストの実行とモニタリング
+:::{grid-item-card} A/Bテストの実行と監視
 :link: ./optimizing-sites/ab-testing/running and-monitoring-ab-tests.md
 :::
 
 :::{grid-item-card} A/Bテスト結果のレビューとテストバリアントの公開
 :link: ./optimizing-sites/ab-testing/reviewing-ab-test-results-and-publishing-test-variants.md
-:::  
+:::
 ::::
 
 ## レスポンシブサイトの構築
@@ -101,13 +101,10 @@ optimizing-sites/building-a-responsive-site.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} レスポンシブサイトの構築
-:link: ./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md
-:::
-
-:::{grid-item-card} モバイルデバイスのルールを作成する
-:link: ./optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md
-:::
+<!-- Eric is working on LRDOCS-11987, when he is finished, he will add the documentation link here
+:::{grid-item-card} Using the Simulation Panel
+:link: ./building-a-responsive-site/
+::: -->
 
 :::{grid-item-card} グリッドフラグメントを使用したレスポンシブレイアウトの構築
 :link: ./optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md

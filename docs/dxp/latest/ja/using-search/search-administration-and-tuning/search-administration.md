@@ -1,52 +1,66 @@
 # 検索管理
 
-［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索**］ には、接続、アクションをインデックスする、フィールドマッピングの3つの管理用UIがあります。 接続は、あなたのインストールが接続されている検索エンジンを表示し、アクションをインデックスは、再インデックス化のためのインターフェースで、フィールドマッピングは、Liferay から検索インデックスにマッピングされたフィールドを表示します。
+*コントロールパネル* &rarr; _設定_ &rarr; _検索_ には、3つの管理用UIがある：Connections、Index Actions、Field Mappings です。 接続は、あなたのインストールが接続されている検索エンジンを表示し、アクションをインデックスは、再インデックス化のためのインターフェースで、フィールドマッピングは、Liferay から検索インデックスにマッピングされたフィールドを表示します。
 
-![検索管理パネルには、3つの管理画面があります。](./search-administration/images/02.png)
+![The Search Administration panel contains three management screens.](./search-administration/images/02.png)
 
 ## つながり
 
-検索エンジンへの接続情報が表示されます。 例:
+検索エンジンへの接続情報が表示されます。 例えば、
 
 * 検索エンジンベンダー：Elasticsearch
-* クライアントバージョン：7.16.3
+* クライアントのバージョン：7.16.3
 * 有効な接続：1
 * 稼働状態：緑
-* 接続ID：\ **REMOTE\**
+* 接続ID：_REMOTE_
 * 接続タイプ：読み取り/書き込み
 * クラスター名：LiferayElasticsearchCluster
 * ノード：1
 * ノード名：lr-es
-* ノードバージョン：7.17.9
+* ノードバージョン：7.17.14
 
-## アクションをインデックスする
+## インデックス管理
 
-アクションをインデックスでは、これらのレベルのいずれかでインデックスを再作成します。
+Index Actionsでは、Liferayのデータのインデックスを再作成することができます。
 
-   * すべてのインデックス可能アセット
-   * 個々のインデックス可能アセット
-   * すべてのスペルチェック辞書
+![Re-index using the Index Actions user interface.](./search-administration/images/05.png)
 
-Liferay 7.4 以降、サーバー管理者は再インデックスアクションの範囲を特定の [仮想インスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)に制限することも可能です。 アクションをインデックスがどのインスタンスに適用されるかを選択します。
+これらのレベルのいずれかでインデックスを再作成することができます：
+
+**すべてのインデックスとタイプ、またはすべてのスペルチェック辞書のインデックスを再作成します。
+**個々のインデックス付け可能な型：**インデックス付け可能な型を個別に再インデックス付けします。
 
 1. グローバルメニュー &rarr; ［コントロールパネル］ &rarr; ［検索機能］を開き、［アクションをインデックスする］タブをクリックします。
-1. ［Execution Scope］タブを使用して、インデックスを再作成するインスタンスを選択します。
 
-   ![インデックスを再作成するインスタンスを選択します。](./search-administration/images/03.png)
+1. [Liferay 2023.Q4+/GA 102+] リインデックスモードを選択します。
+
+   ![Choose the re-indexing mode.](./re-indexing-modes/images/01.png)
+
+   Liferay 7.4 2023.Q4以降（Update/GA 102+）では、検索のダウンタイムを避けるために再インデックスのモードを設定することができます。 導入された_Concurrent_モードと_Sync_モードについては、 [Re-Indexing Modes](./re-indexing-modes.md) を参照のこと。
+
+1. [Liferay 7.4] 実行スコープタブで再インデックスするインスタンスを選択します。
+
+   ![Select the instances to re-index.](./search-administration/images/03.png)
+
+   Liferay 7.4 以降、再インデックスアクションの範囲を特定の [バーチャルインスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md) に限定することができます。
+
+1. [Liferay 2023.Q4+/GA 102+] 再インデックスを確認するダイアログで_Execute_をクリックします。
+
+   ![Confirm that you'd like to re-index.](./search-administration/images/04.png)
 
 ```{note}
-[ワークフローメトリクス](../../process-automation/workflow/using-workflow-metrics.md)は、アプリケーションの専用設定メニューから再インデックス化します。 グローバルメニューの［アプリケーション］ &rarr; ［ワークフロー］セクションの［ _Metrics_  ］をクリックし、［設定］ウィンドウを開きます (![Options](../../images/icon-actions.png)). 詳しくは、 [ワークフローメトリクスの再インデックス化](../../process-automation/workflow/using-workflow/using-workflow-metrics.md#re-indexing-workflow-metrics) を参照してください。
+[Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md) は、アプリケーションの専用設定メニューから再インデックス化されます。 グローバルメニューの［アプリケーション］ &rarr; ［ワークフロー］セクションの［_Metrics_］をクリックし、［設定］ウィンドウを開きます (![Options](../../images/icon-actions.png))。 詳しくは [Re-Indexing Workflow Metrics](../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) を参照。
 ```
 
 ### 全コンテンツの再インデックス化
 
-完全な再インデックスを実行すると、 [システムと会社のインデックス](./elasticsearch-indexes-reference.md) にあるすべての検索エンジンの文書が削除され、データベースから再作成されます。 Elasticsearchのログには、 `update_mapping` メッセージが出力されます。
+すべてのコンテンツのインデックスを再作成すると、 [システムと会社のインデックス](./elasticsearch-indexes-reference.md) にあるすべての検索エンジンのドキュメントが削除され、データベースから再作成されます。 Elasticsearch のログには `update_mapping` メッセージが出力される：
 
 ```json
 {"type": "server", "timestamp": "2023-01-10T14:33:04,513Z", "level": "INFO", "component": "o.e.c.m.MetadataMappingService", "cluster.name": "LiferayElasticsearchCluster", "node.name": "lr-es", "message": "[liferay-20097/mc59Scl8TJeuvcDR3y2W-g] update_mapping [LiferayDocumentType]", "cluster.uuid": "QnWxrpxaSUKF2upHDNWKkQ", "node.id": "thpwCzS_TvGgfVxQ-P_l9g"
 ```
 
-Liferay 7.4 U45+/GA45+ および Liferay DXP 7.3 U14+ において、Liferay のログは、システムおよび会社のインデックスについて、再インデックスの開始と終了のタイミングを報告します。 例:
+Liferay 7.4 U45+/GA45+およびLiferay DXP 7.3 U14+において、Liferayのログは、システムおよび会社のインデックスについて、再インデックスの開始と終了のタイミングをレポートします。 例えば、
 
 ```log
 2023-01-09 20:44:17.730 INFO  [liferay/background_task-2][ReindexPortalBackgroundTaskExecutor:57] Start reindexing company 0
@@ -57,20 +71,20 @@ Liferay 7.4 U45+/GA45+ および Liferay DXP 7.3 U14+ において、Liferay の
 
 以前のアップデートやLiferay Portal 7.3では、これらの [ロギング設定](../../system-administration/using-the-server-administration-panel/configuring-logging.md) を有効にすると、同様の情報が表示されます。
 
-| ロガーカテゴリー                                                                          | レベル       |
-|:--------------------------------------------------------------------------------- |:--------- |
-| com.liferay.portal.search.internal.background.task.ReindexStatusMessageSenderImpl | デバグ       |
-| com.liferay.portal.search.internal.SearchEngineInitializer                        | インフォメーション |
+| ロガーカテゴリー                                                                          | レベル   |
+| :-------------------------------------------------------------------------------- | :---- |
+| com.liferay.portal.search.internal.background.task.ReindexStatusMessageSenderImpl | DEBUG |
+| com.liferay.portal.search.internal.SearchEngineInitializer                        | INFO  |
 
 ### 個別タイプの再インデックス化
 
-個々の型（例えば、 `com.liferay.account.model.AccountEntry`）にインデックスを付け直すと、エンティティを表すインデックス文書が削除され、データベースから再作成されます。 Elasticsearchのログには、 `update_mapping` メッセージが出力されます。
+個々の型(例えば、`com.liferay.account.model.AccountEntry`)のインデックスを再作成すると、エンティティを表すインデックスドキュメントは削除され、データベースから再作成されます。 Elasticsearch のログには `update_mapping` というメッセージが出力される：
 
 ```json
 {"type": "server", "timestamp": "2023-01-10T14:38:12,302Z", "level": "INFO", "component": "o.e.c.m.MetadataMappingService", "cluster.name": "LiferayElasticsearchCluster", "node.name": "lr-es", "message": "[liferay-20097/mc59Scl8TJeuvcDR3y2W-g] update_mapping [LiferayDocumentType]", "cluster.uuid": "QnWxrpxaSUKF2upHDNWKkQ", "node.id": "thpwCzS_TvGgfVxQ-P_l9g"
 ```
 
-Liferay 7.4 U45+/GA45+ および Liferay DXP 7.3 U14+ では、Liferay のログが再インデックスの開始と終了のタイミングを報告します。 例:
+Liferay 7.4 U45+/GA45+ および Liferay DXP 7.3 U14+ では、Liferay のログが再インデックスの開始と終了のタイミングをレポートします。 例えば、
 
 ```log
 2023-01-10 14:14:00.840 INFO  [liferay/background_task-2][ReindexSingleIndexerBackgroundTaskExecutor:122] Start reindexing company 20097 for class name com.liferay.account.model.AccountEntry
@@ -79,13 +93,13 @@ Liferay 7.4 U45+/GA45+ および Liferay DXP 7.3 U14+ では、Liferay のログ
 
 ### スペルチェック辞書の再インデックス化
 
-スペルチェック辞書のインデックスを再作成すると、各言語の Liferay の辞書ファイルの内容（例： `com/liferay/portal/search/dependencies/spellchecker/en_US.txt`）が [system and company index](./elasticsearch-indexes-reference.md)に再インデックスされます。 Elasticsearchのログには、 `update_mapping` メッセージが出力されます。
+すべてのコンテンツのインデックスを再作成するたびに、スペルチェック辞書のインデックスを再作成します。 スペルチェック辞書のインデックスを再作成すると、各言語の Liferay 辞書ファイル（例：`com/liferay/portal/search/dependencies/spellchecker/en_US.txt`）の内容が [システムと会社のインデックス](./elasticsearch-indexes-reference.md) に対して再作成されます。 Elasticsearch のログには `update_mapping` というメッセージが出力される：
 
 ```json
 {"type": "server", "timestamp": "2023-01-10T14:33:14,991Z", "level": "INFO", "component": "o.e.c.m.MetadataMappingService", "cluster.name": "LiferayElasticsearchCluster", "node.name": "lr-es", "message": "[liferay-0/9ZIx-bT6TyiekzarKELQkA] update_mapping [LiferayDocumentType]", "cluster.uuid": "QnWxrpxaSUKF2upHDNWKkQ", "node.id": "thpwCzS_TvGgfVxQ-P_l9g"  }
 ```
 
-Liferay 7.4 U45+/GA45+ および Liferay DXP 7.3 U14+ では、Liferay のログが再インデックスの開始と終了のタイミングを報告します。 例:
+Liferay 7.4 U45+/GA45+ および Liferay DXP 7.3 U14+ では、Liferay のログが再インデックスの開始と終了のタイミングをレポートします。 例えば、
 
 ```log
 2023-01-10 14:16:34.170 INFO  [http-nio-8080-exec-7][BaseSpellCheckIndexWriter:278] Start indexing dictionary com/liferay/portal/search/dependencies/spellchecker/en_US.txt for company 0
@@ -102,10 +116,10 @@ Liferay 7.4 U45+/GA45+ および Liferay DXP 7.3 U14+ では、Liferay のログ
 
 ［フィールドマッピング］タブには、システムで有効なすべてのフィールドマッピングがインデックスごとに表示されます。 現在、マッピングの表示、コピー、拡大・縮小、ダークテーマでの表示が可能です。
 
-![Elasticsearchクラスター内の任意のインデックスのフィールドマッピングを検査します。](./search-administration/images/01.png)
+![Inspect the field mappings for any index in the Elasticsearch cluster.](./search-administration/images/01.png)
 
-## 関連するコンテンツ
+## 関連する内容
 
-* [検索設定のリファレンス](../search-configuration-reference.md)
-* [ポータルプロパティ](../../installation-and-upgrades/reference/portal-properties.md)
-* [Elasticsearchコネクターの設定リファレンス](../installing-and-upgrading-a-search-engine/elasticsearch/elasticsearch-connector-configuration-reference.md)
+* [検索 コンフィギュレーション リファレンス](../search-configuration-reference.md)
+* [ポータル・プロパティ](../../installation-and-upgrades/reference/portal-properties.md)
+* [Elasticsearch Connector 構成リファレンス](../installing-and-upgrading-a-search-engine/elasticsearch/elasticsearch-connector-configuration-reference.md)

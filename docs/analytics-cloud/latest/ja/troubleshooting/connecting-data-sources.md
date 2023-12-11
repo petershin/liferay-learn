@@ -12,7 +12,7 @@
 * `https://analytics-js-cdn.liferay.com`
 
 ```{note}
-{regionKey} は、ワークスペース設定時の初期選択に基づいていることに注意してください。つまり、ac-southamericaeast1, ac-europewest2, ac-europewest3, または、or ac-uswest1などが考えられます。
+なお、 {regionKey} は、ワークスペース設定時の初期選択（ac-southamericaeast1、ac-europewest2、ac-europewest3、ac-uswest1）に基づく。
 ```
 
 ```{important}
@@ -30,12 +30,12 @@
 1. 追跡されているDXPのWebサイトのページをご覧ください。
 1. ブラウザのインスペクタを開き、［ネットワーク］タブに移動します。
 1. ネットワーク タブを XHR でフィルタリングします。
-1. ページを更新してください。
-1. `osbasahpublisher`から始まるリクエストが出ていることを確認します。 リクエストは以下のスクリーンショットのようなものになります。
+1. ページを更新します。
+1. `osbasahpublisher`で始まるリクエストがあることを確認してください。 リクエストは以下のスクリーンショットのようなものになります。
 
-    ![Analytics Cloudへの接続を検証します。](connecting-data-sources/images/01.png)
+   ![Validating the connection to Analytics Cloud.](connecting-data-sources/images/01.png)
 
-    この要求が表示されている場合は、お客様のWebサイトがアナリティクス データをAnalytics Cloudワークスペースに送信していることを意味します。 リクエストペイロードをチェックして、 `channelId`という変数があることを確認してください。
+   この要求が表示されている場合は、お客様のWebサイトがアナリティクス データをAnalytics Cloudワークスペースに送信していることを意味します。 リクエストのペイロードをチェックし、`channelId`という変数があることを確認する。
 
 ### 連絡先データ
 
@@ -61,34 +61,41 @@ INFO  [liferay/scheduler_dispatch-3][SendAnalyticsMessagesMessageListener:164] D
 
 アナリティクス イベントの場合は、サイト ダッシュボードの 24 時間フィルターの訪問者メトリクスを 10 分から 15 分以内に表示できるようにする必要があります。
 
-![アナリティクス データが一定期間で入ってくる。](connecting-data-sources/images/02.png)
+![Analytics Data coming in over a period of time.](connecting-data-sources/images/02.png)
 
 セッション期間やバウンス率などの他のセッション関連データは、訪問者のセッションが終了するまで待つ必要があります。 ビジターセッションは、30分間の非活動時間が経過した時点、またはUTC 00:00:00:00のいずれか早い時点で終了したとみなされます。
 
 訪問者プロフィールは、処理に時間がかかり、時間の経過とともに利用可能になります。
 
-## サポートされていないバージョン
+## サポート対象外のバージョン
 
-**エラーメッセージ** ： `Unsupported version. This method of connection does not support the data source Liferay version. Make sure you are connecting to Liferay 7.0/7.1 instance or try a different method of connection.`
+**エラーメッセージ:** `Unsupported version. この接続方法は、データソースのLiferayバージョンをサポートしていません。 Liferay 7.0/7.1のインスタンスに接続していることを確認するか、別の接続方法を試してください。`
 
 ```{important}
-Liferay DXPのインストールは、以下のフィックスパックの最小要件を満たしている必要があります。
+Liferay DXPのインストールは、以下のフィックスパックの最小要件を満たす必要があります：
 
   * 7.4+
-  * 7.3 Fix Pack 1
-  * 7.2 Fix Pack 11
-  * 7.1 Fix Pack 22
-  * 7.0 Fix Pack 98
+  * 7.3 フィックスパック 1
+  * 7.2 フィックスパック 11
+  * 7.1 フィックスパック 22
+  * 7.0 フィックスパック 98
+
 ```
 
 **解決策：**
 
 1. [Liferay DXP 7.0 または 7.1 インスタンスと接続] していることを確認してください。
 
-1. [Liferay DXPデータソースの追加](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)の手順に従ってください。
+1. [Liferay DXPデータソースの追加](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) の手順に従ってください。
 
-1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
+1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [のportal-ext.propertiesファイル](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
 
 ## ログインしているユーザーが匿名で表示される
 
-[Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md)の場合、Analytics CloudはLiferay DXP内に存在するユーザーレコードに依存します。 したがって、 [シングルサインオンの設定](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/securing-liferay/configuring-sso.html) または [LDAPディレクトリへの接続](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) を使用している場合は、Analytics Cloudと連絡先を同期する前に、すべてのユーザーをLiferay DXPに必ずインポートまたはマッピングしてください。
+[Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) の場合、Analytics CloudはLiferay DXP内に存在するユーザーレコードに依存します。 したがって、 [SSO](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/securing-liferay/configuring-sso.html) または [LDAP](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) を使用している場合は、Analytics Cloudと連絡先を同期する前に、すべてのユーザーをLiferay DXPに必ずインポートまたはマッピングしてください。
+
+## ユーザーの同期に時間がかかる
+
+ユーザーの同期には Liferay DXP のバッチエンジンを使用します。 非常に多くのユーザーを同期する場合は、バッチサイズを大きくしてください。 Liferay DXP で、_Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_ に移動します。 _Export Batch Size_ と _Import Batch Size_ を `1000` に設定する。
+
+![Increase batch size in Liferay DXP.](./connecting-data-sources/images/03.png)

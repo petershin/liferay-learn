@@ -43,11 +43,11 @@ creating-and-managing-objects/deleting-objects.md
 creating-and-managing-objects/managing-objects-with-headless-apis.md
 ```
 
-{bdg-secondary}`Liferay 7.4+`
+{bdg-secondary}`liferay 7.4+`
 
-Liferay Objectでは、コードを記述することなくビジネスニーズを満たすカスタムアプリケーションを [作成](./creating-and-managing-objects/creating-objects.md) するための便利なUIを提供します。 オブジェクトを使用して、システムオブジェクトとカスタムオブジェクトの両方を管理および拡張することもできます。 これには、 [フィールド](./creating-and-managing-objects/fields.md) 、 [リレーションシップ](./creating-and-managing-objects/relationships.md) 、 [アクション](./creating-and-managing-objects/actions.md) 、 [レイアウト](./creating-and-managing-objects/layouts.md) 、 [ビュー](./creating-and-managing-objects/views.md) 、 [バリデーション](./creating-and-managing-objects/validations.md) 、 [カスタムステータス](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md) の追加が含まれます。 オブジェクト定義に関連するこれらの操作やその他の操作を実行するために必要な権限については、 [オブジェクトアプリケーションの権限](./objects-application-permissions.md) を参照してください。
+Liferay Objectでは、コードを記述することなくビジネスニーズを満たすカスタムアプリケーションを [作成](./creating-and-managing-objects/creating-objects.md) するための便利なUIを提供します。 オブジェクトを使用して、システムオブジェクトとカスタムオブジェクトの両方を管理および拡張することもできます。 これには、 [フィールド](./creating-and-managing-objects/fields.md) 、 [リレーションシップ](./creating-and-managing-objects/relationships.md) 、 [アクション](./creating-and-managing-objects/actions.md) 、 [レイアウト](./creating-and-managing-objects/layouts.md) 、 [ビュー](./creating-and-managing-objects/views.md) 、 [バリデーション](./creating-and-managing-objects/validations.md) 、 [カスタムステータス](./creating-and-managing-objects/fields/adding-and-managing-custom-states.md) の追加が含まれます。 モデル・ビルダーGUIを使って複雑なオブジェクト構造を設計することもできます。 このグラフィカルなツールは、オブジェクトの定義をカードとして表示し、定義間の関係を視覚化します。 詳しくは [Using Objects Model Builder](./creating-and-managing-objects/using-the-objects-model-builder.md) を参照してください。
 
-!!! note 
+!!! note
     システムオブジェクトはオブジェクトフレームワークと統合されたデフォルトのLiferayアプリケーションで、カスタムオブジェクトはユーザーによって作成され公開された定義です。
 
 ::::{grid} 2
@@ -59,6 +59,14 @@ Liferay Objectでは、コードを記述することなくビジネスニーズ
 
 :::{grid-item-card} システムオブジェクトの拡張
 :link: ./creating and-managing-objects/extending-system-objects.md
+:::
+
+:::{grid-item-card} オブジェクト・モデル・ビルダーを使う
+:link: ./creating and-managing-objects/using-the-objects-model-builder.md
+:::
+
+:::{grid-item-card} フォルダによるオブジェクトの整理
+:link: ./creating-and-managing-objects/organizing-objects-with-folders.md
 :::
 
 :::{grid-item-card} 項目

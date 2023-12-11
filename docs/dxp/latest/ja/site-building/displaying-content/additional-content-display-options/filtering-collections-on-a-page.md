@@ -8,7 +8,7 @@
 
 コレクションフィルタフラグメントは、ページ上の選択されたコレクションに表示されるコンテンツをフィルタリングするために使用されます。 ユーザーは、キーワードを検索したり、カテゴリやタグを選択して、フィルタフラグメントに関連するコレクションをフィルタリングすることができます。
 
-[コレクション表示フラグメント](./displaying-collections.md#configuring-a-collection-display-fragment) ですでにコレクションを表示している）ページにコレクションフィルタフラグメントを追加して構成するには、以下の手順に従います：
+以下の手順に従って、コレクションフィルタフラグメントをページ（ [コレクション表示フラグメント](../collections-and-collection-pages/displaying-collections.md#configuring-a-collection-display-fragment) ですでにコレクションを表示しているページ）に追加および構成してください：
 
 1. ページの編集中に、ページの任意の場所にコレクション・フィルター・フラグメントを追加します。
 
@@ -26,12 +26,9 @@
 
 Collection Filter フラグメントの動作は、Keywords、Category、Tags のいずれのフィルタタイプを設定したかによって変化します。
 
-
-```
-
 ```{note}
 コレクション表示フラグメントで使用されるコレクション・フィルタ・フラグメントは、オブジェクト・コレクション・プロバイダまたはブループリント・コレクション・プロバイダにマッピングされている場合にのみ機能します。
-``````
+```
 
 ### キーワードによるフィルタリング
 
@@ -77,4 +74,4 @@ Applied Filters Fragment は、 [Collection Filter Fragment](#using-the-collecti
 
 ## 関連トピック
 
-* [コレクションの表示](./displaying-collections.md) 
+* [コレクションの表示](../collections-and-collection-pages/displaying-collections.md)

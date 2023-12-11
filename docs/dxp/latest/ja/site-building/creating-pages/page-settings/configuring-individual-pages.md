@@ -1,4 +1,4 @@
-# ページ単位での設定
+# Configuring Individual Pages
 
 個々のページをニーズに合わせて設定することができます。 この方法で行われたすべての変更は、選択されたページにスコープされます。
 
@@ -17,21 +17,23 @@
 * [カスタム・メタタグ](#custom-meta-tags) 
 
 ```{note}
-これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 詳しくは、 [初期インスタンスのローカライズ](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) および [ローカライズ可能なサイト・フィールドの変更](../../site-settings/site-localization.md#modifying-localizable-site-fields) を参照してください。
+これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 詳しくは、 [初期インスタンスのローカライゼーション](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) および [ローカライゼーション可能なサイト・フィールドの変更](../../site-settings/site-localization.md#modifying-localizable-site-fields) を参照してください。
 ```
+
 ## 共通
 
 ここでは、ページの名前、フレンドリーURL、レイアウトなどの基本情報を設定できます。
 
 ### 基本情報
 
-nameフィールドを使用して、サイトナビゲーションに使用され、ブラウザのタイトルバーに表示されるページのタイトルを設定します。 ページ階層を表示するように設定されている場合、ページをメニュー表示から隠すことができる。 有効化しても、他のナビゲーション・メニューに追加された場合、隠しページは表示されます。 詳しくは、 [サイトナビゲーションの管理](./../../site-navigation/managing-site-navigation.md) をご覧ください。
+nameフィールドを使用して、サイトナビゲーションに使用され、ブラウザのタイトルバーに表示されるページのタイトルを設定します。 ページ階層を表示するように設定されている場合、ページをメニュー表示から隠すことができる。 有効化しても、他のナビゲーション・メニューに追加された場合、隠しページは表示されます。 詳しくは [ページ階層の管理](../../site-navigation/managing-page-hierarchies.md) を参照してください。
 
 ![Use the name field to set the page's title and check the checkbox to hide it from menu display.](./configuring-individual-pages/images/02.png)
 
 ```{note}
 子ページは親ページの可視性を継承します。 また、隠しページはデフォルトのナビゲーション・メニューには表示されないが、他の作成されたナビゲーション・メニューには表示することができる。
 ```
+
 ### URL
 
 また、_復元_アイコン(![フレンドリーURL復元アイコン](./../../../images/icon-restore.png))をクリックすると、以前に使用したURLが表示され、復元されます。 詳細については、 [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md) を参照してください。
@@ -43,6 +45,7 @@ nameフィールドを使用して、サイトナビゲーションに使用さ�
 ```{tip}
 ページの名前とフレンドリーURLはページ作成時に一緒に定義されますが、その後は個別に設定されます。 両者が一致するように、一緒に更新するのがベストプラクティスです。
 ```
+
 ### ページレイアウト
 
 レイアウトテンプレートは、ウィジェットページのどこにウィジェットを配置できるかを指示します。 グローバルテンプレートまたはカスタムページテンプレートのいずれかを使用して作成された基本的なウィジェットページに対して、ユーザーは、選択されたテンプレートに行われた変更をページが_継承_するかどうかを決定することができます。 ページが変更を継承しない場合は、カスタムレイアウトを選択して、ウィジェットの行と列のコンテナを定義します。
@@ -86,7 +89,7 @@ nameフィールドを使用して、サイトナビゲーションに使用さ�
 ![Determine the favicon, master page template, style book and icon for your page.](./configuring-individual-pages/images/08.png)
 
 ```{note}
-コンテンツページには、サイドバーの編集メニューのページデザインオプション（![ページデザインオプションアイコン](./../../../images/icon-format.png)）にあるマスターとスタイルブックの設定も含まれます。
+コンテンツページには、サイドバーの編集メニューのページデザインオプション（[ページデザインオプションアイコン](./../../../images/icon-format.png)）にあるマスターとスタイルブックの設定も含まれます。
 ```
 
 ### カスタマイズ
@@ -111,7 +114,7 @@ nameフィールドを使用して、サイトナビゲーションに使用さ�
 
 ページのコンテンツや機能をカスタマイズするための追加設定にアクセスします。
 
-**カスタムフィールド**サイトページ用に定義したカスタムフィールドを表示および設定します。 詳細については、 [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) を参照してください。
+**カスタムフィールド**:サイトページ用に定義したカスタムフィールドを表示および設定します。 詳細については、 [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) を参照してください。
 
 **埋め込みウィジェット**： [Web Content Templates](./../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md) , [Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) , または [Themes](../../site-appearance/themes/introduction-to-themes.md) を使ってページに埋め込んだウィジェットにアクセスします。
 
@@ -120,6 +123,7 @@ nameフィールドを使用して、サイトナビゲーションに使用さ�
 ```{note}
 カスタムフィールド*と埋め込みウィジェット*セクションは、ページにカスタムフィールドと埋め込みウィジェットを作成した場合にのみ表示されます。
 ```
+
 ## SEO
 
 検索エンジン最適化（SEO）とは、検索エンジンの結果ページ（SERP）におけるページの順位を向上させるために使用される方法を指します。 SEOタブでは、ページのコンテンツを最適化するための設定に簡単にアクセスできます。 以下の設定については、 [SEOとOpen Graphを設定する](../../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) を参照してください。
@@ -143,6 +147,7 @@ descriptionフィールドを使って、ページの`<description>`タグを定
 ```{tip}
 タイトル、見出し、説明文、段落、画像のaltテキストなど、ページのコンテンツ全体にキーワードを頻繁に使用しましょう。
 ```
+
 ![Set the page's HTML title, description, custom canonical URL and keywords to improve your page's ranking in Search Engine Results Pages (SERP)](./configuring-individual-pages/images/10.png)
 
 ### プレビュー
@@ -182,6 +187,7 @@ HTMLタイトル、説明文、カスタムURLの設定に基づいて、検索�
 ```{note}
 オープングラフ<meta>タグは、認証されていないユーザーにはページヘッダーにのみ含まれます。 ユーザーがログインしているときは含まれない。
 ```
+
 ### 画像
 
 画像フィールドを使用して、ページに対して以下のオープングラフ `<meta>` プロパティを定義します：

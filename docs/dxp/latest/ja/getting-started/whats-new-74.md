@@ -6,33 +6,33 @@ Liferay DXP 7.4は、強化された機能と大幅な改良が施されおり�
 
 ### A/Bテストで任意の要素をクリックターゲットに設定する
 
-これで、 [ページ上の任意の要素でA/Bテストを実行できるようになりました](../site-building/optimizing-sites/ab-testing/creating-ab-tests.md)。 Liferay DXP 7.4以前は、［Click Goal］としてボタンやリンクしか選択できませんでした。 Liferay DXP 7.4では、任意のページ要素をその［Element ID］を含めることで選択できるようになりました。
+これで、 [ページ上の任意の要素でA/Bテストを実行できるようになりました](../site-building/optimizing-sites/ab-testing/creating-ab-tests.md) 。 Liferay DXP 7.4以前は、［Click Goal］としてボタンやリンクしか選択できませんでした。 Liferay DXP 7.4では、任意のページ要素をその［Element ID］を含めることで選択できるようになりました。
 
-![ページ上のどの要素でもA/Bテストを実行できるようになりました。](./whats-new-74/images/04.png)
+![You can now run AB tests on any element on the page.](./whats-new-74/images/04.png)
 
 ### よりインサイトのあるコンテンツ監査ツール
 
-コンテンツダッシュボードの [コンテンツ監査ツール](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md)では、バーをクリックして結果を拡大できるようになり、1つのボキャブラリカテゴリにのみ割り当てられたコンテンツがグラフに表示されるようになりました。 今回の機能強化により、マーケティング担当者は誤って分類されたコンテンツを簡単に発見できるようになりました。
+コンテンツダッシュボードの [コンテンツ監査ツール](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md) では、バーをクリックして結果を拡大できるようになり、1つのボキャブラリカテゴリにのみ割り当てられたコンテンツがグラフに表示されるようになりました。 今回の機能強化により、マーケティング担当者は誤って分類されたコンテンツを簡単に発見できるようになりました。
 
-![コンテンツ監査の結果を拡大表示します。](./whats-new-74/images/03.png)
+![Zoom in on Content Audit results.](./whats-new-74/images/03.png)
 
 ### コンテンツ監査ツールのUXの改善
 
-また、コンテンツダッシュボードの [コンテンツ監査ツール](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md)の使い勝手もいくつか改善されています。 例えば、監査の対象とするボキャブラリの選択がより簡単になり、棒グラフの軸をワンクリックで反転させることができるようになりました。
+また、コンテンツダッシュボードの [コンテンツ監査ツール](../content-authoring-and-management/content-dashboard/content-dashboard-interface.md) の使い勝手もいくつか改善されています。 例えば、監査の対象とするボキャブラリの選択がより簡単になり、棒グラフの軸をワンクリックで反転させることができるようになりました。
 
-![ボキャブラリーを選択し、バーチャートの軸を反転させます。](./whats-new-74/images/10.png)
+![Select vocabularies and flip the bar chart axes.](./whats-new-74/images/10.png)
 
 ### コンテンツパフォーマンスツールでのトラフィック獲得チャネル
 
-[Content Performance Tool](../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md) のトラフィック獲得チャネルは、 [Analytics Cloud](https://learn.liferay.com/analytics-cloud/latest/ja/index.html) ク、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
+[Content Performance Tool](../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md) のトラフィック獲得チャネルは、<0>Analytics Cloud\</0> のデータを使用しており、オーガニック検索、有料検索、ソーシャル・トラフィック、およびリファラルの測定値が含まれています。 チャンネルの詳細表示では、すべての参照元URLとドメインが表示されます。
 
-![トラフィック獲得チャネルには、検索、ソーシャル、リファラルデータなどがあります。](./whats-new-74/images/09.png)
+![Traffic acquisition channels include search, social and referral data.](./whats-new-74/images/09.png)
 
 ### あらゆるタイプのページのコンテンツパフォーマンス解析
 
 コンテンツパフォーマンスパネルは、すべてのページで利用できるようになりました。すべてのアセット、コンテンツ、およびウィジェットページのページテンプレートを表示します。 Liferay DXP 7.4以前では、コンテンツパフォーマンスツールは、ディスプレイページテンプレートを介してレンダリングされたWebコンテンツでのみ利用可能でした。
 
-![コンテンツパフォーマンスパネルは、すべてのページタイプに使用できます。](./whats-new-74/images/06.png)
+![The Content Performance Panel can be used for all page types.](./whats-new-74/images/06.png)
 
 ## 優れたDXの構築
 
@@ -40,19 +40,19 @@ Liferay DXP 7.4は、強化された機能と大幅な改良が施されおり�
 
 Liferay DXP 7.4からは、ページのSEOやアクセシビリティを監査するために、 [ページ監査ツール](../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md) を使用することができます。 ページ監査ツールは [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights) サービスを使用して、Liferay DXPに特定の推奨事項を提供します。  新しいページ監査ツールでは、ページが最高のパフォーマンス、アクセシビリティ、検索エンジンのメタデータ、およびSEOのプラクティスに準拠しているかどうかをチェックできます。
 
-![Google PageSpeed Insightsの統合により、推奨事項を提供します。](./whats-new-74/images/02.png)
+![Google PageSpeed Insights integration provides recommendations.](./whats-new-74/images/02.png)
 
 ### エクスペリエンスの複製や下書きがより柔軟に
 
-[Liferay DXP Experiences](../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md)を下書きや複製して、デフォルトのエクスペリエンスを別のものに置き換えることができます。 これらの機能強化により、エクスペリエンスの作成と管理がより柔軟に行えるようになりました。
+[Liferay DXP Experiences](../site-building/personalizing-site-experience/experience-personalization/content-page-personalization.md) を下書きや複製して、デフォルトのエクスペリエンスを別のものに置き換えることができます。 これらの機能強化により、エクスペリエンスの作成と管理がより柔軟に行えるようになりました。
 
-![エクスペリエンスを簡単に再現し、ドラフトすることができます。](./whats-new-74/images/07.png)
+![Replicate and Draft Experiences easily.](./whats-new-74/images/07.png)
 
 ### コンテンツダッシュボードで新たにドキュメントの表示
 
-ドキュメントは [コンテンツダッシュボード](../content-authoring-and-management/content-dashboard/about-the-content-dashboard.md)に表示されるようになり、アセットタイプやMIMEタイプに基づいた新しいフィルタが追加されました。 これらのフィルターは、コンテンツダッシュボードのフィルターと並び替えドロップダウンメニューからアクセスできます。
+ドキュメントは [コンテンツダッシュボード](../content-authoring-and-management/content-dashboard/about-the-content-dashboard.md) に表示されるようになり、アセットタイプやMIMEタイプに基づいた新しいフィルタが追加されました。 これらのフィルターは、コンテンツダッシュボードのフィルターと並び替えドロップダウンメニューからアクセスできます。
 
-![コンテンツダッシュボードに新しいフィルターが追加されました。](./whats-new-74/images/01.png)
+![There are new filters in the Content Dashboard.](./whats-new-74/images/01.png)
 
 ### アカウント管理ウィジェット
 
@@ -74,7 +74,7 @@ Liferay DXP 7.4からは、ページのSEOやアクセシビリティを監査�
 
 ## ビジネスユーザーはコードを書かずにアプリケーションを構築できる
 
-[Liferay Objects](../building-applications/objects.md)を使用すると、コードを記述したりモジュールをデプロイしたりすることなくアプリケーションを構築および配信できますが、これらのアプリケーションはLiferayのコアフレームワーク上に構築され、統合されています。 シームレスなユーザーエクスペリエンスを維持しながら、Liferay DXPをビジネスニーズに適応させる柔軟なソリューションを迅速に開発および管理します。
+[Liferay Objects](../building-applications/objects.md) を使用すると、コードを記述したりモジュールをデプロイしたりすることなくアプリケーションを構築および配信できますが、これらのアプリケーションはLiferayのコアフレームワーク上に構築され、統合されています。 シームレスなユーザーエクスペリエンスを維持しながら、Liferay DXPをビジネスニーズに適応させる柔軟なソリューションを迅速に開発および管理します。
 
 ### UIによるカスタムオブジェクトの管理
 
@@ -90,7 +90,7 @@ Liferay DXP 7.4からは、ページのSEOやアクセシビリティを監査�
 
 ### オブジェクトリレーション
 
-複雑なユースケースを[オブジェクトリレーション](../building-applications/objects/creating-and-managing-objects/relationships/defining-object-relationships.md)で解決することができます。カスタムオブジェクトだけでなく、ブログエントリーやWebコンテンツのようなLiferayに同梱されているネイティブオブジェクトとオブジェクトを関連付ける簡単な方法です。
+複雑なユースケースを [オブジェクトリレーション](../building-applications/objects/creating-and-managing-objects/relationships/defining-object-relationships.md) で解決することができます。カスタムオブジェクトだけでなく、ブログエントリーやWebコンテンツのようなLiferayに同梱されているネイティブオブジェクトとオブジェクトを関連付ける簡単な方法です。
 
 ### DXPフレームワークとのオブジェクト統合
 
@@ -104,7 +104,7 @@ Liferay Objectsは、アセット、ワークフロー、権限など、既存�
 
 コレクション表示フラグメントでコレクションアイテムをページ分割できるようになりました。 この新機能は、多数のアイテムを含むコレクションに特に有効です。 大規模なコレクションがより読みやすくなり、ユーザビリティと全体的なエクスペリエンスが向上します。
 
-![コレクション表示フラグメントでコレクションをページ分割できるようになりました。](./whats-new-74/images/11.png)
+![You can now paginate collections in Collection Display Fragments.](./whats-new-74/images/11.png)
 
 ### コレクション表示のフラグメントの検索とフィルタリング
 
@@ -112,19 +112,19 @@ Liferay DXP 7.4には2つの新しいフラグメントが含まれています�
 
 これらのフィルターをコレクション表示フラグメントとともにページで使用すると、さまざまな基準に基づいてコレクションをフィルタリングし、コレクションにどのようなフィルターが適用されたかを表示することができます。
 
-![新しいフィルターは、ユーザーがコレクション内のデータを見つけるのに役立ちます。](./whats-new-74/images/05.png)
+![New filters help users find data in collections.](./whats-new-74/images/05.png)
 
 ### 関連アイテムコレクションで、ある特定のアイテムに関連するアイテムを表示
 
 コレクション表示フラグメントを使用する際に、新しい［Related Items Collection Providers ］タブを使用して、関連するコレクションからアイテムを選択して表示できるようになりました。
 
-![これで、関連アイテムの選択が容易になりました。](./whats-new-74/images/14.png)
+![Now it's easy to choose related items.](./whats-new-74/images/14.png)
 
 ### コレクションプロバイダのプレフィルタリングオプションの定義
 
 開発者は、特定の構成フィールドを使用してコレクションプロバイダーをカスタマイズできるようになりました。 これにより、ユーザーはコレクションプロバイダーを事前にフィルタリングし、コレクション表示フラグメントのアイテムをより柔軟に選択できます。 ユーザーは、コレクション表示フラグメントの［Actions］メニューからフィルターにアクセスできます。
 
-![コレクションプロバイダーを事前にフィルタリングできるようになりました。](./whats-new-74/images/12.png)
+![Now you can pre-filter Collection providers.](./whats-new-74/images/12.png)
 
 ### マッピング要素としてコレクションプロバイダーのサブタイプフィールドの指定
 
@@ -134,23 +134,23 @@ Infoフレームワークでコレクションプロバイダーを構築する�
 
 あるビューポートではフラグメントを非表示にし、別のビューポートでは表示したままにすることができます。 この新機能により、特定のユーザープラットフォーム向けにコンテンツの応答性をさらにカスタマイズすることができます。
 
-![あるビューポートではフラグメントを非表示にし、別のビューポートでは表示したままにすることができます。](./whats-new-74/images/08.png)
+![You can hide a Fragment on one Viewport while keeping it visible on another.](./whats-new-74/images/08.png)
 
 ### コンテンツページおよび表示ページテンプレートのアダプティブメディアのネイティブサポート
 
-[コンテントページの画像にアダプティブメディア](../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings) を使用し、ターゲットの画面サイズに基づいて画像の解像度を動的に調整することが可能になりました。 [アダプティブメディアに画像解像度を追加](../content-authoring-and-management/documents-and-media/publishing-and-sharing/serving-device-and-screen-optimized-media/adding-image-resolutions.md)した後、コンテントページの画像の［Resolution］のドロップダウンメニューに解像度が表示されます。
+[コンテントページの画像にアダプティブメディア](../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#image-source-settings) を使用し、ターゲットの画面サイズに基づいて画像の解像度を動的に調整することが可能になりました。 [アダプティブメディアに画像解像度を追加](../content-authoring-and-management/documents-and-media/publishing-and-sharing/using-adaptive-media/adding-image-resolutions.md) した後、コンテントページの画像の［Resolution］のドロップダウンメニューに解像度が表示されます。
 
-![アダプティブメディアでは、画面サイズに応じて画像の解像度を動的に調整できるようになりました。](./whats-new-74/images/13.gif)
+![Adaptive Media can now adjust image resolutions dynamically based on screen size.](./whats-new-74/images/13.gif)
 
 ## デジタルエクスペリエンスの立ち上げと維持のためのコストと労力の削減
 
 ### Webコンテンツの自動翻訳
 
-この機能は、 [Webコンテンツの記事を翻訳する](../content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation.md)プロセスを加速するのに役立ちます。 これは、7.3で行われたコンテンツの翻訳プロセスを効率化するための取り組みを引き継いだものです。 この機能があれば、翻訳者は最初から翻訳を始めるのではなく、翻訳の質の向上に集中できます。
+この機能は、 [Webコンテンツの記事を翻訳する](../content-authoring-and-management/translating-pages-and-content/using-third-parties-for-translation.md) プロセスを加速するのに役立ちます。 これは、7.3で行われたコンテンツの翻訳プロセスを効率化するための取り組みを引き継いだものです。 この機能があれば、翻訳者は最初から翻訳を始めるのではなく、翻訳の質の向上に集中できます。
 
 ### ドキュメントの有効期限
 
-この機能は、コンテンツ管理者が[古いドキュメントをコントロール](../content-authoring-and-management/documents-and-media/uploading-and-managing/using-file-expiration-and-review-dates.md)し、一時的なライセンスなどが原因でドキュメントが公開されるのを防ぐのに役立ちます。
+この機能は、コンテンツ管理者が [古いドキュメントをコントロール](../content-authoring-and-management/documents-and-media/uploading-and-managing/using-file-expiration-and-review-dates.md) し、一時的なライセンスなどが原因でドキュメントが公開されるのを防ぐのに役立ちます。
 
 ### 改良されたWYSIWYGエディター
 
@@ -182,7 +182,7 @@ Liferay DXP 7.4はElasticsearch 7.15.xをサポートしています。 [Elastic
 
 ### Liferay Enterprise Search（LES）アプリケーションのバンドル
 
-Liferay DXP 7.4より、 [Liferay Enterprise Search (LES)アプリケーション](../using-search/liferay-enterprise-search/activating-liferay-enterprise-search.md)は、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 LESはデフォルトで有効になっており、追加のインストール手順は必要ありません。 ただし、Liferayの公式サポートや追加特典を受けるためには、LESのアドオンサブスクリプションを購入する必要があります。 LESアプリケーションのメンテナンスとアップデートは、フィックスパックとサービスパックのリリースを通じて行われます。
+Liferay DXP 7.4より、 [Liferay Enterprise Search (LES)アプリケーション](../using-search/liferay-enterprise-search/activating-liferay-enterprise-search.md) は、すべてのLiferay DXPバンドルとDockerコンテナに含まれています。 LESはデフォルトで有効になっており、追加のインストール手順は必要ありません。 ただし、Liferayの公式サポートや追加特典を受けるためには、LESのアドオンサブスクリプションを購入する必要があります。 LESアプリケーションのメンテナンスとアップデートは、フィックスパックとサービスパックのリリースを通じて行われます。
 
 ## 相互接続された社内システムとしてのLiferay DXPの活用
 
@@ -204,11 +204,11 @@ Liferay DXPには、ユーザー管理、サイトページとエクスペリエ
 
 ### 多要素認証におけるFIDO2ベースのハードウェアキーファクターサポート
 
-ユーザーは、内蔵された多要素認証を利用して、 [一般的なデバイス（指紋リーダー、USBキー）を活用し](../installation-and-upgrades/securing-liferay/multi-factor-authentication/fast-identity-online-2.md)、モバイル環境とデスクトップ環境の両方でオンラインサービスの認証を行うことができます。
+ユーザーは、内蔵された多要素認証を利用して、 [一般的なデバイス（指紋リーダー、USBキー）を活用し](../installation-and-upgrades/securing-liferay/multi-factor-authentication/fast-identity-online-2.md) 、モバイル環境とデスクトップ環境の両方でオンラインサービスの認証を行うことができます。
 
 ### SAMLのデータ管理とメンテナンスの向上
 
-属性マッピングのユーザーエクスペリエンスが向上したことで、SPユーザーの照合に利用される識別子の範囲や追跡のモデル化のコントロールができるようになりました。 IDP側でユーザーの `emailAddress` を変更しても問題ありません。 また、カスタムフィールドマッピングもオプションになりました。
+属性マッピングのユーザーエクスペリエンスが向上したことで、SPユーザーの照合に利用される識別子の範囲や追跡のモデル化のコントロールができるようになりました。 IDP側でユーザーの`emailAddress`を変更することはもう問題ではない。 また、カスタムフィールドマッピングもオプションになりました。
 
 また、完全な後方互換性もあります。SAMLインテグレーションを再設定するまでは、既存の動作が維持され、SPユーザーのUUIDフィールドをユーザーの目的以外に使用することはありません。
 
@@ -229,4 +229,4 @@ Liferay DXPには、ユーザー管理、サイトページとエクスペリエ
 
 ### DocuSignの統合
 
-すぐに使える[DocuSignとの統合](../content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures.md)が利用可能です。 インスタンス設定で統合を有効にすると、コントロールパネルのドキュメントとメディアと電子署名モジュールから、ユーザーはドキュメントを添付した電子署名用エンベロープをDocuSignに送信できるようになります。  ユーザーは、過去に送信した電子署名エンベロープのステータスを確認したり、署名済みのドキュメントをダウンロードしたりできます。 本機能のご利用には、別途DocuSigntとの契約が必要となります。
+すぐに使える [DocuSignとの統合](../content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures.md) が利用可能です。 インスタンス設定で統合を有効にすると、コントロールパネルのドキュメントとメディアと電子署名モジュールから、ユーザーはドキュメントを添付した電子署名用エンベロープをDocuSignに送信できるようになります。  ユーザーは、過去に送信した電子署名エンベロープのステータスを確認したり、署名済みのドキュメントをダウンロードしたりできます。 本機能のご利用には、別途DocuSigntとの契約が必要となります。

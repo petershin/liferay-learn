@@ -1,12 +1,12 @@
 # オブジェクトアプリケーションの権限
 
-{bdg-secondary}`Liferay 7.4+`
+{bdg-secondary}`liferay 7.4 2023.Q4+/GA102+`.
 
-他のLiferayアプリケーションと同様に、オブジェクトポートレットは権限フレームワークと統合されています。 これは、 [アプリケーション](#application-permissions) と [リソース](#resource-permissions) の権限をユーザーロールに割り当てて、オブジェクトポートレットとそのデータにアクセスできるユーザーを決定できることを意味します。
+Objectsアプリケーションはパーミッションフレームワークと統合されているため、 [アプリケーション](#application-permissions) と [リソース](#resource-permissions) のパーミッションをユーザーロールに割り当てることで、アプリケーションとそのデータにアクセスできるユーザーを決定することができます。
 
-![ロール権限を定義するときにオブジェクト権限を割り当てます。](./objects-application-permissions/images/01.png)
+![Assign Objects permissions when defining role permissions.](./objects-application-permissions/images/01.png)
 
-ユーザーロールへの権限の割り当ての詳細については、[ロール権限の定義](../../users-and-permissions/roles-and-permissions/defining-role-permissions.md)を参照してください。
+ユーザーロールへの権限の割り当ての詳細については、 [ロール権限の定義](../../users-and-permissions/roles-and-permissions/defining-role-permissions.md) を参照してください。
 
 ## アプリケーションの権限
 
@@ -14,57 +14,93 @@
 
 オブジェクトは、以下のアプリケーション権限を持ちます。
 
-| 権限              | 説明                               |
-|:--------------- |:-------------------------------- |
-| コントロールパネルへのアクセス | グローバルメニューのオブジェクトにアクセスします.        |
-| 設定              | オブジェクトポートレットの構成オプションを表示および変更します. |
-| 権限設定            | オブジェクトの権限を表示および変更します.            |
-| 表示設定            | オブジェクトポートレットの設定を表示および変更します.      |
-| 表示              | オブジェクトポートレットを表示します.              |
+![Objects has the following application permissions.](./objects-application-permissions/images/02.png)
+
+| 権限             | 説明                              |
+| :------------- | :------------------------------ |
+| コントロールパネルのアクセス | グローバルメニューのオブジェクトにアクセスします.       |
+| 設定             | Objects アプリケーションの構成オプションの表示と変更。 |
+| 権限の設定          | オブジェクトの権限を表示および変更します.           |
+| 詳細設定           | Objects アプリケーションの環境設定の表示と変更。    |
+| 表示             | オブジェクトのアプリケーションを表示します。          |
+
+!!! important
+Liferay 7.4 2023.Q4+/GA102+では、Objects UIを使用するには_Object Folder > View_権限が必要です。
 
 ## リソース権限
 
-リソースパーミッションは、Objectsアプリケーションのリソースを表示したり操作したりするためのアクセス権を付与します。これらのパーミッションの中には [オブジェクト定義の作成に関するもの](#resource-related-actions) もあれば、 [既存の定義に対するアクションの実行](#actions-on-database-entities) (編集、削除など)に関するものもあります。
+リソースパーミッションは、Objects アプリケーションの定義とフォルダの表示、作成、および操作へのアクセス権を付与します。 これらの権限の中には、 [エンティティ](#object-definitions-resource-related-actions) を作成するためのものもあれば、既存のエンティティ（たとえば、 [定義](#object-definition-for-existing-custom-definitions) や [フォルダ](#object-folder-for-existing-object-folders) ）に作用するためのものもある。
 
-オブジェクトには以下のリソースパーミッションがあります。
+オブジェクトは、以下のリソース権限を持ちます。
 
-### リソース関連のアクション
+### オブジェクト定義（リソース関連アクション）
+
+![Manage resource-related actions in the Objects application.](./objects-application-permissions/images/03.png)
 
 | 権限              | 説明                                             |
-|:--------------- |:---------------------------------------------- |
+| :-------------- | :--------------------------------------------- |
 | オブジェクト定義を追加     | オブジェクト定義ドラフトを作成する。                             |
+| オブジェクトフォルダーを追加  | オブジェクト定義を整理するためのフォルダを作成する。                     |
 | システムオブジェクト定義を拡張 | システムオブジェクトにフィールド、リレーションシップ、アクション、バリデーションを追加する。 |
-| 権限設定            | オブジェクトに関連するパーミッションの表示と管理。                      |
+| 権限の設定           | オブジェクトに関連するパーミッションの表示と管理。                      |
 | オブジェクト定義を公開     | オブジェクト定義ドラフトを公開する。                             |
 
-### データベースエンティティに対するアクション
+### オブジェクト定義（既存のカスタム定義の場合）
 
-| 権限   | 説明                      |
-|:---- |:----------------------- |
-| 削除   | オブジェクト定義を削除する。          |
-| 権限設定 | オブジェクト定義の権限を表示および変更します。 |
-| 更新   | オブジェクト定義を更新する。          |
-| 参照   | オブジェクトの定義を表示します。        |
+![Manage permissions for existing object definitions.](./objects-application-permissions/images/04.png)
+
+| 権限    | 説明                      |
+| :---- | :---------------------- |
+| 削除    | オブジェクト定義を削除する。          |
+| 権限の設定 | オブジェクト定義の権限を表示および変更します。 |
+| 更新    | オブジェクト定義を更新する。          |
+| 表示    | オブジェクトの定義を表示します。        |
+
+### オブジェクトフォルダ（既存のオブジェクトフォルダの場合）
+
+![Manage permissions for existing object folders.](./objects-application-permissions/images/05.png)
+
+| 権限          | 説明                        |
+| :---------- | :------------------------ |
+| オブジェクト定義を追加 | オブジェクト定義をフォルダに移動する        |
+| 削除          | オブジェクトフォルダを削除します。         |
+| 権限の設定       | オブジェクトフォルダのパーミッションの表示と変更。 |
+| 更新          | オブジェクトフォルダを更新する。          |
+| 表示          | オブジェクトフォルダを表示します。         |
 
 ## 個々のオブジェクト定義に対する権限の管理
 
-個々のオブジェクト定義のパーミッションを管理するには、以下の手順に従います：
+1. *グローバル・メニュー* (![グローバル・メニュー](../../images/icon-applications-menu.png))から_Objects_アプリケーションを開きます。
 
-1. ［**Objects**］ アプリケーションを **グローバルメニュー**(![Global Menu](../../images/icon-applications-menu.png))で開きます。
+1. 目的のオブジェクト定義の_Actions_ボタン(![Actions Button](../../images/icon-actions.png)) をクリックし、_Permissions_を選択します。
 
-1. 目的のオブジェクト定義の **Actions** ボタン（![Actions Button](../../images/icon-actions.png)）をクリックし、 **Permissions** を選択します。
-   
-   ![目的のオブジェクト定義の Actions ボタンをクリックし、Permissions を選択します。](./objects-application-permissions/images/02.png)
+   ![Click the Actions button for the desired object definition and select Permissions.](./objects-application-permissions/images/06.png)
 
-1. チェックボックスを使用して、 [オブジェクト定義](#actions-on-database-entities) 権限を必要なロールに付与します。 
+1. チェックボックスを使用して、 [オブジェクト定義](#object-definition-for-existing-custom-definitions) 権限を必要なロールに付与します。
 
-   ```{note}
+   !!! note
    ロール管理者レベルで定義されたパーミッションは、個人レベルで定義されたパーミッションよりも優先されます。
-   ```
 
-![チェックボックスを使用して、必要なロールに権限を割り当てることができます。](./objects-application-permissions/images/03.png)
+   ![Use the checkboxes to assign permissions to the desired roles.](./objects-application-permissions/images/07.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_保存_］をクリックします。
+
+## 個々のフォルダー定義の権限管理
+
+1. *グローバル・メニュー* (![グローバル・メニュー](../../images/icon-applications-menu.png))から_Objects_アプリケーションを開きます。
+
+1. 目的のオブジェクトフォルダの_Actions_ (![Actions Button](../../images/icon-actions.png)) をクリックし、_Permissions_を選択します。
+
+   ![Click the Actions button for the desired object folder and select Permissions.](./objects-application-permissions/images/08.png)
+
+1. チェックボックスを使用して、 [オブジェクトフォルダ](#object-folder-for-existing-object-folders) の権限を必要なロールに付与します。
+
+   !!! note
+   ロール管理者レベルで定義されたパーミッションは、個人レベルで定義されたパーミッションよりも優先されます。
+
+   ![Use the checkboxes to assign permissions to the desired roles.](./objects-application-permissions/images/09.png)
+
+1. ［_保存_］をクリックします。
 
 ## 関連トピック
 

@@ -1,127 +1,126 @@
 # 商品グループについて
 
-商品グループは、ターゲット割引や価格設定に使用できる、静的な商品グループです。 商品グループは、2つのシナリオに最適です。
+商品グループは、ターゲット割引や価格設定に使用できる商品の静的なグループです。 製品グループは、2つのシナリオにおいて理想的である：
 
 1. 単一のカテゴリーに属さない商品を持ち、特定の顧客向けに異なる価格を設定したい場合。
 
 1. 単一のカテゴリーに属さない商品があり、特定の顧客に対して異なる割引を適用したい場合。
 
 ```{note}
-商品グループは、商品のグループ分けや購入者への表示方法を変更するものではなく、管理目的で使用されるものです。 
+商品グループは、購入者のために商品がグループ化されたり表示されたりする方法を変更するものではなく、管理目的で使用されます。 
 ```
 
 ## 商品グループの作成
 
-1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png)を開き、 ［**コマース**］ タブをクリックして ［**価格**］ &rarr; ［**商品グループ**］ へ移動します。
+1. [アプリケーションメニュー](../../images/icon-applications-menu.png)を開き、_Commerce_ &rarr; _Product Groups_に移動します。
 
-1. **追加**(![Add](../../images/icon-add.png)) をクリックし、商品グループの名前と説明を入力します。
+1. _Add_（[Add](../../images/icon-add.png)）をクリックし、商品グループの名前と説明を入力します。
 
-    ![商品グループの詳細を入力します。](./introduction-to-product-groups/images/01.png)
+   ![Enter details for the product group.](./introduction-to-product-groups/images/01.png)
 
-1. ［**Submit**］ クリックします。
+1.  _Submit_をクリックしてください。
 
-これにより、商品グループが作成されます。
+これにより、製品グループが作成される。
 
 ## 商品グループへの商品の追加
 
 商品グループを作成したら、商品を追加する必要があります。 以下では、2つの商品を選択し、商品グループに追加して、ターゲット価格や割引に使用できるようにします。
 
-1. **商品の追加** 検索バーを使って、追加したい商品を探します。 入力した内容に応じて、自動的にオプションが表示されます。
+1. 商品追加_検索バーを使って、追加したい商品を探してください。 入力した内容に応じて、自動的にオプションが表示されます。
 
-   ![商品グループに追加する商品を検索します。](./introduction-to-product-groups/images/02.png)
+   ![Search for products to be added to the product group.](./introduction-to-product-groups/images/02.png)
 
-1. 選択した商品の横にある ［**Select**］ をクリックすると、グループに追加されます。
+1. お好みの商品の横にある_選択_をクリックし、グループに追加します。
 
-この商品グループは、 **価格表** または **割引** にリンクすることができるようになりました。
+この商品グループを価格表や割引にリンクできるようになりました。
 
 ```{note}
-商品グループに商品を追加するだけでなく、商品グループと商品を紐付けることもできます。 そのためには、商品リストからご希望の商品を選択し、［商品グループ］タブを選択し、作成した商品グループを検索してください。 選択した商品グループの横にある［*選択*］をクリックすると、商品グループと商品がリンクされます。
+商品グループに商品を追加する以外に、商品グループを商品にリンクすることもできます。 これを行うには、製品リストからご希望の製品を選択し、製品グループタブを選択し、作成した製品グループを検索します。 選択した商品グループの横にある*選択*をクリックすると、商品グループと商品がリンクされます。
 ```
 
 ## 商品グループと割引の関連付け
 
-1. アプリケーションメニュー &rarr; ［**コマース**］ タブから ［**価格**］ &rarr; ［**割引**］ をクリックしてください。
+1. アプリケーションメニュー &rarr; _Commerce_タブをクリックし、__Pricing_ &rarr; _Discounts_に進みます。
 
-1. **追加**(![Add](../../images/icon-add.png)) をクリックし、以下の情報を入力します。
+1. _Add_（[Add](../../images/icon-add.png) ）をクリックし、以下の情報を入力する：
 
-__［Name］__ : ［Example Product Group Discount］
+   __Name__:商品グループ割引の例
 
-__［Type］__ : ［Percentage］
+   __Type__:パーセント
 
-__［Apply To］__ : ［Product Groups］
+   __適用先__：製品グループ
 
-    ![割引の詳細を入力します。](./introduction-to-product-groups/images/03.png)
+   ![Enter details for a Discount.](./introduction-to-product-groups/images/03.png)
 
-1. ［**Submit**］ をクリックします。
+1. _Submit_をクリックしてください。
 
-    これは新しい割引を作成し、商品グループに適用することができます。
+   これは新しい割引を作成し、商品グループに適用することができます。
 
-    割引の［Details］ページでは、割引のタイプを変更したり、金額を追加したり、割引の有効状態やレベルを設定したりすることができます。 詳しくは、[割引の概要](./introduction-to-discounts.md)をお読みください。 割引を作成したら、先に作成した商品グループとリンクさせる必要があります。
+   割引の［Details］ページでは、割引のタイプを変更したり、金額を追加したり、割引の有効状態やレベルを設定したりすることができます。 詳しくは、 [割引の概要](./introduction-to-discounts.md) をお読みください。 割引を作成したら、先に作成した商品グループとリンクさせる必要があります。
 
 1. 割引の詳細ページで、［Select Product Group］セクションまでスクロールします。
 
-    ![割引に追加する商品グループを検索します。](./introduction-to-product-groups/images/04.png)
+   ![Search for the product group to be added to the Discount.](./introduction-to-product-groups/images/04.png)
 
 1. 先ほど作成した商品グループの名前を入力します。 入力した内容に基づいて、自動的に結果が入力されます。
 
-1. 商品グループの横にある ［**Select**］ をクリックします。 追加されたら、 ［**Publish**］ をクリックして、商品グループの割引を有効にします。
+1. 商品グループの横にある「選択」をクリックします。 追加したら、_Publish_をクリックして、商品グループの割引を有効にします。
 
 カタログの商品をチェックして割引を表示することで検証することができます。
 
-![商品グループ内の商品に割引が適用されます。](./introduction-to-product-groups/images/05.png)
+![The discount is applied to the product in the product group.](./introduction-to-product-groups/images/05.png)
 
 ## 商品グループと価格表の関連付け
 
-価格表と商品グループを関連付けるには、まず価格表を作成し、作成した商品グループを対象とした価格修飾子を作成する必要があります。
+価格リストを商品グループにリンクさせるには、まず価格リストを作成し、作成した商品グループをターゲットとする価格修飾子を作成する必要があります。
 
-1. アプリケーションメニュー ![Applications Menu](../../images/icon-applications-menu.png), &rarr; ［**コマース**］ タブから ［**価格**］ &rarr; ［**価格表**］ を開いてください。
+1. [アプリケーションメニュー](../../images/icon-applications-menu.png)を開き、 &rarr; _Commerce_タブを開き、__Pricing_ &rarr; _Price Lists_に進みます。
 
-1. **追加**(![Add](../../images/icon-add.png)) をクリックし、価格表の［name］、［catalog］、［currency］を入力します。
+1. _Add_ (![Add](../../images/icon-add.png)) をクリックし、価格リストの名前、カタログ、通貨を入力します。
 
-    ![価格表を設定します。](./introduction-to-product-groups/images/06.png)
+   ![Configure the price list.](./introduction-to-product-groups/images/06.png)
 
-1. 完了したら、 ［**Submit**］ をクリックします。
+1. 完了したら_Submit_をクリックする。
 
-1. ［価格修飾子］セクションの **Add**（![Add](../../images/icon-add.png)）をクリックして、以下の情報を入力してください。
+1. 価格変更セクションの下にある_Add_（[Add]（../../images/icon-add.png））をクリックし、以下の情報を入力します。
 
-__［Name］__ : ［Wheels Modifier］
+   __Name__:ホイール修正
 
-__［Target］__ : ［Product Groups］
+   __Target__:製品グループ
 
-__［Modifier］__ : パーセント/置換/固定金額
+   __Modifier__:比率／入替／定額
 
-    ![価格修飾子を設定します。](./introduction-to-product-groups/images/07.png)
+   ![Configure the price modifier.](./introduction-to-product-groups/images/07.png)
 
-1. 完了したら、 ［**Submit**］ をクリックします。
+1. 完了したら_Submit_をクリックしてください。
 
-    ![価格修飾子の詳細設定画面。](./introduction-to-product-groups/images/08.png)
+   ![Detailed configuration view of the price modifier.](./introduction-to-product-groups/images/08.png)
 
-    これにより、価格修飾子が作成され、より詳細なビューが表示され、設定することができます。
+   これにより価格修飾子が作成され、それを設定するための詳細ビューが開きます。
 
     ```{note}
-    価格修飾子に記載された金額は、割引とはみなされません。 例えば、パーセント修飾子を選択し、金額を10に設定すると、商品の価格が10%上がります。 価格を下げるには、マイナスのパーセンテージを使用します。
+    価格修正記号に記載された金額は割引とはみなされない。 例えば、パーセント修飾子を選択し、金額を10に設定すると、商品の価格が10%上がります。 価格を下げるには、マイナスのパーセンテージを使用します。
     ```
 
     ```{important}
-    同じ商品を対象とする価格表が2つある場合、変更を有効にするには、より高い優先度で新しい価格表を作成する必要があります。
+    同じ商品を対象とした価格リストが2つある場合、変更を有効にするには、優先順位の高い新しい価格リストを作成する必要があります。
     ```
 
+   ![Search for the product group to be added to the price modifier.](./introduction-to-product-groups/images/09.png)
 
-    ![Search for the Product Group to be added to the Price Modifier.](./introduction-to-product-groups/images/09.png)
+1. 商品グループセクションで、作成した商品グループを検索します。 入力した内容に基づいて、自動的に結果が入力されます。
 
-1. ［商品グループ］セクションで、作成した商品グループを検索します。 入力した内容に基づいて、自動的に結果が入力されます。
-
-1. 商品グループの横にある ［**Select**］ をクリックします。 追加されたら、 ［**公開**］ をクリックして、商品グループの価格リストを有効にします。
+1. 商品グループの横にある「選択」をクリックします。 追加したら、_Publish_をクリックして、商品グループの価格リストを有効にします。
 
 カタログで商品を確認すると、更新された価格が表示され、検証することができます。
 
-![価格修飾子は、商品グループ内の商品に適用されます。](./introduction-to-product-groups/images/10.png)
+![The price modifier is applied to the product in the product group.](./introduction-to-product-groups/images/10.png)
 
-割引や価格表が商品グループにリンクされているかどうかを確認するには、 **アプリケーションメニュー** ![Applications Menu](../../images/icon-applications-menu.png)をクリックして、 ［**コマース**］ タブをクリックし、 ［**価格**］ &rarr; ［**商品グループ**］ へ進んでください。 価格表と割引の下に、関連するエンティティが表示されます。
+割引または価格リストが商品グループにリンクされているかどうかを表示するには、_Applications Menu_ ![アプリケーションメニュー](../../images/icon-applications-menu.png)をクリックし、_Commerce_タブをクリックし、_Pricing_ &rarr; _Product Groups_に進みます。 価格リストと割引の下に、関連するエンティティが表示されます。
 
 ## 関連トピック
 
-* [割引について](./introduction-to-discounts.md)
-* [価格の概要](../introduction-to-pricing.md)
+* [ディスカウント入門](./introduction-to-discounts.md)
+* [プライシング入門](../introduction-to-pricing.md)
 * [価格表の作成](../creating-a-price-list.md)
-* [商品を価格表に追加する](../adding-products-to-a-price-list.md)
+* [価格表への商品の追加](../adding-products-to-a-price-list.md)

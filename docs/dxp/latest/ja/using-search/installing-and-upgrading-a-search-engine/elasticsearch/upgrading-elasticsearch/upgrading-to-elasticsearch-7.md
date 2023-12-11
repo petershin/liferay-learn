@@ -1,24 +1,24 @@
 # Elasticsearch 7へのアップグレード
 
-{bdg-secondary}`7.1および7.2`
+{bdg-secondary}`7.1と7.2`
 
-Liferay 7.3と7.4はElasticsearch 7をすぐにサポートします。 お使いの Liferay インストールで利用可能な最新の検索エンジンのバージョンは、 [Search Engine Compatibility Matrix](https://help.liferay.com/hc/ja/articles/360016511651) をご覧ください。
+Liferay 7.3と7.4はElasticsearch 7をすぐにサポートします。 お使いの Liferay インストールで利用可能な最新の検索エンジンのバージョンは、 [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) をご覧ください。
 
-Liferay 7.2では、Elasticsearch 7は [Liferay Connector to Elasticsearch 7](https://web.liferay.com/marketplace/-/mp/application/170390307)  (バージョン`3.x`) を介してサポートされています。 Liferay 7.3以降へのアップグレード、または既存の7.2検索エンジンをElasticsearch 7に移行する場合、Elasticsearchサーバーをアップグレードする必要があります。 新しいLiferay7.2システムをセットアップするには、Elasticsearch 7をインストールし、[インストールガイド](../getting-started-with-elasticsearch.md)に従います。
+Liferay 7.2 では、Elasticsearch 7 は [Liferay Connector to Elasticsearch 7](https://web.liferay.com/marketplace/-/mp/application/170390307) (version `3.x`) を介してサポートされています。 Liferay 7.3以降へのアップグレード、または既存の7.2検索エンジンをElasticsearch 7に移行する場合、Elasticsearchサーバーをアップグレードする必要があります。 新しいLiferay7.2システムをセットアップするには、Elasticsearch 7をインストールし、 [インストールガイド](../getting-started-with-elasticsearch.md) に従います。
 
 ```{important}
-Elasticsearchをアップグレードする前に、既存のデータをバックアップしてください。 アップグレード中またはアップグレード後に何か問題が発生した場合は、破損していないインデックスのスナップショットを使用して以前のバージョンにロールバックしてください。 [Elasticsearchのバックアップ](./backing-up-elasticsearch.md)の手順に従います。
+Elasticsearchをアップグレードする前に、既存のデータをバックアップしてください。 アップグレード中またはアップグレード後に何か問題が発生した場合は、破損していないインデックスのスナップショットを使用して以前のバージョンにロールバックしてください。 [Elasticsearchのバックアップ](./backing-up-elasticsearch.md) の手順に従ってください。
 ```
 
 既存のElasticsearchサーバー（またはクラスター）をElasticsearch 7にアップグレードするには、
 
 1. [Liferay Companyとシステムインデックスをバックアップします](./backing-up-elasticsearch.md)。
 
-1. [検索の調整のアプリケーション固有のインデックスをバックアップします](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) （同義語セットと結果ランキング）。
+1. [検索の調整のアプリケーション固有のインデックスをバックアップします](./backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) （同義語セットと結果ランキング）。
 
 1. [Elasticsearchをインストールして設定します](../installing-elasticsearch.md)。
 
-1. [Elasticsearchをアップグレードします](#upgrading-elasticsearch)
+1. [Elasticsearch のアップグレード](#upgrading-elasticsearch)
 
 1. X-Pack Securityを使用している場合は、有効になっていることを確認してください。
 
@@ -26,9 +26,9 @@ Elasticsearchをアップグレードする前に、既存のデータをバッ�
    xpack.security.enabled: true
    ```
 
-   セキュリティ設定の範囲の詳細については、 [Elasticsearchの保護](../securing-elasticsearch.md) を参照してください。
+   セキュリティ設定の範囲の詳細については、 [Securing Elasticsearch](../securing-elasticsearch.md) を参照してください。
 
-1. \ [7.2のみ\] [バンドルされているLiferay Connector to Elasticsearch 6をブラックリストに登録し](#blacklisting-elasticsearch-6) 、Connector to Elasticsearch 7を [インストール](../connecting-to-elasticsearch.md#install-the-elasticsearch-7-connector) します。
+1. \[7.2 only\]. [同梱の Liferay Connector to Elasticsearch 6](#blacklisting-elasticsearch-6) をブラックリストに登録し、[install](../connecting-to-elasticsearch.md#install-the-elasticsearch-7-connector) the Connector to Elasticsearch 7.
 
 1. Connector to Elasticsearch 7を設定してElasticsearchに接続します。
 
@@ -40,34 +40,34 @@ Elasticsearchをアップグレードする前に、既存のデータをバッ�
 
 ## Elasticsearchのアップグレード
 
-ローリングリスタート対象バージョン（`6.8.x`）を使用している場合は、 [ローリングアップグレード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) を実行してElasticsearchクラスターをアップグレードすることをお勧めします。 それ以外の場合は、 [フルクラスター再起動アップグレード ](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/restart-upgrade.html) ガイドに従ってください。
+ローリング再起動が可能なバージョン（`6.8.x`）を使用している場合、 [ローリングアップグレード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/rolling-upgrades.html) を行うことが、Elasticsearchクラスタをアップグレードする推奨方法です。 それ以外の場合は、 [フルクラスター再起動アップグレード](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/restart-upgrade.html) ガイドに従ってください。
 
-新しいElasticsearchサーバーをインストールし、アップグレード前のデータにインデックスしたい場合、Liferay[データベースがアップグレード](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md)されると、UIから [再インデックス](#restart-liferay-and-re-index) をトリガーすることで、ほとんどのLiferayインデックスを復元できます。 ただし、検索の調整（結果ランキングと同義語）インデックス、およびデータベースストレージにバックアップされていないカスタムインデックスは、 [アップグレード前のインデックスのスナップショット](./backing-up-elasticsearch.md#backing-up-and-restoring-indexes-used-for-primary-storage) から復元する必要があります。
+新しいElasticsearchサーバーをインストールし、アップグレード前のデータにインデックスしたい場合、Liferay [データベースがアップグレード](../../../../installation-and-upgrades/upgrading-liferay/upgrade-basics/using-the-database-upgrade-tool.md) されると、UIから [再インデックス](#restart-liferay-and-re-index) をトリガーすることで、ほとんどのLiferayインデックスを復元できます。 ただし、検索の調整（結果ランキングと同義語）インデックス、およびデータベースストレージにバックアップされていないカスタムインデックスは、 [アップグレード前のインデックスのスナップショット](./backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) から復元する必要があります。
 
 ## Elasticsearch 6のブラックリストへの登録
 
 これは、Liferay 7.2を実行している場合にのみ必要です。
 
-1.  以下の設定ファイルを作成します
+1. 以下の設定ファイルを作成します
 
-    ```bash
-    com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config
-    ```
+   ```bash
+   com.liferay.portal.bundle.blacklist.internal.BundleBlacklistConfiguration.config
+   ```
 
-1.  以下のコンテンツを指定します
+1. 以下のコンテンツを指定します
 
-    ```properties
-    blacklistBundleSymbolicNames=[ \
-        "com.liferay.portal.search.elasticsearch6.api", \
-        "com.liferay.portal.search.elasticsearch6.impl", \
-        "com.liferay.portal.search.elasticsearch6.spi", \
-        "com.liferay.portal.search.elasticsearch6.xpack.security.impl", \
-        "Liferay Connector to X-Pack Security [Elastic Stack 6.x] - Impl", \ 
-        "Liferay Enterprise Search Security  - Impl" \
-    ]
-    ```
+   ```properties
+   blacklistBundleSymbolicNames=[ \
+       "com.liferay.portal.search.elasticsearch6.api", \
+       "com.liferay.portal.search.elasticsearch6.impl", \
+       "com.liferay.portal.search.elasticsearch6.spi", \
+       "com.liferay.portal.search.elasticsearch6.xpack.security.impl", \
+       "Liferay Connector to X-Pack Security [Elastic Stack 6.x] - Impl", \ 
+       "Liferay Enterprise Search Security  - Impl" \
+   ]
+   ```
 
-1. ファイルをサーバーの`deploy`フォルダにコピーしてデプロイします。
+1. ファイルをサーバーの `deploy` フォルダーにコピーしてデプロイします。
 
 ## Liferayを再起動してインデックスを再作成する
 
@@ -75,11 +75,11 @@ LiferayがElasticsearchクラスターに接続されたら、Liferayを再起�
 
 1. Liferayを再起動します。
 
-1. 会社、システム、およびスペルチェックのインデックスを再作成します。 グローバルメニュー（![Global Menu](../../../../images/icon-applications-menu.png)）から、 ［**コントロールパネル**］ &rarr; ［**設定**］ &rarr; ［**検索機能**］ に移動します。 [**Reindex all search indexes**] エントリの [**実行**] をクリックします。
+1. 会社、システム、およびスペルチェックのインデックスを再作成します。 グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))から、_コントロールパネル_ &rarr; _設定_ &rarr; _検索_ に移動します。 すべての検索インデックス(All Search Indexes)]項目の[再インデックス(Reindex)]をクリックします。
 
-1. [ワークフロー統計情報インデックス](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) を再作成します。グローバルメニュー（![Global Menu](../../../../images/icon-applications-menu.png)）から、 ［**アプリケーション**］ &rarr; ［**ワークフローメトリクス**］ に移動します。 設定メニュー（![Options](../../../../images/icon-options.png)）を開き、 ［**すべてインデックスを再構築**］ をクリックします。 各仮想インスタンスについて、この作業を繰り返します。
+1. [Workflow Metrics indexes](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) : Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)) から _Applications_ &rarr; _Workflow---Metrics_ に移動します。 設定メニュー (![Options](../../../../images/icon-options.png)) を開き、_Reindex All_ をクリックします。 各仮想インスタンスについて、この作業を繰り返します。
 
-これにより、Liferayデータベースに保存されているデータから作成されたインデックスが復元されます。 プライマリストレージとして使用されるインデックスを復元するには、 [Elasticsearchのバックアップ](./backing-up-elasticsearch.md) を参照してください。
+これにより、Liferayデータベースに保存されているデータから作成されたインデックスが復元されます。 プライマリストレージとして使用されるインデックスを復元するには、 [Backing Up Elasticsearch](./backing-up-elasticsearch.md) を参照してください。
 
 ## Liferay 7.2：Elasticsearch 6への復帰
 
@@ -87,12 +87,12 @@ Liferay 7.2を使用していて、Elasticsearch 7へのアップグレード中
 
 Elasticsearch 6と7は現在2つの別個のインストールであるため、この手順にはいくつかのステップが必要です。
 
-1.  Liferay Connector to Elasticsearch 7を停止します。
+1. Liferay Connector to Elasticsearch 7を停止します。
 
-1.  Elasticsearch 7を停止し、Elasticsearch 6 `elasticsearch.yml` とコネクタアプリが同じポート（デフォルトでは9200）を使用するように構成されていることを確認します。
+1. Elasticsearch 7 を停止し、Elasticsearch 6 の `elasticsearch.yml` とコネクタアプリが同じポート（デフォルトでは 9200）を使用するように設定されていることを確認してください。
 
-1. インストール先の `osgi` フォルダからElasticsearch 6のブラックリスト設定ファイルを削除します。
+1. インストールの `osgi` フォルダから Elasticsearch 6 用のブラックリスト設定ファイルを削除します。
 
-1.  Elasticsearchサーバーを起動してから、Liferay Connector to Elasticsearch 6を再起動します。
+1. Elasticsearchサーバーを起動してから、Liferay Connector to Elasticsearch 6を再起動します。
 
 アップグレードが完了したら、 [Liferayのバージョンで利用できる 新しい検索機能](../../../getting-started.html) をご覧ください。

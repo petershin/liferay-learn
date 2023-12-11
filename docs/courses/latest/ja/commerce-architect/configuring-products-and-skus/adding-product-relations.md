@@ -6,7 +6,7 @@
 
 1. *グローバルメニュー* (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Products_に移動します。
 
-1. * マリヤ*を選択する。
+1. *マリヤ*を選択する。
 
 1. *Product Relations*タブをクリックします。
 
@@ -16,7 +16,7 @@
 
 1. *追加*をクリックする。
 
-   ![Add two related products for the Maliyah eyeglasses.](./adding-media/images/01.png)
+   ![Add two related products for the Maliyah eyeglasses.](./adding-media/images/01.jpg)
 
 1. *［公開］*をクリックします。
 

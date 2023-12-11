@@ -40,4 +40,4 @@ Link to URLオプションは、指定されたURLにリンクを追加します
 
 ## コレクションページ
 
-コレクションページはコレクションにリンクされています。 これらのページは、コレクションを表示し、パーソナライズするプロセスを簡素化します。 詳細は、 [コレクション表示](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections) を参照してください。
+コレクションページはコレクションにリンクされています。 これらのページは、コレクションを表示し、パーソナライズするプロセスを簡素化します。 詳細は、 [コレクション表示](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections) を参照してください。

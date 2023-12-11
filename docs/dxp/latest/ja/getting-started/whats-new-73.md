@@ -20,7 +20,7 @@ Liferay DXPの最新リリースには、多くの重要な新機能と改善が
 
 ![The Collection Display fragment publishes assets using a drag and drop interface.](./whats-new-73/images/02.gif)
 
-[コレクション表示](../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) フラグメントでは、ドラッグアンドドロップ編集で一連のアセットを表示します。 フラグメントがページに追加されたら、コレクションにリンク付けします。 その後、コレクション内の各アセットのスペースを定義します。 スペースの調整は、残りのスペースにも反映されます。 編集可能なフィールドをコレクションの共通フィールドにマッピングすることができます。 例えば、見出しフラグメントが追加されると、Webコンテンツストラクチャーのタイトルフィールドにマッピングされます。このマッピングは各項目にプロパゲートします。
+[コレクション表示](../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) フラグメントでは、ドラッグアンドドロップ編集で一連のアセットを表示します。 フラグメントがページに追加されたら、コレクションにリンク付けします。 その後、コレクション内の各アセットのスペースを定義します。 スペースの調整は、残りのスペースにも反映されます。 編集可能なフィールドをコレクションの共通フィールドにマッピングすることができます。 例えば、見出しフラグメントが追加されると、Webコンテンツストラクチャーのタイトルフィールドにマッピングされます。このマッピングは各項目にプロパゲートします。
 
 ### ビジュアル・レスポンシブ・レイアウト・エディター
 
@@ -116,7 +116,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 ![Friendly URL History shows all URLs ever used for any page.](./whats-new-73/images/15.png)
 
-各言語の[任意のページで使用されているフレンドリーURL](../site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md#managing-a-page-s-url-history)を簡単に確認し、視覚的に管理できるようになりました。他のページで再利用するためにURLを「忘れる」ことも、古いフレンドリーURLを復元することもできます。
+この履歴により、 [あらゆるページで使用されているフレンドリURL](../site-building/creating-pages/page-settings/configuring-your-pages-friendly-url.md#managing-a-page-s-url-history) をすべて、言語ごとに</0>簡単に確認でき、視覚的に管理できます。 URLを覚える必要はなく、他のページで再利用したり、古いフレンドリURLを復元したりすることができます。
 
 ## コンテンツパフォーマンス
 
@@ -250,7 +250,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 今回の変更により、証明書の取り扱いを含むインスタンスレベルで [SAML](../installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml.md) を設定できるようになりました。
 
-新しい SAML プロパティ: *未知のユーザーは見知らぬ人* が導入されました。 このプロパティは、エンド ユーザーが見知らぬ人である場合の SAML IdP 接続の動作を決定します。 このプロパティは、ポータル データベースにまだ存在しないユーザーを見知らぬ人として分類するかどうかを定義します。 分類されると、ポータル インスタンスの既存の見知らぬ人処理ポリシーによって、IdP の SAML アサーションから入手可能な情報を使用してユーザーを自動的にプロビジョニングする必要があるかどうかが決定されます。
+新しい SAML プロパティが導入された：*不明なユーザは見知らぬユーザである。* このプロパティにより、エンドユーザーがゲストである場合のSAML IdP接続の動作が決まります。 このプロパティは、ポータルデータベースに既に存在しないユーザーをゲストとして分類するかどうかを定義します。 分類後、ポータルインスタンスの既存のゲスト処理ポリシーにより、IdPのSAMLアサーションから得られる情報を使用して、ユーザーを自動的にプロビジョニングするかどうかを決定します。
 
 ### インスタンスレベルでのOAuth 2の設定
 
@@ -342,10 +342,10 @@ APIを通してコンテンツテンプレートを取得すれば、必要に�
 
 Liferayでは、内部UIの大部分をReactに移行することを開始しています。 この移行の副次的な影響として、新しいユーティリティが追加され、以下のことが可能になりました。
 
-**ReactRenderer:** Reactコンポーネントをレンダリングするための低レベルJavaプリミティブで、Reactコンポーネントのブートストラップを簡素化し、初期化に必要なJavaScriptコードを生成する。
+**ReactRenderer**:Reactコンポーネントをレンダリングするための低レベルJavaプリミティブで、Reactコンポーネントのブートストラップを簡素化し、初期化に必要なJavaScriptコードを生成する。
 
-**React:component:**従来のJSPから複雑なReactアプリケーションをレンダリングして初期化するために、従来の`MVCPortlet`アプローチと組み合わせることができる高レベルのJSPタグです。 これにより、複雑なJSアプリケーションをスムーズに移行し、より近代的なフロントエンドのワークフローを適用できます。
+**React:component**:従来のJSPから複雑なReactアプリケーションをレンダリングして初期化するために、従来の`MVCPortlet`アプローチと組み合わせることができる高レベルのJSPタグです。 これにより、複雑なJSアプリケーションをスムーズに移行し、より近代的なフロントエンドのワークフローを適用できます。
 
 ### アップグレードの向上
 
-[アップグレードプロセス](../installation-and-upgrades/upgrading-liferay/upgrade-basics.md) の信頼性が大幅に向上しました。アップグレードプロセスは、コアとモジュール間で統一されています。 自動アップグレードの動作は、新しいポータル・プロパティで制御できます：`upgrade.database.auto.run`。
+[アップグレードプロセス](../installation-and-upgrades/upgrading-liferay/upgrade-basics.md) の信頼性が大幅に向上しました。アップグレードプロセスは、コアとモジュール間で統一されています。 自動アップグレードの動作は、新しいポータル・プロパティで制御できます：upgrade.database.auto.run`。

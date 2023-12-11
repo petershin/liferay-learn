@@ -4,15 +4,15 @@
 
 1. *グローバルメニュー* (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Products_に移動します。
 
-1. *マリヤ* を選択する。
+1. *マリヤ*を選択する。
 
 1. *メディア*タブをクリックします。
 
 1. *Add* (![Add](../../images/icon-add.png)) または _Add Image_ をクリックします。
 
-1. *ファイルを選択*をクリックし、ライブラリから画像を選択します。
+1. ファイルを選択*をクリックし、ライブラリから画像を選択します。
 
-   ![Choose the image, Maliyah.png, from the library.](./adding-media/images/01.png)
+   ![Choose the image, Maliyah.png, from the library.](./adding-media/images/01.jpg)
 
 1. タイトルを_Maliyah_と入力してください。
 

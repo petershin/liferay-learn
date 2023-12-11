@@ -4,20 +4,21 @@
 
 以下は実装できる構成可能なフラグメントタイプです。
 
-* `text`
-* `select`
-* `checkbox`
-* `colorPicker` (Liferay 7.4+ で使用可能)
-* `長さ` (Liferay 7.4+ U44/GA44 で使用可能)
-* `itemSelector`
-* `url` (Liferay 7.4+ で利用可能)
-* `videoSelector` (Liferay 7.4+ で使用可能)
-* `collectionSelector`
-* `colorPalette`
+- `text`
+- `select`
+- `checkbox`
+- `colorPicker` (Liferay 7.4+ で使用可能)
+- `長さ` (Liferay 7.4+ U44/GA44 で使用可能)
+- `itemSelector`
+- `url` (Liferay 7.4+ で利用可能)
+- `videoSelector` (Liferay 7.4+ で使用可能)
+- `collectionSelector`
+- `colorPalette`
 
 ```{note}
 FreeMarker コンテキストに挿入された設定値は、JSON ファイルで指定された定義済みの `datatype` 値に従います。 たとえば、`dataType`が String の場合、`configuration.[name-value]?is_string` は `true`となります。
 ```
+
 ## テキスト設定
 
 この JSON 設定は、手動でテキストオプションを入力しなければならない場合に実装できる入力テキストフィールドを作成します：
@@ -104,7 +105,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ## カラーピッカーの設定
 
-{bdg-secondary}`Liferay 7.4+が利用可能です。`
+{bdg-secondary}`liferay 7.4+が利用可能です。`
 
 カラーピッカーのJSON設定により、任意の色を選択できる柔軟なカラーセレクターが作成されます。 これらの方法のいずれかを使って、色を選択することができます。
 
@@ -119,8 +120,9 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/02.png)
 
 ```{note}
-使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)がない場合、ページ上のカラーピッカーの設定は[カラーパレット](#color-palette-configuration)の設定に置き換えられます。
+使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)がない場合、ページ上のカラーピッカーの設定は[カラーパレット](#color-palette configuration)の設定に置き換えられます。
 ```
+
 このJSON設定により、`headingColor`というカラーピッカーフィールドが作成される：
 
 ```json
@@ -159,7 +161,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ## 長さ構成
 
-{bdg-secondary}`利用可能なLiferay 7.4 U44とGA44+について`
+{bdg-secondary}`利用可能なLiferay 7.4 U44およびGA44+について`
 
 `長さ`の設定タイプでは、幅、マージン、パディングのような設定に対して、数値を入力したり、定義済みの単位を選択したり、独自の単位を指定したりできるフィールドを作成します。
 
@@ -184,13 +186,13 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ユーザー・インターフェースでは、利用可能な単位から選択するか、カスタム単位を指定することができます。
 
-<!-- The below screenshot is way too big. Please reduce. -Rich --> 
+<!-* The below screenshot is way too big. Please reduce. -Rich --> 
 
 ![A field labeled 'Size' from a custom fragment uses the length configuration to show a drop-down of available units.](./fragment-configuration-types-reference/images/10.png)
 
 ## アイテムセレクターの設定
 
-{bdg-secondary}`Liferay 7.3+が利用可能です。`
+{bdg-secondary}`liferay 7.3+が利用可能です。
 
 この設定により、フラグメントに含める既存のコンテンツ（デフォルトではWebコンテンツの記事、ブログエントリー、ドキュメント）を1つ選択するためのセレクターが作成されます。
 
@@ -342,7 +344,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ## ビデオセレクター
 
-{bdg-secondary}`Liferay 7.4+が利用可能です。`
+{bdg-secondary}`liferay 7.4+が利用可能です。`
 
 `videoSelector`型を使うと、 [外部ビデオ](../../../creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference.md) フラグメントを別のフラグメントに組み込むためのビデオセレクタを作成することができる。
 
@@ -412,9 +414,9 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ## コレクションセレクター
 
-{bdg-secondary}`Liferay 7.3+が利用可能です。`
+{bdg-secondary}`liferay 7.3+が利用可能です。
 
-`collectionSelector\`構成タイプを使用すると、 [コレクション](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) またはコレクションプロバイダを含むフラグメントを開発することができます。 コレクションセレクタは手動コレクションでも動的コレクションでも使用できます。
+`collectionSelector`構成タイプを使用すると、 [コレクション](../../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) またはコレクションプロバイダを含むフラグメントを開発することができます。 コレクションセレクタは手動コレクションでも動的コレクションでも使用できます。
 
 ```{note}
 開発者は、コレクションプロバイダーを使用して、より高度な基準を持つ特定のコレクションを作成することができます。 詳細については、 [Infoフレームワーク](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 開発者ドキュメントの [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をお読みください。
@@ -438,7 +440,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 }
 ```
 
-このフラグメント設定を、以下のHTMLコードサンプルで使用することで、コレクション項目を一覧表示することができます。 `collectionObjectList`は [ コンテンツページエディタ](../../../creating-pages/using-content-pages/content-page-editor-ui-reference.md) で選択されたコレクションを表します。
+このフラグメント設定を、以下のHTMLコードサンプルで使用することで、コレクション項目を一覧表示することができます。 `collectionObjectList`は [コンテンツページエディタ](../../../creating-pages/using-content-pages/content-page-editor-ui-reference.md) で選択されたコレクションを表します。
 
 HTMLでこのコレクションを参照するには、JSONコンフィギュレーションでコレクション`name`と接尾辞`ObjectList`を使用する。 前のJSONコードの抜粋では、コレクション `name` は `collection` なので、HTMLは `collectionObjectList` を使ってコレクションを参照している。
 
@@ -461,7 +463,7 @@ HTMLでこのコレクションを参照するには、JSONコンフィギュレ
 
 ### コレクションセレクターのフィルタリング
 
-`collectionSelector`の設定で `itemType` を使ってコレクションセレクタをフィルタリングすることができる。 例えば、Webコンテンツとブログを含む異なるコレクションがある場合、コレクションセレクターを制限して、ブログコレクションのみを表示することができます。 このJSONサンプルは、この設定を説明するものです。
+collectionSelector`の設定で `itemType\` を使ってコレクションセレクタをフィルタリングすることができる。 例えば、Webコンテンツとブログを含む異なるコレクションがある場合、コレクションセレクターを制限して、ブログコレクションのみを表示することができます。 このJSONサンプルは、この設定を説明するものです。
 
 ```json
 {
@@ -487,7 +489,7 @@ HTMLでこのコレクションを参照するには、JSONコンフィギュレ
 ![A collection including web content and blog entries corresponds to the asset type.](./fragment-configuration-types-reference/images/09.png)
 
 ```{tip}
-`itemType`に加え、`itemSubtype`をコンフィギュレーションで指定することができる。 `itemSubtype`はアセット`classPK`に対応します。
+itemType`に加え、`itemSubtype`をコンフィギュレーションで指定することができる。 `itemSubtype`はアセット`classPK`に対応します。
 ```
 
 ### 返却されたコレクション項目の最大数の定義

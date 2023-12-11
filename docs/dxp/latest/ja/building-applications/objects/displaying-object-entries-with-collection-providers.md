@@ -1,38 +1,38 @@
 # コレクション・プロバイダによるオブジェクト・エントリの表示
 
-{bdg-secondary}`Liferay 7.4 U77+/GA77+`
+{bdg-secondary}`liferay 7.4 U77+/GA77+`.
 
-オブジェクト定義をパブリッシュすると、Liferay は [コレクションプロバイダ](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md) を作成します。 このプロバイダを [コレクション表示フラグメント](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) および [コレクション・ページ](../../site-building/displaying-content/additional-content-display-options/displaying-collections.md#displaying-collections-on-a-collection-page) とともに使用すると、そのエントリを表示できます。 オブジェクトは、フィルタリング、スタイリング、表示オプションなど、すべてのコレクション表示機能をサポートしています。
+オブジェクト定義をパブリッシュすると、Liferay は [コレクションプロバイダ](../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) を作成します。 このプロバイダを [コレクション表示フラグメント](../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#adding-a-collection-display-fragment-to-a-page) および [コレクション・ページ](../../site-building/displaying-content/collections-and-collection-pages/displaying-collections.md#displaying-collections-on-a-collection-page) とともに使用すると、そのエントリを表示できます。 オブジェクトは、フィルタリング、スタイリング、表示オプションなど、すべてのコレクション表示機能をサポートしています。
 
 ## オブジェクトのコレクション・プロバイダの使用
 
-1. 新しい [コンテンツページ](../../site-building/creating-pages/using-content-pages.md) または [表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md)を作成する。 または、編集を開始する ( ![編集ボタン](../../images/icon-edit-pencil.png) ）することから開始します。
+1. 新しい [コンテンツページ](../../site-building/creating-pages/using-content-pages.md) または [表示ページテンプレート](../../site-building/displaying-content/using-display-page-templates/creating-and-managing-display-page-templates.md) を作成する。 または、既存のものを編集する ( ![編集ボタン](../../images/icon-edit-pencil.png))。
 
    ```{note}
-   コレクション・プロバイダを使用してコレクション・ページを作成することもできます。 詳しくは、[コレクションとコレクションページについて](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)をご覧ください。
+   コレクション・プロバイダを使用してコレクション・ページを作成することもできます。 詳しくは [コレクションとコレクションページ](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) をご覧ください。
    ```
 
-1. フラグメントとウィジェット (![Fragments and Widgets](../../images/icon-plus.png)) サイドバーから、 **コレクション表示** フラグメントをページまたはテンプレートにドラッグ＆ドロップします。
+1. フラグメントとウィジェット(![フラグメントとウィジェット](../../images/icon-plus.png))のサイドバーから、_コレクション表示_フラグメントをページまたはテンプレートにドラッグ＆ドロップします。
 
-1. ［**コレクション表示フラグメント**］ を選択して設定オプションにアクセスし、［General］タブの ［**Select Collection**］をクリックします。
+1. *Collection Display Fragment* を選択して構成オプションにアクセスし、General タブで _Select Collection_ をクリックします。
 
-   ![フラグメントを選択し、［コレクションを選択］をクリックします。](../objects/displaying-object-entries-with-collection-providers/images/01.png)
+   ![Select the fragment and click Select Collection.](../objects/displaying-object-entries-with-collection-providers/images/01.png)
 
-1. モーダルウィンドウで、 **Collection Providers** タブをクリックし、 **オブジェクトのプロバイダ** を選択します。
+1. モーダルウィンドウで、_Collection Providers_ タブをクリックし、_Object's provider_ を選択します。
 
-   ![Collection Providers タブで、オブジェクトのプロバイダを選択します。](./displaying-object-entries-with-collection-providers/images/02.png)
+   ![In the Collection Providers tab, select the object's provider.](./displaying-object-entries-with-collection-providers/images/02.png)
 
 1. (オプション) 表示されたオブジェクトエントリをフィルタリングする。 オブジェクト内のピックリストやブーリアンフィールドでフィルタリングすることができます：
 
-   **Collection Options**(![Collection Options Button](../../images/icon-actions.png)) をクリックし、 **Filter Collection** を選択する。
+   コレクションオプション* ([コレクションオプションボタン](../../images/icon-actions.png))をクリックし、_フィルタコレクション_を選択します。
 
-   ![［Collection Options］ボタンをクリックして、［Filter Collection］を選択します。](./displaying-object-entries-with-collection-providers/images/03.png)
+   ![Click the Collection Options button and select Filter Collection.](./displaying-object-entries-with-collection-providers/images/03.png)
 
-   次に、希望する **フィルタ** を選択し、 **適用** をクリックする。
+   次に、必要な_フィルター_を選択し、_適用_をクリックします。
 
-   ![適用するフィルターを選択します。](./displaying-object-entries-with-collection-providers/images/04.png)
+   ![Select the Filters to apply.](./displaying-object-entries-with-collection-providers/images/04.png)
 
-希望するプロバイダを選択した後、 **List Style** や **Pagination** などの追加フラグメントオプションを使用して、オブジェクトエントリの表示方法を決定します。
+希望するプロバイダを選択した後、追加のフラグメントオプションを使用して、_List Style_や_Pagination_など、オブジェクトエントリの表示方法を決定します。
 
 ## フラグメントからオブジェクト・フィールドへのマッピング
 
@@ -40,17 +40,17 @@
 
 例えば、オブジェクトにマッピングされたCollection Displayフラグメントにボタンを埋め込み、コレクションの各アイテムの名前を表示するようにボタンのリンクを設定することができます。
 
-![コレクション表示のフラグメントのサブ要素をオブジェクト・フィールドにマップする。](./displaying-object-entries-with-collection-providers/images/05.png)
+![Map fragment sub-elements in Collection Display fragments to object fields.](./displaying-object-entries-with-collection-providers/images/05.png)
 
 ## フラグメントを関連オブジェクト・フィールドにマッピングする
 
 ```{important}
-フラグメント要素を関連するオブジェクト・フィールドにマッピングすることは、リリース機能フラグの背後にある。 詳しくは [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) を読んでください。
+フラグメント要素を関連するオブジェクト・フィールドにマッピングすることは、リリース機能フラグの背後にある。 詳しくは [Release Feature Flags](../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) をお読みください。
 ```
 
-マップされたオブジェクトが、 [1対多のリレーション](./creating-and-managing-objects/relationships/defining-object-relationships.md)の子側にある場合、フラグメント要素を親オブジェクトのフィールドにマップすることができます。 埋め込まれたコレクション表示フラグメントは、新しいコレクションを形成するために、ユニークな [関連アイテムコレクションプロバイダ](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md#related-items-collections-providers) を使用します。
+マップされたオブジェクトが、 [1対多のリレーション](./creating-and-managing-objects/relationships/defining-object-relationships.md) の子側にある場合、フラグメント要素を親オブジェクトのフィールドにマップすることができます。 埋め込まれたコレクション表示フラグメントは、新しいコレクションを形成するために、ユニークな [関連アイテムコレクションプロバイダ](../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md#related-items-collections-providers) を使用します。
 
-例えば、 `City` オブジェクト（子）が `Country` オブジェクト（親）に関連している場合、 `Country` オブジェクトのフィールドにフラグメントをマッピングすることができます。
+例えば、`City`オブジェクト（子）が`Country`オブジェクト（親）に関連している場合、`Country`オブジェクトのフィールドにフラグメントをマッピングすることができます。
 
 フラグメントを関連オブジェクトのフィールドにマッピングする、
 
@@ -61,25 +61,24 @@
    ```{tip}
    ページ編集メニューの*Browser*タブを使用すると、ページ階層内でフラグメントをより正確に配置することができます。
    ```
+   ![Use the Browser tab to help properly embed the Collection Display fragment.](./displaying-object-entries-with-collection-providers/images/06.png)
 
-   ![コレクション表示フラグメントを適切に埋め込むには、ブラウザタブを使用します。](./displaying-object-entries-with-collection-providers/images/06.png)
+1. 新しいコレクション表示フラグメントの設定オプションで _Select Collection_ をクリックします。
 
-1. 新しいコレクション表示フラグメントの構成オプションで、 **Select Collection** をクリックします。
+1. 関連アイテムコレクションプロバイダ*タブをクリックします。
 
-1. **Related Items Collection Providers** タブをクリックします。
+1. オブジェクトのリレーションシップ名を持つコレクション・プロバイダを選択します。 関連するオブジェクト・タイプは、リレーションシップ名の下に表示されます。 この例では、この関係を「国の中の都市」と呼ぶ：
 
-1. オブジェクトのリレーションシップ名を持つコレクション・プロバイダを選択します。 関連するオブジェクト・タイプは、リレーションシップ名の下に表示されます。 この例では、 `cities in country`という関係になっている：
-
-   ![表示されているオブジェクトと別のオブジェクトタイプの間に作成したリレーションシップを選択します。](./displaying-object-entries-with-collection-providers/images/07.png)
+   ![Select the relationship that you created with between the displayed object and another object type.](./displaying-object-entries-with-collection-providers/images/07.png)
 
 これで、新しいコレクション表示にフラグメントを埋め込み、関連オブジェクトのフィールドにマッピングできるようになりました。
 
-![フラグメントのサブ要素を親オブジェクトのフィールドにマップする。](./displaying-object-entries-with-collection-providers/images/08.png)
+![Map fragment sub-elements to fields in parent objects.](./displaying-object-entries-with-collection-providers/images/08.png)
 
 ## 関連トピック
 
-* [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)
-* [オブジェクトの入力を表示する](./displaying-object-entries.md)
-* [コレクションとコレクションページについて](../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
-* [コレクションプロバイダー](../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md)
-* [オブジェクトリレーションシップの定義](./creating-and-managing-objects/relationships/defining-object-relationships.md)
+* [Creating Objects](./creating-and-managing-objects/creating-objects.md)
+* [オブジェクトエントリの表示](./displaying-object-entries.md)
+* [コレクションとコレクション・ページについて](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
+* [コレクション・プロバイダー](../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md)
+* [オブジェクトの関係の定義](./creating-and-managing-objects/relationships/defining-object-relationships.md)

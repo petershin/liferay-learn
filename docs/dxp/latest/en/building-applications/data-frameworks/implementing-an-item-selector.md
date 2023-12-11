@@ -60,9 +60,10 @@ In an MVC Portlet pattern, the `Portlet` class is the controller class (the C in
 
 1. At the bottom of the class, OSGi injects an [`ItemSelector` class](https://github.com/liferay/liferay-portal/blob/master/modules/apps/item-selector/item-selector-api/src/main/java/com/liferay/item/selector/ItemSelector.java) instance because of the `@Reference` annotation.
 
-   ```java
-   @Reference
-   private ItemSelector _itemSelector;
+   ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/java/com/acme/f5d5/web/internal/portlet/F5D5Portlet.java
+      :dedent: 1
+      :language: java
+      :lines: 56-57
    ```
 
 1. Scroll to the portlet's `render` method.
@@ -71,9 +72,10 @@ In an MVC Portlet pattern, the `Portlet` class is the controller class (the C in
 
    This example uses a reference to [`RoleItemSelectorCriterion`](https://docs.liferay.com/dxp/apps/roles/latest/javadocs/com/liferay/roles/item/selector/RoleItemSelectorCriterion.html) so that roles are shown in the selector. It's defined by creating a new instance of the class.
 
-   ```java
-   ItemSelectorCriterion itemSelectorCriterion =
-        new RoleItemSelectorCriterion();
+   ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/java/com/acme/f5d5/web/internal/portlet/F5D5Portlet.java
+      :dedent: 2
+      :language: java
+      :lines: 39-40
    ```
 
    ```{tip}
@@ -94,9 +96,10 @@ In an MVC Portlet pattern, the `Portlet` class is the controller class (the C in
 
 1. Define the return type by registering it with the item criterion:
 
-   ```java
-	itemSelectorCriterion.setDesiredItemSelectorReturnTypes(
-		new UUIDItemSelectorReturnType());
+   ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/java/com/acme/f5d5/web/internal/portlet/F5D5Portlet.java
+      :dedent: 2
+      :language: java
+      :lines: 42-43
    ```
 
    ```{tip}
@@ -109,11 +112,10 @@ In an MVC Portlet pattern, the `Portlet` class is the controller class (the C in
 
    The [`RequestBackedPortletURLFactory` class](https://docs.liferay.com/portal/7.4-latest/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/RequestBackedPortletURLFactory.html) can quickly generate an item selector URL using the criteria:
 
-   ```java
-	PortletURL itemSelectorURL = _itemSelector.getItemSelectorURL(
-		RequestBackedPortletURLFactoryUtil.create(renderRequest),
-		renderResponse.getNamespace() + "selectRole",
-		itemSelectorCriterion);
+   ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/java/com/acme/f5d5/web/internal/portlet/F5D5Portlet.java
+      :dedent: 2
+      :language: java
+      :lines: 45-48
    ```
 
    ```{important}
@@ -122,16 +124,20 @@ In an MVC Portlet pattern, the `Portlet` class is the controller class (the C in
 
 1. Add the item selector URL to the `renderRequest` so that it's available in the JSP:
 
-   ```java
-   renderRequest.setAttribute(F5D5WebKeys.ITEM_SELECTOR_URL, itemSelectorURL);
+   ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/java/com/acme/f5d5/web/internal/portlet/F5D5Portlet.java
+      :dedent: 2
+      :language: java
+      :lines: 50-51
    ```
 
    The `view.jsp` file is where the front-end code is defined. The `renderRequest` object in your Java class' `render` method is passed to the JSP file. Use a constant to make sure you identify the URL in both the controller (portlet class) and the view (JSP).
 
 1. Finally, call `MVCPortlet`'s `render` method to continue the rendering process once your code is executed:
 
-   ```java
-   super.render(renderRequest, renderResponse);
+   ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/java/com/acme/f5d5/web/internal/portlet/F5D5Portlet.java
+      :dedent: 2
+      :language: java
+      :lines: 53
    ```
 
 That's the controller code. Execution now passes to the view layer (the V in MVC), which is implemented in the `view.jsp` file.
@@ -144,37 +150,18 @@ You must retrieve the item selector and define a way to use it in your front-end
 
 1. You can use a [Clay button](https://clayui.com/docs/components/button.html) tag to create a button to open your item selector:
 
-   ```jsp
-   <clay:button
-     id='<%= liferayPortletResponse.getNamespace() + "selectRoleButton" %>'
-     label="Select"
-   />
+   ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/resources/META-INF/resources/view.jsp
+      :language: jsp
+      :lines: 11-14
    ```
 
    The `clay:button` tag creates a button with the ID `selectRoleButton` and the label Select displayed on your widget. This button can be identified by the String `<portlet:namespace />selectRoleButton`.
 
 1. Use the `<script>` tag to embed JavaScript that opens the item selector:
 
-   ```jsp
-   <script>
-      var selectRoleButton = document.getElementById('<portlet:namespace />selectRoleButton');
-
-      selectRoleButton.addEventListener(
-         'click',
-         function(event) {
-            Liferay.Util.openSelectionModal(
-               {
-                  onSelect: function (event) {
-                     alert(event.value);
-                  },
-                  selectEventName: '<portlet:namespace />selectRole',
-                  title: 'Select Role',
-                  url: '<%= request.getAttribute(F5D5WebKeys.ITEM_SELECTOR_URL) %>'
-               }
-            );
-         }
-      );
-   </script>
+   ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/resources/META-INF/resources/view.jsp
+      :language: jsp
+      :lines: 16-34
    ```
 
 This snippet of JavaScript first retrieves the Select button through its identifier (`portlet:namespace />selectRoleButton`). Then it adds an event listener to create the item selector dialog when clicked.

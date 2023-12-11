@@ -8,12 +8,17 @@ toc:
   - ./level-1-technical/constructing-a-business-application.md
   - ./level-1-technical/extending-liferay.md
   - ./level-1-technical/deployment-strategies.md
+  - ./level-1-technical/success-stories-analysis.md
+  - ./level-1-technical/demo-ethics.md
+visibility:
+  - Employee
+  - Partner
 ---
 # 技術営業職レベル1
 
 技術営業職のためのレベル1「Liferayの販売」ラーニングパスへようこそ！
 
-このモジュールはセールスエンジニアに焦点を当て、 [レベル0](./level-0.md) で学んだ基礎知識をもとに、Liferay のデモを準備し、成功させることができるようにします。
+このモジュールはセールスエンジニアに焦点を当て、 [Level 0](./level-0.md) で学んだ基礎知識をもとに、Liferay のデモを準備し、成功させることができるようにします。
 
 ## 期待される成果
 
@@ -49,7 +54,7 @@ toc:
 
 このコースはセールス・エンジニアになる方法を教えるものではないので、テクニカル・セールスの経験があることをお勧めします。
 
-レベル1は、 [ディスカバリー・コール](./level-1-technical/discovery-calls.md)で何を調べるかを学ぶことから始める。
+レベル1は、 [ディスカバリー・コール](./level-1-technical/discovery-calls.md) で何を調べるかを学ぶことから始める。
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -60,7 +65,7 @@ toc:
 このモジュールでは、見込み客の心に響くデモを提供するために、ディスカバリー・コールで何を見つけるべきかを探ります。
 :::
 
-:::{grid-item-card} 公開ページ経験
+:::{grid-item-card} 公共ページでの経験
 :link: ./level-1-technical/public-pages-experience.md
 
 このモジュールでは、ログインする前にLiferayについて話し、デモを行う方法を説明します。
@@ -72,49 +77,45 @@ toc:
 このモジュールでは、Liferay アプリケーションの認証に使用できる方法と、見込み客との話し合い方を紹介します。
 :::
 
-:::{grid-item-card} 経験管理
+:::{grid-item-card} エクスペリエンスの管理
 :link: ./level-1-technical/experience-management.md
 
 このモジュールでは、Liferayアプリケーションにログインした後、ユーザーがどのような体験をするかを説明します。
 :::
 
-:::{grid-item-card} Liferay スタイリングの基本
+:::{grid-item-card} Liferayのスタイリングの基本
 :link: ./level-1-technical/basics-of-styling.md
 
 このモジュールでは、既存のデモのルック＆フィールを特定の見込み客のニーズに合わせて調整するために使用できる簡単なトリックについて説明します。
 :::
 
 :::{grid-item-card} ビジネスアプリケーションの構築
-:link: ./level-1-technical/constructing-a-business-application.md
+:link: ./level-1-technical/constructing-a-business-application.m
 
 このモジュールは、コードを書くことなく、既存のデモにビジネスアプリケーションを素早く追加する方法として、Liferay Objectsの使用を促進します。
 :::
 
-:::{grid-item-card} Liferay の拡張
+:::{grid-item-card} Liferayの拡張
 :link: ./level-1-technical/extending-liferay.md
 
 このモジュールでは、Liferayを拡張するために使用できるすべてのアプローチと、デモを実行しながらそれらについてどのように話すかを概説します。
 :::
 
-:::{grid-item-card} デプロイメント戦略
+:::{grid-item-card} 展開戦略
 :link: ./level-1-technical/deployment-strategies.md
 
 このモジュールでは、Liferay DXPで利用可能な3つの導入戦略について深く掘り下げ、どれがあなたの見込みに合っているかを判断するために始めるべき質問について説明します。
 :::
+
+:::{grid-item-card} サクセスストーリー分析
+:link: ./level-1-technical/success-stories-analysis.md
+
+このモジュールでは、セールスエンジニアがテーラーメイドソリューションハイライトを使ってLiferayのサクセスストーリーを学び、自信を持ってデモ中に話せるようになる方法を説明します。
+:::
+
+:::{grid-item-card} デモ倫理
+:link: ./level-1-technical/demo-ethics.md
+
+このモジュールでは、なぜ、いつ、何を、どのようにデモを行うのか、Liferayのデモを行う際の実践的なヒントややるべきこと、やってはいけないことを提供します。
+:::
 ::::
-
-## 近日公開
-
-残りのモジュールはまだ準備が整っていない！
-
-なお、直近のライブ・セッションの録画とプレゼンテーションのPDFは以下をご覧ください。
-
-**サクセスストーリー分析**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-9-success-stories-analysis) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analysis-pdf) をダウンロードしてください。
-
-**デモ倫理**
-
-* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-10-demo-ethics) をご覧ください。
-* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/se1-10-demo-ethics-pdf) をダウンロードしてください。

@@ -1,21 +1,58 @@
-# ヘッドレスフレームワークの統合
+---
+toc:
+  - ./using-custom-object-apis/object-api-basics.md
+  - ./using-custom-object-apis/using-batch-apis.md
+  - ./using-custom-object-apis/using-relationship-rest-apis.md
+  - ./using-custom-object-apis/using-nestedfields-to-query-related-entries.md
+  - ./using-custom-object-apis/using-nestedfields-to-audit-entry-history.md
+  - ./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md
+---
+# カスタムオブジェクトAPIの使用
 
 {bdg-secondary}`Liferay 7.4+`
 
 カスタムオブジェクトの定義を公開すると、Liferayはオブジェクトとそのデータと連携するためのデフォルトの [REST APIs](../../../headless-delivery/consuming-apis/consuming-rest-services.md) を生成します。 これらのAPIは、オブジェクトのスコープ（会社やサイトなど）に応じて異なります。 定義にリレーションシップやスタンドアロンアクションが含まれている場合、Liferayはそれらを呼び出すためのエンドポイントも生成します。
 
-これらのヘッドレスサービスのパスは、 `c/[pluralobjectlabel]` の命名パターン（例： `/o/c/timeoffrequests`）に従います。 利用可能なオブジェクトのAPIは、LiferayAPIエクスプローラーを介して`[server]:[port]/o/api`（例：`localhost:8080/o/api`）で表示およびテストできます。 ［**REST Applications**］ をクリックすると、APIのドロップダウンリストが表示されます。
+これらのヘッドレスサービスのパスは `c/[pluralobjectlabel]` の命名パターンに従う（例：`/o/c/timeoffrequests`）。 [server]:[port]/o/api` （例：`localhost:8080/o/api`）の Liferay API Explorer から利用可能なオブジェクト API を表示し、テストすることができます。 *RESTアプリケーション*をクリックすると、APIのドロップダウンリストが表示されます。
 
-![各オブジェクトは［REST Applications］の下に表示されます。](./using-custom-object-apis/images/01.png)
+![Each object appears under REST Applications.](./using-custom-object-apis/images/01.png)
 
-オブジェクトが有効である間は、これらのAPIを使用して、基本的なCRUD操作、 [集計用語](../objects-tutorials/using-apis/using-aggregation-terms-with-rest-apis.md)と[入れ子フィールド](../objects-tutorials/using-apis/using-nestedfields-to-query-related-entries.md)を使用した複雑なクエリの実行、スタンドアロンアクションのトリガー、エントリーリレーションシップの管理などを実行できます。 オブジェクトAPIのチュートリアルについては、 [APIの使用](../objects-tutorials/using-apis.md) を参照してください。
+オブジェクトが有効である間は、これらのAPIを使用して、基本的なCRUD操作、 [集計用語](./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md) と [入れ子フィールド](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) を使用した複雑なクエリの実行、スタンドアロンアクションのトリガー、エントリーリレーションシップの管理などを実行できます。
+
+::::{grid} 2
+:gutter: 3 3 3 3
+
+:::{grid-item-card} オブジェクトAPIの基本
+:link: ./using-custom-object-apis/object-api-basics.md
+:::
+
+:::{grid-item-card} バッチAPIの使用
+:link: ./using-custom-object-apis/using-batch-apis.md
+:::
+
+:::{grid-item-card} 関連REST APIの利用
+:link: ./using-custom-object-apis/using-relationship-rest-apis.md
+:::
+
+:::{grid-item-card} nestedFields を使用した関連エントリーのクエリー
+:link: ./using-custom-object-apis/using-nestedfields-to-query-related-entries.md
+:::
+
+:::{grid-item-card} nestedFieldsを使った入力履歴の監査
+:link: ./using-custom-object-apis/using-nestedfields-to-audit-entry-history.md
+:::
+
+:::{grid-item-card} REST APIでの集計用語の使用
+:link: ./using-custom-object-apis/using-aggregation-terms-with-rest-apis.md
+:::
+::::
 
 ## デフォルトの会社スコープのREST API
 
-デフォルトのREST APIは、すべての会社に範囲指定されているオブジェクトで使用できます。 Javaのメソッドについては、 `ObjectName`をオブジェクトの名前に置き換えます。
+デフォルトのREST APIは、すべての会社に範囲指定されているオブジェクトで使用できます。 Javaのメソッドでは、`ObjectName`をオブジェクトの名前に置き換える。
 
 | HTTP メソッド | HTTPエンドポイント                         | Javaメソッド                        | 説明                                                            |
-|:--------- |:----------------------------------- |:------------------------------- |:------------------------------------------------------------- |
+| :-------- | :---------------------------------- | :------------------------------ | :------------------------------------------------------------ |
 | DELETE    | `/by-external-reference-code/{erc}` | `deleteByExternalReferenceCode` | 指定されたエントリーを削除し、操作が成功した場合は204を返します                             |
 | GET       | `/by-external-reference-code/{erc}` | `getByExternalReferenceCode`    | 指定されたエントリーの詳細を返します                                            |
 | PATCH     | `/by-external-reference-code/{erc}` | `patchByExternalReferenceCode`  | 指定されたエントリーを更新します。API呼び出しに含まれるフィールドのみが変更されます                   |
@@ -31,15 +68,14 @@
 | PUT       | `/{entryId}`                        | `putObjectName`                 | 指定されたエントリーの詳細をAPI呼び出しで提供されたものに置き換えます                          |
 
 ```{note}
-バッチ操作は、会社スコープのオブジェクトに対してのみ利用可能です。
+バッチ操作は、カンパニー・スコープのオブジェクトに対してのみ有効です。
 ```
-
 ## デフォルトのサイトスコープのREST API
 
-デフォルトのREST APIは、すべてのサイトに範囲指定されているオブジェクトで使用できます。 Javaのメソッドについては、 `ObjectName`をオブジェクトの名前に置き換えます。
+デフォルトのREST APIは、すべてのサイトに範囲指定されているオブジェクトで使用できます。 Javaのメソッドでは、`ObjectName`をオブジェクトの名前に置き換える。
 
 | HTTP メソッド | HTTPエンドポイント                                           | Javaメソッド                                     | 説明                                                        |
-|:--------- |:----------------------------------------------------- |:-------------------------------------------- |:--------------------------------------------------------- |
+| :-------- | :---------------------------------------------------- | :------------------------------------------- | :-------------------------------------------------------- |
 | DELETE    | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `deleteScopeScopeKeyByExternalReferenceCode` | 指定されたエントリーを削除し、操作が成功した場合は204を返します                         |
 | GET       | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `getScopeScopeKeyByExternalReferenceCode`    | 指定されたエントリーの詳細を返します                                        |
 | PATCH     | `/scopes/{scopeKey}/by-external-reference-code/{erc}` | `patchScopeScopeKeyByExternalReferenceCode`  | 指定されたエントリーを更新します。API呼び出しに含まれるフィールドのみが変更されます               |
@@ -52,42 +88,40 @@
 | PUT       | `/{entryId}`                                          | `putObjectName`                              | 指定されたエントリーの詳細をAPI呼び出しで提供されたものに置き換えます                      |
 
 ```{note}
-`scopesKey`には、目的のデータスコープの適切な識別子（サイトID、ユーザーロールなど）を使用します。
+`scopeKey`には、希望するデータスコープの適切な識別子（サイトIDやユーザーロールなど）を使用する。
 ```
-
 ## リレーションシップREST API
 
-{bdg-secondary}`Liferay 7.4 U70+/GA70+`
+{bdg-secondary}`Liferay 7.4 U70+/GA70+`.
 
-オブジェクト間に1対多、多対多のリレーションシップを定義すると、Liferayはエントリーリレーションシップを照会、管理するためのエンドポイントを生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれます。 [Using Relationship APIs](../objects-tutorials/using-apis/using-relationship-rest-apis.md) をご参照ください。
+オブジェクト間に1対多、多対多のリレーションシップを定義すると、Liferayはエントリーリレーションシップを照会、管理するためのエンドポイントを生成します。 これには、関連するオブジェクトのエントリーを返すためのGETエンドポイント、エントリーを関連付けるためのPUTエンドポイント、関連するエントリーの関連付けを解除するためのDELETEエンドポイントが含まれます。 [Using Relationship APIs](./using-custom-object-apis/using-relationship-rest-apis.md) をご参照ください。
 
-HTTPエンドポイントでは、 `relationshipName` をリレーションシップの名前（例： `userToTicket`）に置き換えます。 各リレーションシップAPIのJavaメソッドは、メソッド＋カレントオブジェクト＋リレーションシップ名＋関連オブジェクトという命名パターンに従っています（例： `getTicketUserToTicketUserPage`、 `deleteTicketUserToTicketUser`)。
+HTTPエンドポイントでは、`relationshipName`をリレーションシップ名（例：`userToTicket`）に置き換える。 各リレーションシップAPIのJavaメソッドは、メソッド + 現在のオブジェクト + リレーションシップ名 + 関連オブジェクト（例：`getTicketUserToTicketUserPage`、`deleteTicketUserToTicketUser`）という命名パターンに従う。
 
 | HTTP メソッド | HTTPエンドポイント                                                       | 説明                                           |
-|:--------- |:----------------------------------------------------------------- |:-------------------------------------------- |
+| :-------- | :---------------------------------------------------------------- | :------------------------------------------- |
 | GET       | `/{entryId}/relationshipName`                                     | 指定されたエントリーに関連するすべてのエントリーを、リレーションシップを通じて返します。 |
 | PUT       | `/{entryId}/relationshipName/{relatedEntryId}`                    | 指定されたオブジェクトエントリーを関連付けるために、リレーションシップを使用します。   |
 | PUT       | `/by-external-reference-code/{erc}/relationshipName/{relatedERC}` | 指定されたオブジェクトエントリーを関連付けるために、リレーションシップを使用します。   |
 | DELETE    | `/{entryId}/relationshipName/{relatedEntryId}`                    | 指定されたオブジェクトエントリーの関連付けを解除します                  |
 
-サイトに範囲指定されたオブジェクトの場合、ERC エンドポイントには `/scope/{scopeKey}` のプレフィックス（例： `/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`）が含まれます。 システムオブジェクトでは、外部参照コードのエンドポイントは利用できません。
+サイトにスコープされたオブジェクトの場合、ERCエンドポイントは `/scope/{scopeKey}` 接頭辞を含む（例えば、`/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`）。 システムオブジェクトでは、外部参照コードのエンドポイントは利用できません。
 
 ```{tip}
-専用のリレーションシップAPIに加えて、`nestedFields`クエリパラメータをオブジェクトの他のGET APIと組み合わせて使用すると、エントリーとその関連エントリーを返すことができます。 このパラメータを使用する場合、出力に含めたいリレーションシップの名前を指定する必要があります（例：`nestedFields=ticketAssignee`など）。 詳細と入門チュートリアルについては [`nestedFields` を使って関連するエントリーをクエリーする。](../objects-tutorials/using-apis/using-nestedfields-to-query-related-entries.md) を参照してください。
+専用のリレーションシップAPIに加えて、`nestedFields`クエリパラメータをオブジェクトの他のGET APIと組み合わせて使用すると、エントリーとその関連エントリーを返すことができます。 このパラメータを使用する場合、出力に含めたいリレーションシップの名前を指定する必要があります（例：`nestedFields=ticketAssignee`など）。 [Using `nestedFields` to Query Related Entries](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) を参照してください。
 ```
-
 ## スタンドアロンアクションREST API
 
-{bdg-secondary}`Liferay 7.4 U60+/GA60+`
+{bdg-secondary}`Liferay 7.4 U60+/GA60+`.
 
 公開オブジェクトにスタンドアロンアクションを定義すると、Liferayはエントリーでアクションをトリガーするための2つのエンドポイントを生成します。 一つはエントリーのIDを使用し、もう一つはエントリーの外部参照コード（ERC）を使用します。 詳しくは、 [手動アクションの使用](../creating-and-managing-objects/actions/using-manual-actions.md) をご覧ください。
 
 | HTTP メソッド | HTTPエンドポイント                                                   | Javaメソッド                  |
-|:--------- |:------------------------------------------------------------- |:------------------------- |
+| :-------- | :------------------------------------------------------------ | :------------------------ |
 | PUT       | `/by-external-reference-code/{erc}/object-actions/actionName` | `putObjectNameActionName` |
 | PUT       | `/{entryId}/object-actions/actionName`                        | `putObjectNameActionName` |
 
-サイトに範囲指定されたオブジェクトの場合、ERC エンドポイントには `/scope/{scopeKey}` のプレフィックス（例： `/scopes/{scopeKey}/by-external-reference-code/{erc}/object-actions/actionName`)が含まれます。
+サイトがスコープされたオブジェクトの場合、ERCエンドポイントは `/scope/{scopeKey}` 接頭辞を含む（例：`/scope/{scopeKey}/by-external-reference-code/{erc}/object-actions/actionName` ）。
 
 <!--TASK: uncomment when GraphQL APIs are better supported, 
 ## GraphQL APIs
@@ -101,6 +135,5 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 
 ## 関連トピック
 
-* [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
-* [APIの使用](../objects-tutorials/using-apis.md)
-<!--TASK: * \[Consuming GraphQL APIs\](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->
+* [RESTサービスの消費](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+<!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

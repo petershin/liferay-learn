@@ -4,73 +4,83 @@
 
 ## 管理者ユーザーとしてLiferay DXPにアクセスする
 
-1. ブラウザで`http://localhost:8080`を開きます。
+1. ブラウザで`http://localhost:8080`を開く。
 
-1. ［**ログイン**］ リンクをクリックします。
+1. サインイン」リンクをクリックします。
 
-    ![サインインリンク](./introduction-to-the-admin-account/images/01.png "サインインリンク")
+   ![Sign In Link](./introduction-to-the-admin-account/images/01.png "Sign In Link")
 
     ```{note}
-    Liferay DXPバンドルが使用されている場合、[Setup Wizard](../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md)が表示されることがあります。 画面上の指示に従って、管理者ユーザーを設定します。
+    Liferay DXP バンドルを使用している場合、 [Setup Wizard](../installation-and-upgrades/installing-liferay/running-liferay-for-the-first-time.md) が表示されます。 画面上の指示に従って、管理者ユーザーを設定します。
     ```
-
 1. ログインするデフォルトの管理者資格情報を入力します。
 
-    * メールアドレス：`test@liferay.com`
-    * パスワード：`test`
+   * メールアドレス`test@liferay.com`
+   * パスワード: `test`
 
-    ```{warning}
-    Liferay DXPの新規インストールを開始するときに、デフォルトのログイン資格情報を更新することを**強く**推奨します。
-    ```
+   なお、セットアップ・ウィザードを使用して別の管理者ユーザーのメールアドレスを設定した場合は、代わりにそのメールアドレスを入力してください。 デフォルトのパスワードは `test` のままである。
 
+1. 初回サインイン時に、パスワードの変更が必要となります。 新しいパスワード（例：_learn_）を入力し、_Save_をクリックします。
+
+```{warning}
+本番環境では、デフォルトの管理者アカウントを使うべきではありません。 代わりに、あなたのビジネスに特化した管理者アカウントを作成する。 以下の手順を参照してください。
+```
 ## 管理者ユーザーの設定
 
 ### ログインパスワードの変更
 
-1. ［**User Avatar**］ をクリックして、 ［**アカウント設定**］ &rarr; ［**Password**］ に移動します。
+1. ユーザーアバター」をクリックし、「アカウント設定」 &rarr; _Password_に移動します。
 
-1. **現在のパスワード** を入力し、新しいパスワードを入力します。
+1. 現在のパスワード_を入力し、新しいパスワードを入力してください。
 
-    ![パスワード設定](./introduction-to-the-admin-account/images/02.png "パスワード設定")
+   ![Setting a Password](./introduction-to-the-admin-account/images/02.png "Setting a Password")
 
 ### アカウント情報の変更
 
-1. ［**User Avatar**］ &rarr; ［**アカウント設定**］ の順にクリックします。
+1. ユーザーアバター_ &rarr; _アカウント設定_ をクリックします。
 
-    ![アカウント設定](./introduction-to-the-admin-account/images/03.png "アカウント設定")
+   ![Account Settings](./introduction-to-the-admin-account/images/03.png "Account Settings")
 
-1. ［**Information**］ タブで、必要に応じてユーザー情報を変更または追加します。
+1. Information_タブで、必要に応じてユーザー情報を変更または追加します。
 
-    ![アカウント情報](./introduction-to-the-admin-account/images/04.png "アカウント情報")
+   ![Account Information](./introduction-to-the-admin-account/images/04.png "Account Information")
 
 ## ログアウト
 
 アカウントからログアウトするには：
 
-1. ［**User Avatar**］ &rarr; ［**Sign Out**］ の順にクリックします。
+1. ユーザーアバター_ &rarr; _サインアウト_ をクリックします。
 
-    ![ログアウト](./introduction-to-the-admin-account/images/05.png "ログアウト")
+   ![Signing Out](./introduction-to-the-admin-account/images/05.png "Signing Out")
 
 ## 新しい管理者ユーザーの作成
 
-ログイン方法がわかったので、日常的に使用する新しい管理者ユーザーを作成することを強くお勧めします。
+ログイン方法はお分かりいただけたと思いますので、日常的に使用する新しい管理者アカウントを作成されることを強くお勧めします。
 
 新しい管理者アカウントを作成するには、次の手順に従います。
 
-1. 新しいユーザーを作成します。 方法については、[Adding Users](../users-and-permissions/users/adding-and-managing-users.md)を参照してください。
+1. [configuring mail](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) を参照して、Liferay をメールサービスとセットアップしてください。 Liferay はアカウント作成時に新しいユーザーのメールアドレスにメールを送信します。
 
-1. 左側のナビゲーションペイン（［一般］の下の［ユーザーの編集］ページ）から ［**ロール**］ リンクをクリックします。
+   このステップを省略するには（例えばLiferayをテストしているだけの場合）、知らない人にメールアドレスの確認を求める機能を無効にしてください。 コントロールパネル_ &rarr; _インスタンス設定_ &rarr; _ユーザー認証_ に移動します。 知らない人にメールアドレスの確認を要求しますか？ なお、本番環境では無効にすることは推奨されない。
 
-    ![ロールリンクをクリックして、ユーザーのロールを編集します。](./introduction-to-the-admin-account/images/06.png)
+   ![Uncheck require strangers to verify their email address.](./introduction-to-the-admin-account/images/07.png)
 
-1. ［**Regular Roles**］ の横にある ［**選択**］ をクリックします。
+1. 新しいユーザーを作成します。 方法については、 [Adding Users](../users-and-permissions/users/adding-and-managing-users.md) を参照してください。
 
-1. リストから **管理者** ロールを選択します（［**Choose**］ をクリック）。 ダイアログボックスが閉じ、ロールがアカウントに関連付けられているロールのリストに追加されます。
+1. 左側のナビゲーションペイン（「General」の下の「Edit User」ページ）にある「_Roles_」リンクをクリックします。
 
-ユーザーがポータル管理者になりました。 ログアウトしてから、新しいユーザーアカウントで再度ログインします。
+   ![Click the Roles link to edit the User's Roles.](./introduction-to-the-admin-account/images/06.png)
+
+1. 通常の役割_の横にある_*選択*をクリックします。
+
+1. リストから_管理者_ロールを選択します（_選択_をクリックします）。 ダイアログボックスが閉じ、ロールがアカウントに関連付けられているロールのリストに追加されます。 一番下までスクロールし、「保存」をクリックします。
+
+1. (オプション) 上記のステップでメール [を](../installation-and-upgrades/setting-up-liferay/configuring-mail.md) 設定しなかった場合、この新規ユーザの初期パスワードを設定します。 左のナビゲーションペインにある_Password_リンクをクリックします。 ユーザーのパスワードを入力し、パスワードを再入力して_Save_をクリックします。
+
+ユーザーはポータル管理者になりました。 ログアウトし、新しいユーザーアカウントでログインし直してください。
 
 ## 次のステップ
 
-引き続きスタートガイドを進め、[DXPのグローバルメニュー](./navigating-dxp.md)について慣れてください。
+引き続きスタートガイドを進め、 [DXPのグローバルメニュー](./navigating-dxp.md) について慣れてください。
 
-[ユーザーがDXPにログインする方法](../installation-and-upgrades/securing-liferay/authentication-basics.md)について学習します。
+[ユーザーがDXPにログインする方法](../installation-and-upgrades/securing-liferay/authentication-basics.md) について学習します。

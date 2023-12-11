@@ -1,8 +1,8 @@
 # IFrameクライアント拡張機能の使用
 
-{bdg-secondary}`Liferay 7.4以降で利用可能`
+{bdg-secondary}`Liferay 7.4+が利用可能です。`
 
-IFrameクライアント拡張は、Liferayのフロントエンドインフラストラクチャを使用して、外部アプリケーションを `<iframe>` HTML要素として登録します。 これらはウィジェットとしてLiferayのページに追加されます。 他のフロントエンドクライアント拡張とは異なり、IFrameは静的リソースを提供しない。
+IFrameクライアント拡張はLiferayのフロントエンドインフラストラクチャを使い、外部アプリケーションを`<iframe>` HTML要素として登録します。 これらはウィジェットとしてLiferayのページに追加されます。 他のフロントエンドクライアント拡張とは異なり、IFrameは静的リソースを提供しない。
 
 ```{warning}
 IFrameクライアント拡張は開発中であり、現在Liferay 7.4ではサポートされていません。
@@ -17,7 +17,7 @@ IFrameクライアント拡張は開発中であり、現在Liferay 7.4ではサ
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   対応するJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVMの設定については、[JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md)を参照してください。
+   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -34,7 +34,7 @@ IFrameクライアント拡張は開発中であり、現在Liferay 7.4ではサ
 
 ## ロードするIFrameクライアント拡張機能のURLを指定する
 
-`client-extensions/liferay-sample-iframe-1/client-extension.yaml` ファイルは、サンプルワークスペースの IFrame クライアント拡張プロジェクトを定義します：
+`client-extensions/liferay-sample-iframe-1/client-extension.yaml`ファイルは、サンプルワークスペースのIFrameクライアント拡張プロジェクトを定義します：
 
 ```yaml
 liferay-sample-iframe-1-counter-app:
@@ -43,14 +43,14 @@ liferay-sample-iframe-1-counter-app:
     url: https://arnab-datta.github.io/counter-app
 ```
 
-このクライアント拡張機能には、 `liferay-sample-iframe-1` という ID があり、 `name`、 `type` 、IFrame として取り込むアプリの URL など、IFrame クライアント拡張機能の主要な設定が含まれています。 [カウンターアプリ](https://github.com/arnab-datta/counter-app) は、例の `url` で実行されている、ショッピングカートに商品を追加することをシミュレートする基本的なReactアプリです。 クライアントエクステンションをデプロイしたら、他のウィジェットと同じようにLiferayのページにアプリを追加できます。
+このクライアント拡張は `liferay-sample-iframe-1` という ID を持ち、`name`, `type`, IFrame として取り込むアプリの URL など、IFrame クライアント拡張の主要な設定を含んでいます。 例の `url` で実行されている [Counter App](https://github.com/arnab-datta/counter-app) は、ショッピングカートに商品を追加することをシミュレートする基本的な React アプリです。 クライアントエクステンションをデプロイしたら、他のウィジェットと同じようにLiferayのページにアプリを追加できます。
 
 利用可能なプロパティの詳細については、 [IFrame YAML設定リファレンス](../iframe-yaml-configuration-reference.md) を参照してください。
 
 ## IFrameクライアント拡張機能の展開
 
 ```{note}
-クライアント拡張をLiferay Experience Cloudにデプロイするには、Liferay Cloudの [コマンドラインツール](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使って [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
+クライアント拡張を Liferay Experience Cloud にデプロイするには、Liferay Cloud [Command-Line Tool](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool) を使用して [`lcp deploy`](https://learn.liferay.com/w/liferay-cloud/reference/command-line-tool#deploying-to-your-liferay-cloud-environment) を実行します。
 ```
 
 ```{include} /_snippets/run-liferay-portal.md
@@ -62,7 +62,7 @@ liferay-sample-iframe-1-counter-app:
 ../../gradlew clean deploy -Ddeploy.docker.container.id=$(docker ps -lq)
 ```
 
-これでクライアントエクステンションがビルドされ、Liferay の `/deploy` フォルダに zip がデプロイされます。
+これでクライアントの拡張機能がビルドされ、Liferay の `/deploy` フォルダに zip がデプロイされます。
 
 ```{tip}
 ワークスペース内のすべてのクライアントエクステンションを同時にデプロイするには、`/client-extensions`フォルダからコマンドを実行します。
@@ -80,18 +80,18 @@ STARTED liferay-sample-iframe-1_1.0.0 [1592]
 
 IFrameはウィジェットとしてページに追加される。
 
-1. 任意のページの上部にある **Edit**(![Edit](../../../../images/icon-edit-pencil.png)) をクリックします。
+1. ページ上部の_Edit_ (![Edit](../../../../images/icon-edit-pencil.png)) をクリックします。
 
-1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（![Fragments and Widgets](../../../../images/icon-plus.png)）で、 **ウィジェット** をクリックします。
+1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（！[フラグメントとウィジェット](../../../../images/icon-plus.png)）で、_Widgets_をクリックします。
 
-1. Client Extensions &rarr; Counter Appウィジェットを見つけ、ページにドラッグします。 ［**Publish**］ をクリックします。
+1. Client Extensions &rarr; Counter Appウィジェットを見つけ、ページにドラッグします。 Publish_をクリックする。
 
-   ![カウンターアプリをページにドラッグします。](./using-an-iframe-client-extension/images/01.png)
+   ![Drag the Counter App onto a page.](./using-an-iframe-client-extension/images/01.png)
 
 アイテムを追加して、カウンターアプリが動作していることを確認します。
 
 ## 関連トピック
 
-* [フロントエンドのクライアント拡張](../../front-end-client-extensions.md)
-* [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md)
-* [クライアント拡張機能UIリファレンス](../client-extensions-ui-reference.md)
+* [フロントエンド・クライアント拡張](../../front-end-client-extensions.md) 
+* [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md) 
+* [クライアント拡張 UI リファレンス](../client-extensions-ui-reference.md) 

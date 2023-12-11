@@ -2,85 +2,86 @@
 
 Webコンテンツストラクチャーとは、Webコンテンツの記事に含まれる情報を定義するものです。 ストラクチャーにより、Webコンテンツの作成・管理がしやすくなり、コンテンツに必要な情報がすべて確実に含まれるようにします。 ストラクチャーをWebコンテンツテンプレートに関連付けることができます。 テンプレートは、ページ上でコンテンツ項目がどのようにレンダリングされるかを決定します。 次の表は、Webコンテンツストラクチャーとテンプレートと共にLiferay DXP REST APIを使用して、利用可能なオプションをまとめたものです。
 
-| 利用可能なオプション                | 利用不可のオプション                |
-|:------------------------- |:------------------------- |
-| <ul><li>ストラクチャーとテンプレートの情報収集</li><li>ストラクチャー権限の置換</li></ul> | <ul><li>ストラクチャーやテンプレートの作成</li><li>ストラクチャーやテンプレートの削除</li></ul> |
+| 利用可能なオプション                                                  | 利用不可のオプション                                              |
+| :---------------------------------------------------------- | :------------------------------------------------------ |
+| <ul><li>構造体とテンプレートの情報を集める</li><li>構造体のアクセス権を置き換える</li></ul> | <ul><li>構造またはテンプレートの作成</li><li>構造またはテンプレートの削除</li></ul> |
 
 ここでは、いくつかの [cURL](https://curl.haxx.se/) コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、構造化コンテンツの管理方法について学習していきます。 以下のトピックについて学習することができます。
 
-- [環境のセットアップ](#setting-up-your-environment)
-- [使用するサービスの特定](#identifying-the-service-to-consume)
-- [サイトストラクチャーの取得](#getting-the-site-structures)
-- [サイトテンプレートの取得](#getting-the-site-templates)
-- [ストラクチャー権限の取得](#getting-the-structure-permissions)
-- [ストラクチャー権限の置換](#replacing-the-structure-permissions)
+* [環境の設定](#setting-up-your-environment) 
+* [消費するサービスの特定](#identifying-the-service-to-consume) 
+* [サイト構造の取得](#getting-the-site-structures) 
+* [サイト・テンプレートの取得](#getting-the-site-templates) 
+* [構造パーミッションの取得](#getting-the-structure-permissions) 
+* [構造パーミッションの置き換え](#replacing-the-structure-permissions) 
 
 ## 環境のセットアップ
 
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+次に、以下の手順に従います。
 
-1. [サンプルプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip) をダウンロードし、解凍します：
+1. [サンプルのプロジェクト](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip) をダウンロードして解凍します。
 
-    ```bash
-    curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip -O
-    ```
+   <!-- This project isn't in the repo -->
 
-    ```bash
-    unzip liferay-m7b1.zip
-    ```
+   ```bash
+   curl https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b1.zip -O
+   ```
+
+   ```bash
+   unzip liferay-m7b1.zip
+   ```
 
     ```{note}
     これらのスクリプトは基本認証を使用し、テスト用に設計されています。 本番のLiferay DXP環境では、基本認証を使用しないでください。
     ```
-
 1. 以下の手順で環境をセットアップします。
 
-   1. [サイトIDを特定します。](#identifying-the-site-id)
-   1. [サンプルストラクチャーを作成します。](#create-a-sample-structure)
-   1. [ストラクチャーIDを特定します。](#identifying-the-structure-id)
+   1. [サイトIDの特定](#identifying-the-site-id) 
+   1. [サンプル構造の作成](#create-a-sample-structure) 
+   1. [構造IDの特定](#identifying-the-structure-id) 
 
 ### サイトIDの特定
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**Configuration**］ &rarr; ［**Site Settings**］ に移動します。
-1. プラットフォームセクションで、 ［**Site Configuration**］ をクリックします。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、_設定_ &rarr; _サイト設定_に進みます。
+1. ［プラットフォーム］セクション下で、*［サイト設定］*をクリックします。
 1. ［Site ID］の下でサイト識別子を見つけます。
 
-   ![［サイト設定］と［Site Configuration］オプションでサイトIDを特定します。](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
+   ![Identify the Site ID under the Site Settings and Site Configuration option.](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
 
 ### ストラクチャーとテンプレートサンプルの作成
 
 ```{note}
-REST APIを使用してプログラム的にストラクチャーとテンプレートを作成することはできません。
+REST API を使用して、構造またはテンプレートをプログラムで作成することはできません。
 ```
+ストラクチャーを作成するには、 [ストラクチャーの作成](../web-content-structures/creating-structures.md) を参照してください。 テンプレートを作成するには、 [Webコンテンツテンプレートの作成](../web-content-templates/creating-web-content-templates.md) を参照し、サンプルストラクチャーを元にテンプレートを作成します。 このチュートリアルでは、単一のテキストフィールドを持つ基本的な構造体を使用して `ContentStructure` サービスをデモします。
 
-ストラクチャーを作成するには、[ストラクチャーの作成](../web-content-structures/creating-structures.md)を参照してください。 テンプレートを作成するには、 [Webコンテンツテンプレートの作成](../web-content-templates/creating-web-content-templates.md)を参照し、サンプルストラクチャーを元にテンプレートを作成します。 このチュートリアルでは、1つのテキストフィールドを持つ基本的なストラクチャーを使用して、`ContentStructure` サービスを実演します。
-
-![単一のテキストフィールドを使用した基本的なサンプルストラクチャーです。](./managing-structures-and-templates-by-using-the-rest-api/images/02.png)
+![Basic sample Structure using a single Text field.](./managing-structures-and-templates-by-using-the-rest-api/images/02.png)
 
 ### サンプルストラクチャーとテンプレートの特定
 
-1. サイトメニュー（![Site menu](../../../images/icon-menu.png)）を開き、 ［**Content & Data**］ &rarr; ［**Web Content**］ に移動します。
-1. ［**ストラクチャー**］ タブをクリックします。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、_コンテンツ＆データ_ &rarr; _ウェブコンテンツ_に移動します。
+1. *構造*タブをクリックする。
 1. IDの欄で、ストラクチャーのIDを特定します。
 
-   ![［ストラクチャー］タブで、ID欄の下にあるストラクチャーの IDを確認します。](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
+   ![In the Structures tab, identify the ID for your Structure under the ID column.](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
 
-また、プログラム的にストラクチャーIDを特定することも可能です。 詳しくは、 [REST APIによるストラクチャーとテンプレートの管理](./managing-structures-and-templates-by-using-the-rest-api.md)をご覧ください。
+また、プログラム的にストラクチャーIDを特定することも可能です。 詳しくは、 [REST APIによるストラクチャーとテンプレートの管理](./managing-structures-and-templates-by-using-the-rest-api.md) をご覧ください。
 
 ## 使用するサービスの特定
 
-Webコンテンツの管理には、Liferay DXP Headless Delivery API の`StructuredContent`サービスを使用します。 このサービスとすべての異なるHTTPメソッドを識別するには、Liferay APIエクスプローラーを使用します。 詳しくは、 [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md)を参照してください。
+Web コンテンツの管理には、Liferay DXP Headless Delivery API の `StructuredContent` サービスを使用します。 このサービスとすべての異なるHTTPメソッドを識別するには、Liferay APIエクスプローラーを使用します。 詳しくは、 [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md) を参照してください。
 
 ## サイトストラクチャーの取得
 
-`ContentStructures_GET_FromSite.sh`cURLスクリプトは、既存のサイトストラクチャーを一覧表示します。 このスクリプトは、サイトIDを唯一のパラメーターとして、`GET` HTTPメソッドで`ContentStructure`サービスを使用します。
+`ContentStructures_GET_FromSite.sh`cURLスクリプトは、既存のサイト構造を一覧表示します。 このスクリプトは `GET`HTTP メソッドで`ContentStructure` サービスを使用し、唯一のパラメータとしてサイト ID を使用します。
 
 テーブル
+
 | メソッド | サービス               | エンドポイント                                 |
-|:---- |:------------------ |:--------------------------------------- |
+| :--- | :----------------- | :-------------------------------------- |
 | GET  | `ContentStructure` | /v1.0/sites/{siteId}/content-structures |
 
 ```bash
@@ -88,10 +89,10 @@ Webコンテンツの管理には、Liferay DXP Headless Delivery API の`Struct
 ```
 
 | パラメーター # | 説明       |
-|:-------- |:-------- |
+| :------- | :------- |
 | $1       | `siteId` |
 
-次のコードは、スクリプトが生成するJSON出力を示しています。 このスクリプトは、サイト内のすべてのストラクチャーを返します。 この例では、 `id` と `name`で識別される単一のストラクチャーを確認できます。
+次のコードは、スクリプトが生成するJSON出力を示しています。 このスクリプトは、サイト内のすべてのストラクチャーを返します。 この例では、`id`と`name`で識別される1つの構造体を見ることができる。
 
 ```json
    {
@@ -135,7 +136,7 @@ Webコンテンツの管理には、Liferay DXP Headless Delivery API の`Struct
    }
 ```
 
-ストラクチャーには、 `contentStructureFields`の`dataType`セクションで説明される単一のテキストフィールドがあります。 ストラクチャーにさらに要素を含めると、 `contentStructureFields`の下に追加のセクションが表示されます。 以下は、テキストフィールド（`"dataType" : "string"`）と画像フィールド（`"dataType" : "image"`）を持つストラクチャーのJSON出力部分です。
+構造体には、`contentStructureFields`の`dataType`セクションで説明されている1つのテキストフィールドがあります。 Structureにさらに要素を含めると、`contentStructureFields`の下に追加のセクションが表示されます。 以下は、Textフィールド(`"dataType" : "string"`)とImageフィールド(`"dataType" : "image"`)を持つStructureの部分的なJSON出力である：
 
 ```json
 {
@@ -180,11 +181,12 @@ Webコンテンツの管理には、Liferay DXP Headless Delivery API の`Struct
 
 ## サイトテンプレートの取得
 
-`ContentTemplates_GET_FromSite.sh`cURLスクリプトは、既存のサイトテンプレートを一覧表示します。 このスクリプトは、サイトIDを唯一のパラメーターとして、`GET` HTTPメソッドで`ContentTemplate`サービスを使用します。
+`ContentTemplates_GET_FromSite.sh`cURLスクリプトは、既存のサイトテンプレートを一覧表示します。 このスクリプトは `ContentTemplate`サービスを`GET` HTTP メソッドで使用し、唯一のパラメータとしてサイト ID を使用する。
 
 テーブル
+
 | メソッド | サービス              | エンドポイント                                |
-|:---- |:----------------- |:-------------------------------------- |
+| :--- | :---------------- | :------------------------------------- |
 | GET  | `ContentTemplate` | /v1.0/sites/{siteId}/content-templates |
 
 ```bash
@@ -194,10 +196,10 @@ Webコンテンツの管理には、Liferay DXP Headless Delivery API の`Struct
 cURLスクリプトのパラメーター：
 
 | パラメーター # | 説明       |
-|:-------- |:-------- |
+| :------- | :------- |
 | $1       | `siteId` |
 
-以下は、このスクリプトが生成するJSON出力の一部です。 このスクリプトは、サイト内のすべてのテンプレートを返します。 この例では、 `id` と `name`で識別される単一のテンプレートを確認できます。 `contentStructureId` は関連するストラクチャーIDに、 `templateScript` はテンプレートを記述したFreeMarker テンプレート言語に対応します。
+以下は、このスクリプトが生成するJSON出力の一部です。 このスクリプトは、サイト内のすべてのテンプレートを返します。 この例では、`id`と`name`で識別される1つのテンプレートが表示されています。 `contentStructureId` は関連する構造 ID に対応し、`templateScript` はテンプレートを記述する FreeMarker テンプレート言語に対応します。
 
 ```json
 {
@@ -229,16 +231,14 @@ cURLスクリプトのパラメーター：
 ```
 
 ```{note}
-テンプレートについて詳しくは、[Webコンテンツテンプレートの作成](../web-content-templates/creating-web-content-templates.md)をご覧ください。
+テンプレートについての詳細は、 [ウェブ・コンテンツ・テンプレートの作成](../web-content-templates/creating-web-content-templates.md) をお読みください。
 ```
-
 ## ストラクチャー権限の取得
 
-`ContentStructure_GET_Permissions.sh` cURLスクリプトは、ストラクチャーの権限を一覧表示します。 このスクリプトは、ストラクチャーIDを唯一のパラメーターとして、`GET` HTTPメソッドで`ContentStructure`サービスを使用します。
+`ContentStructure_GET_Permissions.sh`cURLスクリプトは、Structureのパーミッションを一覧表示します。 このスクリプトは `ContentStructure`サービスを`GET` HTTP メソッドで使用し、構造体 ID を唯一のパラメータとして使用します。
 
-テーブル
-| メソッド | サービス              | エンドポイント                                |
-|:---- |:----------------- |:-------------------------------------- |
+| メソッド | サービス               | エンドポイント                                                     |
+| :--- | :----------------- | :---------------------------------------------------------- |
 | PUT  | `ContentStructure` | `/v1.0/content-structures/{contentStructureId}/permissions` |
 
 ```bash
@@ -247,11 +247,11 @@ cURLスクリプトのパラメーター：
 
 cURLスクリプトのパラメーター：
 
-| パラメーター # | 説明           |
-|:-------- |:------------ |
-| $1       | ストラクチャー `id` |
+| パラメーター # | 説明       |
+| :------- | :------- |
+| $1       | 構造体 `id` |
 
-JSON出力には、`items`セクションの下に権限が含まれます。 この例では、 `roleName`にサンプルストラクチャーの権限を持つロールが1つだけあり、 `actionIds`に権限リストがあります 。
+JSON出力には、`items`セクションの下のパーミッションが含まれる。 この例では、`roleName`にサンプルの構造体に対するパーミッションを持つRoleが1つだけあり、`actionIds`にパーミッションのリストがあります：
 
 ```json
 {
@@ -280,16 +280,14 @@ JSON出力には、`items`セクションの下に権限が含まれます。 �
 ```
 
 ```{note}
-権限の管理方法については、[Webコンテンツストラクチャーとテンプレートへの権限の割り当て](../assigning-web-content-structures/assigning-permissions-to-structures-and-templates.md) をご覧ください。
+パーミッションの管理方法については、[Webコンテンツ構造とテンプレートへのパーミッションの割り当て](../assigning-web-content-structures/assigning-permissions-to-structures-and-templates.md)を参照してください。
 ```
-
 ## ストラクチャー権限の置換
 
-`PUT`HTTPメソッドで、 `ContentStructure`サービスを使って、オリジナルのストラクチャー権限を置き換えることができます。 このスクリプトの例では、構造化コンテンツ識別子 `id` を使用して、パワーユーザーロールの `DELETE` と `VIEW` 権限を含んでいます。
+HTTP メソッド `PUT` を `ContentStructure` サービスと一緒に使って、元の Structure 権限を置き換える。 このスクリプトの例では、構造化コンテンツ識別子 `id` を使用して、パワーユーザー役割の `DELETE` と `VIEW` 権限を含めます：
 
-テーブル
-| メソッド | サービス              | エンドポイント                                |
-|:---- |:----------------- |:-------------------------------------- |
+| メソッド | サービス               | エンドポイント                                                     |
+| :--- | :----------------- | :---------------------------------------------------------- |
 | PUT  | `ContentStructure` | `/v1.0/content-structures/{contentStructureId}/permissions` |
 
 ```bash
@@ -298,11 +296,11 @@ JSON出力には、`items`セクションの下に権限が含まれます。 �
 
 cURLスクリプトのパラメーター：
 
-| パラメーター # | 説明           |
-|:-------- |:------------ |
-| $1       | ストラクチャー `id` |
+| パラメーター # | 説明       |
+| :------- | :------- |
+| $1       | 構造体 `id` |
 
-JSON出力では、 `items` セクションの下に、各ロールについて2つのエントリーが表示されます。
+JSONの出力では、`items`セクションの下に2つのエントリーが表示される：
 
 ```json
 {

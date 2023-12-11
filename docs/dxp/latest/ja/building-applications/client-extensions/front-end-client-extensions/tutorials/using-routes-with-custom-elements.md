@@ -1,22 +1,22 @@
 # カスタム要素でルーティングを使用する
 
-{bdg-secondary}`Liferay 7.4以降で利用可能`
+{bdg-secondary}`Liferay 7.4+が利用可能です。`
 
-カスタムエレメントクライアント拡張は、Liferayのフロントエンド基盤を利用して、外部アプリケーションをLiferayプラットフォームに登録し、ウィジェットとしてレンダリングします。 複数のルーティングを含むアプリケーション(例： [React Router](https://reactrouter.com/) ）では、実行時にウィジェットに使用するルーティングを決定するために、リモートアプリケーションのプロパティを定義することができます。 これらのプロパティは、Liferayのリモートアプリケーションメニュー、またはデプロイ後のウィジェットの設定オプションからアプリケーションに設定することができます。
+カスタム要素クライアント拡張は、Liferayのフロントエンドのインフラストラクチャーを使用して、外部のアプリケーションをLiferayプラットフォームに登録し、ウィジェットとしてレンダリングします。 複数のルーティングを含むアプリケーション（例： [React Router](https://reactrouter.com/) ）では、実行時にウィジェットに使用するルーティングを決定するために、リモートアプリケーションのプロパティを定義することができます。 これらのプロパティは、Liferayのリモートアプリケーションメニュー、またはデプロイ後のウィジェットの設定オプションからアプリケーションに設定することができます。
 
 ```{warning}
-カスタムエレメントやIFrameを他のタイプのクライアントエクステンションのように展開することは、Liferay 7.4の**ベータ機能**です。 このチュートリアルでは、カスタム要素のリモートアプリケーションを異なる方法で展開しますが、将来のアップデートまでは、この方法が推奨されます。
+カスタム要素やIFrameを他のタイプのクライアント拡張のようにデプロイすることは、Liferay 7.4の**ベータ機能**です。 このチュートリアルでは、カスタム要素のリモートアプリケーションを異なる方法でデプロイしますが、将来のアップデートまでは、この方法が推奨されます。
 ```
 
-このチュートリアルでは、Liferay の `create_custom_element.sh` スクリプトを使って基本的な React アプリケーションを作成します。 `hello-world`, `hello-foo`, `hello-bar`という 3 つのルートを持つサンプルアプリを生成します。 アプリケーションをコンパイルし、`.js`と`.css`ファイルをホストしたら、アプリケーションをLiferayに登録して、ページウィジェットとしてデプロイします。 最後に、それぞれの代替ルーティングを使用するように設定します。
+このチュートリアルでは、Liferay の `create_custom_element.sh` スクリプトを使って基本的な React アプリケーションを作成します：hello-world`、`hello-foo`、`hello-bar`です。 アプリケーションをコンパイルして`.js`と`.css` ファイルをホストした後、アプリケーションを Liferay に登録し、ページウィジェットとしてデプロイします。 最後に、それぞれの代替ルーティングを使用するように設定します。
 
-![代替ルートを持つ基本的なカスタム要素リモートアプリケーションを作成し、ルートプロパティを使用して、どちらがレンダリングされるかを設定することができます。](./using-routes-with-custom-elements/images/01.png)
+![Create a basic custom element remote appliaction with alternate routes and use the route property to configure which is rendered.](./using-routes-with-custom-elements/images/01.png)
 
 ```{note}
-カスタムエレメントクライアントの拡張は、構築、パッケージ化、ホスティングの方法に関係なく、あらゆるテクノロジーを使用できます。 このチュートリアルでは、基本的なルーティングを行うカスタムエレメントアプリケーションのサンプルのみを提供しています。
+カスタム要素クライアントの拡張は、構築、パッケージ化、ホスティングの方法に関係なく、あらゆるテクノロジーを使用できます。 このチュートリアルでは、基本ルーティングを使用したカスタム要素アプリケーションのサンプルのみを提供しています。
 ```
 
-`create_custom_element.sh` を実行するには、 [Node.JS](https://nodejs.org/) , [NPM](https://www.npmjs.com/) , [YARN](https://classic.yarnpkg.com/) の最新版が必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
+`create_custom_element.sh` を実行するには、 [Node.JS](https://nodejs.org/) 、 [NPM](https://www.npmjs.com/) 、 [YARN](https://classic.yarnpkg.com/) の最新バージョンが必要です。 先に進む前に、これらのツールがインストールされていることを確認してください。
 
 ## Reactアプリケーションの作成、ビルド、ホスティング
 
@@ -34,7 +34,7 @@
 
 1. アプリケーションが正常に作成されたことを確認します。
 
-   スクリプトは、これらの要素で `j1v3-custom-element` という新しい React アプリケーションを作成します：
+   スクリプトは、これらの要素を持つ `j1v3-custom-element` という新しいReactアプリケーションを作成する：
 
    ```bash
    j1v3-custom-element
@@ -67,7 +67,7 @@
    └── yarn.lock
    ```
 
-1. 新しい `j1v3-custom-element` フォルダに移動し、アプリケーションをビルドします。
+1. 新しい `j1v3-custom-element` フォルダに移動し、アプリケーションをビルドする。
 
    ```bash
    cd j1v3-custom-element
@@ -77,7 +77,7 @@
    yarn build
    ```
 
-1. ビルドが成功したことを確認し、アプリケーションの `.js` と `.css` ファイルを確認します。
+1. ビルドが成功したことを確認し、アプリケーションの `.js` と `.css` ファイルに注目してください。
 
    ```bash
    Creating an optimized production build...
@@ -89,17 +89,17 @@
    121 B     build/static/css/main.9877909d.css
    ```
 
-1. メールアドレス(**test@liferay.com**）とパスワード(**test**）を使って、`<http://localhost:8080>`でLiferayにサインインします。 プロンプトが表示されたら、パスワードを **learn** に変更します。
+1. メールアドレス _test@liferay.com_ とパスワード _test_ を使って、`<http://localhost:8080>` から Liferay にサインインしてください。 プロンプトが表示されたら、パスワードを_learn_に変更する。
 
-1. **サイトメニュー**(![Site Menu](../../../../images/icon-product-menu.png)) を開き、 ［**コンテンツ & データ**］ を展開して、 ［**ドキュメントとメディア**］ へ移動してください。
+1. [サイトメニュー](../../../../../images/icon-product-menu.png))を開き、_コンテンツとデータ_を展開し、_ドキュメントとメディア_に移動します。
 
-1. **追加**(![Add Button](../../../../images/icon-add.png)) をクリックし、 **複数ファイルのアップロード** を選択します。
+1. 追加* (![追加ボタン](../../../../images/icon-add.png))をクリックし、_複数ファイルのアップロード_を選択します。
 
-1. `.js` と `.css` のファイルをアップロードエリアにドラッグ＆ドロップしてください。
+1. .js`ファイルと`.css`ファイルをアップロードエリアにドラッグ＆ドロップします。
 
-   ![.js と .css ファイルを Liferayドキュメントライブラリにアップロードします。](./using-routes-with-custom-elements/images/02.png)
+   ![Upload the .js and .css files to the Liferay Document Library.](./using-routes-with-custom-elements/images/02.png)
 
-1. ［**Publish**］ をクリックします。
+1. *［公開］*をクリックします。
 
 これは Liferayドキュメントライブラリにファイルを追加し、固有の WebDAV URL を割り当て、リモートアプリケーションを作成するために使用します。
 
@@ -107,80 +107,80 @@
 このチュートリアルでは、アプリケーションの静的リソースをデモ用にLiferayのドキュメントライブラリにホスティングします。 本番環境では、静的リソースをホストするために最適化されたサーバーでアプリケーションのファイルをホストする必要があります。
 ```
 
-各ファイルのURLを表示するには、 **Info** icon (![Info Icon](../../../../images/icon-information.png))をクリックし、ファイルを一つずつ選択してください。 各ファイルの **WebDAV URL** をコピーし、次のステップで使用するために保存してください。
+各ファイルのURLを表示するには、_情報_アイコン(![情報アイコン](../../../../images/icon-information.png))をクリックし、一度に1つのファイルを選択します。 各ファイルの_WebDAV URL_をコピーし、次のステップで使用するために保存する。
 
-![各ファイルのWebDAV URLをコピーします。](./using-routes-with-custom-elements/images/03.png)
+![Copy each file's WebDAV URL.](./using-routes-with-custom-elements/images/03.png)
 
-例：
+例えば、
 
 * `http://localhost:8080/webdav/guest/document_library/main.114dde4a.js`
 * `http://localhost:8080/webdav/guest/document_library/main.9877909d.css`
 
 ## アプリケーションの登録とデプロイ
 
-1. **グローバルメニュー**(![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**リモートアプリケーション**］ へ移動します。
+1. グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、_アプリケーション_タブをクリックし、_リモートアプリケーション_に進みます。
 
-1. **追加**(![Add Button](../../../../images/icon-add.png)） をクリックします。
+1. 追加* (![追加ボタン](../../../../images/icon-add.png))をクリックします。
 
 1. 次の値を入力します。
 
    | 項目           | 値                     |
-   |:------------ |:--------------------- |
-   | 名称           | J1V3-カスタムエレメント        |
-   | タイプ          | カスタム要素                |
-   | HTML要素名      | `j1v3-custom-element` |
+   | :----------- | :-------------------- |
+   | 名前           | J1V3-Custom-Element   |
+   | 種類           | カスタム要素                |
+   | HTML 要素名     | `j1v3-custom-element` |
    | URL          | `.js`ファイルのWebDAV URL  |
-   | CSSのURL      | `.css`ファイルのWebDAV URL |
-   | インスタンス化可能    | &#10004;              |
+   | CSS の URL    | `.css`ファイルのWebDAV URL |
+   | インスタンス化可能    | &#10004              |
    | ポートレットのカテゴリ名 | リモートアプリケーション          |
 
-1. ［**保存**］ をクリックします。
+1. ［_Save_］をクリックします。
 
-保存すると、LiferayはJ1V3-Custom-Elementという名前のウィジェットを作成し、他のページウィジェットと同様にサイトページに配置することができます。 選択したポートレットカテゴリ名の下に表示されます。
+保存すると、LiferayはJ1V3-Custom-Elementという名前のウィジェットを作成し、他のページウィジェットと同様にサイトページにデプロイすることができます。 選択したポートレットカテゴリ名の下に表示されます。
 
-J1V3-Custom-Elementはインスタンス化可能なので、1つのページに多数追加し、それぞれを独立した構成にすることが可能です。 この例では、ウィジェットを2回ページに追加します。
+J1V3-Custom-Elementはインスタンス化可能なので、1つのページに多数追加し、それぞれを独立した構成にすることが可能です。 この例では、1つのページに2回ウィジェットを追加します．
 
-![J1V3-Custom-Elementウィジェットのインスタンスを2つデプロイしてください。](./using-routes-with-custom-elements/images/04.png)
+![Deploy two instances of the J1V3-Custom-Element widget.](./using-routes-with-custom-elements/images/04.png)
 
-## `route`プロパティを使用する場合
+## ルート`プロパティを使う
 
-自動生成されたアプリには、3つのルートが含まれています。 `hello-world`、`hello-foo`、`hello-bar`です。 デフォルトでは、アプリケーションは `hello-world` のルートを使用します。 ただし、リモートアプリケーションのプロパティを使用して、別のルートを使用するように設定することができます。 これらのプロパティは、 [リモートアプリケーション](#defining-a-route-property-via-the-remote-apps-menu) または [ウィジェットの設定オプション](#defining-a-route-property-via-widget-configuration) で設定することが可能です。
+自動生成されたアプリには3つのルートが含まれている：`hello-world`、`hello-foo`、`hello-bar`。 デフォルトでは、アプリケーションは `hello-world` ルートを使用する。 ただし、リモートアプリケーションのプロパティを使用して、別のルートを使用するように設定することができます。 これらのプロパティは、 [リモートアプリケーション](#defining-a-route-property-via-the-remote-apps-menu) または [ウィジェットの設定オプション](#defining-a-route-property-via-widget-configuration) で設定することが可能です。
 
 ### リモートアプリケーションでルートプロパティを定義する
 
-1. **グローバルメニュー**(![Global Menu](../../../../images/icon-applications-menu.png)) を開き、 ［**アプリケーション**］ タブをクリックし、 ［**リモートアプリケーション**］ へ移動します。
+1. グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、_アプリケーション_タブをクリックし、_リモートアプリケーション_に進みます。
 
-1. 選択 **J1V3-Custom-Element** .
+1. J1V3-Custom-Element*を選択する。
 
-   ![J1V3-Custom-Elementを選択します。](./using-routes-with-custom-elements/images/05.png)
+   ![Select J1V3-Custom-Element.](./using-routes-with-custom-elements/images/05.png)
 
-1. プロパティフィールドに`route=hello-foo`と入力します。
+1. Propertiesフィールドに`route=hello-foo`と入力する。
 
-   ![プロパティフィールドにroute=hello-fooと入力します。](./using-routes-with-custom-elements/images/06.png)
+   ![Enter route=hello-foo into the Properties field.](./using-routes-with-custom-elements/images/06.png)
 
-1. ［**Publish**］ をクリックします。
+1. *［公開］*をクリックします。
 
-1. デプロイされた両方のウィジェットが`HelloFoo`ルートを使用することを確認します。
+1. デプロイされた両方のウィジェットが `HelloFoo` ルートを使用していることを確認してください。
 
-   ![両方のウィジェットがHelloFooルートを使用することを確認します。](./using-routes-with-custom-elements/images/07.png)
+   ![Verify both widgets use the HelloFoo route.](./using-routes-with-custom-elements/images/07.png)
 
 ### ポートレット設定でルートプロパティを定義する
 
 1. J1V3-Custom-Elementウィジェットを含むページを編集します。
 
-1. ウィジェットの1つの **オプション** ボタン (![Options Button](../../../../images/icon-actions.png)) をクリックし、 ［**設定**］ を選択します。
+1. ウィジェットの_オプション_ボタン([オプションボタン](../../../../images/icon-actions.png))をクリックし、_設定_を選択します。
 
-   ![オプションボタンをクリックし、［設定］を選択します。](./using-routes-with-custom-elements/images/08.png)
+   ![Click the Options button and select Configuration.](./using-routes-with-custom-elements/images/08.png)
 
-1. プロパティフィールドに`route=hello-bar`と入力します。
+1. Propertiesフィールドに`route=hello-bar`と入力する。
 
-   ![プロパティフィールドにroute=hello-barと入力します。](./using-routes-with-custom-elements/images/09.png)
+   ![Enter route=hello-bar into the Properties field.](./using-routes-with-custom-elements/images/09.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_Save_］をクリックします。
 
-1. 設定されたウィジェットが`hello-bar`ルートを使用し、もう一方のウィジェットが`hello-foo`ルートを使用したままであることを確認します。
+1. 設定されたウィジェットが `hello-bar` ルートを使用し、もう一方のウィジェットが `hello-foo` ルートを使用することを確認してください。
 
-   ![設定されたウィジェットがHelloBarルートを使用していることを確認します。](./using-routes-with-custom-elements/images/10.png)
+   ![Verify the configured widget uses the HelloBar route.](./using-routes-with-custom-elements/images/10.png)
 
 ## ルートコードの分析
 
@@ -189,9 +189,9 @@ J1V3-Custom-Elementはインスタンス化可能なので、1つのページに
     :lines: 1-34
 ```
 
-この`index.js`ファイルは`WebComponent`クラスを作成し、`HTMLElement`インターフェイスを拡張します。 このクラスは、インターフェースの [`connectedCallback()`](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) 関数を実装し、`App`をパラメータとして [`ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render) に呼び出します。 `App`が呼び出されると、定義された`"route"`属性がないか調べ、その値と利用可能なルートを比較します。 `hello-foo` または `hello-bar`のいずれかにマッチする場合、対応するルートを返し、レンダリングします。 そうでない場合は、`hello-world`を返して描画します。
+この `index.js` ファイルは `HTMLElement` インターフェースを継承した `WebComponent` クラスを作成する。 このクラスはインターフェースの [`connectedCallback()`](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) 関数を実装している。この関数は [`App` をパラメータとして `ReactDOM.render`](https://reactjs.org/docs/react-dom.html#render) を呼び出す。 App` が呼ばれると、`"route"`属性が定義されているかどうかをチェックし、その値を利用可能なルートと比較します。 もし`hello-foo`または`hello-bar`のどちらかにマッチすれば、対応するルートを返してレンダリングする。 そうでなければ、`hello-world`をレンダリングする。
 
-各ルートは、`routes`フォルダーから`index.js`ファイルにインポートされます。
+それぞれのルートは `routes` フォルダから `index.js` ファイルにインポートされます：
 
 ```bash
 routes
@@ -229,7 +229,7 @@ routes
 
 ## 関連トピック
 
-* [フロントエンドクライアント拡張機能](../../front-end-client-extensions.md)
-* [カスタム要素とIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md)
-* [基本的なカスタム要素の作成](./creating-a-basic-custom-element.md)
-* [リモートアプリケーションUIリファレンス](../client-extensions-ui-reference.md)
+* [フロントエンド・クライアント拡張](../../front-end-client-extensions.md) 
+* [カスタムエレメントとIFrameクライアント拡張機能を理解する](../understanding-custom-element-and-iframe-client-extensions.md) 
+* [基本的なカスタム要素の作成](./creating-a-basic-custom-element.md) 
+* [リモートアプリケーションUIリファレンス](../client-extensions-ui-reference.md) 

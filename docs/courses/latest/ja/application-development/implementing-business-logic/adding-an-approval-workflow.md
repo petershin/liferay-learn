@@ -1,6 +1,6 @@
 # 承認ワークフローの追加
 
-`applicationState` フィールドを追加した後、Delectable Bonsai はアプリケーションに加えられた変更をレビューし、承認するためのワークフローを実装したい。 現在、アプリケーションのすべての更新は、選択された状態に関係なく、自動的に承認される。 Delectable Bonsai は、 `承認された` と `拒否された` の状態に追加のビジネスロジックを関連付けるので、ワークフローは `applicationState` フィールドをチェックし、これらの値のいずれかが選択された場合、マネージャのレビューを要求しなければなりません。 ここでは、Liferay [クライアントエクステンション](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) を使って、このワークフロープロセスをデプロイし、セットアップします。
+`applicationState`フィールドを追加した後、Delectable Bonsaiはアプリケーションに加えられた変更をレビューし、承認するためのワークフローを実装したい。 現在、アプリケーションのすべての更新は、選択された状態に関係なく、自動的に承認される。 Delectable Bonsaiは`approved`と`denied`の状態に追加のビジネスロジックを関連付けるので、ワークフローは`applicationState`フィールドをチェックし、これらの値のいずれかが選択された場合、マネージャのレビューが必要です。 ここでは、Liferay [クライアントエクステンション](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) を使って、このワークフロープロセスをデプロイし、セットアップします。
 
 ## クライアント拡張機能の展開
 
@@ -9,20 +9,20 @@
 1. サンプルワークスペースをダウンロードし、解凍します。
 
    ```bash
-   curl -o https://learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/liferay-c6s3.zip
+   curl -o https://resources.learn.liferay.com/courses/latest/en/application-development/implementing-business-logic/liferay-c6s3.zip
    ```
 
    ```bash
    unzip liferay-c6s3.zip
    ```
 
-1. `liferay-c6s3/liferay-course-workspace/client-extensions`に移動します：
+1. liferay-c6s3/liferay-course-workspace/client-extensions` に移動します：
 
    ```bash
    cd liferay-c6s3/liferay-course-workspace/client-extensions
    ```
 
-   `liferay-course-batch` と `liferay-course-etc-spring-boot`の2つのクライアント拡張プロジェクトが含まれます。
+   これには2つのクライアント拡張プロジェクトが含まれます：liferay-course-batch`と`liferay-course-etc-spring-boot` です。
 
 1. このコマンドを実行してクライアントエクステンションをデプロイし、Liferayインスタンスのコンソールでデプロイを確認します：
 
@@ -35,7 +35,7 @@
    2023-07-20 21:03:12.408 INFO  [Refresh Thread: Equinox Container: 8b6a806c-654e-44f8-8210-75b61d29063c][BundleStartStopLogger:77] STARTED liferaycourseetcspringboot_1.0.0 [1722]
    ```
 
-1. `liferay-course-etc-spring-boot` プロジェクトに移動し、Spring Boot アプリケーションを起動します：
+1. liferay-course-etc-spring-boot`プロジェクトに移動し、Spring Bootアプリケーションを起動します：
 
    ```bash
    cd liferay-course-etc-spring-boot
@@ -45,7 +45,7 @@
    ./../../gradlew bootRun
    ```
 
-1. アプリケーションが起動したら、 `http://localhost:58081/ready`にアクセスしてください。 アプリケーションが使用可能であれば、ページには "READY "と表示されます。
+1. アプリケーションが起動したら、`http://localhost:58081/ready`にアクセスする。 アプリケーションが使用可能であれば、ページには "READY "と表示されます。
 
 これで、Distributor Application オブジェクトのワークフローを有効にすることができます。
 
@@ -78,18 +78,18 @@
 
       if (Objects.equals("approved", applicationStateKey) || Objects.equals("denied", applicationStateKey)) {
          transition = "review";
-      }.
+      }
       ...
    }
 ```
 
-`WorkflowAction1RestController` の post メソッドには、JSON Web トークン（JWT）とリクエストボディの 2 つのパラメータがあります。 トークンはHTTPコールを認証し、リクエスト・ボディはJSON形式の文字列としてデータを含む。
+`WorkflowAction1RestController` の post メソッドには、JSON Web Token (JWT) とリクエストボディの 2 つのパラメータがある。 トークンはHTTPコールを認証し、リクエスト・ボディはJSON形式の文字列としてデータを含む。
 
-リクエストボディをログに記録した後、コードは `transition` 変数を初期化し、その値を `auto-approve`に設定する。
+リクエスト本文をログに記録した後、コードは `transition` 変数を初期化し、その値を `auto-approve` に設定する。
 
-`次に、 <code>JSONObject()` コンストラクタと `.getJSONObject()` メソッドを使用して、 `applicationState` フィールドのキー</code> 値を抽出し、そのキーを `applicationStateKey` 変数に格納する。
+そして、`JSONObject()` コンストラクタと `.getJSONObject()` メソッドを使って `applicationState` フィールドの `key` 値を取り出し、そのキーを `applicationStateKey` 変数に格納する。
 
-最後に、状態キーが `approved` または `denied`に等しい場合、 `transition` 変数を `review` に更新する条件ブロックを定義する。
+最後に、状態キーが `approved` または `denied` の場合に、`transition` 変数を `review` に更新する条件ブロックを定義する。
 
 ### POSTリクエストの作成
 
@@ -138,65 +138,65 @@
       }
 ```
 
-ワークフロー遷移を決定した後、コードは非同期HTTP POSTリクエストに進む。 まず、 `WebClient`の初期化と設定を行い、ベースURLとヘッダーを決定し、 `WebClient`の `post()` メソッドを呼び出します。
+ワークフロー遷移を決定した後、コードは非同期HTTP POSTリクエストに進む。 まず、`WebClient` を初期化して設定し、ベース URL とヘッダーを決定し、`WebClient` の `post()` メソッドを呼び出します。
 
-このPOSTリクエストは、その `uri()`のために、オリジナルのレスポンスボディから `transitionURL` の値を使用する。 次に、 `bodyValue()` を使用して、ワークフロー・タスクの `transitionName` を `transition` 変数の値で更新する。 リクエストはJWTを使って認証され、レスポンスのHTTPステータスコードに従ってログに記録される。
+このPOSTリクエストは、元のレスポンスボディにあった `transitionURL` 値を `uri()` に使用する。 次に、`bodyValue()` を使用して、ワークフロー・タスクの `transitionName` を `transition` 変数の値で更新する。 リクエストはJWTを使って認証され、レスポンスのHTTPステータスコードに従ってログに記録される。
 
 ## ディストリビューター・アプリケーションのワークフローを有効にする
 
-1. **グローバルメニュー**（![Global Menu](../../images/icon-applications-menu.png)）を開き、 ［**アプリケーション**］ タブをクリックして、 ［**Process Builder**］ をクリックします。
+1. グローバルメニュー](../../images/icon-applications-menu.png))を開き、[アプリケーション](*Applications*)タブに移動し、[プロセスビルダー](_Process Builder_)をクリックします。
 
 1. 機械承認のプロセスが表示されることを確認する
 
-   ![機械承認のプロセスが表示されることを確認する](./adding-an-approval-workflow/images/01.png)
+   ![Confirm the Machine Approver process appears.](./adding-an-approval-workflow/images/01.png)
 
    このプロセスはバッチクライアント拡張によって追加され、5つのノードを定義する：Start、Machine Review、Manager Review、Update、および Approved である。
 
-   Machine Reviewノードは、ワークフローアクションクライアント拡張機能を使用して、各アプリケーションの状態フィールドをチェックする。 値が `approved` または `denied`に等しい場合、アプリケーションはビジネス開発マネジャーによる承認のためにマネジャー・レビュー・ノードに導かれます。 そうでない場合は、Machine Reviewノードが自動的にApprovedノードにアプリケーションを誘導する。
+   Machine Reviewノードは、ワークフローアクションクライアント拡張機能を使用して、各アプリケーションの状態フィールドをチェックする。 値が`approved`または`denied`の場合、アプリケーションはビジネス開発マネージャーによる承認のためManager Reviewノードに送られます。 そうでない場合は、Machine Reviewノードが自動的にApprovedノードにアプリケーションを誘導する。
 
-   ![このプロセスには5つのノードがある：Start、Machine Review、Manager Review、Update、Approved。](./adding-an-approval-workflow/images/02.png)
+   ![This process includes five nodes: Start, Machine Review, Manager Review, Update, and Approved.](./adding-an-approval-workflow/images/02.png)
 
-1. **Configuration** タブにアクセスする。
+1. コンフィギュレーション*タブを開きます。
 
-1. **Edit** for Distributor Application をクリックし、 **Machine Approver** を選択し、 **Save** をクリックします。
+1. Distributor Application」の「Edit*」をクリックし、「Machine Approver*」を選択し、「Save*」をクリックします。
 
 ## ワークフローのテスト
 
 1. Distributor Applicationsを開き、エントリーの編集を開始します。
 
-1. 状態を「**Review（レビュー**）」 に設定し、「**Save（保存**）」 をクリックする。
+1. 状態を_Under Review_に設定し、_Save_をクリックする。
 
 1. エントリーのステータスを確認する。 承認されるべきだ。
 
-   ![エントリーのステータスは「承認」になっているはずです。](./adding-an-approval-workflow/images/03.png)
+   ![The entry's status should be Approved.](./adding-an-approval-workflow/images/03.png)
 
-1. エントリーの状態を **Approved** に変更する。
+1. エントリーの状態を_Approved_に変更する。
 
-1. エントリーのステータスを確認する。 **Pending** であるべきだ。
+1. エントリーのステータスを確認する。 保留中*であるべきだ。
 
-   ![エントリーのステータスは「保留」となっているはずだ。](./adding-an-approval-workflow/images/04.png)
+   ![The entry's status should be Pending.](./adding-an-approval-workflow/images/04.png)
 
-1. **Personal Menu** を開き、 **Notifications** に進み、新しい **ワークフロー通知** をクリックします。
+1. 個人メニュー_を開き、_通知_に移動し、新しい_ワークフロー通知*をクリックします。
 
-   ![ワークフロー通知を見る](./adding-an-approval-workflow/images/05.png)
+   ![View the workflow notification.](./adding-an-approval-workflow/images/05.png)
 
 1. レビュータスクを自分に割り当て、承認する。
 
-   ![変更を承認する。](./adding-an-approval-workflow/images/06.png)
+   ![Approve the change.](./adding-an-approval-workflow/images/06.png)
 
 1. エントリーのステータスを確認する。 承認されるべきだ。
 
-   ![エントリーのステータスは「承認」になっているはずです。](./adding-an-approval-workflow/images/07.png)
+   ![The entry's status should be Approved.](./adding-an-approval-workflow/images/07.png)
 
 承認ワークフローを設定し、申請にはマネージャーのレビューが必要です。
 
 今、Delectable Bonsaiは申請、承認、却下の通知を自動化しなければならない。
 
-次へ [通知テンプレートの追加](./adding-notification-templates.md)
+次へ [通知テンプレートの追加](./adding-notification-templates.md) 
 
 ## 関連コンセプト
 
-* [ワークフローデザイナー](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview)
-* [オブジェクトのワークフローを有効にする](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/enabling-workflows-for-objects)
-* [マイクロサービスのクライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions)
-* [バッチクライアント拡張機能](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/batch-client-extensions)
+* [ワークフローデザイナー](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview) 
+* [オブジェクトのワークフローを有効にする](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/enabling-workflows-for-objects) 
+* [マイクロサービス・クライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions) 
+* [バッチクライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/batch-client-extensions) 

@@ -2,11 +2,11 @@
 
 他のサービスと同様に、カスタム追加のデプロイには、設定やファイルをGitリポジトリの適切な場所に追加する必要があります。 しかし、Liferayサービスのデプロイは、他のサービスのデプロイとは若干異なります。
 
-Liferayサービスは、 [Liferay Workspaceの概要](https://learn.liferay.com/dxp/latest/ja/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) を利用し、 [配置可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ソースコード](#building-and-deploying-source-code) などを追加するオプションを提供します。 これらは [CI ビルド](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)に簡単に含められますが、 [CLI ツール](../reference/command-line-tool.md)を使っている場合は、Liferay サービス専用の [追加ステップ](#cli-tool-deployment) がいくつか必要です。
+Liferayサービスは、 [Liferayワークスペース](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/liferay-workspace/what-is-liferay-workspace.html) を利用し、 [配置可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ソースコード](#building-and-deploying-source-code) などを追加するオプションを提供します。 これらは [CI ビルド](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) に簡単に含められますが、 [CLI ツール](../reference/command-line-tool.md) を使っている場合は、Liferay サービス専用の [追加ステップ](#cli-tool-deployment) がいくつか必要です。
 
 ## Liferay DXP Dockerイメージの定義
 
-Liferayサービスイメージ（他のサービスと同様に `LCP.json` ファイルで定義されています）は、Liferay DXP Dockerイメージと同じではありません。 Liferay DXP Dockerイメージは、Liferayサービスで動作するLiferayの正確なバージョン（フィックスパックを含む）を決めます。 これは、`liferay.workspace.docker.image.liferay` プロパティと一緒にリポジトリの `liferay/gradle.properties` ファイルで定義されています。
+Liferayサービスイメージ（他のサービスと同様に`LCP.json`ファイルで定義）はLiferay DXP Dockerイメージとは異なります。 Liferay DXP Dockerイメージは、Liferayサービスで動作するLiferayの正確なバージョン（フィックスパックを含む）を決めます。 これはリポジトリの`liferay/gradle.properties`ファイルの`liferay.workspace.docker.image.liferay`プロパティで定義します。
 
 [Liferay DXP Docker tags](https://hub.docker.com/r/liferay/dxp/tags) をチェックして、お使いのDXPのバージョンに合ったイメージを見つけてください。
 
@@ -16,33 +16,33 @@ Liferayサービスの`LCP.json`ファイルの`image`プロパティで定義�
 
 ## CLIツールの展開
 
-[CLIツール](../reference/command-line-tool.md) を使用してデプロイする場合、カスタマイズや設定を考慮してデプロイするために追加の手順が必要です。 これらは、デプロイする前に生成される特別な `Dockerfile` イメージに含まれている必要があります。
+[CLIツール](../reference/command-line-tool.md) を使用してデプロイする場合、カスタマイズや設定を考慮してデプロイするために追加の手順が必要です。 これらは、デプロイ前に生成される特別な `Dockerfile` イメージに含める必要があります。
 
 [デプロイ可能なファイル](#deploying-themes-portlets-and-osgi-modules) 、 [ビルドされたソースコード](#building-and-deploying-source-code) 、 [ホットフィックス](#deploying-hotfixes) 、および [ライセンス](#deploying-licenses) は、CLIツールを使用している場合、デプロイに含めるための追加手順が必要です。 これらの追加手順は、 [CIサービス](../platform-services/continuous-integration.md) を使用してリポジトリからビルドを生成する場合には必要ありません。
 
-通常通りCLIでLiferayサービスをデプロイした場合（全てのサービスを一度にデプロイした場合や、 `liferay/` ディレクトリからデプロイした場合）、Liferay DXPイメージの **デフォルトバージョン**（ `LCP.json`で定義されているメジャーバージョンを使用）がデプロイされますが、その中にはお客様のカスタマイゼーションは含まれていません。 これは、カスタマイゼーションしたものをサービスに含めるためには、そのサービスを具体的に構築してデプロイする必要があるからです。
+CLI を使って普通に Liferay サービスをデプロイする場合（すべてのサービスを一度にデプロイする場合、または `liferay/` ディレクトリからデプロイする場合）、**デフォルトバージョン** の Liferay DXP イメージ（`LCP.json` で定義されたメジャーバージョンを使用）がデプロイされます。 これは、カスタマイゼーションしたものをサービスに含めるためには、そのサービスを具体的に構築してデプロイする必要があるからです。
 
 以下の手順で、カスタマイゼーションを含んだLiferayサービスをデプロイします：
 
-1. `liferay/` ディレクトリのコマンドラインから、以下を実行します：
+1. `liferay/`ディレクトリのコマンドラインから実行する：
 
    ```bash
    gw clean createDockerfile deploy
    ```
 
-  これにより、カスタマイズしたものをすべてビルドし、 `build/liferay/` サブフォルダに配置します。 また、DXPのカスタマイズバージョン専用の `Dockerfile` を追加します。
+これですべてのカスタマイズがビルドされ、`build/liferay/` サブフォルダに配置されます。 また、DXPのカスタマイズバージョン専用の`Dockerfile`も追加されている。
 
-1. 新しく生成した`build/docker/`サブフォルダに`LCP.json`ファイルをコピーします。
+1. `LCP.json`ファイルを新しく生成した`build/docker/`サブフォルダにコピーする。
 
-1. このサブフォルダから通常通り `lcp deploy` コマンドを実行します。
+1. このサブフォルダから通常通り `lcp deploy` コマンドを実行する。
 
 これにより、デフォルトバージョンではなく、カスタマイズされたサービスがデプロイされます。
 
 ## テーマ、ポートレット、およびOSGiモジュールのデプロイ
 
-テーマ、ポートレット、またはOSGiモジュールをインストールするには、Liferay DXPサービスディレクトリ内の `configs/{ENV}/deploy/` フォルダにWARまたはJARファイルを含めます。
+テーマ、ポートレット、OSGi モジュールをインストールするには、WAR または JAR ファイルを Liferay DXP サービスディレクトリの `configs/{ENV}/deploy/` フォルダに含めます。
 
-例えば、カスタムJARファイルを開発環境（ `dev/` 環境フォルダを使用）にデプロイする場合、Liferay DXPのサービスディレクトリは以下のようになります：
+例えば、カスタムJARファイルを開発環境にデプロイする場合（`dev/`環境フォルダを使用）、Liferay DXPサービスディレクトリは次のようになります：
 
 ```
 liferay
@@ -57,7 +57,7 @@ liferay
           └── portal-ext.properties
 ```
 
-デプロイされると、 `configs/{ENV}/deploy/` ディレクトリ内のファイルは、Liferayサービスのコンテナ内の `$LIFERAY_HOME/deploy/` フォルダにコピーされます。
+デプロイされると、`configs/{ENV}/deploy/`ディレクトリ内のファイルはLiferayサービスのコンテナ内の`$LIFERAY_HOME/deploy/`フォルダにコピーされます。
 
 ```{note}
 イメージのデプロイ時には、特定のファイルや設定が強制的に存在するため、追加したファイルが上書きされることがあります。 サービスのログで `DXPCloud Liferay Overrides` というメッセージを探し、ファイルが上書きされたことを特定します。
@@ -69,18 +69,18 @@ liferay
 
 CIビルドは、これらのフォルダー内のソースコードをコンパイルします：
 
-* 新モジュール用の `liferay/modules` フォルダ
+* 新しいモジュールのための `liferay/modules` フォルダ
 * カスタムテーマ用の `liferay/themes` フォルダ
-* デプロイされたWARの `liferay/wars` フォルダ
+* 分解された WAR のための `liferay/wars` フォルダ
 
-デプロイしたら、デプロイ可能な `.jar` または `.war` ファイルはLiferayサービスのコンテナ内の`$LIFERAY_HOME/デプロイ/`フォルダにコピーされます。 これは、CIのビルドがコードをコンパイルする場合と、デプロイ前に利用可能な [Gradleコマンド](#cli-tool-deployment) を使用して自分でコードを生成する場合のどちらでも発生します。
+デプロイされると、デプロイ可能な `.jar` または `.war` ファイルは Liferay サービスのコンテナ内の `$LIFERAY_HOME/deploy/` フォルダにコピーされます。 これは、CIのビルドがコードをコンパイルする場合と、デプロイ前に利用可能な [Gradleコマンド](#cli-tool-deployment) を使用して自分でコードを生成する場合のどちらでも発生します。
 
 ## Hotfixのデプロイについて
 
-ホットフィックスを適用するには、ホットフィックスのZIPファイルをLiferay DXPサービスディレクトリ内の `configs/{ENV}/patching/` フォルダに追加します。 この変更を展開すると、ホットフィックスがLiferay DXPインスタンスに適用されます。
+Hotfixを適用するには、Liferay DXPサービスディレクトリ内の`configs/{ENV}/patching/`フォルダにHotfix ZIPファイルを追加します。 この変更を展開すると、ホットフィックスがLiferay DXPインスタンスに適用されます。
 
 ```{note}
-[これらの指示](./updating-your-dxp-instance-to-a-new-minor-version.md)を参照して、代わりにLiferay DXPの新しいマイナーバージョンにアップデートしてください（新しい [パッチタイプについて](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) など）。
+Liferay DXP の新しいマイナーバージョン（新しい [サービスパック](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/maintaining-a-liferay-installation/patching-dxp-7-3-and-earlier/understanding-patch-types-for-dxp-7-3-and-earlier.html#service-packs) など）へのアップデートは [こちらの手順](./updating-your-dxp-instance-to-a-new-minor-version.md) をご覧ください。
 ```
 
 たとえば、次のような構造を持つホットフィックスを開発環境にデプロイできます：
@@ -97,34 +97,34 @@ liferay
           └── scripts
 ```
 
-なお、ホットフィックスはサーバーを起動するたびに再適用する必要があります。 このため、 `LCP.json` ファイルにある Liferay DXP Dockerイメージの最新のフィックスパックまたはサービスパックに更新する方が、長期的にはこのフォルダにホットフィックスを追加するより良いでしょう。このファイルの `image` 環境変数を置き換えることでDockerバージョンを更新できます ( `liferay/` ディレクトリにあります) 。
+なお、ホットフィックスはサーバーを起動するたびに再適用する必要があります。 このため、長期的にはこのフォルダにHotfixを追加するよりも、`LCP.json`ファイルにあるLiferay DXP Dockerイメージの最新のFix PackやService Packに更新する方が良いでしょう。このファイル（`liferay/`ディレクトリ）の`image`環境変数を置き換えることで、Dockerのバージョンを更新することができます。
 
 ### 環境変数によるパッチ適用
 
 ホットフィックスをGitリポジトリに直接コミットするのではなく、CIのビルドプロセスの一部としてインストールすることもできます。 この方法は、リポジトリに大きなファイルを残さないようにできるため、大規模なホットフィックスの場合に最適です。
 
-`LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` 環境変数（Liferay Cloud コンソールの `環境変数` タブ、または `ci` サービスの `LCP.json` ファイル）にカンマ区切りでホットフィックスのリストを追加し、CI サービスがビルドプロセス中に自動的にそれを適用できるようにします。
+環境変数 `LCP_CI_LIFERAY_DXP_HOTFIXES_{ENV}` にホットフィックスを追加し（Liferay Cloud コンソールの `Environment Variables` タブ、または `ci` サービスの `LCP.json` ファイル）、CI サービスがビルドプロセス中に自動的に適用するようにします。 複数のバグ修正が必要な場合は、1つのHotfixにまとめるようサポートに依頼してください。
 
 ```{note}
-この環境変数を`ci` サービスの `LCP.json` に追加した場合、アップデートを完了するには `ci` サービスを **infra 環境** にデプロイする必要があります。
+この環境変数を `ci` サービスの `LCP.json` に追加すると、`ci` サービスを **infra 環境** にデプロイしてアップデートを完了する必要があります。
 ```
 
-次の例では、 `LCP.json` ファイルに通してホットフィックスを定義しています：
+`LCP.json`ファイルにホットフィックスを定義する例を以下に示す：
 
 ```
 "env": {
-    "LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON": "liferay-hotfix-10-7210,liferay-hotfix-17-7210",
-    "LCP_CI_LIFERAY_DXP_HOTFIXES_DEV": "liferay-hotfix-15-7210,liferay-hotfix-33-7210",
+    "LCP_CI_LIFERAY_DXP_HOTFIXES_COMMON": "liferay-hotfix-17-7210",
+    "LCP_CI_LIFERAY_DXP_HOTFIXES_DEV": "liferay-hotfix-33-7210"
 }
 ```
 
 ```{note}
-この環境変数は、少なくともバージョン4.x.xのサービスにアップグレードしている場合にのみ利用できます。 バージョン確認の詳細については、[サービススタックのバージョンについて](../reference/understanding-service-stack-versions.md) を参照してください。
+この環境変数は、少なくともバージョン4.x.xのサービスにアップグレードしている場合にのみ利用できます。 バージョンの確認方法については、 [Understanding Service Stack Versions](../reference/understanding-service-stack-versions.md) 。
 ```
 
 ## ライセンスのデプロイ
 
-独自のライセンスは、Liferay DXPサービスディレクトリ内の `configs/{ENV}/deploy/` フォルダに入れることで追加できます。
+Liferay DXP サービスディレクトリ内の `configs/{ENV}/deploy/` フォルダにライセンスを追加することができます。
 
 例えば、Liferay DXPサービスディレクトリに次のような構造でライセンスを開発環境に追加できます：
 
@@ -141,11 +141,11 @@ liferay
           └── scripts
 ```
 
-バックグラウンドで、XMLライセンスは `$LIFERAY_HOME/deploy`にコピーされ、AATFライセンスは `$LIFERAY_HOME/data`コピーされます。
+舞台裏では、XMLライセンスは`$LIFERAY_HOME/deploy`にコピーされ、AATFライセンスは`$LIFERAY_HOME/data`にコピーされる。
 
 ## 関連トピック
 
-* [Liferay DXPサービスの使用](../using-the-liferay-dxp-service.md)
-* [Liferay DXPサービスの設定　](./configuring-the-liferay-dxp-service.md)
-* [Liferay Cloud 導入ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md)
-* [CLIツール](../reference/command-line-tool.md)
+* [Liferay DXP Service の使用](../using-the-liferay-dxp-service.md) 
+* [Liferay DXP Service](./configuring-the-liferay-dxp-service.md) の設定
+* [Liferay クラウド展開ワークフローの概要](../build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.md) 
+* [CLIツール](../reference/command-line-tool.md) 

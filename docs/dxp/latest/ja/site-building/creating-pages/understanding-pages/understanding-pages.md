@@ -4,115 +4,107 @@
 
 ## ページセット
 
-プライベートページが有効な場合、サイトのページは2つの [ページセット](../page-settings/configuring-page-sets.md): パブリックページとプライベートページに編成されます。
+プライベートページが有効な場合、サイトのページは2つの [ページセット](../page-settings/configuring-page-sets.md) : パブリックページとプライベートページに編成されます。
 
 ```{note}
-Liferay 7.4 U22+とGA22+では、新規インストール時にプライベートページはデフォルトで無効になります。 プライベートページを有効にしたい場合は、 [プライベートページの有効化](#enabling-private-pages) を参照してください。
+Liferay 7.4 U22+とGA22+では、新規インストール時にプライベートページはデフォルトで無効になります。 プライベートページを有効にしたい場合は、 [プライベートページを有効にする](#enabling-private-pages) を参照してください。
 ```
-
 パブリック・ページとプライベート・ページは以下の点で異なる：
 
 | 動作                    | 公開ページ    | 非公開ページ   |
-|:--------------------- |:-------- | -------- |
+| :-------------------- | :------- | -------- |
 | 認証されていないユーザーへの表示      | &#10004; |          |
 | 閲覧にはログインとサイト会員登録が必要です |          | &#10004; |
 | 独自のURLパターン            | &#10004; | &#10004; |
 
-公開ページは `[web-address]/` **web** `/[site-name]` のURLパターンを使用し、非公開ページは `[web-address]/` **group** `/[site-name]`を使用します。
+公開ページでは `[web-address]/`**web**`/[site-name]` のURLパターンを使用し、非公開ページでは `[web-address]/`**group**`/[site-name]` のURLパターンを使用します。
 
 ## ページタイプ
 
-[ページを追加](../adding-pages/adding-a-page-to-a-site.md)するときに使用できるページタイプはいくつかあります。 デフォルトのページタイプはコンテンツページです。 また、 [ページテンプレート](../adding-pages/creating-a-page-template.md)に基づいてページを作成することもできます。 ページ・タイプとページ・テンプレートについては、以下で詳しく説明する。
+[ページを追加](../adding-pages/adding-a-page-to-a-site.md) するときに使用できるページタイプはいくつかあります。 デフォルトのページタイプはコンテンツページです。 また、 [ページテンプレート](../adding-pages/creating-a-page-template.md) に基づいてページを作成することもできます。 ページ・タイプとページ・テンプレートについては、以下で詳しく説明する。
 
-![ページを追加するときは、ページタイプを選択する必要があります。](./understanding-pages/images/01.png)
+![You must select a page type when adding pages.](./understanding-pages/images/01.png)
 
 ```{tip}
 現在表示されているページのタイプは、ページの上部に表示され、管理オプションやページを設定するために必要な場所を判断するのに役立ちます。
 ```
-
 ### コンテントページ
 
 コンテンツページでは、ユーザーは簡単に管理でき、コンテンツをインラインで編集できるプロフェッショナルなページを構築できる。 コンテンツページは、主に [ページフラグメント](../page-fragments-and-widgets/using-fragments.md) とウィジェットを使って構築される。
 
-![コンテンツページは複数のフラグメントで構成することができる。](./understanding-pages/images/02.png)
+![Content pages can be composed of multiple fragments.](./understanding-pages/images/02.png)
 
 コンテンツ・ページを使用することで、さらに強力な機能や特典を利用することができます：
 
-* [パーソナライズされたアダプティブなサイト体験](../../personalizing-site-experience.md)
-* [A/Bテスト](../../optimizing-sites/ab-testing/ab-testing.md)
+* [パーソナライズされた適応性のあるサイト体験](../../personalizing-site-experience.md) 
+* [A/Bテスト](../../optimizing-sites/ab-testing/ab-testing.md) 
 * 親しみやすいコンテンツとサイト構築の経験
 
-コンテンツページの詳細については、 [コンテンツページの使用](../using-content-pages.md)を参照してください。 コンテンツ・ページの作成は、 [コンテンツ・ページへの要素の追加](../using-content-pages/adding-elements-to-content-pages.md)を参照してください。
+コンテンツページの詳細については、 [コンテンツページの使用](../using-content-pages.md) を参照してください。 コンテンツ・ページの作成は、 [コンテンツ・ページへの要素の追加](../using-content-pages/adding-elements-to-content-pages.md) を参照してください。
 
 ### ウィジェットページ
 
-<!-- Should there be an article that covers layouts and layout templates? -->
+ウィジェット・ページには、ウィジェット（アプリケーション）を表示するための[レイアウト](../../creating-pages/page-settings/configuring-individual-pages.md#page-layout)が設定されています。ウィジェットはコンテンツを表示したり、インタラクティブで動的な機能をページに追加することができます。詳しくは[ウィジェットをページに追加する](../using-widget-pages/adding-widgets-to-a-page.md)をご覧ください。
 
-<!-- LRDOCS-12350 will cover layouts and layout templates-->
-
-ウィジェット・ページには、ウィジェット（アプリケーション）を表示するためのレイアウトが設定されています。ウィジェットはコンテンツを表示したり、インタラクティブで動的な機能をページに追加することができます。詳しくは[ウィジェットをページに追加する](../using-widget-pages/adding-widgets-to-a-page.md)をご覧ください。
-
-![ウィジェット・ページは、専用のウィキ・ページ・ソリューションのような多くの機能を提供することができる。](./understanding-pages/images/03.png)
+![Widget pages can provide a number of functions, such as a dedicated wiki page solution.](./understanding-pages/images/03.png)
 
 ### コンテントページとウィジェットページの比較
 
 この表は、コンテンツページとウィジェットページの違いを比較したものです：
 
 | 機能                    | コンテントページ | ウィジェットページ |
-|:--------------------- |:-------- | --------- |
+| :-------------------- | :------- | --------- |
 | ウィジェットを追加する機能         | &#10004; | &#10004;  |
 | パーソナライズされたサイトエクスペリエンス | &#10004; |           |
 | A/Bテストへのアクセス          | &#10004; |           |
 | 簡単なレイアウトとコンテンツ編集      | &#10004; |           |
-| 高度なカスタムレイアウト          |          | &#10004;  |
+| 高度なカスタムレイアウト          |          | &#10004; |
 | ユーザーがカスタマイズ可能な列       |          | &#10004;  |
 | ステージングのページバリエーション     |          | &#10004;  |
 
 ### その他のページタイプ
 
-他にもいくつかのページタイプがあり、それぞれが特定のユースケースを満たしている。 詳細については、[その他のページタイプ](../understanding-pages/other-page-types.md)を参照してください。
+他にもいくつかのページタイプがあり、それぞれが特定のユースケースを満たしている。 詳細については、 [その他のページタイプ](../understanding-pages/other-page-types.md) を参照してください。
 
 ## グローバルページテンプレート
 
-ページを追加する際、ページテンプレートも選択できます。 ページ・テンプレートは、あらかじめ設定されたページで、アプリケーションはすでにページにデプロイされています。 デフォルトでは、グローバルテンプレートのみが利用可能ですが、作成した追加コレクションもオプションとして表示されます。
+ページを追加する際、ページテンプレートも選択できます。 ページ・テンプレートとは、あらかじめ設定されたページのことで、アプリケーションはすでにページに配備されている。 デフォルトでは、グローバルテンプレートのみが利用可能ですが、作成した追加コレクションもオプションとして表示されます。
 
 | グローバルページテンプレート | 説明                                                                                                                              |
-|:-------------- |:------------------------------------------------------------------------------------------------------------------------------- |
+| :------------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | 検索             | 以下のウィジェットを含むウィジェット・ページを作成します：検索バー、サジェスチョン、サイト・ファセット、タイプ・ファセット、タグ・ファセット、カテゴリー・ファセット、フォルダー・ファセット、ユーザー・ファセット、変更ファセット、検索結果、検索オプション。 |
-
 
 ページテンプレートについて詳しくは [ページテンプレートの作成](../adding-pages/creating-a-page-template.md) をご覧ください。
 
 ## 子ページとページ階層
 
-ページは、子ページを作成することで階層的に作成することもできる。 子ページは、カテゴリー別に整理できる複数のページがある場合に便利です。
+ページは、子ページを作成することで階層的に作成することもできます。 子ページは、カテゴリー別に整理できる複数のページがある場合に便利です。
 
-![子ページを一番上のレベルページに追加して、ページを階層的に整理できます。](./understanding-pages/images/04.png)
+![You can add a child Page to a top-level page to organize pages hierarchically.](./understanding-pages/images/04.png)
 
 ```{tip}
 サイトマップアプリケーションを使用して、サイト階層のページ間を移動することができます。 サイト管理者は、ルート・ページと表示深度を設定できる。 サイトマップアプリケーションの表示する階層は、入れ子されたページを何階層で表示するかを決定します。
 ```
-
 ## プライベートページの有効化
 
-{bdg-secondary}`Liferay 7.4 U22+およびGA22+用`
+{bdg-secondary}`Liferay 7.4 U22+とGA22+のために`。
 
 デフォルトでは、Liferayの新規インストールには、ユーザーがプライベートページを作成できないようにするリリース機能フラグが含まれています。 以下の手順に従って、Liferayシステムのプライベートページを有効にしてください：
 
-1. **Global Menu**( ![Global menu](../../../images/icon-applications-menu.png) ) を開き、 **Control Panel** タブを開き、 **System Settings** をクリックする。
+1. グローバルメニュー( ![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブに移動し、_システム設定_をクリックします。
 
-1. **Release Feature Flags** へ。
+1. *Release Feature Flags*にアクセスしてください。
 
-1. Disabled Features ドロップダウンメニューで、 **Disable Private Pages** を選択します。
-   
-   ![プライベートページを無効にするを選択します。](./understanding-pages/images/05.png)
+1. 無効な機能]ドロップダウンメニューで、[プライベートページを無効にする]を選択します。
 
-1. ［**Save**］ をクリックします。
-   
-   プライベートページを再び無効にしたい場合は、 **Disable Private Pages** の選択を解除し、 **Update** をクリックします。
+   ![Select disable private pages.](./understanding-pages/images/05.png)
+
+1. ［_Save_］をクリックします。
+
+   再びプライベートページを無効にしたい場合は、_Disable Private Pages_の選択を解除し、_Update_をクリックしてください。
 
 ## 関連情報
 
-* [Adding a Page](../adding-pages/adding-a-page-to-a-site.md)
-* [ページ単位での設定](../page-settings/configuring-individual-pages.md)
-* [ウィジェットページのユーザーパーソナライズの有効化](../using-widget-pages/enabling-user-personalization-of-widget-pages.md)
+* [ページの追加](../adding-pages/adding-a-page-to-a-site.md) 
+* [ページ単位での設定](../page-settings/configuring-individual-pages.md) 
+* [ウィジェットページのユーザーパーソナライズを可能にする](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) 

@@ -1,15 +1,14 @@
 # コレクションの表示
 
-{bdg-secondary}`利用可能 Liferay Portal 7.4 GA6+、DXP 7.3 GA1+`
+{bdg-secondary}`Liferay Portal 7.4 GA6+、DXP 7.3 GA1+が利用可能です。`
 
 コレクションを表示するには、コレクションページ、またはコレクション表示フラグメントを追加します。 これらの表示オプションの詳細は、 [コレクションとコレクションページについて](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections) を参照してください。
 
 デフォルトでは、どのユーザーもコレクションのコンテンツを見ることができます。 しかし、 [セグメントを使用して、ユーザーがこのコンテンツをどのように見るかをパーソナライズすることができます](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#customizing-collections) 。
 
 ```{note}
-ページにコレクションを表示する前に、[コレクションを作成する](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md) 必要があります。
+ページにコレクションを表示する前に、[コレクションを作成する](../../../content-authoring and-management/collections-and-collection-pages/creating-collections.md) 必要があります。
 ```
-
 ## ページにコレクションを表示する
 
 コレクションを表示する最も簡単な2つの方法は、コレクションページを追加するか、既存のページにコレクション表示フラグメントを追加することです。
@@ -20,17 +19,17 @@
 
 コレクションページを追加するには、以下の手順に従ってください：
 
-1. **サイトメニュー**( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 ［**サイトビルダー**］ &rarr; ［**ページ**］ に移動します。
+1. *サイトメニュー* ( ![サイトメニュー](../../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ページ_に進みます。
 
-1. **新しいページ**( ![New Page](../../../images/icon-add.png) ) をクリックし、 **コレクションページ** を選択する。
+1. *新しいページ* (![新しいページ](../../../images/icon-add.png))をクリックし、_コレクションページ_を選択します。
 
-   ![ページ管理から新しいコレクションページを作成します。](./displaying-collections/images/01.png)
+   ![Create a new collection page from the pages administration.](./displaying-collections/images/01.png)
 
-1. コレクションタブから、コレクションを1つ選択するか、 **追加**( ![Add Icon](../../../images/icon-add.png) ) をクリックして、 [新しいコレクション](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)を作成します。
+1. コレクション]タブで、コレクションの1つを選択するか、_追加_ ( ![アイコンの追加](../../../images/icon-add.png))をクリックして、 [新しいコレクションを作成する](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md) 。
 
-1. 使用する ［**マスターページ**］ を選択します。
+1. 使用する_マスターページ_を選択します。
 
-1. コレクションページの名前を入力し、 **Add** をクリックします。
+1. コレクションページの名前を入力し、_Add_をクリックします。
 
 1. コレクションを表示するには、 [そのコンテンツをページ要素にマッピングする](#mapping-components-to-display-a-collections-assets) 。
 
@@ -44,23 +43,27 @@
 
 コレクション表示フラグメントは、コンテンツページ内のコレクションを表示します。 コレクションを任意のスタイルやレイアウトで表示するように設定できます。
 
-![コレクションを希望する形式で表示するには、コレクション表示フラグメントを使用します。](./displaying-collections/images/02.png)
+![Use a collection display fragment to display a collection in the desired format.](./displaying-collections/images/02.png)
 
 コレクション表示フラグメントに既存のコレクションを追加するには
 
-1. [新規ページの作成](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) または [コンテンツページの編集を開始](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md).
+1. [新しいページの作成](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) または [コンテンツページの編集を開始](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md) .
 
-1. **Add**( ![Add widget icon](../../../images/icon-add-widget.png) ) をクリックして、Fragments and Widgets パネルを開きます。
+1. *Add* ( ![Add widget icon](../../../images/icon-add-widget.png) ) をクリックして、Fragments and Widgetsパネルを開きます。
 
-1. フラグメント」タブの「コンテンツ表示」カテゴリで、「**コレクション表示**」 フラグメントをページの任意の場所にドラッグします。
+1. FragmentsタブのContent Displayカテゴリで、_Collection Display_フラグメントをページ上の任意の場所にドラッグします。
 
-1. **Collection Display** をクリックすると、選択パネルに構成が表示されます。
+1. 選択パネルにコンフィギュレーションを表示するには、_Collection Display_フラグメントをクリックします。
 
-1. General タブで、 **Collection** フィールドをクリックして、選択したコレクションをフラグメントにマップします：
+1. General タブで、_Collection_ フィールドをクリックして、選択したコレクションをフラグメントにマップする：
 
-   ![コレクションを選択し、コレクション表示フラグメントにマップする。](./displaying-collections/images/03.png)
+   ![Select a collection and map it to the collection display fragment.](./displaying-collections/images/03.png)
 
 コレクション表示フラグメントがページに表示され、選択されたコレクションが表示されます。
+
+```{important}
+コレクション表示フラグメントをページに追加する場合、編集可能なフラグメントにマッピングできるコレクションのみが使用可能です（ブログエントリー、ドキュメント、ナレッジベース記事、ウェブコンテンツ記事、カスタムオブジェクトエントリー）。
+```
 
 ## コレクション表示フラグメントの設定
 
@@ -68,23 +71,23 @@
 
 コレクション表示フラグメントを選択すると、コレクション内の各アセットのセクションに分割されます。 コレクションを選択した後、フラグメントの一般設定の下に新しいオプションが表示されます：
 
-**Style Display** : リスト内のアセットの書式に使用するスタイルを選択します（グリッドや箇条書きのリストスタイルなど）。 7.4 GA23またはU23より前のバージョンでは、この設定はリスト・スタイルと呼ばれます。
+**スタイル表示**：リスト内のアセットのフォーマットに使用するスタイルを選択します（グリッドまたは箇条書きリストスタイルなど）。 7.4 GA23またはU23より前のバージョンでは、この設定はリスト・スタイルと呼ばれます。
 
-**Layout** : アセットを表示する列数を選択します。
+**レイアウト**アセットを表示する列の数を選択します。
 
-**Show Gutter** : 列間のガター（間隔）を表示する場合は、チェックボックスをオンにします。 このオプションは、カラムレイアウトのグリッドスタイルを選択した場合にのみ表示されます（バージョン7.4 GA23+またはU23+の場合）。
+**Show Gutter**：列間のガター（間隔）を表示するには、チェックボックスをオンにします。 このオプションは、カラムレイアウトのグリッドスタイルを選択した場合にのみ表示されます（バージョン7.4 GA23+またはU23+の場合）。
 
-**Show Empty Collection Alert** : チェックボックスをオンにすると、適用されたフィルタに一致する結果がない場合、またはコレクションが空の場合にアラートメッセージを表示します。
+**Show Empty Collection Alert**：適用されたフィルタに一致する結果がない場合、またはコレクションが空の場合にアラートメッセージを表示するには、このボックスにチェックを入れます。
 
-**Empty Collection Alert** : **Show Empty Collection Alert** が有効な場合、表示される警告メッセージを選択します。 このメッセージはローカライズ可能です。
+**空のコレクション警告**：*Show Empty Collection Alert* が有効な場合、表示されるアラートメッセージを選択します。 このメッセージはローカライズ可能です。
 
-**Vertical Alignment** : 各行の上段、中段、下段の整列方法を選択します。 このオプションは、 **Grid**（バージョン7.4のGA23+またはU23+）スタイルを選択した場合にのみ表示されます。
+**Vertical Alignment**：各行の上部、中央部、または下部：項目の整列方法を選択します。 このオプションは、_Grid_スタイルを選択した場合にのみ表示されます（バージョン7.4のGA23+またはU23+）。
 
-**リストアイテムのスタイル** : 各アセットをフォーマットするスタイルを選択します。 このオプションは一部のリスト・スタイルにのみ適用されます。
+**リスト項目のスタイル**：各資産をフォーマットするスタイルを選択します。 このオプションは一部のリスト・スタイルにのみ適用されます。
 
-**Max number of items** : フラグメントが一度に表示できるアセットの最大数を選択します。
+**最大アイテム数**：フラグメントが一度に表示できるアセットの最大数を選択します。
 
-![構成されたコレクションを持つコレクション表示フラグメントをクリックすると、詳細な構成オプションが表示されます。](./displaying-collections/images/04.png)
+![Click a collection display fragment with a configured collection to reveal more configuration options.](./displaying-collections/images/04.png)
 
 コレクション内のアセットを設定どおりに表示する準備ができたら、ページをパブリッシュします。
 
@@ -103,34 +106,32 @@ Liferay 7.4 GA23+またはU23+では、コレクション表示フラグメン�
 ```{note}
 コレクション表示フラグメントのリストスタイルで選択したオプションによっては、コンポーネントをフラグメントにドラッグできない場合があります。 コンポーネントをフラグメントにドラッグできない場合は、別のリストスタイルを選択するか、「リストアイテムのスタイル」で別のオプションを選択します。
 ```
+1. ページエディタで、コレクションを表す_コレクション表示_をクリックします。
 
-1. ページエディタで、コレクションを表す **Collection Display** をクリックします。
-
-1. ツールのサイドバーで、 **Fragments and Widgets**(![Fragment and Widgets](../../../images/icon-add-widget.png)) をクリックします。
+1. ツールのサイドバーで、_フラグメントとウィジェット_ (![フラグメントとウィジェット](../../../images/icon-add-widget.png))をクリックします。
 
 1. フラグメントとウィジェットのサイドバーパネルから、コレクションアイテムの表示に使用したいコンポーネントをドラッグ＆ドロップします。
 
-   ![コレクション表示にフラグメントまたはウィジェットを追加し、表示プロパティを設定します。](./displaying-collections/images/05.gif)
+   ![Add fragments or widgets to the collection display and configure the display properties.](./displaying-collections/images/05.gif)
 
    ```{note}
    コレクション表示に複数のアイテムが含まれている場合、フラグメントまたはウィジェットをそれらのいずれかにドラッグできます。 コレクション内の残りのアイテムは、自動的に同じレイアウト設定を使用します。
    ```
+1. コレクションディスプレイ上の_フラグメント_または_ウィジェット_をダブルクリックすると、そのマッピングオプションにアクセスできます。
 
-1. コレクション表示で **フラグメント** または **ウィジェット** をダブルクリックして、そのマッピングオプションにアクセスします。
+1. Mapping 列で、コレクションにマップしたい _フィールド_ を選択します。
 
-1. Mapping 列で、コレクションにマップしたい **フィールド** を選択します。
-
-   ![フラグメントとウィジェットをコレクション項目にマッピングする](./displaying-collections/images/06.gif)
+   ![Map the fragments and widgets to the collection items](./displaying-collections/images/06.gif)
 
 1. 必要に応じてフラグメントやウィジェットを追加し、コンテンツをコンテンツフィールドにマッピングする。
 
-   ![コレクション表示にフラグメントとウィジェットを追加し、コンテンツフィールドをマッピングする。](./displaying-collections/images/07.gif)
+   ![Add fragments and widgets to the collection display and map the content fields.](./displaying-collections/images/07.gif)
 
-1. ［**Publish**］ をクリックします。
+1. *［公開］*をクリックします。
 
 ## 表示項目のページネーション
 
-{bdg-secondary}`7.4以降で利用可能`
+{bdg-secondary}`7.4+で利用可能`
 
 ページネーション設定を使用して、コレクション項目をページ分割できます。 このオプションには、2つの重要な利点があります。
 
@@ -144,39 +145,39 @@ Liferay7.4のU18とGA18より前のバージョンでは、利用可能なペー
 
 コレクション表示の表示項目をページ分割する、
 
-1. コレクションが表示されているコンテンツページの **Edit**( ![Edit icon](../../../images/icon-edit.png) ) をクリックします。
+1. コレクションが表示されているコンテンツページで _編集_ ( ![編集アイコン](../../../images/icon-edit.png) ) をクリックします。
 
-1. **ブラウザ**( ![Browser icon](../../../images/icon-hierarchy.png) ) をクリックしてブラウザパネルを開きます。
+1. *Browser* ( ![Browser icon](../../../images/icon-hierarchy.png) ) をクリックして、Browser パネルを開きます。
 
 1. 要素ブラウザで、ページ分割したいコレクション表示フラグメントを選択します。 選択したフラグメントは、既存のコレクションを表示するように設定する必要があります。
 
 1. 一般設定で、ページネーションオプションを選択します。
 
-   **Pagination** : None (ページ分割なし)、Numeric (数値)、Simple (Previous/Next controls)。
+   **ページネーション**：None（ページネーションなし）、Numeric（数値）、Simple（Previous/Nextコントロール）。
 
-   **Display All Pages** : ページネーションメニューに各ページの番号やコントロールを表示する場合はチェックを入れる。 ページ分割タイプが選択されていない場合、このオプションは代わりに [すべてのコレクション アイテムを表示] になります。
+   **すべてのページを表示するすべてのページを表示する**：ページネーションメニューにすべてのページの数字またはコントロールを表示するには、このボックスにチェックを入れます。 ページ分割タイプが選択されていない場合、このオプションは代わりに [すべてのコレクション アイテムを表示] になります。
 
-   **Maximum Number of Pages to Display** : ページネーションメニューに表示される最大ページ数。 このオプションは、「すべてのページを表示」チェックボックスが選択されていない場合にのみ表示されます。
+   **最大表示ページ数**：ページネーションメニューに表示される最大ページ数。 このオプションは、「すべてのページを表示」チェックボックスが選択されていない場合にのみ表示されます。
 
-   **Maximum Number of Items per Page** : ページネーションが有効な場合、1ページに表示するコレクションのアイテムの最大数。 ページネーションタイプが選択されていない場合、このオプションは代わりに最大表示アイテム数になります。
+   **ページあたりの最大アイテム数**：ページネーションが有効な場合、コレクションからページごとに表示するアイテムの最大数。 ページネーションタイプが選択されていない場合、このオプションは代わりに最大表示アイテム数になります。
 
-   ![コレクション表示項目のページネーションオプションを選択します。](./displaying-collections/images/08.png)
+   ![Choose the pagination options for the collection display items.](./displaying-collections/images/08.png)
 
 ページ分割を有効にした場合、利用可能なページの総数は、コレクション内のアイテムの総数と、ページあたりのアイテムの最大数の設定の両方に依存します。
 
 ```{note}
-デフォルトでは、コレクション表示フラグメントは、編集モードで一度に20項目まで表示します。 この制限は、*コントロールパネル* &rarr; *インスタンス設定* &rarr; *ページ* &rarr; *ページエディタ* に移動して、*編集モードの最大アイテム数* フィールドの数値を変更することで変更できます。 編集モードで一度に20以上の項目を表示すると、パフォーマンスに悪影響を及ぼす可能性があります。 この設定は、ユーザーが表示モードでページに表示される内容には影響しません。
+デフォルトでは、コレクション表示フラグメントは、編集モードで一度に20項目まで表示します。 この制限は、*コントロールパネル* &rarr; *インスタンス設定* &rarr; *ページ* &rarr; *ページエディタ* に移動し、*編集モードの最大アイテム数* フィールドの数値を変更することで変更できます。 編集モードで一度に20以上の項目を表示すると、パフォーマンスに悪影響を及ぼす可能性があります。 この設定は、ユーザーが表示モードでページに表示される内容には影響しません。
 ```
 
 ## サイト全体でのコレクションの使用状況の表示
 
 あなたのサイトのコレクションの利用統計を見ることができます。
 
-1. **サイトメニュー**( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 **サイトビルダー** &rarr; **コレクション** に移動します。
+1. *サイトメニュー* ( ![サイトメニュー](../../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _コレクション_ に移動します。
 
-1. コレクション] タブで、確認するコレクションの横にある [**アクション**](![Actions Menu](../../../images/icon-actions.png) ) &rarr; [**使用状況の表示**] をクリックします。
+1. コレクションタブで、_アクション_ ([アクションメニュー](../../../images/icon-actions.png))をクリックします。 &rarr; レビューしたいコレクションの横にある _View Usages_ をクリックします。
 
-![利用状況を見る」を選択すると、サイトを通じてコレクションがどのように利用されているかを把握することができます。](./displaying-collections/images/09.png)
+![Select View Usages to understand how your collections are being used through the site](./displaying-collections/images/09.png)
 
 ## Liferay DXP 7.2
 
@@ -190,57 +191,57 @@ Liferay7.4のU18とGA18より前のバージョンでは、利用可能なペー
 
 1. サイトの新しいホームページを1カラムレイアウトのウィジェットページとして作成します。 新しいLiferay DXPバンドルを使っている場合は、サンプルのHomeページからHello Worldウィジェットを削除するだけです。
 
-1. ［**追加**］ メニューを開き、 ［**コンテンツ管理**］ &rarr; ［**アセットパブリッシャー**］ を縦に重ねてページに追加してください。
+1. "Add"メニューを開き、"Content Management" &rarr; "Asset Publishers"を2つ、縦に重ねてページに追加する。
 
-1. オプション ( ![Options](../../../images/icon-app-options.png) ) &rarr; **トップアセットパブリッシャーの設定** をクリックします。
+1. クリックオプション ( ![Options](../../../images/icon-app-options.png) ) ) &rarr; トップアセットパブリッシャーの_設定_です。
 
-1. ［データ選択方法］の下で、 ［**コンテンツセット**］ を選択します。
+1. Asset Selectionで_Content Set_を選択する。
 
-   ![アセットパブリッシャーには、コンテンツのソースを選択するためのオプションがいくつかあります。](./displaying-collections/images/10.png)
+   ![The asset publisher has a number of options available for selecting its source for content.](./displaying-collections/images/10.png)
 
-1. **Select Content Set** を開き、 **Select** をクリックする。
+1. *コンテンツセットの選択*を開き、_選択_をクリックします。
 
-1. **Space Program Images** コンテンツセットを選択する。
+1. *宇宙番組画像*コンテンツセットを選択する。
 
-1. ［**Save**］ をクリックします。
+1. ［_Save_］をクリックします。
 
 これで画像はページ上部に表示されるようになった。 どのようなメタデータが表示されるかなど、コンテンツの表示方法を管理したり、ウィジェットテンプレートを作成してコンテンツをスタイリングすることもできるが、表示されるアイテムや表示順序はコンテンツセットによって決定される。
 
 次に、一番下のアセットパブリッシャーにもう一つのコンテンツセットを設定します。
 
-1. オプション (![Options](../../../images/icon-app-options.png)) &rarr; **設定** をクリックします。
+1. オプションをクリック (![Options](../../../images/icon-app-options.png)) &rarr; 一番下のアセットパブリッシャーの_設定_をクリックします。
 
-1. ［データ選択方法］の下で、 ［**コンテンツセット**］ を選択します。
+1. Asset Selectionで_Content Set_を選択する。
 
-1. ［**Select Content Set**］ を開き、 ［**選択**］ をクリックします。
+1. *Select Content Set*を開き、_Select_をクリックする。
 
-1. **Trending** コンテンツセットをクリックしてください。
+1. *トレンド*コンテンツセットをクリックする。
 
-   ![使用するコンテンツセットを選択します。](./displaying-collections/images/11.png)
+   ![Select the content set you want to use.](./displaying-collections/images/11.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_Save_］をクリックします。
 
 ここでも、さまざまな表示設定を管理することができるが、表示される項目とその順序は、コンテンツ・セットの基準によって決定される。
 
-![アセットパブリッシャーの標準出力として結果を見ることができます。 ウィジェットテンプレートを作成して、スタイルと華やかさを追加することができます。](./displaying-collections/images/12.png)
+アセットパブリッシャーの標準出力として結果を見ることができます。 ウィジェットテンプレートを作成し、スタイルと華やかさを追加できます。](./displaying-collections/images/12.png)
 
 #### 既存のコンテンツセットにアイテムを追加する
 
-静的コンテンツ・セットと動的コンテンツ・セットの両方の管理を実演するために、新しい画像をアップロードし、タグ付けして、静的コンテンツ・セットに手動で追加します。
+静的コンテンツ・セットと動的コンテンツ・セットの両方の管理を実演するために、新しい画像をアップロードし、タグ付けして、静的セットに手動で追加します。
 
-1. 新しい画像をアップロードし、「Categorization」で「**Trending**」とタグ付けする。
+1. 新しい画像をアップロードし、「分類」で「*トレンド*」というタグを付けます。
 
 1. 画像はトレンドコンテンツリストのトップに追加されます。
 
-   ![その結果は、表示されているコンテンツ・リストのどこにでも動的に追加される。](./displaying-collections/images/13.png)
+   ![The result is added dynamically to the content list wherever it is displayed.](./displaying-collections/images/13.png)
 
-1. マニュアルセットに追加するには、 **Site Menu** に戻り、 **Content & Data** &rarr; **Site Builder** に移動します。
+1. マニュアルセットに追加するには、_サイトメニュー_に戻り、_コンテンツ＆データ_ &rarr; _サイトビルダー_に移動します。
 
-1. **Space Program Images** をクリックするか、Space Program Images の隣にある ![Options](../../../images/icon-options.png) &rarr; **Edit** を選択します。
+1. *Space Program Images*をクリックするか、！[Options](../../../images/icon-options.png) &rarr; _編集_ スペース・プログラム・イメージの隣にある。
 
-1. Asset Entries の横で、 **Select** &rarr; **Basic Document** をクリックする。
+1. Asset Entriesの横にある、_Select_ &rarr; _Basic Document_をクリックします。
 
-1. 新しい画像を選択して、 ［**Add**］ をクリックします。
+1. 新しい画像を選択し、_追加_をクリックします。
 
 1. ホームページに戻ると、リストに追加された画像が表示されます。
 
@@ -248,4 +249,6 @@ Liferay7.4のU18とGA18より前のバージョンでは、利用可能なペー
 
 ## 関連トピック
 
-[コレクションの作成](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md) [コレクションとコレクションページについて](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) [コレクションのパーソナライズ](../../personalizing-site-experience/experience-personalization/personalizing-collections.md)
+[コレクションの作成](../../../content-authoring-and-management/collections-and-collection-pages/creating-collections.md)
+[コレクションとコレクションページについて](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md)
+[コレクションのパーソナライズ](../../personalizing-site-experience/experience-personalization/personalizing-collections.md)

@@ -3,34 +3,41 @@ toc:
   - ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
   - ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ---
-# クライアント拡張の設定
+# 構成 クライアント拡張
 
-```{toctree}
-:maxdepth: 3
+{bdg-secondary}`Liferay DXP 7.4 (self-hosted)` 
+{bdg-secondary}`Liferay Experience Cloud (SaaS)` 
+{bdg-unsupported}`Liferay Cloud： セルフマネージド`
 
-configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
-configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
+Liferay インスタンスコンフィギュレーションはクライアント拡張と一緒にデプロイできます。例えば、OAuth2認証プロファイルをクライアント拡張設定としてデプロイし、認証を必要とする他のクライアント拡張設定を有効にすることができます。
+
+## インスタンス設定 クライアント拡張
+
+{bdg-secondary}`Available Liferay DXP 7.4 (self-hosted)` {bdg-secondary}`Available Liferay Experience Cloud (SaaS)`
+
+インスタンス設定クライアントエクステンションを使用すると、さまざまな Liferay の設定を行うことができます。各構成は PID (Persistent IDentity) によって参照されます。
+
+インスタンス設定クライアント拡張は `client-extension.yaml` ファイルで指定します：
+
+```yaml
+type: instanceSettings
 ```
-
-{bdg-secondary}`Liferay Experience Cloud、Liferay DXP 7.4+ （オンプレミス）`
-
-Liferayのインスタンス設定は、クライアント拡張でデプロイ可能です。 例えば、OAuth2認証プロファイルを設定クライアント拡張としてデプロイし、認証を必要とする他のクライアント拡張を有効にできます。
 
 ## OAuthヘッドレスサーバークライアント拡張
 
-クライアント拡張を使用すると、`Headless Server`クライアントプロファイルで事前に構成されたLiferay OAuth2 アプリケーションを構成することができます。 この種の認証プロファイルは、特定のユーザーによって認証されていないAPI呼び出しに必要です。
+クライアントエクステンションを使用すると、`Headless Server` クライアントプロファイルをあらかじめ設定した Liferay OAuth2 アプリケーションを構成することができます。この種の認証プロファイルは、特定のユーザーによって認可されていない API 呼び出しに必要です。
 
-`client-extension.yaml`ファイルにOAuthヘッドレスサーバークライアント拡張を指定します。
+`client-extension.yaml`ファイルにOAuthヘッドレスサーバークライアントの拡張子を指定します：
 
 ```yaml
 type: oAuthApplicationHeadlessServer
 ```
 
-### `oAuthApplicationHeadlessServer の特別な動作`
+### `oAuthApplicationHeadlessServer`の特別な動作
 
-OAuth ヘッドレスサーバクライアントの拡張は、Liferay が **ルート** として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
+OAuthヘッドレスサーバクライアントの拡張は、Liferayが_ルート_として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
 
-以下は、 `oAuthApplicationHeadlessServer` クライアント拡張がプロジェクトで定義されているとき、環境変数 `LIFERAY_ROUTES_CLIENT_EXTENSION` によって定義されるルートの例です：
+以下は、`oAuthApplicationHeadlessServer` クライアント拡張がプロジェクトで定義されている場合に、環境変数 `LIFERAY_ROUTES_CLIENT_EXTENSION` で定義されるルートの例である：
 
 ```bash
 .
@@ -52,23 +59,23 @@ OAuth ヘッドレスサーバクライアントの拡張は、Liferay が **ル
 └── <oAuth2ApplicationExternalReferenceCode>.oauth2.token.uri
 ```
 
-`oAuthApplicationHeadlessServer` クライアントエクステンションを使用して Liferay DXP と通信するアプリケーションロジックは、このルートメタデータが提供する情報を使用して送信データを保護する必要があります。 必要なOAuth 2メタデータはすべてこの方法で提供されるので、ハードコーディングする必要はない。
+`oAuthApplicationHeadlessServer` クライアント拡張を使用して Liferay DXP と通信するアプリケーションロジックは、このルートメタデータによって提供される情報を使用して、送信データを保護する必要があります。 必要なOAuth 2メタデータはすべてこの方法で提供されるので、ハードコーディングする必要はない。
 
 ## OAuthユーザーエージェントクライアント拡張
 
-クライアント拡張を使用すると、`User Agent Application`クライアントプロファイルで事前に設定された Liferay OAuth2 アプリケーションを構成することができます。 この種の認証プロファイルは、特定のユーザーによって認証されたAPI呼び出し（例えば、他の [マイクロサービスクライアント拡張](./microservice-client-extensions.md)を使用してLiferay APIにREST呼び出しを行うなど）に必要です。
+クライアントエクステンションを使用すると、`User Agent Application` クライアントプロファイルをあらかじめ設定した Liferay OAuth2 アプリケーションを構成することができます。このような認証プロファイルは、特定のユーザーによって許可されたAPIコール（例えば、他の[microservice-client-extensions](./microservice-client-extensions.md)を使ってLiferay APIにRESTコールをする場合など）に必要です。
 
-`client-extension.yaml`ファイルにOAuth ユーザーエージェントクライアント拡張を指定します。
+`client-extension.yaml`ファイルにOAuthユーザーエージェントクライアント拡張子を指定します：
 
 ```yaml
 type: oAuthApplicationUserAgent
 ```
 
-### `oAuthApplicationUserAgent の特別な動作`
+### `oAuthApplicationUserAgent` の特別な動作
 
-OAuth ヘッドレスユーザエージェントクライアントの拡張は、Liferay が **ルート** として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
+OAuth ヘッドレスユーザエージェントクライアントの拡張は、Liferay が _ルート_ として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
 
-以下は、 `oAuthApplicationUserAgent` クライアント拡張がプロジェクトで定義されているとき、環境変数 `LIFERAY_ROUTES_CLIENT_EXTENSION` によって定義されるルートの例です：
+以下は、`oAuthApplicationUserAgent` クライアント拡張がプロジェクトで定義されている場合に、環境変数 `LIFERAY_ROUTES_CLIENT_EXTENSION` で定義されるルートの例である：
 
 ```bash
 .
@@ -90,9 +97,9 @@ OAuth ヘッドレスユーザエージェントクライアントの拡張は�
 └── <oAuth2ApplicationExternalReferenceCode>.oauth2.user.agent.scopes
 ```
 
-`oAuthApplicationUserAgent` クライアントエクステンションを使用して Liferay DXP と通信するアプリケーションロジックは、このルートメタデータが提供する情報を使用して送信データを保護する必要があります。 必要なOAuth 2メタデータはすべてこの方法で提供されるので、ハードコーディングする必要はない。
+`oAuthApplicationUserAgent` クライアント拡張を使用して Liferay DXP と通信するアプリケーションロジックは、このルートメタデータが提供する情報を使用して、送信データを保護する必要があります。 必要なOAuth 2メタデータはすべてこの方法で提供されるので、ハードコーディングする必要はない。
 
 ## 関連トピック
 
-* [クライアント拡張の概要](../client-extensions.md)
-* [`client-extension.yaml`でのクライアント拡張の設定](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)
+* [クライアント拡張機能の紹介](../client-extensions.md) 
+* [`client-extension.yaml` でクライアント拡張機能を設定する。](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

@@ -5,126 +5,126 @@
 Liferay Objectは、Liferay UIの開発機能を提供します。 オブジェクトを使用すると、コードを記述したり、モジュールを手動でデプロイしたりすることなく、完全に統合されたLiferayアプリケーションを構築できます。 このプロセスには、オブジェクト定義の初期ドラフトの [作成](#creating-object-drafts) 、オブジェクトドラフトの [編集](#editing-object-drafts) 、最後にドラフトを [公開](#publishing-object-drafts) して新しいアプリケーションを作成することが含まれます。 オブジェクトドラフトを公開すると、完全に統合されたLiferayアプリケーションが作成され、オブジェクト管理ページを介していつでも管理および拡張できます。
 
 ```{important}
-Liferayはオブジェクト定義を公開する際にデータベーステーブルを作成するため、 [データベース設定](./../../installation-and-upgrades/reference/database-configurations.md#high-security-database-user-practices) で説明する高レベルのセキュリティデータベースの実践ではオブジェクトを使用できません。
+Liferay はオブジェクト定義を公開するときにデータベーステーブルを作成するので、 [Database Configurations](../../../installation-and-upgrades/reference/database-configurations.md#high-security-database-user-practices) で説明されている高セキュリティのデータベースプラクティスで Objects を使用することはできません。
 ```
-
 ## オブジェクトドラフトの作成
 
 オブジェクトドラフトは、オブジェクトアプリケーションを作成するために必要なデータを格納するアプリケーションテンプレートです。 次の手順に従って、オブジェクトドラフトを作成します。
 
-1. ［**グローバルメニュー**］（![Global Menu](../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**Objects**］ をクリックします。
+1. _グローバルメニュー_ (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
 
-1. **追加** ボタン（![Add Button](../../../images/icon-add.png)）をクリックします。
+2. *追加*ボタン(![追加ボタン](../../../images/icon-add.png))をクリックします。
 
-1. オブジェクトドラフトのこれらの詳細を提供します。
+3. オブジェクトドラフトのこれらの詳細を提供します。
 
-   ［**Label**］ ：オブジェクト管理およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
+   **ラベル**Objects admin およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
 
-   ［**Plural Label**］ ：UIでのオブジェクトアプリケーションの表示名を決定します。
+   **Plural Label**：UIにおけるオブジェクト・アプリケーションの表示名を決定します。
 
-   ［**Object Name**］ ：オブジェクトの`definition.name`を決定します。オブジェクトが公開されると変更できません。
+   **オブジェクト名**：オブジェクトの `definition.name` を決定し、オブジェクトが公開されると変更できません。
 
-   ![オブジェクトドラフトのラベル、複数形ラベル、および名前を入力します。](./creating-objects/images/01.png)
+   ![Enter a Label, Plural Label, and Name for the object draft.](./creating-objects/images/01.png)
 
-1. ［**Save**］ をクリックします。
+4. ［_Save_］をクリックします。
 
 保存されると、設定やデータ要素のない空白のオブジェクトドラフトが作成されます。 ドラフトは、オブジェクト管理でシステムオブジェクトと一緒に表示できます。 作成プロセスを完了するには、ドラフトを [編集](#editing-object-drafts) してから、Liferayインスタンスに [公開](#publishing-object-drafts) する必要があります。
 
-![新しいオブジェクトのドラフトは、オブジェクトシステムで確認できます。](./creating-objects/images/02.png)
+![You can view the new object draft in the Objects admin.](./creating-objects/images/02.png)
 
 ## オブジェクトドラフトの編集
+
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`.
 
 オブジェクトを公開する前に、要素の追加や設定を行うことができます。 これには、フィールドの追加、バリデーションの定義、データ範囲の設定などが含まれます。
 
 ```{note}
 フィールド、リレーションシップ、またはレイアウトを追加するたびに、オブジェクトドラフトが自動的に保存されます。 ただし、他のタブに移動すると、［Details］タブで保存されていない変更はすべて失われます。
 ```
-
 オブジェクトドラフトを編集するには、次の手順に従います。
 
 1. オブジェクト管理ページから、新しく作成したオブジェクトのドラフトをクリックして、編集を開始します。
 
    オブジェクトの機能と設定オプションは、［Details］、［Fields］、［Relationships］、［Layouts］、［Actions］、［Views］、［Validations］、［State Manager］のタブにまとめられています。
 
-   ![オブジェクトの機能と設定オプションは、8つのタブに整理されています。](./creating-objects/images/03.png)
+   ![Object features and configuration options are organized into eight tabs.](./creating-objects/images/03.png)
 
-1. ［**Fields**］ をクリックし、カスタムフィールドを追加します。 各フィールドは、特定のタイプの値を格納するためのデータベースカラムを表します。 [オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md)を参照してください。
+1. カスタムフィールドを追加するには、_フィールド_タブをクリックします。 各フィールドは、特定のタイプの値を格納するためのデータベースカラムを表します。 [オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md) を参照してください。
 
    デフォルトでは、すべてのオブジェクトに次のシステムフィールド、［Author］、［Create Date］、［External Reference Code］、［ID］、［Modified Date］および［Status］が含まれます。
 
-   ![［フィールド］タブからオブジェクトにフィールドを追加します。](./creating-objects/images/04.png)
+   ![Add fields to the object from the Fields tab.](./creating-objects/images/04.png)
 
-1. (オプション)［**Relationships**］ タブをクリックし、関連を追加します。 リレーションシップは、オブジェクト定義間の接続で、そのエントリーをリンクさせるために使用できます。 [オブジェクトリレーションの定義](./relationships/defining-object-relationships.md)を参照してください。
+1. (オプション) _関係_ タブをクリックして関係を追加します。 リレーションシップは、オブジェクト定義間の接続で、そのエントリーをリンクさせるために使用できます。 [オブジェクトリレーションの定義](./relationships/defining-object-relationships.md) を参照してください。
 
-   ![［リレーションシップ］タブからオブジェクトにリレーションシップを追加します。](./creating-objects/images/05.png)
+   ![Add relationships to the object from the Relationships tab.](./creating-objects/images/05.png)
 
-1. (オプション)［**Layouts**］ タブをクリックして、レイアウトを追加します。 オブジェクトレイアウトは、オブジェクトエントリーを作成したり表示したりする際に、フィールドや関連をどのように表示するかを決定します。 [オブジェクトレイアウトの設計](./layouts/designing-object-layouts.md)を参照してください。
+1. (オプション) _Layouts_タブをクリックしてレイアウトを追加します。 オブジェクトレイアウトは、オブジェクトエントリーを作成したり表示したりする際に、フィールドや関連をどのように表示するかを決定します。 [オブジェクトレイアウトの設計](./layouts/designing-object-layouts.md) を参照してください。
 
    ```{note}
    カスタムレイアウトを追加せず、デフォルトとして設定した場合、オブジェクトはそのエントリーに自動生成されたレイアウトを使用します。 このレイアウトには、すべてのオブジェクトフィールドをアルファベット順に表示し、リレーションシップを表示しない単一のタブがあります。 リレーションシップを表示するには、専用のリレーションシップタブを使用してカスタムレイアウトを作成する必要があります。
    ```
 
-   ![［レイアウト］タブからオブジェクトにカスタムレイアウトを追加します。](./creating-objects/images/06.png)
+   ![Add custom layouts to the object from the Layouts tab.](./creating-objects/images/06.png)
 
-1. (オプション)［Actions］タブをクリックして、カスタムアクションを追加します。 各アクションは、設定されたトリガーに従って自動的に実行される操作を定義します。 [オブジェクトアクションの定義](./actions/defining-object-actions.md)を参照してください。
+1. (オプション)［Actions］タブをクリックして、カスタムアクションを追加します。 各アクションは、設定されたトリガーに従って自動的に実行される操作を定義します。 [オブジェクトアクションの定義](./actions/defining-object-actions.md) を参照してください。
 
-   ![［アクション］タブからオブジェクトにカスタムアクションを追加します。](./creating-objects/images/07.png)
+   ![Add custom actions to the object from the Actions tab.](./creating-objects/images/07.png)
 
-1. (オプション)［Views］タブをクリックし、カスタムビューを追加します。 オブジェクトビューは、オブジェクトのアプリケーションページでエントリーをどのように表示するかを決定します。 [オブジェクトビューの設計](./views/designing-object-views.md)を参照してください。
+1. (オプション)［Views］タブをクリックし、カスタムビューを追加します。 オブジェクトビューは、オブジェクトのアプリケーションページでエントリーをどのように表示するかを決定します。 [オブジェクトビューの設計](./views/designing-object-views.md) を参照してください。
 
-   ![［ビュー］タブからオブジェクトにカスタムビューを追加します。](./creating-objects/images/08.png)
+   ![Add custom views to the object from the Views tab.](./creating-objects/images/08.png)
 
-1. (オプション)［Validations］タブをクリックし、バリデーションを追加します。 各バリデーションは、有効なフィールドエントリーを決定するためのルールを設定します。 [カスタムバリデーションの追加](./validations/adding-field-validations.md)を参照してください。
+1.(オプション) バリデーション・タブをクリックして、バリデーションを追加する。各バリデーションは、有効なフィールド項目を決定するためのルールを設定します。[フィールド検証の追加](./validations/adding-field-validations.md)を参照してください。
 
-   ![［バリデーション］タブからオブジェクトにカスタムバリデーションを追加します。](./creating-objects/images/09.png)
+   ![Add custom validations to the object from the Validations tab.](./creating-objects/images/09.png)
 
-1. (オプション) ステータスフィールドをドラフトに追加した場合、そのフローを定義するには［State Manager］タブをクリックします。 [カスタムステートの追加と管理](./fields/adding-and-managing-custom-states.md)を参照してください。
+1. (オプション) ステータスフィールドをドラフトに追加した場合、そのフローを定義するには［State Manager］タブをクリックします。 [カスタムステートの追加と管理](./fields/adding-and-managing-custom-states.md) を参照してください。
 
-   ![［ステータスマネージャー］タブで、ステータスフィールドのフローを定義します。](./creating-objects/images/10.png)
+   ![Define flows for state fields in the State Manager tab.](./creating-objects/images/10.png)
 
 1. ［Details］タブで、オブジェクトドラフトを設定します。
 
 1. (オプション) オブジェクトの名前、ラベル、または複数形のラベルを変更します。
 
-   ![オブジェクトの名前、ラベル、複数形のラベルを変更します。](./creating-objects/images/11.png)
+    ![Change the name, label and plural label for the object.](./creating-objects/images/11.png)
 
 1. エントリーのタイトルを選択します。 これは、UIでオブジェクトのエントリーを識別するために使用されるフィールドを決定します（例：関連フィールドなど）。 デフォルトでは、オブジェクトはIDフィールドを使用します。
 
-   ![オブジェクトにフィールドを追加すると、そのフィールドをエントリータイトルとして選択できます。](./creating-objects/images/12.png)
+    ![Once a field is added to an object, you can select it as the Entry Title.](./creating-objects/images/12.png)
 
-1. オブジェクトの **範囲** を選択します。 これにより、オブジェクトのデータの保存方法が決まります。
+1. オブジェクト_スコープ_を選択します。 これにより、オブジェクトのデータの保存方法が決まります。
 
-   ［**会社**］（デフォルト）：会社ごとに範囲が設定されている場合、オブジェクトのデータはLiferayインスタンスごとに保存されます。
+    **Company**（デフォルト）：Companyでスコープされた場合、オブジェクトのデータはLiferayインスタンスごとに保存されます。
 
-   **サイト** ：サイトで範囲を設定すると、オブジェクトのデータはサイトごとに保存されます。
+    **サイト**：Site**：Siteによってスコープされた場合、オブジェクトのデータはSiteごとに保存されます。
 
 1. パネルリンクを選択し、Liferayのどこに定義が表示されるかを決定します。
 
-   カンパニースコープオブジェクトの場合は、グローバルメニュー(![Global Menu](../../../images/icon-applications-menu.png))でタブとカテゴリーを選択します。
+    カンパニースコープオブジェクトについては、グローバルメニュー(![グローバルメニュー](../../../images/icon-applications-menu.png))でタブとカテゴリを選択します。
 
-   サイトスコープのオブジェクトの場合、サイトメニュー(![Site Menu](../../../images/icon-menu.png))でセクションを選択します。
+    サイト・スコープ・オブジェクトの場合は、サイト・メニュー(![サイト・メニュー](../../../images/icon-menu.png))でセクションを選択します。
 
-   UIメニューにアプリケーションを表示したくない場合は、この値を空白にすることができます。
+    UIメニューにアプリケーションを表示したくない場合は、この値を空白にすることができます。
 
-   ![オブジェクトのスコープとパネルリンクを選択します。](./creating-objects/images/13.png)
+    ![Select a scope and panel link for the object.](./creating-objects/images/13.png)
 
 1. アカウント制限を設定し、アカウントによってオブジェクトエントリーへのアクセスを制限します。 この設定は、公開前にしか設定できません。
 
-   このオプションは、オブジェクトがアカウントシステムオブジェクトとの1対多のリレーションの子側にある場合にのみ表示されます。 [アカウントによるオブジェクトデータへのアクセス制限](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md)を参照してください。
+    このオプションは、オブジェクトがアカウントシステムオブジェクトとの1対多のリレーションの子側にある場合にのみ表示されます。 [アカウントによるオブジェクトデータへのアクセス制限](./using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) を参照してください。
 
-   ![アカウントによってオブジェクトエントリーへのアクセスを制限するかどうかを決定します。](./creating-objects/images/14.png)
+    ![Determine whether to limit restrict access to object entries by account.](./creating-objects/images/14.png)
 
 1. オブジェクトのページウィジェットを表示または非表示にします。
 
-   有効になっている間は、オブジェクトのウィジェットをサイトページに追加することができます。 [オブジェクトウィジェットのサイトへのデプロイ](../deploying-object-widgets-to-sites.md)を参照してください。
+    有効になっている間は、オブジェクトのウィジェットをサイトページに追加することができます。 [オブジェクトウィジェットのサイトへのデプロイ](../deploying-object-widgets-to-sites.md) を参照してください。
 
 1. オブジェクトエントリのカテゴリ化を有効または無効にする。
 
-   有効にすると、カスタムレイアウトのフィールドタブにカテゴリー設定ブロックを追加できます。 [フィールドタブへのカテゴリー設定の追加](./layouts/adding-categorization-to-fields-tabs.md) を参照してください。 さらに、フォームコンテナにタグとカテゴリのフラグメントを追加することで、オブジェクトエントリにメタデータを添付することができます。
+    有効にすると、カスタムレイアウトのフィールドタブにカテゴリー設定ブロックを追加できます。 [フィールドタブへのカテゴリー設定の追加](./layouts/adding-categorization-to-fields-tabs.md) を参照してください。 さらに、フォームコンテナにタグとカテゴリのフラグメントを追加することで、オブジェクトエントリにメタデータを添付することができます。
 
 1. オブジェクト表示ページのコメントを有効または無効にします。
 
-   有効にすると、エントリー表示ページでページコメントウィジェットを使用することができます。 [オブジェクトの表示ページテンプレートの作成](../displaying-object-entries.md#creating-display-page-templates-for-objects) を参照してください。
+    有効にすると、エントリー表示ページでページコメントウィジェットを使用することができます。 [オブジェクトの表示ページテンプレートの作成](../displaying-object-entries.md#creating-display-page-templates-for-objects) を参照してください。
 
 1. オブジェクトエントリーの履歴を有効または無効にします。
 
@@ -138,7 +138,11 @@ Liferayはオブジェクト定義を公開する際にデータベーステー�
    この設定はいつでも行うことができます。下書きモードを無効にしても、既存のエントリーのステータスは変更されません。
    ```
 
-1. ［**保存**］ をクリックします。
+1. カスタムテキスト[fields](./fields.md)の翻訳サポートを有効または無効にします。
+
+    有効にすると、カスタムテキストフィールドの翻訳を有効にすることができます。 詳しくは [Object Definitions and Entriesのローカライズ](./localizing-object-definitions-and-entries.md) を参照してください。
+
+1. ［_Save_］をクリックします。
 
 ドラフトの設定と編集が終わったら、 [公開](#publishing-object-drafts) できます。
 
@@ -158,9 +162,9 @@ Liferayはオブジェクト定義を公開する際にデータベーステー�
 
 * オブジェクトに対してページウィジェットが作成されます。
 
-* オブジェクトは情報フレームワークと統合されているため、[表示ページテンプレート](../../../site-building/displaying-content/using-display-page-templates.md)のコンテンツの種類としてオブジェクトを選択できます。
+* オブジェクトは情報フレームワークと統合されているため、 [表示ページテンプレート](../../../site-building/displaying-content/using-display-page-templates.md) のコンテンツの種類としてオブジェクトを選択できます。
 
-* オブジェクトは[権限設定フレームワーク](../understanding-object-integrations/permissions-framework-integration.md)と統合されているため、新しいアプリケーションとそのリソースの権限を管理できます。
+* オブジェクトは [権限設定フレームワーク](../understanding-object-integrations/permissions-framework-integration.md) と統合されているため、新しいアプリケーションとそのリソースの権限を管理できます。
 
 * オブジェクトはワークフローフレームワークと統合されているため、オブジェクトのカスタムワークフローを構成できます。
 
@@ -168,7 +172,7 @@ Liferayはオブジェクト定義を公開する際にデータベーステー�
 
 ### 公開されたオブジェクトの構成制限
 
-{bdg-secondary}`Liferay 7.4 U86+/GA86+`
+{bdg-secondary}`Liferay 7.4 U86+/GA86+`.
 
 データの損失やシステムの競合を防ぐため、Liferayは公開後のオブジェクト定義に対してこれらの設定オプションを制限しています：
 
@@ -182,10 +186,9 @@ Liferayはまた、いくつかのカスタムフィールドオプションを�
 ```{note}
 Liferay 7.4 U85/GA85以前のバージョンでは、公開時にオブジェクト定義に含まれるフィールドを削除することはできません。
 ```
-
 ## 関連トピック
 
-* [オブジェクト概要](../../objects.md)
-* [オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md)
-* [オブジェクトリレーションの定義](./relationships/defining-object-relationships.md)
-* [オブジェクトレイアウトの設計](./layouts/designing-object-layouts.md)
+* [オブジェクトの概要](../../objects.md) 
+* [オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md) 
+* [オブジェクトの関係の定義](./relationships/defining-object-relationships.md) 
+* [オブジェクトのレイアウトをデザインする](./layouts/designing-object-layouts.md) 

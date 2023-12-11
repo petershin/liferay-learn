@@ -5,38 +5,36 @@
 先に進む前に、新しい Liferay DXP/Portal 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。
 
 ```{tip}
-サイトオブジェクトと会社オブジェクトの両方に対して生成されるAPIの完全なリストについては、[オブジェクトのヘッドレスフレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md)を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*［RESTアプリケーション］*の下に表示されます。
+Site Objects と Company Objects の両方に生成される API の完全なリストについては、 [Object's Headless Framework Integration](../using-custom-object-apis.md) を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 これらは、*［RESTアプリケーション］*の下に表示されます。
 ```
-
 ## Liferayインスタンスのセットアップ
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、以下の手順に従って、このチュートリアルで使用する基本的なオブジェクトを [作成](../../creating-and-managing-objects/creating-objects.md)してください：
+[次に、以下の手順に従って、](../../creating-and-managing-objects/creating-objects.md) このチュートリアルの基本的なオブジェクトを作成します：
 
-1. グローバルメニュー](../../../../../images/icon-applications-menu.png))を開き、[コントロールパネル](**Control Panel**)タブに移動し、[オブジェクト](**Objects**)をクリックします。
+1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
 
-1. **追加** ボタン(![ボタンの追加](../../../../images/icon-add.png))をクリックし、以下の値を入力します：
+1. 追加*ボタン(![追加ボタン](../../../../images/icon-add.png))をクリックし、以下の値を入力する：
 
-   | フィールド | 値 |
-   | :--- | :--- |
-   | ラベル | `Able` |
+   | 項目      | 値       |
+   | :------ | :------ |
+   | ラベル     | `Able`  |
    | 複数形のラベル | `Ables` |
-   | 名前 | `Able` |
+   | 名前      | `Able`  |
 
-1. 新しい **オブジェクト** ドラフトを選択し、 **フィールド** タブに移動し、単一のテキスト **フィールド** を追加します：
+1. 新しい_オブジェクト_ドラフトを選択し、_フィールド_タブに移動し、単一のテキスト_フィールド_を追加します：
 
-   | ラベル | フィールド名 | タイプ | 必須 |
-   | :--- | :--- | :--- | :--- |
-   | 名前 | 名前 |テキスト | &#10004; |
+   | ラベル | 項目名 | 種類       | 必須       |
+   | :-- | :-- | :------- | :------- |
+   | 名前  | 名前  | テキストボックス | &#10004; |
 
-1. **Details** タブに移動し、 **Publish** をクリックします。
+1. *［詳細］_タブに移動し、_［公開］*をクリックします。
 
    ```{important}
    このチュートリアルでは、上記の値を使用する必要があります。
    ```
-
 [オブジェクトの公開](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 ヘッドレスAPIを介してアクセスできるようになりました。
 
 ## サンプルコードを準備する
@@ -44,7 +42,7 @@
 以下のコマンドを実行して、提供されたサンプルコードをダウンロードし、解凍してください。
 
 ```bash
-curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-t4r3.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/understanding-object-integrations/using-custom-object-apis/liferay-t4r3.zip -O
 ```
 
 ```bash
@@ -54,7 +52,7 @@ unzip liferay-t4r3.zip
 これらのスクリプトには、以下のバッチAPIが含まれています。
 
 | HTTP メソッド | HTTPエンドポイント | 説明                                         |
-|:--------- |:----------- |:------------------------------------------ |
+| :-------- | :---------- | :----------------------------------------- |
 | DELETE    | `/batch`    | 複数のオブジェクトエントリーを削除します                       |
 | POST      | `/batch`    | API呼び出しで提供された詳細を使用して複数のオブジェクトエントリーを作成します   |
 | PUT       | `/batch`    | API呼び出しで提供された詳細を使用して、複数のオブジェクトエントリーを置き換えます |
@@ -62,16 +60,15 @@ unzip liferay-t4r3.zip
 ```{note}
 GETメソッドは、デモのために含まれています。 これは、Liferayインスタンスのオブジェクトエントリーの完全なリストを返します。
 ```
-
 ## カスタムオブジェクトのAPIを呼び出す
 
-1. サンプルコードをダウンロード後、 `liferay-t4r3`プロジェクト内の`curl`フォルダに移動します。
+1. サンプルコードをダウンロードしたら、`liferay-t4r3`プロジェクトの`curl`フォルダに移動します。
 
    ```bash
    cd liferay-t4r3/curl
    ```
 
-1. `Ables_POST_Batch`を実行します。 複数のオブジェクトエントリーを作成します。
+1. `Ables_POST_Batch` を実行する。 複数のオブジェクトエントリーを作成します。
 
    ```bash
    ./Ables_POST_Batch.sh
@@ -96,7 +93,7 @@ GETメソッドは、デモのために含まれています。 これは、Life
    }
    ```
 
-1. `Ables_GET_FromCompany` を実行し、エントリーが作成されたことを確認します。 すべてのオブジェクトエントリーのリストが返されます。
+1. `Ables_GET_FromCompany` を実行して、エントリが作成されたことを確認する。 すべてのオブジェクトエントリーのリストが返されます。
 
    ```bash
    ./Ables_GET_FromCompany.sh
@@ -130,7 +127,7 @@ GETメソッドは、デモのために含まれています。 これは、Life
    }
    ```
 
-1. 各エントリーIDをパラメーターとして`Ables_PUT_Batch`を実行します。 これにより、指定されたエントリーの詳細がAPI呼び出しで提供された詳細に置き換えられます。
+1. 各エントリ ID をパラメータとして `Ables_PUT_Batch` を実行する。 これにより、指定されたエントリーの詳細がAPI呼び出しで提供された詳細に置き換えられます。
 
    ```bash
    ./Ables_PUT_Batch.sh {first-entry-id} {second-entry-id} {third-entry-id}
@@ -153,7 +150,7 @@ GETメソッドは、デモのために含まれています。 これは、Life
    }
    ```
 
-1. `Ables_GET_FromCompany` を実行し、エントリーが更新されたことを確認します。
+1. `Ables_GET_FromCompany` を実行して、エントリが更新されたことを確認する。
 
    ```bash
    ./Ables_GET_FromCompany.sh
@@ -185,19 +182,19 @@ GETメソッドは、デモのために含まれています。 これは、Life
    }
    ```
 
-1. 各エントリーIDをパラメーターとして`Ables_DELETE_Batch`を実行します。 これにより、指定したエントリーが削除されます。
+1. 各エントリ ID をパラメータとして `Ables_DELETE_Batch` を実行する。 これにより、指定したエントリーが削除されます。
 
    ```bash
    ./Ables_DELETE_Batch.sh {first-entry-id} {second-entry-id} {third-entry-id}
    ```
 
-1. `Ables_GET_FromCompany` を実行し、エントリーが削除されたことを確認します。
+1. `Ables_GET_FromCompany` を実行して、エントリが削除されたことを確認する。
 
    ```bash
    ./Ables_GET_FromCompany.sh
    ```
 
-   前のステップでエントリーを削除しているので、エントリー `NOT FOUND`エラーが返されます。
+   前のステップでエントリーを削除したので、エントリーが `NOT FOUND` エラーを返します。
 
 ## サンプルのcURLスクリプトの検証
 
@@ -221,6 +218,6 @@ GETメソッドは、デモのために含まれています。 これは、Life
 
 ## 関連トピック
 
-* [オブジェクトAPIの基本](./object-api-basics.md)
-* [`nestedFields` を使って関連するエントリーをクエリーする。](./using-nestedfields-to-query-related-entries.md)
-* [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md)
+* [オブジェクトAPIの基礎](./object-api-basics.md) 
+* [`nestedFields` を使った関連エントリーのクエリー](./using-nestedfields-to-query-related-entries.md) 
+* [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md) 

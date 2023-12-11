@@ -1,190 +1,221 @@
 # ページ単位での設定
 
-お客様のニーズに合わせて、個々のページを設定することができます。 この方法で行われたすべての変更は、選択されたページに範囲設定されます。
+個々のページをニーズに合わせて設定することができます。 この方法で行われたすべての変更は、選択されたページにスコープされます。
 
-ページの設定は、 **サイトメニュー** から ［**サイトビルダー**］ &rarr; ［**Pages**］ へ移動して行います。 次に、カスタマイズしたいページの **アクション** ボタン(![Actions button](../../../images/icon-staging-bar-options.png)）をクリックし、 ［**Configure**］ を選択してください。
+特定のページを設定するには、_サイトメニュー_ (![サイトメニュー](../../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ページ_に進みます。 次に、カスタマイズしたいページの_Actions_ (![Actionsボタン](../../../images/icon-staging-bar-options.png))をクリックし、_Configure_を選択します。
 
-![カスタマイズするページのアクションボタンをクリックし、［設定］を選択します](./configuring-individual-pages/images/01.png)
+![Click the Actions button for the page you want to customize, and select Configure](./configuring-individual-pages/images/01.png)
 
-または、カスタマイズするページに移動して、 **アプリケーションバー** の右上にある **ページ設定** ボタン(![Configure Page Button](./../../../images/icon-cog.png)）をクリックして、個々のページ設定にアクセスすることもできます。
+または、アプリケーションバーの右上にある_Actions_ (![Actionsボタン](./../../../images/icon-staging-bar-options.png))をクリックして、一般的なページ設定にアクセスすることもできます。 &rarr; アプリケーション・バーの右上にある_Configuration_ (![Configurationボタン](./../../../images/icon-cog.png))をクリックします。
 
 これらの設定は、以下のタブに整理されています。
 
-* [共通](#general)
-* [SEO](#seo)
-* [Open Graph](#open-graph)
-* [カスタムメタタグ](#custom-meta-tags)
+* [一般](#general) 
+* [デザイン](#design) 
+* [SEO](#seo) 
+* [オープングラフ](#open-graph) 
+* [カスタム・メタタグ](#custom-meta-tags) 
 
 ```{note}
-これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 [Introduction to Localization](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) と [Modifying Localizable Site Fields](../../site-settings/site-localization.md#modifying-localizable-site-fields) で、より詳細な情報をご覧下さい。
+これらの設定の多くは、ユーザーのロケールに応じた翻訳を提供するためにローカライズすることができます。 詳しくは、 [初期インスタンスのローカライズ](../../../installation-and-upgrades/setting-up-liferay/initial-instance-localization.md) および [ローカライズ可能なサイト・フィールドの変更](../../site-settings/site-localization.md#modifying-localizable-site-fields) を参照してください。
 ```
+## 共通
 
-## 一般
+ここでは、ページの名前、フレンドリーURL、レイアウトなどの基本情報を設定できます。
 
-ページ名、フレンドリURL、レイアウトなど、ページの基本的な情報やデザインを設定することができます。
+### 基本情報
 
-### 名前とフレンドリURL
+nameフィールドを使用して、サイトナビゲーションに使用され、ブラウザのタイトルバーに表示されるページのタイトルを設定します。 ページ階層を表示するように設定されている場合、ページをメニュー表示から隠すことができる。 有効化しても、他のナビゲーション・メニューに追加された場合、隠しページは表示されます。 詳しくは、 [サイトナビゲーションの管理](./../../site-navigation/managing-site-navigation.md) をご覧ください。
 
-［Name］フィールドを使用して、ブラウザのタイトルバーに表示される、サイトナビゲーションのページタイトルを設定します。 また、［Friendly URL］フィールドを使用してページの新しいURLを設定するか、 **復元** アイコン ( ![Friendly URL Restore icon](./../../../images/icon-restore.png) ) をクリックして、以前に使用したURLを表示して復元します。 詳細については、 [ページのフレンドリURLの設定](./configuring-your-pages-friendly-url.md) を参照してください。
+![Use the name field to set the page's title and check the checkbox to hide it from menu display.](./configuring-individual-pages/images/02.png)
 
-![ページのタイトルを設定するには、［名前］フィールドを使用します。](./configuring-individual-pages/images/02.png) ![フレンドリURLフィールドを使用して、ページのカスタムURLを設定します。](./configuring-individual-pages/images/03.png)
+```{note}
+子ページは親ページの可視性を継承します。 また、隠しページはデフォルトのナビゲーション・メニューには表示されないが、他の作成されたナビゲーション・メニューには表示することができる。
+```
+### URL
+
+また、_復元_アイコン(![フレンドリーURL復元アイコン](./../../../images/icon-restore.png))をクリックすると、以前に使用したURLが表示され、復元されます。 詳細については、 [Configuring Your Page's Friendly URL](./configuring-your-pages-friendly-url.md) を参照してください。
+
+他のパラメータが指定されていない場合、ページのデフォルト・パラメータを設定するには _Query String_ を使用します。 クエリー文字列は、ウェブ・コンテンツ・テンプレートに大きな利点をもたらします。 さらに、新しいタブで開く、特定のフレーム内で開くなどの属性を持つTarget Typeフィールドを使って、ページリンクの動作をコントロールすることができます。
+
+![Use the Friendly URL field to set a page's custom URL.](./configuring-individual-pages/images/03.png)
 
 ```{tip}
-ページの名前とフレンドリURLは、ページ作成時に一緒に定義されますが、その後は別々に設定されます。 両者が一致するように、一緒に更新するのがベストプラクティスです。
+ページの名前とフレンドリーURLはページ作成時に一緒に定義されますが、その後は個別に設定されます。 両者が一致するように、一緒に更新するのがベストプラクティスです。
 ```
-
-### メニュー表示
-
-メニュー表示ウィジェットやページ階層を表示するフラグメントから、ページを非表示にすることができます。 この機能を有効にすると、非表示のページを他のナビゲーションメニューに追加すると、他のナビゲーションメニューに表示できます。 詳しくは、 [Configuring Site Navigation](./../../site-navigation/managing-site-navigation.md) を参照してください。
-
 ### ページレイアウト
 
-グローバルテンプレートを使用して作成された基本ウィジェットページ(ブログ、Wiki、検索など）の場合、グローバルテンプレートに加えられた **変更をページが継承** するかどうかを確認します。 ページが変更を継承しない場合、カスタムレイアウトを選択して、そのウィジェットの行と列のコンテナを定義します。
+レイアウトテンプレートは、ウィジェットページのどこにウィジェットを配置できるかを指示します。 グローバルテンプレートまたはカスタムページテンプレートのいずれかを使用して作成された基本的なウィジェットページに対して、ユーザーは、選択されたテンプレートに行われた変更をページが_継承_するかどうかを決定することができます。 ページが変更を継承しない場合は、カスタムレイアウトを選択して、ウィジェットの行と列のコンテナを定義します。
 
-![レイアウトテンプレートを選択し、ウィジェットの行と列のコンテナを定義します。](./configuring-individual-pages/images/05.png)
+![Select a layout template to define row and column containers for widgets.](./configuring-individual-pages/images/04.png)
 
-### カテゴリ設定
+### カテゴリー設定
 
-**トピック** と **タグ** を使ってページのコンテンツを分類し、ユーザーがより簡単にコンテンツを探せるようにします。 タグとカテゴリの使用の詳細は、[カテゴリとタグを使用したコンテンツの整理](../../../content-authoring-and-management/tags-and-categories.md)を参照してください。
+*トピック*と*タグ*を使ってページのコンテンツを分類し、ユーザーがより簡単に見つけられるようにしましょう。 タグとカテゴリの使用の詳細は、 [カテゴリとタグを使用したコンテンツの整理](../../../content-authoring-and-management/tags-and-categories.md) を参照してください。
 
-### ルック&フィール
+![Use Topics and Tags to categorize a page's content](./configuring-individual-pages/images/05.png)
 
-ここでは、ページセットのテーマ設定を使用すること、もしくはページの独自のルック＆フィールを定義することができます。 ページのテーマをカスタマイズする場合、様々なテーマ設定を切り替えることができます。
+### カスタマイズの設定
 
-また、CSSエディタにアクセスし、ページにカスタムCSSコードを追加することができます。 この方法でページに追加されたCSSコードは、テーマの後に読み込まれます。
+ウィジェット・ページのカラムがユーザーのために_カスタマイズ可能_であるかどうかを決定する。 カスタマイズが有効な場合、ユーザーがカスタマイズできる列を指定します。 詳細については、 [ウィジェット・ページのユーザー・パーソナライズを有効にする](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) を参照のこと。
 
-![ページセットのテーマ設定を使用するか、ページ独自のルック＆フィールを定義するかを決定します。](./configuring-individual-pages/images/07.png)
+![Determine whether users can customize a widget page.](./configuring-individual-pages/images/06.png)
+
+## デザイン
+
+ここでは、ページのテーマを設定し、そのデザイン、CSS、JavaScriptをカスタマイズすることができます。 このエディターには、 [ページセットの設定ページ](../../creating-pages/page-settings/configuring-page-sets.md) からもアクセスできる。
+
+### テーマ
+
+ここでは、ページセットのテーマ設定を使用するか、ページのカスタムテーマを定義することができます。 ページのテーマをカスタマイズすることを選択すると、様々なテーマ設定を切り替えることができる。
+
+![Determine whether to use the page set's theme settings or define a custom theme for your page.](./configuring-individual-pages/images/07.png)
+
+### 基本設定
+
+ここでは、ページのデザインシステムやスタイリングの一部を素早く簡単に変更することができます。
+
+**ファビコン**:テーマから適用されるデフォルトのファビコンを変更します。
+
+**マスター**：マスターページのテンプレートを変更します。 詳しくは [マスターページテンプレート](../../creating-pages/defining-headers-and-footers/master-page-templates.md) をご覧ください。
+
+**スタイルブック**：テーマから適用されるデフォルトのスタイルブックを変更します。 詳しくは [Using a Style Book to Standardize Site Appearance](../../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を参照してください。
+
+**アイコンです**：サイトのナビゲーションメニューでページ名と一緒に表示するアイコンを選択します。
+
+![Determine the favicon, master page template, style book and icon for your page.](./configuring-individual-pages/images/08.png)
 
 ```{note}
-ウィジェットページがここに*ルック&フィール*タブを含むのに対し、コンテントページは*編集*サイドバーメニューにこれらの設定を含みます。
+コンテンツページには、サイドバーの編集メニューのページデザインオプション（![ページデザインオプションアイコン](./../../../images/icon-format.png)）にあるマスターとスタイルブックの設定も含まれます。
+```
+
+### カスタマイズ
+
+また、ページにカスタムコードを追加できるCSSエディターやJavaScriptエディターにもアクセスできる。
+
+**テーマCSSクライアント拡張:** [テーマCSSクライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) を追加して、テーマに含まれるデフォルトCSSを完全に置き換えます。
+
+**CSSクライアント拡張:** [CSSクライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) を追加して、ページのCSSをクライアント拡張で拡張する。 これらはテーマCSSの後、マスターエクステンションの後にロードされます。
+
+**カスタムCSS:** カスタムCSSを適用することができ、テーマの後に読み込まれます。
+
+**JavaScriptクライアント拡張とカスタムJavaScript:** [JavaScriptクライアント拡張](../../../building-applications/client-extensions/front-end-client-extensions.md#javascript-client-extensions) を追加することで、このマスターページテンプレートを使用したページが訪問されたときにJavaScriptを実行させることができます。 カスタムJavaScriptコードも追加でき、ページ下部で実行される。
+
+![Use CSS and JavaScript editors to add custom code to the page](.//configuring-individual-pages/images/09.png)
+
+```{tip}
+あなたのサイトのテーマがJavaScriptを使用している場合、個々のページやページセットではなく、テーマにカスタムJavaScriptコードを追加するのが最善です。 これにより、あなたのサイトのJavaScriptコードが一箇所に留まるようになります。 あなたのテーマがJavaScriptを使用していない場合、あなたのサイトのすべてのJavaScriptコードをここに置きます。
 ```
 
 ### 詳細設定
 
-検索文字列、 [モバイルデバイスのルール](../../optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md)、カスタムフィールド、埋め込みウィジェットなど、ページのコンテンツや機能をカスタマイズするための追加設定にアクセスできます。
+ページのコンテンツや機能をカスタマイズするための追加設定にアクセスします。
+
+**カスタムフィールド**サイトページ用に定義したカスタムフィールドを表示および設定します。 詳細については、 [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md) を参照してください。
+
+**埋め込みウィジェット**： [Web Content Templates](./../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md) , [Page Fragments](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) , または [Themes](../../site-appearance/themes/introduction-to-themes.md) を使ってページに埋め込んだウィジェットにアクセスします。
+
+**モバイル・デバイス・ルール**：ページがそのページセットのモバイルデバイス用 [ルール](../../../site-building/optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md) を使用しているか、独自に設定されているかを判断します。 これらのルールは、ページのコンテンツがさまざまなタイプのモバイルデバイスでどのように表示されるかを決定します。
 
 ```{note}
-ウィジェットページには［詳細設定］タブがありますが、コンテントページには編集サイドバーメニューの*ルック＆フィール*の下にこれらの設定項目があります。
+カスタムフィールド*と埋め込みウィジェット*セクションは、ページにカスタムフィールドと埋め込みウィジェットを作成した場合にのみ表示されます。
 ```
-
-**検索文字列** ：ページに他のパラメータが存在しない場合、デフォルトのパラメータを提供するために使用します。 検索文字列は、webコンテンツテンプレートに役立ちます。
-
-**ターゲット** ：このフィールドを使用して、新しいウィンドウ、タブ、またはフレームセットでリンクを開くなど、特定のターゲット属性を使用してページリンクの動作を決定します。
-
-**アイコン** ： サイトのナビゲーションメニューでページ名と一緒に表示されるアイコンを選択します。
-
-**JavaScript** : ページにJavaScriptのコードを追加します。 追加されたコードは、ページの一番下で実行されます。 また、ページセットの **設定** ページでもこのエディターにアクセスすることができます。
-
-```{tip}
-サイトのテーマがJavaScriptを使用している場合、個々のページやページセットではなく、テーマにカスタムJavaScriptコードを追加することが最善です。 これにより、サイトのJavaScriptコードを一カ所にまとめることができます。 JavaScriptを使用しないテーマの場合、ここにサイトのすべてのJavaScriptコードを配置します。
-```
-
-**モバイルデバイスルール** ：ページがモバイルデバイスのためにそのページセットのルールを使用するか、独自に設定されているかを判断します。 これらのルールは、ページのコンテンツがさまざまな種類のモバイルデバイスでどのように表示されるかを決定します。
-
-**カスタマイズの設定** ：ウィジェットページのカラムをユーザー向けに **カスタマイズ可能** にするかどうかを決定します。 カスタマイズが有効な場合、ユーザーがカスタマイズできる列を指定します。 詳しくは、 [Personalizing Pages](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) を参照してください。
-
-![ユーザーがウィジェットページをカスタマイズできるかどうかを判断します。](./configuring-individual-pages/images/12.png)
-
-**カスタムフィールド** ：サイトページに定義した **カスタムフィールド** を表示、設定します。 詳細については、 [Custom Fields](../../../system-administration/configuring-liferay/adding-custom-fields.md)を参照してください。
-
-**埋め込みウィジェット** ：Webコンテンテンツテンプレート、ページフラグメント、またはテーマを使用してページに埋め込んだウィジェットにアクセスできます。
-
-```{note}
-*カスタムフィールド*と*埋め込みウィジェット*のセクションは、カスタムフィールドと埋め込みウィジェットをページに作成した場合にのみ表示されます。
-```
-
 ## SEO
 
-検索エンジン最適化(SEO）とは、検索エンジン結果ページ(SERP）におけるページの順位を向上させるために用いられる手法のことを指します。 ［SEO］タブでは、ページのコンテンツを最適化するための設定に簡単にアクセスできます。 以下の設定については、[SEOとOpen Graphを設定する](../../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md)を参照してください。
+検索エンジン最適化（SEO）とは、検索エンジンの結果ページ（SERP）におけるページの順位を向上させるために使用される方法を指します。 SEOタブでは、ページのコンテンツを最適化するための設定に簡単にアクセスできます。 以下の設定については、 [SEOとOpen Graphを設定する](../../displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md) を参照してください。
 
 ### HTMLタイトル
 
-HTMLタイトルフィールドを使用して、ページの `<title>` タグを定義してください。 このタイトルは、検索エンジンがあなたのページをランク付けするために使用され、検索エンジンの結果でページの見出しとして機能しますが、ページの [名前](#name-and-friendly-url) を置き換えることはありません。 HTMLタイトルの推奨される長さは 60 文字未満です。
+HTMLのタイトルフィールドを使って、ページの`<title>`タグを定義する。 このタイトルは、検索エンジンがあなたのページをランク付けするために使用され、検索エンジンの結果でページの見出しとして機能しますが、ページの [名前](#name-and-friendly-url) を置き換えることはありません。 HTMLタイトルの推奨される長さは 60 文字未満です。
 
 ### 説明
 
-説明文フィールドを使用して、ページの`<description>`タグを定義してください。 この説明文は、検索エンジンがあなたのページをランク付けするために使用され、あなたのページの検索結果のプレビューにも表示されます。 説明文の推奨される長さは155文字未満です。
+descriptionフィールドを使って、ページの`<description>`タグを定義する。 この説明文は、検索エンジンがあなたのページをランク付けするために使用され、あなたのページの検索結果のプレビューにも表示されます。 説明文の推奨される長さは155文字未満です。
 
 ### カスタム正規化URL
 
-ページのカスタム正規化URLを設定します。 この方法で設定されたカスタムURLは、グローバルレベルやインスタンスレベルの設定より優先されます。
+ページのカスタムカノニカルURLを設定する。 この方法で設定されたカスタムURLは、システム設定の設定よりも優先されます。
 
 ### キーワード
 
-あなたのページのコンテンツを検索するときに使われる可能性の高い単語をリストアップします。 これらのキーワードは、あなたのページのランキングに貢献します。
+あなたのページのコンテンツを検索する際に、人々が使いそうな単語をリストアップする。 これらのキーワードは、あなたのページのランキングに貢献します。
 
 ```{tip}
-タイトル、見出し、説明文、段落、画像のaltテキストなど、ページのコンテンツ全体にキーワードを頻繁に使用します。
+タイトル、見出し、説明文、段落、画像のaltテキストなど、ページのコンテンツ全体にキーワードを頻繁に使用しましょう。
 ```
+![Set the page's HTML title, description, custom canonical URL and keywords to improve your page's ranking in Search Engine Results Pages (SERP)](./configuring-individual-pages/images/10.png)
 
-### SERPプレビュー
+### プレビュー
 
-HTMLタイトル、説明文、カスタムURLの設定に基づき、検索エンジンの結果ページ(SERP）でページがどのように表示されるかをプレビューします。
+HTMLタイトル、説明文、カスタムURLの設定に基づいて、検索エンジンの結果ページ（SERP）にページがどのように表示されるかをプレビューします。
 
-![検索エンジンの検索結果にページがどのように表示されるかをプレビューします。](./configuring-individual-pages/images/13.png)
+![Preview how a page is displayed in search engine results.](./configuring-individual-pages/images/11.png)
 
 ### ロボット
 
-`robots.txt` のルールをページに設定します。 このルールは、検索エンジンやその他のツールがお客様のサイトをクロールし、インデックスする際に、クローラーが指定したパスにアクセスすることをブロックしたり、許可したりする指示を与えるものです。
+ページの `robots.txt` ルールを設定する。 これらのルールは、検索エンジンやその他のツールがあなたのサイトをクロールしたりインデックスを作成したりする際に、クローラーが指定したパスにアクセスすることをブロックしたり許可したりする指示を与えるものです。
+
+![Configure robots.txt rules for your page to provide instructions to search engines](./configuring-individual-pages/images/12.png)
 
 ### サイトマップ
 
-サイトクローラーが使用するサイトマップにページが含まれているかどうかを判定します。 ページを除外することで、サイトクローラーがあなたのサイトをクロールしインデックスする際に、そのページをスキップするように指示します。
+サイトクローラーが使用するサイトマップにページが含まれているかどうかを判断する。 ページを除外することで、サイトのクローラーがクロールやインデックスを作成する際に、そのページをスキップするように指示します。
 
 ### ページの優先度
 
-ページの優先順位を0.0から1.0まで設定します。 これは、サイトをクロールしインデックスするツールに、サイト内の他のページに対するページの優先順位を通知するものです。
+ページの優先順位を0.0から1.0に設定する。 これは、クロールやインデックスを作成するツールに、あるページがサイト内の他のページと比較してどのように優先されるべきかを知らせるものです。
 
 ### 定期更新
 
-ドロップダウンメニューを使用すると、サイトのクロールとインデックスするツールに、ページの更新頻度を知らせることができます。
+ドロップダウンメニューを使用して、あなたのサイトをクロールおよびインデックスしているツールに、ページの更新頻度を知らせます。
+
+![Determine if the page is included in the sitemap, and set its page priority and change frequency](./configuring-individual-pages/images/13.png)
 
 ## Open Graph
 
-> 対応可能：Liferay DXP/Portal 7.3以降
+{bdg-secondary}`利用可能です：Liferay DXP/Portal 7.3+`.
 
-[Open Graph](https://ogp.me/) は、Facebook、Slack、Twitterなどのアプリケーションコンテキストで共有する際に、サイトコンテンツのプレビューを標準化するインターネットプロトコルです。 これは、 `<meta>` タグとしてページヘッダーに構造化データを埋め込むことで、 [RDFa](https://en.wikipedia.org/wiki/RDFa) と同じように実現します。
+[Open Graph](https://ogp.me/) は、Twitter、Facebook、LinkedInなどのアプリケーション・コンテキストで共有されるサイト・コンテンツのプレビューを標準化するインターネット・プロトコルである。 これは、 [RDFa](https://en.wikipedia.org/wiki/RDFa) と同様に、構造化データをページヘッダーに `<meta>` タグとして埋め込むことで実現する。
 
-［**Open Graph**］ タブでは、Open Graph `<meta>` タグを使ってページのメタデータを定義し、コンテンツの魅力を表現することが可能です。 ここで定義された値は、[サイト](../../site-settings/configuring-open-graph.md)レベルで定義されたデフォルト値をオーバーライドします。
+*Open Graph*タブでは、Open Graph `<meta>`タグを使用してページのメタデータを定義し、コンテンツの魅力的な表現を作成することができます。 ここで定義された値は、 [サイト](../../site-settings/configuring-open-graph.md) レベルで定義されたデフォルト値をオーバーライドする。
 
 ```{note}
-Open Graph `<meta>` タグは、認証されていないユーザーに対してのみ、ページヘッダーに含まれます。 ユーザーがログインしているときは含まれません。
+オープングラフ<meta>タグは、認証されていないユーザーにはページヘッダーにのみ含まれます。 ユーザーがログインしているときは含まれない。
 ```
-
 ### 画像
 
-画像フィールドを使用して、ページに対して以下のOpen Graph `<meta>` プロパティを定義することができます。
+画像フィールドを使用して、ページに対して以下のオープングラフ `<meta>` プロパティを定義します：
 
-   ```html
-   <meta property="og:image" content="http://example.com/ogp.jpg" />
-   <meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
-   <meta property="og:image:type" content="image/jpeg" />
-   <meta property="og:image:width" content="400" />
-   <meta property="og:image:height" content="300" />
-   ```
+```html
+<meta property="og:image" content="http://example.com/ogp.jpg" />
+<meta property="og:image:secure_url" content="https://secure.example.com/ogp.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="300" />
+```
 
 ### 画像の別の説明
 
-ページの `og:image:alt` プロパティを定義するには、画像の別の説明フィールドを使用してください。 ［**言語フラグ**］ ボタンを使用して画像の別の説明をローカライズすることもできます。
+`og:image:alt`プロパティを定義するには、画像のalt説明フィールドを使います。 また、_言語フラグ_ボタンを使って画像のalt説明をローカライズすることもできます。
 
 ### カスタムタイトルと説明文
 
-`og:title` と `og:description` のプロパティを定義するには、タイトルと説明フィールドを使ってください。 これらのプロパティは、ページのHTMLタイトルと説明の代わりに、リッチプレビューに使用されるカスタムテキストを作成します。 また、これらの値は、 ［**言語フラグ**］ ボタンでローカライズすることができます。
+`og:title`と`og:description`プロパティを定義するには、カスタムタイトルとカスタム説明フィールドを使用します。 これらのプロパティは、ページのHTMLタイトルと説明文の代わりにリッチプレビューに使用されるカスタムテキストを作成します。 これらの値は、_言語フラグ_ボタンを使ってローカライズすることもできます。
 
 ### Open Graphのページ表示のプレビュー
 
-ページのOpen Graph設定をプレビューします。 このセクションでは、プロトコルをサポートするコンテキストでURLが共有されたときに、あなたのページのコンテンツがどのように表示されるかを表示します。 ただし、画像の比率はURLが掲載されている場所によって変わることがあります。
+ページのオープングラフ設定をプレビューする。 このセクションでは、プロトコルをサポートするコンテキストでURLが共有されたときに、ページのコンテンツがどのように表示されるかを表示します。 ただし、画像の比率はURLが掲載されている場所によって変わることがあります。
 
-![Open Graphの設定をプレビューします。](./configuring-individual-pages/images/23.png)
+![Preview your Open Graph configuration.](./configuring-individual-pages/images/14.png)
 
 ## カスタムメタタグ
 
-ここでは、ページの `<head>` にカスタム `<meta>` タグを追加することができます。 これらのタグは、ページのHTMLソースコードにのみ表示され、ページのデータを記述し、そのデータが検索エンジンの結果やソーシャルメディアの投稿など、さまざまなコンテキストでどのように表示されるかを決定するために使用されます。 各タグはプロパティ属性とコンテンツ属性で定義されます。
+ここでは、カスタム`<meta>`タグをページの`<head>`に追加することができます。 これらのタグは、ページのHTMLソースコードにのみ表示され、ページのデータを記述し、そのデータが検索エンジンの結果やソーシャルメディアへの投稿など、さまざまなコンテキストでどのように表示されるかを決定するために使用されます。 各タグはプロパティ属性とコンテンツ属性で定義されます。
 
-![プロパティとコンテンツ項目を使用して、ページの見出しにカスタムメタタグを追加します。](./configuring-individual-pages/images/24.png)
+![Add custom meta tags to a page's head using the Property and Content fields.](./configuring-individual-pages/images/15.png)
 
 ## 関連トピック
 
-* [サイトにページを追加する](./../adding-pages/adding-a-page-to-a-site.md)
-* [コンテントページの使用](../using-content-pages.md)
-* [ページセットの構成](./configuring-page-sets.md)
+* [サイトへのページの追加](./../adding-pages/adding-a-page-to-a-site.md) 
+* [コンテンツページの使用](../using-content-pages.md) 
+* [ページ・セットの設定](./configuring-page-sets.md) 

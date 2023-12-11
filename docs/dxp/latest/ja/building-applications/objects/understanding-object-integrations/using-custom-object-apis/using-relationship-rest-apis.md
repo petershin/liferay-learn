@@ -1,6 +1,6 @@
 # 関連REST APIの利用
 
-{bdg-secondary}`Liferay 7.4 U70+/GA70+`
+{bdg-secondary}`Liferay 7.4 U70+/GA70+`.
 
 カスタムオブジェクトやシステムオブジェクトに関連を追加すると、Liferayはそれらの関連にアクセスするためのRESTエンドポイントを生成します。 エントリーの関連付けや関連付けの解除、エントリーの関連エントリーを返すことができます。 これらのエンドポイントは、1対多の関連では親オブジェクトに、多対多の関連では両方のオブジェクトに追加されます。
 
@@ -11,78 +11,77 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、[create](../../creating-and-managing-objects/creating-objects.md) 関連する3つのカスタム・オブジェクトを作成します：
+次に、 [](../../creating-and-managing-objects/creating-objects.md) 関連する3つのカスタム・オブジェクトを作成する：
 
-1. [グローバルメニュー](../../../../../images/icon-applications-menu.png) )を開き、 [コントロールパネル](**Control Panel**) タブに移動し、 [オブジェクト](**Objects**) をクリックします。
+1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
 
-1. オブジェクトドラフトを3つ作成する。
+1. 3つのオブジェクトドラフトを作成します。
 
-    最初のオブジェクト:
+   最初のオブジェクト：
 
-    | フィールド | 値 |
-    | :--- | :--- |
-    | ラベル | `有能` |
-    | 複数のラベル | `エイブル` |
-    | 名前 | `有能` |
+   | 項目      | 値       |
+   | :------ | :------ |
+   | ラベル     | `Able`  |
+   | 複数形のラベル | `Ables` |
+   | 名前      | `Able`  |
 
-    2 番目のオブジェクト:
+   第二の目的
 
-    | フィールド | 値 |
-    | :--- | :--- |
-    | ラベル | `ベイカー` |
-    | 複数のラベル | `パン屋` |
-    | 名前 | `ベイカー` |
+   | 項目      | 値        |
+   | :------ | :------- |
+   | ラベル     | `Baker`  |
+   | 複数形のラベル | `Bakers` |
+   | 名前      | `Baker`  |
 
-    3 番目のオブジェクト:
+   第3の目的
 
-    | フィールド | 値 |
-    | :--- | :--- |
-    | ラベル | チャーリー |
-    | 複数のラベル | チャーリーズ |
-    | 名前 | チャーリー |
+   | 項目      | 値          |
+   | :------ | :--------- |
+   | ラベル     | `Charlie`  |
+   | 複数形のラベル | `Charlies` |
+   | 名前      | `Charlie`  |
 
-1. 各オブジェクトのドラフトに「name」フィールドを追加します。
+1. 各オブジェクトドラフトに以下の`name`フィールドを追加します。
 
-    | ラベル | フィールド名 | タイプ | 必須 |
-    | :--- | :--- | :--- | :--- |
-    | `名前` | `名前` | テキスト | &#10004; |
+   | ラベル    | 項目名    | 種類       | 必須       |
+   | :----- | :----- | :------- | :------- |
+   | `Name` | `name` | テキストボックス | &#10004; |
 
-1. 次の関係をableオブジェクトに追加します。
+1. これらの関係をableオブジェクトに追加する：
 
-    | ラベル | 関係名 | タイプ | オブジェクト |
-    | :--- | :--- | :--- | :--- |
-    | `パン屋ができる` | `ableToBaker` | 1 対多 | ベイカー |
-    | 「チャーリーできる」 | `ableToCharlie` | 1 対多 | チャーリー |
+   | ラベル               | リレーション名         | 種類   | オブジェクト |
+   | :---------------- | :-------------- | :--- | :----- |
+   | `Able to Baker`   | `ableToBaker`   | 1 対多 | ベーカー   |
+   | `Able to Charlie` | `ableToCharlie` | 1 対多 | チャーリー  |
 
-1. 各オブジェクトを [発行](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) する。
+1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 各オブジェクト。
 
-公開されると、以下のリレーションシップAPIを含むREST APIにアクセスできるようになります：
+公開されると、以下のリレーションシップAPIを含むREST APIにアクセスできる：
 
-| Object  | HTTP Method | HTTP Endpoint                                                      | Java Method                       |
-|:--------|:------------|:-------------------------------------------------------------------|:----------------------------------|
-| Able    | GET         | `/{ableId}/ableToBaker`                                            | `getAbleAbleToBakerBakerPage`     |
-| Able    | GET         | `/{ableId}/ableToCharlie`                                          | `getAbleAbleToCharlieCharliePage` |
-| Able    | DELETE      | `/{ableId}/ableToBaker/{bakerId}`                                  | `deleteAbleAbleToBakerBaker`      |
-| Able    | PUT         | `/{ableId}/ableToBaker/{bakerId}`                                  | `putAbleAbleToBakerBaker`         |
-| Able    | DELETE      | `/{ableId}/ableToCharlie/{charlieId}`                              | `deleteAbleAbleToCharlieCharlie`  |
-| Able    | PUT         | `/{ableId}/ableToCharlie/{charlieId}`                              | `putAbleAbleToCharlieCharlie`     |
-| Able    | PUT         | `/by-external-reference-code/{ableERC}/ableToBaker/{bakerERC}`     | `putAbleAbleToBakerBaker`         |
-| Able    | PUT         | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putAbleAbleToCharlieCharlie`     |
-| Charlie | GET         | `/{charlieId}/ableToCharlie`                                       | `getCharlieAbleToCharlieAblePage` |
-| Charlie | DELETE      | `/{charlieId}/ableToCharlie/{ableId}`                              | `deleteCharlieAbleToCharlieAble`  |
-| Charlie | PUT         | `/{charlieId}/ableToCharlie/{ableId}`                              | `putCharlieAbleToCharlieAble`     |
-| Charlie | PUT         | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putCharlieAbleToCharlieAble`     |
+| オブジェクト | HTTP メソッド | HTTPエンドポイント                                                        | Javaメソッド                          |
+| :----- | :-------- | :----------------------------------------------------------------- | :-------------------------------- |
+| エイブル   | GET       | `/{ableId}/ableToBaker`                                            | `getAbleAbleToBakerBakerPage`     |
+| エイブル   | GET       | `/{ableId}/ableToCharlie`                                          | `getAbleAbleToCharlieCharliePage` |
+| エイブル   | DELETE    | `/{ableId}/ableToBaker/{bakerId}`                                  | `deleteAbleAbleToBakerBaker`      |
+| エイブル   | PUT       | `/{ableId}/ableToBaker/{bakerId}`                                  | `putAbleAbleToBakerBaker`         |
+| エイブル   | DELETE    | `/{ableId}/ableToCharlie/{charlieId}`                              | `deleteAbleAbleToCharlieCharlie`  |
+| エイブル   | PUT       | `/{ableId}/ableToCharlie/{charlieId}`                              | `putAbleAbleToCharlieCharlie`     |
+| エイブル   | PUT       | `/by-external-reference-code/{ableERC}/ableToBaker/{bakerERC}`     | `putAbleAbleToBakerBaker`         |
+| エイブル   | PUT       | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putAbleAbleToCharlieCharlie`     |
+| チャーリー  | GET       | `/{charlieId}/ableToCharlie`                                       | `getCharlieAbleToCharlieAblePage` |
+| チャーリー  | DELETE    | `/{charlieId}/ableToCharlie/{ableId}`                              | `deleteCharlieAbleToCharlieAble`  |
+| チャーリー  | PUT       | `/{charlieId}/ableToCharlie/{ableId}`                              | `putCharlieAbleToCharlieAble`     |
+| チャーリー  | PUT       | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putCharlieAbleToCharlieAble`     |
 
 ```{tip}
-サイトと会社のオブジェクトのために生成されたAPIの完全なリストは、[Objects Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md)を参照してください。カスタムオブジェクト API は Liferay API Explorer で `[server]:[port]/o/api` (例：`localhost:8080/o/api`) から確認、テストすることができます。REST Applications* をクリックし、API を選択します。
+サイトオブジェクトとカンパニーオブジェクト用に生成されたAPIの完全なリストについては、 [Objects Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md) を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 *RESTアプリケーション*をクリックし、APIを選択します。
 ```
-
 ## サンプルコードを準備する
 
 以下のコマンドを実行し、提供されたサンプルコードをダウンロードし、解凍してください：
 
 ```bash
-curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-f9m2.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/understanding-object-integrations/using-custom-object-apis/liferay-f9m2.zip -O
 ```
 
 ```bash
@@ -95,13 +94,13 @@ unzip liferay-f9m2.zip
 
 REST APIを使用して、オブジェクトのエントリーを追加し、その関連を管理します。
 
-1. `liferay-f9m2`プロジェクト内の`curl`フォルダに移動します。
+1. liferay-f9m2`プロジェクトの`curl` フォルダに移動します。
 
    ```bash
    cd liferay-f9m2/curl
    ```
 
-1. `POST`コマンドを実行し、各オブジェクトに3つのエントリーを作成します。 これらのエントリーは、 `[objectname]-[number]`の命名パターンに従って、あらかじめ定義された外部参照コード（ERC）を持っています（例： `able-one`)。
+1. `POST`コマンドを実行して、各オブジェクトに3つのエントリーを作成する。 これらのエントリーは、`[objectname]-[number]` という命名パターン（例：`able-one`）に従った、定義済みの外部参照コード（ERC）を持っている。
 
    ```bash
    ./Able_POST_Batch.sh
@@ -115,7 +114,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    ./Charlie_POST_Batch.sh
    ```
 
-1. `Able_PUT_AbleToBaker_ByExternalReferenceCode` を `able-one` ERC と 3 つの baker ERC すべてで実行します。
+1. `able-one`のERCと3つのベーカーERC全てを使って `Able_PUT_AbleToBaker_ByExternalReferenceCode` を実行する。
 
    ```bash
    ./Able_PUT_AbleToBaker_ByExternalReferenceCode.sh able-one baker-one baker-two baker-three
@@ -155,7 +154,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    }
    ```
 
-1. `Able_DELETE_AbleToBaker_ById`に、`able-one`と`baker-three `の 2 つの ID を付けて実行します。
+1. `able-one`の ID と`baker-three`の ID を指定して`Able_DELETE_AbleToBaker_ById` を実行する。
 
    ```bash
    ./Able_DELETE_AbleToBaker_ById.sh {able-entry-id} {baker-entry-id}
@@ -163,7 +162,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
 
    これにより、エントリーの関連付けが解除されます。
 
-1. `Able_GET_AbleToBaker_ById` を同じable IDで実行し、両者の関連性がなくなったことを確認します。
+1. 同じable IDで`Able_GET_AbleToBaker_ById`を実行し、関連性がなくなったことを確認する。
 
    ```bash
    ./Able_GET_AbleToBaker_ById.sh {able-entry-id}
@@ -190,7 +189,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    }
    ```
 
-1. `Able_PUT_AbleToCharlie_ByExternalReferenceCode`を`able-one` ERC と 3 つの charlie ERC すべてで実行します。
+1. `able-one`ERCと3つのcharlie ERCすべてを使って`Able_PUT_AbleToCharlie_ByExternalReferenceCode`を実行する。
 
    ```bash
    ./Able_PUT_AbleToCharlie_ByExternalReferenceCode.sh able-one charlie-one charlie-two charlie-three
@@ -222,7 +221,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    }
    ```
 
-1. `Charlie_GET_AbleToCharlie_ById` に `charlie-one`のIDを付けて実行します。
+1. `Charlie_GET_AbleToCharlie_ById`に `charlie-one` のIDを指定して実行する。
 
    ```bash
    ./Charlie_GET_AbleToCharlie_ById.sh {charlie-entry-id}
@@ -247,7 +246,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    }
    ```
 
-1. `Charlie_PUT_AbleToCharlie_ByExternalReferenceCode` を `charlie-one` および `able-two` ERC で実行します。
+1. `charlie_PUT_AbleToCharlie_ByExternalReferenceCode`を`charlie-one`と`able-two` の ERC で実行する。
 
    ```bash
    ./Charlie_PUT_AbleToCharlie_ByExternalReferenceCode.sh charlie-one able-two
@@ -265,7 +264,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    }
    ```
 
-1. `Charlie_GET_AbleToCharlie_ById` を `charlie-one` のIDで実行し、関連する2つのableエントリーが存在することを確認します。
+1. `Charlie_GET_AbleToCharlie_ById`を`charlie-one`のIDで実行し、関連する2つの可能なエントリーがあることを確認する。
 
    ```bash
    ./Charlie_GET_AbleToCharlie_ById.sh {charlie-entry-id}
@@ -294,60 +293,60 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
    }
    ```
 
-1. `Able_GET_ById`に`able-one`のIDを付けて実行します。
+1. `able-one`の ID を指定して`Able_GET_ById` を実行する。
 
-   ```bash
-   ./Able_GET_ById.sh {able-entry-id}
-   ```
+    ```bash
+    ./Able_GET_ById.sh {able-entry-id}
+    ```
 
-   このコマンドは、`nestedFields`パラメーターを使用して、関連するすべての baker および charlie エントリーを返します。
+    このコマンドは `nestedFields` パラメータを使用して、関連する全てのベーカーとチャーリーのエントリーを返す。
 
-   ```json
-   {
-     "externalReferenceCode" : "able-one",
-     "id" : 42421,
-     ...
-     "ableToCharlie" : [ {
-       ...
-       "externalReferenceCode" : "charlie-one",
-       "id" : 42433,
-       ...
-       "name" : "Charlie 1"
-     }, {
-       ...
-       "externalReferenceCode" : "charlie-two",
-       "id" : 42435,
-       ...
-       "name" : "Charlie 2"
-     }, {
-       ...
-       "externalReferenceCode" : "charlie-three",
-       "id" : 42437,
-       ...
-       "name" : "Charlie 3"
-     } ],
-     "name" : "Able 1",
-     "ableToBaker" : [ {
-       ...
-       "externalReferenceCode" : "baker-one",
-       "id" : 42427,
-       ...
-       "name" : "Baker 1",
-       "r_ableToBaker_c_ableId" : 42421,
-       "r_ableToBaker_c_ableERC" : "able-one"
-     }, {
-       ...
-       "externalReferenceCode" : "baker-two",
-       "id" : 42429,
-       ...
-       "name" : "Baker 2",
-       "r_ableToBaker_c_ableId" : 42421,
-       "r_ableToBaker_c_ableERC" : "able-one"
-     } ]
-   }
-   ```
+    ```json
+    {
+      "externalReferenceCode" : "able-one",
+      "id" : 42421,
+      ...
+      "ableToCharlie" : [ {
+        ...
+        "externalReferenceCode" : "charlie-one",
+        "id" : 42433,
+        ...
+        "name" : "Charlie 1"
+      }, {
+        ...
+        "externalReferenceCode" : "charlie-two",
+        "id" : 42435,
+        ...
+        "name" : "Charlie 2"
+      }, {
+        ...
+        "externalReferenceCode" : "charlie-three",
+        "id" : 42437,
+        ...
+        "name" : "Charlie 3"
+      } ],
+      "name" : "Able 1",
+      "ableToBaker" : [ {
+        ...
+        "externalReferenceCode" : "baker-one",
+        "id" : 42427,
+        ...
+        "name" : "Baker 1",
+        "r_ableToBaker_c_ableId" : 42421,
+        "r_ableToBaker_c_ableERC" : "able-one"
+      }, {
+        ...
+        "externalReferenceCode" : "baker-two",
+        "id" : 42429,
+        ...
+        "name" : "Baker 2",
+        "r_ableToBaker_c_ableId" : 42421,
+        "r_ableToBaker_c_ableERC" : "able-one"
+      } ]
+    }
+    ```
 
-   [ `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md) を参照。 `nestedFields` パラメータの詳細。
+    `nestedFields`パラメータの詳細については、 [Using `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md) を参照のこと。
 
 ## コードを調べる
 
@@ -377,6 +376,6 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
 
 ## 関連トピック
 
-* [ヘッドレスフレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md)
-* [REST APIでネストしたフィールドの使用](./using-nestedfields-to-query-related-entries.md)
-* [オブジェクトリレーションの定義](../../creating-and-managing-objects/relationships/defining-object-relationships.md)
+* [ヘッドレス・フレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md) 
+* [REST APIでネストされたフィールドを使う](./using-nestedfields-to-query-related-entries.md) 
+* [オブジェクトの関係の定義](../../creating-and-managing-objects/relationships/defining-object-relationships.md) 

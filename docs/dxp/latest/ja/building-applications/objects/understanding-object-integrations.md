@@ -28,8 +28,11 @@ understanding-object-integrations/assets-framework-integration.md
 | ユーザー関連データ（UAD） | オブジェクト定義とエントリでユーザー関連データを管理します。 詳細については、 [ユーザーデータの管理（GDPR）](../../users-and-permissions/managing-user-data.md) を参照してください。                                                                                                                                                                                                                                                                                                        |
 | ワークフロー         | オブジェクトのカスタムワークフローを有効にして、オブジェクトエントリの作成、レビュー、公開を指示します。                                                                                                                                                                                                                                                                                                                                                                            |
 
+
 <!-- TASK: Add the following integrations when ready -->
+
 <!-- | Job Scheduler | Use the [Job Scheduler](../core-frameworks/job-scheduler-framework/using-job-scheduler.m) application to run Talend data integration tasks (e.g., bulk imports, data syncs). You can run them manually or schedule them to run at regular intervals. |-->
+
 <!-- | Publications |  | -->
 
 ```{raw} html

@@ -3,10 +3,13 @@ toc:
   - ./liferay-sales-presentations/sales-presentations-new-approach.md
   - ./liferay-sales-presentations/sales-presentations-base-deck.md
   - ./liferay-sales-presentations/sales-presentations-expansion-deck.md
+visibility:
+  - Employee
+  - Partner
 ---
 # Liferayセールス・プレゼンテーションとそのマスター法
 
-**概要**
+**一目瞭然**
 
 * 新セールス・デッキはブランド・メッセージングと一致する
 * 各バーティカルには複数のデッキが用意されている：
@@ -23,10 +26,9 @@ toc:
 アカウント・エグゼクティブやカスタマー・サクセス・マネージャーに役立つ情報が満載です。 そうすることで、正しい、最もインパクトのあるセールストークを準備し、提供することができる。
 
 ```{note}
-* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) からダウンロードしてください。
+* このモジュールのライブ・ワークショップの [録画](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) をご覧ください。
+* ライブ・ワークショップで使用されたプレゼンテーションの [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) をダウンロードしてください。
 ```
-
 ## 古いセールス・デッキの課題
 
 Liferayの製品は2004年以来、常に進化し続けている。 同時に、製品の変化、顧客のニーズや要求の進化に伴い、Liferayのセールスアプローチも進化してきました。
@@ -54,7 +56,7 @@ Liferayの製品は2004年以来、常に進化し続けている。 同時に�
 
 新しいアプローチと新しいデッキを取り上げる前に、デジタル・エクスペリエンス・プラットフォームのような複雑な企業向けソリューションを、技術者以外の聴衆に効果的に売り込む方法を理解することが重要である。
 
-複雑なソフトウェア・ソリューションについて話すとき、機能性や特徴についての詳細がわからなくなりがちだ。  さらに、通常は複雑な統合の問題を検討し、解決しなければならず、顧客のさまざまな部門や人々の要求に対応する必要がある。
+複雑なソフトウェア・ソリューションの話をするとき、機能や特徴についての詳細がわからなくなりがちだ。  さらに、通常は複雑な統合の問題を検討し、解決しなければならず、クライアントのさまざまな部門や人々の要求に対応する必要がある。
 
 セールスを勝ち取る能力を何よりも左右するのは、エグゼクティブ・プロジェクト・スポンサーと経済的意思決定者のビジネス目標に合致し、Liferayソリューションをバリューに位置づけることができることです。
 
@@ -93,7 +95,7 @@ Liferayには非常に多くの機能があり、様々な問題を解決する�
 
 ## 能力をビジネス価値に合わせる
 
-![一般的なクライアントの目的は、顧客満足度の向上、顧客獲得数の増加、収益の増加の3つである。](./liferay-sales-presentations/images/01.png)
+![Three common client objectives are to improve customer satisfaction, grow customer acquisition, and increase revenue.](./liferay-sales-presentations/images/01.png)
 
 クライアントがソリューションに期待するビジネス成果をより深く理解することで、Liferayの機能をその目標に合わせることができます。 共通の目的は3つある：
 
@@ -130,4 +132,4 @@ Liferayには非常に多くの機能があり、様々な問題を解決する�
 
 Liferayのすべての特徴と機能はソリューション構築の重要な要素ですが、まずそれぞれの見込み客が直面しているビジネス上の課題と、望ましいビジネス上の成果に焦点を当てることが重要です。  これらの課題と成果が分かれば、次にその課題を解決し、成果を達成する方法に注意を向けることができる。
 
-次へ [新しいアプローチを理解する](./liferay-sales-presentations/sales-presentations-new-approach.md) to Liferay's Sales Decks.
+次へ Liferayのセールスデッキの[新しいアプローチ](./liferay-sales-presentations/sales-presentations-new-approach.md)を理解しましょう。

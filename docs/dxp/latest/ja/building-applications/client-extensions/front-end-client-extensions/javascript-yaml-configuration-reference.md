@@ -1,10 +1,10 @@
-# JavaScript YAMLコンフィギュレーションリファレンス
+# JavaScript YAML設定リファレンス
 
-JavaScript クライアント拡張は、 `client-extension.yaml` ファイルで定義することができます。
+JavaScriptクライアント拡張は`client-extension.yaml`ファイルで定義できる。
 
-## 使用方法詳細
+## 使用法の詳細
 
-`client-extension.yaml` ファイルは、JavaScript クライアント拡張を定義します：
+この `client-extension.yaml` ファイルはJavaScriptクライアント拡張を定義する：
 
 ```yaml
 able-global-js:
@@ -13,21 +13,21 @@ able-global-js:
     url: global.js
 ```
 
-必須の `url` プロパティは、JavaScript リソースファイルの場所を定義します。 ページで有効にすると、このパスにあるJavaScriptが各ページの読み込み時に実行されます。
+必須の `url` プロパティはJavaScriptリソースファイルの場所を定義する。 ページで有効にすると、このパスにあるJavaScriptが各ページの読み込み時に実行されます。
 
 [ワークスペースの例](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-global-js) には、完全な JavaScript クライアント拡張が含まれています。
 
 ## YAML プロパティ
 
-これらのプロパティは、JavaScriptクライアントエクステンションに特有のものです：
+これらのプロパティは、JavaScriptクライアント拡張に特有のものです。
 
-| 名前    | データ型 | 説明                                                                                     |
-|:----- |:---- |:-------------------------------------------------------------------------------------- |
-| `url` | URL  | (必須）クライアント拡張機能が有効な場合に、ページのHEADに追加されるJavaScriptファイルへのパス。 完全なURIは、 `baseURL` の値が先頭に付きます。 |
+| 名前    | データ型 | 説明                                                                             |
+| :---- | :--- | :----------------------------------------------------------------------------- |
+| `url` | URL  | (必須）クライアント拡張が有効な場合に、ページのHEADに追加されるJavaScriptファイルへのパス。 完全なURIは `baseURL` 値で始まる。 |
 
-すべてのフロントエンドクライアントエクステンションに共通するプロパティについては、 [フロントエンドクライアントエクステンションのプロパティ](../front-end-client-extensions.md#front-end-client-extension-properties) を参照してください。
+すべてのフロントエンドクライアント拡張に共通するプロパティについては、 [フロントエンドのクライアント拡張プロパティ](../front-end-client-extensions.md#front-end-client-extension-properties) を参照してください。
 
 ## 関連トピック
 
-* [フロントエンドクライアント拡張機能](../front-end-client-extensions.md)
-* [クライアントエクステンションの操作](../working-with-client-extensions.md)
+* [フロントエンド・クライアント拡張](../front-end-client-extensions.md) 
+* [クライアント・エクステンションの操作](../working-with-client-extensions.md) 

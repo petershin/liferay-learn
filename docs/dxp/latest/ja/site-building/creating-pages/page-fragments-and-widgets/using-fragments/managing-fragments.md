@@ -4,88 +4,89 @@ Liferay DXPはLiferay UIでフラグメントを管理するためのツール�
 
 ```{tip}
 フラグメントやセットをサイト間で共有するには、グローバル・サイトに追加するか、エクスポート/インポート・アクションを使用します。
-```
 
+ZIPファイルがあれば、フラグメントセットや個々のページフラグメント内で、エクスポート/インポートアクションを使用できます。 また、LARファイルをお持ちの場合は、アプリケーションバーにあるOptionsメニューのExport/Importオプションを使用することもできます。
+
+```
 ## フラグメントセットの管理
 
-1. **Site Menu**( ![Site Menu](../../../../images/icon-product-menu.png) ) を開き、 **Design** &rarr; **Fragments** へ。
+1. *サイトメニュー* (![サイトメニュー](../../../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _フラグメント_に移動します。
 
 1. 必要なフラグメントセットを選択する。
 
-1. セットの **アクション** ボタン ( ![Actions](../../../../images/icon-actions.png) ) をクリックします。
+1. セットの_Actions_ボタン(![Actions](../../../../images/icon-actions.png)) をクリックします。
 
-   ![フラグメント・セットのアクション・ボタンをクリックして、管理オプションにアクセスする。](./managing-fragments/images/01.png)
+   ![Click the fragment set's Actions button to access management options.](./managing-fragments/images/01.png)
 
 1. アクションを選択します。
 
-   **Edit** : フラグメントセットの名前や説明を変更する。
+   **編集**:フラグメントセットの名前または説明を変更します。
 
-   **エクスポート** : フラグメントセットを `.zip` ファイルとしてダウンロードします。 このファイルには、セットの `.json`、フラグメントコード、リソースが含まれています。
+   **エクスポート**:フラグメントセットを `.zip` ファイルとしてダウンロードします。 このファイルには、セットの `.json`、フラグメントコード、リソースが含まれる。
 
-   **インポート** : フラグメントとリソースを `.zip` ファイルとしてセットにアップロードします。 インポート中、 **Overwrite Existing Files** をチェックすると、同じフラグメント名を持つ既存のフラグメントが上書きされます。 インポートされたフラグメントに無効なルールがある場合、ドラフトとして保存される。
+   **インポート**:フラグメントとリソースを `.zip` ファイルとしてセットにアップロードします。 インポートされたフラグメントに無効なルールがある場合、ドラフトとして保存される。 このインポート処理は、 [ページテンプレートのインポート処理](../../adding-pages/exporting-and-importing-page-templates.md#importing-a-page-template) と同様に機能する。
 
-   **Delete** : 現在のフラグメントセットとその内容をすべて削除する。
+   **Delete**：現在のフラグメントセットとその内容をすべて削除する。
 
 ```{tip}
-複数のセットをエクスポートするには、Fragment Sets *Actions*ボタン( ![Actions](../../../../images/icon-actions.png) )をクリックし、*Export*を選択します。 次に、エクスポートしたいセットにチェックを入れ、*エクスポート*をクリックします。 各セットは別々の`.zip`ファイルとしてダウンロードされる。
+複数のセットをエクスポートするには、Fragment Sets *Actions*ボタン（！[Actions]（../../../../images/icon-actions.png））をクリックし、*Export*を選択します。 次に、エクスポートしたいセットにチェックを入れ、*エクスポート*をクリックします。 各セットは別々の`.zip`ファイルとしてダウンロードされる。
 ```
-
 ## 個々のページフラグメントの管理
 
-1. **Site Menu**( ![Site Menu](../../../../images/icon-product-menu.png) ) を開き、 **Design** &rarr; **Fragments** へ。
+1. *サイトメニュー* (![サイトメニュー](../../../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _フラグメント_に移動します。
 
 1. 必要なフラグメントセットを選択する。
 
-1. フラグメントの **アクション** ボタン ( ![Actions](../../../../images/icon-actions.png) ) をクリックします。
+1. フラグメントの_Actions_ボタン（[Actions](../../../../images/icon-actions.png) ）をクリックする。
 
-   ![フラグメントの管理オプションにアクセスするには、フラグメントのアクションボタンをクリックします。](./managing-fragments/images/02.png)
+   ![Click the fragment's Actions button to access fragment management options.](./managing-fragments/images/02.png)
 
-1. アクションを選択します。
+1. 以下からアクションを選択してください。
 
-    **Edit** : フラグメントのコードや設定を変更する。
+**編集**：フラグメントのコードや設定を変更する。
 
-    **Change Thumbnail** : フラグメントのサムネイル画像を変更する。
+**サムネイルを変更する**：フラグメントのサムネイル画像を変更します。
 
-    **Remove Thumbnail** : フラグメントのサムネイル画像を削除し、デフォルトのフラグメントタイプアイコンを使用します。
+**サムネイルを削除する**：フラグメントのサムネイル画像を削除し、デフォルトのフラグメントタイプアイコンを使用します。
 
-    **Rename** : フラグメントの名前を変更する。
+**名前を変更する**：フラグメントの名前を変更する。
 
-    **Mark or Unmark as Cacheable** : フラグメントをキャッシュ可能かどうかマークする。 フラグメントがキャッシュされると、そのページのパフォーマンスが向上する。
+**キャッシュ可能としてマークまたはマークを解除する**：フラグメントをキャッシュ可能としてマークまたはマーク解除します。 フラグメントがキャッシュされると、そのページのパフォーマンスが向上する。
 
-    **View Usages** : フラグメントが使用されているページを表示します。 ページの名前、タイプ、バージョン、最後の伝播からの時間を見ることができる。 また、ページを選択してそれを伝播させることもできる。
+**使用状況を見る**：フラグメントが使用されているページを表示します。 ページの名前、タイプ、バージョン、最後の伝播からの時間を見ることができる。 また、ページを選択してそれを伝播させることもできる。
 
-    **エクスポート** : フラグメントを `.zip` ファイルとしてダウンロードします。
+**エクスポート**フラグメントを `.zip` ファイルとしてダウンロードします。
 
-    **Make a Copy** : フラグメントを複製する。 重複したフラグメントは同じ名前を共有し、末尾に （**コピー**） 。
+**コピーを取る**：フラグメントを複製する。 重複したフラグメントは、同じ名前に*(コピー)*が末尾に付加されたものを共有する。
 
-    **Move** : フラグメントを別のフラグメントセットに移動する。
+**移動**：フラグメントを別のフラグメントセットに移動する。
 
-    **Delete** : フラグメントを削除する。
+**削除**：フラグメントを削除する。
 
 ```{important}
-ユーザーは[保存されたフラグメント・コンポジション](./saving-fragment-compositions.md)を編集またはコピーできません。
+ユーザーは、 [保存されたフラグメント・コンポジション](./saving-fragment-compositions.md) を編集したりコピーしたりすることはできない。
 ```
-
 ## 断片のコピー
 
-{bdg-secondary}`Liferay DXP 7.2 SP1+ および Liferay Portal 7.2 GA2+ 用`
+{bdg-secondary}`Liferay DXP 7.2 SP1+ および Liferay Portal 7.2 GA2+ 用`。
 
-1. **Site Menu**( ![Site Menu](../../../../images/icon-product-menu.png) ) を開き、 **Design** &rarr; **Fragments** へ。
+1. *サイトメニュー* (![サイトメニュー](../../../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _フラグメント_に移動します。
 
 1. 必要なフラグメントセットを選択する。
 
-1. フラグメントの **アクション** ボタン（ ![Actions](../../../../images/icon-actions.png) ）をクリックし、 **コピー先** を選択する。
+1. フラグメントの_Actions_ボタン（[Actions]（../../../../images/icon-actions.png））をクリックし、_Copy To_を選択します。
 
-   ![フラグメントのActionsボタンをクリックし、Copy Toを選択する。](./managing-fragments/images/03.png)
+   ![Click the fragment's Actions button and select Copy To.](./managing-fragments/images/03.png)
 
 1. フラグメントをコピーするセットを選択します。
 
 ```{tip}
-ユーザーは[default fragments](./default-fragments-reference.md)を直接編集することはできません。 ただし、デフォルトのフラグメントをカスタムセットにコピーして、そこで編集することはできる。
+ユーザーは、 [デフォルトのフラグメント](./default-fragments-reference.md) を直接編集することはできない。 ただし、デフォルトのフラグメントをカスタムセットにコピーして、そこで編集することはできる。
 ```
-
 ## 関連トピック
 
-* [フラグメントの使用](../using-fragments.md)
-* [フラグメントの設定](./configuring-fragments.md)
-* [デフォルトのフラグメントリファレンス](./default-fragments-reference.md)
+[フラグメントの使用](../using-fragments.md) 
+
+[フラグメントの設定](./configuring-fragments.md) 
+
+[デフォルト・フラグメント リファレンス](./default-fragments-reference.md) 

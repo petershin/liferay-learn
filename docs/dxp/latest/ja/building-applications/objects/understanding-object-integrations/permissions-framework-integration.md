@@ -9,25 +9,27 @@
 ロールパーミッションを定義する場合、アクティブオブジェクトはそのスコープとパネルリンクに従って表示されます。
 
 ```{tip}
-サイトスコープのオブジェクトでは、すべてのサイトに対して権限を付与するか、特定のサイトに対してのみ権限を付与するかを決定することができます。
+サイト・スコープのオブジェクトでは、すべてのサイトに対してパーミッションを付与するか、特定のサイトに対してのみパーミッションを付与するかを決定できます。
 ```
 
 ```{important}
-アカウントと組織のロールは、アカウント制限が有効になっているオブジェクトでのみサポートされています。 それ以外の場合は、オブジェクトの権限の割り当てに標準ロールとサイトロールのみを使用することができます。 詳細は、 [アカウント制限とユーザーロール](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md#account-restriction-and-user-roles) を参照してください。
+アカウントと組織のロールは、アカウント制限が有効になっているオブジェクトでのみサポートされています。 それ以外の場合は、オブジェクトの権限の割り当てに標準ロールとサイトロールのみを使用することができます。 詳細については、 [Account Restriction and User Roles](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md#account-restriction-and-user-roles) を参照のこと。
 ```
 
 ## アプリケーションの権限
 
 アプリケーションの権限は公開オブジェクト自体へのアクセス権限を付与するもので、 [リソース関連の権限は含まれません](#resource-permissions) 。 各オブジェクトには、定義されたスコープに応じて、次の標準アプリケーションの権限が含まれます。
 
-| 権限                                | 説明                                                                                         |
-|:--------------------------------- |:------------------------------------------------------------------------------------------ |
-| コントロールパネルへのアクセス（**会社スコープのみ**）       | グローバルメニュー（ ![Global Menu](../../../images/icon-applications-menu.png) ）でオブジェクトにアクセスします。    |
-| サイトとアセットライブラリ管理にアクセス（**サイトスコープのみ**） | サイトメニュー（ ![Site Menu](../../../images/icon-product-menu.png) ）またはアセットライブラリでオブジェクトにアクセスします。 |
-| 設定                                | 該当なし                                                                                       |
-| 権限設定                              | オブジェクトに対するアプリケーションの権限を表示し変更します。                                                            |
-| 表示設定                              | 該当なし                                                                                       |
-| 表示                                | オブジェクトのアプリケーションページを表示します。                                                                  |
+| 権限                                    | 説明                                                                                       |
+| :------------------------------------ | :--------------------------------------------------------------------------------------- |
+| コントロールパネルでのアクセス（※企業範囲のみ）              | グローバル・メニュー( ![グローバル・メニュー](../../../images/icon-applications-menu.png))のオブジェクトにアクセスする。    |
+| サイトおよびアセットライブラリ管理でのアクセス（_サイトスコープのみ_）。 | サイトメニュー( ![サイトメニュー](../../../images/icon-product-menu.png))またはアセットライブラリ内のオブジェクトにアクセスします。 |
+| 設定                                    | 該当なし                                                                                     |
+| 権限の設定                                 | オブジェクトに対するアプリケーションの権限を表示し変更します。                                                          |
+| 詳細設定                                  | 該当なし                                                                                     |
+| 表示*                                  | オブジェクトの表示ページを表示する。                                                                       |
+
+\* また、マッピングされたコンテンツを表示したり、ページの編集中にオブジェクト定義にマッピングされたフォームコンテナを追加/変更したり、その他のアクションを実行したりするためにも、表示パーミッションが必要です（例：表示ページテンプレート、情報テンプレート、サイトナビゲーションメニューの作成）。 これがないと、コレクションおよびコンテンツ表示は、ビューおよびプレビューモードでは表示されません。
 
 ## リソース権限
 
@@ -35,10 +37,10 @@
 
 ### エントリーの作成
 
-| 権限             | 説明                       |
-|:-------------- |:------------------------ |
-| オブジェクトエントリーを追加 | エントリーを作成します。             |
-| 権限の設定          | エントリーの作成に関する権限を表示・管理します。 |
+| 権限             | 説明                                                                                               |
+| :------------- | :----------------------------------------------------------------------------------------------- |
+| オブジェクトエントリーを追加 | エントリーを作成します。 このパーミッションは、関連オブジェクトのフォームコンテナを表示するために必要です。 これがないと、フォームコンテナはビューモードとプレビューモードでは表示されません。 |
+| 権限の設定          | エントリーの作成に関する権限を表示・管理します。                                                                         |
 
 ### 既存のエントリーの操作
 
@@ -54,11 +56,11 @@
 オブジェクト・エントリの作成者には、オーナー・ロールが自動的に割り当てられ、上記の権限が付与されます。
 ```
 
-リソースパーミッションは、オブジェクトに追加された [スタンドアロンアクション](../creating-and-managing-objects/actions/using-manual-actions.md) ごとに生成されます。 どのロールがアクションを起動できるかを管理するのに便利で、 `アクションを使用して命名されます。[actionName]` パターン。
+リソースパーミッションは、オブジェクトに追加された [スタンドアロンアクション](../creating-and-managing-objects/actions/using-manual-actions.md) ごとに生成されます。 どのロールがアクションを起動できるかを管理するのに便利で、`action.[actionName]パターンを使用します。
 
 ## 個々のオブジェクトエンティティに対する権限の管理
 
-{bdg-secondary}`7.4 U10+/GA14+の場合`
+{bdg-secondary}`7.4 U10+/GA14+用`。
 
 カスタムオブジェクトを使用すると、個々のデータベースエンティティに対する権限を管理し、オブジェクトデータへのアクセスをコントロールすることができます。
 
@@ -66,23 +68,23 @@
 
 1. 目的のカスタムオブジェクトに移動します。
 
-1. 目的のエンティティの **アクション** ボタン（![Actions Button](../../../images/icon-actions.png)）をクリックし、 ［**Permissions**］ を選択してください。
+1. 目的のエンティティの_Actions_ボタン(![Actions Button](../../../images/icon-actions.png)) をクリックし、_Permissions_を選択します。
 
-   ![目的のエンティティのアクションボタンをクリックし、［権限］を選択します。](./permissions-framework-integration/images/01.png)
+   ![Click the Actions button for the desired entity and select Permissions.](./permissions-framework-integration/images/01.png)
 
 1. チェックボックスを使用して、 [エントリーの操作](#acting-on-existing-entries) 権限を必要なロールに付与します。
 
    ```{note}
-   ロール管理アプリケーションで定義された権限は、エンティティレベルで定義された権限をオーバーライドします。
+   Roles 管理アプリケーションで定義された権限は、エンティティ・レベルで定義された権限を上書きします。
    ```
 
-   ![チェックボックスを使用して、必要なロールに権限を割り当てることができます。](./permissions-framework-integration/images/02.png)
+   ![Use the checkboxes to assign permissions to the desired roles.](./permissions-framework-integration/images/02.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_Save_］をクリックします。
 
 ## 関連トピック
 
-* [オブジェクト統合を理解する](../understanding-object-integrations.md)
-* [オブジェクト概要](../../objects.md)
-* [オブジェクトの作成](../creating-and-managing-objects/creating-objects.md)
-* [アカウントによるオブジェクトデータへのアクセス制限](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md)
+* [Understanding Object Integrations](../understanding-object-integrations.md) 
+* [オブジェクトの概要](../../objects.md) 
+* [Creating Objects](../creating-and-managing-objects/creating-objects.md) 
+* [アカウントによるオブジェクト・データへのアクセスの制限](../creating-and-managing-objects/using-system-objects-with-custom-objects/restricting-access-to-object-data-by-account.md) 

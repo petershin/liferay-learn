@@ -1,16 +1,16 @@
 # 手動アクションの使用
 
-{bdg-secondary}`Liferay 7.4 U60+/GA60+`
+{bdg-secondary}`Liferay 7.4 U60+/GA60+`.
 
 オブジェクトアクションにスタンドアローントリガーを使用すると、アクションは自動ではなく手動になります。 これらのメソッドを使用して、これらのアクションをトリガーする：
 
-* [オブジェクトのUI](#trigger-actions-via-the-object-entry-ui)
-* [専用のアクションAPI](#trigger-actions-via-apis)
-* [ページ内のボタン](#trigger-actions-via-pages)
+* [オブジェクトのUI](#trigger-actions-via-the-object-entry-ui) 
+* [専用アクションAPI](#trigger-actions-via-apis) 
+* [ページ内のボタン](#trigger-actions-via-pages) 
 
 この例では、通知を送信するためのスタンドアロンアクションを作成します。
 
-![スタンドアロントリガーを使って、あらゆるタイプのオブジェクトアクションを手動で実行することができます。](./using-manual-actions/images/01.png)
+![You can use the standalone trigger to run any type of object action manually.](./using-manual-actions/images/01.png)
 
 詳しくは、 [オブジェクトアクションの定義](./defining-object-actions.md) をご覧ください。
 
@@ -20,11 +20,11 @@
 
 1. オブジェクト定義のアプリケーションページに移動します。
 
-1. 目的のエントリーの **アクション** ボタン (![Action Button](../../../../images/icon-actions.png)) をクリックし、スタンドアロンアクションを選択します。
+1. 目的のエントリーの_Actions_ボタン(![Action Button](../../../../images/icon-actions.png)) をクリックし、スタンドアロンアクションを選択します。
 
    この例では、アクションは［Send Reminder］です。
 
-   ![目的のエントリーのアクションボタンをクリックし、スタンドアロンアクションを選択します。](./using-manual-actions/images/02.png)
+   ![Click the Actions button for the desired entry and select the standalone action.](./using-manual-actions/images/02.png)
 
 ## APIによるアクションのトリガー
 
@@ -32,23 +32,23 @@ Liferayは公開されたオブジェクト定義に対してREST APIを自動�
 
 これらのAPIを表示するには、
 
-1. Lifera のAPIエクスプローラーを `[server]:[port]/o/api`で開きます（例: `localhost:8080/o/api`）。
+1. Liferay の API Explorer を `[server]:[port]/o/api` で開きます（例：`localhost:8080/o/api`）。
 
-1. **RESTアプリケーション** をクリックし、目的のオブジェクト定義を選択します。 カスタムオブジェクトは、`c/[pluralobjectlabel]` の命名パターンを使用します（例： `c/tickets`）。
+1. *REST Applications*をクリックし、目的のオブジェクト定義を選択します。 カスタムオブジェクトは `c/[pluralobjectlabel]` という命名パターンを使用します（例：`c/tickets`）。
 
 各スタンドアロンアクションに対して、Liferayは2つのPUT APIを生成します。1つはエントリーのIDを使用し、もう1つはエントリーの外部参照コード（ERC）を使用します。
 
-![Liferayは、エントリーのIDを使うAPIおよびエントリーのERCを使うAPIの2つのPUT APIを生成します。](./using-manual-actions/images/03.png)
+![Liferay generates two PUT APIs: one that uses the entry's ID and another that uses the entry's ERC.](./using-manual-actions/images/03.png)
 
 いずれかのAPIを呼び出すと、指定されたエントリーのアクションがトリガーされます。
 
-![APIを呼び出すと、指定されたエントリーのアクションがトリガーされます。](./using-manual-actions/images/04.png)
+![Calling the API triggers the action for the specified entry.](./using-manual-actions/images/04.png)
 
 ## ページ経由でアクションをトリガーする
 
 スタンドアロンアクションをページ上のボタンにマップすることができます ( [コンテンツページ](#mapping-buttons-to-object-actions-in-content-pages) または [表示ページテンプレート](#mapping-buttons-to-object-actions-in-display-page-templates) )。
 
-Liferayのボタンフラグメントがあなたのユースケースを満たさない場合、 `data-lfr-editable-id="action"`  と `data-lfr-editable-type="action"` の属性をHTMLタグに追加することで、カスタムボタンにアクションをマッピングすることができます。 フラグメントへの属性の追加について詳しくは、 [フラグメント固有のタグと属性のリファレンス](../../../../site-building/developer-guide/reference/fragments/fragment-specific-tags-reference.md) を参照してください。
+Liferayのすぐに使えるボタンフラグメントがあなたのユースケースを満たさない場合、HTMLタグに`data-lfr-editable-id="action"`と`data-lfr-editable-type="action"`の属性を追加することで、カスタムボタンにアクションをマッピングすることができます。 フラグメントへの属性の追加について詳しくは、 [Fragment Specific Tags and Attributes Reference](../../../../site-building/developer-guide/reference/fragments/fragment-specific-tags-reference.md) を参照してください。
 
 アクションレディのカスタムボタンの例です：
 
@@ -61,36 +61,35 @@ Liferayのボタンフラグメントがあなたのユースケースを満た�
 
 ### コンテンツ・ページでボタンをオブジェクト・アクションにマッピングする
 
-1. [ページの作成](../../../../site-building/creating-pages.md).
+1. [ページの作成](../../../../site-building/creating-pages.md) .
 
-1. **Button** フラグメントをレイアウトに追加します。 コンテンツページの編集方法については、 [コンテンツページに要素を追加する](../../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) を参照してください。
+1. *ボタン*フラグメントをレイアウトに追加します。 コンテンツページの編集方法については、 [コンテンツページに要素を追加する](../../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) を参照してください。
 
-1. ボタンを一度クリックする。 Button Options（ボタンのオプション）で、タイプとして **Action** を選択する。 これでボタンにアクションをマッピングできる。
+1. ボタンを一度クリックする。 Button Optionsで、タイプとして_Action_を選択します。 これでボタンにアクションをマッピングできる。
 
 1. もう一度ボタンをクリックする。 右側にアクションメニューが開く。
 
-1. Mapping タブで、 **Item** フィールド、またはフィールドの横にある **Select Item** アイコン (![Select Item](../../../../images/icon-add-app.png)) をクリックします。
+1. [Mapping]タブで、_Item_フィールドをクリックするか、フィールドの横にある_Select Item_アイコン(![Select Item](../../../../images/icon-add-app.png))をクリックする。
 
 1. 上部のリストからオブジェクトを選択します。
 
-   利用可能なオブジェクトエントリが下部に表示されます。
+   利用可能なオブジェクトエントリは下部に表示されます。
 
 1. 特定のオブジェクトエントリを選択します。
 
-   ![特定のオブジェクトエントリを選択する](./using-manual-actions/images/05.png)
+   ![Select a specific object entry](./using-manual-actions/images/05.png)
 
-1. ボタンラベルにマッピングされる **フィールド** を選択します。
+1. ボタンラベルにマッピングする_フィールド_を選択します。
 
-1. アクションタブで、特定のオブジェクトエントリーを選択する。
+1. アクションタブで、特定のオブジェクトエントリを選択する。
 
 1. アクションを選択する。
 
 1. オプションで、SuccessとErrorのインタラクションを設定します。 詳細は [成功とエラーの相互作用の管理](#managing-success-and-error-interactions) を参照のこと。
 
 ```{tip}
-アクションにマッピングされたコンポーネントを持つコレクション表示フラグメントまたはフォームフラグメントを使用できます。 詳しくは[コレクションを表示する](../../../../site-building/displaying-content/additional-content-display-options/displaying-collections.md)と[フラグメントを使ってフォームを構築する](../../using-fragments-to-build-forms.md)を参照してください。
+アクションにマッピングされたコンポーネントを持つコレクション表示フラグメントまたはフォームフラグメントを使用できます。 詳しくは [コレクションの表示](../../../../site-building/displaying-content/additional-content-display-options/displaying-collections.md) と [フォームを構築するためのフラグメントの使用](../../using-fragments-to-build-forms.md) を参照してください。
 ```
-
 ボタンがクリックされると、選択されたアクションが実行されるようになりました。
 
 ### 表示ページテンプレートでボタンをオブジェクトアクションにマッピングする
@@ -99,11 +98,11 @@ Liferayのボタンフラグメントがあなたのユースケースを満た�
 
    これにより、ボタンやアクションをマッピングする際に、あなたのオブジェクトがデフォルトのソースとなります。
 
-   ![表示ページテンプレートを作成する際に、コンテンツタイプとしてオブジェクトを選択します。](./using-manual-actions/images/06.png)
+   ![Chose your object as the content type when creating a display page template.](./using-manual-actions/images/06.png)
 
-1. **Button** フラグメントをレイアウトに追加します。
+1. *ボタン*フラグメントをレイアウトに追加します。
 
-1. ボタンを一度クリックする。 Button Options（ボタンのオプション）で、タイプとして **Action** を選択する。
+1. ボタンを一度クリックする。 Button Optionsで、タイプとして_Action_を選択します。
 
    この設定により、ボタンにアクションをマッピングすることができます。
 
@@ -114,8 +113,7 @@ Liferayのボタンフラグメントがあなたのユースケースを満た�
    ```{note}
    特定のコンテンツを選択する必要がある場合は、*ソース*フィールドをクリックし、*特定のコンテンツ*を選択し、特定の*アイテム*を選択します。
    ```
-
-1. ボタンラベルにマッピングされる **フィールド** を選択します。
+1. ボタンラベルにマッピングされる_フィールド_を選択します。
 
 1. Actionタブで、ユーザーがボタンをクリックしたときにトリガーするアクションを選択します。
 
@@ -129,26 +127,26 @@ Liferayのボタンフラグメントがあなたのユースケースを満た�
 
 どちらの結果にも4つのオプションが用意されている：
 
-1. **なし** : アクション実行後は何も起こらない。
+1. **None**：アクション実行後は何も起こらない。
 
-1. **Show Notification** ：ユーザーに通知します。 カスタム成功/エラーメッセージを書き、通知をプレビューし、アクションがトリガーされた後にページをリロードするように設定することができます。
+1. **通知を表示**：ユーザーに通知します。 カスタム成功/エラーメッセージを書き、通知をプレビューし、アクションがトリガーされた後にページをリロードするように設定することができます。
 
-1. **Go to Page** : サイト内の成功/エラーページに移動します。
+1. **ページに移動します**：サイト内の成功/エラーページに移動します。
 
-1. **Go to External URL** : 外部URLに移動する。
+4. **外部URLに移動します**：外部URLに移動します。
 
-![ユーザーがアクションにマッピングされたボタンまたはフラグメントをクリックしたときに、アクションが実行された後に何が起こるかを選択できます：何も起こらない、ユーザーが通知を受け取る、ユーザーがページにリダイレクトされる、またはユーザーが外部URLにリダイレクトされる。](./using-manual-actions/images/07.png)
+![You can choose what happens after an action is performed when the user clicks on a button or fragment mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/07.png)
 
 選択されたオプションは、ユーザーがアクションをトリガーした後に実行される。
 
 ## アクションの権限
 
-Liferayは、どのロールがスタンドアロンアクションをトリガーできるかを管理するための権限を自動的に生成します。 各権限は、`action.[actionName]`の命名パターン（例： `action.sendReminder`)に従います。 オブジェクトの権限については、[権限設定フレームワークの統合](../../understanding-object-integrations/permissions-framework-integration.md)を参照してください。
+Liferayは、どのロールがスタンドアロンアクションをトリガーできるかを管理するための権限を自動的に生成します。 各パーミッションは`action.[actionName]`の命名パターンに従います(例: `action.sendReminder`)。 オブジェクトのパーミッションの詳細については、[Permissions Framework Integration](../../understanding-object-integrations/permissions-framework-integration.md) ]を参照してください。
 
-![スタンドアロン権限は、アクション [actionName] 命名パターンを使用します。](./using-manual-actions/images/08.png)
+![Standalone permissions use the action.[actionName] naming pattern.](./using-manual-actions/images/08.png)
 
 ## 関連トピック
 
-* [オブジェクトアクションの定義](./defining-object-actions.md)
-* [アクションの種類について](./understanding-action-types.md)
-* [ヘッドレスフレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md)
+* [オブジェクト・アクションの定義](./defining-object-actions.md) 
+* [アクションタイプを理解する](./understanding-action-types.md) 
+* [ヘッドレス・フレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md) 

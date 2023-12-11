@@ -4,21 +4,21 @@
 
 ## ユーティリティページ
 
-ユーティリティ・ページは、404エラー・ページのようなシステム・レベルのページに適用できるコンテンツ・ページです。 詳しくは、 [ユーティリティページの使用](../adding-pages/using-utility-pages.md) をご覧ください。
+ユーティリティ・ページは、404エラー・ページのようなシステム・レベルのページに適用できるコンテンツ・ページです。 詳しくは、 [Using Utility Pages](../adding-pages/using-utility-pages.md) をご覧ください。
 
-![ユーティリティ・ページを使って、このような404エラー・ページを作成することができる。](./other-page-types/images/01.png)
+![You can create 404 error page like this one using a utility page.](./other-page-types/images/01.png)
 
 ## フルページ・アプリケーション
 
 フルページアプリケーションページタイプは、ページ全体を埋める単一のアプリケーションを表示します。 詳細については、 [フルページアプリケーションの使用ページ](../adding-pages/using-the-full-page-application-page-type.md) を参照してください。
 
-![フルページアプリケーションページは、ページの幅全体に広がる単一のアプリケーションを表示します。](./other-page-types/images/02.png)
+![A full page application page displays a single application that spans the entire width of the page.](./other-page-types/images/02.png)
 
 ## ページセット
 
 ページセットオプションは、実際にはページ自体ではないサブページのコンテナを作成します。
 
-![ページ・セット・ページは、他のページのコンテナとして機能する。](./other-page-types/images/03.png)
+![A page set page acts as a container for other pages.](./other-page-types/images/03.png)
 
 ## ページへのリンク
 
@@ -28,7 +28,7 @@
 
 Panel オプションは、管理者が選択した複数のアプリケーションを含むページを作成しますが、一度に表示されるのは 1 つだけです。 ユーザーは、ページの左側のメニューから表示したいウィジェットを選択します。 選択したアプリケーションは右側のページ全体を占める。
 
-![パネルページには、左側に設定されたアプリケーションのリストが表示され、右側に選択したアプリケーションが表示されます。](./other-page-types/images/04.png)
+![A panel page shows a list of configured applications on the left and the chosen application on the right.](./other-page-types/images/04.png)
 
 ## 埋め込み
 
@@ -37,3 +37,7 @@ Panel オプションは、管理者が選択した複数のアプリケーシ�
 ## URLへリンク
 
 Link to URLオプションは、指定されたURLにリンクを追加します。 これは外部ページでも、同じLiferay Portalインスタンス内のサイト間のリンクでもかまいません。
+
+## コレクションページ
+
+コレクションページはコレクションにリンクされています。 これらのページは、コレクションを表示し、パーソナライズするプロセスを簡素化します。 詳細は、 [コレクション表示](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections) を参照してください。

@@ -1,36 +1,30 @@
 # カスタムバリデーションの追加
 
-{bdg-secondary}`Liferay 7.4 U67+/GA67+`
+{bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`.
 
-検証は、有効なフィールドエントリーを決定するためのルールを設定します。 各バリデーションには、独自のトリガー、条件、エラーテキストがあり、オブジェクトUIから設定することができます。 [Groovyスクリプト](#using-groovy-validations) または [Liferay式](#using-expression-builder-validations) を使って検証を定義できます。
+検証は、有効なフィールドエントリーを決定するためのルールを設定します。 それぞれのバリデーションには、独自のトリガー、条件、エラーメッセージがあり、オブジェクトUIから設定できる。 [Groovyスクリプト](#using-groovy-validations) または [Liferay式](#using-expression-builder-validations) を使って検証を定義できます。
 
 ![カスタムおよびシステムオブジェクトフィールドの検証を作成します。](./adding-field-validations/images/01.png)
 
-```{important}
-Groovyスクリプトの検証は、Liferay Experience Cloud Self-Managed と Liferay DXP Self-Hosted でのみ利用可能です。
-```
+バリデーションを追加するには
 
-以下の手順で、検証を追加します。
-
-1. ［**グローバルメニュー**］（![Global Menu](../../../../images/icon-applications-menu.png)）を開き、 ［**コントロールパネル**］ タブに移動して、 ［**オブジェクト**］ をクリックします。
+1. グローバルメニュー( ![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブを開き、_オブジェクト_をクリックします。
 
 1. オブジェクト定義の編集を開始します。
 
-   ```{note}
-   Liferay 7.4 U38以降とGA38以降では、システムオブジェクトにカスタム検証を追加することができます。
-   ```
+1. *Validations*タブに移動し、_Add_ ( ![Add Button](../../../../images/icon-add.png) ) をクリックします。
 
-1. ［**検証**］ タブを開き、 **追加**( ![Add Button](../../../../images/icon-add.png) ) をクリックします。
+1. ラベル_を入力し、検証タイプを選択します：_Groovy_または_Expression Builder*。
 
-1. **ラベル** を入力し、検証タイプ、つまり ［**Groovy**］ または ［**エクスプレッションビルダー**］ を選択します。
+   ![Enter a label and select a validation type.](./adding-custom-validations/images/02.png)
 
-   ![ラベルを入力し、検証タイプを選択します。](./adding-field-validations/images/02.png)
+1. ［_Save_］をクリックします。
 
-1. ［**Save**］ をクリックします。
+1. バリデーションの編集を開始する。
 
-1. 新しく作成したバリデーションの編集を開始します。
+1. 基本情報タブで、バリデーションを有効にする。
 
-1. ［**Conditions**］ タブに移動して、バリデーションに条件を追加します。
+   ![Activate the validation.](./adding-custom-validations/images/03.png)
 
    ![検証に条件を追加します。](./adding-field-validations/images/03.png)
 
@@ -38,63 +32,66 @@ Groovyスクリプトの検証は、Liferay Experience Cloud Self-Managed と Li
 
    エクスプレッションビルダーを使用する場合、サイドパネルからフィールド、演算子、関数を参照し、条件に追加できます。 詳細は、 [エクスプレッションビルダー検証の使用](#using-expression-builder-validations) を参照してください。
 
-   ```{tip}
-   条件には、複雑な検証をするための複数のフィールドや関数を含めることができます。
+   ```{important}
+   Groovy スクリプトの検証は、Liferay Experience Cloud Self-Managed と Liferay DXP Self-Hosted でのみ利用できます。
    ```
 
-1. ローカライズ可能な **エラーメッセージ** を入力します。 このメッセージは、検証が開始され、フィールドの入力が1つ以上の定義された条件を満たさない場合に表示されます。
+1. ローカライズ可能な_エラーメッセージ_を入力してください。 このメッセージは、バリデーションがトリガーされ、フィールド入力が定義された条件の1つ以上を満たさない場合に表示されます。
 
-1. ［**Basic Info**］ タブを開き、検証を **有効に** します。
+1. 出力検証タイプを選択して、エラーメッセージが表示される場所を決定する。
 
-1. ［**Trigger Event**］ を選択し、検証の実行タイミングを決定します。
+    **完全検証（フォーム要約）**：フォームの上部にエラーメッセージを表示します。
 
-   各検証は、1つのトリガーイベントしか持つことができません。
+    **部分検証（インライン・フィールド）**：指定したフィールドの横にエラーメッセージを表示します。
 
-   ![検証を有効にし、トリガーイベントを設定します。](./adding-field-validations/images/04.png)
+    ![Enter an error message and select an output validation type.](./adding-field-validations/images/05.png)
 
-1. ［**Save**］ をクリックします。
+1. ［_Save_］をクリックします。
 
-一度有効にすると、すべての新規オブジェクトの入力に対して検証が実行されます。
+有効化されている間、バリデーションはすべての新規オブジェクトエントリに対して実行され、 [レイアウト](../layouts.md) と [フォームコンテナ](../../using-fragments-to-build-forms.md) に表示されます。
+
+![Validations are displayed in form containers.](./adding-custom-validations/images/06.png)
 
 ## Groovy検証の使用
 
-Groovy検証は、標準的な [Groovyスクリプト](https://groovy-lang.org/) の機能をすべてサポートしています。 条件を定義する場合、 `invalidFields` 変数を使用する必要があります。 Liferayは`invalidFields`が`true`を返す場合にのみ、確認エラーメッセージを表示します。
+{bdg-primary}`Liferay Experience CloudセルフマネージドおよびLiferay DXPセルフホスティング`。
 
-![サイドパネルを使用して、Groovy検証にフィールド要素を追加します。](./adding-field-validations/images/05.png)
+Groovy検証は、標準的な [Groovyスクリプト](https://groovy-lang.org/) の機能をすべてサポートしています。 条件を定義する際には、 `invalidFields` 変数を使用しなければならない。 Liferay は `invalidFields` が `true` を返したときのみバリデーションエラーメッセージを表示します。
 
-Liferay 7.4 U33+とGA33+では、Liferayは [GroovyShellクラス](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) を使って、 ［**保存**］ をクリックしたときにGroovy スクリプトの構文が有効であるかどうかをチェックします。 スクリプトが無効な場合、Liferayはエラーメッセージを表示します。
+![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/07.png)
+
+Liferay は [GroovyShell クラス](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) を使って、_Save_ をクリックしたときに Groovy スクリプトの構文が有効かどうかをチェックします。 スクリプトが無効な場合、Liferayはエラーメッセージを表示します。
 
 ## エクスプレッションビルダー検証の使用
 
 エクスプレッションビルダーには、定義済みのフィールド、演算子、関数が用意されており、要素サイドパネルからアクセスすることができます。 要素をクリックすると、その要素が条件エディタに追加されます。 これらの関数は、ブール値を返します。 提供される演算子や関数の完全なリストについては、 [エクスプレッションビルダー検証のリファレンス](./expression-builder-validations-reference.md) を参照してください。
 
-```{important}
-エクスプレッション・ビルダーのバリデーションは、テキスト、数値、日付、およびブール値のフィールド・タイプでのみ使用できます。
-```
+!!! important
+    エクスプレッション・ビルダーのバリデーションは、テキスト、数値、日付、およびブール値のフィールド・タイプでのみ使用できます。
 
-![サイドパネルを使用して、フィールド、演算子、関数の要素を検証に追加します。](./adding-field-validations/images/06.png)
+![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/08.png)
 
-Liferay 7.4 U33+とGA33+では、［保存］をクリックすると、Liferayは式が有効な構文であるかどうかをチェックします。 式が無効な場合、Liferayはエラーメッセージを表示します。
+LiferayはSaveをクリックしたときに、式が有効な構文かどうかをチェックします。 式が無効な場合、Liferayはエラーメッセージを表示します。
 
 ### エクスプレッションビルダーの演算子
 
 この表は、エクスプレッションビルダーの検証で利用できる演算子の一覧です。
 
-| 演算子                | 説明                    |
-|:------------------ |:--------------------- |
-| And ( `AND` )      | 依存した関係を表すのに使用される等位接続詞 |
-| Divided By ( `/` ) | 除算の数学演算子              |
-| Minus ( `-` )      | 除算の数学演算子              |
-| Or ( `OR` )        | 独立した関連を表すのに使用される等位接続詞 |
-| Plus ( `+` )       | 加算の数学演算子              |
-| Multiply ( `*` )   | 乗算の数学演算子              |
+| 演算子           | 説明                    |
+| :------------ | :-------------------- |
+| そして ( `AND` ) | 依存した関係を表すのに使用される等位接続詞 |
+| で割った ( `/` )  | 除算の数学演算子              |
+| マイナス ( `-` )  | 除算の数学演算子              |
+| または ( `OR` )  | 独立した関連を表すのに使用される等位接続詞 |
+| プラス ( `+` )   | 加算の数学演算子              |
+| 乗算 ( `*` )    | 乗算の数学演算子              |
 
 ### エクスプレッションビルダーの関数
 
 この表は、利用可能なエクスプレッションビルダー関数とその互換性のあるフィールドタイプの一覧です。
 
 | 演算子        | テキストフィールド | 数値フィールド  | 日付フィールド  | 説明                                                  |
-|:---------- |:--------- |:-------- |:-------- |:--------------------------------------------------- |
+| :--------- | :-------- | :------- | :------- | :-------------------------------------------------- |
 | 日付を比較      |           |          | &#10004; | 日付フィールドの値が設定された値と同じかどうかを確認します。                      |
 | 連結         | &#10004;  |          |          | 複数の文字列またはテキストフィールドを結合し、単一の文字列を返します。                 |
 | 条件         | &#10004;  | &#10004; | &#10004; | ユーザー入力が1つ以上の条件を満たすかどうかをチェックし、ブール値を返します。             |
@@ -111,25 +108,23 @@ Liferay 7.4 U33+とGA33+では、［保存］をクリックすると、Liferay�
 | 整数である      |           | &#10004; |          | 数値フィールドが整数であるかどうかを確認し、ブール値を返します。                    |
 | 以下         |           | &#10004; |          | 数値フィールドが特定の数値以下かどうかを確認し、ブール値を返します。                  |
 | 以下もしくは等しい  |           | &#10004; |          | 数値フィールドが特定の数値以下もしくは等しいかどうかを確認し、ブール値を返します。           |
-| 等しくない      | &#10004;  | &#10004; |          | フィールド値が指定された値と異なるかどうかを調べ、ブール値を返す。                   |
+| 等しくない      | &#10004;  | &#10004; |          | フィールドの値が指定された値と異なるかどうかを調べ、ブール値を返す。                  |
 | 一致         | &#10004;  |          |          | テキストフィールドが特定のString値または正規表現と一致するかどうかを確認し、ブール値を返します。 |
 | 古い値        | &#10004;  | &#10004; | &#10004; | 指定したフィールドの事前値を取得します。                                |
 | 過去の日付      |           |          | &#10004; | 日付フィールドの値が過去かどうかを確認し、ブール値をします。                      |
 | 範囲         |           |          | &#10004; | 日付範囲が過去の日付で始まり、未来の日付で終わるかどうかを調べ、ブール値を返す。            |
 | 合計         |           | &#10004; |          | 複数の数値フィールドを足し合わせ、単一の数値を返します。                        |
 
-詳細と例については、 [エクスプレッションビルダー検証のリファレンス](./expression-builder-validations-reference.md) を参照してください。
+詳細と例については、 [Expression Builder Validations Reference](./expression-builder-validations-reference.md) を参照してください。
 
 ## 利用可能なフィールドのリファレンス
-
-{bdg-secondary}`7.4 U41+/GA41+の場合`
 
 条件を作成する際、オブジェクトのカスタムフィールドやシステムフィールドのいずれかを使用できます。 また、1対多の関連の子側の関連フィールドから選択することも可能です。
 
 以下は、カスタムオブジェクトで利用可能なすべてのデフォルトフィールドです。
 
 | 項目                      | 説明                     |
-|:----------------------- |:---------------------- |
+| :---------------------- | :--------------------- |
 | `companyId`             | エントリーが作成されたポータルインスタンス  |
 | `createDate`            | エントリーが作成された日時          |
 | `externalReferenceCode` | エントリーの外部参照コード          |
@@ -151,6 +146,6 @@ Liferay 7.4 U33+とGA33+では、［保存］をクリックすると、Liferay�
 
 ## 関連トピック
 
-* [オブジェクトの作成](../creating-objects.md)
-* [オブジェクトへのフィールドの追加](../fields/adding-fields-to-objects.md)
-* [エクスプレッションビルダー検証のリファレンス](./expression-builder-validations-reference.md)
+* [Creating Objects](../creating-objects.md) 
+* [オブジェクトへのフィールドの追加](../fields/adding-fields-to-objects.md) 
+* [式ビルダー検証リファレンス](./expression-builder-validations-reference.md) 

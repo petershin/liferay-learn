@@ -1,25 +1,25 @@
-# 標準アプリケーションの作成
+# Creating a Standard Application
 
 カスタムオブジェクトに基づいてアプリケーションを作成するには、オブジェクトを作成し、少なくとも1つのフォームビューを作成し、少なくとも1つのテーブルビューを作成して、アプリケーションをデプロイするという4つの手順が必要です。
 
-* [カスタムオブジェクトの作成](#creating-a-custom-object)
-* [フォームビューの作成](#creating-form-views)
-* [テーブルビューの作成](#creating-table-views)
-* [アプリケーションのデプロイ](#deploying-the-application)
+* [カスタムオブジェクトの作成](#creating-a-custom-object) 
+* [フォームビューの作成](#creating-form-views) 
+* [テーブルビューの作成](#creating-table-views) 
+* [アプリケーションのデプロイ](#deploying-the-application) 
 
 ここでは、アプリビルダーを使用して、Time Off Requestというカスタムオブジェクトによってサポートされる2つのシンプルな休暇管理アプリケーションを作成します。 最初のアプリケーションは、リクエストの追加フォームを表示する［Time Off Requester］ウィジェットです。 ユーザーは、休暇をリクエストするときにこのフォームに記入します。 2番目のアプリケーションは、プロダクトメニューにデプロイされた休暇管理アプリケーションで、ここで管理ユーザーは休暇申請を表示および管理できます。
 
 ## カスタムオブジェクトの作成
 
-1. グローバルメニュー（![Applications Menu](../../../images/icon-applications-menu.png)）を開き、［コントロールパネル］&rarr; ［アプリビルダー］ &rarr; ［カスタムオブジェクト］に移動します。
+1. アプリケーションメニュー(![Applications Menu](../../../images/icon-applications-menu.png)) を開き、コントロールパネル &rarr; アプリビルダー &rarr; カスタムオブジェクト に移動します。
 
-1. 追加ボタン（![Add](../../../images/icon-add.png)）をクリックします。
+1. 追加ボタン (![Add](../../../images/icon-add.png)) をクリックします。
 
-1. 名前を入力します： **Time Off Request** 。
+1. 名前を入力してください： _Time Off Request_.
 
-1. オブジェクトのフォームビューを作成し、オブジェクトに存在するデータフィールドを定義するには、 ［**Continue and Create Form View**］ 設定をオンのままにして、 ［**Continue**］ をクリックします。
+1. オブジェクトのフォーム・ビューを作成し、オブジェクトに存在するデータ・フィールドを定義するには、_Continue and Create Form View_設定をチェックしたままにして、_Continue_をクリックします。
 
-   ![カスタムオブジェクトの作成は、アプリビルダーアプリケーションを作成するための最初のステップです。](./creating-a-standard-application/images/01.png)
+   ![Creating a custom object is the first step to writing an App Builder application.](./creating-a-standard-application/images/01.png)
 
 フォームビューを作成して、Time Off Requestオブジェクトに含めるデータフィールドを定義します。
 
@@ -29,20 +29,20 @@
 
 1. カスタムオブジェクトを開きます（［コントロールパネル］ &rarr; ［アプリビルダー］ &rarr; ［カスタムオブジェクト］）。
 
-1. ［**Form Views**］ タブで、［Add］ボタンをクリックします。 フォームビルダーが表示されます。
+1. フォーム・ビュー」タブで「追加」ボタンをクリックします。 フォームビルダーが表示されます。
 
-1. フォームビューに **Add Request** という名前を付けます 。
+1. フォームビューに _Add Request_ という名前を付けます。
 
 1. スクリーンショットのレイアウトを使用して、以下を追加します。
 
-    * ［**Name**］ というラベルの付いた必須テキストフィールド
-    * ［**From**］ というラベルがついた必須の日付フィールド
-    * ［**To**］ というラベルがついた必須の日付フィールド
-    * ［**Comment**］ というラベルがついたオプションのテキストフィールド（複数行を入力可）
+   * 名前_」と書かれた必須テキスト・フィールド
+   * というラベルの必須日付フィールド。
+   * To_と書かれた必須日付フィールド
+   * Comment_と書かれたオプションのテキストフィールド。
 
 1. フォームビューを保存します。
 
-    ![アプリビルダー内に埋め込まれたフォームビルダーを使用して、フォームビューを作成します。](./creating-a-standard-application/images/02.png)
+   ![Use the form builder embedded inside the App Builder to create form views.](./creating-a-standard-application/images/02.png)
 
 埋め込みのフォームビルダーに加えて、カスタムオブジェクトに含まれるフィールド（他のフォームビューがある場合）は、左側のサイドバーのフォームビューに追加できます。
 
@@ -54,11 +54,11 @@
 
 1. Time Off Requestオブジェクトを開きます（［コントロールパネル］ &rarr; ［アプリビルダー］ &rarr; ［カスタムオブジェクト］）。
 
-1. ［テーブルビュー］タブで、 **追加** ボタンをクリックします。 テーブルビルダーが表示されます。
+1. テーブル・ビュー]タブで、[追加]ボタンをクリックします。 テーブルビルダーが表示されます。
 
-    ![アプリビルダー内に埋め込まれたテーブルビルダーを使用して、テーブルビューを作成します。](./creating-a-standard-application/images/03.png)
+   ![Use the table builder embedded inside the App Builder to create table views.](./creating-a-standard-application/images/03.png)
 
-1. テーブルビューに **Time Off Requests** という名前を付けます。
+1. テーブルビューに _Time Off Requests_ という名前を付けます。
 
 1. ［コメント］フィールド以外の使用可能なすべてのフィールドをテーブルキャンバスにドラッグします。
 
@@ -67,7 +67,6 @@
 ```{note}
 テーブルビューにはありませんが、［コメント］フィールドは個々のレコードの詳細ビューに表示されます。 デプロイされたアプリケーションで、テーブルビューから特定のレコードをクリックして、詳細ビューを表示します。 
 ```
-
 ## アプリケーションのデプロイ
 
 アプリケーションをデプロイすると、ユーザーがアプリケーションにアクセスできるようになります。 いくつかのデプロイオプションがあります。 デプロイオプションについては、 [アプリビルダー](../app-builder.md#deployment) の概要を参照してください。
@@ -76,21 +75,20 @@ Time Off Requestには、デプロイする2つのアプリがあります。1�
 
 1. Time Off Requestを開きます（［コントロールパネル］ &rarr; ［アプリビルダー］ &rarr; ［カスタムオブジェクト］）。
 
-1. ［**Apps**］ タブで、追加ボタンをクリックします（![追加](../../../images/icon-add.png)).
+1. _Apps_タブでAddボタンをクリックします（！[Add](../../../images/icon-add.png) ）。
 
    ```{note}
-   オブジェクト（DXPサブスクライバーが利用可能）の「ワークフロー対応」アプリを作成する場合は、グローバルメニューのアプリエントリからアプリを作成してデプロイする必要があります。 詳細は、 [ワークフロー対応アプリケーションの作成](./creating-a-workflow-powered-application.md) を参照してください。
+   オブジェクト（DXPサブスクライバーが利用可能）の「ワークフロー対応」アプリを作成する場合は、グローバルメニューのアプリエントリからアプリを作成してデプロイする必要があります。 詳細については、 [ワークフローを利用したアプリケーションの作成](./creating-a-workflow-powered-application.md) を参照してください。
    ```
-
-1. アプリに **Time Off Requester** という名前を付けます 。
+1. アプリ名を_Time Off Requester_とします。
 
 1. フォームビューとテーブルビューを選択し、アプリの [デプロイオプション](../app-builder.md#deployment) を設定します。
 
-   Time Off Requesterアプリケーションの場合、 ［**ウィジェット**］ を選択して、 ［**デプロイする**］ をクリックします。 Time Off Requesterウィジェットアプリケーションをページにデプロイし、サイトのユーザーがすぐに利用できるようになりました。
+   Time Off Requesterアプリケーションについて、_Widget_を選択し、_Deploy_をクリックします。 Time Off Requesterウィジェットアプリケーションをページにデプロイし、サイトのユーザーがすぐに利用できるようになりました。
 
-1. 同じ手順に従って、 **Time Off Request Manager** と呼ばれる2番目のアプリを作成します。今回は、プロダクトメニューにアプリをデプロイすることを選択します（デフォルトの選択のままにして、グローバルメニューに追加します）。
+1. 同じ手順で、_Time Off Request Manager_という2つ目のアプリを作成し、今度はProduct Menuにアプリを配置することを選択します（デフォルトのApplications Menuに追加する選択のままにしておきます）。
 
-    ![これが、グローバルメニューの［Time Off Request Manage］エントリです。](./creating-a-standard-application/images/04.png)
+   ![Here's the Time Off Request Manage entry in the Applications Menu.](./creating-a-standard-application/images/04.png)
 
 管理者は、プロダクトメニューのTime Off Managerアプリケーションにアクセスして、サイトユーザーからの休暇申請の管理を開始できるようになりました。
 
@@ -100,9 +98,9 @@ Time Off Requestには、デプロイする2つのアプリがあります。1�
 
 1. カスタムオブジェクトを開きます（［コントロールパネル］ &rarr; ［アプリビルダー］ &rarr; ［カスタムオブジェクト］）。
 
-1. ［**Apps**］ タブで、アンデプロイするアプリのケバブメニューをクリックします。
+1. Apps_タブで、アンデプロイしたいアプリのケバブメニューをクリックします。
 
-1. ［**Undeploy**］ を選択します。
+1. Undeploy_を選択する。
 
 ## データレコードを含むオブジェクトの編集
 
@@ -112,23 +110,23 @@ Time Off Requestには、デプロイする2つのアプリがあります。1�
 
 データレコードが既にあるオブジェクトからフィールドを削除すると、そのフィールドはUIに表示されなくなりますが、データは削除されません。 削除されたフィールドと同じ名前とタイプのフィールドを作成すると、フィールドのデータはそのデータを既に保持しているレコードに復元されます。
 
-既存のオブジェクトからフィールドを削除するには、オブジェクトビューでフィールドにカーソルを合わせ、 ［**x**］ をクリックします。 確認を求められ、データ損失について警告されます。
+既存のオブジェクトからフィールドを削除するには、オブジェクトビューでその上にカーソルを置き、_x_をクリックします。 確認を求められ、データ損失について警告されます。
 
-![フィールドを削除すると、既存のレコードのデータが失われます。](./creating-a-standard-application/images/06.png)
+![Deleting a field causes data loss for existing records.](./creating-a-standard-application/images/06.png)
 
 ### フィールドの追加と編集
 
 既存のフィールドを追加または編集する場合、変更は追加または編集後に追加されたレコードにのみ影響します。 既存のレコードは、変更による影響を受けません。
 
-フィールドを既存のオブジェクトに追加するには、任意のフォームビューを開き、フォームビルダーの左側のペインにある **追加** ボタンをクリックします。
+既存のオブジェクトにフィールドを追加するには、いずれかのフォームビューを開き、フォームビルダーの左ペインにある_Add_ボタンをクリックします。
 
-![既存のオブジェクトにフィールドを直接追加できます。](./creating-a-standard-application/images/05.png)
+![You can add a field directly to an existing object.](./creating-a-standard-application/images/05.png)
 
 フィールドを編集するには、そのフォームビューに移動し、フォームビルダーでフィールドをクリックして、そのプロパティを表示します。
 
-![フォームビューからフィールドを編集できます。](./creating-a-standard-application/images/07.png)
+![You can edit a field from its form view.](./creating-a-standard-application/images/07.png)
 
 ## 関連情報
 
-* [App Builder Overview](../app-builder.md)
-* [Creating a Workflow Powered App](./creating-a-workflow-powered-application.md)
+* [アプリ・ビルダー概要](../app-builder.md) 
+* [ワークフローを活用したアプリの作成](./creating-a-workflow-powered-application.md) 

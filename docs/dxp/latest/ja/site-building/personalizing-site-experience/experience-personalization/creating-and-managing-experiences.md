@@ -1,54 +1,57 @@
 # エクスペリエンスの作成と管理
 
-{bdg-secondary}`利用可能な Liferay 7.4+, 7.3 FP1+, および 7.2 FP11+`
+{bdg-secondary}`利用可能なLiferay 7.4+、7.3 FP1+、7.2 FP11+`。
 
-**Experiences** を使って、ユーザーグループごとにコンテンツページをカスタマイズすることができます。 [コンテンツページのパーソナライゼーション](./content-page-personalization.md) を参照し、体験がサイトのパーソナライゼーションにどのように貢献できるかを学んでください。
+*エクスペリエンス*を使用して、ユーザーグループごとにコンテンツページをカスタマイズできます。 エクスペリエンスがサイトのパーソナライゼーションにどのように貢献できるかについては、 [コンテントページのパーソナライゼーション](./content-page-personalization.md) を参照してください。
 
-## クリエイション・エクスペリエンス
+## エクスペリエンスの作成
 
-1. **サイトメニュー**( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 **サイトビルダー** &rarr; **ページ** に進みます。
+1. *サイトメニュー* (![サイトメニュー](../../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ページ_に進みます。
 
-1. コンテンツページの「**アクション**」(![Actions Button](../../../images/icon-actions.png)) をクリックし、「**編集**」 を選択します。 または、 [コンテンツページ](../../creating-pages/using-content-pages.md)を作成します。
+1. コンテンツページの_Actions_(![Actions Button](../../../images/icon-actions.png)) をクリックし、_Edit_を選択します。 または、 [コンテントページを作成します](../../creating-pages/using-content-pages.md) 。
 
-1. **エクスペリエンス** ドロップダウン メニューを開き、 **新規エクスペリエンス** をクリックします。
+1. [経験] ドロップダウン・メニューを開き、[新規経験] をクリックします。
 
-   ![[エクスペリエンス] ドロップダウン メニューを開き、 [新規エクスペリエンス] をクリックします。](./creating-and-managing-experiences/images/01.png)
+   ![Open the Experience drop-down menu and click New Experience.](./creating-and-managing-experiences/images/01.png)
 
-1. エクスペリエンスの名前を入力し、ターゲットとするオーディエンスセグメントを選択します。 または、 [セグメントを作成する](../segmentation/creating-and-managing-user-segments.md)。
+1. エクスペリエンスの名前を入力し、ターゲットとするオーディエンスセグメントを選択します。 または、 [セグメントを作成します](../segmentation/creating-and-managing-user-segments.md) 。
 
-   デフォルトでは、新しいエクスペリエンスは、 **Anyone**（つまり、すべてのサイト訪問者）をターゲットとしています。
+   デフォルトでは、新しい体験は_誰でも_セグメント（つまり、すべてのサイト訪問者）をターゲットにしています。
 
-1. ターゲットとするセグメントに対して、表示される情報やレイアウトを決定するためのコンテンツページの設計。
+1. コンテントページを設計し、ターゲットとするセグメントに対して表示される情報やレイアウトを決定します。
 
-1. **エクスペリエンス** ドロップダウン メニューを開き、 **上**(![Up](../../../images/icon-angle-up.png)) または **下**(![Down](../../../images/icon-angle-down.png)) ボタンをクリックしてエクスペリエンスの優先順位を設定します。
+1. *Experience*ドロップダウンメニューを開き、_Up_ (![Up](../../../images/icon-angle-up.png)) または _Down_ (![Down](../../../../images/icon-angle-down.png)) ボタンをクリックして、エクスペリエンスの優先順位を設定します。
 
-   サイト訪問者は、そのセグメントで最も高いランキングのエクスペリエンスを見ることができます。 詳しくは、 [Understanding How Experiences Work](./content-page-personalization.md#understanding-how-experiences-work) をご覧ください。
+   サイト訪問者は、そのセグメントで最高ランキングのエクスペリエンスを見ることができます。 詳しくは、 [エクスペリエンスがどのように機能するかを理解する](./content-page-personalization.md#understanding-how-experiences-work) をご覧ください。
 
-1. ［**Publish**］ をクリックします。
+1. *［公開］*をクリックします。
 
+```{tip}
+もしユーザーがログインしていて、ページを編集する権限を持っていて、複数のエクスペリエンスがある場合、 [、選択したエクスペリエンスに基づいて、](../../creating-pages/adding-pages/adding-a-page-to-a-site.md#previewing-pages) 、ページを閲覧/プレビューすることができます。
+```
 ## エクスペリエンスの管理
 
-コンテンツページを編集する際、エクスペリエンスをクリックすると、そのページのオプションを管理することができます。
+コンテントページを編集するとき、［エクスペリエンス］をクリックして、そのページのオプションを管理できます。
 
-![エクスペリエンスの優先度を追加、編集、削除、または変更できます。](./creating-and-managing-experiences/images/03.png)
+![You can add, edit, delete, or change priority for Experiences.](./creating-and-managing-experiences/images/03.png)
 
-1. **サイトメニュー**( ![Site Menu](../../../images/icon-product-menu.png) ) を開き、 **サイトビルダー** &rarr; **ページ** にアクセスします。
+1. *サイトメニュー* (![サイトメニュー](../../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ページ_に進みます。
 
-1. コンテンツページの「**アクション**」(![Actions Button](../../../images/icon-actions.png)) をクリックし、「**編集**」 を選択します。
+1. コンテンツページの_Actions_ (![Actionsボタン](../../../images/icon-actions.png))をクリックし、_Edit_を選択します。
 
-1. **エクスペリエンス** ドロップダウン・メニューを開きます。 ここから
+1. *経験*ドロップダウンメニューを開きます。 次に以下を行います。
 
-   * 上 (![Up](../../../images/icon-angle-up.png)) と下 (![Down](../../../images/icon-angle-down.png)) のコントロールを使って、エクスペリエンスの優先順位を設定します。
-   * エクスペリエンスの名前または選択したセグメントを編集する（![Edit](../../../images/icon-edit.png)）。
-   * Duplicate (![Duplicate](../../../images/icon-copy.png)) the experience.
-   * エクスペリエンスの(![削除](../../../images/icon-delete.png)削除）。
+   * アップ（！[Up]（../../../images/icon-angle-up.png））とダウン（！[Down]（../../../images/icon-angle-down.png））コントロールを使用して、経験の優先順位を設定します。
+   * 編集 (![Edit](../../../images/icon-edit.png)) 経験の名前または選択したセグメントを編集します。
+   * [Duplicate](../../../images/icon-copy.png)) の経験を複製する。
+   * エクスペリエンスを削除 (![Delete](../../../images/icon-delete.png)) する。
 
    ```{important}
-   ドロップダウンメニューの経験の順序は、優先順位を決定します。 詳しくは、 [体験の仕組みを理解する](./content-page-personalization.md#understanding-how-experiences-work) をご覧ください。
+   ドロップダウンメニューのエクスペリエンスの順序は、重要度を決定します。 詳しくは、 [エクスペリエンスがどのように機能するかを理解する](./content-page-personalization.md#understanding-how-experiences-work) をご覧ください。
    ```
 
 ## 関連情報
 
-- [コンテントページのパーソナライゼーション](./content-page-personalization.md)
-- [コレクションのパーソナライズ](./personalizing-collections.md)
-- [ユーザーセグメントの作成と管理](../segmentation/creating-and-managing-user-segments.md)
+* [コンテンツページのパーソナライズ](./content-page-personalization.md) 
+* [パーソナライズ・コレクション](./personalizing-collections.md) 
+* [ユーザーセグメントの作成と管理](../segmentation/creating-and-managing-user-segments.md) 

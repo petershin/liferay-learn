@@ -9,9 +9,9 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順を実行します。
+その後、以下の手順に従ってください：
 
-1. [Batch Engine API Basics](./liferay-g4j2.zip) をダウンロードして解凍します。
+1. [Batch Engine API Basics](./liferay-g4j2.zip) をダウンロードして解凍する。
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/liferay-g4j2.zip -O
@@ -21,15 +21,15 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
    unzip liferay-g4j2.zip
    ```
 
-1. データをインポートするには、インポートするエンティティの完全修飾クラス名が必要です。 `/o/api`でインストールされているAPIエクスプローラーからクラス名を取得することができます。 **Schemas** セクションまでスクロールダウンし、インポートしたいエンティティの `x-class-name` フィールドをメモしておきます。
+1. データをインポートするには、インポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPI Explorerの `/o/api` から取得できる。 *スキーマ*セクションまでスクロールダウンし、インポートしたいエンティティの`x-class-name`フィールドをメモする。
 
-1. 以下のcURLスクリプトを使用して、Liferayインスタンスにアカウントをインポートします。 コマンドラインで、 `curl`フォルダに移動します。 **アカウント** の完全修飾クラス名をパラメータとして`ImportTask_POST_ToInstance.sh` スクリプトを実行します。
+1. 以下のcURLスクリプトを使用して、Liferayインスタンスにアカウントをインポートします。 コマンドラインで `curl` フォルダに移動します。 `ImportTask_POST_ToInstance.sh`スクリプトを_Account_の完全修飾クラス名をパラメータとして実行する。
 
    ```bash
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
    ```
 
-   JSON応答は、新しいインポートタスクの作成を示しています。 タスクの `id` に注意してください。
+   JSON応答は、新しいインポートタスクの作成を示しています。 タスクの`id`に注意：
 
    ```json
    {
@@ -48,7 +48,7 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
    }
    ```
 
-1. 現在の `executeStatus` は `INITIAL`です。 バッチエンジンへのタスクの送信を示します。 これが`COMPLETED`になるまで待ち、データを確認する必要があります。 コマンドラインで、 `ImportTask_GET_ById.sh` スクリプトを実行し、 `1234` をインポートタスクのIDに置き換えます。
+1. 現在の `executeStatus` は `INITIAL` である。 バッチエンジンへのタスクの送信を示します。 データを確認するためには、これが`COMPLETED`になるまで待たなければならない。 コマンドラインで`ImportTask_GET_ById.sh`スクリプトを実行し、`1234`をインポートタスクのIDに置き換える。
 
    ```bash
    ./ImportTask_GET_ById.sh 1234
@@ -72,33 +72,33 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
    }
    ```
 
-   `executeStatus` が `COMPLETED`の場合、インポートデータを確認することができます。 実行されていない場合は、再度コマンドを実行し、タスクの実行が終了したことを確認します。 `executeStatus`が`FAILED`を示している場合、`errorMessage`フィールドで、何が問題だったかを確認します。
+   `executeStatus`が`COMPLETED`の場合、インポートしたデータを確認することができる。 実行されていない場合は、再度コマンドを実行し、タスクの実行が終了したことを確認します。 もし `executeStatus`が`FAILED`と表示されたら、`errorMessage` フィールドをチェックして、何が問題だったのかを理解する。
 
-1. **グローバルメニュー**(![Applications Menu icon](../../images/icon-applications-menu.png)) を開き、 ［**コントロールパネル**］ &rarr; ［**Accounts**］ に移動して、インポートしたデータを確認します。 新しいアカウントが2つ追加されたことを確認します。
+1. *グローバルメニュー* ([アプリケーションメニューアイコン](../../images/icon-applications-menu.png))を開き、_コントロールパネル_ &rarr; _アカウント_ に移動して、インポートされたデータを確認します。 新しいアカウントが2つ追加されたことを確認します。
 
-   ![2つの新規アカウントが追加されたことを確認します。](./batch-engine-api-basics/images/01.png)
+   ![Verify that two new accounts have been added.](./batch-engine-api-basics/images/01.png)
 
-1. また、Javaクライアントを使用してThe RESTサービスを呼び出すことができます。 `curl` フォルダから、 `java` フォルダに移動します。 ソースファイルをコンパイルします。
+1. また、Javaクライアントを使用してThe RESTサービスを呼び出すことができます。 `curl`フォルダから`java` フォルダに移動します。 ソースファイルをコンパイルします。
 
    ```bash
    javac -classpath .:* *.java
    ```
 
-1. `ImportTask_POST_ToInstance` クラスを実行します。 `able`をクラスの完全修飾名に、`baker`をインポートしたいJSONデータに置き換えます。
+1. `ImportTask_POST_ToInstance` クラスを実行する。 `able`をクラスの完全修飾名に、`baker`をインポートしたいJSONデータに置き換える。
 
    ```bash
    java -classpath .:* -DclassName=able -Ddata=baker ImportTask_POST_ToInstance
    ```
 
-   例えば、`Account` のデータをインポートします。
+   例えば、`Account` データをインポートする：
 
    ```bash
    java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"name\": \"Able\", \"type\": \"business\"}, {\"name\": \"Baker\", \"type\": \"guest\"}]" ImportTask_POST_ToInstance
    ```
 
-   JSON応答からインポートタスクの`id`に注意してください。
+   JSONレスポンスから、インポートタスクの`id`に注目してほしい。
 
-1. `ImportTask_GET_ById` クラスを実行します。 `1234` をインポートタスクのIDに置き換えてください。 `executeStatus` が `COMPLETED`と表示されたら、上記の手順でデータを確認することができます。
+1. `ImportTask_GET_ById` クラスを実行する。 `1234`をインポートタスクのIDに置き換えてください。 `executeStatus`に`COMPLETED`と表示されたら、上記の手順でデータを確認することができる。
 
    ```bash
    java -cp .:* -DimportTaskId=1234 ImportTask_GET_ById
@@ -106,7 +106,7 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 
 ## cURLコマンドの検証
 
-`ImportTask_POST_ToInstance.sh` スクリプトは、cURLでREST サービスを呼び出します。
+`ImportTask_POST_ToInstance.sh`スクリプトはcURLを使ってRESTサービスを呼び出す。
 
 ```{literalinclude} ./batch-engine-api-basics/resources/liferay-g4j2.zip/curl/ImportTask_POST_ToInstance.sh
     :language: bash
@@ -114,23 +114,22 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 
 ここでは、コマンドの引数を紹介します。
 
-| 引数                                                                                                                | 説明                              |
-|:----------------------------------------------------------------------------------------------------------------- |:------------------------------- |
-| `-H "Content-Type: application/json"`                                                                             | リクエストボディのフォーマットがJSONであることを示します。 |
-| `-X POST`                                                                                                         | 指定されたエンドポイントで起動するHTTPメソッド       |
-| `"http://localhost:8080/o/headless-batch-engine/v1.0/import-task/${1}"`                                           | RESTサービスのエンドポイント                |
+| 引数                                                                                                | 説明                              |
+| :------------------------------------------------------------------------------------------------ | :------------------------------ |
+| `-H "Content-Type: application/json"`                                                             | リクエストボディのフォーマットがJSONであることを示します。 |
+| `-X POST`                                                                                         | 指定されたエンドポイントで起動するHTTPメソッド       |
+| `"http://localhost:8080/o/headless-batch-engine/v1.0/import-task/${1}"`                           | RESTサービスのエンドポイント                |
 | `-d "[{\"name\": \"Able\", \"type\": \"business\"}, {\"name\": \"Baker\", \"type\": \"guest\"}]"` | お客様が掲載を希望するデータ                  |
-| `-u "test@liferay.com:learn"`                                                                                     | 基本的な認証情報                        |
+| `-u "test@liferay.com:learn"`                                                                     | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) 経由でユーザーを認証する必要があります。 Oauth2を利用したReactアプリケーションのサンプルは、[OAuth2を使ってユーザーを認証する](../using-oauth2/using-oauth2-to-authorize-users.md)をご参照ください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) を介してユーザーを認証する必要があります。 Oauth2 を使用するサンプル React アプリケーションについては、 [Use OAuth2 to authorize users](../using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 ```
-
 他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
 
-`ImportTask_POST_ToInstance.java` クラスは、バッチエンジン関連サービスを呼び出してデータをインポートします。
+`ImportTask_POST_ToInstance.java` クラスはバッチエンジン関連のサービスを呼び出してデータをインポートする。
 
 ```{literalinclude} ./batch-engine-api-basics/resources/liferay-g4j2.zip/java/ImportTask_POST_ToInstance.java
    :dedent: 1
@@ -138,31 +137,29 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
    :lines: 8-20
 ```
 
-このクラスは、次の3行のコードのみを使用してRESTサービスを呼び出します。
+このクラスは、わずか3行のコードでRESTサービスを呼び出します。
 
-| 行（省略形）                                                                         | 説明                                                          |
-|:------------------------------------------------------------------------------ |:----------------------------------------------------------- |
-| `ImportTaskResource.Builder builder = ...`                                     | `ImportTaskResource`サービスインスタンスを生成するための`Builder`を取得します。      |
-| `ImportTaskResource importTaskResource = builder.authentication(...).build();` | 基本認証を指定し、`ImportTaskResource`サービスインスタンスを生成します。              |
-| `importTaskResource.postImportTask(...);`                                      | `importTaskResource.postImportTask`メソッドを呼び出し、postにデータを渡します。 |
+| 行（省略形）                                                                         | 説明                                                        |
+| :----------------------------------------------------------------------------- | :-------------------------------------------------------- |
+| `ImportTaskResource.Builder builder = ...`                                     | `ImportTaskResource`サービスインスタンスを生成するための`Builder` を取得する。    |
+| `ImportTaskResource importTaskResource = builder.authentication(...).build();` | 基本認証を指定し、`ImportTaskResource` サービスインスタンスを生成する。            |
+| `importTaskResource.postImportTask(...);`                                      | `importTaskResource.postImportTask`メソッドを呼び出し、データをpostに渡す。 |
 
-プロジェクトには、依存関係として`com.liferay.headless.batch.engine.client.jar`ファイルが含まれていることに注意してください。 すべてのRESTアプリケーションのクライアントJAR依存関係情報は、`/o/api`でインストール先のAPIエクスプローラーで確認できます。
+このプロジェクトには `com.liferay.headless.batch.engine.client.jar` ファイルが依存関係として含まれていることに注意してください。 すべての REST アプリケーションのクライアント JAR 依存情報は、インストー ルの API エクスプローラーの `/o/api` にある。
 
 ```{note}
-`main`メソッドのコメントでは、クラスの実行を実演しています。
+`main`メソッドのコメントは、クラスの実行を示している。
 ```
-
-他の例のJavaクラスはこれと似ていますが、異なる `ImportTaskResource` メソッドを呼び出します。
+他のJavaクラスの例もこれと似ているが、異なる `ImportTaskResource` メソッドを呼び出している。
 
 ```{important}
-サービスの詳細は [ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java) を参照してください。
+サービスの詳細については、 [ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java) を参照。
 ```
-
 以下は、cURLとJavaを使用して他のBatch Engine import RESTサービスを呼び出す例です。
 
 ## ImportTaskのステータスを取得する
 
-以下のcURLまたはJavaコマンドを実行することで、インポートタスクのステータスを取得することができます。 `1234` をインポートタスクのIDに置き換えてください。
+以下のcURLまたはJavaコマンドを実行することで、インポートタスクのステータスを取得することができます。 `1234`をインポートタスクのIDに置き換えてください。
 
 ### ImportTask_GET_ById.sh
 
@@ -180,7 +177,7 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 
 ### ImportTask_GET_ById.java
 
-`ImportTask_GET_ById`クラスを実行します。 `1234` をインポートタスクのIDに置き換えてください。
+`ImportTask_GET_ById` クラスを実行する。 `1234`をインポートタスクのIDに置き換えてください。
 
 コマンド：
 
@@ -198,7 +195,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ## データをサイトにインポートする
 
-次のcURLまたはJavaコマンドを実行して、サイトにデータをインポートできます。 この例では、ブログの記事をサイトにインポートしています。 [RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、`1234`と置き換えます。 別のエンティティを使用する場合は、cURLスクリプトでインポートする完全修飾クラス名パラメーターとデータも更新する必要があります。
+次のcURLまたはJavaコマンドを実行して、サイトにデータをインポートできます。 この例では、ブログの記事をサイトにインポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、`1234`を置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトでインポートする完全修飾クラス名パラメーターとデータも更新する必要があります。
 
 ### ImportTask_POST_ToSite.sh
 
@@ -216,7 +213,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ### ImportTask_POST_ToSite.java
 
-`ImportTask_POST_ToSite`クラスを実行します。 `1234`をサイトのID、`able`をクラスの完全修飾名、`baker`をインポートしたいJSONデータに置き換えます。
+`ImportTask_POST_ToSite` クラスを実行する。 `1234` をあなたのサイトの ID に、`able` をクラスの完全修飾名に、`baker` をインポートしたい JSON データに置き換える。
 
 コマンド：
 
@@ -224,7 +221,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 java -classpath .:* -DsiteId=1234 -DclassName=able -Ddata=baker ImportTask_POST_ToSite
 ```
 
-例えば、`BlogPosting`データをインポートします。
+例えば、`BlogPosting` データをインポートする：
 
 ```bash
 java -classpath .:* -DsiteId=1234 -DclassName=com.liferay.headless.delivery.dto.v1_0.BlogPosting -Ddata="[{\"articleBody\": \"Foo\", \"headline\": \"Able\"}, {\"articleBody\": \"Bar\", \"headline\": \"Baker\"}]" ImportTask_POST_ToSite
@@ -238,7 +235,7 @@ java -classpath .:* -DsiteId=1234 -DclassName=com.liferay.headless.delivery.dto.
    :lines: 8-22
 ```
 
-JSON応答には、新しく作成されたインポートタスクの情報が表示されます。 `id`に注意して、その`executeStatus`を追跡します。
+JSON応答には、新しく作成されたインポートタスクの情報が表示されます。 その `executeStatus` を追跡するために `id` に注意すること。
 
 ## インポートデータを配置する
 
@@ -260,7 +257,7 @@ JSON応答には、新しく作成されたインポートタスクの情報が�
 
 ### ImportTask_PUT_ById.java
 
-`ImportTask_PUT_ById`クラスを実行します。 `able` をクラスの完全修飾名に、`baker` をJSONデータに置き換えて、そこにあるものを上書きします。 データには、上書きしたいエンティティのIDが含まれているはずです。
+`ImportTask_PUT_ById` クラスを実行する。 `able`をクラスの完全修飾名に、`baker`をJSONデータに置き換えて上書きする。 データには、上書きしたいエンティティのIDが含まれているはずです。
 
 コマンド：
 
@@ -268,7 +265,7 @@ JSON応答には、新しく作成されたインポートタスクの情報が�
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_PUT_ById
 ```
 
-例えば、既存の `Account` のデータを上書きしたい場合は、 `1234` と `5678` を既存のアカウントの ID に置き換えます。
+例えば、既存の`Account`のデータを上書きしたい場合は、`1234`と`5678`を既存のAccountのIDに置き換える：
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\" :1234, \"name\": \"Bar\", \"type\": \"business\"}, {\"id\": 5678, \"name\": \"Goo\", \"type\": \"guest\"}]" ImportTask_PUT_ById
@@ -288,7 +285,7 @@ java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account
 
 ### ImportTask_DELETE_ById.sh
 
-コマンド:
+コマンド：
 
 ```bash
 ./ImportTask_DELETE_ById.sh com.liferay.headless.admin.user.dto.v1_0.Account
@@ -302,7 +299,7 @@ java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account
 
 ### ImportTask_DELETE_ById.java
 
-`ImportTask_DELETE_ById`クラスを実行します。 `able` をクラスの完全修飾名に、`baker` をJSONデータに置き換えて、そこにあるものを上書きします。 データには、削除したいエンティティのIDが含まれているはずです。
+`ImportTask_DELETE_ById` クラスを実行する。 `able`をクラスの完全修飾名に、`baker`をJSONデータに置き換えて上書きする。 データには、削除したいエンティティのIDが含まれているはずです。
 
 コマンド：
 
@@ -310,7 +307,7 @@ java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account
 java -classpath .:* -DclassName=able -Ddata=baker ImportTask_DELETE_ById
 ```
 
-例えば、 `Account`データを削除する場合は、`1234`と`5678`を既存のアカウントの ID に置き換えます。
+例えば、`アカウント`のデータを削除したい場合は、`1234`と`5678`を既存のアカウントのIDに置き換える：
 
 ```bash
 java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account -Ddata="[{\"id\": 1234}, {\"id\": 5678}]" ImportTask_DELETE_ById
@@ -326,7 +323,7 @@ java -classpath .:* -DclassName=com.liferay.headless.admin.user.dto.v1_0.Account
 
 ## インポートデータの内容を取得する
 
-インポートしたデータは、以下のcURLコマンドとJavaコマンドで取得することができます。 `1234` をインポートタスクのIDに置き換えてください。 そして、現在のディレクトリに `.zip` ファイルとしてダウンロードされます。
+インポートしたデータは、以下のcURLコマンドとJavaコマンドで取得することができます。 `1234`をインポートタスクのIDに置き換える。 その後、カレントディレクトリに`.zip`ファイルとしてダウンロードされる。
 
 ### ImportTaskContent_GET_ById.sh
 
@@ -358,8 +355,9 @@ java -classpath .:* -DimportTaskId=1234 ImportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、ヘッドレスバッチエンジンの全サービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
+[APIエクスプローラー](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) には、ヘッドレスバッチエンジンの全サービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 
 ## 関連トピック
 
-* [バッチエンジンAPIの基本 - データのエクスポート](./batch-engine-api-basics-exporting-data.md)
+* [バッチエンジン API の基本 - データのエクスポート](./batch-engine-api-basics-exporting-data.md) 
+* [データ移行センター](./data-migration-center.md) 

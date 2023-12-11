@@ -8,69 +8,68 @@
 
 以下の手順で、オブジェクトデータをGoogle シートに同期させます。
 
-1. [Make](https://www.make.com/) にサインインし、 ［**Scenarios**］ ページに移動し、 ［**Create a new scenario**］ をクリックします。
+1. [Make](https://www.make.com/) にサインインし、_Scenarios_ ページに移動し、_Create new scenario_ をクリックします。
 
-   ![［Create a new scenario］をクリックします。](./using-make-to-sync-object-data-with-google-sheets/images/01.png)
+   ![Click Create a new scenario.](./using-make-to-sync-object-data-with-google-sheets/images/01.png)
 
-1. **追加** ボタンをクリックし、 ［**Webhooks**］ モジュールを選択し、 ［**Custom webhook**］ トリガーを選びます。
+1. *Add* ボタンをクリックし、_Webhooks_ モジュールを選択し、_Custom webhook_ トリガーを選択します。
 
    Webhookがデータを受信した際にシナリオを実行します。
 
-   ![Webhooksを選択します。](./using-make-to-sync-object-data-with-google-sheets/images/02.png)
+   ![Select Webhooks.](./using-make-to-sync-object-data-with-google-sheets/images/02.png)
 
-   ![［Custom webhook］を選択します。](./using-make-to-sync-object-data-with-google-sheets/images/03.png)
+   ![Select Custom webhook.](./using-make-to-sync-object-data-with-google-sheets/images/03.png)
 
-1. 新しいモジュールを選択し、 **追加** をクリックして、新しいWebhookを生成します。
+1. 新しいモジュールを選択し、_追加_をクリックして新しいWebhookを生成します。
 
-   ![モジュールを選択し、追加をクリックします。](./using-make-to-sync-object-data-with-google-sheets/images/04.png)
+   ![Select the module and click Add.](./using-make-to-sync-object-data-with-google-sheets/images/04.png)
 
-1. 作成後、生成された **Webhook URL** をコピーします。
+1. 作成したら、生成された_webhook URL_をコピーする。
 
-   ![生成されたWebhookのURLをコピーしてください。](./using-make-to-sync-object-data-with-google-sheets/images/05.png)
+   ![Copy the generated webhook URL.](./using-make-to-sync-object-data-with-google-sheets/images/05.png)
 
-1. Liferayインスタンスでは、コピーしたURLを使って [オブジェクトアクションを定義し](../../creating-and-managing-objects/actions/defining-object-actions.md)、新しいオブジェクトエントリーが追加されるたびにwebhookエンドポイントにリクエストを送ります。
+1. Liferayインスタンスでは、コピーしたURLを使って [オブジェクトアクションを定義し](../../creating-and-managing-objects/actions/defining-object-actions.md) 、新しいオブジェクトエントリーが追加されるたびにwebhookエンドポイントにリクエストを送ります。
 
-   ![エントリーが追加されるたびに、webhookエンドポイントにリクエストを送信するアクションを定義します。](./using-make-to-sync-object-data-with-google-sheets/images/06.png)
+   ![Define an action that sends a request to the webhook endpoint whenever an entry is added.](./using-make-to-sync-object-data-with-google-sheets/images/06.png)
 
 1. Webhookをトリガーするためのテストオブジェクトエントリを追加します。
 
    これにより、Webhookモジュールがオブジェクトのデータ構造を自動的に決定することができます。
 
-1. モジュールがオブジェクトのデータ構造を正常に決定したことを確認し、 ［**OK**］ をクリックします。
+1. モジュールがオブジェクトのデータ構造を正常に決定したことを確認し、_OK_をクリックします。
 
-   ![オブジェクトのデータ構造が正常に決定されたことを確認します。](./using-make-to-sync-object-data-with-google-sheets/images/07.png)
+   ![Verify the Object's data structure was determined successfully.](./using-make-to-sync-object-data-with-google-sheets/images/07.png)
 
    ```{note}
-   オブジェクトの構造が変更された場合は、Webhookモジュールの編集に戻り、［**Redetermine data structure**］**をクリックします。
+   Object の構造が変更された場合は、Webhooks モジュールの編集に戻り、*Redetermine data structure* をクリックします。
    ```
+1. *Add new module*ボタンをクリックし、_Google Sheets_モジュールを選択し、_Add a row_アクションを選択します。
 
-1. ［**Add new module**］ ボタンをクリックし、 ［**Google Sheets**］ モジュールを選択し、 ［**Add a Row**］ アクションを選びます。
+   ![Select Google Sheets.](./using-make-to-sync-object-data-with-google-sheets/images/08.png)
 
-   ![Google シートを選択します。](./using-make-to-sync-object-data-with-google-sheets/images/08.png)
+   ![Select Add a row.](./using-make-to-sync-object-data-with-google-sheets/images/09.png)
 
-   ![［Add a Row］を選択します。](./using-make-to-sync-object-data-with-google-sheets/images/09.png)
+1. 新しいモジュールを選択し、_追加_をクリックしてGoogleアカウントを接続します。
 
-1. 新しいモジュールを選択し、 **追加** をクリックして、Googleアカウントを接続します。
+1. 接続名を入力し、_Save_をクリックします。
 
-1. ［Connection name］を入力し、 ［**Save**］ をクリックします。
+    これにより、連携したいGoogleアカウントを選択し、そのアカウントのファイルにアクセスするMake権限を付与するためのウィンドウが開きます。
 
-   これにより、連携したいGoogleアカウントを選択し、そのアカウントのファイルにアクセスするMake権限を付与するためのウィンドウが開きます。
+    ![Add a Google connection.](./using-make-to-sync-object-data-with-google-sheets/images/10.png)
 
-   ![Google接続を追加します。](./using-make-to-sync-object-data-with-google-sheets/images/10.png)
+    Make権限を付与した後、Google Sheetsモジュールの編集に戻ります。
 
-   Make権限を付与した後、Google Sheetsモジュールの編集に戻ります。
-
-1. モジュールのモードを決定してから、目的の **Spreadsheet** と **Sheet** を選択し、オブジェクトと同期させます。
+1. モジュールのモードを決定し、オブジェクトと同期する_スプレッドシート_と_シート_を選択します。
 
 1. 選択されたシートがヘッダーが含まれているかどうかを示します。
 
-1. シートの列をオブジェクトのストラクチャーのデータフィールドにマッピングします。 利用可能なオブジェクトフィールドは、 **Webhooks** モジュールによって提供されます。
+1. シートの列をオブジェクトのストラクチャーのデータフィールドにマッピングします。 利用可能な Object フィールドは、_Webhooks_ モジュールによって提供されます。
 
-   ![シートの列をオブジェクトのフィールドにマッピングします。](./using-make-to-sync-object-data-with-google-sheets/images/11.png)
+    ![Map the Sheet's columns to Object fields.](./using-make-to-sync-object-data-with-google-sheets/images/11.png)
 
-1. ［**Scheduling**］ をオンにし、このシナリオを **保存** します。
+1. スケジューリング_をオンにして、シナリオを保存_してください。
 
-   ![スケジューリングをオンにします。](./using-make-to-sync-object-data-with-google-sheets/images/12.png)
+    ![Turn on scheduling.](./using-make-to-sync-object-data-with-google-sheets/images/12.png)
 
 保存後、選択したシートに新しいオブジェクトの入力データが追加されます。
 
@@ -78,70 +77,68 @@
 
 以下の手順で、Google シートのデータをオブジェクトに同期させます。
 
-1. Makeを開き、［Scenarios］ページに移動し、 ［**Create a new scenario**］ をクリックします。
+1. Makeを開き、シナリオページに移動し、_新しいシナリオを作成_をクリックします。
 
-   ![［Create a new scenario］をクリックします。](./using-make-to-sync-object-data-with-google-sheets/images/13.png)
+   ![Click Create a new scenario.](./using-make-to-sync-object-data-with-google-sheets/images/13.png)
 
-1. **追加** ボタンをクリックし、 ［**Google Sheets**］ モジュールを選択し、 ［**Watch Rows**］ トリガーを選びます。
+1. Add "ボタンをクリックし、"Google Sheets "モジュールを選択し、"Watch rows "トリガーを選択する。
 
    シートの新しい行を監視するようモジュールを設定します。
 
-   ![Google シートを選択します。](./using-make-to-sync-object-data-with-google-sheets/images/14.png)
+   ![Select Google Sheets.](./using-make-to-sync-object-data-with-google-sheets/images/14.png)
 
-   ![［Watch rows］を選択します。](./using-make-to-sync-object-data-with-google-sheets/images/15.png)
+   ![Select Watch rows.](./using-make-to-sync-object-data-with-google-sheets/images/15.png)
 
-1. 新しいモジュールを選択し、 **追加** をクリックして、Googleアカウントを接続します。
+1. 新しいモジュールを選択し、_追加_をクリックしてGoogleアカウントを接続します。
 
-1. ［接続名］を入力し、 ［**保存**］ をクリックします。
+1. 接続名を入力し、_Save_をクリックします。
 
    これにより、連携したいGoogleアカウントを選択し、そのアカウントのファイルにアクセスするMake権限を付与するためのウィンドウが開きます。
 
-   ![Google接続を追加します。](./using-make-to-sync-object-data-with-google-sheets/images/16.png)
+   ![Add a Google connection.](./using-make-to-sync-object-data-with-google-sheets/images/16.png)
 
-1. 目的の ［**Spreadsheet**］ と ［**Sheet**］ を選択します。
+1. 目的の_スプレッドシート_と_シート_を選択する。
 
-1. 選択したシートがヘッダーを含むかどうかを示し、監視する列の範囲を入力します（例： `A1:E1` は、A列からE列にデータ入力を送信します）。
+1. 選択したシートがヘッダーを含むかどうかを示し、監視する列の範囲を入力します（例：`A1:E1`はA列からE列のデータ入力を送信します）。
 
 1. 1回の実行サイクルで処理される結果の制限を設定します。
 
-1. 完了したら、 ［**OK**］ をクリックします。
+1. 完了したら_OK_をクリックします。
 
-1. ［**Add new module**］ ボタンをクリックし、 ［**HTTP**］ モジュールを選択し、 ［**Make a Basic Auth request**］ アクションを選びます。
+1. *Add new module*ボタンをクリックし、_HTTP_モジュールを選択し、_Make a Basic Auth request_アクションを選択します。
 
-   ![HTTPを選択します。](./using-make-to-sync-object-data-with-google-sheets/images/17.png)
+   ![Select HTTP.](./using-make-to-sync-object-data-with-google-sheets/images/17.png)
 
-   ![［Make a Basic Auth request］を選択します。](./using-make-to-sync-object-data-with-google-sheets/images/18.png)
+   ![Select Make a Basic Auth request.](./using-make-to-sync-object-data-with-google-sheets/images/18.png)
 
    ```{important}
    デモ目的でのみベーシック認証を使用しています。 ビジネスユースケースでは、より安全な認証方法を使用してください（例：*Make an OAuth 2.0 request*）。
    ```
+1. 新しいモジュールを選択し、_Add_ をクリックして基本認証情報を追加します。
 
-1. 新しいモジュールを選択し、 **追加** をクリックして、基本認証情報を追加します。
+1. 追加したら、オブジェクトのヘッドレスAPI URLを入力する：`https://<your-domain>/o/c/<objectname>/`. 詳細は、 [ヘッドレスフレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md) を参照してください。
 
-1. 追加されたら、オブジェクトのHeadless APIのURLを入力し、次のフォーマット：`https://<your-domain>/o/c/<objectname>/`を使用します。  詳細は、 [ヘッドレスフレームワークの統合](../../understanding-object-integrations/using-custom-object-apis.md) を参照してください。
+1. *post*メソッドのタイプを選択します。
 
-1. **post** 方式タイプを選択します。
+    ![Add credentials, enter the Object's Headless API URL, and select the post method.](./using-make-to-sync-object-data-with-google-sheets/images/19.png)
 
-   ![認証情報を追加し、オブジェクトのHeadless APIのURLを入力し、post方式を選択します。](./using-make-to-sync-object-data-with-google-sheets/images/19.png)
-
-1. 目的の［Body type］（例： **RAW**）とリクエストの［Content type］（例： **JSON**）を選択してください。
+1. 希望のボディタイプ（例：_RAW_）とリクエストのコンテンツタイプ（例：_JSON_）を選択する。
 
 1. 選択したコンテンツの種類とターゲットオブジェクトに適した書式でリクエスト本文を入力します。
 
-   ![［Make a Basic Auth request］を選択します。](./using-make-to-sync-object-data-with-google-sheets/images/20.png)
+    ![Select Make a Basic Auth request.](./using-make-to-sync-object-data-with-google-sheets/images/20.png)
 
-1. ［**OK**］ をクリックします。
+1. *OK*をクリックしてください。
 
-1. ［**Scheduling**］ をオンにし、このシナリオを **保存** します。
+1. スケジューリング_をオンにして、シナリオを保存_してください。
 
-   ![スケジューリングをオンにして、シナリオを保存します。](./using-make-to-sync-object-data-with-google-sheets/images/21.png)
+    ![Turn on scheduling and save the scenario.](./using-make-to-sync-object-data-with-google-sheets/images/21.png)
 
-   ```{note}
-   デフォルトでは、このシナリオは15分ごとに自動的にトリガーされます。 
-   ```
-
+    ```{note}
+    デフォルトでは、このシナリオは15分ごとに自動的にトリガーされる。 
+    ```
 ## 関連トピック
 
-* [オブジェクト概要](../../../objects.md)
-* [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
-* [オブジェクト統合を理解する](../../understanding-object-integrations.md)
+* [オブジェクトの概要](../../../objects.md) 
+* [オブジェクトの作成と管理](../../creating-and-managing-objects.md) 
+* [Understanding Object Integrations](../../understanding-object-integrations.md) 

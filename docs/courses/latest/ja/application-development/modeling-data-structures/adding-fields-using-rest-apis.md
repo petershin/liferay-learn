@@ -1,20 +1,20 @@
 # REST APIを使ったフィールドの追加
 
-`object-admin` サービスは、フィールドの追加など、オブジェクト定義に対する CRUD 操作を実行するための REST API を提供します。 ここでは、これらのAPIを使用して、Distributor Applicationオブジェクトにビジネスフィールドと信用参照フィールドを追加します。
+`object-admin` サービスは、オブジェクト定義に対してフィールドの追加などの CRUD 操作を行うための REST API を提供する。 ここでは、これらのAPIを使用して、Distributor Applicationオブジェクトにビジネスフィールドと信用参照フィールドを追加します。
 
 1. [この練習のためのリソース](./liferay-p6k3.zip) をダウンロードして解凍してください。
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-p6k3.zip -O
+   curl https://resources.learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-p6k3.zip -O
    ```
 
    ```bash
    unzip liferay-p6k3.zip
    ```
 
-   この.zipファイルには、 `object-admin` REST APIを呼び出すシェルスクリプトが含まれています。
+   この .zip ファイルには `object-admin` REST API を呼び出すシェルスクリプトが含まれている。
 
-1. `liferay-p6k3/curl`に移動する。
+1. `liferay-p6k3/curl` に移動する。
 
    ```bash
    cd liferay-p6k3/curl
@@ -27,9 +27,9 @@
    ```
 
    | 項目名                           | 種類       |
-   |:----------------------------- |:-------- |
-   | `businessName`                | テキスト     |
-   | `businessWebsite`             | テキスト     |
+   | :---------------------------- | :------- |
+   | `businessName`                | テキストボックス |
+   | `businessWebsite`             | テキストボックス |
    | `businessEstablishedDate`     | 日付       |
    | `businessEmployeeNumber`      | 整数       |
    | `businessAnnualRevenue`       | テキストボックス |
@@ -54,7 +54,7 @@
    ```
 
    | 項目名                       | 種類       |
-   |:------------------------- |:-------- |
+   | :------------------------ | :------- |
    | `bankName`                | テキストボックス |
    | `bankAccountNumber`       | テキストボックス |
    | `bankPhoneNumber`         | テキストボックス |
@@ -72,7 +72,7 @@
    ```
 
    | 項目名                            | 種類       |
-   |:------------------------------ |:-------- |
+   | :----------------------------- | :------- |
    | `referenceSupplierName`        | テキストボックス |
    | `referencePhoneNumber`         | テキストボックス |
    | `referenceAddressLineOne`      | テキストボックス |
@@ -84,10 +84,10 @@
 
 完了すると、Distributor Applicationには48のフィールドが追加されます。
 
-![ディストリビューター・アプリケーション・オブジェクトは48のフィールドを持つ。](./adding-fields-using-rest-apis/images/01.png)
+![The Distributor Application object should have 48 fields.](./adding-fields-using-rest-apis/images/01.png)
 
 これらのフィールドは、Delectable BonsaiがKYCポリシーとAML法に準拠して各申請者を評価し、審査するために必要なデータを収集するのに役立ちます。
 
 そして、各パートナーシップのビジネス価値を評価するための情報を収集する必要がある。
 
-次へ [ディストリビューター・アプリケーション用のピックリストの作成](./creating-picklists-for-distributor-applications.md)
+次へ [ディストリビューター・アプリケーション用のピックリストの作成](./creating-picklists-for-distributor-applications.md) 

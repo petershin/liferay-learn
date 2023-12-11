@@ -3,7 +3,7 @@ uuid: 916e394b-8115-4639-b465-d849ede6475b
 ---
 # Using a Theme Sprite Map Client Extension
 
-{bdg-secondary}`Liferay 7.4`
+{bdg-secondary}`Liferay 7.4+`
 
 With a theme sprite map client extension, you can override the default [Clay](https://clayui.com/docs/components/icon.html) sprite map used for icons on a page. Start with the [sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace) to build and deploy your client extension.
 

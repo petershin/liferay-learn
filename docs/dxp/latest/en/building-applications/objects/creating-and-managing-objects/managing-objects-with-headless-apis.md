@@ -3,7 +3,7 @@ uuid: 52fd1b70-d0cb-409e-99ec-fbd60bbf0a0f
 ---
 # Managing Objects with Headless APIs
 
-{bdg-secondary}`Liferay 7.4`
+{bdg-secondary}`Liferay 7.4+`
 
 You can [create and manage objects](../creating-and-managing-objects.md) from the Applications menu, but you can also use Liferay's REST APIs. Call these services to create and manage objects. Note that in Liferay's codebase, objects are called _object definitions_. Each object definition is made up of various object fields.
 

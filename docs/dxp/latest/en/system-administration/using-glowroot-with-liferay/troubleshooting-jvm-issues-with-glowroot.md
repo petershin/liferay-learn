@@ -9,7 +9,7 @@ Glowroot displays a dashboard to quickly identify system issues. Click the _Erro
 
 ## Java Deadlock
 
-A deadlock occurs when multiple threads are unable to process because another thread is using a resource. The application may become very slow or unresponsive.
+A deadlock occurs when multiple threads are unable to be processed because another thread is using a resource. The application may become very slow or unresponsive.
 
 If a deadlock is suspected, click the _JVM_ tab in Glowroot. Click _Thread dump_ in the left navigation menu. The output will show any deadlocks that are found.
 
@@ -27,7 +27,7 @@ If a thread leak is suspected, a possible indicator is a `java.lang.OutOfMemory`
 
 A database deadlock occurs when two or more processes, or transactions, are waiting for each other to release a resource.
 
-Check the trace of a transaction in Glowroot for slow transactions. Click the _Transactions_ tab. Under the transactions panel, click _Slow traces_. Use the chart to identify any transactions that are taking too long.
+Check the trace of a transaction in Glowroot for slow transactions. Click the _Transactions_ tab. Under the transactions panel, click _Slow traces_. Use the chart to identify any transactions that are taking too long to identify possible deadlocks.
 
 ![Click slow traces to see transactions that take a long time.](./troubleshooting-jvm-issues-with-glowroot/images/03.png)
 
@@ -41,4 +41,4 @@ To add the Hikari connection pool to the gauges dashboard, navigate to _Configur
 
 ![Add the Hikari connection pool to the gauges dashboard.](./troubleshooting-jvm-issues-with-glowroot/images/04.png)
 
-Click the _JVM_ tab and click _Gauges_ in the left menu. The Hikari connection pool can now be monitored on the gauges dashboard.
+Click the _JVM_ tab and click _Gauges_ in the left menu. The Hikari connection pool can now be monitored in the gauges dashboard.

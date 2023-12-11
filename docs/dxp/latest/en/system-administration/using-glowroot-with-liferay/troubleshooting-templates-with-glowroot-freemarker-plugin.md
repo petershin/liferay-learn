@@ -13,7 +13,7 @@ Glowroot can troubleshoot [FreeMarker templates](../../site-building/displaying-
 
 1. The instrumentation can be configured at an `INFO`, `DEBUG`, or `TRACE` level. 
 
-   The `INFO` level shows how much time template transformations are taking. The `DEBUG` level treats each template transformation as a unique transaction for individual inspection. Note that this utilizes more Glowroot overhead. The `TRACE` level gives more details about the template script and trace details for inspection.
+   The `INFO` level shows how much time template transformations are taking. The `DEBUG` level treats each template transformation as a unique transaction for individual inspection. Note that this setting might utilize more Glowroot overhead. The `TRACE` level gives more details about the template script and trace details for inspection.
 
 ## Troubleshooting FreeMarker Templates
 
@@ -27,7 +27,7 @@ To inspect a template transaction,
 
    ![Click on the data point to see details about the transaction.](./troubleshooting-templates-with-glowroot-freemarker-plugin/images/01.png)
 
-4. Scroll down further and click _Trace entries_. The trace is expanded to show details of the fragment transformation.
+1. Scroll down further and click _Trace entries_. The trace is expanded to show details of the fragment transformation.
 
    ![The trace is expanded to show details of the fragment transformation.](./troubleshooting-templates-with-glowroot-freemarker-plugin/images/02.png)
 

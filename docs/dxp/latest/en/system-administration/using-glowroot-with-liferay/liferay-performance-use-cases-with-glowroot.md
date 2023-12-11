@@ -11,10 +11,10 @@ Use [Glowroot](https://glowroot.org/) to diagnose and inform you on making perfo
 
 You might identify some slow transactions as you monitor the _Transactions_ tab in Glowroot. For example, you notice a transaction for `blog-postings` to take a very long time (i.e. thirty seconds).
 
-A quick fix for this problem would be to customize the `pageSize` to return less than the default twenty blog postings. Or apply a filter to only return specific blog postings for the transaction. Use Glowroot to compare the response of different transactions.
+A quick fix for this problem would be to customize the `pageSize` to return a smaller number of postings per transaction. Or apply a filter to only return specific blog postings for the transaction. Use Glowroot to compare the response times of different transactions.
 
 ## Optimizing Custom Facets
 
-Liferay supports [custom facets](../../using-search/search-pages-and-widgets/search-facets/custom-facet.md) in customizing search on your site. 
+Liferay supports [custom facets](../../using-search/search-pages-and-widgets/search-facets/custom-facet.md) in customizing search for your site. 
 
-As you add multiple facet items when configuring your custom facets, you may notice a slowdown in your page's response time. Use Glowroot to inspect the transactions and optimize the search respones. For example, the slowdown might be caused by returning the item count. You might conclude that removing the count calculation call improves performance and decreases load times.
+As you add multiple facet items when configuring your custom facets, you may notice a slowdown in your page's response time. Use Glowroot to inspect the transactions and optimize the search responses. For example, the slowdown might be caused by returning the item count. You might conclude that removing the count calculation call improves performance and decreases load times.

@@ -19,7 +19,7 @@ using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
 
 {bdg-secondary}Liferay DXP 2023.Q4+/Portal 7.4 GA100+
 
-[Glowroot](https://glowroot.org/), the open source Java application performance monitoring tool, is bundled together with Liferay. The tool displays helpful statistics about your system (e.g. server requests errors, etc.) with minimal overhead.
+[Glowroot](https://glowroot.org/), the open source Java application monitoring tool, is bundled together with Liferay. The tool displays helpful statistics about your system (e.g. server requests, errors, etc.) with minimal overhead. Use Glowroot to troubleshoot issues and anaylze performance issues.
 
 ## Enabling Glowroot
 
@@ -50,7 +50,7 @@ Or [set up the central collector in docker](https://github.com/glowroot/glowroot
 
 ## Deploying Custom Plugins
 
-[Different custom plugins](https://github.com/glowroot/glowroot/tree/main/agent/plugins) are available for Glowroot. To deploy a custom plugin, simply drop it in to your `$LIFERAY_HOME/glowroot/plugins` folder. Make sure you use the package `com.liferay.glowroot.plugin.<plugin name>` when creating a new plugin. 
+[Different custom plugins](https://github.com/glowroot/glowroot/tree/main/agent/plugins) are available for Glowroot. To deploy a custom plugin, simply drop it in to your `$LIFERAY_HOME/glowroot/plugins` folder. Make sure to use the package `com.liferay.glowroot.plugin.<plugin name>` when creating a new plugin. 
 
 Note, if your plugin needs any custom packages, declare them in your `portal-ext.properties` file under the `module.framework.properties.org.osgi.framework.bootdelegation` property. For example,
 

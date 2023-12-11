@@ -9,13 +9,13 @@ Use Glowroot to identify and diagnose performance issues in your Liferay install
 
 ## Expensive SQL Queries
 
-Expensive SQL queries can have slow response times and place excessive loads against your database. Click the _Transactions_ tab to monitor the various queries your system is processing. Under the All Web Transactions panel, click _Queries_. In the table, click _Total time (ms)_ to identify the queries that take the most time.
+Expensive SQL queries can have slow response times and place excessive loads against your database. Click the _Transactions_ tab to monitor the various queries your system is processing. Under the transactions panel, click _Queries_. In the table, click _Total time (ms)_ to identify the queries that take the most time.
 
 ![Identify the queries that take the most time.](./troubleshooting-liferay-performance-issues-with-glowroot/images/01.png)
 
 Expensive SQL queries might also cause a backup of other threads waiting for a connection. To add the Hikari connection pool to the gauges dashboard, navigate to _Configuration_ &rarr; _Gauges_. Click _Add new_ and search for `com.zaxxer.hikari:type=Pool (HikariPool-1)`. Select all the Mbean attributes and click _Add_.
 
-Click the _JVM_ tab and click _Gauges_ in the left menu. The Hikari connection pool can now be monitored on the gauges dashboard.
+Click the _JVM_ tab and click _Gauges_ in the left menu. The Hikari connection pool can now be monitored in the gauges dashboard.
 
 ## Cache Size Issues
 
@@ -60,9 +60,11 @@ If some transactions seems to be slow despite low CPU utilization, it may be a c
 * _Blocked time_ - the time the thread is blocked and possibly waiting for a synchronization mechanism
 * _Waited time_ - the time the thread waited to complete the transaction
 
+Check to see if transactions are blocked or waiting for a long time.
+
 ## Backend Service Slowness
 
-It may be that a slow transaction is caused by a slow or unresponsive external backend service. Like the [concurrency issues](#concurrency-issues) above, use the transaction dashboard to inspect backend service transactions.
+It may be that a slow transaction is caused by a slow or unresponsive external backend service. Like the [concurrency issues](#concurrency-issues) above, use the transaction dashboard to inspect your backend service transactions. You may need to make some configuration changes with your services.
 
 ## Long Garbage Collection Time
 

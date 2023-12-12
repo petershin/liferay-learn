@@ -144,6 +144,15 @@ Here is a list of changes that break or significantly alter existing functionali
 
 ## 2023 Q4 Release
 
+### Changes in Liferay DXP
+
+Here is a list of changes that break or significantly alter existing functionality within Liferay.
+
+| **Breaking Change** | **Description** | **References** |
+| :- | :- | :- |
+| **Support for Deploying Liferay with Websphere** | Deploying Liferay with an IBM Websphere application server is deprecated. Support ends for this feature *in one year (with the 2024 Q4 release)*. | TBA |
+| **Supported Java Versions** | JDK 8 is deprecated and support for it ends *in one year (with the 2024 Q4 release)*. Liferay DXP 7.4 must then use JDK 11. | TBA |
+
 ### Changes in Module Source Code
 
 **ExtRepository.java**

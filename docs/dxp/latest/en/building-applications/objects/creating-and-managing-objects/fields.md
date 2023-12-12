@@ -12,7 +12,7 @@ uuid: 4ba9b571-6b88-4ab0-940a-b406a95caa75
 ---
 # Fields
 
-{bdg-secondary}`Liferay 7.4 U78+/GA78+`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+`
 
 Object fields are data definitions that represent database columns and store different types of values. All objects include default system fields, but you can [add custom fields](./fields/adding-fields-to-objects.md) to both draft and published objects.
 

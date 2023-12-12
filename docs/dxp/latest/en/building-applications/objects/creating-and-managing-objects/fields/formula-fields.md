@@ -3,7 +3,7 @@ uuid: 41e54e73-83b4-4a39-b91a-f7b6c4e22234
 ---
 # Formula Fields
 
-{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107`
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+`
 
 Formula fields store read-only values calculated using numeric fields in the object definition. Example use cases include calculating an employee's available PTO hours after subtracting their pending requests, calculating an agent's commission based on an order's total, and more.
 

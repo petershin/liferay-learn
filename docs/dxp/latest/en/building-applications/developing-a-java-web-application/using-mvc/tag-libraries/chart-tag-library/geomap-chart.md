@@ -7,7 +7,7 @@ A Geomap Chart lets you visualize data based on geography, given a specified col
 
 ![A Geomap chart displays a heatmap representing the data.](./geomap-chart/images/01.png)
 
-Follow these steps to configure your portlet to use geomap charts. 
+Follow these steps to configure your portlet to use geomap charts.
 
 1. Import the chart taglib along with the `GeomapConfig`, `GeomapColor`, and `GeomapColorRange` classes into your bundle's `init.jsp` file:
 
@@ -54,8 +54,6 @@ Follow these steps to configure your portlet to use geomap charts.
 
     _geomapConfig1.setDataHREF(sb.toString());
     _geomapConfig2.setDataHREF(sb.toString());
-    );
-
     %>
     ```
 
@@ -85,10 +83,10 @@ Follow these steps to configure your portlet to use geomap charts.
 
 ![Geomap charts can be customized to fit the look and feel you desire.](./geomap-chart/images/02.png)
 
-Awesome! Now you know how to create geomap charts for your apps. 
+Awesome! Now you know how to create geomap charts for your apps.
 
 ## Related Topics
 
 * [Bar Charts](./bar-chart.md)
-* [Gauge Charts](./gauge-chart.md)
-* [Geomap Charts](./geomap-chart.md)
+* [Pie Charts](./pie-chart.md)
+* [Combination Charts](./combination-chart.md)

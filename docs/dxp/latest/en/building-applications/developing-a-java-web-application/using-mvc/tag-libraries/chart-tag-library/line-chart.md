@@ -3,7 +3,7 @@ uuid: 657b9ab0-95da-4bae-a439-b4c60f6c5d45
 ---
 # Line Charts
 
-Line charts contain multiple sets of data. A Line chart displays the data linearly. Each data series (created with the `addColumns()` method) is defined with a new instance of the  [`MultiValueColumn` object](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html), which takes an ID and a set of values. Follow these steps to configure your portlet to use line charts. 
+Line charts contain multiple sets of data. A Line chart displays the data linearly. Each data series (created with the `addColumns()` method) is defined with a new instance of the  [`MultiValueColumn` object](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html), which takes an ID and a set of values. Follow these steps to configure your portlet to use line charts.
 
 1. Import the chart taglib along with the `LineChartConfig` and `MultiValueColumn` classes into your bundle's `init.jsp` file:
 
@@ -21,8 +21,8 @@ Line charts contain multiple sets of data. A Line chart displays the data linear
 
     _lineChartConfig.addColumns(
       new MultiValueColumn("data1", 100, 20, 30),
-      new MultiValueColumn("data2", 20, 70, 100));
-    }
+      new MultiValueColumn("data2", 20, 70, 100)
+    );
     %>
     ```
 
@@ -36,10 +36,10 @@ Line charts contain multiple sets of data. A Line chart displays the data linear
 
 ![A Line chart displays the data linearly.](./line-chart/images/01.png)
 
-Awesome! Now you know how to create line charts for your apps. 
+Awesome! Now you know how to create line charts for your apps.
 
 ## Related Topics
 
-* [Bar Charts](./bar-chart.md)
-* [Scatter Charts](./scatter-chart.md)
+* [Spline Charts](./spline-chart.md)
 * [Step Charts](./step-chart.md)
+* [Predictive Charts](./predictive-chart.md)

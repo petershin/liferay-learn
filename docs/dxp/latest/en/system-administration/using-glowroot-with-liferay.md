@@ -1,7 +1,7 @@
 ---
 toc:
   - ./using-glowroot-with-liferay/troubleshooting-jvm-issues-with-glowroot.md
-  - ./using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
+  - ./using-glowroot-with-liferay/troubleshooting-liferay-performance-issues-with-glowroot.md
   - ./using-glowroot-with-liferay/troubleshooting-templates-with-glowroot-freemarker-plugin.md
   - ./using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
 uuid: 699aecdd-490f-4386-9a95-1168eff8f1c0
@@ -11,9 +11,9 @@ uuid: 699aecdd-490f-4386-9a95-1168eff8f1c0
 
 ```{toctree}
 :maxdepth: 3
-   
+
 using-glowroot-with-liferay/troubleshooting-jvm-issues-with-glowroot.md
-using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
+using-glowroot-with-liferay/troubleshooting-liferay-performance-issues-with-glowroot.md
 using-glowroot-with-liferay/troubleshooting-templates-with-glowroot-freemarker-plugin.md
 using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
 ```
@@ -319,6 +319,6 @@ Once the upgrade is complete, in Glowroot, a new transaction type called upgrade
 ## Next Steps
 
 - [Troubleshooting JVM Issues with Glowroot](./using-glowroot-with-liferay/troubleshooting-jvm-issues-with-glowroot.md)
-- [Troubleshooting Lifray Performance Issues with Glowroot](./using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md)
+- [Troubleshooting Liferay Performance Issues with Glowroot](./using-glowroot-with-liferay/troubleshooting-liferay-performance-issues-with-glowroot.md)
 - [Troubleshooting Templates with Glowroot Freemarker Plugin](./using-glowroot-with-liferay/troubleshooting-templates-with-glowroot-freemarker-plugin.md)
 - [Liferay Performance Use Cases with Glowroot](./using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md)

@@ -3,11 +3,11 @@ uuid: 45ea401f-1a7a-40e3-b866-b4520272b0e1
 ---
 # Predictive Charts
 
-Predictive charts let you visualize current data along with predicted/forecasted data within a given value range. 
+Predictive charts let you visualize current data along with predicted/forecasted data within a given value range.
 
 ![Predicted/forecasted data is surrounded by a highlighted area of possible values.](./predictive-chart/images/01.png)
 
-Follow these steps to use predictive charts. 
+Follow these steps to use predictive charts.
 
 1. Import the chart taglib along with the `PredictiveChartConfig` and `MixedDataColumn` classes into your bundle's `init.jsp` file:
 
@@ -23,7 +23,7 @@ Follow these steps to use predictive charts.
     <%
     private PredictiveChartConfig _predictiveChartConfig = new
     PredictiveChartConfig();
-    
+
     MixedDataColumn mixedDataColumn1 = new MixedDataColumn(
       "data1", 130, 340, 200, 500, 80, 240, 40,
       new Number[] {370, 400, 450}, new Number[] {210, 240, 270},
@@ -39,7 +39,7 @@ Follow these steps to use predictive charts.
       Arrays.asList(30, 70, 150));
 
     _predictiveChartConfig.addDataColumn(mixedDataColumn2);
-    
+
     _predictiveChartConfig.setAxisXTickFormat("%b");
 
     _predictiveChartConfig.setPredictionDate("2018-07-01");
@@ -60,17 +60,16 @@ Follow these steps to use predictive charts.
     timeseries.add("2018-12-01");
 
     _predictiveChartConfig.setTimeseries(timeseries);
-
     %>
     ```
 
     Predictive charts have these properties:
-    
-    **axisXTickFormat:** An optional string which specfies the time formatting on the X axis. For more information on which formats can be specified please refer to [d3's time format README](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format). This value is set using the `setAxisXTickFormat()` method. 
-    
-    **Prediction Date:** A date as a string that represents the point in the timeline from when the forecast/prediction is shown. This value is parsed as a Date object in JavaScript and set using the `setPredictionDate()` method. 
-    
-    **Time Series:** A timeline for the data which is displayed on the X axis of the chart. This value is set as an array of dates (`2018-01-01` for example). 
+
+    **axisXTickFormat:** An optional string which specfies the time formatting on the X axis. For more information on which formats can be specified please refer to [d3's time format README](https://github.com/d3/d3-time-format/blob/master/README.md#locale_format). This value is set using the `setAxisXTickFormat()` method.
+
+    **Prediction Date:** A date as a string that represents the point in the timeline from when the forecast/prediction is shown. This value is parsed as a Date object in JavaScript and set using the `setPredictionDate()` method.
+
+    **Time Series:** A timeline for the data which is displayed on the X axis of the chart. This value is set as an array of dates (`2018-01-01` for example).
 
 1. Add the `<chart>` taglib to the `view.jsp`, passing the `_predictiveChartConfig` as the `config` attribute's value:
 
@@ -84,10 +83,10 @@ The area contained within the light-blue rectangle is the point from which the p
 
 ![A predictive chart lets you visualize estimated future data alongside existing data.](./predictive-chart/images/02.png)
 
-Awesome! Now you know how to create predictive charts for your apps. 
+Awesome! Now you know how to create predictive charts for your apps.
 
 ## Related Topics
 
+* [Line Charts](./line-chart.md)
 * [Combination Charts](./combination-chart.md)
 * [Geomap Charts](./geomap-chart.md)
-* [Scatter Charts](./scatter-chart.md)

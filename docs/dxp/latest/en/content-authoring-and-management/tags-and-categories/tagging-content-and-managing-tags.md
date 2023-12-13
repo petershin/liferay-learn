@@ -31,9 +31,8 @@ Only site administrators can manage tags in the Tags panel.
 1. To create a new tag, click *Add Tag* (![Add Tag](./../../images/icon-add.png)).
 1. Type your new tag and click *Save*.
 
-    ```{note}
-    Tags are all-lowercase.
-    ```
+    !!! note
+    Tags are case-sensitive.
 
 1. To edit an existing tag, click *Actions* (![Actions](./../../images/icon-actions.png)) menu next to the tag's name and select *Edit*.
 1. If you want to merge one or more tags,

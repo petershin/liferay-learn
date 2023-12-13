@@ -3,7 +3,7 @@ uuid: 505e9719-a1db-4793-aad3-00031f72cd42
 ---
 # Scatter Charts
 
-Scatter charts contain multiple sets of data. A scatter chart models the data as individual points. Each data series (created with the `addColumns()` method) is defined with a new instance of the  [`MultiValueColumn` object](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html), which takes an ID and a set of values. Follow these steps to configure your portlet to use scatter charts. 
+Scatter charts contain multiple sets of data. A scatter chart models the data as individual points. Each data series (created with the `addColumns()` method) is defined with a new instance of the  [`MultiValueColumn` object](https://docs.liferay.com/ce/apps/frontend-taglib/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html), which takes an ID and a set of values. Follow these steps to configure your portlet to use scatter charts.
 
 1. Import the chart taglib along with the `ScatterChartConfig` and `MultiValueColumn` classes into your bundle's `init.jsp` file:
 
@@ -22,7 +22,6 @@ Scatter charts contain multiple sets of data. A scatter chart models the data as
     _scatterChartConfig.addColumns(
       new MultiValueColumn("data1", 100, 20, 30),
       new MultiValueColumn("data2", 20, 70, 100));
-    }
     %>
     ```
 
@@ -36,10 +35,10 @@ Scatter charts contain multiple sets of data. A scatter chart models the data as
 
 ![A scatter chart models the data as individual points.](./scatter-chart/images/01.png)
 
-Awesome! Now you know how to create scatter charts for your apps. 
+Awesome! Now you know how to create scatter charts for your apps.
 
 ## Related Topics
 
-* [Step Charts](./step-chart.md)
 * [Line Charts](./line-chart.md)
-* [Spline Charts](./spline-chart.md)
+* [Step Charts](./step-chart.md)
+* [Predictive Charts](./predictive-chart.md)

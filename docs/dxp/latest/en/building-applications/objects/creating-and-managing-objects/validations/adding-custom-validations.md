@@ -142,6 +142,8 @@ Below are all default fields available for custom objects:
 |:------------------------|:-----------------------------------------------|
 | `companyId`             | Portal instance where the entry was created    |
 | `createDate`            | When the entry was created                     |
+| `currentDate`           | Date when the entry is submitted               |
+| `currentUserId`         | ID of the user submitting the entry            |
 | `externalReferenceCode` | External reference code for the entry          |
 | `groupId`               | Site ID in where the entry was created         |
 | `lastPublishDate`       | Date when the entry was last published         |

@@ -4,7 +4,7 @@
 
 検証は、有効なフィールドエントリーを決定するためのルールを設定します。 各バリデーションには、独自のトリガー、条件、エラーテキストがあり、オブジェクトUIから設定することができます。 [Groovyスクリプト](#using-groovy-validations) または [Liferay式](#using-expression-builder-validations) を使って検証を定義できます。
 
-![カスタムおよびシステムオブジェクトフィールドの検証を作成します。](./adding-custom-validations/images/01.png)
+![カスタムおよびシステムオブジェクトフィールドの検証を作成します。](./adding-field-validations/images/01.png)
 
 ```{important}
 Groovyスクリプトの検証は、Liferay Experience Cloud Self-Managed と Liferay DXP Self-Hosted でのみ利用可能です。
@@ -24,7 +24,7 @@ Groovyスクリプトの検証は、Liferay Experience Cloud Self-Managed と Li
 
 1. **ラベル** を入力し、検証タイプ、つまり ［**Groovy**］ または ［**エクスプレッションビルダー**］ を選択します。
 
-   ![ラベルを入力し、検証タイプを選択します。](./adding-custom-validations/images/02.png)
+   ![ラベルを入力し、検証タイプを選択します。](./adding-field-validations/images/02.png)
 
 1. ［**Save**］ をクリックします。
 
@@ -32,7 +32,7 @@ Groovyスクリプトの検証は、Liferay Experience Cloud Self-Managed と Li
 
 1. ［**Conditions**］ タブに移動して、バリデーションに条件を追加します。
 
-   ![検証に条件を追加します。](./adding-custom-validations/images/03.png)
+   ![検証に条件を追加します。](./adding-field-validations/images/03.png)
 
    Groovyを使用する場合、サイドパネルから利用可能なデータフィールドを参照し、条件に追加することができます。 詳細は、 [Groovy検証の使用](#using-groovy-validations) を参照してください。
 
@@ -50,7 +50,7 @@ Groovyスクリプトの検証は、Liferay Experience Cloud Self-Managed と Li
 
    各検証は、1つのトリガーイベントしか持つことができません。
 
-   ![検証を有効にし、トリガーイベントを設定します。](./adding-custom-validations/images/04.png)
+   ![検証を有効にし、トリガーイベントを設定します。](./adding-field-validations/images/04.png)
 
 1. ［**Save**］ をクリックします。
 
@@ -60,7 +60,7 @@ Groovyスクリプトの検証は、Liferay Experience Cloud Self-Managed と Li
 
 Groovy検証は、標準的な [Groovyスクリプト](https://groovy-lang.org/) の機能をすべてサポートしています。 条件を定義する場合、 `invalidFields` 変数を使用する必要があります。 Liferayは`invalidFields`が`true`を返す場合にのみ、確認エラーメッセージを表示します。
 
-![サイドパネルを使用して、Groovy検証にフィールド要素を追加します。](./adding-custom-validations/images/05.png)
+![サイドパネルを使用して、Groovy検証にフィールド要素を追加します。](./adding-field-validations/images/05.png)
 
 Liferay 7.4 U33+とGA33+では、Liferayは [GroovyShellクラス](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) を使って、 ［**保存**］ をクリックしたときにGroovy スクリプトの構文が有効であるかどうかをチェックします。 スクリプトが無効な場合、Liferayはエラーメッセージを表示します。
 
@@ -72,7 +72,7 @@ Liferay 7.4 U33+とGA33+では、Liferayは [GroovyShellクラス](https://docs.
 Expression Builderのバリデーションは、text、numeric、date、Booleanフィールドタイプにのみ使用できます。
 ```
 
-![サイドパネルを使用して、フィールド、演算子、関数の要素を検証に追加します。](./adding-custom-validations/images/06.png)
+![サイドパネルを使用して、フィールド、演算子、関数の要素を検証に追加します。](./adding-field-validations/images/06.png)
 
 Liferay 7.4 U33+とGA33+では、［保存］をクリックすると、Liferayは式が有効な構文であるかどうかをチェックします。 式が無効な場合、Liferayはエラーメッセージを表示します。
 

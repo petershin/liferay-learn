@@ -33,9 +33,8 @@ To implement an item selector, you must embed it in an application, such as a mo
    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-   ```{tip}
+   !!! tip
    This command is the same as copying the deployed jars to `/opt/liferay/osgi/modules` on the Docker container.
-   ```
 
 1. Confirm the deployment in the Liferay Docker container console.
 
@@ -55,12 +54,12 @@ To implement an item selector, you must embed it in an application, such as a mo
 
 ## Setting an Item Selector's Criteria in your Controller
 
-Open the `F5D5MVCPortlet.java` class. In an MVC Portlet, the portlet class is the controller class (the C in MVC). It must do two things:
+Open the `F5D5Portlet.java` class. In an MVC Portlet, the portlet class is the controller class (the C in MVC). It must do two things:
 
 - Define the necessary criteria for the selector (i.e., what entity does it select?)
 - Create a URL for that criteria
 
-1. At the bottom of the class, OSGi injects an [`ItemSelector` class](https://github.com/liferay/liferay-portal/blob/[LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/item-selector/item-selector-api/src/main/java/com/liferay/item/selector/ItemSelector.java) instance because of the `@Reference` annotation.
+1. At the bottom of the class, OSGi injects an [`ItemSelector` class](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/item-selector/item-selector-api/src/main/java/com/liferay/item/selector/ItemSelector.java) instance because of the `@Reference` annotation.
 
    ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/java/com/acme/f5d5/web/internal/portlet/F5D5Portlet.java
    :dedent: 1
@@ -86,11 +85,9 @@ Open the `F5D5MVCPortlet.java` class. In an MVC Portlet, the portlet class is th
 1. Next, you need a return type class to represent the information provided by the entities when users select them. Return type classes must implement the [`ItemSelectorReturnType` interface](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/modules/apps/item-selector/com.liferay.item.selector.api/com/liferay/item/selector/ItemSelectorReturnType.html). For example, the class may be used to return the entity's URL, UUID, or primary key. The return type class is added to the criterion class created previously.
 
    !!! important
-   Every criterion **must** have at least one return type associated with it when used.
+   Every criterion __must__ have at least one return type associated with it when used.
 
-<!-- Start fixing the doc URLs here. -Rich -->
-
-This example uses a reference to [`UUIDItemSelectorReturnType`](https://docs.liferay.com/dxp/apps/item-selector/latest/javadocs/com/liferay/item/selector/criteria/UUIDItemSelectorReturnType.html) to define the selected roles' `UUID` value as the data to return. If multiple roles are selected, they are returned as a comma-delimited list.
+This example uses a reference to [`UUIDItemSelectorReturnType`](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/modules/apps/item-selector/com.liferay.item.selector.criteria.api/com/liferay/item/selector/criteria/UUIDItemSelectorReturnType.html) to define the selected roles' `UUID` value as the data to return. If multiple roles are selected, they are returned as a comma-delimited list.
 
 !!! note
 If a UUID is not available, the primary key is returned.
@@ -104,13 +101,13 @@ If a UUID is not available, the primary key is returned.
    ```
 
    !!! tip
-   If no return class exists for the type of information you need, then you can define your own with the [ItemSelectorReturnType](https://github.com/liferay/liferay-portal/blob/master/modules/apps/item-selector/item-selector-api/src/main/java/com/liferay/item/selector/ItemSelectorReturnType.java) implementation.
+   If no return class exists for the type of information you need, then you can define your own with the [ItemSelectorReturnType](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/item-selector/item-selector-api/src/main/java/com/liferay/item/selector/ItemSelectorReturnType.java) implementation.
 
    The item selector uses the criterion and return type classes to decide what selection views of items (presented as tabs) to show and how to identify each item.
 
 1. Now you can use the criteria to generate a URL for the item selector. This URL creates the item selector dialog in your front-end code.
 
-   The [`RequestBackedPortletURLFactory` class](https://docs.liferay.com/portal/7.4-latest/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/RequestBackedPortletURLFactory.html) can quickly generate an item selector URL using the criteria:
+   The [`RequestBackedPortletURLFactory` class](https://resources.learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/portlet/RequestBackedPortletURLFactory.html) can quickly generate an item selector URL using the criteria:
 
    ```{literalinclude} ./implementing-an-item-selector/resources/liferay-f5d5.zip/f5d5-web/src/main/java/com/acme/f5d5/web/internal/portlet/F5D5Portlet.java
    :dedent: 2
@@ -171,7 +168,7 @@ The `onSelect` field must define a function to handle the value when it is click
 
 The value for the `selectEventName` field must match the String you used with the `RequestBackedPortletURLFactory` in the Java code (in this example, `selectRole`). You must also retrieve the item selector URL from the request where the controller stored it, using the same constant to identify it, supplying it in the `url` field.
 
-!!! tip}
+!!! tip
 If you want your item selector to support selecting multiple items, you can enable multiple selection by adding `multiple: true` to the `openSelectionModal` call.
 
 Use the item selection stored in `event`. The data type and information contained in the result depends on what return type class you used in the Java code. Since this example uses `UUIDItemSelectorReturnType`, the data is a String value with the UUIDs of one or more selected items.

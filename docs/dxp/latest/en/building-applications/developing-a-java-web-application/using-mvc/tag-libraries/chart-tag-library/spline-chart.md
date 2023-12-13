@@ -3,7 +3,7 @@ uuid: 4a2a8986-19bd-436e-8109-5351037d1cae
 ---
 # Spline Charts
 
-Spline charts contain multiple sets of data. A spline chart connects points of data with a smooth curve. Each data series (created with the `addColumns()` method) is defined with a new instance of the `MultiValueColumn` object <!--[`MultiValueColumn` object](https://docs.liferay.com/dxp/apps/foundation/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html)-->, which takes an ID and a set of values. Follow these steps to configure your portlet to use spline charts. 
+Spline charts contain multiple sets of data. A spline chart connects points of data with a smooth curve. Each data series (created with the `addColumns()` method) is defined with a new instance of the `MultiValueColumn` object <!--[`MultiValueColumn` object](https://docs.liferay.com/dxp/apps/foundation/latest/javadocs/com/liferay/frontend/taglib/chart/model/MultiValueColumn.html)-->, which takes an ID and a set of values. Follow these steps to configure your portlet to use spline charts.
 
 1. Import the chart taglib along with the `SplineChartConfig` and `MultiValueColumn` classes into your bundle's `init.jsp` file:
 
@@ -22,7 +22,6 @@ Spline charts contain multiple sets of data. A spline chart connects points of d
     _splineChartConfig.addColumns(
       new MultiValueColumn("data1", 100, 20, 30),
       new MultiValueColumn("data2", 20, 70, 100));
-    }
     %>
     ```
 
@@ -39,17 +38,17 @@ Spline charts contain multiple sets of data. A spline chart connects points of d
 You can also use an area spline chart if you prefer. An area spline chart highlights the area under the spline curve.
 
 ```jsp
-<chart:area-spline 
-  config="<%= _splineChartConfig %>" 
+<chart:area-spline
+  config="<%= _splineChartConfig %>"
 />
 ```
 
 ![An area spline chart highlights the area under the spline curve.](./spline-chart/images/02.png)
 
-Awesome! Now you know how to create spline charts for your apps. 
+Awesome! Now you know how to create spline charts for your apps.
 
 ## Related Topics
 
-* [Bar Charts](./bar-chart.md)
-* [Scatter Charts](./scatter-chart.md)
+* [Line Charts](./line-chart.md)
 * [Step Charts](./step-chart.md)
+* [Scatter Charts](./scatter-chart.md)

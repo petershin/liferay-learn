@@ -4,7 +4,7 @@
 
 유효성 검사는 유효한 필드 항목을 결정하기 위한 규칙을 설정합니다. 각 유효성 검사에는 개체 UI를 통해 설정할 수 있는 자체 트리거, 조건 및 오류 텍스트가 있습니다. [Groovy 스크립트](#using-groovy-validations) 또는 [Liferay 표현식](#using-expression-builder-validations) 을 사용하여 유효성 검사를 정의할 수 있습니다.
 
-![사용자 정의 및 시스템 개체 필드에 대한 유효성 검사를 만듭니다.](./adding-custom-validations/images/01.png)
+![사용자 정의 및 시스템 개체 필드에 대한 유효성 검사를 만듭니다.](./adding-field-validations/images/01.png)
 
 ```{important}
 Groovy 스크립트 유효성 검사는 Liferay Experience Cloud Self-Managed 및 Liferay DXP Self-Hosted에서만 사용할 수 있습니다.
@@ -24,7 +24,7 @@ Groovy 스크립트 유효성 검사는 Liferay Experience Cloud Self-Managed �
 
 1. **레이블** 입력하고 검증 유형을 선택합니다: **Groovy** 또는 **Expression Builder** .
 
-   ![레이블을 입력하고 유효성 검사 유형을 선택합니다.](./adding-custom-validations/images/02.png)
+   ![레이블을 입력하고 유효성 검사 유형을 선택합니다.](./adding-field-validations/images/02.png)
 
 1. **저장** 클릭합니다.
 
@@ -32,7 +32,7 @@ Groovy 스크립트 유효성 검사는 Liferay Experience Cloud Self-Managed �
 
 1. **조건** 탭으로 이동하여 유효성 검사에 조건을 추가합니다.
 
-   ![유효성 검사에 조건을 추가합니다.](./adding-custom-validations/images/03.png)
+   ![유효성 검사에 조건을 추가합니다.](./adding-field-validations/images/03.png)
 
    Groovy를 사용할 때 측면 패널을 통해 조건에 사용 가능한 데이터 필드를 찾아보고 추가할 수 있습니다. 자세한 내용은 [Groovy 유효성 검사 사용](#using-groovy-validations) 참조하십시오.
 
@@ -50,7 +50,7 @@ Groovy 스크립트 유효성 검사는 Liferay Experience Cloud Self-Managed �
 
    각 유효성 검사에는 하나의 트리거 이벤트만 있을 수 있습니다.
 
-   ![유효성 검사를 활성화하고 트리거 이벤트를 설정합니다.](./adding-custom-validations/images/04.png)
+   ![유효성 검사를 활성화하고 트리거 이벤트를 설정합니다.](./adding-field-validations/images/04.png)
 
 1. **저장** 클릭합니다.
 
@@ -60,7 +60,7 @@ Groovy 스크립트 유효성 검사는 Liferay Experience Cloud Self-Managed �
 
 Groovy 유효성 검사는 모든 표준 [Groovy Script](https://groovy-lang.org/) 기능을 지원합니다. 조건을 정의할 때 `invalidFields` 변수를 사용해야 합니다. Liferay는 `invalidFields` `true`반환할 때만 유효성 검사 오류 메시지를 표시합니다.
 
-![측면 패널을 사용하여 Groovy 유효성 검사에 필드 요소를 추가합니다.](./adding-custom-validations/images/05.png)
+![측면 패널을 사용하여 Groovy 유효성 검사에 필드 요소를 추가합니다.](./adding-field-validations/images/05.png)
 
 Liferay 7.4 U33+ 및 GA33+의 경우 Liferay는 [GroovyShell 클래스](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) 사용하여 **저장** 클릭할 때 Groovy 스크립트에서 유효한 구문을 확인합니다. 스크립트가 유효하지 않으면 Liferay에 오류 메시지가 표시됩니다.
 
@@ -72,7 +72,7 @@ Liferay 7.4 U33+ 및 GA33+의 경우 Liferay는 [GroovyShell 클래스](https://
 텍스트, 숫자, 날짜 및 부울 필드 유형에만 식 작성기 유효성 검사를 사용할 수 있습니다.
 ```
 
-![측면 패널을 사용하여 유효성 검사에 필드, 연산자 및 함수 요소를 추가합니다.](./adding-custom-validations/images/06.png)
+![측면 패널을 사용하여 유효성 검사에 필드, 연산자 및 함수 요소를 추가합니다.](./adding-field-validations/images/06.png)
 
 Liferay 7.4 U33+ 및 GA33+의 경우 저장을 클릭하면 Liferay가 유효한 구문에 대한 표현식을 확인합니다. 표현식이 잘못된 경우 Liferay는 오류 메시지를 표시합니다.
 

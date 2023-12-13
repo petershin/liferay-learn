@@ -380,4 +380,4 @@ futureDates(fieldName, startsFrom, responseDate, years, 0, endsOn, responseDate,
 
 * [개체 만들기](../creating-objects.md)
 * [개체에 필드 추가](../fields/adding-fields-to-objects.md)
-* [사용자 지정 유효성 검사 추가](../validations/adding-custom-validations.md)
+* [사용자 지정 유효성 검사 추가](../validations/adding-field-validations.md)

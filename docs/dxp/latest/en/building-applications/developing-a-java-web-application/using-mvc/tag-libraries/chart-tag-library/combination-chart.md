@@ -3,7 +3,7 @@ uuid: 0328e8de-45f4-4fdb-af79-37f1b2e4c703
 ---
 # Combination Charts
 
-Combination charts have minor differences from other charts. In a combination chart, you must define the representation type of each data set: `AREA`, `AREA_SPLINE`, `AREA_STEP`, `BAR`, `BUBBLE`, `DONUT`, `GAUGE`, `LINE`, `PIE`, `SCATTER`, `SPLINE`, or `STEP`. Each data set in a combination chart is an instance of the `TypedMultiValueColumn` object. Each object receives an ID, the representation type, and values for the data. Follow these steps to configure your portlet to use combination charts. 
+Combination charts have minor differences from other charts. In a combination chart, you must define the representation type of each data set: `AREA`, `AREA_SPLINE`, `AREA_STEP`, `BAR`, `BUBBLE`, `DONUT`, `GAUGE`, `LINE`, `PIE`, `SCATTER`, `SPLINE`, or `STEP`. Each data set in a combination chart is an instance of the `TypedMultiValueColumn` object. Each object receives an ID, the representation type, and values for the data. Follow these steps to configure your portlet to use combination charts.
 
 1. Import the chart taglib along with the `CombinationChartConfig`, `MultiValueColumn`, and `MultiValueColumn.Type` classes into your bundle's `init.jsp` file:
 
@@ -18,7 +18,7 @@ Combination charts have minor differences from other charts. In a combination ch
 
     ```java
     <%
-    CombinationChartConfig _combinationChartConfig = 
+    CombinationChartConfig _combinationChartConfig =
     new CombinationChartConfig();
 
     _combinationChartConfig.addColumns(
@@ -36,7 +36,6 @@ Combination charts have minor differences from other charts. In a combination ch
         "data6", Type.AREA, 90, 70, 20, 50, 60, 120));
 
     _combinationChartConfig.addGroup("data1", "data2");
-
     %>
     ```
 
@@ -50,10 +49,10 @@ Combination charts have minor differences from other charts. In a combination ch
 
 ![A combination chart displays a variety of data set types.](./combination-chart/images/01.png)
 
-Awesome! Now you know how to create combination charts for your apps. 
+Awesome! Now you know how to create combination charts for your apps.
 
 ## Related Topics
 
 * [Bar Charts](./bar-chart.md)
-* [Donut Charts](./donut-chart.md)
-* [Pie Charts](./pie-chart.md)
+* [Line Charts](./line-chart.md)
+* [Geomap Charts](./geomap-chart.md)

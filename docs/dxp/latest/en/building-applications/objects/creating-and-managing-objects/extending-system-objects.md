@@ -74,7 +74,7 @@ See [Defining Object Actions](./actions/defining-object-actions.md) for more inf
 
 ## Adding Validations
 
-You can add Groovy and Expression Builder validations to system objects. When triggered, these validations check for valid field entries and show custom error messages for invalid entries. Currently, Objects only supports validations for a system object's default fields and does not support validations for its custom fields. See [Adding Custom Validations](./validations/adding-custom-validations.md) for more information.
+You can add Groovy and Expression Builder validations to system objects. When triggered, these validations check for valid field entries and show custom error messages for invalid entries. Currently, Objects only supports validations for a system object's default fields and does not support validations for its custom fields. See [Adding Field Validations](./validations/adding-field-validations.md) for more information.
 
 ## Additional Configuration Options
 

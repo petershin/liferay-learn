@@ -37,7 +37,7 @@ To use this type of client extension, add the `objectValidationRule` type to you
 type: objectValidationRule
 ```
 
-Once deployed, these client extensions appear as options when adding validations to an object definition. See [Adding Custom Validations](../objects/creating-and-managing-objects/validations/adding-custom-validations.md) for more information.
+Once deployed, these client extensions appear as options when adding validations to an object definition. See [Adding Field Validations](../objects/creating-and-managing-objects/validations/adding-field-validations.md) for more information.
 
 ![These client extensions appear as options when adding validations to an object definition.](./microservice-client-extensions/images/01.png)
 

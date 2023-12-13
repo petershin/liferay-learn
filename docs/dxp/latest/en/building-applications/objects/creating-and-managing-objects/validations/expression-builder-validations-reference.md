@@ -417,4 +417,4 @@ futureDates(fieldName, startsFrom, responseDate, years, 0, endsOn, responseDate,
 
 * [Creating Objects](../creating-objects.md)
 * [Adding Fields to Objects](../fields/adding-fields-to-objects.md)
-* [Adding Custom Validations](../validations/adding-custom-validations.md)
+* [Adding Field Validations](../validations/adding-field-validations.md)

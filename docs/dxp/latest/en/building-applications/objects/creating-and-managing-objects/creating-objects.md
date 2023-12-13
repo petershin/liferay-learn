@@ -83,7 +83,7 @@ Follow these steps to edit the object draft:
 
    ![Add custom views to the object from the Views tab.](./creating-objects/images/08.png)
 
-1. (Optional) Click the Validations tab to add validations. Each validation sets rules for determining valid field entries. See [Adding Custom Validations](./validations/adding-custom-validations.md).
+1. (Optional) Click the Validations tab to add validations. Each validation sets rules for determining valid field entries. See [Adding Field Validations](./validations/adding-field-validations.md).
 
    ![Add custom validations to the object from the Validations tab.](./creating-objects/images/09.png)
 

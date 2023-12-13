@@ -1,13 +1,13 @@
 ---
 uuid: 4554a488-5db0-4353-b9d0-a9af05b41200
 ---
-# Adding Custom Validations
+# Adding Field Validations
 
 {bdg-secondary}`Liferay 7.4 2023.Q3+/GA98+`
 
 Validations set rules for determining valid field entries. Each validation has its own trigger, conditions, and error message, which you can set via the Objects UI. You can define validations using [Groovy scripts](#using-groovy-validations) or [Liferay expressions](#using-expression-builder-validations).
 
-![Create validations for custom and system object fields.](./adding-custom-validations/images/01.png)
+![Create validations for custom and system object fields.](./adding-field-validations/images/01.png)
 
 !!! note
     If out-of-the-box validations don't meet your needs, you can create custom validations using the `objectValidationRule` client extension. See [Microservice Client Extensions](../../../client-extensions/microservice-client-extensions.md) for more information.
@@ -24,7 +24,7 @@ To add a validation,
 
    If you've deployed object validation rule client extensions to your instance, they also appear as options.
 
-   ![Enter a label and select a validation type.](./adding-custom-validations/images/02.png)
+   ![Enter a label and select a validation type.](./adding-field-validations/images/02.png)
 
 1. Click *Save*.
 
@@ -32,7 +32,7 @@ To add a validation,
 
 1. In the Basic Info tab, activate the validation.
 
-   ![Activate the validation.](./adding-custom-validations/images/03.png)
+   ![Activate the validation.](./adding-field-validations/images/03.png)
 
 1. Select the *trigger event* to determine when the validation runs.
 
@@ -42,7 +42,7 @@ To add a validation,
 
    Conditions can include multiple fields and functions for performing complex logic.
 
-   ![Add conditions to the validation.](./adding-custom-validations/images/04.png)
+   ![Add conditions to the validation.](./adding-field-validations/images/04.png)
 
    When using Groovy, you can browse and add available data fields to your conditions via the side panel. See [Using Groovy Validations](#using-groovy-validations) for more information.
 
@@ -59,13 +59,13 @@ To add a validation,
 
    **Partial Validation (Inline Field)**: Display the error message next to the specified field.
 
-   ![Enter an error message and select an output validation type.](./adding-custom-validations/images/05.png)
+   ![Enter an error message and select an output validation type.](./adding-field-validations/images/05.png)
 
 1. Click *Save*.
 
 While activated, the validation runs for all new object entries and is displayed in [layouts](../layouts.md) and [form containers](../../using-fragments-to-build-forms.md)
 
-![Validations are displayed in form containers.](./adding-custom-validations/images/06.png)
+![Validations are displayed in form containers.](./adding-field-validations/images/06.png)
 
 ## Using Groovy Validations
 
@@ -73,7 +73,7 @@ While activated, the validation runs for all new object entries and is displayed
 
 Groovy validations support all standard [Groovy Script](https://groovy-lang.org/) capabilities. When defining conditions, you must use the `invalidFields` variable. Liferay only displays the validation error message when `invalidFields` returns `true`.
 
-![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/07.png)
+![Use the side panel to add field elements to your Groovy validations.](./adding-field-validations/images/07.png)
 
 Liferay uses the [GroovyShell class](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) to check your Groovy scripts for valid syntax when you click *Save*. If the script is invalid, Liferay shows an error message.
 
@@ -84,7 +84,7 @@ Expression Builder provides predefined fields, operators, and functions that you
 !!! important
     You can only use Expression Builder validations with text, numeric, date, and Boolean field types.
 
-![Use the side panel to add field, operator, and function elements to your validation.](./adding-custom-validations/images/08.png)
+![Use the side panel to add field, operator, and function elements to your validation.](./adding-field-validations/images/08.png)
 
 Liferay checks your expression for valid syntax when you click Save. If the expression is invalid, Liferay shows an error message.
 

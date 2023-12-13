@@ -13,7 +13,7 @@ When configuring an object definition, you can localize the definition's labels,
 
 ![Localize the Object definition's labels, as well as labels for its fields, relationships, actions, and view columns.](./localizing-object-definitions-and-entries/images/01.png)
 
-Additionally, you can localize [validation](./validations/adding-custom-validations.md) error messages.
+Additionally, you can localize [validation](./validations/adding-field-validations.md) error messages.
 
 ![Localize validation error messages.](./localizing-object-definitions-and-entries/images/02.png)
 

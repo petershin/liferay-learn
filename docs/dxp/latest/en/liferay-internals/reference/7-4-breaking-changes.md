@@ -8,141 +8,6 @@ Breaking changes changes break or significantly alter existing functionality or 
 
 Read about 7.4 breaking changes from before 2023 Q3 in the [Liferay source code](https://github.com/liferay/liferay-portal/blob/master/readme/BREAKING_CHANGES.markdown).
 
-## 2023 Q3 Release
-
-### Changes in Liferay DXP
-
-Here is a list of changes that break or significantly alter existing functionality within Liferay.
-
-| **Breaking Change**                                        | **Description**                                                                                                                                                                                                                                                                                                                                  | **References**                                                |
-| :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------ |
-| **Location of the Mark as Cacheable option for fragments** | Mark (or unmark) fragments as cacheable in the Fragments menu (within the fragment's Actions menu) instead of the editor. Now you can make this change separately from other edits to the fragment, which reduces the performance cost of propagating it to fragments in use. No implementation changes are necessary with this breaking change. | [LPS-183735](https://liferay.atlassian.net/browse/LPS-183735) |
-
-### Changes in Module Source Code
-
-**SolrClientManager.java**
-[`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager.java)
-**Date**: Jul. 4, 2023
-**Ticket**: [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
-**What Changed**: The `SolrClientManager` class's extension points are removed.
-**Reason**: Liferay no longer supports extending this class.
-
-**SolrClientFactory.java**
-[`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory.java)
-**Date**: Jul. 4, 2023
-**Ticket**: [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
-**What Changed**: The `CLOUD` and `REPLICATED` extension points are removed.
-**Reason**: Liferay no longer supports these extension points.
-
-**HttpClientFactory.java**
-[`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory.java)
-**Date**: Jul. 4, 2023
-**Ticket**: [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
-**What Changed**: The `BASIC` and `CERT` extension points are removed.
-**Reason**: Liferay no longer supports these extension points.
-
-### Changes in `portal-impl` Classes
-
-**MessagingHotDeployListener.java**
-`portal-impl/src/com/liferay/portal/deploy/hot/MessagingHotDeployListener.java`
-**Date**: Aug. 4, 2023
-**Ticket**: [LPS-192680](https://liferay.atlassian.net/browse/LPS-192680)
-**What Changed**: The `MessagingHotDeployListener` class is removed. The accompanying `liferay/hot_deploy` message bus destination is also removed. Instead, register a `HotDeployListener` to listen for hot deploy events.
-**Reason**: The removed message bus destination is no longer used.
-
-**HookHotDeployListener.java**
-[`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
-**Date**: Aug. 17, 2023
-**Ticket**: [LPS-193926](https://liferay.atlassian.net/browse/LPS-193926)
-**What Changed**: The `HookHotDeployListener` class no longer supports deploying a [`DLProcessor`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/document/library/kernel/processor/DLProcessor.java) via hook. Instead, convert your `DLProcessor` into an OSGi implementation.
-**Reason**: This prevents duplicated logic to register `DLProcessor` implementations between `DLProcessorRegistryImpl` and `HookHotDeployListener`.
-
-**portal.properties**
-[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
-**Date**: Sep. 4, 2023
-**Ticket**: [LPS-194379](https://liferay.atlassian.net/browse/LPS-194379)
-**What Changed**: The portal property `discussion.subscribe` is removed. Instead, set the same configuration in your instance settings in the UI.
-**Reason**: Instance settings can be set specifically per instance and while Liferay is running, so it's more flexible to configure it as an instance setting.
-
-**HookHotDeployListener.java**
-[`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
-**Date**: Sep. 4, 2023
-**Ticket**: [LPS-194350](https://liferay.atlassian.net/browse/LPS-194350)
-**What Changed**: The `HookHotDeployListener` class no longer supports deploying an external repository via hook. Instead, convert your own external repository implementation into an OSGi service.
-**Reason**: OSGi services support more features than deploying external repositories via hook.
-
-**portal.properties**
-[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
-**Date**: Sep. 13, 2023
-**Ticket**: [LPS-195006](https://liferay.atlassian.net/browse/LPS-195006)
-**What Changed**: The portal property `discussion.comments.always.editable.by.owner` is removed. Instead, configure the same setting in your instance settings in the UI.
-**Reason**: Instance settings can be set specifically per instance and while Liferay is running, so it's more flexible to configure it as an instance setting.
-
-### Changes in `portal-kernel` Classes
-
-**Document.java**
-[`portal-kernel/src/com/liferay/portal/kernel/search/Document.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/search/Document.java)
-**Date**: Jul. 7, 2023
-**Ticket**: [LPS-188914](https://liferay.atlassian.net/browse/LPS-188914)
-**What Changed**: These `addFile` methods are now deprecated: `addFile(String, byte[], String)`, `addFile(String, File, String)`, `addFile(String, InputStream, String)`, and `addFile(String, InputStream, String, int)`. Update your implementations by using an `InputStream` with the file's data and calling the [`TextExtractor`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/util/TextExtractor.java) class's `extractText` method. Then, call `addFile(String, String)` using the `extractText` call's return value.
-**Reason**: The deprecated `addFile` implementations are no longer used.
-
-**BaseModelPermissionChecker.java**
-`com.liferay.portal.kernel.security.permission.BaseModelPermissionChecker`
-**Date**: Aug. 11, 2023
-**Ticket**: [LPS-182671](https://liferay.atlassian.net/browse/LPS-182671)
-**What Changed**: The `BaseModelPermissionChecker` interface is removed. Implement [`ModelResourcePermission`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/ModelResourcePermission.java) instead.
-**Reason**: The interface was deprecated in 7.1 and is no longer used.
-
-**SchedulerEngine.java**
-[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java)
-**Date**: Aug. 24, 2023
-**Ticket**: [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
-**What Changed**: The `unschedule` method is removed. Instead, call the `delete` method.
-**Reason**: The method is not needed because unscheduled jobs should be deleted at the same time.
-
-**SchedulerEngineHelper.java**
-[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java)
-**Date**: Aug. 24, 2023
-**Ticket**: [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
-**What Changed**: The `unschedule` method is removed. Instead, call the `delete` method.
-**Reason**: The method is not needed because unscheduled jobs should be deleted at the same time.
-
-**SchedulerEngineHelperUtil.java**
-[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java)
-**Date**: Aug. 24, 2023
-**Ticket**: [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
-**What Changed**: The `unschedule` method is removed. Instead, call the `delete` method.
-**Reason**: The method is not needed because unscheduled jobs should be deleted at the same time.
-
-**DestinationEventListener.java**
-`portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java`
-**Date**: Sep. 1, 2023
-**Ticket**: [LPS-195116](https://liferay.atlassian.net/browse/LPS-195116)
-**What Changed**: The `DestinationEventListener` interface is removed. Listening for `Destination` registration and unregistration events is no longer supported.
-**Reason**: This listener is no longer used.
-
-**MessageBusEventListener.java**
-`portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java`
-**Date**: Sep. 1, 2023
-**Ticket**: [LPS-195116](https://liferay.atlassian.net/browse/LPS-195116)
-**What Changed**: The `MessageBusEventListener` interface is removed. Listening for `MessageListener` registration and unregistration events is no longer supported.
-**Reason**: This listener is no longer used.
-
-**Destination.java**
-[`portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)
-**Date**: Sep. 1, 2023
-**Ticket**: [LPS-194337](https://liferay.atlassian.net/browse/LPS-194337)
-**What Changed**: These methods are removed: `copyMessageListeners`, `getMessageListenerCount`, `isRegistered`, `register`, `unregister`. The [`MessageListenerRegistry`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListenerRegistry.java) interface is added to get message listeners associated with a provided destination name. Update your code by registering a `MessageListener` as an OSGi service, using the `destination.name` property.
-**Reason**: This change simplifies the message bus code structure.
-
-**TriggerConfiguration.java**
-[`portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java)
-**Date**: Sep. 11, 2023
-**Ticket**: [LPS-190994](https://liferay.atlassian.net/browse/LPS-190994)
-**What Changed**: The scheduler framework no longer supports using an empty cron expression (or interval of `0`) to disable a job. Instead, use the component blacklist to disable specific scheduler components. Check the required class names in the error message shown when using an empty cron expression.
-**Reason**: If a job should not be bootstrapped, it should not be registered with the scheduler framework.
-
 ## 2023 Q4 Release
 
 ### Changes in Liferay DXP
@@ -585,9 +450,144 @@ Here is a list of changes that break or significantly alter existing functionali
 - **What Changed**: The `SearchInputTag` and `UserManagementBarTag` taglibs are removed.
 - **Reason**: These were internal taglibs and are no longer used. They also used obsolete markup and logic.
 
-**`liferay-export-import-changeset` taglibs
+**`liferay-export-import-changeset` taglibs**
 
 - **Date**: Oct. 16, 2023
 - **Ticket**: [LPS-199170](https://liferay.atlassian.net/browse/LPS-199170)
 - **What Changed**: These taglibs were removed: `AddEntitiesTag`, `AddEntityTag`, `CreateTag`, `CreateTei`, `ExportEntityTag`, `ExportImportEntityManagementBarButtonTag`, `ExportImportEntitySearchContainerMappingTag`, `ImportEntityTag`, `PublishChangesetTag`, and `PublishModelMenuItemTag`.
 - **Reason**: These were internal taglibs and are no longer used. They also used obsolete markup and logic.
+
+## 2023 Q3 Release
+
+### Changes in Liferay DXP
+
+Here is a list of changes that break or significantly alter existing functionality within Liferay.
+
+| **Breaking Change**                                        | **Description**                                                                                                                                                                                                                                                                                                                                  | **References**                                                |
+| :--------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------ |
+| **Location of the Mark as Cacheable option for fragments** | Mark (or unmark) fragments as cacheable in the Fragments menu (within the fragment's Actions menu) instead of the editor. Now you can make this change separately from other edits to the fragment, which reduces the performance cost of propagating it to fragments in use. No implementation changes are necessary with this breaking change. | [LPS-183735](https://liferay.atlassian.net/browse/LPS-183735) |
+
+### Changes in Module Source Code
+
+**SolrClientManager.java**
+[`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientManager.java)
+- **Date**: Jul. 4, 2023
+- **Ticket**: [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
+- **What Changed**: The `SolrClientManager` class's extension points are removed.
+- **Reason**: Liferay no longer supports extending this class.
+
+**SolrClientFactory.java**
+[`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/connection/SolrClientFactory.java)
+- **Date**: Jul. 4, 2023
+- **Ticket**: [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
+- **What Changed**: The `CLOUD` and `REPLICATED` extension points are removed.
+- **Reason**: Liferay no longer supports these extension points.
+
+**HttpClientFactory.java**
+[`modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/portal-search-solr8/portal-search-solr8-impl/src/main/java/com/liferay/portal/search/solr8/internal/http/HttpClientFactory.java)
+- **Date**: Jul. 4, 2023
+- **Ticket**: [LPS-180691](https://liferay.atlassian.net/browse/LPS-180691)
+- **What Changed**: The `BASIC` and `CERT` extension points are removed.
+- **Reason**: Liferay no longer supports these extension points.
+
+### Changes in `portal-impl` Classes
+
+**MessagingHotDeployListener.java**
+`portal-impl/src/com/liferay/portal/deploy/hot/MessagingHotDeployListener.java`
+- **Date**: Aug. 4, 2023
+- **Ticket**: [LPS-192680](https://liferay.atlassian.net/browse/LPS-192680)
+- **What Changed**: The `MessagingHotDeployListener` class is removed. The accompanying `liferay/hot_deploy` message bus destination is also removed. Instead, register a `HotDeployListener` to listen for hot deploy events.
+- **Reason**: The removed message bus destination is no longer used.
+
+**HookHotDeployListener.java**
+[`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
+- **Date**: Aug. 17, 2023
+- **Ticket**: [LPS-193926](https://liferay.atlassian.net/browse/LPS-193926)
+- **What Changed**: The `HookHotDeployListener` class no longer supports deploying a [`DLProcessor`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/document/library/kernel/processor/DLProcessor.java) via hook. Instead, convert your `DLProcessor` into an OSGi implementation.
+- **Reason**: This prevents duplicated logic to register `DLProcessor` implementations between `DLProcessorRegistryImpl` and `HookHotDeployListener`.
+
+**portal.properties**
+[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+- **Date**: Sep. 4, 2023
+- **Ticket**: [LPS-194379](https://liferay.atlassian.net/browse/LPS-194379)
+- **What Changed**: The portal property `discussion.subscribe` is removed. Instead, set the same configuration in your instance settings in the UI.
+- **Reason**: Instance settings can be set specifically per instance and while Liferay is running, so it's more flexible to configure it as an instance setting.
+
+**HookHotDeployListener.java**
+[`portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/deploy/hot/HookHotDeployListener.java)
+- **Date**: Sep. 4, 2023
+- **Ticket**: [LPS-194350](https://liferay.atlassian.net/browse/LPS-194350)
+- **What Changed**: The `HookHotDeployListener` class no longer supports deploying an external repository via hook. Instead, convert your own external repository implementation into an OSGi service.
+- **Reason**: OSGi services support more features than deploying external repositories via hook.
+
+**portal.properties**
+[`portal-impl/src/portal.properties`](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/portal.properties)
+- **Date**: Sep. 13, 2023
+- **Ticket**: [LPS-195006](https://liferay.atlassian.net/browse/LPS-195006)
+- **What Changed**: The portal property `discussion.comments.always.editable.by.owner` is removed. Instead, configure the same setting in your instance settings in the UI.
+- **Reason**: Instance settings can be set specifically per instance and while Liferay is running, so it's more flexible to configure it as an instance setting.
+
+### Changes in `portal-kernel` Classes
+
+**Document.java**
+[`portal-kernel/src/com/liferay/portal/kernel/search/Document.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/search/Document.java)
+- **Date**: Jul. 7, 2023
+- **Ticket**: [LPS-188914](https://liferay.atlassian.net/browse/LPS-188914)
+- **What Changed**: These `addFile` methods are now deprecated: `addFile(String, byte[], String)`, `addFile(String, File, String)`, `addFile(String, InputStream, String)`, and `addFile(String, InputStream, String, int)`. Update your implementations by using an `InputStream` with the file's data and calling the [`TextExtractor`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/util/TextExtractor.java) class's `extractText` method. Then, call `addFile(String, String)` using the `extractText` call's return value.
+- **Reason**: The deprecated `addFile` implementations are no longer used.
+
+**BaseModelPermissionChecker.java**
+`com.liferay.portal.kernel.security.permission.BaseModelPermissionChecker`
+- **Date**: Aug. 11, 2023
+- **Ticket**: [LPS-182671](https://liferay.atlassian.net/browse/LPS-182671)
+- **What Changed**: The `BaseModelPermissionChecker` interface is removed. Implement [`ModelResourcePermission`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/security/permission/resource/ModelResourcePermission.java) instead.
+- **Reason**: The interface was deprecated in 7.1 and is no longer used.
+
+**SchedulerEngine.java**
+[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngine.java)
+- **Date**: Aug. 24, 2023
+- **Ticket**: [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
+- **What Changed**: The `unschedule` method is removed. Instead, call the `delete` method.
+- **Reason**: The method is not needed because unscheduled jobs should be deleted at the same time.
+
+**SchedulerEngineHelper.java**
+[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelper.java)
+- **Date**: Aug. 24, 2023
+- **Ticket**: [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
+- **What Changed**: The `unschedule` method is removed. Instead, call the `delete` method.
+- **Reason**: The method is not needed because unscheduled jobs should be deleted at the same time.
+
+**SchedulerEngineHelperUtil.java**
+[`portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/SchedulerEngineHelperUtil.java)
+- **Date**: Aug. 24, 2023
+- **Ticket**: [LPS-194314](https://liferay.atlassian.net/browse/LPS-194314)
+- **What Changed**: The `unschedule` method is removed. Instead, call the `delete` method.
+- **Reason**: The method is not needed because unscheduled jobs should be deleted at the same time.
+
+**DestinationEventListener.java**
+`portal-kernel/src/com/liferay/portal/kernel/messaging/DestinationEventListener.java`
+- **Date**: Sep. 1, 2023
+- **Ticket**: [LPS-195116](https://liferay.atlassian.net/browse/LPS-195116)
+- **What Changed**: The `DestinationEventListener` interface is removed. Listening for `Destination` registration and unregistration events is no longer supported.
+- **Reason**: This listener is no longer used.
+
+**MessageBusEventListener.java**
+`portal-kernel/src/com/liferay/portal/kernel/messaging/MessageBusEventListener.java`
+- **Date**: Sep. 1, 2023
+- **Ticket**: [LPS-195116](https://liferay.atlassian.net/browse/LPS-195116)
+- **What Changed**: The `MessageBusEventListener` interface is removed. Listening for `MessageListener` registration and unregistration events is no longer supported.
+- **Reason**: This listener is no longer used.
+
+**Destination.java**
+[`portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/Destination.java)
+- **Date**: Sep. 1, 2023
+- **Ticket**: [LPS-194337](https://liferay.atlassian.net/browse/LPS-194337)
+- **What Changed**: These methods are removed: `copyMessageListeners`, `getMessageListenerCount`, `isRegistered`, `register`, `unregister`. The [`MessageListenerRegistry`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/messaging/MessageListenerRegistry.java) interface is added to get message listeners associated with a provided destination name. Update your code by registering a `MessageListener` as an OSGi service, using the `destination.name` property.
+- **Reason**: This change simplifies the message bus code structure.
+
+**TriggerConfiguration.java**
+[`portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java`](https://github.com/liferay/liferay-portal/blob/master/portal-kernel/src/com/liferay/portal/kernel/scheduler/TriggerConfiguration.java)
+- **Date**: Sep. 11, 2023
+- **Ticket**: [LPS-190994](https://liferay.atlassian.net/browse/LPS-190994)
+- **What Changed**: The scheduler framework no longer supports using an empty cron expression (or interval of `0`) to disable a job. Instead, use the component blacklist to disable specific scheduler components. Check the required class names in the error message shown when using an empty cron expression.
+- **Reason**: If a job should not be bootstrapped, it should not be registered with the scheduler framework.

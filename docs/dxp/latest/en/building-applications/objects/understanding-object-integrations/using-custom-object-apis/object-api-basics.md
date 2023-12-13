@@ -1,6 +1,7 @@
 ---
 uuid: 7cbe4379-3bba-400e-8295-2b60e29e6f84
 ---
+
 # Object API Basics
 
 When you publish an Object, Liferay automatically generates REST APIs for it. These APIs differ for Company and Site scoped Objects, but they all use the `c/[pluralobjectlabel]` naming pattern (e.g., `c/timeoffrequests`). You can use these APIs to create, access, update, and remove Object entries.
@@ -18,23 +19,23 @@ For a complete list of APIs generated for both Site and Company Objects, see [Ob
 
 Then, follow these steps to [create](../../creating-and-managing-objects/creating-objects.md) a basic Object for this tutorial:
 
-1. Open the *Global Menu* (![Global Menu](../../../../images/icon-applications-menu.png)), go to the *Control Panel* tab, and click *Objects*.
+1. Open the _Global Menu_ (![Global Menu](../../../../images/icon-applications-menu.png)), go to the _Control Panel_ tab, and click _Objects_.
 
-1. Click the *Add* button (![Add Button](../../../../images/icon-add.png)) and enter these values:
+1. Click the _Add_ button (![Add Button](../../../../images/icon-add.png)) and enter these values:
 
-   | Field | Value |
-   | :--- | :--- |
-   | Label | `Able` |
+   | Field        | Value   |
+   | :----------- | :------ |
+   | Label        | `Able`  |
    | Plural Label | `Ables` |
-   | Name | `Able` |
+   | Name         | `Able`  |
 
-1. Select the new *Object* draft, go to the *Fields* tab, and add a single text field:
+1. Select the new _Object_ draft, go to the _Fields_ tab, and add a single text field:
 
    | Label | Field Name | Type | Required |
-   | :--- | :--- | :--- | :--- |
-   | Name | name | Text | &#10004; |
+   | :---- | :--------- | :--- | :------- |
+   | Name  | name       | Text | &#10004; |
 
-1. Go to the *Details* tab and click *Publish*.
+1. Go to the _Details_ tab and click _Publish_.
 
    ```{important}
    For this tutorial, you must use the above values.
@@ -56,13 +57,13 @@ unzip liferay-v1s4.zip
 
 These scripts include the following APIs:
 
-| HTTP Method | HTTP Endpoint | Description |
-| :--- | :--- | :--- |
-| GET | `/` | Returns a complete list of Object entries in a Liferay instance; results can be paginated, filtered, searched, and sorted |
-| POST | `/` | Creates a new Object entry using the details provided in the API call |
-| DELETE | `/{objectNameId}` | Deletes the specified Object entry and returns a 204 if the operation succeeds |
-| GET | `/{objectNameId}` | Returns details for the specified Object entry |
-| PUT | `/{objectNameId}` | Replaces the specified Object entry's details with those provided in the API call |
+| HTTP Method | HTTP Endpoint     | Description                                                                                                               |
+| :---------- | :---------------- | :------------------------------------------------------------------------------------------------------------------------ |
+| GET         | `/`               | Returns a complete list of Object entries in a Liferay instance; results can be paginated, filtered, searched, and sorted |
+| POST        | `/`               | Creates a new Object entry using the details provided in the API call                                                     |
+| DELETE      | `/{objectNameId}` | Deletes the specified Object entry and returns a 204 if the operation succeeds                                            |
+| GET         | `/{objectNameId}` | Returns details for the specified Object entry                                                                            |
+| PUT         | `/{objectNameId}` | Replaces the specified Object entry's details with those provided in the API call                                         |
 
 ## Calling the Custom Object's APIs
 
@@ -136,8 +137,8 @@ These scripts include the following APIs:
 
    ```json
    {
-     "status" : "NOT_FOUND",
-     "title" : "No ObjectEntry exists with the primary key 41969"
+   	"status": "NOT_FOUND",
+   	"title": "No ObjectEntry exists with the primary key 41969"
    }
    ```
 
@@ -148,18 +149,18 @@ The following are examples of the tutorial's cURL commands.
 ### `Able_POST_ToCompany.sh`
 
 ```{literalinclude} ./object-api-basics/resources/liferay-v1s4.zip/curl/Able_POST_ToCompany.sh
-   :language: bash
+:language: bash
 ```
 
 ### `Able_PUT_ById.sh`
 
 ```{literalinclude} ./object-api-basics/resources/liferay-v1s4.zip/curl/Able_PUT_ById.sh
-   :language: bash
+:language: bash
 ```
 
 ## Managing Object Tags and Categories
 
-You can use the Object APIs to read, set, and update tags and categories for object entries that have categorization enabled. See [Tags and Categories](../../../../content-authoring-and-management/tags-and-categories.md) for more information. 
+You can use the Object APIs to read, set, and update tags and categories for object entries that have categorization enabled. See [Tags and Categories](../../../../content-authoring-and-management/tags-and-categories.md) for more information.
 
 Tags are represented by the `keywords` property. You can set or update tags by adding a `keywords` array to the body of any POST, PUT, or PATCH request.
 
@@ -168,9 +169,10 @@ Tags are represented by the `keywords` property. You can set or update tags by a
    "tag1", "tag2", "tag3"
 ]
 ```
+
 After making a GET request for an object entry, you can read its tags in the same `keywords` array.
 
-You can set and update categories for an object entry by adding the `taxonomyCategoryIds` array to any POST, PUT, or PATCH request. 
+You can set and update categories for an object entry by adding the `taxonomyCategoryIds` array to any POST, PUT, or PATCH request.
 
 ```json
 "taxonomyCategoryIds" : [
@@ -178,11 +180,10 @@ You can set and update categories for an object entry by adding the `taxonomyCat
 ]
 ```
 
-```note
+!!! note
 You must have an existing vocabulary of categories to assign categories to an object entry. See [Defining Categories and Vocabularies for Content](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) for more information.
-```
 
-After making a GET request for an object entry, you can read its categories in the `taxonomyCategoryBriefs` array, which contains the `taxonomyCategoryId` and `taxonomyCategoryName`  for each assigned category.
+After making a GET request for an object entry, you can read its categories in the `taxonomyCategoryBriefs` array, which contains the `taxonomyCategoryId` and `taxonomyCategoryName` for each assigned category.
 
 ```json
 "taxonomyCategoryBriefs": [
@@ -197,7 +198,7 @@ After making a GET request for an object entry, you can read its categories in t
 ]
 ```
 
-You can filter object entries by `keywords` and `taxonomyCategoryIds` following the rules described in [API Query Parameters](../../../../headless-delivery/consuming-apis/api-query-parameters.md). Example filter strings may look like the following:
+You can filter object entries by `keywords` and `taxonomyCategoryIds` following the rules described in [API Query Parameters](../../../../headless-delivery/consuming-apis/api-query-parameters.md). Example filter strings may look like these:
 
 - `keywords/any(k:k in ('tag1','tag2'))` will retrieve all object entries tagged with `tag1` or `tag2`.
 
@@ -205,6 +206,6 @@ You can filter object entries by `keywords` and `taxonomyCategoryIds` following 
 
 ## Related Topics
 
-* [Using Batch APIs](./using-batch-apis.md)
-* [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
-* [Using Aggregation Terms with REST APIs](./using-aggregation-terms-with-rest-apis.md)
+- [Using Batch APIs](./using-batch-apis.md)
+- [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)
+- [Using Aggregation Terms with REST APIs](./using-aggregation-terms-with-rest-apis.md)

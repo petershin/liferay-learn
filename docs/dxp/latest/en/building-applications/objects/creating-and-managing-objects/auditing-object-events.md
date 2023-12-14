@@ -1,7 +1,7 @@
 ---
 uuid: a4cb2ac1-d3b7-4956-b2ea-c4cc0d30eb1a
 ---
-# Auditing Object Definition Events
+# Auditing Object Events
 
 {bdg-secondary}`Liferay 7.4 U72+/GA72+`
 
@@ -13,7 +13,7 @@ You can use Liferay's audit framework to track events for custom object definiti
 
 To access the Audit application, open the *Global Menu* (![Global Menu](../../../images/icon-applications-menu.png)) &rarr; *Control Panel*  &rarr; click *Audit*.
 
-![Click Audit in the Control Panel to view events related to object definitions.](./auditing-object-definition-events/images/01.png)
+![Click Audit in the Control Panel to view events related to object definitions.](./auditing-object-events/images/01.png)
 
 Events appear in a table:
 
@@ -31,7 +31,7 @@ Click an event field to view a more complete record, including specific action d
 
 Object entry events use the `ObjectDefinition#[ObjectID]` naming pattern.
 
-![Click an event field to view more details.](./auditing-object-definition-events/images/02.png)
+![Click an event field to view more details.](./auditing-object-events/images/02.png)
 
 ## Using REST APIs
 
@@ -53,7 +53,7 @@ To enable entry history,
 
 1. In the Details tab, toggle *Enable Entry History*.
 
-   ![Enable entry history.](./auditing-object-definition-events/images/03.png)
+   ![Enable entry history.](./auditing-object-events/images/03.png)
 
 1. Click *Save*.
 

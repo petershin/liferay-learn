@@ -137,7 +137,7 @@ Follow these steps to edit the object draft:
 
 1. Enable or disable history for object entries.
 
-   While enabled, Liferay keeps a history of entry events that you can view in the Audit application or via REST API calls. See [Auditing Object Definition Events](./auditing-object-definition-events.md).
+   While enabled, Liferay keeps a history of entry events that you can view in the Audit application or via REST API calls. See [Auditing Object Events](./auditing-object-events.md).
 
 1. {bdg-link-primary}`[Beta Feature](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` Enable or disable draft mode for object entries.
 

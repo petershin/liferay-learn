@@ -15,7 +15,7 @@ toc:
   - ./creating-and-managing-objects/activating-and-deactivating-objects.md
   - >-
     ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
-  - ./creating-and-managing-objects/auditing-object-definition-events.md
+  - ./creating-and-managing-objects/auditing-object-events.md
   - ./creating-and-managing-objects/deleting-objects.md
   - ./creating-and-managing-objects/managing-objects-with-headless-apis.md
 uuid: d42bd20c-4087-4203-9aee-d254c5bc2346
@@ -39,7 +39,7 @@ creating-and-managing-objects/localizing-object-definitions-and-entries.md
 creating-and-managing-objects/using-system-objects-with-custom-objects.md
 creating-and-managing-objects/activating-and-deactivating-objects.md
 creating-and-managing-objects/exporting-and-importing-object-definitions.md
-creating-and-managing-objects/auditing-object-definition-events.md
+creating-and-managing-objects/auditing-object-events.md
 creating-and-managing-objects/deleting-objects.md
 creating-and-managing-objects/managing-objects-with-headless-apis.md
 ```
@@ -110,8 +110,8 @@ Liferay Objects provides a convenient UI for [creating](./creating-and-managing-
 :link: ./creating-and-managing-objects/exporting-and-importing-object-definitions.md
 :::
 
-:::{grid-item-card} Auditing Object Definition Events
-:link: ./creating-and-managing-objects/auditing-object-definition-events.md
+:::{grid-item-card} Auditing Object Events
+:link: ./creating-and-managing-objects/auditing-object-events.md
 :::
 
 :::{grid-item-card} Deleting Objects

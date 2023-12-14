@@ -5,7 +5,7 @@ uuid: 902fc6f9-716c-4d56-8aeb-752a222ee882
 
 {bdg-secondary}`Liferay 7.4 U72+/GA72+`
 
-When you [enable entry history](../../creating-and-managing-objects/auditing-object-definition-events.md#enabling-entry-history) for an object definition, you can use the `nestedFields` parameter with REST APIs to audit entry events. Add `nestedFields=auditEvents` to the path for GET requests (e.g., `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`).
+When you [enable entry history](../../creating-and-managing-objects/auditing-object-events.md#enabling-entry-history) for an object definition, you can use the `nestedFields` parameter with REST APIs to audit entry events. Add `nestedFields=auditEvents` to the path for GET requests (e.g., `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`).
 
 To get started, [set up](#setting-up-a-liferay-instance) a new Liferay 7.4 instance and [prepare](#preparing-the-sample-code) the provided tutorial code. Then, [run the scripts](#using-the-sample-code) to create entries, update them, and query those changes using the `nestedFields` parameter.
 
@@ -287,5 +287,5 @@ These GET requests include the `nestedFields=auditEvents` parameter in their URL
 
 ## Related Topics
 
-* [Auditing Object Definition Events](../../creating-and-managing-objects/auditing-object-definition-events.md)
+* [Auditing Object Events](../../creating-and-managing-objects/auditing-object-events.md)
 * [Using nestedFields to Query Related Entries](./using-nestedfields-to-query-related-entries.md)

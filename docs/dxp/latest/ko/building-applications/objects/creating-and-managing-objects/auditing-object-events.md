@@ -10,7 +10,7 @@ Liferay의 감사 프레임워크를 사용하여 사용자 정의 개체 정의
 
 감사 애플리케이션에 액세스하려면 **전역 메뉴를 엽니다.**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; 클릭 **감사** .
 
-![개체 정의와 관련된 이벤트를 보려면 제어판에서 감사를 클릭합니다.](./auditing-object-definition-events/images/01.png)
+![개체 정의와 관련된 이벤트를 보려면 제어판에서 감사를 클릭합니다.](./auditing-object-events/images/01.png)
 
 이벤트가 표에 나타납니다.
 
@@ -29,7 +29,7 @@ Liferay의 감사 프레임워크를 사용하여 사용자 정의 개체 정의
 
 객체 진입 이벤트는 `ObjectDefinition#[ObjectID]` 명명 패턴을 사용합니다.
 
-![자세한 내용을 보려면 이벤트 필드를 클릭하십시오.](./auditing-object-definition-events/images/02.png)
+![자세한 내용을 보려면 이벤트 필드를 클릭하십시오.](./auditing-object-events/images/02.png)
 
 ## REST API 사용
 
@@ -51,7 +51,7 @@ REST API를 사용하여 항목의 기록을 보려면 항목에 대한 '보기'
 
 1. 세부 정보 탭에서 **항목 기록 활성화** 토글합니다.
 
-   ![항목 기록을 활성화합니다.](./auditing-object-definition-events/images/03.png)
+   ![항목 기록을 활성화합니다.](./auditing-object-events/images/03.png)
 
 1. **저장** 클릭합니다.
 

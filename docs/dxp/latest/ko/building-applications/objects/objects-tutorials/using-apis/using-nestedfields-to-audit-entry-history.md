@@ -2,7 +2,7 @@
 
 {bdg-secondary}`사용 가능한 Liferay 7.4 U72+/GA72+`
 
-개체 정의에 대한 항목 기록 [](../../creating-and-managing-objects/auditing-object-definition-events.md#enabling-entry-history) 활성화하면 REST API와 함께 `nestedFields` 매개변수를 사용하여 항목 이벤트를 감사할 수 있습니다. GET 요청 경로에 `nestedFields=auditEvents` 추가합니다(예: `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`).
+개체 정의에 대한 항목 기록 [](../../creating-and-managing-objects/auditing-object-events.md#enabling-entry-history) 활성화하면 REST API와 함께 `nestedFields` 매개변수를 사용하여 항목 이벤트를 감사할 수 있습니다. GET 요청 경로에 `nestedFields=auditEvents` 추가합니다(예: `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`).
 
 시작하려면 새 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance) 하고 제공된 자습서 코드를 [준비](#preparing-the-sample-code) 하십시오. 그런 다음 [스크립트를 실행](#using-the-sample-code) 하여 항목을 만들고 업데이트하고 `nestedFields` 매개변수를 사용하여 해당 변경 사항을 쿼리합니다.
 
@@ -284,5 +284,5 @@ unzip liferay-g4m3.zip
 
 ## 관련 항목
 
-* [개체 정의 이벤트 감사](../../creating-and-managing-objects/auditing-object-definition-events.md)
+* [개체 정의 이벤트 감사](../../creating-and-managing-objects/auditing-object-events.md)
 * [`nestedFields` 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md)

@@ -11,7 +11,7 @@ The theme you assign to your Site's Pages determines the categories of settings 
 
 ## Choosing a Style Book for a Page
 
-If you do not choose a specific Style Book for a page, the page uses the Style Book for the [Master Page](../../creating-pages/defining-headers-and-footers/master-page-templates.md). If neither are set, the page uses the default Style Book for the Site.
+If you do not choose a specific Style Book for a page, the page uses the Style Book for the [Master Page](../../creating-pages/defining-headers-and-footers/master-page-templates.md). If neither is set, the page uses the default Style Book for the Site.
 
 ```{note}
 From Liferay 7.4 U10+ and GA14+, every Site has at least one Style Book available called *Styles from Theme*. This Style Book uses the token definition defined in the theme, with all of the default values. This Style Book cannot be edited, and it is the default used for the Site if no other Style Book is configured.
@@ -25,7 +25,7 @@ Follow these steps to set any page's Style Book:
 
 1. Click to open the *Style Book* tab.
 
-    ![Open the Style Book tab to choose the desired Style Book from the list.](./using-a-style-book-to-standardize-site-appearance/images/01.png) 
+    ![Open the Style Book tab to choose the desired Style Book from the list.](./using-a-style-book-to-standardize-site-appearance/images/01.png)
 
 1. Select the desired Style Book from the list.
 
@@ -97,26 +97,32 @@ Click the *Clear Selection* button on the right side to reset the color back to 
 When you are editing colors from a Style Book on a specific page, you have the same options to choose a color. However, clicking the *Clear Selection* button instead resets the color value to the default defined in the chosen *Style Book*.
 ```
 
+### Using the Color Picker
 
-### Using the Color Picker in Style Book
+While customizing your style book, use the color picker to easily search for colors and filter your search results.
 
-Click *Value from Style Book* (![Value from Style Book icon](../../../images/icon-theme.png)) to access the Color Picker. Existing colors are divided by categories and their tokens can be filtered by the search bar. You may search by:
+The use of the color picker is not restricted to style books. You can also find it in other parts of Liferay (e.g., while [editing a content page](../../creating-pages/using-content-pages.md)).
 
-* [Category](./developer-guide/style-book-token-definitions.md#token-categories) 
-* [Token Set](./developer-guide/style-book-token-definitions.md#token-sets)
-* [Token Value](./developer-guide/style-book-token-definitions.md#token-definitions)
-* [Hexadecimal Code](https://www.w3schools.com/html/html_colors_hex.asp)
-    
-You can also see the color's token value by hovering the cursor over it.
+To access the color picker, click *Value from Style Book* (![Value from Style Book icon](../../../images/icon-theme.png)) next to a color value (for backgrounds or borders, for example) or click on the color value when the icon is not available (e.g., text color).
 
-![Using the filter in the Color Picker with hovering cursor.](./using-a-style-book-to-standardize-site-appearance/images/10.png)
+![Access the color picker by clicking the Value from Style Book icon or by clicking on the color value when the icon is not available.](./using-a-style-book-to-standardize-site-appearance/images/10.png)
+
+In the color picker, existing colors are divided by categories and token sets. You can see a color's token value by hovering the cursor over the color.
+
+![See a color's token value by hovering the cursor over the color in the color picker.](./using-a-style-book-to-standardize-site-appearance/images/11.png)
+
+Use the search bar to search for a specific color. You may search by [category](./developer-guide/style-book-token-definitions.md#token-categories), [token set](./developer-guide/style-book-token-definitions.md#token-sets), [token value](./developer-guide/style-book-token-definitions.md#token-definitions), or [hex color values](https://www.w3schools.com/html/html_colors_hex.asp).
+
+When using the search bar, the search system is not case-sensitive. Also, if a search returns no results, a "No Results Found" message is displayed in the search area.
+
+![If a search returns no results, a "No Results Found" message is displayed in the search area.](./using-a-style-book-to-standardize-site-appearance/images/12.png)
 
 ## Default Classic Theme Categories
 
 When you are editing a Style Book, the categories available from the drop-down box show different options for styling your pages. The options available in each category are defined by the theme.
 
 ```{tip}
-You can place the `Style Guide Sample` widget on your pages to help test out the various options in your Style Book categories. This sample widget contains many different UI elements that leverage most of the features in the Classic theme, so you can use it to test your page styles. 
+You can place the `Style Guide Sample` widget on your pages to help test out the various options in your Style Book categories. This sample widget contains many different UI elements that leverage most of the features in the Classic theme, so you can use it to test your page styles.
 ```
 
 The categories listed here are available as options for the Classic theme.

@@ -2,7 +2,7 @@
 
 {bdg-secondary}`利用可能な Liferay 7.4 U72+/GA72+`
 
-[オブジェクト定義でエントリ履歴](../../creating-and-managing-objects/auditing-object-definition-events.md#enabling-entry-history) を有効にすると、 `nestedFields` パラメータを REST API で使用して、エントリイベントを監査できます。 GET リクエストのパスに `nestedFields=auditEvents` を追加する（例： `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`）。
+[オブジェクト定義でエントリ履歴](../../creating-and-managing-objects/auditing-object-events.md#enabling-entry-history) を有効にすると、 `nestedFields` パラメータを REST API で使用して、エントリイベントを監査できます。 GET リクエストのパスに `nestedFields=auditEvents` を追加する（例： `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`）。
 
 始めるには、 [](#setting-up-a-liferay-instance) 新しい Liferay 7.4 インスタンスをセットアップし、 [](#preparing-the-sample-code) 提供されたチュートリアルコードを準備します。 次に、 [スクリプト](#using-the-sample-code) を実行してエントリを作成し、更新し、 `nestedFields` パラメータを使用して変更内容を照会する。
 
@@ -284,5 +284,5 @@ unzip liferay-g4m3.zip
 
 ## 関連トピック
 
-* [オブジェクト定義イベントの監査](../../creating-and-managing-objects/auditing-object-definition-events.md)
+* [オブジェクト定義イベントの監査](../../creating-and-managing-objects/auditing-object-events.md)
 * [`nestedFields` を使って関連するエントリーをクエリーする。](./using-nestedfields-to-query-related-entries.md)

@@ -10,7 +10,7 @@ Liferayの監査フレームワークを使用して、カスタムオブジェ�
 
 Auditアプリケーションにアクセスするには、 **グローバルメニュー**(![Global Menu](../../../images/icon-applications-menu.png)) &rarr; **コントロールパネル** &rarr; クリック **Audit** を開きます。
 
-![［コントロールパネル］の［監査］をクリックすると、オブジェクト定義に関連するイベントが表示されます。](./auditing-object-definition-events/images/01.png)
+![［コントロールパネル］の［監査］をクリックすると、オブジェクト定義に関連するイベントが表示されます。](./auditing-object-events/images/01.png)
 
 イベントが表で表示される：
 
@@ -28,7 +28,7 @@ Auditアプリケーションにアクセスするには、 **グローバルメ
 
 オブジェクトエントリーイベントは、 `ObjectDefinition#[ObjectID]` の命名パターンを使用します。
 
-![イベントフィールドをクリックすると、詳細が表示されます。](./auditing-object-definition-events/images/02.png)
+![イベントフィールドをクリックすると、詳細が表示されます。](./auditing-object-events/images/02.png)
 
 ## REST APIの利用
 
@@ -50,7 +50,7 @@ REST APIを使用してエントリーの履歴を表示するには、そのエ
 
 1. 詳細」タブで、 「**入力履歴の有効化**」 を切り替えます。
 
-   ![エントリー履歴を有効にします。](./auditing-object-definition-events/images/03.png)
+   ![エントリー履歴を有効にします。](./auditing-object-events/images/03.png)
 
 1. ［**Save**］ をクリックします。
 

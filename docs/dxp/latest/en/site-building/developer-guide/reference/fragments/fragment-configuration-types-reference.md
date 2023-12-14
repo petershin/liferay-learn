@@ -416,7 +416,7 @@ This is useful when you want a fragment that has an embedded video by default. T
 
 {bdg-secondary}`Liferay 7.3+`
 
-Using the `collectionSelector` configuration type, you can develop a fragment that includes a [collection](../../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md) or [collection provider](../../../../content-authoring-and-management/collections-and-collection-pages/collection-providers.md). You can use the `collectionSelector` with both manual and dynamic collections.
+Using the `collectionSelector` configuration type, you can develop a fragment that includes a [collection](../../../displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) or [collection provider](../../../displaying-content/collections-and-collection-pages/collection-providers.md). You can use the `collectionSelector` with both manual and dynamic collections.
 
 !!! note
 

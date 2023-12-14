@@ -5,7 +5,7 @@ toc:
   - >-
    ./collections-and-collection-pages/creating-collections.md
   - >-
-    /collections-and-collection-pages/collection-providers.md
+    ./collections-and-collection-pages/collection-providers.md
   - >-
    ./collections-and-collection-pages/displaying-collections.md
 uuid: 190bc17e-ee9d-48bc-8770-0ea2d100318c

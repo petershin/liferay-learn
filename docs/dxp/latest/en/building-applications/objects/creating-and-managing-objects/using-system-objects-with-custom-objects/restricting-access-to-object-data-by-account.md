@@ -45,6 +45,8 @@ After restricting object data by account, entries appear according to the user's
 
 When setting up roles for account restriction, consider these factors:
 
+* Account restricted objects must have *Show Widget* enabled and a set panel link to appear in the Roles UI.
+
 * Regular roles must have the `Accounts > Account Entry: View` permission to create object entries. This is because regular roles are not associated with accounts or organizations. Without this permission, users with the regular role cannot select an account during entry creation.
 
 * Organization roles must have these permissions to create object entries: `Users and Organizations &rarr; Organization: Manage Accounts` and `Users and Organizations &rarr; Organization: Manage Suborganizations Accounts`. Without these permissions, users with the organization role cannot select an account during entry creation.

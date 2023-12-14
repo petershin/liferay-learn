@@ -99,7 +99,7 @@ When you are editing colors from a Style Book on a specific page, you have the s
 
 ### Using the Color Picker
 
-While customizing your style book, use the color picker to easily search for colors and filter your search results.
+While customizing your style book, use the color picker to search for colors and filter your search results.
 
 The use of the color picker is not restricted to style books. You can also find it in other parts of Liferay (e.g., while [editing a content page](../../creating-pages/using-content-pages.md)).
 
@@ -113,7 +113,7 @@ In the color picker, existing colors are divided by categories and token sets. Y
 
 Use the search bar to search for a specific color. You may search by [category](./developer-guide/style-book-token-definitions.md#token-categories), [token set](./developer-guide/style-book-token-definitions.md#token-sets), [token value](./developer-guide/style-book-token-definitions.md#token-definitions), or [hex color values](https://www.w3schools.com/html/html_colors_hex.asp).
 
-When using the search bar, the search system is not case-sensitive. Also, if a search returns no results, a "No Results Found" message is displayed in the search area.
+When using the search bar, the search system is not case-sensitive. Also, if a search returns no results, a *No Results Found* message is displayed in the search area.
 
 ![If a search returns no results, a "No Results Found" message is displayed in the search area.](./using-a-style-book-to-standardize-site-appearance/images/12.png)
 

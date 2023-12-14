@@ -5,7 +5,7 @@ toc:
   - ./understanding-object-integrations/assets-framework-integration.md
 uuid: d5bab8bf-972f-49d9-98f1-f77e13ca3428
 ---
-# Understanding Objects Integrations
+# Understanding Object Integrations
 
 ```{toctree}
 :maxdepth: 3

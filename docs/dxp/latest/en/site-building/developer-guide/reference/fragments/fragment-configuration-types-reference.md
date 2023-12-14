@@ -580,13 +580,13 @@ Now you can access the FreeMarker variables, which can be found under `[name]Obj
 These are the available variables for the navigation menu selector configuration type:
 
 | Variable          | Use                                                                                                         |
-|:-|:-|
+|:------------------|:------------------------------------------------------------------------------------------------------------|
 | `branchNavItems`  | Represents the hierarchical structure of the navigation menu.                                               |
 | `navItems`        | A list of `NavItem` objects, each representing a navigation item to be displayed.                           |
 | `rootLayoutLevel` | Defines the level in the hierarchy.                                                                         |
 | `rootLayoutType`  | Specifies how to interpret the root layout in relation to the current page (absolute, relative, or select). |
 
-To get a better look at the `navigationMenuSelector` type, download the [`navigation-menu`](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference/liferay-r5q5.zip) fragment and import it into a fragment set. See [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) to learn more about importing a fragment.
+To get a better look at the `navigationMenuSelector` type, download the [navigation-menu fragment](https://resources.learn.liferay.com/dxp/latest/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference/liferay-r5q5.zip) and import it into a fragment set. See [Managing Fragments](../../../creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments.md) to learn more about importing a fragment.
 
 ## Related Topics
 

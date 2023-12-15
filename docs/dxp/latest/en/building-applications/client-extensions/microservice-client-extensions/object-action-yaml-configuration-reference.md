@@ -26,14 +26,43 @@ Object action client extensions require OAuth2 application profiles to secure re
 
 [The sample workspace](https://github.com/liferay/liferay-portal/tree/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-spring-boot) demonstrates adding an object action client extension.
 
+## Restricting Client Extension Scope
+
+By default, object action client extensions are available to all object definitions in the default company. <!--Q: Default company?-->
+
+To restrict access by object definition, add the `allowedObjectDefinitionNames` property along with a list of objects that can use the action:
+
+```yaml
+easy-object-action-1:
+    allowedObjectDefinitionNames:
+        - C_EasyObject
+        - User
+```
+
+In this example, `easy-object-action-1` only appears as an option when [defining actions](../../objects/creating-and-managing-objects/actions.md) for the `C_EasyObject` and `User` objects.
+
+To restrict access by company, add the `dxp.lxc.liferay.com.virtualInstanceId` property with the desired company's virtual instance ID:
+
+```yaml
+easy-object-action-1:
+    allowedObjectDefinitionNames:
+        - C_EasyObject
+        - User
+    dxp.lxc.liferay.com.virtualInstanceId: easy-virtual-host-1.com
+```
+
+In this example, `easy-object-action-1` only appears as an option for the `C_EasyObject` and `User` objects in the `easy-virtual-host-1.com` company.
+
 ## YAML Properties
 
 These properties are specific to object action client extensions:
 
-| Name                                   | Data Type            | Description |
-| :------------------------------------- | :------------------- | :--- |
+| Name                                     | Data Type            | Description                                                                                                                                             |
+|:-----------------------------------------|:---------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `allowedObjectDefinitionNames`           | List                 | Scope the client extension to specified object definitions (e.g., `C_EasyObject`, `User`)                                                               |
+| `dxp.lxc.liferay.com.virtualInstanceId`  | String               | Scope the client extension to a specified company using its virtual instance ID (e.g., `easy-virtual-host-1.com`).                                      |
 | `resourcePath`                           | String (partial URL) | (Required) The path to the object action handler. This value is combined with the OAauth2 application profile's `homePageURL` value for a complete URL. |
-| `oAuth2ApplicationExternalReferenceCode` | String               | (Required) The external reference code for an OAuth2 application profile, needed for securing requests. |
+| `oAuth2ApplicationExternalReferenceCode` | String               | (Required) The external reference code for an OAuth2 application profile, needed for securing requests.                                                 |
 
 ## Related Topics
 

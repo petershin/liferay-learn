@@ -25,7 +25,7 @@ Objectsアプリケーションはパーミッションフレームワークと�
 | 表示             | オブジェクトのアプリケーションを表示します。          |
 
 !!! important
-Liferay 7.4 2023.Q4+/GA102+では、Objects UIを使用するには_Object Folder > View_権限が必要です。
+Liferay 7.4 2023.Q4+/GA102+では、Objects UIを使用するには **Object Folder > View** 権限が必要です。
 
 ## リソース権限
 
@@ -70,9 +70,9 @@ Liferay 7.4 2023.Q4+/GA102+では、Objects UIを使用するには_Object Folde
 
 ## 個々のオブジェクト定義に対する権限の管理
 
-1. *グローバル・メニュー* (![グローバル・メニュー](../../images/icon-applications-menu.png))から_Objects_アプリケーションを開きます。
+1. **グローバル・メニュー**(![グローバル・メニュー](../../images/icon-applications-menu.png))から **Objects** アプリケーションを開きます。
 
-1. 目的のオブジェクト定義の_Actions_ボタン(![Actions Button](../../images/icon-actions.png)) をクリックし、_Permissions_を選択します。
+1. 目的のオブジェクト定義の **Actions** ボタン(![Actions Button](../../images/icon-actions.png)) をクリックし、 **Permissions** を選択します。
 
    ![Click the Actions button for the desired object definition and select Permissions.](./objects-application-permissions/images/06.png)
 
@@ -83,13 +83,13 @@ Liferay 7.4 2023.Q4+/GA102+では、Objects UIを使用するには_Object Folde
 
    ![Use the checkboxes to assign permissions to the desired roles.](./objects-application-permissions/images/07.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ## 個々のフォルダー定義の権限管理
 
-1. *グローバル・メニュー* (![グローバル・メニュー](../../images/icon-applications-menu.png))から_Objects_アプリケーションを開きます。
+1. **グローバル・メニュー**(![グローバル・メニュー](../../images/icon-applications-menu.png))から **Objects** アプリケーションを開きます。
 
-1. 目的のオブジェクトフォルダの_Actions_ (![Actions Button](../../images/icon-actions.png)) をクリックし、_Permissions_を選択します。
+1. 目的のオブジェクトフォルダの **Actions**(![Actions Button](../../images/icon-actions.png)) をクリックし、 **Permissions** を選択します。
 
    ![Click the Actions button for the desired object folder and select Permissions.](./objects-application-permissions/images/08.png)
 
@@ -100,7 +100,7 @@ Liferay 7.4 2023.Q4+/GA102+では、Objects UIを使用するには_Object Folde
 
    ![Use the checkboxes to assign permissions to the desired roles.](./objects-application-permissions/images/09.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ## 関連トピック
 

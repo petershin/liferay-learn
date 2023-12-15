@@ -1,7 +1,7 @@
 # サンプルAPIアプリケーションの構築
 
-{bdg-secondary}`liferay DXP 2023.Q4+/Portal 7.4 GA96+`
-{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`.
+{bdg-secondary}Liferay DXP 2023.Q4+/Portal 7.4 GA96+
+{bdg-link-primary}`[Beta Feature](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
 
 ```{important}
 APIビルダーはベータ機能で、現在はLiferayオブジェクトのみをサポートしています。
@@ -11,11 +11,11 @@ APIビルダーはベータ機能で、現在はLiferayオブジェクトのみ�
 
 APIビルダーを有効にする、
 
-1. グローバル・メニューに移動する (![グローバル・メニュー](../../images/icon-applications-menu.png)) &rarr; _コントロールパネル_ &rarr; _インスタンス設定_.
+1. グローバル・メニューに移動する (![グローバル・メニュー](../../images/icon-applications-menu.png)) &rarr; **コントロールパネル** &rarr; **インスタンス設定** .
 
 1. 「プラットフォーム」の下にある「機能フラグ」をクリックします。
 
-1. 左のナビゲーションで_Beta_を選択。 APIビルダーをオンにする。 APIビルダーが有効になりました。
+1. 左のナビゲーションで **Beta** を選択。 APIビルダーをオンにする。 APIビルダーが有効になりました。
 
 ## サンプルオブジェクトとエントリーの追加
 
@@ -55,7 +55,7 @@ APIビルダーを有効にする、
    	-u "test@liferay.com:learn"
    ```
 
-1. グローバルメニューに移動する (![グローバルメニュー](../../images/icon-applications-menu.png)) &rarr; _コントロールパネル_ &rarr; _オブジェクト_. 新しい `Student` オブジェクトが作成されたことを確認する。
+1. グローバルメニューに移動する (![グローバルメニュー](../../images/icon-applications-menu.png)) &rarr; **コントロールパネル** &rarr; **オブジェクト** . 新しい `Student` オブジェクトが作成されたことを確認する。
 
 1. コマンドラインで以下のスクリプトを実行し、`Course`オブジェクトを作成する。
 
@@ -75,7 +75,7 @@ APIビルダーを有効にする、
      -u "test@liferay.com:learn"
    ```
 
-1. グローバルメニューに移動する (![グローバルメニュー](../../images/icon-applications-menu.png)) &rarr; _コントロールパネル_ &rarr; _オブジェクト_. 先ほど作成した`Course`オブジェクトをクリックしてください。
+1. グローバルメニューに移動する (![グローバルメニュー](../../images/icon-applications-menu.png)) &rarr; **コントロールパネル** &rarr; **オブジェクト** . 先ほど作成した`Course`オブジェクトをクリックしてください。
 
 1. 「関係」タブをクリックする。 追加]をクリックします(![アイコンの追加](../../images/icon-add.png))。
 
@@ -91,7 +91,7 @@ APIビルダーを有効にする、
 
    「保存」をクリックする。
 
-1. 「詳細」タブをクリックする。 _Publish_をクリックする。
+1. 「詳細」タブをクリックする。 **Publish** をクリックする。
 
 ## サンプルコースと学生の追加
 
@@ -129,7 +129,7 @@ APIビルダーを有効にする、
 
 ## APIアプリケーションの作成
 
-1. グローバルメニューに移動する (![グローバルメニュー](../../images/icon-applications-menu.png)) &rarr; _コントロールパネル_ &rarr; _APIビルダー_.
+1. グローバルメニューに移動する (![グローバルメニュー](../../images/icon-applications-menu.png)) &rarr; **コントロールパネル** &rarr; **APIビルダー** .
 
 1. [追加]をクリックします(![アイコンの追加](../../images/icon-add.png))。 新しいAPIアプリケーションのタイトル、URL、説明を入力します。
 
@@ -155,13 +155,13 @@ APIビルダーを有効にする、
 
    「作成」をクリックする。
 
-1. 新しく作成したスキーマの_Properties_タブをクリックします。 左メニューの「コース名」をクリックして、「コース名」フィールドを追加してください。
+1. 新しく作成したスキーマの **Properties** タブをクリックします。 左メニューの「コース名」をクリックして、「コース名」フィールドを追加してください。
 
    ![Add the course name field to the schema.](./building-a-sample-api-application/images/02.png)
 
-1. 左のメニューで_View Related Objects_をクリックする。 Student_をクリックして属性を展開します。 左メニューの_First Name_と_Last Name_をクリックして、`First Name`と`Last Name`フィールドを追加する。 右上の_Save_をクリックします。
+1. 左のメニューで **View Related Objects** をクリックする。 Student **をクリックして属性を展開します。 左メニューの** First Name **と** Last Name **をクリックして、`First Name`と`Last Name`フィールドを追加する。 右上の** Save_をクリックします。
 
-1. 次に、_Endpoints_タブをクリックする。 追加]をクリックします(![アイコンの追加](../../images/icon-add.png))。
+1. 次に、 **Endpoints** タブをクリックする。 追加]をクリックします(![アイコンの追加](../../images/icon-add.png))。
 
 1. 新しいAPIエンドポイントのスコープ、パス、説明を入力します。
 
@@ -173,12 +173,12 @@ APIビルダーを有効にする、
 
    「作成」をクリックする。
 
-1. 新しく作成したAPIエンドポイントの_Configuration_タブをクリックします。 レスポンス本文スキーマで、前のステップで作成した_Course Registrations_スキーマを選択してください。 ページ右上の_Publish_をクリックする。
+1. 新しく作成したAPIエンドポイントの **Configuration** タブをクリックします。 レスポンス本文スキーマで、前のステップで作成した **Course Registrations** スキーマを選択してください。 ページ右上の **Publish** をクリックする。
 
 1. APIエクスプローラー（例： <http://localhost:8080/o/api?endpoint=http://localhost:8080/o/c/registration/openapi.json>に移動して、新しいAPIアプリケーションをテストする。
 
-    _GET courses_エンドポイントをクリックし、_Execute_をクリックします。
+**GET courses** エンドポイントをクリックし、 **Execute** をクリックします。
 
-    ![Execute the Get courses endpoint.](./building-a-sample-api-application/images/03.png)
+   ![Execute the Get courses endpoint.](./building-a-sample-api-application/images/03.png)
 
-    カスタムAPIアプリケーションは、コースとコースを受講している学生のリストを返します。
+   カスタムAPIアプリケーションは、コースとコースを受講している学生のリストを返します。

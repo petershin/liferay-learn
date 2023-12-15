@@ -1,6 +1,6 @@
 # Liferay Commerceエンタープライズの有効化
 
-Liferay DXP/Portal 7.3から、CommerceはすべてのLiferayバンドルとDockerコンテナに同梱され、別途インストールする必要はありません。 ただし、Commerceのエンタープライズ機能にアクセスする手順は、使用しているDXPのバージョンによって異なります。 Liferay DXP 7.4 GA1では、すべてのCommerceモジュールがデフォルトで有効になっており、すぐに使用できます。 DXP 7.3 SP3+ では、Commerce は [ポータルプロパティ](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) を使用してアクティブ化されますが、それ以前のバージョンでは Commerce ライセンスファイルを使用します。 このプロパティは、Liferay Portalのバンドル/画像にはエンタープライズ機能が含まれていないため、影響を与えません。
+Liferay DXP/Portal 7.3から、CommerceはすべてのLiferayバンドルとDockerコンテナに同梱され、別途インストールする必要はありません。 ただし、Commerceのエンタープライズ機能にアクセスする手順は、使用しているDXPのバージョンによって異なります。 Liferay DXP 7.4 GA1では、すべてのCommerceモジュールがデフォルトで有効になっており、すぐに使用できます。 DXP 7.3 SP3+ では、Commerce は [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) を使用してアクティブ化されますが、それ以前のバージョンでは Commerce ライセンスファイルを使用します。 このプロパティは、Liferay Portalのバンドル/画像にはエンタープライズ機能が含まれていないため、影響を与えません。
 
 ```{important}
 Liferay 7.4 U48+/GA48+では、コマースモジュールを無効にするためのポータルのプロパティ (`enterprise.product.commerce.enabled`) が削除されました。 有効なDXP 7.4サブスクリプションをお持ちのすべてのお客様に、コマース機能が提供され、サポートされるようになりました。 コマースを無効にすると、他のLiferay DXPモジュールとの間で不整合が発生することがあります。
@@ -25,7 +25,7 @@ enterprise.product.commerce.enabled=false
 portal-ext.properties`ファイルがまだ存在しない場合は、`[Liferay Home]`または`[User Home]`フォルダに作成してください。
 
 ```{note}
-バンドルにセットアップウィザードを使った場合、ポータルのプロパティは ` [Liferay Home]` フォルダにある `portal-setup-wizard.properties` ファイルを使って設定します。 このファイルは `portal-ext.properties` ファイルよりも優先されるので、`enterprise.product.commerce.enabled` プロパティの値が競合していないことを確認してください。 詳しくは[Portal Properties](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) ]を参照してください。
+バンドルにセットアップウィザードを使った場合、ポータルのプロパティは ` [Liferay Home]` フォルダにある `portal-setup-wizard.properties` ファイルを使って設定します。 このファイルは `portal-ext.properties` ファイルよりも優先されるので、`enterprise.product.commerce.enabled` プロパティの値が競合していないことを確認してください。 詳しくは [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) ]を参照してください。
 ```
 
 ### DockerコンテナのCommerceの無効化
@@ -44,7 +44,7 @@ enterprise.product.commerce.enabled=false
 LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=false
 ```
 
-詳しくは、 [コンテナの設定](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties) を参照してください。
+詳しくは、 [コンテナの設定](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/installing-liferay/using-liferay-docker-images/configuring-containers.html#portal-properties) を参照してください。
 
 成功すると、コマースモジュールはグローバルメニューに表示されなくなります (![グローバルメニュー](../images/icon-applications-menu.png))。
 
@@ -84,7 +84,7 @@ LIFERAY_ENTERPRISE_PERIOD_PRODUCT_PERIOD_COMMERCE_PERIOD_ENABLED=true
 
 ### 有効化の完了確認
 
-プロパティが正常に追加されたことを確認するには、Liferay DXP を起動し、_Global Menu_ (![Global Menu](../images/icon-applications-menu.png)) を開きます。 正常に追加されていれば、［コマース］タブでコマースモジュールを表示し、アクセスできます。 または、_グローバル・メニュー_ ([グローバル・メニュー](../images/icon-applications-menu.png))を開き、_コントロール・パネル_ &rarr; _サーバー管理_ &rarr; _プロパティ_ &rarr; _ポータル・プロパティ_ に進みます。 新しいプロパティは、他のプロパティと一緒に表示されます。
+プロパティが正常に追加されたことを確認するには、Liferay DXP を起動し、 **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開きます。 正常に追加されていれば、［コマース］タブでコマースモジュールを表示し、アクセスできます。 または、 **グローバル・メニュー**( [グローバル・メニュー](../images/icon-applications-menu.png) )を開き、 **コントロール・パネル** &rarr; **サーバー管理** &rarr; **プロパティ** &rarr; **ポータル・プロパティ** に進みます。 新しいプロパティは、他のプロパティと一緒に表示されます。
 
 ## Liferay DXP 7.1-7.3 FP2用のLiferay Commerceエンタープライズの有効化
 
@@ -123,7 +123,7 @@ Liferay 7.3 SP1では、コマースをアクティブ化した後にインス�
 ```
 #### DXP Bundlesへのデプロイ
 
-XML ファイルを DXP インスタンスの [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーします。 アクティベーションキーを処理する間、Liferay はこのファイルを `${liferay.home}/osgi/modules` フォルダに再配置し、ライセンスファイル (`.li`) を `${liferay.home}/data/license` フォルダに生成します。 詳しくは、 [Liferay DXPの有効化](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html) をご覧ください。
+XML ファイルを DXP インスタンスの [Liferay Home](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) フォルダにコピーします。 アクティベーションキーを処理する間、Liferay はこのファイルを `${liferay.home}/osgi/modules` フォルダに再配置し、ライセンスファイル (`.li`) を `${liferay.home}/data/license` フォルダに生成します。 詳しくは、 [Liferay DXPのアクティブ化](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/setting-up-liferay/activating-liferay-dxp.html) をご覧ください。
 
 #### Dockerコンテナへのデプロイ
 
@@ -131,7 +131,7 @@ XML ファイルをコンテナの `/opt/liferay/deploy` フォルダにコピ�
 
 #### Liferay Cloudへのデプロイ
 
-プロジェクトの中央 Git リポジトリの [`liferay/configs/{ENV}/deploy`](https://learn.liferay.com/liferay-cloud/latest/en/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境の Liferayサービスへのファイルのデプロイについては、 [Liferay Cloudデプロイワークフローの概要](https://learn.liferay.com/liferay-cloud/latest/en/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) を参照してください。
+プロジェクトの中央 Git リポジトリの [Liferayサービスへのデプロイ](https://learn.liferay.com/liferay-cloud/latest/ja/using-the-liferay-dxp-service/deploying-to-the-liferay-service.html#deploying-licenses) フォルダにキーをコピーし、変更をコミットします。 次に、LiferayサービスのJenkinsビルドを起動し、目的のプロジェクト環境にデプロイします。 環境の Liferayサービスへのファイルのデプロイについては、 [Liferay Cloud 導入ワークフローの概要](https://learn.liferay.com/liferay-cloud/latest/ja/build-and-deploy/overview-of-the-liferay-cloud-deployment-workflow.html) を参照してください。
 
 ```{important}
 Liferay Cloudの契約でCommerceを購入した場合、アクティベーションキーはLiferay Cloudチームがクラウドインフラストラクチャーを通じて管理するため、お客様自身で管理する必要はありません。 ただし、既存の Liferay Cloud プロジェクトに Commerce を追加する場合は、手動でライセンスをデプロイする必要があります。 
@@ -181,4 +181,4 @@ DXP と Commerce のライセンスは Liferay Cloud チームが管理してお
 
 * [インストールの概要](./installation-overview.md)
 * [Liferay Commerce](./upgrading-liferay-commerce.md)のアップグレード
-* [プロキシサーバー経由でのマーケットプレイスアプリの有効化](https://help.liferay.com/hc/en-us/articles/360018427391)
+* [プロキシサーバー経由でのマーケットプレイスアプリの有効化](https://help.liferay.com/hc/ja/articles/360018427391)

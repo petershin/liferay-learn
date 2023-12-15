@@ -2,7 +2,7 @@
 
 Liferayをアップグレードする際には、Elasticsearchを使用する際の検索エクスペリエンスを考慮する必要があります。正確な手順は既存の検索エンジンのインストールとLiferayのバージョンによりますが、まずは[既存のインデックスをバックアップする](./backing-elasticsearch.md)ことから始めましょう。
 
-* [検索エンジン互換性マトリクス](https://help.liferay.com/hc/en-us/articles/360016511651) をご参照ください。 : サポートされている最新のElasticsearchバージョンを実行することが常に推奨されています。
+* [検索エンジン互換性マトリクス](https://help.liferay.com/hc/ja/articles/360016511651) をご参照ください。 : サポートされている最新のElasticsearchバージョンを実行することが常に推奨されています。
 * Liferay 7.4から、LES（Liferay Enterprise Search）アプリケーションはLiferay DXPにバンドルされています。 追加のインストール手順は必要ありません。 詳しくは、 [Liferay Enterprise Searchの有効化](../../../liferay-enterprise-search/activating-liferay-enterprise-search.md) をご覧ください。
 * すでにサポートされているElasticsearchのバージョンをご利用の場合は、既存のElasticsearchインスタンスをアップデートすることなく、そのままご利用いただけます。
 * Liferay 7.4 以降、検索の調整（同義語セットおよび結果ランキング）インデックスはデータベーステーブルでバックアップされます。 Liferayのアップグレード中に検索エンジンがLiferayに接続されると、データがデータベースにプロパゲートされるようになります。 新しいElasticsearchインスタンスをセットアップする場合、 [検索調整インデックスのバックアップと復元](./backing-up-elasticsearch.md) を行い、その後、 [Groovyスクリプト](#importing-the-search-tuning-indexes-in-7-4) を実行してインデックスデータを新しいデータベーステーブルに手動でインポートしなければなりません。
@@ -13,7 +13,7 @@ Liferayをアップグレードする際には、Elasticsearchを使用する際
 [これらの手順を進める前に、検索インデックス](./backing-up-elasticsearch.md) をバックアップしてください。
 ```
 
-1. お使いのシステムが少なくともElasticsearchの最小サポートバージョンであることを確認してください。 そうでない場合は、 [サポートされている最新のElasticsearch](https://help.liferay.com/hc/en-us/articles/360016511651) に [アップグレード](upgrading-to-elasticsearch-8.md) してください。<!--1-->. 新しいElasticsearchクラスタをインストールし、アップグレードしたLiferayに接続することは可能ですが、ElasticsearchクラスタにLiferay DXP 7.2や7.3の検索の調整機能用のインデックスのようにプライマリストレージとして使用するインデックスがあった場合、一部のデータが失われる可能性があります。 [Search Tuning Indexes for Liferay 7.2 and 7.3 のバックアップとリストア](backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) と [Search Tuning Indexes in 7.4 のインポート](#importing-the-search-tuning-indexes-in-7-4) を参照してください。
+1. お使いのシステムが少なくともElasticsearchの最小サポートバージョンであることを確認してください。 そうでない場合は、 [サポートされている最新のElasticsearch](https://help.liferay.com/hc/en-us/articles/360016511651) に [アップグレード](upgrading-to-elasticsearch-8.md) してください。 <!--1--> . 新しいElasticsearchクラスタをインストールし、アップグレードしたLiferayに接続することは可能ですが、ElasticsearchクラスタにLiferay DXP 7.2や7.3の検索の調整機能用のインデックスのようにプライマリストレージとして使用するインデックスがあった場合、一部のデータが失われる可能性があります。 [Search Tuning Indexes for Liferay 7.2 and 7.3 のバックアップとリストア](backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) と [Search Tuning Indexes in 7.4 のインポート](#importing-the-search-tuning-indexes-in-7-4) を参照してください。
 
 1. [LiferayとElasticsearch を接続](../connecting-to-elasticsearch.md) し、 [セキュリティ](../securing-elasticsearch.md) を設定します。
 
@@ -33,7 +33,7 @@ LESとそのアプリは Liferay 7.4にバンドルされているため、こ�
 
 1. 現在、 [Kibanaとモニタリング](../../../liferay-enterprise-search/monitoring-elasticsearch.md) を使用している場合、Elasticsearchのバージョンと一致するKibanaのバージョンをインストールします。
 
-1. お使いのセットアップとバージョンに適したLESアプリケーションをインストールし、設定します。 詳細は、 [LES互換性マトリックス](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-Enterprise-Search) を参照してください。
+1. お使いのセットアップとバージョンに適したLESアプリケーションをインストールし、設定します。 詳細は、 [LES互換性マトリックス](https://help.liferay.com/hc/ja/articles/360016511651#Liferay-Enterprise-Search) を参照してください。
 
 ## アップグレードされた検索エクスペリエンスをテストする
 
@@ -59,7 +59,7 @@ Liferay 7.3と7.4のウィジェット名と構成名は同じです。
 
 Liferay 7.2 からアップグレードする場合、アプリと構成の名前を変更すると、このようなアップグレードの影響があります。
 
-1. LES Monitoringウィジェットの名前が_Elasticsearch Monitoring_に変更されました。 起動時にモジュールのアップグレードステップが実行され、_Liferay Enterprise Search Monitoring_ がデプロイされたときにアプリの名前が変更されます。 アクションは必要ありません。
+1. LES Monitoringウィジェットの名前が **Elasticsearch Monitoring** に変更されました。 起動時にモジュールのアップグレードステップが実行され、 **Liferay Enterprise Search Monitoring** がデプロイされたときにアプリの名前が変更されます。 アクションは必要ありません。
 1. 設定ファイル名が `com.liferay.portal.search.elasticsearch6.xpack.monitoring.web.internal.configuration.XPackMonitoringConfiguration.config` から `com.liferay.portal.search.elasticsearch.monitoring.web.internal.configuration.MonitoringConfiguration` に変更された。 プロパティは以前と同じです。 ポータルの起動中に、モジュールのアップグレード手順が実行され、構成の名前が変更されます。 アクションは必要ありません。
 1. モニタリングウィジェットへのKibanaベースパスが変更されました。 `kibana.yml`の元の設定を変更する必要がある：
 

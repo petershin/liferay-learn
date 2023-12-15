@@ -1,6 +1,6 @@
 # 在庫管理リファレンスガイド
 
-インベントリ設定にアクセスするには、_Global Menu_ (![Global Menu](../images/icon-applications-menu.png)) を開き、_Commerce_ &rarr; _Inventory_ に移動します。
+インベントリ設定にアクセスするには、 **Global Menu**(![Global Menu](../images/icon-applications-menu.png)) を開き、 **Commerce** &rarr; **Inventory** に移動します。
 
 ![Navigate to the inventory settings from the Global Menu.](./inventory-management-reference-guide/images/01.png)
 
@@ -35,7 +35,7 @@
 | 設定可能一覧 | 購入可能なユニット数。        |
 | 受信     | 倉庫への入庫予定数。         |
 
-*追加* ([追加ボタン](../images/icon-add.png))をクリックして在庫を更新したり、倉庫間で在庫を移動します。
+**追加**( [追加ボタン](../images/icon-add.png) )をクリックして在庫を更新したり、倉庫間で在庫を移動します。
 
 ![Add inventory or transfer inventory between warehouses.](./inventory-management-reference-guide/images/04.png)
 
@@ -51,7 +51,7 @@
 
 ![The Incoming tab lists warehouses with scheduled inventory replenishment for the SKU.](./inventory-management-reference-guide/images/06.png)
 
-*追加* (![追加ボタン](../images/icon-add.png))をクリックすると、選択したSKUの入力項目が作成されます。
+**追加**(![追加ボタン](../images/icon-add.png))をクリックすると、選択したSKUの入力項目が作成されます。
 
 ![Add a quantity for a particular warehouse.](./inventory-management-reference-guide/images/07.png)
 
@@ -67,7 +67,7 @@
 
 ## Commerce 2.1以前
 
-在庫の設定は、コントロールパネルにあります。 アクセスするには、_コントロールパネル_ &rarr; _コマース_ &rarr; _インベントリ_に移動します。
+在庫の設定は、コントロールパネルにあります。 アクセスするには、 **コントロールパネル** &rarr; **コマース** &rarr; **インベントリ** に移動します。
 
 ## 関連トピック
 

@@ -11,9 +11,9 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-次に、 [](../../creating-and-managing-objects/creating-objects.md) 関連する3つのカスタム・オブジェクトを作成する：
+次に、 [作成](../../creating-and-managing-objects/creating-objects.md) 関連する3つのカスタム・オブジェクトを作成する：
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［ **オブジェクト**］ をクリックします。
 
 1. 3つのオブジェクトドラフトを作成します。
 
@@ -76,6 +76,7 @@
 ```{tip}
 サイトオブジェクトとカンパニーオブジェクト用に生成されたAPIの完全なリストについては、 [Objects Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md) を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 *RESTアプリケーション*をクリックし、APIを選択します。
 ```
+
 ## サンプルコードを準備する
 
 以下のコマンドを実行し、提供されたサンプルコードをダウンロードし、解凍してください：
@@ -346,7 +347,7 @@ REST APIを使用して、オブジェクトのエントリーを追加し、そ
     }
     ```
 
-    `nestedFields`パラメータの詳細については、 [Using `nestedFields` to Query Related Entries](./using-nestedfields-to-query-related-entries.md) を参照のこと。
+    `nestedFields`パラメータの詳細については、 [`nestedFields` を使って関連するエントリーを検索する](./using-nestedfields-to-query-related-entries.md) を参照のこと。
 
 ## コードを調べる
 

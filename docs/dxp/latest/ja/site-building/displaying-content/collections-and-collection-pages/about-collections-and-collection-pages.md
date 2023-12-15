@@ -16,13 +16,13 @@ Liferayには2種類のコレクションがあります：
 
   コレクションの一部であるアイテムを手動で選択し、管理する。 手動コレクションの項目は自動的に変更されません。
 
-  たとえば、_Promotions_ という名前のマニュアルコレクションを作成し、公開 Web サイトのいくつかのプロモーション Web コンテンツ記事を含めるとします。 コレクション内のアイテムを選択した後、新しいプロモーションコンテンツを手動で追加して、コレクションを最新の状態に保つ必要があります。
+  たとえば、 **Promotions** という名前のマニュアルコレクションを作成し、公開 Web サイトのいくつかのプロモーション Web コンテンツ記事を含めるとします。 コレクション内のアイテムを選択した後、新しいプロモーションコンテンツを手動で追加して、コレクションを最新の状態に保つ必要があります。
 
 - **動的コレクション**
 
   コレクション内の項目のタイプを、これらの項目の基準とともに定義します。 コレクションのアイテムは、定義した基準に基づいて変更できます。 ダイナミックコレクションは、条件に一致する新しいアイテムでコンテンツが最新であることを確認したい場合に便利です。
 
-  例えば、キッチン用品ストアの場合、_porcelain_タグを持つすべてのブログ記事を含むコレクションを作成します（このタグはあなたの基準を表します）。 ダイナミック・コレクションには、_porcelain_タグの付いたすべての新しいブログ記事が自動的に含まれます。
+  例えば、キッチン用品ストアの場合、 **porcelain** タグを持つすべてのブログ記事を含むコレクションを作成します（このタグはあなたの基準を表します）。 ダイナミック・コレクションには、 **porcelain** タグの付いたすべての新しいブログ記事が自動的に含まれます。
 
 ![Use manual collections to choose the items in the collection yourself, or dynamic collections to automatically assemble the items based on your chosen criteria.](./about-collections-and-collection-pages/images/02.png)
 
@@ -40,13 +40,13 @@ Liferayには2種類のコレクションがあります：
 
 ![You can show the collection's content using a Collection Display fragment](./about-collections-and-collection-pages/images/04.png)
 
-詳細は、 [Displaying Collections](./displaying-collections.md) を参照してください。
+詳細は、 [コレクションの表示](./displaying-collections.md) を参照してください。
 
 ## コレクションのカスタマイズ
 
 Liferay セグメントをコレクションに関連付けると、 [セグメントの設定](../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) に基づいて異なるコレクションアイテムを表示できます。
 
-次の例を考えてみましょう。 あなたは、登録ユーザーに限定プロモーションを提供することで、キッチン用品ストアでの売り上げを伸ばしたいと考えています。 登録ユーザー向けのプロモーションや製品に関するニュースを含むコレクションを作成します。 商品に関するニュースはすべての人に表示したいが、プロモーションは登録ユーザーのみに限定したいと考えています。 登録ユーザーのための新しいセグメントを作成し、プロモーションコンテンツをフィルタリングする新しい_Personalized Variation_にセグメントをリンクすることができます。
+次の例を考えてみましょう。 あなたは、登録ユーザーに限定プロモーションを提供することで、キッチン用品ストアでの売り上げを伸ばしたいと考えています。 登録ユーザー向けのプロモーションや製品に関するニュースを含むコレクションを作成します。 商品に関するニュースはすべての人に表示したいが、プロモーションは登録ユーザーのみに限定したいと考えています。 登録ユーザーのための新しいセグメントを作成し、プロモーションコンテンツをフィルタリングする新しい **Personalized Variation** にセグメントをリンクすることができます。
 
 詳細は、 [コレクションのパーソナライズ](../../../site-building/personalizing-site-experience/experience-personalization/personalizing-collections.md) を参照してください。
 

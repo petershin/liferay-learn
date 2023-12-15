@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Liferayエクスペリエンスクラウドセルフマネージド（PaaS）価格
 
 **概要**

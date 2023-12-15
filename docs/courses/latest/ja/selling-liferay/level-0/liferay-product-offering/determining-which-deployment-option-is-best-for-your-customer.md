@@ -1,11 +1,16 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 顧客に最適なデプロイオプションを決定する
 
 前述のように、すべてのデプロイオプションが可能ですが、弊社の販売アプローチはSaaS第一です。 とはいえ、実際に何を意味するのか、これは常に顧客にとって正しい選択肢となるのかという疑問もあるかと思うので、ここではその疑問についてご説明していきます。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf)からダウンロードしてください。
-* 本モジュールで参照する資料はこちら[Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow)からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/l0-2a-liferay-offering) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/l0-2a-liferay-offering-pdf) からダウンロードしてください。
+* 本モジュールで参照する資料はこちら [Sales Decision Flow](https://learn.liferay.com/documents/d/guest/new-customer-new-project-sales-decision-flow) からダウンロードしてください。
 ```
 
 ## ビジネス上の問題を解決する
@@ -29,7 +34,7 @@ Liferay Experience Cloud SaaSをデプロイ方法として選択した場合で
 * ユーザーとロールの定義
 * など。
 
-しかし、ほとんどの場合、ビジネス上の問題すべてがこうした機能だけで解決するわけではありません。 Liferay DXPの主な強みは、特定のニーズに合わせてプラットフォームを拡張・カスタマイズできることです。 プラットフォームを拡張するための推奨アプローチは、[クライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions)を作成することです。 クライアント拡張はLiferayのコードに縛られず、どのデプロイ方法でも使用できます。 クライアント拡張により、開発者は使い慣れた技術を用いて、コアプラットフォームへのアップグレードを容易に行うことができます。
+しかし、ほとんどの場合、ビジネス上の問題すべてがこうした機能だけで解決するわけではありません。 Liferay DXPの主な強みは、特定のニーズに合わせてプラットフォームを拡張・カスタマイズできることです。 プラットフォームを拡張するための推奨アプローチは、 [クライアント拡張](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions) を作成することです。 クライアント拡張はLiferayのコードに縛られず、どのデプロイ方法でも使用できます。 クライアント拡張により、開発者は使い慣れた技術を用いて、コアプラットフォームへのアップグレードを容易に行うことができます。
 
 ![クライアント拡張は疎結合であり、最新のテクノロジーを使用して、容易なアップグレードをサポートします。](../liferay-product-offering/images/05.png)
 

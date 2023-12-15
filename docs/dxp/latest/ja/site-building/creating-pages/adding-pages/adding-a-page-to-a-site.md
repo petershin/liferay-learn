@@ -12,21 +12,21 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 
 ### ページ管理から新しいページを追加する
 
-1. *サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、_サイトビルダー_を展開し、_ページ_をクリックします。
+1. **サイトメニュー**(![サイトメニュー](../../../images/icon-menu.png))を開き、 **サイトビルダー** を展開し、 **ページ** をクリックします。
 
-1. *追加* (![追加ボタン](../../../images/icon-add.png))をクリックし、_ページ_を選択します。
+1. **追加**(![追加ボタン](../../../images/icon-add.png))をクリックし、 **ページ** を選択します。
 
    ![Add a page to the site.](./adding-a-page-to-a-site/images/01.png)
 
 1. ページテンプレートセットで、基本テンプレートまたはグローバルテンプレートを選択します。
 
-   空の [コンテンツページ](../understanding-pages/understanding-pages.md#page-types) から始めるには、 _Blank_ [マスターページテンプレート](../defining-headers-and-footers/master-page-templates.md) を選択します。
+   空の [コンテンツページ](../understanding-pages/understanding-pages.md#page-types) から始めるには、 **Blank**[マスターページテンプレート](../defining-headers-and-footers/master-page-templates.md) を選択します。
 
    または、他の利用可能なテンプレートから選択します。
 
    ![Select a Basic or Global template for your page.](./adding-a-page-to-a-site/images/02.png)
 
-1. ページの追加ダイアログで名前を入力し、_追加_をクリックします。
+1. ページの追加ダイアログで名前を入力し、 **追加** をクリックします。
 
 コンテンツページを作成した場合、コンテンツページの下書きにリダイレクトされ、フラグメントやウィジェットを追加することができます。
 
@@ -40,9 +40,9 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 
 {bdg-secondary}利用可能です：Liferay DXP/Portal 7.3+\`.
 
-1. *サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、_ページツリー_ (![ページツリー](../../../../images/icon-page-tree.png))をクリックします。
+1. **サイトメニュー**(![サイトメニュー](../../../images/icon-menu.png))を開き、 **ページツリー**(![ページツリー](../../../../images/icon-page-tree.png))をクリックします。
 
-1. *追加*([ボタン追加](../../../images/icon-add-app.png))をクリックし、_ページ追加_を選択します。
+1. **追加**( [ボタン追加](../../../images/icon-add-app.png) )をクリックし、 **ページ追加** を選択します。
 
    ![Adding a new page using the page tree menu.](adding-a-page-to-a-site/images/03.png)
 
@@ -58,25 +58,25 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 
 ### ページ管理からサブページを追加する
 
-1. *サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、_サイトビルダー_を展開し、_ページ_をクリックします。
+1. **サイトメニュー**(![サイトメニュー](../../../images/icon-menu.png))を開き、 **サイトビルダー** を展開し、 **ページ** をクリックします。
 
-1. 既存のページの_追加_ (![追加ボタン](../../../images/icon-duplicate.png))をクリックします。
+1. 既存のページの **追加**(![追加ボタン](../../../images/icon-duplicate.png))をクリックします。
 
    ![Click the Add button next to an exiting page to create a new child page.](./adding-a-page-to-a-site/images/04.png)
 
 1. [新しいページの追加](#adding-a-new-page) に概説されているように、ページを作成するための標準的な手順に従ってください。
 
 ```{tip}
-ページの横にあるアクションメニュー（！[アクションメニュー](../../../images/icon-actions.png)）を使って、コンテンツページのドラフトをプレビューすることができます（Liferay DXP 7.2+）。 これらのオプションは、下書きステータスのページと、ページ編集権限を持つユーザーに利用可能です。
+ページの横にあるアクションメニュー（！ [アクションメニュー](../../../images/icon-actions.png) ）を使って、コンテンツページのドラフトをプレビューすることができます（Liferay DXP 7.2+）。 これらのオプションは、下書きステータスのページと、ページ編集権限を持つユーザーに利用可能です。
 ```
 
 ### ページツリーからサブページを追加する
 
 {bdg-secondary}`利用可能です：Liferay DXP/Portal 7.3+`.
 
-1. *サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、_ページツリー_ (![ページツリー](../../../../images/icon-page-tree.png))をクリックします。
+1. **サイトメニュー**(![サイトメニュー](../../../images/icon-menu.png))を開き、 **ページツリー**(![ページツリー](../../../../images/icon-page-tree.png))をクリックします。
 
-1. 目的のページで、_Actions_ (![Actions Button](../../../images/icon-actions.png)) をクリックし、_Add Child Page_ を選択します。
+1. 目的のページで、 **Actions**(![Actions Button](../../../images/icon-actions.png)) をクリックし、 **Add Child Page** を選択します。
 
    ![Adding a child page using the page tree menu.](adding-a-page-to-a-site/images/05.png)
 
@@ -86,9 +86,9 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 
 作成したページを公開する前にプレビューしたり、作業が必要なページを確認することができます：
 
-1. *サイトメニュー* (![サイトメニュー](../../../images/icon-menu.png))を開き、_サイトビルダー_ &rarr; ページを選択します。
+1. **サイトメニュー**(![サイトメニュー](../../../images/icon-menu.png))を開き、 **サイトビルダー** &rarr; ページを選択します。
 
-1. プレビューしたいページで_Actions_ (![Actions Icon](../../../images/icon-actions.png)) をクリックし、_View_を選択します。
+1. プレビューしたいページで **Actions**(![Actions Icon](../../../images/icon-actions.png)) をクリックし、 **View** を選択します。
 
 ![You can preview pages easily before working on them](./adding-a-page-to-a-site/images/06.png)
 

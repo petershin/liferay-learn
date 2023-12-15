@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # ベースセールスのデッキ構成
 
 **概要**

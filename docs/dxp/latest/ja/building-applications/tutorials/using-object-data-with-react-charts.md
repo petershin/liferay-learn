@@ -11,23 +11,23 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-次に、以下の手順に従って、`/o/c/*` URLパターンを_Default Portal CORS Configuration_に追加してください：
+次に、以下の手順に従って、`/o/c/*` URLパターンを **Default Portal CORS Configuration** に追加してください：
 
-1. [グローバルメニュー](../../images/icon-applications-menu.png))を開き、[コントロールパネル](_Control Panel_)タブに移動し、[セキュリティツール](_Security Tools_)をクリックします。
+1. [グローバルメニュー](../../images/icon-applications-menu.png) )を開き、 [コントロールパネル](**Control Panel**) タブに移動し、 [セキュリティツール](**Security Tools**) をクリックします。
 
-1. *［Portal Cross-Origin Resource Sharing (CORS)］*タブで、 *［Default Portal CORS Configuration］*をクリックしてください。
+1. ［**Portal Cross-Origin Resource Sharing (CORS**)］ タブで、 ［**Default Portal CORS Configuration**］ をクリックしてください。
 
    ![Click Default Portal CORS Configuration](./using-object-data-with-react-charts/images/02.png)
 
-1. *［URL Pattern］_に`/o/c/*`の値を追加し、_［保存］*をクリックします。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
+1. ［**URL Pattern**］**に`/o/c/** `の値を追加し、**［保存］*をクリックします。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
 
    ![Add the /o/c/* URL Pattern for Object APIs.](./using-object-data-with-react-charts/images/03.png)
 
 ## React チャート用のオブジェクトを作成する
 
-1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブに移動し、_オブジェクト_をクリックします。
+1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 **コントロールパネル** タブに移動し、 **オブジェクト** をクリックします。
 
-1. *追加*ボタン(![追加ボタン](../../images/icon-add.png))をクリックし、以下の値を入力する：
+1. **追加** ボタン(![追加ボタン](../../images/icon-add.png))をクリックし、以下の値を入力する：
 
    | 項目      | 値            |
    | :------ | :----------- |
@@ -38,20 +38,20 @@
    ```{note}
    提供されたReactアプリはこれらの値を使用する。
    ```
-1. 新しい_オブジェクト_ドラフトを選択し、_フィールド_タブをクリックし、以下の_フィールド_を追加する：
+1. 新しい **オブジェクト** ドラフトを選択し、 **フィールド** タブをクリックし、以下の **フィールド** を追加する：
 
    | ラベル | 項目名   | 種類       | 必須       |
    | :-- | :---- | :------- | :------- |
    | ラベル | label | テキストボックス | &#10004; |
    | 値   | 値     | 整数       | &#10004; |
 
-1. *Details*タブをクリックし、_Publish_をクリックします。
+1. **Details** タブをクリックし、 **Publish** をクリックします。
 
 [オブジェクトの公開](../objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) は、データの受信と保存のための新規アプリケーションを作成し、有効にします。 Liferay UIやヘッドレスAPIでアクセスできるようになりました。
 
 ## ヘッドレスAPIを使ったオブジェクトへのデータ追加
 
-1. Liferayの_API Explorer_ (つまり、`localhost:8080/o/api`)を開き、_REST Applications_ドロップダウンメニューをクリックし、_c/x3j8objects_をクリックします。
+1. Liferayの **API Explorer**(つまり、`localhost:8080/o/api`)を開き、 **REST Applications** ドロップダウンメニューをクリックし、 **c/x3j8objects** をクリックします。
 
 1. このデータをバッチ `POST` API のリクエストボディに入力する：
 
@@ -80,7 +80,7 @@
    ]
    ```
 
-1. [*実行*]をクリックして、データエントリをオブジェクトに追加します。
+1. [**実行**]をクリックして、データエントリをオブジェクトに追加します。
 
 データの追加が終わったら、提供されたReactサーバーを設定します。 これには、X3J8-ObjectにAPI呼び出しを行い、そのデータを表示するFusionChartの実装が含まれます。
 
@@ -155,9 +155,9 @@
 
    ドキュメントライブラリにアップロードされると、そのファイルには固有のWebDAV URLが割り当てられ、それを使ってリモートアプリケーションを作成することになります。
 
-1. *情報*アイコン(![情報アイコン](../../images/icon-information.png))をクリックし、_アップロードされたファイル_を選択します。
+1. **情報** アイコン(![情報アイコン](../../images/icon-information.png))をクリックし、 **アップロードされたファイル** を選択します。
 
-1. ファイルの_WebDAV URL_をコピーし、次のステップで使用するために保存します。
+1. ファイルの **WebDAV URL** をコピーし、次のステップで使用するために保存します。
 
    例えば、`http://localhost:8080/webdav/guest/document_library/main.5a6819d5.js`である。
 
@@ -167,7 +167,7 @@
 
 1. ![グローバルメニュー](../../images/icon-applications-menu.png)を開き、[アプリケーション]タブをクリックし、[リモートアプリケーション]を選択します。
 
-1. *追加*ボタン(![追加ボタン](../../images/icon-add.png))をクリックします。
+1. **追加** ボタン(![追加ボタン](../../images/icon-add.png))をクリックします。
 
 1. 次の値を入力します。
 
@@ -179,9 +179,9 @@
    | URL          | .js`ファイルのWebDAV URL  |
    | ポートレットのカテゴリ名 | リモートアプリケーション          |
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
-保存されると、Liferayはリモートアプリケーションのウィジェットを作成し、サイトページにデプロイすることができます。 このウィジェットは、アプリケーションのポートレット・カテゴリ名（つまり、このチュートリアルでは「_Remote Apps_」）の下に表示されます。
+保存されると、Liferayはリモートアプリケーションのウィジェットを作成し、サイトページにデプロイすることができます。 このウィジェットは、アプリケーションのポートレット・カテゴリ名（つまり、このチュートリアルでは「**Remote Apps**」）の下に表示されます。
 
 ![You can deploy the remote app widget to Site Pages.](./using-object-data-with-react-charts/images/06.png)
 

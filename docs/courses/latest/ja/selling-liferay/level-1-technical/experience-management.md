@@ -2,6 +2,9 @@
 toc:
   - ./experience-management/segmentation-personalization.md
   - ./experience-management/content-management-analytics.md
+visibility:
+- Employee
+- Partner
 ---
 # エクスペリエンスの管理
 
@@ -89,7 +92,7 @@ Liferayアプリケーションを他の言語にローカライズする必要�
 ページとその構成方法についての詳しい情報は、このサイトの別の場所で入手できる：
 
 * [コンテントページの使用](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/using-content-pages.html)
-* [コンテントページエディタUIリファレンス](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference.html)
+* [Content Page Editor UI Reference](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/using-content-pages/content-page-editor-ui-reference.html)
 * [フラグメントの使用](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-fragments-and-widgets/using-fragments.html)
 
 ### その他のトピック

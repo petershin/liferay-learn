@@ -26,7 +26,7 @@ Liferay DXPをAnalytics Cloudに接続するには、以下の前提条件があ
 
 1. 少なくとも1つのAnalytics Cloudワークスペースにアクセスする必要があります。 Analytics Cloudの有料ユーザーであれば、ログイン時に自分のワークスペースが表示されます。 そうでない場合は、 [help.liferay.com](https://help.liferay.com/) からサポートにご連絡ください。
 
-1. (オプション）ユーザーの同期には Liferay DXP のバッチエンジンを使用します。 非常に多くのユーザーを同期する場合は、バッチサイズを大きくしてください。 Liferay DXP で、_Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_ に移動します。 Export Batch Size_ と _Import Batch Size_ を `1000` に設定する。
+1. (オプション）ユーザーの同期には Liferay DXP のバッチエンジンを使用します。 非常に多くのユーザーを同期する場合は、バッチサイズを大きくしてください。 Liferay DXP で、 **Global Menu** &rarr; **Instance Settings** &rarr; **Batch Engine** に移動します。 Export Batch Size **と** Import Batch Size_ を `1000` に設定する。
 
 ## オンボーディングガイドの利用
 
@@ -36,21 +36,21 @@ Liferay DXPをAnalytics Cloudに接続するには、以下の前提条件があ
 
    ![You see an onboarding guide when you login first.](./connecting-liferay-dxp-to-analytics-cloud/images/01.png)
 
-   または、_Settings_ &rarr; _Data Sources_の下にトークンがあります。 Add Data Source_ をクリックし、_Liferay DXP_ を選択し、Analytics Cloud トークンをコピーします。
+   または、 **Settings** &rarr; **Data Sources** の下にトークンがあります。 Add Data Source **をクリックし、**Liferay DXP** を選択し、Analytics Cloud トークンをコピーします。
 
 1. Liferay DXPインスタンスにログインします。
 
-1. グローバルメニュー](../images/icon-applications-menu.png)を開き、[コントロールパネル] タブを開き、[インスタンス設定] をクリックします。
+1. ![グローバルメニュー](../images/icon-applications-menu.png)を開き、[コントロールパネル] タブを開き、[インスタンス設定] をクリックします。
 
 1. プラットフォーム］で［アナリティクス クラウド］をクリックします。
 
    初回は4ステップのオンボーディングガイドが表示されます。
 
-1. Analytics Cloudトークンを入力し、_Connect_をクリックします。
+1. Analytics Cloudトークンを入力し、 **Connect** をクリックします。
 
    ![Enter the token and click Connect.](./connecting-liferay-dxp-to-analytics-cloud/images/02.png)
 
-1. 既存のAnalytics Cloudプロパティを選択するか、_Add_（[Add Button]（.../images/icon-add.png））をクリックして作成します。 選択したら、_Assign_をクリックします。
+1. 既存のAnalytics Cloudプロパティを選択するか、 **Add**（ [Add Button](.../images/icon-add.png) ）をクリックして作成します。 選択したら、 **Assign** をクリックします。
 
    ```{note}
    プロパティは1つまたは複数のLiferayサイトに関連付けられたラベルで、Analytics Cloudがデータをどのように集約するかを決定します。
@@ -58,7 +58,7 @@ Liferay DXPをAnalytics Cloudに接続するには、以下の前提条件があ
 
    ![Select an existing property or create a new one.](./connecting-liferay-dxp-to-analytics-cloud/images/03.png)
 
-1. プロパティに割り当てるサイトを選択します。 Commerce_トグルを有効にすると、Commerce [チャンネル](https://learn.liferay.com/commerce/latest/en/store-management/channels/introduction-to-channels.html) も割り当てられます。
+1. プロパティに割り当てるサイトを選択します。 Commerce_トグルを有効にすると、Commerce [チャネルについて](https://learn.liferay.com/commerce/latest/ja/store-management/channels/introduction-to-channels.html) も割り当てられます。
 
    一度に1つのプロパティにのみ、同じサイトまたはチャンネルを割り当てることができます。 詳しくは、 [プロパティを使用したスコープサイトと個人](../workspace-settings/scoping-sites-and-individuals-using-properties.md) をご覧ください。
 
@@ -104,15 +104,15 @@ Liferay DXPおよびAnalytics Cloudは、安全で暗号化されたトークン
 
    ![You see an onboarding guide when you log in first.](./connecting-liferay-dxp-to-analytics-cloud/images/08.png)
 
-   または、_Settings_ &rarr; _Data Sources_の下にトークンがあります。 Add Data Source_ をクリックし、_Liferay DXP_ を選択し、Analytics Cloud トークンをコピーします。
+   または、 **Settings** &rarr; **Data Sources** の下にトークンがあります。 Add Data Source **をクリックし、** Liferay DXP_ を選択し、Analytics Cloud トークンをコピーします。
 
 1. Liferay DXPインスタンスにログインします。
 
-1. グローバルメニュー](../images/icon-applications-menu.png)を開き、[コントロールパネル] タブを開き、[インスタンス設定] をクリックします。
+1. ![グローバルメニュー](../images/icon-applications-menu.png)を開き、[コントロールパネル] タブを開き、[インスタンス設定] をクリックします。
 
-1. プラットフォーム]で[_Analytics Cloud_]をクリックします。
+1. プラットフォーム]で[**Analytics Cloud**]をクリックします。
 
-1. アナリティクス クラウドのトークンを貼り付け、_Connect_をクリックします。
+1. アナリティクス クラウドのトークンを貼り付け、 **Connect** をクリックします。
 
    ![Paste the token and click Connect.](./connecting-liferay-dxp-to-analytics-cloud/images/09.png)
 
@@ -130,19 +130,19 @@ Liferay DXPおよびAnalytics Cloudは、安全で暗号化されたトークン
 
 サイトを同期するには、プロパティを作成し、1つまたは複数のサイトに関連付ける必要があります。 Analytics Cloudは、お客様のプロパティの定義方法に従ってデータを集約します。 この例では、1つのサイトが1つの物件と関連付けられている簡単な設定を示しています。 複数のサイトを持つプロパティの定義について詳しくは、 [プロパティを使用したスコープサイトと個人](../workspace-settings/scoping-sites-and-individuals-using-properties.md) をご覧ください。
 
-1. Analytics Cloudで、_Settings_ &rarr; _Properties_に移動します。
+1. Analytics Cloudで、 **Settings** &rarr; **Properties** に移動します。
 
 1. New Property_をクリックし、ラベルを入力する（例：Minium Site）。
 
-1. DXPインスタンスで、_グローバルメニュー_（[グローバルメニュー](../images/icon-applications-menu.png)）を開き、_コントロールパネル_タブに移動し、_インスタンス設定_をクリックします。
+1. DXPインスタンスで、 **グローバルメニュー**（ [グローバルメニュー](../images/icon-applications-menu.png) ）を開き、 **コントロールパネル** タブに移動し、 **インスタンス設定** をクリックします。
 
-1. プラットフォーム]で[_Analytics Cloud_]をクリックします。
+1. プラットフォーム]で[**Analytics Cloud**]をクリックします。
 
 1. サイトを選択_をクリックします。
 
 1. 利用可能なプロパティ下にある新規プロパティを選択します。
 
-1. 同期したいサイトを選択し、_Done_をクリックする。
+1. 同期したいサイトを選択し、 **Done** をクリックする。
 
    ![Select the site you want to sync.](./connecting-liferay-dxp-to-analytics-cloud/images/10.png)
 
@@ -152,13 +152,13 @@ Liferay DXPおよびAnalytics Cloudは、安全で暗号化されたトークン
 
 ### 連絡先の同期
 
-1. DXPインスタンスで、_グローバルメニュー_（[グローバルメニュー](../images/icon-applications-menu.png)）を開き、_コントロールパネル_タブに移動し、_インスタンス設定_をクリックします。
+1. DXPインスタンスで、 **グローバルメニュー**（ [グローバルメニュー](../images/icon-applications-menu.png) ）を開き、 **コントロールパネル** タブに移動し、 **インスタンス設定** をクリックします。
 
-1. プラットフォーム]で[_Analytics Cloud_]をクリックします。
+1. プラットフォーム]で[**Analytics Cloud**]をクリックします。
 
 1. 「連絡先の選択」をクリックします。
 
-1. 連絡先の同期オプション]で、[_連絡先の同期_]をクリックします。 すべての連絡先を同期するには、_Sync All_ を切り替えます。 また、連絡先のサブセットを同期したい場合は、_ユーザーグループ単位で同期_または_組織単位で同期_をクリックします。
+1. 連絡先の同期オプション]で、[**連絡先の同期**]をクリックします。 すべての連絡先を同期するには、 **Sync All** を切り替えます。 また、連絡先のサブセットを同期したい場合は、 **ユーザーグループ単位で同期** または **組織単位で同期** をクリックします。
 
    ```{important}
    Analytics Cloudは、個々の連絡先データを同期して管理するためのツールを提供します。 ただし、これらのツールは、プライバシー規制（GDPRなど）の遵守を保証するものではありません。 お客様は、お客様のサイトが個人データを保存し処理する場所で、プライバシー法を遵守するために必要な慣行および構成を慎重に決定する必要があります。

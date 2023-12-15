@@ -4,21 +4,21 @@
 
 カタログの各商品について、商品リレーションを追加できるようになりました：
 
-1. *グローバルメニュー* (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Products_に移動します。
+1. **グローバルメニュー**(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 **Commerce** &rarr; **Products** に移動します。
 
-1. *マリヤ*を選択する。
+1. **マリヤ** を選択する。
 
-1. *Product Relations*タブをクリックします。
+1. **Product Relations** タブをクリックします。
 
-1. *追加*（[Add]（../../images/icon-add.png））をクリックし、_関連商品の追加_を選択します。
+1. **追加**（[Add]（../../images/icon-add.png））をクリックし、 **関連商品の追加** を選択します。
 
 1. 新しく開いたウィンドウで、カタログの他の2つの製品を選択する。
 
-1. *追加*をクリックする。
+1. **追加** をクリックする。
 
    ![Add two related products for the Maliyah eyeglasses.](./adding-media/images/01.jpg)
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
 これにより、3つの製品の間に製品関係が生まれる。 他の2つの製品についてもこの作業を繰り返す。 モジュール3でストアフロントに商品を表示する際に、これらのリレーションを使用します。
 

@@ -8,35 +8,42 @@
 
 バリデーションを追加するには
 
-1. グローバルメニュー( ![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブを開き、_オブジェクト_をクリックします。
+1. グローバルメニュー( ![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 **コントロールパネル** タブを開き、 **オブジェクト** をクリックします。
 
 1. オブジェクト定義の編集を開始します。
 
-1. *Validations*タブに移動し、_Add_ ( ![Add Button](../../../../images/icon-add.png) ) をクリックします。
+1. **Validations** タブに移動し、 **Add**( ![Add Button](../../../../images/icon-add.png) ) をクリックします。
 
-1. ラベル_を入力し、検証タイプを選択します：_Groovy_または_Expression Builder*。
+1. ラベル **を入力し、検証タイプを選択します：** Groovy **または** Expression Builder*。
 
-   ![Enter a label and select a validation type.](./adding-custom-validations/images/02.png)
+   ![Enter a label and select a validation type.](./adding-field-validations/images/02.png)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 1. バリデーションの編集を開始する。
 
 1. 基本情報タブで、バリデーションを有効にする。
 
-   ![Activate the validation.](./adding-custom-validations/images/03.png)
+   ![Activate the validation.](./adding-field-validations/images/03.png)
 
-   ![検証に条件を追加します。](./adding-field-validations/images/03.png)
+1. 検証を実行するタイミングを決定する **トリガーイベント** を選択します。
+
+   各検証は、1つのトリガーイベントしか持つことができません。
+
+1. *条件*タブに移動し、バリデーションに条件を追加します。
+
+   条件には、複雑なロジックを実行するための複数のフィールドや関数を含めることができます。
+
+   ![Add conditions to the validation.](./adding-field-validations/images/04.png)
 
    Groovyを使用する場合、サイドパネルから利用可能なデータフィールドを参照し、条件に追加することができます。 詳細は、 [Groovy検証の使用](#using-groovy-validations) を参照してください。
 
    エクスプレッションビルダーを使用する場合、サイドパネルからフィールド、演算子、関数を参照し、条件に追加できます。 詳細は、 [エクスプレッションビルダー検証の使用](#using-expression-builder-validations) を参照してください。
 
-   ```{important}
+   !!! important
    Groovy スクリプトの検証は、Liferay Experience Cloud Self-Managed と Liferay DXP Self-Hosted でのみ利用できます。
-   ```
 
-1. ローカライズ可能な_エラーメッセージ_を入力してください。 このメッセージは、バリデーションがトリガーされ、フィールド入力が定義された条件の1つ以上を満たさない場合に表示されます。
+1. ローカライズ可能な**エラーメッセージ**を入力する。このメッセージは、バリデーションがトリガーされ、フィールドエントリが定義された条件の1つ以上を満たさない場合に表示されます。
 
 1. 出力検証タイプを選択して、エラーメッセージが表示される場所を決定する。
 
@@ -46,7 +53,7 @@
 
     ![Enter an error message and select an output validation type.](./adding-field-validations/images/05.png)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 有効化されている間、バリデーションはすべての新規オブジェクトエントリに対して実行され、 [レイアウト](../layouts.md) と [フォームコンテナ](../../using-fragments-to-build-forms.md) に表示されます。
 
@@ -60,7 +67,7 @@ Groovy検証は、標準的な [Groovyスクリプト](https://groovy-lang.org/)
 
 ![Use the side panel to add field elements to your Groovy validations.](./adding-custom-validations/images/07.png)
 
-Liferay は [GroovyShell クラス](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) を使って、_Save_ をクリックしたときに Groovy スクリプトの構文が有効かどうかをチェックします。 スクリプトが無効な場合、Liferayはエラーメッセージを表示します。
+Liferay は [GroovyShell クラス](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) を使って、 **Save** をクリックしたときに Groovy スクリプトの構文が有効かどうかをチェックします。 スクリプトが無効な場合、Liferayはエラーメッセージを表示します。
 
 ## エクスプレッションビルダー検証の使用
 
@@ -115,7 +122,7 @@ LiferayはSaveをクリックしたときに、式が有効な構文かどうか
 | 範囲         |           |          | &#10004; | 日付範囲が過去の日付で始まり、未来の日付で終わるかどうかを調べ、ブール値を返す。            |
 | 合計         |           | &#10004; |          | 複数の数値フィールドを足し合わせ、単一の数値を返します。                        |
 
-詳細と例については、 [Expression Builder Validations Reference](./expression-builder-validations-reference.md) を参照してください。
+詳細と例については、 [エクスプレッションビルダー検証のリファレンス](./expression-builder-validations-reference.md) を参照してください。
 
 ## 利用可能なフィールドのリファレンス
 
@@ -146,6 +153,6 @@ LiferayはSaveをクリックしたときに、式が有効な構文かどうか
 
 ## 関連トピック
 
-* [Creating Objects](../creating-objects.md) 
+* [オブジェクトの作成](../creating-objects.md)
 * [オブジェクトへのフィールドの追加](../fields/adding-fields-to-objects.md) 
 * [式ビルダー検証リファレンス](./expression-builder-validations-reference.md) 

@@ -23,14 +23,14 @@ Liferay Portalは、説得力のある柔軟なWebエクスペリエンスを構
     ```{tip}
     起動完了を示す`org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds`が表示されるまで待つ。
     ```
-1. _test@liferay.com_ というメールアドレスと _test_ というパスワードを使って `<http://localhost:8080>` から Liferay にサインインしてください。
+1. **test@liferay.com** というメールアドレスと **test** というパスワードを使って `<http://localhost:8080>` から Liferay にサインインしてください。
 
-1. プロンプトが表示されたら、パスワードを変更し（_learn_など）、_Save_をクリックします。
+1. プロンプトが表示されたら、パスワードを変更し（**learn** など）、 **Save** をクリックします。
 
    ![Change your password upon first login.](./starting-with-a-docker-image/images/01.png)
 
 ```{warning}
-本番環境では、デフォルトの管理者アカウントを使うべきではありません。代わりに、あなたのビジネスに特化した[adminアカウントを作成する](./introduction-to-the-admin-account.md#creating-a-new-admin-user)。
+本番環境では、デフォルトの管理者アカウントを使うべきではありません。代わりに、あなたのビジネスに特化した [adminアカウントを作成する](./introduction-to-the-admin-account.md#creating-a-new-admin-user) 。
 ```
 ## Liferay DXPを使ってみる
 
@@ -42,14 +42,14 @@ Liferay DXPは、世界中で使用されている商用サポート済みのエ
    docker run -it -m 8g -p 8080:8080 [$LIFERAY_LEARN_DXP_DOCKER_IMAGE$]
    ```
 
-1. _test@liferay.com_ というメールアドレスと _test_ というパスワードを使って `<http://localhost:8080>` から Liferay にサインインしてください。
+1. **test@liferay.com** というメールアドレスと **test** というパスワードを使って `<http://localhost:8080>` から Liferay にサインインしてください。
 
-1. プロンプトが表示されたら、パスワードを変更し（_learn_など）、_Save_をクリックします。
+1. プロンプトが表示されたら、パスワードを変更し（**learn** など）、 **Save** をクリックします。
 
    ![Change your password upon first login.](./starting-with-a-docker-image/images/01.png)
 
 ```{warning}
-本番環境では、デフォルトの管理者アカウントを使うべきではありません。代わりに、あなたのビジネスに特化した[adminアカウントを作成する](./introduction-to-the-admin-account.md#creating-a-new-admin-user)。
+本番環境では、デフォルトの管理者アカウントを使うべきではありません。代わりに、あなたのビジネスに特化した [adminアカウントを作成する](./introduction-to-the-admin-account.md#creating-a-new-admin-user) 。
 ```
 ## 次のステップ
 

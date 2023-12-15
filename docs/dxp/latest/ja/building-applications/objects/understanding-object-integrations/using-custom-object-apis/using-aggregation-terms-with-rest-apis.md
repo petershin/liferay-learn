@@ -13,7 +13,7 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
 
 [次に、以下の手順に従って、](../../creating-and-managing-objects/creating-objects.md) このチュートリアルの基本的なオブジェクトを作成します：
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［ **オブジェクト**］ をクリックします。
 
 2. 追加*ボタン(![追加ボタン](../../../../images/icon-add.png))をクリックし、以下の値を入力する：
 
@@ -23,18 +23,19 @@ REST APIを使用してオブジェクトエントリーを照会する場合、
    | 複数形のラベル | `Ables` |
    | 名前      | `Able`  |
 
-3. 新しい_オブジェクト_ドラフトを選択し、_フィールド_タブに行き、以下のテキストフィールドを追加する：
+3. 新しい **オブジェクト** ドラフトを選択し、 **フィールド** タブに行き、以下のテキストフィールドを追加する：
 
    | ラベル | 項目名 | 種類       | 必須       |
    | :-- | :-- | :------- | :------- |
    | 名前  | 名前  | テキストボックス | &#10004; |
    | 説明  | 説明  | テキストボックス |          |
 
-4. 詳細*タブに移動し、 [_公開_](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) をクリックします。
+4. **詳細**タブに移動し、 [**公開**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) をクリックします。
 
    ```{important}
    このチュートリアルでは、上記の値を使用する必要があります。
    ```
+
 公開後は、ヘッドレスAPIでオブジェクトにアクセスすることができます。
 
 ## サンプルコードを準備する
@@ -64,7 +65,7 @@ unzip liferay-b3x5.zip
    cd liferay-b3x5/curl
    ```
 
-2. Ables_POST_Batch` を実行する。 複数のオブジェクトエントリーを作成します。
+2. `Ables_POST_Batch` を実行する。 複数のオブジェクトエントリーを作成します。
 
    ```bash
    ./Ables_POST_Batch.sh
@@ -89,7 +90,7 @@ unzip liferay-b3x5.zip
    }
    ```
 
-3. Ables_GET_FromCompany`を実行すると、作成されたすべてのエントリーのリストを`aggregatedTerms` パラメータで返します。
+3. `Ables_GET_FromCompany`を実行すると、作成されたすべてのエントリーのリストを`aggregatedTerms` パラメータで返します。
 
    レスポンスには、`dateModified` と `description` という2つのファセット基準を持つ `facets` ブロックが含まれていなければならない。
 
@@ -155,4 +156,4 @@ unzip liferay-b3x5.zip
 
 * [オブジェクトAPIの基礎](./object-api-basics.md) 
 * [バッチAPIの使用](./using-batch-apis.md) 
-* [](./using-nestedfields-to-query-related-entries.md) `nestedFields` を使った関連エントリーのクエリー
+* [`nestedFields` を使って関連するエントリーを検索する](./using-nestedfields-to-query-related-entries.md)

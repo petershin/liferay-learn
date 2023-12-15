@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Liferay Experience Cloud SaaSの価格 - 導入とプラン
 
 **概要**

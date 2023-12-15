@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # スタイリングの基本
 
 **概要**

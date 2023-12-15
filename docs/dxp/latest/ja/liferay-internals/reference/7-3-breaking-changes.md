@@ -144,7 +144,7 @@ else {
 * 既存のコードを再評価する
 * 既存のサービスAPIが同じ目標を達成できるかどうかを検討する
 
-##### G_P_N_Vを含むFinderメソッドの場合
+##### G **P** N_Vを含むFinderメソッドの場合
 
 `G_P_N_V`で終わる`AssetCategory`検索メソッドを使用する場合は、代わりに`P_N_V` で終わるメソッドを使用してください。
 
@@ -449,8 +449,8 @@ Auto Deployer (`liferay-home/deploy folder` 経由) を使った EXT プラグ�
 
 メニューを注入するコードを `DynamicInclude` コンポーネントに移動し、適切な位置に登録する：
 
-* コントロールメニューの前にcom.liferay.product.navigation.taglib#/page.jsp#pre`を使用してください。
-* コントロールメニューの後com.liferay.product.navigation.taglib#/page.jsp#post`を使用してください。
+* コントロールメニューの前に`com.liferay.product.navigation.taglib#/page.jsp#pre`を使用してください。
+* コントロールメニューの後`com.liferay.product.navigation.taglib#/page.jsp#post`を使用してください。
 
 #### 変更が行われた理由
 
@@ -475,7 +475,7 @@ Auto Deployer (`liferay-home/deploy folder` 経由) を使った EXT プラグ�
 
 コードで使用する独自のバージョンのJQueryを提供するサードパーティライブラリを追加するための戦略のいずれかを使用します。
 
-さらに、一時的な措置として、_System Settings_ &rarr; _Third Party_ &rarr; _jQuery_の`Enable jQuery`プロパティを`true`に設定することで、以前の動作を復活させることができます。
+さらに、一時的な措置として、 **System Settings** &rarr; **Third Party** &rarr; **jQuery** の`Enable jQuery`プロパティを`true`に設定することで、以前の動作を復活させることができます。
 
 #### 変更が行われた理由
 
@@ -687,7 +687,7 @@ Simple Editorを使用するようにLiferay Portalを構成している場合�
 
 #### コードの更新方法
 
-コードを更新する必要はありません。 それでも `ContentTransformerListener` を使いたいのであれば、システム設定の _Content & Data_ &rarr; _Web Content_ &rarr; _Virtual Instance Scope_ &rarr; _Web Content_ の下にある _Enable ContentTransformerListener_ プロパティを使って有効にすることができる。
+コードを更新する必要はありません。 それでも `ContentTransformerListener` を使いたいのであれば、システム設定の **Content & Data** &rarr; **Web Content** &rarr; **Virtual Instance Scope** &rarr; **Web Content** の下にある **Enable ContentTransformerListener** プロパティを使って有効にすることができる。
 
 #### 変更が行われた理由
 
@@ -867,13 +867,13 @@ Liferayコードにはいくつかの例があります。 例えば、 [DDMInde
 
 システム設定から従来の動作を復元して、`ddm__keyword__*`フィールドと`ddm__text__*`フィールドを使い続けることもできます。
 
-1. *System Settings* &rarr; _Dynamic Data Mapping_ &rarr; _Dynamic Data Mapping Indexer_ にアクセスしてください。
-1. *Enable Legacy Dynamic Data Mapping Index Fields*を選択します。
+1. **System Settings** &rarr; **Dynamic Data Mapping** &rarr; **Dynamic Data Mapping Indexer** にアクセスしてください。
+1. **Enable Legacy Dynamic Data Mapping Index Fields** を選択します。
 1. 完全なインデックスの再構築を実行します。
 
 #### 変更が行われた理由
 
-この変更は、Dynamic Data Mapping 構造体が多すぎる場合に発生する _Limit of total fields has been exceeded_ Elasticsearch エラーを回避するために行われました。
+この変更は、Dynamic Data Mapping 構造体が多すぎる場合に発生する **Limit of total fields has been exceeded** Elasticsearch エラーを回避するために行われました。
 
 ***
 
@@ -960,7 +960,7 @@ Liferayコードにはいくつかの例があります。 例えば、 [DDMInde
 
 #### 変更点
 
-ビューカウントをグローバルに、またはエンティティ専用に有効にしたり無効にしたりする機能は、ポータルプロパティから削除され、システム設定として構成されるようになりました。 ビューカウントは UI の _システム設定_ &rarr; _インフラストラクチャ_ &rarr; _ビューカウント_ で設定するか、`com.liferay.view.count.configuration.config` という名前の設定ファイルを使って設定します。
+ビューカウントをグローバルに、またはエンティティ専用に有効にしたり無効にしたりする機能は、ポータルプロパティから削除され、システム設定として構成されるようになりました。 ビューカウントは UI の **システム設定** &rarr; **インフラストラクチャ** &rarr; **ビューカウント** で設定するか、`com.liferay.view.count.configuration.config` という名前の設定ファイルを使って設定します。
 
 ポータルプロパティの変更は次のとおりです。
 
@@ -980,7 +980,7 @@ Liferayコードにはいくつかの例があります。 例えば、 [DDMInde
 
 システム設定または構成ファイルを使用して、ビューカウントの動作を構成します。
 
-*システム設定* &rarr; _インフラストラクチャ_ &rarr; _ビューカウント_ で、`enabled` を `false` に設定してビューカウントをグローバルに無効にするか、`enabled` を `true` に設定してビューカウントをグローバルに有効にし、`Disabled Class Name` 値リストにエンティティクラス名を追加して特定のエンティティのビューカウントを無効にします。
+**システム設定** &rarr; **インフラストラクチャ** &rarr; **ビューカウント** で、`enabled` を `false` に設定してビューカウントをグローバルに無効にするか、`enabled` を `true` に設定してビューカウントをグローバルに有効にし、`Disabled Class Name` 値リストにエンティティクラス名を追加して特定のエンティティのビューカウントを無効にします。
 
 設定ファイルを使用するには、システム設定でビューカウントを設定し、設定を保存して、`com.liferay.view.count.configuration.config`ファイルにエクスポートします。 そのファイルを `[Liferay Home]/osgi/configs` フォルダに配置します。
 

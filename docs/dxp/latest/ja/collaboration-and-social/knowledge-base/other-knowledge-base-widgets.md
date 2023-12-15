@@ -2,13 +2,13 @@
 
 [ナレッジベース表示ウィジェット](knowledge-base-display-widget.md) 以外にも、ページに追加できるナレッジベースのウィジェットがあります。
 
-**知識ベース記事**：一つの記事の内容を表示します。
+**知識ベース記事** ：一つの記事の内容を表示します。
 
-**Knowledge Base Section**：特定のトピック（セクション）に関連する記事を公開する。
+**Knowledge Base Section** ：特定のトピック（セクション）に関連する記事を公開する。
 
-**知識ベース検索**：記事を検索します。
+**知識ベース検索** ：記事を検索します。
 
-これらのウィジェットは、_Add_ ([Add icon](../../images/icon-add.png)) から追加できます。 &rarr; _ウィジェット_ &rarr; _コンテンツ管理_.
+これらのウィジェットは、 **Add**( [Add icon](../../images/icon-add.png) ) から追加できます。 &rarr; **ウィジェット** &rarr; **コンテンツ管理** .
 
 ## ナレッジベース記事ウィジェット
 
@@ -16,13 +16,13 @@
 
 ナレッジベース記事ウィジェットをサイトページに追加した後、
 
-1. *オプション* ([オプションボタン](../../images/icon-options.png))をクリックし、_設定_を選択します。
+1. **オプション**( [オプションボタン](../../images/icon-options.png) )をクリックし、 **設定** を選択します。
 
-1. *Setup*タブで、_Select_をクリックする。
+1. **Setup** タブで、 **Select** をクリックする。
 
 1. 記事を選択してください。
 
-1. *Save*をクリックし、Configurationウィンドウを閉じます。
+1. **Save** をクリックし、Configurationウィンドウを閉じます。
 
    ![Use the Knowledge Base Article widget to display an individual article.](./other-knowledge-base-widgets/images/01.png)
 
@@ -48,11 +48,11 @@ Knowledge Base 3.0.0 では、Knowledge Base Sections ウィジェットは非�
 
 ナレッジベースセクションウィジェットを設定するには、
 
-1. *オプション* ([オプションボタン](../../images/icon-options.png))をクリックし、_設定_を選択します。
+1. **オプション**( [オプションボタン](../../images/icon-options.png) )をクリックし、 **設定** を選択します。
 
    ![Customize the widget in the Configuration window.](./other-knowledge-base-widgets/images/04.png)
 
-1. *Setup* &rarr; _General_タブで、使用したいセクションを選択し、_Save_をクリックします。
+1. **Setup** &rarr; **General** タブで、使用したいセクションを選択し、 **Save** をクリックします。
 
 1. ［設定］ウィンドウを閉じて、更新を確認します。
 
@@ -66,7 +66,7 @@ Knowledge Base 3.0.0では、Knowledge Base Searchウィジェットは廃止さ
 
 ナレッジベースは記事の構造を表示できますが、閲覧して探しているものを正確に見つけるのは難しい場合があります。 そのため、検索には、ナレッジベース検索ウィジェットを使用できます。
 
-検索語を入力し、_検索_ボタンを押してください。 結果は、一致する記事ごとに次の基準でテーブルに表示されます。
+検索語を入力し、 **検索** ボタンを押してください。 結果は、一致する記事ごとに次の基準でテーブルに表示されます。
 
 * タイトル
 * 作成者
@@ -78,13 +78,13 @@ Knowledge Base 3.0.0では、Knowledge Base Searchウィジェットは廃止さ
 
 ウィジェットをページに追加した後、
 
-1. オプション* ([オプションボタン](../../images/icon-options.png))をクリックし、_設定_を選択します。
+1. オプション ( [**オプションボタン](../../images/icon-options.png) )をクリックし、***設定** を選択します。
 
    ![Choose the criteria to display for the search results.](./other-knowledge-base-widgets/images/06.png)
 
-1. *設定* &rarr; _全般_ タブで、検索結果に表示する条件を選択します。
+1. **設定** &rarr; **全般** タブで、検索結果に表示する条件を選択します。
 
-1. *Save*をクリックし、Configurationウィンドウを閉じます。
+1. **Save** をクリックし、Configurationウィンドウを閉じます。
 
 ## 関連トピック
 

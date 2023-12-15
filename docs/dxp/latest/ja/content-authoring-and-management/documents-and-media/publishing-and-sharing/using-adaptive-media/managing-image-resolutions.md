@@ -14,13 +14,13 @@
 
 解像度の画像を手動で生成する、
 
-1. グローバルメニュー( ![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブに移動し、_適応メディア_をクリックします。
+1. グローバルメニュー( ![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 **コントロールパネル** タブに移動し、 **適応メディア** をクリックします。
 
-1. 希望する解像度の_Actions_ボタン( ![Actions Button](../../../../images/icon-actions.png) )をクリックし、_Adapt Remaining_を選択します。
+1. 希望する解像度の **Actions** ボタン( ![Actions Button](../../../../images/icon-actions.png) )をクリックし、 **Adapt Remaining** を選択します。
 
    ![Select Adapt Remaining.](./managing-image-resolutions/images/02.png)
 
-   または、アプリケーションバーの _Actions_ ボタン (![Actions Button](../../../../images/icon-actions.png) ) をクリックし、_Adapt All Images_ を選択すると、有効なすべての解像度に対応した画像の生成が開始されます。
+   または、アプリケーションバーの **Actions** ボタン (![Actions Button](../../../../images/icon-actions.png) ) をクリックし、 **Adapt All Images** を選択すると、有効なすべての解像度に対応した画像の生成が開始されます。
 
    ![Select Adapt All Images.](./managing-image-resolutions/images/03.png)
 
@@ -32,9 +32,9 @@
 
 解像度を無効化/有効化する、
 
-1. 希望する解像度の_Actions_ボタン( ![Actions Button](../../../../images/icon-actions.png) )をクリックします。
+1. 希望する解像度の **Actions** ボタン( ![Actions Button](../../../../images/icon-actions.png) )をクリックします。
 
-1. *Disable*/*Enable*を選択する。
+1. *Disable*/*Enable* を選択する。
 
    ![Select Disable/Enable.](./managing-image-resolutions/images/04.png)
 
@@ -52,9 +52,9 @@
 
 画像解像度を削除するには
 
-1. 無効化するには、_Actions_ボタン( ![Actions Button](../../../../images/icon-actions.png) )をクリックします。
+1. 無効化するには、 **Actions** ボタン( ![Actions Button](../../../../images/icon-actions.png) )をクリックします。
 
-1. *削除*を選択する。
+1. **削除** を選択する。
 
    ![Select Delete.](./managing-image-resolutions/images/05.png)
 

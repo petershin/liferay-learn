@@ -6,22 +6,22 @@
 
 以下の手順に従って、表示ページテンプレートのSEOとOpen Graphの設定を行います：
 
-1. [サイトメニュー](../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _ページテンプレート_に移動し、_表示ページテンプレート_タブをクリックします。
+1. [サイトメニュー](../../../images/icon-product-menu.png) )を開き、 **デザイン** &rarr; **ページテンプレート** に移動し、 **表示ページテンプレート** タブをクリックします。
 
    ![Go to the display page templates tab.](./configuring-seo-and-open-graph/images/01.png)
 
-1. 目的のテンプレートの_Actions_ (![アクションアイコン](./../../../images/icon-actions.png))をクリックし、_Edit_を選択します。 テンプレートを編集する際には、アプリケーションバーの_Options_（！[Optionsアイコン](././../../../images/icon-options.png)）をクリックし、_Configure_（！[Configureアイコン](././../../../images/icon-cog.png)）をクリックします。
+1. 目的のテンプレートの **Actions**(![アクションアイコン](./../../../images/icon-actions.png))をクリックし、 **Edit** を選択します。 テンプレートを編集する際には、アプリケーションバーの **Options**（！ [Optionsアイコン](././../../../images/icon-options.png) ）をクリックし、 **Configure**（！ [Configureアイコン](././../../../images/icon-cog.png) ）をクリックします。
 
 1. [［SEO］](#seo-settings-reference) または [［Open Graph］](#open-graph-settings-reference) タブに移動し、目的の設定を入力してください。
 
    ![Enter the desired configuration in the SEO and Open Graph tabs.](./configuring-seo-and-open-graph/images/02.png)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
    ```{important}
    SEOタブとオープングラフタブの間を移動すると、保存していない変更が失われます。
    ```
-SEOとOpen Graphの設定を行う際、値を直接入力したり、フィールドマッピングを使用して動的に値を追加したりすることが可能です。 使用可能なマッピングオプションは、テンプレートのコンテンツタイプとサブタイプによって異なります。 フィールドをマッピングするには、_フィールド・セレクタ_ボタン(![マッピング・ボタン](../../../images/icon-map.png))をクリックし、利用可能なフィールドから選択する。 Liferay DXP 7.4 U1とPortal 7.4 GA5では、この方法で追加されたフィールドはフィールド参照IDとフィールドラベル(`${fieldReferenceID:Field Label}`)の2つの部分を持つ`${}`プレースホルダとして表現されます。
+SEOとOpen Graphの設定を行う際、値を直接入力したり、フィールドマッピングを使用して動的に値を追加したりすることが可能です。 使用可能なマッピングオプションは、テンプレートのコンテンツタイプとサブタイプによって異なります。 フィールドをマッピングするには、 **フィールド・セレクタ** ボタン(![マッピング・ボタン](../../../images/icon-map.png))をクリックし、利用可能なフィールドから選択する。 Liferay DXP 7.4 U1とPortal 7.4 GA5では、この方法で追加されたフィールドはフィールド参照IDとフィールドラベル(`${fieldReferenceID:Field Label}`)の2つの部分を持つ`${}`プレースホルダとして表現されます。
 
 以前のバージョンでは、マッピングプレースホルダーはフィールド参照IDのみを含んでいました（例：`${title}`、`${authorName}`、`${Text84981642}`）。
 
@@ -38,7 +38,7 @@ Liferay は可能な限り、マッピングされたフィールドの翻訳を
 
 HTML Titleフィールドは、表示ページの`<title>`タグを定義します。 このタイトルは、検索エンジンがあなたのページをランク付けするために使用され、検索エンジンの検索結果でページの見出しとして機能します。 デフォルトでは、表示ページのテンプレートはこのフィールドを `${title}` にマップする。 この値を直接編集したり、フィールド・セレクタを使用して追加のマッピングを含めることができます（例：`${title} - ${authorName:Author Name}`）。
 
-推奨される_HTMLタイトル_の長さは60文字以下です。
+推奨される **HTMLタイトル** の長さは60文字以下です。
 
 ```{tip}
 SEOとオープングラフのタイトルは一緒に更新するのがベストプラクティスです。

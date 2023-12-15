@@ -53,7 +53,7 @@ Analytics Cloudは、サイト全体の包括的なレポートを提供する[�
 * 期間を指定
 
 ```{note}
-ページデータは正規化URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [ページ単位での設定](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) について詳しく説明します。
+ページデータは正規化URLに基づいています。 [canonicalization](https://moz.com/learn/seo/canonicalization) または [Configuring Individual Pages](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) について詳しく説明します。
 ```
 
 単一ページの詳細なメトリックを表示するには、テーブル内のそのページをクリックします。 詳しくは、 [ページアナリティクス](./touchpoints/pages/pages.md) をご覧ください。

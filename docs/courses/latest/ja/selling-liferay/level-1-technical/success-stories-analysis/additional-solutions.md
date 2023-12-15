@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # その他の水平ソリューション
 
 **一目瞭然**

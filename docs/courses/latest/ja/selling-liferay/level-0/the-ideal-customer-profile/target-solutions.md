@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # ターゲットソリューション
 
 **概要**

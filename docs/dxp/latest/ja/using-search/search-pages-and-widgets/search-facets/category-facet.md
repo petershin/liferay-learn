@@ -6,20 +6,20 @@
 
 ## カテゴリーファセットの設定
 
-カテゴリー・ファセットを設定するには、ファセットの_Options_メニュー（[Options](../../../images/icon-app-options.png) ）を開き、_Configuration_をクリックします。
+カテゴリー・ファセットを設定するには、ファセットの **Options** メニュー（ [Options](../../../images/icon-app-options.png) ）を開き、 **Configuration** をクリックします。
 
 ![Click the Configuration option.](./category-facet/images/03.png)
 
 ［表示設定］が最初に表示されます。
 
-**表示テンプレート:**_Default_, _Cloud Layout_, _Compact Layout_, _Label Layout_, _Vocabulary Layout_ (7.4 Update/GA 48+ で使用可能)から選択。 デフォルトのレイアウトでは、各用語の横にチェックボックスが表示されますが、コンパクトレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。 [ボキャブラリレイアウト](#display-facet-terms-categories-by-vocabulary) では、ボキャブラリごとに整理されたファセット用語（カテゴリー）が表示されます。
+**表示テンプレート:** **Default** , **Cloud Layout** , **Compact Layout** , **Label Layout** , **Vocabulary Layout**(7.4 Update/GA 48+ で使用可能)から選択。 デフォルトのレイアウトでは、各用語の横にチェックボックスが表示されますが、コンパクトレイアウトでは表示されません。 ラベルレイアウトでは、用語ごとにクリック可能な小さなラベルが表示されます。 [ボキャブラリレイアウト](#display-facet-terms-categories-by-vocabulary) では、ボキャブラリごとに整理されたファセット用語（カテゴリー）が表示されます。
 
 ［詳細設定］セクションには、追加のオプションが含まれています。
 
-**カテゴリ・パラメータ名:** ファセットのURLのパラメータ名を変更します。 デフォルトは_category_である。
+**カテゴリ・パラメータ名:** ファセットのURLのパラメータ名を変更します。 デフォルトは **category** である。
 
 ```{important}
-ファセットウィジェット間のANDスタイル選択を実現するためには、各ウィジェットに対して異なるカテゴリーパラメータ名を設定する必要があります。 デフォルトでは、すべてのカテゴリーファセットウィジェットで、このフィールドが_category_に設定されています。  以下の <a href="#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies">の例は使用例を示している。 
+ファセット ウィジェット間で AND スタイルの選択を実現するには、ウィジェットごとに異なるカテゴリ パラメータ名を設定する必要があります。 デフォルトでは、すべてのカテゴリ ファセット ウィジェットのこのフィールドは _category_ に設定されています。 [以下の例](#example-creating-a-hierarchic-filtering-experience-in-the-category-facet-using-vocabularies) は使用例を示しています。 
 ```
 
 **最大用語数:** ファセットに一致する用語の数に関係なく、表示するファセット用語の最大数を設定します。
@@ -60,21 +60,19 @@ Liferay 7.4 Update/GA 48より前のバージョンやアップデートから�
 
 - ボキャブラリ：Vehicle System
 
-  カテゴリー：
-
-  - Brake System
-  - Engine
-  - Exhaust System
-  - Suspension
-  - Transmission
-  - Turbocharger
+   カテゴリー：
+   - Brake System
+   - Engine
+   - Exhaust System
+   - Suspension
+   - Transmission
+   - Turbocharger
 
 - ボキャブラリー：Quality
 
-  カテゴリー：
-
-  - Premium
-  - 標準
+   カテゴリー：
+   - Premium
+   - 標準
 
 ユーザーは、「エンジン」と「排気システム」を選択した場合に、いずれかのカテゴリーに一致する製品が表示されることを期待します。 さらに、「Quality」のボキャブラリから「Premium」を選択した場合、エンジンや排気システムのプレミアムな自動車部品だけに絞られることを期待します。 7.4 アップデート/GA 48バージョンでは、すぐにそれを実現することができます。
 
@@ -82,7 +80,7 @@ Liferay 7.4 Update/GA 48より前のバージョンやアップデートから�
 
 1. グローバルメニュー &rarr; ［コントロールパネル］&rarr; ［サイト］で新規サイトを作成します。 プロンプトが表示されたら、Miniumサイトテンプレートを選択します。
 
-1. サイト名をFooとし、_Add_をクリックしてください。
+1. サイト名をFooとし、 **Add** をクリックしてください。
 
 1. グローバル サイトのメニュー &rarr; ［カテゴリー設定］&rarr; ［カテゴリー］に移動します。 「Quality」というボキャブラリ名を追加し、「Premium」と「Standard」という2つのカテゴリーを作成します。
 
@@ -125,12 +123,12 @@ Liferay 7.4 Update/GA 48より前のバージョンやアップデートから�
 
 1. Fooサイトのホームページに、Fooボキャブラリのカテゴリーのみを表示するように設定されたカテゴリーファセットウィジェットを追加します。
 
-   - ページ上部の_プラスアイコン_をクリックします（！[Plus](../../../images/icon-plus.png) ）。
+   - ページ上部の **プラスアイコン** をクリックします（！ [Plus](../../../images/icon-plus.png) ）。
    - カテゴリファセット*ウィジェットを既存のウィジェットの真上または真下にドラッグします。
    - ウィジェット設定*画面を開く(![アプリオプション](../../../images/icon-app-options.png))。
-   - 表示テンプレートのセレクタを開き、_語彙レイアウト_を選択します。
-   - Categoryパラメータ名を_foocategories_に変更する。
-   - ボキャブラリーの選択」ラジオボタンをクリックします。 Global_を展開し、_Foo_を選択する。
+   - 表示テンプレートのセレクタを開き、 **語彙レイアウト** を選択します。
+   - Categoryパラメータ名を **foocategories** に変更する。
+   - ボキャブラリーの選択」ラジオボタンをクリックします。 Global **を展開し、** Foo_を選択する。
    - 保存」をクリックする。
 
 1. 同様の手順で、オリジナルのカテゴリーファセットウィジェットを設定し、「Quality」ボキャブラリのカテゴリーのみを表示し、ボキャブラリレイアウトテンプレートを使用します。 新しいカテゴリーファセットウィジェットのカテゴリーパラメータ名はすでに変更されているので、既存ウィジェットのデフォルト値のままにしておくことができます。

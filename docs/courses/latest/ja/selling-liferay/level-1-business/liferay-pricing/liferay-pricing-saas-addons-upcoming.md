@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Liferay Experience Cloud SaaSの価格 - アドオンと今後の機能
 
 **概要**

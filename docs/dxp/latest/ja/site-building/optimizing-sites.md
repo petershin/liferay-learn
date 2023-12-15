@@ -65,8 +65,8 @@ optimizing-sites/building-a-responsive-site.md
 :link: ../content-authoring and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
 :::
 
-:::{grid-item-card} Analyze SEO and Accessibility on Pages
-:link: ../content-authoring and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
+:::{grid-item-card} ページのSEOとアクセシビリティを分析する
+:link: ../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
 :::
 ::::
 

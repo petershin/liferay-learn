@@ -15,7 +15,7 @@ toc:
 ./semantic-search/creating-a-search-blueprint-for-semantic-search.md
 ```
 
-セマンティック検索は、検索されたフレーズの背後にある意図を評価する。 一方、_keyword_検索は、検索されたフレーズをインデックスされたテキストフィールドにマッチさせるもので、意味に基づいてマッチさせることはできない。
+セマンティック検索は、検索されたフレーズの背後にある意図を評価する。 一方、 **keyword** 検索は、検索されたフレーズをインデックスされたテキストフィールドにマッチさせるもので、意味に基づいてマッチさせることはできない。
 
 | 検索フレーズ     | インデックス・コンテンツ                       | マッチタイプ                               |
 | :--------- | :--------------------------------- | :----------------------------------- |
@@ -51,8 +51,8 @@ Liferayのような（Elasticsearchを使った）洗練されたキーワード
 
 Liferay でセマンティック検索を有効にする、
 
-1. グローバルメニュー([グローバルメニュー](../../../images/icon-applications-menu.png))を開き、_コントロールパネル_ &rarr; _インスタンス設定_ をクリックします。
-1. *Platform* &rarr; _Feature Flags_ セクションを開く。
+1. グローバルメニュー( [グローバルメニュー](../../../images/icon-applications-menu.png) )を開き、 **コントロールパネル** &rarr; **インスタンス設定** をクリックします。
+1. **Platform** &rarr; **Feature Flags** セクションを開く。
 1. ベータの項目で、セマンティック検索を有効にする。
 
 ![Semantic search is a beta feature and must be enabled in Instance Settings.](./semantic-search/images/02.png)
@@ -91,7 +91,7 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__N
 1. 初めてセマンティック検索が可能に。
 1. セマンティック検索の設定で、テキスト埋め込みプロバイダー、モデル、ベクトル次元、テキスト切り捨て戦略を変更する。
 
-テキスト埋め込みにインデックスを付けるには、「インデックスアクション」画面を使用し、セマンティック検索システムまたはインスタンス設定の「アセットエントリクラス名」設定で有効にしているモデルタイプだけに_Reindex_ボタンをクリックします。
+テキスト埋め込みにインデックスを付けるには、「インデックスアクション」画面を使用し、セマンティック検索システムまたはインスタンス設定の「アセットエントリクラス名」設定で有効にしているモデルタイプだけに **Reindex** ボタンをクリックします。
 
 ## セマンティック検索の設定
 
@@ -105,19 +105,19 @@ LIFERAY_FEATURE_PERIOD_FLAG_PERIOD__UPPERCASEL__UPPERCASEP__UPPERCASES__MINUS__N
 
 **テキスト切り捨て戦略：** テキストの先頭（デフォルト）、中間、または末尾のいずれから変換前のサンプルを抽出するかを選択します。 この設定は、ソース・テキストが最大文字数より長い場合にのみ適用されます。 ストラテジーと最大文字数に応じて、タイトル/件名とコンテンツ/本文の一部をテキスト埋め込みに使用することができます。
 
-**Types:**変換するコンテンツタイプを選択します。デフォルトでは、Blogs Entry、Knowledge Base Article、Web Content Article、Wiki Page の 4 つのタイプが処理されます。掲示板 必要に応じて、メッセージエンティティを設定できます。
+**Types:** 変換するコンテンツタイプを選択します。デフォルトでは、Blogs Entry、Knowledge Base Article、Web Content Article、Wiki Page の 4 つのタイプが処理されます。掲示板 必要に応じて、メッセージエンティティを設定できます。
 
 ```{note}
 現在、基本的なウェブコンテンツ記事のみがサポートされています。
 ```
 
-**言語:** 変換する言語とローカライズを選択します。 デフォルトでは、リストされたすべての言語が選択されています。 リストから複数の言語を選択するには、_Ctrl + クリックします_。
+**言語:** 変換する言語とローカライズを選択します。 デフォルトでは、リストされたすべての言語が選択されています。 リストから複数の言語を選択するには、 **Ctrl + クリックします** 。
 
 ```{warning}
 言語を有効にしても、その言語用の文埋め込みが作成される保証はありません。 サイト内で使用可能な言語でなければならない。 システム/インスタンス設定で言語が有効になっており、サイト内で利用可能であるにもかかわらず、指定されたコンテンツに翻訳がない場合、デフォルトの翻訳がテキスト埋め込みを作成するために使用されます。
 ```
 
-**テキスト埋め込みキャッシュタイムアウト:**変換された検索キーワードのキャッシュタイムアウトをミリ秒単位で設定します。 キャッシュがタイムアウト内にある場合、Liferayはテキスト埋め込みプロバイダからキーワードのテキスト埋め込みを要求しません。 デフォルトでは、タイムアウトは604800ミリ秒（約10分）である。
+**テキスト埋め込みキャッシュタイムアウト:** 変換された検索キーワードのキャッシュタイムアウトをミリ秒単位で設定します。 キャッシュがタイムアウト内にある場合、Liferayはテキスト埋め込みプロバイダからキーワードのテキスト埋め込みを要求しません。 デフォルトでは、タイムアウトは604800ミリ秒（約10分）である。
 
 ## Liferayのセマンティック検索を理解する
 
@@ -141,7 +141,7 @@ Liferayのセマンティック検索は
     * LiferayはBlogs Entries、Knowledge Base Articles、Wiki Pages、Basic Web Content Articlesのタイトルとコンテンツを選択します。 メッセージ・ボードのメッセージでは、件名と本文のフィールドが処理されます。
  * [TEXT EMBEDDING PROVIDER] まず最初に、設定されたモデルに従ってスニペットが処理され、パラメータに従ってスニペットをトークン化する。 よく使用される BERT モデルでは、512 がモデルが扱うトークンの最大数である。 これは、システム/インスタンス設定のセマンティック検索 &rarr; 最大文字数設定で設定された文字数に影響されます。
 * [TEXT EMBEDDING PROVIDER] テキスト埋め込みと呼ばれるソースのベクトル表現は、変換器が使用するモデルに基づいて作成されます。
-  * [LIFERAY]を参照してください。テキスト埋め込み処理の結果は、 [Liferay Company Index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) 、各ドキュメント[^1]の[dense_vector](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/dense-vector.html) ]フィールドとして保存されます。
+  * [LIFERAY]を参照してください。テキスト埋め込み処理の結果は、 [Liferay Company Index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) 、各ドキュメント[^1]の [dense_vector](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/dense-vector.html) ]フィールドとして保存されます。
   * System/Instance Settingsの設定に従って、テキストスニペットがテキスト埋め込みプロバイダに送られ、テキスト埋め込みが行われ、トランスフォーマが使用するモデルに基づいてベクトル表現が作成される。 テキスト埋め込み処理の結果は、 [Liferay Company Index](../../search-administration-and-tuning/elasticsearch-indexes-reference.md) に、 [dense_vector](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/dense-vector.html) フィールドとしてドキュメントごとに格納されます[^1]。
 
 [^1]:ドキュメント内のフィールドを検査するには、 [Display Results in Document Form](../../search-pages-and-widgets/search-results/configuring-the-search-results-widget.md) 設定、または [Search Blueprints preview](./search-blueprints/creating-and-managing-search-blueprints.md#testing-a-blueprint-with-the-preview-sidebar) 機能を使用します。

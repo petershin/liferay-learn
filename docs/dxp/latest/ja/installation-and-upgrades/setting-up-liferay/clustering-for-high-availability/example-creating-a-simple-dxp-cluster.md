@@ -11,7 +11,7 @@ DXPクラスタリングを学習する簡単な方法は、 [Dockerコンテナ
 | DXPサーバー | Tomcat        | `dxp-2`         |
 
 ```{warning}
-この例は学習を目的としたものであり、本番環境のユースケースには適していません。 本番環境では、DXPサーバーへのリクエストの負荷分散用にHTTPサーバーを含め、読み取り専用操作と読み取り/書き込み操作に別々のデータベースサーバーを使用し、データベースサーバー、ファイルストアサーバー、および検索エンジンサーバーのクラスタリングと負荷分散を検討する必要があります。 詳細については、 [Clustering for High Availability](../clustering-for-high-availability.md) を参照してください。
+この例は学習を目的としたものであり、本番環境のユースケースには適していません。 本番環境では、DXPサーバーへのリクエストの負荷分散用にHTTPサーバーを含め、読み取り専用操作と読み取り/書き込み操作に別々のデータベースサーバーを使用し、データベースサーバー、ファイルストアサーバー、および検索エンジンサーバーのクラスタリングと負荷分散を検討する必要があります。 詳細については、 [高可用性のクラスタリング](../clustering-for-high-availability.md) を参照してください。
 ```
 
 主な手順は次のとおりです。
@@ -25,7 +25,7 @@ DXPクラスタリングを学習する簡単な方法は、 [Dockerコンテナ
 
 ## データベースサーバーを起動する
 
-DXPクラスターには、すべてのDXPクラスターノードからアクセスできるデータソースが必要です。 データソースは、JNDIデータソースにするか、データベースサーバーまたはデータベースサーバークラスターへの直接接続にすることができます。 DXP バージョンがサポートするデータベースサーバーについては、 [互換性マトリックス（](https://help.liferay.com/hc/en-us/articles/360049238151) ）を参照してください。
+DXPクラスターには、すべてのDXPクラスターノードからアクセスできるデータソースが必要です。 データソースは、JNDIデータソースにするか、データベースサーバーまたはデータベースサーバークラスターへの直接接続にすることができます。 DXP バージョンがサポートするデータベースサーバーについては、 [互換性マトリックス（](https://help.liferay.com/hc/ja/articles/360049238151) ）を参照してください。
 
 データベースサーバーとDXPデータベースを作成します。
 
@@ -209,7 +209,7 @@ Elasticsearchサーバーを作成して設定します。
 
 `--add-host [domain]:[IP address]`オプション [ドメイン名とIPアドレスを対応させる`/etc/hosts`ファイルエントリ](https://docs.docker.com/engine/reference/run/#managing-etchosts) を追加する。 これにより、設定（環境変数、ポータルのプロパティ、`.config\`ファイルなど）がドメイン名でサーバーを参照できるようになる。
 
-`-e [variable]=[value]` オプションは DXP コンテナの環境変数を設定する。 詳しくは[付録A：環境設定](#appendix-a-environment-settings) ]を参照のこと。
+`-e [variable]=[value]` オプションは DXP コンテナの環境変数を設定する。 詳しくは [付録A：環境設定](#appendix-a-environment-settings) ]を参照のこと。
 
 DXPクラスターノードコンテナには、このような独自の設定があります：
 
@@ -233,11 +233,11 @@ DXPクラスターノードは、次のURLで入手できます。
 
 ![DXP cluster nodes.](./example-creating-a-simple-dxp-cluster/images/01.png)
 
-各ノードのコンテナIDとポート（`Node: [id]:[port]`）は各ページの下部に表示される。 `LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=true`環境設定は、この表示機能を有効にした。 コンテナのIDは、[`docker container ls`](https://docs.docker.com/engine/reference/commandline/container_ls/) コマンドを使って見つけることができる。
+各ノードのコンテナIDとポート（`Node: [id]:[port]`）は各ページの下部に表示される。 `LIFERAY_WEB_PERIOD_SERVER_PERIOD_DISPLAY_PERIOD_NODE=true`環境設定は、この表示機能を有効にした。 コンテナのIDは、 [`docker container ls`](https://docs.docker.com/engine/reference/commandline/container_ls/) コマンドを使って見つけることができる。
 
 ### コンテンツを検索エンジンにインデックス付けする
 
-1. *コントロールパネル* &rarr; _設定_ &rarr; _検索_ に移動します。
+1._コントロールパネル_&rarr;_設定_&rarr;_検索_に移動します。
 
 1. Index Actionsタブで、_Reindex all search indexes_と_Reindex all spell check indexes_をクリックします。
 
@@ -270,7 +270,7 @@ DXPサーバーコンテナの例では、これらの設定を使用します�
 | LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_JNDI_PERIOD_NAME=                                                                                                     | データソースJNDI名                       |
 | LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_DRIVER_UPPERCASEC_LASS\\<br>_UPPERCASEN_AME=\\<br>org.mariadb.jdbc.Driver                                          | データベースドライバークラス                    |
 | LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_URL=\\<br>jdbc:mariadb://some-mariadb:3306/dxp_db?\\<br>useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false | データソースURL                         |
-| LIFERAY\_JDBC\_PERIOD\_DEFAULT\_PERIOD\_USERNAME=\\<br>root                                                                                                     | データベース管理者のユーザー名                   |
+| LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME=\\<br>root                                                                                                     | データベース管理者のユーザー名                   |
 | LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_USERNAME=\\<br>root | Database admin user name |
 | LIFERAY_JDBC_PERIOD_DEFAULT_PERIOD_PASSWORD=\\<br>my-secret-pw                                                                                         | データベース管理者ユーザーのパスワード               |
 | LIFERAY_CLUSTER_PERIOD_LINK_PERIOD_ENABLED=\\<br>true                                                                                                      | クラスタリンクを有効にする                     |

@@ -4,7 +4,7 @@ Liferay DXP/Portal 7.4では、モジュール言語キーは`portal-language-la
 
 ソースの場所：
 
-[`liferay-[dxp|portal]/modules/apps/portal-language/portal-language-lang`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang)
+[`liferay- [dxp|portal]/modules/apps/portal-language/portal-language-lang`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang)
 
 Liferay のモジュールは [`portal-language-lang`](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/portal-language/portal-language-lang/src/main/resources/content) の言語キーを使います。 ほとんどのキー名は保持されますが、多くのキーはモジュール固有の値に対応する複数の新しいキーにリファクタリングされています。
 

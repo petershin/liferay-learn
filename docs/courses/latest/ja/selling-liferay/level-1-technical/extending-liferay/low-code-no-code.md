@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # ローコード/ノーコードと統合によるLiferayの拡張
 
 **概要**
@@ -110,7 +115,7 @@ DocuSignは、電子署名される文書を管理するサービスである。
 
 ### ETLツール
 
-Liferayは、 [Talend](https://learn.liferay.com/web/guest/w/dxp/system-administration/data-integration/liferay-talend-components-overview)のようなETL（Exchange-Transform-Load）ツールと統合することができます。 LiferayのTalendコンポーネントのおかげで、顧客はLiferayとの間でデータをインポートおよびエクスポートできます。 例えば、ユーザーデータ、ウェブコンテンツ、商品などは、CRM、ERP、データベースなどの他のシステムからインポートしたり、他のシステムへエクスポートしたりすることができます。
+Liferayは、 [Talend](https://learn.liferay.com/web/guest/w/dxp/system-administration/data-integration/liferay-talend-components-overview) のようなETL（Exchange-Transform-Load）ツールと統合することができます。 LiferayのTalendコンポーネントのおかげで、顧客はLiferayとの間でデータをインポートおよびエクスポートできます。 例えば、ユーザーデータ、ウェブコンテンツ、商品などは、CRM、ERP、データベースなどの他のシステムからインポートしたり、他のシステムへエクスポートしたりすることができます。
 
 ### エンタープライズ・サービス・バス
 

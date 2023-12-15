@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # バイヤー・プロセスとセールス・プロセス
 
 **概要**

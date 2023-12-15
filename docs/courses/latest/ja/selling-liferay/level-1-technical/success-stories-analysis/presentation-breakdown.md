@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 水平ソリューションのプレゼンテーション
 
 **一目瞭然**

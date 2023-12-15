@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # その他の公開ページ
 
 **概要**

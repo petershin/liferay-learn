@@ -144,7 +144,7 @@
 
 ## ディストリビューター・アプリケーションのワークフローを有効にする
 
-1. グローバルメニュー](../../images/icon-applications-menu.png))を開き、[アプリケーション](*Applications*)タブに移動し、[プロセスビルダー](_Process Builder_)をクリックします。
+1. グローバルメニュー](../../images/icon-applications-menu.png))を開き、[アプリケーション](**Applications**)タブに移動し、[プロセスビルダー](**Process Builder**)をクリックします。
 
 1. 機械承認のプロセスが表示されることを確認する
 
@@ -158,25 +158,25 @@
 
 1. コンフィギュレーション*タブを開きます。
 
-1. Distributor Application」の「Edit*」をクリックし、「Machine Approver*」を選択し、「Save*」をクリックします。
+1. Distributor Application」の「Edit 」**をクリックし、「Machine Approver**」を選択し、「Save*」をクリックします。
 
 ## ワークフローのテスト
 
 1. Distributor Applicationsを開き、エントリーの編集を開始します。
 
-1. 状態を_Under Review_に設定し、_Save_をクリックする。
+1. 状態を **Under Review** に設定し、 **Save** をクリックする。
 
 1. エントリーのステータスを確認する。 承認されるべきだ。
 
    ![The entry's status should be Approved.](./adding-an-approval-workflow/images/03.png)
 
-1. エントリーの状態を_Approved_に変更する。
+1. エントリーの状態を **Approved** に変更する。
 
 1. エントリーのステータスを確認する。 保留中*であるべきだ。
 
    ![The entry's status should be Pending.](./adding-an-approval-workflow/images/04.png)
 
-1. 個人メニュー_を開き、_通知_に移動し、新しい_ワークフロー通知*をクリックします。
+1. 個人メニュー **を開き、** 通知 **に移動し、新しい** ワークフロー通知*をクリックします。
 
    ![View the workflow notification.](./adding-an-approval-workflow/images/05.png)
 

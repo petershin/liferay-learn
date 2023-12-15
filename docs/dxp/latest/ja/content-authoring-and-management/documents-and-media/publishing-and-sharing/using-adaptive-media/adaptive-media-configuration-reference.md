@@ -44,7 +44,7 @@
 
 | 項目       | 説明                                                                                                                                                        |
 | :------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Gifsicle | Gifsicleを有効にしてgifファイルを適応させることができます。 詳しくは [Enabling Optimization of Animated GIFs](../../devops/enabling-optimization-of-animated-gifs.md) を参照。 |
+| Gifsicle | Gifsicleを有効にしてgifファイルを適応させることができます。 詳しくは [アニメーションGIFの最適化を有効にする](../../devops/enabling-optimization-of-animated-gifs.md) を参照。 |
 
 ## ImageMagick
 

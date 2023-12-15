@@ -8,11 +8,11 @@ Liferay 7.2 以下では、コレクションは [コンテンツセット](../.
 
 1. [新規ページの作成](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) または [既存ページの編集](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md) 
 
-1. *Add* ( ![Add widget icon](../../../images/icon-add-widget.png) ) をクリックして、Fragments and Widgetsパネルを開きます。
+1. **Add**( ![Add widget icon](../../../images/icon-add-widget.png) ) をクリックして、Fragments and Widgetsパネルを開きます。
 
-1. ウィジェット]タブの[コンテンツ表示]カテゴリで、[_アセット・パブリッシャー_]ウィジェットをページの任意の場所にドラッグします。
+1. ウィジェット]タブの[コンテンツ表示]カテゴリで、[**アセット・パブリッシャー**]ウィジェットをページの任意の場所にドラッグします。
 
-1. Asset Publisherウィジェットの右上にある_Actions_ ([Actions icon.](../../../images/icon-actions.png)) をクリックします。
+1. Asset Publisherウィジェットの右上にある **Actions**( [Actions icon.](../../../images/icon-actions.png) ) をクリックします。
 
    ![Click Actions to access the Asset Publisher configuration options.](./selecting-assets-in-the-asset-publisher-widget/images/01.png)
 
@@ -22,9 +22,9 @@ Liferay 7.2 以下では、コレクションは [コンテンツセット](../.
 
    ![The configuration window has different Asset Selection options under the Setup tab.](selecting-assets-in-the-asset-publisher-widget/images/02.png)
 
-1. オプションとして、 [Dynamic](#dynamic) および [Manual](#manual) Asset Selection オプションが選択されている場合、_Create collection from this configuration_をクリックして新しいコレクションを作成できます。 これは新しい [コレクション](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) として設定を保存する。
+1. オプションとして、 [Dynamic](#dynamic) および [Manual](#manual) Asset Selection オプションが選択されている場合、 **Create collection from this configuration** をクリックして新しいコレクションを作成できます。 これは新しい [コレクション](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) として設定を保存する。
 
-7. アセットを選択し、ウィジェットを設定したら、_Save_をクリックします。
+7. アセットを選択し、ウィジェットを設定したら、 **Save** をクリックします。
 
 ## データ選択方法オプション
 
@@ -38,25 +38,25 @@ Asset Publisher ダイアログの Asset Selection セクションでは、さ�
 
 以前に保存したコレクションまたはコレクションプロバイダから選択するには、このオプションを選択します。 コレクションについて詳しくは、 [コレクションとコレクション・ページについて](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) をお読みください。
 
-1. Select Collection で、_Select_ をクリックします。
+1. Select Collection で、 **Select** をクリックします。
 
-1. Collections_または_Collections Providers*タブを選択します。
+1. Collections **または** Collections Providers*タブを選択します。
 
 1. 既存のコレクションまたはコレクションプロバイダーのいずれかを選択します。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ![Click Select and choose from your saved collections.](selecting-assets-in-the-asset-publisher-widget/images/03.png)
 
 ```{note}
-開発者は、コレクションプロバイダーを使用して、より高度な基準を持つ特定のコレクションを作成することができます。 詳細については、 [Infoフレームワーク](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 開発者ドキュメントの [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をお読みください。
+開発者は、コレクションプロバイダーを使用して、より高度な基準を持つ特定のコレクションを作成することができます。 詳細については、 [Infoフレームワーク](https://help.liferay.com/hc/ja/articles/360029067251-Introduction-to-The-Info-Framework) 開発者ドキュメントの [Creating an Information List Provider](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をお読みください。
 ```
 
 ### 動的
 
 動的アセット選択を使用すると、さまざまな基準に基づいてアセットをアセット・パブリッシャ・ウィジェットに自動的に含めることができます。
 
-1. ソースセクションで、アセットタイプドロップダウンメニューを使用してアセットを選択します。 特定のアセットタイプを選択するか、_Select More Than One_で異なるタイプから選択します。
+1. ソースセクションで、アセットタイプドロップダウンメニューを使用してアセットを選択します。 特定のアセットタイプを選択するか、 **Select More Than One** で異なるタイプから選択します。
 
 1. Scope（範囲）セクションで、個々のサイトまたは他のサイトのアセットを表示するかどうかを選択します。
 
@@ -78,7 +78,7 @@ Asset Publisher ダイアログの Asset Selection セクションでは、さ�
 
 1. 選択するアセットのタイプについて、含めるアセットにチェックを入れます。
 
-1. *追加*をクリックする。
+1. **追加** をクリックする。
 
 ![Here is an example of filtering for basic web content and manually selecting items](selecting-assets-in-the-asset-publisher-widget/images/05.png)
 

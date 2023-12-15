@@ -8,7 +8,7 @@
 
 同義語セットとは、同じ意味を持つ単語やフレーズを集めたものです。 管理者であるユーザーが同義語セットを作成し、検索ページのエンドユーザーがキーワードやフレーズを検索すると、セット内の同義語も検索されます。
 
-たとえば、ユーザーが「US」という単語を検索するとします。 おそらくユーザーは、_America_、_U.S.A_、_United States_などの同義語も含む検索結果を求めるだろう。 同義語セットを作成することで、ユーザーが検索を最大限に活用できるようになります。
+たとえば、ユーザーが「US」という単語を検索するとします。 おそらくユーザーは、 **America** 、 **U.S.A** 、 **United States** などの同義語も含む検索結果を求めるだろう。 同義語セットを作成することで、ユーザーが検索を最大限に活用できるようになります。
 
 ## 要求事項と制限事項
 
@@ -24,19 +24,19 @@ Elasticsearch でサポートされている [`=>` フォーマット](https://w
 
 新しい同義語セットを作成するには、
 
-1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))から _アプリケーション_ &rarr; _検索チューニング_ &rarr; _類義語_ に移動します。
+1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))から **アプリケーション** &rarr; **検索チューニング** &rarr; **類義語** に移動します。
 
    ![Navigate to the Synonyms section in the Applications menu](synonym-sets/images/01.png)
 
-1. 新しい類義語セットを追加するには、_追加_アイコン（[追加アイコンをクリック](../../images/icon-add.png)）をクリックします。
+1. 新しい類義語セットを追加するには、 **追加** アイコン（ [追加アイコンをクリック](../../images/icon-add.png) ）をクリックします。
 
-1. セット内の同義語のリストを入力します。 同義語の入力は、_Enter_をクリックするか、カンマを入力することで行える。
+1. セット内の同義語のリストを入力します。 同義語の入力は、 **Enter** をクリックするか、カンマを入力することで行える。
 
    ![Type your different synonym words into the set.](synonym-sets/images/02.png)
 
-1. 同義語の横にある_X_をクリックすると、同義語を削除することができます。 セットが完了したら、_Publish_をクリックします。
+1. 同義語の横にある **X** をクリックすると、同義語を削除することができます。 セットが完了したら、 **Publish** をクリックします。
 
-1. セットを編集または削除するには、_Options_アイコン(![オプションアイコンをクリックしてください。](../../images/icon-options.png))をクリックし、_Edit_または_Delete_をクリックします。
+1. セットを編集または削除するには、 **Options** アイコン(![オプションアイコンをクリックしてください。](../../images/icon-options.png))をクリックし、 **Edit** または **Delete** をクリックします。
 
    ![Click on edit or delete to make changes.](synonym-sets/images/03.png)
 
@@ -56,7 +56,7 @@ Elasticsearch でサポートされている [`=>` フォーマット](https://w
 
 Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-limitations) の同義語をサポートします。 他の言語に対応するためには、以下のような設定が必要です。
 
-- デフォルトの[French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer)解析器に必要な変更を加えて再実装し、[カスタム解析器](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html)を作成する（パイプラインに追加の[Synonym graph token filter](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-synonym-graph-tokenfilter.html)を含む）。
+- デフォルトの [French](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-lang-analyzer.html#french-analyzer) 解析器に必要な変更を加えて再実装し、 [カスタム解析器](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/analysis-custom-analyzer.html) を作成する（パイプラインに追加の [Synonym graph token filter](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/analysis-synonym-graph-tokenfilter.html) を含む）。
 - コネクタ構成の追加インデックス設定を使用して、カスタム・アナライザー定義をインデックス設定に追加します。
 - コネクタ構成の［タイプマッピングを上書き］設定を使用して、Liferay DXPのデフォルトのタイプマッピングをオーバーライドして、目的のフィールドにカスタム・アナライザーを適用します。
 - 新しい設定を適用するためにインデックスを再作成します。
@@ -67,7 +67,7 @@ Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-
 
 実行中のLiferayからマッピングを取得する、
 
-1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_コントロールパネル_ &rarr; _検索_に進みます。
+1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 **コントロールパネル** &rarr; **検索** に進みます。
 1. フィールドマッピング_タブをクリックする。
 1. マッピングをコピーし (![Copy](../../images/icon-copy.png)) 、保存する。
 
@@ -185,7 +185,7 @@ Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-
 
 1. カスタムフィルター名（例：`custom-synonym-filter-fr`）をフィルター名設定に追加し、設定を保存する。
 
-1. 完全な リ イ ンデ ッ ク ス を実行 ： コ ン ト ロール パネル &rarr; Search &rarr; Index Actions で、 All Search Indexes の _Reindex_ をク リ ック。
+1. 完全な リ イ ンデ ッ ク ス を実行 ： コ ン ト ロール パネル &rarr; Search &rarr; Index Actions で、 All Search Indexes の **Reindex** をク リ ック。
 
    カスタムマッピングが正常に適用されたことを確認するには、フィールドマッピングタブに移動し、インデックス（例えば `liferay-20101`）を選択し、右側のパネルで `template_fr` を探します。
 
@@ -193,12 +193,12 @@ Synonyms Setsは、すぐに [英語とスペイン語のみ](#requirements-and-
 
 新しいフィルターが動作していることを確認するため。
 
-1. グローバルメニューのアプリケーションタブで、_Synonyms_（サーチチューニングの下）をクリックします。
+1. グローバルメニューのアプリケーションタブで、 **Synonyms**（サーチチューニングの下）をクリックします。
 
 1. 新しい類義語セットを作成する： `maison, logement`.
 
-1. 英語とフランス語の翻訳付きのウェブコンテンツ記事を作成します。 フランス語のタイトルに_maison_を加える。
+1. 英語とフランス語の翻訳付きのウェブコンテンツ記事を作成します。 フランス語のタイトルに **maison** を加える。
 
-1. 英語とフランス語の翻訳付きで、別のWebコンテンツ記事を作成します。 フランス語のタイトルに_logement_を加える。
+1. 英語とフランス語の翻訳付きで、別のWebコンテンツ記事を作成します。 フランス語のタイトルに **logement** を加える。
 
-1. フランス語のロケールに切り替え、_maison_を検索する。 両方の記事が返されます。
+1. フランス語のロケールに切り替え、 **maison** を検索する。 両方の記事が返されます。

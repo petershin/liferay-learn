@@ -5,6 +5,9 @@ toc:
   - ./outbound-prospecting/data-enrichment.md
   - ./outbound-prospecting/social-media.md
   - ./outbound-prospecting/persistence-measurement.md
+visibility:
+- Employee
+- Partner
 ---
 # アウトバウンド・プロスペクティング入門
 

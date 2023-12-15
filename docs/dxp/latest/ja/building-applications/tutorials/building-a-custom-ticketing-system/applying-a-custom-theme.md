@@ -10,17 +10,17 @@
    ./gradlew :client-extensions:liferay-ticket-theme-css:deploy
    ```
 
-1. Liferayで_Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) を選択し、_Site Builder_ &rarr; _Pages_に移動します。
+1. Liferayで **Product Menu**(![Product Menu](../../../images/icon-product-menu.png)) を選択し、 **Site Builder** &rarr; **Pages** に移動します。
 
-1. グローバルメニューの右上にある_Options_（！[オプションアイコン](../../../images/icon-options.png)）をクリックし、_Configuration_をクリックします。
+1. グローバルメニューの右上にある **Options**（！ [オプションアイコン](../../../images/icon-options.png) ）をクリックし、 **Configuration** をクリックします。
 
-1. テーマCSSクライアント拡張セクションまでスクロールダウンし、_Add_ (![Add icon](../../../images/icon-plus.png)) をクリックします。
+1. テーマCSSクライアント拡張セクションまでスクロールダウンし、 **Add**(![Add icon](../../../images/icon-plus.png)) をクリックします。
 
 1. 配置されたTickets Theme CSSを選択します。
 
    ![Select the ticket theme css client extension.](./applying-a-custom-theme/images/01.png)
 
-1. 一番下までスクロールし、「保存」をクリックします。 製品メニューで、_Home_をクリックします。 カスタムテーマが適用されました。
+1. 一番下までスクロールし、「保存」をクリックします。 製品メニューで、 **Home** をクリックします。 カスタムテーマが適用されました。
 
 ## カスタムテーマのCSSコードを調べる
 
@@ -42,7 +42,7 @@ liferay-ticket-theme-css:
     type: themeCSS
 ```
 
-各プロパティの説明は [Theme CSS YAML Configuration Reference](../../../building-applications/client-extensions/front-end-client-extensions/theme-css-yaml-configuration-reference.md) を参照してください。
+各プロパティの説明は [テーマのCSS YAML設定リファレンス](../../../building-applications/client-extensions/front-end-client-extensions/theme-css-yaml-configuration-reference.md) を参照してください。
 
 テーマのカスタマイズは、`/src/css`フォルダ内の2つのファイルに表示されます。
 

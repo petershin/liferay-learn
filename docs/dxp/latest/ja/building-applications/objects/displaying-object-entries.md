@@ -22,19 +22,19 @@ Liferay Objectでは、既存のDXPフレームワークを使用して、オブ
 
 次の手順を実行します：
 
-1. [サイトメニュー](../../images/icon-menu.png))を開き、_デザイン_を展開し、_ページテンプレート_に移動します。
+1. [サイトメニュー](../../images/icon-menu.png) )を開き、 **デザイン** を展開し、 **ページテンプレート** に移動します。
 
-1. *表示ページテンプレート*タブをクリックします。
+1. **表示ページテンプレート** タブをクリックします。
 
-1. *追加*ボタン(![追加ボタン](../../images/icon-add.png))をクリックし、_空白_テンプレートを選択します。
+1. **追加** ボタン(![追加ボタン](../../images/icon-add.png))をクリックし、 **空白** テンプレートを選択します。
 
    これにより、モーダルウィンドウが開きます。
 
-1. _名前_を入力し、コンテンツタイプに必要な_オブジェクト*を選択します。
+1. **名前** を入力し、コンテンツタイプに必要な_オブジェクト*を選択します。
 
    ![Enter a name and select the desired Object for Content Type](./displaying-object-entries/images/01.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
    これにより、選択したオブジェクトをデフォルトのマッピングソースとする空白のテンプレートが作成され、テンプレートの編集ページにリダイレクトされます。
 
@@ -48,9 +48,9 @@ Liferay Objectでは、既存のDXPフレームワークを使用して、オブ
    オブジェクト定義のコメントを有効にする必要があります。 そうでない場合は、ウィジェットは表示ページで非表示になります。
    ```
 
-1. 完了したら、_Publish_をクリックします。
+1. 完了したら、 **Publish** をクリックします。
 
-1. テンプレートの_Actions_ボタン(![Actions Button](../../images/icon-actions.png)) をクリックし、_Mark as Default_を選択します。
+1. テンプレートの **Actions** ボタン(![Actions Button](../../images/icon-actions.png)) をクリックし、 **Mark as Default** を選択します。
 
    このテンプレートは、ユーザーがフレンドリURLにアクセスするたびに、オブジェクトのエントリーをレンダリングするために使用されます。
 
@@ -58,33 +58,33 @@ Liferay Objectでは、既存のDXPフレームワークを使用して、オブ
 
 ### コメントの有効化
 
-1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブに移動し、_オブジェクト_をクリックします。
+1. グローバルメニュー(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 **コントロールパネル** タブに移動し、 **オブジェクト** をクリックします。
 
 1. オブジェクト定義を編集します。
 
-1. Detailsタブでコメントを有効にし、_Save_をクリックする。
+1. Detailsタブでコメントを有効にし、 **Save** をクリックする。
 
    ![Enable comments.](./displaying-object-entries/images/04.png)
 
 ## オブジェクトの情報テンプレートの作成
 
-1. サイトメニュー](../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _テンプレート_ &rarr; _情報テンプレート_に移動します。
+1. サイトメニュー](../../images/icon-product-menu.png))を開き、 **デザイン** &rarr; **テンプレート** &rarr; **情報テンプレート** に移動します。
 
 1. 追加*をクリック(![追加ボタン](../../images/icon-add.png))
 
-1. 名前_を入力し、目的の_オブジェクト*を選択します。
+1. 名前 **を入力し、目的の** オブジェクト*を選択します。
 
    ![Enter a name and select the desired Object.](./displaying-object-entries/images/05.png)
 
-1. ［_保存_］をクリックします。 これにより、テンプレートデザインページにリダイレクトされます。
+1. ［**保存**］をクリックします。 これにより、テンプレートデザインページにリダイレクトされます。
 
-1. (オプション) アプリケーションバーのアクション(![アクションボタン](../../images/icon-actions.png))をクリックし、_スクリプトのインポート_を選択し、インポートする`.ftl`ファイルを選択します。 これにより、現在のテンプレートがファイルのFreeMarkerスクリプトに置き換えられます。
+1. (オプション) アプリケーションバーのアクション(![アクションボタン](../../images/icon-actions.png))をクリックし、 **スクリプトのインポート** を選択し、インポートする`.ftl`ファイルを選択します。 これにより、現在のテンプレートがファイルのFreeMarkerスクリプトに置き換えられます。
 
    ![Import script from an .ftl file.](./displaying-object-entries/images/06.png)
 
 1. [FreeMarker](https://freemarker.apache.org) を使用してテンプレートをデザインします。
 
-   *Elements*サイドパネル（[Elements](../../images/icon-list-ul.png)）では、選択したObjectの構造から利用可能なフィールドにアクセスすることができます。
+   **Elements** サイドパネル（ [Elements](../../images/icon-list-ul.png) ）では、選択したObjectの構造から利用可能なフィールドにアクセスすることができます。
 
    ![Select from available fields in the Object's structure.](./displaying-object-entries/images/07.png)
 
@@ -92,7 +92,7 @@ Liferay Objectでは、既存のDXPフレームワークを使用して、オブ
 
    ![Add a description or image in the Properties panel.](./displaying-object-entries/images/08.png)
 
-1. 終了したら、_保存_をクリックします。
+1. 終了したら、 **保存** をクリックします。
 
 オブジェクトエントリーをフラグメントフィールドにマッピングするときに、テンプレートから選択できるようになりました。
 
@@ -100,11 +100,11 @@ Liferay Objectでは、既存のDXPフレームワークを使用して、オブ
 
 ## ナビゲーションメニューへのエントリの追加
 
-オブジェクトは情報フレームワークと統合されているため、ナビゲーションメニューにオブジェクトのエントリを追加して、素早くアクセスできるようにすることができます。 すべての公開オブジェクトは、メニュー要素で利用可能なソースとして自動的に表示されます。 詳しくは、 [Using the Navigation Menus Application](../../site-building/site-navigation/using-the-navigation-menus-application.md) をご覧ください。
+オブジェクトは情報フレームワークと統合されているため、ナビゲーションメニューにオブジェクトのエントリを追加して、素早くアクセスできるようにすることができます。 すべての公開オブジェクトは、メニュー要素で利用可能なソースとして自動的に表示されます。 詳しくは、 [ナビゲーションメニューアプリケーションの使用](../../site-building/site-navigation/using-the-navigation-menus-application.md) をご覧ください。
 
 ## 関連トピック
 
-* [Creating Objects](./creating-and-managing-objects/creating-objects.md)
+* [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)
 * [コレクションプロバイダーによるオブジェクトエントリーの表示](./displaying-object-entries-with-collection-providers.md)
 * [コレクションとコレクション・ページについて](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
 * [表示ページテンプレートの使用](../../site-building/displaying-content/using-display-page-templates.md)

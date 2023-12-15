@@ -4,19 +4,19 @@
 
 ## 在庫数の見積もりの作成
 
-1. [グローバルメニュー](../images/icon-applications-menu.png)を開き、_Commerce_ &rarr; _Availability Estimates_に移動します。
+1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、 **Commerce** &rarr; **Availability Estimates** に移動します。
 
-1. *追加* (![追加ボタン](../images/icon-add.png))をクリックします。
+1. **追加**(![追加ボタン](../images/icon-add.png))をクリックします。
 
    ![Click the Add button to create a new availability estimate.](./availability-estimates/images/01.png)
 
-1. *タイトル*を入力してください。 これには、商品が再入荷するまでの推定時間（例：3-5日、3-4週間、2-3ヶ月）を記載する必要があります。
+1. **タイトル** を入力してください。 これには、商品が再入荷するまでの推定時間（例：3-5日、3-4週間、2-3ヶ月）を記載する必要があります。
 
-1. 見積もりの表示順を決定するために_優先順位_を入力してください。
+1. 見積もりの表示順を決定するために **優先順位** を入力してください。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
-一度作成すると、_Display Availability_を有効にした商品に追加することができます。 製品の_Configuration_タブに移動し、ドロップダウンから必要な_Availability Estimate_を選択し、_Publish_をクリックします。
+一度作成すると、 **Display Availability** を有効にした商品に追加することができます。 製品の **Configuration** タブに移動し、ドロップダウンから必要な **Availability Estimate** を選択し、 **Publish** をクリックします。
 
 ![Select the desired availability estimate.](./availability-estimates/images/02.png)
 
@@ -28,22 +28,22 @@
 
 新規に在庫数の見積もりを作成するには：
 
-1. *コントロールパネル* &rarr; _Commerce_ &rarr; _Settings_に移動します。
+1. **コントロールパネル** &rarr; **Commerce** &rarr; **Settings** に移動します。
 
-1. *稼働率見積もり*タブをクリックします。
+1. **稼働率見積もり** タブをクリックします。
 
-1. *追加* (![追加ボタン](../images/icon-add.png))をクリックし、以下の情報を入力します：
+1. **追加**(![追加ボタン](../images/icon-add.png))をクリックし、以下の情報を入力します：
 
    * **タイトル：** 15-21日
    * **優先度：** 4.0
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 これにより、新規の在庫数の見積もりが作成されます。 優先度値が4.0であれば、ドロップダウンメニューにおいて、新しい見積りが既存の在庫数の見積もりの下に表示されます。 その下に表示できるのは、優先度5.0以上の見積もりだけです。
 
 ![Creating a new availability estimate.](./availability-estimates/images/04.png)
 
-これを使用するには、製品の_Configuration_タブに移動し、_Display Availability_オプションを有効にし、ドロップダウンから必要な_Availability Estimate_を選択し、_Publish_をクリックします。
+これを使用するには、製品の **Configuration** タブに移動し、 **Display Availability** オプションを有効にし、ドロップダウンから必要な **Availability Estimate** を選択し、 **Publish** をクリックします。
 
 ![Activate the Display Availability toggle and select an availability estimate from the drop-down.](./availability-estimates/images/05.png)
 

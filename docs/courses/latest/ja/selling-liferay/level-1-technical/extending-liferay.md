@@ -2,6 +2,9 @@
 toc:
   - ./extending-liferay/low-code-no-code.md
   - ./extending-liferay/client-extensions.md
+visibility:
+- Employee
+- Partner
 ---
 # Liferayの拡張
 
@@ -25,8 +28,8 @@ Liferay DXPは、フル機能のデジタルエクスペリエンスプラット
 このモジュールでは、顧客のニーズを満たすためにLiferayを拡張、設定、カスタマイズするために使用できる主要なアプローチを概説します。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf)からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) からダウンロードしてください。
 ```
 
 ## 伝統的なカスタマイズ
@@ -66,7 +69,7 @@ Liferay DXPを拡張する1つの方法として、すぐに使える様々な�
 
 ![Liferayのページビルダーは、個々のページを構築するために使用される幅広いフラグメントをページ作成者に提供します。](./extending-liferay/images/02.png)
 
-Liferayのドラッグアンドドロップインターフェースのおかげで、ページへのフラグメントの追加や、追加後の設定は、技術的な専門知識に関係なく、誰にでもできる簡単なプロセスです。 また、あらかじめ設定されたフラグメントのセットを、 [Fragment Compositions](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions)として保存することもでき、これを他のページに追加することで、類似ページの作成プロセスを短縮することができる。
+Liferayのドラッグアンドドロップインターフェースのおかげで、ページへのフラグメントの追加や、追加後の設定は、技術的な専門知識に関係なく、誰にでもできる簡単なプロセスです。 また、あらかじめ設定されたフラグメントのセットを、 [Fragment Compositions](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) として保存することもでき、これを他のページに追加することで、類似ページの作成プロセスを短縮することができる。
 
 **ページフラグメントの開発**
 

@@ -29,7 +29,7 @@ com/liferay/blogs/web/internal/portlet/BlogsPortlet.java`
 `liferay-portal/modules/apps/blogs/blogs-web/src/main/java/
 com/liferay/blogs/web/internal/portlet/BlogsViewMVCRenderCommand.java`
 
-ポートレットコンポーネントが*view-template*のリストを作成していない場合、通常、MVCRenderCommandがエントリ.jspファイルにディスパッチしていることを意味します。*BlogsViewMVCRenderCommand*は、/と/blogs/viewの両方に対して、*/blogs/view.jsp*へのディスパッチを処理します。
+ポートレットコンポーネントが **view-template** のリストを作成していない場合、通常、MVCRenderCommandがエントリ.jspファイルにディスパッチしていることを意味します。 **BlogsViewMVCRenderCommand** は、/と/blogs/viewの両方に対して、 **/blogs/view.jsp** へのディスパッチを処理します。
 
 ## ビュー.jsp
 

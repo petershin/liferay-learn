@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # ポータル製品とLiferayのカスタマイズ
 
 **概要**

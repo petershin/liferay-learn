@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.1と7.2`
 
-Liferay 7.3と7.4はElasticsearch 7をすぐにサポートします。 お使いの Liferay インストールで利用可能な最新の検索エンジンのバージョンは、 [Search Engine Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360016511651) をご覧ください。
+Liferay 7.3と7.4はElasticsearch 7をすぐにサポートします。 お使いの Liferay インストールで利用可能な最新の検索エンジンのバージョンは、 [Search Engine Compatibility Matrix](https://help.liferay.com/hc/ja/articles/360016511651) をご覧ください。
 
 Liferay 7.2 では、Elasticsearch 7 は [Liferay Connector to Elasticsearch 7](https://web.liferay.com/marketplace/-/mp/application/170390307) (version `3.x`) を介してサポートされています。 Liferay 7.3以降へのアップグレード、または既存の7.2検索エンジンをElasticsearch 7に移行する場合、Elasticsearchサーバーをアップグレードする必要があります。 新しいLiferay7.2システムをセットアップするには、Elasticsearch 7をインストールし、 [インストールガイド](../getting-started-with-elasticsearch.md) に従います。
 
@@ -26,9 +26,9 @@ Elasticsearchをアップグレードする前に、既存のデータをバッ�
    xpack.security.enabled: true
    ```
 
-   セキュリティ設定の範囲の詳細については、 [Securing Elasticsearch](../securing-elasticsearch.md) を参照してください。
+   セキュリティ設定の範囲の詳細については、 [Elasticsearchの保護](../securing-elasticsearch.md) を参照してください。
 
-1. \[7.2 only\]. [同梱の Liferay Connector to Elasticsearch 6](#blacklisting-elasticsearch-6) をブラックリストに登録し、[install](../connecting-to-elasticsearch.md#install-the-elasticsearch-7-connector) the Connector to Elasticsearch 7.
+1. \[7.2 only\]. [同梱の Liferay Connector to Elasticsearch 6](#blacklisting-elasticsearch-6) をブラックリストに登録し、 [install](../connecting-to-elasticsearch.md#install-the-elasticsearch-7-connector) the Connector to Elasticsearch 7.
 
 1. Connector to Elasticsearch 7を設定してElasticsearchに接続します。
 
@@ -75,11 +75,11 @@ LiferayがElasticsearchクラスターに接続されたら、Liferayを再起�
 
 1. Liferayを再起動します。
 
-1. 会社、システム、およびスペルチェックのインデックスを再作成します。 グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))から、_コントロールパネル_ &rarr; _設定_ &rarr; _検索_ に移動します。 すべての検索インデックス(All Search Indexes)]項目の[再インデックス(Reindex)]をクリックします。
+1. 会社、システム、およびスペルチェックのインデックスを再作成します。 グローバルメニュー(![グローバルメニュー](../../../../images/icon-applications-menu.png))から、 **コントロールパネル** &rarr; **設定** &rarr; **検索** に移動します。 すべての検索インデックス(All Search Indexes)]項目の[再インデックス(Reindex)]をクリックします。
 
-1. [Workflow Metrics indexes](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) : Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)) から _Applications_ &rarr; _Workflow---Metrics_ に移動します。 設定メニュー (![Options](../../../../images/icon-options.png)) を開き、_Reindex All_ をクリックします。 各仮想インスタンスについて、この作業を繰り返します。
+1. [Workflow Metrics indexes](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) : Global Menu (![Global Menu](../../../../images/icon-applications-menu.png)) から **Applications** &rarr; **Workflow---Metrics** に移動します。 設定メニュー (![Options](../../../../images/icon-options.png)) を開き、 **Reindex All** をクリックします。 各仮想インスタンスについて、この作業を繰り返します。
 
-これにより、Liferayデータベースに保存されているデータから作成されたインデックスが復元されます。 プライマリストレージとして使用されるインデックスを復元するには、 [Backing Up Elasticsearch](./backing-up-elasticsearch.md) を参照してください。
+これにより、Liferayデータベースに保存されているデータから作成されたインデックスが復元されます。 プライマリストレージとして使用されるインデックスを復元するには、 [Elasticsearchのバックアップ](./backing-up-elasticsearch.md) を参照してください。
 
 ## Liferay 7.2：Elasticsearch 6への復帰
 

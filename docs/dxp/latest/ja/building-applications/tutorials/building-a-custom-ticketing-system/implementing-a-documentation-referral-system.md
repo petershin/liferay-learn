@@ -12,7 +12,7 @@
    ./gradlew :client-extensions:liferay-ticket-batch-object-definition:deploy
    ```
 
-   なお、 [オブジェクトアクション](../../../building-applications/objects/creating-and-managing-objects/actions.md) は、UIからも有効にできる。 Liferayで_Control Panel_ &rarr; _Objects_に移動します。 Ticket_オブジェクトをクリックし、_Actions_タブをクリックします。 アクションが`active`であることを確認する。
+   なお、 [オブジェクトアクション](../../../building-applications/objects/creating-and-managing-objects/actions.md) は、UIからも有効にできる。 Liferayで **Control Panel** &rarr; **Objects** に移動します。 Ticket **オブジェクトをクリックし、** Actions_タブをクリックします。 アクションが`active`であることを確認する。
 
    ![Object action is active.](./implementing-a-documentation-referral-system/images/01.png)
 
@@ -34,7 +34,7 @@
 
 1. チケットシステムのサイトページに戻ります。 新しいチケットを作成する」をクリックします。 新しいチケットが生成されます。
 
-1. グローバルメニュー_ &rarr; _コントロールパネル_ &rarr; _J3Y7 チケット_ に移動します。 チケットリストの右側にスクロールしてください。 生成されたチケットの_オプション_(![オプションアイコン](../../../images/icon-options.png))をクリックし、_表示_をクリックします。
+1. **グローバルメニュー**&rarr;** コントロールパネル*&rarr; **J3Y7 チケット**に移動します。 チケットリストの右側にスクロールしてください。 生成されたチケットの **オプション** (![オプションアイコン](../../../images/icon-options.png))をクリックし、**表示**をクリックします。
 
    提案欄までスクロールダウンする。 紹介システムに関連文書へのリンクが含まれていることを確認する。
 
@@ -75,13 +75,13 @@ liferay-ticket-etc-spring-boot-object-action-ticket:
     type: objectAction
 ```
 
-resourcePath`パラメータはマイクロサービスが実行されるエンドポイントを定義する。 oAuth2ApplicationExternalReferenceCode` パラメータは以前の OAuth2 アプリケーションの設定を参照する。
+`resourcePath`パラメータはマイクロサービスが実行されるエンドポイントを定義する。 oAuth2ApplicationExternalReferenceCode` パラメータは以前の OAuth2 アプリケーションの設定を参照する。
 
 各プロパティの説明については、 [Object Action Yaml Configuration](../../../building-applications/client-extensions/microservice-client-extensions/object-action-yaml-configuration-reference.md) を参照してください。
 
 アプリケーションに関連するSpring Bootファイルは、`/src`フォルダに含まれている。 Javaコードの完全な説明はこのチュートリアルの範囲を超えているが、注意すべき点がいくつかある：
 
-* ObjectActionTicketRestController.java`ファイルの`@PostMapping` アノテーションは上の YAML ファイルで参照されているリソースパスにマッチします。 新しいチケットオブジェクトが作成されると、オブジェクトアクションはこのパスでマイクロサービスをトリガーし、参照結果が Liferay に返されます。
+* `ObjectActionTicketRestController.java`ファイルの`@PostMapping` アノテーションは上の YAML ファイルで参照されているリソースパスにマッチします。 新しいチケットオブジェクトが作成されると、オブジェクトアクションはこのパスでマイクロサービスをトリガーし、参照結果が Liferay に返されます。
 
 * 参照検索ロジックもこの `ObjectActionTicketRestController.java` ファイルにある。 ロジックの中で、 [learn.liferay.com](https://learn.liferay.com) から関連する記事が見つかり、チケットオブジェクトエントリーに追加されます。
 

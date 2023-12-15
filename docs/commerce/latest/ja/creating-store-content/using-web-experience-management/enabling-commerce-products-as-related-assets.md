@@ -8,11 +8,11 @@ Liferay DXP 7.4+は、関連資産としてのコマース製品をサポート�
 
 ## データベースの検索のためにアセットブラウザーを設定する
 
-1. [Liferay Home]に移動します。 `Liferay Home` フォルダの詳細については、[Liferay Home](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) を参照してください。
-1. Liferay Web Experience - Liferay Asset - Impl.lpkg` を探し、アーカイブマネージャで開きます。
+1. [Liferay Home]に移動します。 `Liferay Home` フォルダの詳細については、 [Liferay Home](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/liferay-home.html) を参照してください。
+1. `Liferay Web Experience - Liferay Asset - Impl.lpkg` を探し、アーカイブマネージャで開きます。
 1. アーカイブマネージャーウィンドウで、`com.liferay.asset.browser.web.jar`を開きます。
 1. テキストエディタを使って、`portlet.properties`ファイルを開きます。
-1. search.with.database=true`を設定し、jarを更新する。
+1. `search.with.database=true`を設定し、jarを更新する。
 1. アプリケーションサーバーを再起動します。
 
 ```{note}
@@ -23,16 +23,16 @@ Liferay DXP 7.4+は、関連資産としてのコマース製品をサポート�
 
 インデックスの再構築を行い、関連するアセットがフィルターに入力されていることを確認します。
 
-1. _コントロールパネル_ &rarr; _設定_ &rarr; _検索_ に移動します。
-1. All Search Indexesの隣にある_Reindex_をクリックする。
+1. **コントロールパネル** &rarr; **設定** &rarr; **検索** に移動します。
+1. All Search Indexesの隣にある **Reindex** をクリックする。
 
 ## コマース製品の在庫状況の確認
 
-コマース製品はデフォルトではすべてのLiferay DXPサイトで利用可能なので、フィルタを_Global_に変更する必要があります。
+コマース製品はデフォルトではすべてのLiferay DXPサイトで利用可能なので、フィルタを **Global** に変更する必要があります。
 
-1. サイト管理_ &rarr; _コンテンツ_ &rarr; _ウェブコンテンツ_をクリックしてください。
+1. サイト管理 **&rarr;** コンテンツ **&rarr;** ウェブコンテンツ_をクリックしてください。
 
-1. (![アイコンの追加](../../images/icon-add.png))アイコンをクリックし、次に_基本ウェブコンテンツ_をクリックします。
+1. (![アイコンの追加](../../images/icon-add.png))アイコンをクリックし、次に **基本ウェブコンテンツ** をクリックします。
 
 1. 「関連資産」セクションまでスクロールダウンしてください。
 
@@ -53,4 +53,4 @@ Liferay DXP 7.4+は、関連資産としてのコマース製品をサポート�
 ## 関連トピック
 
 * [コンテンツの関係の定義](https://help.liferay.com/hc/articles/360028820532-Defining-Content-Relationships)
-* [基本的なウェブコンテンツ記事の追加](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)
+* [基本Webコンテンツ記事の追加](https://learn.liferay.com/dxp/latest/ja/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html)

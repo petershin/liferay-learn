@@ -4,19 +4,19 @@
 
 チャンネルを作成する、
 
-1. グローバルメニュー([グローバルメニュー](../../images/icon-applications-menu.png))を開き、_Commerce_ → _Channels_に移動します。
+1. グローバルメニュー( [グローバルメニュー](../../images/icon-applications-menu.png) )を開き、 **Commerce** → **Channels** に移動します。
 
-1. *追加* (![Add](../../images/icon-add.png)) をクリックし、以下の詳細を入力します：
+1. **追加**(![Add](../../images/icon-add.png)) をクリックし、以下の詳細を入力します：
 
    **クラリティB2C**
 
-   **通貨：**米ドル
+   **通貨：** 米ドル
 
-   **タイプ：**サイト
+   **タイプ：** サイト
 
    ![Enter the name, currency, and type for the channel.](./creating-and-configuring-channels/images/01.png)
 
-1. *追加*をクリックする。
+1. **追加** をクリックする。
 
 これにより、B2Cストアに新たなチャネルが生まれる。 B2Bチャネルを以下の情報で作成するために、ステップを繰り返します。
 
@@ -30,13 +30,13 @@
 
 B2Cチャネルでは、支払い方法、配送方法を設定し、サイトタイプがB2Cに設定されていることを確認します。
 
-1. Details "セクションで、"Commerce Site Type "を "_B2C_"に設定する。 [サイトタイプ](/w/commerce/starting-a-store/sites-and-site-types#site-types) がB2Cの場合、サイト内のアカウントはすべて個人アカウントでなければなりません。
+1. Details "セクションで、"Commerce Site Type "を " **B2C** "に設定する。 [サイトタイプ](/w/commerce/starting-a-store/sites-and-site-types#site-types) がB2Cの場合、サイト内のアカウントはすべて個人アカウントでなければなりません。
 
-1. Type*タブを選択し、_Select Site_をクリックします。
+1. Type **タブを選択し、***Select Site** をクリックします。
 
 1. クラリティB2C*サイトを選ぶ
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 このチャネルを使用して、お客様のサイトからの注文を受け付けることができます。
 
@@ -54,7 +54,7 @@ B2Cチャネルでは、支払い方法、配送方法を設定し、サイト�
 
 1. アプリの作成*をクリックします。
 
-1. 名前に_Clarity_と入力し、タイプを_Merchant_とする。
+1. 名前に **Clarity** と入力し、タイプを **Merchant** とする。
 
 1. アプリの作成*をクリックします。
 
@@ -64,21 +64,21 @@ B2Cチャネルでは、支払い方法、配送方法を設定し、サイト�
 
    ![Copy the client ID and secret key.](./creating-and-configuring-channels/images/03.png)
 
-1. さて、Liferayインスタンスに戻りましょう。 グローバルメニュー([グローバルメニュー](../../images/icon-applications-menu.png))を開き、_Commerce_ → _Channels_に移動します。
+1. さて、Liferayインスタンスに戻りましょう。 グローバルメニュー( [グローバルメニュー](../../images/icon-applications-menu.png) )を開き、 **Commerce** → **Channels** に移動します。
 
 1. クラリティB2C*を選択してください。
 
-1. 支払い方法*セクションまでスクロールダウンし、_PayPal_を選択します。
+1. 支払い方法 **セクションまでスクロールダウンし、***PayPal** を選択します。
 
 1. トグルを使ってアクティブにする。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 1. Configuration*タブに移動し、PayPalからコピーしたクライアントIDとシークレットキーを貼り付けます。
 
 1. モード*をサンドボックスに設定する。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 ### 定額配送方法の設定
 
@@ -86,57 +86,57 @@ B2Cチャネルでは、支払い方法、配送方法を設定し、サイト�
 
 1. トグルを使ってアクティブにする。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
-1. 配送オプション*ページに移動し、_追加_ (![Add](../../images/icon-add.png)) ボタンをクリックします。
+1. 配送オプション **ページに移動し、***追加**(![Add](../../images/icon-add.png)) ボタンをクリックします。
 
-1. 名前は_Regular Shipping_、金額は*$4.99*と入力してください。
+1. 名前は **Regular Shipping** 、金額は **$4.99** と入力してください。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 1. 追加* (![Add](../../images/icon-add.png)) をもう一度クリックする。
 
-1. 名前は_Express Shipping_、金額は*$9.99*と入力してください。
+1. 名前は **Express Shipping** 、金額は **$9.99** と入力してください。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 ## B2Bチャネルの設定
 
 B2Bチャネルでは、支払い方法、配送方法を設定し、サイトタイプがB2Bに設定されていることを確認します。
 
-1. Details]セクションで、[Commerce Site Type]を_B2B_に設定します。 [サイトタイプ](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) が B2B の場合、サイト内のすべてのアカウントはビジネスアカウントでなければなりません。
+1. Details]セクションで、[Commerce Site Type]を **B2B** に設定します。 [サイトタイプ](https://learn.liferay.com/web/guest/w/commerce/starting-a-store/sites-and-site-types#site-types) が B2B の場合、サイト内のすべてのアカウントはビジネスアカウントでなければなりません。
 
-1. *Type*タブを選択し、_Select Site_をクリックします。
+1. **Type** タブを選択し、 **Select Site** をクリックします。
 
 1. クラリティB2B*サイトを選択してください。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 クラリティは、B2Bの顧客に為替による支払いオプションを提供している。 荷物の重量に基づいて計算される変動送料で発送される。 Liferayのすぐに使える支払い方法と配送方法を使って、これらの両方を実装することができます。
 
 ### マネー・オーダーの設定
 
-1. 支払方法のセクションに移動し、_マネーオーダー_を選択します。
+1. 支払方法のセクションに移動し、 **マネーオーダー** を選択します。
 
 1. トグルを使ってアクティブにする。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
    これはすべての注文タイプに適用されるべきである。
 
 ### 可変レート配送方法の設定
 
-1. 次に、配送方法のセクションに移動し、_変動料金_を選択します。
+1. 次に、配送方法のセクションに移動し、 **変動料金** を選択します。
 
 1. トグルを使ってアクティブにする。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
-1. Shipping Options（配送オプション）ページに移動し、_Add_（！[Add]（../../images/icon-add.png））をクリックします。
+1. Shipping Options（配送オプション）ページに移動し、 **Add**（！[Add]（../../images/icon-add.png））をクリックします。
 
-1. 名前を_Standard Shipping_と入力し、_Save_をクリックします。
+1. 名前を **Standard Shipping** と入力し、 **Save** をクリックします。
 
-1. 配送オプション設定*に移動し、_追加_ (![Add](../../images/icon-add.png)) をクリックします。
+1. 配送オプション設定 **に移動し、***追加**(![Add](../../images/icon-add.png)) をクリックします。
 
 1. ドロップダウンから先ほど作成した配送オプションを選択します。
 

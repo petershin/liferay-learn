@@ -21,9 +21,9 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
    unzip liferay-g4j2.zip
    ```
 
-1. データをインポートするには、インポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPI Explorerの `/o/api` から取得できる。 *スキーマ*セクションまでスクロールダウンし、インポートしたいエンティティの`x-class-name`フィールドをメモする。
+1. データをインポートするには、インポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPI Explorerの `/o/api` から取得できる。 **スキーマ** セクションまでスクロールダウンし、インポートしたいエンティティの`x-class-name`フィールドをメモする。
 
-1. 以下のcURLスクリプトを使用して、Liferayインスタンスにアカウントをインポートします。 コマンドラインで `curl` フォルダに移動します。 `ImportTask_POST_ToInstance.sh`スクリプトを_Account_の完全修飾クラス名をパラメータとして実行する。
+1. 以下のcURLスクリプトを使用して、Liferayインスタンスにアカウントをインポートします。 コマンドラインで `curl` フォルダに移動します。 `ImportTask_POST_ToInstance.sh`スクリプトを **Account** の完全修飾クラス名をパラメータとして実行する。
 
    ```bash
    ./ImportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account
@@ -74,7 +74,7 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 
    `executeStatus`が`COMPLETED`の場合、インポートしたデータを確認することができる。 実行されていない場合は、再度コマンドを実行し、タスクの実行が終了したことを確認します。 もし `executeStatus`が`FAILED`と表示されたら、`errorMessage` フィールドをチェックして、何が問題だったのかを理解する。
 
-1. *グローバルメニュー* ([アプリケーションメニューアイコン](../../images/icon-applications-menu.png))を開き、_コントロールパネル_ &rarr; _アカウント_ に移動して、インポートされたデータを確認します。 新しいアカウントが2つ追加されたことを確認します。
+1. **グローバルメニュー**( [アプリケーションメニューアイコン](../../images/icon-applications-menu.png) )を開き、 **コントロールパネル** &rarr; **アカウント** に移動して、インポートされたデータを確認します。 新しいアカウントが2つ追加されたことを確認します。
 
    ![Verify that two new accounts have been added.](./batch-engine-api-basics/images/01.png)
 
@@ -123,8 +123,9 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 | `-u "test@liferay.com:learn"`                                                                     | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) を介してユーザーを認証する必要があります。 Oauth2 を使用するサンプル React アプリケーションについては、 [Use OAuth2 to authorize users](../using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) を介してユーザーを認証する必要があります。 Oauth2 を使用するサンプル React アプリケーションについては、 [Use OAuth2 to authorize users](../using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 ```
+
 他のcURLコマンドも同様のJSON引数を使用しています。
 
 ## Javaクラスを調べる
@@ -155,6 +156,7 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 ```{important}
 サービスの詳細については、 [ImportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ImportTaskResource.java) を参照。
 ```
+
 以下は、cURLとJavaを使用して他のBatch Engine import RESTサービスを呼び出す例です。
 
 ## ImportTaskのステータスを取得する
@@ -195,7 +197,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTask_GET_ById
 
 ## データをサイトにインポートする
 
-次のcURLまたはJavaコマンドを実行して、サイトにデータをインポートできます。 この例では、ブログの記事をサイトにインポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、`1234`を置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトでインポートする完全修飾クラス名パラメーターとデータも更新する必要があります。
+次のcURLまたはJavaコマンドを実行して、サイトにデータをインポートできます。 この例では、ブログの記事をサイトにインポートしています。 [RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、`1234`を置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトでインポートする完全修飾クラス名パラメーターとデータも更新する必要があります。
 
 ### ImportTask_POST_ToSite.sh
 
@@ -355,7 +357,7 @@ java -classpath .:* -DimportTaskId=1234 ImportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[APIエクスプローラー](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) には、ヘッドレスバッチエンジンの全サービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
+[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、ヘッドレスバッチエンジンの全サービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 
 ## 関連トピック
 

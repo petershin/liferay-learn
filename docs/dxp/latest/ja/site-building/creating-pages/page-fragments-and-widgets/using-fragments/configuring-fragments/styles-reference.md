@@ -10,15 +10,15 @@
 
 1. フラグメントをサポートするページまたはテンプレートの編集を開始します。
 
-1. サイドバーメニューの_ブラウザー_パネル(![Browser](../../../../../images/icon-hierarchy.png)) を開き、目的のフラグメントを選択する。
+1. サイドバーメニューの **ブラウザー** パネル(![Browser](../../../../../images/icon-hierarchy.png)) を開き、目的のフラグメントを選択する。
 
    または、ページやテンプレート内の目的のフラグメントをクリックします。
 
-1. ページ要素サイドメニューの_スタイル_タブをクリックします。
+1. ページ要素サイドメニューの **スタイル** タブをクリックします。
 
 ![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
 
-多くのスタイルには、スタイルブックでサポートされるトークンが定義されています。 トークンの値はスタイルブックから継承することができ、その場合は表示される値の横に青い点または_value from stylebook_アイコン（！[スタイルブックからの値](../../../../../images/icon-theme.png)）が表示されます。 詳細については、 [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) および [Style Book Token Definitions](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) を参照してください。
+多くのスタイルには、スタイルブックでサポートされるトークンが定義されています。 トークンの値はスタイルブックから継承することができ、その場合は表示される値の横に青い点または **value from stylebook** アイコン（！ [スタイルブックからの値](../../../../../images/icon-theme.png) ）が表示されます。 詳細については、 [Creating a Style Book](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) および [スタイルブックトークンの定義](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) を参照してください。
 
 ![Visual representation of inherited token values with blue dots](./styles-reference/images/07.png)
 
@@ -30,11 +30,11 @@ Liferay 7.4 U31+/GA31+ では、画面上部のデバイスボタンをクリッ
 
 {bdg-secondary}`liferay 7.4 U47+/GA47+用`。
 
-設定する間隔寸法のボタンをクリックします。 内側のボタンはフラグメントのパッディングを決定し、外側のボタンはマージンを決定します。 この文脈では、_padding_はフラグメントのフレームとそのコンテンツの間のスペースを指し、_margin_はフラグメントのフレームとその周囲のコンテキストの終わりの間のスペースを指す。
+設定する間隔寸法のボタンをクリックします。 内側のボタンはフラグメントのパッディングを決定し、外側のボタンはマージンを決定します。 この文脈では、 **padding** はフラグメントのフレームとそのコンテンツの間のスペースを指し、 **margin** はフラグメントのフレームとその周囲のコンテキストの終わりの間のスペースを指す。
 
 ![When you click any of the regions, choose the desired spacing from the list of sizes shown.](./styles-reference/images/02.png)
 
-パッディングやマージンのボタンをクリックすると、既存のトークンから選択するか、変更値を入力することができます。 定義済みのトークンは、スタイルブックの [［Spacing］](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) カテゴリにある番号付きの［Spacer］フィールドに由来します。 カスタム値を入力する場合は、その単位を選択します（例：`px`、`rem`）。 フィールドを初期値に戻すには、_リセット_ボタン ( ![Reset](../../../../../images/icon-restore.png) ) をクリックします。
+パッディングやマージンのボタンをクリックすると、既存のトークンから選択するか、変更値を入力することができます。 定義済みのトークンは、スタイルブックの [［Spacing］](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) カテゴリにある番号付きの［Spacer］フィールドに由来します。 カスタム値を入力する場合は、その単位を選択します（例：`px`、`rem`）。 フィールドを初期値に戻すには、 **リセット** ボタン ( ![Reset](../../../../../images/icon-restore.png) ) をクリックします。
 
 ```{note}
 7.4 U46/GA46以前のバージョンでは、スタイルブックがスペーシング値の定義にピクセル以外の単位を使用している場合（例えば`rem`）、フラグメントの設定時にピクセルに変換されます。
@@ -50,7 +50,7 @@ Liferay 7.4 U31+/GA31+ では、画面上部のデバイスボタンをクリッ
 | フォントウェイト ( ![フォントウェイト](../../../../../images/icon-font-weight.png) )                                                                                                                                                        | テキスト内の太字または細字の表示方法を設定します。                                                                                                                                                               |
 | フォントサイズ ( ![フォントサイズ](../../../../../images/icon-font-size.png) )                                                                                                                                                            | フォントのサイズを設定します。                                                                                                                                                                         |
 | 文字色 ( ![文字色](../../../../../images/icon-color-circle.png) )                                                                                                                                                                 | テキストの色を選択します。 使用可能なカラーパレットは、フラグメント開発者が設定できます。 詳しくは、 [フラグメント設定タイプのリファレンス](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) を参照してください。 |
-| 文字揃え ( ![左揃え](../../../../images/icon-align-left.png) ![中央揃え](../../../../../images/icon-align-center.png) ![右揃え](../../../../../../images/icon-align-right.png) ！[Justify](../../../../../images/icon-align-justify.png))。 | 要素内のテキストの水平方向の配置を指定します。 *左*、*中央*、*右*、または_ジャスティファイ_から選択します。                                                                                                                              |
+| 文字揃え ( ![左揃え](../../../../../images/icon-align-left.png) ![中央揃え](../../../../../images/icon-align-center.png) ![右揃え](../../../../../images/icon-align-right.png) ![Justify](../../../../../images/icon-align-justify.png) )。 | 要素内のテキストの水平方向の配置を指定します。 **左** 、 **中央** 、 **右** 、または **ジャスティファイ** から選択します。                                                                                                                              |
 
 ![Format the fragment's text.](./styles-reference/images/03.png)
 
@@ -61,10 +61,10 @@ Liferay 7.4 U31+/GA31+ では、画面上部のデバイスボタンをクリッ
 | 項目                                                          | 説明                                                                                                                                                                                         |
 | :---------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 背景色 ( ![背景色](../../../../../images/icon-color-circle.png) ) | パレットから背景色を選択します。 使用可能なカラーパレットは、フラグメント開発者が設定できます。 詳しくは、 [フラグメント設定タイプのリファレンス](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) を参照してください。 |
-| 画像ソース                                                       | Direct_に設定すると、ユーザーは背景画像をアップロードできます。 マッピング_に設定すると、ユーザーはドキュメントとメディア、ウェブコンテンツ、ブログ、カテゴリーから選択できる。                                                                                               |
-| 背景画像 (_直接_)                                                 | ライブラリから画像を選択するか、画像URLを入力します。                                                                                                                                                               |
-| アイテム (_マッピング_)                                              | ドキュメントとメディア、Webコンテンツ、ブログ、またはカテゴリから特定の項目に背景をマップします。 選択したら、_Actions_ボタン(![Actions button](../../../../../images/icon-actions.png)) をクリックし、アイテムやその権限を編集したり、使用状況を確認したりします。                     |
-| フィールド (_マッピング_)                                             | 項目のどのフィールドを背景画像に使用するかを決定します。                                                                                                                                                               |
+| 画像ソース                                                       | Direct **に設定すると、ユーザーは背景画像をアップロードできます。 マッピング** に設定すると、ユーザーはドキュメントとメディア、ウェブコンテンツ、ブログ、カテゴリーから選択できる。                                                                                               |
+| 背景画像 (**直接**)                                                 | ライブラリから画像を選択するか、画像URLを入力します。                                                                                                                                                               |
+| アイテム (**マッピング**)                                              | ドキュメントとメディア、Webコンテンツ、ブログ、またはカテゴリから特定の項目に背景をマップします。 選択したら、 **Actions** ボタン(![Actions button](../../../../../images/icon-actions.png)) をクリックし、アイテムやその権限を編集したり、使用状況を確認したりします。                     |
+| フィールド (**マッピング**)                                             | 項目のどのフィールドを背景画像に使用するかを決定します。                                                                                                                                                               |
 
 ![Configure the fragment's background.](./styles-reference/images/04.png)
 
@@ -78,7 +78,7 @@ Liferay 7.4 U31+/GA31+ では、画面上部のデバイスボタンをクリッ
 
 | 項目                                                                  | 説明                                                                                                                                                                                                             |
 | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ボーダー幅 ( ![ボーダー幅](../../../../../images/icon-border-width.png) )     | 要素の4つの枠線の幅を設定します。 単位_ボタン ( ![Units](../../../../../../images/icon-code.png) ) をクリックして、ボーダーの幅の単位 (例: `px`, `rem`) を選択します。 リセット_ボタン ( ![Reset](../../../../../images/icon-restore.png) ) をクリックして、フィールドを初期値に戻します。 |
+| ボーダー幅 ( ![ボーダー幅](../../../../../images/icon-border-width.png) )     | 要素の4つの枠線の幅を設定します。 **単位** ボタン ( ![Units](../../../../../images/icon-code.png) ) をクリックして、ボーダーの幅の単位 (例: `px`, `rem`) を選択します。 リセット** ボタン ( ![Reset](../../../../../images/icon-restore.png) ) をクリックして、フィールドを初期値に戻します。 |
 | ボーダー半径 ( ![ボーダー半径](../../../../../images/icon-corner-radius.png) )  | 要素の角の半径を定義し、丸みを帯びた角を追加できます。                                                                                                                                                                                    |
 | ボーダーカラー ( ![ボーダーカラー](../../../../../images/icon-color-circle.png) ) | 要素の4つの枠線の色を設定します。 使用可能なカラーパレットは、フラグメント開発者が設定できます。 詳しくは、 [フラグメント設定タイプのリファレンス](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) を参照してください。                    |
 

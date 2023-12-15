@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # ブランディングと一貫性
 
 **概要**

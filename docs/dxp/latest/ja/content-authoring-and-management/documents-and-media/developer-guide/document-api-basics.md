@@ -80,6 +80,7 @@ cURLスクリプトを使用して、ファイルを [ドキュメントとメ�
     ```{note}
     ユーザーとパスワードがそれぞれ `test@liferay.com` と `test` でない場合は、実行する前に `Document_POST_ToSite.java` ファイルでこれらの値を置き換えて、クラスを再コンパイルしてください。
     ```
+
 このクラスはソースファイル `Document_POST_ToSite.java` を Documents and Media にアップロードする。
 
 ![The Java class uploaded the Java source file.](./document-api-basics/images/02.png)
@@ -105,8 +106,9 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 | `-u "test@liferay.com:learn"`                                           | 基本認証の資格情報。                                                                      |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0](../../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [Using OAuth2 to Authorize Users](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0](../../../headless-delivery/using-oauth2.md) を介してユーザーを認証する必要があります。 OAuth2 を使用する React アプリケーションのサンプルについては、 [OAuth2によるユーザーの認証](../../../headless-delivery/using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 ```
+
 `Document`と`DocumentFolder` RESTサービス用の他のcURLコマンドも同様の引数を使用する。
 
 次に、Javaの呼び出しがいかに似ているかを見てみましょう。
@@ -125,9 +127,9 @@ cURLコマンドとJavaクラスの仕組みをご覧ください。
 
 | 行（省略形）                                                                     | 説明                                                                                                                                                                                   |
 | :------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `DocumentResource.Builder builder = ...`                                   | DocumentResource`サービスインスタンスを生成するための`Builder` を取得する。                                                                                                                                 |
+| `DocumentResource.Builder builder = ...`                                   | `DocumentResource`サービスインスタンスを生成するための`Builder` を取得する。                                                                                                                                 |
 | `DocumentResource documentResource = builder.authentication(...).build();` | 基本認証を指定し、`DocumentResource` サービスインスタンスを生成する。                                                                                                                                         |
-| `Document document = documentResource.postSiteDocument(...);`              | DocumentResource.postSiteDocument`メソッドを呼び出し、サイト ID、アップロードするファイルを表す`Document`オブジェクト、アップロードするファイルを指定するハッシュマップを渡す。 ファイルは任意である--この例では便宜上、ローカルのファイル`Document_POST_ToSite.java` を使っている。 |
+| `Document document = documentResource.postSiteDocument(...);`              | `DocumentResource.postSiteDocument`メソッドを呼び出し、サイト ID、アップロードするファイルを表す`Document`オブジェクト、アップロードするファイルを指定するハッシュマップを渡す。 ファイルは任意である--この例では便宜上、ローカルのファイル`Document_POST_ToSite.java` を使っている。 |
 
 このプロジェクトには `com.liferay.headless.delivery.client.jar` ファイルが依存関係として含まれていることに注意してください。 すべての REST アプリケーションのクライアント JAR 依存情報は、インストー ルの API エクスプローラーの `/o/api` にある。
 
@@ -365,6 +367,7 @@ java -classpath .:* -DdocumentId=1234 Document_PUT_ById
 ```{warning}
 現在の `Document` のタイトルを使用したいのでなければ、置換する `Document` に必要な `title` の値を指定してください。
 ```
+
 ![The cURL command replaced the document.](./document-api-basics/images/04.png)
 
 ## ドキュメントを削除する
@@ -409,16 +412,16 @@ java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 
 | ファイル                                         | 説明                      |
 | :------------------------------------------- | :---------------------- |
-| `Document_POST_ToDocumentFolder.[java|sh]` | ドキュメントをフォルダに投稿します。      |
-| `DocumentFolder_GET_ById.[java|sh]`        | フォルダのフィールドを一覧表示します。     |
-| `DocumentFolder_PATCH_ById.[java|sh]`      | フォルダとそのフィールドを更新します。     |
-| `DocumentFolder_POST_ToSite.[java|sh]`     | ドキュメントフォルダをサイトに投稿します。   |
-| `DocumentFolder_PUT_ById.[java|sh]`        | フォルダとそのフィールドを完全に置き換えます。 |
-| `DocumentFolders_GET_FromSite.[java|sh]`   | サイトのフォルダを一覧表示します。       |
+| `Document_POST_ToDocumentFolder.[java\|sh]` | ドキュメントをフォルダに投稿します。      |
+| `DocumentFolder_GET_ById.[java\|sh]`        | フォルダのフィールドを一覧表示します。     |
+| `DocumentFolder_PATCH_ById.[java\|sh]`      | フォルダとそのフィールドを更新します。     |
+| `DocumentFolder_POST_ToSite.[java\|sh]`     | ドキュメントフォルダをサイトに投稿します。   |
+| `DocumentFolder_PUT_ById.[java\|sh]`        | フォルダとそのフィールドを完全に置き換えます。 |
+| `DocumentFolders_GET_FromSite.[java\|sh]`   | サイトのフォルダを一覧表示します。       |
 
 [API Explorer](../../../headless-delivery/consuming-apis/consuming-rest-services.md) には `Document` と `DocumentFolder` のすべてのサービスとスキーマがリストアップされており、各サービスを試すためのインターフェイスが用意されている。
 
-[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java)と[DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java)のJavaインターフェースも参照してください。
+[DocumentResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentResource.java) と [DocumentFolderResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-delivery/headless-delivery-client/src/main/java/com/liferay/headless/delivery/client/resource/v1_0/DocumentFolderResource.java) のJavaインターフェースも参照してください。
 
 ## 関連トピック
 

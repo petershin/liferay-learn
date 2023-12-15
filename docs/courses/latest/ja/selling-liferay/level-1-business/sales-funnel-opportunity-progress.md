@@ -4,6 +4,9 @@ toc:
   - ./sales-funnel-opportunity-progress/buying-phases.md
   - ./sales-funnel-opportunity-progress/before-buying-starts.md
   - ./sales-funnel-opportunity-progress/mapping-buyer-sales-process.md
+visibility:
+- Employee
+- Partner
 ---
 # セールスファネルと機会進捗のベストプラクティス
 

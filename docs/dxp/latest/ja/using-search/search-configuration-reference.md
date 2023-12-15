@@ -19,30 +19,30 @@ Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](..
 
 検索ウィジェットの詳細については、 [ページとウィジェットの検索](./getting-started/search-overview.md#search-pages-and-widgets) をご覧ください。
 
-**検索結果**：検索結果の表示方法を設定します。 詳しくは、 [検索結果の表示](./search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#displaying-search-results) をご覧ください。
+**検索結果** ：検索結果の表示方法を設定します。 詳しくは、 [検索結果の表示](./search-pages-and-widgets/search-results/configuring-the-search-results-widget.md#displaying-search-results) をご覧ください。
 
-**検索バー**:検索キーワードの処理方法を設定します。 詳しくは、 [検索バーを設定する](./getting-started/searching-for-content.md#configuring-the-search-bar) をご覧ください。
+**検索バー** :検索キーワードの処理方法を設定します。 詳しくは、 [検索バーを設定する](./getting-started/searching-for-content.md#configuring-the-search-bar) をご覧ください。
 
-**検索ファセット**：各ファセットの動作とURLパラメータを設定します。 詳しくは、 [ファセット](./search-pages-and-widgets/search-facets.md) をご覧ください。
+**検索ファセット** ：各ファセットの動作とURLパラメータを設定します。 詳しくは、 [ファセット](./search-pages-and-widgets/search-facets.md) をご覧ください。
 
-**検索オプション**：これは特別なケースで、このウィジェットを設定することで、ページスコープの動作が定義されます。 ［検索オプション］ウィジェットをページに追加し、「検索ページ」に2つのブーリアンを定義します。
+**検索オプション** ：これは特別なケースで、このウィジェットを設定することで、ページスコープの動作が定義されます。 ［検索オプション］ウィジェットをページに追加し、「検索ページ」に2つのブーリアンを定義します。
 
 * 空の検索を許可する：デフォルトでは、キーワードを入力しなかった場合、検索結果は表示されません。 これを有効にすると、検索バーにキーワードが入力されていない場合、すべての検索結果が返されます。
 * 基本的なファセット選択。デフォルトでは、ファセット数はファセットを選択するたびに再計算されます。 これを有効にすると、ファセットリカウンティングがオフになります。
 
-**検索提案**：より良いクエリとスペルチェッククエリを提案します。 詳しくは、 [サジェスチョン・コンフィギュレーション・リファレンス](./search-pages-and-widgets/search-results/enabling-search-suggestions.md#suggestions-configuration-reference) を参照してください。
+**検索提案** ：より良いクエリとスペルチェッククエリを提案します。 詳しくは、 [サジェスチョン・コンフィギュレーション・リファレンス](./search-pages-and-widgets/search-results/enabling-search-suggestions.md#suggestions-configuration-reference) を参照してください。
 
-**検索インサイト**：ユーザーがキーワードを入力した際に、バックエンドの検索コードによって構築される完全なクエリー文字列を検査するために、検索ページにこれを追加します。 テストや開発にしか使えません。 詳しくは、 [検索インサイト](./search-pages-and-widgets/search-insights.md) をご覧ください。
+**検索インサイト** ：ユーザーがキーワードを入力した際に、バックエンドの検索コードによって構築される完全なクエリー文字列を検査するために、検索ページにこれを追加します。 テストや開発にしか使えません。 詳しくは、 [検索インサイト](./search-pages-and-widgets/search-insights.md) をご覧ください。
 
-**カスタムフィルター**：検索結果に適用したいフィルターごとに、ページにウィジェットを追加します。 検索ページのユーザがフィルタを見たり操作したりできるようにするか、フィルタを不可視にしたり、不変にしたりする。 詳細については、 [検索結果のフィルタリング](./search-pages-and-widgets/search-results/filtering-search-results.md) を参照してください。
+**カスタムフィルター** ：検索結果に適用したいフィルターごとに、ページにウィジェットを追加します。 検索ページのユーザがフィルタを見たり操作したりできるようにするか、フィルタを不可視にしたり、不変にしたりする。 詳細については、 [検索結果のフィルタリング](./search-pages-and-widgets/search-results/filtering-search-results.md) を参照してください。
 
-**ソート**： インデックス内の特定のキーワードフィールドの値に基づいて検索結果を並べ替えることができます。例えば、Titleフィールドのアルファベット順に結果を表示します。デフォルトの並び順は検索エンジンの_関連度_計算によって決定されます。詳しくは[検索結果の並べ替え](./search-pages-and-widgets/search-results/sorting-search-results.md)を参照してください。
+**ソート** ： インデックス内の特定のキーワードフィールドの値に基づいて検索結果を並べ替えることができます。例えば、Titleフィールドのアルファベット順に結果を表示します。デフォルトの並び順は検索エンジンの **関連度** 計算によって決定されます。詳しくは[検索結果の並べ替え](./search-pages-and-widgets/search-results/sorting-search-results.md)を参照してください。
 
-**Low Level Search Options:** _Company Index_以外のインデックスを対象とした検索に参加するように検索ウィジェットを設定します。 会社インデックスはLiferay DXPアセットがデータのインデックスを作成する場所なので、多くのインストールではこのウィジェットは必要ありません。 詳しくは、 [低レベル検索オプションを理解する](./search-pages-and-widgets/search-results/understanding-low-level-search-options.md) をご覧ください。
+**Low Level Search Options:****Company Index** 以外のインデックスを対象とした検索に参加するように検索ウィジェットを設定します。 会社インデックスはLiferay DXPアセットがデータのインデックスを作成する場所なので、多くのインストールではこのウィジェットは必要ありません。 詳しくは、 [低レベル検索オプションを理解する](./search-pages-and-widgets/search-results/understanding-low-level-search-options.md) をご覧ください。
 
-**類似検索結果：**ページに表示されているアセットに類似した検索結果を表示します。 詳細は、 [類似結果](./search-pages-and-widgets/similar-results.md) を参照してください。
+**類似検索結果：** ページに表示されているアセットに類似した検索結果を表示します。 詳細は、 [類似結果](./search-pages-and-widgets/similar-results.md) を参照してください。
 
-[Liferay Enterprise Search] をご覧ください。**Elasticsearchモニタリング:** Liferay Enterprise Searchのサブスクライバーは、Liferay DXPページに設置されたウィジェット内で [ElasticのKibana](https://www.elastic.co/kibana) モニタリングツールにアクセスできます。 詳しくは[Elasticsearch](./liferay-enterprise-search/monitoring-elasticsearch.md) の監視]を参照してください。
+[Liferay Enterprise Search] をご覧ください。 **Elasticsearchモニタリング:** Liferay Enterprise Searchのサブスクライバーは、Liferay DXPページに設置されたウィジェット内で [ElasticのKibana](https://www.elastic.co/kibana) モニタリングツールにアクセスできます。 詳しくは[Elasticsearch](./liferay-enterprise-search/monitoring-elasticsearch.md) の監視]を参照してください。
 
 ## サイトスコープ検索の設定
 
@@ -52,7 +52,7 @@ Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](..
 
 検索ウィジェットを使用する際には、いくつかの重要な設定上の注意点があります。
 
-ヘッダー検索バー（デフォルトテーマに埋め込まれた検索バー）が検索バーウィジェットを使用する場合、その設定には常に_destination page_を設定する必要があり、ユーザーが他の検索ウィジェット（結果、ファセット、サジェストなど）とやり取りしながら検索アクティビティを完了するためにリダイレクトされます。 [検索先ページ](./search-pages-and-widgets/working-with-search-pages/creating-a-search-page.md) は、検索ウィジェットを搭載した通常のページです。 検索ウィジェットを持つページは、サイト全体でいくつでも持つことができます。
+ヘッダー検索バー（デフォルトテーマに埋め込まれた検索バー）が検索バーウィジェットを使用する場合、その設定には常に **destination page** を設定する必要があり、ユーザーが他の検索ウィジェット（結果、ファセット、サジェストなど）とやり取りしながら検索アクティビティを完了するためにリダイレクトされます。 [検索先ページ](./search-pages-and-widgets/working-with-search-pages/creating-a-search-page.md) は、検索ウィジェットを搭載した通常のページです。 検索ウィジェットを持つページは、サイト全体でいくつでも持つことができます。
 
 検索バーウィジェットはインスタンス化が可能なので、1つのページに複数の検索バーウィジェットを設定することができます。 すべての検索バーのインスタンスは、サイト内の検索ページを指していないと効果がありません。
 
@@ -72,17 +72,17 @@ Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](..
 
 **検索結果のランキング：** 特定のエイリアスの結果を非表示にしたり、固定したり、追加したりすることで、検索結果を手動でカスタマイズします。 詳しくは、 [結果ランキング](./search-administration-and-tuning/result-rankings.md) をご覧ください。
 
-**類義語:**類義語セットを作成することで、同義語の検索語は検索語と完全に一致するようにマッチングされ、スコアリングされます。 詳細は、 [シノニムセット](./search-administration-and-tuning/synonym-sets.md) を参照してください。
+**類義語:** 類義語セットを作成することで、同義語の検索語は検索語と完全に一致するようにマッチングされ、スコアリングされます。 詳細は、 [シノニムセット](./search-administration-and-tuning/synonym-sets.md) を参照してください。
 
 ## システムスコープ検索の設定
 
 システムスコープの検索設定は、主に [システム設定](../system-administration/configuring-liferay/system-settings.md) にあります。
 
-1. グローバルメニューで、_コントロールパネル_ &rarr; _設定_ &rarr; _システム設定_ に進みます。
+1. グローバルメニューで、 **コントロールパネル** &rarr; **設定** &rarr; **システム設定** に進みます。
 
-1. プラットフォームセクションの下にある_検索_カテゴリーをクリックします。
+1. プラットフォームセクションの下にある **検索** カテゴリーをクリックします。
 
-   あるいは、「_search_」を検索する。
+   あるいは、「**search**」を検索する。
 
 ![There are numerous system scoped entries for search in System Settings.](./search-configuration-reference/images/01.png)
 
@@ -102,13 +102,13 @@ Liferay DXPの検索は様々な方法で設定できます。 [設定範囲](..
 
 デフォルト・キーワードクエリエントリには1つの設定があります。
 
-**`disabledEntryClassNames`**：`DefaultKeywordQueryContributor`コードは、キーワード検索クエリに `description`、`userName`、`title` フィールドを自動的に追加します。 DefaultKeywordQueryContributor` が無視するエントリクラス名を指定します。
+**`disabledEntryClassNames`** ：`DefaultKeywordQueryContributor`コードは、キーワード検索クエリに `description`、`userName`、`title` フィールドを自動的に追加します。 DefaultKeywordQueryContributor` が無視するエントリクラス名を指定します。
 
 ### デフォルト検索結果パーミッションフィルター
 
 **設定ファイル:** `com.liferay.portal.search.configuration.DefaultSearchResultPermissionFilterConfiguration.config`
 
-Default Search Result Permission Filter項目は、_post-filtering permission checking_（検索インデックスから結果が返された後に行われるデータベース権限チェック）の設定を可能にする。 これらの設定の詳細については、 [最終権限設定](./search-pages-and-widgets/search-results/search-results-behavior.md#final-permissions-checking) を参照してください。
+Default Search Result Permission Filter項目は、 **post-filtering permission checking**（検索インデックスから結果が返された後に行われるデータベース権限チェック）の設定を可能にする。 これらの設定の詳細については、 [最終権限設定](./search-pages-and-widgets/search-results/search-results-behavior.md#final-permissions-checking) を参照してください。
 
 * **`permissionFilteredSearchResultAccurateCountThreshold`**
 
@@ -120,7 +120,7 @@ Default Search Result Permission Filter項目は、_post-filtering permission ch
 
 ステータス マネージャーをインデックスするエントリーの設定は1つです。
 
-**`indexReadOnly`**：これを有効にすると、すべてのインデックス作成操作と検索エンジンへの書き込みを一時停止する。 検索では、すでにインデックスされている文書のみが返されます。 この機能は、大規模なデータのインポートを高速化するのに便利ですが、インポートが終了したら、無効にして完全な再インデックスを実行する必要があります。
+**`indexReadOnly`** ：これを有効にすると、すべてのインデックス作成操作と検索エンジンへの書き込みを一時停止する。 検索では、すでにインデックスされている文書のみが返されます。 この機能は、大規模なデータのインポートを高速化するのに便利ですが、インポートが終了したら、無効にして完全な再インデックスを実行する必要があります。
 
 ### インデックス書き込みヘルパー
 
@@ -128,7 +128,7 @@ Default Search Result Permission Filter項目は、_post-filtering permission ch
 
 インデックスライターヘルパーエントリには、1つのエントリが含まれています。
 
-**`indexCommitImmediately`**：*true*（デフォルト）の場合、各書き込みリクエストはサーチエンジンにインデックスリーダーをリフレッシュさせ、ディスクにトランザクションをフラッシュさせる可能性がある。 これは、検索エンジンのパフォーマンスに悪影響を与える可能性があります。 デフォルトの動作は、個々のアセットへのインデックス書き込み（例：blog の追加、blog の更新）については直ちにコミットしますが、一括したインデックス書き込み操作（例：すべてのユーザーのインデックス化、すべてのフォームエントリのインデックス化）については、すべてのエントリが検索エンジンに送信されるまでコミットを遅らせます。 この設定をfalseにすると、個々のインデックス操作の動作が変化し、Asset Publisherなどのアプリケーションで、新しく追加されたコンテンツを表示する際にレスポンスが遅れることがあります。 詳しくは、 [Elasticsearchのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/near-real-time.html) をご覧ください。
+**`indexCommitImmediately`** ： **true**（デフォルト）の場合、各書き込みリクエストはサーチエンジンにインデックスリーダーをリフレッシュさせ、ディスクにトランザクションをフラッシュさせる可能性がある。 これは、検索エンジンのパフォーマンスに悪影響を与える可能性があります。 デフォルトの動作は、個々のアセットへのインデックス書き込み（例：blog の追加、blog の更新）については直ちにコミットしますが、一括したインデックス書き込み操作（例：すべてのユーザーのインデックス化、すべてのフォームエントリのインデックス化）については、すべてのエントリが検索エンジンに送信されるまでコミットを遅らせます。 この設定をfalseにすると、個々のインデックス操作の動作が変化し、Asset Publisherなどのアプリケーションで、新しく追加されたコンテンツを表示する際にレスポンスが遅れることがあります。 詳しくは、 [Elasticsearchのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/near-real-time.html) をご覧ください。
 
 ### インデクサー登録
 
@@ -136,13 +136,13 @@ Default Search Result Permission Filter項目は、_post-filtering permission ch
 
 インデックス要求のバッファリングを設定する。
 
-**buffered`**：インデックス作成リクエストのバッファリングを有効 (デフォルト) あるいは無効にする。
+**buffered`** ：インデックス作成リクエストのバッファリングを有効 (デフォルト) あるいは無効にする。
 
-**`bufferedExecutionMode`**：管理者が `IndexerRequest`の実行に使用する`IndexerRequestBufferExecutor`を選択できるようにする。 エグゼキューターの1つの実装が、そのまま提供される（_DEFAULT_）。 新しい`IndexerRequestBufferExecutor`の実装がデプロイされると、必要なプロパティの1つに`buffered.execution.mode` がある。 この値を_DEFAULT_の代わりに使うことができる。
+**`bufferedExecutionMode`** ：管理者が `IndexerRequest`の実行に使用する`IndexerRequestBufferExecutor`を選択できるようにする。 エグゼキューターの1つの実装が、そのまま提供される（**DEFAULT**）。 新しい`IndexerRequestBufferExecutor`の実装がデプロイされると、必要なプロパティの1つに`buffered.execution.mode` がある。 この値を **DEFAULT** の代わりに使うことができる。
 
-**maximumBufferSize`**：バッファリングが有効になっている場合は、追加のインデックス作成要求が即座に実行されるように最大バッファサイズを設定します。
+**maximumBufferSize`** ：バッファリングが有効になっている場合は、追加のインデックス作成要求が即座に実行されるように最大バッファサイズを設定します。
 
-**minimumBufferAvailabilityPercentage`**：バッファの容量が指定されたパーセンテージしか残っていない場合、 バッファ内の既存のリクエストはまとめて実行され、バッファから取り除かれます。
+**minimumBufferAvailabilityPercentage`** ：バッファの容量が指定されたパーセンテージしか残っていない場合、 バッファ内の既存のリクエストはまとめて実行され、バッファから取り除かれます。
 
 ### インデックス・クエリ・プロセッサー
 
@@ -150,7 +150,7 @@ Default Search Result Permission Filter項目は、_post-filtering permission ch
 
 このエントリは、1つの繰り返し可能なプロパティを持っています（ [OSGi構成ファイル](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) で定義している場合は、配列構文を使用します）。
 
-**fieldNamePatterns`**：ここで設定されたパターンにマッチする名前を持つフィールドは、非分析キーワードフィールドとして扱われます。 スコアリングされたフルテキストクエリの代わりに、スコアリングされていないワイルドカードクエリによってマッチングが行われます。 これはリソースを消費する操作で、インデックスが大きくなると検索エンジンのパフォーマンスが低下します。 部分文字列の照合では、 [ngram tokenizer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) に頼る方が、通常は良い結果が得られます。
+**fieldNamePatterns`** ：ここで設定されたパターンにマッチする名前を持つフィールドは、非分析キーワードフィールドとして扱われます。 スコアリングされたフルテキストクエリの代わりに、スコアリングされていないワイルドカードクエリによってマッチングが行われます。 これはリソースを消費する操作で、インデックスが大きくなると検索エンジンのパフォーマンスが低下します。 部分文字列の照合では、 [ngram tokenizer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-ngram-tokenizer.html) に頼る方が、通常は良い結果が得られます。
 
 ### 再インデクス
 
@@ -158,7 +158,7 @@ Default Search Result Permission Filter項目は、_post-filtering permission ch
 
 このエントリーには、1つのプロパティしか含まれていません。
 
-**`indexingBatchSizes`**：バッチインデックスをサポートするモデルタイプに対して、バッチごとにインデックスされるドキュメントの数(デフォルト値は1000)を設定します。 大規模なドキュメントを持つモデルでは、この値を小さくすることで、完全な再インデックスを実行する際の安定性が向上する場合があります。
+**`indexingBatchSizes`** ：バッチインデックスをサポートするモデルタイプに対して、バッチごとにインデックスされるドキュメントの数(デフォルト値は1000)を設定します。 大規模なドキュメントを持つモデルでは、この値を小さくすることで、完全な再インデックスを実行する際の安定性が向上する場合があります。
 
 ### エンジンヘルパー
 
@@ -166,7 +166,7 @@ Default Search Result Permission Filter項目は、_post-filtering permission ch
 
 このエントリは、1つの繰り返し可能なプロパティを持っています（ [OSGi構成ファイル](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md) で定義している場合は、配列構文を使用します）。
 
-**`excludedEntryClassNames`**：Search アプリケーション用に構築されたキャッチオールクエリで、アセットタイプを検索対象から除外します。 例えば、ユーザーと組織
+**`excludedEntryClassNames`** ：Search アプリケーション用に構築されたキャッチオールクエリで、アセットタイプを検索対象から除外します。 例えば、ユーザーと組織
 アプリケーションから検索できるように、組織アセットのフィールドにインデックスを付ける必要がありますが、検索アプリケーションでは検索できません。 したがって、Organizationsは `excludedEntryClassNames`に追加される。
 
 ### 権限チェッカー
@@ -175,7 +175,7 @@ Default Search Result Permission Filter項目は、_post-filtering permission ch
 
 このエントリーは、Liferay DXP 7.3では1つの設定オプションがあります。
 
-**`permissionTermsLimit`**：このレベルのパーミッションチェックが中断されるまでに、検索クエリに追加されるパーミッション検索句の数を制限する。 パーミッションチェックは、 [デフォルト検索結果パーミッションフィルター](#default-search-result-permission-filter) セクションで説明されている最終的なパーミッションフィルタリングにのみ依存します。
+**`permissionTermsLimit`** ：このレベルのパーミッションチェックが中断されるまでに、検索クエリに追加されるパーミッション検索句の数を制限する。 パーミッションチェックは、 [デフォルト検索結果パーミッションフィルター](#default-search-result-permission-filter) セクションで説明されている最終的なパーミッションフィルタリングにのみ依存します。
 
 ### タイトルフィールドクエリビルダー
 
@@ -183,9 +183,9 @@ Default Search Result Permission Filter項目は、_post-filtering permission ch
 
 ドキュメントの「タイトル」フィールドにマッチした場合の検索の応答方法を設定します。
 
-**`exactMatchBoost`**：検索されたキーワードが文書の `title` フィールドと完全に一致した場合に、さらにブーストをかける。
+**`exactMatchBoost`** ：検索されたキーワードが文書の `title` フィールドと完全に一致した場合に、さらにブーストをかける。
 
-**`maxExpansions`**：フレーズのプレフィックスとして `title` フィールドに検索されたキーワードをマッチさせる際に返すドキュメント数を制限する。 詳しくはElasticsearchの [Match Phrase Queryのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query-phrase.html) を参照してください。
+**`maxExpansions`** ：フレーズのプレフィックスとして `title` フィールドに検索されたキーワードをマッチさせる際に返すドキュメント数を制限する。 詳しくはElasticsearchの [Match Phrase Queryのドキュメント](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query-phrase.html) を参照してください。
 
 ### クラスター横断レプリケーション
 
@@ -205,7 +205,7 @@ LiferayとElasticsearch 7の接続を設定します。 これらのプロパテ
 
 ### Elasticsearch接続
 
-** 設定ファイル:** `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConnectionConfiguration-[connectionId].config`
+**設定ファイル:** `com.liferay.portal.search.elasticsearch7.configuration.ElasticsearchConnectionConfiguration-[connectionId].config`
 
 Liferay 7.3は、複数のElasticsearchクラスタに接続することができます。 接続はElasticsearch接続エントリで定義されます。 これにより、低レベル検索オプションおよび検索結果ウィジェットと組み合わせて使用することで、Elasticsearchクラスターを使用しているサードパーティシステムからの結果を表示することができます。 また、 [クラスター横断レプリケーション](./liferay-enterprise-search/cross-cluster-replication/cross-cluster-replication.md) のドキュメントでも紹介されています。
 
@@ -221,7 +221,7 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 このエントリーには1つのプロパティが含まれています。
 
-**`classicSearchPortletInFrontPage`**：デフォルトの検索エクスペリエンスを、新しい検索ウィジェットの使用から、過去のリリースで標準だった非推奨のクラシック検索ポートレットに戻します。
+**`classicSearchPortletInFrontPage`** ：デフォルトの検索エクスペリエンスを、新しい検索ウィジェットの使用から、過去のリリースで標準だった非推奨のクラシック検索ポートレットに戻します。
 
 ### 同義語
 
@@ -229,11 +229,11 @@ Liferay Enterprise Searchのサブスクリプションで利用可能なLiferay
 
 このエントリは、1つの繰り返し可能なプロパティを持っています（ [OSGi構成ファイル](../system-administration/configuring-liferay/configuration-files-and-factories/using-configuration-files.md#creating-configuration-files) で定義している場合は、配列構文を使用します）。
 
-**`synyonymFilterNames`**：適用する類義語フィルター名を設定する。 これらのフィルターはElasticsearch Index Settingsで定義する必要があります。 [Creating New Synonym Language Filters](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters) を参照してください。
+**`synyonymFilterNames`** ：適用する類義語フィルター名を設定する。 これらのフィルターはElasticsearch Index Settingsで定義する必要があります。 [Creating New Synonym Language Filters](./search-administration-and-tuning/synonym-sets.md#creating-new-synonym-language-filters) を参照してください。
 
 ### 検索管理
 
-コントロールパネル* &rarr; _設定_ &rarr; _検索_ には、3つの管理用UIがある：Connections、Index Actions、Field Mappings です。
+**コントロールパネル**&rarr;**設定**&rarr;**検索** には、3つの管理用UIがある：Connections、Index Actions、Field Mappings です。
 
 詳しくは、専用の [検索管理とチューニング](./search-administration-and-tuning.md) のドキュメントをご覧ください。
 

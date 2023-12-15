@@ -1,6 +1,6 @@
 # 検索管理
 
-*コントロールパネル* &rarr; _設定_ &rarr; _検索_ には、3つの管理用UIがある：Connections、Index Actions、Field Mappings です。 接続は、あなたのインストールが接続されている検索エンジンを表示し、アクションをインデックスは、再インデックス化のためのインターフェースで、フィールドマッピングは、Liferay から検索インデックスにマッピングされたフィールドを表示します。
+**コントロールパネル** &rarr; **設定** &rarr; **検索** には、3つの管理用UIがある：Connections、Index Actions、Field Mappings です。 接続は、あなたのインストールが接続されている検索エンジンを表示し、アクションをインデックスは、再インデックス化のためのインターフェースで、フィールドマッピングは、Liferay から検索インデックスにマッピングされたフィールドを表示します。
 
 ![The Search Administration panel contains three management screens.](./search-administration/images/02.png)
 
@@ -12,7 +12,7 @@
 * クライアントのバージョン：7.16.3
 * 有効な接続：1
 * 稼働状態：緑
-* 接続ID：_REMOTE_
+* 接続ID： **REMOTE**
 * 接続タイプ：読み取り/書き込み
 * クラスター名：LiferayElasticsearchCluster
 * ノード：1
@@ -28,7 +28,7 @@ Index Actionsでは、Liferayのデータのインデックスを再作成する
 これらのレベルのいずれかでインデックスを再作成することができます：
 
 **すべてのインデックスとタイプ、またはすべてのスペルチェック辞書のインデックスを再作成します。
-**個々のインデックス付け可能な型：**インデックス付け可能な型を個別に再インデックス付けします。
+**個々のインデックス付け可能な型：** インデックス付け可能な型を個別に再インデックス付けします。
 
 1. グローバルメニュー &rarr; ［コントロールパネル］ &rarr; ［検索機能］を開き、［アクションをインデックスする］タブをクリックします。
 
@@ -36,7 +36,7 @@ Index Actionsでは、Liferayのデータのインデックスを再作成する
 
    ![Choose the re-indexing mode.](./re-indexing-modes/images/01.png)
 
-   Liferay 7.4 2023.Q4以降（Update/GA 102+）では、検索のダウンタイムを避けるために再インデックスのモードを設定することができます。 導入された_Concurrent_モードと_Sync_モードについては、 [Re-Indexing Modes](./re-indexing-modes.md) を参照のこと。
+   Liferay 7.4 2023.Q4以降（Update/GA 102+）では、検索のダウンタイムを避けるために再インデックスのモードを設定することができます。 導入された **Concurrent** モードと **Sync** モードについては、 [再インデックス・モード](./re-indexing-modes.md) を参照のこと。
 
 1. [Liferay 7.4] 実行スコープタブで再インデックスするインスタンスを選択します。
 
@@ -44,7 +44,7 @@ Index Actionsでは、Liferayのデータのインデックスを再作成する
 
    Liferay 7.4 以降、再インデックスアクションの範囲を特定の [バーチャルインスタンス](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md) に限定することができます。
 
-1. [Liferay 2023.Q4+/GA 102+] 再インデックスを確認するダイアログで_Execute_をクリックします。
+1. [Liferay 2023.Q4+/GA 102+] 再インデックスを確認するダイアログで **Execute** をクリックします。
 
    ![Confirm that you'd like to re-index.](./search-administration/images/04.png)
 

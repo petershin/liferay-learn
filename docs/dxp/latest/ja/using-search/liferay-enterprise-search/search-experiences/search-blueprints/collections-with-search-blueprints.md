@@ -6,7 +6,7 @@
 検索ブループリントを作成すると、 [コレクション・プロバイダ](../../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) が自動的に登録されます。 ブループリントのクエリとコンフィギュレーションに一致するアセットがコレクションに追加されます。
 
 ```{important}
-Liferay の [Asset Framework](../../../../building-applications/data-frameworks/asset-framework.md) に登録されたコンテンツだけが、ブループリント収集プロバイダから返されます。
+Liferay の [アセットフレームワーク](../../../../building-applications/data-frameworks/asset-framework.md) に登録されたコンテンツだけが、ブループリント収集プロバイダから返されます。
 ```
 
 ![Search blueprints are registered as collection providers.](./collections-with-search-blueprints/images/01.png)
@@ -43,7 +43,7 @@ Liferay の [Asset Framework](../../../../building-applications/data-frameworks/
 
    ![Three events are added to the Calendar widget.](./collections-with-search-blueprints/images/03.png)
 
-1. アプリケーション・メニュー(![グローバル・メニュー](../../../../images/icon-applications-menu.png))から、_Blueprints_を開きます。
+1. アプリケーション・メニュー(![グローバル・メニュー](../../../../images/icon-applications-menu.png))から、 **Blueprints** を開きます。
 
 1. 要素タブで、このJSONを使って新しいカスタム要素を追加する：
 
@@ -88,14 +88,14 @@ Liferay の [Asset Framework](../../../../building-applications/data-frameworks/
 1. ブループリント] タブで、未来のカレンダー イベントのみに一致するブループリントを作成します：
 
    * タイトル今後のカレンダーイベント提供者_を入力してください。
-   * クエリ設定：検索可能なタイプで_カレンダーイベント_を選択します。
-   * Query Elements: _Limit Results to Future Events_ 要素を追加しました。
+   * クエリ設定：検索可能なタイプで **カレンダーイベント** を選択します。
+   * Query Elements: **Limit Results to Future Events** 要素を追加しました。
 
 1. 設計図を保存する。
 
 1. サイトメニュー(![サイトメニュー](../../../../images/icon-product-menu.png))から、Upcoming Eventsというコンテンツページを追加する。
 
-1. コレクション表示フラグメントをページに追加し、_Future Calendar Events Provider_ コレクション・プロバイダを選択します。
+1. コレクション表示フラグメントをページに追加し、 **Future Calendar Events Provider** コレクション・プロバイダを選択します。
 
    箇条書きリストを表示するようにコレクション表示フラグメントを設定する。
 

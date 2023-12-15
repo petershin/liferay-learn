@@ -4,29 +4,29 @@
 
 新しいカタログを作成するには
 
-1. *グローバルメニュー* (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Catalogs_ に移動します。
+1. **グローバルメニュー**(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 **Commerce** &rarr; **Catalogs** に移動します。
 
-1. *追加* (![Add](../../images/icon-add.png)) をクリックし、これらの情報を入力します：
+1. **追加**(![Add](../../images/icon-add.png)) をクリックし、これらの情報を入力します：
 
-   **製品名：**クラリティ製品カタログ
+   **製品名：** クラリティ製品カタログ
 
-   **デフォルト言語：**英語（米国）
+   **デフォルト言語：** 英語（米国）
 
-   **通貨：**米ドル
+   **通貨：** 米ドル
 
    ![Enter the name, default language, and currency for the B2B catalog.](./creating-and-configuring-catalogs/images/01.png)
 
-1. *Submit*をクリックしてください。
+1. **Submit** をクリックしてください。
 
 カタログを作成すると、基本価格リストと基本プロモーションリストも自動的に作成される。 デフォルトのカタログ画像を追加するオプションがある。 カタログに商品画像がない場合、デフォルトのカタログ画像が商品画像として表示されます。
 
 デフォルト画像を追加するには
 
-1. デフォルトのカタログ画像_カード内の_ファイルを選択*をクリックします。
+1. デフォルトのカタログ画像 **カード内の** ファイルを選択*をクリックします。
 
 1. ライブラリから`square-color.png`を選ぶ。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 ![Add a default catalog image.](./creating-and-configuring-catalogs/images/02.png)
 

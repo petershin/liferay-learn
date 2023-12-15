@@ -13,7 +13,7 @@ Liferayの検索機能には、Elasticsearch固有のAPIとマッピングが活
 LiferayのSolr統合には限界があります。 以下の機能を利用するためには、Elasticsearchが必要です。
 
 * [Liferay オブジェクト](../../../building-applications/objects.md)
-* [Liferay Commerce](https://learn.liferay.com/commerce/latest/en/index.html)
+* [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html)
 * [ワークフロー・メトリクス](../../../process-automation/workflow/using-workflows/using-workflow-metrics.md)
 * [カスタムフィルター検索ウィジェット](../../search-pages-and-widgets/search-results/filtering-search-results.md)
 * [低レベル検索オプション・ウィジェット](../../search-pages-and-widgets/search-results/understanding-low-level-search-options.md)
@@ -36,7 +36,7 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
 * ポータルコアから（モジュール: `portal-kernel`、アーティファクト:
   `com.liferay.portal.kernel` ）：
   * `com.liferay.portal.kernel.search.generic.NestedQuery`
-  * com.liferay.portal.kernel.search.filter`：
+  * `com.liferay.portal.kernel.search.filter`：
     * `ComplexQueryPart`
     * `GeoBoundingBoxFilter`
     * `GeoDistanceFilter`
@@ -50,15 +50,15 @@ LiferayのSolr統合には限界があります。 以下の機能を利用す�
   * `com.liferay.portal.search.geolocation.*`
   * `com.liferay.portal.search.highlight.*`
   * `com.liferay.portal.search.query.function.*`
-  * com.liferay.portal.search.query.*`：
+  * `com.liferay.portal.search.query.*`：
   * `com.liferay.portal.search.script.*`
   * `com.liferay.portal.search.significance.*`
-  * com.liferay.portal.search.sort.*`: `Sort`, `FieldSort`, `ScoreSort` のみがサポートされています。
-* ポータル検索エンジンアダプタ API (Module：Portal-search-engine-adapter-api`、
+  * `com.liferay.portal.search.sort.*`: `Sort`, `FieldSort`, `ScoreSort` のみがサポートされています。
+* ポータル検索エンジンアダプタ API (Module：`Portal-search-engine-adapter-api`、
       Artifact: `com.liferay.portal.search.engine.adapter.api`)
   * `com.liferay.portal.search.engine.adapter.cluster.*`
   * `com.liferay.portal.search.engine.adapter.document.UpdateByQueryDocumentRequest`
-  * com.liferay.portal.search.engine.adapter.index.*`: `RefreshIndexRequest` のみがサポートされています。
+  * `com.liferay.portal.search.engine.adapter.index.*`: `RefreshIndexRequest` のみがサポートされています。
   * `com.liferay.portal.search.engine.adapter.search.*`:
     * `MultisearchSearchRequest`
     * `SuggestSearchRequest`

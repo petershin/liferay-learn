@@ -4,6 +4,9 @@ toc:
   - ./main-competitors-faced-by-liferay/sitecore.md
   - ./main-competitors-faced-by-liferay/optimizely.md
   - ./main-competitors-faced-by-liferay/acquia.md
+visibility:
+- Employee
+- Partner
 ---
 # Liferayの主な競合他社
 

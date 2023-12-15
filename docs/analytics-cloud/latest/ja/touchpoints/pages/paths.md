@@ -20,4 +20,4 @@
 
 ![The path analysis data can be filtered by segments](./paths/images/02.png)
 
-_Filter_をクリックし、表示するセグメントを選択する。 セグメントについて詳しくは、 [セグメントの作成](../../people/segments/creating-segments.md) をご覧ください。
+**Filter** をクリックし、表示するセグメントを選択する。 セグメントについて詳しくは、 [セグメントの作成](../../people/segments/creating-segments.md) をご覧ください。

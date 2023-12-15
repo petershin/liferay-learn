@@ -1,6 +1,6 @@
 # A/Bテスト結果のレビューとテストバリアントの公開
 
-A/Bテストが終了すると、Analytics CloudとLiferay DXPでテスト結果を確認できます。Analytics Cloudは、テスト期間中に **必要信頼度**が達成された場合に勝者を宣言します。テストの必要信頼度を設定する方法については、[A/Bテストの作成](./creating-ab-tests.md) を参照してください。
+A/Bテストが終了すると、Analytics CloudとLiferay DXPでテスト結果を確認できます。Analytics Cloudは、テスト期間中に **必要信頼度** が達成された場合に勝者を宣言します。テストの必要信頼度を設定する方法については、[A/Bテストの作成](./creating-ab-tests.md) を参照してください。
 
 ```{tip}
 A/Bテストが終了すると[Liferayで通知](../../../collaboration-and-social/notifications-and-requests/user-guide/managing-notifications-and-requests.md) が送信されます。

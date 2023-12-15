@@ -16,7 +16,7 @@
 
 一度作成すると、割引を受けるための対象となるチャネル、アカウント、および注文タイプを決定し、資格を得るための要件を定義することができます。 デフォルトでは、Liferayは自動的に割引を適用しますが、クーポンコードとして顧客が利用できるようにすることもできます。 また、割引を設定する際に、割引の開始日と終了日を設定することができます。
 
-[Creating Discount](./creating-a-discount.md) で始めるか、 [Introduction to Pricing](../introduction-to-pricing.md) で割引が Liferay の価格設定エンジンにどのように貢献するかをご覧ください。
+[Creating Discount](./creating-a-discount.md) で始めるか、 [価格の概要](../introduction-to-pricing.md) で割引が Liferay の価格設定エンジンにどのように貢献するかをご覧ください。
 
 ## クーポンコード
 
@@ -24,7 +24,7 @@
 
 ![Activate the coupon code feature and enter a coupon code for this discount type.](./introduction-to-discounts/images/01.png)
 
-クーポンコードを受け付けるには、ストアの [チェックアウト](../../creating-store-content/commerce-storefront-pages/checkout.md) ページに _クーポンコード入力_ ウィジェットを追加する必要があります。 チェックアウトページは、 [Miniumサイト](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) ですぐに利用できます。
+クーポンコードを受け付けるには、ストアの [チェックアウト](../../creating-store-content/commerce-storefront-pages/checkout.md) ページに **クーポンコード入力** ウィジェットを追加する必要があります。 チェックアウトページは、 [Miniumサイト](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) ですぐに利用できます。
 
 ![Place the Coupon Code Entry widget on the Checkout page.](./introduction-to-discounts/images/02.png)
 
@@ -48,9 +48,9 @@
 | これらの製品をすべて所有   | 割引を受けるには、注文に特定のすべての商品が含まれている必要があります。                  |
 | これらの製品のいずれかを所有 | 注文には、割引を受けるために、指定された商品のリストから少なくとも1つの商品が含まれている必要があります。 |
 
-*ルール*セクションで割引ルールを追加できます。 また、開発者は可能 [新しい割引ルール実装](../../developer-guide/promotions/adding-a-new-discount-rule-type.md) することも可能です。
+**ルール** セクションで割引ルールを追加できます。 また、開発者は可能 [新しい割引ルール実装](../../developer-guide/promotions/adding-a-new-discount-rule-type.md) することも可能です。
 
-これらの製品をすべて持っている_または_これらの製品の1つを持っている*ルール*を使用する場合は、カタログ内のどの製品が割引の対象となるかを選択します。
+これらの製品をすべて持っている **または** これらの製品の1つを持っている **ルール** を使用する場合は、カタログ内のどの製品が割引の対象となるかを選択します。
 
 ![The available discount rule types.](./introduction-to-discounts/images/05.png)
 

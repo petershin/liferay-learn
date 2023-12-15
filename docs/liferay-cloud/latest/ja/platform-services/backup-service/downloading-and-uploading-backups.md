@@ -2,7 +2,7 @@
 
 Liferay クラウドバックアップサービスは環境のデータベースと Liferay インスタンスの `LIFERAY_HOME/data` フォルダの全内容のバックアップを作成します。 このコンテンツはアーカイブファイル（それぞれ `.gz` と `.tgz` ）として保存され、Liferay Cloud コンソールからダウンロードできます。
 
-ユーザーは[Liferayクラウドコンソールを使って](#uploading-backups-via-the-console)、または[バックアップAPI](#backup-service-apis)を使って環境のバックアップをダウンロードまたはアップロードすることもできます。
+ユーザーは [Liferayクラウドコンソールを使って](#uploading-backups-via-the-console) 、または [バックアップAPI](#backup-service-apis) を使って環境のバックアップをダウンロードまたはアップロードすることもできます。
 
 ```{note}
 バックアップ]ページは、バックアップサービスのバージョンが4.3.5より古い場合、本番環境でのみ使用できます。
@@ -43,6 +43,7 @@ lcp backup download --backupId [ID] --doclib --concurrency 500
 ```{warning}
 Liferay Cloudでは、データベースのテーブルとカラムの名前は大文字と小文字が区別されます。 データベースをアップロードする前に、テーブル名がパスカルケースであることを確認してください。 詳しくは、 [表の正しい大文字小文字の確認](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) を参照のこと。
 ```
+
 データベースとドキュメント・ライブラリの両方を含むバックアップをアップロードするには、このコマンドを実行します：
 
 ```bash
@@ -68,6 +69,7 @@ mysqldump -uroot -ppassword --add-drop-database --databases lportal | gzip -c | 
 ```{note}
 Backup サービスが少なくともバージョン `4.2` に更新されていない場合は、以下のコマンドを実行してアーカイブを `.tgz` ファイル（`tar zcvf database.tgz database.gz`）に変換する必要があります。 そして、出来上がった `.tgz` アーカイブをアップロードに使用します。
 ```
+
 `databases`フラグと`--add-drop-database`フラグは、バックアップのリストアが正しく動作するために必要である。 また、`/backup/download` API を使用して、バックアップサービスが MySQL ダンプファイルをどのように作成するかを確認することもできます。
 
 これらのオプションを指定した場合、作成されるダンプファイルには、create tableステートメントの直前に以下のコードが含まれます。
@@ -91,7 +93,7 @@ USE `lportal`;
 クラウドコンソールUIまたはAPI経由でバックアップをアップロードするには、ドキュメントライブラリを圧縮してアップロードする必要があります。
 
 ```{tip}
-バックアップのアップロード時にLiferay Cloudの権限が設定されていない場合、その後の環境へのバックアップの復元に時間がかかることがあります。 長いリストア時間を避けるために、`LIFERAY_HOME`フォルダに移動して、ドキュメントライブラリを圧縮する前に次のコマンドを実行してください。chown -R 1000:1000 data/document_library/`
+バックアップのアップロード時にLiferay Cloudの権限が設定されていない場合、その後の環境へのバックアップの復元に時間がかかることがあります。 長いリストア時間を避けるために、`LIFERAY_HOME`フォルダに移動して、ドキュメントライブラリを圧縮する前に次のコマンドを実行してください。`chown -R 1000:1000 data/document_library/`
 ```
 
 このコマンドを実行すると、データボリュームが圧縮されます。
@@ -106,15 +108,15 @@ cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 コンソール経由でバックアップをダウンロードできるのは、**バックアップサービス5.9.0以前**のみです。 バージョン5.9.0以上では、代わりに [CLIツール](#downloading-backups-via-the-cli-tool) 。
 ```
 
-以下の手順に従って（管理者として）、選択した環境の_Backups_ページからバックアップをダウンロードしてください：
+以下の手順に従って（管理者として）、選択した環境の **Backups** ページからバックアップをダウンロードしてください：
 
-1. ダウンロードするバックアップの _アクション_ ( ⋮ ) をクリックします。
+1. ダウンロードするバックアップの **アクション**( ⋮ ) をクリックします。
 
-1. *ダウンロード*をクリックしてください。
+1. **ダウンロード** をクリックしてください。
 
    ![Click on the Actions button, and then click Download.](./downloading-and-uploading-backups/images/01.png)
 
-1. *Database* (`.gz`) または _Liferay_ (`.tgz`) ファイルをクリックしてダウンロードを開始します。 これらのZIPアーカイブを合わせて、環境のバックアップとします。
+1. **Database**(`.gz`) または **Liferay**(`.tgz`) ファイルをクリックしてダウンロードを開始します。 これらのZIPアーカイブを合わせて、環境のバックアップとします。
 
    ```{note}
    バックアップサービスがまだバージョン `4.2` 以上にアップデートされていない場合、データベースボリュームは `.gz` ではなく `.tgz` アーカイブとしてダウンロードされます。
@@ -129,15 +131,16 @@ Liferay Cloudにバックアップをアップロードする前に、データ�
 ```{warning}
 Liferay Cloudでは、データベースのテーブルとカラムの名前は大文字と小文字が区別されます。 データベースをアップロードする前に、テーブル名がパスカルケースであることを確認してください。 詳しくは、 [表の正しい大文字小文字の確認](../../migrating-to-liferay-cloud.md#ensuring-correct-table-capitalization) を参照のこと。
 ```
+
 Backupsページから以下の手順に従ってください：
 
-1. 画面上部にある*バックアップをアップロード...*をクリックします。
+1. 画面上部にある **バックアップをアップロード...** をクリックします。
 
 1. バックアップのアップロード」ページで、該当する環境を展開し、データベースとドキュメントライブラリの両方の「+」アイコンをクリックしてアップロードします。
 
    ![Click the icons to upload both the database and document library as .gz archives.](./downloading-and-uploading-backups/images/03.png)
 
-1. データベース・ダンプとドキュメント・ライブラリの両方がアップロードされたら、_Initiate Upload_をクリックします。
+1. データベース・ダンプとドキュメント・ライブラリの両方がアップロードされたら、 **Initiate Upload** をクリックします。
 
 Liferay Cloudはあなたがアップロードしたファイルを使ってバックアップを生成し、あなたの環境にリストアできるリストに追加します。 バックアップが生成されている間は、他のバックアップの生成や復元はできません。
 
@@ -151,7 +154,7 @@ Liferay Cloudはあなたがアップロードしたファイルを使ってバ�
 
 ### ホスト名の取得
 
-バックアップAPIを呼び出すには、バックアップサービスのホスト名が必要です。 *サービス*のページでご覧いただけます。
+バックアップAPIを呼び出すには、バックアップサービスのホスト名が必要です。 **サービス** のページでご覧いただけます。
 
 ![View the backup service's host name from the Services page.](./downloading-and-uploading-backups/images/05.png)
 
@@ -187,7 +190,7 @@ curl -X POST \
 
 ### データベースAPIのダウンロード
 
-データベースをダウンロードするAPIには、`.gz`ファイルを返すエンドポイントがある。 id`パラメータはバックアップIDを表し、バックアップページで確認できます。 このIDは2つのダッシュで区切られた3つの文字列で構成される（例：`dxpcloud-lqgqnewltbexuewymq-201910031723`）。
+データベースをダウンロードするAPIには、`.gz`ファイルを返すエンドポイントがある。 `id`パラメータはバックアップIDを表し、バックアップページで確認できます。 このIDは2つのダッシュで区切られた3つの文字列で構成される（例：`dxpcloud-lqgqnewltbexuewymq-201910031723`）。
 
 #### パラメーター
 
@@ -231,11 +234,11 @@ curl -X GET \
 
 アップロードバックアップAPIを使ってLiferay Cloudにバックアップをアップロードするには、以下の手順に従ってください。
 
-1. [データベースファイル作成します](#creating-the-database-file)。
+1. [データベースファイル作成します](#creating-the-database-file) 。
 
-1. [ボリュームファイル作成します](#creating-the-volume-file)。
+1. [ボリュームファイル作成します](#creating-the-volume-file) 。
 
-1. データベースとボリュームのファイルを使って、 [バックアップAPIを起動します](#invoking-the-backup-api)。
+1. データベースとボリュームのファイルを使って、 [バックアップAPIを起動します](#invoking-the-backup-api) 。
 
 アップロードAPIを使用する前に、データベースダンプとドキュメントライブラリを別々のアーカイブに圧縮する必要があります。 オンプレミス環境でのアップロードの準備については、 [データベースとドキュメント・ライブラリーのアップロードの準備](#preparing-the-database-and-document-library-for-upload) を参照してください。
 

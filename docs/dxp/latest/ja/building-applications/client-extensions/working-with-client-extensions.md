@@ -15,8 +15,9 @@
 1. Java 8またはJDK 11。
 
     ```{note}
-    サポートされるJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
+    サポートされるJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM設定](../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
     ```
+
 1. Liferayのワークスペース。 クライアント拡張プロジェクトのサンプルがあるワークスペースをダウンロードするには、以下を実行します。
 
    ```bash
@@ -52,21 +53,22 @@
 
 `name`：Liferay UI に表示される名前を入力します。 UIで設定できない場合、`name`の値は使用されない。
 
-type`：クライアント拡張のタイプを設定する (例 `themeCSS`)。 このタイプは、Liferayがクライアント拡張をデプロイしたときにどのように扱うかを決定します。
+`type`：クライアント拡張のタイプを設定する (例 `themeCSS`)。 このタイプは、Liferayがクライアント拡張をデプロイしたときにどのように扱うかを決定します。
 
 `dxp.lxc.liferay.com.virtualInstanceId`：デプロイ先の仮想インスタンス ID を入力します。
 
-各クライアント拡張プロジェクトはワークスペースの `client-extensions/` フォルダの中に独自のフォルダを持ちます。 クライアント拡張プロジェクトには、1つまたは複数のクライアント拡張を定義する1つの `client-extension.yaml` ファイルが含まれます。 例えば、 [`iframe-2` プロジェクトの `client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-iframe-2/client-extension.yaml) では、3つの `iframe` クライアント拡張が定義されています：Baseball`、`Football`、`Hockey` である。
+各クライアント拡張プロジェクトはワークスペースの `client-extensions/` フォルダの中に独自のフォルダを持ちます。 クライアント拡張プロジェクトには、1つまたは複数のクライアント拡張を定義する1つの `client-extension.yaml` ファイルが含まれます。 例えば、 [`iframe-2` プロジェクトの `client-extension.yaml`](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-iframe-2/client-extension.yaml) では、3つの `iframe` クライアント拡張が定義されています：`Baseball`、`Football`、`Hockey` である。
 
 ### クライアント拡張機能の組み立て
 
 クライアント・エクステンションをビルドすると、ファイルは自動的に作成され、 [LUFFA](./packaging-client-extensions.md) にパッケージされます。 client-extension.yaml`ファイルに `assemble` ブロックを定義して、ビルドファイルまたはプロジェクトファイルからインクルードするファイルを設定します。
 
-assembleClientExtension`Gradle タスクは、クライアント拡張プロジェクト内で`gradle build`または`gradle deploy`を実行するときに実行されます。 実行中、プロジェクトの`assemble`ブロックで指定されたファイルはプロジェクト内の`build/liferay-client-extension-build/` フォルダに配置されます。 このフォルダにあるものはすべて、LUFFAを作成するために使用されます（例：`dist/my-client-extension-project.zip`）。
+`assembleClientExtension`Gradle タスクは、クライアント拡張プロジェクト内で`gradle build`または`gradle deploy`を実行するときに実行されます。 実行中、プロジェクトの`assemble`ブロックで指定されたファイルはプロジェクト内の`build/liferay-client-extension-build/` フォルダに配置されます。 このフォルダにあるものはすべて、LUFFAを作成するために使用されます（例：`dist/my-client-extension-project.zip`）。
 
 ```{note}
 クライアント拡張プロジェクトに `build` スクリプトが定義された `package.json` ファイルが含まれている場合、プロジェクトのビルド時にスクリプトが自動的に実行されます。 ビルドのこの部分はファイルがコピーされる*前に行われるので、`assemble`ブロックでタスクの出力場所を指定できます。
 ```
+
 `assemble` ブロックは YAML 配列で、インクルードするファイルを複数指定できます。 各指示はこのパターンに従っている：
 
 ```yaml
@@ -140,7 +142,7 @@ assemble:
       into: static
 ```
 
-LUFFAの作成、構造、内容の詳細については、 [Packaging Client Extensions](./packaging-client-extensions.md) をご参照ください。
+LUFFAの作成、構造、内容の詳細については、 [クライアント拡張機能のパッケージ化](./packaging-client-extensions.md) をご参照ください。
 
 ## Liferayインスタンスにデプロイする
 
@@ -153,6 +155,7 @@ LUFFAの作成、構造、内容の詳細については、 [Packaging Client Ex
 ```{warning}
 この方法では、自己管理インスタンス（LXC-SM）にクライアント拡張機能をデプロイできません。
 ```
+
 LXC用のクライアント拡張機能をデプロイする、
 
 1. ワークスペースの `client-extensions/` フォルダーに移動し、以下を実行する。
@@ -191,15 +194,15 @@ zipファイルを手動でデプロイする必要がある場合は、以下�
 
 クライアント拡張はポータブルです。ドメイン名、ネットワークアドレス、Liferayのドメインなど、環境固有の詳細をハードコードすべきではありません。 クライアント・エクステンションは、実行時にコンテキストに関する情報を見つけることができる。
 
-各クライアント拡張ワークロードには、重要な文脈依存メタデータを含む_ルート_のセットが自動的に提供される。 このルートベースのアプローチにより、アプリケーションロジックは、どこで呼び出されたかに関係なく、一様にコンテキストに敏感な情報を取得することができる。 クライアントのエクステンション・プロジェクトをそこに向けるだけでいい。
+各クライアント拡張ワークロードには、重要な文脈依存メタデータを含む **ルート** のセットが自動的に提供される。 このルートベースのアプローチにより、アプリケーションロジックは、どこで呼び出されたかに関係なく、一様にコンテキストに敏感な情報を取得することができる。 クライアントのエクステンション・プロジェクトをそこに向けるだけでいい。
 
 ### ルート
 
-ルート*は、キーと値のペアのセットを含むディレクトリ構造である。 ファイル名がキーで、ファイルの内容が値となる。 ディレクトリ構造は無視され、ディレクトリパスは環境変数の値となる。 [Kubernetes configMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-volume) と同じパターンです。
+*ルート*は、キーと値のペアのセットを含むディレクトリ構造である。 ファイル名がキーで、ファイルの内容が値となる。 ディレクトリ構造は無視され、ディレクトリパスは環境変数の値となる。 [Kubernetes configMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-volume) と同じパターンです。
 
 使用する環境変数は、2種類のルートのいずれかを指すことができる：
 
-1. liferay_routes_dxp`：デプロイされた _Liferay 仮想インスタンス_ のコンテキスト依存のメタデータを持つルートのディレクトリパス。
+1. `liferay_routes_dxp`：デプロイされた **Liferay 仮想インスタンス** のコンテキスト依存のメタデータを持つルートのディレクトリパス。
 
    以下は `LIFERAY_ROUTES_DXP` ルートの例です：
 
@@ -213,7 +216,7 @@ zipファイルを手動でデプロイする必要がある場合は、以下�
    └── com.liferay.lxc.dxp.server.protocol
    ```
 
-1. `liferay_routes_client_extension`：クライアント拡張プロジェクト*自身のコンテキスト依存のメタデータを含むルートへのディレクトリパス。
+1. `liferay_routes_client_extension`：**クライアント拡張プロジェクト**自身のコンテキスト依存のメタデータを含むルートへのディレクトリパス。
 
    例については [OAuth Headless Server Client Extensions](configuration-client-extensions.md#oauth-headless-server-client-extensions) および [OAuth User Agent Client Extensions](configuration-client-extensions.md#oauth-user-agent-client-extensions) を参照してください。
 
@@ -225,7 +228,7 @@ Liferay Experience Cloud のコンテナでは、これらの環境変数が自�
 
 Liferay Workspace の `Exec`、`JavaExec`、`NodeExec` Gradle タスクを使用する場合、これらの環境変数には自動的にデフォルト値が設定されます。 これらのデフォルト値を使用する：
 
-| **環境変数                          | **デフォルト値**                                                      |
+| **環境変数**                          |**デフォルト値**                                                      |
 | :-------------------------------- | :-------------------------------------------------------------- |
 | `LIFERAY_ROUTES_DXP`              | `[Liferay Home]/routes/default/dxp`                             |
 | `LIFERAY_ROUTES_CLIENT_EXTENSION` | `[Liferay Home]/routes/default/[Client extension project name]` |
@@ -235,6 +238,7 @@ Liferay Workspace の `Exec`、`JavaExec`、`NodeExec` Gradle タスクを使用
 ```{note}
 Liferayワークスペースのバージョンが9.0.2より前の場合は、同じ形式に従って自分で環境変数を定義する必要があります。
 ```
+
 これら2つの環境変数は、クライアント拡張プロセスがメタデータにアクセスするために呼び出される際に提供されなければならない。
 
 ## 関連トピック

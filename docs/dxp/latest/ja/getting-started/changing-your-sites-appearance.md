@@ -14,19 +14,19 @@ http://localhost:8080 から Liferay にサインインします。 電子メー
 
 次に、以下の手順に従います。
 
-1. *サイトメニュー* (![サイトメニュー](../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ページ_ に移動します。
+1. **サイトメニュー**(![サイトメニュー](../images/icon-product-menu.png))を開き、 **サイトビルダー** &rarr; **ページ** に移動します。
 
-1. アプリケーションバーの_Actions_ (![アクションボタン](../images/icon-actions.png))をクリックし、_Configuration_を選択します。
+1. アプリケーションバーの **Actions**(![アクションボタン](../images/icon-actions.png))をクリックし、 **Configuration** を選択します。
 
    ![Open the Pages application, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
-1. ファビコン]で、_ファビコンを選択_（[ファビコンを選択ボタン](../images/icon-switch.png)）をクリックします。
+1. ファビコン]で、 **ファビコンを選択**（ [ファビコンを選択ボタン](../images/icon-switch.png) ）をクリックします。
 
    ![Click the Select Favicon button.](./changing-your-sites-appearance/images/02.png)
 
 1. 画像を選択またはアップロードします。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 サイトでは、選択した画像がお気に入りのアイコンとして使用されます。
 
@@ -66,9 +66,9 @@ http://localhost:8080 から Liferay にサインインします。 電子メー
 
 1. ブラウザで`https://localhost:8080`を開き、 [管理者としてログインする](./introduction-to-the-admin-account.md) 。
 
-1. *サイトメニュー* (![サイトメニュー](../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ページ_ に移動します。
+1. **サイトメニュー**(![サイトメニュー](../images/icon-product-menu.png))を開き、 **サイトビルダー** &rarr; **ページ** に移動します。
 
-1. アプリケーションバーの_Actions_ (![アクションボタン](../images/icon-actions.png))をクリックし、_Configuration_を選択します。
+1. アプリケーションバーの **Actions**(![アクションボタン](../images/icon-actions.png))をクリックし、 **Configuration** を選択します。
 
    ![Open the Pages screen, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
@@ -76,9 +76,9 @@ http://localhost:8080 から Liferay にサインインします。 電子メー
 
    ![Click Change Current Theme to select a new theme.](./changing-your-sites-appearance/images/03.png)
 
-1. サンプルテーマを選択してください：_Acme Sample Blue Theme_を選択してください。
+1. サンプルテーマを選択してください： **Acme Sample Blue Theme** を選択してください。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ホームページに移動し、背景色が青になったことを確認する。
 
@@ -86,7 +86,7 @@ http://localhost:8080 から Liferay にサインインします。 電子メー
 
 ## 次のステップ
 
-さらに、 [スタイルブック](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を使ってデザイン要素をさらにカスタマイズしたり、 [マスターページテンプレート](../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) を使ってコンテンツページのヘッダーやフッターをデザインすることができます。 サイトのルック＆フィールのカスタマイズの完全な概要については、 [Site Appearance](../site-building/site-appearance/site-appearance.md) をご覧ください。
+さらに、 [スタイルブック](../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を使ってデザイン要素をさらにカスタマイズしたり、 [マスターページテンプレート](../site-building/creating-pages/defining-headers-and-footers/master-page-templates.md) を使ってコンテンツページのヘッダーやフッターをデザインすることができます。 サイトのルック＆フィールのカスタマイズの完全な概要については、 [サイトの外観](../site-building/site-appearance/site-appearance.md) をご覧ください。
 
 [Liferay Marketplace](../system-administration/installing-and-managing-apps/using-marketplace.md) には、プロフェッショナルなルックアンドフィールを素早く実現するためのテーマが多数用意されています。
 

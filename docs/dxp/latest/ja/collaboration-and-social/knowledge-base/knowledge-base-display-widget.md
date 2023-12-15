@@ -4,7 +4,7 @@
 
 ナレッジベース表示ウィジェットを使用すると、ナビゲーション、コメント、評価、ソーシャルメディアリンクが組み込まれたサイトページに公開記事を表示できます。 デフォルトでは、このウィジェットにナレッジベースのホームフォルダの記事が表示されるようになっています。 どの記事が含まれるかはカスタマイズできる。
 
-ウィジェットは、フラグメントとウィジェットのサイドパネルの_コンテンツ管理_の下にあります。
+ウィジェットは、フラグメントとウィジェットのサイドパネルの **コンテンツ管理** の下にあります。
 
 ![The Knowledge Base Display widget appears under Content Management in the widget menu.](./knowledge-base-display-widget/images/01.png)
 
@@ -12,17 +12,17 @@
 
 1. ナレッジベース表示ウィジェットを含むページの編集を開始します。
 
-1. ウィジェットの_オプション_ボタン(![オプションボタン](../../images/icon-actions.png))をクリックし、_設定_を選択します。
+1. ウィジェットの **オプション** ボタン(![オプションボタン](../../images/icon-actions.png))をクリックし、 **設定** を選択します。
 
    ![Click the Options button and select Configuration.](./knowledge-base-display-widget/images/02.png)
 
-1. Setupタブで、Content Selectionの_Select_をクリックし、表示する記事を決定する。
+1. Setupタブで、Content Selectionの **Select** をクリックし、表示する記事を決定する。
 
    ![In the Setup tab, click Select under Content Selection  to determine which articles to display.](./knowledge-base-display-widget/images/03.png)
 
-1. 個々の記事またはフォルダの_選択_をクリックします。
+1. 個々の記事またはフォルダの **選択** をクリックします。
 
-   または、_このフォルダを選択_をクリックすると、現在のフォルダの記事が表示されます。
+   または、 **このフォルダを選択** をクリックすると、現在のフォルダの記事が表示されます。
 
    ![Click Select for the desired article or folder, or click Select this Folder to select the current folder.](./knowledge-base-display-widget/images/04.png)
 
@@ -76,7 +76,7 @@
    └── 第 1.2.2 条
    ```
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ## ウィジェットの機能を調べる
 
@@ -104,9 +104,9 @@
 * 記事を移動する
 * 記事を削除する
 
-記事のコンテンツの下には評価インターフェイスがあり、サムアップ/サムダウンのアイコンが表示されています。 ユーザーは、記事の下にある「_ご意見はありますか_」と書かれたテキストボックスで、提案やコメントを提出することもできる。 管理者は、 [提案を確認し、それらの進行状況をマークすることができます](./responding-to-knowledge-base-feedback.md) 。
+記事のコンテンツの下には評価インターフェイスがあり、サムアップ/サムダウンのアイコンが表示されています。 ユーザーは、記事の下にある「**ご意見はありますか**」と書かれたテキストボックスで、提案やコメントを提出することもできる。 管理者は、 [提案を確認し、それらの進行状況をマークすることができます](./responding-to-knowledge-base-feedback.md) 。
 
-管理者がKnowledge BaseのソースURL機能を有効にしていて、記事にソースURLが割り当てられている場合、記事のタイトルの右側に_Edit on GitHub_ボタン(![GitHub icon](./knowledge-base-display-widget/images/11.png)) が表示されます。 このボタンは、GitHubの記事のソースにリンクしています。 この機能を利用して、記事の修正や改善のための投稿を促すことができます。 詳しくは [ナレッジベース システム設定](./knowledge-base-system-settings.md) をご覧ください。
+管理者がKnowledge BaseのソースURL機能を有効にしていて、記事にソースURLが割り当てられている場合、記事のタイトルの右側に **Edit on GitHub** ボタン(![GitHub icon](./knowledge-base-display-widget/images/11.png)) が表示されます。 このボタンは、GitHubの記事のソースにリンクしています。 この機能を利用して、記事の修正や改善のための投稿を促すことができます。 詳しくは [ナレッジベース システム設定](./knowledge-base-system-settings.md) をご覧ください。
 
 ## 関連トピック
 

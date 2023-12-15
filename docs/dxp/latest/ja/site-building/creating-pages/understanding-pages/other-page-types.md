@@ -4,7 +4,7 @@
 
 ## ユーティリティページ
 
-ユーティリティ・ページは、404エラー・ページのようなシステム・レベルのページに適用できるコンテンツ・ページです。 詳しくは、 [Using Utility Pages](../adding-pages/using-utility-pages.md) をご覧ください。
+ユーティリティ・ページは、404エラー・ページのようなシステム・レベルのページに適用できるコンテンツ・ページです。 詳しくは、 [ユーティリティページの使用](../adding-pages/using-utility-pages.md) をご覧ください。
 
 ![You can create 404 error page like this one using a utility page.](./other-page-types/images/01.png)
 

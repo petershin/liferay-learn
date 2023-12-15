@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Sitecore社
 
 **概要**

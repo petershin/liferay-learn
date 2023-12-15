@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # ディスカバリー・コール - デモ・ディスカバリー
 
 **概要**

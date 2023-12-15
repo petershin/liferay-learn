@@ -1,6 +1,6 @@
 # オーディエンスターゲティングからの手動移行
 
-オーディエンスターゲティングのユーザーセグメントとLiferay 7.2以降のセグメントは類似しているため、アップグレード中にほとんどの構成が自動的にLiferayセグメンテーションに転送されます（詳細については、 [Migrating User Segments](./migrating-user-segments.md) を参照してください）。 ただし、一部のオーディエンスターゲティングルールには、Liferay 7.2以降のセグメンテーションに直接相当するものがありません。 ここでは、各ルールタイプに対し推奨される解決策を確認できます。
+オーディエンスターゲティングのユーザーセグメントとLiferay 7.2以降のセグメントは類似しているため、アップグレード中にほとんどの構成が自動的にLiferayセグメンテーションに転送されます（詳細については、 [ユーザーセグメントの移行](./migrating-user-segments.md) を参照してください）。 ただし、一部のオーディエンスターゲティングルールには、Liferay 7.2以降のセグメンテーションに直接相当するものがありません。 ここでは、各ルールタイプに対し推奨される解決策を確認できます。
 
 ## ユーザー属性ルール
 
@@ -12,7 +12,7 @@
 
 ## 動作ルール
 
-Liferay 7.2以降では、動作ベースのルールはAnalytics Cloudを使用して管理されます。 詳細は、 [Analytics Cloudのドキュメント](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html) を参照してください。
+Liferay 7.2以降では、動作ベースのルールはAnalytics Cloudを使用して管理されます。 詳細は、 [セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html) を参照してください。
 
 ## カスタムルールの移行
 
@@ -42,4 +42,4 @@ Liferay 7.2 のユーザーにとって、コレクションは [コンテンツ
 * [カスタム・ユーザー・フィールドの作成](../../../users-and-permissions/users/adding-custom-fields-to-users.md)
 * [Segments Editor UI リファレンス](../segmentation/segments-editor-ui-reference.md)
 * [コレクションの作成](../../../site-building/displaying-content/collections-and-collection-pages/creating-collections.md)
-* [アナリティクス クラウド セグメント](https://learn.liferay.com/analytics-cloud/latest/en/people/segments/segments.html)
+* [セグメント](https://learn.liferay.com/analytics-cloud/latest/ja/people/segments/segments.html)

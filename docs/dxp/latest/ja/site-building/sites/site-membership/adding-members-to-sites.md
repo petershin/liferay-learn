@@ -12,8 +12,8 @@
 
 管理者は、そのサイトの会員アプリからサイトメンバーを管理できます。
 
-1. [商品メニュー](../../../images/icon-product-menu.png)を開き、![コンパスのアイコン](../../../../images/icon-compass.png)をクリックし、管理したいサイトを選択します。
-1. 製品メニューの _People_ &rarr; _Memberships_ を選択します。 このオプションが表示されない場合は、マニュアル・メンバーシップが無効になっています。 手動メンバーシップを有効にするには、_Site Settings_ &rarr; _Site Configuration_ を選択します。 *Details*タブで、_Allow Manual Membership Management_を切り替える。
+1. ![商品メニュー](../../../images/icon-product-menu.png) を開き、![Compass Icon](../../../images/icon-compass.png)をクリックし、管理したいサイトを選択します。
+1. 製品メニューの **People** &rarr; **Memberships** を選択します。 このオプションが表示されない場合は、マニュアル・メンバーシップが無効になっています。 手動メンバーシップを有効にするには、 **Site Settings** &rarr; **Site Configuration** を選択します。 **Details** タブで、 **Allow Manual Membership Management** を切り替える。
 
 ここから、サイトメンバーシップ、組織、ユーザーグループの関連付けを管理できます。 これらについては、 [ユーザーと組織](../../../users-and-permissions.md) で詳しく説明しています。 このページでは、現在のサイトメンバー全員のリストを見ることができ、サイトからユーザーメンバーシップを追加または削除することができます。
 
@@ -23,11 +23,11 @@
 
 既存のユーザーをサイトのメンバーにするには、以下の手順に従ってください：
 
-1. 画面右上の_追加_（！[ユーザー追加](../../../images/icon-add.png)）をクリックします。
-1. フィルタリングと順序_または*検索*機能を使用して、サイトに追加したいユーザーを検索します。
-1. 追加したいユーザーを選択し、_Done_をクリックします。
+1. 画面右上の **追加**（![Add User](../../../images/icon-add.png) ）をクリックします。
+1. フィルタリングと順序_または **検索** 機能を使用して、サイトに追加したいユーザーを検索します。
+1. 追加したいユーザーを選択し、 **Done** をクリックします。
 
-*Assign Users to This Site*画面では、サイトに追加できるすべてのユーザーが表示されます。 非アクティブ化されたユーザーは表示されません。 サイトメンバーも表示されますが、チェックボックスがグレー表示されています。
+**Assign Users to This Site** 画面では、サイトに追加できるすべてのユーザーが表示されます。 非アクティブ化されたユーザーは表示されません。 サイトメンバーも表示されますが、チェックボックスがグレー表示されています。
 
 サイトのメンバーであるユーザーのリストを見ることができます。 現在のメンバーは表示されていますが、ここで追加したり削除したりすることはできません。](./adding-members-to-sites/images/02.png)
 
@@ -35,8 +35,8 @@
 
 ユーザーをサイトから削除するには、2つの方法があります。 個々のメンバーを削除するには、次の手順に従います。
 
-1. 削除したいユーザーの_Actions_ (![Actions](../../../images/icon-actions.png)) アイコンをクリックします。
-2. *メンバーシップの削除*を選択します。
+1. 削除したいユーザーの **Actions**(![Actions](../../../images/icon-actions.png)) アイコンをクリックします。
+2. **メンバーシップの削除** を選択します。
 3. 表示されるポップアップで、削除を確認します。
 
 ![You can remove individual members from a site.](./adding-members-to-sites/images/03.png)
@@ -55,15 +55,15 @@
 
 以下の手順に従って、ユーザにサイト・ロールを割り当ててください：
 
-1. ユーザーまたはユーザーを選択し、(Actionsメニューまたは上部のメニューから) _Assign Roles_ をクリックします。 これにより、_Assign Roles_画面が表示されます。
+1. ユーザーまたはユーザーを選択し、(Actionsメニューまたは上部のメニューから)**Assign Roles** をクリックします。 これにより、 **Assign Roles** 画面が表示されます。
 1. 選択したユーザーに割り当てるロールを選択します。
-1. *完了*をクリックする。
+1. **完了** をクリックする。
 
    ![You can assign site roles to users.](./adding-members-to-sites/images/04.png)
 
 ## マイサイトアプリケーションによるサイトへの参加
 
-マイサイト」アプリケーションは、ユーザーが所属するサイトを一覧表示します。 このアプリケーションは、デフォルトでUser Profile Menu [Dashboard pages](../personal-sites.md) に追加されます。 My Sitesアプリケーションをページに追加し、_All Sites_タブにアクセスすると、利用可能なオープンサイトと制限付きサイトを表示できます。 サイトの_オプション_ボタン（！[Options](../../../images/icon-actions.png） ）を選択し、_参加_をクリックすることにより、あなたがメンバーでないサイトへのアクセスを要求することができます。
+マイサイト」アプリケーションは、ユーザーが所属するサイトを一覧表示します。 このアプリケーションは、デフォルトでUser Profile Menu [Dashboard pages](../personal-sites.md) に追加されます。 My Sitesアプリケーションをページに追加し、 **All Sites** タブにアクセスすると、利用可能なオープンサイトと制限付きサイトを表示できます。 サイトの **オプション** ボタン（！[Options](../../../images/icon-actions.png） ）を選択し、 **参加** をクリックすることにより、あなたがメンバーでないサイトへのアクセスを要求することができます。
 
 ![The My Sites Application displays the sites you're a member of and the ones you can join.](./adding-members-to-sites/images/05.png)
 

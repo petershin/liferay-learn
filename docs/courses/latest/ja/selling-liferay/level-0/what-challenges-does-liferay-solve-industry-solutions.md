@@ -6,6 +6,9 @@ toc:
   - ./what-challenges-does-liferay-solve-industry-solutions/insurance.md
   - ./what-challenges-does-liferay-solve-industry-solutions/healthcare.md
   - ./what-challenges-does-liferay-solve-industry-solutions/energy-and-utilities.md
+visibility:
+- Employee
+- Partner
 ---
 # Liferayが解決する課題：業界別ソリューション
 

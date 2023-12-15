@@ -31,17 +31,17 @@ Liferayは、複数のユーザーが同じページを編集しようとした�
 
 編集モードで開いているページを変更せずに長時間放置すると、自動的にロックが解除されます。 時間は設定できる：
 
-1. グローバル・メニュー([グローバル・メニュー](../../../images/icon-applications-menu.png))を開き、[コントロール・パネル(Control Panel)] &rarr; [設定(Configuration)]の下にある[インスタンス設定(Instance Settings)]* に移動します。
+1. グローバル・メニュー( [グローバル・メニュー](../../../images/icon-applications-menu.png) )を開き、[コントロール・パネル(Control Panel)] &rarr; [設定(Configuration)]の下にある[インスタンス設定(Instance Settings)]* に移動します。
 
 1. コンテンツとデータ]で、[ページ]を選択します。
 
-1. Virtual Instance Scopeで、_Locked Pages_を選択します。
+1. Virtual Instance Scopeで、 **Locked Pages** を選択します。
 
-1. *自動ロック解除プロセスを許可*を切り替えます。
+1. **自動ロック解除プロセスを許可** を切り替えます。
 
    この機能を無効にしたい場合は、機能をオフにしてください。
 
-1. *オートセーブしない時間*を分単位で設定します。
+1. **オートセーブしない時間** を分単位で設定します。
 
 ```{warning}
 システムは15分ごとにロックされたページをチェックするため、自動保存なしの時間は正確ではないかもしれません。
@@ -51,9 +51,9 @@ Liferayは、複数のユーザーが同じページを編集しようとした�
 
 サイト管理者またはスーパー管理者は、手動でページのロックを解除できます。
 
-1. (![サイトメニュー](../../../images/icon-product-menu.png))を開き、_設定_ &rarr; _ロックされたページ_に移動します。
+1. (![サイトメニュー](../../../images/icon-product-menu.png))を開き、 **設定** &rarr; **ロックされたページ** に移動します。
 
-2. ロック解除したいページの横にある_Actions_ (![Actionsボタン](../../../images/icon-actions.png))をクリックし、 &rarr; _Unlock_。
+2. ロック解除したいページの横にある **Actions**(![Actionsボタン](../../../images/icon-actions.png))をクリックし、 &rarr; **Unlock** 。
 
    ロック(![ロックアイコン](../../../images/icon-lock.png))アイコンまたはその横のActionsボタン &rarr; Unlockをクリックすることで、複数のページを選択し、一括でロックを解除することができます。
 

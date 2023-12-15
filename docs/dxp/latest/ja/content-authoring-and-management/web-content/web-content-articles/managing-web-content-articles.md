@@ -1,6 +1,6 @@
 # ウェブコンテンツの記事管理
 
-ウェブコンテンツライブラリーに記事を追加したら、ウェブコンテンツUIで管理することができます。 アーティクルの管理アクションにアクセスするには、その_アクション_ボタン(![アクションボタン](../../../images/icon-actions.png))をクリックします。
+ウェブコンテンツライブラリーに記事を追加したら、ウェブコンテンツUIで管理することができます。 アーティクルの管理アクションにアクセスするには、その **アクション** ボタン(![アクションボタン](../../../images/icon-actions.png))をクリックします。
 
 ![Click the article's actions button to access configuration options.](./managing-web-content-articles/images/01.png)
 
@@ -13,7 +13,7 @@
 | 購読 (![Subscribe](../../../images/icon-subscribe.png))          | 新着・更新記事の通知を受け取る。                                                                                                                                                                                                       |
 | 履歴を見る(![履歴を見る](../../../images/icon-date-time.png))            | ウェブコンテンツのバージョン履歴を表示します。                                                                                                                                                                                                |
 | 使用例を見る (![使用例を見る](../../../images/icon-view-type-list.png))    | ウェブコンテンツ記事が使用されているページ、ページテンプレート、表示ページテンプレートを表示します。                                                                                                                                                                     |
-| コピーを取る (![Copy](../../../images/icon-copy.png))                | ウェブコンテンツの記事を複製する。 コピーは、同じ名前の最後に_Copy_が付加されたものを使用する。                                                                                                                                                                    |
+| コピーを取る (![Copy](../../../images/icon-copy.png))                | ウェブコンテンツの記事を複製する。 コピーは、同じ名前の最後に **Copy** が付加されたものを使用する。                                                                                                                                                                    |
 | 翻訳用エクスポート (![Export](../../../images/icon-export.png))         | 翻訳用のウェブコンテンツを `.xliff` または `.xlf` ファイルとしてエクスポートします。 詳しくは、 [Exporting Content for Translation](../../translating-pages-and-content/translating-web-content.md#exporting-content-for-translation) を参照してください。  |
 | 翻訳のインポート (![Import](../../../images/icon-download.png))        | `.zip`ファイルとしてまとめてインポートすることも、`.xliff`ファイルまたは`.xlf`ファイルとして個別にインポートすることもできます。 詳細については、 [コンテンツ翻訳のインポート](../../translating-pages-and-content/translating-web-content.md#importing-content-translations) を参照してください。 |
 | 移動 (![Move](../../../images/icon-move-folder.png))             | 記事を別のフォルダに移す。                                                                                                                                                                                                          |
@@ -23,7 +23,8 @@
 ```{tip}
 フォルダを使用することで、ワークフローやパーミッションを含む、さらなる組織とアーティクルの管理機能を提供することができる。
 ```
-情報パネルでは、記事の情報は2つのタブに整理されている：詳細とバージョンです。 記事の情報パネルにアクセスするには、記事を選択し、アプリケーション・メニューの_情報パネルの切り替え_([情報パネルの切り替え](../../../images/icon-information.png))をクリックします。
+
+情報パネルでは、記事の情報は2つのタブに整理されている：詳細とバージョンです。 記事の情報パネルにアクセスするには、記事を選択し、アプリケーション・メニューの **情報パネルの切り替え**( [情報パネルの切り替え](../../../images/icon-information.png) )をクリックします。
 
 ![Select the article and click on the toggle info panel icon to access the info panel reference.](./managing-web-content-articles/images/02.png)
 
@@ -44,7 +45,7 @@
 
 ## 情報パネルのバージョンタブ
 
-バージョン] タブには、選択したウェブコンテンツ記事の最新の 10 バージョンが表示されます。 利用可能なすべてのバージョンを表示するには、バージョンタブの一番下にある_もっと見る_ボタンをクリックするか、記事の_アクション_ボタン(![アクションボタン](../../../images/icon-actions.png))をクリックし、_履歴を見る_を選択します。
+バージョン] タブには、選択したウェブコンテンツ記事の最新の 10 バージョンが表示されます。 利用可能なすべてのバージョンを表示するには、バージョンタブの一番下にある **もっと見る** ボタンをクリックするか、記事の **アクション** ボタン(![アクションボタン](../../../images/icon-actions.png))をクリックし、 **履歴を見る** を選択します。
 
 ![Click the article's Actions button and select View History to access configuration options for the versions.](./managing-web-content-articles/images/03.png)
 
@@ -53,7 +54,7 @@
 | プレビュー (![Preview](../../../images/icon-view.png))  | レンダリングされたウェブコンテンツの記事バージョンを表示します。                                   |
 | 期限切れ (![Expire](../../../images/icon-time.png))    | ウェブコンテンツの記事バージョンを無効にする。                                            |
 | 比較する                                               | 選択したバージョンと別のバージョンの違いを表示する。 バージョン間の追加、削除、書式の変更を表示する新しいページが表示されます。   |
-| コピーを取る (![Copy](../../../images/icon-copy.png))    | 選択したバージョンと同じ新しいウェブコンテンツ記事を作成します。 コピーは、同じ名前の最後に_Copy_が付加されたものを使用する。 |
+| コピーを取る (![Copy](../../../images/icon-copy.png))    | 選択したバージョンと同じ新しいウェブコンテンツ記事を作成します。 コピーは、同じ名前の最後に **Copy** が付加されたものを使用する。 |
 | 削除 (![Delete](../../../images/icon-app-trash.png)) | 選択したバージョンを削除する。                                                    |
 
 ## 関連トピック

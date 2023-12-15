@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Optimizely社
 
 **概要**

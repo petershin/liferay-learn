@@ -111,7 +111,7 @@ DXPの[ワークフロー](../../../../process-automation/workflow/introduction-
 
 ## 関連トピック
 
-  - [ドキュメントとメディアUIリファレンス](../../documents-and-media-ui-reference.md)
-  - [フォルダの作成](../../uploading-and-managing/creating-folders.md)
-  - [ファイルのアップロード](../../uploading-and-managing/uploading-files.md)
-  - [ファイルストレージの構成](../../../../system-administration/file-storage.md)
+* [ドキュメントとメディアUIリファレンス](../../documents-and-media-ui-reference.md)
+* [フォルダの作成](../../uploading-and-managing/creating-folders.md)
+* [ファイルのアップロード](../../uploading-and-managing/uploading-files.md)
+* [ファイルストレージの構成](../../../../system-administration/file-storage.md)

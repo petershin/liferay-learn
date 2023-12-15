@@ -10,23 +10,23 @@
    ./gradlew :client-extensions:liferay-ticket-custom-element:deploy
    ```
 
-1. Liferayで_Product Menu_ (![Product Menu](../../../images/icon-product-menu.png)) を選択し、_Site Builder_ &rarr; _Pages_に移動します。
+1. Liferayで **Product Menu**(![Product Menu](../../../images/icon-product-menu.png)) を選択し、 **Site Builder** &rarr; **Pages** に移動します。
 
-1. [アイコンの追加](../../../images/icon-add.png))をクリックし、_Page_を選択する。
+1. [アイコンの追加](../../../images/icon-add.png) )をクリックし、 **Page** を選択する。
 
 1. ブランクタイプのページを選択する。 ページに名前をつける（例：`ticketing system`）。 追加」をクリックする。
 
 1. 左のナビゲーションのフラグメントとウィジェットの下にある_ウィジェットタブをクリックします。
 
-1. クライアント拡張タイプウィジェットまでスクロールダウンしてください。 _Liferay Ticket Custom Element_ ウィジェットをページにドラッグします。
+1. クライアント拡張タイプウィジェットまでスクロールダウンしてください。 **Liferay Ticket Custom Element** ウィジェットをページにドラッグします。
 
-1. _Publish_をクリックする。
+1. **Publish** をクリックする。
 
 カスタムチケットシステムアプリケーションがサイトページ上で動作するようになりました。
 
 ![The custom ticketing system application is now running.](./deploying-a-custom-application/images/01.png)
 
-新しいチケットを生成する」ボタンをクリックすると、さらにランダムなチケットエントリーが生成されます。 また、_コントロールパネル_ &rarr; _チケット_から独自のチケットオブジェクトエントリーを作成することもできます。
+新しいチケットを生成する」ボタンをクリックすると、さらにランダムなチケットエントリーが生成されます。 また、 **コントロールパネル** &rarr; **チケット** から独自のチケットオブジェクトエントリーを作成することもできます。
 
 ## カスタム要素コードを調べる
 
@@ -57,7 +57,7 @@ liferay-ticket-custom-element:
    useESM: true
 ```
 
-各プロパティの説明は [Custom Element YAML Configuration Reference](../../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md) を参照してください。
+各プロパティの説明は [カスタム要素のYAML設定リファレンス](../../../building-applications/client-extensions/front-end-client-extensions/custom-element-yaml-configuration-reference.md) を参照してください。
 
 アプリケーションに関連するJavaScriptファイルは`/src`フォルダに含まれている。 JavaScriptコードの完全な説明はこのチュートリアルの範囲を超えているが、注意すべき点がいくつかある：
 

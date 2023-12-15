@@ -220,7 +220,7 @@ WikiPage`のAPIを呼び出すには、cURLコマンドかJavaクラスを使用
    }
    ```
 
-4. 上記のノードIDをパラメータとして`WikiPage_POST_ToNode`を実行する。 これにより、指定したノードの新しいWikiページが作成されます。
+1. 上記のノードIDをパラメータとして`WikiPage_POST_ToNode`を実行する。 これにより、指定したノードの新しいWikiページが作成されます。
 
    **cURLの場合**
 
@@ -234,7 +234,7 @@ WikiPage`のAPIを呼び出すには、cURLコマンドかJavaクラスを使用
    java -classpath .:* -DwikiNodeId={wiki-node-id} WikiPage_POST_ToNode
    ```
 
-5. `WikiPage_POST_ToParent`呼び出しで使用するためにページのIDをコピーします。
+1. `WikiPage_POST_ToParent`呼び出しで使用するためにページのIDをコピーします。
 
    ```json
    {
@@ -250,7 +250,7 @@ WikiPage`のAPIを呼び出すには、cURLコマンドかJavaクラスを使用
    }
    ```
 
-6. 上記のWikiページIDをパラメータとして `WikiPage_POST_ToParent` を実行する。 これにより、指定したWikiページの子ページが作成されます。
+1. 上記のWikiページIDをパラメータとして `WikiPage_POST_ToParent` を実行する。 これにより、指定したWikiページの子ページが作成されます。
 
    **cURLの場合**
 
@@ -278,7 +278,7 @@ WikiPage`のAPIを呼び出すには、cURLコマンドかJavaクラスを使用
    }
    ```
 
-7. Wiki ノード ID をパラメータとして `WikiPages_GET_FromNode` を実行する。 これにより、指定したノードに追加されたすべてのWikiページのリストが返されます。これには、新しく作成された両方のWikiページが含まれます。
+1. Wiki ノード ID をパラメータとして `WikiPages_GET_FromNode` を実行する。 これにより、指定したノードに追加されたすべてのWikiページのリストが返されます。これには、新しく作成された両方のWikiページが含まれます。
 
    **cURLの場合**
 
@@ -292,7 +292,7 @@ WikiPage`のAPIを呼び出すには、cURLコマンドかJavaクラスを使用
    java -classpath .:* -DwikiNodeId={wiki-node-id} WikiPages_GET_FromNode
    ```
 
-8. Wiki の親ページ ID をパラメータとして `WikiPages_GET_FromParent` を実行します。 これにより、指定したWikiページの既存の子ページが返されます。
+1. Wiki の親ページ ID をパラメータとして `WikiPages_GET_FromParent` を実行します。 これにより、指定したWikiページの既存の子ページが返されます。
 
    **cURLの場合**
 
@@ -306,7 +306,7 @@ WikiPage`のAPIを呼び出すには、cURLコマンドかJavaクラスを使用
    java -classpath .:* -DparentWikiPageId={wiki-page-id} WikiPages_GET_FromParent
    ```
 
-9. 上記のいずれかのWikiページIDをパラメータとして `WikiPage_PUT_ById` を実行する。 これにより、元のページのコンテンツがAPI呼び出しで定義されたコンテンツに置き換えられます。
+1. 上記のいずれかのWikiページIDをパラメータとして `WikiPage_PUT_ById` を実行する。 これにより、元のページのコンテンツがAPI呼び出しで定義されたコンテンツに置き換えられます。
 
    **cURLの場合**
 
@@ -332,7 +332,7 @@ WikiPage`のAPIを呼び出すには、cURLコマンドかJavaクラスを使用
    }
    ```
 
-10. WikiページIDをパラメータとして `WikiPage_DELETE_ById` を実行する。 これにより、指定したWikiページが削除されます。
+1. WikiページIDをパラメータとして `WikiPage_DELETE_ById` を実行する。 これにより、指定したWikiページが削除されます。
 
     **cURLの場合**
 
@@ -346,7 +346,7 @@ WikiPage`のAPIを呼び出すには、cURLコマンドかJavaクラスを使用
     java -classpath .:* -DwikiPageId={wiki-page-id} WikiPage_DELETE_ById
     ```
 
-11. 削除された Wiki ページの ID をパラメータとして `WikiPage_GET_ById` を実行する。 これにより、指定されたページが存在する場合**はその詳細が返されます。
+1. 削除された Wiki ページの ID をパラメータとして `WikiPage_GET_ById` を実行する。 これにより、指定されたページが存在する場合はその詳細が返されます。
 
     **cURLの場合**
 

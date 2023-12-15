@@ -8,7 +8,7 @@ Liferayの監査フレームワークを使って、カスタムオブジェク�
 
 {bdg-primary}`サブスクリプション`
 
-監査アプリケーションにアクセスするには、_グローバルメニュー_ ([グローバルメニュー](../../../images/icon-applications-menu.png))を開きます。 &rarr; _Control Panel_  &rarr; _Audit_をクリックします。
+監査アプリケーションにアクセスするには、 **グローバルメニュー**( [グローバルメニュー](../../../images/icon-applications-menu.png) )を開きます。 &rarr; **Control Panel** &rarr; **Audit** をクリックします。
 
 ![［コントロールパネル］の［監査］をクリックすると、オブジェクト定義に関連するイベントが表示されます。](./auditing-object-events/images/01.png)
 
@@ -32,26 +32,27 @@ Liferayの監査フレームワークを使って、カスタムオブジェク�
 
 ## REST APIの使用
 
-nestedFields`パラメータを `auditEvents` の値と一緒に使うと、GET APIコールでエントリーの履歴を返すことができる（例：`http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`）。 基本的なチュートリアルについては [Using `nestedFields` to Audit Entry History](../understanding-object-integrations/using-custom-object-apis/using-nestedfields-to-audit-entry-history.md) を参照のこと。
+`nestedFields`パラメータを `auditEvents` の値と一緒に使うと、GET APIコールでエントリーの履歴を返すことができる（例：`http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`）。 基本的なチュートリアルについては [`nestedFields`を使って入力履歴を監査する](../understanding-object-integrations/using-custom-object-apis/using-nestedfields-to-audit-entry-history.md) を参照のこと。
 
 ```{important}
-REST APIを使用してエントリーの履歴を表示するには、そのエントリーの `View` と `Object Entry History` の両方のパーミッションが必要です。 詳細は [Permissions Framework Integration](../understanding-object-integrations/permissions-framework-integration.md) を参照。
+REST APIを使用してエントリーの履歴を表示するには、そのエントリーの `View` と `Object Entry History` の両方のパーミッションが必要です。 詳細は [権限設定フレームワークの統合](../understanding-object-integrations/permissions-framework-integration.md) を参照。
 ```
+
 ## エントリー履歴を有効にする
 
 デフォルトでは、カスタムオブジェクトのエントリー履歴は無効になっています。 7.4 U72+/GA72+の場合、この設定はいつでも行うことができます。 以前のバージョンでは、この設定は [オブジェクト定義](./creating-objects.md#publishing-object-drafts) をパブリッシュする前にしか設定できません。
 
 エントリー履歴を有効にする、
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［ **オブジェクト**］ をクリックします。
 
 1. 目的のオブジェクト定義の編集を開始します。
 
-1. Detailsタブで、_Enable Entry History_を切り替える。
+1. Detailsタブで、 **Enable Entry History** を切り替える。
 
    ![エントリー履歴を有効にします。](./auditing-object-events/images/03.png)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 有効になっている間、Liferayはエントリーイベントの履歴を保持し、AuditアプリケーションまたはREST APIコールで見ることができます。
 

@@ -6,13 +6,13 @@
 
 ![The Role Change Request object flows through several steps in this Workflow Powered App.](./creating-the-role-change-request-object/images/01.png)
 
-ここでは、バッキングオブジェクト、フォームビュー、およびテーブルビューを作成します。 ワークフロー対応アプリ自体を作成するには、 [Creating the Role Change Request App](./creating-the-role-change-request-app.md) を参照してください。
+ここでは、バッキングオブジェクト、フォームビュー、およびテーブルビューを作成します。 ワークフロー対応アプリ自体を作成するには、 [ロール変更リクエストアプリの作成](./creating-the-role-change-request-app.md) を参照してください。
 
 アプリビルダーオブジェクト、フォームビュー、およびテーブルビューの作成の詳細な手順については、 [Creating a Standard Application](./creating-a-standard-application.md) を参照してください。 同じオブジェクトで、標準アプリまたはワークフロー対応アプリに対応できます。 違いは、アプリビルダーフレームワークの要素からアプリを作成する方法にあります。 オブジェクト、フォームビュー、およびテーブルビューは、Applications Menu (![Applications Menu](../../../images/icon-applications-menu.png)) の Objects エントリから作成できます。 &rarr; Applications &rarr; App Builder.
 
-## **オブジェクト:** _Role Change Request_というオブジェクトを作成します。
+## **オブジェクト:** **Role Change Request** というオブジェクトを作成します。
 
-## **フォーム：*** _Employee Request_フォームを作成します。
+## **フォーム：** **Employee Request** フォームを作成します。
 
 | 項目タイプ    | 項目ラベル        | オプション                                                                      | 必須       | その他のプロパティ |
 | :------- | :----------- | :------------------------------------------------------------------------- | :------- | :-------- |
@@ -21,7 +21,7 @@
 | テキストボックス | 現在のロール       | NA                                                                         | &#10004; | NA        |
 | プルダウン    | リクエストされたロール  | サポート技術者 <br /> バックエンド開発者 <br /> フロントエンド開発者 <br /> テクニカルライター <br /> ITエンジニア | &#10004; | NA        |
 
-## **フォーム：*** _Current Manager's Assessment_フォームを作成する。
+## **フォーム：** **Current Manager's Assessment** フォームを作成する。
 
 | 項目タイプ    | 項目ラベル                               | オプション         | 必須       | その他のプロパティ |
 | :------- | :---------------------------------- | :------------ | :------- | :-------- |

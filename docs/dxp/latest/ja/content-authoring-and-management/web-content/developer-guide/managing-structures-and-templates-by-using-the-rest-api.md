@@ -45,8 +45,8 @@ Webコンテンツストラクチャーとは、Webコンテンツの記事に�
 
 ### サイトIDの特定
 
-1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、_設定_ &rarr; _サイト設定_に進みます。
-1. ［プラットフォーム］セクション下で、*［サイト設定］*をクリックします。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **設定** &rarr; **サイト設定** に進みます。
+1. ［プラットフォーム］セクション下で、 ［**サイト設定**］ をクリックします。
 1. ［Site ID］の下でサイト識別子を見つけます。
 
    ![Identify the Site ID under the Site Settings and Site Configuration option.](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)
@@ -62,8 +62,8 @@ REST API を使用して、構造またはテンプレートをプログラム�
 
 ### サンプルストラクチャーとテンプレートの特定
 
-1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、_コンテンツ＆データ_ &rarr; _ウェブコンテンツ_に移動します。
-1. *構造*タブをクリックする。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **コンテンツ＆データ** &rarr; **ウェブコンテンツ** に移動します。
+1. **構造** タブをクリックする。
 1. IDの欄で、ストラクチャーのIDを特定します。
 
    ![In the Structures tab, identify the ID for your Structure under the ID column.](./managing-structures-and-templates-by-using-the-rest-api/images/01.png)

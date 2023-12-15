@@ -16,23 +16,23 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
 
 ナビゲーションメニューを作成するには、以下の手順に従ってください：
 
-1. *サイトメニュー* ( ![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ナビゲーションメニュー_ に移動します。
+1. **サイトメニュー**( ![サイトメニュー](../../images/icon-product-menu.png))を開き、 **サイトビルダー** &rarr; **ナビゲーションメニュー** に移動します。
 
    ![Access navigation menus in the site menu.](./using-the-navigation-menus-application/images/02.png)
 
-1. *追加* ( ![追加ボタン](../../images/icon-add.png))をクリックします。
+1. **追加**( ![追加ボタン](../../images/icon-add.png))をクリックします。
 
-1. ナビゲーションメニューの _名前_ を入力します。
+1. ナビゲーションメニューの **名前** を入力します。
 
    ![Create a navigation menu.](./using-the-navigation-menus-application/images/03.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 新しいカスタムメニューが表示され、エレメント（ページ、ドキュメント、カテゴリーなど）を追加することができます。
 
 ### ナビゲーション・メニューに新しい要素を追加する
 
-1. *追加* ( ![追加ボタン](../../images/icon-add.png))をクリックします。
+1. **追加**( ![追加ボタン](../../images/icon-add.png))をクリックします。
 
 1. メニューに追加したい要素の種類（ページ、ドキュメント、カテゴリーなど）を選択します。 項目選択ウィンドウが開きます。
 
@@ -40,7 +40,7 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
 
 ![Select the type of element you want to add to the menu.](./using-the-navigation-menus-application/images/04.png)
 
-1. 追加したい要素を選択し、_選択_をクリックします。
+1. 追加したい要素を選択し、 **選択** をクリックします。
 
    複数の要素を選択できる。
 
@@ -60,7 +60,7 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
 
 1. オプションで、ナビゲーション・メニュー・ツリーから子ナビゲーション・メニュー要素を追加することができます。
 
-   必要なナビゲーション・メニュー・エレメントの_Actions_ ( ![アクション・ボタン](../../images/icon-actions.png))をクリックし、_Add Child_を選択し、子エレメントのタイプを選択します。
+   必要なナビゲーション・メニュー・エレメントの **Actions**( ![アクション・ボタン](../../images/icon-actions.png))をクリックし、 **Add Child** を選択し、子エレメントのタイプを選択します。
 
    ![Add child navigation menu elements right from the navigation menu tree](./using-the-navigation-menus-application/images/07.png)
 
@@ -74,7 +74,7 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
    Liferay 7.4のバージョンU9+またはGA13+では、表示ページを使用するコンテンツタイプ要素にのみカスタム表示名を定義できます。
    ```
 
-   これを行うには、メニュー要素を選択し、サイドパネルで_Use Custom Name_をチェックし、名前を入力し、_Save_をクリックします。
+   これを行うには、メニュー要素を選択し、サイドパネルで **Use Custom Name** をチェックし、名前を入力し、 **Save** をクリックします。
 
    ![Customize the display of menu elements.](./using-the-navigation-menus-application/images/08.png)
 
@@ -84,7 +84,7 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
 
 [ボキャブラリー・ナビゲーション・メニュー・エレメント](./navigation-menu-element-types.md#vocabularies) は動的です。1つのエレメントがページに表示されると、1つのエレメントではなく、現在の階層にあるすべてのカテゴリーとサブカテゴリーが追加されます。 語彙の内容を変更すると、自動的にメニューに反映される。
 
-ダイナミック・ボキャブラリー・エレメントを使えば、アイテムの階層が変化しても、素早く簡単にナビゲーション・メニューを更新することができます。 例えば、 [カタログ](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html) の中で、商品のタイプを表すためにカテゴリーを使用することができます。そして、カテゴリーを更新すると、語彙を使用しているすべてのメニューが自動的に更新されます。 そして、それらのカテゴリーに使われている [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) に応じて、カテゴリー分けの変更が自動的にページやナビゲーションメニューに反映されることがある。
+ダイナミック・ボキャブラリー・エレメントを使えば、アイテムの階層が変化しても、素早く簡単にナビゲーション・メニューを更新することができます。 例えば、 [新しいカタログを作成する](https://learn.liferay.com/commerce/latest/ja/product-management/catalogs/creating-a-new-catalog.html) の中で、商品のタイプを表すためにカテゴリーを使用することができます。そして、カテゴリーを更新すると、語彙を使用しているすべてのメニューが自動的に更新されます。 そして、それらのカテゴリーに使われている [表示ページ](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) に応じて、カテゴリー分けの変更が自動的にページやナビゲーションメニューに反映されることがある。
 
 ![Dynamic vocabulary elements automatically update to reflect their hierarchy of categories in your navigation menus.](./using-the-navigation-menus-application/images/09.png)
 
@@ -104,25 +104,25 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
 
 ナビゲーションメニューにこの動作を設定するには、以下の手順に従ってください：
 
-1. *サイトメニュー* ( ![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ナビゲーションメニュー_ に移動します。
+1. **サイトメニュー**( ![サイトメニュー](../../images/icon-product-menu.png))を開き、 **サイトビルダー** &rarr; **ナビゲーションメニュー** に移動します。
 
 1. 希望のメニューを選択する。
 
-1. *Actions*（[Actionsボタン](../../images/icon-actions.png)）をクリックします。
+1. **Actions**（ [Actionsボタン](../../images/icon-actions.png) ）をクリックします。
 
 1. チェックを外す／チェックする
 
    ![You can select from existing navigationmenus when creating site pages](./using-the-navigation-menus-application/images/12.png)
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 ## ナビゲーションメニュータイプの設定
 
 以下の手順に従って、ナビゲーション・メニューのタイプを設定してください：
 
-1. *サイトメニュー* ( ![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ナビゲーションメニュー_ に移動します。
+1. **サイトメニュー**( ![サイトメニュー](../../images/icon-product-menu.png))を開き、 **サイトビルダー** &rarr; **ナビゲーションメニュー** に移動します。
 
-1. 必要なメニューの _アクション_ ( ![アクションボタン](../../images/icon-actions.png) ) をクリックします。
+1. 必要なメニューの **アクション**( ![アクションボタン](../../images/icon-actions.png) ) をクリックします。
 
 1. 希望のナビゲーション・タイプを選択します：プライマリーナビゲーション、セカンダリーナビゲーション、またはソーシャルナビゲーション。
 
@@ -132,17 +132,17 @@ Liferay 7.3+では、カスタムフィールドを使ってナビゲーショ�
 
 | ナビゲーションメニューのタイプ    | 使用量                                                               |
 | :----------------- | :---------------------------------------------------------------- |
-| **プライマリ ナビゲーション**  | プライマリ ナビゲーションは、ページのメインナビゲーションです。                                  |
+| **プライマリ ナビゲーション** | プライマリ ナビゲーションは、ページのメインナビゲーションです。                                  |
 | **セカンダリー・ナビゲーション** | セカンダリーナビゲーションは、ナビゲーションの第2レベルであり、ページ内のサイドバーまたは個別のメニューが考えられます。      |
-| **ソーシャルナビゲーション**   | ソーシャルナビゲーションは、ソーシャルメディアまたは同様のタスクでコンテンツを共有するためのリンクを含むメニューのためのものです。 |
+| **ソーシャルナビゲーション** | ソーシャルナビゲーションは、ソーシャルメディアまたは同様のタスクでコンテンツを共有するためのリンクを含むメニューのためのものです。 |
 
 ## ナビゲーションメニューの削除
 
-1. *サイトメニュー* ( ![サイトメニュー](../../images/icon-product-menu.png))を開き、_サイトビルダー_ &rarr; _ナビゲーションメニュー_ に移動します。
+1. **サイトメニュー**( ![サイトメニュー](../../images/icon-product-menu.png))を開き、 **サイトビルダー** &rarr; **ナビゲーションメニュー** に移動します。
 
-1. [アクションボタン](../../images/icon-actions.png)をクリックし、*削除*をクリックします。
+1. [アクションボタン](../../images/icon-actions.png) をクリックし、 **削除** をクリックします。
 
-1. 確認で*OK*をクリックします。
+1. 確認で **OK** をクリックします。
 
 ナビゲーションメニューが削除される。
 

@@ -113,14 +113,14 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 * 色の16進コードをテキストボックスに入力します。
 
-* *スタイルブックからの値*ボタンをクリックすると、現在使用している [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) で定義されている、あらかじめ定義された色のメニューが開きます。 これにより、再度ボタンを押してリンクが解除されるまで、フィールドの値が選択されたトークンにリンクされます。 トークン値のリンクを解除すると、選択した色が再び同等の16進コード値に変換されます。
+* **スタイルブックからの値** ボタンをクリックすると、現在使用している [スタイルブック](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) で定義されている、あらかじめ定義された色のメニューが開きます。 これにより、再度ボタンを押してリンクが解除されるまで、フィールドの値が選択されたトークンにリンクされます。 トークン値のリンクを解除すると、選択した色が再び同等の16進コード値に変換されます。
 
-* カラーピッカーにデフォルト値が定義されていない場合は、_デフォルト_ドロップダウンメニューをクリックして、現在使用しているスタイルブックから任意の色を選択してください。 これは、値を選択する際の［スタイルブックの値］ボタンと同じように機能します。
+* カラーピッカーにデフォルト値が定義されていない場合は、 **デフォルト** ドロップダウンメニューをクリックして、現在使用しているスタイルブックから任意の色を選択してください。 これは、値を選択する際の［スタイルブックの値］ボタンと同じように機能します。
 
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/02.png)
 
 ```{note}
-使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)がない場合、ページ上のカラーピッカーの設定は[カラーパレット](#color-palette configuration)の設定に置き換えられます。
+使用しているテーマに[スタイルブックのトークン定義](../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md)がない場合、ページ上のカラーピッカーの設定は [カラーパレット](#color-palette configuration) の設定に置き換えられます。
 ```
 
 このJSON設定により、`headingColor`というカラーピッカーフィールドが作成される：
@@ -192,7 +192,7 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ## アイテムセレクターの設定
 
-{bdg-secondary}`liferay 7.3+が利用可能です。
+{bdg-secondary}`liferay 7.3+が利用可能です。`
 
 この設定により、フラグメントに含める既存のコンテンツ（デフォルトではWebコンテンツの記事、ブログエントリー、ドキュメント）を1つ選択するためのセレクターが作成されます。
 
@@ -414,12 +414,12 @@ FreeMarker コンテキストに挿入された設定値は、JSON ファイル�
 
 ## コレクションセレクター
 
-{bdg-secondary}`liferay 7.3+が利用可能です。
+{bdg-secondary}`liferay 7.3+が利用可能です。`
 
 `collectionSelector`構成タイプを使用すると、 [コレクション](../../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) またはコレクションプロバイダを含むフラグメントを開発することができます。 コレクションセレクタは手動コレクションでも動的コレクションでも使用できます。
 
 ```{note}
-開発者は、コレクションプロバイダーを使用して、より高度な基準を持つ特定のコレクションを作成することができます。 詳細については、 [Infoフレームワーク](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 開発者ドキュメントの [Creating an Information List Provider](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をお読みください。
+開発者は、コレクションプロバイダーを使用して、より高度な基準を持つ特定のコレクションを作成することができます。 詳細については、 [Infoフレームワーク](https://help.liferay.com/hc/ja/articles/360029067251-Introduction-to-The-Info-Framework) 開発者ドキュメントの [Creating an Information List Provider](https://help.liferay.com/hc/ja/articles/360029067271-Creating-an-Information-List-Provider) に関する情報をお読みください。
 ```
 
 次の JSON 設定は `collectionSelector` の使い方を示している：
@@ -551,7 +551,7 @@ itemType`に加え、`itemSubtype`をコンフィギュレーションで指定�
 
 ## 関連トピック
 
-* [フラグメントの開発](../../developing-page-fragments/developing-fragments-intro.md) 
-* [フラグメント特異的タグ 参照](./fragment-specific-tags-reference.md) 
-* [ページ・フラグメント・エディター・インターフェイス・リファレンス](./page-fragment-editor-interface-reference.md) 
-* [Using a Style Book to Standardize Site Appearance](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 
+* [フラグメントの開発](../../developing-page-fragments/developing-fragments-intro.md)
+* [フラグメント特異的タグ 参照](./fragment-specific-tags-reference.md)
+* [ページ・フラグメント・エディター・インターフェイス・リファレンス](./page-fragment-editor-interface-reference.md)
+* [スタイルブックを使用してサイトの外観を標準化する](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md)

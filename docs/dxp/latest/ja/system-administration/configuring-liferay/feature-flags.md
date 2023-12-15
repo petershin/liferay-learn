@@ -4,9 +4,9 @@
 
 {bdg-secondary}`DXP 7.4 U69+/GA69+.`
 
-Liferayのいくつかの機能は_feature flags_の後ろに隠されています。 機能フラグを使うことで、Liferayインスタンスに導入される新しい機能をコントロールすることができます。 新機能や実験的な機能は、機能フラグによってより効果的に採用され、検証される。
+Liferayのいくつかの機能は **feature flags** の後ろに隠されています。 機能フラグを使うことで、Liferayインスタンスに導入される新しい機能をコントロールすることができます。 新機能や実験的な機能は、機能フラグによってより効果的に採用され、検証される。
 
-機能フラグにアクセスして管理するには、*グローバル メニュー* (![グローバル メニュー](../../images/icon-applications-menu.png)) を開き、*コントロール パネル* &rarr; に移動します。 *インスタンス設定*。 *プラットフォーム*の下にある*機能フラグ*をクリックします。 使用できる機能フラグには次の 3 種類があります。
+機能フラグにアクセスして管理するには、 **グローバル メニュー**(![グローバル メニュー](../../images/icon-applications-menu.png)) を開き、 **コントロール パネル** &rarr; に移動します。 **インスタンス設定** 。 **プラットフォーム** の下にある **機能フラグ** をクリックします。 使用できる機能フラグには次の 3 種類があります。
 
 1. [ベータ版の機能フラグ](#beta-feature-flags)
 
@@ -29,7 +29,7 @@ Liferay DXP uses a badge to highlight beta features. See below: -->
 
 ベータ機能を有効にするには
 
-1. *グローバル・メニュー*([グローバル・メニュー](../../images/icon-applications-menu.png))を開き、_コントロール・パネル_ &rarr; _インスタンス設定_ に移動します。
+1. **グローバル・メニュー**( [グローバル・メニュー](../../images/icon-applications-menu.png) )を開き、 **コントロール・パネル** &rarr; **インスタンス設定** に移動します。
 
 1. プラットフォーム]の下にある[機能フラグ]をクリックし、[ベータ版]をクリックします。
 
@@ -45,7 +45,7 @@ Liferay DXP uses a badge to highlight beta features. See below: -->
 
 リリース機能を有効にするには
 
-1. *グローバル・メニュー*([グローバル・メニュー](../../images/icon-applications-menu.png))を開き、_コントロール・パネル_ &rarr; _インスタンス設定_ に移動します。
+1. **グローバル・メニュー**( [グローバル・メニュー](../../images/icon-applications-menu.png) )を開き、 **コントロール・パネル** &rarr; **インスタンス設定** に移動します。
 
 1. プラットフォーム]の下にある[機能フラグ]をクリックし、[リリース]をクリックします。
 
@@ -90,4 +90,4 @@ Liferay 2023.Q4では、いくつかのベータ機能はすぐに有効にな�
 ## 関連トピック
 
 * [セマンティック・サーチ](../../using-search/liferay-enterprise-search/search-experiences/semantic-search.md)
-* [ベータ版の特徴](https://help.liferay.com/hc/en-us/articles/12917247551757-Beta-Features)
+* [ベータ版の特徴](https://help.liferay.com/hc/ja/articles/12917247551757-Beta-Features)

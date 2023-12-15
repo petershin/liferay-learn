@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 持続性と測定
 
 ## 永続性

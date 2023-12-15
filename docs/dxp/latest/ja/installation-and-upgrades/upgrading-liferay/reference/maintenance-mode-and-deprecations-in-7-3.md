@@ -1,19 +1,19 @@
 # 7.3のメンテナンスモードと非推奨
 
-新しいDXPのリリースごとに、機能の継続的な拡張が保証されない場合や、廃止される可能性があります。 機能拡張を停止すると、_メンテナンスモード_になります。
+新しいDXPのリリースごとに、機能の継続的な拡張が保証されない場合や、廃止される可能性があります。 機能拡張を停止すると、 **メンテナンスモード** になります。
 
-**メンテナンスモード：**この機能はサポートされていますが、もはや強化されていません。
+**メンテナンスモード：** この機能はサポートされていますが、もはや強化されていません。
 
-廃止された機能は最終的に削除されるか、より新しい、より優れた機能に置き換えられます。 廃止された機能のサポートを終了する前に、Liferayはそれを_Deprecated_とマークします。
+廃止された機能は最終的に削除されるか、より新しい、より優れた機能に置き換えられます。 廃止された機能のサポートを終了する前に、Liferayはそれを **Deprecated** とマークします。
 
-**Deprecated:**この機能は、次のマイナーバージョンのリリースと同時にサポートされなくなります。
+**Deprecated:** この機能は、次のマイナーバージョンのリリースと同時にサポートされなくなります。
 
 ```{important}
 非推奨の機能については、早ければ次のマイナーリリースでサポートが打ち切られる可能性があるため、使用しないよう計画すること。
 ```
 
 ```{important}
-詳しくは、 [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/en-us/articles/360015767952-Maintenance-Mode-and-Deprecation) をご覧ください。
+詳しくは、 [Maintenance Mode and Deprecation Policies](https://help.liferay.com/hc/ja/articles/360015767952-Maintenance-Mode-and-Deprecation) をご覧ください。
 ```
 
 ## 廃止予定の機能の利用可能性
@@ -22,9 +22,9 @@
 
 **Bundled:** この機能は Liferay 製品に含まれています。
 
-**マーケットプレイス:**この機能はマーケットプレイスアプリの最終バージョンに含まれています。
+**マーケットプレイス:** この機能はマーケットプレイスアプリの最終バージョンに含まれています。
 
-**Final:**マーケットプレイスアプリの最終バージョンは、このLiferayバージョンでリリースされます。
+**Final:** マーケットプレイスアプリの最終バージョンは、このLiferayバージョンでリリースされます。
 
 **Archived:** この機能は利用できませんが、そのコードは Liferay のリポジトリ <https://repository.liferay.com/nexus/index.html#welcome>にあるソースアーティファクトで利用できます。
 
@@ -42,7 +42,7 @@
 | Flashウィジェット                                       | 削除済み                                                                                                                                                                                               | 直接の置換はありません。 [FlashPlayerのライフ終了は](https://www.adobe.com/products/flashplayer/end-of-life.html) 2020年12月31日です。                                                                        |
 | Internet Explorer 11（IE11）ブラウザのサポート               | バンドル                                                                                                                                                                                               | IE11のサポートを有効にしてMicrosoft Edgeに切り替え。                                                                                                                                                            |
 | JAASサポート                                          | バンドル                                                                                                                                                                                               | 直接の置換はありません。                                                                                                                                                                                   |
-| JQueryのデフォルトのグローバルLiferay変数                       | バンドル（無効）                                                                                                                                                                                           | jQuery third-party [System Settings](../../../system-administration/configuring-liferay/system-settings.md) で `Enable jQuery` プロパティを `true` に設定することで、以前の動作を復活させることができます。             |
+| JQueryのデフォルトのグローバルLiferay変数                       | バンドル（無効）                                                                                                                                                                                           | jQuery third-party [システム設定](../../../system-administration/configuring-liferay/system-settings.md) で `Enable jQuery` プロパティを `true` に設定することで、以前の動作を復活させることができます。             |
 | Liferayブックマーク                                     | アーカイブ済み                                                                                                                                                                                            | 直接の置換はありません。                                                                                                                                                                                   |
 | Liferay Mobile Device Detection Lite              | アーカイブ済み                                                                                                                                                                                            | 直接の置換はありません。                                                                                                                                                                                   |
 | Liferayプッシュ                                       | アプリ                                                                                                                                                                                                | [ヘッドレスデリバリー](../../../headless-delivery/using-liferay-as-a-headless-platform.md) に置き換えられました。                                                                                         |
@@ -52,8 +52,8 @@
 | アンケート                                             | バンドル                                                                                                                                                                                               | フォームレポートに置き換えられました。                                                                                                                                                                            |
 | プロジェクトテンプレート：project-templates-activator          | [GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions) にアーカイブ済み                                                                                                   | 置換はありません。                                                                                                                                                                                      |
 | プロジェクトテンプレート：project-templates-freemarker-portlet | [GitHub](https://github.com/liferay/liferay-blade-cli/tree/master/extensions) にアーカイブ済み                                                                                                   | 置換はありません。                                                                                                                                                                                      |
-| Screens                                           | Github - iOS： [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0) 、Android： [5.1.0](https://github.com/liferay/liferay-screens/releases/tag/5.1.0-android) | [モバイルSDK](https://help.liferay.com/hc/en-us/articles/360020447511-Mobile-SDK) および [ヘッドレスAPI](../../../headless-delivery/using-liferay-as-a-headless-platform.md) を使用してください。 |
-| *ツール*カテゴリの検索ウィジェット（クラシック                          | バンドル                                                                                                                                                                                               | 7.1で廃止。 *検索*カテゴリの [検索ウィジェット](../../../using-search/search-pages-and-widgets/search-results/search-results.md) に置き換えられました。                                                           |
+| Screens                                           | Github - iOS： [5.2.0](https://github.com/liferay/liferay-screens/releases/tag/5.2.0) 、Android： [5.1.0](https://github.com/liferay/liferay-screens/releases/tag/5.1.0-android) | [モバイルSDK](https://help.liferay.com/hc/ja/articles/360020447511-Mobile-SDK) および [ヘッドレスAPI](../../../headless-delivery/using-liferay-as-a-headless-platform.md) を使用してください。 |
+| **ツール** カテゴリの検索ウィジェット（クラシック                          | バンドル                                                                                                                                                                                               | 7.1で廃止。 **検索** カテゴリの [検索ウィジェット](../../../using-search/search-pages-and-widgets/search-results/search-results.md) に置き換えられました。                                                           |
 | SOAP Webサービス                                      | バンドル（無効）                                                                                                                                                                                           | このポータル・プロパティの設定 `axis.servlet.enabled` で、Axisサーブレット（例えば、`http://localhost:8080/api/axis/` にサービスを公開する）を有効にすることができる。 Liferay の `*SOAP` クラスは非推奨です。                                                |
 | テーマ：Fjord                                         | アーカイブ済み                                                                                                                                                                                            | 直接の置換はありません。                                                                                                                                                                                   |
 | テーマ：Hello World                                   | バンドル                                                                                                                                                                                               | 直接の置換はありません。                                                                                                                                                                                   |
@@ -65,8 +65,8 @@
 以前のLiferayバージョンからアップグレードする場合は、以前のバージョンで廃止になった機能も考慮する必要があります。
 
 * [7.2 非推奨とメンテナンス・モードへ移行した機能](./maintenance-mode-and-deprecations-in-7-2.md)
-* [7.1 非推奨](https://help.liferay.com/hc/en-us/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
-* [7.0 非推奨](https://help.liferay.com/hc/en-us/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
+* [7.1 非推奨](https://help.liferay.com/hc/ja/articles/360018403151-Digital-Experience-Platform-7-1-Deprecated-and-Removed-Items)
+* [7.0 非推奨](https://help.liferay.com/hc/ja/articles/360018123832-Digital-Experience-Platform-7-0-Deprecated-and-Removed-Items)
 
 ## 7.3でメンテナンスモードに移行された機能
 

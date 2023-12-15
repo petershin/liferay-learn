@@ -59,7 +59,7 @@ Liferayは、デジタルソリューションの構築を容易にします。 
    ./bundles/tomcat-9.0.73/bin/catalina.sh run
    ```
 
-1. メールアドレス _test@liferay.com_ とパスワード _test_ を使って http://localhost:8080 から Liferay にサインインします。 プロンプトが表示されたら、パスワードを_learn_に変更する。
+1. メールアドレス **test@liferay.com** とパスワード **test** を使って http://localhost:8080 から Liferay にサインインします。 プロンプトが表示されたら、パスワードを **learn** に変更する。
 
 1. すべてのサンプルプロジェクトをビルドします。
 

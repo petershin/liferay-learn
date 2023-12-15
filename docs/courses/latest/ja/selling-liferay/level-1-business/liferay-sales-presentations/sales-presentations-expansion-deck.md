@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # エキスパンション・デッキを使いこなす
 
 **概要**

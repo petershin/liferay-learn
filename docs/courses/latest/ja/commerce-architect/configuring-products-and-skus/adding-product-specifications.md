@@ -11,9 +11,9 @@
 * ケース付き
 * サングラススタイル
 
-1. グローバルメニュー* (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Specifications_に移動します。
+1. グローバルメニュー (**![グローバルメニュー](../../images/icon-applications-menu.png))を開き、***Commerce***&rarr;***Specifications** に移動します。
 
-1. *Add* (![Add](../../images/icon-add.png)) をクリックし、これらの詳細を入力します：
+1. **Add**(![Add](../../images/icon-add.png)) をクリックし、これらの詳細を入力します：
 
    **フレームカラー**
 
@@ -21,7 +21,7 @@
 
    ![Create a new specification label for frame color.](./adding-product-specifications/images/01.png)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 これにより、フレームカラーと呼ばれる新しい仕様が作成される。 さて、上記の手順で残りの仕様を作成する：
 
@@ -33,27 +33,27 @@
 * ケース付き
 * サングラススタイル
 
-Frame Dimensions、Frame Width、Frame Sizeについては、_Use in Faceted Navigation_トグルを無効にする必要があります。 数値が固定されている他の仕様とは異なり、フレーム寸法、フレーム幅、フレームサイズには、メガネによって大きな幅があります。 このオプションを有効にすると、ストアフロントに多数のファセットが表示され、ユーザーエクスペリエンスが低下する可能性があります。
+Frame Dimensions、Frame Width、Frame Sizeについては、 **Use in Faceted Navigation** トグルを無効にする必要があります。 数値が固定されている他の仕様とは異なり、フレーム寸法、フレーム幅、フレームサイズには、メガネによって大きな幅があります。 このオプションを有効にすると、ストアフロントに多数のファセットが表示され、ユーザーエクスペリエンスが低下する可能性があります。
 
 ## 製品に仕様を追加する
 
 次のステップは、これらの仕様を製品に追加することだ。 これは、製品設定ページから行うことができます。
 
-1. *グローバルメニュー* (![グローバルメニュー](../../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Products_に移動します。
+1. **グローバルメニュー**(![グローバルメニュー](../../images/icon-applications-menu.png))を開き、 **Commerce** &rarr; **Products** に移動します。
 
-1. *マリヤ*を選択する。
+1. **マリヤ** を選択する。
 
-1. *仕様*のセクションまでスクロールダウンしてください。
+1. **仕様** のセクションまでスクロールダウンしてください。
 
-1. *フレームカラー*を検索し、_選択_をクリックします。
+1. **フレームカラー** を検索し、 **選択** をクリックします。
 
    ![Search for the specification to add it to a product.](./adding-product-specifications/images/02.png)
 
    これにより、製品に仕様が追加される。 ここで、仕様の値を入力しなければならない。
 
-1. 追加された仕様をクリックし、値として_Black_を入力する。
+1. 追加された仕様をクリックし、値として **Black** を入力する。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 1. 上記の手順に従って、同じ製品に残りの仕様を追加する。
 

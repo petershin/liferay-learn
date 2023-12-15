@@ -7,6 +7,9 @@ toc:
   - ./level-1-business/sales-funnel-opportunity-progress.md
   - ./level-1-business/battlecards.md
   - ./level-1-business/liferay-contracts.md
+visibility:
+- Employee
+- Partner
 ---
 # 営業職レベル1
 

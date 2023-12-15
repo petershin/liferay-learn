@@ -16,7 +16,7 @@
 />
 ```
 
-[Filtering and Sorting Items with the Management Toolbar](https://help.liferay.com/hc/en-us/articles/360029526932-Filtering-and-Sorting-Items-with-the-Management-Toolbar) で、表示コンテキストの使用例を確認できます。 管理ツールバーの構成には、表示コンテキストは必要ありません。 表示コンテキストを介して、管理ツールバーの構成オプションを必要なだけ指定できます。
+[Filtering and Sorting Items with the Management Toolbar](https://help.liferay.com/hc/ja/articles/360029526932-Filtering-and-Sorting-Items-with-the-Management-Toolbar) で、表示コンテキストの使用例を確認できます。 管理ツールバーの構成には、表示コンテキストは必要ありません。 表示コンテキストを介して、管理ツールバーの構成オプションを必要なだけ指定できます。
 
 ## チェックボックスとアクション
 
@@ -215,11 +215,11 @@ filterLabelItems="<%=
 
 `viewTypes` 属性は検索コンテナの結果の表示オプションを指定する。 選択できる表示オプションは3つあります。
 
-**カード:**検索結果の列を横または縦のカードに表示します。
+**カード:** 検索結果の列を横または縦のカードに表示します。
 
 ![The Management Toolbar's icon display view gives a quick summary of the content's description and status.](./clay-management-toolbar/images/08.png)
 
-**List:**検索結果の列の要約された詳細とともに詳細な説明を表示します。
+**List:** 検索結果の列の要約された詳細とともに詳細な説明を表示します。
 
 ![The Management Toolbar's List view type gives the content's full description.](./clay-management-toolbar/images/09.png)
 
@@ -253,7 +253,7 @@ viewTypes="<%=
 %>"
 ```
 
-上記の例は、JSPで表示タイプを設定する方法を示していますが、 [各表示タイプをいつ使用するかも指定する](https://help.liferay.com/hc/en-us/articles/360029848351-Implementing-the-View-Types) 必要があります。
+上記の例は、JSPで表示タイプを設定する方法を示していますが、 [各表示タイプをいつ使用するかも指定する](https://help.liferay.com/hc/ja/articles/360029848351-Implementing-the-View-Types) 必要があります。
 
 ![The Management Toolbar offers three view type options.](./clay-management-toolbar/images/11.png)
 

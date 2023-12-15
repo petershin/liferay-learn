@@ -28,7 +28,7 @@
 
    ![Enter a label, plural label, object name, and storage type.](./determining-data-entities/images/02.png)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
    これにより、これらのシステム・フィールドを持つドラフト・オブジェクト定義が作成される：
 
@@ -51,9 +51,9 @@
 
 1. 定義のERC（外部参照コード）を変更する。 一貫性があり、人間が読めるERCは、インスタンス間でオブジェクト定義を移動したり、API経由で参照したりするのに役立ちます。
 
-   - 編集* ([編集ボタン](../../images/icon-edit.png))をクリックします。
+   - 編集* ( [編集ボタン](../../images/icon-edit.png) )をクリックします。
    - UUID を `C_DISTRIBUTOR_APPLICATION` に置き換える。
-   - ［_Save_］をクリックします。
+   - ［**Save**］をクリックします。
 
    ![Update the definition's ERC to C_DISTRIBUTOR_APPLICATION.](./determining-data-entities/images/04.png)
 
@@ -73,13 +73,13 @@
 
    この設定により、ディストリビューターアプリケーションは、インスタンス別にデータを保存し、 パネルカテゴリーキー（例：コントロールパネル &rarr; オブジェクト）に従ってグローバルメニュー（ ![Global Menu](../../images/icon-applications-menu.png) ）に表示されます。 さらに、ユーザーはこのオブジェクトをウィジェットとしてサイトページに追加したり、ディストリビューター・アプリケーションのエントリーにタグやカテゴリーを割り当てることができます。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 ## カスタムフィールドの追加
 
 オブジェクト定義を公開するには、少なくとも1つのフィールドが必要です。
 
-1. フィールド*タブに移動します。
+1. *フィールド*タブに移動します。
 
 1. 追加* ( ![追加ボタン](../../images/icon-add.png))をクリックします。
 
@@ -95,7 +95,7 @@
 
    ![Add these values for the field.](./determining-data-entities/images/05.png)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
    新しいフィールドは「フィールド」タブに「カスタム」バッジとともに表示されます。
 
@@ -107,7 +107,7 @@
 
 1. オブジェクトのDetailsタブに移動する。
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
    ![In the Details tab, click Publish.](./determining-data-entities/images/07.png)
 
@@ -123,7 +123,7 @@
 
 1. 追加* ( ![追加ボタン](../../images/icon-add.png))をクリックします。
 
-1. 申請者名を入力し、_Save_をクリックします。
+1. 申請者名を入力し、 **Save** をクリックします。
 
 1. ディストリビューター申請」ページに戻り、エントリー作成が成功したことを確認します。
 
@@ -131,7 +131,7 @@
 
    ![The application page for Distributor Application uses a default table view.](./determining-data-entities/images/09.png)
 
-1. エントリーの _アクション_ (![アクションボタン](../../images/icon-actions.png))をクリックし、_削除_ を選択します。
+1. エントリーの **アクション**(![アクションボタン](../../images/icon-actions.png))をクリックし、 **削除** を選択します。
 
 1. 先に進む前に、エントリーの作成、更新、削除を練習する。
 

@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 標準に基づく認証アプローチ
 
 **概要**
@@ -24,7 +29,7 @@ OpenID Connectは簡単な設定で利用できるため、開発作業は不要
 
 多くの実世界のユースケースでは、これは完全に適切である - ユーザがプロバイダのリストから選択する場合 - しかし、見込み客の要件が、すべてのユーザが **シングル** プロバイダを使用して認証することである場合、すぐに使えるUIは正しい期待を設定しないかもしれない。
 
-Liferayのセールスエンジニアの一人が、プロセスをシームレスにするボタンを提供するシンプルなカスタムFragmentを作成しました。 このフラグメントのソースコードは、Github [](https://github.com/lgdd/openid-connect-single-button)にあります。
+Liferayのセールスエンジニアの一人が、プロセスをシームレスにするボタンを提供するシンプルなカスタムFragmentを作成しました。 このフラグメントのソースコードは、Github [](https://github.com/lgdd/openid-connect-single-button) にあります。
 
 ## SAML、SSO、IDMS
 

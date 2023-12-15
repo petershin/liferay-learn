@@ -9,13 +9,13 @@
    curl https://resources.learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/distributor-application-pages.lar -O
    ```
 
-1. [サイトメニュー](../../images/icon-product-menu.png))を開き、_パブリッシング_を展開し、_インポート_をクリックします。
+1. [サイトメニュー](../../images/icon-product-menu.png) )を開き、 **パブリッシング** を展開し、 **インポート** をクリックします。
 
-1. *Add*（！[Add Button](../../images/icon-add.png)）をクリックし、`distributor-application-pages.lar`ファイルを選択し、_Continue_をクリックする。
+1. **Add**（！ [Add Button](../../images/icon-add.png) ）をクリックし、`distributor-application-pages.lar`ファイルを選択し、 **Continue** をクリックする。
 
    ![Select the distributor-application-pages.lar file and click Continue.](./adding-pages-for-distributor-application/images/01.png)
 
-1. デフォルトのインポート設定のまま、_Import_をクリックします。
+1. デフォルトのインポート設定のまま、 **Import** をクリックします。
 
 1. インポートが正常に終了したことを確認する。
 

@@ -11,29 +11,29 @@
 
 ## タスクカスタムオブジェクト
 
-1. [カスタムオブジェクト](../../../building-applications/objects/creating-and-managing-objects/creating-objects.md) を作成し、それに _Task_ というラベルを付ける。
+1. [カスタムオブジェクト](../../../building-applications/objects/creating-and-managing-objects/creating-objects.md) を作成し、それに **Task** というラベルを付ける。
 
-1. *タスク*オブジェクトをクリックする。
+1. **タスク** オブジェクトをクリックする。
 
-1. "Fields"タブで、"_Description_"というテキスト・タイプのフィールドを追加する。
+1. "Fields"タブで、" **Description** "というテキスト・タイプのフィールドを追加する。
 
 1. "Actions"タブで "Action" を追加し、"Edit"とラベルを付ける。
 
-1. アクションビルダーで、トリガーとして_Standalone_を選択します。
+1. アクションビルダーで、トリガーとして **Standalone** を選択します。
 
    このオプションにより、 [アクションをボタン](../../../building-applications/objects/creating-and-managing-objects/actions/using-manual-actions.md#mapping-buttons-to-object-actions-in-content-pages) にマッピングすることができます。
 
-1. Actionとして_Update an Object Entry_を選択する。
+1. Actionとして **Update an Object Entry** を選択する。
 
    このオプションは、トリガーがアクティブになるたびに、選択された値を使用してオブジェクトエントリを更新します。
 
-1. Valuesの_Add_をクリックし、_Description_フィールドを選択します。 New Value」の下に「_description_」（フィールド名）を入力します。 これは、オブジェクトエントリーの Description フィールドの値を新しい値に置き換えます。
+1. Valuesの **Add** をクリックし、 **Description** フィールドを選択します。 New Value」の下に「**description**」（フィールド名）を入力します。 これは、オブジェクトエントリーの Description フィールドの値を新しい値に置き換えます。
 
    ![Create the Edit action to update the object description value](./using-multiple-display-page-templates-to-create-multi-step-applications/images/01.png)
 
-1. *エラーメッセージ*を追加し、_保存_をクリックします。
+1. **エラーメッセージ** を追加し、 **保存** をクリックします。
 
-1. Detailsタブで、オブジェクトの_Scope_を選択し、右上の_Publish_をクリックします。
+1. Detailsタブで、オブジェクトの **Scope** を選択し、右上の **Publish** をクリックします。
 
 これでオブジェクトは公開され、コンテンツページや表示ページテンプレートのフォームコンテナ・フラグメントを使ってフォームを生成することができます。
 
@@ -43,35 +43,35 @@
 
 1. [コンテンツページの作成](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) . 空白のテンプレートを使用し、ページ名を「タスクリスト\*」とします。
 
-1. グリッド_フラグメントをページに追加する。 それをクリックし、右のパネルで_モジュール数_を_2\*に設定する。
+1. グリッド **フラグメントをページに追加する。 それをクリックし、右のパネルで** モジュール数 **を** 2\*に設定する。
 
-1. フラグメントとウィジェット」サイドバーで、「フォームコンテナ」フラグメントを探します。 左のグリッド・モジュールにドラッグ・アンド・ドロップし、「_なし_」をクリックして、タスク・オブジェクトにマッピングする。
+1. フラグメントとウィジェット」サイドバーで、「フォームコンテナ」フラグメントを探します。 左のグリッド・モジュールにドラッグ・アンド・ドロップし、「**なし**」をクリックして、タスク・オブジェクトにマッピングする。
 
    左のグリッドモジュールで、ユーザーはオブジェクトに新しいエントリーを追加できる。
 
-1. フォームコンテナ_フラグメントをクリックし、サクセスインタラクションを_ページにとどまる\*に設定します。
+1. フォームコンテナ **フラグメントをクリックし、サクセスインタラクションを** ページにとどまる\*に設定します。
 
    ユーザーがオブジェクトにエントリーを追加すると、ページは更新されるが、それ以外は何も起こらない。
 
-1. 右のグリッドモジュールに_Heading_フラグメントを追加する。 編集するには、それをダブルクリックする。 見出しに「タスクリスト\*」と入力する。
+1. 右のグリッドモジュールに **Heading** フラグメントを追加する。 編集するには、それをダブルクリックする。 見出しに「タスクリスト\*」と入力する。
 
-1. 右のグリッド・モジュールの見出しの下に、_Collection Display_フラグメントを追加する。 フラグメントをクリックする。 全般」タブで「コレクション\*」をクリックする。
+1. 右のグリッド・モジュールの見出しの下に、 **Collection Display** フラグメントを追加する。 フラグメントをクリックする。 全般」タブで「コレクション\*」をクリックする。
 
    右のグリッドモジュールでは、ユーザーはタスクのリストを見ることができます。
 
-1. Collection Providers タブで、_Tasks_ を選択します。
+1. Collection Providers タブで、 **Tasks** を選択します。
 
    Collection Provider は、Tasks のエントリを任意の方法で表示します。
 
-1. Collection Provider に _Grid_ を追加し、右側のパネルで _Number of Modules_ を _two_ に設定します。
+1. Collection Provider に **Grid** を追加し、右側のパネルで **Number of Modules** を **two** に設定します。
 
    ![The grids are marked in red.](./using-multiple-display-page-templates-to-create-multi-step-applications/images/03.png)
 
-1. コレクション表示の左グリッドモジュールに_Heading_フラグメントを追加し、それを2回クリックします。 マッピングタブで、フィールドとして説明を選択する。
+1. コレクション表示の左グリッドモジュールに **Heading** フラグメントを追加し、それを2回クリックします。 マッピングタブで、フィールドとして説明を選択する。
 
    このアクションはDescriptionフィールドに追加されたテキストをHeadingコンテンツとしてマッピングします。
 
-1. コレクション表示の右グリッドモジュールに_ボタン_フラグメントを追加し、テキストを2回クリックして編集します。 テキストを_Edit_に変更する。
+1. コレクション表示の右グリッドモジュールに **ボタン** フラグメントを追加し、テキストを2回クリックして編集します。 テキストを **Edit** に変更する。
 
 1. ページを公開する
 
@@ -81,11 +81,11 @@
 
 ## 表示ページテンプレートを編集
 
-1. [表示ページ・テンプレート](./creating-and-managing-display-page-templates.md) を作成し、名前を _Edit_ とし、コンテンツ・タイプとして _Task_ を選択する。
+1. [表示ページ・テンプレート](./creating-and-managing-display-page-templates.md) を作成し、名前を **Edit** とし、コンテンツ・タイプとして **Task** を選択する。
 
    表示ページテンプレートがタスクオブジェクトに関連付けられました。
 
-1. フラグメントとウィジェット」サイドバーで、「フォームコンテナ」フラグメントを探します。 ページにドラッグ・アンド・ドロップし、「_なし_」をクリックし、タスク・オブジェクトにマッピングする。
+1. フラグメントとウィジェット」サイドバーで、「フォームコンテナ」フラグメントを探します。 ページにドラッグ・アンド・ドロップし、「**なし**」をクリックし、タスク・オブジェクトにマッピングする。
 
    選択されたオブジェクト定義のフィールドを使用して、フォームが自動的に生成されます。
 
@@ -93,11 +93,11 @@
    マスターページテンプレートのフォームフィールドが表示ページに入力されない。 表示ページのマスターページにオブジェクトにリンクされたフォームコンテナを追加した場合、オブジェクトに関連するフォームフィールドを視覚化することはできません。
    ```
 
-1. フォームコンテナを選択します。 Success Interactionを_Go to Page_に設定し、List of Tasksページを選択する。
+1. フォームコンテナを選択します。 Success Interactionを **Go to Page** に設定し、List of Tasksページを選択する。
 
    フォームが送信されると、タスク一覧ページが表示されます。
 
-1. *Submit*ボタンを2回クリックしてください。 Fieldで、_Edit_アクションを選択する。
+1. **Submit** ボタンを2回クリックしてください。 Fieldで、 **Edit** アクションを選択する。
 
    ユーザーが[送信]ボタンをクリックすると、[タスクのリスト]ページに移動するだけでなく、[編集]アクションが有効になり、以前の[説明]値が新しく追加された値に置き換えられます。
 
@@ -136,7 +136,7 @@
 
 出来上がったアプリケーションを使用する前に
 
-1. 仕事一覧のコンテンツページで、_編集_ボタンを2回クリックします。
+1. 仕事一覧のコンテンツページで、 **編集** ボタンを2回クリックします。
 
 1. リンク]タブで、[リンク]の下にある[マップされたURL]を選択し、[表示ページテンプレートの編集]を選択します。
 
@@ -156,10 +156,10 @@
 
 ## 関連トピック
 
-[フラグメントを使ってフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md) 
+[フラグメントを使ってフォームを構築する](../../../building-applications/objects/using-fragments-to-build-forms.md)
 
-[Creating Objects](../../../building-applications/objects/creating-and-managing-objects/creating-objects.md) 
+[オブジェクトの作成](../../../building-applications/objects/creating-and-managing-objects/creating-objects.md)
 
-[サイトへのページの追加](../../creating-pages/adding-pages/adding-a-page-to-a-site.md) 
+[サイトへのページの追加](../../creating-pages/adding-pages/adding-a-page-to-a-site.md)
 
-[表示ページテンプレートの作成と管理](./creating-and-managing-display-page-templates.md) 
+[表示ページテンプレートの作成と管理](./creating-and-managing-display-page-templates.md)

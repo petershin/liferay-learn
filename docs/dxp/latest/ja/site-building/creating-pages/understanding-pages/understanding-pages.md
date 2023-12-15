@@ -28,6 +28,7 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 ```{tip}
 現在表示されているページのタイプは、ページの上部に表示され、管理オプションやページを設定するために必要な場所を判断するのに役立ちます。
 ```
+
 ### コンテントページ
 
 コンテンツページでは、ユーザーは簡単に管理でき、コンテンツをインラインで編集できるプロフェッショナルなページを構築できる。 コンテンツページは、主に [ページフラグメント](../page-fragments-and-widgets/using-fragments.md) とウィジェットを使って構築される。
@@ -44,7 +45,7 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 
 ### ウィジェットページ
 
-ウィジェット・ページには、ウィジェット（アプリケーション）を表示するための[レイアウト](../../creating-pages/page-settings/configuring-individual-pages.md#page-layout)が設定されています。ウィジェットはコンテンツを表示したり、インタラクティブで動的な機能をページに追加することができます。詳しくは[ウィジェットをページに追加する](../using-widget-pages/adding-widgets-to-a-page.md)をご覧ください。
+ウィジェット・ページには、ウィジェット（アプリケーション）を表示するための [レイアウト](../../creating-pages/page-settings/configuring-individual-pages.md#page-layout) が設定されています。ウィジェットはコンテンツを表示したり、インタラクティブで動的な機能をページに追加することができます。詳しくは[ウィジェットをページに追加する](../using-widget-pages/adding-widgets-to-a-page.md)をご覧ください。
 
 ![Widget pages can provide a number of functions, such as a dedicated wiki page solution.](./understanding-pages/images/03.png)
 
@@ -85,23 +86,24 @@ Liferay 7.4 U22+とGA22+では、新規インストール時にプライベー�
 ```{tip}
 サイトマップアプリケーションを使用して、サイト階層のページ間を移動することができます。 サイト管理者は、ルート・ページと表示深度を設定できる。 サイトマップアプリケーションの表示する階層は、入れ子されたページを何階層で表示するかを決定します。
 ```
+
 ## プライベートページの有効化
 
 {bdg-secondary}`Liferay 7.4 U22+とGA22+のために`。
 
 デフォルトでは、Liferayの新規インストールには、ユーザーがプライベートページを作成できないようにするリリース機能フラグが含まれています。 以下の手順に従って、Liferayシステムのプライベートページを有効にしてください：
 
-1. グローバルメニュー( ![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブに移動し、_システム設定_をクリックします。
+1. グローバルメニュー( ![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 **コントロールパネル** タブに移動し、 **システム設定** をクリックします。
 
-1. *Release Feature Flags*にアクセスしてください。
+1. **Release Feature Flags** にアクセスしてください。
 
 1. 無効な機能]ドロップダウンメニューで、[プライベートページを無効にする]を選択します。
 
    ![Select disable private pages.](./understanding-pages/images/05.png)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
-   再びプライベートページを無効にしたい場合は、_Disable Private Pages_の選択を解除し、_Update_をクリックしてください。
+   再びプライベートページを無効にしたい場合は、 **Disable Private Pages** の選択を解除し、 **Update** をクリックしてください。
 
 ## 関連情報
 

@@ -10,9 +10,9 @@
 
 1. Liferayインスタンスにアクセスし、Kyle Kleinとしてログインします。
 
-1. 画面上部のグローバルメニュー（[アプリケーションメニュー](../../images/icon-applications-menu.png)）を開き、_コントロールパネル_ &rarr; _インスタンス設定_ をクリックします。
+1. 画面上部のグローバルメニュー（ [アプリケーションメニュー](../../images/icon-applications-menu.png) ）を開き、 **コントロールパネル** &rarr; **インスタンス設定** をクリックします。
 
-1. インスタンス設定]ページで、[_インスタンス設定_]をクリックします。
+1. インスタンス設定]ページで、[**インスタンス設定**]をクリックします。
 
    ![The default site's name and logo are set on the Instance Configuration screen.](./changing-the-default-sites-name-and-logo/images/01.png)
 
@@ -26,35 +26,35 @@
    unzip liferay-v6j4.zip
    ```
 
-1. インスタンス構成ページで、_ロゴ変更_ボタン( ![アイコン変更](../../images/icon-change.png) )をクリックします。
+1. インスタンス構成ページで、 **ロゴ変更** ボタン( ![アイコン変更](../../images/icon-change.png) )をクリックします。
 
-1. ポップアップ・モーダルでダウンロードした画像（`ClarityLogo.png`）をアップロードし、_Done_をクリックします。
+1. ポップアップ・モーダルでダウンロードした画像（`ClarityLogo.png`）をアップロードし、 **Done** をクリックします。
 
    ![Use the pop-up modal to upload the Clarity logo.](./changing-the-default-sites-name-and-logo/images/02.png)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 ## サイト名の変更
 
 デフォルトの "Liferay "を適切なサイト名に変更してください。
 
-1. インスタンス構成で、_全般_ スコープをクリックします。
+1. インスタンス構成で、 **全般** スコープをクリックします。
 
    ![Click the General scope to change the site's name.](./changing-the-default-sites-name-and-logo/images/03.png)
 
-1. *Name*フィールドに*Clarity*と入力する。
+1. **Name** フィールドに **Clarity** と入力する。
 
 ## その他の重要なインスタンス設定の変更
 
 また、ホームURLとメールドメインも、あなたのサイトにより適切な用語に変更する必要がある。
 
-1. 同じ一般設定ページで、_Mail Domain_ フィールドのドメインを `clarityvisionsolutions.com` に変更します。
+1. 同じ一般設定ページで、 **Mail Domain** フィールドのドメインを `clarityvisionsolutions.com` に変更します。
 
-1. *Home URL*フィールドに`/web/p`と入力する。
+1. **Home URL** フィールドに`/web/p`と入力する。
 
    次の演習でサイトのフレンドリーURLを変更するので、インスタンスが変更に伴ってユーザーを正しくリダイレクトするように、ホームURLを今すぐ変更してください。
 
-1. ページ下部の_保存_をクリックします。
+1. ページ下部の **保存** をクリックします。
 
 これで、サイトの一般的な詳細がクラリティ・ブランドを適切に反映するようになりました。 デフォルトのホームページ（セルフホストまたはDockerインスタンスの場合、`localhost:8080/web/guest`）を再訪問して変更を確認する。
 

@@ -2,11 +2,12 @@
 
 {bdg-secondary}`Liferay 7.4 U69+/GA69+`.
 
-`nestedFields` パラメータは、Liferay が一つの GET リクエストで複数のレベルの関連オブジェクトエントリを返すようにします。 nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. `nestedFields` パラメータに、クエリに含めるリレーションシップ名を、コンマで区切って渡す。 リレーションシップが複数のレベルにまたがる場合は、`nestedFieldsDepth` パラメータを必要な深さに設定する。 最大5レベルまで含めることができる（例：`nestedFieldsDepth=5`）。
+`nestedFields` パラメータは、Liferay が一つの GET リクエストで複数のレベルの関連オブジェクトエントリを返すようにします。 `nestedFields=[firstObjectRelationship],[secondObjectRelationship]`. `nestedFields` パラメータに、クエリに含めるリレーションシップ名を、コンマで区切って渡す。 リレーションシップが複数のレベルにまたがる場合は、`nestedFieldsDepth` パラメータを必要な深さに設定する。 最大5レベルまで含めることができる（例：`nestedFieldsDepth=5`）。
 
 ```{tip}
 `nestedFields` パラメータは、複数のリクエストを必要とするような関連するエントリを取得することで、リクエストを最適化します。 関連するエントリーのみを返すために、Liferay は専用の [リレーションシップ API](../using-custom-object-apis.md#relationship-rest-apis) を提供しています。 [Using Relationship REST API](./using-relationship-rest-apis.md) を参照してください。
 ```
+
 続行するには、新しいLiferay 7.4インスタンスを [セットアップ](#setting-up-a-liferay-instance) し、提供されたチュートリアルコードを [準備](#preparing-the-sample-code) します。 次に、 [スクリプトを実行する。](#creating-and-querying-related-object-entries) 関連するエントリーを作成し、`nestedFields` パラメーターを使ってクエリーする。
 
 ## Liferayインスタンスのセットアップ
@@ -18,9 +19,9 @@
 
 ### 関連オブジェクト定義の作成
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［** オブジェクト**］ をクリックします。
 
-1. [](../../creating-and-managing-objects/creating-objects.md) 3つのオブジェクトドラフトを作成する。
+1. [作成](../../creating-and-managing-objects/creating-objects.md) 3つのオブジェクトドラフトを作成する。
 
    最初のオブジェクト：
 
@@ -93,6 +94,7 @@ ZIPは、REST APIを使用してオブジェクトエントリを作成、関連
 ```{tip}
 サイトオブジェクトとカンパニーオブジェクト用に生成されたAPIの完全なリストについては、 [Objects Headless Framework Integration](../using-custom-object-apis.md) を参照してください。 カスタムオブジェクトAPIは、LiferayAPIエクスプローラーを通して`[server]:[port]/o/api` （例：`localhost:8080/o/api`）で表示およびテストできます。 *RESTアプリケーション*をクリックし、APIを選択します。
 ```
+
 ## 関連オブジェクト・エントリーの作成と照会
 
 1. `liferay-w4s7`プロジェクトの`curl` フォルダに移動します。

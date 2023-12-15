@@ -52,7 +52,7 @@ JavaScriptクライアント拡張は、Liferayインスタンス全体にグロ
 type: globalJS
 ```
 
-開始するには、 [Using a JavaScript Client Extension](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md) を参照してください。
+開始するには、 [JavaScriptクライアント拡張の使用](./front-end-client-extensions/tutorials/using-a-javascript-client-extension.md) を参照してください。
 
 ## CSS クライアント拡張
 
@@ -64,13 +64,13 @@ CSSクライアント拡張は、ページに新しいCSSスタイリングを�
 type: globalCSS
 ```
 
-開始するには、 [Using a CSS Client Extension](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) を参照してください。
+開始するには、 [CSSクライアント拡張の使用](./front-end-client-extensions/tutorials/using-a-css-client-extension.md) を参照してください。
 
 ## テーマのCSSクライアント拡張
 
 [CSSクライアント拡張機能](#css-client-extensions)がページにスタイルを追加するのに対して、テーマCSSクライアント拡張機能はサイトの[テーマ](../../site-building/site-appearance/themes/introduction-to-themes.md)を含むページのスタイルを上書きします。クライアント拡張機能は `clay.css` ファイルと `main.css` ファイルを使用して、サイトのテーマで通常使用される同じ名前のファイルを置き換えます。
 
-このタイプのクライアント拡張は、Liferay Applicationsメニューの_Client Extensions_からオプションとして追加できます。
+このタイプのクライアント拡張は、Liferay Applicationsメニューの **Client Extensions** からオプションとして追加できます。
 
 ![Add a theme CSS client extension to replace CSS provided by your site's theme.](./front-end-client-extensions/images/01.png)
 
@@ -88,7 +88,7 @@ type: themeCSS
 
 ## テーマのお気に入りアイコンクライアント拡張
 
-Liferayのページのお気に入りアイコンをオーバーライドします。 デプロイすると、提供されたアイコンファイルはLiferayのどのページでも利用可能になります。 ページデザインオプションメニューからページのお気に入りアイコンを設定する際に、別の ［**Client Extension**］ タブでアクセスすることができます。
+Liferayのページのファビコンをオーバーライドします。デプロイすると、提供されたアイコンファイルがLiferayのどのページでも利用できるようになります。ページデザインオプションメニューからページのファビコンを設定する際に、別の**Client Extensions**タブでアクセスできます。
 
 ![When you configure the favicon for a page, access the favicon from your client extension from a special Client Extensions tab.](./front-end-client-extensions/images/02.png)
 
@@ -122,7 +122,7 @@ type: customElement
 
 > 旧名称：IFrameのリモートアプリケーション
 
-IFrameクライアント拡張は、 [カスタム要素クライアント拡張](#custom-element-client-extensions) のように動作します。 しかし、外部アプリケーションは`<iframe>`HTML要素としてレンダリングされ、ホストページからのインタラクションを制限することができる。 他のフロントエンドクライアント拡張とは異なり、これらは_静的リソース_を提供しない。
+IFrameクライアント拡張は、 [カスタム要素クライアント拡張](#custom-element-client-extensions) のように動作します。 しかし、外部アプリケーションは`<iframe>`HTML要素としてレンダリングされ、ホストページからのインタラクションを制限することができる。 他のフロントエンドクライアント拡張とは異なり、これらは **静的リソース** を提供しない。
 
 IFrameクライアントの拡張子を`client-extension.yaml`ファイルで指定する：
 
@@ -138,7 +138,7 @@ type: iframe
 
 | 名前              | データ型   | デフォルト値                    | 説明                                                                                                  |
 | :-------------- | :----- | :------------------------ | :-------------------------------------------------------------------------------------------------- |
-| `baseURL`       | 文字列    | _サイトURLから派生_              | クライアント拡張の定義されたすべてのリソースが提供される基本パスです。                                                                 |
+| `baseURL`       | 文字列    | **サイトURLから派生** | クライアント拡張の定義されたすべてのリソースが提供される基本パスです。                                                                 |
 | `description`   | 文字列    |                           | クライアント拡張の説明                                                                                         |
 | `name`          | 文字列    |                           | クライアント拡張の名前（UIに表示されるもの）。 フロントエンドクライアント拡張には名前が必要です。                                                  |
 | `sourceCodeURL` | URL    | https://www.liferay.com | クライアント拡張のソースリポジトリへのアドレス。                                                                            |

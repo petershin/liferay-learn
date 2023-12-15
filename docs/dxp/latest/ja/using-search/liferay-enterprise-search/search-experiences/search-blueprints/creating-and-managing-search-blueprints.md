@@ -1,12 +1,12 @@
 # 検索ブループリントの作成と管理
 
-[Search Blueprints](./understanding-search-blueprints.md) は、Global メニューの Applications セクション &rarr; Search Experiences から作成できます。 もし既にブループリントを持っていて、その機能をLiferay [ページの検索](../../../search-pages-and-widgets/working-with-search-pages.md) に適用したい場合は、 [Using a Search Blueprint on a Search Page](./using-a-search-blueprint-on-a-search-page.md) をご覧ください。
+[Search Blueprints](./understanding-search-blueprints.md) は、Global メニューの Applications セクション &rarr; Search Experiences から作成できます。 もし既にブループリントを持っていて、その機能をLiferay [ページの検索](../../../search-pages-and-widgets/working-with-search-pages.md) に適用したい場合は、 [検索ブループリントを検索ページで使用する](./using-a-search-blueprint-on-a-search-page.md) をご覧ください。
 
 検索ブループリントを作成するには、
 
-1. Global Menu &rarr; Applications (Search Experiences) から _Blueprints_ をクリックして、Blueprints アプリケーションを開きます。
+1. Global Menu &rarr; Applications (Search Experiences) から **Blueprints** をクリックして、Blueprints アプリケーションを開きます。
 
-1. *Add* (![Add](../../../../images/icon-add.png)) をクリックしてブループリントを追加します。
+1. **Add**(![Add](../../../../images/icon-add.png)) をクリックしてブループリントを追加します。
 
    ![Start creating a Blueprint from the Add Blueprint modal window.](./creating-and-managing-search-blueprints/images/01.png)
 
@@ -24,7 +24,7 @@
 
    詳しくは、 [Testing a Blueprint](#testing-a-blueprint-with-the-preview-sidebar) を参照してください。
 
-1. 最初のブループリント作成が終わったら、_Save_をクリックします。
+1. 最初のブループリント作成が終わったら、 **Save** をクリックします。
 
 ブループリントの作成プロセスは迅速かつシンプルに行えますが、反復とテストが必要になることもあります。 ブループリントを頻繁に保存して、作業内容を確実に保存してください。
 
@@ -46,13 +46,13 @@
 
 要素を追加してブループリントにクエリ句の追加を開始します。
 
-1. Query Elements画面で_Add_ (![Add](../../../../images/icon-add.png)) をクリックして、Add Query Elementsサイドバーを開きます。
+1. Query Elements画面で **Add**(![Add](../../../../images/icon-add.png)) をクリックして、Add Query Elementsサイドバーを開きます。
 
    ![Add Elements to the Blueprint.](./creating-and-managing-search-blueprints/images/04.png)
 
 1. 探検したい要素カテゴリーを展開する。
 
-1. 要素にカーソルを合わせ、_Add_をクリックする。
+1. 要素にカーソルを合わせ、 **Add** をクリックする。
 
 1. この要素は、［Query Builder］に追加され、設定できるようになります。
 
@@ -60,11 +60,11 @@
 
 1. 検索クエリを設定するために必要な数の要素を追加します。
 
-   既成の各要素の説明については、 [Search Blueprints Elements Reference](./search-blueprints-elements-reference.md) を参照してください。
+   既成の各要素の説明については、 [検索ブループリント要素のリファレンス](./search-blueprints-elements-reference.md) を参照してください。
 
 1. カスタム要素が必要な場合は、クエリビルダーにカスタムJSON要素を追加し、必要なクエリ句を記述します。
 
-   カスタムJSON要素の作成については、 [Creating Elements](./creating-and-managing-elements/creating-elements.md) を参照してください。
+   カスタムJSON要素の作成については、 [エレメントを作る](./creating-and-managing-elements/creating-elements.md) を参照してください。
 
 ```{important}
 一部の要素は、クエリビルダでブループリントに追加する以上のアクションを必要とします。 たとえば、「Boost Longer Contents」エレメントや「Boost Contents with More Versions」エレメントを使用するには、コントロールパネル &rarr; Search &rarr; Index Actions で以下のエントリのインデックスを再作成する必要があります：
@@ -87,7 +87,7 @@
 ![Expand the Searchable Types drop-down to begin removing assets from the Search Blueprint.](./creating-and-managing-search-blueprints/images/06.png)
 
 - デフォルトでは、すべてのアセットタイプとオブジェクトタイプが選択されています。
-- 特定のタイプを削除するには、_Select Asset Types_をクリックしてSelect Typesを開き、対応するチェックボックスの選択を解除します。
+- 特定のタイプを削除するには、 **Select Asset Types** をクリックしてSelect Typesを開き、対応するチェックボックスの選択を解除します。
 
 ![The Select Types modal is used for bulk management of the assets to be searched.](./creating-and-managing-search-blueprints/images/07.png)
 
@@ -112,11 +112,11 @@ Liferayのバックエンドのコード（そしてあなたのLiferayインス
 
 通常はデフォルトの設定で十分です。 [Searchable Types](#choosing-which-liferay-assets-to-search) を使用する以上に、この動作を微調整しなければならないと確信するのであれば、これらのバックエンド貢献者の動作方法を理解しなければならない：
 
-1. 個々のインデクサを検索に参加させないようにするには、**検索可能なタイプ**を使用します。 型のインデクサを無効にすると、その型のクエリ・コントリビュータが選択されていても、その型の句は検索クエリに追加されません。 これらのタイプの結果は、ユーザーには表示されない。
+1. 個々のインデクサを検索に参加させないようにするには、 **検索可能なタイプ** を使用します。 型のインデクサを無効にすると、その型のクエリ・コントリビュータが選択されていても、その型の句は検索クエリに追加されません。 これらのタイプの結果は、ユーザーには表示されない。
 
 1. **Search Framework Indexer Clauses** を使用して、Liferay のすべてのインデクサが検索に句を提供しないようにします。 すべてのインデクサを無効にする唯一の理由は、検索クエリをゼロから構築し、すべてのクエリコントリビューターと検索可能なアセットを同様に無効にすることです。
 
-1. 特定の投稿者を検索に参加させないようにするには、**Search Framework Query Contributors** セクションを使用します。 独自のBlueprints設定を使用してそれらを上書きしたい場合は、特定の条項の貢献者を無効にするか、Liferayの検索動作を完全に上書きするためにすべての条項を無効にし、LiferayのIndexersとSearchable Typesも無効にします。
+1. 特定の投稿者を検索に参加させないようにするには、 **Search Framework Query Contributors** セクションを使用します。 独自のBlueprints設定を使用してそれらを上書きしたい場合は、特定の条項の貢献者を無効にするか、Liferayの検索動作を完全に上書きするためにすべての条項を無効にし、LiferayのIndexersとSearchable Typesも無効にします。
 
 ```{important}
 * すべてのインデクサと条件コントリビューターを無効にした場合でも、Liferayの検索フレームワークによって特定の必須句が常に追加されます。 そのため、ブループリントでクエリを一から作ることはありません。
@@ -142,7 +142,7 @@ Liferayのバックエンドのコード（そしてあなたのLiferayインス
 
 ![Additional settings can be configured using JSON.](./creating-and-managing-search-blueprints/images/09.png)
 
-これらを追加するには、_Configuration_タブをクリックし、目的のコンフィギュレーションのテキスト入力ボックスを見つけてください。 JSONを入力し、ブループリントを保存します。
+これらを追加するには、 **Configuration** タブをクリックし、目的のコンフィギュレーションのテキスト入力ボックスを見つけてください。 JSONを入力し、ブループリントを保存します。
 
 以下は、検索結果を `name` フィールドで降順（アルファベット逆順--Z-A）にソートするソートの例である：
 
@@ -156,7 +156,7 @@ Liferayのバックエンドのコード（そしてあなたのLiferayインス
 }
 ```
 
-詳細については、 [Search Blueprints Configuration Reference](./search-blueprints-configuration-reference.md) を参照してください。
+詳細については、 [検索ブループリント設定のリファレンス](./search-blueprints-configuration-reference.md) を参照してください。
 
 ## ブループリントのインポートとエクスポート
 
@@ -166,13 +166,13 @@ Liferayのバックエンドのコード（そしてあなたのLiferayインス
 
 1. ［グローバルメニュー］ &rarr; ［アプリケーション］ &rarr; ［ブループリント］(［Search Experiences］セクション) からブループリントアプリケーションを開いてください。
 
-1. ブループリントのリストから、ブループリントの\_Actions\_ (![Actions](../../../../images/icon-actions.png)) メニューを開き、\_Export\_をクリックします。
+1. ブループリントのリストから、ブループリントの\ **Actions\**(![Actions](../../../../images/icon-actions.png)) メニューを開き、\ **Export\** をクリックします。
 
 ブループリントのJSON定義をインポートする。
 
 1. ［グローバルメニュー］ &rarr; ［アプリケーション］ &rarr; ［ブループリント］(［Search Experiences］セクション) からブループリントアプリケーションを開いてください。
 
-1. メインのブループリント _Actions_ (![Actions](../../../../images/icon-actions.png)) メニューを開き、_Import_ をクリックします。
+1. メインのブループリント **Actions**(![Actions](../../../../images/icon-actions.png)) メニューを開き、 **Import** をクリックします。
 
 1. 有効なブループリント JSON ファイルを選択します。 有効な要素のJSONファイルもこの画面からインポートすることができます。
 
@@ -182,15 +182,15 @@ Liferayのバックエンドのコード（そしてあなたのLiferayインス
 
 ## プレビューサイドバーでブループリントをテストする
 
-実行中のブループリントに裏付けされた検索結果を調べるのに便利なプレビューサイドバーがあります。 Edit Blueprint画面から_Preview_ボタンをクリックしてプレビューにアクセスします。
+実行中のブループリントに裏付けされた検索結果を調べるのに便利なプレビューサイドバーがあります。 Edit Blueprint画面から **Preview** ボタンをクリックしてプレビューにアクセスします。
 
 ![Preview a Blueprint before putting it in action.](./creating-and-managing-search-blueprints/images/14.png)
 
 ここでは、これらの機能にアクセスできます。
 
-- 7.4 U52+の場合、_View Raw Request_をクリックすると、検索リクエスト文字列全体が表示されます。 ［Raw Request］モーダルから、リクエストをクリップボードにコピーするか、JSONファイルとしてダウンロードすることができます。 これは、検索ページの [［検索インサイト］](../../../search-pages-and-widgets/search-insights.md) ウィジェットで見られるリクエストと同じです。
+- 7.4 U52+の場合、 **View Raw Request** をクリックすると、検索リクエスト文字列全体が表示されます。 ［Raw Request］モーダルから、リクエストをクリップボードにコピーするか、JSONファイルとしてダウンロードすることができます。 これは、検索ページの [［検索インサイト］](../../../search-pages-and-widgets/search-insights.md) ウィジェットで見られるリクエストと同じです。
 
-- _View Raw Response_をクリックすると、検索応答文字列全体が表示されます。 ここで、レスポンスをクリップボードにコピーするか、JSONファイルとしてダウンロードすることができる。 これは、検索ページの [Search Insights](../../../search-pages-and-widgets/search-insights.md) ウィジェットに表示される文字列と同じです。
+- **View Raw Response** をクリックすると、検索応答文字列全体が表示されます。 ここで、レスポンスをクリップボードにコピーするか、JSONファイルとしてダウンロードすることができる。 これは、検索ページの [検索インサイト](../../../search-pages-and-widgets/search-insights.md) ウィジェットに表示される文字列と同じです。
 
   ![View the raw response string returned from Elasticsearch.](./creating-and-managing-search-blueprints/images/11.png)
 
@@ -202,17 +202,17 @@ Liferayのバックエンドのコード（そしてあなたのLiferayインス
 
   ![Inspect the document's fields.](./creating-and-managing-search-blueprints/images/13.png)
 
-[いくつかの要素](./search-blueprints-elements-reference.md) は、手動で提供またはオーバーライドできる検索コンテキスト属性を読み取ります。 これらの要素を含むブループリントをテストするには、歯車のアイコン (![Gear](../../../../images/icon-cog3.png)) をクリックして、ブループリントのプレビュー検索に検索コンテキスト属性を追加します。 属性のキーと値のペアを入力し、_Done_をクリックします。 このアトリビュートはブループリントのプレビューにのみ設定され、ブループリント自体には保存されないことに注意してください。 これらの属性は、ページの検索で設定することができます。 詳しくは、 [検索ブループリントを検索ページで使用する](./using-a-search-blueprint-on-a-search-page.md) を参照してください。
+[いくつかの要素](./search-blueprints-elements-reference.md) は、手動で提供またはオーバーライドできる検索コンテキスト属性を読み取ります。 これらの要素を含むブループリントをテストするには、歯車のアイコン (![Gear](../../../../images/icon-cog3.png)) をクリックして、ブループリントのプレビュー検索に検索コンテキスト属性を追加します。 属性のキーと値のペアを入力し、 **Done** をクリックします。 このアトリビュートはブループリントのプレビューにのみ設定され、ブループリント自体には保存されないことに注意してください。 これらの属性は、ページの検索で設定することができます。 詳しくは、 [検索ブループリントを検索ページで使用する](./using-a-search-blueprint-on-a-search-page.md) を参照してください。
 
 例えば、
 
-1. カテゴリー [「_administrative_」を持つ新しい](../../../../content-authoring-and-management/tags-and-categories.md) 語彙を追加する。
+1. カテゴリー [「**administrative**」を持つ新しい](../../../../content-authoring-and-management/tags-and-categories.md) 語彙を追加する。
 
-1. [Web Content Articles](../../../../content-authoring-and-management/web-content/web-content-articles.md) を2つ追加する。両方ともタイトルフィールドに_test_があることを確認する。 そのうちの1つを、作成したカテゴリーに関連付けます。
+1. [Webコンテンツの記事](../../../../content-authoring-and-management/web-content/web-content-articles.md) を2つ追加する。両方ともタイトルフィールドに **test** があることを確認する。 そのうちの1つを、作成したカテゴリーに関連付けます。
 
-1. 新しいブループリントを作成し、条件要素 _Hide Contents in a Category for Guest Users_ を追加します。 作成したカテゴリのアセットカテゴリIDが必要ですが、それはプレビューウィンドウで確認することができます。
+1. 新しいブループリントを作成し、条件要素 **Hide Contents in a Category for Guest Users** を追加します。 作成したカテゴリのアセットカテゴリIDが必要ですが、それはプレビューウィンドウで確認することができます。
 
-1. プレビューで_administrative_を検索。 ウェブコンテンツ記事のドキュメントをカテゴリーとともに展開し、`assetCategoryId`（例：43013）を見つける。
+1. プレビューで **administrative** を検索。 ウェブコンテンツ記事のドキュメントをカテゴリーとともに展開し、`assetCategoryId`（例：43013）を見つける。
 
 1. 要素の設定にあるIDを使用します。
 
@@ -222,7 +222,7 @@ Liferayのバックエンドのコード（そしてあなたのLiferayインス
 
    値: `false`
 
-1. _Done_をクリックし、_test_の検索を入力する。
+1. **Done** をクリックし、 **test** の検索を入力する。
 
 これで、未分類のWebコンテンツだけが返されるようになりました。 もう1つは、検索ユーザーがゲストであるかのように検索を動作させる検索コンテキスト属性のため、非表示になっています。
 
@@ -232,7 +232,7 @@ Liferayのバックエンドのコード（そしてあなたのLiferayインス
 
 {bdg-secondary}`ライフェライ2023.Q4+/GA102+について`
 
-ブループリントは編集可能なERCで参照でき、可能な限りこれを推奨する。 便宜上、ERCを覚えやすく人間が読めるものに設定することができる。 ブループリント・エディターから、_Edit_ をクリックします！[Edit](../../../../images/icon-edit-pencil.png) をクリックします：
+ブループリントは編集可能なERCで参照でき、可能な限りこれを推奨する。 便宜上、ERCを覚えやすく人間が読めるものに設定することができる。 ブループリント・エディターから、 **Edit** をクリックします！ [Edit](../../../../images/icon-edit-pencil.png) をクリックします：
 
 ![Edit the ERC to be memorable and readable.](./creating-and-managing-search-blueprints/images/15.png)
 

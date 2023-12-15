@@ -13,7 +13,7 @@ toc:
 
 カスタムオブジェクトの定義を公開すると、Liferayはオブジェクトとそのデータと連携するためのデフォルトの [REST APIs](../../../headless-delivery/consuming-apis/consuming-rest-services.md) を生成します。 これらのAPIは、オブジェクトのスコープ（会社やサイトなど）に応じて異なります。 定義にリレーションシップやスタンドアロンアクションが含まれている場合、Liferayはそれらを呼び出すためのエンドポイントも生成します。
 
-これらのヘッドレスサービスのパスは `c/[pluralobjectlabel]` の命名パターンに従う（例：`/o/c/timeoffrequests`）。 [server]:[port]/o/api` （例：`localhost:8080/o/api`）の Liferay API Explorer から利用可能なオブジェクト API を表示し、テストすることができます。 *RESTアプリケーション*をクリックすると、APIのドロップダウンリストが表示されます。
+これらのヘッドレスサービスのパスは `c/[pluralobjectlabel]` の命名パターンに従う（例：`/o/c/timeoffrequests`）。 `[server]:[port]/o/api` （例：`localhost:8080/o/api`）の Liferay API Explorer から利用可能なオブジェクト API を表示し、テストすることができます。 **RESTアプリケーション** をクリックすると、APIのドロップダウンリストが表示されます。
 
 ![Each object appears under REST Applications.](./using-custom-object-apis/images/01.png)
 
@@ -108,7 +108,7 @@ HTTPエンドポイントでは、`relationshipName`をリレーションシッ�
 サイトにスコープされたオブジェクトの場合、ERCエンドポイントは `/scope/{scopeKey}` 接頭辞を含む（例えば、`/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`）。 システムオブジェクトでは、外部参照コードのエンドポイントは利用できません。
 
 ```{tip}
-専用のリレーションシップAPIに加えて、`nestedFields`クエリパラメータをオブジェクトの他のGET APIと組み合わせて使用すると、エントリーとその関連エントリーを返すことができます。 このパラメータを使用する場合、出力に含めたいリレーションシップの名前を指定する必要があります（例：`nestedFields=ticketAssignee`など）。 [Using `nestedFields` to Query Related Entries](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) を参照してください。
+専用のリレーションシップAPIに加えて、`nestedFields`クエリパラメータをオブジェクトの他のGET APIと組み合わせて使用すると、エントリーとその関連エントリーを返すことができます。 このパラメータを使用する場合、出力に含めたいリレーションシップの名前を指定する必要があります（例：`nestedFields=ticketAssignee`など）。 [`nestedFields` を使って関連するエントリーを検索する](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) を参照してください。
 ```
 ## スタンドアロンアクションREST API
 

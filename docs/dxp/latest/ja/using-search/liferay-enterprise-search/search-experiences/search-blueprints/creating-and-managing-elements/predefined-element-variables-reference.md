@@ -68,7 +68,7 @@
 
 **\*** ipstack と OpenWeatherMap の変数にアクセスするには、まず各サービスを有効にします。 システムまたはインスタンスの設定 &rarr; プラットフォーム &rarr; 検索エクスペリエンスにアクセスします。 有効］チェックボックスをクリックし、設定するサービスの設定を保存します。 OpenWeatherMap サービスは、ipstack サービスが有効であることに依存していることに注意してください。 ipstack サービスを使用した例については、 [Personalizing Search Experience](../personalizing-the-search-experience.md) をご参照ください。
 
-**\*\*** これらの既成の変数に加え、 [ユーザー・エンティティ上のカスタム・フィールド](../../../../../system-administration/configuring-liferay/adding-custom-fields.md) も、要素内の変数として参照することができる。 例えば、**Employee** という名前のユーザーカスタムフィールドは、 `user.custom.field.employee`という要素の中で参照されます。
+**\*\*** これらの既成の変数に加え、 [ユーザー・エンティティ上のカスタム・フィールド](../../../../../system-administration/configuring-liferay/adding-custom-fields.md) も、要素内の変数として参照することができる。 例えば、***Employee** という名前のユーザーカスタムフィールドは、 `user.custom.field.employee`という要素の中で参照されます。
 
 ## 関連トピック
 

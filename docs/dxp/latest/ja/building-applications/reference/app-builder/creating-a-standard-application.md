@@ -15,9 +15,9 @@
 
 1. 追加ボタン (![Add](../../../images/icon-add.png)) をクリックします。
 
-1. 名前を入力してください： _Time Off Request_.
+1. 名前を入力してください： **Time Off Request** .
 
-1. オブジェクトのフォーム・ビューを作成し、オブジェクトに存在するデータ・フィールドを定義するには、_Continue and Create Form View_設定をチェックしたままにして、_Continue_をクリックします。
+1. オブジェクトのフォーム・ビューを作成し、オブジェクトに存在するデータ・フィールドを定義するには、 **Continue and Create Form View** 設定をチェックしたままにして、 **Continue** をクリックします。
 
    ![Creating a custom object is the first step to writing an App Builder application.](./creating-a-standard-application/images/01.png)
 
@@ -31,7 +31,7 @@
 
 1. フォーム・ビュー」タブで「追加」ボタンをクリックします。 フォームビルダーが表示されます。
 
-1. フォームビューに _Add Request_ という名前を付けます。
+1. フォームビューに **Add Request** という名前を付けます。
 
 1. スクリーンショットのレイアウトを使用して、以下を追加します。
 
@@ -58,7 +58,7 @@
 
    ![Use the table builder embedded inside the App Builder to create table views.](./creating-a-standard-application/images/03.png)
 
-1. テーブルビューに _Time Off Requests_ という名前を付けます。
+1. テーブルビューに **Time Off Requests** という名前を付けます。
 
 1. ［コメント］フィールド以外の使用可能なすべてのフィールドをテーブルキャンバスにドラッグします。
 
@@ -75,18 +75,18 @@ Time Off Requestには、デプロイする2つのアプリがあります。1�
 
 1. Time Off Requestを開きます（［コントロールパネル］ &rarr; ［アプリビルダー］ &rarr; ［カスタムオブジェクト］）。
 
-1. _Apps_タブでAddボタンをクリックします（！[Add](../../../images/icon-add.png) ）。
+1. **Apps** タブでAddボタンをクリックします（！ [Add](../../../images/icon-add.png) ）。
 
    ```{note}
    オブジェクト（DXPサブスクライバーが利用可能）の「ワークフロー対応」アプリを作成する場合は、グローバルメニューのアプリエントリからアプリを作成してデプロイする必要があります。 詳細については、 [ワークフローを利用したアプリケーションの作成](./creating-a-workflow-powered-application.md) を参照してください。
    ```
-1. アプリ名を_Time Off Requester_とします。
+1. アプリ名を **Time Off Requester** とします。
 
 1. フォームビューとテーブルビューを選択し、アプリの [デプロイオプション](../app-builder.md#deployment) を設定します。
 
-   Time Off Requesterアプリケーションについて、_Widget_を選択し、_Deploy_をクリックします。 Time Off Requesterウィジェットアプリケーションをページにデプロイし、サイトのユーザーがすぐに利用できるようになりました。
+   Time Off Requesterアプリケーションについて、 **Widget** を選択し、 **Deploy** をクリックします。 Time Off Requesterウィジェットアプリケーションをページにデプロイし、サイトのユーザーがすぐに利用できるようになりました。
 
-1. 同じ手順で、_Time Off Request Manager_という2つ目のアプリを作成し、今度はProduct Menuにアプリを配置することを選択します（デフォルトのApplications Menuに追加する選択のままにしておきます）。
+1. 同じ手順で、 **Time Off Request Manager** という2つ目のアプリを作成し、今度はProduct Menuにアプリを配置することを選択します（デフォルトのApplications Menuに追加する選択のままにしておきます）。
 
    ![Here's the Time Off Request Manage entry in the Applications Menu.](./creating-a-standard-application/images/04.png)
 
@@ -110,7 +110,7 @@ Time Off Requestには、デプロイする2つのアプリがあります。1�
 
 データレコードが既にあるオブジェクトからフィールドを削除すると、そのフィールドはUIに表示されなくなりますが、データは削除されません。 削除されたフィールドと同じ名前とタイプのフィールドを作成すると、フィールドのデータはそのデータを既に保持しているレコードに復元されます。
 
-既存のオブジェクトからフィールドを削除するには、オブジェクトビューでその上にカーソルを置き、_x_をクリックします。 確認を求められ、データ損失について警告されます。
+既存のオブジェクトからフィールドを削除するには、オブジェクトビューでその上にカーソルを置き、 **x** をクリックします。 確認を求められ、データ損失について警告されます。
 
 ![Deleting a field causes data loss for existing records.](./creating-a-standard-application/images/06.png)
 
@@ -118,7 +118,7 @@ Time Off Requestには、デプロイする2つのアプリがあります。1�
 
 既存のフィールドを追加または編集する場合、変更は追加または編集後に追加されたレコードにのみ影響します。 既存のレコードは、変更による影響を受けません。
 
-既存のオブジェクトにフィールドを追加するには、いずれかのフォームビューを開き、フォームビルダーの左ペインにある_Add_ボタンをクリックします。
+既存のオブジェクトにフィールドを追加するには、いずれかのフォームビューを開き、フォームビルダーの左ペインにある **Add** ボタンをクリックします。
 
 ![You can add a field directly to an existing object.](./creating-a-standard-application/images/05.png)
 

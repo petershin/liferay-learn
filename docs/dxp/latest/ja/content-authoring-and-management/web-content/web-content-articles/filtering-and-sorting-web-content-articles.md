@@ -1,6 +1,6 @@
-# Filtering and Sorting Web Content Articles
+# Webコンテンツ記事の絞り込みとソート
 
-デフォルトでは、ウェブコンテンツアプリケーション（_サイトメニュー_ &rarr; _コンテンツとデータ_ &rarr; _ウェブコンテンツ_）には、アクセスできるすべてのウェブコンテンツ記事のリストが表示されます。 多くの項目を扱う場合、フィルタリングとソートオプションを使用すると、このコンテンツリストをすばやく見つけて確認することができます。
+デフォルトでは、ウェブコンテンツアプリケーション（**サイトメニュー** &rarr; **コンテンツとデータ** &rarr; **ウェブコンテンツ**）には、アクセスできるすべてのウェブコンテンツ記事のリストが表示されます。 多くの項目を扱う場合、フィルタリングとソートオプションを使用すると、このコンテンツリストをすばやく見つけて確認することができます。
 
 ![You can filter and sort the web content articles from the web content application.](./filtering-and-sorting-web-content-articles/images/01.png)
 
@@ -10,7 +10,7 @@
 * [ステータスによる絞り込み](#filter-by-status) 
 * [](#order-by) 。
 
-これらのフィルターと並べ替えオプションを組み合わせることができる。 例えば、 [_Mine_ フィルタ](#filter-by-navigation) 、 [_Draft_](#filter-by-status) 、 [order by _Modified Date_](#order-by) 。
+これらのフィルターと並べ替えオプションを組み合わせることができる。 例えば、 [**Mine** フィルタ](#filter-by-navigation) 、 [_Draft_](#filter-by-status) 、 [order by **Modified Date**](#order-by) 。
 
 ## ナビゲーションで絞り込む
 
@@ -50,6 +50,7 @@
 ```{tip}
 並べ替えの順序は、「フィルタと順序」ドロップダウンメニューの隣にある「並べ替えの順序を逆にする」(![並べ替えの順序を逆にする](../../../images/icon-sort2.png))ボタンを使っていつでも変更できます。
 ```
+
 ## 関連情報
 
 * [基本的なウェブコンテンツ記事の追加](./adding-a-basic-web-content-article.md) 

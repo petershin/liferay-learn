@@ -14,7 +14,6 @@ visibility:
 
 **一目瞭然**
 
-
 * Liferayは次のようなビジネス上の問題を解決します：
   * カスタマーポータル
   * デジタルコマースサイト
@@ -72,7 +71,7 @@ Liferayの水平ポータルレガシーは、複数の業界にわたる多く�
 
 先に述べた水平方向のソリューションはすべて、これらの機能を活用している。 これらのOOTB機能により、LiferayはDXP分野における強力なプレーヤーとなっている。
 
-詳細については、 [Liferay DXP Product Capabilities](../level-0/liferay-product-overview.md) モジュールを参照してください。
+詳細については、 [Liferay DXP製品の機能](../level-0/liferay-product-overview.md) モジュールを参照してください。
 
 各タイルをクリックすると、Liferayで最も一般的な6つの水平ソリューションの詳細を読むことができます。 それぞれの項目では以下について説明されています。
 

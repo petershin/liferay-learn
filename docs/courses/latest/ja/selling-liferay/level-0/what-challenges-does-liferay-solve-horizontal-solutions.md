@@ -6,6 +6,9 @@ toc:
   - ./what-challenges-does-liferay-solve-horizontal-solutions/supplier-portals.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/partner-portals.md
   - ./what-challenges-does-liferay-solve-horizontal-solutions/modern-intranets.md
+visibility:
+- Employee
+- Partner
 ---
 # Liferayが解決する課題：水平ソリューション
 

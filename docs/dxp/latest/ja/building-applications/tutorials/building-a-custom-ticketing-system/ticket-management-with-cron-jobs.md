@@ -4,7 +4,7 @@ Cronジョブを使用してチケット管理を自動化します。 例えば
 
 手順に従って、cronジョブを有効にし、デプロイしてください：
 
-1. チケット発券システムのサイトページに戻る。 解決タイプが `duplicate` または `done` であるチケットが少なくとも 1 つできるまで、_Generate a New Ticket_ を数回クリックします。
+1. チケット発券システムのサイトページに戻る。 解決タイプが `duplicate` または `done` であるチケットが少なくとも 1 つできるまで、 **Generate a New Ticket** を数回クリックします。
 
    ![Verify that you have a ticket that has a duplicate or done resolution type.](./ticket-management-with-cron-jobs/images/01.png)
 
@@ -22,7 +22,7 @@ Cronジョブを使用してチケット管理を自動化します。 例えば
    ./gradlew :client-extensions:liferay-ticket-etc-cron:bootRun
    ```
 
-   cronジョブが実行されました。 ログを確認するか、_ticketing system_ サイトページを更新して、チケットが削除されたことを確認してください。
+   cronジョブが実行されました。 ログを確認するか、 **ticketing system** サイトページを更新して、チケットが削除されたことを確認してください。
 
    ![チケットシステムのサイトページを更新してください。 チケットが削除されたことを確認する](./ticket-management-with-cron-jobs/images/02.png)
 

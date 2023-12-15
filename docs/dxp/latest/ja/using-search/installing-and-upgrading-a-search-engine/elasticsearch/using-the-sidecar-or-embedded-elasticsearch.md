@@ -42,7 +42,7 @@ Elasticsearchサーバーには、次のURLからアクセスできます。
 HSQLのような組み込みデータベースを本番環境で実行したり、バンドルされたElasticsearchサーバーを本番環境で実行したりしないでください。 代わりに、Elasticsearchをスタンドアロンサーバーまたはサーバーノードのクラスターとしてリモートモードで実行します。
 
 ```{important}
-検索チューニングアプリ [Synonym Sets](../../search-administration-and-tuning/synonym-sets.md) と [Result Rankings](../../search-administration-and-tuning/result-rankings.md) は、Liferay 7.2と7.3のプライマリデータストレージに検索インデックスを使用しました。 これらのアプリのデータは、Liferayのデータベースには保存されていません。 そのため、Liferay 7.2や7.3でサイドカーやEmbedded モードのElasticsearchを使用中に同義語セットや結果ランキングを設定した場合、リモートElasticsearchサーバーに切り替えて再インデックス化しても、それらの設定は復元 _されません_ 。 その代わり、同義語セットと結果ランキングをリモートのElasticsearchクラスタに手動で取り込む必要があります。 Elastic の [Snapshot and Restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshot-restore.html) 機能を使用してこれらのインデックスを保存する方法については、 [アップグレードガイド](../elasticsearch/upgrading-elasticsearch.md) を参照してください。
+検索チューニングアプリ [同義語セット](../../search-administration-and-tuning/synonym-sets.md) と [結果ランキング](../../search-administration-and-tuning/result-rankings.md) は、Liferay 7.2と7.3のプライマリデータストレージに検索インデックスを使用しました。 これらのアプリのデータは、Liferayのデータベースには保存されていません。 そのため、Liferay 7.2や7.3でサイドカーやEmbedded モードのElasticsearchを使用中に同義語セットや結果ランキングを設定した場合、リモートElasticsearchサーバーに切り替えて再インデックス化しても、それらの設定は復元 _されません_ 。 その代わり、同義語セットと結果ランキングをリモートのElasticsearchクラスタに手動で取り込む必要があります。 Elastic の [Snapshot and Restore](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshot-restore.html) 機能を使用してこれらのインデックスを保存する方法については、 [アップグレードガイド](../elasticsearch/upgrading-elasticsearch.md) を参照してください。
 ```
 
 ## バンドルされているElasticsearchサーバーのユースケース
@@ -71,7 +71,7 @@ Liferay 7.4 (DXP、Portal)、Liferay DXP 7.3、Liferay Portal 7.3 GA4+ では、
 | Wildfly：7.3以降            | サイドカー               | &#10008; | ✘ (自動ダウンロードされました) |
 | WebSphere：7.3以降          | サイドカー               | &#10008; | &#10004;          |
 | Weblogic：7.3以降           | サイドカー               | &#10008; | &#10004;          |
-| _すべてのフレーバー：7.2/7.3 GA3-_ | (それは、)              | &#10004; | &#10008;          |
+| **すべてのフレーバー：7.2/7.3 GA3-** | (それは、)              | &#10004; | &#10008;          |
 
 Tomcat以外のアプリケーションサーバーのバンドルをダウンロードした場合、サーバーを起動すると、Elasticsearchディストリビューションがオンザフライでダウンロードされ、サイドカーサーバーとして起動されます。
 
@@ -143,9 +143,9 @@ Caused by: com.liferay.petra.process.TerminationProcessException: Subprocess ter
 
 1. Liferayを停止します。
 
-1. Liferay Home]/elasticsearch-sidecar/`または`[Liferay Home]/elasticsearch7` を削除します。 このフォルダーには、Sidecar Elasticsearchランタイムが含まれています。
+1. `Liferay Home]/elasticsearch-sidecar/`または`[Liferay Home]/elasticsearch7` を削除します。 このフォルダーには、Sidecar Elasticsearchランタイムが含まれています。
 
-1. Liferay Home]/data/elasticsearch7` を削除します。 このフォルダーには、インデックスデータが含まれています。
+1. `Liferay Home]/data/elasticsearch7` を削除します。 このフォルダーには、インデックスデータが含まれています。
 
 1. Liferayを再起動します。
 

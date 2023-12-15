@@ -52,7 +52,7 @@ JavaScriptコードを追加する最も簡単な方法は、個々のページ�
 
 1. ［**保存**］ をクリックすると、ページでイベントを追跡する準備が整います。
 
-詳しくは、 [ページ単位での設定](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html) を参照してください。
+詳しくは、 [Configuring Individual Pages](https://learn.liferay.com/dxp/latest/ja/site-building/creating-pages/page-settings/configuring-individual-pages.html) を参照してください。
 
 ### ページフラグメントの追加
 

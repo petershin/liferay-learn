@@ -1,6 +1,6 @@
 # フルページアプリケーションページタイプの使用
 
-1. [新しいページを作成](./adding-a-page-to-a-site.md)し、Other見出しの下で**Full Page Application**を選択します。
+1. [新しいページを作成](./adding-a-page-to-a-site.md)し、Other見出しの下で **Full Page Application** を選択します。
 
 1. 名前を入力し、 ［**追加**］ をクリックします。
 

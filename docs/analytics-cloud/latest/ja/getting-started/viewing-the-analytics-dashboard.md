@@ -41,16 +41,16 @@
 * ワークスペース使用状況の監視
 * ワークスペース設定
 
-ワークスペースが接続されると、アナリティクスデータが表示されます。 例えば、 [サイトダッシュボード](../touchpoints/sites-dashboard.md) で、サイト別のアナリティクスを表示できます。 ワークスペース設定の詳細は、 [Managing Workspaces](../workspace-settings/managing-workspaces.md) を参照してください。
+ワークスペースが接続されると、アナリティクスデータが表示されます。 例えば、 [サイトダッシュボード](../touchpoints/sites-dashboard.md) で、サイト別のアナリティクスを表示できます。 ワークスペース設定の詳細は、 [ワークスペースの管理](../workspace-settings/managing-workspaces.md) を参照してください。
 
 ## 言語メニューオプション
 
 Analytics CloudのUIは、現在、英語、日本語、ポルトガル語、スペイン語に対応しています。 言語設定を変更するには：
 
-1. ダッシュボードの下部にあるユーザー名をクリックします。 次に、_言語_をクリックします。
+1. ダッシュボードの下部にあるユーザー名をクリックします。 次に、 **言語** をクリックします。
 
    ![Click on your user name, then click Language.](./viewing-the-analytics-dashboard/images/02.png)
 
 1. 言語を選択します。 ページを更新します。 ダッシュボードとメニューが選択した言語で表示されます。
 
-　 Analytics Cloudで利用可能なすべての機能、オプション、および構成を参照するには、上の_Analytics Cloud_パンくずをクリックします。
+　 Analytics Cloudで利用可能なすべての機能、オプション、および構成を参照するには、上の **Analytics Cloud** パンくずをクリックします。

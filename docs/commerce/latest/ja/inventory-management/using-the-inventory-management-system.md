@@ -9,7 +9,7 @@ Liferayの在庫管理システムを使用して、インスタンス内の商�
 
 製品 SKU または [単位](../product-management/creating-and-managing-products/products/units-of-measure.md) の在庫を追加する前に、在庫を保管する倉庫を少なくとも 1 つ作成する必要があります。 詳しくは、 [倉庫の設定](./setting-up-warehouses.md) をご覧ください。
 
-インベントリーページにアクセスするには、_グローバルメニュー_ ([グローバルメニュー](../images/icon-applications-menu.png))を開き、_Commerce_ &rarr; _Inventory_に移動します。
+インベントリーページにアクセスするには、 **グローバルメニュー**( [グローバルメニュー](../images/icon-applications-menu.png) )を開き、 **Commerce** &rarr; **Inventory** に移動します。
 
 ```{note}
 Commerce 2.0または2.1をお使いの場合、在庫管理オプションはコントロールパネルにあります。
@@ -23,17 +23,17 @@ Commerce 2.0または2.1をお使いの場合、在庫管理オプションは�
 
 次の手順を実行します：
 
-1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、_Commerce_ &rarr; _Inventory_ に移動します。
+1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、 **Commerce** &rarr; **Inventory** に移動します。
 
-2. *追加* (![追加ボタン](../images/icon-add.png))をクリックし、SKU、倉庫、数量を入力します。 例えば、
+2. **追加**(![追加ボタン](../images/icon-add.png))をクリックし、SKU、倉庫、数量を入力します。 例えば、
 
-   * **SKU**：チャイナウェア・グレー
-   * **倉庫**: 米国 - 南西部
-   * **数量**: 120
+   * **SKU** ：チャイナウェア・グレー
+   * **倉庫** : 米国 - 南西部
+   * **数量** : 120
 
    ![Enter the SKU, warehouse and quantity for the new inventory item.](./using-the-inventory-management-system/images/01.png)
 
-3. *Submit*をクリックしてください。
+3. **Submit** をクリックしてください。
 
 選択した倉庫のSKUの在庫を追加します。
 
@@ -47,17 +47,17 @@ Commerce 2.0または2.1をお使いの場合、在庫管理オプションは�
 
 安全在庫量を設定するには：
 
-1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、_Commerce_ &rarr; _Inventory_ に移動します。
+1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、 **Commerce** &rarr; **Inventory** に移動します。
 
-1. *SKU*をクリックしてください。
+1. **SKU** をクリックしてください。
 
-1. 倉庫の横にある_Actions_（！[Actions Button](../images/icon-actions.png)）をクリックし、_Edit_を選択します。
+1. 倉庫の横にある **Actions**（！ [Actions Button](../images/icon-actions.png) ）をクリックし、 **Edit** を選択します。
 
 1. 安全在庫数量*フィールドに値を入力する。
 
    ![Set a safety stock quantity for the selected SKU.](./using-the-inventory-management-system/images/02.png)
 
-1. 終了したら、_保存_をクリックします。
+1. 終了したら、 **保存** をクリックします。
 
 使用可能なユニットは安全在庫量によって減少します。 ［Available］列で確認できます。
 
@@ -65,11 +65,11 @@ Commerce 2.0または2.1をお使いの場合、在庫管理オプションは�
 
 ## 注文中のSKUを表示する
 
-1. グローバルメニュー](../images/icon-applications-menu.png) を開き、_Commerce_ &rarr; _Inventory_ に移動します。
+1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、 **Commerce** &rarr; **Inventory** に移動します。
 
-1. *SKU*をクリックしてください。
+1. **SKU** をクリックしてください。
 
-1. *On Order*タブをクリックします。
+1. **On Order** タブをクリックします。
 
    ![View all orders that include the selected SKU.](./using-the-inventory-management-system/images/04.png)
 
@@ -79,13 +79,13 @@ Commerce 2.0または2.1をお使いの場合、在庫管理オプションは�
 
 入荷在庫とは、将来的に倉庫に入荷する予定のSKU在庫のことです。 入荷在庫数や配達予定日を追加できます。
 
-1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、_Commerce_ &rarr; _Inventory_ に移動します。
+1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、 **Commerce** &rarr; **Inventory** に移動します。
 
-1. *SKU*をクリックしてください。
+1. **SKU** をクリックしてください。
 
 1. 着信」タブをクリックする。
 
-1. 追加*([追加ボタン](../images/icon-add.png))をクリックし、数量、お届け先倉庫、お届け予定日を入力します。 例えば、
+1. 追加*( [追加ボタン](../images/icon-add.png) )をクリックし、数量、お届け先倉庫、お届け予定日を入力します。 例えば、
 
    * **数量20
    * **目的地アメリカ * 北東部
@@ -93,7 +93,7 @@ Commerce 2.0または2.1をお使いの場合、在庫管理オプションは�
 
    ![Add incoming stock for the selected SKU.](./using-the-inventory-management-system/images/05.png)
 
-1. *Submit*をクリックしてください。
+1. **Submit** をクリックしてください。
 
 入荷在庫を追加すると、［Overview］ページの［Incoming］列に表示されます。
 
@@ -103,11 +103,11 @@ Commerce 2.0または2.1をお使いの場合、在庫管理オプションは�
 
 チェンジログページでSKUの在庫の変更を確認できます。
 
-1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、_Commerce_ &rarr; _Inventory_ に移動します。
+1. [グローバルメニュー](../images/icon-applications-menu.png) を開き、 **Commerce** &rarr; **Inventory** に移動します。
 
-1. *SKU*をクリックしてください。
+1. **SKU** をクリックしてください。
 
-1. *Changelog*タブをクリックします。
+1. **Changelog** タブをクリックします。
 
 以下の情報をチェンジログで把握できます。
 

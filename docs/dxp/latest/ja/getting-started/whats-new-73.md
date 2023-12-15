@@ -12,7 +12,7 @@ Liferay DXPの最新リリースには、多くの重要な新機能と改善が
 
 ![Undo and redo works for the entire editing session.](./whats-new-73/images/01.gif)
 
-新たに追加したボタンにより、実行したアクションを元に戻したり、やり直したりすることが可能になりました。 キーボードショートカットも利用できます：CMD + z` / CMD + shift + z` (MacOS) `Ctrl + z` / `Ctrl + shift + z` (Windows, Linux)
+新たに追加したボタンにより、実行したアクションを元に戻したり、やり直したりすることが可能になりました。 キーボードショートカットも利用できます：`CMD + z` / `CMD + shift + z` (MacOS) `Ctrl + z` / `Ctrl + shift + z` (Windows, Linux)
 
 また、編集セッションで任意のページ状態にすばやく移動するために、実行されたすべてのアクションを一覧表示するパネルもあります。
 
@@ -234,7 +234,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 ## グローバルメニュー
 
-新しいアプリケーションドロワーには、ワークフロー、フォーム、および [コマース](https://learn.liferay.com/commerce/latest/en/index.html) などのクロスサイトアプリケーションが格納されています。
+新しいアプリケーションドロワーには、ワークフロー、フォーム、および [Commerce](https://learn.liferay.com/commerce/latest/ja/index.html) などのクロスサイトアプリケーションが格納されています。
 
 ![The Global Menu provides convenient access to cross-site applications.](./whats-new-73/images/29.png)
 
@@ -250,7 +250,7 @@ Liferay DXP 7.3では、 [閲覧に関して、サイトメンバーのみとす
 
 今回の変更により、証明書の取り扱いを含むインスタンスレベルで [SAML](../installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml.md) を設定できるようになりました。
 
-新しい SAML プロパティが導入された：*不明なユーザは見知らぬユーザである。* このプロパティにより、エンドユーザーがゲストである場合のSAML IdP接続の動作が決まります。 このプロパティは、ポータルデータベースに既に存在しないユーザーをゲストとして分類するかどうかを定義します。 分類後、ポータルインスタンスの既存のゲスト処理ポリシーにより、IdPのSAMLアサーションから得られる情報を使用して、ユーザーを自動的にプロビジョニングするかどうかを決定します。
+新しい SAML プロパティが導入された： **不明なユーザは見知らぬユーザである。** このプロパティにより、エンドユーザーがゲストである場合のSAML IdP接続の動作が決まります。 このプロパティは、ポータルデータベースに既に存在しないユーザーをゲストとして分類するかどうかを定義します。 分類後、ポータルインスタンスの既存のゲスト処理ポリシーにより、IdPのSAMLアサーションから得られる情報を使用して、ユーザーを自動的にプロビジョニングするかどうかを決定します。
 
 ### インスタンスレベルでのOAuth 2の設定
 
@@ -342,10 +342,10 @@ APIを通してコンテンツテンプレートを取得すれば、必要に�
 
 Liferayでは、内部UIの大部分をReactに移行することを開始しています。 この移行の副次的な影響として、新しいユーティリティが追加され、以下のことが可能になりました。
 
-**ReactRenderer**:Reactコンポーネントをレンダリングするための低レベルJavaプリミティブで、Reactコンポーネントのブートストラップを簡素化し、初期化に必要なJavaScriptコードを生成する。
+**ReactRenderer** :Reactコンポーネントをレンダリングするための低レベルJavaプリミティブで、Reactコンポーネントのブートストラップを簡素化し、初期化に必要なJavaScriptコードを生成する。
 
-**React:component**:従来のJSPから複雑なReactアプリケーションをレンダリングして初期化するために、従来の`MVCPortlet`アプローチと組み合わせることができる高レベルのJSPタグです。 これにより、複雑なJSアプリケーションをスムーズに移行し、より近代的なフロントエンドのワークフローを適用できます。
+**React:component** :従来のJSPから複雑なReactアプリケーションをレンダリングして初期化するために、従来の`MVCPortlet`アプローチと組み合わせることができる高レベルのJSPタグです。 これにより、複雑なJSアプリケーションをスムーズに移行し、より近代的なフロントエンドのワークフローを適用できます。
 
 ### アップグレードの向上
 
-[アップグレードプロセス](../installation-and-upgrades/upgrading-liferay/upgrade-basics.md) の信頼性が大幅に向上しました。アップグレードプロセスは、コアとモジュール間で統一されています。 自動アップグレードの動作は、新しいポータル・プロパティで制御できます：upgrade.database.auto.run`。
+[アップグレードプロセス](../installation-and-upgrades/upgrading-liferay/upgrade-basics.md) の信頼性が大幅に向上しました。アップグレードプロセスは、コアとモジュール間で統一されています。 自動アップグレードの動作は、新しいポータル・プロパティで制御できます：`upgrade.database.auto.run`。

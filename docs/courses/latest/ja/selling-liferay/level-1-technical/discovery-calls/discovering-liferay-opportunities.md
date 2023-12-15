@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # ディスカバリーコール - Liferayのチャンス
 
 **概要**

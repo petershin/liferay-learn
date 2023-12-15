@@ -4,6 +4,9 @@ toc:
   - ./the-ideal-customer-profile/target-industries.md
   - ./the-ideal-customer-profile/target-solutions.md
   - ./the-ideal-customer-profile/strengths-and-red-flags.md
+visibility:
+- Employee
+- Partner
 ---
 # 求める顧客像
 

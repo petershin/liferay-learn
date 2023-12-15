@@ -88,14 +88,14 @@ Liferay DXPのインストールは、以下のフィックスパックの最小
 
 1. [Liferay DXPデータソースの追加](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) の手順に従ってください。
 
-1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [のportal-ext.propertiesファイル](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
+1. エラーが続く場合は、DXPインスタンスでJSONウェブサービスが有効になっていることを確認してください。 デフォルトで有効になっています。 [ポータルプロパティ](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) でjson.web.service.enabled=falseを設定して無効にしていた場合（例えば、 [ポータルプロパティ](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/reference/portal-properties.html) で設定）、設定を削除するか、プロパティ値をtrueにしてください。
 
 ## ログインしているユーザーが匿名で表示される
 
-[Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) の場合、Analytics CloudはLiferay DXP内に存在するユーザーレコードに依存します。 したがって、 [SSO](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/securing-liferay/configuring-sso.html) または [LDAP](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) を使用している場合は、Analytics Cloudと連絡先を同期する前に、すべてのユーザーをLiferay DXPに必ずインポートまたはマッピングしてください。
+[Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) の場合、Analytics CloudはLiferay DXP内に存在するユーザーレコードに依存します。 したがって、 [シングルサインオンの設定](https://learn.liferay.com/dxp/latest/ja/installation-and-upgrades/securing-liferay/configuring-sso.html) または [LDAPディレクトリへの接続](https://learn.liferay.com/dxp/latest/ja/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) を使用している場合は、Analytics Cloudと連絡先を同期する前に、すべてのユーザーをLiferay DXPに必ずインポートまたはマッピングしてください。
 
 ## ユーザーの同期に時間がかかる
 
-ユーザーの同期には Liferay DXP のバッチエンジンを使用します。 非常に多くのユーザーを同期する場合は、バッチサイズを大きくしてください。 Liferay DXP で、_Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_ に移動します。 _Export Batch Size_ と _Import Batch Size_ を `1000` に設定する。
+ユーザーの同期には Liferay DXP のバッチエンジンを使用します。 非常に多くのユーザーを同期する場合は、バッチサイズを大きくしてください。 Liferay DXP で、 **Global Menu** &rarr; **Instance Settings** &rarr; **Batch Engine** に移動します。 **Export Batch Size** と **Import Batch Size** を `1000` に設定する。
 
 ![Increase batch size in Liferay DXP.](./connecting-data-sources/images/03.png)

@@ -52,9 +52,9 @@ Docker Hubは、Linux上のTomcatにバンドルされた [Liferay DXP](https://
     ```{note}
     メモリ、CPU、およびその他のDockerコンテナリソースは構成可能です。 上記の `-m 8g`コマンド引数は、コンテナのメモリ制限を8ギガバイトに設定します。 詳細は [Dockerランタイム・オプション](https://docs.docker.com/config/containers/resource_constraints/) を参照。
     ```
-1. _test@liferay.com_ というメールアドレスと _test_ というパスワードを使って、`<http://localhost:8080>` から Liferay にサインインしてください。
+1. **test@liferay.com** というメールアドレスと **test** というパスワードを使って、`<http://localhost:8080>` から Liferay にサインインしてください。
 
-1. プロンプトが表示されたら、パスワードを変更し（_learn_など）、_Save_をクリックします。
+1. プロンプトが表示されたら、パスワードを変更し（**learn** など）、 **Save** をクリックします。
 
    ![Change your password upon first login.](./using-liferay-docker-images/images/01.png)
 
@@ -94,7 +94,7 @@ docker cp [container]:/opt/liferay/logs/liferay.[timestamp].log .
 
 | メソッド                                                                                                                                                                                         | メリット                                                                                   | デメリット                                                                                                                                                                                                          |
 | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `docker exec [container] /opt/liferay/tomcat/bin/shutdown.sh`                                  | Liferay、Tomcat、およびその他のアプリがリソースを解放できるようにします。 コンテナのエントリーポイントは、[シャットダウン後のスクリプト](./using-liferay-docker-images/container-lifecycle-and-api.md#post-shutdown-phase-api) を実行する。 |                                                                                                                                                                                                                |
+| `docker exec [container] /opt/liferay/tomcat/bin/shutdown.sh`                                  | Liferay、Tomcat、およびその他のアプリがリソースを解放できるようにします。 コンテナのエントリーポイントは、 [シャットダウン後のスクリプト](./using-liferay-docker-images/container-lifecycle-and-api.md#post-shutdown-phase-api) を実行する。 |                                                                                                                                                                                                                |
 | `i`引数を指定して実行しているターミナルセッションで`Ctrl-C` を押す。<br><br> [`SIGINT`または`SIGKILL` シグナルをアタッチされているコンテナ](https://docs.docker.com/engine/reference/commandline/attach/#extended-description) に送る。 | コンテナを停止する最速の方法。                                                                        | Liferay、Tomcat、およびコンテナエントリポイントは、リソースを解放せずにすぐに停止します。 エントリポイントの [シャットダウン後フェーズ](./using-liferay-docker-images/container-lifecycle-and-api.md#post-shutdown-phase-api) はスキップされます。 本番環境ではこの方法を使用しないでください |
 
 ## コンテナの再起動
@@ -106,7 +106,7 @@ docker start [container]
 ```
 
 ```{warning}
-コンテナが再起動されると、そのエントリーポイントが再び実行されます（[コンテナのライフサイクルと API](./using-liferay-docker-images/container-lifecycle-and-api.md#lifecycle) を参照してください）。エントリーポイント経由で [実行しているスクリプト](./using-liferay-docker-images/running-scripts-in-containers.md) が安全に再実行できることを確認してください。
+コンテナが再起動されると、そのエントリーポイントが再び実行されます（ [コンテナのライフサイクルと API](./using-liferay-docker-images/container-lifecycle-and-api.md#lifecycle) を参照してください）。エントリーポイント経由で [実行しているスクリプト](./using-liferay-docker-images/running-scripts-in-containers.md) が安全に再実行できることを確認してください。
 ```
 
 ```{tip}
@@ -117,7 +117,7 @@ docker start [container]
 
 ## 次のステップ
 
-コンテナのエントリーポイントが何をするのか知りたい、コンテナのAPIを知りたい場合は、 [Container Lifecycle and API](./using-liferay-docker-images/container-lifecycle-and-api.md) を参照してください。 コンテナの使用を開始する場合は、次のいずれかの使用例を実行してください。
+コンテナのエントリーポイントが何をするのか知りたい、コンテナのAPIを知りたい場合は、 [コンテナのライフサイクルとAPI](./using-liferay-docker-images/container-lifecycle-and-api.md) を参照してください。 コンテナの使用を開始する場合は、次のいずれかの使用例を実行してください。
 
 * [コンテナの設定](./using-liferay-docker-images/configuring-containers.md) 
 * [コンテナへのアプリやその他のアーティファクトのインストール](./using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md) 

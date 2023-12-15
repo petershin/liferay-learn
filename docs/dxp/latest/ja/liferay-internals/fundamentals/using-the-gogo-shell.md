@@ -21,9 +21,9 @@ Gogoシェルは、モジュールフレームワークと対話するための�
 
 コントロールパネルは、Gogoシェルにアクセスする最も安全で確実な方法です：
 
-1. グローバルメニュー([グローバルメニュー](../../images/icon-applications-menu.png))を開き、_コントロールパネル_タブを選択します。
+1. グローバルメニュー( [グローバルメニュー](../../images/icon-applications-menu.png) )を開き、 **コントロールパネル** タブを選択します。
 
-1. システムセクションの_Gogo Shell_をクリックします。
+1. システムセクションの **Gogo Shell** をクリックします。
 
    Gogoシェルのコマンド画面が表示されます。
 
@@ -40,14 +40,14 @@ Gogoシェルは、モジュールフレームワークと対話するための�
    クラスタの場合は、すべてのノードでGogoシェルコマンドを実行する必要があります。 コントロールパネルのGogoシェルで実行されるコマンドは、現在のノードにのみ影響します。
    ```
 
-1. *実行*をクリックしてください。
+1. **実行** をクリックしてください。
 
    コマンド結果の出力が表示されます。
 
    ![The output section shows the command result.](./using-the-gogo-shell/images/03.png)
 
 ```{warning}
-Gogoシェルは非常に強力で、プラットフォームのコア機能を操作することができます。 Gogoシェルへのアクセスは、信頼できる管理者にのみ許可してください。 詳しくは [Understanding Roles and Permissions](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) をご覧ください。
+Gogoシェルは非常に強力で、プラットフォームのコア機能を操作することができます。 Gogoシェルへのアクセスは、信頼できる管理者にのみ許可してください。 詳しくは [ロールと権限について](../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) をご覧ください。
 ```
 
 ## さいごに

@@ -2,7 +2,7 @@
 
 {bdg-secondary}`liferay 7.4 U37+/GA37+用。`
 
-コンテントページエディタを使用して、コンテントページ内の要素を [追加し](./adding-elements-to-content-pages.md) 設定することができます。 コンテンツ・ページ・エディターを開くには、コンテンツ・ページに移動し、_編集_（！[編集アイコン](../../../images/icon-edit.png)）をクリックします。 編集ツールバーとサイドバーが表示され、コンテントページを作成するためのツールやコンポーネントが表示されます。
+コンテントページエディタを使用して、コンテントページ内の要素を [追加し](./adding-elements-to-content-pages.md) 設定することができます。 コンテンツ・ページ・エディターを開くには、コンテンツ・ページに移動し、 **編集**（！ [編集アイコン](../../../images/icon-edit.png) ）をクリックします。 編集ツールバーとサイドバーが表示され、コンテントページを作成するためのツールやコンポーネントが表示されます。
 
 * [ツールバーの編集](#editing-toolbar)
 
@@ -28,7 +28,7 @@
 
 ### デバイスディスプレイ
 
-デバイスアイコンをクリックして、Liferayのレスポンシブレイアウトエディタにアクセスします。 ここでは、さまざまな画面サイズに対応したページを設定することができます。 利用可能な表示オプションには、デスクトップ ( ![Desktop](../../../images/icon-display.png) )、タブレット ( ![Tablet](../../../../images/icon-tablet-portrait.png) )、横向き電話 ( ！[横向き電話](../../../images/icon-mobile-landscape.png))、縦向き電話( ![縦向き電話](../../../images/icon-mobile-portrait.png))。 タブレットやスマホのレイアウト編集中は、リサイズハンドルバーを使って画面サイズを手動で調整することができます。 詳しくは、 [レスポンシブレイアウトの構築](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) をご覧ください。
+デバイスアイコンをクリックして、Liferayのレスポンシブレイアウトエディタにアクセスします。 ここでは、さまざまな画面サイズに対応したページを設定することができます。 利用可能な表示オプションには、デスクトップ ( ![Desktop](../../../images/icon-display.png) )、タブレット ( ![Tablet](../../../../images/icon-tablet-portrait.png) )、横向き電話 ( ！ [横向き電話](../../../images/icon-mobile-landscape.png) )、縦向き電話( ![縦向き電話](../../../images/icon-mobile-portrait.png))。 タブレットやスマホのレイアウト編集中は、リサイズハンドルバーを使って画面サイズを手動で調整することができます。 詳しくは、 [レスポンシブレイアウトの構築](../../optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) をご覧ください。
 
 ```{note}
  [フラグメントとウィジェット](#fragments-and-widgets) と [ページデザインオプション](#page-design-options) パネルは、デスクトップレイアウトでのみ利用可能です。
@@ -36,7 +36,7 @@
 
 ### 編集履歴
 
-*履歴* ( ![履歴ボタン](./../../../images/icon-time.png))をクリックすると、現在の編集セッション中に行われた変更が表示されます。 この履歴は、変更の予約や復元に使用することができます。 また、「元に戻す」・「やり直し」コマンドボタンをクリックすることもできます。
+**履歴**( ![履歴ボタン](./../../../images/icon-time.png))をクリックすると、現在の編集セッション中に行われた変更が表示されます。 この履歴は、変更の予約や復元に使用することができます。 また、「元に戻す」・「やり直し」コマンドボタンをクリックすることもできます。
 
 ![Revert your changes using the Undo, Redo, and History buttons.](./content-page-editor-ui-reference/images/03.png)
 
@@ -53,11 +53,11 @@
 
 ### サイドバーを切り替える
 
-*サイドバーの切り替え* ( ![サイドバーの切り替え](../../../images/icon-view.png))をクリックすると、編集中のサイドバーが非表示になり、ページがプレビューされます。 アプリケーションバーの_アクション_ ( ![アクションボタン](../../../images/icon-actions.png))をクリックし、_新しいタブでプレビュー_を選択すると、新しいタブで現在のページの経験と言語を表示します。
+**サイドバーの切り替え**( ![サイドバーの切り替え](../../../images/icon-view.png))をクリックすると、編集中のサイドバーが非表示になり、ページがプレビューされます。 アプリケーションバーの **アクション**( ![アクションボタン](../../../images/icon-actions.png))をクリックし、 **新しいタブでプレビュー** を選択すると、新しいタブで現在のページの経験と言語を表示します。
 
 ### ページテンプレートに変換
 
-アプリケーションバーの_Actions_ (![アクションボタン](../../../images/icon-actions.png))をクリックし、_Convert to Page Template_ (![ページテンプレート](../../../images/icon-page-template.png))を選択すると、現在のページデザインに基づいて [、ページテンプレート](../adding-pages/creating-a-page-template.md) 。
+アプリケーションバーの **Actions**(![アクションボタン](../../../images/icon-actions.png))をクリックし、 **Convert to Page Template**(![ページテンプレート](../../../images/icon-page-template.png))を選択すると、現在のページデザインに基づいて [、ページテンプレート](../adding-pages/creating-a-page-template.md) 。
 
 ### 公開
 
@@ -67,28 +67,30 @@
 
 選択した編集モードに応じて、編集サイドバーでこれらのパネルにアクセスすることができます。
 
-* [フラグメントとウィジェット](../../../images/icon-plus.png) * [フラグメントとウィジェット](#fragments-and-widgets)
+- [フラグメントとウィジェット](../../../images/icon-plus.png) - [フラグメントとウィジェット](#fragments-and-widgets)
 
-* ![Browser](../../../images/icon-hierarchy.png) * [ブラウザ](#browser) (以前は _Selection_)
+- ![Browser](../../../images/icon-hierarchy.png)
+- [ブラウザ](#browser) (以前は**Selection**)
 
-* ![ページデザインオプション](../../../images/icon-format.png) * [ページデザインオプション](#page-design-options)
+- ![ページデザインオプション](../../../images/icon-format.png) - [ページデザインオプション](#page-design-options)
 
-* ![ページコンテンツ](../../../images/icon-paperclip.png) * [ページコンテンツ](#page-content) (以前は _Contents_)
+- ![ページコンテンツ](../../../images/icon-paperclip.png) - [ページコンテンツ](#page-content) (以前は**Contents**)
 
-* ![Comments](../../../images/icon-message.png) * [コメント](#comments)
+- ![Comments](../../../images/icon-message.png)
+- [コメント](#comments)
 
 ![The editing sidebar includes these panels.](content-page-editor-ui-reference/images/05.png)
 
 ### フラグメントとウィジェット
 
-フラグメントとウィジェット・パネル（[フラグメントとウィジェット・アイコン](../../../images/icon-plus.png)）では、既成のページ要素とカスタム・ページ要素の両方にアクセスできます。
+フラグメントとウィジェット・パネル（ [フラグメントとウィジェット・アイコン](../../../images/icon-plus.png) ）では、既成のページ要素とカスタム・ページ要素の両方にアクセスできます。
 
-**フラグメント**:フラグメントは、拡張可能で再利用可能なドラッグ＆ドロップ可能な要素で、コンテンツページの主要な構成要素として機能します。 例としては、レイアウト要素、ビデオ、テキストオーバーレイ付きのバナー画像などがあります。 すぐに使えるフラグメントについては、 [フラグメントの使用](../page-fragments-and-widgets/using-fragments.md) を、独自のフラグメントを作成する方法については [フラグメントの開発](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) を参照してください。
+**フラグメント** :フラグメントは、拡張可能で再利用可能なドラッグ＆ドロップ可能な要素で、コンテンツページの主要な構成要素として機能します。 例としては、レイアウト要素、ビデオ、テキストオーバーレイ付きのバナー画像などがあります。 すぐに使えるフラグメントについては、 [フラグメントの使用](../page-fragments-and-widgets/using-fragments.md) を、独自のフラグメントを作成する方法については [フラグメントの開発](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) を参照してください。
 
-**ウィジェット**:ウィジェットとは、 [アプリケーション](../../../building-applications.md) のことで、ページに動的な機能を追加するものです。 例としては、ブログ、掲示板、カレンダーなどがあります。 詳細は、 [コンテントページでのウィジェットの使用](./using-widgets-on-a-content-page.md) を参照してください。
+**ウィジェット** :ウィジェットとは、 [アプリケーション](../../../building-applications.md) のことで、ページに動的な機能を追加するものです。 例としては、ブログ、掲示板、カレンダーなどがあります。 詳細は、 [コンテントページでのウィジェットの使用](./using-widgets-on-a-content-page.md) を参照してください。
 
 ```{tip}
-Liferay 7.4 U37/GA37から、順序ボタン(![順序ボタン](../../../images/icon-order.png))をクリックして、フラグメントとウィジェットのセットを並べ替えます。 スターボタン（！[スターボタン](../../images/icon-star.png)）をクリックすると、フラグメントやウィジェットをお気に入り要素に追加することができます。
+Liferay 7.4 U37/GA37から、順序ボタン(![順序ボタン](../../../images/icon-order.png))をクリックして、フラグメントとウィジェットのセットを並べ替えます。 スターボタン（！ [スターボタン](../../images/icon-star.png) ）をクリックすると、フラグメントやウィジェットをお気に入り要素に追加することができます。
 ```
 
 ### ブラウザ
@@ -101,7 +103,7 @@ Liferay 7.4 U37/GA37から、順序ボタン(![順序ボタン](../../../images/
 
 ### ページデザインオプション
 
-*ページデザインオプションパネル* (![ページデザインオプション](../../../images/icon-format.png))を開いて、ページの [マスターページテンプレート](../defining-headers-and-footers/managing-master-page-templates.md) または [スタイルブック](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を変更します。 *オプション* (![オプションボタン](../../../images/icon-cog3.png))をクリックして、 [フロントエンドクライアント拡張機能](../../../building-applications/client-extensions/front-end-client-extensions.md) を含む、追加のページデザインオプションにアクセスします。
+**ページデザインオプションパネル**(![ページデザインオプション](../../../images/icon-format.png))を開いて、ページの [マスターページテンプレート](../defining-headers-and-footers/managing-master-page-templates.md) または [スタイルブック](../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) を変更します。 **オプション**(![オプションボタン](../../../images/icon-cog3.png))をクリックして、 [フロントエンドクライアント拡張機能](../../../building-applications/client-extensions/front-end-client-extensions.md) を含む、追加のページデザインオプションにアクセスします。
 
 ### ページコンテンツ
 

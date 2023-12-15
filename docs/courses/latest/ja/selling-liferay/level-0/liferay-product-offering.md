@@ -1,6 +1,9 @@
 ---
 toc:
   - ./liferay-product-offering/determining-which-deployment-option-is-best-for-your-customer.md
+visibility:
+- Employee
+- Partner
 ---
 # Liferay製品
 

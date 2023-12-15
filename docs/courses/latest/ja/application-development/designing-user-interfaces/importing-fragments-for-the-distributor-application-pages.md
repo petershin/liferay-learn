@@ -45,11 +45,11 @@
 
 1. [サイトメニュー](../../images/icon-product-menu.png) を開き、[デザイン] を展開し、[フラグメント] をクリックします。
 
-1. Fragment Setsの_Actions_ ( ![Actions Button](../../images/icon-actions.png) ) をクリックし、_Import_を選択します。
+1. Fragment Setsの **Actions**( ![Actions Button](../../images/icon-actions.png) ) をクリックし、 **Import** を選択します。
 
    ![Click the Actions button for Fragment Sets and click Import.](./importing-fragments-for-the-distributor-application-pages/images/02.png)
 
-1. distributor-application-fragment-set.zip`ファイルを選択し、_Import_をクリックする。
+1. `distributor-application-fragment-set.zip`ファイルを選択し、 **Import** をクリックする。
 
    ![Select the distributor-application-fragment-set.zip file and click Import.](./importing-fragments-for-the-distributor-application-pages/images/03.png)
 

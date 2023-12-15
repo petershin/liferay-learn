@@ -12,27 +12,27 @@
    コレクション・プロバイダを使用してコレクション・ページを作成することもできます。 詳しくは [コレクションとコレクションページ](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) をご覧ください。
    ```
 
-1. フラグメントとウィジェット(![フラグメントとウィジェット](../../images/icon-plus.png))のサイドバーから、_コレクション表示_フラグメントをページまたはテンプレートにドラッグ＆ドロップします。
+1. フラグメントとウィジェット(![フラグメントとウィジェット](../../images/icon-plus.png))のサイドバーから、 **コレクション表示** フラグメントをページまたはテンプレートにドラッグ＆ドロップします。
 
-1. *Collection Display Fragment* を選択して構成オプションにアクセスし、General タブで _Select Collection_ をクリックします。
+1. **Collection Display Fragment** を選択して構成オプションにアクセスし、General タブで **Select Collection** をクリックします。
 
    ![Select the fragment and click Select Collection.](../objects/displaying-object-entries-with-collection-providers/images/01.png)
 
-1. モーダルウィンドウで、_Collection Providers_ タブをクリックし、_Object's provider_ を選択します。
+1. モーダルウィンドウで、 **Collection Providers** タブをクリックし、 **Object's provider** を選択します。
 
    ![In the Collection Providers tab, select the object's provider.](./displaying-object-entries-with-collection-providers/images/02.png)
 
 1. (オプション) 表示されたオブジェクトエントリをフィルタリングする。 オブジェクト内のピックリストやブーリアンフィールドでフィルタリングすることができます：
 
-   コレクションオプション* ([コレクションオプションボタン](../../images/icon-actions.png))をクリックし、_フィルタコレクション_を選択します。
+   コレクションオプション ( [**コレクションオプションボタン](../../images/icon-actions.png) )をクリックし、***フィルタコレクション** を選択します。
 
    ![Click the Collection Options button and select Filter Collection.](./displaying-object-entries-with-collection-providers/images/03.png)
 
-   次に、必要な_フィルター_を選択し、_適用_をクリックします。
+   次に、必要な **フィルター** を選択し、 **適用** をクリックします。
 
    ![Select the Filters to apply.](./displaying-object-entries-with-collection-providers/images/04.png)
 
-希望するプロバイダを選択した後、追加のフラグメントオプションを使用して、_List Style_や_Pagination_など、オブジェクトエントリの表示方法を決定します。
+希望するプロバイダを選択した後、追加のフラグメントオプションを使用して、 **List Style** や **Pagination** など、オブジェクトエントリの表示方法を決定します。
 
 ## フラグメントからオブジェクト・フィールドへのマッピング
 
@@ -63,7 +63,7 @@
    ```
    ![Use the Browser tab to help properly embed the Collection Display fragment.](./displaying-object-entries-with-collection-providers/images/06.png)
 
-1. 新しいコレクション表示フラグメントの設定オプションで _Select Collection_ をクリックします。
+1. 新しいコレクション表示フラグメントの設定オプションで **Select Collection** をクリックします。
 
 1. 関連アイテムコレクションプロバイダ*タブをクリックします。
 
@@ -77,7 +77,7 @@
 
 ## 関連トピック
 
-* [Creating Objects](./creating-and-managing-objects/creating-objects.md)
+* [オブジェクトの作成](./creating-and-managing-objects/creating-objects.md)
 * [オブジェクトエントリの表示](./displaying-object-entries.md)
 * [コレクションとコレクション・ページについて](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md)
 * [コレクション・プロバイダー](../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md)

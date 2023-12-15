@@ -14,7 +14,7 @@
 ./gradlew :client-extensions:liferay-ticket-batch-list-type-definition:deploy
 ```
 
-コントロールパネル_ &rarr; _Picklists_に移動します。 5つの新しいピックリストが作成されたことを確認してください。
+**コントロールパネル**&rarr;**Picklists**に移動します。 5つの新しいピックリストが作成されたことを確認してください。
 
 ![Five new picklists have been created.](./defining-a-custom-data-schema/images/01.png)
 
@@ -39,7 +39,7 @@ liferay-ticket-batch-list-type-definition:
     type: batch
 ```
 
-各プロパティの説明は [Batch YAML Configuration Reference](../../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) を参照。
+各プロパティの説明は [バッチYAMLコンフィギュレーションリファレンス](../../../building-applications/client-extensions/batch-client-extensions/batch-yaml-configuration-reference.md) を参照。
 
 クライアント拡張は、 [バッチエンジンヘッドレスAPI](../../../headless-delivery/consuming-apis/batch-engine-api-basics-importing-data.md) と、 [ピックリストヘッドレスAPI](../../../building-applications/objects/picklists/picklists-api-basics.md) を利用します。 セキュアなAPIリクエストを行うために、クライアント・エクステンションはOAuth2認証を使用するように設定されている。 これは次のように定義されている：
 
@@ -72,7 +72,7 @@ liferay-ticket-batch-list-type-definition-oauth-application-headless-server:
 ./gradlew :client-extensions:liferay-ticket-batch-object-definition:deploy
 ```
 
-Liferayで_Control Panel_ &rarr; _Objects_に移動します。 新しいチケットオブジェクトが作成されたことを確認します。
+Liferayで **Control Panel** &rarr; **Objects** に移動します。 新しいチケットオブジェクトが作成されたことを確認します。
 
 ![A new ticket object has been created.](./defining-a-custom-data-schema/images/02.png)
 
@@ -95,7 +95,7 @@ Liferayで_Control Panel_ &rarr; _Objects_に移動します。 新しいチケ�
 ./gradlew :client-extensions:liferay-ticket-batch-object-entry:deploy
 ```
 
-Liferay の _Control Panel_ &rarr; _Tickets_ に移動します。 新しいチケットエントリーが作成されたことを確認してください。
+Liferay の **Control Panel** &rarr; **Tickets** に移動します。 新しいチケットエントリーが作成されたことを確認してください。
 
 ![A new ticket entry has been created.](./defining-a-custom-data-schema/images/03.png)
 

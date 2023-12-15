@@ -4,11 +4,11 @@
 
 アニメーションGIFをスケーリングするために、アダプティブメディアは [Gifsicle](https://www.lcdf.org/gifsicle/) と呼ばれる外部ツールを使用します。 Gifsicleがインストールされておらず、`image/gif`がサポートされているMIMEタイプとして含まれている場合、Adaptive MediaはGIFの1フレームだけをスケーリングし、静的なGIFを作成します。
 
-Adaptive Mediaを使用してアニメーションGIFを最適化するには、DXPが動作しているローカルサーバーにGifsicleをインストールし、環境変数`PATH`を設定し、DXPの_システム設定_でGifsicleを有効にするという3つのステップが必要です。
+Adaptive Mediaを使用してアニメーションGIFを最適化するには、DXPが動作しているローカルサーバーにGifsicleをインストールし、環境変数`PATH`を設定し、DXPの **システム設定** でGifsicleを有効にするという3つのステップが必要です。
 
 1. [Gifsicle](https://www.lcdf.org/gifsicle/) をインストールし、サーバー環境のパスに追加します。
 
-1. _グローバルメニュー_ &rarr; _コントロールパネル_ に移動します。
+1. **グローバルメニュー** &rarr; **コントロールパネル** に移動します。
 
    ![Navigate to the Control Panel.](./enabling-optimization-of-animated-gifs/images/01.png)
 
@@ -20,11 +20,11 @@ Adaptive Mediaを使用してアニメーションGIFを最適化するには、
 
 1. 左ナビゲーションの「システム・スコープ」の下にある「画像」をクリックします。
 
-1. 下にスクロールし、_Gifsicle Enabled_の横のボックスをクリックします。
+1. 下にスクロールし、 **Gifsicle Enabled** の横のボックスをクリックします。
 
    ![Enable Gifsicle.](./enabling-optimization-of-animated-gifs/images/03.png)
 
-1. 終了したら_Save_をクリックする。
+1. 終了したら **Save** をクリックする。
 
 ## 関連トピック
 

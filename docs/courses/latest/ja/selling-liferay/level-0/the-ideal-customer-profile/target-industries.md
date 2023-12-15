@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # ターゲット業界
 
 **概要**

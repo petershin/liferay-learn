@@ -35,7 +35,7 @@ type: oAuthApplicationHeadlessServer
 
 ### `oAuthApplicationHeadlessServer`の特別な動作
 
-OAuthヘッドレスサーバクライアントの拡張は、Liferayが_ルート_として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
+OAuthヘッドレスサーバクライアントの拡張は、Liferayが **ルート** として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
 
 以下は、`oAuthApplicationHeadlessServer` クライアント拡張がプロジェクトで定義されている場合に、環境変数 `LIFERAY_ROUTES_CLIENT_EXTENSION` で定義されるルートの例である：
 
@@ -73,7 +73,7 @@ type: oAuthApplicationUserAgent
 
 ### `oAuthApplicationUserAgent` の特別な動作
 
-OAuth ヘッドレスユーザエージェントクライアントの拡張は、Liferay が _ルート_ として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
+OAuth ヘッドレスユーザエージェントクライアントの拡張は、Liferay が **ルート** として提供するメタデータに依存します（ [Context-Sensitive Information](working-with-client-extensions.md#context-sensitive-information) を参照してください）。 このクライアントエクステンションでデプロイされた実行可能ワークロードは、実行する前にこのルートを待たなければならない。
 
 以下は、`oAuthApplicationUserAgent` クライアント拡張がプロジェクトで定義されている場合に、環境変数 `LIFERAY_ROUTES_CLIENT_EXTENSION` で定義されるルートの例である：
 

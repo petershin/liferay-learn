@@ -56,7 +56,7 @@
 
 1. Objects を開き、Distributor Application 定義の編集を開始します。
 
-1. タイトルフィールドを_ビジネス名_に設定し、_保存_をクリックします。 これは、リレーションシップ・フィールドでオブジェクト・エントリを識別するために使用されるフィールドを決定します。
+1. タイトルフィールドを **ビジネス名** に設定し、 **保存** をクリックします。 これは、リレーションシップ・フィールドでオブジェクト・エントリを識別するために使用されるフィールドを決定します。
 
    ![Set Title Field to Business Name and click Save.](./relating-object-entries/images/04.png)
 
@@ -68,9 +68,9 @@
 
 1. Distributor Applicationsを開き、エントリーの編集を開始します。
 
-1. *評価ノート*タブに移動する。
+1. **評価ノート** タブに移動する。
 
-1. *追加* (![追加ボタン](../../images/icon-add.png))をクリックし、既存のアプリケーション評価から選択します。
+1. **追加**(![追加ボタン](../../images/icon-add.png))をクリックし、既存のアプリケーション評価から選択します。
 
    ![Select from existing application evaluations.](./relating-object-entries/images/06.png)
 
@@ -78,7 +78,7 @@
 
    ![The relationship table uses the ID and title field to identify each related evaluation.](./relating-object-entries/images/07.png)
 
-1. アプリケーション評価定義のタイトルフィールドを_Author_に更新する。
+1. アプリケーション評価定義のタイトルフィールドを **Author** に更新する。
 
 1. ディストリビューター・アプリケーションに戻り、リレーションシップテーブルがIDフィールドと著者フィールドを使用して、関連する評価を識別していることに注目してください。
 

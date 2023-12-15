@@ -1,6 +1,6 @@
 # コンテンツ推薦の設定
 
-ユーザーがLiferay DXPサイトを閲覧してコンテンツと対話すると、Liferay Analytics Cloudは、閲覧行動に基づいて関心のあるトピックを自動的に生成してランク付けします。 これらの関心事を使用して、ユーザーが購入または消費する可能性が高い関連コンテンツを推奨できます。 コンテンツリコメンデーションの詳細は、 [Understanding Content Recommendations](./understanding-content-recommendations.md) を参照してください。
+ユーザーがLiferay DXPサイトを閲覧してコンテンツと対話すると、Liferay Analytics Cloudは、閲覧行動に基づいて関心のあるトピックを自動的に生成してランク付けします。 これらの関心事を使用して、ユーザーが購入または消費する可能性が高い関連コンテンツを推奨できます。 コンテンツリコメンデーションの詳細は、 [コンテンツ推薦を理解する](./understanding-content-recommendations.md) を参照してください。
 
 次の要素が設定されていれば、コンテンツ推薦は自動的に機能します。
 
@@ -26,7 +26,7 @@ Analytics CloudをLiferay DXPに接続し、サイトのコンテンツを同期
 
 動的コレクションを作成するときは、次の情報を考慮してください。
 
-- Dynamic Collection の _Content Recommendation_ オプションを有効にする必要があります。 このオプションを無効にすると、コレクションはコンテンツ推薦を使用しません。
+- Dynamic Collection の **Content Recommendation** オプションを有効にする必要があります。 このオプションを無効にすると、コレクションはコンテンツ推薦を使用しません。
 
     ```{note}
     コンテンツの推奨オプションは、DXPインスタンスをAnalytics Cloudに接続してコンテンツを同期するときに使用できます。
@@ -56,7 +56,7 @@ Analytics CloudをLiferay DXPに接続し、サイトのコンテンツを同期
 
 コレクション表示フラグメントは、コレクションを表示するフラグメントの一種です。 このフラグメントを使用して、コンテントページ、ページのテンプレート、または表示ページにコレクションを表示できます。 コレクション表示フラグメントを構成するには、 [Configuring a Collection Display Fragment](../../displaying-content/collections-and-collection-pages/displaying-collections.md#configuring-a-collection-display-fragment) のセクションを参照してください。
 
-コレクションページは、コレクションにリンクされているページの一種です。 コレクションページを使用してコレクションを表示するには、 [Displaying Collections](../../displaying-content/collections-and-collection-pages/displaying-collections.md) トピックの [Displaying Collections on a Collection Page](../../displaying-content/collections-and-collection-pages/displaying-collections.md#displaying-collections-on-a-collection-page) セクションを参照してください。
+コレクションページは、コレクションにリンクされているページの一種です。 コレクションページを使用してコレクションを表示するには、 [コレクションの表示](../../displaying-content/collections-and-collection-pages/displaying-collections.md) トピックの [Displaying Collections on a Collection Page](../../displaying-content/collections-and-collection-pages/displaying-collections.md#displaying-collections-on-a-collection-page) セクションを参照してください。
 
 ### アセットパブリッシャーを使用してコレクションまたはコンテンツセットを表示ページに表示する
 

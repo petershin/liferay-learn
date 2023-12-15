@@ -2,7 +2,7 @@
 
 サイトはLiferay DXPの基本的なコンポーネントです。 基本的に、サイトとは、追加機能を提供するコンテンツ・アプリケーションを含むページの集まりである。
 
-Liferay DXPインスタンスを最初に起動し設定するとき、デフォルトのサイトが含まれます。 デフォルトではインスタンス名は_Liferay_ですが、この値はセットアップウィザードまたはコントロールパネルの [Instance Settings](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) 。
+Liferay DXPインスタンスを最初に起動し設定するとき、デフォルトのサイトが含まれます。 デフォルトではインスタンス名は **Liferay** ですが、この値はセットアップウィザードまたはコントロールパネルの [Instance Settings](../system-administration/configuring-liferay/virtual-instances/instance-configuration.md) 。
 
 ![You can build powerful sites with Liferay DXP.](./getting-started-with-site-building/images/01.png)
 
@@ -16,7 +16,7 @@ Liferay DXPには、 [サイトの構築](./sites/adding-a-site.md) と [ペー�
 
 ページとサイト [ナビゲーション](./site-navigation/using-the-navigation-menus-application.md) の動作は直感的で柔軟です。 ページを作成すると、自動的にナビゲーション・メニューに追加することができます。 お好みでページを非表示にしたり、ページへのアクセスを有効/制限するためにページパーミッションを設定することができます。
 
-Liferay DXPは、ユーザーエクスペリエンスを中断することなくサイトに変更を加えることを可能にするツールも提供します。 Liferayサイトはステージングすることができ、ユーザーに公開する前にサイト上で変更を加えてテストすることができます。 Liferay DXPの [publications](./publishing-tools/publications.md) 機能がこれを処理します。 Publicationsを使用することで、ユーザーが見る本番サイトに影響を与えることなく、安全な環境でサイトを開発、追跡、更新することができます。
+Liferay DXPは、ユーザーエクスペリエンスを中断することなくサイトに変更を加えることを可能にするツールも提供します。 Liferayサイトはステージングすることができ、ユーザーに公開する前にサイト上で変更を加えてテストすることができます。 Liferay DXPの [パブリケーション](./publishing-tools/publications.md) 機能がこれを処理します。 Publicationsを使用することで、ユーザーが見る本番サイトに影響を与えることなく、安全な環境でサイトを開発、追跡、更新することができます。
 
 ## コンテンツの表示
 

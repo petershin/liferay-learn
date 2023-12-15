@@ -21,9 +21,9 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
    unzip liferay-g4j2.zip
    ```
 
-1. データをエクスポートするには、エクスポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPI Explorerの `/o/api` から取得できる。 スキーマ*セクションまでスクロールダウンし、エクスポートしたいエンティティの `x-class-name` フィールドをメモする。
+1. データをエクスポートするには、エクスポートするエンティティの完全修飾クラス名が必要です。 クラス名は、インストールされているAPI Explorerの `/o/api` から取得できる。 *スキーマ*セクションまでスクロールダウンし、エクスポートしたいエンティティの `x-class-name` フィールドをメモする。
 
-1. 以下のcURLスクリプトを使用して、Liferayインスタンスからアカウントをエクスポートします。 コマンドラインで `curl` フォルダに移動します。 ExportTask_POST_ToInstance.sh`スクリプトを、完全修飾クラス名 *Account* と`json` をパラメータとして実行する。 json`パラメータはエクスポートされるデータのフォーマットを示す。 また、`jsont`、`jsonl`、`csv`形式もサポートしている。
+1. 以下のcURLスクリプトを使用して、Liferayインスタンスからアカウントをエクスポートします。 コマンドラインで `curl` フォルダに移動します。 `ExportTask_POST_ToInstance.sh`スクリプトを、完全修飾クラス名 *Account* と`json` をパラメータとして実行する。 json`パラメータはエクスポートされるデータのフォーマットを示す。 また、`jsont`、`jsonl`、`csv`形式もサポートしている。
 
    ```bash
    ./ExportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account json
@@ -48,8 +48,8 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
    `jsont`は、バッチクライアント拡張と組み合わせて使用する場合、`*.batch-engine-dat.json`ファイルの必須フォーマットです。 
 
    出力形式として `json` または `jsonl` を使用する場合、デフォルトですべてのフィールドがエクスポートされます。 フィールドを指定するには、エクスポートしたいフィールドを追加のクエリパラメータ（`fieldNames`）で指定する必要があります。 各フィールドはカンマ（,）で区切る必要があります。 エクスポート形式として `csv` を使用する場合、これは必須のクエリパラメーターとなります。
-
    ```
+
 1. 現在の `executeStatus` は `INITIAL` である。 バッチエンジンへのタスクの送信を示します。 データをダウンロードするには、`COMPLETED`になるまで待たなければならない。 コマンドラインで`ExportTask_GET_ById.sh`スクリプトを実行し、`1234`をエクスポートタスクのIDに置き換える。
 
    ```bash
@@ -131,8 +131,9 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 | `-u "test@liferay.com:learn"`                                                | 基本的な認証情報                        |
 
 ```{note}
-ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) を介してユーザーを認証する必要があります。 Oauth2 を使用する React アプリケーションのサンプルについては、 [Using OAuth2 to Authorize Users](../using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
+ここでは、デモのために基本的な認証を使用しています。 本番環境では、 [OAuth 2.0を使用する](https://learn.liferay.com/dxp/latest/ja/headless-delivery/using-oauth2.html) を介してユーザーを認証する必要があります。 Oauth2 を使用する React アプリケーションのサンプルについては、 [OAuth2によるユーザーの認証](../using-oauth2/using-oauth2-to-authorize-users.md) を参照してください。
 ```
+
 ## Javaクラスを調べる
 
 `ExportTask_POST_ToInstance.java` クラスは、バッチエンジン関連のサービスを呼び出してデータをエクスポートする。
@@ -156,11 +157,13 @@ Liferayのヘッドレスバッチエンジンは、データのインポート�
 ```{note}
 `main`メソッドのコメントは、クラスの実行を示している。
 ```
+
 他のJavaクラスの例もこれと似ているが、異なる `ExportTaskResource` メソッドを呼び出している。
 
 ```{important}
 サービスの詳細については、 [ExportTaskResource](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/headless/headless-batch-engine/headless-batch-engine-client/src/main/java/com/liferay/headless/batch/engine/client/resource/v1_0/ExportTaskResource.java) を参照してください。
 ```
+
 以下は、cURLとJavaを使用して他のBatch Engine export RESTサービスを呼び出す例です。
 
 ## ExportTaskのステータスを取得する
@@ -201,7 +204,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTask_GET_ById
 
 ## データをサイトからエクスポートする
 
-以下のcURLまたはJavaコマンドを実行して、サイトからデータをエクスポートできます。 以下の例では、あるサイトからブログ記事をエクスポートしています。 [あなたのサイトのID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、`1234`を置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメーターも更新する必要があります。
+以下のcURLまたはJavaコマンドを実行して、サイトからデータをエクスポートできます。 以下の例では、あるサイトからブログ記事をエクスポートしています。 [RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) を探し、`1234`を置き換えてください。 別のエンティティを使用する場合は、cURLスクリプトの完全修飾クラス名パラメーターも更新する必要があります。
 
 ### ExportTask_POST_ToSite.sh
 
@@ -242,6 +245,7 @@ java -classpath .:* -DsiteId=1234 -DclassName=com.liferay.headless.delivery.dto.
 ```{note}
 第2パラメータは `json` で、エクスポートされたデータの出力形式を表示します。 ここでは `jsonl` と `csv` を使用することもできます。 CSVを使用する場合は、エクスポートしたいフィールドをカンマ区切りの文字列で指定し、`exportTaskResource.postExportTask()`メソッドの第5パラメータとして渡すことが必須です。
 ```
+
 JSON応答には、新しく作成されたエクスポートタスクの情報が表示されます。 その `executeStatus` を追跡するために `id` に注意すること。 完了したら、エクスポートタスクIDを指定して`ExportTaskContent_GET_ById.[java|sh]`を実行し、データをダウンロードすることができる。
 
 ## エクスポートデータの内容を取得する
@@ -278,7 +282,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[APIエクスプローラー](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) には、ヘッドレスバッチエンジンの全サービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
+[RESTサービスの使用](https://learn.liferay.com/dxp/latest/ja/headless-delivery/consuming-apis/consuming-rest-services.html) には、ヘッドレスバッチエンジンの全サービスとスキーマが一覧表示され、各サービスを試すためのインターフェースがあります。
 
 ## 関連トピック
 

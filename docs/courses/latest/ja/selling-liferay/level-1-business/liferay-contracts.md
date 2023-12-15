@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 契約
 
 **概要**

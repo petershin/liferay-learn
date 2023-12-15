@@ -14,7 +14,7 @@ LiferayのHeadless Deliveryアプリケーションは、 [掲示板](../../mess
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-開始したら、サイトIDを取得します。 サイトIDを見つけるには、_サイトメニュー_ (![サイトメニュー](../../../images/icon-menu.png))を開き、_［Configuration］_ &rarr; _［Site Settings］_ &rarr; *［Site Configuration］*に移動します。
+開始したら、サイトIDを取得します。 サイトIDを見つけるには、 **サイトメニュー**(![サイトメニュー](../../../images/icon-menu.png))を開き、 ［**Configuration**］ &rarr; ［**Site Settings**］ &rarr; ［**Site Configuration**］ に移動します。
 
 ![Find the site ID under the Site Configuration settings.](./message-boards-api-basics/images/01.png)
 
@@ -49,6 +49,7 @@ javac -classpath .:* *.java
 ```{important}
 提供されるコードは、デモのために基本認証を使用しています。 本番環境では、 [OAuth2](../../../headless-delivery/using-oauth2.md) でユーザーを認証する必要があります。
 ```
+
 ## サンプルAPIの呼び出し
 
 この練習では、cURLコマンドかJavaクラスを使って`MessageBoardSection`、`MessageBoardThread`、`MessageBoardMessage`の各APIを呼び出すことができる。 次の出力例はcURLコマンドに対応しており、提供されているJavaクラスの出力とは少し異なります。
@@ -110,7 +111,7 @@ javac -classpath .:* *.java
    java -classpath .:* -DsiteId={site-id} MessageBoardSections_GET_FromSite
    ```
 
-5. メッセージボードセクションのIDをパラメータとして `MessageBoardSection_PATCH_ById` を実行する。 これにより、指定されたエントリーの詳細がAPI呼び出しで提供された詳細に更新されます。
+1. メッセージボードセクションのIDをパラメータとして `MessageBoardSection_PATCH_ById` を実行する。 これにより、指定されたエントリーの詳細がAPI呼び出しで提供された詳細に更新されます。
 
    **cURLの場合**
 
@@ -126,7 +127,7 @@ javac -classpath .:* *.java
 
    これは `description` フィールドを `Bar` に更新する。
 
-6. 同じセクションIDをパラメータとして `MessageBoardSection_PUT_ById` を実行する。 これにより、指定されたエントリーの詳細がAPI呼び出しで提供された詳細に置き換えられます。
+1. 同じセクションIDをパラメータとして `MessageBoardSection_PUT_ById` を実行する。 これにより、指定されたエントリーの詳細がAPI呼び出しで提供された詳細に置き換えられます。
 
    **cURLの場合**
 
@@ -142,7 +143,7 @@ javac -classpath .:* *.java
 
    これは `name` フィールドを `Baker Section` に、`description` フィールドを `Goo` に更新します。
 
-7. パラメータにサイト ID を使用して `MessageBoardThread_POST_ToSite` を実行する。 これにより、サイトの新しい掲示板スレッドが作成されます。
+1. パラメータにサイト ID を使用して `MessageBoardThread_POST_ToSite` を実行する。 これにより、サイトの新しい掲示板スレッドが作成されます。
 
    **cURLの場合**
 
@@ -170,7 +171,7 @@ javac -classpath .:* *.java
 
    すべてのスレッドは、スレッド内のすべての直接返信の親メッセージとなるルートメッ セージ（つまり `messageBoardRootMessageId`）で作成される。
 
-8. 上記のセクションIDをパラメータとして`MessageBoardThread_POST_ToSection`を実行する。 これにより、指定されたセクションの新しい掲示板スレッドが作成されます。
+1. 上記のセクションIDをパラメータとして`MessageBoardThread_POST_ToSection`を実行する。 これにより、指定されたセクションの新しい掲示板スレッドが作成されます。
 
    **cURLの場合**
 
@@ -184,7 +185,7 @@ javac -classpath .:* *.java
    java -classpath .:* -DmessageBoardSectionId={message-board-section-id} MessageBoardThread_POST_ToSection
    ```
 
-9. このスレッドのIDをコピーして、以下のGET、PATCH、PUTメソッドで使用します。
+1. このスレッドのIDをコピーして、以下のGET、PATCH、PUTメソッドで使用します。
 
    ```bash
    {

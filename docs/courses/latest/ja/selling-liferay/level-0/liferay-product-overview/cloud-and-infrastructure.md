@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # クラウドとインフラストラクチャー
 
 Liferay Experience Cloudは、LiferayのSaaSサービスで、強力なカスタマイズ機能を提供しながら、顧客がビジネスプロセスと短期間での価値実現に集中できるようにします。 Liferay Experience Cloud Self-ManagedはLiferayが提供するPaaSで、顧客は、組み込みのCI/CD、自動バックアップ、モニタリング、アラートでソリューションのライフサイクルを直接管理できます。

@@ -17,7 +17,7 @@ IFrameクライアント拡張は開発中であり、現在Liferay 7.4ではサ
 1. Java（JDK8またはJDK11）をインストールします。
 
    ```{note}
-   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM Configuration](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
+   サポートされているJDK、データベース、環境については、 [互換性マトリックス](https://help.liferay.com/hc/ja/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) を確認してください。 推奨されるJVM設定については、 [JVM設定](../../../../installation-and-upgrades/reference/jvm-configuration.md) を参照のこと。
    ```
 
 1. サンプルワークスペースをダウンロードし、解凍します。
@@ -80,9 +80,9 @@ STARTED liferay-sample-iframe-1_1.0.0 [1592]
 
 IFrameはウィジェットとしてページに追加される。
 
-1. ページ上部の_Edit_ (![Edit](../../../../images/icon-edit-pencil.png)) をクリックします。
+1. ページ上部の **Edit**(![Edit](../../../../images/icon-edit-pencil.png)) をクリックします。
 
-1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（！[フラグメントとウィジェット](../../../../images/icon-plus.png)）で、_Widgets_をクリックします。
+1. ウィジェットをページに追加する。 フラグメントとウィジェットのサイドバー（！ [フラグメントとウィジェット](../../../../images/icon-plus.png) ）で、 **Widgets** をクリックします。
 
 1. Client Extensions &rarr; Counter Appウィジェットを見つけ、ページにドラッグします。 Publish_をクリックする。
 

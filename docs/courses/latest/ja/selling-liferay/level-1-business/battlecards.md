@@ -2,6 +2,9 @@
 toc:
   - ./battlecards/current-battlecards.md
   - ./battlecards/battlecard-format.md
+visibility:
+- Employee
+- Partner
 ---
 # コンペティティブ・インテリジェンスバトルカード
 

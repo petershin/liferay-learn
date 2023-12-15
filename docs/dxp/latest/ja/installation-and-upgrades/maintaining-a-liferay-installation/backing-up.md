@@ -11,7 +11,7 @@ Liferay DXPのバックアップ計画を検討するときは、次の領域を
 * [ソースコード](#source-code)
 
 ```{note}
-Liferay Cloudは、ドキュメントライブラリとLiferay DXPデータベースのバックアップの作成と管理プロセスを自動化し、簡素化します。 Liferay CloudはGitベースのDevOpsパイプラインを使用しているため、Liferayのすべての設定も自動的にバックアップされます。 詳しくは、 [Liferay Cloud Backup Service Overview](https://learn.liferay.com/liferay-cloud/latest/en/platform-services/backup-service/backup-service-overview.html) をご覧ください。
+Liferay Cloudは、ドキュメントライブラリとLiferay DXPデータベースのバックアップの作成と管理プロセスを自動化し、簡素化します。 Liferay CloudはGitベースのDevOpsパイプラインを使用しているため、Liferayのすべての設定も自動的にバックアップされます。 詳しくは、 [バックアップサービスの概要](https://learn.liferay.com/liferay-cloud/latest/ja/platform-services/backup-service/backup-service-overview.html) をご覧ください。
 ```
 
 ## Liferay Home
@@ -20,11 +20,11 @@ Liferay Homeフォルダーには次のファイルが含まれているため�
 
 * **Portal properties and system properties:** Liferay Home folder stores DXP [portal properties files](../reference/portal-properties.md) (e.g., `portal-ext.properties`, `portal-setup-wizard.properties`, etc.). およびDXP [システム・プロパティ・ファイル](../reference/system-properties.md) (例: `system-ext.properties`)。
 
-* **`/data` フォルダー:** DXP は、構成ファイル、検索インデックス、およびキャッシュ情報を Liferay Home の `/data` フォルダーに保存します。data/document_library`フォルダは、 [Simple File System Store](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) 。 [高度なファイルシステムストア](../../system-administration/file-storage.md) では、保存場所を明示的に設定する必要があります。
+* **`/data` フォルダー:** DXP は、構成ファイル、検索インデックス、およびキャッシュ情報を Liferay Home の `/data` フォルダーに保存します。data/document_library`フォルダは、 [簡易ファイルシステムストア](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) 。 [高度なファイルシステムストア](../../system-administration/file-storage.md) では、保存場所を明示的に設定する必要があります。
 
 * **`/license` フォルダー (サブスクリプション):** Liferay Enterprise サブスクリプションのアクティベーション キーを保持します。
 
-* **`/osgi`フォルダ:** DXPのOSGiランタイムを構成するファイルは、Liferay Homeの`/osgi`フォルダに格納されます。 DXPにデプロイされたすべてのアプリとモジュールのJARファイルが含まれています。 また、`/osgi` フォルダには、その他の必要なJARファイル、 [設定ファイル](https://help.liferay.com/hc/en-us/articles/360029131651-Understanding-System-Configuration-Files) 、およびログファイルが含まれています。
+* **`/osgi`フォルダ:** DXPのOSGiランタイムを構成するファイルは、Liferay Homeの`/osgi`フォルダに格納されます。 DXPにデプロイされたすべてのアプリとモジュールのJARファイルが含まれています。 また、`/osgi` フォルダには、その他の必要なJARファイル、 [設定ファイル](https://help.liferay.com/hc/ja/articles/360029131651-Understanding-System-Configuration-Files) 、およびログファイルが含まれています。
 
 * **`/logs` フォルダー:** DXP のログ ファイルが含まれます。 DXP で問題が発生した場合、ログ ファイルは何が問題だったのかを判断するための情報を提供します。
 

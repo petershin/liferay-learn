@@ -20,21 +20,21 @@ Liferay DXPではデフォルトで [レスポンシブデザインが使用](..
 
 1. コンテントページで [グリッドフラグメントを構成](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md) します。
 
-1. 編集サイドバーで、_ブラウザ_ (![Simulation](../../../images/icon-hierarchy.png)) ボタンをクリックし、カスタマイズしたいグリッド・フラグメントをクリックします。
+1. 編集サイドバーで、 **ブラウザ**(![Simulation](../../../images/icon-hierarchy.png)) ボタンをクリックし、カスタマイズしたいグリッド・フラグメントをクリックします。
 
 1. 編集ツールバーの［デバイスディスプレイ］セクションで、最適化するスクリーンサイズを選択します。
 
    ![Select the screen size you want to customize in the Device Display section.](./building-responsive-layouts-with-the-grid-fragment/images/06.png)
 
-1. 設定サイドバーの_General_タブで、画面サイズに適したレイアウトオプションを選択します。 例えば、_Portrait Phone_レイアウトオプションでは、1行に1つのモジュールがより良く機能します。
+1. 設定サイドバーの **General** タブで、画面サイズに適したレイアウトオプションを選択します。 例えば、 **Portrait Phone** レイアウトオプションでは、1行に1つのモジュールがより良く機能します。
 
-1. 画像を選択して、ターゲット画面サイズに合わせて _Resolution_ を設定するか（Liferay DXP 7.4+ で使用可能）、デフォルトの _Auto_ オプションのままにして、 [Adaptive Media](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/using-adaptive-media.md) を使用します。
+1. 画像を選択して、ターゲット画面サイズに合わせて **Resolution** を設定するか（Liferay DXP 7.4+ で使用可能）、デフォルトの **Auto** オプションのままにして、 [Adaptive Media](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/using-adaptive-media.md) を使用します。
 
    ![Select the image resolution for the target screen size or leave the Auto option to use Adaptive Media.](./building-responsive-layouts-with-the-grid-fragment/images/05.png)
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
-1. オプションとして、メインツールバーの_シミュレーション_ (![Simulation](../../../images/icon-simulation.png)) ボタンをクリックすると、ターゲットデバイス上で変更を確認できます。
+1. オプションとして、メインツールバーの **シミュレーション**(![Simulation](../../../images/icon-simulation.png)) ボタンをクリックすると、ターゲットデバイス上で変更を確認できます。
 
 ```{tip}
 選択したグリッドフラグメント設定を保存して、他のコンテントページで再利用できます。 詳しくは、 [フラグメント・コンポジションの保存](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md) を参照のこと。

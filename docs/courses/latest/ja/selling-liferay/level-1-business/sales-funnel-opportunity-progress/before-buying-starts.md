@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 購入が始まる前に
 
 **概要**

@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # クライアント拡張機能でLiferayを拡張する
 
 **概要**
@@ -8,8 +13,8 @@
 * カスタムコードをLiferayのコアから切り離すことで、アップグレードが迅速かつ容易になり、開発者は使い慣れた言語やフレームワークを使用することができます。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf)からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) からダウンロードしてください。
 ```
 
 ## Liferayを拡張する - クライアント拡張（コード）
@@ -66,9 +71,9 @@ Liferayの柔軟な性質により、顧客のために構築されたアプリ�
 
 ## 追加情報
 
-* [フラグメント](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments), [パブリケーション](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications), [テーマ](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes) & [スタイルブック](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books)
-* [フォーム](https://learn.liferay.com/w/analytics-cloud/touchpoints/assets/forms), [ワークフロー](https://learn.liferay.com/w/dxp/process-automation/workflow), [コレクション](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages), [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
-* [Open Office](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration), [O365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365), [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration), [Live Chat](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat), [DocuSign](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures), [Talend](https://learn.liferay.com/w/dxp/system-administration/data-integration/liferay-talend-components-overview), [Mulesoft](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/mulesoft), [SAP Connector](https://marketplace.liferay.com/p/sap-business-objects-connector), [Headless](https://learn.liferay.com/w/dxp/headless-delivery)
+* [フラグメント](https://learn.liferay.com/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) , [パブリケーション](https://learn.liferay.com/w/dxp/site-building/publishing-tools/publications) , [テーマ](https://learn.liferay.com/w/dxp/site-building/site-appearance/themes) & [スタイルブック](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books)
+* [フォーム](https://learn.liferay.com/w/analytics-cloud/touchpoints/assets/forms) , [ワークフロー](https://learn.liferay.com/w/dxp/process-automation/workflow) , [コレクション](https://learn.liferay.com/w/dxp/content-authoring-and-management/collections-and-collection-pages) , [オブジェクト](https://learn.liferay.com/w/dxp/building-applications/objects)
+* [Open Office](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-openoffice-libreoffice-integration) , [O365](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/enabling-document-creation-and-editing-with-microsoft-office-365) , [Google Drive](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/devops/google-drive-integration) , [Live Chat](https://learn.liferay.com/w/dxp/site-building/personalizing-site-experience/enabling-automated-live-chat-systems/getting-a-chat-provider-account-id/livechat) , [DocuSign](https://learn.liferay.com/w/dxp/content-authoring-and-management/documents-and-media/uploading-and-managing/enabling-docusign-digital-signatures) , [Talend](https://learn.liferay.com/w/dxp/system-administration/data-integration/liferay-talend-components-overview) , [Mulesoft](https://learn.liferay.com/web/guest/w/commerce/add-ons-and-connectors/mulesoft) , [SAP Connector](https://marketplace.liferay.com/p/sap-business-objects-connector) , [Headless](https://learn.liferay.com/w/dxp/headless-delivery)
 * [クライアント拡張](https://learn.liferay.com/w/dxp/building-applications/client-extensions)
 
-おめでとうございます、これでこのモジュールは終わりです。次は [Deployment Strategies](../deployment-strategies.md) for Liferay について学びましょう。
+おめでとうございます、これでこのモジュールは終わりです。次は [展開戦略](../deployment-strategies.md) for Liferay について学びましょう。

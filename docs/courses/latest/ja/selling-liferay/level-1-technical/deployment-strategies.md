@@ -40,9 +40,9 @@ Liferayの最新バージョンには、Digital Experience Platformコア、コ�
 
 Liferayは常に、顧客が選択したソフトウェアスタックとインフラへの投資を維持することを目的としています。 そのため、Liferayは3つの製品を展開しており、顧客は要件に合ったアプローチを選択できます。
 
-* **Liferay Experience Cloud SaaS**は、インフラやアップグレード関連の問題を心配することなく、Liferay DXPの完全な利点を提供します。 顧客はビジネス上の問題を解決するソリューションの構築に集中できる。
-* **Liferay Experience Cloud Self-Managed**は、Liferayプラットフォーム向けにカスタマイズされたPlatform-as-a-Serviceを提供します。
-* **Liferay DXP Self-Hosted**は、お客様がLiferay DXPの実装をどこでどのようにホストするかを選択することができます。
+* **Liferay Experience Cloud SaaS** は、インフラやアップグレード関連の問題を心配することなく、Liferay DXPの完全な利点を提供します。 顧客はビジネス上の問題を解決するソリューションの構築に集中できる。
+* **Liferay Experience Cloud Self-Managed** は、Liferayプラットフォーム向けにカスタマイズされたPlatform-as-a-Serviceを提供します。
+* **Liferay DXP Self-Hosted** は、お客様がLiferay DXPの実装をどこでどのようにホストするかを選択することができます。
 
 ![Liferay offers deployment strategies for SaaS, PaaS, and on-premise deployments of Liferay DXP.](./deployment-strategies/images/02.png)
 

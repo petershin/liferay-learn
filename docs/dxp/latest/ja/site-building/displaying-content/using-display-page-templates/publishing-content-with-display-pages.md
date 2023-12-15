@@ -7,11 +7,11 @@
 ```
 ## デフォルト表示ページテンプレートを設定する
 
-1. *サイトメニュー* (![サイトメニュー](../../../images/icon-product-menu.png))を開き、_デザイン_ &rarr; _ページテンプレート_ をクリックします。
+1. **サイトメニュー**(![サイトメニュー](../../../images/icon-product-menu.png))を開き、 **デザイン** &rarr; **ページテンプレート** をクリックします。
 
-1. *表示ページテンプレート*タブをクリックします。
+1. **表示ページテンプレート** タブをクリックします。
 
-1. 希望するテンプレートの_Actions_ (![Actions](../../../images/icon-actions.png)) をクリックし、_Mark as Default_ を選択する。
+1. 希望するテンプレートの **Actions**(![Actions](../../../images/icon-actions.png)) をクリックし、 **Mark as Default** を選択する。
 
    ```{tip}
    各テンプレートのコンテンツタイプは、その名前(1)の下に記載されています。 青いチェック（2）は、どのテンプレートがデフォルトとしてマークされているかを示しています。
@@ -21,13 +21,13 @@
 
 ## 個々のコンテンツアイテムに表示ページテンプレートを設定する
 
-1. *サイトメニュー* (![サイトメニュー](../../../images/icon-product-menu.png))を開き、目的のアプリケーション(例：ウェブコンテンツ、ブログ、カテゴリー)に移動します。
+1. **サイトメニュー**(![サイトメニュー](../../../images/icon-product-menu.png))を開き、目的のアプリケーション(例：ウェブコンテンツ、ブログ、カテゴリー)に移動します。
 
 1. コンテンツアイテムの編集または作成を開始します。
 
    ![Edit or create a content item.](./publishing-content-with-display-pages/images/02.png)
 
-1. Propertiesタブで、_Display Page Template_セクションを展開し、ドロップダウンメニューをクリックし、_Specific_を選択します。
+1. Propertiesタブで、 **Display Page Template** セクションを展開し、ドロップダウンメニューをクリックし、 **Specific** を選択します。
 
    ```{note}
    特定の表示ページテンプレートを選択しない場合、コンテンツはコンテンツタイプに対応した [デフォルトのもの](#setting-a-default-display-page-template) を使用して公開されます。
@@ -35,9 +35,9 @@
 
    ![Select a specific display page template to configure it.](./publishing-content-with-display-pages/images/03.png)
 
-1. *プレビュー*をクリックすると、表示ページがどのように見えるかをプレビューできます。
+1. **プレビュー** をクリックすると、表示ページがどのように見えるかをプレビューできます。
 
-1. (オプション）［プロパティ］タブで、［_フレンドリーURL_］パネルを展開し、フレンドリーURLを変更します。 表示ページテンプレートを使って、コンテンツ項目を表示するためのURLを決定します。
+1. (オプション）［プロパティ］タブで、［**フレンドリーURL**］パネルを展開し、フレンドリーURLを変更します。 表示ページテンプレートを使って、コンテンツ項目を表示するためのURLを決定します。
 
    ```{note}
    Liferay 7.4 U34/GA34から、表示ページテンプレートのフレームワークは、アセットのフレンドリURLの履歴を考慮します。 これは、ファイルのURL履歴に保存されているすべてのURLが、ファイルの現在のURLに自動的にリダイレクトされることを意味します。 フレンドリーURL履歴は、 [ドキュメント](../../../content-authoring-and-management/documents-and-media/uploading-and-managing/configuring-document-urls.md) と [ブログ](../../../content-authoring-and-management/blogs/displaying-blogs.md) の両方でサポートされています。
@@ -45,11 +45,11 @@
 
    ![You can configure the friendly URL used for your displayed content.](./publishing-content-with-display-pages/images/04.png)
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
-設定が完了すると、Liferayはテンプレートを使用して、コンテンツ項目をその固有のフレンドリURLで表示します。 必要であれば、コンテンツの_Actions_ボタン（[Actions](../../../images/icon-actions.png) ）をクリックし、_Preview_または_View Content_を選択することで、いつでもコンテンツの表示ページをプレビューすることができます。
+設定が完了すると、Liferayはテンプレートを使用して、コンテンツ項目をその固有のフレンドリURLで表示します。 必要であれば、コンテンツの **Actions** ボタン（ [Actions](../../../images/icon-actions.png) ）をクリックし、 **Preview** または **View Content** を選択することで、いつでもコンテンツの表示ページをプレビューすることができます。
 
-_Preview_は表示ページのテンプレート・コンテキストにコンテンツを表示し、_View Content_はコンテンツ・アイテムのフレンドリーURLにリダイレクトします。
+**Preview** は表示ページのテンプレート・コンテキストにコンテンツを表示し、 **View Content** はコンテンツ・アイテムのフレンドリーURLにリダイレクトします。
 
 ![Preview your content in the context of the display page template or view the Display Page using the content's Action menu.](./publishing-content-with-display-pages/images/05.png)
 

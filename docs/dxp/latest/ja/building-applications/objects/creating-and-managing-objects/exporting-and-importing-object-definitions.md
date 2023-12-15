@@ -15,21 +15,21 @@ You can use the batch client extension to help migrate object definitions betwee
 
 ## 定義のエクスポート
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］タブで［ **オブジェクト**］ をクリックします。
 
-1. 目的のオブジェクトの_Actions_ボタン(![Action Button](../../../images/icon-actions.png)) をクリックし、_Export as JSON_を選択します。
+1. 目的のオブジェクトの **Actions** ボタン(![Action Button](../../../images/icon-actions.png)) をクリックし、 **Export as JSON** を選択します。
 
    ![Click the Actions button for the desired object and select Export as JSON.](./exporting-and-importing-object-definitions/images/01.png)
 
-1. ダイアログ・ウィンドウで_Save_をクリックし、オブジェクト定義をJSONファイルとしてダウンロードする。
+1. ダイアログ・ウィンドウで **Save** をクリックし、オブジェクト定義をJSONファイルとしてダウンロードする。
 
 エクスポートされたオブジェクト定義は、互換性のあるLiferay環境にインポートすることができます。
 
 ## 定義のインポート
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］**タブで***［ オブジェクト**］ をクリックします。
 
-1. アプリケーションバーの_Actions_ボタン(![Actions Button](../../../images/icon-actions.png)) をクリックし、_Import Object_を選択します。
+1. アプリケーションバーの **Actions** ボタン(![Actions Button](../../../images/icon-actions.png)) をクリックし、 **Import Object** を選択します。
 
    ![Click the Actions button in the Application Bar and select Import Object.](./exporting-and-importing-object-definitions/images/02.png)
 
@@ -44,12 +44,12 @@ You can use the batch client extension to help migrate object definitions betwee
 
    ![Enter a name and select the desired JSON file.](./exporting-and-importing-object-definitions/images/03.png)
 
-1. インポート*をクリックします。
+1. *インポート*をクリックします。
 
 オブジェクト定義はバックグラウンドでインポートを開始し、数分かかることがあります。
 
 ## 関連トピック
 
-* [Creating Objects](./creating-objects.md) 
+* [オブジェクトの作成](./creating-objects.md)
 * [オブジェクトのアクティブ化と非アクティブ化](./activating-and-deactivating-objects.md) 
 * [データ移行センター](../../../headless-delivery/consuming-apis/data-migration-center.md) 

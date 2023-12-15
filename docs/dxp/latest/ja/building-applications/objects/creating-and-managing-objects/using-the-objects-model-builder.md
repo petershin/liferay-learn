@@ -7,13 +7,13 @@ Liferay Objectsは、複雑なオブジェクト構造を設計するためのMo
 ![Use the Model Builder GUI to design complex data structures.](./using-the-objects-model-builder/images/01.png)
 
 !!! note
-Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには _Object Folder > View_ 権限も必要です。 詳細は [Objects Application Permissions](../objects-application-permissions.md) を参照。
+Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには **Object Folder > View** 権限も必要です。 詳細は [オブジェクトアプリケーションの権限](../objects-application-permissions.md) を参照。
 
 モデル・ビルダー・ビューにアクセスするには
 
-1. _グローバルメニュー_ (![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、*［コントロールパネル］_タブで_［オブジェクト］*をクリックします。
+1. **グローバルメニュー**(![グローバルメニュー](../../../images/icon-applications-menu.png))を開き、 ［**コントロールパネル**］**タブで***［ オブジェクト**］ をクリックします。
 
-1. 目的の [オブジェクトフォルダ](./organizing-objects-with-folders.md) に移動し、_View in Model Builder_ をクリックします。
+1. 目的の [オブジェクトフォルダ](./organizing-objects-with-folders.md) に移動し、 **View in Model Builder** をクリックします。
 
    ![Go to the desired object folder and click View in Model Builder.](./using-the-objects-model-builder/images/02.png)
 
@@ -26,19 +26,19 @@ Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには _Obj
 
 1. 目的のオブジェクトフォルダに移動する。
 
-1. *Create New Object*をクリックする。
+1. **Create New Object** をクリックする。
 
    ![Click Create New Object.](using-the-objects-model-builder/images/03.png)
 
 1. オブジェクトドラフトのこれらの詳細を提供します。
 
-   **ラベル**:Objects admin およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
+   **ラベル** :Objects admin およびサポートされているアプリケーションコンテキスト（ワークフロー、表示ページテンプレート、フォームなど）でオブジェクトを識別します。
 
-   **Plural Label**：UIにおけるオブジェクト・アプリケーションの表示名を決定します。
+   **Plural Label** ：UIにおけるオブジェクト・アプリケーションの表示名を決定します。
 
-   **オブジェクト名**：オブジェクトの `definition.name` を決定し、公開後に変更することはできません。
+   **オブジェクト名** ：オブジェクトの `definition.name` を決定し、公開後に変更することはできません。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 保存されると、ドラフト定義が中央のダイアグラム・エリアに表示されます。 これをクリックすると、右サイドパネルの設定オプションにアクセスできます。
 
@@ -50,43 +50,43 @@ Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには _Obj
 
 ### データフィールドの追加
 
-1. オブジェクト定義の _Add Field or Relationship_ をクリックします。
+1. オブジェクト定義の **Add Field or Relationship** をクリックします。
 
-1. *Add Field*を選択する。
+1. **Add Field** を選択する。
 
    ![Select Add Field.](./using-the-objects-model-builder/images/05.png)
 
-1. _ラベル_とフィールド名_を入力します。
+1. **ラベル** とフィールド名_を入力します。
 
-   **ラベル**：Objects UIでフィールドを識別し、フィールド作成後にローカライズできます。
+   **ラベル** ：Objects UIでフィールドを識別し、フィールド作成後にローカライズできます。
 
-   **フィールド名**：バックエンドでのフィールド名を決定し、キャメルケースを使用します。 フィールドが公開されると、この値は変更できません。
+   **フィールド名** ：バックエンドでのフィールド名を決定し、キャメルケースを使用します。 フィールドが公開されると、この値は変更できません。
 
-1. フィールド_タイプ_を選択します。 利用可能なフィールド・タイプと構成オプションの詳細については、 [Field Types Reference](./fields/adding-fields-to-objects.md#field-types-ui-reference) 。
+1. フィールド **タイプ** を選択します。 利用可能なフィールド・タイプと構成オプションの詳細については、 [Field Types Reference](./fields/adding-fields-to-objects.md#field-types-ui-reference) 。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
-フィールドはすぐに定義に追加される。 デフォルトでは、オブジェクトカードには5つのフィールドが表示されますが、_Show All Fields_をクリックすると他のフィールドを表示することができます。 さらに、オブジェクトカードのフィールドを選択すると、右側のパネルでその設定オプションにアクセスできます。
+フィールドはすぐに定義に追加される。 デフォルトでは、オブジェクトカードには5つのフィールドが表示されますが、 **Show All Fields** をクリックすると他のフィールドを表示することができます。 さらに、オブジェクトカードのフィールドを選択すると、右側のパネルでその設定オプションにアクセスできます。
 
 ![Select a field to access its configuration options in the right side panel.](./using-the-objects-model-builder/images/06.png)
 
 ### 人間関係の定義
 
-1. オブジェクト定義の _Add Field or Relationship_ をクリックします。
+1. オブジェクト定義の **Add Field or Relationship** をクリックします。
 
-1. リレーションシップの追加*を選択します。
+1. **リレーションシップの追加**を選択します。
 
    ![Select Add Relationship.](./using-the-objects-model-builder/images/07.png)
 
-1. *Label*と*Name*を入力してください。
+1. **Label** と **Name** を入力してください。
 
-   **ラベル**：Objects UI でリレーションシップを識別し、リレーションシップ作成後にローカライズできます。
+   **ラベル** ：Objects UI でリレーションシップを識別し、リレーションシップ作成後にローカライズできます。
 
-   **Name**：バックエンドでのリレーションシップ名を決定し、キャメルケースを使用します。 関連が公開されると、この値は変更できません。
+   **Name** ：バックエンドでのリレーションシップ名を決定し、キャメルケースを使用します。 関連が公開されると、この値は変更できません。
 
-1. リレーションシップの _タイプ_ と、リレーションシップの相手側のオブジェクト定義を選択します。 詳細については、 [オブジェクトリレーションシップの定義](./relationships/defining-object-relationships.md) を参照してください。
+1. リレーションシップの **タイプ** と、リレーションシップの相手側のオブジェクト定義を選択します。 詳細については、 [オブジェクトリレーションシップの定義](./relationships/defining-object-relationships.md) を参照してください。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 保存されると、ダイアグラム・エリアはオブジェクト定義間の論理的なつながりを視覚化し、1 対多と多対多のリレーションシップを区別します。 さらに、リレーションシップを選択すると、右側のサイドパネルにある設定オプションにアクセスできる。
 
@@ -102,9 +102,9 @@ Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには _Obj
 
 1. 目的の保存先フォルダに移動する。
 
-1. 左サイドバーの別のフォルダからオブジェクトの_アクション_ (![アクションボタン](../../../images/icon-actions.png))をクリックします。
+1. 左サイドバーの別のフォルダからオブジェクトの **アクション**(![アクションボタン](../../../images/icon-actions.png))をクリックします。
 
-1. *現在のフォルダに移動*を選択します。
+1. **現在のフォルダに移動** を選択します。
 
    ![Select Move to Current Folder](./using-the-objects-model-builder/images/10.png)
 
@@ -112,7 +112,7 @@ Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには _Obj
 
 ![Move object definitions between folders.](./using-the-objects-model-builder/images/11.png)
 
-オブジェクトカードのアクション（[アクションボタン](../../../images/icon-actions.png)）をクリックすると、追加の管理オプションにアクセスできます。 利用可能なオプションは以下の通り。
+オブジェクトカードのアクション（ [アクションボタン](../../../images/icon-actions.png) ）をクリックすると、追加の管理オプションにアクセスできます。 利用可能なオプションは以下の通り。
 
 * ページビューで編集する：デフォルトのオブジェクトUIに切り替えます。
 * Edit ERC：オブジェクトの外部参照コード（ERC）を更新する。
@@ -127,18 +127,18 @@ Liferay 7.4 2023.Q4+/GA102+ では、Objects UI にアクセスするには _Obj
 
 1. オブジェクトの下書きがあるフォルダに行く。
 
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
 1. 公開する原稿を選択する。
 
    ![Select which drafts to publish and click Publish Objects.](./using-the-objects-model-builder/images/13.png)
 
-1. *オブジェクトの公開*をクリックします。
+1. **オブジェクトの公開** をクリックします。
 
 選ばれた原稿は同時に公開され始める。
 
 ## 関連トピック
 
-* [Creating Objects](./creating-objects.md) 
+* [オブジェクトの作成](./creating-objects.md)
 * [オブジェクトへのフィールドの追加](./fields/adding-fields-to-objects.md) 
 * [オブジェクトの関係の定義](./relationships/defining-object-relationships.md) 

@@ -5,7 +5,7 @@ Liferay DXP RESTサービスを使用すると、サイトの構造化コンテ�
 ここでは、いくつかの [cURL](https://curl.haxx.se/) コードサンプルとともに、ビルド済みのLiferay DXP Dockerイメージを使って、ストラクチャーと構造化コンテンツについて学習していきます。 Liferay DXPでのREST APIの使用については、 [RESTサービスの使用](../../../headless-delivery/consuming-apis/consuming-rest-services.md) をご覧ください。
 
 ```{note}
-Web Content API の紹介については、 [Web Content API Basics](./web-content-api-basics.md) を参照。
+Web Content API の紹介については、 [WebコンテンツAPIの基本](./web-content-api-basics.md) を参照。
 ```
 ## 環境のセットアップ
 
@@ -27,8 +27,8 @@ unzip liferay-m7b2.zip
 ```
 ### サイトIDを特定します。
 
-1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、_設定_ &rarr; _サイト設定_に進みます。
-1. ［プラットフォーム］セクション下で、*［サイト設定］*をクリックします。 Liferay DXPバージョン7.3以前の場合は、_一般_タブをクリックします。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **設定** &rarr; **サイト設定** に進みます。
+1. ［プラットフォーム］セクション下で、 ［**サイト設定**］ をクリックします。 Liferay DXPバージョン7.3以前の場合は、 **一般** タブをクリックします。
 1. ［Site ID］の下でサイト識別子を見つけます。
 
    ![Identify the Site Id under the Site Settings and Site Configuration option.](./advanced-web-content-api/images/05.png)
@@ -37,10 +37,10 @@ unzip liferay-m7b2.zip
 
 ここでは、画像を含むさまざまなコンテンツフィールドを含むWebコンテンツの記事を扱います。 サンプルのWebコンテンツ記事にこれらの画像を追加するには、次の手順に従います。
 
-1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、_コンテンツとデータ_ &rarr; _ドキュメントとメディア_に移動します。
-1. *追加*ボタン（！[Add]（../../../images/icon-add.png））をクリックし、_複数ファイルのアップロード_を選択します。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **コンテンツとデータ** &rarr; **ドキュメントとメディア** に移動します。
+1. **追加** ボタン（！[Add]（../../../images/icon-add.png））をクリックし、 **複数ファイルのアップロード** を選択します。
 1. [サンプルプロジェクトフォルダ](https://resources.learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/developer-guide/liferay-m7b2.zip) から `foo.png`、`bar.png`、`goo.png` の画像をドロップエリアにドラッグ＆ドロップします。
-1. *［公開］*をクリックします。
+1. ［**公開**］ をクリックします。
 
 あるいは、`Document_POST_ToSite.sh` スクリプトを使用して、REST API の `Document` サービスを使用して各画像を個別に投稿することもできます。
 
@@ -89,9 +89,9 @@ REST APIを使ったドキュメントの操作については、 [ドキュメ�
 ```{note}
 REST API を使用してプログラムで Web コンテンツ構造を作成することはできません。
 ```
-1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、_コンテンツ＆データ_ &rarr; _ウェブコンテンツ_に移動します。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **コンテンツ＆データ** &rarr; **ウェブコンテンツ** に移動します。
 
-1. 構造*タブを選択し、_追加_ボタン(![Add](../../../images/icon-add.png)) をクリックします。
+1. 構造 **タブを選択し、***追加** ボタン(![Add](../../../images/icon-add.png)) をクリックします。
 
 1. 以下の内容で、新しいWebコンテンツストラクチャーを作成します。
 
@@ -107,7 +107,7 @@ REST API を使用してプログラムで Web コンテンツ構造を作成す
 
 1. 各ストラクチャー項目をクリックし、そのフィールド参照値を更新します（下表参照）。 フィールド参照値は、サイドバーの［Advanced］セクションにあります。
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 | 項目       | 新規フィールド参照値                 |
 | :------- | :------------------------- |
@@ -127,45 +127,45 @@ REST API を使用してプログラムで Web コンテンツ テンプレー�
 ```
 構造の `image` フィールドを含むウェブコンテンツテンプレートを作成する：
 
-1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、_コンテンツ＆データ_ &rarr; _ウェブコンテンツ_に移動します。
+1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **コンテンツ＆データ** &rarr; **ウェブコンテンツ** に移動します。
 
-1. *Templates*タブを選択し、_Add_ボタン(![Add](../../../images/icon-add.png)) をクリックします。
+1. **Templates** タブを選択し、 **Add** ボタン(![Add](../../../images/icon-add.png)) をクリックします。
 
-1. テンプレート名に_Foo_と入力してください。
+1. テンプレート名に **Foo** と入力してください。
 
-1. Propertiesサイドパネルから、Structureフィールドの隣にある_Add_ボタン(![Add](../../../images/icon-plus.png)) をクリックする。
+1. Propertiesサイドパネルから、Structureフィールドの隣にある **Add** ボタン(![Add](../../../images/icon-plus.png)) をクリックする。
 
    ![Click the Add button next to the Structure field to link your Template to the Structure.](./advanced-web-content-api/images/06.png)
 
 1. [、前のセクション](#create-the-structure-sample) 。
 
-1. FreeMarker エディタに含まれるデフォルトの `<#-- -->` ブロックコメントを削除する。
+1. FreeMarker エディタに含まれるデフォルトの `<#-- --> ` ブロックコメントを削除する。
 
-1. サイドバーで、_要素_ (![Elements](../../../images/icon-list-ul.png)) をクリックします。
+1. サイドバーで、 **要素**(![Elements](../../../images/icon-list-ul.png)) をクリックします。
 
 1. フィールド」グループで、「テキスト」、「画像」、「日付」、「単一選択」フィールドをクリックしてテンプレートに追加します。 FreeMarkerエディターで、各フィールドが新しい行で始まることを確認します。
 
    ![Edit the Web Content Template fields in the FreeMarker editor.](./advanced-web-content-api/images/07.gif)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 構造の `image` フィールドを除いた 2 番目の Web コンテンツ・テンプレートを作成します：
 
-1. Templatesタブで_Actions_ボタン(![Actions](../../../images/icon-actions.png)) をクリックし、_Copy_を選択します。
+1. Templatesタブで **Actions** ボタン(![Actions](../../../images/icon-actions.png)) をクリックし、 **Copy** を選択します。
 
    ![Copy the first Template using the Actions menu.](./advanced-web-content-api/images/10.png)
 
-1. テンプレート名を_Goo_に更新し、_コピー_をクリックします。
+1. テンプレート名を **Goo** に更新し、 **コピー** をクリックします。
 
    ![Update the Template's name to "Goo".](./advanced-web-content-api/images/09.png)
 
-1. テンプレートタブで、新しい_Goo_テンプレートをクリックします。
+1. テンプレートタブで、新しい **Goo** テンプレートをクリックします。
 
 1. テンプレートエディターで、FreeMarkerスクリプトから画像情報 `<#if (ImageReference.getData())></#if>` を削除します。
 
    ![Remove the image information from the Template.](./advanced-web-content-api/images/11.gif)
 
-1. ［_Save_］をクリックします。
+1. ［**Save**］をクリックします。
 
 詳しくは、 [Webコンテンツテンプレートの作成](../web-content-templates/creating-web-content-templates.md) を参照してください。
 
@@ -415,7 +415,7 @@ cURLスクリプトのパラメーター：
 | $2       | `contentStructureId` |
 | $3       | 画像 `id`              |
 
-Liferay DXP で新しい Web コンテンツ記事を見つけるには、_Site Menu_ (![Site menu](../../../images/icon-menu.png)) を開き、_Content & Data_ &rarr; _Web Content_ に進みます。
+Liferay DXP で新しい Web コンテンツ記事を見つけるには、 **Site Menu**(![Site menu](../../../images/icon-menu.png)) を開き、 **Content & Data** &rarr; **Web Content** に進みます。
 
 ![Web Content article from the POST HTTP method.](./advanced-web-content-api/images/08.png)
 

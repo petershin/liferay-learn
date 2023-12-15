@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Acquia社
 
 **概要**

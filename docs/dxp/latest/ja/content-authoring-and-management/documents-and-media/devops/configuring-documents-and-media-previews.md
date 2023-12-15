@@ -16,7 +16,7 @@ Liferayは現在、これらのサービスとの統合をサポートしてい�
 
 * [ImageMagick](http://www.imagemagick.org) （ [Ghostscript](http://www.ghostscript.com) も必要です）：これらのプログラムは、画像ファイルの高速で高品質のプレビューと変換を提供します。 詳細は、 [Enabling ImageMagick and Ghostscript](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-imagemagick-and-ghostscript) を参照してください。
 
-* [FFmpeg](http://ffmpeg.org/) ：このプログラムは、音声ファイルとビデオファイルのサポートを提供します。 ファイルのプレビューを生成するだけでなく、ブラウザのネイティブHTML 5プレーヤーでマルチメディアを再生することもできます。 詳細は、 [Enabling FFmpeg for Audio and Video Previews](./enabling-ffmpeg-for-audio-and-video-previews.md) を参照してください。
+* [FFmpeg](http://ffmpeg.org/) ：このプログラムは、音声ファイルとビデオファイルのサポートを提供します。 ファイルのプレビューを生成するだけでなく、ブラウザのネイティブHTML 5プレーヤーでマルチメディアを再生することもできます。 詳細は、 [音声とビデオのプレビュー用にFFmpegを有効にする](./enabling-ffmpeg-for-audio-and-video-previews.md) を参照してください。
 
    ```{note}
    Liferay 7.3.xとそれ以前のバージョンでは、オーディオとビデオのプレビューを生成するために [Xuggler](http://www.xuggle.com/xuggler) を使用しています。 詳しくは [Xuggler](../../../system-administration/using-the-server-administration-panel/configuring-external-services.md#enabling-xuggler) をご覧ください。
@@ -26,7 +26,7 @@ Liferayは現在、これらのサービスとの統合をサポートしてい�
 
 ## ImageMagickでサポートされるメディアタイプの設定
 
-ImageMagickをインストールしている場合、Adaptive Mediaはそれを使ってドキュメントライブラリに保存されている画像の代替解像度を生成することができます。 デフォルトでは、ImageMagick は `avif`、`gif`、`heic`、`tiff`、`webp` ファイルをサポートしているが、必要に応じてメディアタイプを追加することができる。 詳しくは、 [Adaptive Media Configuration Reference](../publishing-and-sharing/using-adaptive-media/adaptive-media-configuration-reference.md#imagemagick)。
+ImageMagickをインストールしている場合、Adaptive Mediaはそれを使ってドキュメントライブラリに保存されている画像の代替解像度を生成することができます。 デフォルトでは、ImageMagick は `avif`、`gif`、`heic`、`tiff`、`webp` ファイルをサポートしているが、必要に応じてメディアタイプを追加することができる。 詳しくは、 [Adaptive Media Configuration Reference](../publishing-and-sharing/using-adaptive-media/adaptive-media-configuration-reference.md#imagemagick) 。
 
 ## プレビューとサムネイルの手動生成
 
@@ -38,9 +38,9 @@ ImageMagickをインストールしている場合、Adaptive Mediaはそれを�
 
 1. [グローバルメニュー](../../../images/icon-applications-menu.png) を開き、[コントロールパネル] タブを開き、[システム管理] をクリックします。
 
-1. *リソース*タブに移動します。
+1. **リソース** タブに移動します。
 
-1. 再生オプション]で、希望のメディアタイプの[_実行_]をクリックします。
+1. 再生オプション]で、希望のメディアタイプの[**実行**]をクリックします。
 
    ![Under Regeneration Options, execute the desired media type.](./configuring-documents-and-media-previews/images/01.png)
 

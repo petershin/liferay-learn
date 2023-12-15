@@ -21,7 +21,7 @@
 
 1. アプリケーションメニュー(![Applications Menu](../../images/icon-applications-menu.png)) を開き、コントロールパネル &rarr; ユーザー &rarr; ユーザーと組織 にアクセスします。
 
-1. ユーザーのアクションボタン（[Actions](../../images/icon-actions.png)）をクリックし、_個人データの削除_を選択します。 ユーザーを無効化していない場合は、無効化するように求められます。
+1. ユーザーのアクションボタン（ [Actions](../../images/icon-actions.png) ）をクリックし、 **個人データの削除** を選択します。 ユーザーを無効化していない場合は、無効化するように求められます。
 
    ユーザーの個人データ抹消画面が表示されます。
 
@@ -29,7 +29,7 @@
 
 ![From here, you can browse all data the User posted on his or her personal Site.](./sanitizing-user-data/images/01.png)
 
-通常のLiferay Sitesに投稿されたデータを閲覧するには、_Regular Sites_をクリックします。
+通常のLiferay Sitesに投稿されたデータを閲覧するには、 **Regular Sites** をクリックします。
 
 ![Choose Regular Sites to browse all data posted by the User on administratively-created Sites.](./sanitizing-user-data/images/02.png)
 
@@ -41,17 +41,17 @@
 
 アプリケーションのすべてのアイテムを一度に管理（匿名化または削除）するには、
 
-1. アプリケーションのアクションボタン（[Actions](../../images/icon-actions.png)）をクリックします。
+1. アプリケーションのアクションボタン（ [Actions](../../images/icon-actions.png) ）をクリックします。
 
-1. アプリケーションのすべての項目を安全に削除できることを確認したら、_Delete_を選択します。
+1. アプリケーションのすべての項目を安全に削除できることを確認したら、 **Delete** を選択します。
 
-1. アプリケーションの全項目について、単純な匿名化で十分だと思う場合は、_匿名化_を選択してください。
+1. アプリケーションの全項目について、単純な匿名化で十分だと思う場合は、 **匿名化** を選択してください。
 
 インターフェイスを使用して、サイト、アプリケーション、およびデータを閲覧します。
 
 ## ユーザーの削除
 
-すべてのデータが必要に応じて確認、削除、編集、または匿名化されたら、ユーザーを削除します。 ［個人データ抹消］画面が終了すると、ダイアログボックスが自動的にポップアップします。 このステップは簡単です：*OK*をクリックします。
+すべてのデータが必要に応じて確認、削除、編集、または匿名化されたら、ユーザーを削除します。 ［個人データ抹消］画面が終了すると、ダイアログボックスが自動的にポップアップします。 このステップは簡単です： **OK** をクリックします。
 
 ![To finish the data erasure process, delete the User.](./sanitizing-user-data/images/04.png)
 
@@ -67,7 +67,7 @@
 
 ![A user inputs identifiable information into an input text field.](./sanitizing-user-data/images/05.png)
 
-匿名化後、_Author_フィールドはサニタイズされましたが、ユーザー入力テキストは残っており、手動で削除する必要があることに注意してください。
+匿名化後、 **Author** フィールドはサニタイズされましたが、ユーザー入力テキストは残っており、手動で削除する必要があることに注意してください。
 
 ![User input text is not anonymized.](./sanitizing-user-data/images/06.png)
 

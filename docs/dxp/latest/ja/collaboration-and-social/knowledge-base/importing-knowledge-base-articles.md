@@ -1,4 +1,4 @@
-# Importing Knowledge Base Articles
+# ナレッジベース記事のインポート
 
 {bdg-secondary}`liferay 7.4 U72+/GA72+`.
 
@@ -57,7 +57,7 @@ Each athlete must compete in fencing, shooting, swimming, horseback riding, and 
 
 ### ソースURLの設定
 
-[GitHub](https://github.com) のようなサービスでMarkdownファイルをホストしている場合、リポジトリの場所を指定するソースURLを設定することができます。 この機能を使用するには、まず [Knowledge Base System Settings](knowledge-base-system-settings.md) でソース URL を有効にします。 次に、ZIPファイルのルートに `.METADATA` ファイルを追加し、目的のリポジトリのベースURLを記述します。 インポーターはZIPアーカイブの各ファイルのパスをこのベースURLに追加し、完全なソースURL(`[ベースURL]/[記事ファイルパス]`)を形成します。
+[GitHub](https://github.com) のようなサービスでMarkdownファイルをホストしている場合、リポジトリの場所を指定するソースURLを設定することができます。 この機能を使用するには、まず [ナレッジベースシステム設定](knowledge-base-system-settings.md) でソース URL を有効にします。 次に、ZIPファイルのルートに `.METADATA` ファイルを追加し、目的のリポジトリのベースURLを記述します。 インポーターはZIPアーカイブの各ファイルのパスをこのベースURLに追加し、完全なソースURL(`[ベースURL]/[記事ファイルパス]`)を形成します。
 
 例えば、このベースURLのシナリオを考えてみよう：
 
@@ -73,23 +73,23 @@ https://github.com/clarity/clarity-guide/blob/master/docs/latest/en/folder-01/fi
 
 ## Markdownファイルのインポート
 
-1. [サイトメニュー](../../images/icon-menu.png)を開き、_コンテンツとデータ_ &rarr; _ナレッジベース_に移動します。
+1. [サイトメニュー](../../images/icon-menu.png) を開き、 **コンテンツとデータ** &rarr; **ナレッジベース** に移動します。
 
-1. 記事とフォルダ(![記事とフォルダ](../../images/icon-pages-tree.png))セクションで、目的のフォルダに移動し、_追加_(![追加ボタン](../../images/icon-add.png))をクリックし、_インポート_を選択します。
+1. 記事とフォルダ(![記事とフォルダ](../../images/icon-pages-tree.png))セクションで、目的のフォルダに移動し、 **追加**(![追加ボタン](../../images/icon-add.png))をクリックし、 **インポート** を選択します。
 
    ![Go to the desired folder, click Add, and select Import.](./importing-knowledge-base-articles/images/01.png)
 
-   または、目的のフォルダの_Actions_ボタン（！[Action Button](../../images/icon-actions.png)）をクリックし、_Import_を選択します。
+   または、目的のフォルダの **Actions** ボタン（！ [Action Button](../../images/icon-actions.png) ）をクリックし、 **Import** を選択します。
 
    ![Click the Actions button for the desired folder and select Import.](./importing-knowledge-base-articles/images/02.png)
 
-1. *ファイルを選択*をクリックし、目的のZIPファイルを選択します。
+1. **ファイルを選択** をクリックし、目的のZIPファイルを選択します。
 
    ![Upload your ZIP file.](./importing-knowledge-base-articles/images/03.png)
 
-1. 有効/無効 _記事ファイルの数字の接頭辞を優先順位として適用_。 これは、Knowledge Baseが各ファイルの数字の接頭辞を使って順番を決めるかどうかを決定します。
+1. 有効/無効 **記事ファイルの数字の接頭辞を優先順位として適用** 。 これは、Knowledge Baseが各ファイルの数字の接頭辞を使って順番を決めるかどうかを決定します。
 
-1. ［_保存_］をクリックします。
+1. ［**保存**］をクリックします。
 
 保存されると、インポーターが各ファイルのMarkdownをHTMLに変換し、出来上がった記事が公開される。
 

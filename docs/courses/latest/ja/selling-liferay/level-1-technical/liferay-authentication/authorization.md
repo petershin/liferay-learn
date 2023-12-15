@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # Liferay 認証
 
 **概要**
@@ -9,8 +14,8 @@
 * 強固なセキュリティは、OWASPのトップ10で最も重要視されている。
 
 ```{note}
-* 本モジュールのライブワークショップの[録画](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication) をご覧ください。
-* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf)からダウンロードしてください。
+* 本モジュールのライブワークショップの [録画](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication) をご覧ください。
+* 上記ワークショップで使用されたプレゼンテーション資料はこちら [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf) からダウンロードしてください。
 ```
 
 ## 承認
@@ -107,7 +112,7 @@ LiferayとClient Extensions間のOAuth通信プロセスの例を以下に示し
 
 シングルサインオンを実証する必要があり、Oktaのようなサービスが利用できない場合、Keycloakのインスタンスを実行することが可能だ。 Keycloakは、IDとアクセス管理でシングルサインオンを可能にするオープンソースのソフトウェア製品である。
 
-Liferayのコンサルタントの一人が、Keycloakのセットアップ手順を網羅した [ブログ](https://liferay.dev/blogs/-/blogs/liferay-sso-step-by-step)。
+Liferayのコンサルタントの一人が、Keycloakのセットアップ手順を網羅した [ブログ](https://liferay.dev/blogs/-/blogs/liferay-sso-step-by-step) 。
 
 **認証0**
 

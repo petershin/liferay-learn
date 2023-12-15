@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 購入段階
 
 **概要**

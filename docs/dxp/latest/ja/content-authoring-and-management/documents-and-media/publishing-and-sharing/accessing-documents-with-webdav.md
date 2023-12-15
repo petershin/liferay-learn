@@ -14,11 +14,11 @@ Liferayの最新バージョンでは、WebDAVクライアントで使用する�
 
 WebDAVパスワードを生成するには
 
-1. サイトのホームページからユーザーアイコンをクリックし、_アカウント設定_を選択します。
+1. サイトのホームページからユーザーアイコンをクリックし、 **アカウント設定** を選択します。
 
-2. 左のメニューから_パスワード_を選択します。
+2. 左のメニューから **パスワード** を選択します。
 
-3. *WEBDAV PASSWORD*セクションまでスクロールダウンし、_Generate WebDAV Password_をクリックします。
+3. **WEBDAV PASSWORD** セクションまでスクロールダウンし、 **Generate WebDAV Password** をクリックします。
 
    ![Generate a WebDAV password to use with your client.](./accessing-documents-with-webdav/images/04.png)
 
@@ -30,21 +30,21 @@ WebDAVパスワードを生成するには
 
 1. 目的のサイトまたはアセットライブラリで、［Documents and Media］アプリケーションを開きます。
 
-1. 目的のフォルダの_Actions_ボタン(![Actions Button](../../../images/icon-actions.png)) をクリックし、_Access from Desktop_を選択します。
+1. 目的のフォルダの **Actions** ボタン(![Actions Button](../../../images/icon-actions.png)) をクリックし、 **Access from Desktop** を選択します。
 
    ![Select Access from Desktop to get the folder's WebDAV URL.](./accessing-documents-with-webdav/images/01.png)
 
-1. フォルダ固有の_WebDAV URL_をコピーする。
+1. フォルダ固有の **WebDAV URL** をコピーする。
 
    ![Copy the folder's WebDAV URL.](./accessing-documents-with-webdav/images/02.png)
 
 1. お使いのオペレーティングシステムの指示に従ってください。
 
-   * **Windows**: WebDAV URLにネットワークドライブをマップします。 プロンプトが表示されたら、認証情報を入力します。 認証されると、ドキュメント・ライブラリー・フォルダーがネットワーク・ドライブとして表示されます。
+   * **Windows** : WebDAV URLにネットワークドライブをマップします。 プロンプトが表示されたら、認証情報を入力します。 認証されると、ドキュメント・ライブラリー・フォルダーがネットワーク・ドライブとして表示されます。
 
-   * **macOS**:Finderを開き、_Go_ &rarr; _Connect to Server_を選択します。 Server Addressフィールドに、アクセスしたいフォルダのWebDAV URLを入力し、_Connect_をクリックし、プロンプトが表示されたら認証情報を入力します。
+   * **macOS** :Finderを開き、 **Go** &rarr; **Connect to Server** を選択します。 Server Addressフィールドに、アクセスしたいフォルダのWebDAV URLを入力し、 **Connect** をクリックし、プロンプトが表示されたら認証情報を入力します。
 
-   * **Linux**: Linuxの場合、フォルダーのWebDAV URLを少し変更する必要があります。 KDE Dolphinの場合は、URLのプロトコルを `http://` ではなく `webdav://` に変更してください。 GNOME Filesの場合は、URLのプロトコルを`http://`の代わりに`dav://`に変更してください。 変更したURLをファイルマネージャに貼り付け、_Enter_キーを押し、プロンプトが表示されたら認証情報を入力する。
+   * **Linux** : Linuxの場合、フォルダーのWebDAV URLを少し変更する必要があります。 KDE Dolphinの場合は、URLのプロトコルを `http://` ではなく `webdav://` に変更してください。 GNOME Filesの場合は、URLのプロトコルを`http://`の代わりに`dav://`に変更してください。 変更したURLをファイルマネージャに貼り付け、 **Enter** キーを押し、プロンプトが表示されたら認証情報を入力する。
 
 一度セットアップすれば、オペレーティングシステムのファイルブラウザを使用して、接続されたDocuments and Mediaフォルダ内のファイルを追加、編集、削除することができます。 ファイルシステム上のこのフォルダにあるファイルを編集すると、すべての変更がLiferayに表示され、ファイルのマイナーバージョンがインクリメントされます。
 

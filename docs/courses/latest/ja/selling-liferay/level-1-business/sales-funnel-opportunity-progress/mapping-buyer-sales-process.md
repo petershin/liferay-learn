@@ -1,3 +1,8 @@
+---
+visibility:
+- Employee
+- Partner
+---
 # 購買フェーズと販売プロセスのマッピング
 
 **概要**

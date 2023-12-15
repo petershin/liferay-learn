@@ -288,7 +288,7 @@ POST _reindex/
 | Liferay DXP 7.2 SP3/FP8以降        | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
 | Liferay DXP 7.3 GA1+ および7.4 GA1+ | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
 
-`<companyId>`（例：`20101`）はデータベース内の指定された`Company`レコードに属する。 UIでは _Instance ID_と表示され、 [仮想インスタンス](../../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md) を表します。
+`<companyId>`（例：`20101`）はデータベース内の指定された`Company`レコードに属する。 UIでは **Instance ID** と表示され、 [仮想インスタンス](../../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md) を表します。
 
 ## 次のステップ
 

@@ -12,13 +12,13 @@
 
 1. ページの編集中に、ページの任意の場所にコレクション・フィルター・フラグメントを追加します。
 
-1. フラグメントの _全般_ 設定で、目的のコレクションを選択します。 コレクションが効果を発揮するには、ページ上のコレクション表示フラグメントに表示されている必要があります。
+1. フラグメントの **全般** 設定で、目的のコレクションを選択します。 コレクションが効果を発揮するには、ページ上のコレクション表示フラグメントに表示されている必要があります。
 
    ![Configure the Fragment to use a Collection that is already displayed in a Collection Display Fragment.](./filtering-collections-on-a-page/images/01.png)
 
-   互換性のあるコレクションを選択すると、_Filter_ ドロップダウンメニューが表示されます。
+   互換性のあるコレクションを選択すると、 **Filter** ドロップダウンメニューが表示されます。
 
-1. フィルターメニューを使用して、_キーワード_、_カテゴリー_、または_タグ_フィルターを選択します。
+1. フィルターメニューを使用して、 **キーワード** 、 **カテゴリー** 、または **タグ** フィルターを選択します。
 
     ```{note}
     [`FragmentCollectionFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-collection-filter-api/src/main/java/com/liferay/fragment/collection/filter/FragmentCollectionFilter.java) と [`InfoFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/info/info-api/src/main/java/com/liferay/info/filter/InfoFilter.java) インターフェイスを実装した）カスタムコレクションフィルターを追加するモジュールがデプロイされている場合、これらのフィルターをリストから選択することもできます。
@@ -42,7 +42,7 @@ Category（カテゴリー）」を選択した場合、「Source（ソース）
 
 ![Select the vocabulary or category that contains the desired category selection.](./filtering-collections-on-a-page/images/02.png)
 
-1. 希望するカテゴリーを含む語彙または親カテゴリーを選択したら、_Select This Level_をクリックします。
+1. 希望するカテゴリーを含む語彙または親カテゴリーを選択したら、 **Select This Level** をクリックします。
 
 1. ページを公開する。
 
@@ -64,11 +64,11 @@ Applied Filters Fragment は、 [Collection Filter Fragment](#using-the-collecti
 
 1. ページの編集中に、ページ上の任意の場所に適用済みフィルターフラグメントを追加します。
 
-1. Applied Filter Fragment の _General_ 設定で、目的のコレクションを選択します。 同じコレクションをページに表示し、 [コレクションフィルタフラグメント](#using-the-collection-filter-fragment) で構成する必要があります。
+1. Applied Filter Fragment の **General** 設定で、目的のコレクションを選択します。 同じコレクションをページに表示し、 [コレクションフィルタフラグメント](#using-the-collection-filter-fragment) で構成する必要があります。
 
 1. ページを公開する。
 
-これで、ユーザがコレクションフィルタフラグメントでコンテンツをフィルタリングすると、Applied Filters Fragmentに、設定されたコレクションに現在適用されているフィルタのリストが表示されます。 また、表示されている各フィルタの_X_ボタンをクリックして、フィルタを削除することもできます。
+これで、ユーザがコレクションフィルタフラグメントでコンテンツをフィルタリングすると、Applied Filters Fragmentに、設定されたコレクションに現在適用されているフィルタのリストが表示されます。 また、表示されている各フィルタの **X** ボタンをクリックして、フィルタを削除することもできます。
 
 ![The Applied Filters Fragment shows all filters currently applied to the configured Collection.](./filtering-collections-on-a-page/images/05.png)
 

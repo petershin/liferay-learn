@@ -5,19 +5,19 @@
 
 新しい割引を作成するには：
 
-1. _グローバルアプリケーション_ &rarr; _Commerce_ &rarr; _Discounts_にアクセスしてください。
+1. **グローバルアプリケーション** &rarr; **Commerce** &rarr; **Discounts** にアクセスしてください。
 
 1. (![Add](../../images/icon-add.png)) ボタンをクリックして、新しいディスカウントを追加します。
 
-1. 名前を入力： _Spring Sale_.
+1. 名前を入力： **Spring Sale** .
 
 1. 「適用先」のドロップダウンから割引の種類（例えば、「小計に適用」）を選択します。 （さまざまな割引種類の詳細は、 [割引種類](./introduction-to-discounts.md#types-of-discounts) を参照してください。）
 
-1. タイプ」のドロップダウンメニューから「パーセンテージ」または「固定金額」を選択します。
+1. 「タイプ」のドロップダウンメニューから「パーセンテージ」または「固定金額」を選択します。
 
    ![Create a new discount.](./creating-a-discount/images/03.png)
 
-1. _Submit_をクリックしてください。
+1. **Submit** をクリックしてください。
 
 ## 割引の設定
 
@@ -28,14 +28,14 @@
 1. 以下のデータを入力する：
 
    * **金額20%
-   * **最大割引額**：20.00
-   * **レベル**: L1
+   * **最大割引額** ：20.00
+   * **レベル** : L1
 
-1. _Active_トグルを有効にする。
+1. **Active** トグルを有効にする。
 
    ![Set the percentage and maximum discount account.](./creating-a-discount/images/04.png)
 
-1. _Publish_をクリックする。
+1. **Publish** をクリックする。
 
 これで割引が有効になりました。 割引のルールと適合性を設定します。
 
@@ -47,11 +47,11 @@
 
 1. 以下のデータを入力する：
 
-   * **クーポンコード**：スプリングセール
-   * **最大総使用量**：1
-   * **アカウントあたりの最大使用数**：1
+   * **クーポンコード** ：スプリングセール
+   * **最大総使用量** ：1
+   * **アカウントあたりの最大使用数** ：1
 
-1. _Publish_をクリックする。
+1. **Publish** をクリックする。
 
 クーポンコードは現在有効です。
 
@@ -59,13 +59,13 @@
 
 割引の対象となる要件を指定するルールを定義できます。 詳細は、 [割引ルール](./introduction-to-discounts.md#discount-rules) を参照してください。
 
-複数のルールを使用する場合は、_And_または_Or_のラジオボタンをクリックして、ルールを集約するか、どのルールが効果的かを決定することができます。
+複数のルールを使用する場合は、 **And** または **Or** のラジオボタンをクリックして、ルールを集約するか、どのルールが効果的かを決定することができます。
 
 新しい割引ルールを追加するには：
 
-1. ルールが作成されたら、_Rules_セクションまでスクロールダウンする。
+1. ルールが作成されたら、 **Rules** セクションまでスクロールダウンする。
 
-1. 追加]をクリックします(![アイコンの追加](../../images/icon-add.png))。
+1. [追加]をクリックします(![アイコンの追加](../../images/icon-add.png))。
 
 1. 名前を入力してください。
 
@@ -73,15 +73,15 @@
 
    ![Create a new discount rule.](./creating-a-discount/images/05.png)
 
-1. _Submit_をクリックしてください。
+1. **Submit** をクリックしてください。
 
-1. ルールを設定するには、_Spring Sales_をクリックします。
+1. ルールを設定するには、 **Spring Sales** をクリックします。
 
-1. カート合計最低金額」の欄に「_15.00_」と入力してください。
+1. カート合計最低金額」の欄に「**15.00**」と入力してください。
 
    ![Enter a value in the Cart Total Minium Amount field.](./creating-a-discount/images/06.png)
 
-1. _Save_をクリックし、ウィンドウを閉じる。
+1. **Save** をクリックし、ウィンドウを閉じる。
 
 割引ルールが有効になった。
 
@@ -95,25 +95,25 @@
 
 1. [［アカウントグループを選択］](../../users-and-accounts/account-management/creating-a-new-account-group.md) ラジオボタンをクリックします。
 
-1. アカウントグループの追加_検索バーで、希望のアカウントグループを検索します（この例では_US Accounts East_）。
+1. アカウントグループの追加 **検索バーで、希望のアカウントグループを検索します（この例では** US Accounts East_）。
 
 1. 「選択」をクリックしてアカウントグループを追加します。
 
    ![Select the desired account groups which are eligible for this discount.](./creating-a-discount/images/07.png)
 
-1. 完了したら_Publish_をクリックする。
+1. 完了したら **Publish** をクリックする。
 
 この割引は、すべてのチャネルまたは特定のチャネルで利用できるようにすることができます。 この割引の対象となるチャネルを指定するには、次の手順に従います：
 
-1. _Eligibilityタブで_、_Specific Channels_ラジオボタンをクリックします。
+1. **Eligibilityタブで** 、 **Specific Channels** ラジオボタンをクリックします。
 
-1. _チャンネル追加_検索バーで、希望のチャンネルを検索します。
+1. **チャンネル追加** 検索バーで、希望のチャンネルを検索します。
 
 1. をクリックしてチャンネルを追加します。
 
    ![Select the desired channels that are eligible for the discount.](./creating-a-discount/images/08.png)
 
-1. 完了したら_Publish_をクリックする。
+1. 完了したら **Publish** をクリックする。
 
 指定されたアカウントグループのお客様には、選択された商品が20%オフとなる割引が適用されます。 さらに、特定の [注文タイプにのみ割引を適用する注文タイプ資格を追加することで、これをカスタマイズすることができます](../../order-management/order-types.md) 。
 
@@ -121,7 +121,7 @@
 
 割引のルールと適合性は、注文が1つまたは多くの割引の対象となるかどうかを決定します。 入力した適合性に対する割引の特異性については、以下の表を参照してください。
 
-| **特定のアカウント** | **特定のアカウントグループ** | **特定のチャンネル** | **特殊注文タイプ** | **ランク**|
+| **特定のアカウント** | **特定のアカウントグループ** | **特定のチャンネル** | **特殊注文タイプ** | **ランク** |
 | :----------- | :--------------- | :----------- | :---------- | :------ |
 | &#10004;     |                  | &#10004;     | &#10004;    | 1       |
 | &#10004;     |                  |              | &#10004;    | 2       |
@@ -141,21 +141,21 @@
 
 割引を設定する、
 
-1. _コントロールパネル_ &rarr; _Commerce_ &rarr; _Discounts_ に移動します。
+1. **コントロールパネル** &rarr; **Commerce** &rarr; **Discounts** に移動します。
 
-1. 追加（[Add]（../../images/icon-add.png））をクリックし、_Spring Sale_という名前を入力します。
+1. 追加（![Add](../../images/icon-add.png)）をクリックし、 **Spring Sale** という名前を入力します。
 
-1. 割引の種類（例えば、_Apply to Subtotal_）を_Target_ドロップダウンから選択します。 （さまざまな割引種類の詳細は、 [割引種類](./introduction-to-discounts.md#types-of-discounts) を参照してください。）
+1. 割引の種類（例えば、 **Apply to Subtotal**）を **Target** ドロップダウンから選択します。 （さまざまな割引種類の詳細は、 [割引種類](./introduction-to-discounts.md#types-of-discounts) を参照してください。）
 
 1. この割引が適用されるチャネルのボックスをオンにします。
 
-1. この割引が適用される [［Account Groups］](../../users-and-accounts/account-management/creating-a-new-account-group.md) を選択します。 この例では、_US East Coast_。
+1. この割引が適用される [［Account Groups］](../../users-and-accounts/account-management/creating-a-new-account-group.md) を選択します。 この例では、 **US East Coast** 。
 
-1. クーポンコードを使用する場合は、_Use Coupon Code_のトグルを_Yes_に切り替えてください。 次に、_Couple Code_フィールドにコードを入力します。 そうでない場合は、_NO_のままにしておく。
+1. クーポンコードを使用する場合は、 **Use Coupon Code** のトグルを **Yes** に切り替えてください。 次に、 **Couple Code** フィールドにコードを入力します。 そうでない場合は、 **NO** のままにしておく。
 
-1. パーセンテージを使用する場合は、_Use Percentage_トグルを_Yes_に切り替える。
+1. パーセンテージを使用する場合は、 **Use Percentage** トグルを **Yes** に切り替える。
 
-1. _最大割引額_: $20.00
+1. **最大割引額** : $20.00
 
 1. [_Level_](./introduction-to-discounts.md#tiered-discounts) : 20.00を入力してください。 これにより、小計から20％オフになります。
 
@@ -163,7 +163,7 @@
 
     ![Creating a new discount.](./creating-a-discount/images/01.png)
 
-1. _Publish_をクリックする。
+1. **Publish** をクリックする。
 
 ストアでは、指定されたアカウントグループの商品を対象に、選択した商品に20%割引が適用されるようになりました。
 
@@ -173,9 +173,9 @@
 
    ![Click on the Rules tab to add a new Discount Rule.](./creating-a-discount/images/02.png)
 
-1. 追加(![追加アイコン](../../images/icon-add.png))ボタンをクリックし、_タイプ_ドロップダウンメニューから_カート合計_を選択します。
+1. 追加(![追加アイコン](../../images/icon-add.png))ボタンをクリックし、 **タイプ** ドロップダウンメニューから **カート合計** を選択します。
 
-1. カート合計最低金額」の欄に15.00と入力してください。
+1. 「カート合計最低金額」の欄に15.00と入力してください。
 
 1. 「保存」をクリックする。
 

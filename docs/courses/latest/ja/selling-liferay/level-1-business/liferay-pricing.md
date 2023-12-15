@@ -5,6 +5,9 @@ toc:
   - ./liferay-pricing/liferay-pricing-saas-addons-upcoming.md
   - ./liferay-pricing/liferay-pricing-paas.md
   - ./liferay-pricing/liferay-pricing-self-hosted.md
+visibility:
+- Employee
+- Partner
 ---
 # Liferayの価格
 

@@ -1,4 +1,6 @@
 ---
+toc:
+  - ./managing-data-from-external-systems/using-the-salesforce-storage-type.md
 uuid: f1b85ce0-bfb0-4abd-bf57-534edda1d5f0
 ---
 # Managing Data from External Systems
@@ -35,7 +37,7 @@ Examples include creating display pages for object data, displaying data in coll
 
 Currently, Liferay includes a [beta](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) connector to Salesforce for proxy objects. With it, you can integrate your proxy object with [custom Salesforce objects](https://help.salesforce.com/s/), using Salesforce as an external storage system.
 
-To use this feature, enable the Proxy Object (LPS-135430) [feature flag](../../../system-administration/configuring-liferay/feature-flags.md).
+To use this feature, enable the Proxy Object (LPS-135430) [feature flag](../../../system-administration/configuring-liferay/feature-flags.md) and see [Using the Salesforce Storage Type](./managing-data-from-external-systems/using-the-salesforce-storage-type.md) for more information.
 
 ## Related Topics
 

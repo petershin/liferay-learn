@@ -93,72 +93,53 @@ Glowroot can be configured to monitor Liferay upgrades. Create a `config.json` f
 
 ```json
 {
-	"transactions": {
-		"slowThresholdMillis": 2000,
-		"profilingIntervalMillis": 1000,
-		"captureThreadStats": true
-	},
-	"jvm": {
-		"maskSystemProperties": [
-			"*password*"
-		],
-		"maskMBeanAttributes": [
-			"*password*"
-		]
-	},
-	"uiDefaults": {
-		"defaultTransactionType": "Web",
-		"defaultPercentiles": [
-			50.0,
-			95.0,
-			99.0
-		],
-		"defaultGaugeNames": [
-			"java.lang:type=Memory:HeapMemoryUsage.used"
-		]
-	},
-	"advanced": {
+	"advanced":
+	{
 		"immediatePartialStoreThresholdSeconds": 60,
-		"maxTransactionAggregates": 500,
+		"maxProfileSamplesPerTransaction": 50000,
 		"maxQueryAggregates": 500,
 		"maxServiceCallAggregates": 500,
 		"maxTraceEntriesPerTransaction": 2000,
-		"maxProfileSamplesPerTransaction": 50000,
+		"maxTransactionAggregates": 500,
 		"mbeanGaugeNotFoundDelaySeconds": 60
 	},
-	"gauges": [
+	"gauges":
+	[
 		{
-			"mbeanObjectName": "java.lang:type=Memory",
-			"mbeanAttributes": [
+			"mbeanAttributes":
+			[
 				{
 					"name": "HeapMemoryUsage.used"
 				}
-			]
+			],
+			"mbeanObjectName": "java.lang:type=Memory"
 		},
 		{
-			"mbeanObjectName": "java.lang:type=GarbageCollector,name=*",
-			"mbeanAttributes": [
+			"mbeanAttributes":
+			[
 				{
-					"name": "CollectionCount",
-					"counter": true
+					"counter": true,
+					"name": "CollectionCount"
 				},
 				{
-					"name": "CollectionTime",
-					"counter": true
+					"counter": true,
+					"name": "CollectionTime"
 				}
-			]
+			],
+			"mbeanObjectName": "java.lang:type=GarbageCollector,name=*"
 		},
 		{
-			"mbeanObjectName": "java.lang:type=MemoryPool,name=*",
-			"mbeanAttributes": [
+			"mbeanAttributes":
+			[
 				{
 					"name": "Usage.used"
 				}
-			]
+			],
+			"mbeanObjectName": "java.lang:type=MemoryPool,name=*"
 		},
 		{
-			"mbeanObjectName": "java.lang:type=OperatingSystem",
-			"mbeanAttributes": [
+			"mbeanAttributes":
+			[
 				{
 					"name": "FreePhysicalMemorySize"
 				},
@@ -168,70 +149,124 @@ Glowroot can be configured to monitor Liferay upgrades. Create a `config.json` f
 				{
 					"name": "SystemCpuLoad"
 				}
-			]
+			],
+			"mbeanObjectName": "java.lang:type=OperatingSystem"
 		}
 	],
-	"plugins": [
+	"instrumentation":
+	[
+		{
+			"alreadyInTransactionBehavior": "capture-new-transaction",
+			"captureKind": "transaction",
+			"className": "com.liferay.portal.kernel.upgrade.UpgradeStep",
+			"methodName": "upgrade",
+			"methodParameterTypes":
+			[],
+			"order": 0,
+			"timerName": "Upgrade Step Timer",
+			"traceEntryMessageTemplate": "Upgrade Step {{this.class.name}}",
+			"transactionNameTemplate": "Upgrade Step {{this.class.name}}",
+			"transactionType": "Upgrade"
+		},
+		{
+			"alreadyInTransactionBehavior": "capture-new-transaction",
+			"captureKind": "transaction",
+			"className": "com.liferay.portal.kernel.upgrade.UpgradeProcess",
+			"methodName": "upgrade",
+			"methodParameterTypes":
+			[],
+			"order": 0,
+			"timerName": "Upgrade Process Timer",
+			"traceEntryMessageTemplate": "Upgrade Process {{this.class.name}}",
+			"transactionNameTemplate": "Upgrade Process {{this.class.name}}",
+			"transactionType": "Upgrade"
+		}
+	],
+	"jvm":
+	{
+		"maskMBeanAttributes":
+		[
+			"*password*"
+		],
+		"maskSystemProperties":
+		[
+			"*password*"
+		]
+	},
+	"plugins":
+	[
 		{
 			"id": "cassandra",
-			"properties": {
+			"properties":
+			{
 				"stackTraceThresholdMillis": 1000.0
 			}
 		},
 		{
 			"id": "elasticsearch",
-			"properties": {
+			"properties":
+			{
 				"stackTraceThresholdMillis": 1000.0
 			}
 		},
 		{
 			"id": "java-http-server",
-			"properties": {
-				"captureRequestHeaders": [],
-				"maskRequestHeaders": [
-					"Authorization"
-				],
+			"properties":
+			{
+				"captureRequestHeaders":
+				[],
 				"captureRequestRemoteAddr": false,
 				"captureRequestRemoteHost": false,
-				"captureResponseHeaders": [],
+				"captureResponseHeaders":
+				[],
+				"maskRequestHeaders":
+				[
+					"Authorization"
+				],
 				"traceErrorOn4xxResponseCode": false
 			}
 		},
 		{
 			"id": "jaxrs",
-			"properties": {
+			"properties":
+			{
 				"useAltTransactionNaming": false
 			}
 		},
 		{
 			"id": "jdbc",
-			"properties": {
-				"captureBindParametersIncludes": [
+			"properties":
+			{
+				"captureBindParametersExcludes":
+				[],
+				"captureBindParametersIncludes":
+				[
 					".*"
 				],
-				"captureBindParametersExcludes": [],
-				"captureResultSetNavigate": true,
-				"captureResultSetGet": false,
-				"captureConnectionPoolLeaks": false,
-				"captureConnectionPoolLeakDetails": false,
-				"captureGetConnection": true,
 				"captureConnectionClose": false,
+				"captureConnectionLifecycleTraceEntries": false,
+				"captureConnectionPoolLeakDetails": false,
+				"captureConnectionPoolLeaks": false,
+				"captureGetConnection": true,
 				"capturePreparedStatementCreation": false,
+				"captureResultSetGet": false,
+				"captureResultSetNavigate": true,
 				"captureStatementClose": false,
 				"captureTransactionLifecycleTraceEntries": false,
-				"captureConnectionLifecycleTraceEntries": false,
 				"stackTraceThresholdMillis": 1000.0
 			}
 		},
 		{
 			"id": "liferay-freemarker-templates-plugin",
-			"properties": {
+			"properties":
+			{
 				"instrumentationLevel": "INFO"
 			}
 		},
 		{
 			"id": "logger",
-			"properties": {
+			"properties":
+			{
 				"traceErrorOnErrorWithThrowable": true,
 				"traceErrorOnErrorWithoutThrowable": false,
 				"traceErrorOnWarningWithThrowable": false,
@@ -240,73 +275,76 @@ Glowroot can be configured to monitor Liferay upgrades. Create a `config.json` f
 		},
 		{
 			"id": "mongodb",
-			"properties": {
+			"properties":
+			{
 				"stackTraceThresholdMillis": 1000.0
 			}
 		},
 		{
 			"id": "play",
-			"properties": {
+			"properties":
+			{
 				"useAltTransactionNaming": false
 			}
 		},
 		{
 			"id": "servlet",
-			"properties": {
-				"sessionUserAttribute": "",
-				"captureSessionAttributes": [],
-				"captureRequestParameters": [
-					"*"
-				],
-				"maskRequestParameters": [
-					"*password*"
-				],
-				"captureRequestHeaders": [],
-				"captureResponseHeaders": [],
-				"traceErrorOn4xxResponseCode": false,
-				"captureRequestRemoteAddr": false,
-				"captureRequestRemoteHostname": false,
-				"captureRequestRemotePort": false,
+			"properties":
+			{
+				"captureRequestHeaders":
+				[],
 				"captureRequestLocalAddr": false,
 				"captureRequestLocalHostname": false,
 				"captureRequestLocalPort": false,
+				"captureRequestParameters":
+				[
+					"*"
+				],
+				"captureRequestRemoteAddr": false,
+				"captureRequestRemoteHostname": false,
+				"captureRequestRemotePort": false,
 				"captureRequestServerHostname": false,
-				"captureRequestServerPort": false
+				"captureRequestServerPort": false,
+				"captureResponseHeaders":
+				[],
+				"captureSessionAttributes":
+				[],
+				"maskRequestParameters":
+				[
+					"*password*"
+				],
+				"sessionUserAttribute": "",
+				"traceErrorOn4xxResponseCode": false
 			}
 		},
 		{
 			"id": "spring",
-			"properties": {
+			"properties":
+			{
 				"useAltTransactionNaming": false
 			}
 		}
 	],
-	"instrumentation": [
-		{
-			"className": "com.liferay.portal.kernel.upgrade.UpgradeStep",
-			"methodName": "upgrade",
-			"methodParameterTypes": [],
-			"order": 0,
-			"captureKind": "transaction",
-			"transactionType": "Upgrade",
-			"transactionNameTemplate": "Upgrade Step {{this.class.name}}",
-			"alreadyInTransactionBehavior": "capture-new-transaction",
-			"traceEntryMessageTemplate": "Upgrade Step {{this.class.name}}",
-			"timerName": "Upgrade Step Timer"
-		},
-		{
-			"className": "com.liferay.portal.kernel.upgrade.UpgradeProcess",
-			"methodName": "upgrade",
-			"methodParameterTypes": [],
-			"order": 0,
-			"captureKind": "transaction",
-			"transactionType": "Upgrade",
-			"transactionNameTemplate": "Upgrade Process {{this.class.name}}",
-			"alreadyInTransactionBehavior": "capture-new-transaction",
-			"traceEntryMessageTemplate": "Upgrade Process {{this.class.name}}",
-			"timerName": "Upgrade Process Timer"
-		}
-	]
+	"transactions":
+	{
+		"captureThreadStats": true,
+		"profilingIntervalMillis": 1000,
+		"slowThresholdMillis": 2000
+	},
+	"uiDefaults":
+	{
+		"defaultGaugeNames":
+		[
+			"java.lang:type=Memory:HeapMemoryUsage.used"
+		],
+		"defaultPercentiles":
+		[
+			50.0,
+			95.0,
+			99.0
+		],
+		"defaultTransactionType": "Web"
+	}
 }
 ```
 

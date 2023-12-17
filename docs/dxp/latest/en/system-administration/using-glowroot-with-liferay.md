@@ -43,8 +43,8 @@ Navigate to `http://localhost:8080/o/glowroot` to access the dashboard.
 By default, Glowroot is configured with an embedded collector that does not preserve data in the event of a JVM crash. Configure a central collector by creating a `glowroot.properties` file in your `$LIFERAY_HOME/glowroot` folder:
 
 ```properties
-collector.address=http://<collector_host>:8181
 agent.id=liferay
+collector.address=http://<collector_host>:8181
 ```
 
 Or [set up the central collector in docker](https://github.com/glowroot/glowroot/wiki/Central-Collector-Installation#option-3-running-in-a-docker-container).

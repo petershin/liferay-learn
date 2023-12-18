@@ -41,4 +41,4 @@ Awesome! Now you know how to create pie charts for your apps.
 
 * [Donut Charts](./donut-chart.md)
 * [Gauge Charts](./gauge-chart.md)
-* [Spline](./spline.md)
+* [Spline Charts](./spline-chart.md)

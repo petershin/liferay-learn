@@ -40,6 +40,6 @@ Awesome! Now you know how to create donut charts for your apps.
 
 ## Related Topics
 
-* [Pie Charts](./scatter-chart.md)
+* [Pie Charts](./pie-chart.md)
 * [Gauge Charts](./gauge-chart.md)
 * [Bar Charts](./bar-chart.md)

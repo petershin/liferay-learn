@@ -52,6 +52,7 @@ Docker Hubは、Linux上のTomcatにバンドルされた [Liferay DXP](https://
     ```{note}
     メモリ、CPU、およびその他のDockerコンテナリソースは構成可能です。 上記の `-m 8g`コマンド引数は、コンテナのメモリ制限を8ギガバイトに設定します。 詳細は [Dockerランタイム・オプション](https://docs.docker.com/config/containers/resource_constraints/) を参照。
     ```
+
 1. **test@liferay.com** というメールアドレスと **test** というパスワードを使って、`<http://localhost:8080>` から Liferay にサインインしてください。
 
 1. プロンプトが表示されたら、パスワードを変更し（**learn** など）、 **Save** をクリックします。
@@ -61,11 +62,13 @@ Docker Hubは、Linux上のTomcatにバンドルされた [Liferay DXP](https://
 ```{warning}
 本番環境では、デフォルトの管理者アカウントを使うべきではありません。 その代わりに、 [、あなたのビジネスに特化した管理者アカウント](../../getting-started/introduction-to-the-admin-account.md#creating-a-new-admin-user) 。 
 ```
+
 Liferayを使用する準備が整いました。
 
 ```{note}
 `docker container ls`は、IDと名前を含む、実行中の各コンテナを一覧表示します。 `docker container ls -a`は、実行されていないコンテナを含む、すべてのコンテナを一覧表示します。
 ```
+
 ## ログの表示
 
 Liferayログメッセージとログファイルは、ライブで表示したり、ホストにコピーしたりできます。
@@ -119,9 +122,9 @@ docker start [container]
 
 コンテナのエントリーポイントが何をするのか知りたい、コンテナのAPIを知りたい場合は、 [コンテナのライフサイクルとAPI](./using-liferay-docker-images/container-lifecycle-and-api.md) を参照してください。 コンテナの使用を開始する場合は、次のいずれかの使用例を実行してください。
 
-* [コンテナの設定](./using-liferay-docker-images/configuring-containers.md) 
-* [コンテナへのアプリやその他のアーティファクトのインストール](./using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md) 
-* [Docker](./using-liferay-docker-images/patching-dxp-in-docker.md) で DXP にパッチを当てる
-* [コンテナへのファイルの提供](./using-liferay-docker-images/providing-files-to-the-container.md) 
-* [新しいDockerイメージへのアップグレード](./using-liferay-docker-images/upgrading-to-a-new-docker-image.md) 
-* [Dockerイメージ・バージョン](./using-liferay-docker-images/docker-image-versions.md) 
+* [コンテナの設定](./using-liferay-docker-images/configuring-containers.md)
+* [コンテナへのアプリやその他のアーティファクトのインストール](./using-liferay-docker-images/installing-apps-and-other-artifacts-to-containers.md)
+* [DockerでDXPにパッチを当てる](./using-liferay-docker-images/patching-dxp-in-docker.md)
+* [コンテナへのファイルの提供](./using-liferay-docker-images/providing-files-to-the-container.md)
+* [新しいDockerイメージへのアップグレード](./using-liferay-docker-images/upgrading-to-a-new-docker-image.md)
+* [Dockerイメージ・バージョン](./using-liferay-docker-images/docker-image-versions.md)

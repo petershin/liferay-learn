@@ -6,4 +6,4 @@ toc:
 
 ## Wiki API
 
-* [Wiki API の基礎](./developer-guide/wiki-api-basics.md) 
+* [Wiki API の基礎](./developer-guide/wiki-api-basics.md)

@@ -90,7 +90,7 @@ visibility:
 :::
 
 :::{grid-item-card} ビジネスアプリケーションの構築
-:link: ./level-1-technical/constructing-a-business-application.m
+:link: ./level-1-technical/constructing-a-business-application.md
 
 このモジュールは、コードを書くことなく、既存のデモにビジネスアプリケーションを素早く追加する方法として、Liferay Objectsの使用を促進します。
 :::

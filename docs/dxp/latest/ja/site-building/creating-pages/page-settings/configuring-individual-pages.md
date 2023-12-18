@@ -1,4 +1,4 @@
-# Configuring Individual Pages
+# ページ単位での設定
 
 個々のページをニーズに合わせて設定することができます。 この方法で行われたすべての変更は、選択されたページにスコープされます。
 
@@ -222,6 +222,6 @@ HTMLタイトル、説明文、カスタムURLの設定に基づいて、検索�
 
 ## 関連トピック
 
-* [サイトへのページの追加](./../adding-pages/adding-a-page-to-a-site.md) 
-* [コンテンツページの使用](../using-content-pages.md) 
-* [ページ・セットの設定](./configuring-page-sets.md) 
+* [サイトへのページの追加](./../adding-pages/adding-a-page-to-a-site.md)
+* [コンテンツページの使用](../using-content-pages.md)
+* [ページ・セットの設定](./configuring-page-sets.md)

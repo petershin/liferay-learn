@@ -53,6 +53,6 @@
 
 ## 関連情報
 
-* [基本的なウェブコンテンツ記事の追加](./adding-a-basic-web-content-article.md) 
-* [ウェブコンテンツの構造を理解する](../web-content-structures/understanding-web-content-structures.md) 
-* [ウェブ・コンテンツ・テンプレートの作成](../web-content-templates/creating-web-content-templates.md) 
+* [基本的なウェブコンテンツ記事の追加](./adding-a-basic-web-content-article.md)
+* [ウェブコンテンツの構造を理解する](../web-content-structures/understanding-web-content-structures.md)
+* [ウェブ・コンテンツ・テンプレートの作成](../web-content-templates/creating-web-content-templates.md)

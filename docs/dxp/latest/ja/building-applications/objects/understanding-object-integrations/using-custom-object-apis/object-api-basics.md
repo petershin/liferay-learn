@@ -154,6 +154,6 @@ unzip liferay-v1s4.zip
 
 ## 関連トピック
 
-* [バッチAPIの使用](./using-batch-apis.md) 
-* [`nestedFields` を使った関連エントリーのクエリー](./using-nestedfields-to-query-related-entries.md) 
-* [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md) 
+* [バッチAPIの使用](./using-batch-apis.md)
+* [`nestedFields` を使った関連エントリーのクエリー](./using-nestedfields-to-query-related-entries.md)
+* [REST APIでの集計用語の使用](./using-aggregation-terms-with-rest-apis.md)

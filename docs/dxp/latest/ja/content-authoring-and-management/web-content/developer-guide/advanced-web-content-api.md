@@ -91,7 +91,7 @@ REST API を使用してプログラムで Web コンテンツ構造を作成す
 ```
 1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **コンテンツ＆データ** &rarr; **ウェブコンテンツ** に移動します。
 
-1. 構造 **タブを選択し、***追加** ボタン(![Add](../../../images/icon-add.png)) をクリックします。
+1. **構造**タブを選択し、**追加** ボタン(![Add](../../../images/icon-add.png)) をクリックします。
 
 1. 以下の内容で、新しいWebコンテンツストラクチャーを作成します。
 
@@ -125,6 +125,7 @@ REST API を使用してプログラムで Web コンテンツ構造を作成す
 ```{note}
 REST API を使用してプログラムで Web コンテンツ テンプレートを作成することはできません。
 ```
+
 構造の `image` フィールドを含むウェブコンテンツテンプレートを作成する：
 
 1. サイトメニュー(![サイトメニュー](../../../images/icon-menu.png))を開き、 **コンテンツ＆データ** &rarr; **ウェブコンテンツ** に移動します。
@@ -535,6 +536,7 @@ Webコンテンツの記事は、特定のテンプレートにリンクされ�
 ```{tip}
 ウェブコンテンツの記事は特定のテンプレートにリンクされていないので、新しい記事を `POST` するときにテンプレートを指定することはできません (HTTP の `POST` メソッドはテンプレートを記述する `renderedContents` セクションを無視します)。
 ```
+
 スクリプト `./StructuredContentRendered_GET_ById.sh` は、選択したウェブコンテンツとテンプレートを使ってウェブコンテンツをレンダリングします。 このスクリプトは `StructuredContent` サービスの `GET` HTTP メソッドを使用する。
 
 | メソッド | サービス                | エンドポイント                                                |
@@ -590,6 +592,6 @@ cURLスクリプトのパラメーター：
 
 ## 関連トピック
 
-* [ウェブコンテンツAPIの基礎](./web-content-api-basics.md) 
-* [RESTサービスの消費](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 
-* [ウェブコンテンツの構造を理解する](../web-content-structures/understanding-web-content-structures.md) 
+* [ウェブコンテンツAPIの基礎](./web-content-api-basics.md)
+* [RESTサービスの消費](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+* [ウェブコンテンツの構造を理解する](../web-content-structures/understanding-web-content-structures.md)s

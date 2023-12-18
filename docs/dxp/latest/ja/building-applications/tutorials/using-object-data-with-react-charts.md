@@ -19,7 +19,7 @@
 
    ![Click Default Portal CORS Configuration](./using-object-data-with-react-charts/images/02.png)
 
-1. ［**URL Pattern**］**に`/o/c/** `の値を追加し、**［保存］*をクリックします。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
+1. ［**URL Pattern**］に`/o/c/*`の値を追加し、［**保存**］をクリックします。 これにより、すべてのオブジェクトAPI に対してCORSが有効になります。
 
    ![Add the /o/c/* URL Pattern for Object APIs.](./using-object-data-with-react-charts/images/03.png)
 
@@ -187,6 +187,6 @@
 
 ## 関連トピック
 
-* [オブジェクトの概要](../objects.md) 
-* [ヘッドレス・フレームワークの統合](../objects/understanding-object-integrations/using-custom-object-apis.md) 
-* [CORS](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors.md) の設定
+* [オブジェクトの概要](../objects.md)
+* [ヘッドレス・フレームワークの統合](../objects/understanding-object-integrations/using-custom-object-apis.md)
+* [CORSの設定](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors.md)

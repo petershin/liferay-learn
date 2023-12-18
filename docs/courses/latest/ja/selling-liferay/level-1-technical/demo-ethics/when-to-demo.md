@@ -1,7 +1,7 @@
 ---
-visibility:
-  - eMployee
-  - pArtner
+visibility: 
+- Employee
+- Partner
 ---
 # デモの倫理 - いつデモを行うか
 

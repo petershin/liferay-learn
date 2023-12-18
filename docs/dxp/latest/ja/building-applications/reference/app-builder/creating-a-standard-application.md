@@ -1,4 +1,4 @@
-# Creating a Standard Application
+# 標準アプリケーションの作成
 
 カスタムオブジェクトに基づいてアプリケーションを作成するには、オブジェクトを作成し、少なくとも1つのフォームビューを作成し、少なくとも1つのテーブルビューを作成して、アプリケーションをデプロイするという4つの手順が必要です。
 
@@ -128,5 +128,5 @@ Time Off Requestには、デプロイする2つのアプリがあります。1�
 
 ## 関連情報
 
-* [アプリ・ビルダー概要](../app-builder.md) 
-* [ワークフローを活用したアプリの作成](./creating-a-workflow-powered-application.md) 
+* [アプリ・ビルダー概要](../app-builder.md)
+* [ワークフローを活用したアプリの作成](./creating-a-workflow-powered-application.md)

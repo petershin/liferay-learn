@@ -34,7 +34,7 @@
 
 ## 関連情報
 
-* [アプリ・ビルダー概要](../app-builder.md) 
-* [標準アプリケーションの作成](./creating-a-standard-application.md) 
-* [ワークフロー](../../../process-automation/workflow/introduction-to-workflow.md) 
-* [役割と権限](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) 
+* [アプリ・ビルダー概要](../app-builder.md)
+* [標準アプリケーションの作成](./creating-a-standard-application.md)
+* [ワークフロー](../../../process-automation/workflow/introduction-to-workflow.md)
+* [役割と権限](../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

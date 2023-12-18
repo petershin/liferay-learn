@@ -84,6 +84,6 @@
 
 ## 関連トピック
 
-* [アセットパブリッシャーウィジェットを使用したアセットの表示](./displaying-assets-using-the-asset-publisher-widget.md) 
-* [アセットパブリッシャーウィジェット用アセットの選択](./selecting-assets-in-the-asset-publisher-widget.md) 
-* [地理的地域資産](../../site-settings/site-content-configurations/configuring-geolocation-for-assets.md) 
+- [アセットパブリッシャーウィジェットを使用したアセットの表示](./displaying-assets-using-the-asset-publisher-widget.md)
+- [アセットパブリッシャーウィジェット用アセットの選択](./selecting-assets-in-the-asset-publisher-widget.md)
+- [地理的地域資産](../../site-settings/site-content-configurations/configuring-geolocation-for-assets.md)

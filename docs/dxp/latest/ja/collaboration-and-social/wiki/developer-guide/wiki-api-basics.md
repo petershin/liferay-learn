@@ -149,7 +149,7 @@ javac -classpath .:* *.java
    java -classpath .:* -DwikiNodeId={wiki-node-id} WikiNode_DELETE_ById
    ```
 
-1. 同じ Wiki ノード ID をパラメータとして `WikiNode_GET_ById` を実行します。 これにより、指定されたノードが存在する場合**はその詳細が返されます。
+1. 同じ Wiki ノード ID をパラメータとして `WikiNode_GET_ById` を実行します。 これにより、指定されたノードが存在する場合はその詳細が返されます。
 
    **cURLの場合**
 
@@ -445,5 +445,5 @@ WikiページにPOSTメソッドとPUTメソッドを使用する場合、 `head
 
 ## 関連トピック
 
-* [Liferayをヘッドレスプラットフォームとして使う](../../../headless-delivery/using-liferay-as-a-headless-platform.md) 
-* [休憩サービスの消費](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 
+* [Liferayをヘッドレスプラットフォームとして使う](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
+* [休憩サービスの消費](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

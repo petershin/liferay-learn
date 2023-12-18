@@ -186,6 +186,6 @@ Liferayは直ちに不要なデータを削除します。
 
 ## 関連トピック
 
-* [出版物の概要](../publications.md) 
-* [出版を可能にする](./enabling-publications.md) 
-* [出版物の作成と管理](./creating-and-managing-publications.md) 
+* [出版物の概要](../publications.md)
+* [出版を可能にする](./enabling-publications.md)
+* [出版物の作成と管理](./creating-and-managing-publications.md)

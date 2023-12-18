@@ -64,6 +64,6 @@
 
 ## 関連トピック
 
-* [出版物の作成と管理](./creating-and-managing-publications.md) 
-* [出版物の共同制作](./collaborating-on-publications.md) 
-* [出版許可](./publications-permissions.md) 
+* [出版物の作成と管理](./creating-and-managing-publications.md)
+* [出版物の共同制作](./collaborating-on-publications.md)
+* [出版許可](./publications-permissions.md)

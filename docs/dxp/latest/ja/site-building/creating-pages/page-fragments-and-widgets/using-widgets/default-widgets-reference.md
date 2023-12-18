@@ -4,18 +4,18 @@ Liferayには、すぐに使用できるさまざまなウィジェットが用�
 
 ウィジェットは、下記のセクションで構成されています。
 
-* [ハイライト](#highlighted) 
-* [アカウント](#accounts) 
-* [コラボレーション](#collaboration) 
-* [コマース](#commerce) 
-* [コミュニティ](#community) 
-* [コンテンツ管理](#content-management) 
-* [ニュース](#news) 
-* [サンプル](#sample) 
-* [検索](#search) 
-* [ソーシャル](#social) 
-* [ツール](#tools) 
-* [Wiki](#wiki) 
+* [ハイライト](#highlighted)
+* [アカウント](#accounts)
+* [コラボレーション](#collaboration)
+* [コマース](#commerce)
+* [コミュニティ](#community)
+* [コンテンツ管理](#content-management)
+* [ニュース](#news)
+* [サンプル](#sample)
+* [検索](#search)
+* [ソーシャル](#social)
+* [ツール](#tools)
+* [Wiki](#wiki)
 
 ## ハイライト
 
@@ -177,5 +177,5 @@ Liferayには、すぐに使用できるさまざまなウィジェットが用�
 
 ## 関連トピック
 
-* [ウィジェットページの使用](../../using-widget-pages.md) 
-* [ウィジェットの使用](../using-widgets.md) 
+* [ウィジェットページの使用](../../using-widget-pages.md)
+* [ウィジェットの使用](../using-widgets.md)

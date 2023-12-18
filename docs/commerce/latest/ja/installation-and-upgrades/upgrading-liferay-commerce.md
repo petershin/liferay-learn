@@ -115,15 +115,15 @@ DXP 7.1/7.2の適切なフィックスパックを実行したら、以下の手
 1. 以下に示すようなメッセージがアプリケーションサーバーコンソールに表示されることを確認します。
 
    ```
-   Liferay Commerce Enterprise x.x.x.lpkgの処理
+   Processing Liferay Commerce Enterprise x.x.x.lpkg
    ```
 
    ```
-   ポータルインスタンスは、file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg のインストールを完了するために再起動する必要があります。
+   The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg
    ```
 
    ```
-   file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg のインストールを完了するには、ポータルインスタンスを再起動する必要があります。
+   The portal instance needs to be restarted to complete the installation of file:/../../liferay-commerce-enterprise-1.1.6/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg
    ```
 
 1. アプリケーションサーバーをシャットダウンします。
@@ -137,29 +137,29 @@ DXP 7.1/7.2の適切なフィックスパックを実行したら、以下の手
 1. アプリケーションサーバーのログから、このようなメッセージが表示され、アップグレード処理が開始されたことを確認します。
 
    ```
-   com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess
-   Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess in 24 ms
-   com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess をアップグレード中です。v1_2_0.CommerceAccountGroupRelUpgradeProcess
-   Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess in 8 ms
-   Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupUpgradeProcess
-   Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess in 8 ms アップグレードプロセス com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess.account.internal.upgrade.v1_2_0.CommerceAccountGroupUpgradeProcess in 12 ms
-   com.liferay.commerce.account.internal.upgrade.v1_3_0.CommerceAccountNameUpgradeProcess のアップグレード
-   com.liferay.portal.kernel.upgrade.UpgradeProcess#alter の開始
-   com.liferay.portal.kernel.upgrade.UpgradeProcess#alter の完了 in 40 ms
-   アップグレードプロセス com.liferay.commerce.account.internal.upgrade.v1_3_0.CommerceAccountNameUpgradeProcess in 60 ms
-   com.liferay.portal.upgrade.internal.index.updater.IndexUpdaterUtil#updateIndexes#Updating database indexes for com.liferay.commerce.account.service
-   Dropping stale indexes
-   Adding indexes
+   Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess
+    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess in 24 ms
+    Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess
+    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupRelUpgradeProcess in 8 ms
+    Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupUpgradeProcess
+    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupUpgradeProcess in 12 ms
+    Upgrading com.liferay.commerce.account.internal.upgrade.v1_3_0.CommerceAccountNameUpgradeProcess
+    Starting com.liferay.portal.kernel.upgrade.UpgradeProcess#alter
+    Completed com.liferay.portal.kernel.upgrade.UpgradeProcess#alter in 40 ms
+    Completed upgrade process com.liferay.commerce.account.internal.upgrade.v1_3_0.CommerceAccountNameUpgradeProcess in 60 ms
+    Starting com.liferay.portal.upgrade.internal.index.updater.IndexUpdaterUtil#updateIndexes#Updating database indexes for com.liferay.commerce.account.service
+    Dropping stale indexes
+    Adding indexes
    ```
 
    ```
-   com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcessの検証
-   com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess#verifyMasterCommerceCatalogの開始
-   Completed com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess#verifyMasterCommerceCatalog in 2 ms
-   Completed verification process com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess in 7 ms
-   1 theme for admin-theme is available for use
-   1 theme for classic-theme is available for use
-   1 theme for minium-theme is available for use
+    Verifying com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess
+    Starting com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess#verifyMasterCommerceCatalog
+    Completed com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess#verifyMasterCommerceCatalog in 2 ms
+    Completed verification process com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess in 7 ms
+    1 theme for admin-theme is available for use
+    1 theme for classic-theme is available for use
+    1 theme for minium-theme is available for use
    ```
 
 Liferay Commerceインスタンスがアップグレードされました。

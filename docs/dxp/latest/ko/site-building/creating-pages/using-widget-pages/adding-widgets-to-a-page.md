@@ -28,4 +28,4 @@ DXP 7.3+에서는 위젯 페이지 상단에 있는 눈 아이콘을 클릭하�
 
 [위젯 페이지의 사용자 개인화 활성화](./enabling-user-personalization-of-widget-pages.md)
 
-[콘텐츠 성능 도구를 사용하여 콘텐츠 지표 분석](../../../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool. MD)
+[콘텐츠 성능 도구를 사용하여 콘텐츠 지표 분석](../../../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md)

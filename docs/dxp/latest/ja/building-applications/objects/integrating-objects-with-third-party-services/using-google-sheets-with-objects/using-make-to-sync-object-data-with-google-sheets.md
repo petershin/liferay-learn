@@ -139,6 +139,6 @@
     ```
 ## 関連トピック
 
-* [オブジェクトの概要](../../../objects.md) 
-* [オブジェクトの作成と管理](../../creating-and-managing-objects.md) 
-* [Understanding Object Integrations](../../understanding-object-integrations.md) 
+* [オブジェクトの概要](../../../objects.md)
+* [オブジェクトの作成と管理](../../creating-and-managing-objects.md)
+* [Understanding Object Integrations](../../understanding-object-integrations.md)

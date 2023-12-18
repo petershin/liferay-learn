@@ -564,5 +564,5 @@ javac -classpath .:* *.java
 
 ## 関連トピック
 
-* [掲示板を始める](../user-guide/getting-started-with-message-boards.md) 
-* [掲示板設定リファレンス](./../user-guide/message-boards-configuration-reference.md) 
+* [掲示板を始める](../user-guide/getting-started-with-message-boards.md)
+* [掲示板設定リファレンス](./../user-guide/message-boards-configuration-reference.md)

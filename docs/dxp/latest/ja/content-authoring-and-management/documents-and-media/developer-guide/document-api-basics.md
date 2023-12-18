@@ -425,7 +425,7 @@ java -classpath .:* -DdocumentId=1234 Document_DELETE_ById
 
 ## 関連トピック
 
-* [ドキュメントとメディア](../../documents-and-media.md) 
-* [RESTサービスの消費](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 
-* [APIヘッダリファレンス](../../../headless-delivery/consuming-apis/api-headers-reference.md) 
-* [GraphQL APIを消費する](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) 
+* [ドキュメントとメディア](../../documents-and-media.md)
+* [RESTサービスの消費](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
+* [APIヘッダリファレンス](../../../headless-delivery/consuming-apis/api-headers-reference.md)
+* [GraphQL APIを消費する](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md)

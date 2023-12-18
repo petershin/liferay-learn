@@ -32,12 +32,12 @@
 
    これにより、これらのシステム・フィールドを持つドラフト・オブジェクト定義が作成される：
 
-   - `createDate`
-   - `creator`
-   - `externalReferenceCode`
-   - `id`
-   - `modifiedDate`
-   - `status`
+      * `createDate`
+      * `creator`
+      * `externalReferenceCode`
+      * `id`
+      * `modifiedDate`
+      * `status`
 
    ![Liferay creates an object draft.](./determining-data-entities/images/03.png)
 
@@ -51,9 +51,9 @@
 
 1. 定義のERC（外部参照コード）を変更する。 一貫性があり、人間が読めるERCは、インスタンス間でオブジェクト定義を移動したり、API経由で参照したりするのに役立ちます。
 
-   - 編集* ( [編集ボタン](../../images/icon-edit.png) )をクリックします。
-   - UUID を `C_DISTRIBUTOR_APPLICATION` に置き換える。
-   - ［**Save**］をクリックします。
+   * 編集* ( [編集ボタン](../../images/icon-edit.png) )をクリックします。
+   * UUID を `C_DISTRIBUTOR_APPLICATION` に置き換える。
+   * ［**Save**］をクリックします。
 
    ![Update the definition's ERC to C_DISTRIBUTOR_APPLICATION.](./determining-data-entities/images/04.png)
 

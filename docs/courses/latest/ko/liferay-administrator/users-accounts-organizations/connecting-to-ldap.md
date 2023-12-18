@@ -73,11 +73,11 @@ Clarity Vision Solutions는 방금 인수한 회사에서 사용자 데이터를
 
 1. 새 페이지에서 LDAP 연결 정보를 입력하세요.
 
-   - 서버 이름: `Fabulous Frames`
-   - 기본 공급자 URL: `ldap://[IP 주소]:389`
-   - 기본 DN: `dc=fabulousframes,dc=com`
-   - 주체: `cn=admin,dc=fabulousframes,dc=com`
-   - 자격 증명: `admin`
+   * 서버 이름: `Fabulous Frames`
+   * 기본 공급자 URL: `ldap://[IP 주소]:389`
+   * 기본 DN: `dc=fabulousframes,dc=com`
+   * 주체: `cn=admin,dc=fabulousframes,dc=com`
+   * 자격 증명: `admin`
 
    ![Enter the connection information.](./connecting-to-ldap/images/01.png)
 
@@ -97,4 +97,4 @@ Clarity Vision Solutions의 Liferay 인스턴스는 이제 Fabulous Frames의 LD
 
 ## 관련 개념
 
-* [LDAP 디렉터리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)
+- [LDAP 디렉터리에 연결](https://learn.liferay.com/w/dxp/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory)

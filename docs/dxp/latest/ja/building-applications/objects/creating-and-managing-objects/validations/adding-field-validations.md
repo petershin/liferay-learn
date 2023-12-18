@@ -154,5 +154,5 @@ LiferayはSaveをクリックしたときに、式が有効な構文かどうか
 ## 関連トピック
 
 * [オブジェクトの作成](../creating-objects.md)
-* [オブジェクトへのフィールドの追加](../fields/adding-fields-to-objects.md) 
-* [式ビルダー検証リファレンス](./expression-builder-validations-reference.md) 
+* [オブジェクトへのフィールドの追加](../fields/adding-fields-to-objects.md)
+* [式ビルダー検証リファレンス](./expression-builder-validations-reference.md)

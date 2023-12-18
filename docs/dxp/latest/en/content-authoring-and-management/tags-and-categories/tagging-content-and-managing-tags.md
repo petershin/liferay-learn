@@ -3,6 +3,9 @@ uuid: 48295c24-00df-4baf-a05e-25f531a5cb70
 ---
 # Tagging Content and Managing Tags
 
+!!! important
+    This feature is currently behind a release feature flag. Read [Release Feature Flags](./../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
+
 Tags are keywords you can use to organize your assets and describe specific information about its content. Tags tell website visitors what the content is about so they can find relevant information through search or navigation. For more information about tags in Liferay DXP and the different usage scenarios, see [Organizing Content with Categories and Tags](./organizing-content-with-categories-and-tags.md).
 
 ## Tagging Content
@@ -13,7 +16,7 @@ Use the Categorization section in the sidebar panel to tag assets as you create 
 1. In the sidebar panel, select the *Properties* tab.
 1. Under the Categorization section and Other Metadata subsection, click *Select* next to Tags.
 
-    ![Access the tagging options under the categorization section of the sidebar panel.](./tagging-content-and-managing-tags/images/02.png)
+    ![Access the tagging options under the categorization section of the sidebar panel.](./tagging-content-and-managing-tags/images/01.png)
 
 1. Select the tags you want to use from the list of existing tags and click *Done*.
 1. If you want to create new tags for the content, type the new tag in the *Tags* field and press Enter.
@@ -22,7 +25,7 @@ Use the Categorization section in the sidebar panel to tag assets as you create 
 
 You can manage tags under the Categorization panel in the Site Menu. From here, you can create new tags or customize the existing ones.
 
-![Managing tags is in the Site Menu.](./tagging-content-and-managing-tags/images/03.png)
+![Managing tags is in the Site Menu.](./tagging-content-and-managing-tags/images/02.png)
 
 !!! note
 Only site administrators can manage tags in the Tags panel.
@@ -41,7 +44,7 @@ Only site administrators can manage tags in the Tags panel.
     1. Select the tag where you want to merge in the *Into This Tag* dropdown menu.
     1. Click *Save*.
 
-       ![You can merge two or more tags into a single one](./tagging-content-and-managing-tags/images/01.png)
+       ![You can merge two or more tags into a single one](./tagging-content-and-managing-tags/images/03.png)
 
 ## Related Information
 

@@ -66,7 +66,7 @@ If a content type has multiple display page templates created for it, you can [m
 :link: ./using-display-page-templates/displaying-categories-using-display-pages.md
 :::
 
-:::{grid-item-card} Displaying Categories Using Display Pages
+:::{grid-item-card} Using Multiple Display Page Templates to Create Multi-Step Applications
 :link: ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
 :::
 

@@ -64,6 +64,6 @@ Headless Data Type: BigDecimal
 
 * [Fields](../fields.md)
 * [Aggregation Fields](./aggregation-fields.md)
-* [Adding Custom Validations](../validations/adding-custom-validations.md)
+* [Adding Field Validations](../validations/adding-field-validations.md)
 
 -->

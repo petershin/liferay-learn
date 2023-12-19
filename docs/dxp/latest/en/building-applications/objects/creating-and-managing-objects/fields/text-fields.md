@@ -41,5 +41,5 @@ Headless Data Type: Clob
 ## Related Topics
 
 * [Fields](../fields.md)
-* [Adding Custom Validations](../validations/adding-custom-validations.md)
+* [Adding Field Validations](../validations/adding-field-validations.md)
 -->

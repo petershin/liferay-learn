@@ -23,7 +23,7 @@ using-display-page-templates/configuring-seo-and-open-graph.md
 
 {bdg-secondary}`Liferay DXP/Portal 7.3+`
 
-Display page templates define structures for displaying content at a dedicated URL. When you create or upload content items, Liferay generates a unique friendly URL for accessing it. However, you can only use this URL to view the content if you first define a template for displaying it.
+_Display page templates_ define structures for displaying content at a dedicated URL. When you create or upload content items, Liferay generates a unique friendly URL for accessing it. However, you can only use this URL to view the content if you first define a template for displaying it.
 
 ![Create display page templates for displaying content at a dedicated URL.](./using-display-page-templates/images/01.png)
 
@@ -39,11 +39,10 @@ Display page templates currently support the following content types:
 * [Documents](../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
 * [Web Content Articles](../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
 
-```{tip}
-Use display page templates for designing layouts that you want to reuse for multiple content items.
-```
+!!! tip
+    Use display page templates for designing layouts that you want to reuse for multiple content items.
 
-These templates are ideal for displaying a list of elements in a consistent way, like business case studies, product or service options, job listings, web articles, and more. For example, on an insurance business website you may want to list the available options. Individual web content articles describe each option. You want a landing page where site visitors can see the options and click the one they want to see the corresponding insurance details from the articles.
+These templates are ideal for displaying a list of elements in a consistent way, like business case studies, product or service options, job listings, web articles, and more. For example, on an insurance business website, you may want to list the available options. Individual web content articles describe each option. You want a landing page where site visitors can see the options and choose the desired one to see the corresponding insurance details from the articles.
 
 ![You can apply the same layout to different content of the same type using a single display page template.](./using-display-page-templates/images/02.png)
 

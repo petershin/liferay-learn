@@ -4,6 +4,7 @@ toc:
   - ./using-glowroot-with-liferay/troubleshooting-liferay-performance-issues-with-glowroot.md
   - ./using-glowroot-with-liferay/troubleshooting-templates-with-glowroot-freemarker-plugin.md
   - ./using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
+  - ./using-glowroot-with-liferay/developing-glowroot-plugins.md
 uuid: 699aecdd-490f-4386-9a95-1168eff8f1c0
 ---
 
@@ -16,6 +17,7 @@ using-glowroot-with-liferay/troubleshooting-jvm-issues-with-glowroot.md
 using-glowroot-with-liferay/troubleshooting-liferay-performance-issues-with-glowroot.md
 using-glowroot-with-liferay/troubleshooting-templates-with-glowroot-freemarker-plugin.md
 using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md
+using-glowroot-with-liferay/developing-glowroot-plugins.md
 ```
 
 {bdg-secondary}`Liferay DXP 2023.Q4+/Portal 7.4 GA100+`
@@ -48,44 +50,6 @@ collector.address=http://<collector_host>:8181
 ```
 
 Or [set up the central collector in docker](https://github.com/glowroot/glowroot/wiki/Central-Collector-Installation#option-3-running-in-a-docker-container).
-
-## Deploying Custom Plugins
-
-[Different custom plugins](https://github.com/glowroot/glowroot/tree/main/agent/plugins) are available for Glowroot. To deploy a custom plugin, drop it into your `$LIFERAY_HOME/glowroot/plugins` folder. Make sure to use the package `com.liferay.glowroot.plugin.<plugin name>` when creating a new plugin.
-
-Note, if your plugin needs any custom packages, declare them in your `portal-ext.properties` file under the `module.framework.properties.org.osgi.framework.bootdelegation` property. For example,
-
-```properties
-module.framework.properties.org.osgi.framework.bootdelegation=\
-  __redirected,\
-  com.liferay.expando.kernel.model,\
-  com.liferay.glowroot.plugin.*,\
-  com.liferay.portal.servlet.delegate,\
-  com.liferay.portal.servlet.delegate*,\
-  com.sun.ccpp,\
-  com.sun.ccpp.*,\
-  com.sun.crypto.*,\
-  com.sun.image.*,\
-  com.sun.imageio.plugins.*,\
-  com.sun.jmx.*,\
-  com.sun.jndi.*,\
-  com.sun.mail.*,\
-  com.sun.management.*,\
-  com.sun.media.*,\
-  com.sun.msv.*,\
-  com.sun.org.*,\
-  com.sun.tools.*,\
-  com.sun.xml.*,\
-  com.yourkit.*,\
-  jdk.*,\
-  org.glowroot.agent,\
-  org.glowroot.agent.*,\
-  sun.*,\
-  weblogic.jndi,\
-  weblogic.jndi.*
-```
-
-Once deployed, in Glowroot, navigate to _Configuration_ &rarr; _Plugins_ to see your plugins.
 
 ## Monitoring Upgrades with Glowroot
 
@@ -360,3 +324,4 @@ Once the upgrade is complete, in Glowroot, a new transaction type called upgrade
 - [Troubleshooting Liferay Performance Issues with Glowroot](./using-glowroot-with-liferay/troubleshooting-liferay-performance-issues-with-glowroot.md)
 - [Troubleshooting Templates with Glowroot Freemarker Plugin](./using-glowroot-with-liferay/troubleshooting-templates-with-glowroot-freemarker-plugin.md)
 - [Liferay Performance Use Cases with Glowroot](./using-glowroot-with-liferay/liferay-performance-use-cases-with-glowroot.md)
+- [Developing Glowroot Plugins](./using-glowroot-with-liferay/developing-glowroot-plugins.md)

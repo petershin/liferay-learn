@@ -14,9 +14,9 @@ The [Glowroot FreeMarker plugin](https://github.com/liferay/liferay-portal/tree/
 
 ### Add Module Files
 
-The plugin module's `bnd.bnd` file declares the bundle name, bundle symbolic name, and bundle version. 
+The plugin module's [`bnd.bnd`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/glowroot/glowroot-plugin-freemarker/bnd.bnd) file declares the bundle name, bundle symbolic name, and bundle version. 
 
-The plugin module's `build.gradle`file declares any dependencies. The following is also added to the file:
+The plugin module's [`build.gradle`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/glowroot/glowroot-plugin-freemarker/build.gradle) file declares any dependencies. The following is also added to the file:
 
 ```gradle
 deployGlowroot {
@@ -30,11 +30,11 @@ liferay {
 
 ### Add a`Glowroot Plugin JSON File
 
-The `glowroot.plugin.json` file, located in the module's `src/main/resources/META-INF/` folder define the plugin properties, including any configuration options. For this Liferay FreeMarker plugin, there is an option to set instrumentation level (i.e. INFO, DEBUG, TRACE).
+The [`glowroot.plugin.json`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/glowroot/glowroot-plugin-freemarker/src/main/resources/META-INF/glowroot.plugin.json) file, located in the module's `src/main/resources/META-INF/` folder define the plugin properties, including any configuration options. For this Liferay FreeMarker plugin, there is an option to set instrumentation level (i.e. INFO, DEBUG, TRACE).
 
 ### Add Your Java Class Files
 
-The `TemplatesAspect.java` class contains the following:
+The [`TemplatesAspect.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/glowroot/glowroot-plugin-freemarker/src/main/java/com/liferay/glowroot/plugin/freemarker/TemplatesAspect.java) class contains the following:
 
 * A `@Pointcut` declaration that names the Liferay class and method to be tracked.
 * An `OnBefore` annotation and method that runs just before the Liferay method is executed.
@@ -43,7 +43,7 @@ The `TemplatesAspect.java` class contains the following:
 
 Note that this `TemplateAspect.java` contains three `@Pointcut` declarations. One for each Liferay method to be tracked.
 
-This plugin module contains an additional `TemplatesPluginProperties.java` file that listens for instrumentation level configuration changes in the UI.
+This plugin module contains an additional [`TemplatesPluginProperties.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/glowroot/glowroot-plugin-freemarker/src/main/java/com/liferay/glowroot/plugin/freemarker/TemplatesPluginProperties.java) file that listens for instrumentation level configuration changes in the UI.
 
 ## Deploying the Custom Plugin
 

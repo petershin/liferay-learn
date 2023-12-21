@@ -23,6 +23,8 @@ Logs in Liferay Cloud conform to a specific structure that gives extra, contextu
 Jun 29 10:07:46.585 build-214 [webserver-699bf65bfb-4w8pl] [WARNING] 179/170746 (13) : api/backend2 changed its IP from 10.0.17.186 to 10.0.26.120 by DNS cache.
 ```
 
+Logs always appear in this format when you download them or [view them from a terminal](#accessing-logs-via-the-terminal). However, if you access logs [via the console](#accessing-logs-via-the-liferay-cloud-console), the structure varies because the columns of information with each log message are customizable.
+
 Many logs in Liferay Cloud have a label (in this example, ``[WARNING]``) that indicates that this message came from Liferay Cloud infrastructure, and not directly from the service's output. Logs can also have labels that come from Liferay Cloud infrastructure but are related to the service, such as ``[LIFERAY]``. Logs that come directly from the service's output have no label.
 
 Additionally, these components are always present in any log message in Liferay Cloud:
@@ -33,9 +35,11 @@ Additionally, these components are always present in any log message in Liferay 
 
 * The **instance ID**: in this example, `[webserver-699bf65bfb-4w8pl]`. This is used to identify which instance of a service a message is related to.
 
-The instance ID associated with a log message corresponds to one of the instances of your service. You can see (and filter by) all of the active instances in your service from the Logs page by clicking on the instances dropdown menu above the logs:
+The instance ID associated with a log message corresponds to one of the instances of your service.
 
-![Click on the instances dropdown menu to see all of the instances](./reading-liferay-cloud-service-logs/images/01.png)
+From the Logs page, you can see (and filter by) all of the active instances in a service from the Logs page by filtering to the service (such as `liferay`) and then clicking the *Instance* drop-down menu:
+
+![Click on the instances dropdown menu to see all of the instances.](./reading-liferay-cloud-service-logs/images/01.png)
 
 The format of the instance ID depends on what deployment type (deployment or stateful set) the service is configured as. See [Understanding Deployment Types](../build-and-deploy/understanding-deployment-types.md) for more information.
 
@@ -85,9 +89,9 @@ To download logs, click the *Download Logs* button.
 
 ![View environment logs form the Logs page.](./reading-liferay-cloud-service-logs/images/02.png)
 
-Individual service logs are also available under the Logs tab in each service's dedicated page.
+You can also use the drop-down menu at the top-right corner to select which information to display as a column for each log message.
 
-![Access and download individual service logs under the Logs tab in each service's dedicated page.](./reading-liferay-cloud-service-logs/images/03.png)
+![Select which information columns to display from the drop-down menu.](./reading-liferay-cloud-service-logs/images/03.png)
 
 ### Searching and Filtering Logs
 
@@ -102,8 +106,6 @@ To filter by a date range, use the date picker at the top-right corner. You cann
 You can search the logs for a specific term or regular expression. Select *Term* or *Regex* from the drop-down menu, and then enter your search term or regular expression. Search suggestions appear based on previous searches. Regular expressions use the [RE2 syntax](https://github.com/google/re2/wiki/Syntax).
 
 ![Use the search to find logs with specific terms or formats.](./reading-liferay-cloud-service-logs/images/06.png)
-
-On a service's page, you can only filter logs by type or instance.
 
 ## Accessing Logs via the Terminal
 

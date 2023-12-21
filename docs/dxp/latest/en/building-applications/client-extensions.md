@@ -10,9 +10,11 @@ uuid: 33141e0f-9fc0-4bcb-ae34-536c157e0198
 ---
 # Client Extensions
 
-{bdg-secondary}`Liferay DXP 7.4 (self-hosted)`
+{bdg-secondary}`Liferay Self-Hosted`
 {bdg-secondary}`Liferay Experience Cloud (SaaS)`
 {bdg-unsupported}`Liferay Cloud: Self-Managed`
+
+{bdg-secondary}`Liferay 7.4`
 
 Client extensions extend Liferay without using OSGi modules. You can deploy client extensions to any Liferay environment, whether you host it yourself or on Liferay Cloud. They are also the primary way to customize Liferay with Liferay Cloud, together with built-in configurations like [Liferay objects](./objects.md).
 

@@ -3,7 +3,11 @@ uuid: 05f145b0-0a81-445c-88af-4aa6d52c0469
 ---
 # Packaging Client Extensions
 
-{bdg-secondary}`Liferay Experience Cloud and Liferay DXP 7.4+ (self-hosted)`   {bdg-unsupported}`Liferay Cloud: Self-Managed`
+{bdg-secondary}`Liferay Self-Hosted`
+{bdg-secondary}`Liferay Experience Cloud (SaaS)`
+{bdg-unsupported}`Liferay Cloud: Self-Managed`
+
+{bdg-secondary}`Liferay 7.4`
 
 Client extension projects are built as deployable archives called *Liferay Universal File Format Archives* (LUFFAs) with a `.zip` extension. Each LUFFA has a particular structure and defines specific component files, which are generated automatically if not provided by your project. Liferay workspace packages client extension projects when you build them. Understanding how packaging works is important for [assembling client extensions](./working-with-client-extensions.md#assembling-client-extensions) or creating LUFFAs with a different process.
 

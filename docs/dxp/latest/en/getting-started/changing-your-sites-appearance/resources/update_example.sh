@@ -4,6 +4,7 @@ readonly CURRENT_DIR_NAME=$(dirname "$0")
 
 function generate_theme {
 	rm -fr liferay-5b2v-theme
+	rm -fr liferay-5b2v.zip
 
 	yo liferay-theme:classic --config config.json
 
@@ -17,7 +18,9 @@ function generate_theme {
 
 	cd ..
 
-	mv liferay-5b2v-theme/dist/liferay-5b2v-theme.war .
+	mkdir liferay-5b2v.zip
+
+	mv liferay-5b2v-theme/dist/liferay-5b2v-theme.war ./liferay-5b2v.zip
 
 	rm -fr liferay-5b2v-theme
 }

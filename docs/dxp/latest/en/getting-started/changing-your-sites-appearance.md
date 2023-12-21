@@ -7,13 +7,8 @@ Liferay has many ways to customize your site's appearance. Your site's favicon a
 
 ## Changing Your Site's Favicon
 
-Start a new Liferay instance by running
-
-```bash
-docker run -it -m 8g -p 8080:8080 liferay/portal:latest
+``` {include} ../_snippets/run-liferay-portal.md
 ```
-
-Sign in to Liferay at http://localhost:8080. Use the email address `test@liferay.com` and the password `test`. When prompted, change the password to `learn`.
 
 Then, follow these steps:
 
@@ -55,19 +50,16 @@ By default, Liferay instances use the Classic theme, but you can deploy and use 
     docker cp liferay-5b2v-theme.war [docker-container-id]:[path-to-deploy-folder]
     ```
 
-```{note}
-To replace `[docker-container-id]`, use `docker ps` to find the ID for liferay/portal:latest. The `[path-to-deploy-folder]` is `opt/liferay/deploy`.
-```
+!!! note
+    To replace `[docker-container-id]`, use `docker ps` to find the liferay/portal container's ID. The `[path-to-deploy-folder]` is `opt/liferay/deploy`.
 
 This loads the sample theme into your DXP instance. You can check your console for the following message to confirm the theme successfully deployed:
 
 ```
-2020-03-11 17:06:35.601 INFO  [fileinstall-/opt/liferay/osgi/war][BundleStartStopLogger:39] STARTED liferay-5b2v-theme_1.0.0 [1112]
+2023-12-21 16:01:20.836 INFO  [fileinstall-directory-watcher][BundleStartStopLogger:68] STARTED liferay-5b2v-theme_1.0.0 [1617]
 ```
 
 ### Change Your Site's Theme
-
-1. Open your browser to `https://localhost:8080` and [log in as an administrator](./introduction-to-the-admin-account.md).
 
 1. Open the *Site Menu* (![Site Menu](../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages*.
 

@@ -9,9 +9,7 @@ By default, automatic deployment is controlled by the `LCP_CI_DEPLOY_BRANCH` and
 
 If desired, you can configure automatic deployment by editing the `LCP_CI_DEPLOY_BRANCH` and `LCP_CI_DEPLOY_TARGET` variables via the Liferay Cloud Console:
 
-1. Navigate to the `infra` environment for your Liferay Cloud Project.
-
-1. Go to the *CI* service's page, and click on the *Environment Variables* tab.
+1. Navigate to the `infra` environment for your Liferay Cloud Project to see its environment variables.
 
    ![Go to the CI service's page, and click on the Environment Variables tab](./automatically-deploying-ci-service-builds/images/01.png)
 

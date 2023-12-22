@@ -20,16 +20,6 @@ Users can view extended service metrics from the *Monitoring* page:
 
 ![You can use Liferay Cloud to monitor your services.](./application-metrics/images/02.png)
 
-Users can also view extended service metrics from the *Services* page:
-
-1. Click *Services* in the environment menu.
-
-1. Click on the *Service* you want to monitor.
-
-1. Click on the *Metrics* tab.
-
-![View metrics from the service's page.](./application-metrics/images/03.png)
-
 ## Determining Resources Allocated to Services
 
 A service's `LCP.json` file configuration determines the total memory and CPUs allocated to that service, and the application metrics show the usage of those resources over time.
@@ -45,7 +35,7 @@ Here is an example of CPU and Memory allocation for the `liferay` service in its
 
 Users can view allocated resources from the Liferay Cloud console.
 
-![View resources allocated to your environment services from the Liferay Cloud console.](./application-metrics/images/04.png)
+![View resources allocated to your environment services from the Liferay Cloud console.](./application-metrics/images/03.png)
 
 ## Advanced Application Metrics (Production Only)
 
@@ -96,7 +86,7 @@ Now you can access Dynatrace's advanced performance monitoring from the Liferay 
 
 1. Click the *Go to Dynatrace Dashboard* button to access your Dynatrace dashboard.
 
-	![Access the Dynatrace dashboard from the Liferay Cloud Console](./application-metrics/images/05.png)
+	![Access the Dynatrace dashboard from the Liferay Cloud Console](./application-metrics/images/04.png)
 
 Log in with your Dynatrace credentials to check log trails and create custom dashboards.
 

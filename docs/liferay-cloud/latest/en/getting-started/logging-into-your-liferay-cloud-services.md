@@ -43,7 +43,7 @@ Once logged in, the user is redirected to the Liferay DXP 7.x instance (in this 
 
 ### Finding Default Service URLs
 
-You can find the default `webserver` endpoint's URL in its service page. Click on the `webserver` logo to expand its URL:
+You can find the default `webserver` endpoint's URL in its service page. Hover over the `webserver` logo to expand its URL:
 
 ![The service's logo expands into a clickable URL.](./logging-into-your-liferay-cloud-services/images/06.png)
 

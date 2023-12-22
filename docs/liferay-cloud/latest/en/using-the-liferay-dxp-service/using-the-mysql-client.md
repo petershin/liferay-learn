@@ -34,13 +34,11 @@ Upgrading your database image to a version that supports MySQL client will initi
 
 1. Click on the **liferay** service.
 
-1. Click on the _Shell_ tab:
-
-    ![Click on the Shell tab to access the shell, where the MySQL client is available.](./using-the-mysql-client/images/03.png)
+1. Click the _Shell_ tab.
 
 1. Type `mysql` into the shell on this screen. This logs you into the MySQL client, where you can perform any read-only queries. For example, you can see all the tables by executing `show tables;`.
 
-    ![Run the mysql command and show tables command](./using-the-mysql-client/images/04.png)
+    ![Run the mysql command and show tables command](./using-the-mysql-client/images/02.png)
 
 Please refer to the official [MySQL Client documentation](https://dev.mysql.com/doc/refman/8.0/en/mysql-commands.html) to see all the commands available.
 
@@ -70,7 +68,7 @@ If you set your own password for the default user with `LCP_DATABASE_READONLY_US
 
 You can add this variable from within the _Environment Variables_ tab:
 
-![Click the Environment Variables tab to configure the password if necessary.](./using-the-mysql-client/images/02.png)
+![Click the Environment Variables tab to configure the password if necessary.](./using-the-mysql-client/images/03.png)
 
 ## Related Information
 

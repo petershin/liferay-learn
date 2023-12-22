@@ -12,7 +12,7 @@ Use the following CI service variables to determine the number of completed buil
 * `LCP_CI_PRESERVE_STASHES_BUILD_COUNT`
 * `LCP_CI_ARTIFACT_NUM_TO_KEEP`
 
-In the following example, stashes are preserved for the last 3 builds, while artifacts are preserved for the last 6.
+In this example, stashes are preserved for the last 3 builds, while artifacts are preserved for the last 6.
 
 ![Use these variables to determine which artifacts are preserved.](./restarting-jenkins-stages/images/01.png)
 

@@ -81,13 +81,11 @@ Follow these steps to configure the backup service via the Liferay Cloud Console
 
 1. Click on *Services* in the environment menu.
 
-1. Click on the *Backup* service.
-
-1. Click on the *Environment Variables* tab.
+1. Click on the *Backup* service to see the backup service's environment variables.
 
    ![Navigate to the backup service's variables tab in your environment.](./backup-service-overview/images/06.png)
 
-   You can also access the backup service's page by clicking on *Backup* in the environment's *Overview* page.
+   You can also access the backup service's page by clicking *Backup* in the environment's *Overview* page.
 
 1. Add variables from the [Environment Variables Reference](#environment-variables-reference) list to configure the backup service.
 

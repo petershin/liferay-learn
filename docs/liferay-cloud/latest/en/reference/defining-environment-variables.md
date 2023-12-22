@@ -25,9 +25,7 @@ Follow these steps to add environment variables to a service via the Liferay Clo
 
 1. Click on *Services* in the environment menu.
 
-1. Click on the service you want to configure.
-
-1. Click on the *Environment Variables* tab.
+1. Click on the service you want to configure to see its environment variables.
 
    ![Figure 1: Navigate to the service's Environment Variables tab.](./defining-environment-variables/images/01.png)
 

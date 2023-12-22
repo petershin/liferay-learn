@@ -1,8 +1,7 @@
-[#assign publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() +
-themeDisplay.getSiteGroup().getFriendlyURL()/]
+[#assign publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() + themeDisplay.getSiteGroup().getFriendlyURL()/]
 
 [#if !themeDisplay.isSignedIn()]
-<a class="align-items-center d-flex flex-row position-relative user-sign-in" href="/c/portal/login">
+	<a class="align-items-center d-flex flex-row position-relative user-sign-in" href="/c/portal/login">
 		<span class="text-7">
 			[@clay["icon"] className="text-7" symbol="user"/]
 		</span>
@@ -10,7 +9,7 @@ themeDisplay.getSiteGroup().getFriendlyURL()/]
 	</a>
 [#else]
 	<div class="dropdown">
-	<button aria-expanded="false" aria-haspopup="true" class="btn-unstyled dropdown-toggle" data-toggle="liferay-dropdown">
+		<button aria-expanded="false" aria-haspopup="true" class="btn-unstyled dropdown-toggle" data-toggle="liferay-dropdown">
 			<span class="text-7 text-primary">[@clay["icon"] symbol="user"/]</span>
 		</button>
 
@@ -25,23 +24,22 @@ themeDisplay.getSiteGroup().getFriendlyURL()/]
 				</a>
 			</li>
 			<li>
-			<a class="dropdown-item user-nav-dropdown-menu-item" href="/my-lists">
+				<a class="dropdown-item user-nav-dropdown-menu-item" href="/my-lists">
 					<span class="c-mr-3"> [@clay["icon"] symbol="list"/] </span>
 					<span> [@liferay_ui["message"] key="my-lists" /] </span>
 				</a>
 			</li>
 			<li>
-				[#assign notification_link = themeDisplay.getPortalURL() + '/group'
-				+ themeDisplay.layout.getGroup().friendlyURL +
-				'/manage?p_p_id=com_liferay_notifications_web_portlet_NotificationsPortlet&p_p_lifecycle=0'/]
-			<a class="dropdown-item user-nav-dropdown-menu-item" href="${notification_link}">
+				[#assign notification_link = themeDisplay.getPortalURL() + '/group' + themeDisplay.layout.getGroup().friendlyURL + '/manage?p_p_id=com_liferay_notifications_web_portlet_NotificationsPortlet&p_p_lifecycle=0'/]
+
+				<a class="dropdown-item user-nav-dropdown-menu-item" href="${notification_link}">
 					<span class="c-mr-3"> [@clay["icon"] symbol="bell-on"/] </span>
 					<span> [@liferay_ui["message"] key="notifications" /] </span>
 				</a>
 			</li>
 			<li class="dropdown-divider"></li>
 			<li>
-			<a class="dropdown-item user-nav-dropdown-menu-item" href="${htmlUtil.escape(themeDisplay.getURLSignOut())}?referer=${publicFriendlyURL}">
+				<a class="dropdown-item user-nav-dropdown-menu-item" href="${htmlUtil.escape(themeDisplay.getURLSignOut())}?referer=${publicFriendlyURL}">
 					[@liferay_ui["message"] key="sign-out" /]
 				</a>
 			</li>

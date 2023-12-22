@@ -1,9 +1,9 @@
 {
 	"configurationPath": "configuration.json",
-	"jsPath": "index.js",
-	"htmlPath": "index.html",
 	"cssPath": "index.css",
+	"htmlPath": "index.html",
 	"icon": "paragraph",
+	"jsPath": "index.js",
 	"name": "Testimonials Slider",
 	"thumbnailPath": "thumbnail.png",
 	"type": "component"

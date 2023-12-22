@@ -1,20 +1,15 @@
 [#assign publicFriendlyURL = themeDisplay.getPathFriendlyURLPublic() +
 themeDisplay.getSiteGroup().getFriendlyURL() /]
 
-<div class="d-flex vh-100 sign-in">
-	<div
-		class="align-items-start c-pb-4 c-pl-7 c-pr-7 c-pt-6 c-pb-lg-3 c-pl-lg-5 c-pr-lg-5 c-pt-lg-5 c-p-sm-3 flex-column form-box justify-content-between w-33"
-	>
+<div class="d-flex sign-in vh-100">
+<div class="align-items-start c-p-sm-3 c-pb-4 c-pb-lg-3 c-pl-7 c-pl-lg-5 c-pr-7 c-pr-lg-5 c-pt-6 c-pt-lg-5 flex-column form-box justify-content-between w-33">
 		<a href="${publicFriendlyURL}">
 			<div class="w-50">
-				<img
-					data-lfr-editable-id="img01"
-					data-lfr-editable-type="image"
-					src="[resources:clarity-logo-small.png]"
-				/>
+			<img data-lfr-editable-id="img01" data-lfr-editable-type="image" src="[resources:clarity-logo-small.png]" />
 			</div>
 		</a>
-		<div class="bg-white sign-in-form c-mb-sm-4">
+
+		<div class="bg-white c-mb-sm-4 sign-in-form">
 			<h1 class="c-mb-5 c-mt-5 font-weight-normal sign-in-text">
 				See and be seen. Sign in.
 			</h1>
@@ -26,8 +21,10 @@ themeDisplay.getSiteGroup().getFriendlyURL() /]
 			</div>
 		</div>
 	</div>
+
 	<div class="right-panel"></div>
 </div>
+
 <script>
 	const redirect = document.querySelector(
 		"#_com_liferay_login_web_portlet_LoginPortlet_redirect",

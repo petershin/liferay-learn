@@ -45,13 +45,13 @@
 			"name": "Deployment Approach",
 			"taxonomyCategories": [
 				{
-					"name": "DXP - Self Hosted"
+					"name": "Liferay Self Hosted"
 				},
 				{
-					"name": "Liferay Experience Cloud"
+					"name": "Liferay SaaS"
 				},
 				{
-					"name": "Liferay Experience Cloud - Self Managed"
+					"name": "Liferay PaaS"
 				}
 			]
 		},

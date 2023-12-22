@@ -36,12 +36,23 @@ The [`glowroot.plugin.json`](https://github.com/liferay/liferay-portal/blob/mast
 
 The [`TemplatesAspect.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/glowroot/glowroot-plugin-freemarker/src/main/java/com/liferay/glowroot/plugin/freemarker/TemplatesAspect.java) class contains the following:
 
-* A `@Pointcut` declaration that names the Liferay class and method to be tracked.
-* An `OnBefore` annotation and method that runs just before the Liferay method is executed.
-* An `OnReturn` annotation and method that runs just after the Liferay method is executed.
-* An `OnThrow` annotation and method that runs if there are any thrown exceptions after the Liferay method is executed.
+* `@Shim` annotations to create interfaces for the target Liferay classes and methods. Note that this is used instead of adding any Liferay classes as dependencies.
+* `@Pointcut` declarations that names the Liferay classes and methods to be tracked.
+* `OnBefore` annotations and methods that run just before the Liferay method is executed. Note that the shim interfaces are utilized.
+* `OnReturn` annotations and methods that run just after the Liferay method is executed.
+* `OnThrow` annotations and methods that run if there are any exceptions after the Liferay method is executed.
 
-Note that this `TemplateAspect.java` contains three `@Pointcut` declarations. One for each Liferay method to be tracked.
+See the [org.glowroot.agent.plugin.api.weaving](https://glowroot.org/javadoc/agent-plugin-api/0.14.0/org/glowroot/agent/plugin/api/weaving/package-summary.html) package to learn more.
+
+Other available interfaces:
+
+* The `Timer` interface returns the time spent at a point cut. 
+* The `TraceEntry` interface returns details of slow transactions or errors at a point cut.
+* The `Transaction` interface returns an aggregate to capture timers, thread profiles and trace entries at a point cut.
+
+See the [`org.glowroot.agent.api`](https://glowroot.org/javadoc/agent-api/0.14.0/org/glowroot/agent/api/package-summary.html) package to learn more.
+
+Note that this `TemplateAspect.java` contains three `@Pointcut` declarations. One for each Liferay class to be tracked.
 
 This plugin module contains an additional [`TemplatesPluginProperties.java`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/glowroot/glowroot-plugin-freemarker/src/main/java/com/liferay/glowroot/plugin/freemarker/TemplatesPluginProperties.java) file that listens for instrumentation level configuration changes in the UI.
 

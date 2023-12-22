@@ -3,13 +3,11 @@ uuid: 8b2517e5-e747-49f4-b389-a3b3b1f66d0b
 ---
 # Using Multiple Display Page Templates to Create Multi-Step Applications
 
-```{important}
-This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-```
+{bdg-secondary}`Liferay 2023.Q4+/GA106+`
 
 Display page templates display content at a dedicated URL. To use this URL and view the content, you have to first define a template to display it.
 
-Generally, a default display page template is set for a specific content type. You can, however, associate multiple display page templates with the same content type and map any of those options to links. This means users can create applications (e.g., [forms mapped from custom objects](../../../building-applications/objects/using-fragments-to-build-forms.md)) with multiple steps. By using multiple display templates, you can create forms with multiple steps, because each step is linked to a different display page template. 
+Generally, a default display page template is set for a specific content type. You can, however, associate multiple display page templates with the same content type and map any of those options to links. This means users can create applications (e.g., [forms mapped from custom objects](../../../building-applications/objects/using-fragments-to-build-forms.md)) with multiple steps. By using multiple display templates, you can create forms with multiple steps, because each step is linked to a different display page template.
 
 Using display page templates, objects, and Form Container fragments, you can create a page that allows users to add an object entry and edit it in a different page. To do that, it is necessary to create a [custom object](#tasks-custom-object), a [display page template](#edit-display-page-template) to edit the object entry, and a [content page](#content-page-to-display-the-application) where the user can enter a new object entry and view a list of existing object entries.
 
@@ -103,7 +101,7 @@ Although you can view the page, add an object entry, and see the list of tasks u
 
 1. Click the *Submit* button twice. Under Field, select the *Edit* action.
 
-   When users click the submit button, not only are they directed to the List of Tasks page, they also activate the Edit action that replaces the previous Description value with the newly added one.
+   When users click the submit button, not only are they directed to the List of Tasks page, but they also activate the Edit action that replaces the previous Description value with the newly added one.
 
 ```{tip}
 Form Container fragments enabled in display page templates. You can also edit the Form Container fragment and use only a subset of input fragments. Then, when the object entry is updated, only the available fields are updated.

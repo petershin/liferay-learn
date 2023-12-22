@@ -43,9 +43,7 @@ You can now use the template to [display your content](./publishing-content-with
 
 ### Setting a Friendly URL for the Display Page Template
 
-```{important}
-This feature is currently behind a release feature flag. Read [Release Feature Flags](../../../system-administration/configuring-liferay/feature-flags.md#release-feature-flags) for more information.
-```
+{bdg-secondary}`Liferay 2023.Q4+/GA106+`
 
 You can set a friendly URL for your display page template. The friendly URL is used when the display page template is not marked as default or when it is manually selected for use.
 

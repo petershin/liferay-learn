@@ -44,3 +44,24 @@ To change the log level of an existing logging configuration,
 1. Click _Save_.
 
 ![To debug possible issues, you can change the logging level of any class that can be logged.](./configuring-logging/images/02.png)
+
+## Adjusting Levels with XML Files
+
+To adjust the log levels with an XML file,
+
+1. Take note of the symbolic bundle name of the module (e.g. `com.liferay.saml.opensaml.integration`).
+
+1. In your `[LIFERAY_HOME]/osgi/log4j` folder, create an XML file with the following format `[symbolicBundleName]-log4j-ext.xml`. For example `com.liferay.saml.opensaml.integration-log4j-ext.xml`.
+
+1. Define the logger level in the XML file. For example,
+
+```xml  
+   <?xml version="1.0"?>
+   <Configuration strict="true">
+   	<Loggers>
+   		<Logger level="DEBUG" name="com.liferay.saml.opensaml.integration" />
+   	</Loggers>
+   </Configuration>
+```
+
+Note, the configuration is in the XML Schema Definition (XSD) format and not in Document Type Definition (DTD) format.

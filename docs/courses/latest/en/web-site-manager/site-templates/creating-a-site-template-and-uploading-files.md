@@ -3,7 +3,7 @@ uuid: e22547b1-aef3-4f4c-8c8d-4a3e721ef393
 ---
 # Creating a Site Template and Uploading Files
 
-Before you start creating your site template, there are some steps you have to take in order to set up the environment.
+Before you start editing your site template, there are some steps you have to take to set up the environment.
 
 ## Using the Virtual Instance
 
@@ -17,7 +17,7 @@ Before you start creating your site template, there are some steps you have to t
 
 ## Creating a Site Template
 
-Once in the virtual instance, create the site template and use it to create other sites.
+Once in the virtual instance, create the site template that will be used to create other sites.
 
 1. Open the *Global Menu* (![Global Menu](../../images/icon-applications-menu.png)), select the *Control Panel* tab, and click *Site Templates* under Sites.
 
@@ -41,6 +41,20 @@ Once in the virtual instance, create the site template and use it to create othe
 
 1. Once you create the site template, click on its *Name*. The site template opens in a new tab. You can start editing the template now.
 
+## Changing the Site's Theme
+
+For this exercise, you'll use the dialect theme with a style book designed for this theme. To alter the theme for your site,
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Pages* (1).
+
+1. Click *Options* (![Options icon](../../images/icon-options.png)) and choose *Configuration*.
+
+1. Under Theme, click *Change Current Theme* and select Dialect.
+
+1. Save the alteration by rolling to the end of the page and clicking *Save*.
+
+![Navigate to the Pages app and change the site's theme](./creating-a-site-template-and-uploading-files/images/03.png)
+
 ## Importing Custom Components and Files
 
 1. Download the resources for [this exercise](./liferay-h2a2.zip).
@@ -56,6 +70,18 @@ Once in the virtual instance, create the site template and use it to create othe
 
    This .zip file includes elements that you are using to create your site template (e.g. images, custom fragments, and custom compositions).
 
+## Importing a Style Book
+
+1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Design* &rarr; *Style Books* (1).
+
+1. Click *Options* (![Options icon](../../images/icon-options.png)) and choose *Import*.
+
+1. In the Import modal, click *Choose File*, select the `01-glance-style-book.zip` file, and click *Import*.
+
+   You can also drag and drop the file into the modal.
+
+The style book is now in place. Use it to standardize your site's appearance.
+
 ### Importing Images
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Content & Data* &rarr; *Documents and Media* (1).
@@ -64,11 +90,11 @@ Once in the virtual instance, create the site template and use it to create othe
 
 1. In the Export/Import modal, select the *Import* tab.
 
-   ![Import the documents and media .lar file](./creating-a-site-template-and-uploading-files/images/03.png)
+1. Click *Select File* and select the `02-images.lar` file &rarr; click *Continue*.
 
-1. Click *Select File* and select the `01-images.lar` file &rarr; click *Continue*.
+   You can also drag and drop the file into the modal.
 
-   You can also drag and drop the file.
+   ![Import the documents and media .lar file](./creating-a-site-template-and-uploading-files/images/04.png)
 
 1. Use the default configurations and click *Import*. Once the process is finished, close the modal. You can use the imported images throughout the site template now.
 
@@ -78,10 +104,10 @@ Once in the virtual instance, create the site template and use it to create othe
 
 1. Next to Fragment Sets, Click *Actions* (![Actions icon](../../images/icon-actions.png)) &rarr; *Import* (2).
 
-   ![Import the custom fragments and compositions](./creating-a-site-template-and-uploading-files/images/04.png)
+   ![Import the custom fragments and compositions](./creating-a-site-template-and-uploading-files/images/05.png)
 
-1. Click *Select File* and select the `02-custom-fragments-and-compositions.zip` file &rarr; click *Import*.
+1. Click *Select File* and select the `03-custom-fragments-and-compositions.zip` file &rarr; click *Import*.
 
-1. Once the process is finished, click *Done*. You can use the custom fragments and compositions thoughout the site template now.
+1. Once the process is finished, click *Done*. You can use the custom fragments and compositions throughout the site template now.
 
 Next, let's [create the master page template](./creating-the-master-page-template.md).

@@ -20,7 +20,7 @@ function generate_theme {
 
 	mkdir liferay-5b2v.zip
 
-	mv liferay-5b2v-theme/dist/liferay-5b2v-theme.war ./liferay-5b2v.zip
+	mv liferay-5b2v-theme/dist/liferay-5b2v-theme.war liferay-5b2v.zip
 
 	rm -fr liferay-5b2v-theme
 }

@@ -90,7 +90,7 @@ The style book is now in place. Use it to standardize your site's appearance.
 
 1. In the Export/Import modal, select the *Import* tab.
 
-1. Click *Select File* and select the `02-images.lar` file &rarr; click *Continue*.
+1. Click *Select File* and select the `02-glance-images.lar` file &rarr; click *Continue*.
 
    You can also drag and drop the file into the modal.
 
@@ -106,7 +106,7 @@ The style book is now in place. Use it to standardize your site's appearance.
 
    ![Import the custom fragments and compositions](./creating-a-site-template-and-uploading-files/images/05.png)
 
-1. Click *Select File* and select the `03-custom-fragments-and-compositions.zip` file &rarr; click *Import*.
+1. Click *Select File* and select the `03-glance-custom-fragments-and-compositions.zip` file &rarr; click *Import*.
 
 1. Once the process is finished, click *Done*. You can use the custom fragments and compositions throughout the site template now.
 

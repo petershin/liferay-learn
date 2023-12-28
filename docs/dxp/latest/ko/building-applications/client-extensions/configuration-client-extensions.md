@@ -7,9 +7,11 @@ toc:
 
 # 구성 클라이언트 확장
 
-{bdg-secondary}`Liferay DXP 7.4(자체 호스팅)`   
-{bdg-secondary}`Liferay Experience Cloud(SaaS)`   
-{bdg-unsupported}`Liferay Cloud: 자체 관리`
+{bdg-primary}`Liferay 자체 호스팅`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: 자체 관리`
+
+{bdg-secondary}`Liferay 7.4+`
 
 Liferay 인스턴스 구성은 클라이언트 확장을 통해 배포 가능합니다. 예를 들어 OAuth2 인증 프로필을 구성 클라이언트 확장으로 배포하여 인증이 필요한 다른 클라이언트 확장을 활성화할 수 있습니다.
 

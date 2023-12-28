@@ -4,7 +4,11 @@ toc:
 ---
 # 배치 클라이언트 확장
 
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(자체 호스팅)`
+{bdg-primary}`Liferay 자체 호스팅`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: 자체 관리`
+
+{bdg-secondary}`Liferay 7.4+`
 
 ```{toctree}
 :maxdepth: 3

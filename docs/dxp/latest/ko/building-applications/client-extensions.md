@@ -9,7 +9,11 @@ toc:
 ---
 # 원격 앱
 
-{bdg-secondary}`사용 가능 Liferay 7.4`
+{bdg-primary}`Liferay 자체 호스팅`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: 자체 관리`
+
+{bdg-secondary}`Liferay 7.4+`
 
 클라이언트 확장은 OSGi 모듈을 사용하지 않고 Liferay를 확장합니다. 클라이언트 확장을 직접 호스팅하든 Liferay 클라우드에서 호스팅하든 모든 Liferay 환경에 배포할 수 있습니다. 또한 다음과 같은 기본 제공 구성과 함께 Liferay Cloud로 Liferay를 사용자 지정하는 주요 방법이기도 합니다. [Liferay 개체](./objects.md).
 

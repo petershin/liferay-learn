@@ -30,7 +30,11 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/remote-applications-ui-reference.md
 ```
 
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+{bdg-primary}`Liferay 자체 호스팅`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: 자체 관리`
+
+{bdg-secondary}`Liferay 7.4+`
 
 프런트 엔드 클라이언트 확장은 페이지를 확장하고 새로운 기능을 통합합니다. 사용 가능한 유형에는 CSS, JavaScript, 테마 CSS, 테마 JS, 테마 파비콘, 사용자 정의 요소 및 IFrame이 포함됩니다.
 

@@ -1,6 +1,10 @@
 # 클라이언트 확장 작업
 
-{bdg-secondary}`사용 가능한 Liferay 7.4+`
+{bdg-primary}`Liferay 자체 호스팅`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: 자체 관리`
+
+{bdg-secondary}`Liferay 7.4+`
 
 클라이언트 확장을 사용하면 OSGi 모듈을 배포하지 않고도 Liferay를 확장할 수 있습니다. 기존 모듈 개발과 마찬가지로 클라이언트 확장은 [Liferay Workspace](../tooling/liferay-workspace.md) 에 있습니다. 학습부터 시작해 보세요
 

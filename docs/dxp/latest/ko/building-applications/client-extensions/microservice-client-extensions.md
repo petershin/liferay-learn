@@ -7,7 +7,11 @@ toc:
 ---
 # 마이크로서비스 클라이언트 확장
 
-{bdg-secondary}`Liferay Experience Cloud 및 Liferay DXP 7.4+(온프레미스)`
+{bdg-primary}`Liferay 자체 호스팅`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: 자체 관리`
+
+{bdg-secondary}`Liferay 7.4+`
 
 Liferay 인스턴스의 이벤트에 대한 응답으로 자체 코드를 실행하도록 마이크로서비스 클라이언트 확장을 정의합니다. 코드를 구현하는 방법은 귀하에게 달려 있습니다. 원하는 패턴과 기술을 사용하십시오. 마이크로서비스 클라이언트 확장은 Liferay 외부에서 호스팅되며 Liferay 자체의 신호에 의해 트리거됩니다.
 

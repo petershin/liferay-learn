@@ -1,7 +1,7 @@
 ---
 visibility:
-  - eMployee
-  - pArtner
+- Employee
+- Partner
 ---
 # 콘텐츠 관리 및 분석
 

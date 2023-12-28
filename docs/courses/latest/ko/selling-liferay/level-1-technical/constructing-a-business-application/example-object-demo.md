@@ -1,7 +1,7 @@
 ---
 visibility:
-  - eMployee
-  - pArtner
+- Employee
+- Partner
 ---
 # Liferay 객체 데모 예
 

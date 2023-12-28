@@ -1,7 +1,7 @@
 ---
 visibility:
-  - eMployee
-  - pArtner
+- Employee
+- Partner
 ---
 # デモの倫理 - デモの方法
 

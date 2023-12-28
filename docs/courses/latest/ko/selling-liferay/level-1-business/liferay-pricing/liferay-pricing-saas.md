@@ -1,7 +1,7 @@
 ---
 visibility:
-  - eMployee
-  - pArtner
+- Employee
+- Partner
 ---
 # Liferay Experience Cloud SaaS 가격 - 소개 및 계획
 

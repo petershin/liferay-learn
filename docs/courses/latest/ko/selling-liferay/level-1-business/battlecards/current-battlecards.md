@@ -1,7 +1,7 @@
 ---
 visibility:
-  - eMployee
-  - pArtner
+- Employee
+- Partner
 ---
 # 경쟁 정보: 현재 전투 카드 요약
 

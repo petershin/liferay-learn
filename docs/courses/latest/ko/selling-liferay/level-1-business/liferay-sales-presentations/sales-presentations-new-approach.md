@@ -1,7 +1,7 @@
 ---
 visibility:
-  - eMployee
-  - pArtner
+- Employee
+- Partner
 ---
 # Liferay 영업 프레젠테이션에 대한 새로운 접근 방식
 

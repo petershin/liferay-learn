@@ -3,9 +3,9 @@ uuid: 05f145b0-0a81-445c-88af-4aa6d52c0469
 ---
 # Packaging Client Extensions
 
-{bdg-secondary}`Liferay Self-Hosted`
-{bdg-secondary}`Liferay Experience Cloud (SaaS)`
-{bdg-unsupported}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: Self-Managed`
 
 {bdg-secondary}`Liferay 7.4`
 

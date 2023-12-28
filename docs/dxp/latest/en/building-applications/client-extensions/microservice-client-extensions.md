@@ -9,9 +9,9 @@ uuid: c35ace6c-9e29-4e9e-be37-b4799a8b21d5
 ---
 # Microservice Client Extensions
 
-{bdg-secondary}`Liferay Self-Hosted`
-{bdg-secondary}`Liferay Experience Cloud (SaaS)`
-{bdg-unsupported}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: Self-Managed`
 
 {bdg-secondary}`Liferay 7.4`
 

@@ -7,9 +7,9 @@ uuid: 654223de-17be-4786-a90d-775f986c0911
 ---
 # Configuration Client Extensions
 
-{bdg-secondary}`Liferay Self-Hosted`
-{bdg-secondary}`Liferay Experience Cloud (SaaS)`
-{bdg-unsupported}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: Self-Managed`
 
 {bdg-secondary}`Liferay 7.4`
 

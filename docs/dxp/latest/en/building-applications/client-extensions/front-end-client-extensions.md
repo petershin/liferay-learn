@@ -29,9 +29,9 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
-{bdg-secondary}`Liferay Self-Hosted`
-{bdg-secondary}`Liferay Experience Cloud (SaaS)`
-{bdg-unsupported}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud: Self-Managed`
 
 {bdg-secondary}`Liferay 7.4`
 

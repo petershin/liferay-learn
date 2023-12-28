@@ -1,7 +1,7 @@
 ---
-visibility:
-  * eMployee
-  * pArtner
+visibility: 
+- Employee
+- Partner
 ---
 # セグメンテーションとパーソナライゼーション
 

@@ -9,7 +9,11 @@ toc:
 ---
 # クライアント拡張
 
-{bdg-secondary}`利用可能な Liferay DXP 7.4 (セルフホスト)`  {bdg-secondary}`利用可能な Liferay Experience Cloud (SaaS)`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud： セルフマネージド`
+
+{bdg-secondary}`Liferay 7.4`
 
 クライアント拡張はOSGiモジュールを使わずにLiferayを拡張します。 クライアント拡張機能は、Liferay環境であれば、自社ホストでもLiferayクラウド上でもデプロイできます。 また、 [Liferay objects](./objects.md) のようなビルトインコンフィギュレーションとともに、Liferay CloudでLiferayをカスタマイズする主な方法でもあります。
 

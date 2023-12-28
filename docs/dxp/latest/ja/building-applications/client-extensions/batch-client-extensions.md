@@ -4,7 +4,11 @@ toc:
 ---
 # バッチクライアント拡張機能
 
-{bdg-secondary}`利用可能な Liferay DXP 7.4 (セルフホスト)`  {bdg-secondary}`利用可能な Liferay Experience Cloud (SaaS)`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud： セルフマネージド`
+
+{bdg-secondary}`Liferay 7.4`
 
 ```{toctree}
 :maxdepth: 3

@@ -5,9 +5,11 @@ toc:
 ---
 # 構成 クライアント拡張
 
-{bdg-secondary}`Liferay DXP 7.4 (self-hosted)` 
-{bdg-secondary}`Liferay Experience Cloud (SaaS)` 
-{bdg-unsupported}`Liferay Cloud： セルフマネージド`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud： セルフマネージド`
+
+{bdg-secondary}`Liferay 7.4`
 
 Liferay インスタンスコンフィギュレーションはクライアント拡張と一緒にデプロイできます。例えば、OAuth2認証プロファイルをクライアント拡張設定としてデプロイし、認証を必要とする他のクライアント拡張設定を有効にすることができます。
 

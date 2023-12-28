@@ -28,9 +28,11 @@ front-end-client-extensions/understanding-custom-element-and-iframe-client-exten
 front-end-client-extensions/client-extensions-ui-reference.md
 ```
 
-{bdg-secondary}`Liferay DXP 7.4 (self-hosted)`   
-{bdg-secondary}`Liferay Experience Cloud (SaaS)`   
-{bdg-unsupported}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud： セルフマネージド`
+
+{bdg-secondary}`Liferay 7.4`
 
 フロントエンドクライアント拡張は、ページを拡張し、新しい機能を統合します。 利用可能なタイプには、CSS、JavaScript、テーマCSS、テーマファビコン、カスタム要素、IFrameがあります。
 

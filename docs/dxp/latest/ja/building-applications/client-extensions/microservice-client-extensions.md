@@ -7,9 +7,11 @@ toc:
 ---
 # マイクロサービスのクライアント拡張
 
-{bdg-secondary}`Liferay DXP 7.4 (self-hosted)`   
-{bdg-secondary}`Liferay Experience Cloud (SaaS)`   
-{bdg-unsupported}`Liferay Cloud: Self-Managed`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud： セルフマネージド`
+
+{bdg-secondary}`Liferay 7.4`
 
 マイクロサービスクライアント拡張を定義し、Liferayインスタンスのイベントに応答して独自のコードを実行します。 どのようにコードを実装するかはあなた次第です。好みのパターンやテクノロジーを使ってください。 マイクロサービスのクライアント拡張はLiferayの外部でホストされ、Liferay自体からの合図でトリガーされます。
 

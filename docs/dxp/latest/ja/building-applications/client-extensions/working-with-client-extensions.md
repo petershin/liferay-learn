@@ -1,6 +1,10 @@
 # クライアント拡張との連携
 
-{bdg-secondary}`利用可能な Liferay DXP 7.4 (セルフホスト)`  {bdg-secondary}`利用可能な Liferay Experience Cloud (SaaS)`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud： セルフマネージド`
+
+{bdg-secondary}`Liferay 7.4`
 
 クライアントエクステンションを使えば、OSGiモジュールをデプロイせずにLiferayを拡張できます。 従来のモジュール開発と同様に、クライアント拡張は [Liferay Workspace](../tooling/liferay-workspace.md) に置かれます。 学ぶことから始めよう
 

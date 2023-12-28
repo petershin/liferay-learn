@@ -1,6 +1,10 @@
 # クライアント拡張機能のパッケージ化
 
-{bdg-secondary}`Liferay Experience CloudおよびLiferay DXP 7.4+（セルフホスティング）`
+{bdg-primary}`Liferay Self-Hosted`
+{bdg-primary}`Liferay Experience Cloud (SaaS)`
+{bdg-warning}`Liferay Cloud： セルフマネージド`
+
+{bdg-secondary}`Liferay 7.4`
 
 クライアント拡張プロジェクトは、 **Liferay Universal File Format Archives**(LUFFAs) と呼ばれる展開可能なアーカイブとして構築され、 `.zip` という拡張子を持ちます。 各LUFFAは、特定の構造を持ち、特定のコンポーネントファイルを定義しており、プロジェクトによって提供されない場合は自動的に生成されます。 Liferay workspaceは、クライアント拡張プロジェクトをビルドする際にパッケージ化します。 パッケージングの仕組みを理解することは、 [クライアントエクステンションを組み立てる](./working-with-client-extensions.md#assembling-client-extensions) あるいは、別のプロセスでLUFFAを作成する場合に重要です。
 

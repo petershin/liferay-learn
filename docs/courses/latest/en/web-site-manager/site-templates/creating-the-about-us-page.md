@@ -122,4 +122,4 @@ Once the elements are in place, click *Publish* at the top right corner of the p
 
 ![With the cards filled, the About Us page is complete.](./creating-the-about-us-page/images/05.png)
 
-Now that the About Us Page is complete, let's [create the Contact Us page](./creating-the-contact-us-page.md).
+Now that the About Us Page is complete, let's [create the Contact Us page.](./creating-the-contact-us-page.md)

@@ -9,7 +9,7 @@ The Contact Us page has a form which the user can fill in order to contact the c
 
 1. Open the Product Menu (![Product Menu](../../images/icon-applications-menu.png)), select the Controle Panel tab, and click *Object* under Objects.
 
-1. Click *Options* (![Options](../../images/icon-options.png)) (1), select *Import Object Definition*. Name the object definition "ContactUsForm" and select the `04-glance-contact-us-form-object-definition.json` file (that was included in the zip file with the resources for this module) (2), and click *Import* (3).
+1. Click *Options* (![Options](../../images/icon-options.png)) (1) and select *Import Object Definition*. Name the object definition "ContactUsForm" and select the `04-glance-contact-us-form-object-definition.json` file (that was included in the zip file with the resources for this module) (2), and click *Import* (3).
 
    ![Import the object definition.](./creating-the-contact-us-page/images/01.png)
 
@@ -86,8 +86,10 @@ With the form mapped and in place, style the way it looks.
 
    ![Style the form.](./creating-the-contact-us-page/images/04.gif)
 
+1. Publish the page.
+
 This is how the Contact Us page should look like once it is finished:
 
 ![The Contact Us page should look like this once it's finished.](./creating-the-contact-us-page/images/05.png)
 
-Now that the Contact Us Page is complete, let's [create the Careers page](./creating-the-careers-page.md).
+Now that the Contact Us Page is complete, let's [create the Careers page.](./creating-the-careers-page.md)

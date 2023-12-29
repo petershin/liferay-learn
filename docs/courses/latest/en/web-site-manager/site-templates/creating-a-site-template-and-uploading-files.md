@@ -110,4 +110,4 @@ The style book is now in place. Use it to standardize your site's appearance.
 
 1. Once the process is finished, click *Done*. You can use the custom fragments and compositions throughout the site template now.
 
-Next, let's [create the master page template](./creating-the-master-page-template.md).
+Next, let's [create the master page template.](./creating-the-master-page-template.md)

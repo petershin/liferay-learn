@@ -133,4 +133,4 @@ Your custom footer is ready.
 
 Once you are done editing the header and the footer, click *Publish Master*.
 
-Coming up next, let's [create a page based on the Main template and populate it.](./creating-the-about-us-page.md).
+Coming up next, let's [create a page based on the Main template and populate it.](./creating-the-about-us-page.md)

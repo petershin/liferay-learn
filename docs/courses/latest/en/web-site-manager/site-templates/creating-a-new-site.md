@@ -3,9 +3,9 @@ uuid: e2739217-c779-4db7-af28-6761143f0b74
 ---
 # Creating a New Site
 
-Now that you have all the pages that populate your site template. It is time to create a new site based on the template.
+It is time to create a new site based on the template.
 
-But, before you do that, let's fix the navigation menu in the footer used in the Main template.
+But, before you do that, fix the navigation menu in the footer used in the Main template.
 
 ## Creating the Navigation Menu and Configuring the Menu Display
 
@@ -13,7 +13,7 @@ But, before you do that, let's fix the navigation menu in the footer used in the
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) and name it `Company Navigation`.
 
-1. Click *Add* and select *Page*. In the modal that opens, select the About US, Contact Us, and Careers pages. Click *Select*.
+1. Click *Add* and select *Page*. In the modal that opens, select the About Us, Contact Us, and Careers pages. Click *Select*.
 
 Once the navigation menu is created, you can configure the menu display in the Main page template.
 
@@ -55,5 +55,5 @@ That's it. Congratulations, Liferay Learner! You have just completed this module
 
 During these lessons, you have learned how to create a site template, change your site's theme, apply a style book to your site's theme, create a site template, create pages, use compositions, create forms mapped to object definitions, use collection displays, show content in a display page content, create navigation menus, configure menu displays, and create a new site based on a site template.
 
-Phew! That was a lot. Keep on practicing! See you on the next module, [Site Look and Feel.]()
+Phew! That was a lot. Keep on practicing! See you in the next module: [Site Look and Feel.]()
 

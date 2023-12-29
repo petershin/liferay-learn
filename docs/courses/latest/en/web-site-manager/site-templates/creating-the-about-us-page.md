@@ -5,15 +5,17 @@ uuid: 1acf98a4-c309-439b-89ff-8048fa997a2d
 
 Now that you have a master page, use it to create the pages and populate the site template.
 
-In this lesson, you'll use *compositions*, pre-built structures that speed up the process of page building, to create the About Us, Contact Us, and Careers pages. With compositions, you'll add the elements to the right places in an existing structure to build your page.
+In this lesson, you'll use *compositions*, pre-built structures that speed up the process of page building, to create the pages that will populate the site template. With compositions, you'll add the elements to the right places in an existing structure to build your page.
 
 Start by creating a page using the master page template from the last lesson.
 
 ## Creating a Page Using a Master Page Template
 
+<!-- This first lesson teaching how to deal with compositions is going to take longer, the others are just going to contain general directions instead of more specific ones. -->
+
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Pages*.
 
-1. Click *New Page* &rarr; *Page* and select the Main template.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) &rarr; *Add Site Template Page* and select the Main template.
 
    ![Click New Page to add a new page based on the master page template.](./creating-the-about-us-page/images/01.png)
 
@@ -25,19 +27,9 @@ All the created pages have the same structure set in the Master page: a header, 
 
 ## Populating the About Us Page
 
-<!-- 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and navigate to *Site Builder* &rarr; *Pages*.
+1. Look at the Fragments and Widgets tab on the left of the page editor and search for *About Us Composition*.
 
-1. Click on the name of the page to start editing it.
-
-Start editing the About Us page. -->
-
-<!-- I'll show the step-by-step process this time and speed it up with the other pages. I'll probably use a table and an image with numbers to indicate where to put what -->
-
-<!-- 1. In the Pages application, click on the About Us page to start editing it. -->
-
-1. (Applying a Composition) While editing the page, look at the Fragments and Widgets tab on the left of the page editor and search for "About Us Composition".
-
-1. Drag and drop the "About Us Composition" into the editing area".
+1. Drag and drop the *About Us Composition* into the editing area".
 
    A whole structure is set and you can edit its elements. If you applied the Dialect theme and imported the style book correctly, the composition should look like this:
 
@@ -52,11 +44,11 @@ Now, add some information and images to the composition. Start by editing the fi
    Discover the clarity of vision you deserve with Clarity.
    ```
 
-1. Select `Discover the clarity of vision you deserve with Clarity.`. In the toolbar that pops up, click *Bold*.
+1. Select `Discover the clarity of vision you deserve with Clarity.`. In the toolbar that pops up, click *Bold* to emphasize that part of the text.
 
 1. Select the first image element and double-click its content to open the Documents and Media modal. Open the *About Us Images* folder and select image `01`.
 
-![Edit the first row. Add text and image to the composition.](./creating-the-about-us-page/images/03.gif)
+![Edit the first row. Add text and images to the composition.](./creating-the-about-us-page/images/03.gif)
 
 Now, edit the second row.
 
@@ -70,13 +62,9 @@ Now, edit the second row.
 
 1. Select image `03` for the image on the right.
 
-<!-- 1. apply some color to the background. First, select the outer container and open the Styles tab. Then, under Background, enter `#1D8C8C` as the background color.
-
-1. Change the color of the text to white. Select the paragraph, open the *Styles* tab, and, under Text, enter `#FFFFFF` as the text color. -->
-
 Edit the third row.
 
-1. Select image `04` for the image on the left and add this text to the paragraph on the right:
+1. Select image `04` for the image on the left and enter this text into the paragraph on the right:
 
    ```
    Today, Clarity has over 100 stores and offices worldwide, each exemplifying our commitment to excellence in eyewear. From our flagship stores in major fashion capitals to our regional offices dedicated to serving our B2B partners, our presence is a testament to the enduring values of innovation and quality that have shaped our brand.
@@ -84,15 +72,13 @@ Edit the third row.
 
 Edit the third row.
 
-1. Add this text to the paragraph:
+1. Enter this text into the paragraph:
 
    ```
    We blend style with sustainability. We craft eco-friendly, innovative eyewear solutions. Our network of worldwide stores ensures quality and personalized service. Experience Clarity for exceptional vision and environmental responsibility.
    ```
 
-<!-- 1. Apply the `#1D8C8C` color to the container's background. And change the paragraph's text color to `#FFFFFF`. -->
-
-![The first rows are complete.](./creating-the-about-us-page/images/04.png)
+![The first rows of the About Us page are complete.](./creating-the-about-us-page/images/04.png)
 
 Edit the cards. They are going to hold information about the main Clarity offices. They have an image (a picture of the office), a title (the name of the office), a paragraph (information about the office), and a link (to redirect the user to the office's page).
 

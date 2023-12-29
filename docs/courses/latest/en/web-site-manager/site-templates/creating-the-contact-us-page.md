@@ -3,13 +3,13 @@ uuid: e4b6429d-a6c5-410a-a3e6-a34c4448f848
 ---
 # Creating the Contact Us Page
 
-The Contact Us page has a form which the user can fill in order to contact the company. To create this form, you'll first create an object and map it to a Form Container fragment.
+The Contact Us page has a form users should fill if they want to contact the company. To create this form, you'll first import an object definition and map it to a Form Container fragment.
 
 ## Importing the Object Definition
 
 1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)), select the Controle Panel tab, and click *Object* under Objects.
 
-1. Click *Options* (![Options](../../images/icon-options.png)) (1) and select *Import Object Definition*. Name the object definition "ContactUsForm" and select the `04-glance-contact-us-form-object-definition.json` file (that was included in the zip file with the resources for this module) (2), and click *Import* (3).
+1. Click *Options* (![Options](../../images/icon-options.png)) (1) and select *Import Object Definition*. Name the object definition "ContactUsForm", select the `04-glance-contact-us-form-object-definition.json` file (that was included in the zip file with the resources for this module) (2), and click *Import* (3).
 
    ![Import the object definition.](./creating-the-contact-us-page/images/01.png)
 
@@ -21,7 +21,7 @@ Next, create the Contact Us Page and add a Form Container fragment to it.
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Pages*.
 
-1. Click *New Page* &rarr; *Page* and select the Main template.
+1. Click *Add* (![Add icon](../../images/icon-add.png)) &rarr; *Add Site Template Page* and select the Main template.
 
 1. Name the page `Contact Us` and click *Add*.
 
@@ -34,9 +34,7 @@ Next, create the Contact Us Page and add a Form Container fragment to it.
 
 ### Editing the Content in the Contact Us Page
 
-Now, you can edit the Contact Us composition, add elements, and edit headings and paragraphs.
-
-1. Alter the elements in the composition. Use the information in the table below:
+Alter the elements in the composition. Use the information in the table below:
 
 | Component | Content |
 | :--- | :--- |
@@ -54,13 +52,13 @@ Now, you can edit the Contact Us composition, add elements, and edit headings an
 
 ![The Contact Us page after the information is entered.](./creating-the-contact-us-page/images/02.png)
 
-Add your Form Container to the page and map it to the Contact Us Form object definition. The form container with a warning was left in the composition just so you know where to place your form container.
+Add your Form Container to the page and map it to the Contact Us Form object definition. The existing form container with a warning was left in the composition just so you know where to place your form container.
 
 1. Look at the Fragments and Widgets tab on the left of the page editor and search for "Form Container".
 
    The form container is only available if you have an object definition in place.
 
-1. Drag and drop the Form Container into the editing area on top of the existing one and map your form container to the Contact Us Form object.
+1. Drag and drop the *Form Container* into the editing area on top of the existing one and map your form container to the Contact Us Form object.
 
 1. Drag and drop the fields to reorder them. The order should be Name, Email Address, Phone, and Comment.
 
@@ -70,7 +68,7 @@ Add your Form Container to the page and map it to the Contact Us Form object def
 
 With the form mapped and in place, style the way it looks.
 
-1. Click on the Form Container component. On the menu on the right, select the General tab and set the `Min Width` to 360 px.
+1. Click the *Form Container* component. On the menu on the right, select the General tab and set the `Min Width` to 360 px.
 
 1. Select the Styles tab and set the following properties:
 

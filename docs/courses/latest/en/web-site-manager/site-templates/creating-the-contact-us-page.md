@@ -7,7 +7,7 @@ The Contact Us page has a form which the user can fill in order to contact the c
 
 ## Importing the Object Definition
 
-1. Open the Product Menu (![Product Menu](../../images/icon-applications-menu.png)), select the Controle Panel tab, and click *Object* under Objects.
+1. Open the Global Menu (![Global Menu](../../images/icon-applications-menu.png)), select the Controle Panel tab, and click *Object* under Objects.
 
 1. Click *Options* (![Options](../../images/icon-options.png)) (1) and select *Import Object Definition*. Name the object definition "ContactUsForm" and select the `04-glance-contact-us-form-object-definition.json` file (that was included in the zip file with the resources for this module) (2), and click *Import* (3).
 
@@ -80,7 +80,6 @@ With the form mapped and in place, style the way it looks.
    | Padding Right | 1.5 rem |
    | Padding Left | 1.5 rem |
    | Padding Bottom | 1.0 rem |
-   | Padding Top | 0.5 rem |
    | Background Color | Color Brand Primary Lighten 4 |
    | Border Radius | 10 px |
 

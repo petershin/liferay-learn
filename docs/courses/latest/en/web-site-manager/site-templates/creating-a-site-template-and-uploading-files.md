@@ -80,7 +80,9 @@ For this exercise, you'll use the dialect theme with a style book designed for t
 
    You can also drag and drop the file into the modal.
 
-The style book is now in place. Use it to standardize your site's appearance.
+1. Back to the Style Books app page, click *Actions* (![Actions icon](../../images/icon-actions.png)) in your Glance Style Book card and choose *Mark as Default*.
+
+The style book is now in place. Use it to standardize your site's appearance. It may not be applied to the Site Template as it uses private pages, but once you create your new site, you can change its theme to Dialect and the style book is applied to the new site.
 
 ### Importing Images
 

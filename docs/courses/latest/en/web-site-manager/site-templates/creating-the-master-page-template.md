@@ -29,7 +29,7 @@ With the header and the footer in place, edit the way they look and their conten
 
 ### Editing the Look and Feel of the Custom Header
 
-First, add a background to the header:
+<!-- First, add a background to the header:
 
 1. Select the outer *Container* (1) in the header composition. On the right, select the *Styles* tab (2).
 
@@ -37,9 +37,9 @@ First, add a background to the header:
 
 1. Under Background Image, click the + icon (3), open the *Assets* folder, and select the `header-background.svg` image.
 
-   ![Select a background image for the header's outer container](./creating-the-master-page-template/images/03.png)
+   ![Select a background image for the header's outer container](./creating-the-master-page-template/images/03.png) -->
 
-Then, add the logo to the Image fragment:
+First, add the logo to the Image fragment:
 
 1. Click the *Image* fragment twice to select the image-square inside the Image fragment. On the right, select the *Image Source* tab.
 
@@ -55,15 +55,15 @@ Your custom header is ready.
 
 ### Editing the Look and Feel of the Custom Footer
 
-To start, add a background to the footer:
+<!-- To start, add a background to the footer:
 
 1. Select the outer *Container* (1) in the footer composition. On the right, select the *Styles* tab (2).
 
    You can also select the outer *Container* by using the Browser menu on the left.
 
-1. Under Background Image, click the + icon, open the *Assets* folder, and select the `footer-background.svg` image.
+1. Under Background Image, click the + icon, open the *Assets* folder, and select the `footer-background.svg` image. -->
 
-Now, organize the top grid. First, Add the logo to the footer:
+To start, organize the top grid. First, Add the logo to the footer:
 
 1. In the first grid module, double-click the *Image* fragment (this selects the image-square inside the Image fragment). On the right, select the *Image Source* tab.
 
@@ -75,7 +75,7 @@ Now, organize the top grid. First, Add the logo to the footer:
 
 Second, alter the headings for the menus:
 
-1. In the second grid module, add a *Dialect Text* fragment to the container. Double-click to edit the text &rarr; change it to `MY ACCOUNT`. Change its text type, spacing, font color and weight using the menu on the right.
+1. In the second grid module, add a *Dialect Text* fragment to the container. Double-click to edit the text &rarr; change it to `My Account`. Change its text type, spacing, font color and weight using the menu on the right.
 
    Under the General tab, alter the Text Type to *Small Caps*.
 
@@ -87,7 +87,7 @@ Second, alter the headings for the menus:
 
    <!-- do I want a gif or a png should sufice here? -->
 
-1. Repeat the last step to add and alter the heading for the menus in the next two grids. Add a `COMPANY` and a `HELP CENTER` heading to the other grids.
+1. Repeat the last step to add and alter the heading for the menus in the next two grids. Add a `The Company` and a `Help Center` heading to the other grids.
 
    You can also duplicate the Dialect Text component (using the Browser or the options menu that shows once you click the component), reposition the duplicates in the next modules, and change their text.
 

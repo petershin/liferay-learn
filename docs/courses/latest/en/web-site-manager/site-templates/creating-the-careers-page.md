@@ -11,7 +11,7 @@ The Careers page shows a list of available job postings. Once you click on one o
 
 1. Click *Options* (![Options](../../images/icon-options.png)) and select *Export/Import*.
 
-1. Select the Import tab, and choose the `05-glance-careers-job-posting-wc.lar` file (that was included in the zip file with the resources for this module), and click *Continue*.
+1. Select the Import tab, and choose the `05-glance-careers-job-posting-web-content.lar` file (that was included in the zip file with the resources for this module), and click *Continue*.
 
 1. Use the default settings and click *Import*. After the import process is complete, close the modal.
 
@@ -31,7 +31,7 @@ Now, import the display page template.
 
 1. Select the *Display Page Templates* tab, click *Options* (![Options](../../images/icon-options.png)) and select *Import*.
 
-1. Select the `06-glance-careers-job-posting-dpt.zip` file (that was included in the zip file with the resources for this module), and click *Import*. After the import process is complete, click *Done*.
+1. Select the `06-glance-careers-job-posting-display-page-template.zip` file (that was included in the zip file with the resources for this module), and click *Import*. After the import process is complete, click *Done*.
 
 The display page template is imported. You can use it to show more details about a job posting.
 
@@ -63,7 +63,7 @@ The display page template is imported. You can use it to show more details about
 
 1. Double-click the Dialect Button inside the Collection Item's Container. Under the Link tab, change the Link to `Mapped URL` and the Field to `Job Posting DPT`.
 
-   Once users click the button, they are redirected to the display page template that shows the Web Content in the way we defined previously.
+   Once users click the button, they are redirected to the display page template.
 
    ![This is how the details about the job posting should look in the display page template.](./creating-the-careers-page/images/02.png)
 
@@ -71,8 +71,8 @@ The display page template is imported. You can use it to show more details about
 
 1. Publish the page.
 
-This is how the Careers page should look once it's edited:
+This is how the Careers page should look once it's finished:
 
 ![This is how the Careers page should look once it's edited.](./creating-the-careers-page/images/03.png)
 
-Now that the Careers Page is complete, let's [create the menu navigation and use our site template to generate another site.](./creating-the-careers-page.md)
+Now that the Careers Page is complete, let's [create the menu navigation and use our site template to generate another site.](./creating-a-new-site.md)

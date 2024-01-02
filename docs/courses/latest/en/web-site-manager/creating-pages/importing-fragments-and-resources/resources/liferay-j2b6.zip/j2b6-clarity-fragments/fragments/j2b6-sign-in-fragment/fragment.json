@@ -4,6 +4,7 @@
 	"htmlPath": "index.html",
 	"icon": "code",
 	"jsPath": "index.js",
-	"name": "User Navigation DropDown",
+	"name": "J2B6 Sign In",
+	"thumbnailPath": "thumbnail.png",
 	"type": "component"
 }

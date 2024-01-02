@@ -2,8 +2,9 @@
 	"configurationPath": "configuration.json",
 	"cssPath": "index.css",
 	"htmlPath": "index.html",
-	"icon": "code",
+	"icon": "paragraph",
 	"jsPath": "index.js",
-	"name": "Announcement",
+	"name": "J2B6 Testimonials Slider",
+	"thumbnailPath": "thumbnail.png",
 	"type": "component"
 }

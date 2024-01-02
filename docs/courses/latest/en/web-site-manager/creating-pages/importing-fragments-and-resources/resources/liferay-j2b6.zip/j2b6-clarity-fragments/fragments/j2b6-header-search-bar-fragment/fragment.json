@@ -4,7 +4,6 @@
 	"htmlPath": "index.html",
 	"icon": "code",
 	"jsPath": "index.js",
-	"name": "Sign In",
-	"thumbnailPath": "thumbnail.png",
+	"name": "J2B6 Header Search Bar",
 	"type": "component"
 }

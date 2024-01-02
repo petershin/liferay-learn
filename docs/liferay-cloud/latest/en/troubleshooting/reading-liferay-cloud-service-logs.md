@@ -37,7 +37,7 @@ Additionally, these components are always present in any log message in Liferay 
 
 The instance ID associated with a log message corresponds to one of the instances of your service.
 
-From the Logs page, you can see (and filter by) all of the active instances in a service from the Logs page by filtering to the service (such as `liferay`) and then clicking the *Instance* drop-down menu:
+From the Logs page, you can see (and filter by) all of the active instances of a service (such as `liferay`) by filtering to it and then clicking the *Instance* drop-down menu:
 
 ![Click on the instances dropdown menu to see all of the instances.](./reading-liferay-cloud-service-logs/images/01.png)
 

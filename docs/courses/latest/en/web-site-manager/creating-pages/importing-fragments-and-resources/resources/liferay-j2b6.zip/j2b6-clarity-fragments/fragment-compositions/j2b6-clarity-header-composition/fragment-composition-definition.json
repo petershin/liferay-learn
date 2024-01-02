@@ -304,7 +304,7 @@
 										{
 											"definition": {
 												"fragment": {
-													"key": "j2b6-header-search-bar",
+													"key": "j2b6-header-search-bar-fragment",
 													"siteKey": "Guest"
 												},
 												"fragmentConfig": {
@@ -325,7 +325,7 @@
 										{
 											"definition": {
 												"fragment": {
-													"key": "j2b6-user-nav-dropdown",
+													"key": "j2b6-user-nav-dropdown-fragment",
 													"siteKey": "Guest"
 												},
 												"fragmentConfig": {

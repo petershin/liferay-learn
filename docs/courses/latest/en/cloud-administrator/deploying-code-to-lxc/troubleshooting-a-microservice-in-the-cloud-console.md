@@ -83,7 +83,7 @@ Try triggering the object action the same way you did previously.
 
 1. Click *Submit* on the form to create a new object entry and trigger the action.
 
-1. Go back to the Cloud console and click on the `liferaysampleetcspringboot` service.
+1. Go back to the Cloud console and click *Logs*.
 
 Even if you wait a minute, the logs don't show the new message you added, or even the logging for the new entry. You can also see there are error messages above.
 
@@ -95,15 +95,11 @@ If you wait a while longer, you can see that the service is continually restarti
 
 In the Liferay Cloud console, search the application logs for signs of what went wrong with the microservice. Use the Logs page so you can use filtering and searching tools to find relevant information.
 
-1. Select *Logs* from the left-side menu.
-
-1. On the Logs page, make sure *Application logs* is selected from the drop-down menu at the top of the screen.
+1. While on the Logs page, make sure *Application logs* is selected from the drop-down menu at the top of the screen.
 
    You only have one client extension service running, so there's no need to filter by service.
 
 1. Look for some clue related to the new variables you added by searching for the term "feedback".
-
-   ![Search the term "feedback" to find error messages or whole stack traces with it.](./troubleshooting-a-microservice-in-the-cloud-console/images/03.png)
 
 The logs filter down to a complete stack trace, where the root `Exception` is clearly related to the variable you added via injection.
 
@@ -119,9 +115,7 @@ Spring Boot can inject values from environment variables with the same name in t
 
 1. Click *Services* in the left-side menu to return to where your `liferaysampleetcspringboot` service appears.
 
-1. Click the `liferaysampleetcspringboot` service.
-
-1. Click the *Environment Variables* tab.
+1. Click the `liferaysampleetcspringboot` service to see its environment variables.
 
 1. Add a new environment variable to the Regular variables list. Use `EXISTING_FEEDBACK` for the key and add `2` as the value (for the two entries you've created so far).
 
@@ -157,7 +151,7 @@ Try testing the new changes one more time.
 
 1. Click *Submit* on your input object's form.
 
-1. Go back to the Cloud console again and navigate to the `liferaysampleetcspringboot` service page to see the logs.
+1. Go back to the Cloud console again and click *Logs*.
 
 ![The object action client extension worked and your new logging shows up where expected.](./troubleshooting-a-microservice-in-the-cloud-console/images/06.png)
 

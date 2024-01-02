@@ -167,11 +167,9 @@ Now that you've triggered the object action, check the Spring Boot application's
 
 1. Log into the Cloud console and navigate to your UAT environment.
 
-1. Click *Services* to see the full list of your deployed microservices.
+1. Click *Logs* on the left side of the screen.
 
-1. Select the `liferaysampleetcspringboot` service.
-
-The Logs tab appears by default on the service's page, and you can see the Spring Boot application logs printing out the object data Liferay sent to it.
+Now you can see the `liferaysampleetcspringboot` service's logs, and you can see the Spring Boot application logs printing out the object data Liferay sent to it.
 
 ![Check out the logs to see the results of Liferay triggering your object action client extension.](./deploying-and-managing-a-microservice-client-extension-project/images/07.png)
 

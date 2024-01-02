@@ -14,6 +14,12 @@ function getNextSlideIndex() {
 	return slideIndex;
 }
 
+function main() {
+	setInterval(function () {
+		showSlide(getNextSlideIndex());
+	}, 4000);
+}
+
 function showSlide(index) {
 	slides.forEach(slide => {
 		slide.classList.add('d-none');
@@ -22,12 +28,6 @@ function showSlide(index) {
 	const nextSlide = slides[index];
 
 	nextSlide.classList.remove('d-none');
-}
-
-function main() {
-	setInterval(function () {
-		showSlide(getNextSlideIndex());
-	}, 4000);
 }
 
 main();

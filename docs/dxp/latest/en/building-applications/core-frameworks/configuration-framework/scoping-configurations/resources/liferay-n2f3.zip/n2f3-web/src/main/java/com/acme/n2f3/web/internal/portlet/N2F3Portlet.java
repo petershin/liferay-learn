@@ -2,8 +2,8 @@ package com.acme.n2f3.web.internal.portlet;
 
 import com.acme.n2f3.web.internal.configuration.N2F3WebConfiguration;
 
+import com.liferay.portal.configuration.module.configuration.ConfigurationProvider;
 import com.liferay.portal.kernel.module.configuration.ConfigurationException;
-import com.liferay.portal.kernel.module.configuration.ConfigurationProvider;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 import com.liferay.portal.kernel.util.Portal;
 

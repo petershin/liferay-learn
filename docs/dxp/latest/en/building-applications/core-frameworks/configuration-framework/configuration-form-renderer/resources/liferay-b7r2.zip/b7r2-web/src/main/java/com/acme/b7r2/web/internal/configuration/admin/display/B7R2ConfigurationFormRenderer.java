@@ -3,7 +3,7 @@ package com.acme.b7r2.web.internal.configuration.admin.display;
 import com.acme.b7r2.web.internal.configuration.B7R2WebConfiguration;
 
 import com.liferay.configuration.admin.display.ConfigurationFormRenderer;
-import com.liferay.portal.kernel.module.configuration.ConfigurationProvider;
+import com.liferay.portal.configuration.module.configuration.ConfigurationProvider;
 import com.liferay.portal.kernel.util.ParamUtil;
 
 import java.io.IOException;

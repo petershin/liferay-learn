@@ -4,10 +4,10 @@ import com.acme.g8v3.internal.configuration.G8V3AbleConfiguration;
 
 import com.liferay.configuration.admin.display.ConfigurationVisibilityController;
 import com.liferay.portal.configuration.metatype.annotations.ExtendedObjectClassDefinition;
+import com.liferay.portal.configuration.module.configuration.ConfigurationProvider;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.module.configuration.ConfigurationException;
-import com.liferay.portal.kernel.module.configuration.ConfigurationProvider;
 
 import java.io.Serializable;
 

@@ -47,7 +47,7 @@ If you want, you can create and publish blank pages (or you can practice and pop
 
    ![Create a new site based on the site template you created.](./creating-a-new-site/images/03.png)
 
-Your new site is generated and you can use all the resources created within the Site Template or create new elements for your site!
+Your new site is generated and you can use all the resources created within the Site Template or create new elements for your site! Repeat the same process and create the B2B site as well.
 
 Try it. Don't forget to apply the Dialect theme to your new site as it is created using the Classic theme. This way you can maintain your standard site appearance.
 
@@ -57,3 +57,8 @@ During these lessons, you have learned how to create a site template, change you
 
 Phew! That was a lot. Keep on practicing! See you in the next module: [Site Look and Feel.]()
 
+## Relevant Concepts
+
+- [Using the Navigation Menus Application](https://learn.liferay.com/web/guest/w/dxp/site-building/site-navigation/using-the-navigation-menus-application)
+- [Configuring Menu Displays](https://learn.liferay.com/web/guest/w/dxp/site-building/site-navigation/configuring-menu-displays)
+- [Site Templates](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/site-templates)

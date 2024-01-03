@@ -3,11 +3,11 @@ uuid: f5ee36b8-e621-4c11-a21f-4d2fc3c98510
 ---
 # Creating the Master Page Template
 
-Master page templates provide a way to define elements common to every page, so you can maintain and manage them without having to deploy a plugin.
+*Master page templates* provide a way to define elements common to every page, so you can maintain and manage them without having to deploy a plugin.
 
 You can use the same master page template across an entire site or have unique templates for each page.
 
-In this exercise, you are creating a master page template called Main which is used to create the pages for the site template.
+In this exercise, you are creating a master page template called "Main" which is used to create the pages for the site template.
 
 ## Creating and Editing the Master Page Template
 
@@ -69,7 +69,7 @@ Second, alter the headings for the menu displays:
 
    The menu displays are going to be set later.
 
-Third, create a section where the user can subscribe to the company's mailing list to receive updates, offers, and other announcements directly to their inbox.
+Third, create a section where the user can subscribe to the company's mailing list to receive updates, offers, and other announcements directly to their inbox:
 
 1. In the last grid module, change the Dialect Text to `Stay in Touch`.
 
@@ -77,7 +77,7 @@ Third, create a section where the user can subscribe to the company's mailing li
 
 1. Change the Dialect Button's text to `Subscribe`.
 
-Now, it's time to organize the bottom grid.
+Now, it's time to organize the bottom grid:
 
 1. First, change the Dialect Button's texts to `Privacy Policy`, `Terms of Use`, and `Site Map`.
 
@@ -92,3 +92,8 @@ Your custom footer is ready.
 Once you are done editing the header and the footer, click *Publish Master*.
 
 Coming up next, let's [create a page based on the Main template and populate it.](./creating-the-about-us-page.md)
+
+## Relevant Concepts
+
+- [Master Page Templates](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/defining-headers-and-footers/master-page-templates)
+- [Using Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)

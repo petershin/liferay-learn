@@ -3,7 +3,7 @@ uuid: d6bccf72-8b83-4067-8bcc-065a7552da83
 ---
 # Creating the Careers Page
 
-The Careers page shows a list of available job postings. Once you click on one of the postings you are redirected to another page with more details about the job. To create the page, you'll use web content structures and templates to create and show the job postings and display page templates to show the details about the job.
+The Careers page shows a list of available job postings. Once you click on one of the postings you are redirected to another page with more details about the job. To create the page, use web content structures and templates to create and show the job postings and display page templates to show the details about the job.
 
 ## Importing the Web Content, Structures, and Templates
 
@@ -82,3 +82,10 @@ This is how the Careers page should look once it's finished:
 ![This is how the Careers page should look once it's edited.](./creating-the-careers-page/images/04.png)
 
 Now that the Careers Page is complete, let's [create the menu navigation and use our site template to generate another site.](./creating-a-new-site.md)
+
+## Relevant Concepts
+
+- [Web Content](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content)
+- [Using Collections](https://learn.liferay.com/web/guest/w/dxp/site-building/displaying-content/using-collections)
+- [Using Display Page Templates](https://learn.liferay.com/web/guest/w/dxp/site-building/displaying-content/using-display-page-templates)
+- [Using Multiple Display Page Templates to Create Multi-Step Applications](https://learn.liferay.com/web/guest/w/dxp/site-building/displaying-content/using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications)

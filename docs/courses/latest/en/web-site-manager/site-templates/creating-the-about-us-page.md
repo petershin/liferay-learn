@@ -5,7 +5,7 @@ uuid: 1acf98a4-c309-439b-89ff-8048fa997a2d
 
 Now that you have a master page, use it to create the pages and populate the site template.
 
-In this lesson, you'll use *compositions*, pre-built structures that speed up the process of page building, to create the pages that will populate the site template. With compositions, you'll add the elements to the right places in an existing structure to build your page.
+In this lesson, you'll use *compositions*, pre-built structures that speed up the process of page building, to create the pages that will populate the site template. With compositions, add the elements to the right places in an existing structure to build your page.
 
 Start by creating a page using the master page template from the last lesson.
 
@@ -23,7 +23,7 @@ Start by creating a page using the master page template from the last lesson.
 
    You are redirected to the page editor.
 
-All the created pages have the same structure set in the Master page: a header, the content in the middle, and a footer. Now, you'll populate the About Us page.
+All the created pages have the same structure set in the Master page: a header, the content in the middle, and a footer. Now, populate the About Us page.
 
 ## Populating the About Us Page
 
@@ -35,7 +35,7 @@ All the created pages have the same structure set in the Master page: a header, 
 
    ![The About Us composition is set and now you can edit its elements to create your About Us page.](./creating-the-about-us-page/images/02.png)
 
-Now, add some information and images to the composition. Start by editing the first row.
+Add some information and images to the composition. Start by editing the first row:
 
 1. Select the first paragraph element and double-click its content to edit it. Erase its placeholder text and enter this text instead:
 
@@ -50,19 +50,19 @@ Now, add some information and images to the composition. Start by editing the fi
 
 ![Edit the first row. Add text and images to the composition.](./creating-the-about-us-page/images/03.gif)
 
-Now, edit the second row.
+Now, edit the second row:
 
 1. Repeat the last step and choose image `02`.
 
 1. Enter this text in the paragraph in the middle:
 
    ```
-   In the early days, the Andersons scouted thrift stores and garage sales, carefully collecting discarded eyeglass frames and lenses. These seemingly forgotten parts were meticulously refurbished and transformed into unique, eco-friendly eyewear creations.
+   In the early days, the Andersons scouted thrift stores and garage sales, carefully collecting discarded eyeglass frames and lenses. These seemingly forgotten parts were refurbished meticulously and transformed into unique, eco-friendly eyewear creations.
    ```
 
 1. Select image `03` for the image on the right.
 
-Edit the third row.
+Next, edit the third row:
 
 1. Select image `04` for the image on the left and enter this text into the paragraph on the right:
 
@@ -70,7 +70,7 @@ Edit the third row.
    Today, Clarity has over 100 stores and offices worldwide, each exemplifying our commitment to excellence in eyewear. From our flagship stores in major fashion capitals to our regional offices dedicated to serving our B2B partners, our presence is a testament to the enduring values of innovation and quality that have shaped our brand.
    ```
 
-Edit the third row.
+Edit the fourth row:
 
 1. Enter this text into the paragraph:
 
@@ -80,7 +80,7 @@ Edit the third row.
 
 ![The first rows of the About Us page are complete.](./creating-the-about-us-page/images/04.png)
 
-Edit the cards. They are going to hold information about the main Clarity offices. They have an image (a picture of the office), a title (the name of the office), a paragraph (information about the office), and a link (to redirect the user to the office's page).
+Last, edit the cards. They hold information about the main Clarity offices: an image (a picture of the office), a title (the name of the office), a paragraph (information about the office), and a link (to redirect the user to the office's page).
 
 1. Use the information and the instructions in the table below to fill in the cards:
 
@@ -109,3 +109,9 @@ Once the elements are in place, click *Publish* at the top right corner of the p
 ![With the cards filled, the About Us page is complete.](./creating-the-about-us-page/images/05.png)
 
 Now that the About Us Page is complete, let's [create the Contact Us page.](./creating-the-contact-us-page.md)
+
+## Relevant Concepts
+
+- [Creating Pages](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/adding-pages)
+- [Using Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
+- [Saving Fragment Compositions](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions)

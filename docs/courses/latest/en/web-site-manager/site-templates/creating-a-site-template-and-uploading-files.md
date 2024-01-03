@@ -41,7 +41,7 @@ Once in the virtual instance, create the site template that will be used to crea
 
 ## Change the Site's Theme
 
-For this exercise, you'll use the Dialect theme with a style book designed for this theme. To alter the theme for your site,
+For this exercise, use the Dialect theme with a style book designed for this theme. To alter the theme for your site,
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Pages* (1).
 
@@ -55,7 +55,7 @@ For this exercise, you'll use the Dialect theme with a style book designed for t
 
 ## Import Resources
 
-1. Download the resources for [this exercise](./liferay-h2a2.zip).
+1. Download the [resources for this exercise](./liferay-h2a2.zip).
 
    ```bash
    curl https://resources.learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-h2a2.zip -O
@@ -96,7 +96,9 @@ The style book is now in place. Use it to standardize your site's appearance.
 
    ![Import the documents and media .lar file.](./creating-a-site-template-and-uploading-files/images/04.png)
 
-1. Use the default configurations and click *Import*. Once the process is finished, close the modal. You can use the imported images throughout the site template now.
+1. Use the default configurations and click *Import*. Once the process is finished, close the modal.
+
+You can use the imported images throughout the site template now.
 
 ### Import Fragments and Compositions
 
@@ -108,6 +110,20 @@ The style book is now in place. Use it to standardize your site's appearance.
 
 1. Click *Select File* and select the `03-glance-custom-fragments-and-compositions.zip` file &rarr; *Import*.
 
-1. Once the process is finished, click *Done*. You can use the custom fragments and compositions throughout the site template now.
+1. Once the process is finished, click *Done*.
+
+You can use the custom fragments and compositions throughout the site template now.
+
+The rest of the files will be used in future lessons.
 
 Next, let's [create the master page template.](./creating-the-master-page-template.md)
+
+## Relevant Concepts
+
+- [Virtual Instances](https://learn.liferay.com/web/guest/w/dxp/system-administration/configuring-liferay/virtual-instances)
+- [Site Templates](https://learn.liferay.com/web/guest/w/dxp/site-building/sites/site-templates)
+- [Changing Your Site's Appearance](https://learn.liferay.com/web/guest/w/dxp/getting-started/changing-your-sites-appearance)
+- [Using a Style Book to Standardize Site Appearance](https://learn.liferay.com/web/guest/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance)
+- [Documents and Media](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/documents-and-media)
+- [Using Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)
+- [Saving Fragment Compositions](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions)

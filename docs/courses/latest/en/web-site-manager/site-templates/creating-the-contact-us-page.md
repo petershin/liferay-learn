@@ -3,7 +3,7 @@ uuid: e4b6429d-a6c5-410a-a3e6-a34c4448f848
 ---
 # Creating the Contact Us Page
 
-The Contact Us page has a form users should fill if they want to contact the company. To create this form, you'll first import an object definition and map it to a Form Container fragment.
+The Contact Us page has a form users should fill out if they want to contact the company. To create this form, import an object definition and map it to a Form Container fragment.
 
 ## Importing the Object Definition
 
@@ -54,6 +54,8 @@ Alter the elements in the composition. Use the information in the table below:
 
 Add your Form Container to the page and map it to the Contact Us Form object definition. The existing form container with a warning was left in the composition just so you know where to place your form container.
 
+<!-- Or is it better to take the container out of the composition and tell the user to place the fragment in the container? -->
+
 1. Look at the Fragments and Widgets tab on the left of the page editor and search for "Form Container".
 
    The form container is only available if you have an object definition in place.
@@ -90,3 +92,10 @@ This is how the Contact Us page should look like once it is finished:
 ![The Contact Us page should look like this once it's finished.](./creating-the-contact-us-page/images/05.png)
 
 Now that the Contact Us Page is complete, let's [create the Careers page.](./creating-the-careers-page.md)
+
+## Relevant Concepts
+
+- [Creating and Managing Objects](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects)
+- [Exporting and Importing Object Definitions](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/creating-and-managing-objects/exporting-and-importing-object-definitions)
+- [Using Fragments to Build Forms](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/using-fragments-to-build-forms)
+- [Personalizing Custom Forms Using Form Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/personalizing-custom-forms-using-form-fragments)

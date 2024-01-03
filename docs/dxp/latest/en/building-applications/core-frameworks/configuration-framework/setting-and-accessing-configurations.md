@@ -62,7 +62,7 @@ In the sample project, the `N2F3WebConfiguration.java` file is the configuration
 
 ```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/configuration/N2F3WebConfiguration.java
 :language: java
-:lines: 5-17
+:lines: 7-25
 ```
 
 Note, for this example interface the scope is set to `Scope.COMPANY`. See [Scoping Configurations](./scoping-configurations.md) for more information.
@@ -92,7 +92,7 @@ Next, see how the configuration is read by the MVC Portlet.
     ```{literalinclude} ./scoping-configurations/resources/liferay-n2f3.zip/n2f3-web/src/main/java/com/acme/n2f3/web/internal/portlet/N2F3Portlet.java
     :dedent: 1
     :language: java
-    :lines: 44-51
+    :lines: 37-43
     ```
 
     The configuration object is added to the request object and can now be read from the request of the application's JSP.

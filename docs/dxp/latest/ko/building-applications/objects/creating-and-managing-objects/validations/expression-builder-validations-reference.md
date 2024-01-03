@@ -1,16 +1,16 @@
 # 식 작성기 유효성 검사 참조
 
-{bdg-secondary}`라이프레이 7.4 U67+ 및 GA67+`
+{bdg-secondary}`liferay 7.4 U67+/GA67+`
 
 사용자 정의 개체를 사용하면 Liferay의 Expression Builder를 사용하여 필드 유효성 검사를 만들 수 있습니다. 이 도구는 사전 정의된 필드, 연산자 및 함수를 사용하여 복잡한 유효성 검사 규칙을 신속하게 정의할 수 있는 통합 편집기를 제공합니다. 조건 측면 패널에서 사용 가능한 요소를 찾아볼 수 있습니다.
 
 ```{important}
-식 작성기 유효성 검사는 텍스트, 숫자, 날짜 및 부울 필드 유형에만 사용할 수 있습니
+식 작성기 유효성 검사는 텍스트, 숫자, 날짜 및 부울 필드 유형에만 사용할 수 있습니다.
 ```
 
 ## 텍스트 필드
 
-Liferay는 텍스트 및 긴 텍스트 필드에 대해 다음 연산자 및 기능을 제공합니다. 이러한 필드 중 하나를 인수로 사용할 수 있습니다. 일부 요소의 경우 문자열 값을 추가하여 필드 값과 비교할 수도 있습니다(예: `"foo"`, `"[A-Za-z]{1,50}"`).
+Liferay는 텍스트 및 긴 텍스트 필드에 대해 다음 연산자와 기능을 제공합니다. 이러한 필드 중 하나를 인수로 사용할 수 있습니다. 일부 요소의 경우 문자열 값을 추가하여 필드 값과 비교할 수도 있습니다(예: `"foo"`, `"[A-Za-z]{1,50}"`).
 
 ### 붙임
 
@@ -30,7 +30,7 @@ condition([condition], [return-value])
 
 ### 포함(텍스트 포함)
 
-텍스트 필드에 특정 문자열 값이 포함되어 있는지 확인하고 부울을 반환합니다. 필드에 값이 **포함되어 있지 않으면** `false`를 반환합니다.
+텍스트 필드에 특정 문자열 값이 포함되어 있는지 확인하고 부울을 반환합니다. 필드에 값이 _포함되어 있지 않으면_ `false`를 반환합니다.
 
 ```
 contains([textField], "[string]")
@@ -38,7 +38,7 @@ contains([textField], "[string]")
 
 ### 포함하지 않음(텍스트 포함)
 
-텍스트 필드에 특정 문자열 값이 포함되어 있지 않은지 확인하고 부울을 반환합니다. 필드에 값이 **포함되어 있으면** 'false'를 반환합니다.
+텍스트 필드에 특정 문자열 값이 포함되어 있지 않은지 확인하고 부울을 반환합니다. 필드에 값이 _포함되어 있으면_ 'false'를 반환합니다.
 
 ```
 NOT(contains([textField], "[string]"))
@@ -70,7 +70,7 @@ isEmpty([textField])
 
 ### 같음(텍스트 포함)
 
-텍스트 필드가 특정 문자열 값과 같은지 확인하고 부울을 반환합니다. **같지** 않으면 'false'를 반환합니다.
+텍스트 필드가 특정 문자열 값과 같은지 확인하고 부울을 반환합니다. _같지_ 않으면 'false'를 반환합니다.
 
 ```
 [textField] == "[string]"
@@ -78,7 +78,7 @@ isEmpty([textField])
 
 ### 다음과 같지 않음(텍스트 포함)
 
-텍스트 필드가 특정 문자열 값과 다른지 확인하고 부울을 반환합니다. **같으면** 'false'를 반환합니다.
+텍스트 필드가 특정 문자열 값과 다른지 확인하고 부울을 반환합니다. _같으면_ 'false'를 반환합니다.
 
 ```
 [textField] != "[string]"
@@ -116,7 +116,7 @@ condition([condition], [return-value])
 
 ### 포함(숫자 포함)
 
-숫자 필드에 특정 숫자 값이 포함되어 있는지 확인하고 부울을 반환합니다. 필드에 값이 **포함되어 있지 않으면** `false`를 반환합니다.
+숫자 필드에 특정 숫자 값이 포함되어 있는지 확인하고 부울을 반환합니다. 필드에 값이 _포함되어 있지 않으면_ `false`를 반환합니다.
 
 ```
 contains([numericField], [number])
@@ -124,7 +124,7 @@ contains([numericField], [number])
 
 ### 포함하지 않음(숫자 포함)
 
-숫자 필드에 특정 숫자 값이 포함되어 있는지 확인하고 부울을 반환합니다. 필드에 값이 **포함되어 있으면** 'false'를 반환합니다.
+숫자 필드에 특정 숫자 값이 포함되어 있는지 확인하고 부울을 반환합니다. 필드에 값이 _포함되어 있으면_ 'false'를 반환합니다.
 
 ```
 NOT(contains([numericField], [number]))
@@ -132,7 +132,7 @@ NOT(contains([numericField], [number]))
 
 ### 십진수임
 
-숫자 필드가 소수인지 확인하고 부울을 반환합니다. 필드가 십진수가 **아닌** 경우 'false'를 반환합니다.
+숫자 필드가 소수인지 확인하고 부울을 반환합니다. 필드가 십진수가 _아닌_ 경우 'false'를 반환합니다.
 
 ```
 isDecimal([numericField])
@@ -140,7 +140,7 @@ isDecimal([numericField])
 
 ### 정수임
 
-숫자 필드가 정수인지 확인하고 부울을 반환합니다. 필드가 정수가 **아닌** 경우 'false'를 반환합니다.
+숫자 필드가 정수인지 확인하고 부울을 반환합니다. 필드가 정수가 _아닌_ 경우 'false'를 반환합니다.
 
 ```
 isInteger([numericField])
@@ -148,7 +148,7 @@ isInteger([numericField])
 
 ### 같음(숫자 포함)
 
-숫자 필드가 특정 숫자 값과 같은지 확인하고 부울을 반환합니다. **같지** 않으면 'false'를 반환합니다.
+숫자 필드가 특정 숫자 값과 같은지 확인하고 부울을 반환합니다. _같지_ 않으면 'false'를 반환합니다.
 
 ```
 [numericField] == [number]
@@ -156,7 +156,7 @@ isInteger([numericField])
 
 ### 같지 않음(숫자 포함)
 
-숫자 필드가 특정 숫자 값과 다른지 확인하고 부울을 반환합니다. **같으면** 'false'를 반환합니다.
+숫자 필드가 특정 숫자 값과 다른지 확인하고 부울을 반환합니다. _같으면_ 'false'를 반환합니다.
 
 ```
 [numericField] != [number]
@@ -164,7 +164,7 @@ isInteger([numericField])
 
 ### 다음보다 큼
 
-숫자 필드가 특정 숫자 값보다 큰지 확인하고 부울을 반환합니다. 필드가 **더 크지** 않으면 'false'를 반환합니다.
+숫자 필드가 특정 숫자 값보다 큰지 확인하고 부울을 반환합니다. 필드가 _더 크지_ 않으면 'false'를 반환합니다.
 
 ```
 [numericField] > [number]
@@ -172,7 +172,7 @@ isInteger([numericField])
 
 ### 다음보다 크거나 같음
 
-숫자 필드가 특정 숫자 값보다 크거나 같은지 확인하고 부울을 반환합니다. 필드가 같거나 크지 **않으면** 'false'를 반환합니다.
+숫자 필드가 특정 숫자 값보다 크거나 같은지 확인하고 부울을 반환합니다. 필드가 같거나 크지 _않으면_ 'false'를 반환합니다.
 
 ```
 [numericField] >= [number]
@@ -180,7 +180,7 @@ isInteger([numericField])
 
 ### 다음보다 작음
 
-숫자 필드가 특정 숫자 값보다 작은지 확인하고 부울을 반환합니다. 필드가 **작지** 않으면 'false'를 반환합니다.
+숫자 필드가 특정 숫자 값보다 작은지 확인하고 부울을 반환합니다. 필드가 _작지_ 않으면 'false'를 반환합니다.
 
 ```
 [numericField] < [number]
@@ -188,7 +188,7 @@ isInteger([numericField])
 
 ### 다음보다 작거나 같음
 
-숫자 필드가 특정 숫자 값보다 작거나 같은지 확인하고 부울을 반환합니다. 필드가 같거나 작지 **않으면** 'false'를 반환합니다.
+숫자 필드가 특정 숫자 값보다 작거나 같은지 확인하고 부울을 반환합니다. 필드가 같거나 작지 _않으면_ 'false'를 반환합니다.
 
 ```
 [numericField] <= [number]
@@ -212,19 +212,19 @@ sum([numericField], [numericField])
 
 ## 날짜 필드
 
-Liferay는 날짜 필드에 대해 다음 연산자와 기능을 제공합니다. 모든 날짜 필드를 인수로 사용할 수 있습니다. 날짜 필드와 비교하기 위해 날짜 값을 설정할 수도 있습니다(예: `2020-03-19`).
+Liferay는 날짜 필드에 대해 다음 연산자와 기능을 제공합니다. 모든 날짜 필드를 인수 또는 매개변수로 사용할 수 있습니다. 또한 날짜 필드(예: `2020-03-19`)와 비교하기 위해 고정 날짜 값(`"yyyy-MM-dd"`)을 입력할 수 있습니다.
 
 ### 날짜 비교
 
-날짜 필드의 값이 설정된 값과 동일한지 확인합니다. 필드가 날짜와 일치하지 않으면 'false'를 반환합니다.
+날짜 필드의 값이 매개변수와 동일한지 확인합니다. 필드가 매개변수와 일치하지 않으면 'false'를 반환합니다.
 
 ```
-compareDates([dateField], [yyyy-MM-dd])
+compareDates([dateField], [parameter])
 ```
 
 ### 조건(날짜 포함)
 
-사용자 입력이 하나 이상의 조건을 충족하는지 확인하고 부울 값을 반환합니다. 이 함수는 `if` 문처럼 작동합니다. 각 표현식에는 하나 이상의 '조건'(예: 'dateFieldName == 2020-01-01')이 포함되어 있으며 'true' 또는 'false'를 반환합니다. 동일한 표현식에 여러 조건을 추가하고 조건 중 어느 것도 충족되지 않는 경우 반환 값을 결정할 수 있습니다(예: `dateFieldName == 2020-01-01, dateFieldName != 2022-01-01, true, false`).
+사용자 입력이 하나 이상의 조건을 충족하는지 확인하고 부울 값을 반환합니다. 이 함수는 `if` 문처럼 작동합니다. 각 표현식에는 하나 이상의 '조건'(예: 'dateFieldName == 2020-01-01')이 포함되어 있으며 'true' 또는 'false'를 반환합니다. 동일한 표현식에 여러 조건을 추가하고 조건 중 어느 것도 충족되지 않는 경우 반환 값을 결정할 수 있습니다(예: `dateFieldName == 2020-01-01, dateFieldName != 2022-01-01, true, false`). <!--TASK: Update Example-->
 
 ```
 condition([condition], [return-value])
@@ -232,11 +232,23 @@ condition([condition], [return-value])
 
 ### 미래 날짜
 
-날짜 필드의 값이 미래인지 확인하고 부울을 반환합니다. 필드가 미래 날짜가 **아닌** 경우 'false'를 반환합니다.
+날짜 필드의 값이 설정된 매개변수와 같거나 그 이후인지 확인합니다. _아님_인 경우, 함수는 `false`를 반환합니다.
 
 ```
-futureDates([dateField], "[yyyy-MM-dd]")
+futureDates([dateField], [parameter])
 ```
+
+예를 들어,
+
+```
+futureDates(endDate, startDate)
+```
+
+```
+futureDates(endDate, "2024-01-01")
+```
+
+첫 번째 예에서는 'endDate'가 'startDate' 값과 같거나 그 이후인지 확인합니다. 두 번째 예에서는 'endDate' 값이 '2024-01-01'과 같거나 그 이후인지 확인합니다.
 
 ### 이전 값(날짜 포함)
 
@@ -248,21 +260,43 @@ oldValue([dateField])
 
 ### 지난 날짜
 
-날짜 필드의 값이 과거인지 확인하고 부울을 반환합니다. 필드가 과거 날짜가 **아닌** 경우 'false'를 반환합니다.
+날짜 필드의 값이 설정된 매개변수와 같거나 이전인지 확인합니다. _아님_인 경우, 함수는 'false'를 반환합니다.
 
 ```
-pastDates([dateField], "[yyyy-MM-dd]")
+pastDates([dateField], [parameter])
 ```
+
+예를 들어,
+
+```
+pastDates(startDate, endDate)
+```
+
+```
+pastDates(startDate, "2024-01-01")
+```
+
+첫 번째 예에서는 `startDate`가 `endDate` 값과 같거나 이전인지 확인합니다. 두 번째는 `startDate` 값이 `2024-01-01`과 같거나 이전인지 확인합니다.
 
 ### 범위
 
-기간이 과거 날짜로 시작하고 미래 날짜로 끝나는지 확인합니다. 필드가 기간 내에 **없으면** `false`를 반환합니다.
+날짜 필드 값이 과거 날짜로 시작하고 미래 날짜로 끝나는지 확인합니다. 날짜가 범위 내에 _없으면_ 'false'를 반환합니다.
 
 ```
-pastDates([dateField], "[yyyy-MM-dd]")
+futureDates([dateField], [parameter])
 AND
-futureDates([dateField], "[yyyy-MM-dd]")
+pastDates([dateField], [parameter])
 ```
+
+예를 들어,
+
+```
+futureDates(endDate, startDate)
+AND
+pastDates(startDate, endDate)
+```
+
+이는 `endDate` 값이 `startDate` 값과 같은지/이후인지, 그리고 `startDate` 값이 `endDate` 값과 같거나 이전인지 여부를 확인합니다.
 
 ## 수학 연산자
 
@@ -304,9 +338,9 @@ futureDates([dateField], "[yyyy-MM-dd]")
 
 논리 연산자는 여러 요소와 함께 사용되어 여러 요소의 복잡한 조건을 집계합니다. 현재 Expression Builder 유효성 검사에서는 'AND' 및 'OR' 연산자를 제공합니다.
 
-* `AND`: 종속 관계를 나타냅니다.
+- `AND`: 종속 관계를 나타냅니다.
 
-* `OR`: 독립적인 관계를 나타냅니다.
+- `OR`: 독립적인 관계를 나타냅니다.
 
 다음 예에서 `AND` 절은 서로 종속되어 있으므로 함께 사용해야 합니다. 대조적으로 'OR' 절은 논리적으로 분리되어 있으며 서로 종속되지 않습니다.
 
@@ -341,7 +375,7 @@ match(fieldName, "[A-Za-z][0-9]{1,50}")
 항목이 다음 비밀번호 기준을 충족하는지 확인합니다.
 
 * 8자 이상
-* * 최소 5명의 고유 문자
+* 최소 5명의 고유 문자
 * 기호 1개 이상
 * 숫자 1개 이상
 * 공백은 허용되지 않습니다.
@@ -378,6 +412,6 @@ futureDates(fieldName, startsFrom, responseDate, years, 0, endsOn, responseDate,
 
 ## 관련 주제
 
-* [개체 만들기](../creating-objects.md)
-* [개체에 필드 추가](../fields/adding-fields-to-objects.md)
-* [사용자 지정 유효성 검사 추가](../validations/adding-field-validations.md)
+* [객체 생성](../creating-objects.md) 
+* [개체에 필드 추가](../fields/adding-fields-to-objects.md) 
+* [필드 유효성 검사 추가](../validations/adding-field-validations.md) 

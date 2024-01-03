@@ -1,13 +1,13 @@
-# 'nestedFields'를 사용하여 항목 기록 감사
+# NestedField를 사용하여 항목 기록 감사
 
-{bdg-secondary}`Liferay 7.4 U72+/GA72+`
+{bdg-secondary}`liferay 7.4 U72+/GA72+`
 
-객체 정의에 대해 [항목 기록 활성화](../../creating-and-managing-objects/auditing-object-events.md#enabling-entry-history)할 때 'nestedFields' 매개변수를 다음과 함께 사용할 수 있습니다. 항목 이벤트를 감사하는 REST API입니다. GET 요청 경로에 `nestedFields=auditEvents`를 추가합니다(예: `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`).
+개체 정의에 대해 항목 기록을 활성화하면 [REST API와 함께 'nestedFields' 매개변수를 사용](../../creating-and-managing-objects/auditing-object-events.md#enabling-entry-history) 항목 이벤트를 감사할 수 있습니다. GET 요청 경로에 `nestedFields=auditEvents`를 추가합니다(예: `http://localhost:8080/o/c/tickets/?nestedFields=auditEvents`).
 
-시작하려면 새로운 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance) 하고 제공된 튜토리얼 코드를 [prepare](#preparing-the-sample-code) 하세요. 그런 다음 [스크립트를 실행](#using-the-sample-code) 하여 항목을 생성하고 업데이트하고 `nestedFields` 매개변수를 사용하여 해당 변경 사항을 쿼리합니다.
+시작하려면 새로운 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance)하고 제공된 튜토리얼 코드를 [준비](#preparing-the-sample-code)하세요. 그런 다음 [스크립트를 실행](#using-the-sample-code)하여 항목을 생성하고 업데이트하고 `nestedFields` 매개변수를 사용하여 해당 변경 사항을 쿼리합니다.
 
 ```{important}
-REST API를 사용하여 항목 기록을 보려면 해당 항목에 대한 '보기' 및 '개체 항목 기록' 권한이 모두 필요합니다. [권한 프레임워크 통합](../permissions-framework-integration.md)을 참조하세요.
+REST API를 사용하여 항목 기록을 보려면 항목에 대한 '보기' 및 '개체 항목 기록' 권한이 모두 필요합니다. [권한 프레임워크 통합](../permissions-framework-integration.md) 을 참조하세요.
 ```
 
 ## Liferay 인스턴스 설정
@@ -19,21 +19,21 @@ REST API를 사용하여 항목 기록을 보려면 해당 항목에 대한 '보
 
 ### 영구 감사 메시지 프로세서 활성화
 
-1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png)) &rarr; **제어판** 탭, &rarr; **시스템 설정** 을 엽니다.
+1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png)) &rarr; _제어판_ 탭, &rarr; _시스템 설정_을 엽니다.
 
-1. 보안에서 **감사** 를 클릭하고 **지속성 메시지 감사 메시지 프로세서** 탭으로 이동합니다.
+1. 보안에서 _감사_를 클릭하고 _지속성 메시지 감사 메시지 프로세서_ 탭으로 이동합니다.
 
-1. **활성화** 를 선택하세요.
+1. _활성화_를 선택하세요.
 
-1. **저장** 을 클릭하세요.
+1. _저장_을 클릭하세요.
 
    ![Go to the Persistent Message Audit Message Processor tab and check Enabled.](./using-nestedfields-to-audit-entry-history/images/01.png)
 
 ### 객체 정의 생성
 
-1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다.** .
+1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 후 \*개체를 클릭합니다. \*.
 
-1. [Create](../../creating-and-managing-objects/creating-objects.md#creating-object-drafts) 개체 초안.
+1. [개체](../../creating-and-managing-objects/creating-objects.md#creating-object-drafts) 을 만듭니다.
 
    | 분야    | 가치      |
    | :---- | :------ |
@@ -47,9 +47,9 @@ REST API를 사용하여 항목 기록을 보려면 해당 항목에 대한 '보
    | :----- | :----- | :- | :--- |
    | `Name` | `name` | 원본 | ✔    |
 
-1. 세부정보 탭에서 **항목 기록 활성화** 를 전환하세요.
+1. 세부정보 탭에서 _항목 기록 활성화_를 전환하세요.
 
-1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 개체.
+1. [개체를 게시](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 합니다.
 
 게시되면 Headless API를 통해 객체에 액세스할 수 있습니다.
 
@@ -58,7 +58,7 @@ REST API를 사용하여 항목 기록을 보려면 해당 항목에 대한 '보
 샘플 코드를 다운로드하고 압축을 풉니다.
 
 ```bash
-curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-g4m3.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/understanding-object-integrations/using-custom-object-apis/liferay-g4m3.zip -O
 ```
 
 ```bash
@@ -68,7 +68,7 @@ unzip liferay-g4m3.zip
 샘플 코드에는 개체 항목을 생성, 업데이트 및 쿼리하기 위한 셸 스크립트가 포함되어 있습니다.
 
 ```{tip}
-사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [객체 Headless Framework 통합](../../understanding-object-integrations/using-custom-object-apis.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택하세요.
+사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [개체 Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md) 을 참조하세요. `[서버]:[포트]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택하세요.
 ```
 
 ## 샘플 코드 사용
@@ -79,7 +79,7 @@ unzip liferay-g4m3.zip
    cd liferay-g4m3/curl
    ```
 
-2. `Able_POST_ToCompany`를 실행하여 세 개의 `Able` 항목을 생성합니다.
+1. `Able_POST_ToCompany`를 실행하여 세 개의 `Able` 항목을 생성합니다.
 
    ```bash
    ./Able_POST_ToCompany.sh
@@ -111,13 +111,13 @@ unzip liferay-g4m3.zip
    }
    ```
 
-3. `able-one` ERC로 `Able_PATCH_ByExternalReferenceCode`를 실행합니다.
+1. `able-one` ERC로 `Able_PATCH_ByExternalReferenceCode`를 실행합니다.
 
    ```bash
    ./Able_PATCH_ByExternalReferenceCode.sh able-one
    ```
 
-   이렇게 하면 항목의 이름 필드가 두 번 업데이트됩니다.
+   그러면 항목의 이름 필드가 두 번 업데이트됩니다.
 
    ```json
    {
@@ -284,5 +284,5 @@ unzip liferay-g4m3.zip
 
 ## 관련 주제
 
-* [개체 정의 이벤트 감사](../../creating-and-managing-objects/auditing-object-events.md)
-* [`nestedFields` 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md)
+* [개체 이벤트 감사](../../creating-and-managing-objects/auditing-object-events.md) 
+* [NestedFields를 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md) 

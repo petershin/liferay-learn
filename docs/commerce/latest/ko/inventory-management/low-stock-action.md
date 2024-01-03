@@ -1,40 +1,40 @@
 # 재고 부족 조치
 
-SKU 재고가 특정 임계값 아래로 떨어지면 낮은 재고 조치가 트리거됩니다. 기본적으로 Liferay에는 재고가 임계값 아래로 떨어지면 매장에서 제품을 제거하는 게시되지 않은 재고 부족으로 설정 작업이 포함됩니다. 사용자 지정 재고 부족 조치를 생성할 수도 있습니다. 자세한 내용은 [맞춤형 재고 부족 활동 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) 참조하십시오.
+SKU 재고가 특정 임계값 아래로 떨어지면 재고 부족 조치가 트리거됩니다. 기본적으로 Liferay에는 재고가 임계값 아래로 떨어지면 매장에서 제품을 제거하는 _미공개로 설정_ 재고 부족 작업이 포함되어 있습니다. 맞춤형 재고 부족 작업을 생성할 수도 있습니다. 자세한 내용은 맞춤형 [저재고 활동 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) 참조하세요.
 
-제품에 대한 재고 부족 조치를 설정하려면
+제품에 대한 재고 부족 조치를 설정하려면,
 
-1. **글로벌 메뉴**(![Global Menu](../images/icon-applications-menu.png))을 열고 **상거래** &rarr; **제품** 로 이동합니다.
+1. _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _제품_으로 이동합니다.
 
-1. 제품을 선택하고 **구성** 탭으로 이동합니다.
+1. 제품을 선택하고 _구성_ 탭으로 이동합니다.
 
-1. 인벤토리 섹션 아래의 드롭다운 메뉴에서 **재고 부족 조치** 선택합니다.
+1. 재고 섹션 아래 드롭다운 메뉴에서 _재고 부족 조치_를 선택합니다.
 
-1. **낮은 재고 임계값** 입력하여 작업을 트리거하는 수량을 결정합니다.
+1. _낮은 재고 임계값_을 입력하여 작업을 실행하는 수량을 결정하세요.
 
-   ![낮은 재고 조치를 선택하고 조치를 트리거하는 수량을 설정하십시오.](./low-stock-action/images/01.png)
+   ![Select a low stock action and set the quantity that triggers the action.](./low-stock-action/images/01.png)
 
-1. **게시** 클릭합니다.
+1. _게시_를 클릭하세요.
 
-일단 구성되면 제품 재고가 설정된 임계값 아래로 떨어질 때마다 재고 부족 조치가 실행됩니다.
+구성된 후에는 제품 재고가 설정된 임계값 아래로 떨어질 때마다 재고 부족 작업이 실행됩니다.
 
-## 상거래 2.1 이하
+## 커머스 2.1 이하
 
-낮은 스톡 동작을 구성하려면
+재고 부족 작업을 구성하려면
 
-1. **제어판** &rarr; **상거래** &rarr; **제품** 로 이동합니다.
+1. _제어판_ &rarr; _상거래_ &rarr; _제품_으로 이동합니다.
 
-1. 제품을 클릭하고 **구성** 탭을 선택합니다.
+1. 제품을 클릭하고 _구성_ 탭을 선택하세요.
 
-1. 인벤토리 섹션 아래 드롭다운 메뉴에서 **재고 부족 조치** 선택합니다.
+1. 재고 섹션 아래 드롭다운 메뉴에서 _재고 부족 조치_를 선택합니다.
 
-1. 조치에 대한 트리거 수량을 결정하려면 **낮은 재고 임계값** 입력하십시오.
+1. 해당 작업의 트리거 수량을 결정하려면 _낮은 재고 임계값_을 입력하세요.
 
-1. **게시** 클릭합니다.
+1. _게시_를 클릭하세요.
 
-일단 구성되면 제품 재고가 설정된 임계값 아래로 떨어질 때마다 선택한 재고 부족 조치가 트리거됩니다.
+일단 구성되면 제품 재고가 설정된 임계값 아래로 떨어질 때마다 선택된 재고 부족 조치가 트리거됩니다.
 
 ## 관련 주제
 
-* [제품 인벤토리 구성 참조](./product-inventory-configuration-reference-guide.md)
-* [맞춤형 저재고 작업 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md)
+* [제품 인벤토리 구성 참조](./product-inventory-configuration-reference-guide.md) 
+* [맞춤형 재고 부족 조치 구현](../developer-guide/managing-inventory/implementing-a-custom-low-stock-activity.md) 

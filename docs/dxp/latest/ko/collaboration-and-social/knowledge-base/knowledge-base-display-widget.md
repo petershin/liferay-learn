@@ -1,94 +1,115 @@
-# 기술 자료 표시 위젯
+# 기술 자료 디스플레이 위젯
 
-기술 자료 표시 위젯을 사용하면 게시된 기술 자료 문서를 위젯 또는 콘텐츠 페이지에 표시할 수 있습니다. 기본적으로 이 위젯은 기술 자료 홈 폴더의 기사를 표시합니다. 그러나 포함된 기사와 표시 방법을 사용자 정의할 수 있습니다.
+{bdg-secondary}`liferay 7.4 U72+/GA72+`
 
-위젯 메뉴의 **콘텐츠 관리** 에서 위젯을 찾을 수 있습니다.
+지식 베이스 표시 위젯을 사용하면 내장된 탐색, 댓글, 평가 및 소셜 미디어 링크가 있는 사이트 페이지에 게시된 기사를 표시할 수 있습니다. 기본적으로 이 위젯은 기술 자료 홈 폴더의 기사를 표시합니다. 포함할 기사를 사용자 정의할 수 있습니다.
 
-![Knowledge Base 표시 위젯은 위젯 메뉴의 콘텐츠 관리 아래에 나열됩니다.](./knowledge-base-display-widget/images/01.png)
+조각 및 위젯 측면 패널의 _콘텐츠 관리_에서 위젯을 찾을 수 있습니다.
+
+![The Knowledge Base Display widget appears under Content Management in the widget menu.](./knowledge-base-display-widget/images/01.png)
 
 ## 위젯 구성
 
-위젯에 표시되는 기사 또는 폴더를 결정하려면 다음 단계를 따르십시오.
+1. 기술 자료 표시 위젯이 포함된 페이지 편집을 시작합니다.
 
-1. 지식 기반 디스플레이 위젯이 배포된 페이지로 이동합니다.
+1. 위젯의 _옵션_ 버튼(![옵션 버튼](../../images/icon-actions.png))을 클릭하고 _구성_을 선택합니다.
 
-1. 위젯에 대한 **옵션** 버튼(![Options Button](../../images/icon-actions.png))을 클릭하고 **구성** 를 선택합니다.
+   ![Click the Options button and select Configuration.](./knowledge-base-display-widget/images/02.png)
 
-   ![위젯의 옵션 버튼을 클릭하고 구성을 선택합니다.](./knowledge-base-display-widget/images/02.png)
+1. 설정 탭의 콘텐츠 선택 아래에서 _선택_을 클릭하여 표시할 기사를 결정하세요.
 
-1. 구성 창의 **설정** 탭에서 **일반** 탭으로 이동하여 **선택** 을 클릭합니다.
+   ![In the Setup tab, click Select under Content Selection  to determine which articles to display.](./knowledge-base-display-widget/images/03.png)
 
-    ![구성 창의 설정 탭에서 선택을 클릭합니다.](./knowledge-base-display-widget/images/03.png)
+1. 개별 기사나 폴더에 대해 _선택_을 클릭하세요.
 
-1. 항목 선택 창에서 표시할 기사 또는 기사 폴더에 대해 **선택** 을 클릭하십시오.
+   또는 _이 폴더 선택_을 클릭하여 현재 폴더의 기사를 표시하세요.
 
-   또는 원하는 폴더를 클릭한 다음 **이 폴더 선택** 을 클릭하여 표시할 콘텐츠를 선택합니다.
+   ![Click Select for the desired article or folder, or click Select this Folder to select the current folder.](./knowledge-base-display-widget/images/04.png)
 
-   ![원하는 기사 또는 폴더에 대해 선택을 클릭하거나 이 폴더 선택을 클릭하여 현재 폴더를 선택합니다.](./knowledge-base-display-widget/images/04.png)
+1. 설정 및 활성화에서 위젯에 사용할 기능을 결정합니다. 옵션에는 다음이 포함됩니다.
 
-1. **저장** 을 클릭하고 구성 창을 닫습니다.
+   * 설명 활성
+   * 등급을 가능하게 하십시요
+   * 자산 항목 표시
+   * 첨부 파일 표시
+   * 관련 애셋 활성
+   * 조회수 증가 활성
+   * 구독 활성
+   * 이력 활성
+   * 인쇄를 가능하게 하십시오
 
-기술 자료 표시 위젯에는 다음과 같은 추가 구성 옵션도 있습니다.
+   ![Determine which Knowledge Base features to use in the widget.](./knowledge-base-display-widget/images/05.png)
 
-* 전시 조정
-* 통신 설정
-* 공유 설정
-* 범위 설정
+1. 소셜 북마크에서 포함할 소셜 미디어 링크와 표시 방법을 결정합니다.
 
-## 위젯의 기능 탐색
+   ![Determine which social media links to include and how to display them.](./knowledge-base-display-widget/images/06.png)
 
-Knowledge Base Display의 내비게이션 메뉴 및 디스플레이 옵션은 전체 페이지 위젯의 훌륭한 후보입니다. 기사 폴더를 표시하는 경우 위젯 왼쪽의 탐색에 폴더의 모든 기사에 대한 링크가 표시됩니다.
+1. 섹션 선택기의 폴더에 접두사를 추가합니다.
 
-![왼쪽의 탐색 메뉴에는 기사 링크가 표시됩니다.](./knowledge-base-display-widget/images/05.png)
+   ![Add a prefix to folders in the section selector.](./knowledge-base-display-widget/images/07.png)
 
-위젯 오른쪽의 보기 영역에는 폴더의 주요 기사(우선 순위가 **인 기사**)가 표시됩니다. 내비게이션에서 기사를 클릭하면 보기 영역에 표시됩니다. 현재 표시된 기사의 링크는 탐색에서 굵게 표시됩니다. 제안 섹션 앞의 문서 하단에 있는 링크를 클릭하여 문서 간에 이동할 수도 있습니다.
+1. 최대 중첩 수준을 설정합니다. 이에 따라 기사 계층 구조가 표시되는 방식이 결정됩니다.
 
-![왼쪽의 탐색과 오른쪽의 기사가 표시됩니다.](./knowledge-base-display-widget/images/06.png)
+   ![Set a maximum nesting level.](./knowledge-base-display-widget/images/08.png)
 
-기술 자료 표시는 문서 계층도 표시할 수 있습니다. 하위 기사가 있는 기사를 보면 탐색 트리가 확장되어 하위 기사에 대한 링크가 표시됩니다. 확장된 노드는 다른 최상위 문서를 볼 때 축소됩니다.
+   다음 계층 구조의 시나리오를 고려해보세요.
 
-위젯 상단에 있는 링크는 기사에서 다음 작업을 노출합니다.
+   ```
+   제1조
+   ├── 제1.1조
+   │ ├── 제1.1.1
+   │ └── 제1.1.2
+   └── 제1.2
+       ├── 제1.2.1
+       └── 제1.2.2조
+   ```
 
-* 지식 베이스의 RSS 피드 구독
-* 현재 기사 구독
+   최대 중첩 수준을 '3' 이상으로 설정하면 이러한 기사는 세 가지 수준으로 중첩되어 표시됩니다. 그러나 최대 중첩 수준을 '2'로 설정하면 기사가 두 가지 수준으로 표시됩니다.
+
+   ```
+   제1
+   ├── 제1.1조
+   ├── 제1.1.1
+   ├── 제1.1.2
+   ├── 제1.2
+   ├── 제1.2.1
+   └── 제1.2.2조
+   ```
+
+1. _저장_을 클릭하세요.
+
+## 위젯 기능 살펴보기
+
+Knowledge Base Display의 탐색 메뉴와 표시 옵션은 전체 페이지 위젯에 적합한 후보입니다. 기사 폴더를 표시하는 경우 위젯 왼쪽의 탐색 기능에 해당 폴더의 모든 기사에 대한 링크가 표시됩니다. 기사가 [폴더](./managing-the-knowledge-base.md#adding-folders) 로 구성되어 있는 경우 이 위젯은 사용자에게 폴더 간 전환을 위한 선택기를 제공합니다.
+
+![The navigation menu on the left shows you article links.](./knowledge-base-display-widget/images/09.png)
+
+위젯 오른쪽의 보기 영역에는 폴더의 주요 기사가 표시됩니다. 탐색에서 기사를 클릭하면 보기 영역에 표시됩니다. 현재 표시된 기사의 링크는 탐색에서 굵게 표시됩니다. 기사 하단의 제안 섹션 앞에 있는 링크를 클릭하여 기사 간에 이동할 수도 있습니다.
+
+![The navigation on the left and the article on the right are displayed.](./knowledge-base-display-widget/images/10.png)
+
+기술 자료 표시에는 기사 계층 구조도 표시될 수 있습니다. 하위 기사가 있는 기사를 보면 탐색 트리가 확장되어 하위 기사에 대한 링크가 표시됩니다. 다른 최상위 기사를 볼 때 확장된 노드가 축소됩니다.
+
+위젯 상단의 링크는 기사에 다음 작업을 표시합니다.
+
+* 기술 자료의 RSS 피드를 구독하세요.
+* 현재 기사를 구독하세요
 * 현재 기사의 기록 보기
 * 현재 기사 인쇄
 
 관리자는 위젯 상단에 있는 추가 링크 세트에 액세스할 수 있습니다.
 
 * 기사 편집
-* 하위 문서 추가
-* 기사 이동
+* 하위 기사 추가
+* 기사를 이동하세요
 * 기사 삭제
 
-기사 내용 아래에는 엄지손가락 위/아래 아이콘을 표시하는 평가 인터페이스가 있습니다. 사용자는 **제안 사항** 이 있습니까?라고 레이블이 지정된 텍스트 상자의 문서 아래에 있는 제안이나 의견을 제출할 수도 있습니다. 관리자는 제안 [개를 보고 진행 상황을](responding-to-knowledge-base-feedback.md)표시할 수 있습니다.
+기사 콘텐츠 아래에는 추천/추천 아이콘을 표시하는 평가 인터페이스가 있습니다. 사용자는 기사 아래의 _제안 사항_이 있습니까?라는 텍스트 상자에 제안이나 의견을 제출할 수도 있습니다. 관리자는 [제안을 보고 진행 상황을](./responding-to-knowledge-base-feedback.md) 로 표시할 수 있습니다.
 
-관리자가 지식 기반 앱의 소스 URL 기능을 활성화하고(자세한 내용은 잠시 후) 기사에 할당된 소스 URL이 있는 경우 기사 제목 오른쪽에 **Edit on GitHub** 버튼(![GitHub icon](./knowledge-base-display-widget/images/07.png))이 나타납니다. 이 버튼은 GitHub의 기사 소스로 연결됩니다. 이 기능을 사용하여 사람들이 문서 수정 또는 개선 사항을 제공하도록 장려할 수 있습니다. 이 기능에 관심이 있는 경우 관리자에게 [기술 자료 시스템 설정](knowledge-base-system-settings.md)의 지침을 따르도록 지시할 수 있습니다.
-
-## 다른 기사 세트 표시
-
-폴더를 사용하여 유사한 기사를 집계하고 사용자가 이러한 기사 세트 간에 쉽게 전환할 수 있는 방법을 제공할 수 있습니다. Knowledge Base Display의 콘텐츠 폴더 기능은 기사 세트 간 전환을 위해 탐색 상단에 선택기를 추가합니다.
-
-콘텐츠 폴더를 설정하려면 다음 단계를 따르세요.
-
-1. 사이트 관리의 기술 자료 앱에 폴더를 추가합니다. 그런 다음 이 폴더에 하위 폴더를 만듭니다. 이러한 하위 폴더는 **콘텐츠 폴더** 입니다.
-
-1. 각 콘텐츠 폴더에 기사를 추가합니다.
-
-1. 지식 기반 디스플레이의 **옵션** 메뉴(![Options icon](../../images/icon-options.png))에서 **구성** 을 선택합니다. **설정** &rarr; **일반** 탭에서 콘텐츠 폴더의 상위 폴더를 선택하고 **저장** 을 클릭합니다.
-
-콘텐츠 선택기의 값은 콘텐츠 폴더의 이름을 반영합니다. 기사를 보려면 하나를 선택하십시오.
-
-![사용자는 다양한 기사 세트 중에서 선택할 수 있습니다.](./knowledge-base-display-widget/images/05.png)
-
-선택기에 표시된 이름에 공통 접두사를 추가할 수도 있습니다.
-
-1. 지식 기반 디스플레이의 **옵션** 메뉴(![Options icon](../../images/icon-options.png))에서 **구성** 을 선택합니다. 구성 대화 상자에서 **설정** &rarr; **디스플레이 설정** 탭을 선택합니다.
-
-1. **콘텐츠 루트 접두사** 필드에 접두사를 입력하고 **저장** 을 클릭합니다.
+관리자가 지식 베이스 소스 URL 기능을 활성화하고 기사에 할당된 소스 URL이 있는 경우 _GitHub에서 편집_ 버튼(![GitHub 아이콘](./knowledge-base-display-widget/images/11.png)) 기사 제목 오른쪽에 나타납니다. 이 버튼은 GitHub의 기사 소스로 연결됩니다. 이 기능을 사용하면 사람들이 기사 수정이나 개선에 기여하도록 장려할 수 있습니다. 자세한 내용은 [지식 베이스 시스템 설정](./knowledge-base-system-settings.md) 을 참조하세요.
 
 ## 관련 주제
 
-* [기술 자료 사용](./using-the-knowledge-base.md)
-* [기술 자료 문서 만들기](./creating-knowledge-base-articles.md)
-* [기술 자료 관리](./managing-the-knowledge-base.md)
+* [기술 자료 문서 작성](./creating-knowledge-base-articles.md) 
+* [지식 베이스 관리](./managing-the-knowledge-base.md) 
+* [기타 지식 베이스 위젯](./other-knowledge-base-widgets.md) 

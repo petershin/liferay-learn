@@ -1,14 +1,14 @@
-# `nestedFields`를 사용하여 관련 항목 쿼리
+# NestedField를 사용하여 관련 항목 쿼리
 
-{bdg-secondary}`라이프레이 7.4 U69+/GA69+`
+{bdg-secondary}`liferay 7.4 U69+/GA69+`
 
-'nestedFields' 매개변수를 사용하면 Liferay가 단일 GET 요청에서 여러 수준의 관련 개체 항목을 반환합니다. 쿼리에 포함할 관계 이름과 함께 `nestedFields` 매개변수를 전달하고 각 관계를 쉼표로 구분합니다(`nestedFields=[firstObjectRelationship],[secondObjectRelationship]). 관계가 여러 수준에 걸쳐 있는 경우 'nestedFieldsDepth' 매개변수를 필요한 깊이로 설정하세요. 최대 5개 수준을 포함할 수 있습니다(예: `nestedFieldsDepth=5`).
+'nestedFields' 매개변수를 사용하면 Liferay가 단일 GET 요청에서 여러 수준의 관련 개체 항목을 반환합니다. 쿼리에 포함할 관계 이름과 함께 `nestedFields` 매개변수를 전달하고 각 관계를 쉼표로 구분합니다(`nestedFields=[firstObjectRelationship],[secondObjectRelationship]`). 관계가 여러 수준에 걸쳐 있는 경우 'nestedFieldsDepth' 매개변수를 필요한 깊이로 설정하세요. 최대 5개 수준을 포함할 수 있습니다(예: `nestedFieldsDepth=5`).
 
 ```{tip}
-`nestedFields` 매개변수는 여러 요청이 필요한 관련 항목이 있는 항목을 검색하여 요청을 최적화합니다. 관련 항목만 반환하기 위해 Liferay는 전용 [관계 API](../using-custom-object-apis.md#relationship-rest-apis) 를 제공합니다. 소개는 [Relationship REST API 사용](./using-relationship-rest-apis.md)을 참조하세요.
+`nestedFields` 매개변수는 여러 요청이 필요한 관련 항목이 있는 항목을 검색하여 요청을 최적화합니다. 관련 항목만 반환하기 위해 Liferay는 [관계 API](../using-custom-object-apis.md#relationship-rest-apis) 제공합니다. 소개는 [관계 REST API 사용](./using-relationship-rest-apis.md) 참조하세요.
 ```
 
-계속 진행하려면 새로운 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance) 하고 제공된 튜토리얼 코드를 [prepare](#preparing-the-sample-code) 하세요. 그런 다음 [스크립트를 실행](#creating-and-querying-관련-객체 항목) 하여 관련 항목을 생성하고 `nestedFields` 매개변수를 사용하여 쿼리합니다.
+계속 진행하려면 새로운 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance)하고 제공된 튜토리얼 코드를 [준비](#preparing-the-sample-code)하세요. 그런 다음 [스크립트를 실행](#creating-and-querying-관련-객체 항목)하여 관련 항목을 생성하고 `nestedFields` 매개변수를 사용하여 쿼리합니다.
 
 ## Liferay 인스턴스 설정
 
@@ -19,9 +19,9 @@
 
 ### 관련 객체 정의 생성
 
-1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다.** .
+1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 후 *개체를 클릭합니다*.
 
-1. [Create](../../creating-and-managing-objects/creating-objects.md) 세 개의 개체 초안.
+1. [개체 초안](../../creating-and-managing-objects/creating-objects.md) 를 3개 만듭니다.
 
    첫 번째 개체:
 
@@ -73,7 +73,7 @@
    | :---------------- | :-------------- | :-- | :----- |
    | `Charlie to Able` | `charlieToAble` | 다대다 | 할 수 있는 |
 
-1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 각 객체.
+1. [각 개체를](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 게시합니다.
 
 게시되면 Headless API를 통해 각 객체에 액세스할 수 있습니다.
 
@@ -82,7 +82,7 @@
 아래 명령을 실행하여 제공된 샘플 코드를 다운로드하고 압축을 풉니다.
 
 ```bash
-curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-w4s7.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/understanding-object-integrations/using-custom-object-apis/liferay-w4s7.zip -O
 ```
 
 ```bash
@@ -92,7 +92,7 @@ unzip liferay-w4s7.zip
 ZIP은 REST API를 사용하여 객체 항목을 생성, 관련 및 쿼리하기 위한 cURL 명령을 실행하는 셸 스크립트를 제공합니다. 여기에는 관련 항목을 쿼리하기 위한 두 개의 GET 명령이 포함됩니다.
 
 ```{tip}
-사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [객체 Headless Framework 통합](../using-custom-object-apis.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택하세요.
+사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [개체 Headless Framework Integration](../using-custom-object-apis.md) 을 참조하세요. `[서버]:[포트]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택하세요.
 ```
 
 ## 관련 개체 항목 생성 및 쿼리
@@ -363,7 +363,7 @@ ZIP은 REST API를 사용하여 객체 항목을 생성, 관련 및 쿼리하기
    }
    ```
 
-1. 이러한 ERC를 사용하여 'Charlie_PUT_CharlieToAble_ByExternalReferenceCode'를 실행하세요.
+1. 이러한 ERC를 사용하여 `Charlie_PUT_CharlieToAble_ByExternalReferenceCode`를 실행하세요.
 
    ```bash
    ./Charlie_PUT_CharlieToAble_ByExternalReferenceCode.sh charlie-one charlie-two charlie-three able-one
@@ -439,6 +439,6 @@ ZIP은 REST API를 사용하여 객체 항목을 생성, 관련 및 쿼리하기
 
 ## 관련 주제
 
-* [객체 API 기본](./object-api-basics.md)
-* [Batch API 사용](./using-batch-apis.md)
-* [REST API로 집계 용어 사용](./using-aggregation-terms-with-rest-apis.md)
+* [객체 API 기초](./object-api-basics.md) 
+* [배치 API 사용](./using-batch-apis.md) 
+* [REST API와 함께 집계 용어 사용](./using-aggregation-terms-with-rest-apis.md) 

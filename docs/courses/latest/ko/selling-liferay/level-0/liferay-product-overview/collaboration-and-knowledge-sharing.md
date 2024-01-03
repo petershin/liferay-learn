@@ -11,19 +11,19 @@ visibility:
 
 ## 공동작업
 
-* [Blogs](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs)
-* [Wikis](https://learn.liferay.com/w/dxp/collaboration-and-social/wiki/getting-started-with-wikis)
-* [메시지 보드](https://learn.liferay.com/w/dxp/collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards)
+* [블로그](https://learn.liferay.com/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs) 
+* [위키](https://learn.liferay.com/w/dxp/collaboration-and-social/wiki/getting-started-with-wikis) 
+* [메시지 보드](https://learn.liferay.com/w/dxp/collaboration-and-social/message-boards/user-guide/getting-started-with-message-boards) 
 
 ## 지식 공유
 
-* [지식 기반](https://learn.liferay.com/w/dxp/collaboration-and-social/knowledge-base/using-the-knowledge-base)
-* [웹 콘텐츠 구조](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures)
+* [기술 자료](https://learn.liferay.com/w/dxp/collaboration-and-social/knowledge-base) 
+* [웹 콘텐츠 구조](https://learn.liferay.com/w/dxp/content-authoring-and-management/web-content/web-content-structures/understanding-web-content-structures) 
 
 ## 사회
 
-* [Ratings](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/user-guide/using-the- ratings-system)
-* [Comments](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/using-page-comments)
-* [Mentions](https://learn.liferay.com/w/dxp/collaboration-and-social/notifications-and-requests/user-guide/mentioning-users)
+* [평가](https://learn.liferay.com/w/dxp/collaboration-and-social/social-tools/user-guide/using-the-ratings-system) 
+* [댓글](https://learn.liferay.com/w/dxp/site-building/creating-pages/using-content-pages/using-page-comments) 
+* [언급됨](https://learn.liferay.com/w/dxp/collaboration-and-social/notifications-and-requests/user-guide/mentioning-users) 
 
-다음: [ID 관리 및 액세스 제어](./identity-management-and-access-control.md).
+다음: [신원 관리 및 액세스 제어](./identity-management-and-access-control.md) .

@@ -2,6 +2,7 @@
 toc:
   - ./consuming-apis/consuming-rest-services.md
   - ./consuming-apis/consuming-graphql-apis.md
+  - ./consuming-apis/data-migration-center.md
   - ./consuming-apis/api-query-parameters.md
   - ./consuming-apis/batch-engine-api-basics-importing-data.md
   - ./consuming-apis/batch-engine-api-basics-exporting-data.md
@@ -16,6 +17,7 @@ toc:
 
 consuming-apis/consuming-rest-services.md
 consuming-apis/consuming-graphql-apis.md
+consuming-apis/data-migration-center.md
 consuming-apis/api-query-parameters.md
 consuming-apis/batch-engine-api-basics-importing-data.md
 consuming-apis/batch-engine-api-basics-exporting-data.md
@@ -26,6 +28,7 @@ consuming-apis/api-headers-reference.md
 
 * [휴식 서비스 이용](./consuming-apis/consuming-rest-services.md)
 * [GraphQL API 사용](./consuming-apis/consuming-graphql-apis.md)
+* [데이터 마이그레이션 센터](./consuming-apis/data-migration-center.md)
 * [API 쿼리 매개변수](./consuming-apis/api-query-parameters.md)
 * [배치 엔진 API 기본 사항 - 데이터 가져오기](./consuming-apis/batch-engine-api-basics-importing-data.md)
 * [배치 엔진 API 기본 사항 - 데이터 내보내기](./consuming-apis/batch-engine-api-basics-exporting-data.md)

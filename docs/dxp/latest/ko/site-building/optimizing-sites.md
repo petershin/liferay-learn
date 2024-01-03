@@ -1,7 +1,7 @@
 ---
 toc:
-- ./optimizing-sites/ab-testing.md
-- ./optimizing-sites/building-a-responsive-site.md
+  - ./optimizing-sites/ab-testing.md
+  - ./optimizing-sites/building-a-responsive-site.md
 ---
 # 사이트 최적화
 
@@ -12,7 +12,7 @@ optimizing-sites/ab-testing.md
 optimizing-sites/building-a-responsive-site.md
 ```
 
-최상위 SEO 보유에서 사이트 콘텐츠 이해 및 조치, 모든 유형의 사용자가 액세스할 수 있는 사이트 구축에 이르기까지 Liferay는 사이트 문제를 이해하고 조치를 취하는 데 도움이 되는 도구를 제공합니다.
+최상위 SEO 보유부터 사이트 콘텐츠 이해 및 조치, 모든 유형의 사용자가 액세스할 수 있는 사이트 구축에 이르기까지 Liferay는 사이트 문제를 이해하고 조치를 취하는 데 도움이 되는 도구를 제공합니다.
 
 ## 검색 엔진 최적화
 
@@ -20,14 +20,14 @@ optimizing-sites/building-a-responsive-site.md
 :gutter: 3 3 3 3
 
 :::{grid-item-card} 페이지의 친숙한 URL 구성
-:link: ./creating-pages/page-settings/configuring-your-pages-friendly-url.md
+:link: ./creating-pages/page-settings/configuring-your-pages-friend-url.md
 :::
 
 :::{grid-item-card} 사이트의 친숙한 URL 구성
-:link: ./site-settings/managing-site-urls/configuring-your-sites-friendly-url.md
+:link: ./site-settings/managing-site-urls/configuring-your-sites-friend-url.md
 :::
 
-:::{grid-item-card} 사이트맵
+:::{grid-item-card} 사이트 맵
 :link: ./creating-pages/page-settings/configuring-page-sets.md#sitemap
 :::
 
@@ -39,15 +39,15 @@ optimizing-sites/building-a-responsive-site.md
 :link: ./site-settings/managing-site-urls/setting-up-redirects-and-404-tracking.md
 :::
 
-:::{grid-item-card} 디스플레이 페이지 템플릿에 대한 SEO 및 오픈 그래프 구성
+:::{grid-item-card} 디스플레이 페이지 템플릿을 위한 SEO 및 오픈 그래프 구성
 :link: ./displaying-content/using-display-page-templates/configuring-seo-and-open-graph.md
 :::
 
-:::{grid-item-card} 사이트용 Open Graph 구성
+:::{grid-item-card} 사이트용 오픈 그래프 구성
 :link: ./site-settings/configuring-open-graph.md
 :::
 
-:::{grid-item-card} Hreflang 메타 데이터 구성
+:::{grid-item-card} Hreflang 메타데이터 구성
 :link: ./site-settings/configuring-hreflang-meta-data.md
 :::
 ::::
@@ -61,8 +61,9 @@ optimizing-sites/building-a-responsive-site.md
 :link: ../content-authoring-and-management/page-performance-and-accessibility/about-the-content-performance-tool.md
 :::
 
-:::{grid-item-card} 콘텐츠 성능 도구를 사용하여 콘텐츠 메트릭 분석
-:link: ../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md : ::
+:::{grid-item-card} 콘텐츠 성능 도구를 사용하여 콘텐츠 지표 분석
+:link: ../content-authoring-and-management/page-performance-and-accessibility/analyze-content-metrics-using-content-performance-tool.md
+:::
 
 :::{grid-item-card} 페이지의 SEO 및 접근성 분석
 :link: ../content-authoring-and-management/page-performance-and-accessibility/analyze-seo-and-accessibility-on-pages.md
@@ -74,7 +75,7 @@ optimizing-sites/building-a-responsive-site.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} A/B 테스팅
+:::{grid-item-card} A/B 테스트
 :link: ./optimizing-sites/ab-testing/ab-testing.md
 :::
 
@@ -82,7 +83,7 @@ optimizing-sites/building-a-responsive-site.md
 :link: ./optimizing-sites/ab-testing/verifying-ab-test-requirements.md
 :::
 
-:::{grid-item-card} A/B 테스트 생성
+:::{grid-item-card} A/B 테스트 만들기
 :link: ./optimizing-sites/ab-testing/creating-ab-tests.md
 :::
 
@@ -90,7 +91,7 @@ optimizing-sites/building-a-responsive-site.md
 :link: ./optimizing-sites/ab-testing/running-and-monitoring-ab-tests.md
 :::
 
-:::{grid-item-card} A/B 테스트 결과 검토 및 테스트 변수 게시
+:::{grid-item-card} A/B 테스트 결과 검토 및 테스트 변형 게시
 :link: ./optimizing-sites/ab-testing/reviewing-ab-test-results-and-publishing-test-variants.md
 :::
 ::::
@@ -100,15 +101,12 @@ optimizing-sites/building-a-responsive-site.md
 ::::{grid} 2
 :gutter: 3 3 3 3
 
-:::{grid-item-card} 반응형 사이트 구축
-:link: ./optimizing-sites/building-a-responsive-site/building-a-responsive-site.md
-:::
+<!-- Eric is working on LRDOCS-11987, when he is finished, he will add the documentation link here
+:::{grid-item-card} Using the Simulation Panel
+:link: ./building-a-responsive-site/
+::: -->
 
-:::{grid-item-card} 모바일 장치 규칙 만들기
-:link: ./optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md
-:::
-
-:::{grid-item-card} 그리드 조각으로 반응형 레이아웃 만들기
-:link: ./optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md
+:::{grid-item-card} 그리드 조각으로 반응형 레이아웃 구축
+:link: ./optimizing-sites/building-a-반응형-사이트/building-Response-layouts-with-the-grid-fragment.md
 :::
 ::::

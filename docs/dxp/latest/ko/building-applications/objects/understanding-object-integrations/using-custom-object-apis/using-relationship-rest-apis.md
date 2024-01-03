@@ -1,19 +1,19 @@
 # 관계 REST API 사용
 
-{bdg-secondary}`라이프레이 7.4 U70+/GA70+`
+{bdg-secondary}`liferay 7.4 U70+/GA70+`
 
 사용자 정의 또는 시스템 개체에 관계를 추가하면 Liferay는 해당 관계에 액세스하기 위한 REST 끝점을 생성합니다. 항목을 연결 및 연결 해제할 수 있을 뿐만 아니라 항목의 관련 항목을 반환할 수도 있습니다. 이러한 끝점은 일대다 관계에서는 상위 개체에 추가되고 다대다 관계에서는 두 개체 모두에 추가됩니다.
 
-계속 진행하려면 새로운 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance) 하고 제공된 튜토리얼 코드를 [prepare](#preparing-the-sample-code) 하세요. 그런 다음 스크립트를 실행하여 개체 항목을 만들고 개체 항목 간의 관계를 관리합니다.
+계속하려면 [설정](#setting-up-a-liferay-instance) Liferay 7.4 인스턴스를 설정하고 [제공된 튜토리얼 코드](#preparing-the-sample-code) 준비합니다. 그런 다음 스크립트를 실행하여 개체 항목을 만들고 개체 항목 간의 관계를 관리합니다.
 
 ## Liferay 인스턴스 설정
 
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-다음으로, [create](../../creating-and-managing-objects/creating-objects.md) 세 가지 관련 사용자 정의 개체:
+다음으로, [만들다](../../creating-and-managing-objects/creating-objects.md) 개의 세 가지 관련 사용자 정의 개체를 만듭니다.
 
-1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다.** .
+1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 후 *개체를 클릭합니다*.
 
 1. 세 개의 개체 초안을 만듭니다.
 
@@ -54,7 +54,7 @@
    | `Able to Baker`   | `ableToBaker`   | 원투멀리 | 빵 굽는 사람 |
    | `Able to Charlie` | `ableToCharlie` | 원투멀리 | 백인      |
 
-1. [Publish](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 각 객체.
+1. [각 개체를](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 게시합니다.
 
 게시되면 다음 관계 API를 포함하여 해당 REST API에 액세스할 수 있습니다.
 
@@ -74,7 +74,7 @@
 | 백인     | 놓다      | `/by-external-reference-code/{ableERC}/ableToCharlie/{charlieERC}` | `putCharlieAbleToCharlieAble`     |
 
 ```{tip}
-사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [객체 Headless Framework 통합](../../understanding-object-integrations/using-custom-object-apis.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택하세요.
+사이트 및 회사 개체에 대해 생성된 API의 전체 목록은 [개체 Headless Framework Integration](../../understanding-object-integrations/using-custom-object-apis.md) 을 참조하세요. `[서버]:[포트]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션*을 클릭하고 API를 선택하세요.
 ```
 
 ## 샘플 코드 준비
@@ -82,7 +82,7 @@
 제공된 샘플 코드를 다운로드하고 압축을 풀려면 다음 명령을 실행하세요.
 
 ```bash
-curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-f9m2.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/understanding-object-integrations/using-custom-object-apis/liferay-f9m2.zip -O
 ```
 
 ```bash
@@ -101,7 +101,7 @@ REST API를 사용하여 객체 항목을 추가하고 해당 관계를 관리�
    cd liferay-f9m2/curl
    ```
 
-1. `POST` 명령을 실행하여 각 개체에 대해 세 개의 항목을 만듭니다. 이러한 항목에는 '[objectname]-[number]' 명명 패턴(예: 'able-one')에 따라 사전 정의된 외부 참조 코드(ERC)가 있습니다.
+1. `POST` 명령을 실행하여 각 개체에 대해 세 개의 항목을 만듭니다. 이러한 항목에는 `[objectname]-[number]` 명명 패턴(예: `able-one`)에 따라 사전 정의된 외부 참조 코드(ERC)가 있습니다.
 
    ```bash
    ./Able_POST_Batch.sh
@@ -115,7 +115,7 @@ REST API를 사용하여 객체 항목을 추가하고 해당 관계를 관리�
    ./Charlie_POST_Batch.sh
    ```
 
-1. `able-one` ERC와 세 개의 베이커 ERC를 모두 사용하여 `Able_PUT_AbleToBaker_ByExternalReferenceCode`를 실행합니다.
+1. `able-one` ERC와 3개의 베이커 ERC를 모두 사용하여 `Able_PUT_AbleToBaker_ByExternalReferenceCode`를 실행하세요.
 
    ```bash
    ./Able_PUT_AbleToBaker_ByExternalReferenceCode.sh able-one baker-one baker-two baker-three
@@ -347,7 +347,7 @@ REST API를 사용하여 객체 항목을 추가하고 해당 관계를 관리�
     }
     ```
 
-    `nestedFields` 매개변수에 대한 자세한 내용은 [`nestedFields`를 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-관련-entries.md)를 참조하세요.
+    `nestedFields` 매개변수에 대한 자세한 내용은 [NestedFields를 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md) 참조하세요.
 
 ## 코드 검토
 
@@ -377,6 +377,6 @@ REST API를 사용하여 객체 항목을 추가하고 해당 관계를 관리�
 
 ## 관련 주제
 
-* [헤드리스 프레임워크 통합](../../understanding-object-integrations/using-custom-object-apis.md)
-* [REST API와 함께 중첩 필드 사용](./using-nestedfields-to-query-관련-entries.md)
-* [객체 관계 정의](../../creating-and-managing-objects/relationships/defining-object-relationships.md)
+* [헤드리스 프레임워크 통합](../../understanding-object-integrations/using-custom-object-apis.md) 
+* [REST API와 함께 중첩 필드 사용](./using-nestedfields-to-query-related-entries.md) 
+* [개체 관계 정의](../../creating-and-managing-objects/relationships/defining-object-relationships.md) 

@@ -7,6 +7,7 @@ toc:
   - ./system-administration/using-the-server-administration-panel.md
   - ./system-administration/data-integration.md
   - ./system-administration/audit-framework.md
+  - ./system-administration/using-glowroot-with-liferay.md
 ---
 # 시스템 관리
 

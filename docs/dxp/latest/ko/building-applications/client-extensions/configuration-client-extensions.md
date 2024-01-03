@@ -4,7 +4,6 @@ toc:
   - ./configuration-client-extensions/oauth-user-agent-yaml-configuration-reference.md
   - ./configuration-client-extensions/oauth-headless-server-yaml-configuration-reference.md
 ---
-
 # 구성 클라이언트 확장
 
 {bdg-primary}`Liferay 자체 호스팅`
@@ -39,7 +38,7 @@ type: oAuthApplicationHeadlessServer
 
 ### `oAuthApplicationHeadlessServer`의 특수 동작
 
-OAuth 헤드리스 서버 클라이언트 확장은 Liferay가 _경로_로 제공하는 메타데이터에 따라 달라집니다([컨텍스트에 민감한 정보](working-with-client-extensions.md#context-sensitive-information) 참조). 이 클라이언트 확장으로 배포된 모든 실행 가능한 워크로드는 실행되기 전에 이 경로를 기다려야 합니다.
+OAuth 헤드리스 서버 클라이언트 확장은 Liferay가 _경로_로 제공하는 메타데이터에 따라 달라집니다( [상황에 맞는 정보](working-with-client-extensions.md#context-sensitive-information) 참조). 이 클라이언트 확장으로 배포된 모든 실행 가능한 워크로드는 실행되기 전에 이 경로를 기다려야 합니다.
 
 다음은 프로젝트에 'oAuthApplicationHeadlessServer' 클라이언트 확장이 정의된 경우 환경 변수 'LIFERAY_ROUTES_CLIENT_EXTENSION'에 의해 정의된 경로의 예입니다.
 
@@ -67,7 +66,7 @@ OAuth 헤드리스 서버 클라이언트 확장은 Liferay가 _경로_로 제�
 
 ## OAuth 사용자 에이전트 클라이언트 확장
 
-클라이언트 확장을 사용하여 '사용자 에이전트 애플리케이션' 클라이언트 프로필로 사전 구성된 Liferay OAuth2 애플리케이션을 구성할 수 있습니다. 이러한 종류의 인증 프로필은 특정 사용자가 승인한 API 호출(예: 다른 [마이크로서비스 클라이언트 확장](./microservice-client-extensions.md)을 사용하여 Liferay API에 대한 REST 호출 수행)에 필요합니다.
+클라이언트 확장을 사용하여 '사용자 에이전트 애플리케이션' 클라이언트 프로필로 사전 구성된 Liferay OAuth2 애플리케이션을 구성할 수 있습니다. 이러한 종류의 인증 프로필은 특정 사용자가 승인한 API 호출에 필요합니다(예: 다른 [서비스 클라이언트 확장을 사용하여 Liferay API에 대한 REST 호출](./microservice-client-extensions.md) ).
 
 `client-extension.yaml` 파일에 OAuth 사용자 에이전트 클라이언트 확장을 지정합니다.
 
@@ -77,7 +76,7 @@ type: oAuthApplicationUserAgent
 
 ### `oAuthApplicationUserAgent`의 특수 동작
 
-OAuth 헤드리스 사용자 에이전트 클라이언트 확장은 Liferay가 _경로_로 제공하는 메타데이터에 따라 달라집니다([컨텍스트에 민감한 정보](working-with-client-extensions.md#context-sensitive-information) 참조). 이 클라이언트 확장으로 배포된 모든 실행 가능한 워크로드는 실행되기 전에 이 경로를 기다려야 합니다.
+OAuth 헤드리스 사용자 에이전트 클라이언트 확장은 Liferay가 _경로_로 제공하는 메타데이터에 따라 달라집니다( [상황에 맞는 정보](working-with-client-extensions.md#context-sensitive-information) 참조). 이 클라이언트 확장으로 배포된 모든 실행 가능한 워크로드는 실행되기 전에 이 경로를 기다려야 합니다.
 
 다음은 프로젝트에 'oAuthApplicationUserAgent' 클라이언트 확장이 정의된 경우 환경 변수 'LIFERAY_ROUTES_CLIENT_EXTENSION'으로 정의된 경로의 예입니다.
 
@@ -105,5 +104,5 @@ OAuth 헤드리스 사용자 에이전트 클라이언트 확장은 Liferay가 _
 
 ## 관련 주제
 
-* [클라이언트 확장 소개](../client-extensions.md)
-* [`client-extension.yaml`에서 클라이언트 확장 구성](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)
+* [클라이언트 확장 소개](../client-extensions.md) 
+* [`client-extension.yaml`에서 클라이언트 확장 구성](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) 

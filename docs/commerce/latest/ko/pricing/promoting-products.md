@@ -1,32 +1,17 @@
 ---
 toc:
-- ./promoting-products/introduction-to-discounts.md
-- ./promoting-products/creating-a-discount.md
-- ./promoting-products/using-discount-levels.md
-- ./promoting-products/introduction-to-promotions.md
-- ./promoting-products/using-the-promotion-base-list.md
-- ./promoting-products/creating-a-promotion.md
-- ./promoting-products/promotions-reference.md
-- ./promoting-products/introduction-to-product-groups.md
-- ./promoting-products/replacement-products.md
-- ./promoting-products/product-recommendations.md
+  - ./promoting-products/introduction-to-discounts.md
+  - ./promoting-products/creating-a-discount.md
+  - ./promoting-products/using-discount-levels.md
+  - ./promoting-products/introduction-to-promotions.md
+  - ./promoting-products/using-the-promotion-base-list.md
+  - ./promoting-products/creating-a-promotion.md
+  - ./promoting-products/promotions-reference.md
+  - ./promoting-products/introduction-to-product-groups.md
+  - ./promoting-products/replacement-products.md
+  - ./promoting-products/product-recommendations.md
 ---
 # 제품 홍보
-
-```{toctree}
-:maxdepth: 1
-
-promoting-products/introduction-to-discounts.md
-promoting-products/creating-a-discount.md
-promoting-products/using-discount-levels.md
-promoting-products/introduction-to-promotions.md
-promoting-products/using-the-promotion-base-list.md
-promoting-products/creating-a-promotion.md
-promoting-products/promotions-reference.md
-promoting-products/introduction-to-product-groups.md
-promoting-products/replacement-products.md
-promoting-products/product-recommendations.md
-```
 
 ::::{grid} 2
 :gutter: 3 3 3 3
@@ -39,7 +24,7 @@ promoting-products/product-recommendations.md
 :link: ./promoting-products/creating-a-discount.md
 :::
 
-:::{grid-item-card}  할인 등급 사용
+:::{grid-item-card}  할인 수준 사용
 :link: ./promoting-products/using-discount-levels.md
 :::
 
@@ -47,11 +32,11 @@ promoting-products/product-recommendations.md
 :link: ./promoting-products/introduction-to-promotions.md
 :::
 
-:::{grid-item-card}  프로모션 기본 목록 사용
+:::{grid-item-card}  프로모션 베이스 목록 사용
 :link: ./promoting-products/using-the-promotion-base-list.md
 :::
 
-:::{grid-item-card}  프로모션 만들기
+:::{grid-item-card}  프로모션 생성
 :link: ./promoting-products/creating-a-promotion.md
 :::
 
@@ -59,7 +44,7 @@ promoting-products/product-recommendations.md
 :link: ./promoting-products/promotions-reference.md
 :::
 
-:::{grid-item-card}  제품 그룹 소개
+:::{grid-item-card}  제품군 소개
 :link: ./promoting-products/introduction-to-product-groups.md
 :::
 

@@ -1,14 +1,14 @@
 # 블로그 표시
 
-Liferay는 블로그 항목을 표시하는 두 가지 방법, 즉 [표시 페이지 템플릿](#using-display-page-templates) 과 [블로그 위젯](#using-the-blogs-widget) 을 제공합니다.
+Liferay는 블로그 항목을 표시하는 두 가지 방법, 즉 [표시 페이지 템플릿](#using-display-page-templates) 및 [블로그 위젯](#using-the-blogs-widget) 제공합니다.
 
 ## 표시 페이지 템플릿 사용
 
-[표시 페이지 템플릿](../../site-building/displaying-content/using-display-page-templates.md)을 사용하여 친숙한 URL에 블로그 항목을 표시하기 위한 재사용 가능한 동적 디자인을 만들 수 있습니다. 기본적으로 모든 블로그 항목에는 고유하고 친숙한 URL이 자동으로 할당됩니다. 이 URL을 사용하여 표시 페이지에서 블로그 항목을 볼 수 있습니다.
+[표시 페이지 템플릿](../../site-building/displaying-content/using-display-page-templates.md) 사용하여 친숙한 URL에 블로그 항목을 표시하기 위한 재사용 가능한 동적 디자인을 만들 수 있습니다. 기본적으로 모든 블로그 항목에는 고유하고 친숙한 URL이 자동으로 할당됩니다. 이 URL을 사용하여 표시 페이지에서 블로그 항목을 볼 수 있습니다.
 
-블로그의 친숙한 URL은 표시 페이지의 URL(예: `display-page-url/blog-Friendly-url`)에 추가되며 언제든지 편집할 수 있습니다. 이를 변경하면 Liferay는 항목의 친숙한 URL 기록에 이전 URL을 저장합니다. 이전 URL이 이 기록에 남아 있는 한 사용자는 최신 버전의 블로그 항목에 액세스할 수 있습니다. 템플릿 설정에 대한 자세한 지침은 [디스플레이 페이지로 콘텐츠 게시](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md)를 참조하세요. 블로그 항목을 표시합니다.
+블로그의 친숙한 URL은 표시 페이지의 URL(예: `display-page-url/blog-Friendly-url`)에 추가되며 언제든지 편집할 수 있습니다. 이를 변경하면 Liferay는 항목의 친숙한 URL 기록에 이전 URL을 저장합니다. 이전 URL이 이 기록에 남아 있는 한 사용자는 최신 버전의 블로그 항목에 액세스할 수 있습니다. 블로그 항목 표시를 위한 템플릿 설정에 대한 자세한 지침은 [표시 페이지로 콘텐츠 게시](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) 참조하세요.
 
-블로그 항목에 대한 표시 페이지를 설정한 후에는 컬렉션을 사용하여 콘텐츠 페이지에 해당 항목을 나열할 수 있습니다. 자세한 내용은 [컬렉션 및 컬렉션 페이지 정보](./../collections-and-collection-pages/about-collections-and-collection-pages.md)를 참조하세요.
+블로그 항목에 대한 표시 페이지를 설정한 후에는 컬렉션을 사용하여 콘텐츠 페이지에 해당 항목을 나열할 수 있습니다. 자세한 내용은 [컬렉션 및 컬렉션 페이지 정보](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) 참조하세요.
 
 <!-- It would be a good idea do include use cases here to exemplify what was said -->
 
@@ -18,17 +18,17 @@ Liferay는 블로그 항목을 표시하는 두 가지 방법, 즉 [표시 페�
 
 블로그 항목의 친숙한 URL 기록을 관리하려면 다음 단계를 따르세요.
 
-1. **사이트 메뉴**( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 **콘텐츠 및 데이터** 를 확장한 다음 **블로그** 로 이동합니다.
+1. _사이트 메뉴_( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 _콘텐츠 및 데이터_를 확장한 다음 _블로그_로 이동합니다.
 
-1. 원하는 항목에 대해 **작업** 버튼( ![작업 버튼](../../images/icon-actions.png) )을 클릭하고 **편집** 을 선택합니다.
+1. 원하는 항목에 대해 _작업_ 버튼( ![작업 버튼](../../images/icon-actions.png) )을 클릭하고 _편집_을 선택합니다.
 
-1. 구성 섹션을 확장하고 친숙한 URL 필드에서 **기록** 버튼( ![기록 버튼](../../images/icon-history.png) )을 클릭합니다.
+1. 구성 섹션을 확장하고 친숙한 URL 필드에서 _기록_ 버튼( ![기록 버튼](../../images/icon-history.png) )을 클릭합니다.
 
    ![Click the History button for the Friendly URL field.](./displaying-blogs/images/01.png)
 
-1. **복원** 버튼( ![복원 버튼](../../images/icon-restore2.png) )을 클릭하여 현재 친숙한 URL을 선택한 URL로 바꿉니다.
+1. _복원_ 버튼( ![복원 버튼](../../images/icon-restore2.png) )을 클릭하여 현재 친숙한 URL을 선택한 URL로 바꿉니다.
 
-1. **URL 잊어버리기** 버튼( ![URL 잊어버리기 버튼](../../images/icon-delete.png) )을 클릭하여 항목 기록에서 선택한 URL을 제거합니다. 제거되면 더 이상 해당 URL을 사용하여 블로그 항목에 액세스할 수 없습니다.
+1. _URL 잊어버리기_ 버튼( ![URL 잊어버리기 버튼](../../images/icon-delete.png) )을 클릭하여 항목 기록에서 선택한 URL을 제거합니다. 제거되면 더 이상 해당 URL을 사용하여 블로그 항목에 액세스할 수 없습니다.
 
    ![Click the Restore or Forget URL buttons.](./displaying-blogs/images/02.png)
 
@@ -40,29 +40,30 @@ Liferay는 블로그 항목을 표시하는 두 가지 방법, 즉 [표시 페�
 
 페이지에 블로그 위젯을 추가하려면,
 
-1. [새 페이지 만들기](../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) 또는 [콘텐츠 페이지 편집 시작](.. /../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md).
+1. [새 페이지를 만듭니다.](../../site-building/creating-pages/adding-pages/adding-a-page-to-a-site.md) 또는 [콘텐츠 페이지 편집을 시작합니다.](../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) .
 
-1. **추가**( ![위젯 추가 아이콘](../../images/icon-add-widget.png) )를 클릭하여 조각 및 위젯 패널을 엽니다.
+1. _추가_( ![위젯 추가 아이콘](../../images/icon-add-widget.png) )를 클릭하여 조각 및 위젯 패널을 엽니다.
 
-1. 위젯 탭의 공동 작업 카테고리 아래에서 **블로그** 위젯을 페이지의 한 사이트로 드래그합니다.
+1. 위젯 탭의 공동 작업 카테고리 아래에서 _블로그_ 위젯을 페이지의 한 사이트
+로 드래그합니다.
 
 페이지에 블로그 위젯을 추가하면 목록을 원하는 대로 구성할 수 있는 여러 가지 표시 옵션이 있습니다.
 
-위젯을 구성하려면 **옵션**(![옵션 아이콘](../../images/icon-app-options.png)) &rarr; **구성** 을 클릭하세요.
+위젯을 구성하려면 _옵션_ (![옵션 아이콘](../../images/icon-app-options.png)) &rarr; _구성_을 클릭하세요.
 
 ![There are different setup options for the Blogs widget](displaying-blogs/images/03.png)
 
 ### 설정 탭
 
-**평가 활성화:** 블로그 항목에 대해 [평가 시스템](../../collaboration-and-social/social-tools/user-guide/using-the- ratings-system.md)을 활성화합니다.
+**평점 활성화:** 블로그 항목에 대해 [등급 시스템](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) 활성화합니다.
 
 **댓글 활성화:** 블로그 항목에 댓글을 활성화합니다.
 
 **조회수 표시:** 각 항목의 조회수 표시를 활성화합니다.
 
-**소셜 북마크:****현재** 열에 추가하는 소셜 미디어 플랫폼에서 블로그 항목 공유를 활성화합니다. **현재** 열과 **사용 가능** 열 사이에서 소셜 네트워킹 사이트를 이동하려면 사이트를 선택하고 해당 열 사이에 있는 화살표를 사용하십시오. 마찬가지로 현재 열 아래의 위쪽/아래쪽 화살표를 사용하여 각 블로그 항목에 표시되는 사이트 순서를 변경합니다.
+**소셜 북마크:** _현재_ 열에 추가하는 소셜 미디어 플랫폼에서 블로그 항목 공유를 활성화합니다. _현재_ 열과 _사용 가능_ 열 사이에서 소셜 네트워킹 사이트를 이동하려면 사이트를 선택하고 해당 열 사이에 있는 화살표를 사용하십시오. 마찬가지로 현재 열 아래의 위쪽/아래쪽 화살표를 사용하여 각 블로그 항목에 표시되는 사이트 순서를 변경합니다.
 
-**표시 스타일:** 소셜 북마크가 표시되는 방식을 정의합니다. **인라인** 은 기본값이며 소셜 북마크 아이콘을 연속으로 표시합니다. **메뉴** 는 공유 메뉴 안에 해당 항목을 숨깁니다.
+**표시 스타일:** 소셜 북마크가 표시되는 방식을 정의합니다. _인라인_은 기본값이며 소셜 북마크 아이콘을 연속으로 표시합니다. _메뉴_는 공유 메뉴 안에 해당 항목을 숨깁니다.
 
 **표시할 최대 항목 수:** 초기 페이지에 표시할 블로그 항목의 총 개수입니다. 한 번에 최대 60개까지 선택하여 표시할 수 있습니다.
 
@@ -80,11 +81,11 @@ Liferay는 블로그 항목을 표시하는 두 가지 방법, 즉 [표시 페�
 
 ![The card display template makes your blog posts look like fun little trading cards.](displaying-blogs/images/04.png)
 
-다른 ADT(애플리케이션 디스플레이 템플릿)를 선택하거나 직접 만들려면 **템플릿 관리** 를 클릭하세요.
+다른 ADT(애플리케이션 디스플레이 템플릿)를 선택하거나 직접 만들려면 _템플릿 관리_를 클릭하세요.
 
 **부적절한 콘텐츠 신고 활성화:** 부적절한 콘텐츠 신고를 활성화하여 관리자에게 이메일을 보냅니다.
 
-**댓글에 대한 평가 활성화:** 블로그 항목 댓글에 대해 [평가 시스템](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md)을 활성화합니다.
+**댓글에 대한 평가 활성화:** 블로그 항목 댓글에 대해 [평가 시스템](../../collaboration-and-social/social-tools/user-guide/using-the-ratings-system.md) 을 활성화합니다.
 
 **관련 자산 표시:** 다른 위젯의 관련 콘텐츠 표시를 활성화합니다.
 
@@ -98,6 +99,6 @@ Liferay는 블로그 항목을 표시하는 두 가지 방법, 즉 [표시 페�
 
 ## 관련 주제
 
-[블로그 항목 추가](./adding-blog-entries.md)
+[블로그 항목 추가하기](./adding-blog-entries.md) 
 
-[표시 페이지 템플릿 사용](../../site-building/displaying-content/using-display-page-templates.md)
+[표시 페이지 템플릿 사용](../../site-building/displaying-content/using-display-page-templates.md) 

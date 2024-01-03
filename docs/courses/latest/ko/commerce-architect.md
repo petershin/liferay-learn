@@ -4,7 +4,7 @@ toc:
 ---
 # 커머스 아키텍트
 
-Liferay의 본격적인 상거래 서비스에는 다양한 제품 관리, 주문 관리, 재고 관리 및 가격 책정 기능이 포함되어 있습니다. 이 과정에서는 일반 고객과 다른 기업 모두에게 제품을 판매할 계획을 갖고 있는 Clarity의 이야기를 이어갑니다. 그들은 소비자에게 직접 판매할 수 있는 공개 매장과 로그인이 필요한 기업을 위한 매장을 제공할 계획입니다.
+Liferay의 본격적인 상거래 서비스에는 다양한 제품 관리, 주문 관리, 재고 관리 및 가격 책정 기능이 포함되어 있습니다. 이 과정에서는 일반 고객과 다른 기업 모두에게 제품을 판매하려는 Clarity의 이야기를 이어갑니다. 그들은 소비자에게 직접 판매할 수 있는 공개 매장과 로그인이 필요한 기업을 위한 매장을 제공할 계획입니다.
 
 <!-- Add screenshot of the final stores here -->
 
@@ -23,14 +23,18 @@ Liferay 관리자 과정에서 사용자, 계정 및 조직을 설정하고 Life
 * 다양한 결제 방법 및 배송 옵션에 대한 이용 약관을 설정하는 방법
 * 헤드리스 API를 활용하여 중요한 관리 및 매장 작업을 수행하는 방법
 
-[일부 기본 전제 조건을 설정하고 간단한 제품을 만드는 것](./commerce-architect/setting-up-and-creating-products.md)부터 시작하세요.
+[기본 전제 조건 중 일부를 설정하고 간단한 제품을 만드는 것부터 시작하십시오](./commerce-architect/setting-up-and-creating-products.md) .
 
 ::::{grid} 2
 :gutter: 3 3 3 3
 
 :::{grid-item-card}  제품 설정 및 생성
-:link: ./commerce-architect/setting-up-and-creating-products.md
 
 매장을 구축하기 전에 필수 상거래 기능 중 일부를 생성하고 구성하는 방법을 알아보세요.
+:::
+
+:::{grid-item-card}  제품 및 SKU 구성
+
+제품 및 SKU를 구성하는 방법을 알아보세요.
 :::
 ::::

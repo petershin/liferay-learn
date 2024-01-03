@@ -1,32 +1,32 @@
 # 계정별로 개체 데이터에 대한 액세스 제한
 
-{bdg-secondary}`라이프레이 7.4 U58+/GA58+`
+{bdg-secondary}`liferay 7.4 U58+/GA58+`
 
-여러 비즈니스 [계정](../../../../users-and-permissions/accounts.md) 이 있는 시나리오에서는 계정별로 개체 항목에 대한 액세스를 제한할 수 있습니다. 이렇게 하려면 사용자 정의 개체에 계정 시스템 개체와 함께 활성 [relationship](../relationships/defining-object-relationships.md)이 있어야 하며, 항목 데이터를 제한하기 위해 이 관계를 사용하도록 사용자 정의 개체를 구성해야 합니다. 일단 설정되면 사용자 정의 개체에 항목을 추가하는 사람은 누구나 계정을 선택해야 합니다. 이 계정이 항목의 소유자가 됩니다. 역할 유형이 항목에 대한 액세스를 제어하는 방법을 알아보려면 [계정 제한 및 사용자 역할](#account-restriction-and-user-roles) 을 참조하세요.
+여러 비즈니스 [계정](../../../../users-and-permissions/accounts.md) 이 있는 시나리오에서는 계정별로 개체 항목에 대한 액세스를 제한할 수 있습니다. 이렇게 하려면 사용자 정의 개체에 계정 시스템 개체와의 활성 [관계](../relationships/defining-object-relationships.md) 이 있어야 하며, 항목 데이터를 제한하기 위해 이 관계를 사용하도록 사용자 정의 개체를 구성해야 합니다. 일단 설정되면 사용자 정의 개체에 항목을 추가하는 사람은 누구나 계정을 선택해야 합니다. 이 계정이 항목의 소유자가 됩니다. 역할 유형이 항목에 대한 액세스를 제어하는 방법을 알아보려면 [계정 제한 및 사용자 역할](#account-restriction-and-user-roles) 을 참조하십시오.
 
 ![Restrict access to custom object entries by account.](./restricting-access-to-object-data-by-account/images/01.png)
 
 ```{important}
-초안 개체에 대해서만 계정 제한을 구성할 수 있습니다. [게시](../creating-objects.md#publishing-object-drafts) 이후에는 이러한 설정을 변경할 수 없습니다.
+초안 개체에 대한 계정 제한만 구성할 수 있습니다. [게시](../creating-objects.md#publishing-object-drafts) 이후에는 이러한 설정을 변경할 수 없습니다.
 ```
 
 계정 제한을 설정하려면,
 
-1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다**.
+1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 후 *개체를 클릭합니다.*.
 
 1. 계정 시스템 개체 편집을 시작합니다.
 
-1. 계정 개체를 원하는 초안 개체에 연결하는 일대다 관계를 추가합니다. 자세한 내용은 [객체 관계 정의](../relationships/defining-object-relationships.md)를 참조하세요.
+1. 계정 개체를 원하는 초안 개체에 연결하는 일대다 관계를 추가합니다. 자세한 내용은 [개체 관계 정의](../relationships/defining-object-relationships.md) 참조하세요.
 
    ![Relate the Account system object to the desired custom object.](./restricting-access-to-object-data-by-account/images/02.png)
 
 1. 개체 페이지로 돌아가서 원하는 사용자 정의 개체 편집을 시작합니다.
 
-1. 세부정보 탭에서 **계정 제한** 을 활성화하고 사용할 계정 관계를 선택하세요.
+1. 세부정보 탭에서 _계정 제한_을 활성화하고 사용할 계정 관계를 선택하세요.
 
    ![Toggle Account Restriction to active and select the account relationship you want to use.](./restricting-access-to-object-data-by-account/images/03.png)
 
-1. **저장** 을 클릭하세요.
+1. _저장_을 클릭하세요.
 
 이로 인해 계정 관계 필드가 필수가 되므로 사용자는 항목을 생성할 때 계정을 선택해야 합니다. 사용 가능한 계정 옵션은 각 사용자의 권한에 따라 결정됩니다. 계정 제한이 활성화된 동안 역할 권한을 구성하는 방법에 대한 지침은 [계정 제한 및 사용자 역할](#account-restriction-and-user-roles) 을 참조하세요. 항목이 생성되면 선택한 계정이 항목의 소유자가 되며 변경할 수 없습니다.
 
@@ -42,11 +42,13 @@
 
 계정 제한을 위한 역할을 설정할 때 다음 요소를 고려하십시오.
 
+* 계정이 제한된 개체에는 _위젯 표시_가 활성화되어 있어야 하며 역할 UI에 나타나도록 설정된 패널 링크가 있어야 합니다.
+
 * 일반 역할에는 객체 항목을 생성하려면 '계정 > 계정 항목: 보기' 권한이 있어야 합니다. 이는 일반 역할이 계정이나 조직과 연결되어 있지 않기 때문입니다. 이 권한이 없으면 일반 역할을 가진 사용자는 항목 생성 중에 계정을 선택할 수 없습니다.
 
 * 조직 역할에는 개체 항목을 생성하려면 '사용자 및 조직 &rarr; 조직: 계정 관리' 및 '사용자 및 조직 &rarr; 조직: 하위 조직 계정 관리' 권한이 있어야 합니다. 이러한 권한이 없으면 조직 역할을 가진 사용자는 항목 생성 중에 계정을 선택할 수 없습니다.
 
-* 조직 및 계정 역할 사용자가 사용자 정의 개체에 액세스하려면 '제어판 액세스'(회사 범위) 또는 '사이트 액세스' 권한(사이트 범위)을 부여하는 별도의 일반 역할이 있어야 합니다. 자세한 내용은 [객체 응용 프로그램 권한](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) 을 참조하세요.
+* 조직 및 계정 역할 사용자가 사용자 정의 개체에 액세스하려면 '제어판 액세스'(회사 범위) 또는 '사이트 액세스' 권한(사이트 범위)을 부여하는 별도의 일반 역할이 있어야 합니다. 자세한 내용은 [개체 응용 프로그램 권한](../../understanding-object-integrations/permissions-framework-integration.md#application-permissions) 참조하세요.
 
 ```{important}
 계정 및 조직 역할은 계정 제한이 활성화된 개체에서만 지원됩니다.
@@ -66,10 +68,10 @@
 
 * 청구 관리자는 모든 청구를 감독해야 합니다.
 
-이를 달성하려면 계정 제한이 활성화된 Claims 개체를 만듭니다. 그런 다음 CSM을 그룹화하기 위한 조직을 생성하고 각 조직을 적절한 비즈니스 계정과 연결합니다. 마지막으로 다음 [account](#account-role) , [organization](#organization-role) , [regular](#regular-role) 역할을 생성하고 이를 적절한 사용자에게 할당합니다. 클레임 개체는 회사 범위이므로 계정 및 조직 사용자에게는 '포털: 제어판 메뉴 보기' 및 '클레임: 제어판 액세스' 권한을 부여하는 별도의 일반 역할도 있어야 합니다. 편의를 위해 이러한 권한을 기본 사용자 역할에 할당할 수 있습니다.
+이를 달성하려면 계정 제한이 활성화된 Claims 개체를 만듭니다. 그런 다음 CSM을 그룹화하기 위한 조직을 생성하고 각 조직을 적절한 비즈니스 계정과 연결합니다. 마지막으로 다음 [계정](#account-role) , [조직](#organization-role) , [일반](#regular-role) 역할을 생성하고 이를 적절한 사용자에게 할당합니다. 클레임 개체는 회사 범위이므로 계정 및 조직 사용자에게는 '포털: 제어판 메뉴 보기' 및 '클레임: 제어판 액세스' 권한을 부여하는 별도의 일반 역할도 있어야 합니다. 편의를 위해 이러한 권한을 기본 사용자 역할에 할당할 수 있습니다.
 
 ```{note}
-이 예에서 각 역할은 클레임 항목을 만들 수 있지만 조직 및 일반 역할에는 해당 권한을 부여할 필요가 없습니다.
+이 예에서는 각 역할이 클레임 항목을 생성할 수 있지만 조직 및 일반 역할에는 해당 권한을 부여할 필요가 없습니다.
 ```
 
 ### 계정 역할
@@ -85,7 +87,7 @@
 | 청구 > 청구: 개체 항목 추가     | 개체 항목을 만듭니다.               |
 
 ```{important}
-계정 역할에 'Claims &amp;rarr; Claim: View' 리소스 권한을 할당하지 마세요. 이 권한은 표준 역할 동작을 방해할 수 있습니다.
+계정 역할에 'Claims &rarr; Claim: View' 리소스 권한을 할당하지 마세요. 이 권한은 표준 역할 동작을 방해할 수 있습니다.
 ```
 
 ### 조직 역할
@@ -107,22 +109,22 @@
 
 사용자에게 모든 계정에 대한 개체 데이터를 생성하고 관리할 수 있는 권한을 부여합니다.
 
-| 허가                    | 묘사                                                                        |
-| :-------------------- | :------------------------------------------------------------------------ |
-| 계정 > 계정 항목: 보기        | 계정 항목에 대한 액세스 권한을 봅니다.                                                    |
+| 허가                    | 묘사                                                                                           |
+| :-------------------- | :------------------------------------------------------------------------------------------- |
+| 계정 > 계정 항목: 보기        | 계정 항목에 대한 액세스 권한을 봅니다.                                                                       |
 | 포털: 제어판 메뉴 보기         | 전역 메뉴( ![전역 메뉴](../../../../images/icon-applications-menu.png) )에 액세스합니다. |
-| 청구: 제어판에서 액세스         | 글로벌 메뉴에서 개체에 접근합니다.                                                       |
-| 주장: 보기                | 개체의 응용 프로그램 페이지를 봅니다.                                                     |
-| 소유권 주장 > 소유권 주장: 삭제   | 개체 항목을 삭제합니다.                                                             |
-| 소유권 주장 > 소유권 주장: 권한   | 개별 개체 항목에 대한 권한을 보고 수정합니다.                                                |
-| 소유권 주장 > 소유권 주장: 업데이트 | 개체 항목을 업데이트합니다.                                                           |
-| 소유권 주장 > 소유권 주장: 보기   | 개체 항목을 봅니다.                                                               |
-| 청구 > 청구: 개체 항목 추가     | 개체 항목을 만듭니다.                                                              |
+| 청구: 제어판에서 액세스         | 글로벌 메뉴에서 개체에 접근합니다.                                                                          |
+| 주장: 보기                | 개체의 응용 프로그램 페이지를 봅니다.                                                                        |
+| 소유권 주장 > 소유권 주장: 삭제   | 개체 항목을 삭제합니다.                                                                                |
+| 소유권 주장 > 소유권 주장: 권한   | 개별 개체 항목에 대한 권한을 보고 수정합니다.                                                                   |
+| 소유권 주장 > 소유권 주장: 업데이트 | 개체 항목을 업데이트합니다.                                                                              |
+| 소유권 주장 > 소유권 주장: 보기   | 개체 항목을 봅니다.                                                                                  |
+| 청구 > 청구: 개체 항목 추가     | 개체 항목을 만듭니다.                                                                                 |
 
 ## 관련 주제
 
-* [계정](../../../../users-and-permissions/accounts.md)
-* [시스템 개체 확장](../extending-system-objects.md)
-* [객체 관계 정의](../relationships/defining-object-relationships.md)
-* [사용자 정의 개체에서 계정 데이터에 액세스](./accessing-accounts-data-from-custom-objects.md)
-* [역할 및 권한 이해](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)
+* [계정](../../../../users-and-permissions/accounts.md) 
+* [시스템 개체 확장](../extending-system-objects.md) 
+* [개체 관계 정의](../relationships/defining-object-relationships.md) 
+* [사용자 정의 개체에서 계정 데이터에 액세스](./accessing-accounts-data-from-custom-objects.md) 
+* [역할 및 권한 이해](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) 

@@ -2,10 +2,10 @@
 
 객체를 게시하면 Liferay가 해당 객체에 대한 REST API를 자동으로 생성합니다. 이러한 API는 회사 및 사이트 범위 개체에 따라 다르지만 모두 `c/[pluralobjectlabel]` 명명 패턴(예: `c/timeoffrequests`)을 사용합니다. 이러한 API를 사용하여 개체 항목을 생성, 액세스, 업데이트 및 제거할 수 있습니다.
 
-여기서는 cURL 명령을 사용하여 사용자 정의 개체에 대한 기본 CRUD 작업을 수행합니다. 계속하기 전에 새로운 Liferay DXP/Portal 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance) 하고 제공된 튜토리얼 코드를 [prepare](#preparing-the-sample-code) 하세요.
+여기서는 cURL 명령을 사용하여 사용자 정의 개체에 대한 기본 CRUD 작업을 수행합니다. 계속하기 전에 [설정](#setting-up-a-liferay-instance) Liferay DXP/Portal 7.4 인스턴스를 설정하고 [제공된 튜토리얼 코드](#preparing-the-sample-code) 준비합니다.
 
 ```{tip}
-사이트 및 회사 개체 모두에 대해 생성된 API의 전체 목록은 [객체의 헤드리스 프레임워크 통합](../using-custom-object-apis.md)을 참조하세요. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용자 정의 개체 API를 보고 테스트할 수 있습니다. *REST 애플리케이션* 아래에 나열되어 있습니다.
+사이트 및 회사 오브젝트 모두에 대해 생성된 API의 전체 목록은 [오브젝트의 헤드리스 프레임워크 통합](../using-custom-object-apis.md)을 참조하세요. Liferay API 탐색기를 통해 '[server]:[port]/o/api'에서 사용자 지정 개체 API를 보고 테스트할 수 있습니다(예: `localhost:8080/o/api`). 이는 *REST 애플리케이션* 아래에 나열되어 있습니다.
 ```
 
 ## Liferay 인스턴스 설정
@@ -13,11 +13,11 @@
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-그런 다음 다음 단계에 따라 이 튜토리얼의 기본 객체를 [create]합니다(../../creating-and-managing-objects/creating-objects.md).
+그런 다음 다음 단계에 따라 이 튜토리얼에 대한 기본 [를](../../creating-and-managing-objects/creating-objects.md) .
 
-1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다.** .
+1. _글로벌 메뉴_(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _개체_를 클릭하세요.
 
-1. **추가** 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
+1. _추가_ 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
    | 분야    | 가치      |
    | :---- | :------ |
@@ -25,26 +25,26 @@
    | 복수 라벨 | `Ables` |
    | 이름    | `Able`  |
 
-1. 새 **개체** 초안을 선택하고 **필드** 탭으로 이동하여 단일 텍스트 필드를 추가합니다.
+1. 새 _Object_ 초안을 선택하고 _Fields_ 탭으로 이동하여 단일 텍스트 필드를 추가하세요.
 
    | 라벨 | 필드 이름 | 유형 | 요구하는 |
    | :- | :---- | :- | :--- |
    | 이름 | 이름    | 원본 | ✔    |
 
-1. **세부정보** 탭으로 이동하여 **게시** 를 클릭하세요.
+1. _세부정보_ 탭으로 이동하여 _게시_를 클릭하세요.
 
    ```{important}
-   이 자습서에서는 위의 값을 사용해야 합니다.
+   이 튜토리얼에서는 위의 값을 사용해야 합니다.
    ```
 
-[객체 게시](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 는 데이터 수신 및 저장을 위한 새 애플리케이션을 생성하고 활성화합니다. 이제 Headless API를 통해 액세스할 수 있습니다.
+[객체 게시](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 은 데이터 수신 및 저장을 위한 새 애플리케이션을 생성하고 활성화합니다. 이제 Headless API를 통해 액세스할 수 있습니다.
 
 ## 샘플 코드 준비
 
 다음 명령을 실행하여 제공된 샘플 코드를 다운로드하고 압축을 풉니다.
 
 ```bash
-curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/objects-tutorials/using-apis/liferay-v1s4.zip -O
+curl https://resources.learn.liferay.com/dxp/latest/en/building-applications/objects/understanding-object-integrations/using-custom-object-apis/liferay-v1s4.zip -O
 ```
 
 ```bash
@@ -133,8 +133,8 @@ unzip liferay-v1s4.zip
 
    ```json
    {
-     "status" : "NOT_FOUND",
-     "title" : "No ObjectEntry exists with the primary key 41969"
+   	"status": "NOT_FOUND",
+   	"title": "No ObjectEntry exists with the primary key 41969"
    }
    ```
 
@@ -145,17 +145,63 @@ unzip liferay-v1s4.zip
 ### `Able_POST_ToCompany.sh`
 
 ```{literalinclude} ./object-api-basics/resources/liferay-v1s4.zip/curl/Able_POST_ToCompany.sh
-   :language: bash
+:language: bash
 ```
 
 ### `Able_PUT_ById.sh`
 
 ```{literalinclude} ./object-api-basics/resources/liferay-v1s4.zip/curl/Able_PUT_ById.sh
-   :language: bash
+:language: bash
 ```
+
+## 객체 태그 및 범주 관리
+
+객체 API를 사용하면 분류가 활성화된 객체 항목에 대한 태그와 범주를 읽고 설정하고 업데이트할 수 있습니다. 자세한 내용은 [태그 및 카테고리](../../../../content-authoring-and-management/tags-and-categories.md) 을 참조하세요.
+
+태그는 `keywords` 속성으로 표시됩니다. POST, PUT 또는 PATCH 요청의 본문에 `keywords` 배열을 추가하여 태그를 설정하거나 업데이트할 수 있습니다.
+
+```json
+"keywords" : [
+   "tag1", "tag2", "tag3"
+]
+```
+
+객체 항목에 대해 GET 요청을 한 후 동일한 `keywords` 배열에서 해당 태그를 읽을 수 있습니다.
+
+POST, PUT 또는 PATCH 요청에 `taxonomyCategoryIds` 배열을 추가하여 객체 항목의 카테고리를 설정하고 업데이트할 수 있습니다.
+
+```json
+"taxonomyCategoryIds" : [
+   1234, 5678
+]
+```
+
+!!! 참고
+개체 항목에 범주를 할당하려면 기존 범주 어휘가 있어야 합니다. 자세한 내용은 [콘텐츠에 대한 범주 및 어휘 정의](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) 참조하세요.
+
+객체 항목에 대한 GET 요청을 수행한 후 할당된 각 카테고리에 대한 `taxonomyCategoryId` 및 `taxonomyCategoryName`을 포함하는 `taxonomyCategoryBriefs` 배열에서 해당 카테고리를 읽을 수 있습니다.
+
+```json
+"taxonomyCategoryBriefs": [
+   {
+      "taxonomyCategoryId": 1234,
+      "taxonomyCategoryName": "Category A"
+   },
+   {
+      "taxonomyCategoryId": 5678,
+      "taxonomyCategoryName": "Category B"
+   }
+]
+```
+
+API 쿼리 [API 쿼리 매개변수](../../../../headless-delivery/consuming-apis/api-query-parameters.md) 설명된 규칙에 따라 `keywords` 및 `taxonomyCategoryIds`를 기준으로 개체 항목을 필터링할 수 있습니다. 예제 필터 문자열은 다음과 같습니다.
+
+- `keywords/any(k:k in ('tag1','tag2'))`는 `tag1` 또는 `tag2` 태그가 지정된 모든 개체 항목을 검색합니다.
+
+- `taxonomyCategoryIds/any(k:k in (1234,5678))`는 ID가 '1234' 또는 '5678'인 카테고리에 연결된 모든 항목을 검색합니다.
 
 ## 관련 주제
 
-* [Batch API 사용](./using-batch-apis.md)
-* ['nestedFields'를 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-관련-entries.md)
-* [REST API로 집계 용어 사용](./using-aggregation-terms-with-rest-apis.md)
+- [배치 API 사용](./using-batch-apis.md) 
+- [NestedFields를 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md) 
+- [REST API와 함께 집계 용어 사용](./using-aggregation-terms-with-rest-apis.md) 

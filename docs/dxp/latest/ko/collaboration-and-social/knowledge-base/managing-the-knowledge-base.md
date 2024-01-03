@@ -1,60 +1,129 @@
 # 기술 자료 관리
 
-지식 베이스 앱에서 지식 베이스를 관리할 수 있습니다. 앱으로 이동하려면 **메뉴** 아이콘(![Menu icon](../../images/icon-menu.png))을 클릭하고 **콘텐츠 및 데이터** &rarr; **지식 베이스로 이동합니다.**
+{bdg-secondary}`liferay 7.4 U72+/GA72+`
 
-![앱에서 기술 자료 문서, 템플릿 및 제안을 관리할 수 있습니다.](./managing-the-knowledge-base/images/01.png)
+기술 자료를 사용하면 제품 문서의 초안을 신속하게 작성하고 최종 사용자가 탐색할 수 있는 계층 구조로 구성할 수 있습니다. 폴더와 중첩된 기사를 추가하여 원하는 구조와 순서를 만드세요. 또한 의도한 사용자만 콘텐츠에 액세스할 수 있도록 기사 및 폴더 권한을 관리하세요.
 
-## 기술 자료 옵션 설정
+![Add folders and nested articles to create the desired structure and order.](./managing-the-knowledge-base/images/01.png)
 
-   오른쪽 상단에서 옵션 메뉴(![Options icon](../../images/icon-options.png))를 클릭하여 기술 자료를 구성합니다.
+## 폴더 추가
 
-**구독:** 기술 자료 문서가 생성, 업데이트 또는 삭제될 때 알림을 받습니다.
+1. _사이트 메뉴_(![사이트 메뉴](../../images/icon-menu.png))를 열고 _콘텐츠 및 데이터_ &rarr; _기술 자료_로 이동합니다.
 
-**홈 폴더 권한:** 지식 베이스 앱에 대한 세부 권한을 정의합니다. 역할을 선택하여 다음 작업을 수행할 수 있습니다.
+1. 폴더 및 아티클 섹션(![폴더 및 아티클](../../images/icon-pages-tree.png))에서 _추가_(![추가 버튼](../../images)를 클릭합니다. /icon-add.png)) _폴더_를 선택합니다.
 
-* 기사, 폴더 및 템플릿 추가/삭제
-* 기술 자료 앱의 권한 변경
-* 기사 구독
-* 템플릿 및 제안 보기
+1. 이름과 설명을 입력합니다.
 
-**내보내기/가져오기:** 지식 베이스 앱의 구성을 내보내거나 가져옵니다.
+1. 폴더의 권한을 구성합니다. 기본적으로 보기 권한은 게스트 역할에 할당됩니다. 즉, 누구나 폴더를 볼 수 있습니다.
 
-**구성:** 기사 구독 및 제안에 대한 이메일 알림을 구성합니다. 또한 RSS(기본적으로 활성화됨)를 통해 Knowledge Base 앱의 기사를 사용할 수 있도록 하고 RSS 피드의 옵션을 구성할 수 있습니다.
+   ![Enter a name, description, and configure permissions.](./managing-the-knowledge-base/images/02.png)
 
-## 기술 자료 문서 관리
+1. _저장_을 클릭하세요.
 
-기사에는 [기술 자료 표시 위젯의 탐색](knowledge-base-display-widget.md)에서 해당 사이트를 결정하는 우선 순위 값이 있습니다. 각 기사의 우선 순위 값은 기사 제목 아래에 나타납니다. 기술 자료 표시 위젯의 탐색은 기사를 오름차순으로 정렬합니다. 우선 순위 1이 가장 높은 우선 순위입니다. 기사의 우선 순위가 높을수록 내비게이션에서 더 높게 나타납니다. 기사에는 기본적으로 다음으로 낮은 우선 순위가 할당됩니다. 이 동작은 [기술 자료 시스템 설정](knowledge-base-system-settings.md)을 통해 변경할 수 있습니다.
+## 폴더 및 기사 관리
 
-기사에 새 우선 순위 값을 지정하려면
+폴더와 기사를 추가한 후 왼쪽 패널에 끌어다 놓아 문서를 정리하고 순서를 정할 수 있습니다. 또한 작업(![작업 버튼](../../images/icon-actions.png))을 클릭하여 추가 관리 옵션에 액세스할 수도 있습니다.
 
-1. 기사 옆에 있는 작업 메뉴(![Actions icon](../../images/icon-actions.png))에서 **이동** 을 선택합니다.
+![Drag and drop folders and articles to organize and order your documentation.](./managing-the-knowledge-base/images/03.png)
 
-1. 기사의 새 우선 순위 값을 입력합니다.
+```{note}
+7.4 U71/GA71 및 이전 버전의 경우 기술 자료 문서에 우선 순위 값이 포함되어 있습니다. 이 값은 기사 제목 아래에 나타나며 기술 자료 표시 위젯에서 기사의 순서를 결정합니다. [기술 자료 시스템 설정](knowledge-base-system-settings.md) 을 통해 이 동작을 구성할 수 있습니다.
+```
 
-1. **이동** 을 클릭하여 새 우선 순위를 적용합니다.
+### 폴더 옵션
 
-폴더로 기사를 정리하려면,
+![Click the Actions button for a folder to access these management options.](./managing-the-knowledge-base/images/04.png)
 
-1. **_** 추가 아이콘(![Add icon](../../images/icon-add.png))을 클릭하고 **폴더를 선택** . 그러면 새 폴더를 만들기 위한 양식이 열립니다.
+**편집** (![편집](../../images/icon-edit.png)): 기사의 이름과 설명을 업데이트합니다.
 
-1. 이름과 선택적 설명을 입력합니다.
+**가져오기** (![가져오기](../../images/icon-import.png)): 마크다운 파일 및 이미지 첨부 파일의 ZIP 아카이브를 가져옵니다. 자세한 내용은 [기술 자료 문서 가져오기](./importing-knowledge-base-articles.md) 참조하세요.
 
-   기본적으로 누구나 폴더를 볼 수 있습니다. 양식의 **권한** 섹션에서 다른 권한과 함께 이 설정을 관리할 수 있습니다.
+**이동** (![이동](../../images/icon-move-folder.png)): 폴더를 재배치합니다.
 
-1. **저장** 을 클릭합니다. 기사 탭의 테이블에 폴더가 나타납니다.
+**구독**(홈 폴더에만 해당): 기술 자료 문서가 생성, 업데이트 또는 삭제될 때 알림을 받습니다.
 
-앱 상단의 **필터 및 주문** 선택기 바로 아래에 있는 텍스트는 폴더 계층 구조에서의 사이트를 보여줍니다. 계층 구조에서 폴더 이름을 클릭하여 탐색합니다. 기사를 폴더로 이동하고 하위 기사를 만들 수도 있습니다. 기술 자료는 중첩 폴더도 지원합니다.
+**권한** (![권한](../../images/icon-permissions.png)): 다양한 역할에 리소스 권한을 할당합니다.
 
-![다른 옵션을 보려면 폴더의 작업 메뉴를 클릭하십시오.](./managing-the-knowledge-base/images/03.png)
+**삭제** (![삭제](../../images/icon-app-trash.png)): 폴더와 해당 내용을 즉시 삭제합니다.
 
-각 폴더의 작업 메뉴(![Actions icon](../../images/icon-actions.png))에는 다음 작업이 포함되어 있습니다.
+또한 _정보_(![정보 버튼](../../images/icon-information.png))를 클릭하여 현재 폴더에 대한 정보 패널을 전환할 수 있습니다.
 
-**편집:** 폴더의 이름과 설명을 변경합니다.
+### 기사 옵션
 
-**이동:** 새 상위 폴더 아래에 폴더를 재배치하거나 우선 순위를 업데이트합니다.
+![Click the Actions button for an article to access these management options.](./managing-the-knowledge-base/images/05.png)
 
-**삭제:** 지식 기반에서 폴더와 해당 문서를 제거합니다.
+**편집** (![편집](../../images/icon-edit.png)): 폴더 이름과 설명을 변경합니다.
 
-**권한:** 폴더에 글 추가, 폴더에 하위 폴더 추가, 폴더 삭제, 폴더 이동, 폴더에 대한 권한 설정, 폴더 편집(업데이트), 보기 권한의 부여 또는 철회 폴더.
+**하위 기사 추가** (![페이지](../../images/icon-document.png)): 하위 기사를 만듭니다.
 
-여러 기사 또는 폴더를 한 번에 삭제할 수도 있습니다. 이렇게 하려면 삭제하려는 각 항목의 확인란을 선택하고 관리 표시줄에 나타나는 X 버튼을 클릭합니다. 관리 표시줄에서 정보 아이콘(![Info icon](../../images/icon-information.png))을 클릭하여 선택한 항목에 대한 정보를 볼 수도 있습니다.
+**만료** (![시간](../../images/icon-time.png)): 기사를 만료된 것으로 표시하고 검토자, 소유자 및 구독자에게 알립니다. 만료된 기사는 사이트에 표시될 수 없습니다. 자세한 내용은 [기사에 대한 검토 및 만료 날짜 설정](#setting-review-and-expiration-dates-for-articles) 을 참조하세요.
+
+**구독** (![구독](../../images/icon-bell.png)): 기사에 대한 업데이트를 받으려면 가입하세요. 사용자는 시스템 메일 및 알림 설정에 따라 기사에 대한 알림을 받습니다.
+
+**기록** (![기록](../../images/icon-date-time.png)): 기사의 다양한 버전을 보고 비교합니다.
+
+**인쇄** (![인쇄](../../images/icon-print.png)): 기사를 인쇄하려면 대화상자를 엽니다.
+
+**이동** (![이동](../../images/icon-move-folder.png)): 아티클을 다른 폴더나 상위 아티클로 재배치합니다.
+
+**권한** (![권한](../../images/icon-permissions.png)): 기사에 대한 권한을 관리합니다.
+
+**삭제** (![삭제](../../images/icon-app-trash.png)): 하위 기사와 함께 기사를 즉시 삭제합니다.
+
+기사를 보는 동안 _정보_(![정보 버튼](../../images/icon-information.png))를 클릭하여 기사 세부정보와 버전을 볼 수도 있습니다.
+
+## 기사 검토 및 만료 날짜 설정
+
+때로는 기술 자료 문서가 일정 기간 동안만 유효한 경우도 있습니다. 이러한 상황에서는 문서의 무결성을 보장하기 위해 기술 자료 문서의 만료 및 검토 날짜를 설정할 수 있습니다. 설정된 동안 Liferay는 만료 또는 검토 날짜에 도달한 모든 기사에 대해 설정된 간격으로 기술 자료 기사를 확인합니다. 그런 다음 검토자, 소유자 및 구독자에게 알림을 보냅니다. 만료 날짜가 가까워지면 Liferay는 사용자에게 기사가 곧 만료됨을 알립니다.
+
+기본적으로 기사는 만료되거나 검토가 필요하지 않도록 설정되어 있지만 기사를 만들거나 편집하는 동안 이를 변경할 수 있습니다.
+
+![Set review and expiration dates for articles.](./managing-the-knowledge-base/images/06.png)
+
+기본값은 1년 후이지만, 원하는 날짜와 시간을 선택할 수 있습니다. 사용자는 시스템 메일 및 알림 설정에 따라 기사에 대한 알림을 받습니다.
+
+만료 날짜에 도달하면 사이트에서 기술 자료 문서를 사용할 수 없습니다. URL을 통해 기술 자료 문서에 액세스하는 사용자는 404 HTTP 상태를 받습니다. 또한 만료 날짜가 미래 값으로 설정되거나 만료가 비활성화되지 않는 한 만료된 기사를 수정할 수 없습니다.
+
+검토 날짜에 도달해도 기사에는 영향이 없습니다. 사용자에게 기사의 내용을 검토하라는 알림만 제공됩니다.
+
+### 검토 및 만료 알림 구성
+
+1. _전역 메뉴_(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _시스템 설정_을 클릭합니다.
+
+1. 콘텐츠 및 데이터에서 _지식 베이스_를 클릭합니다.
+
+   ![확인 간격과 곧 만료되는 기사를 사용자에게 알릴 시기를 설정합니다. ](./managing-the-knowledge-base/images/07.png)
+
+1. 시스템 범위 아래 서비스 탭에서 확인 간격을 입력합니다. 이 값은 확인 간격(분)을 결정합니다. 기본적으로 값은 15분입니다.
+
+1. 알림을 보내기 위해 만료되기까지의 주 수를 결정합니다. 이 범위 내의 기사에는 만료 예정 레이블이 할당됩니다. 기본값은 1주입니다.
+
+1. _저장_을 클릭하세요.
+
+1. 사이트 범위 아래의 _서비스_ 탭으로 이동합니다.
+
+1. 검토 및 만료 이메일을 활성화/비활성화합니다.
+
+1. 검토 및 만료 이메일의 내용을 결정합니다.
+
+   ![Configure review and expiration emails.](./managing-the-knowledge-base/images/08.png)
+
+1. _저장_을 클릭하세요.
+
+## 기사 기록 검토
+
+기사 기록을 볼 때 버전 세부 정보를 보고, 콘텐츠를 비교하고, 이전 버전으로 되돌릴 수 있습니다.
+
+![View, compare, and revert article versions.](./managing-the-knowledge-base/images/09.png)
+
+버전 콘텐츠를 비교하려면 두 기사를 선택하고 _버전 비교_를 클릭하세요.
+
+![Compare changes between two versions of an article.](./managing-the-knowledge-base/images/10.png)
+
+버전 간의 모든 추가, 삭제 및 형식 변경 사항이 강조표시됩니다.
+
+## 관련 주제
+
+* [기술 자료 문서 작성](./creating-knowledge-base-articles.md) 
+* [기술 자료 문서 가져오기](./importing-knowledge-base-articles.md) 
+* [기술 자료 시스템 설정](./knowledge-base-system-settings.md) 

@@ -2,17 +2,17 @@
 
 `object-admin` 서비스는 필드 추가와 같은 객체 정의에 대한 CRUD 작업을 수행하기 위한 REST API를 제공합니다. 여기에서는 이러한 API를 사용하여 Distributor Application 개체에 비즈니스 및 신용 참조 필드를 추가합니다.
 
-1. 이 연습에 대한 리소스 [자원](./liferay-p6k3.zip) 하고 압축을 풉니다.
+1. 이 연습을 위한 [리소스](./liferay-p6k3.zip)를 다운로드하고 압축을 풉니다.
 
    ```bash
-   curl https://learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-p6k3.zip -O
+   curl https://resources.learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-p6k3.zip -O
    ```
 
    ```bash
    unzip liferay-p6k3.zip
    ```
 
-   이 .zip 파일에는 `object-admin` REST API를 호출하는 셸 스크립트가 포함되어 있습니다.
+   이 .zip 파일에는 'object-admin' REST API를 호출하는 셸 스크립트가 포함되어 있습니다.
 
 1. `liferay-p6k3/curl`로 이동합니다.
 
@@ -27,7 +27,7 @@
    ```
 
    | 필드 이름                         | 유형    |
-   |:----------------------------- |:----- |
+   | :---------------------------- | :---- |
    | `businessName`                | 원본    |
    | `businessWebsite`             | 원본    |
    | `businessEstablishedDate`     | 날짜    |
@@ -54,7 +54,7 @@
    ```
 
    | 필드 이름                     | 유형 |
-   |:------------------------- |:-- |
+   | :------------------------ | :- |
    | `bankName`                | 원본 |
    | `bankAccountNumber`       | 원본 |
    | `bankPhoneNumber`         | 원본 |
@@ -72,7 +72,7 @@
    ```
 
    | 필드 이름                          | 유형 |
-   |:------------------------------ |:-- |
+   | :----------------------------- | :- |
    | `referenceSupplierName`        | 원본 |
    | `referencePhoneNumber`         | 원본 |
    | `referenceAddressLineOne`      | 원본 |
@@ -84,7 +84,7 @@
 
 완료되면 배포자 애플리케이션에는 48개의 필드가 있어야 합니다.
 
-![Distributor Application 개체에는 48개의 필드가 있어야 합니다.](./adding-fields-using-rest-apis/images/01.png)
+![The Distributor Application object should have 48 fields.](./adding-fields-using-rest-apis/images/01.png)
 
 엄청난! 이러한 필드는 Delectable Bonsai가 KYC 정책 및 AML 법률을 준수하여 각 지원자를 평가하고 심사하는 데 필요한 데이터를 수집하는 데 도움이 될 수 있습니다.
 

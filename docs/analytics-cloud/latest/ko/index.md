@@ -7,9 +7,10 @@ toc:
   - ./apis.md
   - ./workspace-data.md
   - ./workspace-settings.md
+  - ./reference.md
   - ./troubleshooting.md
 ---
-# 애널리틱스 클라우드
+# 애널리틱 클라우드
 
 ```{toctree}
 :maxdepth: 4

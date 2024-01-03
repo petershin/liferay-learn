@@ -1,57 +1,54 @@
 # 기술 자료 문서 만들기
 
-지식 베이스 앱에는 문서 리포지토리를 만드는 데 필요한 모든 것이 포함되어 있습니다. 앱의 WYSIWYG 편집기에서 기사를 작성하거나 ZIP 아카이브의 Markdown 파일(`.markdown`, `.md`)에서 가져와 기사를 만들 수 있습니다. 아래 섹션에서는 기사를 작성하는 두 가지 방법을 다룹니다.
+{bdg-secondary}`liferay 7.4 U72+/GA72+`
 
-```{note}
-사이트 관리에서 기술 자료에 액세스하려면 역할에 *사이트 관리*에서 *기술 자료* > 액세스 권한이 있어야 합니다. 기사, 폴더 또는 제안을 추가하거나 조치를 취하려면 사이트 관리자가 지식 기반의 권한 창을 사용하여 적절한 권한을 부여해야 합니다. 
-```
+기술 자료는 기사 저장소를 만들고 관리하기 위한 도구를 제공합니다. 애플리케이션의 WYSIWYG 편집기를 사용하거나 ZIP 아카이브의 Markdown 파일(`.markdown`, `.md`)로 가져와 기사를 만들 수 있습니다.
 
-지식 베이스 앱으로 이동하려면 **메뉴** 아이콘(![Menu icon](../../images/icon-menu.png))을 클릭하고 **콘텐츠 및 데이터** &rarr; **지식 베이스** 로 이동합니다. Knowledge Base 앱에는 세 개의 탭이 있습니다.
+![Create and manage a repository of articles.](./creating-knowledge-base-articles/images/01.png)
 
-**기사:** 기사 및 폴더를 만들고 관리합니다.
+## 편집기에서 기사 작성
 
-**템플릿:** 템플릿을 만들고 관리합니다.
+1. _사이트 메뉴_(![사이트 메뉴](../../images/icon-menu.png))를 열고 _콘텐츠 및 데이터_ &rarr; _기술 자료_로 이동합니다.
 
-**제안:** 기사에 대한 사용자 제출 피드백을 관리합니다.
+1. 폴더 및 아티클 섹션(![폴더 및 아티클](../../images/icon-pages-tree.png))에서 _추가_(![추가 버튼](../../images)를 클릭합니다. /icon-add.png)) _기본 기사_를 선택하세요.
 
-![기술 자료 앱에는 탭으로 액세스할 수 있는 다양한 섹션이 있습니다.](./creating-knowledge-base-articles/images/01.png)
+   [기사 템플릿](./knowledge-base-templates.md) 을 생성한 경우 이를 대신 선택할 수 있습니다.
 
-## 에디터에서 기사 작성
+   ![Click Add and select the desired article template.](./creating-knowledge-base-articles/images/02.png)
 
-1. 기사 탭에서 **추가** 아이콘(![Add icon](../../images/icon-add.png))을 클릭하고 **기본 기사** 를 클릭합니다.
+1. 기사 제목을 입력하세요.
 
-    ![기사를 작성할 수 있는 새 창이 나타납니다.](./creating-knowledge-base-articles/images/02.png)
+1. 기사의 내용을 입력하세요. 기사의 HTML 소스를 보거나 편집하려면 편집기에서 _소스_ 버튼(![소스](../../images/icon-code.png))을 클릭하세요.
 
-1. 기사 제목을 입력합니다. 제공한 제목의 URL 안전 버전이 문서의 친숙한 URL 끝에 추가됩니다. 구성 섹션의 친숙한 URL 필드에서 친숙한 URL을 관리할 수 있습니다.
+   ![Enter content for the article.](./creating-knowledge-base-articles/images/03.png)
 
-1. WYSIWYG 편집기를 사용하여 기사의 콘텐츠를 만듭니다. 기사의 HTML 소스를 보거나 편집하려면 편집기에서 **소스** 버튼을 클릭하십시오. 편집기 아래의 섹션을 사용하여 첨부 파일 및 태그를 추가하고 관련 자산을 지정하고 기사의 권한을 설정하십시오. 기본적으로 보기 권한은 게스트 역할에 부여되며 이는 누구나 기사를 볼 수 있음을 의미합니다.
+1. (선택사항) 기사에 첨부파일을 추가합니다.
 
-1. **게시** 을 클릭하여 게시를 위해 기사를 제출하거나 **초안으로 저장** 을 클릭하여 나중에 작업을 계속하십시오. 기술 자료에 대한 워크플로를 활성화한 경우 게시하기 전에 기사를 승인해야 합니다.
+1. (선택 사항) 기사에 대해 [표시 페이지 템플릿](../../site-building/displaying-content/using-display-page-templates.md) 선택합니다. 이 구성은 기술 자료 문서의 기본 표시 페이지 템플릿을 재정의합니다.
 
-문서가 저장되면 지식 기반용 HTML로 자동 변환됩니다. 기사는 기사 탭의 테이블에 나타납니다.
+1. (선택 사항) 기사에 [태그](../../content-authoring-and-management/tags-and-categories/tagging-content-and-managing-tags.md) 또는 [카테고리](../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) 추가하여 가시성과 구성을 개선합니다.
 
-## 기술 자료 문서 가져오기
+1. (선택사항) 만료 및 검토 날짜를 설정합니다. 기본적으로 기사는 만료되거나 검토가 필요하지 않도록 설정됩니다. 자세한 내용은 [지식 베이스 관리](./managing-the-knowledge-base.md) 참조하십시오.
 
-Markdown 형식(`.markdown`, `.md`)의 기사가 포함된 ZIP 보관 파일에서 가져와서 새로운 기술 자료 기사를 생성할 수도 있습니다. 예를 들어 즐겨 사용하는 Markdown 편집기에서 기사를 작성하고 ZIP 파일로 패키징한 다음 해당 ZIP 파일을 가져와 지식 베이스에서 해당 기사를 만들 수 있습니다. 기술 자료는 파일 이름의 숫자 접두사로 문서의 우선 순위를 지정할 수도 있습니다. 예를 들어 지식 베이스는 `01-article.markdown` 및 `02-article.markdown` 을 숫자 접두사(`01`, `02`)별로 오름차순으로 나열합니다. 기사 우선 순위에 대한 자세한 내용은 Knowledge Base Importer에 대한 자세한 내용은 [Knowledge Base 기사 관리](managing-the-knowledge-base.md#managing-knowledge-base-articles) 을 참조하십시오.
+1. (선택 사항) 자산을 기사와 연결합니다.
 
-* [기술 자료 문서 가져오기](importing-knowledge-base-articles.md)
-* [기술 자료 ZIP 파일 요구 사항](knowledge-base-zip-file-requirements.md)
-* [기술 자료 가져오기 도구 FAQ](knowledge-base-importer-faq.md)
+1. 기사의 친숙한 URL을 설정하세요. 기본적으로 URL은 제목 필드와 일치하지만 수동으로 변경할 수 있습니다.
 
-```{note}
-기사를 가져오려면 역할에 지식 기반 → 리소스 권한: 기사 가져오기 권한이 있어야 합니다.
-```
+    ```{important}
+    기사를 저장하거나 게시한 후에는 해당 URL을 변경할 수 없습니다.
+    ```
 
-기사를 기술 자료로 가져오려면
+1. (선택 사항) 기사의 권한을 구성합니다. 기본적으로 보기 권한은 게스트 역할에 할당됩니다. 즉, 누구나 기사를 볼 수 있습니다.
 
-1. 기사 탭에서 **추가** 아이콘(![Add icon](../../images/icon-add.png))을 클릭하고 **가져오기** 를 클릭합니다.
+1. 출판을 위해 기사를 제출하려면 _게시_를 클릭하고, 나중에 작업하려면 _초안으로 저장_을 클릭하세요.
 
-    ![이 새 페이지에 ZIP 파일을 업로드하세요.](./creating-knowledge-base-articles/images/03.png)
+저장되면 기사가 폴더 및 기사 섹션에 나타납니다. 기술 자료에 대한 워크플로를 활성화한 경우 기사는 게시되기 전에 승인 프로세스를 거쳐야 합니다.
 
-1. **파일** 선택을 클릭하고 가져올 ZIP 파일을 찾습니다.
+## 마크다운 파일 가져오기
 
-1. 파일의 숫자 접두사를 사용하여 Knowledge Base에서 가져온 기사의 우선 순위를 지정하려면 **기사 파일의 숫자 접두사를 우선 순위로 적용** 을 선택합니다.
+원하는 경우 기술 자료 문서를 Markdown 파일(`.markdown`, `.md`)로 가져올 수 있습니다. 이렇게 하려면 각 Markdown 파일의 형식이 적절하고 ZIP 아카이브로 패키지되어 있는지 확인해야 합니다. 가져온 아티클은 자동으로 HTML로 변환되어 아티클 및 폴더 섹션(![폴더 및 아티클](../../images/icon-pages-tree.png))에 나타납니다. 자세한 지침은 [기술 자료 문서 가져오기](./importing-knowledge-base-articles.md) 참조하세요.
 
-1. 완료되면 **저장** 을 클릭합니다.
+## 관련 주제
 
-모든 기사와 마찬가지로 가져온 기사는 기술 자료용 HTML로 자동 변환되고 기사 탭의 나머지 기사와 함께 표에 나열됩니다.
+* [지식 베이스 관리](./managing-the-knowledge-base.md) 
+* [기술 자료 문서 가져오기](./importing-knowledge-base-articles.md) 

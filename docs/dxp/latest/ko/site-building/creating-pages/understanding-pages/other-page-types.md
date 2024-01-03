@@ -1,16 +1,16 @@
 # 기타 페이지 유형
 
-[콘텐츠 페이지](../using-content-pages.md)는 가장 일반적으로 사용되는 페이지 유형이지만 다른 페이지 유형에도 사용되는 경우가 있습니다.
+[콘텐츠 페이지](../using-content-pages.md) 은 가장 일반적으로 사용되는 페이지 유형이지만 다른 페이지 유형에도 사용됩니다.
 
 ## 유틸리티 페이지
 
-유틸리티 페이지는 404 오류 페이지와 같은 시스템 수준 페이지에 적용할 수 있는 콘텐츠 페이지입니다. 자세한 내용은 [유틸리티 페이지 사용](../adding-pages/using-utility-pages.md)을 참조하세요.
+유틸리티 페이지는 404 오류 페이지와 같은 시스템 수준 페이지에 적용할 수 있는 콘텐츠 페이지입니다. 자세한 내용은 [유틸리티 페이지 사용](../adding-pages/using-utility-pages.md) 참조하십시오.
 
 ![You can create 404 error page like this one using a utility page.](./other-page-types/images/01.png)
 
 ## 전체 페이지 애플리케이션
 
-전체 페이지 애플리케이션 페이지 유형은 전체 페이지를 채우는 단일 애플리케이션을 표시합니다. 자세한 내용은 [전체 페이지 응용 프로그램 페이지 사용](../adding-pages/using-the-full-page-application-page-type.md)을 참조하세요.
+전체 페이지 애플리케이션 페이지 유형은 전체 페이지를 채우는 단일 애플리케이션을 표시합니다. 자세한 내용은 [전체 페이지 응용 프로그램 사용 페이지](../adding-pages/using-the-full-page-application-page-type.md) 을 참조하십시오.
 
 ![A full page application page displays a single application that spans the entire width of the page.](./other-page-types/images/02.png)
 
@@ -32,7 +32,7 @@
 
 ## Embedded
 
-포함 옵션은 [iframe](../../displaying-content/additional-content-display-options/using-the-iframe-widget.md) 위젯을 사용하여 다른 웹사이트의 콘텐츠를 표시합니다. 웹 사이트는 Liferay DXP 인스턴스의 탐색 내에서 컨텍스트에 표시됩니다.
+삽입 옵션은 [iframe](../../displaying-content/additional-content-display-options/using-the-iframe-widget.md) 위젯을 사용하여 다른 웹사이트의 콘텐츠를 표시합니다. 웹 사이트는 Liferay DXP 인스턴스의 탐색 내에서 컨텍스트에 표시됩니다.
 
 ## URL로 연결
 
@@ -40,4 +40,4 @@ URL에 링크 옵션은 제공된 URL에 링크를 추가합니다. 이는 외�
 
 ## 컬렉션 페이지
 
-컬렉션 페이지는 컬렉션에 연결됩니다. 이 페이지는 컬렉션 표시 및 개인화 프로세스를 단순화합니다. 자세한 내용은 [컬렉션 표시](../../../content-authoring-and-management/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections) 를 참조하세요.
+컬렉션 페이지는 컬렉션에 연결됩니다. 이 페이지는 컬렉션 표시 및 개인화 프로세스를 단순화합니다. 자세한 내용은 [컬렉션 표시](../../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md#displaying-collections) 참조하세요.

@@ -2,82 +2,84 @@
 
 개인 대시보드는 방문자 및 방문자가 사이트와 상호 작용하는 방식에 대한 광범위한 분석 데이터를 제공합니다.
 
-대시보드를 보려면 다음과 같이 하세요,
+대시보드를 보려면,
 
-1. 메뉴의 사람 섹션에서 **개인** 을 클릭합니다.
+1. 메뉴의 사람 섹션에서 _개인_을 클릭하세요.
 
-1. **개요** 탭을 클릭합니다(개인을 클릭하면 이 탭이 기본적으로 선택됨).
+1. _개요_ 탭을 클릭하세요. 이 탭은 개인을 클릭하면 기본적으로 선택됩니다.
 
-개인 대시보드에는 다음 패널이 포함되어 있습니다:
+개인 대시보드에는 다음 패널이 포함되어 있습니다.
 
-* [현재 합계](#current-totals)
-* [강화된 프로필](#enriched-profiles)
-* [활동 중인 개인](#active-individuals)
-* [관심 분야](#interests)
-* [분석](#breakdown)
+* [현재 합계](#current-totals) 
+* [강화된 프로필](#enriched-profiles) 
+* [활성 개인](#active-individuals) 
+* [관심분야](#interests) 
+* [고장](#breakdown) 
+
+이 대시보드 보기를 PDF 파일로 다운로드하려면 _보고서 다운로드_를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
 
 ## 현재 합계
 
-현재 총계 패널에는 애널리틱스 클라우드에서 추적한 알려진 개인 및 익명의 총 개인 수가 표시됩니다.
+현재 합계 패널에는 Analytics Cloud에서 추적한 알려진 개인과 익명의 총 개인 수가 표시됩니다.
 
-![현재 합계 패널에는 사이트 방문자의 총 수가 표시됩니다.](./individuals-dashboard/images/01.png)
+![The Current Totals panel presents total numbers for visitors to your Site.](./individuals-dashboard/images/01.png)
 
 ```{note}
-로그인 시 이메일 주소가 애널리틱스 클라우드와 동기화된 사용자 데이터와 일치하면 개인이 알려진 사용자로 간주됩니다. 새 사용자가 사이트에 등록하면 데이터가 애널리틱스 클라우드와 동기화되어 알려진 개인으로 표시되는 데 최대 2시간이 걸릴 수 있습니다.
+로그인 시 이메일 주소가 Analytics Cloud와 동기화된 사용자 데이터와 일치하면 개인이 알려진 것으로 간주됩니다. 신규 사용자가 사이트에 등록하면 해당 데이터가 Analytics Cloud와 동기화되고 알려진 개인으로 표시되는 데 최대 2시간이 걸릴 수 있습니다.
 ```
 
-패널에는 이전 30일과 비교한 총 수의 백분율 변화도 표시됩니다.
+패널에는 지난 30일과 비교한 총 숫자의 변화율도 표시됩니다.
 
 ## 강화된 프로필
 
-강화된 프로필 패널에는 지난 30일 이내에 강화된 총 개인 수가 표시됩니다.
+강화된 프로필 패널에는 지난 30일 동안 강화된 개인의 총 수가 표시됩니다.
 
-![강화된 프로필 패널에는 강화된 총 개인 수가 표시됩니다.](./individuals-dashboard/images/02.png)
+![The Enriched Profiles panel presents the total number of individuals who have been enriched.](./individuals-dashboard/images/02.png)
 
-개인은 속성이 해당 개인과 연관될 때마다 풍부한 것으로 간주됩니다. 예를 들어 [DXP에서 연락처 데이터 동기화](../../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
+개인은 속성이 해당 개인과 연관될 때마다 강화된 것으로 간주됩니다. 예를 들어 DXP에서 연락처 데이터를 [하는 경우](../../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) .
 
-## 활동 중인 개인
+## 활동적인 개인
 
-활성 개인 패널에는 선택한 기간 동안 사이트와 상호 작용한 알려진 개인과 익명의 개인에 대한 정보가 표시됩니다.
+활성 개인 패널은 선택한 기간에 귀하의 사이트와 상호 작용한 알려진 개인과 익명의 개인 모두에 대한 정보를 제공합니다.
 
-![활성 개인 패널에는 사이트와 상호작용한 시간대별 개인 차트가 표시됩니다.](./individuals-dashboard/images/03.png)
+![The Active Individuals panel presents a chart of individuals over time who have interacted with the Site.](./individuals-dashboard/images/03.png)
 
-일, 주 또는 월을 기준으로 데이터를 시각화하도록 선택합니다. 데이터는 시간 범위별로 필터링할 수 있습니다: 지난 24시간, 지난 7일, 지난 30일, 지난 90일. **추가 사전 설정 기간** 을 클릭하면 추가 시간 범위를 확인할 수 있습니다. **사용자 지정 범위** 를 클릭하여 원하는 시작일과 종료일을 기준으로 필터링합니다.
+일, 주 또는 월을 기준으로 데이터를 시각화하도록 선택합니다. 데이터는 지난 24시간, 지난 7일, 지난 30일, 지난 90일 등 시간 범위별로 필터링할 수 있습니다. 추가 시간 범위를 표시하려면 _추가 사전 설정 기간_을 클릭하세요. _사용자 정의 범위_를 클릭하여 원하는 시작 날짜와 종료 날짜를 기준으로 필터링하세요.
 
-## 관심 분야
+## 이해
 
-관심사 패널에는 가장 인기 있는 상위 5개 주제가 표시됩니다. 
+관심분야 패널에는 가장 인기 있는 상위 5개 주제가 표시됩니다.
 
-![관심사 패널에는 인기 있는 주제의 차트가 표시됩니다.](./individuals-dashboard/images/04.png)
+![The Interests panel presents a chart of popular topics.](./individuals-dashboard/images/04.png)
 
-논문 주제는 페이지 HTML의 제목, 설명 및 키워드 태그에서 파생됩니다.
+관심분야에 대한 전체 개인의 비율은 특정 주제에 관심이 있는 개인의 비율을 나타냅니다. 이러한 주제는 페이지 HTML의 제목, 설명 및 키워드 태그에서 파생됩니다.
 
-전체 관심사 주제 목록을 보려면 패널에서 **모든 관심사 보기** 를 클릭하세요. 또는 페이지 상단의 관심사 탭을 클릭합니다. 
+관심 주제의 전체 목록을 보려면 패널에서 _모든 관심 분야 보기_를 클릭하세요. 또는 페이지 상단의 관심분야 탭을 클릭하세요.
 
-관심사에 대해 자세히 알아보려면 [관심사 이해](./understanding-interests.md)를 참조하세요.
+관심사에 대해 자세히 알아보려면 [관심사 이해](./understanding-interests.md) 참조하세요.
 
-## 분석
+## 고장
 
-분석 패널은 선택한 개인 속성을 기반으로 분포 정보를 표시합니다. 이러한 속성을 사용할 수 있습니다:
+분석 패널은 개인의 선택된 속성을 기반으로 분포 정보를 표시합니다. 다음 속성을 사용할 수 있습니다.
 
-* `추가 이름`: 중간 이름
+* `additionalName`: 중간 이름
 * `birthDate`: 생년월일
-* `이메일`: 이메일 주소
-* `familyName`: 가족 이름
-* `주어진 이름`: 주어진 이름
-* `직책`: 직책
-* `languageId`: 기본 언어
-* `수정된 날짜`: 마지막 수정 날짜
-* `화면 이름`: 화면 이름
+* `Email`: 이메일 주소
+* `familyName`: 성
+* `givenName`: 이름
+* `jobTitle`: 직위
+* `언어Id`: 기본 언어
+* `modifiedDate`: 마지막 수정 날짜
+* 클릭하세요.
 
-![분석 패널은 선택한 속성을 기반으로 분포 정보를 표시합니다.](./individuals-dashboard/images/05.png)
+![The Breakdown panel presents distribution information based on selected attributes.](./individuals-dashboard/images/05.png)
 
-새 분류를 추가합니다,
+새로운 분류를 추가하려면,
 
-1. 패널 오른쪽 상단의 더하기 기호를 클릭합니다. 
+1. 패널 오른쪽 상단에 있는 더하기 기호를 클릭합니다.
 
 1. 드롭다운 메뉴를 사용하여 속성을 선택합니다.
 
-1. 분류 이름을 입력하고 **저장** 을 클릭합니다.
+1. 분석 이름을 입력하고 _저장_을 클릭하세요.
 
-추가 속성에 대한 분석을 보려면 **분석 살펴보기** 를 클릭하세요. 또는 페이지 상단의 **배포** 탭을 클릭합니다.
+추가 속성의 분석을 보려면 _분석 탐색_을 클릭하세요. 또는 페이지 상단의 _배포_ 탭을 클릭하세요.

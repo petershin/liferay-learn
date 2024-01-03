@@ -9,11 +9,11 @@ toc:
 ---
 # 사용자 정의 개체 API 사용
 
-{bdg-secondary}`라이프레이 7.4+`
+{bdg-secondary}`liferay 7.4+`
 
-사용자 정의 개체 정의를 게시하면 Liferay는 개체 및 해당 데이터와 상호 작용하기 위한 기본 [REST API](../../../headless-delivery/소비-apis/소비-rest-services.md)를 생성합니다. 이러한 API는 개체의 범위(예: 회사 또는 사이트)에 따라 다릅니다. 정의에 관계 또는 독립 실행형 작업이 포함된 경우 Liferay는 이를 호출하기 위한 엔드포인트도 생성합니다.
+사용자 정의 개체 정의를 게시하면 Liferay는 개체 및 해당 데이터와 상호 작용하기 위해 기본 [REST API](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 을 생성합니다. 이러한 API는 개체의 범위(예: 회사 또는 사이트)에 따라 다릅니다. 정의에 관계 또는 독립 실행형 작업이 포함된 경우 Liferay는 이를 호출하기 위한 엔드포인트도 생성합니다.
 
-이러한 헤드리스 서비스의 경로는 `c/[pluralobjectlabel]` 이름 지정 패턴(예: `/o/c/timeoffrequests`)을 따릅니다. '[server]:[port]/o/api'(예: 'localhost:8080/o/api')에서 Liferay API Explorer를 통해 사용 가능한 개체 API를 보고 테스트할 수 있습니다. API 드롭다운 목록을 보려면 **REST 애플리케이션** 을 클릭하세요.
+이러한 헤드리스 서비스의 경로는 `c/[pluralobjectlabel]` 명명 패턴(예: `/o/c/timeoffrequests`)을 따릅니다. `[서버]:[포트]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용 가능한 개체 API를 보고 테스트할 수 있습니다. API 드롭다운 목록을 보려면 _REST 애플리케이션_을 클릭하세요.
 
 ![Each object appears under REST Applications.](./using-custom-object-apis/images/01.png)
 
@@ -89,14 +89,14 @@ toc:
 | 놓다      | `/{entryId}`                                          | `putObjectName`                              | 지정된 항목의 세부정보를 API 호출에 제공된 세부정보로 바꿉니다.                              |
 
 ```{note}
-`scopeKey`의 경우 원하는 데이터 범위(예: 사이트 ID 또는 사용자 역할)에 대한 적절한 식별자를 사용하세요.
+`scopeKey`의 경우 원하는 데이터 범위(예: 사이트 ID 또는 사용자 역할)에 대한 적절한 식별자를 사용합니다.
 ```
 
 ## 관계 REST API
 
-{bdg-secondary}`라이프레이 7.4 U70+/GA70+`
+{bdg-secondary}`liferay 7.4 U70+/GA70+`
 
-개체 간의 일대다 및 다대다 관계를 정의하면 Liferay는 항목 관계를 쿼리하고 관리하기 위한 끝점을 생성합니다. 여기에는 관련 객체 항목을 반환하기 위한 GET 엔드포인트, 항목 관련 PUT 엔드포인트, 관련 항목 연결 해제를 위한 DELETE 엔드포인트가 포함됩니다. 자세한 내용은 [Relationship API 사용](./using-custom-object-apis/using-relationship-rest-apis.md)을 참조하세요.
+개체 간의 일대다 및 다대다 관계를 정의하면 Liferay는 항목 관계를 쿼리하고 관리하기 위한 끝점을 생성합니다. 여기에는 관련 객체 항목을 반환하기 위한 GET 엔드포인트, 항목 관련 PUT 엔드포인트, 관련 항목 연결 해제를 위한 DELETE 엔드포인트가 포함됩니다. 자세한 내용은 [관계 API 사용](./using-custom-object-apis/using-relationship-rest-apis.md) 참조하세요.
 
 HTTP 엔드포인트의 경우 `relationshipName`을 관계 이름(예: `userToTicket`)으로 바꿉니다. 각 관계 API에 대한 Java 메소드는 메소드 + 현재 객체 + 관계 이름 + 관련 객체(예: `getTicketUserToTicketUserPage`, `deleteTicketUserToTicketUser`)라는 이름 지정 패턴을 따릅니다.
 
@@ -110,14 +110,14 @@ HTTP 엔드포인트의 경우 `relationshipName`을 관계 이름(예: `userToT
 사이트 범위 개체의 경우 ERC 엔드포인트에는 `/scope/{scopeKey}` 접두사(예: `/scope/{scopeKey}/by-external-reference-code/{erc}/relationshipName/{relatedERC}`)가 포함됩니다. 시스템 개체에는 외부 참조 코드 끝점을 사용할 수 없습니다.
 
 ```{tip}
-전용 관계 API 외에도 객체의 다른 GET API와 함께 'nestedFields' 쿼리 매개변수를 사용하여 관련 항목이 포함된 항목을 반환할 수 있습니다. 이 매개변수를 사용할 때 출력에 포함하려는 관계의 이름을 제공해야 합니다(예: `nestedFields=ticketAssignee`). 자세한 내용과 소개 튜토리얼은 ['nestedFields'를 사용하여 관련 항목 쿼리](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md)를 참조하세요.
+전용 관계 API 외에도 객체의 다른 GET API와 함께 'nestedFields' 쿼리 매개변수를 사용하여 관련 항목이 포함된 항목을 반환할 수 있습니다. 이 매개변수를 사용할 때 출력에 포함하려는 관계의 이름을 제공해야 합니다(예: `nestedFields=ticketAssignee`). 자세한 내용과 소개 튜토리얼은 [NestedFields를 사용하여 관련 항목 쿼리](./using-custom-object-apis/using-nestedfields-to-query-related-entries.md) 참조하세요.
 ```
 
 ## 독립형 작업 REST API
 
-{bdg-secondary}`라이프레이 7.4 U60+/GA60+`
+{bdg-secondary}`liferay 7.4 U60+/GA60+`
 
-게시된 객체에 대한 독립 실행형 작업을 정의하면 Liferay는 항목에 대한 작업을 트리거하기 위한 두 개의 엔드포인트를 생성합니다. 하나는 항목의 ID를 사용하고 다른 하나는 항목의 외부 참조 코드(ERC)를 사용합니다. 자세한 내용은 [수동 작업 사용](../creating-and-managing-objects/actions/using-manual-actions.md)을 참조하세요.
+게시된 객체에 대한 독립 실행형 작업을 정의하면 Liferay는 항목에 대한 작업을 트리거하기 위한 두 개의 엔드포인트를 생성합니다. 하나는 항목의 ID를 사용하고 다른 하나는 항목의 외부 참조 코드(ERC)를 사용합니다. 자세한 내용은 [수동 작업 사용](../creating-and-managing-objects/actions/using-manual-actions.md) 참조하세요.
 
 | HTTP 방법 | HTTP 엔드포인트                                                    | 자바 방법                     |
 | :------ | :------------------------------------------------------------ | :------------------------ |
@@ -138,5 +138,6 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 
 ## 관련 주제
 
-* [REST 서비스 사용](../../../headless-delivery/소비-apis/소비-rest-services.md)
+* [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 
+
 <!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

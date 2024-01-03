@@ -9,26 +9,13 @@ toc:
   - ./search-blueprints/search-blueprints-configuration-reference.md
   - ./search-blueprints/search-blueprints-elements-reference.md
   - ./search-blueprints/creating-and-managing-elements.md
+  - ./search-blueprints/filtering-by-stored-fields-to-limit-the-response-size.md
 uuid: 216dc540-09fa-468d-8b4f-a6bbdb866fc2
 ---
 # Search Blueprints
 
 {bdg-link-primary}`[LES Subscription](../activating-liferay-enterprise-search.md)`
 {bdg-secondary}`DXP 7.4 U5+; 7.3 U6+`
-
-```{toctree}
-:maxdepth: 1
-
-./search-blueprints/understanding-search-blueprints.md
-./search-blueprints/creating-and-managing-search-blueprints.md
-./search-blueprints/using-a-search-blueprint-on-a-search-page.md
-./search-blueprints/collections-with-search-blueprints.md
-./search-blueprints/personalizing-the-search-experience.md
-./search-blueprints/sorting-results-in-a-search-blueprint.md
-./search-blueprints/search-blueprints-configuration-reference.md
-./search-blueprints/search-blueprints-elements-reference.md
-./search-blueprints/creating-and-managing-elements.md
-```
 
 Search Blueprints is the first feature in the Search Experiences application. With it you can
 

@@ -8,6 +8,9 @@ uuid: 8d257002-3c90-4810-82a1-17ae741c33c4
 ---
 # Using the Fragments Toolkit
 
+!!! note
+   The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+. See [Alternatives for the Fragments Toolkit](#alternatives-to-the-fragments-toolkit) for more information.
+
 The Fragments Toolkit helps you develop and manage Fragments locally, using your favorite tools. Here you'll use the toolkit to generate a Fragments Project with sample Fragments, deploy it, and add your own Fragments Set to it.
 
 ```{note}
@@ -412,8 +415,83 @@ You can import your new Fragment as you did the original example Fragment:
 
 Great! Now you know how to use the Fragments Toolkit to create and manage Fragments. See the [Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md) for more toolkit command information.
 
+## Alternatives to the Fragments Toolkit
+
+As mentioned before, the Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+.
+
+If you need to develop and manage your fragments, there are some alternatives you can use instead:
+
+- **Export/Import**: If you need to export/import fragments, you can use the [Export/Import](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/managing-fragments#managing-fragment-sets) fragment option in your Fragments app to Export/Import fragments in .zip format.
+
+    ![Export/Import fragments using the Export/Import options available in your Fragments app.](./using-the-fragments-toolkit/images/03.png)
+
+- **Use the Global Site**: Alternatively, create your fragments in your global site and those fragments are available in other sites you create.
+
+    ![Create fragment sets and fragments in your global site to use them throughout the other created sites.](./using-the-fragments-toolkit/images/04.png)
+
+- **Create a Basic Custom Element**: If you need to develop and manage react components, you can create a basic [custom element](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md), [host the application files in documents and media](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md#hosting-the-application-files), and [register the application as a client extension](../../../building-applications/client-extensions/front-end-client-extensions/tutorials/creating-a-basic-custom-element.md#registering-the-application-with-liferay). This way, you transform your React component into a widget and you can use it in your pages.
+
+    ![Create a react fragment as a basic custom element and use it as a widget in your pages.](./using-the-fragments-toolkit/images/05.png)
+
+- {bdg-secondary}`Available: Liferay DXP 2023.Q4+/Portal 7.4 GA105+` **Create a React Fragment**: Instantiate a React component in a fragment using static JS imports. See the example code below and its comments.
+
+    ![Instantiate a React component in a fragment using static JS imports.](./using-the-fragments-toolkit/images/06.png)
+
+    ```javascript
+    // Import statements. Clay Components, React, and ReactDOM are already included in Liferay's importMap. If you want to import a React component that is not included in Liferay's importaMap, you can add it by creating an importMap ClientExtension (https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend-3/client-extension.yaml#L16).
+    import React, { useState } from "react";
+    import ReactDOM from "react-dom";
+
+    // my-collection/my-fragment/Counter.jsx
+    // A simple Counter component to increase or decrease a given variable (count).
+    function Counter() {
+    const [count, setCount] = useState(0);
+    const increase = () => setCount((previousCount) => previousCount + 1);
+    const decrease = () => setCount((previousCount) => previousCount - 1);
+
+    // Rendering an output element that displays the current count, along with two buttons for increasing/decreasing the count.
+    return React.createElement(
+        React.Fragment,
+        null,
+        React.createElement("output", null, count),
+        React.createElement("button", { onClick: increase, type: "button" }, "+"),
+        React.createElement("button", { onClick: decrease, type: "button" }, "-")
+    );
+    }
+
+    // my-collection/my-fragment/index.jsx
+    // Another functional React component. It renders an instance of the Counter component.
+    function MyFragment(props) {
+    console.log("MyFragment props", props);
+    return React.createElement(Counter, null);
+    }
+
+    // Cleanup process: Unmounts any existing React component associated with the specified DOM element (fragmentElement) before rendering a new component.
+    ReactDOM.unmountComponentAtNode(fragmentElement);
+    // Renders an instance of MyFragment with a configuration prop into the specified DOM element (fragmentElement) using ReactDOM.render.
+    ReactDOM.render(
+    React.createElement(MyFragment, { configuration }),
+    fragmentElement
+    );
+    // Cleanup process: Listens for the beforeNavigate event using Liferay.once and, when triggered, unmounts the React component associated with fragmentElement to clean up before navigating to another page.
+    // Liferay.once(event, callback); function is used to add an event listener that is executed only once when the specified event occurs.
+    Liferay.once("beforeNavigate", () =>
+    ReactDOM.unmountComponentAtNode(fragmentElement)
+    );
+    ```
+
+- **Use a bundler to build your fragments**: If you want to use JSX or multiple files, you need to bundle the files before importing them.
+
+    Pay attention that the default behavior of bundlers is to merge all content in a single JS file (including React, ReactDOM, and all dependencies). So, you must use methods to select which libraries are not included in the final bundle, as the import relies on [importMaps](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap).
+
+    Some examples of bundlers are [esbuild](https://esbuild.github.io/api/#external), [webpack](https://webpack.js.org/configuration/externals/), and [vite-plugin-externals](https://github.com/crcong/vite-plugin-externals).
+
+- **Use CSS whenever possible**: Consider using standard CSS instead of SASS unless you need SASS-only features.
+
+    [Nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) is now available in CSS too.
+
 ## Related Information
 
-* [Creating a Contributed Fragment Set](./creating-a-contributed-fragment-set.md)
-* [Using the Fragments Editor](./using-the-fragments-editor.md)
-* [Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md)
+- [Creating a Contributed Fragment Set](./creating-a-contributed-fragment-set.md)
+- [Using the Fragments Editor](./using-the-fragments-editor.md)
+- [Fragments Toolkit Command Reference](../reference/fragments/fragments-toolkit-command-reference.md)

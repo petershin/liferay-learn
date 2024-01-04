@@ -33,27 +33,28 @@ After you save your template, DXP provides a WebDAV URL and static URL. These va
 
 ## Reserved Variables Under Journal
 
-Here is a list of reserved variables you can find under Journal and what they return:
+Here is a list of reserved variables you can find under Journal, what they return, and the methods called:
 
-| Reserved Variable | Return |
-| :--- | :--- |
-| Author Email Address | The author's email address. |
-| Author ID | The author's ID. |
-| Author Job Title | The author's job title. |
-| Author Name | The author's name. |
-| Comments | The author's comments under *More Information* in account settings. |
-| Create Date | The article's date of creation |
-| Description | The article's description. |
-| Display Date | The display date provided under Schedule. |
-| ID | The article's ID. |
-| Modified Date | The last date the article was modified. |
-| Small Image URL | The URL for the feature image. |
-| Tags | The article's TAG. |
-| Title | The article's title. |
-| URL Title | The article's URL version of the title. |
-| Version | The article's current version. |
-
-
+| Reserved Variable | Return | Method |
+| :--- | :--- | :--- |
+| Article ID | The article's reserved ID. | `journalArticle.getArticleId()` |
+| Author Email Address | The author's email address. | `journalArticle.user.getEmailAddress()` |
+| Author ID | The author's ID. | `journalArticle.getUserId()` |
+| Author Job Title | The author's job title. | `journalArticle.user.getJobTitle()` |
+| Author Name | The author's full name. | `journalArticle.user.getFullName()` |
+| Comments | The author's comments under *More Information* in account settings. | `journalArticle.user.getComments()` |
+| Create Date | The article's date of creation. | `journalArticle.getCreateDate()` |
+| Description | The article's description. | `journalArticle.getDescription(languageId)` |
+| Display Date | The display date provided under Schedule. | `journalArticle.getDisplayDate()` |
+| External Reference Code | The article's external reference code. | `journalArticle.getExternalReferenceCode()` |
+| ID | The article's ID. | `journalArticle.getId()` |
+| Modified Date | The last date the article was modified. | `journalArticle.getModifiedDate()` |
+| Resource Primary Key | The resource primary key value. | `journalArticle.getResourcePrimKey()` |
+| Small Image URL | The URL for the feature image. | `journalArticle.getArticleImageURL(themeDisplay)` |
+| Tags | The article's tags. | `AssetTagLocalServiceUtil.getTagNames(JournalArticle.class.getName(), journalArticle.getResourcePrimKey())` |
+| Title | The article's title. | `journalArticle.getTitle(languageId)` |
+| URL Title | The article's URL version of the title. | `journalArticle.getUrlTitle()` |
+| Version | The article's current version. | `journalArticle.getVersion()` |
 
 ## Related Topics
 

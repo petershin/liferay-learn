@@ -19,7 +19,7 @@ From here, you can access the Library's active applications to create and manage
 
 To create content in an Asset Library, first go to the Library's menu page, and click on the desired application. From here, creating content is essentially the same as creating it in a Site. The only differences are its scope and default theme settings.
 
-See [Content Authoring and Management](../../content-authoring-and-management.html) articles for more information about creating each type of content.
+See [Content Authoring and Management](../../content-authoring-and-management.md) articles for more information about creating each type of content.
 
 ```{note}
 Only active applications appear on a Library's menu page. To activate or deactivate an application, see [Configuring Asset Libraries](./creating-and-managing-asset-libraries.md#configuring-asset-libraries) for more information.
@@ -49,7 +49,7 @@ When publishing content using the Asset Publisher widget, you must set its scope
 
 ![Set the Asset Publisher's scope to include content from a specific Asset Library.](./asset-library-content/images/05.png)
 
-See [Displaying Content](../../site-building/displaying_content.html) documentation for more information about using content in your Sites.
+See [Displaying Content](../../site-building/displaying-content.md) documentation for more information about using content in your Sites.
 
 ```{note}
 Unlike Sites, Display Page Templates cannot be defined in an Asset Library. Instead, Asset Library content is displayed using each Site's default Display Page template for the respective content type.
@@ -69,7 +69,7 @@ The Tags and Categories applications are enabled for all Asset Libraries. To acc
 If created in an Asset Library, vocabularies and categories cannot be edited or removed in connected Sites. They can only be modified in the Asset Library in which they were created. 
 ```
 
-See [Tags and Categories](../tags_and_categories.html) documentation for more information about using these applications.
+See [Tags and Categories](../tags-and-categories.md) documentation for more information about using these applications.
 
 ## Exporting and Importing Content
 

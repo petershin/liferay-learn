@@ -101,7 +101,7 @@ Although you can view the page, add an object entry, and see the list of tasks u
 
 1. Click the *Submit* button twice. Under Field, select the *Edit* action.
 
-   When users click the submit button, not only are they directed to the List of Tasks page, but they also activate the Edit action that replaces the previous Description value with the newly added one.
+   When users click the submit button, the List of Tasks page appears, and they also activate the Edit action that replaces the previous Description value with the newly added one.
 
 ```{tip}
 Form Container fragments enabled in display page templates. You can also edit the Form Container fragment and use only a subset of input fragments. Then, when the object entry is updated, only the available fields are updated.

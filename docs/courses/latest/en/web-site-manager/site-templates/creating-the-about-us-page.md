@@ -3,9 +3,9 @@ uuid: 1acf98a4-c309-439b-89ff-8048fa997a2d
 ---
 # Creating the About Us Page
 
-Now that you have a master page, use it to create the pages and populate the site template.
+Now that you have a master page, you can use it to create pages and populate the site template.
 
-In this lesson, you'll use *compositions*, pre-built structures that speed up the process of page building, to create the pages that will populate the site template. With compositions, add the elements to the right places in an existing structure to build your page.
+In this lesson, you'll use *compositions*---pre-built structures that speed up the process of page building---to create pages to populate the site template. With compositions, you'll add the elements to the right places in an existing structure to build your page.
 
 Start by creating a page using the master page template from the last lesson.
 
@@ -19,17 +19,15 @@ Start by creating a page using the master page template from the last lesson.
 
    ![Click New Page to add a new page based on the master page template.](./creating-the-about-us-page/images/01.png)
 
-1. Name the page `About Us` and click *Add*.
+1. Name the page `About Us` and click *Add*. The page editor appears.
 
-   You are redirected to the page editor.
-
-All the created pages have the same structure set in the Master page: a header, the content in the middle, and a footer. Now, populate the About Us page.
+All pages have the same structure you set in the Master page: a header, the content in the middle, and a footer. Now, populate the About Us page.
 
 ## Populating the About Us Page
 
 1. Look at the Fragments and Widgets tab on the left of the page editor and search for *About Us Composition*.
 
-1. Drag and drop the *About Us Composition* into the editing area".
+1. Drag and drop the *About Us Composition* into the editing area.
 
    A whole structure is set and you can edit its elements. If you applied the Dialect theme and imported the style book correctly, the composition should look like this:
 
@@ -80,7 +78,7 @@ Edit the fourth row:
 
 ![The first rows of the About Us page are complete.](./creating-the-about-us-page/images/04.png)
 
-Last, edit the cards. They hold information about the main Clarity offices: an image (a picture of the office), a title (the name of the office), a paragraph (information about the office), and a link (to redirect the user to the office's page).
+Last, edit the cards. They hold information about the main Clarity offices: an image (a picture of the office), a title (the name of the office), a paragraph (information about the office), and a link (to send the user to the office's page).
 
 1. Use the information and the instructions in the table below to fill in the cards:
 
@@ -104,11 +102,11 @@ Last, edit the cards. They hold information about the main Clarity offices: an i
 
    <!-- You are not going to create an individual page for each office in this exercise, but if you create one, you can link it here. -->
 
-Once the elements are in place, click *Publish* at the top right corner of the page. This is how the About Us Page should look once you are finished:
+Once the elements are in place, click *Publish* at the top right corner of the page. This is how the About Us Page should look when you are finished:
 
 ![With the cards filled, the About Us page is complete.](./creating-the-about-us-page/images/05.png)
 
-Now that the About Us Page is complete, let's [create the Contact Us page.](./creating-the-contact-us-page.md)
+Next: [create the Contact Us page.](./creating-the-contact-us-page.md)
 
 ## Relevant Concepts
 

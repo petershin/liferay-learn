@@ -3,7 +3,7 @@ uuid: d6bccf72-8b83-4067-8bcc-065a7552da83
 ---
 # Creating the Careers Page
 
-The Careers page shows a list of available job postings. Once you click on one of the postings you are redirected to another page with more details about the job. To create the page, use web content structures and templates to create and show the job postings and display page templates to show the details about the job.
+The Careers page shows a list of available job postings. When you click a posting a page appears with more details about the job. To create the page, use web content structures and templates to create and show the job postings and display page templates to show the details about the job.
 
 ## Importing the Web Content, Structures, and Templates
 
@@ -11,7 +11,7 @@ The Careers page shows a list of available job postings. Once you click on one o
 
 1. Click *Options* (![Options](../../images/icon-options.png)) and select *Export/Import*.
 
-1. Select the Import tab and choose the `05-glance-careers-job-posting-web-content.lar` file (that was included in the zip file with the resources for this module). Click *Continue*.
+1. Select the *Import* tab and choose the `05-glance-careers-job-posting-web-content.lar` file (that was included in the zip file with the resources for this module). Click *Continue*.
 
 1. Use the default settings and click *Import*. After the import process is complete, close the modal.
 
@@ -21,7 +21,7 @@ The web content articles, structure, and template are imported. Now, create a co
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Collections*.
 
-1. Click *New* and choose *Dynamic Collection*. Name it "Job Postings Collection".
+1. Click *New* and choose *Dynamic Collection*. Name it `Job Postings Collection`.
 
 1. Under Item Type, select *Web Content Article* and, under Item Subtype, select *Job Posting*. Click *Save*.
 
@@ -35,45 +35,41 @@ Now, import the display page template.
 
 1. Select the *Display Page Templates* tab, click *Options* (![Options](../../images/icon-options.png)) and select *Import*.
 
-1. Select the `06-glance-careers-job-posting-display-page-template.zip` file (that was included in the zip file with the resources for this module) and click *Import*. After the import process is complete, click *Done*.
+1. Select the `06-glance-careers-job-posting-display-page-template.zip` file (included in the zip file with the resources for this module) and click *Import*. After the import process is complete, click *Done*.
 
 The display page template is imported. You can use it to show more details about a job posting.
 
-## Creating the Careers Page
+## Create and Edit the Careers Page
 
 1. Open the *Site Menu* (![Site Menu](../../images/icon-product-menu.png)) and select *Site Builder* &rarr; *Pages*.
 
 1. Click *Add* (![Add icon](../../images/icon-add.png)) &rarr; *Add Site Template Page* and select the Main template.
 
-1. Name the page `Careers` and click *Add*.
+1. Name the page `Careers` and click *Add*. The page editor appears.
 
-   You are redirected to the page editor.
-
-1. While editing the page, look at the Fragments and Widgets tab on the left of the page editor and search for "Careers Composition".
+1. While editing the page, look at the Fragments and Widgets tab on the left of the page editor and search for `Careers Composition`.
 
 1. Drag and drop the Careers composition in the editing area.
 
-### Editing the Careers Page
-
 1. Change the Heading text to `Envision the future with us.`.
 
-1. Double-click the first Dialect Text component inside the Collection Item's Container. Under the Mapping tab, change the Field to `Job Title`.
+1. Double-click the first Dialect text component inside the collection item's container. Under the Mapping tab, change the field to `Job Title`.
 
-   When dealing with Collection Displays, you just have to alter one of the occurrences of the component. All the other occurrences are repetitions applied to the other collection items.
+   When dealing with collection displays, you only have to alter one of the occurrences of the component. All the other occurrences are repetitions applied to the other collection items.
 
    ![Alter one of the components in a collection display and the other occurrences change as well.](./creating-the-careers-page/images/02.gif)
 
-1. Double-click the second Dialect Text component inside the Collection Item's Container. Under the Mapping tab, change the Field to `Location`.
+1. Double-click the second Dialect text component inside the collection item's container. Under the Mapping tab, change the field to `Location`.
 
-1. Double-click the Dialect Button inside the Collection Item's Container. Under the Link tab, change the Link to `Mapped URL` and the Field to `Job Posting DPT`.
+1. Double-click the Dialect button inside the collection item's container. Under the Link tab, change the link to `Mapped URL` and the field to `Job Posting DPT`.
 
 <!-- Maybe it should be named Job Posting Display Page Template -->
 
-   Once users click the button, they are redirected to the display page template.
+   Once users click the button, the display page template appears. 
 
    ![This is how the details about the job posting should look in the display page template.](./creating-the-careers-page/images/03.png)
 
-1. Change the Dialect Button's text to `More`.
+1. Change the Dialect button's text to `More`.
 
 1. Publish the page.
 
@@ -81,7 +77,7 @@ This is how the Careers page should look once it's finished:
 
 ![This is how the Careers page should look once it's edited.](./creating-the-careers-page/images/04.png)
 
-Now that the Careers Page is complete, let's [create the menu navigation and use our site template to generate another site.](./creating-a-new-site.md)
+Next: [create the menu navigation and use your site template to generate another site.](./creating-a-new-site.md)
 
 ## Relevant Concepts
 

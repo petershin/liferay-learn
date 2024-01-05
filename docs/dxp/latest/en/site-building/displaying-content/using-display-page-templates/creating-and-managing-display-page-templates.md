@@ -14,8 +14,8 @@ uuid: 203429af-623b-4ad7-b5b1-0ffd147c7e06
 Display page templates define structures for displaying content at a dedicated friendly URL. These templates currently support the following content types:
 
 * [Blog Entries](../../../content-authoring-and-management/blogs/getting-started-with-blogs.md)
-* [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`7.4+`
-* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`7.4+`
+* [Categories](../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) {bdg-secondary}`Liferay DXP/Portal 7.4+`
+* [Custom Objects](../../../building-applications/objects/displaying-object-entries.md) {bdg-secondary}`Liferay DXP/Portal 7.4+`
 * [Documents](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/publishing-documents.md)
 * [Web Content Articles](../../../content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.md)
 
@@ -84,7 +84,7 @@ This gives you more freedom when dealing with objects and [forms mapped from obj
 
 ### Previewing the Display Page Template Content Mappings
 
-{bdg-secondary}`7.4+`
+{bdg-secondary}`Liferay DXP/Portal 7.4+`
 
 While editing, Liferay provides two ways to preview display page templates with content items.
 
@@ -96,7 +96,7 @@ Alternatively, from the display page template editor, click the *Options* menu(!
 
 ## Viewing Display Page Template Usage
 
-{bdg-secondary}`7.4+`
+{bdg-secondary}`Liferay DXP/Portal 7.4+`
 
 You can manage the different display page templates using the *Actions* menu (![Actions](../../../images/icon-actions.png)). From here, the *View Usages* option provides a list of content that uses a specific display page template other than the default template. This option is not available for default templates.
 
@@ -123,12 +123,46 @@ Follow these steps to view your display page template usage and unassign your co
 
 If you assign your content to a new display page template, make sure the content appears as expected. To preview and display your content, see [Publishing Content with Display Pages](./publishing-content-with-display-pages.md).
 
+## Changing the Display Page Template's Content Type
+
+{bdg-secondary}`Liferay 7.4 2023.Q4+/GA107+ `
+
+!!! warning
+   Changing the content type/subtype of a display page template may cause some of its elements to lose their previous mapping.
+
+   The mapped elements in a display page template are highlighted in purple in the Browser menu on the left. The unmapped elements are not highlighted in purple.
+
+To change the content type linked to a display page template,
+
+1. Open the *Site Menu* (![Site Menu](../../../images/icon-product-menu.png)) (1) and navigate to *Design* &rarr; *Page Templates* (2).
+
+1. Select the *Display Page Templates* tab (3), click *Actions* (![Actions icon](../../../images/icon-actions.png))  for the display page template you want to alter, and select *Change Content Type* (4).
+
+   ![Change the content type linked to the display page template.](./creating-and-managing-display-page-templates/images/08.png)
+
+1. In the modal that opens, choose the new content type for your display page template, the new content type and its subtype, or just the new subtype and click *Save*.
+
+   If the content type has a subtype, you must select a subtype before saving the new content type.
+
+### Changing the Content Type of Assigned Display Page Templates
+
+It is not possible to change the content type of a display page template if it's assigned to an asset (e.g. web content article).
+
+If you try changing the content type, a modal appears with a "Display Page In Use" message. You can click *View Display Page Usages* to see which assets are using the display page template.
+
+Then, you can select the assets, click *Actions* (![Actions icon](../../../images/icon-actions.png)), and select *Assign to Default* or *Unassign*.
+
+Assign to Default assigns the asset to the default display page template, while Unassign removes the display page template and assigns the asset to None instead.
+
+![While viewing the display page usage, you can assign an asset to the default display page template or unassign the display page template.](./creating-and-managing-display-page-templates/images/09.png)
+
+The picture below shows the Display Page settings for a web content article with the Display Page Template assigned to it (1), after using the Assign to Default option (2), and after using the Unassign option (3).
+
+![The display page settings for a web content article in three different moments.](./creating-and-managing-display-page-templates/images/10.png)
+
 ## Related Topics
 
-[Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
-
-[Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
-
-[Using Content Pages](./../../creating-pages/using-content-pages.md)
-
-[Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)
+- [Publishing Content with Display Pages](./publishing-content-with-display-pages.md)
+- [Configuring SEO and Open Graph](./configuring-seo-and-open-graph.md)
+- [Using Content Pages](./../../creating-pages/using-content-pages.md)
+- [Adding Elements to Content Pages](../../creating-pages/using-content-pages/adding-elements-to-content-pages.md)

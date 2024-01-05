@@ -7,7 +7,9 @@ Right now, browsing to <http://localhost:8080> still shows the default site. In 
 
 ![The default home page has a header, footer, and some Welcome to Liferay content.](./adding-the-home-page/images/01.png)
 
-Clarity needs its own home page. Page creation and management is the work of a site administrator, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Users assigned to the role and who are members of the site can act as an administrator for the site. The setup script executed in the first module have your Liferay instance pre-populated with just such a user, Preston Palmer.
+Clarity needs its own home page. Page creation and management is the work of a site administrator, and can be completed by anyone with the proper permissions. Out-of-the-box, Liferay comes with a role named Site Administrator that provides the required permissions. Users assigned to the role and who are members of the site can act as an administrator for the site. The setup script executed in the first module has your Liferay instance pre-populated with just such a user, Preston Palmer.
+
+<!-- When did we do this? I missed it. -Rich -->
 
 1. Log in as the site administrator, Preston Palmer: `preston@clarityvisionsolutions.com`, password `test`.
 

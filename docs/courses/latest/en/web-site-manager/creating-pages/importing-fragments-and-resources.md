@@ -3,7 +3,7 @@ uuid: 4925291c-19c3-411d-9870-7f1768ad6df7
 ---
 # Importing Fragments and Resources
 
-First, you'll import fragments and images created by their designers to aid in building out their pages. With these the site creators have the resources required to create the site while meeting Clarity's design and branding requirements. Log in as Preston Palmer, the site administrator user, for this exercise.
+First, you'll import fragments and images created by their designers to aid in building out their pages. With these, the site creators have the resources required to create the site while meeting Clarity's design and branding requirements. Log in as Preston Palmer, the site administrator user, for this exercise.
 
 ## Downloading the Images
 
@@ -27,9 +27,9 @@ First, you'll import fragments and images created by their designers to aid in b
 
 These images appear in Documents and Media:
 
-   - `clarity_banner.jpg`
-   - `clarity_logo.png`
-   - `clarity-testimonials.jpg`
+- `clarity_banner.jpg`
+- `clarity_logo.png`
+- `clarity-testimonials.jpg`
 
 ## Downloading the Fragment Set
 

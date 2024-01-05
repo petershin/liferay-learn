@@ -11,7 +11,7 @@ uuid: 30c0c2ed-18a3-460f-a7e3-48cb46b608d1
 ---
 # Creating Pages
 
-Now that Clarity's public site settings are configured, it's time to create some pages to start getting the site up and running. 
+Now that Clarity's public site settings are configured, you can create your first pages! 
 
 When finished, you'll have created this structure for Clarity's public site:
 
@@ -35,8 +35,8 @@ There are several page types in Liferay, but [content pages](https://learn.lifer
 
 [Fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) are reusable snippets of HTML, JavaScript (if necessary), and CSS that you add to content pages to build the look-and-feel and add content. You'll use both out-of-the-box fragments and custom fragments to build the Clarity site. Whether custom or built-in, *fragment compositions* are exportable collections of fragments that you can re-use across pages, sites, and systems.
 
-   - Custom fragments are developed by you, if none of the [out-of-the-box fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) suit your needs. Often you can start by [copying an existing fragment](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/duplicating-fragments) that contains some of the HTML, CSS, or JavaScript you'll need to create your own fragment.
-   - [Fragment compositions](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) are reusable fragment groups you've added to the content page editor and saved for repeated use.
+- Custom fragments are developed by you, if none of the [out-of-the-box fragments](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/default-fragments-reference) suit your needs. Often you can start by [copying an existing fragment](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/duplicating-fragments) that contains some of the HTML, CSS, or JavaScript you'll need to create your own fragment.
+- [Fragment compositions](https://learn.liferay.com/en/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions) are reusable fragment groups you've added to the content page editor and saved for repeated use.
 
 ![You can create custom fragments and save fragment compositions as needed.](./creating-pages/images/02.png)
 

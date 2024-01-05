@@ -27,9 +27,9 @@ First, you'll import fragments and images created by their designers to aid in b
 
 These images appear in Documents and Media:
 
-   - `clarity-banner-image.png`
-   - `clarity-logo.png`
-   - `clarity-sign-in-image.png`
+   - `clarity_banner.jpg`
+   - `clarity_logo.png`
+   - `clarity-testimonials.jpg`
 
 ## Downloading the Fragment Set
 

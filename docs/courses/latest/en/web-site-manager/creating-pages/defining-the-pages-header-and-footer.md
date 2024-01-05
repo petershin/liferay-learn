@@ -25,11 +25,11 @@ Because Clarity needs their own header and footer design, you'll create a master
 
 1. Click the image fragment to open its settings, then click _image-square_ to set the source of the image.
 
-1. Choose direct source selection, then choose the image _clarity-logo_.
+1. Choose direct source selection, then choose the image *clarity_logo*.
 
    ![Set the image to use in the header.](./defining-the-pages-header-and-footer/images/05.png)
 
-1. Using the same procedure, add the _clarity-logo_ image to the footer's image fragment.
+1. Using the same procedure, add the *clarity_logo* image to the footer's image fragment.
 
    ![Set the image to use in the footer.](./defining-the-pages-header-and-footer/images/06.png)
 

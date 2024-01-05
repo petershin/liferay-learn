@@ -68,4 +68,8 @@ If a content type has multiple display page templates created for it, you can [m
 :::{grid-item-card} Configuring SEO and Open Graph
 :link: ./using-display-page-templates/configuring-seo-and-open-graph.md
 :::
+
+:::{grid-item-card} Using Multiple Display Page Templates to Create Multi-step Applications
+:link: ./using-display-page-templates/using-multiple-display-page-templates-to-create-multi-step-applications.md
+:::
 ::::

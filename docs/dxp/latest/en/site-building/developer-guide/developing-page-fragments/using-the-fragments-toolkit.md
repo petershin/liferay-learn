@@ -193,16 +193,16 @@ You can use the Fragments Toolkit to create projects quickly with this structure
 
 `fragment.json` contains fragment attributes that can be modified to enhance the functionality and usability of fragments.
 
-| Key                    | Description                                                                                                                       |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `cssPath`              | Specifies .css, .scss, or .sass files.                                                                                            |
-| `configurationPath`    | Specifies the configuration source for the fragment.                                                                              |
-| `htmlPath`             | Specifies the HTML source for the fragment.                                                                                       |
-| `jsPath`               | Specifies the JavaScript source for the fragment.                                                                                 |
-| `name`                 | The name of the fragment.                                                                                                         |
-| `type`                 | Specifies a component or React fragment.                                                                                          |
+| Key                    | Description                                                                                                                         |
+|:-----------------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| `cssPath`              | Specifies .css, .scss, or .sass files.                                                                                              |
+| `configurationPath`    | Specifies the configuration source for the fragment.                                                                                |
+| `htmlPath`             | Specifies the HTML source for the fragment.                                                                                         |
+| `jsPath`               | Specifies the JavaScript source for the fragment.                                                                                   |
+| `name`                 | The name of the fragment.                                                                                                           |
+| `type`                 | Specifies a component or React fragment.                                                                                            |
 | `icon`                 | Adds a clay icon to imported fragments. See the [Clay Icon List](https://clayui.com/docs/components/icon.html) for available icons. |
-| `sass {loadPaths:[]}}` | Specifies external dependencies.                                                                                                  |
+| `sass {loadPaths:[]}}` | Specifies external dependencies.                                                                                                    |
 
 ```json
    {
@@ -402,7 +402,7 @@ Great! Now you know how to use the Fragments Toolkit to create and manage Fragme
 
 ## Alternatives to the Fragments Toolkit
 
-As mentioned before, the Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+.
+The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+.
 
 If you need to develop and manage your fragments, there are some alternatives you can use instead:
 
@@ -421,7 +421,7 @@ If you need to develop and manage your fragments, there are some alternatives yo
    ![Instantiate a React component in a fragment using static JS imports.](./using-the-fragments-toolkit/images/05.png)
 
    ```javascript
-   // Import statements. Clay Components, React, and ReactDOM are already included in Liferay's importMap. If you want to import a React component that is not included in Liferay's importaMap, you can add it by creating an importMap ClientExtension (https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend-3/client-extension.yaml#L16).
+   // Import statements. Clay Components, React, and ReactDOM are already included in Liferay's importMap.
    import React, { useState } from "react";
    import ReactDOM from "react-dom";
 
@@ -463,13 +463,26 @@ If you need to develop and manage your fragments, there are some alternatives yo
    );
    ```
 
+   !!! note
+   If you want to import a React component that is not included in Liferay's importMap, you can add it by creating an [importMap ClientExtension](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend-3/client-extension.yaml#L16).
+
+   While editing a page, fragments can be rendered multiple times when users interact with them (e.g. while changing the fragment configuration). To ensure the React component is remounted, add a condition to check the layout mode to the first cleanup process. See the example code below:
+
+   ```javascript
+   // my-collection/my-fragment/index.jsx
+   // Checking the layout mode
+   if (props.layoutMode === 'edit') {
+      React.DOM.unmountComponentAtNode(fragmentElement);
+   }
+
+   ReactDOM.render(...)
+   ```
+
 -  **Use a bundler to build your fragments**: If you want to use JSX or multiple files, you need to bundle the files before importing them.
 
-   Pay attention that the default behavior of bundlers is to merge all content in a single JS file (including React, ReactDOM, and all dependencies). So, you must use methods to select which libraries are not included in the final bundle, as the import relies on [importMaps](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap).
+   Pay attention that the default behavior of bundlers (e.g. [esbuild](https://esbuild.github.io/api/#external), [webpack](https://webpack.js.org/configuration/externals/), and [vite-plugin-externals](https://github.com/crcong/vite-plugin-externals)) is to merge all content in a single JS file (including React, ReactDOM, and all dependencies). So, you must use methods to select which libraries are not included in the final bundle as the import relies on [importMaps](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap).
 
-   Some examples of bundlers are [esbuild](https://esbuild.github.io/api/#external), [webpack](https://webpack.js.org/configuration/externals/), and [vite-plugin-externals](https://github.com/crcong/vite-plugin-externals).
-
--  **Use CSS whenever possible**: Consider using standard CSS instead of SASS unless you need SASS-only features.
+-  **Use CSS when possible**: Consider using standard CSS instead of SASS unless you need SASS-only features.
 
    [Nesting](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_nesting) is now available in CSS.
 

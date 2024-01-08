@@ -47,7 +47,7 @@ To use the Clay taglib in your apps, add the following declaration to your JSP:
 The Liferay Clay taglib is also available via a macro for your FreeMarker theme templates and web content templates. Follow this syntax:
 
 ```
-<@clay["tag-name"] attribute="string value" attribute=10 />
+[@clay["tag-name"] attribute="string value" attribute=10 /]
 ```
 
 Clay taglibs provide the following UI components for your apps:

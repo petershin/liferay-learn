@@ -46,7 +46,7 @@ AUI taglibは、@product-ver@で廃止予定になりました。 将来の互�
 Liferay Clay taglibは、FreeMarkerテーマテンプレートおよびWebコンテンツテンプレートのマクロを介して使用することもできます。 次の構文に従います。
 
 ```
-<@clay["tag-name"] attribute="string value" attribute=10 />
+[@clay["tag-name"] attribute="string value" attribute=10 /]
 ```
 
 Clay taglibは、アプリに次のUIコンポーネントを提供します。

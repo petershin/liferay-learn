@@ -36,10 +36,10 @@ clay-tag-library/clay-stickers.md
 The Liferay Clay tag library provides a set of tags for creating [Clay](https://clayui.com/) UI components in your app.
 
 ```{note}
-AUI taglibs are deprecated as of @product-ver@. We recommend that you use Clay taglibs to avoid future compatibility issues.
+AUI taglibs are deprecated as of Liferay 7.1. We recommend that you use Clay taglibs to avoid future compatibility issues.
 ```
 
-To use the Clay taglib in your apps, add the following declaration to your JSP:
+To use the Clay taglib in your apps, add this declaration to your JSP:
 
 ```jsp
 <%@ taglib prefix="clay" uri="http://liferay.com/tld/clay" %>
@@ -50,7 +50,7 @@ The Liferay Clay taglib is also available via a macro for your FreeMarker theme 
 [@clay["tag-name"] attribute="string value" attribute=10 /]
 ```
 
-Clay taglibs provide the following UI components for your apps:
+Clay taglibs provide these UI components for your apps:
 
 * [Alerts](clay-tag-library/clay-alerts.md)
 * [Badges](clay-tag-library/clay-badges.md)

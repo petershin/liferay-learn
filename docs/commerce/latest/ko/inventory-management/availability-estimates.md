@@ -4,19 +4,19 @@
 
 ## 가용성 추정 생성
 
-1. _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Availability Estimates_로 이동합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Availability Estimates** 로 이동합니다.
 
-1. _추가_(![추가 버튼](../images/icon-add.png))를 클릭합니다.
+1. **추가**(![추가 버튼](../images/icon-add.png))를 클릭합니다.
 
    ![Click the Add button to create a new availability estimate.](./availability-estimates/images/01.png)
 
-1. _제목_을 입력하세요. 제품이 다시 판매되기까지의 예상 시간을 명시해야 합니다(예: 3\~5일, 3\~4주, 2\~3개월).
+1. **제목** 을 입력하세요. 제품이 다시 판매되기까지의 예상 시간을 명시해야 합니다(예: 3\~5일, 3\~4주, 2\~3개월).
 
-1. 견적의 표시 순서를 결정하려면 _우선순위_를 입력하세요.
+1. 견적의 표시 순서를 결정하려면 **우선순위** 를 입력하세요.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
-일단 생성되면 _디스플레이 가용성_이 활성화된 제품에 추가할 수 있습니다. 제품의 _구성_ 탭으로 이동하여 드롭다운에서 원하는 _가용성 추정_을 선택한 다음 _게시_를 클릭하세요.
+일단 생성되면 **디스플레이 가용성** 이 활성화된 제품에 추가할 수 있습니다. 제품의 **구성** 탭으로 이동하여 드롭다운에서 원하는 **가용성 추정** 을 선택한 다음 **게시** 를 클릭하세요.
 
 ![Select the desired availability estimate.](./availability-estimates/images/02.png)
 
@@ -28,26 +28,26 @@
 
 새로운 가용성 추정치를 생성하려면
 
-1. _제어판_ &rarr; _상거래_ &rarr; _설정_으로 이동합니다.
+1. **제어판** &rarr; **상거래** &rarr; **설정** 으로 이동합니다.
 
-1. _가용성 추정_ 탭을 클릭합니다.
+1. **가용성 추정** 탭을 클릭합니다.
 
-1. _추가_(![추가 버튼](../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
+1. **추가**(![추가 버튼](../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
 
    * **제목:** 15~21일
    * **우선순위:** 4.0
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 그러면 새로운 가용성 추정치가 생성됩니다. 우선순위 값 4.0은 새 추정치가 드롭다운 메뉴의 기존 가용성 추정치 아래에 표시됨을 의미합니다. 그 아래에는 우선순위 5.0 이상의 추정치만 표시될 수 있습니다.
 
 ![Creating a new availability estimate.](./availability-estimates/images/04.png)
 
-이를 사용하려면 제품의 _구성_ 탭으로 이동하여 _가용성 표시_ 옵션을 활성화하고 드롭다운에서 원하는 _가용성 추정_을 선택한 다음 _게시_를 클릭하세요.
+이를 사용하려면 제품의 **구성** 탭으로 이동하여 **가용성 표시** 옵션을 활성화하고 드롭다운에서 원하는 **가용성 추정** 을 선택한 다음 **게시** 를 클릭하세요.
 
 ![Activate the Display Availability toggle and select an availability estimate from the drop-down.](./availability-estimates/images/05.png)
 
 ## 관련 주제
 
-* [재고관리](../inventory-management.md) 
-* [제품 인벤토리 구성 참조](./product-inventory-configuration-reference-guide.md) 
+* [재고관리](../inventory-management.md)
+* [제품 인벤토리 구성 참조](./product-inventory-configuration-reference-guide.md)

@@ -4,9 +4,9 @@
 
 검색 청사진을 생성하려면,
 
-1. 글로벌 메뉴 &rarr; 애플리케이션(검색 경험)에서 _Blueprints_를 클릭하여 Blueprints 애플리케이션을 엽니다.
+1. 글로벌 메뉴 &rarr; 애플리케이션(검색 경험)에서 **Blueprints** 를 클릭하여 Blueprints 애플리케이션을 엽니다.
 
-1. _추가_(![추가](../../../../images/icon-add.png))를 클릭하여 블루프린트를 추가합니다.
+1. **추가**(![추가](../../../../images/icon-add.png))를 클릭하여 블루프린트를 추가합니다.
 
    ![Start creating a Blueprint from the Add Blueprint modal window.](./creating-and-managing-search-blueprints/images/01.png)
 
@@ -18,13 +18,13 @@
 
    - [구성](#adding-configurations) : 검색의 고급 설정(예: 정렬 또는 집계)을 구성합니다.
 
-1. 블루프린트를 빌드하고 구성하면서 테스트해 보세요. _미리보기_를 클릭하고 검색 키워드를 입력하세요.
+1. 블루프린트를 빌드하고 구성하면서 테스트해 보세요. **미리보기** 를 클릭하고 검색 키워드를 입력하세요.
 
    ![Preview a Blueprint before putting it in action.](./creating-and-managing-search-blueprints/images/02.png)
 
    자세한 내용은 [청사진 테스트](#testing-a-blueprint-with-the-preview-sidebar) 참조하세요.
 
-1. 초기 블루프린트 생성이 완료되면 _Save_를 클릭하세요.
+1. 초기 블루프린트 생성이 완료되면 **Save** 를 클릭하세요.
 
 블루프린트 생성 프로세스는 빠르고 간단할 수 있지만 때로는 반복과 테스트가 필요합니다. 작업 내용을 보존하려면 블루프린트를 자주 저장하십시오.
 
@@ -46,13 +46,13 @@
 
 Blueprint에 쿼리 절 추가를 시작하려면 요소를 추가하세요.
 
-1. 쿼리 요소 화면에서 _Add_ (![추가](../../../../images/icon-add.png))를 클릭하여 쿼리 요소 추가 사이드바를 엽니다.
+1. 쿼리 요소 화면에서 **Add**(![추가](../../../../images/icon-add.png))를 클릭하여 쿼리 요소 추가 사이드바를 엽니다.
 
    ![Add Elements to the Blueprint.](./creating-and-managing-search-blueprints/images/04.png)
 
 1. 탐색하려는 요소 카테고리를 확장합니다.
 
-1. 요소 위로 마우스를 이동한 다음 _추가_를 클릭하세요.
+1. 요소 위로 마우스를 이동한 다음 **추가** 를 클릭하세요.
 
 1. 요소가 쿼리 빌더에 추가되어 구성할 준비가 되었습니다.
 
@@ -88,7 +88,7 @@ Blueprint 쿼리에 포함할 Liferay 자산 유형을 결정합니다. 쿼리 �
 ![Expand the Searchable Types drop-down to begin removing assets from the Search Blueprint.](./creating-and-managing-search-blueprints/images/06.png)
 
 - 기본적으로 모든 자산 및 개체 유형이 선택됩니다.
-- 특정 유형을 제거하려면 _자산 유형 선택_을 클릭하여 유형 선택을 연 다음 해당 확인란을 선택 취소하세요.
+- 특정 유형을 제거하려면 **자산 유형 선택** 을 클릭하여 유형 선택을 연 다음 해당 확인란을 선택 취소하세요.
 
 ![The Select Types modal is used for bulk management of the assets to be searched.](./creating-and-managing-search-blueprints/images/07.png)
 
@@ -113,9 +113,9 @@ Liferay의 백엔드 코드(및 잠재적으로 Liferay 인스턴스에 배포�
 
 일반적으로 기본 설정이면 충분합니다. [Searchable Types](#choosing-which-liferay-assets-to-search) 을 사용하는 것 이상으로 이 동작을 조정해야 한다고 확신한다면 이러한 백엔드 기여자가 작동하는 방식을 이해해야 합니다.
 
-1. 개별 인덱서가 검색에 참여하지 못하도록 하려면 **검색 가능한 유형**을 사용하세요. 유형의 인덱서를 비활성화하면 쿼리 기여자를 선택한 경우에도 해당 유형에 대한 절이 검색 쿼리에 추가되지 않습니다. 이러한 유형에 대한 결과는 사용자에게 표시되지 않습니다.
+1. 개별 인덱서가 검색에 참여하지 못하도록 하려면 **검색 가능한 유형** 을 사용하세요. 유형의 인덱서를 비활성화하면 쿼리 기여자를 선택한 경우에도 해당 유형에 대한 절이 검색 쿼리에 추가되지 않습니다. 이러한 유형에 대한 결과는 사용자에게 표시되지 않습니다.
 
-1. **검색 프레임워크 인덱서 조항**을 사용하여 모든 Liferay의 인덱서가 검색에 기여하는 조항을 비활성화합니다. 모든 인덱서를 비활성화하는 유일한 이유는 검색 쿼리를 처음부터 작성하여 모든 쿼리 기여자와 검색 가능한 자산도 비활성화하는 것입니다.
+1. **검색 프레임워크 인덱서 조항** 을 사용하여 모든 Liferay의 인덱서가 검색에 기여하는 조항을 비활성화합니다. 모든 인덱서를 비활성화하는 유일한 이유는 검색 쿼리를 처음부터 작성하여 모든 쿼리 기여자와 검색 가능한 자산도 비활성화하는 것입니다.
 
 1. 검색에 참여하는 특정 기여자를 제거하려면 **검색 프레임워크 쿼리 기여자** 섹션을 사용하세요. 자체 Blueprints 구성을 사용하여 이를 재정의하려면 특정 조항 기여자를 비활성화하거나 Liferay의 검색 동작을 완전히 재정의하려면 모든 조항을 비활성화하고 Liferay의 인덱서 및 검색 가능 유형도 비활성화합니다.
 
@@ -143,7 +143,7 @@ Liferay의 백엔드 코드(및 잠재적으로 Liferay 인스턴스에 배포�
 
 ![Additional settings can be configured using JSON.](./creating-and-managing-search-blueprints/images/09.png)
 
-이를 추가하려면 _구성_ 탭을 클릭한 다음 원하는 구성에 대한 텍스트 입력 상자를 찾으세요. JSON을 입력한 다음 블루프린트를 저장하세요.
+이를 추가하려면 **구성** 탭을 클릭한 다음 원하는 구성에 대한 텍스트 입력 상자를 찾으세요. JSON을 입력한 다음 블루프린트를 저장하세요.
 
 다음은 '이름' 필드를 기준으로 검색 결과를 내림차순(알파벳 역방향-ZA)으로 정렬하는 정렬의 예입니다.
 
@@ -167,31 +167,31 @@ Blueprint JSON을 내보내려면
 
 1. 글로벌 메뉴 &rarr; 애플리케이션 &rarr; Blueprints(검색 경험 섹션)에서 Blueprints 애플리케이션을 엽니다.
 
-1. 블루프린트 목록에서 블루프린트의 _Actions_ (![액션](../../../../images/icon-actions.png)) 메뉴를 열고 _Export_를 클릭하세요.
+1. 블루프린트 목록에서 블루프린트의 **Actions**(![액션](../../../../images/icon-actions.png)) 메뉴를 열고 **Export** 를 클릭하세요.
 
 Blueprint의 JSON 정의를 가져오려면,
 
 1. 글로벌 메뉴 &rarr; 애플리케이션 &rarr; Blueprints(검색 경험 섹션)에서 Blueprints 애플리케이션을 엽니다.
 
-1. 메인 블루프린트 _Actions_ (![액션](../../../../images/icon-actions.png)) 메뉴를 열고 _Import_를 클릭하세요.
+1. 메인 블루프린트 **Actions**(![액션](../../../../images/icon-actions.png)) 메뉴를 열고 **Import** 를 클릭하세요.
 
 1. 유효한 Blueprint JSON 파일을 선택하세요. 유효한 요소 JSON 파일도 이 화면에서 가져올 수 있습니다.
 
    ![Import Blueprints and Elements.](./creating-and-managing-search-blueprints/images/10.png)
 
-1. _가져오기_를 클릭하세요.
+1. **가져오기** 를 클릭하세요.
 
 ## 미리보기 사이드바로 블루프린트 테스트
 
-진행 중인 블루프린트가 지원하는 검색 결과를 검토하는 데 유용한 미리보기 사이드바가 있습니다. 블루프린트 편집 화면에서 _미리보기_ 버튼을 클릭하여 미리보기에 액세스하세요.
+진행 중인 블루프린트가 지원하는 검색 결과를 검토하는 데 유용한 미리보기 사이드바가 있습니다. 블루프린트 편집 화면에서 **미리보기** 버튼을 클릭하여 미리보기에 액세스하세요.
 
 ![Preview a Blueprint before putting it in action.](./creating-and-managing-search-blueprints/images/14.png)
 
 여기에서 다음 기능에 액세스할 수 있습니다.
 
-- 7.4 U52+의 경우 _View Raw Request_를 클릭하면 전체 검색 요청 문자열을 볼 수 있습니다. 원시 요청 모달에서 요청을 클립보드에 복사하거나 JSON 파일로 다운로드할 수 있습니다. 이는 검색 페이지의 [Search Insights](../../../search-pages-and-widgets/search-insights.md) 위젯에 표시되는 것과 동일한 요청입니다.
+- 7.4 U52+의 경우 **View Raw Request** 를 클릭하면 전체 검색 요청 문자열을 볼 수 있습니다. 원시 요청 모달에서 요청을 클립보드에 복사하거나 JSON 파일로 다운로드할 수 있습니다. 이는 검색 페이지의 [검색 인사이트](../../../search-pages-and-widgets/search-insights.md) 위젯에 표시되는 것과 동일한 요청입니다.
 
-- 전체 검색 응답 문자열을 보려면 _원시 응답 보기_를 클릭하세요. 여기에서 응답을 클립보드에 복사하거나 JSON 파일로 다운로드할 수 있습니다. 이는 검색 페이지의 [Search Insights](../../../search-pages-and-widgets/search-insights.md) 위젯에 표시되는 것과 동일한 문자열입니다.
+- 전체 검색 응답 문자열을 보려면 **원시 응답 보기** 를 클릭하세요. 여기에서 응답을 클립보드에 복사하거나 JSON 파일로 다운로드할 수 있습니다. 이는 검색 페이지의 [검색 인사이트](../../../search-pages-and-widgets/search-insights.md) 위젯에 표시되는 것과 동일한 문자열입니다.
 
   ![View the raw response string returned from Elasticsearch.](./creating-and-managing-search-blueprints/images/11.png)
 
@@ -203,27 +203,27 @@ Blueprint의 JSON 정의를 가져오려면,
 
   ![Inspect the document's fields.](./creating-and-managing-search-blueprints/images/13.png)
 
-[일부 요소](./search-blueprints-elements-reference.md) 은 수동으로 제공하거나 재정의할 수 있는 검색 컨텍스트 속성을 읽습니다. 이러한 요소로 블루프린트를 테스트하려면 톱니바퀴 아이콘(![기어](../../../../images/icon-cog3.png))을 클릭하여 블루프린트 미리보기 검색에 검색 컨텍스트 속성을 추가하세요. 속성의 키/값 쌍을 입력한 다음 _완료_를 클릭합니다. 이 속성은 블루프린트 미리보기에만 설정되며 블루프린트 자체에는 저장되지 않습니다. 검색 페이지에서 이러한 속성을 구성할 수 있습니다. 자세한 내용은 [검색 페이지에서 검색 청사진 사용](./using-a-search-blueprint-on-a-search-page.md) 을 참조하세요.
+[일부 요소](./search-blueprints-elements-reference.md) 은 수동으로 제공하거나 재정의할 수 있는 검색 컨텍스트 속성을 읽습니다. 이러한 요소로 블루프린트를 테스트하려면 톱니바퀴 아이콘(![기어](../../../../images/icon-cog3.png))을 클릭하여 블루프린트 미리보기 검색에 검색 컨텍스트 속성을 추가하세요. 속성의 키/값 쌍을 입력한 다음 **완료** 를 클릭합니다. 이 속성은 블루프린트 미리보기에만 설정되며 블루프린트 자체에는 저장되지 않습니다. 검색 페이지에서 이러한 속성을 구성할 수 있습니다. 자세한 내용은 [검색 페이지에서 검색 청사진 사용](./using-a-search-blueprint-on-a-search-page.md) 을 참조하세요.
 
 예를 들어,
 
-1. _administrative_라는 카테고리 [있는 새로운](../../../../content-authoring-and-management/tags-and-categories.md) 어휘를 추가합니다.
+1. **administrative** 라는 카테고리 [있는 새로운](../../../../content-authoring-and-management/tags-and-categories.md) 어휘를 추가합니다.
 
-1. 두 개의 새로운 [웹 콘텐츠 기사](../../../../content-authoring-and-management/web-content/web-content-articles.md) 을 추가합니다. 제목 필드에 둘 다 _test_가 있는지 확인하세요. 그 중 하나를 생성한 카테고리에 연결하세요.
+1. 두 개의 새로운 [웹 콘텐츠 기사](../../../../content-authoring-and-management/web-content/web-content-articles.md) 을 추가합니다. 제목 필드에 둘 다 **test** 가 있는지 확인하세요. 그 중 하나를 생성한 카테고리에 연결하세요.
 
-1. 새 Blueprint를 생성하고 조건부 요소 _게스트 사용자에 대한 범주의 콘텐츠 숨기기_를 추가합니다. 생성한 카테고리에 대한 자산 카테고리 ID가 필요하지만 미리보기 창에서 찾을 수 있습니다.
+1. 새 Blueprint를 생성하고 조건부 요소 **게스트 사용자에 대한 범주의 콘텐츠 숨기기** 를 추가합니다. 생성한 카테고리에 대한 자산 카테고리 ID가 필요하지만 미리보기 창에서 찾을 수 있습니다.
 
-1. 미리보기에서 _administrative_를 검색하세요. 카테고리가 있는 웹 콘텐츠 기사의 문서를 확장한 다음 'assetCategoryId'(예: 43013)를 찾으세요.
+1. 미리보기에서 **administrative** 를 검색하세요. 카테고리가 있는 웹 콘텐츠 기사의 문서를 확장한 다음 'assetCategoryId'(예: 43013)를 찾으세요.
 
 1. 요소 구성에서 ID를 사용하십시오.
 
-1. 미리보기 사이드바의 _속성_을 열고 다음을 입력하세요.
+1. 미리보기 사이드바의 **속성** 을 열고 다음을 입력하세요.
 
    키: `user.is_signed_in`
 
    값: `거짓`
 
-1. _완료_를 클릭한 다음 _test_에 대한 검색어를 입력하세요.
+1. **완료** 를 클릭한 다음 **test** 에 대한 검색어를 입력하세요.
 
 이제 분류되지 않은 웹 콘텐츠 기사만 반환됩니다. 다른 하나는 검색 사용자가 게스트인 것처럼 검색이 작동하도록 하는 검색 컨텍스트 속성으로 인해 숨겨졌습니다.
 
@@ -233,7 +233,7 @@ Blueprint의 JSON 정의를 가져오려면,
 
 {bdg-secondary}`liferay 2023.Q4+/GA102+`
 
-편집 가능한 ERC를 통해 청사진을 참조할 수 있으며 가능하면 이를 권장합니다. 편의를 위해 ERC를 기억하기 쉽고 사람이 읽을 수 있는 것으로 설정할 수 있습니다. 블루프린트 편집기에서 ERC 옆에 있는 _Edit_ ![편집](../../../../images/icon-edit-pencil.png)을 클릭합니다.
+편집 가능한 ERC를 통해 청사진을 참조할 수 있으며 가능하면 이를 권장합니다. 편의를 위해 ERC를 기억하기 쉽고 사람이 읽을 수 있는 것으로 설정할 수 있습니다. 블루프린트 편집기에서 ERC 옆에 있는 **Edit** ![편집](../../../../images/icon-edit-pencil.png)을 클릭합니다.
 
 ![Edit the ERC to be memorable and readable.](./creating-and-managing-search-blueprints/images/15.png)
 

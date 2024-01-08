@@ -11,7 +11,7 @@ Liferay의 Headless Delivery 애플리케이션은 [Wiki](../getting-started-wit
 ```{include} /_snippets/run-liferay-portal.md
 ```
 
-일단 시작되면 사이트 ID를 검색하십시오. 사이트 ID를 찾으려면 _사이트 메뉴_(![사이트 메뉴](../../../images/icon-menu.png))를 열고 _구성_ &rarr; _사이트 설정_ &rarr; 로 이동하세요. _사이트 구성_.
+일단 시작되면 사이트 ID를 검색하십시오. 사이트 ID를 찾으려면 **사이트 메뉴**(![사이트 메뉴](../../../images/icon-menu.png))를 열고 **구성** &rarr; **사이트 설정** &rarr; 로 이동하세요. **사이트 구성** .
 
 ![Find the Site ID under Site Configuration settings.](./wiki-api-basics/images/01.png)
 
@@ -448,5 +448,5 @@ Wiki 페이지에 POST 및 PUT 메서드를 사용하는 경우 'headline' 및 '
 
 ## 관련 주제
 
-* [Liferay를 헤드리스 플랫폼으로 사용하기](../../../headless-delivery/using-liferay-as-a-headless-platform.md) 
-* [휴식 서비스 이용](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 
+* [Liferay를 헤드리스 플랫폼으로 사용하기](../../../headless-delivery/using-liferay-as-a-headless-platform.md)
+* [휴식 서비스 이용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)

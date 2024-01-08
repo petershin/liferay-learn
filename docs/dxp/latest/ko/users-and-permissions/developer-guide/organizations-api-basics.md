@@ -50,7 +50,7 @@
    }
    ```
 
-1. _글로벌 메뉴_ &rarr; _제어판_ &rarr; _사용자 및 조직_으로 이동합니다. _조직_ 탭을 클릭합니다. 새 조직이 추가되었는지 확인하세요.
+1. **글로벌 메뉴** &rarr; **제어판** &rarr; **사용자 및 조직** 으로 이동합니다. **조직** 탭을 클릭합니다. 새 조직이 추가되었는지 확인하세요.
 
    ![See that a new organization has been added.](./organizations-api-basics/images/01.png)
 
@@ -164,6 +164,7 @@ java -classpath .:* Organizations_GET_FromInstance
 ```{tip}
 ``Organizations_GET_FromInstance.[java|sh]``를 사용하여 인스턴스 ``Organization`` ID를 가져옵니다.
 ```
+
 ### Organization_GET_ById.sh
 
 명령:

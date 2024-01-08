@@ -30,7 +30,7 @@ Liferay에는 콘텐츠 페이지에 개체 양식을 작성하기 위한 양식
 
 1. (선택사항) 프래그먼트를 사용하여 레이아웃을 디자인합니다. 자세한 내용은 [조각으로 반응형 레이아웃 구축](../../site-building/optimizing-sites/building-a-responsive-site/building-responsive-layouts-with-the-grid-fragment.md) 을 참조하세요.
 
-1. _양식 컨테이너_ 조각을 페이지에 추가하고 개체에 매핑합니다.
+1. **양식 컨테이너** 조각을 페이지에 추가하고 개체에 매핑합니다.
 
    컨테이너는 모든 개체 필드에 대한 제출 버튼과 조각을 자동으로 생성합니다. 알파벳순으로 나타납니다. 필수 필드는 그에 따라 표시됩니다.
 
@@ -52,7 +52,7 @@ Liferay에는 콘텐츠 페이지에 개체 양식을 작성하기 위한 양식
 
    ![Configure the form fragments.](./using-fragments-to-build-forms/images/03.png)
 
-1. {bdg-link-primary}`[베타 기능](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)` (선택 사항) 개체에 대해 초안 모드가 활성화된 경우 양식 제출 버튼에 대한 제출된 항목 상태(_승인됨_ 또는 _초안_)를 구성합니다.
+1. {bdg-link-primary}` [베타 기능](../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) ` (선택 사항) 개체에 대해 초안 모드가 활성화된 경우 양식 제출 버튼에 대한 제출된 항목 상태(**승인됨** 또는 **초안**)를 구성합니다.
 
    ```{important}
    양식 조각을 사용하여 표시 페이지의 항목을 업데이트하는 경우 항목 상태를 승인됨에서 초안으로 변경할 수 없습니다.
@@ -60,7 +60,7 @@ Liferay에는 콘텐츠 페이지에 개체 양식을 작성하기 위한 양식
 
    ![Configure the Submitted Entry Status for the form's submit button.](./using-fragments-to-build-forms/images/04.png)
 
-1. 완료되면 _게시_를 클릭하세요.
+1. 완료되면 **게시** 를 클릭하세요.
 
 ## 양식 구성 요소에 대해 지원되는 필드 유형
 

@@ -36,15 +36,15 @@ ImageMagick을 설치한 경우 Adaptive Media는 이를 사용하여 문서 라
 
 오디오, 비디오, PDF 및 OpenOffice 파일의 경우 서버 관리 응용 프로그램을 통해 미리 보기 및 축소판을 다시 생성할 수 있습니다.
 
-1. _전역 메뉴_( ![전역 메뉴](../../../images/icon-applications-menu.png) )를 열고 _제어판_ 탭으로 이동한 다음 _시스템 관리_를 클릭합니다.
+1. **전역 메뉴**( ![전역 메뉴](../../../images/icon-applications-menu.png) )를 열고 **제어판** 탭으로 이동한 다음 **시스템 관리** 를 클릭합니다.
 
-1. _리소스_ 탭으로 이동하세요.
+1. **리소스** 탭으로 이동하세요.
 
-1. 재생성 옵션에서 원하는 미디어 유형에 대해 _실행_을 클릭합니다.
+1. 재생성 옵션에서 원하는 미디어 유형에 대해 **실행** 을 클릭합니다.
 
    ![Under Regeneration Options, execute the desired media type.](./configuring-documents-and-media-previews/images/01.png)
 
-문서에 누락된 이미지가 생성되기 시작합니다. 이 프로세스를 실행해도 기존 미리보기 및 축소판에는 영향을 미치지 않습니다. 모든 미리 보기 및 썸네일을 다시 생성하려면 먼저 다음 정리 작업을 실행하십시오. _문서 및 미디어의 미리 보기 및 썸네일 파일 재설정_.
+문서에 누락된 이미지가 생성되기 시작합니다. 이 프로세스를 실행해도 기존 미리보기 및 축소판에는 영향을 미치지 않습니다. 모든 미리 보기 및 썸네일을 다시 생성하려면 먼저 다음 정리 작업을 실행하십시오. **문서 및 미디어의 미리 보기 및 썸네일 파일 재설정** .
 
 ![Execute Reset preview and thumbnail files for documents and media.](./configuring-documents-and-media-previews/images/02.png)
 

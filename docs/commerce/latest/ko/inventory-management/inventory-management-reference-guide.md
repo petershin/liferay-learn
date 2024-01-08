@@ -1,6 +1,6 @@
 # 재고 관리 참조 가이드
 
-인벤토리 설정에 액세스하려면 _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Inventory_로 이동하세요.
+인벤토리 설정에 액세스하려면 **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Inventory** 로 이동하세요.
 
 ![Navigate to the inventory settings from the Global Menu.](./inventory-management-reference-guide/images/01.png)
 
@@ -35,7 +35,7 @@
 | 유효한   | 구매할 수 있는 단위 수입니다.      |
 | 들어오는  | 창고에 예정된 입고 단위 수입니다.    |
 
-재고를 업데이트하거나 창고 간 재고를 이동하려면 _추가_(![추가 버튼](../images/icon-add.png))를 클릭하세요.
+재고를 업데이트하거나 창고 간 재고를 이동하려면 **추가**(![추가 버튼](../images/icon-add.png))를 클릭하세요.
 
 ![Add inventory or transfer inventory between warehouses.](./inventory-management-reference-guide/images/04.png)
 
@@ -51,7 +51,7 @@
 
 ![The Incoming tab lists warehouses with scheduled inventory replenishment for the SKU.](./inventory-management-reference-guide/images/06.png)
 
-_추가_(![추가 버튼](../images/icon-add.png))를 클릭하여 선택한 SKU에 대한 수신 항목을 생성합니다.
+**추가**(![추가 버튼](../images/icon-add.png))를 클릭하여 선택한 SKU에 대한 수신 항목을 생성합니다.
 
 ![Add a quantity for a particular warehouse.](./inventory-management-reference-guide/images/07.png)
 
@@ -67,7 +67,7 @@ _추가_(![추가 버튼](../images/icon-add.png))를 클릭하여 선택한 SKU
 
 ## 커머스 2.1 이하
 
-인벤토리 설정은 제어판에 있습니다. 액세스하려면 _제어판_ &rarr; _상거래_ &rarr; _인벤토리_로 이동하세요.
+인벤토리 설정은 제어판에 있습니다. 액세스하려면 **제어판** &rarr; **상거래** &rarr; **인벤토리** 로 이동하세요.
 
 ## 관련 주제
 

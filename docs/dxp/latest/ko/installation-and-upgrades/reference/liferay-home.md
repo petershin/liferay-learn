@@ -43,7 +43,7 @@ DXP/Portal 설치는 애플리케이션 서버에 관계없이 이 폴더 구조
 * `logs`: DXP/Portal은 이 폴더를 생성하고 여기에 로그 파일을 기록합니다. 문제를 진단할 때 검사하십시오. `portal-impl.jar`의 `portal-impl/src/META-INF/portal-log4j.xml` 파일은 로그 파일 사이트를 설정합니다. 로그 파일 사이트를 재정의하려면 [Ext 플러그인에서 `ext-impl/src/META-INF/portal-log4j-ext.xml` 파일을 사용](https://help.liferay.com/hc/ article/360029030791-Ext를 사용한 핵심 기능 사용자 정의) .
 * `osgi`: 모든 JAR 파일과 OSGi 런타임에 대한 몇 가지 구성 파일이 이 폴더에 속합니다. [포털 속성 `module.framework.base.dir`](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#Module%20Framework) 은 OSGi 폴더 사이트를 설정합니다. . 하위 폴더는 다음과 같습니다.
   
-    * `구성`: 여기에 구성 요소 [구성 파일](../../system-administration/configuring-liferay/system-settings.md#exporting-and-deploying-configurations) 을 배포합니다.
+  * `구성`: 여기에 구성 요소 [구성 파일](../../system-administration/configuring-liferay/system-settings.md#exporting-and-deploying-configurations) 을 배포합니다.
   * `[core]`: 7.2 이전에만 존재합니다. 핵심 모듈을 보유하고 있습니다.
   * `마켓플레이스`: 마켓플레이스 애플리케이션 및 애플리케이션 제품군.
   * `모듈`: 배포한 모듈입니다.

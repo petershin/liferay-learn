@@ -1,6 +1,6 @@
 # 기본 사이트 애플리케이션
 
-모든 사이트에는 개인화된 디지털 경험을 구축하기 위한 아래 핵심 애플리케이션이 포함되어 있습니다. _제품 메뉴_(![제품 메뉴](../../images/icon-product-menu.png))를 통해 액세스할 수 있습니다. _제품 메뉴_에는 개체로 생성된 사용자 정의 응용 프로그램도 포함될 수 있습니다. 자세한 내용은 [객체 생성](../../building-applications/objects/creating-and-managing-objects/creating-objects.md) 참조하세요.
+모든 사이트에는 개인화된 디지털 경험을 구축하기 위한 아래 핵심 애플리케이션이 포함되어 있습니다. **제품 메뉴**(![제품 메뉴](../../images/icon-product-menu.png))를 통해 액세스할 수 있습니다. **제품 메뉴** 에는 개체로 생성된 사용자 정의 응용 프로그램도 포함될 수 있습니다. 자세한 내용은 [객체 생성](../../building-applications/objects/creating-and-managing-objects/creating-objects.md) 참조하세요.
 
 ```{tip}
 사이트에서 애플리케이션을 사용하는 경우 애플리케이션의 데이터는 해당 사이트로 제한되며 다른 사이트와 공유할 수 없습니다. 그러나 자산 라이브러리를 사용하면 일부 자산 유형을 여러 사이트에서 사용할 수 있도록 만들 수 있습니다. 자세한 내용은 [자산 라이브러리](../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) 참조하세요.
@@ -31,7 +31,7 @@
 | [웹 콘텐츠](../../content-authoring-and-management/web-content.md)                                        | 사이트에 대한 웹 콘텐츠 기사, 구조 및 템플릿을 만들고 관리합니다.                              |
 | [블로그](../../content-authoring-and-management/blogs.md)                                                | 사이트에 대한 블로그 항목과 이미지를 만들고 관리합니다.                                     |
 | [문서 및 미디어](../../content-authoring-and-management/documents-and-media.md)                             | 사이트에 대한 문서 및 기타 미디어 자산을 업로드하고 관리합니다.                                |
-| [동적 데이터 목록](../../process-automation/forms/dynamic-data-lists.md) (_더 이상 사용되지 않음_) | 정의된 필드 세트를 사용하여 양식을 만들고 표시합니다.                                      |
+| [동적 데이터 목록](../../process-automation/forms/dynamic-data-lists.md) (**더 이상 사용되지 않음**) | 정의된 필드 세트를 사용하여 양식을 만들고 표시합니다.                                      |
 | [양식](../../process-automation/forms.md)                                                               | 사용자 데이터(예: 피드백, 입사 지원) 수집을 위한 사이트 양식을 만들고 관리합니다. |
 | [기술 자료](../../collaboration-and-social/knowledge-base.md)                                             | 사이트에 대한 공식 문서를 만들고 표시합니다.                                           |
 | [메시지 보드](../../collaboration-and-social/message-boards.md)                                            | 커뮤니케이션과 협업을 촉진하기 위해 사이트 게시판을 만들고 관리합니다.                             |

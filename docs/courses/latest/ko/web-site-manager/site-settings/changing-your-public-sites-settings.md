@@ -38,7 +38,7 @@
 
 다음으로 사이트의 주요 메뉴에 대한 액세스를 제한합니다. 사이트 사용자의 제어 메뉴(화면 상단에 있는 메뉴 표시줄)를 비활성화하면 왼쪽에 있는 사이트 메뉴에 액세스할 수도 없습니다.
 
-기본적으로 사이트에 이미 가입한 새 회원은 [해당 권한이 있는 역할](https://learn.liferay.com/web/guest/w/dxp/users-)이 없기 때문에 이러한 메뉴에 액세스할 수 없습니다. 및 권한/역할 및 권한/역할 및 권한 이해). 그러나 공개 Clarity 사이트에서는 이 설정을 사용하여 메뉴에 대한 액세스 권한을 부여할 역할을 신중하게 선택해야 합니다.
+기본적으로 사이트에 이미 가입한 새 회원은 [해당 권한이 있는 역할](https://learn.liferay.com/web/guest/w/dxp/users-) 이 없기 때문에 이러한 메뉴에 액세스할 수 없습니다. 및 권한/역할 및 권한/역할 및 권한 이해). 그러나 공개 Clarity 사이트에서는 이 설정을 사용하여 메뉴에 대한 액세스 권한을 부여할 역할을 신중하게 선택해야 합니다.
 
 1. 사이트 구성 페이지에서 사이트 범위 아래의 **메뉴 액세스** 를 클릭합니다.
 
@@ -60,7 +60,7 @@
 
 1. **저장** 을 클릭하세요.
 
-이제 `/p`가 공개 사이트의 URL에 추가되고 [이전 인스턴스 설정 변경](./changing-the-default-sites-name-and-logo. md#change-other-important-instance-settings).
+이제 `/p`가 공개 사이트의 URL에 추가되고 [이전 인스턴스 설정 변경](./changing-the-default-sites-name-and-logo. md#change-other-important-instance-settings) .
 
 ## 쿠키 기본 설정 검사
 

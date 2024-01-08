@@ -78,7 +78,7 @@ Liferay DXP 7.3에서는 React를 활용하기 위해 페이지 편집기가 완
 
 ## 출판물 관리
 
-[Publications](../site-building/publishing-tools/publications.md) 콘텐츠 제작자가 변경 사항을 준비하고 일정에 따라 게시할 수 있는 새로운 기능입니다. 이미지 업데이트, 복사 및 새 페이지 추가가 포함된 특별 계절 프로모션을 출시해야 하는 경우 출판물을 만들고 필요한 사용자를 초대하여 게시하기 전에 변경하도록 할 수 있습니다. 한 번에 여러 출판물을 작업할 수 있으므로 한 번에 많은 업데이트를 만들고 일정에 따라 배포할 수 있습니다.
+[퍼블리싱](../site-building/publishing-tools/publications.md) 콘텐츠 제작자가 변경 사항을 준비하고 일정에 따라 게시할 수 있는 새로운 기능입니다. 이미지 업데이트, 복사 및 새 페이지 추가가 포함된 특별 계절 프로모션을 출시해야 하는 경우 출판물을 만들고 필요한 사용자를 초대하여 게시하기 전에 변경하도록 할 수 있습니다. 한 번에 여러 출판물을 작업할 수 있으므로 한 번에 많은 업데이트를 만들고 일정에 따라 배포할 수 있습니다.
 
 ![Publications provide a way to update your Site on a schedule of your choosing.](./whats-new-73/images/09.gif)
 
@@ -138,7 +138,7 @@ Liferay DXP 7.3에서는 React를 활용하기 위해 페이지 편집기가 완
 
 ![App Builder provides an in-browser development environment for low-code applications.](./whats-new-73/images/19.png)
 
-[App Builder](../building-applications/reference/app-builder.md) 데이터 엔진이 지원하는 Liferay DXP용 새로운 로우 코드 애플리케이션 개발 솔루션입니다. 비즈니스 사용자는 직관적인 GUI를 통해 양식과 테이블 보기를 정의하고 워크플로우를 활용하여 비즈니스 프로세스의 디지털화 및 자동화를 목표로 애플리케이션을 구축할 수 있습니다. 애플리케이션은 독립형 방식으로 배포할 수도 있고, 위젯이나 제품 메뉴를 통해 페이지에 추가할 수도 있습니다.
+[앱 빌더](../building-applications/reference/app-builder.md) 데이터 엔진이 지원하는 Liferay DXP용 새로운 로우 코드 애플리케이션 개발 솔루션입니다. 비즈니스 사용자는 직관적인 GUI를 통해 양식과 테이블 보기를 정의하고 워크플로우를 활용하여 비즈니스 프로세스의 디지털화 및 자동화를 목표로 애플리케이션을 구축할 수 있습니다. 애플리케이션은 독립형 방식으로 배포할 수도 있고, 위젯이나 제품 메뉴를 통해 페이지에 추가할 수도 있습니다.
 
 ### 양식 보기 규칙 및 필드 세트
 
@@ -236,7 +236,7 @@ App Builder 내부에서는 데이터 엔진을 사용하여 애플리케이션�
 
 ## 글로벌 메뉴
 
-새로운 애플리케이션 서랍에는 워크플로, 양식, 상거래 [상업](https://learn.liferay.com/commerce/latest/en/index.html) 의 크로스 사이트 애플리케이션이 들어 있습니다.
+새로운 애플리케이션 서랍에는 워크플로, 양식, 상거래 [커머스](https://learn.liferay.com/commerce/latest/ko/index.html) 의 크로스 사이트 애플리케이션이 들어 있습니다.
 
 ![The Global Menu provides convenient access to cross-site applications.](./whats-new-73/images/29.png)
 
@@ -246,13 +246,13 @@ App Builder 내부에서는 데이터 엔진을 사용하여 애플리케이션�
 
 > 요구되는 기부금
 
-[Multi-Factor Authentication](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA)은 사용자에게 여러 가지 방법, 즉 _factors_로 자신의 신원을 증명하도록 요구하여 더 나은 보안을 제공합니다. 기본 사용자 이름/비밀번호 조합은 하나 이상의 추가 구성 요소로 강화됩니다. 여기에는 기본 일회용 비밀번호(OTP)와 구성 가능한 IP 주소, 시간 기반 OTP, 그리고 시스템 확장이 가능하므로 작성하려는 모든 요소가 포함됩니다.
+[Multi-Factor Authentication](../installation-and-upgrades/securing-liferay/multi-factor-authentication/using-multi-factor-authentication.md) (MFA)은 사용자에게 여러 가지 방법, 즉 **factors** 로 자신의 신원을 증명하도록 요구하여 더 나은 보안을 제공합니다. 기본 사용자 이름/비밀번호 조합은 하나 이상의 추가 구성 요소로 강화됩니다. 여기에는 기본 일회용 비밀번호(OTP)와 구성 가능한 IP 주소, 시간 기반 OTP, 그리고 시스템 확장이 가능하므로 작성하려는 모든 요소가 포함됩니다.
 
 ### 인스턴스 수준의 SAML 구성
 
 이 변경을 통해 인증서 처리를 포함하여 인스턴스 수준에서 [SAML](../installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml.md) 설정을 구성할 수 있습니다.
 
-새로운 SAML 속성이 도입되었습니다: _알 수 없는 사용자는 낯선 사람입니다_. 이 속성은 최종 사용자가 낯선 사람일 때 SAML IdP 연결 동작을 결정합니다. 이 속성은 포털 데이터베이스에 아직 존재하지 않는 사용자를 낯선 사람으로 분류해야 하는지 여부를 정의합니다. 분류된 후에는 포털 인스턴스의 기존 낯선 사람 처리 정책에 따라 IdP의 SAML 어설션에서 제공되는 정보를 사용하여 사용자를 자동으로 프로비저닝해야 하는지 여부가 결정됩니다.
+새로운 SAML 속성이 도입되었습니다: **알 수 없는 사용자는 낯선 사람입니다** . 이 속성은 최종 사용자가 낯선 사람일 때 SAML IdP 연결 동작을 결정합니다. 이 속성은 포털 데이터베이스에 아직 존재하지 않는 사용자를 낯선 사람으로 분류해야 하는지 여부를 정의합니다. 분류된 후에는 포털 인스턴스의 기존 낯선 사람 처리 정책에 따라 IdP의 SAML 어설션에서 제공되는 정보를 사용하여 사용자를 자동으로 프로비저닝해야 하는지 여부가 결정됩니다.
 
 ### 인스턴스 수준의 OAuth 2 구성
 

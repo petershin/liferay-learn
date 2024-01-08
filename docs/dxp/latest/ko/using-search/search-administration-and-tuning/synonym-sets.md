@@ -8,7 +8,7 @@
 
 동의어 집합은 동일한 의미를 지닌 단어나 구의 그룹입니다. 관리 사용자는 동의어 세트를 생성합니다. 검색 페이지 최종 사용자가 키워드나 문구를 검색하면 세트에 있는 동의어도 검색됩니다.
 
-예를 들어 사용자가 "US"라는 단어를 검색할 수 있습니다. 아마도 사용자는 _America_, _USA_, _United States_ 등과 같은 동의어도 포함된 검색 결과를 원할 것입니다. 동의어 세트를 생성하면 사용자가 검색을 최대한 활용할 수 있습니다.
+예를 들어 사용자가 "US"라는 단어를 검색할 수 있습니다. 아마도 사용자는 **America** , **USA** , **United States** 등과 같은 동의어도 포함된 검색 결과를 원할 것입니다. 동의어 세트를 생성하면 사용자가 검색을 최대한 활용할 수 있습니다.
 
 ## 요구 사항 및 제한 사항
 
@@ -24,19 +24,19 @@ Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/e
 
 새로운 동의어 세트를 생성하려면,
 
-1. 글로벌 메뉴(![글로벌 메뉴](../../images/icon-applications-menu.png))에서 _응용 프로그램_ &rarr; _검색 튜닝_ &rarr; _동의어_로 이동합니다.
+1. 글로벌 메뉴(![글로벌 메뉴](../../images/icon-applications-menu.png))에서 **응용 프로그램** &rarr; **검색 튜닝** &rarr; **동의어** 로 이동합니다.
 
    ![Navigate to the Synonyms section in the Applications menu](synonym-sets/images/01.png)
 
-1. _Add_ 아이콘(![추가 아이콘 클릭](../../images/icon-add.png))을 클릭하여 새 동의어 세트를 추가하세요.
+1. **Add** 아이콘(![추가 아이콘 클릭](../../images/icon-add.png))을 클릭하여 새 동의어 세트를 추가하세요.
 
-1. 세트에 동의어 목록을 입력하십시오. 동의어 입력은 _Enter_를 클릭하거나 쉼표를 입력하여 수행됩니다.
+1. 세트에 동의어 목록을 입력하십시오. 동의어 입력은 **Enter** 를 클릭하거나 쉼표를 입력하여 수행됩니다.
 
    ![Type your different synonym words into the set.](synonym-sets/images/02.png)
 
-1. 옆에 있는 _X_를 클릭하면 동의어를 삭제할 수 있습니다. 세트를 마치면 _게시_를 클릭하세요.
+1. 옆에 있는 **X** 를 클릭하면 동의어를 삭제할 수 있습니다. 세트를 마치면 **게시** 를 클릭하세요.
 
-1. 세트를 편집하거나 삭제하려면 _옵션_ 아이콘(![옵션 아이콘을 클릭하세요.](../../images/icon-options.png))을 클릭하고 _편집_ 또는 _삭제_를 클릭하세요.
+1. 세트를 편집하거나 삭제하려면 **옵션** 아이콘(![옵션 아이콘을 클릭하세요.](../../images/icon-options.png))을 클릭하고 **편집** 또는 **삭제** 를 클릭하세요.
 
    ![Click on edit or delete to make changes.](synonym-sets/images/03.png)
 
@@ -67,8 +67,8 @@ Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/e
 
 실행 중인 Liferay에서 매핑을 얻으려면,
 
-1. 글로벌 메뉴(![글로벌 메뉴](../../images/icon-applications-menu.png))를 열고 _Control Panel_ &rarr; _Search_로 이동합니다.
-1. _필드 매핑_ 탭을 클릭하세요.
+1. 글로벌 메뉴(![글로벌 메뉴](../../images/icon-applications-menu.png))를 열고 **Control Panel** &rarr; **Search** 로 이동합니다.
+1. **필드 매핑** 탭을 클릭하세요.
 1. 매핑(![복사](../../images/icon-copy.png))을 복사하고 저장합니다.
 
 ```{warning}
@@ -185,7 +185,7 @@ Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/e
 
 1. 필터 이름 설정에 사용자 정의 필터 이름(예: `custom-synonym-filter-fr`)을 추가하고 구성을 저장합니다.
 
-1. 전체 재색인 수행: 제어판 &rarr; 검색 &rarr; 색인 작업에서 모든 검색 색인에 대해 _Reindex_를 클릭합니다.
+1. 전체 재색인 수행: 제어판 &rarr; 검색 &rarr; 색인 작업에서 모든 검색 색인에 대해 **Reindex** 를 클릭합니다.
 
    사용자 정의 매핑이 성공적으로 적용되었는지 확인하려면 필드 매핑 탭으로 이동하여 인덱스(예: `liferay-20101`)를 선택하고 오른쪽 패널에서 `template_fr`을 찾으세요.
 
@@ -193,12 +193,12 @@ Elasticsearch에서 지원되는 [`=>` 형식](https://www.elastic.co/guide/en/e
 
 새 필터가 작동하는지 확인하려면
 
-1. 동의어 애플리케이션으로 이동합니다. 글로벌 메뉴의 애플리케이션 탭에서 _Synonyms_(검색 조정 아래)를 클릭합니다.
+1. 동의어 애플리케이션으로 이동합니다. 글로벌 메뉴의 애플리케이션 탭에서 **Synonyms**(검색 조정 아래)를 클릭합니다.
 
 1. 새로운 동의어 세트 `maison, logement`를 만듭니다.
 
-1. 영어 및 프랑스어 번역으로 웹 콘텐츠 기사를 작성하세요. 프랑스어 제목에 _maison_을 추가하세요.
+1. 영어 및 프랑스어 번역으로 웹 콘텐츠 기사를 작성하세요. 프랑스어 제목에 **maison** 을 추가하세요.
 
-1. 영어 및 프랑스어 번역으로 또 다른 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 _logement_를 추가하세요.
+1. 영어 및 프랑스어 번역으로 또 다른 웹 콘텐츠 기사를 만듭니다. 프랑스어 제목에 **logement** 를 추가하세요.
 
-1. 프랑스어 로캘로 전환하고 _maison_을 검색하세요. 두 기사가 모두 반환됩니다.
+1. 프랑스어 로캘로 전환하고 **maison** 을 검색하세요. 두 기사가 모두 반환됩니다.

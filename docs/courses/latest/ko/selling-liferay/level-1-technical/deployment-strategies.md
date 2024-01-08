@@ -25,8 +25,8 @@ visibility:
 배포 전략이 Liferay 시연과 관련이 없어 보일 수도 있지만 이 주제는 잠재 고객과 그들의 요구 사항에 대해 자세히 알아볼 때 자주 발생합니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-8-deployment-strategies)를 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies-pdf)를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-8-deployment-strategies) 를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-8-deployment-strategies-pdf) 를 다운로드하세요.
 ```
 
 ## 라이프레이의 제품

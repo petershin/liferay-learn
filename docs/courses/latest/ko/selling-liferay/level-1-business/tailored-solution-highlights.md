@@ -33,8 +33,8 @@ visibility:
 완료되면 잠재 고객에게 무한한 가능성을 불러일으키는 Liferay 플랫폼 제공 솔루션의 몇 가지 예를 발견하게 될 것입니다. 귀하는 구매자가 현재 필요한 것뿐 아니라 미래를 위해 필요한 것에 대한 그림을 그리는 데 도움을 줄 수 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-1-liferay-tailored-solution-highlights)를 시청하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf)를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-1-liferay-tailored-solution-highlights) 를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-1-liferay-tailored-solution-highlights-pdf) 를 다운로드하세요.
 ```
 
 ## 수평적 솔루션

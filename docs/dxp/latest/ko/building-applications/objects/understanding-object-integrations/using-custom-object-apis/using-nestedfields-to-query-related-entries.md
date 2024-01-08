@@ -8,7 +8,7 @@
 `nestedFields` 매개변수는 여러 요청이 필요한 관련 항목이 있는 항목을 검색하여 요청을 최적화합니다. 관련 항목만 반환하기 위해 Liferay는 [관계 API](../using-custom-object-apis.md#relationship-rest-apis) 제공합니다. 소개는 [관계 REST API 사용](./using-relationship-rest-apis.md) 참조하세요.
 ```
 
-계속 진행하려면 새로운 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance)하고 제공된 튜토리얼 코드를 [준비](#preparing-the-sample-code)하세요. 그런 다음 [스크립트를 실행](#creating-and-querying-관련-객체 항목)하여 관련 항목을 생성하고 `nestedFields` 매개변수를 사용하여 쿼리합니다.
+계속 진행하려면 새로운 Liferay 7.4 인스턴스를 [설정](#setting-up-a-liferay-instance) 하고 제공된 튜토리얼 코드를 [준비](#preparing-the-sample-code) 하세요. 그런 다음 [스크립트를 실행](#creating-and-querying-관련-객체 항목) 하여 관련 항목을 생성하고 `nestedFields` 매개변수를 사용하여 쿼리합니다.
 
 ## Liferay 인스턴스 설정
 
@@ -19,7 +19,7 @@
 
 ### 관련 객체 정의 생성
 
-1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 후 *개체를 클릭합니다*.
+1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다** .
 
 1. [개체 초안](../../creating-and-managing-objects/creating-objects.md) 를 3개 만듭니다.
 

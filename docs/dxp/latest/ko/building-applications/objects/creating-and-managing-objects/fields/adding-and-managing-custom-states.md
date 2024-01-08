@@ -10,7 +10,7 @@
 
 ## 객체 정의에 상태 필드 추가
 
-1. *전역 메뉴*(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 *제어판* 탭으로 이동한 후 *선택 목록을 클릭합니다*.
+1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **선택 목록을 클릭합니다** .
 
 1. 원하는 항목으로 선택 목록을 만듭니다. 이러한 항목은 개체 항목 상태를 정의합니다. 자세한 단계는 [선택 목록 만들기](../../picklists/creating-picklists.md) 참조하세요.
 
@@ -20,29 +20,29 @@
 
    ![Create a picklist with the desired items.](./adding-and-managing-custom-states/images/02.png)
 
-1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 후 *개체를 클릭합니다.*.
+1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다.** .
 
 1. 원하는 사용자 정의 개체 편집을 시작합니다.
 
-1. _필드_ 탭으로 이동하여 _추가_(![추가 버튼](../../../../images/icon-add.png))를 클릭합니다.
+1. **필드** 탭으로 이동하여 **추가**(![추가 버튼](../../../../images/icon-add.png))를 클릭합니다.
 
    ![Begin adding a field to the object definition.](./adding-and-managing-custom-states/images/03.png)
 
-1. _레이블_과 _필드 이름_을 입력합니다.
+1. **레이블** 과 **필드 이름** 을 입력합니다.
 
-1. _선택 목록 유형_을 선택하고 원하는 목록을 선택합니다.
+1. **선택 목록 유형** 을 선택하고 원하는 목록을 선택합니다.
 
-1. _상태로 표시_를 전환합니다.
+1. **상태로 표시** 를 전환합니다.
 
    ```{note}
    상태 필드는 자동으로 *필수*로 설정되며 선택 사항으로 변경할 수 없습니다.
    ```
 
-1. 상태 필드에 대한 _기본값_을 선택합니다.
+1. 상태 필드에 대한 **기본값** 을 선택합니다.
 
    ![Select a picklist, toggle Mark as State, and set a default value for the field.](./adding-and-managing-custom-states/images/04.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 정의에 필드를 추가한 후 [을](#setting-up-a-flow-for-state-fields) 하여 각 상태에 사용할 수 있는 전환을 결정할 수 있습니다.
 
@@ -52,7 +52,7 @@
 
 상태 필드에 대한 사용자 정의 흐름을 설정하려면 다음 단계를 따르십시오.
 
-1. 사용자 정의 개체를 편집하는 동안 _상태 관리자_ 탭으로 이동하여 원하는 _상태 필드_를 선택하세요.
+1. 사용자 정의 개체를 편집하는 동안 **상태 관리자** 탭으로 이동하여 원하는 **상태 필드** 를 선택하세요.
 
    ![Go to the State Manager tab to set up a flow for state fields.](./adding-and-managing-custom-states/images/05.png)
 
@@ -62,7 +62,7 @@
 
    ![Determine the available transitions between states.](./adding-and-managing-custom-states/images/06.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 일단 저장되면 사용자는 정의된 흐름에 따라서만 항목 상태를 전환할 수 있습니다.
 

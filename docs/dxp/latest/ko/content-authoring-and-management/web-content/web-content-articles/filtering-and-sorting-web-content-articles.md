@@ -1,6 +1,6 @@
 # 웹 콘텐츠 기사 필터링 및 정렬
 
-기본적으로 웹 콘텐츠 애플리케이션(_사이트 메뉴_ &rarr; _콘텐츠 및 데이터_ &rarr; _웹 콘텐츠_)은 액세스할 수 있는 모든 웹 콘텐츠 기사 목록을 표시합니다. 많은 항목을 작업할 때 필터링 및 정렬 옵션을 사용하면 이 콘텐츠 목록을 더 빠르게 찾고 검토하는 데 도움이 될 수 있습니다.
+기본적으로 웹 콘텐츠 애플리케이션(**사이트 메뉴** &rarr; **콘텐츠 및 데이터** &rarr; **웹 콘텐츠**)은 액세스할 수 있는 모든 웹 콘텐츠 기사 목록을 표시합니다. 많은 항목을 작업할 때 필터링 및 정렬 옵션을 사용하면 이 콘텐츠 목록을 더 빠르게 찾고 검토하는 데 도움이 될 수 있습니다.
 
 ![You can filter and sort the web content articles from the web content application.](./filtering-and-sorting-web-content-articles/images/01.png)
 
@@ -10,7 +10,7 @@
 * [상태별 필터링](#filter-by-status) 
 * [주문](#order-by) 개씩 주문
 
-이러한 필터 및 정렬 옵션을 결합할 수 있습니다. 예를 들어, [_Draft_](#filter-by-status) 및 [_Modified Date_](#order-by) 필터와 함께 [_Mine_ 필터](#filter-by-navigation) 선택하면 수정 날짜별로 정렬된 초안 상태의 기사 목록을 얻을 수 있습니다.
+이러한 필터 및 정렬 옵션을 결합할 수 있습니다. 예를 들어, [_Draft_](#filter-by-status) 및 [**Modified Date**](#order-by) 필터와 함께 [**Mine** 필터](#filter-by-navigation) 선택하면 수정 날짜별로 정렬된 초안 상태의 기사 목록을 얻을 수 있습니다.
 
 ## 내비게이션으로 필터링
 

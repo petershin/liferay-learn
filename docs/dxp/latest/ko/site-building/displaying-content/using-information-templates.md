@@ -12,15 +12,15 @@
 
 정보 템플릿을 만들려면 다음 단계를 따르세요.
 
-1. _사이트 메뉴_(![사이트 메뉴](../../images/icon-product-menu.png))를 열고 _디자인_ &rarr; _템플릿_ &rarr; _정보 템플릿_으로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../images/icon-product-menu.png))를 열고 **디자인** &rarr; **템플릿** &rarr; **정보 템플릿** 으로 이동합니다.
 
-1. _추가_ 버튼(![추가 버튼](../../images/icon-add.png))을 클릭합니다.
+1. **추가** 버튼(![추가 버튼](../../images/icon-add.png))을 클릭합니다.
 
-1. _이름_을 입력하고 _항목 유형_을 선택한 다음 (해당되는 경우) _항목 하위 유형_을 선택합니다.
+1. **이름** 을 입력하고 **항목 유형** 을 선택한 다음 (해당되는 경우)**항목 하위 유형** 을 선택합니다.
 
    ![Enter a name and select an Item Type and Item Subtype.](./using-information-templates/images/01.png)
 
-1. _저장_을 클릭하세요. 그러면 템플릿 디자인 페이지로 리디렉션됩니다.
+1. **저장** 을 클릭하세요. 그러면 템플릿 디자인 페이지로 리디렉션됩니다.
 
 1. (선택 사항) [`.ftl` 파일에서 기존 FreeMarker 스크립트를](#importing-and-exporting-scripts) 옵니다.
 
@@ -28,7 +28,7 @@
 
    자동 완성 기능을 사용하려면 편집기에 `${`를 입력할 수 있습니다.
 
-   _요소_ 측면 패널(![요소](../../images/icon-list-ul.png))에서는 선택한 항목 유형의 구조에서 사용 가능한 필드에 빠르게 액세스할 수 있습니다.
+**요소** 측면 패널(![요소](../../images/icon-list-ul.png))에서는 선택한 항목 유형의 구조에서 사용 가능한 필드에 빠르게 액세스할 수 있습니다.
 
    ![Design your template using FreeMarker and available fields in the Elements side panel.](./using-information-templates/images/02.png)
 
@@ -36,9 +36,9 @@
    요소 측면 패널에는 템플릿(예: 저널 기사 템플릿, 정보 템플릿) 기반 필드가 포함되지 않습니다. 무한루프를 방지하기 위함입니다.
    ```
 
-1. (선택 사항) 속성 측면 패널(![속성](../../images/icon-cog3.png))의 템플릿에 _설명_ 또는 _이미지_를 추가합니다.
+1. (선택 사항) 속성 측면 패널(![속성](../../images/icon-cog3.png))의 템플릿에 **설명** 또는 **이미지** 를 추가합니다.
 
-1. 완료되면 _저장_을 클릭하세요.
+1. 완료되면 **저장** 을 클릭하세요.
 
 일단 생성되면 정보 템플릿은 콘텐츠 표시 조각과 텍스트 및 서식 있는 텍스트와 같이 매핑할 수 있는 하위 요소 [하위 요소](../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md) 없는 기타 조각에서 사용할 수 있습니다. 선택하면 콘텐츠 페이지 및 표시 페이지 템플릿에서 항목이 렌더링되는 방식이 결정됩니다.
 
@@ -48,11 +48,11 @@ Liferay의 [Headless](../../headless-delivery/using-liferay-as-a-headless-platfo
 
 정보 템플릿을 편집할 때 FreeMarker 스크립트를 가져오고 내보내어 다른 컨텍스트에서 재사용할 수 있습니다.
 
-1. _사이트 메뉴_(![사이트 메뉴](../../images/icon-product-menu.png))를 열고 _디자인_ &rarr; _템플릿_ &rarr; _정보 템플릿_으로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../images/icon-product-menu.png))를 열고 **디자인** &rarr; **템플릿** &rarr; **정보 템플릿** 으로 이동합니다.
 
 1. 원하는 정보 템플릿을 선택하세요.
 
-1. 응용 프로그램 표시줄에서 _작업_ 버튼 ![작업 버튼](../../images/icon-actions.png)을 클릭하고 _스크립트 내보내기_ 또는 _스크립트 가져오기_를 선택합니다.
+1. 응용 프로그램 표시줄에서 **작업** 버튼 ![작업 버튼](../../images/icon-actions.png)을 클릭하고 **스크립트 내보내기** 또는 **스크립트 가져오기** 를 선택합니다.
 
    ![Select Export Script or Import Script.](./using-information-templates/images/03.png)
 
@@ -62,7 +62,7 @@ Liferay의 [Headless](../../headless-delivery/using-liferay-as-a-headless-platfo
 
 ## 정보 템플릿 관리
 
-템플릿 애플리케이션에서는 기존의 모든 정보 템플릿을 보고 관리할 수 있습니다. 각 기존 템플릿은 해당 유형(예: 웹 콘텐츠 기사) 및 하위 유형(예: 기본 웹 콘텐츠)과 함께 나열됩니다. 템플릿의 _작업_ 버튼(![작업 버튼](../../images/icon-actions.png))을 클릭하여 다음 옵션에 액세스할 수 있습니다.
+템플릿 애플리케이션에서는 기존의 모든 정보 템플릿을 보고 관리할 수 있습니다. 각 기존 템플릿은 해당 유형(예: 웹 콘텐츠 기사) 및 하위 유형(예: 기본 웹 콘텐츠)과 함께 나열됩니다. 템플릿의 **작업** 버튼(![작업 버튼](../../images/icon-actions.png))을 클릭하여 다음 옵션에 액세스할 수 있습니다.
 
 | 액션 | 묘사                         |
 | :- | :------------------------- |
@@ -73,7 +73,7 @@ Liferay의 [Headless](../../headless-delivery/using-liferay-as-a-headless-platfo
 
 ![Click the Actions button to access management options.](./using-information-templates/images/04.png)
 
-여기에서 [내보내기](#exporting-templates) 및 [가져오기](#importing-templates) 정보 템플릿을 LAR 파일로 가져와 사이트와 환경 간에 공유할 수도 있습니다. 이렇게 하려면 응용 프로그램 표시줄에서 _작업_ 버튼을 클릭하고 _내보내기/가져오기_를 선택하세요.
+여기에서 [내보내기](#exporting-templates) 및 [가져오기](#importing-templates) 정보 템플릿을 LAR 파일로 가져와 사이트와 환경 간에 공유할 수도 있습니다. 이렇게 하려면 응용 프로그램 표시줄에서 **작업** 버튼을 클릭하고 **내보내기/가져오기** 를 선택하세요.
 
 ![Export and Import templates as LAR files.](./using-information-templates/images/05.png)
 

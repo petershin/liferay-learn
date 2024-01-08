@@ -13,7 +13,7 @@
 
 다음으로, [만들다](../../creating-and-managing-objects/creating-objects.md) 개의 세 가지 관련 사용자 정의 개체를 만듭니다.
 
-1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 후 *개체를 클릭합니다*.
+1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다** .
 
 1. 세 개의 개체 초안을 만듭니다.
 

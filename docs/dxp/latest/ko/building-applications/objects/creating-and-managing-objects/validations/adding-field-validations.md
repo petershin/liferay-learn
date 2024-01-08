@@ -11,19 +11,19 @@
 
 유효성 검사를 추가하려면
 
-1. _전역 메뉴_( ![전역 메뉴](../../../../images/icon-applications-menu.png) )를 열고 _제어판_ 탭으로 이동한 후 *개체를 클릭합니다*.
+1. **전역 메뉴**( ![전역 메뉴](../../../../images/icon-applications-menu.png) )를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다** .
 
 1. 객체 정의 편집을 시작합니다.
 
-1. _유효성 검사_ 탭으로 이동하여 _추가_( ![추가 버튼](../../../../images/icon-add.png) )를 클릭합니다.
+1. **유효성 검사** 탭으로 이동하여 **추가**( ![추가 버튼](../../../../images/icon-add.png) )를 클릭합니다.
 
-1. _레이블_을 입력하고 유효성 검사 유형(_Groovy_ 또는 _Expression Builder_)을 선택합니다.
+1. **레이블** 을 입력하고 유효성 검사 유형(**Groovy** 또는 **Expression Builder**)을 선택합니다.
 
    객체 유효성 검사 규칙 클라이언트 확장을 인스턴스에 배포한 경우 해당 확장도 옵션으로 표시됩니다.
 
    ![Enter a label and select a validation type.](./adding-field-validations/images/02.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 1. 유효성 검사 편집을 시작합니다.
 
@@ -31,11 +31,11 @@
 
    ![Activate the validation.](./adding-field-validations/images/03.png)
 
-1. 유효성 검사 실행 시기를 결정하려면 _트리거 이벤트_를 선택하세요.
+1. 유효성 검사 실행 시기를 결정하려면 **트리거 이벤트** 를 선택하세요.
 
    각 검증에는 하나의 트리거 이벤트만 있을 수 있습니다.
 
-1. _조건_ 탭으로 이동하여 유효성 검사에 조건을 추가하세요.
+1. **조건** 탭으로 이동하여 유효성 검사에 조건을 추가하세요.
 
    조건에는 복잡한 논리를 수행하기 위한 여러 필드와 함수가 포함될 수 있습니다.
 
@@ -45,21 +45,21 @@
 
    표현식 작성기를 사용하면 측면 패널을 통해 필드, 연산자 및 함수를 찾아보고 조건에 추가할 수 있습니다. 자세한 내용은 [표현식 작성기 유효성 검사 사용](#using-expression-builder-validations) 을 참조하세요.
 
-   !!! 중요
-   Groovy 스크립트 검증은 Liferay Experience Cloud 자체 관리형 및 Liferay DXP 자체 호스팅에만 사용할 수 있습니다.
+!!! note
+    Groovy 스크립트 검증은 Liferay Experience Cloud 자체 관리형 및 Liferay DXP 자체 호스팅에만 사용할 수 있습니다.
 
-1. 현지화 가능한 _오류 메시지_를 입력하세요. 이 메시지는 유효성 검사가 트리거되고 필드 항목이 정의된 조건 중 하나 이상을 충족하지 않을 때마다 나타납니다.
+1. 현지화 가능한 **오류 메시지** 를 입력하세요. 이 메시지는 유효성 검사가 트리거되고 필드 항목이 정의된 조건 중 하나 이상을 충족하지 않을 때마다 나타납니다.
 
 1. 오류 메시지가 나타나는 사이트
 를 결정하려면 출력 유효성 검사 유형을 선택하십시오.
 
-    **전체 유효성 검사(양식 요약)**: 양식 상단에 오류 메시지를 표시합니다.
+    **전체 유효성 검사(양식 요약**) : 양식 상단에 오류 메시지를 표시합니다.
 
-    **부분 유효성 검사(인라인 필드)**: 지정된 필드 옆에 오류 메시지를 표시합니다.
+    **부분 유효성 검사(인라인 필드**) : 지정된 필드 옆에 오류 메시지를 표시합니다.
 
     ![Enter an error message and select an output validation type.](./adding-field-validations/images/05.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 활성화된 동안 모든 새 개체 항목에 대해 유효성 검사가 실행되고 [레이아웃](../layouts.md) 및 [양식 컨테이너](../../using-fragments-to-build-forms.md) 에 표시됩니다.
 
@@ -73,14 +73,14 @@ Groovy 검증은 모든 표준 [Groovy Script](https://groovy-lang.org/) 기능�
 
 ![Use the side panel to add field elements to your Groovy validations.](./adding-field-validations/images/07.png)
 
-Liferay는 _저장_을 클릭할 때 [GroovyShell 클래스](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) 사용하여 Groovy 스크립트에서 유효한 구문을 확인합니다. 스크립트가 유효하지 않은 경우 Liferay는 오류 메시지를 표시합니다.
+Liferay는 **저장** 을 클릭할 때 [GroovyShell 클래스](https://docs.groovy-lang.org/latest/html/api/groovy/lang/GroovyShell.html) 사용하여 Groovy 스크립트에서 유효한 구문을 확인합니다. 스크립트가 유효하지 않은 경우 Liferay는 오류 메시지를 표시합니다.
 
 ## 표현식 작성기 유효성 검사 사용
 
-표현식 빌더는 요소 측면 패널에서 액세스할 수 있는 사전 정의된 필드, 연산자 및 함수를 제공합니다. 요소를 클릭하면 조건 편집기에 추가됩니다. 이러한 함수는 부울 값을 반환합니다. 제공된 연산자 및 함수의 전체 목록은 [Expression Builder Validations Reference ](./expression-builder-validations-reference.md) 참조하세요.
+표현식 빌더는 요소 측면 패널에서 액세스할 수 있는 사전 정의된 필드, 연산자 및 함수를 제공합니다. 요소를 클릭하면 조건 편집기에 추가됩니다. 이러한 함수는 부울 값을 반환합니다. 제공된 연산자 및 함수의 전체 목록은 [식 작성기 유효성 검사 참조](./expression-builder-validations-reference.md) 참조하세요.
 
 !!! important
-텍스트, 숫자, 날짜 및 부울 필드 유형에는 식 작성기 유효성 검사만 사용할 수 있습니다.
+    텍스트, 숫자, 날짜 및 부울 필드 유형에는 식 작성기 유효성 검사만 사용할 수 있습니다.
 
 ![Use the side panel to add field, operator, and function elements to your validation.](./adding-field-validations/images/08.png)
 
@@ -128,7 +128,7 @@ Liferay는 저장을 클릭하면 표현식에서 유효한 구문을 확인합�
 | 범위          |        |       | ✔     | 날짜 범위가 과거 날짜로 시작하고 미래 날짜로 끝나는지 확인하고 부울을 반환합니다.                  |
 | 합집합         |        | ✔     |       | 여러 숫자 필드를 함께 추가하고 다른 유효성 검사 기능과 함께 사용할 수 있는 단일 숫자를 반환합니다.       |
 
-자세한 내용과 예제는 식 작성기 유효성 검사 참조 [Expression Builder Validations Reference](./expression-builder-validations-reference.md) 참조하세요.
+자세한 내용과 예제는 식 작성기 유효성 검사 참조 [식 작성기 유효성 검사 참조](./expression-builder-validations-reference.md) 참조하세요.
 
 ## 사용 가능한 필드 참조
 

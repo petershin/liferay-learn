@@ -16,7 +16,7 @@ Liferay는 개체 작업에 의해 트리거된 이메일 알림을 검토하기
 | 에      | [알림 템플릿](./creating-notification-templates.md) 에 설정된 알림 수신자입니다.                                                                                         |
 | 상태     | 알림이 전송되었는지(_Sent_) 전송 중인지(_Unsent_) 알림 상태를 나타냅니다.                                                                           |
 
-해당 항목을 _삭제_하거나 알림을 _재전송_하려면 _작업_ 버튼(![작업 버튼](../../images/icon-actions.png))을 클릭하세요.
+해당 항목을 **삭제** 하거나 알림을 **재전송** 하려면 **작업** 버튼(![작업 버튼](../../images/icon-actions.png))을 클릭하세요.
 
 ![Delete entries or resend notifications.](./using-the-notification-queue/images/02.png)
 
@@ -26,9 +26,9 @@ Liferay는 개체 작업에 의해 트리거된 이메일 알림을 검토하기
 
 삭제 간격을 구성하려면
 
-1. _전역 메뉴_( ![전역 메뉴](../../images/icon-applications-menu.png) )를 열고 _제어판_ 탭으로 이동한 다음 _시스템 설정_을 클릭합니다.
+1. **전역 메뉴**( ![전역 메뉴](../../images/icon-applications-menu.png) )를 열고 **제어판** 탭으로 이동한 다음 **시스템 설정** 을 클릭합니다.
 
-1. 플랫폼에서 _알림_을 클릭하세요.
+1. 플랫폼에서 **알림** 을 클릭하세요.
 
 1. 알림 대기열에서 삭제 작업 사이의 시간(분)을 입력합니다.
 
@@ -36,7 +36,7 @@ Liferay는 개체 작업에 의해 트리거된 이메일 알림을 검토하기
 
    ![Under Notification Queue, enter the number of minutes between deletion operations.](./using-the-notification-queue/images/03.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 관련 주제
 

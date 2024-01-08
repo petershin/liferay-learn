@@ -16,17 +16,17 @@ Liferay는 이제 다양한 실시간 지원 채팅 플랫폼과의 통합을 �
 
 ## 클릭 투 채팅 활성화하기
 
-Click To Chat을 활성화하려면 _인스턴스 설정_으로 이동하세요.
+Click To Chat을 활성화하려면 **인스턴스 설정** 으로 이동하세요.
 
-1. _전역 메뉴_(![icon](../../images/icon-applications-menu.png)) &rarr; _제어판_ &rarr; _인스턴스 설정_으로 이동합니다.
+1. **전역 메뉴**(![icon](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **인스턴스 설정** 으로 이동합니다.
 
    ![Go to Instance Settings under Control Panel.](./enabling-automated-live-chat-systems/images/02.png)
 
-1. _콘텐츠 및 데이터_ 섹션에서 _채팅하려면 클릭_을 클릭하세요.
+1. **콘텐츠 및 데이터** 섹션에서 **채팅하려면 클릭** 을 클릭하세요.
 
    ![You can see Click To Chat's icon under Content and Data.](./enabling-automated-live-chat-systems/images/03.png)
 
-1. 인스턴스에 대해 클릭하여 채팅을 활성화하려면 _클릭하여 채팅 활성화_ 토글을 전환하세요.
+1. 인스턴스에 대해 클릭하여 채팅을 활성화하려면 **클릭하여 채팅 활성화** 토글을 전환하세요.
 
    ![Toggle the switch on to enable Click to Chat.](./enabling-automated-live-chat-systems/images/04.png)
 
@@ -34,19 +34,19 @@ Click To Chat을 활성화하려면 _인스턴스 설정_으로 이동하세요.
 
    ![Choose your Site Settings Strategy option.](./enabling-automated-live-chat-systems/images/05.png)
 
-   **항상 상속**: Click To Chat은 인스턴스의 모든 사이트에 대해 활성화되며 사이트 설정에서 이루어진 구성을 무시합니다.
+   **항상 상속** : Click To Chat은 인스턴스의 모든 사이트에 대해 활성화되며 사이트 설정에서 이루어진 구성을 무시합니다.
 
-   **항상 재정의**: 사이트 설정에서 구성된 Click to Chat 구성은 항상 인스턴스 설정에서 이루어진 구성보다 우선합니다.
+   **항상 재정의** : 사이트 설정에서 구성된 Click to Chat 구성은 항상 인스턴스 설정에서 이루어진 구성보다 우선합니다.
 
-   **상속 또는 재정의**: 사이트의 사이트 설정에서 다르게 구성되지 않는 한 사이트는 인스턴스 설정에서 구성을 상속합니다.
+   **상속 또는 재정의** : 사이트의 사이트 설정에서 다르게 구성되지 않는 한 사이트는 인스턴스 설정에서 구성을 상속합니다.
 
 1. 채팅 제공자를 선택하고 채팅 제공자가 제공한 [계정 ID 또는 토큰](#getting-the-chat-provider-account-id-or-token) 입력하세요.
 
    ![사용하려는 채팅 제공자를 선택하세요. ](./enabling-automated-live-chat-systems/images/06.png)
 
-1. (선택 사항) _게스트 사용자 허용_ 토글을 클릭하여 게스트 사용자(인증되지 않은 사용자)가 사이트의 채팅하려면 클릭 기능에 액세스할 수 있는지 여부를 구성합니다.
+1. (선택 사항)**게스트 사용자 허용** 토글을 클릭하여 게스트 사용자(인증되지 않은 사용자)가 사이트의 채팅하려면 클릭 기능에 액세스할 수 있는지 여부를 구성합니다.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 이제 실시간 채팅 제공업체와의 Click To Chat 통합이 구성되었습니다.
 

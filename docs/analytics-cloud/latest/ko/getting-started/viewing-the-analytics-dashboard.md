@@ -47,10 +47,10 @@
 
 Analytics Cloud의 UI는 현재 영어, 일본어, 포르투갈어, 스페인어를 지원합니다. 언어 설정을 변경하려면,
 
-1. 대시보드 하단에서 사용자 이름을 클릭하세요. 그런 다음 _언어_를 클릭하세요.
+1. 대시보드 하단에서 사용자 이름을 클릭하세요. 그런 다음 **언어** 를 클릭하세요.
 
    ![Click on your user name, then click Language.](./viewing-the-analytics-dashboard/images/02.png)
 
 1. 언어를 선택하세요. 페이지를 새로 고칩니다. 이제 대시보드와 메뉴가 선택한 언어로 표시됩니다.
 
-잘하셨어요! Analytics Cloud에 사용 가능한 모든 기능, 옵션 및 구성을 찾아보려면 위의 _Analytics Cloud_ 탐색경로를 클릭하세요.
+잘하셨어요! Analytics Cloud에 사용 가능한 모든 기능, 옵션 및 구성을 찾아보려면 위의 **Analytics Cloud** 탐색경로를 클릭하세요.

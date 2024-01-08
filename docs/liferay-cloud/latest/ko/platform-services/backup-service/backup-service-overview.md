@@ -93,7 +93,7 @@ Liferay Cloud Console을 통해 백업 서비스를 구성하려면 다음 단�
 
 ### 백업 `LCP.json` 파일을 통해 백업 서비스 구성
 
-'LCP.json' 파일을 통해 백업 서비스를 구성하려면 다음 단계를 따르세요.
+`LCP.json` 파일을 통해 백업 서비스를 구성하려면 다음 단계를 따르세요.
 
 1. 텍스트 편집기를 사용하여 `/{your_project_name}/backup/LCP.json` 경로에 있는 백업 `LCP.json` 파일을 엽니다.
 
@@ -158,9 +158,9 @@ Liferay 인스턴스에서 데이터가 활발하게 변경되는 동안 백업�
 
 백업이 생성되고 제거되는 시기를 사용자 지정하려면 환경별로 다음 변수를 사용하세요.
 
-* **자동 백업** : 자동 백업 빈도를 설정하려면 [cron 스케줄링](https://crontab.guru/) 값과 함께 'LCP_BACKUP_CREATE_SCHEDULE' 변수를 추가하세요.
-* **자동 정리** : 자동 백업 정리 빈도를 설정하려면 [cron 일정](https://crontab.guru/) 값과 함께 'LCP_BACKUP_CLEANUP_SCHEDULE' 변수를 추가하세요.
-* **보존 기간** : 'LCP_BACKUP_RETENTION_PERIOD' 변수에 숫자 값(1~30)을 추가하여 자동 정리로 제거되기 전에 백업이 보관되는 일수를 설정합니다.
+* **자동 백업** : 자동 백업 빈도를 설정하려면 [cron 스케줄링](https://crontab.guru/) 값과 함께 `LCP_BACKUP_CREATE_SCHEDULE` 변수를 추가하세요.
+* **자동 정리** : 자동 백업 정리 빈도를 설정하려면 [cron 일정](https://crontab.guru/) 값과 함께 `LCP_BACKUP_CLEANUP_SCHEDULE` 변수를 추가하세요.
+* **보존 기간** : `LCP_BACKUP_RETENTION_PERIOD` 변수에 숫자 값(1~30)을 추가하여 자동 정리로 제거되기 전에 백업이 보관되는 일수를 설정합니다.
 
 ```{note}
 표준 및 비표준 [cron 예약 구문](https://crontab.guru/) 은 모두 UTC±00 시간대를 기반으로 합니다. 비표준 cron 구문을 사용하는 경우 지정된 값이 시작될 때 자동 백업 및 정리가 실행됩니다. 예를 들어 `@daily`는 매일 UTC 00:00에 백업을 실행합니다.

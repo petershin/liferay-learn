@@ -27,7 +27,7 @@ Liferay의 REST API를 사용하여 지역을 생성하고 관리하세요.
    ./Region_POST_ToCountry.sh 1234
    ```
 
-   '1234'를 국가 ID로 바꾸세요. 인스턴스 [에서](./countries-api-basics.md#get-countries-from-instance) 국가 가져오기를 사용하여 ID 목록을 가져옵니다.
+   `1234`를 국가 ID로 바꾸세요. 인스턴스 [에서](./countries-api-basics.md#get-countries-from-instance) 국가 가져오기를 사용하여 ID 목록을 가져옵니다.
 
    JSON 응답은 새 지역이 추가되었음을 보여줍니다.
 

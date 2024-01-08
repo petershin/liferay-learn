@@ -16,23 +16,23 @@ Liferay 7.3+에서는 사용자 정의 필드를 사용하여 탐색 메뉴(*사
 
 탐색 메뉴를 만들려면 다음 단계를 따르세요.
 
-1. _사이트 메뉴_( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 _사이트 빌더_ &rarr; _탐색 메뉴_로 이동합니다.
+1. **사이트 메뉴**( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 **사이트 빌더** &rarr; **탐색 메뉴** 로 이동합니다.
 
    ![Access navigation menus in the site menu.](./using-the-navigation-menus-application/images/02.png)
 
-1. _추가_( ![추가 버튼](../../images/icon-add.png) )를 클릭합니다.
+1. **추가**( ![추가 버튼](../../images/icon-add.png) )를 클릭합니다.
 
-1. 탐색 메뉴의 _이름_을 입력합니다.
+1. 탐색 메뉴의 **이름** 을 입력합니다.
 
    ![Create a navigation menu.](./using-the-navigation-menus-application/images/03.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 요소(예: 페이지, 문서, 카테고리) 추가를 시작할 수 있는 새로운 사용자 정의 메뉴가 나타납니다.
 
 ### 탐색 메뉴에 새 요소 추가
 
-1. _추가_( ![추가 버튼](../../images/icon-add.png) )를 클릭합니다.
+1. **추가**( ![추가 버튼](../../images/icon-add.png) )를 클릭합니다.
 
 1. 메뉴에 추가하려는 요소 유형(예: 페이지, 문서 또는 카테고리)을 선택합니다. 그러면 항목 선택 창이 열립니다.
 
@@ -40,7 +40,7 @@ Liferay 7.3+에서는 사용자 정의 필드를 사용하여 탐색 메뉴(*사
 
 ![Select the type of element you want to add to the menu.](./using-the-navigation-menus-application/images/04.png)
 
-1. 추가하려는 요소를 선택하고 _선택_을 클릭하세요.
+1. 추가하려는 요소를 선택하고 **선택** 을 클릭하세요.
 
    여러 요소를 선택할 수 있습니다.
 
@@ -60,7 +60,7 @@ Liferay 7.3+에서는 사용자 정의 필드를 사용하여 탐색 메뉴(*사
 
 1. 선택적으로 탐색 메뉴 트리에서 하위 탐색 메뉴 요소를 추가할 수 있습니다.
 
-   원하는 탐색 메뉴 요소에 대해 _작업_( ![작업 버튼](../../images/icon-actions.png) )을 클릭하고 _하위 추가_를 선택한 다음 하위 요소 유형을 선택합니다.
+   원하는 탐색 메뉴 요소에 대해 **작업**( ![작업 버튼](../../images/icon-actions.png) )을 클릭하고 **하위 추가** 를 선택한 다음 하위 요소 유형을 선택합니다.
 
    ![Add child navigation menu elements right from the navigation menu tree](./using-the-navigation-menus-application/images/07.png)
 
@@ -74,7 +74,7 @@ Liferay 7.3+에서는 사용자 정의 필드를 사용하여 탐색 메뉴(*사
    Liferay 7.4 버전 U9+ 또는 GA13+의 디스플레이 페이지를 사용하여 콘텐츠 유형 요소에 대한 사용자 정의 표시 이름만 정의할 수 있습니다.
    ```
 
-   이렇게 하려면 메뉴 요소를 선택하고 측면 패널에서 _사용자 정의 이름 사용_을 선택한 다음 이름을 입력하고 _저장_을 클릭하세요.
+   이렇게 하려면 메뉴 요소를 선택하고 측면 패널에서 **사용자 정의 이름 사용** 을 선택한 다음 이름을 입력하고 **저장** 을 클릭하세요.
 
    ![Customize the display of menu elements.](./using-the-navigation-menus-application/images/08.png)
 
@@ -84,13 +84,13 @@ Liferay 7.3+에서는 사용자 정의 필드를 사용하여 탐색 메뉴(*사
 
 [어휘 탐색 메뉴 요소](./navigation-menu-element-types.md#vocabularies) 은 동적입니다. 하나가 페이지에 표시되면 단일 요소 대신 현재 계층 구조의 모든 범주 및 하위 범주가 추가됩니다. 어휘 내용에 대한 모든 변경 사항은 메뉴에 자동으로 반영됩니다.
 
-동적 어휘 요소를 사용하면 항목 계층을 변경할 때 탐색 메뉴를 빠르고 쉽게 업데이트할 수 있습니다. 예를 들어, 카테고리를 사용하여 [카탈로그](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html) 의 제품 유형을 표시한 다음 카테고리에 대한 업데이트가 어휘를 사용하여 모든 메뉴를 자동으로 업데이트하도록 할 수 있습니다. 그런 다음 해당 범주에 사용 [디스플레이 페이지](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) 따라 범주 변경 사항이 페이지와 탐색 메뉴에 자동으로 반영될 수 있습니다.
+동적 어휘 요소를 사용하면 항목 계층을 변경할 때 탐색 메뉴를 빠르고 쉽게 업데이트할 수 있습니다. 예를 들어, 카테고리를 사용하여 [새 카탈로그 만들기](https://learn.liferay.com/commerce/latest/ko/product-management/catalogs/creating-a-new-catalog.html) 의 제품 유형을 표시한 다음 카테고리에 대한 업데이트가 어휘를 사용하여 모든 메뉴를 자동으로 업데이트하도록 할 수 있습니다. 그런 다음 해당 범주에 사용 [디스플레이 페이지](../displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) 따라 범주 변경 사항이 페이지와 탐색 메뉴에 자동으로 반영될 수 있습니다.
 
 ![Dynamic vocabulary elements automatically update to reflect their hierarchy of categories in your navigation menus.](./using-the-navigation-menus-application/images/09.png)
 
 ### 탐색 메뉴 미리보기
 
-탐색 메뉴를 편집하는 동안 페이지에 표시될 때 어떻게 보이는지 미리 볼 수 있습니다. _눈 아이콘_( ![눈 아이콘](../../images/icon-view.png) )을 클릭하여 탐색 메뉴 미리보기가 포함된 팝업 창을 엽니다.
+탐색 메뉴를 편집하는 동안 페이지에 표시될 때 어떻게 보이는지 미리 볼 수 있습니다. **눈 아이콘**( ![눈 아이콘](../../images/icon-view.png) )을 클릭하여 탐색 메뉴 미리보기가 포함된 팝업 창을 엽니다.
 
 ![Preview a navigation menu to see how it looks when displayed on a page.](./using-the-navigation-menus-application/images/10.png)
 
@@ -104,25 +104,25 @@ Liferay 7.3+에서는 사용자 정의 필드를 사용하여 탐색 메뉴(*사
 
 탐색 메뉴에 대해 이 동작을 구성하려면 다음 단계를 따르십시오.
 
-1. _사이트 메뉴_( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 _사이트 빌더_ &rarr; _탐색 메뉴_로 이동합니다.
+1. **사이트 메뉴**( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 **사이트 빌더** &rarr; **탐색 메뉴** 로 이동합니다.
 
 1. 원하는 메뉴를 선택하세요.
 
-1. _작업_( ![작업 버튼](../../images/icon-actions.png) )을 클릭합니다.
+1. **작업**( ![작업 버튼](../../images/icon-actions.png) )을 클릭합니다.
 
 1. 설정을 선택 취소/확인하세요.
 
    ![You can select from existing navigationmenus when creating site pages](./using-the-navigation-menus-application/images/12.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 탐색 메뉴 유형 구성
 
 탐색 메뉴 유형을 구성하려면 다음 단계를 따르세요.
 
-1. _사이트 메뉴_( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 _사이트 빌더_ &rarr; _탐색 메뉴_로 이동합니다.
+1. **사이트 메뉴**( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 **사이트 빌더** &rarr; **탐색 메뉴** 로 이동합니다.
 
-1. 원하는 메뉴에 대해 _작업_( ![작업 버튼](../../images/icon-actions.png) )을 클릭합니다.
+1. 원하는 메뉴에 대해 **작업**( ![작업 버튼](../../images/icon-actions.png) )을 클릭합니다.
 
 1. 원하는 탐색 유형(기본 탐색, 보조 탐색 또는 소셜 탐색)을 선택합니다.
 
@@ -133,16 +133,16 @@ Liferay 7.3+에서는 사용자 정의 필드를 사용하여 탐색 메뉴(*사
 | 탐색 메뉴 유형               | 용법                                                    |
 | :--------------------- | :---------------------------------------------------- |
 | **Primary Navigation** | 기본 탐색은 페이지의 기본 탐색입니다.                                 |
-| **보조 탐색**              | 보조 탐색은 탐색의 두 번째 수준으로, 사이드바 또는 페이지 내의 별도 메뉴일 수 있습니다.   |
-| **소셜 내비게이션**           | 소셜 탐색은 소셜 미디어에서 콘텐츠를 공유하거나 유사한 작업을 위한 링크가 포함된 메뉴용입니다. |
+| **보조 탐색** | 보조 탐색은 탐색의 두 번째 수준으로, 사이드바 또는 페이지 내의 별도 메뉴일 수 있습니다.   |
+| **소셜 내비게이션** | 소셜 탐색은 소셜 미디어에서 콘텐츠를 공유하거나 유사한 작업을 위한 링크가 포함된 메뉴용입니다. |
 
 ## 탐색 메뉴 삭제
 
-1. _사이트 메뉴_( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 _사이트 빌더_ &rarr; _탐색 메뉴_로 이동합니다.
+1. **사이트 메뉴**( ![사이트 메뉴](../../images/icon-product-menu.png) )를 열고 **사이트 빌더** &rarr; **탐색 메뉴** 로 이동합니다.
 
-1. 원하는 메뉴에 대해 _작업_( ![작업 버튼](../../images/icon-actions.png) )을 클릭한 다음 _삭제_를 클릭합니다.
+1. 원하는 메뉴에 대해 **작업**( ![작업 버튼](../../images/icon-actions.png) )을 클릭한 다음 **삭제** 를 클릭합니다.
 
-1. 확인에서 _확인_을 클릭하세요.
+1. 확인에서 **확인** 을 클릭하세요.
 
 내비게이션 메뉴가 삭제됩니다.
 

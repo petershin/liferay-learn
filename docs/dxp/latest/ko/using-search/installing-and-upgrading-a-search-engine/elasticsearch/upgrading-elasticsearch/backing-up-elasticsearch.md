@@ -32,7 +32,7 @@ Elasticsearch 클러스터를 백업하고 다음 세 단계로 백업 복원을
 
 ### 저장소 생성
 
-먼저 [저장소를 생성](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshots-register-repository.html)하여 스냅샷을 저장하세요. Elasticsearch는 다음을 포함한 여러 저장소 유형을 허용합니다.
+먼저 [저장소를 생성](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshots-register-repository.html) 하여 스냅샷을 저장하세요. Elasticsearch는 다음을 포함한 여러 저장소 유형을 허용합니다.
 
 * 네트워크 파일 시스템 또는 NAS와 같은 공유 파일 시스템
 * 아마존 S3
@@ -176,7 +176,7 @@ POST /_snapshot/test_backup/snapshot_1/_restore
 }
 ```
 
-이렇게 하면 스냅샷에서 'liferay-20116'이라는 인덱스만 복원되고 이름이 'restored_liferay-20116'으로 변경됩니다. 클러스터로 복원되면 백업된 데이터를 기존 `liferay-20116` 인덱스로 복원하는 `_reindex` API 호출을 수행하는 데 사용할 수 있습니다.
+이렇게 하면 스냅샷에서 `liferay-20116`이라는 인덱스만 복원되고 이름이 `restored_liferay-20116`으로 변경됩니다. 클러스터로 복원되면 백업된 데이터를 기존 `liferay-20116` 인덱스로 복원하는 `_reindex` API 호출을 수행하는 데 사용할 수 있습니다.
 
 ```bash
 POST _reindex/
@@ -204,7 +204,7 @@ DELETE /restored_liferay-20116index_3
 
 Elasticsearch의 [스냅샷 및 복원](https://www.elastic.co/guide/en/elasticsearch/reference/8.8/snapshot-restore.html) 기능을 사용하여 검색 튜닝 인덱스를 백업하고 복원할 수 있습니다.
 
-1. 시스템 어딘가에 'elasticsearch_local_backup'이라는 폴더를 만듭니다. Elasticsearch에 폴더(예: `/path/to/elasticsearch_local_backup`)에 대한 읽기 및 쓰기 액세스 권한이 있는지 확인하세요.
+1. 시스템 어딘가에 `elasticsearch_local_backup` 이라는 폴더를 만듭니다. Elasticsearch에 폴더(예: `/path/to/elasticsearch_local_backup`)에 대한 읽기 및 쓰기 액세스 권한이 있는지 확인하세요.
 
 1. 추가
 
@@ -288,7 +288,7 @@ POST _reindex/
 | Liferay DXP 7.2 SP3/FP8 이상    | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
 | liferay DXP 7.3 GA1+ 및 7.4 GA1+ | `liferay-<companyId>-search-tuning-rankings`<br />`liferay-<companyId>-search-tuning-synonyms` |
 
-'<companyId>'(예: '20101')은 데이터베이스의 특정 '회사' 레코드에 속합니다. UI에서는 _Instance ID_로 표시되며 [Virtual Instance](../../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md) 을 나타냅니다.
+`<companyId>`(예: `20101`)은 데이터베이스의 특정 '회사' 레코드에 속합니다. UI에서는 **Instance ID** 로 표시되며 [Virtual Instance](../../../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md) 을 나타냅니다.
 
 ## 다음
 
@@ -296,4 +296,4 @@ POST _reindex/
 
 ## 관련 주제
 
-[검색 관리 및 튜닝](../../../search-administration-and-tuning.md) 
+[검색 관리 및 튜닝](../../../search-administration-and-tuning.md)

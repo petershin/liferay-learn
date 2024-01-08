@@ -1,14 +1,14 @@
 # DXP 탐색
 
-Liferay DXP의 기본 탐색은 [_사이트 메뉴_](#site-menu) , [_개인 메뉴_](#personal-menu) 및 [글로벌 메뉴_](#global-menu) 의 세 가지 주요 영역으로 구성됩니다.
+Liferay DXP의 기본 탐색은 [**사이트 메뉴**](#site-menu) , [**개인 메뉴**](#personal-menu) 및 [글로벌 메뉴_](#global-menu) 의 세 가지 주요 영역으로 구성됩니다.
 
 ## 사이트 메뉴
 
-화면 왼쪽에 있는 DXP _사이트 메뉴_에는 현재 보고 있는 특정 사이트에 해당하는 작업, 콘텐츠 및 구성이 포함되어 있습니다. 애플리케이션 바의 _사이트 메뉴_ (![사이트 메뉴](../images/icon-menu.png))를 클릭하여 확장하거나 숨길 수 있습니다.
+화면 왼쪽에 있는 DXP **사이트 메뉴** 에는 현재 보고 있는 특정 사이트에 해당하는 작업, 콘텐츠 및 구성이 포함되어 있습니다. 애플리케이션 바의 **사이트 메뉴**(![사이트 메뉴](../images/icon-menu.png))를 클릭하여 확장하거나 숨길 수 있습니다.
 
 ![Expand the site menu so that all options are visible.](./navigating-dxp/images/01.png)
 
-사이트 메뉴는 선택한 사이트를 나타냅니다. 위의 예에서 사이트는 `Liferay DXP`입니다. 사이트 메뉴에서 _나침반_(![나침반](../images/icon-compass.png))을 클릭하여 작업 중인 사이트를 변경할 수 있습니다.
+사이트 메뉴는 선택한 사이트를 나타냅니다. 위의 예에서 사이트는 `Liferay DXP`입니다. 사이트 메뉴에서 **나침반**(![나침반](../images/icon-compass.png))을 클릭하여 작업 중인 사이트를 변경할 수 있습니다.
 
 다음은 사이트 메뉴에서 수행할 수 있는 몇 가지 일반적인 사이트 구축 및 관리 활동입니다.
 
@@ -19,7 +19,7 @@ Liferay DXP의 기본 탐색은 [_사이트 메뉴_](#site-menu) , [_개인 메�
 
 ## 애플리케이션 바
 
-_Application Bar_는 각 페이지 상단과 [사이트 메뉴](#site-menu) 애플리케이션에 나타납니다. 애플리케이션 표시줄에는 현재 열려 있는 애플리케이션에 따라 다양한 옵션이 포함된 작업 메뉴(![Actions](../images/icon-actions.png))가 표시됩니다.
+**Application Bar** 는 각 페이지 상단과 [사이트 메뉴](#site-menu) 애플리케이션에 나타납니다. 애플리케이션 표시줄에는 현재 열려 있는 애플리케이션에 따라 다양한 옵션이 포함된 작업 메뉴(![Actions](../images/icon-actions.png))가 표시됩니다.
 
 ![The actions available in the application bar depend on the application open at the moment.](./navigating-dxp/images/02.png)
 
@@ -54,7 +54,7 @@ _Application Bar_는 각 페이지 상단과 [사이트 메뉴](#site-menu) 애�
 
 ## 개인 메뉴
 
-_개인 메뉴_는 로그인한 사용자에 대한 정보 및 활동의 허브입니다.
+**개인 메뉴** 는 로그인한 사용자에 대한 정보 및 활동의 허브입니다.
 
 ![The Liferay DXP Personal Menu is available by clicking the avatar icon in the top right.](./navigating-dxp/images/04.png)
 
@@ -67,16 +67,16 @@ _개인 메뉴_는 로그인한 사용자에 대한 정보 및 활동의 허브�
 
 ## 글로벌 메뉴
 
-DXP _글로벌 메뉴_에는 [애플리케이션](#applications-menu) , [상거래](#commerce-menu) , [제어판](#control-panel) 메뉴가 포함되어 있습니다. 화면 오른쪽 상단의 _글로벌 메뉴_ (![글로벌 메뉴](../images/icon-applications-menu.png))를 클릭해 접근하세요.
+DXP **글로벌 메뉴** 에는 [애플리케이션](#applications-menu) , [상거래](#commerce-menu) , [제어판](#control-panel) 메뉴가 포함되어 있습니다. 화면 오른쪽 상단의 **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 클릭해 접근하세요.
 
 !!! note
-기본적으로 _Guest_ 또는 _User_ 역할을 가진 사용자는 글로벌 메뉴에 접근할 수 없습니다.
+기본적으로 **Guest** 또는 **User** 역할을 가진 사용자는 글로벌 메뉴에 접근할 수 없습니다.
 
 인터페이스 오른쪽에 있는 글로벌 메뉴의 애플리케이션, 상거래 또는 제어판 탭에서 사용 가능한 다른 사이트로 이동할 수도 있습니다.
 
 ### 응용프로그램 메뉴
 
-_응용 프로그램 메뉴_에는 Liferay DXP 서버 내에서 다양한 응용 프로그램을 관리할 수 있는 다양한 링크가 포함되어 있습니다.
+**응용 프로그램 메뉴** 에는 Liferay DXP 서버 내에서 다양한 응용 프로그램을 관리할 수 있는 다양한 링크가 포함되어 있습니다.
 
 ![The applications menu contains many global settings and important functions applicable to all sites.](./navigating-dxp/images/05.png)
 
@@ -94,17 +94,17 @@ Liferay 7.3 CE GA6 및 Liferay DXP 7.3 GA1부터 Liferay Commerce 3.0은 이제 
 
 Liferay Commerce에서 관리할 수 있는 몇 가지 기능은 다음과 같습니다.
 
-* [새 카탈로그 생성](https://learn.liferay.com/commerce/latest/en/product-management/catalogs/creating-a-new-catalog.html)
+* [새 카탈로그 만들기](https://learn.liferay.com/commerce/latest/ko/product-management/catalogs/creating-a-new-catalog.html)
 * [새 채널 만들기](https://learn.liferay.com/commerce/latest/en/starting-a-store/channels/managing-channels.html)
-* [재고 관리](https://learn.liferay.com/commerce/latest/en/inventory-management.html)
-* [주문 처리](https://learn.liferay.com/commerce/latest/en/order-management/orders/processing-an-order.html)
+* [재고 관리](https://learn.liferay.com/commerce/latest/ko/inventory-management.html)
+* [주문 처리](https://learn.liferay.com/commerce/latest/ko/order-management/orders/processing-an-order.html)
 
-Liferay Commerce에 대해 자세히 알아보려면 [Liferay Commerce 소개](https://learn.liferay.com/commerce/latest/en/starting-a-store/introduction-to-liferay-commerce.html) 참조하세요.
+Liferay Commerce에 대해 자세히 알아보려면 [라이프레이 커머스 소개](https://learn.liferay.com/commerce/latest/ko/starting-a-store/introduction-to-liferay-commerce.html) 참조하세요.
 
 ### 제어판
 
 
-_제어판_에는 Liferay DXP 설치 또는 특정 인스턴스에 대해 전체적으로 범위를 지정할 수 있는 일반 관리 작업 및 구성이 포함되어 있습니다.
+**제어판** 에는 Liferay DXP 설치 또는 특정 인스턴스에 대해 전체적으로 범위를 지정할 수 있는 일반 관리 작업 및 구성이 포함되어 있습니다.
 
 ![The control panel is now part of the global menu.](./navigating-dxp/images/07.png)
 

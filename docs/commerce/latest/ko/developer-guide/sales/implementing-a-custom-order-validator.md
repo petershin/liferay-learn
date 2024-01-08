@@ -2,7 +2,7 @@
 
 이 튜토리얼에서는 [CommerceOrderValidator](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java) 인터페이스를 구현하여 사용자 정의 주문 유효성 검사기를 추가하는 방법을 설명합니다.
 
-주문 유효성 검사기는 결제를 진행할 때 고객 장바구니에 있는 품목의 유효성을 검사하는 클래스입니다. Liferay는 [기본값](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java)을 포함한 여러 가지 기본 주문 유효성 검사기와 [항목 버전](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) 및 [반복 항목(구독)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java)을 확인하는 유효성 검사기를 제공합니다.
+주문 유효성 검사기는 결제를 진행할 때 고객 장바구니에 있는 품목의 유효성을 검사하는 클래스입니다. Liferay는 [기본값](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) 을 포함한 여러 가지 기본 주문 유효성 검사기와 [항목 버전](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) 및 [반복 항목(구독)](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java) 을 확인하는 유효성 검사기를 제공합니다.
 
 주문 유효성 검사기에는 장바구니에 제품을 추가하고 새로운 결제 단계를 진행하기 위한 유효성 검사 논리가 있습니다. 세 부분이 있습니다:
 
@@ -101,7 +101,7 @@ private static final double _MAX_ITEM_PRICE = 100.0;
 private static final int _MAX_ITEM_QUANTITY = 10;
 ```
 
-예제의 주요 검증에서는 가격(`BigDecimal`로 저장됨)이 $100를 초과하고 수량이 10보다 큰지 확인합니다. 이 가격 정보는 고객 주문에 대한 정보가 포함된 'CPInstance'에서 확인할 수 있습니다. `CPInstance`와 함께 사용할 수 있는 더 많은 메서드를 찾으려면 [CPInstance](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) 및 [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java)을 참조하세요.
+예제의 주요 검증에서는 가격(`BigDecimal`로 저장됨)이 $100를 초과하고 수량이 10보다 큰지 확인합니다. 이 가격 정보는 고객 주문에 대한 정보가 포함된 'CPInstance'에서 확인할 수 있습니다. `CPInstance`와 함께 사용할 수 있는 더 많은 메서드를 찾으려면 [CPInstance](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) 및 [CPInstanceModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) 을 참조하세요.
 
 ```{note}
 기본 유효성 검사에 대한 유효성 검사가 실패한 이유를 설명하는 현지화된 메시지를 포함하는 것이 가장 좋습니다.
@@ -115,7 +115,7 @@ private static final int _MAX_ITEM_QUANTITY = 10;
    :lines: 62-84
 ```
 
-고객 장바구니에 있는 항목에 대해 호출되므로 이 메서드에 동일한 유효성 검사 논리를 추가합니다. 여기서 가장 큰 차이점은 'CommerceOrderItem' 개체에서 정보를 얻는다는 것입니다. `CommerceOrderItem`과 함께 사용할 수 있는 더 많은 방법을 찾으려면 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) 및 [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java)을 참조하세요.
+고객 장바구니에 있는 항목에 대해 호출되므로 이 메서드에 동일한 유효성 검사 논리를 추가합니다. 여기서 가장 큰 차이점은 'CommerceOrderItem' 개체에서 정보를 얻는다는 것입니다. `CommerceOrderItem`과 함께 사용할 수 있는 더 많은 방법을 찾으려면 [CommerceOrderItem](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) 및 [CommerceOrderItemModel](https://github.com/liferay/liferay-portal/blob/[$LIFERAY_LEARN_PORTAL_GIT_TAG$]/modules/apps/commerce/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) 을 참조하세요.
 
 ### `Language.properties`에 언어 키가 추가되었습니다.
 
@@ -126,7 +126,7 @@ expensive-items-have-a-maximum-order-quantity-of-x=Expensive items have a maximu
 this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximum order quantity of {0}.
 ```
 
-자세한 내용은 [애플리케이션 지역화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) 참조하세요.
+자세한 내용은 [애플리케이션 지역화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application) 참조하세요.
 
 ## 사용자 정의 주문 유효성 검사기 수정
 
@@ -142,5 +142,5 @@ this-expensive-item-has-a-maximum-quantity-of-x=This expensive item has a maximu
 
 ## 관련 주제
 
-* [간단한 제품 만들기](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md) 
-* [애플리케이션 현지화](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) 
+* [간단한 제품 만들기](../../product-management/creating-and-managing-products/product-types/creating-a-simple-product.md)
+* [애플리케이션 현지화](https://help.liferay.com/hc/ko/articles/360018168251-Localizing-Your-Application)

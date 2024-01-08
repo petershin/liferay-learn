@@ -110,15 +110,15 @@ cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 **백업 서비스 5.9.0** 이전에는 콘솔을 통해서만 백업을 다운로드할 수 있습니다. 버전 5.9.0+의 경우 대신 [CLI 도구](#downloading-backups-via-the-cli-tool) 사용하십시오.
 ```
 
-선택한 환경의 _백업_ 페이지에서 백업을 다운로드하려면 관리자로서 다음 단계를 따르세요.
+선택한 환경의 **백업** 페이지에서 백업을 다운로드하려면 관리자로서 다음 단계를 따르세요.
 
-1. 다운로드하려는 백업에 대해 _작업_( ⋮ )을 클릭하세요.
+1. 다운로드하려는 백업에 대해 **작업**( ⋮ )을 클릭하세요.
 
-1. _다운로드_를 클릭하세요.
+1. **다운로드** 를 클릭하세요.
 
    ![Click on the Actions button, and then click Download.](./downloading-and-uploading-backups/images/01.png)
 
-1. _Database_(`.gz`) 또는 _Liferay_(`.tgz`) 파일을 클릭하여 다운로드를 시작하세요. 이러한 zip 아카이브는 함께 환경 백업을 구성합니다.
+1. **Database**(`.gz`) 또는 **Liferay**(`.tgz`) 파일을 클릭하여 다운로드를 시작하세요. 이러한 zip 아카이브는 함께 환경 백업을 구성합니다.
 
    ```{note}
    백업 서비스가 아직 '4.2' 버전 이상으로 업데이트되지 않은 경우 데이터베이스 볼륨은 '.gz' 대신 '.tgz' 아카이브로 다운로드됩니다.
@@ -136,13 +136,13 @@ Liferay Cloud에 백업을 업로드하려면 먼저 데이터베이스 덤프�
 
 백업 페이지에서 다음 단계를 따르세요.
 
-1. 화면 상단 근처에서 *백업 업로드...*를 클릭합니다.
+1. 화면 상단 근처에서 **백업 업로드...** 를 클릭합니다.
 
 1. 백업 업로드 페이지에서 해당 환경을 확장한 다음 데이터베이스와 문서 라이브러리 모두에 대해 '+' 아이콘을 클릭하여 업로드합니다.
 
    ![Click the icons to upload both the database and document library as .gz archives.](./downloading-and-uploading-backups/images/03.png)
 
-1. 데이터베이스 덤프와 문서 라이브러리가 모두 업로드되면 _업로드 시작_을 클릭합니다.
+1. 데이터베이스 덤프와 문서 라이브러리가 모두 업로드되면 **업로드 시작** 을 클릭합니다.
 
 Liferay Cloud는 업로드한 파일을 사용하여 백업을 생성하고 이를 환경에 복원할 수 있는 목록에 추가합니다. 백업이 생성되는 동안에는 다른 백업을 생성하거나 복원할 수 없습니다.
 
@@ -156,7 +156,7 @@ Liferay Cloud는 업로드한 파일을 사용하여 백업을 생성하고 이�
 
 ### 호스트 이름 얻기
 
-백업 API를 호출하려면 백업 서비스의 호스트 이름이 필요합니다. _서비스_ 페이지에서 이를 찾을 수 있습니다.
+백업 API를 호출하려면 백업 서비스의 호스트 이름이 필요합니다. **서비스** 페이지에서 이를 찾을 수 있습니다.
 
 ![View the backup service's host name from the Services page.](./downloading-and-uploading-backups/images/05.png)
 

@@ -27,7 +27,7 @@ visibility:
 
 ```{note}
 * 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/sa1-4-liferay-sales-presentations-and-how-to-master-them) 보기 .
-* 에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf)를 다운로드하세요. 라이브 워크숍.
+* 에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/sa1-4-liferay-sales-presentations-and-how-to-master-them-pdf) 를 다운로드하세요. 라이브 워크숍.
 ```
 
 ## 기존 영업 덱의 과제

@@ -1,12 +1,12 @@
 # AntiSamy 관리
 
-AntiSamy 살균제는 Liferay에서 기본적으로 활성화되어 있습니다. 이 살균제는 사용자가 다양한 Liferay 애플리케이션에서 HTML 및 CSS를 사용할 때 악성 JavaScript 코드가 시스템에 주입되는 것을 방지합니다. 자세한 내용은 [AntiSamy](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/using-antisamy)을 참조하세요.
+AntiSamy 살균제는 Liferay에서 기본적으로 활성화되어 있습니다. 이 살균제는 사용자가 다양한 Liferay 애플리케이션에서 HTML 및 CSS를 사용할 때 악성 JavaScript 코드가 시스템에 주입되는 것을 방지합니다. 자세한 내용은 [AntiSamy](https://learn.liferay.com/web/guest/w/dxp/installation-and-upgrades/securing-liferay/using-antisamy) 을 참조하세요.
 
 악의적인 활동을 방지하기 위해 Clarity Vision Solutions의 IT 부서는 JavaScript 코드가 웹 콘텐츠에 배치되는 것을 금지하기로 결정했습니다. 아래에서 실제 동작을 확인하세요.
 
 ## AntiSamy 구성
 
-기본적으로 모든 JavaScript 코드는 삭제되어 [fragments]을 제외한 실행이 차단됩니다(https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets) /using-fragments) 및 [웹 콘텐츠](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content). 이는 구성의 블랙리스트 및 화이트리스트에 따라 제어됩니다. 실제로 작동하는 모습을 보려면 아래 단계를 따르세요.
+기본적으로 모든 JavaScript 코드는 삭제되어 [fragments]을 제외한 실행이 차단됩니다(https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets) /using-fragments) 및 [웹 콘텐츠](https://learn.liferay.com/web/guest/w/dxp/content-authoring-and-management/web-content) . 이는 구성의 블랙리스트 및 화이트리스트에 따라 제어됩니다. 실제로 작동하는 모습을 보려면 아래 단계를 따르세요.
 
 1. 기본 웹 콘텐츠를 사이트 페이지에 게시합니다.
 

@@ -4,7 +4,7 @@
 
 {bdg-secondary}`liferay DXP 7.4 U35+`
 
-Salesforce에 대한 Liferay 커넥터는 [Talend](https://help.talend.com/home) 작업 디자인과 Liferay의 [Job Scheduler](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) 사용하여 Salesforce에서 Liferay DXP로 데이터를 가져옵니다. 커넥터 [다운로드하고 Liferay 인스턴스에 '.lpkg' 파일로 배포할](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) 있습니다. 이 파일에는 Salesforce 데이터 필드를 Liferay 데이터 필드에 매핑하는 Talend 작업이 포함되어 있습니다.
+Salesforce에 대한 Liferay 커넥터는 [Talend](https://help.talend.com/home) 작업 디자인과 Liferay의 [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) 사용하여 Salesforce에서 Liferay DXP로 데이터를 가져옵니다. 커넥터 [다운로드하고 Liferay 인스턴스에 '.lpkg' 파일로 배포할](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) 있습니다. 이 파일에는 Salesforce 데이터 필드를 Liferay 데이터 필드에 매핑하는 Talend 작업이 포함되어 있습니다.
 
 일단 배포되면 Liferay는 각 Talend 작업에 대한 작업 스케줄러 작업을 자동으로 생성합니다. 그런 다음 각 작업을 수동으로 구성 및 실행하거나 Job Scheduler를 통해 특정 간격으로 실행되도록 예약할 수 있습니다.
 
@@ -31,7 +31,7 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 엔터티가 없
 
 1. [Liferay Marketplace](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) 에서 커넥터를 다운로드하세요.
 
-1. `.lpkg` 파일을 DXP 인스턴스의 [`${liferay.home}/deploy`](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) 폴더에 복사합니다.
+1. `.lpkg` 파일을 DXP 인스턴스의 [Liferay Home](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/liferay-home.html) 폴더에 복사합니다.
 
 1. 애플리케이션 서버 콘솔에 다음 메시지가 나타나는지 확인하십시오.
 
@@ -42,7 +42,7 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 엔터티가 없
 
 1. Liferay DXP 인스턴스를 다시 시작합니다.
 
-1. 다시 시작한 후 *전역 메뉴*(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 *제어판* &rarr;로 이동하여 배포가 성공했는지 확인합니다. *작업 스케줄러*.
+1. 다시 시작한 후 **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** &rarr;로 이동하여 배포가 성공했는지 확인합니다. **작업 스케줄러** .
 
    성공하면 4개의 새로운 작업 스케줄러 작업이 표시됩니다.
 
@@ -117,7 +117,7 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 엔터티가 없
 
 | 컨텍스트 매개변수                   | 묘사                                                                                                                         | 기정값                                                                                                                                                                |
 | :-------------------------- | :------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `channelId`                 | 주문을 가져오는 ID 채널                                                                                                             | UI에서 채널 ID를 복사합니다. _글로벌 메뉴_(![글로벌 메뉴](../../images/icon-applications-menu.png))를 열고 _커머스_ &rarr; _채널_로 이동합니다. 채널을 선택하고 이름 옆에 있는 ID를 복사하세요. |
+| `channelId`                 | 주문을 가져오는 ID 채널                                                                                                             | UI에서 채널 ID를 복사합니다. **글로벌 메뉴**(![글로벌 메뉴](../../images/icon-applications-menu.png))를 열고 **커머스** &rarr; **채널** 로 이동합니다. 채널을 선택하고 이름 옆에 있는 ID를 복사하세요. |
 | `defaultCurrency`           | 주문의 기본 통화                                                                                                                  | `USD`                                                                                                                                                              |
 | `statusMapping_null`        | 주문 상태에 대한 상태 매핑입니다. 다음 구문을 사용해야 합니다: `statusMapping_SalesforceStatusName=LiferayStatusCode(예: statusMapping_Activated=5)`  | `5`                                                                                                                                                                |
 | `paymentStatusMapping_null` | 주문 결제 상태에 대한 상태 매핑입니다. 다음 구문을 사용해야 합니다: `결제 상태 매핑_SalesforceStatusName=LiferayStatusCode(예: PaymentStatusMapping_Payed=2)` | `2`                                                                                                                                                                |
@@ -128,7 +128,7 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 엔터티가 없
 
 ## 작업 스케줄러 작업 실행
 
-구성한 후에는 _지금 실행_을 클릭하여 각 작업을 수동으로 실행하거나 자동으로 실행되도록 예약할 수 있습니다. 자세한 내용은 [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) 참조하십시오.
+구성한 후에는 **지금 실행** 을 클릭하여 각 작업을 수동으로 실행하거나 자동으로 실행되도록 예약할 수 있습니다. 자세한 내용은 [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) 참조하십시오.
 
 ```{important}
 이러한 작업을 실행하면 리소스가 많이 소모되고 플랫폼 성능이 저하될 수 있습니다. 성능에 미치는 영향을 줄이려면 사용량이 가장 많은 시간에는 실행하지 마십시오.
@@ -136,5 +136,5 @@ Salesforce에는 Liferay의 제품 카탈로그에 해당하는 엔터티가 없
 
 ## 관련 주제
 
-* [liferay 마켓플레이스](https://marketplace.liferay.com/p/liferay-connector-to-salesforce) 
-* [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/en/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html) 
+* [liferay 마켓플레이스](https://marketplace.liferay.com/p/liferay-connector-to-salesforce)
+* [작업 스케줄러 사용](https://learn.liferay.com/dxp/latest/ko/building-applications/core-frameworks/job-scheduler-framework/using-job-scheduler.html)

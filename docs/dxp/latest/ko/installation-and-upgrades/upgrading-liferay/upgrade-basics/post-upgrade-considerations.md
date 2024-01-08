@@ -16,11 +16,11 @@ rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfig
 
 모든 Liferay 업그레이드 후에는 검색 인덱스를 다시 인덱싱해야 합니다. 다시 색인을 생성하려면,
 
-1. _전역 메뉴_(![전역 메뉴 아이콘](./post-upgrade-considerations/images/01.png))를 클릭하고 _제어판_ 탭을 엽니다.
+1. **전역 메뉴**(![전역 메뉴 아이콘](./post-upgrade-considerations/images/01.png))를 클릭하고 **제어판** 탭을 엽니다.
 
-1. 구성 섹션에서 _검색_을 클릭하고 _인덱스 작업_ 탭을 선택합니다.
+1. 구성 섹션에서 **검색** 을 클릭하고 **인덱스 작업** 탭을 선택합니다.
 
-1. [동시 또는 전체 재인덱싱 모드](../../../using-search/search-administration-and-tuning/re-indexing-modes.md) 선택한 다음 _모든 검색 인덱스_에 대해 _재인덱싱_을 클릭합니다. 재인덱싱이 실행되고 완료되면 성공 메시지가 표시됩니다.
+1. [동시 또는 전체 재인덱싱 모드](../../../using-search/search-administration-and-tuning/re-indexing-modes.md) 선택한 다음 **모든 검색 인덱스** 에 대해 **재인덱싱** 을 클릭합니다. 재인덱싱이 실행되고 완료되면 성공 메시지가 표시됩니다.
 
 ![You can re-index your search indexes in the Control Panel.](./post-upgrade-considerations/images/01.png)
 
@@ -72,7 +72,7 @@ rm osgi/configs/com.liferay.portal.search.configuration.IndexStatusManagerConfig
 
 불필요하고 쓸모없는 데이터가 있으면 제거할 수 있습니다. 다음은 두 가지 일반적인 오래된 데이터 상황과 이를 제거하는 도구입니다.
 
-* 더 이상 사용되지 않는 Liferay 앱 또는 모듈의 데이터. [Data Cleanup](../reference/data-cleanup.md) 도구가 이를 제거합니다.
+* 더 이상 사용되지 않는 Liferay 앱 또는 모듈의 데이터. [데이터 정리](../reference/data-cleanup.md) 도구가 이를 제거합니다.
 
 * 사용 가능한 Liferay 앱 및 모듈의 오래된 데이터입니다. [데이터 제거](../reference/data-removal.md) 도구가 이를 제거합니다.
 

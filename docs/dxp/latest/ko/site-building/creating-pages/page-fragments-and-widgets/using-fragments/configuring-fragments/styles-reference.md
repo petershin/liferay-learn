@@ -10,15 +10,15 @@
 
 1. 조각을 지원하는 페이지 또는 템플릿 편집을 시작합니다.
 
-1. 사이드바 메뉴에서 _브라우저_ 패널(![브라우저](../../../../../images/icon-hierarchy.png))을 열고 원하는 조각을 선택합니다.
+1. 사이드바 메뉴에서 **브라우저** 패널(![브라우저](../../../../../images/icon-hierarchy.png))을 열고 원하는 조각을 선택합니다.
 
    또는 페이지나 템플릿에서 원하는 조각을 클릭합니다.
 
-1. 페이지 요소 측면 메뉴에서 _스타일_ 탭을 클릭합니다.
+1. 페이지 요소 측면 메뉴에서 **스타일** 탭을 클릭합니다.
 
 ![Access a fragment's Styles settings in the Browser panel of the editing sidebar menu.](./styles-reference/images/01.png)
 
-많은 스타일이 스타일 북에서 지원하는 토큰을 정의했습니다. 토큰 값은 파란색 점 또는 _stylebook의 값_ 아이콘(![Stylebook의 값](../../../../../images/icon-으로 표시되는 스타일 북에서 상속될 수 있습니다. theme.png))가 표시된 값 옆에 표시됩니다. 자세한 내용은 [스타일북 만들기](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 및 [스타일북 토큰 정의](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) 참조하십시오.
+많은 스타일이 스타일 북에서 지원하는 토큰을 정의했습니다. 토큰 값은 파란색 점 또는 **stylebook의 값** 아이콘(![Stylebook의 값](../../../../../images/icon-으로 표시되는 스타일 북에서 상속될 수 있습니다. theme.png))가 표시된 값 옆에 표시됩니다. 자세한 내용은 [스타일북 만들기](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 및 [스타일북 토큰 정의](../../../../site-appearance/style-books/developer-guide/style-book-token-definitions.md) 참조하십시오.
 
 ![Visual representation of inherited token values with blue dots](./styles-reference/images/07.png)
 
@@ -30,11 +30,11 @@ Liferay 7.4 U31+/GA31+의 경우 화면 상단의 장치 버튼을 클릭하거�
 
 {bdg-secondary}`Liferay 7.4 U47+/GA47+용`
 
-구성할 간격 치수에 대한 버튼을 클릭합니다. 내부 버튼은 조각의 패딩을 결정하고 외부 버튼은 여백을 결정합니다. 이 맥락에서 _패딩_은 조각의 프레임과 해당 내용 사이의 공간을 나타내고, _여백_은 조각의 프레임과 주변 컨텍스트의 끝 사이의 공간을 나타냅니다.
+구성할 간격 치수에 대한 버튼을 클릭합니다. 내부 버튼은 조각의 패딩을 결정하고 외부 버튼은 여백을 결정합니다. 이 맥락에서 **패딩** 은 조각의 프레임과 해당 내용 사이의 공간을 나타내고, **여백** 은 조각의 프레임과 주변 컨텍스트의 끝 사이의 공간을 나타냅니다.
 
 ![When you click any of the regions, choose the desired spacing from the list of sizes shown.](./styles-reference/images/02.png)
 
-패딩 또는 여백 버튼을 클릭하면 기존 토큰에서 선택하거나 사용자 정의 값을 입력할 수 있습니다. 미리 정의된 토큰은 스타일 북의 [간격](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) 범주에 있는 번호가 매겨진 Spacer 필드에서 나옵니다. 맞춤 값을 입력하는 경우 해당 단위(예: `px`, `rem`)를 선택하세요. 필드를 초기 값으로 복원하려면 _재설정_ 버튼( ![재설정](../../../../../images/icon-restore.png) )을 클릭하세요.
+패딩 또는 여백 버튼을 클릭하면 기존 토큰에서 선택하거나 사용자 정의 값을 입력할 수 있습니다. 미리 정의된 토큰은 스타일 북의 [간격](../../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md#spacing) 범주에 있는 번호가 매겨진 Spacer 필드에서 나옵니다. 맞춤 값을 입력하는 경우 해당 단위(예: `px`, `rem`)를 선택하세요. 필드를 초기 값으로 복원하려면 **재설정** 버튼( ![재설정](../../../../../images/icon-restore.png) )을 클릭하세요.
 
 ```{note}
 7.4 U46/GA46 및 이전 버전의 경우 스타일 북이 픽셀 이외의 단위를 사용하여 간격 값(예: `rem`)을 정의하는 경우 조각 구성 중에 픽셀로 변환됩니다.
@@ -50,7 +50,7 @@ Liferay 7.4 U31+/GA31+의 경우 화면 상단의 장치 버튼을 클릭하거�
 | 글꼴 두께( ![글꼴 두께](../../../../../images/icon-font-weight.png) )                                                                                                                                                                                                                                                                                                                   | 텍스트의 문자를 얼마나 두껍게 또는 얇게 표시할지 설정합니다.                                                                                                                                                    |
 | 글꼴 크기( ![글꼴 크기](../../../../../images/icon-font-size.png) )                                                                                                                                                                                                                                                                                                                     | 글꼴의 크기를 설정합니다.                                                                                                                                                                        |
 | 텍스트 색상( ![글꼴 색상](../../../../../images/icon-color-circle.png) )                                                                                                                                                                                                                                                                                                                 | 텍스트 색상을 선택합니다. 사용 가능한 색상 팔레트는 조각 개발자가 구성할 수 있습니다. 자세한 내용은 조각 구성 유형 참조 [조각 구성 유형 참조](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) 참조하세요. |
-| 텍스트 정렬 ( ![왼쪽 정렬](../../../../../images/icon-align-left.png) ![가운데 정렬](../../../../../images/icon-align-center.png) ![오른쪽 정렬](../../../../../images/icon-align-right.png) ![정렬](../../../../../images/icon-align-justify.png) ) | 요소의 텍스트 가로 정렬을 지정합니다. _왼쪽_, _가운데_, _오른쪽_ 또는 _양쪽 맞춤_ 중에서 선택하세요.                                                                                                                        |
+| 텍스트 정렬 ( ![왼쪽 정렬](../../../../../images/icon-align-left.png) ![가운데 정렬](../../../../../images/icon-align-center.png) ![오른쪽 정렬](../../../../../images/icon-align-right.png) ![정렬](../../../../../images/icon-align-justify.png) ) | 요소의 텍스트 가로 정렬을 지정합니다. **왼쪽** , **가운데** , **오른쪽** 또는 **양쪽 맞춤** 중에서 선택하세요.                                                                                                                        |
 
 ![Format the fragment's text.](./styles-reference/images/03.png)
 
@@ -61,10 +61,10 @@ Liferay 7.4 U31+/GA31+의 경우 화면 상단의 장치 버튼을 클릭하거�
 | 분야                                                                             | 묘사                                                                                                                                                                                       |
 | :----------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 배경색 ( ![배경색](../../../../../images/icon-color-circle.png) ) | 팔레트에서 배경색을 선택하세요. 사용 가능한 색상 팔레트는 조각 개발자가 구성할 수 있습니다. 자세한 내용은 [조각 구성 유형 참조](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) 참조하세요. |
-| 이미지 소스                                                                         | _직접_으로 설정하면 사용자가 배경 이미지를 업로드할 수 있습니다. _매핑_으로 설정하면 사용자는 문서 및 미디어, 웹 콘텐츠, 블로그 또는 카테고리 중에서 선택할 수 있습니다.                                                                                      |
-| 배경 이미지(_직접_)                                                | 라이브러리에서 이미지를 선택하거나 이미지 URL을 입력하세요.                                                                                                                                                       |
-| 품목(_매핑_)                                                    | 문서 및 미디어, 웹 콘텐츠, 블로그 또는 카테고리의 특정 항목에 배경을 매핑합니다. 선택한 후 _작업_ 버튼(![작업 버튼](../../../../../images/icon-actions.png))을 클릭하여 항목과 해당 권한을 편집하거나 보기 그 사용법.                      |
-| 필드(_매핑_)                                                    | 배경 이미지에 사용되는 항목 필드를 결정합니다.                                                                                                                                                               |
+| 이미지 소스                                                                         | **직접** 으로 설정하면 사용자가 배경 이미지를 업로드할 수 있습니다. **매핑** 으로 설정하면 사용자는 문서 및 미디어, 웹 콘텐츠, 블로그 또는 카테고리 중에서 선택할 수 있습니다.                                                                                      |
+| 배경 이미지(**직접**)                                                | 라이브러리에서 이미지를 선택하거나 이미지 URL을 입력하세요.                                                                                                                                                       |
+| 품목(**매핑**)                                                    | 문서 및 미디어, 웹 콘텐츠, 블로그 또는 카테고리의 특정 항목에 배경을 매핑합니다. 선택한 후 **작업** 버튼(![작업 버튼](../../../../../images/icon-actions.png))을 클릭하여 항목과 해당 권한을 편집하거나 보기 그 사용법.                      |
+| 필드(**매핑**)                                                    | 배경 이미지에 사용되는 항목 필드를 결정합니다.                                                                                                                                                               |
 
 ![Configure the fragment's background.](./styles-reference/images/04.png)
 
@@ -78,7 +78,7 @@ Liferay 7.4 U31+/GA31+의 경우 화면 상단의 장치 버튼을 클릭하거�
 
 | 분야                                                                                   | 묘사                                                                                                                                                                                                                                                                   |
 | :----------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 테두리 너비( ![테두리 너비](../../../../../images/icon-border-width.png) )  | 요소의 네 테두리 너비를 설정합니다. _단위_ 버튼( ![Units](../../../../../images/icon-code.png) )을 클릭하여 테두리 너비 단위(예: `px`, `rem)를 선택합니다. `). _재설정_ 버튼( ![재설정](../../../../../images/icon-restore.png) )을 클릭하여 필드를 초기 값으로 되돌립니다. |
+| 테두리 너비( ![테두리 너비](../../../../../images/icon-border-width.png) )  | 요소의 네 테두리 너비를 설정합니다. **단위** 버튼( ![Units](../../../../../images/icon-code.png) )을 클릭하여 테두리 너비 단위(예: `px`, `rem)를 선택합니다. `). **재설정** 버튼( ![재설정](../../../../../images/icon-restore.png) )을 클릭하여 필드를 초기 값으로 되돌립니다. |
 | 테두리 반경( ![테두리 반경](../../../../../images/icon-corner-radius.png) ) | 요소 모서리의 반경을 정의하고 둥근 모서리를 추가할 수 있습니다.                                                                                                                                                                                                                                 |
 | 테두리 색상( ![테두리 색상](../../../../../images/icon-color-circle.png) )  | 요소의 네 가지 테두리 색상을 설정합니다. 사용 가능한 색상 팔레트는 조각 개발자가 구성할 수 있습니다. 자세한 내용은 [조각 구성 유형 참조](../../../../developer-guide/reference/fragments/fragment-configuration-types-reference.md) 참조하세요.                                                                       |
 

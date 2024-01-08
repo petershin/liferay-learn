@@ -33,7 +33,7 @@
 
 개요 탭에서는 세그먼트의 기준, 관심분야 및 분포를 간략하게 볼 수 있습니다. 각 항목은 자세한 내용으로 연결되거나 해당 탭을 클릭할 수 있습니다.
 
-이 대시보드 보기를 PDF 파일로 다운로드하려면 _보고서 다운로드_를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
+이 대시보드 보기를 PDF 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
 
 ### 세그먼트 멤버십 패널
 
@@ -45,7 +45,7 @@
 
 ![The Segment Membership panel shows a breakdown of your segment for the past 30 days.](./segments/images/02.png)
 
-해당 세그먼트의 알려진 개인 목록을 보려면 패널 하단에 있는 _구성원 보기_ 링크를 클릭하세요. 또는 페이지 상단의 _멤버십_ 탭을 클릭하세요.
+해당 세그먼트의 알려진 개인 목록을 보려면 패널 하단에 있는 **구성원 보기** 링크를 클릭하세요. 또는 페이지 상단의 **멤버십** 탭을 클릭하세요.
 
 ### 세그먼트 구성 패널
 
@@ -69,7 +69,7 @@
 
 ![The Top Interests panel shows a list of most popular topics.](./segments/images/05.png)
 
-관심 주제의 전체 목록을 보려면 패널 하단에 있는 _모든 관심 분야 보기_ 링크를 클릭하세요. 또는 페이지 상단의 _관심분야_ 탭을 클릭하세요.
+관심 주제의 전체 목록을 보려면 패널 하단에 있는 **모든 관심 분야 보기** 링크를 클릭하세요. 또는 페이지 상단의 **관심분야** 탭을 클릭하세요.
 
 ### 분석 패널
 
@@ -77,7 +77,7 @@
 
 ![The Breakdown panel shows the distribution of the segment members based on selected attributes.](./segments/images/06.png)
 
-이 패널에는 최대 10개의 서로 다른 속성이 표시됩니다. 분류 채우기 목록을 보려면 패널 하단에 있는 _분석 탐색_ 링크를 클릭하세요. 또는 페이지 상단의 _배포_ 탭을 클릭하세요.
+이 패널에는 최대 10개의 서로 다른 속성이 표시됩니다. 분류 채우기 목록을 보려면 패널 하단에 있는 **분석 탐색** 링크를 클릭하세요. 또는 페이지 상단의 **배포** 탭을 클릭하세요.
 
 ## 멤버십 탭
 
@@ -105,4 +105,5 @@
 
 ## 관련 정보
 
-[세그먼트를 통한 콘텐츠 개인화](../../optimization/personalizing-content-with-segments.md) [관심분야 이해](../individuals/understanding-interests.md) 
+[세그먼트를 통한 콘텐츠 개인화](../../optimization/personalizing-content-with-segments.md)
+[관심분야 이해](../individuals/understanding-interests.md)

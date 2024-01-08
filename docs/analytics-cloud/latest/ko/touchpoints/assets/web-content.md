@@ -1,14 +1,14 @@
 # 웹 콘텐츠
 
-[웹 콘텐츠 기사](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html) 사이트 방문자에게 정보를 제공하는 중요한 자산입니다. Analytics Cloud는 사이트 사용자가 귀하의 콘텐츠에 어떻게 참여하는지에 대한 중요한 통찰력을 제공합니다.
+[기본 웹 콘텐츠 기사 추가](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/web-content/web-content-articles/adding-a-basic-web-content-article.html) 사이트 방문자에게 정보를 제공하는 중요한 자산입니다. Analytics Cloud는 사이트 사용자가 귀하의 콘텐츠에 어떻게 참여하는지에 대한 중요한 통찰력을 제공합니다.
 
 ![Analytics data for web content can be viewed in a table format.](web-content/images/01.png)
 
-사이트의 웹 콘텐츠 기사 목록이 다양한 측정항목과 함께 표시됩니다. 이 데이터를 CSV 파일로 다운로드하려면 _보고서 다운로드_를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
+사이트의 웹 콘텐츠 기사 목록이 다양한 측정항목과 함께 표시됩니다. 이 데이터를 CSV 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
 
 ## 방문자 행동
 
-자산 세부정보의 개요 탭에는 여러 가지 데이터 프레젠테이션이 표시됩니다. 이 대시보드 보기를 PDF 파일로 다운로드하려면 _보고서 다운로드_를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
+자산 세부정보의 개요 탭에는 여러 가지 데이터 프레젠테이션이 표시됩니다. 이 대시보드 보기를 PDF 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
 
 방문자 행동이라는 첫 번째 차트에는 총 조회수라는 하나의 중요한 측정항목이 포함되어 있습니다.
 
@@ -29,8 +29,8 @@
 
 **조회수:** 알려지거나 익명인 총 고유 방문자의 비율을 나타내는 도넛 차트입니다. 센터에는 총 순 방문자 수가 표시됩니다. 도구 설명에는 해당 섹션의 사용자 수(예: 알려진 사용자 또는 익명 사용자 수)가 표시됩니다.
 
-!!! 참고
-로그인 시 이메일 주소가 Analytics Cloud와 동기화된 사용자 데이터와 일치하면 개인이 알려진 것으로 간주됩니다. 신규 사용자가 사이트에 등록하면 해당 데이터가 Analytics Cloud와 동기화되고 알려진 개인으로 표시되는 데 최대 2시간이 걸릴 수 있습니다.
+!!! note
+    로그인 시 이메일 주소가 Analytics Cloud와 동기화된 사용자 데이터와 일치하면 개인이 알려진 것으로 간주됩니다. 신규 사용자가 사이트에 등록하면 해당 데이터가 Analytics Cloud와 동기화되고 알려진 개인으로 표시되는 데 최대 2시간이 걸릴 수 있습니다.
 
 **분할된 보기:** 하나 이상의 Analytics Cloud 세그먼트에 속하거나 속하지 않는 알려진 개인의 비율을 표시하는 도넛형 차트입니다. 중앙에는 알려진 개인의 총 수가 표시됩니다. 이 차트를 계산하는 데는 알려진 개인만 사용됩니다.
 
@@ -54,7 +54,7 @@
 
 ![Users can also be viewed by device.](web-content/images/05.png)
 
-선택한 기간 동안 상위 8개 웹 브라우저를 표시하는 도넛 차트를 보려면 _브라우저_를 클릭하세요. 해당하는 경우 나머지 웹 브라우저는 9번째 도넛 세그먼트에 집계됩니다.
+선택한 기간 동안 상위 8개 웹 브라우저를 표시하는 도넛 차트를 보려면 **브라우저** 를 클릭하세요. 해당하는 경우 나머지 웹 브라우저는 9번째 도넛 세그먼트에 집계됩니다.
 
 ## 자산 표시 사이트
 

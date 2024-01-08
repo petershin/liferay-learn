@@ -15,7 +15,7 @@ SVG 스프라이트 맵은 각각 고유한 ID를 가진 여러 아이콘이 그
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
     ```{note}
-    지원되는 JDK, 데이터베이스 및 환경에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 확인하세요. 권장되는 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md) 참조하세요.
+    지원되는 JDK, 데이터베이스 및 환경에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 확인하세요. 권장되는 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md) 참조하세요.
     ```
 
 1. 샘플 작업공간을 다운로드하고 압축을 풉니다.
@@ -136,17 +136,17 @@ STARTED liferay-sample-theme-spritemap-1_1.0.0
 
 배포된 클라이언트 확장을 사용하도록 페이지를 구성합니다.
 
-1. 해당 페이지로 이동한 후 상단의 _Edit_ (![편집 아이콘](../../../../images/icon-edit-pencil.png))을 클릭하세요.
+1. 해당 페이지로 이동한 후 상단의 **Edit**(![편집 아이콘](../../../../images/icon-edit-pencil.png))을 클릭하세요.
 
-1. 사이드바에서 페이지 디자인 옵션 메뉴(![페이지 디자인 옵션 아이콘](../../../../images/icon-format.png))로 이동하여 _구성_(![구성 아이콘]을 클릭합니다. (../../../../images/icon-cog3.png)) 메뉴 상단에 있습니다.
+1. 사이드바에서 페이지 디자인 옵션 메뉴(![페이지 디자인 옵션 아이콘](../../../../images/icon-format.png))로 이동하여 **구성**(![구성 아이콘]을 클릭합니다. (../../../../images/icon-cog3.png)) 메뉴 상단에 있습니다.
 
-1. 테마 스프라이트 맵 클라이언트 확장 섹션에서 _추가_(![추가](../../../../images/icon-duplicate.png))를 클릭합니다.
+1. 테마 스프라이트 맵 클라이언트 확장 섹션에서 **추가**(![추가](../../../../images/icon-duplicate.png))를 클릭합니다.
 
-1. 새로 배포된 스프라이트 맵인 _Liferay Sample Theme Spritemap 1_을 선택합니다.
+1. 새로 배포된 스프라이트 맵인 **Liferay Sample Theme Spritemap 1** 을 선택합니다.
 
    ![Select the Liferay Sample Theme Spritemap 1 client extension and click Save.](./using-a-theme-spritemap-client-extension/images/05.gif)
 
-1. 아래로 스크롤하여 _저장_을 클릭하세요.
+1. 아래로 스크롤하여 **저장** 을 클릭하세요.
 
 1. 페이지로 돌아갑니다. 탐색 모음에서 편집 기능을 위해 물고기 아이콘이 연필(![편집 아이콘](../../../../images/icon-edit-pencil.png))을 대체했습니다.
 

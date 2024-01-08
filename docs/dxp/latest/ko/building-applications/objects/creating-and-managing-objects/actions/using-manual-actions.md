@@ -20,7 +20,7 @@
 
 1. 객체 정의의 애플리케이션 페이지로 이동합니다.
 
-1. 원하는 항목에 대해 _작업_ 버튼(![작업 버튼](../../../../images/icon-actions.png))을 클릭하고 독립 실행형 작업을 선택합니다.
+1. 원하는 항목에 대해 **작업** 버튼(![작업 버튼](../../../../images/icon-actions.png))을 클릭하고 독립 실행형 작업을 선택합니다.
 
    이 예에서 작업은 알림 보내기입니다.
 
@@ -34,7 +34,7 @@ Liferay는 게시된 개체 정의에 대한 REST API를 자동으로 생성합�
 
 1. `[서버]:[포트]/o/api`(예: `localhost:8080/o/api`)에서 Liferay의 API 탐색기를 엽니다.
 
-1. _REST 애플리케이션_을 클릭하고 원하는 개체 정의를 선택합니다. 사용자 정의 개체는 `c/[pluralobjectlabel]` 명명 패턴(예: `c/tickets`)을 사용합니다.
+1. **REST 애플리케이션** 을 클릭하고 원하는 개체 정의를 선택합니다. 사용자 정의 개체는 `c/[pluralobjectlabel]` 명명 패턴(예: `c/tickets`)을 사용합니다.
 
 각 독립 실행형 작업에 대해 Liferay는 두 개의 PUT API를 생성합니다. 하나는 항목 ID를 사용하고 다른 하나는 항목의 외부 참조 코드(ERC)를 사용합니다.
 
@@ -63,13 +63,13 @@ Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `
 
 1. [페이지 만들기](../../../../site-building/creating-pages.md) .
 
-1. 레이아웃에 _버튼_ 조각을 추가하세요. 콘텐츠 페이지를 편집하는 방법을 알아보려면 [콘텐츠 페이지에 요소 추가](../../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) 참조하세요.
+1. 레이아웃에 **버튼** 조각을 추가하세요. 콘텐츠 페이지를 편집하는 방법을 알아보려면 [콘텐츠 페이지에 요소 추가](../../../../site-building/creating-pages/using-content-pages/adding-elements-to-content-pages.md) 참조하세요.
 
-1. 버튼을 한 번 클릭해 보세요. 버튼 옵션에서 유형으로 _작업_을 선택하세요. 이제 버튼에 작업을 매핑할 수 있습니다.
+1. 버튼을 한 번 클릭해 보세요. 버튼 옵션에서 유형으로 **작업** 을 선택하세요. 이제 버튼에 작업을 매핑할 수 있습니다.
 
 1. 버튼을 두 번째로 클릭하세요. 오른쪽에 작업 메뉴가 열립니다.
 
-1. 매핑 탭에서 _항목_ 필드 또는 옆에 있는 _항목 선택_ 아이콘(![항목 선택](../../../../images/icon-add-app.png))을 클릭합니다. 필드.
+1. 매핑 탭에서 **항목** 필드 또는 옆에 있는 **항목 선택** 아이콘(![항목 선택](../../../../images/icon-add-app.png))을 클릭합니다. 필드.
 
 1. 상단 목록에서 개체를 선택합니다.
 
@@ -79,7 +79,7 @@ Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `
 
    ![Select a specific object entry](./using-manual-actions/images/05.png)
 
-1. 버튼 라벨에 매핑할 _필드_를 선택하세요.
+1. 버튼 라벨에 매핑할 **필드** 를 선택하세요.
 
 1. 작업 탭에서 특정 개체 항목을 선택합니다.
 
@@ -101,9 +101,9 @@ Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `
 
    ![Chose your object as the content type when creating a display page template.](./using-manual-actions/images/06.png)
 
-1. 레이아웃에 _버튼_ 조각을 추가하세요.
+1. 레이아웃에 **버튼** 조각을 추가하세요.
 
-1. 버튼을 한 번 클릭해 보세요. 버튼 옵션에서 유형으로 _작업_을 선택하세요.
+1. 버튼을 한 번 클릭해 보세요. 버튼 옵션에서 유형으로 **작업** 을 선택하세요.
 
    이 구성을 사용하면 작업을 버튼에 매핑할 수 있습니다.
 
@@ -115,7 +115,7 @@ Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `
    특정 콘텐츠를 선택해야 하는 경우 *소스* 필드를 클릭하고 *특정 콘텐츠*를 선택한 다음 특정 *항목*을 선택합니다.
    ```
 
-1. 버튼 라벨에 매핑할 _필드_를 선택하세요.
+1. 버튼 라벨에 매핑할 **필드** 를 선택하세요.
 
 1. 작업 탭에서 사용자가 버튼을 클릭하면 트리거할 작업을 선택합니다.
 
@@ -129,13 +129,13 @@ Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `
 
 두 결과 모두에 대해 네 가지 옵션을 사용할 수 있습니다.
 
-1. **없음**: 작업이 수행된 후 아무 일도 일어나지 않습니다.
+1. **없음** : 작업이 수행된 후 아무 일도 일어나지 않습니다.
 
-1. **알림 표시**: 사용자에게 알립니다. 사용자 정의 성공/오류 메시지를 작성하고, 알림을 미리 보고, 작업이 트리거된 후 페이지를 다시 로드하도록 구성할 수 있습니다.
+1. **알림 표시** : 사용자에게 알립니다. 사용자 정의 성공/오류 메시지를 작성하고, 알림을 미리 보고, 작업이 트리거된 후 페이지를 다시 로드하도록 구성할 수 있습니다.
 
-1. **페이지로 이동**: 사이트의 성공/오류 페이지로 이동합니다.
+1. **페이지로 이동** : 사이트의 성공/오류 페이지로 이동합니다.
 
-1. **외부 URL로 이동**: 외부 URL로 이동합니다.
+1. **외부 URL로 이동** : 외부 URL로 이동합니다.
 
 ![You can choose what happens after an action is performed when the user clicks on a button or fragment mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/07.png)
 
@@ -145,7 +145,7 @@ Liferay의 기본 버튼 조각이 사용 사례를 만족하지 않는 경우 `
 
 Liferay는 독립 실행형 작업을 트리거할 수 있는 역할을 관리하기 위한 권한을 자동으로 생성합니다. 각 권한은 `action. [actionName]` 명명 패턴(예: `action.sendReminder`). 개체 권한에 대한 자세한 내용은 [권한 프레임워크 통합](../../understanding-object-integrations/permissions-framework-integration.md) 을 참조하세요.
 
-![Standalone permissions use the action.[actionName] naming pattern.](./using-manual-actions/images/08.png)
+![Standalone permissions use the action. [actionName] naming pattern.](./using-manual-actions/images/08.png)
 
 ## 관련 주제
 

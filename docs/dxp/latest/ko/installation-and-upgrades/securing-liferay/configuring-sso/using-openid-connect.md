@@ -103,7 +103,7 @@ com.liferay.portal.security.sso.openid.connect.internal.configuration.OpenIdConn
 
 ## OpenID Connect 인증 활성화
 
-1. *제어판* &rarr;로 이동합니다. *구성* &rarr; *인스턴스 설정* &rarr; *보안* &rarr; *SSO*를 선택하고 *가상 인스턴스 범위*에서 ***OpenID Connect***를 선택합니다.
+1. **제어판** &rarr;로 이동합니다. **구성** &rarr; **인스턴스 설정** &rarr; **보안** &rarr; **SSO** 를 선택하고 **가상 인스턴스 범위** 에서 ***OpenID Connect***를 선택합니다.
 
     ![인스턴스 설정에서 OpenID Connect 인증 활성화](using-openid-connect/images/02.png)
 

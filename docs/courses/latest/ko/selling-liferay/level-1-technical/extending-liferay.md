@@ -28,8 +28,8 @@ Liferay DXP는 모든 기능을 갖춘 디지털 경험 플랫폼이며 고객�
 이 모듈에서는 고객 요구 사항을 충족하기 위해 Liferay를 확장, 구성 및 사용자 정의하는 데 사용할 수 있는 주요 접근 방식을 간략하게 설명합니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay)를 시청하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf)를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-7-extending-liferay) 를 시청하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-7-extending-liferay-pdf) 를 다운로드하세요.
 ```
 
 ## 일부 전통적인 사용자 정의
@@ -65,11 +65,11 @@ Liferay DXP를 확장하는 한 가지 방법은 기본적으로 제공되는 �
 
 ### 단편
 
-[Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments)은 사용할 수 있는 빌딩 블록 중 하나입니다. Liferay DXP에서 풍부한 페이지를 생성합니다. 조각은 콘텐츠 작성자 및 페이지 작성자가 사용하도록 고안되었습니다.
+[Fragments](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/using-fragments) 은 사용할 수 있는 빌딩 블록 중 하나입니다. Liferay DXP에서 풍부한 페이지를 생성합니다. 조각은 콘텐츠 작성자 및 페이지 작성자가 사용하도록 고안되었습니다.
 
 ![Liferay's page builder provides page creators with a wide range of fragments which are used to construct individual pages.](./extending-liferay/images/02.png)
 
-Liferay의 드래그 앤 드롭 인터페이스 덕분에 페이지에 조각을 추가하고 추가한 후 구성하는 것은 기술적 전문성에 관계없이 누구나 수행할 수 있는 간단한 프로세스입니다. 사용자는 사전 구성된 조각 세트를 [조각 구성](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/)으로 저장할 수도 있습니다. using-fragments/saving-fragment-compositions), 유사한 페이지를 생성하는 프로세스 속도를 높이기 위해 다른 페이지에 추가할 수 있습니다.
+Liferay의 드래그 앤 드롭 인터페이스 덕분에 페이지에 조각을 추가하고 추가한 후 구성하는 것은 기술적 전문성에 관계없이 누구나 수행할 수 있는 간단한 프로세스입니다. 사용자는 사전 구성된 조각 세트를 [조각 구성](https://learn.liferay.com/web/guest/w/dxp/site-building/creating-pages/page-fragments-and-widgets/) 으로 저장할 수도 있습니다. using-fragments/saving-fragment-compositions), 유사한 페이지를 생성하는 프로세스 속도를 높이기 위해 다른 페이지에 추가할 수 있습니다.
 
 **페이지 조각 개발 중**
 
@@ -89,13 +89,13 @@ Liferay의 드래그 앤 드롭 인터페이스 덕분에 페이지에 조각을
 
 ### 주제
 
-[Themes](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/themes/introduction-to-themes)은 Liferay 사이트의 모양과 느낌을 사용자 정의하는 유연한 방법을 제공합니다. 테마를 사용하려면 DXP에 코드를 배포해야 하므로 Liferay Experience Cloud SaaS 고객에게는 지원되지 않습니다.
+[Themes](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/themes/introduction-to-themes) 은 Liferay 사이트의 모양과 느낌을 사용자 정의하는 유연한 방법을 제공합니다. 테마를 사용하려면 DXP에 코드를 배포해야 하므로 Liferay Experience Cloud SaaS 고객에게는 지원되지 않습니다.
 
 ### 스타일북
 
 ![Stylebooks are sets of visual standards which apply to a site, such as colors, fonts, and spacing.](./extending-liferay/images/05.png)
 
-[스타일 북](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance)은 색상, 글꼴, 간격 등 사이트에 적용되는 시각적 표준 세트입니다. 이를 통해 각 페이지에서 일관된 경험을 유지하면서 모든 페이지의 레이아웃을 독립적으로 디자인할 수 있습니다.
+[스타일 북](https://learn.liferay.com/en/w/dxp/site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance) 은 색상, 글꼴, 간격 등 사이트에 적용되는 시각적 표준 세트입니다. 이를 통해 각 페이지에서 일관된 경험을 유지하면서 모든 페이지의 레이아웃을 독립적으로 디자인할 수 있습니다.
 
 ### 템플렛
 
@@ -124,7 +124,7 @@ Liferay의 드래그 앤 드롭 인터페이스 덕분에 페이지에 조각을
 
 ### 시스템 설정
 
-[시스템 설정](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/system-settings)을 통해 관리자는 Liferay 포털에 대한 전역 설정을 구성할 수 있습니다. 사이트, 메일 또는 검색 설정 등이 포함됩니다.
+[시스템 설정](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/system-settings) 을 통해 관리자는 Liferay 포털에 대한 전역 설정을 구성할 수 있습니다. 사이트, 메일 또는 검색 설정 등이 포함됩니다.
 
 ```{note}
 Liferay DXP가 Liferay Experience Cloud SaaS 제품을 통해 배포되면 시스템 설정을 사용할 수 없습니다.
@@ -136,7 +136,7 @@ Liferay DXP가 Liferay Experience Cloud SaaS 제품을 통해 배포되면 시�
 
 ### 가상 인스턴스
 
-[가상 인스턴스](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances)는 Liferay 리소스를 논리적으로 분리한 것으로, 이를 통해 관리자는 내부에 여러 개의 독립적인 사이트를 만들 수 있습니다. 단일 Liferay 설치. 각 가상 인스턴스에는 완전히 별도의 데이터와 구성이 있습니다. 각각은 고유한 도메인 이름을 통해 액세스되며 모든 의도와 목적을 위해 추가 인스턴스와 설치를 공유하는 별도의 Liferay 기반 구현입니다.
+[가상 인스턴스](https://learn.liferay.com/w/dxp/system-administration/configuring-liferay/virtual-instances) 는 Liferay 리소스를 논리적으로 분리한 것으로, 이를 통해 관리자는 내부에 여러 개의 독립적인 사이트를 만들 수 있습니다. 단일 Liferay 설치. 각 가상 인스턴스에는 완전히 별도의 데이터와 구성이 있습니다. 각각은 고유한 도메인 이름을 통해 액세스되며 모든 의도와 목적을 위해 추가 인스턴스와 설치를 공유하는 별도의 Liferay 기반 구현입니다.
 
 ```{note}
 Liferay DXP가 Liferay Experience Cloud SaaS 서비스를 통해 배포되면 고객은 가상 인스턴스를 생성할 수 없습니다. 사실상 그들의 환경은 다른 고객과 공유되는 공유 클러스터 내의 가상 인스턴스입니다. 이 가상 인스턴스 내에서 선택한 구독 계획에 제공된 한도까지 추가 사이트를 생성할 수 있습니다.

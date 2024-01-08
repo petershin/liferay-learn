@@ -2,7 +2,7 @@
 
 {bdg-secondary}`Liferay DXP 7.4 U10+ 또는 Liferay Portal 7.4 GA14+`
 
-애플리케이션을 업그레이드하려면 데이터베이스 테이블을 변경해야 할 수도 있습니다. Liferay의 업그레이드 프레임워크를 사용하면 이러한 변경을 쉽게 수행할 수 있습니다. 이 업그레이드 프로세스를 보려면 샘플 프로젝트를 배포하세요. 이전 버전의 Liferay에 대해서는 [모듈에 대한 업그레이드 프로세스 생성](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 참조하십시오.
+애플리케이션을 업그레이드하려면 데이터베이스 테이블을 변경해야 할 수도 있습니다. Liferay의 업그레이드 프레임워크를 사용하면 이러한 변경을 쉽게 수행할 수 있습니다. 이 업그레이드 프로세스를 보려면 샘플 프로젝트를 배포하세요. 이전 버전의 Liferay에 대해서는 [모듈에 대한 업그레이드 프로세스 생성](https://help.liferay.com/hc/ko/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 참조하십시오.
 
 ## 버전 1.0.0 배포
 
@@ -62,7 +62,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. Liferay에 로그인하고 _Control Panel_ &rarr; _Gogo Shell_에서 Gogo Shell 콘솔로 이동합니다.
+1. Liferay에 로그인하고 **Control Panel** &rarr; **Gogo Shell** 에서 Gogo Shell 콘솔로 이동합니다.
 
 1. 'upgrade:list com.acme.p5d2.service' 명령을 입력하여 2.0.0 업그레이드가 가능한지 확인하세요.
 
@@ -121,7 +121,7 @@
 | alterTableDropColumn | 열 제거        |
 
 ```{warning}
-`alterTableDropColumn`은 MariaDB에서 작동하지 않습니다. 이는 [알려진 버그](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b)입니다. 대신 [이전 가이드라인](https://help.liferay.com/hc/en-us/articles/360031165751-Creating-Upgrade-Processes-for-Modules)을 따르세요.
+`alterTableDropColumn`은 MariaDB에서 작동하지 않습니다. 이는 [알려진 버그](https://github.com/liferay-upgrades/liferay-portal/pull/263/commits/9a59708c40e19b209d99eeee2f7e68a815d5cd1b) 입니다. 대신 [이전 가이드라인](https://help.liferay.com/hc/ko/articles/360031165751-Creating-Upgrade-Processes-for-Modules) 을 따르세요.
 ```
 
 변경한 후 Service Builder를 다시 실행하십시오. 이제 업그레이드를 구축하고 배포할 준비가 되었습니다.

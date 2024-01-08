@@ -30,7 +30,7 @@ OpenID Connect는 간단한 구성으로 사용할 수 있으므로 개발 작�
 
 많은 실제 사용 사례에서 이는 완벽하게 관련됩니다. 사용자가 공급자 목록에서 선택하지만 잠재 고객의 요구 사항이 모든 사용자가 **단일** 공급자를 사용하여 인증하는 것이라면 기본 UI가 설정되지 않을 수 있습니다. 올바른 기대.
 
-Liferay의 영업 엔지니어 중 한 명이 프로세스를 원활하게 만드는 버튼을 제공하기 위해 간단한 사용자 정의 조각을 만들었습니다. 이 조각의 소스 코드는 Github [here](https://github.com/lgdd/openid-connect-single-button)에서 사용할 수 있습니다.
+Liferay의 영업 엔지니어 중 한 명이 프로세스를 원활하게 만드는 버튼을 제공하기 위해 간단한 사용자 정의 조각을 만들었습니다. 이 조각의 소스 코드는 Github [here](https://github.com/lgdd/openid-connect-single-button) 에서 사용할 수 있습니다.
 
 ## SAML, SSO, IDMS
 

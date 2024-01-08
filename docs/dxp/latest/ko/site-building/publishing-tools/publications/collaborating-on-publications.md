@@ -12,13 +12,13 @@
 
 출판물에 대한 공동 작업을 위해 사용자를 초대하려면 다음 단계를 따르십시오.
 
-1. _전역 메뉴_(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 _응용 프로그램_ 탭을 클릭한 다음 _출판_으로 이동합니다.
+1. **전역 메뉴**(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 **응용 프로그램** 탭을 클릭한 다음 **출판** 으로 이동합니다.
 
-1. 원하는 게시에 대해 _작업_ 버튼(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 _사용자 초대_를 선택합니다.
+1. 원하는 게시에 대해 **작업** 버튼(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 **사용자 초대** 를 선택합니다.
 
    ![Click the publication's Actions button and select Invite Users.](./collaborating-on-publications/images/01.png)
 
-   또는 출판물의 변경 사항 검토를 시작하고 _사용자 초대_(![사용자 초대](../../../images/icon-plus.png))를 클릭합니다.
+   또는 출판물의 변경 사항 검토를 시작하고 **사용자 초대**(![사용자 초대](../../../images/icon-plus.png))를 클릭합니다.
 
    ![In publication Changes page, click the Invite Users button.](./collaborating-on-publications/images/02.png)
 
@@ -26,17 +26,17 @@
    이는 게시된 출판물에 사용자를 초대하는 유일한 방법입니다.
    ```
 
-1. 드롭다운 메뉴를 사용하여 _보기_, _편집_, _게시_ 및 _초대_ 권한을 부여하세요.
+1. 드롭다운 메뉴를 사용하여 **보기** , **편집** , **게시** 및 **초대** 권한을 부여하세요.
 
    ![Use the drop-down menu to determine the users permissions for the publication.](./collaborating-on-publications/images/03.png)
 
-1. 원하는 _사용자_를 검색하고 선택합니다.
+1. 원하는 **사용자** 를 검색하고 선택합니다.
 
    각 사용자에게는 선택한 권한이 할당되지만 초대장을 보내기 전후에 권한을 편집할 수 있습니다.
 
    ![Search for and select the desired users.](./collaborating-on-publications/images/04.png)
 
-1. 발행물에 사용자를 추가하려면 _보내기_를 클릭하세요.
+1. 발행물에 사용자를 추가하려면 **보내기** 를 클릭하세요.
 
 초대된 사용자는 알림을 받고 게시에 대한 공동 작업을 시작할 수 있습니다.
 
@@ -44,13 +44,13 @@
 
 공동 작업 사용자는 변경 사항 페이지를 통해 발행물에 의견을 추가할 수 있습니다. 각 댓글의 범위는 해당 댓글이 작성된 게시물로 제한됩니다.
 
-1. _전역 메뉴_( ![전역 메뉴](../../../images/icon-applications-menu.png) )를 열고 _응용 프로그램_ 탭을 클릭한 다음 _출판_으로 이동합니다.
+1. **전역 메뉴**( ![전역 메뉴](../../../images/icon-applications-menu.png) )를 열고 **응용 프로그램** 탭을 클릭한 다음 **출판** 으로 이동합니다.
 
-1. 원하는 _출판물_을 클릭하세요.
+1. 원하는 **출판물** 을 클릭하세요.
 
-1. _댓글_ 버튼( ![댓글 버튼](../../../images/icon-comments-w.png) )을 클릭합니다.
+1. **댓글** 버튼( ![댓글 버튼](../../../images/icon-comments-w.png) )을 클릭합니다.
 
-1. 채팅 창에 댓글을 입력하고 _답글_을 클릭하세요.
+1. 채팅 창에 댓글을 입력하고 **답글** 을 클릭하세요.
 
    ![Click the Comments button, enter your comment, and click Reply.](./collaborating-on-publications/images/05.png)
 
@@ -60,27 +60,27 @@
 
 간행물에서 공동작업자를 제거하려면 다음 단계를 따르세요.
 
-1. 원하는 게시에 대한 _사용자 초대_ 모달 창을 엽니다.
+1. 원하는 게시에 대한 **사용자 초대** 모달 창을 엽니다.
 
-1. 원하는 사용자의 드롭다운 메뉴를 클릭하고 _제거_를 선택합니다.
+1. 원하는 사용자의 드롭다운 메뉴를 클릭하고 **제거** 를 선택합니다.
 
    ![Open the permissions drop-down menu and select Remove.](./collaborating-on-publications/images/06.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 링크를 통해 출판물 공유
 
-{bdg-link-primary}`[베타 기능](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags)`
+{bdg-link-primary}` [베타 기능](../../../system-administration/configuring-liferay/feature-flags.md#beta-feature-flags) `
 
 {bdg-secondary}`liferay 7.4 2023.Q3+/GA98+`
 
 사이트 사용자가 아닌 사람들과 출판물 변경 사항을 공유해야 하는 경우 출판물에 대한 링크 공유를 활성화할 수 있습니다.
 
-1. 원하는 게시에 대해 _작업_(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 _사용자 초대_를 선택한 다음 _링크 공유_ 탭으로 이동합니다.
+1. 원하는 게시에 대해 **작업**(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 **사용자 초대** 를 선택한 다음 **링크 공유** 탭으로 이동합니다.
 
    ![Select Invite Users and go to the Share Link tab.](./collaborating-on-publications/images/07.png)
 
-   또는 출판물의 변경 사항 검토를 시작하고 _공유_(![공유 버튼](../../../images/icon-link.png))를 클릭하세요.
+   또는 출판물의 변경 사항 검토를 시작하고 **공유**(![공유 버튼](../../../images/icon-link.png))를 클릭하세요.
 
    ![Click the Share button.](./collaborating-on-publications/images/08.png)
 

@@ -1,16 +1,16 @@
 # 블로그
 
-[블로그 항목](https://learn.liferay.com/dxp/latest/en/content-authoring-and-management/blogs/getting-started-with-blogs.html) 은 웹사이트의 중요한 콘텐츠입니다. 그들은 새로운 블로그 게시물을 보기 위해 다시 돌아오고 토론에 참여하는 독자들을 끌어들입니다.
+[블로그 시작하기](https://learn.liferay.com/dxp/latest/ko/content-authoring-and-management/blogs/getting-started-with-blogs.html) 은 웹사이트의 중요한 콘텐츠입니다. 그들은 새로운 블로그 게시물을 보기 위해 다시 돌아오고 토론에 참여하는 독자들을 끌어들입니다.
 
 Analytics Cloud는 독자가 블로그 게시물에 얼마나 참여하고 있는지에 대한 중요한 통찰력을 제공합니다.
 
 ![Analytics data for blog entries can be viewed in a table format.](blogs/images/01.png)
 
-사이트의 블로그 게시물 목록이 다양한 측정항목과 함께 표시됩니다. 이 데이터를 CSV 파일로 다운로드하려면 _보고서 다운로드_를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
+사이트의 블로그 게시물 목록이 다양한 측정항목과 함께 표시됩니다. 이 데이터를 CSV 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
 
 ## 방문자 행동
 
-더 자세한 분석을 보려면 블로그 게시물의 이름을 클릭하세요. 자산 세부정보의 개요 탭에는 여러 가지 데이터 프레젠테이션이 표시됩니다. 이 대시보드 보기를 PDF 파일로 다운로드하려면 _보고서 다운로드_를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
+더 자세한 분석을 보려면 블로그 게시물의 이름을 클릭하세요. 자산 세부정보의 개요 탭에는 여러 가지 데이터 프레젠테이션이 표시됩니다. 이 대시보드 보기를 PDF 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
 
 방문자 행동이라는 첫 번째 차트에는 다섯 가지 중요한 측정항목이 포함되어 있습니다.
 
@@ -76,11 +76,11 @@ Analytics Cloud는 독자가 블로그 게시물에 얼마나 참여하고 있�
 
 ## 기술별 견해
 
-기본 _Devices_ 탭에서 운영 체제별(장치 유형별로 그룹화) 페이지 보기의 누적 막대 그래프를 봅니다.
+기본 **Devices** 탭에서 운영 체제별(장치 유형별로 그룹화) 페이지 보기의 누적 막대 그래프를 봅니다.
 
 ![Users can also be viewed by device.](blogs/images/05.png)
 
-선택한 기간 동안 상위 8개 웹 브라우저를 표시하는 도넛 차트를 보려면 _브라우저_를 클릭하세요. 해당하는 경우 나머지 웹 브라우저는 9번째 도넛 세그먼트에 집계됩니다.
+선택한 기간 동안 상위 8개 웹 브라우저를 표시하는 도넛 차트를 보려면 **브라우저** 를 클릭하세요. 해당하는 경우 나머지 웹 브라우저는 9번째 도넛 세그먼트에 집계됩니다.
 
 ## 자산 표시 사이트
 

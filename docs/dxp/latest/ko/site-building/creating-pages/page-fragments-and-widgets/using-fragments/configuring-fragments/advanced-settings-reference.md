@@ -12,11 +12,11 @@ Framgent의 고급 설정을 구성하려면 해당 페이지에 대한 업데�
 
 1. 조각을 지원하는 페이지 또는 템플릿 편집을 시작합니다.
 
-1. _브라우저_ 측면 패널(![브라우저](../../../../../images/icon-hierarchy.png))을 열고 _페이지 요소_ 탭으로 이동한 다음 원하는 조각.
+1. **브라우저** 측면 패널(![브라우저](../../../../../images/icon-hierarchy.png))을 열고 **페이지 요소** 탭으로 이동한 다음 원하는 조각.
 
    또는 페이지나 템플릿에서 원하는 조각을 클릭합니다.
 
-1. 페이지 요소 측면 메뉴에서 _고급_ 탭을 클릭합니다.
+1. 페이지 요소 측면 메뉴에서 **고급** 탭을 클릭합니다.
 
 ![Access a fragment's advanced settings in the Page Elements side menu.](./advanced-settings-reference/images/01.png)
 
@@ -34,7 +34,7 @@ Framgent의 고급 설정을 구성하려면 해당 페이지에 대한 업데�
 
 {bdg-secondary}`7.4 U34+/GA34+ 사용 가능`
 
-_사용자 정의 CSS_ 텍스트 상자를 사용하여 CSS를 조각에 추가합니다. 기본적으로 이 텍스트 상자에는 다음 자리 표시자가 포함되어 있습니다.
+**사용자 정의 CSS** 텍스트 상자를 사용하여 CSS를 조각에 추가합니다. 기본적으로 이 텍스트 상자에는 다음 자리 표시자가 포함되어 있습니다.
 
 ```css
 .[$FRAGMENT_CLASS$] {
@@ -72,7 +72,7 @@ _사용자 정의 CSS_ 텍스트 상자를 사용하여 CSS를 조각에 추가�
 
 ### CSS 클래스
 
-*CSS 클래스* 필드를 사용하여 [사용자 정의 CSS](#custom-css)에서 사용할 클래스를 추가합니다. 여러 클래스를 추가하는 경우 각 클래스를 공백, 쉼표 또는 줄바꿈으로 구분하세요. 동일한 페이지의 다른 조각에 이러한 클래스를 사용할 수 있습니다. 입력하는 동안 기존 수업에 대한 제안이 표시됩니다.
+**CSS 클래스** 필드를 사용하여 [사용자 정의 CSS](#custom-css) 에서 사용할 클래스를 추가합니다. 여러 클래스를 추가하는 경우 각 클래스를 공백, 쉼표 또는 줄바꿈으로 구분하세요. 동일한 페이지의 다른 조각에 이러한 클래스를 사용할 수 있습니다. 입력하는 동안 기존 수업에 대한 제안이 표시됩니다.
 
 ![Entering custom CSS classes in this field makes them appear as suggestions in the advanced settings for other fragments on the same page.](./advanced-settings-reference/images/04.png)
 

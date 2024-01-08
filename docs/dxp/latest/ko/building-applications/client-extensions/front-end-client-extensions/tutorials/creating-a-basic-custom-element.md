@@ -10,7 +10,7 @@
 
 여기에서는 Liferay의 [`create_custom_element.sh`](https://raw.githubusercontent.com/liferay/liferay-portal/master/tools/create_custom_element.sh) 스크립트를 사용하여 기본 원격 애플리케이션을 생성합니다. 애플리케이션이 생성된 후 해당 코드를 컴파일하고 `.js` 및 `.css` 파일을 호스팅합니다. 호스팅되면 각 파일의 URL을 복사하여 이를 사용하여 맞춤 요소를 만듭니다. 마지막으로 애플리케이션을 사이트 페이지에 위젯으로 배포할 수 있습니다.
 
-![Use the create_custom_element.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
+![Use the create **custom** element.sh script to create a simple React application.](./creating-a-basic-custom-element/images/01.png)
 
 ```{note}
 사용자 정의 요소 클라이언트 확장은 구축, 패키지 또는 호스팅 방법에 관계없이 모든 기술을 사용할 수 있습니다. 이 튜토리얼에서는 React를 사용하는 샘플 사용자 정의 요소 애플리케이션만 제공합니다.
@@ -123,21 +123,21 @@ gzip 이후 파일 크기:
 
 그런 다음 다음 단계를 따르세요.
 
-1. _사이트 메뉴_(![사이트 메뉴](../../../../images/icon-product-menu.png))를 열고 _콘텐츠 및 데이터_를 확장한 다음 _문서 및 미디어_.
+1. **사이트 메뉴**(![사이트 메뉴](../../../../images/icon-product-menu.png))를 열고 **콘텐츠 및 데이터** 를 확장한 다음 **문서 및 미디어** .
 
-1. _추가_(![추가 버튼](../../../../images/icon-add.png))를 클릭하고 _여러 파일 업로드_를 선택합니다.
+1. **추가**(![추가 버튼](../../../../images/icon-add.png))를 클릭하고 **여러 파일 업로드** 를 선택합니다.
 
 1. `.js` 및 `.css` 파일을 업로드 영역으로 끌어다 놓습니다.
 
-   또는 _파일 선택_을 사용하여 업로드하세요.
+   또는 **파일 선택** 을 사용하여 업로드하세요.
 
    ![Upload the .js and .css files to the Liferay Document Library.](./creating-a-basic-custom-element/images/02.png)
 
-1. _게시_를 클릭하세요.
+1. **게시** 를 클릭하세요.
 
 그러면 문서 라이브러리에 파일이 추가되고 원격 애플리케이션을 만드는 데 사용할 고유한 URL이 할당됩니다.
 
-각 파일의 URL을 보려면 _정보_ 아이콘(![정보 아이콘](../../../../images/icon-information.png))을 클릭하고 파일을 선택하세요. 각 파일의 _WebDAV URL_을 복사하고 다음 단계에서 사용할 수 있도록 저장하세요.
+각 파일의 URL을 보려면 **정보** 아이콘(![정보 아이콘](../../../../images/icon-information.png))을 클릭하고 파일을 선택하세요. 각 파일의 **WebDAV URL** 을 복사하고 다음 단계에서 사용할 수 있도록 저장하세요.
 
 ![Copy each file's WebDAV URL.](./creating-a-basic-custom-element/images/03.png)
 
@@ -148,9 +148,9 @@ gzip 이후 파일 크기:
 
 ## Liferay에 애플리케이션 등록
 
-1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _응용 프로그램_ 탭을 클릭한 후 \*원격 앱으로 이동합니다. \*.
+1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **응용 프로그램** 탭을 클릭한 후 \ **원격 앱으로 이동합니다. \** .
 
-1. _추가_(![추가 버튼](../../../../images/icon-add.png))를 클릭합니다.
+1. **추가**(![추가 버튼](../../../../images/icon-add.png))를 클릭합니다.
 
 1. 다음 값을 입력하세요.
 
@@ -163,7 +163,7 @@ gzip 이후 파일 크기:
    | CSS URL    | `.css` 파일의 WebDAV URL |
    | 포틀릿 분류 이름  | 원격 앱                  |
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 일단 저장되면 Liferay는 H5V7-Custom-Element라는 위젯을 생성합니다. 이 위젯은 다른 페이지 위젯처럼 사이트 페이지에 배포할 수 있습니다. 이 위젯은 선택한 포틀릿 카테고리 이름 아래에 나타납니다.
 
@@ -171,7 +171,7 @@ gzip 이후 파일 크기:
 
 ## 관련 주제
 
-* [프런트엔드 클라이언트 확장](../../front-end-client-extensions.md) 
-* [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md) 
-* [사용자 정의 요소와 함께 경로 사용](./using-routes-with-custom-elements.md) 
-* [원격 애플리케이션 UI 참조](../client-extensions-ui-reference.md) 
+* [프런트엔드 클라이언트 확장](../../front-end-client-extensions.md)
+* [사용자 정의 요소 및 IFrame 클라이언트 확장 이해](../understanding-custom-element-and-iframe-client-extensions.md)
+* [사용자 정의 요소와 함께 경로 사용](./using-routes-with-custom-elements.md)
+* [원격 애플리케이션 UI 참조](../client-extensions-ui-reference.md)

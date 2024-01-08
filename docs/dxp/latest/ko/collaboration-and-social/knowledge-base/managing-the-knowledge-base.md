@@ -8,9 +8,9 @@
 
 ## 폴더 추가
 
-1. _사이트 메뉴_(![사이트 메뉴](../../images/icon-menu.png))를 열고 _콘텐츠 및 데이터_ &rarr; _기술 자료_로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../images/icon-menu.png))를 열고 **콘텐츠 및 데이터** &rarr; **기술 자료** 로 이동합니다.
 
-1. 폴더 및 아티클 섹션(![폴더 및 아티클](../../images/icon-pages-tree.png))에서 _추가_(![추가 버튼](../../images)를 클릭합니다. /icon-add.png)) _폴더_를 선택합니다.
+1. 폴더 및 아티클 섹션(![폴더 및 아티클](../../images/icon-pages-tree.png))에서 **추가**(![추가 버튼](../../images)를 클릭합니다. /icon-add.png))**폴더** 를 선택합니다.
 
 1. 이름과 설명을 입력합니다.
 
@@ -18,7 +18,7 @@
 
    ![Enter a name, description, and configure permissions.](./managing-the-knowledge-base/images/02.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 폴더 및 기사 관리
 
@@ -34,43 +34,43 @@
 
 ![Click the Actions button for a folder to access these management options.](./managing-the-knowledge-base/images/04.png)
 
-**편집** (![편집](../../images/icon-edit.png)): 기사의 이름과 설명을 업데이트합니다.
+**편집**(![편집](../../images/icon-edit.png)): 기사의 이름과 설명을 업데이트합니다.
 
-**가져오기** (![가져오기](../../images/icon-import.png)): 마크다운 파일 및 이미지 첨부 파일의 ZIP 아카이브를 가져옵니다. 자세한 내용은 [기술 자료 문서 가져오기](./importing-knowledge-base-articles.md) 참조하세요.
+**가져오기**(![가져오기](../../images/icon-import.png)): 마크다운 파일 및 이미지 첨부 파일의 ZIP 아카이브를 가져옵니다. 자세한 내용은 [기술 자료 문서 가져오기](./importing-knowledge-base-articles.md) 참조하세요.
 
-**이동** (![이동](../../images/icon-move-folder.png)): 폴더를 재배치합니다.
+**이동**(![이동](../../images/icon-move-folder.png)): 폴더를 재배치합니다.
 
 **구독**(홈 폴더에만 해당): 기술 자료 문서가 생성, 업데이트 또는 삭제될 때 알림을 받습니다.
 
-**권한** (![권한](../../images/icon-permissions.png)): 다양한 역할에 리소스 권한을 할당합니다.
+**권한**(![권한](../../images/icon-permissions.png)): 다양한 역할에 리소스 권한을 할당합니다.
 
-**삭제** (![삭제](../../images/icon-app-trash.png)): 폴더와 해당 내용을 즉시 삭제합니다.
+**삭제**(![삭제](../../images/icon-app-trash.png)): 폴더와 해당 내용을 즉시 삭제합니다.
 
-또한 _정보_(![정보 버튼](../../images/icon-information.png))를 클릭하여 현재 폴더에 대한 정보 패널을 전환할 수 있습니다.
+또한 **정보**(![정보 버튼](../../images/icon-information.png))를 클릭하여 현재 폴더에 대한 정보 패널을 전환할 수 있습니다.
 
 ### 기사 옵션
 
 ![Click the Actions button for an article to access these management options.](./managing-the-knowledge-base/images/05.png)
 
-**편집** (![편집](../../images/icon-edit.png)): 폴더 이름과 설명을 변경합니다.
+**편집**(![편집](../../images/icon-edit.png)): 폴더 이름과 설명을 변경합니다.
 
-**하위 기사 추가** (![페이지](../../images/icon-document.png)): 하위 기사를 만듭니다.
+**하위 기사 추가**(![페이지](../../images/icon-document.png)): 하위 기사를 만듭니다.
 
-**만료** (![시간](../../images/icon-time.png)): 기사를 만료된 것으로 표시하고 검토자, 소유자 및 구독자에게 알립니다. 만료된 기사는 사이트에 표시될 수 없습니다. 자세한 내용은 [기사에 대한 검토 및 만료 날짜 설정](#setting-review-and-expiration-dates-for-articles) 을 참조하세요.
+**만료**(![시간](../../images/icon-time.png)): 기사를 만료된 것으로 표시하고 검토자, 소유자 및 구독자에게 알립니다. 만료된 기사는 사이트에 표시될 수 없습니다. 자세한 내용은 [기사에 대한 검토 및 만료 날짜 설정](#setting-review-and-expiration-dates-for-articles) 을 참조하세요.
 
-**구독** (![구독](../../images/icon-bell.png)): 기사에 대한 업데이트를 받으려면 가입하세요. 사용자는 시스템 메일 및 알림 설정에 따라 기사에 대한 알림을 받습니다.
+**구독**(![구독](../../images/icon-bell.png)): 기사에 대한 업데이트를 받으려면 가입하세요. 사용자는 시스템 메일 및 알림 설정에 따라 기사에 대한 알림을 받습니다.
 
-**기록** (![기록](../../images/icon-date-time.png)): 기사의 다양한 버전을 보고 비교합니다.
+**기록**(![기록](../../images/icon-date-time.png)): 기사의 다양한 버전을 보고 비교합니다.
 
-**인쇄** (![인쇄](../../images/icon-print.png)): 기사를 인쇄하려면 대화상자를 엽니다.
+**인쇄**(![인쇄](../../images/icon-print.png)): 기사를 인쇄하려면 대화상자를 엽니다.
 
-**이동** (![이동](../../images/icon-move-folder.png)): 아티클을 다른 폴더나 상위 아티클로 재배치합니다.
+**이동**(![이동](../../images/icon-move-folder.png)): 아티클을 다른 폴더나 상위 아티클로 재배치합니다.
 
-**권한** (![권한](../../images/icon-permissions.png)): 기사에 대한 권한을 관리합니다.
+**권한**(![권한](../../images/icon-permissions.png)): 기사에 대한 권한을 관리합니다.
 
-**삭제** (![삭제](../../images/icon-app-trash.png)): 하위 기사와 함께 기사를 즉시 삭제합니다.
+**삭제**(![삭제](../../images/icon-app-trash.png)): 하위 기사와 함께 기사를 즉시 삭제합니다.
 
-기사를 보는 동안 _정보_(![정보 버튼](../../images/icon-information.png))를 클릭하여 기사 세부정보와 버전을 볼 수도 있습니다.
+기사를 보는 동안 **정보**(![정보 버튼](../../images/icon-information.png))를 클릭하여 기사 세부정보와 버전을 볼 수도 있습니다.
 
 ## 기사 검토 및 만료 날짜 설정
 
@@ -88,9 +88,9 @@
 
 ### 검토 및 만료 알림 구성
 
-1. _전역 메뉴_(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _시스템 설정_을 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **시스템 설정** 을 클릭합니다.
 
-1. 콘텐츠 및 데이터에서 _지식 베이스_를 클릭합니다.
+1. 콘텐츠 및 데이터에서 **지식 베이스** 를 클릭합니다.
 
    ![확인 간격과 곧 만료되는 기사를 사용자에게 알릴 시기를 설정합니다. ](./managing-the-knowledge-base/images/07.png)
 
@@ -98,9 +98,9 @@
 
 1. 알림을 보내기 위해 만료되기까지의 주 수를 결정합니다. 이 범위 내의 기사에는 만료 예정 레이블이 할당됩니다. 기본값은 1주입니다.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
-1. 사이트 범위 아래의 _서비스_ 탭으로 이동합니다.
+1. 사이트 범위 아래의 **서비스** 탭으로 이동합니다.
 
 1. 검토 및 만료 이메일을 활성화/비활성화합니다.
 
@@ -108,7 +108,7 @@
 
    ![Configure review and expiration emails.](./managing-the-knowledge-base/images/08.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 기사 기록 검토
 
@@ -116,7 +116,7 @@
 
 ![View, compare, and revert article versions.](./managing-the-knowledge-base/images/09.png)
 
-버전 콘텐츠를 비교하려면 두 기사를 선택하고 _버전 비교_를 클릭하세요.
+버전 콘텐츠를 비교하려면 두 기사를 선택하고 **버전 비교** 를 클릭하세요.
 
 ![Compare changes between two versions of an article.](./managing-the-knowledge-base/images/10.png)
 

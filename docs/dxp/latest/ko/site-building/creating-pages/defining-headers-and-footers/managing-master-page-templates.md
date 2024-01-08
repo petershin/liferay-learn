@@ -70,7 +70,7 @@
 
 **스타일북:** 테마에서 적용되는 기본 스타일북을 변경합니다.
 
-**테마 CSS 클라이언트 확장:** [테마 CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client- 추가 확장) 전체 테마를 배포하지 않고 테마에서 기본 CSS를 완전히 교체합니다.
+**테마 CSS 클라이언트 확장:** [테마 CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#theme-css-client-extensions) 전체 테마를 배포하지 않고 테마에서 기본 CSS를 완전히 교체합니다.
 
 **CSS 클라이언트 확장:** 재정의하려면 [CSS 클라이언트 확장](../../../building-applications/client-extensions/front-end-client-extensions.md#css-client-extensions) 을 추가하세요. 마스터 페이지 템플릿을 사용하는 콘텐츠 페이지의 CSS 스타일입니다.
 

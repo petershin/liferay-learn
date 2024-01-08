@@ -122,7 +122,7 @@ yoke-instance-settings:
 
 ## 현재 지원되는 인스턴스 설정 PID
 
-다음은 [가상 인스턴스](#virtual-instance-scoped-pids) 또는 [site](#site-scoped-pids)로 범위가 지정된 인스턴스 설정 클라이언트 확장에서 참조할 수 있는 모든 PID입니다.
+다음은 [가상 인스턴스](#virtual-instance-scoped-pids) 또는 [site](#site-scoped-pids) 로 범위가 지정된 인스턴스 설정 클라이언트 확장에서 참조할 수 있는 모든 PID입니다.
 
 ### 가상 인스턴스 범위 PID:
 

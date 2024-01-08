@@ -12,8 +12,8 @@ visibility:
 - 파트너 포털 섹션에는 인증 및 Single Sign On에 대해 잠재 고객에게 제공되는 정보를 보완할 수 있는 귀중한 정보가 포함되어 있습니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-9-success-stories-analytic)를 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analytic-pdf)를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-9-success-stories-analytic) 를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-9-success-stories-analytic-pdf) 를 다운로드하세요.
 ```
 
 ## 추가 솔루션
@@ -43,6 +43,6 @@ visibility:
 
 영업 엔지니어는 가능한 한 많은 자료를 사용하여 Liferay의 기능이 무엇인지뿐만 아니라 해당 기능이 Liferay를 사용할 수 있는 다양한 솔루션에 어떻게 적용되는지, 실제 성공적인 고객이 어떻게 사용했는지, 그리고 어떻게 잠재 고객을 위한 데모에 이러한 기능을 통합합니다.
 
-[Liferay가 해결하는 과제 - 수평적 솔루션]([https://learn.liferay.com/web/guest/w/courses/판매-liferay/level-0/what-challenges-does-liferay-solve-horizontal) -solutions](https://learn.liferay.com/web/guest/w/courses/판매-liferay/level-0/what-challenges-does-liferay-solve-horizontal-solutions)) 프레젠테이션은 훌륭하고 첫눈에는 데모와 관련이 없어 보일 수 있는 자세한 리소스이지만 이 모듈을 사용하면 성공적인 데모를 더 잘 준비할 수 있도록 유사한 자료를 사용하는 방법을 설명할 수 있기를 바랍니다.
+[Liferay가 해결하는 과제 - 수평적 솔루션]( [https://learn.liferay.com/web/guest/w/courses/판매-liferay/level-0/what-challenges-does-liferay-solve-horizontal) -solutions](https://learn.liferay.com/web/guest/w/courses/판매-liferay/level-0/what-challenges-does-liferay-solve-horizontal-solutions) ) 프레젠테이션은 훌륭하고 첫눈에는 데모와 관련이 없어 보일 수 있는 자세한 리소스이지만 이 모듈을 사용하면 성공적인 데모를 더 잘 준비할 수 있도록 유사한 자료를 사용하는 방법을 설명할 수 있기를 바랍니다.
 
 축하합니다. 이것으로 이 모듈이 끝났습니다. 다음으로, 시리즈의 마지막 모듈에서는 [데모 윤리](../demo-ethics.md) 또는 데모에서 해야 할 일과 하지 말아야 할 일에 대해 논의합니다.

@@ -20,21 +20,21 @@ Liferay DXP [은 기본적으로 반응형 디자인](../building-a-responsive-s
 
 1. [콘텐츠 페이지에서 그리드 조각](../../creating-pages/page-fragments-and-widgets/using-fragments/using-layout-elements.md) 을 구성합니다.
 
-1. 편집 사이드바에서 _브라우저_(![시뮬레이션](../../../images/icon-hierarchy.png)) 버튼을 클릭하고 사용자 정의하려는 그리드 조각을 클릭합니다.
+1. 편집 사이드바에서 **브라우저**(![시뮬레이션](../../../images/icon-hierarchy.png)) 버튼을 클릭하고 사용자 정의하려는 그리드 조각을 클릭합니다.
 
 1. 편집 도구 모음의 장치 디스플레이 섹션에서 최적화하려는 화면 크기를 선택하세요.
 
    ![Select the screen size you want to customize in the Device Display section.](./building-responsive-layouts-with-the-grid-fragment/images/06.png)
 
-1. 구성 사이드바의 _일반_ 탭 아래에서 화면 크기에 대해 선호하는 레이아웃 옵션을 선택하세요. 예를 들어, _세로형 전화_ 레이아웃 옵션에서는 행당 하나의 모듈이 훨씬 더 잘 작동합니다.
+1. 구성 사이드바의 **일반** 탭 아래에서 화면 크기에 대해 선호하는 레이아웃 옵션을 선택하세요. 예를 들어, **세로형 전화** 레이아웃 옵션에서는 행당 하나의 모듈이 훨씬 더 잘 작동합니다.
 
-1. 이미지를 선택하여 대상 화면 크기에 맞게 _해상도_를 구성하거나(Liferay DXP 7.4+에서 사용 가능) 기본 _자동_ 옵션을 그대로 두고 [Adaptive Media](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/using-adaptive-media.md) 사용합니다.
+1. 이미지를 선택하여 대상 화면 크기에 맞게 **해상도** 를 구성하거나(Liferay DXP 7.4+에서 사용 가능) 기본 **자동** 옵션을 그대로 두고 [Adaptive Media](../../../content-authoring-and-management/documents-and-media/publishing-and-sharing/using-adaptive-media.md) 사용합니다.
 
    ![Select the image resolution for the target screen size or leave the Auto option to use Adaptive Media.](./building-responsive-layouts-with-the-grid-fragment/images/05.png)
 
-1. _게시_를 클릭하세요.
+1. **게시** 를 클릭하세요.
 
-1. 선택적으로 기본 도구 모음에서 _시뮬레이션_(![시뮬레이션](../../../images/icon-simulation.png)) 버튼을 클릭하여 대상 장치의 변경 사항을 확인하세요.
+1. 선택적으로 기본 도구 모음에서 **시뮬레이션**(![시뮬레이션](../../../images/icon-simulation.png)) 버튼을 클릭하여 대상 장치의 변경 사항을 확인하세요.
 
 ```{tip}
 다른 콘텐츠 페이지에서 선택한 그리드 조각 구성을 저장하고 재사용할 수 있습니다. 자세한 내용은 [조각 구성 저장](../../creating-pages/page-fragments-and-widgets/using-fragments/saving-fragment-compositions.md) 참조하세요.

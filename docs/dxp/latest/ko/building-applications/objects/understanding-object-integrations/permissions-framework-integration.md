@@ -22,8 +22,8 @@
 
 | 허가                                                   | 묘사                                                                                                      |
 | :--------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
-| 제어판에서 액세스(_회사 범위에만 해당_)           | 전역 메뉴( ![전역 메뉴](../../../images/icon-applications-menu.png) )에서 개체에 액세스합니다.          |
-| 사이트 및 자산 라이브러리 관리에 액세스(_사이트 범위만_) | 사이트 메뉴( ![사이트 메뉴](../../../images/icon-product-menu.png) ) 또는 자산 라이브러리에서 개체에 액세스합니다. |
+| 제어판에서 액세스(**회사 범위에만 해당**)           | 전역 메뉴( ![전역 메뉴](../../../images/icon-applications-menu.png) )에서 개체에 액세스합니다.          |
+| 사이트 및 자산 라이브러리 관리에 액세스(**사이트 범위만**) | 사이트 메뉴( ![사이트 메뉴](../../../images/icon-product-menu.png) ) 또는 자산 라이브러리에서 개체에 액세스합니다. |
 | 설정                                                   | N/A                                                                                                     |
 | 권한                                                   | 개체에 대한 응용 프로그램 권한을 보고 수정합니다.                                                                            |
 | 환경 설정                                                | N/A                                                                                                     |
@@ -68,7 +68,7 @@
 
 1. 원하는 사용자 정의 개체로 이동합니다.
 
-1. 원하는 엔터티에 대해 _작업_ 버튼(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 _권한_을 선택합니다.
+1. 원하는 엔터티에 대해 **작업** 버튼(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 **권한** 을 선택합니다.
 
    ![Click the Actions button for the desired entity and select Permissions.](./permissions-framework-integration/images/01.png)
 
@@ -79,7 +79,7 @@
    ```
    ![Use the checkboxes to assign permissions to the desired roles.](./permissions-framework-integration/images/02.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 관련 주제
 

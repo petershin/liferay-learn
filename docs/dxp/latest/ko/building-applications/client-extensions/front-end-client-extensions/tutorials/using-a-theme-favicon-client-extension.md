@@ -11,7 +11,7 @@
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
     ```{note}
-    지원되는 JDK, 데이터베이스 및 환경에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 확인하세요. 권장되는 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md) 참조하세요.
+    지원되는 JDK, 데이터베이스 및 환경에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 확인하세요. 권장되는 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md) 참조하세요.
     ```
 
 1. 샘플 작업공간을 다운로드하고 압축을 풉니다.
@@ -82,17 +82,17 @@ STARTED liferay-sample-theme-favicon_1.0.0
 
 배포된 클라이언트 확장을 사용하도록 Liferay에서 페이지를 구성합니다.
 
-1. 페이지 상단의 _편집_(![편집 아이콘](../../../../images/icon-edit-pencil.png))을 클릭하세요.
+1. 페이지 상단의 **편집**(![편집 아이콘](../../../../images/icon-edit-pencil.png))을 클릭하세요.
 
-1. 사이드바에서 페이지 디자인 옵션 메뉴(![페이지 디자인 옵션 아이콘](../../../../images/icon-format.png))로 이동하고 메뉴 상단에 있는 _configuration_(![구성 아이콘](../../../../images/icon-cog3.png))을 클릭합니다.
+1. 사이드바에서 페이지 디자인 옵션 메뉴(![페이지 디자인 옵션 아이콘](../../../../images/icon-format.png))로 이동하고 메뉴 상단에 있는 **configuration**(![구성 아이콘](../../../../images/icon-cog3.png))을 클릭합니다.
 
-1. _Look and Feel_ 탭 아래 _Favicon_ 섹션에서 _Favicon 변경_을 클릭하세요.
+1. **Look and Feel** 탭 아래 **Favicon** 섹션에서 **Favicon 변경** 을 클릭하세요.
 
-1. _클라이언트 확장_을 클릭하고 새로 배포된 파비콘인 _샘플 테마 파비콘_을 선택합니다.
+1. **클라이언트 확장** 을 클릭하고 새로 배포된 파비콘인 **샘플 테마 파비콘** 을 선택합니다.
 
    ![Select the Sample Theme Favicon client extension and click Save.](./using-a-theme-favicon-client-extension/images/01.gif)
 
-1. 아래로 스크롤하여 _저장_을 클릭하세요.
+1. 아래로 스크롤하여 **저장** 을 클릭하세요.
 
 1. 페이지로 돌아갑니다. 새 파비콘이 브라우저 탭에 나타납니다.
 

@@ -50,17 +50,17 @@ Docker Hub는 Linux의 Tomcat과 함께 번들로 제공되는 [Liferay DXP](htt
    ```
 
     ```{note}
-    메모리, CPU 및 기타 Docker 컨테이너 리소스를 구성할 수 있습니다. 위의 `-m 8g` 명령 인수는 컨테이너의 메모리 제한을 8GB로 설정합니다. 자세한 내용은 [Docker 런타임 옵션](https://docs.docker.com/config/containers/resource_constraints/)을 참조하세요.
+    메모리, CPU 및 기타 Docker 컨테이너 리소스를 구성할 수 있습니다. 위의 `-m 8g` 명령 인수는 컨테이너의 메모리 제한을 8GB로 설정합니다. 자세한 내용은 [Docker 런타임 옵션](https://docs.docker.com/config/containers/resource_constraints/) 을 참조하세요.
     ```
 
-1. 이메일 주소 _test@liferay.com_ 및 비밀번호 _test_를 사용하여 `<http://localhost:8080>`에서 Liferay에 로그인합니다.
+1. 이메일 주소 **test@liferay.com** 및 비밀번호 **test** 를 사용하여 `<http://localhost:8080>`에서 Liferay에 로그인합니다.
 
-1. 메시지가 나타나면 비밀번호(예: _learn_)를 변경하고 _저장_을 클릭하세요.
+1. 메시지가 나타나면 비밀번호(예: **learn**)를 변경하고 **저장** 을 클릭하세요.
 
    ![Change your password upon first login.](./using-liferay-docker-images/images/01.png)
 
 ```{warning}
-프로덕션 환경에서는 기본 관리자 계정을 사용하면 안 됩니다. 대신 귀하의 비즈니스에 맞는 [관리자 계정을 생성](../../getting-started/introduction-to-the-admin-account.md#creating-a-new-admin-user)하세요.
+프로덕션 환경에서는 기본 관리자 계정을 사용하면 안 됩니다. 대신 귀하의 비즈니스에 맞는 [관리자 계정을 생성](../../getting-started/introduction-to-the-admin-account.md#creating-a-new-admin-user) 하세요.
 ```
 
 Liferay를 사용할 준비가 되었습니다.

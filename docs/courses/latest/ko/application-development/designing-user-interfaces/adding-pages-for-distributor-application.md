@@ -8,13 +8,13 @@
    curl https://resources.learn.liferay.com/courses/latest/en/application-development/designing-user-interfaces/distributor-application-pages.lar -O
    ```
 
-1. _사이트 메뉴_(![사이트 메뉴](../../images/icon-product-menu.png))를 열고 _게시_를 확장한 다음 _가져오기_를 클릭합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../images/icon-product-menu.png))를 열고 **게시** 를 확장한 다음 **가져오기** 를 클릭합니다.
 
-1. _추가_(![추가 버튼](../../images/icon-add.png))를 클릭하고 `distributor-application-pages.lar` 파일을 선택한 다음 _계속_을 클릭하세요.
+1. **추가**(![추가 버튼](../../images/icon-add.png))를 클릭하고 `distributor-application-pages.lar` 파일을 선택한 다음 **계속** 을 클릭하세요.
 
    ![Select the distributor-application-pages.lar file and click Continue.](./adding-pages-for-distributor-application/images/01.png)
 
-1. 기본 가져오기 구성을 유지하고 _가져오기_를 클릭합니다.
+1. 기본 가져오기 구성을 유지하고 **가져오기** 를 클릭합니다.
 
 1. 가져오기가 성공적으로 완료되었는지 확인합니다.
 

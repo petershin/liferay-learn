@@ -53,10 +53,10 @@ Analytics Cloud 전체 사이트에 대한 종합적인 보고서를 제공하�
 * 추가 사전 설정 기간(어제, 최근 28일, 최근 180일, 작년)
 * 커스텀 범위
 
-이 사이트 페이지 데이터 목록을 CSV 파일로 다운로드하려면 _보고서 다운로드_를 클릭하세요. 자세한 내용은 [보고서 다운로드](./reference/downloading-reports.md) 참조하세요.
+이 사이트 페이지 데이터 목록을 CSV 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](./reference/downloading-reports.md) 참조하세요.
 
 ```{note}
-페이지 데이터는 표준 URL을 기반으로 합니다. [표준화](https://moz.com/learn/seo/canonicalization) 또는 [DXP에서 맞춤 표준 URL을 설정하는 방법](https://learn.liferay.com/dxp/latest/en/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo)에 대해 자세히 알아보세요.
+페이지 데이터는 표준 URL을 기반으로 합니다. [표준화](https://moz.com/learn/seo/canonicalization) 또는 [개별 페이지 구성](https://learn.liferay.com/dxp/latest/ko/site-building/creating-pages/page-settings/configuring-individual-pages.html#seo) 에 대해 자세히 알아보세요.
 ```
 
 단일 페이지에 대한 자세한 측정항목을 보려면 표에서 해당 페이지를 클릭하세요. 자세한 내용은 [페이지 분석](./touchpoints/pages/pages.md) 참조하세요.
@@ -90,22 +90,22 @@ Analytics Cloud 전체 사이트에 대한 종합적인 보고서를 제공하�
 
 ## 다음 단계
 
-- [사이트 대시보드](./touchpoints/sites-dashboard.md) 
+- [사이트 대시보드](./touchpoints/sites-dashboard.md)
 
 ### 페이지
 
-- [페이지](./touchpoints/pages/pages.md) 
-- [경로](./touchpoints/pages/paths.md) 
+- [페이지](./touchpoints/pages/pages.md)
+- [경로](./touchpoints/pages/paths.md)
 
 ### 자산
 
-- [자산](./touchpoints/assets/assets.md) 
-- [웹 콘텐츠](./touchpoints/assets/web-content.md) 
-- [블로그](./touchpoints/assets/blogs.md) 
-- [양식](./touchpoints/assets/forms.md) 
-- [문서 및 미디어](./touchpoints/assets/documents-and-media.md) 
-- [사용자 정의 자산 추적](./touchpoints/assets/tracking-custom-assets.md) 
+- [자산](./touchpoints/assets/assets.md)
+- [웹 콘텐츠](./touchpoints/assets/web-content.md)
+- [블로그](./touchpoints/assets/blogs.md)
+- [양식](./touchpoints/assets/forms.md)
+- [문서 및 미디어](./touchpoints/assets/documents-and-media.md)
+- [사용자 정의 자산 추적](./touchpoints/assets/tracking-custom-assets.md)
 
 ### 이벤트
 
-- [이벤트 분석](./touchpoints/events/events-analysis.md) 
+- [이벤트 분석](./touchpoints/events/events-analysis.md)

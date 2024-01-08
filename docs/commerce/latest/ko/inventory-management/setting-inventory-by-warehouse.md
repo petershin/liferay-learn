@@ -4,13 +4,13 @@
 
 창고별 재고를 설정하려면,
 
-1. _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _제품_으로 이동합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **제품** 으로 이동합니다.
 
 1. 제품을 클릭하세요.
 
-1. _SKU_ 탭을 클릭하고 SKU를 선택합니다.
+1. **SKU** 탭을 클릭하고 SKU를 선택합니다.
 
-1. _인벤토리_ 탭을 클릭합니다.
+1. **인벤토리** 탭을 클릭합니다.
 
 1. 사용 가능한 창고의 수량을 입력하세요.
 
@@ -18,7 +18,7 @@
 
    ![Enter the quantity of available units for an SKU in each warehouse.](./setting-inventory-by-warehouse/images/01.png)
 
-1. 각 창고에 대해 _저장_을 클릭하세요.
+1. 각 창고에 대해 **저장** 을 클릭하세요.
 
 1. 제품과 관련된 다른 SKU에 대해 이 단계를 반복합니다.
 
@@ -32,11 +32,11 @@
 
 창고 간에 재고를 이전하려면
 
-1. _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Inventory_로 이동합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Inventory** 로 이동합니다.
 
 1. SKU를 선택하세요.
 
-1. _추가_(![추가 버튼](../images/icon-add.png))를 클릭한 다음 _전송 만들기_를 선택합니다.
+1. **추가**(![추가 버튼](../images/icon-add.png))를 클릭한 다음 **전송 만들기** 를 선택합니다.
 
    ![You can transfer stock from one warehouse to another.](./setting-inventory-by-warehouse/images/02.png)
 
@@ -44,13 +44,13 @@
 
    이 예에서는 선택한 SKU의 40개 단위를 미국 - 남서부 창고에서 미국 - 북서부 창고로 이전합니다.
 
-   * **수량**: 40
-   * **출처**: 미국 - 남서부
-   * **목적지**: 미국 - 북서부
+   * **수량** : 40
+   * **출처** : 미국 - 남서부
+   * **목적지** : 미국 - 북서부
 
    ![Enter the quantity, source, and destination to transfer stock.](./setting-inventory-by-warehouse/images/03.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
 이제 각 창고의 재고가 업데이트됩니다.
 
@@ -58,19 +58,19 @@
 
 창고별 재고를 설정하려면,
 
-1. _제어판_ &rarr; _상거래_ &rarr; _제품_으로 이동합니다.
+1. **제어판** &rarr; **상거래** &rarr; **제품** 으로 이동합니다.
 
 1. 제품을 클릭하세요.
 
-1. _SKU_ 탭을 클릭하고 SKU를 선택합니다.
+1. **SKU** 탭을 클릭하고 SKU를 선택합니다.
 
-1. _인벤토리_ 탭을 클릭합니다.
+1. **인벤토리** 탭을 클릭합니다.
 
 1. 사용 가능한 창고의 수량을 입력하세요.
 
    ![Enter the number of available units for an SKU in each warehouse.](./setting-inventory-by-warehouse/images/04.png)
 
-1. 각 창고에 대해 _저장_을 클릭하세요.
+1. 각 창고에 대해 **저장** 을 클릭하세요.
 
 1. 제품과 관련된 다른 모든 제품 변형(SKU)에 대해 이 단계를 반복합니다.
 
@@ -78,27 +78,27 @@
 
 ### 창고 간 재고 이전
 
-상점에 [창고](./setting-up-warehouses.md) 둘 이상 있는 경우 사용자는 한 창고에서 다른 창고로 재고를 이동할 수 있습니다. 재고는 SKU 수준에서 추적되며 _재고_ 페이지에 반영됩니다.
+상점에 [창고](./setting-up-warehouses.md) 둘 이상 있는 경우 사용자는 한 창고에서 다른 창고로 재고를 이동할 수 있습니다. 재고는 SKU 수준에서 추적되며 **재고** 페이지에 반영됩니다.
 
 창고 간에 재고를 이전하려면
 
-1. _제어판_ &rarr; _상거래_ &rarr; _재고_로 이동합니다.
+1. **제어판** &rarr; **상거래** &rarr; **재고** 로 이동합니다.
 
 1. SKU를 선택하세요.
 
-1. _추가_(![아이콘 추가](../images/icon-add.png)) 버튼을 클릭한 다음 _전송 만들기_를 클릭하세요.
+1. **추가**(![아이콘 추가](../images/icon-add.png)) 버튼을 클릭한 다음 **전송 만들기** 를 클릭하세요.
 
    ![Users can transfer stock between warehouses](./setting-inventory-by-warehouse/images/05.png)
 
 1. 선택한 SKU의 40개 단위를 미국 - 남서부 창고에서 미국 - 북서부 창고로 이전하려면 다음 정보를 입력하십시오.
 
-   * **수량**: 40
-   * **출처**: 미국 - 남서부
-   * **목적지**: 미국 - 북서부
+   * **수량** : 40
+   * **출처** : 미국 - 남서부
+   * **목적지** : 미국 - 북서부
 
    ![Enter the quantity, source, and destination to transfer stock.](./setting-inventory-by-warehouse/images/03.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
 이제 각 창고에 대해 업데이트된 재고를 볼 수 있습니다.
 

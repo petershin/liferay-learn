@@ -79,7 +79,6 @@ Liferay DXP 설치는 다음 수정팩 최소 요구 사항을 충족해야 합�
   * 7.2 수정팩 11
   * 7.1 수정팩 22
   * 7.0 수정팩 98
-
 ```
 
 **해결:**
@@ -88,14 +87,14 @@ Liferay DXP 설치는 다음 수정팩 최소 요구 사항을 충족해야 합�
 
 1. [Liferay DXP 데이터 소스를 추가하는 단계를 따르세요](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md).
 
-1. 오류가 지속되면 DXP 인스턴스에서 JSON 웹 서비스가 활성화되어 있는지 확인하세요. 기본적으로 활성화되어 있습니다. [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) 설정 json.web.service.enabled=false(예: [Portal-ext.properties 파일](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/portal-properties.html) 에서 설정)를 사용하여 비활성화한 경우 해당 설정을 삭제하거나 속성 값을 true로 설정하세요.
+1. 오류가 지속되면 DXP 인스턴스에서 JSON 웹 서비스가 활성화되어 있는지 확인하세요. 기본적으로 활성화되어 있습니다. [포털 속성](https://learn.liferay.com/reference/latest/en/dxp/propertiesdoc/portal.properties.html#JSON) 설정 json.web.service.enabled=false(예: [문맥 재산](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/portal-properties.html) 에서 설정)를 사용하여 비활성화한 경우 해당 설정을 삭제하거나 속성 값을 true로 설정하세요.
 
 ## 로그인한 사용자가 익명으로 표시됨
 
-[연락처 동기화](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) 인 경우 Analytics Cloud는 Liferay DXP 내에 존재하는 사용자 기록에 의존합니다. 따라서 [SSO](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/securing-liferay/configuring-sso.html) 또는 [LDAP](https://learn.liferay.com/dxp/latest/en/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) 사용하는 경우 Analytics Cloud와 연락처를 동기화하기 전에 모든 사용자를 Liferay DXP로 가져오거나 매핑해야 합니다.
+[연락처 동기화](../getting-started/connecting-liferay-dxp-to-analytics-cloud.md) 인 경우 Analytics Cloud는 Liferay DXP 내에 존재하는 사용자 기록에 의존합니다. 따라서 [싱글 사인온 구성](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/securing-liferay/configuring-sso.html) 또는 [LDAP 디렉토리에 연결](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/connecting-to-a-user-directory/connecting-to-an-ldap-directory.html) 사용하는 경우 Analytics Cloud와 연락처를 동기화하기 전에 모든 사용자를 Liferay DXP로 가져오거나 매핑해야 합니다.
 
 ## 사용자 동기화에 시간이 오래 걸림
 
-Liferay DXP의 배치 엔진은 사용자 동기화에 사용됩니다. 매우 많은 수의 사용자를 동기화하는 경우 배치 크기를 늘리십시오. Liferay DXP에서 _글로벌 메뉴_ &rarr; _인스턴스 설정_ &rarr; _배치 엔진_으로 이동합니다. _내보내기 배치 크기_ 및 _가져오기 배치 크기_를 '1000'으로 설정하세요.
+Liferay DXP의 배치 엔진은 사용자 동기화에 사용됩니다. 매우 많은 수의 사용자를 동기화하는 경우 배치 크기를 늘리십시오. Liferay DXP에서 **글로벌 메뉴** &rarr; **인스턴스 설정** &rarr; **배치 엔진** 으로 이동합니다. **내보내기 배치 크기** 및 **가져오기 배치 크기** 를 '1000'으로 설정하세요.
 
 ![Increase batch size in Liferay DXP.](./connecting-data-sources/images/03.png)

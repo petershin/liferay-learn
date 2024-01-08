@@ -9,7 +9,7 @@ Liferay의 재고 관리 시스템을 사용하여 인스턴스의 제품 SKU에
 
 제품 SKU 또는 [측정 단위](../product-management/creating-and-managing-products/products/units-of-measure.md) 에 대한 재고를 추가하기 전에 재고를 보관할 창고를 하나 이상 생성해야 합니다. 자세한 내용은 [창고 설정](./setting-up-warehouses.md) 참조하십시오.
 
-인벤토리 페이지에 액세스하려면 _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Inventory_로 이동하세요.
+인벤토리 페이지에 액세스하려면 **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Inventory** 로 이동하세요.
 
 ```{note}
 Commerce 2.0 또는 2.1을 사용하는 경우 재고 관리 옵션은 제어판에 있습니다.
@@ -23,17 +23,17 @@ Commerce 2.0 또는 2.1을 사용하는 경우 재고 관리 옵션은 제어판
 
 다음과 같이하세요:
 
-1. _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Inventory_로 이동합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Inventory** 로 이동합니다.
 
-1. _추가_(![추가 버튼](../images/icon-add.png))를 클릭하고 SKU, 창고, 수량을 입력하세요. 예를 들어,
+1. **추가**(![추가 버튼](../images/icon-add.png))를 클릭하고 SKU, 창고, 수량을 입력하세요. 예를 들어,
 
-   * **SKU**: 도자기-회색
-   * **창고**: 미국 - 남서부
-   * **수량**: 120
+   * **SKU** : 도자기-회색
+   * **창고** : 미국 - 남서부
+   * **수량** : 120
 
    ![Enter the SKU, warehouse and quantity for the new inventory item.](./using-the-inventory-management-system/images/01.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
 선택한 창고의 SKU에 대한 재고가 추가됩니다.
 
@@ -47,17 +47,17 @@ Commerce 2.0 또는 2.1을 사용하는 경우 재고 관리 옵션은 제어판
 
 안전 재고 수량을 설정하려면
 
-1. _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Inventory_로 이동합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Inventory** 로 이동합니다.
 
-1. _SKU_를 클릭합니다.
+1. **SKU** 를 클릭합니다.
 
-1. 창고 옆에 있는 _작업_(![작업 버튼](../images/icon-actions.png))을 클릭하고 _편집_을 선택합니다.
+1. 창고 옆에 있는 **작업**(![작업 버튼](../images/icon-actions.png))을 클릭하고 **편집** 을 선택합니다.
 
-1. _안전 재고 수량_ 필드에 값을 입력합니다.
+1. **안전 재고 수량** 필드에 값을 입력합니다.
 
    ![Set a safety stock quantity for the selected SKU.](./using-the-inventory-management-system/images/02.png)
 
-1. 완료되면 _저장_을 클릭하세요.
+1. 완료되면 **저장** 을 클릭하세요.
 
 사용 가능한 단위 수는 안전 재고 수량에 따라 감소됩니다. 사용 가능 열에서 이를 확인할 수 있습니다.
 
@@ -65,11 +65,11 @@ Commerce 2.0 또는 2.1을 사용하는 경우 재고 관리 옵션은 제어판
 
 ## 주문 시 SKU 보기
 
-1. _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Inventory_로 이동합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Inventory** 로 이동합니다.
 
-1. _SKU_를 클릭합니다.
+1. **SKU** 를 클릭합니다.
 
-1. _주문 시_ 탭을 클릭하세요.
+1. **주문 시** 탭을 클릭하세요.
 
    ![View all orders that include the selected SKU.](./using-the-inventory-management-system/images/04.png)
 
@@ -79,21 +79,21 @@ Commerce 2.0 또는 2.1을 사용하는 경우 재고 관리 옵션은 제어판
 
 입고 재고는 향후 창고에 도착할 예정인 SKU 재고입니다. 입고되는 재고 수량과 예상 배송 날짜를 추가할 수 있습니다.
 
-1. _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Inventory_로 이동합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Inventory** 로 이동합니다.
 
-1. _SKU_를 클릭합니다.
+1. **SKU** 를 클릭합니다.
 
-1. _수신_ 탭을 클릭하세요.
+1. **수신** 탭을 클릭하세요.
 
-1. _추가_(![추가 버튼](../images/icon-add.png))를 클릭하고 수량, 도착 창고, 예상 배송 날짜를 입력하세요. 예를 들어,
+1. **추가**(![추가 버튼](../images/icon-add.png))를 클릭하고 수량, 도착 창고, 예상 배송 날짜를 입력하세요. 예를 들어,
 
-   * **수량**: 20
-   * **목적지**: 미국 - 북동부
-   * **예상 배송 날짜**: 2022년 11월 20일(향후 날짜임)
+   * **수량** : 20
+   * **목적지** : 미국 - 북동부
+   * **예상 배송 날짜** : 2022년 11월 20일(향후 날짜임)
 
    ![Add incoming stock for the selected SKU.](./using-the-inventory-management-system/images/05.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
 입고 재고를 추가하면 개요 페이지의 입고 열 아래에 해당 재고가 표시됩니다.
 
@@ -103,11 +103,11 @@ Commerce 2.0 또는 2.1을 사용하는 경우 재고 관리 옵션은 제어판
 
 변경 로그 페이지에서 SKU 재고의 변경 사항을 볼 수 있습니다.
 
-1. _글로벌 메뉴_(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Inventory_로 이동합니다.
+1. **글로벌 메뉴**(![글로벌 메뉴](../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Inventory** 로 이동합니다.
 
-1. _SKU_를 클릭합니다.
+1. **SKU** 를 클릭합니다.
 
-1. _Changelog_ 탭을 클릭하세요.
+1. **Changelog** 탭을 클릭하세요.
 
 변경 로그에서 이 정보를 볼 수 있습니다.
 
@@ -122,6 +122,6 @@ Commerce 2.0 또는 2.1을 사용하는 경우 재고 관리 옵션은 제어판
 
 ## 관련 주제
 
-* [재고관리 참고가이드](./inventory-management-reference-guide.md) 
-* [창고 참조 가이드](./warehouse-reference-guide.md) 
-* [창고](./setting-inventory-by-warehouse.md) 별 재고 설정
+* [재고관리 참고가이드](./inventory-management-reference-guide.md)
+* [창고 참조 가이드](./warehouse-reference-guide.md)
+* [창고별 재고 설정](./setting-inventory-by-warehouse.md)

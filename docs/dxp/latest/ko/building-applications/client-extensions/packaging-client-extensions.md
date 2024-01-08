@@ -6,7 +6,7 @@
 
 {bdg-secondary}`Liferay 7.4`
 
-클라이언트 확장 프로젝트는 `.zip` 확장자를 가진 _Liferay Universal File Format Archives_(LUFFA)라는 배포 가능한 아카이브로 구축됩니다. 각 LUFFA에는 특정 구조가 있으며 프로젝트에서 제공되지 않는 경우 자동으로 생성되는 특정 구성 요소 파일을 정의합니다. Liferay 작업 공간은 클라이언트 확장 프로젝트를 빌드할 때 패키지화합니다. 클라이언트 확장을 [하거나](./working-with-client-extensions.md#assembling-client-extensions) 다른 프로세스로 LUFFA를 생성하려면 패키징 작동 방식을 이해하는 것이 중요합니다.
+클라이언트 확장 프로젝트는 `.zip` 확장자를 가진 **Liferay Universal File Format Archives**(LUFFA)라는 배포 가능한 아카이브로 구축됩니다. 각 LUFFA에는 특정 구조가 있으며 프로젝트에서 제공되지 않는 경우 자동으로 생성되는 특정 구성 요소 파일을 정의합니다. Liferay 작업 공간은 클라이언트 확장 프로젝트를 빌드할 때 패키지화합니다. 클라이언트 확장을 [하거나](./working-with-client-extensions.md#assembling-client-extensions) 다른 프로세스로 LUFFA를 생성하려면 패키징 작동 방식을 이해하는 것이 중요합니다.
 
 LUFFA의 구조는 다음과 같습니다.
 
@@ -92,7 +92,7 @@ LUFFA를 직접 패키징하는 경우 각 클라이언트 확장에는 'LCP.jso
 
 | 클라이언트 확장                                                          | 상당한 자원 필요 | 친절한 | 주                                                                                                                                                                                                                                                                                    |
 | :---------------------------------------------------------------- | :-------- | :-- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [배치](#example-batch-client-extension-lcp-json)         | ✘         | 직업  | <ul><li>환경 변수 'LIFERAY_BATCH_OAUTH_APP_ERC'는 배치 클라이언트 확장의 'oAuthApplicationHeadlessServer' 속성 값으로 설정되어야 합니다. 이는 보간을 통해 제공될 수 있습니다.</li><li>'cpu', 'memory' 및 'scale'에 대해 작은 값을 지정할 수 있습니다.</li></ul>                                                                                 |
+| [배치](#example-batch-client-extension-lcp-json)         | ✘         | 직업  | <ul><li>환경 변수 `LIFERAY_BATCH_OAUTH_APP_ERC`는 배치 클라이언트 확장의 'oAuthApplicationHeadlessServer' 속성 값으로 설정되어야 합니다. 이는 보간을 통해 제공될 수 있습니다.</li><li>'cpu', 'memory' 및 'scale'에 대해 작은 값을 지정할 수 있습니다.</li></ul>                                                                                 |
 | [구성](#example-configuration-client-extension-lcp-json) | ✘         | 직업  | <ul><li>일괄 확장보다 메모리 사용량이 훨씬 적습니다.</li><li>`cpu`, `memory` 및 `scale`에 매우 작은 값을 지정할 수 있습니다.</li></ul>                                                                                                                                                                                  |
 | [프런트엔드](#example-front-end-client-extension-lcp-json)  | ✘         | 전개  | <ul><li>`targetPort`를 `80`으로 설정하여 `loadBalancer` 속성을 지정해야 합니다.</li><li>치유를 위해 [`livenessProbe` 및 `readinessProbe` 속성](https://learn.liferay.com/w/liferay-cloud/troubleshooting/self-healing) 지정해야 합니다.</li><li>`cpu`, `memory` 및 `scale`에 대해 작은 값을 지정할 수 있습니다.</li></ul> |
 
@@ -151,12 +151,12 @@ LUFFA를 직접 패키징하는 경우 각 클라이언트 확장에는 'LCP.jso
 }
 ```
 
-자세한 내용은 [LCP.json을 통한 구성](https://learn.liferay.com/w/liferay-cloud/reference/configuration-via-lcp-json)을 참조하세요.
+자세한 내용은 [LCP.json을 통한 구성](https://learn.liferay.com/w/liferay-cloud/reference/configuration-via-lcp-json) 을 참조하세요.
 
 ## `static`
 
 ```{note}
-`static` 디렉터리는 [프런트 엔드 클라이언트 확장 프로젝트에만 필요합니다](./front-end-client-extensions.md) .
+`static` 디렉터리는 [프런트 엔드 클라이언트 확장 프로젝트에만 필요합니다](./front-end-client-extensions.md).
 ```
 
 빌드된 LUFFA의 루트 레벨 `static/` 디렉토리에 정적 리소스 파일을 원하는 만큼 배치할 수 있습니다. `static/` 폴더 내에서 원하는 폴더 구조를 사용하세요. 프로젝트의 `client-extension.yaml` 파일에 정의된 프런트 엔드 클라이언트 확장이 없으면 이러한 파일은 무시됩니다.

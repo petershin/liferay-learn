@@ -2,7 +2,7 @@
 
 Liferay를 업그레이드하는 동안 Elasticsearch를 사용할 때의 검색 환경을 고려해야 합니다. 정확한 단계는 기존 검색 엔진 설치 및 Liferay 버전에 따라 다르지만 [기존 인덱스를 백업하는 것부터 시작해야 합니다](./backing-up-elasticsearch.md).
 
-* [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 참조하세요. 지원되는 최신 Elasticsearch 버전을 실행하는 것이 항상 권장됩니다.
+* [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 참조하세요. 지원되는 최신 Elasticsearch 버전을 실행하는 것이 항상 권장됩니다.
 * Liferay 7.4부터 Liferay Enterprise Search(LES) 애플리케이션이 Liferay DXP와 함께 번들로 제공됩니다. 추가 설치 단계가 필요하지 않습니다. 자세한 내용은 [Liferay Enterprise 검색 활성화](../../../liferay-enterprise-search/activating-liferay-enterprise-search.md) 참조하십시오.
 * 이미 지원되는 Elasticsearch 버전을 사용 중이라면 업데이트하지 않고도 기존 Elasticsearch 인스턴스를 계속 사용할 수 있습니다.
 * Liferay 7.4부터 검색 튜닝(동의어 세트 및 결과 순위) 인덱스는 데이터베이스 테이블로 지원됩니다. Liferay 업그레이드 중에 검색 엔진이 Liferay에 연결된 경우 데이터가 데이터베이스로 전파됩니다. 새 Elasticsearch 인스턴스를 설정하는 경우 [검색 튜닝 인덱스를 백업 및 복원한 다음](./backing-up-elasticsearch.md) Groovy 스크립트 [실행하여](#importing-the-search-tuning-indexes-in-7-4) 인덱스 데이터를 새 데이터베이스 테이블로 수동으로 가져와야 합니다.
@@ -13,7 +13,7 @@ Liferay를 업그레이드하는 동안 Elasticsearch를 사용할 때의 검색
 [이 단계를 진행하기 전에 검색 인덱스](./backing-up-elasticsearch.md) 를 백업하세요.
 ```
 
-1. 시스템이 최소한 지원되는 Elasticsearch 버전 이상인지 확인하세요. 그렇지 않은 경우 [업그레이드](upgrading-to-elasticsearch-8.md)하여 [최신 지원 Elasticsearch](https://help.liferay.com/hc/en-us/articles/360016511651)로 이동하세요. 새로운 Elasticsearch 클러스터를 설치하고 업그레이드된 Liferay에 연결할 수 있지만 Elasticsearch 클러스터에 Liferay DXP 7.2 및 7.3의 Liferay 검색 튜닝 기능에 대한 인덱스와 같이 기본 스토리지로 사용되는 인덱스가 포함된 경우 일부 데이터가 손실될 수 있습니다. [Liferay 7.2 및 7.3에 대한 검색 튜닝 색인 백업 및 복원](backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) 및 [7.4에서 검색 튜닝 인덱스 가져오기.](#importing-the-search-tuning-indexes-in-7-4).
+1. 시스템이 최소한 지원되는 Elasticsearch 버전 이상인지 확인하세요. 그렇지 않은 경우 [업그레이드](upgrading-to-elasticsearch-8.md)하여 [최신 지원 Elasticsearch](https://help.liferay.com/hc/ko/articles/360016511651) 로 이동하세요. 새로운 Elasticsearch 클러스터를 설치하고 업그레이드된 Liferay에 연결할 수 있지만 Elasticsearch 클러스터에 Liferay DXP 7.2 및 7.3의 Liferay 검색 튜닝 기능에 대한 인덱스와 같이 기본 스토리지로 사용되는 인덱스가 포함된 경우 일부 데이터가 손실될 수 있습니다. [Liferay 7.2 및 7.3에 대한 검색 튜닝 색인 백업 및 복원](backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) 및 [7.4에서 검색 튜닝 인덱스 가져오기.](#importing-the-search-tuning-indexes-in-7-4) .
 
 1. [Liferay를 Elasticsearch](../connecting-to-elasticsearch.md) 에 연결하고 [보안](../securing-elasticsearch.md) 구성합니다.
 
@@ -33,7 +33,7 @@ LES 및 해당 앱은 Liferay 7.4와 함께 번들로 제공되므로 이러한 
 
 1. 현재 [Kibana 및 Monitoring](../../../liferay-enterprise-search/monitoring-elasticsearch.md) 을 사용하고 있다면 Elasticsearch 버전과 일치하는 Kibana 버전을 설치하세요.
 
-1. 귀하의 설정 및 버전에 해당하는 LES 애플리케이션을 설치하고 구성하십시오. 자세한 내용은 [LES 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651#Liferay-Enterprise-Search) 을 참조하세요.
+1. 귀하의 설정 및 버전에 해당하는 LES 애플리케이션을 설치하고 구성하십시오. 자세한 내용은 [LES 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651#Liferay-Enterprise-Search) 을 참조하세요.
 
 ## 업그레이드된 검색 경험 테스트
 
@@ -59,7 +59,7 @@ Liferay 7.3 및 7.4 위젯과 구성 이름은 동일합니다.
 
 Liferay 7.2에서 업그레이드하는 경우 앱 및 구성의 이름을 바꾸면 다음과 같은 업그레이드 영향을 받습니다.
 
-1. 이제 LES 모니터링 위젯의 이름이 _Elasticsearch Monitoring_으로 변경되었습니다. 시작하는 동안 모듈 업그레이드 단계가 실행되어 _Liferay Enterprise Search Monitoring_이 배포될 때 앱 이름을 바꿉니다. 조치가 필요하지 않습니다.
+1. 이제 LES 모니터링 위젯의 이름이 **Elasticsearch Monitoring** 으로 변경되었습니다. 시작하는 동안 모듈 업그레이드 단계가 실행되어 **Liferay Enterprise Search Monitoring** 이 배포될 때 앱 이름을 바꿉니다. 조치가 필요하지 않습니다.
 1. 구성 파일 이름이 `com.liferay.portal.search.elasticsearch6.xpack.monitoring.web.internal.configuration.XPackMonitoringConfiguration.config` 에서 `com.liferay.portal.search.elasticsearch.monitoring.web.internal.configuration.MonitoringConfiguration` 으로 변경되었습니다. 속성은 이전과 동일합니다. 포털이 시작되는 동안 모듈 업그레이드 단계가 실행되어 구성의 이름이 변경됩니다. 별도의 조치는 필요하지 않습니다.
 1. 모니터링 위젯에 대한 Kibana 기본 경로가 변경되었습니다. `kibana.yml`에서 원래 설정을 변경해야 합니다.
 

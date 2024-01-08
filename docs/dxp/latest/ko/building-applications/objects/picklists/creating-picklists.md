@@ -38,7 +38,7 @@
 
    ![Add multiple items to a picklist.](./creating-picklists/images/04.png)
 
-일단 생성되면 개체 필드를 생성할 때 선택 목록을 선택할 수 있습니다. *선택 목록*(단일 선택) 또는 *다중 선택 선택 목록* 필드 유형을 선택하고 목록을 선택합니다. 자세한 내용은 [개체에 필드 추가](../creating-and-managing-objects/fields/adding-fields-to-objects.md) 및 [선택 목록 필드](../creating-and-managing-objects/fields/picklist-fields.md) 를 참조하세요.
+일단 생성되면 개체 필드를 생성할 때 선택 목록을 선택할 수 있습니다. **선택 목록**(단일 선택) 또는 **다중 선택 선택 목록** 필드 유형을 선택하고 목록을 선택합니다. 자세한 내용은 [개체에 필드 추가](../creating-and-managing-objects/fields/adding-fields-to-objects.md) 및 [선택 목록 필드](../creating-and-managing-objects/fields/picklist-fields.md) 를 참조하세요.
 
 ![Users can select the picklist when creating new object fields.](./creating-picklists/images/05.png)
 

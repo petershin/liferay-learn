@@ -19,7 +19,7 @@
 1. 자바 8 또는 JDK 11.
 
     ```{note}
-    지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 확인하세요. 권장되는 JVM 설정은 [JVM 구성](../../installation-and-upgrades/reference/jvm-configuration.md) 참조하세요.
+    지원되는 JDK, 데이터베이스 및 환경에 대한 정보는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 확인하세요. 권장되는 JVM 설정은 [JVM 구성](../../installation-and-upgrades/reference/jvm-configuration.md) 참조하세요.
     ```
 
 1. liferay 작업공간. 예제 클라이언트 확장 프로젝트가 포함된 작업공간을 다운로드하려면 다음을 실행하세요.
@@ -34,7 +34,7 @@
 
 ## 클라이언트 확장 프로젝트
 
-클라이언트 확장 개발은 _작업 공간과 프로젝트_ 모델을 따릅니다. [Liferay 작업 공간](../tooling/liferay-workspace.md) 내에서 `[workspace-root]/client-extensions` 아래에 클라이언트 확장 프로젝트를 구현합니다. 프로젝트의 `client-extension.yaml` 파일은 클라이언트 확장을 정의하며, 빌드 프로세스는 각 프로젝트에 대한 단일 출력 세트를 생성합니다. 빌드된 클라이언트 확장 프로젝트는 Liferay Universal File Format Archive(LUFFA)라고 하는 배포 가능한 `*.zip` 아카이브입니다.
+클라이언트 확장 개발은 **작업 공간과 프로젝트** 모델을 따릅니다. [Liferay 작업 공간](../tooling/liferay-workspace.md) 내에서 `[workspace-root]/client-extensions` 아래에 클라이언트 확장 프로젝트를 구현합니다. 프로젝트의 `client-extension.yaml` 파일은 클라이언트 확장을 정의하며, 빌드 프로세스는 각 프로젝트에 대한 단일 출력 세트를 생성합니다. 빌드된 클라이언트 확장 프로젝트는 Liferay Universal File Format Archive(LUFFA)라고 하는 배포 가능한 `*.zip` 아카이브입니다.
 
 ## 프로젝트에서 클라이언트 확장 그룹화
 
@@ -201,16 +201,16 @@ zip 파일을 수동으로 배포해야 하는 경우 다음을 실행합니다.
 
 클라이언트 확장은 이식 가능합니다. 도메인 이름, 네트워크 주소 또는 Liferay 도메인과 같은 환경별 세부 정보를 하드 코딩해서는 안 됩니다. 클라이언트 확장은 런타임 시 해당 컨텍스트에 대한 상황에 맞는 정보를 찾을 수 있습니다.
 
-모든 클라이언트 확장 워크로드에는 상황에 맞는 중요한 메타데이터가 자동으로 포함된 _경로_ 세트가 제공됩니다. 이 경로 기반 접근 방식을 사용하면 애플리케이션 논리는 호출 사이트
+모든 클라이언트 확장 워크로드에는 상황에 맞는 중요한 메타데이터가 자동으로 포함된 **경로** 세트가 제공됩니다. 이 경로 기반 접근 방식을 사용하면 애플리케이션 논리는 호출 사이트
 에 관계없이 상황에 맞는 정보를 균일하게 검색할 수 있습니다. 클라이언트 확장 프로젝트에서 이를 가리키기만 하면 됩니다.
 
 ### 노선
 
-_경로_는 키/값 쌍 집합을 포함하는 디렉터리 구조입니다. 파일 이름은 키이고 파일 내용은 값입니다. 디렉터리 구조는 무시되며 디렉터리 경로는 환경 변수의 값입니다. [Kubernetes configMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-volume) 과 동일한 패턴을 따릅니다.
+**경로** 는 키/값 쌍 집합을 포함하는 디렉터리 구조입니다. 파일 이름은 키이고 파일 내용은 값입니다. 디렉터리 구조는 무시되며 디렉터리 경로는 환경 변수의 값입니다. [Kubernetes configMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#add-configmap-data-to-a-volume) 과 동일한 패턴을 따릅니다.
 
 사용하는 환경 변수는 두 가지 유형의 경로 중 하나를 가리킬 수 있습니다.
 
-1. `LIFERAY_ROUTES_DXP`: 배포된 _Liferay 가상 인스턴스_에 대한 상황에 맞는 메타데이터가 있는 경로에 대한 디렉터리 경로입니다.
+1. `LIFERAY_ROUTES_DXP`: 배포된 **Liferay 가상 인스턴스** 에 대한 상황에 맞는 메타데이터가 있는 경로에 대한 디렉터리 경로입니다.
 
    다음은 `LIFERAY_ROUTES_DXP` 경로의 예입니다.
 
@@ -224,7 +224,7 @@ _경로_는 키/값 쌍 집합을 포함하는 디렉터리 구조입니다. 파
    └── com.liferay.lxc.dxp.server.protocol
    ```
 
-1. `LIFERAY_ROUTES_CLIENT_EXTENSION`: _클라이언트 확장 프로젝트_ 자체에 대한 상황에 맞는 메타데이터가 포함된 경로에 대한 디렉터리 경로입니다.
+1. `LIFERAY_ROUTES_CLIENT_EXTENSION`: **클라이언트 확장 프로젝트** 자체에 대한 상황에 맞는 메타데이터가 포함된 경로에 대한 디렉터리 경로입니다.
 
    예제는 [OAuth 헤드리스 서버 클라이언트 확장](configuration-client-extensions.md#oauth-headless-server-client-extensions) 및 [OAuth 사용자 에이전트 클라이언트 확장](configuration-client-extensions.md#oauth-user-agent-client-extensions) 을 참조하세요.
 
@@ -236,7 +236,7 @@ Liferay Experience Cloud의 컨테이너에는 이러한 환경 변수가 자동
 
 Liferay Workspace의 `Exec`, `JavaExec` 및 `NodeExec` Gradle 작업을 사용하는 경우 이러한 환경 변수에는 자동으로 기본값이 제공됩니다. 다음과 같은 기본값을 사용합니다.
 
-| **환경 변수**                         | **기본값**                                                         |
+| **환경 변수** | **기본값** |
 | :-------------------------------- | :-------------------------------------------------------------- |
 | `LIFERAY_ROUTES_DXP`              | `[Liferay Home]/routes/default/dxp`                             |
 | `LIFERAY_ROUTES_CLIENT_EXTENSION` | `[Liferay Home]/routes/default/[Client extension project name]` |

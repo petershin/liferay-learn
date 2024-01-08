@@ -136,4 +136,4 @@ Javadoc에서 Liferay 앱 모듈의 속성을 찾으려면 다음 단계를 따�
 * [패키지 가져오기](../importing-packages.md)
 * [패키지 내보내기](../exporting-packages.md)
 * [타사 라이브러리 패키지 종속성 해결](./resolving-third-party-library-package-dependencies.md)
-* [WAR 배포 \(WAB 생성기\)](../../../building-applications/reference/deploying-wars-wab-generator.md)
+* [WAR 배포 \(WAB Generator\)](../../../building-applications/reference/deploying-wars-wab-generator.md)

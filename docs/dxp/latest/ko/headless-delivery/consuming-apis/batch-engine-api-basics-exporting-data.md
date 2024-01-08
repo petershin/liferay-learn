@@ -21,9 +21,9 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
    unzip liferay-g4j2.zip
    ```
 
-1. 데이터를 내보내려면 내보내는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api` 설치 시 API 탐색기에서 클래스 이름을 얻을 수 있습니다. _Schemas_ 섹션까지 아래로 스크롤하고 내보낼 엔터티의 'x-class-name' 필드를 적어둡니다.
+1. 데이터를 내보내려면 내보내는 엔터티의 정규화된 클래스 이름이 있어야 합니다. `/o/api` 설치 시 API 탐색기에서 클래스 이름을 얻을 수 있습니다. **Schemas** 섹션까지 아래로 스크롤하고 내보낼 엔터티의 `x-class-name` 필드를 적어둡니다.
 
-1. Liferay 인스턴스에서 계정을 내보내려면 다음 cURL 스크립트를 사용하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 정규화된 클래스 이름 _Account_ 및 `json`을 매개변수로 사용하여 `ExportTask_POST_ToInstance.sh` 스크립트를 실행합니다. 'json' 매개변수는 내보낸 데이터의 형식을 나타냅니다. 또한 `jsont`, `jsonl` 및 `csv` 형식도 지원합니다.
+1. Liferay 인스턴스에서 계정을 내보내려면 다음 cURL 스크립트를 사용하십시오. 명령줄에서 `curl` 폴더로 이동합니다. 정규화된 클래스 이름 **Account** 및 `json`을 매개변수로 사용하여 `ExportTask_POST_ToInstance.sh` 스크립트를 실행합니다. 'json' 매개변수는 내보낸 데이터의 형식을 나타냅니다. 또한 `jsont`, `jsonl` 및 `csv` 형식도 지원합니다.
 
    ```bash
    ./ExportTask_POST_ToInstance.sh com.liferay.headless.admin.user.dto.v1_0.Account json
@@ -47,10 +47,10 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
    ```{important}
    `jsont`는 배치 클라이언트 확장과 함께 사용할 때 `*.batch-engine-dat.json` 파일에 필요한 형식입니다. 
 
-   'json' 또는 'jsonl'을 출력 형식으로 사용하면 기본적으로 모든 필드를 내보냅니다. 필드를 지정하려면 내보내려는 필드에 추가 쿼리 매개변수(`fieldNames`)를 제공해야 합니다. 각 필드는 쉼표(,)로 구분되어야 합니다. 내보내기 형식으로 'csv'를 사용하는 경우 필수 쿼리 매개변수입니다.
+   `json` 또는 `jsonl`을 출력 형식으로 사용하면 기본적으로 모든 필드를 내보냅니다. 필드를 지정하려면 내보내려는 필드에 추가 쿼리 매개변수(`fieldNames`)를 제공해야 합니다. 각 필드는 쉼표(,)로 구분되어야 합니다. 내보내기 형식으로 'csv'를 사용하는 경우 필수 쿼리 매개변수입니다.
    ```
 
-1. 현재 'executeStatus'는 'INITIAL'입니다. 배치 엔진에 작업이 제출되었음을 나타냅니다. 데이터를 다운로드하려면 'COMPLETED'가 될 때까지 기다려야 합니다. 명령줄에서 'ExportTask_GET_ById.sh' 스크립트를 실행하고 '1234'를 내보내기 작업의 ID로 바꿉니다.
+1. 현재 'executeStatus'는 'INITIAL'입니다. 배치 엔진에 작업이 제출되었음을 나타냅니다. 데이터를 다운로드하려면 'COMPLETED'가 될 때까지 기다려야 합니다. 명령줄에서 'ExportTask **GET** ById.sh' 스크립트를 실행하고 '1234'를 내보내기 작업의 ID로 바꿉니다.
 
    ```bash
    ./ExportTask_GET_ById.sh 1234
@@ -131,7 +131,7 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
 | `-u "test@liferay.com:learn"`                                                | 기본 인증 자격 증명              |
 
 ```{note}
-여기서는 데모 목적으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth2](https://learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2.html) 을 통해 사용자에게 권한을 부여해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](../using-oauth2/using-oauth2-to-authorize-users.md) 참조하세요.
+여기서는 데모 목적으로 기본 인증이 사용됩니다. 프로덕션의 경우 [OAuth 2.0 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/using-oauth2.html) 을 통해 사용자에게 권한을 부여해야 합니다. Oauth2를 사용하는 샘플 React 애플리케이션은 [OAuth2를 사용하여 사용자 인증](../using-oauth2/using-oauth2-to-authorize-users.md) 참조하세요.
 ```
 
 ## Java 클래스 검사
@@ -168,9 +168,9 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
 
 ## 내보내기 작업 상태 가져오기
 
-다음 cURL 또는 Java 명령을 실행하여 내보내기 작업의 상태를 가져올 수 있습니다. '1234'를 내보내기 작업의 ID로 바꿉니다.
+다음 cURL 또는 Java 명령을 실행하여 내보내기 작업의 상태를 가져올 수 있습니다. `1234`를 내보내기 작업의 ID로 바꿉니다.
 
-### 내보내기Task_GET_ById.sh
+### ExportTask_GET_ById.sh
 
 명령:
 
@@ -184,9 +184,9 @@ Liferay의 헤드리스 배치 엔진은 데이터 가져오기 및 내보내기
    :language: bash
 ```
 
-### 내보내기Task_GET_ById.java
+### xportTask_GET_ById.java
 
-'ExportTask_GET_ById' 클래스를 실행합니다. '1234'를 내보내기 작업의 ID로 바꿉니다.
+`ExportTask_GET_ById` 클래스를 실행합니다. `1234`를 내보내기 작업의 ID로 바꿉니다.
 
 명령:
 
@@ -204,9 +204,9 @@ java -classpath .:* -DexportTaskId=1234 ExportTask_GET_ById
 
 ## 사이트에서 데이터 내보내기
 
-다음 cURL 또는 Java 명령을 실행하여 사이트에서 데이터를 내보낼 수 있습니다. 아래 예는 사이트에서 블로그 게시물을 내보냅니다. [사이트 ID](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 찾아 '1234'를 바꾸세요. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 정규화된 클래스 이름 매개변수도 업데이트해야 합니다.
+다음 cURL 또는 Java 명령을 실행하여 사이트에서 데이터를 내보낼 수 있습니다. 아래 예는 사이트에서 블로그 게시물을 내보냅니다. [REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html#identify-the-site-containing-the-data) 찾아 '1234'를 바꾸세요. 다른 엔터티를 사용하는 경우 cURL 스크립트에서 정규화된 클래스 이름 매개변수도 업데이트해야 합니다.
 
-### 내보내기Task_POST_ToSite.sh
+### ExportTask_POST_ToSite.sh
 
 명령:
 
@@ -220,7 +220,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTask_GET_ById
    :language: bash
 ```
 
-### 내보내기Task_POST_ToSite.java
+### ExportTask_POST_ToSite.java
 
 `ExportTask_POST_ToSite` 클래스를 실행합니다. `1234`를 사이트 ID로 바꾸고 `able`을 내보내려는 클래스의 정규화된 이름으로 바꿉니다.
 
@@ -252,7 +252,7 @@ JSON 응답에는 새로 생성된 내보내기 작업의 정보가 표시됩니
 
 다음 cURL 및 Java 명령을 사용하여 내보낸 데이터를 다운로드할 수 있습니다. '1234'를 내보내기 작업의 ID로 바꿉니다. 그런 다음 현재 디렉터리에 '.zip' 파일로 다운로드됩니다.
 
-### 내보내기TaskContent_GET_ById.sh
+### ExportTaskContent_GET_ById.sh
 
 명령:
 
@@ -266,7 +266,7 @@ JSON 응답에는 새로 생성된 내보내기 작업의 정보가 표시됩니
    :language: bash
 ```
 
-### 내보내기TaskContent_GET_ById.java
+### ExportTaskContent_GET_ById.java
 
 명령
 
@@ -282,7 +282,7 @@ java -classpath .:* -DexportTaskId=1234 ExportTaskContent_GET_ById
    :lines: 11-27
 ```
 
-[API Explorer](https://learn.liferay.com/dxp/latest/en/headless-delivery/consuming-apis/consuming-rest-services.html) 에는 모든 헤드리스 배치 엔진 서비스 및 스키마가 나열되어 있으며 각 서비스를 시험해 볼 수 있는 인터페이스가 있습니다.
+[REST 서비스 사용](https://learn.liferay.com/dxp/latest/ko/headless-delivery/consuming-apis/consuming-rest-services.html) 에는 모든 헤드리스 배치 엔진 서비스 및 스키마가 나열되어 있으며 각 서비스를 시험해 볼 수 있는 인터페이스가 있습니다.
 
 ## 관련 주제
 

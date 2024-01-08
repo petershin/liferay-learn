@@ -1,6 +1,6 @@
 # 자산 활성화
 
-Liferay의 다양한 애플리케이션(예: 블로그, 문서 및 미디어, 게시판 등) 즉시 자산을 사용할 수 있습니다. [게시자 위젯](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) 을 사용하여 자산을 게시하거나 자산 라이브러리 [을](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) 생성할 수도 있습니다. [Service Builder](../service-builder.md) 의 도움으로 맞춤형 애플리케이션을 자산 활성화할 수 있습니다. 방법을 알아보려면 아래 샘플 프로젝트를 참조하세요.
+Liferay의 다양한 애플리케이션(예: 블로그, 문서 및 미디어, 게시판 등) 즉시 자산을 사용할 수 있습니다. [게시자 위젯](../../../site-building/displaying-content/using-the-asset-publisher-widget/displaying-assets-using-the-asset-publisher-widget.md) 을 사용하여 자산을 게시하거나 자산 라이브러리 [을](../../../content-authoring-and-management/asset-libraries/asset-libraries-overview.md) 생성할 수도 있습니다. [서비스 빌더](../service-builder.md) 의 도움으로 맞춤형 애플리케이션을 자산 활성화할 수 있습니다. 방법을 알아보려면 아래 샘플 프로젝트를 참조하세요.
 
 ## 샘플 코드 받기
 
@@ -55,7 +55,7 @@ Liferay의 다양한 애플리케이션(예: 블로그, 문서 및 미디어, �
 `*ModelSearchConfigurator.java` - 애플리케이션 엔터티(예: `com.acme.s5e6.search.S5E6EntryModelSearchConfigurator.java` 클래스)에 대한 검색 프레임워크에 검색 서비스를 등록합니다.
 
 ```{note}
-'ModelSearchConfigurator' 패턴은 Liferay 2023.Q4+ 및 GA/Update 100+에 적용됩니다. 이전 버전에서는 'SearchRegistrar'를 사용했습니다. 'SearchRegistrar'를 구현하려면  [Liferay 7.2 문서](https://help.liferay.com/hc/en-us/articles/360032611231-Search-Service-Registration) 참조하세요.
+'ModelSearchConfigurator' 패턴은 Liferay 2023.Q4+ 및 GA/Update 100+에 적용됩니다. 이전 버전에서는 'SearchRegistrar'를 사용했습니다. 'SearchRegistrar'를 구현하려면  [Liferay 7.2 문서](https://help.liferay.com/hc/ko/articles/360032611231-Search-Service-Registration) 참조하세요.
 ```
 
 `*ModelIndexerWriterContributor.java` - 항목의 재인덱싱 및 일괄 재인덱싱 동작을 구성합니다(예: `com.acme.s5e6.search.S5E6EntryModelIndexerWriterContributor.java` 클래스).

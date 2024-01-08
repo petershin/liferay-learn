@@ -2,7 +2,7 @@
 
 `object-admin` 서비스는 필드 추가와 같은 객체 정의에 대한 CRUD 작업을 수행하기 위한 REST API를 제공합니다. 여기에서는 이러한 API를 사용하여 Distributor Application 개체에 비즈니스 및 신용 참조 필드를 추가합니다.
 
-1. 이 연습을 위한 [리소스](./liferay-p6k3.zip)를 다운로드하고 압축을 풉니다.
+1. 이 연습을 위한 [리소스](./liferay-p6k3.zip) 를 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/courses/latest/en/application-development/modeling-data-structures/liferay-p6k3.zip -O

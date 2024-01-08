@@ -20,4 +20,4 @@
 
 ![The path analysis data can be filtered by segments](./paths/images/02.png)
 
-_필터_를 클릭하고 보려는 세그먼트를 선택하세요. 세그먼트에 대해 자세히 알아보려면 [세그먼트 만들기](../../people/segments/creating-segments.md)를 참조하세요.
+**필터** 를 클릭하고 보려는 세그먼트를 선택하세요. 세그먼트에 대해 자세히 알아보려면 [세그먼트 만들기](../../people/segments/creating-segments.md)를 참조하세요.

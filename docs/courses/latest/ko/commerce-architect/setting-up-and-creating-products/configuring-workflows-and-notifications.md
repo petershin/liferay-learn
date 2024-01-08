@@ -88,7 +88,7 @@ Fabulous Frames의 주문 관리자인 Noah Norman은 예산상의 이유로 구
 
    `orderStatus=10`
 
-   각 [주문 상태](https://learn.liferay.com/web/guest/w/commerce/order-management/orders/order-life-cycle)는 정수에 해당합니다. 자세한 내용은 아래를 참조하세요.
+   각 [주문 상태](https://learn.liferay.com/web/guest/w/commerce/order-management/orders/order-life-cycle) 는 정수에 해당합니다. 자세한 내용은 아래를 참조하세요.
 
    | 주문 상태. | 정수값 |
    | :----- | :-- |

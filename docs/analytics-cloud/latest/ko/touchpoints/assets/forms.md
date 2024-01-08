@@ -1,14 +1,14 @@
 # 양식
 
-[Forms](https://learn.liferay.com/dxp/latest/en/process-automation/forms/introduction-to-forms.html) 은 기업을 위한 중요한 직접 데이터 수집 도구입니다. 귀하의 웹 양식이 귀중한 정보를 제공하고 있습니까, 아니면 사용자를 외면하고 있습니까? Analytics Cloud는 중요한 통찰력을 제공합니다.
+[양식 소개](https://learn.liferay.com/dxp/latest/ko/process-automation/forms/introduction-to-forms.html) 은 기업을 위한 중요한 직접 데이터 수집 도구입니다. 귀하의 웹 양식이 귀중한 정보를 제공하고 있습니까, 아니면 사용자를 외면하고 있습니까? Analytics Cloud는 중요한 통찰력을 제공합니다.
 
 ![Forms metrics are presented in a table with submission, view, abandonment, and completion time statistics.](forms/images/01.png)
 
-사이트 양식 목록이 다양한 측정항목과 함께 표시됩니다. 이 데이터를 CSV 파일로 다운로드하려면 _보고서 다운로드_를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
+사이트 양식 목록이 다양한 측정항목과 함께 표시됩니다. 이 데이터를 CSV 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
 
 ## 방문자 행동
 
-모든 자산 유형과 마찬가지로 방문자 행동 차트는 페이지 상단에 있으며 여러 추세선이 있는 선 그래프를 제공합니다. 이 대시보드 보기를 PDF 파일로 다운로드하려면 _보고서 다운로드_를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
+모든 자산 유형과 마찬가지로 방문자 행동 차트는 페이지 상단에 있으며 여러 추세선이 있는 선 그래프를 제공합니다. 이 대시보드 보기를 PDF 파일로 다운로드하려면 **보고서 다운로드** 를 클릭하세요. 자세한 내용은 [보고서 다운로드](../../reference/downloading-reports.md) 참조하세요.
 
 방문자 행동이라는 첫 번째 차트에는 네 가지 중요한 측정항목이 포함되어 있습니다.
 
@@ -78,7 +78,7 @@
 
 ![Forms users can also be viewed by technology.](forms/images/05.png)
 
-선택한 기간 동안 상위 8개 웹 브라우저를 표시하는 도넛 차트를 보려면 _브라우저_를 클릭하세요. 해당하는 경우 나머지 웹 브라우저는 9번째 도넛 세그먼트에 집계됩니다.
+선택한 기간 동안 상위 8개 웹 브라우저를 표시하는 도넛 차트를 보려면 **브라우저** 를 클릭하세요. 해당하는 경우 나머지 웹 브라우저는 9번째 도넛 세그먼트에 집계됩니다.
 
 ## 자산 표시 사이트
 

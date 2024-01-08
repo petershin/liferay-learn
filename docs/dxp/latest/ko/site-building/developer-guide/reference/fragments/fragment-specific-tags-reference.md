@@ -352,7 +352,7 @@ W3C HTML 표준에 따르면 맞춤 요소는 자동으로 닫힐 수 없습니�
 ]
 ```
 
-이 샘플 코드를 사용하여 페이지의 대상 언어에 따라 버튼 유형을 변경할 수 있습니다. 다음 예에서 **Contact Us_/_Contacto** 버튼 조각은 `buttonType` 필드에 대해 `localized` 속성을 `true`로 설정합니다. 예제에서는 페이지에서 en-US 언어(A)를 사용할 때 **Primary** 버튼 유형을 구성하고 페이지에서 es-ES(B)를 사용할 때 **Outline Primary** 유형을 구성하기 위해 이 특성을 사용합니다.
+이 샘플 코드를 사용하여 페이지의 대상 언어에 따라 버튼 유형을 변경할 수 있습니다. 다음 예에서 **Contact Us**/**Contacto** 버튼 조각은 `buttonType` 필드에 대해 `localized` 속성을 `true`로 설정합니다. 예제에서는 페이지에서 en-US 언어(A)를 사용할 때 **Primary** 버튼 유형을 구성하고 페이지에서 es-ES(B)를 사용할 때 **Outline Primary** 유형을 구성하기 위해 이 특성을 사용합니다.
 
 ![Localizable elements in the fragment show the flag icon under the General tab and support different configurations for different languages.](./fragment-specific-tags-reference/images/04.png)
 

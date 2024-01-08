@@ -4,7 +4,7 @@
 
 알림 템플릿을 사용하면 Liferay 서비스에 대한 자동화된 이메일 및 사용자 알림을 디자인할 수 있습니다. 각 템플릿은 보낸 사람, 받는 사람 및 메시지 내용을 식별합니다. 템플릿을 디자인하는 동안 지원되는 엔터티를 검색하고 해당 데이터를 이메일에 동적으로 삽입하는 필드 참조를 추가할 수 있습니다.
 
-현재 알림 템플릿은 [개체 작업](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) 만 지원합니다. 그러나 상거래 채널에는 채널 이벤트에 대한 알림 템플릿 기능이 내장되어 있습니다. 자세한 내용은 [스토어 이메일](https://learn.liferay.com/commerce/latest/en/store-management/sending-emails.html) 참조하세요.
+현재 알림 템플릿은 [개체 작업](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) 만 지원합니다. 그러나 상거래 채널에는 채널 이벤트에 대한 알림 템플릿 기능이 내장되어 있습니다. 자세한 내용은 [이메일 보내기](https://learn.liferay.com/commerce/latest/ko/store-management/sending-emails.html) 참조하세요.
 
 !!! important
 이메일 알림을 사용하려면 인스턴스에 [메일 서버](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) 가 구성되어 있어야 합니다. 일단 구성되면 인스턴스 수준에서 추가 [이메일 알림 설정](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) 에 액세스할 수 있습니다.
@@ -13,9 +13,9 @@
 
 ## 이메일 알림 템플릿 추가
 
-1. _전역 메뉴_(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _알림 템플릿_을 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **알림 템플릿** 을 클릭합니다.
 
-1. _추가_(![추가 버튼](../../images/icon-add.png))를 클릭하고 _이메일_을 선택합니다.
+1. **추가**(![추가 버튼](../../images/icon-add.png))를 클릭하고 **이메일** 을 선택합니다.
 
    ![Click the Add button and select Email.](./creating-notification-templates/images/01.png)
 
@@ -54,15 +54,15 @@
 
    ![Select attachment fields to include assets in email notifications.](./creating-notification-templates/images/06.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 일단 생성되면 개체 작업과 함께 알림 템플릿을 사용할 수 있습니다. 자세한 내용은 [개체 작업 정의](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) 참조하세요.
 
 ## 사용자 알림 템플릿 추가
 
-1. _전역 메뉴_(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _알림 템플릿_을 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **알림 템플릿** 을 클릭합니다.
 
-1. _추가_(![추가 버튼](../../images/icon-add.png))를 클릭하고 _사용자 알림_을 선택합니다.
+1. **추가**(![추가 버튼](../../images/icon-add.png))를 클릭하고 **사용자 알림** 을 선택합니다.
 
    ![Click the Add Button and select User Notification.](./creating-notification-templates/images/07.png)
 
@@ -79,7 +79,7 @@
    정의된 용어, 사용자 이름 또는 사용자 역할을 사용할 수 있습니다. 여러 명의 수신자를 추가하려면 값을 쉼표나 공백으로 구분하세요(예: `[%TICKET_AUTHOR_ID%]`, `[%TICKET_R_ASSIGNEE_USERID%]`).
 
    !!! important
-       수신자를 동적으로 설정하면 [객체 항목 추가 권한](../../building-applications/objects/understanding-object-integrations/permissions-framework-integration.md#creating-entries)이 있는 사용자만 수신할 수 있습니다. 알림.
+       수신자를 동적으로 설정하면 [객체 항목 추가 권한](../../building-applications/objects/understanding-object-integrations/permissions-framework-integration.md#creating-entries) 이 있는 사용자만 수신할 수 있습니다. 알림.
 
    ![Determine recipients by entering terms, individual user names, or user roles.](./creating-notification-templates/images/10.png)
 
@@ -89,7 +89,7 @@
 
    ![Enter the notification's message in the Content section.](./creating-notification-templates/images/11.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 일단 생성되면 개체 작업과 함께 알림 템플릿을 사용할 수 있습니다. 자세한 내용은 [개체 작업 정의](../../building-applications/objects/creating-and-managing-objects/actions/defining-object-actions.md) 참조하세요.
 
@@ -139,6 +139,6 @@
 
 ## 관련 주제
 
-* [메일 구성](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md) 
-* [이메일 설정](../../system-administration/configuring-liferay/virtual-instances/email-settings.md) 
-* [알림](../notifications.md) 
+* [메일 구성](../../installation-and-upgrades/setting-up-liferay/configuring-mail.md)
+* [이메일 설정](../../system-administration/configuring-liferay/virtual-instances/email-settings.md)
+* [알림](../notifications.md)

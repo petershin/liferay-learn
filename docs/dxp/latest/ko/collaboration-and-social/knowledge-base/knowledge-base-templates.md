@@ -8,17 +8,17 @@
 
 ## 템플릿 만들기
 
-1. _사이트 메뉴_(![사이트 메뉴](../../images/icon-menu.png))를 열고 _콘텐츠 및 데이터_ &rarr; _기술 자료_로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../images/icon-menu.png))를 열고 **콘텐츠 및 데이터** &rarr; **기술 자료** 로 이동합니다.
 
-1. _템플릿_(![템플릿](../../images/icon-page-template.png))으로 이동하여 _추가_(![추가 버튼](../../images/icon- add.png)).
+1. **템플릿**(![템플릿](../../images/icon-page-template.png))으로 이동하여 **추가**(![추가 버튼](../../images/icon-add.png)).
 
 1. 템플릿의 제목을 입력합니다.
 
-1. WYSIWYG 편집기를 사용하여 템플릿을 디자인합니다. 기사의 HTML 소스를 보거나 편집하려면 편집기에서 _소스_ 버튼(![소스](../../images/icon-code.png))을 클릭하세요. 양식의 권한 섹션을 통해 템플릿의 권한을 설정할 수도 있습니다.
+1. WYSIWYG 편집기를 사용하여 템플릿을 디자인합니다. 기사의 HTML 소스를 보거나 편집하려면 편집기에서 **소스** 버튼(![소스](../../images/icon-code.png))을 클릭하세요. 양식의 권한 섹션을 통해 템플릿의 권한을 설정할 수도 있습니다.
 
    ![Enter a title and content.](./knowledge-base-templates/images/02.png)
 
-1. _게시_를 클릭하여 템플릿 생성을 완료하세요.
+1. **게시** 를 클릭하여 템플릿 생성을 완료하세요.
 
 ## 템플릿 관리
 
@@ -36,5 +36,5 @@
 
 ## 관련 주제
 
-* [기술 자료 문서 작성](./creating-knowledge-base-articles.md) 
-* [지식 베이스 관리](./managing-the-knowledge-base.md) 
+* [기술 자료 문서 작성](./creating-knowledge-base-articles.md)
+* [지식 베이스 관리](./managing-the-knowledge-base.md)

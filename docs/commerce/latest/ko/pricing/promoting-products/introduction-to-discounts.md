@@ -24,7 +24,7 @@
 
 ![Activate the coupon code feature and enter a coupon code for this discount type.](./introduction-to-discounts/images/01.png)
 
-쿠폰 코드를 수락하려면 매장의 [결제](../../creating-store-content/commerce-storefront-pages/checkout.md) 페이지에 _쿠폰 코드 입력_ 위젯을 추가해야 합니다. 결제 페이지는 [Minium 사이트](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) 에서 바로 사용할 수 있습니다.
+쿠폰 코드를 수락하려면 매장의 [결제](../../creating-store-content/commerce-storefront-pages/checkout.md) 페이지에 **쿠폰 코드 입력** 위젯을 추가해야 합니다. 결제 페이지는 [Minium 사이트](../../starting-a-store/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) 에서 바로 사용할 수 있습니다.
 
 ![Place the Coupon Code Entry widget on the Checkout page.](./introduction-to-discounts/images/02.png)
 
@@ -48,9 +48,9 @@
 | 이 제품 다 있어요        | 할인을 받으려면 주문에 지정된 모든 제품이 포함되어야 합니다.                |
 | 다음 제품 중 하나가 있습니다. | 할인을 받으려면 주문에 지정된 제품 목록 중 하나 이상의 제품이 포함되어 있어야 합니다. |
 
-_규칙_ 섹션에서 할인 규칙을 추가할 수 있습니다. 개발자는 또한 새로운 할인 규칙을 [수도 있습니다](../../developer-guide/promotions/adding-a-new-discount-rule-type.md) .
+**규칙** 섹션에서 할인 규칙을 추가할 수 있습니다. 개발자는 또한 새로운 할인 규칙을 [수도 있습니다](../../developer-guide/promotions/adding-a-new-discount-rule-type.md) .
 
-_이러한 제품이 모두 있음_ 또는 _이러한 제품 중 하나가 있음_ 규칙을 사용하는 경우 카탈로그에서 할인을 받을 수 있는 제품을 선택하세요.
+**이러한 제품이 모두 있음** 또는 **이러한 제품 중 하나가 있음** 규칙을 사용하는 경우 카탈로그에서 할인을 받을 수 있는 제품을 선택하세요.
 
 ![The available discount rule types.](./introduction-to-discounts/images/05.png)
 

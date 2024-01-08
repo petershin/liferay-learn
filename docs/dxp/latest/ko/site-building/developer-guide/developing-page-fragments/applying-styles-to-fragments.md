@@ -1,6 +1,6 @@
 # 조각에 스타일 적용
 
-페이지에 조각을 추가할 때 사이드바 메뉴를 사용하여 _스타일_ 구성 탭 [*스타일* 구성 탭](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles) 포함한 조각을 구성할 수 있습니다.
+페이지에 조각을 추가할 때 사이드바 메뉴를 사용하여 **스타일** 구성 탭 [**스타일** 구성 탭](../../creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments.md#styles) 포함한 조각을 구성할 수 있습니다.
 
 ![The Styles tab in the sidebar menu allows you to configure the styles per fragment on a page.](./applying-styles-to-fragments/images/01.png)
 
@@ -10,7 +10,7 @@
 
 {bdg-secondary}`liferay 7.4 U31+ 및 GA31+`
 
-스타일이 적용되는 방식을 변경하려면 조각의 HTML 구성을 변경해야 합니다. 조각에 포함된 요소에 'data-lfr-styles' 속성을 추가하면 해당 요소에 적용된 스타일이 해당 특정 요소에 대신 적용되도록 할 수 있습니다. _조각당 하나의 `data-lfr-styles` 속성만 허용됩니다._
+스타일이 적용되는 방식을 변경하려면 조각의 HTML 구성을 변경해야 합니다. 조각에 포함된 요소에 `data-lfr-styles` 속성을 추가하면 해당 요소에 적용된 스타일이 해당 특정 요소에 대신 적용되도록 할 수 있습니다. **조각당 하나의 `data-lfr-styles` 속성만 허용됩니다.**
 
 예를 들어, 이 HTML로 간단한 사용자 정의 조각을 구성하고 스타일 변경을 적용하면 전체 조각에 적용됩니다(렌더링될 때 HTML을 묶기 위해 외부 `<div>` 태그를 추가하여).
 
@@ -48,7 +48,7 @@
 
 원하는 조각 편집 방법을 사용하여 `data-lfr-styles` 속성을 추가할 수 있습니다.
 
-* **UI에서 [조각 편집기](./using-the-fragments-editor.md) 사용**: 편집기의 HTML 창에서 변경합니다.
+* **UI에서 [조각 편집기](./using-the-fragments-editor.md) 사용** : 편집기의 HTML 창에서 변경합니다.
 * **[조각 툴킷](./using-the-fragments-toolkit.md)** 사용: 조각의 `index.html` 파일에서 변경합니다.
 
 ## 관련 주제

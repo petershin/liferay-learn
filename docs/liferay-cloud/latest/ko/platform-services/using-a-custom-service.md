@@ -37,7 +37,6 @@ Liferay Cloud는 Docker 이미지를 서비스의 기반으로 사용합니다. 
     LCP.json 파일에서 새 서비스에 대한 메모리 및 CPU 할당을 직접 설정하여 올바른 양의 하드웨어 리소스를 가져오도록 합니다.
     ```
 
-
 1. `LCP.json`에서 사용자 지정 서비스를 적용할 환경을 지정합니다. 새 서비스에 대해 프로비저닝한 리소스 수에 따라 달라질 수 있습니다.
    
    예를 들어 빌드를 `prd` 환경에만 적용하려면 `LCP.json`에 다음 속성을 추가합니다.
@@ -62,7 +61,7 @@ Liferay Cloud는 Docker 이미지를 서비스의 기반으로 사용합니다. 
       "image": "mydockerimages/myservice:1.0.0"
       ```
 
-    * **로컬 Dockerfile을 사용하는 경우:** Dockerfile을 사용자 지정 서비스의 디렉터리에 추가합니다. 서비스가 빌드되면 Dockerfile의 Docker 이미지가 자동으로 서비스 이미지로 선택됩니다. 
+    * **로컬 Dockerfile을 사용하는 경우:** Dockerfile을 사용자 지정 서비스의 디렉터리에 추가합니다. 서비스가 빌드되면 Dockerfile의 Docker 이미지가 자동으로 서비스 이미지로 선택됩니다.
 
       ```{note}
       Dockerfile은 자동으로 서비스의 이미지로 사용됩니다. 결과적으로 LCP.json의 모든 "이미지" 속성은 무시됩니다.

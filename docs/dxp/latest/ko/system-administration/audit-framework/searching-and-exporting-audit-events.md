@@ -54,17 +54,17 @@
 
 {bdg-secondary}`liferay DXP 7.4 U81+/GA81+`
 
-타사 시스템에서 감사 이벤트를 분석하기 위해 Liferay는 감사 이벤트를 CSV로 내보내기를 지원합니다. 이렇게 하려면 글로벌 메뉴를 열고 _제어판_ &rarr; _감사_로 이동합니다. 페이지 상단의 _작업_(![작업](../../images/icon-actions.png)) 아이콘을 클릭하고 _감사 이벤트 내보내기_를 선택합니다.
+타사 시스템에서 감사 이벤트를 분석하기 위해 Liferay는 감사 이벤트를 CSV로 내보내기를 지원합니다. 이렇게 하려면 글로벌 메뉴를 열고 **제어판** &rarr; **감사** 로 이동합니다. 페이지 상단의 **작업**(![작업](../../images/icon-actions.png)) 아이콘을 클릭하고 **감사 이벤트 내보내기** 를 선택합니다.
 
 그러면 Liferay 인스턴스에서 모든 감사 이벤트가 내보내집니다. 하위 집합을 내보내려면 단순 검색이나 고급 검색을 사용하여 결과 집합을 얻은 다음 내보내기 기능을 사용할 수 있습니다. 예를 들어, 특정 사용자의 `LOGIN` 이벤트만 보고 싶다면,
 
 1. 검색창에 'login'을 입력하고 돋보기 아이콘을 클릭하세요.
 
-1. 페이지 상단에 있는 _작업_(![작업](../../images/icon-actions.png)) 아이콘을 클릭합니다.
+1. 페이지 상단에 있는 **작업**(![작업](../../images/icon-actions.png)) 아이콘을 클릭합니다.
 
    ![Exporting audit events for user log in to CSV.](./searching-and-exporting-audits-events/images/01.png)
 
-1. _감사 이벤트 내보내기_를 선택합니다.
+1. **감사 이벤트 내보내기** 를 선택합니다.
 
 ![The CSV file contains all the information associated to login events audited by Liferay.](./searching-and-exporting-audits-events/images/02.png)
 

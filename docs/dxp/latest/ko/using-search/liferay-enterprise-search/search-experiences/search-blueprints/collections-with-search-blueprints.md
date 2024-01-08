@@ -6,7 +6,7 @@
 검색 청사진을 생성하면 [컬렉션 공급자](../../../../site-building/displaying-content/collections-and-collection-pages/collection-providers.md) 자동으로 등록됩니다. 청사진의 쿼리 및 구성과 일치하는 자산이 컬렉션에 추가됩니다.
 
 ```{important}
-Liferay의 [Asset Framework](../../../../building-applications/data-frameworks/asset-framework.md) 에 등록된 콘텐츠만 청사진 수집 공급자에 의해 반환됩니다.
+Liferay의 [자산 프레임워크](../../../../building-applications/data-frameworks/asset-framework.md) 에 등록된 콘텐츠만 청사진 수집 공급자에 의해 반환됩니다.
 ```
 
 ![Search blueprints are registered as collection providers.](./collections-with-search-blueprints/images/01.png)
@@ -43,7 +43,7 @@ Liferay의 [Asset Framework](../../../../building-applications/data-frameworks/a
 
    ![Three events are added to the Calendar widget.](./collections-with-search-blueprints/images/03.png)
 
-1. 응용 프로그램 메뉴(![전역 메뉴](../../../../images/icon-applications-menu.png))에서 _Blueprints_를 엽니다.
+1. 응용 프로그램 메뉴(![전역 메뉴](../../../../images/icon-applications-menu.png))에서 **Blueprints** 를 엽니다.
 
 1. 요소 탭에서 다음 JSON을 사용하여 새 맞춤 요소를 추가합니다.
 
@@ -87,15 +87,15 @@ Liferay의 [Asset Framework](../../../../building-applications/data-frameworks/a
 
 1. Blueprints 탭에서 미래의 캘린더 이벤트만 일치하도록 Blueprint를 구축합니다.
 
-   * 제목: _Future Calendar Events Provider_를 입력하세요.
-   * 쿼리 설정: 검색 가능 유형에서 _캘린더 이벤트_를 선택하세요.
-   * 쿼리 요소: _향후 이벤트에 대한 결과 제한_ 요소를 추가합니다.
+   * 제목: **Future Calendar Events Provider** 를 입력하세요.
+   * 쿼리 설정: 검색 가능 유형에서 **캘린더 이벤트** 를 선택하세요.
+   * 쿼리 요소: **향후 이벤트에 대한 결과 제한** 요소를 추가합니다.
 
 1. 청사진을 저장합니다.
 
 1. 사이트 메뉴(![사이트 메뉴](../../../../images/icon-product-menu.png))에서 다가오는 이벤트라는 콘텐츠 페이지를 추가합니다.
 
-1. 컬렉션 표시 조각을 페이지에 추가하고 _Future Calendar Events Provider_ 컬렉션 공급자를 선택합니다.
+1. 컬렉션 표시 조각을 페이지에 추가하고 **Future Calendar Events Provider** 컬렉션 공급자를 선택합니다.
 
    글머리 기호 목록을 표시하도록 컬렉션 표시 조각을 구성합니다.
 

@@ -4,38 +4,38 @@ Liferay의 권한 프레임워크를 사용하면 문서 및 미디어 자산을
 
 ## 개별 파일에 대한 권한
 
-1. _문서 및 미디어_ 애플리케이션으로 이동합니다.
+1. **문서 및 미디어** 애플리케이션으로 이동합니다.
 
-1. 원하는 파일에 대해 _작업_(![작업 버튼](../../../../images/icon-actions.png))을 클릭하고 _권한_을 선택합니다.
+1. 원하는 파일에 대해 **작업**(![작업 버튼](../../../../images/icon-actions.png))을 클릭하고 **권한** 을 선택합니다.
 
    ![Click the Actions button for the desired file and select Permissions.](permissions-and-documents/images/01.png)
 
 1. 원하는 권한을 설정하세요.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 전체 폴더에 대한 권한
 
-1. _문서 및 미디어_ 애플리케이션으로 이동합니다.
+1. **문서 및 미디어** 애플리케이션으로 이동합니다.
 
-1. 원하는 폴더에 대해 _작업_(![작업 버튼](../../../../images/icon-actions.png))을 클릭하고 _권한_을 선택합니다. 자세한 내용은 [폴더 사용](../../uploading-and-managing/using-folders.md) 참조하세요.
+1. 원하는 폴더에 대해 **작업**(![작업 버튼](../../../../images/icon-actions.png))을 클릭하고 **권한** 을 선택합니다. 자세한 내용은 [폴더 사용](../../uploading-and-managing/using-folders.md) 참조하세요.
 
    ![Click the Actions button for the desired folder and select Permissions.](permissions-and-documents/images/01.png)
 
 1. 원하는 권한을 설정하세요.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 특정 파일 형식에 대한 권한
 
-1. _문서 및 미디어_ 애플리케이션으로 이동하여 _문서 유형_ 탭을 클릭합니다.
+1. **문서 및 미디어** 애플리케이션으로 이동하여 **문서 유형** 탭을 클릭합니다.
 
    ![Click the Document Types tab.](permissions-and-documents/images/03.png)
 
-1. 원하는 문서 유형에 대해 _작업_(![작업 버튼](../../../../images/icon-actions.png))을 클릭하고 _권한_을 선택합니다. 자세한 내용은 [문서 유형 정의](../../uploading-and-managing/managing-metadata/defining-document-types.md) 참조하십시오.
+1. 원하는 문서 유형에 대해 **작업**(![작업 버튼](../../../../images/icon-actions.png))을 클릭하고 **권한** 을 선택합니다. 자세한 내용은 [문서 유형 정의](../../uploading-and-managing/managing-metadata/defining-document-types.md) 참조하십시오.
 
    ![Click the Actions button for the desired document type and select Permissions.](permissions-and-documents/images/04.png)
 
 1. 원하는 권한을 설정하세요.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.

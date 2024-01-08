@@ -1,23 +1,23 @@
 # 기본 조각 참조
 
-Liferay는 즉시 사용 가능한 다양한 조각을 제공하므로 솔루션 구축을 즉시 시작할 수 있습니다. 사용 가능한 조각을 보려면 콘텐츠 페이지 또는 페이지 템플릿 편집을 시작하세요. 편집하는 동안 편집 사이드바 메뉴에서 _조각 및 위젯_ 탭( ![조각 및 위젯](../../../../images/icon-plus.png) )을 엽니다.
+Liferay는 즉시 사용 가능한 다양한 조각을 제공하므로 솔루션 구축을 즉시 시작할 수 있습니다. 사용 가능한 조각을 보려면 콘텐츠 페이지 또는 페이지 템플릿 편집을 시작하세요. 편집하는 동안 편집 사이드바 메뉴에서 **조각 및 위젯** 탭( ![조각 및 위젯](../../../../images/icon-plus.png) )을 엽니다.
 
 조각은 다음 세트로 구성됩니다.
 
-- [기본 조각 참조](#default-fragments-reference) 
-  - [레이아웃 요소](#layout-elements) 
-  - [기본 구성품](#basic-components) 
-  - [양식 구성 요소](#form-components) 
-  - [콘텐츠 표시](#content-display) 
-  - [계정](#account) 
-  - [카트](#cart) 
-  - [추천 콘텐츠](#featured-content) 
-    - [배너](#banners) 
-    - [기능](#features) 
-    - [하이라이트](#highlights) 
-  - [바닥글](#footers) 
-  - [탐색 모음](#navigation-bars) 
-  - [메뉴 표시](#menu-display) 
+- [기본 조각 참조](#default-fragments-reference)
+  - [레이아웃 요소](#layout-elements)
+  - [기본 구성품](#basic-components)
+  - [양식 구성 요소](#form-components)
+  - [콘텐츠 표시](#content-display)
+  - [계정](#account)
+  - [카트](#cart)
+  - [추천 콘텐츠](#featured-content)
+    - [배너](#banners)
+    - [기능](#features)
+    - [하이라이트](#highlights)
+  - [바닥글](#footers)
+  - [탐색 모음](#navigation-bars)
+  - [메뉴 표시](#menu-display)
 
 ```{note}
 사용 가능한 구성 옵션은 조각 및 조각 하위 요소에 따라 다릅니다. 자세한 내용은 [조각 구성](./configuring-fragments.md) 참조하세요.
@@ -26,12 +26,12 @@ Liferay는 즉시 사용 가능한 다양한 조각을 제공하므로 솔루션
 
 {bdg-secondary}`Liferay 7.3+의 경우`
 
-레이아웃 요소는 페이지 및 템플릿 레이아웃을 디자인하기 위한 드롭 영역을 정의합니다. 기본적으로 Liferay에는 _컨테이너_와 _그리드_라는 두 가지 레이아웃 요소가 포함되어 있습니다.
+레이아웃 요소는 페이지 및 템플릿 레이아웃을 디자인하기 위한 드롭 영역을 정의합니다. 기본적으로 Liferay에는 **컨테이너** 와 **그리드** 라는 두 가지 레이아웃 요소가 포함되어 있습니다.
 
 | 단편                               | 묘사                                                    |
 | :------------------------------- | :---------------------------------------------------- |
-| 컨테이너(이전 _패널_) | 구성 가능한 드롭 영역을 추가합니다.                                  |
-| 그리드(이전 _행_)   | 여러 드롭존 모듈을 추가합니다. 이러한 모듈은 수직 또는 수평으로 구성 및 배열될 수 있습니다. |
+| 컨테이너(이전 **패널**) | 구성 가능한 드롭 영역을 추가합니다.                                  |
+| 그리드(이전 **행**)   | 여러 드롭존 모듈을 추가합니다. 이러한 모듈은 수직 또는 수평으로 구성 및 배열될 수 있습니다. |
 
 ## 기본 컴포넌트
 
@@ -53,7 +53,7 @@ Liferay는 즉시 사용 가능한 다양한 조각을 제공하므로 솔루션
 | 사회                                      | 각 플랫폼의 페이지에 연결할 수 있는 Facebook, Twitter 및 LinkedIn 아이콘이 포함된 [이미지 요소](./configuring-fragments/fragment-sub-elements-reference.md) 을 추가합니다.                                                                                                                                   |
 | 스페이스                                    | 페이지의 조각 사이에 가로 공백을 추가합니다. 높이를 구성할 수 있습니다.                                                                                                                                                                                                                                             |
 | Tabs                                    | [간단한 텍스트 요소](./configuring-fragments/fragment-sub-elements-reference.md) 과 위젯 및 기타 조각을 추가하기 위한 개별 드롭 영역이 있는 여러 탭을 추가합니다.                                                                                                                                                   |
-| 비디오 URL(이전 _비디오 조각_) | YouTube 또는 문서 및 미디어의 비디오를 페이지나 템플릿에 포함합니다. 비디오를 자동 재생, 반복, 음소거 또는 숨기기 컨트롤로 설정할 수 있습니다. 최종 사용자에게 비디오 컨트롤을 숨길 수도 있습니다. 자세한 내용은 [비디오 삽입](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) 참조하십시오.   |
+| 비디오 URL(이전 **비디오 조각**) | YouTube 또는 문서 및 미디어의 비디오를 페이지나 템플릿에 포함합니다. 비디오를 자동 재생, 반복, 음소거 또는 숨기기 컨트롤로 설정할 수 있습니다. 최종 사용자에게 비디오 컨트롤을 숨길 수도 있습니다. 자세한 내용은 [비디오 삽입](../../../../content-authoring-and-management/documents-and-media/videos/embedding-videos-into-liferay-assets-and-pages.md) 참조하십시오.   |
 
 ## 양식 컴포넌트
 
@@ -113,7 +113,7 @@ Liferay는 즉시 사용 가능한 다양한 조각을 제공하므로 솔루션
 
 ## 추천 컨텐츠
 
-추천 콘텐츠 조각은 여러 구성 요소로 구성된 복잡한 페이지 요소입니다. 조각의 레이아웃을 미리 보려면 조각 및 위젯 패널에서 _카드 보기_( ![카드 보기](../../../../images/icon-cards2.png) )로 전환하세요. Liferay에는 다음과 같은 주요 콘텐츠 조각이 포함되어 있습니다.
+추천 콘텐츠 조각은 여러 구성 요소로 구성된 복잡한 페이지 요소입니다. 조각의 레이아웃을 미리 보려면 조각 및 위젯 패널에서 **카드 보기**( ![카드 보기](../../../../images/icon-cards2.png) )로 전환하세요. Liferay에는 다음과 같은 주요 콘텐츠 조각이 포함되어 있습니다.
 
 ```{note}
 Liferay DXP/Portal 7.3의 경우 각 조각의 *정보* 아이콘(![정보](../../../../images/icon-information.png)) 위로 마우스를 가져가면 레이아웃을 미리 볼 수 있습니다.

@@ -142,11 +142,11 @@ Liferay 7.4에 추가된 사용자는 한 필드에 날짜와 시간을 모두 �
 
 숫자 필드에 대한 몇 가지 흥미로운 고급 필드 설정이 있습니다.
 
-* **[Require Confirmation](#field-confirmation)** 은 사용자가 데이터를 올바르게 입력했는지 확인합니다.
+* ** [Require Confirmation](#field-confirmation) ** 은 사용자가 데이터를 올바르게 입력했는지 확인합니다.
 * **[유효성 검사](./validating-text-and-numeric-field-entries.md)** 사전 구성된 요구 사항에 대한 사용자 입력을 제한합니다.
       ![숫자 입력을 확인합니다.](./forms-field-types-reference/images/25.png)
 
-* **[입력 마스크](./validating-text-and-numeric-field-entries.md#masking-numeric-fields)** 을 사용하면 사용자가 숫자 데이터를 입력할 때 올바른 형식을 표시할 수 있습니다.
+* ** [입력 마스크](./validating-text-and-numeric-field-entries.md#masking-numeric-fields) ** 을 사용하면 사용자가 숫자 데이터를 입력할 때 올바른 형식을 표시할 수 있습니다.
 
 ### 업로드
 

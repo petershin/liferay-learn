@@ -2,11 +2,11 @@
 
 아래 예에서는 7월 4일에 카탈로그에 있는 모든 제품의 가격을 20% 인하하는 프로모션을 만듭니다. 모든 계정, 계정 그룹, 채널 및 주문 유형이 이 프로모션에 참여할 수 있습니다.
 
-1. _글로벌 메뉴_(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Promotions_로 이동합니다.
+1. **글로벌 메뉴**(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Promotions** 로 이동합니다.
 
    ![Click on promotions from the Global Menu and create a new promotion.](./creating-a-promotion/images/01.png)
 
-1. _추가_(![아이콘 추가](../../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
+1. **추가**(![아이콘 추가](../../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
 
    **이름:** 7월 4일 프로모션
 
@@ -16,21 +16,21 @@
 
    ![Enter a name, catalog, and currency for the new promotion.](./creating-a-promotion/images/02.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
-그러면 선택한 카탈로그에 새 프로모션이 생성됩니다. 이미 사용 가능한 카탈로그에 대한 _기본 프로모션 목록_이 어떻게 있는지 확인하세요. 자세한 내용은 [프로모션 베이스 목록 사용](./using-the-promotion-base-list.md) 읽어보세요.
+그러면 선택한 카탈로그에 새 프로모션이 생성됩니다. 이미 사용 가능한 카탈로그에 대한 **기본 프로모션 목록** 이 어떻게 있는지 확인하세요. 자세한 내용은 [프로모션 베이스 목록 사용](./using-the-promotion-base-list.md) 읽어보세요.
 
 ![You can change the name of the promotion, assign a priority, and select the Parent Price List and the Price Type.](./creating-a-promotion/images/03.png)
 
-세부정보 섹션에서 프로모션 이름을 변경하고, 우선순위를 지정하고, 상위 가격표 및 가격 유형을 선택할 수 있습니다. 프로모션은 7월 4일에 진행되므로 일정 섹션에서 _게시 날짜_ 및 _만료 날짜_를 선택하여 일정을 설정할 수 있습니다. 프로모션을 활성화하려면 _게시_를 클릭하세요. 한 계정에 적용할 수 있는 프로모션이 여러 개인 경우 우선 순위가 높은 프로모션이 다른 프로모션보다 우선합니다. 특정 필드에 대한 자세한 내용은 [프로모션 참조](./promotions-reference.md) 참조하세요.
+세부정보 섹션에서 프로모션 이름을 변경하고, 우선순위를 지정하고, 상위 가격표 및 가격 유형을 선택할 수 있습니다. 프로모션은 7월 4일에 진행되므로 일정 섹션에서 **게시 날짜** 및 **만료 날짜** 를 선택하여 일정을 설정할 수 있습니다. 프로모션을 활성화하려면 **게시** 를 클릭하세요. 한 계정에 적용할 수 있는 프로모션이 여러 개인 경우 우선 순위가 높은 프로모션이 다른 프로모션보다 우선합니다. 특정 필드에 대한 자세한 내용은 [프로모션 참조](./promotions-reference.md) 참조하세요.
 
 ## 가격 수정자 추가
 
 이 예에서는 프로모션으로 인해 카탈로그에 있는 모든 제품의 가격이 20% 인하됩니다. 이렇게 하려면 가격 수정자를 추가해야 합니다.
 
-1. _가격 수정자_ 탭을 클릭합니다.
+1. **가격 수정자** 탭을 클릭합니다.
 
-1. _추가_(![아이콘 추가](../../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
+1. **추가**(![아이콘 추가](../../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
 
    **이름:** 20% 할인
 
@@ -40,13 +40,13 @@
 
    ![Enter a name, target, and modifier for the new price modifier.](./creating-a-promotion/images/04.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
 ```{note}
 프로모션 자체에 대해 이미 만료일을 설정한 경우 가격 수정자에 대한 만료일을 설정할 필요가 없습니다.
 ```
 
-이제 새 가격 수정자를 구성해야 합니다. 목록에서 항목을 클릭하고 백분율 금액을 -20으로 입력합니다. 그런 다음 *활성* 토글을 사용하여 활성화하세요. 그런 다음 *저장*을 클릭하고 *게시*를 클릭하세요. 자세한 내용은 [가격 수정자 참조](./promotions-reference.md#price-modifiers-reference)를 참조하세요.
+이제 새 가격 수정자를 구성해야 합니다. 목록에서 항목을 클릭하고 백분율 금액을 -20으로 입력합니다. 그런 다음 **활성** 토글을 사용하여 활성화하세요. 그런 다음 **저장** 을 클릭하고 **게시** 를 클릭하세요. 자세한 내용은 [가격 수정자 참조](./promotions-reference.md#price-modifiers-reference) 를 참조하세요.
 
 ![Configure the price modifier and activate it.](./creating-a-promotion/images/05.png)
 

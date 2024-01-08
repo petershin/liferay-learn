@@ -32,7 +32,7 @@ _가져오기 사용_ 확인란을 선택하지 않은 상태로 두면 사용�
 
 1. 이제 기존 사용자를 수정합니다. **글로벌 메뉴**(![글로벌 메뉴](../../images/icon-applications-menu.png)) &rarr; **제어판** &rarr; **사용자 및 조직** 으로 이동합니다.
 
-1. 사용자 Kyle Klein을 선택합니다. 이 사용자를 생성해야 하는 경우 [사용자 생성](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#creating-users)을 참조하세요.
+1. 사용자 Kyle Klein을 선택합니다. 이 사용자를 생성해야 하는 경우 [사용자 생성](https://learn.liferay.com/w/courses/liferay-administrator/users-accounts-organizations/managing-users#creating-users) 을 참조하세요.
 
 1. 개인정보를 변경하세요. 예를 들어, 출생 연도를 1970에서 1971로 변경합니다. **저장** 을 클릭하세요.
 

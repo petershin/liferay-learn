@@ -21,7 +21,7 @@ Liferay DXP는 사용자에게 개인화된 경험을 이해하고 제공하기 
 예를 들어, [사용자 세그먼트](./personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) 생성하고 이를 다른 [경험](./personalizing-site-experience/experience-personalization/creating-and-managing-experiences.md) 에 매핑할 수 있습니다. 경험을 바탕으로 [컬렉션을 개인화하고](./personalizing-site-experience/experience-personalization/personalizing-collections.md) 사용자가 보는 콘텐츠 또는 페이지 [방식](./personalizing-site-experience/experience-personalization/content-page-personalization.md) 맞춤화합니다.
 
 ```{tip}
-사용자가 여러 세그먼트에 속해 있는 경우 [특정 개인화된 변형의 우선순위를 지정하거나](./personalizing-site-experience/experience-personalization/personalizing-collections.md#creating-personalized-variations) 또는 [모든 세그먼트의 컬렉션 항목을 결합할 수 있습니다](./personalizing-site-experience/experience-personalization/personalizing-collections.md#combining-collection-entries-from-all-segments).
+사용자가 여러 세그먼트에 속해 있는 경우 [특정 개인화된 변형의 우선순위를 지정하거나](./personalizing-site-experience/experience-personalization/personalizing-collections.md#creating-personalized-variations) 또는 [모든 세그먼트의 컬렉션 항목을 결합할 수 있습니다](./personalizing-site-experience/experience-personalization/personalizing-collections.md#combining-collection-entries-from-all-segments) .
 ```
 
 ## 분할
@@ -66,7 +66,7 @@ Analytics Cloud와의 통합은 심층적인 머신 러닝 기반 데이터 분�
 
 ### 사용자 경험 미리보기
 
-페이지 상단의 _시뮬레이션_ 버튼(![시뮬레이션](../images/icon-simulation.png))을 클릭하고 다음에서 사용자 세그먼트를 선택하여 페이지에서 사용자가 가질 수 있는 다양한 경험을 미리 볼 수 있습니다. 해당 사용자 세그먼트의 구성원으로 페이지를 미리 보려면 세그먼트를 선택하세요.
+페이지 상단의 **시뮬레이션** 버튼(![시뮬레이션](../images/icon-simulation.png))을 클릭하고 다음에서 사용자 세그먼트를 선택하여 페이지에서 사용자가 가질 수 있는 다양한 경험을 미리 볼 수 있습니다. 해당 사용자 세그먼트의 구성원으로 페이지를 미리 보려면 세그먼트를 선택하세요.
 
 사용자 세그먼트의 관점을 보면 해당 사용자 세그먼트에 대한 콘텐츠 페이지 또는 콘텐츠 세트의 개인화를 미리 볼 수 있습니다.
 

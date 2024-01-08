@@ -13,9 +13,9 @@ REST API를 사용하여 개체 항목을 쿼리할 때 개체의 필드를 항�
 
 그런 다음 다음 단계에 따라 이 튜토리얼에 대한 기본 [를](../../creating-and-managing-objects/creating-objects.md) .
 
-1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 후 *개체를 클릭합니다*.
+1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다** .
 
-1. _추가_ 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
+1. **추가** 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
    | 분야    | 가치      |
    | :---- | :------ |
@@ -23,14 +23,14 @@ REST API를 사용하여 개체 항목을 쿼리할 때 개체의 필드를 항�
    | 복수 라벨 | `Ables` |
    | 이름    | `Able`  |
 
-1. 새 _개체_ 초안을 선택하고 _필드_ 탭으로 이동한 후 다음 텍스트 필드를 추가하세요.
+1. 새 **개체** 초안을 선택하고 **필드** 탭으로 이동한 후 다음 텍스트 필드를 추가하세요.
 
    | 라벨 | 필드 이름 | 유형 | 요구하는 |
    | :- | :---- | :- | :--- |
    | 이름 | 이름    | 원본 | ✔    |
    | 묘사 | 묘사    | 원본 |      |
 
-1. _세부정보_ 탭으로 이동하여 [_게시_](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 클릭하세요.
+1. **세부정보** 탭으로 이동하여 [**게시**](../../creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 클릭하세요.
 
    ```{important}
    이 튜토리얼에서는 위의 값을 사용해야 합니다.

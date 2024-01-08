@@ -35,7 +35,7 @@ DXP는 적응형 미디어를 사용하여 문서 및 미디어의 이미지에 
 
 마이그레이션 프로세스는 [Gogo 콘솔 명령 세트입니다](../../../../liferay-internals/fundamentals/using-the-gogo-shell/gogo-shell-commands.md) .
 
-1. _글로벌 메뉴_ &rarr; _제어판_ &rarr; _Gogo Shell_로 이동하세요.
+1. **글로벌 메뉴** &rarr; **제어판** &rarr; **Gogo Shell** 로 이동하세요.
 
    ![Navigate to the Gogo Shell.](./migrating-documents-and-media-thumbnails/images/01.png)
 
@@ -49,11 +49,11 @@ DXP는 적응형 미디어를 사용하여 문서 및 미디어의 이미지에 
 
 마이그레이션 프로세스를 실행한 후 특정 시점에 Adaptive Media 배포를 취소하는 경우 문서 및 미디어 축소판을 다시 생성해야 합니다.
 
-1. _글로벌 메뉴_ &rarr; _제어판_ &rarr; _서버 관리_로 이동하세요.
+1. **글로벌 메뉴** &rarr; **제어판** &rarr; **서버 관리** 로 이동하세요.
 
    ![Navigate to the Server Administration.](./migrating-documents-and-media-thumbnails/images/03.png)
 
-1. _문서 및 미디어의 미리보기 및 썸네일 파일 재설정_ 옆에 있는 _실행_을 클릭하세요.
+1. **문서 및 미디어의 미리보기 및 썸네일 파일 재설정** 옆에 있는 **실행** 을 클릭하세요.
 
    ![Navigate to the Gogo Shell.](./migrating-documents-and-media-thumbnails/images/02.png)
 

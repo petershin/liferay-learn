@@ -83,7 +83,7 @@ module.framework.properties.org.osgi.framework.bootdelegation=\
   weblogic.jndi.*
 ```
 
-배포한 후 Glowroot에서 _Configuration_ &rarr; _Plugins_로 이동하여 플러그인을 확인하세요.
+배포한 후 Glowroot에서 **Configuration** &rarr; **Plugins** 로 이동하여 플러그인을 확인하세요.
 
 ## Glowroot로 업그레이드 모니터링
 

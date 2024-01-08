@@ -14,8 +14,8 @@ visibility:
 * 강력한 보안은 OWASP 상위 10대 고려 사항 중 1위이므로 매우 중요합니다.
 
 ```{note}
-* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication)를 확인하세요.
-* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf)를 다운로드하세요.
+* 이 모듈의 라이브 워크숍에서 [녹화](https://learn.liferay.com/web/guest/d/se1-3-liferay-authentication) 를 확인하세요.
+* 라이브 워크숍에 사용된 프레젠테이션의 [PDF](https://learn.liferay.com/documents/d/guest/se1-3-liferay-authentication-pdf) 를 다운로드하세요.
 ```
 
 ## 인증
@@ -112,7 +112,7 @@ Liferay와 클라이언트 확장 간의 OAuth 통신 프로세스의 예는 다
 
 Single Sign-On을 시연해야 하고 Okta와 같은 서비스를 사용할 수 없는 경우 Keycloak 인스턴스를 실행할 수 있습니다. Keycloak은 ID 및 액세스 관리를 통해 Single Sign-On을 허용하는 오픈 소스 소프트웨어 제품입니다.
 
-Liferay의 컨설턴트 중 한 명이 Keycloak의 설정 단계를 다루는 [blog](https://liferay.dev/blogs/-/blogs/liferay-sso-step-by-step)을 제공했습니다.
+Liferay의 컨설턴트 중 한 명이 Keycloak의 설정 단계를 다루는 [blog](https://liferay.dev/blogs/-/blogs/liferay-sso-step-by-step) 을 제공했습니다.
 
 **인증0**
 

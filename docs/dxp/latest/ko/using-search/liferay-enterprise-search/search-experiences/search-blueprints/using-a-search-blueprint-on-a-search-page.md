@@ -10,13 +10,13 @@
 
 1. Blueprint 옵션 위젯을 페이지에 추가합니다.
 
-1. 위젯의 _옵션_ 아이콘(![옵션](../../../../images/icon-app-options.png))을 클릭하고 _구성_을 클릭합니다.
+1. 위젯의 **옵션** 아이콘(![옵션](../../../../images/icon-app-options.png))을 클릭하고 **구성** 을 클릭합니다.
 
-1. 페이지의 청사진을 선택하려면 _선택_을 클릭하세요.
+1. 페이지의 청사진을 선택하려면 **선택** 을 클릭하세요.
 
    ![Select a blueprint for use on the page.](./using-a-search-blueprint-on-a-search-page/images/02.png)
 
-1. 청사진이 선택되면 구성 화면에서 _저장_을 클릭합니다.
+1. 청사진이 선택되면 구성 화면에서 **저장** 을 클릭합니다.
 
 이제 청사진의 기능이 페이지에 적용되었습니다.
 
@@ -55,7 +55,7 @@ Follow this example to set search context attributes into a blueprint-driven sea
       - First Name: `Other`
       - Last Name: `User`
 1. Create a [User Segment](../../../../site-building/personalizing-site-experience/segmentation/creating-and-managing-user-segments.md) called _Acme Users_. Drag the User attribute and add Acme User to it. Record the segment's ID. It's in the URL as the parameter `segmentsEntryId`.
-1. Create an [Asset Category](../../../../content-authoring-and-management/tags-and-categories.md) . Name the Vocabulary and the Category _Business_. Record the Category's ID. It's in the URL as part of the path: `category/[ID]`.
+1. Create an [Asset Category](../../../../content-authoring-and-management/tags-and-categories.md). Name the Vocabulary and the Category _Business_. Record the Category's ID. It's in the URL as part of the path: `category/[ID]`.
 1. Create two pieces of Basic Web Content:
    - Web Content 1
       - Title: Has Business Category
@@ -78,5 +78,4 @@ Follow this example to set search context attributes into a blueprint-driven sea
 
 You can find the blueprint ID from the Blueprints application (Global Menu &rarr; Applications &rarr; Blueprints (Search Experiences).
 -->
-
 <!-- Example is unfinished--uncomment when finalized. -->

@@ -47,7 +47,7 @@ Liferay DXP 7.4+의 경우 Liferay UI에서는 조각 컬렉션을 조각 세트
    INFO  [com.liferay.portal.kernel.deploy.auto.AutoDeployScanner][AutoDeployDir:263] Processing a2f8-fragments.zip
    ```
 
-1. 조각 세트를 사용할 수 있는지 확인하세요. _사이트 메뉴_(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 _디자인_ &rarr; _조각_으로 이동합니다. 세트가 목록에 나타나야 합니다.
+1. 조각 세트를 사용할 수 있는지 확인하세요. **사이트 메뉴**(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 **디자인** &rarr; **조각** 으로 이동합니다. 세트가 목록에 나타나야 합니다.
 
 ```{note}
 가져온 조각에 잘못된 규칙이 있는 경우 자동으로 초안으로 저장됩니다.
@@ -115,7 +115,7 @@ Liferay DXP 7.4+의 경우 Liferay UI에서는 조각 컬렉션을 조각 세트
    docker cp a2f8-fragments.zip $(docker ps -lq):/opt/liferay/deploy
    ```
 
-1. 새 조각을 확인합니다. 사이트 메뉴*(![사이트 메뉴](../../../이미지/아이콘-제품-메뉴.png))를 열고, *디자인* &rarr; *조각*으로 이동한 다음 *A2F8 세트*를 클릭합니다. 여기에는 A2F8 점보트론 조각이 포함되어야 합니다.
+1. 새 조각을 확인합니다. **사이트 메뉴**(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 **디자인** &rarr; **Fragments**를 선택하고 **A2F8 Set**을 클릭합니다. 여기에는 A2F8 Jumbotron 조각이 포함되어야 합니다.
 
    ![The new fragment is included in the auto-deployed Set.](./auto-deploying-fragments/images/02.png)
 

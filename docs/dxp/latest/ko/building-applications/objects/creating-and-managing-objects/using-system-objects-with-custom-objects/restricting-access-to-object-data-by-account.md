@@ -12,7 +12,7 @@
 
 계정 제한을 설정하려면,
 
-1. _전역 메뉴_(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 후 *개체를 클릭합니다.*.
+1. **전역 메뉴**(![전역 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 후 **개체를 클릭합니다**.
 
 1. 계정 시스템 개체 편집을 시작합니다.
 
@@ -22,11 +22,11 @@
 
 1. 개체 페이지로 돌아가서 원하는 사용자 정의 개체 편집을 시작합니다.
 
-1. 세부정보 탭에서 _계정 제한_을 활성화하고 사용할 계정 관계를 선택하세요.
+1. 세부정보 탭에서 **계정 제한** 을 활성화하고 사용할 계정 관계를 선택하세요.
 
    ![Toggle Account Restriction to active and select the account relationship you want to use.](./restricting-access-to-object-data-by-account/images/03.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 이로 인해 계정 관계 필드가 필수가 되므로 사용자는 항목을 생성할 때 계정을 선택해야 합니다. 사용 가능한 계정 옵션은 각 사용자의 권한에 따라 결정됩니다. 계정 제한이 활성화된 동안 역할 권한을 구성하는 방법에 대한 지침은 [계정 제한 및 사용자 역할](#account-restriction-and-user-roles) 을 참조하세요. 항목이 생성되면 선택한 계정이 항목의 소유자가 되며 변경할 수 없습니다.
 
@@ -42,7 +42,7 @@
 
 계정 제한을 위한 역할을 설정할 때 다음 요소를 고려하십시오.
 
-* 계정이 제한된 개체에는 _위젯 표시_가 활성화되어 있어야 하며 역할 UI에 나타나도록 설정된 패널 링크가 있어야 합니다.
+* 계정이 제한된 개체에는 **위젯 표시** 가 활성화되어 있어야 하며 역할 UI에 나타나도록 설정된 패널 링크가 있어야 합니다.
 
 * 일반 역할에는 객체 항목을 생성하려면 '계정 > 계정 항목: 보기' 권한이 있어야 합니다. 이는 일반 역할이 계정이나 조직과 연결되어 있지 않기 때문입니다. 이 권한이 없으면 일반 역할을 가진 사용자는 항목 생성 중에 계정을 선택할 수 없습니다.
 
@@ -87,7 +87,7 @@
 | 청구 > 청구: 개체 항목 추가     | 개체 항목을 만듭니다.               |
 
 ```{important}
-계정 역할에 'Claims &rarr; Claim: View' 리소스 권한을 할당하지 마세요. 이 권한은 표준 역할 동작을 방해할 수 있습니다.
+계정 역할에 `Claims &rarr; Claim: View` 리소스 권한을 할당하지 마세요. 이 권한은 표준 역할 동작을 방해할 수 있습니다.
 ```
 
 ### 조직 역할
@@ -123,8 +123,8 @@
 
 ## 관련 주제
 
-* [계정](../../../../users-and-permissions/accounts.md) 
-* [시스템 개체 확장](../extending-system-objects.md) 
-* [개체 관계 정의](../relationships/defining-object-relationships.md) 
-* [사용자 정의 개체에서 계정 데이터에 액세스](./accessing-accounts-data-from-custom-objects.md) 
-* [역할 및 권한 이해](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md) 
+* [계정](../../../../users-and-permissions/accounts.md)
+* [시스템 개체 확장](../extending-system-objects.md)
+* [개체 관계 정의](../relationships/defining-object-relationships.md)
+* [사용자 정의 개체에서 계정 데이터에 액세스](./accessing-accounts-data-from-custom-objects.md)
+* [역할 및 권한 이해](../../../../users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.md)

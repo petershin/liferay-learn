@@ -10,7 +10,7 @@
 
 유사한 결과 위젯은 페이지에서 선택한 기본 자산과 유사한 검색 결과를 표시합니다.
 
-주자산의 개념이 중요합니다. DXP의 특정 위젯은 자산 게시자, 블로그, Wiki 등 자산 목록을 표시합니다. 사용자가 표시된 자산 중 하나를 클릭하고 위젯이 페이지에 전체 콘텐츠를 표시하면 이제 해당 자산이 페이지의 *주 자산*이 됩니다. 유사한 결과 위젯을 같은 페이지에 배치하면 [추가 유사한 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html)에 의해 반환될 만큼 유사한 자산 목록이 표시됩니다. 주요 자산의 개념은 Elasticsearch의 [입력 문서](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_how_it_works)와 동의어입니다.
+주자산의 개념이 중요합니다. DXP의 특정 위젯은 자산 게시자, 블로그, Wiki 등 자산 목록을 표시합니다. 사용자가 표시된 자산 중 하나를 클릭하고 위젯이 페이지에 전체 콘텐츠를 표시하면 이제 해당 자산이 페이지의 **주 자산** 이 됩니다. 유사한 결과 위젯을 같은 페이지에 배치하면 [추가 유사한 쿼리](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html) 에 의해 반환될 만큼 유사한 자산 목록이 표시됩니다. 주요 자산의 개념은 Elasticsearch의 [입력 문서](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_how_it_works) 와 동의어입니다.
 
 유사한 결과는 입력 문서/주 자산을 사용하여 쿼리에 가장 잘 일치하는 쿼리를 구성한 다음 이 분리 쿼리(또는 'OR')를 검색 엔진에 보내 일치하는 결과 문서를 반환합니다. 이 프로세스는 구성 가능합니다. 즉, 입력 문서를 처리하는 방법, 처리된 콘텐츠에서 용어를 선택하는 방법, 쿼리 자체를 구성하는 방법이 있습니다. [details]에 대한 Elasticsearch 설명서(https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_parameters_2)를 참조하세요.
 
@@ -152,6 +152,6 @@ Asset Publisher 위젯에 표시된 자산을 클릭하면 유사한 결과 위�
 | 최대 단어 길이                                   | 유사한 항목 검색에서 해당 용어가 생략되는 최대 단어 길이를 설정합니다. 비워 두면 상한이 설정되지 않습니다.                                                                                                                                                                |
 | 단어 중단                                      | 유사한 결과를 찾기 위해 무시해야 하는 흥미롭지 않은 중지 단어의 배열(쉼표로 구분된 목록)입니다. 구성된 분석기가 중지 단어를 허용하는 경우 이러한 단어는 유사한 항목 더보기 쿼리로 보내는 것을 완전히 피할 수 있습니다.                                                                                                 |
 | 애널라이저                                      | 입력 문서의 필드에 사용할 분석기를 지정합니다. 공백으로 두면 기본값은 필드 구성의 첫 번째 항목과 연결된 분석기입니다.                                                                                                                                                          |
-| 일치해야 하는 최소값                                | 분리형 쿼리가 형성된 후 이 매개변수는 일치해야 하는 용어 수를 제어합니다(기본값은 '30%').허용되는 구문은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-minimum-should-match.html#query-dsl-minimum-should-match)를 참조하세요. |
+| 일치해야 하는 최소값                                | 분리형 쿼리가 형성된 후 이 매개변수는 일치해야 하는 용어 수를 제어합니다(기본값은 '30%').허용되는 구문은 [Elasticsearch 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-minimum-should-match.html#query-dsl-minimum-should-match) 를 참조하세요. |
 | 용어 부스트                                     | 용어를 [tf-idf](https://en.wikipedia.org/wiki/Tf%E2%80%93idf) 점수로 부스팅하려는 경우 사용할 부스트 요인을 설정합니다. 공백으로 두면 기본값은 비활성화('0')입니다. 다른 양수 값은 주어진 부스트 요인으로 부스팅 용어를 활성화합니다.                                                                 |
 | 연합 검색 키                                    | 이 위젯이 참여하고 있는 대체 검색의 키를 입력하세요.                                                                                                                                                                                               |

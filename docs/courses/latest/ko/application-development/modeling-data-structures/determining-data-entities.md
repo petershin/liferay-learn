@@ -9,7 +9,7 @@
 
 ![Create the Distributor Application object.](./determining-data-entities/images/01.png)
 
-개체 정의를 게시한 후 [배포자 응용 프로그램 개체 사용](#using-distributor-applications)을 연습하여 항목을 만들 수 있습니다.
+개체 정의를 게시한 후 [배포자 응용 프로그램 개체 사용](#using-distributor-applications) 을 연습하여 항목을 만들 수 있습니다.
 
 ## 배포자 응용 프로그램 개체 추가
 
@@ -55,7 +55,7 @@
    * UUID를 `C_DISTRIBUTOR_APPLICATION`으로 바꿉니다.
    * **저장** 을 클릭하세요.
 
-   ![Update the definition's ERC to C_DISTRIBUTOR_APPLICATION.](./determining-data-entities/images/04.png)
+   ![Update the definition's ERC to C **DISTRIBUTOR** APPLICATION.](./determining-data-entities/images/04.png)
 
 1. 세부 정보 탭에서 다음 설정을 구성합니다.
 
@@ -103,7 +103,7 @@
 
 ## 배포자 애플리케이션 개체 게시
 
-사용자 정의 개체를 게시하면 Liferay는 데이터 항목을 저장하기 위한 데이터베이스 테이블을 만듭니다. 게시는 또한 객체를 OSGi 프레임워크에 등록하고 이를 [Liferay의 핵심 기능](https://learn.liferay.com/w/dxp/building-applications/objects/understanding-object-integrations)과 통합합니다(예: 권한, 워크플로, 헤드리스)이며 기본 사용자 인터페이스를 제공합니다.
+사용자 정의 개체를 게시하면 Liferay는 데이터 항목을 저장하기 위한 데이터베이스 테이블을 만듭니다. 게시는 또한 객체를 OSGi 프레임워크에 등록하고 이를 [Liferay의 핵심 기능](https://learn.liferay.com/w/dxp/building-applications/objects/understanding-object-integrations) 과 통합합니다(예: 권한, 워크플로, 헤드리스)이며 기본 사용자 인터페이스를 제공합니다.
 
 1. 개체의 세부정보 탭으로 이동합니다.
 
@@ -111,7 +111,7 @@
 
    ![In the Details tab, click Publish.](./determining-data-entities/images/07.png)
 
-그러면 Distributor Application이 활성화되고 기본 시스템 필드와 함께 'applicantName' 필드가 포함된 데이터베이스 테이블이 생성됩니다. 자세한 내용은 [객체 초안 게시](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects#publishing-object-drafts)를 참조하세요. 출판 중에 무슨 일이 일어나는지.
+그러면 Distributor Application이 활성화되고 기본 시스템 필드와 함께 'applicantName' 필드가 포함된 데이터베이스 테이블이 생성됩니다. 자세한 내용은 [객체 초안 게시](https://learn.liferay.com/en/w/dxp/building-applications/objects/creating-and-managing-objects/creating-objects#publishing-object-drafts) 를 참조하세요. 출판 중에 무슨 일이 일어나는지.
 
 ## 배포자 응용 프로그램 사용
 
@@ -135,7 +135,7 @@
 
 1. 계속 진행하기 전에 항목 생성, 업데이트 및 제거를 연습하세요.
 
-게시하는 동안 배포자 응용 프로그램에 대해 생성된 REST API를 사용하여 항목을 생성, 편집, 쿼리 및 제거할 수도 있습니다. 이러한 API는 `c/distributorapplications` 경로에서 사용할 수 있습니다. 사용 가능한 API의 전체 목록은 [헤드리스 프레임워크 통합](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis)을 참조하세요. 및 입문 튜토리얼인 [Custom Object API Basics](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics)를 참조하세요.
+게시하는 동안 배포자 응용 프로그램에 대해 생성된 REST API를 사용하여 항목을 생성, 편집, 쿼리 및 제거할 수도 있습니다. 이러한 API는 `c/distributorapplications` 경로에서 사용할 수 있습니다. 사용 가능한 API의 전체 목록은 [헤드리스 프레임워크 통합](https://learn.liferay.com/en/w/dxp/building-applications/objects/understanding-object-integrations/using-custom-object-apis) 을 참조하세요. 및 입문 튜토리얼인 [Custom Object API Basics](https://learn.liferay.com/en/w/dxp/building-applications/objects/objects-tutorials/using-apis/object-api-basics) 를 참조하세요.
 
 ![Liferay generates REST APIs for Distributor Application.](./determining-data-entities/images/10.png)
 

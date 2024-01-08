@@ -8,15 +8,15 @@
 
 ## 페이지에 미니 카트 조각 추가
 
-1. 원하는 콘텐츠 페이지나 템플릿으로 이동하여 _편집_(![아이콘 편집](../../images/icon-edit-pencil.png))을 클릭하세요.
+1. 원하는 콘텐츠 페이지나 템플릿으로 이동하여 **편집**(![아이콘 편집](../../images/icon-edit-pencil.png))을 클릭하세요.
 
-1. 조각 및 위젯 사이드바(![위젯 추가 아이콘](../../images/icon-plus.png))에서 _Mini Cart_를 검색하세요.
+1. 조각 및 위젯 사이드바(![위젯 추가 아이콘](../../images/icon-plus.png))에서 **Mini Cart** 를 검색하세요.
 
    ![Search for the Mini Cart fragment from the Fragments and Widgets menu.](./using-the-mini-cart-fragment/images/01.png)
 
 1. 조각을 페이지에 끌어다 놓습니다. 이 조각을 [Mini Cart](../liferay-commerce-widgets/using-the-mini-cart-widget.md) 위젯과 혼동하지 마십시오.
 
-1. _게시_를 클릭하세요.
+1. **게시** 를 클릭하세요.
 
    ![Click the cart icon to open the Mini Cart.](./using-the-mini-cart-fragment/images/02.png)
 
@@ -24,7 +24,7 @@
 
 Mini Cart 프래그먼트를 페이지에 추가한 후,
 
-1. 제품에 대해 _장바구니에 추가_를 클릭하세요.
+1. 제품에 대해 **장바구니에 추가** 를 클릭하세요.
 
    ![Click Add to Cart on a product to add it to your Mini Cart.](./using-the-mini-cart-fragment/images/03.png)
 
@@ -47,7 +47,7 @@ Mini Cart 프래그먼트를 페이지에 추가한 후,
 
 **모든 항목 제거:** 장바구니의 제품을 지웁니다.
 
-제품 목록 영역에는 장바구니에 있는 모든 제품이 수량 및 가격과 함께 표시됩니다. 여기에서 (![삭제](../../images/icon-delete.png))를 제거하거나 개별 제품의 수량을 조정할 수 있습니다. 변경하면 장바구니 요약 섹션이 자동으로 업데이트됩니다. 체크아웃을 계속하려면 _제출_을 클릭하세요.
+제품 목록 영역에는 장바구니에 있는 모든 제품이 수량 및 가격과 함께 표시됩니다. 여기에서 (![삭제](../../images/icon-delete.png))를 제거하거나 개별 제품의 수량을 조정할 수 있습니다. 변경하면 장바구니 요약 섹션이 자동으로 업데이트됩니다. 체크아웃을 계속하려면 **제출** 을 클릭하세요.
 
 ## 장바구니에 제품을 빠르게 추가하기
 

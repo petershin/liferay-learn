@@ -4,7 +4,7 @@
 
 지식 베이스 표시 위젯을 사용하면 내장된 탐색, 댓글, 평가 및 소셜 미디어 링크가 있는 사이트 페이지에 게시된 기사를 표시할 수 있습니다. 기본적으로 이 위젯은 기술 자료 홈 폴더의 기사를 표시합니다. 포함할 기사를 사용자 정의할 수 있습니다.
 
-조각 및 위젯 측면 패널의 _콘텐츠 관리_에서 위젯을 찾을 수 있습니다.
+조각 및 위젯 측면 패널의 **콘텐츠 관리** 에서 위젯을 찾을 수 있습니다.
 
 ![The Knowledge Base Display widget appears under Content Management in the widget menu.](./knowledge-base-display-widget/images/01.png)
 
@@ -12,17 +12,17 @@
 
 1. 기술 자료 표시 위젯이 포함된 페이지 편집을 시작합니다.
 
-1. 위젯의 _옵션_ 버튼(![옵션 버튼](../../images/icon-actions.png))을 클릭하고 _구성_을 선택합니다.
+1. 위젯의 **옵션** 버튼(![옵션 버튼](../../images/icon-actions.png))을 클릭하고 **구성** 을 선택합니다.
 
    ![Click the Options button and select Configuration.](./knowledge-base-display-widget/images/02.png)
 
-1. 설정 탭의 콘텐츠 선택 아래에서 _선택_을 클릭하여 표시할 기사를 결정하세요.
+1. 설정 탭의 콘텐츠 선택 아래에서 **선택** 을 클릭하여 표시할 기사를 결정하세요.
 
    ![In the Setup tab, click Select under Content Selection  to determine which articles to display.](./knowledge-base-display-widget/images/03.png)
 
-1. 개별 기사나 폴더에 대해 _선택_을 클릭하세요.
+1. 개별 기사나 폴더에 대해 **선택** 을 클릭하세요.
 
-   또는 _이 폴더 선택_을 클릭하여 현재 폴더의 기사를 표시하세요.
+   또는 **이 폴더 선택** 을 클릭하여 현재 폴더의 기사를 표시하세요.
 
    ![Click Select for the desired article or folder, or click Select this Folder to select the current folder.](./knowledge-base-display-widget/images/04.png)
 
@@ -76,7 +76,7 @@
    └── 제1.2.2조
    ```
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ## 위젯 기능 살펴보기
 
@@ -104,9 +104,9 @@ Knowledge Base Display의 탐색 메뉴와 표시 옵션은 전체 페이지 위
 * 기사를 이동하세요
 * 기사 삭제
 
-기사 콘텐츠 아래에는 추천/추천 아이콘을 표시하는 평가 인터페이스가 있습니다. 사용자는 기사 아래의 _제안 사항_이 있습니까?라는 텍스트 상자에 제안이나 의견을 제출할 수도 있습니다. 관리자는 [제안을 보고 진행 상황을](./responding-to-knowledge-base-feedback.md) 로 표시할 수 있습니다.
+기사 콘텐츠 아래에는 추천/추천 아이콘을 표시하는 평가 인터페이스가 있습니다. 사용자는 기사 아래의 **제안 사항** 이 있습니까?라는 텍스트 상자에 제안이나 의견을 제출할 수도 있습니다. 관리자는 [제안을 보고 진행 상황을](./responding-to-knowledge-base-feedback.md) 로 표시할 수 있습니다.
 
-관리자가 지식 베이스 소스 URL 기능을 활성화하고 기사에 할당된 소스 URL이 있는 경우 _GitHub에서 편집_ 버튼(![GitHub 아이콘](./knowledge-base-display-widget/images/11.png)) 기사 제목 오른쪽에 나타납니다. 이 버튼은 GitHub의 기사 소스로 연결됩니다. 이 기능을 사용하면 사람들이 기사 수정이나 개선에 기여하도록 장려할 수 있습니다. 자세한 내용은 [지식 베이스 시스템 설정](./knowledge-base-system-settings.md) 을 참조하세요.
+관리자가 지식 베이스 소스 URL 기능을 활성화하고 기사에 할당된 소스 URL이 있는 경우 **GitHub에서 편집** 버튼(![GitHub 아이콘](./knowledge-base-display-widget/images/11.png)) 기사 제목 오른쪽에 나타납니다. 이 버튼은 GitHub의 기사 소스로 연결됩니다. 이 기능을 사용하면 사람들이 기사 수정이나 개선에 기여하도록 장려할 수 있습니다. 자세한 내용은 [지식 베이스 시스템 설정](./knowledge-base-system-settings.md) 을 참조하세요.
 
 ## 관련 주제
 

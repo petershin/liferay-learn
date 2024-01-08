@@ -11,7 +11,7 @@ Liferay DXP의 백업 계획을 고려할 때 다음 영역을 백업하는 것�
 * [소스 코드](#source-code) 
 
 ```{note}
-Liferay Cloud는 문서 라이브러리 및 Liferay DXP 데이터베이스의 백업 생성 및 관리 프로세스를 자동화하고 단순화합니다. Liferay Cloud는 Git 기반 DevOps 파이프라인을 사용하기 때문에 Liferay의 모든 구성도 자동으로 백업됩니다. 자세한 내용은 [Liferay Cloud Backup 서비스 개요](https://learn.liferay.com/liferay-cloud/latest/en/platform-services/backup-service/backup-service-overview.html) 을 참조하세요.
+Liferay Cloud는 문서 라이브러리 및 Liferay DXP 데이터베이스의 백업 생성 및 관리 프로세스를 자동화하고 단순화합니다. Liferay Cloud는 Git 기반 DevOps 파이프라인을 사용하기 때문에 Liferay의 모든 구성도 자동으로 백업됩니다. 자세한 내용은 [백업 서비스 개요](https://learn.liferay.com/liferay-cloud/latest/ko/platform-services/backup-service/backup-service-overview.html) 을 참조하세요.
 ```
 
 ## Liferay Home
@@ -20,13 +20,13 @@ Liferay Home 폴더에는 다음 파일이 포함되어 있으므로 백업하�
 
 * **포털 속성 및 시스템 속성:** Liferay 홈 폴더는 DXP [포털 속성 파일](../reference/portal-properties.md) (예: `portal-ext.properties`, `portal-setup-wizard.properties` 등)을 저장합니다. 및 DXP [시스템 속성 파일](../reference/system-properties.md) (예: 'system-ext.properties').
 
-* **`/data` 폴더:** DXP는 Liferay Home의 `/data` 폴더에 구성 파일, 검색 색인 및 캐시 정보를 저장합니다. '/data/document_library' 폴더는 [Simple File System Store](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) 의 기본 저장소 구성 사이트
+* **`/data` 폴더:** DXP는 Liferay Home의 `/data` 폴더에 구성 파일, 검색 색인 및 캐시 정보를 저장합니다. '/data/document_library' 폴더는 [단순 파일 시스템 저장소](../../system-administration/file-storage/other-file-store-types/simple-file-system-store.md) 의 기본 저장소 구성 사이트
 입니다. [고급 파일 시스템 저장소](../../system-administration/file-storage.md) 에는 저장 사이트
 를 명시적으로 설정해야 합니다.
 
 * **`/license` 폴더(구독):** Liferay Enterprise 구독에 대한 활성화 키를 보유합니다.
 
-* **`/osgi` 폴더:** DXP의 OSGi 런타임을 구성하는 파일은 Liferay Home의 `/osgi` 폴더에 저장됩니다. 여기에는 DXP에 배포된 모든 앱 및 모듈 JAR 파일이 포함되어 있습니다. `/osgi` 폴더에는 기타 [구성 파일](https://help.liferay.com/hc/en-us/articles/360029131651-Understanding-System-Configuration-Files) 로그 파일도 포함되어 있습니다.
+* **`/osgi` 폴더:** DXP의 OSGi 런타임을 구성하는 파일은 Liferay Home의 `/osgi` 폴더에 저장됩니다. 여기에는 DXP에 배포된 모든 앱 및 모듈 JAR 파일이 포함되어 있습니다. `/osgi` 폴더에는 기타 [구성 파일](https://help.liferay.com/hc/ko/articles/360029131651-Understanding-System-Configuration-Files) 로그 파일도 포함되어 있습니다.
 
 * **`/logs` 폴더:** DXP의 로그 파일이 포함되어 있습니다. DXP에서 문제가 발생하면 로그 파일은 무엇이 잘못되었는지 확인하기 위한 정보를 제공합니다.
 
@@ -64,7 +64,7 @@ mysqldump --databases my-liferay-database > my-liferay-database-backup.sql
 
 ## 수색 색인
 
-항상 [검색 색인을 백업하십시오](./../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md). 대부분의 Liferay 데이터는 전체 재색인을 통해 데이터베이스에서 복원할 수 있지만 검색 색인은 일부 응용 프로그램에서 [저장소로 사용됩니다](../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3). 인덱스 백업에 실패하면 해당 애플리케이션의 전체 데이터가 손실될 수 있습니다.
+항상 [검색 색인을 백업하십시오](./../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md). 대부분의 Liferay 데이터는 전체 재색인을 통해 데이터베이스에서 복원할 수 있지만 검색 색인은 일부 응용 프로그램에서 [저장소로 사용됩니다](../../using-search/installing-and-upgrading-a-search-engine/elasticsearch/upgrading-elasticsearch/backing-up-elasticsearch.md#backing-up-and-restoring-search-tuning-indexes-for-liferay-7-2-and-7-3) . 인덱스 백업에 실패하면 해당 애플리케이션의 전체 데이터가 손실될 수 있습니다.
 
 또한 대규모 데이터 세트를 보유한 사용자는 백업에서 복원할 때 모든 콘텐츠와 자산의 재인덱싱을 피할 수 있습니다. 검색 인덱스를 저장하는 별도의 [또는 Solr](../../using-search/installing-and-upgrading-a-search-engine/installing-a-search-engine.md) 환경이 있는 경우 검색 데이터를 백업하는 것이 가장 쉽습니다. 자세한 내용은 검색 엔진의 백업/복원 설명서를 따르세요(예: Elasticsearch의 [스냅샷 및 복원 설명서](https://www.elastic.co/guide/en/elasticsearch/reference/7.x/snapshot-restore.html) 참조).
 

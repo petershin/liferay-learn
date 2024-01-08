@@ -38,7 +38,7 @@ type: oAuthApplicationHeadlessServer
 
 ### `oAuthApplicationHeadlessServer`의 특수 동작
 
-OAuth 헤드리스 서버 클라이언트 확장은 Liferay가 _경로_로 제공하는 메타데이터에 따라 달라집니다( [상황에 맞는 정보](working-with-client-extensions.md#context-sensitive-information) 참조). 이 클라이언트 확장으로 배포된 모든 실행 가능한 워크로드는 실행되기 전에 이 경로를 기다려야 합니다.
+OAuth 헤드리스 서버 클라이언트 확장은 Liferay가 **경로** 로 제공하는 메타데이터에 따라 달라집니다( [상황에 맞는 정보](working-with-client-extensions.md#context-sensitive-information) 참조). 이 클라이언트 확장으로 배포된 모든 실행 가능한 워크로드는 실행되기 전에 이 경로를 기다려야 합니다.
 
 다음은 프로젝트에 'oAuthApplicationHeadlessServer' 클라이언트 확장이 정의된 경우 환경 변수 'LIFERAY_ROUTES_CLIENT_EXTENSION'에 의해 정의된 경로의 예입니다.
 
@@ -76,7 +76,7 @@ type: oAuthApplicationUserAgent
 
 ### `oAuthApplicationUserAgent`의 특수 동작
 
-OAuth 헤드리스 사용자 에이전트 클라이언트 확장은 Liferay가 _경로_로 제공하는 메타데이터에 따라 달라집니다( [상황에 맞는 정보](working-with-client-extensions.md#context-sensitive-information) 참조). 이 클라이언트 확장으로 배포된 모든 실행 가능한 워크로드는 실행되기 전에 이 경로를 기다려야 합니다.
+OAuth 헤드리스 사용자 에이전트 클라이언트 확장은 Liferay가 **경로** 로 제공하는 메타데이터에 따라 달라집니다( [상황에 맞는 정보](working-with-client-extensions.md#context-sensitive-information) 참조). 이 클라이언트 확장으로 배포된 모든 실행 가능한 워크로드는 실행되기 전에 이 경로를 기다려야 합니다.
 
 다음은 프로젝트에 'oAuthApplicationUserAgent' 클라이언트 확장이 정의된 경우 환경 변수 'LIFERAY_ROUTES_CLIENT_EXTENSION'으로 정의된 경로의 예입니다.
 
@@ -100,9 +100,9 @@ OAuth 헤드리스 사용자 에이전트 클라이언트 확장은 Liferay가 _
 └── <oAuth2ApplicationExternalReferenceCode>.oauth2.user.agent.scopes
 ```
 
-'oAuthApplicationUserAgent' 클라이언트 확장을 사용하여 Liferay DXP와 통신하는 애플리케이션 로직은 전송된 데이터를 보호하기 위해 이 경로 메타데이터에서 제공하는 정보를 사용해야 합니다. 필요한 모든 OAuth 2 메타데이터는 이러한 방식으로 제공되므로 하드 코딩할 필요가 없습니다.
+`oAuthApplicationUserAgent` 클라이언트 확장을 사용하여 Liferay DXP와 통신하는 애플리케이션 로직은 전송된 데이터를 보호하기 위해 이 경로 메타데이터에서 제공하는 정보를 사용해야 합니다. 필요한 모든 OAuth 2 메타데이터는 이러한 방식으로 제공되므로 하드 코딩할 필요가 없습니다.
 
 ## 관련 주제
 
-* [클라이언트 확장 소개](../client-extensions.md) 
-* [`client-extension.yaml`에서 클라이언트 확장 구성](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml) 
+* [클라이언트 확장 소개](../client-extensions.md)
+* [`client-extension.yaml`에서 클라이언트 확장 구성](./working-with-client-extensions.md#configuring-client-extensions-in-client-extension-yaml)

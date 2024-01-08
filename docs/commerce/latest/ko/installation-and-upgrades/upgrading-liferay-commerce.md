@@ -10,7 +10,7 @@ Liferay Commerce 3.0부터 Commerce는 이제 Liferay DXP와 번들로 제공됩
 7.4로 업그레이드한 후에는 Commerce 'LPKG'를 다시 배포하지 *마세요*. Commerce 4.0 모듈은 7.4와 함께 번들로 제공됩니다. 'LPKG'를 배포하면 충돌이 발생합니다.
 ```
 
-DXP 업그레이드 프로세스에 대해 자세히 알아보려면 [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) 을 참조하세요. DXP가 7.4로 업그레이드되면 재인덱싱을 실행하세요.
+DXP 업그레이드 프로세스에 대해 자세히 알아보려면 [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) 을 참조하세요. DXP가 7.4로 업그레이드되면 재인덱싱을 실행하세요.
 
 ### Liferay Commerce 4.0으로 업그레이드하기 위한 전제 조건
 
@@ -24,13 +24,13 @@ Minium Accelerator를 사용하거나 고유한 값을 사용하는 경우 'Comm
 
 DXP 7.4로 업그레이드한 후 전체 검색 재색인을 실행하세요.
 
-1. _글로벌 메뉴_를 열고 _제어판_ &rarr; _검색_으로 이동하세요.
+1. **글로벌 메뉴** 를 열고 **제어판** &rarr; **검색** 으로 이동하세요.
 
    ![Go to Search in the Control Panel tab.](./upgrading-liferay-commerce/images/02.png)
 
-1. _색인 작업_ 탭에서 _모든 검색 색인_에 대해 _재색인_을 클릭하세요.
+1. **색인 작업** 탭에서 **모든 검색 색인** 에 대해 **재색인** 을 클릭하세요.
 
-재색인이 완료되면 글로벌 메뉴의 _Commerce_ &rarr; _Products_로 이동하여 모든 제품이 표시되는지 확인하여 성공했는지 확인하세요.
+재색인이 완료되면 글로벌 메뉴의 **Commerce** &rarr; **Products** 로 이동하여 모든 제품이 표시되는지 확인하여 성공했는지 확인하세요.
 
 ## 2.1 이하에서 Commerce 3.0으로 업그레이드
 
@@ -44,13 +44,13 @@ Commerce 3.0으로 업그레이드하려면 먼저 기본 Liferay DXP 설치를 
 
 DXP 7.3으로 업그레이드한 후 전체 검색 재색인을 실행하세요.
 
-1. _글로벌 메뉴_를 열고 _제어판_ &rarr; _검색_으로 이동하세요.
+1. **글로벌 메뉴** 를 열고 **제어판** &rarr; **검색** 으로 이동하세요.
 
    ![Go to Search in the Control Panel tab.](./upgrading-liferay-commerce/images/02.png)
 
-1. _색인 작업_ 탭에서 _모든 검색 색인 재색인_을 위해 _실행_을 클릭하세요.
+1. **색인 작업** 탭에서 **모든 검색 색인 재색인** 을 위해 **실행** 을 클릭하세요.
 
-재색인이 완료되면 글로벌 메뉴의 _Commerce_ &rarr; _Products_로 이동하여 모든 제품이 표시되는지 확인하여 성공했는지 확인하세요.
+재색인이 완료되면 글로벌 메뉴의 **Commerce** &rarr; **Products** 로 이동하여 모든 제품이 표시되는지 확인하여 성공했는지 확인하세요.
 
 ## Commerce 2.1.x/2.2.x로 업그레이드
 
@@ -60,7 +60,7 @@ Liferay Commerce를 2.1.x/2.2.x로 업그레이드하려면 적절한 DXP 수정
 1.1.x에서 2.1.x로 업그레이드하는 경우 2.0.x로 점진적인 업그레이드가 **필요하지 않습니다**.
 ```
 
-예를 들어 Liferay Commerce 2.0.7로 업그레이드하는 경우 Liferay DXP 7.1을 수정 팩 16 이상으로 업그레이드하십시오. Liferay DXP 7.2를 사용하는 경우 수정 팩 2 또는 3을 적용해야 합니다. DXP 업그레이드에 대해 알아보려면 [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) 을 참조하세요. 업그레이드 경로를 이해하려면 아래 표를 참조하세요.
+예를 들어 Liferay Commerce 2.0.7로 업그레이드하는 경우 Liferay DXP 7.1을 수정 팩 16 이상으로 업그레이드하십시오. Liferay DXP 7.2를 사용하는 경우 수정 팩 2 또는 3을 적용해야 합니다. DXP 업그레이드에 대해 알아보려면 [업그레이드 기본 사항](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/upgrading-liferay/upgrade-basics.html) 을 참조하세요. 업그레이드 경로를 이해하려면 아래 표를 참조하세요.
 
 | 업그레이드 중         | 필수 수정팩 버전                           |
 | :-------------- | :---------------------------------- |
@@ -80,7 +80,7 @@ Liferay DXP 7.1 FP 17+/Commerce 2.1.0 또는 Liferay DXP 7.2 FP5/Commerce 2.1.0�
 
 {bdg-primary}`구독`
 
-Liferay에 대한 적절한 수정 팩은 [도움말 센터](https://customer.liferay.com/downloads) 에서 다운로드할 수 있습니다. 다운로드한 후에는 [Liferay Patching Tool](https://help.liferay.com/hc/articles/360018176551-Using-the-Patching-Tool) 사용하여 수정팩을 적용할 수 있습니다. 자세한 내용은 [패치 설치](https://help.liferay.com/hc/en-us/articles/360028810512-Installing-Patches) 을 참조하세요.
+Liferay에 대한 적절한 수정 팩은 [도움말 센터](https://customer.liferay.com/downloads) 에서 다운로드할 수 있습니다. 다운로드한 후에는 [Liferay Patching Tool](https://help.liferay.com/hc/articles/360018176551-Using-the-Patching-Tool) 사용하여 수정팩을 적용할 수 있습니다. 자세한 내용은 [패치 설치](https://help.liferay.com/hc/ko/articles/360028810512-Installing-Patches) 을 참조하세요.
 
 Liferay DXP가 [수동으로 설치된 경우(예: WebLogic에서)](https://help.liferay.com/hc/articles/360017896672-Installing-Liferay-DXP-Manually) [Liferay DXP 7.1 WAR에 패치 설치](https://help.liferay.com/hc/articles/360018176651-Installing-patches-on-the-Liferay-DXP-7-1-WAR) 을 참조하십시오.
 
@@ -170,14 +170,14 @@ Liferay Commerce 인스턴스가 업그레이드되었습니다.
 
 최신 버전으로 업그레이드한 후 전체 검색 재색인을 실행합니다.
 
-1. _제어판_ &rarr; _구성_ &rarr; _검색_으로 이동하세요.
-1. _모든 검색 색인 다시 색인화_ 옆에 있는 _실행_을 클릭하세요. 그리고 그것이 끝날 때까지 기다리세요.
-1. _제어판_ &rarr; _Commerce_ &rarr; _제품_으로 이동합니다.
+1. **제어판** &rarr; **구성** &rarr; **검색** 으로 이동하세요.
+1. **모든 검색 색인 다시 색인화** 옆에 있는 **실행** 을 클릭하세요. 그리고 그것이 끝날 때까지 기다리세요.
+1. **제어판** &rarr; **Commerce** &rarr; **제품** 으로 이동합니다.
 1. 모든 제품이 다시 표시되는지 확인합니다.
 
 재인덱싱이 완료되면 업그레이드된 Liferay Commerce 인스턴스를 사용할 수 있습니다.
 
 ## 관련 주제
 
-* [앱 설치](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html) 
-* [Liferay Commerce Fix 전달 방법](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md) 
+* [앱 설치](https://learn.liferay.com/dxp/latest/en/system-administration/installing-and-managing-apps/installing-apps/installing-apps.html)
+* [Liferay Commerce Fix 전달 방법](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)

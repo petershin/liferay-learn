@@ -1,6 +1,6 @@
 # 검색 관리
 
-_제어판_ &rarr; _구성_ &rarr; _검색_에는 연결, 색인 작업 및 필드 매핑이라는 세 가지 관리 UI가 있습니다. 연결은 설치가 연결된 검색 엔진을 보여주고, 인덱스 작업은 재인덱싱을 위한 인터페이스이며, 필드 매핑은 Liferay에서 검색 인덱스로 매핑된 필드를 표시합니다.
+**제어판** &rarr; **구성** &rarr; **검색** 에는 연결, 색인 작업 및 필드 매핑이라는 세 가지 관리 UI가 있습니다. 연결은 설치가 연결된 검색 엔진을 보여주고, 인덱스 작업은 재인덱싱을 위한 인터페이스이며, 필드 매핑은 Liferay에서 검색 인덱스로 매핑된 필드를 표시합니다.
 
 ![The Search Administration panel contains three management screens.](./search-administration/images/02.png)
 
@@ -36,7 +36,7 @@ Index Actions에서는 Liferay의 데이터를 다시 인덱싱할 수 있습니
 
    ![Choose the re-indexing mode.](./re-indexing-modes/images/01.png)
 
-   Liferay 7.4 2023.Q4 이상(업데이트/GA 102+)에서는 검색 중단 시간을 방지하기 위해 재색인 모드를 구성할 수 있습니다. 도입된 _Concurrent_ 및 _Sync_ 모드에 대해 알아보려면 [재인덱싱 모드](./re-indexing-modes.md) 을 참조하세요.
+   Liferay 7.4 2023.Q4 이상(업데이트/GA 102+)에서는 검색 중단 시간을 방지하기 위해 재색인 모드를 구성할 수 있습니다. 도입된 **Concurrent** 및 **Sync** 모드에 대해 알아보려면 [재인덱싱 모드](./re-indexing-modes.md) 을 참조하세요.
 
 1. [Liferay 7.4] 실행 범위 탭을 사용하여 다시 인덱싱할 인스턴스를 선택합니다.
 
@@ -44,7 +44,7 @@ Index Actions에서는 Liferay의 데이터를 다시 인덱싱할 수 있습니
 
    Liferay 7.4부터 재색인 작업 범위를 특정 [가상 인스턴스](../../system-administration/configuring-liferay/virtual-instances/understanding-virtual-instances.md)로 제한할 수 있습니다.
 
-1. [Liferay 2023.Q4+/GA 102+] 대화상자에서 _실행_을 클릭하여 재인덱싱을 확인하세요.
+1. [Liferay 2023.Q4+/GA 102+] 대화상자에서 **실행** 을 클릭하여 재인덱싱을 확인하세요.
 
    ![Confirm that you'd like to re-index.](./search-administration/images/04.png)
 

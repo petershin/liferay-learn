@@ -18,11 +18,11 @@ ModSecurity는 기본적으로 비활성화되어 있습니다. 이를 활성화
 
 `LCP_WEBSERVER_MODSECURITY`에 허용되는 값은 다음과 같습니다.
 
-* **켜기**: ModSecurity를 활성화합니다. 공격 탐지 규칙이 처리됩니다.
+* **켜기** : ModSecurity를 활성화합니다. 공격 탐지 규칙이 처리됩니다.
 
-* **끄기**: ModSecurity를 비활성화합니다. 규칙이 처리되지 않습니다.
+* **끄기** : ModSecurity를 비활성화합니다. 규칙이 처리되지 않습니다.
 
-- **DetectionOnly**: ModSecurity를 활성화합니다. 규칙은 처리되지만 방해가 되는 작업(차단, 거부, 삭제, 허용, 프록시 또는 리디렉션)은 실행되지 않습니다.
+- **DetectionOnly** : ModSecurity를 활성화합니다. 규칙은 처리되지만 방해가 되는 작업(차단, 거부, 삭제, 허용, 프록시 또는 리디렉션)은 실행되지 않습니다.
 
 ```{tip}
 `LCP_WEBSERVER_MODSECURITY` 환경 변수는 ModSecurity의 자체 [`SecRuleEngine` 지시문과 동일합니다](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29#SecRuleEngine).
@@ -34,13 +34,13 @@ ModSecurity를 활성화하려면 `LCP_WEBSERVER_MODSECURITY` 값을 `On` 또는
 
 기본 ModSecurity 설정을 권장합니다. 기본 구성을 재정의하려면 프로젝트 저장소의 `webserver/configs/{ENV}/modsec/` 디렉토리에 `modsecurity.conf` 파일을 생성하세요. Liferay Cloud의 기본 `modsecurity.conf`를 완전히 재정의하므로 필요한 모든 구성을 제공해야 합니다.
 
-[권장 설정의 이 예](https://github.com/SpiderLabs/ModSecurity/blob/v3/master/modsecurity.conf-recommended)를 자신만의 `modsecurity.conf` 파일의 시작점으로 복사하세요. 이 파일을 사용하는 경우 `SecRuleEngineDetectionOnly`줄을 다음 줄로 바꾸세요.
+[권장 설정의 이 예](https://github.com/SpiderLabs/ModSecurity/blob/v3/master/modsecurity.conf-recommended) 를 자신만의 `modsecurity.conf` 파일의 시작점으로 복사하세요. 이 파일을 사용하는 경우 `SecRuleEngineDetectionOnly`줄을 다음 줄로 바꾸세요.
 
 ```
 SecRuleEngine ${LCP_WEBSERVER_MODSECURITY}
 ```
 
-허용되는 설정에 대한 자세한 내용은 [ModSecurity 참조 매뉴얼](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29)을 참조하세요.
+허용되는 설정에 대한 자세한 내용은 [ModSecurity 참조 매뉴얼](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual-%28v3.x%29) 을 참조하세요.
 
 ## 공격 탐지 규칙 추가
 

@@ -21,9 +21,9 @@ Liferay의 REST API를 사용하여 우편 주소를 관리하세요.
    unzip liferay-n8y7.zip
    ```
 
-1. [Accounts_GET_FromInstance](./accounts-api-basics.md#get-accounts-from-instance) 사용하여 계정 목록을 가져옵니다. 우편 주소를 추가할 계정의 ID를 기록해 두세요. _글로벌 메뉴_ &rarr; _제어판_ &rarr; _계정_으로 이동하여 계정 목록을 볼 수도 있습니다.
+1. [Accounts_GET_FromInstance](./accounts-api-basics.md#get-accounts-from-instance) 사용하여 계정 목록을 가져옵니다. 우편 주소를 추가할 계정의 ID를 기록해 두세요. **글로벌 메뉴** &rarr; **제어판** &rarr; **계정** 으로 이동하여 계정 목록을 볼 수도 있습니다.
 
-1. cURL 스크립트를 사용하여 선택한 계정에 새 우편 주소를 추가하세요. 명령줄에서 `curl` 폴더로 이동합니다. 'PostalAddress_POST_ToAccount.sh' 스크립트를 실행합니다. '1234'를 계정 ID로 바꾸세요.
+1. cURL 스크립트를 사용하여 선택한 계정에 새 우편 주소를 추가하세요. 명령줄에서 `curl` 폴더로 이동합니다. 'PostalAddress **POST** ToAccount.sh' 스크립트를 실행합니다. '1234'를 계정 ID로 바꾸세요.
 
    ```bash
    ./PostalAddress_POST_ToAccount.sh 1234
@@ -47,7 +47,7 @@ Liferay의 REST API를 사용하여 우편 주소를 관리하세요.
     }
    ```
 
-1. _글로벌 메뉴_ &rarr; _제어판_ &rarr; _계정_으로 이동합니다. 2단계에서 선택한 계정을 선택하고 _주소_로 이동합니다. 새 우편 주소가 계정에 추가되었는지 확인하세요.
+1. **글로벌 메뉴** &rarr; **제어판** &rarr; **계정** 으로 이동합니다. 2단계에서 선택한 계정을 선택하고 **주소** 로 이동합니다. 새 우편 주소가 계정에 추가되었는지 확인하세요.
 
    ![See that a new postal address has been added.](./postal-address-api-basics/images/01.png)
 

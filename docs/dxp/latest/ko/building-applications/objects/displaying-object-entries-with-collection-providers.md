@@ -12,27 +12,27 @@
    컬렉션 공급자를 사용하여 컬렉션 페이지를 만들 수도 있습니다. 자세한 내용은 [컬렉션 및 컬렉션 페이지](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) 을 참조하세요.
    ```
 
-1. 조각 및 위젯(![조각 및 위젯](../../images/icon-plus.png)) 사이드바에서 _컬렉션 표시_ 조각을 페이지나 템플릿으로 끌어서 놓습니다.
+1. 조각 및 위젯(![조각 및 위젯](../../images/icon-plus.png)) 사이드바에서 **컬렉션 표시** 조각을 페이지나 템플릿으로 끌어서 놓습니다.
 
-1. _컬렉션 표시 조각_을 선택하여 구성 옵션에 액세스하고 일반 탭에서 _컬렉션 선택_을 클릭하세요.
+1. **컬렉션 표시 조각** 을 선택하여 구성 옵션에 액세스하고 일반 탭에서 **컬렉션 선택** 을 클릭하세요.
 
    ![Select the fragment and click Select Collection.](../objects/displaying-object-entries-with-collection-providers/images/01.png)
 
-1. 모달 창에서 _컬렉션 공급자_ 탭을 클릭하고 _객체 공급자_를 선택합니다.
+1. 모달 창에서 **컬렉션 공급자** 탭을 클릭하고 **객체 공급자** 를 선택합니다.
 
    ![In the Collection Providers tab, select the object's provider.](./displaying-object-entries-with-collection-providers/images/02.png)
 
 1. (선택 사항) 표시된 개체 항목을 필터링합니다. 개체의 선택 목록이나 부울 필드를 기준으로 필터링할 수 있습니다.
 
-   _컬렉션 옵션_(![컬렉션 옵션 버튼](../../images/icon-actions.png))을 클릭하고 _컬렉션 필터링_을 선택합니다.
+**컬렉션 옵션**(![컬렉션 옵션 버튼](../../images/icon-actions.png))을 클릭하고 **컬렉션 필터링** 을 선택합니다.
 
    ![Click the Collection Options button and select Filter Collection.](./displaying-object-entries-with-collection-providers/images/03.png)
 
-   그런 다음 원하는 _필터_를 선택하고 _적용_을 클릭하세요.
+   그런 다음 원하는 **필터** 를 선택하고 **적용** 을 클릭하세요.
 
    ![Select the Filters to apply.](./displaying-object-entries-with-collection-providers/images/04.png)
 
-원하는 공급자를 선택한 후 추가 조각 옵션을 사용하여 _목록 스타일_ 및 _페이지 매기기_를 포함한 개체 항목이 표시되는 방식을 결정합니다.
+원하는 공급자를 선택한 후 추가 조각 옵션을 사용하여 **목록 스타일** 및 **페이지 매기기** 를 포함한 개체 항목이 표시되는 방식을 결정합니다.
 
 ## 조각을 개체 필드에 매핑
 
@@ -63,9 +63,9 @@
    ```
    ![Use the Browser tab to help properly embed the Collection Display fragment.](./displaying-object-entries-with-collection-providers/images/06.png)
 
-1. 새 컬렉션 표시 조각의 구성 옵션에서 _컬렉션 선택_을 클릭하세요.
+1. 새 컬렉션 표시 조각의 구성 옵션에서 **컬렉션 선택** 을 클릭하세요.
 
-1. _관련 항목 컬렉션 공급자_ 탭을 클릭합니다.
+1. **관련 항목 컬렉션 공급자** 탭을 클릭합니다.
 
 1. 개체 관계의 이름으로 컬렉션 공급자를 선택합니다. 연관된 개체 유형이 관계 이름 아래에 나타납니다. 이 예에서는 관계를 '국가 내 도시'라고 합니다.
 

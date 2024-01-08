@@ -26,7 +26,7 @@ Liferay의 OAuth2 도구를 사용하여 타사 애플리케이션에 데이터 
 
 ## 샘플 React 앱 배포
 
-1. [OAuth2 React 앱](https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip)을 다운로드하고 압축을 풉니다.
+1. [OAuth2 React 앱](https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip) 을 다운로드하고 압축을 풉니다.
 
    ```bash
    curl https://resources.learn.liferay.com/dxp/latest/en/headless-delivery/using-oauth2/liferay-c2b6.zip -O

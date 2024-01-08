@@ -141,7 +141,7 @@ Type Facet 및 검색 결과 위젯은 다음 방식으로 Liferay 개체 검색
 
   ![A title and a content summary are displayed for Object Entries.](./searching-for-content/images/10.png)
 
-Liferay 7.4 U64+/GA64+의 경우 검색 결과에서 개체 항목을 클릭하면 해당 항목의 [표시 페이지](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects)로 리디렉션됩니다.
+Liferay 7.4 U64+/GA64+의 경우 검색 결과에서 개체 항목을 클릭하면 해당 항목의 [표시 페이지](../../building-applications/objects/displaying-object-entries.md#creating-display-page-templates-for-objects) 로 리디렉션됩니다.
 
 ## 관련 주제
 

@@ -14,15 +14,15 @@
 
 ![You can change the Order number of an Order Type to set the default to what you want.](./using-order-types/images/04.png)
 
-1. _글로벌 메뉴_(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Order Types_를 클릭합니다.
+1. **글로벌 메뉴**(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Order Types** 를 클릭합니다.
 
-1. _추가_ 버튼(![아이콘 추가](../../images/icon-add.png))을 클릭하고 다음 정보를 입력합니다.
+1. **추가** 버튼(![아이콘 추가](../../images/icon-add.png))을 클릭하고 다음 정보를 입력합니다.
 
    **이름:** 주식
 
    **설명:** 모든 일반 주문에 대한 주문 유형
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
    그러면 새 주문 유형이 생성되고 구성 페이지가 열립니다. 주문 필드는 드롭다운 메뉴에 있는 주문 유형의 정렬 순서를 결정합니다. 재고 주문 유형에 대해 주문 필드의 값을 0으로 설정합니다. 다음 정보를 사용하여 주문 유형을 하나 더 생성합니다.
 
@@ -30,15 +30,15 @@
 
    **설명:** 10% 추가 요금이 적용되는 긴급 주문의 주문 유형
 
-이 주문 유형에 대한 주문 값을 1로 설정합니다. _활성_ 토글을 사용하여 활성화할 수 있습니다. _자격_ 탭에서 주문 유형을 특정 채널 또는 모든 채널에 연결할 수 있습니다.
+이 주문 유형에 대한 주문 값을 1로 설정합니다. **활성** 토글을 사용하여 활성화할 수 있습니다. **자격** 탭에서 주문 유형을 특정 채널 또는 모든 채널에 연결할 수 있습니다.
 
 ## 주문 유형과 주문 연결
 
 사용자 정의 가격표를 생성하고 이를 긴급 주문 유형에 연결할 수 있습니다. 추가 요금을 추가하려면 가격표에 가격 수정자를 생성하세요.
 
-1. _글로벌 메뉴_(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 _Commerce_ &rarr; _Price Lists_를 클릭합니다.
+1. **글로벌 메뉴**(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 **Commerce** &rarr; **Price Lists** 를 클릭합니다.
 
-1. _추가_ 버튼(![아이콘 추가](../../images/icon-add.png))을 클릭하여 새로운 가격표를 생성하고 다음 정보를 입력하세요.
+1. **추가** 버튼(![아이콘 추가](../../images/icon-add.png))을 클릭하여 새로운 가격표를 생성하고 다음 정보를 입력하세요.
 
    **이름:** 긴급 주문 추가 요금
 
@@ -48,9 +48,9 @@
 
    ![Enter the name, catalog, and default currency and click Submit to create the Price List.](./using-order-types/images/01.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
-1. 가격 수정자 탭에서 _추가_ 버튼(![아이콘 추가](../../images/icon-add.png))을 클릭하여 새 가격 수정자를 생성하고 다음 정보를 입력합니다.
+1. 가격 수정자 탭에서 **추가** 버튼(![아이콘 추가](../../images/icon-add.png))을 클릭하여 새 가격 수정자를 생성하고 다음 정보를 입력합니다.
 
    **이름:** 10% 추가요금
 
@@ -60,18 +60,18 @@
 
    ![Enter the name, target, and modifier, and click Submit to create the Price Modifier.](./using-order-types/images/02.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
-1. 새 가격 수정자를 클릭하고 _활성_ 토글을 사용하여 활성화하세요. _금액_을 10으로 설정합니다.
+1. 새 가격 수정자를 클릭하고 **활성** 토글을 사용하여 활성화하세요. **금액** 을 10으로 설정합니다.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
    그러면 가격 수정자가 포함된 새 가격 목록이 생성됩니다. 추가 요금을 추가하려면 주문 유형에 연결해야 합니다.
 
-1. _자격_ 탭을 클릭하고 _주문 유형 자격_까지 아래로 스크롤합니다.
+1. **자격** 탭을 클릭하고 **주문 유형 자격** 까지 아래로 스크롤합니다.
 
-1. 긴급 주문 유형을 검색하고 _선택_을 클릭하세요.
+1. 긴급 주문 유형을 검색하고 **선택** 을 클릭하세요.
 
-1. _게시_를 클릭하세요.
+1. **게시** 를 클릭하세요.
 
     ![Based on the Order Type, Products in the catalog automatically display their correct prices.](./using-order-types/images/03.gif)

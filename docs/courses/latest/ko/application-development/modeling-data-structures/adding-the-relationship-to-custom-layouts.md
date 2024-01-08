@@ -6,15 +6,15 @@
 
 ## 배포자 애플리케이션의 레이아웃에 관계 테이블 추가
 
-1. Distributor Application 개체를 편집하는 동안 _레이아웃_ 탭으로 이동하여 레이아웃 편집을 시작합니다.
+1. Distributor Application 개체를 편집하는 동안 **레이아웃** 탭으로 이동하여 레이아웃 편집을 시작합니다.
 
-1. 정보 탭에서 레이아웃 이름을 _관계 테이블이 있는 레이아웃_으로 바꿉니다.
+1. 정보 탭에서 레이아웃 이름을 **관계 테이블이 있는 레이아웃** 으로 바꿉니다.
 
    ![Rename the layout to Layout with Relationship Table.](./adding-the-relationship-to-custom-layouts/images/01.png)
 
-1. _레이아웃_ 탭으로 이동합니다.
+1. **레이아웃** 탭으로 이동합니다.
 
-1. _탭 추가_를 클릭하고 세부정보를 입력한 후 _저장_을 클릭하세요.
+1. **탭 추가** 를 클릭하고 세부정보를 입력한 후 **저장** 을 클릭하세요.
 
    | 분야           | 가치           |
    | :----------- | :----------- |
@@ -56,7 +56,7 @@
 
    ![Verify the new layout includes the relationship field.](./adding-the-relationship-to-custom-layouts/images/04.png)
 
-1. _보기_ 탭으로 이동합니다.
+1. **보기** 탭으로 이동합니다.
 
 1. 애플리케이션 평가를 위한 새로운 기본 보기를 생성하려면 다음 스크립트를 실행하세요.
 

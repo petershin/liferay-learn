@@ -44,7 +44,7 @@
    }
    ```
 
-1. _글로벌 메뉴_ &rarr; _애플리케이션_ &rarr; _계정_으로 이동합니다. 새 계정이 추가되었는지 확인하세요.
+1. **글로벌 메뉴** &rarr; **애플리케이션** &rarr; **계정** 으로 이동합니다. 새 계정이 추가되었는지 확인하세요.
 
    ![See that a new account has been added.](./accounts-api-basics/images/01.png)
 

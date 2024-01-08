@@ -13,7 +13,7 @@ toc:
 
 사용자 정의 개체 정의를 게시하면 Liferay는 개체 및 해당 데이터와 상호 작용하기 위해 기본 [REST API](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 을 생성합니다. 이러한 API는 개체의 범위(예: 회사 또는 사이트)에 따라 다릅니다. 정의에 관계 또는 독립 실행형 작업이 포함된 경우 Liferay는 이를 호출하기 위한 엔드포인트도 생성합니다.
 
-이러한 헤드리스 서비스의 경로는 `c/[pluralobjectlabel]` 명명 패턴(예: `/o/c/timeoffrequests`)을 따릅니다. `[서버]:[포트]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용 가능한 개체 API를 보고 테스트할 수 있습니다. API 드롭다운 목록을 보려면 _REST 애플리케이션_을 클릭하세요.
+이러한 헤드리스 서비스의 경로는 `c/[pluralobjectlabel]` 명명 패턴(예: `/o/c/timeoffrequests`)을 따릅니다. `[server]:[port]/o/api`(예: `localhost:8080/o/api`)에서 Liferay API 탐색기를 통해 사용 가능한 개체 API를 보고 테스트할 수 있습니다. API 드롭다운 목록을 보려면 **REST 애플리케이션** 을 클릭하세요.
 
 ![Each object appears under REST Applications.](./using-custom-object-apis/images/01.png)
 
@@ -138,6 +138,6 @@ See [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming
 
 ## 관련 주제
 
-* [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md) 
+* [REST 서비스 사용](../../../headless-delivery/consuming-apis/consuming-rest-services.md)
 
 <!--TASK: * [Consuming GraphQL APIs](../../../headless-delivery/consuming-apis/consuming-graphql-apis.md) -->

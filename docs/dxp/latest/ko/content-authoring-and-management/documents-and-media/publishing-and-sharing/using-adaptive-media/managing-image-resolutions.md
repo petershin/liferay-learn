@@ -4,7 +4,7 @@ Adaptive Media 애플리케이션을 통해 조정된 이미지 해상도를 관
 
 ## 이미지 해상도 편집
 
-Adaptive Media가 적응형 이미지를 생성하는 데 해상도를 사용한 경우 해상도의 크기와 식별자를 편집할 수 없습니다. 이렇게 하면 생성된 이미지의 불일치가 방지됩니다. 조정된 이미지로 해상도 값을 변경해야 하는 경우 해상도를 [삭제](#deleting-image-solutions)하고 새 해상도를 [생성](./adding-image-solutions.md)해야 합니다.
+Adaptive Media가 적응형 이미지를 생성하는 데 해상도를 사용한 경우 해상도의 크기와 식별자를 편집할 수 없습니다. 이렇게 하면 생성된 이미지의 불일치가 방지됩니다. 조정된 이미지로 해상도 값을 변경해야 하는 경우 해상도를 [삭제](#deleting-image-solutions) 하고 새 해상도를 [생성](./adding-image-solutions.md)해야 합니다.
 
 ## 적응된 이미지를 수동으로 생성
 
@@ -14,13 +14,13 @@ Adaptive Media가 적응형 이미지를 생성하는 데 해상도를 사용한
 
 해상도에 맞는 이미지를 수동으로 생성하려면,
 
-1. *전역 메뉴*( ![전역 메뉴](../../../../images/icon-applications-menu.png) )를 열고 *제어판* 탭으로 이동한 다음 *적응형 미디어*를 클릭합니다.
+1. **전역 메뉴**( ![전역 메뉴](../../../../images/icon-applications-menu.png) )를 열고 **제어판** 탭으로 이동한 다음 **적응형 미디어** 를 클릭합니다.
 
-1. 원하는 해상도에 대해 _작업_ 버튼( ![작업 버튼](../../../../images/icon-actions.png) )을 클릭하고 _나머지 조정_을 선택합니다.
+1. 원하는 해상도에 대해 **작업** 버튼( ![작업 버튼](../../../../images/icon-actions.png) )을 클릭하고 **나머지 조정** 을 선택합니다.
 
    ![Select Adapt Remaining.](./managing-image-resolutions/images/02.png)
 
-   또는 응용 프로그램 표시줄에서 _작업_ 버튼( ![작업 버튼](../../../../images/icon-actions.png) )을 클릭하고 _모든 이미지 적용_을 선택하여 활성화된 모든 해상도에 대한 이미지 생성을 시작합니다.
+   또는 응용 프로그램 표시줄에서 **작업** 버튼( ![작업 버튼](../../../../images/icon-actions.png) )을 클릭하고 **모든 이미지 적용** 을 선택하여 활성화된 모든 해상도에 대한 이미지 생성을 시작합니다.
 
    ![Select Adapt All Images.](./managing-image-resolutions/images/03.png)
 
@@ -32,9 +32,9 @@ Adaptive Media는 처리 구성 [에 따라](./adaptive-media-configuration-refe
 
 해결 방법을 비활성화/재활성화하려면,
 
-1. 원하는 해상도에 대해 _작업_ 버튼( ![작업 버튼](../../../../images/icon-actions.png) )을 클릭합니다.
+1. 원하는 해상도에 대해 **작업** 버튼( ![작업 버튼](../../../../images/icon-actions.png) )을 클릭합니다.
 
-1. _비활성화_/_활성화_를 선택합니다.
+1. **비활성화** / **활성화** 를 선택합니다.
 
    ![Select Disable/Enable.](./managing-image-resolutions/images/04.png)
 
@@ -44,7 +44,7 @@ Adaptive Media는 처리 구성 [에 따라](./adaptive-media-configuration-refe
 
 ## 이미지 해상도 삭제
 
-이미지 해상도를 삭제해야 하는 경우 먼저 비활성화해야 합니다. 활성화된 해상도는 삭제할 수 _없습니다_. 이렇게 하면 이미지 해상도가 실수로 삭제되는 것을 방지할 수 있습니다.
+이미지 해상도를 삭제해야 하는 경우 먼저 비활성화해야 합니다. 활성화된 해상도는 삭제할 수 **없습니다** . 이렇게 하면 이미지 해상도가 실수로 삭제되는 것을 방지할 수 있습니다.
 
 ```{warning}
 이미지 해상도를 삭제할 때는 주의하세요. 삭제되면 해당 해상도에 적용된 이미지는 복구할 수 없게 손실되며 생성한 새 이미지 해상도로 자동 교체되지 않습니다.
@@ -52,9 +52,9 @@ Adaptive Media는 처리 구성 [에 따라](./adaptive-media-configuration-refe
 
 이미지 해상도를 삭제하려면,
 
-1. 비활성화된 해상도에 대해 _작업_ 버튼( ![작업 버튼](../../../../images/icon-actions.png) )을 클릭합니다.
+1. 비활성화된 해상도에 대해 **작업** 버튼( ![작업 버튼](../../../../images/icon-actions.png) )을 클릭합니다.
 
-1. _삭제_를 선택하세요.
+1. **삭제** 를 선택하세요.
 
    ![Select Delete.](./managing-image-resolutions/images/05.png)
 

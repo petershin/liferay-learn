@@ -40,7 +40,7 @@ Groovy 스크립트 작업은 Liferay Experience Cloud 자체 관리형 및 Life
 * 새 계정에 대한 기본 사용자 자동 추가
 * 맞춤형 발권 시스템 내에서 현재 항공권에 어린이 항공권을 수동으로 추가
 
-활성 개체를 선택해야 합니다. 그런 다음 항목 필드에 대해 사전 정의된 값을 설정할 수 있습니다. 이러한 값을 직접 입력하거나 _코드_( ![Code](../../../../images/icon-code.png) )를 클릭하여 값을 동적으로 설정하는 표현식을 사용합니다. 개체에 필수 필드가 포함된 경우 사전 정의된 값을 설정해야 합니다.
+활성 개체를 선택해야 합니다. 그런 다음 항목 필드에 대해 사전 정의된 값을 설정할 수 있습니다. 이러한 값을 직접 입력하거나 **코드**( ![Code](../../../../images/icon-code.png) )를 클릭하여 값을 동적으로 설정하는 표현식을 사용합니다. 개체에 필수 필드가 포함된 경우 사전 정의된 값을 설정해야 합니다.
 
 ![Select an active object and enter predefined values for the created entries.](./understanding-action-types/images/02.png)
 
@@ -52,7 +52,7 @@ Groovy 스크립트 작업은 Liferay Experience Cloud 자체 관리형 및 Life
 * 버튼을 클릭하면 티켓 담당자를 현재 사용자로 수동 업데이트
 * 사용자가 항목을 즐겨찾기에 추가하면 해당 항목의 부울 필드를 'true'로 자동 업데이트합니다.
 
-현재 항목에서 업데이트할 필드를 선택하고 새 값을 입력해야 합니다. 이러한 값을 직접 입력하거나 _코드_( ![Code](../../../../images/icon-code.png) )를 클릭하여 값을 동적으로 설정하는 표현식을 사용할 수 있습니다.
+현재 항목에서 업데이트할 필드를 선택하고 새 값을 입력해야 합니다. 이러한 값을 직접 입력하거나 **코드**( ![Code](../../../../images/icon-code.png) )를 클릭하여 값을 동적으로 설정하는 표현식을 사용할 수 있습니다.
 
 ![Select the fields from the current object entry that you want to edit and enter default values.](./understanding-action-types/images/03.png)
 

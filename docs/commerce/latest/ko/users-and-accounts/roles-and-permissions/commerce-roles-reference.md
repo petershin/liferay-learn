@@ -10,7 +10,7 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
 
 상거래 역할과 관련된 권한을 보고 관리하려면 다음 단계를 따르십시오.
 
-1. _전역 메뉴_(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 _제어판_ &rarr; _사용자_ &rarr; _역할_로 이동합니다.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** &rarr; **사용자** &rarr; **역할** 로 이동합니다.
 
    ![Click on Roles in the Control Panel.](./commerce-roles-reference/images/01.png)
 
@@ -25,7 +25,7 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
    Liferay 7.3 이하 버전에서는 계정 관리자가 사이트 역할이고 계정 구성원 역할은 기본 역할이 아닙니다. 
    ```
 
-1. _권한 정의_ 탭을 클릭하세요.
+1. **권한 정의** 탭을 클릭하세요.
 
    여기에서 역할에 할당된 모든 애플리케이션 및 리소스 권한의 요약을 볼 수 있습니다.
 
@@ -35,7 +35,7 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
 
 ## 기본 역할
 
-다음 역할은 DXP 인스턴스와 함께 즉시 사용할 수 있습니다. 이는 기본 DXP 역할에 포함되어 있으며 필요한 경우 수정할 수 있습니다. 자세한 내용은 [역할 권한 정의](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 참조하세요.
+다음 역할은 DXP 인스턴스와 함께 즉시 사용할 수 있습니다. 이는 기본 DXP 역할에 포함되어 있으며 필요한 경우 수정할 수 있습니다. 자세한 내용은 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 참조하세요.
 
 ### 계정 관리자
 
@@ -260,7 +260,7 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
 
 ## 맞춤 역할
 
-다음 목록에는 자신의 Commerce 인스턴스에 대해 생성할 수 있는 일반적인 사용자 정의 역할이 포함되어 있습니다. 이러한 역할은 다른 DXP 역할과 동일한 방식으로 생성될 수 있습니다. 자세한 내용은 [역할 생성 및 관리](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) 과 [역할 권한 정의](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 참조하세요.
+다음 목록에는 자신의 Commerce 인스턴스에 대해 생성할 수 있는 일반적인 사용자 정의 역할이 포함되어 있습니다. 이러한 역할은 다른 DXP 역할과 동일한 방식으로 생성될 수 있습니다. 자세한 내용은 [역할 생성 및 관리](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/creating-and-managing-roles.html) 과 [역할 권한 정의](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/defining-role-permissions.html) 참조하세요.
 
 ### 카탈로그 관리자
 
@@ -279,7 +279,7 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
 
 위의 권한 외에도 역할이 관리할 개별 카탈로그에 대한 보기 및 업데이트 권한도 할당해야 합니다.
 
-이렇게 하려면 _글로벌 메뉴_(![글로벌 메뉴](../../images/icon-applications-menu.png))를 열고 _커머스_ 탭을 클릭한 다음 _제품 관리_로 이동하세요. &rarr; _카탈로그_. 그런 다음 원하는 카탈로그에 대해 _작업_ 버튼(![작업 버튼](../../images/icon-actions.png))을 클릭하고 _권한_을 선택합니다. 확인란을 사용하여 역할에 _보기_ 및 _업데이트_ 권한을 할당합니다.
+이렇게 하려면 **글로벌 메뉴**(![글로벌 메뉴](../../images/icon-applications-menu.png))를 열고 **커머스** 탭을 클릭한 다음 **제품 관리** 로 이동하세요. &rarr; **카탈로그** . 그런 다음 원하는 카탈로그에 대해 **작업** 버튼(![작업 버튼](../../images/icon-actions.png))을 클릭하고 **권한** 을 선택합니다. 확인란을 사용하여 역할에 **보기** 및 **업데이트** 권한을 할당합니다.
 
 ```{note}
 카탈로그 관리자가 카탈로그의 제품을 관리하지만 카탈로그 자체를 수정하지는 못하게 하려면 '카탈로그: 제어판 액세스' 및 '카탈로그: 보기' 권한을 제거하세요.
@@ -343,7 +343,7 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
 
 > 일반 역할
 
-판매 대리인은 Liferay의 정규 역할이며 담당자는 관리 권한을 부여하지 않고도 역할에 할당된 모든 계정을 관리할 수 있습니다. _일반 역할_ 탭에서 찾을 수 있습니다.
+판매 대리인은 Liferay의 정규 역할이며 담당자는 관리 권한을 부여하지 않고도 역할에 할당된 모든 계정을 관리할 수 있습니다. **일반 역할** 탭에서 찾을 수 있습니다.
 
 ![View default sales agent permissions in the Define Permissions tab.](./commerce-roles-reference/images/06.png)
 
@@ -354,10 +354,10 @@ Liferay에는 Commerce에 대해 [사용](#out-of-the-box-roles) 4가지 역할(
 
 ## 관련 주제
 
-* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/en/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html) 
-* [주문관리 권한 참고](./order-management-permissions.md) 
-* [재고관리 권한 참고](./inventory-management-permissions.md) 
-* [가격 책정 권한 참조](./pricing-permissions.md) 
-* [상품 관리 권한 참고](./product-management-permissions.md) 
-* [매장 관리 권한 참고](./store-management-permissions.md) 
-* [설정 권한 참조](./settings-permissions.md) 
+* [역할 및 권한 이해](https://learn.liferay.com/dxp/latest/ko/users-and-permissions/roles-and-permissions/understanding-roles-and-permissions.html)
+* [주문관리 권한 참고](./order-management-permissions.md)
+* [재고관리 권한 참고](./inventory-management-permissions.md)
+* [가격 책정 권한 참조](./pricing-permissions.md)
+* [상품 관리 권한 참고](./product-management-permissions.md)
+* [매장 관리 권한 참고](./store-management-permissions.md)
+* [설정 권한 참조](./settings-permissions.md)

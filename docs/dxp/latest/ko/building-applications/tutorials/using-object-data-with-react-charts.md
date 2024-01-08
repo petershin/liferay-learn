@@ -11,23 +11,23 @@
 ```{include} /_snippets/run-liferay-dxp.md
 ```
 
-그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 _기본 포털 CORS 구성_에 추가하세요.
+그런 다음 다음 단계에 따라 `/o/c/*` URL 패턴을 **기본 포털 CORS 구성** 에 추가하세요.
 
-1. _전역 메뉴_(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _보안 도구_를 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **보안 도구** 를 클릭합니다.
 
-1. _포털 CORS(Cross-Origin Resource Sharing)_ 탭으로 이동하여 _기본 포털 CORS 구성_을 클릭합니다.
+1. **포털 CORS(Cross-Origin Resource Sharing**) 탭으로 이동하여 **기본 포털 CORS 구성** 을 클릭합니다.
 
    ![Click Default Portal CORS Configuration](./using-object-data-with-react-charts/images/02.png)
 
-1. `/o/c/*` 값으로 _URL 패턴_을 추가하고 _저장_을 클릭하세요. 이를 통해 모든 객체 API에 대해 CORS가 활성화됩니다.
+1. `/o/c/*` 값으로 **URL 패턴** 을 추가하고 **저장** 을 클릭하세요. 이를 통해 모든 객체 API에 대해 CORS가 활성화됩니다.
 
    ![Add the /o/c/\* URL Pattern for Object APIs.](./using-object-data-with-react-charts/images/03.png)
 
 ## React 차트용 객체 생성
 
-1. _전역 메뉴_(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _개체_를 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **개체** 를 클릭합니다.
 
-1. _추가_ 버튼(![추가 버튼](../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
+1. **추가** 버튼(![추가 버튼](../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
    | 분야    | 가치      |
    | :---- | :------ |
@@ -38,20 +38,21 @@
    ```{note}
    제공된 React 앱은 이러한 값을 사용합니다.
    ```
-1. 새 _개체_ 초안을 선택하고 _필드_ 탭을 클릭한 후 다음 _필드_를 추가하세요.
+
+1. 새 **개체** 초안을 선택하고 **필드** 탭을 클릭한 후 다음 **필드** 를 추가하세요.
 
    | 라벨 | 필드 이름 | 유형 | 요구하는 |
    | :- | :---- | :- | :--- |
    | 라벨 | 라벨    | 원본 | ✔    |
    | 가치 | 가치    | 정수 | ✔    |
 
-1. _세부정보_ 탭을 클릭하고 _게시_를 클릭하세요.
+1. **세부정보** 탭을 클릭하고 **게시** 를 클릭하세요.
 
 [객체 게시](../objects/creating-and-managing-objects/creating-objects.md#publishing-object-drafts) 은 데이터 수신 및 저장을 위한 새 애플리케이션을 생성하고 활성화합니다. 이제 Liferay UI 또는 Headless API를 통해 액세스할 수 있습니다.
 
 ## 헤드리스 API를 사용하여 객체에 데이터 추가
 
-1. Liferay의 _API 탐색기_(예: `localhost:8080/o/api`)를 열고 _REST 응용 프로그램_ 드롭다운 메뉴를 클릭한 다음 _c/x3j8objects_를 클릭합니다.
+1. Liferay의 **API 탐색기**(예: `localhost:8080/o/api`)를 열고 **REST 응용 프로그램** 드롭다운 메뉴를 클릭한 다음 **c/x3j8objects** 를 클릭합니다.
 
 1. 일괄 `POST` API에 대한 요청 본문에 다음 데이터를 입력합니다.
 
@@ -80,7 +81,7 @@
    ]
    ```
 
-1. _실행_을 클릭하여 개체에 데이터 항목을 추가합니다.
+1. **실행** 을 클릭하여 개체에 데이터 항목을 추가합니다.
 
 데이터 추가가 완료되면 제공된 React 서버를 설정할 수 있습니다. 여기에는 X3J8-Object에 대한 API 호출을 만들고 해당 데이터를 표시하는 FusionChart 구현이 포함됩니다.
 
@@ -150,15 +151,15 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
 
 ## 애플리케이션의 `.js` 파일 호스팅
 
-1. _사이트 메뉴_(![사이트 메뉴](../../images/icon-product-menu.png))를 열고 _콘텐츠 및 데이터_를 확장한 다음 _문서 및 미디어_를 클릭합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../images/icon-product-menu.png))를 열고 **콘텐츠 및 데이터** 를 확장한 다음 **문서 및 미디어** 를 클릭합니다.
 
 1. '.js' 파일을 업로드 영역으로 끌어다 놓습니다.
 
    문서 라이브러리에 업로드되면 파일에는 원격 앱을 만드는 데 사용되는 고유한 WebDAV URL이 할당됩니다.
 
-1. _정보_ 아이콘(![정보 아이콘](../../images/icon-information.png))을 클릭하고 _업로드된 파일_을 선택합니다.
+1. **정보** 아이콘(![정보 아이콘](../../images/icon-information.png))을 클릭하고 **업로드된 파일** 을 선택합니다.
 
-1. 파일의 _WebDAV URL_을 복사하고 다음 단계에서 사용할 수 있도록 저장하세요.
+1. 파일의 **WebDAV URL** 을 복사하고 다음 단계에서 사용할 수 있도록 저장하세요.
 
    예를 들어 `http://localhost:8080/webdav/guest/document_library/main.5a6819d5.js`입니다.
 
@@ -166,9 +167,9 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
 
 ## React 차트용 원격 앱 만들기
 
-1. _전역 메뉴_(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 _응용 프로그램_ 탭을 클릭한 다음 _원격 앱_을 선택합니다.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **응용 프로그램** 탭을 클릭한 다음 **원격 앱** 을 선택합니다.
 
-1. _추가_ 버튼(![추가 버튼](../../images/icon-add.png))을 클릭합니다.
+1. **추가** 버튼(![추가 버튼](../../images/icon-add.png))을 클릭합니다.
 
 1. 다음 값을 입력하세요.
 
@@ -180,14 +181,14 @@ React 애플리케이션을 다운로드하고 빌드하려면 다음 단계를 
    | URL        | `.js` 파일의 WebDAV URL  |
    | 포틀릿 분류 이름  | 원격 앱                  |
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
-저장되면 Liferay는 사이트 페이지에 배포할 수 있는 원격 앱용 위젯을 생성합니다. 이 위젯은 애플리케이션의 포틀릿 카테고리 이름(예: 이 튜토리얼에서는 _원격 앱_) 아래에 나열됩니다.
+저장되면 Liferay는 사이트 페이지에 배포할 수 있는 원격 앱용 위젯을 생성합니다. 이 위젯은 애플리케이션의 포틀릿 카테고리 이름(예: 이 튜토리얼에서는 **원격 앱**) 아래에 나열됩니다.
 
 ![You can deploy the remote app widget to Site Pages.](./using-object-data-with-react-charts/images/06.png)
 
 ## 관련 주제
 
-* [개체 개요](../objects.md) 
-* [헤드리스 프레임워크 통합](../objects/understanding-object-integrations/using-custom-object-apis.md) 
-* [CORS 설정](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors.md) 
+* [개체 개요](../objects.md)
+* [헤드리스 프레임워크 통합](../objects/understanding-object-integrations/using-custom-object-apis.md)
+* [CORS 설정](../../installation-and-upgrades/securing-liferay/securing-web-services/setting-up-cors.md)

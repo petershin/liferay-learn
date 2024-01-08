@@ -126,7 +126,7 @@ JSP 템플릿을 제거하면 기존 및 새 템플릿 엔진에 더욱 집중�
 
 `com.liferay.portal.kernel.util` &rarr; `com.liferay.portal.internal.terms.of.use`
 
-</code> `가져오는 논리도 변경되었습니다. 등록된 첫 번째 서비스를 항상 반환하는 대신 등록된 서비스의 순서에 따라 달라지며 <code>TermsOfUseContentProvider` 서비스가 추적되고 `com.liferay.portal.kernel.util.ServiceProxyFactory`으로 업데이트됩니다. 결과적으로 `TermsOfUseContentProvider` 은 이제 서비스 순위를 따릅니다.
+`TermsOfUseContentProvider`를 가져오는 논리도 변경되었습니다. 무작위이며 등록된 서비스의 순서에 따라 달라지는 등록된 첫 번째 서비스를 항상 반환하는 대신 `TermsOfUseContentProvider` 서비스가 `com.liferay.portal.kernel.util.ServiceProxyFactory`로 추적되고 업데이트됩니다. 결과적으로 `TermsOfUseContentProvider`는 이제 서비스 순위를 존중합니다.
 
 #### 누가 영향을 받습니까?
 
@@ -971,7 +971,6 @@ private AssetEntryLocalService _assetEntryLocalService;
 
 ---------------------------------------
 ### module.framework.properties.felix.fileinstall.\* 포털 속성의 이름을 module.framework.properties.file.install.\* 으로 변경했습니다.
-
 * **날짜:** 2020-Aug-08
 * **JIRA 티켓:** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
 

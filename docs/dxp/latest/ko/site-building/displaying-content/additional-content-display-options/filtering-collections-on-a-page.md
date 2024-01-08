@@ -12,13 +12,13 @@
 
 1. 페이지를 편집하는 동안 페이지의 아무 곳에나 컬렉션 필터 조각을 추가하세요.
 
-1. 조각의 _일반_ 구성에서 원하는 컬렉션을 선택합니다. 컬렉션이 효과를 가지려면 페이지의 컬렉션 표시 조각에 표시되어야 합니다.
+1. 조각의 **일반** 구성에서 원하는 컬렉션을 선택합니다. 컬렉션이 효과를 가지려면 페이지의 컬렉션 표시 조각에 표시되어야 합니다.
 
    ![Configure the Fragment to use a Collection that is already displayed in a Collection Display Fragment.](./filtering-collections-on-a-page/images/01.png)
 
-   _필터_ 드롭다운 메뉴는 호환 가능한 컬렉션을 선택하면 나타납니다.
+**필터** 드롭다운 메뉴는 호환 가능한 컬렉션을 선택하면 나타납니다.
 
-1. 필터 메뉴를 사용하여 _키워드_, _카테고리_ 또는 _태그_ 필터를 선택하세요.
+1. 필터 메뉴를 사용하여 **키워드** , **카테고리** 또는 **태그** 필터를 선택하세요.
 
     ```{note}
     사용자 정의 컬렉션 필터를 추가하는 모듈이 배포된 경우( [`FragmentCollectionFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/fragment/fragment-collection-filter-api/src/main/java/com/liferay/fragment/collection/filter/FragmentCollectionFilter.java) 및 [`InfoFilter`](https://github.com/liferay/liferay-portal/blob/master/modules/apps/info/info-api/src/main/java/com/liferay/info/filter/InfoFilter.java) 인터페이스 구현) 목록에서 이러한 필터를 선택할 수도 있습니다.
@@ -42,7 +42,7 @@
 
 ![Select the vocabulary or category that contains the desired category selection.](./filtering-collections-on-a-page/images/02.png)
 
-1. 원하는 카테고리가 포함된 어휘 또는 상위 카테고리를 선택했으면 _이 레벨 선택_을 클릭하세요.
+1. 원하는 카테고리가 포함된 어휘 또는 상위 카테고리를 선택했으면 **이 레벨 선택** 을 클릭하세요.
 
 1. 페이지를 게시합니다.
 
@@ -64,11 +64,11 @@
 
 1. 페이지를 편집하는 동안 페이지의 아무 곳에나 적용된 필터 조각을 추가하세요.
 
-1. 적용된 필터 조각의 _일반_ 구성에서 원하는 컬렉션을 선택합니다. 동일한 컬렉션이 페이지에 표시되어야 하며 [컬렉션 필터 조각](#using-the-collection-filter-fragment) 로 구성되어야 합니다.
+1. 적용된 필터 조각의 **일반** 구성에서 원하는 컬렉션을 선택합니다. 동일한 컬렉션이 페이지에 표시되어야 하며 [컬렉션 필터 조각](#using-the-collection-filter-fragment) 로 구성되어야 합니다.
 
 1. 페이지를 게시합니다.
 
-이제 사용자가 컬렉션 필터 조각으로 콘텐츠를 필터링하면 적용된 필터 조각에 현재 구성된 컬렉션에 적용되는 필터 목록이 표시됩니다. 사용자는 나열된 각 필터에서 _X_ 버튼을 클릭하여 필터를 제거할 수도 있습니다.
+이제 사용자가 컬렉션 필터 조각으로 콘텐츠를 필터링하면 적용된 필터 조각에 현재 구성된 컬렉션에 적용되는 필터 목록이 표시됩니다. 사용자는 나열된 각 필터에서 **X** 버튼을 클릭하여 필터를 제거할 수도 있습니다.
 
 ![The Applied Filters Fragment shows all filters currently applied to the configured Collection.](./filtering-collections-on-a-page/images/05.png)
 

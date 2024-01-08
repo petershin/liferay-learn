@@ -6,7 +6,7 @@
 
 1. **OSGI 구성 요소** : `@Component` 주석을 사용하여 모듈을 OSGi 프레임워크 내의 구성 요소로 선언합니다.
 
-1. **서비스**: `@Component` 주석 내에서 모듈을 `DispatchTaskExecutor.class` 서비스로 식별합니다.
+1. **서비스** : `@Component` 주석 내에서 모듈을 `DispatchTaskExecutor.class` 서비스로 식별합니다.
 
 1. **OSGi 속성** : `@Component` 주석에 다음 속성을 추가합니다.
 

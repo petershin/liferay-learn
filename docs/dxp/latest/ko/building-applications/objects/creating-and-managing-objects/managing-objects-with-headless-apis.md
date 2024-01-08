@@ -2,7 +2,7 @@
 
 {bdg-secondary}`liferay 7.4+`
 
-애플리케이션 메뉴에서 객체를 생성하고 관리할 [있지만](../creating-and-managing-objects.md) Liferay의 REST API를 사용할 수도 있습니다. 객체를 생성하고 관리하려면 이러한 서비스를 호출하세요. Liferay의 코드베이스에서는 객체를 _객체 정의_라고 합니다. 각 개체 정의는 다양한 개체 필드로 구성됩니다.
+애플리케이션 메뉴에서 객체를 생성하고 관리할 [있지만](../creating-and-managing-objects.md) Liferay의 REST API를 사용할 수도 있습니다. 객체를 생성하고 관리하려면 이러한 서비스를 호출하세요. Liferay의 코드베이스에서는 객체를 **객체 정의** 라고 합니다. 각 개체 정의는 다양한 개체 필드로 구성됩니다.
 
 ## 개체 정의 및 개체 필드 추가
 
@@ -60,11 +60,11 @@
    "titleObjectFieldName" : "id"
    ```
 
-1. _글로벌 메뉴_ &rarr; _응용 프로그램_ &rarr; _개체_로 이동합니다. 새로운 객체가 추가되었는지 확인하세요.
+1. **글로벌 메뉴** &rarr; **응용 프로그램** &rarr; **개체** 로 이동합니다. 새로운 객체가 추가되었는지 확인하세요.
 
    ![See that a new object definition has been added.](./managing-objects-with-headless-apis/images/01.png)
 
-   _Foo_ 개체를 클릭하세요. 개체의 ID 번호를 기록해 두십시오.
+**Foo** 개체를 클릭하세요. 개체의 ID 번호를 기록해 두십시오.
 
 1. cURL 스크립트를 사용하여 개체 정의에 새 개체 필드를 추가합니다. 명령줄에서 `ObjectField_POST_ToObjectDefinition.sh` 스크립트를 실행합니다. 1234를 개체 ID로 바꿉니다.
 
@@ -72,7 +72,7 @@
    ./ObjectField_POST_ToObjectDefinition.sh 1234
    ```
 
-1. Liferay에서 _Foo_ 개체를 다시 클릭합니다. _필드_ 탭을 클릭하세요. 새로운 Able 필드가 추가되었습니다.
+1. Liferay에서 **Foo** 개체를 다시 클릭합니다. **필드** 탭을 클릭하세요. 새로운 Able 필드가 추가되었습니다.
 
    ![See that a new object field has been added.](./managing-objects-with-headless-apis/images/02.png)
 
@@ -88,7 +88,7 @@
    java -classpath .:* ObjectDefinition_POST_ToInstance
    ```
 
-1. _Foo_ 객체의 ID 번호를 기록해 두세요. 그런 다음 `ObjectField_POST_ToObjectDefinition.java` 클래스를 실행하세요. 1234를 개체 ID로 바꿉니다.
+1. **Foo** 객체의 ID 번호를 기록해 두세요. 그런 다음 `ObjectField_POST_ToObjectDefinition.java` 클래스를 실행하세요. 1234를 개체 ID로 바꿉니다.
 
    ```bash
    java -classpath .:* -DobjectDefinitionId=1234 ObjectField_POST_ToObjectDefinition

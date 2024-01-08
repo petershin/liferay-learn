@@ -17,7 +17,7 @@
 ### Liferay FontAwesome은 더 이상 기본적으로 포함되지 않습니다.
 
 - **날짜:** 2019년 8월 21일
-- **JIRA 티켓:** [LPS-100021](https://issues.liferay.com/browse/LPS-100021) 
+- **JIRA 티켓:** [LPS-100021](https://issues.liferay.com/browse/LPS-100021)
 
 #### 무엇이 바뀌었나요?
 
@@ -58,7 +58,7 @@ jsp에서 아이콘을 직접 사용하는 개발자는 위에서 설명한 대�
 ### liferay.frontend.ProgressBar가 제거되었습니다.
 
 - **날짜:** 2019년 8월 28일
-- **JIRA 티켓:** [LPS-100122](https://issues.liferay.com/browse/LPS-100122) 
+- **JIRA 티켓:** [LPS-100122](https://issues.liferay.com/browse/LPS-100122)
 
 #### 무엇이 바뀌었나요?
 
@@ -82,7 +82,7 @@ jsp에서 아이콘을 직접 사용하는 개발자는 위에서 설명한 대�
 ### AssetCategory의 트리 경로가 왼쪽/오른쪽 범주 ID를 대체합니다.
 
 - **날짜:** 2019년 10월 8일
-- **JIRA 티켓:** [LPS-102671](https://issues.liferay.com/browse/LPS-102671) 
+- **JIRA 티켓:** [LPS-102671](https://issues.liferay.com/browse/LPS-102671)
 
 #### 무엇이 바뀌었나요?
 
@@ -121,12 +121,12 @@ jsp에서 아이콘을 직접 사용하는 개발자는 위에서 설명한 대�
 참고로 이 스니펫 `AssetCategoryLocalService`는 카테고리를 추가할 때 트리 경로를 설정합니다.
 
 ```
-if (parentCategory == null) {
+if (parentCategory == null){
     category.setTreePath("/" + categoryId + "/");
 }
 else {
     category.setTreePath(
-        parentCategory.getTreePath() + categoryId + "/");
+        parentCategory.getTreePath()+ categoryId + "/");
 }
 ```
 
@@ -145,7 +145,7 @@ else {
 - 기존 코드를 재평가하세요.
 - 기존 서비스 API가 동일한 목표를 달성할 수 있는지 탐색
 
-##### G_P_N_V와 관련된 파인더 메소드의 경우
+##### G **P** N_V와 관련된 파인더 메소드의 경우
 
 `G_P_N_V`로 끝나는 `AssetCategory` 찾기 메서드를 사용하는 경우 대신 `P_N_V`로 끝나는 메서드를 사용하세요.
 
@@ -158,7 +158,7 @@ else {
 ### liferay.frontend.Slider가 제거되었습니다.
 
 - **날짜:** 2019년 10월 10일
-- **JIRA 티켓:** [LPS-100124](https://issues.liferay.com/browse/LPS-100124) 
+- **JIRA 티켓:** [LPS-100124](https://issues.liferay.com/browse/LPS-100124)
 
 #### 무엇이 바뀌었나요?
 
@@ -182,7 +182,7 @@ else {
 ### com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag가 제거되었습니다.
 
 - **날짜:** 2019년 10월 15일
-- **JIRA 티켓:** [LPS-100144](https://issues.liferay.com/browse/LPS-100144) 
+- **JIRA 티켓:** [LPS-100144](https://issues.liferay.com/browse/LPS-100144)
 
 #### 무엇이 바뀌었나요?
 
@@ -205,7 +205,7 @@ Java 클래스 `com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag
 ### 제거된 포털 속성 user.groups.copy.layouts.to.user.personal.site
 
 - **날짜:** 2019년 12월 26일
-- **JIRA 티켓:** [LPS-106339](https://issues.liferay.com/browse/LPS-106339) 
+- **JIRA 티켓:** [LPS-106339](https://issues.liferay.com/browse/LPS-106339)
 
 #### 무엇이 바뀌었나요?
 
@@ -228,7 +228,7 @@ Java 클래스 `com.liferay.asset.taglib.servlet.taglib.soy.AssetTagsSelectorTag
 ### EXT 플러그인 자동 배포에 대한 지원이 제거되었습니다.
 
 - **날짜:** 2019년 12월 31일
-- **JIRA 티켓:** [LPS-106008](https://issues.liferay.com/browse/LPS-106008) 
+- **JIRA 티켓:** [LPS-106008](https://issues.liferay.com/browse/LPS-106008)
 
 #### 무엇이 바뀌었나요?
 
@@ -251,7 +251,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 ### 대체된 OSGi 구성 속성 자동 업그레이드
 
 - **날짜:** 2020년 1월 3일
-- **JIRA 티켓:** [LPS-102842](https://issues.liferay.com/browse/LPS-102842) 
+- **JIRA 티켓:** [LPS-102842](https://issues.liferay.com/browse/LPS-102842)
 
 #### 무엇이 바뀌었나요?
 
@@ -280,7 +280,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 ### SingleVMPoolUtil 및 MultiVMPoolUtil 클래스가 제거되었습니다.
 
 - **날짜:** 2020년 1월 7일
-- **JIRA 티켓:** [LPS-106315](https://issues.liferay.com/browse/LPS-106315) 
+- **JIRA 티켓:** [LPS-106315](https://issues.liferay.com/browse/LPS-106315)
 
 #### 무엇이 바뀌었나요?
 
@@ -303,7 +303,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 ### 제거된 캐시 부트스트랩 기능
 
 - **날짜:** 2020년 1월 8일
-- **JIRA 티켓:** [LPS-96563](https://issues.liferay.com/browse/LPS-96563) 
+- **JIRA 티켓:** [LPS-96563](https://issues.liferay.com/browse/LPS-96563)
 
 #### 무엇이 바뀌었나요?
 
@@ -330,7 +330,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 ### liferay-frontend:cards-treeview 태그가 제거되었습니다.
 
 - **날짜:** 2020년 1월 10일
-- **JIRA 티켓:** [LPS-106899](https://issues.liferay.com/browse/LPS-106899) 
+- **JIRA 티켓:** [LPS-106899](https://issues.liferay.com/browse/LPS-106899)
 
 #### 무엇이 바뀌었나요?
 
@@ -338,7 +338,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 누가 영향을 받나요?
 
-이는 jsp의 태그나 SOY(Closure Templates) 템플릿 내의 일부 구성 요소를 사용하는 모든 사람에게 영향을 미칩니다.
+이는 jsp의 태그나 SOY(Closure Templates)템플릿 내의 일부 구성 요소를 사용하는 모든 사람에게 영향을 미칩니다.
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
@@ -353,7 +353,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 ### liferay-frontend:contextual-sidebar 태그가 제거되었습니다.
 
 - **날짜:** 2020년 1월 10일
-- **JIRA 티켓:** [LPS-100146](https://issues.liferay.com/browse/LPS-100146) 
+- **JIRA 티켓:** [LPS-100146](https://issues.liferay.com/browse/LPS-100146)
 
 #### 무엇이 바뀌었나요?
 
@@ -361,7 +361,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 #### 누가 영향을 받나요?
 
-이는 jsp의 태그나 SOY(Closure Templates) 템플릿 내부의 일부 구성 요소를 사용하는 모든 사람에게 영향을 미칩니다.
+이는 jsp의 태그나 SOY(Closure Templates)템플릿 내부의 일부 구성 요소를 사용하는 모든 사람에게 영향을 미칩니다.
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
@@ -376,7 +376,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 ### Portal Vulcan API에서 작업 추가 메서드가 제거되었습니다.
 
 - **날짜:** 2020년 1월 22일
-- **JIRA 티켓:** [LPS-98387](https://issues.liferay.com/browse/LPS-98387) 
+- **JIRA 티켓:** [LPS-98387](https://issues.liferay.com/browse/LPS-98387)
 
 #### 무엇이 바뀌었나요?
 
@@ -400,7 +400,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
  변경
 
 - **날짜:** 2020년 2월 4일
-- **JIRA 티켓:** [LPS-107487](https://issues.liferay.com/browse/LPS-107487) 
+- **JIRA 티켓:** [LPS-107487](https://issues.liferay.com/browse/LPS-107487)
 
 #### 무엇이 바뀌었나요?
 
@@ -466,7 +466,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 ### jQuery는 더 이상 기본적으로 포함되지 않습니다.
 
 - **날짜:** 2020년 2월 4일
-- **JIRA 티켓:** [LPS-95726](https://issues.liferay.com/browse/LPS-95726) 
+- **JIRA 티켓:** [LPS-95726](https://issues.liferay.com/browse/LPS-95726)
 
 #### 무엇이 바뀌었나요?
 
@@ -480,7 +480,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 
 타사 라이브러리를 추가하여 코드에서 사용할 고유한 JQuery 버전을 제공하는 전략을 사용하세요.
 
-또한 임시 조치로 _시스템 설정_ &rarr; _제3자_ &rarr; _jQuery_에서 'jQuery 활성화' 속성을 'true'로 설정하여 이전 동작을 되돌릴 수 있습니다.
+또한 임시 조치로 **시스템 설정** &rarr; **제3자** &rarr; **jQuery** 에서 'jQuery 활성화' 속성을 'true'로 설정하여 이전 동작을 되돌릴 수 있습니다.
 
 #### 왜 이렇게 변경되었나요?
 
@@ -491,7 +491,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 ### 서버 측 병렬 렌더링은 더 이상 지원되지 않습니다.
 
 - **날짜:** 2020년 3월 16일
-- **JIRA 티켓:** [LPS-110359](https://issues.liferay.com/browse/LPS-110359) 
+- **JIRA 티켓:** [LPS-110359](https://issues.liferay.com/browse/LPS-110359)
 
 #### 무엇이 바뀌었나요?
 
@@ -514,7 +514,7 @@ Auto Deployer('liferay-home/deploy 폴더'를 통해)를 사용하여 EXT 플러
 ### ContentField 값 속성 이름이 contentFieldValue로 변경되었습니다.
 
 - **날짜:** 2020년 3월 18일
-- **JIRA 티켓:** [LPS-106886](https://issues.liferay.com/browse/LPS-106886) 
+- **JIRA 티켓:** [LPS-106886](https://issues.liferay.com/browse/LPS-106886)
 
 #### 무엇이 바뀌었나요?
 
@@ -537,7 +537,7 @@ REST 클라이언트에서 속성 이름을 `contentFieldValue`로 변경합니�
 ### liferay-editor-image-uploader 플러그인 제거됨
 
 - **날짜:** 2020년 3월 27일
-- **JIRA 티켓:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734) 
+- **JIRA 티켓:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
 
 ### 무엇이 바뀌었나요?
 
@@ -561,7 +561,7 @@ REST 클라이언트에서 속성 이름을 `contentFieldValue`로 변경합니�
 ### TinyMCE 편집기는 더 이상 기본적으로 번들로 제공되지 않습니다.
 
 - **날짜:** 2020년 3월 27일
-- **JIRA 티켓:** [LPS-110733](https://issues.liferay.com/browse/LPS-110733) 
+- **JIRA 티켓:** [LPS-110733](https://issues.liferay.com/browse/LPS-110733)
 
 ### 무엇이 바뀌었나요?
 
@@ -590,7 +590,7 @@ TinyMCE를 사용하도록 Liferay Portal을 구성한 경우 이러한 구성�
 ### Simple Editor는 더 이상 기본적으로 번들로 제공되지 않습니다.
 
 - **날짜:** 2020년 3월 27일
-- **JIRA 티켓:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734) 
+- **JIRA 티켓:** [LPS-110734](https://issues.liferay.com/browse/LPS-110734)
 
 ### 무엇이 바뀌었나요?
 
@@ -619,7 +619,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 ### Asset.vocabulary.default는 이제 언어 키를 보유합니다.
 
 - **날짜:** 2020년 4월 28일
-- **JIRA 티켓:** [LPS-112334](https://issues.liferay.com/browse/LPS-112334) 
+- **JIRA 티켓:** [LPS-112334](https://issues.liferay.com/browse/LPS-112334)
 
 ### 무엇이 바뀌었나요?
 
@@ -642,7 +642,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 ### Liferay.Poller는 더 이상 기본적으로 초기화되지 않습니다.
 
 - **날짜:** 2020년 5월 19일
-- **JIRA 티켓:** [LPS-112942](https://issues.liferay.com/browse/LPS-112942) 
+- **JIRA 티켓:** [LPS-112942](https://issues.liferay.com/browse/LPS-112942)
 
 #### 무엇이 바뀌었나요?
 
@@ -663,10 +663,10 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 <liferay-theme:defineObjects>
 
 <aui:script use="liferay-poller">
-	<c:if test="<%= themeDisplay.isSignedIn() %>">
+	<c:if test="<%= themeDisplay.isSignedIn()%>">
 		Liferay.Poller.init({
 			encryptedUserId:
-				'<%= Encryptor.encrypt(company.getKeyObj(), String.valueOf(themeDisplay.getUserId())) %>',
+				'<%= Encryptor.encrypt(company.getKeyObj(), String.valueOf(themeDisplay.getUserId()))%>',
 		});
 	</c:if>
 </aui:script>
@@ -681,7 +681,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 ### ContentTransformerListener는 기본적으로 비활성화되어 있습니다.
 
 - **날짜:** 2020년 5월 25일
-- **JIRA 티켓:** [LPS-114239](https://issues.liferay.com/browse/LPS-114239) 
+- **JIRA 티켓:** [LPS-114239](https://issues.liferay.com/browse/LPS-114239)
 
 #### 무엇이 바뀌었나요?
 
@@ -693,7 +693,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 
 #### 내 코드를 어떻게 업데이트해야 합니까?
 
-코드를 업데이트할 필요가 없습니다. 그래도 'ContentTransformerListener'를 사용하려면 시스템 설정에서 _Content & Data_ &rarr; _Web Content_ &rarr; _Virtual Instance Scope_ &rarr; _Web Content_ 아래의 _Enable ContentTransformerListener_ 속성을 통해 이를 활성화할 수 있습니다.
+코드를 업데이트할 필요가 없습니다. 그래도 'ContentTransformerListener'를 사용하려면 시스템 설정에서 **Content & Data** &rarr; **Web Content** &rarr; **Virtual Instance Scope** &rarr; **Web Content** 아래의 **Enable ContentTransformerListener** 속성을 통해 이를 활성화할 수 있습니다.
 
 #### 왜 이렇게 변경되었나요?
 
@@ -704,7 +704,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 ### Liferay.BrowserSelectors.run이 더 이상 호출되지 않습니다.
 
 - **날짜:** 2020년 5월 26일
-- **JIRA 티켓:** [LPS-112983](https://issues.liferay.com/browse/LPS-112983) 
+- **JIRA 티켓:** [LPS-112983](https://issues.liferay.com/browse/LPS-112983)
 
 #### 무엇이 바뀌었나요?
 
@@ -764,7 +764,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 ### 캐시 차단 지원 제거
 
 - **날짜:** 2020년 6월 17일
-- **JIRA 티켓:** [LPS-115687](https://issues.liferay.com/browse/LPS-115687) 
+- **JIRA 티켓:** [LPS-115687](https://issues.liferay.com/browse/LPS-115687)
 
 #### 무엇이 바뀌었나요?
 
@@ -791,7 +791,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 ### 각 엔터티 모델에 대한 캐시 속성 설정에 대한 지원 제거
 
 - **날짜:** 2020년 6월 24일
-- **JIRA 티켓:** [LPS-116049](https://issues.liferay.com/browse/LPS-116049) 
+- **JIRA 티켓:** [LPS-116049](https://issues.liferay.com/browse/LPS-116049)
 
 #### 무엇이 바뀌었나요?
 
@@ -821,10 +821,10 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 
 ---------------------------------------
 
-### 포털 속성 이름이 "module.framework.properties.felix.fileinstall.\*"에서 "module.framework.properties.file.install.\*"로 변경되었습니다.
+### 포털 속성 이름이 "module.framework.properties.felix.fileinstall.\*" 에서 "module.framework.properties.file.install.\*" 로 변경되었습니다.
 
 - **날짜:** 2020년 7월 13일
-- **JIRA 티켓:** [LPS-115016](https://issues.liferay.com/browse/LPS-115016) 
+- **JIRA 티켓:** [LPS-115016](https://issues.liferay.com/browse/LPS-115016)
 
 #### 무엇이 바뀌었나요?
 
@@ -847,7 +847,7 @@ Simple Editor를 사용하도록 Liferay Portal을 구성한 경우 이러한 �
 ### Elasticsearch의 동적 데이터 매핑 필드가 중첩 문서로 변경되었습니다.
 
 - **날짜:** 2020년 7월 27일
-- **JIRA 티켓:** [LPS-103224](https://issues.liferay.com/browse/LPS-103224) 
+- **JIRA 티켓:** [LPS-103224](https://issues.liferay.com/browse/LPS-103224)
 
 #### 무엇이 바뀌었나요?
 
@@ -869,28 +869,28 @@ Solr 검색 엔진을 사용하는 경우에는 이 변경 사항이 적용되�
 
 Elasticsearch 쿼리에 새로운 중첩 문서 `ddmFieldArray`를 사용해야 합니다.
 
-Liferay 코드에는 몇 가지 예가 있습니다. 예를 들어 [DDMIndexerImpl](https://github.com/liferay/liferay-portal/blob/7.3.x/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/util/DDMIndexerImpl.java) 및 [AssetHelperImpl](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-service/src/main/java/com/liferay/asset/internal/util/AssetHelperImpl.java) 'DDM_FIELD_ARRAY' 상수를 사용합니다.
+Liferay 코드에는 몇 가지 예가 있습니다. 예를 들어 [DDMIndexerImpl](https://github.com/liferay/liferay-portal/blob/7.3.x/modules/apps/dynamic-data-mapping/dynamic-data-mapping-service/src/main/java/com/liferay/dynamic/data/mapping/internal/util/DDMIndexerImpl.java) 및 [AssetHelperImpl](https://github.com/liferay/liferay-portal/blob/master/modules/apps/asset/asset-service/src/main/java/com/liferay/asset/internal/util/AssetHelperImpl.java) `DDM_FIELD_ARRAY` 상수를 사용합니다.
 
 시스템 설정에서 레거시 동작을 복원하고 `ddm__keyword__*` 및 `ddm__text__*` 필드를 계속 사용할 수도 있습니다.
 
-1. _시스템 설정_ &rarr; _동적 데이터 매핑_ &rarr; _동적 데이터 매핑 인덱서_로 이동합니다.
-1. _레거시 동적 데이터 매핑 색인 필드 활성화_를 선택합니다.
+1. **시스템 설정** &rarr; **동적 데이터 매핑** &rarr; **동적 데이터 매핑 인덱서** 로 이동합니다.
+1. **레거시 동적 데이터 매핑 색인 필드 활성화** 를 선택합니다.
 1. 전체 재색인을 실행합니다.
 
 #### 왜 이렇게 변경되었나요?
 
-이 변경은 동적 데이터 매핑 구조가 너무 많은 경우 발생하는 _전체 필드 제한이 초과되었습니다_ Elasticsearch 오류를 방지하기 위해 이루어졌습니다.
+이 변경은 동적 데이터 매핑 구조가 너무 많은 경우 발생하는 **전체 필드 제한이 초과되었습니다** Elasticsearch 오류를 방지하기 위해 이루어졌습니다.
 
 ---------------------------------------
 
 ### 어휘집 아이콘 경로 이동
 
 - **날짜:** 2020년 8월 17일
-- **JIRA 티켓:** [LPS-115812](https://issues.liferay.com/browse/LPS-115812) 
+- **JIRA 티켓:** [LPS-115812](https://issues.liferay.com/browse/LPS-115812)
 
 ### 무엇이 바뀌었나요?
 
-Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/icons.svg`에서 `themeDisplay.getPathThemeImages() + "/clay/icons.svg`로 변경되었습니다.
+Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages()+ "/lexicon/icons.svg`에서 `themeDisplay.getPathThemeImages()+ "/clay/icons.svg`로 변경되었습니다.
 
 ### 영향을 받는 사람
 
@@ -909,7 +909,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 ### DDM 지속성 클래스에서 classNameId 관련 메소드를 제거했습니다.
 
 - **날짜:** 2020년 8월 18일
-- **JIRA 티켓:** [LPS-108525](https://issues.liferay.com/browse/LPS-108525) 
+- **JIRA 티켓:** [LPS-108525](https://issues.liferay.com/browse/LPS-108525)
 
 ### 무엇이 바뀌었나요?
 
@@ -939,7 +939,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 ### com.liferay.dynamic.data.mapping.util.BaseDDMDisplay 메서드가 제거되었습니다.
 
 - **날짜:** 2020년 8월 18일
-- **JIRA 티켓:** [LPS-103549](https://issues.liferay.com/browse/LPS-103549) 
+- **JIRA 티켓:** [LPS-103549](https://issues.liferay.com/browse/LPS-103549)
 
 ### 무엇이 바뀌었나요?
 
@@ -962,11 +962,11 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 ### 대체된 포털 속성: view\.count.enabled 및 buffered.increment.enabled
 
 - **날짜:** 2020년 10월 1일
-- **JIRA 티켓:** [LPS-120626](https://issues.liferay.com/browse/LPS-120626) 및 [LPS-121145](https://issues.liferay.com/browse/LPS-121145) 
+- **JIRA 티켓:** [LPS-120626](https://issues.liferay.com/browse/LPS-120626) 및 [LPS-121145](https://issues.liferay.com/browse/LPS-121145)
 
 #### 무엇이 바뀌었나요?
 
-전역적으로, 구체적으로 엔터티에 대한 보기 수를 활성화 및 비활성화하는 기능이 포털 속성에서 제거되었으며 이제 시스템 설정으로 구성되었습니다. 조회수는 UI의 _시스템 설정_ &rarr; _인프라_ &rarr; _조회수_에서 구성하거나 `com.liferay.view.count.configuration.ViewCountConfiguration.config`라는 구성 파일을 사용하여 구성할 수 있습니다.
+전역적으로, 구체적으로 엔터티에 대한 보기 수를 활성화 및 비활성화하는 기능이 포털 속성에서 제거되었으며 이제 시스템 설정으로 구성되었습니다. 조회수는 UI의 **시스템 설정** &rarr; **인프라** &rarr; **조회수** 에서 구성하거나 `com.liferay.view.count.configuration.ViewCountConfiguration.config`라는 구성 파일을 사용하여 구성할 수 있습니다.
 
 포털 속성 변경 사항은 다음과 같습니다.
 
@@ -986,7 +986,7 @@ Lexicon 아이콘의 경로가 `themeDisplay.getPathThemeImages() + "/lexicon/ic
 
 시스템 설정에서 또는 구성 파일을 사용하여 조회수 동작을 구성합니다.
 
-_시스템 설정_ &rarr; _인프라_ &rarr; _보기 수_에서 'enabled'를 'false'로 설정하여 보기 횟수를 전역적으로 비활성화하거나 'enabled'를 'true'로 설정하여 전역적으로 보기 횟수를 활성화하고 특정 엔터티에 대한 보기 횟수를 비활성화합니다. 'Disabled Class Name' 값 목록에 엔터티 클래스 이름을 추가합니다.
+**시스템 설정** &rarr; **인프라** &rarr; **보기 수** 에서 'enabled'를 'false'로 설정하여 보기 횟수를 전역적으로 비활성화하거나 'enabled'를 'true'로 설정하여 전역적으로 보기 횟수를 활성화하고 특정 엔터티에 대한 보기 횟수를 비활성화합니다. 'Disabled Class Name' 값 목록에 엔터티 클래스 이름을 추가합니다.
 
 구성 파일을 사용하려면 시스템 설정에서 보기 수를 구성하고 설정을 저장한 후 `com.liferay.view.count.configuration.ViewCountConfiguration.config` 파일로 내보냅니다. 그런 다음 `[Liferay Home]/osgi/configs` 폴더에 파일을 배치하여 구성을 배포합니다.
 
@@ -999,7 +999,7 @@ _시스템 설정_ &rarr; _인프라_ &rarr; _보기 수_에서 'enabled'를 'fa
 ### 포털 속성 "module.framework.properties.file.install.ionalImportRefreshScope"가 제거되었습니다.
 
 - **날짜:** 2020년 10월 11일
-- **JIRA 티켓:** [LPS-122008](https://issues.liferay.com/browse/LPS-122008) 
+- **JIRA 티켓:** [LPS-122008](https://issues.liferay.com/browse/LPS-122008)
 
 #### 무엇이 바뀌었나요?
 

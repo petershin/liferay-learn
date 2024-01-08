@@ -56,7 +56,7 @@
 
 1. 개체를 열고 배포자 응용 프로그램 정의 편집을 시작합니다.
 
-1. 제목 필드를 _회사 이름_으로 설정하고 _저장_을 클릭하세요. 이는 관계 필드에서 개체 항목을 식별하는 데 사용되는 필드를 결정합니다.
+1. 제목 필드를 **회사 이름** 으로 설정하고 **저장** 을 클릭하세요. 이는 관계 필드에서 개체 항목을 식별하는 데 사용되는 필드를 결정합니다.
 
    ![Set Title Field to Business Name and click Save.](./relating-object-entries/images/04.png)
 
@@ -68,9 +68,9 @@
 
 1. 배포자 응용 프로그램을 열고 항목 편집을 시작합니다.
 
-1. _평가 메모_ 탭으로 이동합니다.
+1. **평가 메모** 탭으로 이동합니다.
 
-1. _추가_(![추가 버튼](../../images/icon-add.png))를 클릭하고 기존 애플리케이션 평가에서 선택합니다.
+1. **추가**(![추가 버튼](../../images/icon-add.png))를 클릭하고 기존 애플리케이션 평가에서 선택합니다.
 
    ![Select from existing application evaluations.](./relating-object-entries/images/06.png)
 
@@ -78,7 +78,7 @@
 
    ![The relationship table uses the ID and title field to identify each related evaluation.](./relating-object-entries/images/07.png)
 
-1. 애플리케이션 평가 정의의 제목 필드를 _작성자_로 업데이트합니다.
+1. 애플리케이션 평가 정의의 제목 필드를 **작성자** 로 업데이트합니다.
 
 1. 배포자 애플리케이션으로 돌아가서 이제 관계 테이블이 ID 및 작성자 필드를 사용하여 관련 평가를 식별하는 것을 확인합니다.
 

@@ -10,13 +10,13 @@ Liferay DXP 7.4+의 경우 Liferay UI에서는 페이지 템플릿 컬렉션을 
 
 ## 페이지 템플릿 내보내기
 
-1. _사이트 메뉴_(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 _디자인_ &rarr; _페이지 템플릿_으로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 **디자인** &rarr; **페이지 템플릿** 으로 이동합니다.
 
-1. _페이지 템플릿_ 탭을 선택합니다.
+1. **페이지 템플릿** 탭을 선택합니다.
 
 1. 원하는 템플릿이 포함된 페이지 템플릿 세트를 선택합니다.
 
-1. 원하는 콘텐츠 페이지 템플릿에 대해 _작업_(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 _내보내기_를 선택합니다.
+1. 원하는 콘텐츠 페이지 템플릿에 대해 **작업**(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 **내보내기** 를 선택합니다.
 
    ![Click Export to export your page template as a ZIP file](./exporting-and-importing-page-templates/images/01.png)
 
@@ -39,27 +39,27 @@ ZIP 파일에는 `display-page-template.json`, `master-page.json`, `page-templat
 
 ## 페이지 템플릿 가져오기
 
-1. _사이트 메뉴_(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 _디자인_ &rarr; _페이지 템플릿_으로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 **디자인** &rarr; **페이지 템플릿** 으로 이동합니다.
 
-1. 응용 프로그램 표시줄에서 _옵션_(![옵션 아이콘](../../../images/icon-options.png))을 클릭하고 _가져오기_를 선택합니다.
+1. 응용 프로그램 표시줄에서 **옵션**(![옵션 아이콘](../../../images/icon-options.png))을 클릭하고 **가져오기** 를 선택합니다.
 
    ![The import function is located in the options menu in the Application Bar.](./exporting-and-importing-page-templates/images/02.png)
 
 1. 원하는 페이지 템플릿 파일을 선택합니다.
 
-   변경하려면 _파일 바꾸기_를 클릭하세요.
+   변경하려면 **파일 바꾸기** 를 클릭하세요.
 
-1. _가져오기_를 클릭하세요.
+1. **가져오기** 를 클릭하세요.
 
    기존 페이지 템플릿을 가져오는 경우 자세한 내용은 [기존 페이지 템플릿 가져오기](#importing-an-existing-page-template) 을 참조하세요.
 
-   작업을 취소하고 페이지 템플릿 페이지로 돌아가려면 _취소_를 클릭하세요.
+   작업을 취소하고 페이지 템플릿 페이지로 돌아가려면 **취소** 를 클릭하세요.
 
    ![Page templates are imported as ZIP files.](./exporting-and-importing-page-templates/images/03.png)
 
 1. 가져오기 프로세스가 완료되면 [가져오기 결과 페이지](#import-outcome-page) 로 리디렉션됩니다.
 
-1. 다른 파일을 가져오려면 _다른 파일 업로드_를 클릭하고, 페이지 템플릿 페이지로 돌아가려면 _완료_를 클릭하세요.
+1. 다른 파일을 가져오려면 **다른 파일 업로드** 를 클릭하고, 페이지 템플릿 페이지로 돌아가려면 **완료** 를 클릭하세요.
 
 ```{Important}
 DXP 환경 간에 페이지 템플릿을 전송하려면 LAR 내보내기 및 가져오기 방법을 사용하세요.
@@ -69,11 +69,11 @@ DXP 환경 간에 페이지 템플릿을 전송하려면 LAR 내보내기 및 �
 
 페이지 템플릿을 가져오고 ZIP 파일의 항목이 이미 존재하는 경우 다음 세 가지 옵션 중 하나를 선택할 수 있습니다.
 
-**기존 항목을 가져오지 않음**: 새 항목만 가져옵니다.
+**기존 항목을 가져오지 않음** : 새 항목만 가져옵니다.
 
-**기존 항목 덮어쓰기**: 중복된 기존 항목을 덮어씁니다.
+**기존 항목 덮어쓰기** : 중복된 기존 항목을 덮어씁니다.
 
-**모두 유지**: 기존 항목의 번호가 매겨진 복사본을 가져옵니다.
+**모두 유지** : 기존 항목의 번호가 매겨진 복사본을 가져옵니다.
 
 가져오기 프로세스가 완료되면 [가져오기 결과 페이지](#import-outcome-page) 로 리디렉션됩니다.
 

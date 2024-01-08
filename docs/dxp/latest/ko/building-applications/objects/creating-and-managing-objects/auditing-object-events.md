@@ -8,7 +8,7 @@ Liferay의 감사 프레임워크를 사용하여 사용자 정의 개체 정의
 
 {bdg-primary}`구독`
 
-감사 애플리케이션에 액세스하려면 _전역 메뉴_(![전역 메뉴](../../../images/icon-applications-menu.png))를 엽니다. &rarr; _제어판_  &rarr; _감사_를 클릭합니다.
+감사 애플리케이션에 액세스하려면 **전역 메뉴**(![전역 메뉴](../../../images/icon-applications-menu.png))를 엽니다. &rarr; **제어판** &rarr; **감사** 를 클릭합니다.
 
 ![Click Audit in the Control Panel to view events related to object definitions.](./auditing-object-events/images/01.png)
 
@@ -44,15 +44,15 @@ REST API를 사용하여 항목 기록을 보려면 해당 항목에 대한 '보
 
 항목 기록을 활성화하려면,
 
-1. _전역 메뉴_(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _개체_를 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **개체** 를 클릭합니다.
 
 1. 원하는 객체 정의 편집을 시작합니다.
 
-1. 세부정보 탭에서 _항목 기록 활성화_를 전환하세요.
+1. 세부정보 탭에서 **항목 기록 활성화** 를 전환하세요.
 
    ![Enable entry history.](./auditing-object-events/images/03.png)
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 활성화된 동안 Liferay는 감사 애플리케이션이나 REST API 호출을 통해 볼 수 있는 입력 이벤트 기록을 유지합니다.
 

@@ -8,17 +8,17 @@
 
    ![Log into Liferay with your user account.](./multi-factor-authentication/images/01.png)
 
-1. 5가지 MFA 옵션 중 하나를 선택하세요. 예를 들어, 문자 메시지로 코드를 받으려면 _SMS 인증_을 선택하세요.
+1. 5가지 MFA 옵션 중 하나를 선택하세요. 예를 들어, 문자 메시지로 코드를 받으려면 **SMS 인증** 을 선택하세요.
 
    ![Choose your MFA option.](./multi-factor-authentication/images/02.png)
 
    설정 후 다른 인증 유형으로 변경하려는 경우 [에 문의하세요](#help-with-mfa) .
 
-1. _코드 보내기_ 버튼을 클릭하고 코드가 수신될 때까지 기다립니다. _이메일 인증_ 옵션을 사용하는 경우 스팸 폴더를 확인해야 할 수도 있습니다.
+1. **코드 보내기** 버튼을 클릭하고 코드가 수신될 때까지 기다립니다. **이메일 인증** 옵션을 사용하는 경우 스팸 폴더를 확인해야 할 수도 있습니다.
 
    ![Select a authentication option and click send code.](./multi-factor-authentication/images/03.png)
 
-1. 인증번호를 입력하고 _인증_ 버튼을 클릭하세요. 인증번호를 받지 못한 경우 _재전송_ 버튼을 클릭하세요.
+1. 인증번호를 입력하고 **인증** 버튼을 클릭하세요. 인증번호를 받지 못한 경우 **재전송** 버튼을 클릭하세요.
 
    ![Input and verify received code.](./multi-factor-authentication/images/04.png)
 
@@ -26,7 +26,7 @@
 
    ![Check the box if you want the MFA to not expire for 30 days.](./multi-factor-authentication/images/06.png)
 
-1. _마침_을 클릭하여 인증 과정을 완료하세요.
+1. **마침** 을 클릭하여 인증 과정을 완료하세요.
 
    ![Click the Finish button to finish the process.](./multi-factor-authentication/images/05.png)
 

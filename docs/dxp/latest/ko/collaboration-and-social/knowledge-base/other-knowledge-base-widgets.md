@@ -2,13 +2,13 @@
 
 [Knowledge Base Display 위젯](knowledge-base-display-widget.md) 외에 페이지에 추가할 수 있는 다른 Knowledge Base 위젯이 있습니다.
 
-**기술 자료 기사**: 단일 기사의 콘텐츠를 표시합니다.
+**기술 자료 기사** : 단일 기사의 콘텐츠를 표시합니다.
 
-**기술 자료 섹션**: 특정 주제(섹션)와 관련된 기사를 게시합니다.
+**기술 자료 섹션** : 특정 주제(섹션)와 관련된 기사를 게시합니다.
 
-**기술 자료 검색**: 기사를 검색합니다.
+**기술 자료 검색** : 기사를 검색합니다.
 
-_추가_ (![아이콘 추가](../../images/icon-add.png)) &rarr; _위젯_ &rarr; _콘텐츠 관리_에서 이러한 위젯을 추가할 수 있습니다.
+**추가**(![아이콘 추가](../../images/icon-add.png)) &rarr; **위젯** &rarr; **콘텐츠 관리** 에서 이러한 위젯을 추가할 수 있습니다.
 
 ## 기술 자료 문서 위젯
 
@@ -16,13 +16,13 @@ _추가_ (![아이콘 추가](../../images/icon-add.png)) &rarr; _위젯_ &rarr;
 
 사이트 페이지에 기술 자료 문서 위젯을 추가한 후,
 
-1. _옵션_(![옵션 버튼](../../images/icon-options.png))을 클릭하고 _구성_을 선택합니다.
+1. **옵션**(![옵션 버튼](../../images/icon-options.png))을 클릭하고 **구성** 을 선택합니다.
 
-1. _설정_ 탭에서 _선택_을 클릭합니다.
+1. **설정** 탭에서 **선택** 을 클릭합니다.
 
 1. 기사를 선택하세요.
 
-1. _저장_을 클릭하고 구성 창을 닫습니다.
+1. **저장** 을 클릭하고 구성 창을 닫습니다.
 
    ![Use the Knowledge Base Article widget to display an individual article.](./other-knowledge-base-widgets/images/01.png)
 
@@ -48,11 +48,11 @@ _추가_ (![아이콘 추가](../../images/icon-add.png)) &rarr; _위젯_ &rarr;
 
 기술 자료 섹션 위젯을 구성하려면,
 
-1. _옵션_(![옵션 버튼](../../images/icon-options.png))을 클릭하고 _구성_을 선택합니다.
+1. **옵션**(![옵션 버튼](../../images/icon-options.png))을 클릭하고 **구성** 을 선택합니다.
 
    ![Customize the widget in the Configuration window.](./other-knowledge-base-widgets/images/04.png)
 
-1. _설정_ &rarr; _일반_ 탭에서 사용하려는 섹션을 선택하고 _저장_을 클릭하세요.
+1. **설정** &rarr; **일반** 탭에서 사용하려는 섹션을 선택하고 **저장** 을 클릭하세요.
 
 1. 업데이트를 보려면 구성 창을 닫으세요.
 
@@ -66,7 +66,7 @@ Knowledge Base 3.0.0부터 Knowledge Base Search 위젯은 더 이상 사용되�
 
 기술 자료가 해당 문서의 구조를 표시할 수 있더라도 탐색을 통해 원하는 내용을 정확히 찾는 것이 어려울 수 있습니다. 이를 위해 기술 자료 검색 위젯을 사용할 수 있습니다.
 
-검색어를 입력하고 _검색_ 버튼을 누르세요. 결과는 일치하는 각 기사에 대해 다음 기준을 사용하여 표에 표시됩니다.
+검색어를 입력하고 **검색** 버튼을 누르세요. 결과는 일치하는 각 기사에 대해 다음 기준을 사용하여 표에 표시됩니다.
 
 * 제목
 * 작성자
@@ -78,13 +78,13 @@ Knowledge Base 3.0.0부터 Knowledge Base Search 위젯은 더 이상 사용되�
 
 페이지에 위젯을 추가한 후,
 
-1. _옵션_(![옵션 버튼](../../images/icon-options.png))을 클릭하고 _구성_을 선택합니다.
+1. **옵션**(![옵션 버튼](../../images/icon-options.png))을 클릭하고 **구성** 을 선택합니다.
 
    ![Choose the criteria to display for the search results.](./other-knowledge-base-widgets/images/06.png)
 
-1. _설정_ &rarr; _일반_ 탭에서 검색 결과에 표시할 기준을 선택합니다.
+1. **설정** &rarr; **일반** 탭에서 검색 결과에 표시할 기준을 선택합니다.
 
-1. _저장_을 클릭하고 구성 창을 닫습니다.
+1. **저장** 을 클릭하고 구성 창을 닫습니다.
 
 ## 관련 주제
 

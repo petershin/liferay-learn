@@ -1,6 +1,6 @@
 # 조직 만들기
 
-Liferay를 사용하여 Clarity Vision Solutions의 조직 계층 구조를 모델링하세요. 자세한 내용은 [조직 이해](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations)를 참조하세요.
+Liferay를 사용하여 Clarity Vision Solutions의 조직 계층 구조를 모델링하세요. 자세한 내용은 [조직 이해](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/understanding-organizations) 를 참조하세요.
 
 ## 상위 및 하위 조직
 
@@ -61,7 +61,7 @@ IT 관리자와 IT 직원은 어떤 조직에도 속해 있지 않습니다. 사
 
 ## 조직 사이트
 
-다음으로 영업 및 마케팅 부서의 조직 사이트를 만들어 내부 블로그를 호스팅합니다. 자세한 내용은 [조직 사이트](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites)를 참조하세요.
+다음으로 영업 및 마케팅 부서의 조직 사이트를 만들어 내부 블로그를 호스팅합니다. 자세한 내용은 [조직 사이트](https://learn.liferay.com/en/w/dxp/users-and-permissions/organizations/organization-sites) 를 참조하세요.
 
 1. 다시 조직으로 이동하여 **Clarity Vision Solutions** 조직을 클릭하세요.
 
@@ -94,7 +94,7 @@ IT 관리자와 IT 직원은 어떤 조직에도 속해 있지 않습니다. 사
    * 블로그 위젯을 페이지로 드래그하여 추가하세요. 위젯이 Collaboration에 있습니다.
    * **게시** 를 클릭하세요.
 
-1. 이제 영업 및 마케팅 조직 사이트에는 하위 조직에 속한 모든 사람이 볼 수 있는 영업 및 마케팅 블로그 게시물이 포함된 페이지가 있습니다. 블로그 및 블로그 항목에 대해 자세히 알아보려면 [블로그 시작하기](https://learn.liferay.com/en/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs)를 참조하세요.
+1. 이제 영업 및 마케팅 조직 사이트에는 하위 조직에 속한 모든 사람이 볼 수 있는 영업 및 마케팅 블로그 게시물이 포함된 페이지가 있습니다. 블로그 및 블로그 항목에 대해 자세히 알아보려면 [블로그 시작하기](https://learn.liferay.com/en/w/dxp/content-authoring-and-management/blogs/getting-started-with-blogs) 를 참조하세요.
 
 다음으로 [LDAP에 연결](./connecting-to-ldap.md)하여 사용자를 가져옵니다.
 

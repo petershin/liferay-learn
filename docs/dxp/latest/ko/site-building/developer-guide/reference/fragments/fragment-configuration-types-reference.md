@@ -114,9 +114,9 @@
 
 * 색상의 16진수 코드를 텍스트 상자에 입력합니다.
 
-* _Stylebook의 값_ 버튼을 클릭하면 현재 사용되는 [스타일 북](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 에서 정의된 색상을 선택할 수 있는 사전 정의된 색상 메뉴가 열립니다. 그러면 버튼을 다시 눌러 연결을 해제할 때까지 필드 값이 선택한 토큰에 연결됩니다. 토큰 값의 연결을 해제하면 선택한 색상이 해당하는 16진수 코드 값으로 다시 변환됩니다.
+* **Stylebook의 값** 버튼을 클릭하면 현재 사용되는 [스타일 북](../../../site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 에서 정의된 색상을 선택할 수 있는 사전 정의된 색상 메뉴가 열립니다. 그러면 버튼을 다시 눌러 연결을 해제할 때까지 필드 값이 선택한 토큰에 연결됩니다. 토큰 값의 연결을 해제하면 선택한 색상이 해당하는 16진수 코드 값으로 다시 변환됩니다.
 
-* 색상 선택기에 정의된 기본값이 없으면 _기본값_ 드롭다운 메뉴를 클릭하여 현재 사용되는 스타일 북에서 색상을 선택하세요. 이는 값을 선택할 때 Stylebook의 값 버튼과 동일하게 작동합니다.
+* 색상 선택기에 정의된 기본값이 없으면 **기본값** 드롭다운 메뉴를 클릭하여 현재 사용되는 스타일 북에서 색상을 선택하세요. 이는 값을 선택할 때 Stylebook의 값 버튼과 동일하게 작동합니다.
 
 ![The color picker configuration lets you directly input a color value, select one from a range, or select one from your style book.](./fragment-configuration-types-reference/images/04.png)
 
@@ -417,7 +417,7 @@
 
 !!! note
 
-    개발자는 컬렉션 공급자를 사용하여 고급 기준으로 특정 컬렉션을 만들 수 있습니다. 자세히 알아보려면 [Info Framework](https://help.liferay.com/hc/en-us/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서에서 [정보 목록 공급자 만들기](https://help.liferay.com/hc/en-us/articles/360029067271-Creating-an-Information-List-Provider) 에 대한 정보를 읽어보세요.
+    개발자는 컬렉션 공급자를 사용하여 고급 기준으로 특정 컬렉션을 만들 수 있습니다. 자세히 알아보려면 [Info Framework](https://help.liferay.com/hc/ko/articles/360029067251-Introduction-to-The-Info-Framework) 개발자 문서에서 [정보 목록 공급자 만들기](https://help.liferay.com/hc/ko/articles/360029067271-Creating-an-Information-List-Provider) 에 대한 정보를 읽어보세요.
 
 다음 JSON 구성은 `collectionSelector`를 사용하는 방법을 보여줍니다.
 

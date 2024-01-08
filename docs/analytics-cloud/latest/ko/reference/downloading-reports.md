@@ -6,7 +6,7 @@ Analytics Cloud 작업 공간에 팀원 [팀원을 초대합니다](../workspace
 
 * [블로그용 자산 대시보드](../touchpoints/assets/blogs.md) 
 * [문서 및 미디어를 위한 자산 대시보드](../touchpoints/assets/documents-and-media.md) 
-* [Forms](../touchpoints/assets/forms.md) 용 자산 대시보드
+* [양식](../touchpoints/assets/forms.md) 용 자산 대시보드
 * [웹 콘텐츠용 자산 대시보드](../touchpoints/assets/web-content.md) 
 * [개인 대시보드](../people/individuals.md) 
 * [세그먼트 대시보드](../people/segments/segments.md) 

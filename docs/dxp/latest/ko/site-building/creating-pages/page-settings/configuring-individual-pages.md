@@ -2,11 +2,11 @@
 
 필요에 맞게 개별 페이지를 구성할 수 있습니다. 이러한 방식으로 수행된 모든 변경 사항은 선택한 페이지로 범위가 지정됩니다.
 
-특정 페이지를 구성하려면 _사이트 메뉴_(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 _사이트 빌더_ &rarr; _페이지_로 이동하세요. 그런 다음 사용자 정의할 페이지에 대해 _작업_(![작업 버튼](../../../images/icon-staging-bar-options.png))을 클릭하고 _구성_을 선택합니다.
+특정 페이지를 구성하려면 **사이트 메뉴**(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 **사이트 빌더** &rarr; **페이지** 로 이동하세요. 그런 다음 사용자 정의할 페이지에 대해 **작업**(![작업 버튼](../../../images/icon-staging-bar-options.png))을 클릭하고 **구성** 을 선택합니다.
 
 ![Click the Actions button for the page you want to customize, and select Configure](./configuring-individual-pages/images/01.png)
 
-또는 _작업_(![작업 버튼](../../../images/icon-staging-bar-options.png))을 클릭하여 일반 페이지 설정에 액세스할 수 있습니다. &rarr; _구성_ (![구성 버튼](./../../../images/icon-cog.png)) 애플리케이션 바 오른쪽 상단에 있습니다.
+또는 **작업**(![작업 버튼](../../../images/icon-staging-bar-options.png))을 클릭하여 일반 페이지 설정에 액세스할 수 있습니다. &rarr; **구성**(![구성 버튼](./../../../images/icon-cog.png)) 애플리케이션 바 오른쪽 상단에 있습니다.
 
 이러한 설정은 다음 탭으로 구성됩니다.
 
@@ -36,9 +36,9 @@
 
 ### URL
 
-친숙한 URL 필드를 사용하여 페이지의 새 URL을 설정하거나 _복원_ 아이콘(![친숙한 URL 복원 아이콘](./../../../images/icon-restore.png))을 클릭합니다. 이전에 사용한 URL을 보고 복원하려면 자세한 내용은 [페이지의 친숙한 URL 구성](./configuring-your-pages-friendly-url.md) 을 참조하세요.
+친숙한 URL 필드를 사용하여 페이지의 새 URL을 설정하거나 **복원** 아이콘(![친숙한 URL 복원 아이콘](./../../../images/icon-restore.png))을 클릭합니다. 이전에 사용한 URL을 보고 복원하려면 자세한 내용은 [페이지의 친숙한 URL 구성](./configuring-your-pages-friendly-url.md) 을 참조하세요.
 
-다른 매개변수가 지정되지 않은 경우 _쿼리 문자열_을 사용하여 페이지의 기본 매개변수를 설정하세요. 쿼리 문자열은 웹 콘텐츠 템플릿 내에서 상당한 이점을 제공합니다. 또한 새 탭이나 특정 프레임 내에서 링크 열기와 같은 속성이 있는 대상 유형 필드를 사용하여 페이지 링크 동작을 제어할 수 있습니다.
+다른 매개변수가 지정되지 않은 경우 **쿼리 문자열** 을 사용하여 페이지의 기본 매개변수를 설정하세요. 쿼리 문자열은 웹 콘텐츠 템플릿 내에서 상당한 이점을 제공합니다. 또한 새 탭이나 특정 프레임 내에서 링크 열기와 같은 속성이 있는 대상 유형 필드를 사용하여 페이지 링크 동작을 제어할 수 있습니다.
 
 ![Use the Friendly URL field to set a page's custom URL.](./configuring-individual-pages/images/03.png)
 
@@ -49,19 +49,19 @@
 ### 변경 배치
 
 레이아웃 템플릿은 위젯 페이지에서 위젯을 배치할 수 있는 사이트
-를 지정합니다. 전역 템플릿이나 사용자 정의 페이지 템플릿을 사용하여 생성된 기본 위젯 페이지의 경우 사용자는 페이지가 선택한 템플릿에 적용된 _변경 사항을 상속_하는지 여부를 결정할 수 있습니다. 페이지가 변경 사항을 상속하지 않는 경우 사용자 정의 레이아웃을 선택하여 해당 위젯의 행 및 열 컨테이너를 정의하십시오.
+를 지정합니다. 전역 템플릿이나 사용자 정의 페이지 템플릿을 사용하여 생성된 기본 위젯 페이지의 경우 사용자는 페이지가 선택한 템플릿에 적용된 **변경 사항을 상속** 하는지 여부를 결정할 수 있습니다. 페이지가 변경 사항을 상속하지 않는 경우 사용자 정의 레이아웃을 선택하여 해당 위젯의 행 및 열 컨테이너를 정의하십시오.
 
 ![Select a layout template to define row and column containers for widgets.](./configuring-individual-pages/images/04.png)
 
 ### 분류
 
-_주제_ 및 _태그_를 사용하여 페이지 콘텐츠를 분류하면 사용자가 더 쉽게 찾을 수 있습니다. 태그 및 카테고리 사용에 대한 자세한 내용은 [태그 및 카테고리로 콘텐츠 구성](../../../content-authoring-and-management/tags-and-categories.md) 참조하세요.
+**주제** 및 **태그** 를 사용하여 페이지 콘텐츠를 분류하면 사용자가 더 쉽게 찾을 수 있습니다. 태그 및 카테고리 사용에 대한 자세한 내용은 [태그 및 카테고리로 콘텐츠 구성](../../../content-authoring-and-management/tags-and-categories.md) 참조하세요.
 
 ![Use Topics and Tags to categorize a page's content](./configuring-individual-pages/images/05.png)
 
 ### 변경 설정
 
-위젯 페이지의 열이 사용자를 위해 _사용자 정의 가능_인지 여부를 결정합니다. 사용자 정의가 활성화된 경우 사용자가 사용자 정의할 수 있는 열을 지정합니다. 자세한 내용은 [위젯 페이지의 사용자 개인화 활성화](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) 참조하십시오.
+위젯 페이지의 열이 사용자를 위해 **사용자 정의 가능** 인지 여부를 결정합니다. 사용자 정의가 활성화된 경우 사용자가 사용자 정의할 수 있는 열을 지정합니다. 자세한 내용은 [위젯 페이지의 사용자 개인화 활성화](../using-widget-pages/enabling-user-personalization-of-widget-pages.md) 참조하십시오.
 
 ![Determine whether users can customize a widget page.](./configuring-individual-pages/images/06.png)
 
@@ -79,13 +79,13 @@ _주제_ 및 _태그_를 사용하여 페이지 콘텐츠를 분류하면 사용
 
 여기에서는 페이지 디자인 시스템 및 스타일의 일부 영역을 빠르고 쉽게 변경할 수 있습니다.
 
-**파비콘**: 테마에 적용되는 기본 파비콘을 변경합니다.
+**파비콘** : 테마에 적용되는 기본 파비콘을 변경합니다.
 
-**마스터**: 마스터 페이지 템플릿을 변경합니다. 자세한 내용은 [마스터 페이지 템플릿](../../creating-pages/defining-headers-and-footers/master-page-templates.md) 을 참조하세요.
+**마스터** : 마스터 페이지 템플릿을 변경합니다. 자세한 내용은 [마스터 페이지 템플릿](../../creating-pages/defining-headers-and-footers/master-page-templates.md) 을 참조하세요.
 
-**스타일 북**: 테마에서 적용되는 기본 스타일 북을 변경합니다. 자세한 내용은 [스타일 북을 사용하여 사이트 모양 표준화](../../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 참조하십시오.
+**스타일 북** : 테마에서 적용되는 기본 스타일 북을 변경합니다. 자세한 내용은 [스타일 북을 사용하여 사이트 모양 표준화](../../../site-building/site-appearance/style-books/using-a-style-book-to-standardize-site-appearance.md) 참조하십시오.
 
-**아이콘**: 사이트 탐색 메뉴에 페이지 이름과 함께 표시할 아이콘을 선택합니다.
+**아이콘** : 사이트 탐색 메뉴에 페이지 이름과 함께 표시할 아이콘을 선택합니다.
 
 ![Determine the favicon, master page template, style book and icon for your page.](./configuring-individual-pages/images/08.png)
 
@@ -114,11 +114,11 @@ _주제_ 및 _태그_를 사용하여 페이지 콘텐츠를 분류하면 사용
 
 페이지의 콘텐츠와 기능을 사용자 정의하려면 추가 설정에 액세스하세요.
 
-**사용자 정의 필드**: 사이트 페이지에 대해 정의한 사용자 정의 필드를 보고 구성합니다. 자세한 내용은 [사용자 정의 필드](../../../system-administration/configuring-liferay/adding-custom-fields.md) 을 참조하세요.
+**사용자 정의 필드** : 사이트 페이지에 대해 정의한 사용자 정의 필드를 보고 구성합니다. 자세한 내용은 [사용자 정의 필드](../../../system-administration/configuring-liferay/adding-custom-fields.md) 을 참조하세요.
 
-**내장된 위젯**: [웹 콘텐츠 템플릿](./../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md) , [페이지 조각](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) 또는 [테마](../../site-appearance/themes/introduction-to-themes.md) 를 사용하여 페이지에 포함된 위젯에 액세스합니다.
+**내장된 위젯** : [웹 콘텐츠 템플릿](./../../../content-authoring-and-management/web-content/web-content-templates/embedding-widgets-in-templates.md) , [페이지 조각](../../developer-guide/developing-page-fragments/developing-fragments-intro.md) 또는 [테마](../../site-appearance/themes/introduction-to-themes.md) 를 사용하여 페이지에 포함된 위젯에 액세스합니다.
 
-**모바일 장치 규칙**: 페이지가 모바일 장치 [에 대한 페이지 집합의](../../../site-building/optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md) 규칙을 사용하는지 아니면 고유하게 구성되는지 여부를 결정합니다. 이러한 규칙은 다양한 유형의 모바일 장치에 대해 페이지 콘텐츠가 렌더링되는 방식을 결정합니다.
+**모바일 장치 규칙** : 페이지가 모바일 장치 [에 대한 페이지 집합의](../../../site-building/optimizing-sites/building-a-responsive-site/creating-mobile-device-rules.md) 규칙을 사용하는지 아니면 고유하게 구성되는지 여부를 결정합니다. 이러한 규칙은 다양한 유형의 모바일 장치에 대해 페이지 콘텐츠가 렌더링되는 방식을 결정합니다.
 
 ```{note}
 *사용자 정의 필드* 및 *내장 위젯* 섹션은 페이지에 사용자 정의 필드와 포함된 위젯을 만든 후에만 나타납니다.
@@ -183,7 +183,7 @@ HTML 제목, 설명 및 사용자 정의 URL 구성을 기반으로 검색 엔�
 
 [Graph](https://ogp.me/) Twitter, Facebook 또는 LinkedIn과 같이 이를 지원하는 애플리케이션 컨텍스트에서 공유될 때 사이트 콘텐츠의 미리 보기를 표준화하는 인터넷 프로토콜입니다. [RDFa](https://en.wikipedia.org/wiki/RDFa) 와 유사하게 구조화된 데이터를 페이지 헤더에 `<meta>` 태그로 삽입하여 이를 수행합니다.
 
-_오픈 그래프_ 탭에서 오픈 그래프 `<meta>` 태그를 사용하여 페이지의 메타데이터를 정의하고 콘텐츠에 대한 매력적인 표현을 만들 수 있습니다. 여기에 정의된 값은 [사이트](../../site-settings/configuring-open-graph.md) 수준에서 정의된 기본값을 재정의합니다.
+**오픈 그래프** 탭에서 오픈 그래프 `<meta>` 태그를 사용하여 페이지의 메타데이터를 정의하고 콘텐츠에 대한 매력적인 표현을 만들 수 있습니다. 여기에 정의된 값은 [사이트](../../site-settings/configuring-open-graph.md) 수준에서 정의된 기본값을 재정의합니다.
 
 ```{note}
 오픈 그래프`<meta>` 태그는 인증되지 않은 사용자의 페이지 헤더에만 포함됩니다. 사용자가 로그인한 경우에는 포함되지 않습니다.
@@ -203,11 +203,11 @@ _오픈 그래프_ 탭에서 오픈 그래프 `<meta>` 태그를 사용하여 �
 
 ### 이미지 대체 설명
 
-페이지의 `og:image:alt` 속성을 정의하려면 이미지 대체 설명 필드를 사용하세요. _언어 플래그_ 버튼을 통해 이미지의 대체 설명을 현지화할 수도 있습니다.
+페이지의 `og:image:alt` 속성을 정의하려면 이미지 대체 설명 필드를 사용하세요. **언어 플래그** 버튼을 통해 이미지의 대체 설명을 현지화할 수도 있습니다.
 
 ### 맞춤 제목 및 설명
 
-사용자 정의 제목 및 설명 필드를 사용하여 `og:title` 및 `og:description` 속성을 정의합니다. 이러한 속성은 페이지의 HTML 제목 및 설명 대신 풍부한 미리 보기에 사용되는 사용자 정의 텍스트를 만듭니다. _언어 플래그_ 버튼을 통해 이러한 값을 현지화할 수도 있습니다.
+사용자 정의 제목 및 설명 필드를 사용하여 `og:title` 및 `og:description` 속성을 정의합니다. 이러한 속성은 페이지의 HTML 제목 및 설명 대신 풍부한 미리 보기에 사용되는 사용자 정의 텍스트를 만듭니다. **언어 플래그** 버튼을 통해 이러한 값을 현지화할 수도 있습니다.
 
 ### 오픈 그래프 페이지 표현 미리보기
 

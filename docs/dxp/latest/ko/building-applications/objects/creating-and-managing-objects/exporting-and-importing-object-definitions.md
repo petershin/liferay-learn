@@ -15,21 +15,21 @@ You can use the batch client extension to help migrate object definitions betwee
 
 ## 정의 내보내기
 
-1. _전역 메뉴_(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _개체_를 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **개체** 를 클릭합니다.
 
-1. 원하는 개체에 대해 _작업_ 버튼(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 _JSON으로 내보내기_를 선택합니다.
+1. 원하는 개체에 대해 **작업** 버튼(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 **JSON으로 내보내기** 를 선택합니다.
 
    ![Click the Actions button for the desired object and select Export as JSON.](./exporting-and-importing-object-definitions/images/01.png)
 
-1. 개체 정의를 JSON 파일로 다운로드하려면 대화 상자 창에서 _저장_을 클릭하세요.
+1. 개체 정의를 JSON 파일로 다운로드하려면 대화 상자 창에서 **저장** 을 클릭하세요.
 
 내보낸 후에는 개체 정의를 호환되는 Liferay 환경으로 가져올 수 있습니다.
 
 ## 정의 가져오기
 
-1. _전역 메뉴_(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _개체_를 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **개체** 를 클릭합니다.
 
-1. 응용 프로그램 표시줄에서 _작업_ 버튼(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 _객체 가져오기_를 선택합니다.
+1. 응용 프로그램 표시줄에서 **작업** 버튼(![작업 버튼](../../../images/icon-actions.png))을 클릭하고 **객체 가져오기** 를 선택합니다.
 
    ![Click the Actions button in the Application Bar and select Import Object.](./exporting-and-importing-object-definitions/images/02.png)
 
@@ -45,7 +45,7 @@ You can use the batch client extension to help migrate object definitions betwee
 
    ![Enter a name and select the desired JSON file.](./exporting-and-importing-object-definitions/images/03.png)
 
-1. _가져오기_를 클릭하세요.
+1. **가져오기** 를 클릭하세요.
 
 개체 정의는 백그라운드에서 가져오기를 시작하며 몇 분 정도 걸릴 수 있습니다.
 

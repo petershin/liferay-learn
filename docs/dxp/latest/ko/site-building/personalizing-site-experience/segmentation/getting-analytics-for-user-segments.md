@@ -2,7 +2,7 @@
 
 > **가입자**
 
-사용자 세그먼트와 함께 Analytics Cloud를 사용하려면 먼저 DXP 데이터 소스를 Analytics Cloud에 연결하고 사용자와 분석의 동기화를 활성화해야 합니다. DXP와 연결하기 위한 지침을 포함하여 Analytics Cloud에 대한 자세한 내용은 공식 [애널리틱스 클라우드](https://learn.liferay.com/analytics-cloud/latest/ko/index.html) 을 참조하십시오.
+사용자 세그먼트와 함께 Analytics Cloud를 사용하려면 먼저 DXP 데이터 소스를 Analytics Cloud에 연결하고 사용자와 분석의 동기화를 활성화해야 합니다. DXP와 연결하기 위한 지침을 포함하여 Analytics Cloud에 대한 자세한 내용은 공식 [애널리틱 클라우드](https://learn.liferay.com/analytics-cloud/latest/ko/index.html) 을 참조하십시오.
 
 ```{important}
 Analytics Cloud와의 동기화는 즉시 이루어지지 않으므로 Analytics Cloud와 Liferay DXP를 연결한 후에는 먼저 사용자와 데이터가 동기화될 때까지 기다려야 합니다. 완료되면 Analytics Cloud에서 세그먼트를 생성하여 DXP에서 데이터를 캡처할 수 있습니다.

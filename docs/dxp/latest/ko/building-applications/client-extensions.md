@@ -41,7 +41,7 @@ toc:
 
 ### 배치 클라이언트 확장
 
-{bdg-link-primary}`[개발 기능](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags)`
+{bdg-link-primary}` [개발 기능](../system-administration/configuring-liferay/feature-flags.md#dev-feature-flags) `
 
 배치 클라이언트 확장은 Liferay 인스턴스에 [개체 정의](./objects/creating-and-managing-objects/exporting-and-importing-object-definitions.md) 또는 [워크플로 정의](../process-automation/workflow/introduction-to-workflow.md) 과 같은 데이터 엔터티를 제공합니다. [배치 엔진 프레임워크](../headless-delivery/consuming-apis/batch-engine-api-basics-exporting-data.md) 을 통해 데이터를 내보내 배치 클라이언트 확장을 만듭니다.
 
@@ -53,17 +53,17 @@ toc:
 
 [마이크로서비스 클라이언트 확장](#microservice-client-extensions) 과 같은 다른 클라이언트 확장과 함께 사용할 수 있습니다. 예를 들어 OAuth 사용자 에이전트 클라이언트 확장을 사용하여 사용자가 트리거한 작업 이벤트와 함께 작동하는 클라이언트 확장을 인증할 수 있습니다.
 
-특정 유형에 대한 자세한 내용은 [Configuration Client Extensions](./client-extensions/configuration-client-extensions.md) 을 참조하세요.
+특정 유형에 대한 자세한 내용은 [구성 클라이언트 확장](./client-extensions/configuration-client-extensions.md) 을 참조하세요.
 
 ### 프런트엔드 클라이언트 확장
 
-프런트 엔드 클라이언트 확장은 특정 페이지에 표시할 리소스를 제공합니다. 이제 클라이언트 확장에서 테마 리소스 또는 사용자 정의 HTML 요소를 제공할 수 있습니다. 대부분의 프런트 엔드 클라이언트 확장은 Liferay 인스턴스에 _정적 리소스_를 제공합니다.
+프런트 엔드 클라이언트 확장은 특정 페이지에 표시할 리소스를 제공합니다. 이제 클라이언트 확장에서 테마 리소스 또는 사용자 정의 HTML 요소를 제공할 수 있습니다. 대부분의 프런트 엔드 클라이언트 확장은 Liferay 인스턴스에 **정적 리소스** 를 제공합니다.
 
 특정 유형에 대한 자세한 내용은 [프런트 엔드 클라이언트 확장](./client-extensions/front-end-client-extensions.md) 참조하세요.
 
 ### 마이크로서비스 클라이언트 확장
 
-마이크로서비스 클라이언트 확장은 Liferay 내에서 트리거할 API 엔드포인트를 제공합니다(예: 개체 또는 워크플로 작업). 해당 작업 이벤트가 API를 호출하면 Liferay 외부에서 원하는 모든 기능을 별도의 _마이크로서비스_로 실행할 수 있습니다.
+마이크로서비스 클라이언트 확장은 Liferay 내에서 트리거할 API 엔드포인트를 제공합니다(예: 개체 또는 워크플로 작업). 해당 작업 이벤트가 API를 호출하면 Liferay 외부에서 원하는 모든 기능을 별도의 **마이크로서비스** 로 실행할 수 있습니다.
 
 특정 유형에 대한 자세한 내용은 [마이크로서비스 클라이언트 확장](./client-extensions/microservice-client-extensions.md) 참조하세요.
 

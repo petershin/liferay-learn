@@ -21,7 +21,7 @@ Markdown 파일을 가져오려면 다음을 수행해야 합니다.
 * ZIP 파일로 패키지되어야 합니다.
 * `.md` 또는 `.markdown` 파일 확장자를 사용하세요.
 * 기사 제목을 설정하려면 H1(예: `# Some Heading`)으로 시작하세요.
-* 기사의 친숙한 URL을 설정하려면 H1 뒤에 고유 ID(예: `# Some Heading [](id=some-heading)` )를 포함하세요.
+* 기사의 친숙한 URL을 설정하려면 H1 뒤에 고유 ID(예: `# Some Heading [](id=some-heading) ` )를 포함하세요.
 
 예를 들어 'modern-pentathlon.md'라는 기사에는 다음 콘텐츠가 포함될 수 있습니다.
 
@@ -74,23 +74,23 @@ https://github.com/clarity/clarity-guide/blob/master/docs/latest/en/folder-01/fi
 
 ## 마크다운 파일 가져오기
 
-1. _사이트 메뉴_(![사이트 메뉴](../../images/icon-menu.png))를 열고 _콘텐츠 및 데이터_ &rarr; _기술 자료_로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../images/icon-menu.png))를 열고 **콘텐츠 및 데이터** &rarr; **기술 자료** 로 이동합니다.
 
-1. 아티클 및 폴더(![아티클 및 폴더](../../images/icon-pages-tree.png)) 섹션에서 원하는 폴더로 이동한 후 _추가_(![추가 버튼](../../images/icon-add.png)) _가져오기_를 선택합니다.
+1. 아티클 및 폴더(![아티클 및 폴더](../../images/icon-pages-tree.png)) 섹션에서 원하는 폴더로 이동한 후 **추가**(![추가 버튼](../../images/icon-add.png))**가져오기** 를 선택합니다.
 
    ![Go to the desired folder, click Add, and select Import.](./importing-knowledge-base-articles/images/01.png)
 
-   또는 원하는 폴더에 대해 _작업_ 버튼(![작업 버튼](../../images/icon-actions.png))을 클릭하고 _가져오기_를 선택합니다.
+   또는 원하는 폴더에 대해 **작업** 버튼(![작업 버튼](../../images/icon-actions.png))을 클릭하고 **가져오기** 를 선택합니다.
 
    ![Click the Actions button for the desired folder and select Import.](./importing-knowledge-base-articles/images/02.png)
 
-1. _파일 선택_을 클릭하고 원하는 ZIP 파일을 선택하세요.
+1. **파일 선택** 을 클릭하고 원하는 ZIP 파일을 선택하세요.
 
    ![Upload your ZIP file.](./importing-knowledge-base-articles/images/03.png)
 
-1. 활성화/비활성화 _기사 파일의 숫자 접두어를 우선순위로 적용합니다_. 이것은 기술 자료가 각 파일의 숫자 접두어를 사용하여 순서를 정하는지 여부를 결정합니다.
+1. 활성화/비활성화 **기사 파일의 숫자 접두어를 우선순위로 적용합니다** . 이것은 기술 자료가 각 파일의 숫자 접두어를 사용하여 순서를 정하는지 여부를 결정합니다.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 저장되면 가져오기 도구는 각 파일의 Markdown을 HTML로 변환하고 결과 기사가 게시됩니다.
 

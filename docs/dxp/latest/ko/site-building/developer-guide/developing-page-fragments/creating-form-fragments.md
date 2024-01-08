@@ -6,11 +6,11 @@
 
 양식 조각을 만들려면
 
-1. _사이트 메뉴_(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 _디자인_ &rarr; _조각_으로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../../../images/icon-product-menu.png))를 열고 **디자인** &rarr; **조각** 으로 이동합니다.
 
-1. _플러스_(![플러스 버튼](../../../images/icon-plus.png))를 클릭하여 양식 조각을 구성하기 위한 조각 세트를 만듭니다.
+1. **플러스**(![플러스 버튼](../../../images/icon-plus.png))를 클릭하여 양식 조각을 구성하기 위한 조각 세트를 만듭니다.
 
-1. _추가_(![추가 버튼](../../../images/icon-add.png))를 클릭하고 _양식 조각_ 유형을 선택한 후 _다음_을 클릭합니다.
+1. **추가**(![추가 버튼](../../../images/icon-add.png))를 클릭하고 **양식 조각** 유형을 선택한 후 **다음** 을 클릭합니다.
 
    ![Select the form fragment type and click Next.](./creating-form-fragments/images/01.png)
 
@@ -22,14 +22,14 @@
 
    ![Select the field types the fragment supports.](./creating-form-fragments/images/02.png)
 
-1. _추가_를 클릭하세요. 이렇게 하면 초안 조각이 생성되고 조각 편집 페이지로 이동됩니다.
+1. **추가** 를 클릭하세요. 이렇게 하면 초안 조각이 생성되고 조각 편집 페이지로 이동됩니다.
 
 1. 코드 탭에서 조각에 대한 HTML, CSS 및 JavaScript를 추가합니다.
 
    ![In the Code tab, add HTML, CSS, and JavaScript for your fragment.](./creating-form-fragments/images/03.png)
 
    ```{note}
-   [매핑 설정](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings)을 사용하여 제출 버튼 조각의 텍스트를 매핑할 수 있습니다.
+   [매핑 설정](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#mapping-settings) 을 사용하여 제출 버튼 조각의 텍스트를 매핑할 수 있습니다.
 
    리디렉션을 위한 [링크 설정](../../../site-building/creating-pages/page-fragments-and-widgets/using-fragments/configuring-fragments/fragment-sub-elements-reference.md#link-settings) 버튼을 만들려면 버튼 프래그먼트에 `type="button"`을 추가하세요.
    ```
@@ -38,7 +38,7 @@
 
    ![In the Configuration tab, use JSON to configure the fragment and add options to it](./creating-form-fragments/images/04.png)
 
-1. _게시_를 클릭하세요.
+1. **게시** 를 클릭하세요.
 
 이제 양식 조각을 사용하여 콘텐츠 페이지에 양식을 작성하세요. 자세한 내용은 [조각을 사용하여 양식 작성](../../../building-applications/objects/using-fragments-to-build-forms.md) 참조하세요.
 

@@ -72,7 +72,7 @@ type: globalCSS
 
 [CSS 클라이언트 확장](#css-client-extensions) 페이지에 스타일을 추가하는 반면, 테마 CSS 클라이언트 확장은 사이트의 [테마](../../site-building/site-appearance/themes/introduction-to-themes.md) 을 포함하여 페이지의 스타일을 재정의합니다. 클라이언트 확장 프로그램은 `clay.css` 파일과 `main.css` 파일을 사용하여 사이트 테마에 일반적으로 사용되는 동일한 이름의 파일을 대체합니다.
 
-Liferay 응용 프로그램 메뉴의 _클라이언트 확장_에서 이 유형의 클라이언트 확장을 옵션으로 추가할 수 있습니다.
+Liferay 응용 프로그램 메뉴의 **클라이언트 확장** 에서 이 유형의 클라이언트 확장을 옵션으로 추가할 수 있습니다.
 
 ![Add a theme CSS client extension to replace CSS provided by your site's theme.](./front-end-client-extensions/images/01.png)
 
@@ -90,7 +90,7 @@ type: themeCSS
 
 ## 테마 Favicon 클라이언트 확장
 
-Liferay에서 페이지의 파비콘을 재정의하세요. 배포되면 제공된 아이콘 파일을 Liferay의 모든 페이지에서 사용할 수 있게 됩니다. 페이지 디자인 옵션 메뉴에서 페이지에 대한 파비콘을 구성할 때 별도의 _클라이언트 확장_ 탭에서 액세스할 수 있습니다.
+Liferay에서 페이지의 파비콘을 재정의하세요. 배포되면 제공된 아이콘 파일을 Liferay의 모든 페이지에서 사용할 수 있게 됩니다. 페이지 디자인 옵션 메뉴에서 페이지에 대한 파비콘을 구성할 때 별도의 **클라이언트 확장** 탭에서 액세스할 수 있습니다.
 
 ![When you configure the favicon for a page, access the favicon from your client extension from a special Client Extensions tab.](./front-end-client-extensions/images/02.png)
 
@@ -124,7 +124,7 @@ type: customElement
 
 > 이전에는 IFrame 원격 앱으로 명명되었습니다.
 
-IFrame 클라이언트 확장은 [맞춤 요소 클라이언트 확장](#custom-element-client-extensions) 처럼 작동합니다. 그러나 외부 애플리케이션을 `<iframe>` HTML 요소로 렌더링하므로 호스트 페이지와의 제한된 상호 작용이 허용됩니다. 다른 프런트 엔드 클라이언트 확장과 달리 이러한 확장은 _정적 리소스를 제공하지 않습니다_.
+IFrame 클라이언트 확장은 [맞춤 요소 클라이언트 확장](#custom-element-client-extensions) 처럼 작동합니다. 그러나 외부 애플리케이션을 `<iframe>` HTML 요소로 렌더링하므로 호스트 페이지와의 제한된 상호 작용이 허용됩니다. 다른 프런트 엔드 클라이언트 확장과 달리 이러한 확장은 **정적 리소스를 제공하지 않습니다** .
 
 `client-extension.yaml` 파일에 IFrame 클라이언트 확장을 지정합니다.
 
@@ -140,7 +140,7 @@ type: iframe
 
 | 이름              | 데이터 유형                                                  | 기정값                                                    | 묘사                                                                                             |
 | :-------------- | :------------------------------------------------------ | :----------------------------------------------------- | :--------------------------------------------------------------------------------------------- |
-| `baseURL`       | 끈                                                       | _사이트 URL에서 따옴_                                         | 클라이언트 확장에 정의된 모든 리소스가 제공되는 기본 경로입니다.                                                           |
+| `baseURL`       | 끈                                                       | **사이트 URL에서 따옴** | 클라이언트 확장에 정의된 모든 리소스가 제공되는 기본 경로입니다.                                                           |
 | `description`   | 끈                                                       |                                                        | 클라이언트 확장의 설명입니다.                                                                               |
 | `name`          | 끈                                                       |                                                        | 클라이언트 확장 이름(UI에 표시되는 이름)입니다. 프런트 엔드 클라이언트 확장에는 이름이 필요합니다.                   |
 | `sourceCodeURL` | URL                                                     | https\://www\.liferay.com                              | 클라이언트 확장의 소스 저장소에 대한 주소입니다.                                                                    |

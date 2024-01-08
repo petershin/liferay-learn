@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.1 및 7.2`
 
-Liferay 7.3 및 7.4는 기본적으로 Elasticsearch 7을 지원합니다. Liferay 설치에 사용 가능한 최신 검색 엔진 버전을 찾으려면 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 참조하십시오.
+Liferay 7.3 및 7.4는 기본적으로 Elasticsearch 7을 지원합니다. Liferay 설치에 사용 가능한 최신 검색 엔진 버전을 찾으려면 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 참조하십시오.
 
 Liferay 7.2의 경우 Elasticsearch 7은 [Liferay Connector to Elasticsearch 7](https://web.liferay.com/marketplace/-/mp/application/170390307) (버전 '3.x')을 통해 지원됩니다. Liferay 7.3 이상으로 업그레이드하거나 기존 7.2 검색 엔진을 Elasticsearch 7로 가져오는 경우 Elasticsearch 서버를 업그레이드해야 합니다. 새로운 Liferay 7.2 시스템을 설정하려면 Elasticsearch 7을 설치하고 [설치 안내서를 따르십시오](../getting-started-with-elasticsearch.md) .
 
@@ -75,9 +75,9 @@ Liferay가 Elasticsearch 클러스터와 연결되면 Liferay를 다시 시작�
 
 1. liferay를 다시 시작하세요.
 
-1. 회사, 시스템 및 맞춤법 검사 색인을 다시 색인화합니다. 글로벌 메뉴(![글로벌 메뉴](../../../../images/icon-applications-menu.png))에서 _제어판_ &rarr; _구성_ &rarr; _검색_으로 이동합니다. _모든 검색 색인_ 항목에 대해 _재색인_을 클릭하십시오.
+1. 회사, 시스템 및 맞춤법 검사 색인을 다시 색인화합니다. 글로벌 메뉴(![글로벌 메뉴](../../../../images/icon-applications-menu.png))에서 **제어판** &rarr; **구성** &rarr; **검색** 으로 이동합니다. **모든 검색 색인** 항목에 대해 **재색인** 을 클릭하십시오.
 
-1. [워크플로 지표 색인](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) 다시 색인화합니다. 전역 메뉴(![전역 메뉴](../../../../images/icon-applications-menu.png))에서 _응용 프로그램_으로 이동합니다. &rarr; _워크플로---지표_. 설정 메뉴(![옵션](../../../../images/icon-options.png)를 열고 _모두 다시 색인화_를 클릭합니다. 각 가상 인스턴스에 대해 프로세스를 반복합니다.
+1. [워크플로 지표 색인](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) 다시 색인화합니다. 전역 메뉴(![전역 메뉴](../../../../images/icon-applications-menu.png))에서 **응용 프로그램** 으로 이동합니다. &rarr; **Workflow---Metrics** . 설정 메뉴(![옵션](../../../../images/icon-options.png)를 열고 **모두 다시 색인화** 를 클릭합니다. 각 가상 인스턴스에 대해 프로세스를 반복합니다.
 
 그러면 Liferay 데이터베이스에 저장된 데이터로 작성된 인덱스가 복원됩니다. 기본 스토리지로 사용되는 인덱스를 복원하려면 [Elasticsearch 백업](./backing-up-elasticsearch.md) 참조하세요.
 
@@ -95,4 +95,4 @@ Elasticsearch 6과 7은 현재 두 개의 별도 설치이므로 이 절차는 �
 
 1. Elasticsearch 서버를 시작한 다음 Liferay Connector를 Elasticsearch 6으로 다시 시작하세요.
 
-업그레이드가 완료되면 Liferay 버전에서 사용할 수 있는 [새로운 검색 기능을 확인하세요.](../../../getting-started.html).
+업그레이드가 완료되면 Liferay 버전에서 사용할 수 있는 [새로운 검색 기능을 확인하세요.](../../../getting-started.html) .

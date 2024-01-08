@@ -17,11 +17,11 @@
 
 ### 결제 조건 생성
 
-1. _글로벌 메뉴_(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 _상거래_ &rarr; _이용 약관_을 클릭합니다.
+1. **글로벌 메뉴**(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **이용 약관** 을 클릭합니다.
 
    ![The Terms and Conditions menu item is available under the Order Management section.](./payment-and-delivery-terms/images/01.png)
 
-1. _추가_(![아이콘 추가](../../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
+1. **추가**(![아이콘 추가](../../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
 
    **이름:** 결제 조건 1
 
@@ -31,33 +31,33 @@
 
    ![Enter a name, type and priority for the Payment Terms.](./payment-and-delivery-terms/images/02.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
-1. 그러면 새 결제 조건이 생성됩니다. 편집 가능한 설명 텍스트 필드에 구매자와 합의한 조건을 추가하고 _활성_ 토글을 사용하여 활성화할 수 있습니다.
+1. 그러면 새 결제 조건이 생성됩니다. 편집 가능한 설명 텍스트 필드에 구매자와 합의한 조건을 추가하고 **활성** 토글을 사용하여 활성화할 수 있습니다.
 
    ![Use the editable Description text field to add the Payment Terms and use the Active toggle to enable it.](./payment-and-delivery-terms/images/03.png)
 
-1. _게시_를 클릭하세요.
+1. **게시** 를 클릭하세요.
 
 ### 결제 조건을 결제 방법에 연결
 
 채널에는 여러 결제 방법이 있을 수 있으며 결제 조건을 각 결제 방법과 연결할 수 있습니다. 단일 결제 방법에 여러 결제 조건이 연결된 경우 우선 순위에 따라 어떤 결제 방법이 사용되는지가 결정됩니다.
 
-1. _글로벌 메뉴_(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 _상거래_ &rarr; _채널_을 클릭합니다.
+1. **글로벌 메뉴**(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **채널** 을 클릭합니다.
 
-1. 채널을 선택하고 _결제 방법_까지 아래로 스크롤합니다.
+1. 채널을 선택하고 **결제 방법** 까지 아래로 스크롤합니다.
 
-1. 원하는 결제 방법을 클릭하고 _자격_ 탭을 엽니다.
+1. 원하는 결제 방법을 클릭하고 **자격** 탭을 엽니다.
 
    ![Search for the Payment Terms to link to a Payment Method.](./payment-and-delivery-terms/images/04.png)
 
-1. _결제 조건 자격_ 아래에서 _특정 결제 조건_을 클릭하세요.
+1. **결제 조건 자격** 아래에서 **특정 결제 조건** 을 클릭하세요.
 
-1. _결제 조건 추가_에서 결제 조건을 검색하고 _선택_을 클릭하세요.
+1. **결제 조건 추가** 에서 결제 조건을 검색하고 **선택** 을 클릭하세요.
 
-1. _저장_을 클릭하여 결제 조건을 연결하고 구성 보기를 닫습니다.
+1. **저장** 을 클릭하여 결제 조건을 연결하고 구성 보기를 닫습니다.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ### 결제 조건 결제 단계 활성화
 
@@ -76,9 +76,9 @@
 
 ### 배송 조건 생성
 
-1. _글로벌 메뉴_(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 _상거래_ &rarr; _이용 약관_을 클릭합니다.
+1. **글로벌 메뉴**(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **이용 약관** 을 클릭합니다.
 
-1. _추가_(![아이콘 추가](../../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
+1. **추가**(![아이콘 추가](../../images/icon-add.png))를 클릭하고 다음 정보를 입력합니다.
 
    **이름:** 배송 조건 1
 
@@ -88,35 +88,35 @@
 
    ![Enter a name, type and priority for the Delivery Terms.](./payment-and-delivery-terms/images/06.png)
 
-1. _제출_을 클릭하세요.
+1. **제출** 을 클릭하세요.
 
-1. 그러면 새로운 배송 조건이 생성됩니다. _설명_ 텍스트 영역에 구매자와 합의한 조건을 추가하고 토글을 사용하여 활성화할 수 있습니다.
+1. 그러면 새로운 배송 조건이 생성됩니다. **설명** 텍스트 영역에 구매자와 합의한 조건을 추가하고 토글을 사용하여 활성화할 수 있습니다.
 
    ![Use the editable Description text field to add the Delivery Terms and use the Active toggle to enable it.](./payment-and-delivery-terms/images/07.png)
 
-1. _게시_를 클릭하세요.
+1. **게시** 를 클릭하세요.
 
 ### 배송 조건을 배송 방법에 연결
 
 채널에는 여러 배송 방법이 있을 수 있으며 각 배송 방법과 배송 조건을 연결할 수 있습니다. 단일 배송 방법에 여러 배송 조건이 연결된 경우 우선순위에 따라 어떤 방법이 사용되는지 결정됩니다.
 
-1. _글로벌 메뉴_(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 _상거래_ &rarr; _채널_을 클릭합니다.
+1. **글로벌 메뉴**(![애플리케이션 메뉴 아이콘](../../images/icon-applications-menu.png))를 열고 **상거래** &rarr; **채널** 을 클릭합니다.
 
-1. 채널을 선택하고 _배송 방법_까지 아래로 스크롤합니다.
+1. 채널을 선택하고 **배송 방법** 까지 아래로 스크롤합니다.
 
-1. 원하는 배송 방법을 클릭하고 _배송 옵션_ 탭을 엽니다.
+1. 원하는 배송 방법을 클릭하고 **배송 옵션** 탭을 엽니다.
 
-1. 적절한 배송 옵션을 선택하고 _자격_ 탭을 엽니다.
+1. 적절한 배송 옵션을 선택하고 **자격** 탭을 엽니다.
 
    ![Search for the Delivery Terms to link to a Shipping Option.](./payment-and-delivery-terms/images/08.png)
 
-1. _배송 조건 자격_ 아래에서 _특정 배송 조건_을 클릭하세요.
+1. **배송 조건 자격** 아래에서 **특정 배송 조건** 을 클릭하세요.
 
-1. _배송 조건 추가_에서 배송 조건을 검색하고 _선택_을 클릭하세요.
+1. **배송 조건 추가** 에서 배송 조건을 검색하고 **선택** 을 클릭하세요.
 
-1. _저장_을 클릭하여 배송 조건을 연결하고 구성 보기를 닫습니다.
+1. **저장** 을 클릭하여 배송 조건을 연결하고 구성 보기를 닫습니다.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 ### 배송 조건 결제 단계 활성화
 
@@ -128,12 +128,12 @@
 
 자격 탭을 사용하여 결제 및 배송 조건을 특정 주문 유형에 연결할 수 있습니다.
 
-1. 결제 또는 배송 조건의 _자격_ 탭을 클릭하세요.
+1. 결제 또는 배송 조건의 **자격** 탭을 클릭하세요.
 
-1. _특정 주문 유형_ 라디오 버튼을 클릭하세요.
+1. **특정 주문 유형** 라디오 버튼을 클릭하세요.
 
    ![Use the eligibility tab to link the Payment and Delivery Terms to specific Order Types.](./payment-and-delivery-terms/images/10.png)
 
-1. 주문 유형을 검색하고 _선택_을 클릭하세요.
+1. 주문 유형을 검색하고 **선택** 을 클릭하세요.
 
-1. _게시_를 클릭하세요.
+1. **게시** 를 클릭하세요.

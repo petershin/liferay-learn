@@ -6,13 +6,13 @@ Liferay Commerce 사용을 시작하려면:
 
 1. 최신 Liferay Commerce 'LPKG'를 다운로드하세요.
    * 기업 가입자는 [도움말 센터](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001) 에서 최신 'LPKG'를 다운로드할 수 있습니다.
-     * 가입자에게는 Liferay Commerce의 주문 번호나 활성화 키도 필요합니다. [프록시 서버를 통해 Marketplace 앱 활성화](https://help.liferay.com/hc/en-us/articles/360018427391) 을 참조하십시오.
+     * 가입자에게는 Liferay Commerce의 주문 번호나 활성화 키도 필요합니다. [프록시 서버를 통해 Marketplace 앱 활성화](https://help.liferay.com/hc/ko/articles/360018427391) 을 참조하십시오.
    * 최신 오픈 소스 'LPKG'는 [Liferay Commerce 커뮤니티](https://www.liferay.com/downloads-community) 다운로드할 수 있습니다.
 
 1. `${liferay.home}/deploy` 폴더에 `LPKG`를 배포합니다.
 
     ```{note}
-    Liferay DXP에 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [Liferay Home](https://learn.liferay.com/dxp/latest/en/installation-and-upgrades/reference/liferay-home.html) 참조하십시오.
+    Liferay DXP에 애플리케이션을 배포하는 방법에 대한 자세한 내용은 [Liferay Home](https://learn.liferay.com/dxp/latest/ko/installation-and-upgrades/reference/liferay-home.html) 참조하십시오.
     ```
 
 1. (_Subscribers_) 활성화 키를 `${liferay.home}/deploy` 폴더에 배포합니다.
@@ -40,9 +40,9 @@ Liferay Commerce 사용을 시작하려면:
    2019-08-09 00:34:51.753 INFO  [main][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
    ```
 
-1. 처음 시작할 때 reindex를 실행하여 Liferay Commerce 기본 콘텐츠를 채웁니다. _제어판 &rarr; _구성_ &rarr; _검색_으로 이동하세요.
+1. 처음 시작할 때 reindex를 실행하여 Liferay Commerce 기본 콘텐츠를 채웁니다. **제어판 &rarr;** 구성 **&rarr;** 검색_으로 이동하세요.
 
-1. _모든 검색 색인_ 옆에 있는 _Reindex_를 클릭하세요.
+1. **모든 검색 색인** 옆에 있는 **Reindex** 를 클릭하세요.
 
 Liferay Commerce가 배포되었으며 사용할 준비가 되었습니다. 상점 관리자는 상점 첫화면을 구축하고 카탈로그를 채우기 시작할 수 있습니다.
 
@@ -50,6 +50,6 @@ Liferay Commerce가 배포되었으며 사용할 준비가 되었습니다. 상�
 
 응용 프로그램 서버가 다시 시작되면 Liferay Commerce는 `VerifyProcess` 명령을 두 번 실행하지 않습니다.
 
-* [Liferay Commerce 3.0 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360049238151) 
-* [설치 개요](../installation-overview.md) 
-* [Liferay Commerce Tomcat 번들 사용하기](./using-the-liferay-commerce-tomcat-bundle.md) 
+* [Liferay Commerce 3.0 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360049238151)
+* [설치 개요](../installation-overview.md)
+* [Liferay Commerce Tomcat 번들 사용하기](./using-the-liferay-commerce-tomcat-bundle.md)

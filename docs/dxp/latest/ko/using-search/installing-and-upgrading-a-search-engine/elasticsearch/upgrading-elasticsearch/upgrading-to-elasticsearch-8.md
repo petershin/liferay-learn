@@ -2,7 +2,7 @@
 
 {bdg-secondary}`7.4 U81+, 7.3 U31+`
 
-Elasticsearch 8은 최신 Liferay 7.4 업데이트 및 기본 GA 릴리스에 대해 지원되고 권장됩니다. 특정 버전 호환성에 대한 자세한 내용은 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/360016511651) 을 참조하세요.
+Elasticsearch 8은 최신 Liferay 7.4 업데이트 및 기본 GA 릴리스에 대해 지원되고 권장됩니다. 특정 버전 호환성에 대한 자세한 내용은 [검색 엔진 호환성 매트릭스](https://help.liferay.com/hc/ko/articles/360016511651) 을 참조하세요.
 
 ```{important}
 Elasticsearch를 업그레이드하기 전에 기존 데이터를 백업하세요. 업그레이드 도중이나 업그레이드 후에 문제가 발생하면 손상되지 않은 인덱스 스냅샷을 사용하여 이전 버전으로 롤백하세요. [Elasticsearch 백업](./backing-up-elasticsearch.md) 의 단계를 따르세요.
@@ -50,8 +50,8 @@ Liferay가 Elasticsearch 클러스터와 연결되면 Liferay를 다시 시작�
 
 1. liferay를 다시 시작하세요.
 
-1. 전체 클러스터 다시 시작 업그레이드를 수행한 경우 회사, 시스템 및 맞춤법 검사 색인을 다시 색인화해야 합니다. 글로벌 메뉴(![글로벌 메뉴](../../../../images/icon-applications-menu.png))에서 _제어판_ &rarr; _구성_ &rarr; _검색_으로 이동합니다. 모든 검색 색인 재색인 항목에 대해 _실행_을 클릭합니다.
+1. 전체 클러스터 다시 시작 업그레이드를 수행한 경우 회사, 시스템 및 맞춤법 검사 색인을 다시 색인화해야 합니다. 글로벌 메뉴(![글로벌 메뉴](../../../../images/icon-applications-menu.png))에서 **제어판** &rarr; **구성** &rarr; **검색** 으로 이동합니다. 모든 검색 색인 재색인 항목에 대해 **실행** 을 클릭합니다.
 
-1. 전체 클러스터 재시작 업그레이드를 수행한 경우 글로벌 메뉴(![글로벌 메뉴](../../../../images/icon-에서 [워크플로 메트릭 인덱스](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) 을 다시 인덱싱해야 합니다. apps-menu.png)), _Applications_ &rarr; _Workflow---Metrics_로 이동합니다. 설정 메뉴(![옵션](../../../../images/icon-options.png)를 열고 _모두 다시 색인화_를 클릭합니다. 각 가상 인스턴스에 대해 프로세스를 반복합니다.
+1. 전체 클러스터 재시작 업그레이드를 수행한 경우 글로벌 메뉴(![글로벌 메뉴](../../../../images/icon-에서 [워크플로 메트릭 인덱스](../../../../process-automation/workflow/using-workflows/using-workflow-metrics.md#re-indexing-workflow-metrics) 을 다시 인덱싱해야 합니다. apps-menu.png)), **Applications** &rarr; **Workflow---Metrics** 로 이동합니다. 설정 메뉴(![옵션](../../../../images/icon-options.png)를 열고 **모두 다시 색인화** 를 클릭합니다. 각 가상 인스턴스에 대해 프로세스를 반복합니다.
 
 그러면 Liferay 데이터베이스에 저장된 데이터로 작성된 인덱스가 복원됩니다. 기본 스토리지로 사용되는 인덱스를 복원하려면 [Elasticsearch 백업](./backing-up-elasticsearch.md) 참조하세요.

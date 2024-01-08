@@ -144,7 +144,7 @@ Delectable Bonsai는 'applicationState' 필드를 추가한 후 애플리케이�
 
 ## 배포자 애플리케이션을 위한 워크플로 활성화
 
-1. _전역 메뉴_(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 _응용 프로그램_ 탭으로 이동한 다음 _프로세스 빌더_를 클릭합니다.
+1. **전역 메뉴**(![전역 메뉴](../../images/icon-applications-menu.png))를 열고 **응용 프로그램** 탭으로 이동한 다음 **프로세스 빌더** 를 클릭합니다.
 
 1. 기계 승인자 프로세스가 나타나는지 확인합니다.
 
@@ -156,27 +156,27 @@ Delectable Bonsai는 'applicationState' 필드를 추가한 후 애플리케이�
 
    ![This process includes five nodes: Start, Machine Review, Manager Review, Update, and Approved.](./adding-an-approval-workflow/images/02.png)
 
-1. _구성_ 탭으로 이동합니다.
+1. **구성** 탭으로 이동합니다.
 
-1. Distributor Application에 대해 _Edit_를 클릭하고 _Machine Approver_를 선택한 다음 _Save_를 클릭합니다.
+1. Distributor Application에 대해 **Edit** 를 클릭하고 **Machine Approver** 를 선택한 다음 **Save** 를 클릭합니다.
 
 ## 워크플로 테스트
 
 1. 배포자 응용 프로그램을 열고 항목 편집을 시작합니다.
 
-1. 상태를 _검토중_으로 설정하고 _저장_을 클릭합니다.
+1. 상태를 **검토중** 으로 설정하고 **저장** 을 클릭합니다.
 
 1. 항목 상태를 확인하세요. 승인되어야 합니다.
 
    ![The entry's status should be Approved.](./adding-an-approval-workflow/images/03.png)
 
-1. 항목 상태를 _승인됨_으로 변경합니다.
+1. 항목 상태를 **승인됨** 으로 변경합니다.
 
-1. 항목 상태를 확인하세요. _보류 중_이어야 합니다.
+1. 항목 상태를 확인하세요. **보류 중** 이어야 합니다.
 
    ![The entry's status should be Pending.](./adding-an-approval-workflow/images/04.png)
 
-1. _개인 메뉴_를 열고 _알림_으로 이동한 다음 새 _워크플로 알림_을 클릭하세요.
+1. **개인 메뉴** 를 열고 **알림** 으로 이동한 다음 새 **워크플로 알림** 을 클릭하세요.
 
    ![View the workflow notification.](./adding-an-approval-workflow/images/05.png)
 
@@ -196,7 +196,7 @@ Delectable Bonsai는 'applicationState' 필드를 추가한 후 애플리케이�
 
 ## 관련 개념
 
-* [워크플로 디자이너](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview) 
-* [개체에 대한 워크플로 활성화](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/enabling-workflows-for-objects) 
-* [마이크로서비스 클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions) 
-* [배치 클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/batch-client-extensions) 
+* [워크플로 디자이너](https://learn.liferay.com/web/guest/w/dxp/process-automation/workflow/designing-and-managing-workflows/workflow-designer/workflow-designer-overview)
+* [개체에 대한 워크플로 활성화](https://learn.liferay.com/web/guest/w/dxp/building-applications/objects/enabling-workflows-for-objects)
+* [마이크로서비스 클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/microservice-client-extensions)
+* [배치 클라이언트 확장](https://learn.liferay.com/web/guest/w/dxp/building-applications/client-extensions/batch-client-extensions)

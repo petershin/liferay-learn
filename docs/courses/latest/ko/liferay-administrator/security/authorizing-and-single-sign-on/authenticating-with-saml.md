@@ -1,6 +1,6 @@
 # SAML로 인증
 
-SAML로 인증할 때 Liferay는 서비스 공급자(SP) 또는 ID 공급자(IdP) 역할을 할 수 있습니다. 자세한 내용은 [SAML로 인증](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml)을 참조하세요.
+SAML로 인증할 때 Liferay는 서비스 공급자(SP) 또는 ID 공급자(IdP) 역할을 할 수 있습니다. 자세한 내용은 [SAML로 인증](https://learn.liferay.com/w/dxp/installation-and-upgrades/securing-liferay/configuring-sso/authenticating-with-saml) 을 참조하세요.
 
 Clarity Vision Solutions는 Fabulous Frames를 인수하여 성장했습니다. 다른 회사를 인수할 가능성을 고려하면서 IT 팀은 SAML을 활용하여 사용자 자격 증명의 저장 및 관리를 중앙 집중화하기로 결정했습니다. 실제로 작동하는 모습을 보려면 아래 단계를 따르세요.
 

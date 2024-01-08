@@ -44,7 +44,7 @@
 
 ## 앱에 항목 추가
 
-1. _제어판_ &rarr; _서버 관리_ &rarr; _스크립트_에서 스크립트 콘솔로 이동합니다.
+1. **제어판** &rarr; **서버 관리** &rarr; **스크립트** 에서 스크립트 콘솔로 이동합니다.
 
 1. 다음 스크립트를 실행하여 일부 항목을 추가합니다.
 
@@ -83,7 +83,7 @@
    ../gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
    ```
 
-1. _Control Panel_ &rarr; _Gogo Shell_에서 Gogo 쉘 콘솔로 이동합니다.
+1. **Control Panel** &rarr; **Gogo Shell** 에서 Gogo 쉘 콘솔로 이동합니다.
 
 1. 'upgrade:list com.acme.j7z3.service' 명령을 입력하여 1.0.1 업그레이드가 가능한지 확인하세요. 1.0.1 버전은 출력 창에 등록된 업그레이드 프로세스로 나타납니다.
 
@@ -145,4 +145,4 @@
 
 1. 예외는 `null`로 설정됩니다.
 
-'processConcurrently()' 메서드에는 두 가지 다른 서명이 있습니다. 이 튜토리얼 예제에서 볼 수 있듯이 하나의 서명은 SQL 쿼리를 소스로 전달합니다. 다른 서명은 배열을 소스로 전달합니다. 자세한 내용은 [BaseDBProcess javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-) 을 참조하세요.
+`processConcurrently()` 메서드에는 두 가지 다른 서명이 있습니다. 이 튜토리얼 예제에서 볼 수 있듯이 하나의 서명은 SQL 쿼리를 소스로 전달합니다. 다른 서명은 배열을 소스로 전달합니다. 자세한 내용은 [BaseDBProcess javadocs](https://learn.liferay.com/reference/latest/en/dxp/javadocs/portal-kernel/com/liferay/portal/kernel/dao/db/BaseDBProcess.html#processConcurrently-java.lang.String-com.liferay.petra.function.UnsafeFunction-com.liferay.petra.function.UnsafeConsumer-java.lang.String-) 을 참조하세요.

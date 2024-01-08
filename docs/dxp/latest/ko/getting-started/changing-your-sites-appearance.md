@@ -14,19 +14,19 @@ http://localhost:8080에서 Liferay에 로그인합니다. 이메일 주소 `tes
 
 그런 다음 다음 단계를 따르세요.
 
-1. _사이트 메뉴_(![사이트 메뉴](../images/icon-product-menu.png))를 열고 _사이트 빌더_ &rarr; _페이지_로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../images/icon-product-menu.png))를 열고 **사이트 빌더** &rarr; **페이지** 로 이동합니다.
 
-1. 애플리케이션 표시줄에서 _작업_(![작업 버튼](../images/icon-actions.png))을 클릭하고 _구성_을 선택합니다.
+1. 애플리케이션 표시줄에서 **작업**(![작업 버튼](../images/icon-actions.png))을 클릭하고 **구성** 을 선택합니다.
 
    ![Open the Pages application, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
-1. 파비콘 아래에서 _파비콘 선택_(![파비콘 선택 버튼](../images/icon-switch.png))을 클릭합니다.
+1. 파비콘 아래에서 **파비콘 선택**(![파비콘 선택 버튼](../images/icon-switch.png))을 클릭합니다.
 
    ![Click the Select Favicon button.](./changing-your-sites-appearance/images/02.png)
 
 1. 이미지를 선택하거나 업로드하세요.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 귀하의 사이트는 파비콘으로 선택한 이미지를 사용합니다.
 
@@ -66,19 +66,19 @@ http://localhost:8080에서 Liferay에 로그인합니다. 이메일 주소 `tes
 
 1. 브라우저를 열고 `https://localhost:8080`으로 이동한 후 [관리자로 로그인하세요](./introduction-to-the-admin-account.md) .
 
-1. _사이트 메뉴_(![사이트 메뉴](../images/icon-product-menu.png))를 열고 _사이트 빌더_ &rarr; _페이지_로 이동합니다.
+1. **사이트 메뉴**(![사이트 메뉴](../images/icon-product-menu.png))를 열고 **사이트 빌더** &rarr; **페이지** 로 이동합니다.
 
-1. 애플리케이션 표시줄에서 _작업_(![작업 버튼](../images/icon-actions.png))을 클릭하고 _구성_을 선택합니다.
+1. 애플리케이션 표시줄에서 **작업**(![작업 버튼](../images/icon-actions.png))을 클릭하고 **구성** 을 선택합니다.
 
    ![Open the Pages screen, click Actions in the Application Bar, and select Configuration.](./changing-your-sites-appearance/images/01.png)
 
-1. 테마 아래에서 _현재 테마 변경_을 클릭하세요.
+1. 테마 아래에서 **현재 테마 변경** 을 클릭하세요.
 
    ![Click Change Current Theme to select a new theme.](./changing-your-sites-appearance/images/03.png)
 
-1. 샘플 테마(_Acme Sample Blue Theme_)를 선택합니다.
+1. 샘플 테마(**Acme Sample Blue Theme**)를 선택합니다.
 
-1. _저장_을 클릭하세요.
+1. **저장** 을 클릭하세요.
 
 홈 페이지로 이동하여 배경색이 이제 파란색인지 확인합니다.
 

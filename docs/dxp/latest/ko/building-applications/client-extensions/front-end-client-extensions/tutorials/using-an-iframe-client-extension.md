@@ -17,7 +17,7 @@ IFrame 클라이언트 확장은 개발 중이며 현재 Liferay 7.4에서는 �
 1. Java(JDK 8 또는 JDK 11)를 설치합니다.
 
    ```{note}
-   지원되는 JDK, 데이터베이스 및 환경에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/en-us/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 확인하세요. 권장되는 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md) 참조하세요.
+   지원되는 JDK, 데이터베이스 및 환경에 대해서는 [호환성 매트릭스](https://help.liferay.com/hc/ko/articles/4411310034829-Liferay-DXP-7-4-Compatibility-Matrix) 확인하세요. 권장되는 JVM 설정은 [JVM 구성](../../../../installation-and-upgrades/reference/jvm-configuration.md) 참조하세요.
    ```
 
 1. 샘플 작업공간을 다운로드하고 압축을 풉니다.
@@ -80,11 +80,11 @@ STARTED liferay-sample-iframe-1_1.0.0 [1592]
 
 IFrame은 페이지에 위젯으로 추가됩니다.
 
-1. 페이지 상단에 있는 _편집_(![편집](../../../../images/icon-edit-pencil.png))을 클릭하세요.
+1. 페이지 상단에 있는 **편집**(![편집](../../../../images/icon-edit-pencil.png))을 클릭하세요.
 
-1. 페이지에 위젯을 추가합니다. 조각 및 위젯 사이드바(![조각 및 위젯](../../../../images/icon-plus.png))에서 _Widgets_를 클릭합니다.
+1. 페이지에 위젯을 추가합니다. 조각 및 위젯 사이드바(![조각 및 위젯](../../../../images/icon-plus.png))에서 **Widgets** 를 클릭합니다.
 
-1. Client Extensions &rarr; Counter App 위젯을 찾아서 페이지로 드래그하세요. _게시_를 클릭하세요.
+1. Client Extensions &rarr; Counter App 위젯을 찾아서 페이지로 드래그하세요. **게시** 를 클릭하세요.
 
    ![Drag the Counter App onto a page.](./using-an-iframe-client-extension/images/01.png)
 

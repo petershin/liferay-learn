@@ -15,9 +15,9 @@
 
 그런 다음 다음 단계에 따라 이 튜토리얼에 대한 기본 [를](../../creating-and-managing-objects/creating-objects.md) .
 
-1. _글로벌 메뉴_(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 _제어판_ 탭으로 이동한 다음 _개체_를 클릭하세요.
+1. **글로벌 메뉴**(![글로벌 메뉴](../../../../images/icon-applications-menu.png))를 열고 **제어판** 탭으로 이동한 다음 **개체** 를 클릭하세요.
 
-1. _추가_ 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
+1. **추가** 버튼(![추가 버튼](../../../../images/icon-add.png))을 클릭하고 다음 값을 입력합니다.
 
    | 분야    | 가치      |
    | :---- | :------ |
@@ -25,13 +25,13 @@
    | 복수 라벨 | `Ables` |
    | 이름    | `Able`  |
 
-1. 새 _Object_ 초안을 선택하고 _Fields_ 탭으로 이동하여 단일 텍스트 필드를 추가하세요.
+1. 새 **Object** 초안을 선택하고 **Fields** 탭으로 이동하여 단일 텍스트 필드를 추가하세요.
 
    | 라벨 | 필드 이름 | 유형 | 요구하는 |
    | :- | :---- | :- | :--- |
    | 이름 | 이름    | 원본 | ✔    |
 
-1. _세부정보_ 탭으로 이동하여 _게시_를 클릭하세요.
+1. **세부정보** 탭으로 이동하여 **게시** 를 클릭하세요.
 
    ```{important}
    이 튜토리얼에서는 위의 값을 사용해야 합니다.
@@ -69,7 +69,7 @@ unzip liferay-v1s4.zip
    cd liferay-v1s4/curl
    ```
 
-1. 'Able_POST_ToCompany'를 실행합니다. 이렇게 하면 세 개의 항목이 생성됩니다.
+1. `Able_POST_ToCompany` 를 실행합니다. 이렇게 하면 세 개의 항목이 생성됩니다.
 
    ```bash
    ./Able_POST_ToCompany.sh
@@ -176,7 +176,7 @@ POST, PUT 또는 PATCH 요청에 `taxonomyCategoryIds` 배열을 추가하여 �
 ]
 ```
 
-!!! 참고
+!!! note
 개체 항목에 범주를 할당하려면 기존 범주 어휘가 있어야 합니다. 자세한 내용은 [콘텐츠에 대한 범주 및 어휘 정의](../../../../content-authoring-and-management/tags-and-categories/defining-categories-and-vocabularies-for-content.md) 참조하세요.
 
 객체 항목에 대한 GET 요청을 수행한 후 할당된 각 카테고리에 대한 `taxonomyCategoryId` 및 `taxonomyCategoryName`을 포함하는 `taxonomyCategoryBriefs` 배열에서 해당 카테고리를 읽을 수 있습니다.
@@ -202,6 +202,6 @@ API 쿼리 [API 쿼리 매개변수](../../../../headless-delivery/consuming-api
 
 ## 관련 주제
 
-- [배치 API 사용](./using-batch-apis.md) 
-- [NestedFields를 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md) 
-- [REST API와 함께 집계 용어 사용](./using-aggregation-terms-with-rest-apis.md) 
+- [배치 API 사용](./using-batch-apis.md)
+- [NestedFields를 사용하여 관련 항목 쿼리](./using-nestedfields-to-query-related-entries.md)
+- [REST API와 함께 집계 용어 사용](./using-aggregation-terms-with-rest-apis.md)

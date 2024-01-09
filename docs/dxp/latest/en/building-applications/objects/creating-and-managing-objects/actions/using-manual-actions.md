@@ -13,9 +13,9 @@ taxonomy-category-names:
 
 When you use the standalone trigger for object actions, the actions become manual instead of automatic. Trigger these actions using these methods:
 
-* [The object's UI](#trigger-actions-via-the-object-entry-ui)
-* [Dedicated action APIs](#trigger-actions-via-apis)
-* [Buttons in pages](#trigger-actions-via-pages)
+- [The object's UI](#trigger-actions-via-the-object-entry-ui)
+- [Dedicated action APIs](#trigger-actions-via-apis)
+- [Buttons in pages](#trigger-actions-via-pages)
 
 This example creates a standalone action for sending notifications.
 
@@ -134,7 +134,7 @@ The button now executes the selected action when clicked.
 
 When a user clicks on a component mapped to an action, you can choose what happens when that action succeeds or fails.
 
-There are four options available for both outcomes:
+There are four options available for both outcomes and an extra success interaction:
 
 1. **None**: Nothing happens after the action is performed.
 
@@ -144,7 +144,9 @@ There are four options available for both outcomes:
 
 1. **Go to External URL**: Navigate to an external URL.
 
-![You can choose what happens after an action is performed when the user clicks on a button or fragment mapped to an action: nothing, the user receives a notification, the user is redirected to a page, or the user is redirected to an external URL.](./using-manual-actions/images/07.png)
+1. **Go to Entry Display Page** (only for Success Interactions): When mapped to a specific object entry with an action in place, you can select this option as a success interaction. It redirects the user to a display page template.
+
+![Go to Entry Display Page is an extra Success Interaction option that can be used to redirect the user to a display page template.](./using-manual-actions/images/07.png)
 
 The selected option is executed after the user triggers the action.
 

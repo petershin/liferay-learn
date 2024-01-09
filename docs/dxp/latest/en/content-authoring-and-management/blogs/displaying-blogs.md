@@ -11,23 +11,24 @@ uuid: 7f36774b-50b3-439e-8651-f43fe33d6113
 ---
 # Displaying Blogs
 
-Liferay provides two methods for displaying blog entries: [display page templates](#using-display-page-templates) and the [Blogs widget](#using-the-blogs-widget).
+Liferay provides two ways display blog entries: [display page templates](#using-display-page-templates) and the [Blogs widget](#using-the-blogs-widget).
 
 ## Using Display Page Templates
 
-You can use [display page templates](../../site-building/displaying-content/using-display-page-templates.md) to create reusable dynamic designs for displaying blog entries at their friendly URLs. By default, all blog entries are assigned a unique friendly URL automatically. You can use this URL to view the blog entry at a display page.
+You can use [display page templates](../../site-building/displaying-content/using-display-page-templates.md) to create reusable, dynamic displays for blog entries. Once set up, users can access each blog entry at a dedicated URL composed of the display page's URL and the entry's friendly URL (i.e., `display-page-url/blog-friendly-url`). See [Publishing Content with Display Pages](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) for instructions on how to set up display page templates for blog entries.
 
-The blog's friendly URL is appended to the display page's URL (i.e., `display-page-url/blog-friendly-url`) and can be edited at any time. If you change it, Liferay stores the previous URL in the entry's friendly URL history. As long as the old URL remains in this history, users can access the latest version of the blog entry. See [Publishing Content with Display Pages](../../site-building/displaying-content/using-display-page-templates/publishing-content-with-display-pages.md) for more instructions on setting up templates for displaying blog entries.
-
-Once you've set up display pages for your blog entries, you can use collections to list them in your content pages. See [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
+!!! tip
+    In content pages, you can use collection to link to groups of blog entry display pages. See [About Collections and Collection Pages](../../site-building/displaying-content/collections-and-collection-pages/about-collections-and-collection-pages.md) for more information.
 
 <!-- It would be a good idea do include use cases here to exemplify what was said -->
 
-### Friendly URL History
+### Managing the Friendly URL History
 
-If an old blog entry URL appears in the friendly URL history, it can't be used for other entries in the same site. You must first remove it from the entry's friendly URL history before using it for a new entry.
+{bdg-secondary}`Liferay 7.4+`
 
-Follow these steps to manage a blog entry's friendly URL history:
+Each blog entry has a friendly URL that is set automatically or manually during entry creation. If you change the friendly URL after creation, Liferay stores the previous value in the entry's friendly URL history. As long as the old URL remains in the history, Liferay redirects users to the latest version of the blog entry and you cannot use it for other blog entries in the same site. To reuse an old value for a new entry, first remove it from the entry's friendly URL history.
+
+To manage an entry's friendly URL history, 
 
 1. Open the *Site Menu* ( ![Site Menu](../../images/icon-product-menu.png) ), expand *Content & Data*, and go to *Blogs*.
 

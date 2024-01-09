@@ -101,3 +101,15 @@ When [Syncing Contacts](../getting-started/connecting-liferay-dxp-to-analytics-c
 Liferay DXP's batch engine is used for syncing users. Increase the batch size if syncing a very large number of users. In Liferay DXP, navigate to _Global Menu_ &rarr; _Instance Settings_ &rarr; _Batch Engine_. Set the _Export Batch Size_ and _Import Batch Size_ to `1000`.
 
 ![Increase batch size in Liferay DXP.](./connecting-data-sources/images/03.png)
+
+## Enabling Localized URLs for Site Pages
+
+By default, Liferay DXP uses the same URL for a site page regardless of the chosen language. Enable localized URLs for Analytics Cloud to track each language as a distinct site page. 
+
+1. In Liferay DXP, navigate to _Control Panel_ &rarr; _Instance Settings_ &rarr; _Content & Data_ &rarr; _Pages_.
+
+1. Click _SEO_ in the left navigation. 
+
+  ![Select use localized URL under the canonical URL selection.](./connecting-data-sources/images/04.png)
+
+1. Click the drop-down menu under canonical URL and select _Use Localized URL_. Click _Save_.

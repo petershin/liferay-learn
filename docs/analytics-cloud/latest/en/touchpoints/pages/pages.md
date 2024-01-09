@@ -64,6 +64,8 @@ A unique visitor has a unique IP address in Analytics Cloud. Therefore, if the s
 
 Useful with the time period filter, View is the number of views for a page in a given period of time. It's not the same as the number of visitors, because it doesn't try to count only unique IP addresses. Over the last 30 days, one visitor (IP address) could come back to the page 100 times. That means there are 100 page views, but only one visitor (assuming she used the same machine to access the page each time). However, a unique view isn't logged for a single user unless at least 30 minutes of inactivity on the Page passes before the user interacts with the Page again.
 
+Note, Liferay DXP uses the same URL for a site page regardless of the chosen language. To have Analytics Cloud track each language as a distinct site page, [enable localized URLs](../../troubleshooting/connecting-data-sources.md#enabling-localized-urls-for-site-pages).
+
 ### Bounce Rate
 
 Bounce Rate is the percentage of visitors to the Page that navigated away from the site without any page interaction (including scrolling on the page) after the initial page load. It's calculated as a daily rate (percentage per day), and the daily rate trend line is displayed over the selected time period.

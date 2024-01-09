@@ -53,6 +53,8 @@ The metrics for ordering the Page list are calculated based on the time period s
 * More Preset Periods (Yesterday, Last 28 days, Last 180 days, Last Year)
 * Custom Range
 
+Note, Liferay DXP uses the same URL for a site page regardless of the chosen language. To have Analytics Cloud track each language as a distinct site page, [enable localized URLs](./troubleshooting/connecting-data-sources.md#enabling-localized-urls-for-site-pages).
+
 To download this list of site page data as a CSV file, click _Download Report_. See [downloading reports](./reference/downloading-reports.md) to learn more.
 
 ```{note}

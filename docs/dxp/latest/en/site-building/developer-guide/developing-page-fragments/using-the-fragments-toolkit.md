@@ -9,12 +9,12 @@ uuid: 8d257002-3c90-4810-82a1-17ae741c33c4
 # Using the Fragments Toolkit
 
 !!! note
-   The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+. See [Alternatives for the Fragments Toolkit](#alternatives-to-the-fragments-toolkit) for more information.
+    The Fragments Toolkit is deprecated as of Liferay 2024.Q1+/Portal 7.4 GA107+. See [Alternatives for the Fragments Toolkit](#alternatives-to-the-fragments-toolkit) for more information.
 
 The Fragments Toolkit helps you develop and manage Fragments locally, using your favorite tools. Here you'll use the toolkit to generate a Fragments Project with sample Fragments, deploy it, and add your own Fragments Set to it.
 
 !!! note
-   For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Liferay UI.
+    For Liferay DXP 7.4+, Fragment Collections are called Fragment Sets in the Liferay UI.
 
 ## Setting Up the Toolkit
 
@@ -50,7 +50,7 @@ NPM and Yarn are package managers that you'll use to install the toolkit and mod
    ```
 
    !!! note
-   The `setup_tutorial.sh` script provides commands for setting up Yeoman, Yarn, and the toolkit. The script is available in the example project's ZIP file.
+       The `setup_tutorial.sh` script provides commands for setting up Yeoman, Yarn, and the toolkit. The script is available in the example project's ZIP file.
 
 Resolve all unmet requirements reported by the script and rerun the script until it reports that your environment is ready.
 
@@ -59,7 +59,7 @@ Resolve all unmet requirements reported by the script and rerun the script until
 The Fragments Toolkit's `yo liferay-fragments` command launches an interface for generating a Fragments Project.
 
 !!! warning
-Don't nest Fragments projects. Make sure to create new Fragments projects in their own location, outside of any existing Fragments projects.
+    Don't nest Fragments projects. Make sure to create new Fragments projects in their own location, outside of any existing Fragments projects.
 
 If you're in the `liferay-x2y6` project folder, exit it (e.g., `cd ..`).
 
@@ -160,7 +160,7 @@ Then, follow these steps to import the sample Fragment Set to Liferay:
    ![The Set is available.](./using-the-fragments-toolkit/images/01.png)
 
    !!! note
-   For Liferay DXP 7.1 and 7.2, instead navigate to *Site* → *Site Builder* → *Page Fragments* under the Product Menu to get to the *Fragments* page.
+       For Liferay DXP 7.1 and 7.2, instead navigate to *Site* → *Site Builder* → *Page Fragments* under the Product Menu to get to the *Fragments* page.
 
 Great! You successfully deployed a Fragment Set.
 
@@ -286,7 +286,7 @@ Use the `add-fragment` command to add a new Fragment to the Set.
    ```
 
    !!! note
-   If you accepted using React in your fragment, the toolkit assumes you're on Liferay 7.3+ and configures the new editable element syntax. See [Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md) for more information on Liferay's editable data syntax.
+       If you accepted using React in your fragment, the toolkit assumes you're on Liferay 7.3+ and configures the new editable element syntax. See [Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md) for more information on Liferay's editable data syntax.
 
 1. Select the Fragment Set you just created (`My Set`).
 
@@ -298,7 +298,7 @@ Use the `add-fragment` command to add a new Fragment to the Set.
    ```
 
    !!! note
-   The `fragment.json` defines the paths to the Fragment's CSS, HTML, and JavaScript. If you change any of these file names, update their paths in the `fragment.json`.
+       The `fragment.json` defines the paths to the Fragment's CSS, HTML, and JavaScript. If you change any of these file names, update their paths in the `fragment.json`.
 
 Here is the Fragment's `index.html`:
 
@@ -365,12 +365,12 @@ For example, you can build off of the above HTML and use [Clay](https://clayui.c
 ```
 
 !!! note
-If you are using Liferay 7.2 or below, remove the `data-lfr-editable-[id|type]` attributes and wrap the content elements in `lfr-editable` elements as described in [Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md).
+    If you are using Liferay 7.2 or below, remove the `data-lfr-editable-[id|type]` attributes and wrap the content elements in `lfr-editable` elements as described in [Fragment-Specific Tags](../reference/fragments/fragment-specific-tags-reference.md).
 
 The first `div` element's `class="component-my-jumbotron"` attribute attempts to uniquely identify this Fragment on a page.
 
 !!! tip
-In your Fragment's HTML file, use the main wrapper element (the `<div>` in the example above) to uniquely identify the Fragment so it doesn't conflict with other components on a page.
+    In your Fragment's HTML file, use the main wrapper element (the `<div>` in the example above) to uniquely identify the Fragment so it doesn't conflict with other components on a page.
 
 Next the `<div class="jumbotron"/>` element wraps the content, applying [Bootstrap](https://getbootstrap.com/)'s jumbotron component. This component makes the content stand out. Here are the content elements:
 
@@ -382,7 +382,7 @@ Next the `<div class="jumbotron"/>` element wraps the content, applying [Bootstr
 You can also include resources in your Fragments. See [Including Default Resources in Fragments](./including-default-resources-with-fragments.md) for more information.
 
 !!! note
-The Fragment and configuration object are passed in as arguments in JavaScript and are available as `fragmentElement` and `configuration` parameters, respectively.
+    The Fragment and configuration object are passed in as arguments in JavaScript and are available as `fragmentElement` and `configuration` parameters, respectively.
 
 ## Import Your New Fragment
 
@@ -464,7 +464,7 @@ If you need to develop and manage your fragments, there are some alternatives yo
    ```
 
    !!! note
-   If you want to import a React component that is not included in Liferay's importMap, you can add it by creating an [importMap ClientExtension](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend-3/client-extension.yaml#L16).
+       If you want to import a React component that is not included in Liferay's importMap, you can add it by creating an [importMap ClientExtension](https://github.com/liferay/liferay-portal/blob/master/workspaces/liferay-sample-workspace/client-extensions/liferay-sample-etc-frontend-3/client-extension.yaml#L16).
 
    While editing a page, fragments can be rendered multiple times when users interact with them (e.g. while changing the fragment configuration). To ensure the React component is remounted, add a condition to check the layout mode to the first cleanup process. See the example code below:
 

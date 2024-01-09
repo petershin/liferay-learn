@@ -24,7 +24,7 @@ To implement an item selector, you must embed it in an application, such as a mo
    unzip liferay-f5d5.zip
    ```
 
-1. ```{include} ../../_snippets/run-liferay-portal.md
+1. ```{include} /_snippets/run-liferay-portal.md
    ```
 
 1. Run the following commands from the root of the module to build and deploy to your Docker container:
